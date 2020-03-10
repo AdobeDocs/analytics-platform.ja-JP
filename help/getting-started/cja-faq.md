@@ -2,7 +2,7 @@
 title: 顧客の遍歴分析FAQ
 description: 顧客の遍歴分析 — よくある質問(FAQ)
 translation-type: tm+mt
-source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
+source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
 | セッションと変数の永続性の設定は、今どこにありますか。 | Customer Jeurney Analyticsでは、これらのすべての設定がレポート時に適用され、これらの設定はデータビューに反映されます。 これらの設定に対する変更が遡及され、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
 | 既存のセグメント/計算指標はどうなりますか？ | 顧客の遍歴分析では、eVar、propまたはeventを使用せず、代わりにAEPスキーマを使用します。 つまり、既存のセグメントや計算指標がいずれもCustomer Jeurney Analyticsと互換性がないことを意味します。 |
 | Customer Jeurney Analyticsでの制限の処理方法を教えて `Uniques Exceeded` ください。 | Customer Jeurney Analyticsには固有の値の制限がないので、心配する必要はありません。 |
-| 既存のお客様の場合、 [!DNL Data Workbench] 今すぐCustomer Jargeny Analyticsに移行できますか。 | 場合によります。Unified Customer Process(UCP)を多用している場合は、ステッチが実装されるまで待つ必要があります。 顧客の認証率が高い場合、またはすべてのデータを1か所で管理したい場合や、eVarを削除したい場合は、Customer Jargeny Analyticsが適している可能性があります。 |
+| 既存のお客様の場合、 [!DNL Data Workbench] 今すぐCustomer Jargeny Analyticsに移行できますか。 | 場合によります。Unified Customer Process(UCP)を多用している場合は、ステッチが実装されるまで待つ必要があります。 既に高い顧客認証率をお持ちの場合や、すべてのデータを1か所で管理したい場合、またはeVarを削除したい場合は、Customer Jargeny Analyticsが最適です。 |
 
