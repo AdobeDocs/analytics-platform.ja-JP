@@ -2,39 +2,18 @@
 title: 顧客の遍歴分析の使用例
 description: 顧客の遍歴分析の使用例
 translation-type: tm+mt
-source-git-commit: 1cddd8624826bddb89c9b362ec91a2c0c30c7a6f
+source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
 
 
 # 顧客の遍歴分析の使用例
 
-アドビは現在、ユースケースの確立に関してお客様と協力しています。 定期的に更新を確認してください。
+顧客の遍歴分析では、次の主要な使用例を利用できます。
 
-<!-- ## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
-
-More detail here.
-
-## Report on and visualize any event dataset in an interactive way
-
-Details
-
-## Combine datasets keyed off of ECID such as Analytics, Triggered Journeys, Target, and AAM data
-
-Details.
-
-## Report interactively on XDM data collection or Experience Edge deployments
-
-Details
-
-## Build "manually stitched" versions of your data to analyze
-
-Details
-
-## Analyze multi-channel data in Analysis Workspace even if unstitched
-
-Details
-
-## Combine multiple report suites
-
-Details -->
+* **遍歴の中で顧客を見る**:複数のチャネルにまたがるデータを順番に表示および分析できます。 コールセンター、POS、オンラインプロパティのデータは、単一のレポートビューに組み合わせることができます。
+* **インサイトを全員に提供**:データアクセスを民主化し、より多くの人がデータから得た洞察を使ってビジネス上の意思決定を行えるようにします。 顧客体験のあらゆる側面に責任を負う組織内の誰でも、より完全なデータに基づいて、真の意思決定を迅速に行うことができます。
+* **分析者のデータ科学の力を活用**:顧客の遍歴分析を使用すると、通常の人間はデータ科学を使用して、深い洞察と分析を解き放つことができます。
+* **アドホックレポートを使用して、データセットを視覚化し、操作します**。Workspaceは、Adobe Experience Platformのデータセットの中で、基本的なルールに準拠するものを使用できます。
+* **非Webデータの表示**:Workspaceが、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。 カスタムスキーマを使用すると、データと定義を完全に制御できます。
+* **データ操作をより詳細に制御**:アップロードしたデータの変更、新しいデータセットの作成、Workspaceへの読み込みを行います。 Adobe Experience Platformは、Experience Cloud Query Serviceを通じて、ツールのクエリ、抽出、変換、読み込みを行います。
