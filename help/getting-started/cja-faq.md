@@ -2,7 +2,7 @@
 title: 顧客の遍歴分析FAQ
 description: 顧客の遍歴分析 — よくある質問(FAQ)
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **前提条件** |  |
 | 顧客の遍歴分析にDevice GraphまたはDevice Coopが必要ですか。 | いいえ。Customer Jareny Analyticsでは、プライベートデバイスグラフまたはDevice Coopは必要ありません。 実際、まだサポートされていません。 |
 | Customer Jeurney AnalyticsにExperience Cloud ID(ECID)が必要ですか。 | いいえ。Customer Jeurney Analyticsは、データセット内の任意のID（ECIDか、選択した他のIDか）をサポートします。 |
-| Customer Jaurney Analyticsの前にデータをETLする必要がある場合はどうなりますか。 | 現在、AEPにデータを送信する前にデータを変換する必要がある場合は、ETLパートナー（UnifiまたはInformatica）と連携する必要があります。 データの取り込み後にETLが必要な場合、AEP Query Servicesには一部の制限付きオプションが用意されています。 |
+| Customer Jearny Analyticsの前にETL(Extract, Transform, Load)を実行する必要がある場合はどうなりますか。 | 現在、AEPにデータを送信する前にデータを変換する必要がある場合は、ETLパートナー（UnifiまたはInformatica）と連携する必要があります。 データの取り込み後にETLが必要な場合、AEP Query Servicesには一部の制限付きオプションが用意されています。 |
 | **ステッチ** |  |
 | 顧客の遍歴分析は、デバイス間で、またはデータセット間で「縫い合わせ」できますか。 | いいえ。顧客の遍歴分析は、「独自のIDを持ち込む」分析システムです。 縫い目の良いアプローチの計画は、作品の中にあります。 |
 | 匿名行動から認証された行動へのステッチはサポートされていますか？ | いいえ、まだできません。 |
