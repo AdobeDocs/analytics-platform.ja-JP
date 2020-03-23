@@ -11,7 +11,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 日付範囲マネージャを使用して、日付範囲の共有、名前の変更または削除を行います。 日付マネージャーに連絡するには：
 
-1. Adobe IDの資格情報を使 [用して](https://analytics.adobe.com) 、analytics.adobe.comにログインします。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. /に移動 [!UICONTROL Components] します [!UICONTROL Date Ranges]。
 
 ## インターフェイス
