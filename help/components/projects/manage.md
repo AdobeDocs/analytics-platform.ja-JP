@@ -11,7 +11,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 プロジェクトマネージャを使用して、プロジェクトの共有、名前の変更、または削除を行います。 日付マネージャーに連絡するには：
 
-1. Adobe IDの資格情報を使 [用して](https://analytics.adobe.com) 、analytics.adobe.comにログインします。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. /に移動 [!UICONTROL Components] します [!UICONTROL Projects]。
 
 ## インターフェイス
