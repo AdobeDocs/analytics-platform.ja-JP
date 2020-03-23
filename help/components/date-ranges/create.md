@@ -16,7 +16,7 @@ source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
 
 日付範囲マネージャーで日付範囲を作成するには：
 
-1. Adobe IDの資格情報を使 [用して](https://analytics.adobe.com) 、analytics.adobe.comにログインします。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. /に移動 [!UICONTROL Components] します [!UICONTROL Date Ranges]。
 1. 日付範囲を作 [!UICONTROL Add] 成するモーダルウィンドウを開くには、ボタンをクリックします。
 
