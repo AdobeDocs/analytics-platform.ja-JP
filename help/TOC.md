@@ -39,7 +39,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [データビューの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
 + コンポーネント {#cja-components}
-   + フィルター {#cja-filters}
+   + Filters {#cja-filters}
       + [フィルターの概要](components/filters/filters-overview.md)
       + [フィルターの作成](components/filters/create-filters.md)
       + [フィルターの管理](components/filters/manage-filters.md)
