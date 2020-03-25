@@ -32,8 +32,8 @@ Customer Jeurney AnalyticsのWorkspaceプロジェクトは、データビュー
    | 説明 | 詳細な説明は必須ではありませんが、お勧めします。 |
    | タグの追加 | タグを使用すると、データビューをカテゴリに整理できます。 |
    | タイムゾーン | データ表示のタイムゾーンを選択します。 |
-   | Session Timeout | 「セッション」の定義を選択します。 セッションタイムアウトの設定は、新しいセッションが自動的に開始されるまでに実訪問者が持つ無操作状態の時間を定義します。 デフォルト値は 30 分です。For example, if you set the session timeout to 45 minutes, a new session grouping is created for each sequence of hits collected, separated by 45 minutes of inactivity. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | イベントを使用して新しいセッションを開始 | セッションがタイムアウトしているかどうかに関係なく、イベントの発生時に新しいセッションが開始されます。新しく作成されたセッションには、そのセッションを開始したイベントが含まれます。さらに、複数のイベントを使用して 1 つのセッションを開始できます。新しいセッションは、これらのイベントのいずれかがデータに検出された場合に開始されます。この設定は、ディメンションに対する訪問回数、セッション（以前の訪問）セグメントコンテナ、訪問の有効期限ロジックに影響します。 |
+   | セッションタイムアウト | 「セッション」の定義を選択します。 セッションタイムアウトの設定は、新しいセッションが自動的に開始されるまでに実訪問者が持つ無操作状態の時間を定義します。 デフォルトは30分です。 例えば、セッションのタイムアウトを45分に設定した場合、収集されたヒットの各シーケンスに対して、45分間の無操作状態が続くたびに新しいセッショングループが作成されます。 <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | イベントを使用して新しいセッションを開始 | セッションがタイムアウトしたかどうかに関係なく、イベントが発生すると、新しいセッションが開始されます。 新しく作成されたセッションには、そのセッションを開始したイベントが含まれます。 また、複数のイベントを使用してセッションを開始し、データ内でこれらのイベントの1つが観察された場合に新しいセッションが発生するようにすることもできます。 この設定は、ディメンションに対する訪問回数、セッション（以前の訪問）セグメントコンテナ、訪問の有効期限ロジックに影響します。 |
    | フィルターを追加 | 「フィルター」は、Customer Jeurney Analyticsの「セグメント」を指します。 データをフィルターする場合は、左側のナビゲーションバーから該当するフィルターをここにドラッグします。 フィルターを選択しない場合、データビューにはすべてのデータが表示されます。 |
 
 1. クリック **[!UICONTROL Continue]**.
