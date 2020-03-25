@@ -18,7 +18,7 @@ source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
 
 ![接続マネージャ](assets/connections-manager.png)
 
-1. Click the **[!UICONTROL Connections]** tab.
+1. タブをクリッ **[!UICONTROL Connections]** クします。
 
 2. 編集または管理する接続を選択します。
 
