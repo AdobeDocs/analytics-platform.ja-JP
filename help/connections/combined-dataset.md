@@ -58,7 +58,7 @@ source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
 
 | string_color | metric_a |
 | --- | --- |
-| 青 | 5 |
+| ブルー | 5 |
 | 未指定 | 6 |
 | 赤 | 2 |
 
@@ -66,6 +66,6 @@ source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
 
 | string_color | metric_a |
 | --- | --- |
-| 黄色 | 6 |
+| イエロー | 6 |
 | 赤 | 2 |
-| 青 | 3 |
+| ブルー | 3 |
