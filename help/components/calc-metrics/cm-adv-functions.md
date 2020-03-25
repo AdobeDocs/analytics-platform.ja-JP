@@ -13,19 +13,19 @@ Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UIC
 
 ## 表関数と行関数
 
-表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
+テーブル関数とは、テーブルの各行の出力が同じになる関数です。 行関数とは、テーブルの行ごとに出力が異なる関数です。
 
-## ゼロを含むパラメーターとは
+## ゼロを含むパラメーターの意味
 
-このパラメーターは、計算にゼロを含むかどうかを示します。ゼロは「何もない」ことを意味する場合もあれば、重要な意味を持つ場合もあります。
+計算にゼロを含めるかどうかを示します。 ゼロは「何もない」ことを意味しますが、時には重要な意味を持ちます。
 
-例えば、売上高の指標がある場合に、ページビュー数の指標をレポートに追加すると、すべてゼロの売上高の行が突然表示されます。売上高の列にある平均値、最小値、四分位数などの計算にこの状況が影響を及ぼすことは好ましくありません。その場合は、ゼロを含むパラメーターを確認します。
+例えば、売上高指標がある場合に、ページビュー数指標をレポートに追加すると、突然、売上高の行が増え、すべてゼロになります。 平均、最小、四分位数などに影響を与えたくない場合があります。 売上高列の計算。 この場合、ゼロを含むパラメーターを確認します。
 
-一方、対象とする指標が 2 つある場合は、そのうちの 1 つの指標の一部の行がゼロであったという理由で、その指標の平均値が高い、または最小値を持っているとは言えない可能性があります。したがって、この場合は、ゼロを含むパラメーターを確認しません。
+一方、2つの指標に関心がある場合は、一部の行がゼロなので、平均または最小値が高いとは言えないので、ゼロを含めるようにパラメータをチェックしないでください。
 
 ## AND
 
-引数の値を返します。値がある特定の値に等しくないことを示すには、NOT を使用します。
+引数の値を返します。 NOTを使用して、値が1つの特定の値と等しくないことを確認します。
 
 > [!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
 
@@ -35,12 +35,12 @@ AND(logical_test1,[logical_test2],...)
 
 | 引数 | 説明 |
 |---|---|
-| *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | (オプション)TRUE または FALSE として求める追加の条件です。 |
+| *logical_test1* | 必須の値です。TRUE または FALSE で示される値または式です。 |
+| *logical_test2* | (オプション)TRUEまたはFALSEとして評価する追加の条件 |
 
 ## 個別概算カウント（ディメンション） 
 
-選択したディメンションに関する個別のディメンション項目を概算した数を返します。この関数では、個別カウントを概算する HyperLogLog（HLL）手法を使用しています。  この関数は、値が 95％の確率で実際の値から誤差 5％以内にあることを保証するように設定されています。
+選択されたディメンションのディメンション項目の概算の個別カウントを返します。この関数は、HyperLogLog(HLL)メソッドを使用して、個別のカウントを近似します。  値が実際の値の95%以内であることを保証するように設定されます。
 
 ```
 Approximate Count Distinct (dimension)
@@ -48,7 +48,7 @@ Approximate Count Distinct (dimension)
 
 | 引数 |  |
 |---|---|
-| *ディメンション* | 個別の項目数を概算するディメンションです。 |
+| *ディメンション* | 明確な項目数の近似値を求めるディメンション。 |
 
 ## 使用例
 
@@ -58,23 +58,23 @@ Approximate Count Distinct (dimension)
 
 ![](assets/approx-count-distinct.png)
 
-レポートにおける「概算顧客数」指標の使用方法を以下に示します。
+次に、「おおよその顧客」指標をレポートで使用する方法を示します。
 
 ![](assets/approx-customers.png)
 
-## 超過したユニーク数
+## 超過した固有数
 
-Count() や RowCount() と同様に、Approximate Count Distinct() も[「超過したユニーク数」制限](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)の対象です。あるディメンションに関して、特定の月に「超過したユニーク数」制限に達した場合、値は 1 ディメンション項目としてカウントされます。
+Count()やRowCount()と同様に、近似値Count Distinct()は「ユニークが超過しました」 [という制限を受けます](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)。 ディメンションの特定の月内に「ユニークが超過しました」という制限に達した場合、その値は1つのディメンション項目としてカウントされます。
 
 ## カウント関数の比較
 
-Approximate Count Distinct() は、Count() 関数および RowCount() 関数を改良したものです。作成した指標を任意のディメンションレポートで使用し、個別のディメンションに関して概算した項目数をレンダリングできます。例としては、モバイルデバイスタイプレポートで使用される顧客 ID 数があります。
+近似値の個別カウント()は、作成された指標を任意のディメンションレポートで使用して、個別のディメンションの項目の近似値をレンダリングできるので、Count()関数とRowCount()関数の改良点です。 例えば、モバイルデバイスタイプレポートで使用される顧客IDの数などです。
 
-この関数は HLL 手法を使用しているので、Count() や RowCount() よりもわずかに精度が低くなります。一方、Count() と RowCount() の数は正確です。
+この関数はHLLメソッドを使用するのに対し、Count()とRowCount()は正確な数値なので、Count()とRowCount()よりもわずかに正確ではありません。
 
 ## アークコサイン（行） 
 
-指標のアークコサイン（逆コサイン）を返します。アークコサインは、そのコサインが数値である角度です。0（ゼロ）～ pi の範囲のラジアンで角度が返されます。結果をラジアンから度に変換する場合は、その結果に 180/PI( ) を掛けます。
+指標のアークコサイン (逆コサイン) を返します。アークコサインは、そのコサインが数値である角度です。0 (ゼロ) ～ pi の範囲のラジアンで角度が返されます。結果をラジアンから度に変換する場合は、その結果に 180/PI( ) を掛けます。
 
 ```
 ACOS(metric)
@@ -82,11 +82,11 @@ ACOS(metric)
 
 | 引数 |  |
 |---|---|
-| *metric*  | -1 ～ 1 で求める角度のコサインです。 |
+| *metric*  | -1 から 1 で求める角度のコサインです。 |
 
 ## アークサイン（行） 
 
-数のアークサイン（逆サイン）を返します。アークサインは、そのサインが数値である角度です。-pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークサインを度で表すには、結果に 180/PI( ) を掛けます。
+数のアークサイン (逆サイン) を返します。アークサインは、そのサインが数値である角度です。-pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークサインを度で表すには、結果に 180/PI( ) を掛けます。
 
 ```
 ASIN(metric) 
@@ -94,11 +94,11 @@ ASIN(metric)
 
 | 引数 |  |
 |---|---|
-| *metric*  | -1 ～ 1 で求める角度のコサインです。 |
+| *metric*  | -1 から 1 で求める角度のコサインです。 |
 
 ## アークタンジェント（行） 
 
-数のアークタンジェント（逆タンジェント）を返します。アークタンジェントは、そのタンジェントが数値である角度です。-pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークタンジェントを度で表すには、結果に 180/PI( ) を掛けます。
+数のアークタンジェント (逆タンジェント) を返します。アークタンジェントは、そのタンジェントが数値である角度です。-pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークタンジェントを度で表すには、結果に 180/PI( ) を掛けます。
 
 ```
 ATAN(metric)
@@ -106,7 +106,7 @@ ATAN(metric)
 
 | 引数 |  |
 |---|---|
-| *metric*  | -1 ～ 1 で求める角度のコサインです。 |
+| *metric*  | -1 から 1 で求める角度のコサインです。 |
 
 ## 指数回帰：予測 Y（行） 
 
@@ -184,9 +184,9 @@ CBRT(metric)
 
 ## 累積
 
-最終 N 行の x の合計を返します（ディメンションによって規定されており、文字列ベースのフィールドにハッシュ値を使用します）。
+最後のN行のxの合計を返します（ディメンションの順序に従い、文字列ベースのフィールドにハッシュ値を使用します）。
 
-N &lt;= 0 の場合、前のすべての行を使用します。この関数はディメンションによって規定されているので、日付やパスの長さなど、自然順序を持つディメンションでのみ役立ちます。
+N &lt;= 0の場合、前の行がすべて使用されます。 ディメンション別に並べられているので、日付やパスの長さなど、自然な順序を持つディメンションでのみ便利です。
 
 ```
 | Date | Rev  | cumul(0,Rev) | cumul(2,Rev) | 
@@ -199,9 +199,9 @@ N &lt;= 0 の場合、前のすべての行を使用します。この関数は�
 
 ## 累加平均
 
-最終 N 行の平均を返します。
+最後のN行の平均を返します。
 
-N &lt;= 0 の場合、前のすべての行を使用します。この関数はディメンションによって規定されているので、日付やパスの長さなど、自然順序を持つディメンションでのみ役立ちます。
+N &lt;= 0の場合、前の行がすべて使用されます。 ディメンション別に並べられているので、日付やパスの長さなど、自然な順序を持つディメンションでのみ便利です。
 
 > [!NOTE]この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
 
@@ -223,8 +223,8 @@ CORREL.EXP(metric_X, metric_Y)
 
 | 引数 | 説明 |
 |---|---|
-| *metric_X* | *metric_Y* とクロス集計する指標です。 |
-| *metric_Y* | *metric_X* とクロス集計する指標です。 |
+| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
+| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
 
 ## 指数回帰：切片（表） 
 
@@ -310,7 +310,7 @@ TANH(metric)
 
 ## IF（行） 
 
-IF 関数は、指定した条件が TRUE の場合に 1 つの値を返し、その条件が FALSE の場合にもう 1 つの値を返します。
+IF関数は、指定した条件がTRUEの場合に1つの値を返し、その条件がFALSEの場合にもう1つの値を返します。
 
 ```
 IF(logical_test, [value_if_true], [value_if_false])
@@ -318,9 +318,9 @@ IF(logical_test, [value_if_true], [value_if_false])
 
 | 引数 | 説明 |
 |---|---|
-| *logical_test* | 必須。TRUE または FALSE で示される値または式です。 |
-| *[value_if_true]* | *logical_test* 引数の値が TRUE の場合に返す値です（含まれない場合、この引数のデフォルト値は 0 です）。 |
-| *[value_if_false]* | *logical_test* 引数の値が FALSE の場合に返す値です（含まれない場合、この引数のデフォルト値は 0 です）。 |
+| *logical_test* | 必須の値です。TRUE または FALSE で示される値または式です。 |
+| *[value_if_true]* | The value that you want to be returned if the *logical_test* argument evaluates to TRUE. (This argument defaults to 0 if not included.) |
+| *[value_if_false]* | The value that you want to be returned if the *logical_test* argument evaluates to FALSE. (This argument defaults to 0 if not included.) |
 
 ## 未満
 
@@ -356,7 +356,7 @@ LOG10(metric)
 
 | 引数 | 説明 |
 |---|---|
-| *metric*  | 10 を底とする対数を求める正の実数です。 |
+| *metric*  | 基数-10 の対数を求める正の実数です。 |
 
 ## 対数回帰：相関係数（表） 
 
@@ -368,8 +368,8 @@ CORREL.LOG(metric_X,metric_Y)
 
 | 引数 | 説明 |
 |---|---|
-| *metric_X* | *metric_Y* とクロス集計する指標です。 |
-| *metric_Y* | *metric_X* とクロス集計する指標です。 |
+| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
+| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
 
 ## 対数回帰：切片（表） 
 
@@ -414,7 +414,7 @@ SLOPE.LOG(metric_A, metric_B)
 
 ## 自然対数
 
-数の自然対数を返します。自然対数の底は定数 *e*（2.71828182845904）です。LN は、EXP 関数の逆関数です。
+Returns the natural logarithm of a number. Natural logarithms are based on the constant *e* (2.71828182845904). LN is the inverse of the EXP function.
 
 ```
 LN(metric)
@@ -426,7 +426,7 @@ LN(metric)
 
 ## NOT
 
-数が 0 の場合は 1 を返します。別の数の場合は 0 を返します。
+数が0の場合は1を返し、別の数の場合は0を返します。
 
 ```
 NOT(logical)
@@ -434,9 +434,9 @@ NOT(logical)
 
 | 引数 | 説明 |
 |---|---|
-| *logical* | 必須。TRUE または FALSE で示される値または式です。 |
+| *論理* | 必須の値です。TRUE または FALSE で示される値または式です。 |
 
-NOT を使用する場合は、式（&lt;、>、=、&lt;> など）が0 と 1 のどちらの値を返すかを把握しておく必要があります。
+NOT を使用する場合は、式（&lt;、>、=、&lt;> など）が0または1の値を返します。
 
 ## 等しくない
 
@@ -454,8 +454,8 @@ OR(logical_test1,[logical_test2],...)
 
 | 引数 | 説明 |
 |---|---|
-| *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | (オプション)TRUE または FALSE として求める追加の条件です。 |
+| *logical_test1* | 必須の値です。TRUE または FALSE で示される値または式です。 |
+| *logical_test2* | (オプション)TRUEまたはFALSEとして評価する追加の条件 |
 
 ## 円周率
 
@@ -477,8 +477,8 @@ CORREL.POWER(metric_X, metric_Y)
 
 | 引数 | 説明 |
 |---|---|
-| *metric_X* | *metric_Y* とクロス集計する指標です。 |
-| *metric_Y* | *metric_X* とクロス集計する指標です。 |
+| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
+| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
 
 ## 累乗回帰：切片（表） 
 
@@ -529,8 +529,8 @@ CORREL.QUADRATIC(metric_X, metric_Y)
 
 | 引数 | 説明 |
 |---|---|
-| *metric_X* | *metric_Y* とクロス集計する指標です。 |
-| *metric_Y* | *metric_X* とクロス集計する指標です。 |
+| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
+| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
 
 ## 二次回帰：切片（表） 
 
@@ -581,8 +581,8 @@ CORREL.RECIPROCAL(metric_X, metric_Y)
 
 | 引数 | 説明 |
 |---|---|
-| *metric_X* | *metric_Y* とクロス集計する指標です。 |
-| *metric_Y* | *metric_X* とクロス集計する指標です。 |
+| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
+| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
 
 ## 逆数回帰：切片（表） 
 
@@ -649,7 +649,7 @@ t スコア col および自由度 n の t 検定（m-tailed）を実行しま�
 
 `X` は t 検定統計量です。一般的には指標に基づく数式（zscore など）で、すべての行で評価されます。
 
-返される値は、指定された自由度とテール数において検定統計量 x が見られる確率です。
+戻り値は、指定された自由度とテール数のテスト統計xが表示される確率です。
 
 **例：**
 
@@ -679,9 +679,9 @@ TAN (metric)
 
 ## z スコア（行） 
 
-正規分布に基づく z スコア（正規スコア）を返します。z スコアは、観測値が平均値から離れている標準偏差の数です。z スコア 0（ゼロ）は、スコアが平均値と同じであることを意味します。z スコアは正と負のどちらにもなり得ます。平均値を上回るか下回るかを標準偏差の数で示します。
+正規分布に基づいてZスコア（通常のスコア）を返します。 zスコアは、観測値が平均から偏差した標準偏差の数です。 zスコア0（ゼロ）は、スコアが平均と同じであることを意味します。 Zスコアは正または負の値で、平均値を上回るか下回るか、標準偏差の数で示されます。
 
-z スコアの式は次のようになります。
+zスコアの式は次のとおりです。
 
 ![](assets/z_score.png)
 
@@ -701,16 +701,16 @@ Z スコア（指標）
  <tbody> 
   <tr> 
    <td colname="col1"> <i> metric</i>  </td> 
-   <td colname="col2"> <p> 最初のゼロ以外の引数の値を返します。 </p> </td> 
+   <td colname="col2"> <p> 最初のゼロでない引数の値を返します。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Z 検定
 
-z スコア A の Z 検定（n-tailed）を実行します。
+ZスコアAのn-tailed Z検定を実行します。
 
-現在の行が列に偶然表示される可能性を返します。
+現在の行が列内で偶然見つかる確率を返します。
 
 > [!NOTE]値が正規分布されると仮定します。
 
