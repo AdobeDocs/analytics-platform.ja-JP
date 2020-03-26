@@ -30,7 +30,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | Customer Jeurney AnalyticsのセグメントをAEPや他のソリューションに共有できますか。 | まだです。 Customer Jureny AnalyticsからAEPにセグメントを共有する新しい革新的な方法を検討しています。この方法は、それほど遅れはありません。 ただし、潜在的な回避策として、Query Servicesの出力をUnified Profileに共有できます。 |
 | 古いeVar設定はどうなりましたか。 | 従来のAdobe AnalyticsのeVar、propおよびイベントは、Customer Jearny Analyticsに存在しなくなりました。 スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。 したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリー時に適用されるようになりました。 |
 | セッションと変数の永続性の設定は、今どこにありますか。 | Customer Jeurney Analyticsでは、これらのすべての設定がレポート時に適用され、これらの設定はデータビューに反映されます。 これらの設定に対する変更が遡及され、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
-| 既存のセグメント/計算指標はどうなりますか？ | 顧客の遍歴分析では、eVar、propまたはイベントを使用せず、代わりにAEPスキーマを使用します。 つまり、既存のセグメントや計算指標がいずれもCustomer Jeurney Analyticsと互換性がないことを意味します。 |
+| 既存のセグメント/計算指標はどうなりますか？ | 顧客の遍歴分析では、eVar、propまたはeventを使用せず、代わりにAEPスキーマを使用します。 つまり、既存のセグメントや計算指標がいずれもCustomer Jeurney Analyticsと互換性がないことを意味します。 |
 | Customer Jeurney Analyticsでの制限の処理方法を教えて `Uniques Exceeded` ください。 | Customer Jeurney Analyticsには固有の値の制限がないので、心配する必要はありません。 |
 | 既存のお客様の場合、 [!DNL Data Workbench] 今すぐCustomer Jargeny Analyticsに移行できますか。 | それは違う。 Unified Customer Process(UCP)を多用している場合は、ステッチが実装されるまで待つ必要があります。 既に高い顧客認証率をお持ちの場合や、すべてのデータを1か所で管理したい場合、またはeVarを削除したい場合は、Customer Jargeny Analyticsが最適です。 |
 
