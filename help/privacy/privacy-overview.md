@@ -1,19 +1,19 @@
 ---
-title: 顧客の遍歴分析のプライバシーの概要
-description: Customer Jurney Analyticsでのプライバシー設定の仕組みを説明します。
-translation-type: tm+mt
+title: Customer Journey Analytics のプライバシーの概要
+description: Customer Journey Analytics でのプライバシー設定の仕組みを説明します。
+translation-type: ht
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 ---
 
 
-# 顧客の遍歴分析のプライバシーの概要
+# Customer Journey Analytics のプライバシーの概要
 
-一般に、Customer Jeurney Analyticsのプライバシー関連の設定は、Adobe Experience Platformから継承されます。
+一般に、Customer Journey Analytics のプライバシー関連の設定は、Adobe Experience Platform から継承されます。
 
 ## GDPR
 
-Customer Jeurney Analyticsは、General Data Protection Regulation(GDPR)Central Serviceを直接登録せず、代わりにExperience Platformで行われたデータセットの変更をすべて継承します。 GDPRの削除リクエストを実施し、GDPRがパイプラインで完了したことを通知するには、Platform Data Lakeを使用します。 パイプラインをリッスンし、影響を受けるバッチに対するすべての変更をCustomer Jeurney Analyticsで同期して、イベントデータセットを取得します。 GDPRの削除要求の影響を受けるプロファイルと参照データセットは、削除要求のたびに完全に再取り込みされます。 Data Lakeでの削除イベントから7日以内に削除要求が実行されることを保証します。
+Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央サービスを直接登録せず、代わりに Experience Platform でおこなわれたデータセットの変更をすべて継承します。アドビでは、GDPR の削除リクエストの実施や、パイプラインでそれらが完了したことを通知するために、Platform Data Lake を使用しています。パイプラインをリッスンし、影響を受けるバッチに加えられたすべての変更を Customer Journey Analytics で同期して、イベントデータセットを取得します。GDPR の削除要求による影響を受けるプロファイルと参照データセットは、削除要求のたびに、再度完全に取り込まれます。削除要求は、Data Lake での削除イベントから 7 日以内に必ず実行されます。
 
 ## CCPA
 
