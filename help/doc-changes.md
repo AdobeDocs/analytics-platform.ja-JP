@@ -1,6 +1,6 @@
 ---
-title: CJAドキュメントの更新
-description: '2019年12月以降に設定されたCustomer Jurney Analyticsドキュメントのコンテンツの更新を一覧表示します。 '
+title: CJA ドキュメントのアップデート
+description: 'リスト向けのコンテンツの更新は、2019年12月以降に設定されたCustomer Jurney Analyticsドキュメントです。 '
 translation-type: tm+mt
 source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 
