@@ -1,7 +1,7 @@
 ---
-title: 顧客の遍歴分析FAQ
-description: 顧客の遍歴分析 — よくある質問(FAQ)
-translation-type: tm+mt
+title: Customer Journey Analytics の FAQ
+description: Customer Journey Analytics - よくある質問。
+translation-type: ht
 source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
@@ -12,25 +12,25 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | 質問 | 回答 |
 |---|---|
 | **前提条件** |  |
-| 顧客の遍歴分析にDevice GraphまたはDevice Coopが必要ですか。 | いいえ。Customer Jareny Analyticsでは、プライベートデバイスグラフまたはDevice Coopは必要ありません。 実際、まだサポートされていません。 |
-| Customer Jeurney AnalyticsにExperience Cloud ID(ECID)が必要ですか。 | いいえ。Customer Jeurney Analyticsは、データセット内の任意のID（ECIDか、選択した他のIDか）をサポートします。 |
-| Customer Jearny Analyticsの前にETL(Extract, Transform, Load)を実行する必要がある場合はどうなりますか。 | 現在、AEPにデータを送信する前にデータを変換する必要がある場合は、ETLパートナー（UnifiまたはInformatica）と連携する必要があります。 データの取り込み後にETLが必要な場合、AEP Query Servicesには一部の制限付きオプションが用意されています。 |
+| Customer Journey Analytics では、デバイスグラフまたは Device Coop は必要ですか。 | いいえ。Customer Journey Analytics では、プライベートデバイスグラフまたは Device Coop は必要ありません。実際、それらはまだサポートされていません。 |
+| Customer Journey Analytics には Experience Cloud ID（ECID）が必要ですか。 | いいえ。Customer Journey Analytics は、データセット内の任意の ID（ECID か選択した他の ID かに関わらず）をサポートします。 |
+| Customer Journey Analytics の前に ETL（抽出、変換、読み込み）を実行する必要がある場合はどうなりますか。 | 現在、AEP に取り込む前にデータを変換する必要がある場合は、ETL パートナー（Unifi または Informatica）と連携する必要があります。データの取り込み後に ETL が必要となった場合、AEP クエリサービスにはいくつかの制限付きオプションが用意されています。 |
 | **ステッチ** |  |
-| 顧客の遍歴分析は、デバイス間で、またはデータセット間で「縫い合わせ」できますか。 | いいえ。顧客の遍歴分析は、「独自のIDを持ち込む」分析システムです。 縫い目の良いアプローチの計画は、作品の中にあります。 |
-| 匿名行動から認証された行動へのステッチはサポートされていますか？ | いいえ、まだです。 |
-| **顧客の遍歴分析へのデータの取得** |  |
-| プラットフォームでの顧客の遍歴分析で予想される遅延は何ですか。 | <ul><li>標準荷重下：&lt; 60<br>**分注：**パイプラインを通じてのデータフローが異常に多い場合は、最長24時間かかります。</li><li>バックフィルデータ（最大100億イベント）:&lt; 4週間</li></ul> |
-| Customer Jeurney Analyticsでオンラインデータをオフラインデータに接続する方法を教えてください。 | 顧客の遍歴分析は、「独自のIDを持ち込む」分析システムです。 データセット間で個人IDが一致する限り、Customer Jeurney Analyticsは、セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 データセット間で |
-| オフラインデータをCustomer Jeurney Analyticsに取り込む方法を教えてください。 | お客様は、Customer Jareny Analyticsでデータを使用する前に、AEPにデータを持ち込む必要があります。 エクスペリエンスプラットフォームのデータは、オンボーディングチームが必要に応じて、お客様に推奨事項やコンサルティングを提供するのに役立ちます。 |
-| AnalyticsデータをCustomer Jeurney Analyticsに取り込む方法を教えてください。 | 解析データは、Analytics Data Connectorを通じてAEPに接続できます。 ほとんどのAnalyticsフィールドはXDM形式で引き継がれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
-| データセット要素をデータビューに組み込むのにどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去13か月のデータをバックフィルするのに数日かかります。 |
-| PIIデータを取り込んでデータ間の接続を確立する必要があるか。 | いいえ。PIIではない顧客IDのハッシュを含む、任意のIDを使用できます。 |
-| **従来のAnalyticsコンポーネント** |  |
-| 従来のAdobe Analytics製品の意味 | 顧客の遍歴分析は、次世代の分析製品です。 現在の製品からCustomer Jareny Analyticsに移行するには、数年かかり、多くの調整が同時に行われます。 このリリースは、多くの人々がこの方向に向けて大きな一歩を踏み出したものです。 |
-| Customer Jeurney AnalyticsのセグメントをAEPや他のソリューションに共有できますか。 | まだです。 Customer Jureny AnalyticsからAEPにセグメントを共有する新しい革新的な方法を検討しています。この方法は、それほど遅れはありません。 ただし、潜在的な回避策として、Query Servicesの出力をUnified Profileに共有できます。 |
-| 古いeVar設定はどうなりましたか。 | 従来のAdobe AnalyticsのeVar、propおよびイベントは、Customer Jearny Analyticsに存在しなくなりました。 スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。 したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリー時に適用されるようになりました。 |
-| セッションと変数の永続性の設定は、今どこにありますか。 | Customer Jeurney Analyticsでは、これらのすべての設定がレポート時に適用され、これらの設定はデータビューに反映されます。 これらの設定に対する変更が遡及され、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
-| 既存のセグメント/計算指標はどうなりますか？ | 顧客の遍歴分析では、eVar、propまたはeventを使用せず、代わりにAEPスキーマを使用します。 つまり、既存のセグメントや計算指標がいずれもCustomer Jeurney Analyticsと互換性がないことを意味します。 |
-| Customer Jeurney Analyticsでの制限の処理方法を教えて `Uniques Exceeded` ください。 | Customer Jeurney Analyticsには固有の値の制限がないので、心配する必要はありません。 |
-| 既存のお客様の場合、 [!DNL Data Workbench] 今すぐCustomer Jargeny Analyticsに移行できますか。 | それは違う。 Unified Customer Process(UCP)を多用している場合は、ステッチが実装されるまで待つ必要があります。 既に高い顧客認証率をお持ちの場合や、すべてのデータを1か所で管理したい場合、またはeVarを削除したい場合は、Customer Jargeny Analyticsが最適です。 |
+| Customer Journey Analytics は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | いいえ。Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。優れたステッチアプローチに対する計画は進行中です。 |
+| 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | いいえ、まだサポートされていません。 |
+| **Customer Jeurney Analytics へのデータの取得** |  |
+| Platform の Customer Jeurney Analytics で予想される遅延はどのくらいですか。 | <ul><li>標準の負荷の場合：&lt;60分 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満</li></ul> |
+| Customer Journey Analytics でオンラインデータをオフラインデータに接続する方法を教えてください。 | Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。データセット間でユーザー ID が一致している限り、Customer Journey Analytics は、セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 |
+| オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | お客様は、Customer Journey Analytics でデータを使用する前に、データを AEP に取り込む必要があります。Experience Platform のデータは、オンボーディングチームが必要に応じて、お客様にレコメンデーションやコンサルティングを提供するのに役立ちます。 |
+| Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analytics データは、Analytics Data Connector を通じて AEP に接続できます。ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
+| データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
+| PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
+| **従来の Analytics コンポーネント** |  |
+| 従来の Adobe Analytics 製品とは何を表していますか。 | Customer Journey Analytics は、次世代の分析製品です。現在の製品から Customer Journey Analytics に進化するには、数年の時間がかかり、多くの調整がおこなわれます。このリリースは、この方向への大きな一歩となります。 |
+| Customer Journey Analytics のセグメントを AEP や他のソリューションに共有できますか。 | まだできません。アドビでは、近い将来に、Customer Jureny Analytics から AEP にセグメントを共有する新しい革新的な方法を実現できるよう検討中です。潜在的な解決策として、クエリサービスの出力を統合プロファイルに共有できます。 |
+| 古い eVar 設定はどうなりましたか。 | 従来の Adobe Analytics の eVar、prop およびイベントは、Customer Journey Analytics には存在しなくなりました。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
+| すべてのセッションと変数の永続性の設定は、どこにありますか。 | Customer Jaurney Analytics では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
+| 既存のセグメント／計算指標はどうなりますか。 | Customer Journey Analytics は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標は、いずれも Customer Journey Analytics との互換性はありません。 |
+| Customer Journey Analytics での `Uniques Exceeded` 制限の処理方法を教えてください。 | Customer Journey Analytics には一意の値に関する制限がないので、ご心配は不要です。 |
+| 既存の [!DNL Data Workbench] のユーザーであれば、今すぐ Customer Jargeny Analytics に移行できますか。 | 場合によります。Unified Customer Process（UCP）を多用している場合は、ステッチが実装されるまで待つ必要があります。既に顧客認証率が高い場合や、すべてのデータを一元管理したい場合、または eVar を排除したい場合は、Customer Jargeny Analytics が最適です。 |
 
