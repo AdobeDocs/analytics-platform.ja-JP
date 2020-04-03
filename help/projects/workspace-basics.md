@@ -68,7 +68,7 @@ Workspaceは、組織にとって実用的なデータベースの決定を行�
 
 * ブログ投稿：
    * [よりスマートな分析による組織の強化](https://theblog.adobe.com/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
-   * [Analysis Workspace:シークレットソースが味わえる](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
+   * [分析ワークスペース：シークレットソースが味わえる](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
    * [Analysis Workspace を使用する理由](https://theblog.adobe.com/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
    * [Analysis Workspace で生産性を最大化するための 5 つのヒント](https://theblog.adobe.com/5-tips-maximize-productivity-analysis-workspace/)
 
