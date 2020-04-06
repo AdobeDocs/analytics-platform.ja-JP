@@ -2,7 +2,7 @@
 title: リファレンス — 基本関数
 description: '計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。 '
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 ここでは、関数とその定義をアルファベット順に示します。
 
-> [!NOTE][!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
+>[!NOTE][!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
 
 ## 表関数と行関数
 
