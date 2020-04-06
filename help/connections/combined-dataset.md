@@ -2,7 +2,7 @@
 title: 組み合わされたデータセット
 description: CJAがデータセットを組み合わせて接続を作成する方法を説明します。
 translation-type: tm+mt
-source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
 
 次の例を考えてみましょう。 2つのデータセットがあり、それぞれ異なるフィールドに異なるデータが含まれています。
 
-> [!NOTE] 通常、Adobe Experience PlatformはタイムスタンプをUnixミリ秒で保存します。 この例では、読みやすさを考慮して、日時が使用されています。
+>[!NOTE] 通常、Adobe Experience PlatformはタイムスタンプをUnixミリ秒で保存します。 この例では、読みやすさを考慮して、日時が使用されています。
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
