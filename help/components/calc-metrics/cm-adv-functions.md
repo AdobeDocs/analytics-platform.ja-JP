@@ -2,7 +2,7 @@
 title: リファレンス — 高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -27,7 +27,7 @@ Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UIC
 
 引数の値を返します。 NOTを使用して、値が1つの特定の値と等しくないことを確認します。
 
-> [!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
+>[!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -64,7 +64,7 @@ Approximate Count Distinct (dimension)
 
 ## 超過した固有数
 
-Count()やRowCount()と同様に、近似値Count Distinct()は「ユニークが超過しました」 [という制限を受けます](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)。 ディメンションの特定の月内に「ユニークが超過しました」という制限に達した場合、その値は1つのディメンション項目としてカウントされます。
+Count()やRowCount()と同様に、近似値Count Distinct()は「ユニークが超過しました」 [という制限を受けます](https://marketing.adobe.com/resources/help/ja_JP/reference/metrics_uniques_high_numbers.html)。 ディメンションの特定の月内に「ユニークが超過しました」という制限に達した場合、その値は1つのディメンション項目としてカウントされます。
 
 ## カウント関数の比較
 
@@ -203,7 +203,7 @@ N &lt;= 0の場合、前の行がすべて使用されます。 ディメンシ�
 
 N &lt;= 0の場合、前の行がすべて使用されます。 ディメンション別に並べられているので、日付やパスの長さなど、自然な順序を持つディメンションでのみ便利です。
 
-> [!NOTE]この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
+>[!NOTE]この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -446,7 +446,7 @@ NOT を使用する場合は、式（&lt;、>、=、&lt;> など）が0または
 
 いずれかの引数が TRUE の場合は TRUE を返します。すべての引数が FALSE の場合は FALSE を返します。
 
-> [!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
+>[!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -687,7 +687,7 @@ zスコアの式は次のとおりです。
 
 ここで、[!DNL x] は生のスコア、[!DNL μ] は母集団の平均値、[!DNL σ] は母集団の標準偏差です。
 
-> [!NOTE] [!DNL μ] （ミュー）および [!DNL σ]（シグマ）は、指標から自動的に計算されます。
+>[!NOTE] [!DNL μ] （ミュー）および [!DNL σ]（シグマ）は、指標から自動的に計算されます。
 
 Z スコア（指標）
 
@@ -712,5 +712,5 @@ ZスコアAのn-tailed Z検定を実行します。
 
 現在の行が列内で偶然見つかる確率を返します。
 
-> [!NOTE]値が正規分布されると仮定します。
+>[!NOTE]値が正規分布されると仮定します。
 
