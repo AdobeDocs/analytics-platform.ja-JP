@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の機能のサポート
 description: 顧客の遍歴分析機能とAdobe Analytics機能セットとの比較。
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | 仮想レポートスイート | 現在はデータ [表示](/help/data-views/create-dataview.md)。 |
 | VRSコンポーネントのキュレーション | データ表示 |
 | レポートの時間処理 | CJAは、レポートの時間処理のみに依存します。 |
-| GDPRの削除 | GDPRは現在、Adobe Experience Platformと連携して処理されます。CJAは、Experience Platformが基になるデータセットに加えたデータ変更をすべて継承します。 |
+| GDPRの削除 | GDPRは現在、と連携して処理されています。CJAは、基盤となるデータセッ [!UICONTROL Experience Platform] トに対するデータ変更をすべ [!UICONTROL Experience Platform] て継承します。 |
 
 ## サポート（注意）
 
@@ -36,7 +36,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | --- | --- |
 | 製品変数 | エクスペリエンスイベントスキーマ（特にproductListItemsオブジェクトを使用）に準拠したデータのレポートに現在使用できる製品変数です。 |
 | ビジュアライゼーション | マップのビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
-| AAMオーディエンス | お客様がAnalytics Data Connectorデータセットを使用している場合、このデータはADCデータの一部となります。 |
+| AAMオーディエンス | 顧客がデータセットを使 [!UICONTROL Analytics Data Connector] 用している場合、このデータはADCデータの一部になります。 |
 | プロジェクト共有 | プロジェクトの共有は、CJAのユーザー間でのみサポートされます。CJAと従来の分析ワークスペース間でのプロジェクトの共有はサポートされません。 |
 | カスタムセッション | モバイルのバックグラウンドヒット以外のすべてのカスタムセッション機能をサポートします。 |
 | eVar永続化設定 | eVarはCJAの一部ではなくなりました。 ただし、永続化設定はデータ表示の一部になり、すべてのディメンションで使用できます。 永続性は、データ収集処理ではなく、レポートの時間処理に基づくことに注意してください。 つまり、すべての永続性は、データ全体ではなくレポートの日付範囲に基づきます。 |
@@ -50,9 +50,9 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | 標準搭載の分析ワークスペースディメンション(例：ブラウザータイプ、転送者タイプ、マーケティングチャネル、訪問回数など) | CJAは、これらのディメンションをネイティブに提供しません。 Analytics Data Connector(ADC)を使用するお客様は、これらのディメンションの一部を利用できますが、すべてを利用できるわけではありません。 ADCを介してサポートさ [れるAnalytics変数に関するドキュメントを参照してください](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネルは完全にサポートされています。 セグメント比較はサポートされていません。 |
 | マーチャンダイジングeVar | マーチャンダイジングeVarは、ADCベースのデータセットでのみ機能します。ただし、これらのデータが同じXDMスキーマに厳密に準拠している場合を除きます(前述の製品リストの制限と同様)。 |
-| ボットフィルタリング | Analytics Data Connector(ADC)ベースのデータセットの場合、ボットフィルターが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、エクスペリエンスプラットフォームまたはCJAでは実行されません。 |
+| ボットフィルタリング | Analytics Data Connector(ADC)ベースのデータセットの場合、ボットフィルターが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、またはCJAによって実 [!UICONTROL Experience Platform] 行されません。 |
 | 処理ルール | ADCベースのデータセットの場合、処理ルールは引き続き適用されます。 |
-| デバイス間のIDステッチ | お客様は、クエリサービスを通じて「1回のみ」のデータのステッチに制限されているか、現在、Experience Platformのデータ取り込みの前に、このロジックをデータに適用する必要があります。 |
+| デバイス間のIDステッチ | お客様は、クエリサービスを通じて「1回限り」のデータ編集に制限されているか、現在、データ取り込みの前にこのロジックをデータに適用する必要 [!UICONTROL Experience Platform] があります。 |
 
 ## 現在はサポートされていませんが、計画されています
 
@@ -95,6 +95,6 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | Reports &amp; Analyticsのターゲット |  |
 | Reports &amp; Analyticsカレンダーのイベント |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse レポート | Adobe Experience Platformクエリサービスは、CJAでこれらの使用事例の新しいインターフェイスとなります。 |
+| Data Warehouse レポート | [!UICONTROL Experience Platform Query Service] は、CJAでこれらの使用事例の新しいインターフェイスになります。 |
 | Mobile Services |  |
 | データフィード |  |
