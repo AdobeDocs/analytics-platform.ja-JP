@@ -2,7 +2,7 @@
 title: データビューとアトリビューションの設定
 description: Customer Jeurney Analyticsでプラットフォーム表示セットへのデータデータデータの作成方法を説明します。
 translation-type: tm+mt
-source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 * データ表示ユーザーインターフェイスで、デフォルトの属性を指定します。 **注意**:後日、Workspaceプロジェクトでこれらの設定を上書きできます。 ただし、この機能は現在は使用できません。
 
-* Customer Jeurney Analyticsのアトリビューション設定は、非破壊的で遡及的です。 つまり、Customer Jareny Analyticsのデータセットに対して回復不能な害を加えることはできません。 誤って何かを削除した場合でも、Experience Platformに戻って、データセットを再度取り込むことができます。 （ただし、データセットを再び取り込むと追加料金が発生することに注意してください）。
+* Customer Jeurney Analyticsのアトリビューション設定は、非破壊的で遡及的です。 つまり、Customer Jareny Analyticsのデータセットに対して回復不能な害を加えることはできません。 誤って何かを削除した場合でも、いつでもに戻ってデータセッ [!UICONTROL Experience Platform] トを取り込むことができます。 （ただし、データセットを再び取り込むと追加料金が発生することに注意してください）。
 
 * ディメンションを従来のeVar（コンバージョン変数）と同様に「動作」させる場合は、デフォルトで「ラストタッチ訪問」属性を使用して設定する必要があります。
 
