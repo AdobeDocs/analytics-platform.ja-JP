@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 translation-type: tm+mt
-source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
+source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 
 ---
 
@@ -12,17 +12,17 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | 質問 | 回答 |
 |---|---|
 | **前提条件** |  |
-| Customer Journey Analytics では、デバイスグラフまたは Device Coop は必要ですか。 | いいえ。Customer Journey Analytics では、プライベートデバイスグラフまたは Device Coop は必要ありません。実際、それらはまだサポートされていません。 |
-| Customer Journey Analytics には Experience Cloud ID（ECID）が必要ですか。 | いいえ。Customer Journey Analytics は、データセット内の任意の ID（ECID か選択した他の ID かに関わらず）をサポートします。 |
+| Do you need Device Graph or Device Coop for [!UICONTROL Customer Journey Analytics]? | No, Private Device Graph or Device Coop are not required for [!UICONTROL Customer Journey Analytics]. 実際、それらはまだサポートされていません。 |
+| Do you need Experience Cloud ID (ECID) for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that&#39;s ECID or any other ID you choose. |
 | Customer Journey Analytics の前に ETL（抽出、変換、読み込み）を実行する必要がある場合はどうなりますか。 | 現在、AEP に取り込む前にデータを変換する必要がある場合は、ETL パートナー（Unifi または Informatica）と連携する必要があります。データの取り込み後に ETL が必要となった場合、AEP クエリサービスにはいくつかの制限付きオプションが用意されています。 |
 | **ステッチ** |  |
-| Customer Journey Analytics は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | いいえ。Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。優れたステッチアプローチに対する計画は進行中です。 |
+| Can [!UICONTROL Customer Journey Analytics] &quot;stitch&quot; across devices or across datasets? | いいえ。[!UICONTROL Customer Journey Analytics] は、「独自のIDを持ち込む」分析システムです。 優れたステッチアプローチに対する計画は進行中です。 |
 | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | いいえ、まだサポートされていません。 |
-| **Customer Jeurney Analytics へのデータの取得** |  |
-| Platform の Customer Jeurney Analytics で予想される遅延はどのくらいですか。 | <ul><li>標準の負荷の場合：&lt;60分 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満</li></ul> |
-| Customer Journey Analytics でオンラインデータをオフラインデータに接続する方法を教えてください。 | Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。データセット間でユーザー ID が一致している限り、Customer Journey Analytics は、セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 |
-| オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | お客様は、Customer Journey Analytics でデータを使用する前に、データを AEP に取り込む必要があります。Experience Platform のデータは、オンボーディングチームが必要に応じて、お客様にレコメンデーションやコンサルティングを提供するのに役立ちます。 |
-| Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analytics データは、Analytics Data Connector を通じて AEP に接続できます。ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
+| **データの取得[!UICONTROL Customer Journey Analytics]** |  |
+| に対して予想される遅延は何 [!UICONTROL Customer Journey Analytics] です [!UICONTROL Experience Platform]か。 | <ul><li>標準の負荷の場合：&lt;60分 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満</li></ul> |
+| How do you connect online data to offline data in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics] は、「独自のIDを持ち込む」分析システムです。 As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect segments, attribution, flow, fallout, etc. 接続できます。 |
+| オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | お客様は、Customer Jeurney Analyticsでデータを使用する前に、エクスペリエンスプラットフォームにデータを持ち込む必要があります。 Experience Platform のデータは、オンボーディングチームが必要に応じて、お客様にレコメンデーションやコンサルティングを提供するのに役立ちます。 |
+| Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analyticsデータは、Analytics Data Connectorを介してエクスペリエンスプラットフォームに接続できます。 ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
 | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
 | PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
 | **従来の Analytics コンポーネント** |  |
