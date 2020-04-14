@@ -2,14 +2,14 @@
 title: 接続の管理
 description: プラットフォームデータセットへの接続を管理する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
+source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
 
 ---
 
 
 # 接続の管理
 
-1つ以上の接続を作成したら、接続マネージャーでそれらを管理できます。 次のことが可能です。
+1つ以上の接続を作成したら、マネージャでそれらを管理でき [!UICONTROL Connections] ます。 次のことが可能です。
 
 * 接続を削除します。
 * 接続名を変更します。
@@ -26,9 +26,9 @@ source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
 
    | アクション | 説明 |
    |---|---|
-   | 削除 | 接続を削除しても、データセットはAdobe Experience Platformに残っているので削除されません。 |
-   | 名前変更 | 接続の名前を変更中… |
-   | データビューを作成 | このリンクをクリックすると、データ [表示ビルダー](/help/data-views/create-dataview.md)。 |
-   | 開始またはデータストリーミングの停止 | 「ストリーミング」とは、接続内のデータセットに新しいバッチが追加された場合、この新しいデータがCustomer Jeurney Analyticsに取り込まれ、レポートされることを意味します。 |
+   | [!UICONTROL Delete] | 接続を削除しても、データセットはAdobe Experience Platformに残っているので削除されません。 |
+   | [!UICONTROL Rename] | 接続の名前をよりわかりやすい名前に変更できます。 |
+   | [!UICONTROL Create Data View] | このリンクをクリックすると、データ [表示ビルダー](/help/data-views/create-dataview.md)。 |
+   | [!UICONTROL Start or stop data streaming] | 「ストリーミング」とは、接続内のデータセットのいずれかに新しいバッチが追加された場合に、この新しいデータがレポート用に取り込まれること [!UICONTROL Customer Journey Analytics] を意味します。 |
 
 
