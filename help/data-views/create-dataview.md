@@ -2,7 +2,7 @@
 title: データレイヤーの作成
 description: Customer Jeurney Analytics(CJA)でプラットフォームデータセットへの表示を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Customer Jeurney AnalyticsのWorkspaceプロジェクトは、データ表示に
 
 ## 前提条件
 
-データ表示を作成する前に、Adobe Experience Platformデータセ [ットへの1つ以上の接続を設定する必要があります](/help/connections/create-connection.md)。
+データ表示を作成する前に、Experience Platform [データセットに1つ以上の接続を設定する必要があります] ](/help/connections/create-connection.md)。
 
 ## 設定する
 
@@ -27,7 +27,7 @@ Customer Jeurney AnalyticsのWorkspaceプロジェクトは、データ表示に
 
    | セッション設定 | 定義 |
    |---|---|
-   | 接続 | このフィールドは、データ表示を、プラットフォームデータセットを含む、以前に確立した接続にリンクします。 |
+   | 接続 | このフィールドは、データ表示を、データセットを含む、以前に確立した接続にリ [!UICONTROL Experience Platform] ンクさせます。 |
    | 名前 | データ表示に名前を付ける必要があります。 |
    | 説明 | 詳細な説明は必須ではありませんが、お勧めします。 |
    | 追加タグ | タグを使用すると、データ表示を整理できます。 |
