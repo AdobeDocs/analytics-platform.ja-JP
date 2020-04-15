@@ -2,7 +2,7 @@
 title: 接続の作成
 description: Customer Jeurney Analyticsでプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 7fdda3a4171400ba018fe31b492737553c575998
+source-git-commit: 757aea2f2ef4bb7eb1e9ba7c06a5705427255208
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: 7fdda3a4171400ba018fe31b492737553c575998
 
    | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
    |---|---|---|---|---|
-   | [!UICONTROL Event] | イベントを時間で表すデータ(例：Web訪問、インタラクション、トランザクション、POSデータ、調査データ、広告インプレッションデータなど)。 これは、顧客IDまたはcookie IDとタイムスタンプを持つ一般的なクリックストリームデータです。 イベントデータを使用すると、任意のIDを使用できます。 | タイムスタンプに設定されます。 | このデ [!DNL Experience Platform] ータセットタイプの基になるスキーマです。 | 該当なし |
-   | [!UICONTROL Lookup] | 分類ファイルに類似しています。 このデータは、イベントまたはデータ内の値やキーを検索するために使用されます。 例えば、製品データ内の数値IDを製品名にマップする参照イベントをアップロードできます。 | 該当なし | このデ [!DNL Experience Platform] ータセットタイプの基になるスキーマです。 | 該当なし |
-   | [!UICONTROL Profile] |  — 非変更 [!UICONTROL Customer Attributes] および非一時属性に類似しています。 データ内のユーザー、訪問者または顧客に適用されるデ [!UICONTROL Event] ータ。 例えば、顧客に関するCRMデータをアップロードできます。 | 該当なし | このデ [!DNL Experience Platform] ータセットタイプの基になるスキーマです。 | 含める個人IDを選択できます。 内で定義された各デ [!DNL Experience Platform] ータセットには、Cookie ID、Stitched ID、User ID、Tracking Codeなど、1つ以上のPerson IDが独自に定義されています。<br>![Person](assets/person-id.png)**ID注&#x200B;**:異なるIDを持つデータセットを含む接続を作成すると、レポートに反映されます。 データセットを実際に結合するには、同じPerson IDを使用する必要があります。 |
+   | [!UICONTROL Event-Schema] | 「Time Series」動作を持つXDMクラスに基づくビルトインスキーマまたはカスタムイベント。 例えば、「XDMエクスペリエンスイベント」や「XDM決定イベント」などです。 <br>イベントを時間で表すデータ(例：Web訪問、インタラクション、トランザクション、POSデータ、調査データ、広告インプレッションデータなど)。 例えば、これは、顧客IDやcookie ID、タイムスタンプを持つ一般的なクリックストリームデータです。 イベントデータを使用すると、どのIDを個人IDとして使用するかに関して柔軟性があります。 | は、 [UICONTROL Experience Platformのイベントベースのスキーマのデフォルトのタイムスタンプフィールドに自動的に設定されます]。 | このデ [ータセットタイプが基づく] UICONTROL Experience Platformスキーマ。 | 含める個人IDを選択できます。 Experience Platformで定義された各データセットスキーマは、1つ以上のIDの独自のセットを定義し、1つのID名前空間に関連付けることができます。 任意のIDを個人IDとして使用できます。 Cookie ID、関連付けID、ユーザーID、トラッキングコードなど。 |
+   | [!UICONTROL Lookup-Schema] | 「Record」動作を持つXDMクラスに基づく、「XDM Individualプロファイル」クラスを除く任意のビルトインスキーマまたはカスタム。<br>分類ファイルに類似しています。 このデータは、イベントまたはデータ内の値やキーを検索するために使用されます。 例えば、製品データ内の数値IDを製品名にマップする参照イベントをアップロードできます。 | 該当なし | このデ [!DNL Experience Platform] ータセットタイプの基になるスキーマです。 | 該当なし |
+   | [!UICONTROL Profile-Schema] | 「XDM個別スキーマ」クラスに基づく任意の組み込みプロファイルまたはカスタムイベント。 <br>— 非変更 [!UICONTROL Customer Attributes] および非一時属性に類似しています。 データ内のユーザー、訪問者または顧客に適用されるデ [!UICONTROL Event] ータ。 例えば、顧客に関するCRMデータをアップロードできます。 | 該当なし | このデ [!DNL Experience Platform] ータセットタイプの基になるスキーマです。 | 含める個人IDを選択できます。 内で定義された各デ [!DNL Experience Platform] ータセットには、Cookie ID、Stitched ID、User ID、Tracking Codeなど、1つ以上のPerson IDが独自に定義されています。<br>![Person](assets/person-id.png)**ID注&#x200B;**:異なるIDを持つデータセットを含む接続を作成すると、レポートに反映されます。 データセットを実際に結合するには、同じ人物IDを使用する必要があります。 |
 
 1. をクリック **[!UICONTROL Next]** すると、ダイアログが表示 [!UICONTROL Create Connection] されます。
 
