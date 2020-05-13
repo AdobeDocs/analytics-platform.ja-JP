@@ -2,9 +2,9 @@
 title: 接続の作成
 description: Customer Jeurney Analyticsでプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 4%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 4%
 
 1. 右上の **[!UICONTROL 「新しい接続を作成]** 」をクリックします。
 
-![接続を作成](assets/create-connection.png)
+   ![接続を作成](assets/create-connection.png)
 
 1. 最初に、接続を作成するデータセットが含まれるExperience Platformのサンドボックスを選択します。 Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。
 
-1. サンドボックスを選択すると、左側のレールに、そのサンドボックス内の取り出し可能なすべてのデータセットが表示されます。 Customer Jeurney Analyticsに取り込む1つ以上のデータセットを選択し、 [!UICONTROL 追加をクリックし]****&#x200B;ます。 (選択できるデータセットが多数ある場合は、データセットのリストの上にある検索バーを使用して、適切なデータセットを検索できます)。
+1. サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 Customer Jeurney Analyticsに取り込む1つ以上のデータセットを選択し、 [!UICONTROL 追加をクリックし]****&#x200B;ます。 (選択できるデータセットが多数ある場合は、データセットのリストの上にある検索バーを使用して、適切なデータセットを検索できます)。
 
 1. 次に、この接続に追加した各データセットに対して、 [!UICONTROL Customer Jeurney Analytics] （カスタマージャーニー）が、入力されるデータに基づいてデータセットタイプを自動的に設定します。 データセットには次の3種類があります。 [!UICONTROL イベント] ・データ、 [!UICONTROL プロファイル] ・データ、 [!UICONTROL Lookup] データ。
 
