@@ -1,24 +1,24 @@
 ---
 title: 接続の作成
-description: Customer Jeurney Analyticsでプラットフォームデータセットへの接続を作成する方法について説明します。
+description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
+source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 4%
+source-wordcount: '886'
+ht-degree: 69%
 
 ---
 
 
 # 接続の作成
 
-接続を使用すると、のデータセットを [!DNL Adobe Experience Platform] Workspace [!UICONTROL に統合できます]。 データセットに関するレポートを作成するに [!DNL Experience Platform] は、まず、と [!DNL Experience Platform] Workspaceのデータセット間の接続を確立する必要があり [!UICONTROL ます]。
+A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
 
-ビデオの概要については [](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) 、ここをクリックしてください。
+ビデオの概要については、[ここ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
 
->[!IMPORTANT] 複数のデータセットを組み合わせて1つの接続 [!DNL Experience Platform] にすることができます。
+>[!IMPORTANT] 複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
 
-1. https://analytics.adobe.comに移動し [ます](https://analytics.adobe.com)。
+1. [https://analytics.adobe.com](https://analytics.adobe.com) に移動します。
 
 1. Click the **[!UICONTROL Connections]** tab.
 
@@ -26,38 +26,39 @@ ht-degree: 4%
 
    ![接続を作成](assets/create-connection.png)
 
-1. 最初に、接続を作成するデータセットが含まれるExperience Platformのサンドボックスを選択します。 Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。
+1. 最初に、「データセット **[!UICONTROL を選択]**」で、接続を作成するデータセットが含まれているExperience Platformの  サンドボックスを選択します。
+Adobe Experience Platformには [](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) 、1つのプラットフォームインスタンスを別々の仮想環境にパーティション化するサンドボックスが用意されています。 サン [!UICONTROL ドボックスは] 、データセットを含み、データセットへのアクセスを制御するために使用される「データサイロ」と考えることができます。 サンドボックス間のデータにはアクセスできません 。
 
-1. サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 Customer Jeurney Analyticsに取り込む1つ以上のデータセットを選択し、 [!UICONTROL 追加をクリックし]****&#x200B;ます。 (選択できるデータセットが多数ある場合は、データセットのリストの上にある検索バーを使用して、適切なデータセットを検索できます)。
+1. サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. （選択できるデータセットが多数ある場合は、データセットのリスト上部にある検索バーを使用して、適切なデータセットを検索できます）
 
-1. 次に、この接続に追加した各データセットに対して、 [!UICONTROL Customer Jeurney Analytics] （カスタマージャーニー）が、入力されるデータに基づいてデータセットタイプを自動的に設定します。 データセットには次の3種類があります。 [!UICONTROL イベント] ・データ、 [!UICONTROL プロファイル] ・データ、 [!UICONTROL Lookup] データ。
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
    |---|---|---|---|---|
-   | [!UICONTROL イベント] | イベントを表すデータ(Web訪問、インタラクション、トランザクション、POSデータ、調査データ、広告インプレッションデータなど)。 例えば、これは、顧客IDまたはcookie IDを持つ一般的なクリックストリームデータと、タイムスタンプの場合があります。 イベントデータを使用すると、どのIDをPerson IDとして使用するかに柔軟性があります。 | は、 [UICONTROL Experience Platformのイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます]。 | 「Time Series」動作を持つXDMクラスに基づく組み込みスキーマまたはカスタムイベント。 「XDMエクスペリエンスのイベント」や「XDM Decisionイベント」などがあります。 | 含める個人IDを選択できます。 Experience Platformで定義された各データセットスキーマは、ID名前空間に関連付けられ、定義済みの1つ以上のIDのセットを持つことができます。 任意のIDを個人IDとして使用できます。 Cookie ID、関連付けID、ユーザーID、トラッキングコードなどがあります。 |
-   | [!UICONTROL 参照] | 分類ファイルに似ています。 このデータは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。 例えば、イベントデータ内の数値IDを製品名にマップする参照データをアップロードできます。 | 該当なし | 「XDM個別プロファイル」クラスを除き、「Record」動作を持つXDMクラスに基づく、組み込みまたはカスタムスキーマです。 | 該当なし |
-   | [!UICONTROL プロファイル] | 顧客属性 [!UICONTROL に類似] — 非変更属性および非一時属性。 訪問者、ユーザーまたは [!UICONTROL イベントデータの顧客に適用されるデータ] 。 例えば、顧客に関するCRMデータをアップロードできます。 | 該当なし | 「XDM個別プロファイル」クラスに基づく組み込みスキーマまたはカスタムイベント。 | 含める個人IDを選択できます。 内で定義された各データセット [!DNL Experience Platform] には、Cookie ID、Stitched ID、User ID、Tracking Codeなど、1つ以上の個人IDが定義されています。<br>![Person](assets/person-id.png)**IDNote **: 異なるIDを持つデータセットを含む接続を作成すると、レポートにはそれが反映されます。 データセットを実際に結合するには、同じPerson IDを使用する必要があります。 |
+   | [!UICONTROL イベント] | イベントの時間を表すデータ（Web 訪問数、インタラクション、トランザクション、POS データ、調査データ、広告インプレッションデータなど）。例えば、顧客 ID または cookie ID とタイムスタンプを含む一般的なクリックストリームデータを使用できます。イベントデータを使用すると、ユーザー ID として使用する ID を柔軟に設定できます。 | [UICONTROL Experience Platform] のイベントベースのスキーマからデフォルトのタイムスタンプフィールドへと自動的に設定されます。 | 「時系列」動作を持つ XDM クラスに基づいた組み込みスキーマまたはカスタムイベント。例として、「XDM エクスペリエンスのイベント」や「XDM 決定イベント」などがあります。 | 含める個人 ID を選択できます。Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。 |
+   | [!UICONTROL 参照] | 分類ファイルと似ています。このデータは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングする参照データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスを除いて、「レコード」動作を持つ XDM クラスに基づいた、組み込みまたはカスタムのスキーマです。 | 該当なし |
+   | [!UICONTROL プロファイル] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスに基づいた組み込みスキーマまたはカスタムイベント。 | 含める個人 ID を選択できます。[!DNL Experience Platform] 内で定義される各データセットには、1 つ以上の個人 ID セット（Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコードなど）があります。<br>![ユーザー ID](assets/person-id.png)**メモ&#x200B;**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。データセットを実際に結合するには、同じユーザー ID を使用する必要があります。 |
 
 1. 「 **[!UICONTROL 次へ]** 」をクリックすると [!UICONTROL 、「接続を] 作成」ダイアログが表示されます。
 
    ![接続を作成](assets/create-connection2.png)
 
-1. [ [!UICONTROL 接続を作成] ]ダイアログで、次の設定を定義します。
+1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
    | フィールド | 説明 |
    |---|---|
-   | [!UICONTROL 名前の接続] | 接続にわかりやすい名前を付けます。 名前を指定しないと接続を保存できません。 |
-   | [!UICONTROL 説明] | この追加接続を他の接続と区別するための詳細。 |
+   | [!UICONTROL 名前の接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
+   | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
-   | [!UICONTROL この接続内のすべての新しいデータセットを、今日から自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace]に流れるようにするには、このオプションを選択します。 |
-   | [!UICONTROL 既存のデータをすべて読み込む] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットの既存（履歴）データ [!DNL Experience Platform] がすべてインポートされます。 今後、この保存された接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。 <br>**この接続が保存されると、この設定は変更できなくなります。** |
+   | [!UICONTROL この接続内のすべての新しいデータセットを、今日から自動的にインポートします。] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
+   | [!UICONTROL 既存のデータをすべて読み込む] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてへと読み込まれます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。<br>**この接続を保存すると、この設定は変更できなくなります。** |
 
    **次の点に注意してください。**
 
-   * 接続内のすべてのデータセットの履歴データの累積サイズが15億行を超える場合、エラーメッセージに、この量の履歴データをインポートできないことが示されます。 ただし、10億行の履歴データを含むデータセットを追加し、そのデータをインポートした後、1週間後に同じサイズのデータセットを追加して履歴データをインポートした場合は、これが有効です。
-   * 接続中のデータセットに追加される新しいデータに優先順位を付けるので、このデータの待ち時間は最も短くなります。
-   * バックフィル（履歴）データは、読み込み速度が遅くなります。
+   * 接続内にあるすべてのデータセットの履歴データを累積したサイズが 15 億行を超える場合、エラーメッセージに、この量の履歴データを読み込めない旨が示されます。ただし、10 億行の履歴データを含むデータセットを追加し、そのデータを読み込んでから、1週間後に同じサイズの別のデータセットを追加して履歴データを読み込むと、機能します。
+   * 接続内のデータセットに追加される新しいデータを優先させるので、このデータの待ち時間は最も短くなります。
+   * バックフィル（履歴）データの読み込みには時間がかかります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-ワークフローの次の手順は、データ表示を [作成することです](/help/data-views/create-dataview.md)。
+ワークフローの次の手順は、[データ表示の作成](/help/data-views/create-dataview.md)です。
