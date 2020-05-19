@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
+source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 69%
+source-wordcount: '889'
+ht-degree: 68%
 
 ---
 
@@ -26,12 +26,17 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
    ![接続を作成](assets/create-connection.png)
 
-1. 最初に、「データセット **[!UICONTROL を選択]**」で、接続を作成するデータセットが含まれているExperience Platformの  サンドボックスを選択します。
-Adobe Experience Platformには [](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) 、1つのプラットフォームインスタンスを別々の仮想環境にパーティション化するサンドボックスが用意されています。 サン [!UICONTROL ドボックスは] 、データセットを含み、データセットへのアクセスを制御するために使用される「データサイロ」と考えることができます。 サンドボックス間のデータにはアクセスできません 。
+1. 接続の作成先のデータセットが含まれているExperience Platformのサンドボックスを選択します。
 
-1. サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. （選択できるデータセットが多数ある場合は、データセットのリスト上部にある検索バーを使用して、適切なデータセットを検索できます）
+   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。 サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
+1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
+
+   （選択できるデータセットが多数ある場合は、データセットのリスト上部にある検索バーを使用して、適切なデータセットを検索できます）
+
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+
+   There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
    |---|---|---|---|---|
@@ -39,7 +44,7 @@ Adobe Experience Platformには [](https://docs.adobe.com/content/help/en/experi
    | [!UICONTROL 参照] | 分類ファイルと似ています。このデータは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングする参照データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスを除いて、「レコード」動作を持つ XDM クラスに基づいた、組み込みまたはカスタムのスキーマです。 | 該当なし |
    | [!UICONTROL プロファイル] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスに基づいた組み込みスキーマまたはカスタムイベント。 | 含める個人 ID を選択できます。[!DNL Experience Platform] 内で定義される各データセットには、1 つ以上の個人 ID セット（Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコードなど）があります。<br>![ユーザー ID](assets/person-id.png)**メモ&#x200B;**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。データセットを実際に結合するには、同じユーザー ID を使用する必要があります。 |
 
-1. 「 **[!UICONTROL 次へ]** 」をクリックすると [!UICONTROL 、「接続を] 作成」ダイアログが表示されます。
+1. 「 **[!UICONTROL 次へ]** 」をクリックして、「接続を [!UICONTROL 作成] 」ダイアログに移動します。
 
    ![接続を作成](assets/create-connection2.png)
 
