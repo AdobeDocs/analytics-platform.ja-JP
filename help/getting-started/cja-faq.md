@@ -19,7 +19,7 @@ source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 | [!UICONTROL Customer Journey Analytics] は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | いいえ。[!UICONTROL Customer Journey Analytics] は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。優れたステッチアプローチに対する計画は進行中です。 |
 | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | いいえ、まだサポートされていません。 |
 | **データを[!UICONTROL Customer Journey Analytics]** に取り込む |  |
-| [!UICONTROL Experience Platform] での [!UICONTROL Customer Journey Analytics]に対して予想される遅延はどの程度ですか。 | <ul><li>標準の負荷の場合：&lt;60分 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満</li></ul> |
+| [!UICONTROL Experience Platform] での [!UICONTROL Customer Journey Analytics]に対して予想される遅延はどの程度ですか。 | <ul><li>標準の負荷の場合：60分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | [!UICONTROL Customer Journey Analytics] は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。データセット間でユーザー ID が一致している限り、[!UICONTROL Customer Journey Analytics] は、セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 |
 | オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | お客様は、Customer Journey Analytics でデータを使用する前に、データを Experience Platform に取り込む必要があります。Experience Platform のデータは、オンボーディングチームが必要に応じて、お客様にレコメンデーションやコンサルティングを提供するのに役立ちます。 |
 | Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analytics データは、Analytics Data Connector を通じて Experience Platform に接続できます。ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
