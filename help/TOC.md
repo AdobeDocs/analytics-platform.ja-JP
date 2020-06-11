@@ -2,9 +2,9 @@
 git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
-sub-product: customer journey
+sub-product: カスタマージャーニー
 index: true
-user-guide-title: Customer Journey Analytics Guide
+user-guide-title: Customer Journey Analytics ガイド
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -12,7 +12,7 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 
 ---
@@ -34,7 +34,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
    + [接続の管理](connections/manage-connection.md)
-   + [組み合わされたデータセット](connections/combined-dataset.md)
+   + [組み合わせデータセット](connections/combined-dataset.md)
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
