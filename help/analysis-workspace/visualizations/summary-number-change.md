@@ -1,0 +1,49 @@
+---
+description: 'null'
+title: 数の概要と変更の概要
+uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 92%
+
+---
+
+
+# 数の概要と変更の概要
+
+>[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+
+## 数値の概要ビジュアライゼーション
+
+* セルが選択されていない場合、列の合計が選択されます。
+* 1 つのセルが選択されている場合、そのセルの概要が表示されます。
+* 2 つ以上のセルが選択されている場合、選択された最初のセルについて表示されます。
+* 列が選択されている場合、列に含まれている先頭のセルの値が選択されます。
+
+![](assets/summary-number.png)
+
+## 変更概要ビジュアライゼーション
+
+* セルが選択されていない場合、列に含まれている最初の 2 つのセル値が比較されます。
+* 1 つのセルが選択されている場合、0 が表示されます。これは、そのセル値自体との比較がおこなわれるからです。
+* 2 つのセルが選択されている場合、最初に選択したセルが分子、2 番目のセルが分母として処理されます。
+* 3 つ以上のセルが選択されている場合、最初の 2 つのセルのみが比較の対象になります。
+* 一定範囲のセルが選択されている場合、選択された範囲内の最初と最後のセルが比較されます。
+* 列が選択されている場合、先頭の値がそれ自体と比較されます。その結果、変更は 0 と表示されます。
+* 変更概要の緑と赤の部分は、以下の方法で制御できます。
+   * [カスタムイベントの極性](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/success-events/success-event.html)。
+   * 計算指標の「[上昇傾向を次の形式で表示](https://docs.adobe.com/content/help/ja-JP/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html)」オプション。
+
+## 変更概要設定 {#section_2581AC0107634FB4990AB8347E5897AA}
+
+ビジュアライゼーションの横にあるギアアイコンをクリックすると、概要の設定をおこなえます。
+
+| 設定 | 定義 |
+|--- |--- |
+| 割合（％） | 生の番号ではなく割合を使用します。 |
+| 凡例を表示 | 使用した指標を表示します。 |
+| 数値の概要オプション：値を短縮 | 短縮された値の小数点以下桁数を 0～3 から選択できます。 |
+| 変更概要オプション：変化の割合 | 2 つの数の間の変化を％で表示します。 |
+| 変更概要オプション：生の差異データ | 2 つの数の間の生の差異を表示します。 |
