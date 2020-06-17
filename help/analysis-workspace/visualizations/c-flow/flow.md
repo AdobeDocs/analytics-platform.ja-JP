@@ -1,0 +1,38 @@
+---
+description: 'null'
+title: フローの概要
+uuid: fc22b573-2d18-4c29-866c-f317c920d27a
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 90%
+
+---
+
+
+# フローの概要
+
+>[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+
+フロー機能は、Web サイトおよびアプリの顧客パスを表示します。
+
+次の操作が可能です。
+
+* Web サイトやアプリケーションでのカスタマージャーニーをビジュアライズする
+* 入口、特定のディメンション、出口など、指定したチェックポイントの前後で顧客がどこに移動するかを分析する
+* 選択したパスの特定のポイントを指定することで、セグメントを作成する
+
+>[!NOTE]Analysis Workspace と Reports &amp; Analytics/Ad Hoc Analysis でのフローへのセグメントの適用結果の違いについて詳しくは、[フローとフォールアウトの基礎としてのセグメント化](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)を参照してください。
+
+[フロービジュアライゼーション（YouTube）](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（4:56）
+
+## ディメンション間のフロー {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+
+[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローは、ホームページからメンズページを経て、靴部門に移動することが考えられます。
+
+各列は、異なるディメンションを表示することがあります。ディメンションをドラッグしてドロップゾーンにドロップし、そのディメンションを図に追加します。
+
+## フロー図が含まれたプロジェクト .CSV ファイルの書き出し {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+
+フロー図は、**[!UICONTROL プロジェクト]**／**[!UICONTROL CSV をダウンロード]**&#x200B;に移動して作成できるプロジェクトの .CSV ファイルに含まれています。これにより、フロー結果を Microsoft Excel（テーブルとして表示）やその他のツールで分析することができます。
