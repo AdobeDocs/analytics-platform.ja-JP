@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
 cloud: experience-cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
@@ -12,8 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
+translation-type: tm+mt
+source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 90%
 
 ---
 
@@ -27,10 +30,6 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [よくある質問](getting-started/cja-faq.md)
    + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
-+ Workspace プロジェクト {#cja-reporting}
-   + [Workspace の概要](projects/workspace-basics.md)
-   + [基本分析の実行](projects/perform-basic-analysis.md)
-   + [アドバンス分析の実行](projects/perform-adv-analysis.md)
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
    + [接続の管理](connections/manage-connection.md)
@@ -38,7 +37,91 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
++ Workspace projects {#cja-workspace}
+   + [Analysis Workspace の概要](analysis-workspace/home.md)
+   + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
+   + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
+   + Workspace プロジェクトの構築 {#build-workspace-project}
+      + [プロジェクトの作成 - 概要](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [テンプレート](analysis-workspace/build-workspace-project/starter-projects.md)
+      + 列および行の設定 {#column-row-settings}
+         + [列設定](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
+         + [行設定](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
+         + [手動の行と動的な行の比較](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+      + [「元に戻す」および「やり直し」の設定](analysis-workspace/build-workspace-project/undo-redo.md)
+      + [Analysis Workspace で使用できるホットキー](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [カラーパレット](analysis-workspace/build-workspace-project/color-palettes.md)
+      + [表示密度](analysis-workspace/build-workspace-project/view-density.md)
+      + [Workspace の合計](analysis-workspace/build-workspace-project/workspace-totals.md)
+   + ビジュアライゼーション {#visualizations}
+      + [ビジュアライゼーションの概要](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [データソースの管理](analysis-workspace/visualizations/t-sync-visualization.md)
+      + [フリーフォームテーブル](analysis-workspace/visualizations/freeform-table.md)
+      + コホートテーブル {#cohort-table}
+         + [コホート分析とは](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [コホート分析レポートの設定](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [コホート分析の使用例](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+      + フォールアウト {#fallout}
+         + [フォールアウトの概要](analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [フォールアウトビジュアライゼーションの設定](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [ディメンション間のフォールアウト](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+         + [フォールアウト分析でのフィルターの適用](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+      + フロー {#flow}
+         + [フローの概要](analysis-workspace/visualizations/c-flow/flow.md)
+         + [フロービジュアライゼーションの設定](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [フローの設定](analysis-workspace/visualizations/c-flow/flow-settings.md)
+         + [ディメンション間のフロー](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + [ヒストグラム](analysis-workspace/visualizations/histogram.md)
+      + [ベン](analysis-workspace/visualizations/venn.md)
+      + [面グラフおよび積み重ね面グラフ](analysis-workspace/visualizations/area.md)
+      + [棒グラフおよび積み重ね棒グラフ](analysis-workspace/visualizations/bar.md)
+      + [ブレットグラフ](analysis-workspace/visualizations/bullet-graph.md)
+      + [ドーナツ](analysis-workspace/visualizations/donut.md)
+      + [横棒グラフおよび積み重ね横棒グラフ](analysis-workspace/visualizations/horizontal-bar.md)
+      + [行](analysis-workspace/visualizations/line.md)
+      + [散布図](analysis-workspace/visualizations/scatterplot.md)
+      + [数の概要と変更の概要](analysis-workspace/visualizations/summary-number-change.md)
+      + [テキスト](analysis-workspace/visualizations/text.md)
+      + [ツリーマップ](analysis-workspace/visualizations/treemap.md)
+   + パネル {#panels}
+      + [パネルの概要](analysis-workspace/c-panels/panels.md)
+      + [アトリビューションパネル](analysis-workspace/c-panels/attribution.md)
+      + [空のパネル](analysis-workspace/c-panels/blank-panel.md)
+      + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
+      + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
+   + プロジェクトのキュレーションおよび共有 {#curate-share}
+      + [Workspaceプロジェクトをキュレーション](analysis-workspace/curate-share/curate.md)
+      + [Workspaceプロジェクトを共有](analysis-workspace/curate-share/share-projects.md)
+      + [表示のみのWorkspaceプロジェクト](analysis-workspace/curate-share/view-only-projects.md)
+      + [PDF ファイルまたは CSV ファイルのダウンロード](analysis-workspace/curate-share/download-send.md)
+      + [プロジェクトファイルの共有およびスケジュール](analysis-workspace/curate-share/send-schedule-files.md)
+      + [ファイルの送信 - プロジェクトの配信スケジュールの設定](analysis-workspace/curate-share/t-schedule-report.md)
+      + [スケジュール済みプロジェクトマネージャー](analysis-workspace/curate-share/schedule-projects.md)
+   + Attribution IQ {#attribution}
+      + [アトリビューションの概要](analysis-workspace/attribution/overview.md)
+      + [アトリビューションモデルとルックバックウィンドウ](analysis-workspace/attribution/models.md)
+      + [アルゴリズムアトリビューション](analysis-workspace/attribution/algorithmic.md)
+      + [FAQ](analysis-workspace/attribution/faq.md)
+   + Virtual Analyst {#virtual-analyst}
+      + [仮想アナリストの概要](analysis-workspace/virtual-analyst/overview.md)
+      + 異常値検出 {#anomaly-detection}
+         + [異常値検出の概要](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
+         + [Analysis Workspace での異常値の表示](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [異常値検出で使用される統計的手法](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Workspace の FAQ {#workspace-faq}
+      + [よくある質問](analysis-workspace/workspace-faq/faq.md)
+      + [Analysis Workspace のパフォーマンスの最適化](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Analysis Workspace の制限](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [管理要件](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Analysis Workspaceでのアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
 + コンポーネント {#cja-components}
+   + [コンポーネントの概要](components/overview.md)
+   + ディメンション {#dimensions}
+      + [ディメンションのプレビュー](components/dimensions/view-dimensions.md)
+      + [ディメンションの分類](components/dimensions/t-breakdown-fa.md)
+      + [時間分割ディメンション](components/dimensions/time-parting-dimensions.md)
+   + [指標](components/apply-create-metrics.md)
    + フィルター {#cja-filters}
       + [フィルターの概要](components/filters/filters-overview.md)
       + [フィルターの作成](components/filters/create-filters.md)
@@ -53,10 +136,9 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
       + [日付範囲の概要](components/date-ranges/overview.md)
       + [日付範囲の作成](components/date-ranges/create.md)
       + [日付範囲を管理](components/date-ranges/manage.md)
-   + プロジェクト {cja-projects}
-      + [プロジェクトの概要](components/projects/overview.md)
-      + [プロジェクトの作成](components/projects/create.md)
-      + [プロジェクト管理](components/projects/manage.md)
+      + [カレンダーの概要](components/date-ranges/calendar.md)
+      + [Analysis Workspace でカスタム日付範囲を作成](components/date-ranges/custom-date-ranges.md)
+      + [日付の比較](components/date-ranges/time-comparison.md)
 + 使用例 {#cja-usecases}
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
 + プライバシー {#cja-privacy}
