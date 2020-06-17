@@ -1,18 +1,21 @@
 ---
 title: プロジェクトの作成
-description: プロジェクトを作成して、分析ワークスペースを使い始めます。
+description: プロジェクトを作成して、Analysis Workspaceの使用を開始します。
 translation-type: tm+mt
-source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 10%
 
 ---
 
 
 # プロジェクトの作成
 
-プロジェクトをWorkspaceで作成する方法は2つあります。分析ワークスペース
+Analysis Workspaceでプロジェクトを [作成する方法は](/help/analysis-workspace/home.md) 2つあります。
 
-* ヘッダー [!UICONTROL Projects] 内をクリックし、をクリックしま [!UICONTROL Create New Project]す。
-* /をク [!UICONTROL Components] リック [!UICONTROL Projects]し、をクリック ![追加しま](../assets/add.png)[!UICONTROL Add]す。
+* ヘッダーで [!UICONTROL 「プロジェクト] 」をクリックし、「新規プロジェクト [!UICONTROL を作成]」をクリックします。
+* コンポ [!UICONTROL ーネント] / [!UICONTROL プロジェクト]をクリックし、次に「 ![追加](../assets/add.png)追加」をクリックします。
 
 プロジェクトを作成すると、空のWorkspaceプロジェクトが表示されます。
 
