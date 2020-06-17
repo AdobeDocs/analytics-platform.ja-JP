@@ -1,13 +1,18 @@
 ---
 title: 計算指標の概要
 description: '詳細 '
-translation-type: ht
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 94%
 
 ---
 
 
 # 計算指標の概要
+
+>[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 計算指標および高度な計算（または派生）指標は、既存の指標から作成できるカスタム指標です。計算指標ツールを使用すると、指標を極めて柔軟に作成および管理できます。マーケティング担当者、製品マネージャーおよびアナリストは、[!DNL Analytics] の実装を変更することなくデータを照会できます。
 
