@@ -1,15 +1,20 @@
 ---
 title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
-translation-type: ht
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '2949'
+ht-degree: 99%
 
 ---
 
 
 # リファレンス：高度な関数
 
-これらの関数にアクセスするには、**[!UICONTROL Functions]**&#x200B;ドロップダウンリストの「**[!UICONTROL Show Advanced]**」を選択します。
+>[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+
+これらの関数にアクセスするには、**[!UICONTROL 関数]**&#x200B;ドロップダウンリストの「**[!UICONTROL 詳細を表示]**」を選択します。
 
 ## 表関数と行関数
 
