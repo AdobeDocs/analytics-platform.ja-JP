@@ -1,16 +1,16 @@
 ---
-title: オブジェクトの配列でCJAを使用する
+title: オブジェクトの配列の使用
 description: データ階層に関するCJAのレポート方法を理解します。
 translation-type: tm+mt
-source-git-commit: b7cd74f3fe2f0222e78452f58a7c387f6e0c86d2
+source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 
-# オブジェクトの配列でCJAを使用する
+# オブジェクトの配列の使用
 
 一部のプラットフォームスキーマはオブジェクト配列を持つことができます。 最も一般的な例の1つは、複数の製品が入った買い物かごです。 各製品には、名前、SKU、カテゴリ、価格、数量など、追跡する必要のあるディメンションがあります。 これらのファセットはすべて別々の要件を持ちますが、すべて同じヒットに適合する必要があります。
 
@@ -206,7 +206,7 @@ CJAは、ヒットの次の部分を調べてレポートを生成します。
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -239,3 +239,30 @@ CJAは、ヒットの次の部分を調べてレポートを生成します。
 +  "timestamp": 1534219229
 +}
 ```
+
+名前の付いていない注文をメモしておきます。 これらは、&#39;未指定&#39;ディメンション値に属する注文です。
+
+### 指標の組み合わせ
+
+CJAは、同じ名前の指標が異なるオブジェクトレベルにある場合、それらの指標をネイティブに結合しません。
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+ただし、必要な指標を組み合わせた計算指標を作成できます。
+
+計算指標「合計売上高」: `[product : revenue] + [product : warranty : revenue]`
+
+この計算指標を適用すると、以下の目的の結果が表示されます。
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## 永続性の例
+
