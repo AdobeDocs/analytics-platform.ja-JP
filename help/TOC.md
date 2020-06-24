@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
+git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 17e6cc8f79c542465971162666d846e2b1e0da58
+source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 89%
+source-wordcount: '379'
+ht-degree: 88%
 
 ---
 
@@ -115,6 +115,7 @@ ht-degree: 89%
       + [Analysis Workspace の制限](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要件](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspaceでのアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [ロングテールインAnalysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
    + ディメンション {#dimensions}
