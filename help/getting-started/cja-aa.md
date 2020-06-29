@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 85%
 | 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| 異常値検出 | 2020年6月現在の完全サポート |
+| 異常値検出 | 2020 年 6 月現在の完全サポート |
 | Attribution IQ | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
@@ -32,7 +32,7 @@ ht-degree: 85%
 | 仮想レポートスイート | 現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | VRS コンポーネントのキュレーション | データビューの一部になりました。 |
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
-| GDPR の削除 | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
+| GDPR の削除 | GDPR は [!UICONTROL Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータ変更をすべて継承します。 |
 
 ## サポート（注意が必要）
 
@@ -40,7 +40,7 @@ ht-degree: 85%
 | --- | --- |
 | products 変数 | エクスペリエンスイベントスキーマに準拠したデータのレポートに現在使用できる product 変数（特に productListItems オブジェクトを使用したもの）。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
-| AAM Audiences | If customers are using [!UICONTROL Analytics Data Connector] datasets, this data will be part of the ADC data. |
+| AAM Audiences | 顧客が [!UICONTROL Analytics データコネクタ]データセットを使用している場合、このデータは ADC データの一部になります。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。つまり、すべての永続性は、データ全体ではなく、レポートの日付範囲に基づきます。 |
@@ -52,11 +52,11 @@ ht-degree: 85%
 | 機能 | メモ |
 | --- | --- |
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics Data Connector（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
-| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 セグメント比較とTarget用のAnalytics(A4T)パネルはサポートされていません。 |
+| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar は、ADC ベースのデータセットでのみ機能します。ただし、これらのデータが同じ XDM スキーマに厳密に準拠している場合を除きます（前述の製品リストの制限と同様）。 |
-| ボットフィルタリング | Analytics Data Connector（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
+| ボットフィルタリング | Analytics Data Connector（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | 処理ルール | ADC ベースのデータセットの場合、処理ルールは引き続き適用されます。 |
-| デバイス間での ID のステッチ | Customers are limited to &quot;one-time&quot; stitches of the data via Query Service, or currently must apply this logic to data prior to [!UICONTROL Experience Platform] data ingestion. |
+| デバイス間での ID のステッチ | お客様は、クエリサービスを通じて、データの「1 回限り」のステッチに制限されているか、現在、[!UICONTROL Experience Platform] データ取り込みの前に、このロジックをデータに適用する必要があります。 |
 
 ## 現在はサポートされていませんが、予定されています
 
@@ -98,6 +98,6 @@ ht-degree: 85%
 | Reports &amp; Analytics のターゲット |  |
 | Reports &amp; Analytics のカレンダーイベント |  |
 | Ad Hoc Analysis |  |
-| Data Warehouseレポート | [!UICONTROL Experience Platformクエリサービス] (CJA)は、これらの使用例の新しいインターフェイスとなります。 |
+| Data Warehouseレポート | [!UICONTROL Experience Platform クエリサービス]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。 |
 | Mobile Services |  |
 | データフィード |  |
