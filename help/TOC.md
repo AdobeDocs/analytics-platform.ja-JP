@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
 cloud: experience-cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 88%
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
-+ Workspace projects {#cja-workspace}
++ Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
@@ -91,9 +91,9 @@ ht-degree: 88%
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーションおよび共有 {#curate-share}
-      + [Workspaceプロジェクトをキュレーション](analysis-workspace/curate-share/curate.md)
-      + [Workspaceプロジェクトを共有](analysis-workspace/curate-share/share-projects.md)
-      + [表示のみのWorkspaceプロジェクト](analysis-workspace/curate-share/view-only-projects.md)
+      + [Workspace プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
+      + [Workspace プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
+      + [表示のみの Workspace プロジェクト](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](analysis-workspace/curate-share/download-send.md)
       + [プロジェクトファイルの共有およびスケジュール](analysis-workspace/curate-share/send-schedule-files.md)
       + [ファイルの送信 - プロジェクトの配信スケジュールの設定](analysis-workspace/curate-share/t-schedule-report.md)
@@ -114,7 +114,7 @@ ht-degree: 88%
       + [Analysis Workspace のパフォーマンスの最適化](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Analysis Workspace の制限](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要件](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Analysis Workspaceでのアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Analysis Workspace のアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [ロングテールインAnalysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
