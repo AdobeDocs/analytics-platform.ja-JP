@@ -2,7 +2,7 @@
 description: Analysis Workspaceの「元に戻す」オプションの変更と機能強化
 title: 「元に戻す」および「やり直し」の設定
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 89%
@@ -12,7 +12,9 @@ ht-degree: 89%
 
 # 「元に戻す」および「やり直し」の設定
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL 元に戻す／やり直し]**
 
