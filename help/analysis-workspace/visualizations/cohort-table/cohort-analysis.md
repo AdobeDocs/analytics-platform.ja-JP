@@ -2,17 +2,19 @@
 title: コホート分析とは
 description: Analysis Workspaceでのコホートの分析について説明します。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
 
 # What is [!UICONTROL Cohort Analysis]?
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。[!UICONTROL コホート分析は、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。]トレンドの変更を簡単に見分けて、それに応じて対応できます(Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
@@ -32,7 +34,9 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL コホート分析] は、フィルタリング不可の指標（計算指標を含む）、整数以外の指標（売上高など）、および回数をサポートしていません。 セグメントで使用できる指標のみが
+>[!UICONTROL コホート分析]
+>
+>は、フィルター不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、回数をサポートしていません。 セグメントで使用できる指標のみが
 >[!UICONTROL コホート分析]。一度に1つ増やすことしかできません。
 
 ## コホート分析の機能
