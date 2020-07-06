@@ -2,7 +2,7 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 68%
@@ -14,9 +14,11 @@ ht-degree: 68%
 
 A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
 
-ビデオの概要については、[ここ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
+ビデオの概要については、[こちら](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
 
->[!IMPORTANT] 複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
+>[!IMPORTANT]
+>
+> 複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
 
 1. [https://analytics.adobe.com](https://analytics.adobe.com) に移動します。
 
@@ -26,11 +28,11 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
    ![接続を作成](assets/create-connection.png)
 
-1. 接続の作成先のデータセットが含まれているExperience Platformのサンドボックスを選択します。
+1. 接続を作成するデータセットを含むExperience Platformーのサンドボックスを選択します。
 
    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。 サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
-1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
+1. [!UICONTROL Customer Journey Analyticsに取り込む1つ以上のデータセットを選択し] 、 ****&#x200B;追加をクリックします。
 
    （選択できるデータセットが多数ある場合は、データセットのリスト上部にある検索バーを使用して、適切なデータセットを検索できます）
 
