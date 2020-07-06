@@ -3,7 +3,7 @@ description: Analysis Workspace 内で、コンテキスト上のデータの異
 title: 異常値検出の概要
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 88%
@@ -13,7 +13,9 @@ ht-degree: 88%
 
 # 異常値検出の概要
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 内で、コンテキスト上のデータの異常値を表示および分析できます。
 
@@ -34,7 +36,9 @@ Analysis Workspace 内で、コンテキスト上のデータの異常値を表�
 
 異常値検出と[貢献度分析](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)の双方が、Analysis Workspace の主要ワークフローです。毎日の異常値に対して貢献度分析を実行し、Analysis Workspace プロジェクトに結果を埋め込むことができます。
 
->[!IMPORTANT] 貢献度分析は、Customer Journey Analyticsではまだ使用できません。
+>[!IMPORTANT]
+>
+>貢献度分析は、Customer Journey Analyticsではまだ使用できません。
 
 Analysis Workspace の異常値検出アルゴリズムには以下が含まれています。
 
