@@ -3,7 +3,7 @@ description: 'null'
 title: フォールアウトの概要
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 95%
@@ -13,14 +13,16 @@ ht-degree: 95%
 
 # フォールアウトの概要
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 フォールアウトビジュアライゼーションには、フォールアウトレポートを作成するためのより多くのオプションがあります。フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。
 
 フォールアウトビジュアライゼーションでは、次の操作をおこなうことができます。
 
 * 同じレポートの異なる 2 つのセグメントを並べて比較する
-* ファネルステップ（タッチポイント）のドラッグ、ドロップ、整列
+* ファネルステップ（タッチポイント）のドラッグ、ドロップ、整列。
 * 異なるディメンションおよび指標からの値を組み合わせる
 * 複数ディメンションのフォールアウトレポートの作成
 * フォールアウト直後に顧客がどこに移動したかの識別
