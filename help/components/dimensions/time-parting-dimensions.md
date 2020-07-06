@@ -3,7 +3,7 @@ description: 時間分割は、収集したヒットのタイムスタンプを�
 title: 時間分割ディメンション
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
@@ -22,7 +22,9 @@ ht-degree: 100%
 * 平日の売上と比較すると、週末の売上はどうか。
 * 特定のマーケティングキャンペーンでコンバージョンが高いのは午前中か、それとも午後か。
 
->[!NOTE]時間分割ディメンションは、Analysis Workspace でのみ使用できます。時間分割ディメンションを別の Analytics ソリューションで使用するには、[getTimeParting プラグイン](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/plugins/gettimeparting.html)を実装します。
+>[!NOTE]
+>
+>時間分割ディメンションは、Analysis Workspace でのみ使用できます。時間分割ディメンションを別の Analytics ソリューションで使用するには、[getTimeParting プラグイン](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/plugins/gettimeparting.html)を実装します。
 
 Analysis Workspace の時間分割ディメンションに含まれるものを以下に示します。
 
