@@ -4,21 +4,25 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: フォールアウト分析でのセグメントの適用
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
 # フォールアウト分析でのフィルターの適用
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 タッチポイントからフィルターを作成したり、セグメントをタッチポイントとして追加したり、Analysis Workspace内の様々なフィルター間で主要なワークフローを比較したりできます。
 
->[!IMPORTANT] フォールアウトでチェックポイントとして使用されるフィルターは、フォールアウトビジュアライゼーションの全体的なコンテキストよりも低いレベルのコンテナを使用する必要があります。 訪問者コンテキストのフォールアウトを使用する場合、チェックポイントとして使用されるフィルターは、訪問またはヒットベースのフィルターである必要があります。 訪問コンテキストのフォールアウトでは、フィルターをチェックポイントとして使用する場合、ヒットベースのセグメントである必要があります。 無効な組み合わせを使用すると、フォールアウトは 100％になります。非互換のフィルターをタッチポイントとして追加した場合に表示される、フォールアウトビジュアライゼーションに警告を追加しました。 無効なフィルターコンテナの組み合わせによっては、次のような無効なフォールアウト図が生じる場合があります。
+>[!IMPORTANT]
+>
+>フォールアウトでチェックポイントとして使用されるフィルターは、フォールアウトビジュアライゼーションの全体的なコンテキストよりも低いレベルのコンテナを使用する必要があります。 訪問者コンテキストのフォールアウトを使用する場合、チェックポイントとして使用されるフィルターは、訪問またはヒットベースのフィルターである必要があります。 訪問コンテキストのフォールアウトでは、フィルターをチェックポイントとして使用する場合、ヒットベースのセグメントである必要があります。 無効な組み合わせを使用すると、フォールアウトは 100％になります。非互換のフィルターをタッチポイントとして追加した場合に表示される、フォールアウトビジュアライゼーションに警告を追加しました。 無効なフィルターコンテナの組み合わせによっては、次のような無効なフォールアウト図が生じる場合があります。
 
 * 訪問者に基づくフィルターを、訪問者コンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する
 * 訪問者ベースのフィルターを、訪問コンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する
