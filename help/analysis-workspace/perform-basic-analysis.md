@@ -2,7 +2,7 @@
 title: Customer Journey Analytics での基本分析の実行
 description: 基本的なビジュアライゼーションを使用して Customer Journey Analytics のデータを分析する方法について説明します。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 72%
@@ -12,7 +12,9 @@ ht-degree: 72%
 
 # 基本分析の実行
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 接続とデータビューを作成した後、Analysis Workspace の機能と柔軟性を使用して、取得したデータを分析します。ディメンションや指標を自由に試してドラッグし、ディメンションや指標のアトリビューション設定、フレンドリ名、タイムゾーン、セッション設定などを変更できます。
 
