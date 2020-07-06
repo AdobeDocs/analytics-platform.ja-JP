@@ -2,7 +2,7 @@
 title: アトリビューションに関する FAQ
 description: アトリビューションに関する FAQ に対する回答です。
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 83%
@@ -12,7 +12,9 @@ ht-degree: 83%
 
 # アトリビューションに関する FAQ
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 **アトリビューションを使用する際の「なし」行項目とは**
 
@@ -85,4 +87,6 @@ Analytics のディメンションには、1 回のヒットに複数の値を�
 
 ![表示専用の仮想レポートスイート](assets/vrs-aiq-example.png)
 
->[!NOTE]セグメントで指標を含むヒットが抑制される場合、これらの指標インスタンスはどのディメンションにも関連付けられません。ただし、類似したレポートフィルターでは、単に一部のディメンション値を非表示にするだけで、アトリビューションモデルに従って処理される指標には影響しません。その結果、セグメントは、同等の定義を持つフィルターよりも低い値を返すことができます。
+>[!NOTE]
+>
+>セグメントで指標を含むヒットが抑制される場合、これらの指標インスタンスはどのディメンションにも関連付けられません。ただし、類似したレポートフィルターでは、単に一部のディメンション値を非表示にするだけで、アトリビューションモデルに従って処理される指標には影響しません。その結果、セグメントは、同等の定義を持つフィルターよりも低い値を返すことができます。
