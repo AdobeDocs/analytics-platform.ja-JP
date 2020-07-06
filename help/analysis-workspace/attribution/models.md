@@ -2,17 +2,19 @@
 title: アトリビューションモデルとルックバックウィンドウ
 description: 様々なタイプのアトリビューションによってディメンション値間でクレジットがどのように分割されるか。
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
 
 # アトリビューションモデルとルックバックウィンドウ
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 アドビAnalyticsでアトリビューションの概念は、次の2つの要素で構成されます。
 
@@ -45,7 +47,9 @@ ht-degree: 90%
 
 * **カスタムルックバックウィンドウ：** アトリビューションウィンドウを、レポートの日付範囲を超えて、最大90日まで拡張できます。 カスタムルックバックウィンドウは、レポート期間内の各コンバージョンで評価されます。 例えば、2月20日に発生したコンバージョンの場合、10日のルックバックウィンドウでは、アトリビューションモデルの2月10日から20日までのすべてのディメンションタッチポイントが評価されます。
 
->[!NOTE] **[!UICONTROL カスタムのルックバックウィンドウ]** は、現在制限付きのテスト中です。 詳しくは、 [アドビAnalytics機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html) （英語）を参照してください。
+>[!NOTE]
+>
+>**[!UICONTROL カスタムのルックバックウィンドウ]** は、現在制限付きのテスト中です。 詳しくは、 [アドビAnalytics機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html) （英語）を参照してください。
 
 ## 例
 
@@ -76,4 +80,6 @@ ht-degree: 90%
       * ソーシャル：18.6％、9.32 ドル
       * 有料検索：13.8％、6.92 ドル
 
->[!TIP]、クレジットが複数のチャネルに属する場合は、注文やカスタムイベントなどの他のコンバージョンイベントも分割されます。例えば、2 つのチャネルが線形アトリビューションモデルを使用してカスタムイベントに貢献する場合、両方のチャネルにカスタムイベントの 0.5 が与えられます。これらのイベントの小数は、すべての訪問で合計され、レポートに最も近い整数に丸められます。
+>[!NOTE]
+>
+>、クレジットが複数のチャネルに属する場合は、注文やカスタムイベントなどの他のコンバージョンイベントも分割されます。例えば、2 つのチャネルが線形アトリビューションモデルを使用してカスタムイベントに貢献する場合、両方のチャネルにカスタムイベントの 0.5 が与えられます。これらのイベントの小数は、すべての訪問で合計され、レポートに最も近い整数に丸められます。
