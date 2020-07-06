@@ -3,7 +3,7 @@ description: テーブルで静的な行を操作する方法の説明です。
 title: 静的な行と動的な行の比較
 uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 91%
@@ -13,7 +13,9 @@ ht-degree: 91%
 
 # 静的な行と動的な行の比較
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace のテーブルでは、ディメンションをテーブルにドロップすると、「動的な」行が生成されます。つまり、特定の指標に関して、ディメンションに対応するすべての項目は、テーブルに取り込まれます。
 
