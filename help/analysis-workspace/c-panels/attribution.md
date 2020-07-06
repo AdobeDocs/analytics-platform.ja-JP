@@ -2,17 +2,19 @@
 title: アトリビューションパネル
 description: Analysis Workspaceでのアトリビューションパネルの使用方法と解釈方法。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
 
 # アトリビューションパネル
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 アトリビューションパネルを使用すると、各種アトリビューションモデルの比較分析を簡単に作成できます。これは、アトリビューション [](../attribution/overview.md) IQの機能で、アトリビューションモデルを使用および比較するための専用のワークスペースを提供します。
 
