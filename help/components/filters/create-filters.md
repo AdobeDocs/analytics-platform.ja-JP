@@ -2,7 +2,7 @@
 title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 38%
@@ -26,7 +26,9 @@ ht-degree: 38%
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] この方法で作成されたフィルターは、プロジェクトの内部にあります。
+>[!NOTE]
+>
+>この方法で作成されたフィルターは、プロジェクトの内部にあります。
 
 次の手順に従って、これらのフィルターを公開（グローバル）できます。
 
