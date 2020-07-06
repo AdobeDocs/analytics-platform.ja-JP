@@ -1,9 +1,9 @@
 ---
 description: Workspaceでのプロジェクト共有とプロジェクトの役割
 keywords: Analysis Workspace sharing
-title: Workspaceプロジェクトを共有
+title: Workspace プロジェクトの共有
 translation-type: tm+mt
-source-git-commit: 3a2cb7ad15f1491ef4fe6fdcb3135b29675c40e8
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 5%
@@ -11,9 +11,11 @@ ht-degree: 5%
 ---
 
 
-# Workspaceプロジェクトを共有
+# Workspace プロジェクトの共有
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 共有を使用すると、組織内の他のAnalysis Workspaceユーザーがプロジェクトを利用できるようになります。 適用した [キュレーションは](curate.md) 、受信者がプロジェクトを開くと反映されます。
 
