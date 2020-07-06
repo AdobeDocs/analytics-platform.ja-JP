@@ -2,7 +2,7 @@
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 86%
@@ -38,7 +38,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 コンポーネントは、様々な方法で（個別に、または複数選択して同時に）管理できます。コンポーネントを右クリックするか、コンポーネントリストの上部にある「**[!UICONTROL アクション]**」をクリックします。
 
->[!NOTE]これらのアクションは、時間コンポーネントには適用されません。
+>[!NOTE]
+>
+>これらのアクションは、時間コンポーネントには適用されません。
 
 | コンポーネントのアクション | 説明 |
 |--- |--- |
