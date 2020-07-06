@@ -3,7 +3,7 @@ description: 'null'
 title: Analysis Workspace のパフォーマンスの最適化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 98%
@@ -13,7 +13,9 @@ ht-degree: 98%
 
 # Analysis Workspace のパフォーマンスの最適化
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace のプロジェクトのパフォーマンスに影響を与える可能性がある要因はいくつかあります。プロジェクトを最適な方法で計画、作成できるように、プロジェクトを作成する前にそれらの要因を把握しておくことが重要です。パフォーマンスに影響する要因と、プロジェクトを最適化するためのベストプラクティスのリストを以下に示します。Analysis Workspace のパフォーマンスは、アドビにとって最優先事項の 1 つであり、常に改善を続けています。
 
@@ -33,8 +35,8 @@ Analysis Workspace のプロジェクトのパフォーマンスに影響を与�
 ある程度の複雑な要因は回避できませんが、セグメントの複雑さを軽減できないか検討してください。一般的に、セグメント条件をより具体的に指定するほど速くなります。次に例を示します。
 
 * コンテナでは、セグメントに加えて単一のコンテナを使用する方が、一連の入れ子になったコンテナよりも高速になります。
-* 演算子を使用した場合、「次を含む」よりも「等しい」の方が速く、「次のいずれかを含む」よりも「次のいずれかに等しい」の方が速くなります。
-* 多くの条件では、AND 演算子は一連の OR 演算子よりも高速になります。また、多くの OR 文を 1 つの「次のいずれかに等しい」文に減らせないかを探します。
+* 演算子を使用した場合、「次を含む」よりも「等しい」の方が速く、「次のいずれかを含む」よりも「次のいずれかに等しい」の方が速くなります
+* 多くの条件では、AND 演算子は一連の OR 演算子よりも高速になります。また、多くの OR 文を 1 つの「次のいずれかに等しい」文に減らせないかを探します
 
 また、[分類](https://docs.adobe.com/content/help/ja-JP/analytics/components/classifications/c-classifications.html)を使用すると、多数の値を簡略化されたグループに統合整理でき、グループからはセグメントを作成できます。分類グループをセグメント化すると、多数の OR 文や「次を含む」条件を含むセグメントのパフォーマンスがよくなります。
 
