@@ -2,7 +2,7 @@
 title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
 ht-degree: 99%
@@ -12,7 +12,9 @@ ht-degree: 99%
 
 # リファレンス：高度な関数
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 これらの関数にアクセスするには、**[!UICONTROL 関数]**&#x200B;ドロップダウンリストの「**[!UICONTROL 詳細を表示]**」を選択します。
 
@@ -32,7 +34,9 @@ ht-degree: 99%
 
 引数の値を返します。値がある特定の値に等しくないことを示すには、NOT を使用します。
 
->[!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
+>[!NOTE]
+>
+>0（ゼロ）は False を表し、それ以外の値は True を表します。
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -208,7 +212,9 @@ N &lt;= 0 の場合、前のすべての行を使用します。この関数は�
 
 N &lt;= 0 の場合、前のすべての行を使用します。この関数はディメンションによって規定されているので、日付やパスの長さなど、自然順序を持つディメンションでのみ役立ちます。
 
->[!NOTE]この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
+>[!NOTE]
+>
+>この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -365,7 +371,7 @@ LOG10(metric)
 
 ## 対数回帰：相関係数（表）
 
-回帰式 *に対して、2 つの指標列（* metric_X *と* metric_Y *）の間の相関係数* r[!DNL Y = a ln(X) + b] を返します。計算には CORREL 式を使用します。
+回帰式 [!DNL Y = a ln(X) + b] に対して、2 つの指標列（*metric_X* と *metric_Y*）の間の相関係数 *r* を返します。計算には CORREL 式を使用します。
 
 ```
 CORREL.LOG(metric_X,metric_Y)
@@ -378,7 +384,7 @@ CORREL.LOG(metric_X,metric_Y)
 
 ## 対数回帰：切片（表）
 
-回帰式 *に対して、2 つの指標列（* metric_X *と* metric_Y *）の間の最小二乗回帰として、切片* b[!DNL Y = a ln(X) + b] を返します。計算には INTERCEPT 式を使用します。
+回帰式 [!DNL Y = a ln(X) + b] に対して、2 つの指標列（*metric_X* と *metric_Y*）の間の最小二乗回帰として、切片 *b* を返します。計算には INTERCEPT 式を使用します。
 
 ```
 INTERCEPT.LOG(metric_X, metric_Y)
@@ -406,7 +412,7 @@ ESTIMATE.LOG(metric_X, metric_Y)
 
 ## 対数回帰：傾き（表）
 
-回帰式 *に対して、2 つの指標列（* metric_X *と* metric_Y *）の間の傾き* a[!DNL Y = a ln(X) + b] を返します。計算には SLOPE 式を使用します。
+回帰式 [!DNL Y = a ln(X) + b] に対して、2 つの指標列（*metric_X* と *metric_Y*）の間の傾き *a* を返します。計算には SLOPE 式を使用します。
 
 ```
 SLOPE.LOG(metric_A, metric_B)
@@ -451,7 +457,9 @@ NOT を使用する場合は、式（&lt;、>、=、&lt;> など）が0 と 1 �
 
 いずれかの引数が TRUE の場合は TRUE を返します。すべての引数が FALSE の場合は FALSE を返します。
 
->[!NOTE]0（ゼロ）は False を表し、それ以外の値は True を表します。
+>[!NOTE]
+>
+>0（ゼロ）は False を表し、それ以外の値は True を表します。
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -487,7 +495,7 @@ CORREL.POWER(metric_X, metric_Y)
 
 ## 累乗回帰：切片（表）
 
-*に対して、2 つの指標列（* metric_X *と* metric_Y *）の間の切片* b[!DNL Y = b*X] を返します。
+[!DNL Y = b*X] に対して、2 つの指標列（*metric_X* と *metric_Y*）の間の切片 *b* を返します。
 
 ```
  INTERCEPT.POWER(metric_X, metric_Y)
@@ -591,7 +599,7 @@ CORREL.RECIPROCAL(metric_X, metric_Y)
 
 ## 逆数回帰：切片（表）
 
-*に対して、2 つの指標列（* metric_X *と* metric_Y *）の間の切片* b[!DNL Y = a/X+b] を返します。
+[!DNL Y = a/X+b] に対して、2 つの指標列（*metric_X* と *metric_Y*）の間の切片 *b* を返します。
 
 ```
 INTERCEPT.RECIPROCAL(metric_A, metric_B)
@@ -692,7 +700,9 @@ z スコアの式は次のようになります。
 
 ここで、[!DNL x] は生のスコア、[!DNL μ] は母集団の平均値、[!DNL σ] は母集団の標準偏差です。
 
->[!NOTE] [!DNL μ]（ミュー）および [!DNL σ]（シグマ）は、指標から自動的に計算されます。
+>[!NOTE]
+>
+>[!DNL μ] （ミュー）および [!DNL σ]（シグマ）は、指標から自動的に計算されます。
 
 Z スコア（指標）
 
@@ -717,5 +727,7 @@ z スコア A の Z 検定（n-tailed）を実行します。
 
 現在の行が列に偶然表示される可能性を返します。
 
->[!NOTE]値が正規分布されると仮定します。
+>[!NOTE]
+>
+>値が正規分布されると仮定します。
 
