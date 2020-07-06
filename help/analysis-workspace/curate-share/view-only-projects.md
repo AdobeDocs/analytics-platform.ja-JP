@@ -1,19 +1,21 @@
 ---
 description: Workspaceの表示のみのプロジェクト
 keywords: View-only projects
-title: 表示のみのWorkspaceプロジェクト
+title: 表示のみの Workspace プロジェクト
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# 表示のみのWorkspaceプロジェクト
+# 表示のみの Workspace プロジェクト
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 プロジェクト共有ワークフローを使用して、受信者に「表示のみ」として [プロジェクトを共有できます](/help/analysis-workspace/curate-share/share-projects.md)。 表示の管理ロールに配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。 組織のデータ構造、Analysis Workspace、またはアドビAnalyticsの一般的な知識が低いユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用したい場合に、この方法が望ましい場合があります。
 
