@@ -1,18 +1,20 @@
 ---
 description: Analysis Workspaceのアクセシビリティサポート機能
-title: Analysis Workspaceでのアクセシビリティ
+title: Analysis Workspace のアクセシビリティ
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 
-# Analysis Workspaceでのアクセシビリティ
+# Analysis Workspace のアクセシビリティ
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 アドビAnalyticsの主要な分析ツールである [!UICONTROL Analysis Workspaceのアクセシビリティサポートについて説明します]。
 
