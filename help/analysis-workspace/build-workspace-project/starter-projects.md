@@ -3,7 +3,7 @@ description: Workspaceのテンプレート
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 95%
@@ -13,7 +13,9 @@ ht-degree: 95%
 
 # テンプレート
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 以下からプロジェクトを作成するかどうかを選択できます。
 
@@ -79,7 +81,7 @@ ht-degree: 95%
 
 ### コマース
 
-* **Magento：マーケティングとコマース**：このテンプレートは、マーケティングチャネルアトリビューション別に e コマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによるインサイトを提供します。ビデオの概要については、[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw) を参照してください。
+* **Magento：マーケティングとコマース**：このテンプレートは、マーケティングチャネルアトリビューション別に e コマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによるインサイトを提供します。ビデオの概要については、 [!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw) を参照してください。
 
 ### メディア
 
@@ -115,7 +117,9 @@ ht-degree: 95%
 
 ### People
 
->[!NOTE]人物テンプレートとそれに関連する人物指標は、[Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/ja-JP/device-co-op/using/data/people.html) の一部としてのみ使用可能です。
+>[!NOTE]
+>
+>人物テンプレートとそれに関連する人物指標は、[Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/ja-JP/device-co-op/using/data/people.html) の一部としてのみ使用可能です。
 
 このテンプレートは、実訪問者指標の重複を排除したバージョンである人物指標に基づいています。人物指標は、消費者がブランドと関わる際にどのくらいの頻度で複数のデバイスを使用しているかを測定します。このテンプレートでは次の操作が可能です。
 
@@ -134,14 +138,14 @@ ht-degree: 95%
 このテンプレートを使用すれば、重要なクロスデバイスのパフォーマンスデータを確認できます。このサービスは、[Cross-Device Analytics](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)（CDA）へのアクセス権を持つユーザーのみが利用できます。
 
 * **Co-op グラフのメンバーに関する特別な注意事項**：Co-op グラフがサポートされる地域とサポートされない地域の訪問者が、レポートスイートのどの部分に含まれているかを表示します。
-* **ユーザーの識別**：クロスデバイス分析に基づくメソッドを使用して、サイトへの訪問者を識別する頻度を示します。
-* **オーディエンスサイズの測定**：「個別デバイス」と「人」の比較を表示します。この 2 つの数値の割合は「クロスデバイス圧縮」と呼ばれ、このパネルに表示される計算指標です。この圧縮指標は、次の様々な要因によって異なります。
+* **ユーザーの ID**：クロスデバイス分析に基づくメソッドを使用して、サイトへの訪問者を識別する頻度を示します。
+* **オーディエンスサイズの測定**：「個別デバイス数」と「人」の比較を表示します。この 2 つの数値の比率は「クロスデバイス圧縮」と呼ばれ、このパネルに表示される計算指標です。この圧縮指標は、次の様々な要因によって異なります。
    * **Co-op グラフまたはプライベートグラフの使用**：一般に、Device Co-op を使用する組織は、プライベートグラフを使用する組織よりも圧縮率が高くなる傾向があります。
    * **ログイン率**：サイトにログインするユーザーが増えるほど、アドビはデバイスをまたいで訪問者を識別し、関連付けられるようになります。サイトのログイン率が低い場合は、圧縮率も低くなります。
    * **Experience Cloud ID の有効範囲**：ECID を持つ訪問者のみを結び付けることができます。ECID を使用してサイトに来訪した訪問者の割合が低くなると、圧縮率も低くなります。
    * **複数のデバイスの使用**：サイトの訪問者が複数のデバイスを使用していない場合は、圧縮率が低くなります。
    * **レポート精度**：通常、日別の圧縮は、月別または年別の圧縮よりも小さくなります。1 人のユーザーが 1 日で複数のデバイスを使用する機会は、1 ヶ月のうち 1 日だけ使用する場合よりも少なくなります。セグメント化、フィルタリングまたは分類ディメンションを使用した場合も、圧縮率が低くなります。
-* **人ベースのセグメント**：デバイス固有のデータを表示できるセグメントドロップダウンが含まれます。このパネルでは、セグメントを使用してデバイスタイプを含める、または除外すると、レポートにどのような影響が生じるかを確認することを推奨します。
+* **人ベースのセグメント**：デバイス固有のデータを確認できるセグメントドロップダウンが含まれます。このパネルでは、セグメントを使用し、デバイスタイプを含める場合と除外する場合とで、レポートにどのように影響するかを確認することを推奨します。
 * **クロスデバイスジャーニーの分析**：デバイスタイプに基づいたフローレポートとフォールアウトレポートを提供します。
-* **クロスデバイスアトリビューション**：Journey IQ と Attribution IQ の機能を組み合わせます。
-* **その他のヒント**：CDA をさらに活用するのに役立つ、CDA に関する役立つトピックです。
+* **クロスデバイスのアトリビューション**：Journey IQ と Attribution IQ の機能を組み合わせます。
+* **その他のヒント**：CDA をさらに活用できる、CDA に関する便利なトピック。
