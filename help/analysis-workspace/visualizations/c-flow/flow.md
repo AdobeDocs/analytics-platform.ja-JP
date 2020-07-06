@@ -3,7 +3,7 @@ description: 'null'
 title: フローの概要
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 90%
@@ -13,7 +13,9 @@ ht-degree: 90%
 
 # フローの概要
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 フロー機能は、Web サイトおよびアプリの顧客パスを表示します。
 
@@ -23,7 +25,9 @@ ht-degree: 90%
 * 入口、特定のディメンション、出口など、指定したチェックポイントの前後で顧客がどこに移動するかを分析する
 * 選択したパスの特定のポイントを指定することで、セグメントを作成する
 
->[!NOTE]Analysis Workspace と Reports &amp; Analytics/Ad Hoc Analysis でのフローへのセグメントの適用結果の違いについて詳しくは、[フローとフォールアウトの基礎としてのセグメント化](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)を参照してください。
+>[!NOTE]
+>
+>Analysis Workspace と Reports &amp; Analytics/Ad Hoc Analysis でのフローへのセグメントの適用結果の違いについて詳しくは、[フローとフォールアウトの基礎としてのセグメント化](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)を参照してください。
 
 [フロービジュアライゼーション（YouTube）](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（4:56）
 
