@@ -5,7 +5,7 @@ title: プロジェクトの作成 - 概要
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 96%
@@ -15,7 +15,9 @@ ht-degree: 96%
 
 # プロジェクトの作成 - 概要
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]**／**[!UICONTROL Workspace]**
 
@@ -71,7 +73,9 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 サブメニューには次のオプションが含まれます。
 
->[!NOTE]アスタリスク（*）が付いているオプションは、**保存済みプロジェクト**&#x200B;でのみ表示されます。
+>[!NOTE]
+>
+>アスタリスク（*）が付いているオプションは、**保存済みプロジェクト**&#x200B;でのみ表示されます。
 
 | プロジェクト | 編集 | 挿入 | コンポーネント | 共有 | ヘルプ |
 |---|---|---|---|---|---|
