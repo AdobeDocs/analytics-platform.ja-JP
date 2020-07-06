@@ -2,7 +2,7 @@
 description: 表示密度を調整する方法を説明します。
 title: 表示密度
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 82%
@@ -12,7 +12,9 @@ ht-degree: 82%
 
 # 表示密度
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 表示密度を調整すると、左側のパネル、フリーフォームテーブル、コホートテーブルでの垂直方向の余白を減らし、1 画面に表示されるデータの量を増やすことができます。表示密度を切り替えるラジオボタンが 3 つ用意されています。
 
