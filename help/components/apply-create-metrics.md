@@ -3,7 +3,7 @@ description: Analysis Workspace には、指標の使用方法が 2 つありま
 title: 指標
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 88%
@@ -19,7 +19,9 @@ Analysis Workspace には、指標の使用方法が 2 つあります。
 
 ![](assets/metrics_icons.png)
 
->[!NOTE]これは一見シンプルに見えますが、指標の使用はかなり強力です。レポートに指標を追加するには、適切な指標をテーブルの「指標」セクションにドラッグします。また、ディメンションを指標別に分類して、テーブルビューを細かく制御することもできます。さらに、ディメンションとして指標を挿入したり、指標としてディメンションを挿入したりして、時間外レポートを作成できます。様々なコンポーネントを操作して、機能を確認してください。ほかにも多くのことができます。
+>[!NOTE]
+>
+>これは一見シンプルに見えますが、指標の使用はかなり強力です。レポートに指標を追加するには、適切な指標をテーブルの「指標」セクションにドラッグします。また、ディメンションを指標別に分類して、テーブルビューを細かく制御することもできます。さらに、ディメンションとして指標を挿入したり、指標としてディメンションを挿入したりして、時間外レポートを作成できます。様々なコンポーネントを操作して、機能を確認してください。ほかにも多くのことができます。
 
 または、**[!UICONTROL コンポーネント]**／**[!UICONTROL 新しい指標]**&#x200B;をクリックします。これにより、既存の指標からカスタム指標を作成できる、[計算指標ビルダー](https://docs.adobe.com/content/help/ja-JP/analytics/components/calculated-metrics/cm-overview.html)が表示されます。
 
