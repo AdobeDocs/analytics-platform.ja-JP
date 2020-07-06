@@ -2,7 +2,7 @@
 title: リファレンス - 基本的な関数
 description: '計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。 '
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -12,13 +12,17 @@ ht-degree: 97%
 
 # リファレンス - 基本的な関数
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 
 ここでは、関数とその定義をアルファベット順に示します。
 
->[!NOTE][!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
+>[!NOTE]
+>
+>[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
 
 ## 表関数と行関数
 
@@ -218,7 +222,7 @@ ROUND(metric)
 
 | 引数 | 説明 |
 |---|---|
-| *number* | 丸める指標です。 |
+| *数値* | 丸める指標です。 |
 
 桁数パラメーターのない丸めは、桁数パラメーターが 0 の丸めと同じで、直近の整数に丸めます。桁数パラメーターがある場合、小数の右側が指定された桁数の値が返されます。桁数が負数の場合、小数の左側の指定された桁数が 0 として返されます。
 
@@ -255,7 +259,7 @@ SQRT(metric)
 
 | 引数 | 説明 |
 |---|---|
-| *number* | 平方根を求める指標です。 |
+| *数値* | 平方根を求める指標です。 |
 
 ## 標準偏差（表）
 
