@@ -3,7 +3,7 @@ description: 'null'
 title: フォールアウトビジュアライゼーションの設定
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 96%
@@ -13,7 +13,9 @@ ht-degree: 96%
 
 # フォールアウトビジュアライゼーションの設定
 
->[!NOTE] Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
 
 タッチポイントを指定して、複数のディメンションのフォールアウトシーケンスを作成できます。通常、タッチポイントはサイト上のページです。ただし、タッチポイントはページに限定されません。例えば、単位などのイベント、実訪問者数、再来訪を追加できます。また、カテゴリ、ブラウザーのタイプ、内部検索語句などのディメンションも追加できます。
 
