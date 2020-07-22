@@ -2,10 +2,10 @@
 title: アルゴリズムアトリビューション
 description: アルゴリズムアトリビューションモデルの詳細です。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 >[!NOTE]
 >
 >**[!UICONTROL アルゴリズムのアトリビューション]** は、現在、制限付きのテスト中です。 詳しくは、 [アドビAnalytics機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html) （英語）を参照してください。
 
-Analysis Workspaceのアルゴリズム [アトリビューションモデルは](models.md) 、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション値にクレジットを割り当てるという点で、他のモデルとは異なります。 Analysis Workspace内の他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のセグメント化と分類をサポートし、コンバージョンの100%をテーブル内のディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
+Analysis Workspaceのアルゴリズム [アトリビューションモデルは](models.md) 、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てるという点で、他のモデルとは異なります。 Analysis Workspace内の他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のセグメント化と分類をサポートし、コンバージョンの100%をテーブル内のディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
 
 アトリビューションに使用されるアルゴリズムは、協同ゲーム理論のハルサニ配当に基づく。 ハルサニー配当は、成果に対する不平等な貢献を持つゲームで、プレーヤー間でクレジットを分配するためのシャプリー価値の解決（ノーベル賞受賞者のロイド・シャプリー氏にちなんで名付けられた）を一般化したもの。
 
-高いレベルでは、各タッチポイントのコンバージョンクレジットのアトリビューション計算では、ルックバックウィンドウ内の各マーケティングタッチポイントを、剰余を均等に配分する必要のあるプレーヤーの連合とみなします。 各連立与党の余剰分布は、各サブ連立（または以前に参加したディメンション値）が再帰的に作成した剰余に従って決定されます。 詳しくは、John HarsanyiのとLloyd Shapleyの元の論文を参照してください。
+高いレベルでは、各タッチポイントのコンバージョンクレジットのアトリビューション計算では、ルックバックウィンドウ内の各マーケティングタッチポイントを、剰余を均等に配分する必要のあるプレーヤーの連合とみなします。 各連立与党の余剰分布は、各サブカオリティ（または以前に参加したディメンション項目）が再帰的に作成した剰余に従って決定されます。 詳しくは、John HarsanyiのとLloyd Shapleyの元の論文を参照してください。
 
 * ロイド・S・シャプリー (1953) n人間ゲームの値。 *ゲーム理論への貢献、2(28)*、307-317。
 * ジョン・C・ハルサニー (1963) n人協同ゲームの簡易交渉モデル。 *194-220年*、国際経済見直し4(2)。
