@@ -2,10 +2,10 @@
 title: 散布図
 description: 最大3つの指標間の関係を示すビジュアライゼーション。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 9%
+ht-degree: 26%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-散布図のビジュアライゼーションは、ディメンション値と最大3つの指標との関係を表示します。 3つのコンポーネントが必要で、最大4つのコンポーネントの視覚化をサポートします。
+散布図ビジュアライゼーションは、ディメンション項目と最大3つの指標の関係を表示します。 3つのコンポーネントが必要で、最大4つのコンポーネントの視覚化をサポートします。
 
 * 行コンポーネント（通常はディメンション）は、グラフ上の各ポイントを表します。 行が異なると、色の付いたドットが異なります。
 * 一番左の列（通常は指標）には、Y軸上の点の位置（垂直方向）が描画されます。
