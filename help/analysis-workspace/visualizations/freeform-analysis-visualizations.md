@@ -3,10 +3,10 @@ description: Analysis Workspace のビジュアライゼーションおよびビ
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。各ビジュアライゼーションには、管理可能な独自の設定があります。ビジュアライゼーションの名前をクリックすると、詳細情報が表示されます。
 
@@ -34,7 +34,7 @@ YouTube ビデオ：[Analysis Workspace のビジュアライゼーションの�
 | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。 |
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。 |
-| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション値と最大 3 つの指標の関係を表示します。 |
+| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大3つの指標の関係を表示します。 |
 | [概要番号](/help/analysis-workspace/visualizations/summary-number-change.md) | このビジュアライゼーションは、選択したセルに応じて、合計と概要を表示します。 |
 | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | このビジュアライゼーションでは、選択されているセルに応じて、セルを互いに比較します。 |
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストを Workspace に追加できます。 |
