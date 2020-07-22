@@ -1,8 +1,11 @@
 ---
 title: データビューとアトリビューションの設定
 description: Customer Journey Analytics で Platform データセットへのデータビューを作成する方法について説明します。
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 * データビューユーザーインターフェイスで、デフォルトのアトリビューションを指定します。**注意**：後日、Workspace プロジェクトでこれらの設定を上書きできます。ただし、この機能は現在使用できません。
 
-* Customer Journey Analytics のアトリビューション設定は、非破壊的かつ遡及的です。つまり、Customer Journey Analytics のデータセットに回復不能な害を加えることはできません。誤って何かを削除してしまった場合は、いつでも [!UICONTROL Experience Platform] に戻って、データセットを元に戻すことができます。（ただし、データセットを元に戻す場合は追加費用がかかります。）
+* Customer Journey Analytics のアトリビューション設定は、非破壊的かつ遡及的です。つまり、Customer Journey Analytics のデータセットに回復不能な害を加えることはできません。Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. （ただし、データセットを元に戻す場合は追加費用がかかります。）
 
 * 従来の eVar（コンバージョン変数）と同様にディメンションを「動作」させる場合は、デフォルトで「ラストタッチ訪問」アトリビューションを使用するよう設定する必要があります。
 
@@ -38,7 +41,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 1. ディメンションと指標のコンポーネントおよびアトリビューションの設定を指定します。個々の設定については、以下を参照してください。
 
-1. **[!UICONTROL Save]** をクリックして、データビューを保存します。
+1. Click **[!UICONTROL Save]** to save your data view.
 
 
 ### コンポーネント設定
@@ -64,7 +67,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ### 有効期限
 
-ディメンション値の有効期限が切れる（成功イベントのクレジットを受け取らなくなる）までの期間またはイベントを指定します。アトリビューションの有効期限は、セッション、ユーザーまたはカスタムレベルで設定できます。
+ディメンション項目の有効期限が切れる(成功イベントのクレジットを受け取らなくなる)までの期間(イベント)を指定します。 アトリビューションの有効期限は、セッション、ユーザーまたはカスタムレベルで設定できます。
 
 | 設定 | 定義 |
 |---|---|
