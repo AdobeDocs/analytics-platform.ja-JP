@@ -1,11 +1,11 @@
 ---
 title: アトリビューションの概要
-description: 成功イベントのクレジットを複数のディメンション値に関連付ける概念。
+description: 成功イベントのクレジットを複数のディメンション項目に関連付けるという概念。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 50%
+ht-degree: 56%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション値がどのように取得するかをカスタマイズできます。 次に例を示します。
+アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。 次に例を示します。
 
 1. サイトの訪問者が、いずれかの商品ページへの有料検索リンクをクリックします。 商品が買い物かごに追加されますが、購入は行われません。
 2. 次の日に、友達の1人からソーシャルメディアの投稿を見たり、リンクをクリックして購入を完了したりします。
