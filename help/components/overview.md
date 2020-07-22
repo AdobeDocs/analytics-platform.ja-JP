@@ -2,10 +2,10 @@
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 86%
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 次のコンポーネントを管理できます。
 
-* [**フィルター&#x200B;**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション値に焦点を当てる
+* [**フィルター&#x200B;**](filters/filters-overview.md): データの一部を除外して、共通のディメンション項目に焦点を当てる
 * [**計算指標&#x200B;**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
 * [**日付範囲&#x200B;**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
 * [**プロジェクト&#x200B;**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
