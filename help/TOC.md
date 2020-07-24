@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
 cloud: experience-cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
       + 列および行の設定 {#column-row-settings}
          + [列設定](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [行設定](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [手動の行と動的な行の比較](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [動的項目と静的項目](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [「元に戻す」および「やり直し」の設定](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Analysis Workspace で使用できるホットキー](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
