@@ -1,11 +1,11 @@
 ---
-title: 動的ディメンション項目と静的ディメンション項目
+title: フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目
 description: テーブルの動的および静的ディメンション項目の操作方法。
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '518'
+ht-degree: 9%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 8%
 
 動的ディメンション項目には行フィルターオプションがあり、ロックと **Xアイコンはありません** 。
 
+![](assets/dynamic-items.png)
+
 ## 静的ディメンション項目
 
 静的ディメンション項目は、時間と共に変化しません。 これらは、常にフリーフォームテーブルに返される固定コンポーネントです。 静的ディメンション項目は、同じキャンペーンを常に分析する場合に、特定の曜日でも週の特定の曜日でも分析することをお勧めします。
@@ -33,21 +35,24 @@ ht-degree: 8%
 特定のコンポーネント値（ディメンション、指標、セグメント、日付範囲）を手動で選択してテーブルにドロップすると、常に行または列の静的なリストが作成されます。 静的ディメンション項目は、次の操作を行う場合にも作成できます。
 
 * 行から右クリック/選択した行のみ [!UICONTROL 表示]
-* 列から右クリック/項目を静的に [!UICONTROL する]
+* 列から右クリックし、「項目を静的に [!UICONTROL する」]
 
 例えば、MicrosoftやAppleなどの特定のブラウザータイプ項目にドラッグすると、その2つの特定の項目が常にテーブルに取り込まれます。
 
 静的ディメンション項目には行フィルターオプション **はありません** 。 代わりに、各項目にロックアイコンとXアイコンが表示されます。 Xアイコンをクリックして、テーブルからそのディメンション項目を削除します。
 
+![](assets/static-items.png)
+
 ## 混在ディメンション項目
 
 異なるディメンションのディメンション項目を同じテーブルに追加できます。 この場合、行ヘッダーには「混在ディメンション」と表示されます。 これらのディメンション項目は静的です。 例えば、Browser Typeディメンションから特定のディメンション項目を追加し、Browserディメンションから他のディメンション項目を追加します。
+
+![](assets/mixed-dimensions.png)
 
 ## フリーフォームの合計行数
 
 フリーフォーム合計行の動的行と静的行の動作が異なります。 デフォルト：
 
 * 動的な行は、訪問数や訪問者数などのサーバー側と重複解除指標の合計です
-* 静的な行は、クライアント側で合計され、重複 **の解除指標は行われません** 。
+* 静的な行は、クライアント側で合計され、重複 **の解除指標は行われません** 。 サーバーサイドの合計行を計算するには、「行」設定を「総合計を **表示**」に変更します。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
-[動的行と静的行のWorkspace合計](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) オプションについて詳しく説明します。
