@@ -1,11 +1,11 @@
 ---
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,24 +15,24 @@ ht-degree: 82%
 コンポーネントは、レポートで使用したり、レポート機能を補完したりできる、Customer Journey Analytics の機能です。これらのコンポーネントは、次の手順で管理できます。
 
 1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
-2. Navigate to [!UICONTORL Components] > [!UICONTROL Components] in the header menu.
+2. ヘッダーメニューで[!UICONTORL コンポーネント]／[!UICONTROL コンポーネント]に移動します。
 
 次のコンポーネントを管理できます。
 
-* [**フィルター&#x200B;**](filters/filters-overview.md): データの一部を除外して、共通のディメンション項目に焦点を当てる
+* [**フィルター&#x200B;**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
 * [**計算指標&#x200B;**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
 * [**日付範囲&#x200B;**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
 * [**プロジェクト&#x200B;**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
 
-## Analysis Workspace成分
+## Analysis Workspace のコンポーネント
 
 Analysis Workspace のコンポーネントは、指標、ディメンション、セグメントおよび時間の精度で構成されており、これらはプロジェクトにドラッグ＆ドロップできます。カスタム日付範囲などの、作成したカスタムコンポーネントがこれらのパネルに追加されます。
 
-コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。左側のパネルのアイコンを使用するか、[ホットキー](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用して、パネル（空白パネル、[フリーフォームパネル](/help/analysis-workspace/visualizations/freeform-table.md)、[クイックインサイトパネル](/help/analysis-workspace/c-panels/quickinsight.md)、[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) パネルのいずれか）、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、コンポーネントを切り替えることができます。
 
 ![](assets/components.png)
 
-See [Create a project](/help/analysis-workspace/home.md) for information about using Components in a project.
+プロジェクトでのコンポーネントの使用については、[Workspace プロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
 
 ## コンポーネントのアクション
 
