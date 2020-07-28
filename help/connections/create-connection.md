@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
+source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 46%
+source-wordcount: '1626'
+ht-degree: 38%
 
 ---
 
@@ -70,7 +70,7 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Customer Journey Analyticsで、Person IDにIDマップを使用する機能がサポートされるようになりました。 IDマップは、キー>値のペアをアップロードできるマップデータ構造です。 キーはID名前空間で、値はID値を保持する構造体です。 アップロードされた各行/イベントにIDマップが存在し、それに応じて各行に対して値が設定されます。
 
-IDマップは、ExperienceEvent XDMクラスに基づくスキーマを使用するデータセットで使用できます。 CJA接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリIDまたはIDマップとして選択できます。
+IDマップは、ExperienceEvent XDM [](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/home.html) クラスに基づくスキーマを使用するデータセットで使用できます。 CJA接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリIDまたはIDマップとして選択できます。
 
 ![](assets/idmap1.png)
 
@@ -80,6 +80,15 @@ IDマップは、ExperienceEvent XDMクラスに基づくスキーマを使用�
 |---|---|
 | [!UICONTROL プライマリ ID 名前空間を使用] | これにより、CJAは行ごとに、primary=true属性でマークされたIDをIDマップで検索し、その行の個人IDとして使用します。 これは、これが、パーティションのExperience Platformで使用される主キーであることを意味します。 また、CJAの訪問者IDとしての使用の主な候補でもあります（CJA接続でのデータセットの設定方法に応じて異なります）。 |
 | [!UICONTROL 名前空間] | (このオプションは、プライマリID名前空間を使用しない場合にのみ使用できます)。 Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. 名前空間を指定すると、CJAは各行のIDマップでこの名前空間キーを検索し、その名前空間のIDを行の個人IDとして使用します。 CJAは、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。 データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
+
+### IDマップのエッジケース
+
+次の表に、エッジケースが存在する場合の2つの設定オプションと、その処理方法を示します。
+
+| オプション | IDマップにIDが存在しない | プライマリIDとしてマークされていない | 複数のIDがプライマリとしてマークされる | 単一のIDがプライマリとしてマークされる | IDがプライマリとしてマークされた無効な名前空間 |
+|---|---|---|---|---|---|
+| **「プライマリID名前空間を使用」がオン** | 行はCJAによってドロップされます。 | プライマリIDが指定されていないので、行はCJAによってドロップされます。 | すべての名前空間の下で、プライマリとマークされたすべてのIDがリストに抽出されます。 その後、アルファベット順に並べ替えられます。 この新しい並べ替えでは、最初のIDを持つ最初の名前空間が人物IDとして使用されます。 | プライマリとしてマークされた単一のIDが個人IDとして使用されます。 | 名前空間が無効（AEPに存在しない）場合でも、CJAはその名前空間のプライマリIDを個人IDとして使用します。 |
+| **特定のIDマップ名前空間が選択されました** | 行はCJAによってドロップされます。 | 選択した名前空間に属するすべてのIDがリストに抽出され、最初のIDが人物IDとして使用されます。 | 選択した名前空間に属するすべてのIDがリストに抽出され、最初のIDが人物IDとして使用されます。 | 選択した名前空間に属するすべてのIDがリストに抽出され、最初のIDが人物IDとして使用されます。 | 選択した名前空間に属するすべてのIDがリストに抽出され、最初のIDが人物IDとして使用されます。 (「Connection creation（接続の作成時）」で有効な名前空間のみを選択できるので、無効な名前空間/IDをPerson IDとして使用することはできません) |
 
 ## 接続を有効化
 
