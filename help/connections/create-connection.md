@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
+source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 60%
+source-wordcount: '1351'
+ht-degree: 46%
 
 ---
 
@@ -56,9 +56,9 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. **[!UICONTROL タイムスタンプ]**: コンテンツをここに追加
 
-1. **[!UICONTROL スキーマ]**: これは、Adobe Experience Platformで作成されたデータセットに基づくスキーマです。
+1. **[!UICONTROL スキーマ]**: これは、Adobe Experience Platformで作成されたデータセットに基づく [スキーマ](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/schema/composition.html) です。
 
-1. **[!UICONTROL 個人ID]**: Experience Platformのデータセットスキーマで定義されている利用可能なIDからPerson IDを選択します。
+1. **[!UICONTROL 個人ID]**: 使用可能なIDのドロップダウンリストから人物IDを選択します。 これらのIDは、Experience Platform内のデータセットスキーマで定義されています。 Person IDとしてIDマップを使用する方法については、以下を参照してください。
 
    >[!IMPORTANT]
    >
@@ -66,9 +66,20 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. 「 **[!UICONTROL 次へ]** 」をクリックして [!UICONTROL 、「接続を] 有効にする」ダイアログに移動します。
 
-### ID マップ
+### 個人IDとしてのIDマップの使用
 
+Customer Journey Analyticsで、Person IDにIDマップを使用する機能がサポートされるようになりました。 IDマップは、キー>値のペアをアップロードできるマップデータ構造です。 キーはID名前空間で、値はID値を保持する構造体です。 アップロードされた各行/イベントにIDマップが存在し、それに応じて各行に対して値が設定されます。
 
+IDマップは、ExperienceEvent XDMクラスに基づくスキーマを使用するデータセットで使用できます。 CJA接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリIDまたはIDマップとして選択できます。
+
+![](assets/idmap1.png)
+
+「Identity Map」を選択すると、次の2つの追加の設定オプションが表示されます。
+
+| オプション | 説明 |
+|---|---|
+| [!UICONTROL プライマリ ID 名前空間を使用] | これにより、CJAは行ごとに、primary=true属性でマークされたIDをIDマップで検索し、その行の個人IDとして使用します。 これは、これが、パーティションのExperience Platformで使用される主キーであることを意味します。 また、CJAの訪問者IDとしての使用の主な候補でもあります（CJA接続でのデータセットの設定方法に応じて異なります）。 |
+| [!UICONTROL 名前空間] | (このオプションは、プライマリID名前空間を使用しない場合にのみ使用できます)。 Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. 名前空間を指定すると、CJAは各行のIDマップでこの名前空間キーを検索し、その名前空間のIDを行の個人IDとして使用します。 CJAは、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。 データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
 
 ## 接続を有効化
 
@@ -76,7 +87,7 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. 接続を有効にするには、次の設定を定義します。
 
-   | フィールド | 説明 |
+   | オプション | 説明 |
    |---|---|
    | [!UICONTROL 名前接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
