@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 65%
+source-wordcount: '999'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. 右上の **[!UICONTROL 「新しい接続を作成]** 」をクリックします。
 
-   ![接続を作成](assets/create-connection.png)
+   ![接続を作成](assets/create-connection0.png)
 
 1. 接続を作成するデータセットを含むExperience Platformーのサンドボックスを選択します。
 
@@ -39,6 +39,8 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 ## データセットの設定
 
 右側で、追加したデータセットを設定できるようになりました。
+
+![データセットの設定](assets/create-connection.png)
 
 1. **[!UICONTROL データセットタイプ]**: この接続に追加した各データセットに対して、 [!UICONTROL Customer Journey Analytics] は、受信するデータに基づいてデータセットのタイプを自動的に設定します。
 
@@ -54,17 +56,25 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. **[!UICONTROL タイムスタンプ]**: コンテンツをここに追加
 
-1. **[!UICONTROL スキーマ]**:
+1. **[!UICONTROL スキーマ]**: これは、Adobe Experience Platformで作成されたデータセットに基づくスキーマです。
 
-1. **[!UICONTROL ユーザー ID]**:
+1. **[!UICONTROL 個人ID]**: Experience Platformのデータセットスキーマで定義されている利用可能なIDからPerson IDを選択します。
+
+   >[!IMPORTANT]
+   >
+   >選択する個人IDがない場合は、スキーマで1つ以上の個人IDが定義されていないことを意味します。 Experience Platform [でIDを定義する方法についての表示](https://youtu.be/G_ttmGl_LRU) 。
 
 1. 「 **[!UICONTROL 次へ]** 」をクリックして [!UICONTROL 、「接続を] 有効にする」ダイアログに移動します。
 
-   ![接続を有効化](assets/create-connection2.png)
+### ID マップ
+
+
 
 ## 接続を有効化
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+![接続を有効化](assets/create-connection2.png)
+
+1. 接続を有効にするには、次の設定を定義します。
 
    | フィールド | 説明 |
    |---|---|
