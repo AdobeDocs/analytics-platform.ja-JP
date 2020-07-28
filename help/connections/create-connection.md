@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 68%
+source-wordcount: '923'
+ht-degree: 65%
 
 ---
 
@@ -30,13 +30,17 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 1. 接続を作成するデータセットを含むExperience Platformーのサンドボックスを選択します。
 
-   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。 サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
+   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/ja-JP/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。 サンドボックス全体のデータにアクセスすることはできません。 サンドボックスを選択すると、左側のレールに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
 1. [!UICONTROL Customer Journey Analyticsに取り込む1つ以上のデータセットを選択し] 、 ****&#x200B;追加をクリックします。
 
-   （選択できるデータセットが多数ある場合は、データセットのリスト上部にある検索バーを使用して、適切なデータセットを検索できます）
+   (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+## データセットの設定
+
+右側で、追加したデータセットを設定できるようになりました。
+
+1. **[!UICONTROL データセットタイプ]**: この接続に追加した各データセットに対して、 [!UICONTROL Customer Journey Analytics] は、受信するデータに基づいてデータセットのタイプを自動的に設定します。
 
    There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
@@ -46,19 +50,29 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
    | [!UICONTROL 参照] | 分類ファイルと似ています。このデータは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングする参照データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスを除いて、「レコード」動作を持つ XDM クラスに基づいた、組み込みまたはカスタムのスキーマです。 | 該当なし |
    | [!UICONTROL プロファイル] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスに基づいた組み込みスキーマまたはカスタムイベント。 | 含める個人 ID を選択できます。[!DNL Experience Platform] 内で定義される各データセットには、1 つ以上の個人 ID セット（Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコードなど）があります。<br>![ユーザー ID](assets/person-id.png)**メモ&#x200B;**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。データセットを実際に結合するには、同じユーザー ID を使用する必要があります。 |
 
-1. 「 **[!UICONTROL 次へ]** 」をクリックして、「接続を [!UICONTROL 作成] 」ダイアログに移動します。
+1. **[!UICONTROL データセットID]**: このIDは自動的に生成されます。
 
-   ![接続を作成](assets/create-connection2.png)
+1. **[!UICONTROL タイムスタンプ]**: コンテンツをここに追加
+
+1. **[!UICONTROL スキーマ]**:
+
+1. **[!UICONTROL ユーザー ID]**:
+
+1. 「 **[!UICONTROL 次へ]** 」をクリックして [!UICONTROL 、「接続を] 有効にする」ダイアログに移動します。
+
+   ![接続を有効化](assets/create-connection2.png)
+
+## 接続を有効化
 
 1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
    | フィールド | 説明 |
    |---|---|
-   | [!UICONTROL 名前の接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
+   | [!UICONTROL 名前接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL この接続内のすべての新しいデータセットを、今日から自動的にインポートします。] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
-   | [!UICONTROL 既存のデータをすべて読み込む] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてへと読み込まれます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてへと読み込まれます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。<br>**この接続を保存すると、この設定は変更できなくなります。** |
 
    **次の点に注意してください。**
 
