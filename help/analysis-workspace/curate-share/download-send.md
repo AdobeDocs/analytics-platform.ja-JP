@@ -3,10 +3,10 @@ description: 保存済みのプロジェクトも未保存のプロジェクト�
 title: PDF ファイルまたは CSV ファイルのダウンロード
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 387e9755d963e70a9ba8dbc5f1f01f83541b5511
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 68%
+source-wordcount: '382'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 保存済みのプロジェクトも未保存のプロジェクトも、PDF および CSV 形式でダウンロードできます。
 
@@ -25,8 +25,8 @@ ht-degree: 68%
 
 * また、CSV 形式のフォールアウトビジュアライゼーションもサポートされています。
 * プロジェクトを PDF にレンダリングすると、ページ上の内容だけがレンダリングされます。プロジェクトにカスタムサイズのビジュアライゼーションとパネルが含まれている場合、内容が切り詰められないように、自動サイズに変更する必要があります（右上隅のボタン）。
-* ブラウザーでダウンロードしたPDFの書き出しには数分かかる場合があります。 これは、プロジェクトをPDF形式でレンダリングする前に、プロジェクト全体をサーバーで再実行する必要があるからです。 PDFがブラウザーでダウンロードされるまで、プロジェクトを終了しないことをお勧めします。 ただし、待っている間も引き続きプロジェクトに変更を加えることができます。
-* 非常に長いWorkspaceプロジェクトがある場合、PDFは現在、ページ分割されたドキュメントとしてではなく、1つの大きなページとして書き出されるので注意してください。 Workspace PDFの書き出しが改善され、ページネーションが可能になるようになりました。
+* ブラウザーでダウンロードした PDF の書き出しには数分かかる場合があります。これは、プロジェクトを PDF 形式でレンダリングする前に、プロジェクト全体をサーバーで再実行する必要があるからです。PDF がブラウザーでダウンロードされるまで、プロジェクトを終了しないことをお勧めします。ただし、待っている間も引き続きプロジェクトに変更を加えることができます。
+* 非常に長い Workspace プロジェクトがある場合、PDF は現在、ページ分割されたドキュメントとしてではなく、1 つの大きなページとして書き出されるので注意してください。Workspace PDF の書き出しが改善され、ページ分割が可能になるようになりました。
 
 1. プロジェクトを作成するか、開きます。
 1. **[!UICONTROL プロジェクト]**／**[!UICONTROL CSV をダウンロード（または、PDF をダウンロード）]**&#x200B;をクリックします。
@@ -40,6 +40,6 @@ ht-degree: 68%
 * コホートテーブルは raw 値のみを表示します。パーセンテージは削除されます。
 * 数値が無効な場合は、空のセルが表示されます。
 
->[!N注意]
+>[!NOTE]
 >
-> 小数点を小数点区切り記号として使用する数値は、書き出された CSV では引き続き引用されます。
+>小数点を小数点区切り記号として使用する数値は、書き出された CSV では引き続き引用されます。
