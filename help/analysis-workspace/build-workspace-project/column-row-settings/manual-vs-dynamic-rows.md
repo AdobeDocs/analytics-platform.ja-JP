@@ -2,7 +2,7 @@
 title: フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目
 description: テーブルの動的および静的ディメンション項目の操作方法。
 translation-type: tm+mt
-source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目
 
->[!NOTE]Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 フリーフォームテーブルでは、行と列に様々なコンポーネント値を含めることができます。 これらの値は、作成する分析に応じて、動的（時間に応じて変更）または静的（時間に応じて変更しない）にできます。
 
@@ -24,7 +26,7 @@ ht-degree: 9%
 
 例えば、ブラウザータイプディメンションをテーブルにドラッグすると、上位のブラウザータイプディメンション項目（Microsoft、Apple、Googleなど） 動的にテーブル行に戻ります。 列にドロップすると、上位5つのブラウザータイプディメンション項目が動的に返されます。
 
-動的ディメンション項目には行フィルターオプションがあり、ロックと **Xアイコンはありません** 。
+動的ディメンション項目には行フィルターオプションがあり、 **not** ロックとXのアイコンが表示されます。
 
 ![](assets/dynamic-items.png)
 
@@ -34,18 +36,18 @@ ht-degree: 9%
 
 特定のコンポーネント値（ディメンション、指標、セグメント、日付範囲）を手動で選択してテーブルにドロップすると、常に行または列の静的なリストが作成されます。 静的ディメンション項目は、次の操作を行う場合にも作成できます。
 
-* 行から右クリック/選択した行のみ [!UICONTROL 表示]
-* 列から右クリックし、「項目を静的に [!UICONTROL する」]
+* 行から右クリック/ [!UICONTROL 選択した行のみを表示]
+* 列から右クリック/ [!UICONTROL 項目を静的にする]
 
 例えば、MicrosoftやAppleなどの特定のブラウザータイプ項目にドラッグすると、その2つの特定の項目が常にテーブルに取り込まれます。
 
-静的ディメンション項目には行フィルターオプション **はありません** 。 代わりに、各項目にロックアイコンとXアイコンが表示されます。 Xアイコンをクリックして、テーブルからそのディメンション項目を削除します。
+静的ディメンション項目は、次のことを行います。 **not** 行フィルターオプションがある。 代わりに、各項目にロックアイコンとXアイコンが表示されます。 Xアイコンをクリックして、テーブルからそのディメンション項目を削除します。
 
 ![](assets/static-items.png)
 
 ## 混在ディメンション項目
 
-異なるディメンションのディメンション項目を同じテーブルに追加できます。 この場合、行ヘッダーには「混在ディメンション」と表示されます。 これらのディメンション項目は静的です。 例えば、Browser Typeディメンションから特定のディメンション項目を追加し、Browserディメンションから他のディメンション項目を追加します。
+異なるディメンションのDimension項目を同じテーブルに追加できます。 この場合、行ヘッダーは「混在Dimension」と表示されます。 これらのディメンション項目は静的です。 例えば、Browser Typeディメンションから特定のディメンション項目を追加し、Browserディメンションから他のディメンション項目を追加します。
 
 ![](assets/mixed-dimensions.png)
 
@@ -54,5 +56,5 @@ ht-degree: 9%
 フリーフォーム合計行の動的行と静的行の動作が異なります。 デフォルト：
 
 * 動的な行は、訪問数や訪問者数などのサーバー側と重複解除指標の合計です
-* 静的な行は、クライアント側で合計され、重複 **の解除指標は行われません** 。 サーバーサイドの合計行を計算するには、「行」設定を「総合計を **表示**」に変更します。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
+* 静的な行はクライアント側で合計され、実行されます **not** 重複解除指標 サーバーサイドの行合計を計算するには、「行」設定を **総合計を表示**. [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
