@@ -5,10 +5,10 @@ title: ディメンションの分類
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 68%
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,9 @@ Analysis Workspace のディメンションおよびディメンション項目�
 
    選択した期間で、ディメンション項目またはオーディエンスセグメント別に指標を分類できます。 より詳細なレベルまで、さらに詳しく調べることもできます。
 
-   >[!NOTE]テーブルに表示する分類の数は、200 までに制限されています。この制限は、分類をエクスポートする場合は増加します。
+   >[!NOTE]
+   >
+   >テーブルに表示する分類の数は、200 までに制限されています。この制限は、分類をエクスポートする場合は増加します。
 
 [Analysis Workspace のディメンション（YouTube）](https://www.youtube.com/watch?v=P9W0hhIHhCs&amp;index=12&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（4:54）
 
@@ -38,6 +40,6 @@ Analysis Workspace のディメンションおよびディメンション項目�
 
 ## 分類へのアトリビューションモデルの適用
 
-テーブル内の分類には、任意のアトリビューションモデルを適用することもできます。 このアトリビューションモデルは、親列と同じか異なる可能性があります。 例えば、マーケティングチャネルディメンションの線形注文を分析し、チャネル内の特定のトラッキングコードにU字型注文を適用できます。 To edit the attribution model applied to a breakdown, hover over the breakdown model and click **[!UICONTROL Edit]**:
+テーブル内の分類には、任意のアトリビューションモデルを適用することもできます。このアトリビューションモデルは、親列と同じ場合と異なる場合があります。例えば、マーケティングチャネルディメンションで線形の注文件数を分析するものの、チャネル内の特定のトラッキングコードには U 字形の注文件数を適用するといったことができます。分類に適用されるアトリビューションモデルを編集するには、その分類モデルの上にマウスポインターを置いて「**[!UICONTROL 編集]**」をクリックするだけです。
 
 ![分類の設定](assets/breakdown_settings.png)
