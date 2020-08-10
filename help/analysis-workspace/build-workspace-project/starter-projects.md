@@ -3,10 +3,10 @@ description: Workspaceのテンプレート
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 以下からプロジェクトを作成するかどうかを選択できます。
 
 * **空白のプロジェクト（デフォルト）**：手順については、「[Analysis Workspace プロジェクトの作成](/help/analysis-workspace/home.md)」を参照してください。
 * **標準テンプレート**：アドビが作成し、製品に付属しているテンプレートです。
-* **Custom template**: これらのテンプレートは、管理者権限を持つユーザーまたは管理者以外のユーザーが作成、共有または削除できます( [!UICONTROL Analysis Workspaceが付与されている場合)。 Admin Console内の「Save as Template] 」権限。 [詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-console/permissions/product-profile.html)
+* **カスタムテンプレート**：管理者権限を持つユーザー、または Admin Console で [!UICONTROL Analysis Workspace：テンプレートとして保存]権限を付与された非管理者ユーザーが作成、共有または削除できるテンプレートです。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -133,7 +133,7 @@ ht-degree: 95%
 
 ### Journey IQ：クロスデバイスの分析テンプレート
 
-<!-->This content is mirrored in the CDA doc.<-->
+<!--This content is mirrored in the CDA doc.-->
 
 このテンプレートを使用すれば、重要なクロスデバイスのパフォーマンスデータを確認できます。このサービスは、[Cross-Device Analytics](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)（CDA）へのアクセス権を持つユーザーのみが利用できます。
 
