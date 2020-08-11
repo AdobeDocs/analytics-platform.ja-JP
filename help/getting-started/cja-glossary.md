@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics の用語集
 description: Customer Journey Analytics の用語集。
-translation-type: ht
-source-git-commit: 36fcdaff24c3055f7ce45eecb7631baa3c087bdb
+translation-type: tm+mt
+source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 87%
 
 ---
 
@@ -11,14 +14,14 @@ source-git-commit: 36fcdaff24c3055f7ce45eecb7631baa3c087bdb
 
 Customer Journey Analytics の用語には、Adobe Analytics でこれまで使用されていた用語と異なるものがあります。
 
-| Adobe Analytics の用語 | 新しい Customer Journey Analytics の用語 | 説明 |
+| 新しい Customer Journey Analytics の用語 | Adobe Analytics の用語 | 説明 |
 |---|---|---|
-| 分類 | ルックアップデータセット | ： |
-| 顧客属性 | Profile データセット | エンタープライズ顧客データを顧客関係管理（CRM）データベースに取り込んでいる場合は、そのデータを Adobe Experience Platform の Profile デーアセットにアップロードできます。Customer Journey Analytics でそのデータセットへの接続を作成し、データビューを作成したら、Workspace でそのデータを利用できます。 |
+| ルックアップデータセット | 分類 | 1対1の関係があるキー/一致キー(イベントデータセット内)の値を、指定したデータセットから取得する場合に、lookupを使用します。 例えば、イベントデータセット内の「tracking_code」に一致するキーとして「tracking_code」を指定できます。 |
+| Profile データセット | 顧客属性 | エンタープライズ顧客データを顧客関係管理（CRM）データベースに取り込んでいる場合は、そのデータを Adobe Experience Platform の Profile デーアセットにアップロードできます。Customer Journey Analytics でそのデータセットへの接続を作成し、データビューを作成したら、Workspace でそのデータを利用できます。 |
 | ログイン会社 | Experience Cloud 組織 | [組織とアカウントのリンク](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1)を参照してください。 |
-| レポートスイート | 該当なし | 従来の Adobe Analytics のレポートスイートは存在しなくなりました。代わりに、接続を確立した Platform データセットから（仮想）[データビュー](/help/data-views/create-dataview.md)を作成します。 |
-| セグメント | フィルター | セグメントはフィルターになりました。Customer Journey Analytics のフィルターは、セグメントと同じように動作します。用語のみが変更されました。 |
-| 仮想レポートスイート | データビュー | Adobe Analytics において仮想レポートスイートは、親レポートスイートのセグメント化された表示です。仮想レポートスイートと CJA におけるデータビューの主な違いは、仮想レポートスイートが「ベース」または「親」レポートスイートのサブセットであり、その設定の一部が継承される点です。親／基本レポートスイートは存在しなくなるので、独自の設定でデータビューを定義します。 |
+| 該当なし | レポートスイート | 従来の Adobe Analytics のレポートスイートは存在しなくなりました。代わりに、接続を確立した Platform データセットから（仮想）[データビュー](/help/data-views/create-dataview.md)を作成します。 |
+| フィルター | セグメント | セグメントはフィルターになりました。Customer Journey Analytics のフィルターは、セグメントと同じように動作します。用語のみが変更されました。 |
+| データビュー | 仮想レポートスイート | Adobe Analytics において仮想レポートスイートは、親レポートスイートのセグメント化された表示です。仮想レポートスイートと CJA におけるデータビューの主な違いは、仮想レポートスイートが「ベース」または「親」レポートスイートのサブセットであり、その設定の一部が継承される点です。親／基本レポートスイートは存在しなくなるので、独自の設定でデータビューを定義します。 |
 
 ## Adobe Experience Platform の用語
 
