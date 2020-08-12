@@ -2,10 +2,10 @@
 title: (B2B)ルックアップデータセットとして追加のアカウントレベルのデータ
 description: アカウントベースのデータをルックアップデータセットとしてCJAに追加する方法を学びます。
 translation-type: tm+mt
-source-git-commit: 721915ffdc9f196a13a360fb5ac145f750788bcf
+source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 1%
+source-wordcount: '851'
+ht-degree: 2%
 
 ---
 
@@ -46,8 +46,15 @@ ht-degree: 1%
 1. データセットに名前を付け（この例では「B2B Info」）、説明を入力します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
+## 3.データをExperience Platformに取り込む
 
-## 3.データセットを結合した接続(Customer Journey Analytics)
+方法に関する説明 [CSVファイルのXDMスキーマへのマップ](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) がCSVファイルを使用する場合に役立ちます。
+
+[その他の方法](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) も利用できます。
+
+データのオンボーディングとルックアップの確立には、ルックアップテーブルのサイズに応じて、約2 ～ 4時間かかります。
+
+## 4.データセットを接続で結合(Customer Journey Analytics)
 
 この例では、3つのデータセットを1つのCJA接続に結合します。
 
@@ -61,20 +68,18 @@ ht-degree: 1%
 
 1. Customer Journey Analyticsで、 **[!UICONTROL 接続]** タブをクリックします。
 1. 結合するデータセット（この例では、上記の3つ）を選択します。
-1. （これがステップの属する場所であるかどうかは不明です） B2B Infoデータセットの場合、 `accountID` ルックアップテーブルで使用されるキー。 次に、一致するキー（対応するディメンション）も選択します。 `accountID` をイベントデータセットに追加します。
+1. B2B Infoデータセットの場合、 `accountID` ルックアップテーブルで使用されるキー。 次に、一致するキー（対応するディメンション）も選択します。 `accountID` をイベントデータセットに追加します。
 1. 「**[!UICONTROL 次へ]**」をクリックします。
 1. 接続に名前を付けて説明し、 [これらの手順](/help/connections/create-connection.md).
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-データが取り込まれます。 データのオンボーディングとルックアップの確立には、ルックアップテーブルのサイズに応じて、約2 ～ 4時間かかります。
-
-## この接続からデータビューを作成
+## 5.この接続からデータビューを作成する
 
 手順に従い、 [データビューの作成](/help/data-views/create-dataview.md).
 
 * データセットから必要なす追加べてのコンポーネント（ディメンションおよび指標）。
 
-## Workspaceでのデータの分析
+## 6. Workspaceでのデータの分析
 
 3つのすべてのデータセットのデータに基づいてWorkspaceプロジェクトを作成できるようになりました。
 
