@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
-translation-type: ht
-source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
+translation-type: tm+mt
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 69%
 
 ---
 
@@ -10,23 +13,24 @@ source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 # よくある質問
 
 | 質問 | 回答 |
-|---|---|
+| --- | --- |
 | **前提条件** |  |
-| [!UICONTROL Customer Journey Analytics] では、デバイスグラフまたは Device Coop は必要ですか。 | いいえ。[!UICONTROL Customer Journey Analytics] では、プライベートデバイスグラフまたは Device Coop は必要ありません。実際、それらはまだサポートされていません。 |
-| [!UICONTROL Customer Journey Analytics] には Experience Cloud ID（ECID）が必要ですか。 | いいえ。[!UICONTROL Customer Journey Analytics] は、データセット内の任意の ID（ECID か選択した他の ID かに関わらず）をサポートします。 |
-| Customer Journey Analytics の前に ETL（抽出、変換、読み込み）を実行する必要がある場合はどうなりますか。 | 現在、AEP に取り込む前にデータを変換する必要がある場合は、ETL パートナー（Unifi または Informatica）と連携する必要があります。データの取り込み後に ETL が必要となった場合、AEP クエリサービスにはいくつかの制限付きオプションが用意されています。 |
+| Device GraphまたはDevice Coopが必要か [!UICONTROL Customer Journey Analytics]? | いいえ。 [!UICONTROL Customer Journey Analytics]. 実際、それらはまだサポートされていません。 |
+| Experience CloudID(ECID)が必要か [!UICONTROL Customer Journey Analytics]? | いいえ、 [!UICONTROL Customer Journey Analytics] は、データセット内の任意のID（ECIDか、選択した他のIDか）をサポートします。 |
+| Customer Journey Analyticsの前にETL（抽出、変換、読み込み）が必要な場合はどうなりますか。 | 現在、AEP に取り込む前にデータを変換する必要がある場合は、ETL パートナー（Unifi または Informatica）と連携する必要があります。データが既に取り込まれた後にETLが必要な場合、AEPクエリサービスではいくつかの制限付きオプションを提供します。 |
 | **ステッチ** |  |
-| [!UICONTROL Customer Journey Analytics] は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | いいえ。[!UICONTROL Customer Journey Analytics] は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。優れたステッチアプローチに対する計画は進行中です。 |
+| 缶 [!UICONTROL Customer Journey Analytics] デバイス間またはデータセット間で「縫い合わせ」を行うか | いいえ。[!UICONTROL Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。]優れたステッチアプローチに対する計画は進行中です。 |
 | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | いいえ、まだサポートされていません。 |
-| **データを[!UICONTROL Customer Journey Analytics]** に取り込む |  |
-| [!UICONTROL Experience Platform] での [!UICONTROL Customer Journey Analytics]に対して予想される遅延はどの程度ですか。 | <ul><li>標準の負荷の場合：60分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満。</li></ul> |
-| [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | [!UICONTROL Customer Journey Analytics] は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。データセット間でユーザー ID が一致している限り、[!UICONTROL Customer Journey Analytics] は、セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 |
-| オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | お客様は、Customer Journey Analytics でデータを使用する前に、データを Experience Platform に取り込む必要があります。Experience Platform のデータは、オンボーディングチームが必要に応じて、お客様にレコメンデーションやコンサルティングを提供するのに役立ちます。 |
-| Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analytics データは、Analytics Data Connector を通じて Experience Platform に接続できます。ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
+| **[!UICONTROL Customer Jeurney Analytics へのデータの取得]** |  |
+| 異なるExperience Platformサンドボックスのデータを1つのCJA接続で組み合わせることはできますか。 | いいえ、サンドボックス全体のデータにアクセスすることはできません。 同じサンドボックス内にあるデータセットのみを組み合わせることができます。 [詳細情報...](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
+| 予想される遅延 [!UICONTROL Customer Journey Analytics] on [!UICONTROL Experience Platform]? | <ul><li>標準の負荷の場合：60分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>バックフィルデータ（最大 100 億件のイベント）：4 週間未満。</li></ul> |
+| オンラインデータを [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics は、bring-your-own-ID（個人 ID の持ち込み）分析システムです。]データセット間で人物IDが一致する限り、 [!UICONTROL Customer Journey Analytics] セグメント、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
+| オフラインデータを Customer Journey Analytics に取り込む方法を教えてください。 | Customer Journey Analyticsで使用する前に、Experience Platformに任意のデータを取り込む必要があります。 Experience Platformのデータのオンボーディングチームが、必要に応じてレコメンデーションやコンサルティングを行うのに役立ちます。 |
+| Analytics データを Customer Journey Analytics に取り込む方法を教えてください。 | Analyticsデータは、 [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). ほとんどの Analytics フィールドは XDM 形式で取り込まれますが、他のフィールド（マーケティングチャネルディメンションなど）はまだ使用できません。 |
 | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
 | PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
 | **従来の Analytics コンポーネント** |  |
-| 従来の Adobe Analytics 製品とは何を表していますか。 | Customer Journey Analytics は、次世代の分析製品です。現在の製品から Customer Journey Analytics に進化するには、数年の時間がかかり、多くの調整がおこなわれます。このリリースは、この方向への大きな一歩となります。 |
+| 従来の Adobe Analytics 製品とは何を表していますか。 | Customer Journey Analytics は、次世代の分析製品です。現在の製品から Customer Journey Analytics に進化するには、数年の時間がかかり、多くの調整がおこなわれます。 |
 | Customer Journey Analytics のセグメントを AEP や他のソリューションに共有できますか。 | まだできません。アドビでは、近い将来に、Customer Journey Analytics から AEP にセグメントを共有する新しい革新的な方法を実現できるよう検討中です。潜在的な解決策として、クエリサービスの出力を統合プロファイルに共有できます。 |
 | 古い eVar 設定はどうなりましたか。 | 従来の Adobe Analytics の eVar、prop およびイベントは、Customer Journey Analytics には存在しなくなりました。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
 | すべてのセッションと変数の永続性の設定は、どこにありますか。 | Customer Journey Analytics では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
