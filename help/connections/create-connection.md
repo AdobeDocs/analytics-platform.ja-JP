@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '1655'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >サンドボックス全体のデータにアクセスすることはできません。つまり、1つのサンドボックス内でデータセットのみを組み合わせることができます。
+   >サンドボックス全体のデータにアクセスすることはできません。つまり、同じサンドボックス内にあるデータセットのみを組み合わせることができます。
 
 1. [!UICONTROL Customer Journey Analytics] に取り込むデータセットを 1 つ以上選択し、［**[!UICONTROL 追加]**］をクリックします
 
