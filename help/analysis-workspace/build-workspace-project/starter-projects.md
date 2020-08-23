@@ -3,7 +3,7 @@ description: Workspaceのテンプレート
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
+source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 99%
@@ -81,7 +81,9 @@ ht-degree: 99%
 
 ### コマース
 
-* **Magento：マーケティングとコマース**：このテンプレートは、マーケティングチャネルアトリビューション別に e コマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによるインサイトを提供します。ビデオの概要については、 [!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw) を参照してください。
+* **Magento：マーケティングとコマース**：このテンプレートは、マーケティングチャネルアトリビューション別に e コマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによるインサイトを提供します。ビデオの概要については、次を参照してください。
+
+>[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
 
 ### メディア
 
