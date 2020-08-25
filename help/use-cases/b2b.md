@@ -1,11 +1,11 @@
 ---
 title: （B2B）ルックアップデータセットとしてアカウントレベルのデータを追加
 description: アカウントベースのデータをルックアップデータセットとして CJA に追加する方法を学びます。
-translation-type: ht
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -37,6 +37,12 @@ ht-degree: 100%
 ## 2. ルックアップデータセットの作成（Experience Platform）
 
 スキーマを作成したら、そのスキーマから、Experience Platform でルックアップデータセットを作成する必要があります。このルックアップデータセットには、会社名、従業員の合計数、ドメイン名、所属する業種、年間売上高、Experience Platform の現在の顧客かどうか、顧客の営業段階、アカウント内のどのチームが CJA を使用しているかなどの、アカウントレベルのマーケティング情報が含まれます。
+
+>[!IMPORTANT]
+>
+>CJAは、参照データセットで整数をサポートしません。 XDMスキーマに、ルックアップデータセット用の整数フィールドを追加すると、これらの整数を指標や計算指標として使用できなくなります。 例えば、annualRevenueまたはtotalEmployeesを整数として定義した場合、CJAのレポートに「0」と表示されます。 ただし、文字列として割り当てた場合は、ルックアップ情報として使用できます。
+
+例えば、次の例ではannualRevenueまたはtotalEmployeesをIntegerとして定義しています。これがCJAで「0」が表示される理由です。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ管理／データセット]**&#x200B;に移動します。
 1. 「**[!UICONTROL +データセットを作成]**」をクリックします。
@@ -73,9 +79,9 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 1. [これらの手順](/help/connections/create-connection.md)に従って、接続に名前を付けて説明し、設定します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-## 5. この接続からのデータビューの作成
+## 5.この接続からデータ表示を作成する
 
-「[データビューの作成](/help/data-views/create-dataview.md)」の手順に従います。
+手順に従い、 [データ表示の作成](/help/data-views/create-dataview.md).
 
 * データセットから必要なすべてのコンポーネント（ディメンションおよび指標）を追加します。
 
