@@ -2,9 +2,9 @@
 title: （B2B）ルックアップデータセットとしてアカウントレベルのデータを追加
 description: アカウントベースのデータをルックアップデータセットとして CJA に追加する方法を学びます。
 translation-type: tm+mt
-source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '933'
 ht-degree: 89%
 
 ---
@@ -67,7 +67,7 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 | データセット名 | 説明 | AEP スキーマクラス | データセットの詳細 |
 |---|---|---|---|
 | B2B インプレッション | アカウントレベルのクリックストリーム、イベントレベルのデータが含まれます。例えば、マーケティング広告を実行するための電子メール ID と対応するアカウント ID、およびマーケティング名が含まれます。また、各ユーザーに対するこれらの広告のインプレッションも含まれます。 | XDM ExperienceEvent スキーマクラスに基づく | `emailID` はプライマリ ID として使用され、 `Customer ID` 名前空間が割り当てられています。その結果、この変数は Customer Journey Analytics でデフォルトの&#x200B;**[!UICONTROL ユーザー ID]** として表示されます。![Impressions](assets/impressions-mixins.png) |
-| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | このスキーマでは `emailID` をプライマリ ID として選択する必要はありません。必ず「**[!UICONTROL プロファイル]**」を有効にしてください。そうしないと、CJA は B2B プロファイルで `emailID` を `emailID` に接続できなくなります。（この機能は、フィールドベースの結合と呼ばれます）。![プロファイル](assets/profile-mixins.png) |
+| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | このスキーマでは `emailID` をプライマリ ID として選択する必要はありません。必ず「**[!UICONTROL プロファイル]**」を有効にしてください。そうしないと、CJA は B2B プロファイルで `emailID` を `emailID` に接続できなくなります。![プロファイル](assets/profile-mixins.png) |
 | B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | `accountID` と B2B インプレッションデータセット間の関係 は、次の手順に従って、B2B 情報データセットを CJA の B2B インプレッションデータセットと結び付けることで自動的に作成されています。![参照](assets/lookup-mixins.png) |
 
 データセットを組み合わせる方法を次に示します。
