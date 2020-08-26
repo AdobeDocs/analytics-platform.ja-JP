@@ -1,27 +1,56 @@
 ---
-description: 'null'
+description: 行のビジュアライゼーションを使用して、トレンド（時間ベース）のデータセットを表現します
 title: 行
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 74%
+source-wordcount: '384'
+ht-degree: 15%
 
 ---
 
 
 # 行
 
->[!NOTE]
+線のビジュアライゼーションは、ある期間の値の変化を示すために線を使用して指標を表します。 折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。
+
+![線の視覚化](assets/line-viz.png)
+
+>[!IMPORTANT]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>線のビジュアライゼーション設定( [!UICONTROL 近似曲線を表示]に含まれる値は、現在制限付きのテストになっています。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)
 
-このビジュアライゼーションでは、時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。
+ラインビジュアライゼーションの右上にある歯車アイコンをクリックして、 [**ビジュアライゼーション設定**](freeform-analysis-visualizations.md) 利用可能。 設定は次の分類に分類されます。
 
-![](assets/line.png)
+* **一般**:ビジュアライゼーションタイプ間で共通の設定
+* **軸**:線のビジュアライゼーションのXまたはY軸に影響する設定
+* **オーバーレイ**:行のビジュアライゼーションに表示されるシリーズに、追加のコンテキストを追加するオプションです。
 
-[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B)の精度ドロップダウンにより、トレンドビジュアライゼーション（折れ線、棒など）を日別から週別、月別などに変更できます。
+![ビジュアライゼーション設定](assets/viz-settings-modal.png)
 
-![](assets/viz-granularity.png)
+## 精度の変更
 
+[ビジュアライゼーション設定](freeform-analysis-visualizations.md)の精度ドロップダウンにより、トレンドビジュアライゼーション（折れ線、棒など）を日別から週別、月別などに変更できます。データソーステーブルの精度も更新されます。
+
+## 最小または最大を表示
+
+下 **[!UICONTROL ビジュアライゼーション設定]** > **[!UICONTROL オーバーレイ]** > **[!UICONTROL 最小/最大値を表示]**&#x200B;の場合、最小値と最大値のラベルをオーバーレイして、指標内のピークと谷をすばやく強調表示できます。
+
+![最小/最大値を表示](assets/min-max-labels.png)
+
+## 近似曲線オーバーレイを表示
+
+下 **[!UICONTROL ビジュアライゼーション設定]** > **[!UICONTROL オーバーレイ]** > **[!UICONTROL 近似曲線を表示]**&#x200B;の場合、回帰近似曲線を線系列に追加できます。 近似曲線は、データにより明確なパターンを表現するのに役立ちます。
+
+![線形近似曲線](assets/show-linear-trendline.png)
+
+すべてのモデルは、通常の最小二乗を使用してフィットします。
+
+| モデル | 説明 |
+|---|---|
+| 線形 | 単純な線形データセットに対して最適な直線を作成します。この直線は、データが一定の速度で増減する場合に便利です。 数式： `y = a + b * x` |
+| 対数 | 最適な曲線を作成し、データの変化率が急速に増減し、次にレベルアウトする場合に便利です。 対数近似曲線には、負の値と正の値を使用できます。 数式： `y = a + b * log(x)` |
+| 指数関数的 | 曲線を作成します。データが絶え間なく増加する速度で上昇または下降する場合に便利です。 データに0または負の値が含まれる場合は、このオプションを使用しないでください。 数式： `y = a + e^(b * x)` |
+| 冪 | 曲線を作成します。これは、特定の速度で増加する測定値を比較するデータセットに役立ちます。 データに0または負の値が含まれる場合は、このオプションを使用しないでください。 数式： `y = a * x^b` |
+| 二次 | 放物線（上または下に凹面）のような形状のデータセットに最適なデータを検索します。 数式： `y = a + b * x + c * x^2` |
