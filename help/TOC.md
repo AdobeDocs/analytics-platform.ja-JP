@@ -13,9 +13,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 98%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 98%
    + プロジェクトのキュレーションおよび共有 {#curate-share}
       + [Workspace プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
       + [Workspace プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
+      + [共有可能なリンクの作成](analysis-workspace/curate-share/shareable-links.md)
       + [表示のみの Workspace プロジェクト](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](analysis-workspace/curate-share/download-send.md)
       + [プロジェクトファイルの共有およびスケジュール](analysis-workspace/curate-share/send-schedule-files.md)
