@@ -1,54 +1,24 @@
 ---
-description: プロジェクトの共有とキュレーションをおこなえるほか、今すぐまたはスケジュールに従って、プロジェクトファイルを（PDF または CSV 形式で）送信できます。
+description: PDF/CSVプロジェクトのキュレーション、共有、および組織内の受信者へのスケジュールを設定できます。
 title: 共有メニュー
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c4c6bc367ba1a45146267b968edb88a634cbc7ae
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 80%
+source-wordcount: '170'
+ht-degree: 32%
 
 ---
 
 
 # 共有メニュー
 
->[!NOTE]
->
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+PDF/CSVプロジェクトのキュレーション、共有、スケジュール設定は、Workspace内の組織内の受信者に対して行うことができます **共有メニュー**.
 
-プロジェクトの共有とキュレーションをおこなえるほか、今すぐまたはスケジュールに従って、プロジェクトファイルを（PDF または CSV 形式で）送信できます。
-
-**[!UICONTROL 勤務先]**／**[!UICONTROL 共有]**
-
-<table id="table_5104A6D817E94A268BBDD47C5C8BB26E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> オプション </th> 
-   <th colname="col2" class="entry"> 方法 </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> プロジェクトを共有 </td> 
-   <td colname="col2"><a href="/help/analysis-workspace/curate-share/share-projects.md"  > 詳細情報</a> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> プロジェクトリンクを取得 </td> 
-   <td colname="col2"> <p>他のユーザーをこのプロジェクトに直接移動させるリンクをコピーおよび共有します。ユーザーはログインする必要があります。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> ファイルを今すぐ送信 </td> 
-   <td colname="col2"> <p>ファイルタイプ、説明、受信者を指定します。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> ファイルをスケジュールに従って送信 </td> 
-   <td colname="col2"> <p>開始日、間隔と頻度および終了日を指定します。<a href="/help/analysis-workspace/curate-share/schedule-projects.md"  > 詳細情報</a> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> プロジェクトデータをキュレート </td> 
-   <td colname="col2"> <p><a href="/help/analysis-workspace/curate-share/curate.md"  > 詳細情報</a> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
+| メニューオプション | 説明 |
+|---|---|
+| プロジェクトを共有 | プロジェクトを組織内の他のAnalysis Workspaceユーザーが利用できるようにします。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
+| プロジェクトリンクを取得 | プロジェクトにすばやくアクセスするための共有可能なリンクを作成します。 ユーザーはログインする必要があります。[詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
+| ファイルを今すぐ送信 | プロジェクトをCSVまたはPDF形式で指定した受信者に直ちに送信します。 |
+| ファイルをスケジュールに従って送信 | プロジェクトをCSVまたはPDF形式でスケジュールに従って指定した受信者に送信します。 [詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
+| プロジェクトデータをキュレート | プロジェクトで使用できるコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限する。 [詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
