@@ -1,9 +1,9 @@
 ---
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
-translation-type: ht
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 
@@ -15,14 +15,14 @@ ht-degree: 100%
 コンポーネントは、レポートで使用したり、レポート機能を補完したりできる、Customer Journey Analytics の機能です。これらのコンポーネントは、次の手順で管理できます。
 
 1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
-2. ヘッダーメニューで[!UICONTORL コンポーネント]／[!UICONTROL コンポーネント]に移動します。
+2. ヘッダーメニューで[!UICONTROL コンポーネント]／[!UICONTROL コンポーネント]に移動します。
 
 次のコンポーネントを管理できます。
 
-* [**フィルター&#x200B;**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
-* [**計算指標&#x200B;**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
-* [**日付範囲&#x200B;**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
-* [**プロジェクト&#x200B;**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
+* [**フィルター**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
+* [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
+* [**日付範囲**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
+* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
 
 ## Analysis Workspace のコンポーネント
 
