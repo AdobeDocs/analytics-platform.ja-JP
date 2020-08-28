@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 98%
       + [日付の比較](components/date-ranges/time-comparison.md)
 + 使用例 {#cja-usecases}
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
-   + [オブジェクトの配列を使用する](use-cases/object-arrays.md)
+   + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
