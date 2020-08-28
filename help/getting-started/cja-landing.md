@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の製品分析
 description: Customer Journey Analytics のランディングページ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
      <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/object-arrays.html"> オブジェクトの配列を使用する </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> ルックアップデータセット追加としてのアカウントレベルのデータ </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-usecases/object-arrays.html"> オブジェクトの配列の使用 </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-usecases/b2b.html">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics を使い始める</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-faq.html">よくある質問</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics の用語集</a> </li> 
