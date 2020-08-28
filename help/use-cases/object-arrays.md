@@ -1,16 +1,16 @@
 ---
-title: オブジェクトの配列を使用する
+title: オブジェクトの配列の使用
 description: CJA がデータ階層をどのようにレポートするかを理解します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# オブジェクトの配列を使用する
+# オブジェクトの配列の使用
 
 一部のプラットフォームスキーマでは、オブジェクト配列を使用できます。最も一般的な例の 1 つに、複数の製品が入った買い物かごがあります。各製品には、名前、SKU、カテゴリ、価格、数量、および追跡したいその他のディメンションがあります。これらのファセットにはそれぞれ個別の要件がありますが、すべて同じヒットに適合する必要があります。
 
