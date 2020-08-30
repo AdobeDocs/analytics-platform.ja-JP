@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics を使い始める
 description: Customer Journey Analytics を使い始めます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16bca45f2576d3feef8129d558fad6f236852cb9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
