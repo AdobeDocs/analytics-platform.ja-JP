@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics のプライバシーの概要
 description: Customer Journey Analytics でのプライバシー設定の仕組みを説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 100%
 
 ---
 
