@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -14,18 +14,18 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-パネルは、テーブルとビジュアライゼーションのコレクションです。Workspace の左上にあるアイコンからパネルへアクセスできます。期間、ビジネス単位、地理などによってプロジェクトを組み立てたい場合、パネルが役立ちます。次の4種類のパネルをCustomer Journey Analytics用にAnalysis Workspaceで使用できます。
+パネルは、テーブルとビジュアライゼーションのコレクションです。Workspace の左上にあるアイコンからパネルへアクセスできます。期間、ビジネス単位、地理などによってプロジェクトを組み立てたい場合、パネルが役立ちます。以下の4種類のパネルがAnalysis WorkspaceでCustomer Journey Analytics可能です。
 
 * [空のパネル](blank-panel.md)
 * [クイックインサイトパネル](quickinsight.md)
 * [アトリビューションパネル](attribution.md)
 * [フリーフォームパネル](freeform-panel.md)
 
-クイックインサイト、空白、フリーフォームパネルは、分析を開始する上で最適な場所ですが、アトリビューションIQパネルは、より高度な分析に役立ちます。 プロジェクトでは `"+"` ボタンが使用できるので、いつでも空白のパネルを追加できます。
+クイックインサイト、空白、フリーフォームパネルは、分析を開始するには非常に便利な場所ですが、Attribution IQパネルは、より高度な分析に役立ちます。 プロジェクトでは `"+"` ボタンが使用できるので、いつでも空白のパネルを追加できます。
 
-The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+デフォルトの開始パネルはフリーフォームパネルですが、[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)をデフォルトにすることも可能です。
 
 ## パネル内のドロップダウンフィルター
 
