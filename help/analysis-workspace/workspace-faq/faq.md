@@ -1,11 +1,11 @@
 ---
 description: Workspace に関する FAQ
-title: よくある質問とWorkspaceのトラブルシューティング
+title: よくある質問と Workspace のトラブルシューティング
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 56%
+ht-degree: 87%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 | 質問 | 回答 |
 |--- |--- |
-| Analysis Workspaceを使用するための前提条件は何ですか？ | Analysis Workspaceを使用するには、実行中のCustomer Journey Analyticsの実装が必要です。 ツールを使用する前に、組織がAdobe Experience Platformにデータを送信していることを確認してください。 |
-| Analysis Workspace の管理およびアクセスの要件を教えてください。 | 詳しくは、[管理要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
-| Analysis Workspaceを使用するとデータ収集に影響が出ますか。 | Analysis Workspace はレポート作成ツールなので、データ収集には影響しません。何が機能するかを確認するためにコンポーネントをプロジェクトに適当にドラッグしても、データに影響はありません。様々なディメンションと指標の組み合わせをワークスペースプロジェクトにドラッグして、利用可能な項目を確認してください。無効なコンポーネントを誤ってワークスペースプロジェクトにドラッグした場合や、手順を 1 つ戻したい場合は、Ctrl + Z キー（Windows）または Command + Z キー（Mac）を押して、最後におこなった操作を元に戻します。左上のメニューで&#x200B;*[!UICONTROL プロジェクト]／[!UICONTROL 新規]*&#x200B;をクリックして、新しいスレートから始めることもできます。 |
-| Analysis Workspace はどのようにして実装しますか。 | 特別な実装は必要ありません。Analysis Workspaceは、すべての会社Customer Journey Analyticsが使用できます。 ただし、コンテンツ（プロジェクトコンポーネントなど）に対する標準の権限は、プロジェクトのキュレーションや共有に適用されます。 詳しくは、[管理およびアクセス要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
+| Analysis Workspace を使用するための前提条件を教えてください。 | Analysis Workspaceを使用するには、Customer Journey Analyticsの実装が必要です。 ツールを使用する前に、組織がAdobe Experience Platformにデータを送信していることを確認してください。 |
+| Analysis Workspace の管理およびアクセスの要件を教えてください。 | See[管理要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
+| Analysis Workspace を使用するとデータ収集に影響が出ますか。 | Analysis Workspace はレポート作成ツールなので、データ収集には影響しません。何が機能するかを確認するためにコンポーネントをプロジェクトに適当にドラッグしても、データに影響はありません。様々なディメンションと指標の組み合わせをワークスペースプロジェクトにドラッグして、利用可能な項目を確認してください。無効なコンポーネントを誤ってワークスペースプロジェクトにドラッグした場合や、手順を 1 つ戻したい場合は、Ctrl + Z キー（Windows）または Command + Z キー（Mac）を押して、最後におこなった操作を元に戻します。左上のメニューで&#x200B;*[!UICONTROL プロジェクト]／[!UICONTROL 新規]*&#x200B;をクリックして、新しいスレートから始めることもできます。 |
+| Analysis Workspace はどのようにして実装しますか。 | 特別な実装は必要ありません。Analysis Workspaceはすべての会社Customer Journey Analyticsが利用できます。 ただし、コンテンツ（プロジェクトコンポーネントなど）に対する標準の権限は、プロジェクトのキュレーションや共有に適用されます。 詳しくは、[管理およびアクセス要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
 | Analysis Workspace のパフォーマンスを最適化するにはどうすればよいですか。 | 詳しくは、[パフォーマンスの最適化](/help/analysis-workspace/workspace-faq/optimizing-performance.md)を参照してください。 |
 
 ## トラブルシューティング
@@ -32,9 +32,9 @@ ht-degree: 56%
 
 **指標をドラッグすると、実際のデータは表示されず、ゼロのみが表示される。**
 
-ワークスペースレポートの作成に成功したがデータがない場合は、次の項目を確認できます。
+ワークスペースレポートを正常に作成したのにデータがないという場合は、次の点を確認してください。
 
-* 重複がレポートスイートをチェックし、データが入力されていることを確認します。
-* レポートでセグメントを適用した場合、そのセグメント条件がどのデータとも一致しない可能性があります。 セグメントを削除するか、セグメント定義を調整してみてください。
-* 右上隅の日付範囲を確認し、期待値に設定されていることを確認します。
-* Navigate to your website and use the [Debugger](https://docs.adobe.com/content/help/ja-JP/debugger/using/experience-cloud-debugger.html) to validate that data is being collected.
+* レポートスイートを再度チェックし、データが入力されていることを確認します。
+* レポートにセグメントを適用している場合、そのセグメント条件がどのデータとも一致しない可能性があります。セグメントを削除するか、セグメント定義を調整してみてください。
+* 右上隅の日付範囲をチェックし、期待する値に設定されていることを確認します。
+* Web サイトに移動し、[デバッガー](https://docs.adobe.com/content/help/ja-JP/debugger/using/experience-cloud-debugger.html)を使用してデータが収集されていることを検証します。
