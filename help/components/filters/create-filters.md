@@ -16,12 +16,12 @@ ht-degree: 38%
 
 コンポーネントタイプ(ディメンション、ディメンション項目、イベント、指標、セグメント、セグメントテンプレート、日付範囲)をパネルの上部にあるフィルタードロップゾーンにドロップすると、インスタントフィルターを作成できます。
 
-コンポーネントタイプはフィルターに自動変換されます。 Alternatively, you can click the &quot;+&quot; sign in the **[!UICONTROL Add Filter]** drop box.
+コンポーネントタイプはフィルターに自動変換されます。 または、 **[!UICONTROL 追加フィルタ]** ドロップボックス。
 
 次の点に注意してください。
 
-* You **cannot** drop the following component types into the filter zone: calculated metrics and dimensions/metrics from which you cannot build filters.
-* フルディメンションおよびイベントの場合、Analysis Workspaceは「存在する」ヒットフィルターを作成します。 例：「eVar1 が存在するヒット」または「event1 が存在するヒット」
+* あなた **cannot** 次のコンポーネントタイプをフィルターゾーンにドロップします。フィルターを作成できない計算指標およびディメンション/指標。
+* フルディメンションとイベントの場合、Analysis Workspaceは「存在する」ヒットフィルターを作成します。 例：「eVar1 が存在するヒット」または「event1 が存在するヒット」
 * フィルタードロップゾーンに「未指定」または「なし」が含まれない場合は、正しく処理されるように、自動的に「存在しない」フィルターに変換されます。
 
 ![](assets/segment-dropzone.png)
@@ -43,7 +43,7 @@ ht-degree: 38%
 
 | アクション | 説明 |
 |--- |--- |
-| 選択範囲からフィルタを作成 | インラインフィルターを作成します。 行を選択し、選択範囲を右クリックして、インラインフィルターを作成します。 このフィルターは、開いているプロジェクトにのみ適用され、CJAフィルターとしては保存されません。 1. 行を選択します。2. 選択範囲を右クリックします。3. Click *Create filter from selection*. |
-| コンポーネント/新しいフィルター | フィルタビルダを表示します。 See [Filter Builder](https://docs.adobe.com/content/help/ja-JP/analytics/components/segmentation/segmentation-workflow/seg-build.html) for more information about filtering. |
-| 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | In [Curate and Share](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), learn how filters that you apply to the project are available in shared analysis for the recipient. |
+| 選択範囲からフィルタを作成 | インラインフィルターを作成します。 行を選択し、選択範囲を右クリックして、インラインフィルターを作成します。 このフィルターは、開いているプロジェクトにのみ適用され、CJAフィルターとしては保存されません。 1. 行を選択します。2. 選択範囲を右クリックします。3. 「 *選択範囲からフィルタを作成*. |
+| コンポーネント/新しいフィルター | フィルタビルダを表示します。 詳しくは、 [フィルタビルダ](https://docs.adobe.com/content/help/ja-JP/analytics/components/segmentation/segmentation-workflow/seg-build.html) 」を参照してください。 |
+| 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | イン [キュレーションと共有](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)プロジェクトに適用したフィルターが、受信者の共有分析で使用できる方法を学びます。 |
 | フィルターをディメンションとして使用 | ビデオ：[Analysis Workspace でセグメントをディメンションとして使用する](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
