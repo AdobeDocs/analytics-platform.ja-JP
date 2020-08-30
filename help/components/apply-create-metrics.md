@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -35,6 +35,6 @@ Analysis Workspace には、指標の使用方法が 2 つあります。
 
 アトリビューションモデル同士を手軽に比較したい場合は、指標を右クリックし、「**[!UICONTROL アトリビューションモデルを比較]**」を選択します。
 
-![属性の比較](assets/compare-attribution.png)
+![アトリビューションの比較](assets/compare-attribution.png)
 
-このショートカットを使用すると、指標をドラッグして2回設定することなく、あるアトリビューションモデルを別のアトリビューションモデルとすばやく簡単に比較できます。
+これにより、指標にドラッグして設定を 2 回おこなわなくても、アトリビューションモデルをすばやく簡単に相互比較できます。
