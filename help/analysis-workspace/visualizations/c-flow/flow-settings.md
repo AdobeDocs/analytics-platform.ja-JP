@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 | 設定 | 説明 |
 |--- |--- |
@@ -28,7 +28,7 @@ ht-degree: 91%
 |--- |--- |
 | このノードにフォーカス | 選択したノードにフォーカスを変更します。フロー図の中央にフォーカスノードが表示されます。 |
 | やり直し | 新しいフロー図を作成できる、フリーフォーム図ビルダーに戻ります。 |
-| フローのこのポイントからセグメントを作成 | セグメントを作成します。新しいセグメントを設定できる、セグメントビルダーに移動します。 |
+| フローのこのポイントからセグメントを作成 | セグメントの作成. 新しいセグメントを設定できる、セグメントビルダーに移動します。 |
 | 分類 | 利用可能なディメンション、指標、時間でノードを分類します。 |
 | トレンド | ノードのトレンド図を作成します。 |
 | 列全体を展開 | 列を展開して、すべてのノードを表示します。デフォルトでは、上位 5 つのノードのみ表示されます。 |
