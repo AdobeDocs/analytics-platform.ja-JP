@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]**／**[!UICONTROL Workspace]**
 
@@ -29,7 +29,7 @@ Analysis Workspace では、新たな方法でデータの比較および詳細�
 
 ## Workspace のプロジェクト一覧ページ {#section_39AA007D7C384F4E869F842F1C7B11F8}
 
-最初に **[!UICONTROL Analytics]**／**[!UICONTROL Workspace]**&#x200B;に移動すると、自分が所有するプロジェクトまたはアクセスを許可されたプロジェクトがすべて一覧表示されます。「**[!UICONTROL ランディングページとして設定]**」をクリックすると、このページを Adobe Analytics のランディングページに設定できます（下のスクリーンショットのように、このオプションが表示されない場合、既にランディングページに設定されています）。
+最初に **[!UICONTROL Analytics]**／**[!UICONTROL Workspace]** に移動すると、自分が所有するプロジェクトまたはアクセスを許可されたプロジェクトがすべて一覧表示されます。「**[!UICONTROL ランディングページとして設定]**」をクリックすると、このページを Adobe Analytics のランディングページに設定できます（下のスクリーンショットのように、このオプションが表示されない場合、既にランディングページに設定されています）。
 
 ![](assets/sample-project.png)
 
@@ -37,13 +37,13 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 | 要素 | 説明 |
 |---|---|
-| プロジェクト[テンプレート](/help/analysis-workspace/build-workspace-project/starter-projects.md) | これらの事前設定されたプロジェクトテンプレートをそのまま、またはニーズに応じて変更して（例えば指標やビジュアライゼーションを追加または置き換えることで）使用して、新しい名前で保存できます。 |
+| プロジェクト [テンプレート](/help/analysis-workspace/build-workspace-project/starter-projects.md) | これらの事前設定されたプロジェクトテンプレートをそのまま、またはニーズに応じて変更して（例えば指標やビジュアライゼーションを追加または置き換えることで）使用して、新しい名前で保存できます。 |
 | [新規プロジェクトを作成](/help/analysis-workspace/home.md) | このリンクをクリックすると、新しいプロジェクトを最初から作成できます。 |
 | プロジェクトの管理 | このリンクをクリックすると、プロジェクトコンポーネントマネージャーに移動します（**[!UICONTROL Analytics]**／**[!UICONTROL コンポーネント]**／**[!UICONTROL プロジェクト]**）。ここでは、すべてのプロジェクトが一覧表示され、プロジェクトのタグ付け、共有、削除、名前の変更、承認、コピー、CSV への書き出しをおこなえます。 |
 | チュートリアルを表示 | [YouTube の Analysis Workspace 関連ビデオ](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)に移動します。 |
 | 名前 | Workspace プロジェクトの名前。 |
 | 作成者 | このプロジェクトを作成したユーザー（ユーザー自身、またはユーザー自身とそのプロジェクトを共有した他のユーザー）。 |
-| タグ | プロジェクトに適用されたタグ。プロジェクトコンポーネントマネージャー、または&#x200B;**[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;で適用されます。 |
+| タグ | プロジェクトに適用されたタグ。プロジェクトコンポーネントマネージャー、または **[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;で適用されます。 |
 | 最終変更日 | プロジェクトが最後に変更された日付。 |
 
 ## プロジェクト情報および設定 {#section_63773D0B9E4543E88068ECECB9EEB4C6}
