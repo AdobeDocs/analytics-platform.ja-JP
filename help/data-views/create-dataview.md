@@ -1,9 +1,9 @@
 ---
 title: データレイヤーの作成
 description: Customer Journey Analytics （CJA）で、プラットフォームデータセットへのデータビューを作成する方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
