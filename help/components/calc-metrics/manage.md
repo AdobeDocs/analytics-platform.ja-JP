@@ -1,8 +1,11 @@
 ---
 title: 計算指標の管理
 description: 計算指標の共有、名前の変更および削除をおこないます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 076ee40e5aef1773976545692378f1b8a55089d4
+workflow-type: tm+mt
+source-wordcount: '15'
+ht-degree: 100%
 
 ---
 
