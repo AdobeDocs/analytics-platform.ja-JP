@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 以下に、Analysis Workspace とその関連コンポーネントに関する既知の制限を示します。
 
@@ -39,7 +39,7 @@ ht-degree: 87%
 ## コンポーネント/フィルター
 
 * 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL 回数]、[!UICONTROL 個別訪問者数]など）。
-* Certain components and operators are unavailable if a filter is created from Workspace (as opposed to being created from [!UICONTROL Components > Filters]). 例：IP アドレス。
+* フィルターがWorkspaceから作成された場合( [!UICONTROL コンポーネント/フィルター])をクリックします。 例：IP アドレス。
 
 ## コンポーネント／計算指標
 
