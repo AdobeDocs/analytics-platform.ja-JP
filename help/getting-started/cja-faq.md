@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 100%
 
