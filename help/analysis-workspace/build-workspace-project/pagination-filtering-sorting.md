@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Customer Journey Analytics内のAnalysis Workspaceに関するドキュメントを表示している。 この機能セットは、従来のAdobeAnalyticsの [Analysis Workspaceとは少し異なります](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)。 [詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 概要については、YouTube のこのビデオをご覧ください。
 
@@ -26,16 +26,16 @@ ht-degree: 80%
 フリーフォームテーブルのディメンションの隣にあるフィルターアイコンをクリックし、「アドバンスを表示」をクリックすると、次の条件を使用してフィルタリングできます。
 
 * 次を含む
-* 次を含まない
+* doesNotContain
 * すべての語句を含む
 * いずれかの語句を含む
 * フレーズを含む
 * いずれの語句も含まない
 * このフレーズを含まない
-* 次と等しい
+* equals
 * 次と等しくない
-* 次の語句で始まる
-* 次の語句で終わる
+* startsWith
+* endsWith
 
 ![](assets/advanced-filter.png)
 
