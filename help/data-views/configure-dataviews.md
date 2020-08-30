@@ -1,9 +1,9 @@
 ---
 title: データビューとアトリビューションの設定
 description: Customer Journey Analytics で Platform データセットへのデータビューを作成する方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%
 
