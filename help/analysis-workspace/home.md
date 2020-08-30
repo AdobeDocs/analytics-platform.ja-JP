@@ -3,9 +3,9 @@ keywords: Analysis Workspace
 title: Analysis Workspace の概要
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 100%
 
@@ -47,9 +47,9 @@ Analysis Workspace 機能の YouTube プレイリストは、[こちら](https:/
 
 ### 手順 3： 日付範囲を変更する
 
-### 手順 4：ディメンションを分類する
+### 手順 4：ディメンションの分類
 
-### 手順 5：セグメントをデータに適用する
+### 手順 5：セグメントのデータへの適用
 
 ### 手順 6：基本的なビジュアライゼーションを追加する
 
