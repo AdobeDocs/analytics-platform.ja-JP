@@ -3,15 +3,19 @@ description: 概要番号および変更ビジュアライゼーションを使�
 title: 数の概要と変更の概要
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 52%
+source-wordcount: '438'
+ht-degree: 56%
 
 ---
 
 
 # 数の概要と変更の概要
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 ## 数値の概要ビジュアライゼーション {#summary-number}
 
