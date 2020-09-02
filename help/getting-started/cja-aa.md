@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 translation-type: tm+mt
-source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 | 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| 異常値検出 | 2020 年 6 月現在の完全サポート |
+| 異常値検出 | 2020年9月現在のフルサポート |
 | Attribution IQ | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
@@ -80,7 +80,7 @@ ht-degree: 100%
 | 機能 | メモ |
 | --- | --- |
 | A4T | まだサポートの予定はありません。 |
-| ビデオ分析 | まだサポートの予定はありません。 |
+| Media Analytics | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
 | Report Builder（Excel プラグイン） | まだサポートの予定はありません。 |
 | Activity Map | まだサポートの予定はありません。 |
@@ -90,14 +90,12 @@ ht-degree: 100%
 
 ## サポートされません
 
-| 機能 | メモ |
-| --- | --- |
-| クロスデバイス Coop を使用した人指標 |  |
-| Reports &amp; Analytics のダッシュボード |  |
-| Reports &amp; Analytics のブックマーク |  |
-| Reports &amp; Analytics のターゲット |  |
-| Reports &amp; Analytics のカレンダーイベント |  |
-| Ad Hoc Analysis |  |
-| Data Warehouseレポート | [!UICONTROL Experience Platform クエリサービス]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。 |
-| Mobile Services |  |
-| データフィード |  |
+* クロスデバイス Coop を使用した人指標
+* Reports &amp; Analytics のダッシュボード
+* Reports &amp; Analytics のブックマーク
+* Reports &amp; Analytics のターゲット
+* Reports &amp; Analytics のカレンダーイベント
+* Ad Hoc Analysis
+* Data Warehouseレポート- [!UICONTROL Experience Platformクエリサービス] は、CJAでのこれらの使用例用の新しいインターフェイスになります。
+* Mobile Services
+* データフィード
