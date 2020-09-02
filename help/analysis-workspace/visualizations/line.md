@@ -3,15 +3,19 @@ description: 行のビジュアライゼーションを使用して、トレン�
 title: 行
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 20%
 
 ---
 
 
 # 行
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 線のビジュアライゼーションは、ある期間の値の変化を示すために線を使用して指標を表します。 折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。
 
@@ -35,7 +39,7 @@ ht-degree: 15%
 
 ## 最小または最大を表示
 
-下 **[!UICONTROL ビジュアライゼーション設定]** > **[!UICONTROL オーバーレイ]** > **[!UICONTROL 最小/最大値を表示]**&#x200B;の場合、最小値と最大値のラベルをオーバーレイして、指標内のピークと谷をすばやく強調表示できます。
+下 **[!UICONTROL ビジュアライゼーション設定]** > **[!UICONTROL オーバーレイ]** > **[!UICONTROL 最小/最大値を表示]**&#x200B;の場合、最小値と最大値のラベルをオーバーレイして、指標内のピークと谷をすばやく強調表示できます。 注意：最小/最大値は、ディメンション内の値の完全なセットではなく、ビジュアライゼーション内の表示されたデータポイントから得られます。
 
 ![最小/最大値を表示](assets/min-max-labels.png)
 
@@ -48,7 +52,7 @@ ht-degree: 15%
 すべてのモデルは、通常の最小二乗を使用してフィットします。
 
 | モデル | 説明 |
-|---|---|
+| --- | --- |
 | 線形 | 単純な線形データセットに対して最適な直線を作成します。この直線は、データが一定の速度で増減する場合に便利です。 数式： `y = a + b * x` |
 | 対数 | 最適な曲線を作成し、データの変化率が急速に増減し、次にレベルアウトする場合に便利です。 対数近似曲線には、負の値と正の値を使用できます。 数式： `y = a + b * log(x)` |
 | 指数関数的 | 曲線を作成します。データが絶え間なく増加する速度で上昇または下降する場合に便利です。 データに0または負の値が含まれる場合は、このオプションを使用しないでください。 数式： `y = a + e^(b * x)` |
