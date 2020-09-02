@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の概要
 description: Customer Journey Analytics について
 translation-type: tm+mt
-source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1202'
+ht-degree: 87%
 
 ---
 
@@ -54,16 +54,20 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
 * Experience Platform でデータセットを管理するには、「データセットの管理」権限を持つ Platform 製品プロファイルのメンバーである必要があります。詳しくは、[Adobe Experience Platform でのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)を参照してください。
-* Platform データセットへの接続を作成するには、次の権限を持つ Platform 製品プロファイルのメンバーである必要があります。
+* Experience Platformデータセットへの接続を作成するには、次の権限を持つPlatform Productプロファイルに所属している必要があります。
    * スキーマの表示
    * データセットの表示
    * ID 名前空間の管理
    * サンドボックスの表示
-* Customer Journey Analytics にアクセスする、または接続するには、[Admin Console](https://adminconsole.adobe.com/enterprise/) コンソールの Customer Journey Analytics 製品プロファイルにも追加されている必要があります。
+* 2020年9月9日現在、Customer Journey Analyticsにアクセスしたり、接続を行うには、Customer Journey Analytics製品プロファイルの管理者として [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理者には次の権限があります。
+   * 接続またはデータ表示の作成/更新/削除
+   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントを更新/削除
+   * Workspaceプロジェクトをすべてのユーザーと共有する
+* Customer Journey Analyticsの非管理者（ユーザー）は、表示データの表示や接続はできませんが、フィルター、プロジェクトおよび計算指標を作成できます。
 
 ### 用語の更新
 
-CJA のいくつかの機能は、業界標準に合わせて名前が変更されました。更新された名前には次のようなものがあります。
+CJAのいくつかの機能は、従来のAdobe Analyticsの機能に比べ、業界標準に合わせて名前が変更されました。 更新された用語の一部には、以下が含まれます。
 
 * セグメントは「フィルター」になりました。
 * 仮想レポートスイートは、「ビュー」になりました。
@@ -75,7 +79,7 @@ CJA のいくつかの機能は、業界標準に合わせて名前が変更さ�
 
 ## Adobe Experience Platform で構築されたその他の機能
 
-Customer Journey Analytics は、Adobe Experience Platform に依存する多数の機能の 1 つです。Platform には他にも、データを最大限に活用できる複数の機能が備わっています。
+Customer Journey Analytics は、Adobe Experience Platform に依存する多数の機能の 1 つです。その他のいくつかの機能は、Experience Platform上でも構築されており、データを最大限に活用できます。
 
 Adobe Experience Platform を使用すると、顧客データとコンテンツを任意のシステムから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされた豊富なエクスペリエンスのデザインと配信を大幅に改善できます。プラットフォーム内の顧客データは、スキーマとデータのバッチで構成されるデータセットとして保存されます。プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html)を参照してください。
 
