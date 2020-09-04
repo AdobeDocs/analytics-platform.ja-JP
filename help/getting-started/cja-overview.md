@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の概要
 description: Customer Journey Analytics について
 translation-type: tm+mt
-source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
+source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 87%
+source-wordcount: '1215'
+ht-degree: 82%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics の最初のリリースには、Analysis Workspace �
 
 [クロスデバイス分析](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)：Adobe Experience Platform ID サービスと統合して、Co-op Graph またはプライベートグラフを活用し、デジタルデバイスをどのように人物ｓにマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
 
-CJA は、Adobe Experience Platform のデータセットと統合され、Analysis Workspace でのクロスチャネル分析を可能にします。CJA はまだ Co-op またはプライベート ID グラフとは統合されていませんが、bring-your-own-ID（個人 ID の持ち込み）によってデータセットを結合できます。また、これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
+一方、CJAはAdobe Experience Platformのデータセットと統合し、Analysis Workspaceでのチャネル間の分析を可能にします。 CJA はまだ Co-op またはプライベート ID グラフとは統合されていませんが、bring-your-own-ID（個人 ID の持ち込み）によってデータセットを結合できます。また、これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
 
 ## 主な使用例
 
@@ -49,23 +49,25 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 * 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、CJA アドオンがあるかどうかが不明な場合は、組織のアカウントマネージャーにお問い合わせください。
 * 組織が Adobe Experience Platform 用にプロビジョニングされている。
 
-## ユーザーアクセス権限
+## 管理者アクセス権限
 
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* Experience Platform でデータセットを管理するには、「データセットの管理」権限を持つ Platform 製品プロファイルのメンバーである必要があります。詳しくは、[Adobe Experience Platform でのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)を参照してください。
-* Experience Platformデータセットへの接続を作成するには、次の権限を持つPlatform Productプロファイルに所属している必要があります。
-   * スキーマの表示
-   * データセットの表示
-   * ID 名前空間の管理
-   * サンドボックスの表示
-* 2020年9月9日現在、Customer Journey Analyticsにアクセスしたり、接続を行うには、Customer Journey Analytics製品プロファイルの管理者として [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理者には次の権限があります。
+* 2020年9月9日現在、Customer Journey Analyticsにアクセスしたり、接続を行うには、 **Customer Journey Analytics製品プロファイル** 」の「 [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理者には、次の権限が必要です。
    * 接続またはデータ表示の作成/更新/削除
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントを更新/削除
    * Workspaceプロジェクトをすべてのユーザーと共有する
-* Customer Journey Analyticsの非管理者（ユーザー）は、表示データの表示や接続はできませんが、フィルター、プロジェクトおよび計算指標を作成できます。
+* Customer Journey Analytics内で製品管理者になることは、接続の作成、更新、削除を行うのに十分ではありません。 Experience Platformデータセットへの接続を作成するには、Experience Platform権限も必要です。 特に、 **Experience Platform製品プロファイル** 次の権限が与えられます。
+   * スキーマの表示
+   * スキーマの管理
+   * ID 名前空間の表示
+   * 表示データセットExperience Platform権限について詳しくは、 [Adobe Experience Platformのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
-### 用語の更新
+### ユーザーアクセス
+
+Customer Journey Analyticsの非管理者（ユーザー）は、表示データの表示や接続はできませんが、フィルター、プロジェクトおよび計算指標を作成できます。
+
+## 用語の更新
 
 CJAのいくつかの機能は、従来のAdobe Analyticsの機能に比べ、業界標準に合わせて名前が変更されました。 更新された用語の一部には、以下が含まれます。
 
