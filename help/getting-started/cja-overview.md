@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の概要
 description: Customer Journey Analytics について
 translation-type: tm+mt
-source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
+source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 82%
@@ -61,7 +61,9 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
    * スキーマの表示
    * スキーマの管理
    * ID 名前空間の表示
-   * 表示データセットExperience Platform権限について詳しくは、 [Adobe Experience Platformのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+   * データセットの表示
+
+Experience Platform権限について詳しくは、 [Adobe Experience Platformのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### ユーザーアクセス
 
