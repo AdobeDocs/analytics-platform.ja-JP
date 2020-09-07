@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 | 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| 異常値検出 | 2020年9月現在のフルサポート |
+| 異常値検出 | 2020 年 9 月現在の完全サポート。 |
 | Attribution IQ | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
@@ -96,6 +96,6 @@ ht-degree: 97%
 * Reports &amp; Analytics のターゲット
 * Reports &amp; Analytics のカレンダーイベント
 * Ad Hoc Analysis
-* Data Warehouseレポート- [!UICONTROL Experience Platformクエリサービス] は、CJAでのこれらの使用例用の新しいインターフェイスになります。
+* Data Warehouse レポート - [!UICONTROL Experience Platform クエリサービス]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。
 * Mobile Services
 * データフィード
