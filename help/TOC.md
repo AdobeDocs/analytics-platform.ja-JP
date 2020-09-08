@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
+source-git-commit: abaa78767bb4329ef02b086752eed9d7a0e827af
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 99%
+source-wordcount: '395'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 99%
       + [アトリビューションモデルとルックバックウィンドウ](analysis-workspace/attribution/models.md)
       + [アルゴリズムアトリビューション](analysis-workspace/attribution/algorithmic.md)
       + [FAQ](analysis-workspace/attribution/faq.md)
-   + Virtual Analyst {#virtual-analyst}
+   + 仮想アナリスト {#virtual-analyst}
       + [仮想アナリストの概要](analysis-workspace/virtual-analyst/overview.md)
       + 異常値検出 {#anomaly-detection}
          + [異常値検出の概要](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
@@ -145,6 +145,7 @@ ht-degree: 99%
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
+   + [データ取り込みの使用例](use-cases/data-ingestion.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
 + [CJA ドキュメントのアップデート](doc-changes.md)
