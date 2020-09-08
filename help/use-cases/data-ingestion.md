@@ -2,9 +2,9 @@
 title: Customer Journey Analytics用のデータ取り込みオプション
 description: データをCustomer Journey Analyticsに取り込む様々な方法を理解する
 translation-type: tm+mt
-source-git-commit: 540b170c3429f04b7f63872b30cbb01852d30179
+source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '515'
 ht-degree: 27%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 27%
 
 # Customer Journey Analytics用のデータ取り込みオプション
 
-データをCustomer Journey Analyticsに取り込むときには、様々な選択肢があります。 伝統的なAdobe Analyticsのデータを移動したいと思う人もいれば、Adobe Experience Platformから直接データを取り込むと思う人もいます。
+データをCustomer Journey Analyticsに取り込むときには、様々な選択肢があります。 伝統的なAdobe Analyticsのデータを移動したいと思う人もいれば、Adobe Experience Platformから直接データを取り込むと思う人もいます。 このリファレンスでは、以下に示す高度な手順について説明します。
 
 ## 伝統的なAdobe Analyticsのデータを取り込む
 
