@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の製品分析
 description: Customer Journey Analytics のランディングページ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
      <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> 更新されたユーザー権限の要件（2020年9月9日現在） </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> 更新されたユーザー権限の要件（2020 年 9 月 9 日現在） </a> </li>
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-usecases/object-arrays.html"> オブジェクトの配列の使用 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-usecases/b2b.html">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics を使い始める</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html">よくある質問</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics の用語集</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics を使い始める</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-faq.html">よくある質問</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics の用語集</a> </li> 
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html">Adobe Analytics API 2.0</a> </li> 
      </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>リリースノート</b> </p> 
