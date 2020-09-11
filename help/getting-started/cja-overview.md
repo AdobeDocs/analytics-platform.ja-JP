@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の概要
 description: Customer Journey Analytics について
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1215'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Customer Journey Analytics の最初のリリースには、Analysis Workspace �
 
 ## CJA とクロスデバイス分析の比較
 
-[クロスデバイス分析](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)：Adobe Experience Platform ID サービスと統合して、Co-op Graph またはプライベートグラフを活用し、デジタルデバイスをどのように人物ｓにマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
+[クロスデバイス分析](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)：Adobe Experience Platform ID サービスと統合して、Co-op Graph またはプライベートグラフを活用し、デジタルデバイスをどのように人物にマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
 
-一方、CJAはAdobe Experience Platformのデータセットと統合し、Analysis Workspaceでのチャネル間の分析を可能にします。 CJA はまだ Co-op またはプライベート ID グラフとは統合されていませんが、bring-your-own-ID（個人 ID の持ち込み）によってデータセットを結合できます。また、これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
+その一方、CJA は、Adobe Experience Platform のデータセットと統合され、Analysis Workspace でのクロスチャネル分析を可能にします。CJA はまだ Co-op またはプライベート ID グラフとは統合されていませんが、bring-your-own-ID（個人 ID の持ち込み）によってデータセットを結合できます。また、これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
 
 ## 主な使用例
 
@@ -53,25 +53,25 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* 2020年9月9日現在、Customer Journey Analyticsにアクセスしたり、接続を行うには、 **Customer Journey Analytics製品プロファイル** 」の「 [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理者には、次の権限が必要です。
-   * 接続またはデータ表示の作成/更新/削除
-   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントを更新/削除
-   * Workspaceプロジェクトをすべてのユーザーと共有する
-* Customer Journey Analytics内で製品管理者になることは、接続の作成、更新、削除を行うのに十分ではありません。 Experience Platformデータセットへの接続を作成するには、Experience Platform権限も必要です。 特に、 **Experience Platform製品プロファイル** 次の権限が与えられます。
+* 2020 年 9 月 9 日現在、Customer Journey Analytics にアクセスする、または接続するには、[Admin Console](https://adminconsole.adobe.com/enterprise/) コンソールの **Customer Journey Analytics 製品プロファイル**&#x200B;に管理者として追加されている必要があります。管理者には、次の権限が必要です。
+   * 接続またはデータ表示の作成／更新／削除をおこなう
+   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントの更新／削除をおこなう
+   * Workspace プロジェクトをすべてのユーザーと共有する
+* 接続の作成、更新、削除をおこなうためには、Customer Journey Analytics で製品管理者であることは十分ではありません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
    * スキーマの管理
    * ID 名前空間の表示
    * データセットの表示
 
-Experience Platform権限について詳しくは、 [Adobe Experience Platformのアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Experience Platform 権限について詳しくは、「[Adobe Experience Platform のアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)」を参照してください。
 
 ### ユーザーアクセス
 
-Customer Journey Analyticsの非管理者（ユーザー）は、表示データの表示や接続はできませんが、フィルター、プロジェクトおよび計算指標を作成できます。
+Customer Journey Analytics の非管理者（ユーザー）は、データビューや接続は表示できませんが、フィルター、プロジェクトおよび計算指標を作成できます。
 
 ## 用語の更新
 
-CJAのいくつかの機能は、従来のAdobe Analyticsの機能に比べ、業界標準に合わせて名前が変更されました。 更新された用語の一部には、以下が含まれます。
+CJA のいくつかの機能は、従来の Adobe Analytics の機能に比べ、業界標準に合わせて名前が変更されました。更新された用語の一部には、以下が含まれます。
 
 * セグメントは「フィルター」になりました。
 * 仮想レポートスイートは、「ビュー」になりました。
@@ -83,7 +83,7 @@ CJAのいくつかの機能は、従来のAdobe Analyticsの機能に比べ、�
 
 ## Adobe Experience Platform で構築されたその他の機能
 
-Customer Journey Analytics は、Adobe Experience Platform に依存する多数の機能の 1 つです。その他のいくつかの機能は、Experience Platform上でも構築されており、データを最大限に活用できます。
+Customer Journey Analytics は、Adobe Experience Platform に依存する多数の機能の 1 つです。Experience Platform には他にも、データを最大限に活用できる複数の機能が備わっています。
 
 Adobe Experience Platform を使用すると、顧客データとコンテンツを任意のシステムから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされた豊富なエクスペリエンスのデザインと配信を大幅に改善できます。プラットフォーム内の顧客データは、スキーマとデータのバッチで構成されるデータセットとして保存されます。プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.translate.html)を参照してください。
 
