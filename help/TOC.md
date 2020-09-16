@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abaa78767bb4329ef02b086752eed9d7a0e827af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 98%
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
-   + [データ取り込みの使用例](use-cases/data-ingestion.md)
+   + [データ取得の使用例](use-cases/data-ingestion.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
 + [CJA ドキュメントのアップデート](doc-changes.md)
