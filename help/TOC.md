@@ -5,6 +5,9 @@ product: adobe analytics
 sub-product: カスタマージャーニー
 index: true
 user-guide-title: Customer Journey Analytics ガイド
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics.
+breadcrumb-title: Customer Journey Analytics Guide
+breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -12,16 +15,16 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: abaa78767bb4329ef02b086752eed9d7a0e827af
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c5f134fc28fd02d58117d72db9afe5ada84cd40
+workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
 
-# Customer Journey Analytics ヘルプ {#using}
+# Customer Journey Analytics ガイド {#using}
 
 + [Customer Journey Analytics の製品分析](getting-started/cja-landing.md)
 + Customer Journey Analytics の概要 {#cja-overview}
