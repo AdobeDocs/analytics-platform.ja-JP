@@ -2,10 +2,10 @@
 title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 33%
 
 ---
 
@@ -46,4 +46,4 @@ ht-degree: 38%
 | 選択範囲からフィルタを作成 | インラインフィルターを作成します。 行を選択し、選択範囲を右クリックして、インラインフィルターを作成します。 このフィルターは、開いているプロジェクトにのみ適用され、CJAフィルターとしては保存されません。 1. 行を選択します。2. 選択範囲を右クリックします。3. 「 *選択範囲からフィルタを作成*. |
 | コンポーネント/新しいフィルター | フィルタビルダを表示します。 詳しくは、 [フィルタビルダ](https://docs.adobe.com/content/help/ja-JP/analytics/components/segmentation/segmentation-workflow/seg-build.html) 」を参照してください。 |
 | 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | イン [キュレーションと共有](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)プロジェクトに適用したフィルターが、受信者の共有分析で使用できる方法を学びます。 |
-| フィルターをディメンションとして使用 | ビデオ：[Analysis Workspace でセグメントをディメンションとして使用する](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
+| フィルターをディメンションとして使用 | ビデオ：Analysis WorkspaceでフィルターをDimensionとして使用<br>>[!VIDEO](https://video.tv.adobe.com/v/23974) |
