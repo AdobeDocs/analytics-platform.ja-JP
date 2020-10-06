@@ -2,19 +2,15 @@
 title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '468'
 ht-degree: 97%
 
 ---
 
 
 # [!UICONTROL コホート分析]とは
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。[!UICONTROL コホート分析は]、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://en.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。
 
@@ -30,13 +26,13 @@ ht-degree: 97%
 
 [!UICONTROL コホート分析]は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべての Adobe Analytics ユーザーが利用できます。
 
-[コホート分析（YouTube）](https://www.youtube.com/watch?v=kqOIYrvV-co&amp;index=45&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（4:36）
+[コホート分析のビデオチュートリアル](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
 >[!IMPORTANT]
 >
 >[!UICONTROL コホート分析]
 >
->は、フィルター不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、回数をサポートしていません。 セグメントで使用できる指標のみが
+>は、セグメント化不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。セグメントで使用できる指標のみが
 >[!UICONTROL コホート分析]で使用できます。一度に 1 つのみ増やすことができます。
 
 ## コホート分析の機能
