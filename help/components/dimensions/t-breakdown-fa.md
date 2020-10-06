@@ -5,10 +5,10 @@ title: ディメンションの分類
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 94%
+source-wordcount: '232'
+ht-degree: 96%
 
 ---
 
@@ -28,15 +28,19 @@ Analysis Workspace のディメンションおよびディメンション項目�
 
    ![手順の結果](assets/fa_data_table_actions.png)
 
-   選択した期間で、ディメンション項目またはオーディエンスセグメント別に指標を分類できます。 より詳細なレベルまで、さらに詳しく調べることもできます。
+   選択した期間で、ディメンション項目またはオーディエンスセグメントで指標を分類できます。より詳細なレベルまで、さらに詳しく調べることもできます。
 
    >[!NOTE]
    >
    >テーブルに表示する分類の数は、200 までに制限されています。この制限は、分類をエクスポートする場合は増加します。
 
-[Analysis Workspace のディメンション（YouTube）](https://www.youtube.com/watch?v=P9W0hhIHhCs&amp;index=12&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（4:54）
+**ビデオ：Analysis WorkspaceのDimension**
 
-[ディメンションの分類（YouTube）](https://www.youtube.com/watch?v=3mQ2HN7-lIc&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=13)（2:02）
+>[!VIDEO](https://video.tv.adobe.com/v/23971)
+
+**ビデオ：Dimensionの分類**
+
+>[!VIDEO](https://video.tv.adobe.com/v/23969)
 
 ## 分類へのアトリビューションモデルの適用
 
