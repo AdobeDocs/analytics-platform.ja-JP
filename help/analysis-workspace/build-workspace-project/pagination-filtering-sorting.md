@@ -3,25 +3,21 @@ description: 'null'
 title: テーブルのページネーション、フィルタリングおよび並べ替え
 uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '92'
+ht-degree: 81%
 
 ---
 
 
 # テーブルのページネーション、フィルタリングおよび並べ替え
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+概要については、次のビデオチュートリアルを参照してください。
 
-概要については、YouTube のこのビデオをご覧ください。
+[Analysis Workspace のテーブルのページネーション、フィルタリングおよび並べ替え](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-[Analysis Workspace のテーブルのページネーション、フィルタリングおよび並べ替え](https://www.youtube.com/watch?v=2zxpRPCGspg)
-
-## アドバンスフィルターオプション
+## アドバンスフィルターオプション {#section_36E92E31442B4EBCB052073590C1F025}
 
 フリーフォームテーブルのディメンションの隣にあるフィルターアイコンをクリックし、「アドバンスを表示」をクリックすると、次の条件を使用してフィルタリングできます。
 
@@ -32,10 +28,10 @@ ht-degree: 100%
 * フレーズを含む
 * いずれの語句も含まない
 * このフレーズを含まない
-* equals
+* 次と等しい
 * 次と等しくない
-* startsWith
-* endsWith
+* 次の語句で始まる
+* 次の語句で終わる
 
 ![](assets/advanced-filter.png)
 
