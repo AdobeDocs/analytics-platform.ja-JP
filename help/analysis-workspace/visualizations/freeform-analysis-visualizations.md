@@ -3,30 +3,26 @@ description: Analysis Workspace のビジュアライゼーションおよびビ
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 98%
+source-wordcount: '1046'
+ht-degree: 95%
 
 ---
 
 
 # ビジュアライゼーションの概要
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
-
 Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。各ビジュアライゼーションには、管理可能な独自の設定があります。ビジュアライゼーションの名前をクリックすると、詳細情報が表示されます。
 
-YouTube ビデオ：[Analysis Workspace のビジュアライゼーションのタイプ](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（2:57）
+ビデオチュートリアル： [Analysis Workspaceの視覚化のタイプ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
 | ビジュアライゼーション名 | 説明 |
-|---|---|
-| [面グラフ](/help/analysis-workspace/visualizations/area.md) | 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 |
+| --- | --- |
+| [面グラフ](/help/analysis-workspace/visualizations/area.md) | 折れ線グラフのように見えますが、線の下に色付きの領域があります。 指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 |
 | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | 1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。 |
 | [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
-| [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。トレンドの変更を簡単に見分けて、それに応じて対応できます |
+| [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | コホートは、特定の期間にわたって共通の特性を共有する人のグループです。コホート分析は、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。トレンドの変更を簡単に見分けて、それに応じて対応できます |
 | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | このビジュアライゼーションは、円グラフと同様に、データを全体の一部または断片として表示します。 |
 | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | Web サイトおよびアプリの顧客パスを表示します。 |
@@ -34,7 +30,7 @@ YouTube ビデオ：[Analysis Workspace のビジュアライゼーションの�
 | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。 |
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。 |
-| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大3つの指標の関係を表示します。 |
+| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大 3 つの指標の関係を表示します。 |
 | [概要番号](/help/analysis-workspace/visualizations/summary-number-change.md) | このビジュアライゼーションは、選択したセルに応じて、合計と概要を表示します。 |
 | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | このビジュアライゼーションでは、選択されているセルに応じて、セルを互いに比較します。 |
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストを Workspace に追加できます。 |
@@ -43,7 +39,7 @@ YouTube ビデオ：[Analysis Workspace のビジュアライゼーションの�
 
 ## ビジュアライゼーションパネル {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-ビジュアライゼーションパネルを表示するには、サイドパネルで「**[!UICONTROL ビジュアライゼーション]**」をクリックします。
+ビジュアライゼーションパネルを表示するには、「 **[!UICONTROL ビジュアライゼーション]** 左のレールに
 
 ![手順の結果](assets/visualizations.png)
 
@@ -60,7 +56,7 @@ Adobe Analytics を使用したことのあるユーザーにとって、大半�
 ![](assets/visualization_settings.png)
 
 | 設定 | 説明 |
-|--- |--- |
+| --- | --- |
 | 割合（％） | 値を割合で表示します。 |
 | 100% の積み重ね | この設定は、積み重ね面、積み重ね棒または積み重ね横棒グラフのビジュアライゼーションを「100% の積み重ね」に変更します。例：![](assets/stacked_100_percent.png) |
 | 凡例を表示 | 数値の概要／変更概要ビジュアライゼーションのフィルター詳細テキストを隠すことができます。 |
@@ -83,7 +79,7 @@ Adobe Analytics を使用したことのあるユーザーにとって、大半�
 ![](assets/right-click_menu.png)
 
 | 設定 | 説明 |
-|--- |--- |
+| --- | --- |
 | コピーしたビジュアライゼーション／パネルを挿入 | コピーした要素をプロジェクト内の別の場所、または完全に別のプロジェクトに貼り付ける（「挿入する」）ことができます。 |
 | ビジュアライゼーション／パネルをコピー | 右クリックしてビジュアライゼーションまたはパネルをコピーできます。 |
 | ビジュアライゼーション／パネルを複製 | 現在のビジュアライゼーションの厳密な複製を作成して、修正できます。 |
@@ -112,4 +108,4 @@ Adobe Analytics を使用したことのあるユーザーにとって、大半�
 1. 新しいラベルテキストを入力します。
 1. **[!UICONTROL Enter]** キーを押して保存します。
 
-このトピックに関する[ビデオへのリンクはこちら](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)です。
+このトピックに関する[ビデオへのリンクはこちら](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html)です。
