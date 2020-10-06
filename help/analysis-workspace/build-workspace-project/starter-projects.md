@@ -3,10 +3,10 @@ description: Workspaceのテンプレート
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
+source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 99%
+source-wordcount: '1395'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 
 これらの事前設定されたテンプレートをそのまま、またはニーズに応じて変更して（例えば指標やビジュアライゼーションを追加または置き換えることで）使用して、新しい名前で保存できます。
 
-[Analysis Workspace での標準テンプレート（YouTube）](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6)（2:46）
+>[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
 
 以下に、利用可能なテンプレートと各テンプレートに関する質問について説明します。
 
@@ -81,9 +81,9 @@ ht-degree: 99%
 
 ### コマース
 
-* **Magento：マーケティングとコマース**：このテンプレートは、マーケティングチャネルアトリビューション別に e コマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによるインサイトを提供します。ビデオの概要については、次を参照してください。
+* **Magento:マーケティングとコマース**:このテンプレートは、マーケティングチャネルの属性によってeコマースコンバージョンを分類し、検索キーワード、ランディングページ、地理的な場所などによってインサイトを提供します。 ビデオの概要については、次を参照してください。
 
->[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+>[!VIDEO](https://video.tv.adobe.com/v/28164)
 
 ### メディア
 
