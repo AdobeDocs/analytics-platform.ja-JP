@@ -3,19 +3,15 @@ description: カレンダーで、日付や日付範囲を指定したり、プ�
 title: カレンダーと日付範囲の概要
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7dc245671d98e63cc4f0d97c1b1fdb11509b7d45
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '375'
+ht-degree: 96%
 
 ---
 
 
 # カレンダーと日付範囲の概要
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 カレンダーで、日付や日付範囲を指定したり、プリセットを選択できます。
 
@@ -27,12 +23,12 @@ ht-degree: 100%
 
 日付（および時間ディメンション）を Workspace プロジェクトにドラッグすることもできます。特定の日、週、月、年または周期的な日付を選択できます。
 
-[Analysis Workspace での日付範囲およびカレンダーの使用（YouTube）](https://www.youtube.com/watch?v=L4FSrxr3SDA&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=28)（4:07）
+[Analysis Workspace での日付範囲およびカレンダーの使用](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html)（4:07）
 
 | 設定 | 説明 |
-|--- |--- |
-| 選択された期間 (日数) | 選択した日／週／月／年。 |
-| 日周期を使用 | 日周期を使用すると、レポートを実行したタイミングに基づいて、一定期間、将来や過去を確認する動的レポートを生成できます。例えば、（「作成日」フィールドに基づく）「先月」に発行されたすべての注文をレポートしたい場合、12 月にレポートを実行すると、11 月に発行された注文が表示されます。同じレポートを 1 月に実行すると、12 月に発行された注文が表示されます。日付のプレビュー：周期的なカレンダーに含まれる期間を示します。開始：本日、今週、今月、今四半期、本年から選択できます。終了：本日、今週、今月、今四半期、本年から選択できます。例については、[こちら](/help/components/date-ranges/custom-date-ranges.md)を参照してください。 |
-| 日付範囲 | プリセット日付範囲を選択できます。最近の 30 日間がデフォルトです。 |
+| --- | --- |
+| 選択された期間 (日数) | 選択された日/週/月/年 |
+| 日周期を使用 | 日周期を使用すると、レポートを実行したタイミングに基づいて、一定期間、将来や過去を確認する動的レポートを生成できます。例えば、（「作成日」フィールドに基づく）「先月」に発行されたすべての注文をレポートしたい場合、12 月にレポートを実行すると、11 月に発行された注文が表示されます。同じレポートを 1 月に実行すると、12 月に発行された注文が表示されます。<ul><li>**[!UICONTROL 日付のプレビュー]**：周期的なカレンダーに含まれる期間を示します。</li><li>**[!UICONTROL 開始]**：本日、今週、今月、今四半期、本年から選択できます。</li><li>**[!UICONTROL 終了]**：本日、今週、今月、今四半期、本年から選択できます。</li></ul>例については、[こちら](/help/components/date-ranges/custom-date-ranges.md)を参照してください。 |
+| 日付範囲 | プリセット日付範囲を選択できます。最近の 30 日間がデフォルトです。**[!UICONTROL 今週／月／四半期／年（今日を除く）]** ：今日の日付の一部を含まない日付範囲から選択できます。 |
 | すべてのパネルに適用 | 現在のパネルだけでなくプロジェクト内の他のすべてのパネルで選択された日付の範囲を変更できます。 |
 | 適用 | 日付範囲をこのパネルにのみ適用します。 |
