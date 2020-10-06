@@ -2,10 +2,10 @@
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
 translation-type: tm+mt
-source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '343'
+ht-degree: 97%
 
 ---
 
@@ -50,5 +50,6 @@ Analysis Workspace のコンポーネントは、指標、ディメンション�
 | 共有 | セグメントにのみ適用します。 |
 | 削除 | セグメントにのみ適用します。 |
 
-[指標、セグメントおよび日付の作成（YouTube）](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)（2:51）
+指標、セグメントおよび日付の作成に関するビデオを視聴します。
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
