@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の概要
-description: Customer Journey Analytics について
-translation-type: ht
-source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
-workflow-type: ht
-source-wordcount: '1215'
-ht-degree: 100%
+description: Customer Journey Analyticsを使用して、Experience Platformのデータと共にAnalysis Workspaceを使用する方法を説明します。
+translation-type: tm+mt
+source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 98%
 
 ---
 
