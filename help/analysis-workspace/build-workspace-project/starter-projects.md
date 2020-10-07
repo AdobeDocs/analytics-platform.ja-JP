@@ -3,7 +3,7 @@ description: Workspaceのテンプレート
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 97%
@@ -59,7 +59,9 @@ ht-degree: 97%
 
 これらの事前設定されたテンプレートをそのまま、またはニーズに応じて変更して（例えば指標やビジュアライゼーションを追加または置き換えることで）使用して、新しい名前で保存できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960)
+
+*(2:46)*
 
 以下に、利用可能なテンプレートと各テンプレートに関する質問について説明します。
 
