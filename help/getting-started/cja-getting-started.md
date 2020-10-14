@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics を使い始める
-description: Customer Journey Analyticsの実装に必要な前提条件とワークフローを理解します。
-translation-type: tm+mt
+description: Customer Journey Analytics を実装するのに必要な前提条件およびワークフローについて把握します。
+translation-type: ht
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics を実装するには、次のワークフローに�
 
 Customer Journey Analytics を利用できる人物は次のとおりです。
 
-* Are Adobe Analytics [Select、Prime、または Ultimate](https://www.adobe.com/jp/analytics/compare-adobe-analytics-packages.html) のお客様
+* Adobe Analytics [Select、Prime、または Ultimate](https://www.adobe.com/jp/analytics/compare-adobe-analytics-packages.html) のお客様
 * [Adobe Experience Platform](https://www.adobe.com/jp/experience-platform.html) 用にプロビジョニングされている
 * Customer Journey Analytics SKU を購入している。
 
