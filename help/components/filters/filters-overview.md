@@ -1,11 +1,11 @@
 ---
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,7 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 フィルタービルダーでフィルターを作成して保存したり、（Workspace で）フォールアウトビジュアライゼーションからフィルターを生成したりできます。また、複数のフィルターをまとめて、積み重ねフィルターとして使用することもできます。
 
 >[!IMPORTANT]
->
-フィルターは、Adobe Analytics では「セグメント」と呼ばれます。Adobe Experience Platformでは [「セグメント」の別の定義](https://docs.adobe.com/content/help/ja-JP/experience-platform/segmentation/home.html).
+>フィルターは、Adobe Analytics では「セグメント」と呼ばれます。Adobe Experience Platform では[「セグメント」の定義が異なる](https://docs.adobe.com/content/help/ja-JP/experience-platform/segmentation/home.html)ので、セグメントを「フィルター」に変更しました。
 
 フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/create-filters.md)や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する[フィルターマネージャー](/help/components/filters/manage-filters.md)が含まれます。
 
@@ -74,7 +73,7 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 
 イベントコンテナは、フィルターに含めるまたは除外するページイベントを定義します。ヒットコンテナは最も範囲の狭いコンテナで、特定のクリックと条件が真になるページビューを識別するのに使用でき、単一のトラッキングコードを表示することや、サイトの特定のセクション内での行動を切り離すことができます。また、アクションが発生したときの特定の値（注文が発生したときのマーケティングチャネルなど）を把握することもできます。
 
-イベントコンテナには、値ベースの単一ページの分類が含まれます。
+イベントコンテナには、単一ページの分類に基づく値が含まれます。
 
 * 製品
 * リスト prop
