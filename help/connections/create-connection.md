@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
+source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 1. **[!UICONTROL データセット ID]**：この ID は自動的に生成されます。
 
-1. **[!UICONTROL タイムスタンプ]**：コンテンツをここに追加
+1. **[!UICONTROL タイムスタンプ]**:イベントデータセットの場合のみ、この設定は、 [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/schema/composition.html)です。
 
