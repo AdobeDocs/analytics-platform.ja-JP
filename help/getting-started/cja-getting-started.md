@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics を使い始める
 description: Customer Journey Analytics を実装するのに必要な前提条件およびワークフローについて把握します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
