@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 100%
 
