@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
+source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1679'
+ht-degree: 97%
 
 ---
 
@@ -114,7 +114,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
    * 接続内にあるすべてのデータセットの履歴データを累積したサイズが 15 億行を超える場合、エラーメッセージに、この量の履歴データを読み込めない旨が示されます。ただし、10 億行の履歴データを含むデータセットを追加し、そのデータを読み込んでから、1 週間後に同じサイズの別のデータセットを追加して履歴データを読み込むと、機能します。
    * 接続内のデータセットに追加される新しいデータを優先させるので、このデータの待ち時間は最も短くなります。
-   * バックフィル（履歴）データの読み込みには時間がかかります。
+   * バックフィル（履歴）データは、読み込み速度が遅くなります（サイズに関係なく、最大13ヶ月のデータ）。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
