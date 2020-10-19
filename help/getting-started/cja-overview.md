@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 translation-type: tm+mt
-source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
+source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 100%
+source-wordcount: '1229'
+ht-degree: 93%
 
 ---
 
@@ -53,11 +53,11 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* 2020 年 9 月 9 日現在、Customer Journey Analytics にアクセスする、または接続するには、[Admin Console](https://adminconsole.adobe.com/enterprise/) コンソールの **Customer Journey Analytics 製品プロファイル**&#x200B;に管理者として追加されている必要があります。管理者には、次の権限が必要です。
+* 2020年9月9日時点で、Customer Journey Analyticsにアクセスしたり、接続を確立するには、 **Customer Journey Analytics製品** 」の「 [Admin Console](https://adminconsole.adobe.com/enterprise/). 製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除をおこなう
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントの更新／削除をおこなう
    * Workspace プロジェクトをすべてのユーザーと共有する
-* 接続の作成、更新、削除をおこなうためには、Customer Journey Analytics で製品管理者であることは十分ではありません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
+* Customer Journey Analytics内だけで製品管理者になっても、接続の作成、更新、削除を行うには不十分です。 Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
    * スキーマの管理
    * ID 名前空間の表示
@@ -67,7 +67,7 @@ Experience Platform 権限について詳しくは、「[Adobe Experience Platfo
 
 ### ユーザーアクセス
 
-Customer Journey Analytics の非管理者（ユーザー）は、データビューや接続は表示できませんが、フィルター、プロジェクトおよび計算指標を作成できます。
+Customer Journey Analyticsの非製品管理者（ユーザー）は、表示データの表示や接続はできませんが、フィルター、プロジェクトおよび計算指標を作成できます。
 
 ## 用語の更新
 
