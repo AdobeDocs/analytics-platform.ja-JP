@@ -1,9 +1,16 @@
 ---
-source-git-commit: 1cddd8624826bddb89c9b362ec91a2c0c30c7a6f
+source-git-commit: ed44f33e545df2e52566bd922fa40d9692df6bf2
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '521'
+ht-degree: 84%
 
 ---
-# Contribute to Customer Jeurney Analyticsドキュメント
+# Customer Journey Analyticsドキュメントに寄稿
+
+| EXL-PR | EXL | プレビュー | アクティブ化 | 公開日 | ヘルプ |
+|--- |--- |--- |--- |--- |--- |
+| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/lastBuild) | [プレビューURL](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 アドビのコミュニティや、ドキュメントチーム外部のアドビ従業員からの投稿をお待ちしています。
 
