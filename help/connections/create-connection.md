@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
 source-wordcount: '1679'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 97%
 
 1. **[!UICONTROL データセット ID]**：この ID は自動的に生成されます。
 
-1. **[!UICONTROL タイムスタンプ]**:イベントデータセットの場合のみ、この設定は、 [!UICONTROL Experience Platform].
+1. **[!UICONTROL タイムスタンプ]**：イベントデータセットの場合のみ、この設定は、[!UICONTROL Experience Platform] のイベントベースのスキーマにある、デフォルトのタイムスタンプフィールドへと自動的に設定されます。
 
 1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/schema/composition.html)です。
 
