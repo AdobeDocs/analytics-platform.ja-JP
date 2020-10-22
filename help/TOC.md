@@ -19,7 +19,7 @@ translation-type: tm+mt
 source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 99%
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
    + [接続の管理](connections/manage-connection.md)
-   + [組み合わされたイベントデータセット](connections/combined-dataset.md)
+   + [組み合わせイベントデータセット](connections/combined-dataset.md)
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
