@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 | VRS コンポーネントのキュレーション | データビューの一部になりました。 |
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
 | GDPR の削除 | GDPR は [!UICONTROL Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータ変更をすべて継承します。 |
-| ユーザー権限／データアクセス制御 | CJAは、Adobe Admin Console製品の管理者とユーザーを区別します。 1)接続またはデータ表示の作成/更新/削除、2)他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新/削除、3) Workspaceプロジェクトをすべてのユーザーと共有できるのは製品管理者のみです |
+| ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
 
 ## サポート（注意が必要）
 
@@ -52,7 +52,7 @@ ht-degree: 93%
 | 機能 | メモ |
 | --- | --- |
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics Data Connector（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
-| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、ターゲット用Analytics(A4T)およびメディアの同時ビューアのパネルはサポートされていません。 |
+| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar は、ADC ベースのデータセットでのみ機能します。ただし、これらのデータが同じ XDM スキーマに厳密に準拠している場合を除きます（前述の製品リストの制限と同様）。 |
 | ボットフィルタリング | Analytics Data Connector（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | 処理ルール | ADC ベースのデータセットの場合、処理ルールは引き続き適用されます。 |
