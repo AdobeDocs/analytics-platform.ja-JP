@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
+source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 98%
+source-wordcount: '1819'
+ht-degree: 84%
 
 ---
 
@@ -100,22 +100,26 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
 ![接続を有効化](assets/create-connection2.png)
 
-1. 接続を有効にするには、次の設定を定義します。
+1. 接続を有効にするには、接続全体（接続内のすべてのデータセット）に対して次の設定を定義します。
 
    | オプション | 説明 |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL 名前接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
-   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてへと読み込まれます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、 [!DNL Experience Platform] のデータセットは、この接続に含まれるすべてインポートまたはバックフィルされます。 今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 1日の平均イベント数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-   **次の点に注意してください。**
+1. クリック **[!UICONTROL データ表示の保存と作成]**. ドキュメントについては、 [データ表示の作成](/help/data-views/create-dataview.md).
 
-   * 接続内にあるすべてのデータセットの履歴データを累積したサイズが 15 億行を超える場合、エラーメッセージに、この量の履歴データを読み込めない旨が示されます。ただし、10 億行の履歴データを含むデータセットを追加し、そのデータを読み込んでから、1 週間後に同じサイズの別のデータセットを追加して履歴データを読み込むと、機能します。
-   * 接続内のデータセットに追加される新しいデータを優先させるので、このデータの待ち時間は最も短くなります。
-   * バックフィル（履歴）データは、読み込み速度が遅くなります（サイズに関係なく、最大13ヶ月のデータ）。
+### 履歴データのバックフィル
 
-1. 「**[!UICONTROL 保存]**」をクリックします。
+**[!UICONTROL 既存のデータをすべて読み込む]** 履歴データをバックフィルできます。 次の点に注意してください。
 
-ワークフローの次の手順は、[データ表示の作成](/help/data-views/create-dataview.md)です。
+* 接続中のデータセットに追加される新しいデータに優先順位を付けるので、この新しいデータの待ち時間は最も短くなります。
+* バックフィル（履歴）データの読み込みには時間がかかります。待ち時間は、 **[!UICONTROL 1日の平均イベント数]** 」を設定します。 例えば、1日に10億行を超えるデータがあり、3年の履歴データが含まれている場合、インポートに数週間かかる可能性があります。 一方、1日に行数が100万行未満で履歴データが1週間ある場合は、1時間未満で済みます。
+* バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
+* Folio Builder [Adobe Analyticsデータコネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) サイズに関係なく、最大13ヶ月のデータを読み込みます。
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
