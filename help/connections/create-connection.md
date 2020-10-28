@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
+source-git-commit: f1dcbd209a9b523db1c18ad0d81fcca0b7877a19
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 84%
+source-wordcount: '1879'
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
    | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、 [!DNL Experience Platform] のデータセットは、この接続に含まれるすべてインポートまたはバックフィルされます。 今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。関連項目 [履歴データのバックフィル](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下&#x200B;<br>**この接続を保存すると、この設定は変更できなくなります。** |
-   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために このオプションの選択肢は次のとおりです。<br>![日々のイベント](assets/daily_size.png) |
+   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 ドロップダウンメニューから1つのオプションを選択します。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために |
 
 1. クリック **[!UICONTROL データ表示の保存と作成]**. ドキュメントについては、 [データ表示の作成](/help/data-views/create-dataview.md).
 
@@ -117,6 +117,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
 **[!UICONTROL 既存のデータをすべて読み込む]** 履歴データをバックフィルできます。 次の点に注意してください。
 
+* バックフィル（履歴データのインポート）の制限を解除しました。 以前は、最大25億行までバックフィルでき、その他の場合はエンジニアリングの関与が必要でした。 今後は、独自にデータをバックフィルできますが、無制限です。
 * 接続中のデータセットに追加される新しいデータに優先順位を付けるので、この新しいデータの待ち時間は最も短くなります。
 * バックフィル（履歴）データの読み込みには時間がかかります。待ち時間は、 **[!UICONTROL 1日の平均イベント数]** 」を設定します。 例えば、1日に10億行を超えるデータがあり、3年の履歴データが含まれている場合、インポートに数週間かかる可能性があります。 一方、1日に行数が100万行未満で履歴データが1週間ある場合は、1時間未満で済みます。
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
