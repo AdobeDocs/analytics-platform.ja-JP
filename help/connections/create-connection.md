@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 619eaeabfbd0fb6a7205488075c1c9cfb0fd5a26
+source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
 workflow-type: tm+mt
 source-wordcount: '1844'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -109,7 +109,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
    | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、 [!DNL Experience Platform] のデータセットは、この接続に含まれるすべてインポートまたはバックフィルされます。 今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。関連項目 [履歴データのバックフィル](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下&#x200B;<br>**この接続を保存すると、この設定は変更できなくなります。** |
-   | [!UICONTROL 1日の平均イベント数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために このオプションの選択肢は次のとおりです。 ![日々のイベント](assets/daily_size.png) |
+   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために このオプションの選択肢は次のとおりです。<br>![日々のイベント](assets/daily_size.png) |
 
 1. クリック **[!UICONTROL データ表示の保存と作成]**. ドキュメントについては、 [データ表示の作成](/help/data-views/create-dataview.md).
 
