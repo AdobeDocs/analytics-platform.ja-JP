@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '410'
 ht-degree: 100%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 100%
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
    + Workspace プロジェクトの構築 {#build-workspace-project}
       + [プロジェクトの作成 - 概要](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [プロジェクトの保存](analysis-workspace/build-workspace-project/save-projects.md)
       + [テンプレート](analysis-workspace/build-workspace-project/starter-projects.md)
       + 列および行の設定 {#column-row-settings}
          + [列設定](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -94,13 +95,13 @@ ht-degree: 100%
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーションおよび共有 {#curate-share}
-      + [Workspace プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
-      + [Workspace プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
+      + [共有メニュー](analysis-workspace/curate-share/send-schedule-files.md)
+      + [プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
+      + [プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](analysis-workspace/curate-share/shareable-links.md)
-      + [表示のみの Workspace プロジェクト](analysis-workspace/curate-share/view-only-projects.md)
+      + [表示専用プロジェクト](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](analysis-workspace/curate-share/download-send.md)
-      + [プロジェクトファイルの共有およびスケジュール](analysis-workspace/curate-share/send-schedule-files.md)
-      + [ファイルの送信 - プロジェクトの配信スケジュールの設定](analysis-workspace/curate-share/t-schedule-report.md)
+      + [プロジェクトのスケジュール](analysis-workspace/curate-share/t-schedule-report.md)
       + [スケジュール済みプロジェクトマネージャー](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [アトリビューションの概要](analysis-workspace/attribution/overview.md)
