@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 82%
+source-wordcount: '1957'
+ht-degree: 79%
 
 ---
 
@@ -109,7 +109,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
    | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、 [!DNL Experience Platform] のデータセットは、この接続に含まれるすべてインポートまたはバックフィルされます。 今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。関連項目 [履歴データのバックフィル](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下&#x200B;<br>**この接続を保存すると、この設定は変更できなくなります。** |
-   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 ドロップダウンメニューから1つのオプションを選択します。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために クエリは次のようになります。<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 ドロップダウンメニューから1つのオプションを選択します。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために<br>以下の「日別イベント数の平均計算」を参照してください。 |
 
 1. クリック **[!UICONTROL データ表示の保存と作成]**. ドキュメントについては、 [データ表示の作成](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
 * Folio Builder [Adobe Analyticsデータコネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) サイズに関係なく、最大13ヶ月のデータを読み込みます。
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### 日別イベント数の平均を計算
+
+この計算は、接続内のすべてのデータセットに対して行う必要があります。
+
+1. 移動先 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 新しいクエリを作成します。
+
+1. クエリは次のようになります。<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* この例では、「analytics_demo_data」がデータセットの名前です。
+* を実行します。 `Show Tables` AEPに存在するすべてのデータセットを表示するクエリ。
