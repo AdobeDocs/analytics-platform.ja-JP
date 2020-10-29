@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '407'
 ht-degree: 100%
 
 ---
@@ -102,7 +102,6 @@ ht-degree: 100%
       + [表示専用プロジェクト](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](analysis-workspace/curate-share/download-send.md)
       + [プロジェクトのスケジュール](analysis-workspace/curate-share/t-schedule-report.md)
-      + [スケジュール済みプロジェクトマネージャー](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [アトリビューションの概要](analysis-workspace/attribution/overview.md)
       + [アトリビューションモデルとルックバックウィンドウ](analysis-workspace/attribution/models.md)
