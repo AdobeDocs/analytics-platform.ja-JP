@@ -1,17 +1,17 @@
 ---
 description: Workspace でのプロジェクト共有とプロジェクトの役割
 keywords: Analysis Workspace sharing
-title: Workspace プロジェクトの共有
+title: プロジェクトの共有
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 94%
+source-wordcount: '1100'
+ht-degree: 100%
 
 ---
 
 
-# Workspace プロジェクトの共有
+# プロジェクトの共有
 
 共有機能を使用すると、プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。適用した[キュレーション](curate.md)は、受信者がプロジェクトを開くと反映されます。
 
@@ -30,7 +30,7 @@ ht-degree: 94%
 
 ### 役割が割り当てられていません（プロジェクトリンク受信者）
 
-受信者にロールが割り当てられておらず、 [link](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) をプロジェクト(**[!UICONTROL 共有]>[!UICONTROL プロジェクトリンクの取得]**)の場合、デフォルトでロールに配置されます。 管理者は&#x200B;**[!UICONTROL 編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL 複製]**&#x200B;の役割を受け取ります。
+受信者に役割が割り当てられていないがプロジェクトへの[リンク](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)を受け取った場合（**[!UICONTROL 共有]／[!UICONTROL プロジェクトリンクを取得]**）、そのユーザーはデフォルトで役割に配置されます。管理者は&#x200B;**[!UICONTROL 編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL 複製]**&#x200B;の役割を受け取ります。
 
 ### 複数の役割の割り当て
 
@@ -51,7 +51,7 @@ ht-degree: 94%
 1. （オプション）埋め込みプロジェクトコンポーネント（セグメント、計算指標、日付範囲）をすべての受信者と共有します。共有すると、これらのコンポーネントは受信者の Workspace のコンポーネントドロップダウンに表示されます。この設定は持続しないのでご注意ください。これは、共有時の一回限りのアクションです。
 1. （オプション）このページを受信者のランディングページとして設定します。
 この設定は持続しません。共有時の一回限りのアクションです。
-1. 「共有」をクリックします。「**[!UICONTROL キュレーションと共有]**」をクリックして、プロジェクトのキュレーションを自動的に適用することもできます。プロジェクトが既に共有されている場合は、**[!UICONTROL 更新]**／**[!UICONTROL キュレーションと更新]**&#x200B;というボタンが表示されます。[プロジェクトのキュレーションの詳細](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html)を表示します。
+1. 「共有」をクリックします。「**[!UICONTROL キュレーションと共有]**」をクリックして、プロジェクトのキュレーションを自動的に適用することもできます。プロジェクトが既に共有されている場合は、**[!UICONTROL 更新]**／**[!UICONTROL キュレーションと更新]**&#x200B;というボタンが表示されます。[プロジェクトのキュレーションの詳細](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html)を表示します。
 
 ![](assets/share-proj-modal.png)
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 
 ## プロジェクトリンクの共有 {#Links}
 
-プロジェクトへのリンクは、**[!UICONTROL 共有]／[!UICONTROL プロジェクトリンクを取得]**&#x200B;で取得できます。クリックすると、受信者はプロジェクトにランディングする前にログインする必要があります。受信者が役割に配置されていない場合は、デフォルトの役割が割り当てられます。管理者は&#x200B;**[!UICONTROL 編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL 複製]**&#x200B;の役割を受け取ります。[詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) Workspaceプロジェクトへの共有可能なリンクの作成について説明します。
+プロジェクトへのリンクは、**[!UICONTROL 共有]／[!UICONTROL プロジェクトリンクを取得]**&#x200B;で取得できます。クリックすると、受信者はプロジェクトにランディングする前にログインする必要があります。受信者が役割に配置されていない場合は、デフォルトの役割が割り当てられます。管理者は&#x200B;**[!UICONTROL 編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL 複製]**&#x200B;の役割を受け取ります。Workspace プロジェクトへの共有可能なリンクを作成する方法について[詳しく説明](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)します。
 
 ## プロジェクトマネージャーでプロジェクトを共有する {#Manager}
 
