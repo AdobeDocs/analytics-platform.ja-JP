@@ -85,7 +85,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 | オプション | 説明 |
 |---|---|
 | [!UICONTROL プライマリ ID 名前空間を使用] | CJA は行ごとに、primary=true 属性でマークされた ID を ID マップで検索し、その行のユーザー ID として使用します。これは、これがパーティションの Experience Platform で使用される主キーであることを意味します。また、CJA の訪問者 ID としての使用の主な候補でもあります（CJA 接続でのデータセットの設定方法に応じて異なります）。 |
-| [!UICONTROL 名前空間] | (このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます)。ID 名前空間は [Adobe Experience Platform ID サービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/identity/namespaces.html)のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
+| [!UICONTROL 名前空間] | (このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます)。ID 名前空間は [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
 
 ### ID マップのエッジケース
 
