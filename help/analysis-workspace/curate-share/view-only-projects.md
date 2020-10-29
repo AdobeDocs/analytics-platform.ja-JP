@@ -3,19 +3,15 @@ description: Workspace の表示のみのプロジェクト
 keywords: View-only projects
 title: 表示専用プロジェクト
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---
 
 
 # 表示専用プロジェクト
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 [プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis Workspace、または Adobe Analytics の一般的な知識が低いユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用したい場合には、この方法が望ましい場合があります。
 
@@ -40,7 +36,7 @@ ht-degree: 100%
 表示のみのプロジェクトで有効になっているインタラクションのいくつかは、次のとおりです。
 
 | 面グラフ | 有効な操作 |
-|---|---|
+| --- | --- |
 | フリーフォームテーブル | <ul><li>ページネーションと並べ替え</li><li>ホバリング</li><li>リンクされたビジュアライゼーションを更新するセルの選択</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>右クリックしてクリップボードにコピー</li></ul> |
 | ビジュアライゼーション | <ul><li>クリックして凡例のオン／オフを切り替え</li><li>ホバリング</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>折りたたみ／展開</li><li>フロー — フローノードを展開</li><li>マップ — ズーム</li></ul> |
 | パネル | <ul><li>インタラクティブドロップダウンフィルター</li><li>右クリックしてパネルリンクを取得</li><li>折りたたみ／展開</li></ul> |
