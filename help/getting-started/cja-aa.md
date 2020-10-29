@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -51,10 +51,10 @@ ht-degree: 100%
 
 | 機能 | メモ |
 | --- | --- |
-| 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics Data Connector（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
+| 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar は、ADC ベースのデータセットでのみ機能します。ただし、これらのデータが同じ XDM スキーマに厳密に準拠している場合を除きます（前述の製品リストの制限と同様）。 |
-| ボットフィルタリング | Analytics Data Connector（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
+| ボットフィルタリング | Analytics コネクタ（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | 処理ルール | ADC ベースのデータセットの場合、処理ルールは引き続き適用されます。 |
 | デバイス間での ID のステッチ | お客様は、クエリサービスを通じて、データの「1 回限り」のステッチに制限されているか、現在、[!UICONTROL Experience Platform] データ取り込みの前に、このロジックをデータに適用する必要があります。 |
 
@@ -95,6 +95,6 @@ ht-degree: 100%
 * Reports &amp; Analytics のターゲット
 * Reports &amp; Analytics のカレンダーイベント
 * Ad Hoc Analysis
-* Data Warehouse レポート - [!UICONTROL Experience Platform クエリサービス]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。
+* Data Warehouse レポート - [!UICONTROL Experience Platform Query Service]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。
 * Mobile Services
 * データフィード
