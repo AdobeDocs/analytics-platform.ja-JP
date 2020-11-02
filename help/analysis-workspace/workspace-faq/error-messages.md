@@ -1,16 +1,16 @@
 ---
-description: ' Analysis Workspace とその関連コンポーネントに関する既知の制限のリスト'
-title: Analysis Workspace の既知の制限
+description: Analysis Workspaceおよびその関連コンポーネントのエラーメッセージのリスト
+title: エラーメッセージ
 translation-type: tm+mt
-source-git-commit: 3d3620ef9180688b6216be0c930769e0f836370a
+source-git-commit: 130dd81b580a8a011d24401918c9cb1d6bb545e7
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 100%
+source-wordcount: '326'
+ht-degree: 96%
 
 ---
 
 
-# 一般的なエラーメッセージ
+# エラーメッセージ
 
 Analysis Workspace の操作中に、パフォーマンスにも影響を与えるエラーが発生することがあります。以下に、最も一般的なエラータイプ、エラーの発生理由、および実行可能な最適化を示します。
 
