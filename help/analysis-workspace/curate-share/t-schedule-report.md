@@ -3,15 +3,19 @@ description: 電子メールを使用して Analysis Workspace を送信した�
 keywords: Analysis Workspace
 title: プロジェクトのスケジュール
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '503'
 ht-degree: 100%
 
 ---
 
 
 # プロジェクトのスケジュール
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信者に電子メールで Analysis Workspace プロジェクトを送信できます。ファイルは CSV 形式または PDF 形式で送信できます。
 
