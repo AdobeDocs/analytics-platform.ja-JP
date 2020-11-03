@@ -3,15 +3,19 @@ description: Analysis Workspaceからデータをダウンロードするには�
 title: PDF ファイルまたは CSV ファイルのダウンロード
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 9%
+source-wordcount: '1022'
+ht-degree: 12%
 
 ---
 
 
 # PDF ファイルまたは CSV ファイルのダウンロード
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspaceからデータをエクスポートする方法は、ツール以外で分析するデータのセットと、その情報を受け取る必要があるユーザーに応じて異なります。 書き出されたデータは、コピーされたデータ、CSV、PDFファイルの形式にすることができます。 通常、ファイルにビジュアライゼーションを含める場合はPDFをお勧めします。プレーンテキストデータを含める場合はCSV（またはコピーしたデータ）をお勧めします。
 
