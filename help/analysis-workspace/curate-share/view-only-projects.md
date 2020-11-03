@@ -3,15 +3,19 @@ description: Workspace の表示のみのプロジェクト
 keywords: View-only projects
 title: 表示専用プロジェクト
 translation-type: tm+mt
-source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '281'
 ht-degree: 100%
 
 ---
 
 
 # 表示専用プロジェクト
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 [プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis Workspace、または Adobe Analytics の一般的な知識が低いユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用したい場合には、この方法が望ましい場合があります。
 
