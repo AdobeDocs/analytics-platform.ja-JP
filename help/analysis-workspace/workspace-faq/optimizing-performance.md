@@ -3,15 +3,19 @@ description: Workspace のパフォーマンスに影響する要因と実行で
 title: Analysis Workspace のパフォーマンス要因と最適化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: fb7738a47818e62e8f90b9dd9e4c1abe842214d8
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1839'
 ht-degree: 100%
 
 ---
 
 
 # [!UICONTROL Analysis Workspace のパフォーマンス]の最適化
+
+>[!NOTE]
+>
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace のプロジェクトのパフォーマンスは、様々な要因の影響を受けます。プロジェクトを最適な方法で計画および構築できるよう、プロジェクトを作成する前にそれらの要因を把握しておくことが重要です。このページでは、パフォーマンスに影響を与える要因と、Analysis Workspace でのピークパフォーマンスを確保するために実施できる最適化のリストを示します。
 
