@@ -1,11 +1,11 @@
 ---
 title: アトリビューションの概要
-description: 成功イベントのクレジットを複数のディメンション項目に関連付けるという概念。
+description: 成功イベントのクレジットを複数のディメンション項目に関連付ける概念。
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。 次に例を示します。
+アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。次に例を示します。
 
 1. サイトの訪問者が、いずれかの商品ページへの有料検索リンクをクリックします。製品を買い物かごに追加しますが、購入しません。
 2. 次の日に、訪問者は友達の 1 人からのソーシャルメディアの投稿を見てリンクをクリックし、購入を完了します。
@@ -45,6 +45,6 @@ Adobe Analytics を使用すると、以下が可能になるので、アトリ�
 Attribution IQ は、次の機能で構成されます。
 
 * [アトリビューションパネル](../c-panels/attribution.md)：任意のディメンションと指標を使用して、様々なアトリビューションモデルとすばやく比較できます。
-* [指標へのアトリビューションの適用](../build-workspace-project/column-row-settings/column-settings.md)：プロジェクト内の任意の指標にデフォルト以外のアトリビューションを使用します。
+* [指標へのアトリビューションの適用](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)：プロジェクト内の任意の指標にデフォルト以外のアトリビューションを使用します。
 * [分類へのアトリビューションの適用](/help/components/dimensions/t-breakdown-fa.md)：分類にデフォルト以外のアトリビューションを使用します。
 * [アトリビューションモデルの比較](/help/components/apply-create-metrics.md)：指標ごとに異なるアトリビューションモデルがどのように比較されるかをすばやく確認できます。
