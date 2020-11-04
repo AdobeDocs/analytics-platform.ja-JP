@@ -1,23 +1,21 @@
 ---
 description: Analysis Workspace で使用できるキーボード操作、ショートカットキー、ポイント＆クリックの動作です。
 keywords: Analysis Workspace
-title: Analysis Workspaceで利用可能なホットキー（ショートカット）
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: ホットキー（ショートカット）
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 73%
+source-wordcount: '306'
+ht-degree: 98%
 
 ---
 
 
-# Analysis Workspaceで利用可能なホットキー（ショートカット）
+# ホットキー（ショートカット）
 
-Analysis Workspaceでは、シームレスなナビゲーション、分析、民主化のためのホットキー（キーボードショートカット）が利用できます。
+Analysis Workspace では、シームレスなナビゲーション、分析、民主化のためのホットキー（キーボードショートカット）が利用できます。
 
-注意： `CTRL` = Windowsおよび `command` = Mac
+注： `CTRL` = Windows および `command` = Mac
 
 ## ナビゲーション操作
 
@@ -28,10 +26,10 @@ Analysis Workspaceでは、シームレスなナビゲーション、分析、�
 | パネルウィンドウに移動 | Alt + Shift + 1 |
 | ビジュアライゼーションウィンドウに移動 | Alt + Shift + 2 |
 | コンポーネントウィンドウに移動 | Alt + Shift + 3 |
-| すべてのパネルを折りたたむ/展開する | Alt + M |
-| アクティブパネルを折りたたむ/展開する | Alt + Ctrl + M |
-| 次のパネルに移動 | alt +右キー |
-| 前のパネルに移動 | alt +左キー |
+| すべてのパネルを折りたたむ／展開 | Alt + M |
+| アクティブパネルを折りたたみ／展開 | Alt + Ctrl + M |
+| 次のパネルに移動 | Alt +右キー |
+| 前のパネルに移動 | Alt +左キー |
 
 ## 分析の操作
 
@@ -54,7 +52,7 @@ Analysis Workspaceでは、シームレスなナビゲーション、分析、�
 
 | アクション | ショートカット |
 |---|---|
-| ターゲット用の新しいAnalyticsパネル | Alt + G |
+| 新しい Analytics for Target パネル | Alt + G |
 | 新しいアトリビューションパネル | Alt + E |
 | 新しい空のパネル | Alt + B |
 | 新しいフリーフォームパネル | Alt + A |
