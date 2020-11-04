@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
+source-git-commit: 1a1b439f4b2c8d7a03dd6431edd5271fc5af0b18
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 99%
 
 ---
 
@@ -48,20 +48,20 @@ ht-degree: 100%
       + [プロジェクトの作成 - 概要](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの保存](analysis-workspace/build-workspace-project/save-projects.md)
       + [テンプレート](analysis-workspace/build-workspace-project/starter-projects.md)
-      + 列および行の設定 {#column-row-settings}
-         + [列設定](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [行設定](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [動的項目と静的項目](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [「元に戻す」および「やり直し」の設定](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [Analysis Workspace で使用できるホットキー](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [ホットキー（ショートカット）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](analysis-workspace/build-workspace-project/view-density.md)
-      + [Workspace の合計](analysis-workspace/build-workspace-project/workspace-totals.md)
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーションの概要](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [フリーフォームテーブル](analysis-workspace/visualizations/freeform-table.md)
+      + フリーフォームテーブル {#freeform-table}
+         + [フリーフォームテーブル](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + 列および行の設定 {#column-row-settings}
+            + [列設定](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [行設定](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [動的項目と静的項目](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [Workspace の合計](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
          + [コホート分析とは](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [コホート分析レポートの設定](analysis-workspace/visualizations/cohort-table/t-cohort.md)
