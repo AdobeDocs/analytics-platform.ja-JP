@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 79%
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 | オプション | 説明 |
 |---|---|
 | [!UICONTROL プライマリ ID 名前空間を使用] | CJA は行ごとに、primary=true 属性でマークされた ID を ID マップで検索し、その行のユーザー ID として使用します。これは、これがパーティションの Experience Platform で使用される主キーであることを意味します。また、CJA の訪問者 ID としての使用の主な候補でもあります（CJA 接続でのデータセットの設定方法に応じて異なります）。 |
-| [!UICONTROL 名前空間] | (このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます)。ID 名前空間は [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
+| [!UICONTROL 名前空間] | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
 
 ### ID マップのエッジケース
 
@@ -100,7 +100,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
 ![接続を有効化](assets/create-connection2.png)
 
-1. 接続を有効にするには、接続全体（接続内のすべてのデータセット）に対して次の設定を定義します。
+1. 接続を有効にするには、接続全体（接続にあるすべてのデータセット）について次の設定を定義します。
 
    | オプション | 説明 |
    | --- | --- |
@@ -108,20 +108,20 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
-   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、 [!DNL Experience Platform] のデータセットは、この接続に含まれるすべてインポートまたはバックフィルされます。 今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的に読み込まれるようになります。関連項目 [履歴データのバックフィル](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下&#x200B;<br>**この接続を保存すると、この設定は変更できなくなります。** |
-   | [!UICONTROL 毎日のイベントの平均数] | インポートする1日のイベント（新しいデータ）の平均数を指定する必要があります **と** バックフィルデータ)を参照してください。 ドロップダウンメニューから1つのオプションを選択します。 これにより、Adobeはこのデータに十分な領域を割り当てることができます。<br>会社がインポートする日別イベントの平均数がわからない場合は、 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) を調べるために<br>以下の「日別イベント数の平均計算」を参照してください。 |
+   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 毎日のイベントの平均数] | 接続にあるすべてのデータセットについて、インポートする毎日のイベント（新しいデータ&#x200B;**と**&#x200B;バックフィルデータ）の平均数を指定する必要があります。ドロップダウンメニューから 1 つのオプションを選択します。これにより、このデータに十分な領域を割り当てることができます。<br>会社で毎日インポートされるイベントの平均数が不明な場合は、[Adobe Experience Platform クエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html)で簡単な SQL クエリを実行して調べることができます。<br>以下の「日別イベント数の平均計算」を参照してください。 |
 
-1. クリック **[!UICONTROL データ表示の保存と作成]**. ドキュメントについては、 [データ表示の作成](/help/data-views/create-dataview.md).
+1. 「**[!UICONTROL データビューを保存して作成]**」をクリックします。ドキュメントについては、[データビューの作成](/help/data-views/create-dataview.md)を参照してください。
 
 ### 履歴データのバックフィル
 
-**[!UICONTROL 既存のデータをすべて読み込む]** 履歴データをバックフィルできます。 次の点に注意してください。
+「**[!UICONTROL 既存のすべてのデータをインポート]**」を実行すると、履歴データをバックフィルできます。次の点に注意してください。
 
-* バックフィル（履歴データのインポート）の制限を解除しました。 以前は、最大25億行までバックフィルでき、その他の場合はエンジニアリングの関与が必要でした。 今後は、制限なく独自にデータをバックフィルできます。
-* 接続中のデータセットに追加される新しいデータに優先順位を付けるので、この新しいデータの待ち時間は最も短くなります。
-* バックフィル（履歴）データの読み込みには時間がかかります。待ち時間は、 **[!UICONTROL 1日の平均イベント数]** 」を設定します。 例えば、1日に10億行を超えるデータがあり、3年の履歴データが含まれている場合、インポートに数週間かかる可能性があります。 一方、1日に行数が100万行未満で履歴データが1週間ある場合は、1時間未満で済みます。
+* バックフィル（履歴データのインポート）の制限が解除されました。以前は、ユーザー自身でバックフィルできるのは最大 25 億行までで、それ以上バックフィルするには、エンジニアリングチームの関与が必要でした。今後は、制限なく独自にデータをバックフィルできます。
+* 接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。
+* バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、現在の履歴データの量と、選択した「**[!UICONTROL 毎日のイベントの平均数]**」設定の両方に左右されます。例えば、1 日あたり 10 億行を超えるデータと 3 年分の履歴データがある場合は、インポートに数週間かかる可能性があります。一方、1 日あたり 100 万行未満のデータと 1 週間分の履歴データがある場合は、1 時間未満で済みます。
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
-* Folio Builder [Adobe Analyticsデータコネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) サイズに関係なく、最大13ヶ月のデータを読み込みます。
+* [Adobe Analytics コネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)では、サイズに関係なく、最大 13 か月分のデータをインポートします。
 
 ### 日別イベント数の平均を計算
 
