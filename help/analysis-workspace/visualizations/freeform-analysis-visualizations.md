@@ -3,7 +3,7 @@ description: Analysis Workspace のビジュアライゼーションおよびビ
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 95%
@@ -26,7 +26,7 @@ Workspace オファーには、棒グラフ、ドーナツグラフ、ヒスト�
 | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | このビジュアライゼーションは、円グラフと同様に、データを全体の一部または断片として表示します。 |
 | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | Web サイトおよびアプリの顧客パスを表示します。 |
-| [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。 |
+| [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。 |
 | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。 |
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。 |
