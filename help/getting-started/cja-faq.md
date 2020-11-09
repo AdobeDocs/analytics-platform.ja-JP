@@ -2,9 +2,9 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 translation-type: tm+mt
-source-git-commit: 830e7d71ad38539d1a73fe2df9f8886956f57acc
+source-git-commit: 1f8526e0b48e334a62776eb2ca4fbf09febf4dd4
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1296'
 ht-degree: 41%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 41%
 | スキーマの削除( [!UICONTROL Adobe Experience Platform]ですが、このスキーマに関連付けられているデータセットはありませんか。 | [!UICONTROL Adobe Experience Platform] は、1つ以上のデータセットが関連付けられているスキーマの削除を許可しません。 ただし、適切な権限セットを持つ管理者は、まずデータセットを削除してからスキーマを削除できます。 |
 | 次の場所でのデータセットの削除 [!UICONTROL Adobe Experience Platform]? | AEPでデータセットを削除すると、そのデータセットからそのデータセットを含むすべてのConnectionsへのデータフローが停止します。 データセットのデータは、関連付けられたCJA接続から自動的に削除されません。 |
 | 次の場所でのデータセットの削除 [!UICONTROL Customer Journey Analytics]? | 現在、保存された接続内のデータセットを削除することはできません。 接続全体を削除して開始を終了する必要があります。 (ただし、 [!UICONTROL Adobe Experience Platform].) |
-| データセットからのバッチの削除( [!UICONTROL Adobe Experience Platform])? | バッチがAEPデータセットから削除された場合、そのバッチを含むCJA接続からも、同じバッチが削除されます。 |
+| データセットからのバッチの削除( [!UICONTROL Adobe Experience Platform])? | バッチが [!UICONTROL Adobe Experience Platform] データセットに追加した場合、同じバッチが、その特定のバッチを含むCJA接続から削除されます。  CJAには、 [!UICONTROL Adobe Experience Platform]. |
 | バッチの削除 **摂取中に** into [!UICONTROL Customer Journey Analytics]? | データセットにバッチが1つしかない場合、そのバッチのデータもデータの一部も [!UICONTROL Customer Journey Analytics]. 取り込みがロールバックされます。 例えば、データセットに5つのバッチが含まれ、そのうち3つがデータセットの削除時に既に取り込まれている場合、これら3つのバッチのデータは、 [!UICONTROL Customer Journey Analytics]. |
 | 次の場所での接続の削除 [!UICONTROL Customer Journey Analytics]? | 次のことを示すエラーメッセージが表示されます。<ul><li>削除した接続に対して作成されたデータ表示は、機能しなくなります。</li><li> 同様に、削除した接続のデータ表示に依存するWorkspaceプロジェクトは動作しなくなります。</li></ul> |
 | データ表示の削除( [!UICONTROL Customer Journey Analytics]? | エラーメッセージは、この削除されたデータ表示に依存するWorkspaceプロジェクトが動作しなくなることを示します。 |
