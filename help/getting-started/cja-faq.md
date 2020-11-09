@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 translation-type: tm+mt
-source-git-commit: b0069e0f3528942620a6a69aaae1447f7452956f
+source-git-commit: 3b3d0b0858d559e94f1bed6a31a63b018ed32a23
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 40%
@@ -55,15 +55,14 @@ ht-degree: 40%
 
 削除に関しては、次の6つのコンポーネントが関心を持ちます。サンドボックス、スキーマ、データセット、接続、データ表示、Workspaceプロジェクト。 次に、これらのコンポーネントの削除に関して考えられるシナリオを示します。
 
-| 誰かが… | こうなる… |
+| もし私が… | こうなる… |
 | --- | --- |
-| サンドボックスを [!UICONTROL Adobe Experience Platform]? | サンドボックスを削除すると、 [!UICONTROL Customer Journey Analytics] そのサンドボックス内のデータセットへの接続。 ただし、CJA内のデータセットは現在は削除されません。 |
-| スキーマを [!UICONTROL Adobe Experience Platform]ですが、このスキーマに関連付けられているデータセットはありませんか。 | [!UICONTROL Adobe Experience Platform] は、1つ以上のデータセットが関連付けられているスキーマの削除を許可しません。 ただし、適切な権限セットを持つ管理者は、まずデータセットを削除してからスキーマを削除できます。 |
-| データセットを [!UICONTROL Adobe Experience Platform]? | ～には通知はない。 [!UICONTROL Customer Journey Analytics];ただし、ストリーミングデータを有効にした場合、データセットが削除された後に新しいデータが取り込まれることはありません。<br>つまり、 **[!UICONTROL この接続の新しいデータセットをすべて自動的にインポートします（今日から）]** 接続が有効になっている場合、データセットが削除された後、新しいデータが入ってこなくなります。 |
-| データセットを [!UICONTROL Customer Journey Analytics]? | 現在、保存された接続内のデータセットを削除することはできません。 接続全体を削除して開始を終了する必要があります。 (ただし、 [!UICONTROL Adobe Experience Platform].) |
-| データセット( [!UICONTROL Adobe Experience Platform])? | バッチが既に [!UICONTROL Customer Journey Analytics], [!UICONTROL Customer Journey Analytics] バッチが削除されたことを現在認識していません。 バッチが取り込まれていない場合は、 [!UICONTROL Adobe Experience Platform]. |
-| バッチを削除します **摂取中に** into [!UICONTROL Customer Journey Analytics]? | データセットにバッチが1つしかない場合、そのバッチのデータもデータの一部も [!UICONTROL Customer Journey Analytics]. 取り込みがロールバックされます。 例えば、データセットに5つのバッチが含まれ、そのうち3つがデータセットの削除時に既に取り込まれている場合、これら3つのバッチのデータは、 [!UICONTROL Customer Journey Analytics]. |
-| 接続を [!UICONTROL Customer Journey Analytics]? | 次のことを示すエラーメッセージが表示されます。<ul><li>削除した接続に対して作成されたデータ表示は、機能しなくなります。</li><li> 同様に、削除した接続のデータ表示に依存するWorkspaceプロジェクトは動作しなくなります。</li></ul> |
-| データ表示を [!UICONTROL Customer Journey Analytics]? | エラーメッセージは、この削除されたデータ表示に依存するWorkspaceプロジェクトが動作しなくなることを示します。 |
-| Workspaceプロジェクトを [!UICONTROL Customer Journey Analytics]? | プロジェクトを再作成するか、回避策を使用してプロジェクトを回復できます。 次に移動 [!UICONTROL /管理者/ログ/使用状況およびアクセスログ]で、削除したプロジェクトを見つけて、そのIDをコピーします。 次に、任意のWorkspaceプロジェクトを開き、URL内のIDをコピーしたIDで更新します。 次に、プロジェクトを保存します。 |
-
+| でサンドボックスを削除する [!UICONTROL Adobe Experience Platform]? | サンドボックスを削除すると、 [!UICONTROL Customer Journey Analytics] そのサンドボックス内のデータセットへの接続。 ただし、CJA内のデータセットは現在は削除されません。 |
+| スキーマの削除( [!UICONTROL Adobe Experience Platform]ですが、このスキーマに関連付けられているデータセットはありませんか。 | [!UICONTROL Adobe Experience Platform] は、1つ以上のデータセットが関連付けられているスキーマの削除を許可しません。 ただし、適切な権限セットを持つ管理者は、まずデータセットを削除してからスキーマを削除できます。 |
+| 次の場所でのデータセットの削除 [!UICONTROL Adobe Experience Platform]? | ～には通知はない。 [!UICONTROL Customer Journey Analytics];ただし、ストリーミングデータを有効にした場合、データセットが削除された後に新しいデータが取り込まれることはありません。<br>つまり、 **[!UICONTROL この接続の新しいデータセットをすべて自動的にインポートします（今日から）]** 接続が有効になっている場合、データセットが削除された後、新しいデータが入ってこなくなります。 |
+| 次の場所でのデータセットの削除 [!UICONTROL Customer Journey Analytics]? | 現在、保存された接続内のデータセットを削除することはできません。 接続全体を削除して開始を終了する必要があります。 (ただし、 [!UICONTROL Adobe Experience Platform].) |
+| データセットからのバッチの削除( [!UICONTROL Adobe Experience Platform])? | バッチが既に [!UICONTROL Customer Journey Analytics], [!UICONTROL Customer Journey Analytics] バッチが削除されたことを現在認識していません。 バッチが取り込まれていない場合は、 [!UICONTROL Adobe Experience Platform]. |
+| バッチの削除 **摂取中に** into [!UICONTROL Customer Journey Analytics]? | データセットにバッチが1つしかない場合、そのバッチのデータもデータの一部も [!UICONTROL Customer Journey Analytics]. 取り込みがロールバックされます。 例えば、データセットに5つのバッチが含まれ、そのうち3つがデータセットの削除時に既に取り込まれている場合、これら3つのバッチのデータは、 [!UICONTROL Customer Journey Analytics]. |
+| 次の場所での接続の削除 [!UICONTROL Customer Journey Analytics]? | 次のことを示すエラーメッセージが表示されます。<ul><li>削除した接続に対して作成されたデータ表示は、機能しなくなります。</li><li> 同様に、削除した接続のデータ表示に依存するWorkspaceプロジェクトは動作しなくなります。</li></ul> |
+| データ表示の削除( [!UICONTROL Customer Journey Analytics]? | エラーメッセージは、この削除されたデータ表示に依存するWorkspaceプロジェクトが動作しなくなることを示します。 |
+| Workspaceプロジェクトの削除( [!UICONTROL Customer Journey Analytics]? | プロジェクトを再作成するか、回避策を使用してプロジェクトを回復できます。 次に移動 [!UICONTROL 管理者/ログ/使用状況およびアクセスログ]で、削除したプロジェクトを見つけて、そのIDをコピーします。 次に、任意のWorkspaceプロジェクトを開き、URL内のIDをコピーしたIDで更新します。 次に、プロジェクトを保存します。 |
