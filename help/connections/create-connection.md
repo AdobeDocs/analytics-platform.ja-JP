@@ -2,7 +2,7 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 95%
@@ -121,15 +121,15 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 * 接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。
 * バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、現在の履歴データの量と、選択した「**[!UICONTROL 毎日のイベントの平均数]**」設定の両方に左右されます。例えば、1 日あたり 10 億行を超えるデータと 3 年分の履歴データがある場合は、インポートに数週間かかる可能性があります。一方、1 日あたり 100 万行未満のデータと 1 週間分の履歴データがある場合は、1 時間未満で済みます。
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
-* [Adobe Analytics コネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)では、サイズに関係なく、最大 13 か月分のデータをインポートします。
+* [Adobe Analyticsソースコネクタ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)は、サイズに関係なく、最大13ヶ月のデータをインポートします。
 
 ### 日別イベント数の平均を計算
 
 この計算は、接続内のすべてのデータセットに対して行う必要があります。
 
-1. 移動先 [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 新しいクエリを作成します。
+1. [Adobe Experience Platformクエリサービス](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)に移動し、新しいクエリを作成します。
 
-1. クエリは次のようになります。<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+1. クエリは<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`のようになります。
 
 * この例では、「analytics_demo_data」がデータセットの名前です。
-* を実行します。 `Show Tables` AEPに存在するすべてのデータセットを表示するクエリ。
+* `Show Tables`クエリを実行して、AEPに存在するすべてのデータセットを表示します。
