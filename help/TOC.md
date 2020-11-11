@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5fe2177d8e1da64304b0f9c84caa5383b6909d06
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 99%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 99%
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
    + [接続の管理](connections/manage-connection.md)
+   + [接続サイズの見積もり](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
