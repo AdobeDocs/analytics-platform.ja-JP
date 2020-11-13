@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
+source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 98%
+source-wordcount: '424'
+ht-degree: 95%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 98%
    + [接続の管理](connections/manage-connection.md)
    + [接続サイズの見積もり](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
+   + チャネル間分析{#cca}
+      + [チャネル間分析の概要](connections/cca/overview.md)
+      + [再生の仕組み](connections/cca/replay.md)
+      + [チャネル間分析FAQ](connections/cca/faq.md)
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
@@ -152,6 +156,7 @@ ht-degree: 98%
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
+   + [コールセンターとWebデータのインポート](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
