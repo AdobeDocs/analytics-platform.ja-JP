@@ -2,10 +2,10 @@
 title: CJA ドキュメントのアップデート
 description: '2019年12月以降に設定されたCustomer Journey Analyticsドキュメントに関するリスト向けコンテンツの更新。 '
 translation-type: tm+mt
-source-git-commit: fa70d59a4c30b78c09ea9d11dfc804bf12e9b603
+source-git-commit: 06079f13a61ec9732a69c8acee0bed7356910a84
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 18%
+source-wordcount: '205'
+ht-degree: 15%
 
 ---
 
@@ -16,7 +16,9 @@ CJAドキュメントの開始以降、CJAドキュメントに対して以下�
 
 | 日付 | 説明の更新 |
 | --- | --- |
-| 2020年11月11日 | 課金の目的での[接続サイズ](/help/connections/estimate-connection-size.md)の見積もりに関するトピックを追加しました。 |
+| 2020年11月13日 | [クロスチャネル分析](/help/connections/cca/overview.md)に関する新しいトピックです。データセットの個人IDを再キーでき、複数のデータセットをシームレスに組み合わせることができます。 |
+| 2020年11月13日 | [コールセンターとWebデータ](/help/use-cases/call-center.md)のインポートに関する新しい使用例が追加されました。 |
+| 2020年11月11日 | [接続サイズの予測](/help/connections/estimate-connection-size.md)に関するトピックを追加しました。 |
 | 2020年11月10日 | データコンポーネントの削除が[FAQ](/help/getting-started/cja-faq.md)に及ぼす影響に関する節を追加しました。 |
 | 2020 年 11 月 3 日 | [Customer Journey Analytics機能のサポート](/help/getting-started/cja-aa.md)ページに対する更新。 |
 | 2020 年 10 月 8 日 | [イベントデータセット](/help/connections/combined-dataset.md)の組み合わせに関するトピックを追加しました。 |
