@@ -18,7 +18,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL クイックインサイト]** パネルのテストは現在制限されています。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick]** Insightspanelは、現在限定的なテスト中です。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)
 
 [!UICONTROL クイックインサイト]は、[!UICONTROL Analysis Workspace] のアナリスト以外のユーザーと新規ユーザーに対して、ビジネスの質問にすばやく簡単に答える方法を学ぶためのガイダンスを提供します。また、テーブルを自分で作ることなく、簡単な質問にすばやく答えたいと考える上級ユーザーにとっても優れたツールです。
 
