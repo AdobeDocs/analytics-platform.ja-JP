@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 95%
 
 特定のコンポーネント値（ディメンション、指標、セグメント、日付範囲）を手動で選択してテーブルにドロップすると、常に行または列の静的なリストが作成されます。静的ディメンション項目は、次のようにも作成できます。
 
-* 行から右クリック/ [!UICONTROL 選択した行のみを表示]
-* 列から右クリック/ [!UICONTROL 項目を静的にする]
+* 行から右クリック/[!UICONTROL 選択した行のみを表示]
+* 列から右クリック/[!UICONTROL 項目を静的にする]
 
 例えば、Microsoft や Apple などの特定のブラウザータイプ項目にドラッグすると、その 2 つの特定の項目が常にテーブルに取り込まれます。
 
@@ -56,5 +56,5 @@ ht-degree: 95%
 フリーフォーム合計行での動的な行と静的な行の動作は異なります。デフォルトでは:：
 
 * 動的な行はサーバーサイドで合計され、訪問数や訪問者数などの指標の重複を取り除きます。
-* 静的な行は、クライアントサイドで合計され、重複を取り除き&#x200B;**ません** 。サーバーサイドの合計行を計算するには、「行」設定を「**総合計を表示**」に変更します。[詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* 静的な行は、クライアントサイドで合計され、重複を取り除き&#x200B;**ません** 。サーバーサイドの合計行を計算するには、「行」設定を「**総合計を表示**」に変更します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=ja-JP)
 
