@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->CJAは、参照データセットで整数をサポートしません。 XDMスキーマに、ルックアップデータセット用の整数フィールドを追加すると、これらの整数を指標や計算指標として使用できなくなります。 例えば、annualRevenueまたはtotalEmployeesを整数として定義した場合、CJAのレポートに「0」と表示されます。 ただし、文字列として割り当てた場合は、ルックアップ情報として使用できます。
+>CJA は、ルックアップデータセットで整数をサポートしません。XDM スキーマにルックアップデータセット用の整数フィールドを追加すると、これらの整数を指標や計算指標として使用できなくなります。例えば、annualRevenue または totalEmployees を整数として定義した場合、CJA のレポートに「0」と表示されます。ただし、文字列として割り当てた場合は、ルックアップ情報として使用できます。
 
-例えば、次の例ではannualRevenueまたはtotalEmployeesをIntegerとして定義しています。これがCJAで「0」が表示される理由です。
+例えば、次の例では annualRevenue または totalEmployees を整数として定義しています。そのため、CJA では「0」と表示されています。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ管理／データセット]**&#x200B;に移動します。
 1. 「**[!UICONTROL +データセットを作成]**」をクリックします。
@@ -66,7 +66,7 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 
 | データセット名 | 説明 | AEP スキーマクラス | データセットの詳細 |
 |---|---|---|---|
-| B2B インプレッション | アカウントレベルのクリックストリーム、イベントレベルのデータが含まれます。例えば、マーケティング広告を実行するための電子メール ID と対応するアカウント ID、およびマーケティング名が含まれます。また、各ユーザーに対するこれらの広告のインプレッションも含まれます。 | XDM ExperienceEvent スキーマクラスに基づく | `emailID` はプライマリ ID として使用され、 `Customer ID` 名前空間が割り当てられています。その結果、この変数は Customer Journey Analytics でデフォルトの&#x200B;**[!UICONTROL ユーザー ID]** として表示されます。![Impressions](assets/impressions-mixins.png) |
+| B2B インプレッション | アカウントレベルのクリックストリーム、イベントレベルのデータが含まれます。例えば、マーケティング広告を実行するための電子メール ID と対応するアカウント ID、およびマーケティング名が含まれます。また、各ユーザーに対するこれらの広告のインプレッションも含まれます。 | XDM ExperienceEvent スキーマクラスに基づく | `emailID` はプライマリ ID として使用され、 `Customer ID` 名前空間が割り当てられています。その結果、この変数は Customer Journey Analytics でデフォルトの&#x200B;**[!UICONTROL ユーザー ID]** として表示されます。![インプレッション](assets/impressions-mixins.png) |
 | B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | このスキーマでは `emailID` をプライマリ ID として選択する必要はありません。必ず「**[!UICONTROL プロファイル]**」を有効にしてください。そうしないと、CJA は B2B プロファイルで `emailID` を `emailID` に接続できなくなります。![プロファイル](assets/profile-mixins.png) |
 | B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | `accountID` と B2B インプレッションデータセット間の関係 は、次の手順に従って、B2B 情報データセットを CJA の B2B インプレッションデータセットと結び付けることで自動的に作成されています。![参照](assets/lookup-mixins.png) |
 
@@ -79,9 +79,9 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 1. [これらの手順](/help/connections/create-connection.md)に従って、接続に名前を付けて説明し、設定します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-## 5.この接続からデータ表示を作成する
+## 5. 接続に基づくデータビューの作成
 
-手順に従い、 [データ表示の作成](/help/data-views/create-dataview.md).
+手順に従い、[データビューを作成します](/help/data-views/create-dataview.md)。
 
 * データセットから必要なすべてのコンポーネント（ディメンションおよび指標）を追加します。
 
