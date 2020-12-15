@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->**[!UICONTROL アルゴリズムアトリビューション]** は、現在制限付きのテストを行っています。 詳しくは、 [Adobe Analytics機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html) 」を参照してください。
+>**[!UICONTROL アルゴリズム]** のアトリビューションは、現在、テストに制限があります。詳しくは、[Adobe Analyticsの機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)を参照してください。
 
-アルゴリズム [帰属モデル](models.md) の指標は他のモデルとは異なり、統計的手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てる点が異なります。 Analysis Workspace 内の他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のセグメント化と分類をサポートし、コンバージョンの 100% をテーブル内のディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
+Analysis Workspace のアルゴリズム[アトリビューションモデル](models.md)は、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てるという点で、他のモデルとは異なります。Analysis Workspace 内の他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のセグメント化と分類をサポートし、コンバージョンの 100% をテーブル内のディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
 
 アトリビューションに使用されるアルゴリズムは、協同ゲーム理論のハルサニ配当に基づきます。ハルサニ配当は、結果への貢献度が等しくないゲーム内のプレーヤー間でクレジットを分配するためのシャープレイ値ソリューション（ノーベル賞受賞者のエコノミスト、ロイドシャープレイにちなんで名付けられました）の一般化です。
 
-高いレベルでは、各タッチポイントのコンバージョンクレジットのアトリビューション計算では、ルックバックウィンドウ内の各マーケティングタッチポイントを、剰余を均等に配分する必要のあるプレーヤーの連合とみなします。各連立与党の余剰分布は、各サブカオリティ（または以前に参加したディメンション項目）が再帰的に作成した剰余に従って決定されます。 詳しくは、John Harsanyi と Lloyd Shapley の元の論文を参照してください。
+高いレベルでは、各タッチポイントのコンバージョンクレジットのアトリビューション計算では、ルックバックウィンドウ内の各マーケティングタッチポイントを、剰余を均等に配分する必要のあるプレーヤーの連合とみなします。各連合の余剰分配は、各サブ連合（または以前に参加したディメンション項目）によって以前に再帰的に作成された余剰に従って決定されます。詳しくは、John Harsanyi と Lloyd Shapley の元の論文を参照してください。
 
-* Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.
-* Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220.
+* Shapley, Lloyd S. (1953).A value for n-person games.*Contributions to the Theory of Games, 2(28)*, 307-317.
+* Harsanyi, John C. (1963).A simplified bargaining model for the n-person cooperative game.*International Economic Review 4(2)*, 194-220.
 
 >[!NOTE]
 >
