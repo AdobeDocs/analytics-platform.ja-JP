@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 接続を保存したら、フィルターを一切使用せずに、同じ接続のデータ表示を作成します。
 1. Workspaceプロジェクトを作成し、正しいデータ表示を選択します。 フリーフォームテーブルを作成し、**[!UICONTROL 年]**&#x200B;ディメンションを持つ&#x200B;**[!UICONTROL イベント]**&#x200B;指標をドラッグ&amp;ドロップします。 日付選択カレンダーから十分な大きさの日付範囲を選択し、接続にすべてのデータをカプセル化します。 これにより、[!UICONTROL Customer Journey Analytics]に取り込まれているイベントの数を確認できます。
 
-   ![Workspaceプロジェクト](assets/event-number.png)
+   ![ワークスペースプロジェクト](assets/event-number.png)
 
    >[!NOTE]
    >
