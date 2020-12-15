@@ -15,7 +15,7 @@ ht-degree: 95%
 
 Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。各ビジュアライゼーションには、管理可能な独自の設定があります。ビジュアライゼーションの名前をクリックすると、詳細情報が表示されます。
 
-ビデオチュートリアル： [Analysis Workspaceの視覚化のタイプ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
+ビデオチュートリアル：[Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html)の視覚化タイプ(2:57)
 
 | ビジュアライゼーション名 | 説明 |
 | --- | --- |
@@ -39,7 +39,7 @@ Workspace オファーには、棒グラフ、ドーナツグラフ、ヒスト�
 
 ## ビジュアライゼーションパネル {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-ビジュアライゼーションパネルを表示するには、「 **[!UICONTROL ビジュアライゼーション]** 左のレールに
+ビジュアライゼーションパネルを表示するには、左側のレールで「**[!UICONTROL ビジュアライゼーション]**」をクリックします。
 
 ![手順の結果](assets/visualizations.png)
 
