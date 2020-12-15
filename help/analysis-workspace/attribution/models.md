@@ -1,6 +1,6 @@
 ---
 title: アトリビューションモデルとルックバックウィンドウ
-description: 様々なタイプのアトリビューションによってディメンション項目間でクレジットがどのように分割されるか。
+description: 様々なタイプのアトリビューションによってディメンション項目間でクレジットがどのように分割されますか。
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
@@ -49,7 +49,7 @@ Adobe Analytics でのアトリビューションの概念は、次の 2 つの�
 
 >[!NOTE]
 >
->**[!UICONTROL カスタムのルックバックウィンドウ]** は、現在制限付きのテストを行っています。 詳しくは、 [Adobe Analytics機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html) 」を参照してください。
+>**[!UICONTROL カスタムのルックバック]** ウィンドウは、現在、限られたテスト中です。詳しくは、[Adobe Analyticsの機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)を参照してください。
 
 ## 例
 
