@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ![](assets/horizontal_bar.png)
 
-## 積み重ね横棒グラフ {#section_50C08E9E20A94024A6553BC352ADB597}
+## 積み重ね横棒グラフ  {#section_50C08E9E20A94024A6553BC352ADB597}
 
 このビジュアライゼーションは[!UICONTROL 横棒グラフ]に似ていますが、系列棒グラフは積み重なって表示されます。
 
