@@ -1,9 +1,9 @@
 ---
 title: 組み合わせイベントデータセット
 description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 
@@ -72,5 +72,5 @@ ht-degree: 100%
 | string_color | metric_a |
 | --- | --- |
 | 黄色 | 6 |
-| 青 | 3 |
+| 青 | 1 |
 | 赤 | 2 |
