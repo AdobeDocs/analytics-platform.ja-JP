@@ -1,9 +1,9 @@
 ---
 title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -48,4 +48,4 @@ ht-degree: 100%
 | 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | [キュレーションおよび共有](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)では、プロジェクトに適用するフィルターを、受信者に共有された分析で使用する方法について学習します。 |
 | フィルターをディメンションとして使用 | ビデオ：Analysis Workspace でフィルターをディメンションとして使用。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/23974?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/23974)
