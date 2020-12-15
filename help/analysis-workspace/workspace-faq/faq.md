@@ -37,4 +37,4 @@ ht-degree: 87%
 * レポートスイートを再度チェックし、データが入力されていることを確認します。
 * レポートにセグメントを適用している場合、そのセグメント条件がどのデータとも一致しない可能性があります。セグメントを削除するか、セグメント定義を調整してみてください。
 * 右上隅の日付範囲をチェックし、期待する値に設定されていることを確認します。
-* Web サイトに移動し、[デバッガー](https://docs.adobe.com/content/help/ja-JP/debugger/using/experience-cloud-debugger.html)を使用してデータが収集されていることを検証します。
+* Web サイトに移動し、[デバッガー](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ja-JP)を使用してデータが収集されていることを検証します。
