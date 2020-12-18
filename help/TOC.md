@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: e0946d2e0490e25314367a86ed241eadd09b09e5
+source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 94%
+source-wordcount: '434'
+ht-degree: 93%
 
 ---
 
@@ -159,6 +159,7 @@ ht-degree: 94%
    + [コールセンターとWebデータのインポート](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルのディメンションの使用](use-cases/marketing-channels.md)
+   + [データセットに対する追加グローバル参照](use-cases/global-lookups.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
 + [CJA ドキュメントのアップデート](doc-changes.md)
