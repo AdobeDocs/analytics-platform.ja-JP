@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 94%
 | 機能 | メモ |
 | --- | --- |
 | products 変数 | エクスペリエンスイベントスキーマに準拠したデータのレポートに現在使用できる product 変数（特に productListItems オブジェクトを使用したもの）。 |
+| マーケティングチャネル | マーケティングチャネルのデータは、Analyticsデータコネクタを介してCJAに渡されるようになりました。 従来のAdobe Analyticsでは、引き続きマーケティングチャネルルールを設定する必要があります。 一部のルールはサポートされていません。 詳しくは、[CJAマーケティングチャネルドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases)を参照してください。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
@@ -75,10 +76,11 @@ ht-degree: 94%
 | 予定レポート／プロジェクト | サポートが予定されています。 |
 | アラート | サポートが予定されています。 |
 | カスタムカレンダー | サポートが予定されています。 |
-| マーケティングチャネル | サポートが予定されています。 |
 | PDF の書き出し | サポートが予定されています。 |
 | レポート API へのアクセス | サポートが予定されています。API 2.0 でのみ利用できるようになる予定です。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
+| Report Builder（Excel プラグイン） | サポートが予定されています。 |
+| リアルタイムレポート | サポートが予定されています。 |
 
 ## サポートの予定はありません。
 
@@ -87,11 +89,9 @@ ht-degree: 94%
 | A4T | まだサポートの予定はありません。 |
 | Media Analytics | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
-| Report Builder（Excel プラグイン） | まだサポートの予定はありません。 |
 | Activity Map | まだサポートの予定はありません。 |
 | 分類ルールビルダー | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
-| リアルタイムレポート | まだサポートの予定はありません。 |
 
 ## サポートされません
 
