@@ -1,54 +1,56 @@
 ---
 title: フリーフォームテーブル
-description: フリーフォームテーブルとフリーフォームテーブルビルダーについて説明します
+description: フリーフォームテーブルは、Workspaceのデータ分析の基盤です
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '531'
+ht-degree: 48%
 
 ---
 
 
 # フリーフォームテーブル
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+Analysis Workspaceでは、フリーフォームテーブルはインタラクティブなデータ分析の基盤となっています。 [コンポーネント](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)の組み合わせを行と列にドラッグ&amp;ドロップして、分析のカスタムテーブルを作成できます。 各コンポーネントが削除されると、テーブルは直ちに更新されるので、分析や掘り下げを迅速に行うことができます。
 
-Analysis Workspace では、フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。[コンポーネント](/help/components/overview.md)の組み合わせを行と列にドラッグ＆ドロップして、分析用のカスタムテーブルを作成できます。各コンポーネントがドロップされると、テーブルが直ちに更新され、迅速な分析が可能になります。
+![](assets/opening-section.png)
 
-テーブルは、様々な方法でカスタマイズできます。
+## 自動化されたテーブル
 
-* **行**
-   * 各ディメンション行は、ページネーションの前に最大 400 行を表示できます。プロジェクトの[表示密度](/help/analysis-workspace/build-workspace-project/view-density.md)を調整すると、1 つの画面に表示する行を増やすことができます。
-   * 行は、追加のコンポーネントで分類できます。複数の行を一度に分類するには、複数の行を選択し、次のコンポーネントを選択した行の上にドラッグします。[分類](/help/components/dimensions/t-breakdown-fa.md)について説明します。
-   * 行を[フィルタリング](/help/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)して、表示する項目数を減らすここができます。[行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
+テーブルを最もすばやく作成するには、空のプロジェクト、パネルまたはフリーフォームテーブルにコンポーネントを直接ドロップします。 推奨の形式で自動的にフリーフォームテーブルが作成されます。 [チュートリアルを見る](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html)。
 
-* **列**
-   * 列内にコンポーネントを積み重ねて、セグメント化された指標やクロスタブ分析などを作成できます。
-   * 各列の表示は、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)で調整できます。
-   * [右クリックメニュー](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html)からは、いくつかの操作を実行できます。テーブルのヘッダー、行または列をクリックしたかどうかに応じて、このメニューに表示されるアクションが変わります。
+![](assets/automated-table.png)
 
 ## フリーフォームテーブルビルダー
 
 最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、フリーフォームテーブルビルダーを有効にできます。ビルダーを有効にすれば、多くのディメンション、分類、指標およびセグメントをドラッグ＆ドロップして、より複雑な質問に回答するテーブルを作成できます。データはその場では更新されず、「**[!UICONTROL ビルド]**」をクリックすると更新されます。
 
-データに関する複雑な質問があり、質問に答えるために表を作成したいときに、テーブルビルダーを使用すると時間を節約できます。テーブルビルダーのその他の利点は、次のとおりです。
+![](assets/table-builder.png)
 
-* 各アクションがレンダリングされるのを待たずに、必要な形式でテーブルを配置できる。
-* 最大 4 レベルの分類をすばやく実行できる。
-* テーブルの行とディメンションの列ごとに、行と分類の設定を定義できる。
-* デフォルトでは、テーブルの各レベルを&#x200B;**[!UICONTROL 位置で分類]**&#x200B;できる（従来のフリーフォームテーブルの場合、デフォルトは「**[!UICONTROL 項目で分類]**」です）。
-* テーブル内の静的な行の順序を手動で指定できる。例：指標行を特定の順序で表示する場合など。
-* 実際のデータをレンダリングする前に、テーブルの形式をプレビューします。
+## テーブルの操作
 
-[ここ](https://youtu.be/GUMWiJAmMGI)でフリーフォーム表ビルダーの動作を確認します。
+フリーフォームテーブルは、様々な方法で操作およびカスタマイズできます。
+
+* **行**
+   * プロジェクトの[表示密度](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html)を調整すると、1 つの画面に表示する行を増やすことができます。
+   * 各ディメンション行は、ページネーションの前に最大 400 行を表示できます。「行」の横の数字をクリックして、ページにさらに行を表示します。 ヘッダーのページ矢印を使用して、別のページに移動します。
+   * 行は、追加のコンポーネントで分類できます。複数の行を一度に分類するには、複数の行を選択し、次のコンポーネントを選択した行の上にドラッグします。[分類](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html)について説明します。
+   * 行を[フィルタリング](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html?lang=ja-JP)して、表示する項目数を減らすここができます。[行設定](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html)で追加の設定を使用できます。
+
+* **列**
+   * 列内にコンポーネントを積み重ねて、セグメント化された指標やクロスタブ分析などを作成できます。
+   * 各列の表示は、[列設定](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html)で調整できます。
+   * [右クリックメニュー](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html)からは、いくつかの操作を実行できます。テーブルのヘッダー、行または列をクリックしたかどうかに応じて、このメニューに表示されるアクションが変わります。
 
 ## フリーフォームテーブルデータの書き出し
 
-フリーフォームテーブルのデータは、次の方法で Analysis Workspace からコピーできます。
+Analysis Workspaceのすべてのデータ[エクスポートオプション](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)の詳細を表示します。
 
-* テーブルヘッダーを右クリックし、「**[!UICONTROL クリップボードにコピー]**」を選択します。これにより、（表示可能な）テーブル全体を書き出します。
-* テーブル内の特定のセルをハイライト表示し、右クリックして「**[!UICONTROL クリップボードにコピー]**」を選択するか、Ctrl + C ホットキーを使用します。
-* **[!UICONTROL プロジェクト／CSV をダウンロード]**。これにより、プロジェクト内の表示可能なすべてのテーブルが CSV 形式で書き出されます。
+* 右クリック/**[!UICONTROL データをクリップボードにコピー]**：表示されたテーブルデータをエクスポートします。 テーブルを選択した場合、このオプションは&#x200B;**[!UICONTROL Copy selection to clipboard]**&#x200B;と表示します。 **Ctrl+C**&#x200B;ホットキーは、選択したデータもコピーします。
+* 右クリック/**[!UICONTROL データをCSVとしてダウンロード]**：表示された表データをCSVとしてダウンロードします。 テーブルを選択した場合、このオプションでは「**[!UICONTROL Download selection as CSV]**」と表示されます。
+* 右クリック/**[!UICONTROL プロジェクト/項目をCSVとしてダウンロード]**&#x200B;でエクスポートできます。選択したディメンションは、最大50,000個のディメンション項目をエクスポートできます。
+
+Analysis Workspaceのすべてのデータ[エクスポートオプション](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)の詳細を表示します。
+
+![](assets/export-options.png)
