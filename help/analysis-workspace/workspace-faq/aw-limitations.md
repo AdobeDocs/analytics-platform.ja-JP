@@ -2,19 +2,15 @@
 description: Adobe Analysis Workspace とその関連コンポーネントに関する既知の制限のリスト
 title: Analysis Workspace の既知の制限
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 93%
+source-wordcount: '382'
+ht-degree: 85%
 
 ---
 
 
 # Analysis Workspace の既知の制限
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 以下に、Analysis Workspace とその関連コンポーネントに関する既知の制限を示します。
 
@@ -32,14 +28,14 @@ ht-degree: 93%
 * [!UICONTROL フロー]：入口／出口ディメンション（例：[!UICONTROL 入口ページ]）は、フローでは使用できません。
 * [!UICONTROL コホート]：整数以外の値をコホート条件として使用することはできません。
 
-<!--## Panels
+## パネル
 
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.<-->
+* セグメント比較：最初のドロップゾーンでセグメントテンプレートが使用されている場合、[!UICONTROL 他の全員]セグメントは作成されません。
 
 ## コンポーネント/フィルター
 
-* 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL 回数]、[!UICONTROL 個別訪問者数]など）。
-* フィルターがWorkspaceから作成された場合([!UICONTROL コンポーネント/フィルター]から作成された場合とは異なり、特定のコンポーネントおよび演算子は使用できません)。 例：IP アドレス。
+* [!UICONTROL 回数]、[!UICONTROL 実訪問者数]など、特定の指標やディメンションをフィルターできません。
+* [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、公開されない限り、Workspaceまたはフィルターコンポーネントマネージャーの左側のレールに表示されません。 これを行うには、フィルタを編集し、**[!UICONTROL このフィルタをパブリックにする]**&#x200B;を選択します。
 
 ## コンポーネント／計算指標
 
@@ -50,6 +46,7 @@ ht-degree: 93%
 ## コンポーネント／日付範囲
 
 * カスタム日付範囲では、[!UICONTROL 昨年の今日]、[!UICONTROL 先月の今日]などはサポートされません。
+
 
 ## コンポーネント／レポート設定
 
