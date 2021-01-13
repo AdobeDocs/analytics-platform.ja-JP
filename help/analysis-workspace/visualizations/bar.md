@@ -3,9 +3,9 @@ description: 'null'
 title: 棒グラフおよび積み重ね棒グラフ
 uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '81'
 ht-degree: 100%
 
 ---
@@ -13,11 +13,7 @@ ht-degree: 100%
 
 # 棒グラフおよび積み重ね棒グラフ
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
-
-## 棒グラフ
+## 棒グラフ {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
 このビジュアライゼーションでは、1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。
 
@@ -25,7 +21,7 @@ ht-degree: 100%
 
 ビジュアライゼーション設定の精度ドロップダウンにより、トレンドビジュアライゼーション（折れ線、棒など）を日別から週別、月別などに変更できます。
 
-## 積み重ね棒グラフ
+## 積み重ね棒グラフ {#section_9EA83779AE964635907EE5031A785A49}
 
 このビジュアライゼーションは棒グラフに似ていますが、系列を表す棒は相互に積み重なっています。
 
