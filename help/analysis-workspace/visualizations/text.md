@@ -3,32 +3,32 @@ description: ユーザー定義のテキストを Workspace に追加できま�
 title: テキスト
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 100%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # テキスト
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+テキストのビジュアライゼーションまたはパネル/ビジュアライゼーションの説明を使用して、ユーザー定義のテキストをWorkspaceプロジェクトに追加できます（ヘッダー/**[!UICONTROL 説明を編集]**&#x200B;を右クリック）。 また、テキストの書式設定の変更、ハイパーリンクの追加、画像の追加を行うこともできます。
 
-ユーザー定義のテキストを Workspace に追加できます。
+## 書式の調整{#format}
 
-フォント設定を変更できます（太字、斜体など）。また、テキストボックスビジュアライゼーションおよびパネル／ビジュアライゼーションの説明内にハイパーリンクを追加できます。
+テキストボックスや説明を編集する際に、選択したテキストのフォントサイズ（見出しレベル）、色、スタイル（太字、斜体、下線）および配置を調整できます。 箇条書きと番号付きのリストを追加することもできます。
 
-## フォント設定の変更 {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+![](assets/format.png)
 
-![](assets/rich-text1.png)
+## ハイパーリンクの追加 {#hyperlinks}
 
-テキストビジュアライゼーションをパネルにドラッグしてテキストを追加した後、テキストを書式設定できます。見出しレベルの追加、テキストの太字／斜体／下線の変更、テキストの色の変更などをおこなえます。
+ハイパーリンクを追加するには、テキストをハイライト表示し、メニューのハイパーリンクアイコンをクリックします。 ハイパーリンクは、外部のWebサイト、ドキュメントページ、[Workspaceプロジェクト/パネル/ビジュアライゼーション](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)などにリンクして、プロジェクトの受信者に役立てることができます。
 
-## ハイパーリンクの追加 {#section_D55B857188A74A06B49006DF3511DC7C}
+![](assets/hyperlink.png)
 
-![](assets/rich-text2.png)
+## 追加画像{#images}
 
-テキストをハイライト表示し、書式設定メニューのハイパーリンクアイコンをクリックして、ハイパーリンクを追加します。
+プロジェクトに画像を追加するには、メニューの画像アイコンをクリックし、公開画像URLを挿入します。 画像URLは、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
+
+![](assets/image.png)
