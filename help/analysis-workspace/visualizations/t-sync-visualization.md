@@ -3,9 +3,9 @@ description: ビジュアライゼーションを同期することで、ビジ�
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: データソースの管理
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '562'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # データソースの管理
 
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
-
 ビジュアライゼーションを同期することで、ビジュアライゼーションに対応するデータテーブルまたはデータソースを制御できます。
 
 **ヒント：**&#x200B;タイトルの横の点の色で、どのビジュアライゼーションが関連しているかがわかります。色が一致していると、ビジュアライゼーションが同じデータソースに基づいていることを意味します。
 
 データソースを管理すると、データソースを表示したり、選択をロックしたりできます。これらの設定は、新しいデータが入ってきた際にどのようにビジュアライゼーションを変更するか（または変更しないか）を決定します。
 
-1. データテーブルと[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して[プロジェクトを作成](/help/analysis-workspace/home.md)します。
+1. データテーブルと[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して[プロジェクトを作成](//help/analysis-workspace/home.md)します。
 1. データテーブルで、ビジュアライゼーションに関連付けたいセル（データソース）を選択します。
 1. ビジュアライゼーションでタイトルの横にある点をクリックすると、**[!UICONTROL データソース]**&#x200B;ダイアログが表示されます。「**[!UICONTROL データソースを表示]**」または「**[!UICONTROL 選択をロック]**」を選択します。
 
