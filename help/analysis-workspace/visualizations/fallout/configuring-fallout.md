@@ -3,19 +3,15 @@ description: 'null'
 title: フォールアウトビジュアライゼーションの設定
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
 
 
 # フォールアウトビジュアライゼーションの設定
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 タッチポイントを指定して、複数のディメンションのフォールアウトシーケンスを作成できます。通常、タッチポイントはサイト上のページです。ただし、タッチポイントはページに限定されません。例えば、単位などのイベント、実訪問者数、再来訪を追加できます。また、カテゴリ、ブラウザーのタイプ、内部検索語句などのディメンションも追加できます。
 
@@ -69,7 +65,6 @@ ht-degree: 100%
 | 設定 | 説明 |
 |--- |--- |
 | フォールアウトコンテナ <ul><li>訪問</li><li>訪問者。</li></ul> | 「訪問」と「訪問者」を切り替えて、訪問者のパスを分析できます。デフォルトは訪問者です。これらの設定により、訪問者のエンゲージメントを（訪問全体にわたって）訪問者レベルで分析したり、1 回の訪問に分析を制限したりできます。 |
-| 最初のタッチポイントとして「すべての訪問者」を表示します。 | 「すべての訪問」を最初のタッチポイントにしたくない場合、これを選択解除できます。 |
 
 **タッチポイントを右クリックする**&#x200B;と、次のオプションが表示されます。
 
