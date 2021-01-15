@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: このビジュアライゼーションでは、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。
 title: 横棒グラフおよび積み重ね横棒グラフ
 uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '74'
 ht-degree: 100%
 
 ---
