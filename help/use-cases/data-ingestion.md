@@ -2,10 +2,10 @@
 title: Customer Journey Analytics のデータ取り込みオプション
 description: Customer Journey Analytics にデータを取り込む様々な方法について
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 8a3a868ff4e2fbbcdf83ff7769382c6a92f78ec2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 70%
+source-wordcount: '968'
+ht-degree: 72%
 
 ---
 
@@ -34,15 +34,9 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 ## Adobe Experience PlatformWeb SDKとEdgeネットワークを介したデータの取り込み
 
-[Adobe Experience PlatformWeb ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDKは、Adobe Experience Cloudのお客様がAdobe Experience Platformエッジネットワークを介してExperience Cloud内の様々なサービスとやり取りできるようにする、クライアント側のJavaScriptライブラリです。この取り込みは、「起動」を使用しても、使用せずにも設定できます。
+[Adobe Experience PlatformWeb ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDKは、Adobe Experience Cloudのお客様がAdobe Experience Platformエッジネットワークを介してExperience Cloud内の様々なサービスとやり取りできるようにする、クライアント側のJavaScriptライブラリです。
 
-### 起動なし
-
-このリンクは機能しません。https://docs.adobe.com/content/help/en/experience-platform/edge/get-started/quick-start-without-launch.html これはまだLaunchなしで可能ですか？
-
-### 開始と共に
-
-1. [Adobe Experience Platformエッジネットワークを介して、WebプロパティからAdobe Experience Cloudにデータを送信するようにAEP Web SDK ](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) Extensionを設定します。
+1. [AEP Web SDK Extensionを](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) Launchで設定し、WebプロパティからAdobe Experience Platformエッジネットワーク経由でAdobe Experience Cloudにデータを送信します。
 1. [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
 
 ## データの取り込みとバッチ取り込みとストリーミング取り込み
