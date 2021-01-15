@@ -1,17 +1,17 @@
 ---
-description: 'null'
-title: カラーパレット
+description: ビジュアライゼーションのカラーパレットを変更する方法、または独自のカスタムカラーパレットを指定する方法。
+title: ビジュアライゼーションのカラーパレット
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 91%
 
 ---
 
 
-# ビジュアライゼーションカラーパレット
+# ビジュアライゼーションのカラーパレット
 
 >[!NOTE]
 >
