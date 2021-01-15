@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '430'
 ht-degree: 93%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 93%
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
-   + Workspace プロジェクトの構築 {#build-workspace-project}
-      + [プロジェクトの作成 - 概要](analysis-workspace/build-workspace-project/freeform-overview.md)
+   + プロジェクト {#build-workspace-project}
+      + [プロジェクトの概要](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの保存](analysis-workspace/build-workspace-project/save-projects.md)
       + [テンプレート](analysis-workspace/build-workspace-project/starter-projects.md)
       + [ホットキー（ショートカット）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
