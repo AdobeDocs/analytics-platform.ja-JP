@@ -2,7 +2,7 @@
 title: 接続サイズの見積もり
 description: Customer Journey Analyticsの現在の使用状況を報告する
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 1. さらに、[!UICONTROL Adobe Experience Platform]をチェックインすると、IDが「5f21c12b732044194bffc1d0」のデータセットがないので、誰かが最初の接続の作成時に[!UICONTROL Adobe Experience Platform]からこのデータセットを削除しました。 その後、[!UICONTROL Customer Journey Analytics]に再び追加されましたが、[!UICONTROL Adobe Experience Platform]によって、異なる[!UICONTROL プラットフォームデータセットID]が生成されました。
 
-   [!UICONTROL Customer Journey Analytics]と[!UICONTROL Adobe Experience Platform]の[データセットと接続の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)の意味について詳しくお読みください。
+[!UICONTROL Customer Journey Analytics]と[!UICONTROL Adobe Experience Platform]の[データセットと接続の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)の意味について詳しくお読みください。
