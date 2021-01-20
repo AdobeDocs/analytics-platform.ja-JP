@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 27%
 
 Workspaceプロジェクトでは、データコンポーネント、テーブルおよびビジュアライゼーションを組み合わせて、分析を作成し、組織内の任意のユーザーと共有できます。 最初のプロジェクトを開始する前に、プロジェクトにアクセスし、ナビゲートし、管理する方法を学びます。
 
-## プロジェクトリスト{#project-list}
+## プロジェクトリスト {#project-list}
 
 **[!UICONTROL Analytics]**/**[!UICONTROL ワークスペース]**&#x200B;に最初に移動したとき、ページには、自分が所有している、または自分が共有しているすべてのプロジェクトがリストされます。 これは、以前にカスタムランディングページを設定したことがない限り、Adobe Analyticsのランディングページでもあります。
 
