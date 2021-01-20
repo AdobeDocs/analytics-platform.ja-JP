@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 42%
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,7 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 
 このトピックに関する[ビデオへのリンクはこちら](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html)です。
 
-## 右クリックメニュー{#right-click}
+## 右クリックメニュー {#right-click}
 
 ビジュアライゼーションの追加機能は、ビジュアライゼーションのヘッダーを右クリックすると使用できます。 設定は、ビジュアライゼーションによって異なります。 次の設定を使用できます。
 
@@ -86,7 +86,7 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 
 | 設定 | 説明 |
 | --- | --- |
-| コピーしたパネル/ビジュアライゼーションを挿入 | コピーしたパネルやビジュアライゼーションをプロジェクト内の別の場所に貼り付けたり、完全に異なるプロジェクトに貼り付け（「挿入」）できます。 |
+| コピーしたパネル／ビジュアライゼーションを挿入 | コピーした要素をプロジェクト内の別の場所、または完全に別のプロジェクトに貼り付ける（「挿入」する）ことができます。 |
 | ビジュアライゼーションのコピー | 右クリックしてビジュアライゼーションをコピーし、プロジェクト内の別の場所に挿入したり、完全に別のプロジェクトに挿入したりできます。 |
 | [項目を CSV としてダウンロード](/help/analysis-workspace/curate-share/download-send.md) | 選択したディメンションの最大50,000個のディメンション項目をCSVとしてダウンロードできます。 |
 | [データを CSV としてダウンロード](/help/analysis-workspace/curate-share/download-send.md) | ビジュアライゼーションデータソースをCSVとしてダウンロードします。 |
