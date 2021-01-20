@@ -2,7 +2,7 @@
 title: チャネル間分析の概要
 description: 複数のデータセットから訪問者IDをキー変更し、訪問者を結合します。
 translation-type: tm+mt
-source-git-commit: b57895d037f8db3ffc418312b95fc43dd0280dc9
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 19%
