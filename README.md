@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## アドビのコンテンツへの投稿について
 
-「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)」を参照してください。
 
 投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
 
