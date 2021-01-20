@@ -2,7 +2,7 @@
 title: 再生の仕組み
 description: チャネル間分析での「再生」の概念の理解
 translation-type: tm+mt
-source-git-commit: 26486c79f6d94db1aa795bf024f581cad74c25f6
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 16%
