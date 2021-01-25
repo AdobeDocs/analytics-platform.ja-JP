@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -40,21 +40,21 @@ ht-degree: 87%
 | 機能 | メモ |
 | --- | --- |
 | products 変数 | エクスペリエンスイベントスキーマに準拠したデータのレポートに現在使用できる product 変数（特に productListItems オブジェクトを使用したもの）。 |
-| マーケティングチャネル | マーケティングチャネルのデータは、Analyticsデータコネクタを介してCJAに渡されるようになりました。 従来のAdobe Analyticsでは、引き続きマーケティングチャネルルールを設定する必要があります。 一部のルールはサポートされていません。 詳しくは、[CJAマーケティングチャネルドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases)を参照してください。 |
+| マーケティングチャネル | マーケティングチャネルのデータは、Analytics Data Connector を介して CJA に渡されるようになりました。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja-JP#cja-usecases)を参照してください。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。つまり、すべての永続性は、データ全体ではなく、レポートの日付範囲に基づきます。 |
 | 分類 | 現在は、「ルックアップデータセット」と呼ばれ、従来の Analytics からは自動的に読み込まれません。CJA で使用するには、AEP にアップロードする必要があります。 |
 | 顧客属性 | 名前が「プロファイルデータセット」に変わり、Experience Cloud から自動的に読み込まれませんが、CJA で使用する前に AEP にアップロードする必要があります。 |
-| デバイス、ブラウザー、技術ディメンション | これらのディメンションは、AEPデータセットに特定のXDMスキーマフィールドが含まれ、XDM Experienceイベントクラスに準拠している場合に、自動的に含められます。 |
-| 入口、出口およびタイムセントのディメンションと指標 | サポート対象(入口と出口は、現在はセッション開始とセッション終了と呼ばれています)で、計算方法が多少異なります。 |
+| デバイス、ブラウザー、テクノロジーのディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。 |
+| 入口、出口、および経過時間のディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 
 ## 部分的なサポート
 
 | 機能 | メモ |
 | --- | --- |
-| 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
+| 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar は、ADC ベースのデータセットでのみ機能します。ただし、これらのデータが同じ XDM スキーマに厳密に準拠している場合を除きます（前述の製品リストの制限と同様）。 |
 | ボットフィルタリング | Analytics コネクタ（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
