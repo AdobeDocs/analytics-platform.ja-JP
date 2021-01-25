@@ -1,9 +1,9 @@
 ---
 description: Workspace の合計の計算方法。
 title: Workspace の合計
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
 ht-degree: 100%
 
