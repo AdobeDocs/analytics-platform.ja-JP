@@ -1,11 +1,11 @@
 ---
 title: データレイヤーの作成
 description: Customer Journey Analytics （CJA）で、プラットフォームデータセットへのデータビューを作成する方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 Customer Journey Analytics の Workspace プロジェクトは、データビューに基づいています。
 
-ビデオの概要については、[こちら](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html)をクリックしてください。
+ビデオの概要については、[こちら](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/cja/basic-configuration-for-data-views.html)をクリックしてください。
 
 ## 前提条件
 
@@ -55,6 +55,6 @@ Customer Journey Analytics の Workspace プロジェクトは、データビュ
 
 1. 次の手順では、[コンポーネントとアトリビューションの設定を指定](/help/data-views/configure-dataviews.md)します。
 
-## データ表示の削除
+## データビューの削除
 
-[!UICONTROL Customer Journey Analytics]のデータ表示ーを削除すると、この削除されたデータ表示ーに依存するWorkspaceプロジェクトが動作しなくなることを示すエラーメッセージが表示されます。
+[!UICONTROL Customer Journey Analytics] のデータビューを削除すると、この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。
