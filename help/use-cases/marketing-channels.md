@@ -1,65 +1,65 @@
 ---
-title: Adobe Experience Platformでのマーケティングチャネルディメンションの使用
-description: Analytics Data Connectorを使用して、マーケティングチャネルの処理ルールをAdobe Experience Platformに取り込みます。
-translation-type: tm+mt
+title: Adobe Experience Platform でのマーケティングチャネルディメンションの使用
+description: Analytics Data Connector を使用して、マーケティングチャネルの処理ルールを Adobe Experience Platform に取り込みます。
+translation-type: ht
 source-git-commit: b5ed4c65877fa8e2de83810a3c4bd1a4048f5b31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Platformでのマーケティングチャネルディメンションの使用
+# Adobe Experience Platform でのマーケティングチャネルディメンションの使用
 
-組織で[Analytics Data Connector](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html)を使用してレポートスイートデータをCJAに送信する場合、CJAでチャネルを設定して、マーケティング接続のディメンションに関するレポートを作成できます。
+組織で [Analytics Data Connector](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html) を使用してレポートスイートデータを CJA に送信する場合、CJA で接続を設定して、マーケティングチャネルディメンションに関する報告を行うことができます。
 
 ## 前提条件
 
-* [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html)を使用して、レポートスイートのデータを既にAdobe Experience Platformにインポートしておく必要があります。 他のデータソースはサポートされません。マーケティングチャネルは、Analyticsレポートスイートの処理ルールに依存しています。
-* マーケティングチャネルの処理ルールは、既に設定されている必要があります。 従来のAnalyticsコンポーネントガイドの[マーケティングチャネルの処理ルール](https://docs.adobe.com/content/help/ja-JP/analytics/components/marketing-channels/c-rules.html)を参照してください。
+* [Analytics Data Connector](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html) を使用して、事前にレポートスイートデータを Adobe Experience Platform に読み込んでおく必要があります。他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
+* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。従来の Analytics コンポーネントガイドの「[マーケティングチャネルの処理ルール](https://docs.adobe.com/content/help/ja-JP/analytics/components/marketing-channels/c-rules.html)」を参照してください。
 
-## マーケティングチャネルスキーマ要素
+## マーケティングチャネルのスキーマ要素
 
-目的のレポートスイートにAnalytics Data Connectorを確立すると、XDMスキーマが作成されます。 このスキーマには、すべてのAnalyticsディメンションおよび指標が生データとして含まれます。 この生データには、アトリビューションや永続性は含まれません。 代わりに、各イベントはマーケティングチャネルの処理ルールを使用して、最初に一致したルールを記録します。 アトリビューションと永続性は、CJAでデータ表示を作成する際に指定します。
+目的のレポートスイートに Analytics Data Connector を確立すると、XDM スキーマが作成されます。 このスキーマには、すべての Analytics ディメンションと指標が生データとして含まれています。この生データには、アトリビューションや永続性は含まれていません。代わりに、各イベントはマーケティングチャネルの処理ルールを確認し、最初に一致したルールを記録します。アトリビューションと永続性は、CJA でデータビューを作成する際に指定します。
 
-1. [Analytics Data Connectorに基づくデータセットを含む](/help/connections/create-connection.md) 接続を作成します。
-2. [次のディメンションを含むデータ](/help/data-views/create-dataview.md) ビューを作成します。
-   * **`channel.typeAtSource`**: [Marketing ](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-channel.html) channeldimensionと同じです。
-   * **`channel._id`**:マー [ケティングチャネルの詳細と同じ](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-detail.html)
-3. 各ディメンションに、目的のアトリビューションモデルと持続性を指定します。 ファーストタッチディメンションとラストタッチディメンションの両方が必要な場合は、各マーケティングチャネルディメンションをコンポーネント領域に複数回ドラッグします。 各ディメンションに、目的のアトリビューションモデルと持続性を指定します。 Adobeでは、Workspaceで使いやすくするために、各ディメンションに表示名を付けることもお勧めします。
-4. データ表示を作成します。
+1. Analytics Data Connector に基づいたデータセットを含む[接続を作成](/help/connections/create-connection.md)します。
+2. 次のディメンションを含む[データビューを作成](/help/data-views/create-dataview.md)します。
+   * **`channel.typeAtSource`**：[マーケティングチャネル](https://docs.adobe.com/content/help/ja-JP/analytics/components/dimensions/marketing-channel.html)に相当します。
+   * **`channel._id`**：[マーケティングチャネルの詳細](https://docs.adobe.com/content/help/ja-JP/analytics/components/dimensions/marketing-detail.html)に相当します。
+3. 各ディメンションに、目的のアトリビューションモデルと永続性を指定します。ファーストタッチディメンションとラストタッチディメンションの両方が必要な場合は、各マーケティングチャネルのディメンションをコンポーネント領域に複数回ドラッグします。各ディメンションに、目的のアトリビューションモデルと永続性を指定します。Workspace で使いやすくするために、各ディメンションに表示名を付けることもお勧めします。
+4. データビューを作成します。
 
-マーケティングチャネルのディメンションがAnalysis Workspaceで使用できるようになりました。
+これで、マーケティングチャネルのディメンションを Analysis Workspace で使用できるようになります。
 
 ## 処理とアーキテクチャの違い
 
 >[!IMPORTANT]
 >
->レポートスイートデータとプラットフォームデータには、いくつかの基本的なデータの違いがあります。 Adobeでは、Platformでの適切なデータ収集を容易にするために、レポートスイートのマーケティングチャネルの処理ルールを調整することを強くお勧めします。
+>基本的に、レポートスイートデータと Platform データにはいくつかの違いがあります。Platform で適切なデータを容易に収集できるように、レポートスイートのマーケティングチャネルの処理ルールを調整しておくことを強くお勧めします。
 
-マーケティングチャネルの設定の動作は、プラットフォームデータとレポートスイートデータで異なります。 CJA用のマーケティングチャネルを設定する際は、次の点を考慮してください。
+マーケティングチャネルの設定の動作は、Platform データとレポートスイートデータで異なります。CJA 用のマーケティングチャネルを設定する際には、次の相違点を考慮してください。
 
-* **は訪問の最初のページ**:このルール条件は、複数のデフォルトのマーケティングチャネル定義で共通です。この条件を含む処理ルールは、プラットフォームでは無視されます（同じルール内の他の条件も引き続き適用されます）。 セッションは、データ収集時ではなく、データクエリ時に決定されるので、プラットフォームはこの特定のルール条件を使用できません。 Adobeでは、各マーケティングチャネル処理ルールから「訪問の最初のページ」条件を削除することを推奨します。
+* **訪問の最初のページ**：このルール条件は、複数のデフォルトのマーケティングチャネル定義に共通しています。この条件を含む処理ルールは、Platform では無視されます（同じルール内の他の条件は引き続き適用されます）。セッションは、データ収集時ではなくデータクエリ時に決定されます。このため、Platform でこの特定のルール条件の使用を回避できます。マーケティングチャネルの各処理ルールから「訪問の最初のページ」条件を削除することをお勧めします。
 
    ![訪問の最初のページ](assets/first-page-of-visit.png)
 
-* **ラストタッチチャネルを上書き**:マーケティングチャネルマネージャーのこの設定は、通常、特定のチャネルがラストタッチチャネルのクレジットを受け取るのを防ぎます。プラットフォームはこの設定を無視し、「直接」や「内部」などの幅広いチャネルを指標に対して好ましくない結果にすることができます。 Adobeでは、「ラストタッチチャネルを上書き」をオフにしているチャネルを削除することをお勧めします。
-   * マーケティングチャネルマネージャーで「ダイレクト」マーケティングチャネルを削除して、そのチャネルにCJAの「値なし」ディメンション項目を使用できます。 また、データ表示を設定する際に、このディメンション項目の名前を「直接」に変更したり、ディメンション項目を完全に除外したりすることもできます。
-   * また、マーケティングチャネルの分類を作成し、CJAから除外するチャネルを除き、各値をそれ自体に分類することもできます。 その後、データ表示を作成する際に、`channel.typeAtSource`の代わりにこの分類ディメンションを使用できます。
+* **ラストタッチチャネルの上書き**：マーケティングチャネルマネージャでこのオプションを設定すると、通常は、特定のチャネルがラストタッチチャネルのクレジットを受け取るのを回避できます。Platform ではこの設定が無視されるため、「ダイレクト」や「内部」などの幅広いチャネルが、潜在的に好ましくない方法で指標の影響を受けます。「ラストタッチチャネルの上書き」をオフにしているチャネルを削除することをお勧めします。
+   * マーケティングチャネルマネージャで「ダイレクト」マーケティングチャネルを削除して、そのチャネルの代わりに CJA の「値なし」ディメンション項目を使用できます。また、データビューを設定する際に、このディメンション項目の名前を「ダイレクト」に変更したり、ディメンション項目を完全に除外したりすることもできます。
+   * また、マーケティングチャネルの分類を作成し、CJA で除外するチャネル以外に、それぞれの各値を分類することもできます。その後、データビューを作成する際に、`channel.typeAtSource` の代わりに、この分類ディメンションを使用できます。
 
    ![ラストタッチチャネルの上書き](assets/override-last-touch-channel.png)
 
-* **マーケティングチャネルの有効期限**:このエンゲージメント期間の設定により、訪問者がレポートスイートデータの新しいファーストタッチチャネルを取得するまでの無操作時間を決定します。プラットフォームは独自のアトリビューション設定を使用するので、この設定はCJAでは完全に無視されます。
+* **マーケティングチャネルの期限**：このエンゲージメント期間の設定に従い、所定の時間何も操作がなければ、訪問者はレポートスイートデータで新しいファーストタッチチャネルを取得できます。Platform は独自のアトリビューション設定を使用するので、この設定は CJA では完全に無視されます。
 
    ![マーケティングチャネルの有効期限](assets/marketing-channel-expiration.png)
 
-## CJAと従来のAnalyticsのデータの比較
+## CJAと 従来の Analytics のデータの比較
 
-Adobe Experience Platformのアーキテクチャは、従来のAnalyticsレポートスイートとは異なるので、結果が一致するとは保証されません。 ただし、次のヒントを参考にして比較を簡単にすることができます。
+Adobe Experience Platform のアーキテクチャは、従来の Analytics レポートスイートとは異なるので、結果が一致するかどうかは保証されません。ただし、次のヒントを参考にすると、データの比較が容易になります。
 
-* 上記のアーキテクチャの違いが比較に影響しないことを確認します。 これには、ラストタッチチャネルを上書きしないチャネルの削除や、訪問（セッション）の最初のヒットであるルール条件の削除が含まれます。
-* 重複が、従来のAnalyticsと同じレポートスイートを使用していることを確認します。 CJA接続に、独自のマーケティングチャネル処理ルールを持つ複数のレポートスイートが含まれる場合、従来のAnalyticsと比較するのは簡単ではありません。 データを比較するために、各レポートスイートに対して個別の接続を作成する必要があります。
-* 同じ日付範囲を比較し、データ表示のタイムゾーン設定がレポートスイートのタイムゾーンと同じであることを確認してください。
-* レポートスイートデータを表示する場合は、カスタムアトリビューションモデルを使用します。 例えば、[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html)ディメンションは、デフォルト以外のアトリビューションモデルを使用する指標で使用します。 デフォルトのディメンション[ファーストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html)または[ラストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html)を比較する場合、Adobeは、レポートスイートで収集されるアトリビューションに依存するので、これらのディメンションを比較することをお勧めします。 CJAは、レポートスイートのアトリビューションデータに依存しません。代わりに、CJAレポートを実行したときに計算されます。
-* レポートスイートデータとプラットフォームデータの間でアーキテクチャの違いがあるので、一部の指標は妥当な比較を行いません。 訪問回数/セッション、訪問者数/人、回数/イベントなどが例です。
+* 上記のアーキテクチャの違いが比較に影響しないことを確認します。これには、ラストタッチチャネルを上書きしないチャネルの削除や、訪問（セッション）の初回ヒットというルール条件の削除が含まれます。
+* 接続で、従来の Analytics と同じレポートスイートが使用されていることを再確認します。CJA 接続に、独自のマーケティングチャネル処理ルールを持つ複数のレポートスイートが含まれる場合、従来の Analytics と比較するのは容易ではありません。 データを比較するには、各レポートスイートに対して個別に接続を作成する必要があります。
+* 同じ日付範囲を比較すること、およびデータビューのタイムゾーン設定がレポートスイートのタイムゾーンと同じであることを確認してください。
+* レポートスイートデータを表示する際には、カスタムアトリビューションモデルを使用します。例えば、デフォルト以外のアトリビューションモデルを使用する指標を含む[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=ja-JP)ディメンションを使用します。デフォルトのディメンションである[ファーストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=ja-JP)または[ラストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=ja-JP)に対する比較はおこなわないことをお勧めします。これは、これらがレポートスイートで収集されるアトリビューションに依存しているためです。CJA は、レポートスイートのアトリビューションデータに依存しません。代わりに、CJA レポートを実行したときに計算されます。
+* レポートスイートデータと Platform データのアーキテクチャの違いにより、一部の指標は適切に比較されません。例えば、訪問回数/セッション、訪問者数/人、回数/イベントなどは適切に比較されません。
