@@ -1,31 +1,31 @@
 ---
-title: データセットに対する追加グローバル参照
-description: グローバル検索を使用して、Customer Journey Analyticsで役立つディメンションを使用してレポートを拡張します。
+title: データセットへのグローバル検索の追加
+description: グローバル検索を使用して、Customer Journey Analytics の便利なディメンションでレポートを拡張します。
 translation-type: tm+mt
 source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# データセットに対する追加グローバル参照
+# データセットへのグローバル検索の追加
 
-グローバル検索を使用すると、Customer Journey Analyticsが自分では役に立たないが他のデータと結合する場合に役立つディメンションや属性の一部をレポートできるようになります。 例としては、モバイルデバイスの属性、ブラウザーのバージョン番号など、OSディメンションとブラウザーディメンションの属性が含まれます。 「グローバルルックアップ」は、ルックアップデータセット(従来のAdobe Analyticsでは分類と呼ばれています)に非常に似ています。 ただし、グローバル検索はExperience Cloud組織全体に適用できます。 グローバル検索は、特定のXDMスキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（以下で、各フィールドについて説明します）。
-Adobeが分類するスキーマの場所ごとに、グローバルルックアップデータセットが存在します。 グローバル参照データセットは、Analyticsソースコネクターで使用することも、グローバル参照データセットを受け入れる他のカスタムデータセットと共に使用することもできます。
+グローバル検索を使用すると、Customer Journey Analytics の機能が強化され、単体では役に立たないけれど他のデータと結合すると便利なディメンションや属性の一部を報告できるようになります。例としては、モバイルデバイスの属性、OS ディメンションとブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「グローバル検索」は、検索データセット（従来の Adobe Analytics では分類と呼ばれています）と非常に似ていますが、グローバル検索は Experience Cloud の組織全体に適用できます。グローバル検索は、特定の XDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（各フィールドについては、以下を参照してください）。
+分類されるスキーマの各場所に、グローバル検索データセットがあります。グローバル検索データセットは、Analytics Source コネクタで使用することも、グローバル検索データセットを受け入れる他のカスタムデータセットで使用することもできます。
 
-従来のAdobe Analyticsでは、これらのディメンションはそれぞれ表示されますが、CJAでは、データ表示を作成する際に、これらのディメンションを積極的に含める必要があります。 Connectionsワークフローで、グローバル検索のキーを持つデータセットとしてフラグ付けされたデータセットを選択すると、レポートに使用できるすべてのグローバル参照ディメンションがデータ表示UIに含まれます。 データ表示ワークフローでは、データ表示に使用できるグローバルルックアップディメンションが含まれています。 すべての地域およびすべてのアカウントで、ルックアップファイルは自動的に最新の状態に保たれ、使用可能になります。 顧客に関連付けられた地域固有の組織に保存されます。
+従来の Adobe Analytics では、これらのディメンションは単独で表示されます。一方、CJA では、データビューを作成する際に、これらのディメンションを積極的に含める必要があります。接続ワークフローで、グローバル検索のキーを持つデータセットとしてフラグ付けされたデータセットを選択すると、すべてのグローバル検索ディメンションがレポートに使用可能なものとしてデータビューの UI に含まれます。データビューワークフローでは、これらのグローバル検索ディメンションが含まれ、データビューに使用できます。すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。これらは、顧客に関連付けられた地域固有の組織に保存されます。
 
-## AdobeData Connectorデータセットに対するグローバル検索の使用
+## Adobe Data Connector データセットでグローバル検索を使用する
 
-グローバル参照データセットは、レポート時に自動的に適用されます。 [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors)を使用し、Adobeがグローバル参照を提供するディメンションを取り込む場合、このグローバル参照が自動的に適用されます。 イベントデータセットに[XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)フィールドが含まれている場合は、それに対してグローバル検索を適用できます。
+グローバル検索データセットは、レポート時に自動的に適用されます。[Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja-JP#connectors) を使用している場合、グローバル検索が提供されているディメンションを取り込むと、このグローバル検索が自動的に適用されます。イベントデータセットに [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja-JP) フィールドが含まれている場合は、それに対してグローバル検索を適用できます。
 
-## カスタムデータセットを使用したグローバル検索の使用
+## カスタムデータセットでグローバル検索を使用する
 
-イベントデータセットには、グローバル参照データセットと互換性のあるキーが必要です。 標準の[Adobe Experience Platformスキーマミックスイン](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins)を追加して、適切なXDMフィールドにデータを入力する限り、カスタムデータセットをグローバルルックアップで動作させることができます。
+イベントデータセットには、グローバル検索データセットと互換性のあるキーが必要です。標準の [Adobe Experience Platform スキーマの Mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=ja-JP#mixins) を追加して適切な XDM フィールドにデータを入力する場合に限り、カスタムデータセットをグローバル検索で動作させることができます。
 
-## 使用可能なグローバルルックアップフィールド
+## 使用可能なグローバル検索フィールド
 
 * `browser`
    * `browser`、`group_id`、`id`
@@ -58,13 +58,13 @@ Adobeが分類するスキーマの場所ごとに、グローバルルックア
 * `mobile_screen_width`
 * `mobile_video_support - multi`
 
-## グローバル参照ディメンションに関するレポート
+## グローバル検索ディメンションに関する報告
 
-グローバル参照ディメンションに関するレポートを作成するには、Customer Journey Analyticsでデータ表示を作成する際にディメンションを追加する必要があります。
+グローバル検索ディメンションについて報告するには、Customer Journey Analytics でデータビューを作成する際にそれらのディメンションを追加する必要があります。
 
 ![](assets/global-lookup.png)
 
-その後、Workspaceで参照データを表示できます。
+これで、Workspace で検索データを確認できます。
 
 ![](assets/gl-reporting.png)
 
