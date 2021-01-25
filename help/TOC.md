@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 93%
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
    + [接続の管理](connections/manage-connection.md)
-   + [接続サイズの見積もり](connections/estimate-connection-size.md)
+   + [接続サイズの予測](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
    + チャネル間分析{#cca}
       + [チャネル間分析の概要](connections/cca/overview.md)
@@ -156,10 +156,10 @@ ht-degree: 93%
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
-   + [コールセンターとWebデータのインポート](use-cases/call-center.md)
+   + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
-   + [マーケティングチャネルのディメンションの使用](use-cases/marketing-channels.md)
-   + [データセットに対する追加グローバル参照](use-cases/global-lookups.md)
+   + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
+   + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
 + [CJA ドキュメントのアップデート](doc-changes.md)
