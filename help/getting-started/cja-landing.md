@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics ガイド
 description: Customer Journey Analytics のランディングページ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja-JP#cja-connections"> チャネル間分析に関する新しいドキュメント(Customer Journey AnalyticsでのIDの関連付け)  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> 更新されたユーザー権限の要件  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> オブジェクトの配列の使用 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja-JP#cja-connections">クロスチャネル分析に関する新しいドキュメント（Customer Journey Analytics での ID のステッチ）</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja-JP#admin-access-permissions">ユーザー権限の要件を更新</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=ja-JP#cja-usecases"> オブジェクトの配列の使用 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-usecases/b2b.html">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics を使い始める</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-faq.html">よくある質問</a> </li> 
