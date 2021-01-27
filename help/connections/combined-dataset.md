@@ -2,10 +2,10 @@
 title: 組み合わせイベントデータセット
 description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
 translation-type: tm+mt
-source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
+source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 * スキーマは組み合わせられます。重複スキーマフィールドが結合されます。
 * 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、CJA における個別訪問者を識別する際の基礎となります。
 * 行はタイムスタンプに基づいて処理されます。
+
+データセットを組み合わせる概念は、従来のAdobe Analyticsのレポートスイートを組み合わせる概念と似ています。
 
 ## 例
 
