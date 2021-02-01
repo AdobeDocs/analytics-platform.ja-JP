@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 75%
+source-wordcount: '1014'
+ht-degree: 76%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 75%
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
 | GDPR の削除 | GDPRは現在[!UICONTROL Adobe Experience Platform]と連携して処理されていることに注意してください。CJAは、基礎となるデータセットに対して[!UICONTROL Experience Platform]が行うデータ変更を継承します。 |
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
+| デバイス間/チャネル間のステッチ | 「[チャネル間分析](/help/connections/cca/overview.md)」を参照してください。 |
 | 標準搭載のAnalysis Workspaceディメンション(例：ブラウザータイプ、転送者タイプ、オペレーティングシステムなど) | ベースXDMフィールド（ユーザーエージェントやデバイスIDなど）に値が入力されている限り、CJAはネイティブでこれらのディメンションを提供します。 Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | レポート API へのアクセス | 現在、Analytics API 2.0を使用して使用できます。 |
 
@@ -59,8 +60,7 @@ ht-degree: 75%
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | マーチャンダイジング eVar | マーチャンダイジングeVarの動作は、マーチャンダイジングeVarが永続性を使用するように設定されていない場合、オブジェクト配列内のディメンションを使用して達成できます。 現在、マーチャンダイジングディメンションは使用できません。 |
 | ボットフィルタリング | Analytics コネクタ（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
-| 処理ルール | ADC ベースのデータセットの場合、処理ルールは引き続き適用されます。 |
-| デバイス間での ID のステッチ | CJAは、デバイス間の、チャネル間のIDの切り替えを継続的にサポートします。これには、履歴データの定期的な再記述も含まれます。 現在のところ、これは単一のcookie IDと組み合わせた1つの顧客セットIDを使用する場合にのみ可能です。 |
+| 処理ルール | Analytics Data Connectorベースのデータセットの場合、処理ルールは引き続き適用されます。 |
 | Media Analytics | メディアデータは、Analyticsデータコネクタの一部として使用できます。 |
 
 ## 現在はサポートされていませんが、予定されています
