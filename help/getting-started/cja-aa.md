@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: c70662468126279110f14291c135a3f60dd919db
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 97%
+source-wordcount: '1043'
+ht-degree: 75%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## 完全にサポートされる機能／コンポーネント
 
-| 機能 | メモ |
+| Adobe Analytics機能 | メモ |
 | --- | --- |
 | 指標 | CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | ディメンション | CJA は XDM を活用し、無制限のディメンションをサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。 |
@@ -34,18 +34,20 @@ ht-degree: 97%
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
 | GDPR の削除 | GDPRは現在[!UICONTROL Adobe Experience Platform]と連携して処理されていることに注意してください。CJAは、基礎となるデータセットに対して[!UICONTROL Experience Platform]が行うデータ変更を継承します。 |
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
+| 標準搭載のAnalysis Workspaceディメンション(例：ブラウザータイプ、転送者タイプ、オペレーティングシステムなど) | ベースXDMフィールド（ユーザーエージェントやデバイスIDなど）に値が入力されている限り、CJAはネイティブでこれらのディメンションを提供します。 Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
+| レポート API へのアクセス | 現在、Analytics API 2.0を使用して使用できます。 |
 
 ## サポート（注意が必要）
 
 | 機能 | メモ |
 | --- | --- |
-| products 変数 | エクスペリエンスイベントスキーマに準拠したデータのレポートに現在使用できる product 変数（特に productListItems オブジェクトを使用したもの）。 |
-| マーケティングチャネル | マーケティングチャネルのデータは、Analytics Data Connector を介して CJA に渡されるようになりました。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja-JP#cja-usecases)を参照してください。 |
+| products 変数 | Experience Platform内で、データセットスキーマ内でObject型のフィールドの配列を使用して、この使用例を満たすことができます。 CJAでは、お客様は任意の数の製品変数を使用でき、Adobe Analyticsのように単一の変数に制限されません。 |
+| マーケティングチャネル | マーケティングチャネルのデータは、Analytics Data Connectorを介してCJAに渡されます。 従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja-JP#cja-usecases)を参照してください。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
-| eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。つまり、すべての永続性は、データ全体ではなく、レポートの日付範囲に基づきます。 |
-| 分類 | 現在は、「ルックアップデータセット」と呼ばれ、従来の Analytics からは自動的に読み込まれません。CJA で使用するには、AEP にアップロードする必要があります。 |
+| eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。Data表示内で設定されるDimensionは、最大持続時間が90日に制限され、無制限の永続性はサポートされません。 |
+| 分類 | 「参照データセット」という名称に変更されました。 Analyticsで使用される分類は、Analytics Classifications Data Connectorを使用してExperience PlatformおよびCJAにインポートできます。 参照データセットはAEPに直接アップロードして、CJAで使用することもできます。 |
 | 顧客属性 | 名前が「プロファイルデータセット」に変わり、Experience Cloud から自動的に読み込まれませんが、CJA で使用する前に AEP にアップロードする必要があります。 |
 | デバイス、ブラウザー、テクノロジーのディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。 |
 | 入口、出口、および経過時間のディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
@@ -54,12 +56,12 @@ ht-degree: 97%
 
 | 機能 | メモ |
 | --- | --- |
-| 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、マーケティングチャネル、訪問回数など） | CJA は、これらのディメンションをネイティブでは提供しません。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
-| マーチャンダイジング eVar | マーチャンダイジング eVar は、ADC ベースのデータセットでのみ機能します。ただし、これらのデータが同じ XDM スキーマに厳密に準拠している場合を除きます（前述の製品リストの制限と同様）。 |
+| マーチャンダイジング eVar | マーチャンダイジングeVarの動作は、マーチャンダイジングeVarが永続性を使用するように設定されていない場合、オブジェクト配列内のディメンションを使用して達成できます。 現在、マーチャンダイジングディメンションは使用できません。 |
 | ボットフィルタリング | Analytics コネクタ（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | 処理ルール | ADC ベースのデータセットの場合、処理ルールは引き続き適用されます。 |
-| デバイス間での ID のステッチ | お客様は、クエリサービスを通じて、データの「1 回限り」のステッチに制限されているか、現在、[!UICONTROL Experience Platform] データ取り込みの前に、このロジックをデータに適用する必要があります。 |
+| デバイス間での ID のステッチ | CJAは、デバイス間の、チャネル間のIDの切り替えを継続的にサポートします。これには、履歴データの定期的な再記述も含まれます。 現在のところ、これは単一のcookie IDと組み合わせた1つの顧客セットIDを使用する場合にのみ可能です。 |
+| Media Analytics | メディアデータは、Analyticsデータコネクタの一部として使用できます。 |
 
 ## 現在はサポートされていませんが、予定されています
 
@@ -69,15 +71,12 @@ ht-degree: 97%
 | Segment IQ | サポートが予定されています。 |
 | セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
 | CSV のダウンロード | サポートが予定されています。 |
-| 指標の重複排除 | サポートが予定されています。 |
 | カスタムカレンダー | サポートが予定されています。 |
 | 指標の重複排除 | サポートが予定されています。 |
 | マーチャンダイジング変数の持続性 | サポートが予定されています。 |
 | 予定レポート／プロジェクト | サポートが予定されています。 |
 | アラート | サポートが予定されています。 |
-| カスタムカレンダー | サポートが予定されています。 |
 | PDF の書き出し | サポートが予定されています。 |
-| レポート API へのアクセス | サポートが予定されています。API 2.0 でのみ利用できるようになる予定です。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | Report Builder（Excel プラグイン） | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
@@ -87,7 +86,6 @@ ht-degree: 97%
 | 機能 | メモ |
 | --- | --- |
 | A4T | まだサポートの予定はありません。 |
-| Media Analytics | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
 | Activity Map | まだサポートの予定はありません。 |
 | 分類ルールビルダー | まだサポートの予定はありません。 |
