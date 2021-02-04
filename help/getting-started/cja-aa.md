@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 76%
 | 仮想レポートスイート | 現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | VRS コンポーネントのキュレーション | データビューの一部になりました。 |
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
-| GDPR の削除 | GDPRは現在[!UICONTROL Adobe Experience Platform]と連携して処理されていることに注意してください。CJAは、基礎となるデータセットに対して[!UICONTROL Experience Platform]が行うデータ変更を継承します。 |
+| GDPR の削除 | GDPR は [!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータ変更をすべて継承します。 |
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
 | デバイス間/チャネル間のステッチ | 「[チャネル間分析](/help/connections/cca/overview.md)」を参照してください。 |
 | 標準搭載のAnalysis Workspaceディメンション(例：ブラウザータイプ、転送者タイプ、オペレーティングシステムなど) | ベースXDMフィールド（ユーザーエージェントやデバイスIDなど）に値が入力されている限り、CJAはネイティブでこれらのディメンションを提供します。 Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
