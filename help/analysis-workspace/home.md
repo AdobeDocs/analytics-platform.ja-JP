@@ -1,12 +1,12 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace の概要
-description: Analysis Workspace業態概要
-translation-type: tm+mt
+description: Analysis Workspace 機能の概要
+translation-type: ht
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Analysis Workspace は分析をすばやく構築してインサイトを共有�
 
 数分しか時間が取れない場合は、この短い概要を視聴し、何ができるかをご確認ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=jpn)
 
 ## Adobe Analytics へのログイン {#login}
 
