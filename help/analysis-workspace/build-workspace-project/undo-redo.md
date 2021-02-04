@@ -1,12 +1,12 @@
 ---
-description: Analysis Workspaceの「取り消し」と「やり直し」のオプションについて説明します。
+description: Analysis Workspace の「取り消し」と「やり直し」のオプションについて説明します。
 title: 「元に戻す」および「やり直し」の設定
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
