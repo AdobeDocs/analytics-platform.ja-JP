@@ -1,18 +1,18 @@
 ---
 title: コールセンターデータと web データの読み込み
 description: コールセンターと web サイトのデータをリンクさせるデータセットの作成方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # コールセンターデータと web データの読み込み
 
-Customer Journey Analytics には、様々なソースのデータセットを 1 つの Workspace プロジェクトに組み合わせるための、重要で堅牢な機能が用意されています。このガイドでは、貴社がWebサイトのデータをコールセンターのデータと組み合わせる方法を説明します。
+Customer Journey Analytics には、様々なソースのデータセットを 1 つの Workspace プロジェクトに組み合わせるための、重要で堅牢な機能が用意されています。このガイドでは、貴社が Web サイトのデータをコールセンターのデータと組み合わせる方法を説明します。
 
 ## 前提条件
 
@@ -31,7 +31,7 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## Platform への web データおよびコールセンターデータの読み込み
 
-データをAdobe Experience Platformにインポートします。 Adobe Experience Platform のドキュメントの[スキーマの作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html)と[データの取り込み](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html)に関するページを参照してください。
+データを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html)と[データの取り込み](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html)に関するページを参照してください。
 
 プラットフォームにデータを読み込む際に、次のヒントに従うことで、結果のレポートについてより深く理解することができます。
 
@@ -43,13 +43,13 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 CJA では、[結合データセット](../connections/combined-dataset.md)を生成する際に、共通の識別情報が必要です。
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* 一部のイベントにのみ共通のIDが設定されているデータセットがある場合は、クロスチャネル分析を使用してデータを結合できます。 これらの2つのデータセットに対してCCAを有効にする手順については、[チャネル間分析の概要](/help/connections/cca/overview.md)を参照してください。
+* いずれかのデータセットに、一部のイベントにのみ共通する識別情報がある場合は、クロスチャネル分析を使用してデータを結合できます。これらの 2 つのデータセットに対してクロスチャネル分析を有効にする手順については、「[クロスチャネル分析の概要](/help/connections/cca/overview.md)」を参照してください。
 
-## CJA での接続の作成
+## Customer Journey Analytics（CJA）での接続の作成
 
 CJA で[接続を作成](/help/connections/create-connection.md)します。
 
-* CCA を使用している場合、新しいステッチ済みデータセットを利用できます。新しく作成したステッチ済み ID フィールドをユーザー ID として使用します。
+* クロスチャネル分析を使用している場合、新しいステッチ済みデータセットを利用できます。新しく作成したステッチ済み ID フィールドをユーザー ID として使用します。
 * それ以外の場合は、元の web データセットとコールセンターデータセットの両方を選択して、接続に使用できます。
 
 ## データレイヤーの作成
@@ -63,7 +63,7 @@ CJA で[接続を作成](/help/connections/create-connection.md)します。
 
 ### データセットの重複
 
-このビジュアライゼーションは、CCA がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
+このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
 1. 2 つのフィルターを作成します。これら 2 つのフィルターで使用される変数は、各イベントのデータソースを反映する、前述の変数と同じです。詳しくは、[フィルターの作成](/help/components/filters/create-filters.md)に関するページを参照してください。
    * データセット ID と web データが同じユーザーコンテナ
