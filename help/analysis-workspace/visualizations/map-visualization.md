@@ -1,11 +1,11 @@
 ---
-description: Analysis Workspaceで指標のビジュアルマップを作成する方法を説明します。
+description: Analysis Workspace で指標のビジュアルマップを作成する方法を説明します。
 title: マップ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
