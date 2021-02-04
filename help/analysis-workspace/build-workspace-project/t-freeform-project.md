@@ -2,9 +2,9 @@
 description: プロジェクトを作成して、コンポーネント（ディメンション、指標、セグメントおよびデータ範囲）をフリーフォームパネルに追加します。
 keywords: Analysis Workspace
 title: Workspace プロジェクトの作成
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
 ht-degree: 100%
 
