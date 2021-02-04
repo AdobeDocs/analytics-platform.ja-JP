@@ -17,11 +17,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,10 +40,10 @@ ht-degree: 98%
    + [接続の管理](connections/manage-connection.md)
    + [接続サイズの予測](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
-   + チャネル間分析{#cca}
-      + [チャネル間分析の概要](connections/cca/overview.md)
+   + クロスチャネル分析 {#cca}
+      + [クロスチャネル分析の概要](connections/cca/overview.md)
       + [再生の仕組み](connections/cca/replay.md)
-      + [チャネル間分析FAQ](connections/cca/faq.md)
+      + [クロスチャネル分析に関する FAQ](connections/cca/faq.md)
 + データビュー {#cja-dataviews}
    + [データレイヤーの作成](data-views/create-dataview.md)
    + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
