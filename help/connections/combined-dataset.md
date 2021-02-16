@@ -1,11 +1,11 @@
 ---
 title: 組み合わせイベントデータセット
 description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 * 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、CJA における個別訪問者を識別する際の基礎となります。
 * 行はタイムスタンプに基づいて処理されます。
 
-データセットを組み合わせる概念は、従来のAdobe Analyticsのレポートスイートを組み合わせる概念と似ています。
+データセットの結合の概念は、従来の Adobe Analytics におけるレポートスイートの組み合わせの概念と似ています。
 
 ## 例
 
@@ -74,5 +74,5 @@ ht-degree: 94%
 | string_color | metric_a |
 | --- | --- |
 | 黄色 | 6 |
-| 青 | 1 |
+| 青 | 3 |
 | 赤 | 2 |
