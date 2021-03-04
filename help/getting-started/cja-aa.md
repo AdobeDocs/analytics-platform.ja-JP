@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 translation-type: tm+mt
-source-git-commit: 1a436ac162df0ae96525fd2e71daef55b078a59c
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 94%
+source-wordcount: '1035'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 ## 完全にサポートされる機能／コンポーネント
 
-| Adobe Analytics 機能 | メモ |
+| Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
 | 指標 | CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | ディメンション | CJAはXDMを利用し、無制限のディメンションをサポートします。従来のAnalyticsのカスタムeVarやpropとは結び付けられません。 |
@@ -100,5 +100,4 @@ ht-degree: 94%
 * Reports &amp; Analytics のブックマーク
 * Reports &amp; Analytics のターゲット
 * Reports &amp; Analytics のカレンダーイベント
-* Ad Hoc Analysis
 * Mobile Services
