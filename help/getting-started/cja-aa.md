@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
-translation-type: ht
-source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1a436ac162df0ae96525fd2e71daef55b078a59c
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 100%
 | Adobe Analytics 機能 | メモ |
 | --- | --- |
 | 指標 | CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
-| ディメンション | CJA は XDM を活用し、無制限のディメンションをサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。 |
-| リスト変数／リスト prop | CJA は XDM を活用し、無制限のリスト変数をサポートします。 |
+| ディメンション | CJAはXDMを利用し、無制限のディメンションをサポートします。従来のAnalyticsのカスタムeVarやpropとは結び付けられません。 |
+| リスト変数／リスト prop | CJAはXDMを利用し、listVarsと同様に使用できる無制限の文字列配列をサポートします。 |
 | 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
@@ -80,6 +80,7 @@ ht-degree: 100%
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | Report Builder（Excel プラグイン） | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
+| Data Warehouseレポート（100%行のエクスポート） | Analysis Workspaceのインターフェースからのサポートが予定されています。 [!UICONTROL また、Experience Platformクエリ] サービスは、CJAでこれらの使用例に使用するインターフェイスも提供します。 |
 
 ## サポートの予定はありません。
 
@@ -90,6 +91,7 @@ ht-degree: 100%
 | Activity Map | まだサポートの予定はありません。 |
 | 分類ルールビルダー | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
+| データフィード | まだサポートの予定はありません。 |
 
 ## サポートされません
 
@@ -99,6 +101,4 @@ ht-degree: 100%
 * Reports &amp; Analytics のターゲット
 * Reports &amp; Analytics のカレンダーイベント
 * Ad Hoc Analysis
-* Data Warehouse レポート - [!UICONTROL Experience Platform Query Service]は、CJA におけるこれらの使用例の新しいインターフェイスとなります。
 * Mobile Services
-* データフィード
