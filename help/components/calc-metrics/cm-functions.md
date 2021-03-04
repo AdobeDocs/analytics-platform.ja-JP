@@ -2,9 +2,9 @@
 title: リファレンス - 基本的な関数
 description: '計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。 '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1079'
 ht-degree: 100%
 
 ---
@@ -324,10 +324,4 @@ VARIANCE(metric)
 
 3
 
-この列の平均は 2 です。この列の平方偏差は、((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3 です。Ad Hoc Analysis では、次のようになります。
-
-1 2/3
-
-2 2/3
-
-3 2/3
+この列の平均は 2 です。この列の平方偏差は、((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3 です。
