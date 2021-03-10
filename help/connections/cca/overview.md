@@ -1,11 +1,11 @@
 ---
 title: クロスチャネル分析の概要
 description: 複数のデータセットの訪問者 ID のキーを変更して、訪問者をステッチします。
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +45,8 @@ ht-degree: 100%
 * イベントデータセットのみがサポートされます。参照データセットなどの他のデータセットはサポートされていません。
 * 組織で使用されているカスタム ID マップはサポートされていません。
 * Adobe Co-op グラフとプライベートグラフはサポートされていません。
+* チャネル間の分析では、ステッチに使用されるフィールドは変換されません。 フィールドベースのステッチでは、指定したフィールドの値が、データレーク内の未関連付けデータセットに存在する値として使用されます。 例えば、フィールドに「Bob」という単語が表示され、場合によっては「BOB」という単語が表示される場合、これらは2人の別々の人として扱われます。
+
 
 ## クロスチャネル分析の有効化
 
