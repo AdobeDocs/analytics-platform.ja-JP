@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 93%
 | Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
 | 指標 | CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
-| ディメンション | CJAはXDMを利用し、無制限のディメンションをサポートします。従来のAnalyticsのカスタムeVarやpropとは結び付けられません。 |
-| リスト変数／リスト prop | CJAはXDMを利用し、listVarsと同様に使用できる無制限の文字列配列をサポートします。 |
+| ディメンション | CJA では XDM を活用し、無制限のディメンションをサポートしています。従来の Analytics のカスタム eVar や prop とは関係ありません。 |
+| リスト変数／リスト prop | CJA では XDM を活用し、listVar と同様に使用できる無制限の文字列配列をサポートしています。 |
 | 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
@@ -80,9 +80,9 @@ ht-degree: 93%
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | Report Builder（Excel プラグイン） | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
-| Data Warehouseレポート（100%行のエクスポート） | Analysis Workspaceのインターフェースからのサポートが予定されています。 [!UICONTROL また、Experience Platformクエリ] サービスは、CJAでこれらの使用例に使用するインターフェイスも提供します。 |
+| Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、[!UICONTROL Experience Platform クエリサービス]でも、CJA におけるこれらの使用例に対応するインターフェイスを提供しています。 |
 
-## サポートの予定はありません。
+## サポートの予定はありません
 
 | 機能 | メモ |
 | --- | --- |
