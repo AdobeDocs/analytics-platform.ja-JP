@@ -1,20 +1,20 @@
 ---
-title: Customer Journey Analyticsダッシュボード — 概要
+title: Analyticsダッシュボード — 概要
 description: Customer Journey Analyticsダッシュボード向けの製品ドキュメントとセルフヘルプ
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 79%
+source-wordcount: '204'
+ht-degree: 87%
 
 ---
 
 
-# Customer Journey Analytics[!UICONTROL ダッシュボード] — 概要
+# Analytics [!UICONTROL ダッシュボード] — 概要
 
-**Customer Journey Analytics ** ダッシュボードは、Customer Journey Analyticsからいつでも、どこでも洞察を提供します。このアプリケーションでは、モバイルで直感的なスコアカードにアクセスできます。スコアカードは、主要指標とその他のコンポーネントを並べて表示したレイアウトで構成され、タップすると、より詳細な分類やトレンドレポートを表示できます。モバイルアプリは iOS と Android の両方のオペレーティングシステムでサポートされています。
+**解析 ** ダッシュボードは、Customer Journey Analyticsからいつでも、どこでも洞察を提供します。このアプリケーションでは、モバイルで直感的なスコアカードにアクセスできます。スコアカードは、主要指標とその他のコンポーネントを並べて表示したレイアウトで構成され、タップすると、より詳細な分類やトレンドレポートを表示できます。モバイルアプリは iOS と Android の両方のオペレーティングシステムでサポートされています。
 
-Customer Journey Analytics[!UICONTROL ダッシュボード]の詳細については、以下の資料を参照してください。
+ Analytics [!UICONTROL ダッシュボード]について詳しくは、次のリソースを参照してください。
 
 * [キュレーターガイド](/help/mobile-app/curator.md)：このガイドは、データのキュレーターが[!UICONTROL ダッシュボード]でエグゼクティブユーザーのスコアカードを設定するのに役立つように作成されています。キュレーターは、組織の管理者、またはスコアカードの設定を担当する他の役割を持つ人です。
 
