@@ -2,7 +2,7 @@
 title: Analysis Workspaceでのユーザ環境設定の設定方法
 description: ユーザーに対して一般環境設定とプロジェクト環境設定を設定できます。
 translation-type: tm+mt
-source-git-commit: 90b69c13a7a63228f62c4b6291b3d66f8e3c821b
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 18%
@@ -36,8 +36,8 @@ ht-degree: 18%
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **表示** |  |  |
-|  | [表示密度](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-|  | [カラーパレット](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Adobeが提供するパレット（デフォルト）</li><li>カスタム定義パレット</li></ul> |
+|  | [表示密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
+|  | [カラーパレット](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Adobeが提供するパレット（デフォルト）</li><li>カスタム定義パレット</li></ul> |
 | **データ** |  |  |
 |  | [レポートスイート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>最新（デフォルト）</li><li>特定 —リストから選択</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | **[!UICONTROL 今月]**（デフォルト）を含む、すぐに使用できる日付範囲のリスト |
