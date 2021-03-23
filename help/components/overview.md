@@ -1,11 +1,11 @@
 ---
 title: コンポーネントの概要
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,4 +56,4 @@ Analysis Workspace のコンポーネントは、指標、ディメンション�
 
 ## コンポーネントのアクセス権限
 
-Analysis Workspaceでは、管理者は[キュレーション](/help/analysis-workspace/curate-share/curate.md)を行い、どのコンポーネントがレポートのユーザーに公開されるかを確認できます。
+Analysis Workspace では、管理者はレポートでユーザーに公開するコンポーネントを[キュレート](/help/analysis-workspace/curate-share/curate.md)できます。
