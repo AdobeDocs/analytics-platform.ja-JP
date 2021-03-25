@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 translation-type: tm+mt
-source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
+source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics は、Adobe Experience Platform のデータを使用
 Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Analytics の範囲を広げます。主な改善点を次に示します。
 
 * **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットは、一意のディメンションと指標の数に制限はありません。
-* **ユニーク値は無制限**：Adobe Experience Platform は、従来のレポートスイートの 500,000 個のユニーク値など、ユニーク値の制約には縛られません。
+* **一意の値は無制限**：Adobe Experience Platform は、従来のレポートスイートの 500,000 個の一意の値など、一意の値の制約には縛られません。
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
 * **クロスレポートスイートデータ**：Platform で、複数のデータセットから既存の実装を組み合わせることができます。
 
@@ -53,7 +53,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* 2020 年 9 月 9 日現在、Customer Journey Analytics にアクセスする、または接続するには、[Admin Console](https://adminconsole.adobe.com/enterprise/) コンソールの **Customer Journey Analytics 製品**&#x200B;に管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
+* Customer Journey Analyticsにアクセスしたり接続を確立するには、[Admin Console](https://adminconsole.adobe.com/enterprise/)の&#x200B;**Customer Journey Analytics製品**&#x200B;に管理者として追加される必要があります。 製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除をおこなう
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントの更新／削除をおこなう
    * Workspace プロジェクトをすべてのユーザーと共有する
