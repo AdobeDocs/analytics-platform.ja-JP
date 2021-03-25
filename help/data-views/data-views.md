@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analyticsのデータ表示とは何ですか。
-description: null
+description: データ表示は、指標、ディメンション、セッションなど、CJA接続内のデータの要素を解釈する方法を指定します。
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 6%
+source-wordcount: '1126'
+ht-degree: 7%
 
 ---
 
@@ -52,13 +52,15 @@ Customer Journey Analytics の Workspace プロジェクトは、データビュ
 ## 前提条件
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
-* データ表示を作成または管理するには、Adobe Admin Consoleで次の権限が必要です。
+* データ表示を作成または管理するには、Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja-JP#admin-access-permissions)に[一連の権限が必要です。
 
 ## コンポーネントに関する表示情報
 
 Workspaceの(i)情報アイコンをクリックして、コンポーネントの基になるスキーマフィールドと、その設定（説明など）を表示します。
 
 ## Workspaceで上書きできるデータ表示設定
+
+一部のデータ表示設定は、プロジェクトレベルでAnalysis Workspaceで上書きできる場合と、できない場合があります。
 
 * ルックバックウィンドウ
 * 指標アトリビューション
@@ -70,10 +72,6 @@ Workspaceの(i)情報アイコンをクリックして、コンポーネント�
 * 指標の形式設定
 * データビュー名
 * Dimension配分
-
-## 値なし
-
-このディメンションを何と呼ぶか、値なし/値なし/未指定ディメンションにするか、およびレポート内のユーザーに表示するかどうかを指定できます。 ただし、管理者およびユーザー（所有するプロジェクトの場合）は、Workspaceの表示設定を変更できます。
 
 ## データビューの削除
 
