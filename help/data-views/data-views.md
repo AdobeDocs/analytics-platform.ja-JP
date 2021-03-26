@@ -2,10 +2,10 @@
 title: Customer Journey Analyticsのデータ表示とは何ですか。
 description: データ表示は、指標、ディメンション、セッションなど、CJA接続内のデータの要素を解釈する方法を指定します。
 translation-type: tm+mt
-source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 7%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
@@ -75,4 +75,4 @@ Workspaceの(i)情報アイコンをクリックして、コンポーネント�
 
 ## データビューの削除
 
-[!UICONTROL Customer Journey Analytics] のデータビューを削除すると、この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。
+[!UICONTROL Customer Journey Analytics]のデータ表示ーを削除すると、この削除されたデータ表示ーに依存するWorkspaceプロジェクトが機能しなくなることを示すエラーメッセージが表示されます。
