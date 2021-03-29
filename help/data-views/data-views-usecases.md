@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # データ表示の使用例
 
-可能性
+Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示す使用例です。
 
 ## pageTitle（文字列）スキーマフィールドからの注文指標の作成
 
