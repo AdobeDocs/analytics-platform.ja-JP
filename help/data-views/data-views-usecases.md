@@ -2,10 +2,10 @@
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -29,10 +29,12 @@ ht-degree: 0%
 1. [!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。[!UICONTROL ルックバックウィンドウ]は[!UICONTROL セッション]です。
 また、同じフィールドから別の[!UICONTROL 注文件数]指標を作成し、その指標に対して別のアトリビューションモデル（[!UICONTROL ファーストタッチ]、[!UICONTROL 30日]など）を指定できます。
 
-## 1つのスキーマフィールドから複数のディメンションを作成
-
 ## ディメンションに整数を使用
 
-34:00
+以前は、整数はCJAで指標として自動的に扱われていました。 現在は、数字(Adobe Analyticsのカスタムイベントを含む)をディメンションとして扱うことができます。 次に例を示します。
 
-グループ化を含む
+1. [!UICONTROL call_length_min]整数を[!UICONTROL 「含まれるコンポーネント]」の下の[!UICONTROL Dimension]セクションにドラッグします。
+   ![](assets/integers.png)
+
+1. これで、[!UICONTROL 値のグループ化]を追加して、このディメンションをレポート的にグループ化して表示できます。 そうしないと、このディメンションの各インスタンスがWorkspaceの行項目として表示されます。
+   ![](assets/bucketing.png)
