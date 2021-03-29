@@ -2,7 +2,7 @@
 title: Customer Journey Analyticsでの新しいデータ表示の作成方法。
 description: 新しいデータ表示を作成するために必要なすべての設定について説明します。
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 1. Customer Journey Analytics で、「**データビュー**」タブに移動します。
 2. **追加**&#x200B;をクリックして新しいデータ表示を作成し、その設定を行います。
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | 設定 | 説明/使用例 |
 | --- | --- |
