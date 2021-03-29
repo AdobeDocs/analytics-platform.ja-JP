@@ -2,15 +2,19 @@
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 translation-type: tm+mt
-source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
 
 
 # データ表示の使用例
+
+>[!IMPORTANT]
+>
+>この機能は、現在、制限付きのテストになっています。
 
 Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示す使用例です。
 
