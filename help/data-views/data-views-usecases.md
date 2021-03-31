@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->この機能は、現在、制限付きのテストになっています。
+>この機能は、2021年4月22日に一般に提供されます。
 
 Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示す使用例です。
 
@@ -38,7 +38,12 @@ Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示
 以前は、整数はCJAで指標として自動的に扱われていました。 現在は、数字(Adobe Analyticsのカスタムイベントを含む)をディメンションとして扱うことができます。 次に例を示します。
 
 1. [!UICONTROL call_length_min]整数を[!UICONTROL 「含まれるコンポーネント]」の下の[!UICONTROL Dimension]セクションにドラッグします。
+
    ![](assets/integers.png)
 
-1. これで、[!UICONTROL 値のグループ化]を追加して、このディメンションをレポート的にグループ化して表示できます。 そうしないと、このディメンションの各インスタンスがWorkspaceの行項目として表示されます。
+1. これで、[!UICONTROL 値のグループ化]を追加して、このディメンションをレポート的にグループ化して表示できます。 (グループ化を使用しない場合、このディメンションの各インスタンスはWorkspaceレポートに行項目として表示されます)。
+
    ![](assets/bucketing.png)
+
+その他のデータ表示の設定について詳しくは、[データ表示ーの作成](/help/data-views/create-dataview2.md)を参照してください。
+データ表示の概念的な概要については、[データ表示の概要](/help/data-views/data-views.md)を参照してください。
