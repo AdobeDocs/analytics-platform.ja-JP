@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsのデータ表示とは何ですか。
 description: データ表示は、指標、ディメンション、セッションなど、CJA接続内のデータの要素を解釈する方法を指定します。
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1152'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 4%
 >
 >この機能は、2021年4月22日に一般に提供されます。
 
-データ表示は、Customer Journey Analytics(CJA)[接続](/help/connections/create-connection.md)の上に配置されます。 接続は、Adobe Experience Platformの1つ以上のデータセットを組み合わせてCJAに接続します。 データ表示は、指標、ディメンション、セッションなど、接続中のデータの要素を解釈する方法を指定します。 データ表示は、Workspaceのデータに対するレポートの準備のために定義されます。
+データ表示は、Customer Journey Analytics(CJA)[接続](/help/connections/create-connection.md)の上に配置されます。 接続は、Adobe Experience Platformの1つ以上のデータセットを組み合わせてCJAに接続します。 データ表示は、指標、ディメンション、セッションなど、接続中のデータの要素を解釈する方法を指定します。 データ表示は、Workspaceのデータに対するレポートの準備のために定義されます。 データ表示は遡及的で非破壊的です。 つまり、基礎となるデータを永続的に変更することはありません。
 
-従来のAdobe Analyticsを以前に使用したことがある場合、データ表示は仮想レポートスイートと似ていますが、データの「フィルタリング」された表示です。
+従来のAdobe Analyticsを以前に使用したことがある場合、データ表示は仮想レポートスイートと似ており、「フィルタリング」された表示のデータになる可能性があります。
 
-同じ表示に対して異なるデータ接続を作成し、訪問のタイムアウト、アトリビューションなどの設定を変えることができます。また、単一のデータセットに対して複数のデータ表示を作成することもできます。 例えば、すべてのディメンションが[!UICONTROL ラストタッチ]に設定されたデータ表示と、同時に、すべてのディメンションが[!UICONTROL ファーストタッチ]に設定された別のデータ表示（同じデータセットに基づく）を作成できます。
+同じ接続に対して、非常に異なるコンポーネントのセット（ディメンション/指標）を持つ異なるデータ表示を作成できます。 または、訪問のタイムアウト、アトリビューションなど、様々な設定でデータ表示ーを作成します。 例えば、すべてのディメンションが[!UICONTROL ラストタッチ]に設定されたデータ表示と、同時に、すべてのディメンションが[!UICONTROL ファーストタッチ]に設定された別のデータ表示（同じデータセットに基づく）を作成できます。
 
 Customer Journey Analytics の Workspace プロジェクトは、データビューに基づいています。
 
