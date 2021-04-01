@@ -2,9 +2,9 @@
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 92%
 
 ---
@@ -86,4 +86,4 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 
 | フィルター名 | 説明 |
 | --- | --- |
-| すべて データ | これは、従来のAdobe分析の「すべての訪問」セグメントに類似した必須フィルターです。 フリーフォームテーブルの行に指標が追加されると、レポートに動的に追加されます。 |
+| すべて データ | これは、フリーフォームテーブルの行に指標が追加されたときに、レポートに動的に追加される必須フィルターです。 |
