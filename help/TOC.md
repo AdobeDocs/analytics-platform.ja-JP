@@ -1,6 +1,6 @@
 ---
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
 solution: Customer Journey Analytics
@@ -18,7 +18,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 96%
