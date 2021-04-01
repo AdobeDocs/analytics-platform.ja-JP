@@ -1,10 +1,10 @@
 ---
-title: Customer Journey Analyticsの持続性とは
+title: Customer Journey Analyticsのディメンション永続性とは
 description: Dimensionの持続性は、配分と有効期限を組み合わせたものです。 これらの指標を一緒に使用して、持続するディメンション値を決定します。
 translation-type: tm+mt
-source-git-commit: 09f49cff89d69ae630e917243425967dbf56a9ed
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 72%
 
 ---
