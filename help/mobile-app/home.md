@@ -1,16 +1,16 @@
 ---
-title: Analyticsダッシュボード — 概要
-description: Customer Journey Analyticsダッシュボード向けの製品ドキュメントとセルフヘルプ
+title: Analytics ダッシュボード - 概要
+description: Customer Journey Analytics ダッシュボードの製品ドキュメントとセルフヘルプ
 translation-type: tm+mt
 source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
 
-# Analytics [!UICONTROL ダッシュボード] — 概要
+# Analytics[!UICONTROL  ダッシュボード] - 概要
 
 **解析 ** ダッシュボードは、Customer Journey Analyticsを含め、Adobe Analyticsからいつでもどこでも洞察を提供します。このアプリケーションでは、モバイルで直感的なスコアカードにアクセスできます。スコアカードは、タイル形式のレイアウトで表示される主要指標やその他のコンポーネントの集まりで、これをタップすると、より詳細な分類やトレンドデータ表示を行うことができます。 モバイルアプリは iOS と Android の両方のオペレーティングシステムでサポートされています。
 
