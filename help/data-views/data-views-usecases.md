@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 >
 >この機能は、2021年4月22日に一般に提供されます。
 
-Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示す使用例です。
+これらの使用例では、Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示しています。
 
 ## pageTitle（文字列）スキーマフィールドからの注文指標の作成
 
@@ -29,7 +29,7 @@ Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示
 1. 右側の[!UICONTROL 値を含む/除外]ダイアログを開き、次の内容を指定します。
    ![](assets/orders2.png)
 
-   「確認」フレーズは、これが注文であることを示します。 これらの条件が満たされたページタイトルをすべて確認すると、インスタンスごとに「1」がカウントされます。 結果は、（計算指標ではなく）新しい指標になります。 Attribution IQ、フィルターなど、標準指標を使用できるあらゆる場所で機能します。
+   「確認」フレーズは、これが注文であることを示します。 これらの条件が満たされたページタイトルをすべて確認すると、インスタンスごとに「1」がカウントされます。 結果は、（計算指標ではなく）新しい指標になります。 値を含む/除外した指標は、他の指標を使用できるすべての場所で使用できます。 Attribution IQ、フィルターなど、標準指標を使用できるあらゆる場所で機能します。
 1. [!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。[!UICONTROL ルックバックウィンドウ]は[!UICONTROL セッション]です。
 また、同じフィールドから別の[!UICONTROL 注文件数]指標を作成し、その指標に対して別のアトリビューションモデル（[!UICONTROL ファーストタッチ]、[!UICONTROL 30日]など）を指定できます。
 
