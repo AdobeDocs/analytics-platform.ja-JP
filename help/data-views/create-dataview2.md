@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsでの新しいデータ表示の作成方法。
 description: 新しいデータ表示を作成するために必要なすべての設定について説明します。
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2599'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ ht-degree: 6%
 
 ![](assets/persistence.png)
 
-これらの設定は、従来のAdobe AnalyticsのeVar設定と似ています。
+詳しくは、「[永続性](/help/data-views/persistence.md)」のトピックを参照してください。
 
 | 設定 | 説明/使用例 |
 | --- | --- |
@@ -215,7 +215,7 @@ Analysis Workspaceでのレポート機能を容易にするために、任意�
 
 ## 3.データ表示追加に対するグローバルフィルタ
 
-仮想レポートスイート(従来のAdobe Analytics)のフィルターされたフィルターと同様に、データ表示全体に適用される表示（以前のセグメント）を追加できます。
+データ表示全体に適用するフィルターを追加できます。 このフィルターは、Workspaceで実行するすべてのレポートに適用されます。
 
 1. [!UICONTROL データ表示]の[!UICONTROL 「設定]」タブをクリックします。
 1. 左側のレールのリストから[!UICONTROL 追加フィルター]フィールドにフィルターをドラッグします。
