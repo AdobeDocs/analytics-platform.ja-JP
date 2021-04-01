@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 96%
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
 + Analytics ダッシュボード {#cja-dashboards}
-   + [Analyticsダッシュボード — 概要](mobile-app/home.md)
+   + [Analytics ダッシュボード - 概要](mobile-app/home.md)
    + [キュレーター向けガイド](mobile-app/curator.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
 + プライバシー {#cja-privacy}
