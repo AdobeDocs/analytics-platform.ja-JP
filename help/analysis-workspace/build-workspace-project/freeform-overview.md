@@ -5,10 +5,10 @@ title: プロジェクトの概要
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 94%
+source-wordcount: '1165'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 | 要素 | 説明 |
 |---|---|
-| [新規プロジェクトを作成](/help/analysis-workspace/home.md) | このリンクをクリックすると、新しいプロジェクトを最初から作成したり、作成済みの[テンプレート](/help/analysis-workspace/build-workspace-project/starter-projects.md)から作成したりできます。 |
+| [新規プロジェクトを作成](/help/analysis-workspace/home.md) | このリンクをクリックすると、新しいプロジェクトを最初から作成できます。 |
 | プロジェクトの管理 | このリンクをクリックすると、プロジェクトコンポーネントマネージャーに移動します（**[!UICONTROL Analytics]**／**[!UICONTROL コンポーネント]**／**[!UICONTROL プロジェクト]**）。ここでは、すべてのプロジェクトが一覧表示され、プロジェクトのタグ付け、共有、削除、名前の変更、承認、コピー、CSV への書き出しをおこなえます。 |
 | ランディングページとして設定 | このページを Workspace ランディングページにします。 |
 | [チュートリアルを表示](/help/analysis-workspace/home.md) | Analysis Workspace ビデオチュートリアルに移動します。 |
@@ -47,12 +47,12 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 | メニュー項目 | 説明 |
 |---|---|
-| プロジェクト | プロジェクト管理の一般的なアクション（新規、開く、保存、名前を付けて保存、[テンプレートとして保存](/help/analysis-workspace/build-workspace-project/starter-projects.md)など）が含まれます。また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=ja)」オプションを使用すると、Workspace からデータをエクスポートできます。「[プロジェクト情報および設定](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?lang=ja#info-settings)」には、プロジェクトを管理するための多くのオプションが用意されています。 |
+| プロジェクト | プロジェクト管理の一般的なアクション（新規、開く、保存、名前を付けて保存、テンプレートとして保存など）が含まれます。また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。**プロジェクト情報と設定** （以下を参照）オファーは、プロジェクトを管理するための多くのオプションを提供します。 |
 | テンプレートを | 前回の操作を元に戻すか、やり直します。「すべてクリア」を選択すると、プロジェクトが最初の空白の状態にリセットされます。 |
 | 前に | このメニューから、新しいパネルまたはビジュアライゼーションを挿入します。また、左側のパネルから新しいパネルやビジュアライゼーションを挿入することもできます。 |
-| [コンポーネント](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=ja) | プロジェクトから、新しいセグメント、計算指標、日付範囲またはアラートの各コンポーネントを作成します。また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |
-| [共有](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html?lang=ja) | PDF／CSV プロジェクトのキュレーション、共有、および組織内の受信者へのスケジュールを設定します。 |
-| ヘルプ | ヘルプドキュメント、ビデオおよび Analytics [Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)にアクセスします。Workspace のヒントの表示と[デバッガー](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)の表示を管理します。Workspace の詳細と、プロジェクトの[パフォーマンス](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html?lang=ja)に影響を与える要因を確認します。 |
+| [コンポーネント](/help/components/overview.md) | プロジェクトから新しいフィルター、計算指標、日付範囲またはアラートコンポーネントを作成します。 また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |
+| [共有](/help/analysis-workspace/curate-share/send-schedule-files.md) | PDF/CSVプロジェクトをキュレーション、共有し、組織内の受信者にスケジュールします。 |
+| ヘルプ | ヘルプドキュメント、ビデオおよび Analytics [Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)にアクセスします。Workspace のヒントの表示と[デバッガー](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)の表示を管理します。Workspace の詳細と、プロジェクトの[パフォーマンス](/help/analysis-workspace/workspace-faq/optimizing-performance.md)に影響を与える要因を確認します。 |
 | 「共有」ボタンまたは「所有者」 | プロジェクトを所有または編集している場合は、右上の「共有」ボタンからワンクリックでアクセスして、プロジェクト受信者を管理できます。プロジェクトを複製または役割を表示している場合は、プロジェクト所有者の名前が表示されます。 |
 
 ### プロジェクト情報および設定 {#info-settings}
@@ -106,7 +106,7 @@ Analysis Workspace プロジェクトは、**Analytics／コンポーネント�
 
 | アクション | 説明 |
 |---|---|
-| 追加 | 新規プロジェクトを最初から作成するか、[テンプレート](/help/analysis-workspace/build-workspace-project/starter-projects.md)を使用して作成します。 |
+| 追加 | 新規プロジェクトを新規に作成する。 |
 | タグまたは承認 | 「タグ」または「承認」を選択すると、プロジェクトが整理され、検索しやすくなります。 |
 | [共有](/help/analysis-workspace/curate-share/share-projects.md) | プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。 |
 | 削除 | プロジェクトを削除します。 |
