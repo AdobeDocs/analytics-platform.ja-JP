@@ -1,15 +1,15 @@
 ---
 description: Workspace の表示のみのプロジェクト
-keywords: View-only projects
+keywords: 表示専用プロジェクト
 title: 表示専用プロジェクト
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
 ---
-
 
 # 表示専用プロジェクト
 
@@ -26,7 +26,6 @@ ht-degree: 100%
 表示のみのプロジェクトで無効になる操作には、次のものが含まれます。
 
 * 左側のレールを非表示にする
-* レポートスイート
 * パネルカレンダーの日付範囲注意：受信者にカレンダー制御を付与する場合は、日付範囲を含む[ドロップダウンフィルター](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)を追加します。
 * フリーフォームフィルター
 * 表示可能な行のフリーフォーム数
