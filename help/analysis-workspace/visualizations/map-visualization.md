@@ -1,10 +1,10 @@
 ---
 description: Analysis Workspace で指標のビジュアルマップを作成する方法を説明します。
 title: マップ
-translation-type: ht
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
-workflow-type: ht
-source-wordcount: '632'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -30,19 +30,6 @@ Analysis Workspace のマップのビジュアライゼーションの特徴を�
 
 1. 指標のリスト（計算指標を含む）から指標にドラッグします。
 1. 描画するデータソースを指定します（このダイアログは、モバイルアプリデータのロケーションの追跡を有効にしている場合にのみ、表示されます）。
-
-<table id="table_CD54B433464B4282A7524FB187016C47"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>モバイル緯度経度</b> </p> </td> 
-   <td colname="col2"> <p>このオプションは、モバイルアプリデータを表します。 </p> <p>このオプションは、<span class="ignoretag"><span class="uicontrol">Analytics</span>／<span class="uicontrol">管理者</span>／<span class="uicontrol">レポートスイート</span>／<span class="uicontrol">&lt;レポートスイートを選択&gt;</span>／<span class="uicontrol">設定を編集</span>／<span class="uicontrol">モバイル管理</span>／<span class="uicontrol">ロケーションの追跡を有効にする</span></span>で、レポートスイートに対してこのオプションを有効にしている場合にのみ表示されます。 </p> <p>これがデフォルト設定です（ロケーションの追跡が有効な場合）。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>地域ディメンション</b> </p> </td> 
-   <td colname="col2"> <p>このオプションは、訪問者の IP アドレスに基づく訪問者の場所に関する地理特性データを表します。このデータは、国、地域および市区町村に変換されます。DMA または郵便番号レベルには変換されません。 </p> <p>このディメンションは、ほぼすべてのレポートスイートで有効になっています。有効になっていない場合は、アドビカスタマーケアに連絡して、地域レポートを有効にしてもらってください。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
