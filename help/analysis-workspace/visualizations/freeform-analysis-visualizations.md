@@ -2,20 +2,20 @@
 description: Analysis Workspaceでデータを視覚的に表示します。
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
+exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 44%
+source-wordcount: '1060'
+ht-degree: 43%
 
 ---
-
 
 # ビジュアライゼーションの概要
 
 Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。Adobe Analyticsを使用すると、ほとんどのビジュアライゼーションタイプが見慣れています。 しかし、Analysis Workspace にはビジュアライゼーション設定があり、インタラクティブ機能を備えた新しいまたは独自のビジュアライゼーションタイプを数多く揃えています。
 
-ビジュアライゼーションには、Workspaceの左上のアイコン、[空白のパネル](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html)、またはワークフローの右クリックメニューからアクセスできます。
+ビジュアライゼーションには、Workspaceの左上のアイコン、[空白のパネル](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=ja)、またはワークフローの右クリックメニューからアクセスできます。
 
 ![](assets/viz-rail.png)
 
@@ -27,7 +27,7 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | 1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。 |
 | [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
 | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、保持、変化、または遅延の分析に役立ちます。 |
-| [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | このビジュアライゼーションは、円グラフと同様に、データを全体の一部または断片として表示します。 |
+| [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | 円グラフと同様に、このビジュアライゼーションでは、データが全体の一部またはフィルターとして表示されます。 |
 | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。最終的または正確なシーケンスに設定できます |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | Webサイトやアプリ内での正確な顧客パスを表示します。 |
 | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、Workspaceのデータ分析の基盤です。 |
@@ -39,7 +39,7 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセル間の変化を1大きい数値/パーセントで表示します。 |
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストを Workspace に追加できます。パネル/ビジュアライゼーションの説明に加えて、分析とインサイトに追加のコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
-| [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大3つのセグメントの指標の重なりを表現します。 |
+| [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大3フィルターの指標の重なりを表現します。 |
 
 ## 設定 {#settings}
 
@@ -62,7 +62,7 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 
 ## 凡例 {#legend}
 
-ビジュアライゼーションの凡例を使用すると、ソーステーブルの日付をビジュアライゼーション内のプロットされたシリーズに関連付けることができます。 凡例はインタラクティブです。凡例項目をクリックして、ビジュアライゼーション内のシリーズの表示/非表示を切り替えることができます。 これは、ビジュアライゼーションするデータを単純化する場合に便利です。
+ビジュアライゼーションの凡例を使用すると、ソーステーブルの日付をビジュアライゼーション内のプロットされたシリーズに関連付けることができます。 凡例はインタラクティブです。凡例項目をクリックして、ビジュアライゼーション内のシリーズの表示/非表示を切り替えることができます。 これは、視覚化するデータを簡略化する場合に便利です。
 
 また、凡例ラベルの名前を変更して、ビジュアルをより消耗しやすくすることができます。 注意：凡例の編集は、****&#x200B;に適用されません：ツリーマップ、ブレット、変更概要/数値、テキスト、フリーフォーム、ヒストグラム、コホートまたはフローのビジュアライゼーション。
 
@@ -97,6 +97,6 @@ Analysis Workspaceでは、次のビジュアライゼーションタイプを�
 
 ## ビジュアルを作成アイコン {#quick-viz}
 
-どのビジュアライゼーションを選択するかが不明な場合は、任意のテーブル行の&#x200B;**[!UICONTROL ビジュアルを作成]**&#x200B;アイコンをクリックします（カーソルを合わせたときに使用できます）。 これは、ビジュアライゼーションを追加する最も速い方法です。 クリックすると、データに最適なビジュアライゼーションを Analysis Workspace が学習に基づいて推測することの確認が表示されます。例えば、1行を選択した場合、トレンド折れ線グラフが作成されます。 3つのセグメント行を選択した場合は、ベン図が作成されます。
+どのビジュアライゼーションを選択するかが不明な場合は、任意のテーブル行の&#x200B;**[!UICONTROL ビジュアルを作成]**&#x200B;アイコンをクリックします（カーソルを合わせたときに使用できます）。 これは、ビジュアライゼーションを追加する最も速い方法です。 クリックすると、データに最適なビジュアライゼーションを Analysis Workspace が学習に基づいて推測することの確認が表示されます。例えば、1行を選択した場合、トレンド折れ線グラフが作成されます。 3つのフィルタ行を選択した場合は、ベン図が作成されます。
 
 ![](assets/quick-viz.png)
