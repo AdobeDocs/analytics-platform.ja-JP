@@ -3,10 +3,10 @@ title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 * Customer Journey Analyticsにアクセスしたり接続を確立するには、[Admin Console](https://adminconsole.adobe.com/enterprise/)の&#x200B;**Customer Journey Analytics製品**&#x200B;に管理者として追加される必要があります。 製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除をおこなう
-   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、セグメントの更新／削除をおこなう
+   * プロジェクト、フィルター、計算指標、または他のユーザーが作成したフィルターを更新/削除します。
    * Workspace プロジェクトをすべてのユーザーと共有する
 * 接続の作成、更新、削除をおこなうためには、Customer Journey Analytics 単体の製品管理者であることは十分ではありません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
