@@ -2,10 +2,10 @@
 description: Analysis Workspace の「取り消し」と「やり直し」のオプションについて説明します。
 title: 「元に戻す」および「やり直し」の設定
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '298'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 * **[!UICONTROL 「新規プロジェクト]**」または「**[!UICONTROL 既存のプロジェクトを開く]**」を使用すると、「**[!UICONTROL 元に戻す]**」のスタックがクリアされます。
 
-* レポートスイートの変更の取り消し／やり直しをおこなうことができます。
 * プロジェクト名の近くに取り消し／やり直しのメッセージが表示されます。このメッセージは、取り消しまたはやり直しが進行中であることを示します。
 * 次の[ホットキー](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用できます。
 
@@ -36,7 +35,6 @@ ht-degree: 100%
 * 貢献度分析
 * セグメント比較
 * プロジェクト名
-* レポートスイートの選択
 * ビジュアライゼーションの追加／削除
 * パネルまたはビジュアライゼーションの折りたたみ／展開
 * ホットキー（Ctrl（または Command）+ Z による「元に戻す」、Ctrl（または Command）+ Shift + Z による「やり直し」）を使用した挿入
