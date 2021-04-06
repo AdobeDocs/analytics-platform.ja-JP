@@ -4,10 +4,10 @@ title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Workspace プロジェクトでは、左パネルから&#x200B;**パネル、テ
 
 ### コンポーネント
 
-**コンポーネント**&#x200B;は、ディメンション、指標、セグメントまたは日付範囲です。これらすべてを&#x200B;**[!UICONTROL フリーフォームテーブル]**&#x200B;に組み合わせることで、ビジネスに関する質問への回答を開始できます。分析を開始する前に、各[コンポーネントのタイプ](/help/components/overview.md)について理解しておく必要があります。コンポーネントの用語を習得したら、**[!UICONTROL フリーフォームテーブル]**&#x200B;でドラッグ&amp;ドロップを開始し、[分析を構築](/help/analysis-workspace/build-workspace-project/freeform-overview.md)します。
+**コンポ** ーネントは、ディメンション、指標、フィルターまたは日付範囲を指します。これらのすべてを **[!UICONTROL フリーフォーム]** テーブルで組み合わせて、ビジネス上の質問に答える開始を作成できます。分析を開始する前に、各[コンポーネントのタイプ](/help/components/overview.md)について理解しておく必要があります。コンポーネントの用語を習得したら、**[!UICONTROL フリーフォームテーブル]**&#x200B;でドラッグ&amp;ドロップを開始し、[分析を構築](/help/analysis-workspace/build-workspace-project/freeform-overview.md)します。
 
 ![](assets/build-components.png)
 
