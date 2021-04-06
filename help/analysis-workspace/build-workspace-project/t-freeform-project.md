@@ -2,10 +2,10 @@
 description: プロジェクトを作成して、コンポーネント（ディメンション、指標、セグメントおよびデータ範囲）をフリーフォームパネルに追加します。
 keywords: Analysis Workspace
 title: Workspace プロジェクトの作成
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '751'
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '753'
 ht-degree: 100%
 
 ---
@@ -124,9 +124,9 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-**[ビジュアライゼーション](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
+**[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-[!UICONTROL ビジュアライゼーション]パネルには、標準の Analytics グラフ、チャート、ドーナツ、データテーブル、[コホート](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)テーブル、ベン図などが用意されています。複数のビジュアライゼーションをプロジェクトにドラッグ＆ドロップできます。
+[!UICONTROL ビジュアライゼーション]パネルには、標準の Analytics グラフ、チャート、ドーナツ、データテーブル、[コホート](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)テーブル、ベン図などが用意されています。複数のビジュアライゼーションをプロジェクトにドラッグ＆ドロップできます。
 
 ![手順の結果](assets/visualizations.png)
 
@@ -149,11 +149,11 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > 期間列を追加</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > 期間列を追加</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > 期間を比較</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > 期間を比較</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -169,7 +169,7 @@ ht-degree: 100%
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > 分類</a> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > 分類</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">ディメンション </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">指標 </li> 
@@ -179,23 +179,23 @@ ht-degree: 100%
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > 視覚化</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > 視覚化</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/curate-share/download-send.md"  > CSV としてダウンロード</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/curate-share/download-send.md"  > CSV としてダウンロード</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/home.md"  > トレンド選択</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/home.md"  > トレンド選択</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > 選択からセグメントを作成</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 選択からセグメントを作成</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > セグメント比較で実行</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > セグメント比較で実行</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -209,4 +209,4 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-行のコピーおよび選択について詳しくは、[Analysis Workspace で使用できるキーボードおよびマウスの操作](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を参照してください。
+行のコピーおよび選択について詳しくは、[Analysis Workspace で使用できるキーボードおよびマウスの操作](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を参照してください。
