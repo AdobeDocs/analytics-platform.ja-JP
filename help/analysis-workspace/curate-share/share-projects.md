@@ -1,15 +1,15 @@
 ---
 description: Workspace でのプロジェクト共有とプロジェクトの役割
-keywords: Analysis Workspace sharing
+keywords: Analysis Workspaceシェア
 title: プロジェクトの共有
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
-
 
 # プロジェクトの共有
 
@@ -52,7 +52,8 @@ ht-degree: 100%
 未保存の変更がある場合は、最初にプロジェクトを保存するように求められます。
 1. 受信者または受信者のグループを追加します。
 各役割の説明については、上部のヘルプアイコンを参照してください。
-1. （オプション）埋め込みプロジェクトコンポーネント（セグメント、計算指標、日付範囲）をすべての受信者と共有します。共有すると、これらのコンポーネントは受信者の Workspace のコンポーネントドロップダウンに表示されます。この設定は持続しないのでご注意ください。これは、共有時の一回限りのアクションです。
+1. （オプション）埋め込みプロジェクトコンポーネント(フィルター、計算指標および日付範囲)をすべての受信者と共有します。
+共有すると、これらのコンポーネントは受信者の Workspace のコンポーネントドロップダウンに表示されます。この設定は持続しないのでご注意ください。これは、共有時の一回限りのアクションです。
 1. （オプション）このページを受信者のランディングページとして設定します。
 この設定は持続しません。共有時の一回限りのアクションです。
 1. 「共有」をクリックします。「**[!UICONTROL キュレーションと共有]**」をクリックして、プロジェクトのキュレーションを自動的に適用することもできます。プロジェクトが既に共有されている場合は、**[!UICONTROL 更新]**／**[!UICONTROL キュレーションと更新]**&#x200B;というボタンが表示されます。[プロジェクトのキュレーションの詳細](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html)を表示します。
