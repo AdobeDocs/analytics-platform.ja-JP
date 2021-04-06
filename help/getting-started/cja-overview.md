@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1217'
+ht-degree: 95%
 
 ---
-
 
 # Customer Journey Analytics の概要
 
@@ -19,7 +19,7 @@ Customer Journey Analytics は、Adobe Experience Platform のデータを使用
 Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Analytics の範囲を広げます。主な改善点を次に示します。
 
 * **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットは、一意のディメンションと指標の数に制限はありません。
-* **一意の値は無制限**：Adobe Experience Platform は、従来のレポートスイートの 500,000 個の一意の値など、一意の値の制約には縛られません。
+* **ユニーク値は無制限**:Adobe Experience Platformは、独自の制限を受けることはありません。
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
 * **クロスレポートスイートデータ**：Platform で、複数のデータセットから既存の実装を組み合わせることができます。
 
@@ -74,7 +74,7 @@ Customer Journey Analytics の非製品管理者（ユーザー）は、デー�
 CJA のいくつかの機能は、従来の Adobe Analytics の機能に比べ、業界標準に合わせて名前が変更されました。更新された用語の一部には、以下が含まれます。
 
 * セグメントは「フィルター」になりました。
-* 仮想レポートスイートは、「ビュー」になりました。
+* 仮想レポートスイートは、「表示」と呼ばれるようになりました。
 * 分類は、「参照データセット」になりました。
 * 顧客属性は、「プロファイルデータセット」になりました。
 * ヒットコンテナは、「イベント」コンテナになりました。
