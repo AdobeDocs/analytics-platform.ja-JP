@@ -1,14 +1,14 @@
 ---
 description: フォールアウトビジュアライゼーションは、事前に定義された一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。
 title: フォールアウトの概要
+exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 81%
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
-
 
 # フォールアウトの概要
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 フォールアウトビジュアライゼーションでは、次の操作をおこなうことができます。
 
-* 同じレポートの異なる 2 つのセグメントを並べて比較する
+* 同じレポート内の2つの異なるフィルターを並べて比較します。
 * ファネルステップ（タッチポイント）のドラッグ、ドロップ、整列。
 * 異なるディメンションおよび指標からの値を組み合わせる
 * 複数ディメンションのフォールアウトレポートの作成
@@ -32,29 +32,5 @@ ht-degree: 81%
 * 一般的でより広範囲なトラフィックフロー。ホームページを閲覧した訪問者のうち、検索を実行した訪問者の人数、その後特定の品目を閲覧した訪問者の人数などを表示できます。
 * サイト上のイベント間の関連性。例えばプライバシーポリシーを閲覧した訪問者のうち製品の購入に到達した人の割合を示します。
 
-[フォールアウトの視覚化のビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=ja-JP) (4:15)
+[フォールアウトのビジュアライゼーションに関するビデオチュートリアル](\https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=ja)（4:15）
 
-## フローとフォールアウトの基礎としてのセグメント化 {#section_654F37A398C24DDDB1552A543EE29AA9}
-
-ワークスペースパネルに適用したセグメントの動作は、Adobe AnalyticsのReports &amp; Analyticsのフォールアウトレポートおよびフローレポートに適用したセグメントとは若干異なります。 ほとんどの場合、これらは同じ結果になります。主な違いは、Reports &amp; Analyticsは、シーケンスの各ステップでセグメントを適用する点です。 これにより、結果がわずかに異なることになります。
-
-2 ステップのフォールアウトを例にします。
-
-![](assets/fallout_segments1.png)
-
-Workspace のパネルレベルでセグメントを適用すると、そのセグメントは次のようにフォールアウトと組み合わされます。
-
-![](assets/fallout_seg.png)
-
-一方、Reports &amp; Analyticsがセグメントを計算する場合、セグメントは次のように結合されます。
-
-![](assets/fallout_segments3.png)
-
-Reports &amp; Analyticsは、各手順でセグメントを組み合わせます。 コンテナがフォールアウトと同じレベル（訪問レベルまたは訪問者レベルなど）の場合は、訪問数と訪問者数が同じになります。
-
-ただし、パネルに適用されたセグメントがフォールアウトのレベル（ヒットレベルなど）より小さい場合、レポートに組み合わされる方法によって、セグメントは異なる結果を示します。繰り返しますが、ほとんどの場合、Analysis Workspaceの数値がReports &amp; Analyticsの数値と一致します。 次の条件がすべて当てはまる場合にのみ一致&#x200B;**しません**。
-
-* セグメントがフォールアウトと同じレベルにない。
-* 訪問中または訪問者としてのアクセス時に訪問者／訪問が複数の値を取ることができる変数がセグメントにある。
-
-Analysis Workspace が Reports &amp; Analytics のようにセグメントをフォールアウト／フローに適用するようにする必要がある場合は、Workspace の各フォールアウトステップにセグメントをドロップすると、同じ数になります。
