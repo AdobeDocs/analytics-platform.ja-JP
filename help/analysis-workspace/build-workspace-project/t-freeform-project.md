@@ -3,17 +3,17 @@ description: プロジェクトを作成して、コンポーネント（ディ�
 keywords: Analysis Workspace
 title: Workspace プロジェクトの作成
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
 
 # Workspace プロジェクトの作成
 
-プロジェクトを作成して、コンポーネント（ディメンション、指標、セグメントおよびデータ範囲）をフリーフォームパネルに追加します。
+プロジェクトを作成し、フリーフォームパネルにコンポーネント(ディメンション、指標、フィルター、日付範囲)を追加します。
 
 この記事では、Analysis Workspace インターフェイス要素について説明し、プロジェクトの作成方法を示します。
 
@@ -36,8 +36,7 @@ ht-degree: 100%
    以下からプロジェクトを作成するかどうかを選択できます。
 
 * 空白のプロジェクト（デフォルト）。手順については、以下を参照してください。
-* 標準テンプレート。これらのテンプレートは、アドビによって作成され、標準で提供されます。手順については、[テンプレート](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)を参照してください。
-* カスタムテンプレート。これらのテンプレートは、管理者権限を持つユーザーによって作成されます。手順については、[テンプレート](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)を参照してください。
+* カスタムテンプレート。これらのテンプレートは、管理者権限を持つユーザーによって作成されます。
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ ht-degree: 100%
    空のプロジェクトが表示され、フリーフォームパネルとデータテーブルビジュアライゼーションが表示されます。
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >プロジェクトに含まれているコンポーネント（指標またはディメンション）の一部がレポートスイートに含まれていないプロジェクトをロードする（またはレポートスイートに切り替える）と、「互換性のないレポートスイート」というメッセージが表示される場合があります。互換性のないコンポーネントのリストを表示できるので、このメッセージが表示される理由を把握できます。
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -89,7 +84,7 @@ ht-degree: 100%
    >
    >コピーまたは名前を付けて保存した後でも、内部リンクは、コピー元のプロジェクトではなく、内部のプロジェクトに対して相対的になりました。
 
-## コンポーネントとビジュアライゼーションの追加 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## コンポー追加ネントとビジュアライゼーション{#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. プロジェクトを作成するには、*`components`* および *`visualizations`* をプロジェクトにドラッグします。
 
@@ -134,7 +129,7 @@ ht-degree: 100%
 
 1. 手順
 
-## 右クリックメニューを使用したデータのカスタマイズ {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## 右クリックメニューを使用してデータをカスタマイズ{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 右クリックメニューを使用すると、右クリックしたテーブルのセルに応じて、次のアクションを実行できます。
 
@@ -173,7 +168,7 @@ ht-degree: 100%
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">ディメンション </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">指標 </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">セグメント </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">フィルター </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">時間 </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ ht-degree: 100%
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 選択からセグメントを作成</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 選択範囲からフィルターを作成</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
