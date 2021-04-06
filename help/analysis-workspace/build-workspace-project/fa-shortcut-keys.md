@@ -2,14 +2,14 @@
 description: Analysis Workspace で使用できるキーボード操作、ショートカットキー、ポイント＆クリックの動作です。
 keywords: Analysis Workspace
 title: ホットキー（ショートカット）
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 100%
 
 ---
-
 
 # ホットキー（ショートカット）
 
@@ -39,7 +39,7 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | アラートの作成 | Ctrl（または Command）+ Shift + A |
 | 計算指標を作成 | Ctrl（または Command）+ Shift + C |
 | 日付範囲を作成 | Ctrl（または Command）+ Shift + D |
-| セグメントの作成 | Ctrl（または Command）+ Shift + E |
+| フィルターの作成 | Ctrl（または Command）+ Shift + E |
 | すべてクリア | Alt + W |
 | Copy | Ctrl（または Command）+ C |
 | やり直し | Ctrl（または Command）+ Shift + Z |
@@ -52,13 +52,10 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 
 | アクション | ショートカット |
 |---|---|
-| 新しい Analytics for Target パネル | Alt + G |
 | 新しいアトリビューションパネル | Alt + E |
 | 新しい空のパネル | Alt + B |
 | 新しいフリーフォームパネル | Alt + A |
-| 新しいメディアの同時視聴者パネル | Alt + H |
 | 新しいクイックインサイトパネル | Alt + F |
-| 新しいセグメント比較パネル | Alt + C |
 | 新しいフリーフォームテーブル | Alt + 1 |
 | 新しい折れ線グラフ | Alt + 2 |
 | 新しい棒グラフ | Alt + 3 |
