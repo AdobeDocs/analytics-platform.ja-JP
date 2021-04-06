@@ -4,16 +4,16 @@ keywords: Analysis Workspaceキュレーション
 title: プロジェクトのキュレーション
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 47%
+ht-degree: 44%
 
 ---
 
 # プロジェクトのキュレーション
 
-キュレーションを使用すると、プロジェクトを共有する前にコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限できます。受信者がプロジェクトを開くと、キュレーションされたコンポーネントの制限付きセットが表示されます。キュレーションはオプションですが、プロジェクトを共有する前に行うことをお勧めします。
+キュレーションを使用すると、プロジェクトを共有する前にコンポーネント(ディメンション、指標、フィルター、日付範囲)を制限できます。 受信者がプロジェクトを開くと、キュレーションされたコンポーネントの制限付きセットが表示されます。キュレーションはオプションですが、プロジェクトを共有する前に行うことをお勧めします。
 
 >[!NOTE]
 > 製品プロファイルは、ユーザーに表示されるコンポーネントを管理する主要メカニズムです。[Adobe Experience CloudAdmin Console](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)を通して管理されます。 キュレーションはセカンダリフィルターです。
