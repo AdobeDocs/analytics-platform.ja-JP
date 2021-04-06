@@ -2,14 +2,14 @@
 keywords: Analysis Workspace
 title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
-translation-type: ht
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: ht
-source-wordcount: '515'
+exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
-
 
 # Analysis Workspace の概要
 
@@ -21,7 +21,7 @@ Analysis Workspace は分析をすばやく構築してインサイトを共有�
 
 数分しか時間が取れない場合は、この短い概要を視聴し、何ができるかをご確認ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
 ## Adobe Analytics へのログイン {#login}
 
@@ -40,8 +40,6 @@ Analysis Workspace の使用を開始するには、[experience.adobe.com/analyt
 チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーと Adobe Analytics ダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/mobapp/curator.html)のどちらで開始するかを選択できます。
 
 ![](assets/create-new-project.png)
-
-また、アドビが提供する標準テンプレートや、組織が作成したカスタム テンプレートなど、事前定義済み&#x200B;**テンプレート**&#x200B;から分析を開始することもできます。想定している分析や用途に応じて、様々なテンプレートを使用できます。使用可能な様々なテンプレートオプションについて詳しくは[こちら](/help/analysis-workspace/build-workspace-project/starter-projects.md)を参照してください。
 
 ## 分析の構築 {#analysis}
 
