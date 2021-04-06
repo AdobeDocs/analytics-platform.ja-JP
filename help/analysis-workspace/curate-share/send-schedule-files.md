@@ -1,14 +1,14 @@
 ---
 description: PDF/CSVプロジェクトのキュレーション、共有、および組織内の受信者へのスケジュールを設定できます。
 title: 共有メニュー
+exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 83%
+ht-degree: 78%
 
 ---
-
 
 # 共有メニュー
 
@@ -24,4 +24,4 @@ ht-degree: 83%
 | [!UICONTROL プロジェクトリンクを取得] | プロジェクトにすばやくアクセスするための共有可能なリンクを作成します。ユーザーはログインする必要があります。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
 | [!UICONTROL ファイルを今すぐ送信] | プロジェクトを CSV または PDF 形式で指定した受信者に直ちに送信します。 |
 | [!UICONTROL ファイルをスケジュールに従って送信] | プロジェクトを CSV または PDF 形式でスケジュールに従って指定した受信者に送信します。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
-| [!UICONTROL プロジェクトデータをキュレート] | プロジェクトで使用できるコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限します。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html) |
+| [!UICONTROL プロジェクトデータをキュレート] | プロジェクトで使用できるコンポーネント(ディメンション、指標、フィルター、日付範囲)を制限する。 [詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/curate-share/curate.html) |
