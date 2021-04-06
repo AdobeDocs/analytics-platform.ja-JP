@@ -1,14 +1,14 @@
 ---
 title: フリーフォームテーブル
 description: フリーフォームテーブルは、Workspace のデータ分析の基盤となっています。
+exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
-
 
 # フリーフォームテーブル
 
@@ -24,7 +24,7 @@ Analysis Workspaceでは、フリーフォームテーブルはインタラク�
 
 ## フリーフォームテーブルビルダー
 
-最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、フリーフォームテーブルビルダーを有効にできます。ビルダーを有効にすれば、多くのディメンション、分類、指標およびセグメントをドラッグ＆ドロップして、より複雑な質問に回答するテーブルを作成できます。データはその場では更新されず、「**[!UICONTROL ビルド]**」をクリックすると更新されます。
+最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、フリーフォームテーブルビルダーを有効にできます。ビルダーを有効にすると、多くのディメンション、分類、指標およびフィルターをドラッグ&amp;ドロップして、より複雑な質問に答えるテーブルを作成できます。 データはその場では更新されず、「**[!UICONTROL ビルド]**」をクリックすると更新されます。
 
 ![](assets/table-builder.png)
 
@@ -39,7 +39,7 @@ Analysis Workspaceでは、フリーフォームテーブルはインタラク�
    * 行を[フィルタリング](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html)して、表示する項目数を減らすここができます。[行設定](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html)で追加の設定を使用できます。
 
 * **列**
-   * 列内にコンポーネントを積み重ねて、セグメント化された指標やクロスタブ分析などを作成できます。
+   * コラム内でコンポーネントを積み重ねて、フィルター適用済み指標やクロスタブ分析などを作成できます。
    * 各列の表示は、[列設定](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html)で調整できます。
    * [右クリックメニュー](https://docs.adobe.com/content/help/ja-JP/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html)からは、いくつかの操作を実行できます。テーブルのヘッダー、行または列をクリックしたかどうかに応じて、このメニューに表示されるアクションが変わります。
 
