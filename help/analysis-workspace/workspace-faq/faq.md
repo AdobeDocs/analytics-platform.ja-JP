@@ -1,14 +1,14 @@
 ---
 description: Workspace FAQとトラブルシューティングのヒント
 title: よくある質問
+exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '416'
 ht-degree: 84%
 
 ---
-
 
 # よくある質問
 
@@ -21,7 +21,7 @@ ht-degree: 84%
 | **Analysis Workspace を使用するための前提条件を教えてください。** | Analysis Workspaceを使用するには、Customer Journey Analyticsの実装が必要です。 ツールを使用する前に、組織がAdobe Experience Platformにデータを送信していることを確認してください。 |
 | **Analysis Workspace の管理およびアクセスの要件を教えてください。** | 「[管理要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)」を参照してください。 |
 | **Analysis Workspace を使用するとデータ収集に影響が出ますか。** | Analysis Workspace はレポート作成ツールなので、データ収集には影響しません。何が機能するかを確認するためにコンポーネントをプロジェクトに適当にドラッグしても、データに影響はありません。様々なディメンションと指標の組み合わせをワークスペースプロジェクトにドラッグして、利用可能な項目を確認してください。無効なコンポーネントを誤ってワークスペースプロジェクトにドラッグした場合や、手順を 1 つ戻したい場合は、Ctrl + Z キー（Windows）または Command + Z キー（Mac）を押して、最後におこなった操作を元に戻します。左上のメニューで&#x200B;*[!UICONTROL プロジェクト]／[!UICONTROL 新規]*&#x200B;をクリックして、新しいスレートから始めることもできます。 |
-| **Analysis Workspaceの実装方法** | 特別な実装は必要ありません。Analysis Workspaceはすべての会社Customer Journey Analyticsが利用できます。 ただし、コンテンツ（プロジェクトコンポーネントなど）に対する標準の権限は、プロジェクトのキュレーションや共有に適用されます。 詳しくは、[管理およびアクセス要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
+| **Analysis Workspaceの実装方法** | 特別な実装は必要ありません。Analysis Workspaceはすべての会社Customer Journey Analyticsが利用できます。 ただし、コンテンツ（プロジェクトコンポーネントなど）に対する標準の権限が適用され、プロジェクトのキュレーションと共有にも適用されます。 詳しくは、[管理およびアクセス要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
 | **Analysis Workspace のパフォーマンスを最適化するにはどうすればよいですか。** | 詳しくは、[パフォーマンスの最適化](/help/analysis-workspace/workspace-faq/optimizing-performance.md)を参照してください。 |
 
 ## トラブルシューティング
@@ -34,7 +34,6 @@ ht-degree: 84%
 
 ワークスペースレポートを正常に作成したのにデータがないという場合は、次の点を確認してください。
 
-* レポートスイートを再度チェックし、データが入力されていることを確認します。
 * レポートにセグメントを適用している場合、そのセグメント条件がどのデータとも一致しない可能性があります。セグメントを削除するか、セグメント定義を調整してみてください。
 * 右上隅の日付範囲をチェックし、期待する値に設定されていることを確認します。
-* Web サイトに移動し、[デバッガー](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ja-JP)を使用してデータが収集されていることを検証します。
+* Web サイトに移動し、[デバッガー](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ja)を使用してデータが収集されていることを検証します。
