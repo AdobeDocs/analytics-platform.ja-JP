@@ -3,9 +3,9 @@ title: アトリビューションに関する FAQ
 description: アトリビューションに関する FAQ に対する回答です。
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '308'
 ht-degree: 88%
 
 ---
@@ -53,4 +53,4 @@ ht-degree: 88%
 
 **アトリビューションはフィルターでどのように機能しますか？**
 
-アトリビューションは常にフィルターの前に実行され、他のレポートフィルターが適用される前にセグメントが実行されます。
+アトリビューションは常にフィルターの前に実行され、グローバルフィルターは他のレポートフィルターの適用前に実行されます。
