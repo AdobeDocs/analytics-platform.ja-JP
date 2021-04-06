@@ -1,8 +1,9 @@
 ---
 description: 時間分割は、収集したヒットのタイムスタンプを取得し、「時間帯」や「曜日」など、よりわかりやすいディメンションに分類します。
 title: 時間分割ディメンション
+exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 2685d75dac9ad7e74f2010dda82cd1d4d65dbd7b
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 91%
