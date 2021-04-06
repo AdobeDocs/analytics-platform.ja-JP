@@ -1,14 +1,14 @@
 ---
 title: Analysis Workspace でのユーザー環境設定の設定方法
 description: ユーザー向けに一般環境設定とプロジェクト環境設定を設定できます。
-translation-type: ht
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
-workflow-type: ht
-source-wordcount: '216'
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # ユーザー環境設定
 
@@ -39,7 +39,6 @@ ht-degree: 100%
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=ja) | <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
 |  | [カラーパレット](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=ja) | <ul><li>Adobe が提供するパレット（デフォルト）</li><li>カスタム定義パレット</li></ul> |
 | **データ** |  |  |
-|  | [レポートスイート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=ja#report-suite) | <ul><li>最新（デフォルト）</li><li>特定 - リストから選択</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=ja#calendar) | **[!UICONTROL 今月]**&#x200B;を含む、すぐに使用できる日付範囲のリスト（デフォルト）  |
 |  | [パネルタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=ja) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
