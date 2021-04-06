@@ -1,10 +1,11 @@
 ---
 description: 自動保存、名前を付けて保存、テンプレートとして保存など、様々な保存オプションについて説明します。
 title: プロジェクトの保存
-translation-type: ht
-source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: ht
-source-wordcount: '313'
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 100%
 |---|---| 
 | **[!UICONTROL 保存]** | プロジェクトに対する変更を保存します。プロジェクトが共有されている場合は、プロジェクトの受信者にも変更が表示されます。プロジェクトを最初に保存すると、名前、（オプション）説明、（オプション）タグの追加をプロジェクトに与えるよう求めるプロンプトが表示されます。 |
 | **[!UICONTROL 名前を付けて保存]** | プロジェクトの複製を作成します。元のプロジェクトは影響を受けません。 |
-| **[!UICONTROL テンプレートとして保存]** | プロジェクトを[カスタムテンプレート](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html)として保存し、 **[!UICONTROL プロジェクト／新規]**&#x200B;で組織が使用できるようにします。 |
+| **[!UICONTROL テンプレートとして保存]** | プロジェクトをカスタムテンプレートとして保存し、 **[!UICONTROL プロジェクト／新規]**&#x200B;で組織が使用できるようにします。 |
 
 ![](assets/save-project.png)
 
