@@ -1,14 +1,14 @@
 ---
 description: ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。
 title: ヒストグラム
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 87%
 
 ---
-
 
 # ヒストグラム
 
@@ -60,7 +60,7 @@ ht-degree: 95%
 
 ![](assets/manage-data-source.png)
 
-テーブルに表示される事前に作成されたセグメントは、内部セグメントで、セグメントセレクターには表示されません。セグメント名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックしてセグメントを公開します。
+テーブルに表示される事前に作成されたフィルターは、内部フィルターで、フィルターセレクターには表示されません。 フィルター名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックして、フィルターを公開します。
 
 ![](assets/prebuilt_segments.png)
 
