@@ -1,14 +1,14 @@
 ---
 title: データレイヤーの作成
 description: Customer Journey Analytics （CJA）で、プラットフォームデータセットへのデータビューを作成する方法について説明します。
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
-source-wordcount: '572'
-ht-degree: 100%
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 97%
 
 ---
-
 
 # データレイヤーの作成
 
@@ -43,7 +43,7 @@ Customer Journey Analytics の Workspace プロジェクトは、データビュ
 
 ## コンポーネントを追加
 
-1. 次に、コンポーネント（ディメンション、指標）をデータビューに追加します（仮想レポートスイートのキュレーションと同様）。データセット内の各フィールドがディメンションまたは指標に変換されるようになりました。ディメンションと指標をパネルまたは「**[!UICONTROL すべて選択]**」にドラッグして、すべてのコンポーネントを追加します。
+1. 次に、コンポーネント（ディメンション、指標）をデータ表示に追加します。 データセット内の各フィールドがディメンションまたは指標に変換されるようになりました。ディメンションと指標をパネルまたは「**[!UICONTROL すべて選択]**」にドラッグして、すべてのコンポーネントを追加します。
 
    ![](assets/add-all-components.png)
 
