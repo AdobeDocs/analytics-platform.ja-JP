@@ -1,14 +1,14 @@
 ---
 description: Workspace の合計の計算方法。
 title: Workspace の合計
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '537'
-ht-degree: 100%
+exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 92%
 
 ---
-
 
 # Workspace の合計
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 フリーフォームテーブルでは、合計行が各分類レベルに表示され、2 つの合計を示すことができます。
 
-* **[!UICONTROL 総計]**（灰色で表示されている「～中」の数） - この合計は、収集されたすべてのヒットを表し、「レポートスイートの合計」とも呼ばれます。セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのヒットを反映するように調整されます。
+* **[!UICONTROL 総合計]** （灰色の「範囲外」の数） — この合計は、収集されたすべてのヒットを表します。パネルレベルまたはフリーフォームテーブル内でフィルターが適用されると、この合計は、セグメント条件に一致するすべてのヒットを反映するように調整されます。
 * **[!UICONTROL テーブル合計]**（黒い数字） - 通常、この合計は[!UICONTROL 総計]と等しいか、またはそのサブセットです。「[!UICONTROL なしを含む]」オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルフィルターを反映します。
 
 ![](assets/total-row.png)
@@ -47,4 +47,3 @@ ht-degree: 100%
 | フリーフォームテーブルにカスタムテーブルフィルターを適用する場合、そのフィルターに対してすべての計算指標と条件付き書式設定を利用できますか。 | 現在は利用できません。「**[!UICONTROL 未指定 (なし) を含む]**」は計上されますが、カスタムテーブルフィルターは次に影響しません。<ul><li>条件付き書式で使用される列の最大／最小範囲は、すべてのデータを対象とします。</li><li>**[!UICONTROL 総計]**&#x200B;指標タイプを利用する計算指標。</li><li>フリーフォームテーブルの行をまたいで計算する関数（例：Column Sum、Column max、Column min、Count、Mean、Median、Percentile、Quartile、Row Count、Standard Deviation、Variance、Cumulative、Cumulative Average、Regression variants、T-Score、T-Test、Z-Score、Z-Test）を使用する計算指標。</li></ul> |
 | 「計算指標」で、「**[!UICONTROL 総計]**」指標タイプは何を反映していますか。 | 「**[!UICONTROL 総計]**」は引き続き「**[!UICONTROL 総計]**」を参照します。また、テーブルや&#x200B;**[!UICONTROL テーブル合計]**&#x200B;に適用されたフィルターは反映されません。 |
 | フリーフォームテーブルからデータをコピーして貼り付けるか、CSV でデータをダウンロードすると、合計はどのように表示されますか。 | 合計行は、**[!UICONTROL テーブル合計]**&#x200B;のみを反映し、列の&#x200B;**[!UICONTROL 合計を表示]**&#x200B;設定に従います。 |
-
