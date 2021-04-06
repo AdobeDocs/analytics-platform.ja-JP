@@ -1,14 +1,14 @@
 ---
 description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
-
 
 # Analysis Workspace のアクセシビリティ
 
@@ -67,9 +67,9 @@ Adobe Analytics の主要な分析ツールである [!UICONTROL Analysis Worksp
 | Alt + 1 | 新しいフリーフォームテーブル |
 | Ctrl + Shift + C | 新規計算指標 |
 | Ctrl + Shift + D | 新しい日付範囲 |
-| Ctrl + Shift + E | 新しいセグメント |
+| Ctrl + Shift + E | 新しいフィルター |
 | Ctrl + Z | 元に戻す |
-| shift キーを押したまま（パネルセグメントドロップゾーン内） | [ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja-JP)の作成 |
+| Shiftキーを押したまま（パネルフィルタードロップゾーン内） | [ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja-JP)の作成 |
 
 #### 民主化
 
