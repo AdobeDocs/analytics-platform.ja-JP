@@ -1,12 +1,12 @@
 ---
-description: プロジェクトを作成して、コンポーネント（ディメンション、指標、セグメントおよびデータ範囲）をフリーフォームパネルに追加します。
+description: プロジェクトを作成し、フリーフォームパネルにコンポーネント(ディメンション、指標、フィルター、日付範囲)を追加します。
 keywords: Analysis Workspace
 title: Workspace プロジェクトの作成
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 95%
+source-wordcount: '668'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 1. プロジェクトを作成およびキュレーションするためのユーザー権限を指定します。
 
-   Analysis Workspace プロジェクトを作成またはキュレーションするユーザーは、先に、管理者に **[!UICONTROL Analysis Workspace のプロジェクトを作成／キュレーション]**&#x200B;権限を有効にしたグループか、**[!UICONTROL 全レポートアクセス]**&#x200B;ユーザーグループに追加してもらう必要があります（**[!UICONTROL 管理者]**／**[!UICONTROL ユーザー管理]**／[グループ](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-groups/groups.html)。）
+   Analysis Workspace プロジェクトを作成またはキュレーションするユーザーは、先に、管理者に **[!UICONTROL Analysis Workspace のプロジェクトを作成／キュレーション]**&#x200B;権限を有効にしたグループか、**[!UICONTROL 全レポートアクセス]**&#x200B;ユーザーグループに追加してもらう必要があります（**[!UICONTROL 管理者]**／**[!UICONTROL ユーザー管理]**／[グループ](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=ja-JP)。）
 
 1. [!DNL Experience Cloud] で、**[!UICONTROL Analytics]**／**[!UICONTROL Workspace]** をクリックします。
 
@@ -59,7 +59,7 @@ ht-degree: 95%
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > コンポーネント</a> </td> 
-   <td colname="col2"> <p>プロジェクトにドラッグできるディメンション、指標、セグメントおよび日付範囲。 </p> </td> 
+   <td colname="col2"> <p>プロジェクトにドラッグできるDimension、指標、フィルターおよび日付範囲。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > ビジュアライゼーション</a> </td> 
@@ -90,7 +90,7 @@ ht-degree: 95%
 
    **コンポーネント**
 
-   コンポーネントツールバーには、最もよく使用する、検索可能なディメンション、指標、セグメントおよび日付範囲が表示されます。
+   コンポーネントツールバーには、最も頻繁に使用する検索可能なディメンション、指標、フィルターおよび日付範囲が表示されます。
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -109,8 +109,8 @@ ht-degree: 95%
    <td colname="col2"> <p>プロジェクトレベルに適用します。 </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> 「<span class="term">回数</span>」は、データテーブルのデフォルト指標です。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> セグメント（青） </td> 
-   <td colname="col2"> <p>パネルレベルにのみドラッグできますが、データテーブルにインラインセグメントを作成できます。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>詳しくは、「<a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  >セグメント</a>」を参照してください。 </p> </td> 
+   <td colname="col1"> フィルター（青） </td> 
+   <td colname="col2"> <p>パネルレベルでのみドラッグできますが、データテーブルにインラインフィルターを作成できます。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>詳しくは、<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >フィルター</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日付範囲および精度（紫） </td> 
@@ -187,10 +187,6 @@ ht-degree: 95%
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 選択範囲からフィルターを作成</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > セグメント比較で実行</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
