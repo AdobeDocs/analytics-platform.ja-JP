@@ -3,9 +3,9 @@ title: Customer Journey Analyticsでの新しいデータ表示の作成方法�
 description: 新しいデータ表示を作成するために必要なすべての設定について説明します。
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
 workflow-type: tm+mt
-source-wordcount: '2813'
+source-wordcount: '2814'
 ht-degree: 12%
 
 ---
