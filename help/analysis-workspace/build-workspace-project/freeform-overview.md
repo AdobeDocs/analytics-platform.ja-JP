@@ -5,7 +5,7 @@ title: プロジェクトの概要
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 90%
@@ -80,7 +80,7 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 また、[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からもビジュアライゼーションやパネルにアクセスできます。
 
-左側のレールのコンポーネント(Dimension、指標、セグメント、日付範囲)は、アクティブなパネルのデータ表示に関連付けられます。 アクティブなパネルの周囲に青い境界線が表示され、アクティブなデータ表示がコンポーネントレールの上部に表示されます。
+左側のレールのコンポーネント(Dimension、指標、フィルター、日付範囲)は、アクティブなパネルのデータ表示に関連付けられます。 アクティブなパネルの周囲に青い境界線が表示され、アクティブなデータ表示がコンポーネントレールの上部に表示されます。
 
 ![](assets/left-rail.png)
 
