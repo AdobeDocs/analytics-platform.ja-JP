@@ -1,20 +1,30 @@
 ---
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '1974'
+ht-degree: 98%
 
 ---
-
 
 # 接続の作成
 
 接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL Workspace] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL Workspace] のデータセット間で接続を確立する必要があります。
 
 ビデオの概要については、[こちら](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
+
+CJA接続を作成するには、次の権限が必要です。
+
+Adobe Experience Platform:
+* データモデリング：表示スキーマ、スキーマの管理
+* データ管理:表示データセット，データセットの管理
+* データ取り込み：ソースの管理
+
+Customer Journey Analytics
+* 製品管理者アクセス
 
 >[!IMPORTANT]
 >
