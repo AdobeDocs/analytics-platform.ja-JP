@@ -2,7 +2,7 @@
 title: Customer Journey AnalyticsでのGoogle Analyticsレポートの設定
 description: null
 translation-type: tm+mt
-source-git-commit: c07d32eef579432bf92f94cbbe4e99188b2de74c
+source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -47,7 +47,8 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 
    ![](assets/ga-bigquery.png)
 ユニバーサル分析データをエクスペリエンスプラットフォームに準拠した形式に変換するには、SQLクエリを作成する必要があります。
-   * 手順については、このビデオの表示を参照してください。
+   * このビデオの表示の手順：
+   >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに書き出し、グループに保存します。
 [これらの説明](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)を参照してください。
