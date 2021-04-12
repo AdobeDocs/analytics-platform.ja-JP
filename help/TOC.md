@@ -4,7 +4,7 @@ cloud: Experience Cloud
 product: adobe analytics
 sub-product: カスタマージャーニー
 solution: Customer Journey Analytics
-type: ドキュメント
+type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 97%
+source-wordcount: '462'
+ht-degree: 96%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 97%
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
+   + [CJAでのGoogle Analyticsレポートの設定](use-cases/ga-to-cja.md)
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](mobile-app/home.md)
    + [キュレーター向けガイド](mobile-app/curator.md)
