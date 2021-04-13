@@ -1,18 +1,18 @@
 ---
 title: Customer Journey AnalyticsでのGoogle Analyticsレポートの設定
 description: null
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 49b49f24dbc68b1d9e843e0f4522123e6792a438
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
-
 # Customer Journey AnalyticsでのGoogle Analyticsレポートの設定
 
-
+この使用例では、Google AnalyticsデータをAdobe Experience Platformに入手し、その後で
 
 ## 前提条件
 
@@ -26,12 +26,12 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 
 | 使用する ID | このライセンスも必要です… | それで… |
 | --- | --- | --- |
-| **ユニバーサルGoogle Analytics** | Google Analytics360 | 次の手順の手順1 ～ xを実行します。 |
-| **Google Analytics4** | 無料のGAバージョンまたはGoogle Analytics360 | 以下の手順では、手順xは不要です。 |
+| **ユニバーサルGoogle Analytics** | Google Analytics360 | 次の手順の手順1 ～ 5を実行します。 |
+| **Google Analytics4** | 無料のGAバージョンまたはGoogle Analytics360 | 次の手順の手順2 ～ 5を実行します。 手順1は不要です。 |
 
 以下の手順はユニバーサルGoogle Analyticsに基づいています。
 
-1. Google AnalyticsデータをBigQueryに接続し、
+1. 一部のデータを変換できるように、Google AnalyticsデータをBigQueryに接続します。
 [これらの説明](https://support.google.com/analytics/answer/3416092?hl=en)を参照してください。
 
 1. （Universal Analyticsのお客様のみ）BigQueryでGoogle Analyticsセッションをイベントに変換します。
@@ -55,4 +55,3 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 1. GCSイベントをAdobe Experience Platformに読み込み、XDMスキーマにマップ
 
 BigQueryエクスポートスキーマ(https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
