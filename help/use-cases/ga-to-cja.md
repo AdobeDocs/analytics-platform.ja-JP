@@ -1,11 +1,11 @@
 ---
-title: Customer Journey Analyticsでの分析(CJA)のためにGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法
+title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
+source-git-commit: b6f62c1d53d023c230fbd7f8ad366ac5c6b13954
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 
 ### 1.Google AnalyticsデータをBigQueryに接続する
 
-次の手順はユニバーサルGoogle Analyticsに基づいています。 これらは履歴データに適用されます。 ライブストリーミングデータの手順については、ライブストリーミングデータをAEPに取り込むを参照してください。
+次の手順はユニバーサルGoogle Analyticsに基づいています。 これらは履歴データに適用されます。 ライブストリーミングデータの手順については、[ライブストリーミングデータをAEPに取り込む](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data)を参照してください。
 
 [これらの説明](https://support.google.com/analytics/answer/3416092?hl=en)を参照してください。
 
@@ -84,7 +84,7 @@ UNNEST(hits) AS hit
 
 ### 3.Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに書き出し、バケットに保存する
 
-次に、Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに読み込みます。 Experience Platformに持って行く。
+次に、Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに読み込みます。
 
 [これらの説明](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)を参照してください。
 
