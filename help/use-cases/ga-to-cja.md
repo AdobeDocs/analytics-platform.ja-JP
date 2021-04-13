@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: b6f62c1d53d023c230fbd7f8ad366ac5c6b13954
+source-git-commit: c51b9d19bfcc1066c3bb58a605485e153d87f396
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ UNNEST(hits) AS hit
 
 ライブストリーミングイベントをGoogle Tag Managerから直接Adobe Experience Platformに取り込むこともできます。
 
-### 追加カスタム変数
+### 1.追加カスタム変数
 
 Google Tag Managerアカウントにサインインした後、Adobe組織IDとデータセットIDに関連するカスタム定数変数を追加する必要があります。 おそらく、Google Tag Managerに、お客様の電子メール、お客様の名前、言語、お客様のログイン状況など、Google Analyticsに送信される変数が既に存在します。 5つの新しいカスタム変数を定義する必要があります。
 
@@ -120,7 +120,7 @@ Google Tag Managerアカウントにサインインした後、Adobe組織IDと�
 
 これらのカスタム変数を定義したら、既にGoogle Analyticsに送信しているすべてのデータをExperience Platformに送信するトリガーも設定できます。
 
-### Google Tag Managerでのトリガーの設定
+### 2. Google Tag Managerでのトリガーの設定
 
 この例では、「アカウントの作成」トリガーが定義されています。ここで`pageUrl equals account-creation`が定義されています。 このトリガーに情報を追加することで、ユーザーが認証に成功し、アカウント作成ページが読み込まれた場合に、データがGoogle AnalyticsとAEPの両方に送信されることを確認できます。
 
@@ -128,11 +128,12 @@ Google Tag Managerアカウントにサインインした後、Adobe組織IDと�
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
-### 次の手順
+## Google AnalyticsデータセットへのCJAでの接続の作成
 
 Adobe Experience PlatformがライブGoogle Analyticsデータの受信を開始し、BigQueryからの履歴Google Analyticsデータをバックフィルすると、CJAにジャンプして
+[最初の接続](/help/connections/create-connection.md)を作成します。 この接続により、共通の「顧客ID」を使用して、GAデータと他のすべての顧客データが結合されます。
 
-1. [最初の接続を作成し、共通の「顧客ID」を使用して、GAデータと他のすべての顧客データを結合します。](/help/connections/create-connection.md) 
-1. Workspaceで、次のような素晴らしい分析を行います。
 
-*このトピックを停止する必要があるか、接続の詳細を調べる必要があるか。*
+## Workspaceで驚くべき分析を行う
+
+フォローするには
