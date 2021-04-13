@@ -3,9 +3,9 @@ title: Customer Journey Analyticsでの分析(CJA)のためにGoogle Analytics�
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 
 | 使用する ID | このライセンスも必要です… | それで… |
 | --- | --- | --- |
-| **ユニバーサルGoogle Analytics** | Google Analytics360 | 次の手順の手順1 ～ 5を実行します。 |
+| **ユニバーサル解析** | Google Analytics360 | 次の手順の手順1 ～ 5を実行します。 |
 | **Google Analytics4** | 無料のGAバージョンまたはGoogle Analytics360 | 次の手順の手順1 ～ 5を実行します。 手順2は不要です。 |
 
 ## 履歴データを取り込む
@@ -53,11 +53,30 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 
 GAデータは、各レコードを、個々のイベントではなく、ユーザーのセッションとしてデータに保存します。 ユニバーサル分析データをエクスペリエンスプラットフォームに準拠した形式に変換するには、SQLクエリを作成する必要があります。 GAスキーマの「ヒット」フィールドに「アンネスト」関数を適用します。 使用できるSQLの例を次に示します。
 
-`SQL sample`
+`SELECT
+*,
+timestamp_seconds(`` + hit.time) AS `` 
+FROM
+(
+SELECT
+fullVisitorId,
+visitNumber,
+visitId,
+visitStartTime,
+trafficSource,
+socialEngagementType,
+channelGrouping,
+device,
+geoNetwork,
+hit 
+FROM
+`visitStartTimetimestampyour_bq_table_2021_04_*`,
+UNNEST(hits) AS hit 
+)`
 
 クエリが完了したら、完全な結果をBigQueryテーブルに保存します。
 
-[これらの説明](https://support.google.com/analytics/answer/3437618?hl=en)を参照してください。
+[これらの説明](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql)を参照してください。
 
 または、このビデオを表示します。
 
