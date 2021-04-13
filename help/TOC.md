@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 96%
+source-wordcount: '463'
+ht-degree: 95%
 
 ---
 
@@ -164,7 +164,7 @@ ht-degree: 96%
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
-   + [CJAでのGoogle Analyticsレポートの設定](use-cases/ga-to-cja.md)
+   + [Google AnalyticsデータをAdobe Experience Platformに取り込む](use-cases/ga-to-cja.md)
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](mobile-app/home.md)
    + [キュレーター向けガイド](mobile-app/curator.md)
