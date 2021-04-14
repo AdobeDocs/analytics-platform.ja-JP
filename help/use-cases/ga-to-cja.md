@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: c51b9d19bfcc1066c3bb58a605485e153d87f396
+source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Google Tag Managerアカウントにサインインした後、Adobe組織IDと�
 Adobe Experience PlatformがライブGoogle Analyticsデータの受信を開始し、BigQueryからの履歴Google Analyticsデータをバックフィルすると、CJAにジャンプして
 [最初の接続](/help/connections/create-connection.md)を作成します。 この接続により、共通の「顧客ID」を使用して、GAデータと他のすべての顧客データが結合されます。
 
-
 ## Workspaceで驚くべき分析を行う
 
-フォローするには
+その他の内容はこちら。
