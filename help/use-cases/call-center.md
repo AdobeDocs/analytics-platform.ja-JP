@@ -3,7 +3,7 @@ title: コールセンターデータと web データの読み込み
 description: コールセンターと web サイトのデータをリンクさせるデータセットの作成方法について説明します。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
@@ -80,7 +80,7 @@ CJA で[接続を作成](/help/connections/create-connection.md)します。
 1. web ページ名を保持しているディメンションをフリーフォームテーブルのビジュアライゼーションにドラッグします。
 1. 指標を、コンバージョンを測定する目的のコールセンター指標に置き換えます。
 1. 指標のヘッダーの近くにある歯車のアイコンをクリックします。「**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**」をクリックします。
-1. 目的の[アトリビューションモデル](/help/data-views/configure-dataviews.md#Attribution-model)を設定します。
+1. 目的の[アトリビューションモデル](/help/data-views/create-dataview.md)を設定します。
 
 結果のレポートには、コールセンターデータの上位の指標が示されます。<!-- Complement with donut visualization -->
 
