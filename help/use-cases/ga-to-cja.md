@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、
 | **ユニバーサル解析** | Google Analytics360 | 次の手順の手順1 ～ 5を実行します。 |
 | **Google Analytics4** | 無料のGAバージョンまたはGoogle Analytics360 | 次の手順の手順1 ～ 5を実行します。 手順2は不要です。 |
 
-## 履歴データを取り込む
+## 履歴（バックフィル）データを取り込む
 
 ### 1.Google AnalyticsデータをBigQueryに接続する
 
@@ -84,13 +84,20 @@ UNNEST(hits) AS hit
 
 ### 3.Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに書き出し、バケットに保存する
 
-次に、Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに読み込みます。
+次に、Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに書き出します。 **Export/Export to GCS**&#x200B;をクリックするだけです。 そこに到着したら、データをAdobe Experience Platformに引き込む準備ができている。
 
 [これらの説明](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)を参照してください。
 
-### 4. Google CloudストレージのデータをExperience Platformに取り込む
+### 4. Google CloudストレージからExperience Platformにデータをインポートする
 
-「Experience Platform」で「**[!UICONTROL ソース]**」を選択し、「**[!UICONTROL Google Cloudストレージ]**」オプションを探します。 そこから、Bigクエリから保存したデータセットを探すだけです。
+「Experience Platform」で「**[!UICONTROL ソース]**」を選択し、「**[!UICONTROL Google Cloudストレージ]**」オプションを探します。 BigQueryで保存したデータセットを見つけるだけです。
+
+次の点に注意してください。
+
+* JSON形式を選択していることを確認します。
+* 既存のデータセットを選択することも、新しいデータセットを作成することもできます（推奨）。
+* 履歴Google AnalyticsデータとライブストリーミングGoogle Analyticsデータは、別々のスキーマセットにある場合でも、同じデータに対して同じデータを選択する必要があります。 その後、[CJA接続](/help/connections/combined-dataset.md)のデータセットをマージできます。
+
 
 このビデオの表示の手順：
 
@@ -98,7 +105,7 @@ UNNEST(hits) AS hit
 
 ### 5. GCSイベントをAdobe Experience Platformに読み込み、XDMスキーマにマッピング
 
-次に、GAイベントデータを以前に作成した既存のデータセットにマップするか、XDMスキーマを選択して新しいデータセットを作成します。 スキーマを選択すると、Experience Platformは機械学習を適用し、Google Analyticsデータの各フィールドを自分のスキーマに自動的にマッピングします。
+次に、GAイベントデータを以前に作成した既存のデータセットにマップするか、XDMの任意のスキーマを使用して新しいデータセットを作成します。 スキーマを選択すると、Experience Platformは機械学習を適用し、Google Analyticsデータの各フィールドを自動的に[XDMスキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui)に事前マッピングします。
 
 マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングが完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
 
