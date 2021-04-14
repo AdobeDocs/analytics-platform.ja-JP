@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,25 @@ UNNEST(hits) AS hit
 
 次に、GAイベントデータを以前に作成した既存のデータセットにマップするか、XDMの任意のスキーマを使用して新しいデータセットを作成します。 スキーマを選択すると、Experience Platformは機械学習を適用し、Google Analyticsデータの各フィールドを自動的に[XDMスキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui)に事前マッピングします。
 
+![](assets/schema-map.png)
+
 マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングが完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
+
+**タイムスタンプ計算済みフィールド**
+
+Google Analyticsデータの`timestamp`フィールドには、Experience PlatformスキーマUIで特別な計算済みフィールドを作成する必要があります。 **[!UICONTROL 追加計算済みのフィールド]**&#x200B;をクリックし、`timestamp`文字列を`date`関数に含めます。例：
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+次に、この計算済みフィールドをスキーマ内のtimestampデータ構造に保存する必要があります。
+
+![](assets/timestamp.png)
+
+**_id XDM計算フィールド**
+
+`_id`スキーマフィールドには値が必要です。CJAは値を気にしません。 フィールドに「1」を追加できます。
+
+![](assets/_id.png)
 
 ## ライブストリーミングGoogle Analyticsデータを取り込む
 
