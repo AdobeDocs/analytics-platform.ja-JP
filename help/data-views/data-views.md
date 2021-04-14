@@ -3,9 +3,9 @@ title: Customer Journey Analyticsのデータ表示とは何ですか。
 description: データ表示は、指標、ディメンション、セッションなど、CJA接続内のデータの要素を解釈する方法を指定します。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Customer Journey Analytics の Workspace プロジェクトは、データビュ
 
 * データ表示内のコンテナ&#x200B;**名前を変更し、そのデータ表示に基づくWorkspaceプロジェクト内のすべてのコンテナサーフェスに、名前を変更した名を**&#x200B;付けることができます。
 
-## 前提条件
+## データ表示の前提条件
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
 * データ表示を作成または管理するには、Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja-JP#admin-access-permissions)に[一連の権限が必要です。
