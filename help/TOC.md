@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 95%
+source-wordcount: '454'
+ht-degree: 96%
 
 ---
 
@@ -47,8 +47,6 @@ ht-degree: 95%
 + データビュー {#cja-dataviews}
    + [データ表示の概要](data-views/data-views.md)
    + [データレイヤーの作成](data-views/create-dataview.md)
-   + [データ表示の作成2](data-views/create-dataview2.md)
-   + [データビューとアトリビューションの設定](data-views/configure-dataviews.md)
    + [データ表示の使用例](data-views/data-views-usecases.md)
    + [永続性](data-views/persistence.md)
 + Workspace プロジェクト {#cja-workspace}
