@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: df3b69b837fda821e1b50b0ba211ac578d856892
+source-git-commit: 99ae3fb2978afc2f5ec7db05ac82cfb5113df3b4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1299'
 ht-degree: 1%
 
 ---
@@ -170,6 +170,9 @@ Adobe Experience PlatformがライブGoogle Analyticsデータの受信を開始
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-## Workspaceで驚くべき分析を行う
+## 次の手順
 
-その他の内容はこちら。
+* Google Analyticsデータに基づくデータ表示の作成
+次に、Google Analyticsデータを含む接続に基づいて、CJAでデータ表示[を作成します。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews)
+
+* [ワークスペース](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace)ですごい分析を行ってください。
