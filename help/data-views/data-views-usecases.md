@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
-
 
 # データ表示の使用例
 
@@ -45,5 +45,5 @@ ht-degree: 1%
 
    ![](assets/bucketing.png)
 
-その他のデータ表示の設定について詳しくは、[データ表示ーの作成](/help/data-views/create-dataview2.md)を参照してください。
+その他のデータ表示の設定について詳しくは、[データ表示ーの作成](/help/data-views/create-dataview.md)を参照してください。
 データ表示の概念的な概要については、[データ表示の概要](/help/data-views/data-views.md)を参照してください。
