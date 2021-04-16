@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
+source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 96%
+source-wordcount: '459'
+ht-degree: 95%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 96%
       + [ディメンションのプレビュー](components/dimensions/view-dimensions.md)
       + [ディメンションの分類](components/dimensions/t-breakdown-fa.md)
       + [時間分割ディメンション](components/dimensions/time-parting-dimensions.md)
+      + [カーディナリティが非常に高いDimension](components/dimensions/high-cardinality.md)
    + [指標](components/apply-create-metrics.md)
    + フィルター {#cja-filters}
       + [フィルターの概要](components/filters/filters-overview.md)
