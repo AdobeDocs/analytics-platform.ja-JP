@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsのカーディナリティが非常に高いDimension
 description: Customer Journey Analyticsの高カーディナリティディメンションを扱う際のベストプラクティスを説明します。
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Customer Journey Analytics(CJA)では、単一のディメンション内でレ�
 
 ### 1.行数は、正確にレポートできないこと。
 
-カーディナリティの高いディメンションの行数は、正確にレポートできない場合があります。 この場合、フリーフォームテーブルには次のような表示が表示されます。
+高カーディナリティディメンションの行数は、正確にレポートできない場合があります。 この場合、フリーフォームテーブルには、次のような表示が表示されます。
 
 ![](assets/high-cardinality.png)
 
