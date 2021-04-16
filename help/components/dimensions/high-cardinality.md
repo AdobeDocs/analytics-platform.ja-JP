@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analyticsのカーディナリティが非常に高いDimension
 description: Customer Journey Analyticsの高カーディナリティディメンションを扱う際のベストプラクティスを説明します。
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 translation-type: tm+mt
-source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
+source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # カーディナリティが非常に高いDimension
 
@@ -49,7 +49,7 @@ Customer Journey Analytics(CJA)では、単一のディメンション内でレ�
 
 * 影響を受け追加た列またはパネルのフィルター。
 * フリーフォームテーブルに検索を適用します。
-* 関心のある行に分類を適用するか、高度なカーディナルディメンションを分類ディメンションとして使用します
+* 関心のある行に分類を適用するか、高度なカーディナルディメンションを分類ディメンションとして使用します。
 * ディメンションに存在する一意の値の数を追加絞り込むために、ディメンションのデータ表示設定に条件を含める/除外します。
 
 これらのテクニックを使用すると、多くの場合、高基数次元を使用する際に経験する望ましくない評価や警告を排除できます。
