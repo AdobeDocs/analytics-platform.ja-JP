@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を活用してGoogle AnalyticsやファイアベースのデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
+source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -99,10 +99,6 @@ GAイベントデータは、以前に作成した既存のデータセットに
 ![](assets/schema-map.png)
 
 マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングを完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
-
-このビデオの表示の手順：
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **「タイムスタンプ」の計算済みフィールド**
 
