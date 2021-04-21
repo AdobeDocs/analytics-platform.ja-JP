@@ -11,10 +11,10 @@ user-guide-description: このガイドは、Adobe Experience Platform に基づ
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 95%
+source-wordcount: '447'
+ht-degree: 93%
 
 ---
 
@@ -157,6 +157,7 @@ ht-degree: 95%
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
    + [Google AnalyticsデータをAdobe Experience Platformに取り込む](use-cases/ga-to-cja.md)
+   + [CJAのGoogle Analyticsデータに関するレポート](use-cases/ga-to-cja-reporting.md)
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](mobile-app/home.md)
    + [キュレーター向けガイド](mobile-app/curator.md)
