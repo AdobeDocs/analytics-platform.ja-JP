@@ -1,20 +1,16 @@
 ---
 title: Customer Journey Analyticsでの新しいデータ表示の作成方法。
 description: 新しいデータ表示を作成するために必要なすべての設定について説明します。
-exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2794'
 ht-degree: 12%
 
 ---
 
 # 新しいデータ表示の作成
-
->[!IMPORTANT]
->
->この機能は、2021年4月22日に一般に提供されます。
 
 データ表示の作成には、スキーマエレメントから指標やディメンションを作成するか、標準コンポーネントを使用します。 指標やディメンションを作成すると、非常に柔軟に作業を行えます。 以前は、Adobe Experience Platformにデータセットがある場合、文字列フィールドがディメンションとして使用され、数値フィールドが指標として使用されていたことを前提としていました。 これらのフィールドのいずれかを変更するには、Platformでスキーマを編集する必要がありました。 データ表示UIでは、指標とディメンションの[フリーフォーム定義を](/help/data-views/data-views.md)より多く使用できるようになりました。 その他の使用例については、[データ表示の使用例](/help/data-views/data-views-usecases.md)を参照してください。
 
