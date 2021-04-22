@@ -3,18 +3,14 @@ title: Customer Journey Analyticsのデータ表示の使用例
 description: Customer Journey Analytics内のデータ表示の柔軟性と能力を示す複数の使用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
 
 # データ表示の使用例
-
->[!IMPORTANT]
->
->この機能は、2021年4月22日に一般に提供されます。
 
 これらの使用例では、Customer Journey Analyticsにおけるデータ表示の柔軟性と能力を示しています。
 
