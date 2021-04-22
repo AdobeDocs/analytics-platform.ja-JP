@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* Customer Journey Analyticsにアクセスしたり接続を確立するには、[Admin Console](https://adminconsole.adobe.com/enterprise/)の&#x200B;**Customer Journey Analytics製品**&#x200B;に管理者として追加される必要があります。 製品管理者には、次の権限が付与されます。
+* Customer Journey Analytics にアクセスしたり接続したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で **Customer Journey Analytics 製品**&#x200B;に管理者として追加される必要があります。 製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除をおこなう
    * プロジェクト、フィルター、計算指標、または他のユーザーが作成したフィルターを更新/削除します。
    * Workspace プロジェクトをすべてのユーザーと共有する
