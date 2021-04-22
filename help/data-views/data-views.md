@@ -3,18 +3,14 @@ title: Customer Journey Analyticsのデータ表示とは何ですか。
 description: データ表示は、指標、ディメンション、セッションなど、CJA接続内のデータの要素を解釈する方法を指定します。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1081'
 ht-degree: 4%
 
 ---
 
 # データ表示とは
-
->[!IMPORTANT]
->
->この機能は、2021年4月22日に一般に提供されます。
 
 データ表示は、Customer Journey Analytics(CJA)[接続](/help/connections/create-connection.md)の上に配置されます。 接続は、Adobe Experience Platformの1つ以上のデータセットを組み合わせてCJAに接続します。 データ表示は、指標、ディメンション、セッションなど、接続中のデータの要素を解釈する方法を指定します。 データ表示は、Workspaceのデータに対するレポートの準備のために定義されます。
 
