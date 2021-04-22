@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 93%
       + [再生の仕組み](connections/cca/replay.md)
       + [クロスチャネル分析に関する FAQ](connections/cca/faq.md)
 + データビュー {#cja-dataviews}
-   + [データ表示の概要](data-views/data-views.md)
+   + [データビューの概要](data-views/data-views.md)
    + [データレイヤーの作成](data-views/create-dataview.md)
-   + [データ表示の使用例](data-views/data-views-usecases.md)
+   + [データビューの使用例](data-views/data-views-usecases.md)
    + [永続性](data-views/persistence.md)
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
