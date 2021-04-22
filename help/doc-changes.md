@@ -3,10 +3,10 @@ title: CJA ドキュメントのアップデート
 description: 2019年12月以降に設定されたCustomer Journey Analyticsドキュメントに関するリスト向けコンテンツの更新。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '304'
+ht-degree: 15%
 
 ---
 
@@ -22,12 +22,14 @@ CJAドキュメントの開始以降、CJAドキュメントに対して以下�
 | 2021 年 2 月 | Adobe Experience Platform](/help/use-cases/marketing-channels.md)での[マーケティングチャネルディメンションの使用に関する新しいトピック |
 | 2021 年 3 月 | [Analyticsダッシュボード](/help/mobile-app/home.md)（モバイルアプリ）のサポートに関するトピックを追加しました |
 | 2021 年 3 月 | Workspaceの[ユーザー環境設定](/help/analysis-workspace/user-preferences.md)に関する新しいトピック |
+| 2021 年 2 月 | 新しい[CJA API](https://www.adobe.io/cja-apis/docs/)ドキュメントを公開しました |
 | 2021 年 1 月 | [データセット](/help/use-cases/global-lookups.md)へのグローバル検索の追加に関する新しいトピック |
 | 2020 年 11 月 13 日（PT） | [クロスチャネル分析](/help/connections/cca/overview.md)に関する新しいトピックです。データセットの個人IDを再キーでき、複数のデータセットをシームレスに組み合わせることができます。 |
 | 2020 年 11 月 13 日（PT） | [コールセンターとWebデータ](/help/use-cases/call-center.md)のインポートに関する新しい使用例が追加されました。 |
 | 2020 年 11 月 11 日 | [接続サイズの予測](/help/connections/estimate-connection-size.md)に関するトピックを追加しました。 |
 | 2020 年 11 月 10 日 | データコンポーネントの削除が[FAQ](/help/getting-started/cja-faq.md)に及ぼす影響に関する節を追加しました。 |
 | 2020 年 11 月 2 日 | [Customer Journey Analytics機能のサポート](/help/getting-started/cja-aa.md)ページに対する更新。 |
+| 2020 年 11 月 | 接続の[バックフィルの制限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#backfill-historical-data)の削除の内容を追加しました。 |
 | 2020 年 10 月 7 日 | [イベントデータセット](/help/connections/combined-dataset.md)の組み合わせに関するトピックを追加しました。 |
 | 2020 年 15 月 9 日（PT） | [データ収集](/help/use-cases/data-ingestion.md)に関する新しいトピックを追加しました。 |
 | 2020 年 2 月 9 日（PT） | [ユーザー権限](https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions)のセクションを更新しました |
