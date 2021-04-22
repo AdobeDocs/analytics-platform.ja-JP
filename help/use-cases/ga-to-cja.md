@@ -3,9 +3,9 @@ title: Google AnalyticsデータをAdobe Experience Platformに取り込む
 description: 'Customer Journey Analytics(CJA)を利用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ GAイベントデータは、以前に作成した既存のデータセットに
 
 ![](assets/schema-map.png)
 
-マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングを完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
+マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングが完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
 
 **「タイムスタンプ」の計算済みフィールド**
 
@@ -150,7 +150,6 @@ Adobe Experience PlatformがライブGoogle Analyticsデータの受信を開始
 
 ## 次の手順
 
-* Google Analyticsデータに基づくデータ表示の作成
-次に、Google Analyticsデータを含む接続に基づいて、CJAでデータ表示[を作成します。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews)
+* Google Analyticsデータを含む接続に基づいて[データ表示](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews)を作成します。
 
-* [ワークスペース](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace)ですごい分析を行ってください。 レポートの使用例については、後でもう一度確認してください。
+* ワークスペース](/help/use-cases/ga-to-cja-reporting.md)で驚くべき[分析を行ってください。
