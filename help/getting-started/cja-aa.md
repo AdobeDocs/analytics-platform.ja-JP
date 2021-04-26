@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
-
 
 # Customer Journey Analytics の機能のサポート
 
@@ -36,7 +36,9 @@ ht-degree: 100%
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
 | クロスデバイス／クロスチャネルのステッチ | 「[クロスチャネル分析](/help/connections/cca/overview.md)」を参照してください。 |
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、オペレーティングシステム） | ベース XDM フィールド（ユーザーエージェントやデバイス ID など）に値が入力されている限り、CJA はネイティブでこれらのディメンションを提供します。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
-| レポート API へのアクセス | 現在、Analytics API 2.0 を介して使用できます。 |
+| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/)を使用して利用できるようになりました。 |
+| 予定レポート／プロジェクト | 完全にサポートされます。 |
+| PDF の書き出し | 完全にサポートされます。 |
 
 ## サポート（注意が必要）
 
@@ -74,9 +76,7 @@ ht-degree: 100%
 | カスタムカレンダー | サポートが予定されています。 |
 | 指標の重複排除 | サポートが予定されています。 |
 | マーチャンダイジング変数の持続性 | サポートが予定されています。 |
-| 予定レポート／プロジェクト | サポートが予定されています。 |
 | アラート | サポートが予定されています。 |
-| PDF の書き出し | サポートが予定されています。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | Report Builder（Excel プラグイン） | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
