@@ -3,10 +3,10 @@ title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: 5667e2f43873061c5350c75fdb830a95b1c9b73f
+source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 60%
+source-wordcount: '1364'
+ht-degree: 58%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 60%
 | [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>標準の負荷の場合：60 分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>データのバックフィル（サイズにかかわらず、最大 13 ヶ月分のデータ）：4 週間未満</li></ul> |
 | [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | データセット間で人物IDが一致する限り、[!UICONTROL Customer Journey Analytics]はフィルター、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
 | オフラインデータを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | Customer Journey Analyticsに対する権利付与を使用すると、データをExperience Platformに取り込むことができます。 その後、Analysis Workspaceでのレポート用に、[!UICONTROL Customer Journey Analytics]にそのデータおよびデータ表示への接続を作成できます。 Experience Platform のデータは、オンボーディングチームが必要に応じて、レコメンデーションやコンサルティングを提供するのに役立ちます。 |
-| [!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | [!UICONTROL Adobe Analytics] のデータは、[Adobe Analytics ソースコネクタ](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて Experience Platform に接続できます。[!UICONTROL Adobe Analytics] のフィールドは XDM 形式で取り込まれますが、他のフィールド（[!UICONTROL マーケティングチャネル]ディメンションなど）はまだ使用できません。 |
+| [!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | [!UICONTROL Adobe Analytics] のデータは、[Adobe Analytics ソースコネクタ](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて Experience Platform に接続できます。ほとんどの[!UICONTROL Adobe Analytics]フィールドはXDM形式で持ち込まれますが、他のフィールドはまだ使用できません。 |
 | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
 | PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
 
