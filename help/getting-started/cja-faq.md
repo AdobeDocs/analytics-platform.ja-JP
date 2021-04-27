@@ -3,7 +3,7 @@ title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: 9bc3e1c211c8cafa0abf73a8732d70185a4f0861
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 58%
@@ -37,8 +37,8 @@ ht-degree: 58%
 
 ## 3.データを[!UICONTROL Customer Journey Analytics]に取り込む
 
-| # | 質問 | 回答 |
-| --- | --- | --- |
+| 質問 | 回答 |
+| --- | --- |
 | 異なる [!UICONTROL Adobe Experience Platform] サンドボックスのデータを 1 つの [!UICONTROL Customer Journey Analytics] 接続に結合することはできますか？ | いいえ。サンドボックス全体のデータにアクセスすることはできません。同じサンドボックス内にあるデータセットのみを組み合わせることができます。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>標準の負荷の場合：60 分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>データのバックフィル（サイズにかかわらず、最大 13 ヶ月分のデータ）：4 週間未満</li></ul> |
 | [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | データセット間で人物IDが一致する限り、[!UICONTROL Customer Journey Analytics]はフィルター、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
