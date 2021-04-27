@@ -3,10 +3,10 @@ title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: 6de1907e74eb0323bde921f4400e27bcdf06cdd1
+source-git-commit: aa11e81e63e993fdcddd400d491d863e05ac65b9
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 61%
+source-wordcount: '1388'
+ht-degree: 60%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 61%
 | b | [!UICONTROL Customer Journey Analytics] には、[!UICONTROL Experience Cloud ID]（ECID）は必要ですか？ | いいえ。[!UICONTROL Customer Journey Analytics] は、データセット内の任意の ID（[!UICONTROL ECID] か選択した他の ID かに関わらず）をサポートします。 |
 | c | [!UICONTROL Customer Journey Analytics] の前に、データの ETL（抽出、変換、読み込み）が必要になった場合、どうしたらいいですか？ | Customer Journey Analyticsには、[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html)機能が含まれており、Adobe Experience Platformデータレークに入る前にデータを変換するのに役立ちます。 データが既に取り込まれた後にETLが必要な場合、[Adobe Experience Platformクエリサービス](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries)は、追加料金がかかる場合もありますが、いくつかの制限されたオプションを提供します。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 2.データのステッチ(チャネル間分析)
 
 | # | 質問 | 回答 |
@@ -30,6 +32,8 @@ ht-degree: 61%
 | b | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[クロスチャネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) 分析では、認証済みと未認証の両方のセッションからユーザーデータを調べ、ステッチIDを生成します。 |
 | c | CCAでの「リプレイ」の機能 | CCAは、学習した一意の識別子に基づいてデータを「再生」します。 再生を行うと、新しいデバイスの接続がステッチされます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
 | d | CCAでの履歴データ(backfill)のステッチの動作 | 最初にオンにした場合、Adobeは、前月（最大60日）の初めまで遡るステッチデータのバックフィルを提供します。 このバックフィルを行うには、一時的なIDが未関連付けデータに存在し、その時点からずっと前にさかのぼる必要があります。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 3.データを[!UICONTROL Customer Journey Analytics]に取り込む
 
@@ -43,6 +47,8 @@ ht-degree: 61%
 | f | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
 | g | PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 4.従来の[!UICONTROL Adobe Analytics]コンポーネント
 
 | # | 質問 | 回答 |
@@ -52,7 +58,9 @@ ht-degree: 61%
 | c | すべてのセッションと変数の永続性の設定は、どこにありますか。 | [!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
 | d | 既存のセグメント／計算指標はどうなりますか。 | [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。 |
 | e | [!UICONTROL Customer Journey Analytics] での `Uniques Exceeded` 制限の処理方法を教えてください。 | [!UICONTROL Customer Journey Analytics] には一意の値に関する制限がないので、ご心配は不要です。 |
-| f | 既存の [!DNL Data Workbench] のユーザーであれば、今すぐ [!UICONTROL Customer Journey Analytics] に移行できますか。 | 使用事例によって異なります。Adobeのアカウントチームにご相談ください。 現在の使用例は、Customer Journey Analyticsにすでに適している場合があります。 |
+| f | 既存の [!DNL Data Workbench] のユーザーであれば、今すぐ [!UICONTROL Customer Journey Analytics] に移行できますか。 | 使用事例によって異なります。Adobeのアカウントチームにご相談ください。 現在の使用例は、Customer Journey Analyticsにすでに適している可能性があります。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 5.データ・コンポーネントの削除の影響
 
