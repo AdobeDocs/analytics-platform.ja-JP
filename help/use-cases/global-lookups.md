@@ -3,10 +3,10 @@ title: データセットへのグローバル検索の追加
 description: グローバル検索を使用して、Customer Journey Analytics の便利なディメンションでレポートを拡張します。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
+source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 95%
+source-wordcount: '383'
+ht-degree: 100%
 
 ---
 
@@ -20,10 +20,6 @@ ht-degree: 95%
 ## Adobe Data Connector データセットでグローバル検索を使用する
 
 グローバル検索データセットは、レポート時に自動的に適用されます。[Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja-JP#connectors) を使用している場合、グローバル検索が提供されているディメンションを取り込むと、このグローバル検索が自動的に適用されます。イベントデータセットに [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja-JP) フィールドが含まれている場合は、それに対してグローバル検索を適用できます。
-
-## カスタムデータセットでグローバル検索を使用する
-
-グローバル参照データセットと互換性のあるイベントデータセットに鍵が必要です。 標準の [Adobe Experience Platform スキーマの Mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=ja-JP#mixins) を追加して適切な XDM フィールドにデータを入力する場合に限り、カスタムデータセットをグローバル検索で動作させることができます。
 
 ## 使用可能なグローバル検索フィールド
 
