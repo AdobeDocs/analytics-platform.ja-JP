@@ -1,59 +1,59 @@
 ---
-title: Google AnalyticsデータをAdobe Experience Platformに取り込む
-description: 'Customer Journey Analytics(CJA)を利用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法を説明します。 '
+title: Adobe Experience Platform への Google Analytics データの取り込み
+description: 'Customer Journey Analytics（CJA）を利用して Google Analytics データを Adobe Experience Platform に取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Google AnalyticsデータをAdobe Experience Platformに取り込む
+# Adobe Experience Platform への Google Analytics データの取り込み
 
-この使用例では、Google AnalyticsデータをデータセットとしてAdobe Experience Platformに取り込む方法に重点を置いています。 歴史的データと実データの両方を取り込む方法を説明します。 完了したら、両方のデータセットをCustomer Journey Analyticsで組み合わせて、ユーザのジャーニーをデバイス間で表示できます。
+このユースケースでは、Google Analytics データをデータセットとして Adobe Experience Platform に取り込む方法を重点的に取り上げています。 履歴データとライブデータの両方を取り込む方法について説明します。 完了したら、Customer Journey Analytics で両方のデータセットを組み合わせて、ユーザーのジャーニーをクロスデバイスで表示できます。
 
-Experience Platform内のデータセットは、次の2つの要素で構成されています。スキーマと、データセット内の実際のレコード。 スキーマ（短く言うとExperience Data ModelまたはXDM）は、データセットの列に似ており、データ自体を記述する設計図やルールのようです。 プラットフォーム内で、Adobeは次の2種類のスキーマを提供します。
+Experience Platform 内のデータセットは、スキーマとデータセット内の実際のレコードの 2 つで構成されています。 スキーマ（Experience Data Model または略して XDM）は、データセットの列のようなものであり、データ自体を記述するブループリントまたはルールのようなものです。 Platform 内で、アドビは次の 2 種類のスキーマを提供します。
 
-* Google Analyticsデータを自動的にマッピングする(エクスペリエンスイベントスキーマと呼ばれる)、あらかじめ用意されているスキーマー（エクスペリエンス）
-* Google Analyticsデータを作成し、簡単にマッピングできるカスタムスキーマ
+* Google Analytics データから自動的にマッピングできる標準提供スキーマ（エクスペリエンスイベントスキーマと呼ばれます）
+* 独自に作成して Google Analytics データから簡単にマッピングできるカスタムスキーマ
 
-Adobeのデータモデルの最も強力な側面の1つは、顧客のインタラクションデータをすべて1つの共通スキーマに標準化できる点です。これにより、CJAでデータをより簡単に結合できます。
+アドビのデータモデルの最も強力な側面の 1 つは、顧客のインタラクションデータをすべて 1 つの共通スキーマに標準化できる点です。これにより、CJA でデータを結合するのがはるかに簡単になります。
 
 ## 前提条件
 
-これらのタスクを達成するには、次のアクセス権と権限が必要です。
+これらのタスクを遂行するには、次のアクセスと権限が必要です。
 
-* Adobe Experience Platformへのアクセス
-* ユニバーサルGoogle Analytics(Google Analytics360版)またはGoogle Analytics4(無料版またはGoogle Analytics360版)へのアクセス
-* Customer Journey Analyticsとその[管理者権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja-JP#admin-access-permissions)へのアクセス。
+* Adobe Experience Platform へのアクセス
+* Universal Google Analytics（Google Analytics 360 版）または Google Analytics 4（無料版または Google Analytics 360 版）へのアクセス
+* Customer Journey Analytics へのアクセスとその[管理者権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)。
 
-Google AnalyticsデータをAdobe Experience Platformに取り込む方法は、使用しているGoogle Analyticsのバージョンに応じて異なります。
+Google Analytics データを Adobe Experience Platform に取り込む方法は、使用している Google Analytics のバージョンによって異なります。
 
-| 使用する ID | このライセンスも必要です… | それで… |
+| 使用する ID | 同時に必要なライセンス | 実行するタスク |
 | --- | --- | --- |
-| **ユニバーサル解析** | Google Analytics360 | 次の手順の手順1 ～ 3を実行します。 |
-| **Google Analytics4** | 無料のGAバージョンまたはGoogle Analytics360 | 次の手順の手順1と3を実行します。 手順2は不要です。 |
+| **Universal Analytics** | Google Analytics 360 | 次の手順 1～3 を実行します。 |
+| **Google Analytics 4** | 無料版 GA または Google Analytics 360 | 次の手順 1 と 3 を実行します。 手順 2 は不要です。 |
 
-## 履歴（バックフィル）データを取り込む
+## 履歴（バックフィル）データの取り込み
 
-### 1.Google AnalyticsデータをBigQueryに接続する
+### 1. Google Analytics データを BigQuery に接続する
 
-詳しくは、[](https://support.google.com/analytics/answer/3416092?hl=en)これらの説明を参照してください。 これらの手順はユニバーサルGoogle Analyticsに基づいています。
+詳しくは、[これらの説明](https://support.google.com/analytics/answer/3416092?hl=ja)を参照してください。 これらの手順は Universal Google Analytics に基づいています。
 
-### 2.Google AnalyticsセッションをBigQuery内のイベントに変換し、Google Cloudストレージにエクスポートする
+### 2. Google Analytics セッションを BigQuery 内のイベントに変換し、Google クラウドストレージに書き出す
 
 >[!IMPORTANT]
 >
->この手順は、Universal Analyticsのお客様のみに適用されます
+>この手順は、Universal Analytics ユーザーにのみ適用されます
 
-GAデータは、各レコードを、個々のイベントではなく、ユーザーのセッションとしてデータに保存します。 ユニバーサル分析データをエクスペリエンスプラットフォームに準拠した形式に変換するには、SQLクエリを作成する必要があります。 GAスキーマの「ヒット」フィールドに「アンネスト」関数を適用します。 使用できるSQLの例を次に示します。
+GA データでは、データ内の各レコードが個々のイベントではなくユーザーのセッションとして格納されます。 Universal Analytics データを Experience-Platform に準拠した形式に変換するには、SQL クエリを作成する必要があります。 GA スキーマの「hits」フィールドに「unnest」関数を適用します。 使用できる SQL の例を次に示します。
 
 `SELECT
 *,
-timestamp_seconds(`` + hit.time) AS `` 
+timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
 (
 SELECT
@@ -68,88 +68,88 @@ device,
 geoNetwork,
 hit 
 FROM
-`visitStartTimetimestampyour_bq_table_2021_04_*`,
+`your_bq_table_2021_04_*`,
 UNNEST(hits) AS hit 
 )`
 
-クエリが完了したら、完全な結果をBigQueryテーブルに保存します。
+クエリが完了したら、完全な結果を BigQuery テーブルに保存します。
 
-[SQLクエリに関する説明を含む](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql)を参照してください。
+[これらの手順](https://support.google.com/analytics/answer/7029846?hl=ja&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql)（SQL クエリの説明を含む）を参照してください。
 
-次のビデオでは、Google AnalyticsイベントをJSON形式でGoogle Cloudストレージに書き出すことも、次の手順について説明します。 **Export/Export to GCS**&#x200B;をクリックするだけです。 そこに到着したら、データをAdobe Experience Platformに引き込む準備ができている。
+次のビデオでは、Google Analytics イベントを JSON 形式で Google クラウドストレージに書き出す次の手順についても説明します。 **エクスポート／GCS にエクスポート**&#x200B;をクリックするだけです。 ダイアログが開いたら、データを Adobe Experience Platform に取り込む準備ができています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
-### 3. Google CloudストレージからExperience Platformにデータを読み込み、XDMスキーマにマッピング
+### 3. データを Google クラウドストレージから Experience Platform にインポートし、XDM スキーマにマッピングする
 
-「Experience Platform」で「**[!UICONTROL ソース]**」を選択し、「**[!UICONTROL Google Cloudストレージ]**」オプションを探します。 BigQueryで保存したデータセットを見つけるだけです。
+Experience Platform で「**[!UICONTROL ソース]**」を選択し、「**[!UICONTROL Google クラウドストレージ]**」オプションを探します。 そこから、BigQuery から保存したデータセットを見つける必要があります。
 
 次の点に注意してください。
 
-* JSON形式を選択していることを確認します。
+* 必ず JSON 形式を選択します。
 * 既存のデータセットを選択することも、新しいデータセットを作成することもできます（推奨）。
-* 履歴Google AnalyticsデータとライブストリーミングGoogle Analyticsデータは、別々のスキーマセットにある場合でも、同じデータに対して同じデータを選択する必要があります。 その後、[CJA接続](/help/connections/combined-dataset.md)のデータセットをマージできます。
+* Google Analytics の履歴データとライブストリーミングデータについては、別々のデータセットにある場合でも、必ず同じスキーマを選択してください。 その後、[CJA 接続](/help/connections/combined-dataset.md)のデータセットを結合できます。
 
-手順については、次のビデオを表示してください。
+手順については、次のビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-GAイベントデータは、以前に作成した既存のデータセットにマッピングするか、XDMの任意のスキーマを使用して新しいデータセットを作成することができます。 スキーマを選択すると、Experience Platformは機械学習を適用し、Google Analyticsデータの各フィールドを自動的に[XDMスキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui)に事前マッピングします。
+選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、新しいデータセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
 ![](assets/schema-map.png)
 
-マッピングは非常に簡単に変更でき、Google Analyticsデータから派生フィールドや計算フィールドを作成することもできます。 フィールドのXDMスキーマへのマッピングが完了したら、このインポートを定期的にスケジュールし、インジェストプロセス中にエラー検証を適用できます。 これにより、読み込んだデータに問題が生じなくなります。
+マッピングは非常に簡単に変更でき、Google Analytics データから派生フィールドや計算フィールドを作成することもできます。 フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 これにより、インポートしたデータに関する問題が生じなくなります。
 
-**「タイムスタンプ」の計算済みフィールド**
+**「timestamp」計算フィールド**
 
-Google Analyticsデータの`timestamp`スキーマフィールドに対しては、Experience PlatformスキーマUIで特別な計算済みフィールドを作成する必要があります。 **[!UICONTROL 追加計算済みのフィールド]**&#x200B;をクリックし、`timestamp`文字列を`date`関数に含めます。例：
+Google Analytics データの `timestamp` スキーマフィールドについては、Experience Platform スキーマ UI で特別な計算フィールドを作成する必要があります。 「**[!UICONTROL 計算フィールドを追加]**」をクリックして、次のように `timestamp` 文字列を `date` 関数に含めます。
 
 `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-次に、この計算済みフィールドをスキーマ内のtimestampデータ構造に保存する必要があります。
+次に、この計算フィールドをスキーマのタイムスタンプデータ構造に保存する必要があります。
 
 ![](assets/timestamp.png)
 
-**&#39;_id&#39;計算済みフィールド**
+**「_id」計算フィールド**
 
-`_id`スキーマフィールドには値が必要です。CJAは値を気にしません。 フィールドに「1」を追加できます。
+`_id` スキーマフィールドには値が必要です。どのような値でも構いません。 フィールドに「1」を追加するだけです。
 
 ![](assets/_id.png)
 
-## ライブストリーミングGoogle Analyticsデータを取り込む
+## Google Analytics ライブストリーミングデータの取り込み
 
-ライブストリーミングイベントをGoogle Tag Managerから直接Adobe Experience Platformに取り込むこともできます。
+ライブストリーミングイベントを Google Tag Manager から直接 Adobe Experience Platform に取り込むこともできます。
 
-### 1.追加カスタム変数
+### 1. カスタム変数を追加する
 
-Google Tag Managerアカウントにサインインした後、Adobeに関連するカスタム定数変数をいくつか追加する必要があります。 おそらく、Google Tag Managerに、お客様の電子メール、お客様の名前、言語、お客様のログイン状況など、Google Analyticsに送信される変数が既に存在します。 5つの新しいカスタム変数を定義する必要があります。
+Google Tag Manager アカウントにサインインした後、アドビに関連するカスタム定数変数をいくつか追加する必要があります。 Google Tag Manager には、顧客のメールアドレス、顧客名、言語、顧客のログインステータスなど、Google Analytics に送信される変数が既に含まれている可能性があります。 次の 5 つの新しいカスタム変数を定義する必要があります。
 
-* Adobe Experience Cloud組織ID
-* DCSストリーミングエンドポイント
-* Experience PlatformデータセットID
+* Adobe Experience Cloud 組織 ID
+* DCS ストリーミングエンドポイント
+* Experience Platform データセット ID
 * スキーマ参照
 * ページのタイムスタンプ
 
-これらの値を取得することで、すべてのGoogle Analyticsデータが正しいデータセットに送信され、適切なスキーマを持つようになります。 Experience Cloud組織や先ほど説明した変数がわからない場合は、Adobeのアカウントマネージャーが追跡にご協力ください。
+これらの値を取得することで、すべての Google Analytics データが正しいデータセットに送信され、適切なスキーマを持つようになります。 Experience Cloud 組織や、先ほど説明したその他の変数が不明な場合は、アドビのアカウントマネージャーにお問い合わせください。
 
-これらのカスタム変数を定義したら、既にGoogle Analyticsに送信しているすべてのデータをExperience Platformに送信するトリガーも設定できます。
+これらのカスタム変数を定義したら、既に Google Analytics に送信しているすべてのデータを Experience Platform にも送信するようにトリガーを設定できます。
 
-### 2. Google Tag Managerでのトリガーの設定
+### 2. Google タグマネージャーでのトリガーの設定
 
-この例では、「アカウントの作成」トリガーが定義されています。ここで`pageUrl equals account-creation`が定義されています。 このトリガーに情報を追加することで、ユーザーが認証に成功し、アカウント作成ページが読み込まれた場合に、データがGoogle AnalyticsとAEPの両方に送信されることを確認できます。
+この例では、「アカウントの作成」トリガーが `pageUrl equals account-creation` の条件で定義されています。 このトリガーに情報を追加することで、ユーザーの認証に成功しアカウント作成ページが読み込まれたときに、データが Google Analytics と AEP の両方に確実に送信されます。
 
-また、「[データ取り込み」および「Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9)」も参照してください。
+また、[データ取り込みと Google タグマネージャー](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=ja#module9)も参照してください。
 
-手順については、次のビデオを表示してください。
+手順については、次のビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
-## Google AnalyticsデータセットへのCJAでの接続の作成
+## CJA での Google Analytics データセットへの接続の作成
 
-Adobe Experience PlatformがライブGoogle Analyticsデータの受信を開始し、BigQueryから履歴Google Analyticsデータをバックフィルしたら、CJAにジャンプして[最初の接続](/help/connections/create-connection.md)を作成する準備が整います。 この接続により、共通の「顧客ID」を使用して、GAデータと他のすべての顧客データが結合されます。
+Adobe Experience Platform が Google Analytics のライブデータの受信を開始し、BigQuery から Google Analytics の履歴データをバックフィルしたら、CJA に移動して[最初の接続を作成](/help/connections/create-connection.md)する準備が整います。 この接続により、共通の「顧客 ID」を使用して GA データと他のすべての顧客データが結合されます。
 
 ## 次の手順
 
-* Google Analyticsデータを含む接続に基づいて[データ表示](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews)を作成します。
+* Google Analytics データを含んだ接続に基づいて、[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#cja-dataviews)を作成します。
 
-* ワークスペース](/help/use-cases/ga-to-cja-reporting.md)で驚くべき[分析を行ってください。
+* [Workspace で驚くべき分析](/help/use-cases/ga-to-cja-reporting.md)をいくつか行います。
