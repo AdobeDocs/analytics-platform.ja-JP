@@ -3,11 +3,11 @@ keywords: Analysis Workspace
 title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja-JP#analysis-workspace) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja#analysis-workspace) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace は分析をすばやく構築してインサイトを共有できる、柔軟なブラウザーツールです。ドラッグ&amp;ドロップのインターフェイスを使用して、分析の作成、ビジュアライゼーションの追加をおこない、データを活用、データセットをキュレーション、組織内の任意のユーザーとプロジェクトを共有およびスケジュールできます。
 
@@ -47,7 +47,7 @@ Workspace プロジェクトでは、左パネルから&#x200B;**パネル、テ
 
 ### コンポーネント
 
-**コンポ** ーネントは、ディメンション、指標、フィルターまたは日付範囲を指します。これらのすべてを **[!UICONTROL フリーフォーム]** テーブルで組み合わせて、ビジネス上の質問に答える開始を作成できます。分析を開始する前に、各[コンポーネントのタイプ](/help/components/overview.md)について理解しておく必要があります。コンポーネントの用語を習得したら、**[!UICONTROL フリーフォームテーブル]**&#x200B;でドラッグ&amp;ドロップを開始し、[分析を構築](/help/analysis-workspace/build-workspace-project/freeform-overview.md)します。
+**コンポーネント**&#x200B;は、ディメンション、指標、フィルターまたは日付範囲です。これらすべてを&#x200B;**[!UICONTROL フリーフォームテーブル]**&#x200B;で組み合わせることで、ビジネスに関する質問への回答を開始することができます。分析を開始する前に、各[コンポーネントのタイプ](/help/components/overview.md)について理解しておく必要があります。コンポーネントの用語を習得したら、**[!UICONTROL フリーフォームテーブル]**&#x200B;でドラッグ&amp;ドロップを開始し、[分析を構築](/help/analysis-workspace/build-workspace-project/freeform-overview.md)します。
 
 ![](assets/build-components.png)
 
