@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 9bc3e1c211c8cafa0abf73a8732d70185a4f0861
 workflow-type: tm+mt
 source-wordcount: '1364'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 58%
 | --- | --- |
 | 異なる [!UICONTROL Adobe Experience Platform] サンドボックスのデータを 1 つの [!UICONTROL Customer Journey Analytics] 接続に結合することはできますか？ | いいえ。サンドボックス全体のデータにアクセスすることはできません。同じサンドボックス内にあるデータセットのみを組み合わせることができます。[詳細情報](https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>標準の負荷の場合：60 分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>データのバックフィル（サイズにかかわらず、最大 13 ヶ月分のデータ）：4 週間未満</li></ul> |
-| [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | データセット間で人物IDが一致する限り、[!UICONTROL Customer Journey Analytics]はフィルター、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
+| [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | データセット間で個人 ID が一致する限り、[!UICONTROL Customer Journey Analytics] は、フィルター、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
 | オフラインデータを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | Customer Journey Analyticsに対する権利付与を使用すると、データをExperience Platformに取り込むことができます。 その後、Analysis Workspaceでのレポート用に、[!UICONTROL Customer Journey Analytics]にそのデータおよびデータ表示への接続を作成できます。 Experience Platform のデータは、オンボーディングチームが必要に応じて、レコメンデーションやコンサルティングを提供するのに役立ちます。 |
 | [!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | [!UICONTROL Adobe Analytics] のデータは、[Adobe Analytics ソースコネクタ](https://docs.adobe.com/content/help/ja-JP/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて Experience Platform に接続できます。ほとんどの[!UICONTROL Adobe Analytics]フィールドはXDM形式で持ち込まれますが、他のフィールドはまだ使用できません。 |
 | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
