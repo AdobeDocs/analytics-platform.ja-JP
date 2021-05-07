@@ -2,11 +2,11 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 98%
 
 ビデオの概要については、[こちら](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
 
-CJA接続を作成するには、次の権限が必要です。
+CJA 接続を作成するには、次の権限が必要です。
 
 Adobe Experience Platform:
-* データモデリング：表示スキーマ、スキーマの管理
-* データ管理:表示データセット，データセットの管理
+* データモデリング：ビュースキーマ、スキーマの管理
+* データ管理：ビューデータセット，データセットの管理
 * データ取り込み：ソースの管理
 
 Customer Journey Analytics
@@ -137,7 +137,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
