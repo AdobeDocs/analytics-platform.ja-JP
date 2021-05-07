@@ -10,11 +10,11 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 95%
       + [ディメンションのプレビュー](components/dimensions/view-dimensions.md)
       + [ディメンションの分類](components/dimensions/t-breakdown-fa.md)
       + [時間分割ディメンション](components/dimensions/time-parting-dimensions.md)
-      + [カーディナリティが非常に高いDimension](components/dimensions/high-cardinality.md)
+      + [基数が非常に高いディメンション](components/dimensions/high-cardinality.md)
    + [指標](components/apply-create-metrics.md)
    + フィルター {#cja-filters}
       + [フィルターの概要](components/filters/filters-overview.md)
@@ -156,8 +156,8 @@ ht-degree: 95%
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
-   + [Google AnalyticsデータをAdobe Experience Platformに取り込む](use-cases/ga-to-cja.md)
-   + [CJAのGoogle Analyticsデータに関するレポート](use-cases/ga-to-cja-reporting.md)
+   + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
+   + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](mobile-app/home.md)
    + [キュレーター向けガイド](mobile-app/curator.md)
