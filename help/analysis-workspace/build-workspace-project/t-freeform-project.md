@@ -1,19 +1,19 @@
 ---
-description: プロジェクトを作成し、フリーフォームパネルにコンポーネント(ディメンション、指標、フィルター、日付範囲)を追加します。
+description: プロジェクトを作成して、コンポーネント（ディメンション、指標、フィルター、日付範囲）をフリーフォームパネルに追加します。
 keywords: Analysis Workspace
 title: Workspace プロジェクトの作成
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Workspace プロジェクトの作成
 
-プロジェクトを作成し、フリーフォームパネルにコンポーネント(ディメンション、指標、フィルター、日付範囲)を追加します。
+プロジェクトを作成して、コンポーネント（ディメンション、指標、フィルター、日付範囲）をフリーフォームパネルに追加します。
 
 この記事では、Analysis Workspace インターフェイス要素について説明し、プロジェクトの作成方法を示します。
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 
 1. プロジェクトを作成およびキュレーションするためのユーザー権限を指定します。
 
-   Analysis Workspace プロジェクトを作成またはキュレーションするユーザーは、先に、管理者に **[!UICONTROL Analysis Workspace のプロジェクトを作成／キュレーション]**&#x200B;権限を有効にしたグループか、**[!UICONTROL 全レポートアクセス]**&#x200B;ユーザーグループに追加してもらう必要があります（**[!UICONTROL 管理者]**／**[!UICONTROL ユーザー管理]**／[グループ](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=ja-JP)。）
+   Analysis Workspace プロジェクトを作成またはキュレーションするユーザーは、先に、管理者に **[!UICONTROL Analysis Workspace のプロジェクトを作成／キュレーション]**&#x200B;権限を有効にしたグループか、**[!UICONTROL 全レポートアクセス]**&#x200B;ユーザーグループに追加してもらう必要があります（**[!UICONTROL 管理者]**／**[!UICONTROL ユーザー管理]**／[グループ](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-groups/groups.html)。）
 
 1. [!DNL Experience Cloud] で、**[!UICONTROL Analytics]**／**[!UICONTROL Workspace]** をクリックします。
 
@@ -59,7 +59,7 @@ ht-degree: 86%
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > コンポーネント</a> </td> 
-   <td colname="col2"> <p>プロジェクトにドラッグできるDimension、指標、フィルターおよび日付範囲。 </p> </td> 
+   <td colname="col2"> <p>プロジェクトにドラッグできるディメンション、指標、フィルターおよび日付範囲。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > ビジュアライゼーション</a> </td> 
@@ -84,13 +84,13 @@ ht-degree: 86%
    >
    >コピーまたは名前を付けて保存した後でも、内部リンクは、コピー元のプロジェクトではなく、内部のプロジェクトに対して相対的になりました。
 
-## コンポー追加ネントとビジュアライゼーション{#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## コンポーネントとビジュアライゼーションの追加 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. プロジェクトを作成するには、*`components`* および *`visualizations`* をプロジェクトにドラッグします。
 
    **コンポーネント**
 
-   コンポーネントツールバーには、最も頻繁に使用する検索可能なディメンション、指標、フィルターおよび日付範囲が表示されます。
+   コンポーネントツールバーには、最も頻繁に使用する、検索可能なディメンション、指標、フィルターおよび日付範囲が表示されます。
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -110,7 +110,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> フィルター（青） </td> 
-   <td colname="col2"> <p>パネルレベルでのみドラッグできますが、データテーブルにインラインフィルターを作成できます。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>詳しくは、<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >フィルター</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>パネルレベルでのみドラッグ可能ですが、データテーブルにインラインフィルターを作成できます。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>詳しくは、<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >フィルター</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日付範囲および精度（紫） </td> 
@@ -129,7 +129,7 @@ ht-degree: 86%
 
 1. 手順
 
-## 右クリックメニューを使用してデータをカスタマイズ{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## 右クリックメニューを使用したデータのカスタマイズ {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 右クリックメニューを使用すると、右クリックしたテーブルのセルに応じて、次のアクションを実行できます。
 
