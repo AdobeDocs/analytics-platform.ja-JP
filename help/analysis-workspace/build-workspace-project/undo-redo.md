@@ -2,11 +2,11 @@
 description: Analysis Workspace の「取り消し」と「やり直し」のオプションについて説明します。
 title: 「元に戻す」および「やり直し」の設定
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 92%
 
 * プロジェクト情報および設定の変更（「タグを追加」、説明の変更、「繰り返しインスタンスをカウント」設定）
 * ランディングページとして設定
-* 追加新規（フィルター/指標/日付範囲/アラート）
+* 新規追加（フィルター／指標／日付範囲／アラート）
 * プロジェクトを共有、プロジェクトリンクを取得、ファイルを（今すぐまたはスケジュールに従って）送信
-* フローのビジュアライゼーションでこのパスのフィルターを作成
+* フロービジュアライゼーションでこのパスのフィルターを作成します。
 * 計算指標を作成
 * 日付範囲を作成
 
