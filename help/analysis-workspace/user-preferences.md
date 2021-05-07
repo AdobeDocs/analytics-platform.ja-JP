@@ -2,9 +2,9 @@
 title: Analysis Workspace でのユーザー環境設定の設定方法
 description: ユーザー向けに一般環境設定とプロジェクト環境設定を設定できます。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->この機能は近日公開予定です。一般公開日は 2021 年 3 月 25 日（PT） です。
+>この機能は近日公開予定です。一般公開日は 2021 年 3 月 25 日（PT）です。
 
 [!UICONTROL コンポーネント]／[!UICONTROL ユーザーの環境設定]ページでは、Analysis Workspace 設定（および関連するコンポーネント）を管理できます。ユーザーの環境設定は、*すべて*&#x200B;の新しいプロジェクトまたはパネルに適用されます。
 
