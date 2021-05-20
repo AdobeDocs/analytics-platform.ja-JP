@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 95%
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
-| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/)を使用して利用できるようになりました。 |
+| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/) で利用できるようになりました。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
@@ -62,7 +62,7 @@ ht-degree: 95%
 | Media Analytics | メディアデータは、Analytics Data Connector の一部として使用できます。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar の動作は、マーチャンダイジング eVar が永続性を使用するように設定されていない場合、オブジェクト配列内のディメンションを使用して達成できます。 現在、マーチャンダイジングディメンションは使用できません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
-| 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platformのデータ準備機能は、Platformに直接送信されるデータの処理ルールの代わりに使用することもできます。 |
+| 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platformのデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) は、Platformに直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
 ## 現在はサポートされていませんが、予定されています
 
