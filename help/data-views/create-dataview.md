@@ -2,11 +2,10 @@
 title: Customer Journey Analytics での新しいデータビューの作成方法。
 description: 新しいデータビューを作成するために必要なすべての設定について説明します。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: ht
-source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: ht
-source-wordcount: '2795'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '2812'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +147,7 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 永続化を設定] | 切り替えキー |
 | [!UICONTROL 配分] | ディメンションで永続性のために使用する配分モデルを指定できます。オプションは、「[!UICONTROL 最新の]」、「[!UICONTROL 元の]」、「[!UICONTROL インスタンス]」、「[!UICONTROL すべて]」です。（従来の Analytics の eVar と同様に）永続的な値にする場合は、ここで設定します。 主な違いは、設定できる最大永続性が 90 日であることだけです。また、「[!UICONTROL 無期限]」というオプションではありません。 |
-| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定できます。オプションは、「[!UICONTROL セッション]」（デフォルト）、「[!UICONTROL 個人]」、「[!UICONTROL 時間]」、「[!UICONTROL 指標]」です。場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索キーワードや他のマーチャンダイジングの使用例など）。[!UICONTROL 指標]を使用すると、定義済みの指標のいずれかをこのディメンションの有効期限として指定できます（[!UICONTROL 購入]指標など）。 |
+| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定できます。オプションは、「[!UICONTROL セッション]」（デフォルト）、「[!UICONTROL 個人]」、「[!UICONTROL 時間]」、「[!UICONTROL 指標]」です。場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索キーワードや他のマーチャンダイジングの使用例など）。[!UICONTROL 指標]を使用すると、定義済みの指標のいずれかをこのディメンションの有効期限として指定できます（[!UICONTROL 購入]指標など）。<br>**注意**:「すべて」の配分を選択した場合は、ディメンションのカスタム有効期限を設定 [!UICONTROL できません]。 |
 
 ### 値バケットの設定
 
