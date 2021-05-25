@@ -2,11 +2,10 @@
 title: Customer Journey Analytics のデータビューの使用例
 description: Customer Journey Analytics でのデータビューの柔軟性と能力を示す複数の使用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '342'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -40,6 +39,14 @@ ht-degree: 100%
 1. これで、「[!UICONTROL 値のグループ化]」を追加して、このディメンションをグループ化してレポートに表示できます（グループ化を使用しない場合、このディメンションの各インスタンスは Workspace レポートに行項目として表示されます）。
 
    ![](assets/bucketing.png)
+
+## フロー図で数値ディメンションを「指標」として使用する
+
+数値ディメンションを使用して、[!UICONTROL フロー]ビジュアライゼーションに「指標」を取り込むことができます。 次の例は、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に流れ込む様子を示しています。
+
+![](assets/flow.png)
+
+## 指標値を含めるまたは除外する
 
 その他のデータビューの設定について詳しくは、「[データビューの作成](/help/data-views/create-dataview.md)」を参照してください。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。
