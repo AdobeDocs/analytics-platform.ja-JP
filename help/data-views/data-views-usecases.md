@@ -2,10 +2,10 @@
 title: Customer Journey Analytics のデータビューの使用例
 description: Customer Journey Analytics でのデータビューの柔軟性と能力を示す複数の使用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 46%
+source-wordcount: '688'
+ht-degree: 47%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 これらの使用例では、Customer Journey Analytics におけるデータビューの柔軟性と能力を示しています。
 
-## 1. pageTitle（文字列）スキーマフィールドから注文指標を作成する
+## 1.文字列スキーマフィールドから指標を作成する
 
 例えば、データビューを作成する場合、文字列の [!UICONTROL pageTitle] スキーマフィールドから [!UICONTROL 注文件数]指標を作成できます。手順は次のとおりです。
 
@@ -27,6 +27,8 @@ ht-degree: 46%
    「confirmation」フレーズは、これが注文であることを示します。これらの条件が満たされたページタイトルをすべて確認すると、インスタンスごとに「1」がカウントされます。結果は、（計算指標ではなく）新しい指標になります。値を含めた／除外した指標は、他の指標を使用できるすべての場所で使用できます。Attribution IQ、フィルターなど、標準指標を使用できるあらゆる場所で機能します。
 1. [!UICONTROL セッション]を[!UICONTROL ルックバックウィンドウ]として、[!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。
 また、同じフィールドから別の[!UICONTROL 注文件数]指標を作成し、その指標に対して別のアトリビューションモデル（[!UICONTROL ファーストタッチ]など）と別の[!UICONTROL ルックバックウィンドウ]（[!UICONTROL 30 日]など）を指定できます。
+
+もう1つの例として、訪問者ID（ディメンション）を指標として使用し、会社の訪問者ID数を判断します。
 
 ## 2.ディメンションに整数を使用する
 
@@ -68,17 +70,9 @@ f.値として「50」を指定します。
 
 会社は、ユーザーのトレーニングに費やして、レポートで「未指定」と表示される時間を費やしている可能性があります。 データビューのデフォルトは「値なし」です。 データビューUIで、「値なし」を「未指定」に[変更できるようになりました。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings)
 
-## 6. [!UICONTROL 複製]機能を使用します
+## 6.異なる[!UICONTROL アトリビューション]設定を持つ複数の指標を作成する
 
-指標を複製して特定の設定を変更すると、1つのスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。
-
-右上にある指標またはディメンションの名前の下にある「重複」設定を選択します。
-
-![](assets/duplicate.png)
-
-## 異なるアトリビューション設定を持つ複数の指標の作成
-
-上記の[!UICONTROL 重複]機能を使用して、[!UICONTROL ファーストタッチ]、[!UICONTROL ラストタッチ]、[!UICONTROL アルゴリズム]など、様々なアトリビューション設定を持つ複数の売上高指標を作成します。
+右上の[!UICONTROL 複製]機能を使用して、[!UICONTROL ファーストタッチ]、[!UICONTROL ラストタッチ]、[!UICONTROL アルゴリズム]など、様々なアトリビューション設定を持つ複数の売上高指標を作成します。
 
 「アルゴリズムの売上高」などの違いを反映するために、各指標の名前を忘れないでください。
 
