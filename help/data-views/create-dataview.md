@@ -2,10 +2,10 @@
 title: Customer Journey Analytics での新しいデータビューの作成方法。
 description: 新しいデータビューを作成するために必要なすべての設定について説明します。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 98%
+source-wordcount: '2934'
+ht-degree: 95%
 
 ---
 
@@ -116,11 +116,13 @@ ht-degree: 98%
 
 ### 動作の設定
 
+レポートでの指標の動作を指定できます。
+
 ![](assets/behavior-settings.png)
 
 | 設定 | 説明／使用例 |
 | --- | --- |
-| [!UICONTROL 値をカウント] | ブール指標の場合のみ、この設定を使用すると、「[!UICONTROL Count True]」、「[!UICONTROL Count False]」、「[!UICONTROL Count True」または「False]」を指標値として指定できます。 デフォルト値は[!UICONTROL Count True]です。 |
+| [!UICONTROL 値をカウント] | ブール指標の場合のみ、この設定を使用すると、「[!UICONTROL Count True]」、「[!UICONTROL Count False]」、「[!UICONTROL Count True」または「False]」を指標値として指定できます。 デフォルト値は[!UICONTROL Count True]です。 注文値が50の場合、「50」など、指標の実際の値が表示されます。 |
 | [!UICONTROL インスタンスをカウント] | 指標として使用する数値フィールドまたは日付タイプフィールドで、値そのものではなく設定回数をカウントするかどうかを指定できます。<br> 数値フィールドのインスタンスを合計し、内部の実際の値ではなく、そのフィールドが&#x200B;*設定*&#x200B;された回数だけを合計する場合。<br>これは、例えば、[!UICONTROL 売上高]フィールドから [!UICONTROL 注文件数]指標を作成する場合に役立ちます。売上高が設定された場合、売上高の数値ではなく、1 件の注文をカウントする必要があります。 |
 
 ### [!UICONTROL 「値なし」オプション]の設定
@@ -201,6 +203,12 @@ ht-degree: 98%
 | [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform バッチを表します。 |
 | [!UICONTROL データセット ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform データセットを表します。 |
 
+## [!UICONTROL 複製]機能を使用します
+
+指標またはディメンションを複製して特定の設定を変更すると、1つのスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。 右上の指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。 次に、新しい指標またはディメンションを変更し、わかりやすい名前で保存します。
+
+![](assets/duplicate.png)
+
 ### フィルタースキーマフィールドおよびディメンション／指標
 
 左側のパネルのスキーマフィールドは、次のデータタイプでフィルタリングできます。
@@ -211,8 +219,7 @@ ht-degree: 98%
 
 ![](assets/filter-other.png)
 
-
-## 3. データビューにグローバルフィルターを追加する
+## データビューにグローバルフィルターを追加する
 
 データビュー全体に適用するフィルターを追加できます。 このフィルターは、Workspace で実行する任意のレポートに適用されます。
 
