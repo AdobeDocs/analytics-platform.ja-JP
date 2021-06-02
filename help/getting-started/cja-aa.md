@@ -3,9 +3,9 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 | Media Analytics | メディアデータは、Analytics Data Connector の一部として使用できます。 |
 | マーチャンダイジング eVar | マーチャンダイジング eVar の動作は、マーチャンダイジング eVar が永続性を使用するように設定されていない場合、オブジェクト配列内のディメンションを使用して達成できます。 現在、マーチャンダイジングディメンションは使用できません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
-| 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platformのデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) は、Platformに直接送信されるデータの処理ルールの代わりに使用することもできます。 |
+| 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
 ## 現在はサポートされていませんが、予定されています
 
