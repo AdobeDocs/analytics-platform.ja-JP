@@ -3,9 +3,9 @@ title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Experience Platform 権限について詳しくは、「[Adobe Experience Platfo
 
 >[!NOTE]
 >
->従来のAdobe Analyticsのように、個々の指標やディメンションにCustomer Journey Analyticsで権限を付与することはできません。 指標とディメンションはデータ表示で変更できるので、CJAで変更される可能性があり、レポートも過去に遡って変更されます。
+>従来の Adobe Analytics の場合とは異なり、Customer Journey Analytics 内の個々の指標やディメンションに権限を設定することはできません。 指標とディメンションはデータビューで変更できるため、CJA で変更される可能性があり、レポートも遡って変更されます。
 
 ### ユーザーアクセス
 
