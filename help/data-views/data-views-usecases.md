@@ -2,10 +2,10 @@
 title: Customer Journey Analytics のデータビューの使用例
 description: Customer Journey Analytics でのデータビューの柔軟性と能力を示す複数の使用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 47%
+source-wordcount: '763'
+ht-degree: 42%
 
 ---
 
@@ -53,7 +53,9 @@ ht-degree: 47%
 
 ## 4.サブイベントのフィルタリングを実行する
 
-イベントをフィルタリングして、表示したいもののみを表示できます。 例えば、データビューの含める/除外機能を使用して、50ドルを超える売上を生んだ製品のみに焦点を当てます。 したがって、50ドルの製品購入と25ドルの製品購入を含む注文がある場合、我々は全体の注文ではなく、25ドルの製品購入のみを削除します。
+この機能は、アレイベースのフィールドに特に適用できます。 「含める/除外」機能では、サブイベントレベルでフィルタリングをおこなえますが、フィルタービルダーで作成されたフィルター（セグメント）では、イベントレベルでのみフィルタリングをおこなえます。 そのため、データビューでinclude/excludeを使用してサブイベントフィルタリングを実行し、イベントレベルでフィルターでその新しい指標/ディメンションを参照できます。
+
+例えば、データビューの含める/除外機能を使用して、50ドルを超える売上を生んだ製品のみに焦点を当てます。 したがって、50ドルの製品購入と25ドルの製品購入を含む注文がある場合、我々は全体の注文ではなく、25ドルの製品購入のみを削除します。
 
 1. データビュー[「コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) 」タブで、[!UICONTROL 売上高]スキーマフィールドを[!UICONTROL 「含まれるコンポーネント]」の下の[!UICONTROL 指標]領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
@@ -69,6 +71,8 @@ f.値として「50」を指定します。
 ## 5. 「[!UICONTROL 値なしオプション]」設定を利用します
 
 会社は、ユーザーのトレーニングに費やして、レポートで「未指定」と表示される時間を費やしている可能性があります。 データビューのデフォルトは「値なし」です。 データビューUIで、「値なし」を「未指定」に[変更できるようになりました。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings)
+
+もう1つの例として、メンバーシッププログラム登録のディメンションがあります。 この場合、「値なし」を「メンバーシッププログラム登録なし」に変更できます。
 
 ## 6.異なる[!UICONTROL アトリビューション]設定を持つ複数の指標を作成する
 
