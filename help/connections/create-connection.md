@@ -2,11 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: ht
-source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: ht
-source-wordcount: '1974'
-ht-degree: 100%
+source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL Workspace] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL Workspace] のデータセット間で接続を確立する必要があります。
 
-ビデオの概要については、[こちら](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)をクリックしてください。
+ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)をクリックしてください。
 
 CJA 接続を作成するには、次の権限が必要です。
 
@@ -137,7 +136,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
