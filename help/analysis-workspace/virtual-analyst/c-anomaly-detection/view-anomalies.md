@@ -2,20 +2,19 @@
 description: 異常値をテーブルまたは線グラフで表示できます。
 title: Analysis Workspace での異常値の表示
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '273'
+ht-degree: 97%
 
 ---
-
 
 # Analysis Workspace での異常値の表示
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 異常値をテーブルまたは線グラフで表示できます。
 
@@ -48,4 +47,3 @@ ht-degree: 100%
 信頼区間でチャートを調整できるオプションがあります。設定（歯車）アイコンをクリックして、「**[!UICONTROL 異常値検出で Y 軸のスケールの設定を可能にする]**」をオンにします。
 
 ![](assets/scale-y-axis.png)
-
