@@ -2,11 +2,10 @@
 title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 84%
+source-wordcount: '466'
+ht-degree: 82%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 84%
 
 *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。[!UICONTROL コホート分析は]、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://en.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。
 
-コホートレポートを作成したら、そのコンポーネント(特定のディメンション、指標およびフィルター)をキュレーションして、任意の人とコホートレポートを共有できます。 [キュレーションと共有](/help/analysis-workspace/curate-share/curate.md)を参照してください。
+コホートレポートを作成したら、そのコンポーネント（特定のディメンション、指標、フィルター）をキュレーションして、誰とでもコホートレポートを共有できます。 [キュレーションと共有](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 
 [!UICONTROL コホート分析]では、例えば次の操作をおこなえます。
 
@@ -26,13 +25,13 @@ ht-degree: 84%
 
 [!UICONTROL コホート分析]は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべての Adobe Analytics ユーザーが利用できます。
 
-[コホート分析のビデオチュートリアル](https://docs.adobe.com/content/help/ja/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) （4:36）
+[コホート分析のビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) （4:36）
 
 >[!IMPORTANT]
 >
 >[!UICONTROL コホート分析]
 >
->は、フィルター不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、回数をサポートしていません。 フィルターで使用できる指標のみが
+>は、フィルタリング不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。 フィルターで使用できる指標のみ、
 >[!UICONTROL コホート分析]で使用できます。一度に 1 つのみ増やすことができます。
 
 ## コホート分析の機能
@@ -41,13 +40,13 @@ ht-degree: 84%
 
 ### [!UICONTROL リテンションテ]ーブル
 
-[!UICONTROL リテンション]コホートレポートが訪問者を返す：各データセルは、その期間にアクションをおこなったコホートの生の訪問者数と割合を表します。最大3つの指標と10個のフィルターを含めることができます。
+[!UICONTROL リテンション]コホートレポートが訪問者を返す：各データセルは、その期間にアクションをおこなったコホートの生の訪問者数と割合を表します。指標は最大3つ、フィルターは最大10個含めることができます。
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL チャーンテーブル]
 
-[!UICONTROL チャーン]コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした訪問者、または一定期間内にリターン条件を満たしていない訪問者が表示されます。最大3つの指標と10個のフィルターを含めることができます。
+[!UICONTROL チャーン]コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした訪問者、または一定期間内にリターン条件を満たしていない訪問者が表示されます。指標は最大3つ、フィルターは最大10個含めることができます。
 
 ![](assets/churn-report.png)
 
