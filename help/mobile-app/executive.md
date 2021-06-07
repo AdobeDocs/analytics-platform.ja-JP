@@ -1,14 +1,13 @@
 ---
 description: ダッシュボードスコアカードの使用手順。
 title: Analytics ダッシュボードエグゼクティブガイド
-translation-type: ht
-source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
-workflow-type: ht
-source-wordcount: '1288'
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1286'
 ht-degree: 100%
 
 ---
-
 
 # Analytics ダッシュボード：エグゼクティブユーザークイックスタートガイド
 
@@ -120,7 +119,7 @@ Analytics ダッシュボードは、Customer Journey Analytics からのイン�
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。画面右上の「**[!UICONTROL 完了]**」をタップします。「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-7. スコアカードにフィルターを適用するには、フィルタードロップダウンをタップし、キュレーターが設定したフィルターを選択します。アプリの[フィルター](https://docs.adobe.com/content/help/ja-JP/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)は、Analytics Workspace と同様に機能します。
+7. スコアカードにフィルターを適用するには、フィルタードロップダウンをタップし、キュレーターが設定したフィルターを選択します。アプリの[フィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Analytics Workspace と同様に機能します。
 
    ![フィルター](assets/segment_filter.png)
 
