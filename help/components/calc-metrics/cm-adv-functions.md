@@ -1,20 +1,19 @@
 ---
 title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 100%
+source-wordcount: '2947'
+ht-degree: 99%
 
 ---
-
 
 # リファレンス：高度な関数
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 これらの関数にアクセスするには、**[!UICONTROL 関数]**&#x200B;ドロップダウンリストの「**[!UICONTROL 詳細を表示]**」を選択します。
 
@@ -730,4 +729,3 @@ z スコア A の Z 検定（n-tailed）を実行します。
 >[!NOTE]
 >
 >値が正規分布されると仮定します。
-
