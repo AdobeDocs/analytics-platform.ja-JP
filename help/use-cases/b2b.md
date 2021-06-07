@@ -2,11 +2,10 @@
 title: （B2B）ルックアップデータセットとしてアカウントレベルのデータを追加
 description: アカウントベースのデータをルックアップデータセットとして CJA に追加する方法を学びます。
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: ht
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '926'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +29,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 ## 1. ルックアップスキーマの作成（Experience Platform）
 
-[ルックアップ](/help/getting-started/cja-glossary.md)表で独自のスキーマを作成すると、使用するデータセットが、正しい設定（レコードタイプ）で CJA で使用できるようになります。ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class)することです。
+[ルックアップ](/help/getting-started/cja-glossary.md)表で独自のスキーマを作成すると、使用するデータセットが、正しい設定（レコードタイプ）で CJA で使用できるようになります。ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class)することです。
 
 ![](assets/create-new-class.png)
 
@@ -54,9 +53,9 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 ## 3. Experience Platform へのデータの取得
 
-CSV ファイルを使用している場合は、[CSV ファイルを XDM スキーマにマップ](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/tutorials/map-a-csv-file.html)する方法に関する説明が役立ちます。
+CSV ファイルを使用している場合は、[CSV ファイルを XDM スキーマにマップ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)する方法に関する説明が役立ちます。
 
-[その他の方法](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html)も利用できます。
+[その他の方法](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)も利用できます。
 
 データのオンボーディングとルックアップの確立には、ルックアップテーブルのサイズに応じて、約 2 ～ 4 時間かかります。
 
