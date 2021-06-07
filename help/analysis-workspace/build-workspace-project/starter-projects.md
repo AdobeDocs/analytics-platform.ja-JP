@@ -1,13 +1,12 @@
 ---
-description: Workspaceでテンプレートを使用して、カスタムテンプレートを作成します。
+description: Workspaceでテンプレートを使用し、カスタムテンプレートを作成します。
 title: テンプレート
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
-translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 95%
+source-wordcount: '709'
+ht-degree: 92%
 
 ---
 
@@ -15,13 +14,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 以下からプロジェクトを作成するかどうかを選択できます。
 
 * **空白のプロジェクト（デフォルト）**：手順については、「[Analysis Workspace プロジェクトの作成](/help/analysis-workspace/home.md)」を参照してください。
 * **標準テンプレート**：アドビが作成し、製品に付属しているテンプレートです。
-* **カスタムテンプレート**：管理者権限を持つユーザー、または Admin Console で [!UICONTROL Analysis Workspace：テンプレートとして保存]権限を付与された非管理者ユーザーが作成、共有または削除できるテンプレートです。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-console/permissions/product-profile.html)
+* **カスタムテンプレート**：管理者権限を持つユーザー、または Admin Console で [!UICONTROL Analysis Workspace：テンプレートとして保存]権限を付与された非管理者ユーザーが作成、共有または削除できるテンプレートです。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -55,7 +54,7 @@ ht-degree: 95%
 
 ## 標準テンプレート
 
-最初に Workspace を開くと、左側のパネルでテンプレートを使用できるようになります。Analysis Workspace のテンプレートは、一般的な使用例に対応しています。これらは属する業種ごとにグループ化され、選択したデータ表示に応じて、様々なディメンション、フィルター、指標およびビジュアライゼーションが設定されます。
+最初に Workspace を開くと、左側のパネルでテンプレートを使用できるようになります。Analysis Workspace のテンプレートは、一般的な使用例に対応しています。これらは、所属する垂直分類ごとにグループ化され、選択したデータビューに応じて、異なるディメンション、フィルター、指標およびビジュアライゼーションが設定されます。
 
 これらの事前設定されたテンプレートをそのまま、またはニーズに応じて変更して（例えば指標やビジュアライゼーションを追加または置き換えることで）使用して、新しい名前で保存できます。
 
