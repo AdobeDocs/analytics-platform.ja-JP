@@ -1,20 +1,19 @@
 ---
 description: Workspace のテーブルのページネーション、フィルタリングおよび並べ替え
 title: テーブルのページネーション、フィルタリングおよび並べ替え
-translation-type: ht
-source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 96%
 
 ---
-
 
 # テーブルのページネーション、フィルタリングおよび並べ替え
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace のテーブルのページネーション、フィルタリング、並べ替えの概要については、次のビデオチュートリアルを参照してください。
 
