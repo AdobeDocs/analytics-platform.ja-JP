@@ -2,20 +2,19 @@
 description: Analysis Workspace の異常値検出は、一連の高度な統計的手法を用いて、計測値を異常値と見なすべきかどうかを判定します。
 title: 異常値検出で使用される統計的手法
 uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 99%
 
 ---
-
 
 # 異常値検出で使用される統計的手法
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace の異常値検出は、一連の高度な統計的手法を用いて、計測値を異常値と見なすべきかどうかを判定します。
 
@@ -38,13 +37,13 @@ Analysis Workspace の異常値検出は、一連の高度な統計的手法を�
 モデルの選択後、アルゴリズムは、休日および前年比のシーズナリティに基づいて結果を調整します。休日の場合、アルゴリズムは、レポートの日付範囲に次の休日のいずれかが存在するかどうかをチェックします。
 
 * メモリアルデー（米国のみ）
-* 4 年 7 月
+* 4 年 7 月（PT）
 * 感謝祭（米国のみ）
 * ブラックフライデー（米国のみ）
 * サイバーマンデー（米国のみ）
-* 12 月 24～26 日
-* 1 月 1 日
-* 12 月 31 日
+* 12 月 24～26 日（PT）
+* 1 月 1 日（PT）
+* 12 月 31 日（PT）
 
 これらの休日は、顧客のトレンドの最多数に対して最も重要な休日を識別するために、多くの顧客データポイントにわたる広範な統計分析に基づいて選択されました。このリストは、確かにすべての顧客またはビジネスサイクルにとって完全ではありませんが、これらの休日を適用すると、ほぼすべての顧客のデータセットにわたって、アルゴリズムのパフォーマンスに大幅な改善が見られました。
 
