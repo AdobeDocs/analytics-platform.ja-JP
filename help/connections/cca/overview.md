@@ -2,10 +2,9 @@
 title: クロスチャネル分析の概要
 description: 複数のデータセットの訪問者 ID のキーを変更して、訪問者をステッチします。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: ht
-source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
-workflow-type: ht
-source-wordcount: '1128'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1124'
 ht-degree: 100%
 
 ---
@@ -57,7 +56,7 @@ ht-degree: 100%
 
 組織がすべての前提条件を満たし、その制限事項を理解したら、次の手順に従って CJA での使用を開始できます。
 
-1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html)と[データの取り込み](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html)に関するページを参照してください。
+1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)と[データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)に関するページを参照してください。
 1. アドビのアカウントマネージャーに次の情報をお知らせください。
    * クロスチャネル分析を有効にするリクエスト
    * キーを変更するデータセットのデータセット ID
