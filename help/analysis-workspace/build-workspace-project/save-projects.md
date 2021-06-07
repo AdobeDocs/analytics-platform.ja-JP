@@ -4,9 +4,9 @@ title: プロジェクトの保存
 feature: ワークスペースの基本
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 18b5a98cf5abb0d552cb7e87ee3098d314c5459a
-workflow-type: ht
-source-wordcount: '465'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 | **[!UICONTROL 保存]** | プロジェクトに対する変更を保存します。プロジェクトが共有されている場合は、プロジェクトの受信者にも変更が表示されます。プロジェクトを最初に保存すると、プロンプトが表示され、プロジェクトの名前、説明（オプション）、タグ（オプション）を付けるように求められます。 |
 | **[!UICONTROL メモと共に保存]** | プロジェクトを保存する前に、プロジェクトで変更した内容に関するメモを追加します。 メモはプロジェクトのバージョンと共に保存され、[!UICONTROL プロジェクト]／[!UICONTROL 以前のバージョンを開く]から、すべてのエディターが使用できます。 |
 | **[!UICONTROL 名前を付けて保存]** | プロジェクトの複製を作成します。元のプロジェクトは影響を受けません。 |
-| **[!UICONTROL テンプレートとして保存]** | プロジェクトを[カスタムテンプレート](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html)として保存し、 **[!UICONTROL プロジェクト／新規]**&#x200B;で組織が使用できるようにします。 |
+| **[!UICONTROL テンプレートとして保存]** | プロジェクトを[カスタムテンプレート](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ja)として保存し、 **[!UICONTROL プロジェクト／新規]**&#x200B;で組織が使用できるようにします。 |
 
 ![](assets/save-project.png)
 
