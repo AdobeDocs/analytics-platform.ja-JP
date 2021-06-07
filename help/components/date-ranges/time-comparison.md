@@ -2,20 +2,19 @@
 description: Analysis Workspace での日付の比較では、日付範囲を含む任意の列を使用して、前年比、前四半期比、前月比などの一般的な日付比較を作成できます。
 title: 日付の比較
 uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 08113536-658f-486b-ac56-6c531240c3c2
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '671'
+ht-degree: 98%
 
 ---
-
 
 # 日付の比較
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace での日付の比較では、日付範囲を含む任意の列を使用して、前年比、前四半期比、前月比などの一般的な日付比較を作成できます。
 
@@ -103,4 +102,3 @@ Analysis Workspace での日付の比較では、日付範囲を含む任意の�
 <p>See Jonny Moon's email from November 3. </p>
 
  -->
-
