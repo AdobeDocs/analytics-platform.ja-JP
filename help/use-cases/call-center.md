@@ -2,10 +2,9 @@
 title: コールセンターデータと web データの読み込み
 description: コールセンターと web サイトのデータをリンクさせるデータセットの作成方法について説明します。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-translation-type: ht
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
-workflow-type: ht
-source-wordcount: '679'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
@@ -31,7 +30,7 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## Platform への web データおよびコールセンターデータの読み込み
 
-データを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html)と[データの取り込み](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html)に関するページを参照してください。
+データを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)と[データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)に関するページを参照してください。
 
 プラットフォームにデータを読み込む際に、次のヒントに従うことで、結果のレポートについてより深く理解することができます。
 
