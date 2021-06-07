@@ -2,18 +2,17 @@
 description: 概要番号および変更ビジュアライゼーションを使用して、プロジェクト内の重要なデータポイントを表示します。
 title: 数の概要と変更の概要
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
-translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+exl-id: 8872fc58-0957-415d-9958-ce564612ce87
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 96%
 
 ---
 
-
 # 数の概要と変更の概要
 
-## 数値の概要ビジュアライゼーション  {#summary-number}
+## 数値の概要ビジュアライゼーション {#summary-number}
 
 概要番号ビジュアライゼーションを使用して、プロジェクトで重要な大きな数を強調表示します。このビジュアライゼーションは、次のように動作します。
 
@@ -44,7 +43,7 @@ ht-degree: 100%
 
 ## 変更概要ビジュアライゼーション {#summary-change}
 
-変更概要ビジュアライゼーションを使用して、2 つの数値の差分（変化）を表示します。変更概要の緑と赤は、[カスタムイベントの極性](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/success-events/success-event.html)、または計算指標の「[上昇傾向を表示](https://docs.adobe.com/content/help/ja-JP/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html)」オプションを使用して制御できます。
+変更概要ビジュアライゼーションを使用して、2 つの数値の差分（変化）を表示します。変更概要の緑と赤は、[カスタムイベントの極性](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html)、または計算指標の「[上昇傾向を表示](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html)」オプションを使用して制御できます。
 
 このビジュアライゼーションは、次のように動作します。
 
