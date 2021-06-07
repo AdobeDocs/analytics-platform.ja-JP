@@ -3,11 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +36,7 @@ Analysis Workspace の使用を開始するには、[experience.adobe.com/analyt
 
 ## 新規プロジェクトを作成 {#new-project}
 
-チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーと Adobe Analytics ダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/mobapp/curator.html)のどちらで開始するかを選択できます。
+チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーと Adobe Analytics ダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)のどちらで開始するかを選択できます。
 
 ![](assets/create-new-project.png)
 
@@ -65,4 +64,4 @@ Workspace プロジェクトでは、左パネルから&#x200B;**パネル、テ
 
 ## その他のリソース {#resources}
 
-* アドビでは、数百の [Analytics ビデオトレーニングチュートリアル](https://docs.adobe.com/content/help/ja-JP/analytics-learn/tutorials/overview.html)を提供しています。
+* アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を提供しています。
