@@ -2,11 +2,10 @@
 title: アトリビューションに関する FAQ
 description: アトリビューションに関する FAQ に対する回答です。
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 88%
+source-wordcount: '306'
+ht-degree: 85%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 **アトリビューションを使用する際の「なし」行項目とは**
 
@@ -26,7 +25,7 @@ ht-degree: 88%
 
 **訪問と訪問者のアトリビューションのルックバックを使用する必要があるのはいつですか。**
 
-アトリビューションルックバックの選択は、ユースケースによって決まります。コンバージョンで一般的に 1 回の訪問より長い時間がかかる場合は、訪問者のルックバックをお勧めします。より長い訪問の定義を持つデータ表示を作成することも、解決策となる可能性があります。
+アトリビューションルックバックの選択は、ユースケースによって決まります。コンバージョンで一般的に 1 回の訪問より長い時間がかかる場合は、訪問者のルックバックをお勧めします。訪問の定義が長いデータビューを作成することも、解決策となる可能性があります。
 
 **アトリビューションを使用する場合、prop と eVar はどのように比較されますか。**
 
@@ -51,6 +50,6 @@ ht-degree: 88%
 * 単一ページ訪問数
 * 単一アクセス
 
-**アトリビューションはフィルターでどのように機能しますか？**
+**アトリビューションはフィルターとどのように連携しますか。**
 
-アトリビューションは常にフィルターの前に実行され、グローバルフィルターは他のレポートフィルターの適用前に実行されます。
+アトリビューションは常にフィルターの前に実行され、グローバルフィルターは他のレポートフィルターの前に実行されます。
