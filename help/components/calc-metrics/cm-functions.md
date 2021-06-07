@@ -1,20 +1,19 @@
 ---
 title: リファレンス - 基本的な関数
-description: '計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。 '
-translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+description: 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
+exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 99%
 
 ---
-
 
 # リファレンス - 基本的な関数
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 
