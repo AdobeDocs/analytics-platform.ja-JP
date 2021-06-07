@@ -2,11 +2,10 @@
 title: アトリビューションの概要
 description: 成功イベントのクレジットを複数のディメンション項目に関連付ける概念。
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 93%
+source-wordcount: '452'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。次に例を示します。
 
@@ -35,7 +34,7 @@ Adobe Analytics を使用すると、以下が可能になるので、アトリ�
 * 無制限のアトリビューションモデル比較の利用：必要な数のモデルを動的に比較できます。
 * 実装の変更の回避：レポート時間処理とコンテキスト対応セッションで、カスタマージャーニーのコンテキストを実行時間に組み込んで適用できます。
 * アトリビューションシナリオに最適なセッションの構築。
-* フィルター別のアトリビューションの分類：重要なフィルター（新規顧客とリピート顧客、製品Xと製品Y、忠誠度レベル、CLVなど）でマーケティングチャネルのパフォーマンスを簡単に比較できます。
+* フィルター別にアトリビューションを分類する：重要なフィルター（新規顧客とリピーター顧客、製品Xと製品Y、ロイヤルティレベル、CLVなど）をまたいでマーケティングチャネルのパフォーマンスを簡単に比較できます。
 * チャネルのクロスオーバー分析およびマルチタッチ分析の調査：ベン図やヒストグラムを使用でき、アトリビューション結果のトレンドを追跡できます。
 * 主要なマーケティングシーケンスの視覚的分析：コンバージョンにつながったパスをマルチノードのフローおよびフォールアウトビジュアライゼーションで視覚的に調査できます。
 * 計算指標の構築：任意の数のアトリビューション割り当て方法を使用できます。
