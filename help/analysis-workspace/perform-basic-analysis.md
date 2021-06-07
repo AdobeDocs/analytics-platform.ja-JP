@@ -1,20 +1,19 @@
 ---
 title: Customer Journey Analytics での基本分析の実行
 description: 基本的なビジュアライゼーションを使用して Customer Journey Analytics のデータを分析する方法について説明します。
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 86%
+source-wordcount: '171'
+ht-degree: 81%
 
 ---
-
 
 # 基本分析の実行
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 接続とデータビューを作成した後、Analysis Workspace の機能と柔軟性を使用して、取得したデータを分析します。ディメンションや指標を自由に試してドラッグし、ディメンションや指標のアトリビューション設定、フレンドリ名、タイムゾーン、セッション設定などを変更できます。
 
@@ -24,9 +23,8 @@ Workspace の基本的なビジュアライゼーションの例を以下に示�
 
 * 2 つのデータソースを時間の経過と共に比較した、オンラインの売上高と実店舗の売上高のトレンドレポートを作成する。
 
-* 広告インプレッションデータ、Adobe Analyticsデータ、電子メールデータ、POSデータ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを表現する。
+* 広告インプレッションデータ、Adobe Analyticsデータ、Eメールデータ、POSデータ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを表現します。
 
 ![](assets/cja-basic-analysis.png)
 
 ![](assets/cja-basic-analysis2.png)
-
