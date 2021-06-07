@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 99%
+source-wordcount: '1968'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)をクリックしてください。
 
-CJA 接続を作成するには、次の権限が必要です。
+CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
@@ -41,7 +41,7 @@ Customer Journey Analytics
 
 1. 接続を作成するデータセットを含む Experience Platform のサンドボックスを選択します。
 
-   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://docs.adobe.com/content/help/ja-JP/experience-platform/sandbox/home.html)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
+   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
    >[!IMPORTANT]
    >
@@ -71,7 +71,7 @@ Customer Journey Analytics
 
 1. **[!UICONTROL タイムスタンプ]**：イベントデータセットの場合のみ、この設定は、[!UICONTROL Experience Platform] のイベントベースのスキーマにある、デフォルトのタイムスタンプフィールドへと自動的に設定されます。
 
-1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/schema/composition.html)です。
+1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)です。
 
 1. **[!UICONTROL 個人 Id]**：使用可能な ID のドロップダウンリストからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。ユーザー ID として ID マップを使用する方法については、以下を参照してください。
 
@@ -85,7 +85,7 @@ Customer Journey Analytics
 
 Customer Journey Analytics で、ユーザー ID に ID マップを使用する機能がサポートされるようになりました。ID マップは、キー>値のペアをアップロードできるマップデータ構造です。キーは ID 名前空間で、値は ID 値を保持する構造体です。アップロードされた各行／イベントに ID マップが存在し、それに応じて各行に対して値が設定されます。
 
-ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/home.html) クラスに基づくスキーマを使用するデータセットで使用できます。CJA 接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリ ID または ID マップとして選択できます。
+ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) クラスに基づくスキーマを使用するデータセットで使用できます。CJA 接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリ ID または ID マップとして選択できます。
 
 ![](assets/idmap1.png)
 
@@ -94,7 +94,7 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 | オプション | 説明 |
 |---|---|
 | [!UICONTROL プライマリ ID 名前空間を使用] | CJA は行ごとに、primary=true 属性でマークされた ID を ID マップで検索し、その行のユーザー ID として使用します。これは、これがパーティションの Experience Platform で使用される主キーであることを意味します。また、CJA の訪問者 ID としての使用の主な候補でもあります（CJA 接続でのデータセットの設定方法に応じて異なります）。 |
-| [!UICONTROL 名前空間] | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
+| [!UICONTROL 名前空間] | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
 
 ### ID マップのエッジケース
 
@@ -117,8 +117,8 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
-   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://docs.adobe.com/content/help/ja-JP/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
-   | [!UICONTROL 毎日のイベントの平均数] | 接続にあるすべてのデータセットについて、インポートする毎日のイベント（新しいデータ&#x200B;**と**&#x200B;バックフィルデータ）の平均数を指定する必要があります。ドロップダウンメニューから 1 つのオプションを選択します。これにより、このデータに十分な領域を割り当てることができます。<br>会社で毎日インポートされるイベントの平均数が不明な場合は、[Adobe Experience Platform クエリサービス](https://docs.adobe.com/content/help/ja-JP/experience-platform/query/home.html)で簡単な SQL クエリを実行して調べることができます。<br>以下の「毎日のイベントの平均数を計算する」を参照してください。 |
+   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 毎日のイベントの平均数] | 接続にあるすべてのデータセットについて、インポートする毎日のイベント（新しいデータ&#x200B;**と**&#x200B;バックフィルデータ）の平均数を指定する必要があります。ドロップダウンメニューから 1 つのオプションを選択します。これにより、このデータに十分な領域を割り当てることができます。<br>会社で毎日インポートされるイベントの平均数が不明な場合は、[Adobe Experience Platform クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)で簡単な SQL クエリを実行して調べることができます。<br>以下の「毎日のイベントの平均数を計算する」を参照してください。 |
 
 1. 「**[!UICONTROL データビューを保存して作成]**」をクリックします。ドキュメントについては、[データビューの作成](/help/data-views/create-dataview.md)を参照してください。
 
@@ -130,13 +130,13 @@ ID マップは、[ExperienceEvent XDM](https://docs.adobe.com/content/help/ja-J
 * 接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。
 * バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、現在の履歴データの量と、選択した「**[!UICONTROL 毎日のイベントの平均数]**」設定の両方に左右されます。例えば、1 日あたり 10 億行を超えるデータと 3 年分の履歴データがある場合は、インポートに数週間かかる可能性があります。一方、1 日あたり 100 万行未満のデータと 1 週間分の履歴データがある場合は、1 時間未満で済みます。
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
-*  [Adobe Analytics Source コネクタ](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)では、サイズに関係なく、最大 13 か月分のデータを読み込みます。
+*  [Adobe Analytics Source コネクタ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html?lang=ja)では、サイズに関係なく、最大 13 か月分のデータを読み込みます。
 
 ### 毎日のイベントの平均数を計算する
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
