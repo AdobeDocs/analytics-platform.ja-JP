@@ -1,12 +1,11 @@
 ---
-description: 予定されているAnalysis Workspaceプロジェクトの管理
+description: スケジュールされたAnalysis Workspaceプロジェクトの管理
 keywords: Analysis Workspace
 title: スケジュール済みプロジェクトマネージャー
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 スケジュールされた Analysis Workspace プロジェクトを管理します。
 
