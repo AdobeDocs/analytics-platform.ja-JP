@@ -3,11 +3,10 @@ description: Workspace の表示のみのプロジェクト
 keywords: 表示専用プロジェクト
 title: 表示専用プロジェクト
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 99%
+source-wordcount: '277'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 [プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis Workspace、または Adobe Analytics の一般的な知識が低いユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用したい場合には、この方法が望ましい場合があります。
 
@@ -26,7 +25,7 @@ ht-degree: 99%
 表示のみのプロジェクトで無効になる操作には、次のものが含まれます。
 
 * 左側のレールを非表示にする
-* パネルカレンダーの日付範囲注意：受信者にカレンダー制御を付与する場合は、日付範囲を含む[ドロップダウンフィルター](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)を追加します。
+* パネルカレンダーの日付範囲注意：受信者にカレンダー制御を付与する場合は、日付範囲を含む[ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)を追加します。
 * フリーフォームフィルター
 * 表示可能な行のフリーフォーム数
 * フリーフォーム行、列またはビジュアライゼーションの設定
