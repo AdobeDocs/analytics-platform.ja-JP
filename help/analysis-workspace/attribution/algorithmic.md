@@ -2,11 +2,10 @@
 title: アルゴリズムアトリビューション
 description: アルゴリズムアトリビューションモデルの詳細。
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 82%
+source-wordcount: '311'
+ht-degree: 78%
 
 ---
 
@@ -14,13 +13,13 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 >[!NOTE]
 >
->**[!UICONTROL アルゴリズム]** のアトリビューションは、現在、テストに制限があります。詳しくは、[Adobe Analyticsの機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)を参照してください。
+>**[!UICONTROL アルゴリズム]** アトリビューションは、現在、制限付きテストです。詳しくは、[Adobe Analytics機能リリース](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)を参照してください。
 
-Analysis Workspace のアルゴリズム[アトリビューションモデル](models.md)は、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てるという点で、他のモデルとは異なります。Analysis Workspaceの他のすべてのアトリビューションモデルと同様に、このモデルは任意のディメンションまたは指標で使用でき、無制限のフィルターと分類をサポートし、コンバージョンの100%をテーブルのディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
+Analysis Workspace のアルゴリズム[アトリビューションモデル](models.md)は、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てるという点で、他のモデルとは異なります。Analysis Workspaceの他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のフィルターと分類をサポートし、コンバージョンの100%をテーブルのディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
 
 アトリビューションに使用されるアルゴリズムは、協同ゲーム理論のハルサニ配当に基づきます。ハルサニ配当は、結果への貢献度が等しくないゲーム内のプレーヤー間でクレジットを分配するためのシャープレイ値ソリューション（ノーベル賞受賞者のエコノミスト、ロイドシャープレイにちなんで名付けられました）の一般化です。
 
