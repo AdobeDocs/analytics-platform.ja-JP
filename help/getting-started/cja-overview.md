@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: ht
-source-wordcount: '1257'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1255'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics の最初のリリースには、Analysis Workspace �
 
 ## CJA とクロスデバイス分析の比較
 
-[クロスデバイス分析](https://docs.adobe.com/content/help/ja-JP/analytics/components/cda/cda-home.html)：Adobe Experience Platform Identity Service と統合して、Co-op Graph またはプライベートグラフを活用し、デジタルデバイスをどのように人物にマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
+[クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html)：Adobe Experience Platform Identity Service と統合して、Co-op Graph またはプライベートグラフを活用し、デジタルデバイスをどのように人物にマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
 
 その一方、CJA は、Adobe Experience Platform のデータセットと統合され、Analysis Workspace でのクロスチャネル分析を可能にします。CJA はまだ Co-op またはプライベート ID グラフとは統合されていませんが、bring-your-own-ID（個人 ID の持ち込み）によってデータセットを結合できます。また、これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
 
