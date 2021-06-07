@@ -2,11 +2,10 @@
 title: 計算指標の概要
 description: 詳細
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-translation-type: ht
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
-workflow-type: ht
-source-wordcount: '484'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 計算指標および高度な計算（または派生）指標は、既存の指標から作成できるカスタム指標です。計算指標ツールを使用すると、指標を極めて柔軟に作成および管理できます。マーケティング担当者、製品マネージャーおよびアナリストは、 の実装を変更することなくデータを照会できます。
 
