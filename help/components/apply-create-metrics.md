@@ -2,14 +2,13 @@
 description: Analysis Workspace には、指標の使用方法が 2 つあります。
 title: 指標
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
-translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 85%
+source-wordcount: '250'
+ht-degree: 96%
 
 ---
-
 
 # 指標
 
@@ -29,11 +28,11 @@ Analysis Workspace には、指標の使用方法が 2 つあります。
 
 ![](assets/calc_metrics.png)
 
-[計算指標：実装なしの指標](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+[計算指標： 実装なしの指標](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html)（3:42）
 
 ## 様々なアトリビューションモデルとの指標の比較
 
-あるアトリビューションモデルをすばやく簡単に別のアトリビューションモデルと比較する場合は、指標を右クリックし、「**[!UICONTROL アトリビューションモデルを比較]**」を選択します。
+アトリビューションモデルを別のアトリビューションモデルと素早く簡単に比較したい場合は、指標を右クリックし、「**[!UICONTROL アトリビューションモデルを比較]**」を選択します。
 
 ![アトリビューションの比較](assets/compare-attribution.png)
 
