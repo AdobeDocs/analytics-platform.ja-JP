@@ -2,11 +2,10 @@
 title: アトリビューションモデルとルックバックウィンドウ
 description: 様々なタイプのアトリビューションによってディメンション項目間でクレジットがどのように分割されますか。
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 98%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Adobe Analytics でのアトリビューションの概念は、次の 2 つの要素で構成されます。
 
@@ -41,7 +40,7 @@ Adobe Analytics でのアトリビューションの概念は、次の 2 つの�
 
 ルックバックウィンドウは、タッチポイントを含めるようにコンバージョンをルックバックする期間です。最初のインタラクションにより多くのクレジットが与えられるアトリビューションモデルでは、異なるルックバックウィンドウを表示する場合に、より大きな違いを確認できます。
 
-* **訪問のルックバックウィンドウ：**&#x200B;コンバージョンが発生した訪問の最初にさかのぼります。訪問のルックバックウィンドウは、訪問の範囲を超えて確認できないので、狭くなっています。訪問のルックバックウィンドウは、データ表示ーで変更された訪問の定義を尊重します。
+* **訪問のルックバックウィンドウ：**&#x200B;コンバージョンが発生した訪問の最初にさかのぼります。訪問のルックバックウィンドウは、訪問の範囲を超えて確認できないので、狭くなっています。訪問のルックバックウィンドウは、データビューで変更された訪問の定義を考慮します。
 
 * **訪問者のルックバックウィンドウ：**&#x200B;現在の日付範囲の月の 1 日までのすべての訪問を調べます。訪問者のルックバックウィンドウは多数の訪問に広がっているので、広範囲になることがあります。訪問者のルックバックでは、レポートの日付範囲の月の初めからすべての値が考慮されます。例えば、レポートの日付範囲が 9 月 15 日から 9 月 30 日までの場合、訪問者のルックバックの日付範囲は 9 月 1 日から 9 月 30 日になります。
 
@@ -49,7 +48,7 @@ Adobe Analytics でのアトリビューションの概念は、次の 2 つの�
 
 >[!NOTE]
 >
->**[!UICONTROL カスタムのルックバック]** ウィンドウは、現在、限られたテスト中です。詳しくは、[Adobe Analyticsの機能リリース](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)を参照してください。
+>**[!UICONTROL 現在、カスタムルッ]** クバックウィンドウのテストは制限されています。詳しくは、[Adobe Analytics機能リリース](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)を参照してください。
 
 ## 例
 
