@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 97%
+source-wordcount: '2084'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 97%
 
 ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)をクリックしてください。
 
-CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
+## 必要な権限
+
+Customer Journey Analytics(CJA)接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
@@ -50,6 +52,9 @@ Customer Journey Analytics
 1. [!UICONTROL Customer Journey Analytics] に取り込むデータセットを 1 つ以上選択し、［**[!UICONTROL 追加]**］をクリックします
 
    （選択できるデータセットが多数ある場合は、データセットのリスト上部にある&#x200B;**[!UICONTROL データセットの検索]**&#x200B;検索バーを使用して、適切なデータセットを検索できます）。
+
+   CJAは、Experience Platformデータセットに基づきます。 Platformでは、サポートされているスキーマフィールドタイプを使用できますが、CJAでサポートされていないフィールドタイプもあります。 文字列や数値以外のスキーマフィールドタイプを持つデータセットをCJAに追加できますが、CJAではそのデータを表示することはできません。 また、現時点では、ルックアップデータセットでは文字列のみを使用できます。
+データセットを接続に追加した後でデータビューに追加するフィールドを探している場合は、デフォルトのタグ「[!UICONTROL Contains data]」をデータセット内のすべてのフィールドで使用できます。 このタグには、データセットにデータが含まれるスキーマフィールドのみが含まれるので、データビューを管理しやすくします。
 
 ## データセットの設定
 
