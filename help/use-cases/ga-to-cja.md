@@ -2,10 +2,9 @@
 title: Adobe Experience Platform への Google Analytics データの取り込み
 description: 'Customer Journey Analytics（CJA）を利用して Google Analytics データを Adobe Experience Platform に取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '1183'
+source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
+workflow-type: tm+mt
+source-wordcount: '1178'
 ht-degree: 100%
 
 ---
@@ -51,26 +50,28 @@ Google Analytics データを Adobe Experience Platform に取り込む方法は
 
 GA データでは、データ内の各レコードが個々のイベントではなくユーザーのセッションとして格納されます。 Universal Analytics データを Experience-Platform に準拠した形式に変換するには、SQL クエリを作成する必要があります。 GA スキーマの「hits」フィールドに「unnest」関数を適用します。 使用できる SQL の例を次に示します。
 
-`SELECT
-*,
-timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
-FROM
-(
+```
 SELECT
-fullVisitorId,
-visitNumber,
-visitId,
-visitStartTime,
-trafficSource,
-socialEngagementType,
-channelGrouping,
-device,
-geoNetwork,
-hit 
+   *,
+   timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
-`your_bq_table_2021_04_*`,
-UNNEST(hits) AS hit 
-)`
+   (
+      SELECT
+         fullVisitorId,
+         visitNumber,
+         visitId,
+         visitStartTime,
+         trafficSource,
+         socialEngagementType,
+         channelGrouping,
+         device,
+         geoNetwork,
+         hit 
+      FROM
+         `your_bq_table_2021_04_*`,
+         UNNEST(hits) AS hit 
+   )
+```
 
 クエリが完了したら、完全な結果を BigQuery テーブルに保存します。
 
