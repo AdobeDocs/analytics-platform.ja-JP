@@ -1,11 +1,11 @@
 ---
 title: Virtual Analyst
-description: Virtual Analyst に貢献する Adobe Analytics の機能について説明します。
+description: Virtual Analystを構成するCustomer Journey Analyticsの機能について説明します。
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 64%
+ht-degree: 38%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-Adobe Analytics の一連の機能に属する Virtual Analyst は、予測アルゴリズムと機械学習を使用して、ビジネスに影響を与える異常値に関するインサイトを提供します。これにより、最も一般的で高コストなデータサイエンスのワークフローを自動化し、何がデータの中で異常な行動を引き起こしているかを特定できます。
+Customer Journey Analyticsの一連の機能に属するVirtual Analystは、予測アルゴリズムと機械学習を使用して、ビジネスに影響を与える異常値に関するインサイトを提供します。 これにより、最も一般的で高コストなデータサイエンスのワークフローを自動化し、何がデータの中で異常な行動を引き起こしているかを特定できます。
 
 ## 機能 {#features}
 
