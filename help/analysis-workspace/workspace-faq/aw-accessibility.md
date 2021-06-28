@@ -2,16 +2,16 @@
 description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 98%
+source-wordcount: '656'
+ht-degree: 96%
 
 ---
 
 # Analysis Workspace のアクセシビリティ
 
-Adobe Analytics の主要な分析ツールである [!UICONTROL Analysis Workspace] のアクセシビリティサポートについて説明します。
+Customer Journey Analyticsの主要な分析ツールである[!UICONTROL Analysis Workspace]でのアクセシビリティのサポートについて説明します。
 
 アクセシビリティとは、視覚、聴覚、認知、モーターなどの障害を持つユーザーに対して、製品を使用できるようにすることです。ソフトウェア製品のアクセシビリティ機能の例としては、スクリーンリーダーのサポート、グラフィックの代替テキスト、キーボードショートカット、表示色のコントラストの大きさの変更などがあります。
 
