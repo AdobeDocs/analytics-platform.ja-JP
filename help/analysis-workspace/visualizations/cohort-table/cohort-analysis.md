@@ -2,10 +2,10 @@
 title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 82%
+source-wordcount: '468'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 82%
 * 価格やアップグレードパスなどの領域で、A/B テストの着想を得る。
 * ガイド付き分析内に[!UICONTROL コホート分析]レポートを表示する。
 
-[!UICONTROL コホート分析]は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべての Adobe Analytics ユーザーが利用できます。
+[!UICONTROL コホー] ト分析は、 [!UICONTROL Analysis Workspace]へのアクセス権を持つすべてのCustomer Journey Analyticsのお客様が利用できます。
 
 [コホート分析のビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) （4:36）
 
@@ -64,7 +64,7 @@ ht-degree: 82%
 
 ### [!UICONTROL カスタムディメンショ]ンコホート
 
-デフォルトの時間に基づくコホートではなく、選択したディメンションに基づいてコホートを作成します。[!UICONTROL マーケティングチャネル]、[!UICONTROL キャンペーン]、[!UICONTROL 製品]、[!UICONTROL ページ]、[!UICONTROL 地域]などのディメンションや、Adobe Analytics のその他のディメンションを使用して、これらのディメンションの様々な値に基づいてリテンションがどのように変化しているかを表示します。
+デフォルトの時間に基づくコホートではなく、選択したディメンションに基づいてコホートを作成します。[!UICONTROL マーケティングチャネル]、[!UICONTROL キャンペーン]、[!UICONTROL product]、[!UICONTROL page]、[!UICONTROL region]などのディメンションを使用して、これらのディメンションの異なる値に基づく保持の変化をCustomer Journey Analyticsします。
 
 ![](assets/cohort-customizable-cohort-row.png)
 
