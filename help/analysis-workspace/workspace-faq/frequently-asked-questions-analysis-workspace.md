@@ -3,10 +3,10 @@ description: Analysis Workspace の必要システム構成です。
 keywords: Analysis Workspace
 title: 管理要件
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 92%
+source-wordcount: '182'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Analysis Workspace の必要システム構成です。
 
 | 要件 | 説明 |
 |--- |--- |
-| 製品            SKU | Adobe Analytics Standard または Adobe Analytics Premium が必要です。スタンドアロン製品としての Reports &amp; Analytics のアクセス権のみを持っている場合は、アカウントチームに問い合わせて、Adobe Analytics ソリューションを購入してください。 |
+| 製品            SKU | 組織は、Adobe Analytics（Select、Prime、またはUltimate）とCustomer Journey Analyticsアドオンの有効な契約を結んでいる必要があります。 契約の種類が不明な場合や、CJA アドオンがあるかどうかが不明な場合は、組織のアカウントマネージャーにお問い合わせください。さらに、組織がAdobe Experience Platform用にプロビジョニングされている必要があります。 |
 | 管理者 | Analysis Workspace へのフルアクセス権を持ちます。 |
 | ユーザー | Analytics の「Workspace」タブへのアクセスを有効にするには、管理者は、製品プロファイルを Analysis Workspace アクセス権限で作成し、[Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) に追加する必要があります。 |
-| ブラウザー | <ul><li>推奨：最新バージョンの Firefox、Chrome、Safari または Edge。最新バージョンの Microsoft Internet Explorer 11。**注意：**&#x200B;アドビは Adobe Analytics での Internet Explorer 11 のサポートを 2018 年 11 月 13 日（PT）に終了しました。Microsoft Edge またはその他のサポート対象ブラウザーにお早めにお切り替えください。</li><li>cookie と JavaScript を有効にする必要があります。</li><li>画面の解像度 1024 x 768、画面の色 16 ビット以上。</li></ul> |
+| ブラウザー | <ul><li>推奨：最新バージョンの Firefox、Chrome、Safari または Edge。</li><li>cookie と JavaScript を有効にする必要があります。</li><li>画面の解像度 1024 x 768、画面の色 16 ビット以上。</li></ul> |
