@@ -2,10 +2,10 @@
 title: アルゴリズムアトリビューション
 description: アルゴリズムアトリビューションモデルの詳細。
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 78%
+source-wordcount: '290'
+ht-degree: 84%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 78%
 >[!NOTE]
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
-
->[!NOTE]
->
->**[!UICONTROL アルゴリズム]** アトリビューションは、現在、制限付きテストです。詳しくは、[Adobe Analytics機能リリース](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)を参照してください。
 
 Analysis Workspace のアルゴリズム[アトリビューションモデル](models.md)は、統計的な手法を使用して、レポートまたはフリーフォームテーブルのディメンション項目にクレジットを割り当てるという点で、他のモデルとは異なります。Analysis Workspaceの他のすべてのアトリビューションモデルと同様に、任意のディメンションまたは指標で使用でき、無制限のフィルターと分類をサポートし、コンバージョンの100%をテーブルのディメンション（「分数」アトリビューションとも呼ばれます）に分配します。
 
