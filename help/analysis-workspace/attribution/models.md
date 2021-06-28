@@ -2,10 +2,10 @@
 title: アトリビューションモデルとルックバックウィンドウ
 description: 様々なタイプのアトリビューションによってディメンション項目間でクレジットがどのように分割されますか。
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 97%
+source-wordcount: '1516'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-Adobe Analytics でのアトリビューションの概念は、次の 2 つの要素で構成されます。
+アトリビューションの概念は、次の2つのCustomer Journey Analyticsを必要とします。
 
 * **アトリビューションモデル：**&#x200B;モデルは、グループ内のヒット数に対するコンバージョンの分布を記述しています。例：ファーストタッチやラストタッチ。
 * **アトリビューションルックバックウィンドウ：**&#x200B;ルックバックウィンドウは、モデルごとにどのヒットグループを考慮するかを記述しています。例：訪問や訪問者。
@@ -45,10 +45,6 @@ Adobe Analytics でのアトリビューションの概念は、次の 2 つの�
 * **訪問者のルックバックウィンドウ：**&#x200B;現在の日付範囲の月の 1 日までのすべての訪問を調べます。訪問者のルックバックウィンドウは多数の訪問に広がっているので、広範囲になることがあります。訪問者のルックバックでは、レポートの日付範囲の月の初めからすべての値が考慮されます。例えば、レポートの日付範囲が 9 月 15 日から 9 月 30 日までの場合、訪問者のルックバックの日付範囲は 9 月 1 日から 9 月 30 日になります。
 
 * **カスタムルックバックウィンドウ**：アトリビューションウィンドウを、レポートの日付範囲を超えて、最大 90 日まで拡張できます。カスタムルックバックウィンドウは、レポート期間内の各コンバージョンで評価されます。例えば、2 月 20 日に発生したコンバージョンの場合、10 日のルックバックウィンドウでは、アトリビューションモデルの 2 月 10 日から 20 日までのすべてのディメンションタッチポイントが評価されます。
-
->[!NOTE]
->
->**[!UICONTROL 現在、カスタムルッ]** クバックウィンドウのテストは制限されています。詳しくは、[Adobe Analytics機能リリース](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)を参照してください。
 
 ## 例
 
