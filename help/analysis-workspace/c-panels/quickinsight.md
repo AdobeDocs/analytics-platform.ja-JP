@@ -2,10 +2,10 @@
 description: クイックインサイトは、新しい Workspace ユーザーを導くツールで、データテーブルやビジュアライゼーションの作成に使用します
 title: クイックインサイトパネル
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 74%
+source-wordcount: '1098'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insightspanel]** は、現在、限られたテストになっています。[詳細情報](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insightspanel]** は、現在、限られたテストになっています。[詳細情報](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ja)
 
 [!UICONTROL クイックインサイト]は、[!UICONTROL Analysis Workspace] のアナリスト以外のユーザーと新規ユーザーに対して、ビジネスの質問にすばやく簡単に答える方法を学ぶためのガイダンスを提供します。また、テーブルを自分で作ることなく、簡単な質問にすばやく答えたいと考える上級ユーザーにとっても優れたツールです。
 
@@ -49,7 +49,7 @@ ht-degree: 74%
 
 ## クイックインサイトの概要
 
-1. 提供された資格情報を使用して、Adobe Analytics にログインします。
+1. 提供された資格情報を使用してCustomer Journey Analyticsにログインします。
 1. 「[!UICONTROL Workspace]」に移動し、「**[!UICONTROL プロジェクトを新規作成]**」をクリックし、「**[!UICONTROL クイックインサイト]**」をクリックします。(このパネルは、左側のパネルの&#x200B;**[!UICONTROL パネル]**&#x200B;メニューからもアクセスできます)。
 
    ![](assets/qibuilder.png)
