@@ -2,9 +2,9 @@
 title: Customer Journey Analytics での基本分析の実行
 description: 基本的なビジュアライゼーションを使用して Customer Journey Analytics のデータを分析する方法について説明します。
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Workspace の基本的なビジュアライゼーションの例を以下に示�
 
 * 2 つのデータソースを時間の経過と共に比較した、オンラインの売上高と実店舗の売上高のトレンドレポートを作成する。
 
-* 広告インプレッションデータ、Adobe Analyticsデータ、Eメールデータ、POSデータ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを表現します。
+* 広告インプレッションデータ、Customer Journey Analyticsデータ、電子メールデータ、POSデータ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを表現します。
 
 ![](assets/cja-basic-analysis.png)
 
