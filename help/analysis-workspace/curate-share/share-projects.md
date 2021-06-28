@@ -3,10 +3,10 @@ description: Workspace でのプロジェクト共有とプロジェクトの役
 keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 96%
+source-wordcount: '1128'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 |---|---|
 | 編集可能 | 受信者は、変更をプロジェクトに「**[!UICONTROL 保存]**」し、共同所有者になることができます。この役割は、他の同僚とプロジェクトを共同管理する場合に役立ちます。これには、共有プロジェクトの受信者リストの編集、削除、変更が含まれます。<br>注：Analysis Workspace は現在、ライブコラボレーションをサポートしていないので、一度に 1 人のユーザーだけがプロジェクトを編集することをお勧めします。プロジェクトを同時に保存すると、最後のバージョンが保持されます。 |
 | 複製可能 | 受信者は、 **[!UICONTROL 名前を付けて保存]**&#x200B;し、左側のパネルにアクセスできます。この役割では、プロジェクトの操作は制限されません。この役割は、組織のデータと Analysis Workspace の使用方法を理解しているが、プロジェクトを変更してほしくないユーザーとプロジェクトを共有する場合に役立ちます。 |
-| 表示可能 | 受信者は「名前を付けて保存」できず、左パネルにアクセスできません。プロジェクトの操作も制限されます。この役割は、組織のデータ構造、Analysis Workspace、または Adobe Analytics の一般的な知識の低いユーザーにプロジェクトを共有する場合に役立ちます。ただし、引き続き、安全な環境でデータやインサイトを利用したいと考える場合です。<br>「[プロジェクト体験を表示できる](/help/analysis-workspace/curate-share/view-only-projects.md)」についての詳細をご覧ください。 |
+| 表示可能 | 受信者は「名前を付けて保存」できず、左パネルにアクセスできません。プロジェクトの操作も制限されます。この役割は、組織のデータ構造、Analysis Workspace、Customer Journey Analyticsの一般的な知識が低いユーザーとプロジェクトを共有する場合に役立ちます。 ただし、引き続き、安全な環境でデータやインサイトを利用したいと考える場合です。<br>「[プロジェクト体験を表示できる](/help/analysis-workspace/curate-share/view-only-projects.md)」についての詳細をご覧ください。 |
 
 >[!IMPORTANT]
 > 2020 年 6 月 19 日より前に追加されたプロジェクト受信者は、プロジェクトの役割に移行されました。管理者ユーザーは&#x200B;**[!UICONTROL 編集]**&#x200B;の役割に移行され、管理者以外のユーザーは&#x200B;**[!UICONTROL 複製]**&#x200B;の役割に移行されました。これらの役割は、以前と同じプロジェクト体験を提供します。さらに、すべてのグループ（「すべて」を含む）が&#x200B;**[!UICONTROL 複製]**&#x200B;の役割に移行されました。
@@ -61,7 +61,7 @@ ht-degree: 96%
 
 ## 受信者のグループに共有 {#Groups}
 
-すべてのユーザーが、受信者の集まりであるグループにプロジェクトを共有できます。Adobe Analytics は、グループは [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) の製品プロファイルによって定義されます。
+すべてのユーザーが、受信者の集まりであるグループにプロジェクトを共有できます。Customer Journey Analyticsでは、グループは、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)の製品プロファイルによって定義されます。
 
 * 管理者は、「すべて」を含む任意のグループと共有できます。
 * 管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
