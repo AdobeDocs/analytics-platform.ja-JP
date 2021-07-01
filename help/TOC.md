@@ -10,11 +10,10 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: ht
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 99%
 
 ---
 
@@ -27,10 +26,11 @@ ht-degree: 100%
    + [はじめに](getting-started/cja-getting-started.md)
    + [よくある質問](getting-started/cja-faq.md)
    + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
+   + [削除の影響](getting-started/cja-deletion.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
 + 接続 {#cja-connections}
    + [接続の作成](connections/create-connection.md)
-   + [接続の管理](connections/manage-connection.md)
+   + [接続の管理](connections/manage-connections.md)
    + [接続サイズの予測](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
    + クロスチャネル分析 {#cca}
@@ -146,12 +146,12 @@ ht-degree: 100%
       + [日付範囲の作成](components/date-ranges/create.md)
       + [日付範囲を管理](components/date-ranges/manage.md)
       + [カレンダーの概要](components/date-ranges/calendar.md)
-      + [Analysis Workspace でカスタム日付範囲を作成](components/date-ranges/custom-date-ranges.md)
+      + [カスタム日付範囲の作成](components/date-ranges/custom-date-ranges.md)
       + [日付の比較](components/date-ranges/time-comparison.md)
 + 使用例 {#cja-usecases}
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
-   + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
+   + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
