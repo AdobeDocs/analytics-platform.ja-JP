@@ -2,10 +2,10 @@
 title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 92%
+source-wordcount: '1980'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 ## 必要な権限
 
-Customer Journey Analytics(CJA)接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
+CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## サンドボックスとデータセットの選択
 
-1. [https://analytics.adobe.com](https://analytics.adobe.com) に移動します。
+1. [https://analytics.adobe.com](https://analytics.adobe.com)に移動し、Adobe IDでログインします。
+
+1. [!DNL Customer Journey Analytics]アイコンをクリックします。
 
 1. 「**[!UICONTROL 接続]**」タブをクリックします。
 
@@ -43,7 +45,7 @@ Customer Journey Analytics
 
 1. 接続を作成するデータセットを含む Experience Platform のサンドボックスを選択します。
 
-   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
+   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
    >[!IMPORTANT]
    >
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    （選択できるデータセットが多数ある場合は、データセットのリスト上部にある&#x200B;**[!UICONTROL データセットの検索]**&#x200B;検索バーを使用して、適切なデータセットを検索できます）。
 
-   CJAは、Experience Platformデータセットに基づきます。 Platformでは、サポートされているスキーマフィールドタイプを使用できますが、CJAでサポートされていないフィールドタイプもあります。 文字列や数値以外のスキーマフィールドタイプを持つデータセットをCJAに追加できますが、CJAではそのデータを表示することはできません。 また、現時点では、ルックアップデータセットでは文字列のみを使用できます。
-データセットを接続に追加した後でデータビューに追加するフィールドを探している場合は、デフォルトのタグ「[!UICONTROL Contains data]」をデータセット内のすべてのフィールドで使用できます。 このタグには、データセットにデータが含まれるスキーマフィールドのみが含まれるので、データビューを管理しやすくします。
-
-## データセットの設定
+## 2.データセットを設定する
 
 右側で、追加したデータセットを設定できるようになりました。
 
@@ -76,7 +75,7 @@ Customer Journey Analytics
 
 1. **[!UICONTROL タイムスタンプ]**：イベントデータセットの場合のみ、この設定は、[!UICONTROL Experience Platform] のイベントベースのスキーマにある、デフォルトのタイムスタンプフィールドへと自動的に設定されます。
 
-1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)です。
+1. **[!UICONTROL スキーマ]**：これは、Adobe Experience Platform で作成されたデータセットに基づく[スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja)です。
 
 1. **[!UICONTROL 個人 Id]**：使用可能な ID のドロップダウンリストからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。ユーザー ID として ID マップを使用する方法については、以下を参照してください。
 
@@ -99,7 +98,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 | オプション | 説明 |
 |---|---|
 | [!UICONTROL プライマリ ID 名前空間を使用] | CJA は行ごとに、primary=true 属性でマークされた ID を ID マップで検索し、その行のユーザー ID として使用します。これは、これがパーティションの Experience Platform で使用される主キーであることを意味します。また、CJA の訪問者 ID としての使用の主な候補でもあります（CJA 接続でのデータセットの設定方法に応じて異なります）。 |
-| [!UICONTROL 名前空間] | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
+| [!UICONTROL 名前空間] | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=ja) のコンポーネントで、ID が関連付けられているコンテキストを示します。名前空間を指定すると、CJA は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID を行のユーザー ID として使用します。CJA は、すべての行のデータセット全体をスキャンして、実際に存在する名前空間を特定することはできないので、ドロップダウンにすべての名前空間を示します。データに指定されている名前空間を把握する必要があります。 これは自動検出できません。 |
 
 ### ID マップのエッジケース
 
