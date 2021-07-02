@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 97%
 
 接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL Workspace] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL Workspace] のデータセット間で接続を確立する必要があります。
 
-ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)をクリックしてください。
+ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ja)をクリックしてください。
 
 ## 必要な権限
 
-CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
+CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
@@ -45,7 +45,7 @@ Customer Journey Analytics
 
 1. 接続を作成するデータセットを含む Experience Platform のサンドボックスを選択します。
 
-   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
+   Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)を提供します。サンドボックスは、データセットを含む「データサイロ」と考えることができます。サンドボックスは、データセットへのアクセスを制御するために使用します。サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。
 
    >[!IMPORTANT]
    >
@@ -121,7 +121,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
    | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
-   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
+   | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
    | [!UICONTROL 毎日のイベントの平均数] | 接続にあるすべてのデータセットについて、インポートする毎日のイベント（新しいデータ&#x200B;**と**&#x200B;バックフィルデータ）の平均数を指定する必要があります。ドロップダウンメニューから 1 つのオプションを選択します。これにより、このデータに十分な領域を割り当てることができます。<br>会社で毎日インポートされるイベントの平均数が不明な場合は、[Adobe Experience Platform クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)で簡単な SQL クエリを実行して調べることができます。<br>以下の「毎日のイベントの平均数を計算する」を参照してください。 |
 
 1. 「**[!UICONTROL データビューを保存して作成]**」をクリックします。ドキュメントについては、[データビューの作成](/help/data-views/create-dataview.md)を参照してください。
