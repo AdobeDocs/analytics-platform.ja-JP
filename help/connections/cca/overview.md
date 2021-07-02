@@ -3,7 +3,7 @@ title: クロスチャネル分析の概要
 description: 複数のデータセットの訪問者 ID のキーを変更して、訪問者をステッチします。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
 ht-degree: 100%
 
