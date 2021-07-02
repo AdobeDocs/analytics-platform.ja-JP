@@ -5,7 +5,7 @@ exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -28,9 +28,9 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#cja-connections"> クロスチャネル分析（Customer Journey Analytics での ID のステッチ） </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions">ユーザー権限の要件を更新</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=ja#cja-usecases"> オブジェクトの配列の使用 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics を使い始める</a> </li> 
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html">よくある質問</a> </li> 
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=ja">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja">Customer Journey Analytics を使い始める</a> </li> 
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja">よくある質問</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>リリースノート</b> </p> 
     <ul> 
      <li>新機能と修正点については、最新の <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
