@@ -6,7 +6,7 @@ exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。リンクを受け取ったユーザーは、プロジェクトにアクセスする前にCustomer Journey Analyticsにログインする必要があります。
 
@@ -31,7 +31,7 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 * 任意のパネルヘッダーから、「**[!UICONTROL パネルのリンクを取得]**」を右クリックします
 * 任意のテーブルまたはビジュアライゼーションのヘッダーから、「**[!UICONTROL ビジュアライゼーションリンクを取得]**」を右クリックします
 
-リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html)します。
+リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja)します。
 
 ![](assets/get-viz-link.png)
 
@@ -39,6 +39,6 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 
 様々なリンクオプションを活用するためのヒントの 1 つは、Workspace プロジェクトの上部に常に目次を含めることです。目次では、他の関連プロジェクト、特定のパネルおよび特定のビジュアライゼーションにリンクできます。これにより、プロジェクトの受信者によるナビゲーションが容易になります。
 
-リンクと Workspace のリッチテキストエディターを使用して目次を作成する方法に関する[ビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html)をご覧ください。
+リンクと Workspace のリッチテキストエディターを使用して目次を作成する方法に関する[ビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=ja)をご覧ください。
 
 ![](assets/toc.png)
