@@ -3,9 +3,9 @@ title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ## 必要な権限
 
-CJA接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)で次の権限が必要です。
+CJA 接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) で次の権限が必要です。
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
@@ -33,9 +33,9 @@ Customer Journey Analytics
 
 ## サンドボックスとデータセットの選択
 
-1. [https://analytics.adobe.com](https://analytics.adobe.com)に移動し、Adobe IDでログインします。
+1. [https://analytics.adobe.com](https://analytics.adobe.com) に移動し、Adobe ID でログインします。
 
-1. [!DNL Customer Journey Analytics]アイコンをクリックします。
+1. [!DNL Customer Journey Analytics] アイコンをクリックします。
 
 1. 「**[!UICONTROL 接続]**」タブをクリックします。
 
@@ -55,7 +55,7 @@ Customer Journey Analytics
 
    （選択できるデータセットが多数ある場合は、データセットのリスト上部にある&#x200B;**[!UICONTROL データセットの検索]**&#x200B;検索バーを使用して、適切なデータセットを検索できます）。
 
-## 2.データセットを設定する
+## 2. データセットの設定
 
 右側で、追加したデータセットを設定できるようになりました。
 
@@ -140,7 +140,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
