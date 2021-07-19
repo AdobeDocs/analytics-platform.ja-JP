@@ -4,9 +4,9 @@ title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Analysis Workspace は分析をすばやく構築してインサイトを共有�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## ログインCustomer Journey Analytics {#login}
+## Customer Journey Analytics へのログイン {#login}
 
-Analysis Workspaceの使用を開始するには、[experience.adobe.com/analytics](https://experience.adobe.com/analytics)に移動してCustomer Journey Analyticsにログインします。 これまでに特定のプロジェクトを選択したことがない場合は、Workspace プロジェクトリストのホームページに移動します。
+Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](https://experience.adobe.com/analytics) に移動して、Customer Journey Analytics にログインします。これまでに特定のプロジェクトを選択したことがない場合は、Workspace プロジェクトリストのホームページに移動します。
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Analysis Workspaceの使用を開始するには、[experience.adobe.com/analyti
 
 ## 新規プロジェクトを作成 {#new-project}
 
-チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーとCustomer Journey Analyticsダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](/help/mobile-app/curator.md)のどちらで開始するかを選択できます。
+チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーと Customer Journey Analytics ダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](/help/mobile-app/curator.md)のどちらで開始するかを選択できます。
 
 ![](assets/create-new-project.png)
 
@@ -64,4 +64,4 @@ Workspace プロジェクトでは、左パネルから&#x200B;**パネル、テ
 
 ## その他のリソース {#resources}
 
-* アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を提供しています。
+* アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)を提供しています。
