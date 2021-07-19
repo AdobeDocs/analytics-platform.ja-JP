@@ -2,7 +2,7 @@
 title: 接続の管理
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
-source-git-commit: ec76734f270666d13db28fd60ffdf62c04e378bf
+source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 99%
@@ -18,7 +18,7 @@ ht-degree: 99%
 * これにより、設定ミスに起因する&#x200B;**データの相違を識別**&#x200B;できます。欠落している行があるか。ある場合、欠落している行とその理由は何か。接続の設定の誤りが原因で CJA のデータが欠落したのか。
 
 >[!NOTE]
-> この機能は、2021年8月20日に一般に提供されます。
+> この機能は、2021年8月11日に一般に提供されます。
 
 ## 接続マネージャー {#connections-manager}
 
