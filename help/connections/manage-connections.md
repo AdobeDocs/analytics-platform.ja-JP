@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 * これにより、設定ミスに起因する&#x200B;**データの相違を識別**&#x200B;できます。欠落している行があるか。ある場合、欠落している行とその理由は何か。接続の設定の誤りが原因で CJA のデータが欠落したのか。
 
 >[!NOTE]
-> この機能は、2021年8月11日に一般に提供されます。
+> この機能は、2021 年 8 月 10 日（PT）に一般に提供されます。
 
 ## 接続マネージャー {#connections-manager}
 
@@ -108,12 +108,12 @@ ht-degree: 99%
 | [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択した[!UICONTROL ユーザー ID ]です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際にマージするには、同じ[!UICONTROL ユーザー ID] を使用する必要があります。 |
 | [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
-| [!UICONTROL IMS Org ID] | プロビジョニングした Experience Cloud 会社に関連付けられた[組織 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja)。以前は「ログイン会社」と呼んでいました。 |
+| [!UICONTROL IMS 組織 ID] | プロビジョニングした Experience Cloud 会社に関連付けられた[組織 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja)。以前は「ログイン会社」と呼んでいました。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
 | [!UICONTROL 新しいデータをインポート] | 新しいデータバッチを履歴（バックフィル）データに追加するかどうかを示します。 |
 | **データセットレベルの右側パネル** |  |
 | [!UICONTROL データセットの説明] | この接続内の各データセットのパラメーターについて説明します。 |
-| [!UICONTROL 使用可能なレコード] | カレンダーで選択した指定の期間において、このデータセットに対して取り込まれた行の合計数を表します。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3.-getting-data-into-customer-journey-analytics)が発生します。 |
+| [!UICONTROL 使用可能なレコード] | カレンダーで選択した指定の期間において、このデータセットに対して取り込まれた行の合計数を表します。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3.-customer-journey-analytics-へのデータの取り込み)が発生します。 |
 | [!UICONTROL 追加されたレコード] | 選択した期間に追加された行数。 |
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数。 |
 | [!UICONTROL レコードスキップエラー] | レコードがスキップされた理由を示します。タイムスタンプが見つからない、ユーザー ID が見つからない、などの場合があります。 |
