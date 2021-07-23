@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
-workflow-type: ht
-source-wordcount: '449'
+source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -141,7 +141,7 @@ ht-degree: 100%
       + [計算指標の管理](components/calc-metrics/manage.md)
       + [基本関数](components/calc-metrics/cm-functions.md)
       + [高度な関数](components/calc-metrics/cm-adv-functions.md)
-   + 日付範囲 {cja-date-ranges}
+   + 日付範囲 {#cja-date-ranges}
       + [日付範囲の概要](components/date-ranges/overview.md)
       + [日付範囲の作成](components/date-ranges/create.md)
       + [日付範囲を管理](components/date-ranges/manage.md)
