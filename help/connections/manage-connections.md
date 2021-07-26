@@ -3,7 +3,7 @@ title: 接続の管理
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1445'
 ht-degree: 100%
 
@@ -102,11 +102,11 @@ ht-degree: 100%
 | **接続レベルの右側パネル** |  |
 | [!UICONTROL 更新] | 接続を更新して、最近追加したレコードを反映させます。 |
 | [!UICONTROL 削除] | この接続を削除します。 |
-| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja) |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前を表示します。 |
 | [!UICONTROL 接続の説明] | この接続の目的についての詳細な説明を表示します。 |
 | [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択した[!UICONTROL ユーザー ID ]です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際にマージするには、同じ[!UICONTROL ユーザー ID] を使用する必要があります。 |
-| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
+| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 | [!UICONTROL IMS 組織 ID] | プロビジョニングした Experience Cloud 会社に関連付けられた[組織 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja)。以前は「ログイン会社」と呼んでいました。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
@@ -119,7 +119,7 @@ ht-degree: 100%
 | [!UICONTROL レコードスキップエラー] | レコードがスキップされた理由を示します。タイムスタンプが見つからない、ユーザー ID が見つからない、などの場合があります。 |
 | [!UICONTROL 取り込まれたバッチ] | このデータセットに追加されたデータバッチの数。 |
 | [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時。 |
-| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットのベースとなる Adobe Experience Platform スキーマ。 |
 | [!UICONTROL データセット ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 | [!UICONTROL データをバックフィル] | バックフィル（履歴）データは、[!UICONTROL 待機中]、[!UICONTROL 処理中]（進捗の割合が示されます）、[!UICONTROL 完了]の 3 つの状態でトラッキングされます。 |
