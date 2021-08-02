@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
-workflow-type: ht
-source-wordcount: '448'
-ht-degree: 100%
+source-git-commit: f6ec268d3820a7bcbcc84521e486c26e8ea9329b
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
       + [空のパネル](analysis-workspace/c-panels/blank-panel.md)
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
-   + プロジェクトのキュレーションおよび共有 {#curate-share}
+   + プロジェクトのキュレーション、共有、スケジュール{#curate-share}
       + [共有メニュー](analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
