@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 98%
+source-wordcount: '1093'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 98%
 
 | Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
+| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを介してサポートが提供されます。 |
 | 異常値検出 | 完全にサポートされます。 |
 | Attribution IQ | 完全にサポートされます。 |
 | 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
@@ -32,13 +33,12 @@ ht-degree: 98%
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
 | レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
-| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/) で利用できるようになりました。 |
+| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/)を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
 | セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
+| ユーザー権限／データアクセス制御 | CJAは、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)製品管理者とユーザーを区別します。 製品管理者のみが <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新/削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する.</li></ul> |
 | 仮想レポートスイート | 現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | VRS コンポーネントのキュレーション | データビューの一部になりました。 |
-| A4T | [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを通じてサポートが提供されます。 |
 
 ## サポート（注意が必要）
 
