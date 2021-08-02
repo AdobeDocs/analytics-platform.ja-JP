@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: ht
-source-wordcount: '1071'
-ht-degree: 100%
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 100%
 | ユーザー権限／データアクセス制御 | CJA は、Adobe Admin Console の製品管理者とユーザーを区別します。1）接続またはデータ表示の作成／更新／削除、2）他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、3）Workspace プロジェクトをすべてのユーザーと共有できるのは製品管理者のみです。 |
 | 仮想レポートスイート | 現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | VRS コンポーネントのキュレーション | データビューの一部になりました。 |
+| A4T | [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを通じてサポートが提供されます。 |
 
 ## サポート（注意が必要）
 
@@ -85,7 +86,6 @@ ht-degree: 100%
 
 | 機能 | メモ |
 | --- | --- |
-| A4T | まだサポートの予定はありません。 |
 | Activity Map | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
 | 分類ルールビルダー | まだサポートの予定はありません。 |
