@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
+source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 94%
+source-wordcount: '1188'
+ht-degree: 72%
 
 ---
 
@@ -17,39 +17,40 @@ ht-degree: 94%
 
 | Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
-| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを介してサポートが提供されます。 |
 | 異常値検出 | 完全にサポートされます。 |
 | Attribution IQ | 完全にサポートされます。 |
-| 計算指標 | 従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
-| クロスデバイス／クロスチャネルのステッチ | 「[クロスチャネル分析](/help/connections/cca/overview.md)」を参照してください。 |
+| 計算指標 | 完全サポート従来のAnalysis Workspaceの既存の計算指標は、CJAに移植されません。 |
+| クロスデバイス／クロスチャネルのステッチ | 完全サポート[クロスチャネル分析](/help/connections/cca/overview.md)を参照してください。 |
 | 日付の比較 | 完全にサポートされます。 |
-| 日付範囲 | カスタムカレンダーに対するサポートが予定されています。 |
-| ディメンション | CJA では XDM を活用し、無制限のディメンションをサポートしています。従来の Analytics のカスタム eVar や prop とは関係ありません。 |
+| ディメンション | 完全サポートCJAはXDMを活用し、無制限のディメンションをサポートします。 CJAは、従来のAdobe AnalyticsのカスタムeVarやpropには結び付けられません。 |
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、オペレーティングシステム） | ベース XDM フィールド（ユーザーエージェントやデバイス ID など）に値が入力されている限り、CJA はネイティブでこれらのディメンションを提供します。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
-| GDPR の削除 | GDPR は [!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータ変更をすべて継承します。 |
-| リスト変数／リスト prop | CJA では XDM を活用し、listVar と同様に使用できる無制限の文字列配列をサポートしています。 |
-| 指標 | CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
+| GDPR の削除 | 完全サポートGDPRは、[!UICONTROL Adobe Experience Platform]と連携して処理されることに注意してください。 CJAは、[!UICONTROL Experience Platform]が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
+| リスト変数／リスト prop | 完全サポートCJAはXDMを活用し、listVarsと同様に使用できる無制限の文字列配列をサポートします。 |
+| 指標 | 完全サポートCJAは、エクスペリエンスデータモデル(XDM)を活用し、無制限の指標をサポートします。従来のAnalyticsのカスタム成功イベントとは関係ありません。 一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | PDF の書き出し | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
-| レポート時間処理 | CJA は、レポートの時間処理にのみ依存しています。 |
-| レポート API へのアクセス | [CJA API](https://www.adobe.io/cja-apis/docs/)を通じて使用できます。 |
+| レポート時間処理 | 完全サポートCJAは、レポート時間処理にのみ依存します。 |
+| レポート API へのアクセス | 完全サポート[CJA API](https://www.adobe.io/cja-apis/docs/)を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
-| セグメント | 現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ユーザー権限／データアクセス制御 | CJAは、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)製品管理者とユーザーを区別します。 製品管理者のみが <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新/削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する.</li></ul> |
-| 仮想レポートスイート | 現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
-| VRS コンポーネントのキュレーション | データビューの一部になりました。 |
+| セグメント | 完全サポート現在は「フィルター」と呼ばれています。従来のAnalysis Workspaceの既存のセグメントはCJAに移植されません。 |
+| ユーザー権限／データアクセス制御 | 完全サポートCJAは、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)製品管理者とユーザーを区別します。 製品管理者のみが <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新/削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する.</li></ul> |
+| 仮想レポートスイート | 完全サポート現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれています。 |
+| VRS コンポーネントのキュレーション | 完全サポートデータビューの一部になりました。 |
 
 ## サポート（注意が必要）
 
 | 機能 | メモ |
 | --- | --- |
+| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを介してサポートが提供されます。 |
 | 分類 | 「参照データセット」という名称に変更されました。 Analytics で使用される分類は、Analytics Classifications Data Connector を使用して Experience Platform および CJA にインポートできます。 参照データセットは AEP に直接アップロードして、CJA で使用することもできます。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
-| 顧客属性 | 名前が「プロファイルデータセット」に変わり、Experience Cloud から自動的に読み込まれませんが、CJA で使用する前に AEP にアップロードする必要があります。 |
+| 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、Experience Cloudから自動的に読み込まれませんが、CJAで使用する前にAEPにアップロードする必要があります。 |
+| 日付範囲 | カスタムカレンダーのサポート（予定）を除く、すべての日付範囲機能がサポートされています。 |
 | デバイス、ブラウザー、テクノロジーのディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
+| 地理特性ディメンション | Adobe Analyticsで収集されたすべての地理特性/地域情報は、Analytics Data Connectorを通じてCJAに送られます。 デジタルデータ収集にAEP Web SDKを使用する実装など、Analytics Data Connectorを使用しない実装では、自動的に実行される完全な地理的検索はおこなわれません（国と州はサポートされていますが、市区町村とzipはサポートされていません）。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics Data Connector を介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、この使用例を実現できます。 CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
