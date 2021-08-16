@@ -2,10 +2,10 @@
 title: Customer Journey Analytics での新しいデータビューの作成方法。
 description: 新しいデータビューを作成するために必要なすべての設定について説明します。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+workflow-type: tm+mt
+source-wordcount: '3024'
+ht-degree: 98%
 
 ---
 
@@ -124,6 +124,7 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 値をカウント] | ブール指標の場合のみ、この設定を使用すると、「[!UICONTROL True をカウント] 」、「[!UICONTROL False をカウント] 」、「[!UICONTROL True または False をカウント] 」を指標値として指定できます。デフォルトは「[!UICONTROL True をカウント]」です。注文値が 50 の場合は「50」など、指標の実際の値が表示されます。 |
 | [!UICONTROL インスタンスをカウント] | 指標として使用する数値フィールドまたは日付タイプフィールドで、値そのものではなく設定回数をカウントするかどうかを指定できます。<br> 数値フィールドのインスタンスを合計し、内部の実際の値ではなく、そのフィールドが&#x200B;*設定*&#x200B;された回数だけを合計する場合。<br>これは、例えば、[!UICONTROL 売上高]フィールドから [!UICONTROL 注文件数]指標を作成する場合に役立ちます。売上高が設定された場合、売上高の数値ではなく、1 件の注文をカウントする必要があります。 |
+| [!UICONTROL 小文字] | *新規*  - 「文字列」タイプのディメンション。この設定を使用すると、ディメンション値の大文字と小文字をCustomer Journey Analyticsとして扱うかどうかを制御できます。 値は同じで大文字と小文字が異なる行の重複排除が可能です。 次のスクリーンショットは、Workspaceでの大文字と小文字を区別するディメンションの例を示しています。<br>![大文字と小文字を区別するディメンション](assets/case-sens-workspace.png) |
 
 ### [!UICONTROL 「値なし」オプション]の設定
 
