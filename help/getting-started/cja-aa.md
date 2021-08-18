@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 72%
 
 | 機能 | メモ |
 | --- | --- |
-| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)のフィールドを介してサポートが提供されます。 |
+| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを介してサポートが提供されます。 |
 | 分類 | 「参照データセット」という名称に変更されました。 Analytics で使用される分類は、Analytics Classifications Data Connector を使用して Experience Platform および CJA にインポートできます。 参照データセットは AEP に直接アップロードして、CJA で使用することもできます。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、Experience Cloudから自動的に読み込まれませんが、CJAで使用する前にAEPにアップロードする必要があります。 |
@@ -83,7 +83,7 @@ ht-degree: 72%
 | Segment IQ | サポートが予定されています。 |
 | セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
 
-## サポートの予定はありません。
+## サポートの予定はありません
 
 | 機能 | メモ |
 | --- | --- |
