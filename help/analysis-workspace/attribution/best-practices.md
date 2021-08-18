@@ -1,10 +1,10 @@
 ---
 title: アトリビューションのベストプラクティス
 description: アトリビューションモデルの決定に関するベストプラクティスは何ですか。
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 2%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 >[!NOTE]
 >この分析は、アトリビューションモデルを選択する前におこなう必要があります。
 
-このフェーズでは、最初に顧客の行動を把握し、コンバージョン指標を定義します。 コンバージョン指標に基づいて、[データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en)（生データ用）やAnalysis Workspaceなどのツールを使用すると、
+このフェーズでは、最初に顧客の行動を把握し、コンバージョン指標を定義します。 コンバージョン指標に基づいて、Analysis Workspaceなどのツールや、複数のチャネルからのデータソースの取り込み（インプレッション数データなど）をおこなうと、
 
 * コンバージョンをおこなう前に、様々なマーケティングチャネルに接触している顧客の数
 * これらの動作の割合/分布。
@@ -53,6 +53,3 @@ ht-degree: 2%
 ## その他の考慮事項
 
 * Analysis Workspaceだけに依存するのではなく、データサイエンティストのサービスを使用する必要が生じる場合があります。
-* Adobeデータフィードのように、生データを使用できます。
-* [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja)の使用を検討します。例えば、インプレッションデータを検討する場合などです。
-
