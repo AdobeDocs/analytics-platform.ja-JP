@@ -2,7 +2,7 @@
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
 cloud: Experience Cloud
 product: adobe analytics
-sub-product: カスタマージャーニー
+sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
@@ -12,8 +12,8 @@ breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 98%
+source-wordcount: '450'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 98%
       + [空のパネル](analysis-workspace/c-panels/blank-panel.md)
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
-   + プロジェクトのキュレーション、共有、スケジュール{#curate-share}
+   + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](analysis-workspace/curate-share/share-projects.md)
