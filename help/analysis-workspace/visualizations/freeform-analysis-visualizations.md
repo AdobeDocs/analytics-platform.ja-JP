@@ -3,9 +3,9 @@ description: Analysis Workspaceでデータを視覚的に表します。
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1043'
 ht-degree: 92%
 
 ---
@@ -16,7 +16,7 @@ Workspace オファーには、棒グラフ、ドーナツグラフ、ヒスト�
 
 ビジュアライゼーションには、Workspace の左上のアイコン、[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)、またはワークフローの右クリックメニューからアクセスできます。
 
-![](assets/viz-rail.png)
+![ビジュアライゼーションパネル](assets/viz-rail.png)
 
 Analysis Workspace では、次のビジュアライゼーションタイプを利用できます。
 
@@ -44,7 +44,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 各ビジュアライゼーションには、管理可能な独自の設定があります。「[!UICONTROL ビジュアライゼーション設定]」にアクセスするには、[!UICONTROL ビジュアライゼーション設定]歯車アイコンをクリックします。
 
-![](assets/settings.png)
+![設定](assets/settings.png)
 
 | 設定 | 説明 |
 | --- | --- |
@@ -70,18 +70,16 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 1. 凡例ラベルの 1 つを右クリックします。
 1. 「**[!UICONTROL ラベルを編集]**」をクリックします。
 
-   ![](assets/edit-label.png)
+   ![ラベルを編集](assets/edit-label.png)
 
 1. 新しいラベルテキストを入力します。
 1. **[!UICONTROL Enter]** キーを押して保存します。
-
-このトピックに関する[ビデオへのリンクはこちら](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html)です。
 
 ## 右クリックメニュー {#right-click}
 
 ビジュアライゼーションの追加機能は、ビジュアライゼーションのヘッダーを右クリックすると使用できます。 設定は、ビジュアライゼーションによって異なります。 次の設定を使用できます。
 
-![](assets/right-click.png)
+![右クリック](assets/right-click.png)
 
 | 設定 | 説明 |
 | --- | --- |
@@ -98,4 +96,4 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 どのビジュアライゼーションが選択されるかわからない場合は、テーブルの行にある&#x200B;**[!UICONTROL ビジュアルを作成]**&#x200B;アイコン（カーソルを合わせると使用できます）をクリックします。これは、ビジュアライゼーションを追加する最も速い方法です。 クリックすると、データに最適なビジュアライゼーションを Analysis Workspace が学習に基づいて推測することの確認が表示されます。例えば、1 行を選択した場合、トレンド折れ線グラフが作成されます。 3つのフィルター行を選択すると、ベン図が作成されます。
 
-![](assets/quick-viz.png)
+![クイックビジュアライゼーション](assets/quick-viz.png)
