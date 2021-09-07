@@ -13,7 +13,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
