@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '1360'
-ht-degree: 100%
+source-git-commit: e605682ee4df06589ec343a27941f5d6a5928d7d
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | 質問 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | はい。[!UICONTROL Customer Journey Analytics] には、 [クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)（CCA）と呼ばれるステッチソリューションがあります。データセットの人物 ID のキーを更新できるので、複数のデータセットをシームレスに組み合わせることができます。 |
-| 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
+| 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
 | CCA での「再生」の仕組み | クロスチャネル分析では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#手順-1：ライブステッチ) |
 | CCA での履歴データのステッチ（バックフィル）の仕組み | 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。　[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#クロスチャネル分析の有効化) |
 
@@ -75,3 +75,16 @@ ht-degree: 100%
 | [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、そのバッチからのデータも部分的なデータも [!UICONTROL Customer Journey Analytics] には表示されません。取り込みがロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータは [!UICONTROL Customer Journey Analytics] に表示されます。 |
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存する Workspace プロジェクトは動作しなくなります。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
+
+## 6. CJAでレポートスイートを結合する際の考慮事項
+
+[Adobe Analyticsソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じてAdobe Analyticsデータを取り込む予定がある場合は、2つ以上のAdobe Analyticsレポートスイートを結合する際に、これらの影響を考慮してください。
+
+| 問題 | 考慮事項 |
+| --- | --- |
+| 変数 | [!UICONTROL eVars]などの変数は、レポートスイート間で並ぶことはできません。 例えば、レポートスイート1のeVar1は&#x200B;**[!UICONTROL ページ]**&#x200B;を指す場合があります。 レポートスイート2では、eVar1が&#x200B;**[!UICONTROL 内部キャンペーン]**&#x200B;を指し、混在したレポートや不正確なレポートが作成される場合があります。 |
+|  セッションと  人 | 複数のレポートスイートにわたって重複排除がおこなわれます。 その結果、カウントが一致しない場合があります。 |
+| 指標の重複排除 | 複数の行に同じトランザクションIDがある場合（例：[!UICONTROL 購入ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。 これにより、主要指標の数が多くなるのを防ぎます。 その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
+| 通貨 | CJAでは、通貨換算はまだサポートされていません。 結合しようとしているレポートスイートが異なる基本通貨を使用している場合、問題が発生する可能性があります。 |
+| [!UICONTROL 永続性] | [](/help/data-views/persistence.md) 永続性は、複数のレポートスイートにまたがって拡張され、フィ [!UICONTROL ルター]、 [!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
+| [!UICONTROL 分類] |  レポートスイートを結合する際に、分類の重複が自動的に除外されない。複数の分類ファイルを1つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |
