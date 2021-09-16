@@ -2,10 +2,10 @@
 title: CJA ドキュメントのアップデート
 description: 2019年12月以降のCustomer Journey Analyticsドキュメントセットの更新内容を示します。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 8f576a8321c0e50cc34c1c08c8f8f7c48b427233
+source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 20%
+source-wordcount: '448'
+ht-degree: 18%
 
 ---
 
@@ -15,16 +15,17 @@ CJAドキュメントの開始以降に、次の更新がおこなわれまし�
 
 | 日付 | 説明の更新 |
 | --- | --- |
+| 2021年9月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[ コンポーネント設定の概要](/help/data-views/component-settings/overview.md)</li><li>[ アトリビューションコンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[ 動作コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[ Formatcomponentの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL コンポーネント設] 定を含める/除外する](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複] 排除コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値コンポ] ーネント設定なし](/help/data-views/component-settings/no-value-options.md)</li><li>[ 永続コンポーネントの設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値グループコ] ンポーネントの設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021年9月 | CJAでのレポートスイート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6.-considerations-when-merging-report-suites-in-cja)の結合の意味に関する[の節を新たに追加しました。 |
-| 2021年8月 | CJAでの[接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)の拡張に関する新しい節。 |
+| 2021年8月 | CJAでの強化された[接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)のエクスペリエンスに関する新しい節。 |
 | 2021年8月 | データビューディメンションの[大文字と小文字の区別](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-behavior-settings)に関する新しい節が追加されました。 |
 | 2021 年 6 月 | Workspaceの[以前のプロジェクトバージョン](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version)に関する新しいドキュメントです。 |
-| 2021 年 4 月 | [persistence](/help/data-views/persistence.md)に関する新しいトピックです。 |
-| 2021 年 4 月 | Workspaceでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントです。 |
-| 2021 年 4 月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md)に関する新しいトピック。 |
-| 2021 年 4 月 | [Google Analyticsデータの取り込み](/help/use-cases/ga-to-cja.md)と[データの分析](/help/use-cases/ga-to-cja-reporting.md)に関する新しいトピック。 |
-| 2021 年 4 月 | Workspaceの[予定レポート](/help/analysis-workspace/curate-share/t-schedule-report.md)に関するトピックを追加しました。 |
-| 2021 年 4 月 | CJA](/help/components/dimensions/high-cardinality.md)の[大基数ディメンションに関する新しいトピックです。 |
+| 2021年4月 | [persistence](data-views/component-settings/persistence.md)に関する新しいトピックです。 |
+| 2021年4月 | Workspaceでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントです。 |
+| 2021年4月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md)に関する新しいトピック。 |
+| 2021年4月 | [Google Analyticsデータの取り込み](/help/use-cases/ga-to-cja.md)と[データの分析](/help/use-cases/ga-to-cja-reporting.md)に関する新しいトピック。 |
+| 2021年4月 | Workspaceの[予定レポート](/help/analysis-workspace/curate-share/t-schedule-report.md)に関するトピックを追加しました。 |
+| 2021年4月 | CJA](/help/components/dimensions/high-cardinality.md)の[大基数ディメンションに関する新しいトピックです。 |
 | 2021 年 3 月 | [Analyticsダッシュボード](/help/mobile-app/home.md)（モバイルアプリ）のサポートに関するトピックを追加しました。 |
 | 2021 年 3 月 | Workspaceの[ユーザーの環境設定](/help/analysis-workspace/user-preferences.md)に関する新しいトピックです。 |
 | 2021 年 2 月 | Adobe Experience Platform](/help/use-cases/marketing-channels.md)での[マーケティングチャネルディメンションの使用に関する新しいトピックです。 |
