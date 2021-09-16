@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 46dbc257e7e2ec1709f5380061033a7ed8578797
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 97%
 
 ---
 
@@ -39,9 +39,19 @@ ht-degree: 100%
       + [クロスチャネル分析に関する FAQ](connections/cca/faq.md)
 + データビュー {#cja-dataviews}
    + [データビューの概要](data-views/data-views.md)
-   + [データレイヤーの作成](data-views/create-dataview.md)
+   + [データビューの作成または編集](data-views/create-dataview.md)
+   + コンポーネント設定{#component-settings}
+      + [コンポーネント設定の概要](data-views/component-settings/overview.md)
+      + [アトリビューション](data-views/component-settings/attribution.md)
+      + [動作](data-views/component-settings/behavior.md)
+      + [形式](data-views/component-settings/format.md)
+      + [値を含める / 除外](data-views/component-settings/include-exclude-values.md)
+      + [指標の重複排除](data-views/component-settings/metric-deduplication.md)
+      + [値オプションなし](data-views/component-settings/no-value-options.md)
+      + [永続性](data-views/component-settings/persistence.md)
+      + [値のバケット化](data-views/component-settings/value-bucketing.md)
+   + [標準コンポーネントリファレンス](data-views/component-reference.md)
    + [データビューの使用例](data-views/data-views-usecases.md)
-   + [永続性](data-views/persistence.md)
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
