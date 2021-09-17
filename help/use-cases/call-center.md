@@ -2,16 +2,16 @@
 title: コールセンターデータと web データの読み込み
 description: コールセンターと web サイトのデータをリンクさせるデータセットの作成方法について説明します。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 86%
 
 ---
 
 # コールセンターデータと web データの読み込み
 
-Customer Journey Analytics には、様々なソースのデータセットを 1 つの Workspace プロジェクトに組み合わせるための、重要で堅牢な機能が用意されています。このガイドでは、貴社が Web サイトのデータをコールセンターのデータと組み合わせる方法を説明します。
+Customer Journey Analytics には、様々なソースのデータセットを 1 つの Workspace プロジェクトに組み合わせるための、重要で堅牢な機能が用意されています。このガイドでは、貴社が Web サイトのデータをコールセンターのデータと組み合わせる方法を説明します。例えば、顧客がどのようなアクションを実行し、どのようなコンテンツを表示し、カスタマーサポートに連絡する前に検索する用語を理解できます。 その後、改善するコンテンツやセルフサービスツールを決定し、問い合わせなくても問題をより適切に解決できます。
 
 ## 前提条件
 
@@ -53,8 +53,10 @@ CJA で[接続を作成](/help/connections/create-connection.md)します。
 
 ## データレイヤーの作成
 
-接続の作成後、Analysis Workspace で使用する[データビューを作成](/help/data-views/create-dataview.md)できます。<!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+接続の作成後、Analysis Workspace で使用する[データビューを作成](/help/data-views/create-dataview.md)できます。役立つコンポーネントは次のとおりです。
+
+* ラストタッチとセッションの持続性を持つページディメンション。 コールセンター指標は、顧客が呼び出しの前に表示した最後のページに接続できます。
+* 「コールセンター理由」スキーマフィールドを使用して発生件数を増やす呼び出し指標。 [指標の重複排除](/help/data-views/component-settings/metric-deduplication.md)を使用して、1回のセッションで1回だけ増加させます。
 
 ## ビジュアライゼーションの作成
 
@@ -81,14 +83,13 @@ CJA で[接続を作成](/help/connections/create-connection.md)します。
 1. 指標のヘッダーの近くにある歯車のアイコンをクリックします。「**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**」をクリックします。
 1. 目的の[アトリビューションモデル](/help/data-views/create-dataview.md)を設定します。
 
-結果のレポートには、コールセンターデータの上位の指標が示されます。<!-- Complement with donut visualization -->
+結果のレポートには、コールセンターデータの上位の指標が示されます。
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 
