@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 87%
@@ -86,5 +86,5 @@ ht-degree: 87%
 |  セッションと  人 | 複数のレポートスイートにわたって重複排除がおこなわれます。 その結果、カウントが一致しない場合があります。 |
 | 指標の重複排除 | 複数の行に同じトランザクションIDがある場合（例：[!UICONTROL 購入ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。 これにより、主要指標の数が多くなるのを防ぎます。 その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
 | 通貨 | CJAでは、通貨換算はまだサポートされていません。 結合しようとしているレポートスイートが異なる基本通貨を使用している場合、問題が発生する可能性があります。 |
-| [!UICONTROL 永続性] | [](/help/data-views/persistence.md) 永続性は、複数のレポートスイートにまたがって拡張され、フィ [!UICONTROL ルター]、 [!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
+| [!UICONTROL 永続性] | [](../data-views/component-settings/persistence.md) 永続性は、複数のレポートスイートにまたがって拡張され、フィ [!UICONTROL ルター]、 [!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] |  レポートスイートを結合する際に、分類の重複が自動的に除外されない。複数の分類ファイルを1つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |

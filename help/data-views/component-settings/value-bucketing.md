@@ -1,7 +1,7 @@
 ---
 title: 値グループ化コンポーネントの設定
 description: ディメンションで数値を組み合わせます。
-source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
+source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 12%
@@ -9,7 +9,7 @@ ht-degree: 12%
 ---
 
 
-# [!UICONTROL 値グルー] プコンポーネントの設定
+# 値グループ化コンポーネントの設定
 
 データビューを作成または編集する際に、値のグループ化を使用すると、範囲に基づいて数値を組み合わせることができます。 整数または倍精度スキーマのデータ型を使用するディメンションに対してのみ使用できます。
 
