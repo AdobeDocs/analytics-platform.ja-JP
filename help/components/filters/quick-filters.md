@@ -3,13 +3,13 @@ description: Analysis Workspaceでクイックフィルターを使用する。
 title: クイックフィルター
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: a32b260fb4c4696ac460903f44b240cb71a62db9
+exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
+source-git-commit: 23ae3185b29b72638e5ecdb4c9cf8a0680e48d5e
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 3%
 
 ---
-
 
 # クイックフィルター
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ## 前提条件 
 
-クイックフィルターを作成するには、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools)で[!UICONTROL フィルターの作成]権限が必要です。
+クイックフィルターを作成するには、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools)で[!UICONTROL セグメントの作成]権限が必要です。
 
 ## クイックフィルターの作成
 
@@ -37,9 +37,9 @@ ht-degree: 2%
 
 | 設定 | 説明 |
 | --- | --- |
-| 名前 | フィルターのデフォルト名は、フィルター内のルール名の組み合わせです。 フィルターの名前は変更できます。 |
+| 名前 | フィルターのデフォルト名は、フィルター内のルール名の組み合わせです。 フィルターの名前を、わかりやすい名前に変更できます。 |
 | 含む／除く | フィルター定義にコンポーネントを含めるか除外するかはできますが、両方を含めることはできません。 |
-| ヒット/訪問/訪問者コンテナ | クイックフィルターには、ディメンション/指標/日付範囲をフィルターに含める（または除外する）ための[フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6)が1つだけ含まれます。  訪問者には、訪問およびページビュー全体で訪問者に固有の包括的なデータが含まれます。[!UICONTROL 訪問]コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、[!UICONTROL ヒット]コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。 デフォルトのコンテナは[!UICONTROL ヒット]です。 |
+| ヒット/訪問/訪問者コンテナ | クイックフィルターには、ディメンション/指標/日付範囲をフィルターに含める（または除外する）ための[フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=ja#filter-containers)が1つだけ含まれます。  訪問者には、訪問およびページビュー全体で訪問者に固有の包括的なデータが含まれます。[!UICONTROL 訪問]コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、[!UICONTROL ヒット]コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。 デフォルトのコンテナは[!UICONTROL ヒット]です。 |
 | コンポーネント(Dimension/指標/日付範囲) | コンポーネントのディメンションや指標、日付範囲およびその値を追加して、最大3つのルールを定義できます。 適切なコンポーネントを見つける方法は3つあります。<ul><li>入力を開始すると、[!UICONTROL クイックフィルター]ビルダーが適切なコンポーネントを自動的に見つけます。</li><li>ドロップダウンリストを使用して、コンポーネントを検索します。</li><li>左側のパネルからコンポーネントをドラッグ&amp;ドロップします。</li></ul> |
 | 演算子 | 標準演算子と[!UICONTROL 個別カウント]演算子を検索するには、ドロップダウンメニューを使用します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
 | プラス記号(+) | 別のルールの追加 |
@@ -83,9 +83,6 @@ ht-degree: 2%
 
 1. クイックフィルターの上にマウスポインターを置いて、情報(「i」)アイコンを選択します。
 1. 「**[!UICONTROL フィルターを保存]**」を選択します。
-
-   ![](assets/save-quick-seg.png)
-
 1. 名前はそのままにするか、フィルターの名前を変更します。
 
    Workspaceに戻り、フィルターが青いサイドバーになっていることに注目してください。 これは、クイックフィルタービルダーで編集/開くことができなくなったことを示します。 保存すると、コンポーネントリストの一部になります。
@@ -100,7 +97,7 @@ ht-degree: 2%
 
    ![](assets/project-only.png)
 
-1. **[!UICONTROL 「このフィルターをすべてのプロジェクトで使用可能にする」の横にあるチェックボックスを選択し、コンポーネントリストに追加します。]**
+1. **[!UICONTROL 「すべてのプロジェクトで使用可能にする」の横にあるチェックボックスを選択し、コンポーネントリストに追加します。]**
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. フィルターが、すべてのプロジェクトのフィルターコンポーネントリストに表示されます。
 1. また、[フィルター](/help/components/filters/manage-filters.md)を組織内の他のユーザーと共有することもできます。
