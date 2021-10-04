@@ -9,8 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+source-git-commit: 1ee998aa4c5c429ebb62be83f56431842dd75602
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 95%
@@ -40,7 +39,7 @@ ht-degree: 95%
 + データビュー {#cja-dataviews}
    + [データビューの概要](data-views/data-views.md)
    + [データビューの作成または編集](data-views/create-dataview.md)
-   + コンポーネント設定{#component-settings}
+   + コンポーネント設定 {#component-settings}
       + [コンポーネント設定の概要](data-views/component-settings/overview.md)
       + [アトリビューション](data-views/component-settings/attribution.md)
       + [動作](data-views/component-settings/behavior.md)
