@@ -2,9 +2,9 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: d833e12c67d74696438be9547db159438e671b2c
+source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 99%
 | Attribution IQ | 完全にサポートされます。 |
 | 計算指標 | 完全にサポートされます。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | クロスデバイス／クロスチャネルのステッチ | 完全にサポートされます。 [クロスチャネル分析](/help/connections/cca/overview.md) を参照してください。 |
+| CSV のダウンロード | 完全にサポートされます。 |
 | カスタムカレンダー | 完全にサポートされます。 |
 | 日付の比較 | 完全にサポートされます。 |
 | 日付範囲 | すべての日付範囲機能がサポートされています。 |
@@ -77,7 +78,6 @@ ht-degree: 99%
 | --- | --- |
 | アラート | サポートが予定されています。 |
 | 貢献度分析 | サポートが予定されています。 |
-| CSV のダウンロード | サポートが予定されています。 |
 | Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、[!UICONTROL Experience Platform クエリサービス]でも、CJA におけるこれらの使用例に対応するインターフェイスを提供しています。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | マーチャンダイジング変数の持続性 | サポートが予定されています。 |
