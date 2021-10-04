@@ -2,9 +2,9 @@
 title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1196'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,11 @@ ht-degree: 99%
 | リスト変数／リスト prop | 完全にサポートされます。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
 | 指標 | 完全にサポートされます。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | 完全にサポートされます。 |
+| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
 | PDF の書き出し | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
+| Report Builder（Excel プラグイン） | 完全サポート（2021 年 10 月） |
 | レポート時間処理 | 完全にサポートされます。CJA は、レポート時間処理にのみ依存します。 |
 | レポート API へのアクセス | 完全にサポートされます。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
@@ -80,7 +82,6 @@ ht-degree: 99%
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | マーチャンダイジング変数の持続性 | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
-| Report Builder（Excel プラグイン） | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
 | セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
 
