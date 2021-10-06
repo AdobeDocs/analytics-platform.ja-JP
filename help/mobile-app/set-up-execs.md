@@ -3,13 +3,13 @@ description: Analytics モバイルアプリを使用するためのユーザー
 title: ダッシュボードを使用するエグゼクティブの設定
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 56%
 
 ---
-
 
 # ダッシュボードを使用するエグゼクティブユーザーの設定
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 
 1. [Experience CloudAdmin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en) で新しいユーザーを設定します。
 
-1. スコアカードを共有するには、Analysis Workspace、スコアカードの基になるレポートスイート、セグメント、指標、ディメンションなどのスコアカードコンポーネントにアクセスするためのアプリユーザーの権限を付与する必要があります。
+1. スコアカードを共有するには、Analysis Workspace、スコアカードの基になるデータビュー、フィルター、指標、ディメンションなどのスコアカードコンポーネントにアクセスするためのアプリユーザーの権限を付与する必要があります。
 
 ## アプリユーザーのシステム前提条件
 
@@ -111,4 +111,3 @@ ht-degree: 56%
 * スコアカードがエグゼクティブユーザーと共有されていない場合があります。
 
 エグゼクティブユーザーが適切なAdobe Analyticsインスタンスにログインでき、スコアカードが共有されていることを確認します。
-
