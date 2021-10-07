@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 93%
+source-wordcount: '518'
+ht-degree: 88%
 
 ---
 
@@ -133,6 +133,15 @@ ht-degree: 93%
       + [管理要件](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace のアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace のロングテール](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+   + [Report Builderの概要](report-builder/report-buider-overview.md)
+   + [Report Builderの設定](report-builder/report-builder-setup.md)
+   + [データブロックの作成](report-builder/create-a-data-block.md)
+   + [Report Builderハブ](report-builder/report-builder-hub.md)
+   + [日付範囲の選択](report-builder/select-date-range.md)
+   + [フィルターの操作](report-builder/work-with-filters.md)
+   + [ディメンションフィルター](report-builder/filter-dimensions.md)
+   + [Report Builder設定](report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
    + ディメンション {#dimensions}
