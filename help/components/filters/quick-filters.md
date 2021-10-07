@@ -4,9 +4,9 @@ title: クイックフィルター
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '950'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 6%
 * 作成されたプロジェクトにのみ適用します（変更可能）。
 * 最大 3 つのルールを許可
 * ネストされたコンテナや順次ルールに対応しない。
-* 複数のレポートスイートを含むプロジェクトで作業する
 
 本格的なコンポーネントリストフィルターとクイックフィルターの機能の比較については、[ ここ ](/help/components/filters/filters-overview.md) を参照してください。
 
