@@ -4,13 +4,13 @@ description: データブロックの作成方法を説明します。
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # データブロックの作成
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. **日付範囲** を設定します。
 
-   「日付範囲」オプションでは、日付範囲を選択できます。 日付範囲は、固定または周期的に設定できます。 データ範囲オプションの詳細については、&lt;&lt; 日付範囲へのリンクの節 > を参照してください。
+   「日付範囲」オプションでは、日付範囲を選択できます。 日付範囲は、固定または周期的に設定できます。 データ範囲のオプションの詳細については、[ 日付範囲の選択 ](select-date-range.md) を参照してください。
 
 1. 「**次へ**」をクリックします。
 
