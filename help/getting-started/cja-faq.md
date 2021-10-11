@@ -2,10 +2,10 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 87%
+source-wordcount: '1611'
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 87%
 | 質問 | 回答 |
 | --- | --- |
 | 異なる [!UICONTROL Adobe Experience Platform] サンドボックスのデータを 1 つの [!UICONTROL Customer Journey Analytics] 接続に結合することはできますか？ | いいえ。サンドボックス全体のデータにアクセスすることはできません。同じサンドボックス内にあるデータセットのみを組み合わせることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#select-sandbox-and-datasets) |
-| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>標準の負荷の場合：60 分未満 <br>**注：** パイプラインを通じたデータフローが異常に多い場合は、最長 24 時間かかる場合があります。</li><li>データのバックフィル（サイズにかかわらず、最大 13 ヶ月分のデータ）：4 週間未満</li></ul> |
 | [!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続する方法を教えてください。 | データセット間で個人 ID が一致する限り、[!UICONTROL Customer Journey Analytics] は、フィルター、アトリビューション、フロー、フォールアウトなどを接続できます。 接続できます。 |
 | オフラインデータを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | Customer Journey Analytics に対するエンタイトルメントがあれば、Experience Platform にデータを取り込むことができます。 その後、Analysis Workspace でのレポート用に、[!UICONTROL Customer Journey Analytics] で、そのデータへの接続とデータビューを作成できます。 Experience Platform のデータは、オンボーディングチームが必要に応じて、レコメンデーションやコンサルティングを提供するのに役立ちます。 |
 | [!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | [!UICONTROL Adobe Analytics] のデータは、[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Experience Platform に接続できます。[!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。 |
@@ -48,7 +47,17 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. 従来の [!UICONTROL Adobe Analytics] コンポーネント
+## 4.遅延に関する考慮事項
+
+>[!NOTE]
+>CJA には固定データサイズがないので、Adobeは標準の取り込み時間にコミットできません。 アドビでは、新しい更新と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
+
+| 質問 | 回答 |
+| --- | --- |
+| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になったら、90 分以内に処理および取り込みます。</li><li>バッチサイズ > 5000 万行：90 分以上</li><li>小さなバックフィル — 例えば、1,000 万行のルックアップデータセットの場合：24 時間以内に<li>大きなバックフィル — 例えば、5,000 億行：30 日</li></ul> |
+
+
+## 5. 従来の [!UICONTROL Adobe Analytics] コンポーネント
 
 | 質問 | 回答 |
 | --- | --- |
@@ -61,7 +70,7 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 5. データコンポーネントの削除の影響
+## 6. データコンポーネントの削除の影響
 
 データの削除に関しては、サンドボックス、スキーマ、データセット、接続、データビュー、Workspace プロジェクト の 6 種類のコンポーネントを考慮する必要があります。次に、これらのコンポーネントを削除した場合に考えられるシナリオを示します。
 
@@ -76,15 +85,15 @@ ht-degree: 87%
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存する Workspace プロジェクトは動作しなくなります。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
 
-## 6. CJAでレポートスイートを結合する際の考慮事項
+## 7. CJA でレポートスイートを結合する際の考慮事項
 
-[Adobe Analyticsソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じてAdobe Analyticsデータを取り込む予定がある場合は、2つ以上のAdobe Analyticsレポートスイートを結合する際に、これらの影響を考慮してください。
+[Adobe Analyticsソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じてAdobe Analyticsデータを取り込む予定がある場合は、2 つ以上のAdobe Analyticsレポートスイートを結合する際に、これらの影響を考慮してください。
 
 | 問題 | 考慮事項 |
 | --- | --- |
-| 変数 | [!UICONTROL eVars]などの変数は、レポートスイート間で並ぶことはできません。 例えば、レポートスイート1のeVar1は&#x200B;**[!UICONTROL ページ]**&#x200B;を指す場合があります。 レポートスイート2では、eVar1が&#x200B;**[!UICONTROL 内部キャンペーン]**&#x200B;を指し、混在したレポートや不正確なレポートが作成される場合があります。 |
-|  セッションと  人 | 複数のレポートスイートにわたって重複排除がおこなわれます。 その結果、カウントが一致しない場合があります。 |
-| 指標の重複排除 | 複数の行に同じトランザクションIDがある場合（例：[!UICONTROL 購入ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。 これにより、主要指標の数が多くなるのを防ぎます。 その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
-| 通貨 | CJAでは、通貨換算はまだサポートされていません。 結合しようとしているレポートスイートが異なる基本通貨を使用している場合、問題が発生する可能性があります。 |
-| [!UICONTROL 永続性] | [](../data-views/component-settings/persistence.md) 永続性は、複数のレポートスイートにまたがって拡張され、フィ [!UICONTROL ルター]、 [!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
-| [!UICONTROL 分類] |  レポートスイートを結合する際に、分類の重複が自動的に除外されない。複数の分類ファイルを1つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |
+| 変数 | [!UICONTROL eVars] などの変数は、レポートスイート間で一致しない場合があります。 例えば、レポートスイート 1 のeVar1 は **[!UICONTROL ページ]** を指す場合があります。 レポートスイート 2 では、eVar1 が **[!UICONTROL 内部キャンペーン]** を指し、混在したレポートや不正確なレポートが作成される場合があります。 |
+|  セッションと  人口 | 複数のレポートスイートで重複が排除されます。 その結果、カウントが一致しない場合があります。 |
+| 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL  購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL Orders]）。 これにより、主要指標の数が多くなるのを防ぎます。 その結果、[!UICONTROL  注文 ] などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
+| 通貨 | CJA では、通貨換算はまだサポートされていません。 結合しようとしているレポートスイートが異なる基本通貨を使用している場合、問題が発生する可能性があります。 |
+| [!UICONTROL 永続性] | [](../data-views/component-settings/persistence.md) 永続性は、フィルター [!UICONTROL やアトリビューション]などに影響する、複数のレ ポートスイートにまたがって拡張されます。数値が正しく加算されない場合があります。 |
+| [!UICONTROL 分類] |  レポートスイートを結合する際に、分類の重複が自動的に排除されない。複数の分類ファイルを 1 つの [!UICONTROL  ルックアップ ] データセットに組み合わせると、問題が発生する場合があります。 |
