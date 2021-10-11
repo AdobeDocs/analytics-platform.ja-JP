@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
+source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 88%
+source-wordcount: '519'
+ht-degree: 89%
 
 ---
 
@@ -156,6 +156,7 @@ ht-degree: 88%
       + [フィルターの管理](components/filters/manage-filters.md)
       + [クイックフィルター](components/filters/quick-filters.md)
       + [アドホックフィルター](components/filters/ad-hoc-filters.md)
+      + [演算子](components/filters/operators.md)
    + 計算指標 {#cja-calcmetrics}
       + [計算指標の概要](components/calc-metrics/calc-metr-overview.md)
       + [計算指標の作成](components/calc-metrics/create.md)
