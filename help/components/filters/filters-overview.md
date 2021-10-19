@@ -3,9 +3,9 @@ title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,19 +17,19 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 
 フィルタービルダーでフィルターを作成して保存したり、（Workspace で）フォールアウトビジュアライゼーションからフィルターを生成したりできます。また、複数のフィルターをまとめて、積み重ねフィルターとして使用することもできます。
 
-フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/create-filters.md)や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する[フィルターマネージャー](/help/components/filters/manage-filters.md)が含まれます。
+フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/create-filters.md) や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する [フィルターマネージャー](/help/components/filters/manage-filters.md) が含まれます。
 
 ## フィルターのタイプ
 
-Workspaceとフィルタービルダーでは、複雑さの程度、このプロジェクトにのみ適用するかどうかなどに応じて、様々なタイプのフィルターを作成できます。 次に、フィルタータイプの概要を示します。
+Workspace とフィルタービルダーでは、複雑さの程度、このプロジェクトにのみ適用するかどうかなどに応じて、様々なタイプのフィルターを作成できます。 フィルタータイプの概要は次のとおりです。
 
-| フィルタータイプ | どこで？ | 適用可能な場所 | 使用するタイミング |
+| フィルタータイプ | 作成場所 | 適用対象となる場所 | 使用するタイミング |
 | --- | --- | --- | --- |
-| コンポーネントリストフィルター | 「+」をクリックすると、[フィルタービルダー](/help/components/filters/create-filters.md)が表示されます。 | すべてのWorkspaceプロジェクト | より複雑なフィルターの場合、順次フィルター |
-| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみ。ただし、セグメントリストを保存して追加できます。 | 1つ以上のルールを柔軟に追加/編集 |
-| アドホックプロジェクトフィルター | [プロジェクトのセグメントドロップゾーンにドラッグ&amp;ドロップします](/help/components/filters/ad-hoc-filters.md) | プロジェクトのみ。ただし、フィルターリストに保存して追加できます。 | 単一ルールフィルターの場合 |
-| フォールアウト分析のフィルター | [Analysis Workspaceのフォールア](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) ウトビジュアライゼーション | 個々のフォールアウトビジュアライゼーションの追加 | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
-| 計算指標ベースのフィルター | [計算指標ビルダー](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | 個々の計算指標を追加するには | 指標定義内でのフィルターの適用 |
+| コンポーネントリストフィルター | 「+」をクリックすると、 [フィルタービルダー](/help/components/filters/create-filters.md) が表示されます。 | すべての Workspace プロジェクト | より複雑なフィルターの場合、順次フィルター |
+| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | 1 つ以上のルールを柔軟に追加／編集 |
+| アドホックプロジェクトフィルター | [プロジェクトのセグメントドロップゾーンにドラッグ＆ドロップします](/help/components/filters/ad-hoc-filters.md) | プロジェクトのみですが、フィルターリストに保存して追加できます。 | 単一ルールフィルターの場合 |
+| フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
+| 計算指標ベースのフィルター | [計算指標ビルダー](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=ja) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
 
 ## 順次フィルター
 
