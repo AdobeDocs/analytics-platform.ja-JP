@@ -4,8 +4,8 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 83%
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | はい。[!UICONTROL Customer Journey Analytics] には、 [クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)（CCA）と呼ばれるステッチソリューションがあります。データセットの人物 ID のキーを更新できるので、複数のデータセットをシームレスに組み合わせることができます。 |
 | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
-| CCA での「再生」の仕組み | クロスチャネル分析では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#手順-1：ライブステッチ) |
-| CCA での履歴データのステッチ（バックフィル）の仕組み | 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。　[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#クロスチャネル分析の有効化) |
+| CCA での「再生」の仕組み | クロスチャネル分析では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#step-1%3A-live-stitching) |
+| CCA での履歴データのステッチ（バックフィル）の仕組み | 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。　[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja) |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -87,13 +87,13 @@ ht-degree: 83%
 
 ## 7. CJA でレポートスイートを結合する際の考慮事項
 
-[Adobe Analyticsソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じてAdobe Analyticsデータを取り込む予定がある場合は、2 つ以上のAdobe Analyticsレポートスイートを結合する際に、これらの影響を考慮してください。
+[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、以下の影響を考慮してください。
 
 | 問題 | 考慮事項 |
 | --- | --- |
-| 変数 | [!UICONTROL eVars] などの変数は、レポートスイート間で一致しない場合があります。 例えば、レポートスイート 1 のeVar1 は **[!UICONTROL ページ]** を指す場合があります。 レポートスイート 2 では、eVar1 が **[!UICONTROL 内部キャンペーン]** を指し、混在したレポートや不正確なレポートが作成される場合があります。 |
-|  セッションと  人口 | 複数のレポートスイートで重複が排除されます。 その結果、カウントが一致しない場合があります。 |
-| 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL  購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL Orders]）。 これにより、主要指標の数が多くなるのを防ぎます。 その結果、[!UICONTROL  注文 ] などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
-| 通貨 | CJA では、通貨換算はまだサポートされていません。 結合しようとしているレポートスイートが異なる基本通貨を使用している場合、問題が発生する可能性があります。 |
-| [!UICONTROL 永続性] | [](../data-views/component-settings/persistence.md) 永続性は、フィルター [!UICONTROL やアトリビューション]などに影響する、複数のレ ポートスイートにまたがって拡張されます。数値が正しく加算されない場合があります。 |
-| [!UICONTROL 分類] |  レポートスイートを結合する際に、分類の重複が自動的に排除されない。複数の分類ファイルを 1 つの [!UICONTROL  ルックアップ ] データセットに組み合わせると、問題が発生する場合があります。 |
+| 変数 | [!UICONTROL eVars] などの変数は、レポートスイート間で並べて使用することはできません。例えば、レポートスイート 1 の eVar1 が **[!UICONTROL ページ]** を指し、レポートスイート 2 の eVar1 が **[!UICONTROL 内部キャンペーン]** を指している場合、レポートの内容が混在したり、不正確になったりする可能性があります。 |
+| [!UICONTROL セッション] と [!UICONTROL 人物] のカウント | 複数のレポートスイートをまたいで重複排除がおこなわれます。その結果、カウントが一致しない場合があります。 |
+| 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL 購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。これにより、主要指標の数が増えすぎるのを防ぎます。その結果、 [!UICONTROL 注文] などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
+| 通貨 | CJA では、通貨換算はまだサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
+| [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md) は複数のレポートスイートにまたがって適用され、 [!UICONTROL フィルター]、 [!UICONTROL アトリビューション] などに影響します。数値が正しく加算されない場合があります。 |
+| [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの [!UICONTROL ルックアップ] データセットに組み合わせると、問題が発生する場合があります。 |

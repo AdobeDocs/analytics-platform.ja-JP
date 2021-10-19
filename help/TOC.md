@@ -11,8 +11,8 @@ user-guide-description: このガイドは、Adobe Experience Platform に基づ
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -174,7 +174,7 @@ ht-degree: 89%
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
-   + [チャネル間のデータの分析](use-cases/cross-channel.md)
+   + [チャネルをまたいだデータの分析](use-cases/cross-channel.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
