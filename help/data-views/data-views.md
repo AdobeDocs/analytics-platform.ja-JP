@@ -3,15 +3,15 @@ title: データビューの概要
 description: データビューは、指標、ディメンション、セッションなど、CJA 接続内のデータの要素を解釈する方法を指定します。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # データビューの概要
 
-データビューはCustomer Journey Analytics固有のコンテナで、[接続](/help/connections/create-connection.md)からのデータの解釈方法を決定できます。 Analysis Workspaceで使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspaceでのレポート作成の準備の際に定義します。
+データビューは Customer Journey Analytics 固有のコンテナで、[接続](/help/connections/create-connection.md)からデータを解釈する方法を決定できます。Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。データビューは、Analysis Workspace でのレポート作成の準備の際に定義します。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Adobe Experience Platform でのスキーマの変更や CJA 環境の再実装�
 ## データビューの前提条件
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
-* データビューを作成または管理するには、](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)Adobe Admin Console で一連の権限[が必要です。
+* データビューを作成または管理するには、](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja)Adobe Admin Console で一連の権限[が必要です。
 
 ## Workspace で上書きできるデータビュー設定
 
