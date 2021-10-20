@@ -2,7 +2,7 @@
 title: Customer Journey Analytics の FAQ
 description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
+source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 93%
@@ -44,7 +44,7 @@ ht-degree: 93%
 | [!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込む方法を教えてください。 | [!UICONTROL Adobe Analytics] のデータは、[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Experience Platform に接続できます。[!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。 |
 | データセット要素をデータビューに組み込むにはどの程度の時間がかかりますか。 | 開始するまでに数時間かかり、過去 13 か月のデータをバックフィルするのに数日かかります。 |
 | PII データを取り込んでデータ間の接続を確立する必要がありますか。 | いいえ。PII ではない顧客 ID のハッシュを含む、任意の ID を使用できます。 |
-| CJA イベントデータセットで過去または将来の日付/タイムスタンプを取り込む際の制限を教えてください。 | <ul><li>過去の日付/タイムスタンプについて：最大 10 歳のイベントデータ。</li><li>将来の日付/タイムスタンプについて：最大 1 か月後のイベントデータ（予測）。</li></ul> |
+| 過去または将来の日付/タイムスタンプを CJA イベントデータセットに取り込む際の制限を教えてください。 | <ul><li>過去の日付/タイムスタンプについて：最大 10 歳のイベントデータ。</li><li>Regarding future dates/timestamps: Event data (predictive) up to 1 month in the future.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
