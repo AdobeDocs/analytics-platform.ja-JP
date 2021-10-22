@@ -3,10 +3,10 @@ description: 行設定は、テーブルにドラッグしたコンポーネン�
 title: 行設定
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 82%
+source-wordcount: '472'
+ht-degree: 81%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 82%
 >[!NOTE]
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+
+行と列の設定に関するビデオをこちらでご覧ください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、 [!UICONTROL 設定] 次のアイコンをクリックします。
 

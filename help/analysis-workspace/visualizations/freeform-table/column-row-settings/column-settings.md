@@ -1,18 +1,21 @@
 ---
 description: 列設定では、列の書式を設定できます。一部の列には条件付き書式を設定することもできます。
 title: 列設定
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 98%
 
 ---
-
 
 # [!UICONTROL 列設定]
 
 [!UICONTROL 列設定]では、列の書式を設定できます。一部の列には条件付き書式を設定することもできます。
+
+行と列の設定に関するビデオをこちらでご覧ください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 ## [!UICONTROL 列設定]の編集 {#edit-column-settings}
 
