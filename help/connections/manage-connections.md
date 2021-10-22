@@ -3,10 +3,10 @@ title: 接続の管理
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: 98a24900ba06c8f2a0103762a7c57c977a7f15c6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1683'
+ht-degree: 86%
 
 ---
 
@@ -109,25 +109,16 @@ ht-degree: 0%
 | [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前を表示します。 |
 | [!UICONTROL 接続の説明] | この接続の目的についての詳細な説明を表示します。 |
-| [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択した[!UICONTROL ユーザー ID ]です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際にマージするには、同じ[!UICONTROL ユーザー ID] を使用する必要があります。 |
 | [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
-| [!UICONTROL IMS 組織 ID] | プロビジョニングした Experience Cloud 会社に関連付けられた[組織 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja)。以前は「ログイン会社」と呼んでいました。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
-| [!UICONTROL 新しいデータをインポート] | 新しいデータバッチを履歴（バックフィル）データに追加するかどうかを示します。 |
-| **データセットレベルの右側パネル** |  |
-| [!UICONTROL データセットの説明] | この接続内の各データセットのパラメーターについて説明します。 |
-| [!UICONTROL 使用可能なレコード] | カレンダーで選択した特定の期間に、このデータセットに対して取り込まれた行の合計数を表します。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3.-customer-journey-analytics-へのデータの取り込み)が発生します。 |
-| [!UICONTROL 追加されたレコード] | 選択した期間に追加された行数。**メモ**：**[!UICONTROL 追加されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
-| [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数。**メモ**：**[!UICONTROL スキップされたレコード]** のデータは、現時点ではイベントデータのみを含み、プロファイルまたはルックアップデータは含まれません。 |
-| [!UICONTROL 削除されたレコード] | 選択した期間に削除されたレコードの数。 **メモ**：**[!UICONTROL 削除されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
-| [!UICONTROL レコードスキップエラー] | レコードがスキップされた理由を示します。タイムスタンプが見つからない、ユーザー ID が見つからないなどの理由が考えられます。 |
-| [!UICONTROL 取り込まれたバッチ] | このデータセットに追加されたデータバッチの数。 |
-| [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時。 |
-| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL スキーマ] | このデータセットのベースとなる Adobe Experience Platform スキーマ。 |
-| [!UICONTROL データセット ID] | この ID は、Adobe Experience Platform システムが生成します。 |
+| [!UICONTROL 新しいデータをインポート] | （オン/オフ）新しいデータのバッチを履歴（バックフィル）データに追加するかどうかを示します。 |
 | [!UICONTROL データをバックフィル] | バックフィル（履歴）データは、[!UICONTROL 待機中]、[!UICONTROL 処理中]（進捗の割合が示されます）、[!UICONTROL 完了]の 3 つの状態でトラッキングされます。 |
+| [!UICONTROL 作成者] | 接続を作成するユーザーの名前。 |
+| [!UICONTROL 最終変更日] | 接続に対する最後の変更の日時。 |
+| [!UICONTROL 最終変更者] |
+
+| **データセットレベルの右側のパネル** | | | [!UICONTROL ユーザー ID] |Experience Platform内のデータセットスキーマで定義された ID を表示します。 接続の作成時に選択したユーザー ID です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際に結合するには、データセット間で同じユーザー ID を使用する必要があります。 | | [!UICONTROL 使用可能なレコード] |は、カレンダーを通じて選択した特定の期間に、このデータセットに対して取り込まれた行の合計数を表します。 データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3.-customer-journey-analytics-へのデータの取り込み)が発生します。| | [!UICONTROL 追加されたレコード] |選択した期間に追加された行数。 **メモ**：**[!UICONTROL 追加されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。| | [!UICONTROL 削除されたレコード] |選択した期間に削除されたレコードの数。 **メモ**：**[!UICONTROL 削除されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。| | [!UICONTROL 追加されたバッチ] |このデータセットに追加されたデータバッチの数。  | | [!UICONTROL スキップされたレコード] |選択した期間の取り込み中にスキップされた行数。 **注意**：**[!UICONTROL スキップされたレコード]** のデータは、現時点ではイベントデータのみを含み、プロファイルまたはルックアップデータは含まれません。| | [!UICONTROL 最終追加日] |最後のバッチが追加された日時。 | | [!UICONTROL データセットタイプ] |次のいずれか [!UICONTROL イベント], [!UICONTROL 参照]または [!UICONTROL プロファイル]. [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  | | [!UICONTROL スキーマ] |このデータセットの基になるAdobe Experience Platformスキーマ。 | | [!UICONTROL データセット ID] |この ID は、Adobe Experience Platformで生成されるシステム ID です。 |
 
 ### 接続を編集
 
@@ -141,6 +132,6 @@ ht-degree: 0%
 ## の周期的なウィンドウの設定 [!UICONTROL 接続] データ保持
 
 >[!IMPORTANT]
->この設定を実装するには、カスタマーケアまたはAdobeのアカウントマネージャーにお問い合わせください。 CJA UI からは、まだ使用できません。
+>この設定を実装するには、カスタマーケアまたはAdobeのアカウントマネージャーにお問い合わせください。 CJA UI からはまだ利用できません。
 
-この設定を使用すると、CJA データ保持を [!UICONTROL 接続] レベル ( [!UICONTROL データセット] レベル )。 データ保持は、イベントデータセットのタイムスタンプに基づき、イベントデータセットにのみ適用されます。 該当するタイムスタンプがないので、プロファイルまたは参照データセットのデータ保持設定は存在しません。 主な利点は、適用可能で有用なデータに対してのみ保存またはレポートをおこない、役に立たなくなった古いデータを削除することです。 契約の限度を守り、超過コストのリスクを低減します。
+この設定を使用すると、CJA データ保持を [!UICONTROL 接続] レベル ( [!UICONTROL データセット] レベル )。 データ保持はイベントデータセットのタイムスタンプに基づき、イベントデータセットにのみ適用されます。該当するタイムスタンプがないため、プロファイルまたは参照データセットのデータ保持設定はありません。主な利点は適用可能で有用なデータのみを保存またはレポートし、有用ではなくなった古いデータを削除することです。契約上の限度にとどまり、超過コストのリスクを軽減します。
