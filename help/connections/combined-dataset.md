@@ -2,11 +2,10 @@
 title: 組み合わせイベントデータセット
 description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
-translation-type: ht
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: ht
-source-wordcount: '326'
-ht-degree: 100%
+source-git-commit: dd68a85b1398fa99e6ee5fff1c356a005ebb9482
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +17,7 @@ ht-degree: 100%
 * スキーマは組み合わせられます。重複スキーマフィールドが結合されます。
 * 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、CJA におけるユニーク訪問者を識別する際の基礎となります。
 * 行はタイムスタンプに基づいて処理されます。
+* イベントはミリ秒レベルまで解決されます。
 
 ## 例
 
