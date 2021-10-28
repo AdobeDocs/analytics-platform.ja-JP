@@ -2,10 +2,10 @@
 title: Analysis Workspace でのユーザー環境設定の設定方法
 description: ユーザー向けに一般環境設定とプロジェクト環境設定を設定できます。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 82%
 
 ---
 
@@ -38,3 +38,14 @@ ht-degree: 100%
 |  | [パネルタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=ja) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 区切り文字 | <ul><li>カンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
+
+## [!UICONTROL ダークテーマ]
+
+Customer Journey Analyticsユーザーインターフェイスの背景を暗くしたい場合は、 [!UICONTROL ダークテーマ].
+
+1. 右上のExperience Cloudユーザーアイコンをクリックします。
+
+   ![ダークテーマ](assets/dark-theme.png)
+
+1. を **[!UICONTROL ダークテーマ]** 右に切り替えます。
+
