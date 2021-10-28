@@ -2,16 +2,20 @@
 description: パネルは、テーブルとビジュアライゼーションのコレクションです。
 title: パネルの概要
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 60%
 
 ---
 
 # パネルの概要
 
-[!UICONTROL パネル]は、テーブルとビジュアライゼーションのコレクションです。パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。 パネルは、期間、データビュー、分析の使用例に従ってプロジェクトを整理する場合に役立ちます。 Analysis Workspace では、次のパネルタイプを利用できます。
+[!UICONTROL パネル]は、テーブルとビジュアライゼーションのコレクションです。パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。 パネルは、期間、データビュー、分析の使用例に従ってプロジェクトを整理する場合に役立ちます。
+
+## パネルタイプ
+
+Analysis Workspace では、次のパネルタイプを利用できます。
 
 | パネル名 | 説明 |
 | --- | --- |
