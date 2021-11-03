@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
       + [値のバケット化](data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](data-views/component-reference.md)
    + [データビューの使用例](data-views/data-views-usecases.md)
-+ Workspace プロジェクト {#cja-workspace}
++ ワークスペースプロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
@@ -71,7 +71,7 @@ ht-degree: 93%
             + [行設定](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Workspace の合計](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [ワークスペースの合計](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
          + [コホート分析とは](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [コホート分析レポートの設定](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -125,7 +125,7 @@ ht-degree: 93%
          + [Analysis Workspace での異常値の表示](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [異常値検出で使用される統計的手法](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [ユーザー環境設定](analysis-workspace/user-preferences.md)
-   + Workspace の FAQ {#workspace-faq}
+   + ワークスペースの FAQ {#workspace-faq}
       + [よくある質問](analysis-workspace/workspace-faq/faq.md)
       + [Analysis Workspace のパフォーマンスの最適化](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [エラーメッセージ](analysis-workspace/workspace-faq/error-messages.md)
@@ -134,14 +134,14 @@ ht-degree: 93%
       + [Analysis Workspace のアクセシビリティ](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace のロングテール](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
-   + [Report Builderの概要](report-builder/report-buider-overview.md)
-   + [Report Builderの設定](report-builder/report-builder-setup.md)
+   + [Report Builder の概要](report-builder/report-buider-overview.md)
+   + [Report Builder の設定](report-builder/report-builder-setup.md)
    + [データブロックの作成](report-builder/create-a-data-block.md)
-   + [Report Builderハブ](report-builder/report-builder-hub.md)
-   + [日付範囲の選択](report-builder/select-date-range.md)
+   + [Report Builder ハブ](report-builder/report-builder-hub.md)
+   + [日付範囲を選択します。](report-builder/select-date-range.md)
    + [フィルターの操作](report-builder/work-with-filters.md)
    + [ディメンションフィルター](report-builder/filter-dimensions.md)
-   + [Report Builder設定](report-builder/report-builder-settings.md)
+   + [Report Builder の設定](report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
    + ディメンション {#dimensions}
