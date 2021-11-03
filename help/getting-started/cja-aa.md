@@ -3,9 +3,9 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,12 +36,12 @@ ht-degree: 99%
 | PDF の書き出し | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
-| Report Builder（Excel プラグイン） | 完全サポート（2021 年 10 月） |
+| Report Builder（Excel プラグイン） | 完全サポート（2021年10月） |
 | レポート時間処理 | 完全にサポートされます。CJA は、レポート時間処理にのみ依存します。 |
 | レポート API へのアクセス | 完全にサポートされます。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
 | セグメント | 完全にサポートされます。現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ユーザー権限／データアクセス制御 | 完全にサポートされます。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する.</li></ul> |
+| ユーザー権限／データアクセス制御 | 完全にサポートされます。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>ワークスペースプロジェクトをすべてのユーザーと共有する.</li></ul> |
 | 仮想レポートスイート | 完全にサポートされます。現在は、 [データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | 完全にサポートされます。データビューの一部になりました。 |
 
@@ -83,7 +83,7 @@ ht-degree: 99%
 | マーチャンダイジング変数の持続性 | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
+| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
 
 ## サポートの予定はありません
 
