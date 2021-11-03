@@ -3,9 +3,9 @@ title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Approximate Count Distinct (dimension)
 
 ## 超過したユニーク数
 
-Count() や RowCount() と同様に、Approximate Count Distinct() も[「超過したユニーク数」制限](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en)の対象です。あるディメンションに関して、特定の月に「超過したユニーク数」制限に達した場合、値は 1 ディメンション項目としてカウントされます。
+Count() や RowCount() と同様に、Approximate Count Distinct() も[「超過したユニーク数」制限](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=ja)の対象です。あるディメンションに関して、特定の月に「超過したユニーク数」制限に達した場合、値は 1 ディメンション項目としてカウントされます。
 
 ## カウント関数の比較
 
