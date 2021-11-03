@@ -1,28 +1,28 @@
 ---
-title: Customer Journey AnalyticsのReport Builderとは
-description: Customer Journey AnalyticsのReport Builder
+title: Customer Journey Analytics の Report Builder とは
+description: Customer Journey Analytics の Report Builder について説明します
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 source-git-commit: bc80a77c2136232ec209dfecc1ece1d614b438a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Customer Journey AnalyticsのReport Builderについて
+# Report Builder for Customer Journey Analytics について
 
-Customer Journey AnalyticsReport BuilderのReport Builderを使用すると、AdobeCustomer Journey Analyticsデータを使用したカスタムレポートを簡単に作成、編集および更新できます。 Customer Journey Analyticsは、複数のデータソースを結合してビジネスの全体像を作成できる、Adobe Experience Platformを基に構築されたサービスです。 Report Builderのシンプルで柔軟なドラッグ&amp;ドロップ UI を使用して、Customer Journey Analyticsデータから複雑なデータクエリやカスタムレポートを Excel 内で作成できます。
+Customer Journey Analytics Report Builder の Report Builder を使用すると、Adobe Customer Journey Analytics データを使用したカスタムレポートを簡単に作成、編集および更新できます。Customer Journey Analytics は、Adobe Experience Platform 上に構築されたサービスで、複数のデータソースを結合してビジネスの全体像を把握することができます。Report Builder のシンプルで柔軟なドラッグ＆ドロップ UI を使用すると、Customer Journey Analytics データから複雑なデータクエリやカスタムレポートをすべて Excel 上で作成できます。
 
-Customer Journey AnalyticsのReport Builderを使用すると、次のことができます。
+Customer Journey Analytics の Report Builder を使用すると、次のことができます。
 
-- 既存のワークシートのセルを参照して、完全な行順、日付範囲、またはフィルターを取得します
-- カレンダー、セル参照、日付計算を使用してカスタム日付を作成する
-- 使い慣れた Excel の書式設定ツールを使用して、テーブルやビジュアライゼーションをデザインする
+- 既存のワークシートセルを参照して、適切な行の順序、日付範囲またはフィルターを取得
+- カレンダー、セル参照または日付計算を使用したカスタム日付を作成
+- 慣れ親しんだ Excel 書式設定ツールを使用してテーブルおよびビジュアライゼーションをデザイン
 
-Customer Journey AnalyticsのReport Builderは、次のプラットフォームで Excel で使用できます。
+Customer Journey Analytics の Report Builder は、次のプラットフォームの Excel で使用できます。
 
 - macOS
 - Windows
@@ -32,7 +32,6 @@ Customer Journey AnalyticsのReport Builderは、次のプラットフォーム�
 
 >[!NOTE]
 >
->このドキュメントは、Customer Journey AnalyticsのReport Builder用です。 Windows での Analytics のReport Builderについて詳しくは、[Adobe AnalyticsのReport Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=en) を参照してください。
+>このドキュメントは、Customer Journey Analytics の Report Builder 用です。Windows での Analytics の Report Builder について詳しくは、[Adobe Analytics 用 Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=ja)を参照してください。
 
-Customer Journey AnalyticsのReport Builderは、
-[Microsoftストア ](https://www.microsoft.com/en-us/store/apps/windows)。
+Customer Journey Analytics 用 Report Builder は、[Microsoft ストア](https://www.microsoft.com/ja-jp/store/apps/windows)からダウンロードできます。
