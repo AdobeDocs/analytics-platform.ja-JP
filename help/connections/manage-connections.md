@@ -3,7 +3,7 @@ title: 接続の管理
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
+source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 80%
@@ -141,7 +141,7 @@ ht-degree: 80%
 | [!UICONTROL スキーマ] | このデータセットの基になっているAdobe Experience Platformスキーマを表示します。 |
 | [!UICONTROL データセット ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 
-### 接続を編集
+## 接続を編集
 
 管理者は接続を編集できます。接続を選択して「[!UICONTROL 接続を編集]」をクリックし、ダイアログに移動します。ここでは、次の操作を実行できます。
 
