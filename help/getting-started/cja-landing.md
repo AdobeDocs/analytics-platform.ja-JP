@@ -2,10 +2,10 @@
 title: Customer Journey Analytics ガイド
 description: Customer Journey Analytics のランディングページ
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,10 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 強化されたデータビュー機能に関する新しいドキュメント </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=ja#cja-usecases"> Adobe Experience Platform への Google Analytics データの取り込みに関する新しいドキュメント </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=ja#cja-usecases"> CJA での Google Analytics データの分析に関する新しいドキュメント </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> 接続管理機能の強化に関するドキュメント </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> データ表示機能の強化に関するドキュメント </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=ja#cja-usecases"> Adobe Experience PlatformへのGoogle Analyticsデータの取り込みに関するドキュメント </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=ja#cja-usecases"> CJA でのGoogle Analyticsデータの分析に関するドキュメント </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#cja-connections"> クロスチャネル分析（Customer Journey Analytics での ID のステッチ） </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions">ユーザー権限の要件を更新</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=ja#cja-usecases"> オブジェクトの配列の使用 </a> </li>
