@@ -2,10 +2,10 @@
 description: パネルは、テーブルとビジュアライゼーションのコレクションです。
 title: パネルの概要
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
+source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 60%
+source-wordcount: '851'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 60%
 
 ## パネルタイプ
 
-Analysis Workspace では、次のパネルタイプを利用できます。
+Analysis Workspaceでは、次のパネルタイプを [!UICONTROL Customer Journey Analytics]:
 
 | パネル名 | 説明 |
 | --- | --- |
@@ -38,7 +38,7 @@ Analysis Workspace では、次のパネルタイプを利用できます。
 
 ![](assets/panel-calendar.png)
 
-パネルカレンダーの詳細設定で、分レベルの日付範囲を適用できます。 何日もにわたる日付範囲でレポートを作成する場合、開始時間は最初の日に適用され、終了時間は範囲内の最終日に適用されます。
+パネルカレンダーの詳細設定で、分レベルの日付範囲を適用できます。 日付範囲が何日にもわたるレポートを作成する場合、開始時間は最初の日、終了時間は範囲内の最終日に適用されます。
 
 ## ドロップゾーン {#dropzone}
 
