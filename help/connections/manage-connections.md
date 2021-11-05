@@ -3,9 +3,9 @@ title: 接続の管理
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6d1907d676ea01b3956d5ce2ce76d43d7a8f0f1d
+source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1866'
 ht-degree: 83%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 83%
 * 接続名を変更する。
 * 接続からデータビューを作成する。
 
-![接続の管理](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | 設定 | 説明 |
 | --- | --- |
@@ -85,7 +85,7 @@ ht-degree: 83%
 
 以下に、ウィジェットと設定の説明を示します。
 
-![接続の詳細の表示](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | ウィジェットと設定 | 説明 |
 | --- | --- |
