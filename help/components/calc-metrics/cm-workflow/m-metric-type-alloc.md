@@ -2,7 +2,7 @@
 description: '詳細 '
 title: 指標タイプとアトリビューション
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
 ht-degree: 100%
 
