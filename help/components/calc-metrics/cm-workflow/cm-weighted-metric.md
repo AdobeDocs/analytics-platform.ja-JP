@@ -2,7 +2,7 @@
 description: フィルター適用済み指標と重み付け指標の例を示します。
 title: フィルター適用済み指標と重み付け指標
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
 ht-degree: 100%
 
