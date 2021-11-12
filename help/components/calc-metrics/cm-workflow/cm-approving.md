@@ -2,7 +2,7 @@
 description: 計算指標マネージャ内では、様々なレベルのアプリケーションや特定の部門またはグループに対応した指標の承認を含むワークフローを設定できます。
 title: 計算指標の承認
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
 ht-degree: 100%
 
