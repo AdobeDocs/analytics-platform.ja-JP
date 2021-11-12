@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -120,7 +120,7 @@ ht-degree: 80%
 | [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
-| [!UICONTROL 新しいデータをインポート] | （オン/オフ）新しいデータバッチを履歴（バックフィル）データに追加するかどうかを示します。 |
+| [!UICONTROL 新しいデータをインポート] | （オン／オフ）新しいデータバッチを履歴データに追加（バックフィル）するかどうかを示します。 |
 | [!UICONTROL データをバックフィル] | バックフィル（履歴）データは、[!UICONTROL 待機中]、[!UICONTROL 処理中]（進捗の割合が示されます）、[!UICONTROL 完了]の 3 つの状態でトラッキングされます。 |
 | [!UICONTROL 作成者] | 接続を作成する人物の名前を表示します。 |
 | [!UICONTROL 最終変更日] | 接続に対する最後の変更の日時を表示します。 |
@@ -130,7 +130,7 @@ ht-degree: 80%
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択したユーザー ID です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際に結合するには、データセット間で同じユーザー ID を使用する必要があります。 |
+| [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択したユーザー ID です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際に結合するには、データセット全体で同じユーザー ID を使用する必要があります。 |
 | [!UICONTROL 使用可能なレコード] | カレンダーで選択した特定の期間に、このデータセットに対して取り込まれた行の合計数を表します。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3.-customer-journey-analytics-へのデータの取り込み)が発生します。 |
 | [!UICONTROL 追加されたレコード] | 選択した期間に追加された行数を示します。 **メモ**：**[!UICONTROL 追加されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
 | [!UICONTROL 削除されたレコード] | 選択した期間に削除されたレコード数を示します。 **メモ**：**[!UICONTROL 削除されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
