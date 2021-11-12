@@ -3,9 +3,9 @@ title: Analysis Workspace でのユーザー環境設定の設定方法
 description: ユーザー向けに一般環境設定とプロジェクト環境設定を設定できます。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 ## プロジェクトの環境設定
 
-プロジェクト環境設定が Analysis Workspace で作成された新規プロジェクトおよび新規パネルに適用されます。環境設定は、Workspace／プロジェクト／プロジェクト情報および設定で、プロジェクトごとに管理することもできます。
+プロジェクト環境設定が Analysis Workspace で作成された新規プロジェクトおよび新規パネルに適用されます。環境設定は、ワークスペース／プロジェクト／プロジェクト情報および設定で、プロジェクトごとに管理することもできます。
 
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
@@ -41,11 +41,11 @@ ht-degree: 82%
 
 ## [!UICONTROL ダークテーマ]
 
-Customer Journey Analyticsユーザーインターフェイスの背景を暗くしたい場合は、 [!UICONTROL ダークテーマ].
+Customer Journey Analytics ユーザーインターフェイスの背景を暗くする場合は、[!UICONTROL ダークテーマ]に切り替えることができます。
 
-1. 右上のExperience Cloudユーザーアイコンをクリックします。
+1. 右上の Experience Cloud ユーザーアイコンをクリックします。
 
    ![ダークテーマ](assets/dark-theme.png)
 
-1. を **[!UICONTROL ダークテーマ]** 右に切り替えます。
+1. **[!UICONTROL ダークテーマ]**&#x200B;トグルを右に切り替えます。
 
