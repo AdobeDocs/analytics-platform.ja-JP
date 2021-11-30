@@ -2,8 +2,9 @@
 title: CJA ドキュメントのアップデート
 description: 2019年12月以降の Customer Journey Analytics ドキュメントセットのアップデートについて説明します。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
 
@@ -22,7 +23,7 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 | 2021年10月 | [!UICONTROL 接続][データ保持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)のためのローリングウィンドウのドキュメント。<p>**メモ：この設定を実装するには、カスタマーケアまたはアドビのアカウントマネージャーにお問い合わせください。CJA UI からは、まだ使用できません。** |
 | 2021年9月 | [指標の重複排除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=ja)ドキュメント |
 | 2021年9月 | [レポートでの夏時間のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar) |
-| 2021年9月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar)ドキュメント |
+| 2021年9月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar)ドキュメント |
 | 2021年9月 | [ブール値フィールド](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=ja)ドキュメント |
 | 2021年9月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[[!UICONTROL コンポーネント] 設定の概要](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL アトリビューション] コンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 動作] コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 形式] コンポーネントの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 含む／除外] コンポーネントの設定](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複排除] コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値なし] コンポーネントの設定](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 永続性] コンポーネントの設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値のバケット化] コンポーネントの設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021年9月 | CJA での ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6.-considerations-when-merging-report-suites-in-cja)レポートスイートの結合の意味[ に関する新しい節を追加しました。 |

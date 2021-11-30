@@ -2,8 +2,9 @@
 title: （B2B）ルックアップデータセットとしてアカウントレベルのデータを追加
 description: アカウントベースのデータをルックアップデータセットとして CJA に追加する方法を学びます。
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
 

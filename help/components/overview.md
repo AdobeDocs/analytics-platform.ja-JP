@@ -1,18 +1,18 @@
 ---
-title: コンポーネントの概要
+title: Customer Journey Analytics内のコンポーネント
 description: CJA オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 93%
 
 ---
 
 # コンポーネントの概要
 
-コンポーネントは、レポートで使用したり、レポート機能を補完したりできる、Customer Journey Analytics の機能です。これらのコンポーネントは、次の手順で管理できます。
+コンポーネントは、Customer Journey Analyticsの機能のうち、レポートで使用したり、レポート機能を補完したりできます。 これらのコンポーネントは、次の手順で管理できます。
 
 1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
 2. ヘッダーメニューで[!UICONTROL コンポーネント]／[!UICONTROL コンポーネント]に移動します。

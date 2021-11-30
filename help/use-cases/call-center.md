@@ -2,8 +2,9 @@
 title: コールセンターデータと web データの読み込み
 description: コールセンターと web サイトのデータをリンクさせるデータセットの作成方法について説明します。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 

@@ -1,10 +1,11 @@
 ---
 title: Journey IQ
 description: Adobe Analytics の一部である Journey IQ を構成する機能について説明します。
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Journey IQ は、使いやすく完全にカスタマイズ可能なビジュアライゼーションと設定を提供し、顧客の体験をより深く理解する一連の機能です。チャネルをまたいでも、カスタマージャーニーの各タッチポイントを測定できます。これらの機能を使用して、顧客の関心を向け直し、ロイヤルティを維持し、それらの顧客のエクスペリエンスをパーソナライズする方法についての理解を深めることができます。
 

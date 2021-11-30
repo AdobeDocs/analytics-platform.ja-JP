@@ -2,9 +2,9 @@
 title: データセットへのグローバル検索の追加
 description: グローバル検索を使用して、Customer Journey Analytics の便利なディメンションでレポートを拡張します。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
-translation-type: ht
-source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 100%
 

@@ -2,8 +2,9 @@
 title: 組み合わせイベントデータセット
 description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
-source-git-commit: dd68a85b1398fa99e6ee5fff1c356a005ebb9482
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 

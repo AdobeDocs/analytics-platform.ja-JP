@@ -1,14 +1,14 @@
 ---
-title: 接続サイズの予測
+title: CJA 接続のサイズの予測方法
 description: Customer Journey Analytics の現在の使用状況を報告する
-translation-type: ht
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: ht
-source-wordcount: '612'
-ht-degree: 100%
+exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
-
 
 # 接続サイズの予測
 

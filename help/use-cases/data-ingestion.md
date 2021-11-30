@@ -2,8 +2,9 @@
 title: Customer Journey Analytics のデータ取り込みオプション
 description: Customer Journey Analytics にデータを取り込む様々な方法について
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: fa0033202650f17acd275f1050565285c1464f53
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 100%
 
@@ -29,7 +30,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) は、Adobe Experience Cloud のお客様が Experience Cloud の様々なサービスを操作できるようにする、クライアントサイド JavaScript ライブラリです。
 
 1. [AEP Web SDK 拡張機能を Launchで設定し](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja)、Web プロパティから Adobe Experience Platform Edge ネットワーク経由で Adobe Experience Cloud にデータを送信します。
-1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
+1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
 
 ## バッチ取得とストリーミング取得によるデータの取得
 
@@ -38,12 +39,12 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 ### バッチ取得
 
 1. [バッチ取得](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=ja#batch)を設定してデータをバッチファイルとして Adobe Experience Platform に取得することができます。CRM システムのフラットファイルのプロファイルデータ（Parquet ファイルなど）、または Experience Data Model（XDM）レジストリの既知のスキーマに適合するデータを取り込むことができます。
-1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
+1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
 
 ### ストリーミング取得
 
 1. [ストリーミング取得](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ja#streaming)を設定して、クライアントおよびサーバーサイドのデバイスから、リアルタイムで Experience Platform にデータを送信できます。
-1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
+1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
 
 ## Google Analytics データを取り込んで Customer Journey Analytics で分析する
 
@@ -53,4 +54,4 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 
 1. [一括データ取得 API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) を使用して、サーバーサイドの収集データを Adobe Analytics に送信します。イベントデータを含む CSV 形式のファイルを送信できます。
 1. [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成して、このコンシューマデータを Adobe Experience Platform に取得します。
-1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
+1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
