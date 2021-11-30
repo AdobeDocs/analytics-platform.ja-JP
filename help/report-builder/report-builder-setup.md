@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
-source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
-workflow-type: ht
+source-git-commit: fb4c8cf2d5dec5b49ecc81494a888fb6090379d6
+workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Customer Journey Analytics の Report Builder は、次のオペレーティン�
 
    すべての Windows デスクトップ Excel ユーザーは、アドインを使用するために Microsoft Edge Webview2 をインストールする必要があります。コントローラーをインストールするには：
 
-   1. <http://aka.ms/webview2installer> にアクセスします。
+   1. <https://aka.ms/webview2installer> にアクセスします。
    1. Evergreen スタンドアロンインストーラーを選択してダウンロードします。
    1. インストールプロンプトに従います。
 
