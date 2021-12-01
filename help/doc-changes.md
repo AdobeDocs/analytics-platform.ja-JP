@@ -3,10 +3,10 @@ title: CJA ドキュメントのアップデート
 description: 2019年12月以降の Customer Journey Analytics ドキュメントセットのアップデートについて説明します。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 | 2021年3月 | ワークスペースの [ユーザーの環境設定](/help/analysis-workspace/user-preferences.md) に関する新しいトピックを追加しました。 |
 | 2021年2月 | ](/help/use-cases/marketing-channels.md)Adobe Experience Platform でのマーケティングチャネルディメンション[ の使用に関する新しいトピックを追加しました。 |
 | 2021年2月 | 新しい [CJA API](https://www.adobe.io/cja-apis/docs/) ドキュメントを公開しました。 |
-| 2021年1月 | [データセットへのグローバル検索の追加](/help/use-cases/global-lookups.md)に関する新しいトピックを追加しました。 |
+| 2021年1月 | に関する新しいトピックです。 [データセットへの標準ルックアップの追加](/help/connections/standard-lookups.md). |
 | 2020年11月13日（PT） | [クロスチャネル分析](/help/connections/cca/overview.md) に関する新しいトピックを追加しました。データセットのユーザー ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
 | 2020年11月13日（PT） | [コールセンターと web データの読み込み](/help/use-cases/call-center.md) に関する新しい使用例を追加しました。 |
 | 2020年11月11日（PT） | [接続サイズの予測](/help/connections/estimate-connection-size.md) に関するトピックを追加しました。 |

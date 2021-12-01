@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
-workflow-type: ht
-source-wordcount: '560'
-ht-degree: 100%
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 100%
    + [接続の管理](connections/manage-connections.md)
    + [接続サイズの予測](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
+   + [標準参照](connections/standard-lookups.md)
    + クロスチャネル分析 {#cca}
       + [クロスチャネル分析の概要](connections/cca/overview.md)
       + [再生の仕組み](connections/cca/replay.md)
@@ -191,7 +192,6 @@ ht-degree: 100%
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
-   + [データセットへのグローバル検索の追加](use-cases/global-lookups.md)
    + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
    + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
 + Analytics ダッシュボード {#cja-dashboards}
