@@ -3,14 +3,17 @@ title: データセットへの標準検索の追加
 description: 標準の検索を使用して、Customer Journey Analyticsの便利なディメンションでレポートを拡張します。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
+source-git-commit: 067502a0d69bd0b085ecb5e6cbd3ae062f33daef
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 31%
+source-wordcount: '357'
+ht-degree: 29%
 
 ---
 
 # データセットへの標準検索の追加
+
+>[!IMPORTANT]
+>標準検索は、CJA の Analytics Data Connector データソースでのみ使用できます。 これらは、 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) またはExperience Platformデータ収集 API
 
 標準の検索 (Adobeが提供する検索とも呼ばれます ) は、Customer Journey Analyticsが、自分では役に立たないが他のデータと結合する場合に役立つ、一部のディメンションや属性に関するレポートを作成できる機能を強化します。 例としては、モバイルデバイスの属性、OS ディメンションとブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準参照」は、参照データセットに似ています。 標準の参照は、組織全体でExperience Cloud可能です。 グローバル検索は、特定の XDM スキーマフィールドを含んだすべてのイベントデータセットに自動的に適用されます（具体的なフィールドについては、以下を参照してください）。分類するスキーマの各場所に、標準の検索データセットがAdobeされます。
 

@@ -3,10 +3,10 @@ title: Customer Journey Analytics の概要
 description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
-source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
+source-git-commit: 3389515bd18903eda14af1670ff7d1ab080c9db2
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,12 +61,11 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
    * 接続またはデータ表示の作成／更新／削除をおこなう
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新／削除を行います。
    * ワークスペースプロジェクトをすべてのユーザーと共有する
-* 接続の作成、更新、削除を行うのに、Customer Journey Analytics内だけでは製品管理者になることは十分ではありません。 Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
+* 接続の作成、更新、削除をおこなうためには、Customer Journey Analytics 単体の製品管理者であることは十分ではありません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
    * スキーマの管理
+   * ID 名前空間の表示
    * データセットの表示
-   * データセットの管理
-   * ソースの管理
 
 Experience Platform 権限について詳しくは、「[Adobe Experience Platform のアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)」を参照してください。
 
