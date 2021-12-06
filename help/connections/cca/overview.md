@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,13 +58,13 @@ ht-degree: 96%
 組織がすべての前提条件を満たし、その制限事項を理解したら、次の手順に従って CJA での使用を開始できます。
 
 1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)と[データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)に関するページを参照してください。
-1. 次の情報については、担当のAdobeテクニカルアカウントマネージャーにお問い合わせください。
+1. 次の情報については、アドビテクニカルアカウントマネージャーにお問い合わせください。
    * クロスチャネル分析を有効にするリクエスト
    * キーを変更するデータセットのデータセット ID
    * 目的のデータセットの永続 ID の列名（各行に表示される識別情報）
    * 目的のデータセットの一時的な ID の列名（データセット間のユーザー識別情報リンク）
    * [再生](replay.md)の頻度とルックバックの期間。オプションとしては、週に 1 回の再生（7 日間のルックバックウィンドウ）や、毎日の再生（1 日間のルックバックウィンドウ）があります。
-1. Adobeのテクニカルアカウントマネージャーは、Adobeエンジニアリングと連携し、リクエストの受信時にクロスチャネル分析を有効にします。 有効にすると、新規の個人 ID 列を含んだ新しいキー再設定済みデータセットが Adobe Experience Platform に表示されます。 Adobeのテクニカルアカウントマネージャーが、新しいデータセット ID とユーザー ID の列名を提供できます。
+1. アドビテクニカルアカウントマネージャーはリクエストを受け取ったら、リクエストを受け取ったら、アドビエンジニアリングと連携して、クロスチャネル分析を有効にします。 有効にすると、新規のユーザー ID 列を含んだ新しいキー再設定済みデータセットが Adobe Experience Platform に表示されます。 アドビテクニカルアカウントマネージャーは、新しいデータセット ID とユーザー ID の列名を提供できます。
 1. 最初にオンにした場合、アドビは、前月の初め（最大 60 日前）まで遡るステッチデータのバックフィルを提供します。 このバックフィルをおこなうには、過去の関連付けられていないデータに一時的な ID が存在する必要があります。　
 1. 新しく生成されたデータセットと、接続に含める他のデータセットを使用して、CJA で[接続を作成](../create-connection.md)します。各データセットに適切なユーザー ID を選択します。
 1. 接続に基づいて、[データビューを作成](/help/data-views/create-dataview.md)します。

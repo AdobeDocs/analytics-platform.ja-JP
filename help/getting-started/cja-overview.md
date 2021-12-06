@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 97%
 
 Customer Journey Analytics は、Adobe Experience Platform のデータを使用して Analysis Workspace を活用できる Analytics の機能です。数年分のデータを分類、フィルタリング、クエリ、視覚化でき、あらゆる種類のデータスキーマやデータの種類を保持できる Platform の機能と組み合わせることができます。**Experience Data Model（XDM）**&#x200B;を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。**エクスペリエンスクエリサービス**：SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
 
-CJA の概要アーキテクチャを次に示します。
+CJA アーキテクチャの概要を次に示します。
 
-![アーキテクチャ](assets/cja-architecture.png)
+![アークテクチャ](assets/cja-architecture.png)
 
 ## CJA と従来の Adobe Analytics の比較
 
@@ -42,9 +42,9 @@ Customer Journey Analytics では、次のことが可能です。
 * **ジャーニーのコンテキストと照らし合わせて顧客を把握する**：複数のチャネルにまたがるデータを、順番に表示および分析できます。コールセンター、POS システム、オンラインプロパティのデータを、1 つのレポートビューに組み合わせることができます。
 * **誰でもインサイトを利用可能**：データアクセスを民主化し、多くの人がデータに基づいたインサイトを活用してよりビジネス上の意思決定おこなえるようにします。顧客体験のあらゆる側面を取り扱う組織に所属するすべてのメンバーが、より完全なデータに基づいて、実際の意思決定を迅速に下すことができます。
 * **データアナリスト向けデータサイエンスの機能を活用**：Customer Journey Analytics を使用すると、専門家でなくてもデータサイエンスを活用して、深いインサイトと分析を解き放つことができます。
-* **アドホックレポートを使用してデータセットの視覚化や操作をおこなう**：Workspace では、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
-* **Web 以外の表示データ**：Workspace は、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
-* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、Workspace への読み込みをおこないます。Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みをおこないます。
+* **アドホックレポートを使用してデータセットの視覚化や操作をおこなう**：ワークスペースでは、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
+* **Web 以外の表示データ**：ワークスペースは、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
+* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、ワークスペースへの読み込みをおこないます。Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みをおこないます。
 
 ## 前提条件
 
@@ -60,7 +60,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 * Customer Journey Analytics にアクセスしたり接続したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で **Customer Journey Analytics 製品**&#x200B;に管理者として追加される必要があります。 製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除をおこなう
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新／削除を行います。
-   * Workspace プロジェクトをすべてのユーザーと共有する
+   * ワークスペースプロジェクトをすべてのユーザーと共有する
 * 接続の作成、更新、削除を行うのに、Customer Journey Analytics内だけでは製品管理者になることは十分ではありません。 Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
    * スキーマの管理
