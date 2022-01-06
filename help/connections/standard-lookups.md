@@ -1,29 +1,42 @@
 ---
 title: データセットへの標準検索の追加
-description: 標準の検索を使用して、Customer Journey Analyticsの便利なディメンションでレポートを拡張します。
+description: 標準検索を使用して、Customer Journey Analytics の便利なディメンションでのレポートを拡張します。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
+source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 29%
+source-wordcount: '359'
+ht-degree: 89%
 
 ---
 
 # データセットへの標準検索の追加
 
 >[!IMPORTANT]
->標準検索は、CJA の Analytics Data Connector データソースでのみ使用できます。 これらは、標準のAdobe Analytics実装でのみ使用できます。または、 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、またはExperience Platformデータ収集 API。
+>標準検索は、CJA の Analytics Data Connector データソースでのみ使用できます。 これらは、標準のAdobe Analytics実装で使用することも、 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、またはExperience Platformデータ収集 API。
 
-標準の検索 (Adobeが提供する検索とも呼ばれます ) は、Customer Journey Analyticsが、自分では役に立たないが他のデータと結合する場合に役立つ、一部のディメンションや属性に関するレポートを作成できる機能を強化します。 例としては、モバイルデバイスの属性、OS ディメンションとブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準参照」は、参照データセットに似ています。 標準の参照は、組織全体でExperience Cloud可能です。 グローバル検索は、特定の XDM スキーマフィールドを含んだすべてのイベントデータセットに自動的に適用されます（具体的なフィールドについては、以下を参照してください）。分類するスキーマの各場所に、標準の検索データセットがAdobeされます。
+標準検索（アドビ提供の検索とも呼ばれる）は、Customer Journey Analytics の機能を強化して、単体では役に立たなくても、他のデータと結合すると役立つディメンションや属性についてレポートします。例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準検索」は検索データセットに似ています。標準検索は Experience Cloud 組織をまたいで適用できます。これらは、特定の XDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（特定のフィールドについては、以下を参照してください）。標準の検索データセットは、アドビが分類しているスキーマの場所ごとに存在します。
 
-従来の Adobe Analytics では、これらのディメンションは単独で表示されます。一方、CJA では、データビューを作成する際に、これらのディメンションを積極的に含める必要があります。接続ワークフローで、標準検索のキーを持つデータセットとしてフラグ付けされたデータセットを選択します。 データビュー UI は、レポートで使用できるすべての標準参照ディメンションを自動的に含めることを認識します。 すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。これらは、顧客に関連付けられた地域固有の組織に保存されます。
+従来の Adobe Analytics では、これらのディメンションは単独で表示されますが、CJA では、データビューを作成するときにこれらのディメンションを積極的に含める必要があります。接続ワークフローでは、標準検索用のキーを持つデータセットとしてフラグが付けられたデータセットを選択します。データビュー UI は、すべての標準検索ディメンションを自動的に認識し、レポートに使用可能として含めます。すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。これらは、顧客に関連付けられた地域固有の組織に保存されます。
 
-## AdobeData Connector データセットで標準検索を使用する
+## Adobe Data Connector データセットでの標準検索の使用
 
-標準参照データセットは、レポート時に自動的に適用されます。 Analytics Data Connector を使用し、Adobeが標準参照を提供するディメンションを取り込む場合、この標準参照が自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、それに対して標準検索を適用できます。
+標準検索データセットは、レポート時に自動的に適用されます。Analytics Data Connector を使用して、アドビが標準検索を提供しているディメンションを取り込むと、この標準検索が自動的に適用されます。イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
 
-### 使用可能な標準ルックアップフィールド
+<!--
+### Specific IDs that need to be populated
+
+The following IDs need to be populated in the specific XDM mixins for this functionality to work:
+
+* Environment Details Mixin – device/typeID value populated - Must match Device Atlas IDs and will populate device data.
+* Adobe Analytics ExperienceEvent Template Mixin or Adobe Analytics ExperienceEvent Full Extension Mixin with analytics/environment/browserIDStr and analytics/environment/operatingSystemIDStr. Both must match the Adobe IDs and  populate browser and OS data, respectively.
+
+You need these mixins with the three IDs populated (device/typeID, environment/browserIDStr, and environment/operatingSystemIDStr). The lookup dimensions will then be pulled automatically by CJA and will be available in the Data View.
+
+The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
+-->
+
+### 使用可能な標準検索フィールド
 
 * `browser`
    * `browser`、`group_id`、`id`
@@ -56,12 +69,12 @@ ht-degree: 29%
 * `mobile_screen_width`
 * `mobile_video_support - multi`
 
-## 標準ルックアップディメンションのレポート
+## 標準検索ディメンションに関するレポート
 
-標準参照ディメンションに関するレポートを作成するには、Customer Journey Analyticsでデータビューを作成する際にディメンションを追加する必要があります。
+標準検索ディメンションについてレポートするには、Customer Journey Analytics でデータビューを作成する際にそれらのディメンションを追加する必要があります。
 
 ![](assets/global-lookup.png)
 
-これで、Workspace で検索データを確認できます。
+そうすると、ワークスペースで検索データを確認できるようになります。
 
 ![](assets/gl-reporting.png)
