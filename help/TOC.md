@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 99%
    + [接続の管理](connections/manage-connections.md)
    + [接続サイズの予測](connections/estimate-connection-size.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
-   + [標準参照](connections/standard-lookups.md)
+   + [標準検索](connections/standard-lookups.md)
    + クロスチャネル分析 {#cca}
       + [クロスチャネル分析の概要](connections/cca/overview.md)
       + [再生の仕組み](connections/cca/replay.md)
