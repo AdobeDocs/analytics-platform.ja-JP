@@ -4,7 +4,7 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
    ![](assets/integers.png)
 
-1. これで、「[!UICONTROL 値のグループ化]」を追加して、このディメンションをグループ化してレポートに表示できます。（グループ化を使用しない場合、このディメンションの各インスタンスは Workspace レポートに行項目として表示されます）。
+1. これで、「[!UICONTROL 値のグループ化]」を追加して、このディメンションをグループ化してレポートに表示できます。（グループ化を使用しない場合、このディメンションの各インスタンスはワークスペースレポートに行項目として表示されます）。
 
    ![](assets/bucketing.png)
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 数値ディメンションを使用して、[!UICONTROL フロー]ビジュアライゼーションに「指標」を取り込むことができます。
 
 1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
-2. Workspace レポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
+2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
 
 ![](assets/flow.png)
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 例えば、データビューの含める／除外する機能を使用して、50 ドル以上の売り上げをもたらした製品にのみ焦点を当てます。そのため、1 件の注文に 50 ドルの製品購入と 25 ドルの製品購入が含まれる場合、注文全体ではなく、25 ドルの製品購入のみを除外します。
 
-1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
 a.「[!UICONTROL 形式]」で、「[!UICONTROL 通貨]」を選択します。
 b.「[!UICONTROL 通貨]」で、「USD」を選択します。
