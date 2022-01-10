@@ -4,7 +4,7 @@ description: 指標のデフォルトのアトリビューションを設定で�
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
