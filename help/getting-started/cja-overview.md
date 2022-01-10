@@ -67,7 +67,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
    * ID 名前空間の表示
    * データセットの表示
 
-Experience Platform 権限について詳しくは、「[Adobe Experience Platform のアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)」を参照してください。
+Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)を参照してください。
 
 >[!NOTE]
 >
