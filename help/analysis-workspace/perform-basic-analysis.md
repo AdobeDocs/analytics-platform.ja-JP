@@ -4,9 +4,9 @@ description: 基本的なビジュアライゼーションを使用して Custom
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 85%
 
 接続とデータビューを作成した後、Analysis Workspace の機能と柔軟性を使用して、取得したデータを分析します。ディメンションや指標を自由に試してドラッグし、ディメンションや指標のアトリビューション設定、フレンドリ名、タイムゾーン、セッション設定などを変更できます。
 
-Workspace の基本的なビジュアライゼーションの例を以下に示します。例えば、次のことができます。
+ワークスペースの基本的なビジュアライゼーションの例を以下に示します。例えば、次のことができます。
 
 * 最も多くのイベント、セッションおよび訪問者を示すデータソースのランクレポートを作成する。
 
 * 2 つのデータソースを時間の経過と共に比較した、オンラインの売上高と実店舗の売上高のトレンドレポートを作成する。
 
-* 広告インプレッションデータ、Customer Journey Analyticsデータ、電子メールデータ、POS データ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを表現する。
+* 広告インプレッションデータ、Customer Journey Analytics データ、メールデータ、POS データ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを示します。
 
 ![](assets/cja-basic-analysis.png)
 
