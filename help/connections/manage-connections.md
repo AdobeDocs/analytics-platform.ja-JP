@@ -1,13 +1,13 @@
 ---
-title: 接続で接続を管理するCustomer Journey Analytics
+title: Customer Journey Analytics での接続の管理方法
 description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1948'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 * これにより、設定ミスに起因する&#x200B;**データの相違を識別**&#x200B;できます。欠落している行があるか。ある場合、欠落している行とその理由は何か。接続の設定の誤りが原因で CJA のデータが欠落したのか。
 
 >[!NOTE]
-> この機能は、2021年9月20日（PT）に一般公開される予定です。
+> この機能は、2021 年 9 月 20 日（PT）に一般公開される予定です。
 
 ## 接続マネージャー {#connections-manager}
 
@@ -84,7 +84,7 @@ ht-degree: 99%
 * データをレポートに使用できるタイミングを確認します。
 
 >[!IMPORTANT]
->2021年8月13日（PT）より前に取り込まれたデータは、この [!UICONTROL 接続] ダイアログには反映されません。
+>2021 年 8 月 13 日（PT）より前に取り込まれたデータは、この [!UICONTROL 接続] ダイアログには反映されません。
 
 以下に、ウィジェットと設定の説明を示します。
 
@@ -115,10 +115,10 @@ ht-degree: 99%
 | --- | --- |
 | [!UICONTROL 更新] | 接続を更新して、最近追加したレコードを反映させます。 |
 | [!UICONTROL 削除] | この接続を削除します。 |
-| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja) |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前を表示します。 |
 | [!UICONTROL 接続の説明] | この接続の目的についての詳細な説明を表示します。 |
-| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
+| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
 | [!UICONTROL 新しいデータをインポート] | （オン／オフ）新しいデータバッチを履歴データに追加（バックフィル）するかどうかを示します。 |
@@ -138,7 +138,7 @@ ht-degree: 99%
 | [!UICONTROL 追加されたバッチ] | このデータセットに追加されたデータバッチの数を示します。 |
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数をし示します。<p>レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID の欠落または無効なユーザー ID などがあります。10 分ごとに更新されます。<p>無効なユーザー ID（「未定義」、「00000000」、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL 人物 ID] の文字と数字の任意の組み合わせ）を、特定のユーザーまたは人物に関連付けることはできません。これらはシステムに取り込むことができず、取り込みやレポートでエラーが発生しやすくなります。無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>[クロスチャネル分析](/help/connections/cca/overview.md) を使用して、未定義またはすべてがゼロのユーザー ID の代わりに有効なユーザー ID を生成する。</li><li>ユーザー ID を空白にする。この ID は取り込み時にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul><p>**メモ**：**[!UICONTROL スキップされたレコード]** のデータは、現時点ではイベントデータのみを含み、プロファイルまたはルックアップデータは含まれません。 |
 | [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時を示します。 |
-| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットのベースとなる Adobe Experience Platform スキーマを示します。 |
 | [!UICONTROL データセット ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 
