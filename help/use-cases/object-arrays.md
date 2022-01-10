@@ -4,7 +4,7 @@ description: CJA がデータ階層をどのようにレポートするかを理
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 
 ### 同じヒットの例（レポートの動作）
 
-上記のヒットのみを使用し、次のテーブルでは、いくつかのディメンションと指標の組み合わせを使用した Workspace レポートを示しています。
+上記のヒットのみを使用し、次のテーブルでは、いくつかのディメンションと指標の組み合わせを使用したワークスペースレポートを示しています。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
