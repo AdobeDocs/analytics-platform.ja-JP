@@ -4,7 +4,7 @@ description: Customer Journey Analytics でプラットフォームデータセ�
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 接続の作成
 
-接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL Workspace] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL Workspace] のデータセット間で接続を確立する必要があります。
+接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL ワークスペース] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL ワークスペース] のデータセット間で接続を確立する必要があります。
 
 ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ja)をクリックしてください。
 
@@ -121,7 +121,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
    | [!UICONTROL 名前接続] | 接続にわかりやすい名前を付けます。名前を指定しないと接続を保存できません。 |
    | [!UICONTROL 説明] | この接続を他の接続と区別するための詳細を追加します。 |
    | [!UICONTROL データセット] | この接続に含まれるデータセット。 |
-   | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL Workspace] へと送られるようにする場合は、このオプションを選択します。 |
+   | [!UICONTROL 今日から、この接続のデータセットについて、すべての新しいデータを自動的にインポートします。] | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的に [!UICONTROL ワークスペース] へと送られるようにする場合は、このオプションを選択します。 |
    | [!UICONTROL 既存のすべてのデータをインポート] | このオプションを選択して接続を保存すると、この接続にあるすべてのデータセットについて、[!DNL Experience Platform] の既存（履歴）データがすべてインポートされるかバックフィルされます。今後、この保存済みの接続に追加された新しいデータセットの既存の履歴データもすべて自動的にインポートされるようになります。このあとの[履歴データのバックフィル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#backfill-historical-data)も参照してください。<br>**この接続を保存すると、この設定は変更できなくなります。** |
    | [!UICONTROL 毎日のイベントの平均数] | 接続にあるすべてのデータセットについて、インポートする毎日のイベント（新しいデータ&#x200B;**と**&#x200B;バックフィルデータ）の平均数を指定する必要があります。ドロップダウンメニューから 1 つのオプションを選択します。これにより、このデータに十分な領域を割り当てることができます。<br>会社で毎日インポートされるイベントの平均数が不明な場合は、[Adobe Experience Platform クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)で簡単な SQL クエリを実行して調べることができます。<br>以下の「毎日のイベントの平均数を計算する」を参照してください。 |
 
@@ -141,7 +141,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
