@@ -4,7 +4,7 @@ description: 'Customer Journey Analytics（CJA）を利用して Google Analytic
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
@@ -154,4 +154,4 @@ Adobe Experience Platform が Google Analytics のライブデータの受信を
 
 * Google Analytics データを含んだ接続に基づいて、[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#cja-dataviews)を作成します。
 
-* [Workspace で驚くべき分析](/help/use-cases/ga-to-cja-reporting.md)をいくつか行います。
+* [ワークスペースで驚くべき分析](/help/use-cases/ga-to-cja-reporting.md)をいくつか行います。
