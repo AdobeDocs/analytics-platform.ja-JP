@@ -4,7 +4,7 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '588'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 | 設定 | 説明 |
 | --- | --- |
 | [!UICONTROL 永続化を設定] | ディメンションの永続性を有効にします。永続性が有効になっていない場合、ディメンションは同じイベント内に存在する指標にのみ関連付けられます。この設定は、デフォルトで無効になっています。 |
-| [!UICONTROL 配分] | ディメンションで永続性のために使用する配分モデルを指定できます。オプションは、「[!UICONTROL 最新の]」、「[!UICONTROL 元の]」、「[!UICONTROL インスタンス]」、「[!UICONTROL すべて]」です。2021年10月28日をもって、最大 90 日間のルックバックウィンドウが[!UICONTROL 配分]設定に追加されます。 |
+| [!UICONTROL 配分] | ディメンションで永続性のために使用する配分モデルを指定できます。オプションは、「[!UICONTROL 最新の]」、「[!UICONTROL 元の]」、「[!UICONTROL インスタンス]」、「[!UICONTROL すべて]」です。2021 年 10 月 28 日をもって、最大 90 日間のルックバックウィンドウが[!UICONTROL 配分]設定に追加されます。 |
 | [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定できます。オプションは、「[!UICONTROL セッション]」（デフォルト）、「[!UICONTROL 個人]」、「[!UICONTROL カスタム時間]」、「[!UICONTROL 指標]」です。場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索キーワードや他のマーチャンダイジングの使用例など）。設定できる最大有効期限は 90 日です。配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
 
 ## [!UICONTROL 配分] の設定
