@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ ht-degree: 100%
 | tm-1d | 先月の最終日 |
 | td-52w | 52 週間前の同じ曜日 |
 | tm-11m-1d | 昨年同月の最終日 |
-| „2020-09-06“ | 2020年9月9日（PT） |
+| „2020-09-06“ | 2020 年 9 月 9 日（PT） |
 
 ## セルからの日付範囲
 
