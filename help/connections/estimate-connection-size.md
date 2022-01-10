@@ -1,12 +1,12 @@
 ---
-title: CJA 接続のサイズの予測方法
+title: CJA 接続のサイズの見積り方法
 description: Customer Journey Analytics の現在の使用状況を報告する
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 99%
 [!UICONTROL Customer Journey Analytics] で実際に取り込まれるイベントの数は、接続設定によって異なります。また、誤ったユーザー ID を選択した場合や、データセット内の一部の行でこの ID を使用できない場合、[!UICONTROL Customer Journey Analytics] ではそれらの行が無視されます。取り込まれるイベントの実際の行を確認するには、次の手順を実行します。
 
 1. 接続を保存したら、フィルターを使用せずに、同じ接続のデータビューを作成します。
-1. Workspace プロジェクトを作成し、正しいデータビューを選択します。フリーフォームテーブルを作成し、**[!UICONTROL 年]**&#x200B;ディメンションを持つ&#x200B;**[!UICONTROL イベント]**&#x200B;指標をドラッグ＆ドロップします。日付選択カレンダーから十分な日付範囲を選択し、接続のすべてのデータをカプセル化します。これで、[!UICONTROL Customer Journey Analytics] に取り込まれるイベントの数を確認できます。
+1. ワークスペースプロジェクトを作成し、正しいデータビューを選択します。フリーフォームテーブルを作成し、**[!UICONTROL 年]**&#x200B;ディメンションを持つ&#x200B;**[!UICONTROL イベント]**&#x200B;指標をドラッグ＆ドロップします。日付選択カレンダーから十分な日付範囲を選択し、接続のすべてのデータをカプセル化します。これで、[!UICONTROL Customer Journey Analytics] に取り込まれるイベントの数を確認できます。
 
-   ![Workspaceプロジェクト](assets/event-number.png)
+   ![ワークスペースプロジェクト](assets/event-number.png)
 
    >[!NOTE]
    >
@@ -54,4 +54,4 @@ ht-degree: 99%
 
 1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは [!UICONTROL Customer Journey Analytics] に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる[!UICONTROL プラットフォームデータセット ID] が生成されました。
 
-[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja-JP#implications-of-deleting-data-components)を参照してください。
+[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。
