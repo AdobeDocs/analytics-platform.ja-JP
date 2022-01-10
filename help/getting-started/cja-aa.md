@@ -4,7 +4,7 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 | PDF の書き出し | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
-| Report Builder（Excel プラグイン） | 完全サポート（2021年10月） |
+| Report Builder（Excel プラグイン） | 完全サポート（2021 年 10 月） |
 | レポート時間処理 | 完全にサポートされます。CJA は、レポート時間処理にのみ依存します。 |
 | レポート API へのアクセス | 完全にサポートされます。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
