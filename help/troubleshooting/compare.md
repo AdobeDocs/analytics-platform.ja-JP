@@ -4,14 +4,16 @@ description: Customer Journey AnalyticsでAdobe Analyticsデータをデータ�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 6f77dd9caef1ac8c838f825a48ace6cf533d28a9
+source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 5%
+source-wordcount: '777'
+ht-degree: 4%
 
 ---
 
 # Adobe Analyticsデータと CJA データの比較
+
+組織では CJA を採用しているので、Adobe Analyticsと CJA の間でデータにいくつかの違いがあることに気付くかもしれません。 これは正常で、いくつかの理由で発生する場合があります。 CJA は、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や予期しない不一致が発生する場合があります。 この記事は、データの整合性に関する懸念事項によって妨げられない CJA をユーザーとチームが使用できるように、これらの違いの診断と解決に役立つように作成されています。
 
 Analytics Source Connector を使用して AEP にAdobe Analyticsデータを取り込み、このデータセットを使用して CJA 接続を作成したとします。
 

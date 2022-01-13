@@ -3,10 +3,10 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 97%
 
 ---
 
@@ -31,13 +31,14 @@ ht-degree: 100%
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、オペレーティングシステム） | ベース XDM フィールド（ユーザーエージェントやデバイス ID など）に値が入力されている限り、CJA はネイティブでこれらのディメンションを提供します。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | GDPR の削除 | 完全にサポートされます。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | 完全にサポートされます。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
+| マーチャンダイジング変数の持続性 | 完全なサポート（2022 年 1 月） |
 | 指標 | 完全にサポートされます。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | 完全にサポートされます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
 | PDF の書き出し | 完全にサポートされます。 |
 | プロジェクトのキュレーション | 完全にサポートされます。 |
 | プロジェクトリンク | 完全にサポートされます。 |
-| Report Builder（Excel プラグイン） | 完全サポート（2021 年 10 月） |
+| Report Builder（Excel プラグイン） | 完全にサポートされます。 |
 | レポート時間処理 | 完全にサポートされます。CJA は、レポート時間処理にのみ依存します。 |
 | レポート API へのアクセス | 完全にサポートされます。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | 完全にサポートされます。 |
@@ -79,9 +80,8 @@ ht-degree: 100%
 | --- | --- |
 | アラート | サポートが予定されています。 |
 | 貢献度分析 | サポートが予定されています。 |
-| Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、[!UICONTROL Experience Platform クエリサービス]でも、CJA におけるこれらの使用例に対応するインターフェイスを提供しています。 |
+| Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) は、CJA におけるこれらの使用例のインターフェイスも提供します。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
-| マーチャンダイジング変数の持続性 | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
 | セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
