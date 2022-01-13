@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
-workflow-type: ht
-source-wordcount: '556'
-ht-degree: 100%
+source-git-commit: 1f0851fa9543439467d6514e22cbe82eafad87c3
+workflow-type: tm+mt
+source-wordcount: '565'
+ht-degree: 98%
 
 ---
 
@@ -200,6 +200,8 @@ ht-degree: 100%
    + [スコアカードの作成](mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
++ トラブルシューティング {#troubleshooting}
+   + [Adobe Analyticsデータと CJA データの比較](troubleshooting/compare.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
 + [CJA ドキュメントのアップデート](doc-changes.md)
