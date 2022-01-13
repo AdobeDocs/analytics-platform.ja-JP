@@ -3,10 +3,10 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
+source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 97%
+source-wordcount: '1207'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,8 @@ ht-degree: 97%
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、オペレーティングシステム） | ベース XDM フィールド（ユーザーエージェントやデバイス ID など）に値が入力されている限り、CJA はネイティブでこれらのディメンションを提供します。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | GDPR の削除 | 完全にサポートされます。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | 完全にサポートされます。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
-| マーチャンダイジング変数の持続性 | 完全なサポート（2022 年 1 月） |
+| マーチャンダイジング変数の持続性 | を介した完全なサポート [ディメンションとバインディング指標のバインディング](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) （2022 年 1 月） |
+| マーチャンダイジング eVar | を介した完全なサポート [ディメンションとバインディング指標のバインディング](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) （2022 年 1 月） |
 | 指標 | 完全にサポートされます。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | 完全にサポートされます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
@@ -60,7 +61,7 @@ ht-degree: 97%
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポートの時間処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
 | 地理特性ディメンション | Adobe Analytics で収集されたすべての地理特性／地域情報は、Analytics Data Connector を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を使用する実装など、Analytics Data Connector を使用しない実装では、自動的に実行される完全な地理的検索は行われません（国と州はサポートされていますが、市区町村と郵便番号はサポートされていません）。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics Data Connector を介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
-| products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、この使用例を実現できます。 CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
+| products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、この使用例を実現できます。 CJA 内では、お客様は任意の数の製品変数を使用できます。Adobe Analyticsと同様に、1 つの変数に制限されることはありません。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 
@@ -68,9 +69,8 @@ ht-degree: 97%
 
 | 機能 | メモ |
 | --- | --- |
-| ボットフィルタリング | Analytics コネクタ（ADC）ベースのデータセットの場合、ボットフィルターが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
+| ボットフィルタリング | Analytics ソースコネクタベースのデータセットの場合、ボットフィルタリングが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | Media Analytics | メディアデータは、Analytics Data Connector の一部として使用できます。 |
-| マーチャンダイジング eVar | マーチャンダイジング eVar の動作は、マーチャンダイジング eVar が永続性を使用するように設定されていない場合、オブジェクト配列内のディメンションを使用して達成できます。 現在、マーチャンダイジングディメンションは使用できません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
