@@ -4,9 +4,9 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 source-git-commit: 3389515bd18903eda14af1670ff7d1ab080c9db2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 拡張接続管理機能の使用方法 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 拡張されたデータビュー機能の使用方法 </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail">強化された接続管理機能の使用方法</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews">強化されたデータビュー機能の使用方法</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=ja#cja-usecases"> Adobe Experience Platform への Google Analytics データの取り込みに関するドキュメント </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=ja#cja-usecases"> CJA での Google Analytics データの分析に関するドキュメント </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#cja-connections"> クロスチャネル分析（Customer Journey Analytics での ID のステッチ） </a> </li>
