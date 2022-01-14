@@ -3,10 +3,10 @@ title: データビューの作成または編集
 description: データビューの作成や編集をおこなうために調整できるすべての設定。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,21 +84,23 @@ ht-degree: 100%
    * [[!UICONTROL 永続性]](component-settings/persistence.md)
    * [[!UICONTROL 値のバケット化]](component-settings/value-bucketing.md)
 
-必要に応じて、次の機能を使用できます。
+## 指標またはディメンションの重複
 
-* **[!UICONTROL 複製]**：指標またはディメンションを複製してから特定の設定を変更すると、1 つのスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。右上にある指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。新しいディメンションまたは指標を変更し、わかりやすい名前で保存します。
+指標またはディメンションを複製してから特定の設定を変更すると、1 つのスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。右上にある指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。新しいディメンションまたは指標を変更し、わかりやすい名前で保存します。
 
-   ![複製](assets/duplicate.png)
+![複製](assets/duplicate.png)
 
-* **[!UICONTROL フィルター]**：次のデータタイプを使用して、左側のパネルのスキーマフィールドをフィルタリングできます。
+## スキーマフィールドまたはデータセットのフィルタリング
 
-   ![フィールドのフィルター](assets/filter-fields.png)
+左側のパネルのスキーマフィールドは、次のデータタイプでフィルタリングできます。
 
-   また、データセットによって、およびデータがスキーマフィールドに含まれているか、またはデータが ID であるかによって、フィルタリングすることもできます。 デフォルトでは、アドビは最初に、「**[!UICONTROL データを含む]**」フィルターをすべてのデータビューに適用します。
+![フィールドのフィルター](assets/filter-fields.png)
 
-   ![その他のフィルター](assets/filter-other.png)
+また、データセットによって、およびデータがスキーマフィールドに含まれているか、またはデータが ID であるかによって、フィルタリングすることもできます。 デフォルトでは、アドビは最初に、「**[!UICONTROL データを含む]**」フィルターをすべてのデータビューに適用します。
 
-## 設定
+![その他のフィルター](assets/filter-other.png)
+
+## 設定 tab
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、「**[!UICONTROL データビュー]**」タブに移動します。
 1. 「**[!UICONTROL 追加]**」をクリックしてデータビューを作成するか、既存のデータビューをクリックして編集します。
