@@ -3,10 +3,10 @@ title: データビューの作成または編集
 description: データビューの作成や編集をおこなうために調整できるすべての設定。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 ![新規データビュー](assets/new-data-view.png)
 
-### 設定
+### データビュー設定
 
 データビューの包括的な設定を提供します。
 
@@ -29,7 +29,7 @@ ht-degree: 99%
 | --- | --- |
 | [!UICONTROL 接続] | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
 | [!UICONTROL 名前] | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンに表示されます。 |
-| [!UICONTROL 説明] | （オプション。アドビは、データビューの存在理由と目的をユーザーが理解できるよう、詳細な説明を推奨します。 |
+| [!UICONTROL 説明] | （オプション。Adobeは、データビューの存在理由とデザインの目的をユーザーが理解できるよう、詳細な説明を提示します。 |
 
 ### コンテナ
 
