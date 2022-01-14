@@ -3,10 +3,10 @@ title: 標準コンポーネントリファレンス
 description: 任意のデータビューに追加できるすべての標準コンポーネントの詳細と情報。
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 92%
 
 ---
 
@@ -39,13 +39,23 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 
 オプションの標準コンポーネントは、 **[!UICONTROL データビュー]**／ **[!UICONTROL データビューを編集]**／ **[!UICONTROL コンポーネント]**&#x200B;タブ／ **[!UICONTROL 標準コンポーネント]** タブにあります。
 
-| コンポーネント名 | ディメンションまたは指標 | メモ |
+| コンポーネント名 | ディメンションまたは指標 | メモ および値 |
 | --- | --- | --- |
+| [!UICONTROL 午前／午後] | 時間分割ディメンション | 午前または午後 |
+| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform バッチを表します。 |
+| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform データセットを表します。 |
+| [!UICONTROL 日付] | 時間分割ディメンション | 1～31 |
+| [!UICONTROL 曜日] | 時間分割ディメンション | 月曜日、火曜日、水曜日、木曜日、金曜日、土曜日、日曜日 |
+| [!UICONTROL 年間通算日] | 時間分割ディメンション | 1～366 |
+| [!UICONTROL 時刻] | 時間分割ディメンション | 0～23 |
+| [!UICONTROL  月] | 時間分割ディメンション | 1 月～ 12 月 |
+| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。この [!UICONTROL 人物 ID] ディメンションは、データセットを組み合わせ、CJA での個別訪問者を識別する際の基礎となります。 |
+| [!UICONTROL ユーザー ID 名前空間] | ディメンション | ID のタイプ [!UICONTROL 人物 ID] はで構成されます。 例： `email address`, `cookie ID`, `Analytics ID`など |
+| [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
 | [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。フィルター定義で使用する場合（例：「[!UICONTROL セッション開始]が存在する」）、各セッションの最初のイベントのみにフィルターされます。 |
 | [!UICONTROL セッション終了] | 指標 | セッションの最後のイベントとなったイベントの数。「[!UICONTROL セッション開始]」と同様、これをフィルター定義で使用してフィルタリングし、各セッションの最後のイベントだけを残すこともできます。 |
 | [!UICONTROL 滞在時間 (秒)] | 指標 | あるディメンションについて、2 つの異なる値の間の時間を合計します。 |
 | [!UICONTROL イベント別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL イベント] グループ別にまとめたものです。 |
 | [!UICONTROL セッション別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL セッション] 別にまとめたものです。 |
 | [!UICONTROL ユーザー別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL 個人] グループ別にまとめたものです。 |
-| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform バッチを表します。 |
-| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform データセットを表します。 |
+| [!UICONTROL 週末]/[!UICONTROL 平日] | 時間分割ディメンション | 週末または平日 |
