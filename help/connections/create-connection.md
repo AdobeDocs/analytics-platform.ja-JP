@@ -3,10 +3,10 @@ title: 接続の作成
 description: Customer Journey Analytics でプラットフォームデータセットへの接続を作成する方法について説明します。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 83aa9b785a7b75046526d80c941a452396ea4d04
+workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 | オプション | ID マップに ID が存在しない | プライマリとして指定されている ID が存在しない | 複数の ID がプライマリとして指定されている | 単一の ID がプライマリとして指定されている | ID がプライマリとして指定されている無効な名前空間 |
 |---|---|---|---|---|---|
-| **「プライマリ ID 名前空間を使用」がオンになっている** | 行は CJA によってドロップされます。 | プライマリ ID が指定されていないので、行は CJA によってドロップされます。 | すべての名前空間の下で、プライマリと指定されたすべての ID がリストに抽出されます。その後、アルファベット順に並べ替えられます。 この新しい並べ替えでは、最初の ID を持つ最初の名前空間がユーザー ID として使用されます。 | プライマリとして指定された単一の ID がユーザー ID として使用されます。 | 名前空間が無効（AEP に存在しない）場合でも、CJA はその名前空間のプライマリ ID をユーザー ID として使用します。 |
+| **[!UICONTROL プライマリID 名前空間を使用] オン** | 行は CJA によってドロップされます。 | プライマリ ID が指定されていないので、行は CJA によってドロップされます。 | すべての名前空間の下で、プライマリと指定されたすべての ID がリストに抽出されます。その後、アルファベット順に並べ替えられます。 この新しい並べ替えでは、最初の ID を持つ最初の名前空間がユーザー ID として使用されます。 | プライマリとして指定された単一の ID がユーザー ID として使用されます。 | 名前空間が無効（AEP に存在しない）場合でも、CJA はその名前空間のプライマリ ID をユーザー ID として使用します。 |
 | **特定の ID マップ名前空間が選択されている** | 行は CJA によってドロップされます。 | 選択した名前空間に属するすべての ID がリストに抽出され、最初の ID がユーザー ID として使用されます。 | 選択した名前空間に属するすべての ID がリストに抽出され、最初の ID がユーザー ID として使用されます。 | 選択した名前空間に属するすべての ID がリストに抽出され、最初の ID がユーザー ID として使用されます。 | 選択した名前空間に属するすべての ID がリストに抽出され、最初の ID がユーザー ID として使用されます。（接続の作成時には有効な名前空間のみを選択できるので、無効な名前空間／ID をユーザー ID として使用することはできません）。 |
 
 ## 接続を有効化
@@ -141,9 +141,13 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
 
-1. クエリは次のようになります：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+1. クエリは次のようになります：
+
+   ```
+   Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
+   ```
 
 * この例では、「analytics_demo_data」がデータセットの名前です。
 * `Show Tables` クエリを実行すると、AEP に存在するすべてのデータセットが表示されます。
