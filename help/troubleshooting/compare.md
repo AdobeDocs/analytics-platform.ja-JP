@@ -1,55 +1,55 @@
 ---
 title: AA データと CJA データの比較
-description: Customer Journey AnalyticsでAdobe Analyticsデータをデータと比較する方法を説明します
+description: Adobe Analytics データを Customer Journey Analytics のデータと比較する方法を学ぶ
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Adobe Analyticsデータと CJA データの比較
+# Adobe Analytics データと CJA データの比較
 
-組織では CJA を採用しているので、Adobe Analyticsと CJA の間でデータにいくつかの違いがあることに気付くかもしれません。 これは正常で、いくつかの理由で発生する場合があります。 CJA は、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や予期しない不一致が発生する場合があります。 この記事は、データの整合性に関する懸念事項によって妨げられない CJA をユーザーとチームが使用できるように、これらの違いの診断と解決に役立つように作成されています。
+組織では CJA を採用する際、Adobe Analytics と CJA の間でデータに違いがあることに気付くことがあります。これは正常なことで、いくつかの理由で発生する場合があります。CJA は、AA のデータに関する制限の一部を改善できるように設計されています。ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念に妨げられることなくユーザーとチームが CJA を使用できるように、それらの違いを診断し、解決することを目的としています。
 
-Analytics Source Connector を使用して AEP にAdobe Analyticsデータを取り込み、このデータセットを使用して CJA 接続を作成したとします。
+Analytics Source Connector 経由で Adobe Analytics データを AEP に取り込み、このデータセットを使用して CJA 接続を作成したと仮定します。
 
 ![データフロー](assets/compare.png)
 
-次に、データビューを作成し、その後、CJA に関するこのデータをレポートする際に、Adobe Analyticsのレポート結果との相違に気がつきました。
+次に、データビューを作成した後、CJA でこのデータをレポートしながら、Adobe Analytics のレポート結果との相違に気がつきました。
 
-次に、元のAdobe Analyticsデータを、現在Customer Journey Analytics中のAdobe Analyticsデータと比較するための手順を示します。
+ここでは、元の Adobe Analytics データと現在 Customer Journey Analytics にある Adobe Analytics のデータを比較するための手順を示します。
 
 ## 前提条件 
 
 * AEP の Analytics データセットに、調査中の日付範囲のデータが含まれていることを確認します。
 
-* Analytics で選択したレポートスイートが、Adobe Experience Platformに取り込まれたレポートスイートと一致していることを確認します。
+* Analytics で選択したレポートスイートが、Adobe Experience Platform に取り込まれたレポートスイートと一致していることを確認します。
 
-## 手順 1:Adobe Analyticsで回数指標を実行する
+## 手順 1：Adobe Analytics で発生件数指標を実行する
 
-この [発生件数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja) 指標は、特定のディメンションが設定または持続されたヒット数を示します。
+[発生件数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)指標は、特定のディメンションが設定または持続されたヒット数を示します。
 
-1. Analytics で > [!UICONTROL Workspace]」で、ディメンションとしてレポートする日付範囲を [!UICONTROL フリーフォーム] 表。
+1. Analytics／[!UICONTROL ワークスペース] で、ディメンションとしてレポートする日付範囲を [!UICONTROL フリーフォーム]テーブルにドラッグします。
 
-1. この [!UICONTROL 発生件数] 指標が自動的にその日付範囲に適用されます。
+1. この [!UICONTROL 発生件数]指標が自動的にその日付範囲に適用されます。
 
-1. 比較で使用できるように、このプロジェクトを保存します。
+1. このプロジェクトを保存して、比較で使用できるようにします。
 
-## 手順 2:結果をと比較する [!UICONTROL タイムスタンプ別の合計レコード数] CJA で
+## 手順 2：結果を CJA の[!UICONTROL タイムスタンプ別の合計レコード数]と比較する
 
-次に、 [!UICONTROL 発生件数] Analytics の「タイムスタンプ別合計レコード数」にCustomer Journey Analytics。
+ここで、Analytics の[!UICONTROL 発生件数]と Customer Journey Analytics のタイムスタンプ別合計レコード数を比較します。
 
-Analytics ソースコネクタによって削除されたレコードがない場合、タイムスタンプ別の合計レコード数は、回数と一致する必要があります。以下の節を参照してください。
+Analytics ソースコネクタがドロップしたレコードがない場合、タイムスタンプ別の合計レコード数は、発生件数と一致する必要があります（以下の節を参照）。
 
 >[!NOTE]
 >
->これは、( [クロスチャネル分析](/help/connections/cca/overview.md)) をクリックします。 比較をおこなうには、CJA で使用されるユーザー ID のアカウンティングが重要であることに注意してください。 特にクロスチャネル分析が有効になっている場合は、AA でのレプリケーションが容易でない場合があります。
+>これは通常の中間値データセットでのみ機能し、（[クロスチャネル Analytics](/help/connections/cca/overview.md) 経由で）結合されたデータセットでは機能しません。比較をおこなうには、CJA で使用されているユーザー ID のアカウント設定が重要であることに注意してください。特にクロスチャネル分析がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
 
-1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)、次を実行します。 [!UICONTROL タイムスタンプ別の合計レコード数] クエリ：
+1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. In [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)、生データから、一部の行が Analytics ソースコネクタによって削除された可能性があるかどうかを識別します。
+1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja) で、生データから、Analytics ソースコネクタによって一部の行が削除された可能性があるかどうかを確認します。
 
-   この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、XDM スキーマへの変換中に行をドロップする可能性があります。 行全体が変換に適さない理由は複数考えられます。 次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
+   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行が削除される可能性があります。 行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
 
    | Analytics フィールド | 削除される原因となる値 |
    | --- | --- |
@@ -76,16 +76,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53,63 |
 
-1. コネクタが行をドロップした場合は、 [!UICONTROL 発生件数] 指標。 結果の数は、Adobe Experience Platformデータセット内のイベント数と一致する必要があります。
+1. コネクタによって行が削除された場合は、 [!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
 
-## AEP からの取り込み中にレコードが削除またはスキップされる理由
+## AEP からの取得にレコードが削除またはスキップされる可能性がある理由
 
-CJA [接続](/help/connections/create-connection.md) を使用すると、データセット全体で共通の個人 ID に基づいて複数のデータセットを取り込み、結合できます。 バックエンドで、重複排除を適用します。タイムスタンプに基づくイベントデータセットで完全な外部結合または和集合を実行し、ユーザー ID に基づくプロファイルとルックアップデータセットで内部結合を実行します。
+CJA [接続](/help/connections/create-connection.md) を使用すると、データセットをまたいだ共通のユーザー ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そしてユーザー ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
 
-AEP からデータを取り込む際にレコードがスキップされる可能性がある理由を以下に示します。
+AEP からデータを取り込む際に、レコードがスキップされる可能性がある理由を以下に示します。
 
-* **タイムスタンプが見つかりません**  — イベントデータセットにタイムスタンプがない場合、それらのレコードは取り込み中に完全に無視またはスキップされます。
+* **タイムスタンプがありません** - イベントデータセットにタイムスタンプがない場合、取得中、それらのレコードは完全に無視またはスキップされます。
 
-* **ユーザー ID がありません**  — （イベントデータセットから、またはプロファイル/ルックアップデータセットから）ユーザー ID が見つからないと、これらのレコードは無視またはスキップされます。 これは、レコードを結合するための共通の ID や一致するキーがないためです。
+* **ユーザー ID がありません** -（イベントデータセットからおよび／またはプロファイル／ルックアップデータセットから）ユーザー ID が見つからない場合、これらのレコードは無視またはスキップされます。これは、レコードを結合するための共通の ID や一致するキーがないためです。
 
-* **無効または大きなユーザー ID**  — 無効な ID を持つと、結合するデータセット間で有効な共通 ID が見つかりません。 場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。 1 ヶ月に 100 万回以上イベントに出現する人物 ID（数字と文字の組み合わせを含む）は、特定のユーザーまたは人物に関連付けることはできません。 無効と分類されます。 これらのレコードはシステムに取り込むことができず、エラーが発生しやすい取り込みとレポート作成がおこなわれます。
+* **無効または大きなユーザー ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。月に 100 万回以上イベントに表示されるユーザー ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取得することができないため、取得やレポートの際にエラーが発生しやすくなります。
