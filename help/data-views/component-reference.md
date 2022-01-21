@@ -3,10 +3,10 @@ title: 標準コンポーネントリファレンス
 description: 任意のデータビューに追加できるすべての標準コンポーネントの詳細と情報。
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 92%
+source-wordcount: '774'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 | [!UICONTROL 年間通算日] | 時間分割ディメンション | 1～366 |
 | [!UICONTROL 時刻] | 時間分割ディメンション | 0～23 |
 | [!UICONTROL  月] | 時間分割ディメンション | 1 月～ 12 月 |
-| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。この [!UICONTROL 人物 ID] ディメンションは、データセットを組み合わせ、CJA での個別訪問者を識別する際の基礎となります。 |
+| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。この [!UICONTROL 人物 ID] ディメンションは、データセットを組み合わせ、CJA での個別訪問者を識別する際の基礎となります。<p>考えられる使用例を次に示します。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に基づいてすべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに呼び出したユーザーの識別。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | ID のタイプ [!UICONTROL 人物 ID] はで構成されます。 例： `email address`, `cookie ID`, `Analytics ID`など |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
 | [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。フィルター定義で使用する場合（例：「[!UICONTROL セッション開始]が存在する」）、各セッションの最初のイベントのみにフィルターされます。 |
