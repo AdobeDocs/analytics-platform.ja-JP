@@ -3,9 +3,9 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1313'
 ht-degree: 94%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 94%
 | 機能 | メモ |
 | --- | --- |
 | アラート | サポートが予定されています。 |
+| カレンダーイベント | Workspace では「注釈」と呼ばれます。 |
 | 分類ルールビルダー | CJA での動作は、ルックアップデータセットではなく、レポート時に文字列操作を使用する場合とは少し異なります。 |
 | 貢献度分析 | サポートが予定されています。 |
 | Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)でも、CJA におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
@@ -98,11 +99,11 @@ ht-degree: 94%
 | Activity Map | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
 | 分類ルールビルダー | まだサポートの予定はありません。 |
+| 通貨換算 | まだサポートの予定はありません。 |
 | データフィード | まだサポートの予定はありません。 |
+| リアルタイムレポート | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
 | トランザクション ID データソース | まだサポートの予定はありません。 |
-| 通貨換算 | まだサポートの予定はありません。 |
-| リアルタイムレポート | まだサポートの予定はありません。 |
 
 ## サポートされません
 
@@ -110,5 +111,4 @@ ht-degree: 94%
 * Reports &amp; Analytics のダッシュボード
 * Reports &amp; Analytics のブックマーク
 * Reports &amp; Analytics のターゲット
-* Reports &amp; Analytics のカレンダーイベント
 * Mobile Services
