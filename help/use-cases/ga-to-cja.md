@@ -3,10 +3,10 @@ title: Adobe Experience Platform への Google Analytics データの取り込�
 description: 'Customer Journey Analytics（CJA）を利用して Google Analytics データを Adobe Experience Platform に取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
+workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Google Analytics データの `timestamp` スキーマフィールドについ�
 
 ### 1. カスタム変数を追加する
 
-Google Tag Manager アカウントにサインインした後、アドビに関連するカスタム定数変数をいくつか追加する必要があります。 Google Tag Manager には、顧客のメールアドレス、顧客名、言語、顧客のログインステータスなど、Google Analytics に送信される変数が既に含まれている可能性があります。 次の 5 つの新しいカスタム変数を定義する必要があります。
+Google Tag Manager アカウントにサインインした後、アドビに関連するカスタム定数変数をいくつか追加する必要があります。 おそらく、Google Tag Manager には、顧客の電子メール、顧客名、言語、顧客のログインステータスなど、Google Analyticsに送信される変数が既に存在します。 次の 5 つの新しいカスタム変数を定義する必要があります。
 
 * Adobe Experience Cloud 組織 ID
 * DCS ストリーミングエンドポイント
