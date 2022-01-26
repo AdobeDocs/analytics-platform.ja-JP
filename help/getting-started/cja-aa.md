@@ -3,10 +3,10 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
+source-git-commit: d46779a30fd841194f8ba0e80ab17ea5714569db
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 94%
+source-wordcount: '1309'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ ht-degree: 94%
 
 | 機能 | メモ |
 | --- | --- |
-| ボットフィルタリング | Analytics ソースコネクタベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
-| Media Analytics | メディアデータは、Analytics Data Connector の一部として使用できます。 |
+| ボットフィルタリング | の場合 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)ベースのデータセットの場合、ボットフィルタリングが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
+| Media Analytics | メディアデータは、Analytics ソースコネクタの一部として使用できます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
@@ -98,10 +98,8 @@ ht-degree: 94%
 | --- | --- |
 | Activity Map | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
-| 分類ルールビルダー | まだサポートの予定はありません。 |
 | 通貨換算 | まだサポートの予定はありません。 |
 | データフィード | まだサポートの予定はありません。 |
-| リアルタイムレポート | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
 | トランザクション ID データソース | まだサポートの予定はありません。 |
 
