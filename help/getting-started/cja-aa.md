@@ -3,10 +3,10 @@ title: Customer Journey Analytics の機能のサポート
 description: Customer Journey Analytics の機能と Adobe Analytics の機能セットの比較。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 | GDPR の削除 | 完全にサポートされます。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | 完全にサポートされます。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)によるフルサポート（2022年1月） |
-| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)によるフルサポート（2022年1月） |
+| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension)によるフルサポート（2022年1月） |
 | 指標 | 完全にサポートされます。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | 完全にサポートされます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
@@ -84,7 +84,12 @@ ht-degree: 100%
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。 |
+| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「オーディエンスの投稿」と呼ばれます。 |
+| 新規セッションレポートとリピートセッションレポート | サポートは、いくつかの注意事項を含めて計画されています。 |
+| 上昇率および信頼性レポート | サポートが予定されています。 |
+| 分類ルールビルダー | CJA では、ルックアップデータセットではなく、レポート時にその場での文字列操作を使用して、の動作が少し異なります。 |
+| 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | サポートは計画的におこなわれていますが、より柔軟で遡及的かつ非破壊的なデータ操作のために、データ収集時ではなくクエリ時に動作します。 |
+| プロジェクトテンプレート | サポートが予定されています。 |
 
 ## サポートの予定はありません
 
@@ -95,6 +100,9 @@ ht-degree: 100%
 | 分類ルールビルダー | まだサポートの予定はありません。 |
 | データフィード | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
+| トランザクション ID データソース | まだサポートの予定はありません。 |
+| 通貨換算 | まだサポートの予定はありません。 |
+| リアルタイムレポート | まだサポートの予定はありません。 |
 
 ## サポートされません
 
