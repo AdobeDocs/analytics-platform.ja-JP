@@ -4,9 +4,9 @@ description: データビューの作成や編集をおこなうために調整�
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 | --- | --- |
 | [!UICONTROL 接続] | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
 | [!UICONTROL 名前] | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンに表示されます。 |
-| [!UICONTROL 説明] | （オプション。Adobeは、データビューの存在理由とデザインの目的をユーザーが理解できるよう、詳細な説明を提示します。 |
+| [!UICONTROL 説明] | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 
 ### コンテナ
 
@@ -84,9 +84,9 @@ ht-degree: 97%
    * [[!UICONTROL 永続性]](component-settings/persistence.md)
    * [[!UICONTROL 値のバケット化]](component-settings/value-bucketing.md)
 
-## 指標またはディメンションの重複
+## 指標またはディメンションの複製
 
-指標またはディメンションを複製してから特定の設定を変更すると、1 つのスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。右上にある指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。新しいディメンションまたは指標を変更し、わかりやすい名前で保存します。
+指標またはディメンションを複製し、特定の設定を変更することで、単一のスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。右上にある指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。新しいディメンションまたは指標を変更し、わかりやすい名前で保存します。
 
 ![複製](assets/duplicate.png)
 
@@ -100,7 +100,7 @@ ht-degree: 97%
 
 ![その他のフィルター](assets/filter-other.png)
 
-## 設定 tab
+## 設定タブ
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、「**[!UICONTROL データビュー]**」タブに移動します。
 1. 「**[!UICONTROL 追加]**」をクリックしてデータビューを作成するか、既存のデータビューをクリックして編集します。
