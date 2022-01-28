@@ -1,15 +1,15 @@
 ---
-description: 時間以外のディメンションの上位 5 つの値（および時間ディメンションの場合は 15）を表示します。
+description: 時間以外のディメンションの上位 5 つ（時間ディメンションの場合は 15 つ）の値が表示されます。
 title: CJA Workspace でディメンションをプレビューする方法
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Analysis Workspaceでのディメンションのプレビュー
+# Analysis Workspace のディメンションのプレビュー
 
 >[!NOTE]
 >
