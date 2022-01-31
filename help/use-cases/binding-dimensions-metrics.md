@@ -1,25 +1,99 @@
 ---
 title: CJA でのディメンションと指標のバインディングの使用
 description: 複雑な永続性分析のために、次元をオブジェクト配列に対して属性化します。
-source-git-commit: b93809c9af02227295c9dd66565f04675236c393
+exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
+source-git-commit: 4381a01b072084701d065d7f41de539412c8d371
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
 
-
 # CJA でのディメンションと指標のバインディングの使用
 
-Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. 永続性メソッドの 1 つとして、Adobeオファーをバインディングと呼びます。 以前のバージョンのAdobe Analyticsでは、この概念はマーチャンダイジングと呼ばれていました。
+Customer Journey Analyticsには、設定されたヒットの後でディメンション値を保持する方法がいくつか用意されています。 永続性メソッドの 1 つとして、Adobeオファーをバインディングと呼びます。 以前のバージョンのAdobe Analyticsでは、この概念はマーチャンダイジングと呼ばれていました。
 
-While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](object-arrays.md). 特定のイベント内のすべての属性にディメンションを適用することなく、ディメンションをオブジェクト配列の 1 つの部分に属性付けできます。 For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
+バインディングディメンションはトップレベルのイベントデータで使用できますが、この概念はを操作する際に最も適しています [オブジェクトの配列](object-arrays.md). 特定のイベント内のすべての属性にディメンションを適用することなく、ディメンションをオブジェクト配列の 1 つの部分に属性付けできます。 例えば、検索語句をイベント全体にバインドすることなく、買い物かごオブジェクト配列内の 1 つの製品に検索語句を関連付けることができます。
 
-## 例 2:バインディング指標を使用した検索語句の製品購入への結び付け
+## 例 1:バインディングディメンションを使用して、追加の製品属性を購入に関連付けます
+
+オブジェクト配列内のディメンション項目を別のディメンションに連結できます。 連結されたディメンション項目が表示されると、CJA は連結されたディメンションを呼び出し、イベントに含めます。 次のカスタマージャーニーについて考えてみましょう。
+
+1. 訪問者が洗濯機で製品ページを閲覧します。
+
+   ```json
+   {
+       "PersonID": "1",
+       "product_views": 1,
+       "product": [
+           {
+               "name": "Washing Machine 2000",
+               "color": "white",
+               "type": "front loader",
+           },
+       ],
+       "timestamp": 1534219229
+   }
+   ```
+
+1. 訪問者は乾燥機で製品ページを表示します。
+
+   ```json
+   {
+       "PersonID": "1",
+       "product_views": 1,
+       "product": [
+           {
+               "name": "Dryer 2000",
+               "color": "neon orange",
+           },
+       ],
+       "timestamp": 1534219502
+   }
+   ```
+
+1. 最終的に彼らは購入を行う。 各製品の色が購入イベントに含まれませんでした。
+
+   ```json
+   {
+       "PersonID": "1",
+       "orders": 1,
+       "product": [
+           {
+               "name": "Washing Machine 2000",
+               "price": 1600,
+           },
+           {
+               "name": "Dryer 2000",
+               "price": 499
+           }
+       ],
+       "timestamp": 1534219768
+   }
+   ```
+
+バインディングディメンションを持たない色で売上高を確認する場合は、ディメンション `product.color` 乾燥機の色のクレジットを保持し、誤って属性設定します。
+
+| product.color | 売上高 |
+| --- | --- |
+| ネオンオレンジ | 2099 |
+
+データ表示マネージャを開き、製品の色を製品名にバインドできます。
+
+![連結ディメンション](assets/binding-dimension.png)
+
+この永続性モデルを設定すると、Adobeは製品の色が設定されるたびに製品名をメモします。 この訪問者に対する後続のイベントで同じ製品名が認識されると、製品の色も引き継がれます。 製品の色を製品名にバインドする場合、同じデータは次のようになります。
+
+| product.color | 売上高 |
+| --- | --- |
+| 白 | 1600 |
+| ネオンオレンジ | 499 |
+
+## 例 2:バインディング指標を使用して検索語句を製品購入に結び付ける
 
 Adobe Analyticsで最も一般的なマーチャンダイジング方法の 1 つは、検索語句を製品に結び付けて、各検索語句が適切な製品に対するクレジットを受け取るようにすることです。 次のカスタマージャーニーについて考えてみましょう。
 
-1. A visitor arrives to your site and searches for &quot;boxing gloves&quot;.
+1. 訪問者がサイトに訪問し、「boxing gloves」を検索します。
 
    ```json
    {
@@ -110,7 +184,7 @@ Adobe Analyticsで最も一般的なマーチャンダイジング方法の 1 �
    }
    ```
 
-1. The visitor searches a third time for &quot;shoes&quot;.
+1. 訪問者が「靴」を 3 回目に検索します。
 
    ```json
    {
@@ -164,7 +238,7 @@ Adobe Analyticsで最も一般的なマーチャンダイジング方法の 1 �
    }
    ```
 
-1. The visitor goes through the checkout process and purchases these three items.
+1. 訪問者はチェックアウトプロセスを経て、これら 3 つの項目を購入します。
 
    ```json
    {
@@ -190,13 +264,13 @@ Adobe Analyticsで最も一般的なマーチャンダイジング方法の 1 �
    }
    ```
 
-If you use a traditional allocation model with search term, all three products attribute revenue to only a single search term. For example, if you used first allocation with the search term dimension:
+従来の配分モデルを検索語句で使用する場合、3 つの製品すべてが売上高を 1 つの検索語句のみに関連付けます。 例えば、検索語句ディメンションで最初の配分を使用した場合：
 
 | search_term | 売上高 |
 | --- | --- |
 | ボクシング手袋 | $204.97 |
 
-If you used last allocation with the search term dimension, all three products still attribute revenue to a single search term:
+検索語句ディメンションで最後の配分を使用した場合、3 つの製品すべてが売上高を 1 つの検索語句に関連付けます。
 
 | search_term | 売上高 |
 | --- | --- |
@@ -204,27 +278,23 @@ If you used last allocation with the search term dimension, all three products s
 
 この例では 1 人の訪問者のみが含まれますが、異なるものを検索する多くの訪問者は、検索用語の属性を異なる製品に誤解する可能性があるので、実際に最も良い検索結果を見極めるのが困難です。
 
-連結ディメンションの場合、Adobeは、連結先のディメンション項目をメモします。 後続のイベントで同じ連結値が表示された場合、ディメンション項目が引き継がれ、目的の指標をその項目に関連付けることができます。 この例では、search_term のバインディングディメンションを product name に設定できます。
+連結ディメンションの場合、Adobeは、連結先のディメンション項目をメモします。 後続のイベントで同じ連結値が表示された場合、ディメンション項目が引き継がれ、目的の指標をその項目に関連付けることができます。 この例では、search_term のバインディングディメンションを product name に設定できます。 このディメンションをデータビューマネージャで設定する場合、連結ディメンションはオブジェクト配列にあるので、連結指標も設定する必要があります。 バインディング指標は、バインディングディメンションのトリガーとして機能するので、バインディング指標が存在するイベントに対してのみバインドされます。 この例の実装では、検索結果ページには常に検索語句ディメンションと検索指標が含まれます。 「検索」指標が存在する場合は必ず、検索語句を製品名にバインドできます。
 
-![連結ディメンション](assets/binding-dimension.png)
+![連結指標](assets/binding-metric.png)
 
-このディメンションをデータビューマネージャで設定する場合、連結ディメンションはオブジェクト配列にあるので、連結指標も設定する必要があります。 A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. この例の実装では、検索結果ページには常に検索語句ディメンションと検索指標が含まれます。 We can bind search terms to product name whenever the Searches metric is present.
-
-![Binding metric](assets/binding-metric.png)
-
-Setting the search term dimension to this persistence model executes the following logic:
+検索語ディメンションをこの永続性モデルに設定すると、次のロジックが実行されます。
 
 * search_term がイベント内にある場合は、製品名が存在するかどうかを確認します。
-* If product name is not there, do nothing.
+* 製品名がない場合は、何もしないでください。
 * 製品名がある場合は、検索指標が存在するかどうかを確認します。
-* If the Searches metric is not there, do nothing.
-* If the Searches metric is there, bind the search term to all product names. イベントの製品名と同じレベルで動作します。 この例では、product.search_term として扱われます。
+* 「検索」指標がない場合は、何もしません。
+* 検索指標がある場合は、検索語句をすべての製品名に連結します。 イベントの製品名と同じレベルで動作します。 この例では、product.search_term として扱われます。
 * 後続のイベントで同じ製品名が表示された場合は、バインドされた検索語句もそこに存在します。
 
-In Analysis Workspace, the resulting report would look similar to the following:
+Analysis Workspaceでは、結果のレポートは次のようになります。
 
 | search_term | 売上高 |
 | --- | --- |
 | ボクシング手袋 | $89.99 |
-| tennis racket | $34.99 |
+| テニスラケット | $34.99 |
 | 靴 | $79.99 |
