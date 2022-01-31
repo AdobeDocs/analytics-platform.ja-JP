@@ -3,10 +3,10 @@ title: CJA ドキュメントのアップデート
 description: 2019 年 12 月以降の Customer Journey Analytics ドキュメントセットのアップデートについて説明します。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
-source-git-commit: 226c2549ecd0ee694b9aea8072aa1c5e76226c4a
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+source-git-commit: a1ddbf6a03611fce1ebb0587a2586f991c814d83
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 96%
 
 ---
 
@@ -16,8 +16,9 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 
 | 日付 | 説明のアップデート |
 | --- | --- |
+| 2022年1月 | の新しい使用例 [CJA でのディメンションと指標のバインディングの使用](/help/use-cases/binding-dimensions-metrics.md) |
 | 2022年1月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#配分-の設定)に関する新機能のドキュメントを追加しました |
-| 2022年1月 | [Adobe Analytics データと CJA の Analytics データの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=ja)に関する記事を追加しました |
+| 2022年1月 | に関する新しい記事を追加しました。 [CJA でのAdobe Analyticsデータと Analytics データの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=ja) |
 | 2021 年 11 月 | 接続の詳細ページの詳細ページ「[[!UICONTROL スキップされたレコード]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-details-settings)」のドキュメントを更新しました。 |
 | 2021 年 10 月 | CJA の [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=ja) のドキュメント。 |
 | 2021 年 10 月 | Customer Journey Analytics [監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API ドキュメント |
@@ -25,7 +26,7 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 | 2021 年 10 月 | [!UICONTROL 接続][データ保持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)のためのローリングウィンドウのドキュメント。<p>**メモ：この設定を実装するには、カスタマーケアまたはアドビのアカウントマネージャーにお問い合わせください。CJA UI からは、まだ使用できません。** |
 | 2021 年 9 月 | [指標の重複排除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=ja)ドキュメント |
 | 2021 年 9 月 | [レポートでの夏時間のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar) |
-| 2021 年 9 月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar)ドキュメント |
+| 2021 年 9 月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar)ドキュメント |
 | 2021 年 9 月 | [ブール値フィールド](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=ja)ドキュメント |
 | 2021 年 9 月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[[!UICONTROL コンポーネント] 設定の概要](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL アトリビューション] コンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 動作] コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 形式] コンポーネントの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 含む／除外] コンポーネントの設定](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複排除] コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値なし] コンポーネントの設定](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 永続性] コンポーネントの設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値のバケット化] コンポーネントの設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021 年 9 月 | CJA での ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6.-considerations-when-merging-report-suites-in-cja)レポートスイートの結合の意味[ に関する新しい節を追加しました。 |
