@@ -2,21 +2,20 @@
 description: Analysis Workspace でカスタム日付範囲を作成し、時間コンポーネントとして保存します。
 keywords: Analysis Workspace
 title: Analysis Workspace でカスタム日付範囲を作成
-feature: Reports & Analytics の基本
-uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
+feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 97%
+source-wordcount: '281'
+ht-degree: 100%
 
 ---
 
-# Analysis Workspace でカスタム日付範囲を作成
+# カスタム日付範囲の作成
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace でカスタム日付範囲を作成し、時間コンポーネントとして保存します。
 

@@ -2,10 +2,11 @@
 keywords: Analysis Workspace
 title: Analysis Workspace の概要
 description: Analysis Workspace 機能の概要
+feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -43,7 +44,7 @@ Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](h
 
 ## 分析の構築 {#analysis}
 
-ワークスペースプロジェクトでは、左パネルから&#x200B;**パネル、テーブル、ビジュアライゼーションおよびコンポーネント**&#x200B;にアクセスします。これらはプロジェクトの構成要素です。
+Workspace プロジェクトでは、左パネルから **パネル、テーブル、ビジュアライゼーションおよびコンポーネント** にアクセスします。これらはプロジェクトの構成要素です。
 
 ### コンポーネント
 
@@ -53,13 +54,13 @@ Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](h
 
 ### ビジュアライゼーション
 
-次に、棒グラフや折れ線グラフなどの&#x200B;**ビジュアライゼーション**&#x200B;をデータに追加して、データに命を吹き込みます。左端のパネルで、中央の&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンを選択し、使用可能な[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の完全なリストを表示します。
+次に、棒グラフや折れ線グラフなどの **ビジュアライゼーション** をデータに追加して、データに命を吹き込みます。左端のパネルで、中央の **[!UICONTROL ビジュアライゼーション]** アイコンを選択し、使用可能な [ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) の完全なリストを表示します。
 
 ![](assets/build-visualizations.png)
 
 ### パネル
 
-**パネル**&#x200B;を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。左端のパネルで上部の&#x200B;**[!UICONTROL パネル]**&#x200B;アイコンを選択し、使用可能な [パネル](/help/analysis-workspace/c-panels/panels.md)の完全なリストを表示します。
+**パネル** を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。左端のパネルで上部の&#x200B;**[!UICONTROL パネル]**&#x200B;アイコンを選択し、使用可能な [パネル](/help/analysis-workspace/c-panels/panels.md)の完全なリストを表示します。
 
 ![](assets/build-panels.png)
 

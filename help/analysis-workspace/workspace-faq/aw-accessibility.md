@@ -1,8 +1,9 @@
 ---
 description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
+feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 96%
@@ -11,7 +12,7 @@ ht-degree: 96%
 
 # Analysis Workspace のアクセシビリティ
 
-Customer Journey Analyticsの主要な分析ツールである[!UICONTROL Analysis Workspace]でのアクセシビリティのサポートについて説明します。
+でのアクセシビリティのサポートについて説明します。 [!UICONTROL Analysis Workspace]:Customer Journey Analyticsの主要な分析ツール。
 
 アクセシビリティとは、視覚、聴覚、認知、モーターなどの障害を持つユーザーに対して、製品を使用できるようにすることです。ソフトウェア製品のアクセシビリティ機能の例としては、スクリーンリーダーのサポート、グラフィックの代替テキスト、キーボードショートカット、表示色のコントラストの大きさの変更などがあります。
 
@@ -68,7 +69,7 @@ Customer Journey Analyticsの主要な分析ツールである[!UICONTROL Analys
 | Ctrl + Shift + D | 新しい日付範囲 |
 | Ctrl + Shift + E | 新しいフィルター |
 | Ctrl + Z | 元に戻す |
-| shiftキーを押したまま（パネルフィルタードロップゾーン内） | [ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)の作成 |
+| shift キーを押したまま（パネルフィルタードロップゾーン内） | [ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)の作成 |
 
 #### 民主化
 

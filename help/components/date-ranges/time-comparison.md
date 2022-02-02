@@ -1,12 +1,12 @@
 ---
 description: Analysis Workspace での日付の比較では、日付範囲を含む任意の列を使用して、前年比、前四半期比、前月比などの一般的な日付比較を作成できます。
 title: 日付の比較
-uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
+feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace での日付の比較では、日付範囲を含む任意の列を使用して、前年比、前四半期比、前月比などの一般的な日付比較を作成できます。
 
@@ -53,13 +53,13 @@ Analysis Workspace での日付の比較では、日付範囲を含む任意の�
 
    ![](assets/compare-time-barchart.png)
 
-   横向き棒グラフで変更の割合を示すためには、[!UICONTROL ビジュアライゼーション設定]で[!UICONTROL 割合 (%)] 設定を有効にしておく必要があります。
+   横向き棒グラフで変更の割合を示すためには、 [!UICONTROL ビジュアライゼーション設定] で [!UICONTROL 割合 (%)] 設定を有効にしておく必要があります。
 
 ## 比較のために期間の列を追加
 
 テーブルの各列に期間を追加できるようになりました。これにより、カレンダーの設定先とは異なる期間を追加できます。この方法でも日付を比較することができます。
 
-1. テーブルの列を右クリックし、「**[!UICONTROL 期間列を追加]**![](assets/add-time-period-column.png)」を選択します。
+1. テーブルの列を右クリックし、「 **[!UICONTROL 期間列を追加]** ![](assets/add-time-period-column.png)」を選択します。
 
 1. テーブルの日付範囲をどのように設定したかに応じて、次のオプションを比較に使用できます。
 

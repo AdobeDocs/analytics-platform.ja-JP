@@ -2,9 +2,11 @@
 description: Analysis Workspace のディメンションおよびディメンション項目を分類します。
 keywords: Analysis Workspace
 title: ディメンションの分類
+feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
+workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 100%
 

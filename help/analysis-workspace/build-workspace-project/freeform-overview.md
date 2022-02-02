@@ -1,14 +1,13 @@
 ---
-description: メニューバーと設定を含むWorkspaceプロジェクトの概要
+description: メニューバーと設定を含む Workspace プロジェクトの概要
 keywords: Analysis Workspace
 title: プロジェクトの概要
-uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
+feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -47,17 +46,17 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 | メニュー項目 | 説明 |
 |---|---|
-| プロジェクト | プロジェクト管理の一般的なアクション（新規、開く、保存、名前を付けて保存、テンプレートとして保存など）が含まれます。また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。**プロジェクト情報と設定** （以下を参照）オファーは、プロジェクトを管理するための多くのオプションを提供します。 |
+| プロジェクト | プロジェクト管理の一般的なアクション（新規、開く、保存、名前を付けて保存、テンプレートとして保存など）が含まれます。また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。**プロジェクト情報および設定** （以下を参照）は、プロジェクトを管理するための多くのオプションを提供します。 |
 | テンプレートを | 前回の操作を元に戻すか、やり直します。「すべてクリア」を選択すると、プロジェクトが最初の空白の状態にリセットされます。 |
 | 前に | このメニューから、新しいパネルまたはビジュアライゼーションを挿入します。また、左側のパネルから新しいパネルやビジュアライゼーションを挿入することもできます。 |
-| [コンポーネント](/help/components/overview.md) | プロジェクトから新しいフィルター、計算指標、日付範囲またはアラートコンポーネントを作成します。 また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |
-| [共有](/help/analysis-workspace/curate-share/send-schedule-files.md) | PDF/CSVプロジェクトをキュレーション、共有し、組織内の受信者にスケジュールします。 |
-| ヘルプ | ヘルプドキュメント、ビデオおよび Analytics [Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)にアクセスします。Workspace のヒントの表示と[デバッガー](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)の表示を管理します。Workspace の詳細と、プロジェクトの[パフォーマンス](/help/analysis-workspace/workspace-faq/optimizing-performance.md)に影響を与える要因を確認します。 |
+| [コンポーネント](/help/components/overview.md) | プロジェクトから、新しいフィルター、計算指標、日付範囲、アラートコンポーネントを作成します。 また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |
+| [共有](/help/analysis-workspace/curate-share/send-schedule-files.md) | 組織内の受信者に対してPDF/CSV プロジェクトのキュレーション、共有、スケジュールを設定します。 |
+| ヘルプ | ヘルプドキュメント、ビデオおよび Analytics [Experience League コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja)にアクセスします。Workspace のヒントの表示と[デバッガー](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)の表示を管理します。Workspace の詳細と、プロジェクトの[パフォーマンス](/help/analysis-workspace/workspace-faq/optimizing-performance.md)に影響を与える要因を確認します。 |
 | 「共有」ボタンまたは「所有者」 | プロジェクトを所有または編集している場合は、右上の「共有」ボタンからワンクリックでアクセスして、プロジェクト受信者を管理できます。プロジェクトを複製または役割を表示している場合は、プロジェクト所有者の名前が表示されます。 |
 
 ### プロジェクト情報および設定 {#info-settings}
 
-**[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;は、現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
+**[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;では、現在アクティブなプロジェクトに関するプロジェクトレベルの情報が提供されます。
 
 ![](assets/projectinfo.png)
 
@@ -76,11 +75,11 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 ## 左側のパネル {#left-rail}
 
-プロジェクトでは、左側のパネルから[パネル](/help/analysis-workspace/c-panels/panels.md)、テーブル、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)および[コンポーネント]にアクセスします。これらはプロジェクトの構成要素です。
+プロジェクトでは、左側のパネルから [パネル](/help/analysis-workspace/c-panels/panels.md)、テーブル、 [ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) および [コンポーネント] ルからアクセスします。これらはプロジェクトの構成要素です。
 
-また、[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からもビジュアライゼーションやパネルにアクセスできます。
+また、 [空のパネル](/help/analysis-workspace/c-panels/blank-panel.md) からもビジュアライゼーションやパネルにアクセスできます。
 
-左側のレールのコンポーネント(Dimension、指標、フィルター、日付範囲)は、アクティブなパネルのデータ表示に関連付けられます。 アクティブなパネルの周囲に青い境界線が表示され、アクティブなデータ表示がコンポーネントレールの上部に表示されます。
+左側のレールのコンポーネント (Dimension、指標、フィルター、日付範囲 ) は、アクティブなパネルのデータビューに関連しています。 アクティブなパネルの周囲に青い境界線が表示され、アクティブなデータビューがコンポーネントパネルの上部に表示されます。
 
 ![](assets/left-rail.png)
 
@@ -88,7 +87,7 @@ Workspace のプロジェクト一覧ページには、次の情報が表示さ�
 
 プロジェクトキャンバスでは、パネル、テーブル、ビジュアライゼーションおよびコンポーネントをまとめ、分析を作成できます。プロジェクトには多数のパネルを含めることができます。また、各パネルには多数のテーブルやビジュアライゼーションを含めることができます。
 
-パネルは、期間、データ表示、分析の使用例に従ってプロジェクトを整理する場合に便利です。 アクティブパネルの周囲に青い境界線が表示され、左側のパネルから使用できるコンポーネントが決定されます。
+パネルは、期間、データビュー、分析ユースケースに照らしてプロジェクトを整理する場合に役立ちます。アクティブパネルの周囲に青い境界線が表示され、左側のパネルから使用できるコンポーネントが決定されます。
 
 プロジェクトの開始時に選択した内容に応じて、キャンバスに[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)または[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)が表示されます。分析を最も簡単に開始するには、1 つまたは複数のコンポーネントを選択し、それらをプロジェクトキャンバスにドラッグ＆ドロップします。データのテーブルが自動的にレンダリングされます。[こちら](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)からテーブルを作成するための様々なオプションについて確認してください。または、アドビの[トレーニングチュートリアル](/help/analysis-workspace/home.md)を活用して、初めてプロジェクトを作成する際の手順を確認してください。
 
@@ -106,7 +105,7 @@ Analysis Workspace プロジェクトは、**Analytics／コンポーネント�
 
 | アクション | 説明 |
 |---|---|
-| 追加 | 新規プロジェクトを新規に作成する。 |
+| 追加 | 新しいプロジェクトをゼロから作成します。 |
 | タグまたは承認 | 「タグ」または「承認」を選択すると、プロジェクトが整理され、検索しやすくなります。 |
 | [共有](/help/analysis-workspace/curate-share/share-projects.md) | プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。 |
 | 削除 | プロジェクトを削除します。 |

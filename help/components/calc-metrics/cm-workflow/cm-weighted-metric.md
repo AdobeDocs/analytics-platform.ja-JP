@@ -1,8 +1,10 @@
 ---
 description: フィルター適用済み指標と重み付け指標の例を示します。
 title: フィルター適用済み指標と重み付け指標
-source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 100%
 

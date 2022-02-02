@@ -1,11 +1,12 @@
 ---
 title: アトリビューションの概要
 description: 成功イベントのクレジットを複数のディメンション項目に関連付ける概念。
+Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 アトリビューションを使用すると、分析者は、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。次に例を示します。
 
@@ -28,13 +29,13 @@ ht-degree: 89%
 
 ![Attribution IQ に関する問題](assets/attribution_iq_problem.png)
 
-Customer Journey Analyticsは、次の機能を備え、アトリビューションを強化します。
+Customer Journey Analyticsでは、次の機能を利用してアトリビューションを強化できます。
 
 * 有料メディアに勝るアトリビューションの定義：マーケティングキャンペーンだけでなくあらゆるディメンション、指標、チャネル、イベントをモデルに適用できます（例：内部検索）。
 * 無制限のアトリビューションモデル比較の利用：必要な数のモデルを動的に比較できます。
 * 実装の変更の回避：レポート時間処理とコンテキスト対応セッションで、カスタマージャーニーのコンテキストを実行時間に組み込んで適用できます。
 * アトリビューションシナリオに最適なセッションの構築。
-* フィルター別にアトリビューションを分類する：重要なフィルター（新規顧客とリピーター顧客、製品Xと製品Y、ロイヤルティレベル、CLVなど）をまたいでマーケティングチャネルのパフォーマンスを簡単に比較できます。
+* フィルター別に属性を分類する：あらゆる重要なフィルター（新規顧客とリピート顧客、製品 X と製品 Y、ロイヤルティレベル、CLV など）をまたいでマーケティングチャネルのパフォーマンスを簡単に比較できます。
 * チャネルのクロスオーバー分析およびマルチタッチ分析の調査：ベン図やヒストグラムを使用でき、アトリビューション結果のトレンドを追跡できます。
 * 主要なマーケティングシーケンスの視覚的分析：コンバージョンにつながったパスをマルチノードのフローおよびフォールアウトビジュアライゼーションで視覚的に調査できます。
 * 計算指標の構築：任意の数のアトリビューション割り当て方法を使用できます。

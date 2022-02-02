@@ -1,8 +1,10 @@
 ---
 description: 計算指標ビルダーを使用して、誰でもパーティシペーション指標を作成できます。
 title: パーティシペーション指標
-source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 100%
 

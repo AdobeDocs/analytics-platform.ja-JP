@@ -1,14 +1,14 @@
 ---
 description: Analysis Workspace のフォールアウトでは、ディメンションと指標をファネルとワークフローのタッチポイントとして組み合わせることができます。これにより、調査するユーザーステップをより柔軟に定義できます。
 title: ディメンション間のフォールアウト
-translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+feature: Visualizations
+exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
-
 
 # ディメンション間のフォールアウト
 
@@ -27,4 +27,3 @@ Analysis Workspace のフォールアウトでは、ディメンションと指�
 さらに、異なるディメンションおよび指標を AND チェックポイントに組み合わせることもできます。別のディメンションまたは指標を既存のものの上部にドラッグするだけです。
 
 ![](assets/interdimensional-fallout3.png)
-

@@ -2,11 +2,12 @@
 description: 電子メールを使用して Analysis Workspace を送信したり Analysis Workspace の配信をスケジュールしたりします。
 keywords: Analysis Workspace
 title: プロジェクトのスケジュール
+feature: Curate and Share
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信者に電子メールで Analysis Workspace プロジェクトを送信できます。ファイルは CSV 形式または PDF 形式で送信できます。
 
@@ -47,7 +48,7 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 ## スケジュール済みプロジェクトマネージャー
 
-スケジュールされた Analysis Workspace プロジェクトは、 **Analytics／コンポーネント／スケジュールされたプロジェクト**&#x200B;で管理できます。
+スケジュールされた Analysis Workspace プロジェクトは、 **Analytics／コンポーネント／スケジュールされたプロジェクト** で管理できます。
 
 スケジュール済みプロジェクトマネージャーでは、定期的なプロジェクトスケジュールを編集および削除できます。検索バーまたは左側のパネルのフィルタオプションを使用して、スケジュールを検索します。タグ、承認されたスケジュール、所有者などでフィルターできます。
 

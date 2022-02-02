@@ -1,15 +1,14 @@
 ---
 description: ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。
 title: ツリーマップ
-uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
-translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+feature: Visualizations
+exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 100%
 
 ---
-
 
 # ツリーマップ
 

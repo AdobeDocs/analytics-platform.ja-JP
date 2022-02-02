@@ -1,14 +1,14 @@
 ---
-description: 棒グラフのビジュアライゼーションには、1つ以上の指標の様々な値を表す縦棒グラフが表示されます。
+description: 棒グラフビジュアライゼーションには、1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。
 title: 棒グラフおよび積み重ね棒グラフ
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 85%
 
 ---
-
 
 # 棒グラフおよび積み重ね棒グラフ
 
@@ -29,4 +29,3 @@ ht-degree: 85%
 積み重ね棒グラフのビジュアライゼーションを「100% の積み重ね」に変更する新しい設定が追加されました。
 
 ![](assets/stacked_100_percent.png)
-

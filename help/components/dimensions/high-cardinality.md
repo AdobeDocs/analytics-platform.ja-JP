@@ -1,10 +1,11 @@
 ---
 title: Customer Journey Analytics で基数が非常に高いディメンション
 description: Customer Journey Analytics で基数の高いディメンションを扱う際のベストプラクティスを説明します。
+feature: Dimensions
+solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-translation-type: ht
-source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
-workflow-type: ht
+source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
+workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 100%
 

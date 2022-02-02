@@ -1,10 +1,9 @@
 ---
 cloud: Experience Cloud
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
-description: このファイルには、リポジトリ内のユーザガイドTOC.mdファイルに渡されるリポジトリレベルのメタデータが含まれます。
-feature-set: Analytics
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+git-repo: https://github.com/AdobeDocs/analytics-platform.ja-JP
+description: このファイルには、リポジトリ内のユーザーガイド TOC.md ファイルに渡されるリポジトリレベルのメタデータが含まれます。
+feature-set: Customer Journey Analytics
+source-git-commit: a31b6a6624087b2863b4643397c4a824662551b5
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 84%
@@ -14,7 +13,7 @@ ht-degree: 84%
 
 # 社内用のメタデータ
 
-metadata.md ファイルにはリポジトリー内のユーザーガイド TOC.md ファイルから渡される repo-level メタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
 
 | メタデータ | 説明 |
 |--- |--- |

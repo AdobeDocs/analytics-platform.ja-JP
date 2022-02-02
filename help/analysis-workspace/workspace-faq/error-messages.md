@@ -1,9 +1,10 @@
 ---
 description: Adobe Analysis Workspace とその関連コンポーネントに関するエラーメッセージのリスト
 title: Analysis Workspace の一般的なエラーメッセージ
+feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
 

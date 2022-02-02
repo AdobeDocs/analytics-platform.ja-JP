@@ -1,11 +1,12 @@
 ---
 description: フォールアウトビジュアライゼーションは、事前に定義された一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。
 title: フォールアウトの概要
+feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 84%
 
 フォールアウトビジュアライゼーションでは、次の操作をおこなうことができます。
 
-* 同じレポート内の2つの異なるフィルターを並べて比較する。
+* 同じレポート内の 2 つの異なるフィルターを並べて比較します。
 * ファネルステップ（タッチポイント）のドラッグ、ドロップ、整列。
 * 異なるディメンションおよび指標からの値を組み合わせる
 * 複数ディメンションのフォールアウトレポートの作成
@@ -31,5 +32,5 @@ ht-degree: 84%
 * 一般的でより広範囲なトラフィックフロー。ホームページを閲覧した訪問者のうち、検索を実行した訪問者の人数、その後特定の品目を閲覧した訪問者の人数などを表示できます。
 * サイト上のイベント間の関連性。例えばプライバシーポリシーを閲覧した訪問者のうち製品の購入に到達した人の割合を示します。
 
-[フォールアウトのビジュアライゼーションに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)（4:15）
+[フォールアウトのビジュアライゼーションに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=ja)（4:15）
 

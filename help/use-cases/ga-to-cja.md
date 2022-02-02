@@ -3,7 +3,8 @@ title: Adobe Experience Platform への Google Analytics データの取り込�
 description: 'Customer Journey Analytics（CJA）を利用して Google Analytics データを Adobe Experience Platform に取り込む方法を説明します。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 97%
