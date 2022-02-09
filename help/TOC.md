@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.ja-JP
+git-repo: https://github.com/AdobeDocs/analytics-platform.ja-JP
 cloud: Experience Cloud
 product: adobe analytics
 sub-product: customer journey
@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 99%
 
 ---
 
@@ -205,9 +205,11 @@ ht-degree: 100%
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
-+ [CJA ドキュメントのアップデート](doc-changes.md)
 + リリースノート {#releases}
    + [最新リリース](release-notes/latest.md)
+   + [2022 年 リリース](release-notes/2022.md)
    + [2021 年 リリース](release-notes/2021.md)
    + [2020 年 リリース](release-notes/2020.md)
+   + [CJA リリース](release-notes/releases.md)
+   + [CJA ドキュメントのアップデート](release-notes/doc-changes.md)
 
