@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
       + [値のバケット化](data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](data-views/component-reference.md)
    + [データビューの使用例](data-views/data-views-usecases.md)
-+ ワークスペースプロジェクト {#cja-workspace}
++ Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
@@ -187,7 +187,7 @@ ht-degree: 99%
 + 使用例 {#cja-usecases}
    + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
-   + [ディメンションと指標のバインディングの使用](use-cases/binding-dimensions-metrics.md)
+   + [バインディングディメンションと指標の使用](use-cases/binding-dimensions-metrics.md)
    + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
    + [チャネルをまたいだデータの分析](use-cases/cross-channel.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
@@ -208,6 +208,6 @@ ht-degree: 99%
 + [CJA ドキュメントのアップデート](doc-changes.md)
 + リリースノート {#releases}
    + [最新リリース](release-notes/latest.md)
-   + [2021 年リリース](release-notes/2021.md)
-   + [2020 年リリース](release-notes/2020.md)
+   + [2021 年 リリース](release-notes/2021.md)
+   + [2020 年 リリース](release-notes/2020.md)
 
