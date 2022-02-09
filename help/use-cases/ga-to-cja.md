@@ -7,7 +7,7 @@ feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Google Analytics データの `timestamp` スキーマフィールドについ�
 
 ### 1. カスタム変数を追加する
 
-Google Tag Manager アカウントにサインインした後、アドビに関連するカスタム定数変数をいくつか追加する必要があります。 おそらく、Google Tag Manager には、顧客の電子メール、顧客名、言語、顧客のログインステータスなど、Google Analyticsに送信される変数が既に存在します。 次の 5 つの新しいカスタム変数を定義する必要があります。
+Google Tag Manager アカウントにサインインした後、アドビに関連するカスタム定数変数をいくつか追加する必要があります。 Google Tag Manager にはおそらく既に、Google Analytics に送信される変数（顧客のメールアドレス、顧客名、言語、顧客のログインステータスなど）が含まれているでしょう。 次の 5 つの新しいカスタム変数を定義する必要があります。
 
 * Adobe Experience Cloud 組織 ID
 * DCS ストリーミングエンドポイント

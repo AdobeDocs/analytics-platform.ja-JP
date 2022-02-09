@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,10 +32,10 @@ ht-degree: 92%
 | 標準搭載の Analysis Workspace ディメンション（例：ブラウザータイプ、リファラータイプ、オペレーティングシステム） | ベース XDM フィールド（ユーザーエージェントやデバイス ID など）に値が入力されている限り、CJA はネイティブでこれらのディメンションを提供します。Analytics コネクタ（ADC）を使用するお客様は、これらのディメンションの一部のみを利用できます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。 |
 | GDPR の削除 | 完全にサポートされます。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | 完全にサポートされます。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
-| マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)によるフルサポート（2022年1月） |
-| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension)によるフルサポート（2022年1月） |
+| マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)によるフルサポート（2022 年 1 月） |
+| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension)によるフルサポート（2022 年 1 月） |
 | 指標 | 完全にサポートされます。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
-| 指標の重複排除 | 完全にサポートされます。 |
+| 指標の重複排除 | フルサポート |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
 | PDF の書き出し | フルサポート |
 | プロジェクトのキュレーション | フルサポート |
@@ -45,7 +45,7 @@ ht-degree: 92%
 | レポート API へのアクセス | 完全にサポートされます。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | フルサポート |
 | セグメント | 完全にサポートされます。現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ユーザー権限／データアクセス制御 | 完全にサポートされます。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>ワークスペースプロジェクトをすべてのユーザーと共有する.</li></ul> |
+| ユーザー権限／データアクセス制御 | 完全にサポートされます。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除をおこなう</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する。</li></ul> |
 | 仮想レポートスイート | 完全にサポートされます。現在は、 [データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | 完全にサポートされます。データビューの一部になりました。 |
 
@@ -70,7 +70,7 @@ ht-degree: 92%
 
 | 機能 | メモ |
 | --- | --- |
-| ボットフィルタリング | の場合 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)ベースのデータセットの場合、ボットフィルタリングが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
+| ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | Media Analytics | メディアデータは、Analytics ソースコネクタの一部として使用できます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
@@ -81,17 +81,17 @@ ht-degree: 92%
 | --- | --- |
 | アラート | サポートが予定されています。 |
 | カレンダーイベント | Workspace では「注釈」と呼ばれます。 |
-| 分類ルールビルダー | CJA での動作は、ルックアップデータセットではなく、レポート時に文字列操作を使用する場合とは少し異なります。 |
+| 分類ルールビルダー | CJA での動作（ルックアップデータセットではなく、レポート時に文字列操作を使用する）とは少し異なります。 |
 | 貢献度分析 | サポートが予定されています。 |
 | Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)でも、CJA におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
-| 上昇率および信頼性レポート | サポートが予定されています。 |
+| リフトおよび信頼性レポート | サポートが予定されています。 |
 | 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | サポートは計画的におこなわれていますが、より柔軟で遡及的かつ非破壊的なデータ操作のために、データ収集時ではなくクエリ時に動作します。 |
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「オーディエンスの投稿」と呼ばれます。 |
-| 新規セッションレポートとリピートセッションレポート | サポートは、いくつかの注意事項を含めて計画されています。 |
+| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「Audience パブリッシング」と呼ばれます。 |
+| 新規セッションレポートとリピートセッションレポート | 予定されているサポートには、いくつかの注意事項があります。 |
 
 ## サポートの予定はありません
 
