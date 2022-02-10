@@ -3,20 +3,28 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b32822f8513e2c4fb2fbabc0315314a56aa903dd
+source-git-commit: 70d16bd241531b84cc7314a7d11439381e90b566
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 69%
+source-wordcount: '144'
+ht-degree: 24%
 
 ---
 
-# 現在の Customer Journey Analytics リリースノート
+# 現在の Customer Journey Analytics リリースノート (2022 年 2 月)
+
+>[!IMPORTANT]
+>
+>これらのリリースノートには、変更される可能性のあるリリース前の情報が含まれています。
+
+**最終更新日**:2022 年 2 月 11 日
 
 ## 主な特長
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| 今月は新機能はありません | 該当なし | 該当なし |
+| モバイルスコアカードプロジェクトのプレビューモード | Analytics ダッシュボードアプリでのモバイルスコアカードの表示方法を、スコアカードビルダーから直接開始します。 プレビューモードを使用すると、ユーザーはアプリ内と同じ方法でフィルターやグラフを操作でき、スコアカードを保存および共有する前にエクスペリエンスをプレビューできます。 また、デバイスピッカーをプレビューモードで使用して、様々なデバイスでのスコアカードの表示を確認することもできます。 | 2022年2月16日（PT） |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 修正点
 
