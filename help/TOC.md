@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 99%
+source-wordcount: '589'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,18 @@ ht-degree: 99%
 # Customer Journey Analytics ガイド {#using}
 
 + [Customer Journey Analytics ガイド](getting-started/cja-landing.md)
++ リリースノート {#releases}
+   + [最新リリース](release-notes/latest.md)
+   + [2022 年 リリース](release-notes/2022.md)
+   + [2021 年 リリース](release-notes/2021.md)
+   + [2020 年 リリース](release-notes/2020.md)
+   + [CJA リリース](release-notes/releases.md)
+   + [CJA ドキュメントのアップデート](release-notes/doc-changes.md)
 + Customer Journey Analytics の概要 {#cja-overview}
    + [Customer Journey Analytics の概要](getting-started/cja-overview.md)
    + [はじめに](getting-started/cja-getting-started.md)
    + [よくある質問](getting-started/cja-faq.md)
+   + [Adobe AnalyticsからCustomer Journey Analyticsへの移行の準備](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
    + [削除の影響](getting-started/cja-deletion.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
@@ -205,11 +213,5 @@ ht-degree: 99%
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
-+ リリースノート {#releases}
-   + [最新リリース](release-notes/latest.md)
-   + [2022 年 リリース](release-notes/2022.md)
-   + [2021 年 リリース](release-notes/2021.md)
-   + [2020 年 リリース](release-notes/2020.md)
-   + [CJA リリース](release-notes/releases.md)
-   + [CJA ドキュメントのアップデート](release-notes/doc-changes.md)
+
 
