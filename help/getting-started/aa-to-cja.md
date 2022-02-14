@@ -3,13 +3,13 @@ title: Adobe AnalyticsからCustomer Journey Analyticsへの移行
 description: Adobe AnalyticsからCustomer Journey Analyticsへの移行手順
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 868cd819148b29436fbd92cf220c8bc4cb9e0725
+exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
+source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1060'
 ht-degree: 6%
 
 ---
-
 
 # Adobe AnalyticsからCustomer Journey Analyticsへの移行の準備
 
@@ -24,10 +24,10 @@ Customer Journey Analyticsにシームレスに移行するためにAdobe Analyt
 おそらく、カスタマージャーニーを理解する上で最も重要な要素は、各ステップで顧客が誰であるかを把握することです。 Customer Journey Analyticsの場合、すべてのチャネルと対応するデータに存在する識別子を持つことで、CJA 内で複数のソースを結び付けることができます。
 ID の例としては、顧客 ID、アカウント ID、電子メール ID などがあります。 ID（および複数の ID が存在する場合）に関係なく、各 ID に対して次の点を必ず考慮してください。
 
-* CJA に取り込むすべてのデータソース上にが存在する、またはに追加できます。
-* データの各行に対して入力されます
-* PII が含まれていません。 機密性が高い可能性のあるすべての要素にハッシュを適用します。
-* すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用し、
+* ID が存在するか、CJA に取り込むすべてのデータソースに追加できます。
+* ID はデータの各行に対して設定されます
+* ID に PII が含まれていません。 機密性が高い可能性のあるすべての要素にハッシュを適用します。
+* ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用し、
 
 Adobe Analyticsなどのデータセットでは、データのすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。 この場合、クロスチャネル分析（以前の「フィールドベースのステッチ」）は、顧客が ECID でのみ識別される場合と、ID が収集される場合（例えば、顧客の認証時）との間のギャップを埋めるために使用できます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)
 
@@ -51,9 +51,9 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsに簡単に移行する
 
 Adobeが公開されました [マーケティングチャネルの実装に関するベストプラクティスの更新](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=en). これらの更新された推奨事項は、Attribution IQを使用して既にAdobe Analyticsにある機能を最大限に活用するのに役立ちます。 また、Customer Journey Analyticsへの移行時に、成功に向けた設定もおこなわれます。
 
-### 4. Analytics Data Connector とExperience PlatformSDK の使用を決定する
+### 4. Analytics ソースコネクタとExperience PlatformSDK の使用を決定する
 
-形式 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集の進化に伴い、Adobe Experience Platform Web SDK またはAdobe Experience Platform Edge Network を使用したAdobe Experience Platform Mobile SDK に移行する可能性が高くなります。 SDK の一般的な実装ではAdobe Analyticsにデータを送信しますが、新しいオポチュニティが自らAdobe Experience Platformに直接データを送信する機会を提供します。 その後、Adobe Analyticsに送信するデータを維持しながら、Customer Journey Analyticsに取り込むことができます。
+形式 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集の進化に伴い、次のいずれかに移行する可能性があります。 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en) または [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) とAdobe Experience Platform Edge Network の連携が可能です。 SDK の一般的な実装ではAdobe Analyticsにデータを送信しますが、新しいオポチュニティが自らAdobe Experience Platformに直接データを送信する機会を提供します。 その後、Adobe Analyticsに送信するデータを維持しながら、Customer Journey Analyticsに取り込むことができます。
 
 この方法により、次のようなデータ収集の可能性が大幅に広がります。フィールドの数や、Analytics などの prop、eVar およびイベントにデータ要素をマッピングする必要性に制限はなくなりました。 CJA を使用すると、様々なタイプの無制限のスキーマ要素を使用し、複数の方法でそれらを表すことができます [データビュー](/help/data-views/data-views.md). Adobe Analyticsを介したデータ処理の時間がなくなると、Adobe Experience Platformに直接送信するとデータ可用性の速度が向上します。
 
