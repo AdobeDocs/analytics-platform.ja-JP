@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 83%
 
 ---
 
@@ -24,19 +24,20 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail">強化された接続管理機能の使用方法</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews">強化されたデータビュー機能の使用方法</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=ja#cja-usecases"> Adobe Experience Platform への Google Analytics データの取り込みに関するドキュメント </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=ja#cja-usecases"> CJA での Google Analytics データの分析に関するドキュメント </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en"> Adobe AnalyticsからCustomer Journey Analyticsへの移行の準備 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=en"> CJA でのバインディングディメンションと指標の使用 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en"> Adobe Experience Platform でのマーケティングチャネルディメンションの使用
+ </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 強化されたデータビュー機能の使用 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=ja#cja-usecases"> Google Analytics データの Adobe Experience Platform への取り込み </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=ja#cja-usecases"> CJA での Google Analytics データの分析 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#cja-connections"> クロスチャネル分析（Customer Journey Analytics での ID のステッチ） </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions">ユーザー権限の要件を更新</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=ja#cja-usecases"> オブジェクトの配列の使用 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=ja">アカウントレベルのデータをルックアップデータセットとして追加</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja">Customer Journey Analytics を使い始める</a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja">よくある質問</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>リリースノート</b> </p> 
     <ul> 
-     <li>新機能と修正点については、最新の <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
+     <li>最新の <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en" format="https" scope="external"> Customer Journey Analyticsメモ</a> を参照してください。 </li> 
     </ul> <p class="head"> <b>Adobe Experience Platform リソース</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/jp/experience-platform.html" format="http" scope="external">Adobe Experience Platform</a> </li> 

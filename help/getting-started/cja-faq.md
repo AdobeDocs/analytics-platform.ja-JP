@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
+source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
 workflow-type: tm+mt
 source-wordcount: '1646'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -79,8 +79,8 @@ ht-degree: 97%
 
 | 目的 | 結果 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。現在、削除されたサンドボックスに関連付けられている CJA 内の接続は、自動的には削除されません。 |
-| [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上のデータセットが関連付けられているスキーマを削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
+| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。現在、 [!UICONTROL 接続] 削除されたサンドボックスに関連付けられている CJA 内は自動的には削除されません。 |
+| [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform][!UICONTROL  では、1 つ以上のデータセットが関連付けられているスキーマを削除することはできません。]ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
 | [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | AEP データレイクのデータセットを削除すると、そのデータセットから、そのデータセット自体を含むすべての CJA 接続へのデータフローが停止します。データセットのデータは、関連付けられた CJA 接続からは自動的に削除されません。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 現在、保存された接続内のデータセットを削除することはできません。接続全体を削除して、操作をやり直す必要があります。（ただし、CJA SKU を購入したお客様は、 [!UICONTROL Adobe Experience Platform] ユーザーインターフェイスのデータセットを削除できます）。 |
 | （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | [!UICONTROL Adobe Experience Platform] のデータセットからバッチを削除すると、そのバッチを含む CJA 接続からも同じバッチが削除されます。  CJA には、[!UICONTROL Adobe Experience Platform] のバッチが削除されたことが通知されます。 |
