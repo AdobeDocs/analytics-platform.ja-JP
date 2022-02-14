@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 100%
+source-wordcount: '1646'
+ht-degree: 97%
 
 ---
 
@@ -57,15 +57,15 @@ ht-degree: 100%
 
 | 質問 | 回答 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます。</li><li>バッチサイズが 5,000 万行を超える場合：90 分以上</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：24 時間以内<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
+| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます。( バッチサイズ > 5000 万行：90 分以上 )</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：24 時間以内<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
 
 
 ## 5. 従来の [!UICONTROL Adobe Analytics] コンポーネント
 
 | 質問 | 回答 |
 | --- | --- |
-| フィルター（セグメント）を Customer Journey Analytics から Experience Platform 統合プロファイルまたは他の Experience Cloud アプリケーションに共有または公開することはできますか？ | 現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。 |
-| 古い eVar 設定はどうなりましたか。 | 従来の Adobe Analytics の eVar、prop およびイベントは、[!UICONTROL Customer Journey Analytics] にはもはや存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
+| 共有/公開できますか [!UICONTROL フィルター] ([!UICONTROL セグメント]から ) [!DNL Customer Journey Analytics] を統合プロファイルまたは他のExperience Cloud・アプリケーションにExperience Platformしますか。 | 現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。 |
+| 私の昔の事はどうなったのか [!UICONTROL eVar] 設定する？ | [!UICONTROL eVar], [!UICONTROL prop]、および [!UICONTROL イベント] 従来のAdobe Analyticsの感覚では、もはや～に存在しない [!UICONTROL Customer Journey Analytics]. スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
 | すべてのセッションと変数の永続性の設定は、どこにありますか。 | [!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
 | 既存のセグメント／計算指標はどうなりますか。 | [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。 |
 | [!UICONTROL Customer Journey Analytics] での `Uniques Exceeded` 制限の処理方法を教えてください。 | [!UICONTROL Customer Journey Analytics] には一意の値に関する制限がないので、ご心配は不要です。 |
