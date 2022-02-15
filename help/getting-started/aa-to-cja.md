@@ -4,10 +4,10 @@ description: Adobe AnalyticsからCustomer Journey Analyticsへの移行手順
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1234'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Analyticsなどのデータセットでは、データのすべての行�
 
 ### 2.変数を揃えます。
 
-Adobe AnalyticsのデータをCustomer Journey Analyticsに簡単に移行するには、 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics変数を AEP の XDM スキーマとデータセットに直接マッピングし、AEP では CJA に簡単に接続できます。
+Adobe AnalyticsのデータをCustomer Journey Analyticsに簡単に移行するには、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) を使用してExperience Platformに [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics変数を AEP の XDM スキーマとデータセットに直接マッピングし、AEP では CJA に簡単に接続できます。
 
 完全なグローバルレポートスイートは、実装が可能とは限らない場合があります。 複数のレポートスイートをCustomer Journey Analyticsに取り込む場合は、これらのレポートスイート間で変数を整合させる計画を立てる必要があります。
 
@@ -77,7 +77,7 @@ Adobeが公開されました [マーケティングチャネルの実装に関�
 
 ### レポート時間処理に慣れる
 
-Adobe Analyticsのレポートは、永続性などの結果を生成するために大量のデータの前処理に依存しています ( [!UICONTROL eVar]. Customer Journey Analyticsは、レポートの実行時にこれらの計算を実行します。
+Adobe Analyticsのレポートは、永続性などの結果を生成するために大量のデータの前処理に依存しています ( [!UICONTROL eVar]. これに対し、Customer Journey Analyticsは、レポートの実行時にこれらの計算を実行します。
 
 [!UICONTROL レポート時間処理] 遡及的な設定を適用し、基になるデータの収集方法を変更することなく、変数永続性の複数のバージョンを作成できる機能を開きます。
 
@@ -100,6 +100,14 @@ Adobe Analyticsセグメント ( [!UICONTROL フィルター] （CJA の場合�
 * [Adobe AnalyticsセグメントのCustomer Journey Analyticsへの移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### その他の考慮事項
+
+* CJA データビューの機能を使用すると、Customer Journey Analytics内で指標とディメンションをより柔軟に定義できます。 例えば、ディメンションの値を使用して指標の定義を作成できます。 [詳細情報](/help/data-views/data-views-usecases.md)
+
+* Adobe Analyticsでカスタムカレンダーを定義した場合、CJA 内でも同様のカレンダー機能を使用できます。 カレンダーが正しく定義されていることを確認する必要があります。
+
+* Customer Journey Analyticsでは、カスタムの訪問/セッションタイムアウトを定義でき、新しいセッションを開始する指標を定義できます。 様々なセッション定義を使用してデータビューを作成し、Adobe Analyticsで可能な範囲を超えるインサイトを得ることができます。 この機能は、モバイルデータセットで特に役立つ場合があります。
 
 ## 次の手順
 
