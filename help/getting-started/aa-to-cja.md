@@ -4,9 +4,9 @@ description: Adobe AnalyticsからCustomer Journey Analyticsへの移行手順
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
+source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1096'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Adobeが公開されました [マーケティングチャネルの実装に関�
 
 **Experience PlatformSDK を使用する際の欠点**
 
-次のAdobe Analyticsコンポーネントはサポートされていません。
+次のAdobe Analyticsの機能またはコンポーネントはサポートされていません。
 
 * マーケティングチャネル
 * ボットフィルタリング
@@ -77,15 +77,15 @@ Adobeが公開されました [マーケティングチャネルの実装に関�
 
 ### レポート時間処理に慣れる
 
-Adobe Analyticsのレポートは、eVar で確認できる永続性などの結果を生み出すために、大量のデータの前処理に依存しています。 Customer Journey Analyticsは、レポートの実行時にこれらの計算を実行します。
+Adobe Analyticsのレポートは、永続性などの結果を生成するために大量のデータの前処理に依存しています ( [!UICONTROL eVar]. Customer Journey Analyticsは、レポートの実行時にこれらの計算を実行します。
 
-レポート時間処理を使用すると、遡及的な設定を適用し、基になるデータの収集方法を変更することなく、変数永続性の複数のバージョンを作成できます。
+[!UICONTROL レポート時間処理] 遡及的な設定を適用し、基になるデータの収集方法を変更することなく、変数永続性の複数のバージョンを作成できる機能を開きます。
 
 この変更により、特に有効期限が長い変数について、データのレポート方法に多少の違いが生じます。 まず、 [仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html).
 
 ### 重要なセグメントと計算指標の特定
 
-Adobe Analyticsのセグメント（CJA ではフィルターと呼ばれます）と計算指標は、Customer Journey Analyticsとは互換性がありません。 多くの場合、CJA では、使用可能な新しいスキーマとデータを使用して、これらのコンポーネントを再構築できます。
+Adobe Analyticsセグメント ( [!UICONTROL フィルター] （CJA の場合）および計算指標は、Customer Journey Analyticsとの互換性がありません。 多くの場合、CJA では、使用可能な新しいスキーマとデータを使用して、これらのコンポーネントを再構築できます。
 
 ユーザーがシステム間を移行する際に、移行をできるだけスムーズにおこなうには、次の手順で計画します。
 
@@ -100,3 +100,7 @@ Adobe Analyticsのセグメント（CJA ではフィルターと呼ばれます�
 * [Adobe AnalyticsセグメントのCustomer Journey Analyticsへの移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+## 次の手順
+
+CJA に移行した後、データの相違に気付いた場合、元のAdobe Analyticsデータと、現在Customer Journey Analytics中のAdobe Analyticsデータを比較できます。 [詳細情報](/help/troubleshooting/compare.md)
