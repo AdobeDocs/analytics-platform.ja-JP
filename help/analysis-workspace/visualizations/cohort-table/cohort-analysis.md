@@ -4,9 +4,9 @@ description: Analysis Workspace でのコホート分析について説明しま
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 74%
 
 *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。[!UICONTROL コホート分析は]、例えば、コホートがブランドとどのように関わっているかを学ぶ場合に便利です。トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://en.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。
 
-コホートレポートを作成した後、そのコンポーネント（特定のディメンション、指標およびフィルター）をキュレーションして、誰とでもコホートレポートを共有できます。 詳しくは、 [キュレーションおよび共有](/help/analysis-workspace/curate-share/curate.md).
+コホートレポートを作成したら、コンポーネント（特定のディメンション、指標およびフィルター）をキュレートして、任意のユーザーとコホートレポートを共有できます。[キュレートおよび共有](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 
 [!UICONTROL コホート分析]では、例えば次の操作をおこなえます。
 
@@ -24,7 +24,7 @@ ht-degree: 74%
 * 価格やアップグレードパスなどの領域で、A/B テストの着想を得る。
 * ガイド付き分析内に[!UICONTROL コホート分析]レポートを表示する。
 
-[!UICONTROL コホート分析] は、へのアクセス権を持つすべてのCustomer Journey Analyticsユーザーが利用できます。 [!UICONTROL Analysis Workspace].
+[!UICONTROL コホート分析]は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべての Customer Journey Analytics ユーザーが利用できます。
 
 [コホート分析のビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=ja) （4:36）
 
@@ -32,7 +32,7 @@ ht-degree: 74%
 >
 >[!UICONTROL コホート分析]
 >
->は、フィルタリング不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。 フィルターで使用できる指標のみが
+>は、フィルタリングできない指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。フィルターで使用できる指標のみを
 >[!UICONTROL コホート分析]で使用できます。一度に 1 つのみ増やすことができます。
 
 ## コホート分析の機能
@@ -41,13 +41,13 @@ ht-degree: 74%
 
 ### [!UICONTROL リテンションテ]ーブル
 
-[!UICONTROL リテンション]コホートレポートが訪問者を返す：各データセルは、その期間にアクションをおこなったコホートの生の訪問者数と割合を表します。指標は最大 3 つ、フィルターは最大 10 個含めることができます。
+[!UICONTROL リテンション]コホートレポートが訪問者を返す：各データセルは、その期間にアクションをおこなったコホートの生の訪問者数と割合を表します。指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL チャーンテーブル]
 
-[!UICONTROL チャーン]コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした訪問者、または一定期間内にリターン条件を満たしていない訪問者が表示されます。指標は最大 3 つ、フィルターは最大 10 個含めることができます。
+[!UICONTROL チャーン]コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした訪問者、または一定期間内にリターン条件を満たしていない訪問者が表示されます。指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
 ![](assets/churn-report.png)
 
@@ -65,8 +65,8 @@ ht-degree: 74%
 
 ### [!UICONTROL カスタムディメンショ]ンコホート
 
-デフォルトの時間に基づくコホートではなく、選択したディメンションに基づいてコホートを作成します。次のようなディメンションを使用します。 [!UICONTROL マーケティングチャネル], [!UICONTROL campaign], [!UICONTROL 製品], [!UICONTROL ページ], [!UICONTROL 地域]またはCustomer Journey Analytics内のその他のディメンションで、これらのディメンションの異なる値に基づいて保持がどのように変化するかを示します。
+デフォルトの時間に基づくコホートではなく、選択したディメンションに基づいてコホートを作成します。[!UICONTROL マーケティングチャネル]、[!UICONTROL キャンペーン]、[!UICONTROL 製品]、[!UICONTROL ページ]、[!UICONTROL 地域]などのディメンションや、Customer Journey Analytics のその他のディメンションを使用して、これらのディメンションの様々な値に基づいてリテンションがどのように変化しているかを表示します。
 
 ![](assets/cohort-customizable-cohort-row.png)
 
-コホートレポートを設定および実行する方法については、「[コホート分析レポートの設定](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)」を参照してください。
+コホートレポートを設定および実行する方法については、[コホート分析レポートの設定](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)を参照してください。
