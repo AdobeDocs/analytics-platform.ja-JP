@@ -1,19 +1,19 @@
 ---
-description: Analysis Workspaceでデータを視覚的に表します。
+description: Analysis Workspace でデータを視覚的に表します。
 keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # ビジュアライゼーションの概要
 
-Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。ほとんどのビジュアライゼーションタイプは、Customer Journey Analyticsを使用したことに慣れ親しんでいます。 しかし、Analysis Workspace にはビジュアライゼーション設定があり、インタラクティブ機能を備えた新しいまたは独自のビジュアライゼーションタイプを数多く揃えています。
+Workspace オファーには、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションがあります。Customer Journey Analytics を使用すると、ほとんどのビジュアライゼーションタイプは使い慣れたものとなります。しかし、Analysis Workspace にはビジュアライゼーション設定があり、インタラクティブ機能を備えた新しいまたは独自のビジュアライゼーションタイプを数多く揃えています。
 
 ビジュアライゼーションには、Workspace の左上のアイコン、[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)、またはワークフローの右クリックメニューからアクセスできます。
 
@@ -39,7 +39,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセル間の変化を 1 つの大きい数値/パーセントで表示します。 |
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストを Workspace に追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
-| [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表現します。 |
+| [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
 
 ## 設定 {#settings}
 
@@ -78,7 +78,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 ## 右クリックメニュー {#right-click}
 
-ビジュアライゼーションの追加機能は、ビジュアライゼーションのヘッダーを右クリックすると使用できます。 設定は、ビジュアライゼーションによって異なります。 次の設定を使用できます。
+ビジュアライゼーションの追加機能は、ビジュアライゼーションのヘッダーを右クリックすると使用できます。設定は、ビジュアライゼーションによって異なります。 次の設定を使用できます。
 
 ![右クリック](assets/right-click.png)
 
@@ -95,6 +95,6 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 ## ビジュアルを作成アイコン {#quick-viz}
 
-どのビジュアライゼーションが選択されるかわからない場合は、テーブルの行にある&#x200B;**[!UICONTROL ビジュアルを作成]**&#x200B;アイコン（カーソルを合わせると使用できます）をクリックします。これは、ビジュアライゼーションを追加する最も速い方法です。 クリックすると、データに最適なビジュアライゼーションを Analysis Workspace が学習に基づいて推測することの確認が表示されます。例えば、1 行を選択した場合、トレンド折れ線グラフが作成されます。 3 つのフィルター行を選択した場合、ベン図が作成されます。
+どのビジュアライゼーションが選択されるかわからない場合は、テーブルの行にある&#x200B;**[!UICONTROL ビジュアルを作成]**&#x200B;アイコン（カーソルを合わせると使用できます）をクリックします。これは、ビジュアライゼーションを追加する最も速い方法です。 クリックすると、データに最適なビジュアライゼーションを Analysis Workspace が学習に基づいて推測することの確認が表示されます。例えば、1 行を選択した場合、トレンド折れ線グラフが作成されます。 3 つのフィルター行を選択した場合は、ベン図が作成されます。
 
 ![クイックビジュアライゼーション](assets/quick-viz.png)
