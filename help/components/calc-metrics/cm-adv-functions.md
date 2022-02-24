@@ -4,7 +4,7 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ AND(logical_test1,[logical_test2],...)
 | 引数 | 説明 |
 |---|---|
 | *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | （オプション）TRUE または FALSE として求める追加の条件です。 |
+| *logical_test2* | （オプション）。TRUE または FALSE として求める追加の条件です。 |
 
 ## 個別概算カウント（ディメンション）
 
@@ -466,7 +466,7 @@ OR(logical_test1,[logical_test2],...)
 | 引数 | 説明 |
 |---|---|
 | *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | （オプション）TRUE または FALSE として求める追加の条件です。 |
+| *logical_test2* | （オプション）。TRUE または FALSE として求める追加の条件です。 |
 
 ## 円周率
 
