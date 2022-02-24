@@ -1,12 +1,12 @@
 ---
-description: フロー機能は、Web サイトやアプリの顧客パスを表示します。
+description: フロー機能は、web サイトおよびアプリの顧客パスを表示します。
 title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 88%
 
 * Web サイトやアプリケーションでのカスタマージャーニーをビジュアライズする
 * 入口、特定のディメンション、出口など、指定したチェックポイントの前後で顧客がどこに移動するかを分析する
-* 選択したパスの特定のポイントを指定してフィルターを作成
+* 選択したパスの特定のポイントを指定することによりセグメントを作成
 
-[フローのビジュアライゼーションに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=ja)（4:56）
+[フロービジュアライゼーションに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=ja)（4:56）
 
 ## ディメンション間のフロー {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
