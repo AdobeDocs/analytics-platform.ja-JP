@@ -4,7 +4,7 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # パネルの概要
 
-[!UICONTROL パネル] は、テーブルとビジュアライゼーションのコレクションです。パネルには、ワークスペースの左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。パネルは、期間、データビュー、分析ユースケースに照らしてプロジェクトを整理する場合に役立ちます。
+[!UICONTROL パネル] は、テーブルとビジュアライゼーションのコレクションです。パネルには、ワークスペースの左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。パネルは、期間、データビュー、分析ユースケースに従ってプロジェクトを整理する場合に役立ちます。
 
 ## パネルタイプ
 
