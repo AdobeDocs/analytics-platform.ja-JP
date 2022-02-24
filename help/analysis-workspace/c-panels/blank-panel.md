@@ -1,12 +1,12 @@
 ---
-description: Analysis Workspaceの空白パネルの使用方法。
+description: Analysis Workspace で空のパネルを使用する方法。
 title: 空のパネル
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
