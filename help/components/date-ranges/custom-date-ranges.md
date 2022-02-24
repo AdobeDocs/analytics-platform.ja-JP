@@ -5,13 +5,13 @@ title: Analysis Workspace でカスタム日付範囲を作成
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
 ht-degree: 100%
 
 ---
 
-# カスタム日付範囲の作成
+# カスタム日付範囲を作成
 
 >[!NOTE]
 >
