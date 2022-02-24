@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 「**[!UICONTROL 既存のすべてのデータをインポート]**」を実行すると、履歴データをバックフィルできます。次の点に注意してください。
 
-* バックフィル（履歴データのインポート）の制限が解除されました。以前は、ユーザー自身でバックフィルできるのは最大 25 億行までで、それ以上バックフィルするには、エンジニアリングチームの関与が必要でした。現在は、ユーザー自身で無制限にデータをバックフィルできます。
+* バックフィル（履歴データのインポート）の制限が解除されました。以前は、ユーザー自身でバックフィルできるのは最大 25 億行までで、それ以上の場合はエンジニアリングチームの関与が必要でした。現在は、ユーザー自身で無制限にデータをバックフィルできます。
 * 接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。
 * バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、現在の履歴データの量と、選択した「**[!UICONTROL 毎日のイベントの平均数]**」設定の両方に左右されます。例えば、1 日あたり 10 億行を超えるデータと 3 年分の履歴データがある場合は、インポートに数週間かかる可能性があります。一方、1 日あたり 100 万行未満のデータと 1 週間分の履歴データがある場合は、1 時間未満で済みます。
 * バックフィルは、各データセットに個別に適用されるのではなく、接続全体に適用されます。
@@ -142,7 +142,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：
 
