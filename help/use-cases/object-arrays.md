@@ -5,7 +5,7 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
@@ -67,19 +67,19 @@ ht-degree: 100%
 
 * **ディメンション：**
    * ID
-   * product : SKU
-   * product : name
-   * product : order_id
-   * product : warranty : coverage
-   * prodcut : warranty : length
-   * product : warranty : name
-   * product : warranty : type
+   * product : SKU
+   * product : name
+   * product : order_id
+   * product : warranty : coverage
+   * prodcut : warranty : length
+   * product : warranty : name
+   * product : warranty : type
 * **指標：**
-   * product : orders
-   * product : units
-   * product : revenue
-   * product : warranty
-   * product : warranty : revenue
+   * product : orders
+   * product : units
+   * product : revenue
+   * product : warranty
+   * product : warranty : revenue
 
 ### 同じヒットの例（レポートの動作）
 
