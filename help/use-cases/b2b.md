@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 これらをすべて実現するには、アカウントレベルの情報を[ルックアップ](/help/getting-started/cja-glossary.md)データセットとして取り込みます。
 
-最初に Adobe Experience Platform でルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取得してルックアップテーブルデータセットを作成します。次に、Customer Journey Analytics（CJA0）作成したルックアップデータセットを含む、様々なデータセットを組み合わせた で接続を作成します。 その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
+最初に Adobe Experience Platform でルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取得してルックアップテーブルデータセットを作成します。次に、Customer Journey Analytics（CJA）作成したルックアップデータセットを含む、様々なデータセットを組み合わせた で接続を作成します。 その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 例えば、次の例では annualRevenue または totalEmployees を整数として定義しています。そのため、CJA では「0」と表示されています。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ管理／データセット]**&#x200B;に移動します。
-1. 「**[!UICONTROL +データセットを作成]**」をクリックします。
+1. 「**[!UICONTROL + データセットを作成]**」をクリックします。
 1. 「**[!UICONTROL スキーマからのデータセットの作成]**」をクリックします。
 1. 作成したルックアップスキーマクラスを選択します。
 1. 「**[!UICONTROL 次へ]**」をクリックします。
