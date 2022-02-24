@@ -1,12 +1,12 @@
 ---
-description: ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。
+description: ヒストグラムは、棒グラフに似ていますが、数値を範囲（バケット）にグループ化します。
 title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >
 >Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#section_09D774C584864D4CA6B5672DC2927477)で設定を変更できます。
+ヒストグラムは、棒グラフに似ていますが、数値を範囲（バケット）にグループ化します。Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#section_09D774C584864D4CA6B5672DC2927477)で設定を変更できます。
 
 ## ヒストグラムのビルド {#section_74647707CC984A1CB6D3097F43A30B45}
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 | 開始グループ | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
 | 指標グループ | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
 | 指標グループのサイズ | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
-| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)またはヒットタイプから選択できますタイプ。例えば、訪問ごとのページビュー、訪問者ごとのページビュー、ヒットごとのページビューです。ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
+| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問ごとのページビュー、訪問者ごとのページビュー、ヒットごとのページビューです。ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -60,8 +60,8 @@ ht-degree: 91%
 
 ![](assets/manage-data-source.png)
 
-テーブルに表示される事前定義済みフィルターは、内部フィルターで、フィルターセレクターには表示されません。 フィルター名の横にある「i」アイコンをクリックし、 **[!UICONTROL 公開する]** をクリックして、フィルターを公開します。
+テーブルに表示される事前定義済みフィルターは、内部フィルターで、フィルターセレクターには表示されません。フィルター名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックしてフィルターを公開します。
 
 ![](assets/prebuilt_segments.png)
 
-データを分類するなど、フリーフォームデータテーブルおよびその他のビジュアライゼーションを管理するその他の方法を確認するには、 [こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja) を参照してください。
+データを分類するなど、フリーフォームデータテーブルおよびその他のビジュアライゼーションを管理するその他の方法については、[こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja)を参照してください。
