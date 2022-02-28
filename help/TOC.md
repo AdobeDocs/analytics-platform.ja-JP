@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics ガイド
-user-guide-description: このガイドは、Adobe Experience Platform に基づいた、クロスチャネル分析用の Adobe の次世代ソリューションである Customer Journey Analytics に対する、セルフサービスでのサポートを提供します。
+user-guide-description: このガイドでは、Adobe Experience Platformに基づく、Adobeのクロスチャネル分析向けの次世代ソリューションであるCustomer Journey Analyticsのサポートを提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
+source-git-commit: 47c025bc8c84515cfb9ba3d357fe897bb018648a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 97%
+source-wordcount: '597'
+ht-degree: 94%
 
 ---
 
@@ -153,6 +153,11 @@ ht-degree: 97%
    + [Report Builder の設定](report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
+   + 注釈 {#annotations}
+      + [注釈の概要](components/annotations/overview.md)
+      + [注釈を作成](components/annotations/create-annotations.md)
+      + [注釈を管理](components/annotations/manage-annotations.md)
+      + [注釈を表示](components/annotations/view-annotations.md)
    + ディメンション {#dimensions}
       + [ディメンションのプレビュー](components/dimensions/view-dimensions.md)
       + [ディメンションの分類](components/dimensions/t-breakdown-fa.md)
