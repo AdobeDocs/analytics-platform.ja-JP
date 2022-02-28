@@ -4,10 +4,10 @@ description: ワークスペースでの注釈の作成方法
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 61%
+source-wordcount: '608'
+ht-degree: 62%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 61%
 
 | 作成方法 | 詳細 |
 | --- | --- |
-| **に移動します。 [!UICONTROL Analytics] > [!UICONTROL コンポーネント] > [!UICONTROL 注釈].** | 注釈マネージャーのページが開きます。「[!UICONTROL 新しい注釈を作成]」をクリックすると、注釈ビルダーが開きます。 |
+| **に移動します。 [!UICONTROL コンポーネント] > [!UICONTROL 注釈].** | 注釈マネージャーのページが開きます。「[!UICONTROL 新しい注釈を作成]」をクリックすると、注釈ビルダーが開きます。 |
 | **テーブル上の点を右クリックします。** | [!UICONTROL 注釈ビルダーが開きます。]なお、この方法で作成された注釈は、デフォルトでは、作成されたプロジェクトでのみ表示されます。ただし、すべてのプロジェクトで利用できるようにすることができます。また、日付や指標などは既に設定されています。<p>![](assets/annotate-table.png) |
 | **点を右クリックし、 [!UICONTROL 線] グラフ。** | この [!UICONTROL 注釈ビルダー] が開きます。 なお、この方法で作成された注釈は、デフォルトでは、作成されたプロジェクトでのみ表示されます。ただし、すべてのプロジェクトで利用できるようにすることができます。また、日付や指標などは既に設定されています。<p>![](assets/annotate-line.png) |
 | **Workspace で、に移動します。 [!UICONTROL コンポーネント] > [!UICONTROL 注釈を作成].** | この [!UICONTROL 注釈ビルダー] が開きます。 |
