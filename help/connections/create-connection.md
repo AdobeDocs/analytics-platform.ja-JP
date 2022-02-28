@@ -4,9 +4,9 @@ description: Customer Journey Analytics でプラットフォームデータセ�
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1980'
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+workflow-type: tm+mt
+source-wordcount: '1971'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL ワークスペース] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL ワークスペース] のデータセット間で接続を確立する必要があります。
 
-ビデオの概要については、[こちら](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ja)をクリックしてください。
+以下は、このトピックの概要に関するビデオです。
+
+>[!VIDEO](https://video.tv.adobe.com/v/32549/?quality=12)
 
 ## 必要な権限
 
@@ -142,7 +144,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 この計算は、接続内のすべてのデータセットに対しておこなう必要があります。
 
-1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) に移動して、新しいクエリを作成します。
+1. [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) に移動して、新しいクエリを作成します。
 
 1. クエリは次のようになります：
 

@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 92%
+source-wordcount: '1266'
+ht-degree: 88%
 
 ---
 
@@ -19,9 +19,11 @@ CJA アーキテクチャの概要を次に示します。
 
 ![アークテクチャ](assets/cja-architecture.png)
 
+次のビデオ：
+
 ## CJA と従来の Adobe Analytics の比較
 
-Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Analytics の範囲を広げます。主な改善点を次に示します。
+Customer Journey Analyticsは、使いやすいクロスチャネル機能を提供し、以前のバージョンのAdobe Analyticsの制限を取り除くことで、Adobe Analyticsの範囲を広げます。 主な改善点を次に示します。
 
 * **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットは、一意のディメンションと指標の数に制限はありません。
 * **無制限の一意の値**：Adobe Experience Platform では、一意制限を受けることはありません。
@@ -68,11 +70,11 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
    * ID 名前空間の表示
    * データセットの表示
 
-Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)を参照してください。
+Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en)を参照してください。
 
 >[!NOTE]
 >
->従来の Adobe Analytics の場合とは異なり、Customer Journey Analytics 内の個々の指標やディメンションに権限を設定することはできません。 指標とディメンションはデータビューで変更できるため、CJA で変更される可能性があり、レポートも遡って変更されます。
+>従来の Adobe Analytics の場合とは異なり、Customer Journey Analytics 内の個々の指標やディメンションに権限を設定することはできません。 指標およびディメンションは、 [データビュー](/help/data-views/data-views.md) したがって、CJA での変更が生じる可能性があり、レポートも遡って変更されます。
 
 ### ユーザーアクセス
 
@@ -102,3 +104,14 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 * [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)：
 * [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en)：
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en)（「開発者」オプション）：Adobe Experience Platform にあらかじめ組み込まれた人工知能（AI）および機械学習モデルを使用して、カスタマージャーニーの様々なポイントに影響を与えることができます。隠れたインサイトを把握することで、カスタマージャーニーを通じてより優れた予測をおこなったり、推奨される次のステップを提案したり、面倒なプロセスを自動化したりできます。
+
+## ビデオ
+
+* データの操作Customer Journey Analytics:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+
+* Customer Journey Analytics のアーキテクチャと統合:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+
