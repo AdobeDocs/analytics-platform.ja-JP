@@ -1,17 +1,17 @@
 ---
-title: CJA でのバインディングディメンションと指標の使用
+title: CJA でのディメンションと指標のバインディングの使用
 description: 複雑な永続性分析のために、ディメンションをオブジェクト配列に対して属性化します。
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
+source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '1330'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 
-# CJA でのバインディングディメンションと指標の使用
+# CJA でのディメンションと指標のバインディングの使用
 
 Customer Journey Analytics には、設定されたヒットの後でディメンション値を保持する方法がいくつか用意されています。 アドビが提供する永続性メソッドの 1 つにバインディングがあります。 以前のバージョンの Adobe Analyticsでは、この概念はマーチャンダイジングと呼ばれていました。
 
