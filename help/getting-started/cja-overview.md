@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 88%
+source-wordcount: '1271'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,9 @@ CJA アーキテクチャの概要を次に示します。
 
 ![アークテクチャ](assets/cja-architecture.png)
 
-次のビデオ：
+以下に、Customer Journey Analyticsの概要ビデオを示します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
 ## CJA と従来の Adobe Analytics の比較
 
