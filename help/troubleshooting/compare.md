@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 組織では CJA を採用する際、Adobe Analytics と CJA の間でデータに違いがあることに気付くことがあります。これは正常なことで、いくつかの理由で発生する場合があります。CJA は、AA のデータに関する制限の一部を改善できるように設計されています。ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念に妨げられることなくユーザーとチームが CJA を使用できるように、それらの違いを診断し、解決することを目的としています。
 
-例えば、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用して CJA 接続を作成しました。
+[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)経由で Adobe Analytics データを AEP に取り込んだあと、このデータセットを使用して CJA 接続を作成したと仮定します。
 
 ![データフロー](assets/compare.png)
 
