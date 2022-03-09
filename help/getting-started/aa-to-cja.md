@@ -5,16 +5,16 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: a47343628ace3063d23c6ba023f73dcbdc24dbcc
 workflow-type: tm+mt
 source-wordcount: '1242'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
 # Adobe AnalyticsからCustomer Journey Analyticsへの進化
 
-組織がAdobe AnalyticsからCustomer Journey Analyticsにデータを移動するようになるにつれ、これらの手順を参照して、データを準備し、2 つのテクノロジー間の重要な違いを認識します。 この記事は、管理者のオーディエンスを対象としています。
+組織がCustomer Journey Analyticsの使用に進むにつれ、これらの手順を参照して、データを準備し、2 つのテクノロジー間の重要な違いを認識します。 この記事は、管理者のオーディエンスを対象としています。
 
 ## データの準備
 
@@ -34,7 +34,7 @@ Adobe Analytics などのデータセットでは、データの必ずしもす�
 
 ### 2. 変数の整合
 
-Adobe Analytics のデータを Customer Journey Analytics に移行する最も簡単な方法は、[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を AEP の XDM スキーマとデータセットに直接マッピングします。これらは CJA に簡単に接続できます。
+Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用してExperience Platformに [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics変数をExperience Platform内の XDM スキーマとデータセットに直接マッピングし、Customer Journey Analyticsに簡単に接続できます。
 
 完全なグローバルレポートスイートは、実装が可能とは限らない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込む場合は、これらのレポートスイート間で変数を整合させることを前もって計画しておく必要があります。
 
