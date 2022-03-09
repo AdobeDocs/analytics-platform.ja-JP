@@ -1,22 +1,23 @@
 ---
-description: Customer Journey Analyticsのための継続的な機能リリース戦略を説明します。
-title: Customer Journey Analytics機能リリース
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
-workflow-type: tm+mt
+description: Customer Journey Analytics の継続的な機能リリース戦略を説明します
+title: Customer Journey Analytics 機能リリース
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics機能リリース
+# Customer Journey Analytics 機能リリース
 
-Customer Journey Analyticsリリースは、機能のデプロイメントに向けてスケーラブルで段階的なアプローチを可能にする、継続的な配信モデルで動作します。
+Customer Journey Analytics リリースは、機能のデプロイメントに対するスケーラブルかつ段階的なアプローチを可能にする継続的な配信モデルに基づいて動作します。
 
 ## リリース方法
 
 [!UICONTROL Analysis Workspace] では、機能フラグ（「トグル」とも呼ばれます）を使用して新機能の表示/非表示を制御し、完全リリース前の制御スケールテストをおこなうことができます。このリリース戦略には、次のフェーズが含まれます。
 
-* **実稼働環境（RTP）にリリース**: コードが実稼動環境にリリースされ、Analysis Workspace での機能の表示がオフになっています。この機能は、CJA API で使用できる場合があります。
+* **実稼働環境（RTP）にリリース**: コードが実稼動環境にリリースされ、Analysis Workspace での機能の表示がオフになっています。この機能は、CJA API で利用できる場合があります。
 
 * **制限付きテスト**：段階的なリリースは、アドビの内部ユーザーによるテストで始まります。このリリースでは、数か月の間に 0% から 100% の可用性に拡張されます。Experience Cloud 組織レベルで展開が段階的に行われるので、組織内の権利を持つすべてのユーザーは同じエクスペリエンスを受け取ります。
 
@@ -38,5 +39,5 @@ Customer Journey Analyticsリリースは、機能のデプロイメントに向
 
 | 質問 | 回答 |
 | --- | --- |
-| 機能への早期アクセスをリクエストできますか？ | いいえ。早期アクセスは許可されません。<br>Analytics の初期の概念をテストする場合は、[Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html) で業界をリードする革新的なアイデアに対するフィードバックを提供してみることをお勧めします 。 |
+| 機能への早期アクセスをリクエストできますか？ | いいえ。早期アクセスは許可されません。<br>Analytics の初期の概念をテストする場合は、[Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=ja) で業界をリードする革新的なアイデアに対するフィードバックを提供してみることをお勧めします 。 |
 | このリリース戦略は、機能へのアクセスに影響を与えますか。 | いいえ。機能が GA に達すると、その機能が Analytics パッケージに含まれている場合はアクセスできます。 |
