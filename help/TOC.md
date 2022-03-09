@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 93%
 + [Customer Journey Analytics ガイド](getting-started/cja-landing.md)
 + リリースノート {#releases}
    + [最新リリース](release-notes/latest.md)
-   + [2022 年 リリース](release-notes/2022.md)
+   + [2022年リリース](release-notes/2022.md)
    + [2021 年 リリース](release-notes/2021.md)
    + [2020 年 リリース](release-notes/2020.md)
    + [CJA リリース](release-notes/releases.md)
@@ -31,7 +31,7 @@ ht-degree: 93%
    + [Customer Journey Analytics の概要](getting-started/cja-overview.md)
    + [はじめに](getting-started/cja-getting-started.md)
    + [よくある質問](getting-started/cja-faq.md)
-   + [Adobe AnalyticsからCustomer Journey Analyticsへの移行の準備](getting-started/aa-to-cja.md)
+   + [Adobe Analytics から Customer Journey Analytics への移行の準備](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
    + [削除の影響](getting-started/cja-deletion.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
