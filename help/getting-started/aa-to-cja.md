@@ -1,19 +1,20 @@
 ---
-title: Adobe Analytics から Customer Journey Analytics への移行
-description: Adobe Analytics から Customer Journey Analytics への移行手順
+title: Adobe AnalyticsからCustomer Journey Analyticsへの進化
+description: Adobe AnalyticsからCustomer Journey Analyticsにデータを移動する手順
+role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
-workflow-type: ht
-source-wordcount: '1234'
-ht-degree: 100%
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+workflow-type: tm+mt
+source-wordcount: '1242'
+ht-degree: 93%
 
 ---
 
-# Adobe Analytics から Customer Journey Analytics への移行の準備
+# Adobe AnalyticsからCustomer Journey Analyticsへの進化
 
-Adobe Analytics から Customer Journey Analytics にデータを移行する前に、以下の考慮事項を検討して、データを準備し、2 つのテクノロジー間の重要な違いを認識しておきます。
+組織がAdobe AnalyticsからCustomer Journey Analyticsにデータを移動するようになるにつれ、これらの手順を参照して、データを準備し、2 つのテクノロジー間の重要な違いを認識します。 この記事は、管理者のオーディエンスを対象としています。
 
 ## データの準備
 
@@ -57,7 +58,7 @@ Adobe Analytics のデータを Customer Journey Analytics に移行する最も
 
 この方法により、データ収集の可能性が大幅に広がります。フィールド数の制限や、Analytics のようにデータ要素を prop、eVar、イベントにマッピングする必要がなくなりました。CJA [データビュー](/help/data-views/data-views.md)を使用すると、様々なタイプの無制限のスキーマ要素を使用し、それらを複数の方法で表すことができます。Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
 
-**Experience Platform SDK を使用する場合の利点**
+**Experience Platform SDK を使用する場合の利点:**
 
 * 必要なフィールドを何でも定義できる柔軟性がスキーマにあります
 * Adobe Analytics の用語（prop、eVar、イベントなど）に依存しません
@@ -105,7 +106,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 * CJA データビューの機能を利用すると、Customer Journey Analytics 内で指標とディメンションをはるかに柔軟に定義できます。例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/data-views/data-views-usecases.md)
 
-* Adobe Analytics でカスタムカレンダーを定義した場合、CJA 内でも同様のカレンダー機能を使用できます。カレンダーが正しく定義されていることを確認する必要があります。
+* Adobe Analyticsでカスタムカレンダーを定義した場合は、同様のカスタムカレンダーを使用できます [カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md) CJA 内で使用できます。 カレンダーが正しく定義されていることを確認する必要があります。
 
 * Customer Journey Analytics では、カスタム訪問／セッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。この機能は、モバイルデータセットで特に役に立つ可能性があります。
 
