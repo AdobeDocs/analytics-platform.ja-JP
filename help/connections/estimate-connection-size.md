@@ -4,46 +4,43 @@ description: Customer Journey Analytics の現在の使用状況を報告する
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 # 接続サイズの予測
 
-現在 [!UICONTROL Customer Journey Analytics] にあるデータの行数を知る必要がある場合があります。このトピックでは、[!UICONTROL Customer Journey Analytics] の現在の使用状況の報告方法について説明しています。
+現在 [!UICONTROL Customer Journey Analytics] にあるデータの行数を知る必要がある場合があります。組織のイベントデータレコード（データ行）の使用状況を正確に把握するには、次の手順を実行します **組織が作成した各接続に対して**.
 
 1. [!UICONTROL Customer Journey Analytics] で、「**[!UICONTROL 接続]**」タブをクリックします。
-1. [!UICONTROL 接続を編集]画面で、使用状況および接続の規模を確認する接続を選択します。
 
-   ![接続を編集](assets/edit-connection.png)
+   これで、現在のすべての接続のリストが表示されます。
 
-1. 左側のパネルから、接続に含まれるデータセットを選択します。この場合は、「B2B Impression」データセットです。
+1. 各接続名をクリックして、接続マネージャに移動します。
 
-   ![データセット](assets/dataset.png)
+1. 追加する **[!UICONTROL 使用可能なイベントデータのレコード]** （作成されたすべての接続用） （接続のサイズによっては、数の表示に時間がかかる場合があります）。
 
-1. 名前の横にある青い（i）アイコン（情報）をクリックします。データセットの行数/イベントが 3.8 k であることがわかります。また、正確な行数を知るには、プレビューテーブルの下の「**[!UICONTROL Experience Platform で編集]**」をクリックします。これにより、[!UICONTROL Adobe Experience Platform] のデータセットにリダイレクトされます。
+   ![イベントデータ](assets/event-data.png)
 
-   ![AEP データセット情報](assets/data-size.png)
+1. すべてのCustomer Journey Analyticsデータ行の合計を取得したら、Adobeで署名したイベント契約の「データの行」使用権限を調べます。
 
-1. このデータセットの&#x200B;**[!UICONTROL 合計レコード数]**&#x200B;は 3.83 k レコードで、データのサイズは 388.59 KB です。
+   これにより、受注で許可されるデータの最大行数が得られます。 手順 3 で取得したデータの行数がこの数より多い場合は、超過分のデータが発生しています。
 
-1. 接続の他のデータセットに対して手順 1～5 を繰り返し、レコード数/行数を合計します。最終的な集計数が接続の使用状況の指標になります。これは、[!UICONTROL Adobe Experience Platform] から取り込まれる接続のデータセットの行数です。
+1. この状況を修正するには、次のいくつかのオプションがあります。
 
-## 取り込まれる行数の確認
+   * を [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention).
+   * [未使用の接続を削除します](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components).
+   * [AEP でのデータセットの削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * 追加容量のライセンスを取得するには、Adobeのアカウントマネージャーにお問い合わせください。
 
-[!UICONTROL Customer Journey Analytics] で実際に取り込まれるイベントの数は、接続設定によって異なります。また、誤ったユーザー ID を選択した場合や、データセット内の一部の行でこの ID を使用できない場合、[!UICONTROL Customer Journey Analytics] ではそれらの行が無視されます。取り込まれるイベントの実際の行を確認するには、次の手順を実行します。
+## 使用超過について
 
-1. 接続を保存したら、フィルターを使用せずに、同じ接続のデータビューを作成します。
-1. ワークスペースプロジェクトを作成し、正しいデータビューを選択します。フリーフォームテーブルを作成し、**[!UICONTROL 年]**&#x200B;ディメンションを持つ&#x200B;**[!UICONTROL イベント]**&#x200B;指標をドラッグ＆ドロップします。日付選択カレンダーから十分な日付範囲を選択し、接続のすべてのデータをカプセル化します。これで、[!UICONTROL Customer Journey Analytics] に取り込まれるイベントの数を確認できます。
+使用制限は、Adobeが日々厳密に監視および適用します。 「データの行」とは、Customer Journey Analytics内の分析に使用できるデータの 1 日平均行を意味します。
 
-   ![ワークスペースプロジェクト](assets/event-number.png)
-
-   >[!NOTE]
-   >
-   >これで、イベントデータセットから取り込まれるイベントの数を確認できます。プロファイルおよび参照タイプのデータセットは含まれません。この接続の合計行数を取得するには、プロファイルおよび参照のデータセットで「接続サイズの予測」の手順 1～3 を実行し、数値を合計します。
+契約に使用する権利付与の行数が 100 万に制限されているとします。 Customer Journey Analyticsを使用した Day 1 で、200 万行のデータをアップロードしたとします。 2 日目には、100 万行を削除し、使用量を最大限に抑えます。 1 日目の過剰使用料は引き続き発生します。
 
 ## 不一致の診断
 
@@ -53,6 +50,6 @@ ht-degree: 100%
 
    ![分類](assets/data-size2.png)
 
-1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは [!UICONTROL Customer Journey Analytics] に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる[!UICONTROL プラットフォームデータセット ID] が生成されました。
+1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは Customer Journey Analytics に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる[!UICONTROL プラットフォームデータセット ID] が生成されました。
 
-[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。
+[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)を参照してください。
