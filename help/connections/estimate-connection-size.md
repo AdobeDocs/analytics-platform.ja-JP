@@ -4,10 +4,10 @@ description: Customer Journey Analytics の現在の使用状況を報告する
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 74934c8684198104c808284310bcdfd633085574
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 51%
 
 使用制限は、Adobeが日々厳密に監視および適用します。 「データの行」とは、Customer Journey Analytics内の分析に使用できるデータの 1 日平均行を意味します。
 
-契約に使用する権利付与の行数が 100 万に制限されているとします。 Customer Journey Analyticsを使用した Day 1 で、200 万行のデータをアップロードしたとします。 2 日目には、100 万行を削除し、使用量を最大限に抑えます。 1 日目の過剰使用料は引き続き発生します。
+契約に使用する権利付与の行数が 100 万に制限されているとします。 Customer Journey Analyticsを使用した Day 1 で、200 万行のデータをアップロードしたとします。 Day 2 では、100 万行を削除し、ライセンス期間の残りの期間、使用量をそのままコミットしておきます。 契約条件によっては、Day 1 でのプロレートされた超過使用料が発生する場合があります。
 
 ## 不一致の診断
 
