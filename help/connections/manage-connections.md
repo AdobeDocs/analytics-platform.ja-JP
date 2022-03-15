@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1948'
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+workflow-type: tm+mt
+source-wordcount: '1821'
 ht-degree: 100%
 
 ---
@@ -116,10 +116,10 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 更新] | 接続を更新して、最近追加したレコードを反映させます。 |
 | [!UICONTROL 削除] | この接続を削除します。 |
-| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja) |
+| [!UICONTROL データビューを作成] | 接続に基づいて、新しいデータビューを作成します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前を表示します。 |
 | [!UICONTROL 接続の説明] | この接続の目的についての詳細な説明を表示します。 |
-| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
+| [!UICONTROL サンドボックス] | この接続がデータセットを取得する [Adobe Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
 | [!UICONTROL 新しいデータをインポート] | （オン／オフ）新しいデータバッチを履歴データに追加（バックフィル）するかどうかを示します。 |
@@ -139,7 +139,7 @@ ht-degree: 100%
 | [!UICONTROL 追加されたバッチ] | このデータセットに追加されたデータバッチの数を示します。 |
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数をし示します。<p>レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID の欠落または無効なユーザー ID などがあります。10 分ごとに更新されます。<p>無効なユーザー ID（「未定義」、「00000000」、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL 人物 ID] の文字と数字の任意の組み合わせ）を、特定のユーザーまたは人物に関連付けることはできません。これらはシステムに取り込むことができず、取り込みやレポートでエラーが発生しやすくなります。無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>[クロスチャネル分析](/help/connections/cca/overview.md) を使用して、未定義またはすべてがゼロのユーザー ID の代わりに有効なユーザー ID を生成する。</li><li>ユーザー ID を空白にする。この ID は取り込み時にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul><p>**メモ**：**[!UICONTROL スキップされたレコード]** のデータは、現時点ではイベントデータのみを含み、プロファイルまたはルックアップデータは含まれません。 |
 | [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時を示します。 |
-| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
+| [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットのベースとなる Adobe Experience Platform スキーマを示します。 |
 | [!UICONTROL データセット ID] | この ID は、Adobe Experience Platform システムが生成します。 |
 
@@ -152,9 +152,3 @@ ht-degree: 100%
 * データセットを更新します。
 * 接続からデータセットを削除します。
 
-## [!UICONTROL 接続] データ保持のローリングウインドウの設定
-
->[!IMPORTANT]
->この設定を実装するには、カスタマーケアまたはアドビのアカウントマネージャーにお問い合わせください。CJA UI からは、まだ使用できません。
-
-この設定を使用すると、CJA データ保持を、[!UICONTROL 接続]レベル（[!UICONTROL データセット]レベルではない）での月単位（3 か月、6 か月など）のローリングウィンドウとして定義できます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないため、プロファイルまたは参照データセットのデータ保持設定は存在しません。主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。

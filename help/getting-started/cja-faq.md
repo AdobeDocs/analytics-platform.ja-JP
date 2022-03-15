@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 97%
+source-wordcount: '2286'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 [!UICONTROL Customer Journey Analytics]（CJA）は、次世代の Adobe Analytics 製品です。以下は、CJA に関するよくある質問に対する回答です。 詳しくは、[Customer Journey Analytics 機能のサポート](/help/getting-started/cja-aa.md)を参照してください。
 
-## 1. 前提条件
+## 1. 前提条件 {#prerequisites}
 
 | 質問 | 回答 |
 | --- | --- |
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2. データのステッチ（クロスチャネル分析）
+## 2. データのステッチ（クロスチャネル分析） {#stitching}
 
 | 質問 | 回答 |
 | --- | --- |
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 3. [!UICONTROL Customer Journey Analytics] へのデータの取り込み
+## 3. [!UICONTROL Customer Journey Analytics] へのデータの取り込み {#ingest}
 
 | 質問 | 回答 |
 | --- | --- |
@@ -50,7 +50,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. 待ち時間に関する考慮事項
+## 4. 待ち時間に関する考慮事項 {#latency}
 
 >[!NOTE]
 >CJA のデータサイズは固定ではないので、アドビは標準的な取り込み時間を明言することはできません。 アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
@@ -59,21 +59,16 @@ ht-degree: 97%
 | --- | --- |
 | [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：24 時間以内<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
 
+## 5.の周期ウィンドウを設定 [!UICONTROL 接続] データ保持 {#data-retention}
 
-## 5. 従来の [!UICONTROL Adobe Analytics] コンポーネント
+>[!IMPORTANT]
+>この設定を実装するには、カスタマーケアまたはアドビのアカウントマネージャーにお問い合わせください。CJA UI からは、まだ使用できません。
 
-| 質問 | 回答 |
-| --- | --- |
-| [!UICONTROL フィルター]（[!UICONTROL セグメント]）を [!DNL Customer Journey Analytics] から Experience Platform 統合プロファイルまたは他の Experience Cloud アプリケーションに共有または公開することはできますか？ | 現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。 |
-| 以前の [!UICONTROL eVar] 設定はどうなりましたか？ | 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
-| すべてのセッションと変数の永続性の設定は、どこにありますか。 | [!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
-| 既存のセグメント／計算指標はどうなりますか。 | [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。 |
-| [!UICONTROL Customer Journey Analytics] での `Uniques Exceeded` 制限の処理方法を教えてください。 | [!UICONTROL Customer Journey Analytics] には一意の値に関する制限がないので、ご心配は不要です。 |
-| 既存の [!DNL Data Workbench] のユーザーであれば、今すぐ [!UICONTROL Customer Journey Analytics] に移行できますか。 | ユースケースによって異なります。アドビアカウントチームにご相談ください。 お客様の現在のユースケースは、既に Customer Journey Analytics に適している可能性があります。 |
+この設定を使用すると、CJA データ保持を、[!UICONTROL 接続]レベル（[!UICONTROL データセット]レベルではない）での月単位（3 か月、6 か月など）のローリングウィンドウとして定義できます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないため、プロファイルまたは参照データセットのデータ保持設定は存在しません。
 
-{style=&quot;table-layout:auto&quot;}
+主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
-## 6. データコンポーネントの削除の影響
+## 6. データコンポーネントの削除の影響 {#deletion}
 
 データの削除に関しては、サンドボックス、スキーマ、データセット、接続、データビュー、ワークスペースプロジェクト の 6 種類のコンポーネントを考慮する必要があります。次に、これらのコンポーネントを削除した場合に考えられるシナリオを示します。
 
@@ -88,7 +83,7 @@ ht-degree: 97%
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存するワークスペースプロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
 
-## 7. CJA でレポートスイートを結合する際の考慮事項
+## 7. CJA でレポートスイートを結合する際の考慮事項 {#merge-reportsuite}
 
 [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、以下の影響を考慮してください。
 
@@ -100,3 +95,60 @@ ht-degree: 97%
 | 通貨 | CJA では、通貨換算はまだサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
 | [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md) は複数のレポートスイートにまたがって適用され、 [!UICONTROL フィルター]、 [!UICONTROL アトリビューション] などに影響します。数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの [!UICONTROL ルックアップ] データセットに組み合わせると、問題が発生する場合があります。 |
+
+
+## 8. 従来の [!UICONTROL Adobe Analytics] コンポーネント
+
+| 質問 | 回答 |
+| --- | --- |
+| [!UICONTROL フィルター]（[!UICONTROL セグメント]）を [!DNL Customer Journey Analytics] から Experience Platform 統合プロファイルまたは他の Experience Cloud アプリケーションに共有または公開することはできますか？ | 現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。 |
+| 以前の [!UICONTROL eVar] 設定はどうなりましたか？ | 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。 |
+| すべてのセッションと変数の永続性の設定は、どこにありますか。 | [!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。 |
+| 既存のセグメント／計算指標はどうなりますか。 | [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。 |
+| [!UICONTROL Customer Journey Analytics] での `Uniques Exceeded` 制限の処理方法を教えてください。 | [!UICONTROL Customer Journey Analytics] には一意の値に関する制限がないので、ご心配は不要です。 |
+| 既存の [!DNL Data Workbench] のユーザーであれば、今すぐ [!UICONTROL Customer Journey Analytics] に移行できますか。 | ユースケースによって異なります。アドビアカウントチームにご相談ください。 お客様の現在のユースケースは、既に Customer Journey Analytics に適している可能性があります。 |
+
+{style=&quot;table-layout:auto&quot;}
+
+## 9.接続サイズの予測 {#estimate-size}
+
+現在 [!UICONTROL Customer Journey Analytics] にあるデータの行数を知る必要がある場合があります。組織のイベントデータレコード（データ行）の使用状況を正確に把握するには、次の手順を実行します **組織が作成した各接続に対して**.
+
+1. [!UICONTROL Customer Journey Analytics] で、「**[!UICONTROL 接続]**」タブをクリックします。
+
+   これで、現在のすべての接続のリストが表示されます。
+
+1. 各接続名をクリックして、接続マネージャに移動します。
+
+1. 追加する **[!UICONTROL 使用可能なイベントデータのレコード]** （作成されたすべての接続用） （接続のサイズによっては、数の表示に時間がかかる場合があります）。
+
+   ![イベントデータ](assets/event-data.png)
+
+1. すべてのCustomer Journey Analyticsデータ行の合計を取得したら、Adobeで署名したイベント契約の「データの行」使用権限を調べます。
+
+   これにより、受注で許可されるデータの最大行数が得られます。 手順 3 で取得したデータの行数がこの数より多い場合は、超過分のデータが発生しています。
+
+1. この状況を修正するには、次のいくつかのオプションがあります。
+
+   * を [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention).
+   * [未使用の接続を削除します](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components).
+   * [AEP でのデータセットの削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * 追加容量のライセンスを取得するには、Adobeのアカウントマネージャーにお問い合わせください。
+
+## 10.使用超過について {#overage}
+
+使用制限は、Adobeによって定期的に監視および適用されます。 「データの行」とは、Customer Journey Analytics内の分析に使用できるデータの 1 日平均行を意味します。
+
+例えば、契約によって 100 万行のデータが使用できるとします。 Customer Journey Analyticsを使用した 1 日目に、200 万行のデータをアップロードしたとします。 2 日目には、100 万行を削除し、ライセンス期間の残りの期間、コミット済みの最大（100 万行のデータ）の使用量を維持します。 「データの行」ライセンスの使用権限を超えたので、契約条件に応じて、1 日目の使用量の超過分の料金が引き続き発生する場合があります。
+
+## 11.データの相違の診断 {#discrepancies}
+
+場合によっては、接続によって取り込まれるイベントの合計数が [!UICONTROL Adobe Experience Platform] のデータセットの行数と異なることがあります。この例の場合、データセット「B2B Impression」には 7650 の行がありますが、[!UICONTROL Adobe Experience Platform] のデータセットの行数は 3830 です。不一致が発生する理由はいくつかあり、次の手順を実行して診断できます。
+
+1. このディメンションを **[!UICONTROL プラットフォームデータセット ID]** で分類すると、サイズは同じでも、**[!UICONTROL プラットフォームデータセット ID]** が異なる 2 つのデータセットがあることがわかります。各データセットには 3825 件のレコードがあります。つまり、[!UICONTROL Customer Journey Analytics] では、ユーザー ID またはタイムスタンプが欠落していることにより、5 件のレコードが無視されています。
+
+   ![分類](assets/data-size2.png)
+
+1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは Customer Journey Analytics に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる[!UICONTROL プラットフォームデータセット ID] が生成されました。
+
+[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)を参照してください。
