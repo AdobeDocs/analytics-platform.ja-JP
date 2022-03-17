@@ -4,7 +4,7 @@ description: 2019 年 12 月以降の Customer Journey Analytics ドキュメン
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 621b40ffebe0c28376bcb36fabf84b53b54e4992
+source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 98%
@@ -17,7 +17,7 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 
 | 日付 | 説明のアップデート |
 | --- | --- |
-| 年3月 | コンテンツの大幅な更新 [接続サイズの推定](/help/getting-started/cja-faq.md). |
+| 2022年3月 | コンテンツの大幅な更新 [接続サイズの推定](/help/getting-started/cja-faq.md). |
 | 2022 年 2 月 | [Adobe AnalyticsからCustomer Journey Analyticsへの進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja) |
 | 2022 年 1 月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/binding-dimensions-metrics.md)の新しい使用例 |
 | 2022 年 1 月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#バインディング指標)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#配分-の設定)に関する新機能のドキュメントを追加しました |
