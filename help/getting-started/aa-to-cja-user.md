@@ -4,9 +4,9 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: 24a6319b1303eaef80ddf6142deae60e7f664ae4
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 25%
 
 ---
@@ -14,11 +14,17 @@ ht-degree: 25%
 
 # Adobe Analyticsユーザー向け CJA ユーザーガイド
 
+>[!NOTE]
+>
+>このページは作成中です。
+
 おめでとうございます。会社がCustomer Journey Analyticsを始めました。 Adobe Analyticsをご利用のお客様には、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
 
 ## 変更されていないもの
 
-レポート側での使い慣れた内容の多くは変更されていません。 Analysis Workspaceの機能を活用してデータを分析し、さらにAdobe Analyticsのダッシュボードと新しいバージョンのReport Builderを分析できます。 Workspace とダッシュボードは、基本的に従来のAdobe Analyticsと同じように機能します。 Report Builderは新しいインターフェイスを備え、PC、Macコンピューター、および Excel の Web バージョンで動作するようになりました。 レポートでは、様々なクロスチャネルデータにアクセスして分析できます。 次に Workspace の例を示します。
+レポート側での使い慣れた内容の多くは変更されていません。 引き続き、Analysis Workspaceの機能を利用してデータを分析できます。 また、同じバージョンのAdobe Analyticsダッシュボードを任意で使用できます。 Workspace とダッシュボードは、基本的に従来のAdobe Analyticsと同じように機能します。 Report Builderは新しいインターフェイスを備え、PC、Macコンピューター、および Excel の Web バージョンで動作するようになりました。 レポートでは、様々なクロスチャネルデータにアクセスして分析できます。 次に、一部のマルチチャネルビジュアライゼーションの例を示します。
+
+![マルチチャネル](assets/cross-channel.png)
 
 ## 新しいアーキテクチャ
 
@@ -26,7 +32,7 @@ Customer Journey AnalyticsはAdobe Experience Platformからデータを取得�
 
 プラットフォーム内の顧客データは、スキーマとデータのバッチで構成されるデータセットとして保存されます。プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)を参照してください。
 
-CJA 管理者は、Platform のデータへの接続を確立し、それらの接続内にデータ表示を構築します。 データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。
+CJA 管理者が確立しました。 [接続](/help/connections/create-connection.md) を Platform のデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) 接続内で データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。
 
 ## 新しい概念と用語
 
