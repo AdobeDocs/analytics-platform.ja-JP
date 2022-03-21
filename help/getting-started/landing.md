@@ -3,9 +3,9 @@ description: 新しいランディングページの機能について説明し�
 title: Customer Journey Analyticsランディングページ
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 186c462c363660970080acbb9a906c4cf8254df8
+source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1053'
 ht-degree: 58%
 
 ---
@@ -32,15 +32,13 @@ Adobe Experience CloudとCustomer Journey Analyticsにログインした後、 [
 
 [!UICONTROL プロジェクト]は [!UICONTROL ワークスペース]ホーム ページとして機能します。モバイルスコアカードを含む、ワークスペースプロジェクトがここに表示されます。**[!UICONTROL プロジェクト]**&#x200B;とは、自分が構築したもの、または他のユーザーが構築し共有したものです。[!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
 
-![すべてランディング](assets/landing-all.png)
-
 >[!NOTE]
 >
 >次の設定の一部は、セッション全体およびセッション間で保持（記憶）されます。例：開いていたタブ、選択したフィルター、選択した列、列の並べ替え方向。ただし、検索結果は保持されません。
 
 | UI 要素 | 定義 |
 | --- | --- |
-| ... さらに詳しく | [!UICONTROL チュートリアルを表示]し、[ユーザーの環境設定を編集](/help/analyze/analysis-workspace/user-preferences.md)できます。 |
+| ... さらに詳しく | [!UICONTROL チュートリアルを表示]し、[ユーザーの環境設定を編集](/help/analysis-workspace/user-preferences.md)できます。 |
 | **[!UICONTROL 新規作成]** モーダルが戻りました | クリック時 **[!UICONTROL 新規作成]** Workspace で、 [!UICONTROL 空のプロジェクト] および [!UICONTROL 空のモバイルスコアカード]. 会社が作成した任意のテンプレートから選択することもできます。 |
 | [!UICONTROL 表示回数を減らす／増やす] | バナーの表示と非表示を切り替えます。 ![トップバナー](assets/top-banner.png) |
 | [!UICONTROL 空のプロジェクト] | 入力する空の [ワークスペースプロジェクト](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja)を作成します。 |
@@ -52,7 +50,7 @@ Adobe Experience CloudとCustomer Journey Analyticsにログインした後、 [
 | 選択ボックス | 1 つ以上のプロジェクトの横にあるこのボックスをクリックすると、実行できるプロジェクト管理アクション（削除、タグ付け、ピン止め、承認、共有、名前変更、コピー、CSV に書き出し）が表示されます。これらのアクションを実行する権限がない可能性があります。 |
 | [!UICONTROL お気に入り] | プロジェクトをお気に入りに追加すると、そのプロジェクトに星が付き、フィルタリングできるお気に入りとしてタグ付けされます。 |
 | [!UICONTROL 名前] | プロジェクトの名前。 |
-| 情報 (i) アイコン | 情報アイコンをクリックすると、このプロジェクトに関する情報（タイプ、プロジェクトの役割、所有者、説明、および共有相手）が表示されます。また、このプロジェクトを[編集または複製](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/curate-share/share-projects.html)できるユーザーも示します。 |
+| 情報 (i) アイコン | 情報アイコンをクリックすると、このプロジェクトに関する情報（タイプ、プロジェクトの役割、所有者、説明、および共有相手）が表示されます。また、このプロジェクトを[編集または複製](/help/analysis-workspace/curate-share/share-projects.md)できるユーザーも示します。 |
 | 省略記号（...） | プロジェクトの横にある省略記号をクリックすると、実行できるプロジェクト管理アクション（削除、タグ付け、ピン止め、承認、共有、名前変更、コピー、CSV に書き出し）が表示されます。これらのアクションを実行する権限がない可能性があります。 |
 | [!UICONTROL タイプ] | ワークスペースプロジェクトかモバイルスコアカードのどちらであるかを示します。 |
 | [!UICONTROL タグ] | レポートにタグを付けて、グループに整理できます。 |
@@ -62,7 +60,7 @@ Adobe Experience CloudとCustomer Journey Analyticsにログインした後、 [
 | [!UICONTROL 共有先] | このプロジェクトの共有先。 |
 | [!UICONTROL 最終変更日] | このプロジェクトが最後に変更された日時。 |
 | [!UICONTROL 前回開いた日時] | このプロジェクトが最後に開かれた日時。 |
-| [!UICONTROL スケジュール済み] | に設定 [!UICONTROL オン] プロジェクトがスケジュールされたとき、または **[!UICONTROL オフ]** そうでない場合は クリック **[!UICONTROL オン]** 「 」リンクを使用すると、スケジュール済みプロジェクトに関する情報を表示できます。 また、 [プロジェクトスケジュールを編集](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) （プロジェクトの所有者である場合） |
+| [!UICONTROL スケジュール済み] | に設定 [!UICONTROL オン] プロジェクトがスケジュールされたとき、または **[!UICONTROL オフ]** そうでない場合は クリック **[!UICONTROL オン]** 「 」リンクを使用すると、スケジュール済みプロジェクトに関する情報を表示できます。 また、 [プロジェクトスケジュールを編集](/help/analysis-workspace/curate-share/t-schedule-report.md) （プロジェクトの所有者である場合） |
 | [!UICONTROL プロジェクト ID] | プロジェクト ID は、プロジェクトのデバッグに使用できます。 |
 | [!UICONTROL 最長の日付範囲] | 日付範囲を長くすると、プロジェクトの複雑さが増し、処理と読み込み時間が長くなる場合があります。 |
 | [!UICONTROL クエリ数] | プロジェクトクエリの数が多いと、プロジェクトが複雑になり、処理と読み込みに時間がかかる場合があります。 |
