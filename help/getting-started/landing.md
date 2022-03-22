@@ -3,10 +3,11 @@ description: 新しいランディングページの機能について説明し�
 title: Customer Journey Analyticsランディングページ
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
+exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 58%
+source-wordcount: '1081'
+ht-degree: 57%
 
 ---
 
@@ -63,7 +64,7 @@ Adobe Experience CloudとCustomer Journey Analyticsにログインした後、 [
 | [!UICONTROL スケジュール済み] | に設定 [!UICONTROL オン] プロジェクトがスケジュールされたとき、または **[!UICONTROL オフ]** そうでない場合は クリック **[!UICONTROL オン]** 「 」リンクを使用すると、スケジュール済みプロジェクトに関する情報を表示できます。 また、 [プロジェクトスケジュールを編集](/help/analysis-workspace/curate-share/t-schedule-report.md) （プロジェクトの所有者である場合） |
 | [!UICONTROL プロジェクト ID] | プロジェクト ID は、プロジェクトのデバッグに使用できます。 |
 | [!UICONTROL 最長の日付範囲] | 日付範囲を長くすると、プロジェクトの複雑さが増し、処理と読み込み時間が長くなる場合があります。 |
-| [!UICONTROL クエリ数] | プロジェクトクエリの数が多いと、プロジェクトが複雑になり、処理と読み込みに時間がかかる場合があります。 |
+| [!UICONTROL クエリ数] | プロジェクトの読み込み時に Analytics に対しておこなわれた要求の合計数です。 プロジェクトクエリの数が多いと、プロジェクトが複雑になり、処理と読み込みに時間がかかる場合があります。 このデータは、プロジェクトが読み込まれたか、スケジュールされたプロジェクトが送信された後にのみ使用できます。 |
 | テーブルのカスタマイズアイコン | （右上）プロジェクトのリストに列を追加または削除する場合は、列を選択または選択解除して追加できます。 |
 | &lt;（戻るボタン） | Workspace プロジェクトのこのボタンを使用すると、最新のランディングページ設定に戻ります。 ランディングページを離れた時点でのページ設定は、戻った際にも保持されます。 |
 
