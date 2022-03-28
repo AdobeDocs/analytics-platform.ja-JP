@@ -4,16 +4,16 @@ title: アドホックプロジェクトフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 54%
+source-wordcount: '295'
+ht-degree: 56%
 
 ---
 
 # アドホックプロジェクトフィルター
 
-アドホックプロジェクトフィルターを使用すると、任意のコンポーネントをパネルのドロップゾーンに直接ドラッグ&amp;ドロップして、フィルターを作成できます。 フィルターが [プロジェクトレベルのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) 現在のプロジェクトのローカル
+アドホックプロジェクトフィルターを使用すると、任意のコンポーネントをパネルのドロップゾーンに直接ドラッグ&amp;ドロップして、フィルターを作成できます。 フィルターが [プロジェクトレベルのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=ja) 現在のプロジェクトのローカル
 
 アドホックプロジェクトフィルターの作成に関するビデオを以下に示します。
 

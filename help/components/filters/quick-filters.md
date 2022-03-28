@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 82%
+source-wordcount: '1028'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 プロジェクト内にクイックフィルターを作成すると、 [フィルタービルダー](/help/components/filters/create-filters.md) 全体が複雑になるのを回避できます。クイックフィルター
 
-* 適用方法 [プロジェクトのみのセグメント](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?lang=en#what-are-project-only-filters).
+* 適用方法 [プロジェクトのみのセグメント](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
 * 最大 3 つのルールを許可
 * ネストされたコンテナや順次ルールに対応しません。
 
@@ -99,7 +99,7 @@ ht-degree: 82%
 1. フィルターが、すべてのプロジェクトのフィルターコンポーネントリストに表示されます。
 1. また、組織内の他のユーザーと [フィルターを共有](/help/components/filters/manage-filters.md) することもできます。
 
-## プロジェクトのみのフィルターとは
+## プロジェクトのみのフィルターとは {#project-only}
 
 プロジェクトのみのフィルターは、作成元の現在のプロジェクトにのみ適用されるフィルターです。 他のプロジェクトでは使用できず、他のユーザーと共有することもできません。 これは、左側のパネルでフィルターを作成して保存する必要なく、データをすばやく調査するためのものです。 プロジェクトのみのフィルターは、クイックフィルターまたは [アドホックフィルター](/help/components/filters/ad-hoc-filters.md).
 
