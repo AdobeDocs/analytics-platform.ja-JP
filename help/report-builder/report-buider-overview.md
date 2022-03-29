@@ -6,16 +6,16 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '213'
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
+workflow-type: tm+mt
+source-wordcount: '211'
 ht-degree: 100%
 
 ---
 
 # Report Builder for Customer Journey Analytics について
 
-Customer Journey Analytics Report Builder の Report Builder を使用すると、Adobe Customer Journey Analytics データを使用したカスタムレポートを簡単に作成、編集および更新できます。Customer Journey Analytics は、Adobe Experience Platform 上に構築されたサービスで、複数のデータソースを結合してビジネスの全体像を把握することができます。Report Builder のシンプルで柔軟なドラッグ＆ドロップ UI を使用すると、Customer Journey Analytics データから複雑なデータクエリやカスタムレポートをすべて Excel 上で作成できます。
+Customer Journey Analytics の Report Builder を使用すると、Adobe Customer Journey Analytics データを使用したカスタムレポートを簡単に作成、編集および更新できます。Customer Journey Analytics は、Adobe Experience Platform 上に構築されたサービスで、複数のデータソースを結合してビジネスの全体像を把握することができます。Report Builder のシンプルで柔軟なドラッグ＆ドロップ UI を使用すると、Customer Journey Analytics データから複雑なデータクエリやカスタムレポートをすべて Excel 上で作成できます。
 
 Customer Journey Analytics の Report Builder を使用すると、次のことができます。
 

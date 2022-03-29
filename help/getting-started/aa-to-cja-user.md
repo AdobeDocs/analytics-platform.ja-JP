@@ -4,10 +4,10 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 25%
+source-wordcount: '656'
+ht-degree: 24%
 
 ---
 
@@ -22,9 +22,15 @@ ht-degree: 25%
 
 ## 変更されていないもの
 
-レポート側での使い慣れた内容の多くは変更されていません。 引き続き、Analysis Workspaceの機能を利用してデータを分析できます。 また、同じバージョンのAdobe Analyticsダッシュボードを任意で使用できます。 Workspace とダッシュボードは、基本的に従来のAdobe Analyticsと同じように機能します。 Report Builderは新しいインターフェイスを備え、PC、Macコンピューター、および Excel の Web バージョンで動作するようになりました。 レポートでは、様々なクロスチャネルデータにアクセスして分析できます。 次に、一部のマルチチャネルビジュアライゼーションの例を示します。
+レポート側での使い慣れた内容の多くは変更されていません。
 
-![マルチチャネル](assets/cross-channel.png)
+* 引き続き、 [Analysis Workspace](/help/analysis-workspace/home.md) を使用してデータを分析します。
+* 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) あなたの好きなように Workspace とダッシュボードは、従来のAdobe Analyticsと同じように機能します。
+* [Report Builder](/help/report-builder/report-buider-overview.md) は新しいインターフェイスを備え、PC、Mac、Web 版の Excel で動作するようになりました。
+
+レポートに関しては、分析するために、より多くのクロスチャネルデータにアクセスできる点が異なります。 次に、多数のクロスチャネルデータソースを含むマルチチャネルビジュアライゼーションの例を示します。
+
+![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
 ## 新しいアーキテクチャ
 
