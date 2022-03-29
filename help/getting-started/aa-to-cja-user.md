@@ -4,10 +4,10 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
+source-git-commit: 07c9bda0c40bf1e7bd39bf75bdce900a4749f0da
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +44,13 @@ CJA 管理者が確立しました。 [接続](/help/connections/create-connecti
 
 CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更され、再構築されました。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 eVar や prop などの慣れ親しんだ概念は、課せられた制限と共に存在しなくなりました。
 
-### eVar と prop
+### eVar および prop は追加されなくなりました
 
 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。
+
+**必要な操作**:
+
+* 使用可能な様々な方法について理解しておく必要があります。
 
 ### セグメントは「フィルター」になりました
 
@@ -54,28 +58,44 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 当面の間、共有/公開できません [!UICONTROL フィルター] ([!UICONTROL セグメント]から ) [!DNL Customer Journey Analytics] を統合プロファイルまたは他のExperience CloudアプリケーションにExperience Platformします。 この機能は現在開発中です。
 
+**必要な操作**:
+
+* 既存のAdobe AnalyticsセグメントをCustomer Journey Analyticsに移動する場合は、「 [このビデオ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja).
+* それ以外の場合は、Customer Journey Analyticsでフィルターを再作成します。
+
 ### 計算指標
 
 [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存の計算指標に対して [!UICONTROL Customer Journey Analytics].
 
+**必要な操作**:
+
+* Adobe Analyticsの計算指標をCustomer Journey Analyticsに移動する場合は、 [このビデオ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja).
+* それ以外の場合は、Customer Journey Analyticsで計算指標を再作成します。
+
 ### セッションと変数の持続性の設定
 
-[!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更が遡及的となり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
+[!UICONTROL Customer Journey Analytics] は、レポート時にこれらのすべての設定を適用し、これらの設定は [データビュー](help/data-views/component-settings/persistence.md). これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
 
-### 仮想レポートスイートが「データビュー」になりました
+### 仮想レポートスイートが「データビュー」になりました。
 
+データビューは、現在存在する仮想レポートスイートの概念を取り込み、それを [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これにより、タイムゾーンとセッションのタイムアウト間隔を設定できるようになります。 また、個々のディメンションにアトリビューションプロパティと有効期限プロパティを動的に適用することもできます。 これらは、すべてのデータに遡って適用されます。
 
+### クロスレポートスイートデータ
+
+複数のデータセットから既存の実装を組み合わせることができます。Experience Platform
 
 ### 分類は、「参照データセット」になりました。
 
 ### 顧客属性が「プロファイルデータセット」になりました。
 
 
-### ヒットコンテナが「イベント」コンテナになりました。
+### コンテナの名前が変更されました
 
-### 訪問コンテナは、「セッション」コンテナになりました
+次のコンテナを指定します。 [作成するすべてのデータビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). 組織のニーズに合わせて任意のコンテナの名前を変更できます。
 
-### 訪問者コンテナは、「ユーザー」コンテナになりました
+* **ヒットコンテナが「イベント」コンテナになりました。**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
+* **訪問コンテナは、「セッション」コンテナになりました**. [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
+* **訪問者コンテナが [!UICONTROL 人物] コンテナ**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
 
 ### `Uniques Exceeded` 制限
 
