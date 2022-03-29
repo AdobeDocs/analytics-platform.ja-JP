@@ -4,10 +4,10 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 07c9bda0c40bf1e7bd39bf75bdce900a4749f0da
+source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '982'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >このページは作成中です。
 
-おめでとうございます。貴社はCustomer Journey Analyticsと連携し始めています。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
+おめでとうございます。会社が雇用Customer Journey Analyticsを開始しました。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
 
 ## 変更されていないもの
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) あなたの好きなように Workspace とダッシュボードは、従来のAdobe Analyticsと同じように機能します。
 * [Report Builder](/help/report-builder/report-buider-overview.md) は新しいインターフェイスを備え、PC、Mac、Web 版の Excel で動作するようになりました。
 
-レポートに関しては、分析するために、より多くのクロスチャネルデータにアクセスできる点が異なります。 次に、多数のクロスチャネルデータソースを含むマルチチャネルビジュアライゼーションの例を示します。
+レポートに関しては、分析するために、より多くのクロスチャネルデータにアクセスできる点が異なります。 クロスチャネルのデータソースを含むいくつかのビジュアライゼーションの例を次に示します。
 
 ![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
@@ -38,7 +38,7 @@ Customer Journey AnalyticsはAdobe Experience Platformからデータを取得�
 
 プラットフォーム内の顧客データは、スキーマとデータのバッチで構成されるデータセットとして保存されます。プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)を参照してください。
 
-CJA 管理者が確立しました。 [接続](/help/connections/create-connection.md) を Platform のデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) 接続内で データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。
+CJA 管理者が確立しました。 [接続](/help/connections/create-connection.md) を Platform のデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) 接続内で データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。 レポートスイートの概念は存在しなくなりました。
 
 ## 新しい概念と用語
 
@@ -72,17 +72,30 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 * Adobe Analyticsの計算指標をCustomer Journey Analyticsに移動する場合は、 [このビデオ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja).
 * それ以外の場合は、Customer Journey Analyticsで計算指標を再作成します。
 
-### セッションと変数の持続性の設定
-
-[!UICONTROL Customer Journey Analytics] は、レポート時にこれらのすべての設定を適用し、これらの設定は [データビュー](help/data-views/component-settings/persistence.md). これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
-
 ### 仮想レポートスイートが「データビュー」になりました。
 
 データビューは、現在存在する仮想レポートスイートの概念を取り込み、それを [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これにより、タイムゾーンとセッションのタイムアウト間隔を設定できるようになります。 また、個々のディメンションにアトリビューションプロパティと有効期限プロパティを動的に適用することもできます。 これらは、すべてのデータに遡って適用されます。
 
+**必要な操作**:
+
+* データビューに関する多くの使用例について確認します。
+* Workspace では、以前使用していたレポートスイートセレクターを使用して、管理者が共有しているデータビューから選択できるようになりました。
+
+   ![data-view-selector](assets/data-views.png)
+
 ### クロスレポートスイートデータ
 
-複数のデータセットから既存の実装を組み合わせることができます。Experience Platform
+複数のデータセットから既存の実装を組み合わせることができます。Experience Platform これらのデータセットに基づく接続とデータビューは、別々のレポートスイートに以前存在したデータを組み合わせることができます。
+
+**必要な操作**:
+
+
+### セッションと変数の持続性の設定
+
+[!UICONTROL Customer Journey Analytics] は、レポート時にこれらのすべての設定を適用し、これらの設定は [データビュー](help/data-views/component-settings/persistence.md). これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
+
+**必要な操作**:
+
 
 ### 分類は、「参照データセット」になりました。
 
@@ -91,11 +104,15 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 ### コンテナの名前が変更されました
 
-次のコンテナを指定します。 [作成するすべてのデータビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). 組織のニーズに合わせて任意のコンテナの名前を変更できます。
-
+次のコンテナを指定します。 [作成するすべてのデータビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
 * **ヒットコンテナが「イベント」コンテナになりました。**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
 * **訪問コンテナは、「セッション」コンテナになりました**. [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
 * **訪問者コンテナが [!UICONTROL 人物] コンテナ**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
+
+**必要な操作**:
+
+組織のニーズに合わせて任意のコンテナの名前を変更することもできます。
+
 
 ### `Uniques Exceeded` 制限
 
