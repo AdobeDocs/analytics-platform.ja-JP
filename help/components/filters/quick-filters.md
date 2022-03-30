@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 83%
+source-wordcount: '1050'
+ht-degree: 81%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 83%
 * ネストされたコンテナや順次ルールに対応しません。
 
 クイックフィルターと本格的なコンポーネントリストフィルターの機能の比較については、 [こちら](/help/components/filters/filters-overview.md) を参照してください。
+
+次に、クイックフィルターに関するビデオを示します（代わりに、「クイックセグメント」という用語が使用されます）。 ただし、機能は同じです。
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## 前提条件  {#prereqs}
 

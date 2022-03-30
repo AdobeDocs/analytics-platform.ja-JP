@@ -4,10 +4,10 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 19%
+source-wordcount: '994'
+ht-degree: 18%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 19%
 
 レポート側での使い慣れた内容の多くは変更されていません。
 
-* 引き続き、 [Analysis Workspace](/help/analysis-workspace/home.md) を使用してデータを分析します。
-* 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) あなたの好きなように Workspace とダッシュボードは、従来のAdobe Analyticsと同じように機能します。
+* 引き続き、 [Analysis Workspace](/help/analysis-workspace/home.md) を使用してデータを分析します。 Workspace は、従来のAdobe Analyticsと同じように機能します。
+* 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) あなたの好きなように ダッシュボード (Mobileアプリ ) は、従来のAdobe Analyticsと同じように機能します。
 * [Report Builder](/help/report-builder/report-buider-overview.md) は新しいインターフェイスを備え、PC、Mac、Web 版の Excel で動作するようになりました。
 
 レポートに関しては、分析するために、より多くのクロスチャネルデータにアクセスできる点が異なります。 クロスチャネルのデータソースを含むいくつかのビジュアライゼーションの例を次に示します。
@@ -78,10 +78,11 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 **必要な操作**:
 
-* データビューに関する多くの使用例について確認します。
 * Workspace では、以前使用していたレポートスイートセレクターを使用して、管理者が共有しているデータビューから選択できるようになりました。
 
    ![data-view-selector](assets/data-views.png)
+
+* 多くの [データビューに関する使用例](/help/data-views/data-views-usecases.md).
 
 ### クロスレポートスイートデータ
 
