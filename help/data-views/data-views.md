@@ -4,8 +4,8 @@ description: データビューは、指標、ディメンション、セッシ�
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Customer Journey Analytics の Workspace プロジェクトは、データビューに基づいています。
 
-## データ表示機能
+## データ表示機能 {#capabilities}
 
 Adobe Experience Platform でのスキーマの変更や CJA 環境の再実装を行わなくても、データ表示のスキーマ要素の設定を自発的に変更できます。
 
@@ -52,12 +52,12 @@ Adobe Experience Platform でのスキーマの変更や CJA 環境の再実装�
 
 * データビュー内の&#x200B;**コンテナの名前を変更**&#x200B;し、名前を変更したコンテナをそのデータビューに基づくすべてのワークスペースプロジェクトに表示することができます。
 
-## データビューの前提条件
+## データビューの前提条件 {#prerequisites}
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
 * データビューを作成または管理するには、](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)Adobe Admin Console で一連の権限[が必要です。
 
-## ワークスペースで上書きできるデータビュー設定
+## ワークスペースで上書きできるデータビュー設定 {#settings-override}
 
 データビュー設定については、Analysis Workspace でプロジェクトレベルで上書きできるものと、上書きできないものがあります。
 
@@ -65,14 +65,14 @@ Adobe Experience Platform でのスキーマの変更や CJA 環境の再実装�
 * 指標のアトリビューション
 * レポートで「[!UICONTROL 値なし]」の行項目が表示されるかどうか
 
-## ワークスペースで上書きできないデータビュー設定
+## ワークスペースで上書きできないデータビュー設定 {#settings-no-override}
 
 * [!UICONTROL コンポーネントの種類]
 * 指標の形式設定
 * データビュー名
 * ディメンションの配分
 
-## データビューの削除
+## データビューの削除 {#delete}
 
 [!UICONTROL Customer Journey Analytics] でデータビューを削除すると、この削除されたデータビューに依存する [!UICONTROL ワークスペース] プロジェクトが機能しなくなることを示すエラーメッセージが表示されます。
 

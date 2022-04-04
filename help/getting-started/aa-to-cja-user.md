@@ -4,9 +4,9 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1010'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >このページは作成中です。
 
-おめでとうございます。会社が雇用Customer Journey Analyticsを開始しました。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
+貴社が雇用Customer Journey Analyticsを開始します。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
 
 ## 変更されていないもの
 
@@ -44,13 +44,25 @@ CJA 管理者が確立しました。 [接続](/help/connections/create-connecti
 
 CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更され、再構築されました。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 eVar や prop などの慣れ親しんだ概念は、課せられた制限と共に存在しなくなりました。
 
-## eVar および prop は追加されなくなりました
+## （仮想）レポートスイートが「データビュー」になりました。
 
-従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。
+[!UICONTROL データビュー] 仮想レポートスイートの概念を現在の状態から取り上げ、 [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これにより、タイムゾーンとセッションのタイムアウト間隔を設定できるようになります。 また、個々のディメンションにアトリビューションプロパティと有効期限プロパティを動的に適用することもできます。 これらは、すべてのデータに遡って適用されます。
 
 **必要な操作**:
 
-* 使用可能な様々な方法について理解しておく必要があります。
+* Workspace では、以前使用していたレポートスイートセレクターを使用して、管理者が共有しているデータビューから選択できるようになりました。
+
+   ![data-view-selector](assets/data-views.png)
+
+* 多くの [データビューに関する使用例](/help/data-views/data-views-usecases.md).
+
+## eVar および prop は追加されなくなりました
+
+従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。CJA 管理者がデータビューを作成しました。
+
+**必要な操作**:
+
+* これらのスキーマ要素を使用してデータを詳細に分析する方法について詳しく説明します。
 
 ## セグメントは「フィルター」になりました
 
@@ -72,17 +84,6 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 * Adobe Analyticsの計算指標をCustomer Journey Analyticsに移動する場合は、 [このビデオ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja).
 * それ以外の場合は、Customer Journey Analyticsで計算指標を再作成します。
 
-## 仮想レポートスイートが「データビュー」になりました。
-
-データビューは、現在存在する仮想レポートスイートの概念を取り込み、それを [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これにより、タイムゾーンとセッションのタイムアウト間隔を設定できるようになります。 また、個々のディメンションにアトリビューションプロパティと有効期限プロパティを動的に適用することもできます。 これらは、すべてのデータに遡って適用されます。
-
-**必要な操作**:
-
-* Workspace では、以前使用していたレポートスイートセレクターを使用して、管理者が共有しているデータビューから選択できるようになりました。
-
-   ![data-view-selector](assets/data-views.png)
-
-* 多くの [データビューに関する使用例](/help/data-views/data-views-usecases.md).
 
 ## クロスレポートスイートデータ
 
@@ -96,8 +97,9 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 **必要な操作**:
 
-
 ## 分類は、「参照データセット」になりました。
+
+
 
 ## 顧客属性が「プロファイルデータセット」になりました。
 
