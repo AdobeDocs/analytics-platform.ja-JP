@@ -4,7 +4,7 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 18%
@@ -93,7 +93,7 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 ## セッションと変数の持続性の設定
 
-[!UICONTROL Customer Journey Analytics] は、レポート時にこれらのすべての設定を適用し、これらの設定は [データビュー](help/data-views/component-settings/persistence.md). これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
+[!UICONTROL Customer Journey Analytics] は、レポート時にこれらのすべての設定を適用し、これらの設定は [データビュー](/help/data-views/component-settings/persistence.md). これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
 
 **必要な操作**:
 
