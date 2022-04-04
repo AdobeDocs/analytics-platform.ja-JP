@@ -4,9 +4,9 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
+source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1011'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >このページは作成中です。
 
-貴社が雇用Customer Journey Analyticsを開始します。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
+あなたの会社はCustomer Journey Analyticsを採用し始めている。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
 
 ## 変更されていないもの
 
