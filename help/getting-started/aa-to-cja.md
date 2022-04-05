@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 88%
+source-wordcount: '1316'
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,11 @@ Adobe Analytics などのデータセットでは、データの必ずしもす�
 
 Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用してExperience Platformに [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics変数をExperience Platform内の XDM スキーマとデータセットに直接マッピングし、Customer Journey Analyticsに簡単に接続できます。
 
-完全なグローバルレポートスイートは、実装が可能とは限らない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込む場合は、これらのレポートスイート間で変数を整合させることを前もって計画しておく必要があります。
+完全なグローバルレポートスイートは、実装が可能とは限らない場合があります。複数のレポートスイートをCustomer Journey Analyticsに取り込む予定がある場合は、次の 2 つのオプションがあります。
 
-例えば、レポートスイート 1 の eVar1 は[!UICONTROL ページ]を指します。レポートスイート 2 の eVar1 は[!UICONTROL 内部キャンペーン]を指します。CJA に取り込むと、これらの変数が 1 つの eVar1 ディメンションに混ざってしまうので、わかりにくく不正確なレポートになる可能性があります。
+* これらのレポートスイート間で変数の整合性を図る。 例えば、レポートスイート 1 の eVar1 は[!UICONTROL ページ]を指します。レポートスイート 2 の eVar1 は[!UICONTROL 内部キャンペーン]を指します。CJA に取り込むと、これらの変数が 1 つの eVar1 ディメンションに混ざってしまうので、わかりにくく不正確なレポートになる可能性があります。
+
+* 以下を使用： [日付準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) 変数をマッピングする機能です。 すべてのレポートスイートで同じ共通の変数デザインを使用すると便利ですが、新しいExperience Platformを使用する場合は不要です [データ準備](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) 機能。 データストリーム（またはプロパティ）レベルのマッピングされた値で変数を参照できます。
 
 [!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
 

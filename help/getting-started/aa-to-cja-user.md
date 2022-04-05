@@ -4,13 +4,13 @@ description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1012'
 ht-degree: 18%
 
 ---
-
 
 # Adobe Analyticsユーザー向け CJA ユーザーガイド
 
@@ -28,7 +28,7 @@ ht-degree: 18%
 * 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) あなたの好きなように ダッシュボード (Mobileアプリ ) は、従来のAdobe Analyticsと同じように機能します。
 * [Report Builder](/help/report-builder/report-buider-overview.md) は新しいインターフェイスを備え、PC、Mac、Web 版の Excel で動作するようになりました。
 
-レポートに関しては、分析するために、より多くのクロスチャネルデータにアクセスできる点が異なります。 クロスチャネルのデータソースを含むいくつかのビジュアライゼーションの例を次に示します。
+報告に関して言えば **相違点** は、分析する多くのクロスチャネルデータにアクセスできることを示しています。 クロスチャネルのデータソースを含むいくつかのビジュアライゼーションの例を次に示します。
 
 ![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
