@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 59355c37d7bae28c1de52cd12ae63c37cdd09eb6
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 81%
@@ -20,7 +20,7 @@ ht-degree: 81%
 
 Customer Journey Analytics にシームレスに移行するために Adobe Analytics データを準備することは、データの整合性とレポートの一貫性を保つうえできわめて重要です。
 
-### 1. ID の収集
+### 1. ID の収集 {#identities}
 
 カスタマージャーニーを理解するうえで最も重要な要素は、各ステップで顧客が誰であるかを把握することです。Customer Journey Analytics の場合、すべてのチャネルとそれに対応するデータに存在する識別子を持つことで、CJA 内で複数のソースを結び付けることができます。
 ID の例としては、顧客 ID、アカウント ID、メール ID などがあります。ID（場合によっては複数の ID）に関係なく、ID ごとに次の点を必ず考慮してください。
@@ -32,7 +32,7 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 
 Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために、クロスチャネル分析（以前の「フィールドベースのスティッチング」）を使用できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)
 
-### 2. 変数の整合
+### 2. 変数の整合 {#variables}
 
 Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用してExperience Platformに [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics変数をExperience Platform内の XDM スキーマとデータセットに直接マッピングし、Customer Journey Analyticsに簡単に接続できます。
 
@@ -44,7 +44,7 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する
 
 [!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
 
-### 3. マーケティングチャネルの（再）設定
+### 3. マーケティングチャネルの（再）設定 {#marketing-channels}
 
 従来の Adobe Analytics マーケティングチャネル設定は、CJA では同じようには行われません。これは次の 2 つの理由があります。
 
@@ -54,7 +54,7 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する
 
 アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=ja)を公開しています。これらの最新の推奨事項は、既に Adobe Analytics にある機能を Attribution IQ で最大限に活用するのに役立ちます。また、Customer Journey Analytics への移行を成功させるためのセットアップも行われます。
 
-### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定
+### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
 
 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集が進化するにつれて、Adobe Experience Platform Edge Network を使用して [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) か [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) のいずれかに移行する可能性があります。SDK の一般的な実装ではデータが Adobe Analytics に送信されますが、Adobe Experience Platform にデータを直接送信する機会も新たに現れています。その後、Adobe Analytics に送信するデータも維持しながら、Customer Journey Analytics に取り込むことができます。
 
@@ -78,7 +78,7 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する
 
 ## 重要な違いに対する準備
 
-### レポート時間処理の習熟
+### レポート時間処理の習熟 {#report-time}
 
 Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性などの成果を生み出すために、大量のデータ前処理に依存しています。これに対して、Customer Journey Analytics は、レポートの実行時にこれらの計算を実行します。
 
@@ -86,7 +86,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 この変更により、特に、有効期限が長くなる可能性のある変数について、データのレポート方法に多少の違いが生じます。[仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を使用して、レポート時間処理がレポートにどのように影響するかを評価することから始めることができます。
 
-### 重要なセグメントと計算指標の特定
+### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
 Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼ばれます）および計算指標は、Customer Journey Analytics と互換性がありません。多くの場合は、使用可能な新しいスキーマとデータを使用して、CJA でこれらのコンポーネントを再構築できます。
 

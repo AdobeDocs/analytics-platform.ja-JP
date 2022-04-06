@@ -5,20 +5,18 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 171b174624dbb48873024368884992766dcd0922
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 18%
+source-wordcount: '1053'
+ht-degree: 17%
 
 ---
 
 # Adobe Analyticsユーザー向け CJA ユーザーガイド
 
->[!NOTE]
->
->このページは作成中です。
+あなたの会社はCustomer Journey Analyticsを採用し始めている。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの類似点といくつかの大きな違いに気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
 
-あなたの会社はCustomer Journey Analyticsを採用し始めている。 Adobe Analyticsに詳しいユーザーは、すでに優れた優れたスタートを切っています。 Customer Journey Analyticsを扱う際には、いくつかの大きな違いといくつかの類似点に気が付くでしょう。 このページでは、まだ変更がない点と、主な違いについて説明します。 また、新しい概念に関するより多くの情報を得る方法や、カスタマージャーニーをより簡単かつ成功に導くためのさらなる手順についても説明します。
+CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更され、再構築されました。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 eVar や prop などの慣れ親しんだ概念は、課せられた制限と共に存在しなくなりました。
 
 ## 変更されていないもの
 
@@ -40,9 +38,9 @@ Customer Journey AnalyticsはAdobe Experience Platformからデータを取得�
 
 CJA 管理者が確立しました。 [接続](/help/connections/create-connection.md) を Platform のデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) 接続内で データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。 レポートスイートの概念は存在しなくなりました。
 
-## 新しい概念と用語
+## レポートスイート
 
-CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更され、再構築されました。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 eVar や prop などの慣れ親しんだ概念は、課せられた制限と共に存在しなくなりました。
+特に、組織がAdobe Analyticsプラットフォームにまだ存在し、CJA/AEP を追加している場合は、Adobe Analyticsソースコネクタまたは Web SDK を使用して、レポートスイートデータをExperience Platformに取り込むことができます。 通常、Analytics スキーマを使用して、レポートスイートに固有のソースデータセットを使用します。
 
 ## （仮想）レポートスイートが「データビュー」になりました。
 
