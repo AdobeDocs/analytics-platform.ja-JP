@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ CJA のいくつかの機能は、従来のAdobe Analyticsと比較して、業�
 
 ![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
-## 新しいアーキテクチャ
+## 新しいアーキテクチャ {#architecture}
 
 Customer Journey AnalyticsはAdobe Experience Platformからデータを取得します。 Experience Platformを使用すると、顧客データとコンテンツを任意のシステムまたはチャネルから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされたエクスペリエンスのデザインと配信を改善できます。
 
@@ -38,11 +38,11 @@ Customer Journey AnalyticsはAdobe Experience Platformからデータを取得�
 
 CJA 管理者が確立しました。 [接続](/help/connections/create-connection.md) を Platform のデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) 接続内で データビューは、仮想レポートスイートと似ています。 データビューは、Customer Journey Analyticsのレポートの基礎です。 レポートスイートの概念は存在しなくなりました。
 
-## レポートスイート
+## レポートスイート {#report-suites}
 
 特に、組織がAdobe Analyticsプラットフォームにまだ存在し、CJA/AEP を追加している場合は、Adobe Analyticsソースコネクタまたは Web SDK を使用して、レポートスイートデータをExperience Platformに取り込むことができます。 通常、Analytics スキーマを使用して、レポートスイートに固有のソースデータセットを使用します。
 
-## （仮想）レポートスイートが「データビュー」になりました。
+## （仮想）レポートスイートが「データビュー」になりました。 {#data-views}
 
 [!UICONTROL データビュー] 仮想レポートスイートの概念を現在の状態から取り上げ、 [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これにより、タイムゾーンとセッションのタイムアウト間隔を設定できるようになります。 また、個々のディメンションにアトリビューションプロパティと有効期限プロパティを動的に適用することもできます。 これらは、すべてのデータに遡って適用されます。
 
@@ -54,7 +54,7 @@ CJA 管理者が確立しました。 [接続](/help/connections/create-connecti
 
 * 多くの [データビューに関する使用例](/help/data-views/data-views-usecases.md).
 
-## eVar および prop は追加されなくなりました
+## eVar と prop
 
 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。CJA 管理者がデータビューを作成しました。
 
