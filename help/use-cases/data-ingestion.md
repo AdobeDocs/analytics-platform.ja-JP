@@ -4,7 +4,7 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 89%
@@ -19,7 +19,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 このワークフローでは、Adobe Analytics データコネクタを使用し、タグマネージャーとして DTM を使用するか、Launch を使用するかによって異なります。
 
-### Adobe Experience Platform（旧称 Launch）のタグを使用
+### Adobe Experience Platform( 旧称： [!UICONTROL 起動])
 
 1. [データレイヤーの作成](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=ja)をまだおこなっていない場合は、おこないます。データレイヤーは、サイト上の JavaScript オブジェクトのフレームワークで、実装で使用されるすべての変数値が含まれます。データレイヤーを使用すると、実装をより詳細に制御することができ、メンテナンスが容易になります。
 1. 用途 [Adobe Experience Platformタグ](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja) を使用して、データ収集用のコードをサイトに導入します（まだ導入していない場合）。 このタグ管理ソリューションでは、他のタグ要件と共に Analytics コードを導入できます。 タグは、他のソリューションや製品との統合を提供し、カスタムコードの導入に対応します。 これらのタスクはすべて、組織の開発チームに依存せずに実行できるので、自らサイト上のコードを更新できます。
