@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 59355c37d7bae28c1de52cd12ae63c37cdd09eb6
+source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,6 +111,8 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 * Adobe Analyticsでカスタムカレンダーを定義した場合は、同様のカスタムカレンダーを使用できます [カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md) CJA 内で使用できます。 カレンダーが正しく定義されていることを確認する必要があります。
 
 * Customer Journey Analytics では、カスタム訪問／セッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。この機能は、モバイルデータセットで特に役に立つ可能性があります。
+
+* ユーザーに対してデータディクショナリを提供するか、SDR を拡張してスキーマ要素のExperience Platformフィールド名を含めることを検討します。
 
 ## 次の手順
 
