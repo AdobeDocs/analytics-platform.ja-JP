@@ -4,10 +4,10 @@ description: 2019 年 12 月以降の Customer Journey Analytics ドキュメン
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 98%
+source-wordcount: '734'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,9 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 
 | 日付 | 説明のアップデート |
 | --- | --- |
+| 2022年4月 | 新規 [Adobe Analyticsユーザー向け CJA ユーザーガイド](/help/getting-started/aa-to-cja-user.md). |
+| 2022年3月 | 新規 [CJA 注釈 API ドキュメント](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
+| 2022年3月 | に関する新しいドキュメント [Workspace の注釈](/help/components/annotations/overview.md). |
 | 2022年3月 | コンテンツの大幅な更新 [接続サイズの推定](/help/getting-started/cja-faq.md). |
 | 2022 年 2 月 | [Adobe AnalyticsからCustomer Journey Analyticsへの進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja) |
 | 2022 年 1 月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/binding-dimensions-metrics.md)の新しい使用例 |

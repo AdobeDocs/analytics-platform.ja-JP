@@ -1,111 +1,113 @@
 ---
-title: CJA User Guide for Adobe Analytics users
-description: What to consider from a user's perspective when your company moves data from Adobe Analytics to Customer Journey Analytics
+title: Adobe Analyticsユーザー向け CJA ユーザーガイド
+description: 会社がAdobe AnalyticsからCustomer Journey Analyticsにデータを移動する際に、ユーザーの観点から考慮すべき事項
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
+source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1460'
 ht-degree: 6%
 
 ---
 
-# CJA User Guide for Adobe Analytics users
+# Adobe Analyticsユーザー向け CJA ユーザーガイド
 
-If your organization is starting to employ Customer Journey Analytics (CJA), you may notice some similarities and differences between traditional Analytics and CJA. This page aims to explain those differences to help acclimate your organization to the new implementation and reporting workflow. This page also provides additional resources on new concepts, and further steps to make your journey as an analyst easier and more successful.
+組織がCustomer Journey Analytics(CJA) を採用し始めている場合、従来の Analytics と CJA の類似点と違いに気付くかもしれません。 このページでは、組織を新しい実装およびレポートワークフローに適合させるために、これらの違いについて説明します。 また、このページでは、新しい概念に関する追加のリソースと、アナリストとしてのジャーニーをより簡単かつ成功に導くための手順についても説明します。
 
-Several features in CJA are renamed and redesigned to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. The limitations of eVars and props no longer exist, in favor of flexible custom dimensions and metrics.
+CJA のいくつかの機能は、業界標準に合わせて名前が変更され、再設計されています。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 柔軟なカスタムディメンションおよび指標を考慮して、eVar と prop の制限は存在しなくなりました。
 
-## What hasn&#39;t changed
+## 変更されていないもの
 
-Much of what you are familiar with on the reporting side has not changed.
+レポート側での使い慣れた内容の多くは変更されていません。
 
-* [](/help/analysis-workspace/home.md)Workspace operates the same as it does in traditional Adobe Analytics.
-* [](/help/mobile-app/home.md)
-* [](/help/report-builder/report-buider-overview.md)(Before this version of Report Builder, you couldn’t use in on Mac unless you ran it on VMware.) This version doesn’t support traditional AA data request yet.
+* 引き続き、 [Analysis Workspace](/help/analysis-workspace/home.md) を使用してデータを分析します。 Workspace は、従来のAdobe Analyticsと同じように動作します。
+* 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) は使用可能で、CJA と従来の Analytics の間で同様に機能します。
+* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、iOS、および Web バージョンの Excel で動作する新しいインターフェイスが用意されています。 ( このバージョンのReport Builderの前は、VMware 上で実行しない限り、Mac上でを使用できませんでした。) このバージョンは、従来の AA データリクエストをまだサポートしていません。
 
-## Changes to reporting
+## レポートの変更点
 
-You have access to a lot more cross-channel data to analyze. For example, you can create a workspace project that analyzes performance of multiple channels, provided these datasets are ingested by your organization and included in data views used by CJA (see &quot;Changes to data architecture&quot; below).
+分析するために、より多くのクロスチャネルデータにアクセスできます。 例えば、複数のチャネルのパフォーマンスを分析する Workspace プロジェクトを作成できます。たとえば、これらのデータセットが組織で取り込まれ、CJA が使用するデータビューに含まれる場合です（以下の「データアーキテクチャの変更」を参照）。
 
-![](assets/cross-channel.png)
+![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
-## Changes to data architecture {#architecture}
+## データアーキテクチャの変更 {#architecture}
 
-CJA gets its data from Adobe Experience Platform. Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences.
+CJA はAdobe Experience Platformからデータを取得します。 Experience Platformを使用すると、顧客データとコンテンツを任意のシステムまたはチャネルから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされたエクスペリエンスのデザインと配信を改善できます。
 
-Customer data in the Experience Platform is stored as datasets, which consist of a schema and batches of data. プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)を参照してください。
+Experience Platform内の顧客データは、 [スキーマ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja) とデータのバッチ。 プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)を参照してください。
 
-[](/help/connections/create-connection.md)[](/help/data-views/data-views.md)Data views are conceptually similar to virtual report suites, and are the basis of reporting in CJA. Since Experience Platform sources all data for reporting, report suites no longer exist as a container for data.
+CJA 管理者が設定します。 [接続](/help/connections/create-connection.md) をExperience Platformのデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) これらの接続を使用します。 データビューは、概念的には仮想レポートスイートと似ており、CJA でのレポートの基礎となります。 Experience Platformはレポートのすべてのデータをソースするので、レポートスイートはデータのコンテナとして存在しなくなりました。
 
-A connection lets your Analytics Admin integrate datasets from Adobe Experience Platform into CJA, included in the following video:
+接続を使用すれば、次のビデオに含まれる、Adobe Experience Platformのデータセットを Analytics 管理者が CJA に統合できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe offers multiple ways to bring data in to Adobe Experience Platform, including report suite data through the Adobe Analytics Source Connector or the Web SDK. Existing implementations from multiple report suites can be combined in Experience Platform. The connections and data views that are based on these data sets can combine data that previously existed in separate report suites.
+Adobeでは、Adobe Analyticsソースコネクタや Web SDK を使用したレポートスイートデータなど、複数の方法でAdobe Experience Platformにデータを取り込むことができます。 複数のレポートスイートから既存の実装を組み合わせることができます。Experience Platform これらのデータセットに基づく接続とデータビューは、別々のレポートスイートに以前存在したデータを組み合わせることができます。
 
-## Changes to the concept of virtual report suites {#data-views}
+## 仮想レポートスイートの概念の変更 {#data-views}
 
-[](/help/data-views/create-dataview.md)These changes make general settings like timezone and session time-out intervals configurable and retroactive. Individual variable settings like attribution and expiration can also be customized on a report or data view level. These settings are non-destructive and retroactive.
+[!UICONTROL データビュー] 仮想レポートスイートの概念を現在の状態から取り上げ、 [データに対する追加の制御を有効にする](/help/data-views/create-dataview.md) 接続で使用可能になりました。 これらの変更により、タイムゾーンやセッションのタイムアウト間隔などの一般的な設定が設定可能になり、遡及的になります。 アトリビューションや有効期限などの個々の変数設定は、レポートレベルまたはデータビューレベルでカスタマイズすることもできます。 これらの設定は、非破壊的で遡及的です。
 
-Notice that the report suite selector in the top right now lets you choose from available data views:
+右上のレポートスイートセレクターで、利用可能なデータビューから選択できるようになりました。
 
-![](assets/data-views.png)
+![data-view-selector](assets/data-views.png)
 
-[](/help/data-views/data-views-usecases.md)
+詳しくは、 [データビューに関する使用例](/help/data-views/data-views-usecases.md) を参照してください。
 
-## Changes to the concept of eVars and props
+## eVar および prop の概念の変更
 
-Unlimited schema elements are available, including dimensions, metrics, and list fields. These are mapped to unlimited schema elements including dimensions, metrics and list fields in Experience Platform. All visit and attribution settings applied after processing rules in Adobe Analytics now apply at query time in Customer Journey Analytics.
+の概念 [!UICONTROL eVar], [!UICONTROL prop]、および [!UICONTROL イベント] 従来のAdobe Analyticsでは、もはや存在しない [!UICONTROL Customer Journey Analytics]. Adobe Analyticsでは、eVar と prop に、コンテンツ、顧客、キャンペーンなどの説明が格納されます。 およびイベントは、売上高、購読、生成されたリードなどをカウントします。 Customer Journey Analyticsは両方のタイプのデータを保持し、同じ方法でアクセスできます。同じ方法で、Analysis Workspaceの左パネルの「Dimension」または「指標」の下に表示されます。
 
-With this flexibility, you may run into situations in which a single schema field can be used as both a dimensions and a metric to support different tracking needs.
+CJA では、ディメンション、指標、リストフィールドなど、無制限のスキーマ要素を使用できます。 これらは、Experience Platform内のディメンション、指標、リストフィールドなど、無制限のスキーマ要素にマッピングされます。 Adobe Analyticsの処理ルールの後に適用されたすべての訪問および属性設定が、Customer Journey Analyticsのクエリ時に適用されるようになりました。
 
-## Changes to the concept of segments
+この柔軟性により、1 つのスキーマフィールドをディメンションと指標の両方として使用して、異なるトラッキングニーズをサポートできる場合があります。
 
-Adobe has renamed the &quot;segments&quot; component to &quot;filters&quot; to better align with industry standards and provide better distinction with segments in Adobe Experience Platform.
+## セグメントの概念の変更
 
-If you want to move existing Adobe Analytics segments to Customer Journey Analytics, see the following video:
+Adobeでは、業界標準に合わせて、Adobe Experience Platformのセグメントとの区別を改善するために、「セグメント」コンポーネントの名前を「フィルター」に変更しました。
+
+[!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなり、代わりに、マッピング先のExperience Platformスキーマフィールド名を使用します。 この変更により、Adobe Analyticsの既存のセグメントの中で、互換性のあるものは 1 つもなくなります。 [!UICONTROL Customer Journey Analytics]. 既存のAdobe AnalyticsセグメントをCustomer Journey Analyticsに移動する場合は、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
-[!DNL Customer Journey Analytics]
+まだ共有または公開できませんが [!UICONTROL フィルター] ([!UICONTROL セグメント]から ) [!DNL Customer Journey Analytics] Experience Platform統合プロファイルに対して、この機能は開発中です。
 
-In addition to the concept of segments changing, segment containers are also updated.
+セグメントの変更の概念に加えて、セグメントコンテナも更新されます。
 
-* ****[!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
-* ****[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
-* ****[!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
+* **ヒットコンテナが「イベント」コンテナになりました。**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
+* **訪問コンテナは、「セッション」コンテナになりました**. [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
+* **訪問者コンテナが [!UICONTROL 人物] コンテナ**. [!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
 
-## Changes to the concept of calculated metrics
+## 計算指標の概念の変更
 
-Calculated metrics are similarly named between traditional Analytics and CJA. If you want to move Adobe Analytics calculated metrics to Customer Journey Analytics, see the following video:
+計算指標は、従来の Analytics と CJA では同様に名前が付けられています。 しかし、 [!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに、Experience Platformスキーマ要素を使用します。 この基本的な変更は、既存の計算指標に対して、 [!UICONTROL Customer Journey Analytics]. Adobe Analyticsの計算指標をCustomer Journey Analyticsに移行する場合は、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
-## Changes to variable attribution and expiration settings
+## 変数の属性と有効期限の設定の変更
 
-[](/help/data-views/component-settings/persistence.md)
+[!UICONTROL Customer Journey Analytics] は、レポート時に、アトリビューションと有効期限を含むすべての変数設定を適用します。 これらの設定は、現在は、 [データビュー](/help/data-views/component-settings/persistence.md)また、一部の変数設定（アトリビューションなど）は、Workspace プロジェクトで変更できます。
 
-You can have multiple versions of the same variable in the same data view. For example, you can have one Tracking Code dimension that expires after 30 days, and another that expires at the end of a session. Both of these Tracking Code dimensions use the same source data, but use different attribution settings.
+同じデータビューで、同じ変数の複数のバージョンを持つことができます。 例えば、30 日後に期限切れになるトラッキングコードディメンションと、セッションの終わりに期限切れになるトラッキングコードディメンションを設定できます。 これらのトラッキングコードディメンションは両方とも同じソースデータを使用しますが、異なるアトリビューション設定を使用します。
 
-You can also have multiple data views based on the same connection. For example, you can have one data view with a session timeout of 30 minutes, and another with a session timeout of 15 minutes. Both data views appear in the upper right selector so you can seamlessly transition between them.
+また、同じ接続に基づいて複数のデータビューを持つこともできます。 例えば、あるデータビューのセッションタイムアウトが 30 分の場合と、別のデータビューのセッションタイムアウトが 15 分の場合があります。 両方のデータビューが右上のセレクターに表示されるので、シームレスに切り替えることができます。
 
-## Changes to the concept of classifications
+## 分類の概念の変更
 
-&quot;Classifications&quot; are now known as &quot;Lookup datasets&quot;. Lookup datasets are used to look up values or keys found in your Event or Profile data. 例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。[](/help/use-cases/b2b.md)
+「分類」は、「ルックアップデータセット」になりました。 ルックアップデータセットは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。 例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。詳しくは、 [アカウントレベルのデータをルックアップデータセットとして追加](/help/use-cases/b2b.md) を参照してください。
 
-## Changes to the concept of customer attributes
+## 顧客属性の概念の変更
 
-&quot;Customer attributes&quot; are now known as &quot;Profile datasets&quot;. For example, it allows you to upload CRM data about your customers. 含める個人 ID を選択できます。[!DNL Experience Platform]
+「顧客属性」は、「プロファイルデータセット」になりました。 プロファイルデータセットには、 [!UICONTROL イベント] データ。 例えば、顧客に関する CRM データをアップロードできます。 含める個人 ID を選択できます。で定義された各データセット [!DNL Experience Platform] には、1 つ以上のユーザー ID セットが定義されています。
 
-## Changes to how Adobe identifies visitors
+## 訪問者の識別方法の変更Adobe
 
-CJA expands the concepts of identities beyond ECIDs to include any ID you want to use, including Customer ID, Cookie ID, Stitched ID, User ID, Tracking Code, and so on. [](/help/connections/cca/overview.md)Any user setting up a Workspace project in CJA must understand the IDs used across the datasets. See the following video that highlights the use of identities in CJA:
+CJA は、ECID 以外に ID の概念を拡張し、顧客 ID、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなど、使用する ID を含めます。 データセット全体で共通の名前空間 ID を使用する、またはを使用する [クロスチャネル分析](/help/connections/cca/overview.md) は、異なるデータセットをまたいで人々をリンクするのに役立ちます。 CJA で Workspace プロジェクトを設定するユーザーは、データセット全体で使用される ID を理解する必要があります。 CJA での ID の使用に関する重要なビデオを以下に示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
-## Changes to the concept of low-traffic dimension item
+## 低トラフィックディメンション項目の概念の変更
 
-CJA has fewer limitations to high cardinality fields. Changes to the reporting architecture allows Analysis Workspace to report on many more unique dimension items. [](../analysis-workspace/workspace-faq/long-tail.md)
+従来のAdobe Analyticsでは、一意の値を受け取りすぎる変数が、以下にディメンション項目をグループ化し始めます。 [!UICONTROL 低トラフィック]. CJA には、基数の高いフィールドに対する制限が少なくなります。 レポートアーキテクチャが変更され、Analysis Workspaceは、より多くの一意のディメンション項目に関するレポートを作成できます。 詳しくは、 [ロングテール](../analysis-workspace/workspace-faq/long-tail.md) を参照してください。
