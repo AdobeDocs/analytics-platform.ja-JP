@@ -4,7 +4,7 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 3c353d668bbf1f0d276edfa0d3491969a1a9dfeb
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 85%
@@ -57,7 +57,7 @@ ht-degree: 85%
 
 | 質問 | 回答 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：24 時間以内<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
+| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>小規模なバックフィル — 例えば、1,000 万行のルックアップデータセットの場合：七日以内に<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
 
 ## 5.の周期ウィンドウを設定 [!UICONTROL 接続] データ保持 {#data-retention}
 
