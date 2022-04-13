@@ -4,10 +4,10 @@ description: Adobe Analytics データを Customer Journey Analytics のデー�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
-workflow-type: ht
-source-wordcount: '788'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 手順 1：Adobe Analytics で発生件数指標を実行する
 
-[発生件数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)指標は、特定のディメンションが設定または持続されたヒット数を示します。
+[発生件数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)指標は、特定のディメンションが設定または持続されたヒット数を示します。
 
 1. Analytics／[!UICONTROL ワークスペース] で、ディメンションとしてレポートする日付範囲を [!UICONTROL フリーフォーム]テーブルにドラッグします。
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja) で、生データから、Analytics ソースコネクタによって一部の行が削除された可能性があるかどうかを確認します。
+1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html) で、生データから、Analytics ソースコネクタによって一部の行が削除された可能性があるかどうかを確認します。
 
-   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行が削除される可能性があります。 行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
+   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)では、XDM スキーマへの変換中に行が削除される可能性があります。 行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
 
    | Analytics フィールド | 削除される原因となる値 |
    | --- | --- |

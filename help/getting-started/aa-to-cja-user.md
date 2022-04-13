@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 6%
+source-wordcount: '1456'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ CJA のいくつかの機能は、業界標準に合わせて名前が変更さ�
 
 CJA はAdobe Experience Platformからデータを取得します。 Experience Platformを使用すると、顧客データとコンテンツを任意のシステムまたはチャネルから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされたエクスペリエンスのデザインと配信を改善できます。
 
-Experience Platform内の顧客データは、 [スキーマ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja) とデータのバッチ。 プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)を参照してください。
+Experience Platform内の顧客データは、 [スキーマ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) とデータのバッチ。 プラットフォームについて詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html)を参照してください。
 
 CJA 管理者が設定します。 [接続](/help/connections/create-connection.md) をExperience Platformのデータセットに追加します。 その後、 [データビュー](/help/data-views/data-views.md) これらの接続を使用します。 データビューは、概念的には仮想レポートスイートと似ており、CJA でのレポートの基礎となります。 Experience Platformはレポートのすべてのデータをソースするので、レポートスイートはデータのコンテナとして存在しなくなりました。
 

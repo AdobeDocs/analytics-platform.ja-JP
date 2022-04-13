@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a1bb56c5a7e6d3bb6b59e2cf3448409d85ec2efa
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 77%
+source-wordcount: '1047'
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 77%
 
 プロジェクト内にクイックフィルターを作成すると、 [フィルタービルダー](/help/components/filters/create-filters.md) 全体が複雑になるのを回避できます。クイックフィルター
 
-* 適用方法 [プロジェクトのみのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
+* 適用方法 [プロジェクトのみのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
 * 最大 3 つのルールを許可
 * ネストされたコンテナや順次ルールに対応しません。
 
@@ -25,9 +25,9 @@ ht-degree: 77%
 
 >[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
-## 前提条件  {#prereqs}
+## 前提条件 {#prereqs}
 
-クイックフィルターは誰でも作成できます。 ただし、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=ja#analytics-tools) をクリックして、クイックフィルターを保存したり、フィルタービルダーで開いたりできます。
+クイックフィルターは誰でも作成できます。 ただし、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) をクリックして、クイックフィルターを保存したり、フィルタービルダーで開いたりできます。
 
 ## クイックフィルターの作成 {#create}
 
@@ -39,7 +39,7 @@ ht-degree: 77%
 | --- | --- |
 | [!UICONTROL 名前] | フィルターのデフォルト名は、フィルター内のルール名の組み合わせです。フィルターの名前を、わかりやすい名前に変更できます。 |
 | [!UICONTROL 含む／除く] | フィルター定義にコンポーネントを含めるか除外することはできますが、両方を使用することはできません。 |
-| [!UICONTROL ヒット／訪問／訪問者コンテナ] | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問およびページビューをまたいで訪問者に固有の、包括的なデータが含まれます。[!UICONTROL 訪問] コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、 [!UICONTROL ヒット] コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。デフォルトのコンテナは [!UICONTROL ヒット] です。 |
+| [!UICONTROL ヒット／訪問／訪問者コンテナ] | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問およびページビューをまたいで訪問者に固有の、包括的なデータが含まれます。[!UICONTROL 訪問] コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、 [!UICONTROL ヒット] コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。デフォルトのコンテナは [!UICONTROL ヒット] です。 |
 | [!UICONTROL コンポーネント] (Dimension/指標/日付範囲 ) | コンポーネント（ディメンション、指標、日付範囲、ディメンション値）を追加して、最大 3 つのルールを定義できます。適切なコンポーネントを見つける方法は 3 つあります。<ul><li>入力を開始すると、 [!UICONTROL クイックフィルター] ビルダーが適切なコンポーネントを自動的に見つけます。</li><li>ドロップダウンリストを使用して、コンポーネントを検索します。</li><li>データセットを左側のパネルからドラッグ＆ドロップします。</li></ul> |
 | [!UICONTROL 演算子] | 標準演算子と [!UICONTROL 個別カウント] 演算子を検索するには、ドロップダウンメニューを使用します。詳しくは、 [フィルター演算子](operators.md)を参照してください。 |
 | プラス（+）記号 | 別のルールの追加 |

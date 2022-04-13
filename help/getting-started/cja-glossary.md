@@ -4,10 +4,10 @@ description: Customer Journey Analytics の用語集。
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 97%
+source-wordcount: '336'
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ Customer Journey Analytics の用語には、Adobe Analytics でこれまで使�
 ## Adobe Experience Platform の用語
 
 Adobe Experience Platform は、企業全体のデータとコンテンツを標準化、リアルタイムの消費者プロファイルを強化、データサイエンスを可能にし、コンテンツの速度を向上させて、カスタマージャーニーをまたいだエクスペリエンスのパーソナライゼーションを促進します。
-詳しくは、[Adobe Experience Platform の用語](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=en)を参照してください。
+詳しくは、[Adobe Experience Platform の用語](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=ja)を参照してください。

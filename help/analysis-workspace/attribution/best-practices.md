@@ -3,10 +3,10 @@ title: アトリビューションのベストプラクティス
 description: アトリビューションモデルの決定に関するベストプラクティスは何ですか。
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 **例 2**
 
-仮説は次のようになります。「当社の業界（旅行業など）では、顧客が商品の購入前に大量に調査するので、アトリビューションウィンドウは 30 日ではなく 60 日か 90 日です」。 次に、 [ルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=ja#lookback-windows) を 90 日に変更します。
+仮説は次のようになります。「当社の業界（旅行業など）では、顧客が商品の購入前に大量に調査するので、アトリビューションウィンドウは 30 日ではなく 60 日か 90 日です」。 次に、 [ルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) を 90 日に変更します。
 
 ## 手順 3：アルゴリズムアトリビューションの使用
 
