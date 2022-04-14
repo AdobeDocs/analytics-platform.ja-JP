@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、クロスチャネル分析用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: e89dca85a329e83df9dd6ec944c8b1081b4c87f1
+source-git-commit: 0b4c3dd1e7eafbefc69c391d027462240be4f3dc
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 93%
+source-wordcount: '615'
+ht-degree: 94%
 
 ---
 
@@ -204,7 +204,7 @@ ht-degree: 93%
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [バインディングディメンションと指標を使用](use-cases/binding-dimensions-metrics.md)
    + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
-   + [(B2B)Marketo B2B データを AEP に取り込み、CJA でレポートする](use-cases/marketo.md)
+   + [Marketo Engageデータの AEP への取り込みと CJA でのレポート](use-cases/marketo.md)
    + [チャネルをまたいだデータの分析](use-cases/cross-channel.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
