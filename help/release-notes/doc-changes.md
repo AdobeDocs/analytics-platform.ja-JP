@@ -4,10 +4,10 @@ description: 2019 年 12 月以降の Customer Journey Analytics ドキュメン
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: b7a68f7cbcca74c1eaa5f14c4a3aa2652afb248d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 81%
+source-wordcount: '713'
+ht-degree: 79%
 
 ---
 
@@ -17,13 +17,14 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 
 | 日付 | 説明のアップデート |
 | --- | --- |
+| 2022年4月 | に関するドキュメント [ディメンションサブ文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | 2022年4月 | 新規 [Adobe Analyticsユーザー向け CJA ユーザーガイド](/help/getting-started/aa-to-cja-user.md). |
 | 2022年3月 | 新規 [CJA 注釈 API ドキュメント](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | 2022年3月 | に関する新しいドキュメント [Workspace の注釈](/help/components/annotations/overview.md). |
 | 2022年3月 | コンテンツの大幅な更新 [接続サイズの推定](/help/getting-started/cja-faq.md). |
 | 2022 年 2 月 | [Adobe AnalyticsからCustomer Journey Analyticsへの進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
 | 2022 年 1 月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/binding-dimensions-metrics.md)の新しい使用例 |
-| 2022 年 1 月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#allocation-settings)に関する新機能のドキュメントを追加しました |
+| 2022 年 1 月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings)に関する新機能のドキュメントを追加しました |
 | 2022 年 1 月 | [Adobe Analytics データと CJA の Analytics データの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=ja)に関する新しい記事 |
 | 2021 年 11 月 | 接続の詳細ページの詳細ページ「[[!UICONTROL スキップされたレコード]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-details-settings)」のドキュメントを更新しました。 |
 | 2021 年 10 月 | CJA の [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=ja) のドキュメント。 |

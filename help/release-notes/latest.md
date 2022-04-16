@@ -3,30 +3,29 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
+source-git-commit: 56f62d8af96e64a6867e38a9701219bcefc62a6a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 20%
+source-wordcount: '244'
+ht-degree: 15%
 
 ---
 
-# 現在の Customer Journey Analytics リリースノート (2022年3月)
+# 最新のCustomer Journey Analytics(CJA) リリースノート（2022 年 4 月）
 
-**最終更新日**:2022 年 4 月 12 日
+>[!NOTE]
+>
+>このページには、変更される可能性のあるリリース前の情報が含まれています。
+
+**最終更新日**:2022 年 4 月 14 日
 
 ## 主な特長
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Workspace の注釈 | Workspace の注釈を使用すると、コンテキストデータのニュアンスやインサイトを組織に効果的に伝えることができます。 [詳細情報](/help/components/annotations/overview.md) | 段階的な展開は 2022 年 3 月 23 日から開始します |
-| 新規Customer Journey Analyticsランディングページ | Customer Journey Analytics用のランディングページには、プロジェクトマネージャーのホームページと、より効果的に使い始めるのに役立つ学習セクションが用意されています。 [詳細情報](/help/getting-started/landing.md) | 2022 年 4 月 2 日 |
-| [!UICONTROL 次の項目] または [!UICONTROL 前の項目] Workspace パネル | この [!UICONTROL 次または前の項目] パネルを使用すると、選択したディメンション項目に従う項目、または選択したディメンション項目の前に続く項目を調べることができます。 例えば、特定の製品ページ、マーケティングチャネル、デバイスタイプまで、次のページや前のページを表示したい場合に使用します。 このパネルは、任意のディメンションを参照でき、インサイトを得るために新しい実装は必要ないので、従来の次へ/以前のレポートにとどまりません。 | 2022 年 4 月 21 日 |
+| Dimensionの部分文字列 | ディメンション項目として使用する文字列の目的の部分を抽出する複数のメソッドを提供します。 この機能を使用すると、文字列に区切り文字付きの値が含まれる場合に、文字列ディメンションを配列として扱うこともできます。 [詳細情報](../data-views/component-settings/substring.md) | 2022 年 4 月 21 日 |
+| Analytics ソースコネクタ用のデータ準備 | この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) が [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) Adobe Experience Platformが提供する機能 Adobe Real-time Customer Data Platform(RTCDP)、CJA、Adobe Journey Optimizer(AJO) のお客様は、追加のフィールドグループを使用して Analytics フィールドグループを拡張できるようになりました。 また、100 以上の Data Prep 演算子を利用して、Adobe Experience Platform(AEP) への取り込み中に Analytics データを強化することもできます。 RTCDP のお客様は、プロファイルに対して複数のデータ準備対応レポートスイートを有効にできるようになりました。<p>Analytics ソースコネクタを使用して複数のレポートスイートを取り込む CJA のお客様は、レポートスイート間の列の違いを競合解除する手段を持つようになりました。 例えば、「検索語句」が `eVar1` 1 つのレポートスイートと `eVar2` 別のレポートスイートでは、Data Prep を使用して、2 つの eVar の値を結合する新しい列で Analytics フィールドグループを拡張できます。 | 2022 年 4 月 26 日 |
 
 {style=&quot;table-layout:auto&quot;}
-
-## 修正点
-
-* Experience Cloudのホームページから CJA にアクセスする際のコンソールエラーを修正しました。 （AN-281468）
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics ドキュメントのアップデート](/help/release-notes/doc-changes.md)
