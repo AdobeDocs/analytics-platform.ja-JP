@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 97%
 | Attribution IQ | フルサポート |
 | 計算指標 | 完全にサポートされます。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | カレンダーイベント | フルサポート. カレンダーイベントは [注釈](/help/components/annotations/overview.md) Workspace で使用できます。 |
+| 分類ルールビルダー | 完全なサポート。 呼び出し済み [substrings](/help/data-views/component-settings/substring.md) （CJA 内） 参照データセットではなく、レポート時に文字列操作を使用します。 |
 | クロスデバイス／クロスチャネルのステッチ | 完全にサポートされます。 [クロスチャネル分析](/help/connections/cca/overview.md) を参照してください。 |
 | CSV のダウンロード | フルサポート |
 | カスタムカレンダー | フルサポート |
@@ -80,7 +81,6 @@ ht-degree: 97%
 | 機能 | メモ |
 | --- | --- |
 | アラート | サポートが予定されています。 |
-| 分類ルールビルダー | CJA での動作（ルックアップデータセットではなく、レポート時に文字列操作を使用する）とは少し異なります。 |
 | 貢献度分析 | サポートが予定されています。 |
 | Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。 また、Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)でも、CJA におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
