@@ -4,9 +4,9 @@ description: ワークスペースでの注釈の作成方法
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 97cbe0d376892a86d35f38956bc11f3d43bf754a
+source-git-commit: 15faee32171a2beab7cf42b92b09358b5cb1acc3
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 92%
 | **[!UICONTROL 折れ線]グラフの点を右クリックします。** | [!UICONTROL 注釈ビルダー]が開きます。なお、この方法で作成された注釈は、デフォルトでは、作成されたプロジェクトでのみ表示されます。ただし、すべてのプロジェクトで利用できるようにすることができます。日付や指標などは既に入力されていることにも注意してください。<p>![](assets/annotate-line.png) |
 | **ワークスペースで、[!UICONTROL コンポーネント]／[!UICONTROL 注釈を作成]に移動します。** | [!UICONTROL 注釈ビルダー]が開きます。 |
 | **次のホットキーを使用**&#x200B;して注釈ビルダーを開きます。PC：`ctrl` + `shift` + o、Mac：`shift` + `command` + o | なお、ホットキーを使用して注釈を作成すると、事前に選択された範囲（指標またはディメンション）を含まずに、現在の日付に対して 1 日分の注釈が作成されます。 |
-| **以下を使用： [CJA 注釈 API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | CJA 注釈 API を使用すると、Adobe I/Oを通じて、注釈をプログラムで作成、更新、取得できます。これらの API は、製品 UI 内でAdobeが使用するのと同じデータおよびメソッドを使用します。 |
+| **以下を使用： [CJA 注釈 API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | CJA 注釈 API を使用すると、Adobe Developerを通じて、注釈の作成、更新、取得をプログラムで実行できます。 これらの API は、製品 UI 内でAdobeが使用するのと同じデータおよびメソッドを使用します。 |
 
 1. [!UICONTROL 注釈ビルダー]の要素を入力します。
 
