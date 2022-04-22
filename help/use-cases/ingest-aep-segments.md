@@ -3,15 +3,19 @@ title: AEP オーディエンスのCustomer Journey Analyticsへの取り込み
 description: AEP オーディエンスをCustomer Journey Analyticsに取り込み、分析する方法を説明します。
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: cd1d639ad698c188c506881b2b17103b0a3559f2
+source-git-commit: ed01fd0899cac21fff156e0c31dc2b52ff7c8cca
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
 
 
 # AEP オーディエンスのCustomer Journey Analyticsへの取り込み (CJA)
+
+>[!NOTE]
+>
+>このトピックは作成中です。
 
 (AEP ドキュメントマネージャーによると、Brandon、fyi、「統合プロファイル」は、「リアルタイム顧客プロファイル」の古い用語です。 AEP ドキュメントセット内に UP 上のドキュメントは見つかりません。)
 
@@ -61,7 +65,7 @@ Adobe Experience Platform [リアルタイム顧客プロファイル](https://e
 * `audienceMembershipIdList` 文字列フィールド：オーディエンス ID
 * オーディエンスのわかりやすい名前を追加します (`audienceMembershipIdName`など )
 
-   ![わかりやすいオーディエンス名](assets/audience-name)
+   ![わかりやすいオーディエンス名](assets/audience-name.png)
 
 ## 手順 5:CJA でこのプロファイルデータセットへの接続を作成する
 
