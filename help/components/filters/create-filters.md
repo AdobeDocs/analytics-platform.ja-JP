@@ -2,10 +2,10 @@
 title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+source-git-commit: 38b68d2f61b2db9dbc2cdf4853a8c32a1f8639e9
+workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 | アクション | 説明 |
 |--- |--- |
-| 選択範囲からフィルターを作成 | インラインフィルターを作成します。行を選択して、選択範囲を右クリックし、インラインフィルターを作成します。このフィルターは、オープンプロジェクトにのみ適用し、CJA フィルターとして保存されません。1. 行を選択します。2. 選択範囲を右クリックします。3. 「*選択内容からフィルターを作成*」をクリックします。 |
+| 選択範囲からフィルターを作成 | インラインフィルターを作成します。行を選択して、選択範囲を右クリックし、インラインフィルターを作成します。このフィルターは、オープンプロジェクトにのみ適用し、CJA フィルターとして保存されません。 1. 行を選択します。2. 選択範囲を右クリックします。3. 「*選択内容からフィルターを作成*」をクリックします。 |
 | コンポーネント／新しいフィルター | フィルタービルダーを表示します。フィルタリングについて詳しくは、[フィルタービルダー](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=ja)を参照してください。 |
 | 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | [キュレーションおよび共有](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=ja#concept_4A9726927E7C44AFA260E2BB2721AFC6)では、プロジェクトに適用するフィルターを、受信者に共有された分析で使用する方法について学習します。 |
 | フィルターをディメンションとして使用 | ビデオ：Analysis Workspace でフィルターをディメンションとして使用。 |
