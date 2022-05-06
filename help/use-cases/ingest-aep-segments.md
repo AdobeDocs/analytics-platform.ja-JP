@@ -4,40 +4,42 @@ description: AEP オーディエンスをCustomer Journey Analyticsに取り込�
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 535095dc82680882d1a53076ea0655b1333b576b
+source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
 
 # AEP オーディエンスのCustomer Journey Analyticsへの取り込み (CJA)
 
->[!NOTE]
->
->このトピックは作成中です。
-
 この使用例では、Adobe Experience Platform(AEP) オーディエンスを CJA に導く中間的で手動の方法を調べます。 これらのオーディエンスは、AEP Segment Builder、Adobe Audience Manager、またはその他のツールで作成され、リアルタイム顧客プロファイル (RTCP) に保存されている場合があります。 オーディエンスは、一連のプロファイル ID と、適用可能な属性やイベントなどで構成されます。 CJA Workspace に取り込んで分析を行います。
 
 ## 前提条件
 
-* Adobe Experience Platform(AEP)、特にリアルタイム顧客プロファイルへのアクセス  AEP スキーマとデータセットの作成/管理にもアクセスできます。
-* AEP クエリサービス（および SQL を書き込む機能）へのアクセス、またはいくつかの光変換を実行する別のツール
-* Customer Journey Analyticsへのアクセス（CJA 接続とデータビューを作成/変更するには、CJA 製品管理者である必要があります）
+* Adobe Experience Platform(AEP)、特にリアルタイム顧客プロファイルへのアクセス
+* AEP スキーマとデータセットを作成/管理するためのアクセス権。
+* AEP クエリサービス（および SQL を書き込む機能）へのアクセス、またはいくつかの光変換を実行する別のツールへのアクセス。
+* Customer Journey Analyticsへのアクセス CJA 接続とデータビューを作成/変更するには、CJA 製品管理者である必要があります。
 * AdobeAPI の使用機能（セグメント化、オプションでその他）
 
 ## 手順 1:リアルタイム顧客プロファイルでのオーディエンスの選択 {#audience}
 
-Adobe Experience Platform [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCP) を使用すると、オンライン、オフライン、CRM、サードパーティなど、複数のチャネルからのデータを組み合わせることで、各顧客の全体像を確認できます。 RTCP には、様々なソースから来た可能性のあるオーディエンスが既に存在する可能性があります。 CJA に取り込むオーディエンスを 1 つ以上選択します。
+Adobe Experience Platform [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCP) を使用すると、オンライン、オフライン、CRM、サードパーティなど、複数のチャネルからのデータを組み合わせることで、各顧客の全体像を確認できます。
+
+RTCP には、様々なソースから来た可能性のあるオーディエンスが既に存在する可能性があります。 CJA に取り込むオーディエンスを 1 つ以上選択します。
 
 ## 手順 2:エクスポート用のプロファイル和集合データセットの作成
 
 オーディエンスをデータセットに書き出し、最終的に CJA の接続に追加するには、スキーマがプロファイルのデータセットを作成する必要があります [和集合スキーマ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+
 和集合スキーマは、同じクラスを共有し、プロファイルに対して有効にされた複数のスキーマで構成されます。 和集合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの統合を表示できます。 リアルタイム顧客プロファイルは、和集合スキーマを使用して、各顧客の全体像を作成します。
 
 ## 手順 3:API 呼び出しを使用してオーディエンスをプロファイル和集合データセットに書き出す {#export}
 
-オーディエンスを CJA に取り込む前に、AEP データセットに書き出す必要があります。 これは、Segmentation API、特に [書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). 任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイルの和集合 AEP データセットに格納できます。  オーディエンスに対して様々な属性やイベントを書き出すことができますが、必要なのは、活用する CJA 接続で使用するユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみです（手順 5 の後述）。
+オーディエンスを CJA に取り込む前に、AEP データセットに書き出す必要があります。 これは、Segmentation API、特に [書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en).
+
+任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイルの和集合 AEP データセットに格納できます。 オーディエンスに対して様々な属性やイベントを書き出すことができますが、必要なのは、活用する CJA 接続で使用するユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみです（手順 5 の後述）。
 
 ## 手順 4:書き出し出力の編集
 
@@ -67,7 +69,9 @@ Adobe Experience Platform [リアルタイム顧客プロファイル](https://e
 
 * 必要に応じて、他のオーディエンスメタデータを追加します。
 
-## 手順 5:このプロファイルデータセットを CJA の既存の接続に追加します (BG:新しい接続を作成することもできますが、顧客が既にデータを保有している既存の接続にその接続を追加したいと考える時間の 99%が、オーディエンス id は、CJA の既存のデータを「エンリッチメント」するだけです )
+## 手順 5:このプロファイルデータセットを CJA の既存の接続に追加します。
+
+新しい接続を作成することもできますが、ほとんどのお客様は既存の接続に追加する必要があります。 オーディエンス ID が CJA の既存のデータを「エンリッチメント」する。
 
 [接続の作成](/help/connections/create-connection.md)
 
