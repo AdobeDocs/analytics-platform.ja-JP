@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、クロスチャネル分析用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: b63593aa96580c39490ab2ac5c1454773fc7bb68
+source-git-commit: 165a2f7cd33282a8aaf93aa074a370cec2cbd40e
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 93%
@@ -58,7 +58,7 @@ ht-degree: 93%
       + [指標の重複排除](data-views/component-settings/metric-deduplication.md)
       + [値オプションなし](data-views/component-settings/no-value-options.md)
       + [永続性](data-views/component-settings/persistence.md)
-      + [部分文字列](data-views/component-settings/substring.md)
+      + [Substring](data-views/component-settings/substring.md)
       + [値のバケット化](data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](data-views/component-reference.md)
    + [データビューの使用例](data-views/data-views-usecases.md)
@@ -205,7 +205,7 @@ ht-degree: 93%
    + [バインディングディメンションと指標を使用](use-cases/binding-dimensions-metrics.md)
    + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
    + [Marketo Engageデータの AEP への取り込みと CJA でのレポート](use-cases/marketo.md)
-   + [AEMオーディエンスの CJA への取り込み](use-cases/ingest-aep-segments.md)
+   + [AEP オーディエンスの CJA への取り込み](use-cases/ingest-aep-segments.md)
    + [チャネルをまたいだデータの分析](use-cases/cross-channel.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取得の使用例](use-cases/data-ingestion.md)
