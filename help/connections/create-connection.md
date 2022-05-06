@@ -4,10 +4,10 @@ description: Customer Journey Analytics でプラットフォームデータセ�
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 5ca6c92f1d06cb5a388fa37f232ee0b870f14f33
+source-git-commit: b17bdb20b120ec37a9f11425062bc7f8bcebd7e7
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 89%
+source-wordcount: '1985'
+ht-degree: 99%
 
 ---
 
@@ -67,18 +67,18 @@ Customer Journey Analytics
 
 1. **[!UICONTROL データセットタイプ]**：次に、この接続に追加した各データセットに対し、[!UICONTROL Customer Journey Analytics] は受信するデータに基づいてデータセットのタイプを自動的に設定します。
 
->[!IMPORTANT]
->
->    You need to add at least one event dataset as part of a connection.
+   >[!IMPORTANT]
+   >
+   >You need to add at least one event dataset as part of a connection.
 
 
-    データセットには、[!UICONTROL イベント]データ、[!UICONTROL プロファイル]データおよび[!UICONTROL ルックアップ]データの 3 種類があります。
-    
-    
-    
-    例えば、顧客 ID または cookie ID とタイムスタンプを含む一般的なクリックストリームデータを使用できます。イベントデータを使用すると、ユーザー ID として使用する ID を柔軟に設定できます。| Any built-in or custom schema that is based on an XDM class with the &quot;Time Series&quot; behavior. 例として、「XDM エクスペリエンスのイベント」や「XDM 決定イベント」などがあります。| You can pick which Person ID you want to include. Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。
-    例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。See [this use case](/help/use-cases/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the &quot;Record&quot; behavior, except for the &quot;XDM Individual Profile&quot; class. 
-    例えば、顧客に関する CRM データをアップロードできます。| N/A | Any built-in or custom schema that is based on the &quot;XDM Individual Profile&quot; class. | You can pick which Person ID you want to include.  [!DNL Experience Platform]  内で定義される各データセットには、1 つ以上の個人 ID セット（Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコードなど）があります。&lt;br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. 
+   データセットには、[!UICONTROL イベント]データ、[!UICONTROL プロファイル]データおよび[!UICONTROL ルックアップ]データの 3 種類があります。
+
+   | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
+   |---|---|---|---|---|
+   | [!UICONTROL イベント] | イベントの時間を表すデータ（Web 訪問数、インタラクション、トランザクション、POS データ、調査データ、広告インプレッションデータなど）。例えば、顧客 ID または cookie ID とタイムスタンプを含む一般的なクリックストリームデータを使用できます。イベントデータを使用すると、ユーザー ID として使用する ID を柔軟に設定できます。 | [!UICONTROL Experience Platform] のイベントベースのスキーマからデフォルトのタイムスタンプフィールドへと自動的に設定されます。 | 「時系列」動作を持つ XDM クラスに基づいた組み込みスキーマまたはカスタムイベント。例として、「XDM エクスペリエンスのイベント」や「XDM 決定イベント」などがあります。 | 含める個人 ID を選択できます。Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、Cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。 |
+   | [!UICONTROL 参照] | このデータは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。詳しくは、[この使用例](/help/use-cases/b2b.md)をご覧ください。 | 該当なし | 「XDM 個別プロファイル」クラスを除いて、「レコード」動作を持つ XDM クラスに基づいた、組み込みまたはカスタムのスキーマです。 | 該当なし |
+   | [!UICONTROL プロファイル] | [!UICONTROL イベント]内の訪問者、ユーザーまたは顧客に適用されるデータ。例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスに基づいた組み込みスキーマまたはカスタムイベント。 | 含める個人 ID を選択できます。[!DNL Experience Platform] 内で定義される各データセットには、1 つ以上の個人 ID セット（Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコードなど）があります。<br>![ユーザー ID ](assets/person-id.png)**メモ**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。データセットを実際に結合するには、同じユーザー ID を使用する必要があります。 |
 
 1. **[!UICONTROL データセット ID]**：この ID は自動的に生成されます。
 
