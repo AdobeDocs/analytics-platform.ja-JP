@@ -4,9 +4,9 @@ description: 2019 年 12 月以降の Customer Journey Analytics ドキュメン
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fa36f46a352d786cbbab6a753d7cc0cb401cff9f
+source-git-commit: ed0a015e7198db8dd77ec73d9c9299d9a872370c
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '727'
 ht-degree: 78%
 
 ---
@@ -66,3 +66,5 @@ CJA ドキュメントの開始以降に、次のアップデートがおこな�
 | 2020 年 4 月 14 日（PT） | 「[接続の作成](/help/connections/create-connection.md)」トピックの最新 UI を更新しました。 |
 | 2020 年 2 月 27 日（PT） | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/cja-aa.md)」ページを更新しました。 |
 | 2019 年 12 月 | CJA ドキュメントの最初のドラフト |
+
+{style=&quot;table-layout:auto&quot;}
