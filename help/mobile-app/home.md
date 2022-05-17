@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics ダッシュボード — 概要
+title: Adobe Analytics ダッシュボード - 概要
 description: Adobe Analytics ダッシュボードの製品ドキュメントとセルフヘルプ
 feature: Analytics Dashboards
 role: User, Admin
