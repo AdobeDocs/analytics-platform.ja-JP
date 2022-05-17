@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 72486c527fa48775395bc5a31e6dd98eb30cbdc1
+source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 29%
+source-wordcount: '152'
+ht-degree: 26%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 29%
 | ----------- | ---------- | ----- |
 | 新しい接続編集および作成 UI | この効率化されたエクスペリエンスでは、データセットレベルでデータをバックフィルし、データのローリング保持期間を有効にし、接続にデータセットを追加したり、接続からデータセットを削除したりできます。 [詳細情報](/help/connections/create-connection.md) | 2022 年 5 月 19 日 |
 | CJA アップデートのReport Builder | 集計やデータブロックマネージャなどの機能が含まれます。 [詳細情報] | 2022 年 5 月 19 日 |
-| 顧客 AI の統合 | CJA で顧客 AI モデルのスコアを取り込み、CJA Analysis Workspace でさらに分析できるようにします。 [詳細情報] | 2022 年 5 月 26 日 |
-| Attribution AI統合 | CJA でAttribution AIモデルのスコアを取り込んで、CJA Analysis Workspace でさらに分析できるようにします。 [詳細情報] | 2022 年 5 月 26 日 |
+| 顧客 AI の統合 | CJA で顧客 AI モデルのスコアを取り込み、CJA Analysis Workspace でさらに分析できるようにします。 [詳細情報 — フォロー] | 2022 年 5 月 26 日 |
+| Attribution AI統合 | CJA でAttribution AIモデルのスコアを取り込んで、CJA Analysis Workspace でさらに分析できるようにします。 [詳細情報 — フォロー] | 2022 年 5 月 26 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
