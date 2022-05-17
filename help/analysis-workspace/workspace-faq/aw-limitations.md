@@ -3,10 +3,10 @@ description: Adobe Analysis Workspace とその関連コンポーネントに関
 title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 ## コンポーネント／フィルター
 
 * 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL 回数]、[!UICONTROL ユニーク訪問者]など）。
-* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、公開されない限り、Workspace の左パネルまたはフィルターコンポーネントマネージャーに表示されません。これは、フィルターを編集し、「**[!UICONTROL このセグメントを公開する]**」を選択することで実行できます。
+* で作成されたアドホックフィルター [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md) は、公開されない限り、Workspace またはフィルターコンポーネントマネージャーの左側のレールに表示されません。 これは、フィルターを編集し、「**[!UICONTROL このセグメントを公開する]**」を選択することで実行できます。
 
 ## コンポーネント／計算指標
 

@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspace でアドホックフィルターを使用します。
+description: Analysis Workspaceでアドホックフィルターを使用します。
 title: アドホックプロジェクトフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 56%
 
 アドホックプロジェクトフィルターを使用すると、任意のコンポーネントをパネルのドロップゾーンに直接ドラッグ&amp;ドロップして、フィルターを作成できます。 フィルターが [プロジェクトレベルのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=ja) 現在のプロジェクトのローカル
 
-アドホックプロジェクトフィルターの作成に関するビデオを以下に示します。
+アドホックプロジェクトフィルターの作成に関するビデオを次に示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
 1. 
-   1. 任意のコンポーネントタイプ（ディメンション、ディメンション項目、イベント、指標、セグメント、セグメントテンプレート、日付範囲）を、パネルの上部にあるフィルタードロップゾーンにドロップします。 コンポーネントタイプはアドホックフィルターに自動変換されるか、 [クイックフィルター](/help/components/filters/quick-filters.md) 互換性がある場合は。
+   1. 任意のコンポーネントタイプ（ディメンション、ディメンション項目、イベント、指標、セグメント、セグメントテンプレート、日付範囲）を、パネルの上部にあるフィルタードロップゾーンにドロップします。 コンポーネントタイプは、アドホックフィルターに自動変換されるか、 [クイックフィルター](/help/components/filters/quick-filters.md) 互換性がある場合は。
 
    以下に、Twitter 参照ドメインのフィルターの作成方法の例を示します。
 
@@ -38,7 +38,7 @@ ht-degree: 56%
 * Analysis Workspace では、すべてのディメンションおよびイベントに対して、「存在する」ヒットフィルターを作成します。例：`Hit where eVar1 exists` または `Hit where event1 exists`。
 * 「未指定」または「なし」がフィルタードロップゾーンにドロップされると、フィルターで正しく処理できるようにするため、「存在しない」フィルターに自動変換されます。
 
-## アドホックプロジェクトフィルターの保存 {#ad-hoc-save}
+## アドホックプロジェクトフィルターを保存 {#ad-hoc-save}
 
 次の手順に従うことで、これらのフィルターを保存できます。
 
