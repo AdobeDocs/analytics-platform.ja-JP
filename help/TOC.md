@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics ガイド
-user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、クロスチャネル分析用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
+user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 93%
+source-wordcount: '623'
+ht-degree: 98%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 93%
 + リリースノート {#releases}
    + [最新リリース](release-notes/latest.md)
    + [2022年リリース](release-notes/2022.md)
-   + [2021 年 リリース](release-notes/2021.md)
-   + [2020 年 リリース](release-notes/2020.md)
+   + [2021年リリース](release-notes/2021.md)
+   + [2020年リリース](release-notes/2020.md)
    + [CJA リリース](release-notes/releases.md)
    + [CJA ドキュメントのアップデート](release-notes/doc-changes.md)
 + Customer Journey Analytics の概要 {#cja-overview}
    + [Customer Journey Analytics の概要](getting-started/cja-overview.md)
    + [はじめに](getting-started/cja-getting-started.md)
-   + [Customer Journey Analyticsランディングページ](getting-started/landing.md)
+   + [Customer Journey Analytics のランディングページ](getting-started/landing.md)
    + [よくある質問](getting-started/cja-faq.md)
-   + [Adobe AnalyticsからCustomer Journey Analyticsへの進化](getting-started/aa-to-cja.md)
-   + [新規ユーザー向けユーザーガイドCustomer Journey Analyticsガイド](getting-started/aa-to-cja-user.md)
+   + [Adobe Analytics から Customer Journey Analytics への進化](getting-started/aa-to-cja.md)
+   + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](getting-started/aa-to-cja-user.md)
    + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
    + [削除の影響](getting-started/cja-deletion.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
@@ -43,10 +43,10 @@ ht-degree: 93%
    + [接続の管理](connections/manage-connections.md)
    + [組み合わせイベントデータセット](connections/combined-dataset.md)
    + [標準検索](connections/standard-lookups.md)
-   + クロスチャネル分析 {#cca}
-      + [クロスチャネル分析の概要](connections/cca/overview.md)
+   + Cross-Channel Analytics {#cca}
+      + [Cross-Channel Analytics の概要](connections/cca/overview.md)
       + [再生の仕組み](connections/cca/replay.md)
-      + [クロスチャネル分析に関する FAQ](connections/cca/faq.md)
+      + [Cross-Channel Analytics に関する FAQ](connections/cca/faq.md)
 + データビュー {#cja-dataviews}
    + [データビューの概要](data-views/data-views.md)
    + [データビューの作成または編集](data-views/create-dataview.md)
@@ -59,10 +59,10 @@ ht-degree: 93%
       + [指標の重複排除](data-views/component-settings/metric-deduplication.md)
       + [値オプションなし](data-views/component-settings/no-value-options.md)
       + [永続性](data-views/component-settings/persistence.md)
-      + [Substring](data-views/component-settings/substring.md)
+      + [部分文字列](data-views/component-settings/substring.md)
       + [値のバケット化](data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](data-views/component-reference.md)
-   + [データビューの使用例](data-views/data-views-usecases.md)
+   + [データビューのユースケース](data-views/data-views-usecases.md)
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
@@ -83,11 +83,11 @@ ht-degree: 93%
             + [行設定](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [テーブルのページネーション、フィルタリングおよび並べ替え](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [ワークスペースの合計](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace の合計](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
          + [コホート分析とは](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [コホート分析レポートの設定](analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [コホート分析の使用例](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [コホート分析のユースケース](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + フォールアウト {#fallout}
          + [フォールアウトの概要](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [フォールアウトビジュアライゼーションの設定](analysis-workspace/visualizations/fallout/configuring-fallout.md)
@@ -107,7 +107,7 @@ ht-degree: 93%
       + [横棒グラフおよび積み重ね横棒グラフ](analysis-workspace/visualizations/horizontal-bar.md)
       + [行](analysis-workspace/visualizations/line.md)
       + [散布図](analysis-workspace/visualizations/scatterplot.md)
-      + [数の概要と変更の概要](analysis-workspace/visualizations/summary-number-change.md)
+      + [数値の概要と変更概要](analysis-workspace/visualizations/summary-number-change.md)
       + [テキスト](analysis-workspace/visualizations/text.md)
       + [ツリーマップ](analysis-workspace/visualizations/treemap.md)
    + パネル {#panels}
@@ -137,7 +137,7 @@ ht-degree: 93%
          + [Analysis Workspace での異常値の表示](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [異常値検出で使用される統計的手法](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [ユーザー環境設定](analysis-workspace/user-preferences.md)
-   + ワークスペースの FAQ {#workspace-faq}
+   + Workspace の FAQ {#workspace-faq}
       + [よくある質問](analysis-workspace/workspace-faq/faq.md)
       + [Analysis Workspace のパフォーマンスの最適化](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [エラーメッセージ](analysis-workspace/workspace-faq/error-messages.md)
@@ -190,7 +190,7 @@ ht-degree: 93%
          + [計算指標のタグ付け](components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [計算指標マネージャ](components/calc-metrics/cm-workflow/cm-manager.md)
+         + [計算指標マネージャー](components/calc-metrics/cm-workflow/cm-manager.md)
       + [基本関数](components/calc-metrics/cm-functions.md)
       + [高度な関数](components/calc-metrics/cm-adv-functions.md)
    + 日付範囲 {#cja-date-ranges}
@@ -200,16 +200,16 @@ ht-degree: 93%
       + [カレンダーの概要](components/date-ranges/calendar.md)
       + [カスタム日付範囲の作成](components/date-ranges/custom-date-ranges.md)
       + [日付の比較](components/date-ranges/time-comparison.md)
-+ 使用例 {#cja-usecases}
-   + [Customer Journey Analytics の使用例](use-cases/cja-usecases.md)
++ ユースケース {#cja-usecases}
+   + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
-   + [バインディングディメンションと指標を使用](use-cases/binding-dimensions-metrics.md)
-   + [（B2B）ルックアップデータセットとしてアカウントレベルのデータを追加](use-cases/b2b.md)
-   + [Marketo Engageデータの AEP への取り込みと CJA でのレポート](use-cases/marketo.md)
+   + [バインディングディメンションと指標の使用](use-cases/binding-dimensions-metrics.md)
+   + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
+   + [Marketo Engage データの AEP への取り込みと CJA でのレポート](use-cases/marketo.md)
    + [AEP オーディエンスの CJA への取り込み](use-cases/ingest-aep-segments.md)
    + [チャネルをまたいだデータの分析](use-cases/cross-channel.md)
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
-   + [データ取得の使用例](use-cases/data-ingestion.md)
+   + [データ取得のユースケース](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
    + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
