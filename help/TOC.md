@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 565a247da0e66953d84b70dfb2fa50555e36b27d
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 98%
+source-wordcount: '634'
+ht-degree: 96%
 
 ---
 
@@ -200,6 +200,15 @@ ht-degree: 98%
       + [カレンダーの概要](components/date-ranges/calendar.md)
       + [カスタム日付範囲の作成](components/date-ranges/custom-date-ranges.md)
       + [日付の比較](components/date-ranges/time-comparison.md)
++ Analytics ダッシュボード {#cja-dashboards}
+   + [Analytics ダッシュボード - 概要](mobile-app/home.md)
+   + [キュレータータスク](mobile-app/curator.md)
+   + [スコアカードの作成](mobile-app/create-scorecard.md)
+   + [ダッシュボードを使用するエグゼクティブの設定](mobile-app/set-up-execs.md)
+   + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
++ 統合 {#integrations}
+   + [Attribution AIと CJA の統合](integrations/attribution-ai.md)
+   + [顧客 AI と CJA の統合](integrations/customer-ai.md)
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
@@ -213,12 +222,6 @@ ht-degree: 98%
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
    + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
-+ Analytics ダッシュボード {#cja-dashboards}
-   + [Analytics ダッシュボード - 概要](mobile-app/home.md)
-   + [キュレータータスク](mobile-app/curator.md)
-   + [スコアカードの作成](mobile-app/create-scorecard.md)
-   + [ダッシュボードを使用するエグゼクティブの設定](mobile-app/set-up-execs.md)
-   + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)
 + プライバシー {#cja-privacy}

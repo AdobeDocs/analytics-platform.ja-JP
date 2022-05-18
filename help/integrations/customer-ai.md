@@ -3,15 +3,19 @@ description: AEP Customer AI と CJA の Workspace の統合方法を説明し�
 title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
+source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '455'
 ht-degree: 9%
 
 ---
 
 
 # 顧客 AI と CJA の統合
+
+>[!NOTE]
+>
+>このページは作成中です。
 
 [顧客 AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)は、Adobe Experience Platform Intelligent Services の一部として、マーケターに対して、個々のレベルで顧客予測を生成する力を提供します。
 
