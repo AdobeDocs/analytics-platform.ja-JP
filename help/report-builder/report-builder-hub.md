@@ -6,20 +6,25 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 8544de42c643c729558f27a7d64b0e4a8af608d0
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 88%
 
 ---
 
 # Report Builder ハブ
 
-Report Builder ハブを使用して、データブロックの作成、更新、削除を行います。
+Report Builderハブを使用して、データブロックの作成、更新、削除、管理をおこないます。
 
-Report Builder ハブには、コマンドパネルとクイック編集パネルが含まれています。
+Report Builderハブには、作成ボタンと管理ボタン、コマンドリスト、クイック編集パネルが含まれています。
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## ボタンの作成と管理
+
+新しいデータブロックを作成したり、既存のデータブロックを管理するには、「作成」または「管理」ボタンを使用します。
 
 ## コマンドパネル
 
