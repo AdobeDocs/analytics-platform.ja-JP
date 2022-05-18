@@ -4,18 +4,14 @@ description: ワークスペースでの注釈を管理する方法。
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '677'
 ht-degree: 69%
 
 ---
 
 # 注釈を管理
-
->[!NOTE]
->
->この機能は現在、限定的にテスト中です。
 
 [!UICONTROL コンポーネント]／[!UICONTROL 注釈]マネージャーは、共有、フィルタリング、タグ付け、承認、コピー、削除、お気に入りとしてマークするなど、注釈を管理する様々な方法を提供します。
 
