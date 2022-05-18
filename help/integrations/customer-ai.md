@@ -3,9 +3,9 @@ description: AEP Customer AI と CJA の Workspace の統合方法を説明し�
 title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
+source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '450'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,7 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 「アカウントをアップグレードする可能性」などの各予測は、1 つのデータセットと同じです。
 
-次に、CJA が既存のデータセットまたは新しいデータセットの一部として取り込む XDM スキーマの例を示します。
+次に、CJA が既存または新しいデータセットの一部として取り込む XDM スキーマの例を示します。
 
 ![CAI スキーマ](assets/cai-schema.png)
 
@@ -58,4 +58,4 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 ### 手順 5:これらの接続に基づくデータビューの作成
 
-CJA では、次のように取り込まれたディメンションを使用して、データビューの作成に進むことができます。
+CJA では、確立した接続の一部として取り込まれたディメンションを使用して、データビューの作成に進むことができます。
