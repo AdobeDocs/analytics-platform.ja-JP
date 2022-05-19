@@ -3,10 +3,11 @@ description: AEPAttribution AIを CJA で Workspace と統合する方法を説�
 title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 9%
+source-wordcount: '457'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +43,11 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 ### 手順 4:これらの接続に基づくデータビューの作成
 
-CJA では、
+CJA では、 [1 つ以上のデータビューを作成する](/help/data-views/create-dataview.md) AAi XDM フィールドを含む （ここにスクリーンショットを表示すると便利です）。
+
+### 手順 5:CJA Workspace での AAI データのレポート
+
+次に、AAI データを含む Workspace プロジェクトの例を示します。
 
 ## Attribution AIとAttribution IQの違い
 

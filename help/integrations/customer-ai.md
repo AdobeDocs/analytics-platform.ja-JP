@@ -3,13 +3,13 @@ description: AEP Customer AI と CJA の Workspace の統合方法を説明し�
 title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 9%
+source-wordcount: '493'
+ht-degree: 8%
 
 ---
-
 
 # 顧客 AI と CJA の統合
 
@@ -62,4 +62,11 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 ### 手順 5:これらの接続に基づくデータビューの作成
 
-CJA では、確立した接続の一部として取り込まれたディメンションを使用して、データビューの作成に進むことができます。
+CJA で、次に進むことができます。 [データビューを作成](/help/data-views/create-dataview.md) 確立した接続の一部として取り込まれたディメンション（スコア、スコアの日付、確率など）を使用して、
+
+### 手順 6:Workspace での CAI スコアのレポート
+
+次に、積み重ね棒グラフでスコア日を表示する CAI データを含む Workspace プロジェクトの例を示します。
+
+![スコアバケット](assets/workspace-scores.png)
+
