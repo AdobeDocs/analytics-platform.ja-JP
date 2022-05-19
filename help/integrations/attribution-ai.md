@@ -4,10 +4,10 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
+source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 4%
+source-wordcount: '538'
+ht-degree: 5%
 
 ---
 
@@ -32,30 +32,21 @@ Attribution AIはCustomer Journey Analytics(CJA) と統合され、Attribution A
 
 一部の手順は、CJA での出力を操作する前に、Adobe Experience Platformで実行されます。 出力は、適用されたデータモデルを持つAttribution AIセットで構成されます。
 
-### 手順 1:Attribution AIスコアのダウンロード
-
-Adobe Experience Platformで、説明に従ってAttribution AIスコアをダウンロードします。 [ここ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
-
-### 手順 2:Attribution AIインスタンスの作成
+### 手順 1:Attribution AIインスタンスの作成
 
 Experience Platformで、Attribution AIを選択してマッピングし、イベントを定義し、データをトレーニングすることで、データインスタンスを作成します（説明を参照） [ここ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
-### 手順 3:Attribution AIセットへの CJA 接続の設定
+### 手順 2:Attribution AIセットへの CJA 接続の設定
 
 CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、Attribution AI用に実装されたExperience Platformセットに追加しました。 これらのデータセットは、次に示すように、「Attribution AIスコア」プレフィックスで表示されます。
 
 ![AAI スコア](assets/aai-scores.png)
 
->[!IMPORTANT]
->
->接続には、プロファイルと参照のデータセット、コールセンターと CRM のデータを追加できます。 ただし、Adobeでは、同じ接続にあるAttribution AIスコアを持つデータセットにAdobe Analyticsデータセットを追加することはお勧めしません。
-
-
-### 手順 4:これらの接続に基づくデータビューの作成
+### 手順 3:これらの接続に基づくデータビューの作成
 
 CJA では、 [1 つ以上のデータビューを作成する](/help/data-views/create-dataview.md) Attribution AIXDM フィールドを含む （ここにスクリーンショットを表示すると便利です）。
 
-### 手順 5:CJA Workspace での AAI データのレポート
+### 手順 4:CJA Workspace での AAI データのレポート
 
 CJA Workspace プロジェクトでは、「AAI 注文」などの指標や、「AAI キャンペーン名」や「AAI マーケティングチャネル」などのディメンションを取り込むことができます。
 
@@ -75,7 +66,7 @@ AAI データを含む Workspace プロジェクトが表示され、影響ス�
 | 機能 | アトリビューション AI | Attribution IQ |
 | --- | --- | --- |
 | 分数の属性を含む | ○ | × |
-| ユーザーがモデルを調整できるようにします | × | ○ |
+| ユーザーがモデルを調整できるようにします | ○ | ○ |
 | チャネルをまたいで属性を設定します ( 注意：AAI は、CJA と同じステッチ済みデータを使用しません )。 | ○ | ○ |
 | 増分スコアと影響スコアが含まれます | ○ | × |
 | ML モデリングを実行 | ○ | ○ |

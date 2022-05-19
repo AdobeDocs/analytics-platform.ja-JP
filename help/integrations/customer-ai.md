@@ -4,10 +4,10 @@ title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
+source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 顧客 AI は、影響力のある要因の助けを借りて、顧客が何をする可能性があるかとその理由を知ることができます。さらに、マーケターは、顧客 AI の予測と洞察を活用して、最も適切なオファーとメッセージを提供することで、顧客のエクスペリエンスをパーソナライズできます。
 
-顧客 AI は、次のデータセットの 1 つを分析して、傾向スコアの変化やコンバージョン傾向スコアを予測します。
+顧客 AI は、次の 1 つ以上のデータセットを分析して、傾向スコアの変化やコンバージョン傾向スコアを予測します。
 
 * Analytics ソースコネクタを使用したAdobe Analyticsデータ
 * Adobe Audience Managerソースコネクタを使用したAudience Managerデータ
@@ -34,19 +34,11 @@ ht-degree: 8%
 
 一部の手順は、CJA での出力を操作する前に、Adobe Experience Platformで実行されます。
 
-### 手順 1:顧客 AI スコアのダウンロード
-
-顧客 AI スコアのダウンロードは、説明に従って、Experience PlatformAPI 呼び出しの組み合わせを通じておこなわれます [ここ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores).
-
-### 手順 2:顧客 AI の入力と出力の定義
-
-このプロセスについては、 [顧客 AI での入力と出力](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en) ドキュメント。
-
-### 手順 3:顧客 AI インスタンスの設定
+### 手順 1:顧客 AI インスタンスの設定
 
 データを準備し、すべての資格情報とスキーマを設定したら、次の手順に従って開始します。 [顧客 AI インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) ガイド。
 
-### 手順 4:顧客 AI データセットへの CJA 接続の設定
+### 手順 2:顧客 AI データセットへの CJA 接続の設定
 
 CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、顧客 AI に実装されたExperience Platformデータセットに追加しました。 これらのデータセットは、次に示すように、「顧客 AI スコア」プレフィックスで表示されます。
 
@@ -60,11 +52,11 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 ( この例はプロファイルデータセットです。同じスキーマオブジェクトのセットは、CJA が取得するエクスペリエンスイベントデータセットの一部になります。 エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます )。 このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが割り当てられます。 と関連付けられています。
 
-### 手順 5:これらの接続に基づくデータビューの作成
+### 手順 3:これらの接続に基づくデータビューの作成
 
-CJA で、次に進むことができます。 [データビューを作成](/help/data-views/create-dataview.md) 確立した接続の一部として取り込まれたディメンション（スコア、スコアの日付、確率など）を使用して、
+CJA で、次に進むことができます。 [データビューを作成](/help/data-views/create-dataview.md) を設定します。
 
-### 手順 6:Workspace での CAI スコアのレポート
+### 手順 4:Workspace での CAI スコアのレポート
 
 次に、積み重ね棒グラフでスコア日を表示する CAI データを含む Workspace プロジェクトの例を示します。
 
