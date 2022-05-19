@@ -4,9 +4,9 @@ title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
+source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '495'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->このページは作成中です。
+>この機能は 2022 年 5 月 25 日にリリースされます。
 
 [顧客 AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)は、Adobe Experience Platform Intelligent Services の一部として、マーケターに対して、個々のレベルで顧客予測を生成する力を提供します。
 
