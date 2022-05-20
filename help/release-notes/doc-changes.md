@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ed0a015e7198db8dd77ec73d9c9299d9a872370c
+source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 98%
+source-wordcount: '782'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,10 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年5月 | 次の記事を大幅に更新しました： [接続の作成](/help/connections/create-connection.md) （CJA 内） |
+| 2022年5月 | に関する新しい記事を追加しました。 [CJA とAttribution AIの統合](/help/integrations/attribution-ai.md) Adobe Experience Platform |
+| 2022年5月 | に関する新しい記事を追加しました。 [Adobe Experience Platformでの CJA と顧客 AI の統合](/help/integrations/customer-ai.md). |
+| 2022年5月 | 次の方法に関する新しい記事を追加しました。 [CJAReport Builderでのデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | 2022年5月 | に関する新しい記事を追加しました。 [CJA へのAdobe Experience Platformオーディエンスの取り込み](/help/use-cases/ingest-aep-segments.md) |
 | 2022年4月 | [ディメンションサブの部分文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=ja)に関するドキュメント。 |
 | 2022年4月 | [Adobe Analytics ユーザー向け CJA ユーザーガイド](/help/getting-started/aa-to-cja-user.md)（新規）。 |
