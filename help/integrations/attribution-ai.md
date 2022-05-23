@@ -4,10 +4,10 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '728'
+ht-degree: 4%
 
 ---
 
@@ -52,12 +52,34 @@ CJA Workspace プロジェクトでは、「AAI 注文」などの指標や、�
 
 ![AAI ディメンション](assets/aai-dims.png)
 
-AAI データを含む Workspace プロジェクトが表示され、影響スコアと増分スコアを含む注文が示されます。
+AAI データを含む Workspace プロジェクトが表示され、影響スコアと増分スコアを含む注文が示されます。 任意のディメンションにドリルダウンして、次の方法でアトリビューションを理解します。キャンペーン、製品グループ、ユーザーセグメント、地域など。
 
 ![AAI プロジェクト](assets/aai-project.png)
 
 ![AAI プロジェクト](assets/aai-project2.png)
 
+チャネルのインタラクションを理解して、他のチャネルと最も効果的に使用できるチャネルを確認します。
+
+![マーケティングチャネルの重複](assets/mc-overlap.png)
+
+次の表に、タッチポイントの設計と最適化に役立つ、コンバージョン（重複排除）への上位のパスを示します。
+
+![上位チャネル](assets/top-channels.png)
+
+ここでは、タッチポイントがミックスに含まれる場合のコンバージョンへのリードタイムを確認します。 リードタイムの最適化に役立ちます。
+
+![リードタイム](assets/lead-time.png)
+
+## 新しい CJA 指標
+
+| 指標 | 説明 |
+| --- | --- |
+| [!UICONTROL 獲得率] | 各チャネルについて、タッチしたコンバージョンパスのうち、チャネルがスターターの割合です。 |
+| [!UICONTROL プレーヤー率] | 各チャネルについて、タッチしたコンバージョンパスの中で、チャネルのプレーヤーである割合。 |
+| [!UICONTROL クローザー率] | 各チャネルについて、タッチしたコンバージョンパスの中で、チャネルのクローザー率が表されます。 |
+| [!UICONTROL AAI 平均発注日数] | 各チャネルについて、注文からの平均日数。 |
+| [!UICONTROL AAI 平均販売プロセスの合計日数] | 各チャネルについて、タッチしたコンバージョンパスの平均合計日数。 |
+| [!UICONTROL 平均タッチで注文を回避] | 各チャネルでの平均タッチ数は、順序から遠くなります。 |
 
 ## Attribution AIとAttribution IQの違い
 
