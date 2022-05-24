@@ -4,9 +4,9 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
+source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '875'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)は、Adobe Experience Platformインテリジェントサービスの一部で、指定した結果に対する顧客とのやり取りの影響と増分的な影響を計算する、マルチチャネルのアルゴリズムアトリビューションサービスです。 マーケターは、Attribution AIジャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケティング費用と広告費用を測定し、最適化できます。
 
-Attribution AIはCustomer Journey Analytics(CJA) と統合され、Attribution AIに対してモデルが実行され、CJA がこれらのモデルの出力をデータセットとして読み込むので、他の CJA データセットと統合できます。 Attribution AIが有効なデータセットは、CJA のデータビューとレポートで利用できます。
+Attribution AIはCustomer Journey Analytics(CJA) と統合され、顧客のマーケティングタッチポイントおよびコンバージョンデータソースに対してAttribution AIがモデルを実行する範囲で実行されます。 次に、CJA は、これらのモデルの出力をデータセットとして読み込みます。または、他の CJA データセットと統合することもできます。 Attribution AIが有効なデータセットは、CJA のデータビューとレポートで利用できます。
 
 Attribution AIは、次の 3 つのExperience Platformスキーマをサポートします。エクスペリエンスイベント、Adobe Analytics、および消費者エクスペリエンスイベント。
 
@@ -66,6 +66,11 @@ CJA Workspace プロジェクトでは、「AAI 注文」などの指標や、�
 
 ![AAI ディメンション](assets/aai-dims.png)
 
+>[!IMPORTANT]
+>
+>これらのディメンションと指標は、この方法ではネイティブで名前が付けられません。 これらは「わかりやすい名前」です。 この [Attribution AIの命名規則](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) スキーマパスに従います。 AAI 内の長いスキーマパス名を、CJA で短く、よりわかりやすい名前（ディメンション/指標）に変更することをお勧めします。 これは、 **[!UICONTROL データビュー]** > **[!UICONTROL データビューを編集]** > **[!UICONTROL コンポーネント]** タブ/ **[!UICONTROL スキーマフィールド]** -> スキーマフィールドをクリック —> **[!UICONTROL コンポーネント名]**.
+
+
 **影響スコアと増分スコアを持つ注文**
 
 AAI データを含む Workspace プロジェクトが表示され、影響スコアと増分スコアを含む注文が示されます。 任意のディメンションにドリルダウンして、次の方法でアトリビューションを理解します。キャンペーン、製品グループ、ユーザーセグメント、地域など。
@@ -98,30 +103,18 @@ AAI データを含む Workspace プロジェクトが表示され、影響ス�
 
 ![リードタイム](assets/lead-time.png)
 
-## 新しい CJA 指標
-
-| 指標 | 説明 |
-| --- | --- |
-| [!UICONTROL 獲得率] | 各チャネルについて、タッチしたコンバージョンパスのうち、チャネルがスターターの割合です。 |
-| [!UICONTROL プレーヤー率] | 各チャネルについて、タッチしたコンバージョンパスの中で、チャネルのプレーヤーである割合。 |
-| [!UICONTROL クローザー率] | 各チャネルについて、タッチしたコンバージョンパスの中で、チャネルのクローザー率が表されます。 |
-| [!UICONTROL AAI 平均発注日数] | 各チャネルについて、注文からの平均日数。 |
-| [!UICONTROL AAI 平均販売プロセスの合計日数] | 各チャネルについて、タッチしたコンバージョンパスの平均合計日数。 |
-| [!UICONTROL 平均タッチで注文を回避] | 各チャネルでの平均タッチ数は、順序から遠くなります。 |
-
-{style=&quot;table-layout:auto&quot;}
-
 ## Attribution AIとAttribution IQの違い
 
 したがって、Attribution AIデータを使用するタイミングと [Attribution IQ](/help/analysis-workspace/attribution/overview.md)、ネイティブの CJA 機能？ 次の表に、機能の違いを示します。
 
 | 機能 | アトリビューション AI | Attribution IQ |
 | --- | --- | --- |
-| 分数の属性を含む | ○ | × |
+| 増分アトリビューションを実行 | ○ | × |
 | ユーザーがモデルを調整できるようにします | ○ | ○ |
 | チャネルをまたいで属性を設定します ( 注意：AAI は、CJA と同じステッチ済みデータを使用しません )。 | ○ | ○ |
-| 増分スコアと影響スコアが含まれます | ○ | × |
+| 影響スコアが含まれます | ○ | ○ |
 | ML モデリングを実行 | ○ | ○ |
-| 予測を使用した ML モデリングの実行 | ○ | × |
+| 地域ベースのアトリビューションモデル | ○ | ○ |
+| モデルにマーケティングタッチポイントを含めることができます | ○ | × |
 
 {style=&quot;table-layout:auto&quot;}
