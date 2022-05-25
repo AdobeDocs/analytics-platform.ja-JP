@@ -4,18 +4,14 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Attribution AIと CJA の統合
-
->[!NOTE]
->
->この機能は 2022 年 5 月 25 日にリリースされます。
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)は、Adobe Experience Platformインテリジェントサービスの一部で、指定した結果に対する顧客とのやり取りの影響と増分的な影響を計算する、マルチチャネルのアルゴリズムアトリビューションサービスです。 マーケターは、Attribution AIジャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケティング費用と広告費用を測定し、最適化できます。
 
@@ -115,6 +111,6 @@ AAI データを含む Workspace プロジェクトが表示され、影響ス�
 | 影響スコアが含まれます | ○ | ○ |
 | ML モデリングを実行 | ○ | ○ |
 | 地域ベースのアトリビューションモデル | ○ | ○ |
-| モデルにマーケティングタッチポイントを含めることができます | ○ | × |
+| モデルでマーケティングタッチポイントを設定できます | ○ | × |
 
 {style=&quot;table-layout:auto&quot;}

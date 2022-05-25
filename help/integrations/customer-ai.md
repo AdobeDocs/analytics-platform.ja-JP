@@ -4,7 +4,7 @@ title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,10 +12,6 @@ ht-degree: 0%
 ---
 
 # 顧客 AI と CJA の統合
-
->[!NOTE]
->
->この機能は 2022 年 5 月 25 日にリリースされます。
 
 [顧客 AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)は、Adobe Experience Platform Intelligent Services の一部として、マーケターに対して、個々のレベルで顧客予測を生成する力を提供します。
 
@@ -41,7 +37,11 @@ ht-degree: 0%
 
 ### 手順 2:顧客 AI データセットへの CJA 接続の設定
 
-CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、顧客 AI に実装されたExperience Platformデータセットに追加しました。 「アカウントをアップグレードする可能性」などの各予測は、1 つのデータセットと同じです。 これらのデータセットは、次に示すように、「顧客 AI スコア」プレフィックスで表示されます。
+CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、顧客 AI に実装されたExperience Platformデータセットに追加しました。 「アカウントをアップグレードする可能性」などの各予測は、1 つのデータセットと同じです。 これらのデータセットは、「Customer AI Scores in EE Format - name_of_application」というプレフィックスで表示されます。
+
+>[!IMPORTANT]
+>
+>手順 1 での設定時に CJA のスコアを有効にする切り替えがオンになっている場合、各顧客 AI インスタンスには 2 つの出力データセットがあります。 1 つの出力データセットがプロファイル XDM 形式で、もう 1 つがエクスペリエンスイベント XDM 形式で表示されます。
 
 ![CAI スコア](assets/cai-scores.png)
 
