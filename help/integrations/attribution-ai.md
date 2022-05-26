@@ -4,10 +4,10 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '859'
+ht-degree: 11%
 
 ---
 
@@ -54,7 +54,7 @@ CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/
 
 ### 手順 3:これらの接続に基づくデータビューの作成
 
-CJA では、 [1 つ以上のデータビューを作成する](/help/data-views/create-dataview.md) Attribution AIXDM フィールドを含む （ここにスクリーンショットを表示すると便利です）。
+CJA では、 [1 つ以上のデータビューを作成する](/help/data-views/create-dataview.md) Attribution AIXDM フィールドを含む
 
 ### 手順 4:CJA Workspace での AAI データのレポート
 
@@ -64,7 +64,7 @@ CJA Workspace プロジェクトでは、「AAI 注文」などの指標や、�
 
 >[!IMPORTANT]
 >
->これらのディメンションと指標は、この方法ではネイティブで名前が付けられません。 これらは「わかりやすい名前」です。 この [Attribution AIの命名規則](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) スキーマパスに従います。 AAI 内の長いスキーマパス名を、CJA で短く、よりわかりやすい名前（ディメンション/指標）に変更することをお勧めします。 これは、 **[!UICONTROL データビュー]** > **[!UICONTROL データビューを編集]** > **[!UICONTROL コンポーネント]** タブ/ **[!UICONTROL スキーマフィールド]** -> スキーマフィールドをクリック —> **[!UICONTROL コンポーネント名]**.
+>これらのディメンションと指標は、この方法ではネイティブで名前が付けられません。 これらは「わかりやすい名前」です。 この [Attribution AIの命名規則](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) スキーマパスに従います。 CJA で、長い AAI スキーマのパス名を短く、よりわかりやすい名前（ディメンション/指標）に変更することをお勧めします。 これは、 **[!UICONTROL データビュー]** > **[!UICONTROL データビューを編集]** > **[!UICONTROL コンポーネント]** タブ/ **[!UICONTROL スキーマフィールド]** -> スキーマフィールドをクリック —> **[!UICONTROL コンポーネント名]**.
 
 
 **影響スコアと増分スコアを持つ注文**

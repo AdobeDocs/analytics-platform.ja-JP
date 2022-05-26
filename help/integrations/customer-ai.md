@@ -4,9 +4,9 @@ title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '891'
 ht-degree: 5%
 
 ---
@@ -63,21 +63,31 @@ CJA で、次に進むことができます。 [データビューを作成](/he
 
 CJA Workspace で、新しいプロジェクトを作成し、ビジュアライゼーションを取り込むことができるようになりました。
 
+**傾向スコアのトレンド**
+
 CAI データを含む Workspace プロジェクトの例を次に示します。CAI データは、ユーザーのセグメントの傾向スコアを経時的に積み重ね棒グラフでトレンド表示しま&#x200B;す。
 
 ![スコアバケット](assets/workspace-scores.png)
+
+**理由コードを含むテーブル**
 
 次の表に、セグメントの傾向が高いまたは低い理由コードを示しま&#x200B;す。
 
 ![理由コード](assets/reason-codes.png)
 
+**顧客傾向のエントリフロー**
+
 次のフロー図は、様々なスコアリング実行における顧客の傾向のエントリフローを示していま&#x200B;す。
 
 ![入口フロー](assets/flow.png)
 
+**傾向スコアの配分**
+
 この棒グラフは、傾向スコアの分布を示しま&#x200B;す。
 
 ![配布](assets/distribution.png)
+
+**傾向の重複**
 
 次のベン図は、様々なスコアリングの実行で傾向が重なっていることを示しています。
 
