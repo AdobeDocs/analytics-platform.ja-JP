@@ -4,9 +4,9 @@ title: Attribution AIと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
+source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '889'
 ht-degree: 11%
 
 ---
@@ -46,15 +46,27 @@ Attribution AIは、次の 2 つのカテゴリのスコアをサポートしま
 
 Experience Platformで、Attribution AIを選択してマッピングし、イベントを定義し、データをトレーニングすることで、データインスタンスを作成します（説明を参照） [ここ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
+![AAI インスタンス](assets/aai-instance.png)
+
 ### 手順 2:Attribution AIセットへの CJA 接続の設定
 
 CJA で、次の操作を実行できます。 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、Attribution AI用に実装されたExperience Platformセットに追加しました。 これらのデータセットは、次に示すように、「Attribution AIスコア」プレフィックスで表示されます。
 
 ![AAI スコア](assets/aai-scores.png)
 
+![接続を作成](assets/aai-create-connection.png)
+
 ### 手順 3:これらの接続に基づくデータビューの作成
 
 CJA では、 [1 つ以上のデータビューを作成する](/help/data-views/create-dataview.md) Attribution AIXDM フィールドを含む
+
+タッチポイントの XDM スキーマフィールドを次に示します。
+
+![タッチポイント XDM フィールド](assets/touchpoint-fields.png)
+
+次に、変換用の XDM スキーマフィールドを示します。
+
+![コンバージョン XDM フィールド](assets/conversion-fields.png)
 
 ### 手順 4:CJA Workspace での AAI データのレポート
 
@@ -66,6 +78,7 @@ CJA Workspace プロジェクトでは、「AAI 注文」などの指標や、�
 >
 >これらのディメンションと指標は、この方法ではネイティブで名前が付けられません。 これらは「わかりやすい名前」です。 この [Attribution AIの命名規則](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) スキーマパスに従います。 CJA で、長い AAI スキーマのパス名を短く、よりわかりやすい名前（ディメンション/指標）に変更することをお勧めします。 これは、 **[!UICONTROL データビュー]** > **[!UICONTROL データビューを編集]** > **[!UICONTROL コンポーネント]** タブ/ **[!UICONTROL スキーマフィールド]** -> スキーマフィールドをクリック —> **[!UICONTROL コンポーネント名]**.
 
+![次元名の変更](assets/change-name.png)
 
 **影響スコアと増分スコアを持つ注文**
 
