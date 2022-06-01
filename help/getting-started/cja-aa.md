@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
+source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 95%
+source-wordcount: '1414'
+ht-degree: 94%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 95%
 | ディメンション | フルサポート。CJA は XDM を活用し、無制限のディメンションをサポートします。CJA は、従来の Adobe Analytics のカスタム eVar や prop には結び付けられません。 |
 | GDPR の削除 | フルサポート。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | フルサポート。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
-| マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート（2022年1月） |
-| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)によるフルサポート（2022年1月） |
+| マーチャンダイジング変数の持続性 | を介した完全なサポート [ディメンションとバインディング指標のバインディング](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension) |
+| マーチャンダイジング eVar | を介した完全なサポート [ディメンションとバインディング指標のバインディング](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | 指標 | フルサポート。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | フルサポート |
 | モバイルスコアカード/ダッシュボード | フルサポート |
