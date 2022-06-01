@@ -4,10 +4,10 @@ title: アドホックプロジェクトフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '302'
+ht-degree: 47%
 
 ---
 
@@ -20,8 +20,7 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 
-   1. 任意のコンポーネントタイプ（ディメンション、ディメンション項目、イベント、指標、セグメント、セグメントテンプレート、日付範囲）を、パネルの上部にあるフィルタードロップゾーンにドロップします。 コンポーネントタイプは、アドホックフィルターに自動変換されるか、 [クイックフィルター](/help/components/filters/quick-filters.md) 互換性がある場合は。
+1. 任意のコンポーネントタイプ（ディメンション、ディメンション項目、イベント、指標、セグメント、セグメントテンプレート、日付範囲）を、パネルの上部にあるフィルタードロップゾーンにドロップします。 コンポーネントタイプは、アドホックフィルターに自動変換されるか、 [クイックフィルター](/help/components/filters/quick-filters.md) 互換性がある場合は。
 
    以下に、Twitter 参照ドメインのフィルターの作成方法の例を示します。
 
