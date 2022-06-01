@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
+source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 94%
+source-wordcount: '1432'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
 | 日付の比較 | フルサポート |
 | 日付範囲 | すべての日付範囲機能がサポートされています。 |
 | 夏時間 | フルサポート |
-| デバイス、ブラウザー、リファラー、技術ディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。ADC を使用してAdobe Analyticsから CJA にデータを入力せず、代わりに AEP Web SDK データ収集を使用している CJA のお客様の場合、デバイス参照に基づくデバイスとディメンションは、現在サポートされていませんが、近い将来に使用される予定です。 |
+| デバイス、ブラウザー、リファラー、技術ディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。<p>Adobeソースコネクタを使用してAdobe Analyticsから CJA にデータを入力せず、代わりにExperience PlatformWeb SDK のデータ収集を使用する場合、デバイス参照に基づくデバイスとディメンションは、現在、サポートされていません。 近い将来にサポートされる予定です。 |
 | ディメンション | フルサポート。CJA は XDM を活用し、無制限のディメンションをサポートします。CJA は、従来の Adobe Analytics のカスタム eVar や prop には結び付けられません。 |
 | GDPR の削除 | フルサポート。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | フルサポート。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
@@ -52,6 +52,8 @@ ht-degree: 94%
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## サポート（注意が必要）
 
 | 機能 | メモ |
@@ -69,14 +71,18 @@ ht-degree: 94%
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 部分的なサポート
 
 | 機能 | メモ |
 | --- | --- |
 | ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
-| Media Analytics | メディアデータは、Analytics ソースコネクタの一部として使用できます。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時ビューアのパネルはサポートされていません。 |
 | 処理ルール | Analytics Data Connector ベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
+| ストリーミングメディア分析 | メディアデータは、 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 現在はサポートされていませんが、予定されています
 
@@ -94,6 +100,8 @@ ht-degree: 94%
 | セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「Audience パブリッシング」と呼ばれます。 |
 | 新規セッションレポートとリピートセッションレポート | 予定されているサポートには、いくつかの注意事項があります。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## サポートの予定はありません
 
 | 機能 | メモ |
@@ -104,6 +112,8 @@ ht-degree: 94%
 | データフィード | まだサポートの予定はありません。 |
 | 概要データソース | まだサポートの予定はありません。 |
 | トランザクション ID データソース | まだサポートの予定はありません。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## サポートされません
 
