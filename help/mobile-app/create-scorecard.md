@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: ht
+source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 次の情報は、Adobe Analytics データのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。はじめに、Adobe Analytics ダッシュボードのスコアカードビルダーのビデオを視聴できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/34544)
+>[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
 >このページのスコアカードのスクリーンショットは、CJA ではなく、Adobe Analytics UI のものです。UI はほぼ同じです。
