@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 146c8b9b4918c753391484dc1267e1cb90380525
+source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 99%
+source-wordcount: '1416'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 99%
 | 日付の比較 | フルサポート |
 | 日付範囲 | すべての日付範囲機能がサポートされています。 |
 | 夏時間 | フルサポート |
+| デバイス、ブラウザー、リファラー、技術ディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)を参照してください。ADC を使用してAdobe Analyticsから CJA にデータを入力せず、代わりに AEP Web SDK データ収集を使用している CJA のお客様の場合、デバイス参照に基づくデバイスとディメンションは、現在サポートされていませんが、近い将来に使用される予定です。 |
 | ディメンション | フルサポート。CJA は XDM を活用し、無制限のディメンションをサポートします。CJA は、従来の Adobe Analytics のカスタム eVar や prop には結び付けられません。 |
 | GDPR の削除 | フルサポート。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | フルサポート。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
@@ -57,7 +58,7 @@ ht-degree: 99%
 | --- | --- |
 | A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) のフィールドを通じてサポートが提供されます。 |
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics Classifications Data Connector を使用して Experience Platform および CJA にインポートできます。ルックアップデータセットは AEP に直接アップロードして、CJA で使用することもできます。 |
-| カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
+| カスタムセッション | モバイルバックグラウンドヒットを除く、すべてのカスタムセッション機能がサポートされます。 |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
 | [!UICONTROL デバイス]、[!UICONTROL ブラウザー]、[!UICONTROL リファラー]、[!UICONTROL 技術]の各ディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM エクスペリエンスイベントクラスに準拠している場合、これらのディメンションは自動的に含まれます。[Analytics ソースコネクタ経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。CJA のお客様が、ソースコネクタを使用して Adobe Analytics から CJA にデータを入力する代わりに AEP Web SDK データ収集を使用している場合、[!UICONTROL デバイス]およびデバイスルックアップに基づくディメンションは、現在サポートされていませんが、近い将来サポートされる予定です。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
