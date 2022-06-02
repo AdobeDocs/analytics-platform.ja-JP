@@ -1,9 +1,9 @@
 ---
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analyticsでのオーディエンスの投稿の概念について説明します
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '367'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Customer Journey Analytics(CJA) で検出されたオーディエンスをに公
 * このオーディエンスに E メールを送信しています。
 * このオーディエンスにプッシュメッセージを送信しています。
 * Adobe Journey Optimizerでのジャーニーにオーディエンスを使用する。
-* AEP の宛先を使用してオーディエンスをサードパーティに書き出す
+* オーディエンスをExperience Platform先を介してサードパーティに書き出す。
 
 ## 主要用語
 
@@ -34,5 +34,7 @@ Customer Journey Analytics(CJA) で検出されたオーディエンスをに公
 
 ## 次の手順
 
+* [オーディエンスの作成と公開](/help/components/audiences/publish.md)
+* [オーディエンス管理](/help/components/audiences/manage.md)
 
 

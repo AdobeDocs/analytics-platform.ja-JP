@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics
 description: Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 * **スケジュール設定またはスケジュール解除** オーディエンスの自動更新/更新 スケジュールの最大有効期限は 1 年です。
 * **オーディエンスの更新スケジュールを更新** それが期限切れになろうとしている時 有効期限が切れるオーディエンスは、予定レポートの有効期限の切れと同様に扱われます。管理者は、スケジュールの期限が切れる 1 ヶ月前に電子メールを受け取ります。
-* **オーディエンスが最後に更新された日時を表示**
+* 次を表示： **オーディエンスが最後に更新された時刻**
 * 次の項目に関するインサイトを得る **オーディエンスの作成に要した時間** Customer Journey Analytics(CJA) から。また、オーディエンスがアクティブ化のためにリアルタイム顧客プロファイルに表示されるまでに要した時間です。
 * CJA のオーディエンスが **リアルタイム顧客プロファイルでアクティブに使用されている** または（理想的に）CJA で作成されたオーディエンスを使用するExperience Platformアプリケーション。
 
@@ -40,6 +40,8 @@ ht-degree: 8%
 ## Experience Platformでの CJA オーディエンスの表示と使用
 
 Platform で CJA オーディエンスを表示するには、次に進みます。 [!UICONTROL セグメント] > [!UICONTROL セグメントの作成] > [!UICONTROL オーディエンス] タブ/ [!UICONTROL CJA オーディエンス].
+
+CJA オーディエンスを AEP セグメントのセグメント定義にドラッグできます。
 
 ![](assets/audiences-aep.png)
 
