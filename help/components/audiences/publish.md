@@ -1,9 +1,9 @@
 ---
 title: オーディエンスを作成し、リアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >この機能は、現在、 [限られたテスト](/help/release-notes/releases.md).
 
-このトピックでは、Customer Journey Analytics(CJA) で検出されたオーディエンスをに公開する方法について説明します。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformの（顧客のターゲティングとパーソナライゼーションのため）
+このトピックでは、Customer Journey Analytics(CJA) で検出されたオーディエンスを作成し、に公開する方法について説明します。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformの（顧客のターゲティングとパーソナライゼーションのため）
 
 こちらを読む [概要](/help/components/audiences/audiences-overview.md) を参照して、CJA オーディエンスの概念を理解してください。
 
@@ -47,7 +47,7 @@ ht-degree: 7%
    | ルックバックウィンドウを更新 | このオーディエンスの作成時にデータウィンドウ内でどのくらい遡るかを指定します。 最大 は 90 日です。 |
    | [!UICONTROL 1 回限りの日付範囲] | 1 回限りのオーディエンスを公開する日付範囲。 |
    | [!UICONTROL フィルター] | フィルターは、オーディエンスに対する主な入力です。 最大 20 個のフィルターを追加できます。 これらのフィルターは、 `And` または `Or` 演算子 |
-   | [!UICONTROL サンプル ID を表示] | このオーディエンスの ID の例。 サンプル ID を検索するには、検索バーを使用します。<p>!![](assets/sample-ids.png) |
+   | [!UICONTROL サンプル ID を表示] | このオーディエンスの ID の例。 サンプル ID を検索するには、検索バーを使用します。 |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ ht-degree: 7%
 
 1. 問題がない場合は、 **[!UICONTROL 公開]**.
 
+   すべてが正常に動作した場合は、オーディエンスが公開されたことを示す確認メッセージが表示されます。
+
+1. クリック **[!UICONTROL AEP でのオーディエンスの表示]** 同じメッセージ内に表示されると、Adobe Experience Platformのセグメント UI に移動します。 詳しくは、以下を参照してください。
+
+## Experience Platformでの CJA オーディエンスの使用
+
+Platform で CJA オーディエンスを表示するには、次に進みます。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ/ **[!UICONTROL CJA オーディエンス]**.
+
+CJA オーディエンスを AEP セグメントのセグメント定義にドラッグできます。
+
+![](assets/audiences-aep.png)
+
+このオーディエンスを AEP データレイクに書き出す場合は、XDM 個別プロファイルスキーマクラスに準拠するデータセットとして表示されます。
+
+![](assets/aep-datalake.png)
+
+
 ## 次の手順
 
 * このオーディエンスを管理するには、 [管理 UI](/help/components/audiences/manage.md).
-* Adobe Experience Platformでこのオーディエンスを操作するには、こちらに移動します。
