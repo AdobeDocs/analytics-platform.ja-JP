@@ -1,15 +1,19 @@
 ---
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analyticsでのオーディエンスの投稿の概念について説明します
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '374'
 ht-degree: 9%
 
 ---
 
 
 # CJA オーディエンスパブリッシングの概要
+
+>[!NOTE]
+>
+>この機能は、現在、 [限られたテスト](/help/release-notes/releases.md).
 
 Customer Journey Analytics(CJA) で検出されたオーディエンスをに公開できるようになりました。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformの（顧客のターゲティングとパーソナライゼーションのため） リアルタイム顧客プロファイルを使用して、オンライン、オフライン、CRM、サードパーティなど複数のチャネルのデータを組み合わせることで、各顧客の全体像を確認できます。 プロファイルを使用すると、個別の顧客データを統合ビューに表示し、顧客インタラクションごとに実用的なタイムスタンプ付きの説明を提供できます。
 
