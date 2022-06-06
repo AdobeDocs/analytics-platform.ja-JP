@@ -1,13 +1,13 @@
 ---
 title: オーディエンスを作成し、リアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics
-source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
+exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
+source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 7%
+source-wordcount: '929'
+ht-degree: 8%
 
 ---
-
 
 # オーディエンスの作成と公開
 
@@ -65,18 +65,20 @@ ht-degree: 7%
    | [!UICONTROL オーディエンス再来訪の見込み] | この設定は、このオーディエンスでサイトに戻った顧客をリターゲティングする場合に役立ちます。 （つまり、このデータセットに再び表示されます）。 <p>ここでは、再来訪するお客様の推定数の期間（7 日間、次の 2 週間、次の月）を選択できます。 |
    | [!UICONTROL 再来訪する見込み] | この数により、ドロップダウンリストから選択した期間内の再訪問者の推定数が表示されます。 このオーディエンスの過去のチャーンレートを調べて、この数を予測します。 |
    | [!UICONTROL 指標をプレビュー] | この設定を使用すると、特定の指標を調べて、このオーディエンスがこの指標に対して不均衡な貢献をしているかどうかを確認できます (「[!UICONTROL 売上高]&#39;または&#39;[!UICONTROL サイトでの平均時間]&#39;. 指標の集計数と、指標が表す合計の割合が表示されます。 データビューで使用できる任意の指標を選択できます。 |
-   | 含まれる名前空間 | オーディエンス内のユーザーに関連付けられている特定の名前空間。 例としては、ECID、CRM ID、電子メールアドレスなどがあります。 |
-   | サンドボックス | このオーディエンスが存在するExperience Platformサンドボックス。 このオーディエンスを Platform に公開する場合、このサンドボックスの範囲内でのみ操作できます。 |
+   | [!UICONTROL 含まれる名前空間] | オーディエンス内のユーザーに関連付けられている特定の名前空間。 例としては、ECID、CRM ID、電子メールアドレスなどがあります。 |
+   | [!UICONTROL サンドボックス] | この [Experience Platformサンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja) このオーディエンスが存在する このオーディエンスを Platform に公開する場合、このサンドボックスの範囲内でのみ操作できます。 |
 
    {style=&quot;table-layout:auto&quot;}
 
-1. 問題がない場合は、 **[!UICONTROL 公開]**.
+1. オーディエンスの設定を再度確認し、 **[!UICONTROL 公開]**.
 
    すべてが正常に動作した場合は、オーディエンスが公開されたことを示す確認メッセージが表示されます。
 
-1. クリック **[!UICONTROL AEP でのオーディエンスの表示]** 同じメッセージ内に表示されると、Adobe Experience Platformのセグメント UI に移動します。 詳しくは、以下を参照してください。
+1. クリック **[!UICONTROL AEP でのオーディエンスの表示]** 同じメッセージ内で、 [セグメント UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) Adobe Experience Platform 詳しくは、以下を参照してください。
 
 ## Experience Platformでの CJA オーディエンスの使用
+
+CJA は、公開済みのオーディエンスからすべての名前空間と ID の組み合わせを取得し、それらをリアルタイム顧客プロファイルにストリーミングするようになりました。 次に、RTCP は、各名前空間/ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。 見つかった場合は、名前空間と ID がこのプロファイルの他の ID にセグメントメンバーシップ属性として追加されます。 現在は、例えば、「user@adobe.com」をすべてのデバイスおよびチャネルでターゲットに設定できます。 プロファイルが見つからない場合は、新しいプロファイルが作成されます。
 
 Platform で CJA オーディエンスを表示するには、次に進みます。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ/ **[!UICONTROL CJA オーディエンス]**.
 
