@@ -2,9 +2,9 @@
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analyticsでのオーディエンスの投稿の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: 1fd3bc1f0d62bedfbaebfe6ca84099ccbd9d3c5f
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '424'
 ht-degree: 8%
 
 ---
@@ -17,13 +17,15 @@ ht-degree: 8%
 
 Customer Journey Analytics(CJA) で検出されたオーディエンスを作成し、に公開できるようになりました。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCP)(Adobe Experience Platform)。顧客のターゲティングとパーソナライゼーションに使用。 リアルタイム顧客プロファイルを使用して、オンライン、オフライン、CRM、サードパーティなど複数のチャネルのデータを組み合わせることで、各顧客の全体像を確認できます。 プロファイルを使用すると、個別の顧客データを統合ビューに表示し、顧客インタラクションごとに実用的なタイムスタンプ付きの説明を提供できます。
 
-オーディエンスの公開により、CJA 内で見つかったインサイトに対して明確なアクションを実行できます。 次のアクションが含まれます。
+公開オーディエンスを使用すると、CJA 内で見つかったインサイトをアクティブ化し、対応をおこなう明確な方法を提供します。 次のアクションが含まれます。
 
 * このオーディエンスに E メールを送信しています。
 * このオーディエンスにプッシュメッセージを送信しています。
 * Adobe Journey Optimizerでのジャーニーにオーディエンスを使用する。
 * オーディエンスをExperience Platform先を介してサードパーティに書き出す。
 * すべてのイベントデータを RTCP に追加する必要なく、CJA のイベントベースのデータから派生した有用な属性でリアルタイム顧客プロファイルを強化する。
+* オーディエンスの公開後に、最小限の待ち時間（数分）でこれらすべてをおこなう
+* 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開
 
 ## 主要用語
 
