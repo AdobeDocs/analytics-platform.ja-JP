@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics
 description: Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # Customer Journey Analytics
 
@@ -25,8 +25,6 @@ ht-degree: 7%
 
 ## 管理 UI
 
-スクリーンショット
-
 | UI 設定 | 定義 |
 | --- | --- |
 | フィルターを表示/非表示 | 左側のパネルで以下のフィルターの表示/非表示を切り替えることができます。 <ul><li>データビュー</li><li>所有者</li><li>更新頻度</li><li>タグ</li></ul> |
@@ -40,4 +38,3 @@ ht-degree: 7%
 | [!UICONTROL 最終変更日時] | オーディエンスが最後に編集または変更された日時。 |
 
 {style=&quot;table-layout:auto&quot;}
-
