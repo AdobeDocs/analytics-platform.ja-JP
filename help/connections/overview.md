@@ -3,13 +3,13 @@ title: CJA 接続の概要
 description: 接続に関するCustomer Journey Analytics
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 接続の概要
 
@@ -27,6 +27,7 @@ Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理
 * データ管理：ビューデータセット，データセットの管理
 * データ取り込み：ソースの管理
+* ID 名前空間の表示
 
 Customer Journey Analytics
 * 製品管理者アクセス
@@ -34,4 +35,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 > 複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
-
