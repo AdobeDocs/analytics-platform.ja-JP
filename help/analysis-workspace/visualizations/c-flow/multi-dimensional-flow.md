@@ -3,18 +3,14 @@ description: ディメンション間のフローを使用すると、様々な�
 title: ディメンション間のフロー
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '338'
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
+workflow-type: tm+mt
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
 
 # ディメンション間のフロー
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 ディメンション間のフローを使用すると、様々なディメンションにわたるユーザーパスを検証できます。
 

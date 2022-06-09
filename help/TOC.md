@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 97%
@@ -95,7 +95,7 @@ ht-degree: 97%
          + [フォールアウト分析でのフィルターの適用](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + フロー {#flow}
          + [フローの概要](analysis-workspace/visualizations/c-flow/flow.md)
-         + [フロービジュアライゼーションの設定](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [フロービジュアライゼーションの設定](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [フローの設定](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [ディメンション間のフロー](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [ヒストグラム](analysis-workspace/visualizations/histogram.md)
