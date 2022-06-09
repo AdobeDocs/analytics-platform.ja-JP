@@ -2,13 +2,13 @@
 title: ラボユーザーガイド
 description: Customer Journey Analytics用のプロトタイププロジェクトのプレビュー
 role: Admin
-source-git-commit: 2e1a97b6ed2bfd1f8c03399b635a6135c26bce55
+exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
+source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 84%
+source-wordcount: '460'
+ht-degree: 78%
 
 ---
-
 
 # [!UICONTROL ラボ]ユーザーガイド
 
@@ -68,8 +68,12 @@ ht-degree: 84%
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、メインのプレビューポータルに戻ります。
 
+## CJA Labs のプロトタイプ
+
+* 自然言語インサイトジェネレーター：フリーフォームテーブルで分析するデータの自然言語の概要を提供します。
+* ビジュアライゼーションレコメンデーター：データと適切に組み合わせたビジュアライゼーションをお勧めします。
+
 ## 追加情報
 
 * 内の一部のプロトタイプ [!UICONTROL ラボ] Customer Journey Analytics機能になる、他の人はない可能性があります。 お客様のフィードバックはアドべの意思決定を促すものです。プロトタイプをレビューして、ご意見・ご感想をアドビにお知らせください。
 * ラボは、すべての SKU エンタイトルメントで利用できます。
-
