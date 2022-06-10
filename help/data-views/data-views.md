@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 非常に異なるコンポーネントのセット（ディメンション／指標）を使用して、同じ接続の異なるデータビューを作成できます。 または、訪問タイムアウト、属性などのさまざまな設定でデータビューを作成します。 例えば、すべてのディメンションが「[!UICONTROL ラストタッチ]」に設定されたデータビューと、すべてのディメンションが「[!UICONTROL ファーストタッチ]」に設定された別のデータビュー（同じデータセットに基づく）を同時に作成することもできます。
 
-Customer Journey Analytics の Workspace プロジェクトは、データビューに基づいています。
+Customer Journey Analytics のワークスペースプロジェクトは、データビューに基づいています。
 
 ## データ表示機能 {#capabilities}
 
