@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
 source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 デフォルトでは、管理者のみが注釈を作成できます。ユーザーは、他の Analytics コンポーネント（セグメント、計算指標など）と同様に、注釈を表示する権限を持ちます。
 
-ただし、管理者は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) を介してユーザーに[!UICONTROL 注釈の作成]権限（Analytics ツール）を付与できます。
+ただし、管理者は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=ja) を介してユーザーに[!UICONTROL 注釈の作成]権限（Analytics ツール）を付与できます。
 
 ## 注釈のオンまたはオフ
 
