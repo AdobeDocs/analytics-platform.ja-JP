@@ -90,7 +90,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼ばれます）および計算指標は、Customer Journey Analytics と互換性がありません。多くの場合は、使用可能な新しいスキーマとデータを使用して、CJA でこれらのコンポーネントを再構築できます。
 
-ユーザーがシステム間を移行する際に作業ができるだけスムーズに進むように、以下を行って前もって計画しておきます。
+ユーザーがシステム間を移行する際に作業ができるだけスムーズに進むように、次のことを行って前もって計画しておきます。
 
 1. これらのコンポーネントのうち最も重要なものを特定する。
 
@@ -98,7 +98,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 1. データに必要なフィールドを特定し、それらを[フィルター](/help/components/filters/filters-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として CJA にレプリケートする。
 
-ガイドとなるビデオを以下にいくつか示しておきます。
+次に、ガイドとなるビデオをいくつか示します。
 
 * [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
