@@ -1,93 +1,93 @@
 ---
-title: AEP オーディエンスのCustomer Journey Analyticsへの取り込み
-description: AEP オーディエンスをCustomer Journey Analyticsに取り込み、分析する方法を説明します。
+title: AEP オーディエンスの Customer Journey Analytics への取り込み
+description: 将来の分析用に AEP オーディエンスを Customer Journey Analytics に取り込む方法を説明します。
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# AEP オーディエンスのCustomer Journey Analyticsへの取り込み (CJA)
+# AEP オーディエンスの Customer Journey Analytics（CJA）への取り込み
 
-この使用例では、Adobe Experience Platform(AEP) オーディエンスを CJA に導く中間的で手動の方法を調べます。 これらのオーディエンスは、AEP Segment Builder、Adobe Audience Manager、またはその他のツールで作成され、リアルタイム顧客プロファイル (RTCP) に保存されている場合があります。 オーディエンスは、一連のプロファイル ID と、適用可能な属性やイベントなどで構成されます。 CJA Workspace に取り込んで分析を行います。
+このユースケースでは、Adobe Experience Platform（AEP）オーディエンスを CJA に暫定的に手動で取り込む方法を調査します。これらのオーディエンスは、AEP セグメントビルダー、Adobe Audience Manager またはその他のツールで作成され、リアルタイム顧客プロファイル（RTCP）に保存されている可能性があります。オーディエンスは、プロファイル ID のセットと、該当する属性やイベントなどで構成されており、CJA Workspace に取り込んで分析したいと考えています。
 
 ## 前提条件
 
-* Adobe Experience Platform(AEP)、特にリアルタイム顧客プロファイルへのアクセス
-* AEP スキーマとデータセットを作成/管理するためのアクセス権。
-* AEP クエリサービス（および SQL を書き込む機能）へのアクセス、またはいくつかの光変換を実行する別のツールへのアクセス。
-* Customer Journey Analyticsへのアクセス CJA 接続とデータビューを作成/変更するには、CJA 製品管理者である必要があります。
-* AdobeAPI の使用機能（セグメント化、オプションでその他）
+* Adobe Experience Platform（AEP）（特にリアルタイム顧客プロファイル）にアクセスします。
+* AEP スキーマおよびデータセットを作成／管理にアクセスします。
+* AEP クエリサービス（および SQL 記述機能）または軽い変換を実行するための別のツールにアクセスします。
+* Customer Journey Analytics にアクセスします。CJA 接続およびデータビューを作成／変更するには、CJA 製品管理者である必要があります。
+* Adobe API（Segmentation、オプションでその他）を使用する機能
 
-## 手順 1:リアルタイム顧客プロファイルでのオーディエンスの選択 {#audience}
+## 手順 1：リアルタイム顧客プロファイルでのオーディエンスの選択 {#audience}
 
-Adobe Experience Platform [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCP) を使用すると、オンライン、オフライン、CRM、サードパーティなど、複数のチャネルからのデータを組み合わせることで、各顧客の全体像を確認できます。
+Adobe Experience Platform [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCP）を使用すると、オンライン、オフライン、CRM、サードパーティなど、複数のチャネルのデータを組み合わせて、各顧客の全体像を確認できます。
 
-RTCP には、様々なソースから来た可能性のあるオーディエンスが既に存在する可能性があります。 CJA に取り込むオーディエンスを 1 つ以上選択します。
+RTCP のオーディエンスは、既に様々なソースから獲得している可能性があります。1 つ以上のオーディエンスを選択して、CJA に取り込みます。
 
-## 手順 2:エクスポート用のプロファイル和集合データセットの作成
+## 手順 2：エクスポート用のプロファイル結合データセットの作成
 
-オーディエンスをデータセットに書き出し、最終的に CJA の接続に追加するには、スキーマがプロファイルのデータセットを作成する必要があります [和集合スキーマ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+最終的に CJA の接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル[結合スキーマ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=ja#understanding-union-schemas)であるデータセットを作成する必要があります。
 
-和集合スキーマは、同じクラスを共有し、プロファイルに対して有効にされた複数のスキーマで構成されます。 和集合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの統合を表示できます。 リアルタイム顧客プロファイルは、和集合スキーマを使用して、各顧客の全体像を作成します。
+結合スキーマは、同じクラスを共有し、プロファイルが有効になっている複数のスキーマで構成されています。結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。
 
-## 手順 3:API 呼び出しを使用してオーディエンスをプロファイル和集合データセットに書き出す {#export}
+## 手順 3： API 呼び出しを使用したプロファイル結合データセットへのオーディエンスのエクスポート {#export}
 
-オーディエンスを CJA に取り込む前に、AEP データセットに書き出す必要があります。 これは、Segmentation API、特に [書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en).
+オーディエンスを CJA に取り込む前に、AEP データセットにエクスポートする必要があります。これは、Segmentation API（特に[書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=ja)）を使用してのみ実行できます。
 
-任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイルの和集合 AEP データセットに格納できます。 オーディエンスに対して様々な属性やイベントを書き出すことができますが、必要なのは、活用する CJA 接続で使用するユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみです（手順 5 の後述）。
+任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイル結合 AEP データセットに取り込むことができます。オーディエンスの様々な属性／イベントをエクスポートできますが、活用する CJA 接続で使用される人物 ID フィールドに一致する特定のプロファイル ID フィールドのみをエクスポートする必要があります（後述の手順 5 を参照）。
 
-## 手順 4:書き出し出力の編集
+## 手順 4：エクスポート出力の編集
 
-書き出しジョブの結果を CJA に取り込むには、別のプロファイルデータセットに変換する必要があります。  この変換は、 [AEP クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)、または任意の別の変換ツールを使用できます。 CJA でのレポートをおこなうには、プロファイル ID（CJA のユーザー ID と一致する）と 1 つ以上のオーディエンス ID のみが必要です。
+書き出しジョブの結果は、CJA に取り込むために、別のプロファイルデータセットに変換する必要があります。この変換は、[AEP クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)やその他の任意の変換ツールで行うことができます。CJA でレポートを作成するために必要なのは、（CJA の人物 ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
 
-ただし、標準のエクスポートジョブには、より多くのデータが含まれているので、この出力を編集して不要なデータを削除し、いくつかの点を移動する必要があります。  また、変換後のデータを追加する前に、まずスキーマ/データセットを作成する必要があります。
+ただし、標準的な書き出しジョブには、より多くのデータが含まれているので、この出力を編集して余分なデータを削除したり、いくつかのデータを移動させたりする必要があります。また、先にスキーマ／データセットを作成してから、変換したデータを追加する必要があります。
 
-次に、プロファイル和集合データセットの書き出し出力の例を示します。 **前** 任意の編集：
+次に、編集&#x200B;**前**&#x200B;の、プロファイル結合データセットのエクスポート出力の例を示します。
 
 ![未編集の出力](assets/export-unedited.png)
 
-以下のことに注意してください。
+次のことに注意してください。
 
-* オーディエンス ID は、 `segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status`.
-* ステータスは、「適合」または「入口」である必要がありますが、「出口」ではありません。
+* オーディエンス ID は、`segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status` の下に含まれています。
+* ステータスは、「exited」ではなく、「realized」または「entered」である必要があります。
 
 これは、CJA に送信できるプロファイルデータセットの形式です。
 
 ![編集された出力](assets/export-edited.png)
 
-存在する必要があるデータ要素を次に示します。
+次に、存在する必要があるデータ要素を示します。
 
-* `_aresprodvalidation` 文字列フィールド：組織 ID を参照します。 君のは違う。
-* `personID` 文字列フィールド：これは、人物を識別するための、プロファイルデータセットの標準 XDM スキーマフィールドです。 エクスポートからプロファイル ID を使用します。
-* `audienceMembershipId` 文字列フィールド：書き出しからのオーディエンス ID。  注意：このフィールドには、任意の名前を付けることができます（独自のスキーマから）。
-* オーディエンスのわかりやすい名前を追加します (`audienceMembershipIdName`など )
+* `_aresprodvalidation` 文字列フィールド：組織 ID を示します。実際のものとは異なります。
+* `personID` 文字列フィールド：これは、人物を識別するための、プロファイルデータセットの標準 XDM スキーマフィールドです。エクスポートからのプロファイル ID を使用します。
+* `audienceMembershipId` 文字列フィールド：エクスポートからのオーディエンス ID。メモ：このフィールドには、（独自のスキーマから）好きな名前を付けることができます。
+* 次のように、オーディエンス（`audienceMembershipIdName`）にわかりやすい名前を追加します。
 
    ![わかりやすいオーディエンス名](assets/audience-name.png)
 
 * 必要に応じて、他のオーディエンスメタデータを追加します。
 
-## 手順 5:このプロファイルデータセットを CJA の既存の接続に追加します。
+## 手順 5： CJA の既存の接続に対するこのプロファイルデータセットの追加
 
-以下が可能です。 [新しい接続を作成](/help/connections/create-connection.md)を使用する場合でも、ほとんどの場合は、プロファイルデータセットを既存の接続に追加する必要があります。 オーディエンス ID が CJA の既存のデータを「エンリッチメント」する。
+[新しい接続を作成](/help/connections/create-connection.md)できましたが、ほとんどのお客様は、既存の接続にプロファイルデータセットを追加したいはずです。オーディエンス ID は、CJA の既存のデータを「強化」します。
 
-## 手順 6:既存の（または新しい）CJA データビューの変更
+## 手順 6：既存の（または新しく作成した）CJA データビューの変更
 
-追加 `audienceMembershipId`, `audienceMembershipIdName` および `personID` をデータビューに追加します。
+データビューに `audienceMembershipId`、`audienceMembershipIdName` および `personID` を追加します。
 
-## 手順 7:Workspace のレポート
+## 手順 7：ワークスペースでのレポート
 
-次の項目に関するレポートが作成されました： `audienceMembershipId`, `audienceMembershipIdName` および `personID` Workspace で使用できます。
+ワークスペースで、`audienceMembershipId`、`audienceMembershipIdName` および `personID` についてレポートできるようになりました。
 
 ## 追加情報
 
-* オーディエンスデータが CJA 内で常に更新されるように、このプロセスを定期的に実行する必要があります。
-* 1 つの CJA 接続内で複数のオーディエンスをインポートできます。 これにより、プロセスがさらに複雑になりますが、可能です。 これを機能させるには、上記のプロセスを少し変更する必要があります。
-   1. RTCP 内のオーディエンスコレクション内の目的のオーディエンスごとに、このプロセスを実行します。
-   1. 書き出しジョブの出力の変換を実行する場合は、次のリストを作成する必要があります。 `audienceMembershipId(s)`と呼ばれます。これは、単一の CJA ユーザー ID が複数のオーディエンスに属している可能性があるからです。 CJA は、将来のある時点で、プロファイルデータセット内の配列/オブジェクト配列をサポートする予定です。 これらをサポートした後は、 `audienceMembershipId` または `audienceMembershipIdName` が最適なオプションになります。 中間では、書き出しジョブ出力で各プロファイル ID の現在のオーディエンス ID をすべて抽出し（ステータスは「適合済み」または「入力済み」）、コンマ区切りの値文字列 ( `<id1>,<id2>,...`) をクリックします。  ステータスが「出口」のオーディエンス ID がある場合は、それがリストにないことを確認します。  ID とのわかりやすい名前の関連付けを維持する場合は、リスト内の各 ID の末尾に（他のメタデータと共に）添付できます。
-   1. データビューで、 `audienceMembershipId` フィールドに値を入力します。 注意：現在、配列には 10 個の値の制限があります。
-   1. これで、この新しいディメンションに関するレポートを作成できます `audienceMembershipIds` （CJA Workspace 内）を参照してください。
+* このプロセスは、定期的に実行して、CJA 内でオーディエンスデータが常に更新されるようにする必要があります。
+* 単一の CJA 接続内で複数のオーディエンスを読み込むことができます。これは、プロセスがさらに複雑になりますが、可能です。これを機能させるには、前述のプロセスに少し修正を加える必要があります。
+   1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
+   1. 単一の CJA 人物 ID が複数のオーディエンスに属している可能性があるので、書き出しジョブ出力の変換を実行する際に、`audienceMembershipId(s)` のリストを作成する必要があります。CJA は、将来のある時点で、プロファイルデータセットの配列／オブジェクト配列をサポートする予定です。これらがサポートされると、`audienceMembershipId` や `audienceMembershipIdName` に対してオブジェクトの配列を使用することが、最良の選択肢となります。暫定的に、書き出しジョブ出力の各プロファイル ID について、現在のすべてのオーディエンス ID（ステータスが「realized」か「entered」）を抽出し、コンマ区切り値の文字列にします（例：`<id1>,<id2>,...`）。「exited」のステータスのオーディエンス ID がある場合は、リストに含まれていないことを確認します。ID に関連付けられたわかりやすい名前を維持したい場合は、リスト内の各 ID の末尾に（他のメタデータと共に）添付できます。
+   1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。メモ：現在、配列の値は 10 個までという制限があります。
+   1. CJA Workspace 内で、この新しいディメンション `audienceMembershipIds` についてレポートできるようになりました。
