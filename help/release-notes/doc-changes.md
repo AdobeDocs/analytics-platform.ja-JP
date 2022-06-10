@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 17e89d7cfeddff831e34fc441ee17de8b1c3fe21
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -21,11 +21,11 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年5月 | Adobe Experience Platformでの CJA とAttribution AIの統合（フォローへのリンク）に関する新しい記事を追加しました。 |
 | 2022年5月 | Adobe Experience Platformでの CJA と顧客 AI の統合に関する新しい記事（リンク先）。 |
 | 2022年5月 | 次の方法に関する新しい記事を追加しました。 [CJAReport Builderでのデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
-| 2022年5月 | に関する新しい記事を追加しました。 [CJA へのAdobe Experience Platformオーディエンスの取り込み](/help/use-cases/ingest-aep-segments.md) |
-| 2022年4月 | [ディメンションサブの部分文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=ja)に関するドキュメント。 |
+| 2022年5月 | [Adobe Experience Platform オーディエンスの CJA への取り込み](/help/use-cases/ingest-aep-segments.md)に関する新しい記事 |
+| 2022年4月 | [ディメンションの部分文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=ja)に関するドキュメント。 |
 | 2022年4月 | [Adobe Analytics ユーザー向け CJA ユーザーガイド](/help/getting-started/aa-to-cja-user.md)（新規）。 |
 | 2022年3月 | [CJA Annotations API のドキュメント](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)（新規）。 |
-| 2022年3月 | [Workspace での注釈](/help/components/annotations/overview.md)に関するドキュメント（新規）。 |
+| 2022年3月 | [ワークスペースでの注釈](/help/components/annotations/overview.md)に関するドキュメント（新規）。 |
 | 2022年3月 | [接続サイズの予測](/help/getting-started/cja-faq.md)に関するコンテンツの大幅な更新。 |
 | 2022年2月 | [Adobe Analytics から Customer Journey Analytics への進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja) |
 | 2022年1月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/binding-dimensions-metrics.md)の新しいユースケース |
@@ -44,15 +44,15 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2021年9月 | CJA での ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6-considerations-when-merging-report-suites-in-cja)レポートスイートの結合の意味[ に関する新しい節を追加しました。 |
 | 2021年8月 | CJA での強化された [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja) のエクスペリエンスに関する新しい節を追加しました。 |
 | 2021年8月 | [データビューディメンションの大文字と小文字の区別](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-behavior-settings) に関する新しい節を追加しました。 |
-| 2021年6月 | Workspace の [以前のプロジェクトバージョン](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=ja#previous-version) に関する新しいドキュメントを追加しました。 |
+| 2021年6月 | ワークスペースの [以前のプロジェクトバージョン](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=ja#previous-version) に関する新しいドキュメントを追加しました。 |
 | 2021年4月 | [永続性](/help/data-views/component-settings/persistence.md) に関する新しいトピックを追加しました。 |
-| 2021年4月 | Workspace でのスケジュール済みプロジェクトのサポートに関する新しいドキュメントを追加しました。 |
+| 2021年4月 | ワークスペースでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントを追加しました。 |
 | 2021年4月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/ga-to-cja.md) と [データの分析](/help/use-cases/ga-to-cja-reporting.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | Workspace の [予定レポート](/help/analysis-workspace/curate-share/t-schedule-report.md) に関するトピックを追加しました。 |
 | 2021年4月 | [CJA の大基数ディメンション](/help/components/dimensions/high-cardinality.md) に関する新しいトピックを追加しました。 |
 | 2021年3月 | [Analytics ダッシュボード](/help/mobile-app/home.md) （モバイルアプリ）のサポートに関するトピックを追加しました。 |
-| 2021年3月 | Workspace の [ユーザーの環境設定](/help/analysis-workspace/user-preferences.md) に関する新しいトピックを追加しました。 |
+| 2021年3月 | ワークスペースの [ユーザーの環境設定](/help/analysis-workspace/user-preferences.md) に関する新しいトピックを追加しました。 |
 | 2021年2月 | [Adobe Experience Platform でのマーケティングチャネルディメンション](/help/use-cases/marketing-channels.md) の使用に関する新しいトピックを追加しました。 |
 | 2021年2月 | 新しい [CJA API](https://www.adobe.io/cja-apis/docs/) ドキュメントを公開しました。 |
 | 2021年1月 | [データセットへの標準検索の追加](/help/connections/standard-lookups.md)に関する新しいトピックです。 |

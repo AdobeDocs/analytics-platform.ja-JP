@@ -1,5 +1,5 @@
 ---
-description: AEP Customer AI と CJA の Workspace の統合方法を説明します。
+description: AEP 顧客 AI が CJA のワークスペースとどのように統合するかを説明します。
 title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 ## ワークフロー
 
-一部の手順は、CJA での出力を操作する前に、Adobe Experience Platformで実行されます。
+手順の一部は、CJA の出力を処理する前に、Adobe Experience Platform で実行されます。
 
 ### 手順 1:顧客 AI インスタンスの設定
 

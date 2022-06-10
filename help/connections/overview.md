@@ -1,13 +1,13 @@
 ---
 title: CJA 接続の概要
-description: 接続に関するCustomer Journey Analytics
+description: Customer Journey Analytics での接続について説明します。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 接続を使用すれば、[!DNL Adobe Experience Platform] のデータセットを [!UICONTROL ワークスペース] に統合できます。[!DNL Experience Platform] データセットに関するレポートを作成するには、まず [!DNL Experience Platform] と [!UICONTROL ワークスペース] のデータセット間で接続を確立する必要があります。
 
-以下は、このトピックの概要に関するビデオです。
+次に、概要に関するビデオを示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
 

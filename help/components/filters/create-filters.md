@@ -5,7 +5,7 @@ exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 88%
 
 | アクション | 説明 |
 | --- | --- |
-| 選択範囲からフィルターを作成 | インラインフィルターを作成します。このフィルターは、オープンプロジェクトにのみ適用し、CJA フィルターとして保存されません。<p> 1.フィルターに含めるテーブル行を選択します。  2. 選択範囲を右クリックします。3. 「*選択内容からフィルターを作成*」をクリックします。 |
+| 選択範囲からフィルターを作成 | インラインフィルターを作成します。このフィルターは、オープンプロジェクトにのみ適用し、CJA フィルターとして保存されません。<p> 1. フィルターの対象とするテーブル行を選択します。2. 選択範囲を右クリックします。3. 「*選択内容からフィルターを作成*」をクリックします。 |
 | Workspace [!UICONTROL コンポーネント] > [!UICONTROL 新しいフィルター] | フィルタービルダーを表示します。フィルタリングについて詳しくは、[フィルタービルダー](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=ja)を参照してください。 |
 | 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | [キュレーションおよび共有](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=ja#concept_4A9726927E7C44AFA260E2BB2721AFC6)では、プロジェクトに適用するフィルターを、受信者に共有された分析で使用する方法について学習します。 |
 | フィルターをディメンションとして使用 | 以下のビデオを参照してください。Analysis WorkspaceでフィルターをDimensionとして使用する |

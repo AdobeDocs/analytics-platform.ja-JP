@@ -1,25 +1,25 @@
 ---
-description: AEPAttribution AIを CJA で Workspace と統合する方法を説明します。
-title: Attribution AIと CJA の統合
+description: AEP アトリビューション AI が CJA のワークスペースとどのように統合するかを説明します。
+title: アトリビューション AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 11%
+ht-degree: 37%
 
 ---
 
-# Attribution AIと CJA の統合
+# アトリビューション AI と CJA の統合
 
-[Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)は、Adobe Experience Platformインテリジェントサービスの一部で、指定した結果に対する顧客とのやり取りの影響と増分的な影響を計算する、マルチチャネルのアルゴリズムアトリビューションサービスです。 マーケターは、Attribution AIジャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケティング費用と広告費用を測定し、最適化できます。
+[アトリビューション AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) は、Adobe Experience Platform インテリジェントサービスの一部で、顧客とのやり取りの影響と増分的な効果を指定した成果に照らして計算する、マルチチャネルのアルゴリズムアトリビューションサービスです。アトリビューション AI を使用すると、マーケターは、カスタマージャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケティング費用と広告費用を測定し、最適化できます。
 
-Attribution AIはCustomer Journey Analytics(CJA) と統合され、顧客のマーケティングタッチポイントおよびコンバージョンデータソースに対してAttribution AIがモデルを実行する範囲で実行されます。 次に、CJA は、これらのモデルの出力をデータセットとして読み込みます。または、他の CJA データセットと統合することもできます。 Attribution AIが有効なデータセットは、CJA のデータビューとレポートで利用できます。
+Attribution AIはCustomer Journey Analytics(CJA) と統合され、顧客のマーケティングタッチポイントおよびコンバージョンデータソースに対してAttribution AIがモデルを実行する範囲で実行されます。 次に、CJA は、これらのモデルの出力をデータセットとして読み込みます。または、他の CJA データセットと統合することもできます。 アトリビューション AI に対応したデータセットは、CJA のデータビューおよびレポートで活用できます。
 
-Attribution AIは、次の 3 つのExperience Platformスキーマをサポートします。エクスペリエンスイベント、Adobe Analytics、および消費者エクスペリエンスイベント。
+アトリビューション AI は、Experience Event、Adobe Analytics、Consumer Experience Event の 3 つの Experience Platform スキーマをサポートします。
 
-Attribution AIは、次の 2 つのカテゴリのスコアをサポートします。アルゴリズムとルールベースの両方を使用できます。
+アトリビューション AI では、スコアの 2 つのカテゴリ（アルゴリズムとルールベース）をサポートしています。
 
 ## アルゴリズムスコア
 
@@ -40,11 +40,11 @@ Attribution AIは、次の 2 つのカテゴリのスコアをサポートしま
 
 ## ワークフロー
 
-一部の手順は、CJA での出力を操作する前に、Adobe Experience Platformで実行されます。 出力は、適用されたデータモデルを持つAttribution AIセットで構成されます。
+手順の一部は、CJA の出力を処理する前に、Adobe Experience Platform で実行されます。出力は、適用されたデータモデルを持つAttribution AIセットで構成されます。
 
 ### 手順 1:Attribution AIインスタンスの作成
 
-Experience Platformで、Attribution AIを選択してマッピングし、イベントを定義し、データをトレーニングすることで、データインスタンスを作成します（説明を参照） [ここ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
+Experience Platform で、データを選択およびマッピングし、イベントを定義し、データをトレーニングすることで、アトリビューション AI インスタンスを作成します（[こちら](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html?lang=ja)を参照）。
 
 ![AAI インスタンス](assets/aai-instance.png)
 
@@ -112,17 +112,17 @@ AAI データを含む Workspace プロジェクトが表示され、影響ス�
 
 ![リードタイム](assets/lead-time.png)
 
-## Attribution AIとAttribution IQの違い
+## アトリビューション AI と Attribution IQ の違い
 
-したがって、Attribution AIデータを使用するタイミングと [Attribution IQ](/help/analysis-workspace/attribution/overview.md)、ネイティブの CJA 機能？ 次の表に、機能の違いを示します。
+では、CJA のネイティブ機能である [Attribution IQ](/help/analysis-workspace/attribution/overview.md) と比較して、アトリビューション AI データはどのような場合に使用する必要があるでしょうか。次の表に、機能の違いの一部を示します。
 
 | 機能 | アトリビューション AI | Attribution IQ |
 | --- | --- | --- |
 | 増分アトリビューションを実行 | ○ | × |
-| ユーザーがモデルを調整できるようにします | ○ | ○ |
-| チャネルをまたいで属性を設定します ( 注意：AAI は、CJA と同じステッチ済みデータを使用しません )。 | ○ | ○ |
+| ユーザーにモデルの調整を許可 | ○ | ○ |
+| チャネルをまたいだアトリビューションを行う（メモ：AAI は CJA と同じステッチされたデータを使用しない。） | ○ | ○ |
 | 影響スコアが含まれます | ○ | ○ |
-| ML モデリングを実行 | ○ | ○ |
+| ML モデリングを行う | ○ | ○ |
 | 地域ベースのアトリビューションモデル | ○ | ○ |
 | モデルでマーケティングタッチポイントを設定できます | ○ | × |
 

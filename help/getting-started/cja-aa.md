@@ -22,9 +22,9 @@ ht-degree: 93%
 | 異常値検出 | フルサポート |
 | Attribution IQ | フルサポート |
 | 計算指標 | フルサポート。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
-| カレンダーイベント | フルサポート。カレンダーイベントは、Workspace の[注釈](/help/components/annotations/overview.md)として実装されています。 |
+| カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
 | 分類ルールビルダー | フルサポート。CJA では、[部分文字列](/help/data-views/component-settings/substring.md)と呼ばれます。ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
-| クロスデバイス／クロスチャネルのステッチ | フルサポート。[Cross-Channel Analytics](/help/connections/cca/overview.md)を参照してください。 |
+| クロスデバイス／クロスチャネルのステッチ | フルサポート。[Cross-Channel Analytics](/help/connections/cca/overview.md) を参照してください。 |
 | CSV のダウンロード | フルサポート |
 | カスタムカレンダー | フルサポート |
 | 日付の比較 | フルサポート |
@@ -48,7 +48,7 @@ ht-degree: 93%
 | レポート API へのアクセス | フルサポート。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | フルサポート |
 | セグメント | フルサポート。現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ユーザー権限／データアクセス制御 | フルサポート。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除を行う</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>Workspace プロジェクトをすべてのユーザーと共有する。</li></ul> |
+| ユーザー権限／データアクセス制御 | フルサポート。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除を行う</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>ワークスペースプロジェクトをすべてのユーザーと共有する。</li></ul> |
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
 
@@ -58,7 +58,7 @@ ht-degree: 93%
 
 | 機能 | メモ |
 | --- | --- |
-| A4T | [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) のフィールドを通じてサポートが提供されます。 |
+| A4T | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じてサポートが提供されます。 |
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics Classifications Data Connector を使用して Experience Platform および CJA にインポートできます。ルックアップデータセットは AEP に直接アップロードして、CJA で使用することもできます。 |
 | カスタムセッション | モバイルバックグラウンドヒットを除く、すべてのカスタムセッション機能がサポートされます。 |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
@@ -97,7 +97,7 @@ ht-degree: 93%
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| セグメントの公開（Workspace から Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「Audience パブリッシング」と呼ばれます。 |
+| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「Audience パブリッシング」と呼ばれます。 |
 | 新規セッションレポートとリピートセッションレポート | 予定されているサポートには、いくつかの注意事項があります。 |
 
 {style=&quot;table-layout:auto&quot;}
