@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '757'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 96%
 
 数値ディメンションを使用して、[!UICONTROL フロー]ビジュアライゼーションに「指標」を取り込むことができます。
 
-1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
 
 ![](assets/flow.png)
@@ -59,7 +59,7 @@ ht-degree: 96%
 
 例えば、データビューの含める／除外する機能を使用して、50 ドル以上の売り上げをもたらした製品にのみ焦点を当てます。そのため、1 件の注文に 50 ドルの製品購入と 25 ドルの製品購入が含まれる場合、注文全体ではなく、25 ドルの製品購入のみを除外します。
 
-1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
 a.「[!UICONTROL 形式]」で、「[!UICONTROL 通貨]」を選択します。
 b.「[!UICONTROL 通貨]」で、「USD」を選択します。
@@ -72,7 +72,7 @@ f. 値として「50」を指定します。
 
 ## 5. 「[!UICONTROL 値なしオプション]」設定を利用します
 
-会社はユーザーのトレーニングに時間を費やしており、レポートで「未指定」と表示される可能性があります。データビューのデフォルトは「値なし」です。 データビュー UI で、[「値なし」を「未指定」に変更](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-no-value-options-settings)できるようになりました。
+会社はユーザーのトレーニングに時間を費やしており、レポートで「未指定」と表示される可能性があります。データビューのデフォルトは「値なし」です。 データビュー UI で、[「値なし」を「未指定」に変更](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-no-value-options-settings)できるようになりました。
 
 もう 1 つの例として、メンバーシッププログラム登録のディメンションがあります。 この場合、「値なし」を「メンバーシッププログラム登録なし」に名称変更できます。
 
