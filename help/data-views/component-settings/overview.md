@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,6 +31,6 @@ ht-degree: 97%
 | [!UICONTROL スキーマのパス] | 必須。コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
 | [!UICONTROL レポートのコンポーネントを非表示] | 管理者以外のユーザー向けデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
 
-データビューのコンポーネント設定に関するビデオを次に示します。
+次に、データビューのコンポーネント設定に関するビデオを示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
