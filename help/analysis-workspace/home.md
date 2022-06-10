@@ -6,9 +6,9 @@ feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html#analysis-workspace) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
+>Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja#analysis-workspace) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
-Analysis Workspace は分析をすばやく構築してインサイトを共有できる、柔軟なブラウザーツールです。ドラッグ&amp;ドロップのインターフェイスを使用して、分析の作成、ビジュアライゼーションの追加をおこない、データを活用、データセットをキュレーション、組織内の任意のユーザーとプロジェクトを共有およびスケジュールできます。
+Analysis Workspace は分析をすばやく構築してインサイトを共有できる、柔軟なブラウザーツールです。ドラッグ&amp;ドロップのインターフェイスを使用して、分析の作成、ビジュアライゼーションの追加を行い、データを活用、データセットをキュレーション、組織内の任意のユーザーとプロジェクトを共有およびスケジュールできます。
 
 数分しか時間が取れない場合は、この短い概要を視聴し、何ができるかをご確認ください。
 
@@ -44,7 +44,7 @@ Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](h
 
 ## 分析の構築 {#analysis}
 
-Workspace プロジェクトでは、左パネルから **パネル、テーブル、ビジュアライゼーションおよびコンポーネント** にアクセスします。これらはプロジェクトの構成要素です。
+ワークスペースプロジェクトでは、左パネルから **パネル、テーブル、ビジュアライゼーションおよびコンポーネント** にアクセスします。これらはプロジェクトの構成要素です。
 
 ### コンポーネント
 
