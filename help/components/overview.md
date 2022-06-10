@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 次のコンポーネントを管理できます。
 
-* [**注釈**](/help/components/annotations/overview.md):コンテキストデータのニュアンスやインサイトを組織に伝えます。 **この機能は現在、 [限られたテスト](/help/release-notes/releases.md).**
+* [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。**この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。**
 * [**フィルター**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
 * [**日付範囲**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
@@ -34,7 +34,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
 
 ![](assets/components.png)
 
-プロジェクトでのコンポーネントの使用については、[Workspace プロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
+プロジェクトでのコンポーネントの使用については、[ワークスペースプロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
 
 ## コンポーネントのアクション
 
