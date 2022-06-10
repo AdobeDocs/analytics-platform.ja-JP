@@ -1,19 +1,19 @@
 ---
-title: Customer Journey AnalyticsのフィルターDimension
-description: CJA 用のフィルターディメンションのReport Builder方法を説明します
+title: Customer Journey Analytics でのディメンションのフィルタリング
+description: CJA の Report Builder でディメンションのフィルターを使用する方法について説明します
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 source-git-commit: 39a399f5267b37548d4e757140268d6f104370b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# ディメンションフィルター
+# ディメンションのフィルタリング
 
 デフォルトでは、テーブルの各ディメンション項目は、そのディメンションの上位 10 項目を返します。
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
    ![](./assets/image27.png)
 
-1. ポップアップメニューで「**フィルターディメンション**」を選択し、「**フィルターディメンション**」ペインを表示します。
+1. ポップアップメニューで&#x200B;**ディメンションをフィルター**&#x200B;を選択し、**ディメンションをフィルター**&#x200B;ペインを表示します。
 
 1. 「**一番人気**」または「**特定**」を選択します。
 
