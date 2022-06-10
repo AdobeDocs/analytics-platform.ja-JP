@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 98%
 これを行うには、
 
 * 計算指標を使用して、コールセンターへの通話で終了したセッションのデータだけを取り出します。
-* CJA の [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace) の「パーティシペーション」モデルを使用します。
+* CJA の [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=ja#cja-workspace) の「パーティシペーション」モデルを使用します。
 
 通話で終了するセッションに最も頻繁に関与しているページを簡単に確認できます。 「買い物かご」ページと「チェックアウト情報」ページが、ほとんどの通話を促進していることがわかります。 また、Firebase モバイルアプリデータも組み込んでいるので、通話の原因となったページエラーやアプリのクラッシュさえ確認できます。 これは、優れた web およびモバイルアプリエクスペリエンスを提供する場合に、非常に重要なデータポイントになります。
 
