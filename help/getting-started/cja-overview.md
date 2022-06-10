@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1258'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ CJA アーキテクチャの概要を次に示します。
 
 ![アークテクチャ](assets/cja-architecture.png)
 
-以下は Customer Journey Analytics の概要ビデオです。
+次に、Customer Journey Analytics の概要ビデオを示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
@@ -38,7 +38,7 @@ Customer Journey Analytics の最初のリリースには、Analysis Workspace �
 
 [クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)：[Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)と統合して、Co-op グラフまたはプライベートグラフを利用し、デジタルデバイスをどのように人物にマッピングするかを特定します。Adobe Analytics Ultimate のお客様が利用できます。
 
-その一方、CJA は、Adobe Experience Platform のデータセットと統合され、Analysis Workspace でのクロスチャネル分析を可能にします。CJA はまだ Co-op グラフやプライベート ID グラフとは統合されていませんが、「独自 ID の取り込み」によってデータセットを結合できます。これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、以下を参照してください。
+その一方、CJA は、Adobe Experience Platform のデータセットと統合され、Analysis Workspace でのクロスチャネル分析を可能にします。CJA はまだ Co-op グラフやプライベート ID グラフとは統合されていませんが、「独自 ID の取り込み」によってデータセットを結合できます。これらのデータセットには、デジタルデータだけでなく、オンラインとオフラインの両方のタッチポイントを含めることができます。CJA の前提条件について詳しくは、次を参照してください。
 
 ## 主なユースケース
 
@@ -47,9 +47,9 @@ Customer Journey Analytics では、次のことが可能です。
 * **ジャーニーのコンテキストと照らし合わせて顧客を把握する**：複数のチャネルにまたがるデータを、順番に表示および分析できます。コールセンター、POS システム、オンラインプロパティのデータを、1 つのレポートビューに組み合わせることができます。
 * **誰でもインサイトを利用可能**：データアクセスを民主化し、多くの人がデータに基づいたインサイトを活用してよりビジネス上の意思決定を行えるようにします。顧客体験のあらゆる側面を取り扱う組織に所属するすべてのメンバーが、より完全なデータに基づいて、実際の意思決定を迅速に下すことができます。
 * **データアナリスト向けデータサイエンスの機能を活用**：Customer Journey Analytics を使用すると、専門家でなくてもデータサイエンスを活用して、深いインサイトと分析を解き放つことができます。
-* **アドホックレポートを使用してデータセットを視覚化し、操作します**:Workspace では、いくつかの基本的なルールに準拠したAdobe Experience Platformの任意のデータセットを使用できます。
-* **Web 以外の表示データ**：Workspace は、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
-* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、Workspace への読み込みを行います。Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みを行います。
+* **アドホックレポートを使用してデータセットの視覚化や操作を行う**：ワークスペースでは、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
+* **Web 以外の表示データ**：ワークスペースは、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
+* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、ワークスペースへの読み込みを行います。Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みを行います。
 
 ## 前提条件
 
@@ -65,7 +65,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 * Customer Journey Analytics にアクセスしたり接続したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で **Customer Journey Analytics 製品**&#x200B;に管理者として追加される必要があります。製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除を行う
    * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新／削除を行います。
-   * Workspace プロジェクトをすべてのユーザーと共有する
+   * ワークスペースプロジェクトをすべてのユーザーと共有する
 * 接続の作成、更新、削除を行うためには、Customer Journey Analytics 単体の製品管理者であることは十分ではありません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
    * スキーマの管理
@@ -84,7 +84,7 @@ Customer Journey Analytics の非製品管理者（ユーザー）は、デー�
 
 ## 用語の更新
 
-CJA のいくつかの機能は、従来の Adobe Analytics の機能に比べ、業界標準に合わせて名前が変更されました。更新された用語の一部には、以下が含まれます。
+CJA のいくつかの機能は、従来の Adobe Analytics の機能に比べ、業界標準に合わせて名前が変更されました。次に、更新された用語の一部を示します。
 
 * セグメントは「フィルター」になりました。
 * 仮想レポートスイートは、「データビュー」と呼ばれるようになりました。
@@ -104,7 +104,7 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 * [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：標準 SQL を使用して、Adobe Experience Platform からデータ（アドビのソリューションデータ、お客様のファーストパーティデータ、その他の Platform データなど）を取得します。あらゆるデータセットを結合し、クエリ結果を新しいデータセットとして取り込んでレポートや Data Science Workspace で使用したり、プロファイルサービスに取り込んだりできる、サーバーレスのツールです。クエリサービスを使用してデータ分析のエコシステムを構築し、様々なインタラクションチャネルをまたいだ消費者の全体像を把握できます。これらのチャネルには、POS（販売時点管理システム）、web、モバイル、CRM などが含まれます。
 * [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)：
-* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)：
+* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)：
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=ja)（「開発者」オプション）：Adobe Experience Platform にあらかじめ組み込まれた人工知能（AI）および機械学習モデルを使用して、カスタマージャーニーの様々なポイントに影響を与えることができます。隠れたインサイトを把握することで、カスタマージャーニーを通じてより優れた予測を行ったり、推奨される次のステップを提案したり、面倒なプロセスを自動化したりできます。
 
 ## ビデオ
