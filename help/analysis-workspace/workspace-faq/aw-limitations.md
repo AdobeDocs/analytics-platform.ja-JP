@@ -4,15 +4,15 @@ title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Analysis Workspace の既知の制限
 
-以下に、Analysis Workspace とその関連コンポーネントに関する既知の制限を示します。
+次に、Analysis Workspace とその関連コンポーネントに関する既知の制限を示します。
 
 ## テーブル
 
@@ -31,13 +31,13 @@ ht-degree: 92%
 ## コンポーネント／フィルター
 
 * 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL 回数]、[!UICONTROL ユニーク訪問者]など）。
-* で作成されたアドホックフィルター [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md) は、公開されない限り、Workspace またはフィルターコンポーネントマネージャーの左側のレールに表示されません。 これは、フィルターを編集し、「**[!UICONTROL このセグメントを公開する]**」を選択することで実行できます。
+* [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、公開されない限り、ワークスペースの左側のパネルやフィルターコンポーネントマネージャーに表示されません。これは、フィルターを編集し、「**[!UICONTROL このセグメントを公開する]**」を選択することで実行できます。
 
 ## コンポーネント／計算指標
 
 * 計算指標は、一部のビジュアライゼーションでは使用できません。上記の「ビジュアライゼーション」を参照してください。
 * 計算指標自体に別々のアトリビューションモデルを含めることができるので、[!UICONTROL アトリビューションパネル]で計算指標を使用することはできません。
-* 計算指標が Workspace から作成される場合（[!UICONTROL コンポーネント／フィルター]から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。例：[!UICONTROL IP アドレス]。
+* 計算指標がワークスペースから作成される場合（[!UICONTROL コンポーネント／フィルター]から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。例：[!UICONTROL IP アドレス]。
 
 ## コンポーネント／日付範囲
 
