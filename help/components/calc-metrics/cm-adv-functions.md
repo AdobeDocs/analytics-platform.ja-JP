@@ -4,7 +4,7 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2942'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Approximate Count Distinct (dimension)
 
 ![](assets/approx-count-distinct.png)
 
-レポートにおける「概算顧客数」指標の使用方法を以下に示します。
+レポートにおける「概算顧客数」指標の使用方法を次に示します。
 
 ![](assets/approx-customers.png)
 
@@ -273,7 +273,7 @@ FLOOR(metric)
 |---|---|
 | *metric*  | 丸める指標です。 |
 
-## 以下の値を超える
+## 次よりも大きい
 
 入力された値よりも大きい数字を持つ項目を返します。
 
