@@ -1,13 +1,13 @@
 ---
 title: データビューの作成または編集
-description: データビューの作成や編集をおこなうために調整できるすべての設定。
+description: データビューの作成や編集を行うために調整できるすべての設定。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1224'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、CJA でのディメンションや指標の動作を調整できます。
 
-以下は、このトピックに関するビデオです。
+次に、このトピックに関するビデオを示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### コンテナ {#containers}
 
-データビューのコンテナの名前を指定します。コンテナ名は [フィルター](/help/components/filters/filters-overview.md#Filter-containers).
+データビューのコンテナの名前を指定します。コンテナ名は、[フィルター](/help/components/filters/filters-overview.md#Filter-containers)でよく使用されます。
 
 | 設定 | 説明 |
 | --- | --- |
