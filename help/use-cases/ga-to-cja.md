@@ -5,9 +5,9 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Experience Platform で「**[!UICONTROL ソース]**」を選択し、「**[!UIC
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、新しいデータセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)に事前マッピングします。
+選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、新しいデータセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
 ![](assets/schema-map.png)
 
@@ -141,7 +141,7 @@ Google Tag Manager アカウントにサインインした後、アドビに関�
 
 この例では、「アカウントの作成」トリガーが `pageUrl equals account-creation` の条件で定義されています。 このトリガーに情報を追加することで、ユーザーの認証に成功しアカウント作成ページが読み込まれたときに、データが Google Analytics と AEP の両方に確実に送信されます。
 
-また、[データ取り込みと Google タグマネージャー](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9)も参照してください。
+また、[データ取り込みと Google タグマネージャー](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=ja#module9)も参照してください。
 
 手順については、次のビデオをご覧ください。
 
@@ -153,6 +153,6 @@ Adobe Experience Platform が Google Analytics のライブデータの受信を
 
 ## 次の手順
 
-* Google Analytics データを含んだ接続に基づいて、[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews)を作成します。
+* Google Analytics データを含んだ接続に基づいて、[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#cja-dataviews)を作成します。
 
 * [ワークスペースで驚くべき分析](/help/use-cases/ga-to-cja-reporting.md)をいくつか行います。
