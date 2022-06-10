@@ -5,9 +5,9 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1048'
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 プロジェクト内にクイックフィルターを作成すると、 [フィルタービルダー](/help/components/filters/create-filters.md) 全体が複雑になるのを回避できます。クイックフィルター
 
-* 適用方法 [プロジェクトのみのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
+* [プロジェクトのみのフィルター](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=ja#project-only)として適用します。
 * 最大 3 つのルールを許可
 * ネストされたコンテナや順次ルールに対応しません。
 
-クイックフィルターと本格的なコンポーネントリストフィルターの機能の比較については、 [こちら](/help/components/filters/filters-overview.md) を参照してください。
+クイックフィルターと本格的なコンポーネントリストフィルターの機能の比較については、[こちら](/help/components/filters/filters-overview.md)を参照してください。
 
-次に、クイックフィルターに関するビデオを示します（代わりに、「クイックセグメント」という用語が使用されます）。 ただし、機能は同じです。
+次に、クイックフィルターに関するビデオを示します（ここでは、「クイックセグメント」という用語を使用していることに注意してください）。ただし、機能は同じです。
 
 >[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## 前提条件 {#prereqs}
 
-クイックフィルターは誰でも作成できます。 ただし、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) をクリックして、クイックフィルターを保存したり、フィルタービルダーで開いたりできます。
+クイックフィルターは誰でも作成できます。ただし、クイックフィルターを保存したり、フィルタービルダーで開いたりするには、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=ja#analytics-tools) のフィルターの作成権限が必要です。
 
 ## クイックフィルターの作成 {#create}
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 | --- | --- |
 | [!UICONTROL 名前] | フィルターのデフォルト名は、フィルター内のルール名の組み合わせです。フィルターの名前を、わかりやすい名前に変更できます。 |
 | [!UICONTROL 含む／除く] | フィルター定義にコンポーネントを含めるか除外することはできますが、両方を使用することはできません。 |
-| [!UICONTROL ヒット／訪問／訪問者コンテナ] | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問およびページビューをまたいで訪問者に固有の、包括的なデータが含まれます。[!UICONTROL 訪問] コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、 [!UICONTROL ヒット] コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。デフォルトのコンテナは [!UICONTROL ヒット] です。 |
-| [!UICONTROL コンポーネント] (Dimension/指標/日付範囲 ) | コンポーネント（ディメンション、指標、日付範囲、ディメンション値）を追加して、最大 3 つのルールを定義できます。適切なコンポーネントを見つける方法は 3 つあります。<ul><li>入力を開始すると、 [!UICONTROL クイックフィルター] ビルダーが適切なコンポーネントを自動的に見つけます。</li><li>ドロップダウンリストを使用して、コンポーネントを検索します。</li><li>データセットを左側のパネルからドラッグ＆ドロップします。</li></ul> |
-| [!UICONTROL 演算子] | 標準演算子と [!UICONTROL 個別カウント] 演算子を検索するには、ドロップダウンメニューを使用します。詳しくは、 [フィルター演算子](operators.md)を参照してください。 |
+| [!UICONTROL ヒット／訪問／訪問者]コンテナ | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=ja#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問およびページビューをまたいで訪問者に固有の、包括的なデータが含まれます。[!UICONTROL 訪問] コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、 [!UICONTROL ヒット] コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。デフォルトのコンテナは [!UICONTROL ヒット] です。 |
+| [!UICONTROL コンポーネント]（ディメンション／指標／日付範囲） | コンポーネント（ディメンション、指標、日付範囲、ディメンション値）を追加して、最大 3 つのルールを定義できます。適切なコンポーネントを見つける方法は 3 つあります。<ul><li>入力を開始すると、 [!UICONTROL クイックフィルター] ビルダーが適切なコンポーネントを自動的に見つけます。</li><li>ドロップダウンリストを使用して、コンポーネントを検索します。</li><li>データセットを左側のパネルからドラッグ＆ドロップします。</li></ul> |
+| [!UICONTROL 演算子] | 標準演算子と[!UICONTROL 個別カウント]演算子を検索するには、ドロップダウンメニューを使用します。詳しくは、 [フィルター演算子](operators.md)を参照してください。 |
 | プラス（+）記号 | 別のルールの追加 |
 | AND／OR 修飾子 | 「AND」修飾子または「OR」修飾子をルールに追加できますが、「AND」と「OR」を 1 つのフィルター定義で混在させることはできません。 |
 | [!UICONTROL 適用] | このフィルターをパネルに適用します。フィルターにデータが含まれていない場合は、続行するかどうかを確認するメッセージが表示されます。 |
@@ -105,17 +105,17 @@ ht-degree: 0%
 
 ## プロジェクトのみのフィルターとは {#project-only}
 
-プロジェクトのみのフィルターは、作成元の現在のプロジェクトにのみ適用されるフィルターです。 他のプロジェクトでは使用できず、他のユーザーと共有することもできません。 これは、左側のパネルでフィルターを作成して保存する必要なく、データをすばやく調査するためのものです。 プロジェクトのみのフィルターは、クイックフィルターまたは [アドホックフィルター](/help/components/filters/ad-hoc-filters.md).
+プロジェクトのみのフィルターは、作成した現在のプロジェクトにのみ適用されるフィルターです。他のプロジェクトでは使用できず、他のユーザーと共有することもできません。これらは、左側のパネルでフィルターを作成して保存することなく、データをすばやく探索することを目的としています。プロジェクトのみのフィルターは、パネルドロップゾーンでクイックフィルターか[アドホックフィルター](/help/components/filters/ad-hoc-filters.md)を使用して作成できます。
 
-プロジェクトのみのフィルターを [!UICONTROL フィルタービルダー]に設定すると、プロジェクトのみの通知が表示されます。 [ このフィルタを使用可能にする ] をオフにした場合は、 をクリックし、 **[!UICONTROL 適用]**&#x200B;の場合、セグメントはプロジェクトのみのフィルターのままです。
+[!UICONTROL フィルタービルダー]でプロジェクトのみのフィルターを開くと、プロジェクトのみの通知が表示されます。「このフィルターを使用可能にする」をチェックせずに「**[!UICONTROL 適用]**」をクリックすると、セグメントは、プロジェクトのみのフィルターのままになります。
 
 >[!NOTE]
 >
->フィルタービルダーからクイックフィルターを適用した場合、 [!UICONTROL クイックフィルタービルダー].
+>フィルタービルダーからクイックフィルターを適用すると、[!UICONTROL クイックフィルタービルダー]で開くことができなくなります。
 
 ![プロジェクトのみ未チェック](assets/project-only-unchecked.png)
 
-「このフィルターを使用可能にする」を選択した場合 をクリックし、 **[!UICONTROL 保存]**&#x200B;の場合、左側のパネルのコンポーネントリストでフィルターが使用可能になり、他のプロジェクトで使用できます。 また、フィルターマネージャから他のユーザーと共有することもできます。
+「このフィルターを使用可能にする」をチェックして「**[!UICONTROL 保存]**」をクリックすると、フィルターは、左側のパネルのコンポーネントリストで使用できるようになり、他のプロジェクトで使用できます。フィルターマネージャーから他のユーザーと共有することもできます。
 
 ![プロジェクトのみチェック済み](assets/project-only-checked.png)
 
