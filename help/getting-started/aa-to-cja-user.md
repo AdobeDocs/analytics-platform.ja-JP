@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: c33176b695d5ea3417ff17fe3140589d803472ae
+source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ CJA のいくつかの機能は、業界標準に合わせて名前が変更さ�
 
 * データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。CJA 内でのワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
 * [Adobe Analytics ダッシュボード](/help/mobile-app/home.md)も、同じバージョンを使用可能で、CJA と従来の Analytics で同様に機能します。
-* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、iOS、および Excel（web バージョン）で動作する新しいインターフェイスが用意されています（以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
+* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、MacOS、および Web バージョンの Excel で動作する新しいインターフェイスが用意されています。 （以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
 
 ## レポートの変更点
 

@@ -4,10 +4,10 @@ description: Customer Journey Analytics でプラットフォームデータセ�
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
+source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 88%
+source-wordcount: '2474'
+ht-degree: 81%
 
 ---
 
@@ -107,9 +107,21 @@ ht-degree: 88%
 
 {style=&quot;table-layout:auto&quot;}
 
+## 数値フィールドをルックアップキーおよびルックアップ値として使用 {#numeric}
+
+この機能は、製品 SKU 上の COGS や利益などの数値フィールドによって文字列値を分類する場合に役立ちます。 数値をキーまたは値としてルックアップの一部にすることができます。 ルックアップスキーマでは、製品名、売上原価、キャンペーンマーケティングコスト、利益幅など、数値が結び付けられている場合があります。 Adobe Experience Platformのルックアップスキーマの例を次に示します。
+
+![参照スキーマ](assets/schema.png)
+
+現在は、これらの値を指標またはディメンションとして CJA レポートに取り込むことができます。 接続を設定し、ルックアップデータセットを取り込むと、データセットを編集して [!UICONTROL キー] および [!UICONTROL 一致するキー]:
+
+![Edit-dataset](assets/lookup-dataset.png)
+
+この接続に基づいてデータビューを設定する場合は、数値をコンポーネントとしてデータビューに追加します。 このデータビューに基づく任意のプロジェクトで、これらの数値をレポートできます。
+
 ## ユーザー ID としての ID マップの使用 {#id-map}
 
-Customer Journey Analytics で、ユーザー ID に ID マップを使用する機能がサポートされるようになりました。ID マップは、キー>値のペアをアップロードできるマップデータ構造です。キーは ID 名前空間で、値は ID 値を保持する構造体です。アップロードされた各行／イベントに ID マップが存在し、それに応じて各行に対して値が設定されます。
+Customer Journey Analyticsは、ユーザー ID に ID マップを使用する機能をサポートしています。 ID マップは、キー > 値のペアをアップロードできるマップデータ構造です。 キーは ID 名前空間で、値は ID 値を保持する構造体です。アップロードされた各行／イベントに ID マップが存在し、それに応じて各行に対して値が設定されます。
 
 ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) クラスに基づくスキーマを使用するデータセットで使用できます。CJA 接続に含めるデータセットを選択する場合、次のオプションを使用して、フィールドをプライマリ ID または ID マップとして選択できます。
 
