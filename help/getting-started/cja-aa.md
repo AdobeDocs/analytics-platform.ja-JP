@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 93%
+source-wordcount: '1440'
+ht-degree: 91%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 93%
 | --- | --- |
 | 異常値検出 | フルサポート |
 | Attribution IQ | フルサポート |
+| オーディエンスへの投稿 | フルサポート。AA でセグメントの公開 (Workspace からExperience Cloudへのセグメントの送信 ) と呼ばれました。 [オーディエンスの公開](/help/components/audiences/audiences-overview.md) は、experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | 計算指標 | フルサポート。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
 | 分類ルールビルダー | フルサポート。CJA では、[部分文字列](/help/data-views/component-settings/substring.md)と呼ばれます。ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
@@ -97,7 +98,6 @@ ht-degree: 93%
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信） | サポートが予定されています。CJA では「Audience パブリッシング」と呼ばれます。 |
 | 新規セッションレポートとリピートセッションレポート | 予定されているサポートには、いくつかの注意事項があります。 |
 
 {style=&quot;table-layout:auto&quot;}
