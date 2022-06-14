@@ -1,19 +1,19 @@
 ---
 title: 異なるスキーマでレポートスイートを組み合わせる
 description: Data Prep を使用して、様々なスキーマを持つレポートスイートを組み合わせる方法を説明します
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 3%
+source-wordcount: '1308'
+ht-degree: 4%
 
 ---
 
 
 # 異なるスキーマとレポートスイートを組み合わせる
 
-この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe AnalyticsからAdobe Experience Platformにレポートスイートデータを取り込み、Real-time Customer Data PlatformやCustomer Journey Analytics(CJA) などの AEP アプリケーションで使用する方法を提供します。 AEP に取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローは AEP データレイク内のデータセットとして配置されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
+この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe AnalyticsからAdobe Experience Platform(AEP) に、Real-time Customer Data PlatformやCustomer Journey Analytics(CJA) などの AEP アプリケーションで使用するために、レポートスイートデータを取り込みます。 AEP に取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローは AEP データレイク内のデータセットとして配置されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
 
-CJA のお客様が使用する [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、AEP データレイクのデータセットを CJA のAnalysis Workspaceに統合します。 ただし、1 つの接続内でレポートスイートを組み合わせる場合は、AEP の [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能を使用して、prop や eVar などのAdobe Analytics変数が CJA で一貫した意味を持つようにします。
+CJA のお客様が使用する [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、AEP データレイクのデータセットを CJA のAnalysis Workspaceに統合します。 ただし、1 つの接続内でレポートスイートを組み合わせる場合は、AEP の [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能。 目的は、prop や eVar などのAdobe Analytics変数が CJA で一貫した意味を持つようにすることです。
 
 ## レポートスイート間のスキーマの違いに問題がある
 
@@ -21,8 +21,8 @@ CJA で使用するために 2 つの異なるレポートスイートのデー�
 
 | レポートスイート A | レポートスイート B |
 | --- | --- |
-| eVar1 => 検索語 | eVar1 => ビジネスユニット |
-| eVar2 => 顧客カテゴリ | eVar2 => 検索語 |
+| eVar1 =検索語 | eVar1 =ビジネスユニット |
+| eVar2 =顧客カテゴリ | eVar2 =検索語 |
 
 簡潔にするために、両方のレポートスイートで定義されている eVar はこれらのみであるとします。
 
@@ -30,8 +30,8 @@ CJA で使用するために 2 つの異なるレポートスイートのデー�
 
 - 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート A** をとして AEP データレイクに追加します。 **データセット A**.
 - 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート B** をとして AEP データレイクに追加します。 **データセット B**.
-- という名前の CJA 接続を作成します。 **すべてのレポートスイート** データセット A とデータセット B を組み合わせた
-- と呼ばれる CJA データビューを作成します。 **グローバル表示** すべてのレポートスイート接続に基づいている
+- の作成 [CJA 接続](/help/connections/create-connection.md) 呼び出し **すべてのレポートスイート** データセット A とデータセット B を組み合わせた
+- の作成 [CJA データビュー](/help/data-views/create-dataview.md) 呼び出し **グローバル表示** すべてのレポートスイート接続に基づいている
 
 データセット A とデータセット B のスキーマの違いを解決するために Data Prep を使用しない場合、グローバルビューのデータビューの eVar には次の値が混在します。
 
@@ -48,9 +48,9 @@ CJA で使用するために 2 つの異なるレポートスイートのデー�
 
 ## AEP Data Prep を使用して、レポートスイート間のスキーマの違いを解決する
 
-AEP の Data Prep 機能は、Analytics Source Connector と統合されており、上記のシナリオで説明したスキーマの違いの解決に使用できます。 その結果、CJA データビューで一貫した意味の eVar が得られます。 （以下で使用する命名規則は、ニーズに合わせてカスタマイズできます）。
+Experience Platformデータ準備機能は、Analytics ソースコネクタと統合されており、上記のシナリオで説明したスキーマの違いの解決に使用できます。 その結果、CJA データビューで一貫した意味の eVar が得られます。 （以下で使用する命名規則は、ニーズに合わせてカスタマイズできます）。
 
-1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、AEP でカスタムフィールドグループを作成します（これはと呼びます）。 **統合フィールド** （この例では）、次のフィールドが含まれています。
+1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、 [カスタムフィールドグループの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) AEP 内（と呼びます） **統合フィールド** （この例では）、次のフィールドが含まれています。
 
    | 「統合フィールド」カスタムフィールドグループ  |
    | --- |
@@ -58,7 +58,7 @@ AEP の Data Prep 機能は、Analytics Source Connector と統合されてお�
    | ビジネスユニット |
    | 顧客カテゴリ |
 
-1. AEP で新しいスキーマを作成します（と呼びます）。 **統合スキーマ** （この例では）。 スキーマに次のフィールドグループを追加します。
+1. [新しいスキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.htm?lang=ja) AEP 内（と呼びます） **統合スキーマ** （この例では）。 スキーマに次のフィールドグループを追加します。
 
    | 「統合スキーマ」のフィールドグループ |
    | --- |
@@ -106,9 +106,9 @@ AEP の Data Prep 機能は、Analytics Source Connector と統合されてお�
 
    ソースレポートスイートのeVar1 とeVar2 を 3 つの新しいフィールドにマッピングしました。 Data Prep マッピングを使用するもう 1 つの利点は、宛先フィールドが、意味のあるeVar名 (eVar1、eVar2) ではなく、意味的に意味のある名前（検索語、ビジネスユニット、顧客カテゴリ）に基づいていることです。
 
->[!NOTE]
->
->統合フィールドのカスタムフィールドグループと関連するフィールドマッピングは、いつでも既存の Analytics Source Connector のデータフローおよびデータセットに追加できます。 ただし、これは将来のデータにのみ影響します。
+   >[!NOTE]
+   >
+   >統合フィールドのカスタムフィールドグループと関連するフィールドマッピングは、いつでも既存の Analytics Source Connector のデータフローおよびデータセットに追加できます。 ただし、これは将来のデータにのみ影響します。
 
 ## 単なるレポートスイート以外
 
