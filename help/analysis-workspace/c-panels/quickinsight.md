@@ -3,22 +3,14 @@ description: クイックインサイトは、新しい Workspace ユーザー�
 title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1098'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '1049'
 ht-degree: 100%
 
 ---
 
 # クイックインサイトパネル
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
-
->[!IMPORTANT]
->
->**[!UICONTROL クイックインサイト]** パネルは現在、限定的なテスト中です。[詳細情報](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ja)
 
 [!UICONTROL クイックインサイト]は、[!UICONTROL Analysis Workspace] のアナリスト以外のユーザーと新規ユーザーに対して、ビジネスの質問にすばやく簡単に答える方法を学ぶためのガイダンスを提供します。また、テーブルを自分で作ることなく、簡単な質問にすばやく答えたいと考える上級ユーザーにとっても優れたツールです。
 

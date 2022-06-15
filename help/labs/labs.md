@@ -3,18 +3,14 @@ title: ラボユーザーガイド
 description: Customer Journey Analytics用のプロトタイププロジェクトのプレビュー
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 78%
+source-wordcount: '453'
+ht-degree: 79%
 
 ---
 
 # [!UICONTROL ラボ]ユーザーガイド
-
->[!NOTE]
->
->この機能は、現在、 [限られたテスト](/help/release-notes/releases.md).
 
 [!UICONTROL ラボ]を使用すると、初期段階のアイデアのプロトタイピングを高速化できます。お客様の注力により、透過的に開発を促進するツールとプロセスを組み合わせたものです。新しいテクノロジーとの連携、価値ある洞察の発見、将来の機能の開発と優先事項への影響を可能にします。ラボを使用すると、Customer Journey Analytics(CJA) の革新的な機能に早期にアクセスし、自社のビジネス事例やデータの中で将来の機能を評価できます。
 

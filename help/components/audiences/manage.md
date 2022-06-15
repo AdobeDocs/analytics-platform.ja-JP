@@ -2,18 +2,14 @@
 title: Customer Journey Analytics
 description: Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 7%
+source-wordcount: '276'
+ht-degree: 8%
 
 ---
 
 # Customer Journey Analytics
-
->[!NOTE]
->
->この機能は、現在、 [限られたテスト](/help/release-notes/releases.md).
 
 以前に作成したオーディエンスを管理することで、
 
@@ -25,16 +21,19 @@ ht-degree: 7%
 
 ## 管理 UI
 
+![](assets/manage.png)
+
 | UI 設定 | 定義 |
 | --- | --- |
-| フィルターを表示/非表示 | 左側のパネルで以下のフィルターの表示/非表示を切り替えることができます。 <ul><li>データビュー</li><li>所有者</li><li>更新頻度</li><li>タグ</li></ul> |
+| フィルターを表示/非表示 | 左側のパネルで以下のフィルターの表示/非表示を切り替えることができます。 <ul><li>[!UICONTROL データビュー]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 更新頻度]</li><li>[!UICONTROL タグ]</li></ul> |
 | [!UICONTROL タイトルと説明] | オーディエンスが作成されたときに付与されるタイトルと説明。 |
 | [!UICONTROL データビュー] | このオーディエンスが作成されたデータビュー。 |
 | [!UICONTROL オーディエンスサイズ] | このオーディエンスのユーザーの合計数。 |
 | [!UICONTROL 所有者] | オーディエンスの所有者 — オーディエンスを作成した人。 |
 | [!UICONTROL 更新頻度] | オーディエンスが作成された際に設定された更新間隔。 |
 | [!UICONTROL タグ] | このオーディエンスに適用されるタグ。 |
-| [!UICONTROL  最終更新日] | オーディエンスが最後に更新された日時。 |
-| [!UICONTROL 最終変更日時] | オーディエンスが最後に編集または変更された日時。 |
+| [!UICONTROL 公開ステータス] | 表示可能 [!UICONTROL 準備完了], [!UICONTROL 処理中]または [!UICONTROL エラー]. |
+| [!UICONTROL  前回の更新] | オーディエンスが最後に更新された日時。 |
+| [!UICONTROL 最終変更日] | オーディエンスが最後に編集または変更された日時。 |
 
 {style=&quot;table-layout:auto&quot;}

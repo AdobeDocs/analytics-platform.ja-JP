@@ -4,9 +4,9 @@ title: プロジェクトの保存
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
@@ -55,10 +55,6 @@ ht-degree: 100%
 一度も保存されていない&#x200B;**新規**&#x200B;プロジェクトの場合、未保存の変更は復元できません。
 
 ## 以前のバージョンを開く {#previous-version}
-
->[!NOTE]
->
->以前のバージョンのプロジェクトは、現在、限定的なリリースになっています。
 
 以前のバージョンのプロジェクトを開くには、以下の手順に従います。
 

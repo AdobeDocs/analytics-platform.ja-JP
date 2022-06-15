@@ -4,18 +4,14 @@ title: フロービジュアライゼーションの設定
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 4ffe667793d5ba75d3fadcf713244afac0fe8183
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 23%
+source-wordcount: '1378'
+ht-degree: 24%
 
 ---
 
 # フロービジュアライゼーションの設定
-
->[!NOTE]
->
->この新しいバージョンの [!UICONTROL フロー] ビジュアライゼーションは現在、限られたテストになっています。
 
 更新されたフロービジュアライゼーションを使用すると、Web サイトやアプリ上の特定のコンバージョンイベントに由来する、またはそれに至るジャーニーを把握できます。 ディメンション（およびディメンション項目）または指標を通るパスをトレースします。 フローでは、目的のパスの開始または終了を設定したり、ディメンションまたはディメンション項目を流れるすべてのパスを分析したりできます。
 

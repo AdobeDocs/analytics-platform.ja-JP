@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,11 @@ Workspace で作成された注釈をモバイルスコアカードに表示で�
 
 1. 注釈を作成し、すべてのプロジェクトで共有されていることを確認します。 Workspace で注釈を作成するには、 [注釈の作成](create-annotations.md).
 
-1. 選択 **注釈を表示** 「モバイルスコアカード」に注釈を表示するには
+1. 選択 **[!UICONTROL 注釈を表示]** 「モバイルスコアカード」に注釈を表示するには
 
    ![](assets/show-annotations.png)
 
-1. 注釈の表示が選択されていることを確認するには、に移動します。 **プロジェクト** > **プロジェクト情報と設定**.
+1. 注釈の表示が選択されていることを確認するには、に移動します。 **[!UICONTROL プロジェクト]** > **[!UICONTROL プロジェクト情報と設定]**.
 
    ![](assets/project-info-settings.png)
 
@@ -49,6 +49,6 @@ Workspace で作成された注釈をモバイルスコアカードに表示で�
 
 | 日付 | 外観 |
 | --- | --- |
-| **1 日** | ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **日付範囲** | ![](assets/date-range.png) |
-| **重複する注釈** | ![](assets/overlapping-annotations.png)<br></br>Analytics ダッシュボードアプリで注釈の詳細を表示するには、注釈アイコンをタップします。 <br></br>グラフで注釈を表示している場合は、左右にスワイプして、グラフに存在するすべての注釈に移動できます。 テーブルで注釈を表示している場合は、左右にスワイプして、テーブル内のその行項目に関連付けられているすべての注釈に移動します。 <br></br>![](assets/swipe-multiple-annotations.png) <br></br>時間に基づくグラフの場合 *x 軸*&#x200B;ドーナツグラフや横棒グラフなど、グラフに適用される注釈は、右下隅にあるアイコンをタップすると表示できます。<br></br> ![](assets/charts-without-timebase.png) |
+| **[!UICONTROL 1 日]y** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **[!UICONTROL 日付範囲]** | ![](assets/date-range.png) |
+| **[!UICONTROL 重複する注釈]** | ![](assets/overlapping-annotations.png)<br></br>Analytics ダッシュボードアプリで注釈の詳細を表示するには、注釈アイコンをタップします。 <br></br>グラフで注釈を表示している場合は、左右にスワイプして、グラフに存在するすべての注釈に移動できます。 テーブルで注釈を表示している場合は、左右にスワイプして、テーブル内のその行項目に関連付けられているすべての注釈に移動します。 <br></br>![](assets/swipe-multiple-annotations.png) <br></br>時間に基づくグラフの場合 *x 軸*&#x200B;ドーナツグラフや横棒グラフなど、グラフに適用される注釈は、右下隅にあるアイコンをタップすると表示できます。<br></br> ![](assets/charts-without-timebase.png) |
