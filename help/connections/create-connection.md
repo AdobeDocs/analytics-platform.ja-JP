@@ -4,9 +4,9 @@ description: Customer Journey Analytics でプラットフォームデータセ�
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 81%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 81%
 
 ## 数値フィールドをルックアップキーおよびルックアップ値として使用 {#numeric}
 
-この機能は、製品 SKU 上の COGS や利益などの数値フィールドによって文字列値を分類する場合に役立ちます。 数値をキーまたは値としてルックアップの一部にすることができます。 ルックアップスキーマでは、製品名、売上原価、キャンペーンマーケティングコスト、利益幅など、数値が結び付けられている場合があります。 Adobe Experience Platformのルックアップスキーマの例を次に示します。
+この機能は、文字列ベースのキーフィールドにコストや利益幅などの数値フィールドを追加する場合に役立ちます。 数値をキーまたは値としてルックアップの一部にすることができます。 ルックアップスキーマでは、製品名、売上原価、キャンペーンマーケティングコスト、利益幅など、数値が結び付けられている場合があります。 Adobe Experience Platformのルックアップスキーマの例を次に示します。
 
 ![参照スキーマ](assets/schema.png)
 
