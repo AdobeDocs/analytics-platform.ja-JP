@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 289ab8bd5492017709239174e80ac5a4e5dd9033
+source-git-commit: 11135c695610e8cb477419ed6794483bd201a0ee
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -24,8 +24,8 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
      <ul>
-       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/attribution-ai.html?lang=en"> アトリビューション AI と CJA の統合 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/customer-ai.html?lang=en">顧客 AI と CJA の統合</a> </li>
+       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> 異なるスキーマとレポートスイートを組み合わせる </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en"> CJA オーディエンスの公開 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja"> Adobe Analytics から Customer Journey Analytics への進化 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=ja"> Adobe Analytics ユーザー向け CJA ユーザーガイド </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>
