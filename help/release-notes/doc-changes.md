@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d6b557e90c6f05efed77a77cd5d189241473c7b5
+source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 86%
+source-wordcount: '819'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年6月 | に関する新しい記事を追加しました。 [様々なスキーマでのレポートスイートの組み合わせ](/help/use-cases/combine-report-suites.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [モバイルスコアカードでの注釈の共有](/help/components/annotations/mobile-annotations.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [CJA の Analytics ラボ](/help/labs/labs.md) |
 | 2022年6月 | に関する新しい節 [ルックアップキーおよびルックアップ値としての数値フィールドのサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
