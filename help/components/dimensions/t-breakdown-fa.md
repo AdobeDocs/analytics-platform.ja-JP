@@ -5,18 +5,14 @@ title: ディメンションの分類
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 98%
 
 ---
 
 # Workspace のディメンションの分類
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace のディメンションおよびディメンション項目を分類します。
 
@@ -31,7 +27,7 @@ Analysis Workspace のディメンションおよびディメンション項目�
 
    >[!NOTE]
    >
-   >テーブルに表示する分類の数は、200 までに制限されています。この制限は、分類をエクスポートする場合は増加します。
+   >テーブルに表示する分類の数は、200 までに制限されています。この制限は、分類を書き出す場合に増加します。
 
 **ビデオ：Analysis Workspace のディメンション**
 

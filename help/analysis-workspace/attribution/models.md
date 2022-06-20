@@ -3,18 +3,14 @@ title: アトリビューションモデルとルックバックウィンドウ
 description: 様々なタイプのアトリビューションによってディメンション項目間でクレジットがどのように分割されますか。
 Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
-workflow-type: ht
-source-wordcount: '1516'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '1483'
 ht-degree: 100%
 
 ---
 
 # アトリビューションモデルとルックバックウィンドウ
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 Customer Journey Analytics でのアトリビューションの概念には、次の 2 つのコンポーネントが必要です。
 

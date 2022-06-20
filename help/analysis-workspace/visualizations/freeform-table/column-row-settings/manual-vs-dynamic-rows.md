@@ -3,18 +3,14 @@ title: フリーフォームテーブルの動的ディメンション項目と�
 description: テーブルの動的および静的ディメンション項目の操作方法。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '515'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '482'
 ht-degree: 100%
 
 ---
 
 # フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 フリーフォームテーブルでは、行と列に様々なコンポーネント値を含めることができます。これらの値は、作成する分析に応じて、動的（時間に応じて変更）または静的（時間に応じて変更しない）にできます。
 

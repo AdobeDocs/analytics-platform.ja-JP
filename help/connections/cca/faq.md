@@ -4,10 +4,10 @@ description: Cross-Channel Analytics に関するよくある質問（FAQ）
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 98%
+source-wordcount: '967'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +64,7 @@ CJA の特定の指標は、従来の Analytics の指標に似ていますが�
 | **セッション**：CJA データビューで指定されたセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション**：CJA データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)を参照してください。 | **訪問数**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=ja)で指定されたセッション設定に基づいて定義されます。 |
 | **イベント数** = CJA でのステッチデータの行数。一般的には、従来の Adobe Analytics の&#x200B;**発生回数**&#x200B;に近い値になります。ただし、空白の `Persistent ID` がある行については、上記の FAQ に注意してください。 | **イベント数** = CJA 未ステッチデータの行数。一般的には、従来の Adobe Analytics の&#x200B;**発生回数**&#x200B;に近い値になります。 ただし、AEP データレイクの未ステッチデータに空白の `Person ID` が含まれているイベントがある場合、これらのイベントは CJA でドロップされます（含まれません）。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)を参照してください。 |
 
-その他の指標は、CJA と従来の Adobe Analytics で似ている場合があります。例えば、Adobe Analytics の[カスタムイベント](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=ja)（イベント 1 ～ 100）の総数は、通常、従来の Adobe Analytics と CJA （ステッチか未ステッチかに関わらず）で非常に近い値になります。ただし、CJA と従来の Adobe Analytics の間でイベントの重複排除など、[機能の違い](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=ja)があるため、これが常に当てはまるとは限りません。
+その他の指標は、CJA と従来の Adobe Analytics で似ている場合があります。例えば、Adobe Analyticsの合計数 [カスタムイベント](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=ja) 通常、1-100 は、従来のAdobe Analyticsと CJA（結び付けるか未関連付けか）では非常に近いものになります。 ただし、 [能力の違い](/help/getting-started/aa-vs-cja/cja-aa.md)) に含まれます。例えば、CJA と従来のAdobe Analyticsの間のイベント重複除外です。
 
 ## クロスチャネル分析で「ID マップ」フィールドを使用できますか？
 

@@ -3,18 +3,14 @@ description: ビジュアライゼーションのカラーパレットを変更�
 title: ビジュアライゼーションカラーパレット
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: ht
-source-wordcount: '244'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '211'
 ht-degree: 100%
 
 ---
 
 # ビジュアライゼーションカラーパレット
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 異なるカラーパレットを選択するか、お勤めの会社のブランドカラーと一致する独自のパレットを指定することにより、Workspace で使用するビジュアライゼーションカラーパレットを変更できます。この機能は、Workspace のほとんどのビジュアライゼーションに影響しますが、変更概要、フリーフォームテーブルの条件付き書式およびマップビジュアライゼーションには影響 **しません**。
 

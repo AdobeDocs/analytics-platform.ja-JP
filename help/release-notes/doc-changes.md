@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 85%
+source-wordcount: '842'
+ht-degree: 82%
 
 ---
 
@@ -17,6 +17,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年6月 | に関する新しい記事を追加しました。 [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
+| 2022年6月 | に関する新しい記事を追加しました。 [Adobe Analyticsと CJA のレポート機能をまたいだデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [様々なスキーマでのレポートスイートの組み合わせ](/help/use-cases/combine-report-suites.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [モバイルスコアカードでの注釈の共有](/help/components/annotations/mobile-annotations.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [CJA の Analytics ラボ](/help/labs/labs.md) |
@@ -63,7 +65,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2020年11月13日 | [Cross-Channel Analytics](/help/connections/cca/overview.md) に関する新しいトピックを追加しました。データセットの人物 ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
 | 2020年11月13日 | [コールセンターと web データの読み込み](/help/use-cases/call-center.md) に関する新しいユースケースを追加しました。 |
 | 2020年11月10日 | [FAQ](/help/getting-started/cja-faq.md) に対するデータコンポーネントの削除の影響に関する節を追加しました。 |
-| 2020年11月2日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/cja-aa.md)」ページを更新しました。 |
+| 2020年11月2日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)」ページを更新しました。 |
 | 2020年11月 | 接続の [バックフィル制限の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) に関する内容を追加しました。 |
 | 2020年10月7日 | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
 | 2020年9月15日 | [データの取り込み](/help/use-cases/data-ingestion.md) に関するトピックを追加しました。 |
@@ -72,7 +74,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2020年7月 | [人物 ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) に関する情報を追加しました。 |
 | 2020年7月 | [オブジェクト配列](/help/use-cases/object-arrays.md) または「データ階層」に関する新しいトピックを追加しました。 |
 | 2020年4月14日 | 「[接続の作成](/help/connections/create-connection.md)」トピックの最新 UI を更新しました。 |
-| 2020年2月27日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/cja-aa.md)」ページを更新しました。 |
+| 2020年2月27日 | の更新 [Customer Journey Analytics機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | 2019年12月 | CJA ドキュメントの最初のドラフト |
 
 {style=&quot;table-layout:auto&quot;}

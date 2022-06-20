@@ -4,8 +4,8 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Customer Journey Analytics では、使いやすいクロスチャネル機能�
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
 * **クロスレポートスイートデータ**：Platform で、複数のデータセットから既存の実装を組み合わせることができます。
 
-Customer Journey Analytics の最初のリリースには、Analysis Workspace に含まれる多くの機能が含まれています。完全なリストについては、[Customer Journey Analytics 機能のサポート](cja-aa.md)を参照してください。
+Customer Journey Analytics の最初のリリースには、Analysis Workspace に含まれる多くの機能が含まれています。完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
 ## CJA とクロスデバイス分析の比較
 
@@ -104,7 +104,7 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 * [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：標準 SQL を使用して、Adobe Experience Platform からデータ（アドビのソリューションデータ、お客様のファーストパーティデータ、その他の Platform データなど）を取得します。あらゆるデータセットを結合し、クエリ結果を新しいデータセットとして取り込んでレポートや Data Science Workspace で使用したり、プロファイルサービスに取り込んだりできる、サーバーレスのツールです。クエリサービスを使用してデータ分析のエコシステムを構築し、様々なインタラクションチャネルをまたいだ消費者の全体像を把握できます。これらのチャネルには、POS（販売時点管理システム）、web、モバイル、CRM などが含まれます。
 * [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)：
-* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)：
+* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)：
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=ja)（「開発者」オプション）：Adobe Experience Platform にあらかじめ組み込まれた人工知能（AI）および機械学習モデルを使用して、カスタマージャーニーの様々なポイントに影響を与えることができます。隠れたインサイトを把握することで、カスタマージャーニーを通じてより優れた予測を行ったり、推奨される次のステップを提案したり、面倒なプロセスを自動化したりできます。
 
 ## ビデオ

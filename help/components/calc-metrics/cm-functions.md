@@ -3,18 +3,14 @@ title: リファレンス - 基本的な関数
 description: 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1077'
-ht-degree: 100%
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '1044'
+ht-degree: 99%
 
 ---
 
 # リファレンス - 基本的な関数
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 
@@ -210,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-**quart* = 0 の場合、QUARTILE は最小値を返します。*quart* = 1 の場合、QUARTILE は第 1 四分位数（25 番目のパーセンタイル）を返します。*quart* = 2 の場合、QUARTILE は第 1 四分位数（50 番目のパーセンタイル）を返します。*quart* = 3 の場合、QUARTILE は第 1 四分位数（75 番目のパーセンタイル）を返します。*quart* = 4 の場合、QUARTILE は最大値を返します。
+&#42;If *quart* = 0 の場合、QUARTILE は最小値を返します。 *quart* = 1 の場合、QUARTILE は第 1 四分位数（25 番目のパーセンタイル）を返します。*quart* = 2 の場合、QUARTILE は第 1 四分位数（50 番目のパーセンタイル）を返します。*quart* = 3 の場合、QUARTILE は第 1 四分位数（75 番目のパーセンタイル）を返します。*quart* = 4 の場合、QUARTILE は最大値を返します。
 
 ## ラウンド数
 

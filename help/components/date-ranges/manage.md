@@ -3,18 +3,14 @@ title: 日付範囲を管理
 description: Analysis Workspace で日付範囲を共有、名前変更または削除します。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '416'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---
 
 # 日付範囲を管理
-
->[!NOTE]
->
->Customer Journey Analytics 内の Analysis Workspace に関するドキュメントを表示しています。この機能セットは、[従来の Adobe Analytics の Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) とは少し異なります。[詳細情報...](/help/getting-started/cja-aa.md)
 
 日付範囲マネージャーを使用して、日付範囲の共有、名前の変更または削除を行います。 日付マネージャヘのアクセス方法：
 
