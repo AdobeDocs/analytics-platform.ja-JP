@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 243dc9bfcb7dde08e58fa4f8a11c8ec8c1e49de1
+source-git-commit: a92a6e5825ae01fa2eac30d778293681eab9dd3e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 96%
+source-wordcount: '666'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,10 @@ ht-degree: 96%
    + [よくある質問](getting-started/cja-faq.md)
    + [Adobe Analytics から Customer Journey Analytics への進化](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](getting-started/aa-to-cja-user.md)
-   + [Customer Journey Analytics の機能のサポート](getting-started/cja-aa.md)
+   + Adobe AnalyticsとCustomer Journey Analyticsの比較 {#compare-aa-cja}
+      + [Customer Journey Analytics の機能のサポート](getting-started/aa-vs-cja/cja-aa.md)
+      + [Adobe Analyticsと CJA でのデータ処理の比較](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [仮想レポート環境とサンドボックス環境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
    + [削除の影響](getting-started/cja-deletion.md)
    + [CJA の用語集](getting-started/cja-glossary.md)
 + 接続 {#cja-connections}
@@ -229,6 +232,5 @@ ht-degree: 96%
    + [ラボユーザーガイド](labs/labs.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)
-   + [Adobe Analyticsと CJA でのデータ処理の比較](troubleshooting/data-processing-comparisons.md)
 + プライバシー {#cja-privacy}
    + [プライバシーの概要](privacy/privacy-overview.md)
