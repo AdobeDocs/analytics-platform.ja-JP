@@ -1,13 +1,13 @@
 ---
 title: Adobe Analyticsと CJA のレポート機能間でのデータ処理の比較
 description: 様々なレポート機能のデータ処理の違いの理解
-source-git-commit: bdb2f09c5c0778640c505557adf8ac82037f9b90
+exl-id: 9d20ef55-2caf-43f8-86e4-c66a490c6892
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 21%
 
 ---
-
 
 # Adobe Analyticsと CJA のレポート機能間でのデータ処理の比較
 

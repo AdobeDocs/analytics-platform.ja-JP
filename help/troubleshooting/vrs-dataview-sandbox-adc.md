@@ -1,7 +1,7 @@
 ---
-source-git-commit: de28f20583457e91aa5136c688a885045606b860
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ VRS:
 
 * Adobe Analyticsセグメントに基づくことができます。
 * 非破壊的な方法で、履歴データと新しいデータの両方に適用できます。
-* Adobe Analyticsレポートスイート上に 1 つ以上の仮想ビューを作成し、様々なビジネスチームで使用できるようにします。
+* Adobe Analyticsレポートスイートの上に 1 つ以上の仮想ビューを作成し、異なるビジネスチームで使用できます。
 * Adobe Analyticsでは、様々な種類のユーザーに対するアクセスを制御し、様々な種類のデータをキュレーションするために使用できます。
 * オプション [レポート時間処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) Adobe Analyticsの機能 この場合、VRS を使用して、「訪問」のカスタム定義を作成できます。
 * セグメントの評価と同様に、レポートの実行時に適用されます。 これは _後_ データが収集され、Adobe Analytics内に保存されている。

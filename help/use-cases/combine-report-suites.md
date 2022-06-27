@@ -2,9 +2,9 @@
 title: 異なるスキーマでレポートスイートを組み合わせる
 description: Data Prep を使用して、様々なスキーマを持つレポートスイートを組み合わせる方法を説明します
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1335'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,6 @@ Data Prep を使用すると、AnalyticseVarのデータ 1 の顧客カテゴリ
 
 ## データ準備とコンポーネント ID
 
-前述のように、Data Prep では、複数のAdobe Analyticsレポートスイートをまたいで異なるフィールドをマッピングできます。 CJA は、複数のデータセットのデータを 1 つの CJA 接続に組み合わせる場合に役立ちます。 ただし、レポートスイートを別々の CJA 接続に保持する場合で、これらの接続とデータビューで 1 組のレポートを使用する場合、CJA の基になるコンポーネント ID を変更すると、スキーマが異なってもレポートに互換性を持たせることができます。 詳しくは、 [コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) を参照してください。
+前述のように、Data Prep では、複数のAdobe Analyticsレポートスイートをまたいで異なるフィールドをマッピングできます。 CJA は、複数のデータセットのデータを 1 つの CJA 接続に組み合わせる場合に役立ちます。 ただし、レポートスイートを別々の CJA 接続に保持する場合で、これらの接続とデータビューをまたいで 1 組のレポートを使用する場合、CJA で基になるコンポーネント ID を変更すると、スキーマが異なってもレポートに互換性を持たせることができます。 詳しくは、 [コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) を参照してください。
 
 コンポーネント ID の変更は CJA のみの機能で、リアルタイム顧客プロファイルおよび RTCDP に送信される Analytics ソースコネクタからのデータには影響しません。
