@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: be74260829c8e383829a3163e518104d1d0f11e0
+source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 80%
+source-wordcount: '881'
+ht-degree: 79%
 
 ---
 
@@ -17,6 +17,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年6月 | に関する新しい記事を追加しました。 [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | 2022年6月 | に関する新しい記事を追加しました。 [Adobe Analyticsの処理ルール、VISTA および分類と、Analytics Source Connector 用の Data Prep の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [Adobe Analyticsと CJA のレポート機能をまたいだデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
@@ -34,7 +35,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年3月 | [CJA Annotations API のドキュメント](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)（新規）。 |
 | 2022年3月 | [ワークスペースでの注釈](/help/components/annotations/overview.md)に関するドキュメント（新規）。 |
 | 2022年3月 | [接続サイズの予測](/help/getting-started/cja-faq.md)に関するコンテンツの大幅な更新。 |
-| 2022年2月 | Adobe Analyticsから CJA に移行する管理者を対象とした新しいガイドです。 [Adobe AnalyticsからCustomer Journey Analyticsへの進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja) |
+| 2022年2月 | Adobe Analyticsから CJA に移行する管理者を対象とした新しいガイドです。 [Adobe AnalyticsからCustomer Journey Analyticsへの進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
 | 2022年1月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/binding-dimensions-metrics.md)の新しいユースケース |
 | 2022年1月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#allocation-settings)に関する新機能のドキュメントを追加しました |
 | 2022年1月 | [Adobe Analytics データと CJA の Analytics データの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=ja)に関する新しい記事 |
@@ -70,7 +71,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2020年11月 | 接続の [バックフィル制限の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) に関する内容を追加しました。 |
 | 2020年10月7日 | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
 | 2020年9月15日 | [データの取り込み](/help/use-cases/data-ingestion.md) に関するトピックを追加しました。 |
-| 2020年9月2日 | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja) に関する節を更新しました。 |
+| 2020年9月2日 | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) に関する節を更新しました。 |
 | 2020年8月7日 | [B2B のユースケース - ルックアップデータセット](/help/use-cases/b2b.md) に関する新しいトピックを追加しました。 |
 | 2020年7月 | [人物 ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) に関する情報を追加しました。 |
 | 2020年7月 | [オブジェクト配列](/help/use-cases/object-arrays.md) または「データ階層」に関する新しいトピックを追加しました。 |
