@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 348f4e8596146f7ff4234535fa76a54f7be33171
+source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 92%
 
 ---
@@ -120,6 +120,11 @@ ht-degree: 92%
       + [空のパネル](analysis-workspace/c-panels/blank-panel.md)
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
+      + [メディア同時視聴者数パネル](analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + メディア再生滞在時間 {#media-playback-timespent}
+         + [概要](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
+         + [入力と出力の設定](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
+         + [よくある質問（FAQ）](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](analysis-workspace/curate-share/curate.md)
