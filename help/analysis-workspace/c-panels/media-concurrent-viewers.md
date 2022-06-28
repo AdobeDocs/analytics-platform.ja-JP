@@ -4,16 +4,16 @@ description: Analysis Workspace の メディア同時ビューアパネルを�
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 96%
 
 ---
 
-# メディアの同時視聴者パネル
+# メディア同時視聴者数パネル
 
-Media Analytics のお客様は、同時ビューアを分析して、同時実行のピークが発生した場所や離脱が発生した場所を理解し、コンテンツの品質と視聴者のエンゲージメントに関する貴重なインサイトを提供して、ボリュームや規模のトラブルシューティングや計画に役立てることができます。
+同時視聴者を分析して、同時実行のピークが発生した場所やドロップオフが発生した場所を把握し、コンテンツや閲覧者のエンゲージメントの質に関する貴重なインサイトを得たり、ボリュームや規模のトラブルシューティングや計画に役立てたりできます。
 
 Analysis Workspace では、同時視聴者数は、セッション数にかかわらず、特定の時点におけるメディアストリームを視聴するユニーク訪問者数です。
 
