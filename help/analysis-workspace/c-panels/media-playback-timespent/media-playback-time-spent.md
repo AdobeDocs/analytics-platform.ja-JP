@@ -3,8 +3,7 @@ title: メディア再生滞在時間パネル
 description: Analysis Workspace のメディア再生滞在時間パネルを使用および解釈する方法。
 feature: Panels
 role: User, Admin
-exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
+source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 84%
