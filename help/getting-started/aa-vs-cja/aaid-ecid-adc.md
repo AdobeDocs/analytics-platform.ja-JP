@@ -2,7 +2,7 @@
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
 description: Analytics ソースコネクタでのAdobe Analytics ID フィールドの扱い方を説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 20ebfb36e769f7d683ad44ec84b11aafb301a737
+source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 9%
@@ -17,7 +17,7 @@ Adobe Analyticsデータには複数の id フィールドが含まれていま�
 
 Adobe Analytics ID(AAID) は、Adobe Analyticsの主なデバイス識別子で、Analytics ソースコネクタを介して渡されるすべてのイベントに必ず存在します。 AAID は「レガシー Analytics ID」とも呼ばれます。 `s_vi` cookie id. ただし、AAID は、 `s_vi` cookie が存在しません。 AAID は、 `post_visid_high/post_visid_low` 列 [Adobe Analyticsデータフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja#columns%2C-descriptions%2C-and-data-types).
 
-Analytics ソースコネクタで、AAID は `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. 特定のイベントの AAID フィールドには、単一の ID が含まれます。この ID は、 [Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (AAID には、レポートスイート全体で、複数のイベントにわたる複数のタイプが混在している場合があります。 各ヒットのタイプは、 `post _visid_type` 」列を参照してください )。 関連項目： [データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja).
+Analytics ソースコネクタで、AAID は `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. 特定のイベントの AAID フィールドには、単一の ID が含まれます。この ID は、 [Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (AAID には、レポートスイート全体で、複数のイベントにわたる複数のタイプが混在している場合があります。 各ヒットのタイプは、 `post_visid_type` 」列を参照してください )。 関連項目： [データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja).
 
 ## ECID
 
