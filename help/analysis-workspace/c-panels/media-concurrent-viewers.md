@@ -3,14 +3,20 @@ title: メディアの同時視聴者パネル
 description: Analysis Workspace の メディア同時ビューアパネルを使用および解釈する方法。
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1017'
 ht-degree: 96%
 
 ---
 
 # メディア同時視聴者数パネル
+
+>[!NOTE]
+>
+>この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
+
 
 同時視聴者を分析して、同時実行のピークが発生した場所やドロップオフが発生した場所を把握し、コンテンツや閲覧者のエンゲージメントの質に関する貴重なインサイトを得たり、ボリュームや規模のトラブルシューティングや計画に役立てたりできます。
 

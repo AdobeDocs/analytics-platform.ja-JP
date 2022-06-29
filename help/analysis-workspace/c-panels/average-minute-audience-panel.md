@@ -4,7 +4,7 @@ description: Analysis Workspace のメディア分平均オーディエンスパ
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 
 
 # メディア分平均オーディエンスパネル
+
+<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
 
 Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを線形 TV 分平均指標と比較または線形 TV 分平均指標に追加できます。このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。現在の分平均オーディエンス指標は、処理時に期間が使用可能な場合にのみ機能します。
 
