@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 95%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 100%
 | 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
 | CCA での「再生」の仕組み | クロスチャネル分析では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#step-1%3A-live-stitching) |
 | CCA での履歴データのステッチ（バックフィル）の仕組み | 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#enable-cross-channel-analytics) |
+| 未関連付けプロファイルデータセットレコードに対して期待される動作は何ですか？ | **シナリオの例**:を使用して、CJA 接続の 2 つのデータセットを結合します `CRMid` をユーザー ID として設定します。 1 つは、 `CRMid` すべてのレコード内。 他のデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40%に `CRMid` が Web イベントデータセットに存在する。 その他の 60%は Web イベントデータセットに存在しません。これらのレコードはAnalysis Workspaceのレポートに表示されますか。<p> **回答**:イベントが関連付けられていないプロファイル行は、CJA に保存されます。 ただし、その ID に関連付けられたイベントが表示されるまで、Analysis Workspaceで表示することはできません。 |
 
 {style=&quot;table-layout:auto&quot;}
 
