@@ -5,16 +5,16 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 組み合わせイベントデータセット
 
-接続を作成する際、Customer Journey Analytics(CJA) は、すべてのスキーマとデータセットを 1 つのデータセットに組み合わせます。 CJA はこの「組み合わせイベントデータセット」をレポートに使用するものです。複数のスキーマまたはデータセットを接続に含める場合：
+接続を作成する際、Customer Journey Analytics（CJA）は、すべてのスキーマとデータセットを 1 つのデータセットに組み合わせます。CJA はこの「組み合わせイベントデータセット」をレポートに使用するものです。複数のスキーマまたはデータセットを接続に含める場合：
 
 * スキーマは組み合わせられます。重複スキーマフィールドが結合されます。
 * 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、CJA におけるユニーク訪問者を識別する際の基礎となります。
