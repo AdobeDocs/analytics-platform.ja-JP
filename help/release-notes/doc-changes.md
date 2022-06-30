@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 79%
+ht-degree: 82%
 
 ---
 
@@ -27,8 +27,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年6月 | に関する新しい節 [ルックアップキーおよびルックアップ値としての数値フィールドのサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
 | 2022年6月 | の更新 [フロービジュアライゼーションワークフロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
 | 2022年6月 | に関する新しいドキュメント [リアルタイム顧客プロファイルへのオーディエンスの公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
-| 2022年5月 | 次の記事を大幅に更新しました： [接続の作成](/help/connections/create-connection.md) （CJA 内） |
-| 2022年5月 | 次の方法に関する新しい記事を追加しました。 [CJAReport Builderでのデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
+| 2022年5月 | CJA での[接続の作成](/help/connections/create-connection.md)に関する記事を大幅に更新しました。 |
+| 2022年5月 | [CJA Report Builder のデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja)方法に関する新しい記事を追加しました。 |
 | 2022年5月 | [Adobe Experience Platform オーディエンスの CJA への取り込み](/help/use-cases/ingest-aep-segments.md)に関する新しい記事 |
 | 2022年4月 | [ディメンションの部分文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=ja)に関するドキュメント。 |
 | 2022年4月 | [Adobe Analytics ユーザー向け CJA ユーザーガイド](/help/getting-started/aa-to-cja-user.md)（新規）。 |

@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -162,7 +162,7 @@ ht-degree: 92%
    + [日付範囲を選択します。](report-builder/select-date-range.md)
    + [フィルターの操作](report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](report-builder/filter-dimensions.md)
-   + [データブロックを管理](report-builder/manage-reportbuilder.md)
+   + [データブロックの管理](report-builder/manage-reportbuilder.md)
    + [Report Builder の設定](report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](components/overview.md)
@@ -205,7 +205,7 @@ ht-degree: 92%
          + [計算指標のタグ付け](components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [計算指標マネージャー](components/calc-metrics/cm-workflow/cm-manager.md)
+         + [計算指標マネージャ](components/calc-metrics/cm-workflow/cm-manager.md)
       + [基本関数](components/calc-metrics/cm-functions.md)
       + [高度な関数](components/calc-metrics/cm-adv-functions.md)
    + 日付範囲 {#cja-date-ranges}
@@ -235,7 +235,7 @@ ht-degree: 92%
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
    + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
-+ Labs {#labs}
++ ラボ{#labs}
    + [ラボユーザーガイド](labs/labs.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)

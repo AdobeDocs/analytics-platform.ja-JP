@@ -7,7 +7,7 @@ feature: Cross-Channel Analytics
 source-git-commit: 5eede8eeb5d7e8632dc0d7d580f01ccc7ac8106c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -73,6 +73,6 @@ CJA の特定の指標は、従来の Analytics の指標に似ていますが�
 
 他の指標は、CJA や従来のAdobe Analyticsで似ています。 例えば、Adobe Analyticsの合計数 [カスタムイベント](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=ja) 1 ～ 100 は、通常、従来のAdobe Analyticsと CJA（結び付けるか未結び付けか）に匹敵します。 [機能の違い](/help/getting-started/aa-vs-cja/cja-aa.md)) 例えば、CJA と従来のAdobe Analyticsの間のイベント重複除外は、2 つの製品間で不一致を引き起こす可能性があります。
 
-## クロスチャネル分析で「ID マップ」フィールドを使用できますか？
+## CCA 「ID マップ」フィールドを使用できますか？
 
 いいえ。クロスチャネル分析は、現在 ID マップフィールドを使用できません。

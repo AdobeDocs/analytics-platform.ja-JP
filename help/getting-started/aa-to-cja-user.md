@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -76,13 +76,13 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 セグメントの概念の変更に加えて、セグメントコンテナも次のように更新されます。
 
-* **ヒットコンテナが [!UICONTROL イベント] コンテナ**. この [!UICONTROL イベント] コンテナを使用すると、個々のページビュー数/ヒット数に基づいて訪問者情報を分類できます。
-* **訪問コンテナが [!UICONTROL セッション] コンテナ**. [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
-* **訪問者コンテナは、「[!UICONTROL 人物]」コンテナになりました。**&#x200B;この [!UICONTROL 人物] コンテナには、指定した期間内の訪問者に関するすべてのセッションとイベントが含まれます。
+* **ヒットコンテナは、[!UICONTROL イベント]コンテナになりました。**&#x200B;この[!UICONTROL イベント]コンテナを使用すると、個々のページビュー数／ヒット数に基づいて訪問者情報を分類できます。
+* **訪問コンテナは、[!UICONTROL セッション]コンテナになりました**。[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
+* **訪問者コンテナは、[!UICONTROL ユーザー]コンテナになりました。**[!UICONTROL ユーザー]コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
 
 ## 計算指標の概念の変更
 
-計算指標は、従来の Analytics と CJA で同じような名前が付けられています。ただし、[!UICONTROL 、Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。つまり、既存の計算指標はすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。Adobe Analytics の計算指標を Customer Journey Analytics に移行するには、次のビデオを参照してください。
+計算指標は、従来の Analytics と CJA で同じような名前が付けられています。ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。つまり、既存の計算指標はすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。Adobe Analytics の計算指標を Customer Journey Analytics に移行するには、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
@@ -100,7 +100,7 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 ## 顧客属性の概念の変更
 
-「顧客属性」は「プロファイルデータセット」になりました。プロファイルデータセットには、[!UICONTROL イベント]データの訪問者、ユーザーまたは顧客に適用されるデータが含まれています。例えば、顧客に関する CRM データをアップロードできます。含める人物 ID を選択できます。[!DNL Experience Platform] で定義された各データセットには、1 つ以上の人物 ID セットが定義されています。
+「顧客属性」は「プロファイルデータセット」になりました。プロファイルデータセットには、[!UICONTROL イベント]データの訪問者、ユーザーまたは顧客に適用されるデータが含まれています。例えば、顧客に関する CRM データをアップロードできます。含めるユーザー ID を選択できます。[!DNL Experience Platform] で定義された各データセットには、1 つ以上の人物 ID セットが定義されています。
 
 ## 訪問者の識別方法の変更
 
