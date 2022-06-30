@@ -6,15 +6,15 @@ role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 solution: Customer Journey Analytics
 source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # エグゼクティブユーザー向けクイックスタートガイド
 
-以下は、Adobe Analytics ダッシュボードの使用と表示についてのベストプラクティスに関する情報をエグゼクティブユーザーに提供します。次に、この情報をデモするビデオを示します。
+以下は、Adobe Analytics ダッシュボードの使用と表示についてのベストプラクティスに関する情報をエグゼクティブユーザーに提供します。次のビデオでは、この情報を紹介しています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
