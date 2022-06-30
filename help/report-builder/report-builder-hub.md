@@ -7,22 +7,22 @@ type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
 source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Report Builder ハブ
 
-Use the Report Builder hub to create, update, delete, and manage data blocks.
+Report Builder ハブを使用して、データブロックの作成、更新、管理を行います。
 
-The Report Builder hub contains the Create and Manage buttons, the COMMANDS list, and the QUICK EDIT panels.
+Report Builder ハブには、作成ボタンと管理ボタン、コマンドリスト、クイック編集パネルが含まれています。
 
 <img src="./assets/hub51.png" width="50%"/>
 
 
-## Create and Manage buttons
+## ボタンの作成と管理
 
 新しいデータブロックを作成したり、既存のデータブロックを管理するには、「作成」または「管理」ボタンを使用します。
 
@@ -38,7 +38,7 @@ The Report Builder hub contains the Create and Manage buttons, the COMMANDS list
 |------|------------------|--------|
 | データブロックの作成 | ワークブック内で 1 つ以上のセルが選択されている。 | データブロックの作成に使用 |
 | データブロックの編集 | 選択したセル範囲が、1 つのデータブロックのみの一部である。 | データブロックの編集に使用 |
-| データブロックの更新 | 選択範囲に少なくとも 1 つのデータブロックが含まれている。 コマンドは、選択範囲内のデータブロックのみを更新します。 | 1 つ以上のデータブロックの更新に使用 |
+| データブロックの更新 | 選択範囲に少なくとも 1 つのデータブロックが含まれている。コマンドは、選択範囲内のデータブロックのみを更新します。 | 1 つ以上のデータブロックの更新に使用 |
 | すべてのデータブロックの更新 | ワークブックには、1 つ以上のデータブロックが含まれています。 | ワークブック内のすべてのデータブロックを更新するために使用 |
 | データブロックのコピー | 選択したセルまたはセル範囲は、1 つ以上のデータブロックの一部です。 | データブロックのコピーに使用 |
 | データブロックの削除 | 選択したセル範囲が、1 つのデータブロックのみの一部である。 | データブロックの削除に使用 |
