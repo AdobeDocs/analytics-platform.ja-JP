@@ -4,10 +4,10 @@ description: CJA オファーのコンポーネントの詳細と、レポート
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: d75f432d8933e9f6aa735ff9ca3bc12277ee0b0a
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 100%
 
 次のコンポーネントを管理できます。
 
-* [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。**この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。**
+* [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
+* [**オーディエンス**](/help/components/audiences/audiences-overview.md):Customer Journey Analytics(CJA) で検出されたオーディエンスを作成し、に公開します。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCP)(Adobe Experience Platform)。顧客のターゲティングとパーソナライゼーションに使用。
 * [**フィルター**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
 * [**日付範囲**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
