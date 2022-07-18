@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0111cf5c9eaef92377a4d90b81e58c2a0432b074
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '217'
 ht-degree: 21%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 21%
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| 最初と繰り返しセッションのレポート作成の比較 | 特定のセッションがユーザーの初めてのセッションかどうかを検出できるようになりました。 [詳細情報 — フォロー] | 2022年7月20日（PT） |
+| 最初と繰り返しセッションのレポート作成の比較 | 特定のセッションがユーザーの初めてのセッションかどうかを検出できるようになりました。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 2022年7月20日（PT） |
 | ルックアップキーおよびルックアップ値としての数値フィールドのサポート | 文字列値を製品 SKU 上の COGS や利益などの数値フィールドで分類する場合に役立ちます。 参照から指標を許可すると、これらのデータポイントをレポートに取り込むことができます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 2022年7月20日（PT） |
 
 ## 修正点

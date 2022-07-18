@@ -4,7 +4,7 @@ description: 任意のデータビューに追加できるすべての標準コ�
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 89%
@@ -48,9 +48,9 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 | [!UICONTROL 日付] | 時間分割ディメンション | 1 ～ 31 |
 | [!UICONTROL 曜日] | 時間分割ディメンション | 月曜日、火曜日、水曜日、木曜日、金曜日、土曜日、日曜日 |
 | [!UICONTROL 年間通算日] | 時間分割ディメンション | 1 ～ 366 |
-| [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での人物の定義された最初のセッション |
 | [!UICONTROL 時刻] | 時間分割ディメンション | 0 ～ 23 |
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
+| [!UICONTROL 新しいセッション] | 指標 | レポートウィンドウ内での人物の定義された最初のセッション |
 | [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、CJA での一意の訪問者を識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に至るまですべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` など |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
