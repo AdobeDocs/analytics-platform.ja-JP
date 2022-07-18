@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
+source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '870'
 ht-degree: 83%
 
 ---
@@ -17,6 +17,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年7月 | 新しいセッションレポートと繰り返しセッションレポートに関するドキュメント |
 | 2022年6月 | に関する新しい記事を追加しました。 [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | 2022年6月 | に関する新しい記事を追加しました。 [Adobe Analyticsの処理ルール、VISTA および分類と、Analytics Source Connector 用の Data Prep の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | 2022年6月 | に関する新しい記事を追加しました。 [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
