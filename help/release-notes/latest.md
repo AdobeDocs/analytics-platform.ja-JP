@@ -3,16 +3,20 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e0f97c42f4b1bea721825a30360f0c44b1f9f85a
+source-git-commit: 0111cf5c9eaef92377a4d90b81e58c2a0432b074
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 17%
+source-wordcount: '209'
+ht-degree: 21%
 
 ---
 
 # 最新のCustomer Journey Analytics(CJA) リリースノート（2022 年 7 月）
 
 **最終更新日**:2022 年 7 月 14 日
+
+>[!NOTE]
+>
+>このページに記載される内容は、リリース前の情報であり、変更される可能性があります。
 
 ## 主な特長
 
