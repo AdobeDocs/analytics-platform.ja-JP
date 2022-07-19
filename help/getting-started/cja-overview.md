@@ -4,9 +4,9 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
+source-git-commit: f2a10a34618d625157445bbb496cf3fc93d280af
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '917'
 ht-degree: 100%
 
 ---
@@ -51,30 +51,6 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 * 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、CJA アドオンがあるかどうかが不明な場合は、組織のアカウントマネージャーにお問い合わせください。
 * 組織が Adobe Experience Platform 用にプロビジョニングされている。
-
-## 管理者アクセス権限
-
-接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
-
-* Customer Journey Analytics にアクセスしたり接続したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で **Customer Journey Analytics 製品**&#x200B;に対する管理者として追加される必要があります。製品管理者には、次の権限が付与されます。
-   * 接続またはデータ表示の作成／更新／削除を行う
-   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新／削除を行います。
-   * ワークスペースプロジェクトをすべてのユーザーと共有する
-* Customer Journey Analytics 内で製品管理者になるだけでは、接続を作成、更新、削除することはできません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
-   * スキーマの表示
-   * スキーマの管理
-   * ID 名前空間の表示
-   * データセットの表示
-
-Experience Platform 権限について詳しくは、「[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja)」を参照してください。
-
->[!NOTE]
->
->従来の Adobe Analytics の場合とは異なり、Customer Journey Analytics 内の個々の指標やディメンションに権限を付与または拒否することはできません。指標とディメンションは[データビュー](/help/data-views/data-views.md)で変更できるので、CJA で変更される可能性があります。その場合、レポートも遡って変更されます。
-
-### ユーザーアクセス
-
-Customer Journey Analytics の非製品管理者（ユーザー）は、データビューや接続は表示できませんが、フィルター、プロジェクトおよび計算指標を作成できます。
 
 ## 用語の更新
 
