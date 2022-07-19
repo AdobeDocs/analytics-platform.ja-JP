@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 93690a3351f2dca0b3a68e7eea7fb64c581d2d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 [!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
 
-以下に、の使用例を示します。 [様々なスキーマでのレポートスイートの組み合わせ](/help/use-cases/combine-report-suites.md).
+次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/combine-report-suites.md)に関するユースケースを示します。
 
 ### 3.マーケティングチャネルの（再）設定 {#marketing-channels}
 
@@ -80,13 +80,13 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 ## 重要な違いに対する準備
 
-### レポート時間処理の習熟 {#report-time}
+### レポート時の処理を使いこなす {#report-time}
 
-Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性などの成果を生み出すために、大量のデータ前処理に依存しています。これに対して、Customer Journey Analytics は、レポートの実行時にこれらの計算を実行します。
+Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性などの成果を生み出すために、大量のデータの事前処理に依存しています。これに対して、Customer Journey Analytics は、レポートの実行時にこれらの計算を実行します。
 
-[!UICONTROL レポート時間処理]では、基になるデータの収集方法を変更しなくても、遡及的な設定を適用でき、変数の永続性のバージョンを複数作成できるようになります。
+[!UICONTROL レポート時の処理]では、基になるデータの収集方法を変更しなくても、遡及的な設定を適用でき、変数の永続性のバージョンを複数作成できるようになります。
 
-この変更により、特に、有効期限が長くなる可能性のある変数について、データのレポート方法に多少の違いが生じます。[仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を使用して、レポート時間処理がレポートにどのように影響するかを評価することから始めることができます。
+この変更により、特に、有効期限が長くなる可能性のある変数について、データのレポート方法に多少の違いが生じます。[仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を使用して、レポート時の処理がレポートにどのように影響するかを評価することから始めることができます。
 
 ### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
@@ -104,7 +104,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 * [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
-* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja)
 
 ### その他の考慮事項
 
