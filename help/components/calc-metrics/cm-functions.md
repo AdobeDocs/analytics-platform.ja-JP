@@ -4,9 +4,9 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1044'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-&#42;If *quart* = 0 の場合、QUARTILE は最小値を返します。 *quart* = 1 の場合、QUARTILE は第 1 四分位数（25 番目のパーセンタイル）を返します。*quart* = 2 の場合、QUARTILE は第 1 四分位数（50 番目のパーセンタイル）を返します。*quart* = 3 の場合、QUARTILE は第 1 四分位数（75 番目のパーセンタイル）を返します。*quart* = 4 の場合、QUARTILE は最大値を返します。
+&#42;*quart* = 0 の場合、QUARTILE は最小値を返します。*quart* = 1 の場合、QUARTILE は第 1 四分位数（25 番目のパーセンタイル）を返します。*quart* = 2 の場合、QUARTILE は第 1 四分位数（50 番目のパーセンタイル）を返します。*quart* = 3 の場合、QUARTILE は第 1 四分位数（75 番目のパーセンタイル）を返します。*quart* = 4 の場合、QUARTILE は最大値を返します。
 
 ## ラウンド数
 
@@ -302,7 +302,7 @@ VARIANCE(metric)
 |---|---|
 | *metric*  | 平方偏差を求める指標です。 |
 
-平方偏差を計算するには、数字の列全体を見ます。まず、すべての数字の平均を求めます。平均を求めたら、各数字に対して次の計算をおこないます。
+平方偏差を計算するには、数字の列全体を見ます。まず、すべての数字の平均を求めます。平均を求めたら、各数字に対して次の計算を行います。
 
 1. 数字から平均を減算します。
 
