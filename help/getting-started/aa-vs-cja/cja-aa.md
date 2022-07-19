@@ -4,9 +4,9 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 0adc1c6a285bcabc1023834b39a315be1860b7d9
+source-git-commit: 9d928a68e9b2eb16ba14cd793857547432ba11b0
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1411'
 ht-degree: 97%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 97%
 | 機能 | メモ |
 | --- | --- |
 | ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
-| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時視聴者数のパネルはサポートされていません。 |
+| パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 | 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
 {style=&quot;table-layout:auto&quot;}
