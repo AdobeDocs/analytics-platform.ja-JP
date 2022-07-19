@@ -4,9 +4,9 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 98%
 | [クイックインサイトパネル](quickinsight.md) | フリーフォームテーブルとそれに伴うビジュアライゼーションを素早く作成し、インサイトを迅速に分析して取得できます。 |
 | [アトリビューションパネル](attribution.md) | 任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。 |
 | [フリーフォームパネル](freeform-panel.md) | 無制限の比較および分類を実行し、ビジュアライゼーションを追加して豊かなデータのストーリーを示します。 |
-| [メディアの同時視聴者パネル](media-concurrent-viewers.md) | 同時実行のピークの詳細と分類および比較機能を使用して、経時的に同時視聴者を分析します。 |
-| [メディア再生滞在時間パネル](media-playback-timespent/media-playback-time-spent.md) | 再生に費やした時間を分析し、同時実行のピークが発生した場所やドロップオフが発生した場所を把握します。 |
+| [メディアの同時視聴者数パネル](media-concurrent-viewers.md) | 同時実行のピークの詳細と分類および比較機能を使用して、経時的に同時視聴者を分析します。 |
+| [メディア再生滞在時間パネル](media-playback-timespent/media-playback-time-spent.md) | 再生に費やした時間を分析して、同時実行のピークが発生した場所やドロップオフが発生した場所を把握します。 |
 
 ![](assets/panel-overview.png)
 
@@ -77,7 +77,7 @@ ht-degree: 98%
 
 ![](assets/create-dropdown.png)
 
-プロジェクトにドロップダウンフィルターを追加する方法について詳しくは、[ビデオをご覧ください](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=ja)。 
+プロジェクトにドロップダウンフィルターを追加する方法について詳しくは、[ビデオをご覧ください](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=ja)。
 
 ## 右クリックメニュー {#right-click}
 
@@ -95,4 +95,4 @@ ht-degree: 98%
 | [!UICONTROL すべてのパネルを折りたたむ／展開] | すべてのプロジェクトパネルを折りたたんだり展開したりします。 |
 | [!UICONTROL パネル内のすべてのビジュアライゼーションを折りたたむ／展開] | 現在のパネル内のすべてのビジュアライゼーションを折りたたんだり展開したりします。 |
 | [!UICONTROL 説明を編集] | パネルの説明テキストを追加（または編集）します。 |
-| [!UICONTROL パネルリンクを取得] | プロジェクト内の特定のパネルに他のユーザーを誘導することができます。受信者は、リンクをクリックした後、リンク先の正確なパネルにリダイレクトされる前にログインする必要があります。 |
+| [!UICONTROL パネルリンクを取得] | プロジェクト内の特定のパネルに他のユーザーを誘導できます。受信者は、リンクをクリックした後、リンク先の正確なパネルにリダイレクトされる前にログインする必要があります。 |
