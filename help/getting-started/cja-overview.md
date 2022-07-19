@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f2a10a34618d625157445bbb496cf3fc93d280af
+source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 99%
 
 ---
 
@@ -51,6 +51,10 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 * 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、CJA アドオンがあるかどうかが不明な場合は、組織のアカウントマネージャーにお問い合わせください。
 * 組織が Adobe Experience Platform 用にプロビジョニングされている。
+
+## アクセス制御
+
+詳しくは、 [アクセス制御](/help/getting-started/cja-access-control.md) トピック。
 
 ## 用語の更新
 
