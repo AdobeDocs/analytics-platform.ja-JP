@@ -1,73 +1,73 @@
 ---
-title: 異なるスキーマでレポートスイートを組み合わせる
-description: Data Prep を使用して、様々なスキーマを持つレポートスイートを組み合わせる方法を説明します
+title: レポートスイートを様々なスキーマと組み合わせる
+description: データ準備を使用してレポートスイートを様々なスキーマと組み合わせる方法を説明します
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1335'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# 異なるスキーマとレポートスイートを組み合わせる
+# レポートスイートを様々なスキーマと組み合わせる
 
-この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe AnalyticsからAdobe Experience Platform(AEP) に、Real-time Customer Data PlatformやCustomer Journey Analytics(CJA) などの AEP アプリケーションで使用するために、レポートスイートデータを取り込みます。 AEP に取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローは AEP データレイク内のデータセットとして配置されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
+[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)は、AEP アプリケーション（Real-time Customer Data Platform や Customer Journey Analytics（CJA）など）で使用するために、Adobe Analytics から Adobe Experience Platform（AEP）にレポートスイートデータを取り込みます。AEP に取り込まれる各レポートスイートは、個別のソース接続データフローとして設定され、各データフローは AEP データレイク内のデータセットとして取得されます。Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
 
-CJA のお客様が使用する [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、AEP データレイクのデータセットを CJA のAnalysis Workspaceに統合します。 ただし、1 つの接続内でレポートスイートを組み合わせる場合は、AEP の [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能。 目的は、prop や eVar などのAdobe Analytics変数が CJA で一貫した意味を持つようにすることです。
+CJA のお客様は、[接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja)を使用して、AEP データレイクから CJA の Analysis Workspace にデータセットを統合します。ただし、接続内でレポートスイートを組み合わせる場合、レポートスイート間のスキーマの違いは、AEP の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用して解決される必要があります。その目的は、Adobe Analytics 変数（prop や eVar など）が CJA 内で一貫した意味を持つのを保証することです。
 
-## レポートスイート間のスキーマの違いに問題がある
+## レポートスイート間のスキーマの違いが問題
 
-CJA で使用するために 2 つの異なるレポートスイートのデータを AEP に取り込み、2 つのレポートスイートのスキーマに違いがあるとします。
+あなたの会社が、CJA で使用するために 2 つの異なるレポートスイートから AEP にデータを取り込みたいと想定し、2 つのレポートスイートのスキーマに違いがあると仮定します。
 
 | レポートスイート A | レポートスイート B |
 | --- | --- |
-| eVar1 =検索語 | eVar1 =ビジネスユニット |
-| eVar2 =顧客カテゴリ | eVar2 =検索語 |
+| eVar1 = 検索語句 | eVar1 = ビジネスユニット |
+| eVar2 = 顧客カテゴリ | eVar2 = 検索語句 |
 
-簡潔にするために、両方のレポートスイートで定義されている eVar はこれらのみであるとします。
+簡潔にするために、両方のレポートスイートで定義されている eVar はこれらのみということにします。
 
-さらに、次の操作を実行するとします。
+さらに、次のアクションを実行するとします。
 
-- 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート A** をとして AEP データレイクに追加します。 **データセット A**.
-- 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート B** をとして AEP データレイクに追加します。 **データセット B**.
-- の作成 [CJA 接続](/help/connections/create-connection.md) 呼び出し **すべてのレポートスイート** データセット A とデータセット B を組み合わせた
-- の作成 [CJA データビュー](/help/data-views/create-dataview.md) 呼び出し **グローバル表示** すべてのレポートスイート接続に基づいている
+- **レポートスイート A** を&#x200B;**データセット A** として AEP データレイクに取り込む Analytics ソース接続を作成（データ準備を使用しない）。
+- **レポートスイート B** を&#x200B;**データセット B** として AEP データレイクに取り込む Analytics ソース接続を作成（データ準備を使用しない）。
+- データセット A とデータセット B を組み合わせた、**すべてのレポートスイート**&#x200B;と呼ばれる [CJA 接続](/help/connections/create-connection.md)を作成。
+- すべてのレポートスイート接続に基づいた、**グローバル表示**&#x200B;と呼ばれる [CJA データビュー](/help/data-views/create-dataview.md)を作成。
 
-データセット A とデータセット B のスキーマの違いを解決するために Data Prep を使用しない場合、グローバルビューのデータビューの eVar には次の値が混在します。
+データセット A とデータセット B の間のスキーマの違いを解決するためにデータ準備を使用しない場合、グローバル表示データビューの eVar には、次の値が混在することになります。
 
-| CJA でのグローバルビューのデータビュー |
+| CJA のグローバル表示データビュー |
 | --- |
-| eVar1 => 検索用語とビジネスユニットの組み合わせ |
-| eVar2 => 顧客カテゴリと検索語句の組み合わせ |
+| eVar1 => 検索語句とビジネスユニットの混在 |
+| eVar2 => 顧客カテゴリと検索語句の混在 |
 
-この状況では、eVar1 とeVar2 の無意味なレポートが生じます。
+このような状況では、eVar1 と eVar2 について意味のないレポートが作成されることになります。
 
-- eVarフィールドには、異なる意味を持つ値が混在しています。
-- 検索語句はeVar1 とeVar2 の間に分散されます。
-- 検索用語、ビジネスユニット、顧客カテゴリごとに異なるアトリビューションモデルを使用することはできません。
+- eVar フィールドには、様々な意味論的意味を含む値が混在します。
+- 検索語句は、eVar1 と eVar2 の間で分散されます。
+- 検索語句、ビジネスユニット、顧客カテゴリごとに異なるアトリビューションモデルを使用することはできません。
 
-## AEP Data Prep を使用して、レポートスイート間のスキーマの違いを解決する
+## AEP データ準備を使用したレポートスイート間のスキーマの違いの解決
 
-Experience Platformデータ準備機能は、Analytics ソースコネクタと統合されており、上記のシナリオで説明したスキーマの違いの解決に使用できます。 その結果、CJA データビューで一貫した意味の eVar が得られます。 （以下で使用する命名規則は、ニーズに合わせてカスタマイズできます）。
+Experience Platform データ準備機能は、Analytics ソースコネクタと統合されており、前述のシナリオで説明したスキーマの違いを解決するのに使用できます。これにより、CJA データビューで一貫した意味を持つ eVar になります（次に使用する命名規則は、必要に応じてカスタマイズできます。）
 
-1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、 [新しいスキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.htm?lang=ja) AEP 内（と呼びます） **統合スキーマ** （この例では）。 スキーマに以下を追加します。
+1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、AEP で[新しいスキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja)します（この例では、**Unified Schema** と呼ぶことにします）。スキーマに次を追加します。
 
-   | &quot;統合スキーマ&quot; |
+   | 「Unified Schema」 |
    | --- |
    | **XDM ExperienceEvent** クラス |
-   | **Adobe Analytics ExperienceEvent テンプレート** フィールドグループ |
+   | 「**Adobe Analytics ExperienceEvent テンプレート**」フィールドグループ |
 
-1. 別のフィールドグループをスキーマに追加するか、 [カスタムフィールドグループの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) スキーマに追加します。 新しいフィールドグループを作成し、という名前を付けます。 **統合フィールド**. 次に、次のフィールドを新しいフィールドグループに追加します。
+1. スキーマに別のフィールドグループを追加するか、[カスタムフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)してスキーマに追加します。ここでは、新しいフィールドグループを作成し、**Unified Fields** と呼ぶことにします。次に、この新しいフィールドグループに次のフィールドを追加します。
 
-   | 「統合フィールド」カスタムフィールドグループ  |
+   | 「Unified Fields」カスタムフィールドグループ |
    | --- |
    | 検索語句 |
    | ビジネスユニット |
    | 顧客カテゴリ |
 
-1. のソース接続データフローを作成 **レポートスイート A**，選択 **統合スキーマ** をデータフローで使用します。 次のように、カスタムマッピングをデータフローに追加します。
+1. データフローで使用する **Unified Schema** を選択して、**レポートスイート A** のソース接続データフローを作成します。次のように、データフローにカスタムマッピングを追加します。
 
-   | レポートスイート A のソースフィールド | 統合フィールドフィールドグループの宛先フィールド |
+   | レポートスイート A ソースフィールド | 「Unified Fields」フィールドグループからの宛先フィールド |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Search_term |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
@@ -76,20 +76,20 @@ Experience Platformデータ準備機能は、Analytics ソースコネクタと
    >
    >宛先フィールドの XDM パスは、カスタムフィールドグループの構造によって異なります。
 
-1. のソース接続データフローを作成 **レポートスイート B**、再選択 **統合スキーマ** をデータフローで使用します。 ワークフローには、2 つのフィールドに記述子名の競合があることが示されます。 これは、eVar1 とeVar2 の記述子がレポートスイート B ではレポートスイート A では記述子と異なるためです。しかし、既にこれを把握しているので、競合を無視して、次のようにカスタムマッピングを使用できます。
+1. データフローで使用する **Unified Schema** を選択して、**レポートスイート B** のソース接続データフローを作成します。このワークフローでは、2 つのフィールドの記述子名が競合していることが表示されます。これは、eVar1 と eVar2 の記述子がレポートスイート B とレポートスイート A で異なっているからです。しかし、これは既にわかっていることなので、問題なく競合を無視でき、次のようにカスタムマッピングを使用できます。
 
-   | レポートスイート B のソースフィールド | 統合フィールドフィールドグループの宛先フィールド |
+   | レポートスイート B ソースフィールド | 「Unified Fields」フィールドグループからの宛先フィールド |
    |---|---|
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. 次に、 **すべてのレポートスイート** CJA の接続。データセット A とデータセット B を組み合わせます。
+1. ここで、データセット A とデータセット B を組み合わせる、CJA の&#x200B;**すべてのレポートスイート**&#x200B;接続を作成します。
 
-1. の作成 **グローバル表示** CJA でのデータ表示。 元のeVarフィールドを無視し、[ 統合フィールド ] フィールドグループのフィールドのみを含めます。
+1. CJA の&#x200B;**グローバル表示**&#x200B;データビューを作成します。元の eVar フィールドを無視して、「Unified Fields」フィールドグループからのフィールドのみを含めます。
 
-   **グローバル表示** CJA でのデータビュー：
+   CJA の&#x200B;**グローバル表示**&#x200B;データビュー：
 
-   | ソースフィールド | データビューに含めますか？ |
+   | ソースフィールド | データビューに含める？ |
    | --- | --- | 
    | \_experience.analytics.customDimensions.eVars.eVar1 | × |
    | \_experience.analytics.customDimensions.eVars.eVar2 | × |
@@ -97,65 +97,65 @@ Experience Platformデータ準備機能は、Analytics ソースコネクタと
    | _\&lt;path>_.Customer_category  | ○ |
    | _\&lt;path>_.Business_unit | ○ |
 
-ソースレポートスイートのeVar1 とeVar2 を 3 つの新しいフィールドにマッピングしました。 Data Prep マッピングを使用するもう 1 つの利点は、宛先フィールドが、意味のあるeVar名 (eVar1、eVar2) ではなく、意味的に意味のある名前（検索語、ビジネスユニット、顧客カテゴリ）に基づいていることです。
+これで、ソースレポートスイートの eVar1 および eVar2 が 3 つの新しいフィールドにマッピングされました。データ準備のマッピングを使用するもう 1 つの利点は、宛先フィールドが、意味のない eVar 名（eVar1、eVar2）ではなく、意味論的に意味のある名前（検索語句、ビジネスユニット、顧客カテゴリ）に基づいていることです。
 
 >[!NOTE]
 >
->統合フィールドのカスタムフィールドグループと関連するフィールドマッピングは、いつでも既存の Analytics Source Connector のデータフローおよびデータセットに追加できます。 ただし、これは将来のデータにのみ影響します。
+>「Unified Fields」カスタムフィールドグループと、関連するフィールドマッピングは、既存の Analytics ソースコネクタデータフローおよびデータセットにいつでも追加できます。ただし、これは、将来のデータにのみ影響します。
 
-## 単なるレポートスイート以外
+## 単なるレポートスイート以上
 
-Data Prep でデータセットを様々なスキーマと組み合わせる機能は、Analytics レポートスイートに加えて、様々なスキーマを利用できます。 次のデータを含む 2 つのデータセットがあるとします。
+データセットを様々なスキーマと組み合わせるデータ準備の機能は、Analytics レポートスイートを超えたものです。次のデータを含む 2 つのデータセットがあるとします。
 
-| データセット A = Analytics ソースコネクタを使用した Analytics レポートスイート |
+| データセット A = Analytics ソースコネクタを介した Analytics レポートスイート |
 | --- |
 | `eVar1` => 顧客カテゴリ |
 
-| データセット B =コールセンターデータ |
+| データセット B = コールセンターデータ |
 | --- |
 | Some_field => 顧客カテゴリ |
 
-Data Prep を使用すると、AnalyticseVarのデータ 1 の顧客カテゴリと、コールセンターデータの Some_field の顧客カテゴリを組み合わせることができます。 一つの方法があります この場合も、命名規則を必要に応じて変更できます。
+データ準備を使用すると、Analytics データの eVar 1 の顧客カテゴリとコールセンターデータの Some_field の顧客カテゴリを組み合わせることができます。次に、その方法のひとつを示します。ここでも、命名規則は必要に応じて変更できます。
 
-1. AEP でスキーマを作成します。 スキーマに以下を追加します。
+1. AEP でスキーマを作成します。スキーマに次を追加します。
 
-   | &quot;拡張スキーマ&quot; |
+   | 「Extended Schema」 |
    | --- | 
-   | **XDM エクスペリエンスイベント** クラス |
-   | **Adobe Analytics Experience Event テンプレート** フィールドグループ |
+   | **XDM Experience Event** クラス |
+   | 「**Adobe Analytics Experience Event テンプレート**」フィールドグループ |
 
-1. 新しいフィールドグループを作成し、スキーマに追加します。 フィールドグループにフィールドを追加します。
+1. 新しいフィールドグループを作成して、スキーマに追加します。フィールドグループにフィールドを追加します。
 
-   | 「顧客情報」カスタムフィールドグループ  |
+   | 「Customer Info」カスタムフィールドグループ |
    | --- |
    | Customer_category |
 
-1. のデータフローの作成 **データセット A**，選択 **拡張スキーマ** をスキーマとして使用します。 次のように、カスタムマッピングをデータフローに追加します。
+1. **データセット A** のデータフローを作成し、スキーマとして **Extended Schema** を選択します。次のように、データフローにカスタムマッピングを追加します。
 
-   | データセット A ソースフィールド | 顧客情報フィールドグループの宛先フィールド |
+   | データセット A ソースフィールド | 「Customer Info」フィールドグループからの宛先フィールド |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. のデータフローの作成 **データセット B**、再選択 **拡張スキーマ** をスキーマとして使用します。 次のように、カスタムマッピングをデータフローに追加します。
+1. **データセット B** のデータフローを作成し、スキーマとして **Extended Schema** を選択します。次のように、データフローにカスタムマッピングを追加します。
 
-   | データセット B ソースフィールド | 顧客情報フィールドグループの宛先フィールド |
+   | データセット B ソースフィールド | 「Customer Info」フィールドグループからの宛先フィールド |
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-1. データセット A とデータセット B を組み合わせた CJA 接続を作成します。
+1. データセット A とデータセット B を組み合わせる CJA 接続を作成します。
 
-1. 先ほど作成した CJA 接続を使用して、CJA でデータビューを作成します。 元のeVarフィールドを無視し、「 Customer Info 」フィールドグループのフィールドのみを含めます。
+1. 作成したばかりの CJA 接続を使用して、CJA でデータビューを作成します。元の eVar フィールドを無視して、「Customer Info」フィールドグループからのフィールドのみを含めます。
 
-   CJA でのデータビュー：
+   CJA のデータビュー：
 
-   | ソースフィールド | データビューに含めますか？ |
+   | ソースフィールド | データビューに含める？ |
    |---|---|
    | \_experience.analytics.customDimensions.eVars.eVar1 | × |
    | \_experience.analytics.customDimensions.eVars.eVar2 | × |
    | _\&lt;path>_.Customer_category | ○ |
 
-## データ準備とコンポーネント ID
+## データ準備とコンポーネント ID の比較
 
-前述のように、Data Prep では、複数のAdobe Analyticsレポートスイートをまたいで異なるフィールドをマッピングできます。 CJA は、複数のデータセットのデータを 1 つの CJA 接続に組み合わせる場合に役立ちます。 ただし、レポートスイートを別々の CJA 接続に保持する場合で、これらの接続とデータビューをまたいで 1 組のレポートを使用する場合、CJA で基になるコンポーネント ID を変更すると、スキーマが異なってもレポートに互換性を持たせることができます。 詳しくは、 [コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) を参照してください。
+前述のように、データ準備を使用すると、複数の Adobe Analytics レポートスイートをまたいで異なるフィールドを一緒にマッピングできます。これは、CJA で、複数のデータセットから単一の CJA 接続にデータを組み合わせたい場合に便利です。ただし、レポートスイートを別々の CJA 接続のままにするつもりでも、それらの接続やデータビューで 1 セットのレポートを使用したい場合、CJA で基盤となるコンポーネント ID を変更すると、スキーマが異なる場合でもレポートの互換性を維持する手段が提供されます。詳しくは、[コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=ja)を参照してください。
 
-コンポーネント ID の変更は CJA のみの機能で、リアルタイム顧客プロファイルおよび RTCDP に送信される Analytics ソースコネクタからのデータには影響しません。
+コンポーネント ID の変更は、CJA のみの機能であり、リアルタイム顧客プロファイルおよび RTCDP に送信される Analytics ソースコネクタのデータには影響しません。
