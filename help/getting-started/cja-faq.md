@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ ht-degree: 95%
 | 質問 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] は、デバイスやデータセットをまたいで「ステッチ」することはできますか。 | はい。[!UICONTROL Customer Journey Analytics] には、[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)（CCA）と呼ばれるステッチソリューションがあります。データセットの人物 ID のキーを更新できるので、複数のデータセットをシームレスに組み合わせることができます。 |
-| 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
+| 匿名の行動を、サポートされている認証済みの行動にステッチすることはサポートされていますか。 | はい。[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja) では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。 |
 | CCA での「再生」の仕組み | クロスチャネル分析では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#step-1%3A-live-stitching) |
 | CCA での履歴データのステッチ（バックフィル）の仕組み | 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#enable-cross-channel-analytics) |
-| 未関連付けプロファイルデータセットレコードに対して期待される動作は何ですか？ | **シナリオの例**:を使用して、CJA 接続の 2 つのデータセットを結合します `CRMid` をユーザー ID として設定します。 1 つは、 `CRMid` すべてのレコード内。 他のデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40%に `CRMid` が Web イベントデータセットに存在する。 その他の 60%は Web イベントデータセットに存在しません。これらのレコードはAnalysis Workspaceのレポートに表示されますか。<p> **回答**:イベントが関連付けられていないプロファイル行は、CJA に保存されます。 ただし、その ID に関連付けられたイベントが表示されるまで、Analysis Workspaceで表示することはできません。 |
+| ステッチされていないプロファイルデータセットのレコードに対して期待される動作は何ですか。 | **シナリオの例**：`CRMid` を人物 ID として使用することで、CJA 接続の 2 つのデータセットを結合します。1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。もう 1 つのデータセットは、CRM プロファイルデータセットです。CRM データセットの 40％は、web イベントデータセットに `CRMid` が存在します。残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか。<p> **回答**：イベントが関連付けられていないプロファイル行は、CJA に保存されます。ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -58,7 +58,7 @@ ht-degree: 95%
 
 | 質問 | 回答 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル （例：5,000 億行）：30 日</li></ul> |
+| [!UICONTROL Adobe Experience Platform] の [!UICONTROL Customer Journey Analytics] では、どの程度の遅延が予想されますか？ | <ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul> |
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
@@ -86,16 +86,16 @@ ht-degree: 95%
 
 ## 7. CJA でレポートスイートを結合する際の考慮事項 {#merge-reportsuite}
 
-[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、次の影響を考慮してください。
+[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、次の影響を考慮してください。
 
 | 問題 | 考慮事項 |
 | --- | --- |
 | 変数 | [!UICONTROL eVars] などの変数は、レポートスイート間で並べて使用することはできません。例えば、レポートスイート 1 の eVar1 が&#x200B;**[!UICONTROL ページ]**&#x200B;を指し、レポートスイート 2 の eVar1 が **[!UICONTROL 内部キャンペーン]** を指している場合、レポートの内容が混在したり、不正確になったりする可能性があります。 |
-| [!UICONTROL セッション] と [!UICONTROL 人物] のカウント | 複数のレポートスイートをまたいで重複排除が行われます。その結果、カウントが一致しない場合があります。 |
+| [!UICONTROL セッション]と[!UICONTROL 人物]のカウント | 複数のレポートスイートをまたいで重複排除が行われます。その結果、カウントが一致しない場合があります。 |
 | 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL 購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。これにより、主要指標の数が増えすぎるのを防ぎます。その結果、[!UICONTROL 注文] などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
 | 通貨 | CJA では、通貨換算はまだサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
 | [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md) は複数のレポートスイートにまたがって適用され、[!UICONTROL フィルター]、[!UICONTROL アトリビューション] などに影響します。数値が正しく加算されない場合があります。 |
-| [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの [!UICONTROL ルックアップ] データセットに組み合わせると、問題が発生する場合があります。 |
+| [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |
 
 
 ## 8. 従来の [!UICONTROL Adobe Analytics] コンポーネント
@@ -133,7 +133,7 @@ ht-degree: 95%
 
    * [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)を変更する。
    * [未使用の接続を削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
-   * [AEP のデータセットを削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components)。
+   * [AEP のデータセットを削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
    * 追加容量のライセンスを取得する（アドビのアカウントマネージャーにお問い合わせください）。
 
 ## 10. 使用量超過について {#overage}
@@ -146,10 +146,10 @@ ht-degree: 95%
 
 場合によっては、接続によって取り込まれるイベントの合計数が [!UICONTROL Adobe Experience Platform] のデータセットの行数と異なることがあります。この例の場合、データセット「B2B Impression」には 7650 の行がありますが、[!UICONTROL Adobe Experience Platform] のデータセットの行数は 3830 です。不一致が発生する理由はいくつかあり、次の手順を実行して診断できます。
 
-1. このディメンションを **[!UICONTROL プラットフォームデータセット ID]** で分類すると、サイズは同じでも、**[!UICONTROL プラットフォームデータセット ID]** が異なる 2 つのデータセットがあることがわかります。各データセットには 3825 件のレコードがあります。つまり、[!UICONTROL Customer Journey Analytics] では、人物 ID またはタイムスタンプが欠落していることにより、5 件のレコードが無視されています。
+1. このディメンションを **[!UICONTROL Platform データセット ID]** で分類すると、サイズは同じでも、**[!UICONTROL Platform データセット ID]** が異なる 2 つのデータセットがあることがわかります。各データセットには 3825 件のレコードがあります。つまり、[!UICONTROL Customer Journey Analytics] では、人物 ID またはタイムスタンプが欠落していることにより、5 件のレコードが無視されています。
 
    ![分類](assets/data-size2.png)
 
-1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは Customer Journey Analytics に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる[!UICONTROL プラットフォームデータセット ID] が生成されました。
+1. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは Customer Journey Analytics に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる [!UICONTROL Platform データセット ID] が生成されました。
 
-[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components)を参照してください。
+[!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。
