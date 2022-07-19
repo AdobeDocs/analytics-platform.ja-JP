@@ -1,43 +1,43 @@
 ---
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
-description: Analytics ソースコネクタでのAdobe Analytics ID フィールドの扱い方を説明します。
+description: Analytics ソースコネクタによる Adobe Analytics ID フィールドの対処方法を説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
 
-Adobe Analyticsデータには複数の id フィールドが含まれています。 3 つの重要な ID フィールドは、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja):AAID、ECID、AACUSTOMID です。
+Adobe Analytics データには、複数の ID フィールドが含まれています。[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、AAID、ECID、AACUSTOMID の 3 つの重要な ID フィールドを特別に扱います。
 
 ## AAID
 
-Adobe Analytics ID(AAID) は、Adobe Analyticsの主なデバイス識別子で、Analytics ソースコネクタを介して渡されるすべてのイベントに必ず存在します。 AAID は「レガシー Analytics ID」とも呼ばれます。 `s_vi` cookie id. ただし、AAID は、 `s_vi` cookie が存在しません。 AAID は、 `post_visid_high/post_visid_low` 列 [Adobe Analyticsデータフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja#columns%2C-descriptions%2C-and-data-types).
+Adobe Analytics ID（AAID）は、Adobe Analytics のプライマリデバイス ID で、Analytics ソースコネクタを介して渡されるすべてのイベントに存在することが保証されます。AAID は、「従来の Analytics ID」や `s_vi` cookie ID と呼ばれることもあります。ただし、AAID は、`s_vi` cookie が存在しなくても作成されます。AAID は、[Adobe Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja#columns%2C-descriptions%2C-and-data-types)の `post_visid_high/post_visid_low` 列で表されます。
 
-Analytics ソースコネクタで、AAID は `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. 特定のイベントの AAID フィールドには、単一の ID が含まれます。この ID は、 [Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (AAID には、レポートスイート全体で、複数のイベントにわたる複数のタイプが混在している場合があります。 各ヒットのタイプは、 `post_visid_type` 」列を参照してください )。 関連項目： [データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja).
+Analytics ソースコネクタで、AAID は、`HEX(post_visid_high) + "-" + HEX(post_visid_low)` に変換されます。指定されたイベントの AAID フィールドには、[Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=ja%5B%5D)に記載されているように、いくつかの異なるタイプのうちの 1 つである可能性がある単一の ID が含まれています（レポートスイート全体では、AAID にはイベント間でタイプが混在している可能性があります。各ヒットのタイプは、Analytics データフィードの `post_visid_type` 列に示されます）。[データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)も参照してください。
 
 ## ECID
 
-ECID(Experience CloudID)(MCID(Marketing CloudID) とも呼ばれます ) は、Adobe Analyticsの個別のデバイス識別子フィールドで、Analytics が [Experience CloudID サービス](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja). ECID は、 `mcvisid` Adobe Analyticsデータフィードの列。
+ECID（Experience Cloud ID）は、MCID（Marketing Cloud ID）と呼ばれることもありますが、[Experience Cloud ID サービス](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を使用して Adobe Analytics が実装される際に Analytics に設定される個別のデバイス ID フィールドです。ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
 
-イベントに ECID が存在する場合、AAID は、Analytics が [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja) が設定されている。 関連項目： [Analytics およびExperience CloudID のリクエスト](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=en).
+ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されているかどうかに応じて、ECID に基づいている可能性があります。[Analytics と Experience Cloud ID のリクエスト](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=ja)も参照してください。
 
 ## AACUSTOMID
 
-AACUSTOMID は、 `s.VisitorID` 変数を使用して、Analytics の実装で使用できます。 AACUSTOMID は、 `cust_visid` Adobe Analyticsデータフィードの列。 AACUSTOMID が存在する場合、AAID は AACUSTOMID に基づきます。 （AACUSTOMID は、上記の操作の順序で定義された他のすべての識別子を切り捨てます。）
+AACUSTOMID は、Analytics 実装の `s.VisitorID` 変数の使用に基づいて、Adobe Analytics で設定される個別の ID フィールドです。AACUSTOMID は、Adobe Analytics データフィードの `cust_visid` 列で表されます。AACUSTOMID が存在する場合、AAID は、AACUSTOMID に基づきます（AACUSTOMID は、前述の操作順序で定義されるように、他のすべての ID に優先されます）。
 
-## Analytics Source コネクタによるこれらの ID の処理方法
+## Analytics ソースコネクタによるこれらの ID の扱い方
 
-Analytics Source Connector は、これらの ID を次のように XDM 形式でAdobe Experience Platformに渡します。
+Analytics ソースコネクタは、次のように、これらの ID を XDM フォームで Adobe Experience Platform に渡します。
 
 * `endUserIDs._experience.aaid.id`
 * `endUserIDs._experience.mcid.id`
 * `endUserIDs._experience.aacustomid.id`
 
-これらのフィールドは ID としてマークされません。 代わりに、同じ ID が XDM の **_identityMap_** をキーと値のペアとして使用します。
+これらのフィールドは、ID としてマークされません。むしろ、次のように、同じ ID が XDM の **_identityMap_** にキーと値のペアとしてコピーされます。
 
 * `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
@@ -47,10 +47,9 @@ Analytics Source Connector は、これらの ID を次のように XDM 形式�
 
 identityMap 内：
 
-* ECID が存在する場合は、イベントのプライマリ ID としてマークされます。 この場合、AAID は上記の説明に従った ECID に基づく場合があります。
-それ以外の場合、AAID はイベントのプライマリ ID としてマークされます。
-* AACUSTOMID はイベントのプライマリID とはしません。 ただし、AACUSTOMID が存在する場合、AAID は上記の説明に従って AACUSTOMID に基づきます。
+* ECID が存在する場合、イベントのプライマリ ID としてマークされます。この場合、AAID は、前述のように ECID に基づいている可能性があることに注意してください。それ以外の場合、AAID は、イベントのプライマリ ID としてマークされます。
+* AACUSTOMID は、イベントのプライマリ ID としてマークされることはありません。ただし、AACUSTOMID が存在する場合、AAID は、前述のように、AACUSTOMID に基づきます。
 
-## CJA およびプライマリID
+## CJA とプライマリ ID
 
-CJA に関しては、プライマリID をユーザー ID として使用する場合にのみ、プライマリID の定義が重要です。 ただし、これは必須ではありません。 ユーザー ID として他の ID 列を選択できます。
+CJA に関する限り、プライマリ ID の定義は、プライマリ ID を人物 ID として使用することに決定している場合にのみ、重要です。ただし、これは必須ではありません。一部の他の ID 列を人物 ID として選択することできます。
