@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 0adc1c6a285bcabc1023834b39a315be1860b7d9
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 98%
+source-wordcount: '1414'
+ht-degree: 97%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 98%
 | レポート API へのアクセス | フルサポート。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | フルサポート |
 | セグメント | フルサポート。現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
+| ストリーミングメディア分析 | メディアデータは、2022 年 7 月 30 日に Workspace のメディア同時ビューアパネルおよびメディア再生に費やした時間パネルの一部として使用できるようになります。 |
 | ユーザー権限／データアクセス制御 | フルサポート。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除を行う</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>ワークスペースプロジェクトをすべてのユーザーと共有する。</li></ul> |
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
@@ -67,7 +68,7 @@ ht-degree: 98%
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics ソースコネクタを介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
-| 新規セッションレポートとリピートセッションレポート | サポート対象、 [13 ヶ月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
+| 新規セッションレポートとリピートセッションレポート | 2022 年 8 月 17 日サポート [13 ヶ月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
@@ -81,7 +82,6 @@ ht-degree: 98%
 | ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメントの比較、Analytics for Target（A4T）およびメディアの同時視聴者数のパネルはサポートされていません。 |
 | 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
-| ストリーミングメディア分析 | [メディアデータを、Analytics ソースコネクタの一部として使用できます。](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) |
 
 {style=&quot;table-layout:auto&quot;}
 
