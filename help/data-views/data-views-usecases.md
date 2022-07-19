@@ -4,9 +4,9 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1092'
 ht-degree: 69%
 
 ---
@@ -88,6 +88,10 @@ f. 値として「50」を指定します。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。
 
 ## 7.新しいセッションレポートと繰り返しセッションレポートの比較 {#new-repeat}
+
+>[!NOTE]
+>
+>この機能は、現在、限定的にテスト中です。
 
 このデータビューに対して定義したレポートウィンドウと 13 ヶ月のルックバックウィンドウに基づいて、セッションがユーザーにとって実際に初めてのセッションであるかどうかを判断できます。 このレポートを使用すると、次のような情報を確認できます。
 
