@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ CJA アーキテクチャの概要を次に示します。
 
 ## CJA と従来の Adobe Analytics の比較
 
-Customer Journey Analyticsは、使いやすいクロスチャネル機能を提供し、以前のバージョンのAdobe Analyticsの制限を取り除くことで、Adobe Analyticsの範囲を広げます。 主な改善点を次に示します。
+Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Adobe Analytics の範囲を広げています。主な改善点を次に示します。
 
-* **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットには、一意のディメンションと指標の数に制限はありません。
+* **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットは、一意のディメンションと指標の数に制限はありません。
 * **無制限の一意の値**：Adobe Experience Platform では、一意制限を受けることはありません。
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
 * **クロスレポートスイートデータ**：Platform で、複数のデータセットから既存の実装を組み合わせることができます。
@@ -41,9 +41,9 @@ Customer Journey Analytics では、次のことが可能です。
 * **ジャーニーのコンテキストと照らし合わせて顧客を把握する**：複数のチャネルにまたがるデータを、順番に表示および分析できます。コールセンター、POS システム、オンラインプロパティのデータを、1 つのレポートビューに組み合わせることができます。
 * **誰でもインサイトを利用可能**：データアクセスを民主化し、多くの人がデータに基づいたインサイトを活用してよりビジネス上の意思決定を行えるようにします。顧客体験のあらゆる側面を取り扱う組織に所属するすべてのメンバーが、より完全なデータに基づいて、実際の意思決定を迅速に下すことができます。
 * **データアナリスト向けデータサイエンスの機能を活用**：Customer Journey Analytics を使用すると、専門家でなくてもデータサイエンスを活用して、深いインサイトと分析を解き放つことができます。
-* **オンデマンドレポートを使用して、データセットの視覚化と操作をおこなう**:Workspace では、一部の基本ルールに準拠するAdobe Experience Platformの任意のデータセットを使用できます。
+* **オンデマンドレポートを使用してデータセットの視覚化や操作を行う**：ワークスペースでは、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
 * **Web 以外の表示データ**：ワークスペースは、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
-* **データ操作をより詳細に制御できます**:アップロードしたデータを変更し、データセットを作成して、Workspace に読み込みます。 Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みを行います。
+* **データ操作をより詳細に制御**：アップロードしたデータの変更、データセットの作成、ワークスペースへの読み込みを行います。Adobe Experience Platform は、Experience Cloud クエリサービスを通じて、ツールのクエリ、抽出、変換および読み込みを行います。
 
 ## 前提条件
 
@@ -54,11 +54,11 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## 管理者アクセス権限
 
-接続を作成したり、データセットを追加したりするには、 [Admin Console](https://adminconsole.adobe.com/enterprise/):
+接続を作成したり、データセットを追加したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で次の権限が必要です。
 
-* Customer Journey Analyticsにアクセスする、または接続するには、管理者として **Customer Journey Analytics製品** 内 [Admin Console](https://adminconsole.adobe.com/enterprise/). 製品管理者には、次の権限が付与されます。
+* Customer Journey Analytics にアクセスしたり接続したりするには、[Admin Console](https://adminconsole.adobe.com/enterprise/) で **Customer Journey Analytics 製品**&#x200B;に対する管理者として追加される必要があります。製品管理者には、次の権限が付与されます。
    * 接続またはデータ表示の作成／更新／削除を行う
-   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新/削除
+   * 他のユーザーが作成したプロジェクト、フィルター、計算指標、フィルターの更新／削除を行います。
    * ワークスペースプロジェクトをすべてのユーザーと共有する
 * Customer Journey Analytics 内で製品管理者になるだけでは、接続を作成、更新、削除することはできません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
    * スキーマの表示
@@ -70,7 +70,7 @@ Experience Platform 権限について詳しくは、「[Adobe Experience Platfo
 
 >[!NOTE]
 >
->従来のAdobe Analyticsとは異なり、Customer Journey Analytics内の個々の指標やディメンションに対する権限を付与または拒否することはできません。 指標とディメンションは[データビュー](/help/data-views/data-views.md)で変更できるので、CJA で変更される可能性があります。その場合、レポートも遡って変更されます。
+>従来の Adobe Analytics の場合とは異なり、Customer Journey Analytics 内の個々の指標やディメンションに権限を付与または拒否することはできません。指標とディメンションは[データビュー](/help/data-views/data-views.md)で変更できるので、CJA で変更される可能性があります。その場合、レポートも遡って変更されます。
 
 ### ユーザーアクセス
 
@@ -94,9 +94,9 @@ Customer Journey Analytics は、Adobe Experience Platform に依存する多数
 
 Adobe Experience Platform を使用すると、顧客データとコンテンツを任意のシステムから一元管理し、データサイエンスと機械学習を適用して、パーソナライズされた豊富なエクスペリエンスのデザインと配信を大幅に改善できます。プラットフォーム内の顧客データは、スキーマとデータのバッチで構成されるデータセットとして保存されます。Experience Platform について詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=ja)を参照してください。
 
-データ取り込みから直接 SQL アクセスに至るまで、Experience PlatformのいくつかのコンポーネントがCustomer Journey Analyticsの中心となり、次のように補完します。
+データ取り込みから SQL への直接アクセスに至るまで、Experience Platform のいくつかのコンポーネントが Customer Journey Analytics の中心となり、補完します。
 
-* [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：標準 SQL を使用して、Adobe Experience Platform からデータ（アドビのソリューションデータ、お客様のファーストパーティデータ、その他の Platform データなど）を取得します。あらゆるデータセットを結合し、クエリ結果を新しいデータセットとして取り込んでレポートや Data Science Workspace で使用したり、プロファイルサービスに取り込んだりできる、サーバーレスのツールです。クエリサービスを使用してデータ分析のエコシステムを構築し、様々なインタラクションチャネルをまたいだ消費者の全体像を把握できます。これらのチャネルには、POS（販売時点管理システム）、Web、モバイル、CRM システムなどが含まれます。
+* [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：標準 SQL を使用して、Adobe Experience Platform からデータ（アドビのソリューションデータ、お客様のファーストパーティデータ、その他の Platform データなど）を取得します。あらゆるデータセットを結合し、クエリ結果を新しいデータセットとして取り込んでレポートや Data Science Workspace で使用したり、プロファイルサービスに取り込んだりできる、サーバーレスのツールです。クエリサービスを使用してデータ分析のエコシステムを構築し、様々なインタラクションチャネルをまたいだ消費者の全体像を把握できます。これらのチャネルには、POS（販売時点管理システム）、web、モバイル、CRM などが含まれます。
 * [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)：
 * [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)：
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=ja)（「開発者」オプション）：Adobe Experience Platform にあらかじめ組み込まれた人工知能（AI）および機械学習モデルを使用して、カスタマージャーニーの様々なポイントに影響を与えることができます。隠れたインサイトを把握することで、カスタマージャーニーを通じてより優れた予測を行ったり、推奨される次のステップを提案したり、面倒なプロセスを自動化したりできます。
