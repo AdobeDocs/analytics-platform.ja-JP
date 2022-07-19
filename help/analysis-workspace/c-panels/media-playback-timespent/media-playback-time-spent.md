@@ -4,19 +4,14 @@ description: Analysis Workspace のメディア再生滞在時間パネルを使
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '246'
 ht-degree: 84%
 
 ---
 
 # メディア再生滞在時間パネル
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
-
 
 再生に費やした時間を分析して、同時実行のピークが発生した場所やドロップオフが発生した場所を把握し、コンテンツや閲覧者のエンゲージメントの質に関する貴重なインサイトを得たり、ボリュームや規模のトラブルシューティングや計画に役立てたりできます。
 

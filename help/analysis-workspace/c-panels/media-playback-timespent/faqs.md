@@ -4,19 +4,14 @@ description: メディア再生滞在時間に関する FAQ とは何ですか�
 feature: Panels
 role: User, Admin
 exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
-source-git-commit: 2321e59570cec9e34fc003a4011ded7906d11475
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '245'
 ht-degree: 94%
 
 ---
 
 # メディア再生滞在時間に関する FAQ
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
-
 
 | 質問 | 回答 |
 |---|---|
