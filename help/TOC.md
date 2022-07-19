@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ ht-degree: 93%
    + [よくある質問](getting-started/cja-faq.md)
    + [Adobe Analytics から Customer Journey Analytics への進化](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](getting-started/aa-to-cja-user.md)
-   + Adobe AnalyticsとCustomer Journey Analyticsの比較 {#compare-aa-cja}
+   + Adobe Analytics と Customer Journey Analytics の比較 {#compare-aa-cja}
       + [Customer Journey Analytics の機能のサポート](getting-started/aa-vs-cja/cja-aa.md)
-      + [Adobe Analyticsと CJA でのデータ処理の比較](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Adobe Analytics と CJA にまたがるデータ処理の比較](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [仮想レポート環境とサンドボックス環境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -120,7 +120,7 @@ ht-degree: 93%
       + [空のパネル](analysis-workspace/c-panels/blank-panel.md)
       + [フリーフォームパネル](analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](analysis-workspace/c-panels/quickinsight.md)
-      + [メディア同時視聴者数パネル](analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [メディアの同時視聴者数パネル](analysis-workspace/c-panels/media-concurrent-viewers.md)
       + メディア再生滞在時間 {#media-playback-timespent}
          + [概要](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [入力と出力の設定](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
@@ -219,7 +219,7 @@ ht-degree: 93%
    + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
-   + [異なるスキーマでレポートスイートを組み合わせる](use-cases/combine-report-suites.md)
+   + [レポートスイートを様々なスキーマと組み合わせる](use-cases/combine-report-suites.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [バインディングディメンションと指標の使用](use-cases/binding-dimensions-metrics.md)
    + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](use-cases/b2b.md)
@@ -231,7 +231,7 @@ ht-degree: 93%
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
    + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
    + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
-+ ラボ{#labs}
++ ラボ {#labs}
    + [ラボユーザーガイド](labs/labs.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](troubleshooting/compare.md)
