@@ -1,19 +1,20 @@
 ---
-description: Real-time Customer Data Platform（リアルタイム CDP）と CJA との間の指標の一貫性に影響する要因について説明します。
-title: リアルタイム CDP と CJA 間の指標の一貫性
+description: Real-time Customer Data Platform（リアルタイム CDP）と CJA の間の指標とオーディエンスメンバーシップのカウントの一貫性に影響する要因について説明します。
+title: リアルタイム CDP と CJA の間で、指標とオーディエンスメンバーシップのカウントの一貫性を維持する
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
 
-# リアルタイム CDP と CJA 間の指標の一貫性
+# リアルタイム CDP と CJA の間で、指標とオーディエンスメンバーシップのカウントの一貫性を維持する
 
-実際のシナリオでは、Real-time Customer Data Platform（リアルタイム CDP）とCustomer Journey Analytics(CJA) 全体での指標の一貫性を保証することはできません。 このドキュメントでは、理由を説明します。
+実際のシナリオでは、Real-time Customer Data Platform（リアルタイム CDP）とCustomer Journey Analytics(CJA) 全体で指標とオーディエンスメンバーシップのカウントの一貫性を保証することはできません。 このドキュメントでは、理由を説明します。
 
 ## CJA はまだ ID グラフを使用していません
 
