@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: bd246314734e8bcebc351d42ebe28ad4912f7ba6
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 98%
+source-wordcount: '910'
+ht-degree: 95%
 
 ---
 
@@ -17,6 +17,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年7月 | [メディア再生時間滞在パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) ドキュメント。 |
+| 2022年7月 | [メディア同時ビューアパネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) ドキュメント。 |
 | 2022年7月 | [新規セッションとリピートセッションの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) レポートドキュメント。 |
 | 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=ja)に関する新しい記事 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事 |
