@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6e630507dc70715fb67cf4755a0e0864c26a5930
+source-git-commit: ba7cdc625d034ebb3470b716b20c602417486571
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 97%
+source-wordcount: '696'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 97%
    + [CJA アクセス制御](getting-started/cja-access-control.md)
    + [Customer Journey Analytics のランディングページ](getting-started/landing.md)
    + [よくある質問](getting-started/cja-faq.md)
-   + [リアルタイム CDP と CJA の間で、指標とオーディエンスメンバーシップのカウントの一貫性を維持する](getting-started/consistency-rcdp-cja.md)
    + [Adobe Analytics から Customer Journey Analytics への進化](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](getting-started/aa-to-cja-user.md)
    + Adobe Analytics と Customer Journey Analytics の比較 {#compare-aa-cja}
