@@ -4,10 +4,10 @@ title: リアルタイム CDP と CJA の間で、指標とオーディエンス
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
+source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 2%
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
@@ -16,45 +16,22 @@ ht-degree: 2%
 
 実際のシナリオでは、Real-time Customer Data Platform（リアルタイム CDP）とCustomer Journey Analytics(CJA) 全体で指標とオーディエンスメンバーシップのカウントの一貫性を保証することはできません。 このドキュメントでは、理由を説明します。
 
-## CJA はまだ ID グラフを使用していません
+## ID 設定の違い
 
-CDP と CJA は、今日の人物の同じ定義を共有しません。 CJA はまだを使用していません [ID グラフ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja) 人物の定義を知らせる リアルタイム CDP は、結合されたプロファイルを作成するために ID グラフの情報に完全に依存します。
+リアルタイム CDP と CJA は、現在、人物の同じ定義を共有していません。 リアルタイム CDP は、 [ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) をクリックして、結合されたプロファイルを作成します。
 
-CJA は、 [フィールドベースのステッチ](/help/connections/cca/overview.md) は、データレイクのデータセットから識別子を抽出し、それらをリンクするカスタムロジックを適用します。 CJA は、近い将来に、 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) がデータレイクに書き出され、リアルタイム CDP と CJA をまたいで ID の共有概念を実現します。
+CJA は、 [クロスチャネル分析](/help/connections/cca/overview.md) は、データレイクのデータセットから識別子を抽出し、それらをリンクするカスタムロジックを適用します。
+今後、CJA は ID グラフを使用できるようになります。
 
->[!IMPORTANT]
->
->Adobe Experience Platform ID サービスをすべてのAdobe Experience Platformアプリケーションの真のアイデンティティソースにすることは、アプリケーション間で指標の一貫性を自動的に維持するわけではありません。 その理由については、以下を参照してください。
+## データセットの設定の違い
 
-## アプリケーションデータの柔軟性
+一部のデータをリアルタイム CDP に、一部を CJA に配置できます。多くの場合、顧客は、リアルタイム CDP に関連するよりも多くの履歴データを CJA に配置することを選択します。 他のデータセットは、CJA の場合よりも、リアルタイム CDP に関してより関連性が高い場合があります。
 
-Experience Platformでは、リアルタイム顧客プロファイルとデータレイクの間のデータを同じに保つために、厳密な適用はおこなわれません。 一部の使用例では [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-overview.html?lang=en) （活動）、他の人は [データレイク](https://business.adobe.com/blog/basics/data-lake) （レポートおよびクエリサービス）。
+## 処理設定の違い
 
-リアルタイム CDP のお客様は、通常、Adobe Experience Platformデータレイクのデータの 100%をプロファイルに取り込んでいません。 これは設計によるもので、顧客は特にプロファイル用に湖のデータを有効にする必要があります。 CJA を使用すると、データアナリストは、リアルタイム CDP が有効になっているものとは無関係に、データレイクからの分析に取り込むデータを自由に選択できます。
+CJA を使用すると、フィールドの結合、フィールドの分割、含む/除外、サブ文字列、値の重複排除、セッション化、行レベルのフィルタリングなどの他の操作など、クエリ時に大幅なデータ変更をおこなうことができます。
 
-## アプリケーション固有の修飾子
-
-CJA を使用すると、フィールドの結合、フィールドの分割、通貨換算、値の重複排除、セッション化、行レベルのフィルタリングなどの操作など、クエリ時に広範なデータを変更できます。 これらの機能は CDP では使用できません。
-
-同様に、リアルタイム CDP が適用されます [結合ポリシー](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) 優先順位を付けるデータと組み合わせるデータを決定し、人物の統合ビューを作成します。 これらの設定は、各アプリケーションのロジック内にしっかりと配置され、共有されません。
-
-## 読み取り時間と書き込み時間の動作
-
-リアルタイム CDP には、最新の ID グラフを使用したポイントインタイムプロファイルのステッチが必要です。
-
-* リアルタイム CDP は、アクティブ化のために、プロファイル情報をリアルタイムで組み立てるように設計されています。
-
-* 特定のユーザーの設定された識別子に対するすべての変更にリアルタイムで対応できます。
-
-* ルックバックウィンドウは、セグメント定義で制御します。
-
-CJA は、ID グラフ書き出しを使用して、書き込み時にデータを結び付ける必要があります。
-
-* CJA は、データを分析用に準備する前に、インデックス作成、シャード化、グループ化など、複雑な前処理手順を適用します。
-
-* 特定のユーザーの人物識別子は、前処理ステージの重要な入力です。その後、担当者 id を変更すると、再処理に大きなコストがかかります。
-
-* ルックバックウィンドウは、アプリケーションレベルで制御します。
+リアルタイム CDP は、様々なデータ操作ツールのセットを提供します。 該当 [結合ポリシー](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) 優先順位を付けるデータと組み合わせるデータを決定し、人物の統合ビューを作成します。
 
 ## TTL(Time to Live) とデータ取り込みの違い
 
@@ -70,10 +47,6 @@ CJA は、ID グラフ書き出しを使用して、書き込み時にデータ�
 
 * Real-time CDP のプロファイルストアを使用すると、顧客が設定可能な TTL を許可できます。 お客様は、この TTL を、ライセンスの使用権限内に保つ必要があるものに変更できます。
 
-## GDPR（一般データ保護規則）処理の違い
-
-リアルタイム CDP とデータレイク全体での GDPR のデータ処理ロジックとデータの衛生状態は、かなり異なります。 我々は、単一のアプローチに向けて取り組んでいます。
-
 ## データ取り込み遅延の違い
 
-CJA レポートには、データがレポートやオーディエンス作成に使用できるようになるまでの遅延が含まれます。 リアルタイム CDP は、遅延の異なる様々なシステムを介してデータを処理します。
+CJa にはまだリアルタイム CDP のリアルタイム機能がなく、その結果、CJA レポートには、データがレポートやオーディエンス作成に使用できるようになる前の遅延が含まれます。 リアルタイム CDP は、遅延の異なる様々なシステムを介してデータを処理します。
