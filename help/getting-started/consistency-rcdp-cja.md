@@ -4,9 +4,9 @@ title: リアルタイム CDP と CJA の間で、指標とオーディエンス
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 実際のシナリオでは、Real-time Customer Data Platform（リアルタイム CDP）とCustomer Journey Analytics(CJA) 全体で指標とオーディエンスメンバーシップのカウントの一貫性を保証することはできません。 このドキュメントでは、理由を説明します。
 
+リアルタイム CDP と CJA の間でオーディエンスのメンバーシップ数を比較する場合、これら 2 つのツールの異なる目的に注意する必要があります。 リアルタイム CDP は、顧客プロファイルデータを使用して個々の消費者にデジタルエクスペリエンスをターゲット設定する一方、CJA は、主要なビジネス指標やセグメントのパターンを理解するのに役立ちます。 CJA からリアルタイム CDP にオーディエンスを公開すると、これらのツールのユーザーは、CJA で得られた知識を活用し、インサイトを簡単かつネイティブに「アクティブ化」できますが、これらのツールは根本的に異なる目的を果たします。
+
 ## ID 設定の違い
 
 リアルタイム CDP と CJA は、現在、人物の同じ定義を共有していません。 リアルタイム CDP は、 [ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) をクリックして、結合されたプロファイルを作成します。
 
 CJA は、 [クロスチャネル分析](/help/connections/cca/overview.md) は、データレイクのデータセットから識別子を抽出し、それらをリンクするカスタムロジックを適用します。
+
 今後、CJA は ID グラフを使用できるようになります。
 
 ## データセットの設定の違い
