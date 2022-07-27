@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: bd246314734e8bcebc351d42ebe28ad4912f7ba6
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | --- | --- |
 | 2022年7月 | [メディア再生時間滞在パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) ドキュメント。 |
 | 2022年7月 | [メディア同時ビューアパネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) ドキュメント。 |
-| 2022年7月 | [新規セッションとリピートセッションの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) レポートドキュメント。 |
+| 2022年7月 | [新規セッションとリピートセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)レポートドキュメント。 |
 | 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=ja)に関する新しい記事 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事 |
 | 2022年6月 | [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)に関する新しい記事 |
