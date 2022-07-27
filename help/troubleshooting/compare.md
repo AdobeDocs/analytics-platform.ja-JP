@@ -4,10 +4,10 @@ description: Adobe Analytics データを Customer Journey Analytics のデー�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '782'
-ht-degree: 100%
+source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 95%
 
 ---
 
@@ -65,16 +65,18 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja) で、生データから、Analytics ソースコネクタによって一部の行が削除された可能性があるかどうかを確認します。
 
-   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行が削除される可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
+   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)では、XDM スキーマへの変換中に行が削除される可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
 
-   | Analytics フィールド | 削除される原因となる値 |
+   | Analytics フィールド | 行が削除される原因となる値 |
    | --- | --- |
-   | Opt_out | `y, Y` |
+   | Opt_out | y, Y |
    | In_data_only | 0 ではない |
    | Exclude_hit | 0 ではない |
    | Bot_id | 0 ではない |
-   | Hit_source | 0,3,5,7,8,9,10 |
+   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53,63 |
+
+   hit\_source について詳しくは、以下を参照してください。 [データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja). page\_event について詳しくは、以下を参照してください。 [ページイベント参照](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
 
 1. コネクタによって行が削除された場合は、[!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
 
