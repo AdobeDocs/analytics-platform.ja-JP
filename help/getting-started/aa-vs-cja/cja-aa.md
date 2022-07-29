@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9d928a68e9b2eb16ba14cd793857547432ba11b0
+source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 97%
+source-wordcount: '1493'
+ht-degree: 92%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 97%
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
+| IP Obfuscation（IP の不明化） | Analytics Source Connector を使用して CJA をご利用のお客様がAdobe Analyticsから CJA にデータを入力する場合：Adobe Analyticsで適用された IP Obfuscation（IP の不明化）設定は、CJA データを通じて CJA データに送信されます。 必要に応じて、Adobe Analyticsでこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用して CJA のお客様がデータを Platform および CJA に直接入力する場合：Platform の Data Prep for Data Collection を使用して、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics ソースコネクタを介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
 | 新規セッションとリピートセッションレポート | 2022 年 8 月 17 日サポート [13 ヶ月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat). |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
