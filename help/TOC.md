@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
+source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '711'
 ht-degree: 97%
 
 ---
@@ -104,18 +104,19 @@ ht-degree: 97%
          + [フローの概要](analysis-workspace/visualizations/c-flow/flow.md)
          + [フロービジュアライゼーションの設定](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [ヒストグラム](analysis-workspace/visualizations/histogram.md)
-      + [ベン](analysis-workspace/visualizations/venn.md)
       + [面グラフおよび積み重ね面グラフ](analysis-workspace/visualizations/area.md)
       + [棒グラフおよび積み重ね棒グラフ](analysis-workspace/visualizations/bar.md)
       + [ブレットグラフ](analysis-workspace/visualizations/bullet-graph.md)
       + [ドーナツ](analysis-workspace/visualizations/donut.md)
+      + [ヒストグラム](analysis-workspace/visualizations/histogram.md)
       + [横棒グラフおよび積み重ね横棒グラフ](analysis-workspace/visualizations/horizontal-bar.md)
+      + [主要な指標の概要](analysis-workspace/visualizations/key-metric.md)
       + [行](analysis-workspace/visualizations/line.md)
       + [散布図](analysis-workspace/visualizations/scatterplot.md)
       + [数値の概要と変更概要](analysis-workspace/visualizations/summary-number-change.md)
       + [テキスト](analysis-workspace/visualizations/text.md)
       + [ツリーマップ](analysis-workspace/visualizations/treemap.md)
+      + [ベン](analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
       + [パネルの概要](analysis-workspace/c-panels/panels.md)
       + [アトリビューションパネル](analysis-workspace/c-panels/attribution.md)
