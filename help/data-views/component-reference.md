@@ -4,10 +4,10 @@ description: 任意のデータビューに追加できるすべての標準コ�
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8e43c65c372f57dc54d01114b9c06a59d5c0efe4
+source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '915'
+ht-degree: 100%
 
 ---
 
@@ -35,6 +35,8 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 | [!UICONTROL 月] | ディメンション | 特定のイベントが発生した月。最初のディメンション項目は日付範囲の最初の月で、最後のディメンション項目は日付範囲の最後の月です。 |
 | [!UICONTROL 四半期] | ディメンション | 特定のイベントが発生した四半期。最初のディメンション項目は日付範囲の最初の四半期で、最後のディメンション項目は日付範囲の最後の四半期です。 |
 | [!UICONTROL 年] | ディメンション | 特定のイベントが発生した年。最初のディメンション項目は日付範囲の最初の年で、最後のディメンション項目は日付範囲の最も新しい年です。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 標準コンポーネント（オプション） {#optional}
 
@@ -64,3 +66,4 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 | [!UICONTROL ユーザー別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL 個人] グループ別にまとめたものです。 |
 | [!UICONTROL 週末]／[!UICONTROL 平日] | 時間分割ディメンション | 週末または平日 |
 
+{style=&quot;table-layout:auto&quot;}
