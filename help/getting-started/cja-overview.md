@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## アクセス制御
 
-詳しくは、 [アクセス制御](/help/getting-started/cja-access-control.md) トピック。
+[アクセス制御](/help/getting-started/cja-access-control.md)に関するトピックを参照してください。
 
 ## 用語の更新
 

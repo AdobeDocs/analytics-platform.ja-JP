@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 + Customer Journey Analytics の概要 {#cja-overview}
    + [Customer Journey Analytics の概要](getting-started/cja-overview.md)
    + [はじめに](getting-started/cja-getting-started.md)
-   + [リアルタイム CDP と CJA の間で、指標とオーディエンスメンバーシップのカウントの一貫性を維持する](getting-started/consistency-rcdp-cja.md)
+   + [Real-time CDP と CJA の間における指標とオーディエンスメンバーシップのカウントの一貫性](getting-started/consistency-rcdp-cja.md)
    + [CJA アクセス制御](getting-started/cja-access-control.md)
    + [Customer Journey Analytics のランディングページ](getting-started/landing.md)
    + [よくある質問](getting-started/cja-faq.md)

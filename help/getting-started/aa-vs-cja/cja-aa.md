@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 92%
 | レポート API へのアクセス | フルサポート。[CJA API](https://www.adobe.io/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | フルサポート |
 | セグメント | フルサポート。現在は「フィルター」と呼ばれています。従来の Analysis Workspace 内の既存のセグメントは CJA に移植されません。 |
-| ストリーミングメディア分析 | メディアデータは、2022 年 7 月 30 日に Workspace のメディア同時ビューアパネルおよびメディア再生に費やした時間パネルの一部として使用できるようになります。 |
+| ストリーミングメディア分析 | メディアデータは、2022年7月30日に Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として使用できるようになります。 |
 | ユーザー権限／データアクセス制御 | フルサポート。CJA は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) の製品管理者とユーザーを区別します。製品管理者のみが次のことを行うことができます。 <ul><li>接続またはデータ表示の作成／更新／削除を行う</li><li>他のユーザーが作成したプロジェクト、フィルターまたは計算指標の更新／削除、および</li><li>ワークスペースプロジェクトをすべてのユーザーと共有する。</li></ul> |
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md) と呼ばれています。 |
 | VRS コンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
@@ -69,7 +69,7 @@ ht-degree: 92%
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
 | IP Obfuscation（IP の不明化） | Analytics Source Connector を使用して CJA をご利用のお客様がAdobe Analyticsから CJA にデータを入力する場合：Adobe Analyticsで適用された IP Obfuscation（IP の不明化）設定は、CJA データを通じて CJA データに送信されます。 必要に応じて、Adobe Analyticsでこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用して CJA のお客様がデータを Platform および CJA に直接入力する場合：Platform の Data Prep for Data Collection を使用して、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics ソースコネクタを介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
-| 新規セッションとリピートセッションレポート | 2022 年 8 月 17 日サポート [13 ヶ月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat). |
+| 新規セッションとリピートセッションレポート | 2022年8月17日にサポート対象、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)。 |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
