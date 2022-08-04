@@ -3,25 +3,25 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3b2a6225d6f94b158e217df4963611cb6d55580e
+source-git-commit: 509eed292df7c778f30389267dc61f900d230024
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Customer Journey Analytics（CJA）の最新リリースノート（2022年7月）
 
-**最終更新日**：2022年7月28日
+**最終更新日**:2022 年 8 月 5 日
 
 ## 主な特長
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | ルックアップキーおよびルックアップ値としての数値フィールドの使用のサポート | 製品 SKU の COGS やマージンなどの数値フィールドで文字列値を分類したい場合に便利です。ルックアップからの指標を許可することで、これらのデータポイントをレポートに取り込むことができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#numeric) | 2022年7月20日 |
+| メディア同時ビューアパネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | **2022 年 8 月 10 日** |
+| メディア再生滞在時間パネル | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | **2022 年 8 月 10 日** |
 | 初回セッションレポートとリピートセッションレポート | 特定のセッションがユーザーの初めてのセッションかどうかを検出できるようになりました。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) | 2022年8月17日 |
-| メディア同時ビューアパネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | 2022年8月31日 |
-| メディア再生滞在時間パネル | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | 2022年8月31日 |
 
 {style=&quot;table-layout:auto&quot;}
 
