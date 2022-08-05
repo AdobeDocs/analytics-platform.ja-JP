@@ -2,18 +2,14 @@
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
+source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '359'
 ht-degree: 94%
 
 ---
 
 # CJA オーディエンス公開の概要
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
 Customer Journey Analytics（CJA）で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCP）に公開し、顧客のターゲティングやパーソナライゼーションに使用できるようになりました。
 

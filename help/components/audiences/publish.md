@@ -2,18 +2,14 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '1000'
+source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
+workflow-type: tm+mt
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
 
 # オーディエンスの作成と公開
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
 このトピックでは、Customer Journey Analytics（CJA）で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCP）に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
 

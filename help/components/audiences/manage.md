@@ -2,18 +2,14 @@
 title: Customer Journey Analytics で作成したオーディエンスの管理
 description: Customer Journey Analytics でのオーディエンスの管理方法を学ぶ
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '282'
+source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
+workflow-type: tm+mt
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics で作成したオーディエンスの管理
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
 以前に作成したオーディエンスを管理することで、
 
