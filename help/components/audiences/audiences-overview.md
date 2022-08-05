@@ -2,10 +2,10 @@
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,11 @@ Customer Journey Analytics（CJA）で検出されたオーディエンスを作
 
 ## 権限
 
-管理者には、Adobe Admin Console での[!UICONTROL オーディエンス公開]権限が付与されます。管理者は、この権限を個々のユーザーに付与できます。
+* 管理者には、Adobe Admin Console での&#x200B;**[!UICONTROL オーディエンス公開]**&#x200B;権限が付与されます。
+
+* 管理者は、個々のユーザーにこの権限を付与できます。
+
+* 管理者には **[!UICONTROL プロファイルの管理]** Adobe Experience Platformの権限
 
 ## 次の手順
 

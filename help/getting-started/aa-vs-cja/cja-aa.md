@@ -4,9 +4,9 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1521'
 ht-degree: 94%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 94%
 | --- | --- |
 | 異常値検出 | フルサポート |
 | Attribution IQ | フルサポート |
+| オーディエンス公開 | フルサポート。AA では、セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信）と呼ばれていました。[オーディエンスの公開](/help/components/audiences/audiences-overview.md) は、オーディエンスをExperience Platformでリアルタイム顧客プロファイルに送信します。 |
 | 計算指標 | フルサポート。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
 | 分類ルールビルダー | フルサポート。CJA では、[部分文字列](/help/data-views/component-settings/substring.md)と呼ばれます。ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
