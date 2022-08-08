@@ -1,11 +1,18 @@
 ---
-source-git-commit: c25e320268aeda85eb6709ca3458c60c6f24fea3
+title: Analytics Source Connector を通じて渡された Analytics データに関する用語の比較
+description: 用語の違い
+solution: Customer Journey Analytics
+source-git-commit: 287c75fd2b519f3d1d86209e0b0ab4ed7f761814
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 28%
+source-wordcount: '788'
+ht-degree: 27%
 
 ---
-# Analytics Source Connector を通じて渡される Analytics データに関する用語の比較
+
+
+# Analytics Source Connector を通じて渡された Analytics データに関する用語の比較
+
+Adobe Analytics、データフィード、Analytics Source Connector/Data Lake および CJA では、用語の違いがいくつか存在します。 このトピックでは、その違いを強調し、明確にすることを目的としています。
 
 | 関連する用語 | Adobe Analytics | Adobe Analyticsデータフィード | Analytics ソースコネクタ/データレイク | CJA | メモ |
 |---|---|---|---|---|---|

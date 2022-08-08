@@ -4,7 +4,7 @@ description: データビューの作成や編集を行うために調整でき�
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 100%
@@ -126,3 +126,4 @@ ht-degree: 100%
 セッションの有効期限が切れてから新しいセッションが開始されるまでの間に無操作状態が続く期間を指定します。期間を指定する必要があります。オプションで、イベントに特定の指標が含まれる場合は新しいセッションを強制的に開始することもできます。
 
 必要な設定をすべて指定したら、「**[!UICONTROL 保存して終了]**」をクリックします。
+
