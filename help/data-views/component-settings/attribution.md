@@ -4,9 +4,9 @@ description: 指標のデフォルトのアトリビューションを設定で�
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '218'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '221'
 ht-degree: 100%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 100%
 | [!UICONTROL アトリビューションを設定] | この指標が使用される場合に、デフォルトのアトリビューションモデルを有効にします。このデフォルトは、[!UICONTROL フリーフォームテーブル]または計算指標で上書きできます。 |
 | [!UICONTROL アトリビューションモデル] | 使用するデフォルトの [アトリビューションモデル](/help/analysis-workspace/attribution/models.md) を指定できます。デフォルトは「[!UICONTROL ラストタッチ]」です。オプションは、ラストタッチ、ファーストタッチ、リニア、パーティシペーション、同じタッチ、U 字型、J 曲線、逆 J、時間減衰、カスタム、アルゴリズムです。 これらのオプションの一部は、「カスタム」や「時間減衰」など、入力が必要な追加フィールドを作成します。同じフィールドを使用して複数の指標を作成できます。つまり、1 つの「[!UICONTROL ラストタッチ]」売上高指標と 1 つの「[!UICONTROL ファーストタッチ]」売上高指標を持つことができますが、これらはスキーマ内の同じ売上高フィールドに基づきます。 |
 | [!UICONTROL ルックバックウィンドウ] | 指標に対するデフォルトのルックバックウィンドウを指定できます。オプションは、[!UICONTROL 個人]（レポートウィンドウ）、[!UICONTROL セッション]、[!UICONTROL カスタム]です。「[!UICONTROL カスタム]」を選択すると、日数／週数／月数などを選択するオプションも提供されます。（最長 90 日間）[!UICONTROL Attribution IQ] と同様です。同じスキーマフィールドを使用して複数の指標を設定できますが、指標ごとに別々のルックバックウィンドウがあります。 |
+
+{style=&quot;table-layout:auto&quot;}

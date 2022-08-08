@@ -4,9 +4,9 @@ description: レポートでのディメンションまたは指標の動作を�
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '307'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '313'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 小文字] | 値は同じで大文字と小文字が異なる行の重複を排除します。有効にすると、同じ値を持つディメンションのすべてのインスタンスが小文字としてレポートされます。例えば、文字列ディメンションに `"liverpool"`、`"Liverpool"`、`"LIVERPOOL"` の値がデータに含まれているとします。[!UICONTROL 小文字] が有効になっている場合、3 つの値すべてが `"liverpool"` に結合されます。無効にした場合、3 つの値すべてが異なる値として扱われます。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ![大文字と小文字を区別するディメンション](../assets/case-sens-workspace.png)
 
 >[!NOTE]
@@ -36,5 +38,7 @@ ht-degree: 100%
 | [!UICONTROL 値をカウント] | 整数および倍精度スキーマのデータタイプに表示されます。指定した量だけ指標を増やします。例えば、列の値が `50` の場合は、指標の値を 50 増やします。 |
 | [!UICONTROL インスタンスをカウント] | 整数および倍精度スキーマのデータタイプに表示されます。値に関係なく、指標を 1 増やします。任意の値が存在すると、指標が増加します。例えば、列の値が `50` の場合は、指標の値を 1 増やします。 |
 | [!UICONTROL カウントする値] | ブールスキーマデータタイプに表示されます。`true`、`false`またはその両方をカウントすることで、指標の増加を判断できます。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 異なる動作をする同じイベントデータセット列を使用して、Analysis Workspace で「注文件数」と「売上高」の両方の指標を生成できます。「売上高」データセット列をデータビューに 2 回ドラッグし、1 つを「カウント値」に、もう 1 つを「カウントインスタンス」に設定します。「注文件数」指標はインスタンス、「売上高」指標は値をカウントします。

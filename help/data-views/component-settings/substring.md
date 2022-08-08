@@ -4,9 +4,9 @@ description: 文字列のサブセットをディメンション項目として�
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: ht
-source-wordcount: '911'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -113,6 +113,8 @@ CJA では、Perl 正規表現構文のサブセットを使用します。入�
 | ``$` `` | 最後に見つかった一致の終わり（前に一致が見つからなかった場合は、テキストの始まり）から、現在の一致の始まりまでのテキストを出力します。 |
 | `$+` | 正規表現で最後にマークされたサブ式に一致するものを出力します。 |
 | `$$` | 文字列文字 `"$"` を出力します。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## バインディングディメンションに関するビデオ
 

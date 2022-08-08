@@ -4,9 +4,9 @@ description: データビューの作成や編集を行うために調整でき�
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: ht
-source-wordcount: '1224'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '1233'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,8 @@ ht-degree: 100%
 | [!UICONTROL 名前] | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンに表示されます。 |
 | [!UICONTROL 説明] | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### コンテナ {#containers}
 
 データビューのコンテナの名前を指定します。コンテナ名は、[フィルター](/help/components/filters/filters-overview.md#Filter-containers)でよく使用されます。
@@ -45,6 +47,8 @@ ht-degree: 100%
 | [!UICONTROL 人物のコンテナ名] | [!UICONTROL 個人]（デフォルト）。[!UICONTROL 個人] コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。組織で別の用語（「訪問者」や「ユーザー」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
 | [!UICONTROL セッションのコンテナ名] | [!UICONTROL セッション]（デフォルト）。[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。このコンテナの名前は、「訪問」または組織が指定したその他の用語に変更できます。 |
 | [!UICONTROL イベントのコンテナ名] | [!UICONTROL イベント]（デフォルト）。[!UICONTROL イベント] コンテナは、データセット内の個々のイベントを定義します。組織で異なる用語（「ヒット数」や「ページビュー数」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### カレンダー {#calendar}
 
@@ -57,6 +61,8 @@ ht-degree: 100%
 | [!UICONTROL 年の最初の月] と [!UICONTROL 週の最初の曜日] | 西暦カレンダータイプに対して表示されます。暦年の開始月と、週の開始日を指定します。 |
 | [!UICONTROL 現在の年の最初の日] | カスタムのカレンダータイプに対して表示されます。現在の年の開始日を指定します。カレンダーでは、この値に基づいて各週の最初の曜日が自動的に書式設定されます。 |
 | [!UICONTROL 「余分な」週が発生する年] | ほとんどの 364 日間カレンダー（7 日間を 52 週間）では、残りの日が 1 週間分貯まるまで毎年累積されます。 この追加の週は、その年の最後の月に追加されます。余分な週を追加する年を指定します。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## データビューのコンポーネントの設定 {#set-components}
 

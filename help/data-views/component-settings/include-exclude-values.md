@@ -4,9 +4,9 @@ description: ディメンション項目を、値に応じて条件付きで含�
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '300'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -25,3 +25,5 @@ ht-degree: 100%
 | [!UICONTROL 条件] | 特定のフィルタールールに適用する一致ロジックを指定できます。<ul><li>**文字列**：「フレーズを含む」、「任意の語句を含む」、「すべての語句を含む」、「いずれも語句を含まない」、「フレーズを含まない」「次と等しい」、「次と等しくない」、「次の語句で始まる」、「次の語句で終わる」</li><li>**重複 / 整数**：等しい、等しくない、次より大きい、次より小さい、次よりも大きいか等しい、次よりも小さいか等しい</li><li>**日付**：等しい、等しくない、より後、より前、次の範囲内で発生</li></ul> |
 | [!UICONTROL 一致オペランド] | 一致演算子の適用対象となる一致オペランドを指定できます。<ul><li>**文字列**：テキストフィールド</li><li>**倍精度整数 / 整数**：上向き／下向き矢印付きの数値用テキストフィールド</li><li>**日付**：日の精度の選択（カレンダー）</li><li>**日時**：日付と時間の精度の選択</li></ul> |
 | [!UICONTROL ルールを追加] | 追加の一致演算子およびオペランドを指定できます。 |
+
+{style=&quot;table-layout:auto&quot;}

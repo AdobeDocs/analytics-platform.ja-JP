@@ -4,10 +4,10 @@ description: データビューコンポーネントのコア設定を表示し�
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 99%
+source-wordcount: '388'
+ht-degree: 96%
 
 ---
 
@@ -28,8 +28,11 @@ ht-degree: 99%
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
 | [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされているスキーマフィールドタイプを使用できますが、CJA でサポートされていないフィールドタイプもあります。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現時点では、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
 | [!UICONTROL コンポーネント ID] | 必須。[CJA API](https://adobe.io/cja-apis/docs)は、このフィールドを使用してコンポーネントを参照します。データビューの各コンポーネントは、一意である必要があります。アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。コンポーネント ID を変更すると、このコンポーネントを含む既存のワークスペースプロジェクトがすべて機能しなくなります。単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいでワークスペースプロジェクトに互換性を持たせることができます。 |
-| [!UICONTROL スキーマのパス] | 必須。コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
+| [!UICONTROL パス] | 必須。コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
+| [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformのこのコンポーネントに割り当てられたデータ使用ラベル。 詳細情報 |
 | [!UICONTROL レポートのコンポーネントを非表示] | 管理者以外のユーザー向けデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 次に、データビューのコンポーネント設定に関するビデオを示します。
 

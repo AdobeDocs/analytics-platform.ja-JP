@@ -4,9 +4,9 @@ description: ディメンションが空の場合の処理方法を決定しま�
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '224'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '227'
 ht-degree: 100%
 
 ---
@@ -23,3 +23,5 @@ ht-degree: 100%
 | [!UICONTROL デフォルトで「値なし」を表示しない] | レポートでこの値を表示しません。このディメンションに結び付けられていない指標の回数は、レポートに表示されません。 |
 | [!UICONTROL デフォルトで「値なし」を表示する] | この値をレポートに表示します。 |
 | [!UICONTROL 「値なし」を値として扱う] | データ内の空白の値を「[!UICONTROL 表示された場合は「値なし」を呼び出す]」で指定したテキストに置き換えます。例えば、モバイルデバイスのタイプをディメンションとして指定した場合、「 **[!UICONTROL 値なし]** 」項目の名前を「デスクトップ」に変更できます。 このフィールドをカスタム値に変更すると、そのカスタム値は正当な文字列値として扱われます。したがって、このフィールドに「Red」と入力した場合、データそのものに「Red」という文字列が出現すると、指定した同じ行項目に分類されます。 |
+
+{style=&quot;table-layout:auto&quot;}

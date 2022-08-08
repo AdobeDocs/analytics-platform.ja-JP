@@ -4,9 +4,9 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '133'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '136'
 ht-degree: 100%
 
 ---
@@ -24,3 +24,5 @@ ht-degree: 100%
 | [!UICONTROL 通貨] | 形式が「通貨」の場合、は指標を表示する通貨を決定します。このオプションは、通貨換算を適用しません。UI の書式設定のみをおこないます。 |
 | [!UICONTROL 上昇傾向を次の形式で表示] | この指標の上昇傾向を良い（緑）と見なすか、悪い（赤）と見なすかを指定できます。 |
 | [!UICONTROL True 値] と [!UICONTROL False 値] | ブールスキーマのデータタイプでのみ表示されます。`true` 値と `false` 値のディメンション項目ラベルをカスタマイズできます。 |
+
+{style=&quot;table-layout:auto&quot;}
