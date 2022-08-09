@@ -2,7 +2,7 @@
 title: Customer Journey Analyticsとデータガバナンス
 description: Customer Journey Analyticsでのデータガバナンスの仕組みについて説明します。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 75%
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 ## データガバナンス
 
-CJA は、Adobe Experience Platformで設定されたデータガバナンスラベルとポリシーをサポートしています。 詳しくは、「 Adobe Experience Platform Data Governance の CJA サポート」を参照してください。
+CJA は、Adobe Experience Platformで設定されたデータガバナンスラベルとポリシーをサポートしています。 詳しくは、 [Adobe Experience Platform Data Governance に対する CJA のサポート](/help/data-views/data-governance.md).
 
 ## GDPR
 
