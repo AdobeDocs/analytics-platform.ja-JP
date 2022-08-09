@@ -3,10 +3,10 @@ description: Analysis Workspace からデータをダウンロードするには
 title: PDF ファイルまたは CSV ファイルのダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '983'
-ht-degree: 100%
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Analysis Workspace からデータをエクスポートする方法は、ツー�
 
 ![](assets/download-items.png)
 
-### ダウンロードした項目ファイル
+### ダウンロードした項目ファイル {#items-file}
 
 このテーブルの機能は、次のようにダウンロードされたファイルに適用されます。
 
@@ -71,7 +71,7 @@ Analysis Workspace からデータをエクスポートする方法は、ツー�
 
 ![](assets/downloaded-file.png)
 
-### ダウンロード通知
+### ダウンロード通知 {#notifications}
 
 ファイルがダウンロードされると、進行状況を示す情報通知が表示されます。 「**[!UICONTROL ダウンロードをキャンセル]**」をクリックすると、いつでもダウンロードをキャンセルできます。 トーストを閉じても、ダウンロードは&#x200B;**キャンセルされませんt**。
 
@@ -80,6 +80,10 @@ Analysis Workspace からデータをエクスポートする方法は、ツー�
 一度に複数のダウンロードをリクエストすると、前のダウンロードが完了するまで、後続の各ダウンロードはキューに追加されるという通知が届きます。
 
 ![](assets/toast.png)
+
+## 機密データのダウンロード {#sensitive}
+
+「ダウンロードデータガバナンスの実施」ポリシーがオンになっている場合、Workspace プロジェクトのダウンロード（電子メールや PDF の共有など）は、機密としてラベル付けされたデータフィールドをハッシュ化します。 引き続き Workspace のこれらのフィールドで分析を実行できますが、電子メールで送信しようとした場合や、プロジェクトを共有しようとした場合、ブロックされたフィールドは.pdf ファイル内でハッシュ化された項目として表示されます。
 
 ## FAQ {#faq}
 

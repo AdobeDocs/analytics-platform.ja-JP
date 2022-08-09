@@ -1,18 +1,21 @@
 ---
-title: Customer Journey Analytics のプライバシーの概要
-description: Customer Journey Analytics でのプライバシー設定の仕組みを説明します。
-translation-type: tm+mt
-source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
+title: Customer Journey Analyticsとデータガバナンス
+description: Customer Journey Analyticsでのデータガバナンスの仕組みについて説明します。
+exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
+source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 100%
+source-wordcount: '256'
+ht-degree: 75%
 
 ---
 
+# Customer Journey Analyticsとデータガバナンス
 
-# Customer Journey Analytics のプライバシーの概要
+一般に、データガバナンス関連の設定は、Adobe Experience PlatformからCustomer Journey Analyticsされます。
 
-一般に、Customer Journey Analytics のプライバシー関連の設定は、Adobe Experience Platform から継承されます。
+## データガバナンス
+
+CJA は、Adobe Experience Platformで設定されたデータガバナンスラベルとポリシーをサポートしています。 詳しくは、「 Adobe Experience Platform Data Governance の CJA サポート」を参照してください。
 
 ## GDPR
 
