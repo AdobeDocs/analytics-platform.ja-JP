@@ -1,12 +1,11 @@
 ---
-title: Adobe Experience Platform Data Governance に対する CJA のサポート
-description: AEP で定義されたデータラベルとポリシーが CJA のレポートに与える影響について説明します。
-mini-toc-levels: 3
+title: ラベルとポリシー
+description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +25,8 @@ ht-degree: 1%
 
 CJA では、次の 2 つのAdobe定義ポリシーが表示され、レポートおよびダウンロード/共有に影響します。
 
-* [!UICONTROL Analytics の適用] ポリシー
-* [!UICONTROL ダウンロードを強制] ポリシー
+* **[!UICONTROL Analytics の適用]** ポリシー
+* **[!UICONTROL ダウンロードを強制]** ポリシー
 
 ## CJA データビューでのデータラベルの表示
 
@@ -35,9 +34,11 @@ Experience Platformで作成したデータラベルは、データビューユ�
 
 | 場所 | 説明 |
 | --- | --- |
-| スキーマフィールドの情報ボタン | このボタンをクリックすると、現在フィールドに適用されているデータ使用ラベルが示されます。<p>![](assets/data-label-left.png) |
-| の下の右パネル [コンポーネント設定](/help/data-views/component-settings/overview.md) | データ使用ラベルは次のとおりです。<p>![](assets/data-label-right.png) |
-| データラベルを列として追加 | データビューの「含まれるコンポーネント」列にデータラベルを列として追加できます。 列セレクターアイコンをクリックして、「データ使用状況ラベル」を選択します。<p>![](assets/data-label-column.png) |
+| スキーマフィールドの情報ボタン | このボタンをクリックすると、次の操作を示します [!UICONTROL データ使用ラベル] 現在、次のフィールドに適用されます。<p>![](assets/data-label-left.png) |
+| の下の右パネル [コンポーネント設定](/help/data-views/component-settings/overview.md) | 任意 [!UICONTROL データ使用ラベル] 以下に示します。<p>![](assets/data-label-right.png) |
+| データラベルを列として追加 | 次の項目を追加できます。 [!UICONTROL データラベル] 列で [!UICONTROL 含まれるコンポーネント] データビューの列 列セレクターアイコンをクリックし、「 」を選択します。 **[!UICONTROL データ使用ラベル]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## データビューのデータガバナンスラベルに対するフィルター
 
@@ -55,7 +56,7 @@ Experience Platformで作成したデータラベルは、データビューユ�
 
 ![](assets/filter-policies.png)
 
-クリック **[!UICONTROL 適用]** 有効なポリシーを確認するには _このデータビューの_
+クリック **[!UICONTROL 適用]** 有効化されているポリシーを確認する。
 
 ## 方法 [!UICONTROL Analytics の適用] ポリシーが Workspace プロジェクトに影響する
 

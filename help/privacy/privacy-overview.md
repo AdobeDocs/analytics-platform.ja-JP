@@ -2,9 +2,9 @@
 title: Customer Journey Analyticsとデータガバナンス
 description: Customer Journey Analyticsでのデータガバナンスの仕組みについて説明します。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: 0d48c1ed8d0bf50939f8eda1f5656c95370ac0b7
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 51%
 
 ---
