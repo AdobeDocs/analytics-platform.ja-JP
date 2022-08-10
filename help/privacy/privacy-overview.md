@@ -2,10 +2,10 @@
 title: Customer Journey Analyticsとデータガバナンス
 description: Customer Journey Analyticsでのデータガバナンスの仕組みについて説明します。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
+source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 75%
+source-wordcount: '373'
+ht-degree: 51%
 
 ---
 
@@ -15,7 +15,13 @@ ht-degree: 75%
 
 ## データガバナンス
 
-CJA は、Adobe Experience Platformで設定されたデータガバナンスラベルとポリシーをサポートしています。 詳しくは、 [Adobe Experience Platform Data Governance に対する CJA のサポート](/help/data-views/data-governance.md).
+CJA との統合 [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) では、機密性の高い CJA データのラベル付けとプライバシーポリシーの実施を可能にします。
+
+Experience Platformが使用するデータセットで作成されたプライバシーラベルとポリシーは、 CJA データビューワークフローで表示できます。 これらのラベルは、機密性の高いフィールドから指標やディメンションを作成するユーザーに対して、停止または警告を出します。
+
+また、データが CJA から（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加され、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに通知します。
+
+この統合により、コンプライアンスをより簡単に管理できます。 組織のデータ管理人は、使用を制限するポリシーを設定できます。 その結果、CJA ユーザーは、データ管理人が定義したポリシーに準拠していることを知り、より自信を持ってデータを使用できます。
 
 ## GDPR
 
