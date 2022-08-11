@@ -3,10 +3,10 @@ description: Analysis Workspace からデータをダウンロードするには
 title: PDF ファイルまたは CSV ファイルのダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 93%
+source-wordcount: '1057'
+ht-degree: 92%
 
 ---
 
@@ -83,7 +83,7 @@ Analysis Workspace からデータをエクスポートする方法は、ツー�
 
 ## 機密データのダウンロード {#sensitive}
 
-「ダウンロードデータガバナンスの実施」ポリシーがオンになっている場合、Workspace プロジェクトのダウンロード（電子メールや PDF の共有など）は、機密としてラベル付けされたデータフィールドをハッシュ化します。 引き続き Workspace のこれらのフィールドで分析を実行できますが、電子メールで送信しようとした場合や、プロジェクトを共有しようとした場合、ブロックされたフィールドは.pdf ファイル内でハッシュ化された項目として表示されます。
+この **[!UICONTROL ダウンロードを強制]** [データガバナンスポリシー](/help/data-views/data-governance.md) レポートを表示するデータビューでがオンになっている場合、Workspace プロジェクトのダウンロード（電子メールや PDF の共有など）は、機密としてラベル付けされたデータフィールドをハッシュ化します。 引き続き Workspace のこれらのフィールドで分析を実行できますが、電子メールで送信しようとした場合や、プロジェクトを共有しようとした場合、ブロックされたフィールドは.pdf または.csv ファイルで空として表示されます。
 
 ## FAQ {#faq}
 
