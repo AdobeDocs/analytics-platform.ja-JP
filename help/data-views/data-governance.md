@@ -2,9 +2,9 @@
 title: ラベルとポリシー
 description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: b135175e0276ab26514d1c785793feb817c09898
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -72,3 +72,7 @@ Experience Platformで作成したデータラベルは、データビューユ�
 
 >[!MORELIKETHIS]
 >[機密データのダウンロード](/help/analysis-workspace/curate-share/download-send.md)
+
+>[!MORELIKETHIS]
+>[Report Builderの制限ラベル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+
