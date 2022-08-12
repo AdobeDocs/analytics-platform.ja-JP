@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
+source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 87%
+source-wordcount: '1284'
+ht-degree: 81%
 
 ---
 
@@ -119,7 +119,13 @@ f. 値として「50」を指定します。
 >
 >この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
-例となるユースケース:
+Adobe Experience Platformのスキーマには、「日付」フィールドと「日時」フィールドが含まれます。 CJA データビューがこれらのフィールドをサポートするようになりました。 これらのフィールドをディメンションとしてデータビューにドラッグする際に、次の項目を指定できます [形式](/help/data-views/component-settings/format.md). この形式設定は、レポートでのフィールドの表示方法を決定します。 次に例を示します。
+
+* 日付形式の場合、 **[!UICONTROL 日]** を **[!UICONTROL 月、日、年]**&#x200B;の場合、レポートの出力例は次のようになります。2022 年 8 月 24 日。
+
+* 日時形式の場合、 **[!UICONTROL 分（日）]** を **[!UICONTROL Hour:Minute]**&#x200B;の場合、出力は次のようになります。20 時 20 分。
+
+### 例となるユースケース:
 
 * 日付：旅行会社は、旅行の出発日をデータのフィールドとして収集しています。 例えば、 [!UICONTROL 曜日] どの出発日が最も人気があるかを把握するために収集されたすべての出発日について。 彼らは同じことをしたがる [!UICONTROL 月（年）].
 
