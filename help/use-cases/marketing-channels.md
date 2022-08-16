@@ -4,10 +4,10 @@ description: Analytics ソースコネクタを使用して、マーケティン
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 8d333627d3fe4f4dd68ec0f9316838c88678bc0f
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 90%
 4. データビューを作成します。
 
 これで、マーケティングチャネルのディメンションを Analysis Workspace で使用できるようになります。
+
+>[!NOTE]
+>
+> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があります。それ以外の場合、XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、空白になります `channel._id` Analytics ソースコネクタは空白になります。 `channel.typeAtSource` 同様に。 その結果、Adobe AnalyticsとCustomer Journey Analyticsの間でレポートの違いが生じる可能性があります。
 
 ## 処理とアーキテクチャの違い
 
