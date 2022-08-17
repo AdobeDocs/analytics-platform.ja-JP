@@ -4,9 +4,9 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1277'
 ht-degree: 81%
 
 ---
@@ -114,10 +114,6 @@ f. 値として「50」を指定します。
 * セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022年6月1日から 6月15日までにレポートを実行したとします。ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 セッションが 2022 年 5 月 30 日に開始し、2022 年 6 月 1 日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウ内のすべてのセッションはリターンセッションとしてカウントされます。
 
 ## 日付と日時の機能の使用 {#date}
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
 Adobe Experience Platformのスキーマに含まれる [!UICONTROL 日付] および [!UICONTROL Date-Time] フィールド。 CJA データビューがこれらのフィールドをサポートするようになりました。 これらのフィールドをディメンションとしてデータビューにドラッグする際に、次の項目を指定できます [形式](/help/data-views/component-settings/format.md). この形式設定は、レポートでのフィールドの表示方法を決定します。 次に例を示します。
 

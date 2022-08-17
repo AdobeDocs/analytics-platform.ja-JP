@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '311'
+ht-degree: 2%
 
 ---
-
 
 # Report Builderの制限付きラベル
 
@@ -25,11 +25,7 @@ Experience Platformが使用するデータセットで作成されたプライ�
 
 詳しくは、 [Customer Journey Analyticsとデータガバナンス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html)
 
-## Report Builderでの制限付きデータの表示
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
+## 制限されたデータをReport Builder
 
 CJA では、次の 2 つのAdobe定義のポリシーが表示され、レポート、ダウンロードおよび共有に影響します。
 
@@ -40,7 +36,7 @@ CJA では、次の 2 つのAdobe定義のポリシーが表示され、レポ�
 
 ![](assets/rb-restricted-label.png)
 
-## 制限されたデータを含むレポートの更新
+## 制限されたデータを含むレポートを更新
 
 ユーザーが後で制限されるデータ要素を含むReport Builderレポートを作成した場合、レポートが更新されると、エラーメッセージが表示されます。
 

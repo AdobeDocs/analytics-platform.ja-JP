@@ -2,18 +2,14 @@
 title: ラベルとポリシー
 description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: b135175e0276ab26514d1c785793feb817c09898
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 # ラベルとポリシー
-
->[!NOTE]
->
->この機能は、現在、[限定的にテスト中](/help/release-notes/releases.md)です。
 
 データセットをExperience Platformで作成する際に、 [データ使用ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) の一部またはすべての要素が含まれている場合。 これまで、これらのラベルは CJA では公開されていませんでした。 このリリースでは、CJA でこれらのラベルとポリシーを表示できます。
 
