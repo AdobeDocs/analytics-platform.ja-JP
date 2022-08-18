@@ -4,10 +4,10 @@ description: データビューコンポーネントのコア設定を表示し�
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 95%
+source-wordcount: '422'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,8 @@ ht-degree: 95%
 | [!UICONTROL コンポーネント名] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （オプション。Analysis Workspace UI で検索／フィルタリングを行いやすくするために、カスタムタグまたは標準搭載のタグでコンポーネントにタグを付けることができます。 |
-| [!UICONTROL フィールド名] | スキーマフィールドの名前。 |
+| [!UICONTROL コンテキストラベル] | レポートの特定のユースケースに対して、特定のディメンションや指標にラベルを付けることができます。 例としては、CJA のメディアパネル、新しい実験パネル、レポートテンプレートなどがあります。 |
+| [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
 | [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされているスキーマフィールドタイプを使用できますが、CJA でサポートされていないフィールドタイプもあります。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現時点では、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
