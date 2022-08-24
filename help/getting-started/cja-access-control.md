@@ -4,10 +4,10 @@ description: 接続の作成、データセットの追加、データビュー�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
-source-git-commit: c80c10e1e4887bfe7fdc3b59d0dfe415b1b0d5eb
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: e5ae592c6765638e26ee5252f458e82af9d24e44
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,4 +37,10 @@ Experience Platform 権限について詳しくは、「[Adobe Experience Platfo
 ## ユーザーアクセス
 
 Customer Journey Analytics の非製品管理者（ユーザー）は、データビューや接続は表示できませんが、フィルター、プロジェクトおよび計算指標を作成できます。
+
+## Workspace プロジェクトのキュレーション
+
+プロジェクトレベルでコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限する方法について詳しくは、 [プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md).
+
+
 
