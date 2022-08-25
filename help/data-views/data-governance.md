@@ -3,7 +3,7 @@ title: ラベルとポリシー
 description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
 ht-degree: 100%
 
