@@ -1,27 +1,27 @@
 ---
-title: Customer Journey Analyticsとデータガバナンス
-description: Customer Journey Analyticsでのデータガバナンスの仕組みについて説明します。
+title: Customer Journey Analytics とデータガバナンス
+description: Customer Journey Analytics でのデータガバナンスの仕組みについて説明します。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analyticsとデータガバナンス
+# Customer Journey Analytics とデータガバナンス
 
-一般に、データガバナンス関連の設定は、Adobe Experience PlatformからCustomer Journey Analyticsされます。
+一般に、Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。
 
 ## データガバナンス
 
-CJA との統合 [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) では、機密性の高い CJA データのラベル付けとプライバシーポリシーの実施を可能にします。
+CJA と [Adobe Experience Platform のデータガバナンス](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)の統合により、機密性の高い CJA データのラベル付けとプライバシーポリシーの実施が可能になります。
 
-Experience Platformが使用するデータセットで作成されたプライバシーラベルとポリシーは、 CJA データビューワークフローで表示できます。 これらのラベルは、機密性の高いフィールドから指標やディメンションを作成するユーザーに対して、停止または警告を出します。
+Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 CJA データビューワークフローで表示できます。 これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。
 
-また、データが CJA から（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加され、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに通知します。
+また、データが CJA から（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが付加されて、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに知らせます。
 
-この統合により、コンプライアンスをより簡単に管理できます。 組織のデータ管理人は、使用を制限するポリシーを設定できます。 その結果、CJA ユーザーは、データ管理人が定義したポリシーに準拠していることを知り、より自信を持ってデータを使用できます。
+この統合により、コンプライアンスを管理しやすくなります。 組織のデータ管理人は、使用を制限するポリシーを設定できます。 その結果、CJA ユーザーは、データ管理人に定義されたポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
 
 [詳細情報](/help/data-views/data-governance.md)
 
@@ -31,4 +31,4 @@ Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央�
 
 ## CCPA
 
-カリフォルニア州消費者プライバシー法（CCPA）は、米国カリフォルニア州の居住者のプライバシー権と消費者保護を厳格化します。この法律は、2020 年 1 月 1 日に施行されます。CCPA は、カリフォルニア州の居住者に新しいプライバシー権を提供します。これには、自身の個人データにアクセスして削除する権利、自身の個人データが（誰に）販売または公開されているかどうかを知る権利、および自身の個人データの販売を拒否する権利が含まれます。CCPA を見越し、プライバシーサービスは個人データの販売のオプトアウトに対するリクエストをサポートします。
+カリフォルニア州消費者プライバシー法（CCPA）は、米国カリフォルニア州の居住者のプライバシー権と消費者保護を厳格化します。この法律は 2020年1月1日（PT）に施行されました。CCPA は、カリフォルニア州の居住者に新しいプライバシー権を提供します。これには、自身の個人データにアクセスして削除する権利、自身の個人データが（誰に）販売または公開されているかどうかを知る権利、および自身の個人データの販売を拒否する権利が含まれます。CCPA を見越し、プライバシーサービスは個人データの販売のオプトアウトに対するリクエストをサポートします。
