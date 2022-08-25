@@ -5,7 +5,7 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL バケットの値] | バケット化を有効にするためのチェックボックス。 |
 | [!UICONTROL より小さい] | 1 つ目のディメンションバケットの上限。 |
-| 含む [!UICONTROL およびより小さい] | 後続のバケットの境界。 |
+| [!UICONTROL 含む] [!UICONTROL およびより小さい] | 後続のバケットの境界。 |
 | [!UICONTROL 以上] | 最後のディメンションバケットの下限。 |
 | [!UICONTROL バケットを追加] | 数値ディメンションバケットに別のバケットを追加できます。1 つのディメンションに最大 20 個のバケットを追加できます。 |
 
