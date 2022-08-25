@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 87%
 | [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされているスキーマフィールドタイプを使用できますが、CJA でサポートされていないフィールドタイプもあります。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現時点では、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
 | [!UICONTROL コンポーネント ID] | 必須。[CJA API](https://adobe.io/cja-apis/docs)は、このフィールドを使用してコンポーネントを参照します。データビューの各コンポーネントは、一意である必要があります。アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。コンポーネント ID を変更すると、このコンポーネントを含む既存のワークスペースプロジェクトがすべて機能しなくなります。単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいでワークスペースプロジェクトに互換性を持たせることができます。 |
 | [!UICONTROL パス] | 必須。コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
-| [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformのこのコンポーネントに割り当てられたデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md) |
-| [!UICONTROL レポートのコンポーネントを非表示] | 管理者以外のユーザー向けデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
+| [!UICONTROL データ使用状況ラベル] | Adobe Experience Platform でこのコンポーネントに割り当てられたデータ使用状況ラベル。 [詳細情報](/help/data-views/data-governance.md) |
+| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザー向けデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
 
 {style=&quot;table-layout:auto&quot;}
 

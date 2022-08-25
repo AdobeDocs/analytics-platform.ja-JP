@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
    + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](getting-started/aa-to-cja-user.md)
    + Adobe Analytics と Customer Journey Analytics の比較 {#compare-aa-cja}
       + [Customer Journey Analytics の機能のサポート](getting-started/aa-vs-cja/cja-aa.md)
-      + [Analytics Source Connector を通じて渡された Analytics データに関する用語の比較](getting-started/aa-vs-cja/terminology.md)
+      + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](getting-started/aa-vs-cja/terminology.md)
       + [Adobe Analytics と CJA にまたがるデータ処理の比較](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [仮想レポート環境とサンドボックス環境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -112,13 +112,13 @@ ht-degree: 97%
       + [ドーナツ](analysis-workspace/visualizations/donut.md)
       + [ヒストグラム](analysis-workspace/visualizations/histogram.md)
       + [横棒グラフおよび積み重ね横棒グラフ](analysis-workspace/visualizations/horizontal-bar.md)
-      + [主要な指標の概要](analysis-workspace/visualizations/key-metric.md)
+      + [主要指標の概要](analysis-workspace/visualizations/key-metric.md)
       + [行](analysis-workspace/visualizations/line.md)
       + [散布図](analysis-workspace/visualizations/scatterplot.md)
       + [数値の概要と変更概要](analysis-workspace/visualizations/summary-number-change.md)
       + [テキスト](analysis-workspace/visualizations/text.md)
       + [ツリーマップ](analysis-workspace/visualizations/treemap.md)
-      + [ベン図　](analysis-workspace/visualizations/venn.md)
+      + [ベン図](analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
       + [パネルの概要](analysis-workspace/c-panels/panels.md)
       + [アトリビューションパネル](analysis-workspace/c-panels/attribution.md)
