@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: ht
-source-wordcount: '313'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
