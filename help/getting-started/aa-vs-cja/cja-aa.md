@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1521'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 | --- | --- |
 | 異常値検出 | フルサポート |
 | Attribution IQ | フルサポート |
-| オーディエンス公開 | フルサポート。AA では、セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信）と呼ばれていました。[オーディエンスの公開](/help/components/audiences/audiences-overview.md) は、オーディエンスをExperience Platformでリアルタイム顧客プロファイルに送信します。 |
+| オーディエンス公開 | フルサポート。AA では、セグメントの公開（ワークスペースから Experience Cloud へのセグメントの送信）と呼ばれていました。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | 計算指標 | フルサポート。従来の Analysis Workspace 内の既存の計算指標は、CJA に移植されません。 |
 | カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
 | 分類ルールビルダー | フルサポート。CJA では、[部分文字列](/help/data-views/component-settings/substring.md)と呼ばれます。ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
@@ -36,7 +36,7 @@ ht-degree: 94%
 | GDPR の削除 | フルサポート。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。CJA は、[!UICONTROL Experience Platform] が基盤となるデータセットに加えたデータの変更をすべて継承します。 |
 | リスト変数／リスト prop | フルサポート。CJA では XDM を活用し、listVars と同様に使用できる無制限の文字列配列をサポートしています。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
-| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)によるフルサポート |
+| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 指標 | フルサポート。CJA は、エクスペリエンスデータモデル（XDM）を活用し、無制限の指標をサポートします。従来の Analytics のカスタム成功イベントとは関係ありません。一部の標準指標は、従来の Analytics から名前が変更されました。例：訪問者 = 人物、訪問 = セッション、ヒット = イベント。 |
 | 指標の重複排除 | フルサポート |
 | モバイルスコアカード／ダッシュボード | フルサポート |
@@ -67,8 +67,8 @@ ht-degree: 94%
 | [!UICONTROL デバイス]、[!UICONTROL ブラウザー]、[!UICONTROL リファラー]、[!UICONTROL 技術]の各ディメンション | AEP データセットに特定の XDM スキーマフィールドが含まれ、XDM Experience Event クラスに準拠している場合、これらのディメンションは自動的に含まれます。[Analytics ソースコネクタ経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。CJA のお客様が、ソースコネクタを使用して Adobe Analytics から CJA にデータを入力する代わりに AEP Web SDK データ収集を使用している場合、[!UICONTROL デバイス]およびデバイスルックアップに基づくディメンションは、現在サポートされていませんが、近い将来サポートされる予定です。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
-| 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
-| IP Obfuscation（IP の不明化） | Analytics Source Connector を使用して CJA をご利用のお客様がAdobe Analyticsから CJA にデータを入力する場合：Adobe Analyticsで適用された IP Obfuscation（IP の不明化）設定は、CJA データを通じて CJA データに送信されます。 必要に応じて、Adobe Analyticsでこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用して CJA のお客様がデータを Platform および CJA に直接入力する場合：Platform の Data Prep for Data Collection を使用して、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
+| 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
+| IP の不明化 | Analytics ソースコネクタを使用している CJA の顧客が Adobe Analytics から CJA にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、CJA データを通じて送られます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用する CJA の顧客がデータを Platform および CJA に直接入力する場合：Platform のデータ収集に関するデータの準備を使用し、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics ソースコネクタを介して CJA に渡されます。従来の Adobe Analytics では、引き続きマーケティングチャネルのルールを設定する必要があります。一部のルールはサポートされていません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。 |
 | 新規セッションとリピートセッションレポート | 2022年8月17日にサポート対象、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)。 |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
@@ -81,7 +81,7 @@ ht-degree: 94%
 
 | 機能 | メモ |
 | --- | --- |
-| ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
+| ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 | 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 
