@@ -55,7 +55,7 @@ Adobe Experience Platform でのスキーマの変更や CJA 環境の再実装�
 ## データビューの前提条件 {#prerequisites}
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
-* データビューを作成または管理するには、](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)Adobe Admin Console で一連の権限[が必要です。
+* データビューを作成または管理するには、[Adobe Admin Console で一連の権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)が必要です。
 
 ## ワークスペースで上書きできるデータビュー設定 {#settings-override}
 
