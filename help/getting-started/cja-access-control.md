@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 669b8d6e0c8b8741edf82a83fead6b2030a57d40
+source-git-commit: 7520f068e41d8b91bf9d260b7763cf8c1b946bc4
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 17%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 17%
 # CJA アクセス制御
 
 Customer Journey Analytics(CJA) は、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセス。 このトピックでは、これらの役割について詳しく説明します。
+
+さらに、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセスを制限するより詳細な方法についても説明します。
 
 ## 製品管理者の役割
 
@@ -76,7 +78,7 @@ Customer Journey Analytics内のユーザーは、データビューや接続を
 
 医療関連の例を次に示します。例えば、このデータを含むデータセットから、データビューで「高血圧」と呼ばれる指標を作成したとします。 指標であるという事実はこの指標の総値を見ることができますがその指標に該当する個々の患者は見ることができません
 
-## CJA 権限
+## CJA 権限 (Admin Console)
 
 この **[!UICONTROL 権限]** タブは、 [Admin Console](https://adminconsole.adobe.com/enterprise/). 特定の製品プロファイルにユーザーを追加できます。 次に、特定のデータビューに権限を割り当て、製品プロファイルのユーザーが持つ権限を指定します。 CJA 固有の権限を次に示します。
 
@@ -86,7 +88,7 @@ Customer Journey Analytics内のユーザーは、データビューや接続を
 | --- | --- |
 | **[!UICONTROL データビュー]** | 切り替えた場合 **[!UICONTROL 自動インクルード]** から **[!UICONTROL オン]**&#x200B;の場合、この製品プロファイルの一部であるユーザーは、新しく作成された既存のすべてのデータビューを表示できます。 この設定が **[!UICONTROL オフ]**&#x200B;を使用すると、ユーザーがアクセスできる特定のデータビューを選択できます。 |
 | **[!UICONTROL レポートツール]**: |  |
-| **[!UICONTROL 監査ログへのアクセス]** | 現在、 [監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) は、API 経由でのみ使用できます。 この権限は、開発中の将来の UI に対するものです。 |
+| **[!UICONTROL 監査ログへのアクセス]** | 現在、 [監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) は、API 経由でのみ使用できます。 この権限は、API と今後の監査ログ UI に対する権限チェックを強制します。 |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます。 （レポートの使用機能はまだリリースされていません）。 |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 （レポートの使用機能はまだリリースされていません）。 |
 | **[!UICONTROL 計算指標の作成]** | ユーザーが [計算指標](/help/components/calc-metrics/calc-metr-overview.md). |
