@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: ht
-source-wordcount: '1277'
-ht-degree: 100%
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+workflow-type: tm+mt
+source-wordcount: '1254'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 ## 3. フロー図で数値ディメンションを「指標」として使用する {#numeric}
 
-数値ディメンションを使用して、[!UICONTROL フロー]ビジュアライゼーションに「指標」を取り込むことができます。
+数値ディメンションを使用して、 [!UICONTROL  フロー] ビジュアライゼーション。
 
 1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 例えば、データビューの含める／除外する機能を使用して、50 ドル以上の売り上げをもたらした製品にのみ焦点を当てます。そのため、1 件の注文に 50 ドルの製品購入と 25 ドルの製品購入が含まれる場合、注文全体ではなく、25 ドルの製品購入のみを除外します。
 
-1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
 a.「[!UICONTROL 形式]」で、「[!UICONTROL 通貨]」を選択します。
 b.「[!UICONTROL 通貨]」で、「USD」を選択します。
@@ -87,19 +87,19 @@ f. 値として「50」を指定します。
 その他のデータビューの設定について詳しくは、「[データビューの作成](/help/data-views/create-dataview.md)」を参照してください。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。
 
-## 7. 新規セッションレポートとリピートセッションレポート {#new-repeat}
+## 7.新しいセッションレポート {#new-repeat}
 
 このデータビューに対して定義したレポートウィンドウと 13 か月のルックバックウィンドウに基づいて、セッションがユーザーにとって実際に初めてのセッションであるかどうかを判断できます。このレポートを使用すると、次のような情報を確認できます。
 
-* 注文件数の何パーセントが新規セッションとリピートセッションから来るものなのか。
+* 新しいセッションからの注文の割合は？
 
-* 任意のマーケティングチャネルまたは特定のキャンペーンについて、初めてのユーザーと再来訪ユーザーのどちらをターゲティングしているのか。これらの選択がコンバージョン率にどのように影響したか。
+* 特定のマーケティングチャネルまたは特定のキャンペーンに対して、初めてのユーザーをターゲットにしていますか。 この選択はコンバージョン率にどのような影響を与えますか？
 
-次の 3 つのコンポーネントによって、このレポーティングが促進されます。
+このレポートは、次の 2 つのコンポーネントで容易になります。
 
-* 1 ディメンション：[セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには次の 2 つの値があります。1) [!UICONTROL 新規] および 2) [!UICONTROL 再来訪]。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
+* 1 ディメンション：[セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには次の 2 つの値があります。1) [!UICONTROL 新規] および 2) [!UICONTROL 再来訪]。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに含まれます。
 
-* 2 指標：[新規セッション、再来訪セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional)。新規セッションは、レポートウィンドウ内でのユーザーの定義された最初のセッションと定義されます。再来訪セッションは、ユーザーの初めてのセッションではなかったセッションの数です。
+* 1 個の指標： [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
 
 これらのコンポーネントにアクセスするには：
 
@@ -111,7 +111,7 @@ f. 値として「50」を指定します。
 
 * 13 か月間のルックバックウィンドウの前に最初のセッションが発生した場合。このセッションは無視されます。
 
-* セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022年6月1日から 6月15日までにレポートを実行したとします。ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
+* セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022 年 6 月 1 日から 6 月 15 日までにレポートを実行したとします。 ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
 
 ## 日付と日時の機能の使用 {#date}
 
