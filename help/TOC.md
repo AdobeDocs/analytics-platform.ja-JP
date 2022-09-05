@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 99%
    + [標準コンポーネントリファレンス](data-views/component-reference.md)
    + [データビューのユースケース](data-views/data-views-usecases.md)
    + [ラベルとポリシー](data-views/data-governance.md)
-+ ワークスペースプロジェクト {#cja-workspace}
++ Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](analysis-workspace/home.md)
    + [基本分析の実行](analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](analysis-workspace/perform-adv-analysis.md)
@@ -152,7 +152,7 @@ ht-degree: 99%
          + [Analysis Workspace での異常値の表示](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [異常値検出で使用される統計的手法](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [ユーザー環境設定](analysis-workspace/user-preferences.md)
-   + ワークスペースの FAQ {#workspace-faq}
+   + Workspace FAQ {#workspace-faq}
       + [よくある質問](analysis-workspace/workspace-faq/faq.md)
       + [Analysis Workspace のパフォーマンスの最適化](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [エラーメッセージ](analysis-workspace/workspace-faq/error-messages.md)
