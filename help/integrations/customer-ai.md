@@ -1,13 +1,13 @@
 ---
-description: AEP 顧客 AI が CJA のワークスペースとどのように統合するかを説明します。
+description: AEP 顧客 AI が CJA の Workspace とどのように統合するかを説明します。
 title: 顧客 AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,13 +59,13 @@ CJA で、確立した接続の一部として得られたディメンション�
 
 ![データビューの作成](assets/create-dataview.png)
 
-### 手順 4：ワークスペース での CAI スコアのレポート
+### 手順 4：Workspace での CAI スコアのレポート
 
-CJA Workspace で、新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
+CJA Workspace で新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
 
 **傾向スコアのトレンド**
 
-CAI データを含むワークスペースプロジェクトの例を次に示します。CAI データは、経時的なユーザーのセグメントの傾向スコアのトレンドを、積み重ね棒グラフで表示します。
+CAI データを含む Workspace プロジェクトの例を次に示します。CAI データは、経時的なユーザーのセグメントの傾向スコアのトレンドを、積み重ね棒グラフで表示します。
 
 ![スコアバケット](assets/workspace-scores.png)
 
