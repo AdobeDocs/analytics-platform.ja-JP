@@ -8,19 +8,19 @@ mini-toc-levels: 3
 source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 17%
+ht-degree: 29%
 
 ---
 
 # CJA アクセス制御
 
-Customer Journey Analytics(CJA) は、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセス。 このトピックでは、これらの役割について詳しく説明します。
+Customer Journey Analytics（CJA）は、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセスです。このトピックでは、これらの役割について詳しく説明します。
 
 さらに、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセスを制限するより詳細な方法についても説明します。
 
 ## 製品管理者の役割
 
-製品管理者には、CJA 内で必要なタスクを完了する権限があります。 製品管理者として、 **Customer Journey Analytics製品プロファイル** 内 [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理者] タブ/ [!UICONTROL 管理者を追加]. 製品管理者には、次の権限が付与されます。
+製品管理者には、CJA 内で必要なタスクを完了する権限があります。製品管理者として、 **Customer Journey Analytics製品プロファイル** 内 [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理者] タブ/ [!UICONTROL 管理者を追加]. 製品管理者には、次の権限が付与されます。
 
 * 接続またはデータ表示の作成／更新／削除を行う
 * 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新/削除
@@ -37,7 +37,7 @@ Experience Platform の権限について詳しくは、[Adobe Experience Platfo
 
 ## 製品プロファイル管理者の役割
 
-製品プロファイルは、一連の権限です。 製品プロファイル管理者が実行できる操作
+製品プロファイルは、一連の権限です。製品プロファイル管理者が実行できる操作
 
 * 新しいユーザーの追加や、ユーザーグループとそれらに関連する製品プロファイルの管理など、個々の製品プロファイルを作成および管理します。
 
@@ -45,11 +45,11 @@ Experience Platform の権限について詳しくは、[Adobe Experience Platfo
 
 ## ユーザーレベルのアクセス
 
-Customer Journey Analytics内のユーザーは、データビューや接続を作成、編集、表示することはできません。 ユーザーは、指標内で特別な権限を持つフィルター、プロジェクト、オーディエンスおよび計算Admin Consoleを作成できます。
+Customer Journey Analytics内のユーザーは、データビューや接続を作成、編集、表示することはできません。 ユーザーは、Admin Console で特別な権限を持つフィルター、プロジェクト、オーディエンスおよび計算指標を作成できます。
 
 ## Workspace プロジェクトのキュレーション
 
-別のレベルのアクセス制御は、Workspace レポートレベルで使用できます。 特定のユーザーの特定のコンポーネントへのアクセスを制限できます。 Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションとデータビューとの関連付け方法について詳しくは、 [プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md).
+別のレベルのアクセス制御は、Workspace レポートレベルで使用できます。 特定のユーザーの特定のコンポーネントへのアクセスを制限できます。 Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、 [プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 
 ## 個々の指標またはディメンションへのアクセス権を付与する
 
@@ -82,7 +82,7 @@ Customer Journey Analytics内のユーザーは、データビューや接続を
 
 この **[!UICONTROL 権限]** タブは、 [Admin Console](https://adminconsole.adobe.com/enterprise/). 特定の製品プロファイルにユーザーを追加できます。 次に、特定のデータビューに権限を割り当て、製品プロファイルのユーザーが持つ権限を指定します。 CJA 固有の権限を次に示します。
 
-![admin console 権限](assets/permissions.png)
+![Admin Console 権限](assets/permissions.png)
 
 | 権限 | 定義 |
 | --- | --- |
