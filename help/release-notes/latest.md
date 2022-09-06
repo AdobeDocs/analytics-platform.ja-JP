@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 99%
+source-wordcount: '519'
+ht-degree: 96%
 
 ---
 
 # 最新の Customer Journey Analytics（CJA）リリースノート（2022年8月）
 
-**最終更新日**：2022年8月25日（PT）
+**最終更新日**:2022 年 9 月 7 日
 
 ## 主な特長
 
@@ -25,6 +25,7 @@ ht-degree: 99%
 | **CJA での日付フィールドのサポート** | CJA が日付および日時フィールドに関するレポートを作成できるようにします。[詳細情報](/help/data-views/data-views-usecases.md#date) | 2022年8月17日 |
 | **Analytics ソースコネクタのクロス地域サポート** | 任意の地域（米国、英国またはシンガポール）からレポートスイートを取り込めるようになりました。ただし、これらのレポートスイートは、ソース接続が作成される Experience Platform サンドボックスインスタンスと同じ組織にマッピングする必要があります。[詳細情報](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) | 2022年8月24日（PT） |
 | **最初のセッションのレポート** | 特定のセッションがユーザーの初めてのセッションかどうかを検出できるようになりました。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) | 2022年8月24日（PT） |
+| **セッションレポートを繰り返す** | 特定のセッションがユーザーのリターンセッションであったかどうかを検出します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 2022 年 9 月 9 日 |
 
 {style=&quot;table-layout:auto&quot;}
 

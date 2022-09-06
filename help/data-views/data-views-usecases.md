@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 92%
+source-wordcount: '1280'
+ht-degree: 91%
 
 ---
 
@@ -95,11 +95,15 @@ f. 値として「50」を指定します。
 
 * 特定のマーケティングチャネルまたは特定のキャンペーンに対して、初めてのユーザーをターゲットにしていますか。 この選択はコンバージョン率にどのような影響を与えますか？
 
-このレポートは、次の 2 つのコンポーネントで容易になります。
+次の 3 つのコンポーネントによって、このレポーティングが促進されます。
 
 * 1 ディメンション：[セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには次の 2 つの値があります。1) [!UICONTROL 新規] および 2) [!UICONTROL 再来訪]。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに含まれます。
 
-* 1 個の指標： [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
+* 2 つの指標：
+
+   * [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
+
+   * [セッションを返す](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions は、人物の初めてのセッションではなかったセッションの数です。
 
 これらのコンポーネントにアクセスするには：
 
