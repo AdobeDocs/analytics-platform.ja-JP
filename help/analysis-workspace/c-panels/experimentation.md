@@ -3,9 +3,9 @@ description: CJA 実験パネルで A/B テストの結果を分析する方法�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: ht
-source-wordcount: '1322'
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+workflow-type: tm+mt
+source-wordcount: '1324'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ ht-degree: 100%
 
 CJA データビューの設定では、管理者はディメンションや指標に[コンテキストラベル](/help/data-views/component-settings/overview.md)をディメンションや指標に追加し、目的に合わせて[!UICONTROL 実験]パネルなどの CJA サービスでこれらのラベルを使用できます。実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
 
-* [!UICONTROL 実験]
-* [!UICONTROL バリアント]
+* [!UICONTROL 実験的な実験]
+* [!UICONTROL 実験バリアント]
 
 実験データを含むデータビューで、2 つのディメンション（1 つは実験データを含むもの、もう 1 つはバリアントデータを含むもの）を選択します。 次に、これらのディメンションに&#x200B;**[!UICONTROL 実験]**&#x200B;ラベルと&#x200B;**[!UICONTROL バリアント]**&#x200B;ラベルを付けます。
 
