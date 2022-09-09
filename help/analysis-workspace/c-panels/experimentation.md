@@ -3,10 +3,10 @@ description: CJA 実験パネルで A/B テストの結果を分析する方法�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
+source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,10 +83,6 @@ CJA データビューの設定では、管理者はディメンションや指�
 >[!NOTE]
 >
 >このパネルは、現在、A/A テストの分析をサポートしていません。
-
->[!NOTE]
->
->上昇率と信頼性は、CJA の[高度な計算指標関数](/help/components/calc-metrics/cm-adv-functions.md)でもあるため、独自の上昇率指標と信頼性指標を作成できます。
 
 ## 手順 5:結果の解釈
 
