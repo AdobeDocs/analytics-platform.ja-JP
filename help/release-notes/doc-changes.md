@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 40256c151fbc5582a198cc17a63efad9189cb6c2
+source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 96%
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
@@ -19,6 +19,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| 2022年9月 | の新しい使用例 [Google Analyticsデータの CJA への移行](/help/use-cases/ga/overview.md). |
 | 2022年9月 | に関する新しいトピックです。 [コンボグラフ](/help/analysis-workspace/visualizations/combo-charts.md) Workspace で使用できます。 |
 | 2022年9月 | に関する新しいトピックです。 [実験パネル](/help/analysis-workspace/c-panels/experimentation.md) Workspace で使用できます。 |
 | 2022年8月 | Adobe Experience Platformの記事 [Analytics ソースコネクタのクロス地域のサポート](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). |
@@ -74,7 +75,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2021年4月 | [永続性](/help/data-views/component-settings/persistence.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | ワークスペースでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントを追加しました。 |
 | 2021年4月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md) に関する新しいトピックを追加しました。 |
-| 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/ga-to-cja.md) と [データの分析](/help/use-cases/ga-to-cja-reporting.md) に関する新しいトピックを追加しました。 |
+| 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/ga/overview.md) と [データの分析](/help/use-cases/ga/report.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | ワークスペースの[予定レポート](/help/analysis-workspace/curate-share/t-schedule-report.md)に関するトピックを追加しました。 |
 | 2021年4月 | [CJA の大基数ディメンション](/help/components/dimensions/high-cardinality.md) に関する新しいトピックを追加しました。 |
 | 2021年3月 | [Analytics ダッシュボード](/help/mobile-app/home.md)（モバイルアプリ）のサポートに関するトピックを追加しました。 |

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 96%
 
 ---
 
@@ -230,6 +230,11 @@ ht-degree: 100%
    + [ダッシュボードを使用するエグゼクティブの設定](mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
 + ユースケース {#cja-usecases}
+   + Google Analyticsデータ {#ga}
+      + [データのGoogle Analyticsから CJA への移行の概要](use-cases/ga/overview.md)
+      + [Google Analyticsの履歴データを Platform に取り込む](use-cases/ga/backfill.md)
+      + [Platform へのストリーミングGoogle Analyticsデータの設定](use-cases/ga/streaming.md)
+      + [CJA での Google Analytics データに関するレポート](use-cases/ga/report.md)
    + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
    + [レポートスイートを様々なスキーマと組み合わせる](use-cases/combine-report-suites.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
@@ -241,8 +246,6 @@ ht-degree: 100%
    + [コールセンターデータと web データの読み込み](use-cases/call-center.md)
    + [データ取り込みのユースケース](use-cases/data-ingestion.md)
    + [マーケティングチャネルディメンションの使用](use-cases/marketing-channels.md)
-   + [Adobe Experience Platform への Google Analytics データの取り込み](use-cases/ga-to-cja.md)
-   + [CJA での Google Analytics データに関するレポート](use-cases/ga-to-cja-reporting.md)
 + ラボ {#labs}
    + [ラボユーザーガイド](labs/labs.md)
 + トラブルシューティング {#troubleshooting}
