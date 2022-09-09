@@ -4,9 +4,9 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
+source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '979'
 ht-degree: 91%
 
 ---
@@ -95,17 +95,15 @@ f. 値として「50」を指定します。
 
 * 特定のマーケティングチャネルまたは特定のキャンペーンに対して、初めてのユーザーをターゲットにしていますか。 この選択はコンバージョン率にどのような影響を与えますか？
 
-次の 3 つのコンポーネントによって、このレポーティングが促進されます。
+1 つの指標は、このレポートを容易にします。
 
-* 1 ディメンション：[セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには次の 2 つの値があります。1) [!UICONTROL 新規] および 2) [!UICONTROL 再来訪]。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに含まれます。
+<!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* 2 つの指標：
+* [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
 
-   * [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
+   <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
-   * [セッションを返す](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions は、人物の初めてのセッションではなかったセッションの数です。
-
-これらのコンポーネントにアクセスするには：
+このコンポーネントにアクセスするには：
 
 1. データビューエディターに移動します。
 1. 「**[!UICONTROL コンポーネント]**」をクリックし、左パネルにある「**[!UICONTROL オプションの標準コンポーネント]**」タブをクリックします。
@@ -117,20 +115,20 @@ f. 値として「50」を指定します。
 
 * セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022 年 6 月 1 日から 6 月 15 日までにレポートを実行したとします。 ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
 
-## 日付と日時の機能の使用 {#date}
+<!--## Use the Date and Date-Time functionality {#date}
 
-Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。CJA データビューで、これらのフィールドがサポートされるようになりました。これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
+Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
 
-* 日付形式で「**[!UICONTROL 日]**」を「**[!UICONTROL 年、月、日]**」の形式で選択した場合、レポートの出力例は、2022年8月23日となります。
+* For the Date format, if you select **[!UICONTROL Day]** with the format **[!UICONTROL Month, Day, Year]**, an example output in reporting might look like: August 23, 2022.
 
-* 日時形式で「**[!UICONTROL 分単位]**」を「**[!UICONTROL 時:分]**」の形式で選択した場合、20:20 と出力されます。
+* For the Date-Time format, if you select **[!UICONTROL Minute of Day]** with the format **[!UICONTROL Hour:Minute]**, your output might look like: 20:20.
 
-### 例となるユースケース:
+### Example use cases:
 
-* 日付：ある旅行会社が、旅行の出発日をデータのフィールドとして収集しています。この会社では、一番人気の曜日を把握するため、すべての出発日の[!UICONTROL 曜日]を比較するレポートを作成したいと考えています。また、[!UICONTROL 月]に関しても、同様のレポートを必要としています。
+* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
 
-* 日時：ある小売会社が、店舗内における販売時点（POS）の購入が成立した時間を収集しています。この会社は、特定の月において、最も忙しい買い物時間（[!UICONTROL 時刻]）を把握したいと考えています。
+* Date-Time: A retail company is collecting the time for each of their in-store point-of-sale (POS) purchases. Over a given month, they would like to understand the busiest shopping periods by [!UICONTROL Hour of Day].
 
 >[!MORELIKETHIS]
->[形式コンポーネント設定の日付と日時](/help/data-views/component-settings/format.md)
+>[Date and Date-Time in the Format component setting](/help/data-views/component-settings/format.md)-->
 
