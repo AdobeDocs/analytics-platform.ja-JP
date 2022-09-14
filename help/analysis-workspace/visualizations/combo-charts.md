@@ -4,30 +4,24 @@ title: コンボグラフのビジュアライゼーション
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '768'
 ht-degree: 31%
 
 ---
 
 # コンボグラフ
 
->[!NOTE]
->
->この機能は、現在、[限定的なテスト中](/help/release-notes/releases.md)です。
-
 この [!UICONTROL コンボグラフ] ビジュアライゼーションを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく簡単に作成できます。データのトレンドを線/棒の組み合わせで簡単に表示できます。
 
-の使用 [!UICONTROL コンボグラフ] から
+の使用 [!UICONTROL コンボグラフ] 移動先：
 
 * 今週の注文を、先月（および昨年）の同じ時間（すべて数回のクリックで）の注文と比較します。
-
 * 複数の指標をすばやく分析および比較する ( 例： [!UICONTROL 実訪問者数] および [!UICONTROL 売上高]) を同じチャート上で相互に照合し合わせます。
-
 * 関数に対する指標の分析 ( 例： [!UICONTROL 累加平均]) を示します。
 
-次のことが可能です。
+次の操作を実行できます。
 
 * 1 つので複数の比較を追加 [!UICONTROL コンボグラフ].
 * 1 つ以上の比較を追加する場合、例えば [!UICONTROL 時間の比較].
@@ -38,7 +32,7 @@ ht-degree: 31%
 
 1. 左側のパネルのビジュアライゼーションドロップダウンリストから、 [!UICONTROL コンボグラフ] ビジュアライゼーションを空のパネルに変換します。
 
-   ![](assets/combo-chart-build.png)
+   ![ビルド](assets/combo-chart-build.png)
 
 1. ドロップダウンリストから、X 軸のディメンションと Y 軸の指標を選択します。
 
@@ -46,9 +40,9 @@ ht-degree: 31%
 
    | 行の比較タイプ | 定義 |
    | --- | --- |
-   | **[!UICONTROL 時間比較]** | 最も一般的なタイプの比較 — この期間と 4 週間前の期間を比較します。 選択した場合 [!UICONTROL 時間の比較]を選択し、比較する期間を 2 番目に選択します。<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL 関数]** | 次のような関数を導入できます。 [!UICONTROL 平均] を比較に追加します。 以下のサポートされる関数のリストを参照してください。<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL セカンダリ指標]** | 例えば、 [!UICONTROL 売上高] を別の指標に追加します。<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL 時間比較]** | 最も一般的なタイプの比較 — この期間と 4 週間前の期間を比較します。 選択した場合 [!UICONTROL 時間の比較]を選択し、比較する期間を 2 番目に選択します。<p>![期間](assets/combo-time-period.png) |
+   | **[!UICONTROL 関数]** | 次のような関数を導入できます。 [!UICONTROL 平均] を比較に追加します。 以下のサポートされる関数のリストを参照してください。<p>![関数](assets/combo-functions.png) |
+   | **[!UICONTROL セカンダリ指標]** | 例えば、 [!UICONTROL 売上高] を別の指標に追加します。<p>![2 つの指標](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -56,7 +50,7 @@ ht-degree: 31%
 
    出力は次のようになります。
 
-   ![](assets/combo-output.png)
+   ![出力](assets/combo-output.png)
 
    現在の期間が棒グラフに表示され、比較期間が折れ線グラフに表示されます。 折れ線グラフのドットは、「棒のベル」と呼ばれます。
 
@@ -78,17 +72,17 @@ ht-degree: 31%
 
 次に、売上高指標の累加平均の例を示します。
 
-![](assets/combo-cumul-avg.png)
+![累加平均](assets/combo-cumul-avg.png)
 
 累加平均関数と平均関数の両方を持つコンボグラフの例を次に示します。
 
-![](assets/combo-two-functions.png)
+![2 つの関数](assets/combo-two-functions.png)
 
 ## コンボグラフ設定
 
 コンボグラフの右上にある歯車アイコンをクリックして、設定を変更します。
 
-![](assets/combo-settings.png)
+![設定](assets/combo-settings.png)
 
 | 設定 | 定義 |
 | --- | --- |
