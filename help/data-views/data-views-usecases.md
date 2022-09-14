@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 91%
 
 ## 3. フロー図で数値ディメンションを「指標」として使用する {#numeric}
 
-数値ディメンションを使用して、 [!UICONTROL  フロー] ビジュアライゼーション。
+数値ディメンションを使用して、[!UICONTROL フロー]ビジュアライゼーションに「指標」を取り込むことができます。
 
 1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
@@ -87,19 +87,19 @@ f. 値として「50」を指定します。
 その他のデータビューの設定について詳しくは、「[データビューの作成](/help/data-views/create-dataview.md)」を参照してください。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。
 
-## 7.新しいセッションレポート {#new-repeat}
+## 7. 新しいセッションレポート {#new-repeat}
 
 このデータビューに対して定義したレポートウィンドウと 13 か月のルックバックウィンドウに基づいて、セッションがユーザーにとって実際に初めてのセッションであるかどうかを判断できます。このレポートを使用すると、次のような情報を確認できます。
 
-* 新しいセッションからの注文の割合は？
+* 新規セッションからの注文件数は何パーセントあるか。
 
-* 特定のマーケティングチャネルまたは特定のキャンペーンに対して、初めてのユーザーをターゲットにしていますか。 この選択はコンバージョン率にどのような影響を与えますか？
+* 任意のマーケティングチャネルまたは特定のキャンペーンにおいて、初めてのユーザーをターゲティングしているか。この選択によって、コンバージョン率にどのような影響があるか。
 
 1 つの指標は、このレポートを容易にします。
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 新しいセッションは、レポートウィンドウ内での人物の定義された最初のセッションと定義されます。
+* [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 新規セッションは、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
@@ -113,7 +113,7 @@ f. 値として「50」を指定します。
 
 * 13 か月間のルックバックウィンドウの前に最初のセッションが発生した場合。このセッションは無視されます。
 
-* セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022 年 6 月 1 日から 6 月 15 日までにレポートを実行したとします。 ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
+* セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022年6月1日から 6月15日までにレポートを実行したとします。ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
 
 <!--## Use the Date and Date-Time functionality {#date}
 

@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -22,8 +22,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年9月 | の新しい使用例 [Google Analyticsデータの CJA への移行](/help/use-cases/ga/overview.md). |
 | 2022年9月 | に関する新しいトピックです。 [コンボグラフ](/help/analysis-workspace/visualizations/combo-charts.md) Workspace で使用できます。 |
 | 2022年9月 | に関する新しいトピックです。 [実験パネル](/help/analysis-workspace/c-panels/experimentation.md) Workspace で使用できます。 |
-| 2022年8月 | Adobe Experience Platformの記事 [Analytics ソースコネクタのクロス地域のサポート](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). |
-| 2022年8月 | 次の記事を大幅に更新しました： [CJA アクセス制御](/help/getting-started/cja-access-control.md). |
+| 2022年8月 | [Analytics ソースコネクタのクロス地域サポート](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)に関する Adobe Experience Platform の記事。 |
+| 2022年8月 | [CJA のアクセス制御](/help/getting-started/cja-access-control.md)に関する記事を大幅に更新しました。 |
 | 2022年8月 | [データガバナンスのラベルとポリシーに対する CJA サポート](/help/data-views/data-governance.md)に関する新しい記事。 |
 | 2022年8月 | [Analytics ソースコネクタを通じて渡される Analytics データの用語の比較](/help/getting-started/aa-vs-cja/terminology.md)に関する新しい記事。 |
 | 2022年8月 | [リアルタイム顧客プロファイルへのオーディエンス公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=ja)に関する新しいドキュメント。 |
@@ -36,7 +36,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年6月 | [Adobe Analytics と CJA にまたがるレポート機能のデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)に関する新しい記事。 |
 | 2022年6月 | [レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/combine-report-suites.md)に関する新しい記事。 |
 | 2022年6月 | [モバイルスコアカードでの注釈の共有](/help/components/annotations/mobile-annotations.md)に関する新しい記事。 |
-| 2022年6月 | [CJA の Analytics ラボ](/help/labs/labs.md)に関する新しい記事。 |
+| 2022年6月 | [CJA の Analytics Labs](/help/labs/labs.md)に関する新しい記事。 |
 | 2022年6月 | [ルックアップキーおよびルックアップ値としての数値フィールドの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#numeric)に関する新しい節。 |
 | 2022年6月 | [フロービジュアライゼーションワークフロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)を更新。 |
 | 2022年5月 | CJA での[接続の作成](/help/connections/create-connection.md)に関する記事を大幅に更新しました。 |
