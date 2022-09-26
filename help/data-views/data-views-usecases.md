@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '979'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 
 例えば、データビューの含める／除外する機能を使用して、50 ドル以上の売り上げをもたらした製品にのみ焦点を当てます。そのため、1 件の注文に 50 ドルの製品購入と 25 ドルの製品購入が含まれる場合、注文全体ではなく、25 ドルの製品購入のみを除外します。
 
-1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
 a.「[!UICONTROL 形式]」で、「[!UICONTROL 通貨]」を選択します。
 b.「[!UICONTROL 通貨]」で、「USD」を選択します。
@@ -95,15 +95,15 @@ f. 値として「50」を指定します。
 
 * 任意のマーケティングチャネルまたは特定のキャンペーンにおいて、初めてのユーザーをターゲティングしているか。この選択によって、コンバージョン率にどのような影響があるか。
 
-1 つの指標は、このレポートを容易にします。
+指標の 1 つを利用することで、レポートの評価が容易になります。
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* [新しいセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 新規セッションは、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
+* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional)。新規セッションは、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
-このコンポーネントにアクセスするには：
+このコンポーネントにアクセスするには、以下の手順を実行します。
 
 1. データビューエディターに移動します。
 1. 「**[!UICONTROL コンポーネント]**」をクリックし、左パネルにある「**[!UICONTROL オプションの標準コンポーネント]**」タブをクリックします。
