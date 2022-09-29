@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: このガイドでは、Adobe Experience Platform に基づいた、Cross-Channel Analytics 用のアドビの次世代ソリューションである Customer Journey Analytics についてのサポート情報を提供します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
-workflow-type: ht
-source-wordcount: '757'
-ht-degree: 100%
+source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 98%
 
 ---
 
@@ -229,13 +229,16 @@ ht-degree: 100%
    + [スコアカードの作成](mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](mobile-app/executive.md)
++ Adobeの統合 {#integrations}
+   + [Adobeソリューションと CJA の概要の統合](/help/integrations/overview.md)
+   + [Journey Optimizerデータの CJA との統合](/help/integrations/ajo.md)
 + ユースケース {#cja-usecases}
+   + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
       + [Google Analytics から CJA へのデータ移行の概要](use-cases/ga/overview.md)
       + [Platform への Google Analytics 履歴データの取り込み](use-cases/ga/backfill.md)
       + [Platform への Google Analytics データのストリーミングの設定](use-cases/ga/streaming.md)
       + [CJA での Google Analytics データに関するレポート](use-cases/ga/report.md)
-   + [Customer Journey Analytics のユースケース](use-cases/cja-usecases.md)
    + [レポートスイートを様々なスキーマと組み合わせる](use-cases/combine-report-suites.md)
    + [オブジェクトの配列の使用](use-cases/object-arrays.md)
    + [バインディングディメンションと指標の使用](use-cases/binding-dimensions-metrics.md)
