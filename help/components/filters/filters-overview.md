@@ -2,12 +2,13 @@
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '1100'
-ht-degree: 100%
+source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 98%
 
 ---
+
 
 # フィルターの概要 {#overview}
 
@@ -18,6 +19,8 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 フィルタービルダーでフィルターを作成して保存したり、（ワークスペースで）フォールアウトビジュアライゼーションからフィルターを生成したりできます。また、複数のフィルターをまとめて、積み重ねフィルターとして使用することもできます。
 
 フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/create-filters.md) や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する [フィルターマネージャー](/help/components/filters/manage-filters.md) が含まれます。
+
+IMS 組織ごとに作成できるフィルターの最大数は 50,000 個です。
 
 ## フィルターのタイプ {#types}
 
