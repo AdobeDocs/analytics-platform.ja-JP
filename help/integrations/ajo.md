@@ -1,10 +1,10 @@
 ---
 title: Adobe Journey OptimizerとCustomer Journey Analyticsの統合
 description: AJO で生成されたデータを取り込み、CJA 内でAnalysis Workspaceを使用して分析します。
-source-git-commit: 28bc99a7f5ec7b280fd26a7a45dc076e67f652dc
+source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 3%
+source-wordcount: '664'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,8 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 | メッセージが正常に送信されました | 正常に送信されたメッセージ数 | スキーマ文字列要素を使用する `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` を次の設定で使用します。<br>コンポーネントタイプ：指標<br>値を含める：次と等しい `sent` |
 | 同期エラー | 同期に失敗したメッセージの合計数です | スキーマ文字列要素を使用する `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` を次の設定で使用します。<br>コンポーネントタイプ：指標<br>値を含める：次と等しい `sync` |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Journey Optimizer指標を使用した計算指標の設定
 
 Journey Optimizerデータセット用の目的のディメンションと指標を設定したら、 [計算指標](/help/components/calc-metrics/calc-metr-overview.md) を参照してください。 これらの計算指標は、データビューマネージャーで作成された上記の指標に基づいています。
@@ -48,6 +50,8 @@ Journey Optimizerデータセット用の目的のディメンションと指標
 | 計算指標 | 説明 | 数式 |
 | --- | --- | --- |
 | 送信されたメッセージ総数 | 送信された、成功または失敗したメッセージの合計数 | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Journey OptimizerとCustomer Journey Analyticsのレポートの違い
 
