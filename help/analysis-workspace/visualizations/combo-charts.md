@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 99%
+source-wordcount: '776'
+ht-degree: 96%
 
 ---
 
@@ -21,12 +21,13 @@ ht-degree: 99%
 * 複数の指標（[!UICONTROL ユニーク訪問者]や[!UICONTROL 売上高]など）を同じグラフで相互にすばやく分析して比較できます。
 * 一定期間にわたって関数（[!UICONTROL 累積平均]など）に対する指標を分析できます。
 
-次の点に留意してください。：
+次の点に注意してください。
 
-* 複数の比較を 1 つの[!UICONTROL コンボグラフ]に追加できます。
+* 1 回に複数の比較を追加できます [!UICONTROL コンボグラフ].
 * 1 つ以上の比較を追加する場合は、[!UICONTROL 時間比較]など、同じタイプの比較にする必要があります。
 * 最大 5 つの比較を追加できます。
 * 1 つの指標に最大 3 つのフィルター（セグメント）を適用できます。
+* 計算指標はコンボグラフではサポートされません。
 
 ## コンボグラフの作成
 
