@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 **最終更新日**：2022年9月14日（PT）
 
-Customer Journey Analyticsリリースは、 [連続配信モデル](releases.md) これにより、機能のデプロイメントに向けて、よりスケーラブルで段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 定期的に確認してください。
+Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。 定期的に確認してください。
 
 ## 関連リソース
 

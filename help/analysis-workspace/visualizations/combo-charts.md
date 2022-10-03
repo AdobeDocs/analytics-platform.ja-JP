@@ -7,7 +7,7 @@ exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 96%
 
 売上高指標の累積平均の例を以下に示します。
 
-![累加平均](assets/combo-cumul-avg.png)
+![累積平均](assets/combo-cumul-avg.png)
 
 累積平均関数と平均関数の両方を含む複合グラフの例を次に示します。
 
