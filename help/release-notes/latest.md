@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
+source-git-commit: fc1a5b1b0f01ace6207820e2421d1770f68c3583
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '471'
+ht-degree: 50%
 
 ---
 
-# 最新の Customer Journey Analytics（CJA）リリースノート（2022年9月）
+# Customer Journey Analytics(CJA) リリースノート（2022 年 10 月）
 
-**最終更新日**：2022年9月14日（PT）
+**最終更新日**:2022 年 10 月 6 日
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。 定期的に確認してください。
 
@@ -30,23 +30,20 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Analytics ソースコネクタのクロス地域サポート** | 任意の地域（米国、英国またはシンガポール）からレポートスイートを取り込めるようになりました。ただし、これらのレポートスイートは、ソース接続が作成される Experience Platform サンドボックスインスタンスと同じ組織にマッピングする必要があります。[詳細情報](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) | 2022年8月24日（PT） |
-| **初回セッションレポート** | 特定のセッションがユーザーの初めてのセッションかどうかを検出できるようになりました。[詳細情報](/help/data-views/data-views-usecases.md) | 2022年8月24日（PT） |
-| **CJA の実験パネル** | この新しい Workspace パネルを使用すると、CJA ユーザーは、オンライン、オフライン、アドビのソリューション、Adobe Journey Optimizer および BYO（bring-your-own）データに至るまで、あらゆるソースから A/B 実験の上昇率と信頼性を評価できます。[詳細情報](/help/analysis-workspace/c-panels/experimentation.md) | 2022年9月14日（PT）より提供開始の[限定リリース](/help/release-notes/releases.md) |
-| **Workspace での複合グラフのビジュアライゼーション** | 複合グラフを使用すると、Workspace 内で指標をより簡単かつ直感的に比較できます。[詳細情報](/help/analysis-workspace/visualizations/combo-charts.md) | 2022年9月14日（PT） |
-| **データガバナンスラベルとポリシーに対する CJA のサポート** | CJA と Adobe Experience Platform のプライバシーラベルおよびポリシーの統合を自動化します。Platform で使用されるデータセットで作成されたデータラベルは、CJA データビューで表示され、機密性の高いフィールドから指標やディメンションを作成するユーザーを停止や警告します。また、データが CJA から書き出される場合（Workspace または Report Builder のレポート、書き出し、API などを介して）は、特定の方法で扱われるべき機密情報がレポートに含まれていることをユーザーに通知するために、警告またはラベルが追加されます。[詳細情報](/help/data-views/data-governance.md) | 2022年9月14日（PT） |
+| **実験パネル** | この新しい Workspace パネルを使用すると、CJA ユーザーは、オンライン、オフライン、アドビのソリューション、Adobe Journey Optimizer およびBYO データに至るまで、あらゆるソースから A／B 実験の上昇率と信頼性を評価できます。[詳細情報](/help/analysis-workspace/c-panels/experimentation.md) | 2022 年 10 月 6 日 |
+| **[!UICONTROL 主要指標の概要] 視覚化** | この [!UICONTROL 主要指標の概要] ビジュアライゼーションを使用すると、1 つの期間内で重要な指標がどのようにトレンドを示しているかを確認できます。 また、2 つの期間にわたる指標のパフォーマンスを比較することもできます。詳細情報 | 2022 年 10 月 6 日からの段階的な展開 |
+| **CJA での日付フィールドのサポート** | CJA が日付および日時フィールドに関するレポートを作成できるようにします。[詳細情報](/help/data-views/data-views-usecases.md#date) | 2022 年 10 月 6 日 |
+| **モバイルアプリ：カスタム詳細ビュー** | カスタムの詳細ビューを使用すると、最も重要な情報に焦点を当てることで、オーディエンスと共有する情報に関してさらにターゲットを絞ることができます。 各スコアカードタイルに関連付けられた詳細ビューのレイアウトを変更し、テキストを追加して、エンドユーザーがデータに表示する内容をより深く説明することができます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja) | 2022 年 10 月 6 日 |
 
 {style=&quot;table-layout:auto&quot;}
-
-## 修正点
-
-AN-298412
 
 ## CJA 管理者向けの重要な注意事項
 
 | 通知 | 追加または更新された通知 | 説明 |
 | --- | --- | --- |
-| **IP からジオロケーションへのマッピングの改善** | 2022年9月9日（PT） | Adobeの IP 検索ベンダー（Digital Element）は、IP からジオロケーションへのマッピング用に新しく改善されたデータセット（NetAcuity Pulse）にアップグレードします。 Adobe Analytics にこの新しいデータセットが導入されるのは、**2022年10月5日（PT）**&#x200B;です。新しいデータベースは、以前のバージョンよりも正確になります。新しいデータベースが採用されると、一部の IP からジオへのマッピングが変更／改善されます。<p> Analytics ソースコネクタを通じて提供される CJA データも、新しいマッピングを自動的に活用します。 |
+| **デフォルトのランディングページ** | 2023 年 9 月 30 日 | この [新規ランディングページ](/help/getting-started/landing.md) 今年初めに導入されたは、 **2023 年 1 月**. 現在のページは非推奨となり、新しいエクスペリエンスを使用するには全員が必要になります。 |
+| **IP からジオロケーションへのマッピングの改善** | 2022年9月29日（PT） | Adobeの IP 検索ベンダー（Digital Element）は、IP からジオロケーションへのマッピング用に新しく改善されたデータセット（NetAcuity Pulse）にアップグレードします。 Adobe Analyticsは、この新しいデータセットの次への導入を延期しました： **2023 年 1 月**. 新しいデータベースは、以前のバージョンよりも正確になります。新しいデータベースを採用する際に、IP からジオロケーションへのマッピングは一部変更または改善されます。<p> CJA データは、 [!UICONTROL Analytics ソースコネクタ] また、は新しいマッピングを自動的に利用します。 |
+| **[!UICONTROL 異常値検出] 自動実行条件** | 2022年9月29日（PT） | 今日、 [!UICONTROL 異常値検出] 時系列フリーフォームテーブルのすべての列で自動実行されます。 データを分析やプロジェクトの読み込みを迅速に行えるように、Adobeは、 [!UICONTROL 異常値検出] 自動実行 開始中 **2022 年 10 月 27 日**&#x200B;の場合、異常値検出は、テーブルの最初の指標列でのみ自動実行されます。 実行する列設定を構成できます [!UICONTROL 異常値検出] 必要に応じて、他の列に配置します。 |
 
 {style=&quot;table-layout:auto&quot;}
 

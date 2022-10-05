@@ -3,18 +3,14 @@ description: CJA 実験パネルで A/B テストの結果を分析する方法�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1393'
 ht-degree: 98%
 
 ---
 
 # 実験パネル
-
->[!NOTE]
->
->この機能は、現在、[限定的なテスト中](/help/release-notes/releases.md)です。
 
 **[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、アドビのソリューション、Adobe Journey Optimizer、BYO（bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
 
