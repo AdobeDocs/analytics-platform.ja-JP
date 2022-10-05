@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 3b89c88186b27148ba7d0cdee77cd60699b7161f
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
