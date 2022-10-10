@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics(CJA) と、Analysis WorkspaceをExperience Platformのデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 33451b21024d5cd861ccf0cc92f492fb7749e938
+source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 95%
+source-wordcount: '776'
+ht-degree: 97%
 
 ---
 
@@ -229,9 +229,10 @@ ht-degree: 95%
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
-+ Adobeの統合 {#integrations}
-   + [Adobeソリューションと CJA の概要の統合](/help/integrations/overview.md)
-   + [Journey Optimizerデータの CJA との統合](/help/integrations/ajo.md)
++ アドビの統合 {#integrations}
+   + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
+   + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
+   + [顧客 AI データと CJA の統合](/help/integrations/customer-ai.md)
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
