@@ -1,13 +1,13 @@
 ---
-description: AEP 顧客 AI が CJA の Workspace とどのように統合するかを説明します。
-title: 顧客 AI と CJA の統合
+description: AEP 顧客 AI データと CJA の Workspace の統合方法を説明します。
+title: 顧客 AI データと CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: 81e80058ea5004d77ba1d15b9cd90a16283daa7c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 90%
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -31,15 +31,13 @@ ht-degree: 90%
 * **傾向の分布を確認する**。使用例：自分のセグメントで、より正確に傾向スコアの分布を把握したいと思います。&#x200B;例：ある小売業者は、ある製品に対して 50 ドルオフのプロモーションを実施したいと考えています。この業者は、予算などの理由から、非常に限定的なプロモーションのみの実施を希望することがあります。データを分析し、顧客の上位 80%以上をターゲットにすることを決定します。
 * **特定のコホートがアクションを実行する傾向を経時的に確認する**。使用例：特定のコホートを経時的に追跡したいのですが、 最初のコホートと似ていますが、特定のコホートを経時的に追跡できます。接客業の例：マーケターは、ブロンズ層とシルバー層、またはシルバー層とゴールド層の時間を経時的に追跡できます。その後、ホテルを予約する各コホートの傾向を経時的に確認できます。
 
-## ワークフロー
-
 手順の一部は、CJA の出力を処理する前に、Adobe Experience Platform で実行されます。
 
-### 手順 1：顧客 AI インスタンスを設定する
+## 手順 1：顧客 AI インスタンスを設定する
 
 データを準備し、すべての資格情報とスキーマを設定したら、Adobe Experience Platform ガイドの[顧客インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=ja)の手順に従って開始します。
 
-### 手順 2：顧客 AI データセットへの CJA 接続を設定する
+## 手順 2：顧客 AI データセットへの CJA 接続を設定する
 
 CJA で、顧客 AI 用に実装された Experience Platform セットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
 
@@ -57,13 +55,13 @@ CJA で、顧客 AI 用に実装された Experience Platform セットに、[1 
 
 （この例はプロファイルデータセットです。スキーマオブジェクトの同じセットは、CJA が取得するエクスペリエンスイベントデータセットの一部になります。エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます。）このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが関連付けられています。
 
-### 手順 3：これらの接続に基づいたデータビューを作成する
+## 手順 3：これらの接続に基づいたデータビューを作成する
 
 CJA で、確立した接続の一部として得られたディメンション（スコア、スコアの日付、可能性など）や指標を使用して、[データビューの作成](/help/data-views/create-dataview.md)に進むことができます。
 
 ![データビューの作成](assets/create-dataview.png)
 
-### 手順 4：Workspace での CAI スコアのレポート
+## 手順 4：Workspace での CAI スコアのレポート
 
 CJA Workspace で新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
 
