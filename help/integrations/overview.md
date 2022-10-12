@@ -3,8 +3,8 @@ title: アドビのソリューションと Customer Journey Analytics の統合
 description: アドビのその他のソリューションやサービスとデータを統合する方法を説明します。
 source-git-commit: aae080253a25cb9a3853ee795fbceedd286e1498
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 75%
 
 ---
 
