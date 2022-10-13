@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 45e4a60b6bbf38e33f307dbbbf68ab3124dd6a33
+source-git-commit: ed5b1a233dc0e4cbfe223fe71e6e1960efba0592
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '517'
 ht-degree: 45%
 
 ---
@@ -34,7 +34,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **[!UICONTROL 主要指標の概要] 視覚化** | この [!UICONTROL 主要指標の概要] ビジュアライゼーションを使用すると、1 つの期間内で重要な指標がどのようにトレンドを示しているかを確認できます。 また、2 つの期間にわたる指標のパフォーマンスを比較することもできます。詳細情報 | 2022 年 10 月 6 日からの段階的な展開 |
 | **CJA での日付フィールドのサポート** | CJA が日付および日時フィールドに関するレポートを作成できるようにします。[詳細情報](/help/data-views/data-views-usecases.md#date) | 2022 年 10 月 6 日 |
 | **モバイルアプリ：カスタム詳細ビュー** | カスタムの詳細ビューを使用すると、最も重要な情報に焦点を当てることで、オーディエンスと共有する情報に関してさらにターゲットを絞ることができます。 各スコアカードタイルに関連付けられた詳細ビューのレイアウトを変更し、テキストを追加して、エンドユーザーがデータに表示する内容をより深く説明することができます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja) | 2022 年 10 月 6 日 |
-| **複数値の変数で大文字と小文字を区別しない** | 複数値の変数で大文字と小文字を区別しない場合、mvvar1 ～ mvvar3 に格納された値が自動的に小文字に変換されなくなります。 代わりに、Analytics Source Connector を通じてAdobe Experience Platformおよび CJA に渡されたデータは、ページから渡された元のケースを反映します。 | 2022 年 10 月 24 日 |
+| **複数値の変数で大文字と小文字を区別しない** | 大文字と小文字を区別しない複数値の変数の場合、 `mvvar1` - `mvvar3` が自動的に小文字に変換されなくなりました。 代わりに、Analytics Source Connector を通じてAdobe Experience Platformおよび CJA に渡されたデータは、ページから渡された元のケースを反映します。 | 2022 年 10 月 24 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
