@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
+source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!
 
 * 日時形式で「**[!UICONTROL 分単位]**」を「**[!UICONTROL 時:分]**」の形式で選択した場合、20:20 と出力されます。
 
-### 例となるユースケース:
+### 日付と日時の使用例
 
 * 日付：ある旅行会社が、旅行の出発日をデータのフィールドとして収集しています。この会社では、一番人気の曜日を把握するため、すべての出発日の[!UICONTROL 曜日]を比較するレポートを作成したいと考えています。また、[!UICONTROL 月]に関しても、同様のレポートを必要としています。
 
