@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 5a6d2b14ba7ed1221921cfb253026850fc7b6d73
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 97%
+source-wordcount: '772'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 
 ## Google Analytics データを取り込んで Customer Journey Analytics で分析する
 
-[Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module16/ex5.html?lang=ja#objectives)について、このチュートリアルをご確認ください。
+[Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=en)について、このチュートリアルをご確認ください。
 
 ## Bulk Data Insertion API を使用してデータを Analytics に取り込んでから、Experience Platform で Adobe ソースコネクタを介して取り込む
 
