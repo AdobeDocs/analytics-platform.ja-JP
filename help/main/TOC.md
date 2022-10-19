@@ -7,11 +7,11 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics ガイド
-user-guide-description: Customer Journey Analytics(CJA) と、Analysis WorkspaceをExperience Platformのデータと共に使用する方法について説明します。
+user-guide-description: Customer Journey Analytics（CJA）と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '794'
 ht-degree: 97%
 
 ---
@@ -79,6 +79,12 @@ ht-degree: 97%
    + プロジェクト {#build-workspace-project}
       + [プロジェクトの概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
+      + Workspace のフォルダー {#workspace-folders}
+         + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [フォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [プロジェクトを追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [新しいプロジェクトを保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
