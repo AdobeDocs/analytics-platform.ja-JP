@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: ht
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
+workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -173,7 +173,11 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ## 詳細スライドのカスタマイズ {#customize-detail-slide}
 
-カスタムの詳細スライドを使用すると、オーディエンスと共有する情報をさらに絞り込むことができます。各詳細スライドのレイアウトを変更し、テキストを追加して、エンドユーザーに表示されるデータをより適切に説明できます。また、ドロップダウンメニューを使用してグラフのタイプを変更することもできます。
+カスタムの詳細スライドを使用すると、オーディエンスと共有する情報をさらに絞り込むことができます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+各詳細スライドのレイアウトを変更し、テキストを追加して、エンドユーザーに表示されるデータをより適切に説明できます。また、ドロップダウンメニューを使用してグラフのタイプを変更することもできます。
 
 ![カスタム詳細スライド](assets/custom-detail-slide.png)
 

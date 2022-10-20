@@ -3,10 +3,10 @@ description: Workspace でフォルダーを追加する方法を説明します
 keywords: Analysis Workspace
 title: Workspace にフォルダーを追加
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->この機能は現在、限定リリース中です。一部の画面は変更される場合があります。
+>この機能は現在ベータ版です。 一部の画面は変更される場合があります。
 
 ## テーブル表示から
 
