@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Workspace レポートレベルでは、別のレベルのアクセス制御を�
 | --- | --- |
 | **[!UICONTROL データビュー]** | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
 | **[!UICONTROL レポートツール]**： |  |
-| **[!UICONTROL 監査ログへのアクセス]** | 現在、[監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/)は、API 経由でのみ使用できます。この権限は、API と今後の監査ログ UI に対する権限チェックを強制します。 |
+| **[!UICONTROL 監査ログへのアクセス]** | この権限により、 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) そして [監査ログ UI](/help/privacy/audit-log.md). |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます（レポート使用状況の機能はまだリリースされていません）。 |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。（レポート使用状況の機能はまだリリースされていません）。 |
 | **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
