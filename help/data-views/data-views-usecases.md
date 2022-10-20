@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -87,23 +87,23 @@ f. 値として「50」を指定します。
 その他のデータビューの設定について詳しくは、「[データビューの作成](/help/data-views/create-dataview.md)」を参照してください。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。
 
-## 7.新しいセッションとリターンセッションのレポート {#new-repeat}
+## 7. 新規セッションレポートと再来訪セッションレポート {#new-repeat}
 
-このデータビューに対して定義したレポートウィンドウと 13 ヶ月のルックバックウィンドウに基づいて、セッションが実際にユーザーの初回セッションかリターンセッションかを判断できます。 このレポートを使用すると、次のような情報を確認できます。
+このデータビューに対して定義したレポートウィンドウと 13 か月のルックバックウィンドウに基づいて、セッションがユーザーにとって実際に初めてのセッションまたは再来訪セッションであるかどうかを判断できます。このレポートを使用すると、次のような情報を確認できます。
 
-* 新規またはリターンセッションからの注文の割合は？
+* 注文件数の何パーセントが新規セッションまたは再来訪セッションから来るものなのか。
 
 * 任意のマーケティングチャネルまたは特定のキャンペーンについて、初めてのユーザーと再来訪ユーザーのどちらをターゲティングしているのか。この選択によって、コンバージョン率にどのような影響があるか。
 
-1 つのディメンションと 2 つの指標は、このレポートを容易にします。
+1 つのディメンションと 2 つの指標を利用することで、レポートの評価が容易になります。
 
-* [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional)  — このディメンションには次の 2 つの値があります。1) [!UICONTROL 新規] および 2) [!UICONTROL リピート]. この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
+* [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには、1) [!UICONTROL 新規]と 2) [!UICONTROL 再来訪]の 2 つの値があります。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。新しいセッション指標は、レポートウィンドウ内での人物の定義された最初のセッションとして定義されます。
+* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。新規セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
 
-* [セッションを返す](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) リターンセッション指標は、人物の初回セッションではなかったセッションの数です。—>
+* [再来訪セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) 再来訪セッション指標は、ユーザーの初回セッションではなかったセッション数です。-->
 
-これらのコンポーネントにアクセスするには：
+これらのコンポーネントにアクセスする手順は次のとおりです。
 
 1. データビューエディターに移動します。
 1. 「**[!UICONTROL コンポーネント]**」をクリックし、左パネルにある「**[!UICONTROL オプションの標準コンポーネント]**」タブをクリックします。
@@ -115,7 +115,7 @@ f. 値として「50」を指定します。
 
 * セッションがルックバックウィンドウとレポートウィンドウの両方にまたがっている場合。2022年6月1日から 6月15日までにレポートを実行したとします。ルックバックウィンドウは、2021年5月1日から 2022年5月31日までです。 あるセッションが 2022年5月30日に開始して2022年6月1日に終了した場合、そのセッションはルックバックウィンドウに含まれるので、レポートウィンドウのすべてのセッションは、再来訪セッションとしてカウントされます。
 
-## 8.日付と日時の機能を使用する {#date}
+## 8. 日付と日時の機能の使用 {#date}
 
 Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。CJA データビューで、これらのフィールドがサポートされるようになりました。これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
 
