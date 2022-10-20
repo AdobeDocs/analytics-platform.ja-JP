@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
+source-git-commit: d11a1cf98999c5797ab456bd547c065a5103b068
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 97%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 97%
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [フォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [フォルダとサブフォルダの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [プロジェクトを追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [新しいプロジェクトを保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -260,6 +260,7 @@ ht-degree: 97%
    + [ラボユーザーガイド](../labs/labs.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](../troubleshooting/compare.md)
-+ プライバシー {#cja-privacy}
++ データガバナンス {#cja-privacy}
+   + [監査ログ](../privacy/audit-log.md)
    + [データガバナンス](../privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

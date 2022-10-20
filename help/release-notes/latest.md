@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 785ea95049135adef888c20a6d9fef9f31439a7d
+source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 71%
+source-wordcount: '517'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ターゲット日](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Workspace プロジェクトのフォルダ** | Workspace プロジェクトのフォルダーを使用すると、ユーザーは、検索やアクセスを改善するために、フォルダーを使用してプロジェクトを整理および分類できます。 共有会社フォルダーを使用すると、管理者は、コンテンツを簡単に作成してすべての Workspace ユーザーと共有できます [詳細情報](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | 2022年10月19日（PT） |
 | **実験パネル** | この新しい Workspace パネルを使用すると、CJA ユーザーは、オンライン、オフライン、アドビのソリューション、Adobe Journey Optimizer およびBYO データに至るまで、あらゆるソースから A／B 実験の上昇率と信頼性を評価できます。[詳細情報](/help/analysis-workspace/c-panels/experimentation.md) | 2022年10月5日（PT） |
 | **[!UICONTROL 主要指標の概要]のビジュアライゼーション** | [!UICONTROL 主要指標の概要]のビジュアライゼーションを使用すると、1 つの期間内で重要な指標のトレンドを確認できます。また、2 つの期間で指標のパフォーマンスを比較することもできます。詳細情報 | 2022年10月5日（PT）から段階的にロールアウトを開始 |
 | **CJA での日付フィールドのサポート** | CJA が日付および日時フィールドに関するレポートを作成できるようにします。[詳細情報](/help/data-views/data-views-usecases.md#date) | 2022年10月5日（PT） |
