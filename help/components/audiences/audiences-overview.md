@@ -2,10 +2,10 @@
 title: CJA オーディエンス公開の概要
 description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 18306a5a2fc8873850eb62b7407acb55db4007ea
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 86%
 
 ---
 
@@ -36,6 +36,10 @@ Customer Journey Analytics（CJA）で検出されたオーディエンスを作
 * 管理者は、この権限を個々のユーザーに付与できます。
 
 * 管理者には Adobe Experience Platform での&#x200B;**[!UICONTROL プロファイル管理]**&#x200B;権限も必要です。
+
+## データガバナンスと同意
+
+CJA でオーディエンスを公開すると、オーディエンスで使用されるフィールドに添付されたデータガバナンスラベルとポリシーが記録されます。  任意の Adobe Experience App でオーディエンスがアクティブ化されると、関連するすべてのデータガバナンスラベルとポリシーをそのオーディエンスで使用でき、適切な実施をおこなうことができます。  [同意の詳細を表示](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja#consent-policy)
 
 ## 次の手順
 
