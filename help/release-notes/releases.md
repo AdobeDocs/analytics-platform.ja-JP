@@ -2,10 +2,10 @@
 description: Customer Journey Analytics の継続的な機能リリース戦略を説明します
 title: Customer Journey Analytics 機能リリース
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
-source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -17,9 +17,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 [!UICONTROL Analysis Workspace] では、機能フラグ（「トグル」とも呼ばれます）を使用して新機能の表示/非表示を制御し、完全リリース前の制御スケールテストを行うことができます。このリリース戦略には、次のフェーズが含まれます。
 
-* **実稼働環境（RTP）にリリース**：コードが実稼動環境にリリースされ、Analysis Workspace での機能の表示がオフになっています。この機能は、CJA API で利用できる場合があります。
-
-* **制限付きテスト**：段階的なリリースは、アドビの内部ユーザーによるテストで始まります。このリリースでは、数か月の間に 0% から 100% の可用性に拡張されます。Experience Cloud 組織レベルで展開が段階的に行われるので、組織内の権利を持つすべてのユーザーは同じエクスペリエンスを受け取ります。
+* **ロールアウトの開始**:段階的なリリースのロールアウトは、内部のAdobeユーザーによる制限付きテストで始まります。 このリリースでは、数か月の間に、お客様に対して 0%から 100%の可用性に拡張されます。 Experience Cloud 組織レベルで展開が段階的に行われるので、組織内の権利を持つすべてのユーザーは同じエクスペリエンスを受け取ります。
 
 * **GA (General Availability)**：この機能は、権利を付与されている Experience Cloud の組織の 100% が利用でき、機能のリリースが完了しました。
 
