@@ -3,9 +3,9 @@ title: 顧客管理キー
 description: CJA 用の顧客管理キーの設定方法について説明します。
 hide: true
 hidefromtoc: true
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ce386f30e344b3921689a8ecc0e6fba0a55137f9
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >この機能は、2022 年 11 月に提供されます。
 
-Customer Journey Analytics(CJA) は、Healthcare Shield および Privacy &amp; Security Shield のお客様が CJA データに適用する Azure Customer Managed Key(CMK) を利用できるようにするオプションを提供します。  このプロセスは、Adobe Experience Platform CMK の設定（従うリンク）とは別のものです。
+Customer Journey Analytics(CJA) は、 [医療用盾](https://www.adobe.com/trust/compliance/hipaa-ready.html) およびプライバシーとセキュリティシールドのお客様は、CJA データに適用する Azure Customer Managed Key(CMK) を利用できます。  このプロセスは、 [Adobe Experience Platform CMK の設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
 >[!NOTE]
 >
