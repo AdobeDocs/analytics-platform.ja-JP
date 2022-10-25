@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 62%
+source-wordcount: '741'
+ht-degree: 61%
 
 ---
 
@@ -86,8 +86,8 @@ Healthcare Shield SKU を購入して有効にすると、次の 2 つの状況�
 
 ### 新規スケジュール済みプロジェクト
 
-1. プロジェクトを保存したら、共有/今すぐファイルを送信、または共有/ファイルをスケジュールに従って送信に移動します。
-1. 「ファイルを今すぐ共有」または「ファイルをスケジュールに従って共有」の上記の手順に従います。
+1. プロジェクトを保存したら、に移動します。 **[!UICONTROL 共有]** > **[!UICONTROL ファイルを今すぐ送信]**&#x200B;または [!UICONTROL 共有] > **[!UICONTROL ファイルをスケジュールに従って送信]**.
+1. 上記の手順に従い、 [ファイルを今すぐ送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) または [ファイルをスケジュールに従って送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### 既存のスケジュール済みプロジェクト
 
