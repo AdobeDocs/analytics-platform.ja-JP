@@ -1,7 +1,9 @@
 ---
 title: 顧客管理キー
 description: CJA 用の顧客管理キーの設定方法について説明します。
-source-git-commit: 4894519f618b79a5ca29952df48291c44915adae
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

@@ -1,19 +1,17 @@
 ---
 title: 監査ログ
 description: CJA 監査ログの表示方法と管理方法について説明します。
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '848'
 ht-degree: 18%
 
 ---
 
 
 # 監査ログ
-
->[!NOTE]
->
->この機能は、現在、[限定的なテスト中](/help/release-notes/releases.md)です。
 
 Customer Journey Analytics(CJA) では、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA(Health Insurance Portability and Accountability Act) などの企業のデータ管理ポリシーや規制要件に効果的に準拠するのに役立ちます。
 
