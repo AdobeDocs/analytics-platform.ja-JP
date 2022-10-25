@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 63%
+source-wordcount: '723'
+ht-degree: 62%
 
 ---
 
@@ -95,6 +95,7 @@ Healthcare Shield SKU を購入して有効にすると、次の 2 つの状況�
 
 ![電子メール](assets/email-password.png)
 
+1. Customer Journey Analyticsに戻る
 1. クリック **[!UICONTROL スケジュール済みプロジェクトの表示]**.
 1. 内 **[!UICONTROL スケジュール済みプロジェクトを編集]** ダイアログで、パスワードを入力し、再入力します。
 1. スケジュール済みプロジェクトの受信者に、このパスワードについて知らせます（のみ）。
