@@ -1,5 +1,5 @@
 ---
-description: Workspace でフォルダーを追加する方法を説明します
+description: Workspace でフォルダーを追加する方法を学習する
 keywords: Analysis Workspace
 title: Workspace にフォルダーを追加
 feature: CJA Workspace Basics
@@ -8,14 +8,14 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 1%
+ht-degree: 97%
 
 ---
 
 
-# フォルダにプロジェクトを追加
+# フォルダーにプロジェクトを追加
 
-テーブル表示のフォルダまたはフォルダ内からフォルダにプロジェクトを追加できます。
+テーブル表示またはフォルダー内からフォルダーにプロジェクトを追加できます。
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ ht-degree: 1%
 
 ## テーブル表示から
 
-ホームページのテーブルビューからフォルダにプロジェクトを追加します。
+ホームページのテーブル表示からフォルダーにプロジェクトを追加します。
 
-1. フォルダーに追加する 1 つ以上のプロジェクトを選択します。
+1. フォルダーに追加するプロジェクトを 1 つ以上選択します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
-1. 選択 **移動先**. [ フォルダを選択 ] ダイアログが表示されます。
+1. 「**移動先**」を選択します。フォルダーを選択ダイアログが表示されます。
 
 1. ドロップダウンメニューからフォルダー名を選択します。
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
-   選択したプロジェクトがフォルダーに追加されます。
+   選択したオファーがフォルダーに追加されます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   Workspace のランディングページに、フォルダーに（3 つの）プロジェクトが含まれていることが表示されるようになりました。
+   Workspace のランディングページには、フォルダーに（3 つの）プロジェクトが含まれていることが表示されるようになりました。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
@@ -51,17 +51,17 @@ ht-degree: 1%
 
 省略記号リンクを使用して、フォルダー内からプロジェクトを追加することもできます。
 
-1. テーブル表示からフォルダを選択して開きます。
+1. テーブル表示からフォルダーを選択して開きます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. 次をクリック： **...** 右上の省略記号アイコン
+1. 右上の「**...**」省略記号アイコンをクリックします。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
-   ドロップダウンメニューには、フォルダーにプロジェクトを追加するためのオプションが表示されます。 その他のオプションでは、フォルダーの名前変更、移動、削除や、フォルダー権限の管理をおこなうことができます。
+   ドロップダウンメニューには、フォルダーにプロジェクトを追加するためのオプションが表示されます。その他のオプションでは、フォルダーの名前変更、移動、削除や、フォルダー権限の管理を行うことができます。
 
-1. 選択 **プロジェクトを追加** をクリックし、追加するプロジェクトをドロップダウンリストから選択します。
+1. 「**プロジェクトを追加**」をクリックしてから、追加するプロジェクトをドロップダウンリストから選択します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. クリック **追加** をクリックして、プロジェクトをフォルダーに追加します。
+1. 「**追加**」をクリックして、プロジェクトをフォルダーに追加します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-管理者のみが、会社フォルダーにプロジェクトを追加したり、新しいプロジェクトを作成して会社フォルダーに保存したりできます
+管理者のみが、会社フォルダーにプロジェクトを追加したり、新しいプロジェクトを作成して会社フォルダーに保存したりできます。

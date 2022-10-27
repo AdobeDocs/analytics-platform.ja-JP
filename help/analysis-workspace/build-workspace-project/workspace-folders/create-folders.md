@@ -1,5 +1,5 @@
 ---
-description: Workspace でフォルダーとサブフォルダーを作成する方法を説明します
+description: Workspace でフォルダーとサブフォルダーを作成する方法を学ぶ
 keywords: Analysis Workspace
 title: フォルダーの作成
 feature: CJA Workspace Basics
@@ -8,26 +8,26 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 6%
+ht-degree: 96%
 
 ---
 
 
 # フォルダーの作成
 
-新しいフォルダまたはサブフォルダを、Workspace ランディングページのプロジェクトおよびフォルダのリストに追加できます。
+新しいフォルダーまたはサブフォルダーを、Workspace ランディングページのプロジェクトおよびフォルダーのリストに追加できます。
 
 >[!NOTE]
 >
 >この機能は現在ベータ版です。 一部の画面は変更される場合があります。
 
-## 新規フォルダーを作成
+## 新規フォルダーの作成
 
-新しいフォルダーを作成するには、
+新規フォルダーを作成するには、
 
-1. クリック **新規作成**.
+1. 「**新規作成**」をクリックします。
 
-1. 新しいフォルダの名前を入力します。
+1. 新規フォルダーの名前を入力します
 
 1. ドロップダウンメニューからタグを選択します。
 
@@ -43,11 +43,11 @@ ht-degree: 6%
 
 ## サブフォルダーの作成
 
-サブフォルダを使用すると、プロジェクトの管理と編成のレベルをさらに高めることができます。
+サブフォルダーを使用すると、プロジェクトの管理と整理のレベルをさらに高めることができます。
 
-既存のフォルダを開いたときにサブフォルダを作成するには、次の手順に従います。
+既存のフォルダーを開いたときにサブフォルダーを作成するには、次の手順に従います。
 
-1. クリック **新しいフォルダーを作成**.
+1. 「**新規フォルダーを作成**」をクリックします。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
@@ -57,12 +57,12 @@ ht-degree: 6%
 
 1. 「**作成**」をクリックします。
 
-   新しいサブフォルダがプロジェクトとサブフォルダのリストに追加されます。
+   プロジェクトとサブフォルダーのリストに新しいサブフォルダーが追加されます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >
-   >1 つのフォルダーに最大 10 レベルのサブフォルダーを作成できます。
+   >1 つのフォルダー内に最大 10 レベルのサブフォルダーを作成できます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

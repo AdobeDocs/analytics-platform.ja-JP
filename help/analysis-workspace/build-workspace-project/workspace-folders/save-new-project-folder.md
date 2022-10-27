@@ -1,21 +1,21 @@
 ---
-description: Workspace のフォルダーにプロジェクトを保存する方法について説明します
+description: Workspace のフォルダーにプロジェクトを保存する方法を学ぶ
 keywords: Analysis Workspace
-title: フォルダへのプロジェクトの保存
+title: フォルダーにプロジェクトを保存する
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 5%
+ht-degree: 92%
 
 ---
 
 
-# 新しいプロジェクトをフォルダに保存する
+# フォルダーに新しいプロジェクトを保存する
 
-新しいプロジェクトを特定のフォルダに保存するには、プロジェクトを保存ダイアログウィンドウでフォルダ名を選択します。
+新しいプロジェクトを特定のフォルダーに保存するには、プロジェクトを保存ダイアログウィンドウでフォルダー名を選択します。
 
 >[!NOTE]
 >
@@ -25,10 +25,10 @@ ht-degree: 5%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. 内 **プロジェクト** > **保存** ダイアログで、[ フォルダ ] ドロップダウンメニューからフォルダ名を選択します。
+1. **プロジェクト**／**保存**&#x200B;ダイアログで、フォルダードロップダウンメニューからフォルダー名を選択します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. 「**保存**」をクリックします。
 
-   プロジェクトは選択したフォルダーに保存されます。
+   プロジェクトは選択したフォルダー内に保存されます。

@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 36667163792454a1793e48bc0c810615b51c1b7e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -81,10 +81,10 @@ ht-degree: 97%
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [フォルダとサブフォルダの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [プロジェクトを追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [プロジェクトの追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [新しいプロジェクトを保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [新しいプロジェクトの保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
@@ -115,7 +115,7 @@ ht-degree: 97%
       + [面グラフおよび積み重ね面グラフ](../analysis-workspace/visualizations/area.md)
       + [棒グラフおよび積み重ね棒グラフ](../analysis-workspace/visualizations/bar.md)
       + [ブレットグラフ](../analysis-workspace/visualizations/bullet-graph.md)
-      + [コンボグラフ](../analysis-workspace/visualizations/combo-charts.md)
+      + [複合グラフ](../analysis-workspace/visualizations/combo-charts.md)
       + [ドーナツ](../analysis-workspace/visualizations/donut.md)
       + [ヒストグラム](../analysis-workspace/visualizations/histogram.md)
       + [横棒グラフおよび積み重ね横棒グラフ](../analysis-workspace/visualizations/horizontal-bar.md)

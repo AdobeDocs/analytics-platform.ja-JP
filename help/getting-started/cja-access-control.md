@@ -20,7 +20,7 @@ Customer Journey Analytics（CJA）は、3 つのアクセスレベルまたは 
 
 ## 製品管理者の役割
 
-製品管理者には、CJA 内で必要なタスクを完了する権限があります。[Admin Console](https://adminconsole.adobe.com/enterprise/) の [!UICONTROL Customer Journey Analytics]／「[!UICONTROL 管理者]」タブ／[!UICONTROL 管理者を追加]で、 **Customer Journey Analytics 製品プロファイル**&#x200B;に製品管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
+製品管理者には、CJA 内で必要なタスクを完了する権限があります。[Admin Console](https://adminconsole.adobe.com/enterprise/) の [!UICONTROL Customer Journey Analytics]／「[!UICONTROL 管理者]」タブ／[!UICONTROL 管理者を追加]で、**Customer Journey Analytics 製品プロファイル**&#x200B;に自身が製品管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
 
 * 接続またはデータ表示の作成／更新／削除を行う
 * 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新／削除を行います。
@@ -49,7 +49,7 @@ Experience Platform の権限について詳しくは、[Adobe Experience Platfo
 
 ## Workspace プロジェクトのキュレーション
 
-Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、 [プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md)を参照してください。
+Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、[プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 
 ## 個々の指標またはディメンションへのアクセス権を付与する
 
