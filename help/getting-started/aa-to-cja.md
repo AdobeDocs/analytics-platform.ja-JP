@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1334'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 * 事前にこれらのレポートスイート間で変数の整合性を取っておく。例えば、レポートスイート 1 の eVar1 が[!UICONTROL ページ]を指し、レポートスイート 2 の eVar1 が[!UICONTROL 内部キャンペーン]を指している場合を考えてみましょう。このまま CJA に取り込むと、これらの変数が 1 つの eVar1 ディメンションに混ざってしまうので、わかりにくく不正確なレポートになる可能性があります。
 
-* [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用して、変数をマッピングする。すべてのレポートスイートで同じ共通の変数デザインを使用すると便利ですが、新しいExperience Platformを使用する場合は不要です [データ準備](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja#mapping) 機能。 この新機能により、データストリーム（またはプロパティ）レベルでマッピングされた値を使用して変数を参照できます。
+* [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用して、変数をマッピングする。すべてのレポートスイートで共通の変数設計を使用していれば便利ですが、Experience Platform に新しく導入された[データ準備](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja#mapping)機能を使用する場合、共通の変数設計は不要です。この新機能により、データストリーム（またはプロパティ）レベルでマッピングされた値を使用して変数を参照できます。
 
 [!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
 
@@ -104,7 +104,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 * [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
-* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=jp)
 
 ### その他の考慮事項
 
