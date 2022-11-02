@@ -3,9 +3,9 @@ title: 顧客管理キー
 description: CJA 用の顧客管理キーの設定方法について説明します。
 hide: true
 hidefromtoc: true
-source-git-commit: 90521aa7326486b9016321d35191a73ef891a0bc
+source-git-commit: 08a322e159725c565dafdc5ef28758cc97fb9ae4
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -30,5 +30,10 @@ CJA 用の CMK を設定するには、次の手順に従います。
 1. Azure では、アプリケーション管理者、クラウドアプリケーション管理者、グローバル管理者などの特権ロールを持つ管理者であることを確認してください。 [Microsoftの詳細情報](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. CJA でのみ使用する新しい Azure Key Vault を作成します。 [Microsoftの詳細情報](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. Key Vault のキーにAdobeAzure App のアクセス権を付与します。 これは、Adobeアプリケーション ID です。251e3919-1940-4296-bb8b-6b9a5e8a4805。 [Microsoftの詳細情報](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. CMK 設定をリクエストするAdobeカスタマーケアチケットを作成します。 チケットに Azure URI を含めます。 URI は、Azure キーの「キー識別子」フィールドに表示されます。
+1. CMK 設定をリクエストするAdobeカスタマーケアチケットを作成します。 チケットに Azure URI を含めます。 URI は、 **キー識別子** Azure キーのフィールドに入力します。
+
+   ![](assets/key-identifier.png)
+
 1. Adobeカスタマーケアが、CJA データに対する CMK アプリケーションの完了を確認します。
+
+Platform で使用されるすべてのデータは、CMK の有無に関わらず、送信時および保存時に暗号化され、データのセキュリティを維持します。 Adobe Experience Platform暗号化の詳細については、 [詳細情報](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html?lang=en).
