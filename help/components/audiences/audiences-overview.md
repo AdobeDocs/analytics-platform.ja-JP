@@ -3,9 +3,9 @@ title: CJA オーディエンス公開の概要
 description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ Customer Journey Analytics（CJA）で検出されたオーディエンスを作
 * Adobe Journey Optimizer でジャーニーにオーディエンスを使用する。
 * Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートする。
 * CJA のイベントベースのデータから派生する有用な属性を使用して、リアルタイム顧客プロファイルを充実させる。
-* オーディエンスの公開後に、最小限の待ち時間（数分）でこれらすべてを行う
-* 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開
+* オーディエンスの公開後に、最小限の待ち時間（数分）でこれらすべてを行う。
+* 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開。
 
 ## 主な用語
 
@@ -39,7 +39,7 @@ Customer Journey Analytics（CJA）で検出されたオーディエンスを作
 
 ## データガバナンスと同意
 
-CJA でオーディエンスを公開すると、オーディエンスで使用されるフィールドに添付されたデータガバナンスラベルとポリシーが記録されます。  任意の Adobe Experience App でオーディエンスがアクティブ化されると、関連するすべてのデータガバナンスラベルとポリシーをそのオーディエンスで使用でき、適切な実施をおこなうことができます。 [同意の詳細を表示](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja#consent-policy).
+CJA でオーディエンスを公開すると、オーディエンスで使用されるフィールドに添付されたデータガバナンスラベルとポリシーが記録されます。任意の Adobe Experience アプリケーションでオーディエンスがアクティブ化されると、関連するすべてのデータガバナンスラベルおよびポリシーをそのオーディエンスで使用でき、適切に実施できるようになります。[同意の詳細情報](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja#consent-policy)。
 
 ## 次の手順
 
