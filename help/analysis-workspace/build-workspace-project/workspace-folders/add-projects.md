@@ -1,29 +1,29 @@
 ---
-description: Workspace でフォルダーを追加する方法を学習する
+description: Workspace でフォルダーを追加する方法を学ぶ
 keywords: Analysis Workspace
-title: Workspace にフォルダーを追加
+title: Workspace へのフォルダーの追加
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# フォルダーにプロジェクトを追加
+# フォルダーへのプロジェクトの追加
 
-テーブル表示またはフォルダー内からフォルダーにプロジェクトを追加できます。
+テーブル表示でフォルダーに、またはフォルダー内からプロジェクトを追加できます。
 
 >[!NOTE]
 >
->この機能は現在ベータ版です。 一部の画面は変更される場合があります。
+>この機能は現在ベータ版です。一部の画面は変更される可能性があります。
 
 ## テーブル表示から
 
-ホームページのテーブル表示からフォルダーにプロジェクトを追加します。
+ホームページでテーブル表示からフォルダーにプロジェクトを追加します。
 
 1. フォルダーに追加するプロジェクトを 1 つ以上選択します。
 
@@ -39,33 +39,33 @@ ht-degree: 97%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
-   選択したオファーがフォルダーに追加されます。
+   選択したプロジェクトがフォルダーに追加されます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   Workspace のランディングページには、フォルダーに（3 つの）プロジェクトが含まれていることが表示されるようになりました。
+   Workspace のランディングページに、（3 つの）プロジェクトが含まれているフォルダーが表示されるようになります。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
 ## フォルダー内から
 
-省略記号リンクを使用して、フォルダー内からプロジェクトを追加することもできます。
+「...」リンクを使用して、フォルダー内からプロジェクトを追加することもできます。
 
 1. テーブル表示からフォルダーを選択して開きます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. 右上の「**...**」省略記号アイコンをクリックします。
+1. 右上の省略記号アイコン「**...**」をクリックします。 
 
    ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
-   ドロップダウンメニューには、フォルダーにプロジェクトを追加するためのオプションが表示されます。その他のオプションでは、フォルダーの名前変更、移動、削除や、フォルダー権限の管理を行うことができます。
+   ドロップダウンメニューには、フォルダーにプロジェクトを追加するためのオプションが表示されます。 その他のオプションを使用すると、フォルダーの名前変更、移動または削除や、フォルダー権限の管理を行うことができます。
 
-1. 「**プロジェクトを追加**」をクリックしてから、追加するプロジェクトをドロップダウンリストから選択します。
+1. 「**プロジェクトを追加**」をクリックし、追加するプロジェクトをドロップダウンリストから選択します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
-   フォルダーには複数のプロジェクトを追加できます。
+   複数のプロジェクトをフォルダーに追加できます。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 

@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: fbfc7113aef8857e11ccfba5e5e557eed16c2465
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 
-# Customer Journey Analytics(CJA) リリースノート（2022 年 10 月/11 月）
+# Customer Journey Analytics（CJA）リリースノート（2022年10月／11月）
 
 **最終更新日**：2022年10月25日（PT）
 
@@ -22,19 +22,19 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL 主要指標の概要]ビジュアライゼーション** | [!UICONTROL 主要指標の概要]ビジュアライゼーションを使用すると、1 つの期間内で重要な指標のトレンドを確認できます。また、2 つの期間で指標のパフォーマンスを比較することもできます。[詳細情報](/help/analysis-workspace/visualizations/key-metric.md) | 2022年10月5日（PT） | 2022年10月19日（PT） |
 | **複数値の変数で大文字と小文字が区別されない** | 大文字と小文字を区別しない複数値の変数の場合、`mvvar1` ～ `mvvar3` に格納されている値は、自動的に小文字に変換されなくなります。代わりに、Analytics Source Connector を通じて Adobe Experience Platform と CJA に渡されたデータは、ページから渡された元のケースを反映します。ASC/CJA 列 `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` はこの変更の影響を受けます。 | 該当なし | 2022年10月24日（PT） |
-| **CJA 監査ログ** | Customer Journey Analytics(CJA) では、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。以前は、これらのログは監査ログ API からのみ使用できました。 [詳細情報](/help/privacy/audit-log.md) | 該当なし | 2022年10月26日（PT） |
-| **HIPAA 対応** | Adobeは、Healthcare Shield のお客様のみに対する、Customer Journey Analyticsおよびその他のExperience Platformベースのアプリケーションで、保護された医療情報の受信、使用、保守、送信をサポートするようになりました。 ヘルスケアシールドは、米国でのみカバーエンティティまたはビジネスアソシエイトとなる医療関連のお客様向けです。 [詳細情報](https://www.adobe.com/trust/compliance/hipaa-ready.html) | 該当なし | 2022 年 11 月 8 日 |
-| **スケジュール済みプロジェクトのパスワード保護** | この機能は、HIPAA 対応の一部であり、Healthcare Shield のお客様にのみ適用されます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | 該当なし/ | 2022 年 11 月 8 日. |
+| **CJA 監査ログ** | Customer Journey Analytics（CJA）を使用すると、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。これらのログは、以前は監査ログ API を介してのみ利用可能でした。[詳細情報](/help/privacy/audit-log.md) | 該当なし | 2022年10月26日（PT） |
+| **HIPAA 対応** | アドビは、Healthcare Shield のお客様のみを対象として、Customer Journey Analytics およびその他の Experience Platform ベースのアプリケーションで、保護された医療情報の受信、使用、維持、送信をサポートするようになりました。 Healthcare Shield は、米国内の対象事業者またはビジネスアソシエイトである医療関係のお客様向けです。 [詳細情報](https://www.adobe.com/trust/compliance/hipaa-ready.html) | 該当なし | 2022年11月日（PT） |
+| **スケジュールされたプロジェクトのパスワード保護** | この機能は、HIPAA 対応の一部であり、Healthcare Shield のお客様にのみ適用されます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password) | 該当なし | 2022年11月7日（PT） |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## 修正点
 
-* 最新のMacOSバージョンの名前が正しく「Macintosh」にならない問題を修正しました。 この修正により、OS ディメンションでは、MacOS 11 から始まる「MacOS」バージョンの番号が使用され始めます。 (AN-301834)
+* 最新の MacOS バージョンが誤って「Macintosh」と命名されていた問題を修正しました。この修正により、OS ディメンションは、MacOS 11 から始まる「MacOS」バージョン番号を使用し始めます。（AN-301834）
 
-### その他の  修正点
+### その他の修正点
 
-AN-302367;AN-302562;AN-304036
+AN-302367、AN-302562、AN-304036
 
 ## CJA 管理者向けの重要な注意事項
 
