@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 98%
 
 ---
 
@@ -84,12 +84,12 @@ Healthcare Shield SKU を購入して有効にすると、次の 2 つの状況�
 
 パスワード要件は、アドビの規格に準拠しており、数字 1 文字以上および特殊文字 1 文字以上を含める 8 文字以上のパスワードが必要です。
 
-### 新しくスケジュールされたプロジェクト
+### 新しいスケジュール済みプロジェクトのパスワード保護
 
 1. プロジェクトを保存したら、**[!UICONTROL 共有]**／**[!UICONTROL 今すぐファイルを送信]**&#x200B;または[!UICONTROL 共有]／**[!UICONTROL スケジュールに従ってファイルを送信]**&#x200B;に移動します。
 1. [今すぐファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#now)または[スケジュールに従ってファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#schedule)で、上記の手順に従います。
 
-### 既存のスケジュールされたプロジェクト
+### 既存のスケジュール済みプロジェクトのパスワード保護
 
 プロジェクトがスケジュールされる前に、プロジェクトの所有者に次のようなメールが送信されます。
 
