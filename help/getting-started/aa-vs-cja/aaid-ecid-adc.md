@@ -2,10 +2,10 @@
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
 description: Analytics ソースコネクタによる Adobe Analytics ID フィールドの対処方法を説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
-workflow-type: ht
-source-wordcount: '560'
-ht-degree: 100%
+source-git-commit: a8f8d14eb854029d6245932a321cf08dfb3cd7e3
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Analytics ソースコネクタは、次のように、これらの ID を XDM �
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
 
-括弧内の項目
+&lt;> 角括弧内の項目は、実際の値が表示される場所を表します。
 
 identityMap 内：
 
