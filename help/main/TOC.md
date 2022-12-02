@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6fee3b9e91aff8c49176d86ac99fd78a6d852c4c
-workflow-type: ht
-source-wordcount: '802'
-ht-degree: 100%
+source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 98%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 100%
    + [Adobe Analytics から Customer Journey Analytics への進化](../getting-started/aa-to-cja.md)
    + [Customer Journey Analytics の新規ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
    + Adobe Analytics と Customer Journey Analytics の比較 {#compare-aa-cja}
+      + [Adobe AnalyticsのデータをCustomer Journey Analyticsに活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
       + [Adobe Analytics と CJA にまたがるデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -237,6 +238,7 @@ ht-degree: 100%
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
 + アドビの統合 {#integrations}
    + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
+   + [Adobe AnalyticsとCustomer Journey Analyticsの統合](/help/integrations/aa.md)
    + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
    + [顧客 AI データと CJA の統合](/help/integrations/customer-ai.md)
 + ユースケース {#cja-usecases}

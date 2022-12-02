@@ -4,10 +4,10 @@ description: Adobe Analytics データを Customer Journey Analytics のデー�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja) で、生データから、Analytics ソースコネクタによって一部の行が削除された可能性があるかどうかを確認します。
+1. In [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を使用して、一部の行が Analytics ソースコネクタで除外された可能性があるかどうかを生データから識別します。
 
-   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行が削除される可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
+   この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) は、XDM スキーマへの変換中に特定の行をフィルタリングする場合があります。 行全体が変換に適さない理由は複数考えられます。次のいずれかの Analytics フィールドにこれらの値が含まれている場合、行全体が除外されます。
 
    | Analytics フィールド | 行が削除される原因となる値 |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    hit\_source について詳しくは、[データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を参照してください。page\_event について詳しくは、[ページイベント検索](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=ja)を参照してください。
 
-1. コネクタによって行が削除された場合は、[!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
+1. コネクタが行をフィルターした場合は、 [!UICONTROL 発生件数] 指標。 結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
 
-## AEP から取り込む際にレコードが削除またはスキップされる可能性がある理由
+## AEP からの取り込み中にレコードがフィルターまたはスキップされる可能性がある理由
 
 CJA [接続](/help/connections/create-connection.md) を使用すると、データセットをまたいだ共通の人物 ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そして人物 ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
 

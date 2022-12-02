@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9874626b52fd4e87bd6337b20ac03d837d8ad888
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: d976160ae5186e9c8b9890b3835a251cac518b02
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,8 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
      <ul>
-       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja"> レポートスイートを様々なスキーマと組み合わせる </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-data-in-cja.html?lang=en?lang=en">Customer Journey AnalyticsでのAdobe Analyticsレポートスイートデータの利用 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja"> レポートスイートを様々なスキーマと組み合わせる </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=ja"> 処理ルール、VISTA および分類とデータ準備の比較 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=ja"> Adobe Analytics と CJA にまたがるレポート機能のデータ処理の比較 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=ja"> 仮想レポートスイート、データビュー、AEP サンドボックスおよび Analytics ソースコネクタ </a> </li>
@@ -48,7 +49,8 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
      <li><a href="https://www.adobe.com/jp/experience-platform.html" format="http" scope="external">Adobe Experience Platform</a> </li> 
      <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=ja" format="https" scope="external">Adobe Experience Platform チュートリアル</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external">API リファレンス</a> </li> 
-     <li><a href="https://www.adobe.com/jp/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">ドキュメントと開発者向けリソース</a> </li> 
+     <li><a href="https://www.adobe.com/jp/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">ドキュメントと開発者向けリソース</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja" format="https" scope="external"> レポートスイートデータ用のAdobe Analyticsソースコネクタ</a> </li>
     </ul> </td> 
   </tr> 
  </tbody> 

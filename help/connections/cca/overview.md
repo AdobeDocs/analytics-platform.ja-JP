@@ -4,10 +4,10 @@ description: 複数のデータセットの訪問者 ID のキーを変更して
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: ht
-source-wordcount: '1189'
-ht-degree: 100%
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Cross-Channel Analytics は画期的で堅牢な機能ですが、使用方法�
 
 組織がすべての前提条件を満たし、その制限事項を理解したら、次の手順に従って CJA での使用を開始できます。
 
-1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Experience Platform のドキュメントの[スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)と[データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)に関するページを参照してください。
+1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Analyticsのデータについては、 [Customer Journey AnalyticsでのAdobe Analyticsレポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 他のタイプのデータについては、 [スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) および [データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) (Adobe Experience Platformドキュメント ) を参照してください。
 1. 次の情報をアドビカスタマーサポートに連絡してください。
    * Cross-Channel Analytics を有効にするリクエスト
    * キーを変更するデータセットのデータセット ID
