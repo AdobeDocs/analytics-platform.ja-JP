@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 [!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
 
-次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/combine-report-suites.md)に関するユースケースを示します。
+次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)に関するユースケースを示します。
 
 ### 3.マーケティングチャネルの（再）設定 {#marketing-channels}
 
@@ -111,7 +111,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 ### その他の考慮事項
 
-* CJA データビューの機能を利用すると、Customer Journey Analytics 内で指標とディメンションをはるかに柔軟に定義できます。例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/data-views/data-views-usecases.md)
+* CJA データビューの機能を利用すると、Customer Journey Analytics 内で指標とディメンションをはるかに柔軟に定義できます。例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/use-cases/data-views/data-views-usecases.md)
 
 * Adobe Analytics でカスタムカレンダーを定義した場合、CJA 内でも同様の[カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md)を使用できます。カレンダーが正しく定義されていることを確認してください。
 

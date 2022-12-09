@@ -4,13 +4,13 @@ description: AEP および CJA に取り込むためのAdobe Analyticsレポー�
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 292109fe4aa148b91ae10f6a9f143ba70dd0c813
+exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 13%
 
 ---
-
 
 # Customer Journey AnalyticsでのAdobe Analyticsレポートスイートデータの利用
 
@@ -27,7 +27,7 @@ AEP および CJA でAdobe Analyticsレポートスイートの使用を開始�
 データの準備が完了したら、AEP および CJA で使用するレポートスイートの設定を開始する準備が整います。
 
 1. **AEP および CJA で使用する各レポートスイートのデータフローを作成します。** この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) は、次の操作を行うためのツールです。 [接続の作成](/help/connections/create-connection.md) （データフローと呼ばれる）Adobe Analyticsと AEP の間。 ソースコネクタを使用して、AEP で使用するレポートスイートごとに 1 つのデータフローを作成します。 データフローは、スキーマが変換されたレポートスイートデータのコピーを作成します。  [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja) CJA を含む AEP アプリケーションでの使用に関する情報です。 ソースコネクタを介してデータフローで設定された各レポートスイートは、個別のデータセットとして AEP データレイクに保存されます。 13 か月分の履歴レポートスイートデータが各データフローに自動的に含まれ、新しいデータが継続的に AEP に送られます。 Analytics ソースコネクタを使用すると、事前にスキーマを作成することを気にする必要がなくなります。 Adobe Analytics専用の標準化されたスキーマが自動的に作成されます。 ただし、AEP の [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) ツールを使用して、データがデータレイクに保存されて CJA で使用できるようになる前に、このスキーマを拡張できます。 特定のタイプのデータはソースコネクタによって除外され、AEP データレイクのデータセットには存在しないことに注意してください。 他の行は、データレイクと CJA の間で除外される場合があります。 詳しくは、 [Adobe Analyticsデータと CJA データの比較](/help/troubleshooting/compare.md) を参照してください。
-1. **データ準備を使用すると、CJA でレポートスイートを組み合わせるのに役立ちます。** Data Prep は様々な種類のeVar変換に使用できます。Adobe Analyticsデータの一般的な使用方法の 1 つは、複数のレポートスイート間での prop やデータマッピングの違いを解決し、レポートスイートを CJA 内で簡単に組み合わせられるようにすることです。 詳しくは、 [異なるスキーマでレポートスイートを組み合わせる](/help/use-cases/combine-report-suites.md) を参照してください。
+1. **データ準備を使用すると、CJA でレポートスイートを組み合わせるのに役立ちます。** Data Prep は様々な種類のeVar変換に使用できます。Adobe Analyticsデータの一般的な使用方法の 1 つは、複数のレポートスイート間での prop やデータマッピングの違いを解決し、レポートスイートを CJA 内で簡単に組み合わせられるようにすることです。 詳しくは、 [異なるスキーマでレポートスイートを組み合わせる](/help/use-cases/aa-data/combine-report-suites.md) を参照してください。
 1. **クロスチャネル分析の有効化** 必要に応じて。 CJA で複数のデータセットを組み合わせる場合、クロスチャネル分析の ID ステッチ機能を使用すると、様々な ID 名前空間を単一の stetchedID に解決し、デバイスやチャネルをまたいで顧客の単一のビューで利用できます。 詳しくは、 [クロスチャネル分析の概要](/help/connections/cca/overview.md) を参照してください。
 1. **1 つ以上の CJA 接続を作成します。** レポートスイートのデータセットを AEP データレイクで使用できるようになったら、1 つ以上のデータセットを作成できます [CJA 接続](/help/connections/overview.md) を使用して、これらのデータセットを CJA に取り込みます。 接続内で、レポートスイートのデータを他のタイプのデータと組み合わせ、顧客体験の真のクロスチャネル表示を作成できます。
 1. **1 つ以上の CJA データビューを作成します。** A [データビュー](/help/data-views/data-views.md) は、CJA 接続からのCustomer Journey Analyticsの解釈方法を決定するための、データに固有のコンテナです。 データビューには多くの強力な機能があります [設定オプション](/help/data-views/create-dataview.md) ユーザーに表示されるデータを [Analysis Workspace](/help/analysis-workspace/home.md).

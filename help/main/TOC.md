@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
+source-git-commit: 879350c645cf4c6e12361184dddfb065224d758c
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 98%
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,6 @@ ht-degree: 98%
       + [部分文字列](../data-views/component-settings/substring.md)
       + [値のバケット化](../data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
-   + [データビューのユースケース](../data-views/data-views-usecases.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
@@ -248,16 +247,22 @@ ht-degree: 98%
       + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [CJA での Google Analytics データに関するレポート](../use-cases/ga/report.md)
-   + [レポートスイートを様々なスキーマと組み合わせる](../use-cases/combine-report-suites.md)
+   + データ取り込み {#data-ingestion}
+      + [データ取り込みのユースケース](../use-cases/data-ingestion/data-ingestion.md)
+      + [Marketo Engage データの AEP への取り込みと CJA でのレポート](../use-cases/data-ingestion/marketo.md)
+      + [AEP オーディエンスの CJA への取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + データビュー {#data-views}
+      + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
+      + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
+   + B2B {#b2b}
+   + [アカウントレベルのデータをルックアップデータセットとして追加](../use-cases/b2b/b2b.md)
+   + クロスチャネルデータ {#cross-channel}
+      + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
+      + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
+   + Adobe Analyticsデータ {#aa-data}
+      + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
+      + [レポートスイートを様々なスキーマと組み合わせる](../use-cases/aa-data/combine-report-suites.md)
    + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
-   + [バインディングディメンションと指標の使用](../use-cases/binding-dimensions-metrics.md)
-   + [（B2B）アカウントレベルのデータをルックアップデータセットとして追加](../use-cases/b2b.md)
-   + [Marketo Engage データの AEP への取り込みと CJA でのレポート](../use-cases/marketo.md)
-   + [AEP オーディエンスの CJA への取り込み](../use-cases/ingest-aep-segments.md)
-   + [チャネルをまたいだデータの分析](../use-cases/cross-channel.md)
-   + [コールセンターデータと web データの読み込み](../use-cases/call-center.md)
-   + [データ取り込みのユースケース](../use-cases/data-ingestion.md)
-   + [マーケティングチャネルディメンションの使用](../use-cases/marketing-channels.md)
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
 + トラブルシューティング {#troubleshooting}

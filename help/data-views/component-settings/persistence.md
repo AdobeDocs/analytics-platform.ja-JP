@@ -4,8 +4,8 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 ディメンション値の永続性を別のディメンション内のディメンション値にバインドできるドロップダウン。有効なドロップダウンオプションには、データビュー内にある他のディメンションが含まれます。
 
-バインディングディメンションの効果的な使用方法の例については、[CJA でのバインディングディメンションと指標の使用](../../use-cases/binding-dimensions-metrics.md)を参照してください。
+バインディングディメンションの効果的な使用方法の例については、[CJA でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)を参照してください。
 
 ## [!UICONTROL バインディング指標]
 
@@ -86,4 +86,4 @@ ht-degree: 100%
 
 この設定は、オブジェクト配列のバインディングディメンションがコンポーネントよりも低い場合にのみ表示されます。 イベントにバインディング指標が存在する場合、ディメンション値はイベントレベルのディメンションからバインディングディメンションの下位のスキーマレベルにコピーされます。
 
-バインディング指標の効果的な使用方法について詳しくは、[CJA でのバインディングディメンションと指標の使用](../../use-cases/binding-dimensions-metrics.md)の 2 番目の例を参照してください。
+バインディング指標の効果的な使用方法について詳しくは、[CJA でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)の 2 番目の例を参照してください。
