@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 100%
+source-wordcount: '1313'
+ht-degree: 98%
 
 ---
 
@@ -122,6 +122,8 @@ Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!
 * 日付形式で「**[!UICONTROL 日]**」を「**[!UICONTROL 年、月、日]**」の形式で選択した場合、レポートの出力例は、2022年8月23日となります。
 
 * 日時形式で「**[!UICONTROL 分単位]**」を「**[!UICONTROL 時:分]**」の形式で選択した場合、20:20 と出力されます。
+
+現在、1900 年 1 月 1 日以降（1970 年 1 月 1 日を除く）および 2000 年 1 月 1 日以降の日時値をサポートしています。:00:00.
 
 ### 日付と日時の使用例
 
