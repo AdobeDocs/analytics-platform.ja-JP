@@ -4,9 +4,9 @@ description: 2 つの使用状況の推定方法と 1 つの管理方法を示�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 43%
 
 ---
@@ -21,7 +21,7 @@ CJA の使用方法を理解するには、次の 3 つの方法を使用でき�
 
 CJA の使用を管理するには：
 
-* 周期データウィンドウを定義します。 （以下を参照）。
+* 周期データウィンドウを定義します。 ( **周期データウィンドウの定義** 下 )
 
 ## 接続サイズの予測 {#estimate-size}
 
@@ -58,7 +58,7 @@ CJA の使用を管理するには：
 
 ## すべてのイベントデータを使用して Workspace プロジェクトを作成する {#workspace-event-data}
 
-1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) は、すべての接続からデータを取り込み、フィルターが適用されていません。 つまり、すべてのデータが含まれます。
+1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) 各接続に対して、フィルターが適用されていません。
 
 1. Workspace で、新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウン ) を開き、現在の CJA 契約の最初の日から始まる、月の最初の金曜日にリダイレクトすることができます。
 
