@@ -3,10 +3,10 @@ title: CJA 使用状況の推定と管理
 description: 2 つの使用状況の推定方法と 1 つの管理方法を示します。
 role: Admin
 feature: CJA Basics
-source-git-commit: 58d582b693708f883842fb6a18cc57d481f2b2ab
+source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 68%
+source-wordcount: '471'
+ht-degree: 42%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 68%
 
 CJA の使用方法を理解するには、次の 2 つの方法を使用できます。
 
-* 各接続のイベントデータを追加します ( **接続サイズの予測** 下 )
-* Analysis Workspaceを使用して…
+* 各接続のイベントデータ行を追加します。 ( **接続サイズの予測** 下 )
+* Analysis Workspaceを使用して先月のイベントを報告します。 ( **すべてのイベントデータを使用して Workspace プロジェクトを作成する** 下 )
 
 CJA の使用を管理するには：
 
-* CJA API の使用
+* CJA API を使用します。 ( **CJA API でのレポートの作成** 下 )
 
 ## 接続サイズの予測 {#estimate-size}
 
@@ -36,9 +36,13 @@ CJA の使用を管理するには：
 
 1. 各接続名をクリックして、接続マネージャーに移動します。
 
-1. 作成されたすべての接続で&#x200B;**[!UICONTROL 使用可能なイベントデータのレコード]**&#x200B;を合計します（接続のサイズによっては、数字の表示に時間がかかる場合があります）。
+1. 追加する **[!UICONTROL 使用可能なイベントデータのレコード]** 組織が作成したすべての接続に対して （接続のサイズによっては、数字の表示に時間がかかる場合があります）。
 
    ![イベントデータ](assets/event-data.png)
+
+   >[!CAUTION]
+   >
+   >   このカウントは、プロファイルや参照データではなく、イベントデータのみに適用されます。 プロファイルと参照データがある場合、カウントは若干高くなります。 ただし、現在のところ、ユーザーインターフェイスでプロファイルと参照のデータの使用状況をレポートする方法はありません。 この機能は 2023 年に予定されています。
 
 1. すべてのイベントデータ行の合計が表示されたら、自社とアドビで合意した Customer Journey Analytics 契約の「データ行」使用権を確認してください。
 
@@ -50,3 +54,17 @@ CJA の使用を管理するには：
    * [未使用の接続を削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
    * [AEP のデータセットを削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
    * 追加容量のライセンスを取得する（アドビのアカウントマネージャーにお問い合わせください）。
+
+## すべてのイベントデータを使用して Workspace プロジェクトを作成する {#workspace-event-data}
+
+1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) は、すべての接続からデータを取り込み、フィルターが適用されていません。 つまり、すべてのデータが含まれます。
+
+1. Workspace で、新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウン ) を使用します。
+
+   ![イベント](assets/events-usage.png)
+
+1. これを行う
+
+## CJA API でのレポートの作成 {#api-report}
+
+以下を使用： [CJA レポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) ：すべてのイベントデータに関するレポートを実行します。

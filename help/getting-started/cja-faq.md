@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+workflow-type: tm+mt
+source-wordcount: '2157'
+ht-degree: 99%
 
 ---
 
@@ -110,28 +110,7 @@ ht-degree: 100%
 
 ## 9. 接続サイズの予測 {#estimate-size}
 
-[!UICONTROL Customer Journey Analytics] にある現在のデータの行数を知ることが必要になる場合があります。組織のイベントデータレコード（データ行）の使用状況を正確に把握するには、**組織が作成した各接続に対して**、次の手順を実行します。
-
-1. [!UICONTROL Customer Journey Analytics] で、「**[!UICONTROL 接続]**」タブをクリックします。
-
-   これで、現在のすべての接続のリストが表示されます。
-
-1. 各接続名をクリックして、接続マネージャーに移動します。
-
-1. 作成されたすべての接続で&#x200B;**[!UICONTROL 使用可能なイベントデータのレコード]**&#x200B;を合計します（接続のサイズによっては、数字の表示に時間がかかる場合があります）。
-
-   ![イベントデータ](assets/event-data.png)
-
-1. すべてのイベントデータ行の合計が表示されたら、自社とアドビで合意した Customer Journey Analytics 契約の「データ行」使用権を確認してください。
-
-   これにより、受注で許可されているデータ行の最大数がわかります。手順 3 で取得したデータ行数がこの許可されている行数より多い場合は、データ使用量の超過が発生しています。
-
-1. この状況を修正するには、次のようなオプションがあります。
-
-   * [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)を変更する。
-   * [未使用の接続を削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
-   * [AEP のデータセットを削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
-   * 追加容量のライセンスを取得する（アドビのアカウントマネージャーにお問い合わせください）。
+参照： [使用状況の推定と管理](/help/getting-started/estimate-usage.md).
 
 ## 10. 使用量超過について {#overage}
 

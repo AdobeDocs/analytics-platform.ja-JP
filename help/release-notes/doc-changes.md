@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 96%
+source-wordcount: '1181'
+ht-degree: 95%
 
 ---
 
@@ -19,6 +19,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
+| **2022年12月** |  |
+| 2022 年 12 月 16 日 | に関する新しいトピックです。 [CJA データ使用の測定と管理](/help/getting-started/estimate-usage.md). |
 | **2022年10月** |  |
 | 2022年10月 | に関する新しいトピックです。 [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password). この機能は、 [HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | 2022年10月 | に関する新しいトピックです。 [顧客管理キー](/help/privacy/cmk.md). この機能は、 [HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -85,12 +87,12 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | **2021年9月** |  |
 | 2021年9月 | [指標の重複排除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=ja)ドキュメント |
 | 2021年9月 | [レポートでの夏時間のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar) |
-| 2021年9月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#calendar)ドキュメント |
+| 2021年9月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar)ドキュメント |
 | 2021年9月 | [ブール値フィールド](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=ja)ドキュメント |
 | 2021年9月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[[!UICONTROL コンポーネント]設定の概要](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL アトリビューション] コンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 動作] コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 形式] コンポーネントの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 含む／除外] コンポーネントの設定](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複排除] コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値なし] コンポーネントの設定](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 永続性] コンポーネントの設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値のバケット化] コンポーネントの設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021年9月 | CJA での [レポートスイートの結合の意味](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6-considerations-when-merging-report-suites-in-cja) に関する新しい節を追加しました。 |
 | **2021年8月** |  |
-| 2021年8月 | CJA での強化された [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) のエクスペリエンスに関する新しい節を追加しました。 |
+| 2021年8月 | CJA での強化された [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja) のエクスペリエンスに関する新しい節を追加しました。 |
 | 2021年8月 | [データビューディメンションの大文字と小文字の区別](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-behavior-settings) に関する新しい節を追加しました。 |
 | **2021年6月** |  |
 | 2021年6月 | ワークスペースの [以前のプロジェクトバージョン](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=ja#previous-version) に関する新しいドキュメントを追加しました。 |
