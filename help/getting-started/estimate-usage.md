@@ -4,9 +4,9 @@ description: 2 つの使用状況の推定方法と 1 つの管理方法を示�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
+source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '809'
 ht-degree: 43%
 
 ---
@@ -58,9 +58,9 @@ CJA の使用を管理するには：
 
 ## すべてのイベントデータを使用して Workspace プロジェクトを作成する {#workspace-event-data}
 
-1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) 各接続に対して、フィルターが適用されていません。
+1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) 各接続に対して（フィルターを適用しない）、
 
-1. Workspace で、新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウン ) を開き、現在の CJA 契約の最初の日から始まる、月の最初の金曜日にリダイレクトすることができます。
+1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウン ) を開き、現在の CJA 契約の最初の日から始まる、月の最初の金曜日にリダイレクトすることができます。
 
    ![イベント](assets/events-usage.png)
 
