@@ -4,10 +4,10 @@ description: 2 つの使用状況の推定方法と 1 つの管理方法を示�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 42%
+source-wordcount: '857'
+ht-degree: 41%
 
 ---
 
@@ -63,6 +63,10 @@ CJA の使用を管理するには：
 この方法を使用すると、使用状況データと使用状況の履歴を、より深く分析できます。
 
 1. Workspace でプロジェクトを作成する前に、 [データビューの作成](/help/data-views/create-dataview.md) 各接続に対して（フィルターを適用しない）、
+
+>[!WARNING]
+>
+>    使用量を測定するだけで、すべてのデータを含む新しい接続を作成しないでください。作成すると、使用量が事実上 2 倍になります。
 
 1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウン ) を開き、現在の CJA 契約の最初の日から始まる、月の最初の金曜日にリダイレクトすることができます。
 
