@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ CJA のいくつかの機能は、業界標準に合わせて名前が変更さ�
 
 * データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。CJA 内でのワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
 * [Adobe Analytics ダッシュボード](/help/mobile-app/home.md)も、同じバージョンを使用可能で、CJA と従来の Analytics で同様に機能します。
-* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています( このバージョンのReport Builderの前は、VMware 上で実行しない限り、Mac上でを使用できませんでした。) このバージョンは、従来の AA データリクエストをまだサポートしていません。
+* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています（以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
 
 ## レポートの変更点
 
@@ -68,7 +68,7 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 アドビでは、業界標準に合わせて、また、Adobe Experience Platform のセグメントとの区別を明確にするために、「セグメント」コンポーネントの名前を「フィルター」に変更しました。
 
-[!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなり、代わりに、マッピング先のExperience Platformスキーマフィールド名を使用します。 つまり、Adobe Analytics の既存のセグメントはすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。既存の Adobe Analytics セグメントを Customer Journey Analytics に移行するには、次のビデオを参照してください。
+[!UICONTROL Customer Journey Analytics] では、eVar、prop、イベントを使用せず、代わりに、マッピング先の Experience Platform のスキーマフィールド名を使用します。つまり、Adobe Analytics の既存のセグメントはすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。既存の Adobe Analytics セグメントを Customer Journey Analytics に移行するには、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
