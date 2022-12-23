@@ -3,7 +3,7 @@ title: 顧客管理キー
 description: CJA 用の顧客管理キーの設定方法について説明します。
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
 ht-degree: 100%
 
