@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
    + [CJA の使用状況の表示と管理](../getting-started/estimate-usage.md)
    + [よくある質問](../getting-started/cja-faq.md)
    + Adobe Analytics と Customer Journey Analytics の比較 {#compare-aa-cja}
-      + [Adobe AnalyticsのデータをCustomer Journey Analyticsに活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
       + [Adobe Analytics と CJA にまたがるデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -238,7 +238,7 @@ ht-degree: 96%
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
 + アドビの統合 {#integrations}
    + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
-   + [Adobe AnalyticsとCustomer Journey Analyticsの統合](/help/integrations/aa.md)
+   + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
    + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
    + [顧客 AI データと CJA の統合](/help/integrations/customer-ai.md)
 + ユースケース {#cja-usecases}
@@ -260,7 +260,7 @@ ht-degree: 96%
    + クロスチャネルデータ {#cross-channel}
       + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
       + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
-   + Adobe Analyticsデータ {#aa-data}
+   + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [レポートスイートを様々なスキーマと組み合わせる](../use-cases/aa-data/combine-report-suites.md)
    + [オブジェクトの配列の使用](../use-cases/object-arrays.md)

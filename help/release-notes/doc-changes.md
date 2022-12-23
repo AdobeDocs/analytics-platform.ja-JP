@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -22,13 +22,13 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | **2022年12月** |  |
 | 2022 年 12 月 16 日 | に関する新しいトピックです。 [CJA データ使用の測定と管理](/help/getting-started/estimate-usage.md). |
 | **2022年10月** |  |
-| 2022年10月 | に関する新しいトピックです。 [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password). この機能は、 [HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
-| 2022年10月 | に関する新しいトピックです。 [顧客管理キー](/help/privacy/cmk.md). この機能は、 [HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
-| 2022年10月 | に関する新しいトピックです。 [CJA 監査ログ](/help/privacy/audit-log.md). |
+| 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
+| 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
+| 2022年10月 | [CJA 監査ログ](/help/privacy/audit-log.md)に関する新しいトピック。 |
 | 2022年10月 | [主要な指標の概要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=ja)ビジュアライゼーションに関する新しいトピック。 |
 | 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#date)に関する新しい節 |
 | 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=ja#view-detail-slides)に関する新しいトピック。 |
-| 2022年10月 | の更新 [Customer Journey Analytics機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md) トピック。 |
+| 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** |  |
 | 2022年9月 | [Google Analytics データの CJA への移行](/help/use-cases/ga/overview.md)に関する新しい使用例。 |
 | 2022年9月 | Workspace の[複合グラフ](/help/analysis-workspace/visualizations/combo-charts.md)に関する新しいトピック。 |
