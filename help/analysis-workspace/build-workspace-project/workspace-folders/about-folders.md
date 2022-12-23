@@ -5,13 +5,13 @@ title: フォルダーの概要
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
-workflow-type: tm+mt
+exl-id: e12e271e-ce15-4535-bb48-1976395cf755
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
+workflow-type: ht
 source-wordcount: '428'
 ht-degree: 100%
 
 ---
-
 
 # Workspace プロジェクトのフォルダーについて
 
@@ -25,7 +25,7 @@ Workspace プロジェクトのフォルダーを使用すると、ユーザー�
 
 プロジェクトのリストが長い場合は、特定のプロジェクトへの移動は難しくなります。 フォルダー機能を使用すると、フォルダーやサブフォルダーを作成してプロジェクトを管理できるので、プロジェクトを必要に応じて簡単に見つけることができます。 
 
-Workspace には、会社フォルダーと個人用フォルダーという  2 種類のフォルダーがあります。
+Workspace には、会社フォルダーと個人用フォルダーという 2 種類のフォルダーがあります。
 
 Workspace にログインすると、ランディングページに、自分が所有するプロジェクトまたは自分が共有しているプロジェクトが表示されます。 また、会社フォルダーと、作成した個人用フォルダーも表示されます。
 
