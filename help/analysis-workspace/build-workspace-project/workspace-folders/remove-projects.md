@@ -5,13 +5,13 @@ title: フォルダーからのプロジェクトの削除
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
-workflow-type: tm+mt
+exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
+workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
 
 ---
-
 
 # フォルダーからのプロジェクトの削除
 
