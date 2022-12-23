@@ -3,9 +3,9 @@ description: ダッシュボードスコアカードの使用手順。
 title: Adobe Analytics ダッシュボードエグゼクティブガイド
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
 workflow-type: ht
 source-wordcount: '1220'
 ht-degree: 100%
@@ -149,4 +149,3 @@ ht-degree: 100%
 | 分類 | スコアカードでタイルをタップしてアクセスできるセカンダリビュー。このビューは、タイルに表示されている指標に対して展開され、オプションで追加の分類ディメンションに関するレポートを表示します |
 | 日付範囲 | ダッシュボードレポートの主な日付範囲 |
 | 比較日付範囲 | プライマリ日付範囲と比較される日付範囲 |
-
