@@ -41,7 +41,7 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | 日付範囲の作成 | Ctrl（または Command）+ Shift + D |
 | フィルターを作成 | Ctrl（または Command）+ Shift + E |
 | すべてクリア | Alt + W |
-| Copy | Ctrl（または Command）+ C |
+| コピー | Ctrl（または Command）+ C |
 | やり直し | Ctrl（または Command）+ Shift + Z |
 | 元に戻す | Ctrl（または Command）+ Z |
 | コンポーネントを更新 | Alt + Shift + R |
