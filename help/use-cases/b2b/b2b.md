@@ -4,9 +4,9 @@ description: アカウントベースのデータをルックアップデータ�
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '853'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 これらをすべて実現するには、アカウントレベルの情報を[ルックアップ](/help/getting-started/cja-glossary.md)データセットとして取り込みます。
 
-最初に Adobe Experience Platform でルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取得してルックアップテーブルデータセットを作成します。次に、Customer Journey Analytics（CJA）作成したルックアップデータセットを含む、様々なデータセットを組み合わせた で接続を作成します。 その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
+最初に Adobe Experience Platform でルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取得してルックアップテーブルデータセットを作成します。次に、作成したルックアップデータなど、様々なデータセットを組み合わせた接続をCustomer Journey Analytics(CJA) で作成します。 その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
 
 >[!NOTE]
 >
@@ -38,12 +38,6 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 ## 2. ルックアップデータセットの作成（Experience Platform）
 
 スキーマを作成したら、そのスキーマから、Experience Platform でルックアップデータセットを作成する必要があります。このルックアップデータセットには、会社名、従業員の合計数、ドメイン名、所属する業種、年間売上高、Experience Platform の現在の顧客かどうか、顧客の営業段階、アカウント内のどのチームが CJA を使用しているかなどの、アカウントレベルのマーケティング情報が含まれます。
-
->[!IMPORTANT]
->
->CJA は、ルックアップデータセットで整数をサポートしません。XDM スキーマにルックアップデータセット用の整数フィールドを追加すると、これらの整数を指標や計算指標として使用できなくなります。例えば、annualRevenue または totalEmployees を整数として定義した場合、CJA のレポートに「0」と表示されます。 ただし、文字列として割り当てた場合は、ルックアップ情報として使用できます。
-
-例えば、次の例では annualRevenue または totalEmployees を整数として定義しています。そのため、CJA では「0」と表示されます。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ管理／データセット]**&#x200B;に移動します。
 1. 「**[!UICONTROL + データセットを作成]**」をクリックします。
@@ -96,4 +90,4 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 * 特定のアカウント ID にマッピングされる従業員の数は？
 * アカウント ID はどの業種に属していますか。
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
