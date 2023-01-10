@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 49%
+source-wordcount: '2439'
+ht-degree: 50%
 
 ---
 
@@ -155,11 +155,6 @@ Analysis Workspaceで作成するすべての新しいプロジェクトのビ�
 | **[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | グループ数 | ビジュアライゼーション内のデータ範囲（グループ）の数を選択します。 グループの最大数は 50 です。 <p>詳しくは、 [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>訪問</li><li>訪問者。</li></ul> <p>例えば、ページビューと共に使用する場合、訪問者ごとのページビュー、訪問のページビュー、ヒットごとのページビューを選択できます。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。</p> |
-| **マップ** |  |  |
-|  | ディメンションのプロット | <ul><li>モバイルの緯度 / 経度</li><li>地域ディメンション</li></ul> |
-|  | マップタイプ | <ul><li>バブル</li><li>ヒートマップ</li></ul> |
-|  | カラーテーマ | 「Coral」、「Reds」、「Greens」、「Blues」、「Heatmap」、「Positive/Negative」から選択します。 |
-|  | マップのスタイル | [ 基本 ]、[ 通り ]、[ 明るい ]、[ 明るい ]、[ 暗い ]、[ 衛星 ] から選択します。 |
 | **[変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | 値 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>変更の割合</li><li>生の差異</li></ul> |
 |  | 割合（％） | 変更概要ビジュアライゼーションの値をパーセンテージで表示します。 |
