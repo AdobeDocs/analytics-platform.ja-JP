@@ -3,12 +3,10 @@ description: Workspace でフォルダーを追加する方法を学ぶ
 keywords: Analysis Workspace
 title: Workspace へのフォルダーの追加
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '225'
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 テーブル表示でフォルダーに、またはフォルダー内からプロジェクトを追加できます。
 
->[!NOTE]
->
->この機能は現在ベータ版です。一部の画面は変更される可能性があります。
-
-## テーブル表示から
+## テーブル表示から {#table-view}
 
 ホームページでテーブル表示からフォルダーにプロジェクトを追加します。
 
@@ -47,7 +41,7 @@ ht-degree: 100%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## フォルダー内から
+## フォルダー内から {#inside-folder}
 
 「...」リンクを使用して、フォルダー内からプロジェクトを追加することもできます。
 
@@ -72,4 +66,8 @@ ht-degree: 100%
 1. 「**追加**」をクリックして、プロジェクトをフォルダーに追加します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-管理者のみが、会社フォルダーにプロジェクトを追加したり、新しいプロジェクトを作成して会社フォルダーに保存したりできます。
+
+
+>[!NOTE]
+>
+>会社フォルダーにプロジェクトを追加したり、新しいプロジェクトを作成して会社フォルダーに保存したりできるのは管理者のみです。

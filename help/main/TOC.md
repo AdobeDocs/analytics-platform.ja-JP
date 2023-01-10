@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 99%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -83,6 +83,7 @@ ht-degree: 99%
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [フォルダーを削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [プロジェクトを追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [新しいプロジェクトの保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -177,6 +178,7 @@ ht-degree: 99%
    + [フィルターの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
+   + [ワークブックのスケジュール](../report-builder/schedule-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}

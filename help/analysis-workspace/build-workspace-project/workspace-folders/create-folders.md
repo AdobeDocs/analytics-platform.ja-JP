@@ -3,13 +3,11 @@ description: Workspace でフォルダーとサブフォルダーを作成する
 keywords: Analysis Workspace
 title: フォルダーの作成
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '152'
-ht-degree: 100%
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 93%
 
 ---
 
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 Workspace ランディングページのプロジェクトおよびフォルダーのリストに新しいフォルダーまたはサブフォルダーを追加できます。
 
->[!NOTE]
->
->この機能は現在ベータ版です。一部の画面は変更される可能性があります。
-
-## 新規フォルダーを作成
+## 新規フォルダーを作成 {#create-new-folder}
 
 新しいプロジェクトを作成するには、次の手順に従います。
 
@@ -29,7 +23,7 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
 1. 新しいフォルダーの名前を入力します。
 
-1. ドロップダウンメニューからタグを選択します。
+1. ドロップダウンメニューからタグを選択するか、新しいタグを追加します。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -41,7 +35,7 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## サブフォルダーの作成
+## サブフォルダーの作成 {#create-subfolder}
 
 サブフォルダーを使用すると、プロジェクトの管理と編成のレベルをさらに高めることができます。
 
