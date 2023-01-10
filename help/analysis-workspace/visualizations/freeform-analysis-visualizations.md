@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,24 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
 | [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
+
+## ビジュアライゼーション設定のカスタマイズ
+
+個々のビジュアライゼーションまたは作成するすべてのビジュアライゼーションのビジュアライゼーション設定をカスタマイズできます。
+
+### 単一のビジュアライゼーションのビジュアライゼーション設定のカスタマイズ
+
+アクセスするには [!UICONTROL ビジュアライゼーション設定] 個々のビジュアライゼーションの場合：
+
+1. Analysis Workspaceで、設定をカスタマイズするビジュアライゼーションの上にマウスポインターを置きます。
+
+1. 歯車アイコンをクリックします。
+
+   各タイプのビジュアライゼーションには、カスタマイズ可能な独自の設定があります。 使用可能な設定について詳しくは、 [設定](#settings).
+
+### 作成するすべてのビジュアライゼーションのビジュアライゼーション設定をカスタマイズ
+
+作成するすべてのビジュアライゼーションの設定をカスタマイズできます。 詳しくは、 [ユーザーの環境設定](/help/analysis-workspace/user-preferences.md).
 
 ## 設定 {#settings}
 
