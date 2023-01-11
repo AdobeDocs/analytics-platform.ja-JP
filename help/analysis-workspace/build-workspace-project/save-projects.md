@@ -4,10 +4,10 @@ title: プロジェクトの保存
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: b35520d22fdd6ee39972e3500b3d6968c2dfeadd
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 42%
+source-wordcount: '726'
+ht-degree: 39%
 
 ---
 
@@ -32,17 +32,22 @@ Analysis Workspaceで手動でプロジェクトを保存する場合は、様�
    | **[!UICONTROL 名前を付けて保存]** | プロジェクトの複製を作成します。元のプロジェクトは影響を受けません。 |
    | **[!UICONTROL テンプレートとして保存]** | プロジェクトを[カスタムテンプレート](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ja)として保存し、 **[!UICONTROL プロジェクト／新規]**&#x200B;で組織が使用できるようにします。 |
 
-   ![](assets/save-project.png)
-
 ## 自動保存 {#Autosave}
 
 Analysis Workspaceのすべてのプロジェクトは、2 分ごとにローカルマシンに自動的に保存されます。 これには、まだ手動で保存されていない、新しく作成されたプロジェクトが含まれます。
 
 * **新規プロジェクト：** 新しいプロジェクトは自動保存されますが、初めて各新しいプロジェクトを手動で保存する必要があります。 Analysis Workspaceでは、別のプロジェクトに切り替えたり、「ブラウザー」タブを閉じたりする際に、新しいプロジェクトを手動で保存するように求められます。
 
-   何らかの理由で、手動で保存する前に新しく作成したプロジェクトへのアクセス権が予期せず失われた場合、プロジェクトの復元バージョンは、Analysis Workspaceランディングページのという名前のフォルダーに保存されます。 `Recovered Projects (Last 7 Days)`.
+   何らかの理由で、手動で保存する前に新しく作成したプロジェクトへのアクセス権が予期せず失われた場合、プロジェクトの復元バージョンは、Analysis Workspaceランディングページのという名前のフォルダーに保存されます。 `Recovered Projects (Last 7 Days)`. 復元したプロジェクトを復元し、必要な場所に手動で保存する必要があります。
 
-   ![](assets/recovered-folder.png)
+   復元したプロジェクトを復元するには：
+
+   1. 次に移動： [!UICONTROL **復元されたプロジェクト**] フォルダーをAnalysis Workspaceランディングページに配置します。
+
+      ![](assets/recovered-folder.png)
+
+   1. プロジェクトを開き、目的の場所に保存します。
+
 
 * **既存のプロジェクト：** 何らかの理由で、まだ自動保存されていない変更がプロジェクトから移動した場合、Analysis Workspaceは、変更を保存するよう求めるプロンプトを表示するか、警告メッセージを表示します。
 
