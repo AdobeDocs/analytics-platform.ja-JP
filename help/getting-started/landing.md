@@ -4,10 +4,10 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: acf55556e3f53e7f4e8f8de69044e456b931a80b
+source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 54%
+source-wordcount: '1279'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,6 @@ Customer Journey Analyticsのランディングページが強調表示されま
 | ピン留めされた項目の並べ替え | ピンされた項目を上下に移動するには、ピン留めされた項目の横の省略記号をクリックし、「**[!UICONTROL 上に移動]**」または「**[!UICONTROL 下に移動]**」を選択します。 | ![ピン留めされた項目を移動](assets/move-up-down.png) |
 | 新規テーブル列 | テーブルの右上に表示される「[!UICONTROL テーブルをカスタマイズ]」アイコンをクリックします。新規テーブル列は次のとおりです。 <ul><li>**[!UICONTROL 予定]**：プロジェクトがスケジュールされた際は[!UICONTROL オン]、そうでない場合は[!UICONTROL オフ]に設定します。[!UICONTROL オン]のリンクをクリックすると、スケジュールされたプロジェクトに関する情報を表示できます。また、プロジェクトの所有者である場合は[プロジェクトスケジュールを編集](../analysis-workspace/curate-share/t-schedule-report.md)できます。</li><li>**[!UICONTROL プロジェクト ID]**：プロジェクト ID は、プロジェクトのデバッグに使用できます。</li><li>**[!UICONTROL 最長の日付範囲]**：日付範囲を長くすると、プロジェクトの複雑さが増し、処理と読み込み時間が長くなる場合があります。 </li><li>**[!UICONTROL クエリ数]**：プロジェクトの読み込み時に Analytics に対して行われたリクエストの合計数です。プロジェクトクエリの数が多いと、プロジェクトが複雑になり、処理と読み込みに時間がかかる場合があります。このデータは、プロジェクトが読み込まれた後、またはスケジュールされたプロジェクトが送信された後にのみ使用できます。 </li></ul> | ![新しい列](assets/new-columns.png) |
 | **[!UICONTROL プロジェクトを作成]** モーダルが戻りました | クリック時 **[!UICONTROL プロジェクトを作成]** Workspace で、 [!UICONTROL 空のプロジェクト] および [!UICONTROL 空のモバイルスコアカード]. 会社が作成した任意のテンプレートから選択することもできます。 | ![新規作成](assets/create-new.png) |
-| Customer Journey Analytics | このランディングページは、変更された形式で、CJA でも使用できます。 |  |
 
 {style=&quot;table-layout:auto&quot;}
 
