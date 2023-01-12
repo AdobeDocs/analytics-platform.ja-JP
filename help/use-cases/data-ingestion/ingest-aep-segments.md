@@ -4,10 +4,10 @@ description: 将来の分析用に AEP オーディエンスを Customer Journey
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 96%
 
 ---
 
@@ -88,6 +88,6 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 * このプロセスは、定期的に実行して、CJA 内でオーディエンスデータが常に更新されるようにする必要があります。
 * 単一の CJA 接続内で複数のオーディエンスを読み込むことができます。これは、プロセスがさらに複雑になりますが、可能です。これを機能させるには、前述のプロセスに少し修正を加える必要があります。
    1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
-   1. 単一の CJA 人物 ID が複数のオーディエンスに属している可能性があるので、書き出しジョブ出力の変換を実行する際に、`audienceMembershipId(s)` のリストを作成する必要があります。CJA は、将来のある時点で、プロファイルデータセットの配列／オブジェクト配列をサポートする予定です。これらがサポートされると、`audienceMembershipId` や `audienceMembershipIdName` に対してオブジェクトの配列を使用することが、最良の選択肢となります。暫定的に、書き出しジョブ出力の各プロファイル ID について、現在のすべてのオーディエンス ID（ステータスが「realized」か「entered」）を抽出し、コンマ区切り値の文字列にします（例：`<id1>,<id2>,...`）。「exited」のステータスのオーディエンス ID がある場合は、リストに含まれていないことを確認します。ID に関連付けられたわかりやすい名前を維持したい場合は、リスト内の各 ID の末尾に（他のメタデータと共に）添付できます。
+   1. CJA は、プロファイルデータセットの配列/オブジェクト配列をサポートします。 の使用 [オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) audienceMembershipId または audienceMembershipIdName が最適なオプションです。
    1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。メモ：現在、配列の値は 10 個までという制限があります。
    1. CJA Workspace 内で、この新しいディメンション `audienceMembershipIds` についてレポートできるようになりました。
