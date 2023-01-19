@@ -3,7 +3,7 @@ title: データ取り込みの概要
 description: Customer Journey Analytics にデータを取り込む様々な方法について
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+source-git-commit: 5de8c0daaa7eea0a9ab993d256e2b0a14f37301e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 8%
@@ -48,7 +48,7 @@ Adobeテクノロジーを使用して Web サイトを分析し、潜在的に�
 
 ## ストリーミングデータの取り込みと使用
 
-CRM システム、ERP システム、またはその他のソースなどの関連するデータソースがあり、顧客行動をより深く理解し、顧客とのやり取りを分析するのに役立つ詳細を提供します。 このデータソースは、HTTP またはパブリッククラウドのストリーミングインフラストラクチャ経由で通信できますが、Adobeが現在ソースコネクタを提供していない場合に使用します。 このストリーミングデータをリアルタイムでAdobe Experience Platformに取り込むと、Customer Journey Analytics内の他のチャネルやデータソースからのデータを使用し、組み合わせて、分析できます。
+CRM システム、ERP システム、またはその他のソースなど、顧客の行動をより深く理解し、顧客とのやり取りを分析するのに役立つ詳細を提供する関連データソースがあります。 このデータソースは、HTTP またはパブリッククラウドのストリーミングインフラストラクチャ経由で通信できますが、Adobeが現在ソースコネクタを提供していない場合に使用します。 このストリーミングデータをリアルタイムでAdobe Experience Platformに取り込むと、Customer Journey Analytics内の他のチャネルやデータソースからのデータを使用し、組み合わせて、分析できます。
 
 詳しくは、 [ストリーミングデータの取り込みと使用](./streaming.md) を参照してください。
 
