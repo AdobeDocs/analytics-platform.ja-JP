@@ -3,13 +3,13 @@ title: 従来のAdobe Analyticsからのデータの取り込みと使用
 description: 従来のAdobe Analyticsからデータを取り込む方法を説明する
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 10%
+source-wordcount: '1146'
+ht-degree: 11%
 
 ---
-
 
 # 従来のAdobe Analyticsからのデータの取り込みと使用
 
@@ -28,18 +28,18 @@ ht-degree: 10%
 
 これをおこなうには、次の操作が必要です。
 
-- **Adobe Analyticsソースコネクタの設定** Adobe Experience Platform これにより、現在のAdobe AnalyticsデータがAdobe Experience Platformのデータセットに取り込まれます。
+- **Adobe Analyticsソースコネクタの設定** Adobe Experience Platform これにより、現在のAdobe AnalyticsデータをAdobe Experience Platformのデータセットに取り込みます。
 
 - **接続の設定** Customer Journey Analytics この接続には、少なくともAdobe Experience Platformデータセットを含める必要があります。
 
-- **データビューの設定** (Analysis Workspaceで使用する指標とディメンションを定義する場合 )
+- **データビューの設定** 「 」Customer Journey Analyticsで、Analysis Workspaceで使用する指標とディメンションを定義します。
 
 - **プロジェクトの設定** ( レポートおよびビジュアライゼーションを作成するためのCustomer Journey Analytics)
 
 
 >[!NOTE]
 >
->これは、Adobe Analyticsソースコネクタを使用してデータを取り込み、Customer Journey Analyticsで使用する方法に関するシンプルなガイドです。  を参照する際には、追加情報を調べることを強くお勧めします。
+>これは、Adobe Analyticsソースコネクタを使用してデータを取り込み、Customer Journey Analyticsで使用する方法に関するシンプルなガイドです。 を参照する際に、追加情報を調べることを強くお勧めします。
 
 
 ## Adobe Analyticsソースコネクタの設定
@@ -48,7 +48,7 @@ Adobe Analyticsソースコネクタを使用すると、Adobe Analyticsレポ�
 
 Adobe Analyticsソースコネクタを作成するには：
 
-1. Platform UI で、「 **[!UICONTROL ソース]** をクリックします。
+1. Platform UI で、「 **[!UICONTROL ソース]**（左側のレールから）
 
 2. 選択 **[!UICONTROL Adobe]** リストから [!UICONTROL カテゴリ].
 
@@ -88,7 +88,7 @@ Adobe Analyticsソースコネクタを作成するには：
 
 ## 接続の設定
 
-Adobe Experience PlatformデータをCustomer Journey Analyticsで使用するには、スキーマ、データセット、ワークフローの設定によるデータを含む接続を作成します。
+Adobe Experience PlatformデータをCustomer Journey Analyticsで使用するには、スキーマ、データセット、ワークフローの設定によって生成されたデータを含む接続を作成します。
 
 接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
 
@@ -121,7 +121,7 @@ Adobe Experience PlatformデータをCustomer Journey Analyticsで使用する�
 
       - を選択します。 [!UICONTROL 人物 ID] Adobe Experience Platformのデータセットスキーマで定義された使用可能な id から。
 
-      - 次の中から正しいデータソースを選択します： [!UICONTROL データソースタイプ] リスト。 次を指定した場合： **[!UICONTROL その他]** 次に、データソースの説明を追加します。
+      - 次の中から正しいデータソースを選択します： [!UICONTROL データソースタイプ] リスト。 次を指定した場合： **[!UICONTROL その他]**&#x200B;次に、データソースの説明を追加します。
 
       - 設定 **[!UICONTROL すべての新しいデータをインポート]** および **[!UICONTROL データセットの既存データのバックフィル]** 好みに応じて。
 
@@ -191,20 +191,14 @@ Analysis Workspaceは、データに基づいて分析をすばやく構築し�
 
    ![Workspace データビューを選択](./assets/cja-projects-3.png).
 
-5. ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] 内 [!UICONTROL パネル] をクリックして最初のレポートを作成します。 例えば、 `Program Points Balance` および `Page View` 指標として `email` をディメンションとして使用すると、Web サイトを訪問したプロファイルの概要をすばやく把握し、ロイヤルティポイントを収集するロイヤルティプログラムの一部になります。
+5. ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] 内 [!UICONTROL パネル] をクリックして最初のレポートを作成します。 例えば、 `Program Points Balance` および `Page View` 指標として `email` をディメンションとして使用すると、Web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムの一部であるプロファイルの概要をすばやく把握できます。
 
    ![Workspace — 最初のレポート](./assets/cja-projects-5.png)
 
-詳しくは、 [Analysis Workspaceの概要](../analysis-workspace/home.md) プロジェクトを作成し、コンポーネント、ビジュアライゼーション、パネルを使用して分析を構築する方法に関する詳細。
+詳しくは、 [Analysis Workspaceの概要](../analysis-workspace/home.md) プロジェクトの作成方法、およびコンポーネント、ビジュアライゼーション、パネルを使用した分析の構築方法に関する詳細。
 
 
 >[!SUCCESS]
 >
 >すべての手順が完了しました。 まず、Adobe Analyticsデータソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe AnalyticsデータがAdobe Experience Platformに自動的にアップロードされます。 取り込んだAdobe Analyticsデータや他のデータを利用するためにCustomer Journey Analyticsで接続を定義しました。 データビュー定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
-
-
-
-
-
-
 

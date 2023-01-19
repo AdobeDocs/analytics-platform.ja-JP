@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Platform Web SDK と Edge Network を介したデータの取り込み
-description: Adobe Experience Platform Web SDK と Edge ネットワークを使用して、Customerジャーニー分析にデータを取り込む方法について説明する
+description: Adobe Experience Platform Web SDK と Edge Network を使用してCustomer Journey Analyticsにデータを取り込む方法について説明する
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '3591'
+source-wordcount: '3587'
 ht-degree: 9%
 
 ---
-
 
 # Adobe Experience Platform Web SDK と Edge Network を介したデータの取り込み
 
@@ -21,24 +21,24 @@ ht-degree: 9%
 
 - **データストリームの設定** を使用して、収集したデータをAdobe Experience Platformで設定したデータセットにルーティングするようにAdobe Experience Platform Edge Network を設定します。
 
-- **タグを使用** を使用すると、web サイトのデータレイヤーのデータに対してルールやデータ要素を簡単に設定でき、データがAdobe Experience Platform Edge Network 上で設定されたデータストリームに送信されるようにできます。
+- **タグを使用** web サイト上のデータレイヤーのデータに対して、ルールやデータ要素を簡単に設定できます。 次に、データがAdobe Experience Platform Edge ネットワーク上に設定されたデータストリームに送信されることを確認します。
 
 - **デプロイと検証**. タグの開発を繰り返し実行し、すべての検証が完了したら、実稼動環境で公開できる環境を構築します。
 
 - **接続の設定** Customer Journey Analytics この接続には、少なくともAdobe Experience Platformデータセットを含める必要があります。
 
-- **データビューの設定** (Analysis Workspaceで使用する指標とディメンションを定義する場合 )
+- **データビューの設定** 「 」Customer Journey Analyticsで、Analysis Workspaceで使用する指標とディメンションを定義します。
 
 - **プロジェクトの設定** ( レポートおよびビジュアライゼーションを作成するためのCustomer Journey Analytics)
 
 >[!NOTE]
 >
->これは、サイトから収集されたデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。  を参照する際には、追加情報を調べることを強くお勧めします。
+>これは、サイトから収集されたデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 を参照する際に、追加情報を調べることを強くお勧めします。
 
 
 ## スキーマとデータセットの設定
 
-データをAdobe Experience Platformに取り込むには、まず収集するデータを定義する必要があります。 Adobe Experience Platformに取り込まれるすべてのデータを、標準的な非正規化された構造に準拠させて、ダウンストリームの機能によって認識され、処理されるようにする必要があります。 エクスペリエンスデータモデル (XDM) は、この構造をスキーマの形式で提供する標準フレームワークです。
+データをAdobe Experience Platformに取り込むには、まず収集するデータを定義する必要があります。 Adobe Experience Platformに取り込まれるすべてのデータを、標準的で非正規化された構造に準拠させ、ダウンストリームの機能によって認識され、処理されるようにする必要があります。 エクスペリエンスデータモデル (XDM) は、この構造をスキーマの形式で提供する標準フレームワークです。
 
 スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。 データセットは、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。
 
@@ -46,7 +46,7 @@ Adobe Experience Platformに取り込まれるすべてのデータは、デー�
 
 ### スキーマの設定
 
-Web サイトを訪問するプロファイルからの最小限のデータ（ページ名、識別情報など）を追跡する場合。
+Web サイトを訪問するプロファイルからの最小限のデータ（ページ名、ID など）を追跡する場合。
 この場合、まず、このデータをモデル化するスキーマを定義する必要があります。
 
 スキーマを設定するには：
@@ -94,7 +94,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![識別オブジェクト](./assets/identification-field.png)
 
-   これにより、スキーマに識別機能が追加されます。 この場合、Experience CloudID と電子メールアドレスを使用して、サイトを訪問しているプロファイルを識別します。 訪問者の ID を追跡するために使用できる他の属性（顧客 ID、ロイヤルティ ID など）が多数あります。
+   これにより、スキーマに識別機能が追加されます。 この場合、Experience CloudID と電子メールアドレスを使用して、サイトを訪問しているプロファイルを識別します。 訪問者の ID を追跡するために使用できる属性は他にも多数あります（例えば、顧客 ID、ロイヤリティ ID）。
 
    選択 **[!UICONTROL 適用]** をクリックして、このオブジェクトをスキーマに追加します。
 
@@ -112,13 +112,13 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    電子メールアドレスを、Adobe Experience Platform ID サービスがプロファイルの動作を組み合わせる（ステッチする）ために使用できる別の ID として指定する場合。
 
-   選択 **[!UICONTROL 適用]**. 電子メール属性にフィンガープリントアイコンが表示されます。
+   選択 **[!UICONTROL 適用]**. email 属性にフィンガープリントアイコンが表示されます。
 
    「**[!UICONTROL 保存]**」を選択します。
 
 8. スキーマの名前を表示しているスキーマのルート要素を選択し、 **[!UICONTROL プロファイル]** スイッチ
 
-   プロファイルのスキーマを有効にするよう求められます。 有効にすると、このスキーマに基づいてデータがデータセットに取り込まれると、そのデータがリアルタイム顧客プロファイルに結合されます。
+   プロファイルのスキーマを有効にするよう求められます。 有効にすると、このスキーマに基づくデータセットにデータが取り込まれると、そのデータがリアルタイム顧客プロファイルに結合されます。
 
    詳しくは、 [リアルタイム顧客プロファイルでのスキーマ使用の有効化](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) を参照してください。
 
@@ -132,7 +132,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 Web サイトから取得できるデータをモデル化する最小限のスキーマを作成した。 このスキーマを使用すると、Experience CloudID と電子メールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすると、Web サイトから取り込んだデータをリアルタイム顧客プロファイルに確実に追加できます。
 
-行動データの横には、サイトからプロファイル属性データ（例えば、ニュースレターを購読したプロファイルの詳細）を取り込むこともできます。
+行動データの横にある、サイトからプロファイル属性データ（例えば、ニュースレターを購読したプロファイルの詳細）を取り込むこともできます。
 
 このプロファイルデータを取り込むには、次の操作を行います。
 
@@ -150,7 +150,7 @@ Web サイトから取得できるデータをモデル化する最小限のス�
 
 ### データセットの設定
 
-スキーマでデータモデルを定義しました。 次に、そのデータを保存および管理するための構成を定義する必要があります。 これは、データセットを通じておこなわれます。
+スキーマを使用して、データモデルを定義しました。 次に、そのデータを保存および管理するための構成を定義する必要があります。 これは、データセットを通じておこなわれます。
 
 データセットを設定するには：
 
@@ -174,11 +174,11 @@ Web サイトから取得できるデータをモデル化する最小限のス�
 
 7. を選択します。 **[!UICONTROL プロファイル]** スイッチ
 
-   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用して、リアルタイムの顧客プロファイルを強化します。
+   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイムの顧客プロファイルを強化します。
 
    >[!IMPORTANT]
    >
-   >    プロファイルのデータセットを有効にできるのは、データセットが準拠するスキーマがプロファイルに対しても有効になっている場合のみです。
+   >    プロファイルのデータセットを有効にできるのは、データセットが準拠するスキーマがプロファイルに対しても有効になっている場合だけです。
 
    ![プロファイルのスキーマを有効にする](./assets/aepwebsdk-dataset-profile.png)
 
@@ -245,7 +245,7 @@ Adobe Experience Platformのタグ機能を使用して、実際にデータを�
 
 #### **拡張機能**
 
-（お使いのデータストリームを介して）Adobe Experience PlatformにAdobeを送信できるようにするには、データプラットフォーム Web SDK 拡張機能をタグに追加する必要があります。
+タグにAdobePlatform Web SDK 拡張機能を追加して、（データストリームを介して）Adobe Experience Platformにデータを送信できるようにします。
 
 Adobe Experience Platform Web SDK 拡張機能を作成して設定するには、次の手順を実行します。
 
@@ -265,7 +265,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、 [Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) を参照してください。
 
-また、Experience CloudID サービスを簡単に利用できるようにExperience CloudID サービス拡張機能を設定する必要もあります。 Experience CloudID サービスは、すべてのAdobe Experience Cloudソリューションをまたいで訪問者を識別します。
+また、Experience CloudID を簡単に使用できるように、Experience CloudID サービス拡張を設定する必要もあります。 Experience CloudID サービスは、すべてのAdobe Experience Cloudソリューションをまたいで訪問者を識別します。
 
 Experience CloudID サービス拡張機能を作成および設定するには：
 
@@ -283,9 +283,9 @@ Experience CloudID サービス拡張機能を作成および設定するには�
 
 #### **データ要素**
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取られ、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
+データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
 
-データ要素には様々なタイプがあります。 まず、データ要素を設定して、訪問者がサイトで表示しているページ名を取り込みます。
+データ要素には様々なタイプがあります。 最初にデータ要素を設定して、サイトで訪問者が表示しているページ名を取り込みます。
 
 ページ名データ要素を定義するには：
 
@@ -305,7 +305,7 @@ Experience CloudID サービス拡張機能を作成および設定するには�
 
       ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-1.png)
 
-      または、データレイヤーの変数（例： ）の値を使用できます。 `pageName` そして [!UICONTROL JavaScript 変数] データ要素を定義するデータ要素タイプ。
+      または、例えば、データレイヤーの変数の値を使用していたとします。 `pageName` そして [!UICONTROL JavaScript 変数] データ要素を定義するデータ要素タイプ。
 
       ![JavaScript 変数を使用したデータ要素の作成](./assets/create-dataelement-2.png)
 
@@ -331,7 +331,7 @@ ECID データ要素を定義するには：
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
-最後に、特定のデータ要素を、前に定義したスキーマにマッピングします。 XDM スキーマを表す別のデータ要素を定義する必要があります。
+最後に、特定のデータ要素を、前に定義したスキーマにマッピングします。 XDM スキーマを表す別のデータ要素を定義します。
 
 XDM オブジェクトデータ要素を定義するには：
 
@@ -351,7 +351,7 @@ XDM オブジェクトデータ要素を定義するには：
 
    - 次からスキーマを選択します。 [!UICONTROL スキーマ] リスト。
 
-   - を `identification > core > ecid` 属性（スキーマ内で定義）を ECID データ要素に追加します。 クラインダーアイコンを選択すると、データ要素のリストから ECID データ要素を簡単に選択できます。
+   - を `identification > core > ecid` 属性（スキーマ内で定義）を ECID データ要素に追加します。 円柱アイコンを選択すると、データ要素のリストから ECID データ要素を簡単に選択できます。
 
       ![ECID データ要素を選択](./assets/pick-ecid-dataelement.png)
 
@@ -367,7 +367,7 @@ XDM オブジェクトデータ要素を定義するには：
 
 #### **ルール**
 
-Adobe Experience Platform のタグは、ルールベースのシステムに従います。 ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、Adobe Experience Platform Web SDK 拡張機能を使用して、データ（XDM オブジェクトなど）を AdobeExperience Platformに送信できます。
+Adobe Experience Platform のタグは、ルールベースのシステムに従います。 ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、Adobe Experience Platform Web SDK 拡張機能を使用して、XDM オブジェクトなどのデータをAdobe Experience Platformに送信できます。
 
 ルールを定義するには：
 
@@ -400,7 +400,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       - 選択 **[!UICONTROL web.webpagedetails.pageViews]** から [!UICONTROL タイプ] リスト。
 
-      - の横にあるクラインダーアイコンを選択します。  [!UICONTROL XDM データ] とを選択します。 **[!UICONTROL XDM — ページビュー]** データ要素のリストから。
+      - の横にある円柱アイコンを選択します。  [!UICONTROL XDM データ] とを選択します。 **[!UICONTROL XDM — ページビュー]** データ要素のリストから。
 
          ![ルール — アクションの設定](./assets/action-pageview-xdm.png)
 
@@ -417,7 +417,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
 これは、他のデータ要素の値を含む XDM データをAdobe Experience Platformに送信するルールを定義する例に過ぎません。
 
-タグ内で様々な方法でルールを使用して、変数を操作できます（データ要素を使用）。
+タグ内で様々な方法でルールを使用して、（データ要素を使用して）変数を操作できます。
 
 詳しくは、 [ルール](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja) を参照してください。
 
@@ -443,13 +443,13 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 選択 **[!UICONTROL 開発用に保存およびビルド]**.
 
-   これにより、開発環境用のタグが保存および構築されます。 緑の点は、開発環境でのタグの正常なビルドを示します。
+   これにより、開発環境用のタグを保存し、構築します。 緑の点は、開発環境でのタグの正常なビルドを示します。
 
 4. 次を選択できます。 **[!UICONTROL ...]** ライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動する場合。
 
    ![公開 — ライブラリを作成](./assets/build-library.png)
 
-Adobe Experience Platformタグは、Adobe Experience Platform Web SDK のデプロイメントに対応する必要がある、シンプルかつ複雑な公開ワークフローをサポートします。
+Adobe Experience Platformタグは、Adobe Experience Platform Web SDK のデプロイに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。
 
 詳しくは、 [公開の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) を参照してください。
 
@@ -486,7 +486,7 @@ Adobe Experience Platformタグは、Adobe Experience Platform Web SDK のデプ
 
 ## 接続の設定
 
-Adobe Experience PlatformデータをCustomer Journey Analyticsで使用するには、スキーマ、データセット、ワークフローの設定によるデータを含む接続を作成します。
+Adobe Experience PlatformデータをCustomer Journey Analyticsで使用するには、スキーマ、データセット、ワークフローの設定によって生成されたデータを含む接続を作成します。
 
 接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
 
@@ -519,7 +519,7 @@ Adobe Experience PlatformデータをCustomer Journey Analyticsで使用する�
 
       - を選択します。 [!UICONTROL 人物 ID] Adobe Experience Platformのデータセットスキーマで定義された使用可能な id から。
 
-      - 次の中から正しいデータソースを選択します： [!UICONTROL データソースタイプ] リスト。 次を指定した場合： **[!UICONTROL その他]** 次に、データソースの説明を追加します。
+      - 次の中から正しいデータソースを選択します： [!UICONTROL データソースタイプ] リスト。 次を指定した場合： **[!UICONTROL その他]**&#x200B;次に、データソースの説明を追加します。
 
       - 設定 **[!UICONTROL すべての新しいデータをインポート]** および **[!UICONTROL データセットの既存データのバックフィル]** 好みに応じて。
 
@@ -589,12 +589,12 @@ Analysis Workspaceは、データに基づいて分析をすばやく構築し�
 
    ![Workspace データビューを選択](./assets/cja-projects-3.png).
 
-5. ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] 内 [!UICONTROL パネル] をクリックして最初のレポートを作成します。 例えば、 `Program Points Balance` および `Page View` 指標として `email` をディメンションとして使用すると、Web サイトを訪問したプロファイルの概要をすばやく把握し、ロイヤルティポイントを収集するロイヤルティプログラムの一部になります。
+5. ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] 内 [!UICONTROL パネル] をクリックして最初のレポートを作成します。 例えば、 `Program Points Balance` および `Page View` 指標として `email` をディメンションとして使用すると、Web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムの一部であるプロファイルの概要をすばやく把握できます。
 
    ![Workspace — 最初のレポート](./assets/cja-projects-5.png)
 
-詳しくは、 [Analysis Workspaceの概要](../analysis-workspace/home.md) プロジェクトを作成し、コンポーネント、ビジュアライゼーション、パネルを使用して分析を構築する方法に関する詳細。
+詳しくは、 [Analysis Workspaceの概要](../analysis-workspace/home.md) プロジェクトの作成方法、およびコンポーネント、ビジュアライゼーション、パネルを使用した分析の構築方法に関する詳細。
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。 収集するデータ（スキーマ）と、そのデータセットをAdobe Experience Platform内のどこに保存するか（データセット）を定義することから、まず Edge ネットワーク上にデータをそのデータセットに転送できるようにデータストリームを設定しました。 次に、拡張機能 (Adobe Experience Platform Web SDK、Experience CloudID サービス )、データ要素、ルールを含むタグを定義してデプロイし、Web サイトからデータを取得してデータストリームに送信します。 Web サイトのトラッキングデータや他のCustomer Journey Analyticsを利用するために接続を定義しました。 データビュー定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。 収集するデータ（スキーマ）と、そのデータセットをAdobe Experience Platform内のどこに保存するか（データセット）を定義することから、まず、データがそのデータセットに転送できるように Edge ネットワーク上にデータストリームを設定しました。 次に、拡張機能 (Adobe Experience Platform Web SDK、Experience CloudID サービス )、データ要素、ルールを含むタグを定義してデプロイし、Web サイトからデータを取得してデータストリームに送信します。 Web サイトトラッキングデータやその他のCustomer Journey Analyticsを使用するために接続を定義しました。 データビュー定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
