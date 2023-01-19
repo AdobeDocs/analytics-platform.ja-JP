@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
+source-git-commit: 7055ef91d853da02b4510ec2b9e4543f70b0bec0
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 96%
+source-wordcount: '1235'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | フォルダー | 専用のページ [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | ユーザー環境設定 | ユーザーの環境設定の多くが、 [環境設定](/help/analysis-workspace/user-preferences.md). |
 | プロジェクト用に自動保存 | 内の自動保存機能を含めるようコンテンツを更新しました [プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| ランディングページ | 新しいランディングページの更新 [ランディングページ](/help/getting-started/landing.md). |
+| ワークブックのスケジュール | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
 
 ## 2022
 
