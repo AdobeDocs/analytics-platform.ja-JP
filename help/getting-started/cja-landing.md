@@ -4,9 +4,9 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 7550249f94a2d81bcaf771a16283136d7a3543ff
-workflow-type: ht
-source-wordcount: '426'
+source-git-commit: 316f53c99053023fa54e0890fe9cf5f6c9cfcb4d
+workflow-type: tm+mt
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
@@ -24,6 +24,7 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
      <ul>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cca/overview.html?lang=ja#cja-connections"> Cross-Channel Analytics（Customer Journey Analytics での ID のステッチ）</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aa-data-in-cja.html?lang=ja">Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja"> レポートスイートを様々なスキーマと組み合わせる </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=ja"> 処理ルール、VISTA および分類とデータ準備の比較 </a> </li>
@@ -33,7 +34,6 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=ja"> Adobe Analytics ユーザー向け CJA ユーザーガイド </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 強化されたデータビュー機能の使用 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#cja-connections"> Cross-Channel Analytics（Customer Journey Analytics での ID のステッチ）</a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>はじめに</b> </p> 
       <ul> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja">Customer Journey Analytics を使い始める</a> </li> 
