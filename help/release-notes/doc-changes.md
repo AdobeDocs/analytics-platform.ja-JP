@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -118,7 +118,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
-| 2020年11月13日 | [Cross-Channel Analytics](/help/connections/cca/overview.md) に関する新しいトピックを追加しました。データセットの人物 ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
+| 2020年11月13日 | [Cross-Channel Analytics](/help/cca/overview.md) に関する新しいトピックを追加しました。データセットの人物 ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
 | 2020年11月13日 | [コールセンターと web データの読み込み](/help/use-cases/cross-channel/call-center.md) に関する新しいユースケースを追加しました。 |
 | 2020年11月10日 | [FAQ](/help/getting-started/cja-faq.md) に対するデータコンポーネントの削除の影響に関する節を追加しました。 |
 | 2020年11月2日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)」ページを更新しました。 |

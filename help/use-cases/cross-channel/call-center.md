@@ -4,7 +4,7 @@ description: コールセンターと web サイトのデータをリンクさ�
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
@@ -44,7 +44,7 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 CJA では、[結合データセット](/help/connections/combined-dataset.md)を生成する際に、共通の識別情報が必要です。
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* いずれかのデータセットに、一部のイベントにのみ共通する識別情報がある場合は、クロスチャネル分析を使用してデータを結合できます。これらの 2 つのデータセットに対してクロスチャネル分析を有効にする手順については、「[クロスチャネル分析の概要](/help/connections/cca/overview.md)」を参照してください。
+* いずれかのデータセットに、一部のイベントにのみ共通する識別情報がある場合は、クロスチャネル分析を使用してデータを結合できます。これらの 2 つのデータセットに対してクロスチャネル分析を有効にする手順については、「[クロスチャネル分析の概要](/help/cca/overview.md)」を参照してください。
 
 ## Customer Journey Analytics（CJA）での接続の作成
 

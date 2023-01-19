@@ -4,10 +4,10 @@ description: Adobe Analytics データを Customer Journey Analytics のデー�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Analytics ソースコネクタがドロップしたレコードがない場合�
 
 >[!NOTE]
 >
->これは通常の中間値データセットでのみ機能し、（[Cross-Channel Analytics](/help/connections/cca/overview.md) 経由で）ステッチされたデータセットでは機能しません。比較を行うには、CJA で使用されている人物 ID のアカウント設定が重要であることに注意してください。特に Cross-Channel Analytics がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
+>これは通常の中間値データセットでのみ機能し、（[Cross-Channel Analytics](/help/cca/overview.md) 経由で）ステッチされたデータセットでは機能しません。比較を行うには、CJA で使用されている人物 ID のアカウント設定が重要であることに注意してください。特に Cross-Channel Analytics がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
 
 1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 
@@ -65,7 +65,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. In [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を使用して、一部の行が Analytics ソースコネクタで除外された可能性があるかどうかを生データから識別します。
 
-   この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) は、XDM スキーマへの変換中に特定の行をフィルタリングする場合があります。 行全体が変換に適さない理由は複数考えられます。次のいずれかの Analytics フィールドにこれらの値が含まれている場合、行全体が除外されます。
+   この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、XDM スキーマへの変換中に特定の行をフィルタリングする場合があります。 行全体が変換に適さない理由は複数考えられます。次のいずれかの Analytics フィールドにこれらの値が含まれている場合、行全体が除外されます。
 
    | Analytics フィールド | 行が削除される原因となる値 |
    | --- | --- |
@@ -90,4 +90,4 @@ AEP からデータを取り込む際に、レコードがスキップされる�
 
 * **人物 ID がありません** -（イベントデータセットからおよび／またはプロファイル／ルックアップデータセットから）人物 ID が見つからない場合、これらのレコードは無視またはスキップされます。これは、レコードを結合するための共通の ID や一致するキーがないためです。
 
-* **無効または大きな人物 ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、人物 ID 列に無効な人物 ID が含まれることがあります。月に 100 万回以上イベントに表示される人物 ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。
+* **無効または大きな人物 ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。 月に 100 万回以上イベントに表示される人物 ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: ht
-source-wordcount: '1457'
-ht-degree: 100%
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 98%
 
 ---
 
@@ -104,10 +104,10 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 ## 訪問者の識別方法の変更
 
-CJA では、ECID 以外にも ID の概念を拡張し、顧客 ID や Cookie ID、ステッチされた ID、ユーザー ID、トラッキングコードなど、任意の ID を使用できるようになりました。複数のデータセットをまたいで共通の名前空間 ID を使用するか、[Cross-Channel Analytics](/help/connections/cca/overview.md) を使用すると、異なるデータセットをまたいで人々をリンクできます。CJA でワークスペースプロジェクトを設定するユーザーは、複数のデータセットをまたいで使用される ID を理解する必要があります。次のビデオでは、CJA での ID の使用について説明しています。
+CJA では、ECID 以外にも ID の概念を拡張し、顧客 ID や Cookie ID、ステッチされた ID、ユーザー ID、トラッキングコードなど、任意の ID を使用できるようになりました。複数のデータセットをまたいで共通の名前空間 ID を使用するか、[Cross-Channel Analytics](/help/cca/overview.md) を使用すると、異なるデータセットをまたいで人々をリンクできます。CJA でワークスペースプロジェクトを設定するユーザーは、複数のデータセットをまたいで使用される ID を理解する必要があります。次のビデオでは、CJA での ID の使用について説明しています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 低トラフィックディメンション項目の概念の変更
 
-従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。CJA では、このような基数の高いフィールドに対する制限が緩和されました。レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。一意の値を多く含むディメンションのレポートを CJA がどのように最適化するかについて詳しくは、[ロングテール](../analysis-workspace/workspace-faq/long-tail.md)を参照してください。
+従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。CJA には、基数の高いフィールドに対する制限が少なくなりました。 レポートアーキテクチャが変更され、Analysis Workspaceは、より多くの一意のディメンション項目に関するレポートを作成できます。 一意の値を多く含むディメンションのレポートを CJA がどのように最適化するかについて詳しくは、[ロングテール](../analysis-workspace/workspace-faq/long-tail.md)を参照してください。

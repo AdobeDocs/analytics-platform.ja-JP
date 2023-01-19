@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
+source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '860'
 ht-degree: 96%
 
 ---
@@ -61,10 +61,7 @@ ht-degree: 96%
    + [接続の管理](../connections/manage-connections.md)
    + [組み合わせイベントデータセット](../connections/combined-dataset.md)
    + [標準検索](../connections/standard-lookups.md)
-   + Cross-Channel Analytics {#cca}
-      + [Cross-Channel Analytics の概要](../connections/cca/overview.md)
-      + [再生の仕組み](../connections/cca/replay.md)
-      + [Cross-Channel Analytics に関する FAQ](../connections/cca/faq.md)
+   + [Cross-Channel Analytics](../connections/cca.md)
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
@@ -177,18 +174,6 @@ ht-degree: 96%
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace のアクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace のロングテール](../analysis-workspace/workspace-faq/long-tail.md)
-+ Report Builder {#cja-reportbuilder}
-   + [Report Builder の概要](../report-builder/report-buider-overview.md)
-   + [Report Builder の設定](../report-builder/report-builder-setup.md)
-   + [データブロックの作成](../report-builder/create-a-data-block.md)
-   + [Report Builder ハブ](../report-builder/report-builder-hub.md)
-   + [日付範囲を選択します。](../report-builder/select-date-range.md)
-   + [フィルターの操作](../report-builder/work-with-filters.md)
-   + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
-   + [データブロックの管理](../report-builder/manage-reportbuilder.md)
-   + [ワークブックのスケジュール](../report-builder/schedule-reportbuilder.md)
-   + [制限付きラベル](../report-builder/restricted-labels.md)
-   + [Report Builder の設定](../report-builder/report-builder-settings.md)
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](../components/overview.md)
    + 注釈 {#annotations}
@@ -246,11 +231,31 @@ ht-degree: 96%
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
++ Report Builder {#cja-reportbuilder}
+   + [Report Builder の概要](../report-builder/report-buider-overview.md)
+   + [Report Builder の設定](../report-builder/report-builder-setup.md)
+   + [データブロックの作成](../report-builder/create-a-data-block.md)
+   + [Report Builder ハブ](../report-builder/report-builder-hub.md)
+   + [日付範囲を選択します。](../report-builder/select-date-range.md)
+   + [フィルターの操作](../report-builder/work-with-filters.md)
+   + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
+   + [データブロックの管理](../report-builder/manage-reportbuilder.md)
+   + [ワークブックのスケジュール](../report-builder/schedule-reportbuilder.md)
+   + [制限付きラベル](../report-builder/restricted-labels.md)
+   + [Report Builder の設定](../report-builder/report-builder-settings.md)
++ Cross-Channel Analytics {#cca}
+   + [Cross-Channel Analytics の概要](../cca/overview.md)
+   + [再生の仕組み](../cca/replay.md)
+   + [Cross-Channel Analytics に関する FAQ](../cca/faq.md)
 + アドビの統合 {#integrations}
    + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
    + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
    + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
    + [顧客 AI データと CJA の統合](/help/integrations/customer-ai.md)
++ データガバナンス {#cja-privacy}
+   + [データガバナンス](../privacy/privacy-overview.md)
+   + [監査ログ](../privacy/audit-log.md)
+   + [顧客管理キー](../privacy/cmk.md)
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
@@ -277,8 +282,4 @@ ht-degree: 96%
    + [ラボユーザーガイド](../labs/labs.md)
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](../troubleshooting/compare.md)
-+ データガバナンス {#cja-privacy}
-   + [データガバナンス](../privacy/privacy-overview.md)
-   + [監査ログ](../privacy/audit-log.md)
-   + [顧客管理キー](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

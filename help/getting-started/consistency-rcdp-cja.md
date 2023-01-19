@@ -4,8 +4,8 @@ title: Real-time CDP と CJA の間における指標とオーディエンスメ
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 769eef205df32865874753859ce79e573db40641
-workflow-type: ht
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Real-time CDP と CJA の間でオーディエンスのメンバーシップカ�
 
 Real-time CDP と CJA は、現在、同じ人物の定義を共有していません。Real-time CDP は、[ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)内の情報に完全に依存して、結合されたプロファイルを作成します。
 
-CJA は、データレイク内のデータセットから識別子を抽出し、カスタムロジックを適用してデータセットをリンクする[Cross-Channel Analytics](/help/connections/cca/overview.md)を使用するように設定できます。
+CJA は、データレイク内のデータセットから識別子を抽出し、カスタムロジックを適用してデータセットをリンクする[Cross-Channel Analytics](/help/cca/overview.md)を使用するように設定できます。
 
 今後、CJA は ID グラフを使用できるようになります。
 
