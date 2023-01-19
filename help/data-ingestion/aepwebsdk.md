@@ -4,7 +4,7 @@ description: Adobe Experience Platform Web SDK と Edge Network を使用してC
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 9%
@@ -523,7 +523,7 @@ Adobe Experience PlatformデータをCustomer Journey Analyticsで使用する�
 
       - 設定 **[!UICONTROL すべての新しいデータをインポート]** および **[!UICONTROL データセットの既存データのバックフィル]** 好みに応じて。
 
-      ![データセットの設定](./assets/cja-connections-3.png)
+      ![データセットの設定](./assets/cja-connections-3b.png)
 
    - 選択 **[!UICONTROL データセットを追加]**.
    「**[!UICONTROL 保存]**」を選択します。

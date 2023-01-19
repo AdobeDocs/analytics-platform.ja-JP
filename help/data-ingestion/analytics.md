@@ -4,7 +4,7 @@ description: 従来のAdobe Analyticsからデータを取り込む方法を説�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 11%
@@ -125,7 +125,7 @@ Adobe Experience PlatformデータをCustomer Journey Analyticsで使用する�
 
       - 設定 **[!UICONTROL すべての新しいデータをインポート]** および **[!UICONTROL データセットの既存データのバックフィル]** 好みに応じて。
 
-      ![データセットの設定](./assets/cja-connections-3.png)
+      ![データセットの設定](./assets/cja-connections-3a.png)
 
    - 選択 **[!UICONTROL データセットを追加]**.
    「**[!UICONTROL 保存]**」を選択します。
