@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -124,7 +124,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2020年11月2日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)」ページを更新しました。 |
 | 2020年11月 | 接続の [バックフィル制限の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#backfill-historical-data) に関する内容を追加しました。 |
 | 2020年10月7日 | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
-| 2020年9月15日 | [データの取り込み](/help/use-cases/data-ingestion/data-ingestion.md) に関するトピックを追加しました。 |
+| 2020年9月15日 | [データの取り込み](/help/data-ingestion/data-ingestion.md) に関するトピックを追加しました。 |
 | 2020年9月2日 | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja) に関する節を更新しました。 |
 | 2020年8月7日 | [B2B のユースケース - ルックアップデータセット](/help/use-cases/b2b/b2b.md)に関する新しいトピックを追加しました。 |
 | 2020年7月 | [人物 ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) に関する情報を追加しました。 |

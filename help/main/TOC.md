@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
+source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '858'
+ht-degree: 96%
 
 ---
 
@@ -47,6 +47,14 @@ ht-degree: 98%
       + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [削除の影響](../getting-started/cja-deletion.md)
    + [CJA の用語集](../getting-started/cja-glossary.md)
++ データ取得 {#cja-data-ingestion}
+   + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
+   + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
+      + [Adobe Analytics](../data-ingestion/analytics.md)
+      + [Adobe Experience Platform Web SDK および Edge Network](../data-ingestion/aepwebsdk.md)
+      + [バッチデータ](../data-ingestion/batch.md)
+      + [データのストリーミング](../data-ingestion/streaming.md)
+      + [ソースコネクタ](../data-ingestion/sources.md)
 + 接続 {#cja-connections}
    + [接続の概要](../connections/overview.md)
    + [接続の作成](../connections/create-connection.md)
@@ -251,7 +259,6 @@ ht-degree: 98%
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [CJA での Google Analytics データに関するレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
-      + [データ取り込みのユースケース](../use-cases/data-ingestion/data-ingestion.md)
       + [Marketo Engage データの AEP への取り込みと CJA でのレポート](../use-cases/data-ingestion/marketo.md)
       + [AEP オーディエンスの CJA への取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
