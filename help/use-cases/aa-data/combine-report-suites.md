@@ -3,7 +3,7 @@ title: レポートスイートを様々なスキーマと組み合わせる
 description: データ準備を使用してレポートスイートを様々なスキーマと組み合わせる方法を説明します
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1335'
 ht-degree: 100%
 
