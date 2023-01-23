@@ -2,9 +2,9 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
+source-git-commit: f45485d7e26827a85abe47168b1a3dbdbe150e53
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1278'
 ht-degree: 79%
 
 ---
@@ -74,13 +74,13 @@ ht-degree: 79%
 
 ## オーディエンスの作成後の動作 {#after-audience-created}
 
-オーディエンスを作成した後、Adobeは、作成された新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します。
+オーディエンスを作成した後、Adobeは新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します。
 
 * AEP セグメントは、CJA オーディエンスと同じ名前/説明を共有しますが、一意であることを確認するために、名前に CJA オーディエンス ID が追加されます。
 
 * CJA オーディエンスの名前/説明が変更されると、AEP セグメントの名前/説明にもその変更が反映されます。
 
-* CJA オーディエンスがユーザーによって削除された場合、AEP セグメントは削除されません。CJA オーディエンスが後で削除解除された場合に備えます。
+* CJA オーディエンスがユーザーによって削除された場合、AEP セグメントは削除されません。 理由は、CJA オーディエンスが後で削除解除される可能性があるからです。
 
 ## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
 
