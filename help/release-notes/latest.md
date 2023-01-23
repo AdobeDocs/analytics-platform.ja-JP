@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7ed39a9280e1e4e517b804727e1f082dc27185af
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '571'
 ht-degree: 40%
 
 ---
 
 # 最新のCustomer Journey Analytics(CJA) リリースノート（2023 年 1 月）
 
-**最終更新日**:2023 年 1 月 14 日
+**最終更新日**:2023 年 1 月 24 日
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -20,7 +20,8 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウトの開始](/help/release-notes/releases.md) | [一般公開](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Workspace のフォルダー** | フォルダーを使用すると、プロジェクトを整理および分類して、取得やアクセスを改善できます。 さらに、共有 **[!UICONTROL 会社]** フォルダーを使用すると、管理者は、すべての Workspace ユーザーと簡単にコンテンツを作成および共有できます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | 該当なし | 2023年1月11日（PT） |
+| **CJA オーディエンスの更新** | オーディエンスを作成した後、 [Adobeは、新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | 該当なし | 2023 年 1 月 24 日 |
+| **Workspace のフォルダー** | フォルダーを使用すると、プロジェクトを整理および分類して、取得やアクセスを改善できます。 さらに、共有 **[!UICONTROL 会社]** フォルダーを使用すると、管理者は、すべての Workspace ユーザーと簡単にコンテンツを作成および共有できます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=ja) | 該当なし | 2023年1月11日（PT） |
 | **デフォルトのランディングページ** | この [新規ランディングページ](/help/getting-started/landing.md) 2022 年以前に導入されたは、 **2023 年 1 月 12 日**. 従来のランディングページは廃止され、新しいエクスペリエンスを使用するには全員が必要になります。 | 該当なし | 2023年1月11日（PT） |
 | **プロジェクトマネージャーページは非推奨** | 新しいランディングページのリリースに伴い、 **[!UICONTROL プロジェクトマネージャー]** 次に示すように **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL コンポーネント]**. 新しいランディングページには、古いプロジェクトマネージャーページのすべての機能が含まれています。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | 該当なし | 2023年1月11日（PT） |
 | **ワークブックのスケジュールReport Builder** | Customer Journey Analyticsでは、一定の間隔でワークブックを送信するスケジュールを作成できます。 受信者は、ワークブックの最新の更新を定期的に受け取ることができるようになりました。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | 該当なし | 2023年1月11日（PT） |

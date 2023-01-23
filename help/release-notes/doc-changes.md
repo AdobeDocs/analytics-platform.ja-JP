@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1280'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年1月** |  |
+| CJA Audiences ドキュメントの更新 | に関する新しいドキュメント [新しいオーディエンスの作成後の動作](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | データ取得のクイックスタートガイド | 方法に関する新しいドキュメントの節 [データの取り込みと使用](/help/data-ingestion/data-ingestion.md) （CJA 内） |
 | Workspace フォルダ | 専用のページ [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Workspace ユーザー環境設定 | ユーザーの環境設定の多くが、 [環境設定](/help/analysis-workspace/user-preferences.md). |
