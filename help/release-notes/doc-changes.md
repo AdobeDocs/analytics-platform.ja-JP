@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1282'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | Workspace プロジェクト用に自動保存 | 内の自動保存機能を含めるようコンテンツを更新しました [プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | ランディングページ | 新しいランディングページの更新 [ランディングページ](/help/getting-started/landing.md). |
 | ワークブックのスケジュール | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
+| プロファイルと参照データセットのオブジェクト配列のサポート | 更新済み [オブジェクトの配列の使用](/help/use-cases/object-arrays.md) および [AEP オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md) を使用して、プロファイルと参照のデータセットに対するオブジェクト配列のサポートを反映させます。 |
 
 ## 2022 {#22}
 

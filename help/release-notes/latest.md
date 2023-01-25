@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 42%
+source-wordcount: '561'
+ht-degree: 41%
 
 ---
 
@@ -26,6 +26,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **ワークブックのスケジュールReport Builder** | Customer Journey Analyticsでは、一定の間隔でワークブックを送信するスケジュールを作成できます。 受信者は、ワークブックの最新の更新を定期的に受け取ることができるようになりました。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | 該当なし | 2023年1月11日（PT） |
 | **新しいプロジェクトを自動保存** | Analysis Workspaceは新しく作成したプロジェクトを自動保存するようになりました。 何らかの理由で、手動で保存する前に新しく作成したプロジェクトへのアクセス権が予期せず失われた場合は、プロジェクトの回復バージョンが使用できるようになりました。 以前は、プロジェクトは手動で保存した後にのみ自動保存されていました。 [詳細情報](/help/analysis-workspace/build-workspace-project/save-projects.md) | 該当なし | 2023年1月11日（PT） |
 | **ユーザー環境設定の強化** | ユーザーレベルで追加の環境設定を設定できるようになりました ( [!UICONTROL コンポーネント] > [!UICONTROL 環境設定]) をクリックします。 ユーザー環境設定を設定すると、選択はプロジェクト、テーブルおよびビジュアライゼーション全体にわたって行われます。 環境設定ページには、次の新しいタブが含まれ、それぞれに多数の新しい設定オプションが含まれています。<ul><li>フリーフォームテーブル</li><li>ビジュアライゼーション >/li></ul>。さらに、 **[!UICONTROL 一般]** および **[!UICONTROL プロジェクト]** タブ<p>以前は、これらの環境設定の多くは、個々のプロジェクト、テーブルおよびビジュアライゼーションに対してのみ設定できました。 [詳細情報](/help/analysis-workspace/user-preferences.md) | 該当なし | 2023年1月11日（PT） |
+| **プロファイルと参照データセットのオブジェクト配列のサポート** | プロファイルデータセットと参照データセットで、CJA での使用に対するオブジェクト配列がサポートされるようになりました。 | 該当なし | 2023年1月11日（PT） |
 
 {style=&quot;table-layout:auto&quot;}
 
