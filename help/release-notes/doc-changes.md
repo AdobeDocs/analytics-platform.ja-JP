@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 91%
+source-wordcount: '1311'
+ht-degree: 89%
 
 ---
 
@@ -20,6 +20,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年1月** |  |
+| テーブルのフィルターと並べ替え | の内容（手順の追加や使用可能なオプションの説明を含む）を更新しました。 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 記事。 この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |
 | データ取得のクイックスタートガイド | 方法に関する新しいドキュメントの節 [データの取り込みと使用](/help/data-ingestion/data-ingestion.md) （CJA 内） |
 | Workspace フォルダ | 専用のページ [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Workspace ユーザー環境設定 | ユーザーの環境設定の多くが、 [環境設定](/help/analysis-workspace/user-preferences.md). |
