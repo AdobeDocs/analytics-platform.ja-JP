@@ -4,10 +4,10 @@ description: レポート内の指標の最初の発生のみをカウントし�
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e2ebda486eae7740351370f48bdf104c90494ae3
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 75%
 
 ---
 
@@ -22,3 +22,7 @@ ht-degree: 100%
 | [!UICONTROL 重複排除 ID] | 指標自体に重複排除を適用する代わりに、ディメンションに基づいて指標の重複排除を適用できます。 購入 ID などのディメンションで重複排除を適用する際に役立ちます。 |
 
 {style=&quot;table-layout:auto&quot;}
+
+>[!CAUTION]
+>
+>   での重複排除 _人物_ 範囲は、UTC 時間の完了月数で評価されます。 1 ヶ月のレポート期間内で、レポートの日付以外に発生した場合は、1 ヶ月目または最後のインスタンスがすべて表示されないことがあります。
