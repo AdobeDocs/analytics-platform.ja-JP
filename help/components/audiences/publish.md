@@ -2,10 +2,10 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: e14881682f79633313258382c0baae951ef7f43b
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 81%
+source-wordcount: '1306'
+ht-degree: 74%
 
 ---
 
@@ -71,6 +71,14 @@ ht-degree: 81%
    すべてが正常に動作した場合は、オーディエンスが公開されたことを示す確認メッセージが表示されます。このオーディエンスは、1 ～ 2 分で Experience Platform に表示されます。（何百万人ものメンバーを持つオーディエンスの場合でも、所要時間は 5 分未満です。）
 
 1. 同じメッセージ内で「**[!UICONTROL AEP でのオーディエンスの表示]**」をクリックすると、Adobe Experience Platform の [セグメント UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) に移動します。詳しくは、次を参照してください。
+
+## オーディエンスの作成後の動作 {#after-audience-created}
+
+オーディエンスを作成した後、Adobeは新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します。 AEP ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
+
+* AEP セグメントは、CJA オーディエンスと同じ名前/説明を共有しますが、一意であることを確認するために、名前に CJA オーディエンス ID が追加されます。
+* CJA オーディエンスの名前/説明が変更されると、AEP セグメントの名前/説明にもその変更が反映されます。
+* CJA オーディエンスがユーザーによって削除された場合、AEP セグメントは削除されません。 理由は、CJA オーディエンスが後で削除解除される可能性があるからです。
 
 ## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
 

@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
+source-git-commit: b633e3e70c24d9b00b1ab2f80954ad698b12ce29
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 41%
+source-wordcount: '611'
+ht-degree: 38%
 
 ---
 
 # 最新のCustomer Journey Analytics(CJA) リリースノート（2023 年 1 月）
 
-**最終更新日**:2023 年 1 月 24 日
+**最終更新日**：2023年2月6日（PT）
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -20,6 +20,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウトの開始](/help/release-notes/releases.md) | [一般公開](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **CJA オーディエンスの更新** | オーディエンスを作成した後、 [Adobeは、新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). AEP ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。 | 該当なし | 2023 年 2 月 4 日 |
 | **プロファイルと参照データセットのオブジェクト配列のサポート** | プロファイルデータセットと参照データセットで、CJA での使用に対するオブジェクト配列がサポートされるようになりました。 | 2023年1月11日（PT） | 2023 年 1 月 20 日 |
 | **Workspace のフォルダー** | フォルダーを使用すると、プロジェクトを整理および分類して、取得やアクセスを改善できます。 さらに、共有 **[!UICONTROL 会社]** フォルダーを使用すると、管理者は、すべての Workspace ユーザーと簡単にコンテンツを作成および共有できます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=ja) | 該当なし | 2023年1月11日（PT） |
 | **デフォルトのランディングページ** | この [新規ランディングページ](/help/getting-started/landing.md) 2022 年以前に導入されたは、 **2023 年 1 月 12 日**. 従来のランディングページは廃止され、新しいエクスペリエンスを使用するには全員が必要になります。 | 該当なし | 2023年1月11日（PT） |
