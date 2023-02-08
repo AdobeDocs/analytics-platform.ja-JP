@@ -2,7 +2,7 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e14881682f79633313258382c0baae951ef7f43b
+source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 74%
@@ -72,7 +72,7 @@ ht-degree: 74%
 
 1. 同じメッセージ内で「**[!UICONTROL AEP でのオーディエンスの表示]**」をクリックすると、Adobe Experience Platform の [セグメント UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) に移動します。詳しくは、次を参照してください。
 
-## オーディエンスの作成後の動作 {#after-audience-created}
+## オーディエンスの作成後はどうなりますか？ {#after-audience-created}
 
 オーディエンスを作成した後、Adobeは新しい CJA オーディエンスごとにExperience Platformストリーミングセグメントを作成します。 AEP ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
 
