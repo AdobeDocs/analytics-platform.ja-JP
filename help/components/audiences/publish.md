@@ -2,10 +2,10 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
+source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 74%
+source-wordcount: '1389'
+ht-degree: 70%
 
 ---
 
@@ -79,6 +79,19 @@ ht-degree: 74%
 * AEP セグメントは、CJA オーディエンスと同じ名前/説明を共有しますが、一意であることを確認するために、名前に CJA オーディエンス ID が追加されます。
 * CJA オーディエンスの名前/説明が変更されると、AEP セグメントの名前/説明にもその変更が反映されます。
 * CJA オーディエンスがユーザーによって削除された場合、AEP セグメントは削除されません。 理由は、CJA オーディエンスが後で削除解除される可能性があるからです。
+
+## 待ち時間に関する考慮事項 {#latency}
+
+オーディエンス公開の前後のいくつかの時点で、待ち時間が発生する可能性があります。 待ち時間の概要を以下に示します。
+
+![](assets/latency-diagram.png)
+
+| 待ち時間 | 待ち時間 |
+| --- | --- |
+| データレイクへのデータ取り込み | 最大 30 分 |
+| データのExperience Platformから CJA への取り込み | 最大 60 分 |
+| リアルタイム顧客プロファイルへのオーディエンス公開 | 5 分未満（オーディエンスサイズによる） |
+| オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の遅延）</li><li>4 時間ごと、日別、週別、月別に更新します（遅延は更新率と連携します）。 |
 
 ## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
 
