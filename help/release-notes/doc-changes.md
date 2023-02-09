@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 87%
+source-wordcount: '1390'
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | --- | --- |
 | **2023年2月** |  |
 | Audiences ドキュメントの更新 | オーディエンスを作成した後、AdobeはExperience Platformを作成します [新しい CJA オーディエンスごとのストリーミングセグメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| Workspace のカレンダーと日付範囲 | 相対的な日付範囲、数式の計算の更新、カレンダー UI の変更について説明する内容を更新しました。 詳しくは、 [相対パネルの日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| モバイルスコアカード | 比較日付範囲を表示および非表示にする方法について説明する新しいドキュメントの節。 詳しくは、 [比較日付範囲を表示](/help/mobile-app/create-scorecard.md#show-comparison-dates) （CJA 内） |
 | **2023年1月** |  |
 | テーブルのフィルターと並べ替え | の内容（手順の追加や使用可能なオプションの説明を含む）を更新しました。 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 記事。 この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |
 | データ取得のクイックスタートガイド | 方法に関する新しいドキュメントの節 [データの取り込みと使用](/help/data-ingestion/data-ingestion.md) （CJA 内） |
