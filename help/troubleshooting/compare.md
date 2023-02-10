@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 ![データフロー](assets/compare.png)
 
-次に、データビューを作成した後、CJA でこのデータをレポートしながら、Adobe Analytics のレポート結果との不一致に気がつきました。
+次に、データ表示を作成した後、CJA でこのデータをレポートしながら、Adobe Analytics のレポート結果との不一致に気がつきました。
 
 ここでは、元の Adobe Analytics データと現在 Customer Journey Analytics にある Adobe Analytics のデータを比較するための手順を示します。
 
@@ -47,7 +47,7 @@ Analytics ソースコネクタがドロップしたレコードがない場合�
 
 >[!NOTE]
 >
->これは通常の中間値データセットでのみ機能し、（[Cross-Channel Analytics](/help/cca/overview.md) 経由で）ステッチされたデータセットでは機能しません。比較を行うには、CJA で使用されている人物 ID のアカウント設定が重要であることに注意してください。特に Cross-Channel Analytics がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
+>これは通常の中間値データセットでのみ機能し、（[クロスチャネル分析](/help/cca/overview.md)経由で）ステッチされたデータセットでは機能しません。比較を行うには、CJA で使用されているユーザー ID のアカウント設定が重要であることに注意してください。特にクロスチャネル分析がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
 
 1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. In [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を使用して、一部の行が Analytics ソースコネクタで除外された可能性があるかどうかを生データから識別します。
+1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)で、生データから、Analytics ソースコネクタからによって一部の行が除外された可能性があるかどうかを確認します。
 
-   この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、XDM スキーマへの変換中に特定の行をフィルタリングする場合があります。 行全体が変換に適さない理由は複数考えられます。次のいずれかの Analytics フィールドにこれらの値が含まれている場合、行全体が除外されます。
+   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行がフィルタリングされる可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
 
    | Analytics フィールド | 行が削除される原因となる値 |
    | --- | --- |
@@ -78,16 +78,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    hit\_source について詳しくは、[データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を参照してください。page\_event について詳しくは、[ページイベント検索](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=ja)を参照してください。
 
-1. コネクタが行をフィルターした場合は、 [!UICONTROL 発生件数] 指標。 結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
+1. コネクタによって行がフィルタリングされた場合は、[!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
 
-## AEP からの取り込み中にレコードがフィルターまたはスキップされる可能性がある理由
+## AEP から取り込む際にレコードがフィルタリングまたはスキップされる可能性がある理由
 
-CJA [接続](/help/connections/create-connection.md) を使用すると、データセットをまたいだ共通の人物 ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そして人物 ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
+CJA [接続](/help/connections/create-connection.md) を使用すると、データセットをまたいだ共通のユーザー ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そしてユーザー ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
 
 AEP からデータを取り込む際に、レコードがスキップされる可能性がある理由を次に示します。
 
 * **タイムスタンプがありません** - イベントデータセットにタイムスタンプがない場合、取り込み中、それらのレコードは完全に無視またはスキップされます。
 
-* **人物 ID がありません** -（イベントデータセットからおよび／またはプロファイル／ルックアップデータセットから）人物 ID が見つからない場合、これらのレコードは無視またはスキップされます。これは、レコードを結合するための共通の ID や一致するキーがないためです。
+* **ユーザー ID がありません** -（イベントデータセットからおよび／またはプロファイル／ルックアップデータセットから）ユーザー ID が見つからない場合、これらのレコードは無視またはスキップされます。これは、レコードを結合するための共通の ID や一致するキーがないためです。
 
-* **無効または大きな人物 ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。 月に 100 万回以上イベントに表示される人物 ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。
+* **無効または大きなユーザー ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。月に 100 万回以上イベントに表示されるユーザー ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。
