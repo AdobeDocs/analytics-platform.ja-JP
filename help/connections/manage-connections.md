@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1808'
 ht-degree: 100%
 
@@ -133,7 +133,7 @@ ht-degree: 100%
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL 人物 ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択したユーザー ID です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際に結合するには、データセット全体で同じユーザー ID を使用する必要があります。 |
+| [!UICONTROL ユーザー ID] | Experience Platform 内のデータセットのスキーマで定義された ID を表示します。接続の作成時に選択したユーザー ID です。異なる ID のデータセットを含む接続を作成すると、レポートにはそれが反映されます。データセットを実際に結合するには、データセット全体で同じユーザー ID を使用する必要があります。 |
 | [!UICONTROL 使用可能なレコード] | カレンダーで選択した特定の期間に、このデータセットに対して取り込まれた行の合計数を表します。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。（まったく新しい接続を作成する場合は例外であり、[遅延](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#3-getting-data-into-customer-journey-analytics)が発生します。 |
 | [!UICONTROL 追加されたレコード] | 選択した期間に追加された行数を示します。**メモ**：**[!UICONTROL 追加されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
 | [!UICONTROL 削除されたレコード] | 選択した期間に削除されたレコードの数を示します。**メモ**：**[!UICONTROL 削除されたレコード]** のデータには、現時点でのイベントデータのみが含まれ、プロファイルまたはルックアップデータは含まれません。 |
