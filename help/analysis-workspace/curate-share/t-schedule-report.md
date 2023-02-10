@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 スケジュールされた Analysis Workspace プロジェクトは、 **Analytics／コンポーネント／スケジュールされたプロジェクト** で管理できます。
 
-スケジュール済みプロジェクトマネージャーでは、定期的なプロジェクトスケジュールを編集および削除できます。検索バーまたは左側のパネルのフィルタオプションを使用して、スケジュールを検索します。タグ、承認されたスケジュール、所有者などでフィルターできます。
+スケジュール済みプロジェクトマネージャーでは、定期的なプロジェクトスケジュールを編集および削除できます。検索バーまたは左側のパネルのフィルターオプションを使用して、スケジュールを検索します。タグ、承認されたスケジュール、所有者などでフィルターできます。
 
 スケジュール済みプロジェクトマネージャーでの一般的な操作は次のとおりです。
 
@@ -68,7 +68,7 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 >[!NOTE]
 >
->スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) アドオン製品を購入された CJA のお客様のみに表示されます。
+>スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=ja) アドオン製品を購入された CJA のお客様のみに表示されます。
 
 アドビは、スケジュールされたプロジェクトを .pdf 形式と .csv 形式のどちらで送信した場合でも、パスワードを使用して暗号化します。
 
@@ -84,7 +84,7 @@ Healthcare Shield SKU を購入して有効にすると、次の 2 つの状況�
 
 パスワード要件は、アドビの規格に準拠しており、数字 1 文字以上および特殊文字 1 文字以上を含める 8 文字以上のパスワードが必要です。
 
-### 新しいスケジュール済みプロジェクトのパスワード保護
+### 新しくスケジュールされたプロジェクトのパスワード保護
 
 1. プロジェクトを保存したら、**[!UICONTROL 共有]**／**[!UICONTROL 今すぐファイルを送信]**&#x200B;または[!UICONTROL 共有]／**[!UICONTROL スケジュールに従ってファイルを送信]**&#x200B;に移動します。
 1. [今すぐファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#now)または[スケジュールに従ってファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#schedule)で、上記の手順に従います。
