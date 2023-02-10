@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -48,13 +48,13 @@ ht-degree: 95%
       + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
-+ データ取得 {#cja-data-ingestion}
++ データ取り込み {#cja-data-ingestion}
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK および Edge Network](../data-ingestion/aepwebsdk.md)
+      + [Adobe Experience Platform Web SDK および Edge ネットワーク](../data-ingestion/aepwebsdk.md)
       + [バッチデータ](../data-ingestion/batch.md)
-      + [データのストリーミング](../data-ingestion/streaming.md)
+      + [ストリーミングデータ](../data-ingestion/streaming.md)
       + [ソースコネクタ](../data-ingestion/sources.md)
 
 + 接続 {#cja-connections}
@@ -63,7 +63,7 @@ ht-degree: 95%
    + [接続の管理](../connections/manage-connections.md)
    + [組み合わせイベントデータセット](../connections/combined-dataset.md)
    + [標準検索](../connections/standard-lookups.md)
-   + [Cross-Channel Analytics](../connections/cca.md)
+   + [クロスチャネル分析](../connections/cca.md)
 
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
@@ -94,8 +94,8 @@ ht-degree: 95%
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [フォルダーを削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
-         + [プロジェクトを追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [フォルダーの削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
+         + [プロジェクトの追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [新しいプロジェクトの保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
@@ -264,14 +264,14 @@ ht-degree: 95%
    + [フィルターの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
-   + [ワークブックのスケジュール](../report-builder/schedule-reportbuilder.md)
+   + [ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)
 
-+ Cross-Channel Analytics {#cca}
-   + [Cross-Channel Analytics の概要](../cca/overview.md)
++ クロスチャネル分析{#cca}
+   + [クロスチャネル分析の概要](../cca/overview.md)
    + [再生の仕組み](../cca/replay.md)
-   + [Cross-Channel Analytics に関する FAQ](../cca/faq.md)
+   + [クロスチャネル分析に関する FAQ](../cca/faq.md)
 
 + アドビの統合 {#integrations}
    + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
@@ -310,7 +310,7 @@ ht-degree: 95%
 
 + 管理 {#cja-admin}
    + [アクセス制御](../admin/cja-access-control.md)
-   + [使用状況の表示と管理](../admin/estimate-usage.md)
+   + [ の使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
 
 + ラボ {#labs}

@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ CJA のいくつかの機能は、業界標準に合わせて名前が変更さ�
 
 レポート面で使い慣れた内容の多くは変更されていません。
 
-* データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。CJA 内でのワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
+* データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。ワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
 * [Adobe Analytics ダッシュボード](/help/mobile-app/home.md)も、同じバージョンを使用可能で、CJA と従来の Analytics で同様に機能します。
 * [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています（以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
 
@@ -100,14 +100,14 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 ## 顧客属性の概念の変更
 
-「顧客属性」は「プロファイルデータセット」になりました。プロファイルデータセットには、[!UICONTROL イベント]データの訪問者、ユーザーまたは顧客に適用されるデータが含まれています。例えば、顧客に関する CRM データをアップロードできます。含める人物 ID を選択できます。[!DNL Experience Platform] で定義された各データセットには、1 つ以上の人物 ID セットが定義されています。
+「顧客属性」は「プロファイルデータセット」になりました。プロファイルデータセットには、[!UICONTROL イベント]データの訪問者、ユーザーまたは顧客に適用されるデータが含まれています。例えば、顧客に関する CRM データをアップロードできます。含めるユーザー ID を選択できます。[!DNL Experience Platform] で定義された各データセットには、1 つ以上のユーザー ID セットが定義されています。
 
 ## 訪問者の識別方法の変更
 
-CJA では、ECID 以外にも ID の概念を拡張し、顧客 ID や Cookie ID、ステッチされた ID、ユーザー ID、トラッキングコードなど、任意の ID を使用できるようになりました。複数のデータセットをまたいで共通の名前空間 ID を使用するか、[Cross-Channel Analytics](/help/cca/overview.md) を使用すると、異なるデータセットをまたいで人々をリンクできます。CJA でワークスペースプロジェクトを設定するユーザーは、複数のデータセットをまたいで使用される ID を理解する必要があります。次のビデオでは、CJA での ID の使用について説明しています。
+CJA では、ECID 以外にも ID の概念を拡張し、顧客 ID や Cookie ID、ステッチされた ID、ユーザー ID、トラッキングコードなど、任意の ID を使用できるようになりました。複数のデータセットをまたいで共通の名前空間 ID を使用するか、[クロスチャネル分析](/help/cca/overview.md)を使用すると、異なるデータセットをまたいで人々をリンクできます。CJA でワークスペースプロジェクトを設定するユーザーは、複数のデータセットをまたいで使用される ID を理解する必要があります。次のビデオでは、CJA での ID の使用について説明しています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 低トラフィックディメンション項目の概念の変更
 
-従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。CJA には、基数の高いフィールドに対する制限が少なくなりました。 レポートアーキテクチャが変更され、Analysis Workspaceは、より多くの一意のディメンション項目に関するレポートを作成できます。 一意の値を多く含むディメンションのレポートを CJA がどのように最適化するかについて詳しくは、[ロングテール](../analysis-workspace/workspace-faq/long-tail.md)を参照してください。
+従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。CJA では、このような基数の高いフィールドに対する制限が緩和されました。レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。一意の値を多く含むディメンションのレポートを CJA がどのように最適化するかについて詳しくは、[ロングテール](../analysis-workspace/workspace-faq/long-tail.md)を参照してください。

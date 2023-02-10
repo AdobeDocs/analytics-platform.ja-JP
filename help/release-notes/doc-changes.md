@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | Workspace ユーザー環境設定 | ユーザーの環境設定の多くが、 [環境設定](/help/analysis-workspace/user-preferences.md). |
 | Workspace プロジェクト用に自動保存 | 内の自動保存機能を含めるようコンテンツを更新しました [プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | ランディングページ | 新しいランディングページの更新 [ランディングページ](/help/getting-started/landing.md). |
-| ワークブックのスケジュール | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
+| ワークブックのスケジュール設定 | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
 | プロファイルと参照データセットのオブジェクト配列のサポート | 更新済み [オブジェクトの配列の使用](/help/use-cases/object-arrays.md) および [AEP オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md) を使用して、プロファイルと参照のデータセットに対するオブジェクト配列のサポートを反映させます。 |
 
 ## 2022 {#22}
@@ -38,7 +38,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 日付 | アップデートの内容 |
 | --- | --- |
 | **2022年12月** |  |
-| 2022 年 12 月 16 日 | に関する新しいトピックです。 [CJA データ使用の測定と管理](/help/admin/estimate-usage.md). |
+| 2022年12月16日（PT） | [CJA データ使用の測定と管理](/help/admin/estimate-usage.md)に関する新しいトピックです。 |
 | **2022年10月** |  |
 | 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
@@ -107,8 +107,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2021年9月 | [レポートでの夏時間のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar) |
 | 2021年9月 | [顧客カレンダー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar)ドキュメント |
 | 2021年9月 | [ブール値フィールド](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=ja)ドキュメント |
-| 2021年9月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[[!UICONTROL コンポーネント]設定の概要](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL アトリビューション] コンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 動作] コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 形式] コンポーネントの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 含む／除外] コンポーネントの設定](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複排除] コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値なし] コンポーネントの設定](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 永続性] コンポーネントの設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値のバケット化] コンポーネントの設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| 2021年9月 | CJA での [レポートスイートの結合の意味](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6-considerations-when-merging-report-suites-in-cja) に関する新しい節を追加しました。 |
+| 2021年9月 | データビューのコンポーネント設定を個々のファイルに分割しました。<ul><li>[[!UICONTROL コンポーネント]設定の概要](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL アトリビューション] コンポーネントの設定](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 動作] コンポーネントの設定](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 形式] コンポーネントの設定](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 含む／除外] コンポーネントの設定](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指標の重複排除] コンポーネントの設定](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 値なし] コンポーネントの設定](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 永続性]コンポーネント設定](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 値のバケット化]コンポーネント設定](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
+| 2021年9月 | CJA での[レポートスイートの結合の意味](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#6-considerations-when-merging-report-suites-in-cja)に関する新しい節を追加しました。 |
 | **2021年8月** |  |
 | 2021年8月 | CJA での強化された [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja) のエクスペリエンスに関する新しい節を追加しました。 |
 | 2021年8月 | [データビューディメンションの大文字と小文字の区別](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-behavior-settings) に関する新しい節を追加しました。 |
@@ -136,19 +136,19 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 日付 | アップデートの内容 |
 | --- | --- |
-| 2020年11月13日 | [Cross-Channel Analytics](/help/cca/overview.md) に関する新しいトピックを追加しました。データセットの人物 ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
-| 2020年11月13日 | [コールセンターと web データの読み込み](/help/use-cases/cross-channel/call-center.md) に関する新しいユースケースを追加しました。 |
-| 2020年11月10日 | [FAQ](/help/getting-started/cja-faq.md) に対するデータコンポーネントの削除の影響に関する節を追加しました。 |
-| 2020年11月2日 | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)」ページを更新しました。 |
+| 2020年11月13日（PT） | [クロスチャネル分析](/help/cca/overview.md)に関する新しいトピックを追加しました。データセットのユーザー ID のキーを変更し、複数のデータセットをシームレスに組み合わせることができます。 |
+| 2020年11月13日（PT） | [コールセンターと web データの読み込み](/help/use-cases/cross-channel/call-center.md) に関する新しいユースケースを追加しました。 |
+| 2020年11月10日（PT） | [FAQ](/help/getting-started/cja-faq.md) に対するデータコンポーネントの削除の影響に関する節を追加しました。 |
+| 2020年11月2日（PT） | 「[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)」ページを更新しました。 |
 | 2020年11月 | 接続の [バックフィル制限の削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#backfill-historical-data) に関する内容を追加しました。 |
-| 2020年10月7日 | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
-| 2020年9月15日 | [データの取り込み](/help/data-ingestion/data-ingestion.md) に関するトピックを追加しました。 |
-| 2020年9月2日 | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja) に関する節を更新しました。 |
-| 2020年8月7日 | [B2B のユースケース - ルックアップデータセット](/help/use-cases/b2b/b2b.md)に関する新しいトピックを追加しました。 |
-| 2020年7月 | [人物 ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) に関する情報を追加しました。 |
+| 2020年10月7日（PT） | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
+| 2020年9月15日（PT） | [データの取り込み](/help/data-ingestion/data-ingestion.md) に関するトピックを追加しました。 |
+| 2020年9月2日（PT） | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja) に関する節を更新しました。 |
+| 2020年8月7日（PT） | [B2B のユースケース - ルックアップデータセット](/help/use-cases/b2b/b2b.md)に関する新しいトピックを追加しました。 |
+| 2020年7月 | [ユーザー ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) に関する情報を追加しました。 |
 | 2020年7月 | [オブジェクト配列](/help/use-cases/object-arrays.md) または「データ階層」に関する新しいトピックを追加しました。 |
-| 2020年4月14日 | 「[接続の作成](/help/connections/create-connection.md)」トピックの最新 UI を更新しました。 |
-| 2020年2月27日 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
+| 2020年4月14日（PT） | 「[接続の作成](/help/connections/create-connection.md)」トピックの最新 UI を更新しました。 |
+| 2020年2月27日（PT） | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
 | 2019年12月 | CJA ドキュメントの最初のドラフト |
 
 {style=&quot;table-layout:auto&quot;}
