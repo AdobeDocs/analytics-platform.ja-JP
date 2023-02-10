@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e808ac175092af659ac702bb43f94f82c0ff22f9
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '980'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +31,11 @@ Customer Journey Analytics では、使いやすいクロスチャネル機能�
 * **無制限の一意の値**：Adobe Experience Platform では、一意制限を受けることはありません。
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
 * **クロスレポートスイートデータ**：Platform で、複数のデータセットから既存の実装を組み合わせることができます。
+
+>[!TIP]
+>
+>Adobe Analyticsを使用していて、Adobe AnalyticsデータをCustomer Journey Analyticsで使用する場合は、 [従来のAdobe Analyticsからのデータの取り込みと使用](../data-ingestion/analytics.md) の一部としてのクイックスタートガイド [データ取り込み](../data-ingestion/data-ingestion.md) 」セクションに入力します。
+
 
 Customer Journey Analytics の最初のリリースには、Analysis Workspace に含まれる多くの機能が含まれています。完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 

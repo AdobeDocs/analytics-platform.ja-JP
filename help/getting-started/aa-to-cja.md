@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 99%
+source-wordcount: '1436'
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 ### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
 
-Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用について詳しくは、[UI でのAdobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください。
+Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用について詳しくは、 [Adobe Analyticsからデータを取り込み、CJA で使用する](../data-ingestion/analytics.md). 関連トピック [UI でのAdobe Analyticsソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
 
 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集が進化するにつれて、Adobe Experience Platform Edge Network を使用して [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) か [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) のいずれかに移行する可能性があります。SDK の一般的な実装ではデータが Adobe Analytics に送信されますが、Adobe Experience Platform にデータを直接送信する機会も新たに現れています。その後、Adobe Analytics に送信するデータも維持しながら、Customer Journey Analytics に取り込むことができます。
 
@@ -76,10 +76,10 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 
 次の Adobe Analytics の機能またはコンポーネントはサポートされていません。
 
-* マーケティングチャネル
 * ボットフィルタリング
 * 地域、ドメイン、デバイスのルックアップ
-* Analytics for Target（A4T）
+* ストリーミングメディア測定
+* Livestream または Livestreamトリガー
 
 ## 重要な違いに対する準備
 
