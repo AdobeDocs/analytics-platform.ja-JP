@@ -4,7 +4,7 @@ description: Customer Journey Analytics のランディングページ。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
+source-git-commit: 6e90688d72ddf7791ad8c4c12d5293070d987e39
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 82%
@@ -31,7 +31,7 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Adobe Analytics と CJA にまたがるレポート機能のデータ処理の比較 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> 仮想レポートスイート、データビュー、AEP サンドボックスおよび Analytics ソースコネクタ </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics から Customer Journey Analytics への進化 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.htm"> Adobe Analytics ユーザー向け CJA ユーザーガイド </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> Adobe Analytics ユーザー向け CJA ユーザーガイド </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 強化されたデータビュー機能の使用 </a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>はじめに</b> </p> 
