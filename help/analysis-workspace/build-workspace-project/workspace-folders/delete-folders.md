@@ -1,30 +1,30 @@
 ---
-description: Workspace でフォルダーを削除する方法を説明します
+description: ワークスペースでフォルダーを削除する方法を学ぶ
 keywords: Analysis Workspace
-title: Workspace でのフォルダーの削除
+title: ワークスペースでのフォルダーの削除
 feature: CJA Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# フォルダーを削除
+# フォルダーの削除
 
-作成したフォルダを削除できます。
+自身が作成したフォルダーを削除できます。
 
 >[!NOTE]
 >
->フォルダーを削除しても、フォルダーのコンテンツは削除されません。 削除されたフォルダ（プロジェクトまたはサブフォルダ）の内容は、フォルダ階層の上の直接フォルダに移動されます。
+>フォルダーを削除しても、フォルダーのコンテンツは削除されません。削除されたフォルダー（プロジェクトまたはサブフォルダー）の内容は、フォルダー階層のすぐ上のフォルダーに移動されます。
 
-1. 次をクリック： **...** 右上の省略記号アイコン
+1. 右上の省略記号アイコン「**…**」をクリックします。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
-1. 選択 **フォルダーを削除**.
+1. 「**フォルダーを削除**」を選択します。
 
    フォルダーが削除されたことを示す確認通知が表示されます。
 
