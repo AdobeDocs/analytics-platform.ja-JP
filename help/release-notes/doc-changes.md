@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 84%
@@ -38,7 +38,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 日付 | アップデートの内容 |
 | --- | --- |
 | **2022年12月** |  |
-| 2022 年 12 月 16 日 | に関する新しいトピックです。 [CJA データ使用の測定と管理](/help/getting-started/estimate-usage.md). |
+| 2022 年 12 月 16 日 | に関する新しいトピックです。 [CJA データ使用の測定と管理](/help/admin/estimate-usage.md). |
 | **2022年10月** |  |
 | 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
@@ -53,7 +53,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年9月 | Workspace の[実験パネル](/help/analysis-workspace/c-panels/experimentation.md)に関する新しいトピック。 |
 | **2022年8月** |  |
 | 2022年8月 | [Analytics ソースコネクタのクロス地域サポート](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)に関する Adobe Experience Platform の記事。 |
-| 2022年8月 | [CJA のアクセス制御](/help/getting-started/cja-access-control.md)に関する記事を大幅に更新しました。 |
+| 2022年8月 | [CJA のアクセス制御](/help/admin/cja-access-control.md)に関する記事を大幅に更新しました。 |
 | 2022年8月 | [データガバナンスのラベルとポリシーに対する CJA サポート](/help/data-views/data-governance.md)に関する新しい記事。 |
 | 2022年8月 | [Analytics ソースコネクタを通じて渡される Analytics データの用語の比較](/help/getting-started/aa-vs-cja/terminology.md)に関する新しい記事。 |
 | 2022年8月 | [リアルタイム顧客プロファイルへのオーディエンス公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=ja)に関する新しいドキュメント。 |

@@ -1,18 +1,18 @@
 ---
-title: Adobe Analytics から Customer Journey Analytics への進化
+title: Adobe Analyticsからの変化
 description: Adobe Analytics データを Customer Journey Analytics データに変換する手順
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1420'
-ht-degree: 100%
+source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+workflow-type: tm+mt
+source-wordcount: '1414'
+ht-degree: 99%
 
 ---
 
-# Adobe Analytics から Customer Journey Analytics への進化
+# Adobe Analyticsからの変化
 
 Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。この記事は管理者を対象として書かれています。
 
@@ -99,9 +99,9 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 1. これらのコンポーネントのうち最も重要なものを特定する。
 
-1. 定義をドキュメント化する。
+2. 定義をドキュメント化する。
 
-1. データに必要なフィールドを特定し、それらを[フィルター](/help/components/filters/filters-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として CJA にレプリケートする。
+3. データに必要なフィールドを特定し、それらを[フィルター](/help/components/filters/filters-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として CJA にレプリケートする。
 
 次に、ガイドとなるビデオをいくつか示します。
 

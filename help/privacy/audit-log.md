@@ -2,7 +2,7 @@
 title: 監査ログ
 description: CJA 監査ログの表示方法と管理方法について説明します。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 99%
@@ -21,7 +21,7 @@ Customer Journey Analytics（CJA）では、システムで実行されるアク
 
 組織に対してこの機能が有効になっている場合、アクティビティの発生に応じて監査ログが自動的に収集されます。ログ収集を手動で有効にする必要はありません。
 
-監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。CJA 機能の個々の権限を管理する方法については、[アクセス制御ドキュメント](/help/getting-started/cja-access-control.md)を参照してください。
+監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。CJA 機能の個々の権限を管理する方法については、[アクセス制御ドキュメント](../admin/cja-access-control.md)を参照してください。
 
 ## UI での監査ログの表示
 
