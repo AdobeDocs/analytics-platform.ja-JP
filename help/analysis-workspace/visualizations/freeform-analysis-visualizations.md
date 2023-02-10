@@ -5,9 +5,9 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,29 +35,29 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、X 軸で時間を表します。 |
 | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大 3 つの指標の関係を表示します。 |
-| [概要番号](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセルを 1 つの大きな数値として表示します。 |
+| [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセルを 1 つの大きな数値として表示します。 |
 | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセル間の変化を 1 つの大きい数値/パーセントで表示します。 |
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
-| [ベン](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
+| [ベン図](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
 
 ## ビジュアライゼーション設定のカスタマイズ
 
-個々のビジュアライゼーションまたは作成するすべてのビジュアライゼーションのビジュアライゼーション設定をカスタマイズできます。
+個別のビジュアライゼーション、または作成するすべてのビジュアライゼーションのビジュアライゼーション設定をカスタマイズできます。
 
 ### 単一のビジュアライゼーションのビジュアライゼーション設定のカスタマイズ
 
-アクセスするには [!UICONTROL ビジュアライゼーション設定] 個々のビジュアライゼーションの場合：
+個別の[!UICONTROL ビジュアライゼーション設定]にアクセスするには：
 
-1. Analysis Workspaceで、設定をカスタマイズするビジュアライゼーションの上にマウスポインターを置きます。
+1. Analysis Workspace で、設定をカスタマイズするビジュアライゼーションの上にマウスポインターを置きます。
 
 1. 歯車アイコンをクリックします。
 
-   各タイプのビジュアライゼーションには、カスタマイズ可能な独自の設定があります。 使用可能な設定について詳しくは、 [設定](#settings).
+   ビジュアライゼーションの各タイプには、カスタマイズ可能な独自の設定があります。使用可能な設定について詳しくは、[設定](#settings)を参照してください。
 
 ### 作成するすべてのビジュアライゼーションのビジュアライゼーション設定をカスタマイズ
 
-作成するすべてのビジュアライゼーションの設定をカスタマイズできます。 詳しくは、 [ユーザーの環境設定](/help/analysis-workspace/user-preferences.md).
+作成するすべてのビジュアライゼーションの設定をカスタマイズできます。詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md)を参照してください。
 
 ## 設定 {#settings}
 
