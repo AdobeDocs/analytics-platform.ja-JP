@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1537'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,14 +54,14 @@ ht-degree: 98%
 | --- | --- |
 | オーディエンスの公開（セグメントの公開） | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics Classifications Source Connector を使用して Experience Platform および CJA にインポートできます。ルックアップデータセットは AEP に直接アップロードして、CJA で使用することもできます。 |
-| 分類ルールビルダー | CJA で[部分文字列](/help/data-views/component-settings/substring.md)を使用したサポート ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
+| 分類ルールビルダー | CJA で[部分文字列](/help/data-views/component-settings/substring.md)を使用したサポートルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
-| IP の不明化 | Analytics ソースコネクタを使用している CJA の顧客が Adobe Analytics から CJA にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、CJA データを通じて送られます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用する CJA の顧客がデータを Platform および CJA に直接入力する場合：Platform のデータ収集に関するデータの準備を使用し、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
+| IP の不明化 | Analytics ソースコネクタを使用している CJA の顧客が Adobe Analytics から CJA にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、CJA データを通じて送られます。必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Adobe Experience Platform Web SDK を使用する CJA の顧客がデータを Platform および CJA に直接入力する場合：Platform のデータ収集に関するデータの準備を使用し、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
 | 新規セッションとリピートセッションレポート | 以前は、訪問回数ディメンションを使用して達成されていました。新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)でサポートされています。 |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。CJA では、お客様は好きな数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、CJA のユーザー間でのみサポートされます。CJA と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
@@ -77,7 +77,7 @@ ht-degree: 98%
 | 機能 | メモ |
 | --- | --- |
 | マーケティングチャネル | マーケティングチャネルのデータは、Analytics ソースコネクタを介して CJA に渡されます。従来の Adobe Analytics でも、引き続きマーケティングチャネルのルールを設定する必要があり、一部のルールはサポートされません。詳しくは、[CJA マーケティングチャネルのドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja#cja-usecases)を参照してください。さらに、WebSDK 実装の場合、プラグインはクライアントサイドのマーケティングチャネルを定義するために使用できます。今後、レポート時間マーケティングチャネル処理ルールのサポートが予定されています。 |
-| クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。 グラフベースのステッチは、まだサポートされていませんが、予定されています。 [Cross-Channel Analytics](/help/cca/overview.md)を参照してください。 |
+| クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。グラフベースのステッチは、まだサポートされていませんが、今後予定されています。[クロスチャネル分析](/help/cca/overview.md)を参照してください。 |
 | ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または CJA では実行されません。 |
 | デバイス、ブラウザー、リファラー、技術の各ディメンション | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットでサポートされます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。<p>Adobe ソースコネクタを使用して Adobe Analytics から CJA にデータを入力せず、代わりに Experience Platform Web SDK のデータ収集を使用する場合、デバイスルックアップに基づくデバイスとディメンションは、現在、サポートされていません。将来サポートされる予定です。 |
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
