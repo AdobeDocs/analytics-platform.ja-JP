@@ -9,15 +9,17 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 7ee35a3d1e5b4335d87ac3649585a9a4d079bdf5
+source-git-commit: f1e8c79aeaa11fe2ee64a466115014c80c28606a
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '856'
 ht-degree: 95%
 
 ---
 
 
 # Customer Journey Analytics ガイド {#using}
+
++ [Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
