@@ -2,10 +2,10 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
+source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 70%
+source-wordcount: '1430'
+ht-degree: 68%
 
 ---
 
@@ -84,14 +84,13 @@ ht-degree: 70%
 
 オーディエンス公開の前後のいくつかの時点で、待ち時間が発生する可能性があります。 待ち時間の概要を以下に示します。
 
-![](assets/latency-diagram.png)
-
 | 待ち時間 | 待ち時間 |
 | --- | --- |
 | データレイクへのデータ取り込み | 最大 30 分 |
 | データのExperience Platformから CJA への取り込み | 最大 60 分 |
-| リアルタイム顧客プロファイルへのオーディエンス公開 | 5 分未満（オーディエンスサイズによる） |
+| オーディエンスをリアルタイム顧客プロファイルに公開する（ストリーミングセグメントの自動作成を含む）。また、セグメントがデータを受け取る準備ができる状態になることも含む )。 | 約 60 分 |
 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の遅延）</li><li>4 時間ごと、日別、週別、月別に更新します（遅延は更新率と連携します）。 |
+| AEP での宛先の作成：Adobe Targetでの新しいセグメントのアクティブ化 | 現在、オーディエンスの更新間隔とセグメント評価タイプに応じて、これには最大 24 時間かかる場合があります |
 
 ## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
 
