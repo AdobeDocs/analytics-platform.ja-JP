@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1313'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 
 例えば、データビューの含める／除外する機能を使用して、50 ドル以上の売り上げをもたらした製品にのみ焦点を当てます。そのため、1 件の注文に 50 ドルの製品購入と 25 ドルの製品購入が含まれる場合、注文全体ではなく、25 ドルの製品購入のみを除外します。
 
-1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
+1. データビュー「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、「[!UICONTROL 売上高]」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 1. 指標を選択し、右側で次の項目を設定します。
 a.「[!UICONTROL 形式]」で、「[!UICONTROL 通貨]」を選択します。
 b.「[!UICONTROL 通貨]」で、「USD」を選択します。
@@ -99,9 +99,9 @@ f. 値として「50」を指定します。
 
 * [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには、1) [!UICONTROL 新規]と 2) [!UICONTROL 再来訪]の 2 つの値があります。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。新規セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
+* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional)。新規セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
 
-* [再来訪セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) 再来訪セッション指標は、ユーザーの初回セッションではなかったセッション数です。-->
+* [再来訪セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) 再来訪セッション指標は、ユーザーの初回セッションではなかったセッション数です。-->
 
 これらのコンポーネントにアクセスする手順は次のとおりです。
 
@@ -123,7 +123,7 @@ Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!
 
 * 日時形式で「**[!UICONTROL 分単位]**」を「**[!UICONTROL 時:分]**」の形式で選択した場合、20:20 と出力されます。
 
-現在、1900 年 1 月 1 日以降（1970 年 1 月 1 日を除く）および 2000 年 1 月 1 日以降の日時値をサポートしています。:00:00.
+現在、1900年1月1日以降（1970年1月1日を除く）および 2000年1月1日 00:00:00 以降の日時値をサポートしています。
 
 ### 日付と日時の使用例
 
