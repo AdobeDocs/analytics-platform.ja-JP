@@ -1,71 +1,71 @@
 ---
 title: データ取り込みの概要
-description: データをCustomer Journey Analyticsに取り込む様々な方法について
+description: Customer Journey Analytics にデータを取り込む様々な方法について
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '634'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # データ取り込みの概要
 
-データをCustomer Journey Analyticsに取り込む際には、様々なオプションがあります。 従来のAdobe Analyticsデータを移動することを想定しているものもあれば、Adobe Experience Platformに取り込まれたデータを使用することを想定しているものもあります。
+Customer Journey Analytics へのデータの取り込みには、様々なオプションがあります。従来の Adobe Analytics データを移動することを想定しているものもあれば、Adobe Experience Platform に取り込んだデータを使用することを想定しているものもあります。
 
 >[!IMPORTANT]
 >
->すべてのシナリオで、 _use_ Customer Journey Analyticsは _取得済み_ Adobe Experience Platform
+>すべてのシナリオにおいて、Customer Journey Analytics で&#x200B;_使用_&#x200B;するデータは、実際には Adobe Experience Platform で&#x200B;_取り込んだ_&#x200B;データになります。
 
 
-前述のCustomer Journey Analytics・アーキテクチャの概要を [概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja):
+[概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja)で前述の、大まかな Customer Journey Analytics アーキテクチャを参照してください。
 
 ![Customer Journey Analytics](./assets/cja-architecture.png)
 
-上記のアーキテクチャのデータセットは、次の様々なソースから作成できます。
+上記のアーキテクチャのデータセットのソースには、次のようにさまざまなものがあります。
 
 - バッチデータ
 
 - ストリーミングデータ
 
-- 現在のAdobe Analyticsデプロイメントのデータ
+- 現在の Adobe Analytics デプロイメントのデータ
 
-- Adobe Experience Platform Web/Mobile SDK を使用して Web サイトやモバイルアプリを追跡したデータ、または
+- Adobe Experience Platform Web / Mobile SDK を使用して web サイトやモバイルアプリを追跡したデータ
 
-- Adobeがソースコネクタを提供するサードパーティのデータプロバイダーからのデータ。
+- アドビがソースコネクタを提供するサードパーティのデータプロバイダーからのデータ
 
-多くのデータセットを持つことができます
+また、これらのデータセットを多数持つことができます。
 
 ドキュメントのこの節では、様々なシナリオに関するクイックスタートガイドを提供します。
 
-## 従来のAdobe Analyticsからのデータの取り込みと使用
+## 従来の Adobe Analytics からのデータの取り込みと使用
 
-既にAdobe Analyticsがデプロイ済みで、このデータをAdobe Experience Platformで取り込み、Customer Journey Analyticsの他のチャネルやデータソースからのデータを使用、組み合わせ、分析する場合。
+既に Adobe Analytics をデプロイしており、このデータを Adobe Experience Platform で取り込み、Customer Journey Analytics で使用したり、他のチャネルやデータソースからのデータと組み合わせて分析したりします。
 
-詳しくは、 [従来のAdobe Analyticsからのデータの取り込みと使用](./analytics.md) を参照してください。
+詳しくは、[従来の Adobe Analytics からのデータの取り込みと使用](./analytics.md)を参照してください。
 
-## Adobe Experience Platform Web SDK と Edge Network を使用したデータの取得と使用
+## Adobe Experience Platform Web SDK と Edge Network を介したデータの取り込みと使用
 
-Adobeテクノロジーを使用して Web サイトを分析し、潜在的に別のソリューションから移行するか、訪問者の行動の追跡を開始したい。 Adobe Experience Platform SDK と Edge ネットワークを使用してAdobeを取り込む実装に関する、データのベストプラクティスに従う必要があります。 次に、取り込んだデータを、Customer Journey Analytics内の他のチャネルやデータソースからのデータと組み合わせて、使用し、分析できます。
+アドビのテクノロジーを使用して web サイトを分析し、潜在的に別のソリューションから移行するか、訪問者の行動の追跡を開始します。実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
-詳しくは、 [Adobe Experience Platform Web SDK と Edge Network を使用したデータの取得と使用](./aepwebsdk.md) を参照してください。
+詳しくは、[Adobe Experience Platform Web SDK と Edge Network を使用したデータの取り込みと使用](./aepwebsdk.md)を参照してください。
 
 ## バッチデータの取り込みと使用
 
-顧客の行動をより深く理解し、顧客のインタラクションを分析するのに役立つ詳細を提供する、関連するバッチデータを使用できます。 このようなバッチデータの例としては、CSV、JSON、Parquet 形式のフラットファイル、CRM システム、ロイヤリティーアプリケーション、またはAdobeが現在ソースコネクタを提供していないその他のソリューションがあります。 このバッチデータをAdobe Experience Platformに取り込むと、Customer Journey Analyticsで他のチャネルやデータソースのデータを使用し、組み合わせて、分析できます。
+顧客の行動をより深く理解し、顧客のインタラクションを分析するのに役立つ詳細を提供する、関連するバッチデータを使用できます。このようなバッチデータの例としては、CRM システム、ロイヤルティアプリケーション、またはアドビが現在ソースコネクタを提供していないその他のソリューションからの、CSV、JSON、Parquet 形式のフラットファイルがあります。このバッチデータを Adobe Experience Platform に取り込むと、Customer Journey Analytics で他のチャネルやデータソースのデータを使用し、組み合わせて、分析できます。
 
-詳しくは、 [バッチデータの取り込みと使用](./batch.md) を参照してください。
+詳しくは、[バッチデータの取り込みと使用](./batch.md)を参照してください。
 
 ## ストリーミングデータの取り込みと使用
 
-CRM システム、ERP システム、またはその他のソースなど、顧客の行動をより深く理解し、顧客とのやり取りを分析するのに役立つ詳細を提供する関連データソースがあります。 このデータソースは、HTTP またはパブリッククラウドのストリーミングインフラストラクチャ経由で通信できますが、Adobeが現在ソースコネクタを提供していない場合に使用します。 このストリーミングデータをリアルタイムでAdobe Experience Platformに取り込むと、Customer Journey Analytics内の他のチャネルやデータソースのデータを使用し、組み合わせて、分析できます。
+CRM システム、ERP システム、またはその他のソースなど、顧客の行動をより深く理解し、顧客とのやり取りを分析するのに役立つ詳細を提供する関連データソースがあります。このデータソースは、アドビが現在ソースコネクタを提供していない、HTTP またはパブリッククラウドのストリーミングインフラストラクチャ経由で通信できます。このストリーミングデータをリアルタイムで Adobe Experience Platform に取り込むと、Customer Journey Analytics で他のチャネルやデータソースのデータを使用し、組み合わせて、分析できます。
 
-詳しくは、 [ストリーミングデータの取り込みと使用](./streaming.md) を参照してください。
+詳しくは、[ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
 
 ## ソースコネクタを使用したデータの取り込みと使用
 
-ソースコネクタでサポートされているソースからデータを取得できます。 ソースコネクタは、Adobe、ファーストパーティおよびサードパーティのアプリケーションからAdobe Experience Platformにデータを取り込むための設定が可能です。 詳しくは、 [ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) を参照してください。 ソースコネクタを使用すると、ソースからAdobe Experience Platformに簡単にデータを取り込み、を使用して、他のチャネルやCustomer Journey Analytics内のデータソースからのデータと組み合わせて分析できます。
+ソースコネクタでサポートされているソースからデータを取得できます。ソースコネクタは、アドビ、ファーストパーティおよびサードパーティのアプリケーションから Adobe Experience Platform にデータを取り込むための設定が可能です。詳しくは、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)を参照してください。ソースコネクタを使用すると、ソースから Adobe Experience Platform へと簡単にデータを取り込み、Customer Journey Analytics で使用したり、他のチャネルやデータソースのデータと組み合わせて分析したりできます。
 
-詳しくは、 [ソースコネクタを使用したデータの取り込みと使用](./sources.md) を参照してください。
+詳しくは、[ソースコネクタを使用したデータの取り込みと使用](./sources.md)を参照してください。
