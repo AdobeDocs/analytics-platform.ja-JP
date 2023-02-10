@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,11 +39,11 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 
 オーディエンスを CJA に取り込む前に、AEP データセットにエクスポートする必要があります。これは、Segmentation API（特に[書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=ja)）を使用してのみ実行できます。
 
-任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイル結合 AEP データセットに取り込むことができます。オーディエンスの様々な属性／イベントをエクスポートできますが、活用する CJA 接続で使用される人物 ID フィールドに一致する特定のプロファイル ID フィールドのみをエクスポートする必要があります（後述の手順 5 を参照）。
+任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイル結合 AEP データセットに取り込むことができます。オーディエンスの様々な属性／イベントをエクスポートできますが、活用する CJA 接続で使用されるユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみをエクスポートする必要があります（後述の手順 5 を参照）。
 
 ## 手順 4：エクスポート出力の編集
 
-書き出しジョブの結果は、CJA に取り込むために、別のプロファイルデータセットに変換する必要があります。この変換は、[AEP クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)やその他の任意の変換ツールで行うことができます。CJA でレポートを作成するために必要なのは、（CJA の人物 ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
+書き出しジョブの結果は、CJA に取り込むために、別のプロファイルデータセットに変換する必要があります。この変換は、[AEP クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)やその他の任意の変換ツールで行うことができます。CJA でレポートを作成するために必要なのは、（CJA のユーザー ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
 
 ただし、標準的な書き出しジョブには、より多くのデータが含まれているので、この出力を編集して余分なデータを削除したり、いくつかのデータを移動させたりする必要があります。また、先にスキーマ／データセットを作成してから、変換したデータを追加する必要があります。
 
@@ -88,6 +88,6 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 * このプロセスは、定期的に実行して、CJA 内でオーディエンスデータが常に更新されるようにする必要があります。
 * 単一の CJA 接続内で複数のオーディエンスを読み込むことができます。これは、プロセスがさらに複雑になりますが、可能です。これを機能させるには、前述のプロセスに少し修正を加える必要があります。
    1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
-   1. CJA は、プロファイルデータセットの配列/オブジェクト配列をサポートします。 の使用 [オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) audienceMembershipId または audienceMembershipIdName が最適なオプションです。
+   1. CJA は、プロファイルデータセットの配列/オブジェクト配列をサポートします。[オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=ja) audienceMembershipId または audienceMembershipIdName の使用が最適なオプションです。
    1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。メモ：現在、配列の値は 10 個までという制限があります。
    1. CJA Workspace 内で、この新しいディメンション `audienceMembershipIds` についてレポートできるようになりました。
