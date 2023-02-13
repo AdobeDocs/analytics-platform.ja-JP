@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: ht
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,11 +22,11 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 1. **共有／ファイルを今すぐ送信**&#x200B;をクリックします。
 1. ファイルタイプ（CSV または PDF）を指定します。
-1. （オプション）電子メールに含まれる、受信ファイルについての説明を追加します。
+1. （任意）電子メールに含まれる、受信ファイルについての説明を追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。
 1. （Healthcare Shield のお客様のみ）パスワードを入力します。予定レポートのパスワード保護の節を参照してください。
 1. 「**今すぐ送信**」をクリックします。
-1. （オプション）「**スケジュールオプションを表示する** 」をクリックして、配信スケジュールを指定します。
+1. （任意）「**スケジュールオプションを表示する** 」をクリックして、配信スケジュールを指定します。
 
 ![ファイルを今すぐ送信](assets/send-file-no-scheduling-options.JPG)
 
@@ -36,7 +36,7 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 1. **共有／ファイルをスケジュールに従って送信**&#x200B;をクリックします。
 1. ファイルタイプ（CSV または PDF）を指定します。
-1. （オプション）電子メールに含まれる、受信ファイルについての説明を追加します。
+1. （任意）電子メールに含まれる、受信ファイルについての説明を追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。
 1. （Healthcare Shield のお客様のみ）パスワードを入力します。予定レポートのパスワード保護の節を参照してください。
 1. 入力時に「開始」と「終了」を変更して、スケジュールを配信する範囲を指定します。終了日は、スケジュールの作成日または変更日から 1 年以内に設定する必要があります。
@@ -68,7 +68,7 @@ Workspace の&#x200B;**共有**&#x200B;メニューから、選択した受信�
 
 >[!NOTE]
 >
->スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=ja) アドオン製品を購入された CJA のお客様のみに表示されます。
+>スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) アドオン製品を購入された CJA のお客様のみに表示されます。
 
 アドビは、スケジュールされたプロジェクトを .pdf 形式と .csv 形式のどちらで送信した場合でも、パスワードを使用して暗号化します。
 

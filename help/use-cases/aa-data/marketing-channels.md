@@ -4,10 +4,10 @@ description: Analytics ソースコネクタを使用して、マーケティン
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1019'
-ht-degree: 100%
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 ## 前提条件
 
 * [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を使用して、事前にレポートスイートデータを Adobe Experience Platform に読み込んでおく必要があります。他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
-* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。従来の Analytics コンポーネントガイドの「[マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html?lang=ja)」を参照してください。
+* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。従来の Analytics コンポーネントガイドの「[マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=en)」を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
 

@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 86%
+source-wordcount: '1412'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年7月 | [メディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja)に関するドキュメント。 |
 | 2022年7月 | [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)のレポートドキュメント。 |
 | **2022年6月** |  |
-| 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=ja)に関する新しい記事 |
+| 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html)に関する新しい記事 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事。 |
 | 2022年6月 | [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)に関する新しい記事。 |
 | 2022年6月 | [Adobe Analytics と CJA にまたがるレポート機能のデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)に関する新しい記事。 |
@@ -84,7 +84,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年3月 | [ワークスペースでの注釈](/help/components/annotations/overview.md)に関するドキュメント（新規）。 |
 | 2022年3月 | [接続サイズの予測](/help/getting-started/cja-faq.md)に関するコンテンツの大幅な更新。 |
 | **2022年2月** |  |
-| 2022年2月 | Adobe Analytics から CJA に移行する管理者を対象とした新しいガイド：[Adobe Analytics から Customer Journey Analytics への進化](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=ja) |
+| 2022年2月 | Adobe Analytics から CJA に移行する管理者を対象とした新しいガイド：[Adobe Analytics から Customer Journey Analytics への進化](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
 | **2022年1月** |  |
 | 2022年1月 | [CJA でのバインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)の新しいユースケース |
 | 2022年1月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#allocation-settings)に関する新機能のドキュメントを追加しました |
