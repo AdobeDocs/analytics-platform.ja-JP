@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 85%
+source-wordcount: '1410'
+ht-degree: 86%
 
 ---
 
@@ -20,15 +20,16 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年2月** |  |
+| Audiences ドキュメントの更新 | に関する新しい節 [遅延に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Audiences ドキュメントの更新 | オーディエンスを作成した後、AdobeはExperience Platformを作成します [新しい CJA オーディエンスごとのストリーミングセグメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Workspace のカレンダーと日付範囲 | 相対的な日付範囲、数式の計算の更新、カレンダー UI の変更について説明する内容を更新しました。 詳しくは、 [相対パネルの日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | モバイルスコアカード | 比較日付範囲を表示および非表示にする方法について説明する新しいドキュメントの節。 詳しくは、 [比較日付範囲を表示](/help/mobile-app/create-scorecard.md#show-comparison-dates) （CJA 内） |
 | **2023年1月** |  |
 | テーブルのフィルターと並べ替え | の内容（手順の追加や使用可能なオプションの説明を含む）を更新しました。 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 記事。 この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |
 | データ取得のクイックスタートガイド | 方法に関する新しいドキュメントの節 [データの取り込みと使用](/help/data-ingestion/data-ingestion.md) （CJA 内） |
-| Workspace フォルダ | 専用のページ [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Workspace ユーザー環境設定 | ユーザーの環境設定の多くが、 [環境設定](/help/analysis-workspace/user-preferences.md). |
-| Workspace プロジェクト用に自動保存 | 内の自動保存機能を含めるようコンテンツを更新しました [プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Workspace フォルダ | [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)用の専用ページ。 |
+| Workspace ユーザー環境設定 | 多くの追加のユーザー環境設定は、現在は、[環境設定](/help/analysis-workspace/user-preferences.md)で使用できます。 |
+| Workspace プロジェクト用に自動保存 | コンテンツが更新され、[プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md)に自動保存機能を含めるようにしました。 |
 | ランディングページ | 新しいランディングページの更新 [ランディングページ](/help/getting-started/landing.md). |
 | ワークブックのスケジュール設定 | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
 | プロファイルと参照データセットのオブジェクト配列のサポート | 更新済み [オブジェクトの配列の使用](/help/use-cases/object-arrays.md) および [AEP オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md) を使用して、プロファイルと参照のデータセットに対するオブジェクト配列のサポートを反映させます。 |
