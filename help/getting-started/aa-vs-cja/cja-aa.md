@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1537'
-ht-degree: 100%
+source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+workflow-type: tm+mt
+source-wordcount: '1527'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 100%
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて CJA に送られます。デジタルデータ収集に AEP Web SDK を利用する実装など、Analytics ソースコネクタを使用しない実装では、自動的に実行される完全な地理的検索は行われません。国と州はグローバルにサポートされていますが、市区町村と郵便番号はサポートされていません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 | 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
-| A4T | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスでの A4T のわかりやすい名前のサポートが予定されています。 |
+| A4T | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスでの A4T 対応名のサポートが予定されています。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 | データフィード | AEP の宛先を介したサポートが予定されています。 |
 | トランザクション ID データソース | サポートが予定されています。 |
 | AA から CJA へのプロジェクト／フィルター／計算指標の移行 | サポートが予定されています。 |
-| 概要レベルデータソース | サポートが予定されています。 |
+| 概要レベルのデータソース | サポートが予定されています。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -112,7 +112,6 @@ ht-degree: 100%
 | --- | --- |
 | Activity Map | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
-| 概要データソース | まだサポートの予定はありません。 |
 
 {style=&quot;table-layout:auto&quot;}
 
