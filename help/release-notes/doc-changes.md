@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 84%
+source-wordcount: '1430'
+ht-degree: 83%
 
 ---
 
@@ -20,6 +20,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年2月** |  |
+| CJA と BI ソリューションの比較 | の新しいドキュメント [比較](../getting-started/cja-vs-bi.md) を使用します。 |
 | Audiences ドキュメントの更新 | に関する新しい節 [遅延に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Audiences ドキュメントの更新 | オーディエンスを作成した後、AdobeはExperience Platformを作成します [新しい CJA オーディエンスごとのストリーミングセグメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Workspace のカレンダーと日付範囲 | 相対的な日付範囲、数式の計算の更新、カレンダー UI の変更について説明する内容を更新しました。 詳しくは、 [相対パネルの日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates). |

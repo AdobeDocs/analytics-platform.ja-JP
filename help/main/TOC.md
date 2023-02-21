@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 98%
+source-wordcount: '861'
+ht-degree: 97%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 98%
    + [クイックスタートガイド](../getting-started/cja-getting-started.md)
    + [ランディングページ](../getting-started/landing.md)
    + [よくある質問](../getting-started/cja-faq.md)
+   + [CJA と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
 
 + Customer Journey AnalyticsとAdobe Analytics {#compare-aa-cja}
    + [Adobe Analyticsからの変化 ](../getting-started/aa-to-cja.md)
@@ -94,7 +95,7 @@ ht-degree: 98%
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [フォルダーの削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
+         + [フォルダーを削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [プロジェクトの追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [新しいプロジェクトの保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
