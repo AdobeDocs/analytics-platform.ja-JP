@@ -4,9 +4,9 @@ title: アトリビューション AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
-workflow-type: ht
-source-wordcount: '889'
+source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+workflow-type: tm+mt
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -74,11 +74,7 @@ CJA ワークスペースプロジェクトでは、「AAI 注文」などの指
 
 ![AAI ディメンション](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->この方法では、これらのディメンションと指標には、ネイティブで名前が付けられていません。これらは「わかりやすい名前」です。[Attribution AI の命名規則](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=ja#attribution-ai-output-data)は、スキーマパスに従います。CJA では、長い AAI スキーマのパス名を短く、よりわかりやすい名前（ディメンション/指標）に変更することをお勧めします。これを行うには、**[!UICONTROL データビュー]**／**[!UICONTROL データビューを編集]**／「**[!UICONTROL コンポーネント]**」タブ／**[!UICONTROL スキーマフィールド]**&#x200B;に移動し、スキーマフィールドをクリックして、**[!UICONTROL コンポーネント名]**&#x200B;を開きます。
 
-![ディメンション名の変更](assets/change-name.png)
 
 **注文と影響スコアおよび増分スコア**
 
