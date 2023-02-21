@@ -4,10 +4,10 @@ title: アトリビューション AI と CJA の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,15 @@ CJA ワークスペースプロジェクトでは、「AAI 注文」などの指
 
 ![AAI ディメンション](assets/aai-dims.png)
 
+AAI での生のスコア出力にはネストされたスキーマがあり、フィールドへのパスには、テーブルやビジュアライゼーションのスペースのほとんどを占めるのに十分な長さが含まれます。 くつろいで [!UICONTROL 表示名] は、次のルールに従って、CJA で自動的に生成および活用されます。
 
+* すべてのフィールドには「AAI」プレフィックスが付きます
+* タッチポイントフィールドの場合：
+   * スコア XDM の一部であるフィールドの場合、CJA では次のように表示されます。 `AAI T {field name}`
+   * passThrough 列として含まれるフィールドは、CJA に次のように表示されます。 `AAI T PT {field name}`
+* コンバージョンフィールドの場合：
+   * スコア XDM の一部であるフィールドの場合、CJA では次のように表示されます。 `AAI C {field name}`
+   * passThrough 列として含まれるフィールドは、CJA に次のように表示されます。 `AAI C PT {field name}`
 
 **注文と影響スコアおよび増分スコア**
 
