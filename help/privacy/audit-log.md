@@ -3,9 +3,9 @@ title: 監査ログ
 description: CJA 監査ログの表示方法と管理方法について説明します。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ CJA で、**[!UICONTROL ツール]**／**[!UICONTROL 監査ログ]**&#x200B;に�
 | アクション名 | 次に、実行可能なアクションのリストを示します。 <ul><li>API_Request</li><li>承認</li><li>作成</li><li>編集</li><li>書き出し</li><li>Login_failed</li><li>Login_successful</li><li>ログアウト</li><li>Org_change</li><li>更新</li><li>共有</li><li>転送</li><li>承認取消</li><li>共有しない</li></ul> |
 | 説明 | アクション、コンポーネントタイプ（ID を含む）およびその他の値の概要。 |
 | ユーザー名 | アクションを実行するユーザー。 |
-| コンポーネントの種類 | 使用可能なコンポーネントタイプは次のとおりです。 <ul><li>注釈</li><li>オーディエンス</li><li>計算指標</li><li>接続</li><li>Data_Group</li><li>Data_View （このコンポーネントタイプには、ディメンションと指標が含まれます）</li><li>Feature_Access</li><li>フィルター</li><li>IMS_Org</li><li>モバイル</li><li>プロジェクト</li><li>レポート</li><li>Scheduled_Project</li><li>ユーザー</li><li>User_Group</li></ul> |
+| コンポーネントの種類 | 使用可能なコンポーネントタイプは次のとおりです。 <ul><li>注釈</li><li>オーディエンス</li><li>計算指標</li><li>接続</li><li>Data_Group</li><li>Data_View（このコンポーネントタイプにはディメンションと指標が含まれます）</li><li>Feature_Access</li><li>フィルター</li><li>IMS_Org</li><li>モバイル</li><li>プロジェクト</li><li>レポート</li><li>Scheduled_Project</li><li>ユーザー</li><li>User_Group</li></ul> |
 | IMS 組織 ID | 初めてAdobe Experience Cloud にログインしたときにインスタンスに割り当てられる一意の ID です。「xxx@AdobeOrg」の形式である必要があります。 |
 | ユーザー ID | このアクションを実行したユーザーを識別する一意の ID。 |
 | 作成日 | このアクションが実行されたとき。 |
