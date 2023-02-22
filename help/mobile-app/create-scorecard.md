@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -106,15 +106,15 @@ Adobe Analytics のスコアカードでは、次のように、エグゼクテ�
 
 これにより、新しい日付範囲コンポーネントを作成して保存できる日付範囲ビルダーに移動します。
 
-### 比較日付範囲を表示または非表示にする {#show-comparison-dates}
+### 比較日付範囲の表示／非表示の切り替え {#show-comparison-dates}
 
-比較日付範囲を含めるには、 **比較日を含める** 設定。
+比較日付範囲を含めるには、「**比較日付を含める**」設定を切り替えます。
 
-![比較日付を含める](assets/include-comparison-dates.png)
+![「比較日付を含める」](assets/include-comparison-dates.png)
 
-設定は次のとおりです。 *オン* デフォルトでは。 切り替え *オフ* 比較日を表示しない場合。
+この設定は、デフォルトで&#x200B;*オン*&#x200B;になっています。比較日付を表示しない場合は、*オフ*&#x200B;に切り替えます。
 
-![比較日の設定が選択解除されました](assets/no-comparison-dates.png)
+![比較日付の設定がオフになっている様子](assets/no-comparison-dates.png)
 
 ## ビジュアライゼーションの適用 {#viz}
 
