@@ -1,18 +1,18 @@
 ---
-title: Adobe Analyticsからの変化
+title: Adobe Analytics からの進化
 description: Adobe Analytics データを Customer Journey Analytics データに変換する手順
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1436'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Adobe Analyticsからの変化
+# Adobe Analytics からの進化
 
 Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。この記事は管理者を対象として書かれています。
 
@@ -30,7 +30,7 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
 
-Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために、Cross-Channel Analytics（以前の「フィールドベースのステッチング」）を使用できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)
+Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために、クロスチャネル分析（以前の「フィールドベースのステッチング」）を使用できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)
 
 ### 2. 変数の整合 {#variables}
 
@@ -58,7 +58,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 ### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
 
-Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用について詳しくは、 [Adobe Analyticsからデータを取り込み、CJA で使用する](../data-ingestion/analytics.md). 関連トピック [UI でのAdobe Analyticsソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
+Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用については、[Adobe Analytics からのデータの取り込みと CJA での使用](../data-ingestion/analytics.md)方法に関するクイックスタートガイドを参照してください。詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
 
 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集が進化するにつれて、Adobe Experience Platform Edge Network を使用して [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) か [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) のいずれかに移行する可能性があります。SDK の一般的な実装ではデータが Adobe Analytics に送信されますが、Adobe Experience Platform にデータを直接送信する機会も新たに現れています。その後、Adobe Analytics に送信するデータも維持しながら、Customer Journey Analytics に取り込むことができます。
 
@@ -79,7 +79,7 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 * ボットフィルタリング
 * 地域、ドメイン、デバイスのルックアップ
 * ストリーミングメディア測定
-* Livestream または Livestreamトリガー
+* ライブストリームまたはライブストリームトリガー
 
 ## 重要な違いに対する準備
 
@@ -107,7 +107,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 * [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
-* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=jp)
+* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja)
 
 ### その他の考慮事項
 
