@@ -1,13 +1,13 @@
 ---
-title: Adobe Journey Optimizer と Customer Journey Analytics の統合
+title: Adobe Journey Optimizer(AJO) とCustomer Journey Analytics(CJA) の統合
 description: AJO で生成したデータを取り込み、CJA 内で Analysis Workspace を使用して分析します。
-source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
+source-git-commit: 3a4dbe9a87f8e195a4daf78423d29d73f2be0f83
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 53%
 
 ---
-
 
 # Adobe Journey Optimizer と Customer Journey Analytics の統合
 
@@ -27,35 +27,56 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 接続を作成したら、1 つ以上の[データビュー](/help/data-views/create-dataview.md)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
-データビューで次の指標を作成すると、Journey Optimizer の同様の指標とほぼ同等にすることができます。ディメンションと指標をカスタマイズする方法について詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
+>!![NOTE]
+AJO と CJA のデータの相違は、通常 1～2%未満です。 過去 2 時間以内に収集されたデータに大きな相違が生じる可能性があります。 処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
-| 指標 | 説明 | データビュー設定 |
+### データビューでのディメンションの設定
+
+データビューで次のディメンションを作成して、Journey Optimizerで類似のディメンションとほぼ同等にすることができます。 詳しくは、 [コンポーネント設定](/help/data-views/component-settings/overview.md) （データビューマネージャー）を参照してください。
+
+| ディメンション | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- |
-| バウンス | バウンスしたメッセージの数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：いずれかの条件を満たす場合<br>次に等しい：`bounce`<br>次に等しい：`denylist` |
-| エラー | エラーが発生したメッセージの数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `error` |
-| 除外 | 除外されたメッセージの数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `exclude` |
-| 登録解除 | 登録解除の数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageInteraction.interactionType` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `unsubscribe` |
-| クリック数 | メッセージ内のクリック数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageInteraction.interactionType` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `click` |
-| 開封数 | 開封済みメッセージの数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageInteraction.interactionType` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `open` |
-| スパム報告件数 | スパム報告の件数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageInteraction.interactionType` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `spam_complaint` |
-| 正常に送信されたメッセージ | 正常に送信されたメッセージの数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `sent` |
-| 同期の失敗 | 同期に失敗したメッセージの合計数 | 次の設定でスキーマ文字列要素 `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` を使用します。<br>コンポーネントタイプ：指標<br>除外値を含める：次に等しい `sync` |
+| ジャーニー名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | コンポーネントタイプ：Dimension |
+| ジャーニー名とバージョン | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | コンポーネントタイプ：Dimension |
+| ジャーニーノード名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | コンポーネントタイプ：Dimension |
+| ジャーニーノードタイプ | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | コンポーネントタイプ：Dimension |
+| キャンペーン名 | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | コンポーネントタイプ：Dimension |
+| チャネル | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | コンポーネントタイプ：Dimension |
+| プッシュタイトル | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | コンポーネントタイプ：Dimension |
+| 電子メールの件名 | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | コンポーネントタイプ：Dimension |
+| リンクラベル | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | コンポーネントタイプ：Dimension |
+| 実験名 | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | コンポーネントタイプ：Dimension<br>コンテキストラベル：実験 |
+| 治療名 | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | コンポーネントタイプ：Dimension<br>コンテキストラベル：実験バリアント |
+| E メール配信失敗の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | コンポーネントタイプ：Dimension |
+| メール配信の除外理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | コンポーネントタイプ：Dimension |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Journey Optimizer 指標を使用して計算指標を設定
+### データビューでの指標の設定
+
+データビューで次の指標を作成すると、Journey Optimizer の同様の指標とほぼ同等にすることができます。詳しくは、 [コンポーネント設定](/help/data-views/component-settings/overview.md) （データ表示マネージャー）を参照してください。
+
+| 指標 | 説明 | スキーマ要素 | コンポーネント設定 |
+| --- | --- | --- | --- |
+| バウンス | バウンスしたメッセージの数（配信後の即時バウンスとバウンスの両方を含む） | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>値を含める：いずれかの条件を満たす場合<br>次と等しい： `bounce`、次と等しい： `denylist` |
+| 配信後のバウンス | 一部の電子メールサービスは、配信された電子メールを報告し、後でそれらをバウンスさせます。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | コンポーネントタイプ：指標<br>値を含める：次と等しい `async` |
+| 電子メールのクリック数 | メッセージ内のクリック数. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>値を含める：次と等しい `click` |
+| メール開封数 | 開封済みメッセージの数. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>値を含める：次と等しい `open` |
+| エラー | エラーが発生したメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>値を含める：次と等しい `error` |
+| 除外 | 除外されたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>値を含める：次と等しい `exclude` |
+| 送信数 | E メールプロバイダーが受け入れたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>値を含める：次と等しい `sent` |
+| スパムの苦情 | スパム報告の件数. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>値を含める：次と等しい `spam_complaint` |
+| 登録解除 | 登録解除の数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>値を含める：次と等しい `unsubscribe` |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Analysis Workspaceでの計算指標の設定
 
 Journey Optimizer データセットに必要なディメンションと指標を設定したら、[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を設定し、そのデータに関する追加のインサイトを得ることもできます。これらの計算指標は、データビューマネージャーで作成された上記の指標に基づいています。
 
 | 計算指標 | 説明 | 数式 |
 | --- | --- | --- |
-| 送信されたメッセージの合計 | 送信され、成功または失敗したメッセージの合計数 | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+| 送信済みメッセージ | 送信されたメッセージの合計数。 成功または失敗したメッセージが含まれます。 | `[Sends] + [Bounces] - [Bounces After Delivery]` |
+| メッセージ配信済み | 顧客に配信された電子メールの数。 | `[Sends] - [Bounces After Delivery]` |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Journey Optimizer と Customer Journey Analytics のレポートの相違点
-
-製品間のデータの不一致は、通常 1～2％です。製品間の不一致が大きい場合は、次の原因が考えられます。
-
-* 特に、過去 2 時間以内に収集されたデータでは、受信データの処理時間は、製品間で若干異なる場合があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
-* 計算指標「送信されたメッセージの合計」には「再試行」指標は含まれません。 「再試行」指標のデータはデータセットに含まれないことから、AJO レポートに対して、CJA レポートでは低い数字が表示される可能性があります。ただし、再試行データは、「正常に送信されたメッセージ」または「バウンス」指標に収束されます。 1 週間以上の日付範囲を使用して、製品間の「送信されたメッセージの合計」指標との不一致を軽減します。
