@@ -5,9 +5,9 @@ role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Real-time CDP と CJA の間でオーディエンスのメンバーシップカ�
 
 Real-time CDP と CJA は、現在、同じ人物の定義を共有していません。Real-time CDP は、[ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)内の情報に完全に依存して、結合されたプロファイルを作成します。
 
-CJA は、データレイク内のデータセットから識別子を抽出し、カスタムロジックを適用してデータセットをリンクする[Cross-Channel Analytics](/help/cca/overview.md)を使用するように設定できます。
+CJA は、データレイク内のデータセットから識別子を抽出し、カスタムロジックを適用してデータセットをリンクする[クロスチャネル分析](/help/cca/overview.md)を使用するように設定できます。
 
 今後、CJA は ID グラフを使用できるようになります。
 
@@ -52,4 +52,4 @@ Real-time CDP と CJA のデータセットが同じであっても、Real-time 
 
 ## データ取り込み待ち時間の違い
 
-CJA はまだリアルタイム CDP のリアルタイム機能を持っていないので、CJA レポートには、データがレポートやオーディエンス作成に使用できるようになる前の遅延が含まれます。 Real-time CDP は、待ち時間の異なる別のシステムを介してデータを処理します。
+CJA にはまだ Real-Time CDP のリアルタイム機能がないので、CJA レポートには、レポートやオーディエンス作成のためにデータが利用可能になるまでに多少の待ち時間が発生します。Real-Time CDP は、待ち時間の異なる様々なシステムを介してデータを処理します。
