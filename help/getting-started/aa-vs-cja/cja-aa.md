@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 99%
+source-wordcount: '1525'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 99%
 | --- | --- |
 | アラート | サポートが予定されています。 |
 | 貢献度分析 | サポートが予定されています。 |
-| Data Warehouse レポート（全行エクスポート） | Analysis Workspace インターフェイスからのサポートが予定されています。また、Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)でも、CJA におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
+| Data Warehouseレポート | Analysis Workspace インターフェイスからのサポートが予定されています。また、Adobe Experience Platform [[!UICONTROL クエリサービス]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)でも、CJA におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
 | デバイスグラフでの ID のステッチ | サポートが予定されています。 |
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
