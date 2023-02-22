@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analyticsアクセス制御
+title: Customer Journey Analytics のアクセス制御
 description: CJA でアクセス制御を実装する方法について説明します。
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analyticsアクセス制御
+# Customer Journey Analytics のアクセス制御
 
 Customer Journey Analytics（CJA）は、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセスです。このトピックでは、これらの役割について詳しく説明します。
 
