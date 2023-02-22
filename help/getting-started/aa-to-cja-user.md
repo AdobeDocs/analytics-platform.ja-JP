@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics ユーザー向け ユーザーガイド
-description: Adobe Analytics から Customer Journey Analytics にデータを移行する際にユーザーの観点から考慮すべき事項
+title: Adobe Analytics ユーザー向けユーザーガイド
+description: 企業が Adobe Analytics から Customer Journey Analytics にデータを移行する際にユーザーの観点から考慮すべき事項
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Adobe Analytics ユーザー向け ユーザーガイド
+# Adobe Analytics ユーザー向けユーザーガイド
 
 Customer Journey Analytics（CJA）の採用に着手すると、従来の Analytics との類似点と相違点に気がつきます。このページでは、この CJA の実装と新しいレポートワークフローに慣れるために、これらの相違点について説明します。また、新しい概念に関する追加のリソースを提供するほか、アナリストとしてのジャーニーをより簡単に成功させるための手順についても説明します。
 

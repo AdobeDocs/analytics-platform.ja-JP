@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -37,10 +37,10 @@ ht-degree: 97%
    + [よくある質問](../getting-started/cja-faq.md)
    + [CJA と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
 
-+ Customer Journey AnalyticsとAdobe Analytics {#compare-aa-cja}
-   + [Adobe Analyticsからの変化 ](../getting-started/aa-to-cja.md)
-   + [Adobe Analytics ユーザー向け ユーザーガイド](../getting-started/aa-to-cja-user.md)
-   + Adobe Analyticsとの比較 {#cja-aa-comparison}
++ Customer Journey Analytics と Adobe Analytics {#compare-aa-cja}
+   + [Adobe Analytics からの進化 ](../getting-started/aa-to-cja.md)
+   + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
+   + Adobe Analytics との比較 {#cja-aa-comparison}
       + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
@@ -51,7 +51,7 @@ ht-degree: 97%
 
 + データ取り込み {#cja-data-ingestion}
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
-   + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
+   + 取り込みと使用のクイックスタートガイド {#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [Adobe Experience Platform Web SDK および Edge ネットワーク](../data-ingestion/aepwebsdk.md)
       + [バッチデータ](../data-ingestion/batch.md)
@@ -269,7 +269,7 @@ ht-degree: 97%
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)
 
-+ クロスチャネル分析{#cca}
++ クロスチャネル分析 {#cca}
    + [クロスチャネル分析の概要](../cca/overview.md)
    + [再生の仕組み](../cca/replay.md)
    + [クロスチャネル分析に関する FAQ](../cca/faq.md)
@@ -305,13 +305,13 @@ ht-degree: 97%
       + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
    + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
-      + [レポートスイートを様々なスキーマと組み合わせる](../use-cases/aa-data/combine-report-suites.md)
+      + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
 
 + 管理 {#cja-admin}
    + [アクセス制御](../admin/cja-access-control.md)
-   + [ の使用状況の表示と管理](../admin/estimate-usage.md)
+   + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
 
 + ラボ {#labs}
@@ -319,7 +319,7 @@ ht-degree: 97%
 
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと CJA データの比較](../troubleshooting/compare.md)
-   + [Real-time CDP と CJA の間における指標とオーディエンスメンバーシップのカウントの一貫性](../troubleshooting/consistency-rcdp-cja.md)
+   + [Real-Time CDP と CJA 間の指標およびオーディエンスメンバーシップカウントの一貫性](../troubleshooting/consistency-rcdp-cja.md)
 
 + [CJA の用語集](../getting-started/cja-glossary.md)
 

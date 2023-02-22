@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -15,25 +15,25 @@ ht-degree: 83%
 
 CJA ドキュメントの開始以降に、次のアップデートが行われました。
 
-## 2023 {#23}
+## 2023年 {#23}
 
 | 機能 | 説明 |
 | --- | --- |
 | **2023年2月** |  |
 | CJA と BI ソリューションの比較 | の新しいドキュメント [比較](../getting-started/cja-vs-bi.md) を使用します。 |
 | Audiences ドキュメントの更新 | に関する新しい節 [遅延に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| Audiences ドキュメントの更新 | オーディエンスを作成した後、AdobeはExperience Platformを作成します [新しい CJA オーディエンスごとのストリーミングセグメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Workspace のカレンダーと日付範囲 | 相対的な日付範囲、数式の計算の更新、カレンダー UI の変更について説明する内容を更新しました。 詳しくは、 [相対パネルの日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates). |
-| モバイルスコアカード | 比較日付範囲を表示および非表示にする方法について説明する新しいドキュメントの節。 詳しくは、 [比較日付範囲を表示](/help/mobile-app/create-scorecard.md#show-comparison-dates) （CJA 内） |
+| Audiences ドキュメントの更新 | オーディエンスを作成すると、新しい CJA オーディエンスごとに Experience Platform [ストリーミングセグメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#after-audience-created)が作成されます。 |
+| Workspace のカレンダーと日付範囲 | 内容を更新して、相対的な日付範囲、数式計算の更新およびカレンダー UI の変更について説明しました。[パネルを基準とする相対的な日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates)を参照してください。 |
+| モバイルスコアカード | 比較日付範囲の表示／非表示を切り替える方法について説明する新しい節をドキュメントに追加しました。CJA の[比較日付範囲の表示](/help/mobile-app/create-scorecard.md#show-comparison-dates)を参照してください。 |
 | **2023年1月** |  |
-| テーブルのフィルターと並べ替え | の内容（手順の追加や使用可能なオプションの説明を含む）を更新しました。 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 記事。 この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |
-| データ取得のクイックスタートガイド | 方法に関する新しいドキュメントの節 [データの取り込みと使用](/help/data-ingestion/data-ingestion.md) （CJA 内） |
-| Workspace フォルダ | [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)用の専用ページ。 |
-| Workspace ユーザー環境設定 | 多くの追加のユーザー環境設定は、現在は、[環境設定](/help/analysis-workspace/user-preferences.md)で使用できます。 |
-| Workspace プロジェクト用に自動保存 | コンテンツが更新され、[プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md)に自動保存機能を含めるようにしました。 |
-| ランディングページ | 新しいランディングページの更新 [ランディングページ](/help/getting-started/landing.md). |
-| ワークブックのスケジュール設定 | 方法を説明する専用のページ [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) Report Builder |
-| プロファイルと参照データセットのオブジェクト配列のサポート | 更新済み [オブジェクトの配列の使用](/help/use-cases/object-arrays.md) および [AEP オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md) を使用して、プロファイルと参照のデータセットに対するオブジェクト配列のサポートを反映させます。 |
+| テーブルのフィルタリングと並べ替え | [テーブルのフィルタリングと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)に関する記事の内容を更新しました（手順の追加や使用可能なオプションの説明など）。この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |
+| データ取り込みクイックスタートガイド | CJA での[データの取り込みと使用](/help/data-ingestion/data-ingestion.md)の方法に関する新しい節をドキュメントに追加しました。 |
+| Workspace フォルダー | [フォルダー管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)の専用ページ。 |
+| Workspace ユーザー環境設定 | 多くの追加のユーザー環境設定が[環境設定](/help/analysis-workspace/user-preferences.md)で使用できるようになりました。 |
+| Workspace プロジェクトの自動保存 | 内容が更新されて、[プロジェクトの保存](/help/analysis-workspace/build-workspace-project/save-projects.md)に自動保存機能の説明が含まれるようになりました。 |
+| ランディングページ | CJA の[ランディングページ](/help/getting-started/landing.md)が更新されました。 |
+| ワークブックのスケジュール設定 | Report Builder で[ワークブックのスケジュールを設定](/help/report-builder/schedule-reportbuilder.md)する方法について説明する専用ページを追加しました。 |
+| プロファイルおよびルックアップデータセットでのオブジェクト配列のサポート | [オブジェクトの配列の使用](/help/use-cases/object-arrays.md)および [AEP オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md)を更新して、プロファイルおよびルックアップデータセットでのオブジェクト配列のサポートを反映しました。 |
 
 ## 2022 {#22}
 
