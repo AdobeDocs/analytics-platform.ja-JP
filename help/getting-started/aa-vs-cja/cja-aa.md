@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 98%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 98%
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
+| データフィード | データセットの第 1 世代のデータエクスポートは、 [AEP データアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [AEP の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). これらのオプションでは、AEP データレイクに収集または取り込まれるすべてのデータのヒット/行レベルの書き出しを提供します。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
@@ -99,7 +100,6 @@ ht-degree: 98%
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
 | 通貨換算 | サポートが予定されています。 |
-| データフィード | AEP の宛先を介したサポートが予定されています。 |
 | トランザクション ID データソース | サポートが予定されています。 |
 | AA から CJA へのプロジェクト／フィルター／計算指標の移行 | サポートが予定されています。 |
 | 概要レベルのデータソース | サポートが予定されています。 |
