@@ -4,16 +4,16 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
+source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 94%
+source-wordcount: '2024'
+ht-degree: 74%
 
 ---
 
 # Customer Journey Analytics の機能のサポート
 
-次の表は、Adobe Analytics の機能のうち、Customer Journey Analytics（CJA）でサポートされている、一部サポートされている、またはサポートされていないものを示しています。これらのリストは、時間が経過し、CJA に機能が追加されると変更されます。
+次の表に、Adobe Analytics(AA) のどの機能がCustomer Journey Analytics(CJA) でサポートされている、一部がサポートされている、またはサポートされていない、および CJA のどの機能が AA でサポートされていない、または使用できないかを示します。 これらのリストは、時間が経過し、CJA に機能が追加されると変更されます。
 
 ## 完全にサポートされる機能／コンポーネント
 
@@ -122,3 +122,20 @@ ht-degree: 94%
 * Reports &amp; Analytics のブックマーク
 * Reports &amp; Analytics のターゲット
 * Mobile Services
+
+## CJA 機能は、Adobe Analyticsでは使用できません
+
+次の表に、Customer Journey Analytics(CJA) で使用できる機能のうち、Adobe Analytics(AA) ではサポートされない機能を示します。
+
+| 機能 | さらに詳細を表示 |
+| --- | --- |
+| あらゆる種類のデータの宿泊施設 | CJA は、あらゆる種類のExperience Platformスキーマやデータタイプを保持するデータの機能と組み合わされています。 使用 [エクスペリエンスデータモデル (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。 Adobe Analyticsは、主に、Web およびモバイルの分析データに焦点を当て、 [データをインポート](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=ja). |
+| 無制限の顧客Dimensionと指標 | CJA ディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、またはすべての組み合わせを指定できます。 Dimensionは、ネストすることも、階層化することもできます。 Analytics は、最大 75 個の prop および 250 個の eVar をサポートします。 これにより、ディメンションとイベントを使用する現在の測定制限が削除されます。 |
+| 基数/一意の値は無制限 | CJA は、単一のディメンション内でレポートできる、無制限の一意の値またはディメンション項目をサポートします。 AA のユニーク値は 500,000 個に制限されています。 これにより、大規模な Analytics の実装で現在存在しているレポートおよび分析の制限が取り除かれます。 |
+| レポート時間変換 | CJA のレポート時間変換（データビューと呼ばれる）を使用すると、接続からのデータをさらに解釈できます。 再実装しなくてもデータを変更または削除できます。サブ文字列を使用してディメンションを操作する。任意の値から指標を作成する。サブイベントをフィルタリングします。 これは全て非破壊的に行うことができます Adobe Analyticsは、仮想レポートスイートとセッション化を通じて、限られた機能を提供します。 |
+| 実験分析 | CJA は、接続の一部として定義された任意のデータソースから、任意の実験の上昇率と信頼性を評価できます。 これにより、任意のチャネルにまたがる顧客インタラクション間の原因と効果の関係を把握できます。 Analytics は、Analytics for Target(A4T) 統合を通じて、実験分析に制限されます。 |
+| クロスデバイス分析 | CJA は、未認証セッションと認証済みセッションのデバイス固有のデータセットのシームレスな組み合わせをサポートしています。 また、既知のデバイスに履歴データをバックフィルすることもできます。 Analytics では、この機能は 1 つのレポートスイートに制限され、デバイスグラフの使用に制限されます。 |
+| SQL アクセス | CJA は、「 Data Distiller 」オプションを使用して、Adobeのバックエンド処理で収集されるデータの制限を削除できます。 SQL でデータを変更し、ビジネスに固有の新しい値とデータセットを作成し、引き続き調査できます。 Analytics は、データへの SQL アクセスをサポートしていません。 |
+| セキュリティとプライバシーに関するオプションの強化 — HIPAA 対応 | CJA は HIPAA に対応しており、規制への準拠に関する追加のセキュリティオプションを提供します。 Adobe Analyticsは HIPAA に対応していません。 |
+
+{style=&quot;table-layout:auto&quot;}
