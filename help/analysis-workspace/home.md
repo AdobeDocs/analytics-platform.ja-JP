@@ -5,10 +5,10 @@ description: Analysis Workspace 機能の概要
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: e104a7a36df3743028fd18b47b46e936841a586a
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 69%
 
 ---
 
@@ -20,23 +20,27 @@ Analysis Workspace は分析をすばやく構築してインサイトを共有�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Customer Journey Analytics へのログイン {#login}
+## Customer Journey Analyticsにログイン {#login}
 
-Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](https://experience.adobe.com/analytics) に移動して、Customer Journey Analytics にログインします。これまでに特定のプロジェクトを選択したことがない場合は、ワークスペースプロジェクトリストのホームページに移動します。
+Analysis Workspace を使い始めるには、[experience.adobe.com/analytics](https://experience.adobe.com/analytics) に移動して、Customer Journey Analytics にログインします。以前に特定のプロジェクトを選択したことがない場合は、プロジェクトページに移動します。
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
-## トレーニングチュートリアルの使用 {#training-tutorial}
+## トレーニングチュートリアルテンプレートの使用 {#training-tutorial}
 
-ログインしたらまず、Analysis Workspace トレーニングチュートリアルに移動します。このチュートリアルでは、ワークスペースで最初の分析を構築するための一般的な用語と手順を説明します。チュートリアルを開始するには、「**[!UICONTROL 新規プロジェクトを作成]**」をクリックし、新しいプロジェクトモーダル内で「**トレーニングチュートリアル**」を選択します。
+ログイン後は、Analysis Workspaceトレーニングチュートリアルテンプレートを使用して、Workspace で最初の分析を作成するための一般的な用語と手順を順に説明します。 チュートリアルを開始するには、
+
+1. 次をクリック： **[!UICONTROL 学習]** 」タブをクリックします。
+1. クリック **[!UICONTROL チュートリアルを開く]**.
 
 ![](assets/training-tutorial.png)
 
 ## 新規プロジェクトを作成 {#new-project}
 
-チュートリアルが完了したら、最初のプロジェクトの構築を開始する準備が整います。**新しいプロジェクトモーダル**&#x200B;には、分析を開始するための様々なオプションが用意されています。ブラウザーと Customer Journey Analytics ダッシュボードモバイルアプリのどちらで分析を共有するかに応じて、空のプロジェクトまたは[空のモバイルスコアカード](/help/mobile-app/curator.md)のどちらで開始するかを選択できます。
+チュートリアルを完了したら、最初のプロジェクトの構築を開始する準備が整いました。 の [!UICONTROL プロジェクト] 」タブで、次の場所から開始するように選択できます。
 
-![](assets/create-new-project.png)
+* [!UICONTROL 空のプロジェクト] ブラウザーから分析を共有する場合、または
+* [[!UICONTROL 空のモバイルスコアカード]](/help/mobile-app/curator.md)を使用する場合は、Customer Journey Analyticsダッシュボードモバイルアプリから分析を共有する予定です。
 
 ## 分析の構築 {#analysis}
 
