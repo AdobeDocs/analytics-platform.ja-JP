@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: b73404d9594b0915cea64f4016c9c7b36c3aaf01
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 80%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **CJA オーディエンスの更新** | オーディエンスを作成すると、新しい CJA オーディエンスごとに Experience Platform ストリーミングセグメントが作成されます。ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#after-audience-created) | 該当なし | 2023年2月3日（PT） |
 | **モバイルスコアカードでの比較日付範囲の非表示** | モバイルスコアカードで、比較日付範囲を非表示にできるようになりました。 | 該当なし | 2023年2月8日（PT） |
 | **ワークスペースでのカレンダーの更新** | <ul><li>パネルの日付の固定：パネルカレンダーを基準とする相対的な日付範囲コンポーネントにすることができます。[詳細情報](/help/components/date-ranges/calendar.md)</li><li>カレンダースタイルの更新：UI 全体を通してカレンダースタイルがアップグレードされて、より一貫性のある使いやすいワークフローが提供されるようになりました。</li><li>カレンダー式の更新：相対的な日付を使用する場合は、すべてのカレンダー式にパネルの日付範囲の開始日が反映されます。[詳細情報](/help/components/date-ranges/calendar.md)</li></ul> | 該当なし | 2023年2月8日（PT） |
-| **パネルの日付範囲の更新** | Workspace で、次の機能強化が追加されました。<ul><li>2 月のリリース以降、コンポーネントとデータのプレビューは、過去 90 日間ではなく、パネルの日付範囲に基づいておこなわれます。 </li><li>表示されるすべてのディメンション項目は、パネルの日付範囲に基づいて使用できます。</li><li>セグメントおよび計算指標ビルダーのすべての日付プレビューは、パネルの日付範囲に基づきます（関連するパネルがないコンポーネントマネージャーからアクセスしない限り、過去 90 日間の日付が基になります）。</li><li>データプレビューでは、パネルの日付範囲に基づいて、データやコンポーネントが表示されます。</li></ul> | 該当なし | 2023年2月8日（PT） |
+| **パネルの日付範囲の更新** | ワークスペースに、次の機能強化が追加されました。<ul><li>2 月のリリース以降、コンポーネントとデータのプレビューは、過去 90 日間ではなく、パネルの日付範囲に基づきます。 </li><li>表示されるすべてのディメンション項目は、パネルの日付範囲に基づいて使用できます。</li><li>グメントおよび計算指標ビルダーのすべての日付プレビューは、パネルの日付範囲に基づきます（関連付けられたパネルがないコンポーネントマネージャーからアクセスしない限り、過去 90 日間に基づきます）。</li><li>データプレビューでは、パネルの日付範囲に基づいて、データやコンポーネントが表示されます。</li></ul> | 該当なし | 2023年2月8日（PT） |
 | **Adobe Analytics ソースコネクタストリーミングの行／列フィルタリング** | Adobe Experience Platform の Analytics ソースコネクタを使用すると、[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)におけるプロファイルへの入力に使用される Analytics データをフィルタリングできるようになりました。<p>行レベルのフィルタリングは、プロファイルに関連付けられたイベントの数を減らすのに役立ちます。列レベルのフィルタリングは、イベント自体の豊富さを軽減するのに役立つので、プロファイル使用権限の行使を最適化できます。このフィルタリングは、リアルタイム顧客プロファイルと [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)に送信されるデータにのみ適用されます。<p>**フィルタリングは、Customer Journey Analytics などのアプリケーションで使用するためにデータレイクに送信されるデータには影響しません**。[詳細情報](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja#filtering-for-profile) | 該当なし | 2023 年 3 月 30 日に再スケジュールされました |
 
 {style=&quot;table-layout:auto&quot;}
