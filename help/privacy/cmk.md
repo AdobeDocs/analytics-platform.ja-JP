@@ -3,9 +3,9 @@ title: 顧客管理キー
 description: CJA 用の顧客管理キーの設定方法について説明します。
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Customer Journey Analytics (CJA) は、[Healthcare Shield](https://www.adobe.com
 
 >[!NOTE]
 >
->顧客管理キーは現在、[Healthcare Shield またはプライバシーとセキュリティシールド](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en)アドオンサービスを購入した組織のみが利用できます。
+>顧客管理キーは現在、[Healthcare Shield またはプライバシーとセキュリティシールド](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=ja)アドオンサービスを購入した組織のみが利用できます。
 
 ## CJA 用の CMK の設定
 
