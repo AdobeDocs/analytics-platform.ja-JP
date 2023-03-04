@@ -4,10 +4,10 @@ description: Cross-Channel Analytics に関するよくある質問（FAQ）
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1067'
-ht-degree: 100%
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 永続 ID の数は、一時的な ID には関係ありません。1 人のユーザーが任意の数のデバイスに属する場合でも、デバイス間でのクロスチャネル分析のステッチ機能に影響を与えることはありません。
 
-## 必要な情報をアカウントマネージャーに連絡した後、キー更新されたデータセットを利用可能になるまでにどのくらいかかりますか？
+## 必要な情報をAdobeアカウントチームに連絡した後、キーが更新されたデータセットが利用可能になるまでにどれくらいかかりますか？
 
 ライブステッチは、アドビが Cross-Channel Analytics を有効にしてから約 1 週間後に使用可能になります。バックフィルの可用性は、既存のデータの量に応じて異なります。小規模なデータセット（1 日あたり 100 万イベント未満）の処理には通常 2 ～ 3 日かかりますが、大規模なデータセット（1 日あたり 10 億イベント）では 1 週間以上かかる場合があります。
 

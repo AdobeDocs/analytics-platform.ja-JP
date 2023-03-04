@@ -2,10 +2,10 @@
 title: Adobe Journey Optimizer（AJO）と Customer Journey Analytics（CJA）の統合
 description: AJO で生成したデータを取り込み、CJA 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 89%
 
 ---
 
@@ -22,6 +22,14 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 ## Customer Journey Analytics で接続を作成する
 
 Journey Optimizer データが Adobe Experience Platform に入ったら、Journey Optimizer データセットに基づいて[接続を作成](/help/connections/create-connection.md)できます。Platform に送信したデータセットを選択します。
+
+| データセット | データセットタイプ | 接続設定 | 説明 |
+| --- | --- | --- | --- |
+| AJO メッセージフィードバックイベントデータセット | イベント | ユーザー ID: `IdentityMap` | メッセージ配信イベント（「 」など）が含まれます[!UICONTROL 送信数]&#39;および&#39;[!UICONTROL バウンス]&#39;. |
+| AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 「 」などの E メールトラッキングイベントが含まれます[!UICONTROL 開封数]&#39;、&#39;[!UICONTROL クリック数]&#39;、&#39;[!UICONTROL 配信停止]&#39;. |
+| AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 「 」などのプッシュトラッキングイベントが含まれます[!UICONTROL アプリの起動回数]&#39;. |
+| ジャーニーステップイベント | イベント | ユーザー ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに関係したプロファイルを示すイベントが含まれます。 |
+| AJO エンティティデータセット | レコード | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての AJO イベントデータにジャーニーとキャンペーンのメタデータを関連付ける分類が含まれます。 |
 
 ## Journey Optimizer のディメンションと指標に対応するようにデータビューを設定
 
