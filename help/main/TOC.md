@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 99%
 
 ---
 
@@ -199,6 +199,7 @@ ht-degree: 100%
 
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](../components/overview.md)
+   + [コンポーネントの説明の追加](../components/add-component-descriptions.md)
    + 注釈 {#annotations}
       + [注釈の概要](../components/annotations/overview.md)
       + [注釈を作成](../components/annotations/create-annotations.md)
@@ -239,6 +240,7 @@ ht-degree: 100%
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [計算指標マネージャ](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
    + 日付範囲 {#cja-date-ranges}
@@ -248,7 +250,11 @@ ht-degree: 100%
       + [カレンダーの概要](../components/date-ranges/calendar.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
-
+   + データ要素 {#data-dictionary}
+      + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
+      + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
+      + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [データ要素の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
    + [キュレータータスク](../mobile-app/curator.md)
