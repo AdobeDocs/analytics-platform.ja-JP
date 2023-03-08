@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
-source-wordcount: '2439'
-ht-degree: 100%
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 84%
 
 ---
 
@@ -85,9 +85,9 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 |  | 総計の表示 | この合計は、収集されたすべてのヒットを表し、「レポートスイートの合計」と呼ばれることもあります。セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのヒットを反映するように調整されます。[静的な行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を含むテーブルや分類では、総計はサポートされません。 |
 |  | スパークラインを表示 | グラフの下部に折れ線グラフを表示または非表示にします。非表示にすると、凡例が変更され、折れ線が表示されなくなります。 |
 |  | 数値 | セルに指標の数値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、数値は行項目のページ表示回数になります。 |
-|  | パーセント | セルに指標の割合の値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。注意：より正確な数値を示すために、100％を超える割合が表示されるようになりました。列の幅をさらに大きくできるように、上限を 1,000％まで高める予定です。 |
+|  | パーセント | セルに指標の割合の値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。メモ：より正確な数値を示すために、100％を超える割合が表示されるようになりました。列の幅をさらに大きくできるように、上限を 1,000％まで高める予定です。 |
 |  | 異常値を表示 <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | この列の値に対して異常値検出を実行するかどうかを決定します。 |
-|  | ゼロを値なしとして解釈 | 値が 0 のセルについて、0 を表示するか空白にするかを決定します。この設定は、まだ終わっていない月の日ごとのデータを確認する際に便利です。将来の日付のセルに 0 を表示するのではなく、空白にすることができます。この設定はグラフにも反映されます（つまり、この設定がオンの場合、値が 0 の線やバーはグラフに表示されません）。 |
+|  | ゼロを値なしとして解釈 | 値が 0 のセルについて、0 を表示するか空白にするかを決定します。この設定は、まだ終わっていない月の日ごとのデータを確認する際に便利です。将来の日付のセルに 0 を表示するのではなく、空にすることができます。この設定はグラフにも反映されます（つまり、この設定がオンの場合、値が 0 の線やバーはグラフに表示されません）。 |
 |  | 背景 | セルのすべての書式（棒グラフや条件付き書式など）をセルに表示するかどうかを決定します <ul><li>棒グラフ</li> 列の合計を最大値としてセルの値を示す横棒グラフを表示します。 <li>条件付き書式</li>条件付き書式について詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)の「条件付き書式」を参照してください。</ul> |
 |  | セルのプレビュー | 現在選択されている書式オプションが適用されると各セルがどのように表示されるかを示すプレビューが表示されます。 |
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** |  |  |
@@ -175,13 +175,29 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 |  | 項目数の上限を設定 | 散布図ビジュアライゼーションの X 軸の項目数を減らします。大きなデータセットがある場合に役立ちます。 |
 |  | Y 軸をゼロに固定 | グラフに示されるすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外になります。このボックスをチェックすると、Y 軸は強制的にゼロになります（グラフは再描画されます）。 |
 
+## 会社の環境設定
+
+>[!AVAILABILITY]
+>
+>この節で説明する公開アクセスリンク機能は、リリースの制限付きテスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。
+
+組織内のすべてのユーザーおよびプロジェクトに適用する会社の環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
+
+| セクション | 環境設定 | オプション |
+| --- | --- | --- |
+| **公開アクセスリンク** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | すべての公開アクセスリンクを無効にする | <p>既存のすべての公開アクセスリンクを無効にし、組織内のユーザーが新しいリンクを作成できないようにします。 つまり、Analysis Workspaceアカウントを持たないユーザーとAdobe Customer Journey Analyticsプロジェクトを共有することはできません。 ユーザーは、組織内の他のCustomer Journey Analyticsユーザーとのみプロジェクトを共有できます。</p> <p>パブリックリンクが無効な場合：</p> <ul><li><p>ユーザーが公開アクセスリンクを作成できない</p><p>「公開リンクを共有」オプションは、共有メニューから削除されました。 つまり、ユーザーは、組織内にAnalysis Workspaceアカウントを持たないユーザーと、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>既存の公開リンクはすべて無効になります</p></li><p>公開リンクが無効になってから再度有効になった場合、以前に無効にされたすべてのリンクは自動的には再アクティブ化されません。 この場合、ユーザーは、プロジェクトの共有ダイアログボックスで、各プロジェクトに対して手動で再アクティブ化する必要があります。</p> |
+|  | Experience Cloud認証が必要 | <p>このオプションを有効にした場合、Federated ID を持ち、Adobe Experience Cloudにログインできる受信者のみが、共有された公開リンクにアクセスできます。</p> <p>このオプションを有効にすると、ユーザーがAnalysis Workspaceプロジェクトへのリンクを作成するたびに、共有ダイアログで「Experience Cloud認証が必要」オプションが有効になり、リンクを共有しているユーザーは無効にできません。 ( ユーザーが組織外のユーザーとプロジェクトを共有する方法について詳しくは、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、現在アクティブな、Experience Cloudが有効になっていない公開リンクがすべて無効になります。</p></li> <li><p>このオプションを有効にし、後で無効にした場合、以前に非アクティブ化されたすべてのリンクは自動的には再アクティブ化されません。 この場合、ユーザーは、プロジェクトの共有ダイアログボックスで手動で再アクティブ化する必要があります。</p></li> <li><p>このオプションは、組織で SSO が実装されている場合にのみ使用できます。 システム管理者が組織で SSO を有効にする方法について詳しくは、 [ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}.</p><p>組織で SSO が設定されている場合は、コンソールに自動アカウント作成の種類が実装されているかどうかを確認します。 通常、システム管理者がこの設定を行います。詳しくは、 [自動アカウント作成を有効にする](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>HIPAA への準拠が必要な業界にいる場合、このオプションは自動的に有効化され、無効化できません。</p></li></ul> |
+
+{style="table-layout:auto"}
+
 ## デフォルトの環境設定を復元
 
 すべてのユーザー設定をシステムのデフォルトに戻すことができます。これは、「会社」タブの管理者の環境設定には影響しません。
 
 このアクションは取り消しできません。
 
-1. Adobe Analytics で、[!UICONTROL **コンポーネント**]**／**[!UICONTROL **環境設定**]&#x200B;を選択します。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] **>** [!UICONTROL **環境設定**].
 
    ![ユーザー環境設定](assets/user-preferences.png)
 

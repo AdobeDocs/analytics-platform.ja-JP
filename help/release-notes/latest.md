@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c4dc2f66e80644ef6f1b68bed4d16593785764b2
+source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 39%
+source-wordcount: '345'
+ht-degree: 40%
 
 ---
 
@@ -20,10 +20,10 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウトの開始](/help/release-notes/releases.md) | [一般公開](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Analysis Workspaceのデータ辞書** | データディクショナリは、ユーザーと管理者の両方が、CJA 環境のコンポーネント（ディメンション、指標）を追跡し、より深く理解するのに役立ちます。 詳細情報 | 2023 年 3 月 9 日 | 2023 年 3 月 23 日 |
+| **Analysis Workspaceのデータ辞書** | データディクショナリは、ユーザーと管理者の両方が、CJA 環境のコンポーネント（ディメンション、指標）を追跡し、より深く理解するのに役立ちます。 [詳細情報](/help/components/data-dictionary/data-dictionary-overview.md) | 2023 年 3 月 9 日 | 2023 年 3 月 23 日 |
 | **モバイルダッシュボードのデータストーリー** | データストーリーを使用すると、カスタマイズ可能な複数の詳細ビューをモバイルスコアカードプロジェクトのタイルに追加できます。 データストーリーを使用して、カスタマージャーニーにおける主な推進要因、関連指標、様々な手順を詳しく調べます。 これらのビューを簡単にスワイプして、主要指標の背後にある全体像を把握できます。 [詳細情報](/help/mobile-app/create-scorecard.md#create-data-story) | 該当なし | 2023 年 3 月 9 日 |
 | **スケジュール済みプロジェクトの有効期限** | スケジュールの頻度に関係なく、スケジュールされたプロジェクトの最大有効期限日は最大 1 年に設定できます。 [詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) | 該当なし | 2023 年 3 月 9 日 |
-| **プロジェクトのリンク共有（ログインは不要） — プライベートベータアクセスのみ** | CJA へのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの読み取り専用リンクを共有できるようになりました。 プロジェクトリンクは、組織外の人や、組織内で CJA 用にプロビジョニングされていない人と共有できます。 詳細情報（フォロー）<p>プライベートベータ版に参加するには、Adobeアカウントチームにお問い合わせください。 | 2023 年 3 月 16 日（プライベートベータ版） | 2023 年 4 月 |
+| **プロジェクトのリンク共有（ログインは不要） — プライベートベータアクセスのみ** | CJA へのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの読み取り専用リンクを共有できるようになりました。 プロジェクトリンクは、組織外の人や、組織内で CJA 用にプロビジョニングされていない人と共有できます。 [詳細情報](/help/analysis-workspace/curate-share/share-projects.md)<p>プライベートベータ版に参加するには、Adobeアカウントチームにお問い合わせください。 | 2023 年 3 月 16 日（プライベートベータ版） | 2023 年 4 月 |
 
 {style="table-layout:auto"}
 
