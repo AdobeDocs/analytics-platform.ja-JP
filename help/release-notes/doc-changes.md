@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
+source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 98%
+source-wordcount: '1538'
+ht-degree: 92%
 
 ---
 
@@ -21,6 +21,9 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | --- | --- |
 | **2023 年 3 月** |  |
 | 機能のサポート | 更新済み [Customer Journey Analytics機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md) とは、CJA で使用可能ですが、AA では使用またはサポートされていない機能のテーブルを指します。 |
+| デフォルトの計算指標 | 次を説明する内容を追加しました： [Adobeが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md). |
+| データ要素 | <p>データディクショナリの新しいドキュメント ( [概要](/help/components/data-dictionary/data-dictionary-overview.md), [表示](/help/components/data-dictionary/view-data-dictionary.md), [編集中](/help/components/data-dictionary/edit-entries-data-dictionary.md)、および [監視](/help/components/data-dictionary/monitor-data-dictionary-health.md) データディクショナリ。</p><p>の情報 [コンポーネントの説明の追加](/help/components/add-component-descriptions.md) は、データディクショナリ機能を考慮して更新されました。</p> |
+| プロジェクトのリンク共有（ログインは不要） | <p>既存のドキュメントを更新して、Analysis Workspaceへのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明しました。</p> <p>ユーザードキュメントの更新内容 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) および [共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>管理者向けオプションが [環境設定](/help/analysis-workspace/user-preferences.md).</p> |
 | **2023年2月** |  |
 | CJA と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
 | Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#latency)に関する新しい節です。 |
@@ -93,7 +96,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年1月 | [バインディングディメンションと指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)、および新しい[[!UICONTROL 最初の事例]と[!UICONTROL 最後の事例]の配分設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#allocation-settings)に関する新機能のドキュメントを追加しました |
 | 2022年1月 | [Adobe Analytics データと CJA の Analytics データの比較](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=ja)に関する新しい記事 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2021 {#21}
 
@@ -134,7 +137,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | **2021年1月** |  |
 | 2021年1月 | [データセットへの標準検索の追加](/help/connections/standard-lookups.md)に関する新しいトピックです。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2020 {#20}
 
@@ -155,4 +158,4 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2020年2月27日（PT） | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
 | 2019年12月 | CJA ドキュメントの最初のドラフト |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
