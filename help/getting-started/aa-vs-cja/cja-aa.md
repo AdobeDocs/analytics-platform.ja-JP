@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
+source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 74%
+source-wordcount: '2004'
+ht-degree: 75%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 次の表に、Adobe Analytics(AA) のどの機能がCustomer Journey Analytics(CJA) でサポートされている、一部がサポートされている、またはサポートされていない、および CJA のどの機能が AA でサポートされていない、または使用できないかを示します。 これらのリストは、時間が経過し、CJA に機能が追加されると変更されます。
 
-## 完全にサポートされる機能／コンポーネント
+## 完全にサポートされる機能／コンポーネント {#full-support}
 
 | Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
@@ -46,9 +46,9 @@ ht-degree: 74%
 | VRS コンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
 | ストリーミングメディア分析 | メディアデータは、Analytics Data Connector を使用すると、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として使用できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 新しい方法でサポート
+## 新しい方法でサポート {#new-support}
 
 | 機能 | メモ |
 | --- | --- |
@@ -58,7 +58,7 @@ ht-degree: 74%
 | カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
-| データフィード | データセットの第 1 世代のデータエクスポートは、 [AEP データアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [AEP の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). これらのオプションでは、AEP データレイクに収集または取り込まれるすべてのデータのヒット/行レベルの書き出しを提供します。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
+| データフィード | データセットの第 1 世代のデータエクスポートは、 [AEP データアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [AEP の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja). これらのオプションでは、AEP データレイクに収集または取り込まれるすべてのデータのヒット/行レベルの書き出しを提供します。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |
@@ -71,9 +71,9 @@ ht-degree: 74%
 | ユーザー権限／データアクセス制御 | CJA は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、フィルターまたは注釈などを作成するためのユーザー権限を追加できます。 |
 | 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | WebSDK ベースのデータセットと Analytics Data Connector のデータの両方で、Adobe Experience Platform データ準備機能の使用がサポートされます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 部分的なサポート
+## 部分的なサポート {#partial}
 
 | 機能 | メモ |
 | --- | --- |
@@ -86,9 +86,9 @@ ht-degree: 74%
 | 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
 | A4T | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 現在はサポートされていませんが、予定されています
+## 現在はサポートされていませんが、予定されています {#planned}
 
 | 機能 | メモ |
 | --- | --- |
@@ -104,26 +104,25 @@ ht-degree: 74%
 | AA から CJA へのプロジェクト／フィルター／計算指標の移行 | サポートが予定されています。 |
 | 概要レベルデータソース | サポートが予定されています。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## サポートの予定はありません
+## サポートの予定はありません {#not-planned}
 
 | 機能 | メモ |
 | --- | --- |
 | Activity Map | まだサポートの予定はありません。 |
 | Advertising Cloud | まだサポートの予定はありません。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## サポートされません
+## サポートされません {#never}
 
 * クロスデバイス Coop を使用した人物指標
 * Reports &amp; Analytics のダッシュボード
 * Reports &amp; Analytics のブックマーク
 * Reports &amp; Analytics のターゲット
-* Mobile Services
 
-## CJA 機能は、Adobe Analyticsでは使用できません
+## CJA 機能は、Adobe Analyticsでは使用できません {#cja-not-aa}
 
 次の表に、Customer Journey Analytics(CJA) で使用できる機能のうち、Adobe Analytics(AA) ではサポートされない機能を示します。
 
@@ -138,4 +137,4 @@ ht-degree: 74%
 | SQL アクセス | CJA は、「 Data Distiller 」オプションを使用して、Adobeのバックエンド処理で収集されるデータの制限を削除できます。 SQL でデータを変更し、ビジネスに固有の新しい値とデータセットを作成し、引き続き調査できます。 Analytics は、データへの SQL アクセスをサポートしていません。 |
 | セキュリティとプライバシーに関するオプションの強化 — HIPAA 対応 | CJA は HIPAA に対応しており、規制への準拠に関する追加のセキュリティオプションを提供します。 Adobe Analyticsは HIPAA に対応していません。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
