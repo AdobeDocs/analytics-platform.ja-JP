@@ -4,10 +4,10 @@ description: Customer Journey Analytics または Adobe Experience Platform に�
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f56d56d65491ab14c5d0e6d3005c0e5e13127c9b
+source-git-commit: 64c165e30926f2571bce5ea2f31560daf50acc46
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 92%
+source-wordcount: '373'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ Customer Journey Analytics または Adobe Experience Platform で接続、デ�
 
 | 新しい調査を作成... | 結果 |
 | --- | --- |
-| [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul> |
+| [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul>権限を持っていない AEP サンドボックスに関連付けられている CJA 接続は削除できません。 これらの接続で構築されたデータビューに対する権限を持っている場合でも、基になる AEP サンドボックスに対する権限を付与されるまで、接続を削除することはできません。 |
 | [!UICONTROL Adobe Experience Platform]（AEP）のデータセットを削除した場合 | AEP でデータセットを削除すると、そのデータセットからそのデータセットを含むすべての接続へのデータフローが停止します。データセットのデータは、関連付けられた CJA 接続からは自動的に削除されません。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | CJA の接続からデータセットを削除すると、そのデータセットに依存するデータビューとプロジェクトは機能しなくなります。 |
 | （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | バッチが [!UICONTROL Adobe Experience Platform] のデータセットから削除されると、そのバッチを含む [!UICONTROL Customer Journey Analytics] の接続から同じバッチが削除されます。[!UICONTROL Customer Journey Analytics] には、[!UICONTROL Adobe Experience Platform] で削除されたバッチについて通知されます。 |
