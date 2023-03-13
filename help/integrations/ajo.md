@@ -2,9 +2,9 @@
 title: Adobe Journey Optimizer（AJO）と Customer Journey Analytics（CJA）の統合
 description: AJO で生成したデータを取り込み、CJA 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '735'
 ht-degree: 89%
 
 ---
@@ -35,8 +35,10 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 接続を作成したら、1 つ以上の[データビュー](/help/data-views/create-dataview.md)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
->!![NOTE]
-AJO と CJA の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>[!NOTE]
+>
+>AJO と CJA の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+
 
 ### データビューでのディメンションの設定
 
@@ -58,7 +60,7 @@ AJO と CJA の間のデータの不一致は通常、1～2％未満です。過
 | メール配信失敗の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | コンポーネントタイプ：ディメンション |
 | メール配信除外の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | コンポーネントタイプ：ディメンション |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### データビューでの指標の設定
 
@@ -76,7 +78,7 @@ AJO と CJA の間のデータの不一致は通常、1～2％未満です。過
 | スパム報告件数 | スパム報告の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`spam_complaint` と等しい |
 | 登録解除 | 登録解除の数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Analysis Workspace の計算指標の設定
 
@@ -87,4 +89,4 @@ Journey Optimizer データセットに必要なディメンションと指標�
 | 送信済みメッセージ | 送信済みメッセージの合計数。成功または失敗したメッセージが含まれます。 | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | 配信済みメッセージ | 顧客に配信されたメールの数。 | `[Sends] - [Bounces After Delivery]` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
