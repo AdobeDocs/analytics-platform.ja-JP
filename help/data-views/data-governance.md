@@ -2,24 +2,28 @@
 title: ラベルとポリシー
 description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+workflow-type: tm+mt
+source-wordcount: '470'
+ht-degree: 79%
 
 ---
 
 # ラベルとポリシー
 
-Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これまで、これらのラベルは CJA では公開されていませんでした。このリリースでは、CJA でこれらのラベルとポリシーを表示できます。
+Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これらのラベルとポリシーを CJA で表示できます。
 
-CJA にとって特に重要なラベルは次のとおりです。
+次のラベルは、CJA にとって特に重要です。
 
-* `C8` ラベル - **[!UICONTROL 測定なし]**。このラベルは、組織の web サイトやアプリで分析に対してデータが使用できないことを示します。
+* `C8` ラベル - **[!UICONTROL 測定なし]**。このラベルは、組織の Web サイトやアプリでデータを分析に使用できないことを示します。
 
 * `C12` ラベル - **[!UICONTROL 一般的なデータの書き出しがありません]**。この方法でラベル付けされたスキーマフィールドは、CJA から（レポート、書き出し、API などを介して）書き出しまたはダウンロードはできません。
 
-「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。これを行うにはポリシーを使用します。 Experience Platform で [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介してポリシーを作成します。
+>[!NOTE]
+>
+>データ使用ラベルは、ステッチされたデータセットに自動的には反映されません。 ただし、手動で追加することはできます。
+
+「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です Experience Platform で [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介してポリシーを作成します。
 
 CJA では、次の 2 つのアドビが定義するポリシーが表示され、レポートおよびダウンロード／共有に影響します。
 
@@ -36,11 +40,11 @@ Experience Platform で作成したデータラベルは、データビューの
 | [コンポーネント設定](/help/data-views/component-settings/overview.md)の下の右パネル | すべての[!UICONTROL データ使用状況ラベル]はここに一覧表示されます。<p>![](assets/data-label-right.png) |
 | データラベルを列として追加 | データビューの「[!UICONTROL 含まれるコンポーネント]」列に、「[!UICONTROL データ使用状況ラベル]」を列として追加できます。列セレクターアイコンをクリックし、「**[!UICONTROL データ使用状況ラベル]**」を選択します。<p>![](assets/data-label-column.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## データビューのデータガバナンスラベルに対するフィルター
 
-データビューエディターで、左側のパネルのフィルターアイコンをクリックし、**[!UICONTROL データガバナンス]**&#x200B;および&#x200B;**[!UICONTROL ラベル]**&#x200B;のタイプで、データビューコンポーネントをフィルタリングします。
+データビューエディターで、 [!UICONTROL フィルター] 左側のトレールのアイコンを使用し、次の条件でデータビューコンポーネントをフィルタリングします。 **[!UICONTROL データガバナンス]** およびのタイプ **[!UICONTROL ラベル]**:
 
 ![](assets/filter-labels.png)
 
@@ -50,7 +54,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 分析または書き出しの目的で特定の CJA データビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
 
-再度、左側のパネルの&#x200B;**[!UICONTROL データガバナンス]**&#x200B;下のフィルターアイコン、「**[!UICONTROL ポリシー]**」の順にクリックします。
+再度、 [!UICONTROL フィルター] アイコン（左側のレールとの下） **[!UICONTROL データガバナンス]**&#x200B;をクリックし、 **[!UICONTROL ポリシー]**:
 
 ![](assets/filter-policies.png)
 
