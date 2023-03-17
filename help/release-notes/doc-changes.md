@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
 source-wordcount: '1566'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -19,10 +19,10 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 機能 | 説明 |
 | --- | --- |
-| **2023 年 3 月** |  |
+| **2023年3月** |  |
 | モバイルスコアカードでのデータストーリーの作成 | A [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories) は、中央のテーマや指標に基づいて構築された、サポートされるデータポイント、ビジネスコンテキスト、関連指標の集まりです。 |
-| 機能のサポート | 更新済み [Customer Journey Analytics機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md) とは、CJA で使用可能ですが、AA では使用またはサポートされていない機能のテーブルを指します。 |
-| デフォルトの計算指標 | 次を説明する内容を追加しました： [Adobeが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md). |
+| 機能のサポート | CJA で使用でき、AA では使用不可能またはサポートされていない機能のテーブルを使用した [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
+| デフォルトの計算指標 | [アドビが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)を説明するコンテンツを追加しました。 |
 | データ要素 | <p>データディクショナリの新しいドキュメント ( [概要](/help/components/data-dictionary/data-dictionary-overview.md), [表示](/help/components/data-dictionary/view-data-dictionary.md), [編集中](/help/components/data-dictionary/edit-entries-data-dictionary.md)、および [監視](/help/components/data-dictionary/monitor-data-dictionary-health.md) データディクショナリ。</p><p>の情報 [コンポーネントの説明の追加](/help/components/add-component-descriptions.md) は、データディクショナリ機能を考慮して更新されました。</p> |
 | プロジェクトのリンク共有（ログインは不要） | <p>既存のドキュメントを更新して、Analysis Workspaceへのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明しました。</p> <p>ユーザードキュメントの更新内容 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) および [共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>管理者向けオプションが [環境設定](/help/analysis-workspace/user-preferences.md).</p> |
 | **2023年2月** |  |
@@ -81,7 +81,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 2022年6月 | [フロービジュアライゼーションワークフロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)を更新。 |
 | **2022年5月** |  |
 | 2022年5月 | CJA での[接続の作成](/help/connections/create-connection.md)に関する記事を大幅に更新しました。 |
-| 2022年5月 | [CJA Report Builder のデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja)方法に関する新しい記事を追加しました。。 |
+| 2022年5月 | [CJA Report Builder のデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja)方法に関する新しい記事を追加しました。 |
 | 2022年5月 | [Adobe Experience Platform オーディエンスの CJA への取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md)に関する新しい記事。 |
 | **2022年4月** |  |
 | 2022年4月 | [ディメンションの部分文字列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=ja)に関するドキュメント。 |
