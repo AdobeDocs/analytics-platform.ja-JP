@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 84%
+source-wordcount: '3020'
+ht-degree: 82%
 
 ---
 
@@ -186,8 +186,8 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **公開アクセスリンク** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
-|  | すべての公開アクセスリンクを無効にする | <p>既存のすべての公開アクセスリンクを無効にし、組織内のユーザーが新しいリンクを作成できないようにします。 つまり、Analysis Workspaceアカウントを持たないユーザーとAdobe Customer Journey Analyticsプロジェクトを共有することはできません。 ユーザーは、組織内の他のCustomer Journey Analyticsユーザーとのみプロジェクトを共有できます。</p> <p>パブリックリンクが無効な場合：</p> <ul><li><p>ユーザーが公開アクセスリンクを作成できない</p><p>「公開リンクを共有」オプションは、共有メニューから削除されました。 つまり、ユーザーは、組織内にAnalysis Workspaceアカウントを持たないユーザーと、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>既存の公開リンクはすべて無効になります</p></li><p>公開リンクが無効になってから再度有効になった場合、以前に無効にされたすべてのリンクは自動的には再アクティブ化されません。 この場合、ユーザーは、プロジェクトの共有ダイアログボックスで、各プロジェクトに対して手動で再アクティブ化する必要があります。</p> |
-|  | Experience Cloud認証が必要 | <p>このオプションを有効にした場合、Federated ID を持ち、Adobe Experience Cloudにログインできる受信者のみが、共有された公開リンクにアクセスできます。</p> <p>このオプションを有効にすると、ユーザーがAnalysis Workspaceプロジェクトへのリンクを作成するたびに、共有ダイアログで「Experience Cloud認証が必要」オプションが有効になり、リンクを共有しているユーザーは無効にできません。 ( ユーザーが組織外のユーザーとプロジェクトを共有する方法について詳しくは、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、現在アクティブな、Experience Cloudが有効になっていない公開リンクがすべて無効になります。</p></li> <li><p>このオプションを有効にし、後で無効にした場合、以前に非アクティブ化されたすべてのリンクは自動的には再アクティブ化されません。 この場合、ユーザーは、プロジェクトの共有ダイアログボックスで手動で再アクティブ化する必要があります。</p></li> <li><p>このオプションは、組織で SSO が実装されている場合にのみ使用できます。 システム管理者が組織で SSO を有効にする方法について詳しくは、 [ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}.</p><p>組織で SSO が設定されている場合は、コンソールに自動アカウント作成の種類が実装されているかどうかを確認します。 通常、システム管理者がこの設定を行います。詳しくは、 [自動アカウント作成を有効にする](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>HIPAA への準拠が必要な業界にいる場合、このオプションは自動的に有効化され、無効化できません。</p></li></ul> |
+|  | Workspace ユーザーとのみの共有を許可 | <p>このオプションが有効な場合：</p> <ul><li><p>[ 共有 ] メニューから [ 他のユーザーと共有 ] オプションが削除されました。 つまり、ユーザーは、組織内にAnalysis Workspaceアカウントを持たないユーザーと、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>以前に「誰とでも共有」共有オプションを使用してプロジェクトへのアクセスを受け取った人は、プロジェクトにアクセスできなくなりました。</p></li><p>**注意：** このオプションが有効（Workspace ユーザーとのみ共有を許可）になってから（他のユーザーとの共有を許可）無効にした場合、以前に「他のユーザーと共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有したユーザーは、 [!UICONTROL **リンクはアクティブです**] 他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**])、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p> |
+|  | Experience Cloud 認証を要求 | <p>有効にすると、Analysis Workspaceの「全員で共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。</p> <p>このオプションを有効にすると、ユーザーが「誰とも共有」共有オプションを使用してプロジェクトを共有したときに、共有ダイアログで「Experience Cloud認証が必要」オプションが有効になり、プロジェクトを共有しているユーザーは無効にできません。 ( ユーザーが他のユーザーとプロジェクトを共有する方法について詳しくは、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、以前に「誰とも共有」共有オプションで共有され、「Experience Cloud認証が必要」オプションが有効になっていないすべてのプロジェクトが無効になります。</p></li> <li><p>このオプションが有効 (Experience Cloud認証が必要 ) になり、後で無効（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）になった場合、以前に「全員で共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有するユーザーは、他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**] > [!UICONTROL **リンクはアクティブです**])、 [誰とでも公開リンクを共有（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>このオプションは、組織で SSO が実装されている場合にのみ使用できます。 システム管理者が組織で SSO を有効にする方法について詳しくは、 [ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}.</p><p>組織で SSO が設定されている場合は、コンソールに自動アカウント作成の種類が実装されているかどうかを確認します。 通常、システム管理者がこの設定を行います。詳しくは、 [自動アカウント作成を有効にする](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>HIPAA への準拠が必要な業界にいる場合、このオプションは自動的に有効化され、無効化できません。</p></li></ul> |
 
 {style="table-layout:auto"}
 

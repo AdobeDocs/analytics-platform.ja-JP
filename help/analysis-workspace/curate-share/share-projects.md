@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 64%
+source-wordcount: '1576'
+ht-degree: 63%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 64%
 
 * 組織内で、Customer Journey Analyticsへのアクセス権を持たないユーザーとグループ
 
-   受信者には表示専用アクセス権があります
+   受信者には読み取り専用アクセス権があります
 
 * 組織外の担当者
 
-   受信者には表示専用アクセス権があります
+   受信者には読み取り専用アクセス権があります
 
 任意 [キュレーション](curate.md) 共有前の申請は、受信者がプロジェクトを開くと反映されます。
 
@@ -58,7 +58,8 @@ ht-degree: 64%
 
 特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには：
 
-1. 共有するプロジェクトに移動し、**[!UICONTROL 共有]**／**[!UICONTROL プロジェクトを共有]**&#x200B;をクリックします。<!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. 共有するプロジェクトに移動し、「 **[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]**.
+
 未保存の変更がある場合は、最初にプロジェクトを保存するように求められます。
 
    ![](assets/share-proj-modal.png)
@@ -95,7 +96,8 @@ ht-degree: 64%
 
 プロジェクトリンクを組織内のユーザーと共有するには、次の手順を実行します。
 
-1. **[!UICONTROL 共有]**／**[!UICONTROL プロジェクトを共有]**&#x200B;をクリックします。<!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. クリック **[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]**.
+
 未保存の変更がある場合は、最初にプロジェクトを保存するように求められます。
 
    ![](assets/share-proj-modal.png)
@@ -104,11 +106,11 @@ ht-degree: 64%
 
 1. リンクを組織内のユーザーと共有します。例えば、メールや内部 web サイトなどにペーストすることができます。
 
-## 誰とでも公開リンクを共有（ログインは不要） {#share-public-link}
+## プロジェクトを他のユーザーと共有する（ログインは不要） {#share-public-link}
 
 {{release-limited-testing-section}}
 
-以下を許可： [表示のみのアクセス](/help/analysis-workspace/curate-share/view-only-projects.md) Analysis Workspaceへのアクセス権を持たないユーザーに対するCustomer Journey Analytics これには、以下が含まれます。
+以下を許可： [読み取り専用アクセス](/help/analysis-workspace/curate-share/view-only-projects.md) Analysis Workspaceへのアクセス権を持たないユーザーに対するCustomer Journey Analytics これには、以下が含まれます。
 
 * 組織外の担当者
 
@@ -116,44 +118,44 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->公開リンクを共有する際は、次の点を考慮してください。
+>CJA へのアクセス権を持たないユーザーとAnalysis Workspaceプロジェクトを共有する際は、次の点を考慮してください。
 >
->* CJA 管理者は、公開アクセスリンクを共有する機能を無効にできます ( [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するように公開リンクを共有できない場合、CJA 管理者はこの機能を無効にしています。
+>* この方法でプロジェクトを共有する機能を CJA 管理者が無効にすることができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するようにプロジェクトを共有できない場合、CJA 管理者はこの機能を無効にしています。
 >
->* 14 個を超える拡張ビジュアライゼーションを持つプロジェクトは、公開アクセスリンクを使用して共有できません。
+>* 14 個を超えるビジュアライゼーションが展開されたプロジェクトは、CJA へのアクセス権を持たないユーザーとは共有できません。
 
 
 Analysis Workspaceプロジェクトへの公開リンクを共有するには：
 
 1. 共有するAnalysis Workspaceプロジェクトを開きます。
 
-1. クリック **[!UICONTROL 共有]** > **[!UICONTROL 公開リンクを共有]**.
+1. クリック **[!UICONTROL 共有]** > **[!UICONTROL 他のユーザーと共有]**.
 
    未保存の変更がある場合は、プロジェクトを保存するよう求められます。
 
    <!-- Add screen shot of new modal -->
 
-1. を有効にします。 **[!UICONTROL リンクがアクティブ]** オプションを選択します（まだ有効になっていない場合）。
+1. を有効にします。 **[!UICONTROL リンクはアクティブです]** オプションを選択します（まだ有効になっていない場合）。
 
 1. 次のセキュリティオプションを有効にするかどうかを選択します（このオプションは CJA 管理者が制御できます）。
 
-   * **[!UICONTROL Experience Cloud認証が必要]:**
+   * **[!UICONTROL Experience Cloud 認証を要求]:**
 
-      共有プロジェクトへのアクセス権を取得する前に、SSO 経由で認証するためにリンクを持つユーザーを要求します。 組織内のユーザーのみがプロジェクトにアクセスできるようにする場合は、このオプションを選択します。
+      このオプションを有効にすると、共有しているプロジェクトを作成したAdobe Experience Cloud組織にログインできるユーザーのみが、プロジェクトにアクセスできます。
 
-      CJA 管理者は、会社に対してこの環境設定を設定できます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がこのオプションを設定した方法に応じて、次のシナリオが発生する場合があります。
+      CJA 管理者は、会社に対してこの設定をおこなうことができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がこのオプションを設定した方法に応じて、次のシナリオが発生する場合があります。
 
-      * このオプションが表示されない場合、CJA 管理者がこの機能を有効にしていませんでした。
+      * このオプションが表示されない場合、CJA 管理者はこの機能を有効にしていません。
 
-      * このオプションが有効化および淡色表示の場合、CJA 管理者は、すべてのパブリックリンクにアクセスするためにExperience Cloud認証が必要です。
+      * このオプションが有効で淡色表示の場合、CJA 管理者はAnalysis WorkspaceプロジェクトにアクセスするすべてのExperience Cloudに対して認証が必要です。
 
-1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコンをクリックして、リンクをシステムクリップボードにコピーします。
+1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクをコピーアイコン](assets/copy-link-icon.png) をクリックして、リンクをシステムクリップボードにコピーします。
 
 1. プロジェクトへのアクセス権を付与したい人とリンクを共有します。 例えば、リンクを E メールに貼り付けることができます。
 
-   リンクを共有した任意のユーザーがAnalysis Workspaceプロジェクトを表示できます。 パスワードを必要とする場合は、リンクにアクセスしたい人とパスワードを共有する必要があります。
+   リンクを共有した任意のユーザーがAnalysis Workspaceプロジェクトを表示できます。
 
-1. 選択 **[!UICONTROL 閉じる]** をクリックして、共有ダイアログボックスを閉じます。 変更内容は自動的に保存されます。 <!-- True? -->
+1. 選択 **[!UICONTROL 閉じる]** をクリックして、共有ダイアログボックスを閉じます。 変更内容は自動的に保存されます。
 
 ## プロジェクトマネージャーでプロジェクトを共有する {#Manager}
 

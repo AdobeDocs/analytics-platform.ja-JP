@@ -3,10 +3,10 @@ description: プロジェクトやビジュアライゼーションへの共有�
 keywords: Analysis Workspace の共有
 title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 81%
+source-wordcount: '338'
+ht-degree: 80%
 
 ---
 
@@ -20,13 +20,13 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 
 ![](assets/get-project-link.png)
 
-## 公開リンクを取得
+## 他のユーザーと共有する読み取り専用リンクを取得する
 
 {{release-limited-testing-section}}
 
-Adobe Analyticsへのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの表示専用リンクを共有できます。
+Customer Journey Analyticsへのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの読み取り専用リンクを共有できます。
 
-詳しくは、この記事の「誰とでも公開リンクを共有する（ログインは不要）」を参照してください。 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).
+詳しくは、この記事の「誰とでもプロジェクトを共有する（ログインは不要）」を参照してください。 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## パネルまたはビジュアライゼーションリンクの取得 {#panel-link}
 
