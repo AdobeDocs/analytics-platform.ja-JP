@@ -4,7 +4,7 @@ description: Customer Journey Analytics で Platform データセットへの接
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 1490efac916594b7d7eb146f1cfa6a1835878199
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 98%
@@ -68,8 +68,8 @@ ht-degree: 98%
    | --- | --- |
    | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、スキーマで 1 つ以上のユーザー ID が定義されていないことを意味します。Experience Platform で ID を定義する方法については、このビデオをご覧ください。 |
    | **[!UICONTROL タイムスタンプ]** | イベントデータセットの場合のみ、この設定は、Experience Platform のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 |
-   | **[!UICONTROL データソースタイプ]** | データソースのタイプは次のとおりです。Web データ、モバイルアプリデータ、POS データ、CRM データ、調査データ、コールセンターデータ、製品データ、アカウントデータ、トランザクションデータ、顧客フィードバックデータ、その他。 |
-   | **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的にワークスペースに送られるようにする場合は、このオプションを選択します。オンまたはオフに設定できます。 |
+   | **[!UICONTROL データソースタイプ]** | データソースのタイプは次のとおりです。 [!UICONTROL Web データ], [!UICONTROL モバイルアプリデータ], [!UICONTROL POS データ], [!UICONTROL CRM データ], [!UICONTROL 調査データ], [!UICONTROL コールセンターデータ], [!UICONTROL 製品データ], [!UICONTROL アカウントデータ], [!UICONTROL トランザクションデータ], [!UICONTROL 顧客フィードバックデータ]、および [!UICONTROL その他]. |
+   | **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的にワークスペースに送られるようにする場合は、このオプションを選択します。に設定できます。 [!UICONTROL オン] または [!UICONTROL オフ]. |
    | **[!UICONTROL データセットのバックフィル]** | **[!UICONTROL バックフィルをリクエスト]**&#x200B;をクリックして、履歴データをバックフィルします。<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、履歴データの量の影響を受けます。</li><li>Adobe Analytics ソースコネクタでは、サイズに関係なく、最大 13 か月分のデータを読み込みます。</li></ul> |
    | **[!UICONTROL バックフィルのステータス]** | 次に、使用可能なステータスインジケーターを示します。<ul><li>成功</li><li>X 個のバックフィルが処理中</li><li>オフ</li></ul> |
    | **[!UICONTROL データセット ID]** | この ID は自動的に生成されます。 |

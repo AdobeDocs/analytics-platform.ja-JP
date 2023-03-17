@@ -2,10 +2,10 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    | フリーフォームテーブル内から | フリーフォームテーブルの項目を右クリックし、「**[!UICONTROL 選択範囲からオーディエンスを作成]**」を選択します。この方法を使用すると、フィルターに、テーブルで選択したディメンションまたはディメンション項目があらかじめ入力されます。 |
    | フィルターの作成／編集 UI から | 「**[!UICONTROL このフィルターからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、フィルターが事前に設定されます。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. オーディエンスを構築します。
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    | [!UICONTROL フィルター] | フィルターは、オーディエンスに対する主な入力です。最大 20 のフィルターを追加できます。これらのフィルターは、`And` または `Or` 演算子と結合させることができます。 |
    | [!UICONTROL サンプル ID を表示] | このオーディエンスの ID の例。サンプル ID を検索するには、検索バーを使用します。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. データのプレビューを解釈します。
 
@@ -64,7 +64,7 @@ ht-degree: 100%
    | [!UICONTROL 含まれる名前空間] | オーディエンス内のユーザーに関連付けられている特定の名前空間。例としては、ECID、CRM ID、メールアドレスなどがあります。 |
    | [!UICONTROL サンドボックス] | このオーディエンスが格納されている [Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)。このオーディエンスを Platform に公開すると、このサンドボックスの範囲内でのみ操作できます。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. オーディエンスの設定を再度確認し、「**[!UICONTROL 公開]**」をクリックします。
 
@@ -82,19 +82,20 @@ ht-degree: 100%
 
 ## 待ち時間に関する考慮事項 {#latency}
 
-オーディエンスの公開前、公開中および公開後の複数の時点で、待ち時間が発生する可能性があります。発生し得る待ち時間の概要は次のとおりです。
+オーディエンスの公開前、公開中、公開後のいくつかの時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
 
-![](assets/latency-diagram.png)
+![AEP から CJA への遅延](assets/latency-diagram.png)
 
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
-| 1 | データレイクへのデータ取り込み | 最大 30 分 |
-| 2 | Experience Platform から CJA へのデータ取り込み | 最大 60 分 |
+| 未表示 | Adobe Analyticsから Analytics ソースコネクタ (A4T) | 最大 30 分 |
+| 1 | Data Lake へのデータ取り込み（Analytics Source Connector または他のソースから） | 最大 90 分 |
+| 2 | Experience Platformデータレイクから CJA へのデータ取り込み | 最大 90 分 |
 | 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 約 60 分 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 | 5 | AEP での宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
 
@@ -130,7 +131,7 @@ CJA オーディエンスが削除されると、そのオーディエンスは 
 
 +++
 
-+++**CJA は、オーディエンスデータをパイプラインイベントとして送信しますか、それともデータレイクにも送られるフラットファイルとして送信しますか？**
++++**CJA は、オーディエンスデータをパイプラインイベントとして、またはデータレイクにも送信するフラットファイルとして、送信しますか？**
 
 CJA はパイプラインを介してデータを RTCP にストリーミングし、このデータはデータレイク内のシステムデータセットにも収集されます。
 
@@ -138,7 +139,7 @@ CJA はパイプラインを介してデータを RTCP にストリーミング�
 
 +++**CJA はどのような ID を送信しますか？**
 
-[接続設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)で使用された ID／名前空間ペアのいずれかです。特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
+どの ID/名前空間ペアも [接続の設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection). 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
 
 +++
 
