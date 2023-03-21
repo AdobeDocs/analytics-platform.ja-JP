@@ -4,9 +4,9 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1574'
 ht-degree: 63%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 63%
 >* 14 個を超えるビジュアライゼーションが展開されたプロジェクトは、CJA へのアクセス権を持たないユーザーとは共有できません。
 
 
-Analysis Workspaceプロジェクトへの公開リンクを共有するには：
+誰とでもAnalysis Workspaceプロジェクトを共有するには：
 
 1. 共有するAnalysis Workspaceプロジェクトを開きます。
 

@@ -3,16 +3,14 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素でのエントリの編集
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 92%
+source-wordcount: '293'
+ht-degree: 70%
 
 ---
 
 # データ要素でのコンポーネントエントリの編集
-
-{{release-limited-testing}}
 
 Customer Journey Analytics管理者は、特定のレポートスイートのデータディクショナリ内のコンポーネントエントリを編集できます。 変更内容は、レポートスイートのすべてのユーザーに表示されます。
 
@@ -29,6 +27,8 @@ Customer Journey Analytics管理者は、特定のレポートスイートのデ
 1. ドロップダウンメニューで正しいレポートスイートが選択されます。デフォルトでは、既に存在するレポートスイートが表示されます。
 
 1. （オプション）検索フィールドに、編集するコンポーネントの名前を入力します。
+
+   コンポーネントの種類は、色とアイコンの両方で識別できます。 **Dimension** ![Dimensionアイコン](assets/dimension-icon.png) オレンジ色です **セグメント** ![セグメントアイコン](assets/segment-icon.png) 青い **日付範囲** ![日付範囲アイコン](assets/date-range-icon.png) 紫色で **指標** ![指標アイコン](assets/default-metric-icon.png) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはセグメントテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](assets/calculated-metric-icon-created.png) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 {{dd-filter-criteria}}
 

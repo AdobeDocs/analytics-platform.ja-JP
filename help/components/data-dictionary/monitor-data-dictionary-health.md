@@ -3,7 +3,7 @@ description: 管理者は、データ要素の正常性を監視する責任が�
 title: データ要素の正常性の監視
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 94%
@@ -11,8 +11,6 @@ ht-degree: 94%
 ---
 
 # データ要素の正常性の監視
-
-{{release-limited-testing}}
 
 Customer Journey Analytics管理者は、正常なデータディクショナリの管理を担当します。
 

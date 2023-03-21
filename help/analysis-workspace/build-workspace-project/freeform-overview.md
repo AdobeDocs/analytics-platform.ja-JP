@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1165'
-ht-degree: 100%
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+workflow-type: tm+mt
+source-wordcount: '1427'
+ht-degree: 81%
 
 ---
 
@@ -21,26 +21,44 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 ![](assets/sample-project.png)
 
-Workspace のプロジェクト一覧ページには、次の情報が表示されます。
+「プロジェクト」ページには、次の情報が含まれます。
+
+>[!NOTE]
+>
+>一部の列は、デフォルトでは表示されません。 表示される列をカスタマイズするには、 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/projects-page-customize-columns-icon.png).
+
 
 | 要素 | 説明 |
 |---|---|
-| [新規プロジェクトを作成](/help/analysis-workspace/home.md) | このリンクをクリックすると、新しいプロジェクトを最初から作成できます。 |
-| プロジェクトの管理 | このリンクをクリックすると、プロジェクトコンポーネントマネージャーに移動します（**[!UICONTROL Analytics]**／**[!UICONTROL コンポーネント]**／**[!UICONTROL プロジェクト]**）。ここでは、すべてのプロジェクトが一覧表示され、プロジェクトのタグ付け、共有、削除、名前の変更、承認、コピー、CSV への書き出しをおこなえます。 |
-| ランディングページとして設定 | このページを Workspace ランディングページにします。 |
-| [チュートリアルを表示](/help/analysis-workspace/home.md) | Analysis Workspace ビデオチュートリアルに移動します。 |
+| [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルに関する、Analysis Workspaceおよびその関連コンポーネントの設定を管理します。 |
+| [フォルダーを作成](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 新しいフォルダまたはサブフォルダをプロジェクトとフォルダのリストに追加します。 |
+| [プロジェクトの作成](/help/analysis-workspace/home.md) | 新しいプロジェクトを最初から、またはから開始する [テンプレート](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ja#analysis-workspace). |
+| プロジェクトの管理 <!--I don't see this option--> | このリンクをクリックすると、プロジェクトコンポーネントマネージャーに移動します（**[!UICONTROL Analytics]**／**[!UICONTROL コンポーネント]**／**[!UICONTROL プロジェクト]**）。ここでは、すべてのプロジェクトが一覧表示され、プロジェクトのタグ付け、共有、削除、名前の変更、承認、コピー、CSV への書き出しを行えます。 |
+| ランディングページとして設定 <!--I don't see this option--> | このページを Workspace ランディングページにします。 |
+| 詳細を表示 | 空のプロジェクトまたはモバイルスコアカードを作成するためのオプションを表示します。 [トレーニングチュートリアルの表示](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=ja)または [リリースノートの表示](/help/release-notes/latest.md). |
+| フォルダとプロジェクトを表示 | プロジェクトのフォルダ構造を表示するかどうかを選択します。 詳しくは、[Analytics のフォルダーについて](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)を参照してください。 |
+| テーブルをカスタマイズ（アイコン） | プロジェクトページの各プロジェクトに表示される情報をカスタマイズできます。 |
 | 名前 | Workspace プロジェクトの名前。 |
-| 所有者 | このプロジェクトを作成したユーザー（ユーザー自身、またはユーザー自身とそのプロジェクトを共有した他のユーザー）。 |
-| タイプ | Workspace プロジェクトか[モバイルスコアカード](/help/mobile-app/home.md)のどちらであるかを示します。 |
-| [プロジェクトの役割](/help/analysis-workspace/curate-share/share-projects.md) | プロジェクトの役割（所有者、編集、重複、表示）を示します。 |
+| タイプ | これが Workspace プロジェクト、フォルダ、または [モバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=ja). |
 | タグ | プロジェクトに適用されたタグです。 |
+| スケジュール済み | プロジェクトがスケジュールに従って受信者に電子メールで送信されるようにスケジュールされているかどうかを示します。 詳しくは、 [プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| 共有リンク（全員） | プロジェクトは、Analysis Workspaceにアクセスできないユーザーとでも誰とでも共有できます。 この列は、この方法でプロジェクトが共有されたかどうかを示します。 詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
+| レポートスイート | プロジェクトが関連付けられているレポートスイート。 |
+| [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja) | プロジェクトの役割（所有者、編集、重複、表示）を示します。 |
+| 所有者 | このプロジェクトを作成したユーザー（ユーザー自身、またはユーザー自身とそのプロジェクトを共有した他のユーザー）。 |
+| 共有先 | プロジェクトの共有先のユーザー。 |
 | 最終変更日 | プロジェクトが最後に変更された日付。 |
-| お気に入りのプロジェクト | プロジェクトをお気に入りに登録するには、プロジェクトを開き、名前の横の星をクリックします。このリストは、次回 Workspace を開いたときに表示されます。 |
-| 頻繁に表示するプロジェクト | 頻繁に開くすべてのプロジェクトをリストし、アクセスしやすくします。 |
+| 最終開封日 | プロジェクトが最後に開かれた日時。 |
+| プロジェクト ID | プロジェクトの ID。 |
+| 最長の日付範囲 | プロジェクトの最も長い日付範囲。 |
+| クエリ数 | プロジェクトに含まれるクエリの合計数。 |
+| 場所 | プロジェクトが存在するフォルダー。 |
+| お気に入りのプロジェクト <!--I don't see this option--> | プロジェクトをお気に入りに登録するには、プロジェクトを開き、名前の横の星をクリックします。このリストは、次回 Workspace を開いたときに表示されます。 |
+| 頻繁に表示するプロジェクト <!--I don't see this option--> | 頻繁に開くすべてのプロジェクトをリストし、アクセスしやすくします。 |
 
 ## メニューバー {#menu-bar}
 
-プロジェクト内のメニューには、プロジェクトの管理、コンポーネントの追加、ヘルプの検索などをおこなうためのオプションが表示されます。各メニューオプションには、キーボード[ショートカット](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用してアクセスできます。
+プロジェクト内のメニューには、プロジェクトの管理、コンポーネントの追加、ヘルプの検索などを行うためのオプションが表示されます。各メニューオプションには、キーボード[ショートカット](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用してアクセスできます。
 
 ![](assets/menu.png)
 
@@ -106,7 +124,7 @@ Analysis Workspace プロジェクトは、**Analytics／コンポーネント�
 | アクション | 説明 |
 |---|---|
 | 追加 | 新しいプロジェクトをゼロから作成します。 |
-| タグまたは承認 | 「タグ」または「承認」を選択すると、プロジェクトが整理され、検索しやすくなります。 |
+| タグまたは承認 | 「タグ」または「承認」を選択してプロジェクトを整理し、検索しやすくします。 |
 | [共有](/help/analysis-workspace/curate-share/share-projects.md) | プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。 |
 | 削除 | プロジェクトを削除します。 |
 | 名前変更 | プロジェクトの名前を編集します。 |

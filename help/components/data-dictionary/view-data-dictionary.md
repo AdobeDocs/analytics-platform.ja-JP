@@ -3,16 +3,14 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素の表示
 feature: Components
 role: User, Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 94%
+source-wordcount: '280'
+ht-degree: 71%
 
 ---
 
 # データ要素でのコンポーネント情報の表示
-
-{{release-limited-testing}}
 
 データ要素を使用すると、コンポーネントの説明、類似のコンポーネント、コンポーネントが頻繁に使用される他のコンポーネントなど、コンポーネントに関する情報を表示できます。
 
@@ -31,6 +29,8 @@ ht-degree: 94%
 1. 表示するコンポーネントを含むレポートスイートがドロップダウンメニューで選択されます。デフォルトでは、既に存在するレポートスイートが表示されます。
 
 1. （オプション）検索フィールドに、表示するコンポーネントの名前の入力します。
+
+   コンポーネントの種類は、色とアイコンの両方で識別できます。 **Dimension** ![Dimensionアイコン](assets/dimension-icon.png) オレンジ色です **セグメント** ![セグメントアイコン](assets/segment-icon.png) 青い **日付範囲** ![日付範囲アイコン](assets/date-range-icon.png) 紫色で **指標** ![指標アイコン](assets/default-metric-icon.png) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはセグメントテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](assets/calculated-metric-icon-created.png) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 {{dd-filter-criteria}}
 

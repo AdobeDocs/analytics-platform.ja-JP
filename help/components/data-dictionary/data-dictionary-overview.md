@@ -3,7 +3,7 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素の概要
 feature: Components
 role: User, Admin
-source-git-commit: 5d6942af4ac3f999c5e7fd7d6ba74a5fe7a26a9d
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 77%
@@ -11,8 +11,6 @@ ht-degree: 77%
 ---
 
 # データ要素の概要
-
-{{release-limited-testing}}
 
 Analysis Workspace のデータ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。
 
