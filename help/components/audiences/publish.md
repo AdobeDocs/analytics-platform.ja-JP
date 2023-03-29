@@ -2,10 +2,10 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 94%
+source-wordcount: '1502'
+ht-degree: 90%
 
 ---
 
@@ -154,6 +154,19 @@ CJA はパイプラインを介してデータを RTCP にストリーミング�
 いいえ。「ユーザー」ごとに送信される ID は 1 つだけなので、RTCP はグラフエッジを使用しません。
 
 +++
+
++++**毎日、毎週および毎月の更新は、何時におこなわれますか？ 毎週の更新は何曜日におこなわれますか？**
+
+更新のタイミングは、元のオーディエンスが公開された日時に基づき、その時刻（および曜日または月曜日）に関連付けられます。
+
++++
+
++++**ユーザーは、毎日、毎週、毎月の更新時間を設定できますか？**
+
+いいえ、ユーザーが設定することはできません。
+
++++
+
 
 ## 次の手順
 
