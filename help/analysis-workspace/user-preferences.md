@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
+source-git-commit: 2d96b246ecee6ce447b5a03216e093b71a83a8ac
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 82%
+source-wordcount: '3139'
+ht-degree: 79%
 
 ---
 
@@ -186,7 +186,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **プロジェクトの共有** |  |  |
-|  | Workspace ユーザーとのみ共有を許可 | <p>このオプションが有効な場合：</p> <ul><li><p>[ 共有 ] メニューから [ 他のユーザーと共有 ] オプションが削除されました。 つまり、ユーザーは、組織内にAnalysis Workspaceアカウントを持たないユーザーと、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>以前に「誰とでも共有」共有オプションを使用してプロジェクトへのアクセスを受け取った人は、プロジェクトにアクセスできなくなりました。</p></li><p>**注意：** このオプションが有効（Workspace ユーザーとのみ共有を許可）になってから（他のユーザーとの共有を許可）無効にした場合、以前に「他のユーザーと共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有したユーザーは、 [!UICONTROL **リンクはアクティブです**] 他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**])、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p> |
+|  | Workspace ユーザーとのみ共有を許可 | <p>このオプションを有効にすると、組織内のユーザーは共有メニューの「他のユーザーと共有」オプションを表示できなくなります。 つまり、ユーザーは、組織でAnalysis Workspaceアカウントを持たないユーザーと、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p><p>このオプションは、医療業界の組織を除くすべての組織で、デフォルトで無効になっています。 </p><p>このオプションを有効または無効にする際は、次の点を考慮してください。</p> <ul><li><p>このオプションを有効にすると、以前に「他のユーザーと共有」共有オプションを使用してプロジェクトへのアクセスを受け取った人は、そのプロジェクトにアクセスできなくなります。</p></li><li><p>このオプションが有効（Workspace ユーザーとのみ共有を許可）になってから（他のユーザーとの共有を許可）無効にした場合、以前に「他のユーザーと共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有したユーザーは、 [!UICONTROL **リンクはアクティブです**] 他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**])、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**医療業界の組織の場合：** このオプションは、デフォルトで有効と淡色表示になっています。 このオプションを無効にして、ユーザーが「他のユーザーと共有」共有オプションを使用できるようにする前に、まず [!UICONTROL **他のユーザーとプロジェクトリンクを共有する**] 権限 ( [!UICONTROL **レポートツール**]) をAdobe Admin Consoleでクリックします。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。 権限を追加する方法について詳しくは、「Admin Console」を参照してください。 [製品の権限のAdmin Console](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html).</p></li> |
 |  | Experience Cloud 認証を要求 | <p>有効にすると、Analysis Workspaceの「全員で共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。</p> <p>このオプションを有効にすると、ユーザーが「誰とも共有」共有オプションを使用してプロジェクトを共有したときに、共有ダイアログで「Experience Cloud認証が必要」オプションが有効になり、プロジェクトを共有しているユーザーは無効にできません。 ( ユーザーが他のユーザーとプロジェクトを共有する方法について詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、以前に「誰とも共有」共有オプションで共有され、「Experience Cloud認証が必要」オプションが有効になっていないすべてのプロジェクトが無効になります。</p></li> <li><p>このオプションが有効 (Experience Cloud認証が必要 ) になり、後で無効（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）になった場合、以前に「全員で共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有するユーザーは、他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**] > [!UICONTROL **リンクはアクティブです**])、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>このオプションは、組織で SSO が実装されている場合にのみ使用できます。 システム管理者が組織で SSO を有効にする方法について詳しくは、 [ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}.</p><p>組織で SSO が設定されている場合は、コンソールに自動アカウント作成の種類が実装されているかどうかを確認します。 通常、システム管理者がこの設定を行います。詳しくは、 [自動アカウント作成を有効にする](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>HIPAA への準拠が必要な業界にいる場合、このオプションは自動的に有効化され、無効化できません。</p></li></ul> |
 
 {style="table-layout:auto"}
