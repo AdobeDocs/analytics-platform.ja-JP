@@ -3,10 +3,10 @@ description: 組織内の受信者に対して PDF／CSV プロジェクトを�
 title: 共有メニュー
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '162'
-ht-degree: 100%
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 69%
 
 ---
 
@@ -14,10 +14,14 @@ ht-degree: 100%
 
 Workspace の **共有メニュー** 内で、組織の受信者に対して PDF／CSV プロジェクトのキュレーション、共有およびスケジュール設定を行えます。
 
+>[!AVAILABILITY]
+>
+>この記事で説明する機能の一部は、リリースの制限付きテスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 このメモは、機能が一般入手可能になったら削除されます。Analytics リリースプロセスについて詳しくは、[Adobe Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。
+
 | メニューオプション | 説明 |
-| --- | --- |
-| [!UICONTROL プロジェクトを共有] | プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja) |
-| [!UICONTROL プロジェクトリンクを取得] | プロジェクトにすばやくアクセスするための共有可能なリンクを作成します。ユーザーはログインする必要があります。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=ja) |
-| [!UICONTROL 今すぐファイルを送信] | プロジェクトを CSV または PDF 形式で、指定した受信者にすぐに送信します。 |
-| [!UICONTROL スケジュールに従ってファイルを送信] | プロジェクトを CSV または PDF 形式でスケジュールに従って指定した受信者に送信します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html?lang=ja) |
-| [!UICONTROL プロジェクトデータをキュレート] | プロジェクトで使用できるコンポーネント（ディメンション、指標、フィルター、日付範囲）を制限します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=ja) |
+|---|---|
+| Workspace ユーザーと共有 | プロジェクトを組織内の他の Analysis Workspace ユーザーも利用できるようになります。特定のユーザーと共有するか、共有可能なリンクを作成してプロジェクトにすばやくアクセスできるようにします。 ユーザーはログインする必要があります。 [詳細情報](/help/analysis-workspace/curate-share/share-projects.md) |
+| 任意のユーザーと共有 | Adobe Analyticsへのアクセス権を持たないユーザーに、Analysis Workspaceプロジェクトへの読み取り専用アクセス権を付与します。 [詳細情報](/help/analysis-workspace/curate-share/share-projects.md) |
+| ファイルを書き出し | プロジェクトを CSV または PDF 形式で、指定した受信者にすぐに送信します。[詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) |
+| ファイルの書き出しをスケジュール | プロジェクトを CSV または PDF 形式でスケジュールに従って指定した受信者に送信します。[詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) |
+| プロジェクトデータをキュレート | プロジェクトで使用できるコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限します。[詳細情報](/help/analysis-workspace/curate-share/curate.md) |

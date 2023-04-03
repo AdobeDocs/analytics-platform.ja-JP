@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 電子メールで受信者に直ちにファイルを送信するには、以下を実行します。
 
-1. クリック **[!UICONTROL 共有] > [!UICONTROL ファイルを今すぐ送信]**.
+1. クリック **[!UICONTROL 共有] > [!UICONTROL ファイルを書き出し]**.
 1. ファイルタイプ（CSV または PDF）を指定します。
 1. （任意）電子メールに含まれる、受信ファイルについての説明を追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 定期的なスケジュールでファイルを電子メールで受信者に送信するには、以下を実行します。
 
-1. クリック **[!UICONTROL 共有] > [!UICONTROL ファイルをスケジュールに従って送信]**.
+1. クリック **[!UICONTROL 共有] > [!UICONTROL スケジュールファイルの書き出し]**.
 1. ファイルタイプ（CSV または PDF）を指定します。
 1. （任意）電子メールに含まれる、受信ファイルについての説明を追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。

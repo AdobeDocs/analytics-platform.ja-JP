@@ -3,10 +3,10 @@ description: プロジェクトやビジュアライゼーションへの共有�
 keywords: Analysis Workspace の共有
 title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 80%
+source-wordcount: '375'
+ht-degree: 62%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 80%
 
 Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。リンクタイプによっては、プロジェクトにアクセスする前に受信者がAdobe Analyticsにログインする必要がある場合と、ログインしない場合があります。
 
-## プロジェクトリンクの取得 {#project-link}
+## 他の Workspace ユーザーと共有するプロジェクトリンクを取得する {#project-link}
 
-完全なプロジェクトへのリンクを共有するには、 **[!UICONTROL 共有／プロジェクトリンクの取得]**&#x200B;に移動します。リンクの受信者に[プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)が割り当てられていない場合、管理者には「**[!UICONTROL 編集可能]**」が表示され、管理者以外のユーザーには「**[!UICONTROL 複製可能]**」のエクスペリエンスが表示されます。
+プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、「次に移動」を選択します。 [!UICONTROL **共有**] > [!UICONTROL **プロジェクトリンクを取得**] ( または **共有**] > [!UICONTROL **Workspace ユーザーと共有**] > [!UICONTROL **リンクで共有**) をクリックします。 リンクを共有するユーザーは、ログインする必要があります。
 
-![](assets/get-project-link.png)
+リンクの受信者に [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)管理者が受け取る **[!UICONTROL 編集可能]** 管理者以外が受け取る **[!UICONTROL 複製可能]** エクスペリエンス。
 
 ## 他のユーザーと共有する読み取り専用リンクを取得する
 
