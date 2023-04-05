@@ -1,7 +1,7 @@
 ---
 title: Adobe Journey Optimizer Decision Management とCustomer Journey Analytics(CJA) の統合
 description: Adobe Journey Optimizer Decision Management で生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
-source-git-commit: f9ee0db464c49339bc36b144e18ef4aea4f4f033
+source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 19%
@@ -78,4 +78,5 @@ Adobe Experience Platformは、中央のデータソースとして機能し、�
 | オファー配信停止 | プロファイルによってリクエストされた今後表示されないオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | コンポーネントタイプ：指標 |
 
 {style="table-layout:auto"}
+
 [1] 使用可能な各種イベントタイプに対して複数の指標を定義できます。 詳しくは、 [「値を除外」コンポーネント設定を含める](/help/data-views/component-settings/include-exclude-values.md) を参照してください。
