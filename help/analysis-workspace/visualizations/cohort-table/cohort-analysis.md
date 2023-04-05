@@ -3,10 +3,10 @@ title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,10 +30,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->[!UICONTROL コホート分析]
->
->は、フィルタリングできない指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。フィルターで使用できる指標のみを
->[!UICONTROL コホート分析]で使用できます。一度に 1 つのみ増やすことができます。
+>[!UICONTROL コホート分析] は、フィルタリング不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。 フィルターで使用できる指標のみが [!UICONTROL コホート分析]で、一度に 1 つのみ増やすことができます。
 
 ## コホート分析の機能
 

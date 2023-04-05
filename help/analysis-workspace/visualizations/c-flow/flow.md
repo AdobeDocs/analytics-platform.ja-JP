@@ -3,10 +3,10 @@ description: フロー機能は、web サイトおよびアプリの顧客パス
 title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '185'
-ht-degree: 100%
+source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ ht-degree: 100%
 [ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローは、ホームページからメンズページを経て、靴部門に移動することが考えられます。
 
 各列は、異なるディメンションを表示することがあります。ディメンションをドラッグしてドロップゾーンにドロップし、そのディメンションを図に追加します。
+
+## フロービジュアライゼーションの設定
+
+フロービジュアライゼーションの設定方法について詳しくは、 [フロービジュアライゼーションの設定](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## フロー図が含まれたプロジェクト .CSV ファイルの書き出し {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
