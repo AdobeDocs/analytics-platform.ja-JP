@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
+source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 93%
+source-wordcount: '1584'
+ht-degree: 92%
 
 ---
 
@@ -20,6 +20,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年3月** |  |
+| 決定管理データの統合 | 次の方法を説明する内容を追加しました。 [CJA でのAdobe Journey Optimizer Decision Management データの統合](/help/integrations/ajo-od.md). |
 | モバイルスコアカードでのデータストーリーの作成 | A [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories) は、中央のテーマや指標に基づいて構築された、サポートされるデータポイント、ビジネスコンテキスト、関連指標の集まりです。 |
 | 機能のサポート | CJA で使用でき、AA では使用不可能またはサポートされていない機能のテーブルを使用した [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
 | デフォルトの計算指標 | [アドビが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)を説明するコンテンツを追加しました。 |
