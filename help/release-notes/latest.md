@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d09094798d22f32d3467527e0c3e1817ff76b5a2
+source-git-commit: ffb98086d38c2e1d880f0b3c584fdbb33d75966e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 99%
 
 ---
@@ -20,7 +20,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウトの開始](/help/release-notes/releases.md) | [一般公開](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Analysis Workspace でのデータ要素** | データ要素は、ユーザーと管理者の両方が CJA 環境のコンポーネント（ディメンションや指標）を追跡し、よりよく理解するのに役立ちます。[詳細情報](/help/components/data-dictionary/data-dictionary-overview.md) | 2023年3月8日（PT） | 2023年3月29日（PT） |
+| **Analysis Workspace でのデータ要素** | データ要素は、ユーザーと管理者の両方が CJA 環境のコンポーネント（ディメンションや指標）を追跡し、よりよく理解するのに役立ちます。[詳細情報](/help/components/data-dictionary/data-dictionary-overview.md) | 2023年3月8日（PT） | **一時的に利用不可** |
 | **モバイルダッシュボードのデータストーリー** | データストーリーを使用すると、カスタマイズ可能な複数の詳細ビューをモバイルスコアカードプロジェクトのタイルに追加できます。データストーリーを使用して、カスタマージャーニーにおける主な推進要因、関連指標、様々な手順を詳しく調べます。 これらのビューを簡単にスワイプすると、主要指標の背後にある全体像を把握できます。 [詳細情報](/help/mobile-app/create-scorecard.md#create-data-story) | 該当なし | 2023年3月8日（PT） |
 | **スケジュールされたプロジェクトの有効期限** | スケジュールの頻度に関係なく、スケジュールされたプロジェクトの有効期限日は最長で 1 年先まで設定できます。[詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) | 該当なし | 2023年3月8日（PT） |
 | **プロジェクトのリンク共有（ログインは不要） - プライベートベータ版アクセスのみ** | CJA へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。プロジェクトリンクは、組織外の人や、組織内で CJA 用にプロビジョニングされていない人と共有できます。[詳細情報](/help/analysis-workspace/curate-share/share-projects.md)<p>プライベートベータ版に参加するには、アドビアカウントチームにお問い合わせください。 | 2023 年 4 月 27 日 | 2023年6月 |
