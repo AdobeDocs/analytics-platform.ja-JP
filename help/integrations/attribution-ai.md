@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 98%
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -117,11 +117,11 @@ AAI データを使用したワークスペースプロジェクトが表示さ�
 
 ![リードタイム](assets/lead-time.png)
 
-## アトリビューション AI と Attribution IQ の違い
+## Attribution AIと CJA のアトリビューション機能の違い
 
-では、CJA のネイティブ機能である [Attribution IQ](/help/analysis-workspace/attribution/overview.md) と比較して、アトリビューション AI データはどのような場合に使用する必要があるでしょうか。次の表に、機能の違いの一部を示します。
+次の表に、機能の違いを示します。
 
-| 機能 | アトリビューション AI | Attribution IQ |
+| 機能 | アトリビューション AI | CJA アトリビューション |
 | --- | --- | --- |
 | 増分アトリビューションを実行 | ○ | × |
 | ユーザーにモデルの調整を許可 | ○ | ○ |
@@ -131,4 +131,4 @@ AAI データを使用したワークスペースプロジェクトが表示さ�
 | 地域ベースのアトリビューションモデル | ○ | ○ |
 | モデルでマーケティングタッチポイントを設定できる | ○ | × |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

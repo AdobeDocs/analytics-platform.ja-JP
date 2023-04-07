@@ -4,13 +4,13 @@ description: Customer Journey Analytics と BI ソリューションの比較
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 98%
 
 ---
-
 
 # CJA と BI ソリューションの比較
 
@@ -62,13 +62,11 @@ CJA は、数百または数千のサーバーに分析を分散する強力な�
 
 * 予測アルゴリズムと機械学習を使用して、データの異常な動作を引き起こしている原因に関するインサイトを提供する、[異常値検出](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)などの&#x200B;**仮想アナリスト機能**。
 
-* [フロー図](/help/analysis-workspace/visualizations/c-flow/flow.md)、[Attribution IQ](/help/analysis-workspace/attribution/overview.md)、[フォールアウト図](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[ディメンション分類](/help/components/dimensions/t-breakdown-fa.md)など、カスタマージャーニーのインサイトに特に焦点を当てた&#x200B;**アドバンス分析機能**。標準のビジュアライゼーションの例を以下に示します。
+* **高度な分析機能** 顧客のジャーニーに関するインサイトに特に焦点を当てたもの（例： ） [フロー図](/help/analysis-workspace/visualizations/c-flow/flow.md), [アトリビューションパネル](/help/analysis-workspace/c-panels/attribution.md), [フォールアウト図](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、および [ディメンション分類](/help/components/dimensions/t-breakdown-fa.md). 標準のビジュアライゼーションの例を以下に示します。
 
    * [コホート／待ち時間テーブルによる顧客維持分析](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)。ビルダーで指標／ディメンションをドラッグ＆ドロップするだけで、30 秒以内に完了します。
 
    * [フォールアウト](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)／[フロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)のビジュアライゼーション。1 分もかからずに設定できます。
-
-   * [アトリビューションモデル](/help/analysis-workspace/attribution/algorithmic.md)。ファーストタッチ、ラストタッチ、パーティシペーション、タイムディケイなどのモデルであり、さらには数回のクリックで設定できるカスタムモデルも含まれます。
 
 * **プログレッシブ探索のすべてのステップでのセグメント化機能**：妥当だと思われる場合はいつでも、オーディエンスを Experience Platform に公開し、そこから、サポートされている任意の宛先に公開できます。
 
@@ -86,4 +84,3 @@ CJA は、数百または数千のサーバーに分析を分散する強力な�
 ## 概要
 
 CJA は、高度に最適化されたカスタマージャーニーに焦点を当てたレポートエンジンをわかりやすいツールやコンポーネントとシームレスに統合して、分析を実行し、レポートや高度なビジュアライゼーションを作成する方法において、BI ツールとは異なります。クエリエンジンとビジュアライゼーション環境の間を行き来する必要がなく、単一の UI からすべてを実行できます。
-

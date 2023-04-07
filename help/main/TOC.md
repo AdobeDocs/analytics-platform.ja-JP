@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '881'
 ht-degree: 99%
 
 ---
@@ -163,12 +163,6 @@ ht-degree: 99%
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](../analysis-workspace/curate-share/download-send.md)
       + [プロジェクトのスケジュール](../analysis-workspace/curate-share/t-schedule-report.md)
-   + Attribution IQ {#attribution}
-      + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
-      + [アトリビューションモデルとルックバックウィンドウ](../analysis-workspace/attribution/models.md)
-      + [アルゴリズムアトリビューション](../analysis-workspace/attribution/algorithmic.md)
-      + [アトリビューションのベストプラクティス](../analysis-workspace/attribution/best-practices.md)
-      + [FAQ](../analysis-workspace/attribution/faq.md)
    + 仮想アナリスト {#virtual-analyst}
       + [仮想アナリストの概要](../analysis-workspace/virtual-analyst/overview.md)
       + 異常値検出 {#anomaly-detection}
@@ -185,7 +179,6 @@ ht-degree: 99%
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace のアクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace のロングテール](../analysis-workspace/workspace-faq/long-tail.md)
-
 
 
 

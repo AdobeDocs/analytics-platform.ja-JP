@@ -4,8 +4,8 @@ description: コールセンターと web サイトのデータをリンクさ�
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ CJA で[接続を作成](/help/connections/create-connection.md)します。
 1. web ページ名を保持しているディメンションをフリーフォームテーブルのビジュアライゼーションにドラッグします。
 1. 指標を、測定するコールセンター指標に置き換えます。
 1. 指標のヘッダーの近くにある歯車のアイコンをクリックします。「**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**」をクリックします。
-1. 目的の [アトリビューションモデル](/help/analysis-workspace/attribution/models.md) を設定します。例えば、半減期が 15 分のタイムディケイモデルと、セッションのルックバックウィンドウがあります。このアトリビューションモデルは、コールセンターへの問い合わせにつながるページにクレジットを付与します。
+1. 目的の [アトリビューションモデル](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) を設定します。例えば、半減期が 15 分のタイムディケイモデルと、セッションのルックバックウィンドウがあります。このアトリビューションモデルは、コールセンターへの問い合わせにつながるページにクレジットを付与します。
 
 結果のレポートには、コールセンターへの問い合わせに最も貢献したページが表示されます。<!-- use case behind what we use these pages for -->
 

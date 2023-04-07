@@ -3,9 +3,9 @@ description: Adobe Analysis Workspace とその関連コンポーネントに関
 title: Analysis Workspace の一般的なエラーメッセージ
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '332'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -20,5 +20,4 @@ Analysis Workspace の操作中に、パフォーマンスにも影響を与え�
 | [!UICONTROL エラー500：ページの読み込みに失敗しました] | 会社の[ファイアウォール設定](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=ja)など、ローカルネットワークに関する問題が、このエラーの原因の 1 つです。さらに、解決が必要な問題がアドビで発生している可能性があります。 | 数分後にもう一度ログインしてみてください。問題が解決しない場合は、EIM インスタンス ID コードをカスタマーケアに送信します。 |
 | [!UICONTROL このビジュアライゼーションのフィルターまたは検索のいずれかに、返された結果が多すぎるテキスト検索が含まれています。] | フィルター条件またはレポートフィルターの範囲が広すぎます。 | 検索テキストの条件を絞り込んで、リクエストを再試行してください。 |
 | [!UICONTROL リクエストが複雑すぎます。] | レポート要求が大きすぎるので、実行できません。このエラーの原因は、リクエストのサイズ、フィルターまたは検索フィルターで一致した項目が多すぎること、含まれる指標が多すぎること、互換性のないディメンションと指標の組み合わせなどによるタイムアウトです。 | テーブルの一部の列や行を削除してリクエストを簡略化するか、テーブルを個別のリクエストに分割することを検討します。 |
-| [!UICONTROL このディメンションでは、現在、デフォルト以外のアトリビューションモデルをサポートしていません。] | デフォルト以外の属性は、お使いのディメンションではサポートされません。 | テーブル内のディメンションを、[Attribution IQ](/help/analysis-workspace/attribution/overview.md) と互換性のあるディメンションに置き換えます。 |
 | [!UICONTROL 列が多すぎるか事前設定された行が原因で、要求に失敗しました。] | テーブルに含まれるフリーフォームセル（行 x 列）が多すぎます。 | テーブルの列または行を削除するか、テーブルを個別のリクエストに分割することを検討します。 |

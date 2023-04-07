@@ -1,12 +1,12 @@
 ---
 title: データビューの作成または編集
 description: データビューの作成や編集を行うために調整できるすべての設定。
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '1224'
 ht-degree: 100%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## データビューの設定 {#configure}
+## データビューの設定
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、「**[!UICONTROL データビュー]**」タブに移動します。
 2. 「**[!UICONTROL 追加]**」をクリックしてデータビューを作成するか、既存のデータビューをクリックして編集します。
 
 ![新規データビュー](assets/new-data-view.png)
 
-### データビュー設定 {#settings}
+### データビュー設定
 
 データビューの包括的な設定を提供します。
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 | [!UICONTROL 名前] | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンに表示されます。 |
 | [!UICONTROL 説明] | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### コンテナ {#containers}
+### コンテナ
 
 データビューのコンテナの名前を指定します。コンテナ名は、[フィルター](/help/components/filters/filters-overview.md#Filter-containers)でよく使用されます。
 
@@ -48,9 +48,9 @@ ht-degree: 100%
 | [!UICONTROL セッションのコンテナ名] | [!UICONTROL セッション]（デフォルト）。[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。このコンテナの名前は、「訪問」または組織が指定したその他の用語に変更できます。 |
 | [!UICONTROL イベントのコンテナ名] | [!UICONTROL イベント]（デフォルト）。[!UICONTROL イベント] コンテナは、データセット内の個々のイベントを定義します。組織で異なる用語（「ヒット数」や「ページビュー数」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### カレンダー {#calendar}
+### カレンダー
 
 データビューで使用するカレンダーの形式を示します。同じ [接続](/help/connections/create-connection.md) に基づいて複数のデータビューを作成し、異なるカレンダータイプやタイムゾーンを設定できます。これらのデータビューを使用すると、異なるカレンダータイプを使用するチームが、同じ基データを使用して、それぞれのニーズに対応できます。
 
@@ -62,9 +62,9 @@ ht-degree: 100%
 | [!UICONTROL 現在の年の最初の日] | カスタムのカレンダータイプに対して表示されます。現在の年の開始日を指定します。カレンダーでは、この値に基づいて各週の最初の曜日が自動的に書式設定されます。 |
 | [!UICONTROL 「余分な」週が発生する年] | ほとんどの 364 日間カレンダー（7 日間を 52 週間）では、残りの日が 1 週間分貯まるまで毎年累積されます。 この追加の週は、その年の最後の月に追加されます。余分な週を追加する年を指定します。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## データビューのコンポーネントの設定 {#set-components}
+## データビューのコンポーネントの設定
 
 次に、スキーマ要素から指標やディメンションを作成できます。標準コンポーネントも使用できます。
 
@@ -95,13 +95,13 @@ ht-degree: 100%
    * [[!UICONTROL 永続性]](component-settings/persistence.md)
    * [[!UICONTROL 値のバケット化]](component-settings/value-bucketing.md)
 
-## 指標またはディメンションの複製 {#duplicate}
+## 指標またはディメンションの複製
 
 指標またはディメンションを複製し、特定の設定を変更することで、単一のスキーマフィールドから複数の指標またはディメンションを簡単に作成できます。右上にある指標またはディメンションの名前の下にある「[!UICONTROL 複製]」設定を選択します。新しいディメンションまたは指標を変更し、わかりやすい名前で保存します。
 
 ![複製](assets/duplicate.png)
 
-## スキーマフィールドまたはデータセットのフィルタリング {#filter}
+## スキーマフィールドまたはデータセットのフィルタリング
 
 左側のパネルのスキーマフィールドは、次のデータタイプでフィルタリングできます。
 
@@ -111,19 +111,18 @@ ht-degree: 100%
 
 ![その他のフィルター](assets/filter-other.png)
 
-## 設定タブ {#settings-tab}
+## 設定タブ
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、「**[!UICONTROL データビュー]**」タブに移動します。
 1. 「**[!UICONTROL 追加]**」をクリックしてデータビューを作成するか、既存のデータビューをクリックして編集します。
 1. 「**[!UICONTROL 設定]**」タブをクリックします。
 
-### グローバルフィルター {#global-filter}
+### グローバルフィルター
 
 データビュー全体に適用するフィルターを追加できます。このフィルターは、ワークスペースで実行するすべてのレポートに適用されます。左側のパネルのリストから「「[!UICONTROL フィルターを追加]」フィールドにフィルターをドラッグします。
 
-### セッション設定 {#sessions}
+### セッション設定
 
 セッションの有効期限が切れてから新しいセッションが開始されるまでの間に無操作状態が続く期間を指定します。期間を指定する必要があります。オプションで、イベントに特定の指標が含まれる場合は新しいセッションを強制的に開始することもできます。
 
 必要な設定をすべて指定したら、「**[!UICONTROL 保存して終了]**」をクリックします。
-

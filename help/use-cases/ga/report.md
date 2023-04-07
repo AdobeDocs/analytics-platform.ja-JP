@@ -4,10 +4,10 @@ description: Customer Journey Analytics での Google Analytics データに関�
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Customer Journey Analytics でデータを取得したら、そのデータを�
 
 「通話理由」のディメンション分類を適用すると、この例では、「損傷した製品」ディメンション項目が示されます。次のステップは、品質管理部門に連絡し、破損した T シャツを顧客が受け取った理由を確認することです。
 
-コールセンターへの通話につながった web サイトのページを確認できます。このレポートにより、最適ではないエクスペリエンスが web サイト上のどこにあるかを把握し、製品マネージャーが課題を解決するのに役立ちます。次の例では、計算指標を使用して、データをフィルタリングし、コールセンターへの通話で終了したセッションのみに絞り込みます。また、CJA の [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=ja#cja-workspace) の「パーティシペーション」モデルも使用します。
+コールセンターへの通話につながった web サイトのページを確認できます。このレポートにより、最適ではないエクスペリエンスが web サイト上のどこにあるかを把握し、製品マネージャーが課題を解決するのに役立ちます。次の例では、パーティシペーションアトリビューションモデルを持つ計算指標を使用して、コールセンター呼び出しで終わったセッションのみにデータをフィルタリングします。
 
 次の例では、「買い物かご」ページと「チェックアウト情報」ページが、ほとんどの通話を促進していることを示しています。
 
