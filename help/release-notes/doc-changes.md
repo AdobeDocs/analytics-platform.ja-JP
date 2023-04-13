@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 92%
+source-wordcount: '1609'
+ht-degree: 97%
 
 ---
 
@@ -19,13 +19,15 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2023年4月** |  |
+| 実験パネルのドキュメントの更新 | に関する節を追加しました。 [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | **2023年3月** |  |
 | 決定管理データの統合 | 次の方法を説明する内容を追加しました。 [CJA でのAdobe Journey Optimizer Decision Management データの統合](/help/integrations/ajo-od.md). |
-| モバイルスコアカードでのデータストーリーの作成 | A [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories) は、中央のテーマや指標に基づいて構築された、サポートされるデータポイント、ビジネスコンテキスト、関連指標の集まりです。 |
-| 機能のサポート | CJA で使用でき、AA では使用不可能またはサポートされていない機能のテーブルを使用した [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
+| モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |
+| 機能のサポートを更新しました | CJA で使用でき、AA では使用不可能またはサポートされていない機能のテーブルを使用した [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新しました。 |
 | デフォルトの計算指標 | [アドビが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)を説明するコンテンツを追加しました。 |
-| データ要素 | <p>データディクショナリの新しいドキュメント ( [概要](/help/components/data-dictionary/data-dictionary-overview.md), [表示](/help/components/data-dictionary/view-data-dictionary.md), [編集中](/help/components/data-dictionary/edit-entries-data-dictionary.md)、および [監視](/help/components/data-dictionary/monitor-data-dictionary-health.md) データディクショナリ。</p><p>の情報 [コンポーネントの説明の追加](/help/components/add-component-descriptions.md) は、データディクショナリ機能を考慮して更新されました。</p> |
-| プロジェクトのリンク共有（ログインは不要） | <p>既存のドキュメントを更新して、Analysis Workspaceへのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明しました。</p> <p>ユーザードキュメントの更新内容 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) および [共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>管理者向けオプションが [環境設定](/help/analysis-workspace/user-preferences.md).</p> |
+| データ要素 | <p>データ要素の[概要](/help/components/data-dictionary/data-dictionary-overview.md)、[表示](/help/components/data-dictionary/view-data-dictionary.md)、[編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)、[監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)など、データ要素に関する新しいドキュメントを追加しました。</p><p>[コンポーネント説明の追加](/help/components/add-component-descriptions.md)の情報を、データ要素機能を説明するために更新しました。</p> |
+| プロジェクトのリンク共有（ログインは不要） | <p>Analysis Workspace へのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明するために、既存のドキュメントを更新しました。</p> <p>ユーザードキュメントの更新内容には、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)と[共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md)が含まれています。</p> <p>[環境設定](/help/analysis-workspace/user-preferences.md)に管理者向けのオプションを追加しました。</p> |
 | **2023年2月** |  |
 | CJA と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
 | Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#latency)に関する新しい節です。 |
