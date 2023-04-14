@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 45%
+source-wordcount: '1167'
+ht-degree: 43%
 
 ---
 
@@ -94,7 +94,7 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
 * すべての Workspace プロジェクトでの可用性
 * より複雑なフィルターと順次フィルターをサポートします
 
-フィルターは、クイックフィルタービルダーまたは [!UICONTROL フィルタービルダー].
+フィルターは、クイックフィルタービルダーから、または [!UICONTROL フィルタービルダー].
 
 ### クイックフィルタービルダーで保存する {#save2}
 
@@ -119,12 +119,17 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
 
 1. 保存したフィルターの上にマウスポインターを置いて、鉛筆アイコンを選択します。
 
+1. 選択 [!UICONTROL **ビルダーを開く**].
+
 1. フィルタービルダーの上部に、次のダイアログが表示されます。
 
-   ![フィルターダイアログ](assets/project-only.png)
+   ![フィルターダイアログ](assets/project-only-filter-dialog.png)
 
-1. 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」の横にあるチェックボックスを選択します。
-1. 「**[!UICONTROL 保存]**」を選択します。フィルターが、すべてのプロジェクトのフィルターコンポーネントリストに表示されます。また、組織内の他のユーザーと [フィルターを共有](/help/components/filters/manage-filters.md) することもできます。
+1. の横にあるチェックボックスを選択します。 **[!UICONTROL このフィルターをすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加します。]**
+
+1. 「**[!UICONTROL 保存]**」を選択します。
+
+   フィルターが、すべてのプロジェクトのフィルターコンポーネントリストに表示されます。また、組織内の他のユーザーと [フィルターを共有](/help/components/filters/manage-filters.md) することもできます。
 
 ## クイックフィルターの例
 
