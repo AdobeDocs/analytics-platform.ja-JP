@@ -2,10 +2,10 @@
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 98%
 
 ---
 
@@ -29,8 +29,7 @@ IMS 組織ごとに作成できるフィルターの最大数は 50,000 個で�
 | フィルタータイプ | 作成場所 | 適用対象となる場所 | 使用するタイミング |
 | --- | --- | --- | --- |
 | コンポーネントリストフィルター | 「+」をクリックすると、[フィルタービルダー](/help/components/filters/create-filters.md)が表示されます。 | すべてのワークスペースプロジェクト | より複雑なフィルターの場合、順次フィルター |
-| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | 1 つ以上のルールを柔軟に追加／編集 |
-| アドホックプロジェクトフィルター | [プロジェクトのセグメントドロップゾーンにドラッグ＆ドロップします](/help/components/filters/ad-hoc-filters.md) | プロジェクトのみですが、フィルターリストに保存して追加できます。 | 単一ルールフィルターの場合 |
+| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | アドホックの単一ルールフィルター（ドラッグ&amp;ドロップを使用）または（フィルターアイコンをクリックして）複数のルールを追加/編集するために使用できます |
 | フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
 | 計算指標ベースのフィルター | [計算指標ビルダー](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=ja) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
 

@@ -3,10 +3,10 @@ description: パネルは、テーブルとビジュアライゼーションの�
 title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,9 @@ ht-degree: 100%
 
 フィルター以外のコンポーネントをドロップゾーンに直接ドラッグしてアドホックフィルターを作成することもできるので、フィルタービルダーへの移行にかかる時間と手間を節約できます。この方法で作成されたフィルターは、ヒットレベルのフィルターとして自動的に定義されます。この定義を変更するには、フィルターの横にある情報アイコン（i）、鉛筆の形をした編集アイコンの順にクリックし、フィルタービルダーで編集します。
 
-アドホックフィルターは、プロジェクトに対するローカルなフィルターで、公開しない限り、左側のパネルに表示されません。
+アドホックフィルターはクイックフィルターの一種で、プロジェクトのローカルフィルターです。 公開しない限り、左側のパネルに表示されません。
+
+詳しくは、 [クイックフィルター](/help/components/filters/quick-filters.md).
 
 ![](assets/adhoc-segment-filter.png)
 

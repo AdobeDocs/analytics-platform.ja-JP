@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
+source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 97%
+source-wordcount: '1642'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | --- | --- |
 | **2023年4月** |  |
 | 実験パネルのドキュメントの更新 | に関する節を追加しました。 [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックフィルターを作成する手順と、 [クイックフィルタの作成](/help/components/filters/quick-filters.md). |
 | **2023年3月** |  |
 | 決定管理データの統合 | 次の方法を説明する内容を追加しました。 [CJA でのAdobe Journey Optimizer Decision Management データの統合](/help/integrations/ajo-od.md). |
 | モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |
