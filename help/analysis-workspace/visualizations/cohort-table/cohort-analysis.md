@@ -3,10 +3,10 @@ title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 76840d025d1ace28abce5557d66d104795818167
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '457'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,6 @@ ht-degree: 0%
 * 顧客のライフサイクルのまさに適切なタイミングでマーケティング予算を振り替える。
 * 価値を最大化するために、トライアルやオファーを終了するタイミングを認識する。
 * 価格やアップグレードパスなどの領域で、A/B テストの着想を得る。
-* ガイド付き分析内に[!UICONTROL コホート分析]レポートを表示する。
 
 [!UICONTROL コホート分析]は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべての Customer Journey Analytics ユーザーが利用できます。
 
