@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年4月** |  |
+| フィルタードキュメント | を使用する方法に関する記事を追加しました。 [フィルタービルダー](/help/components/filters/filter-builder.md). <p>の合理化されたドキュメント [フィルターの作成](/help/components/filters/create-filters.md) および [フィルターの概要](/help/components/filters/filters-overview.md).</p> |
 | 実験パネルのドキュメントの更新 | に関する節を追加しました。 [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックフィルターを作成する手順と、 [クイックフィルタの作成](/help/components/filters/quick-filters.md). |
 | **2023年3月** |  |

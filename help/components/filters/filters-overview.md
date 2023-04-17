@@ -2,9 +2,9 @@
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '956'
 ht-degree: 98%
 
 ---
@@ -18,20 +18,13 @@ Customer Journey Analytics を使用すると、強力で重要なオーディ�
 
 フィルタービルダーでフィルターを作成して保存したり、（ワークスペースで）フォールアウトビジュアライゼーションからフィルターを生成したりできます。また、複数のフィルターをまとめて、積み重ねフィルターとして使用することもできます。
 
-フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/create-filters.md) や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する [フィルターマネージャー](/help/components/filters/manage-filters.md) が含まれます。
+フィルタリングには、フィルターを作成して事前テストを実行する[フィルタービルダー](/help/components/filters/filter-builder.md) や、組織全体でフィルターを収集し、タグ付けし、承認し、セキュリティ設定し、共有する [フィルターマネージャー](/help/components/filters/manage-filters.md) が含まれます。
 
 IMS 組織ごとに作成できるフィルターの最大数は 50,000 個です。
 
 ## フィルターのタイプ {#types}
 
-ワークスペースとフィルタービルダーでは、複雑さの程度、このプロジェクトにのみ適用するかどうかなどに応じて、様々なタイプのフィルターを作成できます。フィルタータイプの概要は次のとおりです。
-
-| フィルタータイプ | 作成場所 | 適用対象となる場所 | 使用するタイミング |
-| --- | --- | --- | --- |
-| コンポーネントリストフィルター | 「+」をクリックすると、[フィルタービルダー](/help/components/filters/create-filters.md)が表示されます。 | すべてのワークスペースプロジェクト | より複雑なフィルターの場合、順次フィルター |
-| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | アドホックの単一ルールフィルター（ドラッグ&amp;ドロップを使用）または（フィルターアイコンをクリックして）複数のルールを追加/編集するために使用できます |
-| フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
-| 計算指標ベースのフィルター | [計算指標ビルダー](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=ja) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
+使用可能なフィルターのタイプと作成方法について詳しくは、 [フィルターの作成](/help/components/filters/create-filters.md).
 
 ## 順次フィルター {#sequential}
 
