@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 56%
+source-wordcount: '1753'
+ht-degree: 53%
 
 ---
 
@@ -138,6 +138,10 @@ ht-degree: 56%
    <!-- Add screen shot of new modal -->
 
 1. を有効にします。 **[!UICONTROL リンクはアクティブです]** オプションを選択します（まだ有効になっていない場合）。
+
+   このオプションを選択すると、誰とでも共有できるプロジェクトへのリンクが作成されます。 このオプションを無効にすると、いつでもプロジェクトへのアクセスを無効にできます。
+
+   プロジェクトの所有者もこのリンクの所有者です。 リンクの所有権は、プロジェクトの所有権が移行された場合にのみ、別のユーザーに移行できます。詳しくは、 [ユーザーアセットの転送またはアカウント有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) 」を参照してください。
 
 1. 次のセキュリティオプションを有効にするかどうかを選択します（このオプションは CJA 管理者が制御できます）。
 
