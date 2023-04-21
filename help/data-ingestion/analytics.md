@@ -4,10 +4,10 @@ description: 従来の Adobe Analytics からデータを取り込む方法を�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Analytics ソースコネクタを作成するには：
    ![レビュー](./assets/review.png)
 
 
-接続が作成されると、データフローが自動的に作成され、最大 13 か月分の履歴データの取り込みなど、レポートスイートの Adobe Analytics データがデータセットに入力されます。
+接続が作成されると、データフローが自動的に作成され、実稼動サンドボックス用の最大 13 ヶ月分の履歴データの取り込みなど、レポートスイートのAdobe Analyticsデータがデータセットに入力されます。 （2023 年 4 月 26 日以降、非実稼動用サンドボックスのバックフィルは、3 か月に制限されています）。
 
 初回の取り込みが完了すると、Adobe Analytics レポートスイートのデータが Customer Journey Analytics で使用できる状態になります。
 
