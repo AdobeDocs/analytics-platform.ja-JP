@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 [アトリビューション AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ja) は、Adobe Experience Platform インテリジェントサービスの一部で、顧客とのやり取りの影響と増分的な効果を指定した成果に照らして計算する、マルチチャネルのアルゴリズムアトリビューションサービスです。アトリビューション AI を使用すると、マーケターは、カスタマージャーニーの各段階における個々の顧客インタラクションの影響を把握することで、マーケティング費用と広告費用を測定し、最適化できます。
 
-Attribution AI は、顧客のマーケティングタッチポイントおよびコンバージョンデータソースに対して Attribution AI がモデルを実行する範囲内で Customer Journey Analytics（CJA）と統合されます。次に、CJA は、これらのモデルの出力をデータセットとして読み込みます。または、他の CJA データセットと統合することもできます。Attribution AIが有効なデータセットは、CJA のデータビューとレポートで利用できます。
+Attribution AI は、顧客のマーケティングタッチポイントおよびコンバージョンデータソースに対して Attribution AI がモデルを実行する範囲内で Customer Journey Analytics（CJA）と統合されます。次に、CJA は、これらのモデルの出力をデータセットとして読み込みます。または、残りの CJA データセットと統合することもできます。 Attribution AIが有効なデータセットは、CJA のデータビューとレポートで利用できます。
 
 アトリビューション AI は、Experience Event、Adobe Analytics、Consumer Experience Event の 3 つの Experience Platform スキーマをサポートします。
 

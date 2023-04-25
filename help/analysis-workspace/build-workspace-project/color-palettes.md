@@ -3,10 +3,10 @@ description: ビジュアライゼーションのカラーパレットを変更�
 title: ビジュアライゼーションカラーパレット
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '211'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 ## カラーパレットの変更：
 
 1. **[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;へナビゲートします。
-1. 「**[!UICONTROL プロジェクトカラーパレット]**」ドロップダウンで、5 色のプリセットカラー設定の中から 1 つを選ぶことができます。
+1. 次の **[!UICONTROL プロジェクトカラーパレット]** 」ドロップダウンリストから、5 色のプリセットカラー設定の中から 1 つを選択できます。
 
    ![](assets/custom_palette.png)
 

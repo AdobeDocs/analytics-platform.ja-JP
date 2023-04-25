@@ -3,10 +3,10 @@ description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 99%
 
 ---
 
@@ -53,34 +53,34 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 #### ナビゲーション
 
 | ショートカット | アクション |
-|---|---|
-| Alt + Shift + 1/2/3 | 別のパネルにジャンプする：[!UICONTROL パネル]、[!UICONTROL ビジュアライゼーション]、[!UICONTROL コンポーネント] |
-| Alt + 左向き矢印または右向き矢印 | パネル間の移動 |
-| Alt + M | すべてのパネルを折りたたむ／展開 |
-| Alt + Ctrl + M | アクティブパネルを折りたたみ／展開 |
-| Ctrl + / | 左パネルを検索 |
+| --- | --- |
+| `[Alt + Shift + 1 / 2 / 3]` | 別のパネルにジャンプする：[!UICONTROL パネル]、[!UICONTROL ビジュアライゼーション]、[!UICONTROL コンポーネント] |
+| `[Alt + Left / Right]` | パネル間の移動 |
+| `[Alt + M]` | すべてのパネルを折りたたむ／展開 |
+| `[Alt + Ctrl + M]` | アクティブパネルを折りたたみ／展開 |
+| `[Ctrl + /]` | 左パネルを検索 |
 
 #### 分析作成
 
 | ショートカット | アクション |
-|---|---|
-| Alt + 1 | 新しいフリーフォームテーブル |
-| Ctrl + Shift + C | 新規計算指標 |
-| Ctrl + Shift + D | 新しい日付範囲 |
-| Ctrl + Shift + E | 新しいフィルター |
-| Ctrl + Z | 元に戻す |
-| Shift キーを押したまま（パネルフィルタードロップゾーン内） | [ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)の作成 |
+| --- | --- |
+| `[Alt + 1]` | 新しいフリーフォームテーブル |
+| `[Ctrl + Shift + C]` | 新規計算指標 |
+| `[Ctrl + Shift + D]` | 新しい日付範囲 |
+| `[Ctrl + Shift + E]` | 新しいセグメント |
+| `[Ctrl + Z]` | 元に戻す |
+| `[Component drag + Shift]` | ドロップダウンフィルターの作成 |
 
 #### 民主化
 
 | ショートカット | アクション |
-|---|---|
-| Ctrl + S | 保存 |
-| Ctrl + Shift + G | キュレート |
-| Ctrl + G | 共有 |
-| Alt + Shift + S | スケジュール |
-| Alt + L | プロジェクトへのリンクを取得 |
-| Ctrl + Shift + B | PDF をダウンロード |
+| --- | --- |
+| `[Ctrl + S]` | 保存 |
+| `[Ctrl + Shift + G]` | キュレート |
+| `[Ctrl + G]` | 共有 |
+| `[Alt + Shift + S]` | スケジュール |
+| `[Alt + L]` | プロジェクトへのリンクを取得 |
+| `[Ctrl + Shift + B]` | PDF をダウンロード |
 
 ## スクリーンリーダーとスクリーン拡大鏡のサポート
 

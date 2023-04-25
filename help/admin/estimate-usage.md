@@ -4,10 +4,10 @@ description: 使用状況の推定方法を 2 つ、管理方法を 1 つ示し�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 98%
+source-wordcount: '869'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ CJA の使用を管理するには：
 >
 >    使用量が事実上 2 倍になってしまうので、使用量を測定するだけのために、すべてのデータを含む新しい接続を作成しないでください。
 
-1. ワークスペースでは、各データ表示に基づいて新しいプロジェクトを作成し、現在の CJA 契約の最初の日から始まる、月の第一金曜日までのすべてのイベント（**[!UICONTROL 指標]**&#x200B;ドロップダウン）を取り込みます。
+1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウンリスト ) を参照し、現在の CJA 契約の最初の日から始まる、月の最初の金曜日までを示します。
 
    ![イベント](./assets/events-usage.png)
 

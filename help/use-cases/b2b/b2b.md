@@ -4,10 +4,10 @@ description: アカウントベースのデータをルックアップデータ�
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 1a18ddbab09e272189a25041396570d127bb81c3
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 これらをすべて実現するには、アカウントレベルの情報を[ルックアップ](/help/getting-started/cja-glossary.md)データセットとして取り込みます。
 
-最初に Adobe Experience Platform でルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取得してルックアップテーブルデータセットを作成します。次に、Customer Journey Analytics（CJA）で、作成したルックアップデータセットを含む、様々なデータセットを組み合わせた接続を作成します。その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
+最初にAdobe Experience Platformでルックアップスキーマを作成し、次に.csv ベースのアカウントレベルのデータを取り込んでルックアップテーブルデータセットを作成します。 次に、Customer Journey Analytics（CJA）で、作成したルックアップデータセットを含む、様々なデータセットを組み合わせた接続を作成します。その後、データビューを作成し、最終的にワークスペースでこれらのデータをすべて利用できるようになります。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 ![](../assets/create-new-class.png)
 
-## 2. ルックアップデータセットの作成（Experience Platform）
+## 2.ルックアップデータセットの作成 (Experience Platform)
 
 スキーマを作成したら、そのスキーマから、Experience Platform でルックアップデータセットを作成する必要があります。このルックアップデータセットには、会社名、従業員の合計数、ドメイン名、所属する業種、年間売上高、Experience Platform の現在の顧客かどうか、顧客の営業段階、アカウント内のどのチームが CJA を使用しているかなどの、アカウントレベルのマーケティング情報が含まれます。
 

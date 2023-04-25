@@ -3,9 +3,9 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e918b93a7d5aa98fe0ac1532fa76a2994f6a0c07
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2054'
 ht-degree: 36%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 36%
 1. **[!UICONTROL 指標]**：ヘッダーをクリックして展開します。
 1. **[!UICONTROL フィルター]**:ヘッダーをクリックして展開します。
 1. **[!UICONTROL レポートスイートセレクター]**:このフィルターを保存するレポートスイートを選択できます。 その後も、すべてのレポートスイートでフィルターを利用できます。
-1. **[!UICONTROL フィルタープレビュー]**:主要指標をプレビューして、有効なフィルターがあるかどうかと、フィルターの範囲を確認します。 このフィルターを適用した場合に表示されるデータセットの分類を表します。 3 つの同心円と、一致の数と割合を示すリストを表示します [!UICONTROL イベント], [!UICONTROL 人物]、および [!UICONTROL セッション] データセットに対してフィルターを実行する場合。 このグラフは、フィルター定義を作成または変更するとすぐに更新されます。
+1. **[!UICONTROL フィルタープレビュー]**:主要指標をプレビューして、有効なフィルターがあるかどうかと、フィルターの範囲を確認します。 このフィルターを適用した場合に予想されるデータセットの分類を表します。 3 つの同心円と、一致の数と割合を示すリストを表示します [!UICONTROL イベント], [!UICONTROL 人物]、および [!UICONTROL セッション] データセットに対してフィルターを実行する場合。 このグラフは、フィルター定義を作成または変更するとすぐに更新されます。
 1. **[!UICONTROL 製品の互換性]**:どのAdobe Analytics製品 (Analysis Workspace、 [!UICONTROL Reports &amp; Analytics]、Data Warehouse) は、作成したフィルターと互換性があります。 ほとんどのフィルターは、すべての製品と互換性があります。 ただし、すべての演算子とディメンションが、特にすべての Analytics 製品と互換性があるわけではありません [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). このグラフは、フィルター定義を変更するとすぐに更新されます。
 1. **[!UICONTROL 保存]** または **[!UICONTROL キャンセル]**:フィルタを保存またはキャンセルします。 クリック後 **[!UICONTROL 保存]**&#x200B;をクリックすると、フィルターを管理できるフィルターマネージャが表示されます。
 

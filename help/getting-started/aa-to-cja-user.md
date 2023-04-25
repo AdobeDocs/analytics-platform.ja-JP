@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 100%
+source-wordcount: '1452'
+ht-degree: 97%
 
 ---
 
@@ -38,13 +38,13 @@ CJA は Adobe Experience Platform からデータを取得します。Experience
 
 Experience Platform 内の顧客データは、[スキーマ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja)とデータのバッチで構成されるデータセットとして保存されます。Experience Platform について詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=ja)を参照してください。
 
-CJA 管理者は、まず Experience Platform のデータセットへの[接続](/help/connections/create-connection.md)を確立します。その後、この接続を使用して、[データビュー](/help/data-views/data-views.md)を作成します。データビューは、概念的には仮想レポートスイートと似ており、CJA でのレポートの基礎となります。レポートのすべてのデータは Experience Platform から提供されるので、レポートスイートはデータのコンテナとしては使用されなくなりました。
+CJA 管理者が設定します。 [接続](/help/connections/create-connection.md) をExperience Platform内のデータセットに追加します。 その後、この接続を使用して、[データビュー](/help/data-views/data-views.md)を作成します。データビューは、概念的には仮想レポートスイートと似ており、CJA でのレポートの基礎となります。レポートのすべてのデータは Experience Platform から提供されるので、レポートスイートはデータのコンテナとしては使用されなくなりました。
 
 接続を使用すれば、次のビデオのように、Adobe Experience Platform のデータセットを Analytics 管理者が CJA に統合できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-アドビでは、Adobe Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、Adobe Experience Platform にデータを取り込む方法を複数用意しています。複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。また、これらのデータセットに基づく接続とデータビューを使用すると、以前別々のレポートスイートに存在していたデータを組み合わせることができます。
+アドビでは、Adobe Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、Adobe Experience Platform にデータを取り込む方法を複数用意しています。複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。これらのデータセットに基づく接続とデータビューは、別々のレポートスイートに以前存在したデータを組み合わせることができます。
 
 ## 仮想レポートスイートの概念の変更 {#data-views}
 

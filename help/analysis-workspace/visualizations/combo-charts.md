@@ -3,11 +3,11 @@ description: 先月や昨年などとの比較を行うといった、Analysis W
 title: コンボグラフビジュアライゼーション
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    | **[!UICONTROL 関数]** | [!UICONTROL 平均]などの関数を比較に導入できます。以下のサポートされている関数のリストを参照してください。<p>![関数](assets/combo-functions.png) |
    | **[!UICONTROL セカンダリ指標]** | 例えば、[!UICONTROL 売上高]を別の指標と比較できます。<p>![2 つの指標](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 | **[!UICONTROL 平均値]** | 指標の算術平均（平均）を返します。 |
 | **[!UICONTROL 列の最小値]** | 指標列の一連のディメンション要素の中の最小値を返します。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 売上高指標の累積平均の例を以下に示します。
 
@@ -88,11 +88,11 @@ ht-degree: 100%
 | 設定 | 定義 |
 | --- | --- |
 | **[!UICONTROL ビジュアライゼーションのタイプ]** | 別のビジュアライゼーションタイプに切り替えることができます。 |
-| **[!UICONTROL 精度]** | トレンドのビジュアライゼーションでは、このドロップダウンから時間の精度（日、週、月など）を変更できます。 |
+| **[!UICONTROL 精度]** | トレンドのビジュアライゼーションでは、このドロップダウンから時間の精度（日、週、月など）をを選択します。 |
 | **[!UICONTROL 一般]** |  |
 | **[!UICONTROL 割合 (％)]** | 値を割合で表示します。 |
 | **[!UICONTROL 凡例を表示]** | コンボグラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
-| **[!UICONTROL 項目数の上限を設定]** | X 軸の項目数を減らします。 ビッグデータセットがある場合、最初の 10 項目（または選択した任意の値）のみが表示されます。 |
+| **[!UICONTROL 項目数の上限を設定]** | X 軸の項目数を減らします。 大きなデータセットがある場合、最初の 10 個の項目（または選択した値）のみが表示されます。 |
 | **[!UICONTROL オーバーレイ]** | 折れ線のバーベルを表示または非表示にします。 |
 | **[!UICONTROL 軸]** |  |
 | **[!UICONTROL 二重軸を表示]** | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。これは、プロットされた指標のスケールが大きく異なる場合に役立ちます。複数の指標を比較する場合を除き、二重軸の色はテーブルの色と一致します。 この場合、すべての比較の色はグレーになります。 |
@@ -101,4 +101,4 @@ ht-degree: 100%
 | **[!UICONTROL Y 軸を表示]** | Y 軸を表示するか、非表示にします。 |
 | **[!UICONTROL Y 軸をゼロに固定]** | グラフに示されるすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外になります。このボックスをチェックすると、Y 軸は強制的にゼロになります（グラフは再描画されます）。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
