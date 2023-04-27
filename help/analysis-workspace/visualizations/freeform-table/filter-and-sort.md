@@ -3,10 +3,10 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
-workflow-type: ht
-source-wordcount: '692'
-ht-degree: 100%
+source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +22,10 @@ Analysis Workspace のフリーフォームテーブルは、インタラクテ�
 
 Analysis Workspace のフィルターは、最も重要な情報を表示するのに役立ちます。
 
+>[!NOTE]
+>
+> この節で説明するように、動的ディメンション項目のみをフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、 [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
 フリーフォームテーブルでデータをフィルタリングするには：
 
 1. フリーフォームテーブルで、フィルタリング対象のデータを含んだ列の上にポインタを合わせます。<!--only some types of columns show the filter... Which? Just Dimensions?-->
@@ -36,7 +40,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
    次のオプションが使用可能です。
 
-   | オプション | 機能 |
+   | オプション | 関数 |
    |---------|----------|
    | [!UICONTROL **未指定 (なし) を含む**] | テーブルのどのディメンションにも該当しないデータをテーブルに表示するには、このオプションを選択します。 <!--what is this?--> |
    | [!UICONTROL **次に一致**] | <p>指定したすべての条件を満たすデータのみを表示するには、「[!UICONTROL **すべての条件を満たしている場合**]」を選択します。通常、このオプションを使用すると、データの精度が上がります。</p> <p>指定したいずれかのフィルター条件を満たすデータを表示するには、「[!UICONTROL **いずれかの条件を満たしている場合**]」を選択します。通常、このオプションを選択すると、データの精度が下がります。</p> |
