@@ -3,10 +3,10 @@ title: フリーフォームテーブルの動的ディメンション項目と�
 description: テーブルの動的および静的ディメンション項目の操作方法。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '482'
-ht-degree: 100%
+source-git-commit: 67435cdfcb23e3c6e9a04ecb4a0b0e854473387c
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 100%
 
 例えば、ブラウザータイプディメンションをテーブルにドラッグすると、上位のブラウザータイプディメンション項目（Microsoft、Apple、Google など） が動的にテーブル行に戻ります。列にドロップすると、上位 5 つのブラウザータイプディメンション項目が動的に返されます。
 
-動的ディメンション項目には行フィルターオプションがありますが、ロックと X アイコンは&#x200B;**ありません**。
+動的ディメンション項目には行フィルターオプションがありますが、ロックと X アイコンは&#x200B;**ありません**。テーブルにフィルターを適用する方法について詳しくは、 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+
 
 ![](assets/dynamic-items.png)
 

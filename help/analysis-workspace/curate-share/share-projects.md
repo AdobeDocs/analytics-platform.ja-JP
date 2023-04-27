@@ -4,7 +4,7 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
+source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 53%
@@ -120,7 +120,7 @@ ht-degree: 53%
 >
 >* この方法でプロジェクトを共有する機能を CJA 管理者が無効にすることができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するようにプロジェクトを共有できない場合、CJA 管理者はこの機能を無効にしています。
 >
->* 14 個を超えるビジュアライゼーションが展開されたプロジェクトは、CJA へのアクセス権を持たないユーザーとは共有できません。
+>* 50 を超えるビジュアライゼーションが展開されたプロジェクトは、CJA へのアクセス権を持たないユーザーとは共有できません。
 >
 >* 共有したユーザーは、 [キュレーション](curate.md).
 > 
