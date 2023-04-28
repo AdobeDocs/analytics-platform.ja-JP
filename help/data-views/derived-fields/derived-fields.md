@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 3fb99165104ad4045aed0b9f6867b21acf2a11f8
+source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3057'
 ht-degree: 9%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 9%
 
 # 派生フィールド
 
-派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生（カスタム）フィールドを使用すると、カスタマイズ可能なルールビルダーを通じて、（多くの場合、複雑な）データ操作をその場で定義できます。 その後、その派生フィールドを Workspace のコンポーネント（指標またはディメンション）として使用したり、さらにデータビューでコンポーネントとして定義したりできます。
+派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生（カスタム）フィールドを使用すると、カスタマイズ可能なルールビルダーを通じて、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、さらに、 [データビュー](../data-views.md).
 
-派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 データ準備、データDistiller、または変換読み込み抽出 (ETL)/読み込み変換抽出 (ELT) プロセス内など。
+派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
-派生フィールドは、 [データビュー](../data-views.md)、 、は一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
+派生フィールドは、 [データビュー](../data-views.md)は一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
 使用例を次に示します。
 
