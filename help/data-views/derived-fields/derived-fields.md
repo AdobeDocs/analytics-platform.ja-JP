@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3062'
 ht-degree: 9%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 9%
 
 # 派生フィールド
 
+{{release-limited-testing}}
+
 派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生（カスタム）フィールドを使用すると、カスタマイズ可能なルールビルダーを通じて、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、さらに、 [データビュー](../data-views.md).
 
 派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
-派生フィールドは、 [データビュー](../data-views.md)は一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
+派生フィールドは、 [データビュー](../data-views.md)は、ルールとして定義された一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
 使用例を次に示します。
 
 - ページ名の値を正しく修正するために、収集された不適切なページ名の値を修正するカスタムのページ名フィールドを定義します。
 
 - 1 つ以上の条件（URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する、カスタムの「マーケティングチャネル」フィールドを定義します。
-
 
 ## カスタムフィールドインターフェイス
 
@@ -37,7 +38,7 @@ ht-degree: 9%
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
-| 1 | **セレクター** | セレクター領域を使用して、 ![関数](assets/Smock_Function_18_N.svg) 関数![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) 関数テンプレート![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) スキーマフィールド、または![標準フィールドアイコン](assets/Smock_DragHandle_18_N.svg)標準フィールドをルールビルダーに追加します。 <br/>ドロップダウンを使用して、次の中から選択します。 [!UICONTROL 関数], [!UICONTROL 関数テンプレート], [!UICONTROL スキーマフィールド]、および [!UICONTROL 標準フィールド].<br/>「検索」ボックスを使用して、関数、関数テンプレート、スキーマおよび標準フィールドを検索できます。 <br/>選択したオブジェクトのリストをフィルタするには、 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) フィルターを設定し、 [!UICONTROL 次の条件でフィールドをフィルター] ダイアログ。 フィルターを簡単に削除するには、 ![閉じるアイコン](assets/CrossSize75.svg) フィルターごとに |
+| 1 | **セレクター** | セレクター領域を使用して、 ![関数](assets/Smock_Function_18_N.svg) 関数![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) 関数テンプレート![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) スキーマフィールド、または![標準フィールドアイコン](assets/Smock_DragHandle_18_N.svg)標準フィールドをルールビルダーに追加します。 <br/>ドロップダウンを使用して、次の中から選択します。 [!UICONTROL 関数], [!UICONTROL 関数テンプレート], [!UICONTROL スキーマフィールド]、および [!UICONTROL 標準フィールド].<br/>関数、関数テンプレート、スキーマ、標準フィールドは、 ![検索アイコン](assets/Smock_Search_18_N.svg) 検索ボックス。 <br/>選択したオブジェクトのリストをフィルタするには、 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) フィルターを設定し、 [!UICONTROL 次の条件でフィールドをフィルター] ダイアログ。 フィルターを簡単に削除するには、 ![閉じるアイコン](assets/CrossSize75.svg) フィルターごとに |
 | 2 | **ルールビルダー** | カスタムフィールドは、1 つ以上のルールを使用して順番に作成します。 ルールは、関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数の型によって、ルールのインターフェイスが決まります。<br/>詳しくは、 [ルールインターフェイス](#rule-interface) を参照してください。 <br/>関数は、ルールビルダーで既に使用可能なルールの開始、終了または中間に挿入できます。 ルールビルダーの最後のルールによって、カスタムフィールドの最終出力が決まります。 |
 | 3 | **[!UICONTROL **&#x200B;フィールド設定&#x200B;**]** | カスタムフィールドに名前を付け、説明し、そのフィールドタイプを調べることができます。 |
 | 4 | **[!UICONTROL **&#x200B;最終出力&#x200B;**]** | この領域には、過去 30 日間のデータと、ルールビルダーのカスタムフィールドに加えた変更に基づき、出力値のプレビューがその場で表示されます。 |
