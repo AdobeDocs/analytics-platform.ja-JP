@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3225'
+source-wordcount: '3221'
 ht-degree: 9%
 
 ---
@@ -461,11 +461,10 @@ ht-degree: 9%
 
 値を選択して設定する際には、次の依存関係が適用されます。
 
-
 |  | データセットの依存関係 |
 |:---:|----|
 | <span style='color: red'>A</span> | 値 _選択_ 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) を同じデータセットから作成する必要があります。 |
-| <span style='color: red'>B</span> | すべての値 _設定_ 構成内およびルール間は、同じデータセットから作成する必要があります。 |
+| <span style='color: red'>B</span> | すべての値 _設定_ ルールをまたいだ部分は、同じデータセットから生成する必要があります。 |
 | <span style='color: blue'>C</span> | 指定した値 _選択_ 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます _not_ 同じデータセットから派生する必要があります。 |
 
 {style="table-layout:auto"}
@@ -475,8 +474,8 @@ ht-degree: 9%
 
 |  | タイプ依存関係 |
 |:---:|----|
-| <span style='color: red'>D</span> | 値のタイプ _設定_ ルール全体で同じにする必要があります。 |
-| <span style='color: blue'>E</span> | 値のタイプ _選択_ 構文内、またはルール内の複数の構成をまたいで、任意のタイプ（文字列、数値、日付）を指定できます。 |
+| <span style='color: red'>D</span> | 使用する値のタイプ _設定_ 複数のルールをまたいで同じである必要があります。 |
+| <span style='color: blue'>E</span> | 使用する値のタイプ _選択_ 構文内、またはルール内の複数の構成をまたいで、任意のタイプ（文字列、数値、日付）を指定できます。 |
 
 {style="table-layout:auto"}
 
