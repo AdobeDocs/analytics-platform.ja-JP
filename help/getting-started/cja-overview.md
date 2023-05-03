@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
