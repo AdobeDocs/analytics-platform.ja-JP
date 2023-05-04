@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
+source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
 workflow-type: tm+mt
-source-wordcount: '3260'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ ht-degree: 9%
 
 ## 制約
 
-CJA は、ネストされたコンテナモデルをその機能に使用します。 このネストされたコンテナモデルは、ルールビルダーを使用する際の制約を決定します。 CJA が使用するデフォルトのネストされたコンテナモデルは、次の図のように構造化されています。
+CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）を使用して、製品内で利用できます。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。 CJA が使用するデフォルトのネストされたコンテナモデルは、次の図のように構造化されています。
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
