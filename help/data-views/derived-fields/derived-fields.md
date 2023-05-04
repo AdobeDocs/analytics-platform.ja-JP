@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3260'
 ht-degree: 9%
 
 ---
@@ -167,7 +167,7 @@ ht-degree: 9%
    - カスタムフィールドの定義方法
    - カスタムフィールドを定義した後のデータ
 
-- dependencies （オプション）
+- 制約（オプション）
 
 
 <!-- Concatenate -->
@@ -434,7 +434,7 @@ ht-degree: 9%
 
 ### カスタムフィールド {#casewhen-uc3-customfield}
 
-次の項目を定義します。 `Trip Duration (bucketed)` カスタムフィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールビルダーのルールを参照してください。 このルールは、古い **[!UICONTROL **&#x200B;旅行期間&#x200B;**]** フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
+次の項目を定義します。 `Trip Duration (bucketed)` カスタムフィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールを作成します。 このルールは、古い **[!UICONTROL **&#x200B;旅行期間&#x200B;**]** フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
 
 ![[!DNL Case When] ルール 3](assets/case-when-3.png)
 
@@ -457,29 +457,25 @@ ht-degree: 9%
 | 長旅 |
 
 
-## 依存関係
+## 制約
 
-値を選択して設定する際には、次の依存関係が適用されます。
+CJA は、ネストされたコンテナモデルをその機能に使用します。 このネストされたコンテナモデルは、ルールビルダーを使用する際の制約を決定します。 CJA が使用するデフォルトのネストされたコンテナモデルは、次の図のように構造化されています。
 
-|  | データセットの依存関係 |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。
+
+次のコンテナ制約が適用され、適用されるのは _選択_ および _設定_ 値。
+
+|  | 制約 |
 |:---:|----|
-| <span style='color: red'>A</span> | 値 _選択_ 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) を同じデータセットから作成する必要があります。 |
-| <span style='color: red'>B</span> | すべての値 _設定_ ルールをまたいだ部分は、同じデータセットから生成する必要があります。 |
-| <span style='color: blue'>C</span> | 指定した値 _選択_ 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます _not_ 同じデータセットから派生する必要があります。 |
+| **<span style='color: red'>A</span>** | 値 _選択_ 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | すべての値 _設定_ ルール間は、同じコンテナに属し、同じタイプまたは同じタイプのカスタム値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | 指定した値 _選択_ 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます _not_ 同じコンテナから派生し、同じコンテナから派生する必要がある _not_ 同じタイプである必要があります。 <br/> ![依存関係 C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![データセットの依存関係の場合](assets/case-when-datasets.png)
-
-
-|  | タイプ依存関係 |
-|:---:|----|
-| <span style='color: red'>D</span> | 使用する値のタイプ _設定_ 複数のルールをまたいで同じである必要があります。 |
-| <span style='color: blue'>E</span> | 使用する値のタイプ _選択_ 構文内、またはルール内の複数の構成をまたいで、任意のタイプ（文字列、数値、日付）を指定できます。 |
-
-{style="table-layout:auto"}
-
-![依存関係タイプの場合](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>フィールドを歌う</li><li>参照ファイル<ul><li>Key Column</li><li>新しいフィールド列</li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>単一フィールド</li><li>参照ファイル<ul><li>Key Column</li><li>新しいフィールド列</li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <ul><li>文字列</li></ul> | <ul><li>フィールドを歌う</li><li>解析オプション<ul><li>プロトコルを取得</li><li>ホストを取得</li><li>パスを取得</li><li>クエリ値を取得<ul><li>クエリパラメーター</li></ul></li><li>ハッシュ値を取得</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>単一フィールド</li><li>解析オプション<ul><li>プロトコルを取得</li><li>ホストを取得</li><li>パスを取得</li><li>クエリ値を取得<ul><li>クエリパラメーター</li></ul></li><li>ハッシュ値を取得</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
 
 {style="table-layout:auto"}
 

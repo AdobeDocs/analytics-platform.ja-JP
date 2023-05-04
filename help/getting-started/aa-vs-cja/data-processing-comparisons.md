@@ -2,32 +2,27 @@
 title: Adobe Analytics と CJA にまたがるレポート機能のデータ処理の比較
 description: 様々なレポート機能におけるデータ処理の違いを説明します
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 91%
+source-wordcount: '1202'
+ht-degree: 75%
 
 ---
 
 # Adobe AnalyticsとCustomer Journey Analyticsでデータ処理を比較する。
 
-<!--
+レポートに役立つ前に、データを処理する機能が必要になる場合がよくあります。 データの収集からレポートやビジュアライゼーションの生成に至るまで、ジャーニーの複数の段階でそのデータを処理できます。
 
-You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+Adobe Analyticsでは、データの処理のほとんどは、データの収集後すぐにおこなわれます。 VISTA ルール、処理ルール、マーケティングチャネルの処理ルールなどの機能を使用して、これをサポートできます **収集時間処理**.
+その後、データが保存され、レポート時に追加の処理を適用できます。 例えば、ディメンションの分類、セグメント化の適用、別のアトリビューションモデルの選択などをおこないます。 この **レポート時間処理** その時に起こるのです。
 
-In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
-The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+Adobe Analyticsでは、通常、レポート時間処理は、収集時に発生する処理よりも少ない処理量を表します。
 
-In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+![Adobe Analytics収集時間処理](../assets/aa-processing.png)
 
-![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+一方、Customer Journey Analytics(CJA) は、データが整理されて保存される前に、事前の収集時間を最小限に抑えるように設計されています。 CJA の基盤となるアーキテクチャは、保存されたデータをレポート時に操作するように設計され、Workspace だけでなく、さらに重要な点として、の定義を通じて、Workspace で強力なレポート時処理機能を提供します。 [コンポーネント](/help/data-views/component-settings/overview.md) および [派生フィールド](/help/data-views/derived-fields/derived-fields.md) を使用します。
 
-In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
-
-![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
+![CJA レポート時間処理](../assets/cja-processing.png)
 
 様々なレポート機能におけるデータ処理の違いを理解することは、どの指標がどこで利用でき、なぜ異なるのかを理解するのに役立ちます。
 
@@ -69,6 +64,6 @@ Adobe と CJA に対して実行されるデータ処理の手順とそのタイ
 | コア AA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=ja) | <ul><li>処理ルール</li><li>VISTA ルール</li><li>訪問定義（メモを参照）</li><li>クロスデバイス分析（メモを参照）</li></ul> | <ul><li>ヒットレベルのマーケティングチャネルのルール（メモを参照）</li><li>訪問レベルのマーケティングチャネルのルール（メモを参照）アトリビューションロジック</li><li>セグメントのロジック</li><li>計算指標</li></ul> |  | <ul><li>CDA では、レポート時の処理を含む仮想レポートスイートの使用が必要です。</li><li>コア Analytics の Attribution IQ は、レポート時に完全に派生されるマーケティングチャネルを使用します（つまり、派生した中央値）。</li><li>Attribution IQ は、レポート時の処理 VRS で使用される場合を除き、処理時の訪問定義を使用します。</li></ul> |
 | コア AA [レポート時の処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を含む仮想レポートスイート（VRS RTP） | <ul><li>処理ルール</li><li>VISTA ルール</li><li>[クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)</li></ul> | <ul><li>訪問定義</li><li>アトリビューションロジック</li><li>セグメントのロジック</li><li>計算指標</li><li>その他の VRS RTP 設定</li></ul> | <ul><li>ヒットレベルのマーケティングチャネルのルール</li><li>訪問レベルのマーケティングチャネルのルール</li></ul> | <ul><li>VRS RTP [ドキュメント](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を参照してください。</li></ul> |
 | AEP データレイクの [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセット | <ul><li>処理ルール</li><li>VISTA ルール</li><li>ヒットレベルのマーケティングチャネルのルール</li><li>フィールドベースのステッチ（メモを参照）</li></ul> |  | <ul><li>[訪問レベルのマーケティングチャネルのルール](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja)</li><li>訪問ロジック</li><li>アトリビューションロジック</li><li>フィルターロジック</li></ul> | <ul><li>独自のフィルターロジックおよび計算指標を適用する必要があります</li><li>フィールドベースのステッチでは、Analytics ソースコネクタで作成されたデータセットに加えて、個別のステッチされたデータセットが作成されます。</li></ul> |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja) レポート | <ul><li>Adobe Experience Platformデータ収集の一部として実装</li></ul> | <ul><li>セッション定義</li><li>[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja)設定<li>アトリビューションロジック</li><li>計算指標</li><li>フィルターロジック</li></ul> | <ul><li>訪問レベルのマーケティングチャネルのルール</li></ul> | <ul><li>フィールドベースのステッチを活用するためには、ステッチされたデータセットを使用する必要があります。</li></ul> |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja) レポート | <ul><li>Adobe Experience Platformデータ収集の一部として実装</li></ul> | <ul><li>セッション定義</li><li>[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja)設定<li>アトリビューションロジック</li><li>計算指標</li><li>フィルターロジック</li></ul> | <ul><li>訪問レベルのマーケティングチャネルのルール</li></ul> | <ul><li>クロスチャネル分析を活用するには、ステッチされたデータセットを使用する必要があります。</li></ul> |
 
 {style="table-layout:auto"}
