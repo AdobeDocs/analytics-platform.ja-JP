@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3265'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 {{release-limited-testing}}
 
-派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生（カスタム）フィールドを使用すると、カスタマイズ可能なルールビルダーを通じて、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、さらに、 [データビュー](../data-views.md).
+派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、さらに、 [データビュー](../data-views.md).
 
 派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
@@ -25,34 +25,34 @@ ht-degree: 9%
 
 使用例を次に示します。
 
-- ページ名の値を正しく修正するために、収集された不適切なページ名の値を修正するカスタムのページ名フィールドを定義します。
+- 収集された不適切なページ名の値を修正し、ページ名の値を正しく修正する、派生した「ページ名」フィールドを定義します。
 
-- 1 つ以上の条件（URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する、カスタムの「マーケティングチャネル」フィールドを定義します。
+- 1 つ以上の条件（URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する、派生マーケティングチャネルフィールドを定義します。
 
-## カスタムフィールドインターフェイス
+## 派生フィールドインターフェイス
 
-カスタムフィールドを作成または編集する場合、カスタムフィールドインターフェイスを使用します。
+派生フィールドを作成または編集する場合、派生フィールドインターフェイスを使用します。
 
-![カスタムフィールドダイアログ](assets/custom-field-dialog.png)
+![派生フィールドダイアログ](assets/derived-field-dialog.png)
 
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
 | 1 | **セレクター** | セレクター領域を使用して、 ![関数](assets/Smock_Function_18_N.svg) 関数![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) 関数テンプレート![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) スキーマフィールド、または![標準フィールドアイコン](assets/Smock_DragHandle_18_N.svg)標準フィールドをルールビルダーに追加します。 <br/>ドロップダウンを使用して、次の中から選択します。 [!UICONTROL 関数], [!UICONTROL 関数テンプレート], [!UICONTROL スキーマフィールド]、および [!UICONTROL 標準フィールド].<br/>関数、関数テンプレート、スキーマ、標準フィールドは、 ![検索アイコン](assets/Smock_Search_18_N.svg) 検索ボックス。 <br/>選択したオブジェクトのリストをフィルタするには、 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) フィルターを設定し、 [!UICONTROL 次の条件でフィールドをフィルター] ダイアログ。 フィルターを簡単に削除するには、 ![閉じるアイコン](assets/CrossSize75.svg) フィルターごとに |
-| 2 | **ルールビルダー** | カスタムフィールドは、1 つ以上のルールを使用して順番に作成します。 ルールは、関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数の型によって、ルールのインターフェイスが決まります。<br/>詳しくは、 [ルールインターフェイス](#rule-interface) を参照してください。 <br/>関数は、ルールビルダーで既に使用可能なルールの開始、終了または中間に挿入できます。 ルールビルダーの最後のルールによって、カスタムフィールドの最終出力が決まります。 |
-| 3 | **[!UICONTROL **&#x200B;フィールド設定&#x200B;**]** | カスタムフィールドに名前を付け、説明し、そのフィールドタイプを調べることができます。 |
-| 4 | **[!UICONTROL **&#x200B;最終出力&#x200B;**]** | この領域には、過去 30 日間のデータと、ルールビルダーのカスタムフィールドに加えた変更に基づき、出力値のプレビューがその場で表示されます。 |
+| 2 | **ルールビルダー** | 派生フィールドは、1 つ以上のルールを使用して順番に作成します。 ルールは、関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数の型によって、ルールのインターフェイスが決まります。<br/>詳しくは、 [ルールインターフェイス](#rule-interface) を参照してください。 <br/>関数は、ルールビルダーで既に使用可能なルールの開始、終了または中間に挿入できます。 ルールビルダーの最後のルールによって、派生フィールドの最終出力が決まります。 |
+| 3 | **[!UICONTROL **&#x200B;フィールド設定&#x200B;**]** | 派生フィールドに名前を付け、説明し、そのフィールドタイプを調べることができます。 |
+| 4 | **[!UICONTROL **&#x200B;最終出力&#x200B;**]** | この領域には、過去 30 日間のデータと、ルールビルダーの派生フィールドに加えた変更に基づき、出力値のプレビューがその場で表示されます。 |
 
 {style="table-layout:auto"}
 
-カスタムフィールドインターフェイスに初めてアクセスしたとき、 [!UICONTROL フィールドテンプレートから開始] ウィザードが表示されます。
+## フィールドテンプレートウィザード
 
-![カスタムフィールドテンプレートウィザードダイアログ](assets/field-template-dialog.png)
+派生フィールドのインターフェイスに初めてアクセスしたとき、 [!UICONTROL フィールドテンプレートから開始] ウィザードが表示されます。
 
 1. 作成しようとしているフィールドのタイプに最も適したテンプレートを選択します。
 2. を選択します。 **[!UICONTROL **&#x200B;選択&#x200B;**]** ボタンをクリックして続行します。
 
-カスタムフィールドダイアログには、選択したフィールドのタイプに必要なルール（および関数）が入力されます。 詳しくは、 [関数テンプレート](#function-templates) を参照してください。
+派生フィールドダイアログには、選択したフィールドのタイプに必要なルール（および関数）が入力されます。また、このルールは、選択したフィールドのタイプに役立ちます。 詳しくは、 [関数テンプレート](#function-templates) を参照してください。
 
 ## ルールインターフェイス
 
@@ -69,22 +69,22 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-## カスタムフィールドの作成
+## 派生フィールドの作成
 
 1. 既存のデータビューを選択するか、データビューを作成します。 詳しくは、 [データビュー](../data-views.md) を参照してください。
 
 2. を選択します。 **[!UICONTROL **&#x200B;コンポーネント&#x200B;**]** 」タブをクリックします。
 
-3. 選択 **[!UICONTROL **&#x200B;カスタムフィールドを作成&#x200B;**]** をクリックします。
+3. 選択 **[!UICONTROL **&#x200B;派生フィールドを作成&#x200B;**]** をクリックします。
 
-4. カスタムフィールドを定義するには、 [!UICONTROL カスタムフィールドを作成] インターフェイス。 詳しくは、 [カスタムフィールドインターフェイス](#custom-field-interface).
+4. 派生フィールドを定義するには、 [!UICONTROL 派生フィールドを作成] インターフェイス。 詳しくは、 [派生フィールドインターフェイス](#derived-field-interface).
 
-   新しいカスタムフィールドを保存するには、「 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
+   新しい派生フィールドを保存するには、「 」を選択します。 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
 
-5. 新しいカスタムフィールドが **[!UICONTROL **&#x200B;カスタムフィールド >**]** コンテナ、 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** をクリックします。
+5. 新しい派生フィールドが **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ、 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** をクリックします。
 
 
-## カスタムフィールドの編集
+## 派生フィールドの編集
 
 1. 既存のデータビューを選択します。 詳しくは、 [データビュー](../data-views.md) を参照してください。
 
@@ -92,19 +92,19 @@ ht-degree: 9%
 
 3. 選択 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** 」タブをクリックします。 [!UICONTROL 接続] 」パネルを開きます。
 
-4. 選択 **[!UICONTROL **&#x200B;カスタムフィールド >**]** コンテナ。
+4. 選択 **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ。
 
-5. 編集するカスタムフィールドにカーソルを移動し、「 」を選択します。 ![編集アイコン](assets/Smock_Edit_18_N.svg).
+5. 編集する派生フィールドの上にマウスポインターを置いて、「 」を選択します。 ![編集アイコン](assets/Smock_Edit_18_N.svg).
 
-6. カスタムフィールドを編集するには、 [!UICONTROL カスタムフィールドを編集] インターフェイス。 詳しくは、 [カスタムフィールドインターフェイス](#custom-field-interface).
+6. 派生フィールドを編集するには、 [!UICONTROL 派生フィールドを編集] インターフェイス。 詳しくは、 [派生フィールドインターフェイス](#derived-field-interface).
 
-   - 選択 **[!UICONTROL **&#x200B;保存&#x200B;**]** 更新したカスタムフィールドを保存します。
+   - 選択 **[!UICONTROL **&#x200B;保存&#x200B;**]** 更新した派生フィールドを保存します。
 
-   - 選択 **[!UICONTROL **&#x200B;キャンセル&#x200B;**]** をクリックして、カスタムフィールドに加えた変更をキャンセルします。
+   - 選択 **[!UICONTROL **&#x200B;キャンセル&#x200B;**]** をクリックして、派生フィールドに加えた変更をキャンセルします。
 
-   - 選択 **[!UICONTROL **&#x200B;名前を付けて保存&#x200B;**]** をクリックして、カスタムフィールドを新しいカスタムフィールドとして保存します。 新しいカスタムフィールドの名前は、元の編集済みカスタムフィールドの名前と同じで、 `(copy)` を追加しました。
+   - 選択 **[!UICONTROL **&#x200B;名前を付けて保存&#x200B;**]** をクリックして、派生フィールドを新しい派生フィールドとして保存します。 新しい派生フィールドは、編集元の派生フィールドと同じ名前で、 `(copy)` を追加しました。
 
-## カスタムフィールドの削除
+## 派生フィールドの削除
 
 1. 既存のデータビューを選択します。 詳しくは、 [データビュー](../data-views.md) を参照してください。
 
@@ -112,20 +112,20 @@ ht-degree: 9%
 
 3. 選択 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** タブ [!UICONTROL 接続] ウィンドウ
 
-4. 選択 **[!UICONTROL **&#x200B;カスタムフィールド >**]** コンテナ。
+4. 選択 **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ。
 
-5. 削除するカスタムフィールドの上にマウスポインターを置いて、「 ![編集アイコン](assets/Smock_Edit_18_N.svg).
+5. 削除する派生フィールドの上にマウスポインターを置いて、「 」を選択します。 ![編集アイコン](assets/Smock_Edit_18_N.svg).
 
-6. 使用中 **[!UICONTROL **&#x200B;カスタムフィールドを編集&#x200B;**]** インタフェースで、「削除」を選択します。
+6. 使用中 **[!UICONTROL **&#x200B;派生フィールドを編集&#x200B;**]** インタフェースで、「削除」を選択します。
 
-   A [!UICONTROL コンポーネントを削除] 削除を確認するダイアログが表示されます。 データビューの外部にあるカスタムフィールドに対する外部参照が存在する可能性があるとします。
+   A [!UICONTROL コンポーネントを削除] 削除を確認するダイアログが表示されます。 データビューの外部にある派生フィールドに対する外部参照が存在する可能性があるとします。
 
-   - 選択 **[!UICONTROL **&#x200B;続行&#x200B;**]** をクリックして、カスタムフィールドを削除します。
+   - 選択 **[!UICONTROL **&#x200B;続行&#x200B;**]** をクリックして、派生フィールドを削除します。
 
 
 ## 関数テンプレート
 
-特定の使用例に合わせてカスタムフィールドをすばやく作成するには、関数テンプレートを使用できます。 これらの関数テンプレートは、カスタムフィールドインターフェイスの「セレクター」領域からアクセスできます。また、 [!UICONTROL フィールドテンプレートから開始] ウィザード。
+特定の使用例に対して派生フィールドをすばやく作成するために、関数テンプレートを使用できます。 これらの関数テンプレートは、派生フィールドインターフェイスの「セレクター」領域からアクセスできます。また、 [!UICONTROL フィールドテンプレートから開始] ウィザード。
 
 
 ### マーケティングチャネル
@@ -163,9 +163,9 @@ ht-degree: 9%
    - 出力。
 
 - 次のような使用例です。
-   - カスタムフィールドを定義する前のデータ
-   - カスタムフィールドの定義方法
-   - カスタムフィールドを定義した後のデータ
+   - 派生フィールドを定義する前のデータ
+   - 派生フィールドの定義方法
+   - 派生フィールドを定義した後のデータ
 
 - 制約（オプション）
 
@@ -174,7 +174,7 @@ ht-degree: 9%
 
 ### [!DNL Concatenate]
 
-2 つ以上のフィールド、カスタムフィールドまたはユーザーが入力した値を、定義した区切り文字で 1 つのフィールドに結合します。
+2 つ以上のフィールド、派生フィールド、またはユーザーが入力した値を、定義済みの区切り文字で 1 つのフィールドに結合します。
 
 +++ 詳細
 
@@ -182,7 +182,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:--:|---|
-| <p>文字列</p> | <ul><li>2 つ以上の値を組み合わせます<ul><li>フィールド</li><li>以前のルールから派生した値</li><li>ユーザー入力値</li></ul></li><li>ペア区切り<ul><li>各値の区切り文字の入力または選択</li></ul></li> </ul> | <p>該当なし</p> | <p>2</p> | <p>新しいカスタムフィールド</p> |
+| <p>文字列</p> | <ul><li>2 つ以上の値を組み合わせます<ul><li>フィールド</li><li>以前のルールから派生した値</li><li>ユーザー入力値</li></ul></li><li>ペア区切り<ul><li>各値の区切り文字の入力または選択</li></ul></li> </ul> | <p>該当なし</p> | <p>2</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#concatenate-customfield}
+### 派生フィールド {#concatenate-derivedfield}
 
-新しい **[!UICONTROL ** Origin - Destination **]** カスタムフィールド。 次を使用する **[!UICONTROL 連結]** 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
+新しい **[!UICONTROL ** Origin - Destination **]** 派生フィールド。 次を使用する **[!UICONTROL 連結]** 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
 
 ![[!DNL Concatenate] ルール](assets/concatenate.png)
 
 ### 後のデータ {#concatenate-dataafter}
 
-| Origin - Destination<br/>（カスタムフィールド） |
+| Origin - Destination<br/>（派生フィールド） |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ ht-degree: 9%
 
 ### [!DNL Case When]
 
-1 つ以上のフィールドの定義された条件に基づいて条件を適用します。 次に、これらの条件を使用して、条件の順序に基づいて新しいカスタムフィールドの値を定義します。
+1 つ以上のフィールドの定義された条件に基づいて条件を適用します。 次に、これらの条件を使用して、条件の順序に基づいて新しい派生フィールドの値を定義します。
 
 +++ 詳細
 
@@ -260,7 +260,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <ul><li>文字列</li><li>数値</li><li>Date/Date-Time</li></ul> | <ul><li>入力フィールド</li><li>条件</li></ul> | <p><u>文字列</u></p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p><u>数値</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p><u>日付</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <p>5</p> | <p>新しいカスタムフィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>Date/Date-Time</li></ul> | <ul><li>入力フィールド</li><li>条件</li></ul> | <p><u>文字列</u></p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p><u>数値</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p><u>日付</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <p>5</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#casewhen-uc1-customfield}
+### 派生フィールド {#casewhen-uc1-derivedfield}
 
-新しい `Marketing Channel` カスタムフィールド。 次を使用する **[!UICONTROL 次の場合にケース]** 関数を使用して、両方の `Page URL` および `Referring URL` フィールドに入力します。
+新しい `Marketing Channel` 派生フィールド。 次を使用する **[!UICONTROL 次の場合にケース]** 関数を使用して、両方の `Page URL` および `Referring URL` フィールドに入力します。
 
 関数の使用に注意してください **[!UICONTROL ** URL 解析&#x200B;**]** 値を取得するルールを定義するには `Page Url` および `Referring Url` の前 **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールが適用されます。
 
@@ -359,9 +359,9 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#casewhen-uc2-customfield}
+### 派生フィールド {#casewhen-uc2-derivedfield}
 
-次の項目を定義します。 `Product Finding Methods (new)` カスタムフィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールを作成します。 これらのルールは、古い **[!UICONTROL **&#x200B;製品検索方法&#x200B;**]** フィールド値 `search` および `browse` の使用 **[!UICONTROL フレーズを含む]** 条件
+次の項目を定義します。 `Product Finding Methods (new)` 派生フィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールビルダーのルール。 これらのルールは、古い **[!UICONTROL **&#x200B;製品検索方法&#x200B;**]** フィールド値 `search` および `browse` の使用 **[!UICONTROL フレーズを含む]** 条件
 
 ![[!DNL Case When] ルール 2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ ht-degree: 9%
 | 21 |
 | 8 |
 
-### カスタムフィールド {#casewhen-uc3-customfield}
+### 派生フィールド {#casewhen-uc3-derivedfield}
 
-次の項目を定義します。 `Trip Duration (bucketed)` カスタムフィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールを作成します。 このルールは、古い **[!UICONTROL **&#x200B;旅行期間&#x200B;**]** フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
+次の項目を定義します。 `Trip Duration (bucketed)` 派生フィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールビルダーのルール。 このルールは、古い **[!UICONTROL **&#x200B;旅行期間&#x200B;**]** フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
 
 ![[!DNL Case When] ルール 3](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ ht-degree: 9%
 
 ## 制約
 
-CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）を使用して、製品内で利用できます。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。 CJA が使用するデフォルトのネストされたコンテナモデルは、次の図のように構造化されています。
+CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。
+
+CJA は、次のデフォルトのコンテナモデルを使用します。
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。
 
-次のコンテナ制約が適用され、適用されるのは _選択_ および _設定_ 値。
+
+次の制約が適用され、適用されるのは _選択_ および _設定_ 値。
 
 |  | 制約 |
 |:---:|----|
 | **<span style='color: red'>A</span>** | 値 _選択_ 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | すべての値 _設定_ ルール間は、同じコンテナに属し、同じタイプまたは同じタイプのカスタム値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | すべての値 _設定_ ルールの間は、同じコンテナに属し、同じタイプまたは同じタイプの派生値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | 指定した値 _選択_ 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます _not_ 同じコンテナから派生し、同じコンテナから派生する必要がある _not_ 同じタイプである必要があります。 <br/> ![依存関係 C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 ### [!DNL Find and Replace]
 
-選択したフィールド内のすべての値を検索し、新しいカスタムフィールド内の別の値に置き換えます。
+選択したフィールド内のすべての値を検索し、新しい派生フィールド内の別の値に置き換えます。
 
 +++ 詳細
 
@@ -492,7 +494,7 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <p>文字列</p> | <ul><li><span>「置き換えるタイミング」フィールドの条件</span></li><li><span>「次で置換」フィールド値</span><ul><li><span>ユーザー入力</span></li><li><span>別のフィールド</span></li></ul></li></ul> | <p><u>文字列</u></p><ul><li>すべてを検索してすべてを置換</li></ul> | <p>1</p> | <p>新しいカスタムフィールド</p> |
+| <p>文字列</p> | <ul><li><span>「置き換えるタイミング」フィールドの条件</span></li><li><span>「次で置換」フィールド値</span><ul><li><span>ユーザー入力</span></li><li><span>別のフィールド</span></li></ul></li></ul> | <p><u>文字列</u></p><ul><li>すべてを検索してすべてを置換</li></ul> | <p>1</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#findreplace-uc-customfield}
+### 派生フィールド {#findreplace-uc-derivedfield}
 
-次の項目を定義します。 `Email Marketing (updated)` カスタムフィールド。 次を使用する **[!UICONTROL 検索と置換]** 関数を使用して、 `email%20marketing` と `email marketing`.
+次の項目を定義します。 `Email Marketing (updated)` 派生フィールド。 次を使用する **[!UICONTROL 検索と置換]** 関数を使用して、 `email%20marketing` と `email marketing`.
 
 ![[!DNL Find and Replace] ルール](assets/find-and-replace.png)
 
 ### 後のデータ {#findreplace-uc-dataafter}
 
-| 外部マーケティング<br/>（カスタムフィールド） |
+| 外部マーケティング<br/>（派生フィールド） |
 |----|
 | 電子メールマーケティング |
 | 電子メールマーケティング |
@@ -563,7 +565,7 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>単一フィールド</li><li>参照ファイル<ul><li>Key Column</li><li>新しいフィールド列</li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>単一フィールド</li><li>参照ファイル<ul><li>Key Column</li><li>新しいフィールド列</li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 {style="table-layout:auto"}
 
 
-### カスタムフィールド {#lookup-uc1-customfield}
+### 派生フィールド {#lookup-uc1-derivedfield}
 
-次の項目を定義します。 `Hotel Name` カスタムフィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、 **[!UICONTROL **&#x200B;ホテル ID **]** フィールドに値を入力し、新しい値に置き換えます。
+次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、 **[!UICONTROL **&#x200B;ホテル ID **]** フィールドに値を入力し、新しい値に置き換えます。
 
 ![[!DNL Lookup] ルール 1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#lookup-uc2-customfield}
+### 派生フィールド {#lookup-uc2-derivedfield}
 
-次の項目を定義します。 `Page Name (updated)` カスタムフィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、既存の **[!UICONTROL **&#x200B;ページ名&#x200B;**]** フィールドに入力し、更新された正しい値に置き換えます。
+次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、既存の **[!UICONTROL **&#x200B;ページ名&#x200B;**]** フィールドに入力し、更新された正しい値に置き換えます。
 
 ![[!DNL Lookup] ルール 2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|:---:|---|
-| <ul><li>文字列</li></ul> | <ul><li>単一フィールド</li><li>解析オプション<ul><li>プロトコルを取得</li><li>ホストを取得</li><li>パスを取得</li><li>クエリ値を取得<ul><li>クエリパラメーター</li></ul></li><li>ハッシュ値を取得</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しいカスタムフィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>単一フィールド</li><li>解析オプション<ul><li>プロトコルを取得</li><li>ホストを取得</li><li>パスを取得</li><li>クエリ値を取得<ul><li>クエリパラメーター</li></ul></li><li>ハッシュ値を取得</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#urlparse-uc1-customfield}
+### 派生フィールド {#urlparse-uc1-derivedfield}
 
-次の項目を定義します。  `Referring Domain` カスタムフィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用して、 **参照 URL** 新しいカスタムフィールドに格納します。
+次の項目を定義します。  `Referring Domain` 派生フィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用して、 **参照 URL** 新しい派生フィールドに格納します。
 
 ![[!DNL Url Parse] ルール 1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/
 
 {style="table-layout:auto"}
 
-### カスタムフィールド {#urlparse-uc2-customfield}
+### 派生フィールド {#urlparse-uc2-derivedfield}
 
-次の項目を定義します。 `Query String CID` カスタムフィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用してルールを定義し、ページ URL のクエリー文字列パラメーターの値を取得する場合は、 `cid` をクエリパラメーターとして使用します。 出力値は、新しいカスタムフィールドに格納されます。
+次の項目を定義します。 `Query String CID` 派生フィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用してルールを定義し、ページ URL のクエリー文字列パラメーターの値を取得する場合は、 `cid` をクエリパラメーターとして使用します。 出力値は、新しい派生フィールドに格納されます。
 
 ![[!DNL Url Parse] ルール 2](assets/url-parse-2.png)
 
