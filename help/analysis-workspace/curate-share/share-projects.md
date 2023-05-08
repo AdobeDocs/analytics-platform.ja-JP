@@ -4,9 +4,9 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
+source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1770'
 ht-degree: 53%
 
 ---
@@ -125,6 +125,8 @@ ht-degree: 53%
 >* 共有したユーザーは、 [キュレーション](curate.md).
 > 
 >* 共有するユーザーがプロジェクトの日付範囲を変更できます。 プロジェクトに設定した日付範囲がデフォルトで表示されます。
+>
+>* 多くのユーザーが同時にアクセスしようとすると、プロジェクトにアクセスできなくなる場合があります。
 
 
 誰とでもAnalysis Workspaceプロジェクトを共有するには：
