@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
+source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 53%
+source-wordcount: '1798'
+ht-degree: 52%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 53%
 > 
 >* 共有するユーザーがプロジェクトの日付範囲を変更できます。 プロジェクトに設定した日付範囲がデフォルトで表示されます。
 >
->* 多くのユーザーが同時にアクセスしようとすると、プロジェクトにアクセスできなくなる場合があります。
+>* 多くのユーザーが同時に特定のリンクにアクセスしようとすると、プロジェクトにアクセスできなくなる場合があります。 デフォルトでは、190 人を超えるユーザーが 5 分ごとに 1 つのリンクにアクセスできます。 組織がこの制限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 
 
 誰とでもAnalysis Workspaceプロジェクトを共有するには：
