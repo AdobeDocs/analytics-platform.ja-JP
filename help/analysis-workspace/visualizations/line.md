@@ -3,14 +3,18 @@ description: 線のビジュアライゼーションを使用して、トレン�
 title: 行
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 行
+
+>[!NOTE]
+>
+>線のビジュアライゼーションの機能は近日中に提供されます [インテリジェントキャプション](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 行のビジュアライゼーションでは、時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、時間がディメンションとして使用される場合にのみ使用できます。
 

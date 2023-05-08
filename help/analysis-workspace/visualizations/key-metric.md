@@ -3,11 +3,11 @@ description: 主要指標の概要ビジュアライゼーションを使用す�
 title: 主要指標の概要
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 1. 指標、プライマリ日付範囲、比較日付範囲および（必要に応じて）セグメントを選択して、ビジュアライゼーションを設定します。
 
-   ![](assets/key-metric-config.png)
+   ![主要指標の設定](assets/key-metric-config.png)
 
    | 設定 | 定義 |
    | --- | --- |
@@ -46,7 +46,7 @@ ht-degree: 100%
    | **[!UICONTROL 比較日付範囲]** | プライマリ日付範囲の比較対象となる日付範囲。 |
    | **[!UICONTROL セグメント (オプション)]** | この概要で特に関心のあるセグメント。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * ここから、折れ線グラフの上にマウスポインターを置くと、個々の日の統計情報を表示できます。
 
-![](assets/key-metric-output2.png)
+![統計](assets/key-metric-output2.png)
 
 ## ビジュアライゼーション設定
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 
 1. ビジュアライゼーションの右上隅（設定の歯車アイコンの横）にある鉛筆アイコンをクリックします。
 
-   ![](assets/edit-icon.png)
+   ![編集](assets/edit-icon.png)
 
    元の設定ビューに戻ります。
 
