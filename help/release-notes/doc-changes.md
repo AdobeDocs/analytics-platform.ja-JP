@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
+source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 91%
+source-wordcount: '1741'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,9 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2023 年 5 月** |  |
+| Analysis Workspace の概要 | 更新済み [Analysis Workspaceの概要](/help/analysis-workspace/home.md) を参照して、より一般的な概要情報と関連するコンテンツへのリンクを含めます。 |
+| プロジェクトの作成 | 次の方法について詳しく説明する新しい記事を作成しました。 [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md) Analysis Workspace |
 | **2023年4月** |  |
 | フィルターをディメンションとして使用する方法に関するビデオ | <p>フィルターをディメンションとして使用する方法に関するビデオを更新しました。 このビデオは [フィルターの作成](/help/components/filters/create-filters.md) ページ。</p> <p>次に、ビデオへの直接リンクを示します。 [Analysis Workspaceでフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | フィルタードキュメント | を使用する方法に関する記事を追加しました。 [フィルタービルダー](/help/components/filters/filter-builder.md). <p>の合理化されたドキュメント [フィルターの作成](/help/components/filters/create-filters.md) および [フィルターの概要](/help/components/filters/filters-overview.md).</p> |
