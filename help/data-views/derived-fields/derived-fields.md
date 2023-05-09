@@ -6,18 +6,25 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
+badgeDerivedFields: label="New Feature" type="Positive"
+source-git-commit: 1aece0ac0873e2cf68bfe8b24725072ddf18ad30
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 9%
+source-wordcount: '3003'
+ht-degree: 8%
 
 ---
+
 
 # 派生フィールド
 
 {{release-limited-testing}}
 
-派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、さらに、 [データビュー](../data-views.md).
+>[!WARNING]
+>
+>最終更新を保留中の場合は、 [!UICONTROL カスタムフィールド] の代わりに [!UICONTROL 派生フィールド] を使用して、
+
+
+派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
 派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
@@ -47,7 +54,7 @@ ht-degree: 9%
 
 ## フィールドテンプレートウィザード
 
-派生フィールドのインターフェイスに初めてアクセスしたとき、 [!UICONTROL フィールドテンプレートから開始] ウィザードが表示されます。
+派生フィールドのインターフェイスに初めてアクセスした場合、 [!UICONTROL フィールドテンプレートから開始] ウィザードが表示されます。
 
 1. 作成しようとしているフィールドのタイプに最も適したテンプレートを選択します。
 2. を選択します。 **[!UICONTROL **&#x200B;選択&#x200B;**]** ボタンをクリックして続行します。
@@ -63,7 +70,7 @@ ht-degree: 9%
 |  | 名前 | 説明 |
 |---------|----------|--------|
 | A | **ルール名** | デフォルトでは、ルール名は **ルール X** （X はシーケンス番号を参照）。 ルールの名前を編集するには、ルールの名前を選択し、新しい名前を入力します（例： ）。 `Query Parameter`. |
-| B | **関数名** | ルールの選択された関数名（例： ）。 [!DNL URL PARSE]. 関数が関数のシーケンスの最後で、最終的な出力値を決定する場合、関数名の後に [!DNL FINAL OUTPUT]例： [!DNL URL PARSE - FINAL OUTPUT]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
+| B | **関数名** | ルールの選択された関数名（例： ）。 [!DNL URL PARSE]. 関数が関数のシーケンスの最後で、最終的な出力値を決定する場合、関数名の後に [!DNL - FINAL OUTPUT]例： [!DNL URL PARSE - FINAL OUTPUT]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
 | C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/>選択 ![その他のアイコン](assets/More.svg)を選択し、「 **[!UICONTROL **&#x200B;説明を追加&#x200B;**]** 説明を追加するには、または **[!UICONTROL **&#x200B;説明を編集&#x200B;**]** 既存の説明を編集する場合。<br/>説明を入力するには、エディターを使用します。 ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右、左、中央揃え、色、番号リスト、箇条書きリストを使用）や、外部情報へのリンクの追加を行うことができます。 <br/>説明の編集を終了するには、エディターの外側をクリックします。 |
 | D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 詳しくは、 [関数リファレンス](#function-reference) を参照してください。 |
 
@@ -81,7 +88,7 @@ ht-degree: 9%
 
    新しい派生フィールドを保存するには、「 」を選択します。 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
 
-5. 新しい派生フィールドが **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ、 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** をクリックします。
+5. 新しい派生フィールドが [!UICONTROL 派生フィールド >] コンテナ、 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** をクリックします。
 
 
 ## 派生フィールドの編集
@@ -125,7 +132,7 @@ ht-degree: 9%
 
 ## 関数テンプレート
 
-特定の使用例に対して派生フィールドをすばやく作成するために、関数テンプレートを使用できます。 これらの関数テンプレートは、派生フィールドインターフェイスの「セレクター」領域からアクセスできます。また、 [!UICONTROL フィールドテンプレートから開始] ウィザード。
+特定の使用例に対して派生フィールドをすばやく作成するために、関数テンプレートを使用できます。 これらの関数テンプレートは、派生フィールドインターフェイスのセレクター領域からアクセスできます。また、 [!UICONTROL フィールドテンプレートから開始] ウィザード。
 
 
 ### マーケティングチャネル
@@ -159,15 +166,15 @@ ht-degree: 9%
    - 入力データタイプ：サポートされるデータのタイプ
    - 入力：入力に指定可能な値
    - 含まれる演算子：この関数でサポートされる演算子（存在する場合）
-   - 制限：この関数で使用できるルールの最大数は、派生フィールドで使用できます。
+   - 制限：（この関数で）派生フィールドで使用できるルールの最大数。
    - 出力。
 
 - 次のような使用例です。
    - 派生フィールドを定義する前のデータ
-   - 派生フィールドの定義方法
-   - 派生フィールドを定義した後のデータ
+   - 派生フィールドの定義方法、
+   - データを更新しました。
 
-- 制約（オプション）
+- 制約（該当する場合）
 
 
 <!-- Concatenate -->
@@ -230,7 +237,7 @@ ht-degree: 9%
 
 ### 派生フィールド {#concatenate-derivedfield}
 
-新しい **[!UICONTROL ** Origin - Destination **]** 派生フィールド。 次を使用する **[!UICONTROL 連結]** 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
+新しい [!UICONTROL Origin - Destination] 派生フィールド。 次を使用する [!UICONTROL 連結] 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
 
 ![[!DNL Concatenate] ルール](assets/concatenate.png)
 
@@ -269,30 +276,30 @@ ht-degree: 9%
 
 様々なマーケティングチャネルを識別するルールを定義するには、カスケードロジックを適用してマーケティングチャネルフィールドを適切な値に設定します。
 
-- リファラーが検索エンジンからのもので、ページにクエリー文字列値が含まれている場合、 `cid` 次を含む `ps_`に値を指定する場合、マーケティングチャネルは **有料検索**.
-- リファラーが検索エンジンからのもので、ページにクエリ文字列がない場合 `cid`に値を指定する場合、マーケティングチャネルは **自然検索**.
-- ページにクエリー文字列値がある場合、 `cid` 次を含む `em_`に値を指定する場合、マーケティングチャネルは **電子メール**.
-- ページにクエリー文字列値がある場合、 `cid` 次を含む `ds_`に値を指定する場合、マーケティングチャネルは **ディスプレイ広告**.
-- ページにクエリー文字列値がある場合、 `cid` 次を含む `so_`に値を指定する場合、マーケティングチャネルは **有料ソーシャル**.
-- リファラーがtwitter.com、facebook.com、linkedin.com または tiktok.com の参照ドメインからのものである場合、マーケティングチャネルは **自然社会**.
-- 上記のルールがいずれも一致しない場合は、マーケティングチャネルを **その他のリファラー**.
+- リファラーが検索エンジンからのもので、ページにクエリー文字列値が含まれている場合、 `cid` 次を含む `ps_`に値を指定する場合、マーケティングチャネルは [!DNL *有料検索*].
+- リファラーが検索エンジンからのもので、ページにクエリ文字列がない場合 `cid`に値を指定する場合、マーケティングチャネルは [!DNL *自然検索*].
+- ページにクエリー文字列値がある場合、 `cid` 次を含む `em_`に値を指定する場合、マーケティングチャネルは [!DNL *電子メール*].
+- ページにクエリー文字列値がある場合、 `cid` 次を含む `ds_`に値を指定する場合、マーケティングチャネルは [!DNL *ディスプレイ広告*].
+- ページにクエリー文字列値がある場合、 `cid` 次を含む `so_`に値を指定する場合、マーケティングチャネルは [!DNL *有料ソーシャル*].
+- リファラーがの参照ドメインからのものである場合 [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com]または [!DNL tiktok.com]に値を指定する場合、マーケティングチャネルは [!DNL *自然社会*].
+- 上記のルールがいずれも一致しない場合は、マーケティングチャネルを [!DNL *その他のリファラー*].
 
-サイトがリファラーとページ URL を含む次のサンプルイベントを受け取った場合、これらのイベントは次のように識別する必要があります。
+サイトが以下のサンプルイベントを受け取った場合、 [!UICONTROL リファラー] および [!UICONTROL ページ URL]に設定する場合、これらのイベントは次のように識別する必要があります。
 
-| イベント | リファラー | ページ URL | マーケティングチャネル |
+| [!DNL Event] | [!DNL Referrer] | [!DNL Page URL] | [!DNL Marketing Channel] |
 |:--:|----|----|----|
-| 1 | `https://facebook.com` | `https://site.com/home` | 自然社会 |
-| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | 表示 |
-| 3 |  | `https://site.com/?cid=em_12345678` | 電子メール |
-| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | 有料検索 |
-| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | 電子メール |
-| 6 | `https://google.com` |  | 自然検索 |
+| 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
+| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
+| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
+| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
+| 6 | `https://google.com` |  | [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 ### 次より前のデータ {#casewhen-uc1-databefore}
 
-| リファラー | ページ URL |
+| [!UICONTROL リファラー] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -305,79 +312,79 @@ ht-degree: 9%
 
 ### 派生フィールド {#casewhen-uc1-derivedfield}
 
-新しい `Marketing Channel` 派生フィールド。 次を使用する **[!UICONTROL 次の場合にケース]** 関数を使用して、両方の `Page URL` および `Referring URL` フィールドに入力します。
+新しい `Marketing Channel` 派生フィールド。 次を使用する [!UICONTROL 次の場合にケース] 関数を使用して、両方の `Page URL` および `Referring URL` フィールドに入力します。
 
-関数の使用に注意してください **[!UICONTROL ** URL 解析&#x200B;**]** 値を取得するルールを定義するには `Page Url` および `Referring Url` の前 **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールが適用されます。
+関数の使用に注意してください [!UICONTROL URL 解析] 値を取得するルールを定義するには `Page Url` および `Referring Url` の前 [!UICONTROL 次の場合にケース] ルールが適用されます。
 
 ![[!DNL Case when] ルール 1](assets/case-when-1.png)
 
 ### 後のデータ {#casewhen-uc1-dataafter}
 
-| マーケティングチャネル |
+| [!DNL Marketing Channel] |
 |----|
-| 自然社会 |
-| 表示 |
-| 電子メール |
-| 有料検索 |
-| 電子メール |
-| 自然検索 |
+| [!DNL Natural Social] |
+| [!DNL Display] |
+| [!DNL Email] |
+| [!DNL Paid Search] |
+| [!DNL Email] |
+| [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 
 ## 使用例 2 {#casewhen-uc2}
 
-「製品の検索方法」ディメンション内で、様々なバリエーションの検索を収集している。 検索と参照の全体的なパフォーマンスを理解するには、結果を手動で組み合わせるのに非常に時間を費やす必要があります。
+検索の様々なバリエーションを [!DNL Product Finding Methods] ディメンション。 検索と参照の全体的なパフォーマンスを理解するには、結果を手動で組み合わせるのに非常に時間を費やす必要があります。
 
-サイトは、製品検索方法ディメンションに対して次の値を収集します。 最後に、これらの値はすべて検索を示します。
+サイトで [!DNL Product Finding Methods] ディメンション。 最後に、これらの値はすべて検索を示します。
 
 | 収集された値 | 実際の値 |
 |---|---|
-| p13n_no を検索 | 検索 |
-| p13n_yes を検索 | 検索 |
-| 検索 refine p13n_no | 検索 |
-| 検索 refine p13n_yes | 検索 |
-| redirect p13n_yes を検索 | 検索 |
-| search-redirect | 検索 |
+| [!DNL search p13n_no] | [!DNL search] |
+| [!DNL search p13n_yes] | [!DNL search] |
+| [!DNL search refine p13n_no] | [!DNL search] |
+| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search redirect p13n_yes] | [!DNL search] |
+| [!DNL search-redirect] | [!DNL search] |
 
 {style="table-layout:auto"}
 
 
 ### 次より前のデータ {#casewhen-uc2-databefore}
 
-| 製品検索方法 |
+| [!DNL Product Finding Methods] |
 |----|
-| p13_no を検索 |
-| p13_yes を検索する |
-| 閲覧 |
-| p13_no を検索 |
-| p13_yes を検索 |
-| 閲覧 |
-| redirect p13_yes を検索 |
-| search-redirect |
-| 閲覧 |
+| [!DNL search p13_no] |
+| [!DNL search p13_yes] |
+| [!DNL browse] |
+| [!DNL search refine p13_no] |
+| [!DNL search refine p13_yes] |
+| [!DNL browse] |
+| [!DNL search redirect p13_yes] |
+| [!DNL search-redirect] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
 ### 派生フィールド {#casewhen-uc2-derivedfield}
 
-次の項目を定義します。 `Product Finding Methods (new)` 派生フィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールビルダーのルール。 これらのルールは、古い **[!UICONTROL **&#x200B;製品検索方法&#x200B;**]** フィールド値 `search` および `browse` の使用 **[!UICONTROL フレーズを含む]** 条件
+次の項目を定義します。 `Product Finding Methods (new)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 これらのルールは、古い [!UICONTROL 製品検索方法] フィールド値 `search` および `browse` の使用 [!UICONTROL フレーズを含む] 条件
 
 ![[!DNL Case When] ルール 2](assets/case-when-2.png)
 
 ### 後のデータ {#casewhen-uc2-dataafter}
 
-| 製品検索方法（新規） |
+| [!DNL Product Finding Methods (new)] |
 |----|
-| 検索 |
-| 検索 |
-| 閲覧 |
-| 検索 |
-| 検索 |
-| 閲覧 |
-| 検索 |
-| 検索 |
-| 閲覧 |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
@@ -389,9 +396,9 @@ ht-degree: 9%
 前提条件：
 
 - 組織は、数値フィールドに対してトリップ期間を収集しています。
-- 1 ～ 3 日の期間を「短い旅」と呼ばれるバケットにグループ化する必要があります。
-- 4 ～ 7 日の期間を「中旅」と呼ばれるバケットにグループ化する必要があります。
-- 8 日以上の期間を「長い旅行」と呼ばれるバケットにグループ化する必要があります。
+- 1 ～ 3 日の期間を「 」という名前のバケットにグループ化する必要があります。[!DNL short trip]&#39;
+- 4 ～ 7 日の期間を「 」という名前のバケットにグループ化する必要があります。[!DNL medium trip]&#39;
+- 8 日以上の期間を「 」という名前のバケットにグループ化します。[!DNL long trip]&#39;
 - 132 回の旅行は 1 日間予約されていた
 - 110 回の旅行が 2 日間の予約を受けていた
 - 105 回の旅行は 3 日間の予約を受けていた
@@ -407,17 +414,17 @@ ht-degree: 9%
 
 目的のレポートは次のようになります。
 
-| 旅行期間のタイプ | 予約 |
+| [!DNL Trip Duration Type] | [!DNL Bookings] |
 |----|---:|
-| 中途半端な旅行 | 358 |
-| 短い旅 | 347 |
-| 長旅 | 241 |
+| [!DNL medium trip] | 358 |
+| [!DNL short trip] | 347 |
+| [!DNL long trip] | 241 |
 
 {style="table-layout:auto"}
 
 ### 次より前のデータ {#casewhen-uc3-databefore}
 
-| 旅行期間 |
+| [!DNL Trip Duration] |
 |---:|
 | 1 |
 | 12 |
@@ -434,27 +441,27 @@ ht-degree: 9%
 
 ### 派生フィールド {#casewhen-uc3-derivedfield}
 
-次の項目を定義します。 `Trip Duration (bucketed)` 派生フィールド。 次を作成します **[!UICONTROL **&#x200B;次の場合にケース&#x200B;**]** ルールビルダーのルール。 このルールは、古い **[!UICONTROL **&#x200B;旅行期間&#x200B;**]** フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
+次の項目を定義します。 `Trip Duration (bucketed)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 このルールは、古い [!UICONTROL 旅行期間] フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
 
 ![[!DNL Case When] ルール 3](assets/case-when-3.png)
 
 
 ### 後のデータ {#casewhen-uc3-dataafter}
 
-| 旅行期間（グループ） |
+| [!DNL Trip Duration (bucketed)] |
 |---|
-| 短い旅 |
-| 長旅 |
-| 短い旅 |
-| 中途半端な旅行 |
-| 中途半端な旅行 |
-| 長旅 |
-| 中途半端な旅行 |
-| 短い旅 |
-| 短い旅 |
-| 短い旅 |
-| 長旅 |
-| 長旅 |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL short trip] |
+| [!DNL medium trip] |
+| [!DNL medium trip] |
+| [!DNL long trip] |
+| [!DNL medium trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL long trip] |
 
 
 ## 制約
@@ -469,13 +476,13 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 
 
-次の制約が適用され、適用されるのは _選択_ および _設定_ 値。
+次の制約が適用され、適用されるのは *選択* および *設定* 値。
 
 |  | 制約 |
 |:---:|----|
-| **<span style='color: red'>A</span>** | 値 _選択_ 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | すべての値 _設定_ ルールの間は、同じコンテナに属し、同じタイプまたは同じタイプの派生値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | 指定した値 _選択_ 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます _not_ 同じコンテナから派生し、同じコンテナから派生する必要がある _not_ 同じタイプである必要があります。 <br/> ![依存関係 C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | 値 *選択* 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | すべての値 *設定* ルールの間は、同じコンテナに属し、同じタイプまたは同じタイプの派生値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | 指定した値 *選択* 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます *not* 同じコンテナから派生し、同じコンテナから派生する必要がある *not* 同じタイプである必要があります。 <br/> ![依存関係 C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -505,47 +512,47 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 **元のレポート**
 
-| 外部マーケティングチャネル | セッション数 |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| 電子メールマーケティング | 500 |
-| メール%20marketing | 24 |
+| [!DNL email marketing] | 500 |
+| [!DNL email %20marketing] | 24 |
 
 {style="table-layout:auto"}
 
 **優先レポート**
 
-| 外部マーケティングチャネル | セッション数 |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| 電子メールマーケティング | 524 |
+| [!DNL email marketing] | 524 |
 
 
 ### 次より前のデータ {#findreplace-uc-databefore}
 
-| 外部マーケティング |
+| [!DNL External Marketing] |
 |----|
-| 電子メールマーケティング |
-| email%20marketing |
-| 電子メールマーケティング |
-| 電子メールマーケティング |
-| email%20marketing |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
 
 {style="table-layout:auto"}
 
 ### 派生フィールド {#findreplace-uc-derivedfield}
 
-次の項目を定義します。 `Email Marketing (updated)` 派生フィールド。 次を使用する **[!UICONTROL 検索と置換]** 関数を使用して、 `email%20marketing` と `email marketing`.
+次を定義します。 `Email Marketing (updated)` 派生フィールド。 次を使用する [!UICONTROL 検索と置換] 関数を使用して、 `email%20marketing` と `email marketing`.
 
 ![[!DNL Find and Replace] ルール](assets/find-and-replace.png)
 
 ### 後のデータ {#findreplace-uc-dataafter}
 
-| 外部マーケティング<br/>（派生フィールド） |
+| [!DNL External Marketing (updated)] |
 |----|
-| 電子メールマーケティング |
-| 電子メールマーケティング |
-| 電子メールマーケティング |
-| 電子メールマーケティング |
-| 電子メールマーケティング |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
 
 {style="table-layout:auto"}
 
@@ -573,63 +580,63 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 ## 使用例 1 {#lookup-uc1}
 
 次のキー列を含む CSV ファイルがあります： `hotelID` および `hotelID`: `city`, `rooms`, `hotel name`.
-ディメンションで Hotel ID を収集していますが、 `hotelID` を CSV ファイルに追加します。
+収集しています [!DNL Hotel ID] ディメンション内で、 [!DNL Hotel Name] から派生したディメンション `hotelID` を CSV ファイルに追加します。
 
 **CSV ファイルの構造とコンテンツ**
 
-| hotelID | city | 部屋 | ホテル名 |
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
 |---|---|---:|---|
-| SLC123 | ソルトレイクシティ | 40 | SLC Downtown |
-| LAX342 | ロスアンジェルス | 60 | LA エアポート |
-| SFO456 | サンフランシスコ | 75 | Market Street |
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
 **現在のレポート**
 
-| ホテル ID | 製品表示 |
+| [!DNL Hotel ID] | 製品表示 |
 |---|---:|
-| SLC123 | 200 |
-| LX342 | 198 |
-| SFO456 | 190 |
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
 
 {style="table-layout:auto"}
 
 
 **目的のレポート**
 
-| ホテル名 | 製品表示 |
+| [!DNL Hotel Name] | 製品表示 |
 |----|----:|
-| SLC Downtown | 200 |
-| LA エアポート | 198 |
-| Market Street | 190 |
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
 
 {style="table-layout:auto"}
 
 ### 次より前のデータ {#lookup-uc1-databefore}
 
-| ホテル ID |
+| [!DNL Hotel ID] |
 |----|
-| SLC123 |
-| LAX342 |
-| SFO456 |
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
 
 {style="table-layout:auto"}
 
 
 ### 派生フィールド {#lookup-uc1-derivedfield}
 
-次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、 **[!UICONTROL **&#x200B;ホテル ID **]** フィールドに値を入力し、新しい値に置き換えます。
+次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
 
 ![[!DNL Lookup] ルール 1](assets/lookup-1.png)
 
 ### 後のデータ {#lookup-uc1-dataafter}
 
-| ホテル名 |
+| [!DNL Hotel Name] |
 |----|
-| SLC Downtown |
-| LA エアポート |
-| Market Street |
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
@@ -640,13 +647,13 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ### 次より前のデータ {#lookup-uc2-databefore}
 
-| ページ名 |
+| [!DNL Page Name] |
 |---|
-| ホームページ |
-| フライト検索 |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
 | `http://www.adobetravel.ca/Hotel-Search` |
 | `https://www.adobetravel.com/Package-Search` |
-| 契約およびオファー |
+| [!DNL Deals & Offers] |
 | `http://www.adobetravel.ca/user/reviews` |
 | `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
@@ -654,21 +661,21 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ### 派生フィールド {#lookup-uc2-derivedfield}
 
-次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用する **[!UICONTROL **&#x200B;参照&#x200B;**]** 関数を使用して、既存の **[!UICONTROL **&#x200B;ページ名&#x200B;**]** フィールドに入力し、更新された正しい値に置き換えます。
+次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
 
 ![[!DNL Lookup] ルール 2](assets/lookup-2.png)
 
 ### 後のデータ {#lookup-uc2-dataafter}
 
-| ページ名（更新） |
+| [!DNL Page Name (updated)] |
 |---|
-| ホームページ |
-| フライト検索 |
-| ホテルサーチ |
-| パッケージ検索 |
-| 契約およびオファー |
-| レビュー |
-| 見積もりの生成 |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
 
 +++
 
@@ -695,7 +702,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ### 次より前のデータ {#urlparse-uc1-databefore}
 
-| 参照 URL |
+| [!DNL Referring URL] |
 |----|
 | `https://www.google.com/` |
 | `https://duckduckgo.com/` |
@@ -706,29 +713,29 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ### 派生フィールド {#urlparse-uc1-derivedfield}
 
-次の項目を定義します。  `Referring Domain` 派生フィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用して、 **参照 URL** 新しい派生フィールドに格納します。
+次の項目を定義します。  `Referring Domain` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL 参照 URL] フィールドに格納し、新しい派生フィールドに格納します。
 
 ![[!DNL Url Parse] ルール 1](assets/url-parse-1.png)
 
 ### 後のデータ {#urlparse-uc1-dataafter}
 
-| リファラードメイン |
+| [!DNL Referrer Domain] |
 |----|
-| www.google.com |
-| duckduckgo.com |
-| t.co |
-| l.facebook.com |
+| [!DNL www.google.com] |
+| [!DNL duckduckgo.com] |
+| [!DNL t.co] |
+| [!DNL l.facebook.com] |
 
 {style="table-layout:auto"}
 
 
 ## 使用例 2 {#urlparse-uc2}
 
-次の `cid` 派生トラッキングコードレポートの出力の一部としてのページ URL 内のクエリー文字列のパラメーター。
+次の `cid` 内のクエリー文字列のパラメーター [!DNL Page URL] 派生トラッキングコードレポートの出力の一部として。
 
 ### 次より前のデータ {#urlparse-uc2-databefore}
 
-| ページ URL |
+| [!DNL Page URL] |
 |----|
 | `https://www.adobe.com/?cid=abc123` |
 | `https://www.adobe.com/?em=email1234&cid=def123` |
@@ -738,17 +745,17 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ### 派生フィールド {#urlparse-uc2-derivedfield}
 
-次の項目を定義します。 `Query String CID` 派生フィールド。 次を使用する **[!UICONTROL ** URL 解析&#x200B;**]** 関数を使用してルールを定義し、ページ URL のクエリー文字列パラメーターの値を取得する場合は、 `cid` をクエリパラメーターとして使用します。 出力値は、新しい派生フィールドに格納されます。
+次の項目を定義します。 `Query String CID` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL ページ URL] フィールド、指定 `cid` をクエリパラメーターとして使用します。 出力値は、新しい派生フィールドに格納されます。
 
 ![[!DNL Url Parse] ルール 2](assets/url-parse-2.png)
 
 ### 後のデータ {#urlparse-uc2-dataafter}
 
-| クエリ文字列 CID |
+| [!DNL Query String CID] |
 |----|
-| abc123 |
-| def123 |
-| xyz123 |
+| [!DNL abc123] |
+| [!DNL def123] |
+| [!DNL xyz123] |
 
 {style="table-layout:auto"}
 
