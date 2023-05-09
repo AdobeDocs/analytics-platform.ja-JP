@@ -1,8 +1,8 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 72%
+source-wordcount: '950'
+ht-degree: 68%
 
 ---
 # スニペット
@@ -56,3 +56,14 @@ ht-degree: 72%
 | [!UICONTROL **最終変更日**] | コンポーネントの最終変更日を表示します。 このセクションは、フィルター、指標、計算指標および日付範囲を表示する場合に表示されます。 |
 
 {style="table-layout:auto"}
+
+## コンポーネントの並べ替えオプション {#components-sort-options}
+
+| オプション | 関数 |
+|---------|----------|
+| [!UICONTROL **推奨**] | コンポーネントを、リストの最上部で推奨されるコンポーネントと並べ替えます。 自分や組織内の他のユーザーが最も頻繁に使用し、最近使用したコンポーネントがリストの上位に表示されます。 |
+| [!UICONTROL **アルファベット順**] | コンポーネントをアルファベット順に並べ替えます。 |
+| [!UICONTROL **分類**] | コンポーネントのタイプ（ディメンション、指標、セグメント、日付範囲）に従ってコンポーネントを並べ替えます。 |
+
+{style="table-layout:auto"}
+

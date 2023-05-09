@@ -4,10 +4,10 @@ title: データ要素の表示
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 60%
+source-wordcount: '302'
+ht-degree: 55%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 60%
    コンポーネントの種類は、色とアイコンの両方で識別できます。 **Dimension** ![Dimensionアイコン](assets/dimension-icon.png) オレンジ色です **セグメント** ![セグメントアイコン](assets/segment-icon.png) 青い **日付範囲** ![日付範囲アイコン](assets/date-range-icon.png) 紫色で **指標** ![指標アイコン](assets/default-metric-icon.png) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはセグメントテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](assets/calculated-metric-icon-created.png) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 {{dd-filter-criteria}}
+
+1. （オプション） **並べ替え** アイコン ![コンポーネントを並べ替えアイコン](assets/component-sort-icon.png)次に、次のいずれかのフィルターオプションを選択して、コンポーネントのリストを並べ替えます。
+
+   {{components-sort-options}}
 
 1. コンポーネントのリストから、表示するコンポーネントを選択します。
 

@@ -4,10 +4,10 @@ title: データ要素でのエントリの編集
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 58%
+source-wordcount: '315'
+ht-degree: 53%
 
 ---
 
@@ -32,6 +32,10 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
    コンポーネントの種類は、色とアイコンの両方で識別できます。 **Dimension** ![Dimensionアイコン](assets/dimension-icon.png) オレンジ色です **セグメント** ![セグメントアイコン](assets/segment-icon.png) 青い **日付範囲** ![日付範囲アイコン](assets/date-range-icon.png) 紫色で **指標** ![指標アイコン](assets/default-metric-icon.png) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはセグメントテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](assets/calculated-metric-icon-created.png) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 {{dd-filter-criteria}}
+
+1. （オプション） **並べ替え** アイコン ![コンポーネントを並べ替えアイコン](assets/component-sort-icon.png)次に、次のいずれかのフィルターオプションを選択して、コンポーネントのリストを並べ替えます。
+
+   {{components-sort-options}}
 
 1. コンポーネントのリストから、編集するコンポーネントを選択します。
 
