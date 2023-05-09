@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4b28a3288f1659ca88353540ff8ce7cd7cd50aea
+source-git-commit: 4d21baa88c90ec24d04b802fdce1baf956eddfe3
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '883'
 ht-degree: 98%
 
 ---
@@ -257,12 +257,12 @@ ht-degree: 98%
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Report Builder の概要](../report-builder/report-buider-overview.md)
    + [Report Builder の設定](../report-builder/report-builder-setup.md)
    + [データブロックの作成](../report-builder/create-a-data-block.md)
    + [Report Builder ハブ](../report-builder/report-builder-hub.md)
+   + [データビューを選択](../report-builder/select-data-view.md)
    + [日付範囲を選択します。](../report-builder/select-date-range.md)
    + [フィルターの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)

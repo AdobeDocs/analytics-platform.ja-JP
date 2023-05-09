@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 98%
+source-wordcount: '1267'
+ht-degree: 92%
 
 ---
 
@@ -61,9 +61,15 @@ ht-degree: 98%
 
 1. 会社を選択します。ダッシュボードにログインすると、「**[!UICONTROL 会社の選択]**」画面が表示されます。この画面には、所属するログイン会社が一覧表示されます。自分と共有しているスコアカードに関連付けられている会社名をタップします。
 
-1. 次に、自分と共有されているすべてのスコアカードが「スコアカード」リストに表示されます。表示するスコアカードをタップします。
+   スコアカードのリストに、自分と共有されているすべてのスコアカードが表示されます。
 
-   ![会社を選択](assets/nextseq.png)
+1. 表示するスコアカードをタップします。
+
+   1 回のログインで複数の組織にアクセスできる場合、組織のすべてのスコアカードがスコアカードリストで使用できます。
+
+   スコアカードのタイトル、組織名、または最近表示された項目に基づいてスコアカードのリストを並べ替えることができます。 特定のスコアカードを検索することもできます。
+
+   ![会社を選択](assets/mobile-home-screen.png)
 
    ログインして、何も共有されていないというメッセージが表示された場合は、キュレーターに次の点を確認してください。
 
