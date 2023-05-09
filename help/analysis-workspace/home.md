@@ -5,7 +5,7 @@ description: Analysis Workspace 機能の概要
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
+source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 26%
@@ -31,7 +31,7 @@ Analysis Workspaceでは、分析をすばやく構築してインサイトを�
 | A | **左端のレール：** Analysis Workspaceにパネル、ビジュアライゼーションおよびコンポーネントを追加するためのタブが含まれます。 また、データディクショナリを開くためのデータディクショナリアイコンも含まれます。 |
 | B | **左レール：** 左端のパネルで選択したタブに応じて、この領域には個々のパネル、ビジュアライゼーションまたはコンポーネントが含まれます。 |
 | C | **キャンバス：** これは、左側のレールからコンテンツをドラッグしてプロジェクトを作成する主な領域です。 パネル、ビジュアライゼーションおよびコンポーネントをキャンバスに追加すると、プロジェクトが動的に更新されます。 |
-| D | **レポートスイートのドロップダウンメニュー：** Analysis Workspaceの各パネルでは、レポートスイートのドロップダウンメニューを使用して、データソースとして使用するレポートスイートを選択できます。 |
+| D | **データビュードロップダウンメニュー：** Analysis Workspaceのパネルごとに、データビュードロップダウンメニューを使用して、データソースとして使用するデータビューを選択できます。 |
 
 ## Analysis Workspaceの機能 {#analysis}
 
