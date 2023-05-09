@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1c00f3974293c9022365e69d6c1b38d79f52d872
+source-git-commit: b313600ff215dea5a869e5a6125120a64f50235b
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 27%
@@ -27,7 +27,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **CJA のReport Builder — セルからのデータビューの選択** | この機能を使用すると、ユーザーはセルからデータブロックのデータビューを選択できます。 これは、ブックを作成し、同様のデータ構造を持つ複数のデータビューがあり、異なるデータビューで複数回ブックを再利用する場合に便利です。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | 該当なし | 2023 年 5 月 24 日 |
 | **Analysis Workspaceでのコンポーネントの並べ替え** | <p>左側のパネルまたはAnalysis Workspaceのデータディクショナリでコンポーネントを表示する際に、新しい「並べ替え」オプションを使用できるようになりました。 コンポーネントは、「推奨」（最も一般的に使用されるコンポーネント）、「アルファベット順」（アルファベット順）または「分類」（タイプ）で並べ替えることができます。</p><p>以前は、コンポーネントの検索またはフィルタリングのみおこなえました。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=en)</p> | 該当なし | 2023 年 5 月 11 日 |
 | **フリーフォームテーブルからの動的ディメンションを含む行の削除** | Analysis Workspaceのフリーフォームテーブルで、x アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除できるようになりました。 その際、「等しくない」フィルタールールが自動的に適用されます。<p>以前は、動的ディメンションを含む行を削除する唯一の方法は、フィルターダイアログでルールを手動で作成することでした。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html?lang=en)</p> | 該当なし | 2023 年 5 月 11 日 |
-| **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspaceの各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | 該当なし | 2023 年 5 月 11 日 |
+| **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspaceの各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。 [詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | 該当なし | 2023 年 5 月 18 日 |
 | **ディープリンク（モバイルアプリ）** | ユーザーがスコアカードへのリンクを送信して、そのリンクをアプリのスコアカードプロジェクトに直接導くことを許可します。 これにより、プロジェクトを共有し、技術的でないオーディエンスからのエンゲージメントを促進する作業がさらに簡単になります。 | 該当なし | 2023 年 5 月 18 日 |
 | **インテリジェントキャプション** | Line ビジュアライゼーションの自然言語の概要を使用して、ユーザー向けのストーリーテリングを強化します。 | 2023 年 5 月 18 日 | 2023 年 6 月 2 日 |
 
