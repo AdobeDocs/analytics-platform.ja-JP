@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 80%
@@ -40,8 +40,8 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 | タイプ | これが Workspace プロジェクト、フォルダ、または [モバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=ja). |
 | タグ | プロジェクトに適用されたタグです。 |
 | スケジュール済み | プロジェクトがスケジュールに従って受信者に電子メールで送信されるようにスケジュールされているかどうかを示します。 詳しくは、 [プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md). |
-| 共有リンク（全員） | プロジェクトは、Analysis Workspaceにアクセスできないユーザーとでも誰とでも共有できます。 この列は、この方法でプロジェクトが共有されたかどうかを示します。 詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
-| レポートスイート | プロジェクトが関連付けられているレポートスイート。 |
+| 共有リンク (任意のユーザー) | プロジェクトは、Analysis Workspaceにアクセスできないユーザーとでも誰とでも共有できます。 この列は、この方法でプロジェクトが共有されたかどうかを示します。 詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
+| データビュー | プロジェクトが関連付けられているデータビュー。 |
 | [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja) | プロジェクトの役割（所有者、編集、重複、表示）を示します。 |
 | 所有者 | このプロジェクトを作成したユーザー（ユーザー自身、またはユーザー自身とそのプロジェクトを共有した他のユーザー）。 |
 | 共有先 | プロジェクトの共有先のユーザー。 |

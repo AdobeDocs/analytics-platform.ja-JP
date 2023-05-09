@@ -3,10 +3,11 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素の表示
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 71%
+ht-degree: 60%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 71%
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. 表示するコンポーネントを含むレポートスイートがドロップダウンメニューで選択されます。デフォルトでは、既に存在するレポートスイートが表示されます。
+1. 表示するコンポーネントを含むデータビューがドロップダウンメニューで選択されていることを確認します。 デフォルトでは、既に存在するデータビューが表示されます。
 
 1. （オプション）検索フィールドに、表示するコンポーネントの名前の入力します。
 

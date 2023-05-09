@@ -4,7 +4,7 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 7f657820e01696aa5d9b466ea2eaa6bc417ee6cf
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '3146'
 ht-degree: 77%
@@ -55,7 +55,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=ja) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
 |  | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspace 使用するビジュアライゼーションカラーパレットを選択します。 <ul><li>Adobe が提供するパレット（デフォルト）</li><li>条件付き書式パレット </li><li>上/下パレット（分岐）<li>カスタム定義パレット</li></ul> |
 | **データ** |  |  |
-|  | [レポートスイート](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択された特定のレポートスイート</li></ul> |
+|  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択した特定のデータビュー</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>カスタム定義範囲</li></ul> |
 |  | [パネルタイプ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | 繰り返しインスタンスのカウント | レポート内でレポートインスタンスがカウントされるかどうかを指定します。例えば、この設定（有効にした場合）は、複数の連続するページビューを複数のページビューと同じページに対して処理します。オフになっている場合は、単一ページビューとしてカウントされます。 <p>**メモ：** この設定は、特定の指標（単一ページ訪問数など）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
@@ -82,7 +82,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** |  |  |
 |  | ヘッダーテキストを折り返し | ヘッダーを読みやすく、またテーブルを共有しやすくするため、フリーフォームテーブルでヘッダーテキストを折り返せるようにします。これは、.pdf のレンダリングや名前の長い指標に使用すると便利です。デフォルトで有効です。 |
 |  | 合計を表示 | この合計は[!UICONTROL 総計]と等しいか、またはそのサブセットです。「[!UICONTROL なしを含む]」オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルフィルターを反映します。 |
-|  | 総計の表示 | この合計は、収集されたすべてのヒットを表し、「レポートスイートの合計」と呼ばれることもあります。セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのヒットを反映するように調整されます。[静的な行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を含むテーブルや分類では、総計はサポートされません。 |
+|  | 総計の表示 | この合計は、収集されたすべてのヒットを表し、「データビューの合計」とも呼ばれます。 フィルターがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、フィルター条件に一致するすべてのヒットを反映するように調整されます。[静的な行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を含むテーブルや分類では、総計はサポートされません。 |
 |  | スパークラインを表示 | グラフの下部に折れ線グラフを表示または非表示にします。非表示にすると、凡例が変更され、折れ線が表示されなくなります。 |
 |  | 数値 | セルに指標の数値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、数値は行項目のページ表示回数になります。 |
 |  | パーセント | セルに指標の割合の値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。メモ：より正確な数値を示すために、100％を超える割合が表示されるようになりました。列の幅をさらに大きくできるように、上限を 1,000％まで高める予定です。 |

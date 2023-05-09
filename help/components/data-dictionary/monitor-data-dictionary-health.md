@@ -3,10 +3,11 @@ description: 管理者は、データ要素の正常性を監視する責任が�
 title: データ要素の正常性の監視
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +39,7 @@ Customer Journey Analytics管理者は、正常なデータディクショナリ
 
    ![データ要素の管理者表示](assets/data-dictionary-admin.png)
 
-1. ドロップダウンメニューで正しいレポートスイートが選択されます。
+1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。
 
 1. 「[!UICONTROL **要素の正常性**]」タブで、次のいずれかのオプションの横にある「[!UICONTROL **表示**]」を選択します。
 

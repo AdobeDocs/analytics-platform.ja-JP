@@ -1,12 +1,13 @@
 ---
-description: 管理者は、レポートスイートを使用して、コンポーネントの説明を追加できます。
+description: 管理者は、データビューを使用して、コンポーネントの説明を追加できます。
 title: コンポーネントの説明の追加
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 17%
+source-wordcount: '168'
+ht-degree: 3%
 
 ---
 
@@ -14,11 +15,11 @@ ht-degree: 17%
 
 説明は、Analysis Workspaceでプロジェクトを作成する際、またはレポートを表示する際に、様々なコンポーネントを最適に使用する方法を理解するのに役立ちます。
 
-Customer Journey Analytics管理者は、コンポーネント (Dimension、指標、フィルターおよび日付範囲 ) の説明をレポートスイート内で追加するか、Analysis Workspace内で直接データディクショナリを使用して追加できます。
+Customer Journey Analytics管理者は、コンポーネント (Dimension、指標、フィルター、日付範囲 ) の説明をデータビュー内で追加したり、Analysis Workspace内で直接データディクショナリを使用したりできます。
 
-## レポートスイート内のコンポーネントへの説明の追加
+## データビューでのコンポーネントへの説明の追加
 
-次のビデオでは、レポートスイートにディメンションと指標の説明を追加する方法について説明します。
+次のビデオでは、データビューにディメンションと指標の説明を追加する方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 

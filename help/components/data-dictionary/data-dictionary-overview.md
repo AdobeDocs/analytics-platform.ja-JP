@@ -3,10 +3,11 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素の概要
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 77%
+ht-degree: 67%
 
 ---
 
@@ -44,11 +45,11 @@ Analytics 管理者がデータ要素を使用する方法の一部を以下に�
 
 * まだ承認されていないコンポーネントを識別します。
 
-* コンポーネントの説明を Analysis Workspace で直接更新します。データ要素のコンポーネントの説明に対して行われた更新は、レポートスイートに反映されます。
+* コンポーネントの説明を Analysis Workspace で直接更新します。データディクショナリ内のコンポーネントの説明に対する更新は、データビューに反映されます。
 
-   同様に、レポートスイートのコンポーネントの説明に対して行われた更新は、Analysis Workspace に反映されます。
+   同様に、データビュー内のコンポーネントの説明に対する更新は、Analysis Workspaceにも反映されます。
 
-   コンポーネントの説明を Analysis Workspace またはレポートスイートに追加する方法について詳しくは、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)を参照してください。
+   Analysis Workspaceまたはデータビューでコンポーネントの説明を追加する方法について詳しくは、 [コンポーネントの説明を追加](/help/components/add-component-descriptions.md).
 
 ## データ要素へのアクセス
 

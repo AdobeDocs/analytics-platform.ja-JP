@@ -4,10 +4,10 @@ description: Analysis Workspace のメディア分平均オーディエンスパ
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Media Analytics のお客様は、分平均オーディエンスパネルを使�
 Analysis Workspace での分平均オーディエンスは、メディアストリームを視聴した時間をコンテンツの期間（または選択した期間や精度の合計値）で割った値です。
 
 メディア分平均オーディエンスパネルでは、分類を使用して期間が使用可能になっている場合に選択した特定のコンテンツによる分平均オーディエンス分析を提供します。
-分平均オーディエンスパネルでは、分類を使用して期間を指定できるかどうかに関わらず、特定のコンテンツでフィルタリング可能な、選択した期間中の分析も提供します。メディア分平均オーディエンスパネルにアクセスするには、Media Analytics コンポーネントが有効になっているレポートスイートに移動します。次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。
+分平均オーディエンスパネルでは、分類を使用して期間を指定できるかどうかに関わらず、特定のコンテンツでフィルタリング可能な、選択した期間中の分析も提供します。メディア分平均オーディエンスパネルにアクセスするには、Media Analytics コンポーネントが有効なデータビューに移動します。 次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
 << replace with AMA video when available >> -->

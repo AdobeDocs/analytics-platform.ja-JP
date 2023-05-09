@@ -3,16 +3,17 @@ description: Analysis Workspace のデータ要素を使用すると、Analysis 
 title: データ要素でのエントリの編集
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 70%
+ht-degree: 58%
 
 ---
 
 # データ要素でのコンポーネントエントリの編集
 
-Customer Journey Analytics管理者は、特定のレポートスイートのデータディクショナリ内のコンポーネントエントリを編集できます。 変更内容は、レポートスイートのすべてのユーザーに表示されます。
+Customer Journey Analytics管理者は、特定のデータビューのデータディクショナリ内のコンポーネントエントリを編集できます。 加えた変更は、データビューのすべてのユーザーに表示されます。
 
 データ要素でのコンポーネントを編集するには：
 
@@ -24,7 +25,7 @@ Customer Journey Analytics管理者は、特定のレポートスイートのデ
 
    ![データ要素の管理者表示](assets/data-dictionary-admin.png)
 
-1. ドロップダウンメニューで正しいレポートスイートが選択されます。デフォルトでは、既に存在するレポートスイートが表示されます。
+1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。 デフォルトでは、既に存在するデータビューが表示されます。
 
 1. （オプション）検索フィールドに、編集するコンポーネントの名前を入力します。
 
