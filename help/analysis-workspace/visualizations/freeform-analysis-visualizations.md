@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 99%
+source-wordcount: '1245'
+ht-degree: 90%
 
 ---
 
@@ -15,9 +15,7 @@ ht-degree: 99%
 
 ワークスペースは、棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など、データを視覚的に表現する様々なビジュアライゼーションを提供します。Customer Journey Analytics を使用すると、ほとんどのビジュアライゼーションタイプは使い慣れたものとなります。しかし、Analysis Workspace にはビジュアライゼーション設定があり、インタラクティブ機能を備えた新しいまたは独自のビジュアライゼーションタイプを数多く揃えています。
 
-ビジュアライゼーションには、ワークスペースの左上のアイコン、[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)またはワークフローの右クリックメニューからアクセスできます。
-
-![ビジュアライゼーションパネル](assets/viz-rail.png)
+## ビジュアライゼーションのタイプ
 
 Analysis Workspace では、次のビジュアライゼーションタイプを利用できます。
 
@@ -40,6 +38,26 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
 | [ベン図](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
+
+## パネルへのビジュアライゼーションの追加
+
+1. ビジュアライゼーションを追加するAnalysis Workspaceプロジェクトを開きます。
+
+1. 次のいずれかの方法を使用して、ビジュアライゼーションを追加します。
+
+   * 左側のレールで、 **ビジュアライゼーション** アイコン <!-- add icon -->次に、ビジュアライゼーションを追加するパネルにドラッグします。
+
+      ![](assets/viz-rail.png)
+
+   * ビジュアライゼーションを追加するパネルで、 **プラス** アイコンをクリックして、追加するビジュアライゼーションを表すアイコンを選択します。 各ビジュアライゼーションのアイコンの上にマウスポインターを置くと、その名前が表示されます。
+
+      ![ビジュアライゼーションを追加するためのボタン](assets/visualization-add-to-panel.png)
+
+   * を追加します。 [空欄パネル](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=ja)次に、追加するビジュアライゼーションを選択します。
+
+      ![空のパネル](assets/blank_panel.png)
+
+   * Analysis Workspaceプロジェクトの既存のパネルを右クリックし、「 [!UICONTROL **ビジュアライゼーションを複製**] または [!UICONTROL **ビジュアライゼーションをコピー**].
 
 ## ビジュアライゼーション設定のカスタマイズ
 
