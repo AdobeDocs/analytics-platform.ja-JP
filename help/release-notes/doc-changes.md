@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
+source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 90%
+source-wordcount: '1854'
+ht-degree: 84%
 
 ---
 
@@ -22,6 +22,9 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | **2023 年 5 月** |  |
 | Analysis Workspace の概要 | 更新済み [Analysis Workspaceの概要](/help/analysis-workspace/home.md) を参照して、より一般的な概要情報と関連するコンテンツへのリンクを含めます。 |
 | プロジェクトの作成 | 次の方法について詳しく説明する新しい記事を作成しました。 [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md) Analysis Workspace |
+| 左側のパネルでのコンポーネントの並べ替え | 左側のパネルでのコンポーネントのリストの並べ替えに関する情報を追加しました。詳しくは、 [コンポーネントの概要](/help/components/overview.md). |
+| フリーフォームテーブルからの動的ディメンションを含む行の削除 | x アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除する方法に関する情報を追加しました。 詳しくは、 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| パネル内にビジュアライゼーションを追加するボタン | Analysis Workspaceの各パネルの下部にある新しいボタンに関する情報を追加しました。このボタンを使用すると、ビジュアライゼーションをすばやく追加できます。 詳しくは、「パネルへのビジュアライゼーションの追加」の節を参照してください。 [ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | **2023年4月** |  |
 | フィルターをディメンションとして使用する方法に関するビデオ | フィルターをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは [フィルターの作成](/help/components/filters/create-filters.md) ページ。</p> <p>次に、ビデオへの直接リンクを示します。 [Analysis Workspaceでフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | フィルタードキュメント | を使用する方法に関する記事を追加しました。 [フィルタービルダー](/help/components/filters/filter-builder.md). <p>の合理化されたドキュメント [フィルターの作成](/help/components/filters/create-filters.md) および [フィルターの概要](/help/components/filters/filters-overview.md).</p> |
