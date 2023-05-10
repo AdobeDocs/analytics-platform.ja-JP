@@ -3,10 +3,10 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '848'
+ht-degree: 79%
 
 ---
 
@@ -26,17 +26,38 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 >
 > この節で説明するように、動的ディメンション項目のみをフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、 [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
+### テーブルから特定の行をすばやく除外する
+
+フィルタダイアログを開かなくても、テーブルから特定の行をすばやく除外できます。
+
+>[!NOTE]
+>
+>この節で説明するように行を除外する場合、 [!UICONTROL **次と等しくない**] ルールは [**[!UICONTROL アドバンスフィルター]**](#apply-a-simple-or-advanced-filter) ダイアログ。
+
+フリーフォームテーブルから特定の行をすばやく除外するには：
+
+1. 除外する行の上にマウスポインターを置いて、x アイコンを選択します。
+
+   Shift キーを押しながら範囲行を選択するか、Command キー (Mac) または Ctrl キー (Windows) を押しながら複数の行を選択します。
+
+### テーブルへの標準フィルターまたは詳細フィルターの適用
+
 フリーフォームテーブルでデータをフィルタリングするには：
 
-1. フリーフォームテーブルで、フィルタリング対象のデータを含んだ列の上にポインタを合わせます。<!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. フィルターを適用するデータが格納されている列の上にマウスポインターを置きます。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. **フィルター**&#x200B;アイコンが表示されたら選択します。
 
    ![テーブル内のフィルターアイコン](assets/table-filter-icon.png)
 
-1. 「[!UICONTROL **検索語句**]」フィールドで、フィルタリングに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。
+   次のオプションがあります。
 
-1. （オプション）異なる条件または複数の条件でフィルタリングする場合は、「[!UICONTROL **詳細を表示**]」を選択します。
+   | オプション | 関数 |
+   |---------|----------|
+   | [!UICONTROL **単語または語句を検索**] | フィルターに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。 |
+   | [!UICONTROL **未指定 (なし) を含む**] | テーブルのどのディメンションにも該当しないデータをテーブルに表示するには、このオプションを選択します。 <!--what is this?--> |
+
+1. （オプション）異なる条件または複数の条件でフィルターする場合は、「 [!UICONTROL **アドバンスフィルター**].
 
    次のオプションが使用可能です。
 
