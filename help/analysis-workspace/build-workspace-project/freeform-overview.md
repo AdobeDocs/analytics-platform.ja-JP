@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 80%
+source-wordcount: '1317'
+ht-degree: 79%
 
 ---
 
@@ -27,12 +27,11 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 >
 >一部の列は、デフォルトでは表示されません。 表示される列をカスタマイズするには、 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/projects-page-customize-columns-icon.png).
 
-
 | 要素 | 説明 |
 |---|---|
 | [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルに関する、Analysis Workspaceおよびその関連コンポーネントの設定を管理します。 |
 | [フォルダーを作成](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 新しいフォルダまたはサブフォルダをプロジェクトとフォルダのリストに追加します。 |
-| [プロジェクトの作成](/help/analysis-workspace/home.md) | 新しいプロジェクトを最初から、またはから開始する [テンプレート](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ja#analysis-workspace). |
+| [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md) | 新しいプロジェクトを最初から開始します。 |
 | 詳細を表示 | 空のプロジェクトまたはモバイルスコアカードを作成するためのオプションを表示します。 [トレーニングチュートリアルの表示](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=ja)または [リリースノートの表示](/help/release-notes/latest.md). |
 | フォルダとプロジェクトを表示 | プロジェクトのフォルダ構造を表示するかどうかを選択します。 詳しくは、[Analytics のフォルダーについて](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)を参照してください。 |
 | テーブルをカスタマイズ（アイコン） | プロジェクトページの各プロジェクトに表示される情報をカスタマイズできます。 |
@@ -60,7 +59,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 | メニュー項目 | 説明 |
 |---|---|
-| プロジェクト | プロジェクト管理の一般的なアクション（新規、開く、保存、名前を付けて保存、テンプレートとして保存など）が含まれます。また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。「**プロジェクト情報および設定**」（以下を参照）には、プロジェクトを管理するための多くのオプションが用意されています。 |
+| プロジェクト | 新規、開く、保存、名前を付けて保存など、プロジェクト管理に関する一般的なアクションが含まれます。 また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。「**プロジェクト情報および設定**」（以下を参照）には、プロジェクトを管理するための多くのオプションが用意されています。 |
 | テンプレートを | 前回の操作を元に戻すか、やり直します。「すべてクリア」を選択すると、プロジェクトが最初の空白の状態にリセットされます。 |
 | 前に | このメニューから、新しいパネルまたはビジュアライゼーションを挿入します。また、左側のパネルから新しいパネルやビジュアライゼーションを挿入することもできます。 |
 | [コンポーネント](/help/components/overview.md) | プロジェクトから、新しいフィルター、計算指標、日付範囲またはアラートの各コンポーネントを作成します。また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |
