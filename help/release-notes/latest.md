@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 28%
+source-wordcount: '850'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **フリーフォームテーブルからの動的ディメンションを含む行の削除** | Analysis Workspaceのフリーフォームテーブルで、x アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除できるようになりました。 その際、「等しくない」フィルタールールが自動的に適用されます。<p>以前は、動的ディメンションを含む行を削除する唯一の方法は、フィルターダイアログでルールを手動で作成することでした。 [詳細情報](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 該当なし | 2023 年 5 月 11 日 |
 | **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspaceの各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。 [詳細情報](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 該当なし | 2023 年 5 月 18 日 |
 | **ディープリンク（モバイルアプリ）** | ユーザーがスコアカードへのリンクを送信して、そのリンクをアプリのスコアカードプロジェクトに直接導くことを許可します。 これにより、プロジェクトを共有し、技術的でないオーディエンスからのエンゲージメントを促進する作業がさらに簡単になります。 | 該当なし | 2023 年 5 月 18 日 |
-| **インテリジェントキャプション** | Line ビジュアライゼーションの自然言語の概要を使用して、ユーザー向けのストーリーテリングを強化します。 | 2023 年 5 月 18 日 | 2023 年 6 月 2 日 |
+| **インテリジェントキャプション** | 自然言語の要約を使用してユーザーに語りを強化 [!UICONTROL 線] ビジュアライゼーション。 | 2023 年 5 月 18 日 | 2023 年 6 月 2 日 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412;AN-317105;AN-318122;AN-317353
 | 通知 | 追加または更新された通知 | 説明 |
 | --- | --- | --- |
 | 該当なし | 該当なし | 該当なし |
+
+## 提供終了（EOL）に関する注意事項 {#eol}
+
+| EOL 対象の製品または機能 | 追加日または更新日 | 説明 |
+| --- | --- | --- |
+| **AdobeIO OAuth サーバー間資格情報への移行** | 2023 年 5 月 12 日 | AdobeIO JWT 資格情報を使用するAdobe Analytics API、CJA API、Livestream のお客様は、次の手順で AdobeIO OAuth サーバー間資格情報に移行する必要があります。 **2025 年 1 月 2 日**. 2024 年 5 月 1 日以降、AdobeIO では新しい JWT 資格情報の作成は許可されません。 JWT を使用するお客様は、新しい OAuth サーバー間資格情報を作成するか、既存の JWT 資格情報を OAuth サーバー間資格情報に移行する必要があります。 また、新しい OAuth サーバー間資格情報を使用するには、クライアントアプリケーションを更新する必要があります。 <ul><li>[サービスアカウント (JWT) 資格情報からの移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[新しい OAuth サーバー間資格情報の使用](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[よくある質問（FAQ）](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
