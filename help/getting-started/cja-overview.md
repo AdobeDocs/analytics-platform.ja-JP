@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 20ea211fff816b8b5e99d3d6ef3cb4ba4d0fd6a9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '978'
+ht-degree: 93%
 
 ---
 
@@ -36,8 +36,7 @@ Customer Journey Analytics では、使いやすいクロスチャネル機能�
 >
 >これまで Adobe Analytics を使用していて、Customer Journey Analytics で Adobe Analytics データを使用する必要がある場合は、[データ取り込み](../data-ingestion/data-ingestion.md)の節に含まれている[従来の Adobe Analytics からのデータの取り込みと使用](../data-ingestion/analytics.md)のクイックスタートガイドを参照してください。
 
-
-Customer Journey Analytics の最初のリリースには、Analysis Workspace に含まれる多くの機能が含まれています。完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
+Customer Journey Analyticsの最初のリリースには、Adobe Analyticsに含まれる多くの機能が含まれています。 完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
 ## 主なユースケース
 
