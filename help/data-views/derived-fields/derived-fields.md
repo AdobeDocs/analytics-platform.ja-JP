@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '2987'
 ht-degree: 8%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 8%
 # 派生フィールド
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->最終更新を保留中の場合は、 [!UICONTROL カスタムフィールド] の代わりに [!UICONTROL 派生フィールド] を使用して、
-
 
 派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
