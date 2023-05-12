@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 4205995fdc54e4d7626f17de79573751a5c63d26
+source-git-commit: 5b84c2c908f947b1abed621f68aa1a324faeecde
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2890'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,9 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
    - CJA Workspace プロジェクトおよび
    - CJA データビュー。
 
-- BI ツールを CJA SQL Connector に接続するには、有効期限のない資格情報で期限切れになる情報を使用します。 詳しくは、 [資格情報ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) 有効期限が切れる資格情報または期限が切れない資格情報の設定について詳しくは、を参照してください。
+- BI ツールを CJA SQL Connector に接続するには、有効期限のない資格情報で期限切れになる情報を使用します。 Thr [資格情報ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) では、有効期限が切れる資格情報や期限が切れない資格情報の設定について詳しく説明しています。
+
+詳しくは、 [アクセス制御](../admin/cja-access-control.md) （ CJA 管理の節）を参照してください。
 
 
 ## 用途
