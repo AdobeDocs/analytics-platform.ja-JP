@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 306c1432163841034c8e7a34f8e112a5cc734da4
+source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 25%
+source-wordcount: '852'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **フリーフォームテーブルからの動的ディメンションを含む行の削除** | Analysis Workspaceのフリーフォームテーブルで、x アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除できるようになりました。 その際、「等しくない」フィルタールールが自動的に適用されます。<p>以前は、動的ディメンションを含む行を削除する唯一の方法は、フィルターダイアログでルールを手動で作成することでした。 [詳細情報](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 該当なし | 2023 年 5 月 18 日 |
 | **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspaceの各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。 [詳細情報](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 該当なし | 2023 年 5 月 18 日 |
 | **ディープリンク（モバイルアプリ）** | ユーザーがスコアカードへのリンクを送信して、そのリンクをアプリのスコアカードプロジェクトに直接導くことを許可します。 これにより、プロジェクトを共有し、技術的でないオーディエンスからのエンゲージメントを促進する作業がさらに簡単になります。 | 該当なし | 2023 年 5 月 18 日 |
-| **インテリジェントキャプション** | 自然言語の要約を使用してユーザーに語りを強化 [!UICONTROL 線] ビジュアライゼーション。 | 2023 年 5 月 18 日 | 2023 年 6 月 2 日 |
+| **インテリジェントキャプション** | 自然言語の要約を使用してユーザーに語りを強化 [!UICONTROL 線] ビジュアライゼーション。 [詳細情報](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023 年 5 月 18 日 | 2023 年 6 月 2 日 |
 
 {style="table-layout:auto"}
 
