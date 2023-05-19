@@ -3,9 +3,9 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '862'
 ht-degree: 79%
 
 ---
@@ -32,7 +32,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 >[!NOTE]
 >
->この節で説明するように行を除外する場合、 [!UICONTROL **次と等しくない**] ルールは [**[!UICONTROL アドバンスフィルター]**](#apply-a-simple-or-advanced-filter) ダイアログ。
+>この節で説明するように行を除外する場合、 [!UICONTROL **常に項目を除外**] ルールは、[ フィルタの詳細設定 ] ダイアログボックスで自動的に適用されます。 ( 適用されたルールを表示するには、フィルターアイコンを選択し、 [**[!UICONTROL 詳細を表示]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 フリーフォームテーブルから特定の行をすばやく除外するには：
 
@@ -57,7 +57,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
    | [!UICONTROL **単語または語句を検索**] | フィルターに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。 |
    | [!UICONTROL **未指定 (なし) を含む**] | テーブルのどのディメンションにも該当しないデータをテーブルに表示するには、このオプションを選択します。 <!--what is this?--> |
 
-1. （オプション）異なる条件または複数の条件でフィルターする場合は、「 [!UICONTROL **アドバンスフィルター**].
+1. （オプション）異なる条件または複数の条件でフィルタリングする場合は、「[!UICONTROL **詳細を表示**]」を選択します。
 
    次のオプションが使用可能です。
 
