@@ -1,18 +1,18 @@
 ---
-description: 時間分割は、収集したヒットのタイムスタンプを取得し、「時間帯」や「曜日」など、よりわかりやすいディメンションに分類します。
+description: 時間分割は、収集したイベントのタイムスタンプを取得し、「時間帯」や「曜日」など、より意味のあるディメンションに分類します。
 title: 時間分割ディメンション
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
-# 時間分割ディメンション（Analysis Workspace）
+# Analysis Workspaceの時間分割ディメンション
 
-時間分割は、収集したヒットのタイムスタンプを取得し、「時間帯」や「曜日」など、より意味のあるディメンションに分類します。
+時間分割は、収集したイベントのタイムスタンプを取得し、「時間帯」や「曜日」など、より意味のあるディメンションに分類します。
 
 時間分割ディメンションは、データビューのタイムゾーンに基づいています。これらのディメンションは Analysis Workspace で使用でき、以下の問いへの回答を得られます。
 

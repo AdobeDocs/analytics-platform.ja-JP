@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '2003'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -55,10 +55,10 @@ ht-degree: 75%
 | オーディエンスの公開（セグメントの公開） | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics Classifications Source Connector を使用して Experience Platform および CJA にインポートできます。ルックアップデータセットは AEP に直接アップロードして、CJA で使用することもできます。 |
 | 分類ルールビルダー | CJA で[部分文字列](/help/data-views/component-settings/substring.md)を使用したサポートルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
-| カスタムセッション | モバイルバックグラウンドヒット以外のすべてのカスタムセッション機能がサポートされます。 |
+| カスタムセッション | モバイルバックグラウンドイベントを除く、すべてのカスタムセッション機能がサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、これらは Experience Cloud から自動的に読み込まれず、CJA で使用する前に AEP にアップロードする必要があります。 |
-| データフィード | データセットの第 1 世代のデータエクスポートは、 [AEP データアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [AEP の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja). これらのオプションでは、AEP データレイクに収集または取り込まれるすべてのデータのヒット/行レベルの書き出しを提供します。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
+| データフィード | データセットの第 1 世代のデータエクスポートは、 [AEP データアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [AEP の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja). これらのオプションを使用すると、AEP データレイクに収集または取り込まれるすべてのデータをイベント/行レベルで書き出すことができます。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は CJA に含まれなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データ表示内で設定されるディメンションは、最大持続時間が 90 日に制限され、無制限の永続性はサポートされません。 |

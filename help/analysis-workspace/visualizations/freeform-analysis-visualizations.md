@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。最終的または正確なシーケンスに設定できます |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | web サイトおよびアプリを介して正確な顧客パスを表示します。 |
 | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、ワークスペースのデータ分析の基礎になります。 |
-| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、指標の量に基づいて、訪問者、訪問、またはヒットをバケットにまとめます。 |
+| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、指標の量に基づいて、訪問者、訪問またはイベントをグループにグループ化します。 |
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、X 軸で時間を表します。 |
 | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大 3 つの指標の関係を表示します。 |

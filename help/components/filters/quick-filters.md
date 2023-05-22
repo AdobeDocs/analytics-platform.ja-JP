@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -41,7 +41,7 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
       >
       > アドホックでクイックフィルター（ドラッグ&amp;ドロップ）を作成する際は、次の点を考慮してください。
       > * 次のコンポーネントタイプはサポートされていません。計算指標およびディメンションと、フィルターを作成できない指標が含まれます。
-      > * Analysis Workspace では、すべてのディメンションおよびイベントに対して、「存在する」ヒットフィルターを作成します。例：`Hit where eVar1 exists` または `Hit where event1 exists`。
+      > * 完全なディメンションおよびイベントに対して、Analysis Workspaceは「存在する」イベントフィルターを作成します。 例：`Hit where eVar1 exists` または `Hit where event1 exists`。
       > * 「未指定」または「なし」がフィルタードロップゾーンにドロップされると、フィルターで正しく処理できるようにするため、「存在しない」フィルターに自動変換されます。
 
 

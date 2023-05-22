@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 97%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 セグメントの概念の変更に加えて、セグメントコンテナも次のように更新されます。
 
-* **ヒットコンテナは、[!UICONTROL イベント]コンテナになりました。**&#x200B;この[!UICONTROL イベント]コンテナを使用すると、個々のページビュー数／ヒット数に基づいて訪問者情報を分類できます。
+* **ヒットコンテナは、[!UICONTROL イベント]コンテナになりました。**&#x200B;この [!UICONTROL イベント] コンテナを使用すると、個々のイベントに基づいて訪問者情報を分類できます。
 * **訪問コンテナは、[!UICONTROL セッション]コンテナになりました**。[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
 * **訪問者コンテナは、[!UICONTROL ユーザー]コンテナになりました。**[!UICONTROL ユーザー]コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。
 

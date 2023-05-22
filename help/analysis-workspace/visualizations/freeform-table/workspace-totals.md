@@ -3,10 +3,10 @@ description: Workspace の合計の計算方法。
 title: Workspace の合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 フリーフォームテーブルでは、合計行が各分類レベルに表示され、2 つの合計を示すことができます。
 
-* **[!UICONTROL 総合計]** （灰色の「範囲外」の数） - この合計は、収集されたすべてのヒットを表します。 フィルターがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、フィルター条件に一致するすべてのヒットを反映するように調整されます。
+* **[!UICONTROL 総計]** （灰色の「out of」番号） — この合計は、収集されたすべてのイベントを表します。 フィルターがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、フィルター条件に一致するすべてのイベントを反映するように調整されます。
 * **[!UICONTROL テーブル合計]**（黒い数字） - 通常、この合計は[!UICONTROL 総計]と等しいか、またはそのサブセットです。「[!UICONTROL なしを含む]」オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルフィルターを反映します。
 
 ![](assets/total-row.png)

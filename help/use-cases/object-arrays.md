@@ -4,10 +4,10 @@ description: CJA がデータ階層をどのようにレポートするかを理
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 以前のバージョンの Adobe Analytics では、この機能は `products` 変数を使用して実行されていました。この連結文字列では、セミコロン（`;`）で製品のファセットを区切り、製品の区切りにはコンマ（`,`）を使用します。これは、「オブジェクト配列」のサポートが制限される唯一の変数です。複数値の変数（リスト変数など）は、同等の配列をサポートできますが、「オブジェクト配列」をサポートすることはできません。CJA は、Adobe Analytics の以前のバージョンでは利用できない機能である、1 行のデータ内で任意の深い階層をサポートすることで、この概念を拡大しています。
 
-## 同じヒットの例
+## 同じイベントの例
 
-次のヒットは、洗濯機と乾燥機で構成された、顧客の購入を表す JSON オブジェクトです。
+次のイベントは、洗濯機と乾燥機で構成される顧客の購入を表す JSON オブジェクトです。
 
 ```json
 {
@@ -81,9 +81,9 @@ ht-degree: 100%
    * product : warranty
    * product : warranty : revenue
 
-### 同じヒットの例（レポートの動作）
+### 同じイベントの例（レポートの動作）
 
-上記のヒットのみを使用し、次のテーブルでは、いくつかのディメンションと指標の組み合わせを使用したワークスペースレポートを示しています。
+上記のイベントのみを使用し、次の表に、いくつかのディメンションと指標の組み合わせを使用した Workspace レポートを示します。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ CJA は、テーブルに基づいて、オブジェクトのディメンショ�
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA は、ヒットの次の部分を調べてレポートを生成します。
+CJA は、イベントの次の部分を調べてレポートを生成します。
 
 ```diff
 {

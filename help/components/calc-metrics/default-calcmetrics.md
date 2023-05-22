@@ -3,10 +3,10 @@ description: Adobeは、使用できる様々な計算指標を提供します�
 title: デフォルトの計算指標
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 57%
+ht-degree: 51%
 
 ---
 
@@ -28,7 +28,7 @@ Customer Journey Analyticsには、最も一般的な使用例に対応するた
 
 | 計算指標名 | 関数 | 数式 |
 |---------|----------|---------|
-| バウンス率 | そのページの訪問数と比較した、確実に 1 つのヒットを含む訪問の割合。これにより、バウンス率が最も高いディメンション項目を理解したり、サイトのバウンス率の集計合計を経時的に確認したりできます。 | `[Bounces] / [Entries]` |
+| バウンス率 | そのページの訪問数に対する、イベントが 1 つだけ含まれた訪問の割合。 これは、バウンス率が最も高いディメンション項目を把握したり、サイトのバウンス率の合計を時間の経過と共に確認したりするのに役立ちます。 | `[Bounces] / [Entries]` |
 | 売上高/訪問者 | サイトへの各訪問者個人が生成した平均収益額。 | `[Revenue] / [Unique Visitors]` |
 | 注文件数/訪問者数 | サイトの個々の訪問者が発生した注文またはトランザクションの平均数 | `[Orders] / [Unique Visitors]` |
 | 売上高/訪問回数 | サイトへの 1 回の訪問で得られる平均収益額。 | `[Revenue] / [Visits]` |

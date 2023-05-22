@@ -3,10 +3,10 @@ description: タッチポイントを指定して、複数のディメンショ�
 title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 追加できる手順の数または使用するディメンションの数に制限はありません。
 
-マーチャンダイジング eVar および [listVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=ja)（product、listVar、マーチャンダイジング eVar および listProp など複数の値を 1 回のヒットに含めることができる変数）を含む、eVar へのパスを設定できます。例えば、誰かが靴とシャツを 1 つのページで探していて、次のページでシャツとソックスを探しているとします。靴の次の製品フローレポートは、シャツではなく、シャツおよびソックスです。
+eVar( マーチャンダイジング eVar や [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=ja) （製品、listVar、マーチャンダイジング eVar およびリスト prop など、イベントごとに複数の値を持つことができる変数）。 例えば、誰かが靴とシャツを 1 つのページで探していて、次のページでシャツとソックスを探しているとします。靴の次の製品フローレポートは、シャツではなく、シャツおよびソックスです。
 
 1. 「[!UICONTROL フォールアウト]」ビジュアライゼーションを「ビジュアライゼーション」ドロップダウンから「[!UICONTROL フリーフォームテーブル]」にドラッグします。
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. パス内の&#x200B;**次のヒットまで（「最後まで」ではなく）個別のタッチポイントを抑制する**&#x200B;こともできます。次に示すように、各タッチポイントの下には「最終パス」と「次のヒット」オプションを切り替えることができるセレクターがあります。
+1. また、 **個々のタッチポイントを次のイベントに制限する** （「最終的に」に対して）パス内で使用します。 次に示すように、各タッチポイントの下には「最終パス」と「次のヒット」オプションを切り替えることができるセレクターがあります。
 
    ![](assets/next-hit-eventually.png)
 
@@ -50,11 +50,11 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>最終パス </p> <p>(デフォルト) </p> </td> 
-   <td colname="col2"> <p>カウントされるのは、「最終的に」パスの次のページを訪問した訪問者です。ただし、訪問者は必ずしも次のヒットで次のページに至っていません。 </p> </td> 
+   <td colname="col2"> <p>訪問者は、パス内の次のページに「最終的に」ランディングしたと見なされますが、次のイベントにランディングしたとは限りません。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>次のヒット </p> </td> 
-   <td colname="col2"> <p>カウントされるのは、次のヒットでパスの次のページを訪問した訪問者です。 </p> </td> 
+   <td colname="col2"> <p>訪問者は、次のイベントのパス内の次のページにランディングしたとカウントされます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
