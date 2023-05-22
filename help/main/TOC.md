@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
+source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '888'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,6 @@ ht-degree: 97%
 
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
-      + [Analysis Workspace のパフォーマンスの最適化](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
       + [Analysis Workspace の制限](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -197,6 +196,7 @@ ht-degree: 97%
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](../components/overview.md)
    + [コンポーネントの説明の追加](../components/add-component-descriptions.md)
+
    + 注釈 {#annotations}
       + [注釈の概要](../components/annotations/overview.md)
       + [注釈を作成](../components/annotations/create-annotations.md)
@@ -213,6 +213,7 @@ ht-degree: 97%
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数が非常に高いディメンション](../components/dimensions/high-cardinality.md)
    + [指標](../components/apply-create-metrics.md)
+
    + フィルター {#cja-filters}
       + [フィルターの概要](../components/filters/filters-overview.md)
       + [フィルターの作成](../components/filters/create-filters.md)
@@ -252,12 +253,20 @@ ht-degree: 97%
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [データ要素の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
+
+
+
+
+
+
+
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
    + [キュレータータスク](../mobile-app/curator.md)
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Report Builder の概要](../report-builder/report-buider-overview.md)
    + [Report Builder の設定](../report-builder/report-builder-setup.md)
@@ -291,6 +300,7 @@ ht-degree: 97%
 
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
+
    + Google Analytics データ {#ga}
       + [Google Analytics から CJA へのデータ移行の概要](../use-cases/ga/overview.md)
       + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
@@ -313,11 +323,16 @@ ht-degree: 97%
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
 
+
+
+
+
+
 + 管理 {#cja-admin}
    + [アクセス制御](../admin/cja-access-control.md)
    + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
-   + [CJA のパフォーマンスの最適化](../admin/cja-performance.md)
+   + [CJA のパフォーマンスの最適化](../admin/optimizing-performance.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
