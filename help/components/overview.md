@@ -4,7 +4,7 @@ description: CJA オファーのコンポーネントの詳細と、レポート
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 62%
@@ -123,6 +123,8 @@ Analysis Workspaceの左側のパネルでコンポーネントリストを検�
 1. （オプション）リストをさらに絞り込むには、 [コンポーネントリストの並べ替え](#sort-the-component-list).
 
 ### コンポーネントリストの並べ替え
+
+{{release-limited-testing-section}}
 
 1. （オプション）コンポーネントリストに任意のフィルターを適用します。詳しくは、 [コンポーネントリストのフィルタリング](#filter-the-component-list).
 
