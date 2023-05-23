@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
+source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -192,6 +192,21 @@ ht-degree: 98%
 
 
 
++ Analytics ダッシュボード {#cja-dashboards}
+   + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
+   + [キュレータータスク](../mobile-app/curator.md)
+   + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
+   + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
+   + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
+
++ ガイド付き分析 {#guided-analysis}
+   + [概要](../guided-analysis/overview.md)
+   + [インターフェイス](../guided-analysis/interface.md)
+   + 分析タイプ {#analysis-types}
+      + [概要](../guided-analysis/analysis-types/overview.md)
+      + [ファネル](../guided-analysis/analysis-types/funnel.md)
+      + [傾向](../guided-analysis/analysis-types/trends.md)
+      + [ユーザーの増加率](../guided-analysis/analysis-types/user-growth.md)
 
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](../components/overview.md)
@@ -259,13 +274,6 @@ ht-degree: 98%
 
 
 
-
-+ Analytics ダッシュボード {#cja-dashboards}
-   + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
-   + [キュレータータスク](../mobile-app/curator.md)
-   + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
-   + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
-   + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Report Builder の概要](../report-builder/report-buider-overview.md)
