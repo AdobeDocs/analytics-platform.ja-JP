@@ -6,7 +6,7 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 5b84c2c908f947b1abed621f68aa1a324faeecde
+source-git-commit: 829f7556c731ce55ccf1e03e2dea69b12e4501e4
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 6%
@@ -227,7 +227,7 @@ prod:all=> \dv
 |---|---|
 | スキーマの検出 | <pre>* FROM dv1 WHERE 1=0 を選択します。</pre> |
 | ランク/分類 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「2022-01-01」と「2022-01-02」との間の「timestamp」<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「2022-01-01」と「2022-01-02」との間の「timestamp」<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| HAVING 句 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1<br/>m1 > 100 |
+| HAVING 句 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1<br/>m1 > 100</pre> |
 | ユニーク、トップ <br/>ディメンション値 | <pre>DV1 から DISTINCT dim1 を選択</pre><pre>DIM1 AS dv1 を選択<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1</pre><pre>DIM1 AS dv1 を選択<br/>DV1 から<br/>ここで、「timestamp」 >= 「2022-01-01」および「timestamp」 &lt; 「2022-01-02」です<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>上限 15</pre> |
 | 指標の合計 | <pre>SUM(metric1) AS m1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</pre> |
 | 多次元<br/>分類<br/>そして最も顕著な | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>1、2 でグループ化<br/>1、2 別の注文</pre><pre>SELECT DISTINCT dim1, dim2<br/>DV1 から</pre> |
@@ -385,9 +385,9 @@ ORDER BY -metric1 DESC
 | [QUARTER（日付または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 |
 | [HOUR（日付または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 名前ではない数値が必要なので、値の代わりに項目 ID を使用します。 |
 | [MINUTE（日付または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 |
-| [EXTRACT（パーツの開始日時）](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 この関数の一部では、わかりやすい名前ではない数値が必要なので、値の代わりに項目 ID を使用します。<br/>次のパーツがサポートされています。<br> — キーワード： `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/> — 文字列：  `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
-| [DATE_PART（部分、日付、または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 この関数の一部では、わかりやすい名前ではない数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる文字列部分は次のとおりです。 `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
-| [DATE_TRUNC（精度、日付、または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。 `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
+| [EXTRACT（パーツの開始日時）](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 この関数の一部では、わかりやすい名前ではない数値が必要なので、値の代わりに項目 ID を使用します。<br/>次のパーツがサポートされています。<br> — キーワード： `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/> — 文字列：  `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
+| [DATE_PART（部分、日付、または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 この関数の一部では、わかりやすい名前ではない数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる文字列部分は次のとおりです。 `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
+| [DATE_TRUNC（精度、日付、または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。 `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
 
 {style="table-layout:auto"}
 
