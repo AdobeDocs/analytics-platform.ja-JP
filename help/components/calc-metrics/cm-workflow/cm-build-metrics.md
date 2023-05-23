@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 計算指標マネージャ]**&#x200B;の上部にある「[追加](/help/components/calc-metrics/cm-workflow/cm-manager.md)」をクリックします。または、
 
-* **[!UICONTROL Analytics]**／**[!UICONTROL レポート]**&#x200B;を選択し、任意のレポートを開きます。次に、指標アイコン ![](assets/metrics_icon.png) をクリックして指標レールを表示し、「**[!UICONTROL 追加]**」をクリックします。
+* に移動します。 **[!UICONTROL Analytics]** > **[!UICONTROL レポート]**&#x200B;をクリックし、任意のレポートを開いて指標アイコンをクリックします。  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 指標レールを表示するには、 **[!UICONTROL 追加]**.
 
 ![](assets/cm_builder_ui.png)
 

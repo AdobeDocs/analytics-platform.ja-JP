@@ -3,10 +3,10 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 79%
+source-wordcount: '878'
+ht-degree: 78%
 
 ---
 
@@ -70,13 +70,13 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 1. 「[!UICONTROL **適用**]」を選択して、データをフィルタリングします。
 
-   フィルターがテーブルに適用されると、**フィルター**&#x200B;アイコン（![テーブルがフィルタリングされた後の青いフィルターアイコン](assets/table-filter-blue-icon.png)）が青に変わります。
+   フィルターがテーブルに適用されると、**フィルター**&#x200B;アイコン（![テーブルがフィルタリングされた後の青いフィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)）が青に変わります。
 
 ## テーブルの並べ替え
 
 Analysis Workspace のディメンションまたは指標のいずれかの列で、フリーフォームテーブルのデータを並べ替えることができます。
 
-現在データの並べ替えに使用されている列のヘッダーに、下向き矢印アイコン（![テーブルの並べ替えに使用された列を示す下向き矢印アイコン](assets/table-sort-arrow-icon.png)）が表示されます。
+現在データの並べ替えに使用されている列のヘッダーに、下向き矢印アイコン（![テーブルの並べ替えに使用された列を示す下向き矢印アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)）が表示されます。
 
 1. Analysis Workspace のいずれかのフリーフォームテーブルで、ディメンションまたは指標の名前の横にある矢印をクリックします。
 

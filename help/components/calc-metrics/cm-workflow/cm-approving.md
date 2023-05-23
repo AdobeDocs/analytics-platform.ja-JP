@@ -3,10 +3,10 @@ description: 計算指標マネージャ内では、様々なレベルのアプ�
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '144'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 100%
 1. 上部にある管理タスクの「**[!UICONTROL 承認]**」をクリックします。
 1. 承認済みの計算指標を組織で共有することを検討します。
 1. 「**[!UICONTROL OK]**」をクリックします。
-1. リスト内の計算指標の横に承認アイコンがあることに注意します。![](assets/cm_approve_icon.png)
-
+1. リスト内の計算指標の横に承認アイコンがあることに注意します。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 1. 「**[!UICONTROL 未承認]**」をクリックして、この指標を承認済みの計算指標のリストから除外することもできます。
 1. **[!UICONTROL フィルターを表示する]**／**[!UICONTROL その他のフィルター]**／**[!UICONTROL 承認済み]**&#x200B;をクリックすると、承認済みの指標をフィルタリングできます。

@@ -2,10 +2,10 @@
 title: フィルターの管理
 description: Customer Journey Analytics でのフィルターの管理方法について説明します
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
-workflow-type: ht
-source-wordcount: '1094'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 1. フィルター管理ツールバーで、「**[!UICONTROL 共有]**」をクリックします。
 
-1. 管理者は、「すべて」を選択できます。また、組織内のグループまたはユーザーを選択することもできます。管理者以外は、個々のユーザーのみを表示できます。検索フィールドを使用して、グループまたはユーザーを検索します。「**[!UICONTROL 共有]**」をクリックします。フィルターの横に共有アイコンが表示されます：![](assets/share_icon.png)
+1. 管理者は、「すべて」を選択できます。また、組織内のグループまたはユーザーを選択することもできます。管理者以外は、個々のユーザーのみを表示できます。検索フィールドを使用して、グループまたはユーザーを検索します。「**[!UICONTROL 共有]**」をクリックします。フィルターの横に共有アイコンが表示されます：![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. フィルター／その他のフィルター／自分と共有に移動して、自分と共有している指標をフィルタリングできます。
 

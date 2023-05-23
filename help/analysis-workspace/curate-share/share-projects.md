@@ -4,9 +4,9 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1814'
 ht-degree: 52%
 
 ---
@@ -157,13 +157,13 @@ ht-degree: 52%
 
       * このオプションが有効で淡色表示の場合、CJA 管理者はAnalysis WorkspaceプロジェクトにアクセスするすべてのExperience Cloudに対して認証が必要です。
 
-1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクをコピーアイコン](assets/copy-link-icon.png) をクリックして、リンクをシステムクリップボードにコピーします。
+1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクをコピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) をクリックして、リンクをシステムクリップボードにコピーします。
 
 1. プロジェクトへのアクセス権を付与したい人とリンクを共有します。 例えば、リンクを E メールに貼り付けることができます。
 
    リンクを共有した任意のユーザーがAnalysis Workspaceプロジェクトを表示できます。
 
-1. （オプション） **新しいリンクを生成** アイコン ![リンクを生成アイコン](assets/regenerate-link.png) ：以前にプロジェクトへのリンクを受け取ったユーザーからのアクセスを削除します。 新しいリンクが生成され、プロジェクトにアクセスするユーザーと共有できます。
+1. （オプション） **新しいリンクを生成** アイコン ![リンクを生成アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) ：以前にプロジェクトへのリンクを受け取ったユーザーからのアクセスを削除します。 新しいリンクが生成され、プロジェクトにアクセスするユーザーと共有できます。
 
 1. 選択 **[!UICONTROL 閉じる]** をクリックして、共有ダイアログボックスを閉じます。 変更内容は自動的に保存されます。
 

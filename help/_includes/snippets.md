@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 68%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 # スニペット
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 ## データ要素のフィルター条件 {#dd-filter-criteria}
 
-1. （オプション）**フィルター**&#x200B;アイコン ![データ要素のフィルターアイコン](/help/components/data-dictionary/assets/data-dictionary-filter-icon.png) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
+1. （オプション）**フィルター**&#x200B;アイコン ![データ要素のフィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
 
    | オプション | 関数 |
    |---------|----------|
