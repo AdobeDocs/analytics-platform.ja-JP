@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 ## Adobe Experience Platform Web SDK と Edge Network を介したデータの取り込みと使用
 
-アドビのテクノロジーを使用して web サイトを分析し、潜在的に別のソリューションから移行するか、訪問者の行動の追跡を開始します。実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+Adobeテクノロジーを使用して Web サイトを分析し、潜在的に別のソリューションから移行するか、人の行動の追跡を開始したい。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、[Adobe Experience Platform Web SDK と Edge Network を使用したデータの取り込みと使用](./aepwebsdk.md)を参照してください。
 

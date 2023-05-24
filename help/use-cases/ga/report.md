@@ -4,10 +4,10 @@ description: Customer Journey Analytics での Google Analytics データに関�
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Customer Journey Analytics でデータを取得したら、そのデータを�
 
 ![通話量](../assets/call-volume.png)
 
-「通話理由」ディメンションを使用すると、訪問者がまず電話しなくて済むように、web エクスペリエンスを改善する方法のヒントを得ることができます。上記の例では、「製品を損傷」の平均通話時間は 1 回の通話あたり約 3 分であることを示しています。これにより、カスタマーエクスペリエンスを改善し、コールセンターのコストを削減するための正確な方法が組織に提供されます。
+「通話理由」ディメンションを使用すると、Web エクスペリエンスを改善する方法をヒントでき、ユーザーがそもそもを呼び出すのを防ぐことができます。 上記の例では、「製品を損傷」の平均通話時間は 1 回の通話あたり約 3 分であることを示しています。これにより、カスタマーエクスペリエンスを改善し、コールセンターのコストを削減するための正確な方法が組織に提供されます。
 
 コールセンターへの通話の大部分を引き起こす製品と、その通話を行った顧客の数を表示できます。バブルチャートでは、2 万人が電話をかけ、4 時間 30 分以上を費やし、33 枚の「メンズ半袖 T シャツ」が返品されたことを示しています。
 

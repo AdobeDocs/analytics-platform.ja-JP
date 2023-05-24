@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -26,10 +26,10 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
 | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、リテンション、チャーン、または遅延の分析に役立ちます。 |
 | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | このビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
-| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に指定した一連のページ間で、訪問者が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。最終的または正確なシーケンスに設定できます |
+| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に定義された一連のページ間で、人が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 最終的または正確なシーケンスに設定できます |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | web サイトおよびアプリを介して正確な顧客パスを表示します。 |
 | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、ワークスペースのデータ分析の基礎になります。 |
-| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、指標の量に基づいて、訪問者、訪問またはイベントをグループにグループ化します。 |
+| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、ユーザー、訪問またはイベントを、指標の量に基づいてグループにグループ化します。 |
 | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、X 軸で時間を表します。 |
 | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大 3 つの指標の関係を表示します。 |

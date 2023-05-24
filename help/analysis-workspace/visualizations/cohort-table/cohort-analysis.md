@@ -3,10 +3,10 @@ title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -37,13 +37,13 @@ ht-degree: 91%
 
 ### [!UICONTROL リテンションテ]ーブル
 
-[!UICONTROL リテンション]コホートレポートが訪問者を返す：各データセルは、その期間にアクションをおこなったコホートの生の訪問者数と割合を表します。指標は最大 3 個、フィルターは最大 10 個含めることができます。
+A [!UICONTROL 定着] コホートレポートは次の人を返します。各データセルは、その期間にアクションを実行したコホート内の生の人数と割合を表します。 指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL チャーンテーブル]
 
-[!UICONTROL チャーン]コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした訪問者、または一定期間内にリターン条件を満たしていない訪問者が表示されます。指標は最大 3 個、フィルターは最大 10 個含めることができます。
+A [!UICONTROL チャーン] コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした人、または一定期間内にリターン条件を満たしていない人が表示されます。 指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
 ![](assets/churn-report.png)
 

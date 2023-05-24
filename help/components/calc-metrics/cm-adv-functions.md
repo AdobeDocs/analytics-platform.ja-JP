@@ -3,10 +3,10 @@ title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: ht
-source-wordcount: '3111'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ AND(logical_test1,[logical_test2],...)
 | 引数 | 説明 |
 |---|---|
 | *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | （オプション）。TRUE または FALSE として求める追加の条件です。 |
+| *logical_test2* | （任意）。TRUE または FALSE として求める追加の条件です。 |
 
 ## 個別概算カウント（ディメンション）
 
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | コントロール | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
 | 有意しきい値 | この関数のしきい値は、デフォルトの 95%に設定されています。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## コサイン（行）
 
@@ -225,10 +225,10 @@ N &lt;= 0 の場合、前のすべての行を使用します。この関数は�
 
 >[!NOTE]
 >
->この関数は、割合の指標（例：売上高/訪問者数）を使用する場合は機能しません。このような指標では、最終 N にわたる売上高を合計し、最終 N にわたる訪問者数を合計して、それらを除算するのではなく、代わりに割合を平均化します。代わりに、次の数式を使用してください。
+>これは、売上高/人物などのレート指標では期待どおりに動作しません。これは、直近の N に対する売上高を合計し、過去の N に対する人を合計して、それらを除算する代わりに、平均率を表します。 代わりに、次の数式を使用してください。
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## 次と等しい
@@ -366,7 +366,7 @@ fx Lift (normalizing-container, success-metric, control)
 | 成功指標 | ユーザーがバリアントと比較する指標。 |
 | コントロール | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 線形回帰：相関係数
 
@@ -495,7 +495,7 @@ OR(logical_test1,[logical_test2],...)
 | 引数 | 説明 |
 |---|---|
 | *logical_test1* | 必須。TRUE または FALSE で示される値または式です。 |
-| *logical_test2* | （オプション）。TRUE または FALSE として求める追加の条件です。 |
+| *logical_test2* | （任意）。TRUE または FALSE として求める追加の条件です。 |
 
 ## 円周率
 

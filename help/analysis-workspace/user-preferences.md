@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3150'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 |  | 比較を表示 | 比較データを表示します。非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
 |  | 数値オプション | [!UICONTROL **主要指標の概要**]&#x200B;セクション内 <ul><li>変化率を表示</li><li>生の差異を表示</li>プライマリ日付範囲とセカンダリ日付範囲で、指標の合計値の生の差異を表示または非表示</ul> |
 | **[フォールアウト](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** |  |  |
-|  | コンテナ | 「訪問」と「訪問者」を切り替えて、訪問者のパスを分析できます。デフォルトは訪問者です。これらの設定により、訪問者のエンゲージメントを（訪問全体にわたって）訪問者レベルで分析したり、1 回の訪問に分析を制限したりできます。 <p>次のオプションがあります。</p> <ul><li>訪問</li><li>訪問者</li></ul> |
+|  | コンテナ | 「訪問」と「訪問者」を切り替えて、訪問者のパスを分析できます。デフォルトは訪問者です。これらの設定は、（セッションをまたいで）ユーザーレベルでの担当者のエンゲージメントを理解したり、分析を単一のセッションに制限したりするのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>訪問</li><li>訪問者</li></ul> |
 | **[フロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** |  |  |
 |  | コンテナ | [!UICONTROL **フロー**]&#x200B;セクション内 <ul><li>訪問</li><li>訪問者</li></ul> |
 |  | ラベルの折り返し | 通常、フロー要素のラベルは、画面の領域を節約するために切り捨てられます。しかし、このチェックボックスをオンにすることで完全なラベルを表示できます（デフォルト = オフ）。 |
@@ -172,7 +172,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 |  | 100% の積み重ね | 積み上げ面、積み上げ棒、または積み上げ横棒のビジュアライゼーションのこの設定は、グラフを「100 % の積み上げ」のビジュアライゼーションに変更します。 <p>詳しくは、[棒グラフおよび積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md)を参照してください。</p> |
 | **[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | バケット数 | ビジュアライゼーション内のデータ範囲（バケット）の数を選択します。グループの最大数は 50 です。 <p>詳しくは、[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)を参照してください。</p> |
-|  | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>訪問</li><li>訪問者</li></ul> <p>例えば、ページビューと共に使用する場合、訪問者ごとのページビュー、訪問のページビュー、イベントごとのページビューを選択できます。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。</p> |
+|  | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>訪問</li><li>訪問者</li></ul> <p>例えば、ページビューと共に使用する場合、個人別ページビュー数、訪問別ページビュー数、イベント別ページビュー数を選択できます。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。</p> |
 | **[変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | 値 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>パーセントの変更</li><li>生の差異</li></ul> |
 |  | 割合（％） | 変更の概要ビジュアライゼーションの値をパーセンテージで表示します。 |

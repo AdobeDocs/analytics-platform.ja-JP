@@ -4,10 +4,10 @@ description: Analytics ソースコネクタを使用して、マーケティン
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
    ![ラストタッチチャネルの上書き](../assets/override-last-touch-channel.png)
 
-* **マーケティングチャネルの期限**：このエンゲージメント期間の設定に従い、所定の時間何も操作がなければ、訪問者はレポートスイートデータで新しいファーストタッチチャネルを取得できます。Platform は独自のアトリビューション設定を使用するので、この設定は CJA では完全に無視されます。
+* **マーケティングチャネルの有効期限**:このエンゲージメント期間の設定に従い、無操作状態が続いた後に、レポートスイートデータで新しいファーストタッチチャネルを取得できるようにします。 Platform は独自のアトリビューション設定を使用するので、この設定は CJA では完全に無視されます。
 
    ![マーケティングチャネルの有効期限](../assets/marketing-channel-expiration.png)
 
@@ -71,4 +71,4 @@ Adobe Experience Platform のアーキテクチャは、従来の Analytics レ�
 * 接続で、従来の Analytics と同じレポートスイートが使用されていることを再確認します。CJA 接続に、独自のマーケティングチャネル処理ルールを持つ複数のレポートスイートが含まれる場合、従来の Analytics と比較するのは容易ではありません。 データを比較するには、各レポートスイートに対して個別に接続を作成する必要があります。
 * 同じ日付範囲を比較すること、およびデータビューのタイムゾーン設定がレポートスイートのタイムゾーンと同じであることを確認してください。
 * レポートスイートデータを表示する際には、カスタムアトリビューションモデルを使用します。例えば、デフォルト以外のアトリビューションモデルを使用する指標を含む[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=ja)ディメンションを使用します。デフォルトのディメンションである[ファーストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=ja)または[ラストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=ja)に対する比較は行わないことをお勧めします。これは、これらがレポートスイートで収集されるアトリビューションに依存しているためです。CJA は、レポートスイートのアトリビューションデータに依存しません。代わりに、CJA レポートを実行したときに計算されます。
-* レポートスイートデータと Platform データのアーキテクチャの違いにより、一部の指標は適切に比較されません。例えば、訪問回数/セッション、訪問者数/人、回数/イベントなどは適切に比較されません。
+* レポートスイートデータと Platform データのアーキテクチャの違いにより、一部の指標は適切に比較されません。例えば、訪問/セッション、人/人、回数/イベントなどがあります。

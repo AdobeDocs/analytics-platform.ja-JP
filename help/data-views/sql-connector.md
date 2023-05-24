@@ -6,7 +6,7 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 829f7556c731ce55ccf1e03e2dea69b12e4501e4
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 6%
@@ -234,7 +234,7 @@ prod:all=> \dv
 | サブ選択：<br/>その他の結果<br/>フィルタリング | <pre>SELECT dim1, m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | サブ選択：<br/>との結合<br/>データセットが次の値に含まれていません：<br/>CJA | <pre>SELECT b.key, a.dim1, a.m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/>)<br/>a.dim1 = b.key に対する LEFT JOIN 検索</pre> |
 | サブ選択：<br/>クエリ<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>開始 (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/><br/>  和集合<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DV2 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim2<br/>キーでグループ化<br/>合計注文</pre> |
-| サブ選択： <br/>レイヤソース <br/>フィルター <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>開始 (<br/>  \_.dim1,\_.m1 を選択<br/>  開始 (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.item が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
+| サブ選択： <br/>レイヤソース <br/>フィルター <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>開始 (<br/>  \_.dim1,\_.m1 を選択<br/>  開始 (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.ITEM が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
 | を<br/>指標が次の値より前に<br/> またはが混在している<br/>寸法 | <pre>SUM(metric1) AS m1, dim1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>2 でグループ化</pre> |
 
 {style="table-layout:auto"}
@@ -267,7 +267,7 @@ prod:all=> \dv
 
 #### 区別のカウント
 
-CJA の仕組みの基本的な性質により、正確なカウントを取得できるディメンションは、 `adobe_personid` ディメンション。 次の SQL 文 `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` ユニークユーザーの数であるデフォルトの訪問者指標の値を返します。 その他のディメンションの場合は、約個別カウントが返されます。
+CJA の仕組みの基本的な性質により、正確なカウントを取得できるディメンションは、 `adobe_personid` ディメンション。 次の SQL 文 `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` ユニークユーザーの数であるデフォルトの人物指標の値を返します。 その他のディメンションの場合は、約個別カウントが返されます。
 
 #### 条件付き指標
 

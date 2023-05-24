@@ -4,10 +4,10 @@ description: Cross-Channel Analytics に関するよくある質問（FAQ）
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 データセット ID ディメンションの項目の名前を変更する場合は、検索データセットを使用できます。
 
-## クロスチャネル分析では訪問者のキーをどのくらい遡って更新しますか？
+## クロスチャネル分析では、ユーザーのキーをどのくらい遡って更新しますか？
 
 キー更新のルックバックウィンドウは、データ[再生](replay.md)の頻度に応じて異なります。例えば、データを毎週 1 回再生するようにクロスチャネル分析を設定した場合、キー更新のルックバックウィンドウは 7 日になります。データを毎日再生するようにクロスチャネル分析を設定した場合、キー更新のルックバックウィンドウは 1 日です。
 
@@ -67,7 +67,7 @@ CJA の特定の指標は、従来の Analytics の指標に似ていますが�
 
 | **CJA ステッチデータ** | **CJA 未ステッチデータ** | **従来の Adobe Analytics** | **CDA を使用した Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **People** = `Stitched ID` が `Person ID` として選択された場合の個別の `Person ID`の数。**人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **People** = `Person ID` として選択された列に基づく個別の `Person ID` の数。Adobe ソースコネクタデータセットの&#x200B;**人物**&#x200B;は、CJA で `endUserIDs._experience.aaid.id` が `Person ID` として選択された場合、従来の Adobe Analytics の&#x200B;**ユニーク訪問者**&#x200B;に似ています。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=ja)を参照してください。 |
+| **People** = `Stitched ID` が `Person ID` として選択された場合の個別の `Person ID`の数。**人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **People** = `Person ID` として選択された列に基づく個別の `Person ID` の数。Adobe ソースコネクタデータセットの&#x200B;**人物**&#x200B;は、CJA で `endUserIDs._experience.aaid.id` が `Person ID` として選択された場合、従来の Adobe Analytics の&#x200B;**ユニーク訪問者**&#x200B;に似ています。 | **実訪問者数** =ユニークユーザー ID の数。 **ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=ja)を参照してください。 |
 | **セッション**：CJA データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション**：CJA データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=ja)で指定されたセッション設定に基づいて定義されます。 |
 | **イベント数** = CJA でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の `Persistent ID` がある行については、上記の FAQ に注意してください。 | **イベント数** = CJA 未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白の `Person ID` が含まれているイベントがある場合、これらのイベントは CJA に含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 |
 

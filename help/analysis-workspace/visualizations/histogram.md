@@ -3,10 +3,10 @@ description: ヒストグラムは、棒グラフに似ていますが、数値�
 title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 95%
 >
 >ヒストグラムは、計算指標ではなく、標準指標のみをサポートします。
 
-ここでは、ユニーク訪問者数ごとにページビュー数指標を使用しました。最初の（左の）グループは、ユニーク訪問者数ごとの 1 ページビューに対応し、2 番目のグループは 2 ページビューに対応します（以下同様）。
+ここでは、ユニーク訪問者数ごとにページビュー数指標を使用しました。最初の（左）グループは個別ユーザーあたり 1 ページビューに対応し、2 番目のグループは 2 ページビューに対応します。
 
 ![](assets/histogram2.png)
 
@@ -41,7 +41,7 @@ ht-degree: 95%
 | 開始グループ | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
 | 指標グループ | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
 | 指標グループのサイズ | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
-| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問あたりのページビュー数や、訪問者ごとのページビュー数、イベントごとのページビュー数などです。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
+| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問あたりのページビュー数や、人物ごとのページビュー数、イベントごとのページビュー数などです。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

@@ -3,10 +3,10 @@ title: フリーフォームテーブルの動的ディメンション項目と�
 description: テーブルの動的および静的ディメンション項目の操作方法。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -52,5 +52,5 @@ ht-degree: 90%
 
 フリーフォーム合計行での動的な行と静的な行の動作は異なります。デフォルトでは:：
 
-* 動的な行はサーバーサイドで合計され、訪問数や訪問者数などの指標の重複を取り除きます。
+* 動的な行は、サーバーサイドで合計され、訪問回数や人物などの指標の重複を排除します
 * 静的な行は、クライアントサイドで合計され、重複を取り除き&#x200B;**ません**。サーバーサイドの合計行を計算するには、「行」設定を「**総合計を表示**」に変更します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=ja)

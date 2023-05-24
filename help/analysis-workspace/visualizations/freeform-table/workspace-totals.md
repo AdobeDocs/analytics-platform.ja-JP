@@ -3,10 +3,10 @@ description: Workspace の合計の計算方法。
 title: Workspace の合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 91%
+ht-degree: 81%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 91%
 
 [静的な行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)の合計は、動作が異なり、「**[!UICONTROL 行設定]**」で制御されます。
 
-* **[!UICONTROL 現在の行の合計として表示]** - テーブル内の行のクライアント側の合計を表示します。これは、合計で訪問回数や訪問者数などの指標の重複が排除&#x200B;**されない**&#x200B;ことを意味します。
-* **[!UICONTROL 総計を表示]** - サーバー側の合計を表示します。つまり、合計で訪問回数や訪問者数などの指標の重複が排除されます。
+* **[!UICONTROL 現在の行の合計を合計として表示]**  — テーブル内の行のクライアント側の合計を表示します。これは、合計が **not** 訪問回数や人物などの指標の重複を排除します。
+* **[!UICONTROL 総計を表示]**  — サーバー側の合計を表示します。つまり、合計では、訪問回数や人物などの指標の重複が排除されます。
 
 ![](assets/static-rows.png)
 

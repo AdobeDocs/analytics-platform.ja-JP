@@ -4,10 +4,10 @@ title: クイックフィルター
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 41%
+ht-degree: 37%
 
 ---
 
@@ -56,7 +56,7 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
    | --- | --- |
    | [!UICONTROL 名前] | フィルターのデフォルト名は、フィルター内のルール名の組み合わせです。フィルターの名前を、わかりやすい名前に変更できます。 |
    | [!UICONTROL 含む／除く] | フィルター定義にコンポーネントを含めるか除外することはできますが、両方を使用することはできません。 |
-   | [!UICONTROL ヒット／訪問／訪問者]コンテナ | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=ja#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問およびページビューをまたいで訪問者に固有の、包括的なデータが含まれます。[!UICONTROL 訪問]コンテナでは、訪問者のデータを訪問に基づいて分類するルールを設定でき、[!UICONTROL ヒット]コンテナでは、訪問者情報を個々のページビューに基づいて分類できます。デフォルトのコンテナは [!UICONTROL ヒット] です。 |
+   | [!UICONTROL ヒット／訪問／訪問者]コンテナ | クイックフィルターには、ディメンション／指標／日付範囲をフィルターに含める（または除外する）ための [フィルターコンテナ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=ja#filter-containers) が 1 つだけ含まれます。[!UICONTROL 訪問者] には、訪問回数とページビュー数の全体でユーザーに固有の包括的なデータが含まれます。 A [!UICONTROL 訪問] コンテナを使用すると、訪問に基づいて個人のデータを分類するルールを設定でき、 [!UICONTROL ヒット] コンテナを使用すると、個々のページビューに基づいて人物情報を分類できます。 デフォルトのコンテナは [!UICONTROL ヒット] です。 |
    | [!UICONTROL コンポーネント]（ディメンション／指標／日付範囲） | コンポーネント（ディメンション、指標、日付範囲、ディメンション値）を追加して、最大 3 つのルールを定義できます。適切なコンポーネントを見つける方法は 3 つあります。<ul><li>入力を開始すると、クイックフィルタービルダーが自動的に適切なコンポーネントを検索します。</li><li>ドロップダウンリストを使用して、コンポーネントを検索します。</li><li>データセットを左側のパネルからドラッグ＆ドロップします。</li></ul> |
    | [!UICONTROL 演算子] | 標準演算子と[!UICONTROL 個別カウント]演算子を検索するには、ドロップダウンメニューを使用します。詳しくは、 [フィルター演算子](operators.md)を参照してください。 |
    | プラス（+）記号 | 別のルールの追加 |

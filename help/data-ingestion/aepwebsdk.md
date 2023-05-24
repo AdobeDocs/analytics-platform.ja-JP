@@ -4,10 +4,10 @@ description: Adobe Experience Platform Web SDK と Edge Network を使用して 
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![ID オブジェクト](./assets/identification-field.png)
 
-   スキーマに ID 機能を追加します。この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。訪問者の ID を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   スキーマに ID 機能を追加します。この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。個人の ID を追跡するために使用できるその他の多くの属性（例えば、顧客 ID、ロイヤリティ ID）があります。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -265,7 +265,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=ja)を参照してください。
 
-また、Experience Cloud ID を簡単に使用できるように、Experience Cloud ID サービス拡張機能を設定する必要もあります。Experience Cloud ID サービスは、すべての Adobe Experience Cloud ソリューションをまたいで訪問者を識別します。
+また、Experience Cloud ID を簡単に使用できるように、Experience Cloud ID サービス拡張機能を設定する必要もあります。Experience CloudID サービスは、すべてのAdobe Experience Cloudソリューションをまたいで人を識別します。
 
 Experience Cloud ID サービス拡張機能を作成および設定するには：
 
@@ -285,7 +285,7 @@ Experience Cloud ID サービス拡張機能を作成および設定するには
 
 データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。
 
-データ要素には様々なタイプがあります。最初にデータ要素を設定して、サイトで訪問者が表示しているページ名を取り込みます。
+データ要素には様々なタイプがあります。最初に、サイトで閲覧しているページ名の人を取り込むデータ要素を設定します。
 
 ページ名データ要素を定義するには：
 
