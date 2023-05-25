@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 52%
 
 * 組織外の担当者
 
-* 組織内でCustomer Journey Analyticsのプロビジョニングを行っていない担当者
+* 組織内で、Customer Journey Analyticsへのアクセス権を持たない担当者
 
 >[!NOTE]
 >
@@ -127,6 +127,8 @@ ht-degree: 52%
 >* 共有するユーザーがプロジェクトの日付範囲を変更できます。 プロジェクトに設定した日付範囲がデフォルトで表示されます。
 >
 >* 多くのユーザーが同時に特定のリンクにアクセスしようとすると、プロジェクトにアクセスできなくなる場合があります。 デフォルトでは、190 人を超えるユーザーが 5 分ごとに 1 つのリンクにアクセスできます。 組織がこの制限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
+>
+>* 組織が Healthcare Shield のライセンスを取得している場合、プロジェクトを共有できるのは、シングルサインオン (SSO) またはAdobe IDで認証されたユーザーのみです。未認証ユーザーとプロジェクトを共有することはできません。 この機能は、お客様の社内データガバナンスポリシーに従って使用し、適切な権限を持つユーザーと、PHI（個人の健康情報）を含むプロジェクトリンクのみを共有する必要があります。
 
 
 誰とでもAnalysis Workspaceプロジェクトを共有するには：
@@ -155,7 +157,7 @@ ht-degree: 52%
 
       * このオプションが表示されない場合、CJA 管理者はこの機能を有効にしていません。
 
-      * このオプションが有効で淡色表示の場合、CJA 管理者はAnalysis WorkspaceプロジェクトにアクセスするすべてのExperience Cloudに対して認証が必要です。
+      * このオプションが有効で、無効にできない場合、CJA 管理者はAnalysis WorkspaceプロジェクトにアクセスするすべてのユーザーのExperience Cloud認証を必要とします。 これは、ヘルスケアシールドのライセンスを持つ組織にとって常に問題です。
 
 1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクをコピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) をクリックして、リンクをシステムクリップボードにコピーします。
 
