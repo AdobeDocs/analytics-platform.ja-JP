@@ -3,40 +3,15 @@ description: 指標を検索するための 2 つの主な方法（並べ替え�
 title: 指標の検索
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '238'
-ht-degree: 100%
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 24%
 
 ---
 
 # 指標の検索
 
-指標を検索するための 2 つの主な方法（並べ替えおよびフィルタリング）について説明します。
+指標は、他のタイプのコンポーネントと同じ方法でAnalysis Workspaceで検索できます。
 
-## 並べ替え {#sorting}
-
-レポートを開き、レポートの左側の指標アイコン ![](assets/metrics_icon.png) をクリックして指標レールを表示させると、指標セレクターの「**[!UICONTROL 並べ替え順]**」ドロップダウンリストに次の 4 つの並べ替えオプションが表示されます。
-
-![](assets/cm_sort.png)
-
-| オプション | 使用するタイミング |
-|---|---|
-| アルファベット順 | 名前がわかっている場合に役立ちます。 |
-| 推奨 | ユーザーがレポートで使用する一般的な指標です。これは、ユーザーがこのレポートでよく使用する指標からバックエンドで収集されます。 |
-| 頻繁に使用 | レポートでよく使用される指標を初心者ユーザーが確認する必要がある場合に役立ちます。 |
-| 最近使用 | 特定のプロジェクトで同じ指標のセットを繰り返し使用する場合に役立ちます。 |
-
-## フィルタリング - 詳細選択 {#filtering-advanced}
-
-レポートを開き、指標アイコンをクリックして、「**[!UICONTROL 管理]**」をクリックします。フィルターアイコンをクリックします。様々な方法でフィルタリングできます。
-
-![](assets/cm_advanced_sel.png)
-
-| 必要な処理 | 並べ替えの基準 |
-| --- | --- |
-| このデータビューのすべての指標を表示します。 | その他のフィルター／すべてを表示 |
-| 自分の指標だけを表示する | その他のフィルター／自分が所有 |
-| 他のユーザーが自分と共有している指標を表示する | 所有者またはその他のフィルター／自分と共有 |
-| 会社で承認された指標だけを表示する。 | 承認済み |
-| 作業中のプロジェクトの指標に対してフィルターを設定する。 | いずれかのタグ。 |
+コンポーネントをすばやく見つける方法について詳しくは、 [コンポーネントリストの検索、フィルタリング、並べ替え](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-components/overview.html?lang=en#search%2C-filter%2C-and-sort-the-component-list) in [コンポーネントの概要](/help/components/overview.md).

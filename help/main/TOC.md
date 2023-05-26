@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 97%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -243,12 +243,12 @@ ht-degree: 97%
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [シンプルな「訪問あたりのページビュー数」指標の作成](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [「訪問あたりのページビュー数」指標の作成](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [「パーティシペーション」指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [セグメントの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [パーティシペーション指標](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [計算指標のタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
