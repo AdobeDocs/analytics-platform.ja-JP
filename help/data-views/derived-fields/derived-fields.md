@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
+source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 8%
+source-wordcount: '3218'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 {{release-limited-testing}}
 
-派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
+派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
 派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
@@ -40,7 +40,7 @@ ht-degree: 8%
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
-| 1 | **セレクター** | セレクター領域を使用して、 ![関数](assets/Smock_Function_18_N.svg) 関数![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) 関数テンプレート![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) スキーマフィールド、または![標準フィールドアイコン](assets/Smock_DragHandle_18_N.svg)標準フィールドをルールビルダーに追加します。 <br/>ドロップダウンを使用して、次の中から選択します。 [!UICONTROL 関数], [!UICONTROL 関数テンプレート], [!UICONTROL スキーマフィールド]、および [!UICONTROL 標準フィールド].<br/>関数、関数テンプレート、スキーマ、標準フィールドは、 ![検索アイコン](assets/Smock_Search_18_N.svg) 検索ボックス。 <br/>選択したオブジェクトのリストをフィルタするには、 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) フィルターを設定し、 [!UICONTROL 次の条件でフィールドをフィルター] ダイアログ。 フィルターを簡単に削除するには、 ![閉じるアイコン](assets/CrossSize75.svg) フィルターごとに |
+| 1 | **セレクター** | セレクター領域を使用して、関数、関数テンプレート、スキーマフィールドまたは標準フィールドを選択し、ルールビルダーにドラッグ&amp;ドロップします。 <br/>ドロップダウンを使用して、次の中から選択します。 <br/>![関数](assets/Smock_Function_18_N.svg) [!UICONTROL 関数]  — 使用可能なリスト [関数](#function-reference), </br>![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 関数テンプレート]  — 使用可能なリスト [関数テンプレート](#function-templates), <br/>![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg)  [!UICONTROL スキーマフィールド]  — データセットカテゴリ（イベント、プロファイル、ルックアップ）や以前に定義した派生フィールドから使用できるフィールドを一覧表示し、 <br/>![標準フィールドアイコン](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 標準フィールド]  — 標準の使用可能フィールド（プラットフォームデータセット ID など）。 セレクターには、文字列および数値の標準フィールドのみが表示されます。 関数が他のデータ型をサポートしている場合、ルールインターフェイス内の値やフィールドに対して、これらの他のデータ型を持つ標準フィールドを選択できます。<br/>関数、関数テンプレート、スキーマ、標準フィールドは、 ![検索アイコン](assets/Smock_Search_18_N.svg) 検索ボックス。 <br/>選択したオブジェクトのリストをフィルタするには、 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) フィルターを設定し、 [!UICONTROL 次の条件でフィールドをフィルター] ダイアログ。 フィルターを簡単に削除するには、 ![閉じるアイコン](assets/CrossSize75.svg) フィルターごとに |
 | 2 | **ルールビルダー** | 派生フィールドは、1 つ以上のルールを使用して順番に作成します。 ルールは、関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数の型によって、ルールのインターフェイスが決まります。<br/>詳しくは、 [ルールインターフェイス](#rule-interface) を参照してください。 <br/>関数は、ルールビルダーで既に使用可能なルールの開始、終了または中間に挿入できます。 ルールビルダーの最後のルールによって、派生フィールドの最終出力が決まります。 |
 | 3 | **[!UICONTROL **&#x200B;フィールド設定&#x200B;**]** | 派生フィールドに名前を付け、説明し、そのフィールドタイプを調べることができます。 |
 | 4 | **[!UICONTROL **&#x200B;最終出力&#x200B;**]** | この領域には、過去 30 日間のデータと、ルールビルダーの派生フィールドに加えた変更に基づき、出力値のプレビューがその場で表示されます。 |
@@ -65,9 +65,9 @@ ht-degree: 8%
 |  | 名前 | 説明 |
 |---------|----------|--------|
 | A | **ルール名** | デフォルトでは、ルール名は **ルール X** （X はシーケンス番号を参照）。 ルールの名前を編集するには、ルールの名前を選択し、新しい名前を入力します（例： ）。 `Query Parameter`. |
-| B | **関数名** | ルールの選択された関数名（例： ）。 [!DNL URL PARSE]. 関数が関数のシーケンスの最後で、最終的な出力値を決定する場合、関数名の後に [!DNL - FINAL OUTPUT]例： [!DNL URL PARSE - FINAL OUTPUT]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
+| B | **関数名** | ルールの選択された関数名（例： ）。 [!UICONTROL URL 解析]. 関数が関数のシーケンスの最後で、最終的な出力値を決定する場合、関数名の後に [!UICONTROL  — 最終出力]例： [!UICONTROL URL 解析 — 最終出力]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
 | C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/>選択 ![その他のアイコン](assets/More.svg)を選択し、「 **[!UICONTROL **&#x200B;説明を追加&#x200B;**]** 説明を追加するには、または **[!UICONTROL **&#x200B;説明を編集&#x200B;**]** 既存の説明を編集する場合。<br/>説明を入力するには、エディターを使用します。 ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右、左、中央揃え、色、番号リスト、箇条書きリストを使用）や、外部情報へのリンクの追加を行うことができます。 <br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 詳しくは、 [関数リファレンス](#function-reference) を参照してください。 |
+| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 のドロップダウン [!UICONTROL フィールド] または [!UICONTROL 値] は、関数が想定する入力のタイプに基づいて、使用可能なフィールド（ルール、標準フィールド、フィールド）のすべてのカテゴリを表示します。 詳しくは、 [関数リファレンス](#function-reference) を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -161,7 +161,7 @@ ht-degree: 8%
    - 入力データタイプ：サポートされるデータのタイプ
    - 入力：入力に指定可能な値
    - 含まれる演算子：この関数でサポートされる演算子（存在する場合）
-   - 制限：（この関数で）派生フィールドで使用できるルールの最大数。
+   - 制限事項：この特定の関数に適用される制限
    - 出力。
 
 - 次のような使用例です。
@@ -174,7 +174,7 @@ ht-degree: 8%
 
 <!-- Concatenate -->
 
-### [!DNL Concatenate]
+### 連結
 
 2 つ以上のフィールド、派生フィールド、またはユーザーが入力した値を、定義済みの区切り文字で 1 つのフィールドに結合します。
 
@@ -182,9 +182,9 @@ ht-degree: 8%
 
 ## 仕様 {#concatenate-io}
 
-| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
-|---|---|---|:--:|---|
-| <p>文字列</p> | <ul><li>2 つ以上の値を組み合わせます<ul><li>フィールド</li><li>以前のルールから派生した値</li><li>ユーザー入力値</li></ul></li><li>ペア区切り<ul><li>各値の区切り文字の入力または選択</li></ul></li> </ul> | <p>該当なし</p> | <p>2</p> | <p>新しい派生フィールド</p> |
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <p>文字列</p> | <ul><li>各 [!UICONTROL 値]:<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li><li>ユーザー入力</li></ul></li><li>各 [!UICONTROL 区切り]:<ul><li>ユーザー入力</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -234,7 +234,7 @@ ht-degree: 8%
 
 新しい [!UICONTROL Origin - Destination] 派生フィールド。 次を使用する [!UICONTROL 連結] 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
 
-![[!DNL Concatenate] ルール](assets/concatenate.png)
+![連結ルール](assets/concatenate.png)
 
 ### 後のデータ {#concatenate-dataafter}
 
@@ -252,7 +252,7 @@ ht-degree: 8%
 
 <!-- CASE WHEN -->
 
-### [!DNL Case When]
+### Case When
 
 1 つ以上のフィールドの定義された条件に基づいて条件を適用します。 次に、これらの条件を使用して、条件の順序に基づいて新しい派生フィールドの値を定義します。
 
@@ -260,12 +260,11 @@ ht-degree: 8%
 
 ## 仕様 {#casewhen-io}
 
-| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
-|---|---|---|:---:|---|
-| <ul><li>文字列</li><li>数値</li><li>Date/Date-Time</li></ul> | <ul><li>入力フィールド</li><li>条件</li></ul> | <p><u>文字列</u></p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p><u>数値</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p><u>日付</u></p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <p>5</p> | <p>新しい派生フィールド</p> |
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>各 [!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>各 [!UICONTROL 次に、値を], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
-
 
 ## 使用例 1 {#casewhen-uc1}
 
@@ -294,7 +293,7 @@ ht-degree: 8%
 
 ### 次より前のデータ {#casewhen-uc1-databefore}
 
-| [!UICONTROL リファラー] | [!DNL Page URL] |
+| [!DNL Referrer] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -311,7 +310,7 @@ ht-degree: 8%
 
 関数の使用に注意してください [!UICONTROL URL 解析] 値を取得するルールを定義するには `Page Url` および `Referring Url` の前 [!UICONTROL 次の場合にケース] ルールが適用されます。
 
-![[!DNL Case when] ルール 1](assets/case-when-1.png)
+![ルール 1 の場合](assets/case-when-1.png)
 
 ### 後のデータ {#casewhen-uc1-dataafter}
 
@@ -365,7 +364,7 @@ ht-degree: 8%
 
 次の項目を定義します。 `Product Finding Methods (new)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 これらのルールは、古い [!UICONTROL 製品検索方法] フィールド値 `search` および `browse` の使用 [!UICONTROL フレーズを含む] 条件
 
-![[!DNL Case When] ルール 2](assets/case-when-2.png)
+![ルール 2 の場合](assets/case-when-2.png)
 
 ### 後のデータ {#casewhen-uc2-dataafter}
 
@@ -438,7 +437,7 @@ ht-degree: 8%
 
 次の項目を定義します。 `Trip Duration (bucketed)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 このルールは、古い [!UICONTROL 旅行期間] フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
 
-![[!DNL Case When] ルール 3](assets/case-when-3.png)
+![ルール 3 の場合](assets/case-when-3.png)
 
 
 ### 後のデータ {#casewhen-uc3-dataafter}
@@ -486,7 +485,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 <!-- FIND AND REPLACE -->
 
-### [!DNL Find and Replace]
+### 検索と置換
 
 選択したフィールド内のすべての値を検索し、新しい派生フィールド内の別の値に置き換えます。
 
@@ -494,9 +493,9 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ## 仕様 {#findreplace-io}
 
-| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
-|---|---|---|:---:|---|
-| <p>文字列</p> | <ul><li><span>「置き換えるタイミング」フィールドの条件</span></li><li><span>「次で置換」フィールド値</span><ul><li><span>ユーザー入力</span></li><li><span>別のフィールド</span></li></ul></li></ul> | <p><u>文字列</u></p><ul><li>すべてを検索してすべてを置換</li></ul> | <p>1</p> | <p>新しい派生フィールド</p> |
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <p>文字列</p> | <ul><li>条件の場合：<ul><li>[!UICONTROL 値]<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></li></ul></li><li>各 [!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]:<ul><li>[!UICONTROL 値]</li><ul><li>ユーザー入力</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]</li></ul> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -537,7 +536,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 次を定義します。 `Email Marketing (updated)` 派生フィールド。 次を使用する [!UICONTROL 検索と置換] 関数を使用して、 `email%20marketing` と `email marketing`.
 
-![[!DNL Find and Replace] ルール](assets/find-and-replace.png)
+![検索と置換のルール](assets/find-and-replace.png)
 
 ### 後のデータ {#findreplace-uc-dataafter}
 
@@ -556,7 +555,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 <!-- LOOKUP -->
 
-### [!DNL Lookup]
+### ルックアップ
 
 対応する値に置き換えられる参照値のセットを定義します。
 
@@ -565,9 +564,9 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 ## 仕様 {#lookup-io}
 
-| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
-|---|---|---|:---:|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>単一フィールド</li><li>参照ファイル<ul><li>Key Column</li><li>新しいフィールド列</li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しい派生フィールド</p> |
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>の場合 [!UICONTROL ルックアップを適用するフィールド]:<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>の場合 [!UICONTROL 値が] および [!UICONTROL 値の置換文字列]:</p><ul><li>ユーザー入力</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -623,7 +622,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
 
-![[!DNL Lookup] ルール 1](assets/lookup-1.png)
+![参照ルール 1](assets/lookup-1.png)
 
 ### 後のデータ {#lookup-uc1-dataafter}
 
@@ -658,7 +657,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
 
-![[!DNL Lookup] ルール 2](assets/lookup-2.png)
+![ルックアップルール 2](assets/lookup-2.png)
 
 ### 後のデータ {#lookup-uc2-dataafter}
 
@@ -676,7 +675,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 <!-- URL PARSE -->
 
-### [!DNL URL Parse]
+### URL の解析
 
 プロトコル、ホスト、パス、クエリーのパラメーターを含む、URL の様々な部分を解析します。
 
@@ -685,8 +684,8 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 ## 仕様 {#urlparse-io}
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
-|---|---|---|:---:|---|
-| <ul><li>文字列</li></ul> | <ul><li>単一フィールド</li><li>解析オプション<ul><li>プロトコルを取得</li><li>ホストを取得</li><li>パスを取得</li><li>クエリ値を取得<ul><li>クエリパラメーター</li></ul></li><li>ハッシュ値を取得</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>5</p> | <p>新しい派生フィールド</p> |
+|---|---|---|---|---|
+| <ul><li>文字列</li></ul> | <ul><li>の場合 [!UICONTROL フィールド]:</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul><li>の場合 [!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリ文字列値を取得]<ul><li>[!UICONTROL クエリーパラメーター]:<ul><li>ユーザー入力</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -710,7 +709,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 次の項目を定義します。  `Referring Domain` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL 参照 URL] フィールドに格納し、新しい派生フィールドに格納します。
 
-![[!DNL Url Parse] ルール 1](assets/url-parse-1.png)
+![ URL 解析ルール 1](assets/url-parse-1.png)
 
 ### 後のデータ {#urlparse-uc1-dataafter}
 
@@ -742,7 +741,7 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 次の項目を定義します。 `Query String CID` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL ページ URL] フィールド、指定 `cid` をクエリパラメーターとして使用します。 出力値は、新しい派生フィールドに格納されます。
 
-![[!DNL Url Parse] ルール 2](assets/url-parse-2.png)
+![URL 解析ルール 2](assets/url-parse-2.png)
 
 ### 後のデータ {#urlparse-uc2-dataafter}
 
@@ -755,3 +754,10 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 {style="table-layout:auto"}
 
 +++
+
+## 制限事項
+
+派生フィールドの一般的な機能には、次の制限が適用されます。
+
+- 派生フィールドのルールを定義する場合、最大 100 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
+- CJA 接続あたり最大 100 個の派生フィールドを持つことができます。
