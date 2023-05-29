@@ -2,7 +2,7 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
+source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
