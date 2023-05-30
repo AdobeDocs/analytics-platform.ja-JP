@@ -4,9 +4,9 @@ description: あるディメンション内の数値を組み合わせます。
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '191'
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+workflow-type: tm+mt
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 データビューを作成または編集する際に、値のバケット化を使用すると、範囲に基づいて数値を組み合わせることができます。整数または倍精度スキーマのデータタイプを使用するディメンションに対してのみ使用できます。
 
-値のバケット化は、すべての一意の数を個別のディメンション項目として扱うのではなく、範囲をグループ化する場合に役立ちます。例えば、「5 ～ 10」のバケットは、Analysis Workspace では行項目「5 ～ 10」として表示されます。
-
 ![値のバケット化](../assets/value-bucketing.png)
+
+値のバケット化は、すべての一意の数を個別のディメンション項目として扱うのではなく、範囲をグループ化する場合に役立ちます。例えば、「5 ～ 10」のバケットは、Analysis Workspace では行項目「5 ～ 10」として表示されます。
 
 グループディメンションと非グループディメンションの両方に関するレポートを柔軟に作成する場合は、コンポーネントの 2 つのコピーを使用可能なディメンションリストにドラッグします。一方のディメンションでバケット化を有効にし、もう一方のディメンションでバケット化を無効にします。
 
@@ -29,4 +29,4 @@ ht-degree: 100%
 | [!UICONTROL 以上] | 最後のディメンションバケットの下限。 |
 | [!UICONTROL バケットを追加] | 数値ディメンションバケットに別のバケットを追加できます。1 つのディメンションに最大 20 個のバケットを追加できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

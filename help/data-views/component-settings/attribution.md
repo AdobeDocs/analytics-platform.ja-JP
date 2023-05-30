@@ -4,16 +4,20 @@ description: 指標のデフォルトのアトリビューションを設定で�
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 38%
 
 ---
 
 # アトリビューションコンポーネントの設定
 
-アトリビューションを使用すると、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。 次に例を示します。
+アトリビューションを使用すると、成功イベントのクレジットをディメンション項目がどのように取得するかをカスタマイズできます。
+
+![](../assets/attribution-settings.png)
+
+次に例を示します。
 
 1. サイトの訪問者がいずれかの製品ページへの有料検索リンクをクリックします。 顧客は商品を買い物かごに追加しますが、購入しません。
 2. 次の日、人々は友人の 1 人からのソーシャルメディアの投稿を見る。 顧客がリンクをクリックし、購入を完了します。
@@ -22,7 +26,7 @@ ht-degree: 38%
 
 このデータビューコンポーネント設定を使用すると、指標のデフォルトのアトリビューションモデルを設定できます。 Analysis Workspace での作業中に、特定の指標のアトリビューションモデルを上書きできます。
 
-![アトリビューション](../assets/attribution-settings.png)
+
 
 組織で指標に複数のアトリビューション設定が必要な場合は、次のいずれかを実行できます。
 

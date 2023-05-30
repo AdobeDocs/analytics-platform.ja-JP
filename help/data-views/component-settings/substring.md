@@ -4,7 +4,7 @@ description: 文字列のサブセットをディメンション項目として�
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 95%
@@ -15,9 +15,9 @@ ht-degree: 95%
 
 [!UICONTROL 部分文字列]コンポーネント設定を使用すると、複数文字列の操作メソッドを実行して、レポートで目的のディメンション項目を取得できます。
 
-[!UICONTROL 部分文字列]は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。フィルタリングや他の分析操作が適用される前に発生する即時のデータ変換です。
-
 ![部分文字列設定](../assets/substring-settings.png)
+
+[!UICONTROL 部分文字列]は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。フィルタリングや他の分析操作が適用される前に発生する即時のデータ変換です。
 
 ## 左／右から
 
