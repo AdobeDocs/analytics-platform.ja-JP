@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -246,7 +246,7 @@ ht-degree: 96%
          + [「訪問あたりのページビュー数」指標の作成](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [「パーティシペーション」指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [セグメントの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [計算指標のタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)

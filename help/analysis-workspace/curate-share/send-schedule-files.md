@@ -3,7 +3,7 @@ description: 組織内の受信者に対して PDF／CSV プロジェクトを�
 title: 共有メニュー
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: d09094798d22f32d3467527e0c3e1817ff76b5a2
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 59%
@@ -25,4 +25,4 @@ Workspace の **共有メニュー** 内で、組織の受信者に対して PDF
 | 誰とでも共有（制限付きテストで利用可能） | Adobe Analyticsへのアクセス権を持たないユーザーに、Analysis Workspaceプロジェクトへの読み取り専用アクセス権を付与します。 [詳細情報](/help/analysis-workspace/curate-share/share-projects.md) |
 | ファイルを書き出し | プロジェクトを CSV または PDF 形式で、指定した受信者にすぐに送信します。[詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | ファイルの書き出しをスケジュール | プロジェクトを CSV または PDF 形式でスケジュールに従って指定した受信者に送信します。[詳細情報](/help/analysis-workspace/curate-share/t-schedule-report.md) |
-| プロジェクトデータをキュレート | プロジェクトで使用できるコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限します。[詳細情報](/help/analysis-workspace/curate-share/curate.md) |
+| プロジェクトデータをキュレート | プロジェクトで使用できるコンポーネント（ディメンション、指標、フィルター、日付範囲）を制限します。[詳細情報](/help/analysis-workspace/curate-share/curate.md) |

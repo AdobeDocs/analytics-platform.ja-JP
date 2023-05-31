@@ -3,7 +3,7 @@ description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 | `[Alt + 1]` | 新しいフリーフォームテーブル |
 | `[Ctrl + Shift + C]` | 新規計算指標 |
 | `[Ctrl + Shift + D]` | 新しい日付範囲 |
-| `[Ctrl + Shift + E]` | 新しいセグメント |
+| `[Ctrl + Shift + E]` | 新しいフィルター |
 | `[Ctrl + Z]` | 元に戻す |
 | `[Component drag + Shift]` | ドロップダウンフィルターの作成 |
 

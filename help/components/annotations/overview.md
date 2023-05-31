@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 72%
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 72%
 
 * 注釈は、単一の日付または日付範囲に関連付けることができます。
 
-* データセット全体に適用することも、指定した指標、ディメンション、セグメントに適用することもできます。
+* データセット全体に適用することも、指定した指標、ディメンション、フィルターに適用することもできます。
 
 * 作成されたプロジェクト（デフォルト）またはすべてのプロジェクトに適用できます。
 
@@ -32,7 +32,7 @@ ht-degree: 72%
 
 ## 権限
 
-デフォルトでは、管理者のみが注釈を作成できます。ユーザーは、他の Analytics コンポーネント（セグメント、計算指標など）と同様に、注釈を表示する権限を持ちます。
+デフォルトでは、管理者のみが注釈を作成できます。他の Analytics コンポーネントと同様に、ユーザーは注釈を表示する権限を持ちます（フィルター、計算指標など）。
 
 ただし、管理者は、[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=ja) を介してユーザーに[!UICONTROL 注釈の作成]権限（Analytics ツール）を付与できます。
 

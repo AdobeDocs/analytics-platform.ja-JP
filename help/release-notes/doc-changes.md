@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 91%
+source-wordcount: '2094'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,8 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2023年6月** |  |
+| 計算指標の更新 | 計算指標に関する様々な記事が更新されました。例えば、スクリーンショットの更新や手順などが更新されました。 これらの変更は、ドキュメントを現在の CJA 機能とインライン化するためにおこなわれました。 |
 | **2023年5月** |  |
 | ディープリンク（モバイルアプリ）ドキュメント | ユーザーが、アプリ内のスコアカードプロジェクトに直接アクセスできるスコアカードへのリンクを送信できるようにします。これにより、プロジェクトの共有がさらに簡単になり、技術に詳しくないオーディエンスからのエンゲージメントを高めることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Report Builderの「セルからデータビューを選択」に関するドキュメント | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。これは、ワークブックを作成し、同様のデータ構造を持つ複数のデータ表示があり、異なるデータ表示で複数回ワークブックを再利用する場合に便利です。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) |

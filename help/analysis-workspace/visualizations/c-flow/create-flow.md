@@ -4,10 +4,10 @@ title: フロービジュアライゼーションの設定
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 86%
 |--- |--- |
 | [!UICONTROL このノードにフォーカス] | 選択したノードにフォーカスを変更します。フロー図の中央にフォーカスノードが表示されます。 |
 | [!UICONTROL やり直し] | 新しいフロー図を作成できる、フリーフォーム図ビルダーに戻ります。 |
-| [!UICONTROL フローのこのポイントからセグメントを作成] | セグメントを作成します。新しいセグメントを設定できる、セグメントビルダーに移動します。 |
+| [!UICONTROL フローのこのポイントからフィルターを作成] | フィルターを作成します。 これにより、新しいフィルターを設定できるフィルタービルダーが表示されます。 |
 | [!UICONTROL 分類] | 利用可能なディメンション、指標、時間でノードを分類します。 |
 | [!UICONTROL トレンド] | ノードのトレンド図を作成します。 |
 | [!UICONTROL 列全体を展開] | 列を展開して、すべてのノードを表示します。デフォルトでは、上位 5 つのノードのみ表示されます。 |

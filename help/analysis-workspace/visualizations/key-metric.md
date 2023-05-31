@@ -4,10 +4,10 @@ title: 主要指標の概要
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 左側のパネルの&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;メニューから&#x200B;**[!UICONTROL 主要指標の概要]**&#x200B;ビジュアライゼーションをパネルにドラッグします。
 
-1. 指標、プライマリ日付範囲、比較日付範囲および（必要に応じて）セグメントを選択して、ビジュアライゼーションを設定します。
+1. 指標、プライマリ日付範囲、比較日付範囲およびフィルター（必要に応じて）を選択して、ビジュアライゼーションを設定します。
 
    ![主要指標の設定](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ ht-degree: 0%
    | **[!UICONTROL 指標]** | 調査の対象となる指標を選択します。すべての指標がサポートされています。 |
    | **[!UICONTROL プライマリ日付範囲]** | フリーフォームテーブルの現在の日付範囲。 |
    | **[!UICONTROL 比較日付範囲]** | プライマリ日付範囲の比較対象となる日付範囲。 |
-   | **[!UICONTROL セグメント (オプション)]** | この概要で特に関心のあるセグメント。 |
+   | **[!UICONTROL フィルター（オプション）]** | この概要に特に関心のあるフィルター。 |
 
    {style="table-layout:auto"}
 
@@ -93,4 +93,4 @@ ht-degree: 0%
 
    元の設定ビューに戻ります。
 
-1. 必要に応じて、指標、プライマリ日付範囲、比較日付範囲またはセグメントを変更します。
+1. 必要に応じて、指標、プライマリ日付範囲、比較日付範囲またはフィルターを変更します。

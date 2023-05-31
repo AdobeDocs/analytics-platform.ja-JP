@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: ht
-source-wordcount: '925'
-ht-degree: 100%
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Experience Platform の権限について詳しくは、[Adobe Experience Platfo
 
 ## Workspace プロジェクトのキュレーション
 
-Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、[プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md)を参照してください。
+Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、フィルター、日付範囲）の制限方法、キュレーションとデータビューとの関連付け方法について詳しくは、 [プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md).
 
 ## 個々の指標またはディメンションへのアクセス権を付与する
 
@@ -98,4 +98,4 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

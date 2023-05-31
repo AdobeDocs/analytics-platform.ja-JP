@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 97%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 * 複数の比較を 1 つの[!UICONTROL 複合グラフ]に追加できます。
 * 1 つ以上の比較を追加する場合は、[!UICONTROL 時間比較]など、同じタイプの比較にする必要があります。
 * 最大 5 つの比較を追加できます。
-* 1 つの指標に最大 3 つのフィルター（セグメント）を適用できます。
+* 1 つの指標に最大 3 つのフィルターを適用できます。
 * 計算指標は複合グラフではサポートされません。
 
 ## コンボグラフの作成

@@ -3,10 +3,10 @@ description: シンプルな「訪問あたりのページビュー数」指標�
 title: シンプルな「訪問あたりのページビュー数」指標の作成
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 83%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -32,4 +32,4 @@ UI コンポーネントについて詳しくは、「[指標を作成します]
 
    「**[!UICONTROL 概要]**」の数式は、指標の定義を変更すると更新されます。
 
-1. （オプション）指標の共有、承認、（再）タグ付け、名前の変更、削除をおこなうには、 [計算指標ページ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. （オプション）指標を組織内の他のユーザーと共有します。詳しくは、 [計算指標の共有](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
