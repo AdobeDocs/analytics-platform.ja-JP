@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: 2ff3fae7e285998d787a259d9d18c6d5e7fa961e
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 82%
+source-wordcount: '932'
+ht-degree: 77%
 
 ---
 
 # 最新の Customer Journey Analytics（CJA）リリースノート（2023年5月）
 
-**最終更新日**：2023年5月30日（PT）
+**最終更新日**：2023年5月31日（PT）
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -20,6 +20,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Adobe Journey Optimizerデータビュー** | CJA 管理者は、「AJO Data view (Sandbox-name)」と呼ばれる、CJA の追加のデータビューにアクセスできます。 これらのデータビューは、Adobe Journey Optimizer(AJO) でのレポートの強化に使用されます。 また、CJA での AJO アクティビティの詳細な分析も実行できます。 [詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |  | 2023年5月25日（PT） |
 | **非実稼動用サンドボックスのバックフィル** | 非実稼動用サンドボックスで Analytics ソースコネクタのデータフローを作成する場合、非実稼動用サンドボックスでのバックフィルは 3 か月に制限されます。実稼動用サンドボックスの場合、13 か月間の状態が保たれます。 | 該当なし | 2023年4月26日（PT） |
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=ja#company-preferences)</p> | 2023年5月3日（PT） | 2023年6月5日（PT） |
 | **Analytics ダッシュボードアプリ（モバイルアプリ）の更新されたホーム画面** | 新しく更新されたホーム画面では、すべてのスコアカードを 1 つの統合されたスコアカードリストで表示できます。1 回のログインで複数の組織にアクセスできる場合、組織のすべてのスコアカードが 1 つのリストで使用できるようになります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | 該当なし | 2023年5月10日（PT） |
