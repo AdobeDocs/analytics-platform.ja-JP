@@ -6,9 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2900'
 ht-degree: 6%
 
 ---
@@ -33,7 +34,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 この機能を使用するには、次の手順を実行する必要があります。
 
-- を有効にします。 [!UICONTROL CJA SQL コネクタ] をExperience Platform組織に追加します。
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 - 関連する製品プロファイル、ユーザーグループ、個々のユーザーの機能を設定します。<br/>
 ユーザーは次にアクセスできる必要があります。
@@ -88,7 +89,7 @@ Experience PlatformUI:
 
 ### BI ツール
 
-現在、CJA SQL コネクタは、Power BIと Tableau に対してサポートされています。
+現在、CJA SQL Connector は、Tableau およびPower BIに対してのみサポートおよびテストされています。 PSQL インターフェイスを使用する他の BI ツールも動作する場合がありますが、正式にはサポートされていません。
 
 +++ Power BI
 
@@ -219,9 +220,9 @@ prod:all=> \dv
 
 詳しくは、 [クエリサービス SQL リファレンス](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) を参照して、サポートされる SQL のタイプに関する完全な参照を確認してください。
 
-パターンと例の概要については、以下のパターンの表を参照してください。
+使用できる SQL の例については、次の表を参照してください。
 
-+++パターン
++++ 例
 
 | パターン | 例 |
 |---|---|
@@ -234,7 +235,7 @@ prod:all=> \dv
 | サブ選択：<br/>その他の結果<br/>フィルタリング | <pre>SELECT dim1, m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | サブ選択：<br/>との結合<br/>データセットが次の値に含まれていません：<br/>CJA | <pre>SELECT b.key, a.dim1, a.m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/>)<br/>a.dim1 = b.key に対する LEFT JOIN 検索</pre> |
 | サブ選択：<br/>クエリ<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>開始 (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/><br/>  和集合<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DV2 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim2<br/>キーでグループ化<br/>合計注文</pre> |
-| サブ選択： <br/>レイヤソース <br/>フィルター <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>開始 (<br/>  \_.dim1,\_.m1 を選択<br/>  開始 (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.ITEM が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
+| サブ選択： <br/>レイヤソース <br/>フィルター <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>開始 (<br/>  \_.dim1,\_.m1 を選択<br/>  開始 (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.item が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
 | を<br/>指標が次の値より前に<br/> またはが混在している<br/>寸法 | <pre>SUM(metric1) AS m1, dim1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>2 でグループ化</pre> |
 
 {style="table-layout:auto"}
@@ -390,4 +391,3 @@ ORDER BY -metric1 DESC
 | [DATE_TRUNC（精度、日付、または日時）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。 `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`または `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
