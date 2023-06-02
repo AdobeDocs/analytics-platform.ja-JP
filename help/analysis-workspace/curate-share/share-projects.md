@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 49%
+source-wordcount: '1934'
+ht-degree: 48%
 
 ---
 
@@ -131,6 +131,10 @@ ht-degree: 49%
 >* 組織が Healthcare Shield のライセンスを取得している場合、プロジェクトを共有できるのは、シングルサインオン (SSO) またはAdobe IDで認証されたユーザーのみです。未認証ユーザーとプロジェクトを共有することはできません。 この機能は、お客様の社内データガバナンスポリシーに従って使用し、適切な権限を持つユーザーと、PHI（個人の健康情報）を含むプロジェクトリンクのみを共有する必要があります。
 
 
+次のビデオデモおよび付属のドキュメントでは、誰とでもリンクを共有する際に使用できるオプションについて説明します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 誰とでもAnalysis Workspaceプロジェクトを共有するには：
 
 1. 共有するAnalysis Workspaceプロジェクトを開きます。
@@ -151,7 +155,7 @@ ht-degree: 49%
 
    * **[!UICONTROL Experience Cloud 認証を要求]:**
 
-      このオプションを有効にすると、共有しているプロジェクトを作成したAdobe Experience Cloud組織にログインできるユーザーのみが、プロジェクトにアクセスできます。
+      このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーだけです。 ただし、と共有するユーザーは、Adobe Analyticsにアクセスできる必要はありません。
 
       CJA 管理者は、会社に対してこの設定をおこなうことができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がこのオプションを設定した方法に応じて、次のシナリオが発生する場合があります。
 
