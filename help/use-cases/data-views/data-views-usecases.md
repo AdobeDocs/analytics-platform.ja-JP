@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: ht
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ f. 値として「50」を指定します。
 
 * [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには、1) [!UICONTROL 新規]と 2) [!UICONTROL 再来訪]の 2 つの値があります。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [新規セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional)。新規セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションと定義されます。
+* [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 初回セッション指標は、レポートウィンドウ内での個人の定義された最初のセッションとして定義されます。
 
-* [再来訪セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) 再来訪セッション指標は、ユーザーの初回セッションではなかったセッション数です。-->
+* [リターンセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) 「Return Sessions」指標は、人物の初回セッションではなかったセッションの数です。—>
 
 これらのコンポーネントにアクセスする手順は次のとおりです。
 
