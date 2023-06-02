@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '902'
 ht-degree: 95%
 
 ---
@@ -256,11 +256,10 @@ ht-degree: 95%
       + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
-   + 日付範囲 {#cja-date-ranges}
-      + [日付範囲の概要](../components/date-ranges/overview.md)
+   + カレンダーと日付範囲 {#cja-date-ranges}
+      + [カレンダーと日付範囲の概要](../components/date-ranges/calendar.md)
       + [日付範囲の作成](../components/date-ranges/create.md)
       + [日付範囲を管理](../components/date-ranges/manage.md)
-      + [カレンダーの概要](../components/date-ranges/calendar.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
    + データ要素 {#data-dictionary}

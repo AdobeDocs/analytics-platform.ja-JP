@@ -3,16 +3,16 @@ title: 日付範囲の作成
 description: レポートで使用する日付範囲を作成します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 94%
+source-wordcount: '403'
+ht-degree: 91%
 
 ---
 
 # 日付範囲の作成
 
-次の 2 つの方法のいずれかを使用して、カスタムの日付範囲を作成できます。
+日付範囲は、次の 2 つの方法のいずれかを使用して作成できます。
 
 * 左側の日付範囲コンポーネントのリストの横にある「`+`」ボタンをクリックして、Workspace プロジェクトに直接移動する
 * 日付範囲マネージャー内

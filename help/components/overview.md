@@ -4,7 +4,7 @@ description: CJA オファーのコンポーネントの詳細と、レポート
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3b98047d7ac04b370dc9c03300f75b7313e79e5a
+source-git-commit: e8778520581ea6d1cf59285bc8a6c178904d44e2
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 57%
@@ -23,7 +23,7 @@ ht-degree: 57%
 * [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
 * [**フィルター**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
-* [**日付範囲**](date-ranges/overview.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
+* [**日付範囲**](date-ranges/create.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
 * [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
 
 ## Analysis Workspace のコンポーネント
