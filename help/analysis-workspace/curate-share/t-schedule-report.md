@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 
@@ -21,8 +21,10 @@ ht-degree: 94%
 電子メールで受信者に直ちにファイルを送信するには、以下を実行します。
 
 1. クリック **[!UICONTROL 共有] > [!UICONTROL ファイルを書き出し]**.
-1. ファイルタイプ（CSV または PDF）を指定します。
-1. （任意）電子メールに含まれる、受信ファイルについての説明を追加します。
+1. ファイルタイプを指定します。
+   * [!UICONTROL **CSV**]:プレーンテキストデータが必要な場合は、このオプションを選択します。
+   * [!UICONTROL **PDF**]:ダウンロードしたファイルに、プロジェクト内の表示（表示）されたすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
+1. （オプション）受信するファイルについて説明する説明を E メールに追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。
 1. （Healthcare Shield のお客様のみ）パスワードを入力します。予定レポートのパスワード保護の節を参照してください。
 1. 「**[!UICONTROL 今すぐ送信]**」をクリックします。
