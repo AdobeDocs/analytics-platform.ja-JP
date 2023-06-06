@@ -3,10 +3,10 @@ description: CJA 実験パネルで A/B テストの結果を分析する方法�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 75%
+source-wordcount: '1861'
+ht-degree: 73%
 
 ---
 
@@ -125,3 +125,7 @@ Customer Journey Analyticsの実験パネルを使用すると、人物の州別
 ![ランダム化実験](assets/randomize.png)
 
 干渉 X が結果 Y に与える影響を測定する場合、両者の真の原因は混乱要因 C である可能性があります。X に対する人のランダム化でデータが達成されない場合、影響は測定が難しく、C に対する X の依存性が明示的に計算されます。
+
+## 実験パネルでの計算指標の使用
+
+詳しくは、このブログ投稿を参照してください。 [実験パネルでの派生指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
