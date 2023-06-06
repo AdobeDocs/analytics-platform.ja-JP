@@ -4,10 +4,10 @@ description: ディメンションが空の場合の処理方法を決定しま�
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '227'
-ht-degree: 100%
+source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 
 ![値オプションなし](../assets/no-value-options.png)
 
+## 設定 {#settings}
+
 | 設定 | 説明 |
 | --- | --- |
 | [!UICONTROL 表示された場合は「値なし」を呼び出す] | **[!UICONTROL 値なし]** ディメンション項目の名前を別の項目に変更できるテキストフィールド。 |
@@ -24,4 +26,8 @@ ht-degree: 100%
 | [!UICONTROL デフォルトで「値なし」を表示する] | この値をレポートに表示します。 |
 | [!UICONTROL 「値なし」を値として扱う] | データ内の空白の値を「[!UICONTROL 表示された場合は「値なし」を呼び出す]」で指定したテキストに置き換えます。例えば、モバイルデバイスのタイプをディメンションとして指定した場合、「 **[!UICONTROL 値なし]** 」項目の名前を「デスクトップ」に変更できます。 このフィールドをカスタム値に変更すると、そのカスタム値は正当な文字列値として扱われます。したがって、このフィールドに「Red」と入力した場合、データそのものに「Red」という文字列が出現すると、指定した同じ行項目に分類されます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+## ブログ投稿
+
+関連するブログ投稿を以下に示します。 [CJA での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
