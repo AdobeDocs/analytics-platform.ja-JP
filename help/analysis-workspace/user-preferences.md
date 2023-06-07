@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3099'
+ht-degree: 75%
 
 ---
 
@@ -44,10 +44,6 @@ ht-degree: 0%
 | 左側のパネルグループに表示されるコンポーネント | 左側のパネルのコンポーネントメニューに表示する各コンポーネントの数を選択します。 <p>0 を選択すると、ワークスペースの左側のパネルからコンポーネントにアクセスできなくなります。</p><p>デフォルトでは、次の各項目に対して 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>フィルター</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
 
 ## IMS 組織の環境設定
-
->[!AVAILABILITY]
->
->この節で説明する公開アクセスリンク機能は、リリースの制限付きテスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。
 
 組織内のすべてのユーザーおよびプロジェクトに適用する会社の環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 

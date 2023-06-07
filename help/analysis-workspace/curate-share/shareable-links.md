@@ -3,7 +3,7 @@ description: プロジェクトやビジュアライゼーションへの共有�
 keywords: Analysis Workspace の共有
 title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 62%
@@ -21,8 +21,6 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 リンクの受信者に [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)管理者が受け取る **[!UICONTROL 編集可能]** 管理者以外が受け取る **[!UICONTROL 複製可能]** エクスペリエンス。
 
 ## 他のユーザーと共有する読み取り専用リンクを取得する
-
-{{release-limited-testing-section}}
 
 Customer Journey Analyticsへのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの読み取り専用リンクを共有できます。
 
