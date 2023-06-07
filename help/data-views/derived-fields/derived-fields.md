@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
+source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3252'
 ht-degree: 9%
 
 ---
@@ -123,6 +123,11 @@ ht-degree: 9%
    A [!UICONTROL コンポーネントを削除] 削除を確認するダイアログが表示されます。 データビューの外部にある派生フィールドに対する外部参照が存在する可能性があるとします。
 
    - 選択 **[!UICONTROL **&#x200B;続行&#x200B;**]** をクリックして、派生フィールドを削除します。
+
+>[!NOTE]
+>
+>派生フィールドは、CJA の接続レベルで管理されます。 その接続に関連付けられたデータビューの派生フィールドに対して行われた変更は、関連付けられたすべてのデータビューに適用されます。
+
 
 
 ## 関数テンプレート
