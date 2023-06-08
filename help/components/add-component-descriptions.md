@@ -4,7 +4,7 @@ title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 767d112d13b7312aa8685cc132916f2e27896422
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 3%
@@ -24,8 +24,6 @@ Customer Journey Analytics管理者は、コンポーネント (Dimension、指�
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
 ## （データディクショナリを使用して）Analysis Workspaceのコンポーネントに説明を追加します。 {#add-descriptions}
-
-{{release-limited-testing-section}}
 
 Analysis Workspaceのデータディクショナリは、ユーザーと管理者の両方が CJA 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。 これには、CJA 管理者がコンポーネントの説明をAnalysis Workspaceに直接追加する機能が含まれます。
 
