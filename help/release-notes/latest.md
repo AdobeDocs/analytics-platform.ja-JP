@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 62%
@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # 最新の Customer Journey Analytics（CJA）リリースノート（2023年6月）
 
-**最終更新日**：2023年6月6日（PT）
+**最終更新日**：2023年6月9日（PT）
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -26,7 +26,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **CJA データビューへの PowerBI および Tableau アクセス** | Customer Journey Analytics(CJA)SQL コネクタを使用すると、CJA で定義したデータビューに SQL からアクセスできます。 Power BI、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツールに詳しいデータエンジニアやアナリストは、CJA ユーザーがAnalysis Workspaceプロジェクトで使用したのと同じデータビューに基づいて、レポートやダッシュボードを作成できます。 [詳細情報](/help/data-views/sql-connector.md) |  | 2023年6月30日（PT） |
 | **Experience Edge 地域検索** | データストリームに対して Experience Edge 地域ルックアップが有効になると、CJA の位置情報データを使用してレポートを作成できるようになります。 |  | 2023年6月30日（PT） |
 | **プロファイルおよび参照データに対する参照のサポートが拡張されました。** | 参照データセットを、イベントデータセットだけでなく、プロファイルおよび参照データセットに追加できます。 | 2023年6月21日（PT） | 2023年7月12日（PT） |
-| **通貨換算のサポート** | CJA は、データビューでの指標コンポーネントの書式設定の一環として、通貨コンバージョンをサポートします。 | 2023年6月21日（PT） | 2023年7月19日（PT） |
+| **通貨換算のサポート** | CJA は、データビューでの指標コンポーネントの書式設定の一環として、通貨コンバージョンをサポートします。 | 2023年6月7日（PT） | 2023年6月21日（PT） |
 
 {style="table-layout:auto"}
 
