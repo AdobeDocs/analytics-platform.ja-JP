@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 86b411ac28aaa78914c6f105af2716e1b3a4150c
+source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 67%
+source-wordcount: '1164'
+ht-degree: 62%
 
 ---
 
@@ -34,12 +34,13 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Journey Optimizerデータビュー** | CJA 管理者は、「AJO Data view (Sandbox-name)」と呼ばれる、CJA の追加のデータビューにアクセスできます。 これらのデータビューは、Adobe Journey Optimizer(AJO) でのレポートの強化に使用されます。 また、CJA での AJO アクティビティの詳細な分析も実行できます。 [詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |  | 2023年5月25日（PT） |
+| **Adobe Journey Optimizerデータビュー** | CJA 管理者は、「AJO Data view (Sandbox-name)」と呼ばれる、CJA の追加のデータビューにアクセスできます。 これらのデータビューは、Adobe Journey Optimizer(AJO) でのレポートの強化に使用されます。 また、CJA での AJO アクティビティの詳細な分析も実行できます。 [詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 | | 2023年5月25日（PT） |
 | **非実稼動用サンドボックスのバックフィル** | 非実稼動用サンドボックスで Analytics ソースコネクタのデータフローを作成する場合、非実稼動用サンドボックスでのバックフィルは 3 か月に制限されます。実稼動用サンドボックスの場合、13 か月間の状態が保たれます。 | 該当なし | 2023年4月26日（PT） |
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=en#ims-organization-preferences)</p> | 2023年5月3日（PT） | 2023年6月6日（PT） |
 | **Analytics ダッシュボードアプリ（モバイルアプリ）の更新されたホーム画面** | 新しく更新されたホーム画面では、すべてのスコアカードを 1 つの統合されたスコアカードリストで表示できます。1 回のログインで複数の組織にアクセスできる場合、組織のすべてのスコアカードが 1 つのリストで使用できるようになります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | 該当なし | 2023年5月10日（PT） |
 | **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することができます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html?lang=ja)</p> | 2023年5月10日（PT） | 2023年8月2日 |
 | **CJA の Report Builder - セルからのデータビューの選択** | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。これは、ワークブックを作成し、同様のデータ構造を持つ複数のデータ表示があり、異なるデータ表示で複数回ワークブックを再利用する場合に便利です。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) | 該当なし | 2023年5月24日（PT） |
+| **CJA の学習ページを更新しました。** | Customer Journey Analyticsのランディングページの「学習」タブに、Adobe Analyticsから CJA への移行に重点を置いたコンテンツなど、CJA に固有のコンテンツが含まれるようになりました。<p>「学習」タブでは、さらに次の機能強化も利用できます。</p><ul><li>1 つのページにより多くの学習コンテンツを表示し、ナビゲーションを改善するデザインを改善しました。</li><li>エクスペリエンスレベル（初級、中級、上級）で学習コンテンツをパーソナライズする機能</li></ul><p>以前は、CJA の「学習」タブには、Adobe Analyticsの「学習」タブと同じ情報が含まれていました。</p> [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 該当なし | 2023年6月30日（PT） |
 | **Analysis Workspace でのコンポーネントの並べ替え** | <p>新しい「並べ替え」オプションは、Analysis Workspace の左側のパネルまたはデータ要素でコンポーネントを表示する際に使用できるようになりました。コンポーネントは、推奨（最も一般的に使用されるコンポーネント）、アルファベット順、またはカテゴリ順（タイプ）で並べ替えることができます。</p><p>以前は、コンポーネントを検索またはフィルタリングすることしかできませんでした。[詳細情報](/help/components/overview.md)</p> | 該当なし | 未定 |
 
 {style="table-layout:auto"}
