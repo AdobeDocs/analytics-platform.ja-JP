@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 62%
+source-wordcount: '1369'
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **CJA データビューへの PowerBI および Tableau アクセス** | Customer Journey Analytics(CJA)SQL コネクタを使用すると、CJA で定義したデータビューに SQL からアクセスできます。 Power BI、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツールに詳しいデータエンジニアやアナリストは、CJA ユーザーがAnalysis Workspaceプロジェクトで使用したのと同じデータビューに基づいて、レポートやダッシュボードを作成できます。 [詳細情報](/help/data-views/sql-connector.md) |  | 2023年6月30日（PT） |
 | **Experience Edge 地域検索** | データストリームに対して Experience Edge 地域ルックアップが有効になると、CJA の位置情報データを使用してレポートを作成できるようになります。 |  | 2023年6月30日（PT） |
 | **プロファイルおよび参照データに対する参照のサポートが拡張されました。** | 参照データセットを、イベントデータセットだけでなく、プロファイルおよび参照データセットに追加できます。 | 2023年6月21日（PT） | 2023年7月12日（PT） |
-| **通貨換算のサポート** | CJA は、データビューでの指標コンポーネントの書式設定の一環として、通貨コンバージョンをサポートします。 | 2023年6月7日（PT） | 2023年6月21日（PT） |
+| **通貨換算のサポート** | 通貨コンバージョンは、データビューでの指標コンポーネントの書式設定の一環としてサポートされています。 [詳細情報](../data-views/component-settings/format.md#currency) | 2023年6月7日（PT） | 2023年6月21日（PT） |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **CJA の Report Builder - セルからのデータビューの選択** | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。これは、ワークブックを作成し、同様のデータ構造を持つ複数のデータ表示があり、異なるデータ表示で複数回ワークブックを再利用する場合に便利です。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) | 該当なし | 2023年5月24日（PT） |
 | **CJA の学習ページを更新しました。** | Customer Journey Analyticsのランディングページの「学習」タブに、Adobe Analyticsから CJA への移行に重点を置いたコンテンツなど、CJA に固有のコンテンツが含まれるようになりました。<p>「学習」タブでは、さらに次の機能強化も利用できます。</p><ul><li>1 つのページにより多くの学習コンテンツを表示し、ナビゲーションを改善するデザインを改善しました。</li><li>エクスペリエンスレベル（初級、中級、上級）で学習コンテンツをパーソナライズする機能</li></ul><p>以前は、CJA の「学習」タブには、Adobe Analyticsの「学習」タブと同じ情報が含まれていました。</p> [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 該当なし | 2023年6月30日（PT） |
 | **Analysis Workspace でのコンポーネントの並べ替え** | <p>新しい「並べ替え」オプションは、Analysis Workspace の左側のパネルまたはデータ要素でコンポーネントを表示する際に使用できるようになりました。コンポーネントは、推奨（最も一般的に使用されるコンポーネント）、アルファベット順、またはカテゴリ順（タイプ）で並べ替えることができます。</p><p>以前は、コンポーネントを検索またはフィルタリングすることしかできませんでした。[詳細情報](/help/components/overview.md)</p> | 該当なし | 未定 |
+| **フリーフォームテーブルからの動的ディメンションを含む行の削除** | Analysis Workspace のフリーフォームテーブルで、「x」アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除できるようになりました。その際、「常に項目を除外」フィルタールールが自動的に適用されます。<p>以前は、動的ディメンションを含む行を削除する唯一の方法は、フィルターダイアログでルールを手動で作成することでした。[詳細情報](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 該当なし | 2023年5月17日（PT） |
+| **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspace の各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。[詳細情報](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 該当なし | 2023年5月17日（PT） |
+| **ディープリンク（モバイルアプリ）** | ユーザーが、アプリ内のスコアカードプロジェクトに直接アクセスできるスコアカードへのリンクを送信できるようにします。これにより、プロジェクトの共有がさらに簡単になり、技術に詳しくないオーディエンスからのエンゲージメントを高めることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | 該当なし | 2023年5月17日（PT） |
+| **インテリジェントキャプション** | 自然言語の要約を使用してユーザーに語りを強化 [!UICONTROL 線] ビジュアライゼーション。 [詳細情報](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023年5月17日（PT） | 2023年6月1日（PT） |
 
 {style="table-layout:auto"}
 
