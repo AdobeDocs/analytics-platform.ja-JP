@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 92%
@@ -51,7 +51,7 @@ ht-degree: 92%
 
 ![アプリケーションのスタートアップスクリーン](assets/welcome.png)
 
-## ダッシュボードの使用
+## ダッシュボードの使用 {#use-dashboards}
 
 ダッシュボードを使用するには：
 
@@ -89,6 +89,7 @@ ht-degree: 92%
       * 1 日 - 時間ごとの傾向を表示
       * 2 日以上 1 年未満 - 毎日の傾向を表示。
       * 1 年以上 - 毎週の傾向を表示。
+
    * 値の変化パーセントの式は、（指標合計（現在の日付範囲） - 指標合計（比較日付範囲））÷指標合計（比較日付範囲）です。
 
    * 画面をプルダウンして、スコアカードを更新できます。

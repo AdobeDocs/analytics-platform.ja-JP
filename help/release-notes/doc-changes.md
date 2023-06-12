@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 86%
@@ -40,7 +40,7 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | フィルターをディメンションとして使用する方法に関するビデオ | フィルターをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[フィルターの作成](/help/components/filters/create-filters.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
 | フィルタードキュメント | [フィルタービルダー](/help/components/filters/filter-builder.md)を使用する方法に関する記事を追加しました。 <p>[フィルターの作成](/help/components/filters/create-filters.md)と[フィルターの概要](/help/components/filters/filters-overview.md)のドキュメントを合理化しました。</p> |
 | 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=ja#non-randomized)に関する節を追加しました。 |
-| プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを合理化し、重複した情報を削除しました。アドホックフィルターの作成手順は、[クイックフィルターの作成](/help/components/filters/quick-filters.md)手順と統合しました。 |
+| プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックフィルターの作成手順は、[クイックフィルターの作成](/help/components/filters/quick-filters.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [CJA での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
 | モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |
