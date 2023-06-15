@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の CJA リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 5bc7eee212c16edc0066d498f26df56bfe8165d7
+source-git-commit: 13ea4060bd5ca0a4b5b749b6e104edea26248a02
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 61%
@@ -12,7 +12,7 @@ ht-degree: 61%
 
 # 最新の Customer Journey Analytics（CJA）リリースノート（2023年6月）
 
-**最終更新日**：2023年6月9日（PT）
+**最終更新日**：2023年6月15日（PT）
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -22,7 +22,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | ----------- | ---------- | ------- | ---- |
 | **インテリジェントキャプション** | 自然言語の要約を使用してユーザーに語りを強化 [!UICONTROL 線] ビジュアライゼーション。 [詳細情報](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023年5月17日（PT） | 2023年6月1日（PT） |
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=ja#company-preferences)</p> | 2023年5月3日（PT） | 2023年6月6日（PT） |
-| **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することもできます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年6月21日（PT） |
+| **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することもできます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年6月14日（PT） |
 | **CJA データビューへの PowerBI および Tableau アクセス** | Customer Journey Analytics(CJA)SQL コネクタを使用すると、CJA で定義したデータビューに SQL からアクセスできます。 Power BI、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツールに詳しいデータエンジニアやアナリストは、CJA ユーザーがAnalysis Workspaceプロジェクトで使用したのと同じデータビューに基づいて、レポートやダッシュボードを作成できます。 [詳細情報](/help/data-views/sql-connector.md) |  | 2023年6月30日（PT） |
 | **Experience Edge 地域検索** | データストリームに対して Experience Edge 地域ルックアップが有効になると、CJA の位置情報データを使用してレポートを作成できるようになります。 |  | 2023年6月30日（PT） |
 | **プロファイルおよび参照データに対する参照のサポートが拡張されました。** | 参照データセットを、イベントデータセットだけでなく、プロファイルおよび参照データセットに追加できます。 | 2023年6月21日（PT） | 2023年7月12日（PT） |
