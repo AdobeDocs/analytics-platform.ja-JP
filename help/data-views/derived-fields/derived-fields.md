@@ -3,11 +3,9 @@ title: 派生フィールド
 description: 派生フィールドは、使用可能な関数や関数テンプレートのセットを介して、スキーマフィールドや標準コンポーネントのレポート時間操作を指定します。
 solution: Customer Journey Analytics
 feature: Data Views
-hide: true
-hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
+source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 9%
@@ -16,8 +14,6 @@ ht-degree: 9%
 
 
 # 派生フィールド
-
-{{release-limited-testing}}
 
 派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
@@ -289,7 +285,7 @@ ht-degree: 9%
 |:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
-| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 3 | | `https://site.com/?cid=em_12345678` | [!DNL Email] |
 | 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
 | 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
 | 6 | `https://google.com` |  | [!DNL Natural Search] |
@@ -342,7 +338,7 @@ ht-degree: 9%
 | [!DNL search p13n_no] | [!DNL search] |
 | [!DNL search p13n_yes] | [!DNL search] |
 | [!DNL search refine p13n_no] | [!DNL search] |
-| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search refine p13n_yes] | [!DNL search] |
 | [!DNL search redirect p13n_yes] | [!DNL search] |
 | [!DNL search-redirect] | [!DNL search] |
 
@@ -764,5 +760,5 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 
 派生フィールドの一般的な機能には、次の制限が適用されます。
 
-- 派生フィールドのルールを定義する場合、最大 100 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
+- 派生フィールドのルールを定義する場合、最大 10 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
 - CJA 接続あたり最大 100 個の派生フィールドを持つことができます。
