@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 + データ取り込み {#cja-data-ingestion}
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
-   + 取り込みと使用のクイックスタートガイド {#ingest-use-guides}
+   + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [Adobe Experience Platform Web SDK および Edge ネットワーク](../data-ingestion/aepwebsdk.md)
       + [バッチデータ](../data-ingestion/batch.md)
@@ -81,7 +81,7 @@ ht-degree: 95%
       + [部分文字列](../data-views/component-settings/substring.md)
       + [値のバケット化](../data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
-   + [SQL コネクタ](../data-views/sql-connector.md)
+   + [SQL コネクター](../data-views/sql-connector.md)
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
 
@@ -252,7 +252,7 @@ ht-degree: 95%
          + [計算指標のタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [計算指標マネージャ](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [計算指標マネージャー](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
@@ -297,7 +297,7 @@ ht-degree: 95%
    + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
    + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
    + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
-   + [決定管理データと CJA の統合](/help/integrations/ajo-od.md)
+   + [意思決定管理データと CJA の統合](/help/integrations/ajo-od.md)
    + [顧客 AI と CJA の統合](/help/integrations/customer-ai.md)
 
 + データガバナンス {#cja-privacy}
@@ -339,7 +339,7 @@ ht-degree: 95%
    + [アクセス制御](../admin/cja-access-control.md)
    + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
-   + [CJA のパフォーマンスの最適化](../admin/optimizing-performance.md)
+   + [CJA のパフォーマンスを最適化](../admin/optimizing-performance.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
