@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '2086'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -20,21 +20,21 @@ CJA ドキュメントの開始以降に、次のアップデートが行われ�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年6月** | |
-| CJA データビューへの PowerBI および Tableau アクセス | Customer Journey Analytics(CJA)SQL コネクタを使用すると、CJA で定義したデータビューに SQL からアクセスできます。 [詳細情報](/help/data-views/sql-connector.md) |
-| Adobe Journey Optimizerデータビュー | CJA 管理者は、「AJO Data view (Sandbox-name)」と呼ばれる、CJA の追加のデータビューにアクセスできます。 [詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |
+| CJA データビューへの PowerBI および Tableau のアクセス | Customer Journey Analytics（CJA）SQL コネクタを使用すると、CJA で定義したデータ表示への SQL アクセスが可能になります。[詳細情報](/help/data-views/sql-connector.md) |
+| Adobe Journey Optimizer データ表示 | CJA 管理者には、「AJO データ表示（サンドボックス名）」と呼ばれる CJA のいくつかの追加データ表示へのアクセス権があります。[詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=ja)。 |
 | 通貨換算 | 次のドキュメントを更新しました： [通貨コンバージョン](../data-views/component-settings/format.md#currency) サポート。 |
-| 計算指標の更新 | 計算指標のドキュメントを現在の CJA の機能と整合させるために、次の更新がおこなわれました。 <ul><li>次のリストを更新しました： [デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md) CJA で使用可能</li><li>様々な計算指標に関する記事のスクリーンショットと手順を更新しました。 </li></ul> |
+| 計算指標の更新 | 現在の CJA 機能と整合させるために、計算指標のドキュメントに次の更新を行いました。 <ul><li>CJA で利用可能な[デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)のリストを更新しました</li><li>様々な計算指標に関する記事のスクリーンショットと手順を更新しました </li></ul> |
 | **2023年5月** | |
-| ディープリンク（モバイルアプリ）ドキュメント | ユーザーが、アプリ内のスコアカードプロジェクトに直接アクセスできるスコアカードへのリンクを送信できるようにします。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
-| Report Builderの「セルからデータビューを選択」に関するドキュメント | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) |
-| Analytics ダッシュボードアプリ（モバイルアプリ）用の更新されたホーム画面のドキュメント | 新しく更新されたホーム画面では、すべてのスコアカードを 1 つの統合されたスコアカードリストで表示できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
-| 最適化の更新 | 次に関する記事を更新しました： [CJA のパフォーマンスの最適化](/help/admin/optimizing-performance.md) |
+| ディープリンク（モバイルアプリ）ドキュメント | ユーザーが、アプリ内のスコアカードプロジェクトに直接アクセスできるスコアカードへのリンクを送信できるようにします。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#share-scorecards-using-a-shareable-link) |
+| Report Builder の「セルからデータビューを選択」に関するドキュメント | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) |
+| Analytics ダッシュボードアプリ（モバイルアプリ）の更新されたホーム画面に関するドキュメント | 新しく更新されたホーム画面では、すべてのスコアカードを 1 つの統合されたスコアカードリストで表示できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html?lang=ja#use-dashboards) |
+| 最適化の更新 | [CJA のパフォーマンスの最適化](/help/admin/optimizing-performance.md)に関する記事を更新しました |
 | Analysis Workspace の概要 | より一般的な概要情報と関連コンテンツへのリンクを含むように、[Analysis Workspace の概要](/help/analysis-workspace/home.md)の概要を更新しました。 |
 | プロジェクトの作成 | Analysis Workspace で[プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)を行う方法を詳しく説明する新しい記事を作成しました。 |
-| 左側のパネルでのコンポーネントの並べ替え | 左側のパネルでのコンポーネントのリストの並べ替えに関する情報を追加しました。詳しくは、 [コンポーネントの概要](/help/components/overview.md). |
-| フリーフォームテーブルからの動的ディメンションを含む行の削除 | x アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除する方法に関する情報を追加しました。 詳しくは、 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
-| パネル内にビジュアライゼーションを追加するボタン | Analysis Workspaceの各パネルの下部にある新しいボタンに関する情報を追加しました。このボタンを使用すると、ビジュアライゼーションをすばやく追加できます。 詳しくは、「パネルへのビジュアライゼーションの追加」の節を参照してください。 [ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
-| インテリジェントキャプションドキュメント | ユーザーに対するストーリーテリングの強化 [自然言語要約](/help/analysis-workspace/visualizations/intelligent-captions.md) 行のビジュアライゼーション。 |
+| 左側のパネルでのコンポーネントの並べ替え | 左側のパネルでのコンポーネントのリストの並べ替えに関する情報を追加しました。詳しくは、[コンポーネントの概要](/help/components/overview.md)の「コンポーネントリストの検索、フィルタリング、並べ替え」の節を参照してください。 |
+| フリーフォームテーブルからの動的ディメンションを含む行の削除 | 「x」アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除する方法に関する情報を追加しました。[テーブルのフィルタリングと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)の「テーブルから特定の行をすばやく除外する」の節を参照してください。 |
+| パネル内にビジュアライゼーションを追加するボタン | Analysis Workspace の各パネルの下部にある、ビジュアライゼーションをすばやく追加できる新しいボタンに関する情報を追加しました。詳しくは、[ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の「パネルへのビジュアライゼーションの追加」の節を参照してください。 |
+| インテリジェントキャプションドキュメント | 折れ線グラフのビジュアライゼーションの[自然言語による要約](/help/analysis-workspace/visualizations/intelligent-captions.md)を使用して、ユーザー向けのストーリーテリングを強化します。 |
 | 派生フィールド | 次のドキュメントを追加しました。 [派生フィールド](../data-views/derived-fields/derived-fields.md) 機能。 |
 | **2023年4月** |  |
 | フィルターをディメンションとして使用する方法に関するビデオ | フィルターをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[フィルターの作成](/help/components/filters/create-filters.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
