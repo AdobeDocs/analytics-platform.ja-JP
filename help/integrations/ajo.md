@@ -2,10 +2,10 @@
 title: Adobe Journey Optimizer（AJO）と Customer Journey Analytics（CJA）の統合
 description: AJO で生成したデータを取り込み、CJA 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 84%
+source-wordcount: '864'
+ht-degree: 73%
 
 ---
 
@@ -64,6 +64,7 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 | 処理の名前 | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | コンポーネントタイプ：ディメンション<br>コンテキストラベル：実験バリアント |
 | メール配信失敗の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | コンポーネントタイプ：ディメンション |
 | メール配信除外の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | コンポーネントタイプ：ディメンション |
+| 要素ラベル | `_experience.decisioning.propositionAction.label` | コンポーネントタイプ：ディメンション |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 | 送信数 | メールプロバイダーが受け入れたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`sent` と等しい |
 | スパム報告件数 | スパム報告の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`spam_complaint` と等しい |
 | 登録解除 | 登録解除の数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
+| エッジ送信 | エッジネットワークが Web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.send` |
+| インバウンドのディスプレイ | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.display` |
+| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.interact` |
+| アプリ内トリガー | 判定エンジンがメッセージの表示を提案した回数。 Mobile SDK は、実際の表示数を減らす決定を上書きできます。 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.trigger` |
+| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
