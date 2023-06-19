@@ -3,10 +3,10 @@ description: CJA 実験パネルで A/B テストの結果を分析する方法�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 73%
+source-wordcount: '1855'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 73%
 
 >[!IMPORTANT]
 >
->この時点で Analytics ソースコネクタを介して Adobe Experience Platform に取り込まれた [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ja)（A4T）データは、[!UICONTROL 実験]パネルで分析&#x200B;**できません**。この問題は 2023年に解決される予定です。
+>この時点で [Adobe Analytics for Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T) データ *できません* を実験パネルで分析する必要があります。
 
 ## アクセス制御 {#access}
 
@@ -28,7 +28,7 @@ ht-degree: 73%
 
 ## 手順 1：実験データセットへの接続の作成 {#connection}
 
-推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=ja)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
+推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=ja)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、 **シングル** オブジェクト配列。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
 
 実験データが Adobe Experience Platform に[取り込まれ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)たら、[CJA で 1 つ以上の実験データセットへの接続を作成します](/help/connections/create-connection.md)。
 
@@ -86,9 +86,9 @@ CJA データビューの設定では、管理者はディメンションや指�
 
 ## 手順 5：結果の解釈 {#interpret}
 
-1. **実験は決定的です**：アドビでは、実験レポートを表示するたびに、この時点まで実験に累積したデータを分析し、*少なくとも 1 つ*&#x200B;のバリアントで、常に有効な信頼性が 95％のしきい値を超えると、実験を「決定的」と宣言します（2 アーム以上の場合は、複数の仮説テストを補正するためにボンフェロンニ補正を適用）。
+1. **実験は決定的だ**:Adobeは、実験レポートを表示するたびに、この時点まで実験に累積したデータを分析し、有効な信頼性が 95%のしきい値を超えると、いつでも実験を「最終的」と宣言します。 *少なくとも 1 つ* （Benjamini - Hochberg 補正は、複数の仮説テストのために、2 つ以上の腕がある場合に適用されます）。
 
-2. **最も効果の高いバリアント**：実験が決定的であると宣言された場合、コンバージョン率の最も高いバリアントには、「最もパフォーマンスの高いバリアント」というラベルが付けられます。このバリアントは、コントロールバリアントかベースラインバリアントであり、または常に有効な信頼性が 95％の（ボンフェロンニ補正が適用された）しきい値を超えるバリアントの 1 つである必要があります。
+2. **最も効果の高いバリアント**：実験が決定的であると宣言された場合、コンバージョン率の最も高いバリアントには、「最もパフォーマンスの高いバリアント」というラベルが付けられます。このバリアントは、コントロールバリアントかベースラインバリアントか、95%の有効な信頼のしきい値（Benjamini-Hochberg 修正を適用した場合）を超えるバリアントの 1 つである必要があります。
 
 3. **コンバージョン率**：表示されるコンバージョン率は、成功指標値と標準化指標値の比率です。指標がバイナリ（実験の各単位に対して 1 または 0）でない場合は、1 より大きくなることがあります。
 
