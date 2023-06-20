@@ -1,9 +1,10 @@
 ---
 title: ガイド付き分析に関する FAQ
 description: ガイド付き分析に関するよくある質問 (FAQ) です。
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '162'
 ht-degree: 5%
 
 ---
@@ -16,13 +17,13 @@ ht-degree: 5%
 
 +++**ガイド付き分析は誰でも利用できますか？**
 
-いいえ、ガイド付き分析は、CJA に対する有料のアドオンです。 このアドオンの使用を開始する場合は、Adobeアカウントチームにお問い合わせください。
+いいえ、ガイド付き分析は、Customer Journey Analyticsへの有料アドオンです。 このアドオンの使用を開始する場合は、Adobeアカウントチームにお問い合わせください。
 
 +++
 
 +++**ガイド付き分析を使用するには、どのような実装の変更が必要ですか？**
 
-既に CJA でAnalysis Workspaceを使用している場合、追加の実装変更は必要ありません。 ガイド付き分析では、Analysis Workspaceと同じデータビューおよび接続を使用します。 任意のプロジェクトタイプのオンボーディングと使用のプロセスは、ガイド付き分析を含む、すべての CJA で同じです。
+既にCustomer Journey AnalyticsでAnalysis Workspaceを使用している場合、追加の実装の変更は必要ありません。 ガイド付き分析では、Analysis Workspaceと同じデータビューおよび接続を使用します。 任意のプロジェクトタイプのオンボーディングと使用のプロセスは、ガイド付き分析を含むすべてのCustomer Journey Analyticsで同じです。
 
 +++
 

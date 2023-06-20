@@ -4,10 +4,10 @@ description: Customer Journey Analytics での Google Analytics データに関�
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 92%
+source-wordcount: '684'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Customer Journey Analytics でデータを取得したら、そのデータを�
 
 ## 高度なマーケティングアトリビューションの使用
 
-CJA を使用すると、クロスチャネルデータに対して高度なアトリビューションモデルを使用できます。次の例では、売上高のラストタッチ、ファーストタッチ、U 字型、アルゴリズムアトリビューションを Google Analytics のチャネルグループディメンションに適用した結果の比較を確認できます。
+Customer Journey Analyticsを使用すると、クロスチャネルデータで高度なアトリビューションモデルを使用できます。 次の例では、売上高のラストタッチ、ファーストタッチ、U 字型、アルゴリズムアトリビューションを Google Analytics のチャネルグループディメンションに適用した結果の比較を確認できます。
 
 ![マーケティングアトリビューション](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Web やアプリの売上高に対する Google 広告コンテンツの効果�
 
 ![Google 広告](../assets/google-ad.png)
 
-CJA でデータセットを組み合わせると、この例では、オンライン広告がモバイルアプリで購入した製品に何らかの影響を与えていることがわかります。次のビジュアライゼーションでは、Google 広告から得られるモバイルアプリの売上高が、web だけの売上高に比べて 14,000～15,000 ドル増加していることを示しています。
+Customer Journey Analyticsでデータセットを組み合わせると、この例では、オンライン広告がモバイルアプリで購入した製品に何らかの影響を与えていたことを確認できます。 次のビジュアライゼーションでは、Google 広告から得られるモバイルアプリの売上高が、web だけの売上高に比べて 14,000～15,000 ドル増加していることを示しています。
 
 ![Google 広告 2](../assets/google-ad2.png)

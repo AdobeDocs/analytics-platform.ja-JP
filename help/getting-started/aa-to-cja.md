@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: ht
-source-wordcount: '1436'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 79%
 
 ---
 
@@ -22,10 +22,10 @@ Customer Journey Analytics にシームレスに移行するために Adobe Anal
 
 ### 1. ID の収集 {#identities}
 
-カスタマージャーニーを理解するうえで最も重要な要素は、各ステップで顧客が誰であるかを把握することです。Customer Journey Analytics の場合、すべてのチャネルとそれに対応するデータに存在する識別子を持つことで、CJA 内で複数のソースを結び付ける（ステッチする）ことができます。
+カスタマージャーニーを理解するうえで最も重要な要素は、各ステップで顧客が誰であるかを把握することです。Customer Journey Analyticsの場合、すべてのチャネルに存在する識別子と対応するデータを持つことで、複数のソースをCustomer Journey Analytics内で結合できます。
 ID の例としては、顧客 ID、アカウント ID、メール ID などがあります。ID（場合によっては複数の ID）に関係なく、ID ごとに次の点を必ず考慮してください。
 
-* ID が存在するか、CJA に取り込むすべてのデータソースに ID を追加できます。
+* ID が存在するか、Customer Journey Analyticsに取り込むすべてのデータソースに追加できます
 * ID はデータの各行に設定されます。
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
@@ -38,17 +38,17 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 グローバルレポートスイートすべてを完全に実装することが現実的ではない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込むには、次の 2 つのオプションがあります。
 
-* 事前にこれらのレポートスイート間で変数の整合性を取っておく。例えば、レポートスイート 1 の eVar1 が[!UICONTROL ページ]を指し、レポートスイート 2 の eVar1 が[!UICONTROL 内部キャンペーン]を指している場合を考えてみましょう。このまま CJA に取り込むと、これらの変数が 1 つの eVar1 ディメンションに混ざってしまうので、わかりにくく不正確なレポートになる可能性があります。
+* 事前にこれらのレポートスイート間で変数の整合性を取っておく。例えば、レポートスイート 1 の eVar1 が[!UICONTROL ページ]を指し、レポートスイート 2 の eVar1 が[!UICONTROL 内部キャンペーン]を指している場合を考えてみましょう。Customer Journey Analyticsに導入すると、これらの変数が 1 つのeVar1 ディメンションに混在し、混乱の原因となり、不正確なレポートが作成される可能性があります。
 
 * [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用して、変数をマッピングします。すべてのレポートスイートで共通の変数設計を使用していれば便利ですが、Experience Platform に新しく導入された[データ準備](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja#mapping)機能を使用する場合、共通の変数設計は不要です。この新機能により、データストリーム（またはプロパティ）レベルでマッピングされた値を使用して変数を参照できます。
 
-[!UICONTROL 超過したユニーク数]または[!UICONTROL 低トラフィック]の問題が原因でグローバルレポートスイートへの移行を避けた場合は、CJA には[ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)がないことを知っておいてください。これにより、任意の一意の値が出現可能でカウントもできます。
+の問題が原因でグローバルレポートスイートへの移行を避けた場合 [!UICONTROL ユニークが超過しました] または [!UICONTROL 低トラフィック]、Customer Journey Analyticsに [ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md). これにより、任意の一意の値が出現可能でカウントもできます。
 
 次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)に関するユースケースを示します。
 
 ### 3.マーケティングチャネルの（再）設定 {#marketing-channels}
 
-従来の Adobe Analytics マーケティングチャネル設定は、CJA では同じようには行われません。これは次の 2 つの理由があります。
+従来のAdobe Analyticsマーケティングチャネルの設定は、Customer Journey Analyticsでは同じように実行されません。 これは次の 2 つの理由があります。
 
 * Adobe Experience Platform に取り込まれる Adobe Analytics データの処理レベル。
 
@@ -58,11 +58,11 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 ### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
 
-Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用については、[Adobe Analytics からのデータの取り込みと CJA での使用](../data-ingestion/analytics.md)方法に関するクイックスタートガイドを参照してください。詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
+Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用について詳しくは、 [Adobe Analyticsからのデータの取り込みとCustomer Journey Analyticsでの使用](../data-ingestion/analytics.md). 詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
 
 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集が進化するにつれて、Adobe Experience Platform Edge Network を使用して [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) か [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) のいずれかに移行する可能性があります。SDK の一般的な実装ではデータが Adobe Analytics に送信されますが、Adobe Experience Platform にデータを直接送信する機会も新たに現れています。その後、Adobe Analytics に送信するデータも維持しながら、Customer Journey Analytics に取り込むことができます。
 
-この方法により、データ収集の可能性が大幅に広がります。フィールド数の制限や、Analytics のようにデータ要素を prop、eVar、イベントにマッピングする必要がなくなりました。CJA [データビュー](/help/data-views/data-views.md)を使用すると、様々なタイプの無制限のスキーマ要素を使用し、それらを複数の方法で表すことができます。Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
+この方法により、データ収集の可能性が大幅に広がります。フィールド数の制限や、Analytics のようにデータ要素を prop、eVar、イベントにマッピングする必要がなくなりました。様々なタイプのスキーマ要素を無制限に使用し、Customer Journey Analyticsを使用して複数の方法で表すことができます [データビュー](/help/data-views/data-views.md). Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
 
 **Experience Platform SDK を使用する場合の利点：**
 
@@ -93,7 +93,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 ### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
-Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼ばれます）および計算指標は、Customer Journey Analytics と互換性がありません。多くの場合は、使用可能な新しいスキーマとデータを使用して、CJA でこれらのコンポーネントを再構築できます。
+Adobe Analyticsセグメント ( [!UICONTROL フィルター] (Customer Journey Analytics内 ) および計算指標は、Customer Journey Analyticsと互換性がありません。 多くの場合、使用可能な新しいスキーマとデータを使用して、Customer Journey Analyticsでこれらのコンポーネントを再構築できます。
 
 ユーザーがシステム間を移行する際に作業ができるだけスムーズに進むように、次のことを行って前もって計画しておきます。
 
@@ -101,7 +101,7 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 2. 定義をドキュメント化する。
 
-3. データに必要なフィールドを特定し、それらを[フィルター](/help/components/filters/filters-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として CJA にレプリケートする。
+3. Customer Journey Analyticsでレプリケートするためにデータで必要なフィールドの識別 [フィルター](/help/components/filters/filters-overview.md) および [計算指標](/help/components/calc-metrics/calc-metr-overview.md).
 
 次に、ガイドとなるビデオをいくつか示します。
 
@@ -111,9 +111,9 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 ### その他の考慮事項
 
-* CJA データビューの機能を利用すると、Customer Journey Analytics 内で指標とディメンションをはるかに柔軟に定義できます。例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/use-cases/data-views/data-views-usecases.md)
+* Customer Journey Analyticsのデータビューの機能を使用すると、Customer Journey Analytics内で指標とディメンションをより柔軟に定義できます。 例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/use-cases/data-views/data-views-usecases.md)
 
-* Adobe Analytics でカスタムカレンダーを定義した場合、CJA 内でも同様の[カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md)を使用できます。カレンダーが正しく定義されていることを確認してください。
+* Adobe Analyticsでカスタムカレンダーを定義した場合は、同様のカスタムカレンダーを使用できます [カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md) Customer Journey Analytics内 カレンダーが正しく定義されていることを確認してください。
 
 * Customer Journey Analytics では、カスタム訪問／セッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。この機能は、モバイルデータセットで特に役に立つ可能性があります。
 
@@ -121,4 +121,4 @@ Adobe Analytics セグメント（CJA では[!UICONTROL フィルター]と呼�
 
 ## 次の手順
 
-CJA に移行した後、データの不一致に気付いた場合は、元の Adobe Analytics データと、現在 Customer Journey Analytics にある Adobe Analytics データを比較できます。[詳細情報](/help/troubleshooting/compare.md)
+Customer Journey Analyticsに移行した後、データの相違に気付いた場合、元のAdobe Analyticsデータと、Customer Journey Analytics中のAdobe Analyticsデータを比較できます。 [詳細情報](/help/troubleshooting/compare.md)

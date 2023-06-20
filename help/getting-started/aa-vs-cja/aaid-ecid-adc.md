@@ -2,10 +2,10 @@
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
 description: Analytics ソースコネクタによる Adobe Analytics ID フィールドの対処方法を説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -50,6 +50,6 @@ identityMap 内：
 * ECID が存在する場合、イベントのプライマリ ID としてマークされます。この場合、AAID は、前述のように ECID に基づいている可能性があることに注意してください。それ以外の場合、AAID は、イベントのプライマリ ID としてマークされます。
 * AACUSTOMID は、イベントのプライマリ ID としてマークされることはありません。ただし、AACUSTOMID が存在する場合、AAID は、前述のように、AACUSTOMID に基づきます。
 
-## CJA とプライマリ ID
+## Customer Journey AnalyticsとプライマリID
 
-CJA に関する限り、プライマリ ID の定義は、プライマリ ID を人物 ID として使用することに決定している場合にのみ、重要です。ただし、これは必須ではありません。一部の他の ID 列を人物 ID として選択することできます。
+Customer Journey Analyticsに関しては、プライマリID をユーザー ID として使用する場合にのみ、プライマリID の定義が重要です。 ただし、これは必須ではありません。一部の他の ID 列を人物 ID として選択することできます。

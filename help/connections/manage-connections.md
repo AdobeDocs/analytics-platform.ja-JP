@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics での接続の管理方法
-description: Customer Journey Analytics（CJA）で Experience Platform データセットへの接続を管理する方法について説明します。
+description: Customer Journey Analytics(Customer Journey Analytics) でExperience Platformデータセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 99%
+source-wordcount: '1813'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 * **接続データセットと取り込みプロセスのステータス**&#x200B;を確認できます。このステータスチェックを使用すると、データが使用可能になったタイミングを把握して、Analysis Workspace に移動して分析を開始できます。
 
-* これにより、設定ミスに起因する&#x200B;**データの相違を識別**&#x200B;できます。欠落している行があるか。ある場合、欠落している行とその理由は何か。接続の設定の誤りが原因で CJA のデータが欠落したのか。
+* これにより、設定ミスに起因する&#x200B;**データの相違を識別**&#x200B;できます。欠落している行があるか。ある場合、欠落している行とその理由は何か。接続の構成を誤っておき、Customer Journey Analyticsにデータが欠落している原因を特定したか。
 
 次に、新しい接続マネージャーに関するビデオを示します。
 

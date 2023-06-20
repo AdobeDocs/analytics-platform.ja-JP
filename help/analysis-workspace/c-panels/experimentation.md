@@ -1,12 +1,12 @@
 ---
-description: CJA 実験パネルで A/B テストの結果を分析する方法を説明します。
+description: 実験パネルで A/B テストの結果を分析する方法についてCustomer Journey Analyticsします。
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 67%
+source-wordcount: '1870'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 ## アクセス制御 {#access}
 
-実験パネルは、すべての Customer Journey Analytics（CJA）ユーザーが使用できます。 管理者権限やその他の権限は必要ありません。 ただし、設定（以下の手順 1 および 2）では、管理者のみが実行できる操作が必要です。
+実験パネルは、すべてのCustomer Journey Analyticsユーザーが使用できます。 管理者権限やその他の権限は必要ありません。 ただし、設定（以下の手順 1 および 2）では、管理者のみが実行できる操作が必要です。
 
 ## 計算指標の新しい関数 {#functions}
 
@@ -30,11 +30,11 @@ ht-degree: 67%
 
 推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=ja)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、 **シングル** オブジェクト配列。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
 
-実験データが Adobe Experience Platform に[取り込まれ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)たら、[CJA で 1 つ以上の実験データセットへの接続を作成します](/help/connections/create-connection.md)。
+実験データが [取得済み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) Adobe Experience Platformに [接続をCustomer Journey Analytics](/help/connections/create-connection.md) を 1 つ以上の実験データセットに追加します。
 
 ## 手順 2：データビューでのコンテキストラベルの追加 {#contect-labels}
 
-CJA データビューの設定では、管理者はディメンションや指標に[コンテキストラベル](/help/data-views/component-settings/overview.md)をディメンションや指標に追加し、目的に合わせて[!UICONTROL 実験]パネルなどの CJA サービスでこれらのラベルを使用できます。実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
+Customer Journey Analyticsのデータビュー設定で、管理者は [コンテキストラベル](/help/data-views/component-settings/overview.md) を次のようなディメンションまたは指標やCustomer Journey Analyticsサービスに追加 [!UICONTROL 実験] パネルでは、これらのラベルを使用してラベルを作成できます。 実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
 
 * [!UICONTROL 実験的な実験]
 * [!UICONTROL 実験バリアント]
@@ -47,12 +47,12 @@ CJA データビューの設定では、管理者はディメンションや指�
 
 ## 手順 3：実験パネルの設定 {#configure}
 
-1. CJA Workspace で、実験パネルをプロジェクトにドラッグします。
+1. Experimentation Workspace で、Experimentation パネルをプロジェクトにドラッグします。
 
 ![実験パネル](assets/experiment.png)
 
 >[!IMPORTANT]
->CJA データビューで必要な設定が完了していない場合は、先に進む前に「[!UICONTROL データビューで実験ディメンションとバリアントディメンションを設定してください]」というメッセージが表示されます。
+>Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、次のメッセージが表示されます。&quot;[!UICONTROL データビューで実験ディメンションとバリアントディメンションを設定してください]&quot;.
 
 1. パネル入力設定を行います。
 
@@ -62,7 +62,7 @@ CJA データビューの設定では、管理者はディメンションや指�
    | **[!UICONTROL コントロールバリアント]** | エンドユーザーのエクスペリエンスにおいて、より優れた代替策を特定するために比較する、複数の選択肢の 1 つです。1 つのバリアントをコントロールとして選択する必要があり、1 つのバリアントのみがコントロールバリアントと見なされます。 この設定には、データ ビューで&#x200B;**[!UICONTROL バリアント]**&#x200B;ラベルが付けられたディメンションが事前に入力されています。 この設定により、この実験に関連付けられているバリアントデータを取得します。 |
    | **[!UICONTROL 成功指標]** | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の「最もパフォーマンスの高いバリアント」として宣言されます。 最大 5 つの指標を追加できます。 |
    | **[!UICONTROL 指標の標準化]** | テストが実行される基準（[!UICONTROL 人]、[!UICONTROL セッション]または[!UICONTROL イベント]）。例えば、テストでは、いくつかのバリエーションのコンバージョン率を比較できます。**[!UICONTROL コンバージョン率]**&#x200B;は、**[!UICONTROL セッションあたりのコンバージョン数]**&#x200B;または **[!UICONTROL 1 人あたりのコンバージョン数]**&#x200B;として計算されます。 |
-   | **[!UICONTROL 日付範囲]** | 日付範囲は、選択した実験に対して CJA で受け取った最初のイベントに基づいて、自動的に設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
+   | **[!UICONTROL 日付範囲]** | 日付範囲は、選択した実験で最初に受け取ったイベントに基づいて、Customer Journey Analyticsに自動的に設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -110,7 +110,7 @@ CJA データビューの設定では、管理者はディメンションや指�
 
 ## 非ランダム化ディメンションの解釈 {#non-randomized}
 
-CJA を使用すると、アナリストは、任意のディメンションを「実験」として選択できます。 しかし、実験として選択された次元がランダム化された個人の次元ではない分析を、どのように解釈するのか。
+Customer Journey Analyticsを使用すると、アナリストは、任意のディメンションを「実験」として選択できます。 しかし、実験として選択された次元がランダム化された個人の次元ではない分析を、どのように解釈するのか。
 
 例えば、ある人に表示される広告について考えます。 「ad A」の代わりに「ad B」を表示する場合は、一部の指標（平均売上高など）の変化を測定したい場合があります。 広告 A の代わりに広告 B を表示する原因効果は、マーケティングの決定に到達する上で最も重要です。 この因果関係は、広告 A の表示の現状を広告 B の表示の代替戦略に置き換えると、母集団全体に対する平均売上高として測定できる。
 

@@ -4,9 +4,9 @@ description: ディメンションが空の場合の処理方法を決定しま�
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '247'
 ht-degree: 91%
 
 ---
@@ -30,4 +30,4 @@ ht-degree: 91%
 
 ## ブログ投稿
 
-関連するブログ投稿を以下に示します。 [CJA での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+関連するブログ投稿を以下に示します。 [Customer Journey Analyticsでの「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

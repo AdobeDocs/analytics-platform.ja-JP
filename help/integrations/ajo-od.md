@@ -1,21 +1,22 @@
 ---
-title: Adobe Journey Optimizer Decision Management とCustomer Journey Analytics(CJA) の統合
+title: Adobe Journey Optimizer Decision Management とAdobe Customer Journey Analyticsの統合
 description: Adobe Journey Optimizer Decision Management で生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
-source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
+exl-id: fde45264-46cf-4c68-9872-7fb739748f21
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 19%
+source-wordcount: '749'
+ht-degree: 20%
 
 ---
 
-# 決定管理とCustomer Journey Analyticsの統合
+# 決定管理とAdobe Customer Journey Analyticsの統合
 
 
 Adobe Journey Optimizer [決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) は、マーケティングオファーの一元化されたライブラリと、Adobe Experience Platformが作成するリッチなリアルタイムプロファイルにルールと制約を適用する決定エンジンを使用して、適切なタイミングで顧客に適切なオファーを送信しやすくします。
 
-判定管理は、Adobe Journey Optimizer(AJO) の一部であり、統合されています。 また、AJO で定義されたジャーニーやキャンペーンとは独立して、豊富な [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) サポート。
+決定管理は、Adobe Journey Optimizerの一部で、と統合されています。 また、Adobe Journey Optimizerで定義されたジャーニーやキャンペーンとは独立して、豊富な [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) サポート。
 
-次の手順を実行すると、決定管理で生成されたデータをインポートして、Customer Journey Analytics(CJA) での高度な分析を実行できます。
+次の手順を実行すると、決定管理で生成されたデータをインポートして、Customer Journey Analyticsの高度な分析を実行できます。
 
 ## 決定管理からAdobe Experience Platformへのデータの送信
 
@@ -30,20 +31,20 @@ Adobe Experience Platformは、中央のデータソースとして機能し、�
 | データセット | データセットタイプ | 接続設定 | 説明 |
 | --- | --- | --- | --- |
 | ODE DecisonEvents - _サンドボックス_ 判定 | イベント | ユーザー ID: `IdentityMap` | 決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_ は、特定のサンドボックス名を参照します。 |
-| AJO メッセージフィードバックイベントデータセット | イベント | ユーザー ID: `IdentityMap` | メッセージ配信イベントを含みます。 |
-| AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 電子メールトラッキングイベントが含まれます。 |
-| AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | プッシュトラッキングイベントが含まれます。 |
-| AJO エンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての AJO イベントデータにジャーニーとキャンペーンのメタデータを関連付ける分類が含まれます。 |
+| Adobe Journey Optimizer Message Feedback イベントデータセット | イベント | ユーザー ID: `IdentityMap` | メッセージ配信イベントを含みます。 |
+| Adobe Journey Optimizer E メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 電子メールトラッキングイベントが含まれます。 |
+| Adobe Journey Optimizerプッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | プッシュトラッキングイベントが含まれます。 |
+| Adobe Journey Optimizerエンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべてのAdobe Journey Optimizerイベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれます。 |
 
 {style="table-layout:auto"}
 
 ## データレイヤーの作成
 
-接続を作成した後、1 つ以上の [データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja) :CJA で使用できる目的のディメンションと指標を設定します。
+接続を作成したら、1 つ以上の[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
 >[!NOTE]
 >
->AJO と CJA の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>Adobe Journey OptimizerとCustomer Journey Analyticsのデータの相違は、通常、1 ～ 2 %未満です。 過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 ### ディメンションの設定
 

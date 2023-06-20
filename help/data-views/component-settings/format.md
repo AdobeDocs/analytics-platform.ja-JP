@@ -4,9 +4,9 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 32%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 32%
 
 指標の通貨の換算を有効にするには、次の手順に従います。
 
-- 通貨指標を含む各イベントの通貨コードディメンションを保持する 1 つ以上のイベントデータセットを含むように CJA 接続を設定します。 その通貨コードディメンションは、 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 通貨を表すための標準。 例えば、$の場合は USD、€の場合は EUR、£の場合は GBP です。
+- 通貨Customer Journey Analyticsを含む各イベントの通貨コードディメンションを保持する 1 つ以上のイベントデータセットを含むように通貨接続を設定します。 その通貨コードディメンションは、 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 通貨を表すための標準。 例えば、$の場合は USD、€の場合は EUR、£の場合は GBP です。
 
 - （オプションで） [!UICONTROL 通貨コード] データセットで使用できる通貨コードを定義する 1 つ以上のディメンションのコンテキストラベル。
 

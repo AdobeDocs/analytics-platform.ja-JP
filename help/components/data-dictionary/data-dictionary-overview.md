@@ -4,9 +4,9 @@ title: データ要素の概要
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 67%
 
 ---
@@ -49,9 +49,9 @@ Analytics 管理者がデータ要素を使用する方法の一部を以下に�
 
 * コンポーネントの説明を Analysis Workspace で直接更新します。データディクショナリ内のコンポーネントの説明に対する更新は、データビューに反映されます。
 
-   同様に、データビュー内のコンポーネントの説明に対する更新は、Analysis Workspaceにも反映されます。
+  同様に、データビュー内のコンポーネントの説明に対する更新は、Analysis Workspaceにも反映されます。
 
-   Analysis Workspaceまたはデータビューでコンポーネントの説明を追加する方法について詳しくは、 [コンポーネントの説明を追加](/help/components/add-component-descriptions.md).
+  Analysis Workspaceまたはデータビューでコンポーネントの説明を追加する方法について詳しくは、 [コンポーネントの説明を追加](/help/components/add-component-descriptions.md).
 
 ## データ要素へのアクセス
 
@@ -59,12 +59,12 @@ Analysis Workspace 内で、次のいずれかの方法でデータ要素にア�
 
 * 左側のパネルの「**データ要素**」アイコンから。
 
-   ![左側のパネルの「データ要素」アイコン](assets/data-dictionary-access-icon.png)
+  ![左側のパネルの「データ要素」アイコン](assets/data-dictionary-access-icon.png)
 
 * コンポーネントの情報ポップオーバー内の「**データ要素**」アイコンから。
 
-   ![情報ポップオーバー内の「データ要素」アイコン](assets/data-dictionary-access-infopopover.png)
-   <!--update screenshot; this was taken from a mock-->
+  ![情報ポップオーバー内の「データ要素」アイコン](assets/data-dictionary-access-infopopover.png)
+  <!--update screenshot; this was taken from a mock-->
 
 * [!UICONTROL **ヘルプ**]／[!UICONTROL **データ要素**]&#x200B;メニューから。
 
@@ -74,7 +74,7 @@ Analysis Workspace 内で、次のいずれかの方法でデータ要素にア�
 
 Customer Journey Analytics管理者は、組織の健全なデータディクショナリを維持する責任を負います。詳しくは、 [データ辞書の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-このプロセスの一環として、CJA 管理者は、データディクショナリ内の各コンポーネントに関する情報を編集できます。詳しくは、 [データディクショナリ内のコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+このプロセスの一環として、Customer Journey Analytics管理者は、データディクショナリ内の各コンポーネントに関する情報を編集できます。詳しくは、 [データディクショナリ内のコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## データ要素を移動、最小化または閉じる
 
@@ -84,12 +84,12 @@ Customer Journey Analytics管理者は、組織の健全なデータディクシ
 
 * Analysis Workspace 内の任意の領域にドラッグ
 
-   Analysis Workspace を閉じて再度開いた場合、データ要素ウィンドウは最後に移動した場所に残ります。<!--True?-->
+  Analysis Workspace を閉じて再度開いた場合、データ要素ウィンドウは最後に移動した場所に残ります。<!--True?-->
 
 * 最小化
 
-   最小化すると、データ要素は、Analysis Workspace の右下隅に青いタブとして表示されます。
+  最小化すると、データ要素は、Analysis Workspace の右下隅に青いタブとして表示されます。
 
-   青いタブを選択すると、データ要素が開き、最後に表示していたコンポーネントが表示されます。
+  青いタブを選択すると、データ要素が開き、最後に表示していたコンポーネントが表示されます。
 
 * 閉じる

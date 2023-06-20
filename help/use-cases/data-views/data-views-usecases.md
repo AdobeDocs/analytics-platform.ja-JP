@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 97%
+source-wordcount: '1317'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 ## 2. 整数をディメンションとして使用する {#integers}
 
-以前は、整数は CJA で指標として自動的に扱われていました。現在は、数値（Adobe Analytics のカスタムイベントを含む）をディメンションとして扱うことができます。次に例を示します。
+以前は、整数は指標として自動的にCustomer Journey Analyticsされました。 現在は、数値（Adobe Analytics のカスタムイベントを含む）をディメンションとして扱うことができます。次に例を示します。
 
 1. [!UICONTROL call_length_min] 整数を「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL ディメンション]」セクションにドラッグします。
 
@@ -117,7 +117,7 @@ f. 値として「50」を指定します。
 
 ## 8. 日付と日時の機能の使用 {#date}
 
-Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。CJA データビューで、これらのフィールドがサポートされるようになりました。これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
+Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。Customer Journey Analyticsのデータビューで、これらのフィールドがサポートされるようになりました。 これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
 
 * 日付形式で「**[!UICONTROL 日]**」を「**[!UICONTROL 年、月、日]**」の形式で選択した場合、レポートの出力例は、2022年8月23日となります。
 

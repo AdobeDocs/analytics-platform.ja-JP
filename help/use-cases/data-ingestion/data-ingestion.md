@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) は、Adobe Experience Cloud のお客様が Adobe Experience Platform Edge Network. を通じて Experience Cloud の様々なサービスとやり取りできるようにする、クライアントサイド JavaScript ライブラリです。
 
-1. [タグで AEP Web SDK 拡張機能を設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja)し、web プロパティから Adobe Experience Platform Edge Network を通じて Adobe Experience Cloud にデータを送信します。
+1. [タグでのAdobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja) を使用して、web プロパティからAdobe Experience Platform Edge Network を通じてAdobe Experience Cloudにデータを送信できます。
 1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の[接続](/help/connections/create-connection.md)と[データ表示](/help/data-views/data-views.md)を作成します。
 
 ## バッチ取り込みとストリーミング取り込みによるデータの取り込み

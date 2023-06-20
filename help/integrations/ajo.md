@@ -1,15 +1,15 @@
 ---
-title: Adobe Journey Optimizer（AJO）と Customer Journey Analytics（CJA）の統合
-description: AJO で生成したデータを取り込み、CJA 内で Analysis Workspace を使用して分析します。
+title: Adobe Journey Optimizer と Customer Journey Analytics の統合
+description: Adobe Journey Optimizerで生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 73%
+source-wordcount: '873'
+ht-degree: 68%
 
 ---
 
-# Adobe Journey Optimizer と Customer Journey Analytics の統合
+# Adobe Journey OptimizerとAdobe Customer Journey Analyticsの統合
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=ja) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 
@@ -31,7 +31,7 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 | AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 「 」などの E メールトラッキングイベントが含まれます[!UICONTROL 開封数]&#39;、&#39;[!UICONTROL クリック数]&#39;、&#39;[!UICONTROL 配信停止]&#39;. |
 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 「 」などのプッシュトラッキングイベントが含まれます[!UICONTROL アプリの起動回数]&#39;. |
 | ジャーニーステップイベント | イベント | ユーザー ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに関係したプロファイルを示すイベントが含まれます。 |
-| AJO エンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての AJO イベントデータにジャーニーとキャンペーンのメタデータを関連付ける分類が含まれます。 |
+| AJO エンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべてのAdobe Journey Optimizerイベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれます。 |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 
 >[!NOTE]
 >
->AJO と CJA の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>Adobe Journey OptimizerとCustomer Journey Analyticsのデータの相違は、通常、1 ～ 2 %未満です。 過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
 ### データビューでのディメンションの設定

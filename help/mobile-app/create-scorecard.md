@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 78%
+source-wordcount: '2529'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 78%
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->このページのスコアカードのスクリーンショットは、CJA ではなく、Adobe Analytics UI のものです。UI はほぼ同じです。
+>このページのスコアカードのスクリーンショットは、Customer Journey Analyticsからではなく、Adobe Analytics UI から取得されました。 UI はほぼ同じです。
 
 Adobe Analytics のスコアカードでは、次のように、エグゼクティブユーザー向けに主要データのビジュアライゼーションがタイル化されたレイアウトで表示されます。
 
@@ -76,7 +76,7 @@ Adobe Analytics のスコアカードでは、次のように、エグゼクテ�
 
 ## フィルターの適用 {#filters}
 
-個々のタイルにフィルターを適用するには、左パネルからフィルター（セグメントは CJA ではフィルターです）をドラッグし、タイルの上に直接ドロップします。
+個々のタイルにフィルターを適用するには、左のパネルからフィルター ( セグメントはCustomer Journey Analytics内のフィルター ) をドラッグし、タイルの上に直接ドロップします。
 
 スコアカード内のすべてのタイルにフィルターを適用する場合は、スコアカードの上にタイルをドロップします。 または、日付範囲の下にあるフィルターメニューでフィルターを選択して、フィルターを適用することもできます。あなた [スコアカードのフィルターの構成と適用](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) Adobe Analytics Workspace と同じ方法です。
 
@@ -163,7 +163,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ## タイルのプロパティの表示と設定 {#tiles}
 
-スコアカードビルダーでタイルをクリックすると、右側のパネルに、そのタイルとその詳細スライドに関連付けられているプロパティと特性が表示されます。 このパネルでは、タイルに新しい&#x200B;**タイトル**&#x200B;を提供したり、またはフィルターを適用してタイルを設定したりできます。セグメントは CJA ではフィルターです。
+スコアカードビルダーでタイルをクリックすると、右側のパネルに、そのタイルとその詳細スライドに関連付けられているプロパティと特性が表示されます。 このパネルでは、タイルに新しい&#x200B;**タイトル**&#x200B;を提供したり、またはフィルターを適用してタイルを設定したりできます。セグメントは、Customer Journey Analyticsのフィルターです。
 
 ![プロパティタイル](assets/properties-tile-new.png)
 

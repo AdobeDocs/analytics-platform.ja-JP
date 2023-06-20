@@ -4,10 +4,10 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '810'
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 91%
 
 ディメンション値の持続性を別のディメンションのディメンション値に連結できるドロップダウンリストです。 有効なオプションには、データビューに含まれる他のディメンションが含まれます。
 
-バインディングディメンションの効果的な使用方法の例については、[CJA でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)を参照してください。
+詳しくは、 [Customer Journey Analyticsでのディメンションと指標のバインディングの使用](../../use-cases/data-views/binding-dimensions-metrics.md) 連結寸法の効果的な使用方法の例を示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -88,4 +88,4 @@ ht-degree: 91%
 
 この設定は、オブジェクト配列のバインディングディメンションがコンポーネントよりも低い場合にのみ表示されます。 イベントにバインディング指標が存在する場合、ディメンション値はイベントレベルのディメンションからバインディングディメンションの下位のスキーマレベルにコピーされます。
 
-バインディング指標の効果的な使用方法について詳しくは、[CJA でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)の 2 番目の例を参照してください。
+の 2 つ目の例を参照してください。 [Customer Journey Analyticsでのディメンションと指標のバインディングの使用](../../use-cases/data-views/binding-dimensions-metrics.md) バインディング指標を効果的に使用する方法について詳しくは、を参照してください。

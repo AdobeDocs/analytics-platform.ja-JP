@@ -1,31 +1,31 @@
 ---
-title: AA データと CJA データの比較
+title: Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較
 description: Adobe Analytics データを Customer Journey Analytics のデータと比較する方法を学ぶ
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 94%
+source-wordcount: '906'
+ht-degree: 65%
 
 ---
 
-# Adobe Analytics データと CJA データの比較
+# Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較
 
-組織では CJA を採用する際、Adobe Analytics と CJA の間でデータに違いがあることに気付くことがあります。これは正常なことで、いくつかの理由で発生する場合があります。CJA は、AA のデータに関する制限の一部を改善できるように設計されています。ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念に妨げられることなくユーザーとチームが CJA を使用できるように、それらの違いを診断し、解決することを目的としています。
+組織でCustomer Journey Analyticsを採用しているので、Adobe AnalyticsとCustomer Journey Analyticsの間でデータにいくつかの違いが生じる場合があります。 これは正常なことで、いくつかの理由で発生する場合があります。Customer Journey Analyticsは、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念事項によって妨げられないCustomer Journey Analyticsを、ユーザーとチームが使用できるように、違いの診断と解決に役立つように設計されています。
 
-[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)経由で Adobe Analytics データを AEP に取り込んだあと、このデータセットを使用して CJA 接続を作成したと仮定します。
+Adobe Analyticsデータを [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用してCustomer Journey Analytics接続を作成しました。
 
 ![データフロー](assets/compare.png)
 
-次に、データ表示を作成した後、CJA でこのデータをレポートしながら、Adobe Analytics のレポート結果との不一致に気がつきました。
+次に、データビューを作成し、その後、Customer Journey Analyticsに関するこのデータをレポートする際に、Adobe Analyticsのレポート結果との相違に気がつきました。
 
 ここでは、元の Adobe Analytics データと現在 Customer Journey Analytics にある Adobe Analytics のデータを比較するための手順を示します。
 
 ## 前提条件 
 
-* AEP の Analytics データセットに、調査中の日付範囲のデータが含まれていることを確認します。
+* 調査中の日付範囲のデータがAdobe Experience Platformの Analytics データセットに含まれていることを確認します。
 
 * Analytics で選択したレポートスイートが、Adobe Experience Platform に取り込まれたレポートスイートと一致していることを確認します。
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 1. このプロジェクトを保存して、比較で使用できるようにします。
 
-## 手順 2：結果を CJA の[!UICONTROL タイムスタンプ別の合計レコード数]と比較する
+## 手順 2:結果をと比較する [!UICONTROL タイムスタンプ別の合計レコード数] Customer Journey Analytics
 
 ここで、Analytics の[!UICONTROL 発生件数]と Customer Journey Analytics のタイムスタンプ別合計レコード数を比較します。
 
@@ -47,18 +47,18 @@ Analytics ソースコネクタがドロップしたレコードがない場合�
 
 >[!NOTE]
 >
->これは通常の中間値データセットでのみ機能し、（[クロスチャネル分析](/help/cca/overview.md)経由で）ステッチされたデータセットでは機能しません。比較を行うには、CJA で使用されているユーザー ID のアカウント設定が重要であることに注意してください。特にクロスチャネル分析がオンになっている場合、AA でのレプリケーションは容易でないことがあります。
+>これは通常の中間値データセットでのみ機能し、（[クロスチャネル分析](/help/cca/overview.md)経由で）ステッチされたデータセットでは機能しません。比較を行う際には、Customer Journey Analyticsで使用されるユーザー ID のアカウンティングが重要であることに注意してください。 特にクロスチャネル分析が有効になっている場合は、Adobe Analyticsでのレプリケーションが容易でない場合があります。
 
 1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 
        &quot;&#39;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) as Day, \
+       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}(&#39;), 1, 10) を日として、\
        Count(_id) AS レコード
-       {dataset} から\
+       送信元  {dataset} \
        WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       AND タイムスタンプ&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       AND TIMESTAMP NOT NULL \
-       ENDUSERIDS と ENDUSERIDS の両方を指定します。
-_experience.aaid.id が NULL ではありません\
+       AND タイムスタンプ&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
+       AND TIMESTAMP NOT NULL \
+       ENDUSERIDS と ENDUSERIDS の両方を指定します。{toDate}_experience.aaid.id が NULL ではありません\
        日別にグループ化\
        日別の注文
        
@@ -81,11 +81,11 @@ _experience.aaid.id が NULL ではありません\
 
 1. コネクタによって行がフィルタリングされた場合は、[!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
 
-## AEP から取り込む際にレコードがフィルタリングまたはスキップされる可能性がある理由
+## Adobe Experience Platformからの取り込み中にレコードがフィルターまたはスキップされる可能性がある理由
 
-CJA [接続](/help/connections/create-connection.md) を使用すると、データセットをまたいだ共通のユーザー ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そしてユーザー ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
+Customer Journey Analytics [接続](/help/connections/create-connection.md) を使用すると、データセット全体で共通の個人 ID に基づいて複数のデータセットを取り込み、結合できます。 バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そしてユーザー ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
 
-AEP からデータを取り込む際に、レコードがスキップされる可能性がある理由を次に示します。
+Adobe Experience Platformからデータを取り込む際にレコードがスキップされる可能性がある理由を以下に示します。
 
 * **タイムスタンプがありません** - イベントデータセットにタイムスタンプがない場合、取り込み中、それらのレコードは完全に無視またはスキップされます。
 

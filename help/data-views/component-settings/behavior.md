@@ -4,10 +4,10 @@ description: レポートでのディメンションまたは指標の動作を�
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 94%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 小文字] | 値は同じで大文字と小文字が異なる行の重複を排除します。有効にすると、同じ値を持つディメンションのすべてのインスタンスが小文字としてレポートされます。例えば、文字列ディメンションに `"liverpool"`、`"Liverpool"`、`"LIVERPOOL"` の値がデータに含まれているとします。[!UICONTROL 小文字] が有効になっている場合、3 つの値すべてが `"liverpool"` に結合されます。無効にした場合、3 つの値すべてが異なる値として扱われます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ![大文字と小文字を区別するディメンション](../assets/case-sens-workspace.png)
 
 >[!NOTE]
 >
->ルックアップデータセットディメンションで [!UICONTROL 小文字] を有効にした場合、同じ識別子に対して複数のルックアップ値が存在する可能性があります。この競合が発生した場合、CJA は最初の ASCII 照合値を使用します（大文字の値は小文字の値の前に付きます）。アドビでは、 [!UICONTROL 小文字] が有効になっている場合、同じ値を含むルックアップデータセットの使用はお勧めしません。
+>ルックアップデータセットディメンションで [!UICONTROL 小文字] を有効にした場合、同じ識別子に対して複数のルックアップ値が存在する可能性があります。この競合が発生した場合、Customer Journey Analyticsは最初の ASCII 照合値を使用します（大文字の値は小文字の値よりも優先されます）。 アドビでは、 [!UICONTROL 小文字] が有効になっている場合、同じ値を含むルックアップデータセットの使用はお勧めしません。
 
 ## 指標の動作の設定
 
@@ -39,6 +39,6 @@ ht-degree: 100%
 | [!UICONTROL インスタンスをカウント] | 整数および倍精度スキーマのデータタイプに表示されます。値に関係なく、指標を 1 増やします。任意の値が存在すると、指標が増加します。例えば、列の値が `50` の場合は、指標の値を 1 増やします。 |
 | [!UICONTROL カウントする値] | ブールスキーマデータタイプに表示されます。`true`、`false`またはその両方をカウントすることで、指標の増加を判断できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 異なる動作をする同じイベントデータセット列を使用して、Analysis Workspace で「注文件数」と「売上高」の両方の指標を生成できます。「売上高」データセット列をデータビューに 2 回ドラッグし、1 つを「カウント値」に、もう 1 つを「カウントインスタンス」に設定します。「注文件数」指標はインスタンス、「売上高」指標は値をカウントします。

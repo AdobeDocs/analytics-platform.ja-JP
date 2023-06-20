@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3262'
 ht-degree: 9%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 # 派生フィールド
 
-派生フィールドは、Customer Journey Analytics(CJA) のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
+派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
-派生フィールドを使用すると、CJA 以外の他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
+派生フィールドを使用すると、Customer Journey Analyticsの外部にある他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [データDistiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
 派生フィールドは、 [データビュー](../data-views.md)は、ルールとして定義された一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
@@ -122,7 +122,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->派生フィールドは、CJA の接続レベルで管理されます。 その接続に関連付けられたデータビューの派生フィールドに対して行われた変更は、関連付けられたすべてのデータビューに適用されます。
+>派生フィールドは、接続の接続レベルでCustomer Journey Analyticsで管理されます。 その接続に関連付けられたデータビューの派生フィールドに対して行われた変更は、関連付けられたすべてのデータビューに適用されます。
 
 
 
@@ -461,9 +461,9 @@ ht-degree: 9%
 
 ## 制約
 
-CJA は、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。
+Customer Journey Analyticsは、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。
 
-CJA は、次のデフォルトのコンテナモデルを使用します。
+Customer Journey Analyticsは、次のデフォルトのコンテナモデルを使用します。
 
 <p align="center">
 <img src="./assets/containers.png" width="50%" valign="middle">
@@ -761,4 +761,4 @@ CJA は、次のデフォルトのコンテナモデルを使用します。
 派生フィールドの一般的な機能には、次の制限が適用されます。
 
 - 派生フィールドのルールを定義する場合、最大 10 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
-- CJA 接続あたり最大 100 個の派生フィールドを持つことができます。
+- 1 つのCustomer Journey Analytics接続につき最大 100 個の派生フィールドを指定できます。

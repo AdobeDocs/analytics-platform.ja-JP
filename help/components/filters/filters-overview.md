@@ -2,9 +2,9 @@
 title: フィルターの概要
 description: フィルターの用途と、単純なフィルターの作成方法を理解します。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 34%
 
 ---
@@ -112,7 +112,7 @@ IMS 組織ごとに作成できるフィルターの最大数は 50,000 個で�
 
 ## 標準提供のフィルターテンプレート {#template}
 
-従来の Analytics には、すぐに使用できる多数のテンプレートフィルター（フィルター）と計算指標が付属しています。 その多くは、CJA には適用されず、名前を変更または再作成する必要があります。 その他は、CJA のコンテキスト対応変数のソリューションに依存しています。
+従来の Analytics には、すぐに使用できる多数のテンプレートフィルター（フィルター）と計算指標が付属しています。 その多くは、Customer Journey Analyticsに適用されず、名前を変更または再作成する必要があります。 その他は、Customer Journey Analyticsのコンテキスト対応変数のソリューションに依存しています。
 
 | フィルター名 | 説明 |
 | --- | --- |

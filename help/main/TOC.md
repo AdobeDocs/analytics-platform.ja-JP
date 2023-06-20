@@ -7,19 +7,19 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics ガイド
-user-guide-description: Customer Journey Analytics（CJA）と、Analysis Workspace を Experience Platform のデータと共に使用する方法について説明します。
+user-guide-description: Adobe Customer Journey Analyticsの概要と、Analysis WorkspaceをExperience Platformのデータと共に使用する方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 85%
 
 ---
 
 
-# Customer Journey Analytics ガイド {#using}
+# Adobe Customer Journey Analyticsガイド {#using}
 
-+ [Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analyticsガイド](../getting-started/cja-landing.md)
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
@@ -27,24 +27,24 @@ ht-degree: 100%
    + [2022年リリース](../release-notes/2022.md)
    + [2021年リリース](../release-notes/2021.md)
    + [2020年リリース](../release-notes/2020.md)
-   + [CJA リリース](../release-notes/releases.md)
-   + [CJA ドキュメントのアップデート](../release-notes/doc-changes.md)
+   + [Customer Journey Analyticsリリース](../release-notes/releases.md)
+   + [Customer Journey Analytics ドキュメントのアップデート](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
    + [Customer Journey Analytics の概要](../getting-started/cja-overview.md)
    + [クイックスタートガイド](../getting-started/cja-getting-started.md)
    + [ランディングページ](../getting-started/landing.md)
    + [よくある質問](../getting-started/cja-faq.md)
-   + [CJA と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
+   + [Customer Journey Analytics と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics と Adobe Analytics {#compare-aa-cja}
-   + [Adobe Analytics からの進化 ](../getting-started/aa-to-cja.md)
+   + [Adobe Analytics からの進化](../getting-started/aa-to-cja.md)
    + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
-      + [Adobe Analytics と CJA にまたがるデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Adobe AnalyticsとCustomer Journey Analyticsでのデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [仮想レポート環境とサンドボックス環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -105,6 +105,7 @@ ht-degree: 100%
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
+
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーションの概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -115,18 +116,23 @@ ht-degree: 100%
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+
          + [テーブルのフィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
          + [ワークスペースの合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+
       + コホートテーブル {#cohort-table}
          + [コホート分析とは](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [コホート分析レポートの設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [コホート分析のユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+
       + フォールアウト {#fallout}
          + [フォールアウトの概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [フォールアウトビジュアライゼーションの設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [フォールアウト分析でのフィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+
+
       + フロー {#flow}
          + [フローの概要](../analysis-workspace/visualizations/c-flow/flow.md)
          + [フロービジュアライゼーションの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -147,6 +153,7 @@ ht-degree: 100%
       + [テキスト](../analysis-workspace/visualizations/text.md)
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
       + [ベン図](../analysis-workspace/visualizations/venn.md)
+
    + パネル {#panels}
       + [パネルの概要](../analysis-workspace/c-panels/panels.md)
       + [アトリビューションパネル](../analysis-workspace/c-panels/attribution.md)
@@ -159,6 +166,7 @@ ht-degree: 100%
          + [概要](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [入力と出力の設定](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [よくある質問（FAQ）](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
@@ -167,6 +175,7 @@ ht-degree: 100%
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](../analysis-workspace/curate-share/download-send.md)
       + [プロジェクトのスケジュール](../analysis-workspace/curate-share/t-schedule-report.md)
+
    + 仮想アナリスト {#virtual-analyst}
       + [仮想アナリストの概要](../analysis-workspace/virtual-analyst/overview.md)
       + 異常値検出 {#anomaly-detection}
@@ -182,15 +191,6 @@ ht-degree: 100%
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace のアクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace のロングテール](../analysis-workspace/workspace-faq/long-tail.md)
-
-
-
-
-
-
-
-
-
 
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
@@ -218,15 +218,18 @@ ht-degree: 100%
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
       + [モバイル注釈](../components/annotations/mobile-annotations.md)
+
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
       + [オーディエンス管理](../components/audiences/manage.md)
+
    + ディメンション {#dimensions}
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)
       + [ディメンションの分類](../components/dimensions/t-breakdown-fa.md)
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数が非常に高いディメンション](../components/dimensions/high-cardinality.md)
+
    + [指標](../components/apply-create-metrics.md)
 
    + フィルター {#cja-filters}
@@ -236,6 +239,7 @@ ht-degree: 100%
       + [フィルタービルダー](../components/filters/filter-builder.md)
       + [フィルターの管理](../components/filters/manage-filters.md)
       + [演算子](../components/filters/operators.md)
+
    + 計算指標 {#cja-calcmetrics}
       + [計算指標の概要](../components/calc-metrics/calc-metr-overview.md)
       + 計算指標のワークフロー {#cm-workflow}
@@ -256,23 +260,19 @@ ht-degree: 100%
       + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
+
    + カレンダーと日付範囲 {#cja-date-ranges}
       + [カレンダーと日付範囲の概要](../components/date-ranges/calendar.md)
       + [日付範囲の作成](../components/date-ranges/create.md)
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
+
    + データ要素 {#data-dictionary}
       + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [データ要素の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
-
-
-
-
-
-
 
 + Report Builder {#cja-reportbuilder}
    + [Report Builder の概要](../report-builder/report-buider-overview.md)
@@ -294,11 +294,11 @@ ht-degree: 100%
    + [クロスチャネル分析に関する FAQ](../cca/faq.md)
 
 + アドビの統合 {#integrations}
-   + [アドビソリューションと CJA 概要の統合](/help/integrations/overview.md)
+   + [AdobeソリューションとCustomer Journey Analyticsの概要](/help/integrations/overview.md)
    + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
-   + [Journey Optimizer データと CJA の統合](/help/integrations/ajo.md)
-   + [意思決定管理データと CJA の統合](/help/integrations/ajo-od.md)
-   + [顧客 AI と CJA の統合](/help/integrations/customer-ai.md)
+   + [Journey OptimizerデータとCustomer Journey Analyticsの統合](/help/integrations/ajo.md)
+   + [決定管理データとCustomer Journey Analyticsの統合](/help/integrations/ajo-od.md)
+   + [顧客 AI とCustomer Journey Analyticsの統合](/help/integrations/customer-ai.md)
 
 + データガバナンス {#cja-privacy}
    + [データガバナンス](../privacy/privacy-overview.md)
@@ -309,45 +309,45 @@ ht-degree: 100%
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
 
    + Google Analytics データ {#ga}
-      + [Google Analytics から CJA へのデータ移行の概要](../use-cases/ga/overview.md)
+      + [データを移行からGoogle AnalyticsへCustomer Journey Analyticsの概要](../use-cases/ga/overview.md)
       + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
-      + [CJA での Google Analytics データに関するレポート](../use-cases/ga/report.md)
+      + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
+
    + データ取り込み {#data-ingestion}
-      + [Marketo Engage データの AEP への取り込みと CJA でのレポート](../use-cases/data-ingestion/marketo.md)
-      + [AEP オーディエンスの CJA への取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Marketo EngageデータのAdobe Experience Platformへの取り込みとCustomer Journey Analyticsでのレポート](../use-cases/data-ingestion/marketo.md)
+      + [Adobe Experience PlatformオーディエンスのCustomer Journey Analyticsへの取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
+
    + B2B {#b2b}
       + [アカウントレベルのデータをルックアップデータセットとして追加](../use-cases/b2b/b2b.md)
+
    + クロスチャネルデータ {#cross-channel}
       + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
       + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
+
    + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
+
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
-
-
-
-
-
 
 + 管理 {#cja-admin}
    + [アクセス制御](../admin/cja-access-control.md)
    + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
-   + [CJA のパフォーマンスを最適化](../admin/optimizing-performance.md)
+   + [Customer Journey Analyticsパフォーマンスの最適化](../admin/optimizing-performance.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
 
 + トラブルシューティング {#troubleshooting}
-   + [Adobe Analytics データと CJA データの比較](../troubleshooting/compare.md)
-   + [Real-Time CDP と CJA 間の指標およびオーディエンスメンバーシップカウントの一貫性](../troubleshooting/consistency-rcdp-cja.md)
+   + [Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較](../troubleshooting/compare.md)
+   + [リアルタイム CDP とCustomer Journey Analyticsの間の指標とオーディエンスメンバーシップ数の一貫性](../troubleshooting/consistency-rcdp-cja.md)
 
-+ [CJA の用語集](../getting-started/cja-glossary.md)
++ [Customer Journey Analytics の用語集](../getting-started/cja-glossary.md)
 
-+ [CJA API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey AnalyticsAPI](https://developer.adobe.com/cja-apis/docs/)

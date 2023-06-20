@@ -3,16 +3,16 @@ title: ラボユーザーガイド
 description: Customer Journey Analytics 用のプロトタイププロジェクトのプレビュー
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 90%
 
 ---
 
 # [!UICONTROL ラボ]ユーザーガイド
 
-[!UICONTROL ラボ]を使用すると、初期段階のアイデアのプロトタイピングを高速化できます。お客様の注力により、透過的に開発を促進するツールとプロセスを組み合わせたものです。新しいテクノロジーとの連携、価値ある洞察の発見、将来の機能の開発と優先事項への影響を可能にします。ラボを使用すると、Customer Journey Analytics（CJA）の革新的な機能に早期にアクセスし、自社のビジネス事例やデータの中で将来の機能を評価できます。
+[!UICONTROL ラボ]を使用すると、初期段階のアイデアのプロトタイピングを高速化できます。お客様の注力により、透過的に開発を促進するツールとプロセスを組み合わせたものです。新しいテクノロジーとの連携、価値ある洞察の発見、将来の機能の開発と優先事項への影響を可能にします。ラボを使用すると、Adobe Customer Journey Analyticsの革新的な機能に早期にアクセスし、自社のビジネス事例やデータの中で将来の機能を評価することができます。
 
 ## 要件
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 1. [!UICONTROL Workspace]および[!UICONTROL ラボ]へのアクセス権をまだ持っていない場合は管理者に権限を問い合わせてください。
 
-1. CJA で、「**[!UICONTROL ラボ]**」タブをクリックします。
+1. Customer Journey Analyticsで、 **[!UICONTROL ラボ]** タブをクリックします。
 
 ## プロトタイプの評価
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、メインのプレビューポータルに戻ります。
 
-## CJA ラボのプロトタイプ
+## Customer Journey Analyticsラボのプロトタイプ
 
 * 自然言語インサイトジェネレーター：フリーフォームテーブルで分析する、任意のデータの自然言語の概要を提供します。
 * ビジュアライゼーションレコメンダー：データに合わせてビジュアライゼーションをお勧めします。

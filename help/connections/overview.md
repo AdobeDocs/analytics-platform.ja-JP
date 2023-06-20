@@ -1,13 +1,13 @@
 ---
-title: CJA 接続の概要
+title: Customer Journey Analytics接続の概要
 description: Customer Journey Analytics での接続について説明します。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
-source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
-workflow-type: ht
-source-wordcount: '104'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 必要な権限
 
-CJA 接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) で次の権限が必要です。
+Customer Journey Analytics接続を作成するには、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * データモデリング：ビュースキーマ、スキーマの管理

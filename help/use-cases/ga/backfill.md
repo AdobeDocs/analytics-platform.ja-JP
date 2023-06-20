@@ -1,13 +1,13 @@
 ---
 title: Google Analytics 履歴データの Adobe Experience Platform への取り込み
-description: Customer Journey Analytics（CJA）を利用して Google Analytics データを Adobe Experience Platform に取り込む方法を説明します。
+description: Adobe Customer Journey Analyticsを使用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法について説明します。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '624'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!TIP]
 >
->Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 [結合されたデータセット](/help/connections/combined-dataset.md)を使用して、データセットを CJA に結合できます。
+>Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 データセットは、 [組み合わせデータセット](/help/connections/combined-dataset.md).
 
 選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、データセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
@@ -91,15 +91,15 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 * **`timestamp`**：Experience Platform スキーマ UI で特別な計算フィールドを作成します。 「**[!UICONTROL 計算フィールドを追加]**」をクリックして、次のように `timestamp` 文字列を `date` 関数に含めます。
 
-   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+  `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-   計算フィールドをスキーマのタイムスタンプデータ構造に保存します。
+  計算フィールドをスキーマのタイムスタンプデータ構造に保存します。
 
-   ![タイムスタンプ](../assets/timestamp.png)
+  ![タイムスタンプ](../assets/timestamp.png)
 
-* **`_id`**：このフィールドには値が必要です。どのような値でも構いません。 フィールドに「1」を追加できます。
+* **`_id`**:このフィールドには値が必要です。Customer Journey Analyticsは値を気にしません。 フィールドに「1」を追加できます。
 
-   ![ID](../assets/_id.png)
+  ![ID](../assets/_id.png)
 
 ## 次の手順
 

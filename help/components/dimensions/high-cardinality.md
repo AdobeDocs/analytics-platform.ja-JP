@@ -4,20 +4,20 @@ description: Customer Journey Analytics で基数の高いディメンション�
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 88%
 
 ---
 
 # 基数が非常に高いディメンション
 
-Customer Journey Analytics（CJA）では、単一のディメンション内でレポートできる一意の値またはディメンション項目の数に制限はありません。 ただし、状況によっては、一意の項目が非常に多いディメンション（高基数ディメンションとも呼ばれます）が、レポートの対象に影響を与える可能性があります。
+Customer Journey Analytics(Customer Journey Analytics) では、単一のディメンション内でレポートできる一意の値またはディメンション項目の数に制限はありません。 ただし、状況によっては、一意の項目が非常に多いディメンション（高基数ディメンションとも呼ばれます）が、レポートの対象に影響を与える可能性があります。
 
 ## 制限事項
 
-特定の CJA 接続でのイベント数に応じて、高基数のディメンションに関連して、次の 2 つの制限が発生する可能性があります。
+特定のCustomer Journey Analytics接続内のイベントの数に応じて、大基数ディメンションと共に、次の 2 つの制限が発生する場合があります。
 
 ### 1. 行数を正確にレポートできない可能性
 

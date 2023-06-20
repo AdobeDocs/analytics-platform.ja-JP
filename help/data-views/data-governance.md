@@ -1,23 +1,23 @@
 ---
 title: ラベルとポリシー
-description: AEP で定義されたデータラベルとポリシーが、CJA のデータビューとレポートに与える影響について説明します。
+description: Adobe Experience Platformで定義されたデータラベルとポリシーが、Customer Journey Analyticsのデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 79%
+source-wordcount: '486'
+ht-degree: 60%
 
 ---
 
 # ラベルとポリシー
 
-Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これらのラベルとポリシーを CJA で表示できます。
+Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これらのラベルとポリシーをCustomer Journey Analyticsで表示できます。
 
-次のラベルは、CJA にとって特に重要です。
+次のラベルは、Customer Journey Analyticsにとって特に重要です。
 
 * `C8` ラベル - **[!UICONTROL 測定なし]**。このラベルは、組織の Web サイトやアプリでデータを分析に使用できないことを示します。
 
-* `C12` ラベル - **[!UICONTROL 一般的なデータの書き出しがありません]**。この方法でラベル付けされたスキーマフィールドは、CJA から（レポート、書き出し、API などを介して）書き出しまたはダウンロードはできません。
+* `C12` ラベル - **[!UICONTROL 一般的なデータの書き出しがありません]**。この方法でラベル付けされたスキーマフィールドは、（レポート、エクスポート、API などを介して）Customer Journey Analyticsからエクスポートまたはダウンロードすることはできません。
 
 >[!NOTE]
 >
@@ -25,12 +25,12 @@ Experience Platform でデータセットを作成する場合、データセッ
 
 「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です Experience Platform で [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介してポリシーを作成します。
 
-CJA では、次の 2 つのアドビが定義するポリシーが表示され、レポートおよびダウンロード／共有に影響します。
+2 つのAdobe定義のポリシーがCustomer Journey Analyticsで表示され、レポートおよびダウンロード/共有に影響を与えます。
 
 * **[!UICONTROL Analytics の適用]** ポリシー
 * **[!UICONTROL ダウンロードの適用]**&#x200B;ポリシー
 
-## CJA データビューでのデータラベルの表示
+## データビューでのデータラベルのCustomer Journey Analytics
 
 Experience Platform で作成したデータラベルは、データビューのユーザーインターフェイスで次の 3 つの場所に表示されます。
 
@@ -52,7 +52,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 ## データビューでデータガバナンスポリシーをフィルタリング
 
-分析または書き出しの目的で特定の CJA データビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
+分析または書き出しの目的で特定のCustomer Journey Analyticsデータビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
 
 再度、 [!UICONTROL フィルター] アイコン（左側のレールとの下） **[!UICONTROL データガバナンス]**&#x200B;をクリックし、 **[!UICONTROL ポリシー]**:
 
@@ -74,6 +74,6 @@ Experience Platform で作成したデータラベルは、データビューの
 >[機密データのダウンロード](/help/analysis-workspace/curate-share/download-send.md)
 
 >[!MORELIKETHIS]
->[Report Builder の制限ラベルとは](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)
+>[Report Builder の制限ラベルとは?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)
 
 

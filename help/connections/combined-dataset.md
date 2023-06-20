@@ -1,23 +1,23 @@
 ---
 title: 組み合わせイベントデータセット
-description: CJA でデータセットを組み合わせて接続を作成する仕組みについて説明します。
+description: Customer Journey Analyticsがデータセットを組み合わせて接続を作成する方法を説明します。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 91%
+source-wordcount: '344'
+ht-degree: 72%
 
 ---
 
 
 # 組み合わせイベントデータセット
 
-接続を作成する際、Customer Journey Analytics（CJA）は、すべてのスキーマとデータセットを 1 つのデータセットに組み合わせます。CJA はこの「組み合わせイベントデータセット」をレポートに使用するものです。複数のスキーマまたはデータセットを接続に含める場合：
+接続を作成する際、Customer Journey Analyticsはすべてのスキーマとデータセットを 1 つのデータセットに組み合わせます。 この「組み合わせイベントデータセット」は、Customer Journey Analyticsがレポートに使用するものです。 複数のスキーマまたはデータセットを接続に含める場合：
 
 * スキーマは組み合わせられます。重複スキーマフィールドが結合されます。
-* 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、CJA における個別の人物を識別するための基礎となります。
+* 各データセットの「ユーザー ID」列は、名前に関係なく 1 つの列に結合されます。この列は、Customer Journey Analytics内の個別の人物を識別する際の基礎となります。
 * 行はタイムスタンプに基づいて処理されます。
 * イベントはミリ秒レベルまで解決されます。
 
@@ -31,34 +31,34 @@ ht-degree: 91%
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` |  |
-| `user_310` | `1 Jan 7:04 AM` |  |  | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` |  | `3` |
-| `user_847` | `2 Jan 12:31 PM` |  | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` |  |  | `2` |
+| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
+| `user_310` | `1 Jan 7:04 AM` | | | `2` |
+| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
+| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
+| `user_847` | `2 Jan 12:44 PM` | | | `2` |
 
 | `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
 | --- | --- | --- | --- | --- |
 | `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` |  |  |
+| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
+| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
 これら 2 つのイベントデータセットを使用して接続を作成すると、次のテーブルがレポートに使用されます。
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` |  |  |  |
-| `user_310` | `1 Jan 7:04 AM` |  |  |  | `2` |  |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` |  |  | `3` |  |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` |  | `Circle` |  | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` |  | `Turtle` |  | `4` |  |
-| `user_847` | `2 Jan 12:44 PM` |  |  |  | `2` |  |
-| `user_847` | `2 Jan 1:01 PM` | `Red` |  |  |  |  |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
+| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
+| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
+| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
+| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
+| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
+| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
+| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
+| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
+| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-この組み合わせイベントデータセットは、レポートで使用されるデータセットです。どのデータセットから行が取得されたかは関係ありません。CJA は、すべてのデータを同じデータセット内にあるかのように処理します。一致するユーザー ID が両方のデータセットに表示される場合、それらは同じ一意のユーザーと見なされます。 タイムスタンプが 30 分以内の両方のデータセットに、一致するユーザー ID が含まれる場合、それらは同じセッションの一部と見なされます。
+この組み合わせイベントデータセットは、レポートで使用されるデータセットです。どのデータセットから行が取得されたかは関係ありません。Customer Journey Analyticsは、すべてのデータを同じデータセット内にあるかのように扱います。 一致するユーザー ID が両方のデータセットに表示される場合、それらは同じ一意のユーザーと見なされます。 タイムスタンプが 30 分以内の両方のデータセットに、一致するユーザー ID が含まれる場合、それらは同じセッションの一部と見なされます。
 
 この概念はアトリビューションにも当てはまります。どのデータセットから行が取得されたかは関係ありません。アトリビューションは、すべてのイベントが 1 つデータセットから取得された場合と同じように機能します。上記の表を例として使用します。
 

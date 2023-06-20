@@ -4,10 +4,10 @@ description: 文字列のサブセットをディメンション項目として�
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 95%
+source-wordcount: '905'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ URL を含むフィールドで使用します。URL の例 `https://example.com
 * **[!UICONTROL 出力形式]**：テキストを追加したり、正規表現サブグループ出力を並べ替えたりできる、オプションのフィールド。このフィールドが空の場合、文字列出力は、評価された正規表現式です。
 * **[!UICONTROL 大文字と小文字を区別]**：有効な場合に、正規表現で大文字と小文字を区別することを強制するチェックボックス。
 
-CJA では、Perl 正規表現構文のサブセットを使用します。入力が正規表現に一致せず、**[!UICONTROL 出力形式]**&#x200B;が空の場合、[値オプションなし](no-value-options.md)が適用されます。次の式がサポートされています。
+Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使用します。 入力が正規表現に一致せず、**[!UICONTROL 出力形式]**&#x200B;が空の場合、[値オプションなし](no-value-options.md)が適用されます。次の式がサポートされています。
 
 | 式 | 説明 |
 | --- | --- |

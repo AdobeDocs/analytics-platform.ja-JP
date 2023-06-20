@@ -4,16 +4,16 @@ title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 767d112d13b7312aa8685cc132916f2e27896422
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 3%
+source-wordcount: '172'
+ht-degree: 39%
 
 ---
 
 # コンポーネントの説明の追加
 
-説明は、Analysis Workspaceでプロジェクトを作成する際、またはレポートを表示する際に、様々なコンポーネントを最適に使用する方法を理解するのに役立ちます。
+説明は、ユーザーが Analysis Workspace でプロジェクトを作成する際またはレポートを表示する際に、様々なコンポーネントを最適に使用する方法を理解するのに役立ちます。
 
 Customer Journey Analytics管理者は、コンポーネント (Dimension、指標、フィルター、日付範囲 ) の説明をデータビュー内で追加したり、Analysis Workspace内で直接データディクショナリを使用したりできます。
 
@@ -23,10 +23,10 @@ Customer Journey Analytics管理者は、コンポーネント (Dimension、指�
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
-## （データディクショナリを使用して）Analysis Workspaceのコンポーネントに説明を追加します。 {#add-descriptions}
+## （データ辞書を使用した）Analysis Workspace のコンポーネントへの説明の追加 {#add-descriptions}
 
-Analysis Workspaceのデータディクショナリは、ユーザーと管理者の両方が CJA 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。 これには、CJA 管理者がコンポーネントの説明をAnalysis Workspaceに直接追加する機能が含まれます。
+Analysis Workspaceのデータディクショナリは、ユーザーと管理者の両方が、ユーザー環境のコンポーネントを追跡し、より深く理解するのに役立ちます。 これには、Customer Journey Analytics管理者がAnalysis Workspace内でコンポーネントの説明を直接追加する機能が含まれます。
 
-データディクショナリにコンポーネントの説明を追加する方法について詳しくは、 [データディクショナリ内のコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+データ辞書にコンポーネントの説明を追加する方法については、[データ辞書でのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。
 
-データディクショナリの一般情報については、 [データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md).
+データ辞書の一般情報については、[データ辞書の概要](/help/components/data-dictionary/data-dictionary-overview.md)を参照してください。

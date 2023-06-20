@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 20ea211fff816b8b5e99d3d6ef3cb4ba4d0fd6a9
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 93%
+source-wordcount: '986'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 Customer Journey Analytics は、Adobe Experience Platform のデータを使用して Analysis Workspace を活用できる Analytics の機能です。数年分のデータを分類、フィルタリング、クエリ、視覚化でき、あらゆる種類のデータスキーマやデータの種類を保持できる Platform の機能と組み合わせることができます。**Experience Data Model（XDM）**&#x200B;を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。**エクスペリエンスクエリサービス**：SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
 
-CJA アーキテクチャの概要を次に示します。
+Customer Journey Analytics・アーキテクチャの概要を次に示します。
 
 ![アークテクチャ](assets/cja-architecture.png)
 
@@ -23,7 +23,7 @@ CJA アーキテクチャの概要を次に示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## CJA と従来の Adobe Analytics の比較
+## Customer Journey Analyticsと従来のAdobe Analyticsの比較
 
 Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Adobe Analytics の範囲を広げています。主な改善点を次に示します。
 
@@ -53,7 +53,7 @@ Customer Journey Analytics では、次のことが可能です。
 
 Customer Journey Analytics の使用を開始する前に、次の前提条件を満たす必要があります。
 
-* 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、CJA アドオンがあるかどうかが不明な場合は、Adobeのアカウントチームにお問い合わせください。
+* 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、Customer Journey Analyticsのアドオンがあるかどうかが不明な場合は、Adobeのアカウントチームにお問い合わせください。
 * 組織が Adobe Experience Platform 用にプロビジョニングされている。
 * Adobe Analytics を必要とせずに、Customer Journey Analytics をスタンドアロン製品として購入することもできます。
 
@@ -63,7 +63,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## 用語の更新
 
-CJA のいくつかの機能は、従来の Adobe Analytics の機能に比べ、業界標準に合わせて名前が変更されました。次に、更新された用語の一部を示します。
+Customer Journey Analyticsのいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更されました。 次に、更新された用語の一部を示します。
 
 * セグメントは「フィルター」になりました。
 * 仮想レポートスイートは、「データビュー」と呼ばれるようになりました。
@@ -90,9 +90,9 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 * Customer Journey Analytics でのデータの操作：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
 
 * Customer Journey Analytics のアーキテクチャと統合：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
 

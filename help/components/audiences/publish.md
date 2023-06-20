@@ -2,18 +2,18 @@
 title: オーディエンスを作成してリアルタイム顧客プロファイルに公開する
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 90%
+source-wordcount: '1565'
+ht-degree: 63%
 
 ---
 
 # オーディエンスの作成と公開
 
-このトピックでは、Customer Journey Analytics（CJA）で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCP）に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
+このトピックでは、にCustomer Journey Analyticsして識別されたオーディエンスを作成し、公開する方法について説明します。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformの（顧客のターゲティングとパーソナライゼーションのため）
 
-この[概要](/help/components/audiences/audiences-overview.md)を参照して、CJA オーディエンスの概念を理解してください。
+こちらを読む [概要](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analyticsオーディエンスの概念を理解します。
 
 ## オーディエンスを作成 {#create}
 
@@ -38,7 +38,7 @@ ht-degree: 90%
    | [!UICONTROL 名前] | オーディエンスの名前。 |
    | [!UICONTROL タグ] | 組織的な目的でオーディエンスに割り当てるタグ。既存のタグを使用するか、新しいタグを入力できます。 |
    | [!UICONTROL 説明] | 他のオーディエンスと区別するために、オーディエンスに関する適切な説明を追加します。 |
-   | [!UICONTROL 更新頻度] | オーディエンスを更新する頻度。<ul><li>更新を必要としない 1 回限りのオーディエンス（デフォルト）の作成を選択できます。これは、特定の 1 回限りのキャンペーンなどに役立ちます。</li><li>その他の更新間隔を選択できます。4 時間の更新頻度の場合、CJA の使用権限に応じてオーディエンスの更新回数に 75 から 150 の制限があります。</li></ul> |
+   | [!UICONTROL 更新頻度] | オーディエンスを更新する頻度。<ul><li>更新を必要としない 1 回限りのオーディエンス（デフォルト）の作成を選択できます。これは、特定の 1 回限りのキャンペーンなどに役立ちます。</li><li>その他の更新間隔を選択できます。4 時間の更新頻度の場合、Customer Journey Analyticsの使用権限に応じて、オーディエンスの更新回数は 75 ～ 150 までに制限されます。</li></ul> |
    | 有効期限 | オーディエンスが更新を停止したとき。デフォルトは作成日の 1 年後です。有効期限が近づいたオーディエンスは、予定レポートの有効期限が近づいた場合と同様に扱われます。管理者は、オーディエンスの期限が切れる 1 か月前にメールを受け取ります。 |
    | ルックバックウィンドウを更新 | このオーディエンスの作成時にデータウィンドウ内でどのくらい遡るかを指定します。最大 90 日です。 |
    | [!UICONTROL 1 回限りの日付範囲] | 1 回限りのオーディエンスを公開する日付範囲。 |
@@ -74,38 +74,38 @@ ht-degree: 90%
 
 ## オーディエンスを作成した後はどうなりますか？ {#after-audience-created}
 
-オーディエンスを作成すると、新しい CJA オーディエンスごとに Experience Platform ストリーミングセグメントが作成されます。AEP ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
+オーディエンスを作成した後、Adobeは新しいExperience PlatformオーディエンスごとにCustomer Journey Analyticsストリーミングセグメントを作成します。 Adobe Experience Platformのストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
 
-* AEP セグメントは、CJA オーディエンスと同じ名前／説明を共有しますが、一意であることを保証するために、名前に CJA オーディエンス ID が付加されます。
-* CJA オーディエンスの名前／説明を変更した場合、AEP セグメントの名前／説明にもその変更が反映されます。
-* ユーザーが CJA オーディエンスを削除しても、AEP セグメントは削除されません。それは、CJA オーディエンスの削除が後で取り消される可能性があるからです。
+* Adobe Experience Platformセグメントは、Customer Journey Analyticsオーディエンスと同じ名前/説明を共有しますが、一意であることを確認するために、名前にCustomer Journey Analyticsオーディエンス ID が追加されます。
+* Customer Journey Analyticsのオーディエンスの名前や説明が変更されると、Adobe Experience Platformのセグメント名や説明にもその変更が反映されます。
+* Customer Journey Analyticsオーディエンスがユーザーによって削除された場合、Adobe Experience Platformセグメントは削除されません。 理由は、後でCustomer Journey Analyticsオーディエンスが削除解除される可能性があるからです。
 
 ## 待ち時間に関する考慮事項 {#latency}
 
 オーディエンスの公開前、公開中、公開後のいくつかの時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
 
-![AEP から CJA への遅延](assets/latency-diagram.png)
+![Adobe Experience PlatformからCustomer Journey Analyticsへの遅延](assets/latency-diagram.png)
 
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
 | 未表示 | Adobe Analyticsから Analytics ソースコネクタ (A4T) | 最大 30 分 |
 | 1 | Data Lake へのデータ取り込み（Analytics Source Connector または他のソースから） | 最大 90 分 |
-| 2 | Experience Platformデータレイクから CJA へのデータ取り込み | 最大 90 分 |
+| 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
 | 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 約 60 分 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
-| 5 | AEP での宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
+| 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
 {style="table-layout:auto"}
 
-## Experience Platform での CJA オーディエンスの使用 {#audiences-aep}
+## Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用 {#audiences-aep}
 
-CJA は、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。CJA は、接続の設定時に[!UICONTROL ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを Experience Platform に送信します。
+Customer Journey Analyticsは、公開済みのオーディエンスからすべての名前空間と ID の組み合わせを取得し、それらをリアルタイム顧客プロファイル (RTCP) にストリーミングします。 Customer Journey Analyticsは、 [!UICONTROL 人物 ID] 接続が設定された時点で。
 
 次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。現在は、例えば、「user@adobe.com」をすべてのデバイスおよびチャネルにわたってターゲットに設定できます。プロファイルが見つからない場合は、新しく作成されます。
 
-Platform で CJA オーディエンスを表示するには、**[!UICONTROL セグメント]**／**[!UICONTROL セグメントの作成]**／「**[!UICONTROL オーディエンス]**」タブ／**[!UICONTROL CJA オーディエンス]**&#x200B;に移動します。
+Platform でCustomer Journey Analyticsオーディエンスを表示するには、次に移動します。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ/ **[!UICONTROL CJA オーディエンス]**.
 
-CJA オーディエンスを AEP セグメントのセグメント定義にドラッグできます。
+Customer Journey Analyticsオーディエンスは、Adobe Experience Platformセグメントのセグメント定義にドラッグできます。
 
 ![](assets/audiences-aep.png)
 
@@ -113,15 +113,15 @@ CJA オーディエンスを AEP セグメントのセグメント定義にド�
 
 オーディエンスの投稿に関するよくある質問です。
 
-+++**CJA でユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか？**
++++**ユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか？Customer Journey Analytics**
 
-その場合は、CJA から Experience Platform に出口イベントが送信されます。
+この場合、終了イベントはイベントからExperience Platformに送信されます。
 
 +++
 
-+++**CJA でオーディエンスを削除するとどうなりますか？**
++++**Customer Journey Analyticsでオーディエンスを削除するとどうなりますか？**
 
-CJA オーディエンスが削除されると、そのオーディエンスは Experience Platform UI に表示されなくなります。ただし、そのオーディエンスに関連付けられたプロファイルは、実際には Platform では削除されません。
+Customer Journey Analyticsオーディエンスが削除されると、そのオーディエンスはExperience PlatformUI に表示されなくなります。 ただし、そのオーディエンスに関連付けられたプロファイルは、実際には Platform では削除されません。
 
 +++
 
@@ -131,13 +131,13 @@ CJA オーディエンスが削除されると、そのオーディエンスは 
 
 +++
 
-+++**CJA は、オーディエンスデータをパイプラインイベントとして、またはデータレイクにも送信するフラットファイルとして、送信しますか？**
++++**Customer Journey Analyticsは、オーディエンスデータをパイプラインイベントとして、またはデータレイクにも送信するフラットファイルとして送信しますか？**
 
-CJA はパイプラインを介してデータを RTCP にストリーミングし、このデータはデータレイク内のシステムデータセットにも収集されます。
+Customer Journey Analyticsは、パイプラインを介してデータを RTCP にストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
 
 +++
 
-+++**CJA はどのような ID を送信しますか？**
++++**Customer Journey Analyticsは何の ID を送信しますか？**
 
 どの ID/名前空間ペアも [接続の設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection). 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
 
@@ -145,11 +145,11 @@ CJA はパイプラインを介してデータを RTCP にストリーミング�
 
 +++**プライマリ ID として選択されるのはどの ID ですか？**
 
-上記を参照してください。CJA の「ユーザー」ごとに 1 つの ID のみを送信します。
+上記を参照してください。Customer Journey Analytics「person」ごとに 1 つの ID のみを送信します。
 
 +++
 
-+++**RTCP では CJA メッセージも処理しますか？ CJA では、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
++++**RTCP はCustomer Journey Analytics・メッセージも処理するか Customer Journey Analyticsは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
 いいえ。「ユーザー」ごとに送信される ID は 1 つだけなので、RTCP はグラフエッジを使用しません。
 

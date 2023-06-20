@@ -5,10 +5,10 @@ title: プロジェクトのスケジュール
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 88%
+source-wordcount: '912'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://business.adobe.com/jp/solutions/experience-cloud-for-healthcare.html) アドオン製品を購入された CJA のお客様のみに表示されます。
+>スケジュール済みプロジェクトをパスワードで保護するオプションは、 [医療用盾](https://business.adobe.com/jp/solutions/experience-cloud-for-healthcare.html) アドオン製品。
 
 アドビは、スケジュールされたプロジェクトを .pdf 形式と .csv 形式のどちらで送信した場合でも、パスワードを使用して暗号化します。
 

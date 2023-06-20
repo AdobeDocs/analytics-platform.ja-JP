@@ -4,9 +4,9 @@ title: インテリジェントキャプション
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 * 他のユーザーと共有するためにナレーションが必要なアナリスト。 アナリストは、ユーザーにコンテキストを提供するために、これらのインサイトが必要です。
 * 高レベルの留意点を迅速に見つけたいビジネスユーザー。
 
-キャプションは、すべての CJA ユーザーが使用でき、特別な権限は必要ありません。
+キャプションは、すべてのCustomer Journey Analyticsユーザーが使用でき、特別な権限は必要ありません。
 
 ## インテリジェントキャプションを起動 {#launch}
 

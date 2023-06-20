@@ -1,17 +1,17 @@
 ---
-description: AEP 顧客 AI データが CJA の Workspace とどのように統合するのかを説明します。
-title: 顧客 AI データと CJA の統合
+description: Adobe Experience Platform Customer AI データと Workspace の統合の仕組みをCustomer Journey Analyticsで確認します。
+title: 顧客 AI データとCustomer Journey Analyticsの統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 70%
+source-wordcount: '979'
+ht-degree: 49%
 
 ---
 
-# 顧客 AI データと CJA の統合
+# 顧客 AI データとAdobe Customer Journey Analyticsの統合
 
 {{release-limited-testing}}
 
@@ -21,7 +21,7 @@ ht-degree: 70%
 
 顧客 AI は、傾向スコアリングに個々の行動データとプロファイルデータに依存します。顧客 AI には、Adobe Analytics、Adobe Audience Manager、消費者エクスペリエンスイベントデータ、エクスペリエンスイベントデータなど、複数のデータソースを柔軟に取り込むことができます。Experience Platform ソースコネクタを使用して Adobe Audience Manager と Adobe Analytics のデータを取り込むと、モデルは自動的に標準のイベントタイプを選択し、モデルのトレーニングとスコアリングを実施します。標準のイベントタイプを使用せずに独自のエクスペリエンスイベントデータセットを取り込む場合、モデルで使用するには、関連するフィールドをカスタムイベントまたはプロファイル属性としてマッピングする必要があります。これは、Experience Platformの顧客 AI の設定手順でおこなえます。
 
-顧客 AI は、顧客 AI 対応のデータセットを CJA のデータビューおよびレポートで利用できる範囲で、Customer Journey Analytics(CJA) と統合できます。 次のことができます。
+顧客 AI は、顧客 AI 対応のデータセットをCustomer Journey Analyticsのデータビューおよびレポートで利用できる範囲で、Customer Journey Analyticsと統合できます。 次のことができます。
 
 * **ユーザーのセグメントの傾向スコアを経時的に追跡する**。
    * 使用例：特定のセグメントにおける顧客のコンバージョンの可能性を把握します。
@@ -39,44 +39,44 @@ ht-degree: 70%
    * 使用例：特定のコホートを経時的に追跡します。
    * 例：ホテルチェーンのマーケターは、時間の経過と共に、ブロンズ層と銀層、または銀層と金層を比較して追跡したいと考えています。 訪問者は、時間の経過と共にホテルを予約する各コホートの傾向を確認できます。
 
-実際に顧客 AI データを CJA と統合するには、次の手順に従います。
+実際に顧客 AI データをCustomer Journey Analyticsと統合するには、次の手順に従います。
 
 >[!NOTE]
 >
->手順の一部は、CJA の出力を処理する前に、Adobe Experience Platform で実行されます。
+>手順の一部は、Customer Journey Analyticsの出力を操作する前に、Adobe Experience Platformで実行されます。
 
 
 ## 手順 1：顧客 AI インスタンスを設定する
 
 データを準備し、すべての資格情報とスキーマを設定したら、Adobe Experience Platform ガイドの[顧客インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=ja)の手順に従って開始します。
 
-## 手順 2：顧客 AI データセットへの CJA 接続を設定する
+## 手順 2:顧客 AI データセットへのCustomer Journey Analytics接続の設定
 
-CJA で、顧客 AI 用に実装された Experience Platform セットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
+Customer Journey Analyticsで、 [1 つ以上の接続を作成](/help/connections/create-connection.md) を、顧客 AI に実装されたExperience Platformデータセットに追加しました。 「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
 
 >[!IMPORTANT]
 >
->手順 1 での設定時に CJA のスコアを有効にする切り替えをオンにしている場合、各顧客 AI インスタンスには 2 つの出力データセットがあります。1 つの出力データセットが Profile XDM 形式、もう 1 つが Experience Event XDM 形式で表示されます。
+>切り替えをオンにして手順 1 の設定時にCustomer Journey Analyticsのスコアを有効にすると、各顧客 AI インスタンスには 2 つの出力データセットがあります。 1 つの出力データセットが Profile XDM 形式、もう 1 つが Experience Event XDM 形式で表示されます。
 
 ![CAI スコア](assets/cai-scores.png)
 
 ![接続を作成](assets/create-conn.png)
 
-次に、CJA が既存または新しいデータセットの一部として取り込む XDM スキーマの例を示します。
+次に、Customer Journey Analyticsが既存または新しいデータセットの一部として取り込む XDM スキーマの例を示します。
 
 ![CAI スキーマ](assets/cai-schema.png)
 
-（この例はプロファイルデータセットです。スキーマオブジェクトの同じセットは、CJA が取得するエクスペリエンスイベントデータセットの一部になります。エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます。）このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが関連付けられています。
+( この例はプロファイルデータセットです。同じスキーマオブジェクトのセットは、Customer Journey Analyticsが取得するエクスペリエンスイベントデータセットの一部です。 エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます。）このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが関連付けられています。
 
 ## 手順 3：これらの接続に基づいたデータビューを作成する
 
-CJA で、確立した接続の一部として得られたディメンション（スコア、スコアの日付、可能性など）や指標を使用して、[データビューの作成](/help/data-views/create-dataview.md)に進むことができます。
+Customer Journey Analyticsで、 [データビューを作成](/help/data-views/create-dataview.md) を設定します。
 
 ![データビューの作成](assets/create-dataview.png)
 
 ## 手順 4：Workspace での CAI スコアのレポート
 
-CJA Workspace で新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
+Customer Journey Analyticsワークスペースで、新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
 
 ### 傾向スコアのトレンド
 

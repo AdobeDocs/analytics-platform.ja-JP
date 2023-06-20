@@ -1,31 +1,31 @@
 ---
 title: 監査ログ
-description: CJA 監査ログの表示方法と管理方法について説明します。
+description: Customer Journey Analytics監査ログの表示と管理方法。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 79%
+source-wordcount: '806'
+ht-degree: 67%
 
 ---
 
 # 監査ログ
 
-Customer Journey Analytics（CJA）では、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。
+Adobe Customer Journey Analyticsでは、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能のユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。
 
 基本的に、監査ログでは、**誰が** **どの**&#x200B;アクションを、**いつ**&#x200B;実行したかがわかります。ログに記録される各アクションには、アクションのタイプ、日時、アクションを実行したユーザーの電子メール ID、アクションのタイプに関連する追加の属性を示すメタデータが含まれます。
 
-このトピックでは、UI での表示方法や管理方法など、CJA の監査ログについて説明します。
+このトピックでは、UI でのCustomer Journey Analyticsの表示方法や管理方法など、監査ログについて説明します。
 
 ## 監査ログへのアクセス
 
 組織に対してこの機能が有効になっている場合、アクティビティの発生に応じて監査ログが自動的に収集されます。ログ収集を手動で有効にする必要はありません。
 
-監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。CJA 機能の個々の権限を管理する方法については、[アクセス制御ドキュメント](../admin/cja-access-control.md)を参照してください。
+監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。Customer Journey Analytics機能の個々の権限を管理する方法については、 [アクセス制御ドキュメント](../admin/cja-access-control.md).
 
 ## UI での監査ログの表示
 
-CJA で、**[!UICONTROL ツール]**／**[!UICONTROL 監査ログ]**&#x200B;に移動します。
+Customer Journey Analyticsで、 **[!UICONTROL ツール]** > **[!UICONTROL 監査ログ]**.
 
 デフォルトでは、今日と昨日の監査ログが表示されます。
 
@@ -136,4 +136,4 @@ UI の監査イベントには、次のフィルターを使用できます。
 
 ## API での監査ログの管理
 
-UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。詳しくは、[CJA API 参照ドキュメント](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)を参照してください。
+UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。詳しくは、 [Customer Journey AnalyticsAPI リファレンスドキュメント](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) を参照してください。

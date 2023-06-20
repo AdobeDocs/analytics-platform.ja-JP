@@ -6,28 +6,28 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 60%
 
 ---
 
 # Report Builder の制限ラベル
 
-一般に、Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。CJA と Adobe Experience Platform のデータガバナンスの統合により、機密性の高い CJA データのラベル付けとプライバシーポリシーの実施が可能になります。
+一般に、Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。Customer Journey AnalyticsとAdobe Experience Platformデータガバナンスの統合により、機密性の高いCustomer Journey Analyticsデータのラベル付けやプライバシーポリシーの実施が可能になります。
 
-Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 CJA データビューワークフローで表示できます。 これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。データセットについて詳しくは、[データセットの概要](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)を参照してください。
+Experience Platformが使用するデータセットで作成されたプライバシーラベルとポリシーは、Customer Journey Analyticsデータビューワークフローで表示できます。 これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。データセットについて詳しくは、[データセットの概要](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja)を参照してください。
 
-また、データが CJA から（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが付加されて、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに知らせます。
+また、データがCustomer Journey Analyticsから（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加され、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに通知します。
 
-この統合により、コンプライアンスを管理しやすくなります。 組織のデータ管理人は、使用を制限するポリシーを設定できます。 その結果、CJA ユーザーは、データ管理人に定義されたポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
+この統合により、コンプライアンスを管理しやすくなります。組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Customer Journey Analyticsユーザーは、データ管理人が定義したポリシーに準拠していることを知り、より自信を持ってデータを使用できます。
 
 詳しくは、[Customer Journey Analytics とデータガバナンス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html?lang=ja)を参照してください。
 
 ## Report Builder の制限付きデータの表示
 
-CJA では、次の 2 つのアドビが定義するポリシーが表示され、レポート、ダウンロードおよび共有に影響します。
+レポート、ダウンロード、共有に影響を与えるAdobeでは、次の 2 つのCustomer Journey Analytics定義ポリシーが表示されます。
 
 * Analytics の適用ポリシー
 * ダウンロードの適用ポリシー

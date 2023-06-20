@@ -1,15 +1,15 @@
 ---
-title: CJA の Report Builder を使用したデータブロックの作成方法
+title: Customer Journey AnalyticsでのReport Builderを使用したデータブロックの作成方法
 description: データブロックの作成方法を説明します。
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 97%
 
 ---
 

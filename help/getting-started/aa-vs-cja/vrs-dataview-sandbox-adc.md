@@ -1,21 +1,21 @@
 ---
-title: 仮想レポートスイート、データビュー、AEP サンドボックスおよび Analytics ソースコネクタ
+title: 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ
 description: 仮想レポート環境とサンドボックス環境について説明します。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
-workflow-type: ht
-source-wordcount: '720'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 62%
 
 ---
 
-# 仮想レポートスイート、データビュー、AEP サンドボックスおよび Analytics ソースコネクタ
+# 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ
 
 アドビでは、仮想レポート環境サンドボックス環境を作成するための様々な手段を提供しています。次の機能の類似点と相違点、およびこれらの機能が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)にどのように関連するかを把握することは有益です。
 
 * Adobe Analytics 仮想レポートスイート
-* CJA データビュー
-* AEP サンドボックス
+* Customer Journey Analyticsデータビュー
+* Adobe Experience Platformサンドボックス
 
 ## Adobe Analytics 仮想レポートスイート（VRS）
 
@@ -37,46 +37,46 @@ ht-degree: 100%
 
 * レポートスイートを組み合わせる手段。
 * Adobe Analytics Data Warehouse で利用可能。
-* Analytics ソースコネクタを介した AEP へのデータフローのソースとして利用できる。Analytics ソースコネクタで使用できるのは、完全な（非仮想）レポートスイートのみです。
+* Analytics ソースコネクタを介してAdobe Experience Platformへのデータフローのソースとして使用できます。 Analytics ソースコネクタで使用できるのは、完全な（非仮想）レポートスイートのみです。
 
 
-## CJA データビュー
+## Customer Journey Analyticsデータビュー
 
 詳しくは、[データビューの概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja)を参照してください。
 
 データビューに該当すること：
 
-* CJA フィルターに基づくことができる。
+* Customer Journey Analyticsフィルターに基づく。
 * 履歴データにも新しいデータにも、非破壊で適用できる。
-* 異なるビジネスチームで使用するために、CJA 接続の上に 1 つまたは複数の仮想ビューを作成できる。
-* CJA のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用される可能性がある。
-* CJA 接続を使用して CJA に取り込まれたデータを変換および強化するための強力な非破壊オプションを提供する。
-* CJA のレポート時の処理機能に基づく。
+* 異なるビジネスチームが使用できるよう、Customer Journey Analytics接続の上に 1 つ以上の仮想ビューを作成できます。
+* を使用して、Customer Journey Analytics内のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションできます。
+* Customer Journey Analytics接続を通じてCustomer Journey Analyticsに入るデータを変換し、強化する、強力な非破壊オプションを提供します。
+* Customer Journey Analyticsのレポート時間処理機能に基づいています。
 * 「セッション」のカスタム定義をユーザーが作成できるようにする。
-* フィルター評価と同様に、レポート実行時に適用される。これは、ソースコネクタ（Adobe Analytics またはその他）が AEP データレイク内のデータセットにデータを書き込んだ&#x200B;_後_、およびそのデータが CJA 接続を介して CJA に取り込まれた&#x200B;_後_&#x200B;です。
+* フィルター評価と同様に、レポート実行時に適用される。これは _後_ ソースコネクタ (Adobe Analyticsなど ) が、Adobe Experience Platformデータレイクのデータセットにデータを書き込み、 _後_ データは、Customer Journey Analytics接続を介してCustomer Journey Analyticsに取り込まれています。
 * 変数の数は無制限だが、キュレーションにより、ユーザーに公開する変数を制限できる
 * イベント、セッションおよび人物コンテナにカスタムの名前を付けることができる。
 * カスタムカレンダーオプションをサポートする。
 
 データビューに該当しないこと：
 
-* レポートスイートや他のデータセットを組み合わせるための手段を直接提供する。代わりに、データセットは、CJA 接続で組み合わされます。CJA 接続で組み合わされたデータは、その接続に基づくすべてのデータビューで使用できます。
+* レポートスイートや他のデータセットを組み合わせるための手段を直接提供する。代わりに、データセットは、Customer Journey Analytics接続でと組み合わされます。 Customer Journey Analytics接続から結合されたデータは、その接続に基づくすべてのデータビューで使用できます。
 
-## AEP サンドボックス
+## Adobe Experience Platformサンドボックス
 
 詳しくは、[サンドボックスの概要](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)を参照してください。
 
-AEP サンドボックスに該当すること：
+Adobe Experience Platformサンドボックス：
 
-* 単一の AEP インスタンスを別々の仮想環境（開発、テスト、ステージ、実稼動など）に分割する手段を提供して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する。
+* 1 つのAdobe Experience Platformインスタンスを別々の仮想環境（開発、テスト、ステージング、実稼動など）に分割する手段を提供します。 デジタルエクスペリエンスアプリケーションの開発と発展を支援する。
 * 所定の環境のすべてのデータとアプリケーションを保持するコンテナと考えることができる。
 
-AEP サンドボックスに該当しないこと：
+Adobe Experience Platform Sandbox は以下を実行しません。
 
-* 仮想レポートスイート、CJA 接続またはデータビューと同等の機能を提供する。
-* そのままで、レポートスイートを他のデータセットと組み合わせたり、レポートスイートを他のデータセットなしで組み合わせたりする。ただし、サンドボックス内のデータセットは、CJA 接続内で組み合わせることができます。
+* 仮想レポートスイート、Customer Journey Analytics接続、データビューなど、同様の機能を提供します。
+* そのままで、レポートスイートを他のデータセットと組み合わせたり、レポートスイートを他のデータセットなしで組み合わせたりする。ただし、サンドボックス内のデータセットは、1 つのCustomer Journey Analytics接続内で組み合わせることができます。
 
 メモ：
 
-* CJA 内では、異なるサンドボックスのデータを組み合わせることはできません。
+* 異なるサンドボックスのデータは、Customer Journey Analytics内で結合できません。
 * Analytics ソースコネクタは、レポートスイートデータを特定のサンドボックス&#x200B;_に_&#x200B;送信します。各レポートスイートは、単一のサンドボックスのソースとして設定できます。詳しくは、[Analytics ソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください。

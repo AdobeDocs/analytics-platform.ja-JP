@@ -4,10 +4,10 @@ description: 複数のデータセットのユーザー ID のキーを変更し
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
+source-wordcount: '1166'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 クロスチャネル分析を使用する前に、組織で次のものが準備されていることを確認してください。
 
 * Adobe Experience Platformの 1 つのデータセットには、人物の識別に役立つ 2 つの列が必要です。
-   * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe Analytics AppMeasurement ライブラリによって生成されたユーザー ID などです。
+   * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe AnalyticsAppMeasurementライブラリによって生成された人物 ID。
    * **一時的な ID** - 一部の行にのみ存在する識別情報です。例えば、ユーザーの認証後にハッシュ化されたユーザー名や電子メールアドレスなどです。 ほぼすべての識別情報を使用できますが、特定の永続 ID と同じイベントに 1 回以上存在している必要があります。
 * 各行に一時的な ID が格納される別のデータセット（コールセンターデータなど）。このユーザー ID は、他のデータセットの一時的な ID と同じ形式にする必要があります。
 * この機能を使用すると、データセットをステッチし、認証済みユーザーデータと非認証ユーザーデータを結合して含めることができます。データセットを結合する前に、適用される法令に準拠していることを確認してください。必要であれば、エンドユーザー権限を取得します。
@@ -62,7 +62,7 @@ ht-degree: 95%
 
 ## クロスチャネル分析の有効化
 
-組織がすべての前提条件を満たし、その制限事項を理解したら、次の手順に従って CJA での使用を開始できます。
+組織がすべての前提条件を満たし、その制限事項を理解したら、次の手順に従ってCustomer Journey Analyticsでの使用を開始できます。
 
 1. 目的のデータを Adobe Experience Platform に読み込みます。Adobe Analytics のデータについては、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)を参照してください。他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)と[データの取り込み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja)を参照してください。
 1. 次の情報をアドビカスタマーサポートに連絡してください。
@@ -74,9 +74,9 @@ ht-degree: 95%
    * サンドボックス名
 1. アドビカスタマーサポートは、お客様のリクエストを受け取ったら、アドビのエンジニアリング部門と連携して、クロスチャネル分析を有効にします。有効にすると、新規のユーザー ID 列を含んだ新しいキー再設定済みデータセットが Adobe Experience Platform に表示されます。アドビカスタマーサポートは、新しいデータセット ID とユーザー ID の列名を提供できます。
 1. 最初にオンにした際、アドビは、前月の初め（最大 60 日前）まで遡るステッチデータのバックフィルを提供します。このバックフィルを行うには、過去の関連付けられていないデータに一時的な ID が存在する必要があります。
-1. 新しく生成されたデータセットと、接続に含める他のデータセットを使用して、CJA で[接続を作成](/help/connections/create-connection.md)します。各データセットに適切なユーザー ID を選択します。
+1. [接続の作成](/help/connections/create-connection.md) Customer Journey Analyticsで、新しく生成されたデータセットと、含める他のデータセットを使用します。 各データセットに適切なユーザー ID を選択します。
 1. 接続に基づいて、[データ表示を作成](/help/data-views/create-dataview.md)します。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-データ表示が設定されると、CJA でのクロスチャネル分析は、CJA での他の分析と同様に機能します。ただし、データはチャネルとデバイスをまたいで適用されます。
+データビューが設定されると、Customer Journey Analyticsでの分析は、Customer Journey Analyticsでの他の分析と同様に機能します。ただし、データはチャネルとデバイスをまたいで機能します。

@@ -3,7 +3,7 @@ description: フロー機能は、web サイトおよびアプリの顧客パス
 title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 93%
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 [フロービジュアライゼーションに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=ja)（4:56）
 
-## ディメンション間のフロー {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## ディメンション間のフロー {#in}
 
 [ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローは、ホームページからメンズページを経て、靴部門に移動することが考えられます。
 

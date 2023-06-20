@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 47%
+source-wordcount: '1960'
+ht-degree: 46%
 
 ---
 
@@ -114,11 +114,11 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->CJA へのアクセス権を持たないユーザーとAnalysis Workspaceプロジェクトを共有する際は、次の点を考慮してください。
+>Analysis WorkspaceプロジェクトをCustomer Journey Analyticsへのアクセス権を持たないユーザーと共有する際は、次の点を考慮してください。
 >
->* この方法でプロジェクトを共有する機能を CJA 管理者が無効にすることができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するようにプロジェクトを共有できない場合、CJA 管理者はこの機能を無効にしています。
+>* この方法でプロジェクトを共有する機能は、Customer Journey Analytics管理者が無効にできます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するようにプロジェクトを共有できない場合、Customer Journey Analytics管理者はこの機能を無効にしています。
 >
->* 50 を超えるビジュアライゼーションが展開されたプロジェクトは、CJA へのアクセス権を持たないユーザーとは共有できません。
+>* 50 を超えるビジュアライゼーションが展開されたプロジェクトは、Customer Journey Analyticsへのアクセス権を持たないユーザーとは共有できません。
 >
 >* 共有したユーザーは、 [キュレーション](curate.md).
 > 
@@ -148,17 +148,17 @@ ht-degree: 47%
 
    プロジェクトの所有者もこのリンクの所有者です。 リンクの所有権は、プロジェクトの所有権が移行された場合にのみ、別のユーザーに移行できます。詳しくは、 [ユーザーアセットの転送またはアカウント有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) 」を参照してください。
 
-1. 次のセキュリティオプションを有効にするかどうかを選択します（このオプションは CJA 管理者が制御できます）。
+1. 次のセキュリティオプションを有効にするかどうかを選択します ( このオプションはCustomer Journey Analytics管理者が制御できます )。
 
    * **[!UICONTROL Experience Cloud 認証を要求]:**
 
      このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーだけです。 ただし、と共有するユーザーは、Adobe Analyticsにアクセスできる必要はありません。
 
-     CJA 管理者は、会社に対してこの設定をおこなうことができます。詳しくは、 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がこのオプションを設定した方法に応じて、次のシナリオが発生する場合があります。
+     Customer Journey Analytics管理者は、 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がこのオプションを設定した方法に応じて、次のシナリオが発生する場合があります。
 
-      * このオプションが表示されない場合、CJA 管理者はこの機能を有効にしていません。
+      * このオプションが表示されない場合、Customer Journey Analytics管理者はこの機能を有効にしませんでした。
 
-      * このオプションが有効で、無効にできない場合、CJA 管理者はAnalysis WorkspaceプロジェクトにアクセスするすべてのユーザーのExperience Cloud認証を必要とします。 これは、ヘルスケアシールドのライセンスを持つ組織にとって常に問題です。
+      * このオプションが有効で、無効にできない場合は、Customer Journey Analytics管理者がAnalysis WorkspaceプロジェクトにアクセスするすべてのユーザーのExperience Cloud認証を必要とします。 これは、ヘルスケアシールドのライセンスを持つ組織にとって常に問題です。
 
 1. 次の **[!UICONTROL 他のユーザーと共有（ログインは不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクをコピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) をクリックして、リンクをシステムクリップボードにコピーします。
 

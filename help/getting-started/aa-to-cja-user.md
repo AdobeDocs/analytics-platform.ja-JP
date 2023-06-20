@@ -5,42 +5,42 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 94%
+source-wordcount: '1480'
+ht-degree: 76%
 
 ---
 
 # Adobe Analytics ユーザー向けユーザーガイド
 
-Customer Journey Analytics（CJA）の採用に着手すると、従来の Analytics との類似点と相違点に気がつきます。このページでは、この CJA の実装と新しいレポートワークフローに慣れるために、これらの相違点について説明します。また、新しい概念に関する追加のリソースを提供するほか、アナリストとしてのジャーニーをより簡単に成功させるための手順についても説明します。
+お客様の組織がAdobe Customer Journey Analyticsの使用を開始している場合は、Adobe AnalyticsとCustomer Journey Analyticsの類似点と相違点に気付くかもしれません。 このページでは、この CJA の実装と新しいレポートワークフローに慣れるために、これらの相違点について説明します。また、新しい概念に関する追加のリソースを提供するほか、アナリストとしてのジャーニーをより簡単に成功させるための手順についても説明します。
 
-CJA のいくつかの機能は、業界標準に合わせて名前が変更され、再設計されています。更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。カスタムディメンションおよび指標を柔軟に使用できるように、eVar と prop の制限は撤廃されました。
+Customer Journey Analyticsのいくつかの機能は、業界標準に合わせて名前が変更され、再設計されます。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。カスタムディメンションおよび指標を柔軟に使用できるように、eVar と prop の制限は撤廃されました。
 
 ## 変更されていない点
 
 レポート面で使い慣れた内容の多くは変更されていません。
 
 * データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。ワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
-* [Adobe Analytics ダッシュボード](/help/mobile-app/home.md)も、同じバージョンを使用可能で、CJA と従来の Analytics で同様に機能します。
+* 同じバージョンの [Adobe Analyticsダッシュボード](/help/mobile-app/home.md) が使用可能で、Customer Journey AnalyticsとAdobe Analyticsの間で同様の機能を果たします。
 * [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています（以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
 
 ## レポートの変更点
 
-より多くのクロスチャネルデータにアクセスして分析できるようになりました。例えば、これらのデータセットが取り込まれて CJA の使用するデータビューに含まれる場合、複数のチャネルのパフォーマンスを分析するワークスペースプロジェクトを作成できます（次の「データアーキテクチャの変更」を参照）。
+より多くのクロスチャネルデータにアクセスして分析できるようになりました。例えば、複数のチャネルのパフォーマンスを分析する Workspace プロジェクトを作成できます。たとえば、これらのデータセットが組織で取り込まれ、Customer Journey Analyticsが使用するデータビューに含まれる場合です（以下の「データアーキテクチャの変更」を参照）。
 
 ![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
 
 ## データアーキテクチャの変更 {#architecture}
 
-CJA は Adobe Experience Platform からデータを取得します。Experience Platform を使用すると、顧客データとコンテンツを、どのシステムまたはチャネルからでも一元管理および標準化できます。データサイエンスと機械学習を適用して、パーソナライズされたエクスペリエンスのデザインと配信を大幅に改善できます。
+Customer Journey AnalyticsはAdobe Experience Platformからデータを取得します。 Experience Platform を使用すると、顧客データとコンテンツを、どのシステムまたはチャネルからでも一元管理および標準化できます。データサイエンスと機械学習を適用して、パーソナライズされたエクスペリエンスのデザインと配信を大幅に改善できます。
 
 Experience Platform 内の顧客データは、[スキーマ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja)とデータのバッチで構成されるデータセットとして保存されます。Experience Platform について詳しくは、[Adobe Experience Platform アーキテクチャの概要](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=ja)を参照してください。
 
-CJA 管理者が設定します。 [接続](/help/connections/create-connection.md) をExperience Platform内のデータセットに追加します。 その後、この接続を使用して、[データビュー](/help/data-views/data-views.md)を作成します。データビューは、概念的には仮想レポートスイートと似ており、CJA でのレポートの基礎となります。レポートのすべてのデータは Experience Platform から提供されるので、レポートスイートはデータのコンテナとしては使用されなくなりました。
+Customer Journey Analytics管理者が設定しています [接続](/help/connections/create-connection.md) をExperience Platform内のデータセットに追加します。 その後、この接続を使用して、[データビュー](/help/data-views/data-views.md)を作成します。データビューは概念的には仮想レポートスイートと似ており、Customer Journey Analyticsのレポートの基礎です。 レポートのすべてのデータは Experience Platform から提供されるので、レポートスイートはデータのコンテナとしては使用されなくなりました。
 
-接続を使用すれば、次のビデオのように、Adobe Experience Platform のデータセットを Analytics 管理者が CJA に統合できます。
+接続を使用すれば、Analytics 管理者は、次のビデオに含まれるAdobe Experience PlatformのデータセットをCustomer Journey Analyticsに統合できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
@@ -60,7 +60,7 @@ CJA 管理者が設定します。 [接続](/help/connections/create-connection.
 
 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]の概念は、[!UICONTROL Customer Journey Analytics] には存在しません。Adobe Analytics では、eVar と prop によって、コンテンツや顧客、キャンペーンなどの説明が格納され、イベントによって、売上高やサブスクリプション、獲得したリードなどがカウントされます。Customer Journey Analytics では、両方のタイプのデータが保持され、Analysis Workspace の左パネルの「ディメンション」または「指標」から、同じ方法でアクセスできます。
 
-CJA では、ディメンション、指標、リストフィールドなど、無制限のスキーマ要素を使用できます。これらは、Experience Platform 内のディメンション、指標、リストフィールドなど、無制限のスキーマ要素にマッピングされます。Adobe Analytics ではルールの処理後にすべての訪問およびアトリビューションの設定が適用されますが、Customer Journey Analytics ではクエリ時に適用されます。
+Customer Journey Analyticsでは、ディメンション、指標、リストフィールドなど、無制限のスキーマ要素を使用できます。 これらは、Experience Platform 内のディメンション、指標、リストフィールドなど、無制限のスキーマ要素にマッピングされます。Adobe Analytics ではルールの処理後にすべての訪問およびアトリビューションの設定が適用されますが、Customer Journey Analytics ではクエリ時に適用されます。
 
 この柔軟性により、1 つのスキーマフィールドをディメンションと指標の両方で使用し、異なるトラッキングニーズに対応することも可能になりました。
 
@@ -82,7 +82,7 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 ## 計算指標の概念の変更
 
-計算指標は、従来の Analytics と CJA で同じような名前が付けられています。ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。つまり、既存の計算指標はすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。Adobe Analytics の計算指標を Customer Journey Analytics に移行するには、次のビデオを参照してください。
+計算指標は、Adobe AnalyticsとCustomer Journey Analyticsで同じ名前を付けています。 ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。つまり、既存の計算指標はすべて、[!UICONTROL Customer Journey Analytics] では互換性がなく、使用できません。Adobe Analytics の計算指標を Customer Journey Analytics に移行するには、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
@@ -104,10 +104,10 @@ CJA では、ディメンション、指標、リストフィールドなど、�
 
 ## 訪問者の識別方法の変更
 
-CJA では、ECID 以外にも ID の概念を拡張し、顧客 ID や Cookie ID、ステッチされた ID、ユーザー ID、トラッキングコードなど、任意の ID を使用できるようになりました。複数のデータセットをまたいで共通の名前空間 ID を使用するか、[クロスチャネル分析](/help/cca/overview.md)を使用すると、異なるデータセットをまたいで人々をリンクできます。CJA でワークスペースプロジェクトを設定するユーザーは、複数のデータセットをまたいで使用される ID を理解する必要があります。次のビデオでは、CJA での ID の使用について説明しています。
+Customer Journey Analyticsは、ECID 以外に ID の概念を拡張し、顧客 ID、Cookie ID、ステッチ済み ID、ユーザー ID、トラッキングコードなど、使用する ID を含めます。 複数のデータセットをまたいで共通の名前空間 ID を使用するか、[クロスチャネル分析](/help/cca/overview.md)を使用すると、異なるデータセットをまたいで人々をリンクできます。Customer Journey Analyticsで Workspace プロジェクトを設定するユーザーは、データセット全体で使用される ID を理解する必要があります。 Customer Journey Analyticsでの ID の使用について重点的に説明している次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 低トラフィックディメンション項目の概念の変更
 
-従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。CJA では、このような基数の高いフィールドに対する制限が緩和されました。レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。一意の値を多く含むディメンションのレポートを CJA がどのように最適化するかについて詳しくは、[ロングテール](../analysis-workspace/workspace-faq/long-tail.md)を参照してください。
+従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。Customer Journey Analyticsには、基数の高いフィールドに対する制限は少なくなります。 レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。詳しくは、 [ロングテール](../analysis-workspace/workspace-faq/long-tail.md) を参照してください。

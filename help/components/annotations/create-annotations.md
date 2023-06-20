@@ -4,10 +4,10 @@ description: ワークスペースでの注釈の作成方法
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 80%
+source-wordcount: '699'
+ht-degree: 76%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 80%
 | **[!UICONTROL 折れ線]グラフの点を右クリックします。** | [!UICONTROL 注釈ビルダー]が開きます。なお、この方法で作成された注釈は、デフォルトでは、作成されたプロジェクトでのみ表示されます。ただし、すべてのプロジェクトで利用できるようにすることができます。日付や指標などは既に入力されていることにも注意してください。<p>![](assets/annotate-line.png) |
 | **ワークスペースで、[!UICONTROL コンポーネント]／[!UICONTROL 注釈を作成]に移動します。** | [!UICONTROL 注釈ビルダー]が開きます。 |
 | **次のホットキーを使用**&#x200B;して注釈ビルダーを開きます。PC：`ctrl` + `shift` + O、Mac：`shift` + `command` + O | なお、ホットキーを使用して注釈を作成すると、事前に選択された範囲（指標またはディメンション）を含まずに、現在の日付に対して 1 日分の注釈が作成されます。 |
-| **[CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/) を使用します** | CJA Annotations API を使用すると、Adobe Developer を通じてプログラムで注釈を作成、更新または取得できます。これらの API は、アドビが製品 UI 内で使用するのと同じデータおよびメソッドを使用します。 |
+| **以下を使用： [Customer Journey Analytics注釈 API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Customer Journey Analytics注釈 API を使用すると、Adobe Developerを通じて、注釈の作成、更新、取得をプログラムで実行できます。 これらの API は、アドビが製品 UI 内で使用するのと同じデータおよびメソッドを使用します。 |
 
 1. [!UICONTROL 注釈ビルダー]の要素を入力します。
 

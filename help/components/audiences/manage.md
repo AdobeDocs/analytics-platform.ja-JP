@@ -2,10 +2,10 @@
 title: Customer Journey Analytics で作成したオーディエンスの管理
 description: Customer Journey Analytics でのオーディエンスの管理方法を学ぶ
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 75%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 100%
 * オーディエンスの自動更新／アップデートを&#x200B;**スケジュール設定またはスケジュール解除**&#x200B;できます。スケジュールの最大有効期限は 1 年です。
 * 有効期限が近づいたら&#x200B;**オーディエンスの更新スケジュールを更新**&#x200B;します。有効期限が近づいたオーディエンスは、予定レポートの有効期限が近づいた場合と同様に扱われます。管理者は、スケジュールの期限が切れる 1 か月前にメールを受け取ります。
 * **更新間隔l**&#x200B;と&#x200B;**オーディエンスが最後に更新された時間**&#x200B;を表示します。
-* Customer Journey Analytics（CJA）からの&#x200B;**オーディエンスの作成に要した時間**、およびオーディエンスがアクティベーション目的でリアルタイム顧客プロファイルに表示されるまでに要した時間に関するインサイトを得ます。
-* CJA のオーディエンスが **リアルタイム顧客プロファイル** または（理想的に）CJA で作成されたオーディエンスを使用する Experience Platform アプリケーションでアクティブに使用されているかを確認します。
+* 次の項目に関するインサイトを得る **オーディエンスの作成に要した時間** をCustomer Journey Analyticsから削除し、オーディエンスがアクティブ化のためにリアルタイム顧客プロファイルに表示されるまでに要した時間を定義します。
+* オーディエンスがCustomer Journey Analyticsかどうかを確認 **リアルタイム顧客プロファイルでアクティブに使用されている** または（理想的には）Customer Journey Analyticsが作成したオーディエンスを使用するExperience Platformアプリケーション。
 
 ## 管理 UI
 
@@ -36,4 +36,4 @@ ht-degree: 100%
 | [!UICONTROL  前回の更新] | オーディエンスが最後に更新された日時。 |
 | [!UICONTROL 最終変更日] | オーディエンスが最後に編集または変更された日時。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

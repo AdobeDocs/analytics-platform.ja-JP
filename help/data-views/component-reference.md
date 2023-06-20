@@ -4,16 +4,16 @@ description: 任意のデータビューに追加できるすべての標準コ�
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 88%
+source-wordcount: '1016'
+ht-degree: 86%
 
 ---
 
 # 標準コンポーネントリファレンス
 
-CJA のほとんどのディメンションと指標は、Adobe Experience Platform データセットのスキーマ要素に基づいています。ただし、使用する接続に関係なく、データビューに追加できるコンポーネントがいくつかあります。
+Customer Journey Analytics内のほとんどのディメンションと指標は、Adobe Experience Platformデータセットのスキーマ要素に基づいています。 ただし、使用する接続に関係なく、データビューに追加できるコンポーネントがいくつかあります。
 
 [!UICONTROL 標準] コンポーネントとは、データセットスキーマフィールドから生成されるのではなく、システムによって生成されるコンポーネントを指します。Analysis Workspace でのレポート機能を強化するために必要なシステムコンポーネントもあれば、オプションのシステムコンポーネントもあります。
 
@@ -54,7 +54,7 @@ CJA のほとんどのディメンションと指標は、Adobe Experience Platf
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
 | [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL セッションを返す] | 指標 | 人物の初回セッションではなかったセッションの数。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。この [!UICONTROL 人物 ID] ディメンションは、データセットを組み合わせ、CJA 内の個別の人を識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に至るまですべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
+| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これらのいずれかを個人 ID として使用できます。例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。この [!UICONTROL 人物 ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics内の個別の人を識別する基盤です。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に至るまですべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` など |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
 | [!UICONTROL リピートセッション] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |

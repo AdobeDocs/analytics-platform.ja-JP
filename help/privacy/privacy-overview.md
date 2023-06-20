@@ -2,26 +2,26 @@
 title: Customer Journey Analytics とデータガバナンス
 description: Customer Journey Analytics でのデータガバナンスの仕組みについて説明します。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 5f69840fa19fbf7ba6ecac1cd198cfa4a7dd905d
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 68%
 
 ---
 
-# Customer Journey Analytics とデータガバナンス
+# Adobe Customer Journey Analyticsとデータガバナンス
 
 一般に、Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。
 
 ## データガバナンス
 
-CJA と [Adobe Experience Platform のデータガバナンス](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja)の統合により、機密性の高い CJA データのラベル付けとプライバシーポリシーの実施が可能になります。
+Adobe Customer Journey Analyticsと [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) では、機密Customer Journey Analyticsデータのラベル付けとプライバシーポリシーの実施が可能です。
 
-Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、CJA データビューワークフローで表示できます。これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。
+Experience Platformが使用するデータセットで作成されたプライバシーラベルとポリシーは、Customer Journey Analyticsデータビューワークフローで表示できます。 これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。
 
-また、データが CJA から（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが付加されて、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに知らせます。
+また、データがCustomer Journey Analyticsから（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加され、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに通知します。
 
-この統合により、コンプライアンスを管理しやすくなります。組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、CJA ユーザーは、データ管理人に定義されたポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
+この統合により、コンプライアンスを管理しやすくなります。組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Customer Journey Analyticsユーザーは、データ管理人が定義したポリシーに準拠していることを知り、より自信を持ってデータを使用できます。
 
 [詳細情報](/help/data-views/data-governance.md)
 

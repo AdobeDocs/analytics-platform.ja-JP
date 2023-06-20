@@ -1,26 +1,26 @@
 ---
 title: Customer Journey Analytics のアクセス制御
-description: CJA でアクセス制御を実装する方法について説明します。
+description: アクセス制御を実装する方法について説明します。Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 96%
+source-wordcount: '937'
+ht-degree: 83%
 
 ---
 
 # Customer Journey Analytics のアクセス制御
 
-Customer Journey Analytics（CJA）は、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセスです。このトピックでは、これらの役割について詳しく説明します。
+Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセス。 このトピックでは、これらの役割について詳しく説明します。
 
 さらに、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセス制限についてのより詳細な方法についても説明します。
 
 ## 製品管理者の役割
 
-製品管理者には、CJA 内で必要なタスクを完了する権限があります。[Admin Console](https://adminconsole.adobe.com/enterprise/) の [!UICONTROL Customer Journey Analytics]／「[!UICONTROL 管理者]」タブ／[!UICONTROL 管理者を追加]で、**Customer Journey Analytics 製品プロファイル**&#x200B;に自身が製品管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
+製品管理者には、Customer Journey Analytics内で必要なタスクを完了する権限があります。 [Admin Console](https://adminconsole.adobe.com/enterprise/) の [!UICONTROL Customer Journey Analytics]／「[!UICONTROL 管理者]」タブ／[!UICONTROL 管理者を追加]で、**Customer Journey Analytics 製品プロファイル**&#x200B;に自身が製品管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
 
 * 接続またはデータ表示の作成／更新／削除を行う
 * 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新／削除を行います。
@@ -41,7 +41,7 @@ Experience Platform の権限について詳しくは、[Adobe Experience Platfo
 
 * 新しいユーザーの追加や、ユーザーグループとそれらに関連する製品プロファイルの管理など、単体製品のプロファイルを作成および管理します。
 
-* CJA で、管理する製品プロファイルの一部であるデータビューを編集します。新しいデータビューを作成することはできません。
+* Customer Journey Analyticsで、管理する製品プロファイルの一部であるデータビューを編集します。 新しいデータビューを作成することはできません。
 
 ## ユーザーレベルのアクセス
 
@@ -53,7 +53,7 @@ Workspace レポートレベルでは、別のレベルのアクセス制御を�
 
 ## 個々の指標またはディメンションへのアクセス権を付与する
 
-Customer Journey Analytics では、従来の Adobe Analytics の場合とは異なり、個々の指標やディメンションに権限を付与または拒否することはできません。指標とディメンションは[データビュー](/help/data-views/data-views.md)で変更できるので、CJA で変更される可能性があります。これらを変更すると、レポートも遡って変更されます。
+Customer Journey Analytics では、従来の Adobe Analytics の場合とは異なり、個々の指標やディメンションに権限を付与または拒否することはできません。指標およびディメンションは、 [データビュー](/help/data-views/data-views.md) こうして、Customer Journey Analyticsが変わる。 これらを変更すると、レポートも遡って変更されます。
 
 ## ユースケース
 
@@ -67,7 +67,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 例えば、ユーザーに 1 日に限りデータへのアクセス権を付与するとします。アクセスを特定の行に制限する方法を次に示します。
 
-1. CJA でフィルターを作成します。ここでの&#x200B;**[!UICONTROL 日]**&#x200B;は、データアクセスを付与する日付となります。
+1. 次の場所にフィルターをCustomer Journey Analytics **[!UICONTROL 日]** は、データアクセスを希望する日付と等しくなります。
 1. [!UICONTROL データビュー]／[!UICONTROL 設定]をクリックし、そのフィルターをデータビューに追加します。
 1. データビューを保存し、フィルターをデータセットに自動適用します。フィルター定義に適合しない行は、編集されたデータビューから自動的に除外されるようになります。
 1. Admin Console で新しい製品プロファイルを作成し、ユーザーを追加して、このデータビューへのアクセスを制限します。
@@ -78,22 +78,22 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 医療関連の例を次に示します。例えば、このデータを含むデータセットから、データビューで「高血圧」と呼ばれる指標を作成したとします。指標であるということは、この指標の総値を確認できますが、その指標に該当する個々の患者は確認できません。
 
-## Admin Console での CJA 権限
+## Customer Journey Analyticsの権限のAdmin Console
 
-「**[!UICONTROL 権限]**」タブは、[Admin Console](https://adminconsole.adobe.com/enterprise/) の各製品プロファイルの一部です。特定の製品プロファイルにユーザーを追加できます。次に、特定のデータビューに権限を割り当て、製品プロファイルのユーザーが持つ権限を指定します。CJA 固有の権限を次に示します。
+「**[!UICONTROL 権限]**」タブは、[Admin Console](https://adminconsole.adobe.com/enterprise/) の各製品プロファイルの一部です。特定の製品プロファイルにユーザーを追加できます。次に、特定のデータビューに権限を割り当て、製品プロファイルのユーザーが持つ権限を指定します。次に、Customer Journey Analytics固有の権限を示します。
 
 ![Admin Console 権限](assets/permissions.png)
 
 | 権限 | 定義 |
 | --- | --- |
 | **[!UICONTROL データビュー]** | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
-| **[!UICONTROL レポートツール]**： |  |
+| **[!UICONTROL レポートツール]**： |   |
 | **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
 | **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
 | **[!UICONTROL フィルターの作成]** | ユーザーは[フィルター](/help/components/filters/filters-overview.md)を作成できます。 |
-| **[!UICONTROL Labs のアクセス]** | ユーザーは、CJA で「[Labs](/help/labs/labs.md)」タブにアクセスできます。 |
+| **[!UICONTROL Labs のアクセス]** | ユーザーが [ラボ](/help/labs/labs.md) タブをCustomer Journey Analytics |
 | **[!UICONTROL 注釈の作成]** | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |

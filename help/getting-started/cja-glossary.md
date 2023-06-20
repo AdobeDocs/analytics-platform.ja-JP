@@ -4,10 +4,10 @@ description: Customer Journey Analytics の用語集。
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: ht
-source-wordcount: '336'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Customer Journey Analytics の用語には、Adobe Analytics でこれまで使�
 | Experience Cloud 組織 | ログイン会社 | [組織とアカウントのリンク](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja#topic_C31CB834F109465A82ED57FF0563B3F1)を参照してください。 |
 | 該当なし | レポートスイート | 従来の Adobe Analytics のレポートスイートは存在しなくなりました。代わりに、接続を確立した Platform データセットから（仮想）[データビュー](/help/data-views/create-dataview.md)を作成します。 |
 | フィルター | セグメント | セグメントはフィルターになりました。Customer Journey Analytics のフィルターは、セグメントと同じように動作します。用語のみが変更されました。 |
-| データビュー | 仮想レポートスイート | Adobe Analytics では、仮想レポートスイートは親レポートスイートのフィルターされたビューになります。仮想レポートスイートと CJA におけるデータビューの主な違いは、仮想レポートスイートが「ベース」または「親」レポートスイートのサブセットであり、その設定の一部が継承される点です。親／基本レポートスイートは存在しなくなるので、独自の設定でデータビューを定義します。 |
+| データビュー | 仮想レポートスイート | Adobe Analytics では、仮想レポートスイートは親レポートスイートのフィルターされたビューになります。Customer Journey Analyticsの仮想レポートスイートとデータビューの主な違いは、仮想レポートスイートが「ベース」または「親」レポートスイートのサブセットであり、その設定の一部が継承される点です。 親／基本レポートスイートは存在しなくなるので、独自の設定でデータビューを定義します。 |
 
 ## Adobe Experience Platform の用語
 

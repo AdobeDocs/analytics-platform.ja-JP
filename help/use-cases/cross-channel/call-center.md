@@ -4,10 +4,10 @@ description: コールセンターと web サイトのデータをリンクさ�
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 98%
 
 ---
 
@@ -41,14 +41,14 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## ユーザー ID のステッチ
 
-CJA では、[結合データセット](/help/connections/combined-dataset.md)を生成する際に、共通の識別情報が必要です。
+Customer Journey Analyticsで [結合データセット](/help/connections/combined-dataset.md).
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
 * いずれかのデータセットに、一部のイベントにのみ共通する識別情報がある場合は、クロスチャネル分析を使用してデータを結合できます。これらの 2 つのデータセットに対してクロスチャネル分析を有効にする手順については、「[クロスチャネル分析の概要](/help/cca/overview.md)」を参照してください。
 
-## Customer Journey Analytics（CJA）での接続の作成
+## Customer Journey Analytics で接続を作成する
 
-CJA で[接続を作成](/help/connections/create-connection.md)します。
+[Customer Journey Analytics で接続を作成する.](/help/connections/create-connection.md)
 
 * クロスチャネル分析を使用している場合、新しいステッチ済みデータセットを利用できます。新しく作成したステッチ済み ID フィールドをユーザー ID として使用します。
 * それ以外の場合は、元の web データセットとコールセンターデータセットの両方を選択して、接続に使用できます。

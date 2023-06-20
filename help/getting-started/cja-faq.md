@@ -4,16 +4,16 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 96%
+source-wordcount: '2162'
+ht-degree: 84%
 
 ---
 
 # よくある質問
 
-[!UICONTROL Customer Journey Analytics]（CJA）は、次世代の Adobe Analytics 製品です。次に、CJA に関するよくある質問に対する回答を示します。詳しくは、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
+Adobe Customer Journey Analyticsは次世代の分析製品です。 次に、Customer Journey Analyticsに関するよくある質問に対する回答を示します。 詳しくは、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
 ## 1. 前提条件 {#prerequisites}
 
@@ -70,7 +70,7 @@ CCA（クロスチャネル分析）では、学習した一意の ID に基づ�
 
 +++**未関連付けプロファイルデータセットレコードに対して期待される動作は何ですか？**
 
-**シナリオの例**：`CRMid` をユーザー ID として使用することで、CJA 接続の 2 つのデータセットを結合します。1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。他のデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40%に `CRMid` が Web イベントデータセットに存在する。 残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか。<p> **回答**：イベントが関連付けられていないプロファイル行は、CJA に保存されます。ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。
+**シナリオの例**:を使用して、Customer Journey Analytics接続で 2 つのデータセットを結合する `CRMid` をユーザー ID として設定します。 1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。他のデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40%に `CRMid` が Web イベントデータセットに存在する。 残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか。<p> **回答**:イベントが関連付けられていないプロファイル行は、Customer Journey Analyticsに保存されます。 ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。
 
 +++
 
@@ -118,7 +118,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 +++
 
 
-+++**過去または未来の日付やタイムスタンプを CJA イベントデータセットに取り込む場合、どのような制限がありますか？**
++++**過去または将来の日付/タイムスタンプをCustomer Journey Analyticsイベントデータセットに取り込む際の制限は何ですか。**
 
 <ul><li>過去の日付／タイムスタンプの場合：最大 10 年前までのイベントデータ。</li><li>将来の日付／タイムスタンプの場合：最大 1 か月先のイベントデータ（予測）。</li></ul>
 
@@ -128,17 +128,17 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 ## 4. 待ち時間に関する考慮事項 {#latency}
 
 >[!NOTE]
->CJA のデータサイズは固定ではないので、アドビは標準的な取り込み時間を明言することはできません。アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
+>Customer Journey Analyticsには固定データサイズがないので、Adobeは標準の取り込み時間にコミットできません。 アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
 +++**[!UICONTROL Adobe Experience Platform] 上の [!UICONTROL Customer Journey Analytics] では、どの程度の待ち時間が予想されますか？**
 
-<ul><li>ライブデータまたはイベント：AEP でデータが使用可能になってから 90 分以内に処理して取り込みます（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>
+<ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>
 
 +++
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、CJA データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+この [**[!UICONTROL 周期データウィンドウを有効にする&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection) を使用すると、Customer Journey Analyticsデータの保持を周期的な期間（3 か月、6 か月など）として月単位で定義できます。 これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
@@ -148,16 +148,16 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 | 目的 | 結果 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。現在、削除されたサンドボックスに関連付けられていた CJA 内の[!UICONTROL 接続]は、自動的には削除されません。 |
+| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。現在、 [!UICONTROL 接続] 削除されたサンドボックスに関連付けられているCustomer Journey Analytics内は、自動的には削除されません。 |
 | [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上の[!UICONTROL データセット]が関連付けられている[!UICONTROL スキーマ]を削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
-| [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | AEP データレイクのデータセットを削除すると、そのデータセットから、そのデータセット自体を含むすべての CJA 接続へのデータフローが停止します。そのデータセットのデータは、関連付けられた CJA 接続から自動的に削除されます。 |
+| [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platformデータレイクでデータセットを削除すると、そのデータセットから、そのデータセットを含むすべてのCustomer Journey Analytics接続へのデータフローが停止します。 データセットのデータは、関連付けられたCustomer Journey Analytics接続から自動的に削除されます。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 保存したAdobe内のデータセットの削除プロセスを運用中に設定するには、接続アカウントチームに連絡してください。 |
-| （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | [!UICONTROL Adobe Experience Platform] のデータセットからバッチを削除すると、そのバッチを含む CJA 接続からも同じバッチが削除されます。CJA には、[!UICONTROL Adobe Experience Platform] のバッチが削除されたことが通知されます。 |
+| （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | バッチが [!UICONTROL Adobe Experience Platform] データセットの場合、同じバッチが、その特定のバッチを含むCustomer Journey Analytics接続から削除されます。  Customer Journey Analyticsに、 [!UICONTROL Adobe Experience Platform]. |
 | [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、そのバッチからのデータも部分的なデータも [!UICONTROL Customer Journey Analytics] には表示されません。取り込みがロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータは [!UICONTROL Customer Journey Analytics] に表示されます。 |
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存するワークスペースプロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
 
-## 7. CJA でレポートスイートを結合する際の考慮事項 {#merge-reportsuite}
+## 7.レポートスイートをCustomer Journey Analyticsで結合する際の考慮事項 {#merge-reportsuite}
 
 [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、次の影響を考慮してください。
 
@@ -166,7 +166,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | 変数 | [!UICONTROL eVars] などの変数は、レポートスイート間で並べて使用することはできません。例えば、レポートスイート 1 の eVar1 が&#x200B;**[!UICONTROL ページ]**&#x200B;を指し、レポートスイート 2 の eVar1 が **[!UICONTROL 内部キャンペーン]** を指している場合、レポートの内容が混在したり、不正確になったりする可能性があります。 |
 | [!UICONTROL セッション]と[!UICONTROL ユーザー]のカウント | 複数のレポートスイートをまたいで重複排除が行われます。その結果、カウントが一致しない場合があります。 |
 | 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL 購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。これにより、主要指標の数が増えすぎるのを防ぎます。その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
-| 通貨 | CJA では、通貨換算はまだサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
+| 通貨 | 通貨換算は、まだCustomer Journey Analyticsでサポートされていません。 異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
 | [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md)は複数のレポートスイートにまたがって適用され、[!UICONTROL フィルター]、[!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つに組み合わせる場合 [!UICONTROL 参照] データセットに含めると、問題が発生する場合があります。 |
 
@@ -197,7 +197,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**既存のセグメント／計算指標はどうなりますか？**
 
-[!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに AEP スキーマを使用します。つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。
+[!UICONTROL Customer Journey Analytics] は、eVar、prop またはイベントを使用しなくなりました。代わりに、Adobe Experience Platformスキーマを使用します。 つまり、既存のセグメントや計算指標には、いずれも [!UICONTROL Customer Journey Analytics] との互換性はありません。
 
 +++
 

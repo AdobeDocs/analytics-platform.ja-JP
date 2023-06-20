@@ -4,24 +4,24 @@ description: 使用状況の推定方法を 2 つ、管理方法を 1 つ示し�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 94%
+source-wordcount: '895'
+ht-degree: 72%
 
 ---
 
 # Customer Journey Analytics の使用状況の表示と管理
 
-CJA の使用状況を表示するには、次のいくつかの方法を使用できます。
+Customer Journey Analyticsの使用状況を表示するには、次の複数の方法を使用できます。
 
 * 各接続のイベントデータ行を追加します。詳しくは、以下の[接続サイズの予測]（#estimate size）を参照してください。この方法では、特定のタイムスタンプについて、接続ごとのイベント行データを簡単に確認することができます。
 * 使用状況を 3 つの方法で表示します。それぞれの方法について詳しくは、以下で説明します。
    * Analysis Workspace を使用して先月のイベントを報告します。
    * Report Builder を使用して先月のイベントを報告します。
-   * CJA API を使用して、自動レポートを作成します。
+   * Customer Journey AnalyticsAPI を使用して、自動レポートを作成します。
 
-CJA の使用を管理するには：
+Customer Journey Analytics使用を管理するには：
 
 * 周期的なデータウィンドウを定義します。
 
@@ -55,7 +55,7 @@ CJA の使用を管理するには：
 
    * [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)を変更する。
    * [未使用の接続を削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
-   * [AEP のデータセットを削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
+   * [Adobe Experience Platformでのデータセットの削除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components).
    * 追加容量のライセンスを取得するには、Adobeアカウントチームにお問い合わせください。
 
 ## すべてのイベントデータを使用してワークスペースプロジェクトを作成する {#workspace-event-data}
@@ -68,7 +68,7 @@ CJA の使用を管理するには：
 >
 >    使用量が事実上 2 倍になってしまうので、使用量を測定するだけのために、すべてのデータを含む新しい接続を作成しないでください。
 
-1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウンリスト ) を参照し、現在の CJA 契約の最初の日から始まる、月の最初の金曜日までを示します。
+1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウンリスト ) を参照し、現在のCustomer Journey Analytics契約の最初の日から始まる、月の最初の金曜日までを示します。
 
    ![イベント](./assets/events-usage.png)
 
@@ -80,24 +80,24 @@ CJA の使用を管理するには：
 
 Report Builder で各データ表示に [1 つのデータブロックを作成](/help/report-builder/create-a-data-block.md)してから、合計を求めます。
 
-## CJA API での自動レポートの作成 {#api-report}
+## Customer Journey AnalyticsAPI での自動レポートの作成 {#api-report}
 
-1. [CJA レポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API)を使用し、**すべての接続について**、すべてのイベントデータに関するレポートを実行します。レポートが次のタイミングで実行されるように設定します
+1. 以下を使用： [Customer Journey Analyticsレポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) をクリックして、すべてのイベントデータに関するレポートを実行します。 **すべての接続**. レポートが次のタイミングで実行されるように設定します
 
    * 毎月第一金曜日
-   * 現在の CJA 契約の最初の日に遡る
+   * 現在のCustomer Journey Analytics契約の最初の日に戻る
 
-   これにより、月々の使用状況のトレンドを把握できます。すべての CJA 接続の合計行数が表示されます。
+   これにより、月々の使用状況のトレンドを把握できます。すべてのCustomer Journey Analytics接続の合計行数が表示されます。
 
 1. Excel を使用して、このレポートをさらにカスタマイズします。
 
 ## 周期的なデータウィンドウを定義して使用状況を管理する {#rolling}
 
-使用状況を管理するために、[接続 UI](/help/connections/create-connection.md) を使用して CJA データ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）の周期的な時間枠として定義できます。
+使用状況を管理するには、 [接続 UI](/help/connections/create-connection.md) では、Customer Journey Analyticsデータの保持を、接続レベルで月（1 ヶ月、3 ヶ月、6 ヶ月など）単位の周期的な期間として定義できます。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
-デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。Experience Platform に 25 か月分のデータがある場合、CJA はバックフィルを通じて 25 か月分のデータを取得します。Platform でこのうち 10 か月を削除すると、CJA は残りの 15 か月を保持します。
+デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。Experience Platformに 25 ヶ月分のデータがある場合、Customer Journey Analyticsはバックフィルを通じて 25 ヶ月分のデータを取得します。 Platform でこれらの月のうち 10 を削除した場合、Customer Journey Analyticsは残りの 15 ヶ月を保持します。
 
-データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットには、周期的なデータ時間枠設定は存在しません。接続にプロファイルデータセットまたはルックアップデータセットが含まれている場合、それらはイベントデータセットと結合されているので、データはイベントデータセットタイムスタンプのデータ保持設定に基づいて CJA に保持されます。
+データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットには、周期的なデータ時間枠設定は存在しません。接続に何らかのプロファイルまたは参照データセットが含まれる場合、それらはイベントデータセットと結合されるので、イベントデータセットのタイムスタンプのデータ保持設定に基づいて、Customer Journey Analyticsでデータが保持されます。
 
