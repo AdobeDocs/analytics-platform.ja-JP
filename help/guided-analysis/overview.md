@@ -1,9 +1,10 @@
 ---
 title: ガイド付き分析：概要
 description: 製品チームがレポートやインサイトを簡単に生成できるCustomer Journey Analyticsでのデータ分析方法を提供する。
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+source-git-commit: e2020d9194f7885f80671214829f06245bbab328
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -17,10 +18,6 @@ ht-degree: 1%
 Analysis Workspaceやモバイルのスコアカードと同様、ガイド付き分析レポートでは [データビュー](../data-views/data-views.md)：を通じてAdobe Experience Platform内のデータを参照します。 [接続](../connections/overview.md). ガイド付き分析で作成したすべてのレポートは、Analysis Workspaceにシームレスに転送して、さらに調査をおこなうことができます。
 
 ガイド付き分析レポートには、現在、次の 3 つの分析タイプがあります。 [ファネル](analysis-types/funnel.md), [トレンド](analysis-types/trends.md)、および [ユーザーの増加](analysis-types/user-growth.md). これらの各分析タイプには複数のビュータイプがあり、各レポートに関する追加のインサイトを提供します。
-
-## プロビジョニング
-
-ガイド付き分析は、Customer Journey Analyticsへの有料アドオンです。 この機能の使用を開始したい場合は、担当のAdobeアカウントチームにお問い合わせください。
 
 ## インターフェイス
 
@@ -45,7 +42,9 @@ Analysis Workspaceやモバイルのスコアカードと同様、ガイド付�
 
 {style="table-layout:auto"}
 
-## 権限
+## プロビジョニング
+
+ガイド付き分析は、Adobe Product Analyticsの一部で、Customer Journey Analyticsへの有料アドオンです。 この機能の使用を開始したい場合は、担当のAdobeアカウントチームにお問い合わせください。
 
 Adobeは、今後、ガイド付き分析に固有の権限を提供する予定です。
 
