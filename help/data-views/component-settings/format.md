@@ -4,10 +4,10 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,10 +44,6 @@ ht-degree: 32%
 
 
 ### 通貨の変換と表示
-
-[!BADGE 新機能]{type=Positive}
-
-{{release-limited-testing-section}}
 
 指標の通貨の換算を有効にするには、次の手順に従います。
 

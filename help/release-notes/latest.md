@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新のCustomer Journey Analyticsリリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f224a37190d60e7f055fdeb39c42dd77d8764259
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 最新のAdobe Customer Journey Analyticsリリースノート（2023 年 6 月）
 
-**最終更新日**：2023年19月6日（PT）
+**最終更新日**：2023年21月6日（PT）
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する[継続的な配信モデル](releases.md)に基づいて動作します。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -23,10 +23,10 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 | **インテリジェントキャプション** | [!UICONTROL 折れ線グラフ]ビジュアライゼーションの自然言語による要約を使用して、ユーザー向けのストーリーテリングを強化します。[詳細情報](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023年5月17日（PT） | 2023年6月1日（PT） |
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=ja#company-preferences)</p> | 2023年5月3日（PT） | 2023年6月6日（PT） |
 | **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することもできます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年6月14日（PT） |
-| **PowerBI および Tableau によるCustomer Journey Analyticsデータビューへのアクセス** | Adobe Customer Journey Analytics SQL Connector を使用すると、Customer Journey Analyticsで定義したデータビューに SQL からアクセスできます。 Power BI、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツールに詳しいCustomer Journey Analyticsエンジニアやアナリストは、Analysis Workspaceプロジェクトで使用するのと同じデータビューに基づいて、レポートやダッシュボードを作成できます。 [詳細情報](/help/data-views/sql-connector.md) |  | 2023年6月30日（PT） |
-| **Experience Edge 位置情報検索** | Experience Edge 地域ルックアップがデータストリームに対して有効になると、Customer Journey Analyticsの位置情報データを使用してレポートを作成できるようになります。 |  | 2023年6月30日（PT） |
-| **プロファイルおよびルックアップデータに対するルックアップサポートの拡張** | ルックアップデータセットをイベントデータセットだけでなく、プロファイルデータセットやルックアップデータセットにも追加できるようになります。 | 2023年6月28日（PT） | 2023年7月12日（PT） |
 | **通貨換算のサポート** | 通貨コンバージョンは、データビューでの指標コンポーネントの書式設定の一環としてサポートされています。 [詳細情報](../data-views/component-settings/format.md#currency) | 2023年6月7日（PT） | 2023年6月21日（PT） |
+| **PowerBI および Tableau によるCustomer Journey Analyticsデータビューへのアクセス** | Adobe Customer Journey Analytics SQL Connector を使用すると、Customer Journey Analyticsで定義したデータビューに SQL からアクセスできます。 Power BI、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツールに詳しいCustomer Journey Analyticsエンジニアやアナリストは、Analysis Workspaceプロジェクトで使用するのと同じデータビューに基づいて、レポートやダッシュボードを作成できます。 [詳細情報](/help/data-views/sql-connector.md) |  | 2023年6月30日（PT） |
+| **プロファイルおよびルックアップデータに対するルックアップサポートの拡張** | ルックアップデータセットをイベントデータセットだけでなく、プロファイルデータセットやルックアップデータセットにも追加できるようになります。 | 2023年6月28日（PT） | 2023年7月12日（PT） |
+| **Experience Edge 位置情報検索** | Experience Edge 地域ルックアップがデータストリームに対して有効になると、Customer Journey Analyticsの位置情報データを使用してレポートを作成できるようになります。 |  | 2023年7月26日（PT） |
 
 {style="table-layout:auto"}
 
