@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 84%
+source-wordcount: '2161'
+ht-degree: 83%
 
 ---
 
@@ -130,7 +130,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 >[!NOTE]
 >Customer Journey Analyticsには固定データサイズがないので、Adobeは標準の取り込み時間にコミットできません。 アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
-+++**[!UICONTROL Adobe Experience Platform] 上の [!UICONTROL Customer Journey Analytics] では、どの程度の待ち時間が予想されますか？**
++++**の予想遅延 [!UICONTROL Customer Journey Analytics] データ [!UICONTROL Adobe Experience Platform]?**
 
 <ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>
 
@@ -171,7 +171,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つに組み合わせる場合 [!UICONTROL 参照] データセットに含めると、問題が発生する場合があります。 |
 
 
-## 8. 従来の [!UICONTROL Adobe Analytics] コンポーネント
+## 8. [!UICONTROL Adobe Analytics] コンポーネント
 
 
 +++**[!UICONTROL フィルター]（[!UICONTROL セグメント]）を [!DNL Customer Journey Analytics] から Experience Platform 統合プロファイルまたは他の Experience Cloud アプリケーションに共有または公開することはできますか？**
@@ -183,7 +183,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**以前の [!UICONTROL eVar] 設定はどうなりましたか？**
 
-従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]は、[!UICONTROL Customer Journey Analytics] にはもう存在しません。スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。
+[!UICONTROL eVar], [!UICONTROL prop]、および [!UICONTROL イベント] Adobe Analyticsの意味では～にはもはや存在しない [!UICONTROL Customer Journey Analytics]. スキーマ要素（ディメンション、指標、リストフィールド）は無制限です。したがって、データ収集プロセスで適用したアトリビューション設定はすべて、クエリ時に適用されます。
 
 +++
 
