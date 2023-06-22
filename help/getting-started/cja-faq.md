@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 83%
+source-wordcount: '2217'
+ht-degree: 72%
 
 ---
 
@@ -132,7 +132,13 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**の予想遅延 [!UICONTROL Customer Journey Analytics] データ [!UICONTROL Adobe Experience Platform]?**
 
+最近、Customer Journey Analyticsでのデータの処理方法を変更しました。
+
+**古い方法：**
 <ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>
+
+**新しい方法（2023 年 6 月現在）**
+<ul><li>タイムスタンプが 24 時間未満のイベントデータは、でストリーミングされます。</li><li>タイムスタンプが 24 時間以上のイベントデータ（新しいデータと同じバッチにある場合でも）はバックフィルと見なされ、より低い優先度で取り込まれます。</li></ul>
 
 +++
 
@@ -150,12 +156,12 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | --- | --- |
 | [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。現在、 [!UICONTROL 接続] 削除されたサンドボックスに関連付けられているCustomer Journey Analytics内は、自動的には削除されません。 |
 | [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上の[!UICONTROL データセット]が関連付けられている[!UICONTROL スキーマ]を削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
-| [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platformデータレイクでデータセットを削除すると、そのデータセットから、そのデータセットを含むすべてのCustomer Journey Analytics接続へのデータフローが停止します。 データセットのデータは、関連付けられたCustomer Journey Analytics接続から自動的に削除されます。 |
+| [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platformデータレイクのデータセットを削除すると、そのデータセットから、そのデータセットを含むすべてのCustomer Journey Analytics接続へのデータフローが停止します。 データセットのデータは、関連付けられたCustomer Journey Analytics接続から自動的に削除されます。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 保存したAdobe内のデータセットの削除プロセスを運用中に設定するには、接続アカウントチームに連絡してください。 |
 | （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | バッチが [!UICONTROL Adobe Experience Platform] データセットの場合、同じバッチが、その特定のバッチを含むCustomer Journey Analytics接続から削除されます。  Customer Journey Analyticsに、 [!UICONTROL Adobe Experience Platform]. |
-| [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、そのバッチからのデータも部分的なデータも [!UICONTROL Customer Journey Analytics] には表示されません。取り込みがロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータは [!UICONTROL Customer Journey Analytics] に表示されます。 |
+| [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、そのバッチからのデータも部分的なデータも [!UICONTROL Customer Journey Analytics] には表示されません。取り込みがロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータは、 [!UICONTROL Customer Journey Analytics]. |
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul> |
-| [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存するワークスペースプロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
+| [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
 
 ## 7.レポートスイートをCustomer Journey Analyticsで結合する際の考慮事項 {#merge-reportsuite}
 
@@ -170,16 +176,13 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md)は複数のレポートスイートにまたがって適用され、[!UICONTROL フィルター]、[!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つに組み合わせる場合 [!UICONTROL 参照] データセットに含めると、問題が発生する場合があります。 |
 
-
 ## 8. [!UICONTROL Adobe Analytics] コンポーネント
 
-
-+++**[!UICONTROL フィルター]（[!UICONTROL セグメント]）を [!DNL Customer Journey Analytics] から Experience Platform 統合プロファイルまたは他の Experience Cloud アプリケーションに共有または公開することはできますか？**
++++**共有/公開できますか [!UICONTROL フィルター] から [!DNL Customer Journey Analytics] Real-Time CDPやその他のExperience Cloud・アプリケーションに**
 
 現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。
 
 +++
-
 
 +++**以前の [!UICONTROL eVar] 設定はどうなりましたか？**
 
@@ -187,13 +190,11 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++
 
-
 +++**現在、セッションと変数の永続性に関するすべての設定はどこにありますか？**
 
-[!UICONTROL Customer Journey Analytics] では、報告時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。これらの設定に対する変更は過去にさかのぼって効力を持つようになり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
+[!UICONTROL Customer Journey Analytics] では、レポート時にこれらのすべての設定が適用され、これらの設定はデータビューに反映されます。 これらの設定に対する変更が遡及的になり、複数のデータビューを使用して複数のバージョンを持つことができるようになりました。
 
 +++
-
 
 +++**既存のセグメント／計算指標はどうなりますか？**
 
@@ -201,13 +202,11 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++
 
-
 +++**[!UICONTROL Customer Journey Analytics] では `Uniques Exceeded` 制限はどのように処理されますか？**
 
 [!UICONTROL Customer Journey Analytics] には一意の値に関する制限がないので、ご心配は不要です。
 
 +++
-
 
 +++**既存の [!DNL Data Workbench] ユーザーであれば、今すぐ [!UICONTROL Customer Journey Analytics] に移行できますか？**
 
@@ -229,10 +228,10 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 場合によっては、接続によって取り込まれるイベントの合計数が [!UICONTROL Adobe Experience Platform] のデータセットの行数と異なることがあります。この例の場合、データセット「B2B Impression」には 7650 の行がありますが、[!UICONTROL Adobe Experience Platform] のデータセットの行数は 3830 です。不一致が発生する理由はいくつかあり、次の手順を実行して診断できます。
 
-1. このディメンションを **[!UICONTROL Platform データセット ID]** で分類すると、サイズは同じでも、**[!UICONTROL Platform データセット ID]** が異なる 2 つのデータセットがあることがわかります。各データセットには 3825 件のレコードがあります。つまり、[!UICONTROL Customer Journey Analytics] では、ユーザー ID またはタイムスタンプが欠落していることにより、5 件のレコードが無視されています。
+1. このディメンションを次の項目で分類 **[!UICONTROL プラットフォームデータセット ID]** サイズは同じでもサイズが異なる 2 つのデータセットがあることがわかります。 **[!UICONTROL プラットフォームデータセット ID]**. 各データセットには 3825 件のレコードがあります。つまり、[!UICONTROL Customer Journey Analytics] では、ユーザー ID またはタイムスタンプが欠落していることにより、5 件のレコードが無視されています。
 
    ![分類](assets/data-size2.png)
 
-2. また、[!UICONTROL Adobe Experience Platform] にチェックインすると、ID「5f21c12b732044194bffc1d0」のデータセットがありません。つまり、他のユーザーが最初の接続の作成時に [!UICONTROL Adobe Experience Platform] からこのデータセットを削除しています。その後、そのデータセットは Customer Journey Analytics に再び追加されましたが、[!UICONTROL Adobe Experience Platform] によって、異なる [!UICONTROL Platform データセット ID] が生成されました。
+2. また、 [!UICONTROL Adobe Experience Platform]、ID が「5f21c12b732044194bffc1d0」のデータセットがないので、他のユーザーがこの特定のデータセットを次から削除しました： [!UICONTROL Adobe Experience Platform] 最初の接続が作成された時点。 その後、再びCustomer Journey Analyticsに追加されましたが、異なる [!UICONTROL プラットフォームデータセット ID] が次の場所で生成された： [!UICONTROL Adobe Experience Platform].
 
 [!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。

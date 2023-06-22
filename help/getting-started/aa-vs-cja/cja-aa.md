@@ -4,16 +4,16 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 42%
+source-wordcount: '2056'
+ht-degree: 41%
 
 ---
 
-# Customer Journey Analytics の機能のサポート
+# Adobe Customer Journey Analyticsの機能サポート
 
-次の表に、Adobe Analyticsの機能のうち、Customer Journey Analytics(Customer Journey Analytics) でサポートされている、一部サポートされている、またはサポートされていないもの、およびAdobe Analyticsでサポートされていない、または使用できないものを示します。 これらのリストは、時間の経過と共に、機能がCustomer Journey Analyticsに追加されると変化します。
+次の表に、Adobe Analyticsのどの機能がCustomer Journey Analyticsでサポートされ、一部がサポートされている、またはサポートされていない、およびAdobe Analyticsでサポートされていない、または使用できないCustomer Journey Analyticsの機能を示します。 これらのリストは、時間の経過と共に、機能がCustomer Journey Analyticsに追加されると変化します。
 
 ## 完全にサポートされる機能／コンポーネント {#full-support}
 
@@ -56,6 +56,7 @@ ht-degree: 42%
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics Classifications Source Connector を使用して、Experience PlatformおよびCustomer Journey Analyticsにインポートできます。 参照データセットは、Experience Platformに直接アップロードし、Customer Journey Analyticsで使用できるようにすることもできます。 |
 | 分類ルールビルダー | を使用してサポート [substrings](/help/data-views/component-settings/substring.md) Customer Journey Analytics ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
 | カスタムセッション | モバイルバックグラウンドイベントを除く、すべてのカスタムセッション機能がサポートされます。 |
+| 通貨換算 | の一部としてサポート [指標コンポーネントのフォーマット](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) を選択します。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は「プロファイルデータセット」と呼ばれ、Experience Cloudから自動的に読み込まれませんが、Customer Journey Analyticsに使用する前にExperience Platformにアップロードする必要があります。 |
 | データフィード | データセットの第 1 世代のデータエクスポートは、 [Experience Platformデータアクセス API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) そして [Experience Platform先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja). これらのオプションを使用すると、Experience Platformデータレイクに収集または取り込まれるすべてのデータを、イベント/行レベルで書き出すことができます。 POST 列はクエリ時に計算されるので、後処理のデータ列は使用できません。 投稿列のエクスポートは、レポートを通じて使用できます。 |
@@ -99,7 +100,6 @@ ht-degree: 42%
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
-| 通貨換算 | サポートが予定されています。 |
 | トランザクション ID データソース | サポートが予定されています。 |
 | Adobe AnalyticsからCustomer Journey Analyticsへのプロジェクト/フィルター/計算指標の移行 | サポートが予定されています。 |
 | 概要レベルデータソース | サポートが予定されています。 |
