@@ -4,9 +4,9 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
+source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2199'
 ht-degree: 72%
 
 ---
@@ -132,7 +132,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**の予想遅延 [!UICONTROL Customer Journey Analytics] データ [!UICONTROL Adobe Experience Platform]?**
 
-<ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>
+<ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>小さなバックフィル：七日以内に<li>大きなバックフィル：30 日以内に</li></ul>
 
 最近、Customer Journey Analyticsのデータ処理方法を変更しました。
 
