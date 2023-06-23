@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新のCustomer Journey Analyticsリリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
+source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1376'
 ht-degree: 69%
 
 ---
@@ -56,7 +56,7 @@ AN-318343、AN-319453
 
 | 通知 | 追加または更新された通知 | 説明 |
 | --- | --- | --- |
-| データの処理方法の変更Customer Journey Analytics | 2023年6月22日（PT） | 最近、Customer Journey Analyticsでのデータの処理方法を変更しました。<p>**古い方法：**<ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>少量のバックフィル（例：1,000 万行のルックアップデータセット）：7 日以内<li>大量のバックフィル（例：5,000 億行）：30 日</li></ul>**新しい方法（2023 年 6 月現在）**<ul><li>タイムスタンプが 24 時間未満のイベントデータは、でストリーミングされます。</li><li>タイムスタンプが 24 時間以上のイベントデータ（新しいデータと同じバッチにある場合でも）はバックフィルと見なされ、より低い優先度で取り込まれます。</li></ul> |
+| データの処理方法の変更Customer Journey Analytics | 2023年6月22日（PT） | 最近、Customer Journey Analyticsでのデータの処理方法を変更しました。<ul><li>タイムスタンプが 24 時間未満のイベントデータは、でストリーミングされます。</li><li>タイムスタンプが 24 時間以上のイベントデータ（新しいデータと同じバッチにある場合でも）はバックフィルと見なされ、より低い優先度で取り込まれます。</li></ul> |
 
 ## 提供終了（EOL）に関する注意事項 {#eol}
 
