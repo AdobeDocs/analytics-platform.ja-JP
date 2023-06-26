@@ -4,9 +4,9 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
+source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2185'
 ht-degree: 72%
 
 ---
@@ -130,15 +130,11 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 >[!NOTE]
 >Customer Journey Analyticsには固定データサイズがないので、Adobeは標準の取り込み時間にコミットできません。 アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
-+++**の予想遅延 [!UICONTROL Customer Journey Analytics] データ [!UICONTROL Adobe Experience Platform]?**
-
 <ul><li>ライブデータまたはイベント：データがAdobe Experience Platformで使用可能になったら、90 分以内に処理および取り込みます。 （バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>小さなバックフィル：七日以内に<li>大きなバックフィル：30 日以内に</li></ul>
 
 最近、Customer Journey Analyticsのデータ処理方法を変更しました。
 
 <ul><li>タイムスタンプが 24 時間未満のイベントデータは、でストリーミングされます。</li><li>タイムスタンプが 24 時間以上のイベントデータ（新しいデータと同じバッチにある場合でも）はバックフィルと見なされ、より低い優先度で取り込まれます。</li></ul>
-
-+++
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
