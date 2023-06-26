@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -761,4 +761,5 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 派生フィールドの一般的な機能には、次の制限が適用されます。
 
 - 派生フィールドのルールを定義する場合、最大 10 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
+   - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマまたはプロファイルスキーマフィールドのみを使用できます。
 - 1 つのCustomer Journey Analytics接続につき最大 100 個の派生フィールドを指定できます。
