@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新のCustomer Journey Analyticsリリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
+source-git-commit: d48ff9810ac7f2c194e959ab5deb492238362650
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1375'
 ht-degree: 69%
 
 ---
@@ -39,7 +39,7 @@ Adobe Customer Journey Analyticsのリリースは [連続配信モデル](relea
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=ja#ims-organization-preferences)</p> | 2023年5月3日（PT） | 2023年6月6日（PT） |
 | **Analytics ダッシュボードアプリ（モバイルアプリ）の更新されたホーム画面** | 新しく更新されたホーム画面では、すべてのスコアカードを 1 つの統合されたスコアカードリストで表示できます。1 回のログインで複数の組織にアクセスできる場合、組織のすべてのスコアカードが 1 つのリストで使用できるようになります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html?lang=ja#use-dashboards) | 該当なし | 2023年5月10日（PT） |
 | **Customer Journey AnalyticsのReport Builder — セルからデータビューを選択します** | この機能を使用すると、ユーザーはセルからデータブロックのデータ表示を選択できます。これは、ワークブックを作成し、同様のデータ構造を持つ複数のデータ表示があり、異なるデータ表示で複数回ワークブックを再利用する場合に便利です。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) | 該当なし | 2023年5月24日（PT） |
-| **Customer Journey Analyticsの学習ページを更新しました** | Customer Journey Analyticsランディングページの「学習」タブに、Adobe AnalyticsからCustomer Journey Analyticsへの移行に重点を置いたコンテンツなど、Customer Journey Analyticsに固有のコンテンツが含まれるようになりました。<p>「学習」タブでは、さらに次の機能強化も利用できます。</p><ul><li>ナビゲーションが改善され、単一ページによりその他のラーニングコンテンツが表示されるデザインの改善</li><li>エクスペリエンスレベル（初級、中級、上級）に応じてラーニングコンテンツをパーソナライズする機能</li></ul><p>以前は、Customer Journey Analyticsの「学習」タブには、Adobe Analyticsの「学習」タブと同じ情報が含まれていました。</p> [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 該当なし | 2023年6月30日（PT） |
+| **Customer Journey Analyticsの学習ページを更新しました** | Customer Journey Analyticsランディングページの「学習」タブに、Adobe AnalyticsからCustomer Journey Analyticsへの移行に重点を置いたコンテンツなど、Customer Journey Analyticsに固有のコンテンツが含まれるようになりました。<p>「学習」タブでは、さらに次の機能強化も利用できます。</p><ul><li>ナビゲーションが改善され、単一ページによりその他のラーニングコンテンツが表示されるデザインの改善</li><li>エクスペリエンスレベル（初級、中級、上級）に応じてラーニングコンテンツをパーソナライズする機能</li></ul><p>以前は、Customer Journey Analyticsの「学習」タブには、Adobe Analyticsの「学習」タブと同じ情報が含まれていました。</p> [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 2023年6月27日（PT） | 2023年6月30日（PT） |
 | **Analysis Workspace でのコンポーネントの並べ替え** | <p>新しい「並べ替え」オプションは、Analysis Workspace の左側のパネルまたはデータ要素でコンポーネントを表示する際に使用できるようになりました。コンポーネントは、推奨（最も一般的に使用されるコンポーネント）、アルファベット順、またはカテゴリ順（タイプ）で並べ替えることができます。</p><p>以前は、コンポーネントを検索またはフィルタリングすることしかできませんでした。[詳細情報](/help/components/overview.md)</p> | 該当なし | 2023年6月7日（PT） |
 | **フリーフォームテーブルからの動的ディメンションを含む行の削除** | Analysis Workspace のフリーフォームテーブルで、「x」アイコンを使用して、動的ディメンションを含む特定の行をすばやく削除できるようになりました。その際、「常に項目を除外」フィルタールールが自動的に適用されます。<p>以前は、動的ディメンションを含む行を削除する唯一の方法は、フィルターダイアログでルールを手動で作成することでした。[詳細情報](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 該当なし | 2023年5月17日（PT） |
 | **パネル内にビジュアライゼーションを追加する新しいボタン** | Analysis Workspace の各パネルの下部に新しいボタンが表示され、ビジュアライゼーションをすばやく追加できるようになりました。 <p>以前は、パネルにビジュアライゼーションを追加する唯一の方法は、左側のパネルからビジュアライゼーションをドラッグしたり、既存のビジュアライゼーションを複製またはコピーしたり、空のパネルを作成したりすることでした。[詳細情報](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 該当なし | 2023年5月17日（PT） |
