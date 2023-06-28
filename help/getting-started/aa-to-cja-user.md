@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 76%
+source-wordcount: '1479'
+ht-degree: 75%
 
 ---
 
@@ -104,7 +104,7 @@ Customer Journey Analyticsでは、ディメンション、指標、リストフ
 
 ## 訪問者の識別方法の変更
 
-Customer Journey Analyticsは、ECID 以外に ID の概念を拡張し、顧客 ID、Cookie ID、ステッチ済み ID、ユーザー ID、トラッキングコードなど、使用する ID を含めます。 複数のデータセットをまたいで共通の名前空間 ID を使用するか、[クロスチャネル分析](/help/cca/overview.md)を使用すると、異なるデータセットをまたいで人々をリンクできます。Customer Journey Analyticsで Workspace プロジェクトを設定するユーザーは、データセット全体で使用される ID を理解する必要があります。 Customer Journey Analyticsでの ID の使用について重点的に説明している次のビデオを参照してください。
+Customer Journey Analyticsは、ECID 以外に ID の概念を拡張し、顧客 ID、Cookie ID、ステッチ済み ID、ユーザー ID、トラッキングコードなど、使用する ID を含めます。 データセット全体で共通の名前空間 ID を使用する、またはを使用する [ステッチ](../stitching/overview.md) は、異なるデータセットをまたいで人々をリンクするのに役立ちます。 Customer Journey Analyticsで Workspace プロジェクトを設定するユーザーは、データセット全体で使用される ID を理解する必要があります。 Customer Journey Analyticsでの ID の使用について重点的に説明している次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

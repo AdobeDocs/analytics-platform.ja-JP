@@ -4,9 +4,9 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 41%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 41%
 
 | 機能 | メモ |
 | --- | --- |
-| クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。グラフベースのステッチは、まだサポートされていませんが、今後予定されています。[クロスチャネル分析](/help/cca/overview.md)を参照してください。 |
+| クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。グラフベースのステッチは、まだサポートされていませんが、今後予定されています。詳しくは、 [ステッチ](../../stitching/overview.md). |
 | ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、 [!UICONTROL Experience Platform] またはCustomer Journey Analytics。 |
 | デバイス、ブラウザー、リファラー、技術の各ディメンション | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットでサポートされます。参照： [ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja).<p>Experience PlatformWeb SDK のデータ収集を使用する場合、デバイス参照に基づくデバイスとディメンションは、現在サポートされていません。 将来サポートされる予定です。 |
 | 地理特性ディメンション | Adobe Analyticsで収集されるすべての地理特性/地理的機能は、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). Analytics ソースコネクタを使用せず、デジタルデータ収集にExperience PlatformWeb SDK を使用する実装では、 [Experience Edge Geo Lookup サービス](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja). |

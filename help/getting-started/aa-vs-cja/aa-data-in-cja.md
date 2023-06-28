@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 30%
+source-wordcount: '847'
+ht-degree: 29%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience PlatformおよびCustomer Journey AnalyticsでAdobe Analytics�
 
 1. **Adobe Experience PlatformとCustomer Journey Analyticsで使用する各レポートスイートのデータフローを作成します。** この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) は、次の操作を行うためのツールです。 [接続の作成](/help/connections/create-connection.md) Adobe AnalyticsとAdobe Experience Platformの間の（データフローと呼ばれる） ソースコネクタを使用して、Adobe Experience Platformで使用するレポートスイートごとに 1 つのデータフローを作成します。 データフローは、スキーマが変換されたレポートスイートデータのコピーを作成します。  [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ja) Customer Journey Analyticsを含むAdobe Experience Platformアプリケーションでの消費に対して<p>ソースコネクタを介してデータフローで設定された各レポートスイートは、別のデータセットとしてAdobe Experience Platform Data Lake に保存されます。 13 か月分の履歴レポートスイートデータが各データフローに自動的に含まれ、新しいデータが継続的にAdobe Experience Platformに送られます。 （2023 年 4 月 26 日以降、非実稼動用サンドボックスのバックフィルは、3 か月に制限されています）。 Analytics ソースコネクタを使用すると、事前にスキーマを作成する必要がなくなります。 Adobe Analytics 専用の標準化されたスキーマが自動的に作成されます。しかし、Adobe Experience Platform [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) ツールを使用して、データレイクにデータを保存してCustomer Journey Analyticsで使用できるようにする前に、このスキーマを拡張できます。 特定のタイプのデータはソースコネクタによって除外され、Adobe Experience Platform Data Lake のデータセットには存在しないことに注意してください。 その他の行は、データレイクとCustomer Journey Analyticsの間で除外できます。 詳しくは、 [Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較](/help/troubleshooting/compare.md) を参照してください。
 1. **Data Prep を使用すると、レポートスイートを組み合わせてCustomer Journey Analyticsできます。** Adobe AnalyticseVarは、様々な種類のデータ変換に使用できます。また、Data Prep の一般的な使用方法の 1 つは、複数のレポートスイート間での prop やデータマッピングの違いを解決し、Customer Journey Analytics内でレポートスイートを簡単に組み合わせられるようにすることです。 詳しくは、[異なるスキーマを使用したレポートスイートの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)を参照してください。
-1. 必要に応じて&#x200B;**Cross-Channel Analytics を有効化**&#x200B;します。 Customer Journey Analyticsで複数のデータセットを組み合わせる場合、クロスチャネル分析の ID ステッチ機能は、様々な ID 名前空間を単一のステッチ ID に解決し、デバイスやチャネルをまたいで顧客の単一のビューを把握できます。 詳しくは、[Cross-Channel Analytics の概要](/help/cca/overview.md)を参照してください。
+1. **ステッチを有効にする** 必要に応じて。 Customer Journey Analyticsで複数のデータセットを組み合わせる場合、ステッチ機能を使用して、デバイスやチャネルをまたいで顧客の単一のビューに対して、様々な ID 名前空間を単一のステッチ ID に解決できます。 詳しくは、 [ステッチの概要](../../stitching/overview.md) を参照してください。
 1. **1 つ以上のCustomer Journey Analytics接続を作成** レポートスイートのデータセットをAdobe Experience Platform Data Lake で使用できるようになったら、1 つ以上の [Customer Journey Analytics接続](/help/connections/overview.md) を使用して、これらのデータセットをCustomer Journey Analyticsに取り込みます。 接続内で、レポートスイートのデータを他のタイプのデータと組み合わせ、顧客体験の真のクロスチャネルビューを作成できます。
 1. **1 つ以上のCustomer Journey Analyticsデータビューを作成します。** A [データビュー](/help/data-views/data-views.md) は、Customer Journey Analytics接続からのデータの解釈方法を決定できる、Customer Journey Analytics固有のコンテナです。 データビューには多くの強力な[設定オプション](/help/data-views/create-dataview.md)があり、[Analysis Workspace](/help/analysis-workspace/home.md) 内でユーザーに表示するデータをカスタマイズすることができます。
 

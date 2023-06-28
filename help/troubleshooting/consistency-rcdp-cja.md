@@ -4,9 +4,9 @@ title: リアルタイム CDP とCustomer Journey Analyticsの間の指標とオ
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 25%
 
 リアルタイム CDP とCustomer Journey Analyticsは、現在の人物と同じ定義を共有していません。 Real-time CDP は、[ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)内の情報に完全に依存して、結合されたプロファイルを作成します。
 
-Customer Journey Analyticsは、 [クロスチャネル分析](/help/cca/overview.md) は、データレイクのデータセットから識別子を抽出し、それらをリンクするカスタムロジックを適用します。
+Customer Journey Analyticsは、 [ステッチ](../stitching/overview.md) は、データレイクのデータセットから識別子を抽出し、それらをリンクするカスタムロジックを適用します。
 
 今後、Customer Journey Analyticsは ID グラフを使用できるようになります。
 

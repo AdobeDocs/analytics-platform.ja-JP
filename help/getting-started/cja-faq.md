@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 72%
+source-wordcount: '2197'
+ht-degree: 68%
 
 ---
 
@@ -38,39 +38,40 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 +++
 
 
-## 2. データのステッチ（クロスチャネル分析） {#stitching}
+## 2.データのステッチ {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] では、様々なデバイスやデータセットにわたって「ステッチ」することはできますか？**
 
-はい。[!UICONTROL Customer Journey Analytics] には、[クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)（CCA）と呼ばれるステッチソリューションがあります。データセットのユーザー ID を再入力できるので、複数のデータセットをシームレスに組み合わせることができます。
+はい。[!UICONTROL Customer Journey Analytics] 次に該当 [ステッチ](../stitching/overview.md) データセット内の認証済みイベントと未認証イベントで機能する機能。 これにより、個人レベルでのクロスデバイス分析で、個々の異なるレコードを単一のステッチ ID に解決できます。
+さらに、共通の名前空間 ID（ユーザー ID）が [接続](/help/connections/overview.md)を使用すると、ユーザーレベルで複数のデータセット「ステッチ」をシームレスに組み合わせて分析を実行できます。
 
 +++
 
 
 +++**匿名の行動から認証済みの行動にステッチすることはサポートされていますか？**
 
-はい。[クロスチャネル分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)では、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。
+はい。[ステッチ](../stitching/overview.md) は、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID を生成します。
 
 +++
 
 
-+++**CCA では「再生」はどのように機能しますか？**
++++**「再生」はステッチでどのように機能しますか？**
 
-CCA（クロスチャネル分析）では、学習した一意の ID に基づいてデータを「再生」します。再生を行うと、接続の新しいデバイスがステッチされます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=ja#step-1%3A-live-stitching)
-
-+++
-
-
-+++**CCA では履歴データのステッチ（バックフィル）はどのように機能しますか？**
-
-初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja#enable-cross-channel-analytics)
+学習した一意の ID に基づいて、データを「再生」します。 リプレイは、当面、識別されたデバイスからの最初の未認証イベントをステッチすることを目的としています。 [詳細情報](../stitching/explained.md)
 
 +++
 
 
-+++**未関連付けプロファイルデータセットレコードに対して期待される動作は何ですか？**
++++**履歴データのステッチ（バックフィル）はどのように機能しますか？**
 
-**シナリオの例**:を使用して、Customer Journey Analytics接続で 2 つのデータセットを結合する `CRMid` をユーザー ID として設定します。 1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。他のデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40%に `CRMid` が Web イベントデータセットに存在する。 残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか。<p> **回答**:イベントが関連付けられていないプロファイル行は、Customer Journey Analyticsに保存されます。 ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。
+初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](../stitching/explained.md)
+
++++
+
+
++++**ステッチされていないプロファイルデータセットレコードの場合は、どのような動作が想定されますか？**
+
+**シナリオの例**:を使用して、Customer Journey Analytics接続で 2 つのデータセットを結合する `CRMid` をユーザー ID として設定します。 1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。もう 1 つのデータセットは、CRM プロファイルデータセットです。CRM データセットの 40％は、web イベントデータセットに `CRMid` が存在します。残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか。<p> **回答**:イベントが関連付けられていないプロファイル行は、Customer Journey Analyticsに保存されます。 ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。
 
 +++
 
@@ -226,6 +227,6 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
    ![分類](assets/data-size2.png)
 
-2. また、 [!UICONTROL Adobe Experience Platform]、ID が「5f21c12b732044194bffc1d0」のデータセットがないので、他のユーザーがこの特定のデータセットを次から削除しました： [!UICONTROL Adobe Experience Platform] 最初の接続が作成された時点。 その後、再びCustomer Journey Analyticsに追加されましたが、異なる [!UICONTROL プラットフォームデータセット ID] が次の場所で生成された： [!UICONTROL Adobe Experience Platform].
+1. また、 [!UICONTROL Adobe Experience Platform]、ID が「5f21c12b732044194bffc1d0」のデータセットがないので、他のユーザーがこの特定のデータセットを次から削除しました： [!UICONTROL Adobe Experience Platform] 最初の接続が作成された時点。 その後、再びCustomer Journey Analyticsに追加されましたが、異なる [!UICONTROL プラットフォームデータセット ID] が次の場所で生成された： [!UICONTROL Adobe Experience Platform].
 
 [!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。
