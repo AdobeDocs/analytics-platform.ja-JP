@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新のCustomer Journey Analyticsリリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d48ff9810ac7f2c194e959ab5deb492238362650
+source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 69%
+source-wordcount: '1435'
+ht-degree: 67%
 
 ---
 
@@ -20,6 +20,7 @@ Adobe Customer Journey Analyticsのリリースは [連続配信モデル](relea
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **クロスチャネル分析とステッチに関するドキュメントの更新** | ステッチを有効にするための今後の変更を見越し、ステッチを使用してクロスチャネル分析を高める方法をさらに明確にするために、クロスチャネル分析機能に関するドキュメントを編集し、 [クロスチャネル分析](../use-cases/cross-channel/cross-channel.md) をCustomer Journey Analytics機能および使用例として、および [ステッチ](../stitching/overview.md) これを達成する重要な機能として | 2023年6月28日（PT） | 2023年6月28日（PT） |
 | **インテリジェントキャプション** | [!UICONTROL 折れ線グラフ]ビジュアライゼーションの自然言語による要約を使用して、ユーザー向けのストーリーテリングを強化します。[詳細情報](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023年5月17日（PT） | 2023年6月1日（PT） |
 | **プロジェクトのリンク共有（ログインは不要）** | Adobe Analytics へのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できるようになりました。これには、組織外のユーザーや、組織内で Adobe Analytics 用にプロビジョニングされていないユーザーとの共有が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja#share-public-link) <p>この機能はデフォルトで有効になっており、システム管理者が無効にできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=ja#company-preferences)</p> | 2023年5月3日（PT） | 2023年6月6日（PT） |
 | **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することもできます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年6月14日（PT） |
