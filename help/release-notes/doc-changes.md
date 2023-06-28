@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 78%
+source-wordcount: '2213'
+ht-degree: 76%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analyticsドキュメントの開始以降、次の更新がお
 | 機能 | 説明 |
 | --- | --- |
 | **2023年6月** | |
+| クロスチャネル分析とステッチ | ステッチを有効にするための今後の変更を見越し、クロスチャネル分析をステッチを使用してどのように昇格できるかをさらに明確にするために、クロスチャネル分析機能に関連するすべてのコンテンツを編集して、クロスチャネル分析をCustomer Journey Analytics機能として参照します。 |
 | PowerBI および Tableau によるCustomer Journey Analyticsデータビューへのアクセス | Customer Journey AnalyticsSQL コネクタを使用すると、Customer Journey Analyticsで定義したデータビューに SQL からアクセスできます。 [詳細情報](/help/data-views/sql-connector.md) |
 | Adobe Journey Optimizer データ表示 | Customer Journey Analytics管理者は、「AJO Data view (Sandbox-name)」と呼ばれる、Customer Journey Analyticsの追加のデータビューにアクセスできます。 [詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=ja)。 |
 | 通貨換算 | 次のドキュメントを更新しました： [通貨コンバージョン](../data-views/component-settings/format.md#currency) サポート。 |
