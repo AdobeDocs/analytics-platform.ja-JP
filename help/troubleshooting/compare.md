@@ -4,16 +4,16 @@ description: Adobe Analytics データを Customer Journey Analytics のデー�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 65%
+source-wordcount: '906'
+ht-degree: 64%
 
 ---
 
 # Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較
 
-組織でCustomer Journey Analyticsを採用しているので、Adobe AnalyticsとCustomer Journey Analyticsの間でデータにいくつかの違いが生じる場合があります。 これは正常なことで、いくつかの理由で発生する場合があります。Customer Journey Analyticsは、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念事項によって妨げられないCustomer Journey Analyticsを、ユーザーとチームが使用できるように、違いの診断と解決に役立つように設計されています。
+組織でCustomer Journey Analyticsを採用しているので、Adobe AnalyticsとCustomer Journey Analyticsの間でデータにいくつかの違いが生じる場合があります。 これは正常なことで、いくつかの理由で発生する場合があります。Customer Journey Analyticsは、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や意図しない不一致が発生する場合があります。 この記事は、データの整合性に関する懸念事項によって妨げられないCustomer Journey Analyticsを、ユーザーとチームが使用できるように、違いの診断と解決に役立つように設計されています。
 
 Adobe Analyticsデータを [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用してCustomer Journey Analytics接続を作成しました。
 
