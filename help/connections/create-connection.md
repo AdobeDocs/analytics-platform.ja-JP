@@ -4,9 +4,9 @@ description: Customer Journey Analytics で Platform データセットへの接
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2605'
 ht-degree: 60%
 
 ---
@@ -98,8 +98,6 @@ ht-degree: 60%
 >
 >接続の一部として、少なくとも 1 つのイベントデータセットを追加する必要があります。
 
-![データセットを追加ダイアログ](assets/add-dataset.png)
-
 データセットには次の 3 つのタイプがあります。 [!UICONTROL イベント] データ [!UICONTROL プロファイル] データ、および [!UICONTROL 参照] データ。
 
 | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
@@ -150,7 +148,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
 
 {style="table-layout:auto"}
 
-## 毎日のイベントの平均数を計算する
+## 毎日のイベントの平均数を計算する {#average-number}
 
 この計算は、接続内のすべてのデータセットに対しておこなわれます。
 
