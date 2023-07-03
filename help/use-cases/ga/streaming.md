@@ -1,8 +1,10 @@
 ---
 title: Adobe Experience Platform への Google Analytics データのストリーミング設定
 description: Google データレイヤーを Adobe Experience Platform に送信するための実装の設定方法について説明します
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
+exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
+feature: Use Cases
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
 

@@ -2,10 +2,10 @@
 title: 派生フィールド
 description: 派生フィールドは、使用可能な関数や関数テンプレートのセットを介して、スキーマフィールドや標準コンポーネントのレポート時間操作を指定します。
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '3281'
 ht-degree: 9%

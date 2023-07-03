@@ -3,7 +3,8 @@ description: プロジェクトやビジュアライゼーションへの共有�
 keywords: Analysis Workspace の共有
 title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+feature: Curate and Share
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 62%

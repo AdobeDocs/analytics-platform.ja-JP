@@ -1,7 +1,9 @@
 ---
 title: ファネル
-description: 一連の手順を通じて摩擦の領域を特定する.
-source-git-commit: 9c4ee66d35182cb89678ae868ff35e364df361a9
+description: 一連のステップで摩擦が発生する領域を特定します.
+exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
+feature: Guided Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%

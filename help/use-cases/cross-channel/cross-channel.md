@@ -3,8 +3,8 @@ title: クロスチャネルジャーニー分析
 description: カスタマージャーニー全体を通した顧客とのインタラクションからインサイトを分析および抽出します。
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
-feature: Use Cases
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+feature: Use Cases, Cross-Channel Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 68%

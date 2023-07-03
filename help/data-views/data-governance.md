@@ -2,7 +2,8 @@
 title: ラベルとポリシー
 description: Adobe Experience Platformで定義されたデータラベルとポリシーが、Customer Journey Analyticsのデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Data Views, Data Governance
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 60%
