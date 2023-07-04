@@ -3,10 +3,10 @@ title: ステッチの概要
 description: ステッチの概要。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 28%
+source-wordcount: '1246'
+ht-degree: 24%
 
 ---
 
@@ -56,22 +56,22 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上の関�
    * ステッチを有効にするリクエスト。
    * キーを変更するデータセットのデータセット ID.
    * 目的のデータセットの永続 ID の列名（各行に表示される識別子）。
-   * 目的のデータセットの一時的な ID の列名（データセット間のユーザー ID リンク）。
+   * 目的のデータセットの一時的な ID の列名（ユーザー ID。接続のコンテキストでデータセット間のリンクとしても機能します）。
    * [再生](explained.md)の頻度とルックバックの期間。オプションとしては、週に 1 回の再生（7 日間のルックバックウィンドウ）や、毎日の再生（1 日間のルックバックウィンドウ）があります。
    * サンドボックス名
 
 
-2. Adobeカスタマーサポートは、Adobeエンジニアリングと連携し、リクエストを受け取ったときにステッチを有効にします。 有効にすると、新規のユーザー ID 列を含んだ新しいキー再設定済みデータセットが Adobe Experience Platform に表示されます。アドビカスタマーサポートは、新しいデータセット ID とユーザー ID の列名を提供できます。
+2. Adobeカスタマーサポートは、Adobeエンジニアリングと連携し、リクエストを受け取ったときにステッチを有効にします。 有効にすると、新しい「ステッチされた ID 」列を含む、キーが変更された新しいデータセットがAdobe Experience Platformに表示されます。 Adobeカスタマーサポートは、新しいデータセットの ID を提供できます。
 
-3. 初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルをおこなうには、一時的な ID が、それまでの時間に関連付けられていないデータに存在する必要があります。
+3. 最初にオンにしたとき、Adobeは 30 日前に遡るステッチ済みデータのバックフィルを提供します。
 
-4. [接続の作成](/help/connections/create-connection.md) Customer Journey Analyticsで、新しく生成されたデータセットと、含める他のデータセットを使用します。 各データセットに適切なユーザー ID を選択します。
+4. 新しいステッチ済みデータセットをクロスチャネル分析で使用する場合は、そのデータセットを [接続](../connections/overview.md) Customer Journey Analyticsと他の必要なデータセット。 各データセットに適切なユーザー ID を選択します。
 
 5. 接続に基づいて、[データ表示を作成](/help/data-views/create-dataview.md)します。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-データビューが設定されると、Customer Journey Analyticsのクロスチャネル分析は、Customer Journey Analyticsの他の分析と同様に機能します。ただし、データはチャネルとデバイスをまたいで機能します。
+データビューを設定したら、チャネルやデバイスをまたいでCustomer Journey Analyticsレポート分析を実行できます。
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
