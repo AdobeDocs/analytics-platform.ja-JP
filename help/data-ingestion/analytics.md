@@ -2,12 +2,12 @@
 title: 従来の Adobe Analytics からのデータの取り込みと使用
 description: 従来の Adobe Analytics からデータを取り込む方法を説明する
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1162'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 0%
 >- [Adobe Analytics 拡張機能を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)
 >
 >- [JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)
-
 
 これには、次の手順を実行する必要があります。
 
@@ -112,9 +111,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-      ![データセットを追加](./assets/cja-connections-2a.png)
+     ![データセットを追加](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
+
    「[!UICONTROL データセットを追加]」の「[!UICONTROL データセット設定]」手順で、次の操作を行います。
 
    - 各データセットに対して、次の手順を行います。
@@ -125,9 +125,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
       - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
-      ![データセットの設定](./assets/cja-connections-3a.png)
+     ![データセットの設定](./assets/cja-connections-3a.png)
 
    - 「**[!UICONTROL データセットを追加]**」を選択します。
+
    「**[!UICONTROL 保存]**」を選択します。
 
 接続を作成および管理する方法、およびデータセットを選択して組み合わせる方法について詳しくは、[接続の概要](../connections/overview.md)を参照してください。

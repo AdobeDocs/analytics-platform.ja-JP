@@ -2,9 +2,9 @@
 description: Real-time Customer Data Platform（リアルタイム CDP）とCustomer Journey Analyticsの間の指標とオーディエンスメンバーシップのカウントの一貫性に影響する要因について説明します。
 title: リアルタイム CDP とCustomer Journey Analyticsの間の指標とオーディエンスメンバーシップ数の一貫性
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 25%

@@ -3,8 +3,8 @@ title: Analytics ソースコネクタを通じて渡された Analytics デー�
 description: 用語のいくつかの違い
 solution: Customer Journey Analytics
 exl-id: f0f9aa1e-f9d2-4dcb-bbe9-7960412c094b
-feature: CJA Basics
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 72%

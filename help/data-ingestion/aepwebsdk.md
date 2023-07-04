@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Web SDK と Edge Network を介したデータの取り込み
 description: Adobe Experience Platform Web SDK と Edge Network を使用して Customer Journey Analytics にデータを取り込む方法について説明する
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 98%
@@ -303,11 +303,11 @@ Experience Cloud ID サービス拡張機能を作成および設定するには
 
    - [!UICONTROL 属性]リストから、「**[!UICONTROL タイトル]**」を選択します。
 
-      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-1.png)
+     ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-1.png)
 
-      または、データレイヤーの変数の値（`pageName` や [!UICONTROL JavaScript 変数] データ要素タイプなど）を使用して、データ要素を定義できました。
+     または、データレイヤーの変数の値（`pageName` や [!UICONTROL JavaScript 変数] データ要素タイプなど）を使用して、データ要素を定義できました。
 
-      ![JavaScript 変数を使用したデータ要素の作成](./assets/create-dataelement-2.png)
+     ![JavaScript 変数を使用したデータ要素の作成](./assets/create-dataelement-2.png)
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
@@ -327,7 +327,7 @@ ECID データ要素を定義するには：
 
    - [!UICONTROL データ要素タイプ]リストから、**[!UICONTROL ECID]** を選択します。
 
-      ![ECID データ要素](./assets/ecid-dataelement.png)
+     ![ECID データ要素](./assets/ecid-dataelement.png)
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
@@ -353,14 +353,14 @@ XDM オブジェクトデータ要素を定義するには：
 
    - スキーマ内で定義した `identification > core > ecid` 属性を、ECID データ要素にマッピングします。円柱アイコンを選択すると、データ要素のリストから ECID データ要素を簡単に選択できます。
 
-      ![ECID データ要素を選択](./assets/pick-ecid-dataelement.png)
+     ![ECID データ要素を選択](./assets/pick-ecid-dataelement.png)
 
-      ![ECID データ要素をマッピング](./assets/map-ecid.png)
+     ![ECID データ要素をマッピング](./assets/map-ecid.png)
 
 
    - スキーマ内で定義した `web > webPageDetails > name` 属性を、ページ名データ要素にマッピングします。
 
-      ![ページ名データ要素をマップ](./assets/map-pagename.png)
+     ![ページ名データ要素をマップ](./assets/map-pagename.png)
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
@@ -387,9 +387,12 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       - [!UICONTROL イベントタイプ]リストから「**[!UICONTROL 読み込んだウィンドウ]**」を選択します。
 
-         ![ルール - イベント設定](./assets/event-windowloaded-pageview.png)
+        ![ルール - イベント設定](./assets/event-windowloaded-pageview.png)
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
+
+
+
    - 「[!UICONTROL アクション]」の下の「**[!UICONTROL + 追加]**」を選択します。
 
    - [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
@@ -402,18 +405,15 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       - [!UICONTROL XDM データ]の横にある円柱アイコンを選択し、データ要素のリストから「**[!UICONTROL XDM - ページビュー]**」を選択します。
 
-         ![ルール - アクションの設定](./assets/action-pageview-xdm.png)
+        ![ルール - アクションの設定](./assets/action-pageview-xdm.png)
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
+
    - ルールは次のようになります。
 
-      ![ルールを作成](assets/rule-pageview.png)
+     ![ルールを作成](assets/rule-pageview.png)
 
    - 「**[!UICONTROL 保存]**」を選択します。
-
-
-
-
 
 これは、他のデータ要素の値を含む XDM データを Adobe Experience Platform に送信するルールを定義する例に過ぎません。
 
@@ -439,7 +439,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 「**[!UICONTROL + 変更されたリソースをすべて追加]**」を選択します。
 
-      ![公開 - ライブラリを作成](./assets/create-library-aep.png)
+     ![公開 - ライブラリを作成](./assets/create-library-aep.png)
 
    - 「**[!UICONTROL 開発用に保存およびビルド]**」を選択します。
 
@@ -510,9 +510,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 先ほど作成したデータセット（`Example dataset`）や、接続に含める他のデータセットに関連付けます。
 
-      ![データセットを追加](./assets/cja-connections-2b.png)
+     ![データセットを追加](./assets/cja-connections-2b.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
+
    「[!UICONTROL データセットを追加]」の「[!UICONTROL データセット設定]」手順で、次の操作を行います。
 
    - 各データセットに対して、次の手順を行います。
@@ -523,9 +524,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
       - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
-      ![データセットの設定](./assets/cja-connections-3b.png)
+     ![データセットの設定](./assets/cja-connections-3b.png)
 
    - 「**[!UICONTROL データセットを追加]**」を選択します。
+
    「**[!UICONTROL 保存]**」を選択します。
 
 接続を作成および管理する方法、およびデータセットを選択して組み合わせる方法について詳しくは、[接続の概要](../connections/overview.md)を参照してください。

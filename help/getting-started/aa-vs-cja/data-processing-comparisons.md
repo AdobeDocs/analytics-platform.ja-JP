@@ -2,8 +2,8 @@
 title: Adobe AnalyticsとCustomer Journey Analyticsのレポート機能でデータ処理を比較する
 description: 様々なレポート機能におけるデータ処理の違いを説明します
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-feature: CJA Basics
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 58%

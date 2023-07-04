@@ -2,10 +2,10 @@
 title: ストリーミングデータの取り込みと使用
 description: Customer Journey Analytics でのストリーミングデータの取り込みと使用方法について説明する
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 
@@ -255,9 +255,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 先ほど作成したデータセット（`Example Loyalty Dataset`）や、接続に含める他のデータセットに関連付けます。
 
-      ![データセットを追加](./assets/cja-connections-2.png)
+     ![データセットを追加](./assets/cja-connections-2.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
+
    「[!UICONTROL データセットを追加]」の「[!UICONTROL データセット設定]」手順で、次の操作を行います。
 
    - 各データセットに対して、次の手順を行います。
@@ -268,9 +269,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
       - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
-      ![データセットの設定](./assets/cja-connections-3.png)
+     ![データセットの設定](./assets/cja-connections-3.png)
 
    - 「**[!UICONTROL データセットを追加]**」を選択します。
+
    「**[!UICONTROL 保存]**」を選択します。
 
 接続を作成および管理する方法、およびデータセットを選択して組み合わせる方法について詳しくは、[接続の概要](../connections/overview.md)を参照してください。

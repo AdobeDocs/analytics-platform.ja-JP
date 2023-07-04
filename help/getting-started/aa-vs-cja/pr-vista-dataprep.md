@@ -2,8 +2,8 @@
 title: 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較
 description: 処理ルールおよび VISTA を使用した場合とデータ準備を使用した場合を比較し、データ変換について説明します
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-feature: CJA Basics
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 80%

@@ -2,9 +2,9 @@
 title: Customer Journey Analytics の使用状況の表示と管理
 description: 使用状況の推定方法を 2 つ、管理方法を 1 つ示します。
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 72%

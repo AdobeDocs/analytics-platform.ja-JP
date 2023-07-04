@@ -2,7 +2,8 @@
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
 description: Analytics ソースコネクタによる Adobe Analytics ID フィールドの対処方法を説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 91%
@@ -39,9 +40,9 @@ Analytics ソースコネクタは、次のように、これらの ID を XDM �
 
 これらのフィールドは、ID としてマークされません。むしろ、次のように、同じ ID が XDM の **_identityMap_** にキーと値のペアとしてコピーされます。
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
+* `{ "key": "AAID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "ECID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "AACUSTOMID", "value": [ { "id": "<identity>", "primary": false } ] }`
 
 &lt;> 角括弧内の項目は、実際の値が表示される場所を表します。
 

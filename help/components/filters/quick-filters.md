@@ -1,10 +1,10 @@
 ---
 description: Customer Journey Analytics に Analysis Workspaceでクイックフィルターを使用
 title: クイックフィルター
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 37%
@@ -35,20 +35,19 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
 
    * **アドホック（ドラッグ&amp;ドロップ）:** 左側のレールから、コンポーネントを **フィルター** アイコンをクリックし、 **編集** アイコンを使用してフィルターを調整します。
 
-      ![アドホックフィルターを編集](assets/filter-adhoc-edit.png)
+     ![アドホックフィルターを編集](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > アドホックでクイックフィルター（ドラッグ&amp;ドロップ）を作成する際は、次の点を考慮してください。
-      > * 次のコンポーネントタイプはサポートされていません。計算指標およびディメンションと、フィルターを作成できない指標が含まれます。
-      > * 完全なディメンションおよびイベントに対して、Analysis Workspaceは「存在する」イベントフィルターを作成します。 例：`Hit where eVar1 exists` または `Hit where event1 exists`。
-      > * 「未指定」または「なし」がフィルタードロップゾーンにドロップされると、フィルターで正しく処理できるようにするため、「存在しない」フィルターに自動変換されます。
-
+     >[!NOTE]
+     >
+     > アドホックでクイックフィルター（ドラッグ&amp;ドロップ）を作成する際は、次の点を考慮してください。
+     > * 次のコンポーネントタイプはサポートされていません。計算指標およびディメンションと、フィルターを作成できない指標が含まれます。
+     > * 完全なディメンションおよびイベントに対して、Analysis Workspaceは「存在する」イベントフィルターを作成します。 例：`Hit where eVar1 exists` または `Hit where event1 exists`。
+     > * 「未指定」または「なし」がフィルタードロップゾーンにドロップされると、フィルターで正しく処理できるようにするため、「存在しない」フィルターに自動変換されます。
 
 
    * **フィルターアイコンを使用して、次の操作を行います。** フリーフォームテーブルで、 **フィルター** アイコンをクリックします。
 
-      ![セグメントフィルター](assets/quick-seg1.png)
+     ![セグメントフィルター](assets/quick-seg1.png)
 
 1. 次の設定を調整します。
 
@@ -87,7 +86,6 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
 > * クイックフィルターを保存するには、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=ja#analytics-tools).
 > 
 > * フィルターを保存または適用すると、クイックフィルタービルダーで編集できなくなります。 代わりに、通常のフィルタービルダーを使用する必要があります。
-
 
 クイックフィルターをコンポーネントリストフィルターとして保存することもできます。 コンポーネントリストフィルターの利点は次のとおりです。
 

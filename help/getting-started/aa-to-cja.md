@@ -3,9 +3,9 @@ title: Adobe Analytics からの進化
 description: Adobe Analytics データを Customer Journey Analytics データに変換する手順
 role: Admin
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 79%

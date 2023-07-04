@@ -1,12 +1,13 @@
 ---
 description: Analysis Workspaceでプロジェクトを作成する方法を説明します
 title: プロジェクトの作成
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
-source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
+exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -92,4 +93,3 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 Analysis Workspaceで分析を作成する場合、作業内容は次のようになります。 [自動保存](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 プロジェクトの構築が完了し、アクションにつながるインサイトを収集すると、そのプロジェクトを他のユーザーが利用できる状態になります。 プロジェクトを組織内のユーザーやグループと共有したり、組織外のユーザーと共有したりできます。 プロジェクトの共有について詳しくは、 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).
-

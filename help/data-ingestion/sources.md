@@ -2,10 +2,10 @@
 title: ソースコネクタを使用したデータの取り込みと使用
 description: Customer Journey Analytics でソースコネクタを使用してデータを取り込み、使用する方法を説明する
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 100%
 
@@ -44,8 +44,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ### スキーマの設定
 
-このクイックスタートでは、ロイヤルティ ID、ロイヤルティポイント、ロイヤルティステータスなど、一部のロイヤルティデータを収集します。
-この場合、まず、このデータをモデル化するスキーマを定義する必要があります。
+このクイックスタートでは、ロイヤルティ ID、ロイヤルティポイント、ロイヤルティステータスなど、一部のロイヤルティデータを収集します。この場合、まず、このデータをモデル化するスキーマを定義する必要があります。
 
 スキーマを設定するには：
 
@@ -187,10 +186,9 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
    - コネクタタイルで、「[!UICONTROL 設定]」または「[!UICONTROL データを追加]」の隣にある「**[!UICONTROL ...]**」を選択します。
 
-      ![ドキュメントを表示](./assets/sourceconnector-documentation.png)
+     ![ドキュメントを表示](./assets/sourceconnector-documentation.png)
 
    - 「**[!UICONTROL ドキュメントを表示]**」を選択します。
-
 
 Adobe Analytics ソースコネクタの使用方法について詳しくは、[従来の Adobe Analytics からのデータの取り込みと使用](./analytics.md)を参照してください。
 
@@ -225,9 +223,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 先ほど作成したデータセット（`Example Loyalty Dataset`）や、接続に含める他のデータセットに関連付けます。
 
-      ![データセットを追加](./assets/cja-connections-2.png)
+     ![データセットを追加](./assets/cja-connections-2.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
+
    「[!UICONTROL データセットを追加]」の「[!UICONTROL データセット設定]」手順で、次の操作を行います。
 
    - 各データセットに対して、次の手順を行います。
@@ -238,9 +237,10 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
       - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
-      ![データセットの設定](./assets/cja-connections-3.png)
+     ![データセットの設定](./assets/cja-connections-3.png)
 
    - 「**[!UICONTROL データセットを追加]**」を選択します。
+
    「**[!UICONTROL 保存]**」を選択します。
 
 接続を作成および管理する方法、およびデータセットを選択して組み合わせる方法について詳しくは、[接続の概要](../connections/overview.md)を参照してください。

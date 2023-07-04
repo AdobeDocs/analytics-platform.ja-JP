@@ -2,9 +2,9 @@
 description: メニューバーと設定を含む Workspace プロジェクトの概要
 keywords: Analysis Workspace
 title: プロジェクトの概要
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 7086224bdbdfe3ae05fce95a13491f430e79b8c6
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 79%

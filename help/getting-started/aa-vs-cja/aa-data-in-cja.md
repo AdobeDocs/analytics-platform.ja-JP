@@ -3,9 +3,9 @@ title: Customer Journey Analytics での Adobe Analytics レポートスイー�
 description: Adobe Experience PlatformとCustomer Journey Analyticsに取り込むためのAdobe Analyticsレポートスイートの設定方法
 role: User
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 29%

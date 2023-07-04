@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics での基本分析の実行
 description: 基本的なビジュアライゼーションを使用して Customer Journey Analytics のデータを分析する方法について説明します。
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
 
