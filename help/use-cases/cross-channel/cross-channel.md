@@ -4,10 +4,10 @@ description: カスタマージャーニー全体を通した顧客とのイン�
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 68%
+source-wordcount: '523'
+ht-degree: 63%
 
 ---
 
@@ -43,6 +43,6 @@ ht-degree: 68%
 * チャネル間でデータを分析するには、すべてのレコードで同じ ID 名前空間が必要です。
 * 異なるデータセットを統合する和集合プロセスには、データセット全体で共通のプライマリパーソン／エンティティキーが必要です。
 * セカンダリのキーベースの和集合は、現在サポートされていません。
-* ステッチプロセスを使用すると、後続の一時的な ID レコード（認証 ID など）に基づいて行の ID を再入力できます。 これにより、複数の異なるレコードを単一の ID に解決し、デバイスや cookie レベルではなく、ユーザーレベルで分析をおこなうことができます。
+* ステッチ処理では、同じ永続 ID を共有するレコードから、一時的な ID（認証 ID など）情報に基づいて行の ID を再入力できます。これにより、デバイスや cookie レベルではなく、個人レベルでの分析に個別のレコードを単一のステッチ ID に解決できます。
 * 同じ XDM フィールドのオブジェクトとアトリビューションは、Customer Journey Analytics 内で 1 つのディメンションに結合されます。様々なデータセットの複数のアトリビューションを同じ Customer Journey Analytics ディメンションに結合するには、データセットが同じ XDM フィールドまたはスキーマを参照する必要があります。
 
