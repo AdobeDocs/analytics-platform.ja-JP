@@ -1,27 +1,28 @@
 ---
-description: Adobe Analyticsダッシュボードのスコアカードの作成および共有方法
+description: Analytics ダッシュボードのスコアカードを作成および共有する方法
 title: スコアカードの作成と共有
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 76%
+source-wordcount: '2532'
+ht-degree: 74%
 
 ---
 
 # モバイルスコアカードの作成
 
-次の情報は、Adobe Analytics データのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。まず、Adobe Analyticsダッシュボードスコアカードビルダービデオを表示できます。
+次の情報は、Customer Journey Analyticsデータのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。 まず、Analytics ダッシュボードスコアカードビルダービデオを表示できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->このページのスコアカードのスクリーンショットは、Customer Journey Analyticsからではなく、Adobe Analytics UI から取得されました。 UI はほぼ同じです。
+>
+>このページの Analytics スコアカードのスクリーンショットは、Customer Journey Analyticsからではなく、Adobe Analytics UI から取得されました。 UI はほぼ同じです。
 
-Adobe Analytics のスコアカードでは、次のように、エグゼクティブユーザー向けに主要データのビジュアライゼーションがタイル化されたレイアウトで表示されます。
+ Analytics のスコアカードでは、次のように、エグゼクティブユーザー向けに主要データのビジュアライゼーションがタイル化されたレイアウトで表示されます。
 
 ![スコアカードの例](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Adobe Analytics のスコアカードでは、次のように、エグゼクテ�
 
 ### 新規プロジェクトを作成 {#create}
 
-1. Adobe Analytics を開いて「**[!UICONTROL Workspace]**」タブをクリックします。
+1. Customer Journey Analyticsを開き、 **[!UICONTROL Workspace]** タブをクリックします。
 1. 「**[!UICONTROL プロジェクトを作成]**」をクリックして、「**[!UICONTROL 空のモバイルスコアカード]**」プロジェクトテンプレートを選択します。
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -78,7 +79,7 @@ Adobe Analytics のスコアカードでは、次のように、エグゼクテ�
 
 個々のタイルにフィルターを適用するには、左のパネルからフィルター ( セグメントはCustomer Journey Analytics内のフィルター ) をドラッグし、タイルの上に直接ドロップします。
 
-スコアカード内のすべてのタイルにフィルターを適用する場合は、スコアカードの上にタイルをドロップします。 または、日付範囲の下にあるフィルターメニューでフィルターを選択して、フィルターを適用することもできます。あなた [スコアカードのフィルターの構成と適用](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) Adobe Analytics Workspace と同じ方法です。
+スコアカード内のすべてのタイルにフィルターを適用する場合は、スコアカードの上にタイルをドロップします。 または、日付範囲の下にあるフィルターメニューでフィルターを選択して、フィルターを適用することもできます。あなた [スコアカードのフィルターの構成と適用](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) 同様に、Workspace でも同様にCustomer Journey Analyticsを使用します。
 
 ![フィルターの作成](assets/segment_ui.png)
 
@@ -278,7 +279,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 ## スコアカードのプレビュー {#preview}
 
-スコアカードが Analytics ダッシュボードアプリで公開された後にどのように表示され機能するかをプレビューできます。
+スコアカードがAdobe Analyticsダッシュボードアプリに公開された後に、スコアカードがどのように表示され、機能するかをプレビューできます。
 
 1. 画面の右上隅にある「**[!UICONTROL プレビュー]**」をクリックします。
 
@@ -337,7 +338,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
    受信者がデスクトップアプリケーションまたはブラウザーを使用してリンクを開くと、モバイルスコアカードプロジェクトが Workspace で開きます。
 
-   受信者がモバイルデバイスでリンクを開くと、スコアカードが Analytics ダッシュボードアプリで直接開きます。
+   受信者がモバイルデバイスでリンクを開くと、スコアカードがAdobe Analyticsダッシュボードアプリで直接開きます。
 
    受信者がモバイルアプリをダウンロードしていない場合は、App StoreまたはGoogle Playストアのアプリリストにリダイレクトされ、ダウンロードできるようになります。
 

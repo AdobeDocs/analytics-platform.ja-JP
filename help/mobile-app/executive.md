@@ -1,20 +1,20 @@
 ---
 description: ダッシュボードスコアカードの使用手順。
-title: Adobe Analytics ダッシュボードエグゼクティブガイド
+title: Analytics ダッシュボードエグゼクティブガイド
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 92%
+source-wordcount: '1304'
+ht-degree: 77%
 
 ---
 
 # エグゼクティブユーザー向けクイックスタートガイド
 
-以下は、Adobe Analytics ダッシュボードの使用と表示についてのベストプラクティスに関する情報をエグゼクティブユーザーに提供します。次のビデオでは、この情報を紹介しています。
+以下は、 Analytics ダッシュボードの使用と表示についてのベストプラクティスに関する情報をエグゼクティブユーザーに提供します。次のビデオでは、この情報を紹介しています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -28,26 +28,30 @@ ht-degree: 92%
 
 ダッシュボードのスコアカードにアクセスするには、次の点を確認します。
 
-* Adobe Analytics への有効なログインがある
+* Customer Journey Analytics への有効なログインがある
 * キュレーターがモバイルスコアカードを正しく作成し、共有している
 
 ### ダッシュボードのダウンロードとインストール
 
 アプリケーションをダウンロードしてインストールするには、デバイス上のオペレーティングシステムに従って手順に従います。
 
+>[!NOTE]
+>
+>モバイルアプリは、App Store では「Adobe Analytics dashboard」という名前ですが、アプリはCustomer Journey Analyticsのモバイルスコアカードでも同じように使用できます。
+
 **iOS**：
 
-次のリンク（Analytics の&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**&#x200B;でも利用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
 
 [iOS リンク](https://apple.co/2zXq0aN)：
 
 **Android**：
 
-次のリンク（Analytics の&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**&#x200B;でも利用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
 
 [Android リンク](https://bit.ly/2LM38Oo)
 
-ダウンロードとインストールが完了すると、エグゼクティブユーザーは、既存の Adobe Analytics の資格情報を使用してアプリにログインできます。
+ダウンロードとインストールが完了すると、エグゼクティブユーザーは、既存のユーザー資格情報を使用してアプリにCustomer Journey Analyticsインできます。
 
 ![アプリケーションのスタートアップスクリーン](assets/welcome.png)
 
@@ -55,7 +59,7 @@ ht-degree: 92%
 
 ダッシュボードを使用するには：
 
-1. アプリにログインします。アプリケーションを起動すると、ログイン画面が表示されます。既存の Adobe Analytics 資格情報を使用して、画面の指示に従います。Adobe ID または Enterprise／Federated ID を使用できます。
+1. アプリにログインします。アプリケーションを起動すると、ログイン画面が表示されます。プロンプトに従って、既存のCustomer Journey Analytics資格情報を使用します。 Adobe ID または Enterprise／Federated ID を使用できます。
 
    ![サインインの順序](assets/signseq.png)
 
@@ -73,8 +77,8 @@ ht-degree: 92%
 
    ログインして、何も共有されていないというメッセージが表示された場合は、キュレーターに次の点を確認してください。
 
-   * 適切な Analytics インスタンスにログインできる
-   * スコアカードが共有されている
+   * 適切なCustomer Journey Analyticsサンドボックスにログインできます。
+   * スコアカードが共有されている.
 
    ![何も共有されていない](assets/nothing.png)
 
@@ -111,11 +115,11 @@ ht-degree: 92%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。画面右上の「**[!UICONTROL 完了]**」をタップします。「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. スコアカードにセグメントフィルターを適用するには、フィルタードロップダウンリストをタップし、キュレーターが設定したセグメントを選択します。 アプリの[フィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Analytics Workspace と同様に機能します。
+1. スコアカードにセグメントフィルターを適用するには、フィルタードロップダウンリストをタップし、キュレーターが設定したセグメントを選択します。 アプリの[フィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、 Workspace と同様に機能します。
 
    ![セグメントフィルター](assets/segment_filter.png)
 
-1. スコアカードの更新：スコアカードに興味のあるすべての指標や分類が含まれていない場合は、Analytics チームに連絡してスコアカードの更新を依頼してください。更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. スコアカードの更新：スコアカードに興味のあるすべての指標や分類が含まれていない場合は、Customer Journey Analyticsチームに連絡してスコアカードの更新を依頼してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. アプリケーションでフィードバックを残す手順は、次のとおりです。
 
@@ -148,8 +152,8 @@ ht-degree: 92%
 
 | 用語 | 定義 |
 |--- |--- |
-| 消費者 | モバイルデバイス上で Analytics の主要指標と洞察を表示するエグゼクティブユーザー |
-| キュレーター | Analytics から洞察を検索して配信し、消費者が表示するスコアカードを構成する、データ専門家 |
+| 消費者 | モバイルデバイス上でCustomer Journey Analyticsの主要指標とインサイトを表示するエグゼクティブユーザー |
+| キュレーター | Customer Journey Analyticsからインサイトを見つけて配信し、消費者が表示するスコアカードを構成する、データに識別されるペルソナ |
 | キュレーション | 消費者に関連する指標、ディメンション、その他のコンポーネントを含むモバイルスコアカードを作成または編集する行為 |
 | スコアカード | 1 つ以上のタイルを含むダッシュボードビュー |
 | タイル | スコアカードビュー内の指標のレンダリング |

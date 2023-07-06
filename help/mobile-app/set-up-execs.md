@@ -1,14 +1,14 @@
 ---
-description: Analytics モバイルアプリを使用するユーザーの設定方法
+description: Adobe Analyticsダッシュボードモバイルアプリを使用するためのユーザーの設定方法
 title: ダッシュボードを使用するエグゼクティブの設定
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 76%
 
 ---
 
@@ -27,25 +27,29 @@ ht-degree: 100%
 エグゼクティブユーザーがアプリのスコアカードにアクセスできるようにするには、次の点を確認します。
 
 * ユーザーのモバイル OS が、iOS バージョン 10 以上または Android バージョン 4.4（KitKat）以上である。
-* ユーザーに Adobe Analytics への有効なログインがある。
+* ユーザーには、有効なログイン情報がCustomer Journey Analyticsに含まれています。
 * モバイルスコアカードを正しく作成し、共有している。
 * ユーザーがスコアカードに含まれるコンポーネントにアクセスできる。スコアカードを共有する際に、「**[!UICONTROL 埋め込みコンポーネントを共有]**」オプションを選択することもできます。
 
 ## エグゼクティブによるアプリのダウンロードとインストールの支援
 
+>[!NOTE]
+>
+>モバイルアプリは、App Store では「Adobe Analytics dashboard」という名前ですが、アプリはCustomer Journey Analyticsのモバイルスコアカードでも同じように使用できます。
+
 **iOS**：
 
-次のリンク（Analytics の&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**&#x200B;でも利用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイル商談）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Android**：
 
-次のリンク（Analytics の&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**&#x200B;でも利用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-ダウンロードしてインストールすると、エグゼクティブユーザーは既存の Adobe Analytics 資格情報を使用してアプリケーションにサインインできます。Adobe ID または Enterprise／Federated ID を使用できます。
+ダウンロードとインストールが完了すると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにサインインできます。アドビでは、AdobeID と Enterprise/Federated ID の両方をサポートしています。
 
 ![アプリケーションのスタートアップスクリーン](assets/welcome.png)
 
@@ -108,7 +112,7 @@ ht-degree: 100%
 
 ![何も共有されていない](assets/nothing.png)
 
-* エグゼクティブユーザーが間違った Analytics インスタンスを選択した、または
+* エグゼクティブユーザーが誤ったCustomer Journey Analyticsサンドボックスを選択している、または
 * スコアカードがエグゼクティブユーザーと共有されていない
 
-エグゼクティブユーザーが適切な Adobe Analytics インスタンスにログインでき、スコアカードが共有されていることを確認します。
+エグゼクティブユーザーが適切なCustomer Journey Analyticsサンドボックスにログインでき、スコアカードが共有されていることを確認します。
