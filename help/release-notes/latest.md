@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新のCustomer Journey Analyticsリリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e9d2bfb4f4c4aa3ac96d0300e537376a1ef7821a
+source-git-commit: daf41a2aefeebe6339b4f86cc04c071b57887ce3
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 39%
+source-wordcount: '723'
+ht-degree: 40%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Customer Journey Analyticsのリリースは [連続配信モデル](relea
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | 製品チームがデータニーズにすばやく応え、より多くのデータ主導型の製品決定を下すことができる新しいプロジェクトタイプ。 このワークフローは、Customer Journey Analyticsの既存の接続ワークフローとデータ表示ワークフローに基づいて構築されます。 実装や設定の変更は必要ありません。 [詳細情報](/help/guided-analysis/overview.md)<p>Product Analyticsは、Customer Journey Analyticsへの有料アドオンです。 この機能を使用するように組織をプロビジョニングする場合は、Adobeアカウントチームにお問い合わせください。 | 該当なし | 2023年7月17日（PT） |
+| **Adobe Product Analytics** | Adobe Product Analyticsは、Customer Journey Analyticsでクロスチャネルのデータとインサイトを操作する新しい方法です。 これらの新機能により、製品チームは、ガイド付き分析ワークフローを通じて、製品エクスペリエンスに関するデータとインサイトをセルフサービスで提供できるようになります。チームで実行できる操作：<ul><li>時間の経過に伴うユーザーエンゲージメントのパターンを理解する</li><li>製品のユーザーベースの増加と保持を追跡す&#x200B;る</li><li>製品の摩擦領域を特定する</li><li>機能リリースの影響を測定し&#x200B;、最初に使用</li><li>製品に関する生涯のジャーニーを通じて、ユーザーの意味のあるセグメントを発見し、育成し&#x200B;ます</li><li>Analysis Workspaceと連携して、より深い分析とアナリストとの共同作業を実現</li></ul>Adobe Product Analyticsは、Customer Journey Analyticsへの有料アドオンです。 この機能を使用するように組織をプロビジョニングする場合は、Adobeアカウントチームにお問い合わせください。 [詳細情報](/help/guided-analysis/overview.md) | 該当なし | 2023年7月17日（PT） |
 | **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することもできます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年8月2日（PT） |
 | **プロファイルおよび参照データの参照のサポートが拡張されました。** | プロファイルまたは参照データセット内のフィールドの参照としてデータセットを追加する機能を提供します。 以前は、イベントデータセットのみがサポートされていました。 [詳細情報] | 2023年6月21日（PT） | 2023年7月12日（PT） |
 | **Report Builderの強化** | <ul><li>複数のデータブロックのセルからフィルターします。 1 つのセルの複数のデータブロックに対するフィルターを変更できます。 定義済みのセルを使用し、複数のデータブロックに割り当て、セルで定義されたフィルターに基づいてデータを更新します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>行ヘッダーと列ヘッダーの表示/非表示を切り替えます。 データ・ブロック・テーブル・ヘッダーの表示/非表示を切り替えたり、行と列のヘッダーを使用して、テーブルの書式を変更したり、レポート内のデータ・ブロックを整列させたりできます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | 該当なし | 2023年7月19日（PT） |
