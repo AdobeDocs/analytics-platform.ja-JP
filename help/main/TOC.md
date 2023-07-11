@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 51bc0de7186b87fad4011c2ec77cfe841186a58e
+source-git-commit: db8f92941677ba37f41a62c7612f517d7b071b4a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '956'
 ht-degree: 86%
 
 ---
@@ -85,12 +85,10 @@ ht-degree: 86%
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
 
-
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
    + [基本分析の実行](../analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
-
    + プロジェクト {#build-workspace-project}
       + [プロジェクトの概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
@@ -105,40 +103,31 @@ ht-degree: 86%
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
-
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーションの概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
-
       + フリーフォームテーブル {#freeform-table}
          + [フリーフォームテーブル](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + 列および行の設定 {#column-row-settings}
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-
          + [テーブルのフィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-
          + [ワークスペースの合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-
       + コホートテーブル {#cohort-table}
          + [コホート分析とは](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [コホート分析レポートの設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [コホート分析のユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
-
       + フォールアウト {#fallout}
          + [フォールアウトの概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [フォールアウトビジュアライゼーションの設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [フォールアウト分析でのフィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
-
-
       + フロー {#flow}
          + [フローの概要](../analysis-workspace/visualizations/c-flow/flow.md)
          + [フロービジュアライゼーションの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [面グラフおよび積み重ね面グラフ](../analysis-workspace/visualizations/area.md)
-
       + [棒グラフおよび積み重ね棒グラフ](../analysis-workspace/visualizations/bar.md)
       + [ブレットグラフ](../analysis-workspace/visualizations/bullet-graph.md)
       + [複合グラフ](../analysis-workspace/visualizations/combo-charts.md)
@@ -153,7 +142,6 @@ ht-degree: 86%
       + [テキスト](../analysis-workspace/visualizations/text.md)
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
       + [ベン図](../analysis-workspace/visualizations/venn.md)
-
    + パネル {#panels}
       + [パネルの概要](../analysis-workspace/c-panels/panels.md)
       + [アトリビューションパネル](../analysis-workspace/c-panels/attribution.md)
@@ -166,7 +154,6 @@ ht-degree: 86%
          + [概要](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [入力と出力の設定](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [よくある質問（FAQ）](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
-
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
@@ -175,7 +162,6 @@ ht-degree: 86%
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
       + [PDF ファイルまたは CSV ファイルのダウンロード](../analysis-workspace/curate-share/download-send.md)
       + [プロジェクトのスケジュール](../analysis-workspace/curate-share/t-schedule-report.md)
-
    + 仮想アナリスト {#virtual-analyst}
       + [仮想アナリストの概要](../analysis-workspace/virtual-analyst/overview.md)
       + 異常値検出 {#anomaly-detection}
@@ -183,7 +169,6 @@ ht-degree: 86%
          + [Analysis Workspace での異常値の表示](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [異常値検出で使用される統計的手法](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
-
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
       + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
@@ -201,37 +186,38 @@ ht-degree: 86%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + 分析タイプ {#analysis-types}
-      + [概要](../guided-analysis/analysis-types/overview.md)
-      + [ファネル](../guided-analysis/analysis-types/funnel.md)
-      + [傾向](../guided-analysis/analysis-types/trends.md)
-      + [ユーザーの増加率](../guided-analysis/analysis-types/user-growth.md)
+   + 影響 {#impact}
+      + [リリース](../guided-analysis/types/release.md)
+      + [初回使用](../guided-analysis/types/first-use.md)
+   + ファネル {#funnel}
+      + [摩擦](../guided-analysis/types/friction.md)
+      + [換算傾向](../guided-analysis/types/conversion-trends.md)
+   + ユーザーの増加率 {#user-growth}
+      + [アクティブ](../guided-analysis/types/active.md)
+      + [純増加率](../guided-analysis/types/net-growth.md)
+   + 傾向 {#trends}
+      + [用途](../guided-analysis/types/usage.md)
    + [FAQ](../guided-analysis/faq.md)
 
 + コンポーネント {#cja-components}
    + [コンポーネントの概要](../components/overview.md)
    + [コンポーネントの説明の追加](../components/add-component-descriptions.md)
-
    + 注釈 {#annotations}
       + [注釈の概要](../components/annotations/overview.md)
       + [注釈を作成](../components/annotations/create-annotations.md)
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
       + [モバイル注釈](../components/annotations/mobile-annotations.md)
-
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
       + [オーディエンス管理](../components/audiences/manage.md)
-
    + ディメンション {#dimensions}
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)
       + [ディメンションの分類](../components/dimensions/t-breakdown-fa.md)
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数が非常に高いディメンション](../components/dimensions/high-cardinality.md)
-
    + [指標](../components/apply-create-metrics.md)
-
    + フィルター {#cja-filters}
       + [フィルターの概要](../components/filters/filters-overview.md)
       + [フィルターの作成](../components/filters/create-filters.md)
@@ -239,7 +225,6 @@ ht-degree: 86%
       + [フィルタービルダー](../components/filters/filter-builder.md)
       + [フィルターの管理](../components/filters/manage-filters.md)
       + [演算子](../components/filters/operators.md)
-
    + 計算指標 {#cja-calcmetrics}
       + [計算指標の概要](../components/calc-metrics/calc-metr-overview.md)
       + 計算指標のワークフロー {#cm-workflow}
@@ -259,14 +244,12 @@ ht-degree: 86%
       + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
-
    + カレンダーと日付範囲 {#cja-date-ranges}
       + [カレンダーと日付範囲の概要](../components/date-ranges/calendar.md)
       + [日付範囲の作成](../components/date-ranges/create.md)
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
-
    + データ要素 {#data-dictionary}
       + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -312,31 +295,25 @@ ht-degree: 86%
 
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
-
    + Google Analytics データ {#ga}
       + [データを移行からGoogle AnalyticsへCustomer Journey Analyticsの概要](../use-cases/ga/overview.md)
       + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
-
    + データ取り込み {#data-ingestion}
       + [Marketo EngageデータのAdobe Experience Platformへの取り込みとCustomer Journey Analyticsでのレポート](../use-cases/data-ingestion/marketo.md)
       + [Adobe Experience PlatformオーディエンスのCustomer Journey Analyticsへの取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
-
    + B2B {#b2b}
       + [アカウントレベルのデータをルックアップデータセットとして追加](../use-cases/b2b/b2b.md)
-
    + クロスチャネルデータ {#cross-channel}
       + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
       + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
-
    + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
-
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
 

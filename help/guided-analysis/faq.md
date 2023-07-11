@@ -3,10 +3,10 @@ title: ガイド付き分析に関する FAQ
 description: ガイド付き分析に関するよくある質問 (FAQ) です。
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 2%
 
 ---
 
@@ -40,5 +40,31 @@ ht-degree: 5%
 | セグメント | フィルター |
 
 {style="table-layout:auto"}
+
++++
+
++++**Analysis Workspaceとガイド付き分析のアプローチレポートには、どのような違いがありますか？**
+
+Analysis Workspaceとガイド付き分析では同じ基になるデータが使用されますが、各ツールが異なるデータをクエリする方法は異なります。
+
+**Analysis Workspaceは、次元を中心としたエクスペリエンスです。** テーブルは通常、ディメンション項目の行で構成され、列は通常指標です。 いずれかにフィルターを適用して、目的のデータを取得できます。
+
+![Workspace の構造](assets/workspace-structure.png)
+
+**ガイド付き分析は、イベント中心のエクスペリエンスです。** ビジュアライゼーションは、ディメンションとフィルターを使用してイベントに焦点を当て、そのデータを補完します。
+
+![ガイド付き分析の構造](assets/guided-analysis-structure.png)
+
+次の例では、Web サイトのホームページに関するデータに焦点を当てています。 チームが類似した質問をしますが、分析のアプローチは異なる場合があります。
+
+* ディメンションを中心にしたAnalysis Workspaceの一般的なアプローチは、「ホームページを受け取ったページビューの数」です。
+
+  ![Dimension中心](assets/dimension-centered.png)
+
+* イベント中心のガイド付き分析の一般的なアプローチは、「何人のユーザーがホームページを閲覧したか」です。
+
+  ![イベント中央](assets/event-centered.png)
+
+これらの文は、イベント管理戦略に応じて、同じレポートを作成する 2 つの異なる方法を示しています。
 
 +++
