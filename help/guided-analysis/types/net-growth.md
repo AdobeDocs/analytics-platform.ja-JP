@@ -2,10 +2,10 @@
 title: 純増加率
 description: ユーザーの利益と損失のバランスを取る.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 * **パフォーマンス評価**:新しいユーザーの獲得に関して、製品の全体的なパフォーマンスを評価できます。 成長傾向を追跡することで、製品がユーザーを希望のペースで引き付け、維持しているかどうかをより深く理解できます。
 * **チャーン分析**:純成長テイクは、その公式（休止状態のユーザー）の低下を含む。 ユーザーベースの全体的な正常性を経時的に評価できます。 純増加率が常に下回る場合 `1`その結果、高い低下率を示し、その原因を調査し、保持戦略を導入するよう求められます。
 
-[ユーザーの増加のスクリーンショット]
+![純増加率](../assets/net-growth.png)
 
 ## クエリレール
 

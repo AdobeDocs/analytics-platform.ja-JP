@@ -3,10 +3,10 @@ title: ガイド付き分析に関する FAQ
 description: ガイド付き分析に関するよくある質問 (FAQ) です。
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '323'
+ht-degree: 3%
 
 ---
 
@@ -47,13 +47,11 @@ ht-degree: 2%
 
 Analysis Workspaceとガイド付き分析では同じ基になるデータが使用されますが、各ツールが異なるデータをクエリする方法は異なります。
 
-**Analysis Workspaceは、次元を中心としたエクスペリエンスです。** テーブルは通常、ディメンション項目の行で構成され、列は通常指標です。 いずれかにフィルターを適用して、目的のデータを取得できます。
+* **Analysis Workspaceは、次元を中心としたエクスペリエンスです。** テーブルは通常、ディメンション項目の行で構成され、列は通常指標です。 いずれかにフィルターを適用して、目的のデータを取得できます。
 
-![Workspace の構造](assets/workspace-structure.png)
+* **ガイド付き分析は、イベント中心のエクスペリエンスです。** ビジュアライゼーションは、ディメンションとフィルターを使用してイベントに焦点を当て、そのデータを補完します。
 
-**ガイド付き分析は、イベント中心のエクスペリエンスです。** ビジュアライゼーションは、ディメンションとフィルターを使用してイベントに焦点を当て、そのデータを補完します。
-
-![ガイド付き分析の構造](assets/guided-analysis-structure.png)
+![構造](assets/structure.png)
 
 次の例では、Web サイトのホームページに関するデータに焦点を当てています。 チームが類似した質問をしますが、分析のアプローチは異なる場合があります。
 

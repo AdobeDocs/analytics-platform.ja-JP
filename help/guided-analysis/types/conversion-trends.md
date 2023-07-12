@@ -2,9 +2,9 @@
 title: 換算傾向
 description: コンバージョン率の変化を経時的に追跡する。
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 * **A/B テストの評価**:ファネルのコンテキスト内で実行された A/B テストまたは実験の有効性を評価します。 異なるバリエーション間のコンバージョン率を比較することで、どのテストがより高いコンバージョン率を提供するかを容易に判断でき、どのバリエーションを恒久的に実装するかに関するデータ主導型の判断を下すことができます。
 * **時間の経過に伴うキャンペーン評価**:マーケティングキャンペーンの効果を経時的に測定します。 特定のキャンペーンにタッチしたユーザーに焦点を当てたセグメントを作成し、そのコンバージョン率を他のキャンペーンと比較することができます。 また、現在のコンバージョン率を、過去に実行された類似のキャンペーンと比較することもできます。
 
-[ファネルのスクリーンショット]
+![換算傾向](../assets/conversion-trends.png)
 
 ## クエリレール
 
@@ -39,6 +39,8 @@ ht-degree: 2%
 ## 時間比較を適用
 
 {{apply-time-comparison}}
+
+![コンバージョントレンドの時間比較](../assets/conversion-trends-compare.png)
 
 ## 日付範囲
 

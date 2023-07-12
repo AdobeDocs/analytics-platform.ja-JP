@@ -3,9 +3,9 @@ title: 摩擦
 description: ステップ間のコンバージョン率を比較します.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 * **機能の採用とエンゲージメント**:製品内の特定の機能に対するユーザーのインタラクションを理解します。 機能関連の手順を通じてユーザの進行状況を分析することで、機能採用率を評価し、特定の機能を放棄したり利用しなくなったりする可能性のある領域を特定できます。 この情報を使用して、機能や UI の改善に焦点を当て、導入率を高めることができます。
 * **キャンペーン評価**:マーケティングキャンペーンの効果を測定します。 特定のキャンペーンに触れたユーザーに焦点を当てたセグメントを作成し、そのコンバージョンプロセスを他のキャンペーンや製品全体と比較することができます。
 
-[ファネルのスクリーンショット]
+![摩擦](../assets/friction.png)
 
 ## クエリレール
 
@@ -41,6 +41,8 @@ ht-degree: 3%
 ## 時間比較を適用
 
 {{apply-time-comparison}}
+
+![摩擦時間の比較](../assets/friction-compare.png)
 
 ## 日付範囲
 

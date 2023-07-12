@@ -3,9 +3,9 @@ title: 用途
 description: ユーザーエンゲージメントの推移を測定します.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 * **ユーザーの行動**:トレンドは、ユーザーの行動に関する経時的なインサイトを提供できます。 ユーザーがとる特定のアクションを調べることで、ユーザーが脱落する可能性のあるパターンを特定できます。 この表示タイプから得られたインサイトを、 [摩擦](friction.md) 行動に関するより詳細なインサイトを得るため。
 * **A/B テストと実験**:製品内で A/B テストを実行する場合、トレンドを使用して、どのテストが長期にわたって最も成功したかを測定できます。
 
-[トレンドのスクリーンショット]
+![用途](../assets/usage.png)
 
 ## クエリレール
 
@@ -40,6 +40,8 @@ ht-degree: 2%
 ## 時間比較を適用
 
 {{apply-time-comparison}}
+
+![使用時間の比較](../assets/usage-compare.png)
 
 ## 日付範囲
 
