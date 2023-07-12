@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 3364850a56c7382fc1591b75d493ee9478ac59f6
+source-git-commit: eacb6eeaeadce7dfe39e6fb67eaba76986078363
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 86%
+source-wordcount: '966'
+ht-degree: 84%
 
 ---
 
@@ -187,16 +187,16 @@ ht-degree: 86%
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
    + 影響 {#impact}
-      + [リリース](../guided-analysis/types/release.md)
-      + [初回使用](../guided-analysis/types/first-use.md)
+      + [リリース表示](../guided-analysis/types/release.md)
+      + [初回使用ビュー](../guided-analysis/types/first-use.md)
    + ファネル {#funnel}
-      + [摩擦](../guided-analysis/types/friction.md)
-      + [換算傾向](../guided-analysis/types/conversion-trends.md)
+      + [摩擦ビュー](../guided-analysis/types/friction.md)
+      + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
    + ユーザーの増加率 {#user-growth}
-      + [アクティブ](../guided-analysis/types/active.md)
-      + [純増加率](../guided-analysis/types/net-growth.md)
+      + [アクティブビュー](../guided-analysis/types/active.md)
+      + [正味の成長見通し](../guided-analysis/types/net-growth.md)
    + 傾向 {#trends}
-      + [用途](../guided-analysis/types/usage.md)
+      + [使用状況ビュー](../guided-analysis/types/usage.md)
    + [業界の使用例](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
