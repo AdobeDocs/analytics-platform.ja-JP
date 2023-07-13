@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1481'
 ht-degree: 75%
 
 ---
@@ -110,4 +110,4 @@ Customer Journey Analyticsは、ECID 以外に ID の概念を拡張し、顧客
 
 ## 低トラフィックディメンション項目の概念の変更
 
-従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。Customer Journey Analyticsには、基数の高いフィールドに対する制限は少なくなります。 レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。詳しくは、 [ロングテール](../analysis-workspace/workspace-faq/long-tail.md) を参照してください。
+従来の Adobe Analytics では、変数が一意の値を受け取りすぎたとき、[!UICONTROL 低トラフィック]のディメンション項目のバケット化が始まります。Customer Journey Analyticsには、基数の高いフィールドに対する制限は少なくなります。 レポートアーキテクチャが変更されたことで、Analysis Workspace では、より多くの一意のディメンション項目に関するレポートを作成できるようになっています。詳しくは、 [結果の切り捨てられたディメンション項目](../analysis-workspace/workspace-faq/results-truncated.md) を参照してください。
