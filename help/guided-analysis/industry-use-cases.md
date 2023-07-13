@@ -1,9 +1,9 @@
 ---
 title: 業界の使用例
 description: ガイド付き分析の業界の使用例
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![小売の摩擦ビュー](assets/retail-funnel-friction.png)
+
+![小売の使用状況ビュー](assets/retail-trends-usage.png)
+
 +++
 
 +++**金融サービス**
@@ -35,6 +39,14 @@ ht-degree: 3%
 | **新機能を推奨** | デジタルの引き出しは、金融アドバイザーの呼び出しに代わって、時間の経過と共に減少しています。 デジタルプロセスを最適化したいと考えており、データの傾向は運営委員会による最適化の優先順位付けに役立ちます。 | **データ駆動型ロードマップを作成する。** データを活用して最適化を計画および実装します。 | [使用状況トレンドビュー](types/usage.md) |
 
 {style="table-layout:auto"}
+
+![金融サービスの摩擦ビュー](assets/fsi-funnel-friction.png)
+
+![金融サービスの使用状況ビュー](assets/fsi-trends-usage.png)
+
+![金融サービスのアクティブビュー](assets/fsi-user-growth-active.png)
+
+![金融サービスの代替アクティブ・ビュー](assets/fsi-user-growth-active-2.png)
 
 +++
 
@@ -49,6 +61,10 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![旅行と接客に対する摩擦観](assets/th-funnel-friction.png)
+
+![旅行および接客業向けの使用状況ビュー](assets/th-trends-usage.png)
+
 +++
 
 +++**メディアとエンターテインメント**
@@ -61,6 +77,10 @@ ht-degree: 3%
 | **コールセンターコールの偏向** | 自動引き落とし機能が機能しない問題を特定できたので、不満を抱くお客様がサポートセンターに連絡して計画をキャンセルしました。 | **サポート呼び出しを削減します。** より良いカスタマーエクスペリエンスを作成し、カスタマーサービスへの呼び出しを減らします。 | [摩擦ビュー](types/friction.md) <p/><p/> [コンバージョントレンドビュー](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![メディアとエンターテインメントの摩擦観](assets/me-funnel-friction.png)
+
+![メディアおよびエンターテインメント向けのアクティブビュー](assets/me-user-growth-active.png)
 
 +++
 
@@ -75,6 +95,8 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![医療に関する摩擦観](assets/healthcare-funnel-friction.png)
+
 +++
 
 +++**ハイテクと B2B**
@@ -87,5 +109,7 @@ ht-degree: 3%
 | **セルフサービス分析のロック解除** | インサイトにアクセスするのは困難で、ユーザーの分析トレーニングは実施されていません。 組織全体が使用している同じデータを活用し、より強力なパートナーシップを構築し、真のデータに基づく意思決定を可能にする必要があります。 | **組織全体でパートナーシップを緊密化します。** 製品マネージャーに、以前にサイロ化されたデータへのアクセス権を付与します。 | [ガイド付き分析](overview.md) |
 
 {style="table-layout:auto"}
+
+![B2B の使用状況ビュー](assets/b2b-trends-usage.png)
 
 +++
