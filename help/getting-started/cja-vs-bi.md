@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 66%
+source-wordcount: '1649'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 66%
 
 従来のカスタマージャーニー分析のアプローチでよくある障害は、それが顧客中心ではないことです。各チームは、サイロにデータを収集し、自分たちがアクセスできるデータに基づいてエクスペリエンスを分析および最適化します。
 
-![一般的な BI ワークフロー](./assets/biworkflow.png)
+![従来の BI ワークフロー（この節で説明）](./assets/biworkflow.png)
 
 特定のデジタルキャンペーンが異なるデータサイロに保存されたオフラインアクションに与える影響を理解するには、BI チームのキューにリクエストを発行します。BI チームは、データを取得して変換するために必要なクエリを作成します。生データが取得されると、BI チームはビジュアライゼーションを作成します。チームはあなたとデータを共有し、あなたはインサイトを丹念に調べて、他のシステムでアクティブ化できるようデータを抽出します。
 
@@ -34,7 +34,7 @@ ht-degree: 66%
 
 Customer Journey Analyticsは、カスタマージャーニーを理解することのみを目的として、包括的な顧客レベルでオンラインとオフラインのクロスチャネルデータを接続する環境を提供します。 関連すると判断したデータに[接続](/help/connections/overview.md)して[ビューを定義](/help/data-views/data-views.md)するには、初期設定が必要です。ただし、完了すると、そのデータは進行中の分析と探索にすぐに使用できます。カスタマージャーニーについて段階的にインサイトを得て、理解していくことができます。オンラインとオフラインのデータを組み合わせて民主化することで、カスタマージャーニーに関連する質問に数秒で答えることができます。
 
-![Customer Journey Analyticsワークフロー](./assets/cjaworkflow.png)
+![Customer Journey Analyticsワークフロー（この節で説明）](./assets/cjaworkflow.png)
 
 Customer Journey Analyticsを使用して、Visual Analysis Workspace環境で質問し、ほぼ瞬時にインサイトを取得できます。 クロスチャネルのデータとレポートは、SQL コードを必要とせずにすぐに使用できます。追加のクエリと分析は、完全に相関関係のあるデータを使用して、UI でシンプルなドラッグ＆ドロップで実行できます。引き続き質問をし、必要に応じてより詳細な情報を段階的に調べることができます。その後、アクティベーションやオーケストレーション用のオーディエンスを共有するなど、発見したインサイトに基づいてすぐにアクションを実行できます。
 

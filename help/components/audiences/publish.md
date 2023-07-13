@@ -3,10 +3,10 @@ title: オーディエンスを作成してリアルタイム顧客プロファ�
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 63%
+source-wordcount: '1576'
+ht-degree: 61%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 63%
 
    オーディエンスを公開する前に、これらの設定を行います。
 
-   ![](assets/create-audience.png)
+   ![オーディエンスの作成方法のスクリーンショット](assets/create-audience.png)
 
    | 設定 | 説明 |
    | --- | --- |
@@ -52,7 +52,7 @@ ht-degree: 63%
 
    オーディエンスのプレビューが右側のパネルに表示されます。作成したオーディエンスの要約分析が可能になります。
 
-   ![](assets/data-preview.png)
+   ![データプレビューのスクリーンショット](assets/data-preview.png)
 
    | プレビュー設定 | 説明 |
    | --- | --- |
@@ -85,7 +85,7 @@ ht-degree: 63%
 
 オーディエンスの公開前、公開中、公開後のいくつかの時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
 
-![Adobe Experience PlatformからCustomer Journey Analyticsへの遅延](assets/latency-diagram.png)
+![オーディエンス公開の待ち時間 ( [遅延に関する考慮事項](#latency-considerations)](assets/latency-diagram.png)
 
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ ht-degree: 63%
 
 Customer Journey Analyticsは、公開済みのオーディエンスからすべての名前空間と ID の組み合わせを取得し、それらをリアルタイム顧客プロファイル (RTCP) にストリーミングします。 Customer Journey Analyticsは、 [!UICONTROL 人物 ID] 接続が設定された時点で。
 
-次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。現在は、例えば、「user@adobe.com」をすべてのデバイスおよびチャネルにわたってターゲットに設定できます。プロファイルが見つからない場合は、新しく作成されます。
+次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。次に例を示します。 <user@adobe.com> は、すべてのデバイスおよびチャネルにわたってターゲット設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
 Platform でCustomer Journey Analyticsオーディエンスを表示するには、次に移動します。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ/ **[!UICONTROL CJA オーディエンス]**.
 
