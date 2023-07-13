@@ -2,10 +2,10 @@
 title: 初回使用ビュー
 description: 機能の初回使用が主要指標に与える影響を測定.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 9fa4b894e69a25b26632a93f00a655eec8e8aa86
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 8%
+source-wordcount: '417'
+ht-degree: 5%
 
 ---
 
@@ -24,25 +24,26 @@ ht-degree: 8%
 * **新機能分析**:製品内で新しい機能を起動する場合は、ユーザーが初めてその新機能に触れられた前後での主要指標の効果を比較できます。
 * **キャンペーンの効果**:ユーザーが特定のキャンペーンを表示する際に、そのキャンペーンを表示した前後の主要指標の効果を比較できます。
 
-<!--
-## Query rail
+## クエリレール
 
-The query rail allows you to configure the following components:
+クエリレールでは、次のコンポーネントを設定できます。
 
-* **Key indicators**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
-* **Factors**: The date that you want to compare before and after.
-* **People**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
+* **主要指標**:ユーザーごとに測定するイベント。 選択した各キーインジケーターは、色付きの線で表されます。 イベントを表す行が表に追加されます。 最大 3 つのイベントを含めることができます。
+* **要因**:このビューには、次の 2 つの要因があります。
+   * **日付**:イベントが初めてタッチされた時間をどれくらい遡って探すか。
+   * **イベント**:タッチ前とタッチ後に比較するイベント。
+* **人**:測定するセグメント。 選択したセグメントは、データをフィルタリングして、セグメント条件に一致する個人のみに焦点を当てます。
 
-## Chart settings
+## グラフ設定
 
-The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
+最初の使用ビューには、次のグラフ設定が用意されています。この設定は、グラフの上のメニューで調整できます。
 
-* **Metric**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
-* **Chart type**: The type of visualization that you want to use. Options include Line.
+* **指標**:測定する指標です。 次のオプションがあります [!UICONTROL ユーザーごとのイベント数], [!UICONTROL イベント], [!UICONTROL セッション]、および [!UICONTROL ユーザー].
+* **グラフのタイプ**:使用するビジュアライゼーションのタイプ。 オプションには「線」があります。
 
-## Date range
+## 日付範囲
 
-Date selection in impact reports operate differently than other analysis types, since the report revolves around the date specified in the query rail. The following options are available:
+影響レポートでの日付選択の動作は、他の分析タイプとは異なります。これは、レポートが最初にタッチされた特定のイベント（クエリレールで指定）に対して回転するからです。 次のオプションがあります。
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
-* **Before and after period**: The amount of time to analyze before and after the date specified in the query rail. Available options depend on the [!UICONTROL Interval] selection. -->
+* **間隔**:トレンドデータを表示する日付精度です。 有効なオプションは次のとおりです。 [!UICONTROL 毎日], [!UICONTROL 毎週], [!UICONTROL 毎月]、および [!UICONTROL 四半期ごと]. 間隔を変更すると、「前」および「後」の期間で使用できるオプションに影響します。
+* **期間の前後**:クエリレールで指定されたタッチ済みイベントの前後に分析する時間。 使用可能なオプションは、 [!UICONTROL 間隔] 選択。
