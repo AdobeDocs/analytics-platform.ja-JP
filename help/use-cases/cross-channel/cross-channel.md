@@ -4,10 +4,10 @@ description: カスタマージャーニー全体を通した顧客とのイン�
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 75f27ef2f5fcd0d2a2038dbe7bcf812e865a14fc
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 63%
+source-wordcount: '531'
+ht-degree: 61%
 
 ---
 
@@ -15,11 +15,9 @@ ht-degree: 63%
 
 クロスチャネル分析を使用すると、様々な Web、モバイル、オフラインのプロパティからのデータを統合し、様々なチャネルをまたいだ顧客の行動を 1 つの統合ビューで把握できます。 例えば、この統合ビューを使用して、デスクトップとモバイルをまたいで顧客のインタラクションを分析し、顧客の行動を把握し、インサイトを抽出してデジタル顧客体験を最適化できます。 また、チャネルをまたいだ顧客インタラクション（例：サポートのやり取りや店頭購入など、デジタルチャネルとオフラインチャネル）を分析して、カスタマージャーニーをより深く理解し、最適化することもできます。
 
-## ワークフロー
-
-![クロスチャネルアーキテクチャ](../assets/cca-architecture.png)
-
 ## 実装手順
+
+![実装手順のフローの図 ( [実装手順](#implementation-steps)](../assets/cca-architecture.png)
 
 1. 取り込むデータの [スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) します。
 1. 取り込むデータの [データセットを作成](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=ja) します。
