@@ -1,9 +1,9 @@
 ---
 title: 業界の使用例
 description: ガイド付き分析の業界の使用例
-source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
+source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1448'
 ht-degree: 3%
 
 ---
@@ -65,6 +65,8 @@ ht-degree: 3%
 
 ![旅行および接客業向けの使用状況ビュー](assets/th-trends-usage.png)
 
+![旅行および接客業向けのコンバージョンの傾向](assets/th-funnel-conversio-trends.png)
+
 +++
 
 +++**メディアとエンターテインメント**
@@ -81,6 +83,8 @@ ht-degree: 3%
 ![メディアとエンターテインメントの摩擦観](assets/me-funnel-friction.png)
 
 ![メディアおよびエンターテインメント向けのアクティブビュー](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 
