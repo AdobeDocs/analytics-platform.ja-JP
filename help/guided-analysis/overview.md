@@ -3,9 +3,9 @@ title: ガイド付き分析：概要
 description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1048'
 ht-degree: 9%
 
 ---
@@ -24,13 +24,13 @@ Analysis Workspaceやモバイルのスコアカードと同様、ガイド付�
 
 | 分析タイプ | ビュータイプ | 説明 |
 | --- | --- | --- |
-| 影響 | [リリース](types/release.md) | リリース前とリリース後の同じ期間のパフォーマンスを比較. |
-| 影響 | [初回使用](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定. |
-| ファネル | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します. |
-| ファネル | [換算傾向](types/conversion-trends.md) | 換算率の経時的な変化を追跡. |
-| ユーザーの増加率 | [アクティブ](types/active.md) | 新規、継続、復帰または休眠ユーザーを特定. |
-| ユーザーの増加率 | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
-| 傾向 | [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します. |
+| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間のパフォーマンスを比較. |
+| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定. |
+| [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します. |
+| [!UICONTROL ファネル] | [換算傾向](types/conversion-trends.md) | 換算率の経時的な変化を追跡. |
+| [!UICONTROL ユーザーの増加率] | [アクティブ](types/active.md) | 新規、継続、復帰または休眠ユーザーを特定. |
+| [!UICONTROL 純増加率] | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [!UICONTROL 傾向] | [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します. |
 
 {style="table-layout:auto"}
 
@@ -38,9 +38,13 @@ Analysis Workspaceやモバイルのスコアカードと同様、ガイド付�
 
 組織でガイド付き分析がプロビジョニングされている場合は、Customer Journey Analyticsのホームページからアクセスできます。
 
-クリック **ガイド付き分析** ホームページから直接 [使用状況トレンドビュー](types/usage.md).
+1. クリック **[!UICONTROL ガイド付き分析]** ホームページから直接 [使用状況トレンドビュー](types/usage.md).
 
-クリック **新規作成** をクリックして別のビューオプションを表示し、解析の開始点を選択します。
+   ![新しいモーダルの作成](assets/create-new-modal.png)
+
+1. クリック **[!UICONTROL 新規作成]** をクリックして別のビューオプションを表示し、解析の開始点を選択します。
+
+   ![ランディングページタイル](assets/landing-page-tile.png)
 
 ## インターフェイス
 
