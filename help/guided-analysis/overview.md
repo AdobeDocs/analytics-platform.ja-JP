@@ -3,7 +3,7 @@ title: ガイド付き分析：概要
 description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 75f946e65bfc0ccee4f173b699b14caced21bbaf
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 9%
@@ -11,8 +11,6 @@ ht-degree: 9%
 ---
 
 # ガイド付き分析：概要
-
-{{release-limited-testing}}
 
 ガイド付き分析は、製品チームがデータニーズにすばやく応え、高品質なインサイトを迅速に得て、より多くのデータ主導型の製品決定を下すことができるようにするレポート形式です。 部門をまたぐチームは、リアルタイムに接続して、これらのレポートを使用し、理解できます。
 

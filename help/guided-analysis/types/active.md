@@ -3,7 +3,7 @@ title: アクティブビュー
 description: 新規、継続、復帰または休眠ユーザーを特定.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 3%
@@ -11,8 +11,6 @@ ht-degree: 3%
 ---
 
 # アクティブビュー
-
-{{release-limited-testing}}
 
 この **アクティブ** ビューは、特定の期間におけるユーザーの増加と獲得に関するインサイトを提供します。 横軸は時間間隔で、縦軸はユーザーの測定値です。 ユーザーは次の 4 つのカテゴリに分かれます。
 

@@ -2,7 +2,7 @@
 title: コンバージョントレンドビュー
 description: コンバージョン率の変化を経時的に追跡する。
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -10,8 +10,6 @@ ht-degree: 2%
 ---
 
 # コンバージョントレンドビュー
-
-{{release-limited-testing}}
 
 この **コンバージョンの傾向** ビューは、コンバージョン率の経時的なトレンドのビジュアライゼーションを提供します。 横軸は時間間隔で、縦軸はコンバージョン率を表します。
 

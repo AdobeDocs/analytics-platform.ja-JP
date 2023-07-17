@@ -3,7 +3,7 @@ title: 摩擦ビュー
 description: ステップ間のコンバージョン率を比較します.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%
@@ -11,8 +11,6 @@ ht-degree: 3%
 ---
 
 # 摩擦ビュー
-
-{{release-limited-testing}}
 
 この **摩擦** ビューは、製品内の重要なユーザージャーニーを視覚的に表します。 水平軸は、ユーザーが通る必要のある各ステップを表します。 縦軸は、各ステップのユーザーまたはセッションの割合を表します。 すべての手順は最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 

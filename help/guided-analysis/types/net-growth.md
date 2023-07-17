@@ -2,7 +2,7 @@
 title: 正味の成長見通し
 description: ユーザーは増加していますか、それとも減少していますか？
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # 正味の成長見通し
-
-{{release-limited-testing}}
 
 この **純増加** 表示タイプは、特定の期間にユーザーを獲得または失う率に関するインサイトを提供します。 水平軸は時間間隔で、垂直軸は成長の測定です。
 

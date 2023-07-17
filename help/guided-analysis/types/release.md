@@ -2,7 +2,7 @@
 title: リリース表示
 description: リリース前とリリース後の同じ期間のパフォーマンスを比較.
 feature: Guided Analysis
-source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 4%
@@ -10,8 +10,6 @@ ht-degree: 4%
 ---
 
 # リリース表示
-
-{{release-limited-testing}}
 
 この **リリース** ビューには、特定の日付の前後での主要指標のパフォーマンスの比較が表示されます。 このレポートの横軸は時間間隔ですが、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、比較する前後の日付を表します。 通常、この日付は、製品の更新やキャンペーンの開始など、測定対象の製品に対する顕著な変更を示します。
 
