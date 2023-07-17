@@ -1,8 +1,8 @@
 ---
-source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
+source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 66%
+source-wordcount: '1092'
+ht-degree: 64%
 
 ---
 # スニペット
@@ -18,6 +18,13 @@ ht-degree: 66%
 >[!AVAILABILITY]
 >
 >この節で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
+
+## パッケージを選択 {#select-package}
+
+>[!NOTE]
+>
+>次を持っている必要があります： **選択** この記事で説明する機能を使用するためのパッケージです。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
+
 
 ## データ要素のフィルター条件 {#dd-filter-criteria}
 
