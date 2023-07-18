@@ -3,10 +3,10 @@ title: 使用状況ビュー
 description: ユーザーエンゲージメントの推移を測定します.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -14,9 +14,7 @@ ht-degree: 3%
 
 この **[!UICONTROL 使用状況]** ビューは、製品やユーザーの行動の経時的なパフォーマンスに関する貴重なインサイトを提供します。 このレポートの横軸は時間間隔で、縦軸は目的のイベントを測定します。
 
-![用途](../assets/usage.png)
-
-## 詳しくは、 [!UICONTROL 使用状況] 実際の表示
+詳しくは、 [!UICONTROL 使用状況] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 

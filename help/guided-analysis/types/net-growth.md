@@ -2,16 +2,16 @@
 title: 正味の成長見通し
 description: ユーザーは増加していますか、それとも減少していますか？
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# 正味の成長見通し
+# [!UICONTROL 純増加] 表示
 
-この **純増加** 表示タイプは、特定の期間にユーザーを獲得または失う率に関するインサイトを提供します。 水平軸は時間間隔で、垂直軸は成長の測定です。
+この **[!UICONTROL 純増加]** 表示タイプは、特定の期間にユーザーを獲得または失う率に関するインサイトを提供します。 水平軸は時間間隔で、垂直軸は成長の測定です。
 
 各データポイントは純増加を表し、次の式を使用して計算されます。
 
@@ -29,9 +29,7 @@ ht-degree: 1%
 >
 >リピートユーザーは、ユーザーの利益や損失を表すものではないので、この計算に含まれません。
 
-![純増加率](../assets/net-growth.png)
-
-## 「行動の純成長率」を参照
+詳しくは、 [!UICONTROL 純増加] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

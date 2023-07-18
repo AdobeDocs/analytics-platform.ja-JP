@@ -2,9 +2,9 @@
 title: 初回使用ビュー
 description: 機能の初回使用が主要指標に与える影響を測定.
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '620'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 3%
 
 この **[!UICONTROL 初回使用]** 「表示」には、ユーザーが初めて製品機能を使用する前と後で、主要指標がどのように実行されたかの比較が表示されます。 このレポートの横軸はイベントの前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、特定のユーザーが機能を最初に使用した日を表します。 ユーザーが必ずしも同じ日に機能を採用するわけではなく、ロールアウトが数日間にわたって発生する場合があるので、0 日目は各ユーザーで異なる何かを意味します。
 
-![リリース](../assets/first-use.png)
-
-## 実際の動作を確認する
+詳しくは、 [!UICONTROL 初回使用] 実際の表示
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 

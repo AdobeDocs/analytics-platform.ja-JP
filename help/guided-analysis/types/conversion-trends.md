@@ -2,10 +2,10 @@
 title: コンバージョントレンドビュー
 description: コンバージョン率の変化を経時的に追跡する。
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 この **コンバージョンの傾向** ビューは、コンバージョン率の経時的なトレンドのビジュアライゼーションを提供します。 横軸は時間間隔で、縦軸はコンバージョン率を表します。
 
-![換算傾向](../assets/conversion-trends.png)
-
-## 実際のコンバージョントレンドビューを参照してください
+詳しくは、 [!UICONTROL コンバージョンの傾向] 実際の表示
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 

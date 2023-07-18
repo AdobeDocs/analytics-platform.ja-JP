@@ -3,20 +3,18 @@ title: 摩擦ビュー
 description: ステップ間のコンバージョン率を比較します.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
-# 摩擦ビュー
+# [!UICONTROL 摩擦] 表示
 
-この **摩擦** ビューは、製品内の重要なユーザージャーニーを視覚的に表します。 水平軸は、ユーザーが通る必要のある各ステップを表します。 縦軸は、各ステップのユーザーまたはセッションの割合を表します。 すべての手順は最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
+この **[!UICONTROL 摩擦]** ビューは、製品内の重要なユーザージャーニーを視覚的に表します。 水平軸は、ユーザーが通る必要のある各ステップを表します。 縦軸は、各ステップのユーザーまたはセッションの割合を表します。 すべての手順は最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
-![摩擦](../assets/friction.png)
-
-## 実際の摩擦ビューを参照してください。
+詳しくは、 [!UICONTROL 摩擦] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
