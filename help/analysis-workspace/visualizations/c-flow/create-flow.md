@@ -4,10 +4,10 @@ title: フロービジュアライゼーションの設定
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 4e5a186aa39ae7c56ff29e1523a4092546092789
+source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 63%
+source-wordcount: '1487'
+ht-degree: 62%
 
 ---
 
@@ -21,13 +21,11 @@ ht-degree: 63%
 
 ## フロービジュアライゼーションの作成 {#configure}
 
-1. プロジェクトに空のパネルを追加し、左側のパネルのビジュアライゼーションアイコンをクリックします。
-
-1. 次をドラッグ： [!UICONTROL **フロー**] ビジュアライゼーションをパネルに組み込みます。
+1. プロジェクトに空のパネルを追加し、左側のパネルでビジュアライゼーションアイコンを選択し、 [!UICONTROL **フロー**] ビジュアライゼーションをパネルに組み込みます。
 
    または
 
-   次をドラッグ： [!UICONTROL **フロー**] ビジュアライゼーションを既存のプロジェクトに組み込む。
+   ビジュアライゼーションをパネルに追加する方法については、 [ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. 次のいずれかのオプションを使用して、フロービジュアライゼーションをアンカーします。
 
@@ -45,7 +43,7 @@ ht-degree: 63%
    >
    >計算指標は  **[!UICONTROL 次で始まる]** または **[!UICONTROL 次で終わる]** フィールド。
 
-1. 指標を選択する場合は、 [!UICONTROL パスDimension] を選択したコンポーネントへのパスまたは選択したコンポーネントからの移動パスとして使用するには、次のようにします。 デフォルトは「[!UICONTROL **ページ**]」です。
+1. 指標を選択する場合は、 [!UICONTROL **パスDimension**] を選択し、選択したコンポーネントへの（または選択したコンポーネントからの）パスとして使用します。 デフォルトは「[!UICONTROL **ページ**]」です。
 
    ![パスディメンション](assets/pathing-dim.png)
 
