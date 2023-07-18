@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
+source-git-commit: fe52730e3904ba5ccc5d1e7e5ff89eed8a575fbc
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 82%
+source-wordcount: '541'
+ht-degree: 83%
 
 ---
 
@@ -72,8 +72,6 @@ ht-degree: 82%
    ![](./assets/image10.png)
 
    **行ヘッダーと列ヘッダーの表示/非表示を切り替える**
-
-1. データハブの「データブロックを編集」コマンドをReport Builderします。
 
 1. 次をクリック： **テーブル** 設定アイコン
 
