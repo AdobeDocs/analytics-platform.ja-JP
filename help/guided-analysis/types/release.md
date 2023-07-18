@@ -2,18 +2,16 @@
 title: リリース表示
 description: リリース前とリリース後の同じ期間のパフォーマンスを比較.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
 # [!UICONTROL リリース] 表示
 
 この **[!UICONTROL リリース]** ビューには、特定の日付の前後での主要指標のパフォーマンスの比較が表示されます。 このレポートの横軸は時間間隔ですが、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、比較する前後の日付を表します。 通常、この日付は、製品の更新やキャンペーンの開始など、測定対象の製品に対する顕著な変更を示します。
-
-詳しくは、 [!UICONTROL リリース] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

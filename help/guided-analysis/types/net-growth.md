@@ -2,9 +2,9 @@
 title: 正味の成長見通し
 description: ユーザーは増加していますか、それとも減少していますか？
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >リピートユーザーは、ユーザーの利益や損失を表すものではないので、この計算に含まれません。
-
-詳しくは、 [!UICONTROL 純増加] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

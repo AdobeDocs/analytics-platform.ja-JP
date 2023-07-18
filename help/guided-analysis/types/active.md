@@ -3,9 +3,9 @@ title: アクティブビュー
 description: 新規、継続、復帰または休眠ユーザーを特定.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -20,8 +20,6 @@ ht-degree: 2%
 * **[!UICONTROL 休止]**:ユーザーは直前の期間にアクティブでしたが、現在の期間にはアクティブではありません。 休止状態のユーザーは、アクティブなユーザーの合計数にカウントされません。
 
 すべてのアクティブなユーザー（新しい+リピート+リターン）は、水平軸の上にティールのシェードとして表示され、休止状態のユーザーはすべて、水平軸の下にオレンジ色で表示されます。
-
-詳しくは、 [!UICONTROL アクティブ] 実行中の表示：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 
