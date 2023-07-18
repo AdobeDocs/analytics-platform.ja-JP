@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,24 @@ ht-degree: 97%
    テーブルにコンポーネントを追加すると、データブロックのプレビューがワークシートのデータブロックの場所に表示されます。テーブル内のアイテムを追加、移動、または削除すると、データブロックプレビューのレイアウトが自動的に更新されます。
 
    ![](./assets/image10.png)
+
+   **行ヘッダーと列ヘッダーの表示/非表示を切り替える**
+
+1. データハブの「データブロックを編集」コマンドをReport Builderします。
+
+1. 次をクリック： **テーブル** 設定アイコン
+
+   ![プレースホルダー画像](./assets/table-settings.png){width="35%"}
+
+1. 「行ヘッダーと列ヘッダーを表示」オプションをオンまたはオフにします。 ヘッダーはデフォルトで表示されます。
+
+   **ディメンションラベルと指標ヘッダーの表示/非表示を切り替える**
+
+1. ディメンションまたは列ヘッダーの省略記号アイコンをクリックして、設定を表示します。
+
+   ![プレースホルダー画像](./assets/row-heading.png){width="35%"}
+
+1. 「非表示」または「表示」をクリックして、ディメンションラベルまたは列ヘッダーを切り替えます。 デフォルトでは、すべてのラベルが表示されます。
 
 1. 「**終了**」をクリックします。
 
