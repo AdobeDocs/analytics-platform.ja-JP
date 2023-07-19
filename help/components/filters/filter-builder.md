@@ -3,10 +3,10 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 27%
+source-wordcount: '1396'
+ht-degree: 22%
 
 ---
 
@@ -20,10 +20,9 @@ ht-degree: 27%
 
 フィルタービルダーには、次のいずれかの方法でアクセスできます。
 
-* **Analytics 上部ナビゲーション**:クリック **[!UICONTROL Analytics]** > **[!UICONTROL コンポーネント]** > **[!UICONTROL フィルター]**.
+* **上部ナビゲーション**:クリック **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL コンポーネント]** > **[!UICONTROL フィルター]**.
 * **[!UICONTROL Analysis Workspace]**:Analysis Workspaceでプロジェクトを開き、 **[!UICONTROL +コンポーネント]** > **[!UICONTROL フィルターを作成]**.
-* **[!UICONTROL Reports &amp; Analytics]**:クリック **[!UICONTROL Analytics]** > **[!UICONTROL レポート]**&#x200B;をクリックし、既存のレポートを開いて、 **フィルター** 左側のナビゲーションのアイコンをクリックし、 **[!UICONTROL 追加]**.
-* **[!UICONTROL Report Builder]**: [Report Builderでフィルターを追加または編集](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html?lang=ja).
+* **[!UICONTROL Report Builder]**: [フィルターのReport Builder](/help/report-builder/work-with-filters.md).
 
 ## ビルダー条件の概要 {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -153,91 +152,3 @@ ht-degree: 27%
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-## フィルターテンプレート {#concept_5098446CC78D441E93B8E4D1D1EA6558}
-
-「初回訪問」や「モバイルデバイスからの訪問」など、一般的なフィルターの使用例に対してフィルターテンプレートが提供されます。 これらは、Workspace プロジェクトおよびフィルタービルダーで、新しいフィルターの構築ブロックとして使用できます。
-
-テンプレートは、アドビの「A」ロゴで示されます。次に、テンプレートの例を示します。
-
-<table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> テンプレート名 </th> 
-   <th colname="col2" class="entry"> 定義 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> 買い物かごを放棄 </td> 
-   <td colname="col2">商品を買い物かごに追加したが何も注文しなかった人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 この順次フィルターのルールは次のとおりです。 <p> 「買い物かごへの追加数が null でない </p> <p>その場合 </p> <p>注文数が 0 に等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 初回訪問回数 </td> 
-   <td colname="col2">最大 1 回訪問した人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>訪問回数が 1 と等しい </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 非購入者 </td> 
-   <td colname="col2">注文イベントに参加しなかった人のデータを表示します。 フィルター定義では、コンテナは訪問者です。 このフィルターでは、「除外」論理を使用します。 ルールは <p>「注文数が null でない」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 非直帰数（非バウンス） </td> 
-   <td colname="col2">複数回訪問した人のデータを表示します。 フィルター定義では、コンテナは訪問者です。 このフィルターでは、「除外」論理を使用します。 ルールは <p>「単一アクセスが null でない」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 有料検索 </td> 
-   <td colname="col2">有料検索から来た人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「有料検索が 1」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 購入者 </td> 
-   <td colname="col2">注文イベントに参加した人のデータを表示します。 フィルター定義では、コンテナは訪問者です。 ルールは <p>「注文数が null でない」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 再来訪 </td> 
-   <td colname="col2">少なくとも 1 回訪問した人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「訪問回数が 1 より大きい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 単一ページ訪問数 </td> 
-   <td colname="col2"> 訪問時に複数のページビューを送信していても、単一のページ値を表示する訪問のデータを表示します。出口リンクイベントを持つ直帰数がフィルターに含まれます。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>単一ページ訪問が 1 です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 閲覧された製品が買い物かごに追加されなかった </td> 
-   <td colname="col2">製品を閲覧したが買い物かごに追加しなかった人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 この順次フィルターのルールは次のとおりです。 <p>「製品表示が null でない </p> <p>その場合 </p> <p> 買い物かごへの追加数が 0 に等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> キャンペーンからの訪問回数 </td> 
-   <td colname="col2">キャンペーンから参照された人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「トラッキングコードが null でない」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> モバイルデバイスからの訪問 </td> 
-   <td colname="col2">モバイルデバイスを使用しているユーザーのデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>モバイルデバイスが null ではない。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 自然検索からの訪問 </td> 
-   <td colname="col2">有料検索から来ていない人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「有料検索が 0」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> モバイルデバイス以外からの訪問回数 </td> 
-   <td colname="col2">モバイルデバイスを使用していないユーザーのデータを表示します。 フィルター定義では、コンテナは「訪問」です。 このフィルターでは、「除外」論理を使用します。 ルールは <p>「モバイルデバイスタイプが携帯電話に等しい」 </p> <p>または </p> <p>「モバイルデバイスタイプがタブレットに等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 電話からの訪問回数 </td> 
-   <td colname="col2">電話を使用する人からのデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「デバイスタイプが携帯電話に等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 検索エンジンからの訪問回数 </td> 
-   <td colname="col2">検索エンジンから参照された人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「リファラータイプが検索エンジンに等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> ソーシャルサイトからの訪問件数 </td> 
-   <td colname="col2">ソーシャルサイトから参照された人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「リファラータイプがソーシャルネットワークに等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> タブレットからの訪問回数 </td> 
-   <td colname="col2">タブレットを使用している人のデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>「デバイスタイプがタブレットに等しい」です。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 訪問者 ID cookie を使用した訪問 </td> 
-   <td colname="col2">永続的な cookie が必要なユーザーからサイトへのデータを表示します。 フィルター定義では、コンテナは「訪問」です。 ルールは <p>永続的な Cookie が 1 に等しい。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
