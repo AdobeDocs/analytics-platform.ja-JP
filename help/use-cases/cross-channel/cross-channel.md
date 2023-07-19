@@ -4,10 +4,10 @@ description: カスタマージャーニー全体を通した顧客とのイン�
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 75f27ef2f5fcd0d2a2038dbe7bcf812e865a14fc
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 61%
+source-wordcount: '528'
+ht-degree: 62%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 61%
 
 ## 実装手順
 
-![実装手順のフローの図 ( [実装手順](#implementation-steps)](../assets/cca-architecture.png)
+![この節で説明する実装手順のフロー。](../assets/cca-architecture.png)
 
 1. 取り込むデータの [スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) します。
 1. 取り込むデータの [データセットを作成](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=ja) します。
