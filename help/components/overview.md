@@ -4,10 +4,10 @@ description: どのコンポーネントCustomer Journey Analyticsオファー�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 86%
+source-wordcount: '1127'
+ht-degree: 79%
 
 ---
 
@@ -21,10 +21,14 @@ ht-degree: 86%
 次のコンポーネントを管理できます。
 
 * [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
-* [**フィルター**](filters/filters-overview.md)：データの一部を除外して、共通のディメンション項目に焦点を当てる
+* [**オーディエンス**](/help/components/audiences/audiences-overview.md):に対するCustomer Journey Analyticsで検出されたオーディエンスを作成して公開 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCDP) をAdobe Experience Platformで利用し、お客様のターゲティングとパーソナライゼーションをおこなう。
+* [**フィルター**](filters/filters-overview.md):強力で重要なオーディエンスフィルターを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいて個人のサブセットを識別できます。
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
-* [**日付範囲**](date-ranges/create.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整
-* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理
+* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md):ユーザーと管理者の両方が、Analytics 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。
+* [**日付範囲**](date-ranges/create.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整.
+* [**Dimension**](/help/components/dimensions/view-dimensions.md):Dimensionは、通常、文字列値を含む変数です。 一般的なディメンションには、ページおよび参照ドメインがあります。
+* [**指標**](/help/components/apply-create-metrics.md):Analysis Workspaceでデータポイントを数値化できます。
+* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理.
 
 ## Analysis Workspace のコンポーネント
 

@@ -3,9 +3,9 @@ title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 55%
 
 ---
@@ -23,7 +23,7 @@ Workspace では、必要な複雑さ、現在のプロジェクトにのみ適�
 | フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
 | 計算指標ベースのフィルター | [計算指標ビルダー](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
 
-フリーフォームプロジェクトにフィルターを適用する場合は、他のいくつかの方法も使用できます。
+フリーフォームプロジェクトにフィルターを適用する場合は、他にもいくつかの方法を使用できます。
 
 | アクション | 説明 |
 | --- | --- |
