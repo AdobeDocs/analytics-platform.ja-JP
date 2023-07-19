@@ -4,11 +4,11 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+badgeDerivedFields: label="新機能" type="Positive"
+source-git-commit: 33ed28de1c410bcba04ab405ce8d779a501f4b3f
 workflow-type: tm+mt
-source-wordcount: '3281'
-ht-degree: 9%
+source-wordcount: '4350'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 9%
 
 派生フィールドを作成または編集する場合、派生フィールドインターフェイスを使用します。
 
-![派生フィールドダイアログ](assets/derived-field-dialog.png)
+![派生フィールドダイアログのスクリーンショット](assets/derived-field-dialog.png)
 
 
 |  | 名前 | 説明 |
@@ -56,7 +56,7 @@ ht-degree: 9%
 
 ルールビルダーでルールを定義する場合、ルールインターフェイスを使用します。
 
-![ルールインターフェイス](assets/rule-interface.png)
+![派生フィールドルールインターフェイスのスクリーンショット](assets/rule-interface.png)
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
@@ -139,7 +139,7 @@ ht-degree: 9%
 
 このテンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、 [関数リファレンス](#function-reference) を参照してください。
 
-![マーケティングチャネルテンプレートのルールビルダー](assets/marketing-channel-template.png)
+![マーケティングチャネルテンプレートルールビルダーのスクリーンショット](assets/marketing-channel-template.png)
 
 +++
 
@@ -177,7 +177,7 @@ ht-degree: 9%
 
 ### 連結
 
-2 つ以上のフィールド、派生フィールド、またはユーザーが入力した値を、定義済みの区切り文字で 1 つのフィールドに結合します。
+フィールドの値を、定義された区切り文字で単一の新しい派生フィールドに結合します。
 
 +++ 詳細
 
@@ -185,7 +185,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <p>文字列</p> | <ul><li>各 [!UICONTROL 値]:<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li><li>ユーザー入力</li></ul></li><li>各 [!UICONTROL 区切り]:<ul><li>ユーザー入力</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 区切り]:<ul><li>文字列</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -235,7 +235,7 @@ ht-degree: 9%
 
 新しい [!UICONTROL Origin - Destination] 派生フィールド。 次を使用する [!UICONTROL 連結] 関数を使用して [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
 
-![連結ルール](assets/concatenate.png)
+![連結ルールのスクリーンショット](assets/concatenate.png)
 
 ### 後のデータ {#concatenate-dataafter}
 
@@ -263,7 +263,7 @@ ht-degree: 9%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>各 [!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>各 [!UICONTROL 次に、値を], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>[!UICONTROL 次に、値を], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -311,7 +311,7 @@ ht-degree: 9%
 
 関数の使用に注意してください [!UICONTROL URL 解析] 値を取得するルールを定義するには `Page Url` および `Referring Url` の前 [!UICONTROL 次の場合にケース] ルールが適用されます。
 
-![ルール 1 の場合](assets/case-when-1.png)
+![ルール 1 のケースのスクリーンショット](assets/case-when-1.png)
 
 ### 後のデータ {#casewhen-uc1-dataafter}
 
@@ -365,7 +365,7 @@ ht-degree: 9%
 
 次の項目を定義します。 `Product Finding Methods (new)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 これらのルールは、古い [!UICONTROL 製品検索方法] フィールド値 `search` および `browse` の使用 [!UICONTROL フレーズを含む] 条件
 
-![ルール 2 の場合](assets/case-when-2.png)
+![ルール 2 のケースのスクリーンショット](assets/case-when-2.png)
 
 ### 後のデータ {#casewhen-uc2-dataafter}
 
@@ -438,7 +438,7 @@ ht-degree: 9%
 
 次の項目を定義します。 `Trip Duration (bucketed)` 派生フィールド。 次を作成します [!UICONTROL 次の場合にケース] ルールビルダーのルール。 このルールは、古い [!UICONTROL 旅行期間] フィールドの値を 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
 
-![ルール 3 の場合](assets/case-when-3.png)
+![ルール 3 のケースのスクリーンショット](assets/case-when-3.png)
 
 
 ### 後のデータ {#casewhen-uc3-dataafter}
@@ -459,7 +459,7 @@ ht-degree: 9%
 | [!DNL long trip] |
 
 
-## 制約
+## 詳細情報
 
 Customer Journey Analyticsは、Adobe Experience Platformの [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 詳しくは、 [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本来は柔軟ですが、ルールビルダーを使用する際に一部の制約が課されます。
 
@@ -469,15 +469,13 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-
-
 次の制約が適用され、適用されるのは *選択* および *設定* 値。
 
 |  | 制約 |
 |:---:|----|
-| **<span style='color: red'>A</span>** | 値 *選択* 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | すべての値 *設定* ルールの間は、同じコンテナに属し、同じタイプまたは同じタイプの派生値を持つ必要があります。 <br/> ![依存関係 B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | 指定した値 *選択* 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます *not* 同じコンテナから派生し、同じコンテナから派生する必要がある *not* 同じタイプである必要があります。 <br/> ![依存関係 C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | 値 *選択* 同じ内部で [!UICONTROL If], [!UICONTROL Else If] 構文 ( [!UICONTROL および] または [!UICONTROL または]) ルール内では、同じコンテナから始まる必要があり、任意のタイプ（文字列）を指定できます ![文字列](assets/Smock_ABC_18_N.svg)，数値 ![数値](assets/Smock_123_18_N.svg)など ) を含める必要があります。 <br/>![依存関係 A のスクリーンショット](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | すべての値 *設定* ルールの間は、同じコンテナに属し、同じタイプまたは同じタイプの派生値を持つ必要があります。 <br/> ![依存関係 B のスクリーンショット](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | 指定した値 *選択* 横 [!UICONTROL If], [!UICONTROL Else If] ルール内の構成では、次の処理が行われます *not* 同じコンテナから派生し、同じコンテナから派生する必要がある *not* 同じタイプである必要があります。 <br/> ![依存関係 C のスクリーンショット](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -496,7 +494,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <p>文字列</p> | <ul><li>条件の場合：<ul><li>[!UICONTROL 値]<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></li></ul></li><li>各 [!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]:<ul><li>[!UICONTROL 値]</li><ul><li>ユーザー入力</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]</li></ul> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]:<ul><li>文字列</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべて検索], [!UICONTROL を置き換え、すべてを]</li></ul> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -537,7 +535,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次を定義します。 `Email Marketing (updated)` 派生フィールド。 次を使用する [!UICONTROL 検索と置換] 関数を使用して、 `email%20marketing` と `email marketing`.
 
-![検索と置換のルール](assets/find-and-replace.png)
+![「検索と置換」ルールのスクリーンショット](assets/find-and-replace.png)
 
 ### 後のデータ {#findreplace-uc-dataafter}
 
@@ -558,7 +556,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 ### ルックアップ
 
-対応する値に置き換えられる参照値のセットを定義します。
+新しい派生フィールドの対応する値に置き換わる、参照値のセットを定義します。
 
 +++ 詳細
 
@@ -567,7 +565,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>の場合 [!UICONTROL ルックアップを適用するフィールド]:<ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>の場合 [!UICONTROL 値が] および [!UICONTROL 値の置換文字列]:</p><ul><li>ユーザー入力</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 参照を適用するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値が] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -623,7 +621,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
 
-![参照ルール 1](assets/lookup-1.png)
+![ルックアップルール 1 のスクリーンショット](assets/lookup-1.png)
 
 ### 後のデータ {#lookup-uc1-dataafter}
 
@@ -658,7 +656,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用する [!UICONTROL 参照] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
 
-![ルックアップルール 2](assets/lookup-2.png)
+![参照ルール 2 のスクリーンショット](assets/lookup-2.png)
 
 ### 後のデータ {#lookup-uc2-dataafter}
 
@@ -674,6 +672,262 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 +++
 
+<!-- MERGE FIELDS -->
+
+### フィールドを結合
+
+2 つの異なるフィールドの値を新しい派生フィールドに結合します。
+
++++ 詳細
+
+## 仕様 {#merge-fields-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## ユースケース {#merge-fields-uc}
+
+チャネルをまたいでジャーニーを分析する目的で、ページ名フィールドと呼び出し理由フィールドから構成される新しいディメンションを作成したい場合。
+
+### 次より前のデータ {#merge-fields-uc-databefore}
+
+| ページ名 | セッション | 訪問者 |
+|---|--:|--:|
+| ヘルプページ | 250 | 200 |
+| home page | 500 | 250 |
+| 製品の詳細ページ | 300 | 200 |
+
+{style="table-layout:auto"}
+
+| 通話理由 | セッション | 訪問者 |
+|---|--:|--:|
+| 注文に関する質問 | 275 | 250 |
+| 注文を変更する | 150 | 145 |
+| 注文の問題 | 100 | 95 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#merge-fields-uc-derivedfield}
+
+次の項目を定義します。 `Cross Channel Interactions` 派生フィールド。 次を使用する [!UICONTROL フィールドのマージ] 関数を使用して、 [!UICONTROL ページ名] フィールドと [!UICONTROL 通話理由] フィールドに格納し、新しい派生フィールドに格納します。
+
+![結合フィールドルールのスクリーンショット](assets/merge-fields.png)
+
+### 後のデータ {#merge-fields-uc-dataafter}
+
+| クロスチャネルインタラクション | セッション数 | 訪問者 |
+|---|--:|--:|
+| home page | 500 | 250 |
+| 製品の詳細ページ | 300 | 200 |
+| 注文に関する質問 | 275 | 250 |
+| ヘルプページ | 250 | 200 |
+| 注文を変更する | 150 | 145 |
+| 注文の問題 | 100 | 95 |
+
+{style="table-layout:auto"}
+
+## 詳細情報 {#merge-fields-moreinfo}
+
+[ フィールドの結合 ] ルール内で同じタイプのフィールドを選択する必要があります。 例えば、日付フィールドを選択した場合、結合する他のすべてのフィールドは、日付フィールドである必要があります。
+
+![結合フィールドに対する制約のスクリーンショット](assets/merge-fields-constraint.png)
+
++++
+
+
+<!-- REGEX REPLACE -->
+
+### 正規表現の置換
+
+正規表現を使用して新しい派生フィールドに値を置き換えます。
+
++++ 詳細
+
+## 仕様 {#regex-replace-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 正規表現]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## ユースケース {#regex-replace-uc}
+
+URL の一部を取得し、それを一意のページ識別子として使用してトラフィックを分析したいとします。 次を使用します。 `[^/]+(?=/$|$)` を返します。 `$1` を出力パターンとして使用します。
+
+### 次より前のデータ {#regex-replace-uc-databefore}
+
+| ページ URL |
+|---|
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#regex-replace-uc-derivedfield}
+
+次の項目を作成します。 `Page Identifier` 派生フィールド。 次を使用する [!UICONTROL 正規表現の置換] 関数を使用して、 [!UICONTROL 参照 URL] を使用するフィールド [!UICONTROL 正規表現] / `[^/]+(?=/$|$)` および [!UICONTROL 出力形式] / `$1`.
+
+![正規表現の置き換えルールのスクリーンショット](assets/regex-replace.png)
+
+
+### 後のデータ {#regex-replace-uc-dataafter}
+
+| ページ識別子 |
+|---|
+| adobe-analytics-benefits.html |
+| adobe-analytics.html |
+| customer-journey-analytics.html |
+| adobe-experience-platform.html |
+
+## 詳細情報
+
+Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使用します。 次の式がサポートされています。
+
+| 式 | 説明 |
+| --- | --- |
+| `a` | 単一の文字 `a`。 |
+| `a\|b` | 単一の文字 `a` または `b`。 |
+| `[abc]` | 単一の文字 `a`、`b` または `c`。 |
+| `[^abc]` | `a`、`b` または `c` を除く任意の単一の文字。 |
+| `[a-z]` | `a` ～ `z` の範囲の任意の単一の文字。 |
+| `[a-zA-Z0-9]` | `a` ～ `z`、`A` ～ `Z` または数字 `0` ～ `9` の範囲の任意の単一の文字。 |
+| `^` | 行の先頭に一致します。 |
+| `$` | 行の末尾に一致します。 |
+| `\A` | 文字列の開始。 |
+| `\z` | 文字列の終わり。 |
+| `.` | 任意の文字に一致します。 |
+| `\s` | 空白文字。 |
+| `\S` | 空白以外の文字。 |
+| `\d` | 数字。 |
+| `\D` | 数字以外。 |
+| `\w` | 文字、数字、アンダースコア。 |
+| `\W` | 単語以外の文字。 |
+| `\b` | 単語の境界。 |
+| `\B` | 単語の境界以外の文字。 |
+| `\<` | 単語の始まり。 |
+| `\>` | 単語の終わり。 |
+| `(...)` | 囲まれている内容をすべてキャプチャ。 |
+| `(?:...)` | マーキングのないキャプチャ。出力文字列で一致を参照できないようにします。 |
+| `a?` | 0 または 1 個の `a`。 |
+| `a*` | 0 個以上の `a`。 |
+| `a+` | 1 個以上の `a`。 |
+| `a{3}` | 厳密に 3 個の `a`。 |
+| `a{3,}` | 3 個以上の `a`。 |
+| `a{3,6}` | 3 ～ 6 個の `a`。 |
+
+[!UICONTROL 出力形式]では、目的の文字列出力を実現するために、これらのシーケンスを何回でも、どのような順序でも使用できます。
+
+| 出力プレースホルダーシーケンス | 説明 |
+| --- | --- |
+| `$&` | 式全体に一致したものを出力します。 |
+| `$n` | n 番目のサブ式に一致したものを出力します。例えば、`$1` は、最初のサブ式を出力します。 |
+| ``$` `` | 最後に見つかった一致の終わり（前に一致が見つからなかった場合は、テキストの始まり）から、現在の一致の始まりまでのテキストを出力します。 |
+| `$+` | 正規表現で最後にマークされたサブ式に一致するものを出力します。 |
+| `$$` | 文字列文字 `"$"` を出力します。 |
+
+{style="table-layout:auto"}
+
++++
+
+<!-- SPLIT -->
+
+### Split
+
+フィールドの値を新しい派生フィールドに分割します。
+
++++ 詳細
+
+## 仕様 {#split-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 方法]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## 使用例 1 {#split-uc1}
+
+ボイスアプリの応答を、単一のディメンションの区切りリストに収集します。 リスト内の各値を回答レポート内の一意の値にしたいとします。
+
+### 次より前のデータ {#split-uc1-databefore}
+
+| ボイスアプリの応答 | イベント |
+|---|--:|
+| それは素晴らしく、完全な意味を持ち、他の人に勧められる | 1 |
+| それは大きく、いくぶん混乱し、他の人に勧めるだろう | 1 |
+| それは、大きくはなく、非常に混乱し、他の人に勧められなかった | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#split-u1-derivedfield}
+
+次の項目を作成します。 `Responses` 派生フィールド。 次を使用する [!UICONTROL 分割] 関数を使用して、  [!UICONTROL 配列に変換] 値を [!UICONTROL ボイスアプリの応答] フィールド使用 `,` を [!UICONTROL 区切り].
+
+![分割ルール 1 のスクリーンショット](assets/split-1.png)
+
+### 後のデータ {#split-uc1-dataafter}
+
+| 応答 | イベント |
+|---|--:|
+| それは素晴らしかった | 2 |
+| 人に勧める | 2 |
+| それは素晴らしくなかった | 1 |
+| 完璧な意味を持つ | 1 |
+| ややややこしい | 1 |
+| 非常に混乱している | 1 |
+| 他人に勧めない | 1 |
+
+{style="table-layout:auto"}
+
+## 使用例 2 {#split-uc2}
+
+ボイスアプリの応答を、単一のディメンションの区切りリストに収集します。 リストの最初の値からの応答を、独自のディメンションに格納したい場合。 リストの最後の値を独自のディメンションに配置します。
+
+### 次より前のデータ {#split-uc2-databefore}
+
+| 応答 | イベント |
+|---|--:|
+| それは素晴らしく、完全な意味を持ち、他の人々に勧められた | 1 |
+| それは大きく、いくぶん混乱し、他の人に勧めるだろう | 1 |
+| それは、大きくはなく、非常に混乱し、他の人に勧められなかった | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#split-u2-derivedfield}
+
+次の項目を作成します。  `First Response` 派生フィールド。 次を使用する [!UICONTROL 分割] 関数を使用して、 [!UICONTROL 応答] 応答の左側のフィールド `,` を区切り文字として使用します。
+
+![分割ルールのスクリーンショット — 最初の値](assets/split-2.png)
+
+次の項目を作成します。 `Second Response` から最後の値を取得する派生フィールド [!UICONTROL 応答] フィールドで、右から、1 を区切り文字として、1 をインデックスとして選択します。
+
+![分割ルールのスクリーンショット — 最後の値](assets/split-3.png)
+
+### 後のデータ {#split-uc2-dataafter}
+
+| 最初の応答 | イベント |
+|---|--:|
+| それは素晴らしかった | 2 |
+| それは素晴らしくなかった | 1 |
+
+{style="table-layout:auto"}
+
+| 2 番目の応答 | イベント |
+|---|--:|
+| 人に勧める | 2 |
+| 他人に勧めない | 1 |
+
+{style="table-layout:auto"}
+
++++
+
+
 <!-- URL PARSE -->
 
 ### URL の解析
@@ -686,7 +940,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>の場合 [!UICONTROL フィールド]:</li><ul><li>規則</li><li>標準フィールド</li><li>フィールド</li></ul><li>の場合 [!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリ文字列値を取得]<ul><li>[!UICONTROL クエリーパラメーター]:<ul><li>ユーザー入力</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリ文字列値を取得]<ul><li>[!UICONTROL クエリーパラメーター]:<ul><li>文字列</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -710,7 +964,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。  `Referring Domain` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL 参照 URL] フィールドに格納し、新しい派生フィールドに格納します。
 
-![ URL 解析ルール 1](assets/url-parse-1.png)
+![URL 解析ルール 1 のスクリーンショット](assets/url-parse-1.png)
 
 ### 後のデータ {#urlparse-uc1-dataafter}
 
@@ -742,7 +996,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。 `Query String CID` 派生フィールド。 次を使用する [!UICONTROL URL 解析] 関数を使用して、 [!UICONTROL ページ URL] フィールド、指定 `cid` をクエリパラメーターとして使用します。 出力値は、新しい派生フィールドに格納されます。
 
-![URL 解析ルール 2](assets/url-parse-2.png)
+![URL 解析ルール 2 のスクリーンショット](assets/url-parse-2.png)
 
 ### 後のデータ {#urlparse-uc2-dataafter}
 
@@ -761,5 +1015,12 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 派生フィールドの一般的な機能には、次の制限が適用されます。
 
 - 派生フィールドのルールを定義する場合、最大 10 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
-   - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマまたはプロファイルスキーマフィールドのみを使用できます。
+   - この最大 10 個の異なるスキーマフィールドから、最大 3 つのルックアップスキーマまたはプロファイルスキーマフィールドのみを使用できます。
 - 1 つのCustomer Journey Analytics接続につき最大 100 個の派生フィールドを指定できます。
+
+## 詳細情報
+
+- [データを最大限に活用する：派生フィールドをCustomer Journey Analyticsで使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+
+- [Customer Journey Analyticsの派生フィールドの使用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+

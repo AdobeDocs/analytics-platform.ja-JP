@@ -4,7 +4,7 @@ description: 文字列のサブセットをディメンション項目として�
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 94%
@@ -75,7 +75,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 | 式 | 説明 |
 | --- | --- |
 | `a` | 単一の文字 `a`。 |
-| `a|b` | 単一の文字 `a` または `b`。 |
+| `a\|b` | 単一の文字 `a` または `b`。 |
 | `[abc]` | 単一の文字 `a`、`b` または `c`。 |
 | `[^abc]` | `a`、`b` または `c` を除く任意の単一の文字。 |
 | `[a-z]` | `a` ～ `z` の範囲の任意の単一の文字。 |
