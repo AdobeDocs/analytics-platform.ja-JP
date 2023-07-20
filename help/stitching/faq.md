@@ -3,7 +3,7 @@ title: ステッチに関する FAQ
 description: ステッチに関するよくある質問 (FAQ)
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -82,7 +82,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 | **Customer Journey Analytics結合データ** | **Customer Journey Analytics未関連付けデータ** | **Adobe Analytics** | **CDA を使用した Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人** =ステッチ済み ID がユーザー ID として選択されたユニークユーザー ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **人** =ユーザー ID として選択された列に基づくユニークユーザー ID の数。 **人** Adobeソースコネクタのデータセットは、 **実訪問者数** 従来のAdobe Analyticsで `endUserIDs._experience.aaid.id` は、ユーザー ID としてCustomer Journey Analyticsで使用されます。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=ja)を参照してください。 |
+| **人** =ステッチ済み ID がユーザー ID として選択されたユニークユーザー ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **人** =ユーザー ID として選択された列に基づくユニークユーザー ID の数。 **人** Analytics ソースコネクタのデータセットは、 **実訪問者数** 従来のAdobe Analyticsで `endUserIDs._experience.aaid.id` は、ユーザー ID としてCustomer Journey Analyticsで使用されます。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=ja)を参照してください。 |
 | **セッション**:セッションデータビューのセッション設定に基づいてCustomer Journey Analyticsされます。 ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション**:セッションのデータビューで指定されたCustomer Journey Analytics設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=ja)で指定されたセッション設定に基づいて定義されます。 |
 | **イベント** =Customer Journey Analyticsのステッチ済みデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空の永続 ID を持つ行に関する上記の FAQ に注意してください。 | **イベント** =Customer Journey Analyticsの未関連付けデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platformデータレイクの未関連付けデータに空のユーザー ID が含まれるイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 |
 

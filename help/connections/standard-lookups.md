@@ -4,7 +4,7 @@ description: 標準検索を使用して、Customer Journey Analytics の便利�
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 76%
@@ -20,7 +20,7 @@ ht-degree: 76%
 
 従来のAdobe Analyticsでは、これらのディメンションは単独で表示されますが、Customer Journey Analyticsでは、データビューを作成する際に、これらのディメンションを積極的に含める必要があります。 接続ワークフローでは、標準検索用のキーを持つデータセットとしてフラグが付けられたデータセットを選択します。データビュー UI は、すべての標準検索ディメンションを自動的に認識し、レポートに使用可能として含めます。すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。これらは、顧客に関連付けられた地域固有の組織に保存されます。
 
-## 標準検索とAdobeソースコネクタデータセットを使用
+## Analytics ソースコネクタデータセットで標準検索を使用する
 
 標準検索データセットは、レポート時に自動的に適用されます。Analytics ソースコネクタを使用し、Adobeが標準参照を提供するディメンションを取り込む場合、この標準参照は自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
 

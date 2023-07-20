@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 
 [Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=ja)について、このチュートリアルをご確認ください。
 
-## Bulk Data Insertion API を使用してデータを Analytics に取り込んでから、Experience Platform で Adobe ソースコネクタを介して取り込む
+## 一括データ挿入 API を使用してデータを Analytics に取り込み、Analytics ソースコネクタを介して取り込みます。Experience Platform
 
 1. [Bulk Data Insertion API を使用](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)して、サーバーサイドの収集データを Adobe Analytics に送信します。イベントデータを含む CSV 形式のファイルを送信できます。
 1. [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成して、このコンシューマデータを Adobe Experience Platform に取得します。
