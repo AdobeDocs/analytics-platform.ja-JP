@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 79%
+source-wordcount: '1461'
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Analytics などのデータセットでは、データの必ずしもす�
 
 ### 2. 変数の整合 {#variables}
 
-Adobe Analytics のデータを Customer Journey Analytics のデータに変換する最も簡単な方法は、[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
+Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用してExperience Platformに [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
 
 グローバルレポートスイートすべてを完全に実装することが現実的ではない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込むには、次の 2 つのオプションがあります。
 
@@ -56,9 +56,9 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=ja)を公開しています。これらの最新の推奨事項は、既に Adobe Analytics にある機能を Attribution IQ で最大限に活用するのに役立ちます。また、Customer Journey Analytics への移行を成功させるためのセットアップも行われます。
 
-### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
+### 4. Analytics ソースコネクタとExperience PlatformSDK の使用を決定する {#connector-vs-sdk}
 
-Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用について詳しくは、 [Adobe Analyticsからのデータの取り込みとCustomer Journey Analyticsでの使用](../data-ingestion/analytics.md). 詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
+Adobe Analyticsのお客様は、Analytics ソースコネクタを使用して、Adobe Experience PlatformおよびCustomer Journey Analyticsで自分のレポートスイートを簡単に活用できます。 Analytics ソースコネクタの使用について詳しくは、 [Adobe Analyticsからのデータの取り込みとCustomer Journey Analyticsでの使用](../data-ingestion/analytics.md). 詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
 
 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) データ収集が進化するにつれて、Adobe Experience Platform Edge Network を使用して [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) か [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) のいずれかに移行する可能性があります。SDK の一般的な実装ではデータが Adobe Analytics に送信されますが、Adobe Experience Platform にデータを直接送信する機会も新たに現れています。その後、Adobe Analytics に送信するデータも維持しながら、Customer Journey Analytics に取り込むことができます。
 

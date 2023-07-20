@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 41%
+source-wordcount: '2053'
+ht-degree: 38%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 41%
 | セグメント | フルサポート。現在は「フィルター」と呼ばれています。従来のAnalysis Workspace内の既存のセグメントは、Customer Journey Analyticsに移植されません。 |
 | 仮想レポートスイート | フルサポート。現在の呼び出し [データビュー](/help/data-views/create-dataview.md). |
 | 仮想レポートスイートコンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
-| ストリーミングメディア分析 | メディアデータは、Analytics Data Connector を使用すると、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として使用できます。 |
+| ストリーミングメディア分析 | メディアデータは、Analytics ソースコネクタを Workspace のメディア同時ビューアパネルおよびメディア再生時間パネルの一部として使用できます。 |
 
 {style="table-layout:auto"}
 
@@ -63,14 +63,14 @@ ht-degree: 41%
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar はCustomer Journey Analyticsに含まれなくなりました。 ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データビュー内で設定されるDimensionは、90 日間の最大永続性に制限され、無制限の永続性はサポートされません。 |
-| IP の不明化 | Analytics ソースコネクタを使用してCustomer Journey Analyticsを使用しているお客様の場合、Adobe AnalyticsからCustomer Journey Analyticsにデータを入力するには、次の手順を実行します。Adobe Analyticsで適用された IP Obfuscation（IP の不明化）設定は、Customer Journey Analyticsデータに送られます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analyticsのお客様がExperience PlatformWeb SDK を使用してデータを Platform およびCustomer Journey Analyticsに直接入力する場合。 Platform の Data Prep for Data Collection を使用して、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
+| IP の不明化 | Customer Journey Analyticsのお客様が Analytics ソースコネクタを使用してAdobe AnalyticsからCustomer Journey Analyticsにデータを入力する場合：Adobe Analyticsで適用された IP Obfuscation（IP の不明化）設定は、Customer Journey Analyticsデータに送られます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analyticsのお客様がExperience PlatformWeb SDK を使用してデータを Platform およびCustomer Journey Analyticsに直接入力する場合。 Platform の Data Prep for Data Collection を使用して、会社の要件に基づいて IP アドレスを難読化するルールを設定できます。 |
 | 新規セッションとリピートセッションレポート | 以前は、訪問回数ディメンションを使用して達成されていました。新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=ja)でサポートされています。 |
 | products 変数 | Experience Platform から、データセットスキーマ内でオブジェクトタイプフィールドの配列を使用して、このユースケースを実現できます。Customer Journey Analytics内では、お客様は任意の数の製品変数を使用でき、Adobe Analyticsと同様に、1 つの変数に制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、Customer Journey Analyticsのユーザー間でのみサポートされます。Customer Journey Analyticsと従来のAnalysis Workspace間ではプロジェクトを共有しません。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
 | Report Builder（Excel プラグイン） | Excel 用の新しい Office 365 プラグインでサポートされます。 |
 | ユーザー権限／データアクセス制御 | Customer Journey Analyticsは [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者、ユーザー。 他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、フィルター、注釈の作成などに対する追加のユーザー権限を使用できます。 |
-| 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | WebSDK ベースのデータセットと Analytics Data Connector からのデータの両方に対するAdobe Experience Platform Data Prep 機能の使用がサポートされます。 |
+| 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | WebSDK ベースのデータセットと Analytics ソースコネクタのデータの両方に対するAdobe Experience Platform Data Prep 機能の使用がサポートされます。 |
 | マーケティングチャネル | Analytics ソースコネクタを使用する場合、マーケティングチャネルのデータは、そのコネクタを介してCustomer Journey Analyticsに送られます。 マーケティングチャネルのルールは、従来のAdobe Analyticsで設定され、一部のルールはサポートされていません。 詳しくは、 [Customer Journey Analyticsマーケティングチャネルドキュメント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html). <br/>WebSDK の実装では、レポート時のマーケティングチャネルの処理ルールは、 [派生フィールド](../../data-views/derived-fields/derived-fields.md). |
 
 {style="table-layout:auto"}
@@ -80,12 +80,12 @@ ht-degree: 41%
 | 機能 | メモ |
 | --- | --- |
 | クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。グラフベースのステッチは、まだサポートされていませんが、今後予定されています。詳しくは、 [ステッチ](../../stitching/overview.md). |
-| ボットフィルタリング | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、 [!UICONTROL Experience Platform] またはCustomer Journey Analytics。 |
-| デバイス、ブラウザー、リファラー、技術の各ディメンション | [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットでサポートされます。参照： [ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja).<p>Experience PlatformWeb SDK のデータ収集を使用する場合、デバイス参照に基づくデバイスとディメンションは、現在サポートされていません。 将来サポートされる予定です。 |
+| ボットフィルタリング | の場合 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットの場合、ボットフィルタリングが適用されます。 他のデータセットの一般的なボットフィルタリングロジックは、 [!UICONTROL Experience Platform] またはCustomer Journey Analytics。 |
+| デバイス、ブラウザー、リファラー、技術の各ディメンション | サポート対象 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) — ベースのデータセット。 参照： [ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja).<p>Experience PlatformWeb SDK のデータ収集を使用する場合、デバイス参照に基づくデバイスとディメンションは、現在サポートされていません。 将来サポートされる予定です。 |
 | 地理特性ディメンション | Adobe Analyticsで収集されるすべての地理特性/地理的機能は、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). Analytics ソースコネクタを使用せず、デジタルデータ収集にExperience PlatformWeb SDK を使用する実装では、 [Experience Edge Geo Lookup サービス](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja). |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
-| 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。[Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
-| A4T | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
+| 処理ルール | Analytics ソースコネクタベースのデータセットの場合、処理ルールは引き続き適用されます。 [Adobe Experience Platform のデータ準備機能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) は、Platform に直接送信されるデータの処理ルールの代わりに使用することもできます。 |
+| A4T | 部分的なサポートは、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
 
 {style="table-layout:auto"}
 

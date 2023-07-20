@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 96%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 ## 従来の Adobe Analytics からのデータの取り込み
 
-このワークフローでは、Adobe Analytics ソースコネクタを使用し、タグマネージャとして DTM と Launch のどちらを使用するかによって異なります。
+このワークフローでは、Analytics ソースコネクタを使用し、タグマネージャーとして DTM を使用するか、Launch を使用するかによって異なります。
 
 ### Adobe Experience Platform（以前の [!UICONTROL Launch]）のタグを使用する場合
 

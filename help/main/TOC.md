@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 84%
+ht-degree: 82%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 84%
    + [2021年リリース](../release-notes/2021.md)
    + [2020年リリース](../release-notes/2020.md)
    + [Customer Journey Analyticsリリース](../release-notes/releases.md)
-   + [Customer Journey Analytics ドキュメントのアップデート](../release-notes/doc-changes.md)
+   + [Customer Journey Analytics ドキュメントの更新](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
    + [Customer Journey Analytics の概要](../getting-started/cja-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 84%
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
+      + [Analytics ソースコネクタを介して渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
       + [Adobe AnalyticsとCustomer Journey Analyticsでのデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [仮想レポート環境とサンドボックス環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)

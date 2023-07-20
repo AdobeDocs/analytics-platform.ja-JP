@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Platform でのマーケティングチャネルディメンションの使用
-description: Analytics ソースコネクタを使用して、マーケティングチャネルの処理ルールを Adobe Experience Platform に取り込みます。
+description: Analytics ソースコネクタを使用して、マーケティングチャネルの処理ルールをAdobe Experience Platformに取り込みます。
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 74%
+ht-degree: 63%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 74%
 
 ## 前提条件
 
-* [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を使用して、事前にレポートスイートデータを Adobe Experience Platform に読み込んでおく必要があります。他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
+* レポートスイートデータは、既に [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
 * マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。詳しくは、 [マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=ja) ( Adobe Analytics Components ガイド ) を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
 
-目的のレポートスイートに Analytics ソースコネクタを確立すると、XDM スキーマが作成されます。このスキーマには、すべての Analytics ディメンションと指標が生データとして含まれています。この生データには、アトリビューションや永続性は含まれていません。代わりに、各イベントはマーケティングチャネルの処理ルールを確認し、最初に一致したルールを記録します。アトリビューションと永続性は、Customer Journey Analyticsでデータビューを作成する際に指定します。
+目的のレポートスイートに Analytics ソースコネクタを確立すると、XDM スキーマが作成されます。 このスキーマには、すべての Analytics ディメンションと指標が生データとして含まれています。この生データには、アトリビューションや永続性は含まれていません。代わりに、各イベントはマーケティングチャネルの処理ルールを確認し、最初に一致したルールを記録します。アトリビューションと永続性は、Customer Journey Analyticsでデータビューを作成する際に指定します。
 
-1. Analytics ソースコネクタに基づいたデータセットを含む[接続を作成](/help/connections/create-connection.md)します。
+1. [接続の作成](/help/connections/create-connection.md) Analytics ソースコネクタに基づくデータセットを含む
 2. 次のディメンションを含む[データビューを作成](/help/data-views/create-dataview.md)します。
    * **`channel.typeAtSource`**：[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=ja)に相当します。
    * **`channel._id`**：[マーケティングチャネルの詳細](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=ja)に相当します。
@@ -35,7 +35,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
-> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があり、そうでない場合は、どちらも XDM ExperienceEvent に引き継がれません。ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、`channel._id` が空白となり、Analytics ソースコネクタは `channel.typeAtSource` も空白にします。その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
+> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があります。それ以外の場合、XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、空白になります `channel._id` Analytics ソースコネクタは空白になります `channel.typeAtSource` 同様に。 その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
 
 ## 処理とアーキテクチャの違い
 

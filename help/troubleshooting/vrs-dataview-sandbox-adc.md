@@ -1,13 +1,13 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 # 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ
 
-アドビでは、仮想レポート環境サンドボックス環境を作成するための様々な手段を提供しています。次の機能の類似点と相違点、およびこれらの機能が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)にどのように関連するかを把握することは有益です。
+アドビでは、仮想レポート環境サンドボックス環境を作成するための様々な手段を提供しています。次の機能の類似点と相違点、およびこれらの機能と [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja):
 
 * Adobe Analytics 仮想レポートスイート
 * Customer Journey Analyticsデータビュー
@@ -33,7 +33,7 @@ VRS に該当すること：
 
 * レポートスイートを一緒に組み合わせる手段を提供する。
 * Adobe Analytics Data Warehouse で利用可能。
-* Analytics ソースコネクタを介してAdobe Experience Platformへのデータフローのソースとして使用できます。 Analytics ソースコネクタで使用できるのは、完全な（非仮想）レポートスイートのみです。
+* Analytics ソースコネクタを介してAdobe Experience Platformへのデータフローのソースとして使用できます。 完全な（仮想以外の）レポートスイートのみ、Analytics ソースコネクタで使用できます。
 
 
 ## Customer Journey Analyticsデータビュー
@@ -75,4 +75,4 @@ Adobe Experience Platform Sandbox は以下を実行しません。
 その他：
 
 * 異なるサンドボックスのデータは、Customer Journey Analytics内で結合できません。
-* Analytics ソースコネクタは、レポートスイートデータを特定のサンドボックス&#x200B;_に_&#x200B;送信します。各レポートスイートは、単一のサンドボックスのソースとして設定できます。詳しくは、[Analytics ソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください。
+* Analytics ソースコネクタは、レポートスイートデータを特定のサンドボックス&#x200B;_に_&#x200B;送信します。各レポートスイートは、単一のサンドボックスのソースとして設定できます。詳しくは、 [Analytics ソースコネクタのドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。

@@ -4,7 +4,7 @@ description: 標準検索を使用して、Customer Journey Analytics の便利�
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 76%
@@ -14,7 +14,7 @@ ht-degree: 76%
 # データセットへの標準検索の追加
 
 >[!IMPORTANT]
->標準検索は、Customer Journey Analyticsの Analytics Source Connector データソースでのみ使用できます。 これらは、標準の Adobe Analytics 実装、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、または Experience Platform Data Collection API で使用できます。
+>標準検索は、Customer Journey Analyticsの Analytics ソースコネクタデータソースでのみ使用できます。 これらは、標準の Adobe Analytics 実装、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、または Experience Platform Data Collection API で使用できます。
 
 標準検索（アドビ提供の検索とも呼ばれる）は、Customer Journey Analytics の機能を強化して、単体では役に立たなくても、他のデータと結合すると役立つディメンションや属性についてレポートします。例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準ルックアップ」は、ルックアップデータセットに似ています。 標準検索は Experience Cloud 組織をまたいで適用できます。これらは、特定の XDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（特定のフィールドについては、以下を参照してください）。標準の検索データセットは、アドビが分類しているスキーマの場所ごとに存在します。
 
@@ -22,7 +22,7 @@ ht-degree: 76%
 
 ## 標準検索とAdobeソースコネクタデータセットを使用
 
-標準検索データセットは、レポート時に自動的に適用されます。Analytics ソースコネクタを使用し、Adobeが標準参照を提供するディメンションを取り込む場合、この標準参照が自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
+標準検索データセットは、レポート時に自動的に適用されます。Analytics ソースコネクタを使用し、Adobeが標準参照を提供するディメンションを取り込む場合、この標準参照は自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
 
 <!--
 ### Specific IDs that need to be populated

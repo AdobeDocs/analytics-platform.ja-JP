@@ -4,10 +4,10 @@ description: Customer Journey Analytics - よくある質問。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 68%
+source-wordcount: '2196'
+ht-degree: 69%
 
 ---
 
@@ -100,7 +100,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**[!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込むにはどうすればよいですか？**
 
-[!UICONTROL Adobe Analytics] データは、[Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Experience Platform に接続できます。[!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。
+[!UICONTROL Adobe Analytics] データは、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). [!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。
 
 +++
 
@@ -135,7 +135,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 最近、Customer Journey Analyticsのデータ処理方法を変更しました。
 
-<ul><li>タイムスタンプが 24 時間未満のイベントデータは、でストリーミングされます。</li><li>タイムスタンプが 24 時間以上のイベントデータ（新しいデータと同じバッチにある場合でも）はバックフィルと見なされ、より低い優先度で取り込まれます。</li></ul>
+<ul><li>発生後の経過時間が 24 時間未満のイベントデータは、すべてストリーミングで取り込まれます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 

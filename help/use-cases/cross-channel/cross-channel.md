@@ -4,7 +4,7 @@ description: カスタマージャーニー全体を通した顧客とのイン�
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 62%
@@ -22,7 +22,7 @@ ht-degree: 62%
 1. 取り込むデータの [スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) します。
 1. 取り込むデータの [データセットを作成](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=ja) します。
 1. [Experience Platform へのデータの取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=ja):
-   1. イベントベースのデータ ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) Edge Network または Analytics Data Connector を介して web サイトまたはモバイルアプリから
+   1. イベントベースのデータ ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) Edge ネットワークまたは Analytics ソースコネクタを介して web サイトまたはモバイルアプリから
    2. プロファイルデータ ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) （例えば、CRM システム、コールセンターアプリケーション、ロイヤルティアプリケーションから）。
    3. 参照データ ![参照](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) （製品名、製品情報システムのカテゴリなど）。
 

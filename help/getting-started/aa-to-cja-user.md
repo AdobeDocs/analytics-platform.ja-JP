@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 75%
+source-wordcount: '1480'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Customer Journey Analytics管理者が設定しています [接続](/help/conne
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-アドビでは、Adobe Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、Adobe Experience Platform にデータを取り込む方法を複数用意しています。複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。これらのデータセットに基づく接続とデータビューは、別々のレポートスイートに以前存在したデータを組み合わせることができます。
+Adobeでは、Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、複数の方法でAdobe Experience Platformにデータを取り込むことができます。 複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。これらのデータセットに基づく接続とデータビューは、別々のレポートスイートに以前存在したデータを組み合わせることができます。
 
 ## 仮想レポートスイートの概念の変更 {#data-views}
 

@@ -3,7 +3,7 @@ title: オーディエンスを作成してリアルタイム顧客プロファ�
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -90,7 +90,7 @@ ht-degree: 61%
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
 | 未表示 | Adobe Analyticsから Analytics ソースコネクタ (A4T) | 最大 30 分 |
-| 1 | Data Lake へのデータ取り込み（Analytics Source Connector または他のソースから） | 最大 90 分 |
+| 1 | Data Lake へのデータ取り込み（Analytics ソースコネクタまたは他のソースから） | 最大 90 分 |
 | 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
 | 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 約 60 分 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
