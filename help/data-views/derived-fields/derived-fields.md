@@ -4,7 +4,7 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b8d6b8b0f2740e118bd744bcb7b7ee46aefc75ed
+source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 15%
@@ -749,7 +749,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 正規表現]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 正規表現]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
