@@ -5,10 +5,10 @@ description: Analysis Workspace 機能の概要
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 2647acd9dbf0732b02d69528fe1d07e381123aef
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 26%
+source-wordcount: '716'
+ht-degree: 28%
 
 ---
 
@@ -78,6 +78,10 @@ Analysis Workspaceのコンポーネントは、次の要素で構成されま�
 Analysis Workspace のデータ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。
 
 データディクショナリの詳細については、 [データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md).
+
+## データソース
+
+ビジュアライゼーションを同期することで、ビジュアライゼーションに対応するデータテーブルまたはデータソースを制御できます。以下に、 [データソースの管理](/help/analysis-workspace/visualizations/t-sync-visualization.md).
 
 ## Analysis Workspaceの使用を開始
 
