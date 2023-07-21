@@ -3,7 +3,7 @@ title: ステッチに関する FAQ
 description: ステッチに関するよくある質問 (FAQ)
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -60,6 +60,8 @@ ht-degree: 35%
 [クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja) は、デバイスをまたいでのユーザーの動作を理解できる、従来のAdobe Analyticsに固有の機能です。 デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
 
 クロスチャネル分析は、Customer Journey Analyticsに固有の使用例で、デバイスとチャネルの両方でユーザーがどのように操作するかを理解できます。 これにより、データセットのユーザー ID が結合され、そのデータセットを他のデータセットとシームレスに組み合わせることができます。 この機能は、クロスデバイス分析のフィールドベースのステッチと同様に設計で動作しますが、従来の Analytics とCustomer Journey Analyticsではデータアーキテクチャが異なるので、実装は異なります。 詳しくは、 [ステッチ](overview.md) そして [クロスチャネル分析](../use-cases/cross-channel/cross-channel.md) 使用例を参照してください。
+
++++
 
 +++**ステッチで GDPR および CCPA のリクエストはどのように処理されますか？**
 
