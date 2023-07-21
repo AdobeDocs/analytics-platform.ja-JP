@@ -1,11 +1,11 @@
 ---
 title: ガイド付き分析：概要
-description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。
+description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。 「Product Analytics」とも呼ばれます。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1054'
 ht-degree: 9%
 
 ---

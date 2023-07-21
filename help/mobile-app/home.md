@@ -1,25 +1,24 @@
 ---
 title: Customer Journey Analyticsダッシュボード — 概要
-description: Analytics ダッシュボードの製品ドキュメントとセルフヘルプ
+description: Analytics ダッシュボードまたはモバイルスコアカードの製品ドキュメントとセルフヘルプ。
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 63%
+source-wordcount: '285'
+ht-degree: 50%
 
 ---
 
 # Analytics[!UICONTROL  ダッシュボード] - 概要
 
-**Analytics[!UICONTROL  ダッシュボードは]**、Customer Journey Analytics からのインサイトをいつでもどこでも提供します。このアプリケーションでは、モバイルで直感的なスコアカードにアクセスできます。スコアカードは、主要指標とその他のコンポーネントを並べて表示したレイアウトで構成され、タップすると、より詳細な分類やトレンドレポートを表示できます。モバイルアプリは iOS と Android の両方のオペレーティングシステムでサポートされています。
+**Analytics[!UICONTROL  ダッシュボードは]**、Customer Journey Analytics からのインサイトをいつでもどこでも提供します。このアプリケーションでは、モバイルで直感的なスコアカードにアクセスできます。モバイルスコアカードは、主要指標とその他のコンポーネントを並べて表示したレイアウトで構成され、タップすると、より詳細な分類やトレンドレポートを表示できます。 モバイルアプリは iOS と Android の両方のオペレーティングシステムでサポートされています。
 
 >[!NOTE]
 >
->Customer Journey Analyticsで提供されるモバイルスコアカードの機能は、Adobe Analyticsで提供される機能とほとんど同じです。 このため、このページで参照されるスコアカードビデオには、Customer Journey Analyticsではなく、Adobe Analytics UI が表示されます。 <br/><br/>さらに、App Store ではモバイルアプリの名前はAdobe Analyticsですが、モバイルスコアカードでも同様に使用できます。
-
+>Customer Journey Analyticsで提供されるモバイルスコアカードの機能は、Adobe Analyticsで提供される機能とほとんど同じです。 このため、このページで参照されるスコアカードビデオには、Customer Journey AnalyticsUI ではなく、Adobe Analytics UI が表示されます。 <br/><br/>さらに、App Store ではモバイルアプリの名前はAdobe Analyticsですが、モバイルスコアカードでも同様に使用できます。
 
 Customer Journey Analytics [!UICONTROL ダッシュボード]次のリソースを参照してください。
 
