@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Workspace でのフォルダーの削除
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 981dd31ef669251fd00b834afeafb5e396aa32da
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 90%
 
 ---
 
@@ -16,15 +16,18 @@ ht-degree: 100%
 
 ユーザーは、作成したフォルダーを削除できます。
 
->[!NOTE]
->
->フォルダーを削除しても、フォルダーの内容は削除されません。削除されたフォルダーの内容（プロジェクトまたはサブフォルダー）は、フォルダー階層のすぐ上のフォルダーに移動されます。
+**ガイドライン**
+
+* フォルダーを削除しても、フォルダーの内容は削除されません。削除されたフォルダーの内容（プロジェクトまたはサブフォルダー）は、フォルダー階層のすぐ上のフォルダーに移動されます。
+* 管理者は、別の管理者が作成した会社フォルダー内のフォルダーを削除できます。管理者は、場合によっては、フォルダーやプロジェクトへのアクセスの一貫性を保つために、他の管理者と連携する必要があります。詳しくは、 [Analytics のフォルダーについて](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+
+Workspace でフォルダを削除するには
 
 1. 右上の省略記号アイコン（**...**）をクリックします。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
-1. **フォルダーを削除**&#x200B;を選択します。
+2. **フォルダーを削除**&#x200B;を選択します。
 
    確認の通知には、フォルダーが削除されたことが示されます。
 
