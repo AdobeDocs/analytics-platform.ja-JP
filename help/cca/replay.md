@@ -3,10 +3,10 @@ title: 再生の仕組み
 description: Cross-Channel Analytics における「再生」の概念を理解します
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
-feature: Cross-Channel Analytics
+feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 89%

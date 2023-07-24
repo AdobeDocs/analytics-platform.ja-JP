@@ -3,10 +3,10 @@ title: クロスチャネル分析の概要
 description: 複数のデータセットのユーザー ID のキーを変更し、ユーザーを結び付けます。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analytics
+feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 85%
@@ -35,7 +35,7 @@ ht-degree: 85%
 クロスチャネル分析を使用する前に、組織で次のものが準備されていることを確認してください。
 
 * Adobe Experience Platformの 1 つのデータセットには、人物の識別に役立つ 2 つの列が必要です。
-   * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe Analytics AppMeasurement ライブラリによって生成されたユーザー ID などです。
+   * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe AnalyticsAppMeasurementライブラリによって生成された人物 ID。
    * **一時的な ID** - 一部の行にのみ存在する識別情報です。例えば、ユーザーの認証後にハッシュ化されたユーザー名や電子メールアドレスなどです。 ほぼすべての識別情報を使用できますが、特定の永続 ID と同じイベントに 1 回以上存在している必要があります。
 * 各行に一時的な ID が格納される別のデータセット（コールセンターデータなど）。このユーザー ID は、他のデータセットの一時的な ID と同じ形式にする必要があります。
 * この機能を使用すると、データセットをステッチし、認証済みユーザーデータと非認証ユーザーデータを結合して含めることができます。データセットを結合する前に、適用される法令に準拠していることを確認してください。必要であれば、エンドユーザー権限を取得します。

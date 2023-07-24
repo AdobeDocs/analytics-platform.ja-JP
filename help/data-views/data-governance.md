@@ -3,10 +3,10 @@ title: ラベルとポリシー
 description: Adobe Experience Platformで定義されたデータラベルとポリシーが、Customer Journey Analyticsのデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 60%
+source-wordcount: '501'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ Experience Platform でデータセットを作成する場合、データセッ
 >
 >データ使用ラベルは、ステッチされたデータセットに自動的には反映されません。 ただし、手動で追加することはできます。
 
-「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です Experience Platform で [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介してポリシーを作成します。
+「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です ポリシーを作成するには、 [Experience PlatformUI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) または [ポリシーサービス API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) Experience Platform
 
 2 つのAdobe定義のポリシーがCustomer Journey Analyticsで表示され、レポートおよびダウンロード/共有に影響を与えます。
 
