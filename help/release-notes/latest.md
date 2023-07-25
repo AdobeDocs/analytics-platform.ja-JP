@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
+source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2023年7月）
 
-**最終更新日**：2023年7月13日（PT）
+**最終更新日**：2023年7月25日（PT）
 
 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -24,7 +24,6 @@ Adobe Customer Journey Analytics リリースは、[継続的な配信モデル]
 | **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することができます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年8月2日（PT） |
 | **プロファイルデータやルックアップデータへのルックアップサポートの拡張** | プロファイルデータセットまたはルックアップデータセット内のフィールドのルックアップとしてデータセットを追加できるようになります。これまでは、イベントデータセットのみがサポートされていました。[詳細情報](/help/connections/create-connection.md) | 2023年6月21日（PT） | 2023年7月12日（PT） |
 | **Report Builder の機能強化** | <ul><li>セルからの複数データブロックのフィルタリング。複数のデータブロックに対するフィルターを 1 つのセルから変更できます。定義済みのセルを使用し、それを複数のデータブロックに割り当てて、セルに定義されたフィルターに基づいてデータを更新します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja)</li><li>行ヘッダーと列ヘッダーの表示／非表示の切り替え。データブロックのテーブルヘッダーや、行ヘッダーと列ヘッダーの表示／非表示を切り替えて、テーブルの書式設定を変更したり、レポートでデータブロックを整列させたりすることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=ja#build-the-data-block)</li></ul> | 該当なし | 2023年7月19日（PT） |
-| **Experience Edge 位置情報検索** | [Adobe Experience Edge では、統合された地理データをすべての Experience Edge ユーザー（Adobe Analytics、Customer Journey Analytics、Adobe Target、Adobe Media Analytics、Adobe Experience Platform など）に提供する位置情報検索サービスを追加しています。](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) | 該当なし | 2023年7月26日（PT） |
 
 {style="table-layout:auto"}
 
