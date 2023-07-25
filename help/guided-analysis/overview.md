@@ -3,7 +3,7 @@ title: ガイド付き分析：概要
 description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。 「Product Analytics」とも呼ばれます。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 9%
@@ -13,8 +13,6 @@ ht-degree: 9%
 # ガイド付き分析：概要
 
 ガイド付き分析は、製品チームがデータニーズにすばやく応え、高品質なインサイトを迅速に得て、より多くのデータ主導型の製品決定を下すことができるようにするレポート形式です。 部門をまたぐチームは、リアルタイムに接続して、これらのレポートを使用し、理解できます。
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 Analysis Workspaceやモバイルのスコアカードと同様、ガイド付き分析レポートでは [データビュー](../data-views/data-views.md)：を通じてAdobe Experience Platform内のデータを参照します。 [接続](../connections/overview.md). ガイド付き分析で作成したすべてのレポートは、Analysis Workspaceにシームレスに転送して、さらに調査をおこなうことができます。
 
