@@ -3,9 +3,9 @@ title: ガイド付き分析：概要
 description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。 「Product Analytics」とも呼ばれます。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
+source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,9 @@ Analysis Workspaceおよびモバイルのスコアカードと同様、ガイ�
 
 ## インターフェイス
 
-分析タイプに関係なく、ガイド付き分析のインターフェイスは、次の主な UI 要素で構成されます。
+ガイド付き分析のインターフェイスは、質問と回答の形式に従っています。 クエリレールで質問を作成し、答えを、書き込まれたインサイト、グラフ、テーブルの形式で取得します。 次の質問は、ビジュアライゼーションの設定と表示タイプを使用しておこなうことができます。
+
+分析の種類に関係なく、ガイド付き分析は次の UI 要素で構成されます。
 
 | インターフェイスのプレビュー | UI 要素 | 説明 |
 | --- | --- | --- |
