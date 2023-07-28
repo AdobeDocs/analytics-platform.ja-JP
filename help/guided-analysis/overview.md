@@ -3,7 +3,7 @@ title: ガイド付き分析：概要
 description: 製品チームが高品質のインサイトを迅速に得られるようにする、Customer Journey Analytics内のデータを分析する方法です。 「Product Analytics」とも呼ばれます。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
+source-git-commit: bf34b4e1a7c1e28cbaae98e61492901b1d143e3e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 8%
@@ -27,7 +27,7 @@ Analysis Workspaceおよびモバイルのスコアカードと同様、ガイ�
 | [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します. |
 | [!UICONTROL ファネル] | [換算傾向](types/conversion-trends.md) | 換算率の経時的な変化を追跡. |
 | [!UICONTROL ユーザーの増加率] | [アクティブ](types/active.md) | 新規、継続、復帰または休眠ユーザーを特定. |
-| [!UICONTROL 純増加率] | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [!UICONTROL ユーザーの増加率] | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
 | [!UICONTROL トレンド] | [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します. |
 
 {style="table-layout:auto"}
