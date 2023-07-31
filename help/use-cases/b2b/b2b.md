@@ -4,10 +4,10 @@ description: アカウントベースのデータをルックアップデータ�
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 73%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -31,13 +31,13 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 ## 1. ルックアップスキーマの作成（Experience Platform）
 
-の独自のスキーマの作成 [参照](/help/getting-started/cja-glossary.md) テーブルでは、使用するデータセットが、正しい設定（レコードタイプ）でCustomer Journey Analyticsして使用できることを確認します。 ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#create-new-class)することです。
+用に独自のスキーマを作成する [参照](/help/getting-started/cja-glossary.md) テーブルでは、使用するデータセットが、正しい設定（レコードタイプ）でCustomer Journey Analyticsして使用できることを確認します。 ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#create-new-class)することです。
 
 ![](../assets/create-new-class.png)
 
 ## 2.ルックアップデータセットの作成 (Experience Platform)
 
-スキーマを作成したら、そのスキーマから、Experience Platform でルックアップデータセットを作成する必要があります。このルックアップデータセットには、次のようなアカウントレベルのマーケティング情報が含まれます。会社名、従業員の合計数、ドメイン名、所属する業種、年間売上高、Experience Platformの現在の顧客かどうか、現在の販売ステージ、アカウント内のどのチームがCustomer Journey Analyticsを使用しているかなど。
+スキーマを作成したら、そのスキーマから、Experience Platform でルックアップデータセットを作成する必要があります。このルックアップデータセットには、会社名、従業員の総数、ドメイン名、所属業種、年間売上高、Experience Platformの現在の顧客かどうか、販売段階、アカウント内のどのチームがCustomer Journey Analyticsを使用しているかなど、アカウントレベルのマーケティング情報が含まれます。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ管理／データセット]**&#x200B;に移動します。
 1. 「**[!UICONTROL + データセットを作成]**」をクリックします。
@@ -57,13 +57,13 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 
 ## 4. データセットを結合した接続（Customer Journey Analytics）
 
-この例では、3 つのデータセットを 1 つのCustomer Journey Analytics接続に結合します。
+この例では、3 つのデータセットを 1 つのCustomer Journey Analytics接続に組み合わせます。
 
 | データセット名 | 説明 | Adobe Experience Platform Schema クラス | データセットの詳細 |
 | --- | --- | --- | --- |
 | B2B インプレッション | アカウントレベルのクリックストリーム、イベントレベルのデータが含まれます。例えば、マーケティング広告を実行するための電子メール ID と対応するアカウント ID、およびマーケティング名が含まれます。また、各ユーザーに対するこれらの広告のインプレッションも含まれます。 | XDM ExperienceEvent スキーマクラスに基づく | `emailID` はプライマリ ID として使用され、 `Customer ID` 名前空間が割り当てられています。その結果、この変数は Customer Journey Analytics でデフォルトの&#x200B;**[!UICONTROL ユーザー ID]** として表示されます。![インプレッション](../assets/impressions-mixins.png) |
-| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | このスキーマでは `emailID` をプライマリ ID として選択する必要はありません。必ずを有効にしてください **[!UICONTROL プロファイル]**;接続しない場合、Customer Journey Analyticsは `emailID` B2B プロファイルで `emailID` B2B インプレッションデータ内で使用されます。 ![プロファイル](../assets/profile-mixins.png) |
-| B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | ～間の関係 `accountID` と B2B インプレッションデータセットは、次の手順に従って、Customer Journey Analyticsの B2B 情報データセットと B2B インプレッションデータセットを接続することで、自動的に作成されています。 ![ルックアップ](../assets/lookup-mixins.png) |
+| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | 選択 `emailID` をプライマリ ID として設定します。 |
+| B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | A と B の関係 `accountID` と B2B インプレッションデータセットは、次の手順に従って、Customer Journey Analyticsの B2B 情報データセットと B2B インプレッションデータセットを接続することで、自動的に作成されています。 ![ルックアップ](../assets/lookup-mixins.png) |
 
 データセットを組み合わせる方法を次に示します。
 
