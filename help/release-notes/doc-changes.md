@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2430'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
-| **2023年7月** |
+| **2023年8月** | |
+| モバイルアプリケーションおよびその他のプラットフォーム向けのデータ取得クイックスタートガイド | Customer Journey Analyticsでモバイルアプリケーションや他のプラットフォーム（デスクトップアプリケーション、コンソール上のゲーム、セットトップボックス上のアプリケーション、IoT デバイスなど）からデータを取り込んで使用する方法を説明するデータ取り込みクイックスタートガイドが追加されました。 [詳細情報](../data-ingestion/data-ingestion.md) |
+| **2023年7月** | |
 | コンテキスト対応セッション | このデータ表示設定のトピックを追加しました。 [詳細情報](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics は、Customer Journey Analytics でクロスチャネルのデータやインサイトを操作する新しい方法です。これらの新機能により、製品チームは、 [ガイド付き分析](/help/guided-analysis/overview.md) ワークフロー&#x200B;。 |
 | 派生フィールド | A [派生フィールド](/help/data-views/derived-fields/derived-fields.md) を使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 |

@@ -4,10 +4,10 @@ description: Customer Journey Analytics にデータを取り込む様々な方�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 90%
+source-wordcount: '866'
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,9 @@ ht-degree: 90%
 
 - 現在の Adobe Analytics デプロイメントのデータ
 
-- Adobe Experience Platform Web / Mobile SDK を使用して web サイトやモバイルアプリを追跡したデータ
+- Adobe Experience Platform Web/Mobile SDK を使用して Web サイトやモバイルアプリを追跡したデータ
+
+- Adobe Experience Platform Edge Network Server API を使用してデスクトップアプリケーション、コンソールゲーム、セットトップボックス、IoT デバイスを追跡したデータ、または
 
 - アドビがソースコネクタを提供するサードパーティのデータプロバイダーからのデータ
 
@@ -46,11 +48,26 @@ ht-degree: 90%
 
 詳しくは、[従来の Adobe Analytics からのデータの取り込みと使用](./analytics.md)を参照してください。
 
-## Adobe Experience Platform Web SDK を使用したデータの取得と使用
+
+## Edge ネットワーク経由でのデータの取り込みと使用
+
+### Adobe Experience Platform Web SDK の使用
 
 Adobeテクノロジーを使用して Web サイトを分析し、潜在的に別のソリューションから移行するか、人の行動の追跡を開始したい。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、 [Adobe Experience Platform Web SDK を使用したデータの取得と使用](./aepwebsdk.md) を参照してください。
+
+### Adobe Experience Platform Mobile SDK の使用
+
+Adobeテクノロジーを使用してモバイルアプリを分析したい場合、別のソリューションから移行する可能性がある場合や、アプリ内のユーザーの行動の追跡をゼロから開始する場合があります。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+
+詳しくは、 [Adobe Experience Platform Mobile SDK を使用したデータの取得と使用](./aepmobilesdk.md) を参照してください。
+
+### Adobe Experience Platform Edge Network Server API の使用
+
+デスクトップアプリケーション、ゲームコンソールで再生されたゲーム、セットトップボックスでのビデオストリーミングアプリケーションの使用、またはAdobeテクノロジーを備えた IoT デバイスを分析したい。 別のソリューションから移行する場合や、これらのデバイスでのユーザーの行動の追跡をゼロから開始する場合がある。 Adobe Experience Platform Edge Network Server API と Edge Network を使用してデータを取り込む実装において、Adobeのベストプラクティスに従う必要があります。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+
+詳しくは、 [Adobe Experience Platform Edge Network Server API を使用したデータの取得と使用](./serverapi.md) を参照してください。
 
 ## バッチデータの取り込みと使用
 
