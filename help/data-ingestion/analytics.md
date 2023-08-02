@@ -4,10 +4,10 @@ description: 従来の Adobe Analytics からデータを取り込む方法を�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 95%
 
 これには、次の手順を実行する必要があります。
 
-- Adobe Experience Platform で **Adobe Analytics ソースコネクタを設定**&#x200B;します。これにより、現在の Adobe Analytics データを Adobe Experience Platform のデータセットに取り込みます。
+- Adobe Experience Platform で **Adobe Analytics ソースコネクタを設定**&#x200B;します。ソースコネクタは、現在のAdobe AnalyticsデータをAdobe Experience Platformのデータセットに取り込む処理をおこないます。
 
-- Customer Journey Analytics で、**接続を設定**&#x200B;します。この接続には、（少なくとも）Adobe Experience Platform データセットを含める必要があります。
+- Customer Journey Analytics で、**接続を設定**&#x200B;します。接続には、少なくともAdobe Experience Platformデータセットを含める必要があります。
 
 - Customer Journey Analytics で&#x200B;**データ表示を設定**&#x200B;し、Analysis Workspace で使用する指標とディメンションを定義します。
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->これは、Adobe Analytics ソースコネクタを使用してデータを取り込み、Customer Journey Analytics で使用する方法に関するシンプルなガイドです。参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、Adobe Analyticsソースコネクタを使用してデータを取り込み、Customer Journey Analyticsでそのデータを使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## Adobe Analytics ソースコネクタの設定
@@ -78,7 +78,7 @@ Adobe Analytics ソースコネクタを作成するには：
    ![レビュー](./assets/review.png)
 
 
-接続が作成されると、データフローが自動的に作成され、実稼動サンドボックス用の最大 13 ヶ月分の履歴データの取り込みなど、レポートスイートのAdobe Analyticsデータがデータセットに入力されます。 （2023 年 4 月 26 日以降、非実稼動用サンドボックスのバックフィルは、3 か月に制限されています）。
+接続が作成されると、データフローが自動的に作成され、レポートスイートのAdobe Analyticsデータがデータセットに入力されます。 データフローは、実稼働サンドボックス用に最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、最大 3 か月に制限されています。
 
 初回の取り込みが完了すると、Adobe Analytics レポートスイートのデータが Customer Journey Analytics で使用できる状態になります。
 
@@ -89,7 +89,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まず Experience Platform とワークスペースのデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -192,7 +192,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. [!UICONTROL パネル]の[!UICONTROL フリーフォームテーブル]でディメンションと指標のドラッグ＆ドロップを開始し、最初のレポートを作成します。例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] （内） [!UICONTROL パネル] . 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。取り込んだ Adobe Analytics データと他のデータを使用するよう、Customer Journey Analytics で接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。取り込んだAdobe Analyticsデータと他のデータを使用するCustomer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
 

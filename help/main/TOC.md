@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '971'
 ht-degree: 82%
 
 ---
@@ -53,7 +53,10 @@ ht-degree: 82%
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK および Edge ネットワーク](../data-ingestion/aepwebsdk.md)
+      + Adobe Experience Platform Edge Network {#edge-network}
+         + [Web SDK](../data-ingestion/aepwebsdk.md)
+         + [モバイル SDK](../data-ingestion/aepmobilesdk.md)
+         + [サーバー API](../data-ingestion/serverapi.md)
       + [バッチデータ](../data-ingestion/batch.md)
       + [ストリーミングデータ](../data-ingestion/streaming.md)
       + [ソースコネクタ](../data-ingestion/sources.md)
@@ -196,7 +199,7 @@ ht-degree: 82%
    + ユーザーの増加率 {#user-growth}
       + [アクティブビュー](../guided-analysis/types/active.md)
       + [正味の成長見通し](../guided-analysis/types/net-growth.md)
-   + 傾向 {#trends}
+   + トレンド {#trends}
       + [使用状況ビュー](../guided-analysis/types/usage.md)
    + [業界の使用例](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)

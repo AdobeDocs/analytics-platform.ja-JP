@@ -4,10 +4,10 @@ description: Customer Journey Analytics でバッチデータを取り込んで�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 91%
 
 ---
 
@@ -29,20 +29,20 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->これは、バッチデータを Adobe Experience Platform に取り込み、Customer Journey Analytics で使用する方法を説明する簡単なガイドです。参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、バッチデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 ## スキーマとデータセットの設定
 
 データを Adobe Experience Platform に取り込むには、まず収集するデータを定義する必要があります。ダウンストリームの機能で認識し、処理するには、Adobe Experience Platform に取り込まれるすべてのデータが、標準的な非正規化された構造に準拠する必要があります。エクスペリエンスデータモデル（XDM）は、この構造をスキーマの形式で提供する標準フレームワークです。
 
-スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）のストレージおよび管理用の構成体です。
+スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含むデータ（通常はテーブル）の集まりのストレージと管理の構成体です。
 
 Adobe Experience Platform に取り込まれるすべてのデータは、データセットとして保持する前に、事前定義済みのスキーマに準拠している必要があります。
 
 ### スキーマの設定
 
 このクイックスタートでは、いくつかのロイヤルティデータ（ロイヤルティ ID、ロイヤルティポイント、ロイヤルティステータスなど）を収集します。
-この場合、まず、このデータをモデル化するスキーマを定義する必要があります。
+最初に、このデータをモデル化するスキーマを定義する必要があります。
 
 スキーマを設定するには：
 
@@ -89,7 +89,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ID オブジェクト](./assets/identifcation-loyalty-field.png)
 
-   スキーマに ID 機能を追加します。その場合は、バッチデータのメールアドレスを使用してロイヤルティ情報を識別します。
+   識別オブジェクトは、スキーマに識別機能を追加します。 その場合は、バッチデータのメールアドレスを使用してロイヤルティ情報を識別します。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -123,7 +123,7 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 ### データセットの設定
 
-スキーマを使用して、データモデルを定義しました。次に、そのデータを保存および管理するための構成を定義する必要があります。この処理は、データセットを通じて行います。
+スキーマを使用して、データモデルを定義しました。次に、そのデータを保存および管理するための構成を定義する必要があります。これは、データセットを通じておこなわれます。
 
 データセットを設定するには：
 
@@ -151,7 +151,7 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
    >[!IMPORTANT]
    >
-   >    プロファイルのデータセットを有効にできるのは、データセットが準拠するスキーマがプロファイルに対しても有効になっている場合のみです。
+   >プロファイルのデータセットを有効にできるのは、データセットが準拠するスキーマがプロファイルに対しても有効になっている場合のみです。
 
    ![プロファイルでスキーマを有効にする](./assets/loyalty-dataset-profile.png)
 
@@ -208,14 +208,19 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 6. 「**[!UICONTROL 完了]**」を選択して、バッチデータの Adobe Experience Platform への取り込みを開始します。
 
-受信データと XDM スキーマとの互換性がない場合のデータのマッピング方法、マッピングテンプレートの使用方法、計算フィールドの使用方法、およびバッチデータがスキーマの期待値に適合させる方法について詳しくは、[CSV ファイルの上に既存の XDM スキーマへのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja)を参照してください。
+詳しくは、 [CSV ファイルの既存の XDM スキーマへのマッピング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja) 詳しくは、以下を参照してください。
+
+- 受信データと XDM スキーマとの互換性がない場合のデータのマッピング方法。
+- マッピングテンプレートの使用
+- 計算フィールドを使用して、バッチデータがスキーマの期待値に準拠していることを確認します。
+- その他の機能.
 
 
 ## 接続の設定
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まず Experience Platform とワークスペースのデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -318,7 +323,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. [!UICONTROL パネル]の[!UICONTROL フリーフォームテーブル]でディメンションと指標のドラッグ＆ドロップを開始し、最初のレポートを作成します。例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] （内） [!UICONTROL パネル]. 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
