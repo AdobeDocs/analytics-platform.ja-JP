@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 75%
+source-wordcount: '1492'
+ht-degree: 73%
 
 ---
 
@@ -25,7 +25,7 @@ Customer Journey Analytics にシームレスに移行するために Adobe Anal
 カスタマージャーニーを理解するうえで最も重要な要素は、各ステップで顧客が誰であるかを把握することです。Customer Journey Analyticsの場合、すべてのチャネルに存在する識別子と対応するデータを持つことで、複数のソースをCustomer Journey Analytics内で結合できます。
 ID の例としては、顧客 ID、アカウント ID、メール ID などがあります。ID（場合によっては複数の ID）に関係なく、ID ごとに次の点を必ず考慮してください。
 
-* ID が存在するか、Customer Journey Analyticsに取り込むすべてのデータソースに追加できます
+* ID が存在するか、Customer Journey Analyticsに取り込むすべてのデータソースに追加できます。
 * ID はデータの各行に設定されます。
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
@@ -42,7 +42,7 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する
 
 * [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用して、変数をマッピングします。すべてのレポートスイートで共通の変数設計を使用していれば便利ですが、Experience Platform に新しく導入された[データ準備](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja#mapping)機能を使用する場合、共通の変数設計は不要です。この新機能により、データストリーム（またはプロパティ）レベルでマッピングされた値を使用して変数を参照できます。
 
-の問題が原因でグローバルレポートスイートへの移行を避けた場合 [!UICONTROL ユニークが超過しました] または [!UICONTROL 低トラフィック]、Customer Journey Analyticsに [ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md). これにより、任意の一意の値が出現可能でカウントもできます。
+の問題が原因でグローバルレポートスイートへの移行を避けた場合 [!UICONTROL ユニークが超過しました] または [!UICONTROL 低トラフィック]を使用する場合、Customer Journey Analyticsに [ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md). これにより、任意の一意の値が出現可能でカウントもできます。
 
 次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)に関するユースケースを示します。
 
@@ -55,6 +55,8 @@ Adobe AnalyticsのデータをCustomer Journey Analyticsデータに変換する
 * Customer Journey Analytics のレポート時間の特性
 
 アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=ja)を公開しています。これらの最新の推奨事項は、既に Adobe Analytics にある機能を Attribution IQ で最大限に活用するのに役立ちます。また、Customer Journey Analytics への移行を成功させるためのセットアップも行われます。
+
+の導入に伴い [派生フィールド](../data-views/derived-fields/derived-fields.md) マーケティングチャネルは、Customer Journey Analyticsデータビューの一部として、 [マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates).
 
 ### 4. Analytics ソースコネクタとExperience PlatformSDK の使用を決定する {#connector-vs-sdk}
 
@@ -113,7 +115,7 @@ Adobe Analyticsセグメント ( [!UICONTROL フィルター] (Customer Journey 
 
 * Customer Journey Analyticsのデータビューの機能を使用すると、Customer Journey Analytics内で指標とディメンションをより柔軟に定義できます。 例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/use-cases/data-views/data-views-usecases.md)
 
-* Adobe Analyticsでカスタムカレンダーを定義した場合は、同様のカスタムカレンダーを使用できます [カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md) Customer Journey Analytics内 カレンダーが正しく定義されていることを確認してください。
+* Adobe Analyticsでカスタムカレンダーを定義した場合は、同様のカスタムカレンダーを使用できます。 [カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md) Customer Journey Analytics内 カレンダーが正しく定義されていることを確認してください。
 
 * Customer Journey Analytics では、カスタム訪問／セッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。この機能は、モバイルデータセットで特に役に立つ可能性があります。
 
