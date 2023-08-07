@@ -1,13 +1,13 @@
 ---
 title: データビューの概要
-description: データビューは、指標、ディメンション、セッションなど、Customer Journey Analytics接続内のデータの要素を解釈する方法を指定します。
+description: データビューは、指標、ディメンション、セッションなど、Customer Journey Analytics 接続内のデータの要素を解釈する方法を指定します。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 ## データ表示機能 {#capabilities}
 
-データビューを使用すると、Adobe Experience Platformでスキーマを変更したり、Customer Journey Analytics環境を再実装したりする必要なく、スキーマ要素の設定を自然に変更できます。
+データビューを使用すると、Adobe Experience Platform でのスキーマの変更や Customer Journey Analytics 環境の再実装を行わなくても、データ表示のスキーマ要素の設定を自発的に変更できます。
 
 * **コンポーネントは指標からディメンションに変更することも、その逆に変更することもできます**。文字列フィールドから指標を作成したり、数値フィールドからディメンションを作成したりできます。 これにより、必要な指標ごとに XDM スキーマに数値フィールドを作成する必要がなくなるので、作業が容易になります。 代わりに、データビューダイアログで自発的に作成できます。次に例を示します。
    * **単一のスキーマフィールドから 1 つ以上のディメンションや 1 つのディメンションを作成します**。これは 1 対多の関係です。例えば、単一のスキーマフィールドから 1 つ以上の売上高指標や、1 つ以上の売上高ディメンションを作成できます。
