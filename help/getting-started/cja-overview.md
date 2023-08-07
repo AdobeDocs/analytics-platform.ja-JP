@@ -7,7 +7,7 @@ feature: Basics
 source-git-commit: 635527f32e69aa079c33735da674deb3f47c31ff
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 Customer Journey Analyticsは、Analysis Workspaceの機能をAdobe Experience Platformのデータと共に利用できる、Adobeの次世代 Analytics ソリューションです。 数年分のデータを分類、フィルタリング、クエリ、視覚化でき、あらゆる種類のデータスキーマやデータの種類を保持できる Platform の機能と組み合わせることができます。**Experience Data Model（XDM）**&#x200B;を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。**エクスペリエンスクエリサービス**：SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
 
-Customer Journey Analytics・アーキテクチャの概要を次に示します。
+Customer Journey Analytics の高レベルのアーキテクチャを以下に示します。
 
 ![アークテクチャ](assets/cja-architecture.png)
 
@@ -23,20 +23,20 @@ Customer Journey Analytics・アーキテクチャの概要を次に示します
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## Customer Journey Analyticsと従来のAdobe Analyticsの比較
+## Customer Journey Analytics と従来の Adobe Analytics の比較
 
 Customer Journey Analytics では、使いやすいクロスチャネル機能を提供し、以前のバージョンの Adobe Analytics の制限を取り除くことで、Adobe Analytics の範囲を広げています。主な改善点を次に示します。
 
-* **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットは、一意のディメンションと指標の数に制限はありません。
+* **変数とイベントは無制限**：eVar、prop、イベントの概念は存在しなくなりました。データは主にディメンションと指標に焦点を当てています。データセットには、無制限の数の一意のディメンションと指標を含めることができます。
 * **無制限の一意の値**：Adobe Experience Platform では、一意制限を受けることはありません。
 * **履歴データの変更**：Adobe Experience Platform を使用して、データを削除または修正できます。
-* **クロスレポートスイートデータ**:Platform では、複数のデータセットから既存の実装を組み合わせることができます。
+* **クロスレポートスイートデータ**：複数のデータセットからの既存の実装を Platform で組み合わせることができます。
 
 >[!TIP]
 >
 >これまで Adobe Analytics を使用していて、Customer Journey Analytics で Adobe Analytics データを使用する必要がある場合は、[データ取り込み](../data-ingestion/data-ingestion.md)の節に含まれている[従来の Adobe Analytics からのデータの取り込みと使用](../data-ingestion/analytics.md)のクイックスタートガイドを参照してください。
 
-Customer Journey Analyticsの最初のリリースには、Adobe Analyticsに含まれる多くの機能が含まれています。 完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
+Customer Journey Analytics の最初のリリースには、Adobe Analytics に含まれる機能の多くが含まれています。完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
 ## 主なユースケース
 
@@ -53,7 +53,7 @@ Customer Journey Analytics では、次のことが可能です。
 
 Customer Journey Analytics の使用を開始する前に、次の前提条件を満たす必要があります。
 
-* 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、Customer Journey Analyticsのアドオンがあるかどうかが不明な場合は、Adobeのアカウントチームにお問い合わせください。
+* 組織が、Adobe Analytics（Select、Prime または Ultimate）および Customer Journey Analytics アドオンのアクティブな契約を結んでいる。契約の種類が不明な場合や、Customer Journey Analytics アドオンを使用しているかどうかが不明な場合は、アドビのアカウントチームにお問い合わせください。
 * 組織が Adobe Experience Platform 用にプロビジョニングされている。
 * Adobe Analytics を必要とせずに、Customer Journey Analytics をスタンドアロン製品として購入することもできます。
 
@@ -63,7 +63,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## 用語の更新
 
-Customer Journey Analyticsのいくつかの機能は、従来のAdobe Analyticsと比較して、業界標準に合わせて名前が変更されました。 次に、更新された用語の一部を示します。
+Customer Journey Analytics のいくつかの機能は、従来の Adobe Analytics と比較して、業界標準に合わせて名前が変更されました。次に、更新された用語の一部を示します。
 
 * セグメントは「フィルター」になりました。
 * 仮想レポートスイートは、「データビュー」と呼ばれるようになりました。
