@@ -3,33 +3,34 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
+source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 74%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2023年7月）
+# 最新のAdobe Customer Journey Analyticsリリースノート（2023 年 8 月）
 
-**最終更新日**：2023年7月25日（PT）
+**最終更新日**：2023年8月9日（PT）
 
-Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
+これらのリリースノートでは、8 月 9 日から 2023 年 9 月 13 日のリリース期間を扱っています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Adobe Product Analytics は、Customer Journey Analytics でクロスチャネルのデータやインサイトを操作する新しい方法です。これらの新機能により、製品チームは、ガイド付き分析ワークフローを通じて、製品エクスペリエンスに関するデータとインサイトをセルフサービスで提供できるようになります。チームで実行できる操作：<ul><li>時間の経過に伴うユーザーエンゲージメントのパターンを理解する</li><li>製品のユーザーベースの成長と保持を追跡する</li><li>製品の摩擦の領域を特定する</li><li>機能リリースと最初の使用の影響を測定する</li><li>製品のジャーニー全体を通したエンゲージメントと育成に役立つ、意味のあるユーザーセグメントを見つける</li><li>Analysis Workspace に接続して、より詳細な分析やアナリストとの共同作業を行う</li></ul>Adobe Product Analytics は、Customer Journey Analytics の有料アドオンです。この機能を使用できるように組織をプロビジョニングする場合は、アドビのアカウントチームにお問い合わせください。[詳細情報](/help/guided-analysis/overview.md) | 該当なし | 2023年7月17日（PT） |
-| **派生フィールド** | これは、派生フィールドの最初のリリースを表します。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。さらに、派生フィールドをデータビューのコンポーネント（指標またはディメンション）として定義し、その派生フィールドを Workspace のコンポーネントとして使用することができます。<p>このリリースでは、マーケティングチャネルテンプレートと次の機能がサポートされています。</p><ul><li>連結</li><li>Case When</li><li>検索と置換</li><li>ルックアップ</li><li>URL の解析</li></ul> <p>[詳細情報](/help/data-views/derived-fields/derived-fields.md)</p> | 2023年5月10日（PT） | 2023年8月2日（PT） |
-| **プロファイルデータやルックアップデータへのルックアップサポートの拡張** | プロファイルデータセットまたはルックアップデータセット内のフィールドのルックアップとしてデータセットを追加できるようになります。これまでは、イベントデータセットのみがサポートされていました。[詳細情報](/help/connections/create-connection.md) | 2023年6月21日（PT） | 2023年7月12日（PT） |
-| **Report Builder の機能強化** | <ul><li>セルからの複数データブロックのフィルタリング。複数のデータブロックに対するフィルターを 1 つのセルから変更できます。定義済みのセルを使用し、それを複数のデータブロックに割り当てて、セルに定義されたフィルターに基づいてデータを更新します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja)</li><li>行ヘッダーと列ヘッダーの表示／非表示の切り替え。データブロックのテーブルヘッダーや、行ヘッダーと列ヘッダーの表示／非表示を切り替えて、テーブルの書式設定を変更したり、レポートでデータブロックを整列させたりすることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=ja#build-the-data-block)</li></ul> | 該当なし | 2023年7月19日（PT） |
+| **Report Builder の機能強化** | <ul><li>スケジュールされたタスクの履歴を表示できる「履歴」タブから、スケジュールされたタスクをダウンロードします。 タスクからワークブックをダウンロードします。 </li><li>開始日をディメンションとして：ユーザーは、データブロック出力のディメンションとして、データブロックの開始日を表示できます。 </li></ul> | 該当なし | 2023年8月17日（PT） |
+| **通貨換算** | 顧客ジャーニーは、複数の通貨をサポートする機能を追加しています。 データビューの設定で、通貨を別の通貨に変換できます。 [詳細情報](/help/data-views/component-settings/format.md) | 該当なし | 2023年8月31日（PT） |
+| **Analytics Source Connector での A4T 分類のサポート** | Adobe Targetのアクティビティとエクスペリエンスイベントの分類データを簡単に結合できるように、相関 ID を追加しています。 | 該当なし | 2023年8月31日（PT） |
+| **レポートアクティビティマネージャー** | 管理者は、各接続のレポート消費状況を詳細に把握できるので、管理者は、ピーク時のレポート作成時に容量の問題を簡単に診断し、修正できます。 | 該当なし | 2023 年 9 月 7 日 |
+| **Power BI および Tableau から Customer Journey Analytics データビューへのアクセス** | Adobe Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。Power BI、Tableau またはその他のビジネスインテリジェンスおよびビジュアライゼーションツールに精通したデータエンジニアやアナリストは、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトに使用しているものと同じデータビューに基づいて、レポートやダッシュボードを作成できるようになりました。[詳細情報](/help/data-views/sql-connector.md) | 該当なし | 2023 年 9 月 14 日 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics の修正点
 
-AN-317971、AN-319234、AN-320439、AN-320519、AN-321740、AN-322444、AN-323116
+AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 

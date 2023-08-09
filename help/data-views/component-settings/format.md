@@ -4,9 +4,9 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3626a9f97048b68a57fca25fec396684c4f95449
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 30%
 
 ---
@@ -23,31 +23,30 @@ ht-degree: 30%
 | **[!UICONTROL 小数点以下の桁数]** | 整数スキーマのデータタイプには表示されません。指標で表示する小数点以下の桁数を指定できます。 |
 | **[!UICONTROL 日付]** | レポートでディメンションとして使用する際に、日時のフィールドをどのように表示するかを決定できます。[詳細情報](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
 | **[!UICONTROL 日時]** | レポートでディメンションとして使用する際に、日時のフィールドをどのように表示するかを決定できます。[詳細情報](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL 通貨]** | 指標の表示に使用する通貨を決定できます。詳しくは、 [通貨](#currency) 詳細を表示します。 |
+| **[!UICONTROL 通貨]** | 指標の表示に使用する通貨を決定できます。詳しくは、 [通貨](#currency) を参照してください。 |
 | **[!UICONTROL 上昇傾向を次の形式で表示]** | この指標の上昇傾向を良い（緑）と見なすか、悪い（赤）と見なすかを指定できます。 |
 | **[!UICONTROL True 値]** と **[!UICONTROL False 値]** | ブールスキーマのデータタイプでのみ表示されます。`true` 値と `false` 値のディメンション項目ラベルをカスタマイズできます。 |
 
 {style="table-layout:auto"}
 
-
 ## 通貨
 
-次を選択した場合： **[!UICONTROL 通貨]** を [!UICONTROL 形式] 指標の場合、通貨の表示と換算の方法を決定できます。
+次を選択した場合： **[!UICONTROL 通貨]** として [!UICONTROL 形式] 指標の場合、通貨の表示と換算の方法を決定できます。
 
 ### 通貨を表示
 
 指標の通貨を表示するには：
 
-1. 数を入力 **[!UICONTROL 小数点以下の桁数]**.
+1. 次の数を入力： **[!UICONTROL 小数点以下の桁数]**.
 
-1. 通貨を **[!UICONTROL 通貨の表示単位]** リスト。
+1. 通貨を **[!UICONTROL 通貨を次の単位で表示]** リスト。
 
 
 ### 通貨の変換と表示
 
 {{release-limited-testing-section}}
 
-1 つ以上の指標に対して通貨の換算を有効にするには：
+1 つ以上の指標に対して通貨の換算を有効にするには、次の手順に従います。
 
 - 通貨Customer Journey Analyticsを含む各イベントの通貨コードディメンションを保持する 1 つ以上のイベントデータセットを含むように通貨接続を設定します。 その通貨コードディメンションは、 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 通貨を表すための標準。 これらの値は、$には USD、€には EUR、£には GBP など、完全に大文字の形式にする必要があります。
 
@@ -64,9 +63,9 @@ ht-degree: 30%
 
 指標の通貨の変換および表示方法を定義するには：
 
-1. 数を入力 **[!UICONTROL 小数点以下の桁数]**.
+1. 次の数を入力： **[!UICONTROL 小数点以下の桁数]**.
 
-1. 選択 **[!UICONTROL 同時実行の変換]**.
+1. 選択 **[!UICONTROL 同時実行を変換]**.
 
 1. 通貨コードフィールドを含むディメンションのリストから、適切なディメンションを選択します。
 
@@ -90,7 +89,7 @@ ht-degree: 30%
 
 +++ 現在のデータスキーマに通貨コードフィールドがない場合はどうなりますか？
 
-データ準備、データ・Distiller、派生フィールドなど、新しい通貨コード・フィールドを作成するオプションが複数存在します。 Data Prep は将来的にのみ実装されるので、新しい実装に最適です。 組織の設定に応じて、従来、Data Distillerと派生フィールドを使用して通貨コード値にアクセスできます。
+データ準備、データ・Distiller、派生フィールドなど、新しい通貨コード・フィールドを作成するオプションが複数あります。 Data Prep は将来的にのみ実装されるので、新しい実装に最適です。 組織の設定に応じて、従来、Data Distillerと派生フィールドを使用して通貨コード値にアクセスできます。
 
 +++
 

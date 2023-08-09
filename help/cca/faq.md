@@ -3,10 +3,9 @@ title: Cross-Channel Analytics に関する FAQ
 description: Cross-Channel Analytics に関するよくある質問（FAQ）
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 97%
