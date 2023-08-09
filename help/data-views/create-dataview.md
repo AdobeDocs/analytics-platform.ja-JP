@@ -4,10 +4,10 @@ description: データビューの作成や編集を行うために調整でき�
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 99%
+source-wordcount: '1418'
+ht-degree: 97%
 
 ---
 
@@ -116,6 +116,11 @@ ht-degree: 99%
 左側のパネルの![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)スキーマフィールドは、[!UICONTROL データタイプ]、[!UICONTROL データセット]、[!UICONTROL データガバナンス]、[!UICONTROL その他]の条件（[!UICONTROL データを含む]、[!UICONTROL ID である]、[!UICONTROL 非推奨ではない]）によってフィルタリングできます。
 
 ![フィールドのフィルタリング](assets/dataview-components-filter.png)
+
+>[!TIP]
+>
+>コンポーネントがデータビューに正しく読み込まれず、代わりにエラーメッセージが表示される場合は、 [権限の欠如](../troubleshooting/lack-of-permissions.md) （解像度の場合）
+
 
 
 ## 設定
