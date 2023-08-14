@@ -7,7 +7,7 @@ feature: Basics
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Analytics Select、Prime および Ultimate のお客様は、このアドオン
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja"> レポートスイートを様々なスキーマと組み合わせる </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=ja"> 処理ルール、VISTA および分類とデータ準備の比較 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=ja"> Adobe Analytics と Customer Journey Analytics のレポート機能におけるデータ処理の比較 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja"> 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja"> 仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=ja"> Adobe Analytics から Customer Journey Analytics への進化 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html?lang=ja"> Adobe Analytics ユーザー向け Customer Journey Analytics ユーザーガイド </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>

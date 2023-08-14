@@ -7,7 +7,7 @@ feature: FAQ
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**[!UICONTROL Adobe Analytics] データを [!UICONTROL Customer Journey Analytics] に取り込むにはどうすればよいですか？**
 
-[!UICONTROL Adobe Analytics] データは、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). [!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。
+[!UICONTROL Adobe Analytics] のデータは、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Experience Platform に接続できます。[!UICONTROL Adobe Analytics] のほとんどのフィールドは XDM 形式で取り込まれますが、それ以外のフィールドはまだ使用できません。
 
 +++
 
