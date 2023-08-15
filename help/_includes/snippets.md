@@ -1,5 +1,5 @@
 ---
-source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
+source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 64%
@@ -11,19 +11,19 @@ ht-degree: 64%
 
 >[!AVAILABILITY]
 >
->この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
+>この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース手順については、 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
 
 ## 「リリース段階の限定的テスト」節 {#release-limited-testing-section}
 
 >[!AVAILABILITY]
 >
->この節で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
+>この節で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース手順については、 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
 
 ## パッケージを選択 {#select-package}
 
 >[!NOTE]
 >
->次を持っている必要があります： **選択** この記事で説明する機能を使用するためのパッケージです。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
+>次を持っている必要があります： **選択** この節で説明する機能を使用するために、パッケージを作成してください。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
 
 
 ## データ要素のフィルター条件 {#dd-filter-criteria}
@@ -54,8 +54,8 @@ ht-degree: 64%
 | [!UICONTROL **承認済み**] | <p>コンポーネントが管理者にレビューおよび承認されたことを示します。</p><p>管理者には、 [!UICONTROL **承認取消**]. このオプションを選択すると、コンポーネントがユーザーに対して「未承認」とマークされます。</p> |
 | [!UICONTROL **未承認**] | <p>コンポーネントがまだ管理者にレビューおよび承認されていないことを示します。</p><p>管理者には、「[!UICONTROL **承認**]」オプションが表示されます。このオプションを選択すると、ユーザーに対してコンポーネントが「承認済み」としてマークされます。</p> |
 | [!UICONTROL **説明**] | コンポーネントの意図された機能について説明します（この情報は、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)で説明しているように、Analytics 管理者が追加します）。 |
-| [!UICONTROL **次でよく使用される**] | <p>表示しているコンポーネントと最も一緒に使用されるコンポーネントを表示します。</p><p>5 つの主要なコンポーネントタイプに対して、最大 5 つのコンポーネントが表示されます。指標、計算指標、Dimension、フィルター、日付範囲。</p><p>このリストは、過去 90 日間のデータに基づいています。表示するアクセス権を持つコンポーネントのみを表示します。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレーションする前に、まず **すべて表示** フィルターを使用して、自分と共有されていないコンポーネントが他の管理者によって追加された可能性がある場合に、そのコンポーネントが表示されていることを確認します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p> |
-| [!UICONTROL **類似**] | <p>表示しているコンポーネントと同様の名前を持つコンポーネントを表示します。</p><p>5 つの主要なコンポーネントタイプに対して、最大 5 つのコンポーネントが表示されます。指標、計算指標、Dimension、フィルター、日付範囲。</p><p>表示するアクセス権を持つコンポーネントのみを表示します。</p><p>データビューの重複するコンポーネントは、ここに表示されます。 [データ要素の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、Analytics 管理者はすべての重複するコンポーネントを特定して削除する必要があります。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレーションする前に、まず **すべて表示** フィルターを使用して、自分と共有されていないコンポーネントが他の管理者によって追加された可能性がある場合に、そのコンポーネントが表示されていることを確認します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p><p>**メモ：**&#x200B;現在、「**類似**」セクションには、ユーザー作成のコンポーネントのみが含まれており、アドビ提供のコンポーネントは含まれていません。アドビ提供のコンポーネントは、今後のリリースで追加される予定です。</p> |
+| [!UICONTROL **次でよく使用される**] | <p>表示しているコンポーネントと最も一緒に使用されるコンポーネントを表示します。</p><p>主要なコンポーネントのタイプは、指標、計算指標、Dimension、フィルター、日付範囲の 5 つまでです。</p><p>このリストは、過去 90 日間のデータに基づいています。表示するアクセス権を持つコンポーネントのみを表示します。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレーションする前に、まず **すべて表示** フィルターを使用して、自分と共有されていないコンポーネントが他の管理者によって追加された可能性がある場合に、そのコンポーネントが表示されていることを確認します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p> |
+| [!UICONTROL **類似**] | <p>表示しているコンポーネントと同様の名前を持つコンポーネントを表示します。</p><p>主要なコンポーネントのタイプは、指標、計算指標、Dimension、フィルター、日付範囲の 5 つまでです。</p><p>表示するアクセス権を持つコンポーネントのみを表示します。</p><p>データビューの重複するコンポーネントは、ここに表示されます。 [データ要素の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、Analytics 管理者はすべての重複するコンポーネントを特定して削除する必要があります。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレーションする前に、まず **すべて表示** フィルターを使用して、自分と共有されていないコンポーネントが他の管理者によって追加された可能性がある場合に、そのコンポーネントが表示されていることを確認します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p><p>**メモ：**&#x200B;現在、「**類似**」セクションには、ユーザー作成のコンポーネントのみが含まれており、アドビ提供のコンポーネントは含まれていません。アドビ提供のコンポーネントは、今後のリリースで追加される予定です。</p> |
 | [!UICONTROL **タグ**] | コンポーネントに適用されているすべてのタグを表示します。管理者アクセス権を持つユーザーは、コンポーネントの編集時にタグを追加できます。 |
 | [!UICONTROL **コンポーネントの種類**] | コンポーネントのタイプ、Dimension、指標、フィルター、日付範囲のどれであるかが表示されます。 |
 | [!UICONTROL **作成者**] | コンポーネントを作成したユーザーの名前を表示します。 |
