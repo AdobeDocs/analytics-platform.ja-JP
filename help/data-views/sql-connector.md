@@ -5,9 +5,8 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: true
 hidefromtoc: true
-badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 5%
@@ -18,7 +17,9 @@ ht-degree: 5%
 
 {{release-limited-testing}}
 
-この [!DNL Customer Journey Analytics SQL Connector] に対する SQL アクセスを有効にします。 [データビュー](./data-views.md) Customer Journey Analytics Power BIエンジニアやアナリストは、データ、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツール（BI ツールとも呼ばれます）に詳しい場合があります。 Customer Journey AnalyticsユーザーがAnalysis Workspaceプロジェクトを作成する際に使用しているのと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
+{{select-package}}
+
+The [!DNL Customer Journey Analytics SQL Connector] に対する SQL アクセスを有効にします。 [データビュー](./data-views.md) をCustomer Journey Analytics Power BIエンジニアやアナリストは、データ、Tableau、またはその他のビジネスインテリジェンスやビジュアライゼーションツール（BI ツールとも呼ばれます）に詳しい場合があります。 Customer Journey AnalyticsユーザーがAnalysis Workspaceプロジェクトを作成する際に使用しているのと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
 Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) は、Experience Platformのデータレイクで使用できるデータへの SQL インターフェイスです。 を使用 [!DNL Customer Journey Analytics SQL Connector] 有効、 [!DNL Query Service] が拡張され、Customer Journey Analyticsのデータビューをテーブルまたはビューとして [!DNL Query Service] セッション。 その結果、 [!DNL Query Service] PostgresSQL インターフェイスは、この拡張機能をシームレスに利用できるので、
 
@@ -42,7 +43,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
    - Customer Journey AnalyticsWorkspace プロジェクトおよび
    - Customer Journey Analyticsのデータビュー。
 
-- BI ツールをCustomer Journey AnalyticsSQL コネクタに接続するには、有効期限のない資格情報で期限切れになる情報を使用します。 Thr [資格情報ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) では、有効期限が切れる資格情報や期限が切れない資格情報の設定について詳しく説明しています。
+- BI ツールをCustomer Journey AnalyticsSQL コネクタに接続するには、有効期限のない資格情報で期限切れになる情報を使用します。 Thr [資格情報ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) に、有効期限が切れる資格情報や期限が切れない資格情報の設定に関する詳細を示します。
 
 詳しくは、 [アクセス制御](../admin/cja-access-control.md) (「Customer Journey Analytics管理」セクション ) を参照してください。
 
@@ -74,9 +75,9 @@ Experience PlatformUI:
 
    1. 選択 **[!UICONTROL **&#x200B;クエリ&#x200B;**]** 左側のレール（の下）から **[!UICONTROL **&#x200B;データ管理&#x200B;**]**) をクリックします。
 
-   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** をクリックします。
+   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** 上部のバーから。
 
-   3. 接続文字列をコピーするには、 ![コピー](assets/Smock_Copy_18_N.svg) 内 **[!UICONTROL ** PSQL コマンド&#x200B;**]** 」セクションに入力します。
+   3. 接続文字列をコピーするには、 ![コピー](assets/Smock_Copy_18_N.svg) （内） **[!UICONTROL ** PSQL コマンド&#x200B;**]** 」セクションに入力します。
 
 2. PostgresSQL CLI を開きます。
 
@@ -97,19 +98,19 @@ Experience PlatformUI:
 
    1. 選択 **[!UICONTROL **&#x200B;クエリ&#x200B;**]** 左側のレール（の下）から **[!UICONTROL **&#x200B;データ管理&#x200B;**]**) をクリックします。
 
-   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** をクリックします。
+   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** 上部のバーから。
 
-   3. 用途 ![コピー](assets/Smock_Copy_18_N.svg) 各 Postgres 資格情報パラメーター ([!UICONTROL ホスト], [!UICONTROL ポート], [!UICONTROL データベース], [!UICONTROL ユーザー名]（など）必要に応じてPower BIで使用します。
+   3. コピーを使用 ![ して、POWER BI で必要な場合は、各 Postgres 資格情報パラメーター ( [!UICONTROL  ホスト ] 、 [!UICONTROL  ポート ] 、 [!UICONTROL  データベース ] 、 [!UICONTROL  ユーザー名 ] 、その他) をコピーします。 ](assets/Smock_Copy_18_N.svg)
 
-2. Power BI内：
+2. Power BI で:
 
-   1. メインウィンドウで、「 」を選択します。 **[!UICONTROL **&#x200B;データの取得&#x200B;**]** をクリックします。
+   1. メインウィンドウで、上部のツールバーから「Get data **]** 」を選択し **[!UICONTROL ** ます。
 
-   2. 選択 **[!UICONTROL **&#x200B;さらに詳しく…**]** をクリックします。
+   2. 左側のパネルで詳細 **]** を選択 **[!UICONTROL ** します。
 
-   3. 内 **データの取得** 画面、検索 `PostgresSQL` をクリックし、 **[!UICONTROL ** PostgresSQL データベース&#x200B;**]** を選択します。
+   3. Adobe Analytics の **データの取得** 画面、検索 `PostgresSQL` をクリックし、 **[!UICONTROL ** PostgresSQL データベース&#x200B;**]** を選択します。
 
-   4. 内 **[!UICONTROL ** PostgressSQL データベース&#x200B;**]** ダイアログ：
+   4. Adobe Analytics の **[!UICONTROL ** PostgressSQL データベース&#x200B;**]** ダイアログ：
 
       1. 貼り付け **[!UICONTROL **&#x200B;ホスト&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] into **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
 
@@ -139,17 +140,17 @@ Experience PlatformUI:
 
    1. 選択 **[!UICONTROL **&#x200B;クエリ&#x200B;**]** 左側のレール（の下）から **[!UICONTROL **&#x200B;データ管理&#x200B;**]**) をクリックします。
 
-   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** をクリックします。
+   2. 選択 **[!UICONTROL **&#x200B;資格情報&#x200B;**]** 上部のバーから。
 
    3. 用途 ![コピー](assets/Smock_Copy_18_N.svg) 各 Postgres 資格情報パラメーター ([!UICONTROL ホスト], [!UICONTROL ポート], [!UICONTROL データベース], [!UICONTROL ユーザー名]（その他）必要に応じて、Tableau で使用します。
 
 2. Tableau の場合：
 
-   1. 選択 **[!UICONTROL **&#x200B;詳細&#x200B;**]** から **[!UICONTROL **&#x200B;サーバーへ&#x200B;**]** をクリックします。
+   1. 選択 **[!UICONTROL **&#x200B;その他&#x200B;**]** から **[!UICONTROL **&#x200B;サーバーへ&#x200B;**]** をクリックします。
 
    2. 選択 **[!UICONTROL ** PostgresSQL **]** を選択します。
 
-   3. 内 [!UICONTROL PostgresSQL] ダイアログ：
+   3. Adobe Analytics の [!UICONTROL PostgresSQL] ダイアログ：
 
       1. 貼り付け **[!UICONTROL **&#x200B;ホスト&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] into **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
 
@@ -163,21 +164,21 @@ Experience PlatformUI:
 
       5. 貼り付け **[!UICONTROL **&#x200B;ユーザー名&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] into **[!UICONTROL **&#x200B;ユーザー名&#x200B;**]** テキストフィールド。
 
-      6. 貼り付け **[!UICONTROL **&#x200B;パスワード&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] into **[!UICONTROL **&#x200B;パスワード&#x200B;**]** テキストフィールド。
+      6. Experience Platform クエリ [!UICONTROL  の秘密鍵証明書 ] のペースト **[!UICONTROL ** パスワード **]** パラメーターをパスワード **]** テキストフィールドに **[!UICONTROL ** 入力します。
 
-      7. 選択 **[!UICONTROL **&#x200B;ログイン&#x200B;**]**.
+      7. 「サインイン」 **]** を選択 **[!UICONTROL ** します。
 
-   4. Customer Journey Analyticsのデータビューは、 **[!UICONTROL **&#x200B;テーブル&#x200B;**]** リスト。 データビューテーブルには、「 `dv_`.
+   4. Customer Journey Analytics のデータビューは、 **[!UICONTROL ** テーブル **]** リストにテーブルとして表示されます。 データ表示の表には、というプレフィックスが付けられて `dv_` います。
 
-   5. 使用するテーブルをキャンバスにドラッグします。
+   5. キャンバスで使用するテーブルをドラッグします。
 
-   これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
+   これで、データ表示テーブルのデータを使用して、レポートとビジュアライゼーションをビルドできるようになりました。
 
    詳しくは、 [Tableau をクエリサービスに接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) を参照してください。
 
 +++
 
-詳しくは、 [クエリサービスにクライアントを接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) 」の概要と使用可能な様々なツールの詳細を参照してください。
+詳しくは、 [クエリサービスにクライアントを接続する](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) 」の概要と使用可能な様々なツールの詳細を参照してください。
 
 ## 機能
 
@@ -229,17 +230,17 @@ prod:all=> \dv
 
 | パターン | 例 |
 |---|---|
-| スキーマの検出 | <pre>* FROM dv1 WHERE 1=0 を選択します。</pre> |
-| ランク/分類 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「2022-01-01」と「2022-01-02」との間の「timestamp」<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「2022-01-01」と「2022-01-02」との間の「timestamp」<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| スキーマの検出 | <pre>SELECT * FROM dv1 FROM FROM 1 = 0</pre> |
+| ランク/内訳 | <pre>Dim1、SUM (metric1) を m1 <br/> として、dv1 <br/> の場所 (「2022-01-01」 ~ 「2022-01-02」 <br/> ) を dim1 で指定します。</pre><pre>Dim1、SUM (metric1) を、m1 <br/> として、「2022-01-01」と「2022-01-02」 <br/> の間にある dv1 <br/> から、filterid = &#39; 12345 &#39; <br/> を dim1 でグループ化します。</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「2022-01-01」と「2022-01-02」との間の「timestamp」<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
 | HAVING 句 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1<br/>m1 > 100</pre> |
 | ユニーク、トップ <br/>ディメンション値 | <pre>DV1 から DISTINCT dim1 を選択</pre><pre>DIM1 AS dv1 を選択<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1</pre><pre>DIM1 AS dv1 を選択<br/>DV1 から<br/>ここで、「timestamp」 >= 「2022-01-01」および「timestamp」 &lt; 「2022-01-02」です<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>上限 15</pre> |
 | 指標の合計 | <pre>SUM(metric1) AS m1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</pre> |
 | 多次元<br/>分類<br/>そして最も顕著な | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>1、2 でグループ化<br/>1、2 別の注文</pre><pre>SELECT DISTINCT dim1, dim2<br/>DV1 から</pre> |
-| サブ選択：<br/>その他の結果<br/>フィルタリング | <pre>SELECT dim1, m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| サブ選択：<br/>との結合<br/>データセットが次の値に含まれていません：<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>開始 (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/>)<br/>a.dim1 = b.key に対する LEFT JOIN 検索</pre> |
-| サブ選択：<br/>クエリ<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>開始 (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/><br/>  和集合<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DV2 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim2<br/>キーでグループ化<br/>合計注文</pre> |
-| サブ選択： <br/>レイヤソース <br/>フィルター <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>開始 (<br/>  \_.dim1,\_.m1 を選択<br/>  開始 (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.ITEM が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
-| を<br/>指標が次の値より前に<br/> またはが混在している<br/>寸法 | <pre>SUM(metric1) AS m1, dim1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>2 でグループ化</pre> |
+| サブ選択：<br/>その他の結果<br/>フィルタリング | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
+| サブ選択：<br/>との結合<br/>データセットが次の値に含まれていません：<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/>)<br/>a.dim1 = b.key に対する LEFT JOIN 検索</pre> |
+| サブ選択：<br/>クエリ<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DV1 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DV2 から<br/>  ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  GROUP BY dim2<br/>キーでグループ化<br/>合計注文</pre> |
+| サブ選択： <br/>レイヤソース、 <br/>フィルター， <br/>および集計 | サブセレクトを使用してレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  \_.dim1,\_.m1 を選択<br/>  FROM (<br/>    DV1 から\*を選択<br/>    ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>  ) \_<br/>  ここで、\_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) 行<br/>1 でグループ化<br/>合計注文</pre><br/>CTE を使用する画層：<br/><pre>行を AS (<br/>  \_ AS (<br/>    SELECT * FROM data_ares<br/>    ここで、「timestamp」は「2021-01-01」と「2021-02-01」の間です<br/>  )<br/>  _から_.item, _.units を選択<br/>  ここで、_.ITEM が NULL ではない場合<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;) の ROWS.item を含む行から<br/>GROUP BY rows.item</pre> |
+| を選択します。<br/>指標が次の値より前に<br/> またはが混在している<br/>ディメンション | <pre>SUM(metric1) AS m1, dim1 を選択します。<br/>DV1 から<br/>ここで、「timestamp」は「2022-01-01」と「2022-01-02」の間です<br/>2 でグループ化</pre> |
 
 {style="table-layout:auto"}
 
@@ -253,13 +254,13 @@ prod:all=> \dv
 
 選択できる指標は次のとおりです。
 
-- デフォルトで使用可能な指標
+- デフォルトで使用可能な指標は、
 
-- データビューで定義される
+- データ表示で定義されています。
 
 - ユーザーがアクセスできるデータビューと互換性のある計算指標。
 
-指標は、 `SUM(metric)` 式は、他の SQL ソースで使用する場合と同様に使用します。
+ID を使用して指標を選択し、 `SUM(metric)` 式は、他の SQL ソースで使用する場合と同様に使用します。
 
 :
 
@@ -275,7 +276,7 @@ Customer Journey Analyticsの仕組みの基本的な性質により、正確な
 
 #### 条件付き指標
 
-埋め込む `IF` または `CASE` 条項 `SUM` または `COUNT` 関数を使用して、選択した指標に固有のフィルターを追加できます。 これらの句を追加することは、Workspace レポートテーブルの指標列にフィルターを適用することに似ています。
+埋め込み可能な `IF` または `CASE` 条項 `SUM` または `COUNT` 関数を使用して、選択した指標に固有のフィルターを追加できます。 これらの句を追加することは、Workspace レポートテーブルの指標列にフィルターを適用することに似ています。
 
 例：
 
@@ -296,17 +297,17 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN METRIC1 END) AS m1
 | `+`, `-`, `*`, `/`、および `%` | 加算、減算、乗算、除算、剰余 |
 | `-X` または`+X` | X が指標の式である記号または指標の変更 |
 | `PI()` | π定数 |
-| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH`、および `TANH` | 単項数学関数 |
+| `POSITIVE``ACOS` `LOG1P` `SQRT` `LOG10` `LN` `EXP` `CBRT` `DEGREES` `COS` `SIN` `TAN` `RADIANS` `ASIN` `CEILING` `SINH` `ABS` `COSH` `FLOOR` `ATAN` `CEIL` , `NEGATIVE` ,,,,,,,,,,,,, &amp; () を`TANH` | 単項数学関数 |
 | `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | バイナリ数学関数 |
 
 {style="table-layout:auto"}
 
-### 特殊な列
+### 特別な列
 
 **タイムスタンプ**
 
-この `timestamp` 特別な列は、クエリの日付範囲を指定するために使用されます。 日付範囲は、 `BETWEEN` 表現または一対の `timestamp` `>`, `>=`, `<`, `<=` チェック `AND`一緒に
-この `timestamp` はオプションで、全範囲を指定しない場合は、デフォルトが使用されます。
+The `timestamp` 特別な列は、クエリの日付範囲を指定するために使用されます。 日付範囲は、 `BETWEEN` 表現または一対の `timestamp` `>`, `>=`, `<`, `<=` checks `AND`一緒に
+The `timestamp` はオプションで、全範囲を指定しない場合は、デフォルトが使用されます。
 
 - 最小値のみが指定されている場合 (`timestamp > X` または ` timestamp >= X`) の値を指定する場合、範囲は X から現在までです。
 
@@ -319,24 +320,24 @@ timestamp フィールドは、解析するために Date-Time 関数で使用�
 
 **日付範囲**
 
-この `daterange` 特別な列は次のように機能します。  `timestamp`ただし、フィルタリングは 1 日に制限されます。 この `daterange` はオプションで、の範囲のデフォルトはと同じです。 `timestamp`.
-この `daterange` フィールドは、日付/時刻関数で解析するために使用し、イベントの日付を切り捨てることができます。
+The `daterange` 特別な列は次のように機能します。  `timestamp`ただし、フィルタリングは 1 日に制限されます。 The `daterange` はオプションで、の範囲のデフォルトはと同じです。 `timestamp`.
+The `daterange` フィールドは、日付/時間関数で解析するために使用し、イベント日を切り捨てることができます。
 
 **filterId**
 
-この `filterId` special 列はオプションで、外部定義のフィルターをクエリに適用するために使用します。 外部的に定義されたフィルターをクエリに適用する方法は、Workspace のパネルでフィルターをドラッグする場合と似ています。 で複数のフィルター ID を指定できます `AND` — 彼らを呼びながら。
+The `filterId` special 列はオプションで、外部定義のフィルターをクエリに適用するために使用します。 外部的に定義されたフィルターをクエリに適用する方法は、Workspace のパネルでフィルターをドラッグする場合と似ています。 で複数のフィルター ID を指定できます `AND` — 彼らを呼びながら。
 
 ### WHERE 句
 
 WHERE 句は、次の 3 つの手順で処理されます。
 
-1. 日付範囲を `timestamp` 特殊フィールド。
+1. 次の日付範囲で `timestamp` 特別なフィールド。
 
 2. 外部で定義された項目を検索 `filterId`フィルターに含める s。
 
 3. 残りの式をアドホックフィルターに変換します。
 
-この処理は、 `AND`の `WHERE` 句を使用します。 各最上位レベル `AND`ed 式は上記のいずれかと一致する必要があります。 第 1 レベルの `AND`s、または ( `WHERE` 句の使用 `OR`の最上位レベルでは、はアドホックフィルターとして処理されます。
+この処理は、の第 1 レベルを解析することでおこなわれます。 `AND`の `WHERE` 句を使用します。 各最上位レベル `AND`ed 式は上記のいずれかと一致する必要があります。 の第 1 レベルよりも深い部分 `AND`s、または ( `WHERE` 句の使用 `OR`の最上位レベルでは、はアドホックフィルターとして処理されます。
 
 ### 並べ替え順
 
@@ -356,7 +357,7 @@ ORDER BY -metric1 DESC
 
 | 関数 | 例 | 詳細 |
 |---|---|---|
-| [CAST（列 AS 型）](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または<br/> `` `timestamp`::string `` | タイプキャストは現在サポートされていませんが、エラーは発生しません。 この `CAST` 関数は無視されます。 |
+| [CAST (列としての列)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または<br/> `` `timestamp`::string `` | 書式＜例外＞Photoshop のみ「テキスト」キャストは現在サポートされていませんが、エラーはスローされません。 `CAST`関数は無視されます。 |
 | [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 時間文字列をタイムスタンプとして解析し、 `WHERE` 句を使用します。 |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 時間文字列をタイムスタンプとして解析し、 `WHERE` 句を使用して、オプションでその時間文字列の形式を指定します。 |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | 日付文字列をタイムスタンプとして解析し、 `WHERE` 句を使用します。 |

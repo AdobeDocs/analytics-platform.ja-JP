@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 ---
 
 # ステッチされたデータセットの作成と管理
+
+{{select-package}}
 
 ステッチを使用すると、管理者は、管理で使用可能なデータセットで ID をCustomer Journey Analyticsでステッチできます。 データセットを結び付けると、プロファイルの表現の正確性が向上し、最終的に、より良い分析とレポートが得られます。
 
@@ -24,7 +26,7 @@ ht-degree: 2%
 
 1. 選択 **[!UICONTROL **&#x200B;ステッチ&#x200B;**]** から **[!UICONTROL **&#x200B;データ管理&#x200B;**]** 上部のバーに
 
-2. 内 [!UICONTROL ステッチされたデータセット] 画面、選択 **[!UICONTROL **&#x200B;ステッチ済みデータセットを作成&#x200B;**]**.
+2. Adobe Analytics の [!UICONTROL ステッチされたデータセット] 画面、選択 **[!UICONTROL **&#x200B;ステッチ済みデータセットを作成&#x200B;**]**.
 
    自分の責任を説明するダイアログが表示されます。
 
@@ -34,45 +36,45 @@ ht-degree: 2%
    >
    >    次を選択した場合、 **[!UICONTROL **&#x200B;キャンセル&#x200B;**]**&#x200B;の場合、ステッチされたデータセットを作成できません。
 
-4. 内 [!UICONTROL ステッチ済みデータセット/名称未設定のステッチ済みデータセット] 画面：
+4. Adobe Analytics の [!UICONTROL ステッチ済みデータセット/名称未設定のステッチ済みデータセット] 画面：
 
    1. を定義 **[!UICONTROL **&#x200B;データセット名&#x200B;**]** および（オプション） **[!UICONTROL **&#x200B;説明&#x200B;**]**,
 
-   2. サンドボックスを **[!UICONTROL **&#x200B;サンドボックス&#x200B;**]** イベントデータセットが保存されるリスト。
+   2. 次の中からサンドボックスを選択します。 **[!UICONTROL **&#x200B;サンドボックス&#x200B;**]** イベントデータセットの保存先のリスト。
 
       ![初期作成画面](./assets/create-initial.png)
 
    3. を選択します。 **[!UICONTROL **&#x200B;ソースデータセットを選択&#x200B;**]** 」ボタンをクリックします。
 
-      内 [!UICONTROL ステッチするデータセットを 1 つ選択] ポップアップウィンドウ：
+      Adobe Analytics の [!UICONTROL ステッチするデータセットを 1 つ選択] ポップアップウィンドウ：
 
       ![1 つのデータセットを選択](./assets/select-one-dataset.png)
 
       - データセットを選択し、 **[!UICONTROL **&#x200B;選択&#x200B;**]** をクリックして続行します。
 
-   4. 次の場所から永続的な識別子を選択 **[!UICONTROL **&#x200B;永続 ID **]** リスト。
+   4. 次の場所から永続的な識別子を選択： **[!UICONTROL **&#x200B;永続 ID **]** リスト。
 
    5. 一時的な識別子を **[!UICONTROL **&#x200B;一時的な ID **]** リスト。
 
       過去 7 日間の彩度の割合（イベント数に対して指定した各識別子に値が設定された回数）を計算するためのプレビューパネルが表示されます。 計算が完了すると、ステッチの最小条件が満たされた（緑）か満たされていない（赤）かに関わらず、パネルは色で視覚化されます。
 
-      ![ステータスレートでステッチデータセットを作成する](./assets/create-before-experimenting.png)
+      ![ステータンスレートでステッチデータセットを作成する](./assets/create-before-experimenting.png)
 
       最小の条件は次のとおりです。
 
-      - 永続的な識別子の彩度：rate >= 95%
+      - 永続的な識別子の彩度： rate >= 95%
 
-      - 一時的な識別子の彩度：rate >= 5%
+      - 一時的な識別子の彩度： rate >= 5%
 
         最小の条件が満たされた場合は、サンプル値を使用して実験できます。
 
       - 選択 **[!UICONTROL **&#x200B;デモステッチ ID を作成する&#x200B;**]**.
 
-        内 [!UICONTROL サンプル値を使用した実験] ダイアログでは、次の値の例が表に表示されます。 [!UICONTROL timestamp], [!UICONTROL 永続 ID], [!UICONTROL 一時的な ID], [!UICONTROL ステッチ済み ID （ライブ）], [!UICONTROL ステッチ済み ID（1 日再生）]、および [!UICONTROL ステッチ済み ID（7 日間再生）].
+        Adobe Analytics の [!UICONTROL サンプル値を使用した実験] ダイアログでは、次の値の例が表に表示されます。 [!UICONTROL timestamp], [!UICONTROL 永続 ID], [!UICONTROL 一時的な ID], [!UICONTROL ステッチ済み ID （ライブ）], [!UICONTROL ステッチ済み ID（1 日再生）]、および [!UICONTROL ステッチ済み ID（7 日間再生）].
 
-            ![サンプル値を実験](./assets/experiment-sample-values.png)
+            ![サンプル値で実験](./assets/experiment-sample-values.png)
             
-            1.  **[!UICONTROL **永続 ID**]**.
+            1.  **の値を入力[!UICONTROL **永続 ID**]**.
             
             2.  選択**[!UICONTROL **ステッチされた ID を更新**]**をクリックすると、データセット内のデータに対するステッチ処理の影響を確認できます。
             
@@ -83,7 +85,7 @@ ht-degree: 2%
 
    6. 次の場所から履歴データを再開する頻度と期間のオプションを選択します： **[!UICONTROL **&#x200B;再生ウィンドウ&#x200B;**]** リスト。
 
-      デフォルト値から選択できます **[!UICONTROL **&#x200B;前日、毎日&#x200B;**]** または **[!UICONTROL **&#x200B;過去 7 日間、毎週&#x200B;**]**.
+      デフォルト値から選択できます **[!UICONTROL **&#x200B;前日、毎日&#x200B;**]** または **[!UICONTROL **&#x200B;過去 7 日間（毎週）**]**.
 
    7. 次から値を選択： **[!UICONTROL **&#x200B;毎日のイベントの平均数&#x200B;**]** リスト。
 
@@ -97,11 +99,11 @@ ht-degree: 2%
 
 - 選択 **[!UICONTROL **&#x200B;ステッチ&#x200B;**]** から **[!UICONTROL **&#x200B;データ管理&#x200B;**]** 上部のバーに
 
-  ステッチされたデータセットのリストが表示され、それぞれに [!UICONTROL サンドボックス], [!UICONTROL ソースデータセット], [!UICONTROL ステータス], [!UICONTROL バックフィルのステータス], [!UICONTROL 所有者]、および [!UICONTROL 作成日].
+  ステッチ済みデータセットのリストが表示され、それぞれに [!UICONTROL サンドボックス], [!UICONTROL ソースデータセット], [!UICONTROL ステータス], [!UICONTROL バックフィルのステータス], [!UICONTROL 所有者]、および [!UICONTROL 作成日].
 
   ![ステッチされたデータセットの概要](./assets/overview-stitched-datasetts.png)
 
-  次の値が可能： [!UICONTROL ステータス] 次の場合：
+  次の値が可能： [!UICONTROL ステータス] は次のとおりです。
 
   | 値 | 説明 |
   |-----|-----|
@@ -115,7 +117,7 @@ ht-degree: 2%
   >    ステータスが変更されるたびに、通知とメッセージが送信されます **[!UICONTROL **&#x200B;ステッチ済みデータセット _データセット名_ はステータスに変更されました _ステータス名&#x200B;_**]**.
 
 
-  この [!UICONTROL バックフィルのステータス] は次の値を持つことができます。0%、25%、50%、75%、100%のいずれかです。
+  The [!UICONTROL バックフィルのステータス] には、0%、25%、50%、75%または 100%の値を指定できます。
 
   情報アイコンを選択すると、選択したステッチ済みデータセットの詳細を含むポップアップを表示できます。
 
@@ -129,7 +131,7 @@ ht-degree: 2%
 
 単一のステッチ済みデータセットを削除するには：
 
-- 選択 **[!UICONTROL **...**]** ステッチされたデータセットの場合は、 **[!UICONTROL **&#x200B;削除&#x200B;**]** を選択します。
+- 選択 **[!UICONTROL **...**]** ステッチされたデータセットの場合は、「 」を選択します。 **[!UICONTROL **&#x200B;削除&#x200B;**]** を選択します。
 
   ![ステッチ済みデータセットの削除](./assets/delete-stitched-dataset.png)
 
