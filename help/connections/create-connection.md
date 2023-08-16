@@ -4,9 +4,9 @@ description: Customer Journey Analytics で Platform データセットへの接
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2630'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->接続に無制限の数のデータセットを追加するには、**Select** パッケージが必要です。**Foundation** パッケージは 1 つのデータセットに制限されます。使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
+## 前提条件
+
+接続に無制限の数のデータセットを追加するには、**Select** パッケージが必要です。**Foundation** パッケージは 1 つのデータセットに制限されます。使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
 
 ## 接続の作成と設定 {#create-connection}
 
