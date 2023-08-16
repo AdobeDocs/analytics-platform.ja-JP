@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: 555ef833c3137c6e1c441b16781c240e5ef43419
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 83%
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Analytics ソースコネクタを介して渡された Analytics データに関する用語の比較](../getting-started/aa-vs-cja/terminology.md)
+      + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語を比較](../getting-started/aa-vs-cja/terminology.md)
       + [Adobe AnalyticsとCustomer Journey Analyticsでのデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [仮想レポート環境とサンドボックス環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -72,7 +72,7 @@ ht-degree: 83%
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
-   + [コンテキスト対応セッション](../data-views/context-aware-sessions.md)
+   + [セッション設定](../data-views/session-settings.md)
    + コンポーネント設定 {#component-settings}
       + [コンポーネント設定の概要](../data-views/component-settings/overview.md)
       + [アトリビューション](../data-views/component-settings/attribution.md)
