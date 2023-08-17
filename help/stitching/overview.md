@@ -3,10 +3,10 @@ title: ステッチの概要
 description: ステッチの概要。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 24%
+source-wordcount: '1265'
+ht-degree: 23%
 
 ---
 
@@ -117,10 +117,14 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 * 一時的な ID フィールドには、単一のタイプの ID（単一の名前空間の ID）を含める必要があります。 例えば、一時的な ID フィールドにログイン ID と電子メール ID の組み合わせを含めることはできません。
 * 同じ永続 ID に対して同じタイムスタンプで複数のイベントが発生し、一時的な ID フィールドの値が異なる場合、アルファベット順に基づいて ID がステッチによって選択されます。 したがって、永続 ID A に同じタイムスタンプを持つ 2 つのイベントがあり、いずれかのイベントが Bob を指定し、もう一方が Ann を指定した場合、ステッチは Ann を選択します。
 * デバイスが複数のユーザーによって共有され、ユーザー間のトランジションの合計数が 50,000 を超える場合、Customer Journey Analyticsはそのデバイスのデータのステッチを停止します。
+* 一時的な ID にプレースホルダー値が含まれる場合は、「未定義」のように注意してください。 詳しくは、 [FAQ](faq.md) を参照してください。
 
 ステッチを次のものと混同しないでください。
 
 * 2 つ以上のデータセットの結合。 ステッチは、1 つのデータセットにのみ適用されます。 データセットの結合は、Customer Journey Analytics接続を設定し、接続内の選択したデータセット全体で同じユーザー ID を選択した結果として発生します。
 
 * 2 つのデータセットの結合。 Customer Journey Analyticsでは、Analysis Workspaceでの検索や分類に結合がよく使用されます。 ステッチでは結合機能が使用されますが、プロセス自体には結合以上のものが含まれます。
+
+
+
 
