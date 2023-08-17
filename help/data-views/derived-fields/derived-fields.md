@@ -4,9 +4,9 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4378'
 ht-degree: 15%
 
 ---
@@ -173,84 +173,9 @@ ht-degree: 15%
 
 - 制約（該当する場合）
 
-
-<!-- Concatenate -->
-
-### 連結
-
-フィールドの値を、定義された区切り文字で単一の新しい派生フィールドに組み合わせます。
-
-+++ 詳細
-
-## 仕様 {#concatenate-io}
-
-| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
-|---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 区切り]:<ul><li>文字列</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
-
-{style="table-layout:auto"}
-
-
-## ユースケース {#concatenate-uc}
-
-現在、オリジンおよび目的地の空港コードを別々のフィールドとして収集しています。 2 つのフィールドを結合して、ハイフン (-) で区切られた 1 つのディメンションにします。 したがって、接触チャネルと宛先の組み合わせを分析して、予約済みの上位ルートを特定できます。
-
-前提条件：
-
-- 同じテーブル内の別々のフィールドで、接触チャネルと宛先の値が収集されます。
-- ユーザーは、値の間に区切り文字「 — 」を使用することを決定します。
-
-次の予約が発生するとします。
-
-- お客様 ABC123 は、Salt Lake City(SLC) と Orlando(MCO) 間のフライトを予約しています
-- 顧客 ABC456 は、Salt Lake City(SLC) と Los Angeles(LAX) 間のフライトを予約しています
-- お客様 ABC789 は、Salt Lake City(SLC) と Seattle(SEA) 間のフライトを予約しています
-- お客様 ABC987 は、Salt Lake City(SLC) と San Jose(SJO) 間のフライトを予約しています
-- お客様 ABC654 は、Salt Lake City(SLC) と Orlando(MCO) 間のフライトを予約しています
-
-目的のレポートは次のようになります。
-
-| 起源/宛先 | 予約 |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### 次より前のデータ： {#concatenate-uc-databefore}
-
-| 接触チャネル | 宛先 |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### 派生フィールド {#concatenate-derivedfield}
-
-新しい [!UICONTROL Origin - Destination] 派生フィールド。 次を使用します。 [!UICONTROL 連結] 関数を使用して、 [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
-
-![連結ルールのスクリーンショット](assets/concatenate.png)
-
-### 後のデータ {#concatenate-dataafter}
-
-| Origin - Destination<br/>（派生フィールド） |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>Lookup 関数の名前は、「 [分類](#classify). 詳しくは、 [分類](#classify) 関数を参照してください。
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 +++
 
+<!-- CLASSIFY -->
+
+### 分類
+
+新しい派生フィールドの対応する値に置き換わる値のセットを定義します。
+
+
+
+
++++ 詳細
+
+>[!NOTE]
+>
+>この関数は、もともとは Lookup という名前でしたが、異なる機能を備えた今後の Lookup 関数に対応するように、 Classify という名前に変更されました。
+
+## 仕様 {#classify-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+
+## 使用例 1 {#classify-uc1}
+
+次のキー列を含む CSV ファイルがあります： `hotelID` および `hotelID`: `city`, `rooms`, `hotel name`.
+収集しています [!DNL Hotel ID] ディメンション内で、を作成します。 [!DNL Hotel Name] から派生したディメンション `hotelID` を CSV ファイルに追加します。
+
+**CSV ファイルの構造とコンテンツ**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**現在のレポート**
+
+| [!DNL Hotel ID] | 製品表示 |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**目的のレポート**
+
+| [!DNL Hotel Name] | 製品表示 |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### 次より前のデータ： {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### 派生フィールド {#classify-uc1-derivedfield}
+
+次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用します。 [!UICONTROL 分類] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
+
+![ルール分類 1 のスクリーンショット](assets/lookup-1.png)
+
+### 後のデータ {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## 使用例 2 {#classify-uc2}
+
+複数のページのわかりやすいページ名の代わりに URL を収集した。 この値の組み合わせコレクションは、レポートを壊します。
+
+### 次より前のデータ： {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#classify-uc2-derivedfield}
+
+次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用します。 [!UICONTROL 分類] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
+
+![Classify ルール 2 のスクリーンショット](assets/lookup-2.png)
+
+### 後のデータ {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### 連結
+
+フィールドの値を、定義された区切り文字で単一の新しい派生フィールドに組み合わせます。
+
++++ 詳細
+
+## 仕様 {#concatenate-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 区切り]:<ul><li>文字列</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+
+## ユースケース {#concatenate-uc}
+
+現在、オリジンおよび目的地の空港コードを別々のフィールドとして収集しています。 2 つのフィールドを結合して、ハイフン (-) で区切られた 1 つのディメンションにします。 したがって、接触チャネルと宛先の組み合わせを分析して、予約済みの上位ルートを特定できます。
+
+前提条件：
+
+- 同じテーブル内の別々のフィールドで、接触チャネルと宛先の値が収集されます。
+- ユーザーは、値の間に区切り文字「 — 」を使用することを決定します。
+
+次の予約が発生するとします。
+
+- お客様 ABC123 は、Salt Lake City(SLC) と Orlando(MCO) 間のフライトを予約しています
+- 顧客 ABC456 は、Salt Lake City(SLC) と Los Angeles(LAX) 間のフライトを予約しています
+- お客様 ABC789 は、Salt Lake City(SLC) と Seattle(SEA) 間のフライトを予約しています
+- お客様 ABC987 は、Salt Lake City(SLC) と San Jose(SJO) 間のフライトを予約しています
+- お客様 ABC654 は、Salt Lake City(SLC) と Orlando(MCO) 間のフライトを予約しています
+
+目的のレポートは次のようになります。
+
+| 起源/宛先 | 予約 |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### 次より前のデータ： {#concatenate-uc-databefore}
+
+| 接触チャネル | 宛先 |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#concatenate-derivedfield}
+
+新しい [!UICONTROL Origin - Destination] 派生フィールド。 次を使用します。 [!UICONTROL 連結] 関数を使用して、 [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用するフィールド `-` [!UICONTROL 区切り].
+
+![連結ルールのスクリーンショット](assets/concatenate.png)
+
+### 後のデータ {#concatenate-dataafter}
+
+| Origin - Destination<br/>（派生フィールド） |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 +++
 
-
-<!-- LOOKUP -->
-
-### ルックアップ
-
-新しい派生フィールドの対応する値に置き換わる、参照値のセットを定義します。
-
-+++ 詳細
-
-
-## 仕様 {#lookup-io}
-
-| データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
-|---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 参照を適用するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
-
-{style="table-layout:auto"}
-
-
-## 使用例 1 {#lookup-uc1}
-
-次のキー列を含む CSV ファイルがあります： `hotelID` および `hotelID`: `city`, `rooms`, `hotel name`.
-収集しています [!DNL Hotel ID] ディメンション内で、を作成します。 [!DNL Hotel Name] から派生したディメンション `hotelID` を CSV ファイルに追加します。
-
-**CSV ファイルの構造とコンテンツ**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**現在のレポート**
-
-| [!DNL Hotel ID] | 製品表示 |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**目的のレポート**
-
-| [!DNL Hotel Name] | 製品表示 |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### 次より前のデータ： {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### 派生フィールド {#lookup-uc1-derivedfield}
-
-次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用します。 [!UICONTROL 参照] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
-
-![ルックアップルール 1 のスクリーンショット](assets/lookup-1.png)
-
-### 後のデータ {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## 使用例 2 {#lookup-uc2}
-
-複数のページのわかりやすいページ名の代わりに URL を収集した。 この値の組み合わせコレクションは、レポートを壊します。
-
-### 次より前のデータ： {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### 派生フィールド {#lookup-uc2-derivedfield}
-
-次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用します。 [!UICONTROL 参照] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
-
-![参照ルール 2 のスクリーンショット](assets/lookup-2.png)
-
-### 後のデータ {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### フィールドを結合
@@ -691,7 +698,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 ## ユースケース {#merge-fields-uc}
 
-チャネルをまたいでジャーニーを分析する目的で、ページ名フィールドと呼び出し理由フィールドから構成される新しいディメンションを作成したいとします。
+チャネルをまたいでジャーニーを分析する目的で、ページ名フィールドと呼び出し理由フィールドから構成されるディメンションを作成したい場合。
 
 ### 次より前のデータ： {#merge-fields-uc-databefore}
 
@@ -757,7 +764,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 ## ユースケース {#regex-replace-uc}
 
-URL の一部を取得し、それを一意のページ識別子として使用してトラフィックを分析したいとします。 次を使用します。 `[^/]+(?=/$|$)` を返します。 `$1` を出力パターンとして使用します。
+URL の一部を取得し、それを一意のページ識別子として使用してトラフィックを分析したいとします。 次を使用する： `[^/]+(?=/$|$)` を返します。 `$1` を出力パターンとして使用します。
 
 ### 次より前のデータ： {#regex-replace-uc-databefore}
 
