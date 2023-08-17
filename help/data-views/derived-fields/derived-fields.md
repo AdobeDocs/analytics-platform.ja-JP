@@ -4,9 +4,9 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
+source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4433'
 ht-degree: 15%
 
 ---
@@ -426,7 +426,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul><li>元の値を表示<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -443,6 +443,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 
 {style="table-layout:auto"}
 
@@ -453,6 +454,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -474,6 +476,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 | [!DNL SLC123] |
 | [!DNL LAX342] |
 | [!DNL SFO456] |
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -482,7 +485,9 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。 `Hotel Name` 派生フィールド。 次を使用します。 [!UICONTROL 分類] 関数を使用して、 [!UICONTROL ホテル ID] フィールドに値を入力し、新しい値に置き換えます。
 
-![ルール分類 1 のスクリーンショット](assets/lookup-1.png)
+分類する値の一部として定義していない元の値を含める場合（例：Hotel ID AMS789）、必ず「 」を選択します。 **[!UICONTROL 元の値を表示]**. これにより、AMS789 が派生フィールドの出力の一部となりますが、その値は分類されません。
+
+![ルール分類 1 のスクリーンショット](assets/classify-1.png)
 
 ### 後のデータ {#classify-uc1-dataafter}
 
@@ -517,7 +522,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 次の項目を定義します。 `Page Name (updated)` 派生フィールド。 次を使用します。 [!UICONTROL 分類] 関数を使用して、既存の [!UICONTROL ページ名] フィールドに入力し、更新された正しい値に置き換えます。
 
-![Classify ルール 2 のスクリーンショット](assets/lookup-2.png)
+![Classify ルール 2 のスクリーンショット](assets/classify-2.png)
 
 ### 後のデータ {#classify-uc2-dataafter}
 
