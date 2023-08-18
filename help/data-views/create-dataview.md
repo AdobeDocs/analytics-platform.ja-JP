@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->コンポーネントがデータビューに正しく読み込まれず、代わりにエラーメッセージが表示される場合は、 [権限の欠如](../troubleshooting/lack-of-permissions.md) （解像度の場合）
+>コンポーネントがデータビューに適切に読み込まれず、代わりにエラーメッセージが表示される場合は、[権限の不足](../troubleshooting/lack-of-permissions.md)を参照して解決してください。
 
 
 
