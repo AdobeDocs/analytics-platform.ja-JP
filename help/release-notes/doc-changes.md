@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 98%
+source-wordcount: '2550'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年8月** | |
+| Report Builder の機能強化 | 次の更新済みコンテンツ： [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) スケジュールされたタスクのダウンロードに関する情報を提供する。 次の更新済みコンテンツ：  [データブロックの作成](/help/report-builder/create-a-data-block.md) 開始日をディメンションとして使用するための情報を提供する。 |
 | スケジュール済みプロジェクトの管理に関する内容を移動しました。 | Analytics コンポーネントガイドに、 [スケジュール済みプロジェクト](/help/components/scheduled-projects-manager.md). このコンテンツは、以前は [プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md) 記事を参照してください。 |
 | Adobe Customer Journey Analytics の機能のサポート | *新しい方法でサポート*&#x200B;の表に、Adobe Analytics と比較した Customer Journey Analytics のセッション機能に関する詳細情報を追加しました。[詳細情報](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics からの進化 | 派生フィールドのマーケティングチャネル関数テンプレートへの参照を含めて、*マーケティングチャネルの（再）設定*&#x200B;の節を更新しました。[詳細情報](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
