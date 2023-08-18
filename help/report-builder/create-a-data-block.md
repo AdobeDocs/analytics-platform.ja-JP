@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: fe52730e3904ba5ccc5d1e7e5ff89eed8a575fbc
+source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 83%
+source-wordcount: '607'
+ht-degree: 74%
 
 ---
 
@@ -63,6 +63,12 @@ ht-degree: 83%
    - 日付コンポーネントが「列」セクションに追加されます。
    - フィルターコンポーネントが「フィルター」セクションに追加されます。
 
+   **開始日をDimension**
+
+   開始日をディメンションとして設定し、データブロックの開始日を明確に示します。 これは、周期的な日付範囲を持つ定期的な予定レポートがある場合、または非従来の日付範囲を持ち、開始日を明確にする必要がある場合に役立ちます。
+
+   ![ディメンションのリストに開始日を示すスクリーンショット。](./assets/start-date-dimension.png){width="15%"}
+
 1. 「テーブル」ペインの項目を配置して、データブロックのレイアウトをカスタマイズします。
 
    「テーブル」ペインでコンポーネントをドラッグ＆ドロップしてコンポーネントを並べ替えるか、コンポーネント名を右クリックしてオプションメニューから選択します。
@@ -73,7 +79,7 @@ ht-degree: 83%
 
    **行ヘッダーと列ヘッダーの表示/非表示を切り替える**
 
-1. 次をクリック： **テーブル** 設定アイコン
+1. 次をクリック： **テーブル** 設定アイコン。
 
    ![プレースホルダー画像](./assets/table-settings.png){width="35%"}
 
