@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 74%
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder の機能強化** | <ul><li>スケジュールされたタスクの履歴を表示できる「履歴」タブから、スケジュールされたタスクをダウンロードします。 タスクからワークブックをダウンロードします。 </li><li>開始日をディメンションとして：ユーザーは、データブロック出力のディメンションとして、データブロックの開始日を表示できます。 </li></ul> | 該当なし | 2023年8月17日（PT） |
+| **Report Builder の機能強化** | <ul><li>「ワークブック」タブからスケジュール済みタスクをダウンロードし、そのタスクにタイトルを付けて保存し、共有することができます。 [詳細情報](/help/report-builder/schedule-reportbuilder.md)</li><li>開始日をディメンションとして使用すると、データブロックの開始日をディメンションとしてデータブロック出力に表示できます。 [詳細情報](/help/report-builder/create-a-data-block.md) </li></ul> | 該当なし | 2023年8月17日（PT） |
 | **通貨換算** | 顧客ジャーニーは、複数の通貨をサポートする機能を追加しています。 データビューの設定で、通貨を別の通貨に変換できます。 [詳細情報](/help/data-views/component-settings/format.md) | 該当なし | 2023年8月31日（PT） |
 | **Analytics Source Connector での A4T 分類のサポート** | Adobe Targetのアクティビティとエクスペリエンスイベントの分類データを簡単に結合できるように、相関 ID を追加しています。 | 該当なし | 2023年8月31日（PT） |
 | **レポートアクティビティマネージャー** | 管理者は、各接続のレポート消費状況を詳細に把握できるので、管理者は、ピーク時のレポート作成時に容量の問題を簡単に診断し、修正できます。 | 該当なし | 2023 年 9 月 7 日 |

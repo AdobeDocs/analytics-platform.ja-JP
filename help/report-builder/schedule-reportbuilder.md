@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: d40638272263a389421adfe224649e2b905c652b
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 90%
@@ -93,7 +93,7 @@ Report Builderハブの「スケジュール」タスクボタンを使用して
 
 1. ワークブックを選択します。ワークブックの編集、スケジュールタスクの編集、スケジュールタスクの一時停止と再開、スケジュール済みタスクレポートのダウンロード、スケジュール済みタスクの削除を行うためのツールが表示されます。
 
-   ![ワークブックのスケジュールアイコンを示すスクリーンショット。](./assets/schedule-icons.png){width="15%"}
+   ![ワークブックのスケジュールアイコンを示すスクリーンショット。](./assets/schedule-icons.png){width="20%"}
 
 * （オプション）鉛筆アイコンをクリックして、ワークブックのスケジュールタスクを編集します。
 
@@ -105,7 +105,7 @@ Report Builderハブの「スケジュール」タスクボタンを使用して
 
 * （オプション）ごみ箱をクリックして、スケジュールタスクを削除します。
 
-  ![スケジュールタスクのリストを示すスクリーンショット。](./assets/selected-workbook.png){width="20%"}
+  ![スケジュールタスクのリストを示すスクリーンショット。](./assets/selected-workbook.png){width="40%"}
 
 ## スケジュールされたタスクのステータスの確認
 

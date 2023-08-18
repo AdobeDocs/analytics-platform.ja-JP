@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 74%
@@ -67,7 +67,7 @@ ht-degree: 74%
 
    開始日をディメンションとして設定し、データブロックの開始日を明確に示します。 これは、周期的な日付範囲を持つ定期的な予定レポートがある場合、または非従来の日付範囲を持ち、開始日を明確にする必要がある場合に役立ちます。
 
-   ![ディメンションのリストに開始日を示すスクリーンショット。](./assets/start-date-dimension.png){width="15%"}
+   ![ディメンションのリストに開始日を示すスクリーンショット。](./assets/start-date-dimension.png){width="30%"}
 
 1. 「テーブル」ペインの項目を配置して、データブロックのレイアウトをカスタマイズします。
 
