@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
+source-git-commit: 8f299dad39678047d362291cfe8a2a3c116071dd
 workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2023年8月）
 
-**最終更新日**：2023年8月17日（PT）
+**最終更新日**：2023年8月24日（PT）
 
 このリリースノートは、2023年8月9日～ 9月13日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -20,11 +20,11 @@ ht-degree: 92%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder の機能強化** | <ul><li>「ワークブック」タブからスケジュール済みタスクをダウンロードし、そのタスクにタイトルを付けて保存し、共有することができます。 [詳細情報](/help/report-builder/schedule-reportbuilder.md)</li><li>開始日をディメンションとして使用すると、データブロックの開始日をディメンションとしてデータブロック出力に表示できます。 [詳細情報](/help/report-builder/create-a-data-block.md) </li></ul> | 該当なし | 2023年8月17日（PT） |
-| **通貨換算** | カスタマージャーニーには、複数の通貨をサポートする機能が追加されています。データビューの設定で、通貨を別の通貨に変換できます。[詳細情報](/help/data-views/component-settings/format.md) | 該当なし | 2023年8月31日（PT） |
-| **Analytics ソースコネクタでの A4T 分類のサポート** | Adobe Target のアクティビティとエクスペリエンスイベントの分類データを簡単に結合できるように、相関 ID を追加しています。 | 該当なし | 2023年8月31日（PT） |
-| **レポートアクティビティマネージャー** | 管理者は各接続のレポートの使用状況を詳細に把握できるので、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。 | 該当なし | 2023年9月6日（PT） |
-| **Power BI および Tableau から Customer Journey Analytics データビューへのアクセス** | Adobe Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。Power BI、Tableau またはその他のビジネスインテリジェンスおよびビジュアライゼーションツールに精通したデータエンジニアやアナリストは、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトに使用しているものと同じデータビューに基づいて、レポートやダッシュボードを作成できるようになりました。[詳細情報](/help/data-views/sql-connector.md) | 該当なし | 2023年9月13日（PT） |
+| **Report Builder の機能強化** | <ul><li>「ワークブック」タブからスケジュールされたタスクをダウンロードし、タイトルを付けて保存し、共有できます。[詳細情報](/help/report-builder/schedule-reportbuilder.md)</li><li>ディメンションとしての開始日を使用すると、データブロック出力のディメンションとして、データブロックの開始日を表示できます。[詳細情報](/help/report-builder/create-a-data-block.md) </li></ul> | 該当なし | 2023年8月17日（PT） |
+| **通貨換算** | カスタマージャーニーには、複数の通貨をサポートする機能が追加されています。データビューの設定で、通貨を別の通貨に変換できます。[詳細情報](/help/data-views/component-settings/format.md) | 該当なし | 2023年8月30日（PT） |
+| **Analytics ソースコネクタでの A4T 分類のサポート** | Adobe Target のアクティビティとエクスペリエンスイベントの分類データを簡単に結合できるように、相関 ID を追加しています。 | 該当なし | 2023年9月11日（PT） |
+| **レポートアクティビティマネージャー** | 管理者は各接続のレポートの使用状況を詳細に把握できるので、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。 | 該当なし | 2023年9月12日（PT） |
+| **Power BI および Tableau から Customer Journey Analytics データビューへのアクセス** | Adobe Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。Power BI、Tableau またはその他のビジネスインテリジェンスおよびビジュアライゼーションツールに精通したデータエンジニアやアナリストは、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトに使用しているものと同じデータビューに基づいて、レポートやダッシュボードを作成できるようになりました。[詳細情報](/help/data-views/sql-connector.md) | 該当なし | 2023年9月12日（PT） |
 
 {style="table-layout:auto"}
 
