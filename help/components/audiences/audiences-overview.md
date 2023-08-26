@@ -3,16 +3,16 @@ title: Customer Journey Analyticsオーディエンスの公開の概要
 description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 3a3122934e0fb3d89ac94cc8be8799d43dd1c987
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 54%
 
 ---
 
 # Customer Journey Analyticsオーディエンスの公開の概要
 
-Customer Journey Analyticsで検出されたオーディエンスを作成し、に公開できるようになりました。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCDP) をAdobe Experience Platformで利用し、お客様のターゲティングとパーソナライゼーションをおこなう。
+Customer Journey Analyticsで検出されたオーディエンスを作成し、に公開できるようになりました。 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformの（顧客のターゲティングとパーソナライゼーションのため）
 
 公開オーディエンスを使用すると、Customer Journey Analytics内で見つかったインサイトをアクティブ化し、対応をおこなうことができます。 アクションの例として、次のようなものがあります。
 
@@ -22,7 +22,7 @@ Customer Journey Analyticsで検出されたオーディエンスを作成し、
 * オーディエンスの公開後に、最小限の待ち時間でこれらをすべて行います。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#latency)
 * 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開.
 
-Customer Journey Analyticsで作成するオーディエンスは、プロファイルに対して有効なデータセットに基づいている必要はありません。 プロファイルに関連付けられたデータセットやExperience Platformを有効にすることなく、履歴データを取り込むことができます。 次に、これらのデータセットを使用して、Customer Journey Analytics内の関連するオーディエンスを検出し、アクティベーションのために、Experience Platform内の RTCDP にこれらのオーディエンスを公開します。
+Customer Journey Analyticsで作成するオーディエンスは、プロファイルに対して有効なデータセットに基づいている必要はありません。 プロファイルに関連付けられたデータセットやExperience Platformを有効にすることなく、履歴データを取り込むことができます。 次に、これらのデータセットを使用して、Customer Journey Analytics内の関連するオーディエンスを検出し、それらのオーディエンスをExperience Platformのリアルタイム顧客プロファイルに公開して、アクティベーションを目的とします。
 
 ## 主な用語
 
