@@ -3,16 +3,16 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 35c57e883794c74553ab14d6e99e55824d41d4be
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1252'
+ht-degree: 23%
 
 ---
 
 # フィルタービルダー
 
-この [!UICONTROL フィルタービルダー] を使用すると、訪問やイベントをまたいでユーザーの属性やアクションを識別する、単純なフィルターや複雑なフィルターを作成できます。 指標ディメンション、イベントまたはその他のフィルターをドラッグ&amp;ドロップするキャンバスが用意されており、階層ロジック、ルールおよび演算子に基づいて個人をフィルタリングできます。
+The [!UICONTROL フィルタービルダー] を使用すると、訪問やイベントをまたいでユーザーの属性やアクションを識別する、単純なフィルターや複雑なフィルターを作成できます。 指標ディメンション、イベントまたはその他のフィルターをドラッグ&amp;ドロップするキャンバスが用意されており、階層ロジック、ルールおよび演算子に基づいて個人をフィルタリングできます。
 
 作成先のプロジェクトにのみ適用されるクイックフィルターの作成方法について詳しくは、 [クイックフィルター](/help/components/filters/quick-filters.md).
 
@@ -20,9 +20,9 @@ ht-degree: 22%
 
 フィルタービルダーには、次のいずれかの方法でアクセスできます。
 
-* **上部ナビゲーション**:クリック **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL コンポーネント]** > **[!UICONTROL フィルター]**.
-* **[!UICONTROL Analysis Workspace]**:Analysis Workspaceでプロジェクトを開き、 **[!UICONTROL +コンポーネント]** > **[!UICONTROL フィルターを作成]**.
-* **[!UICONTROL Report Builder]**: [フィルターのReport Builder](/help/report-builder/work-with-filters.md).
+* **上部ナビゲーション**：クリック **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL コンポーネント]** > **[!UICONTROL フィルター]**.
+* **[!UICONTROL Analysis Workspace]**:Analysis Workspaceでプロジェクトを開き、「 」を選択します。 **[!UICONTROL +コンポーネント]** > **[!UICONTROL フィルターを作成]**.
+* **[!UICONTROL Report Builder]**: [Report Builderでのフィルターの操作](/help/report-builder/work-with-filters.md).
 
 ## ビルダー条件の概要 {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -30,51 +30,29 @@ ht-degree: 22%
 
 ![](assets/segment_builder_ui_2.png)
 
-1. **[!UICONTROL タイトル]**:フィルターに名前を付けます。
-1. **[!UICONTROL 説明]**:フィルターの説明を入力します。
-1. **[!UICONTROL タグ]**: [フィルターのタグ付け](/help/components/filters/manage-filters.md) 既存のタグのリストから選択するか、新しいタグを作成して作成します。
-1. **[!UICONTROL 定義]**:ここで、 [フィルターの作成と設定](/help/components/filters/filters-overview.md)、ルールを追加し、コンテナをネストして順に並べます。
-1. **[!UICONTROL 表示]**：（上部のコンテナセレクター）トップレベルを選択できます [コンテナ](/help/components/filters/filters-overview.md) ( [!UICONTROL 人物], [!UICONTROL セッション], [!UICONTROL イベント]) をクリックします。 デフォルトの最上位コンテナはイベントコンテナです。
-1. **[!UICONTROL オプション]**：（ギア）アイコン
-
-   * **[!UICONTROL +コンテナを追加]**:新しいコンテナ（トップレベルのコンテナの下）をフィルター定義に追加できます。
-   * **[!UICONTROL 除外]**:1 つ以上のディメンション、フィルターまたは指標を除外することで、フィルターを定義できます。
-
-1. **[!UICONTROL ディメンション]**：コンポーネントがディメンションリスト（オレンジ色のサイドバー）からドラッグ&amp;ドロップされます。
-1. **[!UICONTROL 演算子]**：選択した演算子を使用して値を比較および制限できます。
-1. **[!UICONTROL 値]**:ディメンション、フィルターまたは指標のために入力または選択した値。
-1. **[!UICONTROL アトリビューションモデル]**:ディメンションに対してのみ使用でき、これらのモデルは、フィルタリングするディメンションの値を決定します。 Dimensionモデルは、順次フィルターで特に役立ちます。
-
-   * **[!UICONTROL 繰り返し]**（デフォルト）：ディメンションのインスタンスと持続値を含みます。
-   * **[!UICONTROL インスタンス]**：ディメンションのインスタンスを含みます。
-   * **[!UICONTROL 繰り返さないインスタンス]**：ディメンション固有の（繰り返さない）インスタンスを含みます。これは、繰り返しインスタンスが除外される場合にフローに適用されるモデルです。
-
-   ![](assets/attribution-models.jpg)
-
-   **例：eVar1 = A のイベントフィルター**
-
-   | 例 | A | A | A（持続） | B | A | C |
-   |---|---|---|---|---|---|---|
-   | 繰り返し | X | X | X | - | X | - |
-   | インスタンス | X | X | - | - | X | - |
-   | 繰り返しなしインスタンス | X | - | - | - | X | - |
-1. **[!UICONTROL And／Or／Then]**：コンテナまたはルールの間に [!UICONTROL AND／OR／THEN] 演算子を割り当てます。THEN 演算子を使用すると、 [順次フィルターの定義](/help/components/filters/filters-overview.md).
-1. **[!UICONTROL 指標]**：（緑色のサイドバー）指標リストからドラッグ＆ドロップした指標。
-1. **[!UICONTROL 比較]**&#x200B;演算子：選択した演算子を使用して値を比較および制限できます。
-1. **[!UICONTROL 値]**:ディメンション、フィルターまたは指標のために入力または選択した値。
-1. **[!UICONTROL X]**:（削除）フィルター定義のこの部分を削除できます。
-1. **[!UICONTROL Experience Cloudの公開]**:Experience CloudにAdobe Analyticsフィルターを公開すると、 [!DNL Audience Manager] と他のアクティベーションチャネル内。 [詳細情報...](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=ja)
-1. **[!UICONTROL オーディエンスライブラリ]**:Adobeのオーディエンスサービスは、ユーザーデータからオーディエンスフィルターへの変換を管理します。 したがって、オーディエンスを作成および管理することは、フィルターを作成および使用することに似ています。また、オーディエンスフィルターをExperience Cloudと共有することもできます。 [詳細情報...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=ja)
-1. **[!UICONTROL 検索]**:ディメンション、フィルターまたは指標のリストを検索します。
-1. **[!UICONTROL ディメンション]**：（リスト）ヘッダーをクリックして展開します。
-1. **[!UICONTROL 指標]**：ヘッダーをクリックして展開します。
-1. **[!UICONTROL フィルター]**:ヘッダーをクリックして展開します。
-1. **[!UICONTROL データビューセレクター]**:このフィルターを保存するレポートスイートを選択できます。 すべてのデータビューでフィルターを利用できます。
-1. **[!UICONTROL フィルタープレビュー]**:主要指標をプレビューして、有効なフィルターがあるかどうかと、フィルターの範囲を確認します。 このフィルターを適用した場合に予想されるデータセットの分類を表します。 3 つの同心円と、一致の数と割合を示すリストを表示します [!UICONTROL イベント], [!UICONTROL 人物]、および [!UICONTROL セッション] データセットに対してフィルターを実行する場合。 このグラフは、フィルター定義を作成または変更するとすぐに更新されます。
-1. **[!UICONTROL 製品の互換性]**:どのAdobe Analytics製品 (Analysis Workspace、 [!UICONTROL Reports &amp; Analytics]、Data Warehouse) は、作成したフィルターと互換性があります。 ほとんどのフィルターは、すべての製品と互換性があります。 ただし、すべての演算子とディメンションが、特にすべての Analytics 製品と互換性があるわけではありません [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). このグラフは、フィルター定義を変更するとすぐに更新されます。
-1. **[!UICONTROL 保存]** または **[!UICONTROL キャンセル]**:フィルタを保存またはキャンセルします。 クリック後 **[!UICONTROL 保存]**&#x200B;をクリックすると、フィルターを管理できるフィルターマネージャが表示されます。
-
-日付範囲が埋め込まれたフィルターの動作は、引き続きAnalysis Workspaceと [!UICONTROL Reports &amp; Analytics]:Workspace では、日付範囲が埋め込まれたフィルターが、パネルの日付範囲より優先されます。 これに対して、 [!UICONTROL Reports &amp; Analytics] は、レポートの日付範囲とフィルターの埋め込みの日付範囲が重なる期間を示します。
+| UI 要素 | 説明 |
+| --- | --- |
+| **[!UICONTROL タイトル]** | フィルターに名前を付けます。 |
+| **[!UICONTROL 説明]** | フィルターの詳細な説明を入力します。 |
+| **[!UICONTROL タグ]** | [フィルターのタグ付け](/help/components/filters/manage-filters.md) 既存のタグのリストから選択するか、新しいタグを作成して作成します。 |
+| **[!UICONTROL 定義]** | ここがお客様の場所です [フィルターの作成と設定](/help/components/filters/filters-overview.md)、ルールを追加し、コンテナをネストして順に並べます。 |
+| **[!UICONTROL 含める]** | (トップのコンテナの選択.) トップレベルを選択できます [コンテナ](/help/components/filters/filters-overview.md) ( [!UICONTROL 人物], [!UICONTROL セッション], [!UICONTROL イベント]) をクリックします。 デフォルトの最上位コンテナはイベントコンテナです。 |
+| **[!UICONTROL オプション]** | （歯車）アイコン | <ul><li>**[!UICONTROL +コンテナを追加]**：新しいコンテナ（トップレベルのコンテナの下）をフィルター定義に追加できます。</li><li>**[!UICONTROL 除外]**:1 つ以上のディメンション、フィルターまたは指標を除外することで、フィルターを定義できます。</li></ul> |
+| **[!UICONTROL ディメンション]** | コンポーネントが「Dimension」リスト（オレンジ色のサイドバー）からドラッグ&amp;ドロップされます。 |
+| **[!UICONTROL 演算子]** | 選択した演算子を使用して値を比較および制限できます。（等しい、等しくない、次を含む、次のすべてを含むなど） |
+| **[!UICONTROL 値]** | ディメンション、フィルターまたは指標のために入力または選択した値。 |
+| **[!UICONTROL アトリビューションモデル]** | ディメンションに対してのみ使用でき、これらのモデルは、フィルタリングするディメンションの値を決定します。 Dimensionモデルは、順次フィルターで特に役立ちます。<ul><li>**[!UICONTROL 繰り返し]**（デフォルト）：ディメンションのインスタンスと持続値を含みます。</li><li>**[!UICONTROL インスタンス]**：ディメンションのインスタンスを含みます。</li><li>**[!UICONTROL 繰り返さないインスタンス]**：ディメンション固有の（繰り返さない）インスタンスを含みます。これは、繰り返しインスタンスが除外される場合にフローに適用されるモデルです。</li></ul>例については、以下の「アトリビューションモデル」の節を参照してください。 |
+| **[!UICONTROL And/Or/Then]** | コンテナ間やルール間に [!UICONTROL AND／OR／THEN] 演算子を割り当てます。THEN 演算子は、 [順次フィルターの定義](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL 指標]** | （緑色のサイドバー）指標リストからドラッグ&amp;ドロップした指標。 |
+| **[!UICONTROL X]** | （削除）フィルター定義のこの部分を削除できます。 |
+| **[!UICONTROL フィルターからオーディエンスを作成]** | フィルターからオーディエンスを作成すると、そのフィルターをAdobe Experience Platformと共有して、アクティベーションできます。 [詳細情報...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL 検索コンポーネント]** | ディメンション、フィルターまたは指標のリストを検索します。 |
+| **[!UICONTROL ディメンション]** | （リスト）フィルターに含めることができるディメンションのリスト。 ヘッダーをクリックして展開します。 |
+| **[!UICONTROL 指標]** | フィルターに含めることができる指標のリスト。 ヘッダーをクリックして展開します。 |
+| **[!UICONTROL フィルター]** | フィルターに含めることができる既存のフィルターのリスト。 ヘッダーをクリックして展開します。 |
+| **[!UICONTROL データビューセレクター]** | このフィルターを保存するレポートスイートを選択できます。 すべてのデータビューでフィルターを利用できます。 |
+| **[!UICONTROL フィルタープレビュー]** | 主要指標をプレビューして、有効なフィルターがあるかどうかと、フィルターの範囲を確認します。 このフィルターを適用した場合に予想されるデータセットの分類を表します。 3 つの同心円と、一致の数と割合を示すリストを表示します [!UICONTROL People], [!UICONTROL セッション]、および [!UICONTROL レポート実行] データセットに対してフィルターを実行する場合。<p>このグラフは、フィルター定義を作成または変更するとすぐに更新されます。 |
+| **[!UICONTROL 保存]**&#x200B;または&#x200B;**[!UICONTROL キャンセル]** | フィルタを保存またはキャンセルします。 クリック後 **[!UICONTROL 保存]**&#x200B;をクリックすると、フィルターを管理できるフィルターマネージャが表示されます。 |
 
 ## フィルターの作成 {#build-filters}
 
@@ -86,12 +64,12 @@ ht-degree: 22%
 1. 選択した項目に対して値を入力または選択します。
 1. 必要に応じて他のコンテナを追加し、**[!UICONTROL AND]**、**[!UICONTROL OR]**、**[!UICONTROL THEN]** のルールを適用します。
 1. コンテナを配置してルールを設定した後、右上の検証グラフでフィルターの結果を確認します。 バリデーターは、作成したフィルターに一致するページビュー数、訪問回数および個別ユーザーの割合と絶対数を示します。
-1. の下 **[!UICONTROL タグ]**, [タグ](/help/components/filters/manage-filters.md) 既存のタグを選択するか、新しいタグを作成することによって、コンテナを作成する。
+1. の下 **[!UICONTROL タグ]**, [タグ](/help/components/filters/manage-filters.md) 既存のタグを選択するか、新しいタグを作成することによって、コンテナを作成できます。
 1. クリック **[!UICONTROL 保存]** フィルターを保存します。
 
-   これで、 [フィルターマネージャ](/help/components/filters/manage-filters.md)：複数の方法でフィルターにタグ付け、共有、管理できます。
+   次の場所に移動します。 [フィルターマネージャー](/help/components/filters/manage-filters.md)：複数の方法でフィルターにタグ付け、共有、管理できます。
 
-## 追加コンテナ {#section_1C38F15703B44474B0718CEF06639EFD}
+## 追加コンテナ {#containers}
 
 [コンテナのフレームワークを作成](/help/components/filters/filters-overview.md)し、論理ルールと演算子を配置できます。
 
@@ -109,7 +87,7 @@ ht-degree: 22%
 
    1 つ以上のルールを選択し、**[!UICONTROL オプション]**／**[!UICONTROL 選択項目からコンテナを追加]**&#x200B;をクリックします。選択した項目が別個のコンテナに変換されます。
 
-## 日付範囲の使用 {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
+## 日付範囲の使用 {#date-ranges}
 
 実施中のキャンペーンやイベントに関する質問に回答するために、日付範囲の周期を含むフィルターを作成できます。
 
@@ -121,7 +99,7 @@ ht-degree: 22%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
-## フィルターを積み重ねる {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
+## フィルターを積み重ねる {#stack}
 
 フィルターを積み重ねると、各フィルターの条件を「and」演算子で結合し、結合された条件を適用することで機能します。 これは、Workspace プロジェクトで直接実行するか、フィルタービルダーで実行できます。
 
@@ -152,3 +130,14 @@ ht-degree: 22%
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
+## アトリビューションモデル {#attribution}
+
+![](assets/attribution-models.jpg)
+
+**例：eVar1 = A のイベントフィルター**
+
+| 例 | A | A | A（持続） | B | A | C |
+|---|---|---|---|---|---|---|
+| 繰り返し | X | X | X | - | X | - |
+| インスタンス | X | X | - | - | X | - |
+| 繰り返しなしインスタンス | X | - | - | - | X | - |
