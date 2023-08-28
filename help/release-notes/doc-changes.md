@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年8月** | |
-| メディア再生滞在時間パネル | 次の更新済みコンテンツ：  [メディア再生時間滞在パネル](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) 可読性を向上させる。 |
-| Report Builder の機能強化 | 次の更新済みコンテンツ： [ワークブックのスケジュール](/help/report-builder/schedule-reportbuilder.md) スケジュールされたタスクのダウンロードに関する情報を提供する。 次の更新済みコンテンツ：  [データブロックの作成](/help/report-builder/create-a-data-block.md) 開始日をディメンションとして使用するための情報を提供する。 |
-| スケジュール済みプロジェクトの管理に関する内容を移動しました。 | Analytics コンポーネントガイドに、 [スケジュール済みプロジェクト](/help/components/scheduled-projects-manager.md). このコンテンツは、以前は [プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md) 記事を参照してください。 |
+| メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)のコンテンツを更新しました。 |
+| Report Builder の機能強化 | スケジュールされたタスクをダウンロードするための情報を提供するために、[ワークブックのスケジュール設定](/help/report-builder/schedule-reportbuilder.md)のコンテンツを更新しました。開始日をディメンションとして使用するための情報を提供するために、[データブロックの作成](/help/report-builder/create-a-data-block.md)のコンテンツを更新しました。 |
+| スケジュールされたプロジェクトの管理に関するコンテンツの移動 | Analytics コンポーネントガイドに[スケジュールされたプロジェクト](/help/components/scheduled-projects-manager.md)という新しい記事を作成しました。このコンテンツは、以前は Analytics ツールガイドの[プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md)という記事に記載されていました。 |
 | Adobe Customer Journey Analytics の機能のサポート | *新しい方法でサポート*&#x200B;の表に、Adobe Analytics と比較した Customer Journey Analytics のセッション機能に関する詳細情報を追加しました。[詳細情報](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics からの進化 | 派生フィールドのマーケティングチャネル関数テンプレートへの参照を含めて、*マーケティングチャネルの（再）設定*&#x200B;の節を更新しました。[詳細情報](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | モバイルアプリケーションおよびその他のプラットフォームのデータ取り込みクイックスタートガイド | Customer Journey Analytics でモバイルアプリケーションやその他のプラットフォーム（デスクトップアプリケーション、コンソール上のゲーム、セットトップボックスや IoT デバイス上のアプリケーションなど）からデータを取り込んで使用する方法を説明するデータ取り込みクイックスタートガイドを追加しました。[詳細情報](../data-ingestion/data-ingestion.md) |
