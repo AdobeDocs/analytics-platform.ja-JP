@@ -3,9 +3,9 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 35c57e883794c74553ab14d6e99e55824d41d4be
+source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1251'
 ht-degree: 23%
 
 ---
@@ -45,7 +45,7 @@ The [!UICONTROL フィルタービルダー] を使用すると、訪問やイ�
 | **[!UICONTROL And/Or/Then]** | コンテナ間やルール間に [!UICONTROL AND／OR／THEN] 演算子を割り当てます。THEN 演算子は、 [順次フィルターの定義](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL 指標]** | （緑色のサイドバー）指標リストからドラッグ&amp;ドロップした指標。 |
 | **[!UICONTROL X]** | （削除）フィルター定義のこの部分を削除できます。 |
-| **[!UICONTROL フィルターからオーディエンスを作成]** | フィルターからオーディエンスを作成すると、そのフィルターをAdobe Experience Platformと共有して、アクティベーションできます。 [詳細情報...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL フィルターからオーディエンスを作成]** | フィルターからオーディエンスを作成すると、フィルターをAdobe Experience Platformと共有してアクティブ化できます。 [詳細情報...](/help/components/audiences/audiences-overview.md) |
 | **[!UICONTROL 検索コンポーネント]** | ディメンション、フィルターまたは指標のリストを検索します。 |
 | **[!UICONTROL ディメンション]** | （リスト）フィルターに含めることができるディメンションのリスト。 ヘッダーをクリックして展開します。 |
 | **[!UICONTROL 指標]** | フィルターに含めることができる指標のリスト。 ヘッダーをクリックして展開します。 |
