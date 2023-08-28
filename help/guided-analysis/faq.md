@@ -3,9 +3,10 @@ title: ガイド付き分析に関する FAQ
 description: ガイド付き分析に関するよくある質問 (FAQ) です。
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+keywords: 製品分析
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
@@ -56,7 +57,7 @@ ht-degree: 2%
 
 While [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分析では、同じ基になるデータを使用します。この方法では、各ツールが異なるクエリを作成できます。
 
-* **Analysis Workspaceは、次元を中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。 行と列の両方にフィルターを適用して、目的のデータを取得できます。
+* **Analysis Workspaceは、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。 行と列の両方にフィルターを適用して、目的のデータを取得できます。
 
 * **ガイド付き分析は、イベント中心のエクスペリエンスです。** 各分析は、まずイベントを選択することで開始し、ディメンションとフィルターを追加して、そのイベントデータを絞り込むことができます。
 
@@ -70,6 +71,6 @@ While [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分�
 
 * イベント中心のガイド付き分析の一般的なアプローチは、「何人のユーザーがホームページを閲覧したか」です。
 
-  ![イベント中央](assets/event-centered.png)
+  ![イベント中央揃え](assets/event-centered.png)
 
 +++
