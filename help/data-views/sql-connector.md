@@ -6,7 +6,7 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 5%
@@ -116,7 +116,7 @@ Experience PlatformUI:
 
       2. 貼り付け **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] in **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
 
-         追加 `?FLATTEN` から **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーターは次のように読み込まれます。 `prod:all?FLATTEN` 例： 詳しくは、 [ネストされたデータ構造を統合して、サードパーティの BI ツールで使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) を参照してください。
+         追加 `?FLATTEN` から **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーターは次のように読み込まれます。 `prod:cja?FLATTEN` 例： 詳しくは、 [ネストされたデータ構造を統合して、サードパーティの BI ツールで使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) を参照してください。
 
       3. 次を求められた場合： **[!UICONTROL **&#x200B;データ接続&#x200B;**]** モード、選択 **[!UICONTROL ** DirectQuery **]** を使用して、データ構造が適切にフラット化されていることを確認します。
 
@@ -158,7 +158,7 @@ Experience PlatformUI:
 
       3. 貼り付け **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーター (Experience Platformクエリから ) [!UICONTROL 資格情報] into **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
 
-         追加 `%3FFLATTEN` から **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーターは次のように読み込まれます。 `prod:all%3FFLATTEN` 例： 詳しくは、 [ネストされたデータ構造を統合して、サードパーティの BI ツールで使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) を参照してください。
+         追加 `%3FFLATTEN` から **[!UICONTROL **&#x200B;データベース&#x200B;**]** パラメーターは次のように読み込まれます。 `prod:cja%3FFLATTEN` 例： 詳しくは、 [ネストされたデータ構造を統合して、サードパーティの BI ツールで使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) を参照してください。
 
       4. 選択 **[!UICONTROL **&#x200B;ユーザー名とパスワード&#x200B;**]** から **[!UICONTROL **&#x200B;認証&#x200B;**]** リスト。
 
