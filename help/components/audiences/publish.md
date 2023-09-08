@@ -3,10 +3,10 @@ title: オーディエンスを作成してリアルタイム顧客プロファ�
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 61%
+source-wordcount: '1608'
+ht-degree: 60%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 61%
 | 未表示 | Adobe Analyticsから Analytics ソースコネクタ (A4T) | 最大 30 分 |
 | 1 | Data Lake へのデータ取り込み（Analytics ソースコネクタまたは他のソースから） | 最大 90 分 |
 | 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
-| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 約 60 分 |
+| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。<p>**注意**:1 ～ 2 分以内にオーディエンスがExperience Platformで作成/定義されます。 ただし、オーディエンスが一致した条件に基づいて ID の受信を開始し、アクティブ化の準備が整うまでに、約 60 分かかります。 | 約 60 分 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 | 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
@@ -102,7 +102,7 @@ ht-degree: 61%
 
 Customer Journey Analyticsは、公開済みのオーディエンスからすべての名前空間と ID の組み合わせを取得し、それらをリアルタイム顧客プロファイル (RTCP) にストリーミングします。 Customer Journey Analyticsは、 [!UICONTROL 人物 ID] 接続が設定された時点で。
 
-次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。次に例を示します。 <user@adobe.com> は、すべてのデバイスおよびチャネルにわたってターゲット設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。次に例を示します。 <user@adobe.com> は、すべてのデバイスおよびチャネルでターゲットに設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
 Platform でCustomer Journey Analyticsオーディエンスを表示するには、次に移動します。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ/ **[!UICONTROL CJA オーディエンス]**.
 
@@ -150,7 +150,7 @@ Customer Journey Analyticsは、パイプラインを介してデータを RTCP 
 
 +++
 
-+++**RTCP はCustomer Journey Analytics・メッセージも処理するか Customer Journey Analyticsは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
++++**RTCP はCustomer Journey Analytics・メッセージも処理するか？ Customer Journey Analyticsは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
 いいえ。「ユーザー」ごとに送信される ID は 1 つだけなので、RTCP はグラフエッジを使用しません。
 
