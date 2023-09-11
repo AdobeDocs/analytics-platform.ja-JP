@@ -3,9 +3,9 @@ title: 頻度ビュー
 description: 使用頻度別にエンゲージメントを測定.
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 3%
 # [!UICONTROL 頻度] 表示
 
 The **[!UICONTROL 頻度]** イベントの表示頻度別にイベントデータをグループ表示します。 このレポートの縦軸には、表示されたイベントの頻度を表すグループが含まれています。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
+
+![頻度のスクリーンショット](../assets/frequency-stacked.png)
 
 ## ユースケース
 
