@@ -4,10 +4,10 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
+source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
 workflow-type: tm+mt
-source-wordcount: '4433'
-ht-degree: 15%
+source-wordcount: '5056'
+ht-degree: 16%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 15%
 | A | **ルール名** | デフォルトでは、ルール名は **ルール X** （X はシーケンス番号を参照）。 ルールの名前を編集するには、ルールの名前を選択し、新しい名前を入力します（例： ）。 `Query Parameter`. |
 | B | **関数名** | ルールの選択された関数名（例： ）。 [!UICONTROL URL 解析]. 関数が関数のシーケンスの最後の関数で、最終的な出力値を決定する場合、関数名の後に [!UICONTROL  — 最終出力]例： [!UICONTROL URL 解析 — 最終出力]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
 | C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/>選択 ![その他のアイコン](assets/More.svg)を選択し、「 **[!UICONTROL **&#x200B;説明を追加&#x200B;**]** 説明を追加するには、または **[!UICONTROL **&#x200B;説明を編集&#x200B;**]** 既存の説明を編集する場合。<br/>説明を入力するには、エディターを使用します。 ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右、左、中央揃え、色、番号リスト、箇条書きリストを使用）や、外部情報へのリンクの追加を行うことができます。 <br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 次のドロップダウン： [!UICONTROL フィールド] または [!UICONTROL 値] は、関数が想定する入力のタイプに基づいて、使用可能なフィールド（ルール、標準フィールド、フィールド）のすべてのカテゴリを表示します。 詳しくは、 [関数リファレンス](#function-reference) を参照してください。 |
+| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 次のドロップダウン： [!UICONTROL フィールド] または [!UICONTROL 値] は、関数が想定する入力のタイプに基づいて、使用可能なフィールド（ルール、標準フィールド、フィールド）のすべてのカテゴリを表示します。 <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -413,9 +413,6 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 新しい派生フィールドの対応する値に置き換わる値のセットを定義します。
 
-
-
-
 +++ 詳細
 
 >[!NOTE]
@@ -426,7 +423,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul><li>元の値を表示<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値の置換文字列]:</p><ul><li>文字列</li></ul><li>元の値を表示<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数<br/>1 関数あたり 100 行</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -536,6 +533,17 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
 
+
+## 詳細情報 {#classify-moreinfo}
+
+以下の追加機能が「ルールを分類」インターフェイスで使用できます。
+
+- すべてのテーブル値をすばやくクリアするには、 ![消去](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL すべてのテーブル値をクリア]**.
+- の元の値を含む CSV ファイルをアップロードするには、「値が等しい場合に値を置き換える」で「新しい値」を選択します。 ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL CSV をアップロード]**.
+- アップロードする元の値と新しい値を含む CSV ファイルを作成するためのテンプレートをダウンロードするには、「 ![ダウンロード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV テンプレートをダウンロード]**.
+- すべての元の値と新しい値がルールインターフェイスに入力された CSV ファイルをダウンロードするには、 ![ダウンロード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV 値のダウンロード]**.
+
+
 +++
 
 <!-- CONCATENATE -->
@@ -618,7 +626,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 <!-- FIND AND REPLACE -->
 
-### 検索と置換
+### Find and Replace
 
 選択したフィールド内のすべての値を検索し、新しい派生フィールド内の別の値に置き換えます。
 
@@ -685,9 +693,111 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 +++
 
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### 小文字
+
+値をフィールドから小文字に変換し、新しい派生フィールドに保存します。
+
++++ 詳細
+
+## 仕様 {#lowercase-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 2 つの関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## ユースケース {#lowercase-uc}
+
+レポートを適切に作成するために、収集されたすべての製品名を小文字に変換します。
+
+### 次より前のデータ： {#lowercase-uc-databefore}
+
+| 収集された製品名 | 製品表示 |
+|---|---:|
+| テニスラケット | 35 |
+| テニスラケット | 33 |
+| テニスラケット | 21 |
+| 野球用バット | 15 |
+| 野球バット | 12 |
+| 野球のバット | 10 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#lowercase-uc-derivedfield}
+
+次の項目を定義します。 `Product Names` 派生フィールド。 次を使用します。 [!UICONTROL 小文字] 関数を使用して、 [!UICONTROL 収集された製品名] フィールドを小文字に変換し、新しい派生フィールドに格納します。
+
+![小文字ルールのスクリーンショット](assets/lowercase.png)
+
+
+### 後のデータ {#lowercase-uc-dataafter}
+
+| 製品名 | 製品表示 |
+|---|---|
+| テニスラケット | 89 |
+| 野球のバット | 37 |
+
+{style="table-layout:auto"}
+
++++
+
 <!-- MERGE FIELDS -->
 
-### フィールドを結合
+### Merge Fields
 
 2 つの異なるフィールドの値を新しい派生フィールドに結合します。
 
@@ -753,7 +863,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 <!-- REGEX REPLACE -->
 
-### 正規表現の置換
+### Regex Replace
 
 正規表現を使用して新しい派生フィールドに値を置き換えます。
 
@@ -938,6 +1048,119 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 {style="table-layout:auto"}
 
++++
+
+
+<!-- TRIM -->
+
+### トリミング
+
+フィールド値の先頭または末尾から、空白、特殊文字、または文字数を新しい派生フィールドにトリミングします。
+
++++ 詳細
+
+## 仕様 {#trim-io}
+
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>送信元 <ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>送信元 <ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## 使用例 1 {#trim-uc1}
+
+製品データを収集しますが、そのデータにはフラグメントがレポートする非表示の空白文字が含まれています。 余分なホワイトペースを簡単にトリミングしたい場合
+
+### 次より前のデータ： {#trim-uc1-databefore}
+
+| 製品 ID | イベント |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#trim-u1-derivedfield}
+
+次の項目を作成します。 `Product Identifier` 派生フィールド。 次を使用します。 [!UICONTROL トリミング] 関数を使用して、 **[!UICONTROL 空白をトリミング]** から **[!UICONTROL 製品 ID]** フィールドに入力します。
+
+![分割ルール 1 のスクリーンショット](assets/trim-1.png)
+
+### 後のデータ {#trim-uc1-dataafter}
+
+| 製品識別子 | イベント |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## 使用例 2 {#trim-uc2}
+
+収集されたページ名のデータには、削除する必要があるページ名の末尾に、誤った特殊文字が含まれています。
+
+### 次より前のデータ： {#trim-uc2-databefore}
+
+| 名前 | イベント |
+|---|--:|
+| home page# | 1 |
+| home page? | 1 |
+| home page% | 1 |
+| home page&amp; | 1 |
+| home page/ | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#trim-u2-derivedfield}
+
+次の項目を作成します。  `Page Name` 派生フィールド。 次を使用します。 [!UICONTROL トリミング] 関数を使用して、 [!UICONTROL 特殊文字をトリミングする] から [!UICONTROL 名前] を使用するフィールド [!UICONTROL 特殊文字] `#?%&/`.
+
+![分割ルールのスクリーンショット — 最初の値](assets/trim-2.png)
+
+### 後のデータ {#trim-uc2-dataafter}
+
+| ページ名 | イベント |
+|---|--:|
+| home page | 5 |
+
+{style="table-layout:auto"}
+
+
+## 使用例 3 {#trim-uc3}
+
+storeID を含むデータを収集します。 storeID には、省略された米国の状態コードが最初の 2 文字として含まれます。 レポートでは、その状態コードのみを使用する必要があります。
+
+### 次より前のデータ： {#trim-uc3-databefore}
+
+| storeID | イベント |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#trim-u3-derivedfield}
+
+次の項目を作成します。  `Store Identifier` 派生フィールド。 次を使用します。 [!UICONTROL トリミング] 関数を使用して、 [!UICONTROL 右から切り捨て] の [!UICONTROL storeID] 文字列の終わりから位置までのフィールド `3`.
+
+![分割ルールのスクリーンショット — 最初の値](assets/trim-3.png)
+
+### 後のデータ {#trim-uc3-dataafter}
+
+| ストア識別子 | イベント |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| または | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
 +++
 
 
