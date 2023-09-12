@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
+source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
-source-wordcount: '2583'
-ht-degree: 99%
+source-wordcount: '2604'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023 年 9 月** | |
+| その他の派生フィールド機能 | 新しい [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) および [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 関数と、 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 関数に置き換えます。 |
 | 地域データ収集 | 更新済み [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) とCustomer Journey Analyticsを使用する際の地域データ収集に関する情報。 |
 | **2023年8月** | |
 | メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)のコンテンツを更新しました。 |
