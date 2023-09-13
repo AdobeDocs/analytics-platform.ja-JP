@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -19,9 +19,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
-| **2023 年 9 月** | |
+| **2023年9月** | |
 | その他の派生フィールド機能 | 新しい [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) および [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 関数と、 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 関数に置き換えます。 |
-| 地域データ収集 | 更新済み [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) とCustomer Journey Analyticsを使用する際の地域データ収集に関する情報。 |
+| 地域データ収集 | [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) を更新し、Customer Journey Analytics を使用する際の地域データ収集に関する情報を追加しました。 |
 | **2023年8月** | |
 | メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)のコンテンツを更新しました。 |
 | Report Builder の機能強化 | スケジュールされたタスクをダウンロードするための情報を提供するために、[ワークブックのスケジュール設定](/help/report-builder/schedule-reportbuilder.md)のコンテンツを更新しました。開始日をディメンションとして使用するための情報を提供するために、[データブロックの作成](/help/report-builder/create-a-data-block.md)のコンテンツを更新しました。 |
