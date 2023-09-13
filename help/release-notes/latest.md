@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 98bba7c7bc56cfc2a2436f13d833dbf6504d7d6e
+source-git-commit: 6e94dcf003c26af5ce32544655477b1074b504b5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 59%
+source-wordcount: '522'
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 59%
 | ----------- | ---------- | ------- | ---- |
 | **Analytics ソースコネクタでの A4T 分類のサポート** | 新規のサポート `correlationID` Adobe Analyticsのフィールド | The `_experience.decisioning.propositions.scopeDetails.correlationID` フィールドがAdobe Analyticsソースコネクタスキーマで使用できるようになりました。 このフィールドは、A4T 分類のサポートに使用され、2023 年 9 月以降に入力されます。 | | 該当なし | 2023年9月12日（PT） |
 | **派生フィールドの更新** | 派生フィールドの機能に対して、次の更新がおこなわれました。<ul><li>The [!UICONTROL 参照] 関数の名前がに変更されました。 [!UICONTROL 分類]に含まれ、CSV データを読み込むための追加のオプションが含まれます。 **（リリース 2023 年 9 月 28 日）**</li><li>派生フィールドを定義する際に使用できる追加の関数は次のとおりです。 [!UICONTROL トリミング], [!UICONTROL 小文字] および [!UICONTROL 参照].</li><li>派生フィールドの定義で、次のフィールドもサポートされるようになりました。 [!UICONTROL 参照] および [!UICONTROL プロファイル] データセット。</li></ul>[詳細情報](/help/data-views/derived-fields/derived-fields.md) | 該当なし | 2023年9月13日（PT） |
-| **Adobe Product Analyticsの新機能** | <ul><li>**異常値検出**：イベントを、過去のトレンドから派生した期待される値と比較します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=ja)</li><li>**トレンド使用頻度ビュー**：使用頻度別に機能の採用状況を測定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**ユーザーの環境設定**：カラーパレット、データビュー、カレンダー、インスタンスカウント、数値形式、コンマ区切り文字など、多数のユーザー設定を設定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=ja)</li></ul> | 該当なし | 2023年9月18日（PT） |
+| **Adobe Product Analyticsの新機能** | <ul><li>**異常値検出**：イベントを、過去のトレンドから派生した期待される値と比較します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**トレンド使用頻度ビュー**：使用頻度別に機能の採用状況を測定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**ユーザーの環境設定**：カラーパレットや数値形式など、多数のユーザー環境設定を指定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=ja)</li></ul> | 該当なし | 2023年9月18日（PT） |
 | **Experience Edge デバイスの参照** | Device Edge ネットワークを介して、自動デバイスタイプのExperience Platform収集を有効にします。 この Experience Edge サービスは、他のCustomer Journey Analyticsアプリと共にExperience Platformに役立ちます。 （後に続くドキュメントリンク） | 該当なし | 2023年9月27日（PT） |
 
 {style="table-layout:auto"}
