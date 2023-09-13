@@ -3,40 +3,40 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 8f299dad39678047d362291cfe8a2a3c116071dd
+source-git-commit: 98bba7c7bc56cfc2a2436f13d833dbf6504d7d6e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 59%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2023年8月）
+# 最新のAdobe Customer Journey Analyticsリリースノート（2023 年 9 月）
 
-**最終更新日**：2023年8月24日（PT）
+**最終更新日**：2023年9月7日（PT）
 
-このリリースノートは、2023年8月9日～ 9月13日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
+これらのリリースノートでは、2023 年 9 月 13 日から 2023 年 10 月 3 日までのリリース期間を扱っています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder の機能強化** | <ul><li>「ワークブック」タブからスケジュールされたタスクをダウンロードし、タイトルを付けて保存し、共有できます。[詳細情報](/help/report-builder/schedule-reportbuilder.md)</li><li>ディメンションとしての開始日を使用すると、データブロック出力のディメンションとして、データブロックの開始日を表示できます。[詳細情報](/help/report-builder/create-a-data-block.md) </li></ul> | 該当なし | 2023年8月17日（PT） |
-| **通貨換算** | カスタマージャーニーには、複数の通貨をサポートする機能が追加されています。データビューの設定で、通貨を別の通貨に変換できます。[詳細情報](/help/data-views/component-settings/format.md) | 該当なし | 2023年8月30日（PT） |
-| **Analytics ソースコネクタでの A4T 分類のサポート** | Adobe Target のアクティビティとエクスペリエンスイベントの分類データを簡単に結合できるように、相関 ID を追加しています。 | 該当なし | 2023年9月11日（PT） |
-| **レポートアクティビティマネージャー** | 管理者は各接続のレポートの使用状況を詳細に把握できるので、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。 | 該当なし | 2023年9月12日（PT） |
-| **Power BI および Tableau から Customer Journey Analytics データビューへのアクセス** | Adobe Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。Power BI、Tableau またはその他のビジネスインテリジェンスおよびビジュアライゼーションツールに精通したデータエンジニアやアナリストは、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトに使用しているものと同じデータビューに基づいて、レポートやダッシュボードを作成できるようになりました。[詳細情報](/help/data-views/sql-connector.md) | 該当なし | 2023年9月12日（PT） |
+| **Analytics ソースコネクタでの A4T 分類のサポート** | 新規のサポート `correlationID` Adobe Analyticsのフィールド | The `_experience.decisioning.propositions.scopeDetails.correlationID` フィールドがAdobe Analyticsソースコネクタスキーマで使用できるようになりました。 このフィールドは、A4T 分類のサポートに使用され、2023 年 9 月以降に入力されます。 | | 該当なし | 2023年9月12日（PT） |
+| **派生フィールドの更新** | 派生フィールドの機能に対して、次の更新がおこなわれました。<ul><li>The [!UICONTROL 参照] 関数の名前がに変更されました。 [!UICONTROL 分類]に含まれ、CSV データを読み込むための追加のオプションが含まれます。 **（リリース 2023 年 9 月 28 日）**</li><li>派生フィールドを定義する際に使用できる追加の関数は次のとおりです。 [!UICONTROL トリミング], [!UICONTROL 小文字] および [!UICONTROL 参照].</li><li>派生フィールドの定義で、次のフィールドもサポートされるようになりました。 [!UICONTROL 参照] および [!UICONTROL プロファイル] データセット。</li></ul>[詳細情報](/help/data-views/derived-fields/derived-fields.md) | 該当なし | 2023年9月13日（PT） |
+| **Adobe Product Analyticsの新機能** | <ul><li>**異常値検出**：イベントを、過去のトレンドから派生した期待される値と比較します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=ja)</li><li>**トレンド使用頻度ビュー**：使用頻度別に機能の採用状況を測定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**ユーザーの環境設定**：カラーパレット、データビュー、カレンダー、インスタンスカウント、数値形式、コンマ区切り文字など、多数のユーザー設定を設定します。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=ja)</li></ul> | 該当なし | 2023年9月18日（PT） |
+| **Experience Edge デバイスの参照** | Device Edge ネットワークを介して、自動デバイスタイプのExperience Platform収集を有効にします。 この Experience Edge サービスは、他のCustomer Journey Analyticsアプリと共にExperience Platformに役立ちます。 （後に続くドキュメントリンク） | 該当なし | 2023年9月27日（PT） |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics の修正点
 
-AN-309141、AN-319198、AN-324576、AN-324939、AN-325138、AN-325554
+AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
+
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 
 | 通知 | 追加または更新された通知 | 説明 |
 | --- | --- | --- |
-| **Customer Journey Analytics によるデータの処理方法の変更** | 2023年6月22日（PT） | 最近、Customer Journey Analytics でのデータの処理方法が変更されました。<ul><li>発生後の経過時間が 24 時間未満のイベントデータは、すべてストリーミングで取り込まれます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul> |
+| 該当なし | 該当なし | 該当なし |
 
 {style="table-layout:auto"}
 
