@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4fd0f680ee0a1e61956899c2e3148cb1f0d46d76
+source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '969'
 ht-degree: 85%
 
 ---
@@ -154,10 +154,7 @@ ht-degree: 85%
       + [フリーフォームパネル](../analysis-workspace/c-panels/freeform-panel.md)
       + [クイックインサイトパネル](../analysis-workspace/c-panels/quickinsight.md)
       + [メディアの同時視聴者数パネル](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + メディア再生滞在時間 {#media-playback-timespent}
-         + [概要](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
-         + [入力と出力の設定](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
-         + [よくある質問（FAQ）](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+      + [メディア再生滞在時間パネル](../analysis-workspace/c-panels/media-playback-time-spent.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)

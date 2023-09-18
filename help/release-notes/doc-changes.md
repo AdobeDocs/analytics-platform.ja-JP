@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 99%
+source-wordcount: '2651'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,11 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年9月** | |
+| メディア再生に費やした時間パネル用に記事の構造を更新しました。 | メディア再生時間というフォルダーを削除し、フォルダーの内容を 1 つの記事に組み合わせました。 [メディア再生時間滞在パネル](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>この変更は、他のパネルのドキュメントとより一致しています。</p> |
 | その他の派生フィールド機能 | 新しい [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) および [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 関数と、 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 関数に置き換えます。 |
 | 地域データ収集 | [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) を更新し、Customer Journey Analytics を使用する際の地域データ収集に関する情報を追加しました。 |
 | **2023年8月** | |
-| メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)のコンテンツを更新しました。 |
+| メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-time-spent.md)のコンテンツを更新しました。 |
 | Report Builder の機能強化 | スケジュールされたタスクをダウンロードするための情報を提供するために、[ワークブックのスケジュール設定](/help/report-builder/schedule-reportbuilder.md)のコンテンツを更新しました。開始日をディメンションとして使用するための情報を提供するために、[データブロックの作成](/help/report-builder/create-a-data-block.md)のコンテンツを更新しました。 |
 | スケジュールされたプロジェクトの管理に関するコンテンツの移動 | Analytics コンポーネントガイドに[スケジュールされたプロジェクト](/help/components/scheduled-projects-manager.md)という新しい記事を作成しました。このコンテンツは、以前は Analytics ツールガイドの[プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md)という記事に記載されていました。 |
 | Adobe Customer Journey Analytics の機能のサポート | *新しい方法でサポート*&#x200B;の表に、Adobe Analytics と比較した Customer Journey Analytics のセッション機能に関する詳細情報を追加しました。[詳細情報](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
