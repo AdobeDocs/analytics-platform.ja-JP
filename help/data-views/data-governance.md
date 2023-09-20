@@ -3,7 +3,7 @@ title: ラベルとポリシー
 description: Adobe Experience Platformで定義されたデータラベルとポリシーが、Customer Journey Analyticsのデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
+source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 58%
@@ -24,7 +24,7 @@ Experience Platform でデータセットを作成する場合、データセッ
 >
 >データ使用ラベルは、ステッチされたデータセットに自動的には反映されません。 ただし、手動で追加することはできます。
 
-「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です ポリシーを作成するには、 [Experience PlatformUI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) または [ポリシーサービス API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) Experience Platform
+「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です ポリシーを作成するには、 [Experience PlatformUI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) または [ポリシーサービス API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) Experience Platform。
 
 2 つのAdobe定義のポリシーがCustomer Journey Analyticsで表示され、レポートおよびダウンロード/共有に影響を与えます。
 
@@ -55,7 +55,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 分析または書き出しの目的で特定のCustomer Journey Analyticsデータビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
 
-再度、 [!UICONTROL フィルター] アイコン（左側のレールとの下） **[!UICONTROL データガバナンス]**&#x200B;をクリックし、 **[!UICONTROL ポリシー]**:
+もう一度、 [!UICONTROL フィルター] アイコン（左側のレールとの下） **[!UICONTROL データガバナンス]**&#x200B;をクリックし、 **[!UICONTROL ポリシー]**:
 
 ![](assets/filter-policies.png)
 
@@ -72,7 +72,7 @@ Experience Platform で作成したデータラベルは、データビューの
 また、ブロックされたフィールドがあるデータビューは保存できません。
 
 >[!MORELIKETHIS]
->[機密データのダウンロード](/help/analysis-workspace/curate-share/download-send.md)
+>[機密データのダウンロード](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
 >[Report Builder の制限ラベルとは?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)

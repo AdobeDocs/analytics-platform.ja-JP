@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 85%
+source-wordcount: '995'
+ht-degree: 82%
 
 ---
 
@@ -161,8 +161,11 @@ ht-degree: 85%
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
-      + [PDF ファイルまたは CSV ファイルのダウンロード](../analysis-workspace/curate-share/download-send.md)
-      + [プロジェクトのスケジュール](../analysis-workspace/curate-share/t-schedule-report.md)
+   + 書き出し {#export}
+      + [エクスポートの概要](../analysis-workspace/export/export-project-overview.md)
+      + [ダウンロード](../analysis-workspace/export/download-send.md)
+      + [他のユーザーに送信](../analysis-workspace/export/t-schedule-report.md)
+      + [クラウドにエクスポート](../analysis-workspace/export/export-cloud.md)
    + 仮想アナリスト {#virtual-analyst}
       + [仮想アナリストの概要](../analysis-workspace/virtual-analyst/overview.md)
       + 異常値検出 {#anomaly-detection}
@@ -253,6 +256,13 @@ ht-degree: 85%
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
+   + 書き出し {#exports}
+      + [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)
+      + [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md)
+      + [クラウドの書き出し場所の管理](/help/components/exports/manage-export-locations.md)
+      + [エクスポートを管理](/help/components/exports/manage-exports.md)
+      + [書き出しログを管理](/help/components/exports/manage-export-logs.md)
+      + [エクスポートのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
    + データ要素 {#data-dictionary}
       + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -325,6 +335,7 @@ ht-degree: 85%
    + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
    + [Customer Journey Analyticsパフォーマンスの最適化](../admin/optimizing-performance.md)
+   + [IP アドレス](../admin/ip-addresses.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 79%
+source-wordcount: '1319'
+ht-degree: 80%
 
 ---
 
@@ -29,16 +29,16 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 | 要素 | 説明 |
 |---|---|
-| [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルに関する、Analysis Workspaceおよびその関連コンポーネントの設定を管理します。 |
+| [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルの Analysis Workspace とその関連コンポーネントの設定を管理します。 |
 | [フォルダーを作成](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 新しいフォルダまたはサブフォルダをプロジェクトとフォルダのリストに追加します。 |
 | [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md) | 新しいプロジェクトを最初から開始します。 |
 | 詳細を表示 | 空のプロジェクトまたはモバイルスコアカードを作成するためのオプションを表示します。 [トレーニングチュートリアルの表示](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=ja)または [リリースノートの表示](/help/release-notes/latest.md). |
 | フォルダとプロジェクトを表示 | プロジェクトのフォルダ構造を表示するかどうかを選択します。 詳しくは、[Analytics のフォルダーについて](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)を参照してください。 |
 | テーブルをカスタマイズ（アイコン） | プロジェクトページの各プロジェクトに表示される情報をカスタマイズできます。 |
 | 名前 | Workspace プロジェクトの名前。 |
-| タイプ | これが Workspace プロジェクト、フォルダ、または [モバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=ja). |
+| タイプ | これが Workspace プロジェクト、フォルダー、または [モバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=ja). |
 | タグ | プロジェクトに適用されたタグです。 |
-| スケジュール済み | プロジェクトがスケジュールに従って受信者に電子メールで送信されるようにスケジュールされているかどうかを示します。 詳しくは、 [プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| スケジュール済み | プロジェクトがスケジュールに従って受信者に電子メールで送信されるようにスケジュールされているかどうかを示します。 詳しくは、 [他のユーザーにプロジェクトデータを送信する](/help/analysis-workspace/export/t-schedule-report.md). |
 | 共有リンク (任意のユーザー) | プロジェクトは、Analysis Workspaceにアクセスできないユーザーとでも誰とでも共有できます。 この列は、この方法でプロジェクトが共有されたかどうかを示します。 詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
 | データビュー | プロジェクトが関連付けられているデータビュー。 |
 | [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja) | プロジェクトの役割（所有者、編集、重複、表示）を示します。 |
@@ -59,7 +59,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 | メニュー項目 | 説明 |
 |---|---|
-| プロジェクト | 新規、開く、保存、名前を付けて保存など、プロジェクト管理に関する一般的なアクションが含まれます。 また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。「[CSV と PDF をダウンロード](/help/analysis-workspace/curate-share/download-send.md)」オプションを使用すると、Workspace からデータをエクスポートできます。「**プロジェクト情報および設定**」（以下を参照）には、プロジェクトを管理するための多くのオプションが用意されています。 |
+| プロジェクト | 新規、開く、保存、名前を付けて保存など、プロジェクト管理に関する一般的なアクションが含まれます。 また、「プロジェクトを更新」をクリックして、プロジェクト全体を更新し、最新のデータと定義を取得することもできます。[プロジェクトデータをダウンロード](/help/analysis-workspace/export/download-send.md) 「 」オプションを使用すると、Workspace からデータを書き出すことができます。 「**プロジェクト情報および設定**」（以下を参照）には、プロジェクトを管理するための多くのオプションが用意されています。 |
 | テンプレートを | 前回の操作を元に戻すか、やり直します。「すべてクリア」を選択すると、プロジェクトが最初の空白の状態にリセットされます。 |
 | 前に | このメニューから、新しいパネルまたはビジュアライゼーションを挿入します。また、左側のパネルから新しいパネルやビジュアライゼーションを挿入することもできます。 |
 | [コンポーネント](/help/components/overview.md) | プロジェクトから、新しいフィルター、計算指標、日付範囲またはアラートの各コンポーネントを作成します。また、左側のパネルから新しいコンポーネントを作成することもできます。コンポーネント定義が最近変更された場合は、「コンポーネントを更新」を選択すると最新の定義を取得できます。 |

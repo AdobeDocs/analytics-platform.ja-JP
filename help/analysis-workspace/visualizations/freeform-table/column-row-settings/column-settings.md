@@ -3,10 +3,10 @@ description: 列設定では、列の書式を設定できます。一部の列�
 title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '686'
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,25 @@ ht-degree: 98%
 
 デフォルトのアトリビューションモデルセットを [データビュー](/help/data-views/component-settings/attribution.md).
 
-1. フリーフォームテーブル列の設定（歯車）アイコンをクリックします。
+<!--
+
+>[!NOTE]
+>
+>Consider the following when updating a component's attribution to a non-default attribution model:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+-->
+
+Analysis Workspaceの指標にデフォルト以外のアトリビューションモデルを使用するには：
+
+1. フリーフォームテーブル列の指標の設定（歯車）アイコンをクリックします。
 
    ![アトリビューションチェックボックス](assets/attribution-checkbox.png)
 
@@ -67,4 +85,3 @@ ht-degree: 98%
 >[!MORELIKETHIS]
 >
 >* [データソースの管理](/help/analysis-workspace/visualizations/t-sync-visualization.md)
-

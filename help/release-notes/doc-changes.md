@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
 workflow-type: tm+mt
 source-wordcount: '2651'
 ht-degree: 97%
@@ -26,7 +26,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年8月** | |
 | メディア再生滞在時間パネル | 読みやすさを向上させるために、[メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-time-spent.md)のコンテンツを更新しました。 |
 | Report Builder の機能強化 | スケジュールされたタスクをダウンロードするための情報を提供するために、[ワークブックのスケジュール設定](/help/report-builder/schedule-reportbuilder.md)のコンテンツを更新しました。開始日をディメンションとして使用するための情報を提供するために、[データブロックの作成](/help/report-builder/create-a-data-block.md)のコンテンツを更新しました。 |
-| スケジュールされたプロジェクトの管理に関するコンテンツの移動 | Analytics コンポーネントガイドに[スケジュールされたプロジェクト](/help/components/scheduled-projects-manager.md)という新しい記事を作成しました。このコンテンツは、以前は Analytics ツールガイドの[プロジェクトのスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md)という記事に記載されていました。 |
+| スケジュールされたプロジェクトの管理に関するコンテンツの移動 | Analytics コンポーネントガイドに[スケジュールされたプロジェクト](/help/components/scheduled-projects-manager.md)という新しい記事を作成しました。このコンテンツは、以前は Analytics ツールガイドの[プロジェクトのスケジュール](/help/analysis-workspace/export/t-schedule-report.md)という記事に記載されていました。 |
 | Adobe Customer Journey Analytics の機能のサポート | *新しい方法でサポート*&#x200B;の表に、Adobe Analytics と比較した Customer Journey Analytics のセッション機能に関する詳細情報を追加しました。[詳細情報](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics からの進化 | 派生フィールドのマーケティングチャネル関数テンプレートへの参照を含めて、*マーケティングチャネルの（再）設定*&#x200B;の節を更新しました。[詳細情報](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | モバイルアプリケーションおよびその他のプラットフォームのデータ取り込みクイックスタートガイド | Customer Journey Analytics でモバイルアプリケーションやその他のプラットフォーム（デスクトップアプリケーション、コンソール上のゲーム、セットトップボックスや IoT デバイス上のアプリケーションなど）からデータを取り込んで使用する方法を説明するデータ取り込みクイックスタートガイドを追加しました。[詳細情報](../data-ingestion/data-ingestion.md) |
@@ -169,7 +169,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2021年4月 | ワークスペースでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントを追加しました。 |
 | 2021年4月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/ga/overview.md) と [データの分析](/help/use-cases/ga/report.md) に関する新しいトピックを追加しました。 |
-| 2021年4月 | ワークスペースの[予定レポート](/help/analysis-workspace/curate-share/t-schedule-report.md)に関するトピックを追加しました。 |
+| 2021年4月 | ワークスペースの[予定レポート](/help/analysis-workspace/export/t-schedule-report.md)に関するトピックを追加しました。 |
 | 2021年4月 | [Customer Journey Analytics の高基数ディメンション](/help/components/dimensions/high-cardinality.md)に関する新しいトピック。 |
 | **2021年3月** | |
 | 2021年3月 | [Analytics ダッシュボード](/help/mobile-app/home.md)（モバイルアプリ）のサポートに関するトピックを追加しました。 |

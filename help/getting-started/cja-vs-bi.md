@@ -5,8 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
-workflow-type: ht
+source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
+workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Customer Journey Analytics は、数百または数千のサーバーに分析�
 
    * 継続的な探索のために、組織内の他の個人に[キュレート](/help/analysis-workspace/curate-share/curate.md)する。
    * [Report Builder](/help/report-builder/report-buider-overview.md)（専用プラグイン）を使用して Excel に書き出す。
-   * 最終レポートやビジュアライゼーションに関心のあるユーザーには、[PDF](/help/analysis-workspace/curate-share/download-send.md)、[CSV](/help/analysis-workspace/curate-share/download-send.md)、[専用モバイルアプリ](/help/mobile-app/home.md)など、様々な形式で[共有](/help/analysis-workspace/curate-share/share-projects.md)する。
+   * 最終レポートやビジュアライゼーションに関心のあるユーザーには、[PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)、[専用モバイルアプリ](/help/mobile-app/home.md)など、様々な形式で[共有](/help/analysis-workspace/curate-share/share-projects.md)する。
 
 ビジュアライゼーションは多岐にわたるため、Customer Journey Analytics のビジュアライゼーション機能を BI ツールのオファーと比較することは困難です。BI ツールにはより高度なビジュアライゼーションが備わっているものもありますが、Customer Journey Analytics はインタラクティブで相互運用可能なカスタマージャーニーのビジュアライゼーションに重点を置いており、追加のクエリごとに「課金」されることなく、数秒でデータを分類できます。
 

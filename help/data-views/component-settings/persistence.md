@@ -4,7 +4,7 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 86%
@@ -19,6 +19,17 @@ ht-degree: 86%
 ![永続性](../assets/persistence.png)
 
 * **配分** では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値が保持されるかを指定できます。
+
+<!--
+
+  >[!NOTE]
+  >
+  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >
+  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
+
+-->
+
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 
 [!UICONTROL 永続性] は、ディメンションに対してのみ使用でき、適用対象となるデータに遡って適用されます。フィルタリングや他の分析操作が適用される前に発生する即時のデータ変換です。
@@ -72,7 +83,7 @@ ht-degree: 86%
 * **セッション**：特定のセッションの後に期限切れとなります。デフォルトの有効期限の期間。
 * **個人**：レポート期間の最後に期限切れとなります。
 * **カスタム時間**：指定された期間（最大 90 日）が過ぎると期限切れになります。この有効期限オプションは、オリジナル配分モデルと最新配分モデルでのみ使用できます。時間ベースの有効期限を使用する場合は、レポート期間の開始前（最大 90 日間）の値が考慮されます。
-* **指標**:この指標がイベントで表示されると、ディメンションに保持されている値が直ちに期限切れになります。 このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
+* **指標**：この指標がイベントに表示されると、ディメンションに保持されている値が直ちに期限切れになります。 このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
 
 ## [!UICONTROL バインディングディメンション]
 

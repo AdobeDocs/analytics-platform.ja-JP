@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 87%
+source-wordcount: '1243'
+ht-degree: 86%
 
 ---
 
@@ -47,15 +47,15 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
    * 左側のレールで、 **ビジュアライゼーション** アイコン <!-- add icon -->次に、ビジュアライゼーションを追加するパネルにドラッグします。
 
-      ![](assets/viz-rail.png)
+     ![](assets/viz-rail.png)
 
    * ビジュアライゼーションを追加するパネルで、 **プラス** アイコンをクリックして、追加するビジュアライゼーションを表すアイコンを選択します。 各ビジュアライゼーションのアイコンの上にマウスポインターを置くと、その名前が表示されます。
 
-      ![ビジュアライゼーションを追加するためのボタン](assets/visualization-add-to-panel.png)
+     ![ビジュアライゼーションを追加するためのボタン](assets/visualization-add-to-panel.png)
 
    * を追加します。 [空欄パネル](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=ja)次に、追加するビジュアライゼーションを選択します。
 
-      ![空のパネル](assets/blank_panel.png)
+     ![空のパネル](assets/blank_panel.png)
 
    * Analysis Workspaceプロジェクトの既存のパネルを右クリックし、「 [!UICONTROL **ビジュアライゼーションを複製**] または [!UICONTROL **ビジュアライゼーションをコピー**].
 
@@ -122,8 +122,8 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | --- | --- |
 | コピーしたパネル／ビジュアライゼーションを挿入 | コピーした要素をプロジェクト内の別の場所、または完全に別のプロジェクトに貼り付ける（「挿入」する）ことができます。 |
 | ビジュアライゼーションをコピー | ビジュアライゼーションを右クリックしてコピーし、プロジェクト内の別の場所に挿入したり、完全に別のプロジェクトに挿入したりできます。 |
-| [項目を CSV としてダウンロード](/help/analysis-workspace/curate-share/download-send.md) | 選択したディメンションの最大 50,000 個のディメンション項目を CSV としてダウンロードします。 |
-| [データを CSV としてダウンロード](/help/analysis-workspace/curate-share/download-send.md) | ビジュアライゼーションデータソースを CSV 形式でダウンロードします。 |
+| [プロジェクトデータをダウンロード](/help/analysis-workspace/export/download-send.md) | 選択したディメンションの最大 50,000 個のディメンション項目を CSV としてダウンロードします。 |
+| [プロジェクトデータをダウンロード](/help/analysis-workspace/export/download-send.md) | ビジュアライゼーションデータソースを CSV 形式でダウンロードします。 |
 | 重複ビジュアライゼーション | 現在のビジュアライゼーションの厳密な複製を作成して、修正できます。 |
 | 説明を編集 | ビジュアライゼーションの説明テキストを追加（または編集）します。 |
 | ビジュアライゼーションリンクを取得 | プロジェクト内の特定のビジュアライゼーションに他のユーザーを誘導できます。受信者は、リンクをクリックした後、リンク先の正確なビジュアライゼーションにリダイレクトされる前にログインするよう求められます。 |
