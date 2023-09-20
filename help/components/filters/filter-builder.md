@@ -3,7 +3,7 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 23%
@@ -64,7 +64,7 @@ The [!UICONTROL フィルタービルダー] を使用すると、訪問やイ�
 1. 選択した項目に対して値を入力または選択します。
 1. 必要に応じて他のコンテナを追加し、**[!UICONTROL AND]**、**[!UICONTROL OR]**、**[!UICONTROL THEN]** のルールを適用します。
 1. コンテナを配置してルールを設定した後、右上の検証グラフでフィルターの結果を確認します。 バリデーターは、作成したフィルターに一致するページビュー数、訪問回数および個別ユーザーの割合と絶対数を示します。
-1. の下 **[!UICONTROL タグ]**, [タグ](/help/components/filters/manage-filters.md) 既存のタグを選択するか、新しいタグを作成することによって、コンテナを作成できます。
+1. の下 **[!UICONTROL タグ]**, [タグ](/help/components/filters/filters-tag.md) 既存のタグを選択するか、新しいタグを作成することによって、コンテナを作成できます。
 1. クリック **[!UICONTROL 保存]** フィルターを保存します。
 
    次の場所に移動します。 [フィルターマネージャー](/help/components/filters/manage-filters.md)：複数の方法でフィルターにタグ付け、共有、管理できます。

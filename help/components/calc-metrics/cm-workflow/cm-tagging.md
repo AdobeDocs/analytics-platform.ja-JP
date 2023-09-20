@@ -3,9 +3,9 @@ description: 計算指標マネージャでは、セグメントにタグを付�
 title: 計算指標のタグ付け
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 19%
 
 ---
@@ -20,36 +20,35 @@ ht-degree: 19%
 >
 >タグの最も役に立つタイプは、通常、次の条件に基づくタグです。
 >
->* **チーム名**（ソーシャルマーケティングやモバイルマーケティングなど）。
+>* **チーム名**&#x200B;例えば、ソーシャルマーケティングやモバイルマーケティングなどです。
 >* **プロジェクト** （分析タグ）を使用できます。
 >* **カテゴリ**（女性用や地域用など）
 >* **ワークフロー**：承認待ち、（特定のビジネスユニット向けの）キュレーション済みなど。
 
-
 ## 計算指標へのタグの適用
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャに移動します。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**].
 
-1. 計算指標マネージャで、タグを付ける指標の横にあるチェックボックスを選択します。
+1. 計算指標マネージャで、タグを付ける指標の横にあるチェックボックスをオンにします。
 
    ![](assets/cm_add_tags.png)
 
-1. 内 [!UICONTROL **計算指標のタグ付け**] ダイアログボックス：
+1. Adobe Analytics の [!UICONTROL **計算指標のタグ付け**] ダイアログボックス：
 
-   * 新しいタグを追加します。 名前を **[!UICONTROL タグを追加]** 「 」フィールドで、Enter キーを押します。
+   * 新しいタグを追加します。 名前を **[!UICONTROL タグを追加]** 「 」フィールドに入力し、Enter キーを押します。
    * 選択した指標に適用する既存のタグを 1 つ以上選択します。
 
-1. 選択 [!UICONTROL **保存**] タグを適用します。
+1. 選択 [!UICONTROL **保存**] をクリックしてタグを適用します。
 
 ## 適用されたタグを表示
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャに移動します。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャーに移動します。
 
-1. 計算指標マネージャーで、タグは [!UICONTROL **タグ**] 列。 （右上の歯車アイコンをクリックして、列を管理します）。
+1. 計算指標マネージャーでは、タグは [!UICONTROL **タグ**] 列。 （右上の歯車アイコンをクリックして、列を管理します）。
 
 ## タグによる指標のフィルタリング
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャに移動します。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャーに移動します。
 
 1. 計算指標マネージャで、 **フィルター** アイコンをクリックし、フィルタリングに使用するタグを選択します。
 

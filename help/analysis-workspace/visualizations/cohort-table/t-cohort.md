@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: コホート分析レポートの設定
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 91%
@@ -47,7 +47,7 @@ Analysis Workspace でコホートを作成し、[!UICONTROL コホート分析]
 
    複数のセル（連続または不連続）を選択し、右クリックして、**[!UICONTROL 選択範囲からフィルターを作成します]**。
 
-1. [フィルタービルダー](/help/components/filters/manage-filters.md)で、フィルターをさらに編集して、「**[!UICONTROL 保存]**」をクリックします。
+1. [フィルタービルダー](/help/components/filters/filter-builder.md)で、フィルターをさらに編集して、「**[!UICONTROL 保存]**」をクリックします。
 
    保存したフィルターは、[!UICONTROL Analysis Workspace] の[!UICONTROL フィルター]パネルで使用できます。
 1. コホートプロジェクトに名前を付けて保存します。

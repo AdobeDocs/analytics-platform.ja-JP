@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
+source-git-commit: dab672e07ddf834701279e108ad2daab1ad94efa
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 82%
+source-wordcount: '1023'
+ht-degree: 81%
 
 ---
 
@@ -227,6 +227,12 @@ ht-degree: 82%
    + フィルター {#cja-filters}
       + [フィルターの概要](../components/filters/filters-overview.md)
       + [フィルターの作成](../components/filters/create-filters.md)
+      + [フィルターの共有](../components/filters/filters-share.md)
+      + [タグフィルター](../components/filters/filters-tag.md)
+      + [フィルターのリストをフィルター](../components/filters/filters-filter.md)
+      + [フィルターのお気に入りへの登録](../components/filters/filters-favorite.md)
+      + [フィルターの承認](../components/filters/filters-approve.md)
+      + [フィルターをコピー](../components/filters/filters-copy.md)
       + [クイックフィルター](../components/filters/quick-filters.md)
       + [フィルタービルダー](../components/filters/filter-builder.md)
       + [フィルターの管理](../components/filters/manage-filters.md)
@@ -242,6 +248,9 @@ ht-degree: 82%
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [計算指標へのフィルター設定](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [計算指標のお気に入りへの登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [計算指標のコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [計算指標のタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)

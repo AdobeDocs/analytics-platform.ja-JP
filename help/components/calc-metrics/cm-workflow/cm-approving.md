@@ -3,10 +3,10 @@ description: 計算指標マネージャ内では、様々なレベルのアプ�
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 18%
+source-wordcount: '238'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 18%
 
 計算指標を承認済みとしてマークするには：
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**] をクリックして、計算指標マネージャに移動します。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **計算指標**].
 
 1. 計算指標マネージャで、承認としてマークする指標の左側にあるチェックボックスを選択します。
 
