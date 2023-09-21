@@ -5,18 +5,16 @@ title: エクスポートを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 7%
+source-wordcount: '931'
+ht-degree: 6%
 
 ---
 
 # エクスポートを管理
 
-{{select-package}}
-
-表全体をエクスポートした後、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md)を使用する場合、エクスポートは [!UICONTROL エクスポート] タブ [!UICONTROL エクスポート] ページに貼り付けます。
+表全体をエクスポートした後、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md)を使用する場合、エクスポートは [!UICONTROL エクスポート] タブ [!UICONTROL エクスポート] ページに貼り付けます。
 
 作成した書き出しのみが表示されます。
 
@@ -38,7 +36,7 @@ ht-degree: 7%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>。 |
+   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager Landing Zone**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **アクティブ**]：スケジュールされた書き出しがまだ期限切れでないことを示します。 </li><li>[!UICONTROL **完了**]：書き出しが正常に書き出されたことを示します。 スケジュールされたエクスポートの場合は、スケジュールの有効期限が切れていることを示します。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
    | [!UICONTROL **頻度**] | エクスポートが発生する頻度。 次の頻度を使用できます。 <ul><li>[!UICONTROL **1 回のみ**]</li><li>[!UICONTROL **毎日**]</li><li>[!UICONTROL **毎週**]</li><li>[!UICONTROL **毎月**]</li><li>[!UICONTROL **毎年**]</li></ul> |
 
@@ -128,10 +126,10 @@ ht-degree: 7%
 
    | 使用可能な列 | 説明 |
    |---------|----------|
-   | 名前 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md). |
+   | 名前 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | ID | エクスポートの作成時に、エクスポートに自動的に割り当てられる ID です。 <!-- True? --> |
    | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL アクティブ], [!UICONTROL 一時停止], [!UICONTROL 完了]、および [!UICONTROL 失敗].<p> **注意：** 失敗したエクスポートのトラブルシューティングについて詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
-   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md). |
+   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL 保留中], [!UICONTROL 配信済み]、および [!UICONTROL 失敗]. |
    | テーブルサイズ (最後の送信) | 最後に送信されたエクスポートのサイズ。 |
    | 作成者 | エクスポートを作成したユーザー。 |

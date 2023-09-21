@@ -5,7 +5,7 @@ title: Customer Journey Analyticsデータを電子メールで他の人に送�
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 8eda6e9ed27ab458951cd4bd08f511987bc61eb0
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 62%
@@ -14,7 +14,7 @@ ht-degree: 62%
 
 # 電子メールでCustomer Journey Analyticsデータを他の人に送信する
 
-Customer Journey Analyticsデータをエクスポートするには、選択した受信者に E メールで送信します。 ファイルをアドホックに送信したり、ファイルをスケジュールに従って送信するように設定したりできます。 ファイルは CSV 形式または PDF 形式で送信できます。
+Customer Journey Analyticsレポートをエクスポートするには、選択した受信者に E メールで送信します。 ファイルをアドホックに送信したり、ファイルをスケジュールに従って送信するように設定したりできます。 ファイルは CSV 形式または PDF 形式で送信できます。
 
 プロジェクトに適用されたタグは、書き出しに自動的に適用されます。
 

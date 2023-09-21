@@ -1,24 +1,22 @@
 ---
 description: クラウドの場所にAnalysis Workspaceプロジェクトを書き出します。
 keywords: Analysis Workspace
-title: Customer Journey Analyticsデータをクラウドに書き出し
+title: Customer Journey Analyticsレポートをクラウドにエクスポート
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 92d240581282684fd3e71dd2135d188b9239512b
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1609'
 ht-degree: 4%
 
 ---
 
-# Customer Journey Analyticsデータをクラウドに書き出し
+# Customer Journey Analyticsレポートをクラウドにエクスポート
 
-{{select-package}}
+Workspace の完全なテーブルをCustomer Journey Analyticsから書き出し、書き出しを指定されたクラウドの宛先に送信できます。
 
-Customer Journey Analyticsから完全なテーブルを書き出し、指定されたクラウドの宛先にデータを送信できます。
-
-また、Customer Journey Analyticsデータを書き出すその他の方法も使用できます。詳しくは、 [エクスポートの概要](/help/analysis-workspace/export/export-project-overview.md).
+また、Customer Journey Analyticsレポートを書き出すその他の方法も使用できます。詳しくは、 [エクスポートの概要](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Analysis Workspaceからの完全なテーブルのエクスポート
 
@@ -44,15 +42,14 @@ Analysis Workspaceから完全なテーブルをエクスポートするには�
    | タグ | 既存のタグをエクスポートに適用することも、新しいタグを作成して適用することもできます。 <p>既存のタグをエクスポートに適用するには、ドロップダウンメニューから任意のタグを選択します。 会社内のタグを適用できます<!-- double-check this -->.</p> <p>新しいタグを作成するには、新しいタグの名前を入力し、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮してください。 <ul><li>適用したタグは、エクスポートテーブルでフィルタリングしたり、検索したりできます。</li> <li>表全体をエクスポートする際に、プロジェクトに適用されたタグは自動的には適用されません。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md). ( または、 [完全なプロジェクトの書き出しをスケジュールする](/help/analysis-workspace/export/t-schedule-report.md)に設定すると、プロジェクトに適用されたタグが自動的に書き出しに適用されます )。  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | 説明 | エクスポートに説明を追加します。 説明を列として [書き出しページ](/help/components/exports/manage-exports.md) （エクスポートを表示する場合） |
    | データビュー | エクスポートに含めるコンポーネントを含むデータビューを選択します。 データビュードロップダウンメニューは、ダイアログの左上隅にあり、データビューアイコンで識別できます![データ表示アイコン](assets/data-view-icon.png).  <p>**注意：** データテーブルに既に含まれているコンポーネントが見つからないデータビューを選択すると、データテーブルをクリアし、選択したデータビューに含まれるコンポーネントを使用して再作成するよう求められます。 </p> |
-   | ルックバックウィンドウ | データテーブルに含める時間枠を選択します。 次のオプションがあります [!UICONTROL **今日**], [!UICONTROL **昨日**], [!UICONTROL **過去 7 日間**], [!UICONTROL **過去 30 日間**], [!UICONTROL **今週**]、および [!UICONTROL **今月**]. |
+   | ルックバックウィンドウ | 各エクスポートファイルに含めるレポート期間を選択します。 次のオプションがあります [!UICONTROL **今日**], [!UICONTROL **昨日**], [!UICONTROL **過去 7 日間**], [!UICONTROL **過去 30 日間**], [!UICONTROL **今週**]、および [!UICONTROL **今月**]. |
    | クリア | データテーブルの内容をクリアします。 これにより、新しいフルテーブルの書き出しダイアログ内で、新しいテーブルの作成を直接開始できます。 |
-   | 書き出し頻度 | エクスポートを実行する頻度を選択します。 <p>次を選択できます。 [!UICONTROL **今すぐ送信（1 回）**] を 1 回だけ送信する必要があります。 このオプションを選択すると、エクスポートが直ちに送信されます。<p>または、定義したスケジュールに従ってエクスポートを送信することもできます。 スケジュールに従って送信する場合、次のオプションがあります。 [!UICONTROL **毎日**], [!UICONTROL **毎週**], [!UICONTROL **毎月（曜日別）**], [!UICONTROL **毎月（日別）**], [!UICONTROL **毎年 — 月の日別**]、および [!UICONTROL **毎年 — 特定の日別**]. </p><p>書き出し頻度を選択する際は、次の点に注意してください。</p><ul><li>Adobe Analytics の [!UICONTROL **ルックバックウィンドウ**] フィールドは、ここで選択した内容に応じて変わります。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>選択したオプションに応じて、追加の設定フィールドが表示されます。</li></ul> |
+   | 書き出し頻度 | エクスポートを実行する頻度のスケジュールを設定します。 <p>次を選択できます。 [!UICONTROL **今すぐ送信（1 回）**] を 1 回だけ送信する必要があります。 このオプションを選択すると、エクスポートが直ちに開始されます。<p>または、定義したスケジュールに従ってエクスポートを送信することもできます。 スケジュールに従って送信する場合、次のオプションがあります。 [!UICONTROL **毎日**], [!UICONTROL **毎週**], [!UICONTROL **毎月（曜日別）**], [!UICONTROL **毎月（日別）**], [!UICONTROL **毎年 — 月の日別**]、および [!UICONTROL **毎年 — 特定の日別**]. </p><p>書き出し頻度を選択する際は、次の点に注意してください。</p><ul><li>Adobe Analytics の [!UICONTROL **ルックバックウィンドウ**] フィールドは、ここで選択した内容に応じて変わります。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>選択したオプションに応じて、追加の設定フィールドが表示されます。</li></ul> |
    | 開始日 :  | スケジュールされたエクスポートを開始する日時。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
    | 終了日 | スケジュールされたエクスポートの有効期限が切れる日時。 設定した日時以降、スケジュールされたエクスポートは実行されなくなります。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
    | ファイル形式 | 書き出したデータを.csv 形式と.json 形式のどちらにするかを選択します。 |
    | アカウント | データを送信するクラウドエクスポートアカウントを選択します。 <p>詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md).</p> |
    | 場所名 | エクスポートデータを送信するアカウント上の場所を選択します。 <p>詳しくは、 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).</p><p>次の項目を選択できます。 [!UICONTROL **新しい場所を追加**] ボタンをクリックして、既存のエクスポートアカウントの新しい場所を作成します。 |
-   | データのプレビュー | 推定サイズ、推定行数および分類数を表示します。 |
 
    {style="table-layout:auto"}
 
@@ -76,11 +73,11 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 * エクスポートされた指標データに計算Customer Journey Analyticsを含めます。
 
-* 連結された値としての構造データ出力 (Adobe AnalyticsのData Warehouseなど )。
+* 連結された値としての構造データ出力。
 
 * アドホックまたはスケジュールに従ってエクスポートします。 ( また、 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).)
 
-* CSV 形式またはPDF形式でのファイルの書き出し。 ( また、 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).)
+* CSV 形式または JSON 形式でファイルを書き出します。 ( また、 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).)
 
 * 複数のディメンションを含むテーブルをエクスポートします。
 
@@ -145,8 +142,6 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 Analysis Workspaceからデータを書き出した後、既存の書き出しを編集、再書き出し、複製、タグ付け、削除できます。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md).
 
-また、失敗したエクスポートに関する再試行やログサポートチケットを使用することもできます。詳しくは、 [書き出しログを管理](/help/components/exports/manage-export-logs.md).
-
 ## 書き出されたデータとマニフェストファイルを表示
 
 ### 書き出したデータ
@@ -184,10 +179,10 @@ Analysis Workspaceからデータを書き出した後、既存の書き出し�
 |---------|----------|---------|
 | カスタムレポートの作成 | ○ | ○ |
 | 計算指標 | ○ | × |
-| セグメント | ○ | ○ |
+| セグメント | ○ | 制限あり |
 | ディメンション | 5 の制限 | 制限なし |
 | 指標 | 5 の制限 | 制限なし |
-| レポート行 | 層に応じて、3、30、150、300 の制限 | 制限なし |
+| レポート行 | 制限は、階層に応じて 300 万、3000 万、1 億 5000 万、3 億 | 制限なし |
 | レポート数 | 制限なし | 制限なし |
 | アドホック配信 | ○ | ○ |
 | 定期的な配信のスケジュール設定 | ○ | ○ |

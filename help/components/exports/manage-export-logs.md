@@ -5,18 +5,16 @@ title: 書き出しログを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: f070f998758cead3709f6c48412b22b29de00164
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '681'
 ht-degree: 7%
 
 ---
 
 # 書き出しログを管理
 
-{{select-package}}
-
-書き出しログは、各書き出しに関する詳細を提供し、Analysis Workspaceデータがクラウドに書き出されるたびに生成されます。 ( データをクラウドに書き出す方法について詳しくは、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md).)
+書き出しログは、各書き出しに関する詳細を提供し、Analysis Workspaceデータがクラウドに書き出されるたびに生成されます。 ( データをクラウドに書き出す方法について詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md).)
 
 スケジュールされたエクスポートの場合、ログには、ログの送信時と同じエクスポート設定が反映されます。 ログは削除できません。
 
@@ -38,7 +36,7 @@ ht-degree: 7%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>。 |
+   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -95,10 +93,10 @@ This option is not available when selecting multiple logs. -->
 
    | 使用可能な列 | 説明 |
    |---------|----------|
-   | 書き出し名 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md). |
+   | 書き出し名 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | 書き出し ID | エクスポートの作成時に、エクスポートに自動的に割り当てられる ID です。 <!-- True? --> |
    | インスタンス ID | Customer Journey Analyticsインスタンスの ID。 <!-- True? --> |
-   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsデータをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md). |
+   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | ファイル数 | エクスポートに含まれるファイルの数。 |
    | サイズ | 書き出しのサイズ。<p>ファイルサイズは 1024 の底を使用して計算され、KIB および MIB と表される場合があります。 クラウドプロバイダーが基数 1,000 のサイズを計算した場合、クラウドプロバイダーに表示されるサイズがここに表示されるサイズと少し異なる場合があります。</p> |
    | 場所 | データが書き出されたアカウント上の場所。 |
