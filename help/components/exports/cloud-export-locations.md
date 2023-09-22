@@ -5,9 +5,9 @@ title: クラウドの書き出し場所の設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1023'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **DB**] | 接続時に使用するデフォルトのデータベース、または空の文字列を指定します。 指定したデフォルトの役割が権限を持つ既存のデータベースを指定します。 <p>詳しくは、 [「JDBC Driver Connection Parameter Reference」ページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **スキーマ**] | 接続後に指定したデータベースに対して使用するデフォルトのスキーマ、または空の文字列を指定します。 指定したスキーマは、指定したデフォルトの役割が権限を持つ既存のスキーマである必要があります。 <p>詳しくは、 [「JDBC Driver Connection Parameter Reference」ページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **ステージ名**] | データファイルが保存される場所の名前。Snowflake。 <p>詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | 指定したデフォルトの役割が権限を持つ既存のデータベースを指定します。<p>ステージ名に関連付けられているデータベースです。</p> <p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **スキーマ**] | 指定したスキーマは、指定したデフォルトの役割が権限を持つ既存のスキーマである必要があります。<p>これは、ステージ名に関連付けられたスキーマです。</p><p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **ステージ名**] | データファイルが格納されるステージの名前。Snowflake。 <p>アカウントで指定した役割が、このステージ名に対する読み取りおよび書き込みアクセス権を持っていることを確認します。 ( 読み取りと書き込みのアクセス権を付与するので、Adobeのみで使用するステージを使用することをお勧めします )。 <p>ロールへの権限の付与について詳しくは、 [権限の付与については、Snowflakeドキュメントを参照してください](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>ステージ名について詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **ステージパス**] | データファイルが保存されている場所のSnowflake。 <p>詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

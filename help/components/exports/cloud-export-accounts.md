@@ -5,9 +5,9 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1551'
 ht-degree: 6%
 
 ---
@@ -189,8 +189,8 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **アカウント識別子**] | 組織内のSnowflakeアカウント、およびSnowflakeがサポートするクラウドプラットフォームとクラウド地域のグローバルネットワーク全体を通じて一意に識別します。 <p>ご使用のアカウントのアカウント ID を取得し、Snowflakeをここに貼り付ける必要があります。</p><p>この情報の入手方法については、 [アカウント識別子ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **ユーザー**] | 接続に使用するユーザーのログイン名。 これは、特にAdobeに使用されるユーザーです。 ここで名前を指定し、Snowflake内に同じ名前のユーザーを作成します。 <p>詳しくは、 [「JDBC Driver Connection Parameter Reference」ページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **役割**] | ドライバが開始したSnowflakeセッションで使用する既定のアクセス制御の役割です。 これは、特にAdobeに使用される役割です。 ここで役割を指定し、同じ名前のSnowflakeで役割を作成し、読み取りと書き込みアクセス権を付与します。<p>詳しくは、 [「JDBC Driver Connection Parameter Reference」ページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+   | [!UICONTROL **ユーザー**] | 接続に使用するユーザーのログイン名。 これは、特にAdobeに使用されるユーザーです。 ここで名前を指定し、Snowflake内に同じ名前のユーザーを作成します。 <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **役割**] | これは、特にAdobeに使用される役割です。 ここで役割を指定し、同じ名前のSnowflakeで役割を作成し、その役割をユーザーに付与します。 <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
