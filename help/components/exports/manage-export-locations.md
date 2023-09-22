@@ -1,13 +1,13 @@
 ---
 description: Customer Journey Analyticsデータの送信先となるクラウドの書き出し場所を管理します
 keywords: Analysis Workspace
-title: クラウドの書き出し場所の設定
+title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 6%
 
 ---

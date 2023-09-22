@@ -5,9 +5,9 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 4%
 
 ---
@@ -63,7 +63,7 @@ Analysis Workspaceから完全なテーブルをエクスポートするには�
 
 Customer Journey Analyticsデータをクラウドに書き出すと、次のことができます。
 
-* Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflake、Adobe Experience Platformなどの共有場所にエクスポートします。
+* Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有場所にエクスポートします。
 
 * 大量の履歴データを保存する。
 

@@ -5,7 +5,7 @@ title: プロジェクトデータの書き出しの概要
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Analysis Workspaceから書き出す場合は、様々な方法を使用でき�
 |---------|----------|
 | [ワークステーションにダウンロード](/help/analysis-workspace/export/download-send.md) | このメソッドは、次の場合に使用します。 <ul><li>個人用ワークステーションにプロジェクトをダウンロードします。</li><li>ダウンロードはアドホックのみです（スケジュールは設定できません）。</li> <li>合計 50,000 行をダウンロードします。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md) | このメソッドは、次の場合に使用します。 <ul><li>エクスポートしたCustomer Journey Analyticsデータを、組織内の他のユーザーに電子メールで送信します。</li><li>アドホックまたはスケジュールに基づいて設定できます。</li> <li>合計 50,000 行を含めます。</li> <!--true?--> |
-| [クラウドアプリケーションに送信](/help/analysis-workspace/export/export-cloud.md) | このメソッドは、次の場合に使用します。 <ul><li>Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflake、Adobe Experience Platform Data Landing Zone など、共有された場所にエクスポートします。</li><li>アドホックまたはスケジュールに基づいて設定できます。</li><li>大量のCustomer Journey Analyticsデータを保存。</li><li>数千または数百万の行を含む完全なテーブルをエクスポートします。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [クラウドアプリケーションに送信](/help/analysis-workspace/export/export-cloud.md) | このメソッドは、次の場合に使用します。 <ul><li>Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有場所にエクスポートします。</li><li>アドホックまたはスケジュールに基づいて設定できます。</li><li>大量のCustomer Journey Analyticsデータを保存。</li><li>数千または数百万の行を含む完全なテーブルをエクスポートします。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
 
