@@ -4,9 +4,9 @@ description: ユーザーエンゲージメントの推移を測定します.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ The [!UICONTROL 使用状況] 表示では、次のグラフ設定を利用で�
 
 グラフにデータを追加します。
 
-* **[!UICONTROL 異常値を表示]**：異常値検出を分析で実行します。 外れ値はドットとして表示され、詳細を確認するには上にマウスポインターを置きます。
+* **[!UICONTROL 異常値を表示]**：実行 [異常値検出](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) トレンド分析で使用できます。 外れ値はドットとして表示され、詳細を確認するには上にマウスポインターを置きます。
 
 ## 時間比較を適用
 
