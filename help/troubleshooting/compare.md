@@ -1,22 +1,23 @@
 ---
-title: Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較
+title: Adobe Analytics データと Customer Journey Analytics データの比較
 description: Adobe Analytics データを Customer Journey Analytics のデータと比較する方法を学ぶ
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+keywords: クエリサービス；クエリサービス；SQL 構文
+source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 64%
+source-wordcount: '866'
+ht-degree: 69%
 
 ---
 
-# Adobe AnalyticsデータとCustomer Journey Analyticsデータの比較
+# Adobe Analytics データと Customer Journey Analytics データの比較
 
 組織でCustomer Journey Analyticsを採用しているので、Adobe AnalyticsとCustomer Journey Analyticsの間でデータにいくつかの違いが生じる場合があります。 これは正常なことで、いくつかの理由で発生する場合があります。Customer Journey Analyticsは、AA のデータに関する制限の一部を改善できるように設計されています。 ただし、予期しない不一致や意図しない不一致が発生する場合があります。 この記事は、データの整合性に関する懸念事項によって妨げられないCustomer Journey Analyticsを、ユーザーとチームが使用できるように、違いの診断と解決に役立つように設計されています。
 
-Adobe Analyticsデータを [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用してCustomer Journey Analytics接続を作成しました。
+Adobe AnalyticsデータをAdobe Experience Platformに取り込んだとします ( [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用してCustomer Journey Analytics接続を作成しました。
 
 ![データフロー](assets/compare.png)
 
@@ -40,7 +41,7 @@ Adobe Analyticsデータを [Analytics ソースコネクタ](https://experience
 
 1. このプロジェクトを保存して、比較で使用できるようにします。
 
-## 手順 2:結果をと比較する [!UICONTROL タイムスタンプ別の合計レコード数] Customer Journey Analytics
+## 手順 2：結果の比較 [!UICONTROL タイムスタンプ別の合計レコード数] Customer Journey Analytics
 
 ここで、Analytics の[!UICONTROL 発生件数]と Customer Journey Analytics のタイムスタンプ別合計レコード数を比較します。
 
@@ -52,19 +53,19 @@ Analytics ソースコネクタがドロップしたレコードがない場合�
 
 1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 
-       &quot;&#39;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}(&#39;), 1, 10) を日として、\
-       Count(_id) AS レコード
-       送信元  {dataset} \
-       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       AND タイムスタンプ&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
-       AND TIMESTAMP NOT NULL \
-       ENDUSERIDS と ENDUSERIDS の両方を指定します。{toDate}_experience.aaid.id が NULL ではありません\
-       日別にグループ化\
-       日別の注文
-       
-       &quot;&#39;
-   
+   ```sql
+   SELECT
+       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+       Count(_id) AS Records 
+   FROM  {dataset}
+   WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+       AND timestamp < from_utc_timestamp('{toDate}','UTC')
+       AND timestamp IS NOT NULL
+       AND enduserids._experience.aaid.id IS NOT NULL
+   GROUP BY Day
+   ORDER BY Day; 
+   ```
+
 1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)で、生データから、Analytics ソースコネクタからによって一部の行が除外された可能性があるかどうかを確認します。
 
    [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行がフィルタリングされる可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
