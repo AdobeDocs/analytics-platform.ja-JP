@@ -5,10 +5,10 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。 データへのアクセスについて» |
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. の内容をコピーします。 [!UICONTROL **ユーザー ARN**] フィールドをクリップボードに追加します。 ユーザー ARN(Amazon Resource Name) は、Adobeが提供します。 このユーザーは、Amazon S3 の役割 ARN で作成したポリシーに関連付ける必要があります。
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. の内容をコピーします。 [!UICONTROL **プリンシパル**] フィールドをクリップボードに追加して、Google Cloud Platform のこのバケットにファイルをアップロードする権限をプリンシパルに付与していることを確認します。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. まだの場合、Azure SAS のバケットに対する権限を付与していることを確認してください。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. まだの場合、Azure RBAC でバケットに対する権限を付与していることを確認してください。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. の内容をコピーします。 [!UICONTROL **公開鍵**] フィールドをクリップボードに追加します。 公開鍵はAdobeが提供します。 公開鍵をSnowflakeで使用して、Snowflakeアカウントに接続します。 詳しくは、 [キーペア認証とキーペアのローテーションページ (Snowflakeドキュメント内 )](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. 「[!UICONTROL **閉じる**]」を選択します。
+1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 

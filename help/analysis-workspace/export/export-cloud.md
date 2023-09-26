@@ -5,9 +5,9 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
   このタイプのデータは、ビジネスインテリジェンスを獲得し、最終的により良いビジネス意思決定を引き起こすために、長期的な傾向を検出するために使用できます。
 
-* 数千または数百万の行を含む完全なテーブルをエクスポートします。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
+* 数千または数百万の行（ライセンスのタイプに応じて 300 万、3000 万、1 億 5000 万の行）を含む完全なテーブルをエクスポートします。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
 
 * エクスポートされた指標データに計算Customer Journey Analyticsを含めます。
 
@@ -108,7 +108,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 次のコンポーネントはサポートされていません。フルテーブルエクスポートの実行時に、Analysis Workspaceからコンポーネントを削除するよう求められます。
 
-* 指標の定義で高度な関数を使用する計算指標 ( [高度な関数](/help/components/calc-metrics/cm-adv-functions.md) （詳細情報）
+* 指標定義で基本関数または高度な関数を使用する計算指標 ( [基本関数](/help/components/calc-metrics/cm-functions.md) および [高度な関数](/help/components/calc-metrics/cm-adv-functions.md) （詳細情報）
 * 管理者によって制限されたコンポーネントのエクスポート ( *データビューのデータガバナンスポリシーに対するフィルタリング* のセクション [ラベルとポリシー](/help/data-views/data-governance.md) （詳細情報）
 * 1 レポートにつき 5 つ以上のディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
 * テーブルの列：
