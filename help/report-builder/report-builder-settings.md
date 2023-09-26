@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 95%
+source-wordcount: '265'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Report Builder 設定を変更するには
 
 1. 「**適用**」をクリックします。
 
-   ![](./assets/image38.png)
+   ![「適用」ボタンをクリックします。](./assets/image38.png)
 
 ## オフラインモード
 
@@ -51,7 +51,7 @@ Report Builder UI で使用する言語を選択するには
 
 1. 「**言語**」ドロップダウンメニューから言語を選択します。
 
-   ![](./assets/image39.png)
+   ![言語リストを選択します。](./assets/image39.png)
 
 1. 「**適用**」をクリックします。
 

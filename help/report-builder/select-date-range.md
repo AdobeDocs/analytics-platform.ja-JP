@@ -1,15 +1,15 @@
 ---
-title: Customer Journey AnalyticsのReport Builderでデータ範囲を選択する方法
+title: Customer Journey Analyticsの「Report Builder」でデータ範囲を選択する方法
 description: Customer Journey AnalyticsのReport Builderでのカレンダー、相対日付、カスタム式の使用方法を説明します
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 96%
+source-wordcount: '1051'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 96%
 
 選択した日付範囲の今日を除外するオプションもあります。
 
-![](./assets/image17.png)
+![「今日を除外」を選択します。](./assets/image17.png)
 
 ## カレンダーの使用
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 
 日付範囲を逆の順序で設定するには、終了日を最初にクリックしてから、開始日をクリックします。
 
-![](./assets/image18.png)
+![終了日をクリックし、開始日をクリックします。](./assets/image18.png)
 
 ### プリセットドロップダウンメニュー
 
@@ -76,7 +76,7 @@ ht-degree: 96%
 
 1. 開始日または終了日、あるいはその両方の相対式を選択します。
 
-   ![](./assets/image19.png)
+   ![「相対日付を使用」を選択してから、相対式を選択します。](./assets/image19.png)
 
    **開始時** - 日、週、月、四半期、年の始めを選択できます。
 
@@ -86,11 +86,11 @@ ht-degree: 96%
 
 1. 相対期間として日、週、月、四半期、年を選択します。
 
-   ![](./assets/image20.png)
+   ![現在の日付を選択します。](./assets/image20.png)
 
 1. 相対日付から日数、週数、月数、四半期数または年数を加算または減算します。
 
-   ![](./assets/image21.png)
+   ![現在の日付と 14 日を選択します。](./assets/image21.png)
 
 1. 「次へ」をクリックして、データ範囲を定義します。
 
@@ -106,7 +106,7 @@ ht-degree: 96%
 
    「**カスタム式の使用**」オプションを選択すると、標準の相対日付範囲コントロールは無効になります。
 
-   ![](./assets/custom_expression.png)
+   ![「tm-1m から td-1d までのカスタム式を使用」を選択します。](./assets/custom_expression.png)
 
 1. カスタム式を入力します。
 
@@ -163,7 +163,7 @@ ht-degree: 96%
 
 日付範囲は、ワークシートのセルで指定できます。「**セルからの日付範囲**」オプションを使用して、選択したセルからデータブロックの開始日と終了日を選択します。「**セルから**」オプションを選択すると、パネルに「**開始**」フィールドと「**終了**」フィールドが表示され、セルの場所を入力できます。
 
-![](./assets/image23.png)
+![セルの [ シート 1!H4] から [ シート 1!I4] までを選択します。](./assets/image23.png)
 
 ## 今日を除外
 

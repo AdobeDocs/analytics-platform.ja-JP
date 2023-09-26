@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 74%
+source-wordcount: '649'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 74%
 
 1. 「**データブロックの作成**」をクリックします。
 
-   ![](./assets/create_db.png)
+   ![「データブロックを作成」オプションを示すスクリーンショット。](./assets/create_db.png)
 
 1. 「**データブロックの場所**」を設定します。
 
@@ -41,13 +41,9 @@ ht-degree: 74%
 
 1. 「**次へ**」をクリックします。
 
-   ![](./assets/choose_date_data_view3.png)
+   ![日付範囲オプションとアクティブな「次へ」ボタンを示すスクリーンショット。](./assets/choose_date_data_view3.png)
 
    データブロックを設定した後、ディメンション、指標およびフィルターを選択して、データブロックを作成できます。「ディメンション」、「指標」および「フィルター」タブは、テーブルビルダーペインの上に表示されます。
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## データブロックの作成
 
@@ -75,13 +71,13 @@ ht-degree: 74%
 
    テーブルにコンポーネントを追加すると、データブロックのプレビューがワークシートのデータブロックの場所に表示されます。テーブル内のアイテムを追加、移動、または削除すると、データブロックプレビューのレイアウトが自動的に更新されます。
 
-   ![](./assets/image10.png)
+   ![追加されたコンポーネントと更新されたワークシートを示すスクリーンショット。](./assets/image10.png)
 
    **行ヘッダーと列ヘッダーの表示/非表示を切り替える**
 
 1. 次をクリック： **テーブル** 設定アイコン。
 
-   ![プレースホルダー画像](./assets/table-settings.png){width="35%"}
+   ![「テーブル設定」オプションを示すスクリーンショット。](./assets/table-settings.png){width="35%"}
 
 1. 「行ヘッダーと列ヘッダーを表示」オプションをオンまたはオフにします。 ヘッダーはデフォルトで表示されます。
 
@@ -89,7 +85,7 @@ ht-degree: 74%
 
 1. ディメンションまたは列ヘッダーの省略記号アイコンをクリックして、設定を表示します。
 
-   ![プレースホルダー画像](./assets/row-heading.png){width="35%"}
+   ![「行」セクションの省略記号アイコン。](./assets/row-heading.png){width="35%"}
 
 1. 「非表示」または「表示」をクリックして、ディメンションラベルまたは列ヘッダーを切り替えます。 デフォルトでは、すべてのラベルが表示されます。
 
@@ -97,8 +93,8 @@ ht-degree: 74%
 
    分析データの取得中は処理メッセージが表示されます。
 
-   ![](./assets/image11.png)
+   ![処理メッセージ。](./assets/image11.png)
 
    Report Builder は、データを取得し、完了したデータブロックをワークシートに表示します。
 
-   ![](./assets/image12.png)
+   ![完了したデータブロック。](./assets/image12.png)

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Report Builder ハブを使用して、データブロックの作成、更新�
 
 Report Builder ハブには、作成ボタンと管理ボタン、コマンドリスト、クイック編集パネルが含まれています。
 
-<img src="./assets/hub51.png" width="50%"/>
+<img src="./assets/hub51.png" width="50%" alt="Report Builder ハブ"/>
 
 
 ## ボタンの作成と管理
@@ -30,7 +30,7 @@ Report Builder ハブには、作成ボタンと管理ボタン、コマンド�
 
 コマンドパネルを使用して、選択したセルまたは以前のアクションと互換性のあるコマンドにアクセスします。
 
-![](./assets/hub1.png)
+![Report Builder Hub のコマンドパネル](./assets/hub1.png)
 
 ### コマンド
 
@@ -47,7 +47,7 @@ Report Builder ハブには、作成ボタンと管理ボタン、コマンド�
 
 スプレッドシートで 1 つ以上のデータブロックを選択すると、Report Builder に「クイック編集」パネルが表示されます。「クイック編集」パネルを使用して、1 つのデータブロック内のパラメーターを変更したり、複数のデータブロック内のパラメーターを同時に変更したりできます。
 
-![](./assets/hub2.png)
+![Report Builderのクイック編集パネル](./assets/hub2.png)
 
 「クイック編集」セクションを使用して行った変更は、選択したすべてのデータブロックに適用されます。
 
@@ -59,7 +59,7 @@ Report Builder ハブには、作成ボタンと管理ボタン、コマンド�
 
 データビューを変更するには、ドロップダウンメニューから新しいデータビューを選択します。
 
-![](./assets/image16.png)
+![Report Builderハブにデータビュードロップダウンメニューが表示されます。](./assets/image16.png)
 
 ### 日付範囲
 

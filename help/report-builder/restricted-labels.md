@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 60%
+source-wordcount: '341'
+ht-degree: 57%
 
 ---
 
@@ -34,10 +34,10 @@ Experience Platformが使用するデータセットで作成されたプライ�
 
 これらのポリシーの影響を受けるコンポーネントはグレー表示されます。 ポリシーが適用されているコンポーネントの上にマウスポインターを置くと、次の内容を示すメモが表示されます。**このデータの使用を禁止するポリシーがこのフィールドに適用されました。**&#x200B;詳しくは、[ラベルとポリシー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html?lang=ja)を参照してください。
 
-![](assets/rb-restricted-label.png)
+![データの使用禁止を示すポリシーメモ。](assets/rb-restricted-label.png)
 
 ## 制限付きデータを含むレポートの更新
 
 ユーザーが後で制限されるデータ要素を含む Report Builder レポートを作成した場合、レポートを更新すると、エラーメッセージが表示されます。
 
-![](assets/error-restricted-data.png)
+![データ要素が後で制限された後に表示されるエラーメッセージ。](assets/error-restricted-data.png)

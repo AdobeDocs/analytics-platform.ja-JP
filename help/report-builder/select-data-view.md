@@ -1,15 +1,15 @@
 ---
-title: Report Builder
+title: Report Builderでデータビューを選択する方法
 description: Adobe Report Builderでデータビューを選択する方法について説明します
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 3%
+source-wordcount: '342'
+ht-degree: 4%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 3%
 セルからデータビューを選択するには、まずデータブロックを作成し、複数のデータビューをデータブロック外のセルに割り当てます。 次に、セルパネルのデータビューを使用して、別のデータビューのデータブロックを更新します。
 
 1. データブロックを作成します。
-データブロックの作成については、 [データブロックの作成](/help/report-builder/create-a-data-block.md).
+データブロックの作成について詳しくは、 [データブロックの作成](/help/report-builder/create-a-data-block.md).
 
-1. 次をクリック： *セルアイコン* 内 *データビュー* 」セクションに入力します。
+1. 次をクリック： *セルアイコン* （内） *データビュー* 」セクションに入力します。
 
-   ![セルのアイコン](/help/report-builder/assets/cell-icon.png)
+   ![セルのアイコンをクリックします。](/help/report-builder/assets/cell-icon.png)
 
 1. セルの場所を選択し、選択したセルにデータビューを追加します。
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 1. セルに割り当てるデータビューを選択します。
 
-   ![セルのアイコン](/help/report-builder/assets/select-data-view.png)
+   ![データビューを選択.](/help/report-builder/assets/select-data-view.png)
 
 1. 「**適用**」をクリックします。
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 1. ドロップダウンリストから別のデータビューを選択します。
 
-1. （オプション） **データブロックを更新を選択** 変更後
+1. （オプション） **データブロックを更新を選択** 変更時に
 
 1. 「**適用**」をクリックします。
 
