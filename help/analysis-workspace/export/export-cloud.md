@@ -5,9 +5,9 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Workspace の完全なテーブルをCustomer Journey Analyticsから書き出�
 
 >[!NOTE]
 >
->この節で説明するようにデータをエクスポートする前に、テーブルが [エクスポート要件](#export-requirements).
+>この節で説明するようにデータをエクスポートする前に、 [エクスポート要件](#export-requirements) が満たされた。
 
 Analysis Workspaceから完全なテーブルをエクスポートするには：
 
@@ -85,9 +85,13 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 ### 最小要件
 
-テーブルでフルテーブルエクスポートをサポートするには、行に少なくとも 1 つのディメンションと各列に 1 つの指標を含める必要があります。
+テーブル、環境、権限が次の要件を満たしていることを確認します。
 
-管理者は、 [Customer Journey Analyticsで使用する IP アドレス](/help/admin/ip-addresses.md) は、ファイアウォールの許可リストに加えるに含まれます。
+* **テーブル：** フルテーブルエクスポートでサポートされるように、すべてのテーブルで、行に少なくとも 1 つのディメンションと各列に 1 つの指標を含める必要があります。
+
+* **環境：** 管理者は、 [Customer Journey Analyticsで使用する IP アドレス](/help/admin/ip-addresses.md) は、ファイアウォールの許可リストに加えるに含まれます。
+
+* **権限：** Adobe Admin Consoleでは、ユーザーに、 [!UICONTROL **フルテーブルエクスポート**] 完全なテーブルをエクスポートするために割り当てられた権限。 Admin Consoleでの製品プロファイルへの権限の割り当てについて詳しくは、 [Customer Journey AnalyticsのAdmin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### サポートされない機能
 

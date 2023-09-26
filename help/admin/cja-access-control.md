@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 83%
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # Customer Journey Analytics のアクセス制御
 
-Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの役割で管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセス。 このトピックでは、これらの役割について詳しく説明します。
+Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つのロール（製品管理者ロール、製品プロファイル管理者ロール、ユーザーレベルアクセス）で管理されます。 このトピックでは、これらの役割について詳しく説明します。
 
 さらに、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセス制限についてのより詳細な方法についても説明します。
 
@@ -78,7 +78,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 医療関連の例を次に示します。例えば、このデータを含むデータセットから、データビューで「高血圧」と呼ばれる指標を作成したとします。指標であるということは、この指標の総値を確認できますが、その指標に該当する個々の患者は確認できません。
 
-## Customer Journey Analyticsの権限のAdmin Console
+## Customer Journey AnalyticsのAdmin Console権限
 
 「**[!UICONTROL 権限]**」タブは、[Admin Console](https://adminconsole.adobe.com/enterprise/) の各製品プロファイルの一部です。特定の製品プロファイルにユーザーを追加できます。次に、特定のデータビューに権限を割り当て、製品プロファイルのユーザーが持つ権限を指定します。次に、Customer Journey Analytics固有の権限を示します。
 
@@ -93,9 +93,11 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
 | **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
 | **[!UICONTROL フィルターの作成]** | ユーザーは[フィルター](/help/components/filters/filters-overview.md)を作成できます。 |
-| **[!UICONTROL Labs のアクセス]** | ユーザーが [ラボ](/help/labs/labs.md) タブをCustomer Journey Analytics |
+| **[!UICONTROL Labs のアクセス]** | ユーザーが [Labs](/help/labs/labs.md) 」タブをCustomer Journey Analyticsに追加します。 |
 | **[!UICONTROL 注釈の作成]** | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->

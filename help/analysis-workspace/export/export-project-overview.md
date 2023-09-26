@@ -5,7 +5,7 @@ title: プロジェクトデータの書き出しの概要
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -39,4 +39,5 @@ Analysis Workspaceから書き出す場合は、様々な方法を使用でき�
 | [クラウドアプリケーションに送信](/help/analysis-workspace/export/export-cloud.md) | このメソッドは、次の場合に使用します。 <ul><li>Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有場所にエクスポートします。</li><li>アドホックまたはスケジュールに基づいて設定できます。</li><li>大量のCustomer Journey Analyticsデータを保存。</li><li>数千または数百万の行を含む完全なテーブルをエクスポートします。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
+
 

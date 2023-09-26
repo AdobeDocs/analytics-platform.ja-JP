@@ -5,9 +5,9 @@ title: クラウドの書き出し場所の設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1082'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **DB**] | 指定したデフォルトの役割が権限を持つ既存のデータベースを指定します。<p>ステージ名に関連付けられているデータベースです。</p> <p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **スキーマ**] | 指定したスキーマは、指定したデフォルトの役割が権限を持つ既存のスキーマである必要があります。<p>これは、ステージ名に関連付けられたスキーマです。</p><p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **ステージ名**] | データファイルが格納されるステージの名前。Snowflake。 <p>アカウントで指定した役割が、このステージ名に対する読み取りおよび書き込みアクセス権を持っていることを確認します。 ( 読み取りと書き込みのアクセス権を付与するので、Adobeのみで使用するステージを使用することをお勧めします )。 <p>ロールへの権限の付与について詳しくは、 [権限の付与については、Snowflakeドキュメントを参照してください](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>ステージ名について詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | 指定したデータベースは既存のデータベースである必要があります。 作成した役割には、このデータベースにアクセスする権限が必要です。<p>ステージ名に関連付けられているデータベースです。</p><p>次のコマンドを使用して、Snowflake内のデータベースにこのロール権限を付与できます。 `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **スキーマ**] | 指定されたスキーマは既存のスキーマである必要があります。 作成した役割には、このスキーマにアクセスする権限が必要です。<p>これは、ステージ名に関連付けられたスキーマです。<p>次のコマンドを使用して、作成したロールをSnowflake内のスキーマに付与できます。 `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>詳しくは、 [データベース、スキーマ、共有コマンドのページ (Snowflake・ドキュメント内 )](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **ステージ名**] | データファイルがSnowflakeに保存される内部ステージの名前。<p>アカウントで指定した役割が、このステージ名に対する読み取りおよび書き込みアクセス権を持っていることを確認します。 ( 読み取りと書き込みのアクセス権を付与するので、Adobeのみで使用するステージを使用することをお勧めします )。<p>次のコマンドを使用して、Snowflake内のステージ名に対して読み取りと書き込みのアクセス権を付与できます。 `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>ロールへの権限の付与について詳しくは、 [権限の付与については、Snowflakeドキュメントを参照してください](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>ステージ名について詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **ステージパス**] | データファイルが保存されている場所のSnowflake。 <p>詳しくは、 [ローカルファイルの内部ステージの選択ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

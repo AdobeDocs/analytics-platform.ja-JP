@@ -5,9 +5,9 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1604'
 ht-degree: 5%
 
 ---
@@ -189,8 +189,8 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **アカウント識別子**] | 組織内のSnowflakeアカウント、およびSnowflakeがサポートするクラウドプラットフォームとクラウド地域のグローバルネットワーク全体を通じて一意に識別します。 <p>ご使用のアカウントのアカウント ID を取得し、Snowflakeをここに貼り付ける必要があります。</p><p>この情報の入手方法については、 [アカウント識別子ページ (Snowflakeドキュメント )](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **ユーザー**] | 接続に使用するユーザーのログイン名。 これは、特にAdobeに使用されるユーザーです。 ここで名前を指定し、Snowflake内に同じ名前のユーザーを作成します。 <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **役割**] | これは、特にAdobeに使用される役割です。 ここで役割を指定し、同じ名前のSnowflakeで役割を作成し、その役割をユーザーに付与します。 <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **ユーザー**] | 接続に使用するユーザーのログイン名。 特にAdobe用に使用する新しいユーザーを作成することをお勧めします。 ここで名前を指定し、Snowflake内に同じ名前のユーザーを作成します。 ユーザーをSnowflakeで作成するには、 `CREATE USER` コマンドを使用します。  <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **役割**] | ユーザーに割り当てられる役割。 特にAdobe用に使用する新しい役割を作成することをお勧めします。 ここで役割を指定し、同じ名前のSnowflakeで役割を作成し、その役割をユーザーに付与します。 を使用して、Snowflake内にロールを作成できます。 `CREATE ROLE` コマンドを使用します。 <p>詳しくは、 [ユーザー、役割、権限に関するコマンド](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -200,7 +200,17 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    <!-- add screen shot -->
 
-1. の内容をコピーします。 [!UICONTROL **公開鍵**] フィールドをクリップボードに追加します。 公開鍵はAdobeが提供します。 公開鍵をSnowflakeで使用して、Snowflakeアカウントに接続します。 詳しくは、 [キーペア認証とキーペアのローテーションページ (Snowflakeドキュメント内 )](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. の内容をコピーします。 [!UICONTROL **公開鍵**] フィールドをクリップボードに追加します。 公開鍵はAdobeが提供します。
+
+   公開鍵をSnowflakeで使用して、Snowflakeアカウントに接続します。 作成したユーザーをこの公開鍵に関連付ける必要があります。
+
+   例えば、「Snowflake」で、次のコマンドを指定します。
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   詳しくは、 [キーペア認証とキーペアのローテーションページ (Snowflakeドキュメント内 )](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. 選択 [!UICONTROL **OK**].
 
