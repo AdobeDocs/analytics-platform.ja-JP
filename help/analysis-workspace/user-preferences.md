@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
 workflow-type: tm+mt
-source-wordcount: '3130'
-ht-degree: 74%
+source-wordcount: '3192'
+ht-degree: 85%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 74%
 
 ## 環境設定を更新
 
-1. Customer Journey Analyticsで、 [!UICONTROL **プロジェクト**] ランディングページで、「 [!UICONTROL **環境設定を編集**].
+1. Customer Journey Analyticsで、 [!UICONTROL **プロジェクト**] ランディングページで、「 」を選択します。 [!UICONTROL **環境設定を編集**].
 
    ![ユーザー環境設定](assets/user-preferences.png)
 
    または
 
-   製品管理者は、 [!UICONTROL **コンポーネント**] タブ、選択 [!UICONTROL **環境設定**].
+   製品管理者は、 [!UICONTROL **コンポーネント**] 「 」タブ、「選択」 [!UICONTROL **環境設定**].
 
 1. 各タブで使用可能な環境設定については、この記事の次の節に進みます。
 
@@ -31,7 +31,7 @@ ht-degree: 74%
 
    * [IMS 組織の環境設定](#ims-organization-preferences)
 
-   * [プロジェクトの環境設定](#project-preferences)
+   * [プロジェクトと分析環境設定](#project-preferences)
 
    * [フリーフォームテーブルの環境設定](#freeform-table-preferences)
 
@@ -49,21 +49,21 @@ ht-degree: 74%
 
 ## IMS 組織の環境設定
 
-組織内のすべてのユーザーおよびプロジェクトに適用する会社の環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
+組織内のすべてのユーザーとプロジェクトに適用される会社環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | <p>このオプションを有効にすると、組織内のユーザーは共有メニューの「他のユーザーと共有」オプションを表示できなくなります。 つまり、ユーザーは、組織でAnalysis Workspaceアカウントを持たないユーザーと、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p><p>このオプションは、Healthcare Shield のライセンスを持つお客様を除き、すべての組織（ユーザーは組織外のユーザーとプロジェクトを共有できます）に対して、デフォルトで無効になっています。 </p><p>このオプションを有効または無効にする際は、次の点を考慮してください。</p> <ul><li><p>このオプションを有効にすると、以前に「他のユーザーと共有」共有オプションを使用してプロジェクトへのアクセスを受け取った人は、そのプロジェクトにアクセスできなくなります。</p></li><li><p>このオプションが有効（Workspace ユーザーとのみ共有を許可）になってから（他のユーザーとの共有を許可）無効にした場合、以前に「他のユーザーと共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有したユーザーは、 [!UICONTROL **リンクはアクティブです**] 他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**])、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**Healthcare Shield のライセンスをお持ちのお客様向け：** このオプションはデフォルトで有効になっており、無効にできません。 このオプションを無効にして、ユーザーが「他のユーザーと共有」共有オプションを使用できるようにする前に、まず [!UICONTROL **他のユーザーとプロジェクトリンクを共有する**] 権限 ( [!UICONTROL **レポートツール**]) をAdobe Admin Consoleでクリックします。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。 権限を追加する方法について詳しくは、「Admin Console」を参照してください。 [製品の権限のAdmin Console](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html).</p></li> |
-| | Experience Cloud 認証を要求 | <p>有効にすると、Analysis Workspaceの「全員で共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。</p> <p>このオプションを有効にすると、ユーザーが「誰とも共有」共有オプションを使用してプロジェクトを共有したときに、共有ダイアログで「Experience Cloud認証が必要」オプションが有効になり、プロジェクトを共有しているユーザーは無効にできません。 ( ユーザーが他のユーザーとプロジェクトを共有する方法について詳しくは、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、以前に「誰とも共有」共有オプションで共有され、「Experience Cloud認証が必要」オプションが有効になっていないすべてのプロジェクトが無効になります。</p></li> <li><p>このオプションが有効 (Experience Cloud認証が必要 ) になり、後で無効（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）になった場合、以前に「全員で共有」共有オプションでプロジェクトへのアクセスを受け取ったユーザーは、自動的にプロジェクトへのアクセスを取り戻しません。 この場合、プロジェクトを共有するユーザーは、他のユーザー ([!UICONTROL **共有**] > [!UICONTROL **他のユーザーと共有**] > [!UICONTROL **リンクはアクティブです**])、 [プロジェクトを他のユーザーと共有する（ログインは不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>このオプションは、組織で SSO が実装されている場合にのみ使用できます。 システム管理者が組織で SSO を有効にする方法について詳しくは、 [ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}.</p><p>組織で SSO が設定されている場合は、コンソールに自動アカウント作成の種類が実装されているかどうかを確認します。 通常、システム管理者がこの設定を行います。詳しくは、 [自動アカウント作成を有効にする](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>組織がヘルスケアシールドのライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にできません。</p></li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | <p>このオプションを有効にすると、組織内のユーザーには共有メニューの「任意のユーザーと共有」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。</p><p>このオプションは、Healthcare Shield のライセンスを持つお客様を除き、すべての組織（ユーザーは組織外のユーザーとプロジェクトを共有できます）に対して、デフォルトで無効になっています。 </p><p>このオプションを有効または無効にする際は、次の点を考慮してください。</p> <ul><li><p>このオプションを有効にすると、以前に「任意のユーザーと共有」共有オプションを通じてプロジェクトへのアクセス権を取得していた人物は、そのプロジェクトにアクセスできなくなります。</p></li><li><p>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「任意のユーザーと共有」共有オプションを通じてプロジェクトへのアクセス権を取得していた人物は、そのプロジェクトへのアクセス権が自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる「[!UICONTROL **リンクがアクティブです**]」オプションを有効にする必要があります（[!UICONTROL **共有**]／[!UICONTROL **任意のユーザーと共有**]）。</p></li><li><p>**Healthcare Shield のライセンスをお持ちのお客様向け：** このオプションはデフォルトで有効になっており、無効にできません。 このオプションを無効にして、ユーザーが「他のユーザーと共有」共有オプションを使用できるようにする前に、まず [!UICONTROL **他のユーザーとプロジェクトリンクを共有する**] 権限（次の場所にあります） [!UICONTROL **レポートツール**]) をAdobe Admin Consoleでクリックします。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。 権限を追加する方法について詳しくは、「Admin Console」を参照してください。 [Admin Consoleでの製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html).</p></li> |
+| | Experience Cloud 認証を要求 | <p>有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。</p> <p>このオプションを有効にすると、ユーザーが「任意のユーザーと共有」共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「Experience Cloud 認証を要求」オプションが有効になり、プロジェクトを共有しているユーザーがこのオプションを無効にすることはできません。（ユーザーがプロジェクトを任意のユーザーと共有できる方法については、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。）</p> <p>このオプションを有効にする際は、次の点を考慮してください。</p><ul><li><p>このオプションを有効にすると、以前に「任意のユーザーと共有」共有オプションで共有され、「Experience Cloud 認証を要求」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。</p></li> <li><p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを知っているすべてのユーザーを許可）にすると、以前に「任意のユーザーと共有」共有オプションを通じてプロジェクトへのアクセス権を取得していた人物は、そのプロジェクトへのアクセス権が自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる「リンクがアクティブです」オプションを有効にする必要があります（[!UICONTROL **共有**]／[!UICONTROL **任意のユーザーと共有**]／[!UICONTROL **リンクがアクティブです**]）。</p></li> <li><p>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法については、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html){target=_blank}を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html){target=_blank}で説明するように、システム管理者がこの設定を行います。</p></li><li><p>組織がヘルスケアシールドのライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にできません。</p></li></ul> |
 
 {style="table-layout:auto"}
 
-## プロジェクトの環境設定
+## プロジェクトと分析環境設定
 
-Analysis Workspace で作成するすべての新しいプロジェクトについて、プロジェクトの環境設定をカスタマイズできます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
+新しいすべてのAnalysis Workspaceプロジェクト、新しいAnalysis Workspaceパネルおよび新しいガイド付き分析に対して、これらの環境設定をカスタマイズできます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
-これらの同じ環境設定の一部は、個々のプロジェクトに対してカスタマイズすることもできます。詳しくは、[プロジェクトの概要](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
+これらの同じ環境設定の一部は、Analysis Workspaceの個々のプロジェクトに対してカスタマイズすることもできます。詳しくは、 [プロジェクトの概要](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 各環境設定の詳細とコンテキストについては、リンクされた環境設定のタイトルをクリックします。
 
@@ -71,7 +71,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | --- | --- | --- |
 | **表示** | | |
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=ja) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspace 使用するビジュアライゼーションカラーパレットを選択します。 <ul><li>Adobe が提供するパレット（デフォルト）</li><li>条件付き書式パレット </li><li>上/下パレット（分岐）<li>カスタム定義パレット</li></ul> |
+| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各色は、個別の分類値を表します。 Adobe指定のオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットには、両端が 2 つあり、中央にベースラインが 1 つある数値の意味が表示されます。<li> 順次パレット：頻度のトレンド（積み重ね棒）のガイド付き分析に適用されます。 このパレットには、明るい色から暗い色までの数値の意味が含まれます。</li></ul> |
 | **データ** | | |
 |  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択した特定のデータビュー</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>カスタム定義範囲</li></ul> |
@@ -147,8 +147,6 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 割合のみを表示 | 数値を削除し、パーセンテージのみを表示します。 |
 | | 割合を整数に四捨五入 | パーセント値を、小数値ではなく、最も近い整数に丸めます。 |
 | | 割合の平均行を表示 | テーブルの先頭に新しい行を挿入し、各列の値の平均を加算します。 |
-| | コホートプレビュー | コホートビジュアライゼーションでのカラーパレットの表示方法のプレビュー。 |
-| | コホートパレット | コホートビジュアライゼーションで使用されるカラーパレット。 |
 | **[コンビネーショングラフ](/help/analysis-workspace/visualizations/combo-charts.md)** | | |
 | | X 軸を表示 | 複合グラフに X 軸を表示します。 |
 | | Y 軸を表示 | 複合グラフに Y 軸を表示します。 |
