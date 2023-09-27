@@ -5,9 +5,9 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1853'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,35 @@ Workspace の完全なテーブルをCustomer Journey Analyticsから書き出�
 
 また、Customer Journey Analyticsレポートを書き出すその他の方法も使用できます。詳しくは、 [エクスポートの概要](/help/analysis-workspace/export/export-project-overview.md).
 
+## 完全なテーブルの書き出しについて
+
+Analysis Workspaceから、Google、Azure、Amazon、Adobeなどのクラウドプロバイダーに、完全なテーブルを書き出すことができます。
+
+[完全なテーブルをクラウドにエクスポートする利点](#advantages-of-exporting-to-the-cloud) には、何百万もの行をエクスポートする機能、計算指標を含める機能、連結された値での構造データ出力などが含まれます。
+
+完全なテーブルをエクスポートする場合は、次の点に注意してください。
+
+* クラウドにエクスポートする前に、テーブル、環境、権限が [輸出要件](#export-requirements).
+
+* 一部 [機能](#unsupported-features) および [コンポーネント](#unsupported-components) 完全なテーブルをクラウドにエクスポートする場合、はサポートされません。
+
+完全なテーブルをクラウドにエクスポートする場合は、次のプロセスを使用します。
+
+1. [クラウドアカウントの設定](/help/components/exports/cloud-export-accounts.md)
+
+1. [アカウント上の場所の設定](/help/components/exports/cloud-export-locations.md)
+
+1. [Workspace からの完全なテーブルのエクスポート](#export-full-tables-from-analysis-workspace)
+
+1. [クラウド内のデータにアクセスする](#view-exported-data-and-manifest-file) および [エクスポートをAdobeで管理](/help/components/exports/manage-exports.md)
+
+![完全なテーブルの書き出しプロセス](assets/export-full-table-process.png)
+
 ## Analysis Workspaceからの完全なテーブルのエクスポート
 
 >[!NOTE]
 >
->この節で説明するようにデータをエクスポートする前に、 [エクスポート要件](#export-requirements) が満たされた。
+>この節で説明するようにデータをエクスポートする前に、 [完全なテーブルの書き出しについて](#understand-full-table-export) 」の節を参照してください。
 
 Analysis Workspaceから完全なテーブルをエクスポートするには：
 
@@ -58,6 +82,38 @@ Analysis Workspaceから完全なテーブルをエクスポートするには�
    指定した頻度で指定したクラウドアカウントにデータが送信されます。
 
 1. （オプション）エクスポートを作成した後、今すぐ送信するか、定義したスケジュールに従って送信するかを選択した場合は、 [書き出しページ](/help/components/exports/manage-exports.md) をクリックし、 [ログの書き出し](/help/components/exports/manage-export-logs.md).</p>
+
+## エクスポートを管理
+
+Analysis Workspaceからデータを書き出した後、既存の書き出しを編集、再書き出し、複製、タグ付け、削除できます。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md).
+
+## 書き出されたデータとマニフェストファイルを表示
+
+### 書き出したデータ
+
+書き出されたデータは、設定したクラウドの宛先で圧縮ファイルとして使用できます。詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
+
+圧縮ファイルのファイル名は、ファイル形式として CSV と JSON のどちらを選択したかに応じて、次のようになります。
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>ファイル形式は、 [!UICONTROL **ファイル形式**] フィールド（テーブルのエクスポート時） [Analysis Workspaceからの完全なテーブルのエクスポート](#export-full-tables-from-analysis-workspace).
+
+### マニフェストファイル
+
+ファイル名がのマニフェストファイル `cja-export-{reportInstanceId}-{idx}.json.gz` は、少なくとも 1 つのファイルを含む、成功した書き出し配信に含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。 次の情報が含まれます。
+
+* 配信されたすべてのファイルのリスト
+
+* 各ファイルのサイズ
+
+* 各ファイルのタイムスタンプ
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## クラウドに書き出す利点
 
@@ -141,38 +197,6 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
   >[!NOTE]
   >
   >複数次元レポートは、この記事で説明するように、データをクラウドにエクスポートする場合にのみサポートされます。
-
-## エクスポートを管理
-
-Analysis Workspaceからデータを書き出した後、既存の書き出しを編集、再書き出し、複製、タグ付け、削除できます。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md).
-
-## 書き出されたデータとマニフェストファイルを表示
-
-### 書き出したデータ
-
-書き出されたデータは、設定したクラウドの宛先で圧縮ファイルとして使用できます。詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
-
-圧縮ファイルのファイル名は、ファイル形式として CSV と JSON のどちらを選択したかに応じて、次のようになります。
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->ファイル形式は、 [!UICONTROL **ファイル形式**] フィールド（テーブルのエクスポート時） [Analysis Workspaceからの完全なテーブルのエクスポート](#export-full-tables-from-analysis-workspace).
-
-### マニフェストファイル
-
-ファイル名がのマニフェストファイル `cja-export-{reportInstanceId}-{idx}.json.gz` は、少なくとも 1 つのファイルを含む、成功した書き出し配信に含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。 次の情報が含まれます。
-
-* 配信されたすべてのファイルのリスト
-
-* 各ファイルのサイズ
-
-* 各ファイルのタイムスタンプ
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## フルテーブルエクスポート (Customer Journey Analytics) とData Warehouse(Adobe Analytics) の比較
 
