@@ -5,10 +5,10 @@ title: 書き出しログを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '708'
+ht-degree: 6%
 
 ---
 
@@ -69,11 +69,15 @@ This option is not available when selecting multiple logs. -->
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **ログ**] 」タブをクリックし、ログを選択します。
+1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
 
-   <!-- add screenshot? -->
+1. 編集するエクスポートに関連付けられているログを探します。
 
-1. 「[!UICONTROL **編集**]」を選択します。
+1. を選択します。 **エクスポートを編集** アイコン ![ログを書き出しアイコン](assets/export-icon.png) ログの横に表示されます。
+
+   または
+
+   ログを選択し、「 」を選択します。 [!UICONTROL **エクスポートを編集**].
 
 ## 列の設定
 

@@ -5,9 +5,9 @@ title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **アカウント**] | 場所が関連付けられているアカウントの名前。 |
    | [!UICONTROL **作成者**] | ロケーションを作成したユーザーの電子メールアドレス。 |
 

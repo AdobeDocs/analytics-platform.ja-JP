@@ -5,9 +5,9 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1600'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. Adobe Analytics の [!UICONTROL **場所アカウントの説明**] 「 」フィールドに、同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。
 
-1. Adobe Analytics の [!UICONTROL **アカウントタイプ**] 「 」フィールドで、エクスポート先のクラウドアカウントのタイプを選択します。 使用可能なアカウントの種類は、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、Adobe Experience Platform Data Landing Zone です。
+1. Adobe Analytics の [!UICONTROL **アカウントタイプ**] 「 」フィールドで、エクスポート先のクラウドアカウントのタイプを選択します。 使用可能なアカウントの種類は、Amazon S3 ロール ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP データランディングゾーンです。
 
 1. に対応する以下のセクションに進みます。 [!UICONTROL **アカウントタイプ**] を選択しました。
 
@@ -50,7 +50,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    * [Snowflake](#snowflake)
 
-### Adobe Experience Platform Data Landing Zone
+### AEP データランディングゾーン
 
 >[!IMPORTANT]
 >
@@ -72,7 +72,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    <!-- add screen shot -->
 
-1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。 データへのアクセスについて» |
+1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。 データへのアクセスの詳細情報&quot; |
 
 1. 選択 [!UICONTROL **OK**].
 

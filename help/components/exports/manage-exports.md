@@ -5,9 +5,9 @@ title: エクスポートを管理
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a95be4cf8e11b7b62f6777abe8884779cfebf482
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **アクティブ**]：スケジュールされた書き出しがまだ期限切れでないことを示します。 </li><li>[!UICONTROL **完了**]：書き出しが正常に書き出されたことを示します。 スケジュールされたエクスポートの場合は、スケジュールの有効期限が切れていることを示します。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
    | [!UICONTROL **頻度**] | エクスポートが発生する頻度。 次の頻度を使用できます。 <ul><li>[!UICONTROL **1 回のみ**]</li><li>[!UICONTROL **毎日**]</li><li>[!UICONTROL **毎週**]</li><li>[!UICONTROL **毎月**]</li><li>[!UICONTROL **毎年**]</li></ul> |
 
@@ -120,6 +120,8 @@ ht-degree: 6%
 
 列を追加または削除するには、 [!UICONTROL エクスポート] タブをクリックして、表示する情報を設定します。
 
+列ヘッダーを選択して、その列でエクスポートを並べ替えます。 デフォルトでは、エクスポートは、エクスポートが最後に変更された日時で並べ替えられます。
+
 1. を選択します。 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/customize-table-icon.png) の右上に [!UICONTROL エクスポート] ページに貼り付けます。
 
    以下の列を表示できます。
@@ -139,7 +141,7 @@ ht-degree: 6%
    | 頻度 | エクスポートが送信される頻度。 次のオプションを使用できます。 [!UICONTROL 1 回], [!UICONTROL 毎日], [!UICONTROL 毎週], [!UICONTROL 毎月（曜日別）], [!UICONTROL 毎月（日別）], [!UICONTROL 毎年 — 月の日別]、および [!UICONTROL 毎年 — 特定の日別]. |
    | 送信時間 | エクスポートが送信された時刻。 |
    | 最後の送信 | エクスポートが最後に送信された時刻。 |
-   | 最終変更日 | エクスポートが最後に変更された日時。 |
+   | 最終変更日 | エクスポートが最後に変更された日時。 エクスポートページ上の項目は、デフォルトではこの列で並べ替えられます。 |
    | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 利用可能なアカウントのタイプは次のとおりです [!UICONTROL Amazon S3 ロール ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake]、および [!UICONTROL Adobe Experience Platform]. |
    | タグ | 書き出しに適用されているタグが表示されます。 書き出しにタグを適用する方法について詳しくは、 [エクスポートのタグ付け](#tag-an-export). |
 

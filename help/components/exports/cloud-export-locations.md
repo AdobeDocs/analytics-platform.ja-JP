@@ -5,9 +5,9 @@ title: クラウドの書き出し場所の設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1415'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    で選択したアカウントタイプに対応する以下のセクションに進みます。 [!UICONTROL **場所アカウント**] フィールドに入力します。
 
-### Adobe Experience Platform Data Landing Zone
+### AEP データランディングゾーン
 
 >[!IMPORTANT]
 >
