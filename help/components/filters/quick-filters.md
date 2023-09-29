@@ -4,9 +4,9 @@ title: クイックフィルター
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: 3d55105a7d4f4687ed0fc6d857c906eec707f6a6
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1168'
 ht-degree: 37%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 37%
 
 ## クイックフィルターの作成 {#create}
 
-Analysis Workspace の任意のユーザーがクイックフィルターを作成できます。
+Analysis Workspaceの任意のユーザーがクイックフィルターを作成できます。
 
 クイックフィルターを作成するには：
 
@@ -61,7 +61,7 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
    | プラス（+）記号 | 別のルールの追加 |
    | AND／OR 修飾子 | 「AND」修飾子または「OR」修飾子をルールに追加できますが、「AND」と「OR」を 1 つのフィルター定義で混在させることはできません。 |
    | [!UICONTROL 適用] | このフィルターをパネルに適用します。フィルターにデータが含まれていない場合は、続行するかどうかを尋ねられます。 |
-   | [!UICONTROL ビルダーを開く] | フィルタービルダーを開きます。フィルタービルダーでフィルターを保存または適用した後は、「クイックフィルター」とは見なされなくなりました。 これは、コンポーネントリストフィルターライブラリの一部になります。 <p>コンポーネントをすべてのプロジェクトと左側のレールで使用できるようにするには、「 」オプションを選択します [!UICONTROL **このフィルターをすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加します**].</p><p>詳しくは、 [クイックフィルターをコンポーネントリストフィルターとして保存する](#save-a-quick-filter-as-a-component-list-filter) 」を参照してください。</p><p>**注意：** フィルターの作成権限を持つユーザーのみが [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=ja#analytics-tools) フィルタービルダーを開くことができます。</p> |
+   | [!UICONTROL ビルダーを開く] | フィルタービルダーを開きます。フィルタービルダーでフィルターを保存または適用した後は、「クイックフィルター」とは見なされなくなりました。 これは、コンポーネントリストフィルターライブラリの一部になります。 <p>コンポーネントをすべてのプロジェクトと左側のレールで使用できるようにするには、「 」オプションを選択します [!UICONTROL **このフィルターをすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加します**].</p><p>詳しくは、 [クイックフィルターをコンポーネントリストフィルターとして保存する](#save-a-quick-filter-as-a-component-list-filter) 」を参照してください。</p><p>**注意：** でセグメントの作成権限を持つユーザーのみ [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=ja) フィルタービルダーを開くことができます。</p> |
    | [!UICONTROL キャンセル] | このクイックフィルターをキャンセルします（適用しないでください）。 |
    | [!UICONTROL 日付範囲] | バリデーターは、データ参照にパネルの日付範囲を使用します。 ただし、クイックフィルターで適用した日付範囲は、パネルの上部にあるパネルの日付範囲より優先されます。 |
    | プレビュー（右上） | 有効なフィルターがあるかどうか、およびフィルターの範囲を確認できます。このフィルターを適用する際に期待できる、データセットの分類を表します。 このフィルターにデータがないことを示す通知が表示される場合があります。 この場合は、続行するか、フィルター定義を変更できます。 |
@@ -83,7 +83,7 @@ Analysis Workspace の任意のユーザーがクイックフィルターを作�
 >
 > クイックフィルターを保存する際は、次の点に注意してください。
 > 
-> * クイックフィルターを保存するには、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=ja#analytics-tools).
+> * クイックフィルターを保存するには、 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=ja).
 > 
 > * フィルターを保存または適用すると、クイックフィルタービルダーで編集できなくなります。 代わりに、通常のフィルタービルダーを使用する必要があります。
 
