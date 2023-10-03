@@ -5,9 +5,10 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1543'
 ht-degree: 5%
 
 ---
@@ -58,21 +59,13 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
 
-1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスには、次の情報が表示されます。
-
-   | フィールド | 関数 |
-   |---------|----------|
-   | [!UICONTROL **IMS 組織 ID**] | IMS Org ID は、Adobeが提供します。 この情報は、一般には必要ありません。 アカウントに問題が発生し、カスタマーケアに連絡する必要がある場合に役立ちます。 |
-
-   {style="table-layout:auto"}
-
 1. 「[!UICONTROL **保存**]」を選択します。
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
    <!-- add screen shot -->
 
-1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。 データへのアクセスの詳細情報&quot; |
+1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
 
 1. 選択 [!UICONTROL **OK**].
 
@@ -215,6 +208,3 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 1. 選択 [!UICONTROL **OK**].
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
-
-
-

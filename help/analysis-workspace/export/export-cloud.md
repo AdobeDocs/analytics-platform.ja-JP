@@ -5,9 +5,10 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1924'
 ht-degree: 4%
 
 ---
@@ -110,9 +111,7 @@ Analysis Workspaceからデータを書き出した後、既存の書き出し�
 
 * 配信されたすべてのファイルのリスト
 
-* 各ファイルのサイズ
-
-* 各ファイルのタイムスタンプ
+* 各ファイルの MD5 チェックサム
 
 <!-- add in  what the file name, structure, and file format will be -->
 
@@ -126,7 +125,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
   このタイプのデータは、ビジネスインテリジェンスを獲得し、最終的により良いビジネス意思決定を引き起こすために、長期的な傾向を検出するために使用できます。
 
-* 数千または数百万の行（ライセンスのタイプに応じて 300 万、3000 万、1 億 5000 万の行）を含む完全なテーブルをエクスポートします。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
+* 数千または数百万の行（ライセンスタイプに応じて 300 万、3000 万、1 億 5000 万、3 億行）を含む完全なテーブルをエクスポートします。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
 
 * エクスポートされた指標データに計算Customer Journey Analyticsを含めます。
 
