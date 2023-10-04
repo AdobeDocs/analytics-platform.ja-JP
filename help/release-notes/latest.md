@@ -3,35 +3,35 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: aa7f4361b1353a86b87c36c3d08e99ddb8ffd049
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 2b8712506d68d89d41668fac32bb669055d94e91
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 51%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2023年9月）
+# 最新のAdobe Customer Journey Analyticsリリースノート（2023 年 10 月）
 
-**最終更新日**：2023年9月13日（PT）
+**最終更新日**：2023年10月4日（PT）
 
-このリリースノートは、2023年9月13日～10月3日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
+これらのリリースノートでは、2023 年 10 月 4 日から 2023 年 10 月 24 日までのリリース期間を扱っています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Analytics ソースコネクタでの A4T 分類のサポート** | `_experience.decisioning.propositions.scopeDetails.correlationID` フィールドが Adobe Analytics ソースコネクタスキーマで使用できるようになりました。このフィールドは、A4T 分類のサポートに使用し、2023年9月から入力される予定です。 | | 該当なし | 2023年9月12日（PT） |
-| **派生フィールドの更新** | 派生フィールド機能に対して、次の更新を行いました。<ul><li>[!UICONTROL 参照]関数の名前を[!UICONTROL 分類]に変更し、CSV データを読み込むオプションを追加しました。**（リリース 2023年9月27日（PT））**</li><li>派生フィールドを定義する際に、[!UICONTROL トリミング]、[!UICONTROL 小文字]、[!UICONTROL 参照]などの追加関数を使用できます。</li><li>また、派生フィールド定義では、[!UICONTROL 参照]データセットと[!UICONTROL プロファイル]データセットのフィールドもサポートするようになりました。</li></ul>[詳細情報](/help/data-views/derived-fields/derived-fields.md) | 該当なし | 2023年9月13日（PT） |
-| **Adobe Product Analytics の新機能** | <ul><li>**異常値検出**：イベントを過去のトレンドから派生した期待値と比較します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html?lang=ja)</li><li>**トレンド使用頻度ビュー**：使用頻度別に機能の採用状況を測定します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html?lang=ja)</li><li>**ユーザー環境設定**：カラーパレットや数値形式など、多くのユーザー環境設定を設定します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=ja)</li></ul> | 該当なし | 2023年9月18日（PT） |
-| **Experience Edge デバイス検索** | Experience Platform Edge Network を介したデバイスタイプの自動データ収集を有効にします。この Experience Edge サービスは、他の Experience Platform アプリと共に Customer Journey Analytics にメリットをもたらします。（ドキュメントへのリンクを添付） | 該当なし | 2023年9月27日（PT） |
-| **コンポーネントを管理する際に使用できる新しい列** | コンポーネントを管理する際に、[計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md)と[フィルターマネージャー](/help/components/filters/manage-filters.md)で次の新しい列を使用できるようになりました。<ul><li>使用場所</li><li>前回の使用</li></ul><p>この情報は、コンポーネントが組織内のユーザーにとって有用かどうか、どこで使用されているか、削除または変更する必要があるかどうかを判断するのに役立ちます。この情報と共にデータ辞書を使用すると、組織内でのコンポーネントの使用方法を追跡し、より深く理解することができます。</p> | 2023年9月20日（PT） | 2023年10月4日（PT） |
+| **完全なテーブルをクラウドにエクスポート** | Customer Journey Analyticsの完全なテーブルの書き出しを使用すると、数百万行の Workspace 行をクラウドの宛先に書き出すことができます。 フルテーブルの書き出しでは、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をサポートし、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信できます。 Adobe AnalyticsでのData Warehouseレポートの発展です。現在のData Warehouseでは、リクエストの多い新機能が多数追加されています。 クラウドの書き出しオプションは次のとおりです。<ul><li>Adobe Experience Platform Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). | 2023年10月4日（PT） | 2023年10月19日 |
+| **コンポーネントを管理する際に使用できる新しい列** | コンポーネントを管理する際に、[計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html)と[フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html)で次の新しい列を使用できるようになりました。<ul><li>使用場所</li><li>前回の使用</li></ul>この情報は、コンポーネントが組織内のユーザーにとって有用かどうか、どこで使用されているか、削除または変更する必要があるかどうかを判断するのに役立ちます。この情報と共にデータ辞書を使用すると、組織内でのコンポーネントの使用方法を追跡し、より深く理解することができます。 | 2023年9月23日（PT） | 2023年10月4日（PT） |
+| **Adobe Analyticsプロジェクトと含まれるコンポーネントをCustomer Journey Analyticsに移行** | これで、Adobe AnalyticsプロジェクトをCustomer Journey Analyticsに移行できます。 このプロセスにより、Adobe AnalyticsからCustomer Journey Analyticsへの移行が簡単になります。 プロジェクトをCustomer Journey Analyticsに移行すると、アセットはAdobe AnalyticsレポートスイートからCustomer Journey Analyticsデータビューにマッピングされます。 **Adobe AnalyticsインターフェイスからCustomer Journey Analyticsにプロジェクトを移行します。** [詳細情報](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | 該当なし | 2023年10月4日（PT） |
+| **Adobe Product Analytics：シリーズを表示/非表示** | グラフの凡例またはテーブルの行をクリックして、ビジュアライゼーションでの系列の表示を制御します。  詳細情報（近日公開） | 該当なし | 2023年10月4日（PT） |
+| **Adobe Product Analytics内の注釈** | ガイド付き分析プロジェクトで、注釈の表示機能がサポートされるようになりました。 各ビュータイプについては、 [ガイド付き分析](/help/guided-analysis/overview.md) 注釈との相互作用に関する詳細 詳細情報（近日公開） | 該当なし | 2023年10月4日（PT） |
+| **レポートアクティビティマネージャー** | レポートアクティビティマネージャーでは、組織の各接続のレポート容量を確認できます。 このレポートは、レポートの消費状況を詳細に把握し、ピーク時のレポート作成時に容量の問題を簡単に診断して修正できるように管理者に提供します。 レポートアクティビティマネージャーの主な機能は次のとおりです。<ul><li>現在のレポートリクエストをキャンセルします（ガイド付き分析からのリクエストやテーブル全体のエクスポートを含む）。</li><li>定義した期間に対する後続のリクエストの制限</li></ul>管理者は、現在のリクエストのキャンセルに加えて、定義した期間だけリクエストを制限できるようになりました。 管理者は、リクエスト、プロジェクトまたはユーザーごとにリクエストを制限できます。  詳細情報（近日公開） | 2023年10月17日（PT） | 2023年10月23日（PT） |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics の修正点
 
-AN-310972、AN-319509、AN-322245、AN-323411、AN-323719、AN-326101、AN-326125、AN-326888
-
+AN-325940、AN-326468、AN-328301、AN-328640、AN-329370
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 
