@@ -4,10 +4,10 @@ description: Customer Journey Analytics を実装するのに必要な前提条�
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 8d3517c86743434aed345bf06b3bd3345490b0ee
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
+source-wordcount: '476'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics を利用できる人物は次のとおりです。
 
 | タスク | 詳細 |
 | --- | --- |
-| **手順 1：Adobe Analytics から Customer Journey Analytics に移行する場合は、何をすべきかを学ぶ。** | [Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)および[従来の Adobe Analytics からのデータの取り込みと使用](../data-ingestion/analytics.md)を参照してください。 |
+| **手順 1:Adobe AnalyticsからCustomer Journey Analyticsに移行する場合は、データを移行し、プロジェクトをレプリケートします。** | Adobe Analyticsから Adobe Campaign へのデータの移行について詳しくは、次のCustomer Journey Analyticsを参照してください。 <ul><li>[Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)</li><li>[従来の Adobe Analytics からのデータの取り込みと使用](../data-ingestion/analytics.md)</li></ul><p>Adobe AnalyticsプロジェクトのCustomer Journey Analyticsでのレプリケーションと、Adobe AnalyticsレポートスイートからCustomer Journey Analyticsデータビューへのプロジェクトコンポーネントのマッピングについて詳しくは、以下を参照してください。</p><ul><li>[Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html)</li></ul> |
 | **手順 2：他のデータを Adobe Experience Platform に取り込む** | この手順は、Adobe Experience Platform で実行され、いくつかのサブ手順が必要となります。<ul><li>**手順 2a：データスキーマの準備**：[Adobe Experience Data Model（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して顧客体験データを標準化し、顧客体験管理の[スキーマを定義](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)します。</li><li>**手順 2b：スキーマに基づいたデータセットの作成**：Platform 内のデータは、メールデータセット、CRM データセット、POS データセット、Adobe Analytics データセットなどのデータセットで構成されます。各データセットは、データのスキーマとバッチで構成されます。[Experience Platform でデータセットを作成](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=ja)できます。</li><li>**手順 2c：Experience Platform へのデータの取り込み**：いくつかのオプションがあります。</li></ul> |
 | **手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続の作成** | 接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。Experience Platform データセットに関するレポートを作成するには、まず Experience Platform とワークスペースのデータセット間で接続を確立する必要があります。<br>[接続の作成](/help/connections/create-connection.md)を参照してください。 |
 | **手順 4：データビューの作成** | データ表示は、データの「フィルタリングされた」表示です。同じ接続に対して異なるデータビューを作成し、訪問のタイムアウト、アトリビューションなどに関する設定を変えることができます。1 つのデータセットに対して複数のデータビューを作成できます。<br>[データビューの作成](/help/data-views/create-dataview.md)を参照してください。 |
