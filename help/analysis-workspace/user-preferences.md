@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
+source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
 workflow-type: tm+mt
-source-wordcount: '3192'
-ht-degree: 85%
+source-wordcount: '3218'
+ht-degree: 84%
 
 ---
 
@@ -111,6 +111,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | 位置で分類 | 項目自体ではなく項目の位置に分類を保持する場合は、このオプションを選択します。分類について詳しくは、[ディメンションの分類](/help/components/dimensions/t-breakdown-fa.md)を参照してください。 |
 | | パーセンテージ計算 | <ul><li>列</li><li>行</li></ul> |
+| | 列の合計（静的な行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
 
 ## ビジュアライゼーションの環境設定
 
