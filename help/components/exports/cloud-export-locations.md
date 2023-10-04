@@ -3,10 +3,8 @@ description: Customer Journey Analyticsデータを送信できるクラウド�
 keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # クラウドの書き出し場所の設定
+
+{{release-limited-testing}}
 
 Customer Journey Analyticsレポートをクラウドの宛先に書き出す前に、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md)に値を入力する場合は、データを送信する場所を追加して設定する必要があります。
 

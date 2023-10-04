@@ -3,10 +3,8 @@ description: Customer Journey Analyticsデータの送信先となるクラウ�
 keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 5%
@@ -14,6 +12,8 @@ ht-degree: 5%
 ---
 
 # クラウドエクスポートアカウントの設定
+
+{{release-limited-testing}}
 
 Customer Journey Analyticsレポートをクラウドの宛先に書き出す前に、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md)に値を入力する場合は、データの送信先を追加して設定する必要があります。
 
@@ -65,7 +65,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    <!-- add screen shot -->
 
-1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS トークンを使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS URI を使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
 
 1. 選択 [!UICONTROL **OK**].
 

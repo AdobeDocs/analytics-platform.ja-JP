@@ -3,9 +3,8 @@ description: 既存のエクスポートのログを管理
 keywords: Analysis Workspace
 title: 失敗した書き出しのトラブルシューティング
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 8%
@@ -13,6 +12,8 @@ ht-degree: 8%
 ---
 
 # 失敗した書き出しのトラブルシューティング
+
+{{release-limited-testing}}
 
 次の場合： [完全なテーブルをAnalysis Workspaceからクラウドの宛先に書き出す](/help/analysis-workspace/export/export-cloud.md)を使用すると、 [「書き出し」タブ](/help/components/exports/manage-exports.md) そして [「ログ」タブ](/help/components/exports/manage-export-logs.md). 失敗したエクスポートのステータスは次のとおりです： [!UICONTROL **失敗**].
 

@@ -3,9 +3,8 @@ description: 既存のエクスポートを管理
 keywords: Analysis Workspace
 title: エクスポートを管理
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # エクスポートを管理
+
+{{release-limited-testing}}
 
 表全体をエクスポートした後、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md)を使用する場合、エクスポートは [!UICONTROL エクスポート] タブ [!UICONTROL エクスポート] ページに貼り付けます。
 
