@@ -1,37 +1,37 @@
 ---
 title: ラベルとポリシー
-description: Adobe Experience Platformで定義されたデータラベルとポリシーが、Customer Journey Analyticsのデータビューとレポートに与える影響について説明します。
+description: Adobe Experience Platform で定義されたデータラベルとポリシーが、Customer Journey Analytics のデータビューとレポートに与える影響について説明します。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # ラベルとポリシー
 
-Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これらのラベルとポリシーをCustomer Journey Analyticsで表示できます。
+Experience Platform でデータセットを作成する場合、データセットの一部またはすべての要素に対して[データ使用状況ラベル](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=ja)を作成できます。これらのラベルとポリシーは、Customer Journey Analytics で表示できます。
 
-次のラベルは、Customer Journey Analyticsにとって特に重要です。
+次のラベルは、Customer Journey Analytics にとって特に重要です。
 
-* `C8` ラベル - **[!UICONTROL 測定なし]**。このラベルは、組織の Web サイトやアプリでデータを分析に使用できないことを示します。
+* `C8` ラベル - **[!UICONTROL 測定なし]**。このラベルは、組織の web サイトやアプリで分析に対してデータが使用できないことを示します。
 
-* `C12` ラベル - **[!UICONTROL 一般的なデータの書き出しがありません]**。この方法でラベル付けされたスキーマフィールドは、（レポート、エクスポート、API などを介して）Customer Journey Analyticsからエクスポートまたはダウンロードすることはできません。
+* `C12` ラベル - **[!UICONTROL 一般的なデータの書き出しがありません]**。この方法でラベル付けされたスキーマフィールドは、Customer Journey Analytics から（レポート、書き出し、API などを介して）書き出しまたはダウンロードはできません。
 
 >[!NOTE]
 >
->データ使用ラベルは、ステッチされたデータセットに自動的には反映されません。 ただし、手動で追加することはできます。
+>データ使用状況ラベルは、ステッチされたデータセットに自動的に生成されません。ただし、手動で追加することはできます。
 
-「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。それが政策の目的です ポリシーを作成するには、 [Experience PlatformUI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) または [ポリシーサービス API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) Experience Platform。
+「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。これを行うにはポリシーを使用します。ポリシーは、[Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) を使用するか、Experience Platform の [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介して作成します。
 
-2 つのAdobe定義のポリシーがCustomer Journey Analyticsで表示され、レポートおよびダウンロード/共有に影響を与えます。
+Customer Journey Analytics では、次の 2 つのアドビが定義するポリシーが表示され、レポートおよびダウンロード／共有に影響します。
 
 * **[!UICONTROL Analytics の適用]** ポリシー
 * **[!UICONTROL ダウンロードの適用]**&#x200B;ポリシー
 
-## データビューでのデータラベルのCustomer Journey Analytics
+## Customer Journey Analytics データビューでのデータラベルの表示
 
 Experience Platform で作成したデータラベルは、データビューのユーザーインターフェイスで次の 3 つの場所に表示されます。
 
@@ -45,7 +45,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 ## データビューのデータガバナンスラベルに対するフィルター
 
-データビューエディターで、 [!UICONTROL フィルター] 左側のトレールのアイコンを使用し、次の条件でデータビューコンポーネントをフィルタリングします。 **[!UICONTROL データガバナンス]** およびのタイプ **[!UICONTROL ラベル]**:
+データビューエディターで、左側のパネルの[!UICONTROL フィルター]アイコンをクリックし、**[!UICONTROL データガバナンス]**&#x200B;および&#x200B;**[!UICONTROL ラベル]**&#x200B;のタイプで、データビューコンポーネントをフィルタリングします。
 
 ![](assets/filter-labels.png)
 
@@ -53,9 +53,9 @@ Experience Platform で作成したデータラベルは、データビューの
 
 ## データビューでデータガバナンスポリシーをフィルタリング
 
-分析または書き出しの目的で特定のCustomer Journey Analyticsデータビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
+分析または書き出しの目的で特定の Customer Journey Analytics データビュー要素の使用をブロックするポリシーがオンになっているかどうかを確認できます。
 
-もう一度、 [!UICONTROL フィルター] アイコン（左側のレールとの下） **[!UICONTROL データガバナンス]**&#x200B;をクリックし、 **[!UICONTROL ポリシー]**:
+再度、左側のパネルの&#x200B;**[!UICONTROL データガバナンス]**&#x200B;下の [!UICONTROL フィルター] アイコン、「**[!UICONTROL ポリシー]**」の順にクリックします。
 
 ![](assets/filter-policies.png)
 
@@ -75,6 +75,6 @@ Experience Platform で作成したデータラベルは、データビューの
 >[機密データのダウンロード](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Report Builder の制限ラベルとは?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)
+>[Report Builder の制限ラベルとは？](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)
 
 

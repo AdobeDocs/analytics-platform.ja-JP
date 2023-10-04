@@ -1,15 +1,15 @@
 ---
 title: クロスチャネル分析
-description: 複数のデータセットのユーザー ID のキーを変更して、ユーザーを結び付ける方法を説明します。
+description: 複数のデータセットのユーザー ID のキーを変更して、ユーザーをステッチする方法について説明します。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
 hide: true
 hidefromtoc: true
 source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
