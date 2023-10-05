@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: エクスポートを管理
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '996'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,8 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **アクティブ**]：スケジュールされた書き出しがまだ期限切れでないことを示します。 </li><li>[!UICONTROL **完了**]：書き出しが正常に書き出されたことを示します。 スケジュールされたエクスポートの場合は、スケジュールの有効期限が切れていることを示します。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
+   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **アクティブ**]：スケジュールされた書き出しがまだ期限切れでない、または 1 回限りの書き出しがまだ完了していないことを示します。 </li><li>[!UICONTROL **完了**]：書き出しが正常に書き出されたことを示します。 スケジュールされたエクスポートの場合は、スケジュールの有効期限が切れていることを示します。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 次の項目にカーソルを合わせます。 [!UICONTROL **失敗**] ステータスを使用して、失敗に関する詳細を確認します。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
    | [!UICONTROL **頻度**] | エクスポートが発生する頻度。 次の頻度を使用できます。 <ul><li>[!UICONTROL **1 回のみ**]</li><li>[!UICONTROL **毎日**]</li><li>[!UICONTROL **毎週**]</li><li>[!UICONTROL **毎月**]</li><li>[!UICONTROL **毎年**]</li></ul> |
 
    {style="table-layout:auto"}
@@ -57,7 +57,7 @@ ht-degree: 6%
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、編集するエクスポートを選択します。
+1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、編集するエクスポートの横にあるチェックボックスを選択します。
 
    複数の書き出しを選択する場合は、このオプションを使用できません。
 
@@ -69,7 +69,7 @@ ht-degree: 6%
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、複製するエクスポートを選択します。
+1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、複製するエクスポートの横にあるチェックボックスを選択します。
 
    複数の書き出しを選択する場合は、このオプションを使用できません。
 
@@ -85,7 +85,7 @@ ht-degree: 6%
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、実行するエクスポートを選択します。
+1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、実行するエクスポートの横にあるチェックボックスを選択します。
 
    複数の書き出しを選択する場合は、このオプションを使用できません。
 
@@ -97,11 +97,11 @@ ht-degree: 6%
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. 次の日： [!UICONTROL **エクスポート**] タブで、タグを付ける 1 つ以上の書き出しを選択します。
+1. 次の日： [!UICONTROL **エクスポート**] タブで、タグを付ける 1 つ以上の書き出しの横にあるチェックボックスを選択します。
 
-1. 選択 [!UICONTROL **タグ**].
+1. 選択 [!UICONTROL **タグを編集**].
 
-1. タグの書き出しダイアログで、新しいタグを作成するタグの名前を入力するか、ドロップダウンメニューから既存のタグを選択します。
+1. Adobe Analytics の [!UICONTROL **タグの書き出し**] ダイアログで、新しいタグを作成するタグの名前を入力するか、ドロップダウンメニューから既存のタグを選択します。
 
    選択した書き出しの間の共通タグが、タグダイアログに表示されます。 <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
 
@@ -113,7 +113,7 @@ ht-degree: 6%
 
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 
-1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、削除する 1 つ以上のエクスポートを選択します。
+1. 次の日： [!UICONTROL **エクスポート**] 「 」タブで、削除する 1 つ以上のエクスポートの横にあるチェックボックスを選択します。
 
 1. 選択 [!UICONTROL **削除**]&#x200B;を選択し、「 [!UICONTROL **削除**] 確認メッセージが表示されたら、
 
@@ -123,7 +123,9 @@ ht-degree: 6%
 
 列ヘッダーを選択して、その列でエクスポートを並べ替えます。 デフォルトでは、エクスポートは、エクスポートが最後に変更された日時で並べ替えられます。
 
-1. を選択します。 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/customize-table-icon.png) の右上に [!UICONTROL エクスポート] ページに貼り付けます。
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+
+1. 次の日： [!UICONTROL **エクスポート**] タブで、 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/customize-table-icon.png) の右上に [!UICONTROL エクスポート] ページに貼り付けます。
 
    以下の列を表示できます。
 
@@ -131,9 +133,9 @@ ht-degree: 6%
    |---------|----------|
    | 名前 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | ID | エクスポートの作成時に、エクスポートに自動的に割り当てられる ID です。 <!-- True? --> |
-   | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL アクティブ], [!UICONTROL 一時停止], [!UICONTROL 完了]、および [!UICONTROL 失敗].<p> **注意：** 失敗したエクスポートのトラブルシューティングについて詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
    | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
-   | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL 保留中], [!UICONTROL 配信済み]、および [!UICONTROL 失敗]. |
+   | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL アクティブ], [!UICONTROL 完了]、および [!UICONTROL 失敗].<p> **注意：** 失敗したエクスポートのトラブルシューティングについて詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
+   | タグ | 書き出しに適用されているタグが表示されます。 書き出しにタグを適用する方法について詳しくは、 [エクスポートのタグ付け](#tag-an-export). |
    | テーブルサイズ (最後の送信) | 最後に送信されたエクスポートのサイズ。 |
    | 作成者 | エクスポートを作成したユーザー。 |
    | 作成日 | エクスポートが作成された日時。 <!-- true? --> |
@@ -144,7 +146,6 @@ ht-degree: 6%
    | 最後の送信 | エクスポートが最後に送信された時刻。 |
    | 最終変更日 | エクスポートが最後に変更された日時。 エクスポートページ上の項目は、デフォルトではこの列で並べ替えられます。 |
    | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 利用可能なアカウントのタイプは次のとおりです [!UICONTROL Amazon S3 ロール ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake]、および [!UICONTROL Adobe Experience Platform]. |
-   | タグ | 書き出しに適用されているタグが表示されます。 書き出しにタグを適用する方法について詳しくは、 [エクスポートのタグ付け](#tag-an-export). |
 
    {style="table-layout:auto"}
 

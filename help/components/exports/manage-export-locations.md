@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '467'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **アカウント**] | 場所が関連付けられているアカウントの名前。 |
    | [!UICONTROL **作成者**] | ロケーションを作成したユーザーの電子メールアドレス。 |
 
@@ -49,7 +49,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所**] タブをクリックします。
 
-1. 「検索」タブで、検索する場所に関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
+1. 検索フィールドに、検索する場所に関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
 
 ## 場所の編集
 
@@ -57,7 +57,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、編集する場所を選択します。
 
-   <!-- add screenshot? -->
+   ![場所の編集](assets/locations-edit.png)
 
 1. 「[!UICONTROL **編集**]」を選択します。
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、削除する 1 つ以上の場所を選択します。
 
-   <!-- add screenshot? -->
+   ![場所の編集](assets/locations-edit.png)
 
 1. 選択 [!UICONTROL **削除**]&#x200B;を選択し、「 [!UICONTROL **削除**] を再び確認ダイアログに表示します。
 
@@ -92,6 +92,20 @@ ht-degree: 6%
 1. 選択 [!UICONTROL **詳細を表示**] を編集するアカウントに設定します。
 
 1. 必要に応じて変更を加え、「 」を選択します。 [!UICONTROL **保存**].
+
+## アカウントキーを表示
+
+アカウントを作成した後は、そのアカウントに関連付けられているすべてのアカウントキーを表示できます。 クラウドプロバイダーとのアカウント設定を完了していない場合は、この情報を表示する必要がある場合があります [アカウントを最初に設定したとき](/help/components/exports/cloud-export-accounts.md).
+
+エクスポートアカウントに関連付けられたキーを表示するには：
+
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+
+1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
+
+   ![アカウントページ](assets/account-page.png)
+
+1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントキー**].
 
 ## アカウントの削除
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 書き出しログを管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,8 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **書き出し ID**] | 表示するエクスポートログのエクスポート ID を指定します。 |
+   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -48,7 +49,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
 
-1. 「検索」タブで、検索するログに関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
+1. 検索フィールドに、検索するログに関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ This option is not available when selecting multiple logs. -->
 
 1. 編集するエクスポートに関連付けられているログを探します。
 
-1. を選択します。 **エクスポートを編集** アイコン ![ログを書き出しアイコン](assets/export-icon.png) ログの横に表示されます。
+1. を選択します。 **エクスポートを編集** アイコン ![ログを書き出しアイコン](assets/export-icon.png) ログ名の横に表示されます。
 
    または
 
-   ログを選択し、「 」を選択します。 [!UICONTROL **エクスポートを編集**].
+   ログの横にあるチェックボックスを選択し、「 」を選択します。 [!UICONTROL **エクスポートを編集**].
 
 ## 列の設定
 

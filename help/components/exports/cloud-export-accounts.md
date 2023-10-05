@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1573'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. に対応する以下のセクションに進みます。 [!UICONTROL **アカウントタイプ**] を選択しました。
 
-   * [Adobe Experience Platform Data Landing Zone](#adobe-experience-platform)
+   * [AEP データランディングゾーン](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![アカウントを書き出しダイアログ AEP データランディングゾーン](assets/export-account-aep.png)
 
-1. の内容をコピーします。 [!UICONTROL **SAS**] フィールドをクリップボードに追加します。 この SAS URI を使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+1. の内容をコピーします。 [!UICONTROL **SAS URI**] フィールドをクリップボードに追加します。 この SAS URI を使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
 
 1. 選択 [!UICONTROL **OK**].
 
@@ -87,7 +87,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![作成したアカウントを書き出しダイアログAmazon S3 の役割 ARN](assets/export-account-amazons3.png)
 
 1. の内容をコピーします。 [!UICONTROL **ユーザー ARN**] フィールドをクリップボードに追加します。 ユーザー ARN(Amazon Resource Name) は、Adobeが提供します。 このユーザーは、Amazon S3 の役割 ARN で作成したポリシーに関連付ける必要があります。
 
@@ -111,7 +111,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![アカウント作成ダイアログを書き出し](assets/export-account-gcp.png)
 
 1. の内容をコピーします。 [!UICONTROL **プリンシパル**] フィールドをクリップボードに追加して、Google Cloud Platform のこのバケットにファイルをアップロードする権限をプリンシパルに付与していることを確認します。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![アカウント作成ダイアログを書き出し](assets/export-account-azure.png)
 
 1. まだの場合、Azure SAS のバケットに対する権限を付与していることを確認してください。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![アカウント作成ダイアログを書き出し](assets/export-account-azure.png)
 
 1. まだの場合、Azure RBAC でバケットに対する権限を付与していることを確認してください。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    The [!UICONTROL **作成されたエクスポートアカウント**] ダイアログが表示されます。
 
-   <!-- add screen shot -->
+   ![アカウント作成ダイアログを書き出し](assets/export-account-snowflake.png)
 
 1. の内容をコピーします。 [!UICONTROL **公開鍵**] フィールドをクリップボードに追加します。 公開鍵はAdobeが提供します。
 
