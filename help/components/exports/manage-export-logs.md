@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 書き出しログを管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 708367159d00935bb77043e551dc915f79dd2584
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '728'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 6%
    |---------|----------|
    | [!UICONTROL **書き出し ID**] | 表示するエクスポートログのエクスポート ID を指定します。 |
    | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
+   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。<p>エラーの考えられる理由について詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
 
