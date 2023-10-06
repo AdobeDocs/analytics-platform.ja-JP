@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 失敗した書き出しのトラブルシューティング
 feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 8%
+source-wordcount: '386'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 | レポート内のディメンションまたは指標がデータビューから削除されました | データビューから削除されたコンポーネントを確認するには、システム管理者に問い合わせてください。 エクスポートで別のデータビューを使用する必要が生じる場合や、使用できなくなったコンポーネントをテーブルから削除する必要が生じる場合があります。 | [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md) |
 | 行の制限を超えました | ライセンスの種類に応じて、最大 300 万行、3000 万行、1 億 5000 万行、3 億行をエクスポートできます。 エクスポートするテーブルを更新して、合計行数を減らします。 | [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md) |
 | 予定されている書き出しの有効期限 | 設定したスケジュール済みの書き出しは期限切れです。 エクスポートの有効期限を更新します。 | [エクスポートを管理](/help/components/exports/manage-exports.md) |
-| Dimensionはサポートされていません | <p>次の条件を満たすディメンションは、フルテーブルエクスポートではサポートされません。</p> <ul><li>オブジェクト配列を使用します</li><li>永続性が有効になっている<li>バインディングディメンションを使用していません</li> | <ul><li>[オブジェクトの配列の使用](/help/use-cases/object-arrays.md)</li><li>[永続性コンポーネント設定](/help/data-views/component-settings/persistence.md)<li>[バインディングディメンションと指標をCustomer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
+| Dimensionはサポートされていません | <p>次の条件のすべてを満たすディメンションは、フルテーブルエクスポートではサポートされません。</p> <ul><li>オブジェクトの配列の一部であるフィールドから作成されました。</li><li>永続性が有効になっている<li>バインディングディメンションを使用していません</li> | <ul><li>[オブジェクトの配列の使用](/help/use-cases/object-arrays.md)</li><li>[永続性コンポーネント設定](/help/data-views/component-settings/persistence.md)<li>[バインディングディメンションと指標をCustomer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
 | 組織で強制されるデータガバナンスポリシーは、テーブル内のコンポーネントのエクスポートを制限します | 書き出しが制限されているコンポーネントを確認するには、システム管理者に問い合わせてください。 書き出す前に、制限されたコンポーネントを削除します。 | *データビューのデータガバナンスポリシーに対するフィルタリング* のセクション [ラベルとポリシー](/help/data-views/data-governance.md) |
 
 ## アドビカスタマーケアに連絡

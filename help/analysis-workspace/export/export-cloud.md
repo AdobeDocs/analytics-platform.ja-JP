@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Customer Journey Analyticsレポートをクラウドにエクスポート
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1955'
 ht-degree: 4%
 
 ---
@@ -170,6 +170,10 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 * 指標定義で基本関数または高度な関数を使用する計算指標 ( [基本関数](/help/components/calc-metrics/cm-functions.md) および [高度な関数](/help/components/calc-metrics/cm-adv-functions.md) （詳細情報）
 * 管理者によって制限されたコンポーネントのエクスポート ( *データビューのデータガバナンスポリシーに対するフィルタリング* のセクション [ラベルとポリシー](/help/data-views/data-governance.md) （詳細情報）
+* 次の条件のすべてに一致するディメンション：
+   * は、 [オブジェクトの配列](/help/use-cases/object-arrays.md)
+   * 次が含まれる [永続性有効](/help/data-views/component-settings/persistence.md)
+   * 次を使用していない： [結合ディメンション](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * 1 レポートにつき 5 つ以上のディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
 * テーブルの列：
    * 日付範囲
