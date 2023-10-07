@@ -3,10 +3,10 @@ description: ビジュアライゼーションのカラーパレットを変更�
 title: ビジュアライゼーションカラーパレット
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 92%
+source-wordcount: '222'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 >
 >カラーパレットのサポートは、Internet Explorer 11 に対して有効ではありません。
 
-![](assets/color_palettes.png)
+![プロジェクト情報および設定ウィンドウ。](assets/color_palettes.png)
 
 次の点に注意してください。
 
@@ -28,9 +28,9 @@ ht-degree: 92%
 ## カラーパレットの変更：
 
 1. **[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;へナビゲートします。
-1. 次の **[!UICONTROL プロジェクトカラーパレット]** 」ドロップダウンリストから、5 色のプリセットカラー設定の中から 1 つを選択できます。
+1. 次から： **[!UICONTROL プロジェクトカラーパレット]** 」ドロップダウンリストから、5 色のプリセットカラー設定の中から 1 つを選択できます。
 
-   ![](assets/custom_palette.png)
+   ![5 つのプリセットカラースキーム。](assets/custom_palette.png)
 
 1. 独自のパレットを指定するには、プリセットオプション下の「**[!UICONTROL カスタムパレット]**」を選択します。
 1. 使おうとしている色について、コンマ区切りで最大 16 個の 16 進数の値（例えば #00a4e4）を指定します。例えば、4 つの値だけを使いたい場合、これらの色は自動的により多くの色を含むビジュアライゼーションで繰り返されます。

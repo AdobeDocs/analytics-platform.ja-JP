@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: フォルダーにプロジェクトを保存
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 1. Workspace で、新しいプロジェクトを作成します。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![フリーフォームテーブルウィンドウで、新しいプロジェクトを作成できます。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1. **プロジェクト**／**保存**&#x200B;ダイアログで、「フォルダー」ドロップダウンメニューからフォルダー名を選択します。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![新しいプロジェクトをフォルダに保存するための保存ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. 「**保存**」をクリックします。
 

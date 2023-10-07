@@ -4,10 +4,10 @@ title: プロジェクトの保存
 feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ Analysis Workspace のすべてのプロジェクトは、2 分ごとにロー�
 
    1. Analysis Workspace ランディングページの「[!UICONTROL **復元されたプロジェクト**]」フォルダーに移動します。
 
-      ![](assets/recovered-folder.png)
+      ![[ 復元されたプロジェクト ] フォルダをハイライト表示したフォルダの一覧です。](assets/recovered-folder.png)
 
    1. プロジェクトを開き、目的の場所に保存します。
 
@@ -63,13 +63,13 @@ Analysis Workspace のすべてのプロジェクトは、2 分ごとにロー�
 * **名前を付けて保存：**&#x200B;最新の変更を新しいプロジェクトとして保存します。元のプロジェクトは、最新の自動保存された変更のみを使用して保存されます。
 * **変更を破棄：**&#x200B;最新の変更を破棄します。プロジェクトには、最新の自動保存された変更内容が保持されます。
 
-![](assets/existing-save.png)
+![「保存」をクリックして、変更をプロジェクトに保存します。](assets/existing-save.png)
 
 ### タブから移動するかタブを閉じる
 
 まだ自動保存されていない変更を含むプロジェクトを表示しているときにページから移動したり、ブラウザータブを閉じたりすると、ブラウザーに、未保存の変更が失われる警告が表示されます。終了またはキャンセルを選択できます。
 
-![](assets/browser-image.png)
+![サイトを終了する場合は「終了」を、変更を保存せずに移動する場合は「キャンセル」をクリックします。 ](assets/browser-image.png)
 
 ### ブラウザーがクラッシュしたか、セッションがタイムアウトする
 
@@ -81,7 +81,7 @@ Analysis Workspace のすべてのプロジェクトは、2 分ごとにロー�
 
 自動保存されたコピーを削除し、ユーザーが最後に保存したバージョンのプロジェクトを開くには、「**いいえ**」を選択します。
 
-![](assets/project-recovery.png)
+![[ プロジェクトの復元 ] ダイアログボックス](assets/project-recovery.png)
 
 一度も保存されていない&#x200B;**新規**&#x200B;プロジェクトの場合、未保存の変更は復元できません。
 
@@ -91,7 +91,7 @@ Analysis Workspace のすべてのプロジェクトは、2 分ごとにロー�
 
 1. **[!UICONTROL プロジェクト]**／**[!UICONTROL 以前のバージョンを開く]**&#x200B;に移動します。
 
-   ![](assets/previous-versions.png)
+   ![「以前に保存したプロジェクトのバージョン」リストと、「すべてのバージョン」または「メモ付きのバージョンのみ」を表示するオプションです。](assets/previous-versions.png)
 
 1. 使用可能な以前のバージョンのリストを確認します。
    [!UICONTROL タイムスタンプ]と[!UICONTROL エディター]は、[!UICONTROL エディター]で保存した際に追加された[!UICONTROL メモ]に加えて表示されます。メモのないバージョンは 90 日間保存されます。メモ付きのバージョンは 1 年間保存されます。

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 80%
+source-wordcount: '1371'
+ht-degree: 72%
 
 ---
 
@@ -17,9 +17,9 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 ## プロジェクトリスト {#project-list}
 
-最初に **[!UICONTROL Analytics]**／**[!UICONTROL Workspace]** に移動すると、自分が所有するプロジェクトまたは自分と共有されているプロジェクトがすべて一覧表示されます。これは、以前にカスタムのランディングページを設定した場合を除き、Adobe Analytics のランディングページでもあります。
+最初に **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**&#x200B;をクリックすると、自分が所有するプロジェクトまたは自分が共有しているプロジェクトがすべて一覧表示されます。 これは、以前にカスタムのランディングページを設定した場合を除き、Adobe Analytics のランディングページでもあります。
 
-![](assets/sample-project.png)
+![プロジェクトリストを表示するプロジェクトランディングページ。](assets/sample-project.png)
 
 「プロジェクト」ページには、次の情報が含まれます。
 
@@ -55,7 +55,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 プロジェクト内のメニューには、プロジェクトの管理、コンポーネントの追加、ヘルプの検索などを行うためのオプションが表示されます。各メニューオプションには、キーボード[ショートカット](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用してアクセスできます。
 
-![](assets/menu.png)
+![新しい [ プロジェクト ] オプション（[ プロジェクト ]、[ 編集 ]、[ 挿入 ]、[ コンポーネント ]、[ 共有 ]、[ ヘルプ ] オプションなど）。](assets/menu.png)
 
 | メニュー項目 | 説明 |
 |---|---|
@@ -71,7 +71,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 **[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;では、現在アクティブなプロジェクトに関するプロジェクトレベルの情報が提供されます。
 
-![](assets/projectinfo.png)
+![プロジェクト情報および設定ウィンドウ。](assets/projectinfo.png)
 
 「設定」には次の項目が含まれます。
 
@@ -94,7 +94,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 左側のパネルのコンポーネント（ディメンション、指標、フィルター、日付範囲）は、アクティブなパネルデータビューに関連しています。アクティブパネルの周囲に青い境界線が表示され、アクティブなデータビューがコンポーネントパネルの上部に表示されます。
 
-![](assets/left-rail.png)
+![業界を横断するデモデータビューのアクティブなパネルのデータビューに関連するコンポーネント。](assets/left-rail.png)
 
 ## プロジェクトキャンバス {#canvas}
 
@@ -104,15 +104,15 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 プロジェクトの開始時に選択した内容に応じて、キャンバスに[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)または[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)が表示されます。分析を最も簡単に開始するには、1 つまたは複数のコンポーネントを選択し、それらをプロジェクトキャンバスにドラッグ＆ドロップします。データのテーブルが自動的にレンダリングされます。[こちら](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)からテーブルを作成するための様々なオプションについて確認してください。または、アドビの[トレーニングチュートリアル](/help/analysis-workspace/home.md)を活用して、初めてプロジェクトを作成する際の手順を確認してください。
 
-![](assets/canvas.png)
+![プロジェクトのフリーフォームテーブル。](assets/canvas.png)
 
 ## プロジェクトマネージャー {#manager}
 
-Analysis Workspace プロジェクトは、**Analytics／コンポーネント／プロジェクト**&#x200B;で管理できます。プロジェクトマネージャーには、特定のユーザーが作成したアイテムが表示されます。プロジェクトの所有権は、管理者／Analytics ユーザーおよびアセット／アセットを転送で新しいユーザーに譲渡できます。
+Analysis Workspace プロジェクトは、**Analytics／コンポーネント／プロジェクト**&#x200B;で管理できます。プロジェクトマネージャには、特定のユーザーが作成したアイテムが表示されます。 管理者/Analytics ユーザーとアセット/アセットを転送で、プロジェクトの所有権を新しいユーザーに転送できます。
 
-プロジェクトマネージャーでは、追加、タグ付け、共有、複製／コピーなどをおこなうことができます。検索バーまたは左側のパネルのフィルターオプションを使用して、プロジェクトを検索します。タグ、所有者、プロジェクトのタイプなどでフィルターできます。
+プロジェクトマネージャーでは、追加、タグ付け、共有、複製/コピーなどをおこなうことができます。 検索バーまたは左側のパネルのフィルターオプションを使用して、プロジェクトを検索します。タグ、所有者、プロジェクトのタイプなどでフィルターできます。
 
-![](assets/project-manager.png)
+![プロジェクトマネージャータグ検索フィールドおよびタイトル検索フィールド。](assets/project-manager.png)
 
 以下は、プロジェクトマネージャの一般的な操作です。これらは、1 つまたは複数のプロジェクトに対して一度に実行できます。
 

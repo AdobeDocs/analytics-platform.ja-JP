@@ -3,10 +3,10 @@ description: Analysis Workspace からデータをダウンロードするには
 title: Customer Journey Analyticsデータをダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 58%
+source-wordcount: '1133'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 58%
 
      ダウンロードしたファイルをプレーンテキストにする場合は、このオプションを選択します。
 
-   ![](assets/download-project.png)
+   ![「 CSV をダウンロード」および「ダウンロードPDF」オプションがハイライトされたプロジェクトドロップダウンメニュー。](assets/download-project.png)
 
 1. （条件付き）プロジェクトのダウンロードPDFを選択した場合は、プロジェクトのダウンロード準備が整った後にメッセージが表示されます。 「[!UICONTROL **ダウンロード**]」を選択します。
 
@@ -51,7 +51,7 @@ ht-degree: 58%
 >ホットキーを使用できます `Ctrl+C` 選択内容をクリップボードにコピーするには、 `Ctrl+V` をクリックして、サードパーティのツールに貼り付けます。
 
 
-![](assets/copy-selection.png)
+![「選択内容をクリップボードにコピー」オプション。 ](assets/copy-selection.png)
 
 ## CSV としてダウンロード {#download-data}
 
@@ -66,7 +66,7 @@ ht-degree: 58%
 
 * テーブル内で右クリックし、「 」を選択します。 **[!UICONTROL 選択内容を CSV としてダウンロード]**. このオプションを選択した項目のみがダウンロードされます。表示されているテーブル全体ではダウンロードされません。
 
-![](assets/download-data-viz.png)
+![「データを CSV 形式でダウンロード」オプション。](assets/download-data-viz.png)
 
 ## 項目を CSV としてダウンロード {#download-items}
 
@@ -78,7 +78,7 @@ ht-degree: 58%
 
 プロジェクト内で複数のタスクを使用できます。また、ダウンロードの処理中に、同じタブで新しい Workspace プロジェクトに移動することもできます。新しいブラウザータブを開くと、ダウンロードが一時停止します。 Workspace を完全に終了するか、ブラウザータブを閉じると、ダウンロードはキャンセルされます。
 
-![](assets/download-items.png)
+![「項目を CSV としてダウンロード（ページ） 」オプション。](assets/download-items.png)
 
 ### ダウンロードした項目ファイル {#items-file}
 
@@ -90,7 +90,7 @@ ht-degree: 58%
 
 上の例では、パネルフィルター（新規訪問者のお客様）と上のコンポーネント（マーケティングチャネル = 電子メール）がフィルターとして適用された状態でページ項目がダウンロードされ、下のコンポーネント（モバイルデバイスタイプ）がダウンロードされた CSV から削除されます。
 
-![](assets/downloaded-file.png)
+![ダウンロードした.csv ファイルが Excel で開かれました。](assets/downloaded-file.png)
 
 ### ダウンロード通知 {#notifications}
 
@@ -100,7 +100,7 @@ ht-degree: 58%
 
 一度に複数のダウンロードをリクエストすると、前のダウンロードが完了するまで、後続の各ダウンロードはキューに追加されるという通知が届きます。
 
-![](assets/toast.png)
+![完了率と「ダウンロードをキャンセル」リンクを示すダウンロードステータス通知。](assets/toast.png)
 
 ## 機密データのダウンロード {#sensitive}
 

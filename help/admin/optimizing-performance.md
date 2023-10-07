@@ -3,20 +3,20 @@ description: Customer Journey Analyticsと Workspace のパフォーマンスに
 title: Customer Journey AnalyticsとAnalysis Workspaceのパフォーマンスの最適化
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1975'
 ht-degree: 75%
 
 ---
 
 # Customer Journey Analyticsと [!UICONTROL Analysis Workspace] 性能
 
-様々な要因が、全体的なCustomer Journey Analyticsのパフォーマンスに加えて、Analysis Workspace内のプロジェクトのパフォーマンスにも影響を与える可能性があります。 Workspace で、次のようなエラーメッセージが表示される場合があります
+様々な要因が、全体的なCustomer Journey Analyticsのパフォーマンスに加えて、Analysis Workspace内のプロジェクトのパフォーマンスにも影響を与える可能性があります。 Workspace で、次のようなエラーメッセージが表示される場合があります。
 
 `This query is too complex. Please review best practices for building Analysis Workspace queries.`
 
-これらのベストプラクティスでは、このエラーにつながる可能性のある要因と、レポート/プロジェクトを簡略化する方法を説明します。
+これらのベストプラクティスでは、このエラーにつながる可能性のある要因と、レポート/プロジェクトを簡素化する方法について説明します。
 
 ## クエリ要因 {#query}
 
@@ -33,7 +33,7 @@ ht-degree: 75%
 | **同時クエリ数** | 組織が同時にリクエストしているクエリの数。 各組織には最小 5 つの同時クエリの権利が付与されます。レポートに長い時間がかかる場合は、通常、他のレポートが一緒にキューに入っていることが原因です。 これは、組織が特定のデータビューに対して多数の同時リクエストを実行しようとしていることを意味します。 | クエリは、API リクエスト、レポート UI(Analysis Workspace、Report Builderなど )、スケジュール済みプロジェクト、スケジュール済みアラート、およびレポートリクエストをおこなう同時ユーザーから取得できます。 | データビューのリクエストやスケジュールを、1 日を通じて均等に配分します。 また、可能な場合は、リクエストをピーク外の時間に切り替えます。 月曜日の朝、火曜日の朝、および毎月 1 日は、レポートのピーク時間です。 |
 | **接続サイズ** | 接続で収集されるデータの量。 |  | Customer Journey Analyticsの全体的なエクスペリエンスを改善するために実装の改善がおこなわれるかどうかについては、実装チームまたはCustomer Journey Analyticsのエキスパートにお問い合わせください。 |
 | **ディメンション設定の複雑さ** | 非常に複雑なディメンションは、プロジェクトのパフォーマンス、特に複雑なカスタムフィールドに基づくディメンションや指標に大きな影響を与える可能性があります。 | | カスタムフィールドの数を減らすか、個別のディメンションを作成します。 |
-| **多数の一意の値を持つDimension** | 大基数ディメンションとも呼ばれ、これらのディメンションはレポートのパフォーマンスに影響を与える可能性があります。 | 詳しくは、 [基数の高いディメンション](/help/components/dimensions/high-cardinality.md) | 詳しくは、 [基数の高いディメンション](/help/components/dimensions/high-cardinality.md) |
+| **多くの一意の値を持つDimension** | 大基数ディメンションとも呼ばれ、これらのディメンションはレポートのパフォーマンスに影響を与える可能性があります。 | 詳しくは、 [基数の高いディメンション](/help/components/dimensions/high-cardinality.md) | 詳しくは、 [基数の高いディメンション](/help/components/dimensions/high-cardinality.md) |
 
 ## Analysis Workspace の[!UICONTROL ヘルプ]／[!UICONTROL パフォーマンス]
 
@@ -50,7 +50,7 @@ Analysis Workspace のプロジェクトのパフォーマンスは、様々な�
 >
 >要因は変動する可能性があるため、パフォーマンスページの情報は、モーダルを開くたびに変化します。さらに、利用可能なデータが増えるにつれ、アドビでは引き続きガイドラインを調整します。
 
-![](assets/performance-modal.png)
+![Network Factor、現在のプロジェクト、ガイドラインを示すAnalysis Workspaceのパフォーマンス。](assets/performance-modal.png)
 
 ### ネットワーク要因
 

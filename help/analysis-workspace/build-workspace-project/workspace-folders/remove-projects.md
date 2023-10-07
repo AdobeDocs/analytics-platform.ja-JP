@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: フォルダーからのプロジェクトの削除
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 91%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 100%
 
 1. プロジェクトフォルダー内で、プロジェクト名の横にある省略記号（**...**）をクリックします。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![省略記号オプション。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. 「**移動先**」を選択し、プロジェクトの移動先のフォルダーを選択します。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![「ロケーションの選択」ウィンドウが表示されます。](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. 「**移動**」をクリックします。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![「移動」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
    プロジェクトが移動したことを確認するトーストメッセージが表示されます。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![移動確認トースト。 ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## プロジェクトフォルダーからのプロジェクトの削除 {#delete-project-in-folder}
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 1. プロジェクトフォルダー内で、プロジェクト名の横にある省略記号（**...**）をクリックします。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![省略記号オプション。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. 「**削除**」を選択します。
 

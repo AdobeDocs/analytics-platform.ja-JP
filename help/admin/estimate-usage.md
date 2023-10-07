@@ -4,10 +4,10 @@ description: 使用状況の推定方法を 2 つ、管理方法を 1 つ示し�
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 72%
+source-wordcount: '901'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ Customer Journey Analytics使用を管理するには：
 
 1. 組織が作成したすべての接続について、**[!UICONTROL 使用可能なイベントデータのレコード]**&#x200B;を追加します（接続のサイズによっては、数字の表示に時間がかかる場合があります）。
 
-   ![イベントデータ](./assets/event-data.png)
+   ![使用可能なイベントデータのレコード.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -70,7 +70,7 @@ Customer Journey Analytics使用を管理するには：
 
 1. Workspace で、各データビューに基づいて新しいプロジェクトを作成し、( **[!UICONTROL 指標]** ドロップダウンリスト ) を参照し、現在のCustomer Journey Analytics契約の最初の日から始まる、月の最初の金曜日までを示します。
 
-   ![イベント](./assets/events-usage.png)
+   ![イベントを示すフリーフォームテーブル。](./assets/events-usage.png)
 
    これにより、月々の使用状況のトレンドを把握できます。
 
@@ -82,7 +82,7 @@ Report Builder で各データ表示に [1 つのデータブロックを作成]
 
 ## Customer Journey AnalyticsAPI での自動レポートの作成 {#api-report}
 
-1. 以下を使用： [Customer Journey Analyticsレポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) をクリックして、すべてのイベントデータに関するレポートを実行します。 **すべての接続**. レポートが次のタイミングで実行されるように設定します
+1. 以下を使用します。 [Customer Journey Analyticsレポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) すべてのイベントデータに関するレポートを実行するには、 **接続ごとに**. レポートが次のタイミングで実行されるように設定します
 
    * 毎月第一金曜日
    * 現在のCustomer Journey Analytics契約の最初の日に戻る
@@ -97,7 +97,7 @@ Report Builder で各データ表示に [1 つのデータブロックを作成]
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
-デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。Experience Platformに 25 ヶ月分のデータがある場合、Customer Journey Analyticsはバックフィルを通じて 25 ヶ月分のデータを取得します。 Platform でこれらの月のうち 10 を削除した場合、Customer Journey Analyticsは残りの 15 ヶ月を保持します。
+デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。Experience Platformに 25 ヶ月分のデータがある場合、Customer Journey Analyticsはバックフィルを通じて 25 ヶ月分のデータを取得します。 Platform でこのうち 10 か月を削除すると、Customer Journey Analytics は残りの 15 か月を保持します。
 
 データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットには、周期的なデータ時間枠設定は存在しません。接続に何らかのプロファイルまたは参照データセットが含まれる場合、それらはイベントデータセットと結合されるので、イベントデータセットのタイムスタンプのデータ保持設定に基づいて、Customer Journey Analyticsでデータが保持されます。
 

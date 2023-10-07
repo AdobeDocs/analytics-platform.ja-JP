@@ -1,12 +1,12 @@
 ---
-description: 異常値はテーブルまたは折れ線グラフで表示できます。
-title: Analysis Workspace での異常値の表示
+description: テーブルまたは折れ線グラフで異常値を表示する方法を説明します。
+title: Analysis Workspaceで異常値を表示する方法
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 97%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 1. 設定メニューの外側をクリックして、更新されたテーブルを表示します。
 
-   ![](assets/anomaly_detected.png)
+   ![予測を 15%下回ったことを示す異常値検出通知。](assets/anomaly_detected.png)
 
 1. 異常値は、テーブルに次のように表示されます。
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 1. 設定メニューの外側をクリックして、更新された折れ線グラフを表示します。
 
-   ![](assets/anomaly_linechart.png)
+   ![異常値が検出されたメッセージが、予測を 15%上回っていることを示す折れ線グラフ。](assets/anomaly_linechart.png)
 
    異常値は、折れ線グラフに次のように表示されます。
 

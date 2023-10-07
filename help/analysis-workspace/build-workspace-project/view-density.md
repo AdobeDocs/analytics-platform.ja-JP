@@ -3,10 +3,10 @@ description: Analysis Workspace の表示密度を調整する方法について
 title: 表示密度
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 - **[!UICONTROL 快適]**：コンパクトよりも余裕を持たせた表示です。
 - **[!UICONTROL 拡張]**（デフォルト）：Workspace の通常の表示です。
 
-![](assets/view-density.png)
+![コンパクト、快適、拡張されたビュー密度。](assets/view-density.png)
 
 表示密度を設定するには、以下のようにします。
 

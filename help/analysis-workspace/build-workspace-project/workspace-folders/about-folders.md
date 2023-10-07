@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: フォルダーの概要
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Workspace には、会社フォルダーと個人用フォルダーという 2 �
 
 Workspace にログインすると、プロジェクトホームページに、会社フォルダーおよび作成した個人用フォルダーと共に、プロジェクトのリストが表示されます。
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![プロジェクトと Company フォルダーをリストするプロジェクトのホームページ。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## 会社フォルダーについて {#company-folder}
 
@@ -38,11 +38,11 @@ Workspace にログインすると、プロジェクトホームページに、�
 
 管理者には、会社フォルダーに対する特別な権限が割り当てられています。例えば、管理者のみ、会社フォルダー内のフォルダーやプロジェクトを追加または削除できます。管理者アクセス権を持たないユーザーは、会社フォルダーの内容を表示できます。
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![管理オプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 管理者以外のユーザーには限られたオプションがあります。
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![フォルダーの管理者以外のオプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### 会社フォルダーのガイドライン {#company-folder-guidelines}
 

@@ -3,10 +3,10 @@ description: パネルは、テーブルとビジュアライゼーションの�
 title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 51%
+source-wordcount: '1313'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 51%
 | [メディアの同時視聴者数パネル](media-concurrent-viewers.md) | 同時実行のピークの詳細と分類および比較機能を使用して、経時的に同時視聴者を分析します。 |
 | [メディア再生滞在時間パネル](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | 再生に費やした時間を分析して、同時実行のピークが発生した場所やドロップオフが発生した場所を把握します。 |
 
-![](assets/panel-overview.png)
+![使用可能なCustomer Journey Analyticsタイプを一覧表示するパネル。](assets/panel-overview.png)
 
 分析を開始するるには、[!UICONTROL クイックインサイト]パネル、[!UICONTROL 空白]パネル、[!UICONTROL フリーフォーム]パネルが最適です。一方、[!UICONTROL Attribution IQ] は、より高度な分析に適しています。プロジェクトでは `"+"` ボタンが使用できるので、いつでも空白のパネルを追加できます。
 
@@ -39,7 +39,7 @@ ht-degree: 51%
 
 メモ：テーブル、ビジュアライゼーション、パネルドロップゾーン内で（紫色の）日付範囲コンポーネントを使用すると、パネルカレンダーが上書きされます。
 
-![](assets/panel-calendar.png)
+![選択した日付範囲を示すカレンダーウィンドウ。](assets/panel-calendar.png)
 
 パネルカレンダーの詳細設定で、分レベルの日付範囲を適用できます。何日にもわたる日付範囲でレポートを作成する場合、開始時刻は最初の日、終了時刻は範囲の最終日に適用されます。
 
@@ -51,7 +51,7 @@ ht-degree: 51%
 
 パネルのドロップゾーンに左のパネルからフィルターをドラッグ＆ドロップして、パネルのフィルター処理を開始します。
 
-![](assets/segment-filter.png)
+![左側のレールには、使用可能な指標と、パネルのドロップゾーンにドラッグされたモバイル顧客指標が表示されます。](assets/segment-filter.png)
 
 ### アドホックフィルター
 
@@ -61,7 +61,7 @@ ht-degree: 51%
 
 詳しくは、 [クイックフィルター](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![公開され、ドロップゾーンにドロップされるアドホックフィルター。](assets/adhoc-segment-filter.png)
 
 ### 静的ドロップダウンフィルター
 
@@ -69,7 +69,7 @@ ht-degree: 51%
 
 ドロップダウンフィルターを使用して、多くのプロジェクトを 1 つに統合することもできます。例えば、同じプロジェクトに異なる国フィルターが適用された複数のバージョンがある場合、すべてのバージョンを 1 つのプロジェクトに統合して「国」ドロップダウンフィルターを追加できます。
 
-![](assets/dropdown-filter-intro.png)
+![マーケットチャネル「ダイレクト」フィルターがハイライト表示された静的ドロップダウンフィルター。 ](assets/dropdown-filter-intro.png)
 
 静的ドロップダウンフィルターを作成するには：
 
@@ -79,7 +79,7 @@ ht-degree: 51%
 
 ドロップダウンリストからオプションの 1 つを選択して、パネル内のデータを変更します。 また、パネル内のデータをフィルターしないよう選択するには、 **[!UICONTROL フィルターなし]**.
 
-![](assets/create-dropdown.png)
+![静的ドロップダウンフィルターをドロップできる「モバイル顧客セグメント」フィールドを含むパネルウィンドウ。 ](assets/create-dropdown.png)
 
 ドロップダウンフィルターを右クリックすると、次のオプションが表示されます。
 
@@ -109,7 +109,7 @@ ht-degree: 51%
 
 パネルの追加機能は、パネルのヘッダーを右クリックすると使用できます。
 
-![](assets/right-click-menu.png)
+![パネルヘッダーの右クリックオプション。](assets/right-click-menu.png)
 
 次の設定があります。
 

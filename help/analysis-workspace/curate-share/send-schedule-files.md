@@ -1,18 +1,18 @@
 ---
-description: 組織内の受信者に対して PDF／CSV プロジェクトをキュレート、共有、スケジュールできます。
+description: ワークスペース共有メニューオプションについて説明します。
 title: 共有メニュー
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: b36ba438a14f9fd257f2b6a38be7eb39baaa7d92
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 75%
+source-wordcount: '146'
+ht-degree: 56%
 
 ---
 
 # 共有メニュー
 
-Workspace の **共有メニュー** 内で、組織の受信者に対して PDF／CSV プロジェクトのキュレーション、共有およびスケジュール設定を行えます。
+Workspace 内で、組織内の受信者に対してPDFおよび CSV プロジェクトのキュレーション、共有、スケジュールを設定できます **共有メニュー**.
 
 | メニューオプション | 説明 |
 |---|---|

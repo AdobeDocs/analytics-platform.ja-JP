@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: フォルダーの作成
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 71%
 
 ---
 
@@ -25,15 +25,15 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
 1. ドロップダウンメニューからタグを選択したり、新しいタグを追加したりします。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+   ![新しいフォルダー名と使用可能なタグのリストを表示する新しいフォルダーを作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1. 「**作成**」をクリックします。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
+   ![「作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
    新しいフォルダーがプロジェクトとフォルダーのメインリストに追加されます。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![プロジェクトとフォルダの更新済みリストを示すプロジェクトランディングページ。](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## サブフォルダーの作成 {#create-subfolder}
 
@@ -43,20 +43,20 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
 1. 「**新規フォルダーを作成**」をクリックします
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+   ![「新しいフォルダーを作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1. サブフォルダー名を入力し、必要なタグを追加します。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![新しい名前とタグフィールドを含む新しいフォルダーを作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. 「**作成**」をクリックします。
 
    新しいサブフォルダーがプロジェクトとサブフォルダーのリストに追加されます。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
+   ![「作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >
    >1 つのフォルダーに最大 10 レベルのサブフォルダーを作成できます。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![フォルダーのドロップダウンリストには、フォルダー内のすべてのサブフォルダーが表示されます。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

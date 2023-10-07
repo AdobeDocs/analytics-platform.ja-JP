@@ -4,9 +4,9 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1980'
 ht-degree: 36%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 36%
 
 未保存の変更がある場合は、最初にプロジェクトを保存するように求められます。
 
-   ![](assets/share-proj-modal.png)
+   ![プロジェクトを共有ウィンドウ。](assets/share-proj-modal.png)
 
    複数のプロジェクトを同時に共有する方法について詳しくは、 [プロジェクトマネージャーでプロジェクトを共有する](#share-projects-in-the-project-manager)を参照してください。
 
@@ -100,7 +100,7 @@ ht-degree: 36%
 
 1. 選択 **[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択し、「 **[!UICONTROL コピー]** の横 **[!UICONTROL リンクで共有]** フィールドに入力します。
 
-   ![](assets/share-proj-modal.png)
+   ![共有プロジェクトで、「リンクで共有」フィールドがハイライト表示されています。](assets/share-proj-modal.png)
 
 1. リンクを組織内のユーザーと共有します。例えば、メールや内部 web サイトなどにペーストすることができます。
 
@@ -146,7 +146,7 @@ ht-degree: 36%
 
    このオプションを選択すると、誰とでも共有できるプロジェクトへのリンクが作成されます。 このオプションを無効にすると、いつでもプロジェクトへのアクセスを無効にできます。
 
-   プロジェクトの所有者もこのリンクの所有者です。 リンクの所有権は、プロジェクトの所有権が移行された場合にのみ、別のユーザーに移行できます。詳しくは、 [ユーザーアセットの転送またはアカウント有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) 」を参照してください。
+   プロジェクトの所有者もこのリンクの所有者です。 リンクの所有権は、プロジェクトの所有権が移行された場合にのみ、別のユーザーに移行できます。詳しくは、 [ユーザーアセットの転送またはアカウント有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=ja) 」を参照してください。
 
 1. 次のセキュリティオプションを有効にするかどうかを選択します ( このオプションはCustomer Journey Analytics管理者が制御できます )。
 
@@ -184,7 +184,7 @@ ht-degree: 36%
 * プロジェクト A：1,、2、3、4、7
 * プロジェクト B：4、5、6、7
 
-![](assets/mult-proj-sharing.png)
+![複数のプロジェクトに受信者を追加ウィンドウ](assets/mult-proj-sharing.png)
 
 ## 埋め込みコンポーネントの共有
 

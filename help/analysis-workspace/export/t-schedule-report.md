@@ -5,10 +5,10 @@ title: Customer Journey Analyticsデータを電子メールで他の人に送�
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 62%
+source-wordcount: '1036'
+ht-degree: 58%
 
 ---
 
@@ -31,10 +31,10 @@ E メールで受信者に直ちにファイルを送信するには：
 1. （オプション）受信するファイルについて説明する説明を E メールに追加します。
 1. 受信者またはグループを追加します。電子メールアドレスを入力することもできます。
 1. （Healthcare Shield のお客様のみ）パスワードを入力します。予定レポートのパスワード保護の節を参照してください。
-1. 「**[!UICONTROL 今すぐ送信]**」をクリックします。
 1. （任意）「**[!UICONTROL スケジュールオプションを表示する]** 」をクリックして、配信スケジュールを指定します。
+1. 「**[!UICONTROL 今すぐ送信]**」をクリックします。
 
-![ファイルを今すぐ送信](assets/send-file-no-scheduling-options.JPG)
+![ファイルを送信ウィンドウと「今すぐ送信」ボタン。](assets/send-file-no-scheduling-options.JPG)
 
 ## ファイルをスケジュールに従って送信 {#schedule}
 
@@ -49,7 +49,7 @@ E メールで受信者に直ちにファイルを送信するには：
 1. 配信頻度を指定します。頻度ごとに異なるカスタマイズが可能です。
 1. 「**[!UICONTROL 送信スケジュール]**」をクリックします。
 
-![](assets/send-file.JPG)
+![[ ファイルの送信 ] ウィンドウおよびスケジュールオプションが表示され、[ 開始日 ]、[ 終了日 ]、および [ 日単位の頻度 ] の設定が表示されます。](assets/send-file.JPG)
 
 ## スケジュール済みプロジェクトマネージャー {#manager}
 
@@ -97,7 +97,7 @@ Healthcare Shield SKU を購入して有効にすると、スケジュール済�
 
 * 既存のスケジュールされたプロジェクトが送信されようとしている場合。現在スケジュールされているプロジェクトは、パスワード保護が有効になるまで無効になります。 スケジュールされたプロジェクトの所有者に、この要件を知らせる電子メールが送信されます。
 
-![パスワード保護](assets/password.png)
+![スケジュール済みプロジェクトを編集ウィンドウと、組織でパスワードの暗号化が必要であることを示すパスワードの暗号化通知。](assets/password.png)
 
 ### パスワード要件
 
@@ -112,7 +112,7 @@ Healthcare Shield SKU を購入して有効にすると、スケジュール済�
 
 プロジェクトのスケジュールを設定する前に、プロジェクト所有者に次のような電子メールが送信されます。
 
-![電子メール](assets/email-password.png)
+![組織では、Customer Journey Analyticsの暗号化を示すパスワード電子メール通知が必要です。](assets/email-password.png)
 
 1. Customer Journey Analyticsにログインします。
 1. 選択 **[!UICONTROL スケジュール済みプロジェクトの表示]**.

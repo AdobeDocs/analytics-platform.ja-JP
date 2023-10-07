@@ -1,12 +1,12 @@
 ---
-description: クラウドの場所にAnalysis Workspaceプロジェクトを書き出します。
+description: クラウドの場所にAnalysis Workspaceプロジェクトを書き出す方法を説明します。
 keywords: Analysis Workspace
 title: Customer Journey Analyticsレポートをクラウドにエクスポート
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1970'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Analysis Workspaceから、Google、Azure、Amazon、Adobeなどのクラウド�
 
 1. [クラウド内のデータにアクセスする](#view-exported-data-and-manifest-file) および [エクスポートをAdobeで管理](/help/components/exports/manage-exports.md)
 
-![完全なテーブルの書き出しプロセス](assets/export-full-table-process.png)
+![手順 1 ～ 4 で説明されている完全なテーブルエクスポートプロセス。](assets/export-full-table-process.png)
 
 ## Analysis Workspaceからの完全なテーブルのエクスポート
 
@@ -57,7 +57,7 @@ Analysis Workspaceから完全なテーブルをエクスポートするには�
 
 1. 選択 [!UICONTROL **完全なテーブルをエクスポート**].
 
-   ![フルテーブルをエクスポート](assets/export-full-table.png)
+   ![フリーフォームテーブルドロップダウンメニュー（「完全なテーブルを書き出し」がハイライト表示されています）。](assets/export-full-table.png)
 
 1. Adobe Analytics の [!UICONTROL **新しいフルテーブルエクスポート**] ダイアログボックスで、次の情報を指定します。
 

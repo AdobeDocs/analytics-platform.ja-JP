@@ -3,10 +3,10 @@ description: Analysis Workspace の異常値検出は、一連の高度な統計
 title: 異常値検出で使用される統計的手法
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Analysis Workspace の異常値検出は、一連の高度な統計的手法を�
 
 次の例では、クリスマスおよび元日のパフォーマンスが大幅に向上していることがわかります。
 
-![](assets/anomaly_statistics.png)
+![休日のパフォーマンスを伴うパフォーマンスの変化を示す 2 つの折れ線グラフ。](assets/anomaly_statistics.png)
 
 ## 時間単位の精度の異常値検出
 

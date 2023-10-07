@@ -3,10 +3,10 @@ description: 実験パネルで A/B テストの結果を分析する方法に�
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 60%
+source-wordcount: '1905'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 60%
 
 推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=ja)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、 **シングル** オブジェクト配列。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
 
-実験データが [取得済み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) Adobe Experience Platformに [接続をCustomer Journey Analytics](/help/connections/create-connection.md) を 1 つ以上の実験データセットに追加します。
+実験データの作成後 [取得済み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) Adobe Experience Platformに [接続をCustomer Journey Analytics](/help/connections/create-connection.md) を 1 つ以上の実験データセットに追加します。
 
 ## 手順 2：データビューでのコンテキストラベルの追加 {#contect-labels}
 
@@ -41,7 +41,7 @@ Customer Journey Analyticsのデータビュー設定で、管理者は [コン�
 
 実験データを含むデータビューで、2 つのディメンション（1 つは実験データを含むもの、もう 1 つはバリアントデータを含むもの）を選択します。 次に、これらのディメンションに&#x200B;**[!UICONTROL 実験]**&#x200B;ラベルと&#x200B;**[!UICONTROL バリアント]**&#x200B;ラベルを付けます。
 
-![コンテキストラベル](assets/context-label.png)
+![実験および実験バリアントのコンテキストラベルオプション。](assets/context-label.png)
 
 これらのラベルが存在しない場合、操作する実験がないため、実験パネルは機能しません。
 
@@ -49,10 +49,10 @@ Customer Journey Analyticsのデータビュー設定で、管理者は [コン�
 
 1. Experimentation Workspace で、Experimentation パネルをプロジェクトにドラッグします。
 
-![実験パネル](assets/experiment.png)
+![実験パネルをプロジェクトにドラッグしました。](assets/experiment.png)
 
 >[!IMPORTANT]
->Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、次のメッセージが表示されます。&quot;[!UICONTROL データビューで実験ディメンションとバリアントディメンションを設定してください]&quot;.
+>Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、続行する前に次のメッセージが表示されます。[!UICONTROL データビューで実験ディメンションとバリアントディメンションを設定してください]&quot;.
 
 1. パネル入力設定を行います。
 
@@ -74,11 +74,11 @@ Customer Journey Analyticsのデータビュー設定で、管理者は [コン�
 
 選択した各成功指標に対して、1 つのフリーフォームテーブルと 1 つのコンバージョン率トレンドが表示されます。
 
-![実験出力](assets/exp-output1.png)
+![実験の出力では、1 つのフリーフォームテーブルと 1 つのコンバージョン率トレンドを示しています。](assets/exp-output1.png)
 
 [!UICONTROL 折れ線]グラフでは、[!UICONTROL コントロール]対[!UICONTROL コントロールバリアント]のパフォーマンスを確認できます。
 
-![折れ線グラフの出力](assets/exp-output2.png)
+![コントロールとコントロールバリアントのパフォーマンスを示す折れ線グラフの出力。](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Customer Journey Analyticsのデータビュー設定で、管理者は [コン�
 
 ## 手順 5：結果の解釈 {#interpret}
 
-1. **実験は決定的だ**:Adobeは、実験レポートを表示するたびに、この時点まで実験に累積したデータを分析し、有効な信頼性が 95%のしきい値を超えると、いつでも実験を「最終的」と宣言します。 *少なくとも 1 つ* （Benjamini - Hochberg 補正は、複数の仮説テストのために、2 つ以上の腕がある場合に適用されます）。
+1. **Experiment is affectival**:Adobeは、実験レポートを表示するたびに、この時点まで実験に蓄積されたデータを分析し、有効な信頼性が 95%のしきい値を超えるたびに、実験を「最終的」と宣言します。 *少なくとも 1 つ* （Benjamini - Hochberg 補正は、複数の仮説テストのために、2 つ以上の腕がある場合に適用されます）。
 
 2. **最も効果の高いバリアント**：実験が決定的であると宣言された場合、コンバージョン率の最も高いバリアントには、「最もパフォーマンスの高いバリアント」というラベルが付けられます。このバリアントは、コントロールバリアントかベースラインバリアントか、95%の有効な信頼のしきい値（Benjamini-Hochberg 修正を適用した場合）を超えるバリアントの 1 つである必要があります。
 
@@ -122,9 +122,9 @@ Customer Journey Analyticsの実験パネルを使用すると、人物の州別
 
 次の図は、これらの状況に対するコントラストを示しています。
 
-![ランダム化実験](assets/randomize.png)
+![観測データとランダム化実験を示す図。](assets/randomize.png)
 
-干渉 X が結果 Y に与える影響を測定する場合、両者の真の原因は混乱要因 C である可能性があります。X に対する人のランダム化でデータが達成されない場合、影響は測定が難しく、C に対する X の依存性が明示的に計算されます。
+介入 X が結果 Y に与える影響を測定する場合、両方の真の原因が絡み合い要因 C である可能性があります。X 上の人をランダム化してデータを得られない場合、影響は測定しにくく、分析は C を明示的に説明します。ランダム化は X の C への依存を壊し、他の変数を気にせずに X が Y に与える影響を測定できます。
 
 ## 実験パネルでの計算指標の使用
 

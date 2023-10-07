@@ -4,10 +4,10 @@ keywords: Analysis Workspace キュレーション
 title: プロジェクトのキュレーション
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -22,18 +22,18 @@ ht-degree: 100%
 
 1. **[!UICONTROL 共有]**／**[!UICONTROL プロジェクトデータをキュレート]** をクリックします。
 プロジェクトで使用されるコンポーネントが自動的に追加されます。
-1. （オプション）他のコンポーネントを追加するには、共有するコンポーネントを左側のレールから「[!UICONTROL コンポーネントをキュレーション ]」フィールドにドラッグします。
+1. （任意）他のコンポーネントを追加するには、共有するコンポーネントを左側のレールから「[!UICONTROL コンポーネントをキュレーション ]」フィールドにドラッグします。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 キュレーションは、[!UICONTROL 共有]メニューで「**[!UICONTROL キュレーションと共有]**」をクリックして適用することもできます。このオプションは、プロジェクト内で使用されているコンポーネントに合わせて、プロジェクトを自動的にキュレーションします。上記の手順に従って、追加のコンポーネントを追加できます。
 
-![](assets/curation-field.png)
+![プロジェクトで使用中のコンポーネントが表示される「コンポーネントをキュレーション」ウィンドウ。](assets/curation-field.png)
 
 ## キュレーションされたプロジェクトの表示
 
 キュレーションされたプロジェクトを受信者が開くと、ユーザーには、定義したキュレーション済みのコンポーネントのセットのみが表示されます。
 
-![](assets/curate-project.png)
+![定義したコンポーネントを示す共有のキュレーションされたプロジェクト。](assets/curate-project.png)
 
 ## プロジェクトキュレーションの削除
 

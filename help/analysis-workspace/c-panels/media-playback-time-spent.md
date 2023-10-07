@@ -4,10 +4,10 @@ description: Analysis Workspace のメディア再生滞在時間パネルを使
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 75%
+source-wordcount: '924'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Media Analytics のお客様は、再生に費やした時間を分析して、�
 
 ## デフォルトのビュー
 
-![デフォルトのビュー](assets/mpts_default_view.png)
+![メディアプレイブックの滞在時間のデフォルト表示。](assets/mpts_default_view.png)
 
 ## パネル出力 {#Output}
 
@@ -65,7 +65,7 @@ Media Analytics のお客様は、再生に費やした時間を分析して、�
 
 シリーズの分類を選択した場合は、折れ線グラフに線と次の各項目の概要番号が表示されます。
 
-![メディア再生滞在時間の出力](assets/mpts_outputs1.png)
+![折れ線グラフと概要を示すメディア再生滞在時間の出力。](assets/mpts_outputs1.png)
 
 ### データソース
 

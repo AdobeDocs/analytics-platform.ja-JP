@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspaceでプロジェクトを作成する方法を説明します
+description: Analysis Workspaceでプロジェクトを作成する方法を説明します。
 title: プロジェクトの作成
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 4%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 Analysis Workspaceの使用を開始する方法に関する一般的な情報については、 [Analysis Workspaceの概要](/help/analysis-workspace/home.md).
 
-次の節では、プロジェクトを作成し、任意のAnalysis Workspaceプロジェクトの主要な構築ブロックの追加を開始する方法について説明します。パネル、ビジュアライゼーションおよびコンポーネント。
+次の節では、プロジェクトを作成し、任意のAnalysis Workspaceプロジェクトの主要な構成要素（パネル、ビジュアライゼーション、コンポーネント）の追加を開始する方法について説明します。
 
 ## プロジェクトの作成を開始する
 
 1. Adobe Analyticsで、 [!UICONTROL **Workspace**].
 
-1. の [!UICONTROL **Workspace**] タブで、 [!UICONTROL **プロジェクト**] 」タブで、 [!UICONTROL **プロジェクトを作成**].
+1. 次の日： [!UICONTROL **Workspace**] タブで、 [!UICONTROL **プロジェクト**] 」タブで、「 [!UICONTROL **プロジェクトを作成**].
 
 1. 空のプロジェクトと空のモバイルスコアカードのどちらを作成するかを選択します
 
@@ -32,7 +32,7 @@ Analysis Workspaceの使用を開始する方法に関する一般的な情報�
 
 1. 「[!UICONTROL **作成**]」を選択します。
 
-1. 次に、パネル、ビジュアライゼーションおよびコンポーネントをプロジェクトに追加する必要があります。 まず、Analysis Workspaceで、 [プロジェクトにパネルを追加する](#add-panels-to-the-project). その後、任意のパネルにビジュアライゼーションを追加できます。 最後に、任意のパネルまたはビジュアライゼーションにコンポーネントを追加できます。
+1. 次に、パネル、ビジュアライゼーションおよびコンポーネントをプロジェクトに追加する必要があります。 まず、Analysis Workspaceのプロジェクトにパネルを追加します ( [プロジェクトにパネルを追加する](#add-panels-to-the-project). その後、任意のパネルにビジュアライゼーションを追加できます。 最後に、任意のパネルまたはビジュアライゼーションにコンポーネントを追加できます。
 
 ## プロジェクトにパネルを追加する {#panels}
 
@@ -44,7 +44,7 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 
 1. を選択します。 [!UICONTROL **パネル**] アイコンをクリックします。
 
-   ![](assets/build-panels.png)
+   ![パネルを選択アイコンと、使用可能なパネルのリスト。](assets/build-panels.png)
 
 1. 追加するパネルを検索します。 左側のレールに表示されたら、プロジェクトにドラッグします。
 
@@ -64,7 +64,7 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 
 1. を選択します。 **[!UICONTROL ビジュアライゼーション]** アイコンをクリックします。
 
-   ![](assets/build-visualizations.png)
+   ![選択したビジュアライゼーションアイコンと、使用可能なビジュアライゼーションのリスト。](assets/build-visualizations.png)
 
 1. 追加するビジュアライゼーションを検索します。 左側のレールに表示されたら、プロジェクト内のパネルにドラッグします。
 
@@ -82,7 +82,7 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 
 1. を選択します。 **[!UICONTROL コンポーネント]** アイコンをクリックします。
 
-   ![](assets/build-components.png)
+   ![選択したコンポーネントアイコンと、使用可能なディメンションのリスト。](assets/build-components.png)
 
 1. 追加するコンポーネントを検索します。 左側のパネルに表示されたら、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
 
@@ -90,6 +90,6 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 
 ## プロジェクトを保存して共有する
 
-Analysis Workspaceで分析を作成する場合、作業内容は次のようになります。 [自動保存](/help/analysis-workspace/build-workspace-project/save-projects.md).
+Analysis Workspace で分析を作成すると、作業内容は[自動保存](/help/analysis-workspace/build-workspace-project/save-projects.md)されます。
 
-プロジェクトの構築が完了し、アクションにつながるインサイトを収集すると、そのプロジェクトを他のユーザーが利用できる状態になります。 プロジェクトを組織内のユーザーやグループと共有したり、組織外のユーザーと共有したりできます。 プロジェクトの共有について詳しくは、 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).
+プロジェクトの作成が完了し、実用的なインサイトを収集すると、そのプロジェクトを他のユーザーが使用できる準備が整います。プロジェクトは、組織内のユーザーやグループだけでなく、組織外の人物と共有することもできます。プロジェクトの共有について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)を参照してください。

@@ -4,10 +4,10 @@ keywords: Analysis Workspace の共有
 title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 62%
+source-wordcount: '395'
+ht-degree: 57%
 
 ---
 
@@ -36,7 +36,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja)します。
 
-![](assets/get-viz-link.png)
+![「ビジュアライゼーションを取得」リンクがハイライトされたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-viz-link.png)
 
 ## 目次でのリンクの使用 {#TOC}
 
@@ -44,4 +44,4 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 リンクと Workspace のリッチテキストエディターを使用して目次を作成する方法に関する[ビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=ja)をご覧ください。
 
-![](assets/toc.png)
+![プロジェクト目次です。](assets/toc.png)
