@@ -3,14 +3,13 @@ title: 派生フィールド
 description: 派生フィールドは、使用可能な関数や関数テンプレートのセットを介して、スキーマフィールドや標準コンポーネントのレポート時間操作を指定します。
 solution: Customer Journey Analytics
 feature: Derived Fields
-exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
+exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '5056'
-ht-degree: 16%
+source-wordcount: '5431'
+ht-degree: 15%
 
 ---
-
 
 # 派生フィールド
 
@@ -62,7 +61,7 @@ ht-degree: 16%
 | A | **ルール名** | デフォルトでは、ルール名は **ルール X** （X はシーケンス番号を参照）。 ルールの名前を編集するには、ルールの名前を選択し、新しい名前を入力します（例： ）。 `Query Parameter`. |
 | B | **関数名** | ルールの選択された関数名（例： ）。 [!UICONTROL URL 解析]. 関数が関数のシーケンスの最後の関数で、最終的な出力値を決定する場合、関数名の後に [!UICONTROL  — 最終出力]例： [!UICONTROL URL 解析 — 最終出力]. <br/>関数の詳細情報を含むポップアップを表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
 | C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/>選択 ![その他のアイコン](assets/More.svg)を選択し、「 **[!UICONTROL **&#x200B;説明を追加&#x200B;**]** 説明を追加するには、または **[!UICONTROL **&#x200B;説明を編集&#x200B;**]** 既存の説明を編集する場合。<br/>説明を入力するには、エディターを使用します。 ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右、左、中央揃え、色、番号リスト、箇条書きリストを使用）や、外部情報へのリンクの追加を行うことができます。 <br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 次のドロップダウン： [!UICONTROL フィールド] または [!UICONTROL 値] は、関数が想定する入力のタイプに基づいて、使用可能なフィールド（ルール、標準フィールド、フィールド）のすべてのカテゴリを表示します。 <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **機能領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 次のドロップダウン： [!UICONTROL フィールド] または [!UICONTROL 値] は、関数が想定する入力のタイプに基づいて、使用可能なフィールド（ルール、標準フィールド、フィールド）のすべてのカテゴリを表示します。 または、スキーマおよび標準フィールドセレクターからフィールドまたは値にフィールドをドラッグ&amp;ドロップできます。 ドラッグしたフィールドがルックアップデータセットから取得された場合、定義した関数の前に、ルックアップ関数が自動的に挿入されます。 <br/>詳しくは、 [関数リファレンス](#function-reference) を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -189,7 +188,7 @@ ht-degree: 16%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 次の場合], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>[!UICONTROL 次に、値をに設定します。], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の用語で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次の値より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 次の場合], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>[!UICONTROL 次に、値をに設定します。], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の用語で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -626,7 +625,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 <!-- FIND AND REPLACE -->
 
-### Find and Replace
+### 検索と置き換え
 
 選択したフィールド内のすべての値を検索し、新しい派生フィールド内の別の値に置き換えます。
 
@@ -694,55 +693,54 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
-### Lookup
+### ルックアップ
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+ルックアップデータセットのフィールドを使用して値をルックアップし、新しい派生フィールドに値を返す、またはその他のルール処理をおこなうために値を返します。
 
-+++ Details
++++ 詳細
 
-## Specification {#lookup-io}
+## 仕様 {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
+| データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 参照を適用するフィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL ルックアップデータセット]</li><ul><li>データセット</li></ul><li>[!UICONTROL 一致するキー]<ul><li>ルール</li><li>フィールド</li></ul></li><li>戻す値<ul><li>ルール</li><li>フィールド</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 3 つの関数</p> | <p>次のルールでさらに処理するための新しい派生フィールドまたは値</p> |
 
 {style="table-layout:auto"}
 
-## Use case {#lookup-uc}
+## ユースケース {#lookup-uc}
 
-You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+顧客がAdobe Targetを通じて表示されるパーソナライズされたバナーをクリックした際に収集されたアクティビティ ID を使用して、アクティビティ名を検索します。 アクティビティ ID とアクティビティ名を含む Analytics for Target(A4T) アクティビティでルックアップデータセットを使用する場合。
 
-### A4T lookup dataset {#lookup-uc-lookup}
+### A4T ルックアップデータセット {#lookup-uc-lookup}
 
-| Activity Id | Activity Name |
+| アクティビティ ID | アクティビティ名 |
 |---|---|
-| 415851 | MVT Test Category Pages |
+| 415851 | MVT テストカテゴリページ |
 | 415852 | Luma - Campaign Max 2022 |
-| 402922 | Home Page Banners |
+| 402922 | ホームページバナー |
 
 {style="table-layout:auto"}
 
-### Derived field {#lookup-uc-derivedfield}
+### 派生フィールド {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+次の項目を定義します。 `Activity Name` 派生フィールド。 次を使用します。 [!UICONTROL 参照] 関数を使用して、 [!UICONTROL ルックアップを適用するフィールド] フィールド ( 例： **[!DNL ActivityIdentifier]**) をクリックします。 ルックアップデータセットは、 [!UICONTROL ルックアップデータセット] リスト ( 例： **[!DNL New CJA4T Activities]**) をクリックします。 次に、識別子フィールド ( 例えば、 **[!DNL ActivityIdentifier]**) を [!UICONTROL 一致するキー] リストと、 [!UICONTROL 返す値] リスト ( 例： **[!DNL ActivityName]**) をクリックします。
 
-![Screenshot of the Lowercase rule](assets/lookup.png)
+![小文字ルールのスクリーンショット](assets/lookup.png)
 
-## More info
+## 詳細情報
 
-You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+次の項目を簡単に挿入できます。 [!UICONTROL 参照] 関数内に含まれている必要があります。
 
-  1. Select **[!UICONTROL Schema fields]** from selector.
-  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
-  1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
-     ![Lookup drag](assets/lookup-drag.png) 
+1. 選択 **[!UICONTROL スキーマフィールド]** を選択します。
+1. 選択 ![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) **[!UICONTROL 参照データセット]**.
+1. ルックアップデータセットを選択し、ルックアップに使用するフィールドを見つけます。
+1. 関数で使用可能な任意の入力フィールド（例えば、「Case When」）にルックアップフィールドをドラッグ&amp;ドロップします。 有効な場合は、青いボックスで、ラベル付き **[!UICONTROL +追加]**を使用すると、フィールドをドロップし、ルックアップフィールドをドロップした関数の前に、ルックアップ関数を自動的に挿入できます。 挿入されたルックアップ関数は、すべてのフィールドに関連する値を自動的に設定します。
+   ![ルックアップドラッグ](assets/lookup-drag.png)
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -797,7 +795,7 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 <!-- MERGE FIELDS -->
 
-### Merge Fields
+### フィールドを結合
 
 2 つの異なるフィールドの値を新しい派生フィールドに結合します。
 
@@ -863,7 +861,7 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 <!-- REGEX REPLACE -->
 
-### Regex Replace
+### 正規表現による置換
 
 正規表現を使用して新しい派生フィールドに値を置き換えます。
 
@@ -949,7 +947,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 | 出力プレースホルダーシーケンス | 説明 |
 | --- | --- |
 | `$&` | 式全体に一致したものを出力します。 |
-| `$n` | n 番目のサブ式に一致したものを出力します。例えば、`$1` は、最初のサブ式を出力します。 |
+| `$n` | n 番目のサブ式に一致する値を出力します。 例： `$1` 最初のサブ式を出力します。 |
 | ``$` `` | 最後に見つかった一致の終わり（前に一致が見つからなかった場合は、テキストの始まり）から、現在の一致の始まりまでのテキストを出力します。 |
 | `$+` | 正規表現で最後にマークされたサブ式に一致するものを出力します。 |
 | `$$` | 文字列文字 `"$"` を出力します。 |
@@ -1055,7 +1053,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 ### トリミング
 
-フィールド値の先頭または末尾から、空白、特殊文字、または文字数を新しい派生フィールドにトリミングします。
+フィールド値の先頭または末尾から、空白文字、特殊文字、または文字数を新しい派生フィールドにトリミングします。
 
 +++ 詳細
 
@@ -1069,7 +1067,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 ## 使用例 1 {#trim-uc1}
 
-製品データを収集しますが、そのデータにはフラグメントがレポートする非表示の空白文字が含まれています。 余分なホワイトペースを簡単にトリミングしたい場合
+製品データを収集しますが、そのデータにはフラグメントレポートに含まれない空白文字が含まれます。 余分な空白を簡単にトリミングしたい
 
 ### 次より前のデータ： {#trim-uc1-databefore}
 
@@ -1097,7 +1095,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 ## 使用例 2 {#trim-uc2}
 
-収集されたページ名のデータには、削除する必要があるページ名の末尾に、誤った特殊文字が含まれています。
+収集されたページ名のデータに、削除する必要があるページ名の末尾に、誤った特殊文字が含まれています。
 
 ### 次より前のデータ： {#trim-uc2-databefore}
 
@@ -1259,4 +1257,3 @@ storeID を含むデータを収集します。 storeID には、省略された
 - [データを最大限に活用する：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Customer Journey Analytics用の派生フィールドの使用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
-

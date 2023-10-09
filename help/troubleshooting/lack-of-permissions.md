@@ -4,13 +4,13 @@ description: 権限の欠如に起因する問題のトラブルシューティ�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
+source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '166'
 ht-degree: 4%
 
 ---
-
 
 # 権限の欠如
 
@@ -21,14 +21,14 @@ Customer Journey Analyticsは、特定のAdobe Experience Platform権限が設�
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL 問題が発生したため、スキーマフィールドを読み込めませんでした。再度お試しください。]*
+*[!UICONTROL DULE ポリシーの取得中にエラーが発生しました。アカウントの権限、ポリシー、またはラベルを確認してください。 メッセージ：禁止されています。]*
 
 >[!ENDSHADEBOX]
 
 
 このエラーを修正するには、システム製品を持つ組織のシステム管理者権限またはExperience Platform管理者権限が必要です。 詳しくは、 [アクセス制御の概要](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) を参照してください。
 
-1. Adobe Experience Platform UI に移動します。
+1. Experience Platform UI のAdobeに移動します。
 
 1. 選択 **[!UICONTROL 権限]** をクリックします。
 
@@ -41,5 +41,3 @@ Customer Journey Analyticsは、特定のAdobe Experience Platform権限が設�
 1. 確認 **[!UICONTROL データ使用ポリシーの管理]** および **[!UICONTROL データ使用ポリシーの表示]** が **[!UICONTROL データガバナンス]** コンテナ。
 
 1. 選択 **[!UICONTROL 保存]** をクリックして変更を保存します。
-
-

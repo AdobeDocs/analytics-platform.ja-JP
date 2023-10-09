@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
-workflow-type: ht
-source-wordcount: '2651'
-ht-degree: 100%
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+workflow-type: tm+mt
+source-wordcount: '2662'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2023 年 10 月** | |
+| その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数に置き換えます。 |
 | **2023年9月** | |
 | メディア再生滞在時間パネルの記事の構造を更新しました。 | メディア再生滞在時間というフォルダーを削除し、フォルダーの内容を 1 つの記事である[メディア再生滞在時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)パネルに統合しました。 <p>この変更は、その他のパネルのドキュメントに沿ったものになります。</p> |
 | その他の派生フィールド機能 | 新しい [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) 関数および [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 関数と、[`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 関数に追加したその他の CSV 機能に関するドキュメントを更新しました。 |
