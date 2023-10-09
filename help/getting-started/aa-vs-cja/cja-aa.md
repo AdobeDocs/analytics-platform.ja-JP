@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2140'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ ht-degree: 97%
 | クロスデバイス分析 | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | SQL アクセス | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | セキュリティとプライバシーに関するオプションの機能強化 - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する追加のセキュリティオプションを提供します。Adobe Analytics は HIPAA に対応していません。 |
-| データセット (Adobe Analyticsレポートスイートなど ) を組み合わせる機能 | Customer Journey Analyticsを使用すると、Adobe Analyticsの単一のレポートスイートのように、複数のレポートスイートのデータを組み合わせることができます。 |
-| 派生フィールド | 派生フィールドを使用すると、データに対するレポート時間変換が可能になります。 データは、その場で結合、修正または作成でき、すべてのレポートに遡って適用できます。 |
+| データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能 | Customer Journey Analytics を使用すると、複数のレポートスイートのデータを、Adobe Analytics の単一のレポートスイートであるかのように組み合わせることができます。 |
+| 派生フィールド | 派生フィールドを使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、すべてのレポートに対して遡って適用できます。 |
 
 {style="table-layout:auto"}
