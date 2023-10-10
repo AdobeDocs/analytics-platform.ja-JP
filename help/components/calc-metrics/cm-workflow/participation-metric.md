@@ -3,9 +3,9 @@ description: 計算指標ビルダーを使用して、誰でもパーティシ�
 title: パーティシペーション指標
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: d55df4ea2086278a243af51b698a9822a9a04e04
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '182'
 ht-degree: 32%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->パーティシペーション指標は管理ツールで有効にできますが、カスタムイベント 1 ～ 100 に対してのみ有効です。
+>パーティシペーションなど、他のアトリビューションモデルを持つ指標は、 [データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja). 次の例は、Workspace の計算指標ビルダーへのアクセス権を持つユーザーが作成する方法を示しています。
 
 1. 指標の作成を開始します ( [指標の作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. 計算指標ビルダーで、指標に「パーティシペーション」などの名前を付けます
@@ -27,7 +27,7 @@ ht-degree: 32%
 
    ![](assets/participation.png)
 
-1. 選択 [!UICONTROL **保存**] 指標を保存します。
+1. 選択 [!UICONTROL **保存**] をクリックして指標を保存します。
 1. **[!UICONTROL ページ]**&#x200B;レポートで計算指標を使用します。
 
    ![](assets/participation-pages.png)
