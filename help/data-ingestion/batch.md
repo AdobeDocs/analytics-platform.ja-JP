@@ -4,10 +4,10 @@ description: Customer Journey Analytics でバッチデータを取り込んで�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 91%
+source-wordcount: '1977'
+ht-degree: 87%
 
 ---
 
@@ -48,28 +48,35 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-2. 「**[!UICONTROL スキーマを作成]**」を選択します。オプションのリストから、「**[!UICONTROL XDM 個人プロファイル]**」を選択します。
+1. 選択 **[!UICONTROL スキーマを作成]**..
+1. スキーマ作成ウィザードのクラスの選択手順で、「 」を選択します。 **[!UICONTROL 個々のプロファイル]**.
 
-   ![スキーマ](./assets/create-schema.png)
+   ![スキーマ](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（メール、メール、ポイントなど）のモデル化に使用されます。エクスペリエンスイベントスキーマは、プロファイルの&#x200B;_動作_（ページ表示や買い物かごに追加など）をモデル化するために使用できます。
+   >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+
+   「**[!UICONTROL 次へ]**」を選択します。
 
 
-3. [!UICONTROL 名称未設定スキーマ]画面で、次の手順を実行します。
+1. Adobe Analytics の [!UICONTROL 名前とレビュー手順] の [!UICONTROL スキーマを作成] ウィザード：
 
-   1. スキーマの表示名と説明（オプション）を入力します。
+   1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
 
-      ![スキーマに名前を付ける](./assets/name-loyalty-schema.png)
+      ![スキーマに名前を付ける](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
+   1. 「**[!UICONTROL 完了]**」を選択します。
+
+1. サンプルスキーマの「構造」タブで、次の操作を実行します。
+
+   1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
       ![フィールドグループを追加](./assets/add-field-group-button.png)
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   3. [!UICONTROL フィールドグループを追加]ダイアログで、リストから「**[!UICONTROL ロイヤルティの詳細]**」フィールドグループを選択します。
+   1. [!UICONTROL フィールドグループを追加]ダイアログで、リストから「**[!UICONTROL ロイヤルティの詳細]**」フィールドグループを選択します。
 
       ![AEP Web SDK ExperienceEvent フィールドグループ](./assets/loyalty-fieldgroup.png)
 
@@ -79,13 +86,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
-   4. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
+   1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
-4. [!UICONTROL 構造]パネルで、スキーマ名の隣にある「**[!UICONTROL +]**」をクリックします。
+1. [!UICONTROL 構造]パネルで、スキーマ名の隣にある「**[!UICONTROL +]**」をクリックします。
 
    ![スキーマ追加フィールドボタンの例](./assets/example-loalty-schema-plus.png)
 
-5. 「[!UICONTROL フィールドプロパティ]」パネルで、名前に `Identification`、[!UICONTROL 表示名]に&#x200B;**[!UICONTROL ID]** と入力し、[!UICONTROL タイプ]で&#x200B;**[!UICONTROL オブジェクト]**、[!UICONTROL フィールドグループ]で **[!UICONTROL Profile Core v2]** を選択します。
+1. 「[!UICONTROL フィールドプロパティ]」パネルで、名前に `Identification`、[!UICONTROL 表示名]に&#x200B;**[!UICONTROL ID]** と入力し、[!UICONTROL タイプ]で&#x200B;**[!UICONTROL オブジェクト]**、[!UICONTROL フィールドグループ]で **[!UICONTROL Profile Core v2]** を選択します。
 
    ![ID オブジェクト](./assets/identifcation-loyalty-field.png)
 
@@ -93,7 +100,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
-6. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]から **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
+1. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]から **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
 
    ![メールを ID として指定](./assets/specify-email-loyalty-id.png)
 
@@ -103,7 +110,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    「**[!UICONTROL 保存]**」を選択します。
 
-7. （スキーマ名を使用して）スキーマのルートレベルを選択してから、**[!UICONTROL プロファイル]**&#x200B;スイッチをクリックします。
+1. （スキーマ名を使用して）スキーマのルートレベルを選択してから、**[!UICONTROL プロファイル]**&#x200B;スイッチをクリックします。
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
@@ -115,7 +122,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![プロファイルでスキーマを有効にする](./assets/enable-for-profile.png)
 
-8. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
+1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
 Adobe Experience Platform に取り込むことができるロイヤルティデータをモデル化する、最小限のスキーマを作成しました。このスキーマを使用すると、メールアドレスを使用してプロファイルを識別できます。プロファイルのスキーマを有効にすると、バッチファイルのデータがリアルタイム顧客プロファイルへと確実に追加されます。
 

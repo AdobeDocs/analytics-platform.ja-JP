@@ -3,10 +3,11 @@ title: Adobe Experience Platform Edge Network Server API を使用したデー�
 description: Adobe Experience Platform Edge Network Server API と Edge Network を使用してCustomer Journey Analyticsにデータを取り込む方法について説明する
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 62%
+source-wordcount: '2353'
+ht-degree: 60%
 
 ---
 
@@ -52,28 +53,35 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-2. 「**[!UICONTROL スキーマを作成]**」を選択します。オプションのリストから、「**[!UICONTROL XDM ExperienceEvent]**」を選択します。
+1. 選択 **[!UICONTROL スキーマを作成]**..
+1. スキーマ作成ウィザードのクラスの選択手順で、「 」を選択します。 **[!UICONTROL エクスペリエンスイベント]**.
 
-   ![スキーマ](./assets/create-ee-schema.png)
+   ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの（例えば、ゲームのレベルに到達する）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+   >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+
+   「**[!UICONTROL 次へ]**」を選択します。
 
 
-3. [!UICONTROL 名称未設定スキーマ]画面で、次の手順を実行します。
+1. Adobe Analytics の [!UICONTROL 名前とレビュー手順] の [!UICONTROL スキーマを作成] ウィザード：
 
-   1. スキーマの表示名と説明（オプション）を入力します。
+   1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
 
-      ![スキーマに名前を付ける](./assets/name-schema.png)
+      ![スキーマに名前を付ける](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
+   1. 「**[!UICONTROL 完了]**」を選択します。
+
+1. サンプルスキーマの「構造」タブで、次の操作を実行します。
+
+   1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
       ![フィールドグループを追加](./assets/add-field-group-button.png)
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   3. Adobe Analytics の [!UICONTROL フィールドグループを追加] ダイアログで、 **[!UICONTROL 目隠し光]** フィールドグループを選択します。 このフィールドグループは、コンソールで Blinding Light という架空のゲームをプレイするユーザーの進行状況を追跡するために作成されます。
+   1. Adobe Analytics の [!UICONTROL フィールドグループを追加] ダイアログで、 **[!UICONTROL 目隠し光]** フィールドグループを選択します。 このフィールドグループは、コンソールで Blinding Light という架空のゲームをプレイするユーザーの進行状況を追跡するために作成されます。
 
       ![[ ブラインドライト ] フィールドグループ](assets/schema-fieldgroup-blindinglight.png)
 
@@ -83,13 +91,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
-   4. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
+   1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
-4. 選択 **[!UICONTROL +]** スキーマ名の横に表示されます。
+1. 選択 **[!UICONTROL +]** スキーマ名の横に表示されます。
 
    ![スキーマ追加フィールドボタンの例](./assets/example-gamingschema-plus.png)
 
-5. Adobe Analytics の [!UICONTROL フィールドのプロパティ] パネル、入力 `identification` として [!UICONTROL フィールド名], **[!UICONTROL 識別]** として [!UICONTROL 表示名]を選択します。 **[!UICONTROL オブジェクト]** として [!UICONTROL タイプ] を選択し、 **[!UICONTROL ExperienceEvent Core v2.1]** として [!UICONTROL フィールドグループ].
+1. Adobe Analytics の [!UICONTROL フィールドのプロパティ] パネル、入力 `identification` として [!UICONTROL フィールド名], **[!UICONTROL 識別]** として [!UICONTROL 表示名]を選択します。 **[!UICONTROL オブジェクト]** として [!UICONTROL タイプ] を選択し、 **[!UICONTROL ExperienceEvent Core v2.1]** として [!UICONTROL フィールドグループ].
 
    ![ID オブジェクト](./assets/identification-field-gaming.png)
 
@@ -97,7 +105,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
-6. 先ほど追加した ID オブジェクトで「**[!UICONTROL ecid]**」フィールドをクリックし、右パネルの [!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]** および **[!UICONTROL ECID]** を選択します。
+1. 先ほど追加した ID オブジェクトで「**[!UICONTROL ecid]**」フィールドをクリックし、右パネルの [!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]** および **[!UICONTROL ECID]** を選択します。
 
    ![ECID を ID として指定](./assets/specify-identity-gaming.png)
 
@@ -105,7 +113,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    「**[!UICONTROL 適用]**」を選択します。ecid 属性にフィンガープリントアイコンが表示されます。
 
-7. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
+1. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
 
    ![メールを ID として指定](./assets/specify-email-identity-gaming.png)
 
@@ -115,7 +123,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    「**[!UICONTROL 保存]**」を選択します。
 
-8. スキーマの名前を表示しているスキーマのルート要素を選択してから、**[!UICONTROL プロファイル]**&#x200B;スイッチをクリックします。
+1. スキーマの名前を表示しているスキーマのルート要素を選択してから、**[!UICONTROL プロファイル]**&#x200B;スイッチをクリックします。
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
@@ -127,7 +135,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![プロファイルでスキーマを有効にする](./assets/enable-for-profile.png)
 
-9. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
+1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
 ゲームから取り込むデータをモデル化する最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。プロファイルのスキーマを有効にすると、コンソールゲームでキャプチャされたデータがリアルタイム顧客プロファイルに追加されます。
 
