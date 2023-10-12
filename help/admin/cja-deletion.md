@@ -4,10 +4,10 @@ description: Customer Journey Analytics または Adobe Experience Platform に�
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 34b19024769f94c01c8655d80445fac836ec20f9
+source-git-commit: 49fa31b3dd23718f35a050d5548dce1b30e8ab9c
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics または Adobe Experience Platform で接続、デ�
 | 新しい調査を作成... | 結果 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存するワークスペースプロジェクトは動作しなくなります。</li></ul>権限を持たないAdobe Experience PlatformCustomer Journey Analyticsに関連付けられているサンドボックス接続は削除できません。 これらの接続に基づいて構築されたデータビューに対する権限を持っている場合でも、基になるAdobe Experience Platformサンドボックスに対する権限を付与されるまで、接続を削除することはできません。 |
-| でのデータセットの削除 [!UICONTROL Adobe Experience Platform] | AEP でデータセットを削除すると、そのデータセットからそのデータセットを含むすべての接続へのデータフローが停止します。そのデータセットのデータは、関連付けられた Customer Journey Analytics 接続から自動的に削除されます。 |
+| でのデータセットの削除 [!UICONTROL Adobe Experience Platform] | AEP でデータセットを削除すると、そのデータセットからそのデータセットを含むすべての接続へのデータフローが停止します。そのデータセットのデータは、関連するCustomer Journey Analytics接続から自動的に削除されます。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | Customer Journey Analytics内の接続からデータセットを削除すると、そのデータセットに依存するデータビューやプロジェクトは機能しなくなります。 |
 | （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | バッチが [!UICONTROL Adobe Experience Platform] のデータセットから削除されると、そのバッチを含む [!UICONTROL Customer Journey Analytics] の接続から同じバッチが削除されます。[!UICONTROL Customer Journey Analytics] には、[!UICONTROL Adobe Experience Platform] で削除されたバッチについて通知されます。 |
 | [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、そのバッチからのデータも部分的なデータも [!UICONTROL Customer Journey Analytics] には表示されません。取り込みがロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータは [!UICONTROL Customer Journey Analytics] に表示されます。 |

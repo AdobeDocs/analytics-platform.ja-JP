@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: bf1e14fc0ecfdab3ff7032133d05ab0f40f123d6
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2686'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
-| **2023 年 10 月** | |
+| **2023年10月** | |
+| Adobe Analytics との比較 | Customer Journey AnalyticsとAdobe Analyticsの違いの比較と理解に関する基礎知識として、概要ページを追加しました。 |
 | その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数に置き換えます。 |
 | **2023年9月** | |
 | メディア再生滞在時間パネルの記事の構造を更新しました。 | メディア再生滞在時間というフォルダーを削除し、フォルダーの内容を 1 つの記事である[メディア再生滞在時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)パネルに統合しました。 <p>この変更は、その他のパネルのドキュメントに沿ったものになります。</p> |
