@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,6 @@ Customer Journey Analytics および Adobe Analytics には多くの類似点が
 * [Customer Journey Analytics の機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [Analytics ソースコネクタを通じて渡された Analytics データに関する用語を比較](/help/getting-started/aa-vs-cja/terminology.md)
 * [Adobe Analytics と Customer Journey Analytics のレポート機能におけるデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [処理ルール、VISTA および分類とデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)

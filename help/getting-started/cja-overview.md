@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 0b8fb4007ecb71be2186b8a83f2026b2e296e8a7
-workflow-type: ht
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 Customer Journey Analytics のいくつかの機能は、従来の Adobe Analytics と比較して、業界標準に合わせて名前が変更されました。次に、更新された用語の一部を示します。
 
 * セグメントは「フィルター」になりました。
-* 仮想レポートスイートは、「データビュー」と呼ばれるようになりました。
+* 仮想レポートスイートは、「データビュー」になりました。
 * 分類は、「ルックアップデータセット」になりました。
 * 顧客属性は、「プロファイルデータセット」になりました。
 * ヒットコンテナは、「イベント」コンテナになりました。
