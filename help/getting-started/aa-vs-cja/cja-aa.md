@@ -4,14 +4,14 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
-workflow-type: ht
-source-wordcount: '2140'
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
 
-# Adobe Customer Journey Analytics の機能のサポート
+# Customer Journey Analytics の機能のサポート
 
 次の表に、Adobe Analytics でサポートされている機能、Customer Journey Analytics で部分的にサポートされている機能やサポートされていない機能、Adobe Analytics でサポートされていないか使用できない Customer Journey Analytics の機能を示します。これらのリストは、時間が経過し、Customer Journey Analytics に機能が追加されると変更されます。
 
