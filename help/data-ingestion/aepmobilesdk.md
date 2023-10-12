@@ -4,7 +4,7 @@ description: Adobe Experience Platform Mobile SDK と Edge Network を使用し�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '3435'
 ht-degree: 61%
@@ -54,15 +54,17 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
 1. 選択 **[!UICONTROL スキーマを作成]**..
-1. スキーマ作成ウィザードのクラスの選択手順で、「 」を選択します。 **[!UICONTROL エクスペリエンスイベント]**.
+1. スキーマ作成ウィザードのクラスを選択手順で、次の操作を実行します。
 
-   ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
+   1. 選択 **[!UICONTROL エクスペリエンスイベント]**.
 
-   >[!INFO]
-   >
-   >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
 
-   「**[!UICONTROL 次へ]**」を選択します。
+      >[!INFO]
+      >
+      >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+
+   1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
 1. Adobe Analytics の [!UICONTROL 名前とレビュー手順] の [!UICONTROL スキーマを作成] ウィザード：
