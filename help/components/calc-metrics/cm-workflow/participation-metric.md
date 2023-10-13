@@ -3,9 +3,9 @@ description: 計算指標ビルダーを使用して、誰でもパーティシ�
 title: パーティシペーション指標
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
+source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 6%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->パーティシペーションなど、他のアトリビューションモデルを持つ指標は、 [データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja). 次の例は、Workspace の計算指標ビルダーへのアクセス権を持つユーザーが作成する方法を示しています。
+>パーティシペーションなど、他のアトリビューションモデルを持つ指標は、 [データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja). 詳しくは、 [アトリビューションコンポーネントの設定](../../../data-views/component-settings/attribution.md) を参照してください。<br/>次の例は、Workspace の計算指標ビルダーへのアクセス権を持つ任意のユーザーがパーティシペーション指標を作成する方法を示しています。
 
 
 1. 指標の作成を開始します ( [指標の作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. 計算指標ビルダーで、指標に「パーティシペーション」などの名前を付けます。
-1. 成功イベントを含む指標（「注文件数」など）を「定義」キャンバスにドラッグします。
+1. 計算指標ビルダーで、指標に名前を付けます。 `Participation` 似たようなものです。
+1. 成功イベントを含む指標をドラッグします（例： ）。 [!DNL Orders]、 [!UICONTROL 定義] キャンバス。
 1. 選択 ![ギア](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を参照してください。
 1. 表示されるポップアップで、「 」を選択します。 **[!UICONTROL デフォルト以外のアトリビューションモデルを使用]** を定義するには、 [アトリビューションモデル](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) その出来事が **[!UICONTROL パーティシペーション]** を選択し、 **[!UICONTROL セッション]** （の） [!UICONTROL ルックバックウィンドウ]. 選択 **[!UICONTROL 適用]** をクリックして確定します。
 
