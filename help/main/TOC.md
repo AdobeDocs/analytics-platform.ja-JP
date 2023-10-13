@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
+source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 81%
@@ -245,7 +245,7 @@ ht-degree: 81%
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [「パーティシペーション」指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [パーティシペーション指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
