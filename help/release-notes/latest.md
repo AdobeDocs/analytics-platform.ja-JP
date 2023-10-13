@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 49d91b513abd545ea73c7867817cd8724b460be4
-workflow-type: ht
-source-wordcount: '777'
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
+workflow-type: tm+mt
+source-wordcount: '775'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 | **Adobe Analytics プロジェクトと含まれるコンポーネントを Customer Journey Analytics に移行** | Adobe Analyticsプロジェクトを Customer Journey Analytics に移行できるようになりました。このプロセスにより、Adobe Analytics から Customer Journey Analytics への移行が簡単になります。 <p>プロジェクトを Customer Journey Analytics に移行すると、アセットは Adobe Analytics レポートスイートから Customer Journey Analytics データビューにマッピングされます。</p> <p>Adobe Analytics インターフェイスから Customer Journey Analytics にプロジェクトを移行します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)</p> | 該当なし | 2023年10月9日（PT） |
 | **Adobe Product Analytics：シリーズを表示／非表示** | グラフの凡例またはテーブルの行をクリックして、ビジュアライゼーションでの系列の表示を制御します。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=ja) | 該当なし | 2023年10月4日（PT） |
 | **Adobe Product Analytics の注釈** | ガイド付き分析で、Customer Journey Analytics で作成された注釈を表示できるようになりました。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=ja) | 該当なし | 2023年10月4日（PT） |
-| **レポートアクティビティマネージャー** | レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。レポートアクティビティマネージャーの主な機能は次のとおりです。<ul><li>現在のレポートリクエストをキャンセルします（ガイド付き分析からのリクエストやテーブル全体の書き出しを含む）。</li><li>定義した期間に対する後続のリクエストの制限</li></ul>管理者は、現在のリクエストのキャンセルに加えて、定義した期間だけリクエストを制限できるようになりました。管理者は、リクエスト、プロジェクトまたはユーザーごとにリクエストを制限できます。詳細情報（近日公開） | 2023年10月17日（PT） | 2023年10月23日（PT） |
+| **レポートアクティビティマネージャー** | レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。レポートアクティビティマネージャーの主な機能は次のとおりです。<ul><li>現在のレポートリクエストをキャンセルします（ガイド付き分析からのリクエストやテーブル全体の書き出しを含む）。</li><li>定義した期間に対する後続のリクエストの制限</li></ul>管理者は、現在のリクエストのキャンセルに加えて、定義した期間だけリクエストを制限できるようになりました。管理者は、リクエスト、プロジェクトまたはユーザーごとにリクエストを制限できます。[詳細情報](/help/reporting-activity-manager/reporting-activity-overview.md) | 2023年10月17日（PT） | 2023年10月23日（PT） |
 
 {style="table-layout:auto"}
 

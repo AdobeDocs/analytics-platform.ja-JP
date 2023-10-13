@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1826'
 ht-degree: 4%
 
 ---
@@ -65,9 +65,9 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    ![アカウントを書き出しダイアログ AEP データランディングゾーン](assets/export-account-aep.png)
 
-1. の内容をコピーします。 [!UICONTROL **SAS URI**] フィールドをクリップボードに追加します。
+1. の内容をコピーします。 [!UICONTROL **SAS URI**] フィールドをクリップボードに追加します。 この SAS URI を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
 
-   この SAS URI を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+   このフィールドが空の場合は、Adobe Experience Platformにアクセスする権限を付与する必要があります。
 
 1. Adobe Experience Platformで、コピーした SAS URI を使用するようにデータランディングゾーンコンテナを設定します。
 
@@ -82,6 +82,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
       の節で説明したタスクをスキップできます。 [データランディングゾーンの資格情報の取得](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) および [データランディングゾーン資格情報の更新](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials)コピーした URI にこれらの資格情報が含まれているので、をクリックします。
 
    1. Adobe Experience Platformのドキュメントに従うと、 [!UICONTROL **BLOB コンテナ SAS URL**] 「 」フィールドに、手順 3 でコピーした SAS URI を貼り付けます。
+
+      >[!NOTE]
+      >
+      >SAS URI は作成後 7 日で有効期限が切れるので、この操作は 7 日ごとに実行する必要があります。 スクリプトを作成して、この処理を自動化できます。
+
 
       ![SAS URL フィールド](assets/blob-container-sas-uri.png)
 
