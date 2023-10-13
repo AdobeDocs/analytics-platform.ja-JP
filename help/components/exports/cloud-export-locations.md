@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,21 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 1. 「[!UICONTROL **保存**]」を選択します。
 
 1. これで、Analysis Workspaceから設定したアカウントと場所にデータを書き出せるようになりました。 クラウドにデータを書き出す方法について詳しくは、 [クラウドへのプロジェクトデータの書き出し](/help/analysis-workspace/export/export-cloud.md).
+
+1. AEP データランディングゾーンでデータにアクセスする最も簡単な方法は、Microsoft Azure Storage Explorer を使用することです。 これは、 [AEP データランディングゾーンアカウント](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. を開きます。 [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. に移動します。 [!UICONTROL **ストレージアカウント**] > [!UICONTROL **（附属容器）**] > [!UICONTROL **BLOB コンテナ**] > **[!UICONTROL cjaexport-_数値_]**>*** your_container_name ***.
+
+      >[!NOTE]
+      >
+      >フォルダー名 **[!UICONTROL cjaexport-_数値_]**は、Azure Storage Explorer が提供する既定の名前です。 SAS URI に関連付けられている接続が 1 つだけの場合（通常）、このフォルダの名前は次のようになります。**[!UICONTROL cjaexport-1]**.
+
+
+      ![Azure ストレージエクスプローラーでのファイルへのアクセス](assets/azure-storage-explorer-access.png)
+
+   1. ダウンロードするエクスポートを選択し、「 」を選択します。 [!UICONTROL **ダウンロード**] をクリックしてダウンロードします。
 
 ### Amazon S3 Role ARN
 

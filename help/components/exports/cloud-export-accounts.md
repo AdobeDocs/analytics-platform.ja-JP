@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 5%
+source-wordcount: '1783'
+ht-degree: 4%
 
 ---
 
@@ -65,9 +65,31 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    ![アカウントを書き出しダイアログ AEP データランディングゾーン](assets/export-account-aep.png)
 
-1. の内容をコピーします。 [!UICONTROL **SAS URI**] フィールドをクリップボードに追加します。 この SAS URI を使用して、AEP ランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+1. の内容をコピーします。 [!UICONTROL **SAS URI**] フィールドをクリップボードに追加します。
 
-1. 選択 [!UICONTROL **OK**].
+   この SAS URI を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+
+1. Adobe Experience Platformで、コピーした SAS URI を使用するようにデータランディングゾーンコンテナを設定します。
+
+   >[!NOTE]
+   >
+   >AEP データランディングゾーンのアカウントは Azure に基づいているので、AEP データランディングゾーンに書き出すレポートにアクセスする最も簡単な方法は、Azure Storage Explorer を使用することです。 次の手順では、このメソッドを使用します。
+
+   1. まだダウンロードしていない場合は、 [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Adobe Experience Platformのドキュメントで、 [データランディングゾーンコンテナを Azure Storage Explorer に接続する](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+
+      の節で説明したタスクをスキップできます。 [データランディングゾーンの資格情報の取得](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) および [データランディングゾーン資格情報の更新](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials)コピーした URI にこれらの資格情報が含まれているので、をクリックします。
+
+   1. Adobe Experience Platformのドキュメントに従うと、 [!UICONTROL **BLOB コンテナ SAS URL**] 「 」フィールドに、手順 3 でコピーした SAS URI を貼り付けます。
+
+      ![SAS URL フィールド](assets/blob-container-sas-uri.png)
+
+   1. 選択 [!UICONTROL **次へ**] > [!UICONTROL **接続**].
+
+1. Customer Journey Analytics内、 [!UICONTROL **作成されたエクスポートアカウント**] ダイアログ、選択 [!UICONTROL **OK**].
+
+   ![アカウントを書き出しダイアログ AEP データランディングゾーン](assets/export-account-aep.png)
 
 1. 次で続行 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
