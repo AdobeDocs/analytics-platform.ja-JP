@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 99%
+source-wordcount: '2894'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年10月** | |
+| 完全なテーブルをクラウドに書き出し | 数百万行の Workspace 行を含む完全なテーブルをクラウドの宛先に書き出す方法に関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） |
+| レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[Activity Manager のレポートの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
+| 管理ページの新しい列 | で使用できるようになった新しい列の説明 [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) そして [フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja). |
 | Adobe Analytics との比較 | 追加された [概要ページ](../getting-started/aa-vs-cja/overview.md) Customer Journey AnalyticsとAdobe Analyticsの違いの比較と理解に関する概要。 |
 | その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数に置き換えます。 |
 | **2023年9月** | |

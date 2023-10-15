@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2023年10月）
 
-**最終更新日**：2023年10月4日（PT）
+**最終更新日**：2023年10月13日（PT）
 
 このリリースノートは、2023年10月4日～10月24日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 

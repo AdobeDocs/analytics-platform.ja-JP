@@ -4,10 +4,10 @@ description: Customer Journey Analytics で Platform データセットへの接
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
-workflow-type: ht
-source-wordcount: '2630'
-ht-degree: 100%
+source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+workflow-type: tm+mt
+source-wordcount: '2797'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,15 @@ ht-degree: 100%
 
 新しいワークフローを使用すると、接続を作成する際に、Experience Platform データセットを追加できます。
 
-1. 接続設定ダイアログで、「**[!UICONTROL データセットを追加]**」をクリックします。
+1. [ 接続設定 ] ダイアログで、 **[!UICONTROL データセットを追加]**.
 
-2. 1 つ以上のデータセットを選択して、「**[!UICONTROL 次へ]**」をクリックします。少なくとも 1 つのイベントデータセットを接続に含める必要があります。
+2. Adobe Analytics の [!UICONTROL データセットを選択] ステップ： 1 つ以上のデータセットを選択し、「 」を選択します。 **[!UICONTROL 次へ]**. 少なくとも 1 つのイベントデータセットを接続に含める必要があります。
+   * データセットのリストに表示する列を変更するには、「 」を選択します。 ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) また、「 [!UICONTROL テーブルをカスタマイズ] ダイアログ。
+   * 特定のデータセットを検索するには、 ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 検索フィールド。
+   * 選択したデータセットの表示/非表示を切り替えるには、 ![選択](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 選択項目を非表示]** または **[!UICONTROL 選択した項目を表示]**.
+   * 選択したデータセットのリストからデータセットを削除するには、 ![閉じる](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). 選択したすべてのデータセットを削除するには、「 」を選択します。 **[!UICONTROL すべてクリア]**.
+
+   ![データセットの選択](assets/select-datasets.png)
 
 3. 次に、データセットを 1 つずつ設定します。
 
@@ -70,8 +76,10 @@ ht-degree: 100%
 
    | 設定 | 説明 |
    | --- | --- |
-   | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、スキーマで 1 つ以上のユーザー ID が定義されていないことを意味します。Experience Platform で ID を定義する方法については、このビデオをご覧ください。 |
+   | **[!UICONTROL ユーザー ID]** | イベントおよびプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンリストからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、スキーマで 1 つ以上のユーザー ID が定義されていないことを意味します。Experience Platform で ID を定義する方法については、このビデオをご覧ください。 |
    | **[!UICONTROL タイムスタンプ]** | イベントデータセットの場合のみ、この設定は、Experience Platform のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 |
+   | **[!UICONTROL キー]** | 参照データセットに対してのみ使用できます。 ルックアップデータセットに使用するキー。 |
+   | **[!UICONTROL 一致するキー]** | 参照データセットに対してのみ使用できます。 いずれかのイベントデータセットで結合する一致するキー。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。 |
    | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。<br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
    | **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立し、この接続のデータセットに追加される新しいデータバッチが自動的にワークスペースに送られるようにする場合は、このオプションを選択します。[!UICONTROL オン]または[!UICONTROL オフ]に設定できます。 |
    | **[!UICONTROL データセットのバックフィル]** | 「**[!UICONTROL バックフィルをリクエスト]**」を選択して、履歴データをバックフィルします。<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。待ち時間は、履歴データの量の影響を受けます。</li><li>Adobe Analytics ソースコネクタでは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。</li></ul> |
@@ -81,7 +89,7 @@ ht-degree: 100%
    | **[!UICONTROL データセットサイズ]** | データセットのサイズ。 |
    | **[!UICONTROL スキーマ]** | Adobe Experience Platform で作成されたデータセットに基づくスキーマ。 |
    | **[!UICONTROL データセット]** | データセットの名前。 |
-   | **[!UICONTROL プレビュー]**：`<dataset name>` | 日付、自分の ID、識別子の列を含むデータセットをプレビューします。 |
+   | **[!UICONTROL プレビュー： *データセット名&#x200B;*]** | 日付、自分の ID、識別子の列を含むデータセットをプレビューします。 |
    | **[!UICONTROL 削除]** | 接続全体を削除しなくても、データセットを削除して、ユーザー ID を変更できます。削除すると、データの取り込みに伴うコストと、接続全体および関連するデータビューを再作成する煩雑なプロセスが削減されます。 |
 
    {style="table-layout:auto"}
