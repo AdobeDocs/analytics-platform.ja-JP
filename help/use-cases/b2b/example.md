@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1822'
 ht-degree: 21%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 21%
 
 Workspace プロジェクトの作成時に関連する B2B ディメンションと指標にアクセスするには、それに応じてデータビューを定義する必要があります。
 
-この節では、 [コンポーネント](../../data-views/create-dataview.md#components) 」で指定します。
+この節では、 [コンポーネント](../../data-views/create-dataview.md#components) （データビューの B2B データセット用）
 
 各コンポーネントに、名前、スキーマタイプ、スキーマパス、および（該当する場合）設定に関する詳細が表示されます。
 
