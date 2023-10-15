@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
+source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 21%
@@ -300,9 +300,9 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 
 コンポーネントが正しく定義されたので、Workspace プロジェクトで特定の B2B ビジュアライゼーションを構築できます。
 
-以下は、上記の接続とデータビューを使用する Workspace プロジェクトの例です。 詳しくは、各ビジュアライゼーションの説明を参照してください。
+以下は、上記の接続とデータビューを使用するプロジェクトの例です。 詳しくは、各ビジュアライゼーションの説明を参照してください。
 
-+++ プロジェクト
++++ プロジェクト例
 
 ![ビジュアライゼーション](assets/visualizations.png)
 
