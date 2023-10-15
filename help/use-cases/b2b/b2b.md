@@ -1,17 +1,17 @@
 ---
-title: （B2B）アカウントレベルのデータをルックアップデータセットとして追加
+title: アカウントレベルのデータをルックアップデータセットとして追加
 description: アカウントベースのデータをルックアップデータセットとしてCustomer Journey Analyticsに追加する方法を説明します
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '817'
 ht-degree: 74%
 
 ---
 
-# （B2B）アカウントレベルのデータをルックアップデータセットとして追加
+# アカウントレベルのデータをルックアップデータセットとして追加
 
 B2B のこのユースケースは、個人レベルではなくアカウントレベルのデータを分析用に指定する方法を示しています。アカウントレベルの分析は、以下のような質問に答えられます。
 
