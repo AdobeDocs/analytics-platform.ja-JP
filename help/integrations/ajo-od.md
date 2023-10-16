@@ -2,8 +2,8 @@
 title: Adobe Journey Optimizer Decision Management とAdobe Customer Journey Analyticsの統合
 description: Adobe Journey Optimizer Decision Management で生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 20%
@@ -21,7 +21,7 @@ Adobe Journey Optimizer [決定管理](https://experienceleague.adobe.com/docs/j
 
 ## 決定管理からAdobe Experience Platformへのデータの送信
 
-Adobe Experience Platformは、中央のデータソースとして機能し、決定管理とCustomer Journey Analyticsの間のリンクを提供します。 決定管理からのデータは、Experience Platformで収集されます **自動** またはの一部として **明示的に送信されたエクスペリエンスイベント** （インプレッション数やクリック数など）。 詳しくは、 [データ収集の概要](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=en) を参照してください。
+Adobe Experience Platformは、中央のデータソースとして機能し、決定管理とCustomer Journey Analyticsの間のリンクを提供します。 決定管理からのデータは、Experience Platformで収集されます **自動的に** またはの一部として **明示的に送信されたエクスペリエンスイベント** （インプレッション数やクリック数など）。 詳しくは、 [データ収集の概要](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=en) を参照してください。
 
 ## 接続の作成
 
@@ -31,7 +31,7 @@ Adobe Experience Platformは、中央のデータソースとして機能し、�
 
 | データセット | データセットタイプ | 接続設定 | 説明 |
 | --- | --- | --- | --- |
-| ODE DecisonEvents - _サンドボックス_ 判定 | イベント | ユーザー ID: `IdentityMap` | 決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_ は、特定のサンドボックス名を参照します。 |
+| ODE DecisonEvents - _sandbox_ 判定 | イベント | ユーザー ID: `IdentityMap` | 決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_ は、特定のサンドボックス名を参照します。 |
 | Adobe Journey Optimizer Message Feedback イベントデータセット | イベント | ユーザー ID: `IdentityMap` | メッセージ配信イベントを含みます。 |
 | Adobe Journey Optimizer E メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 電子メールトラッキングイベントが含まれます。 |
 | Adobe Journey Optimizerプッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | プッシュトラッキングイベントが含まれます。 |
@@ -69,7 +69,7 @@ Adobe Experience Platformは、中央のデータソースとして機能し、�
 
 | 指標 | 説明 | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- | --- |
-| イベントタイプ（名前を変更して特定のイベントを参照する、など） `Feedback` 対象 `message.feedback`) [1] | 特定のタイプのイベントの量 | `eventType` | コンポーネントタイプ：指標<br/>**[!UICONTROL 次を含める値を設定&#x200B;]**:オン<br/>**[!UICONTROL 一致]**: [!UICONTROL すべての条件を満たす場合]<br/>**[!UICONTROL 条件&#x200B;]**:**[!UICONTROL &#x200B;次と等しい&#x200B;]**`message.feedback` |
+| イベントタイプ（名前を変更して特定のイベントを参照する、など） `Feedback` 対象： `message.feedback`) [1] | 特定のタイプのイベントの量 | `eventType` | コンポーネントタイプ：指標<br/>**[!UICONTROL 次を含める値を設定&#x200B;]**：オン<br/>**[!UICONTROL 一致]**: [!UICONTROL すべての条件を満たす場合]<br/>**[!UICONTROL 条件&#x200B;]**:**[!UICONTROL &#x200B;次と等しい&#x200B;]**`message.feedback` |
 | 決定オプションスコア | 単一のスコープのコンテキストにおける判定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | コンポーネントタイプ：指標 |
 | フォールバック判定オプションのスコア | 単一のスコープのコンテキストにおけるフォールバック判定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | コンポーネントタイプ：指標 |
 | 解除するオファー | 他の直接のインタラクションなしで却下または却下されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
