@@ -1,11 +1,11 @@
 ---
 title: 監査ログ
-description: Customer Journey Analytics監査ログの表示と管理方法。
+description: Customer Journey Analytics監査ログの表示と管理方法について説明します。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 67%
 
 ---
@@ -26,7 +26,7 @@ Adobe Customer Journey Analyticsでは、システムで実行されるアクテ
 
 ## UI での監査ログの表示
 
-Customer Journey Analyticsで、 **[!UICONTROL ツール]** > **[!UICONTROL 監査ログ]**.
+Customer Journey Analyticsで、に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL 監査ログ]**.
 
 デフォルトでは、今日と昨日の監査ログが表示されます。
 
@@ -42,12 +42,13 @@ Customer Journey Analyticsで、 **[!UICONTROL ツール]** > **[!UICONTROL 監�
 
 次の項目が表示されます。
 
-* **[!UICONTROL アクション名]**:実行されたアクション。 指定できる値には以下のものがあります。
+* **[!UICONTROL アクション名]**：実行されたアクション。 指定できる値には以下のものがあります。
    * API_REQUEST
    * 承認
    * 作成
    * DELETE
    * 編集
+   * 禁輸
    * 書き出し
    * ORG_CHANGE
    * 更新
@@ -55,12 +56,12 @@ Customer Journey Analyticsで、 **[!UICONTROL ツール]** > **[!UICONTROL 監�
    * 転送
    * 承認取消
    * 共有しない
-* **[!UICONTROL 作成日]**:アクションが実行された日時。
-* **[!UICONTROL 説明]**:アクションの概要。
-* **[!UICONTROL ユーザー名]**:アクションを実行したユーザー。
-* **[!UICONTROL 電子メール]**:アクションを実行したユーザーの電子メールアドレス。
-* **[!UICONTROL コンポーネント名]**:ユーザーがアクションを実行したコンポーネント。
-* **[!UICONTROL コンポーネントタイプ]**:コンポーネントのタイプ。 指定できる値には以下のものがあります。
+* **[!UICONTROL 作成日]**：アクションが実行された日時。
+* **[!UICONTROL 説明]**：アクションの概要。
+* **[!UICONTROL ユーザー名]**：アクションを実行したユーザー。
+* **[!UICONTROL 電子メール]**：アクションを実行したユーザーの電子メールアドレス。
+* **[!UICONTROL コンポーネント名]**：ユーザーがアクションを実行したコンポーネント。
+* **[!UICONTROL コンポーネントタイプ]**：コンポーネントのタイプ。 指定できる値には以下のものがあります。
    * 注釈
    * 対象者
    * 計算指標
@@ -78,11 +79,11 @@ Customer Journey Analyticsで、 **[!UICONTROL ツール]** > **[!UICONTROL 監�
    * SCHEDULED_PROJECT
    * ユーザー
    * USER_GROUP
-* **[!UICONTROL コンポーネント ID]**:ユーザーがアクションを実行したコンポーネントの ID。
-* **[!UICONTROL IMS Org ID]**:組織の IMS ID（の形式） `ABC123@AdobeOrg`.
-* **[!UICONTROL ログ ID]**:このログエントリを識別する一意の ID。
-* **[!UICONTROL ユーザー ID]**:アクションを実行したユーザーを識別する一意の ID。
-* **[!UICONTROL ユーザータイプ]**:使用する認証タイプ。 有効な設定値は以下のとおりです。
+* **[!UICONTROL コンポーネント ID]**：ユーザーがアクションを実行したコンポーネントの ID。
+* **[!UICONTROL IMS Org ID]**：組織の IMS ID（の形式） `ABC123@AdobeOrg`.
+* **[!UICONTROL ログ ID]**：このログエントリを識別する一意の ID。
+* **[!UICONTROL ユーザー ID]**：アクションを実行したユーザーを識別する一意の ID。
+* **[!UICONTROL ユーザータイプ]**：使用する認証タイプ。 有効な設定値は以下のとおりです。
    * IMS
    * OKTA
 

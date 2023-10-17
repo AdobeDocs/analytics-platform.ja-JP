@@ -3,10 +3,10 @@ title: Activity Manager のレポートの概要
 description: レポートアクティビティマネージャーを使用して、ピーク時のレポート作成時の容量の問題を診断および修正する方法について説明します。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 29%
+source-wordcount: '276'
+ht-degree: 23%
 
 ---
 
@@ -32,9 +32,7 @@ Activity Manager のレポートには次のような利点があります。
 
 <!-- update for CJA -->
 
-レポートアクティビティを管理するには、Adobe Admin Consoleの Analytics 製品管理者権限が必要です。
-
-![権限](assets/rep-mgr-permission.png)
+レポートアクティビティを管理するには、製品管理者の役割が必要です。 詳しくは、 [製品管理者の役割](/help/admin/cja-access-control.md#product-admin-role) in [Customer Journey Analyticsアクセス制御](/help/admin/cja-access-control.md).
 
 ## レポートアクティビティを表示
 
@@ -43,11 +41,3 @@ Activity Manager のレポートには次のような利点があります。
 ## レポートリクエストのキャンセル
 
 レポートアクティビティマネージャでのレポート要求の取り消しについては、 [レポートアクティビティマネージャーでのレポート要求のキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## よくある質問 {#faq}
-
-| 質問 | 回答 |
-| --- | --- |
-| 追加のレポート処理能力を購入することはできますか？ | この機能は今後利用可能になる予定です。 |
-
-{style="table-layout:auto"}
