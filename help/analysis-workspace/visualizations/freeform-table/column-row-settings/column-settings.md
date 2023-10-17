@@ -3,10 +3,10 @@ description: 列設定では、列の書式を設定できます。一部の列�
 title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 94%
+source-wordcount: '768'
+ht-degree: 84%
 
 ---
 
@@ -56,21 +56,17 @@ ht-degree: 94%
 
 デフォルトのアトリビューションモデルセットを [データビュー](/help/data-views/component-settings/attribution.md).
 
-<!--
-
 >[!NOTE]
 >
->Consider the following when updating a component's attribution to a non-default attribution model:
+>コンポーネントのアトリビューションをデフォルト以外のアトリビューションモデルに更新する際は、次の点を考慮してください。
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **コンポーネントを *単一の次元*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションは割り当てモデルを無視します。
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>* **コンポーネントを *複数のディメンション*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションには割り当てモデルが保持されます。
 >
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>   複数のディメンションは、 [クラウドへのデータのエクスポート](/help/analysis-workspace/export/export-cloud.md).
 >
-> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
+> 配分について詳しくは、 [永続性コンポーネントの設定](/help/data-views/component-settings/persistence.md).
 
 Analysis Workspaceの指標にデフォルト以外のアトリビューションモデルを使用するには：
 

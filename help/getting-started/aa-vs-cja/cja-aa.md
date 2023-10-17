@@ -4,10 +4,10 @@ description: Customer Journey Analytics の機能と Adobe Analytics の機能�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 97%
+source-wordcount: '2137'
+ht-degree: 95%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 97%
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は、「プロファイルデータセット」と呼ばれています。これらは Experience Cloud から自動的に読み込まれませんが、Customer Journey Analytics で使用できるようにするには、Experience Platform にアップロードする必要があります。 |
 | データフィード | データセットの第 1 世代のデータ書き出しは、[Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=ja) および [Experience Platform の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)を通じて利用できます。これらのオプションを使用すると、Experience Platform データレイクに収集または取り込まれるすべてのデータをイベント／行レベルで書き出すことができます。Post 列はクエリ時に計算されるので、後処理データ列は使用できません。Post 列の書き出しは、レポートを通じて使用できます。 |
+| Data Warehouse レポート | [Customer Journey Analyticsフルテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md) は、Adobe AnalyticsでのData Warehouseレポートの発展です。現在のData Warehouseでは、リクエストの多い新機能は多数使用できません。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は Customer Journey Analytics の一部ではなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
 | 地理特性ディメンション | Adobe Analytics に収集されたすべての地理特性／地域情報は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Customer Journey Analytics に送られます。Analytics ソースコネクタを使用せず、デジタルデータ収集に Experience Platform Web SDK に依存する実装では、[Experience Edge 位置情報検索サービス](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja)を使用できます。 |
@@ -95,7 +96,6 @@ ht-degree: 97%
 | --- | --- |
 | アラート | サポートが予定されています。 |
 | 貢献度分析 | サポートが予定されています。 |
-| Data Warehouse レポート | Analysis Workspace インターフェイスからのサポートが予定されています。また、Adoe Experience Platform [[!UICONTROL クエリサービス]](<https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja>)でも、Customer Journey Analytics におけるこれらのユースケースに対応するインターフェイスを提供しています。 |
 | デバイスグラフを使用した ID のステッチ | サポートが予定されています。 |
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |

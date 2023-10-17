@@ -4,10 +4,10 @@ description: 指標のデフォルトのアトリビューションを設定で�
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 37%
+source-wordcount: '1937'
+ht-degree: 35%
 
 ---
 
@@ -28,21 +28,17 @@ ht-degree: 37%
 
 データビューでの指標の設定を更新することで、特定の指標のデフォルトのアトリビューションモデルを設定できます。 これは、Analysis Workspaceで使用されるたびに、指標のアトリビューションモデルを上書きします。
 
-<!-- 
-
 >[!NOTE]
 >
->Consider the following when enabling attribution on a metric:
+>指標のアトリビューションを有効にする際は、次の点を考慮してください。
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **コンポーネントを *単一の次元*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションは割り当てモデルを無視します。
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>* **コンポーネントを *複数のディメンション*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションには割り当てモデルが保持されます。
 >
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>   複数のディメンションは、 [クラウドへのデータのエクスポート](/help/analysis-workspace/export/export-cloud.md).
 >
-> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
+> 配分について詳しくは、 [永続性コンポーネントの設定](/help/data-views/component-settings/persistence.md).
 
 コンポーネントのデフォルトのアトリビューションモデルを更新するには：
 

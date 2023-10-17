@@ -4,10 +4,10 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 86%
+source-wordcount: '859'
+ht-degree: 81%
 
 ---
 
@@ -20,15 +20,11 @@ ht-degree: 86%
 
 * **配分** では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値が保持されるかを指定できます。
 
-<!--
-
   >[!NOTE]
   >
-  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >次の場合、 [デフォルト以外のアトリビューションモデル](/help/data-views/component-settings/attribution.md) レポート内の指標に対して設定すると、アトリビューションモデルは、同じレポート内のディメンションに設定した配分を無視します。
   >
-  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
-
--->
+  >ただし、 [フルテーブルエクスポート](/help/analysis-workspace/export/export-cloud.md) 複数のディメンションを含むアトリビューションでは、各ディメンションに適用された配分モデルが保持されます。
 
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 

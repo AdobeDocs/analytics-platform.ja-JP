@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 65%
+source-wordcount: '1056'
+ht-degree: 61%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analyticsには、ディメンション、指標、フィルタ
 | プレビュー | 可能性のあるエラーについて簡単に確認できます。プレビューには過去 90 日の情報が表示されます。これは、指標に適したコンポーネントを選択したかどうかを最初に判断するための手段です。予期しない結果が生じた場合は、指標の定義を見直す必要があります。 |
 | 製品の互換性 | Customer Journey Analyticsで作成する計算指標の場合、この値は常に [!UICONTROL **処理済みのデータ**]. 計算指標には、イベントデータセットのデータのみを含めることができます。 |
 | 追加 | すべてのタイプの計算指標の場合、コンテナおよび静的な数値を定義に追加できます。詳細な計算指標では、フィルターと関数も追加できます。<ul><li>コンテナは数式のように機能し、演算の順序を指定します。そのため、コンテナ内の項目は、次の演算の前に処理されます。</li><li>フィルターをコンテナにドラッグすると、そのコンテナ内のすべての項目がフィルターされます。 （高度な計算指標のみ）</li><li>コンテナでは複数のフィルターを積み重ねることができます。</li></ul> |
-| 歯車アイコン（指標タイプ、アトリビューション） | 指標の横にある歯車アイコンをクリックすると、指標タイプとアトリビューションモデルを指定できます。 <!-- <p>**Note:** Consider the following when updating a component's attribution to a non-default attribution model:</p><ul><li>**When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.</li><li>**When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.</li><li>Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).</li></ul> --> <p>配分について詳しくは、 [永続性コンポーネントの設定](/help/data-views/component-settings/persistence.md).</p> |
+| 歯車アイコン（指標タイプ、アトリビューション） | 指標の横にある歯車アイコンをクリックすると、指標タイプとアトリビューションモデルを指定できます。 <p>**注意：** コンポーネントのアトリビューションをデフォルト以外のアトリビューションモデルに更新する際は、次の点を考慮してください。</p><ul><li>**コンポーネントを *単一の次元*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションは割り当てモデルを無視します。</li><li>**コンポーネントを *複数のディメンション*:** デフォルト以外のアトリビューションモデルが使用される場合、コンポーネントのアトリビューションには割り当てモデルが保持されます。</li><li>複数のディメンションは、 [クラウドへのデータのエクスポート](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>配分について詳しくは、 [永続性コンポーネントの設定](/help/data-views/component-settings/persistence.md).</p> |
 | プラス (+) アイコン | 新しいフィルターなどの新しいコンポーネントを作成できます（フィルタービルダーが表示されます）。 |
 | コンポーネントを検索 | この検索バーでは、ディメンション、指標、フィルター（高度な計算指標のみ）および関数（高度な計算指標のみ）を検索できます。 |
 | ディメンションリスト | （フィルタービルダーで）単純なフィルター（例：「Page = Homepage」）を作成するために計算指標ビルダーから離れる代わりに、Page にドラッグして、計算指標ビルダーから直接「Homepage」を選択できます。 これにより、フィルタリングされた計算指標を作成するワークフローを効率化できます。 |

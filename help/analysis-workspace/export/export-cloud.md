@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Customer Journey Analyticsレポートをクラウドにエクスポート
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '1970'
 ht-degree: 4%
@@ -12,8 +12,6 @@ ht-degree: 4%
 ---
 
 # Customer Journey Analyticsレポートをクラウドにエクスポート
-
-{{release-limited-testing}}
 
 Workspace の完全なテーブルをCustomer Journey Analyticsから書き出し、書き出しを指定されたクラウドの宛先に送信できます。
 
