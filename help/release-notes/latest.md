@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: 1482cc7b9da01b60e15d2e48b1156b603e20c6e3
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 97%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2023年10月）
 
-**最終更新日**：2023年10月13日（PT）
+**最終更新日**：2023年10月17日（PT）
 
 このリリースノートは、2023年10月4日～10月24日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **ルックアップおよびプロファイルデータセットの行数指標** | これらの指標は、以前はイベントデータセットでのみ使用できました。 | 2023年10月16日（PT） |
 | **完全なテーブルをクラウドに書き出し** | Customer Journey Analytics の完全なテーブルの書き出しを使用すると、数百万の Workspace 行をクラウドの宛先に書き出すことができます。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p> クラウドの書き出しオプションには以下が含まれます。</p><ul><li>Adobe Experience Platform データランディングゾーン</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） | 2023年10月19日（PT） |
 | **コンポーネントを管理する際に使用できる新しい列** | コンポーネントを管理する際に、[計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja)と[フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja)で次の新しい列を使用できるようになりました。<ul><li>使用場所</li><li>前回の使用</li></ul>この情報は、コンポーネントが組織内のユーザーにとって有用かどうか、どこで使用されているか、削除または変更する必要があるかどうかを判断するのに役立ちます。この情報と共にデータ辞書を使用すると、組織内でのコンポーネントの使用方法を追跡し、より深く理解することができます。 | 2023年9月23日（PT） | 2023年10月4日（PT） |
 | **Adobe Analytics プロジェクトと含まれるコンポーネントを Customer Journey Analytics に移行** | Adobe Analyticsプロジェクトを Customer Journey Analytics に移行できるようになりました。このプロセスにより、Adobe Analytics から Customer Journey Analytics への移行が簡単になります。 <p>プロジェクトを Customer Journey Analytics に移行すると、アセットは Adobe Analytics レポートスイートから Customer Journey Analytics データビューにマッピングされます。</p> <p>Adobe Analytics インターフェイスから Customer Journey Analytics にプロジェクトを移行します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)</p> | 該当なし | 2023年10月9日（PT） |
