@@ -3,10 +3,10 @@ title: レポートアクティビティマネージャーでのレポートア�
 description: レポートアクティビティマネージャーを使用して、ピーク時のレポート作成時の容量の問題を診断および修正する方法について説明します。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3c4f7bc66c21987cbbf0c00a5aec6c9df97b165a
+source-git-commit: 7760f2d5af131549b1ff2a6ad13b01bae81636f7
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 13%
+ht-degree: 12%
 
 ---
 

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 86%
+source-wordcount: '1285'
+ht-degree: 84%
 
 ---
 
@@ -20,24 +20,24 @@ ht-degree: 86%
 Analysis Workspace では、次のビジュアライゼーションタイプを利用できます。
 
 | ビジュアライゼーション名 | 説明 |
-| --- | --- |
-| [面グラフ](/help/analysis-workspace/visualizations/area.md) | 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 |
-| [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | 1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。 |
-| [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
-| [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、リテンション、チャーン、または遅延の分析に役立ちます。 |
-| [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | このビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
-| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトレポートは、事前に定義された一連のページ間で、人が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 最終的または正確なシーケンスに設定できます |
-| [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | web サイトおよびアプリを介して正確な顧客パスを表示します。 |
-| [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、ワークスペースのデータ分析の基礎になります。 |
-| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムは、ユーザー、訪問またはイベントを、指標の量に基づいてグループにグループ化します。 |
-| [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
-| [行](/help/analysis-workspace/visualizations/line.md) | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、X 軸で時間を表します。 |
-| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | ディメンション項目と最大 3 つの指標の関係を表示します。 |
-| [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセルを 1 つの大きな数値として表示します。 |
-| [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 選択したセル間の変化を 1 つの大きい数値/パーセントで表示します。 |
-| [テキスト](/help/analysis-workspace/visualizations/text.md) | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
-| [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
-| [ベン図](/help/analysis-workspace/visualizations/venn.md) | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
+| --- | --- | 
+| [面グラフ](/help/analysis-workspace/visualizations/area.md)<p>![領域アイコン](assets/Smock_GraphArea_18_N.svg)</p> | 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 | 次のような質問に答えます。 <ul><li> |
+| [棒グラフ](/help/analysis-workspace/visualizations/bar.md) <p>![バーアイコン](assets/Smock_GraphBarVertical_18_N.svg)</p> | 1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。 |
+| [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![箇条書きアイコン](assets/Smock_GraphBullet_18_N.svg)</p> | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
+| [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![コホートテーブルアイコン](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、リテンション、チャーン、または遅延の分析に役立ちます。 |
+| [ドーナツ](/help/analysis-workspace/visualizations/donut.md) <p>![ドーナツアイコン](assets/Smock_GraphDonut_18_N.svg)</p> | このビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
+| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![フォールアウトアイコン](assets/Smock_ConversionFunnel_18_N.svg)</p> | フォールアウトレポートは、事前に定義された一連のページ間で、人が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 最終的または正確なシーケンスに設定できます |
+| [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![フローアイコン](assets/flow-icon.png)</p> | web サイトおよびアプリを介して正確な顧客パスを表示します。 |
+| [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![フリーフォームテーブルアイコン](assets/Smock_ViewTable_18_N.svg)</p> | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、ワークスペースのデータ分析の基礎になります。 |
+| [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)<p>![ヒストグラムアイコン](assets/Smock_GraphHistogram_18_N.svg)</p> | ヒストグラムは、ユーザー、訪問またはイベントを、指標の量に基づいてグループにグループ化します。 |
+| [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![横棒グラフアイコン](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | 1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
+| [行](/help/analysis-workspace/visualizations/line.md)<p>![行アイコン](assets/Smock_GraphTrend_18_N.svg)</p> | 時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。折れ線グラフは、X 軸で時間を表します。 |
+| [散布図](/help/analysis-workspace/visualizations/scatterplot.md) <p>![散布図アイコン](assets/Smock_GraphScatter_18_N.svg)</p> | ディメンション項目と最大 3 つの指標の関係を表示します。 |
+| [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![概要番号アイコン](assets/summary-number-icon.png)</p> | 選択したセルを 1 つの大きな数値として表示します。 |
+| [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![変更概要アイコン](assets/summary-change-icon.png)</p> | 選択したセル間の変化を 1 つの大きい数値/パーセントで表示します。 |
+| [テキスト](/help/analysis-workspace/visualizations/text.md)<p>![散布図アイコン](assets/Smock_Text_18_N.svg)</p> | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
+| [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md)<p>![ツリーマップアイコン](assets/Smock_GraphTree_18_N.svg)</p> | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
+| [ベン図](/help/analysis-workspace/visualizations/venn.md)<p>![ベンのアイコン](assets/venn-icon.png)</p> | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
 
 ## パネルへのビジュアライゼーションの追加
 
