@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ## 目標の使用
 
-Workspace プロジェクトで目標を使用するには、計算指標機能を使用して、派生フィールドを元の静的値に「正規化」し直します。
+Workspace プロジェクトで目標を使用するには、計算指標機能を使用して、派生フィールドを元の静的値に「正規化」し直します。 目標を定義する派生フィールドに設定した静的値はイベントごとに増分されるので、この正規化が必要です。
 
 ### 月別ギフト券注文目標
 
