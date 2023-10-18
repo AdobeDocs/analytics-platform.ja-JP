@@ -3,10 +3,11 @@ title: ステッチの概要
 description: ステッチの概要。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
+exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
+source-git-commit: c83917d0d73c2a178d5479f2a0257bd3f400666c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 22%
+source-wordcount: '1370'
+ht-degree: 21%
 
 ---
 
@@ -41,10 +42,11 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上の関�
 * ステッチを適用するAdobe Experience Platformのイベントデータセットには、訪問者の識別に役立つ次の 2 つの列が必要です。
 
    * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe AnalyticsAppMeasurementライブラリによって生成された訪問者 ID や、Adobe Experience Cloud ID サービスによって生成された ECID などです。
-   * **一時的な ID** - 一部の行にのみ存在する識別情報です。例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。ほぼすべての ID を使用できます。 ステッチでは、このフィールドを、実際のユーザー ID 情報を保持すると見なします。 結果を最適に結び付けるには、一時的な ID を各永続 ID に対して少なくとも 1 回、データセットのイベント内で送信する必要があります。
-このデータセットをCustomer Journey Analytics接続内に含める場合は、他のデータセットにも類似した共通の識別子を持つことをお勧めします。
+   * **一時的な ID** - 一部の行にのみ存在する識別情報です。例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。ほぼすべての ID を使用できます。 ステッチでは、このフィールドを、実際のユーザー ID 情報を保持すると見なします。 結果を最適に結び付けるには、一時的な ID を各永続 ID に対して少なくとも 1 回、データセットのイベント内で送信する必要があります。 このデータセットをCustomer Journey Analytics接続内に含める場合は、他のデータセットにも類似した共通の識別子を持つことをお勧めします。
 
-* ステッチには、認証済みと未認証のユーザーデータの結合が含まれます。 イベントデータセットのステッチをアクティブ化する前に、適用される法規制（必要なエンドユーザー権限の取得を含む）に従っていることを確認します。
+  両方の列（永続 ID と一時的な ID）は、ステッチするデータセットの基になるスキーマ内の ID 名前空間を持つ ID フィールドとして定義する必要があります。
+
+* ステッチには、認証済みと未認証のユーザーデータの結合が含まれます。 イベントデータセットのステッチをアクティブ化する前に、適用される法規制（必要なエンドユーザー権限の取得を含む）に従っていることを確認します。 詳しくは、 [UI での ID フィールドの定義](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) を参照してください。
 
 
 ## ステッチを使用
@@ -126,7 +128,3 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 * 2 つ以上のデータセットの結合。 ステッチは、1 つのデータセットにのみ適用されます。 データセットの結合は、Customer Journey Analytics接続を設定し、接続内の選択したデータセット全体で同じユーザー ID を選択した結果として発生します。
 
 * 2 つのデータセットの結合。 Customer Journey Analyticsでは、Analysis Workspaceでの検索や分類に結合がよく使用されます。 ステッチでは結合機能が使用されますが、プロセス自体には結合以上のものが含まれます。
-
-
-
-
