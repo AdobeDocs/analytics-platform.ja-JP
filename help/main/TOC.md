@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: debc0f4bc3521bbf547bfc287e7881b805863867
+source-git-commit: f6c874a96278cf593174f5ee79557b3a711a23e3
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 80%
 
 ---
@@ -190,18 +190,20 @@ ht-degree: 80%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + 影響 {#impact}
-      + [リリース表示](../guided-analysis/types/release.md)
-      + [初回使用ビュー](../guided-analysis/types/first-use.md)
-   + ファネル {#funnel}
-      + [摩擦ビュー](../guided-analysis/types/friction.md)
-      + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
    + ユーザーの増加率 {#user-growth}
       + [アクティブビュー](../guided-analysis/types/active.md)
       + [正味の成長見通し](../guided-analysis/types/net-growth.md)
    + トレンド {#trends}
       + [使用状況ビュー](../guided-analysis/types/usage.md)
       + [頻度ビュー](../guided-analysis/types/frequency.md)
+   + ファネル {#funnel}
+      + [摩擦ビュー](../guided-analysis/types/friction.md)
+      + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
+   + 影響 {#impact}
+      + [リリース表示](../guided-analysis/types/release.md)
+      + [初回使用ビュー](../guided-analysis/types/first-use.md)
+   + リテンション {#retention}
+      + [保持率](../guided-analysis/types/retention-rates.md)
    + [業界の使用例](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
