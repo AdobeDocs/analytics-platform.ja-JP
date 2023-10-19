@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 6%
 
 ---
@@ -63,11 +63,7 @@ ht-degree: 6%
 
 ## 場所の削除
 
-場所を削除すると、その場所を使用する書き出しもすべて削除されます。
-
-ロケーションを削除する前に、まず、ロケーション名の横にある情報アイコンを選択して、そのロケーションがエクスポートで使用されているかどうかを確認します。
-
-![接続されたエクスポート](assets/location-connected-exports.png)
+場所を削除すると、その場所を使用する書き出しもすべて削除されます。 削除時に確認ダイアログをチェックして、その場所にエクスポートが関連付けられていないことを確認します。
 
 場所を削除するには：
 
@@ -77,7 +73,15 @@ ht-degree: 6%
 
    ![場所の編集](assets/locations-edit.png)
 
-1. 選択 [!UICONTROL **削除**]&#x200B;を選択し、「 [!UICONTROL **削除**] を再び確認ダイアログに表示します。
+1. 「[!UICONTROL **削除**]」を選択します。
+
+   [ 場所を削除 ] ダイアログボックスが表示されます。
+
+1. [ 場所の削除 ] ダイアログボックスで、削除を確認する前に、場所が書き出しに関連付けられていないことを確認します。
+
+   ![場所の削除確認ダイアログ](assets/delete-location-confirmation-dialog.png)
+
+1. 選択 [!UICONTROL **削除**] 再び確認します。
 
 ## アカウントの編集
 
@@ -85,7 +89,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-page.png)
+   ![アカウントページ](assets/account-add.png)
 
 1. 選択 [!UICONTROL **詳細を表示**] を編集するアカウントに設定します。
 
@@ -101,7 +105,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-page.png)
+   ![アカウントページ](assets/account-add.png)
 
 1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントキー**].
 
@@ -111,7 +115,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-page.png)
+   ![アカウントページ](assets/account-add.png)
 
 1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントを削除**].
 

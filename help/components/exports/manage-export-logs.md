@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 書き出しログを管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 7%
 書き出しログは、各書き出しに関する詳細を提供し、Analysis Workspaceデータがクラウドに書き出されるたびに生成されます。 ( データをクラウドに書き出す方法について詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md).)
 
 スケジュールされたエクスポートの場合、ログには、ログの送信時と同じエクスポート設定が反映されます。 ログは削除できません。
+
+## 書き出しログを表示
+
+1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+
+1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+
+   ![「ログを書き出し」タブ](assets/export-logs-tab.png)
+
+   各ログの詳細は、使用可能な列に表示されます。
+
+1. 次のいずれかの操作を行います。
+
+   * [列のカスタマイズ](#configure-columns) 表示される
+
+   * を選択します。 **情報アイコン** ![情報アイコン](assets/information-icon.png) ログ名の横に表示され、ログに関連付けられているエクスポートを表示します。
+
+   * を選択します。 **エクスポートアイコンを編集** ![情報アイコン](assets/edit-export-icon.png) ログ名の横に表示され、ログに関連付けられているエクスポートを編集します。
+
+     エクスポートの編集について詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md).
 
 ## ログのフィルターと検索
 

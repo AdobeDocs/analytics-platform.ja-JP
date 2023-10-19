@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. に対応する以下のセクションに進みます。 [!UICONTROL **アカウントタイプ**] を選択しました。
 
-   * [AEP データランディングゾーン](#adobe-experience-platform)
+   * [AEP データランディングゾーン](#aep-data-landing-zone)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
