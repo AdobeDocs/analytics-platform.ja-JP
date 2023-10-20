@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 hide: true
 hidefromtoc: true
-source-git-commit: ec0d57d0573b21767ed1703c9ddb1172e442e10a
+source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,8 @@ The **[!UICONTROL 定着率]** 表示は、目的の日付範囲内での最初�
 * ユーザーが目的の日付範囲（最初のエンゲージメント）内に 1 回だけイベントに関与した場合、「Day 0」の期間バケットにのみ表示されます。
 * 最初に分析に含める資格が与えられてから数日後にイベントに関与した場合、そのイベントは最新の認定期間グループと、それに至るすべての期間グループに表示されます。 このタイプの計算は、「無限の保持」と呼ばれる場合があります。
 * ユーザーが設定した日付範囲でイベントに何度も関与した場合、最初と最後のイベントのみが分析に含まれます。
+
+![定着率のスクリーンショット](../assets/retention-rates.png)
 
 ## ユースケース
 
