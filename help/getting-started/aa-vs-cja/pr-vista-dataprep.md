@@ -1,16 +1,16 @@
 ---
-title: 処理ルール、VISTA、分類と Analytics ソースコネクタ用の Data Prep の比較
-description: 処理ルールおよび VISTA を使用した場合とデータ準備を使用した場合を比較し、データ変換について説明します
+title: 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較
+description: 処理ルールおよび VISTA を使用した場合とデータ準備を使用した場合を比較し、データ変換について学ぶ
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 処理ルール、VISTA、分類と Data Prep の比較
+# 処理ルール、VISTA および分類とデータ準備の比較
 
 Adobe Analytics の[処理ルールと VISTA ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=ja)は、Adobe Analytics [データ収集](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ja)に渡されるデータを変換して操作する手段を提供します。これらの変換は、Adobe Analytics でレポートや分析目的でデータが保存される前に、アドビのデータ処理の一部として行われます。
 

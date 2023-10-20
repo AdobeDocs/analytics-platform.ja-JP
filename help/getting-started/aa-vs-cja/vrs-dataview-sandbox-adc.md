@@ -1,16 +1,16 @@
 ---
-title: 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ
+title: 仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ
 description: 仮想レポート環境とサンドボックス環境について説明します。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# 仮想レポートスイート、データビュー、Adobe Experience Platformサンドボックス、Analytics ソースコネクタ
+# 仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ
 
 アドビでは、仮想レポート環境サンドボックス環境を作成するための様々な手段を提供しています。次の機能の類似点と相違点およびこれらの機能が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)にどのように関連するかを理解する場合に役立ちます。
 
@@ -28,10 +28,10 @@ ht-degree: 90%
 * 履歴データにも新しいデータにも、非破壊で適用できる。
 * 異なるビジネスチームで使用するために、Adobe Analytics レポートスイートの上に 1 つまたは複数の仮想ビューを作成できる。
 * Adobe Analytics のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用される可能性がある。
-* Adobe Analytics にオプションの[レポート時の処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)機能を提供する。この場合、「訪問」のカスタム定義を作成するために仮想レポートスイートを使用できます。
+* Adobe Analytics にオプションの[レポート時の処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)機能を提供する。この場合、仮想レポートスイートは、「訪問」のカスタム定義を作成するために使用されることがあります。
 * セグメント評価と同様に、レポート実行時に適用される。これは、データが収集され、Adobe Analytics 内に保存された&#x200B;_後_&#x200B;です。
 * Adobe Analytics の[クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)に必要。
-* 仮想レポートスイートのキュレーションによって、ユーザーに公開される変数を制限できますが、標準の Analytics レポートスイート（250 個の eVar、250 個の prop、1,000 個のイベント）として使用できる変数の数は同じです。
+* 標準の Analytics レポートスイート（250 eVar、250 prop、1000 イベント）と同じ数の変数を使用できるが、仮想レポートスイートのキュレーションによって、ユーザーに公開する変数を制限できる。
 * カスタムカレンダーオプションをサポートする。
 
 仮想レポートスイートに該当しないこと：
