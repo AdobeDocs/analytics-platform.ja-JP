@@ -1,12 +1,12 @@
 ---
 title: 使用状況ビュー
 description: ユーザーエンゲージメントの推移を測定します.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
+source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,7 @@ The **[!UICONTROL 使用状況]** 表示は、製品のパフォーマンスや�
 
 * **[!UICONTROL イベント]**：測定するイベントです。 選択した各イベントは、グラフのタイプに応じて、色付きの線または棒のセットとして表されます。 トレンドイベントを表す行が表に追加されます。 最大 5 つのイベントを含めることができます。
 * **[!UICONTROL People]**：測定するセグメントです。 選択した各セグメントは、グラフの行数とテーブルの行数を 2 倍にします。 最大 5 つのセグメントを含めることができます。
+* **[!UICONTROL 分類]**：ディメンション項目ごとに個別のトレンドラインを作成します。 単一の分類ディメンションがサポートされます。
 
 ## グラフ設定
 
