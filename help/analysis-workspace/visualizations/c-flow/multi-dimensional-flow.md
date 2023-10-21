@@ -3,10 +3,10 @@ description: ディメンション間のフローを使用すると、様々な�
 title: ディメンション間のフロー
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 73%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 各フロー列の先頭のディメンションラベルにより、フローのビジュアライゼーションで複数のディメンションをより直感的に使用できます。
 
-![](assets/flow.png)
+![製品、ページ、OS バージョン、滞在時間など、複数のディメンションをハイライトしたディメンション間のフロー。](assets/flow.png)
 
 アプリの使用例と Web の使用例の 2 つについて見ていきます。
 
@@ -24,29 +24,29 @@ ht-degree: 100%
 
 返される上位の項目が [!UICONTROL ItemAdded] で、[!UICONTROL アクション名]ディメンションがフローに追加されました。
 
-![](assets/multi-dimensional-flow.png)
+![追加された項目を示すフロー。](assets/multi-dimensional-flow.png)
 
 画面／ページ間のインタラクションおよびこのアプリのアクションを調査するには、調査対象に応じて複数の場所にページディメンションをドラッグできます。
 
 * ドロップゾーンのどちらかの端（表示される黒い縁の長方形のゾーンの内側）にドラッグして、その端の上位の結果を&#x200B;**置き換えます**。
 
-   ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
+  ![複数の領域にドラッグした、ページディメンションを示すフロー。](assets/multi-dimensional-flow2.png) ![ドラッグした項目を示すフロー図。](assets/multi-dimensional-flow3.png)
 
 * その端の白いスペース（黒い括弧で示される）にドラッグして、ビジュアライゼーションに&#x200B;**追加**&#x200B;します。
 
-   ![](assets/multi-dimensional-flow4.png)
+  ![ページディメンションを示すフローで、末尾の空白にドラッグしました。](assets/multi-dimensional-flow4.png)
 
 右の列の ItemScaled 項目をページディメンションで置き換える場合の結果を次に示します。上位の結果は、ページディメンションの上位の結果に変更されています。
 
-![](assets/multi-dimensional-flow5.png)
+![「低」に「ページ」ディメンションが表示され、結果がリストの上部に表示されます。](assets/multi-dimensional-flow5.png)
 
 これで、顧客がアクションおよびページをどのように移動しているかを確認できます。別のノードをクリックすることで、さらにフローを調査できます。
 
-![](assets/multi-dimensional-flow6.png)
+![追加された項目、ドラッグされた項目、メインビューを示すフロー。](assets/multi-dimensional-flow6.png)
 
 これは、別のアクション名ディメンションをビジュアライゼーションの端に追加する場合に発生することです。
 
-![](assets/multi-dimensional-flow7.png)
+![追加されたアクション名を示すフロー。](assets/multi-dimensional-flow7.png)
 
 これにより、深いインサイトが可能になり、分析するアプリに対する変更の可能性を考慮できます。
 
@@ -56,8 +56,8 @@ ht-degree: 100%
 
 キャンペーン名ディメンションを新しいフローにドラッグします。
 
-![](assets/multi-dimensional-flow8.png)
+![新しいフローにドラッグされたキャンペーン名ディメンションを示すフロー。](assets/multi-dimensional-flow8.png)
 
 ここで、それらのキャンペーンがトラフィックを推進しているのはどのページかを確認したいので、ページディメンションをフロー結果の右側にドラッグして、ビジュアライゼーションに追加します。
 
-![](assets/multi-dimensional-flow9.png)
+![フロー結果の右側にドラッグしたページディメンションを示すフロー。](assets/multi-dimensional-flow9.png)

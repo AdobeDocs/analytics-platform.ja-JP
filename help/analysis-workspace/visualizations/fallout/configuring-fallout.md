@@ -3,10 +3,10 @@ description: タッチポイントを指定して、複数のディメンショ�
 title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 71%
+source-wordcount: '718'
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ eVar( マーチャンダイジング eVar や [listVars](https://experienceleagu
 
 1. ページディメンションをフリーフォームテーブルにドラッグし、そしてそこから、最初のタッチポイントとしてページ（この場合、ホーム - JJEsquire）を「**[!UICONTROL タッチポイントを追加]**」フィールドにドラッグします。
 
-   ![](assets/fallout1.png)
+   ![JJEsquire を表示するすべての訪問ドロップダウンが、「タッチポイントを追加」フィールドにドラッグされました。](assets/fallout1.png)
 
    タッチポイントの上にマウスポインターを置くと、フォールアウトおよびそのレベルに関する他の情報（タッチポイントの名前、その時点での人数など）と、そのタッチポイントの成功率が表示されます（また、成功率と他のタッチポイントとの比較もおこなわれます）。
 
@@ -40,11 +40,11 @@ eVar( マーチャンダイジング eVar や [listVars](https://experienceleagu
    >
    >複数のフィルターを結合する際は「AND」、 ディメンション項目や指標などの複数の項目を結合する際には「OR」を使用します。
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![Page:CamerRoll または Page: Camera タッチポイントがハイライトされています。](assets/multiple_obj_touchpoint.png)
 
 1. また、 **個々のタッチポイントを次のイベントに制限する** （「最終的に」に対して）パス内で使用します。 次に示すように、各タッチポイントの下には「最終パス」と「次のヒット」オプションを切り替えることができるセレクターがあります。
 
-   ![](assets/next-hit-eventually.png)
+   ![「最終的なパス」オプションがハイライト表示されているすべての訪問回数ビュー。 ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

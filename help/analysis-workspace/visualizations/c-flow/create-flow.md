@@ -1,13 +1,13 @@
 ---
-description: ワークスペースプロジェクトでフロービジュアライゼーションを使用します。
-title: フロービジュアライゼーションの設定
+description: Workspace プロジェクトでフロービジュアライゼーションを使用する方法を説明します。
+title: フロービジュアライゼーションの設定方法
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 60%
+source-wordcount: '1581'
+ht-degree: 57%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 60%
 
 フロービジュアライゼーションを使用すると、目的のパスの開始または終了を設定したり、ディメンションまたはディメンション項目を流れるすべてのパスを分析したりできます。
 
-![新しいフロー UI](assets/new-flow.png)
+![「次の語句で始まる」、「次の語句で終わる」および「次の語句で終わる」フィールドを表示するフロー設定画面](assets/new-flow.png)
 
 ## フロービジュアライゼーションの作成 {#configure}
 
@@ -45,11 +45,11 @@ ht-degree: 60%
 
 1. 指標を選択する場合は、 [!UICONTROL **パスDimension**] を選択し、選択したコンポーネントへの（または選択したコンポーネントからの）パスとして使用します。 デフォルトは「[!UICONTROL **ページ**]」です。
 
-   ![パスディメンション](assets/pathing-dim.png)
+   ![「パス」ディメンション。](assets/pathing-dim.png)
 
 1. （オプション）「 」を選択します。 **[!UICONTROL 詳細設定を表示]** 次のいずれかのオプションを設定するには：
 
-   ![詳細設定](assets/adv-settings.png)
+   ![表示オプション、列数およびフローコンテナを使用した詳細設定。](assets/adv-settings.png)
 
    | 設定 | 説明 |
    | --- | --- |
@@ -80,7 +80,7 @@ ht-degree: 60%
 
 ## フロー出力の表示と変更 {#output}
 
-![フロー出力](assets/flow-output.png)
+![訪問回数、パスディメンション（ページ、フローコンテナ）を示すフロー出力例：訪問者。](assets/flow-output.png)
 
 図の上部に、フロー設定の概要が表示されます。図のパスは比例します。アクティビティの多いパスは太く表示されます。
 
@@ -90,7 +90,7 @@ ht-degree: 60%
 
 * 図のノードをクリックすると、そのノードの詳細が表示されます。折りたたむには、もう一度ノードをクリックします。
 
-  ![node-details](assets/node-details.png)
+  ![ノードの詳細を示すインタラクティブなフロー図の例。](assets/node-details.png)
 
 * 列にフィルターを適用して、特定の結果（包含や除外、除外する、条件を指定するなど）のみを表示できます。
 

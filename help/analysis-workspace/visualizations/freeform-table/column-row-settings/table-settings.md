@@ -3,10 +3,10 @@ description: 行設定は、テーブルにドラッグしたコンポーネン�
 title: 行設定
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 93%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、ディメンション、フィルター、指標、期間、またはそれぞれの分類の横にある[!UICONTROL 設定]アイコンをクリックします。
 
-![](assets/row-settings.png)
+![指標の設定アイコンをハイライトするフリーフォームテーブル](assets/row-settings.png)
 
 | 設定 | 説明 |
 | --- | --- |
@@ -33,6 +33,6 @@ ht-degree: 93%
 
 1. テーブルの一番上にある[!UICONTROL 行]の横の数字をクリックします。
 
-   ![](assets/row-number.png)
+   ![表示される行数ののドロップダウンリストを表示するフリーフォームテーブル。 400 行が選択されています。](assets/row-number.png)
 
 1. ドロップダウンリストから、テーブルに表示する行数を選択します。

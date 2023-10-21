@@ -4,10 +4,10 @@ keywords: フォールアウトとフィルター、フォールアウト分析�
 title: フォールアウト分析でのフィルターの適用
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 87%
+source-wordcount: '467'
+ht-degree: 76%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 87%
 
 1. 特に関心があり、他のレポートに適用するのに便利そうな特定のタッチポイントからフィルターを作成します。それには、タッチポイントを右クリックし、「**[!UICONTROL タッチポイントからフィルターを作成]**」をクリックします。
 
-   ![](assets/segment-from-touchpoint.png)
+   ![タッチポイントからセグメントを作成をハイライト表示したタッチポイントドロップダウンメニュー。](assets/segment-from-touchpoint.png)
 
    フィルタービルダーが開き、選択したタッチポイントに合致する事前定義済みの順次フィルターがあらかじめ設定されています。
 
-   ![](assets/segment-builder.png)
+   ![フィルタービルダーに、事前に設定された順次フィルターと事前に作成された順次フィルターが表示されます。](assets/segment-builder.png)
 
 1. フィルターにタイトルと説明を入力して、保存します。
 
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 例えば、米国のユーザーのトレンドとフォールアウトへの影響を確認したい場合は、US Users フィルターをフォールアウトにドラッグするだけです。
 
-![](assets/segment-touchpoint.png)
+![米国のユーザーフィルターが選択され、強調表示されて、フォールアウトにドラッグします。](assets/segment-touchpoint.png)
 
 または、US Users フィルターを別のチェックポイントにドラッグすることで、AND タッチポイントを作成できます。
 
@@ -52,10 +52,10 @@ ht-degree: 87%
 1. 比較するフィルターを左側の[!UICONTROL フィルター]パネルから選択します。この例では、US Users と Non-US Users の 2 つのフィルターを選択しています。
 1. それらを上部のフィルタードロップゾーンにドラッグします。
 
-   ![](assets/segment-drop.png)
+   ![選択したフィルターと、フィルタードロップゾーンを指す赤い矢印を使用したフォールアウトビジュアライゼーション。](assets/segment-drop.png)
 
 1. オプション：「すべての訪問」をデフォルトのコンテナとして維持することも、削除することもできます。
 
-   ![](assets/seg-compare.png)
+   ![前の手順でドラッグした 2 つのフィルターと共に、すべての訪問を示すフォールアウト。](assets/seg-compare.png)
 
 1. これで、一方のフィルターがもう一方のフィルターよりパフォーマンスが優れているような 2 つのフィルターや他のインサイトについてフォールアウトを比較できます。

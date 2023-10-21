@@ -3,10 +3,10 @@ title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 78%
+source-wordcount: '528'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 78%
 
 >[!IMPORTANT]
 >
->[!UICONTROL コホート分析] は、フィルタリング不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。 フィルターで使用できる指標のみが [!UICONTROL コホート分析]で、一度に 1 つのみ増やすことができます。
+>[!UICONTROL コホート分析] は、フィルタリング不可能な指標（計算指標を含む）、整数以外の指標（売上高など）、発生件数をサポートしていません。 フィルターで使用できる指標のみ、 [!UICONTROL コホート分析]で、一度に 1 つのみ増やすことができます。
 
 ## コホート分析の機能
 
@@ -37,32 +37,32 @@ ht-degree: 78%
 
 ### [!UICONTROL リテンションテ]ーブル
 
-A [!UICONTROL 定着] コホートレポートは次の人を返します。各データセルは、その期間にアクションを実行したコホート内の生の人数と割合を表します。 指標は最大 3 個、フィルターは最大 10 個含めることができます。
+A [!UICONTROL 定着] コホートレポートが個人を返す：各データセルは、その期間にアクションをおこなったコホート内の生の人数と割合を表します。 指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
-![](assets/retention-report.png)
+![コホート内の人の数と割合を示すレンションコホートレポート。](assets/retention-report.png)
 
 ### [!UICONTROL チャーンテーブル]
 
 A [!UICONTROL チャーン] コホートはリテンションテーブルの逆で、コホートにおいてフォールアウトした人、または一定期間内にリターン条件を満たしていない人が表示されます。 指標は最大 3 個、フィルターは最大 10 個含めることができます。
 
-![](assets/churn-report.png)
+![コホートのリターン条件を満たさないユーザーの単位と割合を示すチャーンテーブル。](assets/churn-report.png)
 
 ### [!UICONTROL ローリング計算]
 
 「含む」列ではなく、直前の列に基づいてリテンションまたはチャーンを計算できます。
 
-![](assets/cohort-rolling-calculation.png)
+![前のデータ列に基づく計算を示すコホートリテンションレポート。](assets/cohort-rolling-calculation.png)
 
 ### [!UICONTROL 待ち時間テーブル]
 
 インクルージョンイベントが発生した前後の経過時間を測定します。このツールは、イベント発生前後の分析に役立ちます。「**[!UICONTROL 含む]**」列がテーブルの中央にあり、インクルージョンイベント発生の前と後の期間が両側に表示されます。
 
-![](assets/cohort-latency.png)
+![イベント前後の経過時間を示すコホートレポート。](assets/cohort-latency.png)
 
 ### [!UICONTROL カスタムディメンショ]ンコホート
 
 デフォルトの時間に基づくコホートではなく、選択したディメンションに基づいてコホートを作成します。[!UICONTROL マーケティングチャネル]、[!UICONTROL キャンペーン]、[!UICONTROL 製品]、[!UICONTROL ページ]、[!UICONTROL 地域]などのディメンションや、Customer Journey Analytics のその他のディメンションを使用して、これらのディメンションの様々な値に基づいてリテンションがどのように変化しているかを表示します。
 
-![](assets/cohort-customizable-cohort-row.png)
+![デフォルトの時間ベースのコホートではなく、選択したディメンションを使用してカスタマイズされたレポートを表示するコホートレポート。](assets/cohort-customizable-cohort-row.png)
 
 コホートレポートを設定および実行する方法については、[コホート分析レポートの設定](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)を参照してください。

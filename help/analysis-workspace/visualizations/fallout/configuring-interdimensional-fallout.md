@@ -3,10 +3,10 @@ description: Analysis Workspace のフォールアウトでは、ディメンシ
 title: ディメンション間のフォールアウト
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '164'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 74%
 
 ---
 
@@ -14,16 +14,16 @@ ht-degree: 100%
 
 Analysis Workspace のフォールアウトでは、ディメンションと指標をファネルとワークフローのタッチポイントとして組み合わせることができます。これにより、調査するユーザーステップをより柔軟に定義できます。
 
-**例**：ページディメンションに加えて、アクションベースのディメンション項目をフォールアウトビジュアライゼーションに追加できます。これにより、顧客のパスで、ページおよび特定のアクションがどのように相互作用するかを可視化できます。
+例えば、ページディメンションに加えて、アクションベースのディメンション項目をフォールアウトビジュアライゼーションに追加できます。 これにより、顧客のパスで、ページおよび特定のアクションがどのように相互作用するかを可視化できます。
 
-![](assets/interdimensional-fallout1.png)
+![すべての訪問ビューでは、複数のディメンションがタッチポイントとして表示されます。](assets/interdimensional-fallout1.png)
 
 フォールアウトは動的に更新され、複数のディメンションにわたるフォールアウトを表示できます。
 
 この組み合わせに指標を追加することもできます。この例では、「Shared Photo」指標を追加して、顧客がたどったパスを明確にします。
 
-![](assets/interdimensional-fallout2.png)
+![追加された指標「共有された写真」を示すすべての訪問ビュー。](assets/interdimensional-fallout2.png)
 
 さらに、異なるディメンションおよび指標を AND チェックポイントに組み合わせることもできます。別のディメンションまたは指標を既存のものの上部にドラッグするだけです。
 
-![](assets/interdimensional-fallout3.png)
+![「すべての訪問」ビューに、「アクション名：共有」および「共有された写真」指標が表示されます。](assets/interdimensional-fallout3.png)

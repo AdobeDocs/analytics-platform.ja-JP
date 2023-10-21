@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: コホート分析レポートの設定
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 91%
+source-wordcount: '1003'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace でコホートを作成し、[!UICONTROL コホート分析]
 
 1. Analysis Workspace で、左側のパネルの&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンをクリックし、**[!UICONTROL コホートテーブル]**&#x200B;をキャンバスにドラッグします。
 
-   ![](assets/cohort-table.png)
+   ![インクルージョン条件とリターン条件を示すコホートテーブルの例です。](assets/cohort-table.png)
 
 1. 以下のテーブルに従って、**[!UICONTROL インクルージョン条件]**、**[!UICONTROL リターン条件]**、**[!UICONTROL コホートタイプ]**、**[!UICONTROL 設定]**&#x200B;を定義します。
 
@@ -40,7 +40,7 @@ Analysis Workspace でコホートを作成し、[!UICONTROL コホート分析]
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
-   ![手順の結果](assets/cohort-report.png)
+   ![選択したインクルージョン条件とリターン条件を示すコホートテーブルビュー。 「作成」をクリックします。](assets/cohort-report.png)
 
    このレポートは、注文をした人 ( *`Included`* 列 )、およびその後の訪問でサイトに戻った訪問者を示します。 時間の経過に伴う訪問者数の減少によって、問題に気づき、対策を講じることができます。
 1. （任意）選択範囲からフィルターを作成します。

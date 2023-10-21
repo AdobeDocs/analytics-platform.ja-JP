@@ -3,10 +3,10 @@ title: フリーフォームテーブルの動的ディメンション項目と�
 description: テーブルの動的および静的ディメンション項目の操作方法。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 88%
+source-wordcount: '555'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 88%
 動的ディメンション項目には行フィルターオプションと X アイコンがあり、 **not** ロックアイコンが表示されます。 <!--do they have the lock icon? --> 動的ディメンション項目の横にある x をクリックすると、フィルターが自動的に適用されます。 テーブルにフィルターを適用する方法について詳しくは、 [テーブルのフィルターと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![](assets/dynamic-items.png)
+![フィルターアイコンをハイライトするフリーフォームテーブル。](assets/dynamic-items.png)
 
 ## 静的ディメンション項目
 
@@ -40,13 +40,13 @@ ht-degree: 88%
 
 静的ディメンション項目には行フィルターオプションは&#x200B;**ありません**。代わりに、各項目にロックアイコンと X アイコンが表示されます。X アイコンをクリックして、テーブルからそのディメンション項目を削除します。
 
-![](assets/static-items.png)
+![ブラウザーのタイプとロックアイコンの付いたMicrosoft行を表示するフリーフォームテーブル：このディメンション項目は静的で、時間と共に変更されません。](assets/static-items.png)
 
 ## 混在ディメンション項目
 
 異なるディメンションのディメンション項目を同じテーブルに追加できます。この場合、行ヘッダーには「混在ディメンション」と表示されます。これらのディメンション項目は静的です。例えば、「ブラウザータイプ」ディメンションから特定のディメンション項目を追加し、「ブラウザー」ディメンションから他のディメンション項目を追加します。
 
-![](assets/mixed-dimensions.png)
+![「混在Dimension」列をハイライトしたフリーフォームテーブル。](assets/mixed-dimensions.png)
 
 ## フリーフォームの合計行数
 
