@@ -3,7 +3,7 @@ title: Activity Manager のレポートの概要
 description: レポートアクティビティマネージャーを使用して、ピーク時のレポート作成時の容量の問題を診断および修正する方法について説明します。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 23%
@@ -11,8 +11,6 @@ ht-degree: 23%
 ---
 
 # レポートアクティビティマネージャーの概要
-
-{{release-limited-testing}}
 
 The [!UICONTROL レポートアクティビティマネージャー] は管理者が使用できます。
 
