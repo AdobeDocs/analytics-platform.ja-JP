@@ -4,9 +4,9 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: cd3747e0c9e041394db79d70fcd63294d0da9867
+workflow-type: tm+mt
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -83,8 +83,7 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 * [xperience Platform クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：標準 SQL を使用して、Adobe Experience Platform からデータ（Adobe ソリューションデータ、お客様のファーストパーティデータ、その他の Platform データなど）を取得します。あらゆるデータセットを結合し、クエリ結果を新しいデータセットとして取り込んでレポートや Data Science Workspace で使用したり、プロファイルサービスに取り込んだりできる、サーバーレスのツールです。Experience Platform クエリサービスを使用してデータ分析のエコシステムを構築し、様々なインタラクションチャネルをまたいだ消費者の全体像を把握できます。これらのチャネルには、POS（販売時点管理システム）、web、モバイル、CRM などが含まれます。
 * [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)：
-* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)：
-* [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=ja)（「開発者」オプション）：Adobe Experience Platform にあらかじめ組み込まれた人工知能（AI）および機械学習モデルを使用して、カスタマージャーニーの様々なポイントに影響を与えることができます。隠れたインサイトを把握することで、カスタマージャーニーを通じてより優れた予測を行ったり、推奨される次のステップを提案したり、面倒なプロセスを自動化したりできます。
+* [ID サービス](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)
 
 ## ビデオ
 
