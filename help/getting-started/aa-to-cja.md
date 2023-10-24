@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
+source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1488'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 * Customer Journey Analytics のレポート時間の特性
 
-アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=ja)を公開しています。これらの最新の推奨事項は、既に Adobe Analytics にある機能を Attribution IQ で最大限に活用するのに役立ちます。また、Customer Journey Analytics への移行を成功させるためのセットアップも行われます。
+アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=ja)を公開しています。これらの最新のレコメンデーションは、既に Adobe Analytics にある機能を Attribution IQ で最大限に活用するのに役立ちます。また、Customer Journey Analytics への移行を成功させるためのセットアップも行われます。
 
 また、Customer Journey Analytics データビューの一部として[派生フィールド](../data-views/derived-fields/derived-fields.md)を導入したことにより、[マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates)を使用した非破壊的かつ遡及的な方法でマーケティングチャネルもサポートされます。
 
@@ -79,7 +79,6 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 次の Adobe Analytics の機能またはコンポーネントはサポートされていません。
 
 * ボットフィルタリング
-* 地域、ドメイン、デバイスのルックアップ
 * ストリーミングメディア測定
 * ライブストリームまたはライブストリームトリガー
 
