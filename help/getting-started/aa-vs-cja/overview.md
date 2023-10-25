@@ -4,32 +4,32 @@ description: Customer Journey Analytics と Adobe Analytics の比較の概要�
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 4cbf01d397e7f89e67ae20702790129478d45cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics との比較
 
-ドキュメントのこの節では、Adobe Customer Journey AnalyticsとAdobe Analyticsの違いを比較および理解する方法について説明します。
+ドキュメントのこの節では、Adobe Customer Journey Analytics と Adobe Analytics の違いを比較して理解する方法について説明します。
 
 この 2 つのソリューションの基本的な違いは、レポートや分析を作成する際に考慮できる幅広いデータです。
 
-Customer Journey Analytics では、*あらゆる*&#x200B;データソースを、レポートや分析に使用するデータの一部にすることができます。Adobe Analytics は主に、web サイトやモバイルアプリから収集されたオンラインデータを対象としています。Adobe Analyticsには、他のソースからデータをインポートする機能が用意されていますが、この機能の主な目的は、前述のオンラインデータに関するより多くのコンテキストを提供することです。
+Customer Journey Analytics では、*あらゆる*&#x200B;データソースを、レポートや分析に使用するデータの一部にすることができます。Adobe Analytics は主に、web サイトやモバイルアプリから収集されたオンラインデータを対象としています。Adobe Analytics には他のソースからデータを読み込む機能が用意されていますが、この機能の主な目的は、前述のオンラインデータに関するより多くのコンテキストを提供することです。
 
 ## データ収集
 
-Customer Journey Analyticsは、 Adobe Experience Platformデータセットに保存されたデータに依存します。 Experience Platformでこれらのデータセットのデータを収集および取り込む方法はいくつかあります。 [データ取り込みの概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=ja)で、これらのオプションについて詳しく説明しています。
+Customer Journey Analytics は、Adobe Experience Platform データセットに保存されているデータに依存しています。Experience Platform でこれらのデータセットからデータを収集して取り込むには、いくつかのオプションがあります。[データ取り込みの概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=ja)で、これらのオプションについて詳しく説明しています。
 
 Adobe Analytics は、最終的に、ソリューション自体内のデータを収集します。この場合も、データを収集するオプションがいくつかあります。詳しくは、[Adobe Analytics 実装ガイド](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。
 
-Adobe Analytics のレポートスイートデータを Customer Journey Analytics で使用するには、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用します。このコネクタは、Adobe Analyticsで収集されたデータをExperience Platformに取り込みます。 その後、このデータセットへの接続をCustomer Journey Analyticsで作成できます。 詳しくは、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=ja)を参照してください。
+Adobe Analytics のレポートスイートデータを Customer Journey Analytics で使用するには、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用します。このコネクタでは、Adobe Analytics で収集されたデータを Experience Platform に取り込みます。その後、Customer Journey Analytics でこのデータセットへの接続を作成できます。詳しくは、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=ja)を参照してください。
 
 
 ## データ処理
 
-データに関するレポートを作成する前に、多くの場合、そのデータを処理して、データがレポートに適切に使用できることを確認する必要があります。 データ処理は、収集時とレポート時に実行される場合があります。
+データに関するレポートを作成する前に、多くの場合、そのデータを処理して、レポートでデータを適切に使用できることを確認する必要があります。データ処理は、収集時とレポート時に発生する可能性があります。
 
 一般に、Customer Journey Analytics は、レポート時に Experience Platform データセットに収集および保存されたデータを操作するように設計されています。Customer Journey Analytics は、データをレポートや分析に使用できるようにする、強力なレポート時間処理機能を備えています。Experience Platform に取り込む前にデータのマッピング、変換、検証を行う必要がある場合は、Experience Platform の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用できます。
 
@@ -40,18 +40,18 @@ Adobe Analytics では、データの処理のほとんどは、データの収�
 
 ## 用語
 
-Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。例えば、Adobe Analyticsで訪問者、訪問およびヒットを使用する場合、Customer Journey Analyticsでは人物、セッションおよびイベントを同等の概念として使用します（適切に名前を変更できます）。
+Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。例えば、Adobe Analytics では訪問者、訪問数、ヒット数を使用しますが、Customer Journey Analytics ではユーザー、セッション、イベントを同等の概念として使用します（必要に応じて名前を変更できます）。
 
 用語の違いについて詳しくは、[Analytics ソースコネクタを介して渡された Analytics データの用語の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=ja)を参照してください。
 
 
 ## 仮想レポート環境とサンドボックス
 
-Adobe Analyticsには仮想レポートスイートの概念があり、収集したデータをセグメント化し、そのセグメント化されたデータへのアクセスを制御できます。
+Adobe Analytics には仮想レポートスイートの概念があり、収集したデータをセグメント化し、そのセグメント化されたデータへのアクセスを制御できます。
 
-Customer Journey Analyticsには、データビューと呼ばれる似た概念があります。 データビューは、接続からのデータを解釈する方法を決定できるコンテナです。レポートや分析に備えて、ディメンションと指標を指定および設定できる究極の柔軟性を提供します。
+Customer Journey Analytics には、「データビュー」という似た概念があります。データビューは、接続からのデータを解釈する方法を決定できるコンテナです。これにより、レポートや分析に備えて、ディメンションと指標を指定および設定する上で究極の柔軟性が提供されます。
 
-Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。Customer Journey AnalyticsはExperience Platformサンドボックスをサポートしていますが、いくつかの重要な考慮事項があります。
+Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつかの重要な考慮事項があります。
 
 詳しくは、[仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja)を参照してください。
 
