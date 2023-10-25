@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4a7762acbd05d6658ea7301070b5472965d1ea91
+source-git-commit: 8cbd71bf886ea73b7d04875e960c6a1d7a3be484
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 72%
+source-wordcount: '495'
+ht-degree: 77%
 
 ---
 
@@ -21,8 +21,7 @@ ht-degree: 72%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analyticsの使用状況ビューの新機能** | に次の機能が追加されました。 [使用状況ビュー](/help/guided-analysis/types/usage.md):<ul><li>**トレンドライン**：トレンドラインがサポートされるようになりました。 クリック [!UICONTROL オーバーレイ] をグラフの上に追加して有効にします。</li><li>**クエリの分類**：このビュータイプに分類を適用できるようになりました。 これらは、クエリレールのオプションとして使用できます。</li></ul> | 該当なし | 2023年10月25日（PT） |
-| **接続の詳細ページ — スキップされたレコード** | この機能を使用すると、Customer Journey Analyticsデータの取り込み中に特定のレコードがスキップされた理由を把握できます。 考えられる理由としては、大きな訪問者 ID（100 万件を超えるレコード）、タイムスタンプが欠落している、および人物 ID が欠落しているなどがあります。 （書類を添付） | 該当なし | 2023年10月25日（PT） |
+| **の新機能 [!UICONTROL 使用状況] Adobe Product Analyticsで表示** | に次の機能が追加されました。 [使用状況ビュー](/help/guided-analysis/types/usage.md):<ul><li>**トレンドライン**：トレンドラインがサポートされるようになりました。 クリック [!UICONTROL オーバーレイ] をグラフの上に追加して有効にします。</li><li>**クエリの分類**：このビュータイプに分類を適用できるようになりました。 これらは、クエリレールのオプションとして使用できます。</li></ul> | 該当なし | 2023年10月25日（PT） |
 | **CJA データビュー API のドキュメント** | 詳しくは、 [データビュー API](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) を参照して、データビューをプログラムで作成、変更、削除する方法を学びます。 | 該当なし | 2023年10月16日（PT） |
 | **ルックアップおよびプロファイルデータセットの行数指標** | これらの指標は、以前はイベントデータセットでのみ使用できました。 | 該当なし | 2023年10月16日（PT） |
 | **完全なテーブルをクラウドに書き出し** | Customer Journey Analytics の完全なテーブルの書き出しを使用すると、数百万の Workspace 行をクラウドの宛先に書き出すことができます。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p> クラウドの書き出しオプションには以下が含まれます。</p><ul><li>Adobe Experience Platform データランディングゾーン</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） | 2023年10月19日（PT） |
