@@ -5,9 +5,9 @@ title: Customer Journey Analyticsデータを電子メールで他の人に送�
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 58%
 
 ---
@@ -87,7 +87,7 @@ E メールで受信者に直ちにファイルを送信するには：
 
 >[!NOTE]
 >
->スケジュール済みプロジェクトをパスワードで保護するオプションは、 [医療用盾](https://business.adobe.com/jp/solutions/experience-cloud-for-healthcare.html) アドオン製品。
+>スケジュール済みプロジェクトをパスワードで保護するオプションは、 [医療用盾](https://business.adobe.com/solutions/industries/healthcare.html) アドオン製品。
 
 アドビは、スケジュールされたプロジェクトを .pdf 形式と .csv 形式のどちらで送信した場合でも、パスワードを使用して暗号化します。
 
