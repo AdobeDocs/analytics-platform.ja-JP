@@ -4,9 +4,9 @@ description: ユーザーエンゲージメントの推移を測定します.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '621'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ The [!UICONTROL 使用状況] 表示では、次のグラフ設定を利用で�
 グラフにデータを追加します。
 
 * **[!UICONTROL 異常値を表示]**：実行 [異常値検出](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) トレンド分析で使用できます。 外れ値はドットとして表示され、詳細を確認するには上にマウスポインターを置きます。
+* **[!UICONTROL トレンドラインオーバーレイ]**：グラフにトレンドラインを追加し、指定した期間内のデータの全体的な方向を確認できます。
+   * [!UICONTROL 線形]：線形回帰モデル。 一定の速度で増減するデータに対して推奨されます。
+   * [!UICONTROL 対数]：曲線回帰モデル。 時間の経過と共にレベルアウトするデータに推奨されます。
+   * [!UICONTROL 移動平均]：各ポイントからの前の期間の平均値を示すスムージングされた線。 定期的なサイクルのあるデータに推奨されます。 使用可能な移動平均期間は、選択した日付範囲によって異なります。
 
 ## 時間比較を適用
 
