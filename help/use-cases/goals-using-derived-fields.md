@@ -3,15 +3,13 @@ title: 派生フィールドを使用した目標のレポート
 description: 派生フィールドを使用して、Workspace プロジェクトの目標（ターゲット）をレポートする方法を説明します。
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
-hidefromtoc: true
-source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
+exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
+source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
 
 ---
-
 
 # 派生フィールドを使用した目標のレポート
 
