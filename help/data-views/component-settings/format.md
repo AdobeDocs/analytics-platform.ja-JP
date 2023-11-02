@@ -4,7 +4,7 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6945026bd452e1dabe90812f8d056f19aac71490
+source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 30%
@@ -80,7 +80,7 @@ ht-degree: 30%
 
 +++ 日別のコンバージョン率はどのくらい遡って維持されますか？
 
-過去 4 年間、日別のコンバージョン率は維持されますか？
+過去 4 年間、日別のコンバージョン率が維持されます。
 
 +++
 
