@@ -3,9 +3,9 @@ description: 概要番号および変更ビジュアライゼーションを使�
 title: 数の概要と変更の概要
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+workflow-type: tm+mt
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
@@ -30,16 +30,7 @@ ht-degree: 100%
 | 値を短縮 | 値の省略形として、小数点以下 3 桁まで表示できます。 |
 | 値の要約基準 | データの選択範囲の最大値、最小値、平均値、中央値または合計を表示するかどうかを選択します。 |
 
-
-右上の「**ビジュアライゼーション設定**」の歯車をクリックして、概要番号の設定を指定します。
-
-| 設定 | 定義 |
-|--- |--- |
-| 割合（％） | 生の番号ではなく割合を表示します。 |
-| 凡例を表示 | 表示された指標に関する情報を表示します。 |
-| 値を短縮 | 値の省略形として、小数点以下 3 桁まで表示できます。 |
-| 値の要約基準 | データの選択範囲の最大値、最小値、平均値、中央値または合計を表示するかどうかを選択します。 |
-
+{style="table-layout:auto"}
 
 ## 変更概要ビジュアライゼーション {#summary-change}
 
