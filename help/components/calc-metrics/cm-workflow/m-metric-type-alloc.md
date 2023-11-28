@@ -3,10 +3,10 @@ description: 詳細
 title: 指標タイプとアトリビューション
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 37%
+source-wordcount: '225'
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 37%
 
 1. タイプを選択する指標の横にある歯車アイコンを選択します。
 
-   ![](assets/cm_type_alloc.png)
+   ![指標タイプが標準と等しいポップアップを示す歯車アイコン。](assets/cm_type_alloc.png)
 
 1. 次のオプションから選択します。
 

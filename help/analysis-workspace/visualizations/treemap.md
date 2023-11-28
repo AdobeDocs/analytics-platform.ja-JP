@@ -3,10 +3,10 @@ description: ネストされた長方形の集まりとして、（ツリー構�
 title: ツリーマップ
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '94'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 91%
 
 ---
 
@@ -16,6 +16,6 @@ ht-degree: 100%
 
 ツリーの各分岐が長方形で示され、これに、下位レベルの分岐を示す小さな長方形がタイル状に並べられています。
 
-![](assets/treemap.png)
+![サブブランチを表す小さな長方形のタイルを示すツリーマップの例。](assets/treemap.png)
 
 何らかの方法でツリー構造にカラーとサイズディメンションを関連付けると、特定のカラーが特に重要な場合など、他の方法では特定困難なパターンを容易に確認することが可能です。ツリーマップの 2 つ目のメリットは、構造上、スペースを有効活用できるようになるという点です。

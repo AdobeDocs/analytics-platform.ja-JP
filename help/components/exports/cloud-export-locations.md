@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1502'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    を選択します。 [!UICONTROL **場所のアカウント**] タブで、場所を追加する既存のアカウントの 3 ドットアイコンを選択し、「 [!UICONTROL **場所を追加**].
 
-   ![既存のアカウントに場所を追加](assets/add-location-existing-account.png)
+   ![「場所を追加」を選択した状態の GCP アカウントと省略記号ドロップダウンメニュー](assets/add-location-existing-account.png)
 
    [ ロケーション ] ダイアログが表示されます。
 

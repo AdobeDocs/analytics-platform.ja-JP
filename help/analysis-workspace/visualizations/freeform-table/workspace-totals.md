@@ -1,12 +1,12 @@
 ---
-description: Workspace の合計の計算方法。
+description: Workspace の合計の計算方法を説明します。
 title: Workspace の合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 81%
+source-wordcount: '522'
+ht-degree: 76%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 81%
 * **[!UICONTROL 総計]** （灰色の「out of」番号） — この合計は、収集されたすべてのイベントを表します。 フィルターがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、フィルター条件に一致するすべてのイベントを反映するように調整されます。
 * **[!UICONTROL テーブル合計]**（黒い数字） - 通常、この合計は[!UICONTROL 総計]と等しいか、またはそのサブセットです。「[!UICONTROL なしを含む]」オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルフィルターを反映します。
 
-![](assets/total-row.png)
+![フリーフォームテーブル（総計とテーブル合計をハイライト表示）。](assets/total-row.png)
 
 ## 合計設定を表示
 
 「**[!UICONTROL 列設定]**」の下に、「**[!UICONTROL 合計を表示]**」と「**[!UICONTROL 総計を表示]**」のオプションがあります。これらの設定がオフの場合、合計はテーブルから削除されます。これは、特定の[計算指標のシナリオ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=ja)などで合計が意味をなさない場合に必要です。
 
-![](assets/column-settings-total.png)
+![「合計を表示」と「合計を表示」のチェックマークを表示する列設定オプション。](assets/column-settings-total.png)
 
 ## 静的な行の合計の設定
 
@@ -32,7 +32,7 @@ ht-degree: 81%
 * **[!UICONTROL 現在の行の合計を合計として表示]**  — テーブル内の行のクライアント側の合計を表示します。これは、合計が **not** 訪問回数や人物などの指標の重複を排除します。
 * **[!UICONTROL 総計を表示]**  — サーバー側の合計を表示します。つまり、合計では、訪問回数や人物などの指標の重複が排除されます。
 
-![](assets/static-rows.png)
+![「総計を表示」を選択した行設定](assets/static-rows.png)
 
 ## よくある質問
 

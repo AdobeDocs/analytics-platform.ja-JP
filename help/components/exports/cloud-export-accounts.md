@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 1. 次の日： [!UICONTROL エクスポート] ページで、 [!UICONTROL **場所のアカウント**] タブをクリックします。
 1. 選択 [!UICONTROL **アカウントを追加**].
 
-   ![アカウントを追加](assets/account-add.png)
+   ![「別のアカウントを追加」を表示するページオプションをエクスポートします](assets/account-add.png)
 
    アカウントを追加ダイアログが表示されます。
 
@@ -86,7 +86,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
       >SAS URI は作成後 7 日で有効期限が切れるので、この操作は 7 日ごとに実行する必要があります。 スクリプトを作成して、この処理を自動化できます。
 
 
-      ![SAS URL フィールド](assets/blob-container-sas-uri.png)
+      ![SAS URL フィールドを表示する Connection Info ウィンドウを入力](assets/blob-container-sas-uri.png)
 
    1. 選択 [!UICONTROL **次へ**] > [!UICONTROL **接続**].
 
@@ -104,7 +104,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **役割 ARN**] | AdobeがAmazon S3 アカウントへのアクセス権を取得するために使用できる役割 ARN(Amazon Resource Name) を指定する必要があります。 これを行うには、ソースアカウントの IAM アクセス許可ポリシーを作成し、そのポリシーをユーザーに関連付けてから、宛先アカウントのロールを作成します。 詳しくは、 [このAWSドキュメント](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
+   | [!UICONTROL **ロール ARN**] | AdobeがAmazon S3 アカウントへのアクセス権を取得するために使用できる役割 ARN(Amazon Resource Name) を指定する必要があります。 これを行うには、ソースアカウントの IAM アクセス許可ポリシーを作成し、そのポリシーをユーザーに関連付けてから、宛先アカウントのロールを作成します。 詳しくは、 [このAWSドキュメント](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
 
    {style="table-layout:auto"}
 
@@ -155,7 +155,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
    | [!UICONTROL **アプリケーション ID**] | 作成した Azure アプリケーションからこの ID をコピーします。 Microsoft Azure では、この情報は **概要** 」タブをクリックします。 詳しくは、 [Microsoft Azure ドキュメント：Microsoft identity platform でのアプリケーションの登録方法に関する](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **テナント ID**] | 作成した Azure アプリケーションからこの ID をコピーします。 Microsoft Azure では、この情報は **概要** 」タブをクリックします。 詳しくは、 [Microsoft Azure ドキュメント：Microsoft identity platform でのアプリケーションの登録方法に関する](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Key Vault URI**] | <p>Azure Key Vault の SAS トークンへのパス。  Azure SAS を構成するには、Azure Key Vault を使用して SAS トークンを秘密鍵として保存する必要があります。 詳しくは、 [Azure Key Vault からシークレットを設定および取得する方法に関するMicrosoft Azure ドキュメント](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>キー Vault URI を作成したら、作成した Azure アプリケーションに権限を付与するために、Key Vault にアクセスポリシーを追加します。 詳しくは、 [Key Vault アクセスポリシーの割り当て方法に関するMicrosoft Azure ドキュメント](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
-   | [!UICONTROL **Key Vault シークレットの名前**] | Azure Key Vault に秘密鍵を追加する際に作成した秘密鍵の名前。 Microsoft Azure では、この情報は、次の場所で作成した Key Vault 内の **Key Vault** 設定ページ。 詳しくは、 [Azure Key Vault からシークレットを設定および取得する方法に関するMicrosoft Azure ドキュメント](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
+   | [!UICONTROL **Key Vault シークレット名**] | Azure Key Vault に秘密鍵を追加する際に作成した秘密鍵の名前。 Microsoft Azure では、この情報は、次の場所で作成した Key Vault 内の **Key Vault** 設定ページ。 詳しくは、 [Azure Key Vault からシークレットを設定および取得する方法に関するMicrosoft Azure ドキュメント](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
    | [!UICONTROL **場所アカウントの秘密鍵**] <!-- nothing for us to have them do on the second screen. Just need to permission the container if they haven't --> | 作成した Azure アプリケーションからシークレットをコピーします。 Microsoft Azure では、この情報は **証明書と秘密鍵** 」タブをクリックします。 詳しくは、 [Microsoft Azure ドキュメント：Microsoft identity platform でのアプリケーションの登録方法に関する](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
    {style="table-layout:auto"}

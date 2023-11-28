@@ -4,10 +4,10 @@ description: Customer Journey Analytics でソースコネクタを使用して�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 87%
+source-wordcount: '1997'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. 選択 **[!UICONTROL 個々のプロファイル]**.
 
-      ![スキーマ](./assets/create-pr-schema-wizard-step-1.png)
+      ![個々のプロファイルが選択された状態でスキーマウィンドウを作成](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -68,7 +68,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
 
-      ![スキーマに名前を付ける](./assets/create-pr-schema-wizard-step-2.png)
+      ![スキーマに名前を付けるフィールドを示すスキーマウィンドウを作成します ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -76,7 +76,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
-      ![フィールドグループを追加](./assets/add-field-group-button.png)
+      ![「フィールドグループを追加」を示す「スキーマを作成」ウィンドウ](./assets/add-field-group-button.png)
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 

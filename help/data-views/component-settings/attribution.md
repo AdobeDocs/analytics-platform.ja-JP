@@ -4,9 +4,9 @@ description: 指標のデフォルトのアトリビューションを設定で�
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1953'
 ht-degree: 35%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 アトリビューションを使用すると、ディメンション項目で成功イベントのクレジットを取得する方法をカスタマイズできます。
 
-![](../assets/attribution-settings.png)
+![「アトリビューションを設定」オプションをハイライトしたデータビューウィンドウ](../assets/attribution-settings.png)
 
 次に例を示します。
 
@@ -46,7 +46,7 @@ ht-degree: 35%
 
 1. コンポーネントを選択し、画面の右側にある「アトリビューション」セクションを展開します。
 
-   ![](../assets/attribution-settings.png)
+   ![「アトリビューションを設定」オプションをハイライトしたデータビューウィンドウ](../assets/attribution-settings.png)
 
 1. 選択 [!UICONTROL **属性を設定**]」をクリックし、 [!UICONTROL **アトリビューションモデル**] ドロップダウンメニュー。
 

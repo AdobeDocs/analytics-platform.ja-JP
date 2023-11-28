@@ -3,10 +3,10 @@ description: フィルター適用済み指標と重み付け指標の例を示�
 title: フィルター適用済み指標と重み付け指標
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '143'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 このシンプルなフィルター適用済み指標は、訪問回数が 100 回を超えているページのみのバウンス率を示します。
 
-![](assets/cm_fbr.png)
+![列 1（訪問回数）および列 2(100) に適用された指標とバウンス率を示す概要ウィンドウ。 ](assets/cm_fbr.png)
 
 この数式は、一貫した時間の範囲に依存することに注意してください。レポートを 1 日だけ実行する場合は、訪問回数が 20 回を超えるページも対象とした方がよいでしょう。レポートを 1 ヶ月間実行する場合は、訪問回数がさらに多い場合に対応したフィルターが必要になる可能性があります。
 
@@ -26,10 +26,10 @@ ht-degree: 100%
 
 このフィルターは、訪問回数で並べ替えた場合の上位 30％のページのバウンス率を示します。
 
-![](assets/cm_wbr_2.png)
+![その後でフィルターを適用し、上位 30%のページのバウンス率を訪問数で並べ替えました。](assets/cm_wbr_2.png)
 
 ## 重み付け指標 {#section_F2D16B14569948289CF1310F9E6E3FC2}
 
 バウンス率で並べ替えをおこない、訪問回数が多いページがリストの上位に来るようにする必要があるとします。そのためには、次のような重みを付けたバウンス率を作成します。
 
-![](assets/cm_wbr.png)
+![バウンス率の訪問回数の定義を含む概要。](assets/cm_wbr.png)

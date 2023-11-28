@@ -2,10 +2,11 @@
 description: タグ、所有者およびその他のフィルター（すべてを表示、自分が所有、自分と共有、お気に入り、承認済み）でフィルタリングします。
 title: フィルターのリストをフィルター
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 30%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 31%
 
 1. フィルターマネージャで、 **[!UICONTROL フィルター]** アイコン：  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![フィルターアイコンと使用可能なフィルターを表示するフィルターマネージャ](assets/filtering.png)
 
 2. 次のフィルターを使用できます。
 

@@ -4,10 +4,10 @@ description: Marketo EngageデータをCustomer Journey Analyticsに取り込む
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 66%
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Platform(Adobe Experience Platform) で新しく利用可能な
 
 [人物](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=ja#persons)および[アクティビティ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=ja#activities)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
 
-## 手順 2:MarketoデータのAdobe Experience Platformへの取り込み
+## 手順 2:MarketoデータをAdobe Experience Platformに取り込む
 
 [Marketo Engage コネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ja)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
@@ -39,12 +39,12 @@ Experience Platformデータセットに関するレポートを作成するに�
 
 1. 次のように、web ページビューの[フィルター](/help/components/filters/create-filters.md)を作成します。- Event Type = web.webpagedetails.pageViews :
 
-   ![](../assets/marketo-filter.png)
+   ![イベントとイベントタイプを示す定義ウィンドウ](../assets/marketo-filter.png)
 
 1. フリーフォームテーブルで、作成したフィルター（Web ページビュー）を取り込み、月の日付範囲を取り込みます。これにより、毎月のリードによる web ページ訪問数がわかります。
 
-   ![](../assets/marketo-freeform.png)
+   ![イベントを月別に表示するフリーフォームテーブル。](../assets/marketo-freeform.png)
 
 1. または、人物キーまたは仕事用メールアドレスのディメンションを取り込みます。これにより、各リードによる web ページ訪問数がわかります。
 
-   ![](../assets/marketo-freeform2.png)
+   ![イベント、workEmail.Address および Web ページビューを示すフリーフォームテーブル。](../assets/marketo-freeform2.png)

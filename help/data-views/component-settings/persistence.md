@@ -4,10 +4,10 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 [!UICONTROL 永続性] とは、特定のディメンション値を、設定されたイベント以外の指標にも関連付けることのできる機能です。配分と有効期限の組み合わせを使用します。
 
-![永続性](../assets/persistence.png)
+![永続化オプションをハイライトしたデータビューウィンドウ](../assets/persistence.png)
 
 * **配分** では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値が保持されるかを指定できます。
 

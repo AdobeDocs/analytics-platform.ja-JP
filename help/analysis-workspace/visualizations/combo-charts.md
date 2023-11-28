@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '843'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 1. 左パネルの「ビジュアライゼーション」ドロップダウンリストから、[!UICONTROL コンボグラフ]ビジュアライゼーションを空のパネルにドラッグします。
 
-   ![ビルド](assets/combo-chart-build.png)
+   ![X 軸と Y 軸とオプションフィールドを表示するコンボグラフ](assets/combo-chart-build.png)
 
 1. ドロップダウンリストから、X 軸のディメンションと Y 軸の指標を選択します。
 
@@ -41,9 +41,9 @@ ht-degree: 95%
 
    | 折れ線比較タイプ | 定義 |
    | --- | --- |
-   | **[!UICONTROL 時間比較]** | 最も一般的なタイプの比較です。例えば、この期間と 4 週間前の期間を比較します。 [!UICONTROL 時間比較]を選択した場合は、比較する期間についての補助的な選択を行います。<p>![期間](assets/combo-time-period.png) |
-   | **[!UICONTROL 関数]** | [!UICONTROL 平均]などの関数を比較に導入できます。以下のサポートされている関数のリストを参照してください。<p>![関数](assets/combo-functions.png) |
-   | **[!UICONTROL セカンダリ指標]** | 例えば、[!UICONTROL 売上高]を別の指標と比較できます。<p>![2 つの指標](assets/combo-2metrics.png) |
+   | **[!UICONTROL 時間比較]** | 最も一般的なタイプの比較です。例えば、この期間と 4 週間前の期間を比較します。 [!UICONTROL 時間比較]を選択した場合は、比較する期間についての補助的な選択を行います。<p>![選択した期間と、期間の 2 番目の選択フィールドとの比較。](assets/combo-time-period.png) |
+   | **[!UICONTROL 関数]** | [!UICONTROL 平均]などの関数を比較に導入できます。以下のサポートされている関数のリストを参照してください。<p>![選択された関数と、サポートされている関数のリストを示す新しい比較ドロップダウンメニュー。](assets/combo-functions.png) |
+   | **[!UICONTROL セカンダリ指標]** | 例えば、[!UICONTROL 売上高]を別の指標と比較できます。<p>![2 つの指標を比較したコンボグラフです。](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
    出力は、例えば次のようになります。
 
-   ![出力](assets/combo-output.png)
+   ![棒グラフで現在の期間を示し、折れ線グラフでの比較期間を示すコンボグラフ ](assets/combo-output.png)
 
    現在の期間は棒グラフで表示され、比較期間は折れ線グラフで表示されます。折れ線グラフのドットは、「バーベル」と呼ばれます。
 
@@ -73,17 +73,17 @@ ht-degree: 95%
 
 売上高指標の累積平均の例を以下に示します。
 
-![累積平均](assets/combo-cumul-avg.png)
+![累加平均を示すコンボグラフ](assets/combo-cumul-avg.png)
 
 累積平均関数と平均関数の両方を含む複合グラフの例を次に示します。
 
-![2 つの関数](assets/combo-two-functions.png)
+![累加平均関数と平均関数の両方を示すコンボグラフです。](assets/combo-two-functions.png)
 
 ## 複合グラフの設定
 
 複合グラフの右上にある歯車アイコンをクリックして、設定を変更します。
 
-![設定](assets/combo-settings.png)
+![以下のオプションを表示するコンボグラフの設定ビュー。](assets/combo-settings.png)
 
 | 設定 | 定義 |
 | --- | --- |
@@ -94,7 +94,7 @@ ht-degree: 95%
 | **[!UICONTROL 凡例を表示]** | コンボグラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | **[!UICONTROL 項目数の上限を設定]** | X 軸の項目数を減らします。 大きなデータセットがある場合、最初の 10 個の項目（または選択した値）のみが表示されます。 |
 | **[!UICONTROL オーバーレイ]** | 折れ線のバーベルを表示または非表示にします。 |
-| **[!UICONTROL 軸]** |  |
+| **[!UICONTROL 軸]** | |
 | **[!UICONTROL 二重軸を表示]** | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。これは、プロットされた指標のスケールが大きく異なる場合に役立ちます。複数の指標を比較する場合を除き、二重軸の色はテーブルの色と一致します。 この場合、すべての比較の色はグレーになります。 |
 | **[!UICONTROL 正規化]** | 指標を均等な比率にします。これは、プロットされた指標の大きさが非常に異なる場合に役立ちます。 |
 | **[!UICONTROL X 軸を表示]** | X 軸を表示するか、非表示にします。 |

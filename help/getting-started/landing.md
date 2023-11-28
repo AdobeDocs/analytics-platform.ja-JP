@@ -4,10 +4,10 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
-workflow-type: ht
-source-wordcount: '1514'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '1524'
+ht-degree: 99%
 
 ---
 
@@ -21,8 +21,8 @@ Customer Journey Analytics 用のランディングページには、[!DNL Analy
 
 | 機能 | 説明 | スクリーンショット |
 | --- | --- | --- |
-| [!UICONTROL プロジェクト]テーブルをフルスクリーンに拡張する | テーブルを拡張するには、ハンバーガーのメニューアイコンをクリックします。この操作を実行すると、左側のパネルのタブが折りたたまれます。 | ![テーブルを拡張](assets/landing-collapse2.png) |
-| 列の幅のカスタマイズ | 以前は、列の幅は固定されていました。列区切り記号をドラッグして調整できるようになりました。 | ![列の幅](assets/column-width.png) |
+| [!UICONTROL プロジェクト]テーブルをフルスクリーンに拡張する | テーブルを拡張するには、ハンバーガーのメニューアイコンをクリックします。この操作を実行すると、左側のパネルのタブが折りたたまれます。 | ![左側のパネルのタブのないプロジェクトのみを表示して選択したテーブルを展開します](assets/landing-collapse2.png) |
+| 列の幅のカスタマイズ | 以前は、列の幅は固定されていました。列区切り記号をドラッグして調整できるようになりました。 | ![列の幅のセレクター](assets/column-width.png) |
 | ピン留めされた項目の並べ替え | ピンされた項目を上下に移動するには、ピン留めされた項目の横の省略記号をクリックし、「**[!UICONTROL 上に移動]**」または「**[!UICONTROL 下に移動]**」を選択します。 | ![ピン留めされた項目を移動](assets/move-up-down.png) |
 | 新規テーブル列 | テーブルの右上に表示される「[!UICONTROL テーブルをカスタマイズ]」アイコンをクリックします。新規テーブル列は次のとおりです。 <ul><li>**[!UICONTROL 予定]**：プロジェクトがスケジュールされた際は[!UICONTROL オン]、そうでない場合は[!UICONTROL オフ]に設定します。[!UICONTROL オン]のリンクをクリックすると、スケジュールされたプロジェクトに関する情報を表示できます。また、プロジェクトの所有者である場合は[プロジェクトスケジュールを編集](/help/analysis-workspace/export/t-schedule-report.md)できます。</li><li>**[!UICONTROL プロジェクト ID]**：プロジェクト ID は、プロジェクトのデバッグに使用できます。</li><li>**[!UICONTROL 最長の日付範囲]**：日付範囲を長くすると、プロジェクトの複雑さが増し、処理と読み込み時間が長くなる場合があります。 </li><li>**[!UICONTROL クエリ数]**：プロジェクトの読み込み時に Analytics に対して行われたリクエストの合計数です。プロジェクトクエリの数が多いと、プロジェクトが複雑になり、処理と読み込みに時間がかかる場合があります。このデータは、プロジェクトが読み込まれた後、またはスケジュールされたプロジェクトが送信された後にのみ使用できます。 </li></ul> | ![新しい列](assets/new-columns.png) |
 | **[!UICONTROL プロジェクトを作成]**&#x200B;モーダルが復活しました | ワークスペースで「**[!UICONTROL プロジェクトを作成]**」をクリックすると、[!UICONTROL 空のプロジェクト]と[!UICONTROL 空のモバイルスコアカード]のどちらかを、再び選択できるようになりました。会社が作成した任意のテンプレートから選択することもできます。 | ![新規作成](assets/create-new.png) |

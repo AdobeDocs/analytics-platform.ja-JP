@@ -3,10 +3,10 @@ description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 99%
+source-wordcount: '618'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 * `F6` を押すとプロジェクト内の最初のパネルに移動し、そのパネル内のビジュアライゼーション間を移動します。 その後、プロジェクト内の次のパネルに移動し、同じ動作を繰り返します。
 * フォーカスインジケーターを適用して、目が見えるキーボードユーザーが現在どの UI 要素にフォーカスがあるかを明確に示します。インジケーターは、選択した要素の周りの青い境界線です。
 
-   ![フォーカスインジケーター](assets/focus-indicator.png)
+  ![フリーフォームテーブルの周囲に青い境界線が表示されたフォーカスインジケーターを表示するフリーフォームテーブル。](assets/focus-indicator.png)
 
 ### メニューバーのキーボードナビゲーション
 
@@ -98,7 +98,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 
 コンポーネントの検証が完了すると、を押すとビルダーが閉じ `Save` ます。
 
-![エラーの検証](assets/error-validation.png)
+![セグメントビルダーとエラー検証インジケーター。](assets/error-validation.png)
 
 ## オペレーティングシステムのアクセシビリティ機能のサポート
 

@@ -1,12 +1,12 @@
 ---
-description: Adobe Analysis Workspace とその関連コンポーネントに関する既知の制限のリスト
+description: AdobeAnalysis Workspaceとその関連コンポーネントに関する既知の制限について説明します。
 title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 88%
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 88%
 ## コンポーネント／フィルター
 
 * 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL 回数]、[!UICONTROL ユニーク訪問者]など）。
-* で作成されたアドホックフィルター [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md) はクイックフィルターの一種です。 これらは、公開されない限り、Workspace またはフィルターコンポーネントマネージャーの左側のレールに表示されません。 詳しくは、 [クイックフィルター](/help/components/filters/quick-filters.md).
+* で作成されたアドホックフィルター [パネルドロップゾーン](/help/analysis-workspace/c-panels/panels.md) は、クイックフィルターの一種です。 これらは、公開されない限り、Workspace またはフィルターコンポーネントマネージャーの左側のレールに表示されません。 詳しくは、 [クイックフィルター](/help/components/filters/quick-filters.md).
 
 ## コンポーネント／計算指標
 

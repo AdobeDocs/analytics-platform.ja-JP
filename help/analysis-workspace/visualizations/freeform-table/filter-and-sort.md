@@ -3,15 +3,15 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 67%
 
 ---
 
 
-# フリーフォームテーブルのフィルターと並べ替え
+# フリーフォームテーブルのフィルタリングと並べ替え
 
 Analysis Workspace のフリーフォームテーブルは、インタラクティブなデータ分析の基盤となります。そのため、何千行もの情報を含めることができます。データのフィルタリングと並べ替えは、最も重要な情報を効率的に表示するための重要な要素になる可能性があります。
 
@@ -67,7 +67,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 1. **フィルター**&#x200B;アイコンが表示されたら選択します。
 
-   ![テーブル内のフィルターアイコン](assets/table-filter-icon.png)
+   ![フィルターアイコンをハイライトしたフリーフォームテーブル。](assets/table-filter-icon.png)
 
    次のオプションがあります。
 
@@ -108,6 +108,6 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
    - 下向き矢印は降順、上向き矢印（デフォルト）は昇順の並べ替えを示します。
    - ディメンションは、アルファベット順または数字順に並べ替えることができます。例えば、ワークフローに番号付きの手順があり、その手順番号で並べ替えたい場合があります。日付関連のディメンションを日付順に並べ替えることができます。または、データソースをアルファベット順に並べ替えることもできます（下図を参照）。
 
-   ![](assets/sort-dimensions.png)
+   ![並べ替えアイコンをハイライトしたデータソース表示。](assets/sort-dimensions.png)
 
 

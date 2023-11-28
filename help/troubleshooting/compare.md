@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス；クエリサービス；SQL 構文
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '886'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 Adobe AnalyticsデータをAdobe Experience Platformに取り込んだとします ( [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成し、このデータセットを使用してCustomer Journey Analytics接続を作成しました。
 
-![データフロー](assets/compare.png)
+![CJA 接続を使用した、Adobe Analyticsから Data Connector 経由でAdobe Experience Platformに、および Customer Analytics に送られるデータフロー。](assets/compare.png)
 
 次に、データビューを作成し、その後、Customer Journey Analyticsに関するこのデータをレポートする際に、Adobe Analyticsのレポート結果との相違に気がつきました。
 

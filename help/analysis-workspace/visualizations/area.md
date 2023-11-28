@@ -3,10 +3,10 @@ description: 面グラフビジュアライゼーションは折れ線グラフ�
 title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 75%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 この ビジュアライゼーションは折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。
 
-![](assets/area.png)
+![ページビュー数、訪問回数、個別訪問者数、直帰率など、複数の指標を示す領域ビジュアライゼーション。](assets/area.png)
 
 ## 積み重ね面グラフ {#stacked}
 
 このビジュアライゼーションは面グラフに似ていますが、各系列は前の系列の上から開始されています。
 
-![](assets/area-stacked.png)
+![各系列を前の系列の先頭に表示する積み重ね面グラフです。](assets/area-stacked.png)
 
 積み重ね面グラフのビジュアライゼーションを「100% の積み重ね」に変更する新しい設定が追加されました。
 
-![](assets/areastacked100.png)
+![100%の積み重ねビジュアライゼーションを表示する積み重ね面グラフ。](assets/areastacked100.png)

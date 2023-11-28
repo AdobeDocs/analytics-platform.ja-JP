@@ -5,11 +5,11 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 1. 次をクリック： *セルアイコン* （内） *データビュー* 」セクションに入力します。
 
-   ![セルのアイコンをクリックします。](/help/report-builder/assets/cell-icon.png)
+   ![セルアイコンがハイライト表示された新しいデータブロックウィンドウを作成します。](/help/report-builder/assets/cell-icon.png)
 
 1. セルの場所を選択し、選択したセルにデータビューを追加します。
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 1. セルに割り当てるデータビューを選択します。
 
-   ![データビューを選択.](/help/report-builder/assets/select-data-view.png)
+   ![Report Builderのクイック編集ペインで、「データを選択」ビューを表示します。](/help/report-builder/assets/select-data-view.png)
 
 1. 「**適用**」をクリックします。
 

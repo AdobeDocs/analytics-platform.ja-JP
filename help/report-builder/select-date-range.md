@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 92%
+source-wordcount: '1087'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 選択した日付範囲の今日を除外するオプションもあります。
 
-![「今日を除外」を選択します。](./assets/image17.png)
+![Report Builderのクイック編集ペインで、カレンダーが選択され、「今日を除外」が選択されています。](./assets/image17.png)
 
 ## カレンダーの使用
 
@@ -62,7 +62,7 @@ ht-degree: 92%
 
 日付範囲を逆の順序で設定するには、終了日を最初にクリックしてから、開始日をクリックします。
 
-![終了日をクリックし、開始日をクリックします。](./assets/image18.png)
+![Report Builderしたカレンダー、終了日、開始日を示すカレンダー日付範囲ウィンドウ。](./assets/image18.png)
 
 ### プリセットドロップダウンメニュー
 
@@ -76,7 +76,7 @@ ht-degree: 92%
 
 1. 開始日または終了日、あるいはその両方の相対式を選択します。
 
-   ![「相対日付を使用」を選択してから、相対式を選択します。](./assets/image19.png)
+   ![「相対日付を使用」が選択され、相対式が表示されるReport Builderの日付範囲ウィンドウ。](./assets/image19.png)
 
    **開始時** - 日、週、月、四半期、年の始めを選択できます。
 
@@ -86,11 +86,11 @@ ht-degree: 92%
 
 1. 相対期間として日、週、月、四半期、年を選択します。
 
-   ![現在の日付を選択します。](./assets/image20.png)
+   ![Report Builderした日付を示す日付範囲ウィンドウ。](./assets/image20.png)
 
 1. 相対日付から日数、週数、月数、四半期数または年数を加算または減算します。
 
-   ![現在の日付と 14 日を選択します。](./assets/image21.png)
+   ![Report Builder日付範囲ウィンドウで、現在の日に選択した 14 日を加えた日付を表示します。](./assets/image21.png)
 
 1. 「次へ」をクリックして、データ範囲を定義します。
 

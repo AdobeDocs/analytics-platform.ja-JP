@@ -4,10 +4,10 @@ description: Adobe Customer Journey Analyticsを使用してGoogle Analyticsデ�
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、データセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
-![スキーママップ](../assets/schema-map.png)
+![GA データフィールドとターゲットスキーママッピングをハイライトするスキーママップ](../assets/schema-map.png)
 
 フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、インポートしたデータに関する問題が生じなくなります。
 
@@ -97,7 +97,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
   ![タイムスタンプ](../assets/timestamp.png)
 
-* **`_id`**:このフィールドには値が必要です。Customer Journey Analyticsは値を気にしません。 フィールドに「1」を追加できます。
+* **`_id`**：このフィールドには値が必要です。Customer Journey Analyticsは値を気にしません。 フィールドに「1」を追加できます。
 
   ![ID](../assets/_id.png)
 

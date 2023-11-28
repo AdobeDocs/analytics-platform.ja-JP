@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 57%
+source-wordcount: '314'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 例えば、プロジェクトを組織と共有しているとします。マーケティングキャンペーンによりトラフィックが大きく急増した場合は、「キャンペーンの開始日」注釈を作成して、データビュー全体に対してスコーピングを設定できます。 ユーザーがその日付を含むデータセットを表示すると、データと共に、プロジェクト内の注釈が表示されます。
 
-![](assets/multi-day.png)
+![注釈が強調表示された折れ線グラフ。](assets/multi-day.png)
 
 次の点に注意してください。
 
@@ -46,6 +46,6 @@ ht-degree: 57%
 
 * ユーザーレベル：[!UICONTROL コンポーネント]／[!UICONTROL ユーザー環境設定]／[!UICONTROL データ]／[!UICONTROL 注釈を表示]
 
-![](assets/show-ann.png)
+![「注釈を表示」がハイライト表示されたビジュアライゼーション設定ダイアログ](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![ユーザーの環境設定で「注釈を表示」をハイライト表示しています。](assets/show-ann2.png)

@@ -4,9 +4,9 @@ description: 派生フィールドを使用して、Workspace プロジェクト
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 1. 各月に対して CASE WHEN ルールを使用し、 **[!UICONTROL カスタム数値]**. 以下の「月別製品目標」のルールを参照してください。
 
-   ![製品目標](assets/goals-derived-field-product-goals-1.png)
+   ![月別製品目標](assets/goals-derived-field-product-goals-1.png)
 
 
 ### マーケティングチャネルの売上高目標

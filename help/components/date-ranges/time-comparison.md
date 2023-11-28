@@ -3,10 +3,10 @@ description: Analysis Workspace での日付の比較では、日付範囲を含
 title: 日付の比較
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '638'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 1. ある期間について比較する任意のディメンションと指標を含むフリーフォームテーブルを作成します。
 1. テーブル列を右クリックし、「**[!UICONTROL 期間を比較]**」を選択します。
 
-   ![](assets/compare-time.png)
+   ![「期間を比較」が選択されたテーブル行](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -41,13 +41,13 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 1. 結果として次のような比較が表示されます。
 
-   ![](assets/compare-time-result.png)
+   ![日付範囲と変更の割合の比較を表示するフリーフォームテーブル。](assets/compare-time-result.png)
 
    「変更の割合」列は、マイナスの値の場合は赤、プラスの値の場合は緑で表示されます。
 
 1. （オプション）他の Workspace プロジェクトの場合と同様に、これらの期間比較に基づいてビジュアライゼーションを作成できます。以下は横向き棒グラフの例です。
 
-   ![](assets/compare-time-barchart.png)
+   ![Workspace のプロジェクトバーグラフ。](assets/compare-time-barchart.png)
 
    横向き棒グラフで変更の割合を示すためには、 [!UICONTROL ビジュアライゼーション設定] で [!UICONTROL 割合 (%)] 設定を有効にしておく必要があります。
 
@@ -55,7 +55,7 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 テーブルの各列に期間を追加できるようになりました。これにより、カレンダーの設定先とは異なる期間を追加できます。この方法でも日付を比較することができます。
 
-1. テーブルの列を右クリックし、「 **[!UICONTROL 期間列を追加]** ![](assets/add-time-period-column.png)」を選択します。
+1. テーブルの列を右クリックし、「 **[!UICONTROL 期間列を追加]** ![」を選択します。期間列を追加が強調表示されているテーブル列リスト ](assets/add-time-period-column.png)
 
 1. テーブルの日付範囲をどのように設定したかに応じて、次のオプションを比較に使用できます。
 
@@ -71,11 +71,11 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 1. 選択した列の前に、期間が挿入されます。
 
-   ![](assets/add-time-period-column2.png)
+   ![現在のカレンダー期間と前の暦月の発生回数を示すフリーフォームテーブル。](assets/add-time-period-column2.png)
 
 1. 期間の列はいくつでも追加でき、異なる日付範囲を組み合わせることもできます。
 
-   ![](assets/add-time-period-column4.png)
+   ![今月、前月、前月、前月、前年の 1 週間の値を表示するフリーフォームテーブル。](assets/add-time-period-column4.png)
 
 1. また、各列で並べ替えて、並べ替えに使用した列に基づいて日付の順序を変更することもできます。
 
@@ -83,7 +83,7 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 すべてのテーブルで、「**[!UICONTROL 各列の日付を整列させて、すべてが同じ行で始まるようにします (テーブル全体に適用)]**」という新しい設定を使用できます。「テーブル全体に適用」とは、例えば、テーブルで分類をおこない、分類に対してこの設定を変更すると、テーブル全体で設定が変更されることを意味します。
 
-![](assets/date-comparison-setting.png)
+![各列の日付を整列させて、選択した同じ行で始まるように表示する、テーブル設定を含むフリーフォームテーブルポップアップ。](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 例：日付を整列させると、2016 年 10 月を 9 月と比較する前月比の場合、左側の列は 10 月 1 日、右側の列は 9 月 1 日から始まります。
 
-![](assets/add-time-period-column3.png)
+![前月比の割合を示す比較。](assets/add-time-period-column3.png)
 
 <!-- 
 

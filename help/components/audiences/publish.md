@@ -3,10 +3,10 @@ title: オーディエンスを作成してリアルタイム顧客プロファ�
 description: Customer Journey Analytics からのオーディエンスの公開方法を学ぶ
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 58%
+source-wordcount: '1641'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 58%
 
    オーディエンスを公開する前に、これらの設定を行います。
 
-   ![オーディエンスの作成方法のスクリーンショット](assets/create-audience.png)
+   ![次の節で説明するオーディエンスのスブーイング設定の作成のスクリーンショット。](assets/create-audience.png)
 
    | 設定 | 説明 |
    | --- | --- |
@@ -52,7 +52,7 @@ ht-degree: 58%
 
    オーディエンスのプレビューが右側のパネルに表示されます。作成したオーディエンスの要約分析が可能になります。
 
-   ![データプレビューのスクリーンショット](assets/data-preview.png)
+   ![オーディエンスの要約された分析を示すデータプレビューのスクリーンショット。](assets/data-preview.png)
 
    | プレビュー設定 | 説明 |
    | --- | --- |
@@ -108,7 +108,7 @@ Platform でCustomer Journey Analyticsオーディエンスを表示するには
 
 Customer Journey Analyticsオーディエンスは、Adobe Experience Platformセグメントのセグメント定義にドラッグできます。
 
-![](assets/audiences-aep.png)
+![左側のパネルでセグメントをハイライト表示し、メインパネルで CJA オーディエンスをハイライト表示するAdobeExperience Platform UI です。](assets/audiences-aep.png)
 
 ## よくある質問（FAQ） {#faq}
 

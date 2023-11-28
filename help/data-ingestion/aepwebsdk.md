@@ -4,10 +4,10 @@ description: Adobe Experience Platform Web SDK と Edge Network を使用して 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 86%
+source-wordcount: '3616'
+ht-degree: 85%
 
 ---
 
@@ -58,7 +58,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. 選択 **[!UICONTROL エクスペリエンスイベント]**.
 
-      ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
+      ![エクスペリエンスイベントをハイライトするスキーマを作成](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -71,7 +71,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
 
-      ![スキーマに名前を付ける](./assets/create-ee-schema-wizard-step-2.png)
+      ![「スキーマに名前を付ける」フィールドを示すスキーマウィンドウを作成します](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 

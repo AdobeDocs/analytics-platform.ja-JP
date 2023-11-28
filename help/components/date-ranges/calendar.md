@@ -4,10 +4,10 @@ title: カレンダーと日付範囲の概要
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 79%
+source-wordcount: '892'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 79%
 
 カレンダーの選択はパネルレベルで適用されますが、すべてのパネルに適用するオプションがあります。Workspace で日付範囲をクリックすると、インターフェイスに現在のカレンダー月と、前のカレンダー月が表示されます。これらの 2 つのカレンダーを調整するには、それぞれの上隅にある右向き矢印と左向き矢印をクリックします。
 
-![カレンダー](assets/aw_calendar2.png){width="60%"}
+![2022 年 10 月と 2022 年 11 月を示すカレンダーで、11 月 1 日～ 30 日が選択されています。](assets/aw_calendar2.png){width="60%"}
 
 カレンダーの最初のクリックでは、日付範囲の選択を開始します。2 回目のクリックで日付範囲の選択が完了し、ハイライト表示されます。`Shift` キーが押された状態（または右クリックが使用された状態）の場合は、現在選択されている範囲に追加されます。
 
@@ -48,12 +48,12 @@ Workspace で作業している場合は、パネルカレンダーを基準と�
 相対的な日付を選択した場合、周期的な日付は、当日の日付ではなく、パネルカレンダーの開始日を基準とします。
    * このオプションを選択しない場合、周期的な日付は当日の日付を基準とします。
 
-   ![パネルを基準とする相対的な日付](assets/relative-date-selected.png){width="60%"}
+   ![選択したパネルカレンダーに対して日付範囲コンポーネントを作成するカレンダー](assets/relative-date-selected.png){width="60%"}
 
 1. 「**適用**」をクリックします。
 相対的な日付が右上に表示されます。
 
-   ![フリーフォームの相対的な日付](assets/relative-date-range1.png)
+   ![相対的な日付がハイライト表示され、「先月」がハイライト表示されているフリーフォームテーブル。 ](assets/relative-date-range1.png)
 
 ## パネルを基準とする相対的な日付範囲のガイドライン {#guidelines}
 

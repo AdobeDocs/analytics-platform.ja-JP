@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 書き出しログを管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '835'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
 
-   ![「ログを書き出し」タブ](assets/export-logs-tab.png)
+   ![「ログ」タブを表示するエクスポートウィンドウ](assets/export-logs-tab.png)
 
    各ログの詳細は、使用可能な列に表示されます。
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
 1. を選択します。 **フィルター** アイコン。
 
-   ![情報をフィルター](assets/export-log-filters.png)
+   ![[ アカウントタイプ別のフィルタ ] リストを表示する [ エクスポート ] ウィンドウ](assets/export-log-filters.png)
 
    次の条件でフィルタリングできます。
 

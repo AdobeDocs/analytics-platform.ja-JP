@@ -3,10 +3,10 @@ description: ヒストグラムは、棒グラフに似ていますが、数値�
 title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 85%
+source-wordcount: '443'
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 85%
 1. **[!UICONTROL ヒストグラム]**&#x200B;をパネルにドラッグします。
 1. 指標を選択してヒストグラムビジュアライゼーションにドラッグし、「**[!UICONTROL ビルド]**」をクリックします。
 
-![](assets/histogram.png)
+![「以下に指標をドロップ」フィールドを示す空のヒストグラムパネル。](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ ht-degree: 85%
 
 ヒストグラムのデータソースを表示または変更するには、ヒストグラムヘッダーの隣の点をクリックして、 **[!UICONTROL データソース設定]**／**[!UICONTROL データソースを表示]** に移動します。
 
-![](assets/manage-data-source.png)
+![「Show Data Source」と「Lock Selection」が選択された状態の「Data Source Settings」オプション](assets/manage-data-source.png)
 
 テーブルに表示される事前定義済みフィルターは、内部フィルターで、フィルターセレクターには表示されません。フィルター名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックしてフィルターを公開します。
 
-![](assets/prebuilt_segments.png)
+![編集ウィンドウと「公開する」リンクを表示するセグメント。](assets/prebuilt_segments.png)
 
 データを分類するなど、フリーフォームデータテーブルおよびその他のビジュアライゼーションを管理するその他の方法については、[こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja)を参照してください。
 

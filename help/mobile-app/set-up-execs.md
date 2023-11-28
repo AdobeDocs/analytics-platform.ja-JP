@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 76%
+source-wordcount: '717'
+ht-degree: 74%
 
 ---
 
@@ -49,9 +49,9 @@ ht-degree: 76%
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-ダウンロードとインストールが完了すると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにサインインできます。アドビでは、AdobeID と Enterprise/Federated ID の両方をサポートしています。
+ダウンロードしてインストールすると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。AdobeID と Enterprise/Federated ID の両方をサポートしています。
 
-![アプリケーションのスタートアップスクリーン](assets/welcome.png)
+![Adobe Analyticsダッシュボードのようこそ画面](assets/welcome.png)
 
 ## エグゼクティブによるスコアカードへのアクセスの支援
 
@@ -74,7 +74,7 @@ ht-degree: 76%
 
 共有するスコアカードにタイルが表示される仕方をエグゼクティブユーザーに説明します。
 
-![タイルの説明](assets/newexplain.png)
+![選択した日付範囲、セグメントフィルター、指標およびディメンションを含むタイルの説明を実行する](assets/newexplain.png)
 
 ![スコアカードの例](assets/intro_scorecard.png)
 

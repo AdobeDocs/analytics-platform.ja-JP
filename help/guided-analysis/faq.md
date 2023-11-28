@@ -1,12 +1,12 @@
 ---
 title: ガイド付き分析に関する FAQ
 description: ガイド付き分析に関するよくある質問 (FAQ) です。
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分�
 
 * **ガイド付き分析は、イベント中心のエクスペリエンスです。** 各分析は、まずイベントを選択することで開始し、ディメンションとフィルターを追加して、そのイベントデータを絞り込むことができます。
 
-![構造](assets/structure.png)
+![Analysis Workspaceおよびガイド付き分析ビュー](assets/structure.png)
 
 次の例では、Web サイトのホームページに関するデータに焦点を当てています。 チームが類似した質問をしますが、分析のアプローチは異なる場合があります。
 

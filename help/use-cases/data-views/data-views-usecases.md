@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータビューの柔軟性と�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 95%
+source-wordcount: '1382'
+ht-degree: 91%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 95%
 例えば、データビューを作成する場合、文字列の [!UICONTROL pageTitle] スキーマフィールドから [!UICONTROL 注文件数]指標を作成できます。手順は次のとおりです。
 
 1. 「コンポーネント」タブで、[!UICONTROL pageTitle] を「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」セクションにドラッグします。
-   ![](../assets/use-case1a.png)
+   ![コンポーネント名リストの pageTitle を指す矢印付きのスキーマフィールド。](../assets/use-case1a.png)
 1. ドラッグした指標を強調表示し、右側の「[!UICONTROL コンポーネント設定]」の下で名前を変更します。
-   ![](../assets/orders.png)
+   ![コンポーネント設定の下で注文をハイライトするスキーマフィールド。](../assets/orders.png)
 1. 右側の[!UICONTROL 値を含む / 除外する]ダイアログを開き、次の内容を指定します。
-   ![](../assets/orders2.png)
+   ![「値を含める/除外」で「値を含める/除外」と「大文字と小文字を区別」を選択します。](../assets/orders2.png)
 
    「confirmation」フレーズは、これが注文であることを示します。これらの条件が満たされたページタイトルをすべて確認すると、インスタンスごとに「1」がカウントされます。結果は、（計算指標ではなく）新しい指標になります。値を含めた／除外した指標は、他の指標を使用できるすべての場所で使用できます。Attribution IQ、フィルターなど、標準指標を使用できるあらゆる場所で機能します。
 1. [!UICONTROL セッション]を[!UICONTROL ルックバックウィンドウ]として、[!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。
@@ -38,11 +38,11 @@ ht-degree: 95%
 
 1. [!UICONTROL call_length_min] 整数を「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL ディメンション]」セクションにドラッグします。
 
-   ![](../assets/integers.png)
+   ![「Dimension」リストの call_length_mins を指す矢印。](../assets/integers.png)
 
 1. これで、「[!UICONTROL 値のグループ化]」を追加して、このディメンションをグループ化してレポートに表示できます。（グループ化を使用しない場合、このディメンションの各インスタンスはワークスペースレポートに行項目として表示されます）。
 
-   ![](../assets/bucketing.png)
+   ![値グループ（「バケット」の値を選択した状態）](../assets/bucketing.png)
 
 ## 3. フロー図で数値ディメンションを「指標」として使用する {#numeric}
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 1. データビューの「[コンポーネント](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#configure-component-settings) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
 
-![](../assets/flow.png)
+![メールから出口/注文へのマーケティングチャネルのフロー。](../assets/flow.png)
 
 ## 4. サブイベントをフィルタリングする {#sub-event}
 
@@ -82,7 +82,7 @@ f. 値として「50」を指定します。
 
 各指標には、違いを反映した名前を設定するようにしてください（「アルゴリズムによる売上高」など）。
 
-![](../assets/algo-revenue.png)
+![「行動」リストで「カウント」値が選択されたアルゴリズムの売上高。](../assets/algo-revenue.png)
 
 その他のデータビューの設定について詳しくは、「[データビューの作成](/help/data-views/create-dataview.md)」を参照してください。
 データビューの概念的な概要については、「[データビューの概要](/help/data-views/data-views.md)」を参照してください。

@@ -4,9 +4,9 @@ description: どのコンポーネントCustomer Journey Analyticsオファー�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1132'
 ht-degree: 79%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 79%
 次のコンポーネントを管理できます。
 
 * [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
-* [**オーディエンス**](/help/components/audiences/audiences-overview.md):に対するCustomer Journey Analyticsで検出されたオーディエンスを作成して公開 [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCDP) をAdobe Experience Platformで利用し、お客様のターゲティングとパーソナライゼーションをおこなう。
-* [**フィルター**](filters/filters-overview.md):強力で重要なオーディエンスフィルターを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいて個人のサブセットを識別できます。
+* [**オーディエンス**](/help/components/audiences/audiences-overview.md)：に対して検出されたオーディエンスを作成し、公開します。Customer Journey Analytics: [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCDP) をAdobe Experience Platformで利用し、お客様のターゲティングとパーソナライゼーションをおこなう。
+* [**フィルター**](filters/filters-overview.md)：強力で重要なオーディエンスフィルターを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいて個人のサブセットを識別できます。
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
-* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md):ユーザーと管理者の両方が、Analytics 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。
+* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md)：ユーザーと管理者の両方が、Analytics 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。
 * [**日付範囲**](date-ranges/create.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整.
 * [**Dimension**](/help/components/dimensions/view-dimensions.md):Dimensionは、通常、文字列値を含む変数です。 一般的なディメンションには、ページおよび参照ドメインがあります。
-* [**指標**](/help/components/apply-create-metrics.md):Analysis Workspaceでデータポイントを数値化できます。
+* [**指標**](/help/components/apply-create-metrics.md):Analysis Workspaceでデータポイントを定量化できます。
 * [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理.
 
 ## Analysis Workspace のコンポーネント
@@ -36,7 +36,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
 
 コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。左側のパネルのアイコンを使用するか、[ホットキー](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用して、パネル（空白パネル、[フリーフォームパネル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[クイックインサイトパネル](/help/analysis-workspace/c-panels/quickinsight.md)、[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) パネルのいずれか）、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、コンポーネントを切り替えることができます。
 
-![](assets/components.png)
+![コンポーネントアイコン](assets/components.png)
 
 プロジェクトでのコンポーネントの使用については、[ワークスペースプロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
 
@@ -75,7 +75,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
    >   複数のコンポーネントを選択するには、Shift キーを押すか、Command キー（Mac の場合）または Ctrl キー（Windows の場合）を押します。
 
 
-   ![](assets/component-actions.png)
+   ![コンポーネントのアクションリスト](assets/component-actions.png)
 
    | コンポーネントのアクション | 説明 |
    |--- |--- |
@@ -97,7 +97,7 @@ Analysis Workspace の左側のパネルにあるコンポーネントリスト�
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です **フィルター** ![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
+   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です。 **フィルター** ![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します。 ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 3. ドロップダウンリストに表示される場合に、コンポーネントを選択します。
 

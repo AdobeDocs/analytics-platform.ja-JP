@@ -4,10 +4,10 @@ description: どのように Customer Journey Analytics を使用すれば、Exp
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Customer Journey Analytics は、Adobe Experience Platform からのデータと
 
 Customer Journey Analytics の高レベルのアーキテクチャを以下に示します。
 
-![アークテクチャ](assets/cja-architecture.png)
+![Customer Journey Analyticsアーキテクチャについては、この節で説明します。](assets/cja-architecture.png)
 
 次に、Customer Journey Analytics の概要ビデオを示します。
 

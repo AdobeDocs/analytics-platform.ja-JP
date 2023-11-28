@@ -4,10 +4,10 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 84%
+source-wordcount: '3228'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 
 1. Customer Journey Analyticsで、 [!UICONTROL **プロジェクト**] ランディングページで、「 」を選択します。 [!UICONTROL **環境設定を編集**].
 
-   ![ユーザー環境設定](assets/user-preferences.png)
+   ![Workspace プロジェクトビューで、このページで説明した「環境設定を編集」オプションがハイライト表示されます。](assets/user-preferences.png)
 
    または
 
@@ -31,7 +31,7 @@ ht-degree: 84%
 
    * [IMS 組織の環境設定](#ims-organization-preferences)
 
-   * [プロジェクトと分析環境設定](#project-preferences)
+   * [プロジェクトと分析の環境設定](#project-preferences)
 
    * [フリーフォームテーブルの環境設定](#freeform-table-preferences)
 
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 {style="table-layout:auto"}
 
-## プロジェクトと分析環境設定
+## プロジェクトと分析の環境設定
 
 新しいすべてのAnalysis Workspaceプロジェクト、新しいAnalysis Workspaceパネルおよび新しいガイド付き分析に対して、これらの環境設定をカスタマイズできます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
@@ -71,7 +71,7 @@ ht-degree: 84%
 | --- | --- | --- |
 | **表示** | | |
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=ja) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各色は、個別の分類値を表します。 Adobe指定のオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットには、両端が 2 つあり、中央にベースラインが 1 つある数値の意味が表示されます。<li> 順次パレット：頻度のトレンド（積み重ね棒）のガイド付き分析に適用されます。 このパレットには、明るい色から暗い色までの数値の意味が含まれます。</li></ul> |
+| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
 | **データ** | | |
 |  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択した特定のデータビュー</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>カスタム定義範囲</li></ul> |
@@ -111,7 +111,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | 位置で分類 | 項目自体ではなく項目の位置に分類を保持する場合は、このオプションを選択します。分類について詳しくは、[ディメンションの分類](/help/components/dimensions/t-breakdown-fa.md)を参照してください。 |
 | | パーセンテージ計算 | <ul><li>列</li><li>行</li></ul> |
-| | 列の合計（静的な行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
+| | 列の合計（静的行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
 
 ## ビジュアライゼーションの環境設定
 

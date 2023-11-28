@@ -4,10 +4,10 @@ title: 主要指標の概要
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 91%
+source-wordcount: '641'
+ht-degree: 85%
 
 ---
 
@@ -37,14 +37,14 @@ ht-degree: 91%
 
 1. 指標、プライマリ日付範囲、比較日付範囲およびフィルター（必要に応じて）を選択して、ビジュアライゼーションを設定します。
 
-   ![主要指標の設定](assets/key-metric-config.png)
+   ![指標、プライマリ日付範囲、比較日付範囲およびセグメントのオプションを示す主要指標の設定](assets/key-metric-config.png)
 
    | 設定 | 定義 |
    | --- | --- |
    | **[!UICONTROL 指標]** | 調査の対象となる指標を選択します。すべての指標がサポートされています。 |
    | **[!UICONTROL プライマリ日付範囲]** | フリーフォームテーブルの現在の日付範囲。 |
    | **[!UICONTROL 比較日付範囲]** | プライマリ日付範囲の比較対象となる日付範囲。 |
-   | **[!UICONTROL フィルター（オプション）]** | この概要に特に関心のあるフィルター。 |
+   | **[!UICONTROL フィルター (オプション)]** | この概要に特に関心のあるフィルター。 |
 
    {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## 出力の表示
 
-![](assets/key-metric-output.png)
+![指標、変更概要、概要番号、折れ線グラフを示す主要指標出力。](assets/key-metric-output.png)
 
 注意：
 
@@ -89,13 +89,13 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 * ここから、折れ線グラフの上にマウスポインターを置くと、個々の日の統計情報を表示できます。
 
-![統計](assets/key-metric-output2.png)
+![訪問の統計](assets/key-metric-output2.png)
 
 ## ビジュアライゼーション設定
 
 主要指標の概要には柔軟な設定が複数用意されているので、重要な指標に関するレポートとコミュニケーションを改善できます。設定にアクセスするには、ビジュアライゼーションの右上隅にある歯車アイコンを使用します。
 
-![](assets/key-metric-settings.png)
+![「概要」表示タイプ、「一般」および「表示」オプションを示す主要指標の概要設定](assets/key-metric-settings.png)
 
 | 設定 | 説明 |
 | --- | --- |
@@ -116,7 +116,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 1. ビジュアライゼーションの右上隅（設定の歯車アイコンの横）にある鉛筆アイコンをクリックします。
 
-   ![編集](assets/edit-icon.png)
+   ![ビジュアライゼーション編集アイコン](assets/edit-icon.png)
 
    元の設定ビューに戻ります。
 

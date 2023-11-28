@@ -4,9 +4,9 @@ description: アカウントベースのデータをルックアップデータ�
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '821'
 ht-degree: 74%
 
 ---
@@ -33,7 +33,7 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 用に独自のスキーマを作成する [参照](/help/getting-started/cja-glossary.md) テーブルでは、使用するデータセットが、正しい設定（レコードタイプ）でCustomer Journey Analyticsして使用できることを確認します。 ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#create-new-class)することです。
 
-![](../assets/create-new-class.png)
+![[ 新しいクラスを作成 ] ダイアログ。](../assets/create-new-class.png)
 
 ## 2.ルックアップデータセットの作成 (Experience Platform)
 

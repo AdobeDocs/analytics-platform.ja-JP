@@ -3,9 +3,9 @@ description: 計算指標ビルダーを使用して、誰でもパーティシ�
 title: パーティシペーション指標
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '297'
 ht-degree: 6%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 6%
 
    「定義」ボックスで、選択した指標が  **（加入│集会）** を名前に追加します。
 
-   ![](assets/participation-setup.png)
+   ![モデルとして選択されたパーティシペーションと、ルックバックウィンドウ用に選択されたセッションを示す列アトリビューションモデルポップアップ。](assets/participation-setup.png)
 
 
 
 1. 選択 [!UICONTROL **保存**] をクリックして指標を保存します。
 1. レポートで計算指標を使用します。 例えば、計算指標の [!DNL Orders (Session Participation)] （手順 5 で定義した）レポートの指標。注文を含むセッションに貢献した（または関係した）顧客層を示します。
 
-   ![](assets/participation-pages-customer-tier.png)
+   ![顧客層と注文を示すフリーフォームテーブル。](assets/participation-pages-customer-tier.png)
 
 1. （オプション）指標を組織内の他のユーザーと共有します。詳しくは、 [計算指標の共有](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

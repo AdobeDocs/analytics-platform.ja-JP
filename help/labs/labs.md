@@ -4,10 +4,10 @@ description: Customer Journey Analytics 用のプロトタイププロジェク�
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 91%
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 91%
 
 1. [!UICONTROL Workspace]および[!UICONTROL ラボ]へのアクセス権をまだ持っていない場合は管理者に権限を問い合わせてください。
 
-1. Customer Journey Analyticsで、 **[!UICONTROL ラボ]** タブをクリックします。
+1. Customer Journey Analyticsで、 **[!UICONTROL Labs]** タブをクリックします。
 
 ## プロトタイプの評価
 
@@ -55,13 +55,13 @@ ht-degree: 91%
 
 1. 「**[!UICONTROL フィードバックを与える]**」ボタンをクリックすると、プロトタイプの操作中はいつでも、メッセージボックスにフィードバックを入力できます。
 
-   ![feedback_box](assets/give_feedback.png)
+   ![フィードバックウィンドウ](assets/give_feedback.png)
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、フィードバックを送信します。
 
 1. 別のプロトタイプを試す場合、またはプロトタイプ環境を終了する場合は、画面の右上にある「**[!UICONTROL プロトタイプを終了]**」ボタンをクリックして、プロトタイプについての短いアンケートを完了します。プロトタイププロジェクトに対して行った変更は、プロトタイプ環境を終了すると失われます。
 
-   ![新しいフィードバックボックス](assets/short-survey.png)
+   ![インテリジェントパスフィードバックウィンドウ](assets/short-survey.png)
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、メインのプレビューポータルに戻ります。
 

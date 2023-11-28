@@ -5,10 +5,10 @@ title: ディメンションの分類
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Analysis Workspace のディメンションおよびディメンション項目�
 1. データテーブルを使用して[プロジェクトを作成](/help/analysis-workspace/home.md)します。
 1. データテーブルで行項目を右クリックし、**[!UICONTROL 分類]**／*`<item>`*&#x200B;を選択します。
 
-   ![手順の結果](assets/fa_data_table_actions.png)
+   ![選択した項目からアラートを作成を表示する手順の結果。](assets/fa_data_table_actions.png)
 
    選択した期間で、ディメンション項目またはオーディエンスフィルターで指標を分類できます。より詳細なレベルまで、さらに詳しく調べることもできます。
 
@@ -41,7 +41,7 @@ Analysis Workspace のディメンションおよびディメンション項目�
 
 テーブル内の分類には、任意のアトリビューションモデルを適用することもできます。このアトリビューションモデルは、親列と同じ場合と異なる場合があります。例えば、マーケティングチャネルディメンションで線形の注文件数を分析するものの、チャネル内の特定のトラッキングコードには U 字形の注文件数を適用するといったことができます。分類に適用されるアトリビューションモデルを編集するには、その分類モデルの上にマウスポインターを置いて「**[!UICONTROL 編集]**」をクリックするだけです。
 
-![分類の設定](assets/breakdown_settings.png)
+![分類設定を表示した注文属性比較](assets/breakdown_settings.png)
 
 アトリビューションモデルを分類に適用したり編集したりする際に想定される動作です。
 

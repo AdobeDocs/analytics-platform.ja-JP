@@ -4,10 +4,10 @@ description: 従来の Adobe Analytics からデータを取り込む方法を�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 86%
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -53,29 +53,29 @@ Adobe Analytics ソースコネクタを作成するには：
 
 3. Adobe Analytics タイル内で「**[!UICONTROL 設定]**」または「**[!UICONTROL データを追加]**」を選択します。
 
-   ![ソース](./assets/sources-overview.png)
+   ![Adobe Experience Platformウィンドウで、「ソース」が選択され、「Adobe」アプリケーションと「データを追加」がハイライト表示されています。](./assets/sources-overview.png)
 
 4. **[!UICONTROL レポートスイート]**&#x200B;を選択します。レポートスイートのリストから、使用するレポートスイートを選択します。
 
-   ![レポートスイート](./assets/report-suites.png)
+   ![レポートスイートリストを表示するAdobe Experience Platformウィンドウ](./assets/report-suites.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 5. 「**[!UICONTROL デフォルトのスキーマ]**」を[!UICONTROL ターゲットスキーマ]として選択します。Adobe Experience Platform は、選択した Adobe Analytics レポートスイートのすべての標準フィールドをマッピングするために、スキーマと対応するデータセットを自動的に作成します。
 
-   ![デフォルトのスキーマ](./assets/default-schema.png)
+   ![デフォルトスキーマが選択されたAdobe Experience Platformウィンドウ](./assets/default-schema.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 6. データフローに名前を付け、（オプションで）説明を入力します。
 
-   ![データフローの詳細](./assets/dataflow-detail.png)
+   ![「データフローの詳細」セクションをハイライトしたAdobe Experience Platformウィンドウ](./assets/dataflow-detail.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 7. 接続を確認し、「**[!UICONTROL 終了]**」を選択します。
 
-   ![レビュー](./assets/review.png)
+   ![確認用に「接続」セクションと「データタイプ」セクションをハイライトしたAdobe Experience Platformウィンドウ](./assets/review.png)
 
 
 接続が作成されると、データフローが自動的に作成され、レポートスイートのAdobe Analyticsデータがデータセットに入力されます。 データフローは、実稼働サンドボックス用に最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、最大 3 か月に制限されています。
@@ -111,7 +111,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-     ![データセットを追加](./assets/cja-connections-2a.png)
+     ![データセットウィンドウを追加](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
 

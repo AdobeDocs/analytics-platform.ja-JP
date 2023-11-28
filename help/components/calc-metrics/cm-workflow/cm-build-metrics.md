@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 61%
+source-wordcount: '1069'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analyticsには、ディメンション、指標、フィルタ
 
 次の画像と付属の表は、計算指標ビルダーの主な機能と主な機能を説明しています。
 
-![](assets/cm_builder_ui.png)
+![この節で説明する主な領域と機能を示す新しい計算指標ウィンドウ。](assets/cm_builder_ui.png)
 
 | フィールド | 説明 |
 | --- | --- |

@@ -3,10 +3,10 @@ title: 日付範囲を管理
 description: Analysis Workspace で日付範囲を共有、名前変更または削除します。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## インターフェイス
 
-![UI](../assets/date-range-ui.png)
+![「範囲の例」がハイライトされた日付範囲。](../assets/date-range-ui.png)
 
 日付範囲マネージャーには、次のオプションが含まれます。
 

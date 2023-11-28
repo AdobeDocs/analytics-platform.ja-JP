@@ -3,10 +3,10 @@ description: 計算指標マネージャでは、指標を様々な方法で管�
 title: 計算指標マネージャ
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 16%
+source-wordcount: '705'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 16%
 
 計算指標マネージャには、自分が所有しているすべてのフィルターと、自分が共有しているフィルターが表示されます。 管理者レベルのユーザーは、組織内のすべてのカスタム指標を表示できます。この概要では、計算指標マネージャのユーザーインターフェイスと機能について説明します。
 
-![](assets/calc-metric-manager.png)
+![使用可能なフィルターを表示する計算指標ウィンドウ。](assets/calc-metric-manager.png)
 
 ## 計算指標マネージャへのアクセス
 
@@ -26,19 +26,19 @@ ht-degree: 16%
 
 計算指標マネージャでは、次の操作を実行できます。
 
-* [計算指標へのフィルター設定](/help/components/calc-metrics/cm-workflow/cm-filter.md)
+* [計算指標をフィルタリング](/help/components/calc-metrics/cm-workflow/cm-filter.md)
 
-* [計算指標のお気に入りへの登録](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
+* [計算指標をお気に入りに登録](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
 
 * [計算指標の承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 
-* [計算指標のタグ付け](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
+* [計算指標をタグ付け](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
 
 * [計算指標の共有](/help/components/calc-metrics/cm-workflow/cm-sharing.md)
 
 * 計算指標を CSV ファイルに書き出します。
 
-* [計算指標のコピー](/help/components/calc-metrics/cm-workflow/cm-copy.md)
+* [計算指標をコピー](/help/components/calc-metrics/cm-workflow/cm-copy.md)
 
 * 計算指標の削除
 

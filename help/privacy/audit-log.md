@@ -3,10 +3,10 @@ title: 監査ログ
 description: Customer Journey Analytics監査ログの表示と管理方法について説明します。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 67%
+source-wordcount: '825'
+ht-degree: 65%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analyticsで、に移動します。 **[!UICONTROL ツール]**
 
 デフォルトでは、今日と昨日の監査ログが表示されます。
 
-![監査ログ](assets/audit_ui.png)
+![監査ログのハイライト（2022 年 10 月 14 日）と昨日（2022 年 10 月 13 日）。 ](assets/audit_ui.png)
 
 右上の列セレクターに移動して、表示する列を選択できます。
 
@@ -38,7 +38,7 @@ Customer Journey Analyticsで、に移動します。 **[!UICONTROL ツール]**
 
 説明の横にある情報（i）ボタンをダブルクリックします。
 
-![監査ログ](assets/info-button-audit.png)
+![情報ボタンをハイライトした監査ログ。 ](assets/info-button-audit.png)
 
 次の項目が表示されます。
 
@@ -91,7 +91,7 @@ Customer Journey Analyticsで、に移動します。 **[!UICONTROL ツール]**
 
 ファネルアイコン（![フィルター](assets/filter-icon.png)）を選択して、結果を絞り込むのに役立つフィルターコントロールのリストを表示します。選択した各種フィルターに関係なく、最新 1,000 件のレコードのみが表示されます。
 
-![フィルター](assets/filters.png)
+![データ範囲に対して表示されたフィルターを示す監査ログ。](assets/filters.png)
 
 UI の監査イベントには、次のフィルターを使用できます。
 

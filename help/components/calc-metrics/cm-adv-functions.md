@@ -3,9 +3,9 @@ title: リファレンス：高度な関数
 description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3123'
 ht-degree: 98%
 
 ---
@@ -61,11 +61,11 @@ Approximate Count Distinct (dimension)
 
 新しい計算指標「概算顧客数」の定義は次のようになります。
 
-![](assets/approx-count-distinct.png)
+![顧客 ID(eVar1) を示す、国別ユニーク新しいディメンション定義の概算](assets/approx-count-distinct.png)
 
 レポートにおける「概算顧客数」指標の使用方法を次に示します。
 
-![](assets/approx-customers.png)
+![個別訪問者数と概算顧客数を示すフリーフォームテーブル ](assets/approx-customers.png)
 
 ## 超過したユニーク数
 
@@ -225,7 +225,7 @@ N &lt;= 0 の場合、前のすべての行を使用します。この関数は�
 
 >[!NOTE]
 >
->これは、売上高/人物などのレート指標では期待どおりに動作しません。これは、直近の N に対する売上高を合計し、過去の N に対する人を合計して、それらを除算する代わりに、平均率を表します。 代わりに、次の数式を使用してください。
+>これは、売上高/人物などのレート指標では期待どおりに機能しません。直近の N に対する売上高を合計し、過去の N に対する人を合計して、それらを除算する代わりに、平均率を使用します。 代わりに、次の数式を使用してください。
 
 ```
 cumul(revenue)/cumul(person)

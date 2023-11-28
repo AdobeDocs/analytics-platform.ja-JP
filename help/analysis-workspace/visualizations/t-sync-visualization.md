@@ -4,10 +4,10 @@ keywords: Analysis Workspace;ビジュアライゼーションのデータソー
 title: データソースの管理
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 1. データテーブルで、ビジュアライゼーションに関連付けたいセル（データソース）を選択します。
 1. ビジュアライゼーションでタイトルの横にある点をクリックすると、 **[!UICONTROL データソース]** ダイアログが表示されます。「**[!UICONTROL データソースを表示]**」または「**[!UICONTROL 選択をロック]**」を選択します。
 
-   ![](assets/manage-data-source.png)
+   ![次の節で説明するオプションが表示されたデータソースオプションダイアログ。](assets/manage-data-source.png)
 
    ビジュアライゼーションをテーブルセルに同期すると、新しい（非表示の）テーブルと、そのテーブルに同期したビジュアライゼーションのカラーコードが作成されます。
 
@@ -39,10 +39,10 @@ ht-degree: 100%
 
 * 概要のビジュアライゼーションを作成し、作成元となったテーブルのセルにそれをロックすることができます。「データソースを表示」をオンにすると、その情報がテーブルのどこから取得されたかが正確に表示されます。ソースデータの表示が灰色になります。
 
-   ![](assets/data-source2.png)>
+  ![ワークシート内のデータソースの場所。](assets/data-source2.png)>
 * 次に示すように、同一のテーブルに含まれた異なるセルをソースにして、多数のビジュアライゼーションを追加できます。テーブルは上の例と同じですが、ソースとなるセル（および指標）は異なります。
 
-   ![](assets/data-source3.png)>
+  ![複数のセルから取得したビジュアライゼーションを追加したデータソースの場所](assets/data-source3.png)>
 * フリーフォームテーブルまたはコホートテーブルに接続されたビジュアライゼーションがあるかどうかを、左上の点（データソース設定）をクリックすることで確認できます。カーソルを合わせるとリンク済みのビジュアライゼーションが強調表示され、クリックで移動できます。
 
-   ![](assets/linked-visualizations.png)>
+  ![トップページビューのリンクされたビジュアライゼーションをハイライトするデータソース設定。](assets/linked-visualizations.png)>

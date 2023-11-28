@@ -4,10 +4,10 @@ description: ディメンション項目を、値に応じて条件付きで含�
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '303'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 「値を含む／除外」を使用すると、ディメンション項目の値に依存するルールを作成できます。設定した条件を満たさない値は、基になるデータセットにまだデータが存在しているにもかかわらず、存在していないものとして Analysis Workspace で処理されます。
 
-![含む／除外](../assets/include-exclude.png)
+![「以下を含む」の値をハイライト表示したデータビューウィンドウ](../assets/include-exclude.png)
 
 | 設定 | 説明／使用例 |
 | --- | --- |
@@ -26,4 +26,4 @@ ht-degree: 100%
 | [!UICONTROL 一致オペランド] | 一致演算子の適用対象となる一致オペランドを指定できます。<ul><li>**文字列**：テキストフィールド</li><li>**倍精度整数 / 整数**：上向き／下向き矢印付きの数値用テキストフィールド</li><li>**日付**：日の精度の選択（カレンダー）</li><li>**日時**：日付と時間の精度の選択</li></ul> |
 | [!UICONTROL ルールを追加] | 追加の一致演算子およびオペランドを指定できます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

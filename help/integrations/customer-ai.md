@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 49%
+source-wordcount: '980'
+ht-degree: 48%
 
 ---
 
@@ -73,7 +73,7 @@ Customer Journey Analyticsで、 [1 つ以上の接続を作成する](/help/con
 
 Customer Journey Analyticsで、次に進むことができます。 [データビューを作成](/help/data-views/create-dataview.md) 確立した接続の一部として取り込まれたディメンション（スコア、スコア日、確率など）と指標を使用します。
 
-![データビューの作成](assets/create-dataview.png)
+![データビューウィンドウを作成](assets/create-dataview.png)
 
 ## 手順 4：Workspace での CAI スコアのレポート
 

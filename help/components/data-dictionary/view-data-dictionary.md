@@ -4,10 +4,10 @@ title: データ要素の表示
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 48%
+source-wordcount: '362'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 48%
 
    データ要素ウィンドウが表示されます。
 
-   ![data-dictionary.png](assets/data-dictionary.png)
+   ![Dimension、指標、セグメントおよび日付範囲のクイックフィルターを表示するデータ辞書ウィンドウ](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
@@ -31,11 +31,11 @@ ht-degree: 48%
 
 1. （オプション）検索フィールドに、表示するコンポーネントの名前の入力します。
 
-   コンポーネントの種類は、色とアイコンの両方で識別できます。 **Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です **フィルター** ![セグメントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
+   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です。 **フィルター** ![セグメントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します。 ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
 
 {{dd-filter-criteria}}
 
-1. （オプション） **並べ替え** アイコン ![コンポーネントを並べ替えアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)次に、次のいずれかのフィルターオプションを選択して、コンポーネントのリストを並べ替えます。
+1. （オプション）「**並べ替え**」アイコン ![コンポーネントを並べ替えアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択してコンポーネントのリストを並べ替えます。
 
    {{components-sort-options}}
 
@@ -45,4 +45,4 @@ ht-degree: 48%
 
    {{dd-component-information}}
 
-1. （オプション）データディクショナリからAnalysis Workspaceにコンポーネントをドラッグします。
+1. （オプション）データ要素から Analysis Workspace にコンポーネントをドラッグします。

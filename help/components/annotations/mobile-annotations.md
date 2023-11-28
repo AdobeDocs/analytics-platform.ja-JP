@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 91%
 
 ---
 
@@ -29,21 +29,21 @@ ht-degree: 100%
 
 1. **[!UICONTROL 注釈を表示]**&#x200B;を選択し、モバイルスコアカードに注釈を表示します。
 
-   ![](assets/show-annotations.png)
+   ![スコアカードのモバイル注釈オプション。](assets/show-annotations.png)
 
 1. 「注釈を表示」が選択されていることを確認し、**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報と設定]**&#x200B;に移動します。
 
-   ![](assets/project-info-settings.png)
+   ![「注釈を表示」オプションをハイライト表示した、プロジェクト情報および設定のモバイル注釈オプション。](assets/project-info-settings.png)
 
 ## モバイルスコアカードで注釈を表示
 
 注釈を有効にすると、スコアカードビルダーに注釈アイコンが表示されます。注釈は、詳細ビューのグラフとテーブルにのみ表示されます。注釈は、スコアカードのメインタイル表示には表示されません。
 
-![](assets/view-annotations.png)
+![注釈アイコンをハイライト表示するスコアカードビルダー。](assets/view-annotations.png)
 
-注釈アイコンが表示されている場合、ビルダーキャンバスで注釈を完全に表示したり操作したりすることはできません。プレビューモードを使用して、アプリに表示される注釈を表示し、操作します。![](assets/preview-icon.png)
+注釈アイコンが表示されている場合、ビルダーキャンバスで注釈を完全に表示したり操作したりすることはできません。プレビューモードを使用して、アプリに表示される注釈を表示し、操作します。![プレビューアイコン](assets/preview-icon.png)
 
-注釈の色は、ワークスペースで注釈を作成する際に選択します。グレーの注釈は、複数の注釈が存在することを示しています。![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+注釈の色は、ワークスペースで注釈を作成する際に選択します。グレーの注釈は、複数の注釈が存在することを示しています。 ![注釈アイコン](assets/gray-annotations1.png) ![注釈アイコンがハイライト表示されたモバイルスコアカード。](assets/gray-annotations2.png)
 
 ## グラフの注釈を表示
 

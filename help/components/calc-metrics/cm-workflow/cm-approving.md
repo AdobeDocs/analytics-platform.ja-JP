@@ -3,10 +3,10 @@ description: 計算指標マネージャ内では、様々なレベルのアプ�
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 19%
+source-wordcount: '245'
+ht-degree: 18%
 
 ---
 
@@ -34,6 +34,6 @@ ht-degree: 19%
 
 1. 「**[!UICONTROL OK]**」をクリックします。
 
-   リスト内の計算指標の横に承認アイコンがあることに注意します。![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   リスト内の計算指標の横に承認アイコンがあることに注意します。![円内の承認アイコンのチェックマーク。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
 1. （オプション）計算指標マネージャーで計算指標のリストをフィルターして承認済みの指標のみを表示するには、 **フィルター** アイコン、展開 **[!UICONTROL その他のフィルター]**&#x200B;を選択し、「 **[!UICONTROL 承認済み]**.

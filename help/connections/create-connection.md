@@ -4,10 +4,10 @@ description: Customer Journey Analytics で Platform データセットへの接
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
-workflow-type: ht
-source-wordcount: '2797'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '2798'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 1. Customer Journey Analytics で、「**[!UICONTROL 接続]**」タブをクリックします。
 1. **[!UICONTROL 新しい接続を作成]**&#x200B;をクリックします。
 
-   ![接続設定](assets/create-conn1.png)
+   ![無題の接続設定](assets/create-conn1.png)
 
 1. 接続を設定します。
 

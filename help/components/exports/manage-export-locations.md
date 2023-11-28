@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '508'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、編集する場所を選択します。
 
-   ![場所の編集](assets/locations-edit.png)
+   ![「ロケーション」タブとロケーションのリストを示すエクスポートウィンドウ。](assets/locations-edit.png)
 
 1. 「[!UICONTROL **編集**]」を選択します。
 
@@ -71,7 +71,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、削除する 1 つ以上の場所を選択します。
 
-   ![場所の編集](assets/locations-edit.png)
+   ![「ロケーション」タブとロケーションのリストを表示するエクスポートウィンドウ](assets/locations-edit.png)
 
 1. 「[!UICONTROL **削除**]」を選択します。
 
@@ -89,7 +89,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-add.png)
+   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
 
 1. 選択 [!UICONTROL **詳細を表示**] を編集するアカウントに設定します。
 
@@ -105,7 +105,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-add.png)
+   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
 
 1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントキー**].
 
@@ -115,7 +115,7 @@ ht-degree: 6%
 
 1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
 
-   ![アカウントページ](assets/account-add.png)
+   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
 
 1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントを削除**].
 

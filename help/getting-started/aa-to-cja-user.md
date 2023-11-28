@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '1483'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics のいくつかの機能は、業界標準に合わ�
 
 より多くのクロスチャネルデータにアクセスして分析できるようになりました。例えば、これらのデータセットが組織によって取り込まれて、Customer Journey Analytics で使用するデータビューに含まれる場合、複数のチャネルのパフォーマンスを分析するワークスペースプロジェクトを作成できます（以下の「データアーキテクチャの変更」を参照）。
 
-![マルチチャネルビジュアライゼーション](assets/cross-channel.png)
+![マルチチャネルのビジュアライゼーションを表示するデータソース表示](assets/cross-channel.png)
 
 ## データアーキテクチャの変更 {#architecture}
 

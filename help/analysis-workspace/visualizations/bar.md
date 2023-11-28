@@ -3,10 +3,10 @@ description: この棒グラフビジュアライゼーションでは、1 つ�
 title: 棒グラフおよび積み重ね棒グラフ
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '94'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 このビジュアライゼーションでは、1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。
 
-![](assets/bar.png)
+![ページビュー数、訪問回数、入口数、出口数など、複数の指標を表示する仮想棒グラフビジュアライゼーション。](assets/bar.png)
 
 ビジュアライゼーション設定の精度ドロップダウンにより、トレンドビジュアライゼーション（折れ線、棒など）を日別から週別、月別などに変更できます。
 
@@ -24,8 +24,8 @@ ht-degree: 100%
 
 このビジュアライゼーションは棒グラフに似ていますが、系列を表す棒は相互に積み重なっています。
 
-![](assets/bar-stacked.png)
+![複数の指標を表示する積み重ね棒グラフ。](assets/bar-stacked.png)
 
 積み重ね棒グラフのビジュアライゼーションを「100% の積み重ね」に変更する新しい設定が追加されました。
 
-![](assets/stacked_100_percent.png)
+![100%積み重ね棒グラフです。](assets/stacked_100_percent.png)

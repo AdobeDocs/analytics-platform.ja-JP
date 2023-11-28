@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace でカスタム日付範囲を作成
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
@@ -23,15 +23,15 @@ Analysis Workspace でカスタム日付範囲を作成し、時間コンポー�
 
 次のカスタム日付範囲は、方向の変化を示す変更概要ビジュアライゼーションで、「2 ヶ月前」の日付範囲を示します。
 
-![](assets/date-range-two-months-ago.png)
+![2 か月前に「相対日付を使用」が表示された日付範囲ビルダー](assets/date-range-two-months-ago.png)
 
 カスタム日付範囲は、プロジェクトの[!UICONTROL 日付範囲]コンポーネントパネルの最上部に表示されます。
 
-![](assets/date-range-panel-two-months-ago.png)
+![矢印が 2 ヶ月前を指す日付範囲コンポーネントパネル。](assets/date-range-panel-two-months-ago.png)
 
 比較用に、このカスタム日付範囲を、先月プリセットを使用した、カスタムの、月周期の日付範囲の横の列にドラッグできます。変更概要ビジュアライゼーションを追加して、各列から合計を選択し、方向の変化を示します。
 
-![](assets/date-range-two-months-table.png)
+![14.45%の増加を示す変更概要。](assets/date-range-two-months-table.png)
 
 ## 7 日周期の日付範囲の使用
 
@@ -41,7 +41,7 @@ Analysis Workspace でカスタム日付範囲を作成し、時間コンポー�
 
 例えば、1 週間前に終了する 7 日周期の時間帯を指定する日付範囲を作成できます。
 
-![](assets/create_date_range.png)
+![7 日間の変更期間を指定する日付範囲を表示する日付範囲ビルダー。](assets/create_date_range.png)
 
 *`rolling daily`*.を使用します。
 

@@ -2,10 +2,11 @@
 description: 様々なレベルのアプリケーション、特定の部門またはグループに対するフィルターの承認、およびレポートポリシーに合致するフィルターの承認を含むワークフローを設定できます。
 title: フィルターの承認
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 79%
+source-wordcount: '131'
+ht-degree: 72%
 
 ---
 
@@ -25,6 +26,6 @@ ht-degree: 79%
 
    リスト内のフィルターの横には、承認アイコンがあります。
 
-   ![](assets/seg_approved.png)
+   ![100 を超える注文が共有の承認を受けていることを示すフィルターマネージャ。](assets/seg_approved.png)
 
 1. また、「**[!UICONTROL 未承認]**」をクリックすると、承認済みフィルターを未承認にすることもできます。

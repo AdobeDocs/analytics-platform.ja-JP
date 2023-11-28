@@ -3,11 +3,11 @@ title: 注釈を表示
 description: ワークスペースで注釈を表示する方法。
 role: User, Admin
 feature: Components
-exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 86%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 100%
 
 | 日付 | 外観 |
 | --- | --- |
-| **1 日** | ![](assets/single-day.png)<p>注釈の上にマウスポインターを置くと、その詳細が表示されます。また、ペンアイコンを選択して注釈を編集することも、注釈を削除することもできます。<p> ![](assets/hover.png) |
-| **日付範囲** | アイコンが変わり、その上にマウスポインターを置くと、日付範囲が表示されます。<p>![](assets/multi-day.png)<p>折れ線グラフで選択すると、注釈のメタデータが表示され、それを編集または削除できます。            ![](assets/multi-hover.png)<p>テーブルでは、日付範囲のすべての日付にアイコンが表示されます。<p>![](assets/multi-day-table.png) |
-| **重複する注釈** | 複数の注釈が関連付けられている日のアイコンはグレーになります。<p>![](assets/grey.png)<p>グレーのアイコンの上にマウスポインターを置くと、重複するすべての注釈が表示されます。<p>![](assets/overlap.png) |
+| **1 日** | ![強調表示された注釈を含む新しいグラフのビジュアライゼーション](assets/single-day.png)<p>注釈の上にマウスポインターを置くと、その詳細が表示されます。また、ペンアイコンを選択して注釈を編集することも、注釈を削除することもできます。<p> ![注釈の詳細と、注釈を編集または削除するオプション。](assets/hover.png) |
+| **日付範囲** | アイコンが変わり、その上にマウスポインターを置くと、日付範囲が表示されます。<p>![日付範囲注釈アイコン](assets/multi-day.png)<p>折れ線グラフで選択すると、注釈のメタデータが表示され、それを編集または削除できます。            ![](assets/multi-hover.png)<p>テーブルでは、日付範囲のすべての日付にアイコンが表示されます。<p>![](assets/multi-day-table.png) |
+| **重複する注釈** | 複数の注釈が関連付けられている日のアイコンはグレーになります。<p>![重複する注釈の詳細  ](assets/grey.png)<p>グレーのアイコンの上にマウスポインターを置くと、重複するすべての注釈が表示されます。<p>![](assets/overlap.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## .pdf ファイルで注釈を表示
 
 .pdf ファイルのアイコンにカーソルを合わせることができないため、このファイル（エクスポート後）では、パネルの下部に説明のメモが表示されます。次に例を示します。
 
-![](assets/ann-pdf.png)
+![注釈の説明を示す.pdf ファイルのハイライト表示。](assets/ann-pdf.png)
 
 ## トレンドのないデータを含む注釈の表示
 
@@ -39,4 +39,4 @@ ht-degree: 100%
 
 概要グラフは、トレンドのないフリーフォームテーブルおよび要約数値だけでなく、すべてのビジュアライゼーションのタイプの隅に表示されます。また、[!UICONTROL ドーナツ]、[!UICONTROL フロー]、[!UICONTROL フォールアウト]、[!UICONTROL コホート]などのビジュアライゼーションにも表示されます。
 
-![](assets/ann-summary.png)
+![ビジュアライゼーションの概要グラフ](assets/ann-summary.png)

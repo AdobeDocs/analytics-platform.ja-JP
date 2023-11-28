@@ -1,15 +1,16 @@
 ---
 description: タグ、データビュー、所有者およびその他のフィルター（すべてを表示、自分が所有、自分と共有、お気に入りおよび承認済み）でフィルタリングします。
-title: 計算指標へのフィルター設定
+title: 計算指標をフィルタリング
 feature: Calculated Metrics
-source-git-commit: 59b120022fcb149e6bfcab0039efc5a802995b92
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 29%
+source-wordcount: '216'
+ht-degree: 30%
 
 ---
 
-# 計算指標へのフィルター設定
+# 計算指標をフィルタリング
 
 タグ、所有者およびその他のフィルター（すべてを表示、自分が所有、自分と共有、お気に入りおよび承認済み）でフィルタリングします。
 
@@ -19,7 +20,7 @@ ht-degree: 29%
 
 1. 計算指標マネージャで、 **[!UICONTROL フィルター]** アイコン：  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![フィルターアイコンと、タグ、レポートスイート、所有者などの使用可能なフィルターを表示する計算指標マネージャー。](assets/filtering.png)
 
 1. 次のフィルターを使用できます。
 
