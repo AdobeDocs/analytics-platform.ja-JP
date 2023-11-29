@@ -4,7 +4,7 @@ description: ユーザーエンゲージメントの推移を測定します.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 2%
@@ -45,7 +45,7 @@ The [!UICONTROL 使用状況] 表示では、次のグラフ設定を利用で�
 
 グラフにデータを追加します。 グラフに複数の系列が表示されている場合、オーバーレイはカーソルを合わせたときにのみ表示されます。
 
-* **[!UICONTROL 異常値検出]**：実行 [異常値検出](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) トレンド分析で使用できます。 外れ値はドットとして表示され、詳細を確認するには上にマウスポインターを置きます。
+* **[!UICONTROL 異常値検出]**：実行 [異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) トレンド分析で使用できます。 外れ値はドットとして表示され、詳細を確認するには上にマウスポインターを置きます。
 * **[!UICONTROL トレンドラインオーバーレイ]**：データにより明確なパターンを表現するのに役立つ、トレンドラインをグラフに追加します。
    * [!UICONTROL 線形]：直線回帰線を作成します。 定常速度で増減する単純な線形データに最適です。 数式：`y = a + b * x`
    * [!UICONTROL 対数]：曲線回帰線を作成します。 データの増加や減少が速いと、レベルが高くなるのに最適です。 数式：`y = a + b * log(x)`

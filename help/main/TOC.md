@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
+source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 81%
+source-wordcount: '1046'
+ht-degree: 82%
 
 ---
 
@@ -167,12 +167,10 @@ ht-degree: 81%
       + [ダウンロード](../analysis-workspace/export/download-send.md)
       + [他のユーザーに送信](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドにエクスポート](../analysis-workspace/export/export-cloud.md)
-   + 仮想アナリスト {#virtual-analyst}
-      + [仮想アナリストの概要](../analysis-workspace/virtual-analyst/overview.md)
-      + 異常値検出 {#anomaly-detection}
-         + [異常値検出の概要](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Analysis Workspace での異常値の表示](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [異常値検出で使用される統計的手法](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + 異常値検出 {#anomaly-detection}
+      + [異常値検出の概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Analysis Workspace での異常値の表示](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [異常値検出で使用される統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
@@ -203,7 +201,7 @@ ht-degree: 81%
       + [リリース表示](../guided-analysis/types/release.md)
       + [初回使用ビュー](../guided-analysis/types/first-use.md)
    + リテンション {#retention}
-      + [保持率](../guided-analysis/types/retention-rates.md)
+      + [リテンション率](../guided-analysis/types/retention-rates.md)
    + [業界の使用例](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
@@ -251,11 +249,11 @@ ht-degree: 81%
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-         + [計算指標へのフィルター設定](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [計算指標のお気に入りへの登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
-         + [計算指標のコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
+         + [計算指標をフィルタリング](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [計算指標をお気に入りに登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [計算指標をコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [計算指標のタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [計算指標をタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [計算指標マネージャー](../components/calc-metrics/cm-workflow/cm-manager.md)

@@ -5,8 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
-workflow-type: ht
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Customer Journey Analytics は、数百または数千のサーバーに分析�
 
 これらのビジュアライゼーションコンポーネントに組み込まれているスマート機能を以下に示します。
 
-* 予測アルゴリズムと機械学習を使用して、データの異常な動作を引き起こしている原因に関するインサイトを提供する、[異常値検出](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)などの&#x200B;**仮想アナリスト機能**。
+* 予測アルゴリズムと機械学習を使用して、データの異常な動作を引き起こしている原因に関するインサイトを提供する、[異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)などの&#x200B;**仮想アナリスト機能**。
 
 * [フロー図](/help/analysis-workspace/visualizations/c-flow/flow.md)、[アトリビューションパネル](/help/analysis-workspace/c-panels/attribution.md)、[フォールアウト図](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[ディメンション分類](/help/components/dimensions/t-breakdown-fa.md)など、カスタマージャーニーのインサイトに特に焦点を当てた&#x200B;**アドバンス分析機能**。標準のビジュアライゼーションの例を以下に示します。
 
