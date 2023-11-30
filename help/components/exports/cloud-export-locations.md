@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1510'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 1. を選択します。 [!UICONTROL **場所**] 「 」タブで、「 [!UICONTROL **場所を追加**].
 
-   ![場所を追加ボタン](assets/location-add.png)
+   ![[ 場所の追加 ] ボタンを強調表示した [ 場所 ] タブが選択された状態で、書き出しウィンドウ](assets/location-add.png)
 
    または
 

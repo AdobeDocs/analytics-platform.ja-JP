@@ -3,7 +3,7 @@ title: フリーフォームテーブル
 description: フリーフォームテーブルは、Workspace のデータ分析の基盤となっています。
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 91%
@@ -20,7 +20,7 @@ Analysis Workspaceでは、フリーフォームテーブルはインタラク�
 
 テーブルを最もすばやく作成するには、空のプロジェクト、パネル、またはフリーフォームテーブルにコンポーネントを直接ドロップします。推奨される形式のフリーフォームテーブルが自動的に作成されます。[こちら](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=ja)から、チュートリアルをご覧ください。
 
-![訪問回数コンポーネントが作業領域にドロップされた新しいパネル。](assets/automated-table.png)
+![訪問回数コンポーネントが作業スペースにドロップされた新しいパネル。](assets/automated-table.png)
 
 ## フリーフォームテーブルビルダー
 

@@ -4,10 +4,10 @@ description: どのコンポーネントCustomer Journey Analyticsオファー�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 79%
+source-wordcount: '1146'
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
 
 コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。左側のパネルのアイコンを使用するか、[ホットキー](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用して、パネル（空白パネル、[フリーフォームパネル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[クイックインサイトパネル](/help/analysis-workspace/c-panels/quickinsight.md)、[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) パネルのいずれか）、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、コンポーネントを切り替えることができます。
 
-![コンポーネントアイコン](assets/components.png)
+![左側のパネルでコンポーネントアイコンをハイライトする Workspace パネル](assets/components.png)
 
 プロジェクトでのコンポーネントの使用については、[ワークスペースプロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
 
@@ -75,7 +75,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
    >   複数のコンポーネントを選択するには、Shift キーを押すか、Command キー（Mac の場合）または Ctrl キー（Windows の場合）を押します。
 
 
-   ![コンポーネントのアクションリスト](assets/component-actions.png)
+   ![タグ、お気に入り、承認、共有、削除を表示するコンポーネントのアクションリスト。](assets/component-actions.png)
 
    | コンポーネントのアクション | 説明 |
    |--- |--- |
