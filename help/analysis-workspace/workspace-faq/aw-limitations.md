@@ -3,10 +3,10 @@ description: AdobeAnalysis Workspaceとその関連コンポーネントに関�
 title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 84%
+source-wordcount: '320'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 84%
 * フィルターをテーブルの行として使用すると、「選択から指標を作成」が無効になります。また、「選択から指標を作成」は、日付順の列には適用しないでください。
 * 分類行の条件付き書式では、カスタム範囲を使用することはできません。
 * 行の値を合計して合計を計算する設定が適用されている場合は、テーブルの合計行をトレンド表示できません（通常は静的な行項目で使用されます）。
-* [!UICONTROL 貢献度分析]は、[!UICONTROL 毎日]の精度でのみ&#x200B;_実行_&#x200B;できます。[!UICONTROL 時間別]、[!UICONTROL 週別]などのデータに対して実行することはできません。
 
 ## ビジュアライゼーション
 
