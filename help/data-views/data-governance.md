@@ -4,9 +4,9 @@ description: Adobe Experience Platform で定義されたデータラベルと�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 再度、左側のパネルの&#x200B;**[!UICONTROL データガバナンス]**&#x200B;下の [!UICONTROL フィルター] アイコン、「**[!UICONTROL ポリシー]**」の順にクリックします。
 
-![「Analytics を適用」が選択されているリストを使用して、含まれるコンポーネントをフィルタリングします](assets/filter-policies.png)
+![「Analytics を適用」が選択されていることを示すリストで含まれるコンポーネントをフィルタリングする](assets/filter-policies.png)
 
 「**[!UICONTROL 適用]**」をクリックし、有効になっているポリシーを確認します。
 
@@ -67,7 +67,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 これらのコンポーネントは、左側のパネルの[!UICONTROL スキーマフィールド]リストでグレー表示されます。
 
-![データの使用を制限するこのフィールドにポリシーが適用されていることを示す、灰色表示のコンポーネントとポリシーメッセージ](assets/component-greyed.png)
+![グレー表示されたコンポーネントと、データの使用を制限するポリシーがこのフィールドに適用されていることを示すポリシーメッセージ](assets/component-greyed.png)
 
 また、ブロックされたフィールドがあるデータビューは保存できません。
 
