@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
+source-git-commit: 9b51a28ca2d387aabd3ffde651eed6c37d28baa0
 workflow-type: tm+mt
-source-wordcount: '2966'
-ht-degree: 94%
+source-wordcount: '2737'
+ht-degree: 90%
 
 ---
 
@@ -20,11 +20,12 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年12月** | |
+| 通貨コンバージョンの更新 | 次の方法に関するドキュメントを明確にしました。 [通貨コンバージョンの設定](/help/data-views/component-settings/format.md). |
 | 異常値検出ドキュメントの更新 | 異常値検出のドキュメントは、以前、仮想アナリストに関する節に配置されていました。 次の変更が加えられました。 <ul><li>Virtual Analyst という用語はドキュメントから削除されました。</li><li>に関する節 [異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) は、Analysis Workspaceセクションのすぐ下に移動されました。</li></ul> |
 | **2023年10月** | |
 | 目標/ターゲットの設定に派生フィールドを使用 | 追加済み [使用例](../use-cases/goals-using-derived-fields.md) 目標/ターゲットの設定とレポートに派生フィールドを使用する方法を示す記事。 |
-| 完全なテーブルをクラウドに書き出し | 数百万行の Workspace 行を含む完全なテーブルをクラウドの宛先に書き出す方法に関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） |
-| レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、ピーク時のレポート作成時の処理能力に関する問題を簡単に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[Activity Manager のレポートの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
+| 完全なテーブルをクラウドにエクスポート | 数百万行の Workspace 行を含む完全なテーブルをクラウドの宛先に書き出す方法に関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） |
+| レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。このレポートは、レポートの消費状況を詳細に把握し、ピーク時のレポート作成時に容量の問題を簡単に診断して修正できるように管理者に提供します。</p> <p>次の新しい記事が追加されました。<ul><li>[Activity Manager のレポートの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理ページの新しい列 | で使用できるようになった新しい列の説明 [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) そして [フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja). |
 | Adobe Analytics との比較 | 追加された [概要ページ](../getting-started/aa-vs-cja/overview.md) Customer Journey AnalyticsとAdobe Analyticsの違いの比較と理解に関する概要。 |
 | その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数に置き換えます。 |
@@ -115,7 +116,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年8月 | [Customer Journey Analytics のアクセス制御](/help/admin/cja-access-control.md)に関する記事の大幅な更新。 |
 | 2022年8月 | [Customer Journey Analytics でのデータガバナンスラベルおよびポリシーのサポート](/help/data-views/data-governance.md)に関する新しい記事。 |
 | 2022年8月 | [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](/help/getting-started/aa-vs-cja/terminology.md)に関する新しい記事。 |
-| 2022年8月 | [リアルタイム顧客プロファイルへのオーディエンス公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=ja)に関する新しいドキュメント。 |
+| 2022年8月 | に関する新しいドキュメント [リアルタイム顧客プロファイルへのオーディエンスの公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=ja). |
 | **2022年7月** | |
 | 2022年7月 | [メディア再生滞在時間パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja)に関するドキュメント。 |
 | 2022年7月 | [メディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja)に関するドキュメント。 |
@@ -123,13 +124,13 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2022年6月** | |
 | 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=ja)に関する新しい記事。 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事。 |
-| 2022年6月 | [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)に関する新しい記事。 |
+| 2022年6月 | に関する新しい記事を追加しました。 [仮想レポート環境とサンドボックス環境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | 2022年6月 | [Adobe Analytics と Customer Journey Analytics のレポート機能におけるデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)に関する新しい記事。 |
-| 2022年6月 | [レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)に関する新しい記事。 |
-| 2022年6月 | [モバイルスコアカードでの注釈の共有](/help/components/annotations/mobile-annotations.md)に関する新しい記事。 |
+| 2022年6月 | に関する新しい記事を追加しました。 [様々なスキーマでのレポートスイートの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md). |
+| 2022年6月 | に関する新しい記事を追加しました。 [モバイルスコアカードでの注釈の共有](/help/components/annotations/mobile-annotations.md). |
 | 2022年6月 | [Customer Journey Analytics の Analytics ラボ](/help/labs/labs.md)に関する新しい記事。 |
-| 2022年6月 | [ルックアップキーおよびルックアップ値としての数値フィールドの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#numeric)に関する新しい節。 |
-| 2022年6月 | [フロービジュアライゼーションワークフロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)を更新。 |
+| 2022年6月 | に関する新しい節 [ルックアップキーおよびルックアップ値としての数値フィールドのサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#numeric). |
+| 2022年6月 | の更新 [フロービジュアライゼーションワークフロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md). |
 | **2022年5月** | |
 | 2022年5月 | Customer Journey Analytics での[接続の作成](/help/connections/create-connection.md)に関する記事の大幅な更新。 |
 | 2022年5月 | [Customer Journey Analytics の Report Builder におけるデータブロックの管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja)方法に関する新しい記事。 |

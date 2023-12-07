@@ -4,16 +4,16 @@ description: レポートでのディメンションまたは指標の動作を�
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 94%
+source-wordcount: '312'
+ht-degree: 90%
 
 ---
 
 # 動作コンポーネントの設定
 
-動作の設定は、ディメンションと指標の両方で使用できます。使用可能な設定は、コンポーネントタイプやスキーマデータタイプによって異なります。
+動作の設定は、ディメンションと指標の両方で使用できます。設定の使用可否は、コンポーネントタイプとスキーマデータタイプによって異なります。
 
 ![動作の設定](../assets/behavior-settings.png)
 
@@ -25,11 +25,11 @@ ht-degree: 94%
 
 {style="table-layout:auto"}
 
-![大文字と小文字を区別するディメンション](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >ルックアップデータセットディメンションで [!UICONTROL 小文字] を有効にした場合、同じ識別子に対して複数のルックアップ値が存在する可能性があります。この競合が発生した場合、Customer Journey Analyticsは最初の ASCII 照合値を使用します（大文字の値は小文字の値よりも優先されます）。 アドビでは、 [!UICONTROL 小文字] が有効になっている場合、同じ値を含むルックアップデータセットの使用はお勧めしません。
+
+![大文字と小文字を区別するディメンション](../assets/case-sens-workspace.png)
 
 ## 指標の動作の設定
 
