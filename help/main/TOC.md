@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+source-git-commit: 3d53fbcfea341f0cf9c1cf7da5296565eafff0f9
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 82%
+source-wordcount: '1045'
+ht-degree: 80%
 
 ---
 
@@ -200,7 +200,7 @@ ht-degree: 82%
    + 影響 {#impact}
       + [リリース表示](../guided-analysis/types/release.md)
       + [初回使用ビュー](../guided-analysis/types/first-use.md)
-   + リテンション {#retention}
+   + 定着 {#retention}
       + [リテンション率](../guided-analysis/types/retention-rates.md)
    + [業界の使用例](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
@@ -266,7 +266,7 @@ ht-degree: 82%
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
-   + 書き出し {#exports}
+   + エクスポート {#exports}
       + [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)
       + [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md)
       + [クラウドの書き出し場所の管理](/help/components/exports/manage-export-locations.md)
@@ -343,6 +343,7 @@ ht-degree: 82%
    + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
+      + [データフィードのエミュレート](../use-cases/emulating-data-feeds.md)
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
    + 派生フィールド {#derived-fields}
