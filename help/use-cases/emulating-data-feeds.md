@@ -5,42 +5,42 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
+source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 4%
+source-wordcount: '2555'
+ht-degree: 17%
 
 ---
 
 # データフィード機能のエミュレート
 
-Adobe Analyticsのデータフィードは、Adobe Analyticsから生データを取得するための強力な方法です。 この使用例では、Experience Platformから類似したタイプの生データを取得し、Adobe以外の他のプラットフォームおよび組織の裁量で使用する方法を説明します。
-
-## 前提条件
-
-この使用例で説明する機能を使用する前に、次の要件をすべて満たしていることを確認してください。
-
-* オンラインとオフラインのデータをExperience Platformのデータレイクに送信する実装。
-* プラットフォームベースのアプリケーションまたは Data Distillerアドオンの一部としてパッケージ化されたクエリサービスへのアクセス。 詳しくは、 [クエリサービスのパッケージ化](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) を参照してください。
-* データセットのエクスポート機能へのアクセス。Real-Time CDP Prime または Ultimate パッケージ、Adobe Journey Optimizer、またはCustomer Journey Analyticsを購入したお客様が利用できます。 詳しくは、 [クラウドストレージの宛先へのデータセットの書き出し](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja) を参照してください。
-* データフィードの生データを書き出すために設定された、1 つ以上の宛先 ( 例：Amazon S3、Google Cloud Storage)。
+Adobe Analyticsのデータフィードは、Adobe Analyticsから生データを取得するための強力な方法です。 この使用例では、Experience Platformから類似したタイプの生データを取得する方法を説明します。これにより、他のプラットフォーム、Adobe以外のツール、組織の裁量でデータを使用できます。
 
 ## はじめに
 
 Adobe Analyticsデータフィードのエミュレートには、次のものが含まれます。
 
-* 定義 **スケジュール済みクエリ** を使用して、データフィードのデータを出力データセットとして生成します。 **クエリサービス**.
+* 定義 **スケジュール済みクエリ** データフィードのデータを出力データセットとして生成する ![出力データセット](assets/output-dataset.svg)，次を使用 **クエリサービス**.
 * 定義 **スケジュール済みのデータセットの書き出し** を使用して出力データセットをクラウドストレージの宛先に書き出す **データセットの書き出し**.
-
 
 ![データフィード](assets/data-feed.svg)
 
 
+## 前提条件
+
+この使用例で説明する機能を使用する前に、次の要件をすべて満たしていることを確認してください。
+
+* データをデータレイクに収集するExperience Platform実装。
+* Data Distillerアドオンにアクセスして、バッチクエリを実行する権利をユーザーに付与する。 詳しくは、 [クエリサービスのパッケージ化](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) を参照してください。
+* データセットの書き出し機能へのアクセス (Real-Time CDP Prime、Ultimate パッケージ、Adobe Journey Optimizer、Customer Journey Analyticsの購入時に使用可能 )。 詳しくは、 [クラウドストレージの宛先へのデータセットの書き出し](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja) を参照してください。
+* データフィードの生データを書き出すために設定された、1 つ以上の宛先 ( 例：Amazon S3、Google Cloud Storage)。
+
+
 ## クエリサービス
 
-Experience Platformクエリサービスを使用すると、Experience Platformデータレイク内の任意のデータセットを、データベーステーブルと同じようにクエリして結合できます。 その後、結果を新しいデータセットとして取り込み、レポートでさらに使用したり、書き出したりできます。
+Experience Platformクエリサービスを使用すると、データベーステーブルであるかのように、Experience Platformデータレイク内の任意のデータセットをクエリして結合できます。 その後、結果を新しいデータセットとして取り込み、レポートでさらに使用したり、書き出したりできます。
 
-クエリサービスを使用する [ユーザーインターフェイス](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), a [PostgresSQL プロトコルを使用して接続されたクライアント](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=ja)または [RESTful API](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) ：データフィードのデータを収集するクエリを作成し、スケジュールを設定します。
+クエリサービスを使用する [ユーザーインターフェイス](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), a [PostgresQL プロトコルを使用して接続されたクライアント](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=ja)または [RESTful API](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) ：データフィードのデータを収集するクエリを作成し、スケジュールを設定します。
 
 ### クエリを作成
 
@@ -52,211 +52,80 @@ SELECT 文およびその他の制限付きコマンドに対して、標準 ANS
 * [準備済み文書](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
-#### 例
-
-データフィードのデータを収集するクエリの例を以下に示します。 以下の例では、 `demo_system_event_dataset_for_website_global_v1_1` を、顧客が web サイトとやり取りする際に収集したデータを含むサンプルエクスペリエンスイベントデータセットとして使用する。
-
-+++トップ 5 の製品
-
-*Web サイトで閲覧された上位 5 つの製品は何ですか。*
-
-```sql
-select productListItems.name, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
-```
-
-+++
-
-+++製品インタラクションファネル
-
-*Web サイト全体での様々な製品インタラクションは何ですか。*
-
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
-
-+++
-
-+++人々の行動
-
-*セッションの 3 番目のページとして、「サービスのキャンセル」ページに到達する前に、人々はサイト上で何をしますか？*
-
-このクエリでは、Adobe定義関数を使用 `SESS_TIMEOUT` および `NEXT`.
-
-* `SESS_TIMEOUT()` は、Adobe Analytics で見つかった訪問のグループ化を再現します。時間ベースのグループ化と同様の動作を実行しますが、パラメーターはカスタマイズ可能です。
-* `NEXT()` および `PREVIOUS()` は、顧客がサイトをどのように移動したかを理解するのに役立ちます。
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a._sampleorg.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30)
-                       OVER (PARTITION BY a._sampleorg.identification.core.ecid
-                             ORDER BY timestamp
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a._sampleorg.identification.core.ecid in (
-                select b._sampleorg.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-+++
-
-+++時間
-
-*「サービスのキャンセル」ページにアクセスした後、訪問者がコールセンターに電話をかけるまでにどのくらいの時間がありますか。*
-
-この種のクエリに回答するには、 `TIME_BETWEEN_NEXT_MATCH()` Adobe定義関数。 前の一致と次の一致の間の時間関数は、特定のインシデントから経過した時間を測定する新しいディメンションを提供します。
-
-```sql
-select * from (
-       select _sampleorg.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-+++
-
-+++結果は何ですか？
-
-*コールセンターに電話をかけるお客様の結果は何ですか。*
-
-このクエリの場合、 `demo_system_event_dataset_for_website_global_v1_1` データセットが例と結合されている `demo_system_event_dataset_for_call_center_global_v1_1` コールセンターのインタラクションを含むデータセット。
-
-```sql
-select distinct r.*,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callFeeling,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callTopic,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select _sampleorg.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c._sampleorg.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c._sampleorg.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-+++
-
-+++マーケティングチャネルのエンゲージメント (Adobe Analyticsデータ )
-
-*イタリアに焦点を当てた Web トラフィックに対するマーケティングチャネル全体でのエンゲージメントはどのようなものですか？*
-
-この例では、Adobe Analyticsソースコネクタによって自動的に作成されたデータセットを使用します。例えば、 `demo_data_sample_org_midvalues`.
-
-```sql
-select 
-    channel.typeAtSource, count(*) 
-from 
-    demo_data_sample_org_midvalues 
-where 
-    (channel.typeAtSource IS NOT NULL
-and
-    web.webPageDetails.URL LIKE '%/it/it/%')
-group by 
-    channel.typeAtSource
-order by 2 desc;
-```
-
-+++
-
-その他の（高度な）サンプルクエリについては、 [離脱した参照](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en), [アトリビューション分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en), [ボットフィルタリング](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)、 、および「クエリサービスガイド」のその他の例。
-
-
 #### ID
 
-Experience Platformでは、様々な ID を使用できます。 ID に対して正しくクエリを実行していることを確認します。 上記の例では、ECID は、コアオブジェクトの一部として定義されます。これ自体は識別オブジェクトの一部で、両方とも、エクスペリエンスイベントコアフィールドグループを使用してスキーマに追加されます ( 例： `_sampleorg.identification.core.ecid`) をクリックします。 ECID は、スキーマ内で別々に整理される場合があります。
+Experience Platformでは、様々な ID を使用できます。 クエリを作成する場合は、ID に対して正しくクエリを実行していることを確認します。
+
+多くの場合、ID は別のフィールドグループで見つかります。 実装 ECID(`ecid`) は、 `core` それ自体が一部であるオブジェクト `identification` オブジェクト。 ( 例： `_sampleorg.identification.core.ecid`) をクリックします。 ECID は、スキーマ内で別々に整理される場合があります。
 
 または、 `identityMap` をクリックして id をクエリします。 このオブジェクトのタイプはです `Map` とは、 [ネストされたデータ構造](#nested-data-structure).
 
-Adobe Analyticsソースコネクタを使用して取り込まれたデータの場合は、複数の ID を使用できる場合があります。 主な識別子は、ECID または AAID のどちらが存在するかによって異なります。 詳しくは、 [Adobe Analyticsデータのプライマリ識別子](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) および [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=ja) 詳細情報
 
 #### データフィード列
 
-クエリで使用できるフィールド（列）は、データセットの基となるスキーマ定義によって異なります。 データセットの基になるスキーマを理解していることを確認します。
+クエリで使用できる XDM フィールドは、データセットの基となるスキーマ定義に応じて異なります。 データセットの基になるスキーマを理解していることを確認します。
 
-例えば、 [クエリの例](#examples) あなたは問い合わせました *ページ名*.
+データフィード列と XDM フィールド間のマッピングを容易にするには、 [Adobe Analytics ExperienceEvent テンプレート](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) フィールドグループを作成します。 詳しくは、 [データモデリングのベストプラクティス](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 具体的には [Adobeアプリケーションスキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+
+例えば、 *ページ名* をデータフィードの一部として使用する場合：
 
 * Adobe Analyticsデータフィードの UI で、次のように選択します。 **[!UICONTROL pagename]** をデータフィード定義に追加する列として使用します。
-* クエリサービスで、以下を含めます。 `web.webPageDetails.name` から `demo_system_event_dataset_for_website_global_v1_1` データセット ( **デモシステム — Web サイトのイベントスキーマ (Gobal v1.1)** エクスペリエンスイベントスキーマ ) をクエリに含める必要があります。 詳しくは、 [Web 詳細スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) を参照してください。
+* クエリサービスで、以下を含めます。 `web.webPageDetails.name` から `sample_event_dataset_for_website_global_v1_1` データセット ( **Web サイト用のサンプルイベントスキーマ (Gobal v1.1)** エクスペリエンスイベントスキーマ ) をクエリに含める必要があります。 詳しくは、 [Web 詳細スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) を参照してください。
 
-エクスペリエンスイベントデータセットと基になるスキーマの以前のAdobe Analyticsデータ列と XDM フィールドのマッピングについて詳しくは、 [Analytics フィールドのマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja) そして [Adobe Analytics ExperienceEvent Full Extension スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) を参照してください。
+エクスペリエンスイベントデータセットと基になるスキーマの以前のAdobe Analyticsデータフィード列と XDM フィールドのマッピングについて詳しくは、 [Analytics フィールドのマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja) そして [Adobe Analytics ExperienceEvent Full Extension スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) を参照してください。
 
-さらに、Experience PlatformWeb SDK が（初期設定で）自動的に収集する情報は、クエリの列を識別するのにも関連する場合があります。 詳しくは、 [自動的に収集された情報](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) を参照してください。
+さらに、 [Experience PlatformWeb SDK によって自動的に収集された情報（初期設定の状態）](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) は、クエリの列を識別するのに関連する場合があります。
 
+#### ヒットレベルのデータと識別
+
+実装に基づいて、従来Adobe Analyticsで収集されていたヒットレベルのデータは、タイムスタンプ付きのイベントデータとしてExperience Platformに保存されるようになりました。 次の表は、 [Analytics フィールドマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) およびでは、ヒットレベル固有のAdobe Analyticsデータフィード列を、クエリ内の対応する XDM フィールドにマッピングする方法の例を示します。 また、この表は、XDM フィールドを使用してヒット、訪問および訪問者を識別する方法の例も示しています。
+
+| データフィード列 | XDM フィールド | タイプ | 説明 |
+|---|---|---|---|
+| hitid_high + hitid_low | _id | string | ヒットを識別する一意の ID。 |
+| hitid_low | _id | string | hitid_high と組み合わせて使用し、ヒットを一意に識別します。 |
+| hitid_high | _id | string | hitid_high と組み合わせて使用し、ヒットを一意に識別します。 |
+| hit_time_gmt | receivedTimestamp | string | ヒットのタイムスタンプ（UNIX 時間）。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | 訪問者の本当に最初のヒットのタイムスタンプ（UNIX 時間）。 |
+| cust_hit_time_gmt | タイムスタンプ | string | タイムスタンプが有効なデータセットでのみ使用されます。Unix 時間に基づいて送信されるタイムスタンプです。 |
+| visid_high + visid_low | identityMap | オブジェクト | 訪問の一意の ID。 |
+| visid_high + visid_low | endUserIDs._experience.aaid.id | string | 訪問の一意の ID。 |
+| visid_high | endUserIDs._experience.aaid.primary | ブール型 | visid_low と組み合わせて使用し、訪問を一意に識別します。 |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | visid_low と組み合わせて使用し、訪問を一意に識別します。 |
+| visid_low | identityMap | オブジェクト | visid_high と組み合わせて使用し、訪問を一意に識別します。 |
+| cust_visid | identityMap | オブジェクト | 顧客訪問者 ID |
+| cust_visid | endUserIDs._experience.aacustomid.id | オブジェクト | 顧客訪問者 ID。 |
+| cust_visid | endUserIDs._experience.aacustomid.primary | ブール型 | 顧客訪問者 ID 名前空間コード。 |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | visid_low と組み合わせて使用し、顧客の訪問者 ID を一意に識別します。 |
+| geo\_* | placeContext.geo.* | 文字列、数値 | 位置情報データ（国、地域、市区町村など） |
+| visit_page_num | _experience.analytics.session.depth | number | 「ヒットの深さ」ディメンションで使用される変数。この値は、ユーザーが生成したヒットごとに 1 ずつ増加し、各訪問後にリセットされます。 |
+| event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | 標準コマースおよびカスタムイベントがヒット時にトリガーされました。 |
+| page_event | web.webInteraction.type | string | イメージリクエストで送信されるヒットのタイプ（標準的なヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
+| page_event | web.webInteraction.linkClicks.value | number | イメージリクエストで送信されるヒットのタイプ（標準的なヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
+| page_event_var_1 | web.webInteraction.URL | string | リンクトラッキングイメージリクエストでのみ使用される変数。この変数には、クリックされたダウンロードリンク、離脱リンク、またはカスタムリンクの URL が含まれます。 |
+| page_event_var_2 | web.webInteraction.name | string | リンクトラッキングイメージリクエストでのみ使用される変数。このリストは、リンクのカスタム名をリスト表示します（指定されている場合）。 |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | 訪問者の最初のリファラーのリファラータイプを表す数値 ID。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 整数 | 訪問者の本当に最初のヒットのタイムスタンプ（UNIX 時間）。 |
+| paid_search | search.isPaid | ブール型 | ヒットが有料検索の検出に一致した場合に設定されるフラグ。 |
+| ref_type | web.webReferrertype | string | ヒットのリファラルのタイプを表す数値 ID。 |
+
+#### POST 列
+
+Adobe Analyticsデータフィードは、列の概念を使用し、 `post_` プレフィックス。処理後のデータを含む列です。 詳しくは、[データフィードに関する FAQ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post) を参照してください。
+
+Experience PlatformEdge Network（Web SDK、モバイル SDK、Server API）を使用してデータセットで収集されたデータには、 `post_` フィールド：理由を説明します。 `post_` 先頭に *non* `post_` プレフィックスが付いたデータフィード列が Analytics フィールドにマッピングされ、同じ XDM フィールドにマッピングされます。 例えば、 `page_url` および `post_page_url` データフィード列を同じにマッピングする `web.webPageDetails.URL` XDM フィールド。
+
+詳しくは、 [Adobe AnalyticsとCustomer Journey Analyticsでのデータ処理の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=ja) ：データの処理の違いの概要。
+
+The `post_` プレフィックス列タイプのデータをExperience Platformデータレイクで収集する場合、データフィードの使用例で使用する前に、高度な変換が必要になります。 クエリでこれらの高度な変換を実行するには、 [Adobe定義関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) セッション化、アトリビューションおよび重複排除の場合。 詳しくは、 [例](#examples) これらの関数の使用方法に関する説明。
 
 #### 参照
 
-他のデータセットからデータを検索するには、標準の SQL 機能（WHERE 句、INNER JOIN、OUTER JOIN など）を使用します。 詳しくは、 [結果は何ですか？](#examples) クエリを使用して、例を確認します。
+他のデータセットからデータを検索するには、標準の SQL 機能 (`WHERE` 条項 `INNER JOIN`, `OUTER JOIN`、など )。
 
 #### 計算
 
-フィールド（列）に対して計算を実行するには、標準の SQL 関数 ( 例： `COUNT(*)` （内） [製品インタラクションファネル](#examples) 例のクエリ ) または [数学および統計の演算子と関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL の一部。
+フィールド（列）に対して計算を実行するには、標準の SQL 関数 ( 例： `COUNT(*)` または [数学および統計の演算子と関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL の一部。 また、 [窓関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) は、集計を更新し、順序付けされたサブセットの各行に対して単一の項目を返す機能を提供します。 詳しくは、 [例](#examples) これらの関数の使用方法に関する説明。
 
 #### ネストされたデータ構造
 
@@ -281,9 +150,7 @@ Adobe Analyticsソースコネクタを使用して取り込まれたデータ�
 }
 ```
 
-以下を使用すると、 [`explode()` またはその他の配列関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) Spark SQL から、ネストされたデータ構造内のデータに移動します。
-
-次に例を示します。
+以下を使用すると、 [`explode()` またはその他の配列関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) Spark SQL からネストされたデータ構造内のデータに移動します。次に例を示します。
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -297,18 +164,29 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en)を参照してください。
 
+
+#### 例
+
+例えば、Experience Platformデータレイクのデータセットのデータを使用するクエリでは、Adobe定義関数や Spark SQL の追加機能を利用し、同等のAdobe Analyticsデータフィードと同様の結果を提供します。
+
+* [離脱した参照](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
+* [アトリビューション分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
+* [ボットフィルタリング](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* およびクエリサービスガイドのその他の使用例を参照してください。
+
+
 ### スケジュールクエリ
 
-クエリをスケジュールして、クエリが実行され、結果が希望の間隔で生成されるようにします。 クエリのスケジュールを設定する際に、出力データセットを定義します。
+クエリをスケジュールして、クエリが実行され、結果が希望の間隔で生成されるようにします。
 
 #### クエリエディターの使用
 
-クエリエディターを使用して、クエリをスケジュールできます。 クエリのスケジュールを定義する際に、出力データセットを定義できます。 詳しくは、 [クエリスケジュール](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) を参照してください。
+クエリエディターを使用して、クエリをスケジュールできます。 クエリのスケジュールを設定する際に、出力データセットを定義します。 詳しくは、 [クエリスケジュール](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) を参照してください。
 
 
 #### クエリサービス API の使用
 
-または、RESTful API を使用して、クエリを定義し、クエリのスケジュールを設定できます。 詳しくは、 [クエリサービス API ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) を参照してください。
+または、RESTful API を使用して、クエリを定義し、クエリのスケジュールを設定できます。 詳しくは、 [クエリサービス API ガイド](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) を参照してください。
 オプションのの一部として出力データセットを必ず定義してください `ctasParameters` プロパティを使用してクエリを作成する ([クエリの作成](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) またはクエリのスケジュールを作成する際に ([スケジュール済みクエリの作成](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)) をクリックします。
 
 
