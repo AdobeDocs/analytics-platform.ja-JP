@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
+source-git-commit: b41adb3f3fa4abbfa7be491e5a1fbf81e1623598
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2556'
 ht-degree: 17%
 
 ---
@@ -96,7 +96,7 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 | cust_visid | identityMap | オブジェクト | 顧客訪問者 ID |
 | cust_visid | endUserIDs._experience.aacustomid.id | オブジェクト | 顧客訪問者 ID。 |
 | cust_visid | endUserIDs._experience.aacustomid.primary | ブール型 | 顧客訪問者 ID 名前空間コード。 |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | visid_low と組み合わせて使用し、顧客の訪問者 ID を一意に識別します。 |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | visid_low と組み合わせて使用し、顧客の訪問者 ID を一意に識別します。 |
 | geo\_* | placeContext.geo.* | 文字列、数値 | 位置情報データ（国、地域、市区町村など） |
 | visit_page_num | _experience.analytics.session.depth | number | 「ヒットの深さ」ディメンションで使用される変数。この値は、ユーザーが生成したヒットごとに 1 ずつ増加し、各訪問後にリセットされます。 |
 | event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | 標準コマースおよびカスタムイベントがヒット時にトリガーされました。 |
