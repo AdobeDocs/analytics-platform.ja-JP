@@ -4,10 +4,10 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
+source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
 workflow-type: tm+mt
-source-wordcount: '5641'
-ht-degree: 15%
+source-wordcount: '5783'
+ht-degree: 13%
 
 ---
 
@@ -621,7 +621,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 ### 次より前のデータ： {#concatenate-uc-databefore}
 
-| 接触チャネル | 宛先 |
+| Origin | 宛先 |
 |----|---:|
 | SLC | MCO |
 | SLC | LAX |
@@ -733,7 +733,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 参照を適用するフィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL ルックアップデータセット]</li><ul><li>データセット</li></ul><li>[!UICONTROL 一致するキー]<ul><li>ルール</li><li>フィールド</li></ul></li><li>戻す値<ul><li>ルール</li><li>フィールド</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 3 つの関数</p> | <p>次のルールでさらに処理するための新しい派生フィールドまたは値</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL ルックアップを適用するフィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL ルックアップデータセット]</li><ul><li>データセット</li></ul><li>[!UICONTROL 一致するキー]<ul><li>ルール</li><li>フィールド</li></ul></li><li>戻す値<ul><li>ルール</li><li>フィールド</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 3 つの関数</p> | <p>次のルールでさらに処理するための新しい派生フィールドまたは値</p> |
 
 {style="table-layout:auto"}
 
@@ -846,7 +846,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 | ページ名 | セッション | 訪問者 |
 |---|--:|--:|
 | ヘルプページ | 250 | 200 |
-| home page | 500 | 250 |
+| ホームページ | 500 | 250 |
 | 製品の詳細ページ | 300 | 200 |
 
 {style="table-layout:auto"}
@@ -869,7 +869,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | クロスチャネルインタラクション | セッション数 | 訪問者 |
 |---|--:|--:|
-| home page | 500 | 250 |
+| ホームページ | 500 | 250 |
 | 製品の詳細ページ | 300 | 200 |
 | 注文に関する質問 | 275 | 250 |
 | ヘルプページ | 250 | 200 |
@@ -899,7 +899,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 正規表現]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -996,7 +996,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 方法]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL メソッド]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1089,7 +1089,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>送信元 <ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>送信元 <ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>送信者 <ul><li>文字列の開始</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の終了</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>送信者 <ul><li>文字列の終了</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の開始</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 1 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1129,11 +1129,11 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 | 名前 | イベント |
 |---|--:|
-| home page# | 1 |
-| home page? | 1 |
-| home page% | 1 |
-| home page&amp; | 1 |
-| home page/ | 1 |
+| ホームページ# | 1 |
+| ホームページ？ | 1 |
+| ホームページ% | 1 |
+| ホームページ&amp; | 1 |
+| ホームページ/ | 1 |
 
 {style="table-layout:auto"}
 
@@ -1147,7 +1147,7 @@ Customer Journey Analyticsは、Perl 正規表現構文のサブセットを使�
 
 | ページ名 | イベント |
 |---|--:|
-| home page | 5 |
+| ホームページ | 5 |
 
 {style="table-layout:auto"}
 
@@ -1202,7 +1202,7 @@ storeID を含むデータを収集します。 storeID には、省略された
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリ文字列値を取得]<ul><li>[!UICONTROL クエリーパラメーター]:<ul><li>文字列</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリー文字列値を取得]<ul><li>[!UICONTROL クエリパラメーター]:<ul><li>文字列</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドあたり 5 個の関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1281,6 +1281,12 @@ storeID を含むデータを収集します。 storeID には、省略された
 - 1 つのCustomer Journey Analytics接続につき最大 100 個の派生フィールドを指定できます。
 
 ## 詳細情報
+
+[`Trim`](#trim) および [`Lowercase`](#lowercase) は、コンポーネント設定で既に使用可能な機能です。 [データビュー](../component-settings/overview.md). 派生フィールドを使用すると、これらの関数を組み合わせて、より複雑なデータ変換を直接Customer Journey Analyticsでおこなうことができます。 例えば、 `Lowercase` イベントフィールドで大文字と小文字の区別を削除するには、 [`Lookup`](#lookup) 新しい小文字のフィールドを、小文字のルックアップキーしか持たないルックアップデータセットに一致させる。 または、 `Trim` 設定前に文字を削除する `Lookup` を新しいフィールドに設定します。
+
+派生フィールドでルックアップフィールドとプロファイルフィールドがサポートされるので、イベント検索とプロファイル属性に基づいてデータを変換できます。 これは、ルックアップまたはプロファイルデータセットのアカウントレベルのデータを使用する B2B シナリオで特に役立ちます。 また、このサポートは、ルックアップデータ（キャンペーン情報やオファータイプなど）やプロファイルデータ（メンバー層やアカウントタイプなど）から、共通のフィールドのデータを操作する場合に役立ちます。
+
+派生フィールドの詳細な背景情報については、を参照してください。
 
 - [データを最大限に活用する：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

@@ -3,10 +3,11 @@ title: ステッチに関する FAQ
 description: ステッチに関するよくある質問 (FAQ)
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
+source-git-commit: 53d394feb7d1132ad6339bae0e980f32bfe2ee6f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 42%
+source-wordcount: '1269'
+ht-degree: 34%
 
 ---
 
@@ -49,7 +50,7 @@ ht-degree: 42%
 
 +++
 
-+++**必要な情報をアドビのアカウントチームに連絡した後、キー更新されたデータセット利用可能になるまでにどのくらいかかりますか？**
++++**必要な情報をAdobeアカウントチームに連絡した後、キーが更新されたデータセットが利用可能になるまでにどれくらいかかりますか？**
 
 ライブステッチは、Adobeがステッチを有効にしてから約 1 週間後に使用できます。 バックフィルの可用性は、既存のデータの量に応じて異なります。小規模なデータセット（1 日あたり 100 万イベント未満）の処理には通常 2 ～ 3 日かかりますが、大規模なデータセット（1 日あたり 10 億イベント）では 1 週間以上かかる場合があります。
 
@@ -63,13 +64,13 @@ ht-degree: 42%
 
 +++
 
-+++**ステッチで GDPR および CCPA のリクエストはどのように処理されますか？**
++++**ステッチでプライバシーリクエストはどのように処理されますか？**
 
-Adobeは、現地の法律および国際法に従って、GDPR および CCPA の要求を処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+Adobeは、現地法および国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
 
 +++
 
-+++**1 つ以上のイベントの「永続 ID」フィールドが空白の場合はどうなりますか？**
++++**1 つ以上のイベントの「永続 ID 」フィールドが空白の場合はどうなりますか？**
 
 結び付けられるデータセットのイベントで「永続的 ID 」フィールドが空白の場合、そのイベントの結び付け ID は次の 2 つの方法のいずれかで決定されます。
 
