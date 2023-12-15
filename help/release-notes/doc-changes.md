@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9b51a28ca2d387aabd3ffde651eed6c37d28baa0
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2745'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年12月** | |
+| ガードレール | 記事一覧Customer Journey Analyticsを追加 [guardrail](../admin/guardrails.md). |
 | 通貨コンバージョンの更新 | 次の方法に関するドキュメントを明確にしました。 [通貨コンバージョンの設定](/help/data-views/component-settings/format.md). |
 | 異常値検出ドキュメントの更新 | 異常値検出のドキュメントは、以前、仮想アナリストに関する節に配置されていました。 次の変更が加えられました。 <ul><li>Virtual Analyst という用語はドキュメントから削除されました。</li><li>に関する節 [異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) は、Analysis Workspaceセクションのすぐ下に移動されました。</li></ul> |
 | **2023年10月** | |

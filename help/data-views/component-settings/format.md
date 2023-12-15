@@ -4,9 +4,9 @@ description: 指標の形式を設定します。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 20%
 
 ---
@@ -24,8 +24,6 @@ ht-degree: 20%
 1. 形式設定を設定するコンポーネントを含むデータビューを選択します。
 
 1. 「[!UICONTROL **コンポーネント**]」タブを選択します。
-
-   ![「コンポーネント」タブ](../assets/format-settings-component-tab.png)
 
 1. 設定するコンポーネントを選択し、「 [!UICONTROL **形式**] 」セクションをクリックします。
 

@@ -4,10 +4,10 @@ description: ステッチの概念を理解する
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 506838a0-0fe3-4b5b-bb9e-2ff20feea8bc
-source-git-commit: 8ca11b37ebda952d95ae38473a9c0d62be007e79
+source-git-commit: 2c650cf688112be1e6bf16c0863e743d61f9c35c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 21%
+source-wordcount: '1109'
+ht-degree: 20%
 
 ---
 
@@ -51,29 +51,7 @@ ht-degree: 21%
 
 アトリビューションは、識別するカスタム変数がデバイスに結び付けられる場合に機能します。 上の例では、イベント 1、8、9、10 を除くすべてのイベントがライブステッチされます ( すべて `Bob` 識別子 ) です。 ライブステッチで、イベント 4、6、12 のステッチ済み ID が「解決」されます。
 
-
-<!--
-
-### Delayed data
-
-When incoming data for 'Live' stitching is delayed and over 24 hours old, and when no identities in that delayed data can be matched against identities already considered for 'Live' stitching, that delayed data is not added to the data considered for 'Live' stitching.
-
-In the example below, the data in event 2 is delayed but will be part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| 2 | 2023-05-14 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob |
-
-In the example below, the data in event 2 is delayed and will NOT become part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| ~~2~~ | ~~2023-05-14 12:02~~ | ~~891~~ |  | (not considered for 'Live' stitching) |
-
--->
-
+遅延データ（タイムスタンプが 24 時間以上のデータ）は、「ベストエフォート」ベースで処理され、現在のデータのステッチを最高品質でプロリタイズします。
 
 ## 手順 2：再生のステッチ
 
