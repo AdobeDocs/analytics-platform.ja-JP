@@ -4,9 +4,7 @@ description: ガードレール、静的制限、パフォーマンスガード�
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: c669f5a74d4ddc6ab72bcee68f37d6821fe39308
+source-git-commit: 2feea7e232f564b0bd72092ec6fd6d8a597ca716
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 13%
