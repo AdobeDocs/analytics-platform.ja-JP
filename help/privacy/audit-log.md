@@ -3,9 +3,9 @@ title: 監査ログ
 description: Customer Journey Analytics監査ログの表示と管理方法について説明します。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '795'
 ht-degree: 65%
 
 ---
@@ -30,7 +30,7 @@ Customer Journey Analyticsで、に移動します。 **[!UICONTROL ツール]**
 
 デフォルトでは、今日と昨日の監査ログが表示されます。
 
-![監査ログのハイライト（2022 年 10 月 14 日）と昨日（2022 年 10 月 13 日）。 ](assets/audit_ui.png)
+![今日と昨日の監査ログのハイライト。 ](assets/audit_ui.png)
 
 右上の列セレクターに移動して、表示する列を選択できます。
 
