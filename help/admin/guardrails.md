@@ -4,7 +4,7 @@ description: Customer Journey Analyticsのガードレールの詳細
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 13%
@@ -191,7 +191,7 @@ ht-degree: 13%
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| レポートあたりの行数 | 300 万～ 1 億 5000 万 | システムが適用するガードレール | レポートあたりの最大レポート行数（ライセンスされたパッケージに基づく値）。 |
+| レポートあたりの行数 | 300 万～ 3 億 | システムが適用するガードレール | レポートあたりの最大レポート行数（ライセンスされたパッケージに基づく値）。 |
 | テーブルごとの分類 | 5 | システムが適用するガードレール | テーブルあたりの分類の最大数。 |
 | テーブルあたりの指標 | 5 | システムが適用するガードレール | テーブルあたりの最大指標数。 |
 | スケジュールの頻度 | 1 | システムが適用するガードレール | エクスポートは、1 日に 1 回、または長いスケジュール（2 日に 1 回、毎週など）でスケジュールできます。 |
