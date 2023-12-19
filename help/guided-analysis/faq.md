@@ -4,9 +4,9 @@ description: ガイド付き分析に関するよくある質問 (FAQ) です。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 製品分析
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 +++**自分の組織をガイド付き分析用にプロビジョニングするにはどうすればよいですか？**
 
-ガイド付き分析は、Customer Journey Analyticsへの有料アドオンです。 このアドオンの使用を開始する場合は、Adobeアカウントチームにお問い合わせください。
+ガイド付き分析は、Adobe Product Analyticsの一部であり、Customer Journey Analyticsへの有料アドオンです。 このアドオンの使用を開始する場合は、Adobeアカウントチームにお問い合わせください。
 
 +++
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 | イベント | 指標 |
 | ユーザー | ユーザー |
 | プロパティ | ディメンション |
-| 値 | ディメンション項目 |
+| 値 | Dimension項目 |
 | セグメント | フィルター |
 
 {style="table-layout:auto"}
@@ -59,7 +59,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分�
 
 * **Analysis Workspaceは、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。 行と列の両方にフィルターを適用して、目的のデータを取得できます。
 
-* **ガイド付き分析は、イベント中心のエクスペリエンスです。** 各分析は、まずイベントを選択することで開始し、ディメンションとフィルターを追加して、そのイベントデータを絞り込むことができます。
+* **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。** 各分析は、まずイベントを選択することで開始し、ディメンションとフィルターを追加して、そのイベントデータを絞り込むことができます。
 
 ![Analysis Workspaceおよびガイド付き分析ビュー](assets/structure.png)
 
@@ -69,7 +69,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分�
 
   ![Dimension中心](assets/dimension-centered.png)
 
-* イベント中心のガイド付き分析の一般的なアプローチは、「何人のユーザーがホームページを閲覧したか」です。
+* 一般的なイベントおよびユーザー中心のガイド付き分析アプローチは、「ホームページを訪問したユーザーの数」です。
 
   ![イベント中央揃え](assets/event-centered.png)
 
