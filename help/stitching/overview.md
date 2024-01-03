@@ -4,10 +4,11 @@ description: ステッチの概要。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: d0f7d5f2fe3cce869d413ca014d086e1a64665be
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 20%
+source-wordcount: '1428'
+ht-degree: 18%
 
 ---
 
@@ -58,7 +59,7 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上の関�
 1. 次の情報をアドビカスタマーサポートに連絡してください。
 
    * ステッチを有効にするリクエスト。
-   * キーを変更するデータセットのデータセット ID.
+   * キーを変更するデータセットのデータセット ID。
    * 目的のデータセットの永続 ID の列名（各行に表示される識別子）。
    * 目的のデータセットの一時的な ID の列名（ユーザー ID。接続のコンテキストでデータセット間のリンクとしても機能します）。
    * [再生](explained.md)の頻度とルックバックの期間。オプションとしては、週に 1 回の再生（7 日間のルックバックウィンドウ）や、毎日の再生（1 日間のルックバックウィンドウ）があります。

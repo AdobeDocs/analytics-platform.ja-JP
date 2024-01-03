@@ -3,10 +3,11 @@ title: コホート分析とは
 description: Analysis Workspace でのコホート分析について説明します。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 68%
+source-wordcount: '524'
+ht-degree: 67%
 
 ---
 

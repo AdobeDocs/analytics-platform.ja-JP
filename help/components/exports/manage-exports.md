@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: エクスポートを管理
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -35,9 +36,9 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **アカウントタイプ**] | エクスポートが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **アクティブ**]：スケジュールされた書き出しがまだ期限切れでない、または 1 回限りの書き出しがまだ完了していないことを示します。 </li><li>[!UICONTROL **完了**]：書き出しが正常に書き出されたことを示します。 スケジュールされたエクスポートの場合は、スケジュールの有効期限が切れていることを示します。</li><li>[!UICONTROL **失敗**]<p>次の状況では、エクスポートが失敗する場合があります。 次の項目にカーソルを合わせます。 [!UICONTROL **失敗**] ステータスを使用して、失敗に関する詳細を確認します。 <ul><li>予定されている書き出しの有効期限</li><li>スケジュールされたエクスポートの行の上限に達しました </li></ul> </p></li></ul> |
-   | [!UICONTROL **頻度**] | エクスポートが発生する頻度。 次の頻度を使用できます。 <ul><li>[!UICONTROL **1 回のみ**]</li><li>[!UICONTROL **毎日**]</li><li>[!UICONTROL **毎週**]</li><li>[!UICONTROL **毎月**]</li><li>[!UICONTROL **毎年**]</li></ul> |
+   | [!UICONTROL **頻度**] | エクスポートが発生する頻度。 次の頻度を使用できます。 <ul><li>[!UICONTROL **1 回**]</li><li>[!UICONTROL **毎日**]</li><li>[!UICONTROL **毎週**]</li><li>[!UICONTROL **毎月**]</li><li>[!UICONTROL **毎年**]</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -138,7 +139,7 @@ ht-degree: 6%
    | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
    | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL アクティブ], [!UICONTROL 完了]、および [!UICONTROL 失敗].<p> **注意：** 失敗したエクスポートのトラブルシューティングについて詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
    | タグ | 書き出しに適用されているタグが表示されます。 書き出しにタグを適用する方法について詳しくは、 [エクスポートのタグ付け](#tag-an-export). |
-   | テーブルサイズ (最後の送信) | 最後に送信されたエクスポートのサイズ。 |
+   | テーブルサイズ (前回の送信) | 最後に送信されたエクスポートのサイズ。 |
    | 作成者 | エクスポートを作成したユーザー。 |
    | 作成日 | エクスポートが作成された日時。 <!-- true? --> |
    | 場所 | データが書き出されたアカウント上の場所。 |

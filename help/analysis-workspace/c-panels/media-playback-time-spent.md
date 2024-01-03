@@ -2,12 +2,12 @@
 title: メディア再生滞在時間パネル
 description: Analysis Workspace のメディア再生滞在時間パネルを使用および解釈する方法。
 feature: Panels
-role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 74%
+source-wordcount: '938'
+ht-degree: 71%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 Analysis Workspaceの再生滞在時間は、特定の時点でのメディアストリームの視聴に費やされた時間です。 一時停止、バッファ、開始時間が含まれます。
 
-メディア再生滞在時間パネルを使用すると、同時実行のピークに関する詳細や、分類機能と比較機能により、時間の経過とともに再生を分析できます。
+メディア再生時間パネルを使用すると、同時実行のピークの詳細と分類および比較機能を使用して、時間の経過に伴う再生の分析を可能にします。
 
 Media Analytics のお客様は、再生に費やした時間を分析して、コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを得、ボリュームやスケールのトラブルシューティングや計画に役立てることができます。
 

@@ -2,7 +2,8 @@
 description: フィルターを計画する際に従う手順とベストプラクティスの概要を説明します。
 title: プランフィルター
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 93%

@@ -2,10 +2,12 @@
 description: 権限に応じて、フィルターを組織全体、グループまたは個々のユーザーと共有できます。
 title: フィルターの共有
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +33,6 @@ ht-degree: 97%
 
 1. フィルター管理ツールバーで、「**[!UICONTROL 共有]**」をクリックします。
 
-1. 管理者は、「すべて」を選択できます。また、組織内のグループまたはユーザーを選択することもできます。管理者以外は、個々のユーザーのみを表示できます。検索フィールドを使用して、グループまたはユーザーを検索します。「**[!UICONTROL 共有]**」をクリックします。フィルターの横に共有アイコンが表示されます：![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. 管理者は、「すべて」を選択できます。また、組織内のグループまたはユーザーを選択することもできます。管理者以外は、個々のユーザーのみを表示できます。検索フィールドを使用して、グループまたはユーザーを検索します。「**[!UICONTROL 共有]**」をクリックします。フィルターの横に共有アイコンが表示されます。 ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. フィルター／その他のフィルター／自分と共有に移動して、自分と共有している指標をフィルタリングできます。

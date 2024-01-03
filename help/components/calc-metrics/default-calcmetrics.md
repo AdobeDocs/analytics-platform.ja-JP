@@ -3,10 +3,11 @@ description: Adobeは、使用できる様々な計算指標を提供します�
 title: デフォルトの計算指標
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 5e69b1aceb767343882b9cc85c0011bb1593f4af
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -17,7 +18,7 @@ Customer Journey Analyticsでは、最も一般的な使用例を示す次の計
 | 計算指標名 | 説明 | 数式 |
 |---------|----------|---------|
 | セッション開始率 | セッションの最初のイベントで発生した任意のディメンション項目の割合。<p>この計算指標は、 `[Session Starts]` [標準コンポーネント](/help/data-views/component-reference.md) の [データビュー](/help/data-views/create-dataview.md).</p> | `[Session Starts] / [Sessions]` |
-| 個人別滞在時間 | 特定のディメンション項目に対して人が費やした平均時間。<p>この計算指標は、 `[Time Spent (seconds)]` [標準コンポーネント](/help/data-views/component-reference.md) の [データビュー](/help/data-views/create-dataview.md).</p> | `[Time Spent (seconds)] / [Users]` |
+| ユーザー別滞在時間 | 特定のディメンション項目に対して人が費やした平均時間。<p>この計算指標は、 `[Time Spent (seconds)]` [標準コンポーネント](/help/data-views/component-reference.md) の [データビュー](/help/data-views/create-dataview.md).</p> | `[Time Spent (seconds)] / [Users]` |
 | 1 人あたりのセッション数 | 1 人あたりのセッションの平均数。 | `[Sessions] / [Users]` |
 | セッションごとに費やされた時間 | 特定のディメンション項目でセッションごとに人が費やした平均時間。<p>この計算指標は、 `[Time Spent (seconds)]` [標準コンポーネント](/help/data-views/component-reference.md) の [データビュー](/help/data-views/create-dataview.md).</p> | `[Time Spent (seconds)] / [Sessions]` |
 | セッション終了率 | セッションの最後のイベントで発生した任意のディメンション項目の割合。 <p>この計算指標は、 `[Session Ends]` [標準コンポーネント](/help/data-views/component-reference.md) の [データビュー](/help/data-views/create-dataview.md).</p> | `[Session Ends] / [Sessions]` |

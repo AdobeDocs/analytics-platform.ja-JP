@@ -4,10 +4,11 @@ description: カスタマージャーニー全体を通した顧客とのイン�
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 62%
+source-wordcount: '482'
+ht-degree: 61%
 
 ---
 
@@ -21,10 +22,10 @@ ht-degree: 62%
 
 1. 取り込むデータの [スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) します。
 1. 取り込むデータの [データセットを作成](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=ja) します。
-1. [Experience Platform へのデータの取得](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=ja):
+1. [データの取り込みExperience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=ja):
    1. イベントベースのデータ ![イベント](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) Edge ネットワークまたは Analytics ソースコネクタを介して web サイトまたはモバイルアプリから
    2. プロファイルデータ ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) （例えば、CRM システム、コールセンターアプリケーション、ロイヤルティアプリケーションから）。
-   3. 参照データ ![参照](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) （製品名、製品情報システムのカテゴリなど）。
+   3. 参照データ ![参照](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) （例：製品名、製品情報システムのカテゴリ）。
 
 1. データセット全体で共通の名前空間 ID を使用します。 用途 [ステッチ](../../stitching/overview.md) イベントベースのデータセットを昇格させる ![データ更新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) 各行に共通の ID を指定する場合に使用します。 Customer Journey Analytics は、現在、ステッチに Experience Platform プロファイルまたは ID サービスを使用していません。
 1. カスタムデータの準備を実行し、時系列データセット間の共通キーが Customer Journey Analytics に取り込まれるようにします。
@@ -32,7 +33,7 @@ ht-degree: 62%
 1. プロファイルデータには、イベントデータのプライマリ ID と同じプライマリ ID を設定します。
 1. [接続の作成](../../connections/overview.md) を使用して、関連するデータセットをExperience PlatformからCustomer Journey Analyticsに取り込みます。
 1. 接続で [データビューを作成](/help/data-views/create-dataview.md) し、ビューに含める特定のディメンションと指標を選択します。アトリビューションと割り当ては、データビューでも設定できます。これらの設定は、レポート時に計算されます。
-1. [Analysis Workspace 内でダッシュボードとレポートを設定するプロジェクトを作成します。](/help/analysis-workspace/home.md)
+1. [プロジェクトの作成](/help/analysis-workspace/home.md) Analysis Workspace内でダッシュボードとレポートを設定する。
 
 ## 注意点
 

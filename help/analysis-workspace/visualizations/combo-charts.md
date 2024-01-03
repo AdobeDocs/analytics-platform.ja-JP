@@ -2,11 +2,11 @@
 description: 先月や昨年などとの比較を行うといった、Analysis Workspace で比較データを簡単に視覚化できます。
 title: コンボグラフビジュアライゼーション
 feature: Visualizations
-role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '847'
 ht-degree: 85%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 [!UICONTROL コンボグラフ]ビジュアライゼーションを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく簡単に作成できます。折れ線グラフと棒グラフの組み合わせでデータの傾向を簡単に表示できます。
 
-[!UICONTROL コンボグラフ]を使用すると、：
+の使用 [!UICONTROL コンボグラフ] 移動先：
 
 * 今週の注文と、先月（および昨年）の同時刻の注文を数回クリックするだけで比較できます。
 * 複数の指標（[!UICONTROL ユニーク訪問者]や[!UICONTROL 売上高]など）を同じグラフで相互にすばやく分析して比較できます。

@@ -4,10 +4,11 @@ description: Analytics ソースコネクタを使用して、マーケティン
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 63%
+source-wordcount: '985'
+ht-degree: 61%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 63%
 
 ## 前提条件
 
-* レポートスイートデータは、既に [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
+* レポートスイートデータは、既に、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
 * マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。詳しくは、 [マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=ja) ( Adobe Analytics Components ガイド ) を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
@@ -35,7 +36,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
-> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があります。それ以外の場合、XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、空白になります `channel._id` Analytics ソースコネクタは空白になります `channel.typeAtSource` 同様に。 その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
+> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があります。それ以外の場合、XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、空白になります `channel._id` Analytics ソースコネクタは空白になります。 `channel.typeAtSource` 同様に。 その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
 
 ## 処理とアーキテクチャの違い
 
@@ -54,12 +55,12 @@ ht-degree: 63%
   ![訪問の最初のページ](../assets/first-page-of-visit.png)
 
 * **ラストタッチチャネルの上書き**：マーケティングチャネルマネージャでこのオプションを設定すると、通常は、特定のチャネルがラストタッチチャネルのクレジットを受け取るのを回避できます。Platform ではこの設定が無視されるため、「ダイレクト」や「内部」などの幅広いチャネルが、潜在的に好ましくない方法で指標の影響を受けます。「ラストタッチチャネルの上書き」をオフにしているチャネルを削除することをお勧めします。
-   * マーケティングチャネルマネージャーで「ダイレクト」マーケティングチャネルを削除し、そのチャネルで Customer Journey Analytics の「値なし」ディメンション項目を使用できます。 また、データビューを設定する際に、このディメンション項目の名前を「ダイレクト」に変更したり、ディメンション項目を完全に除外したりすることもできます。
+   * マーケティングチャネルマネージャーで「ダイレクト」マーケティングチャネルを削除して、そのチャネルでCustomer Journey Analyticsの「値なし」ディメンション項目を使用できます。 また、データビューを設定する際に、このディメンション項目の名前を「ダイレクト」に変更したり、ディメンション項目を完全に除外したりすることもできます。
    * また、マーケティングチャネルの分類を作成し、Customer Journey Analyticsで除外するチャネル以外に、各値をそれ自体に分類することもできます。 その後、データビューを作成する際に、`channel.typeAtSource` の代わりに、この分類ディメンションを使用できます。
 
   ![ラストタッチチャネルの上書き](../assets/override-last-touch-channel.png)
 
-* **マーケティングチャネルの有効期限**:このエンゲージメント期間の設定に従い、無操作状態が続いた後に、レポートスイートデータで新しいファーストタッチチャネルを取得できるようにします。 Platform は独自の属性設定を使用するので、この設定はCustomer Journey Analyticsでは完全に無視されます。
+* **マーケティングチャネルの有効期限**：このエンゲージメント期間の設定に従い、無操作状態が続いた後に、レポートスイートデータで新しいファーストタッチチャネルを取得できるようにします。 Platform は独自の属性設定を使用するので、この設定はCustomer Journey Analyticsでは完全に無視されます。
 
   ![マーケティングチャネルの有効期限](../assets/marketing-channel-expiration.png)
 

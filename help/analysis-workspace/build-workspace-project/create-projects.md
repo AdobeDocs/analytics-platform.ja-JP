@@ -2,12 +2,12 @@
 description: Analysis Workspaceでプロジェクトを作成する方法を説明します。
 title: プロジェクトの作成
 feature: Workspace Basics
-role: User, Admin
+role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 14%
+ht-degree: 11%
 
 ---
 
@@ -38,7 +38,7 @@ Analysis Workspaceの使用を開始する方法に関する一般的な情報�
 
 [パネル](/help/analysis-workspace/c-panels/panels.md) は、Analysis Workspaceの任意のプロジェクトの基盤です。 パネルを使用して、プロジェクトのコンテンツ（ビジュアライゼーションおよびコンポーネント）を整理します。
 
-Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。
+Analysis Workspaceで提供される多くのパネルは、少数のユーザー入力に基づいて完全な分析セットを生成します。
 
 パネルを追加するには：
 

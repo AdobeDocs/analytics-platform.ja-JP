@@ -5,10 +5,11 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 82%
+source-wordcount: '942'
+ht-degree: 81%
 
 ---
 
@@ -92,7 +93,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
-| [!UICONTROL **完全なテーブルの書き出し**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
 | **[!UICONTROL フィルターの作成]** | ユーザーは[フィルター](/help/components/filters/filters-overview.md)を作成できます。 |
 | **[!UICONTROL Labs のアクセス]** | ユーザーが [Labs](/help/labs/labs.md) 」タブをCustomer Journey Analyticsに追加します。 |

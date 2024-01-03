@@ -3,9 +3,10 @@ title: 仮想レポートスイート、データビュー、Adobe Experience Pl
 description: 仮想レポート環境とサンドボックス環境について説明します。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: ht
-source-wordcount: '771'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '715'
 ht-degree: 100%
 
 ---

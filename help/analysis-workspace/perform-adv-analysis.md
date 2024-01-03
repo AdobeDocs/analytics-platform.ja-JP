@@ -4,16 +4,17 @@ description: ワークスペースで Customer Journey Analytics のアドバン
 feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 65%
+ht-degree: 40%
 
 ---
 
 # アドバンス分析の実行
 
-アドバンス分析では、[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)図、[Attribution ](/help/analysis-workspace/c-panels/attribution.md)、[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)図、[ディメンションの内訳](/help/components/dimensions/t-breakdown-fa.md)などの機能を活用します。
+高度な分析では、次のような機能を利用します。 [流量](/help/analysis-workspace/visualizations/c-flow/flow.md) 図、 [帰属](/help/analysis-workspace/c-panels/attribution.md), [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) 図、および [ディメンション分類](/help/components/dimensions/t-breakdown-fa.md).
 
 ![フロー図にアドバンス分析を示します。](assets/cja-adv-analysis1.png)
 

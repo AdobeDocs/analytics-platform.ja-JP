@@ -3,9 +3,10 @@ description: 時間以外のディメンションの上位 5 つ（時間ディ�
 title: Workspace でディメンションをプレビューするCustomer Journey Analytics
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '223'
 ht-degree: 90%
 
 ---

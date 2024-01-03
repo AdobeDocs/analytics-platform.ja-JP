@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
-workflow-type: ht
-source-wordcount: '1488'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
 
-Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために、クロスチャネル分析（以前の「フィールドベースのステッチング」）を使用できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=ja)
+Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。この場合、クロスチャネル分析（「ステッチ」とも呼ばれます）は、顧客が ECID でのみ識別される場合と、ID が収集される場合（例えば、顧客の認証時）との間のギャップを埋めるために使用できます。 [詳細情報](../stitching/overview.md)。
 
 ### 2. 変数の整合 {#variables}
 
@@ -71,7 +71,7 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 * 必要なフィールドを何でも定義できる柔軟性がスキーマにあります
 * Adobe Analytics の用語（prop、eVar、イベントなど）に依存しません
 * 文字制限に関する問題がありません（prop の場合は 100 文字）
-* Adobe Experience Platform でのデータの可用性が向上します[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)を強化します
+* Adobe Experience Platformでのデータの可用性を高速化し、強化 [リアルタイムパーソナライゼーションの使用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)
 * [ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.htm?lang=ja) で訪問者識別の精度を高めます
 
 **Experience Platform SDK を使用する場合の欠点**

@@ -3,9 +3,10 @@ description: Analysis Workspace でテーブルをフィルタリングし並べ
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '953'
 ht-degree: 67%
 
 ---

@@ -4,10 +4,11 @@ description: ユーザー向けに一般環境設定とプロジェクト環境�
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 87%
+source-wordcount: '3191'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +44,7 @@ ht-degree: 87%
 
 | 環境設定 | オプション |
 | --- | --- |
-| ランディングページ | Adobe Analytics にアクセスしたときにデフォルトのページとして表示するページを選択します。 <ul><li>プロジェクトリスト（デフォルト）</li><li>空のプロジェクト</li><li>特定のプロジェクトリストから選択</li></ul> |
+| ランディングページ | Adobe Analytics にアクセスしたときにデフォルトのページとして表示するページを選択します。 <ul><li>プロジェクトリスト（デフォルト）</li><li>空のプロジェクト</li><li>リストから選択した特定のプロジェクト</li></ul> |
 | ヒントを表示 | Analysis Workspace の右下にある青いボックスにヒントを表示します。 <p>このオプションは、デフォルトでは有効になっています。</p> |
 | 左側のパネルグループに表示されるコンポーネント | 左側のパネルのコンポーネントメニューに表示する各コンポーネントの数を選択します。 <p>0 を選択すると、ワークスペースの左側のパネルからコンポーネントにアクセスできなくなります。</p><p>デフォルトでは、次の各項目に対して 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>フィルター</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
 
@@ -71,14 +72,14 @@ ht-degree: 87%
 | --- | --- | --- |
 | **表示** | | |
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=ja) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
+| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度のトレンド（積み重ね棒）のガイド付き分析に適用されます。 このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
 | **データ** | | |
 |  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択した特定のデータビュー</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>カスタム定義範囲</li></ul> |
 |  | [パネルタイプ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | 繰り返しインスタンスのカウント | レポート内でレポートインスタンスがカウントされるかどうかを指定します。例えば、この設定（有効にした場合）は、複数の連続するページビューを複数のページビューと同じページに対して処理します。オフになっている場合は、単一ページビューとしてカウントされます。 <p>**メモ：** この設定は、特定の指標（単一ページ訪問数など）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
 |  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | CSV 区切り文字文字 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
+|  | CSV 区切り文字 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
 |  | 注釈を表示 | 注釈をプロジェクトに表示するかどうかを選択します。注釈について詳しくは、[注釈：概要](/help/components/annotations/overview.md)を参照してください。 |
 
 

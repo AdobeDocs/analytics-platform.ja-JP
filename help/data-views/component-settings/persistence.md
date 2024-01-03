@@ -4,9 +4,10 @@ description: ディメンション値がイベント間で持続するかどう�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '884'
 ht-degree: 80%
 
 ---

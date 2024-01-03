@@ -4,9 +4,10 @@ description: Customer Journey Analytics でバッチデータを取り込んで�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1948'
 ht-degree: 87%
 
 ---
@@ -222,7 +223,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 - 受信データと XDM スキーマとの互換性がない場合のデータのマッピング方法。
 - マッピングテンプレートの使用
 - 計算フィールドを使用して、バッチデータがスキーマの期待値に準拠していることを確認します。
-- その他の機能.
+- その他。
 
 
 ## 接続の設定

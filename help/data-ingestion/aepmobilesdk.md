@@ -4,9 +4,10 @@ description: Adobe Experience Platform Mobile SDK と Edge Network を使用し�
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3342'
 ht-degree: 61%
 
 ---
@@ -258,7 +259,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 Adobe Experience Platform Mobile SDK 拡張機能を作成して設定するには、次の手順を実行します。
 
-1. 左パネルで「**[!UICONTROL 拡張機能]**」を選択します。Mobile Core および Profile 拡張機能は既に使用可能です。
+1. 選択 **[!UICONTROL 拡張機能]** をクリックします。 Mobile Core および Profile 拡張機能は既に使用可能です。
 
 1. 上部のバーで「**[!UICONTROL カタログ]**」をクリックします。
 
@@ -276,9 +277,9 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成して設定するに�
 
 また、カタログから次の追加の拡張機能を設定することもできます。
 
-- ID.
-- AEP Assurance.
-- 同意.
+- ID。
+- AEP アシュランス。
+- 同意。
 
 詳しくは、 [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) の拡張機能とその設定について詳しくは、 Experience platform のモバイルアプリケーションチュートリアルを参照してください。
 

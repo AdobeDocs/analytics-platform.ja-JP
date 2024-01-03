@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: 書き出しログを管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 7%
+source-wordcount: '837'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +57,7 @@ ht-degree: 7%
    | フィルター | 説明 |
    |---------|----------|
    | [!UICONTROL **書き出し ID**] | 表示するエクスポートログのエクスポート ID を指定します。 |
-   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。<p>エラーの考えられる理由について詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}

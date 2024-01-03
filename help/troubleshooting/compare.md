@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス；クエリサービス；SQL 構文
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 68%
+source-wordcount: '839'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ Analytics ソースコネクタがドロップしたレコードがない場合�
 
 >[!NOTE]
 >
->これは通常の中間値データセットでのみ機能し、（[クロスチャネル分析](/help/cca/overview.md)経由で）ステッチされたデータセットでは機能しません。比較を行う際には、Customer Journey Analyticsで使用されるユーザー ID のアカウンティングが重要であることに注意してください。 これは、特にステッチがオンになっている場合に、Adobe Analyticsでレプリケートするのが常に容易ではない場合があります。
+>これは、( [ステッチ](/help/stitching/overview.md)) をクリックします。 比較を行う際には、Customer Journey Analyticsで使用されるユーザー ID のアカウンティングが重要であることに注意してください。 これは、特にステッチがオンになっている場合に、Adobe Analyticsでレプリケートするのが常に容易ではない場合があります。
 
 1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
 

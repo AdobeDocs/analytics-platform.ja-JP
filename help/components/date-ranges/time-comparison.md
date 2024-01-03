@@ -3,10 +3,11 @@ description: Analysis Workspace での日付の比較では、日付範囲を含
 title: 日付の比較
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 87%
+source-wordcount: '740'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +56,7 @@ Analysis Workspace の日付比較を使用すると、日付範囲を含む任�
 
 テーブルの各列に期間を追加できるようになりました。これにより、カレンダーの設定先とは異なる期間を追加できます。この方法でも日付を比較することができます。
 
-1. テーブルの列を右クリックし、「 **[!UICONTROL 期間列を追加]** ![」を選択します。期間列を追加が強調表示されているテーブル列リスト ](assets/add-time-period-column.png)
+1. テーブルの列を右クリックし、「 」を選択します。 **[!UICONTROL 期間列を追加]** ![期間列を追加が強調表示されているテーブル列リスト ](assets/add-time-period-column.png)
 
 1. テーブルの日付範囲をどのように設定したかに応じて、次のオプションを比較に使用できます。
 

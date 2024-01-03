@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所とアカウントを管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +36,7 @@ ht-degree: 6%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **場所のタイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **アカウント**] | 場所が関連付けられているアカウントの名前。 |
    | [!UICONTROL **作成者**] | ロケーションを作成したユーザーの電子メールアドレス。 |
 

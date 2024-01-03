@@ -2,11 +2,11 @@
 description: 主要指標の概要ビジュアライゼーションを使用すると、2 つのタイムラインにわたる指標のパフォーマンスを比較できます。
 title: 主要指標の概要
 feature: Visualizations
-role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 85%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 85%
    | **[!UICONTROL 指標]** | 調査の対象となる指標を選択します。すべての指標がサポートされています。 |
    | **[!UICONTROL プライマリ日付範囲]** | フリーフォームテーブルの現在の日付範囲。 |
    | **[!UICONTROL 比較日付範囲]** | プライマリ日付範囲の比較対象となる日付範囲。 |
-   | **[!UICONTROL フィルター (オプション)]** | この概要に特に関心のあるフィルター。 |
+   | **[!UICONTROL フィルター（オプション）]** | この概要に特に関心のあるフィルター。 |
 
    {style="table-layout:auto"}
 

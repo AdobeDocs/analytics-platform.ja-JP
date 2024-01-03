@@ -3,10 +3,11 @@ title: 顧客管理キー
 description: 顧客管理キーを設定する方法について説明します。Customer Journey Analytics
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 64%
+source-wordcount: '282'
+ht-degree: 57%
 
 ---
 

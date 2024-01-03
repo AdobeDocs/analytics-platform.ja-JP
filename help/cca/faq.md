@@ -5,10 +5,10 @@ exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
-workflow-type: ht
-source-wordcount: '1101'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 [クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)は、人がどのようにデバイスをまたいで操作するかを把握できる、従来の Adobe Analytics 専用の機能です。デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
 
-[クロスチャネル分析](/help/cca/overview.md)は、人物がどのようにデバイスとチャネルの両方をまたいで操作するかを把握できる、Customer Journey Analytics 専用の機能です。データセットの人物 ID を再入力することで、そのデータセットを他のデータセットとシームレスに組み合わせることができます。この機能は、CDA のフィールドベースのステッチと同様の設計で動作しますが、Adobe Analytics と Customer Journey Analytics ではデータアーキテクチャが異なるので、実装は異なります。
+[クロスチャネル分析](/help/stitching/overview.md) は、デバイスに固有の機能で、Customer Journey Analyticsとチャネルの両方をまたいでユーザーがどのように動作するかを理解できます。 データセットの人物 ID を再入力することで、そのデータセットを他のデータセットとシームレスに組み合わせることができます。この機能は、CDA のフィールドベースのステッチと同様の設計で動作しますが、Adobe Analytics と Customer Journey Analytics ではデータアーキテクチャが異なるので、実装は異なります。
 
 ## Cross-Channel Analytics では、GDPR および CCPA のリクエストはどのように処理されますか？
 

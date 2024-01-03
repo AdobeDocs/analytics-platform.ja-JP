@@ -3,10 +3,11 @@ description: Analysis Workspace のアクセシビリティサポート機能
 title: Analysis Workspace のアクセシビリティ
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 96%
+source-wordcount: '605'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +23,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 
 [!UICONTROL Analysis Workspace] でのナビゲーションは、上から下、左から右です。次のナビゲーション要素はアクセシビリティを容易にします。
 
-* `Tab` キーは、ランドマークショートカットを有効にします。、Workspace 内の大きいセクション間を移動します。 左側のレールでは、`Tab` を使用して、ドラッグ可能なオプション間を移動することもできます。
+* The `Tab` key は、Workspace 内の大きなセクション間を移動する、ランドマークショートカットを有効にします。 左側のレールでは、`Tab` を使用して、ドラッグ可能なオプション間を移動することもできます。
 * `Tab` で強調表示した後、`left/right arrows` で個々の要素間を移動します。
 * `F6` を押すとプロジェクト内の最初のパネルに移動し、そのパネル内のビジュアライゼーション間を移動します。 その後、プロジェクト内の次のパネルに移動し、同じ動作を繰り返します。
 * フォーカスインジケーターを適用して、目が見えるキーボードユーザーが現在どの UI 要素にフォーカスがあるかを明確に示します。インジケーターは、選択した要素の周りの青い境界線です。

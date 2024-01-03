@@ -3,7 +3,8 @@ title: アドビのソリューションと Customer Journey Analytics の統合
 description: アドビのその他のソリューションやサービスとデータを統合する方法を説明します。
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 100%

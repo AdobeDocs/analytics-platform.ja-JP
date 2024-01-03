@@ -3,9 +3,10 @@ title: 日付範囲を管理
 description: Analysis Workspace で日付範囲を共有、名前変更または削除します。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 98%
 
 ---

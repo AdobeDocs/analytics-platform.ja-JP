@@ -4,7 +4,8 @@ description: 派生フィールドは、使用可能な関数や関数テンプ�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '5783'
 ht-degree: 13%
@@ -216,7 +217,7 @@ ht-degree: 13%
 
 | データタイプを入力 | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 次の場合], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>[!UICONTROL 次に、値をに設定します。], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>いずれかの語句と等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の用語で終わる</li><li>次と等しくない</li><li>いずれの語句も含まない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>すべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より後</li><li>次より後または等しい</li><li>次より前</li><li>次より前または等しい</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 次の場合], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づく、含まれる演算子を参照）</li></ul></li><li>[!UICONTROL 次に、値をに設定します。], [!UICONTROL それ以外の場合は、値をに設定します。]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の用語で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>どの用語でも始まらない</li><li>次で終わらない</li><li>次の語句で終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドあたり 5 個の関数</li><li>派生フィールドあたり 200 個の演算子。 例えば、「参照ドメインに Google が含まれる」などが 1 つの演算子です。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 

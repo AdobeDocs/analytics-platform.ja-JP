@@ -1,14 +1,14 @@
 ---
 title: モバイルスコアカードの注釈
 description: モバイルスコアカードで注釈を表示する方法を説明します。
-role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 91%
+ht-degree: 84%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 91%
 
 ![注釈アイコンをハイライト表示するスコアカードビルダー。](assets/view-annotations.png)
 
-注釈アイコンが表示されている場合、ビルダーキャンバスで注釈を完全に表示したり操作したりすることはできません。プレビューモードを使用して、アプリに表示される注釈を表示し、操作します。![プレビューアイコン](assets/preview-icon.png)
+注釈アイコンが表示されている場合、ビルダーキャンバスで注釈を完全に表示したり操作したりすることはできません。プレビューモードを使用すると、アプリに表示される注釈の表示と操作を行うことができます。 ![プレビューアイコン](assets/preview-icon.png)
 
-注釈の色は、ワークスペースで注釈を作成する際に選択します。グレーの注釈は、複数の注釈が存在することを示しています。 ![注釈アイコン](assets/gray-annotations1.png) ![注釈アイコンがハイライト表示されたモバイルスコアカード。](assets/gray-annotations2.png)
+注釈の色は、ワークスペースで注釈を作成する際に選択します。グレーの注釈で、複数の注釈が表示されていました。 ![注釈アイコン](assets/gray-annotations1.png) ![注釈アイコンがハイライト表示されたモバイルスコアカード。](assets/gray-annotations2.png)
 
 ## グラフの注釈を表示
 

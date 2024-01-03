@@ -3,13 +3,14 @@ title: セッション設定
 description: データビューの設定を使用して、セッションの長さと新しいセッションを開始するトリガーを定義できます
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # セッション設定
 
@@ -45,4 +46,3 @@ ht-degree: 100%
 
 
 4. 「**[!UICONTROL 保存]**」または「**[!UICONTROL 保存して終了]**」を選択して、セッション設定の定義を保存します。
-

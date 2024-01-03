@@ -5,10 +5,11 @@ title: Customer Journey Analyticsデータを電子メールで他の人に送�
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 58%
+source-wordcount: '1018'
+ht-degree: 55%
 
 ---
 
@@ -81,7 +82,8 @@ E メールで受信者に直ちにファイルを送信するには：
 | **[!UICONTROL 期限切れスケジュールを表示]** | 左側のパネル／その他のフィルター／期限切れに移動して、期限切れのスケジュールを表示します。新しい配信スケジュールを設定するには、スケジュールのタイトルをクリックします。 |
 | **[!UICONTROL スケジュール ID を表示]** | 右上の列のオプションに移動し、表にスケジュール ID 列を追加します。スケジュール ID は、多くの場合デバッグに役立ちます。 |
 
-スケジュールされたプロジェクトマネージャーには、特定のユーザーが作成したアイテムが表示されます。ユーザーアカウントがアプリケーションで無効になっている場合、予定されたすべての配信が停止されます。詳しくは、 [スケジュール済みプロジェクト](/help/components/scheduled-projects-manager.md).
+スケジュールされたプロジェクトマネージャーには、特定のユーザーが作成したアイテムが表示されます。ユーザーアカウントがアプリケーションで無効になっている場合、予定されているすべての配信が停止されます。
+詳しくは、 [スケジュール済みプロジェクト](/help/components/scheduled-projects-manager.md).
 
 ## スケジュールされたプロジェクトのパスワード保護 {#password}
 

@@ -3,10 +3,11 @@ title: リファレンス - 基本的な関数
 description: 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1078'
+ht-degree: 98%
 
 ---
 
@@ -320,4 +321,4 @@ VARIANCE(metric)
 
 3
 
-この列の平均は 2 です。この列の平方偏差は、((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3 です。
+この列の平均は 2 です。この列の平方偏差は ((1 - 2) です<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3。

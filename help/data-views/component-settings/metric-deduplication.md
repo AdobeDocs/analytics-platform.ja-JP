@@ -4,7 +4,8 @@ description: レポート内の指標の最初の発生のみをカウントし�
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%

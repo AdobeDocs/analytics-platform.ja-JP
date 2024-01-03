@@ -4,10 +4,11 @@ description: 製品チームが高品質のインサイトを迅速に得られ�
 keywords: 製品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: f99d1ce1881cd1ed3262fa3d2b2a9e16f84aa288
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
@@ -23,14 +24,14 @@ Analysis Workspaceおよびモバイルのスコアカードと同様、ガイ�
 
 | 分析タイプ | ビュータイプ | 説明 |
 | --- | --- | --- |
-| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間のパフォーマンスを比較. |
-| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定. |
-| [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します. |
-| [!UICONTROL ファネル] | [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の変化の推移を追跡します. |
-| [!UICONTROL ユーザーの増加率] | [アクティブ](types/active.md) | 新規、継続、再来訪または休眠状態のユーザーを特定します. |
-| [!UICONTROL ユーザーの増加率] | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
-| [!UICONTROL トレンド] | [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します. |
-| [!UICONTROL トレンド] | [頻度](types/frequency.md) | 使用頻度別にエンゲージメントを測定します. |
+| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間でパフォーマンスを比較します。 |
+| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 主要指標に対する初回の機能使用の影響を測定します。 |
+| [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
+| [!UICONTROL ファネル] | [コンバージョンの傾向](types/conversion-trends.md) | コンバージョン率の変化を経時的に追跡する。 |
+| [!UICONTROL ユーザーの増加] | [アクティブ](types/active.md) | 誰が新規、定着、復帰、休止状態かを識別します。 |
+| [!UICONTROL ユーザーの増加] | [純増加](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [!UICONTROL トレンド] | [用途](types/usage.md) | 時間の経過と共にユーザーエンゲージメントを測定します。 |
+| [!UICONTROL トレンド] | [頻度](types/frequency.md) | 使用頻度でエンゲージメントを測定します。 |
 
 {style="table-layout:auto"}
 

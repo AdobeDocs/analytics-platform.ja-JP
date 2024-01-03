@@ -3,16 +3,17 @@ title: レポートスイートを様々なスキーマと組み合わせる
 description: データ準備を使用してレポートスイートを様々なスキーマと組み合わせる方法を説明します
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 59%
+source-wordcount: '1322'
+ht-degree: 57%
 
 ---
 
 # レポートスイートを様々なスキーマと組み合わせる
 
-この [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe AnalyticsからAdobe Experience Platformにレポートスイートデータを取り込み、Real-time Customer Data PlatformやCustomer Journey Analytics(Customer Journey Analytics) などのAdobe Experience Platformアプリケーションで使用できるようにします。 Adobe Experience Platformに取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローは、Adobe Experience Platformデータレイク内のデータセットとして配置されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
+The [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe AnalyticsからAdobe Experience Platformにレポートスイートデータを取り込み、Real-time Customer Data PlatformやCustomer Journey Analytics(Customer Journey Analytics) などのAdobe Experience Platformアプリケーションで使用できるようにします。 Adobe Experience Platformに取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローは、Adobe Experience Platformデータレイク内のデータセットとして配置されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
 
 Customer Journey Analyticsのお客様が [接続](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、Adobe Experience PlatformデータレイクのデータセットをCustomer Journey AnalyticsAnalysis Workspaceに統合します。 ただし、1 つの接続内でレポートスイートを組み合わせる場合は、Adobe Experience Platformを使用してレポートスイート間のスキーマの違いを解決する必要があります [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能。 目的は、prop や eVar などのAdobe Analytics変数がCustomer Journey Analyticsで一貫した意味を持つようにすることです。
 
@@ -32,7 +33,7 @@ Customer Journey Analyticsで使用する 2 つの異なるレポートスイー
 - 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート A** をAdobe Experience Platformデータレイクに **データセット A**.
 - 取り込む Analytics ソース接続の作成（データ準備を使用しない） **レポートスイート B** をAdobe Experience Platformデータレイクに **データセット B**.
 - の作成 [Customer Journey Analytics接続](/help/connections/create-connection.md) 呼び出し **すべてのレポートスイート** データセット A とデータセット B を組み合わせた
-- の作成 [Customer Journey Analyticsデータビュー](/help/data-views/create-dataview.md) 呼び出し **グローバル表示** すべてのレポートスイート接続に基づいている
+- の作成 [Customer Journey Analyticsのデータビュー](/help/data-views/create-dataview.md) 呼び出し **グローバル表示** すべてのレポートスイート接続に基づいている
 
 データセット A とデータセット B の間のスキーマの違いを解決するためにデータ準備を使用しない場合、グローバル表示データビューの eVar には、次の値が混在することになります。
 
@@ -51,7 +52,7 @@ Customer Journey Analyticsで使用する 2 つの異なるレポートスイー
 
 Experience Platformデータ準備機能は、Analytics ソースコネクタと統合されており、上記のシナリオで説明したスキーマの違いの解決に使用できます。 その結果、Customer Journey Analyticsデータビューで一貫した意味の eVar が生成されます。 （次に使用する命名規則は、必要に応じてカスタマイズできます。）
 
-1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、 [新しいスキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja) Adobe Experience Platform( **統合スキーマ** （この例では）。 スキーマに次を追加します。
+1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、 [新しいスキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja) ADOBE EXPERIENCE PLATFORM( **統合スキーマ** （この例では）。 スキーマに次を追加します。
 
    | 「Unified Schema」 |
    | --- |

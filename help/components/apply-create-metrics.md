@@ -3,10 +3,11 @@ description: Analysis Workspace には、指標の使用方法が 2 つありま
 title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 49%
+source-wordcount: '371'
+ht-degree: 40%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 49%
 
 * **計算指標** ![計算指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)：標準指標、静的数値またはアルゴリズム関数に基づくユーザー定義の指標。
 
-* **計算指標テンプレート**  <img src="./assets/adobe-logo.svg" width="18"> :Adobe定義の指標。計算指標と同様に動作します。 これらを Workspace プロジェクトでそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。
+* **計算指標テンプレート**  <img src="./assets/adobe-logo.svg" width="18"> :Adobe定義の指標。計算指標と同様に動作します。 これらは、Workspace プロジェクト内でそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。
 
 
 ![左側のペインで指標をハイライトする Workspace パネル。](assets/cja-metrics.png)
@@ -30,7 +31,7 @@ ht-degree: 49%
 指標が承認されているかどうかを確認できます ![承認済みアイコン](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  またはそうではありません。 指標の詳細を表示するには、指標の上にマウスポインターを置いて、「 ![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-指標は、Analysis Workspace内で柔軟に使用できます。 指標を空のフリーフォームテーブルにドラッグすると、プロジェクトの日付期間にわたるその指標のトレンドを確認できます。また、ディメンションが存在する場合に指標をドラッグして、各ディメンション項目と比較した指標を確認できます。 既存の指標ヘッダーの上にある指標をドラッグすると、その指標が置き換えられます。ヘッダーの横にある指標をドラッグすると、両方の指標が並べて表示されます。
+指標は、Analysis Workspace内で柔軟に使用できます。 空のフリーフォームテーブルに指標をドラッグして、その指標がプロジェクトの日付期間にトレンド表示されていることを確認します。 また、ディメンションが存在する場合に指標をドラッグして、各ディメンション項目と比較した指標を確認できます。 既存の指標ヘッダーの上にある指標をドラッグすると、その指標が置き換えられます。ヘッダーの横にある指標をドラッグすると、両方の指標が並べて表示されます。
 
 ## 計算指標
 

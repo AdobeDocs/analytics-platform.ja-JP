@@ -3,10 +3,11 @@ description: フィルタービルダーのキャンバスに指標Dimension、�
 title: フィルターの作成
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 22%
+source-wordcount: '1255'
+ht-degree: 20%
 
 ---
 
@@ -36,13 +37,13 @@ The [!UICONTROL フィルタービルダー] を使用すると、訪問やイ�
 | **[!UICONTROL 説明]** | フィルターの詳細な説明を入力します。 |
 | **[!UICONTROL タグ]** | [フィルターのタグ付け](/help/components/filters/manage-filters.md) 既存のタグのリストから選択するか、新しいタグを作成して作成します。 |
 | **[!UICONTROL 定義]** | ここがお客様の場所です [フィルターの作成と設定](/help/components/filters/filters-overview.md)、ルールを追加し、コンテナをネストして順に並べます。 |
-| **[!UICONTROL 含める]** | (トップのコンテナの選択.) トップレベルを選択できます [コンテナ](/help/components/filters/filters-overview.md) ( [!UICONTROL 人物], [!UICONTROL セッション], [!UICONTROL イベント]) をクリックします。 デフォルトの最上位コンテナはイベントコンテナです。 |
+| **[!UICONTROL 含める]** | （上部のコンテナセレクター）。 トップレベルを選択できます [コンテナ](/help/components/filters/filters-overview.md) ( [!UICONTROL 人物], [!UICONTROL セッション], [!UICONTROL イベント]) をクリックします。 デフォルトの最上位コンテナはイベントコンテナです。 |
 | **[!UICONTROL オプション]** | （歯車）アイコン | <ul><li>**[!UICONTROL +コンテナを追加]**：新しいコンテナ（トップレベルのコンテナの下）をフィルター定義に追加できます。</li><li>**[!UICONTROL 除外]**:1 つ以上のディメンション、フィルターまたは指標を除外することで、フィルターを定義できます。</li></ul> |
 | **[!UICONTROL ディメンション]** | コンポーネントが「Dimension」リスト（オレンジ色のサイドバー）からドラッグ&amp;ドロップされます。 |
-| **[!UICONTROL 演算子]** | 選択した演算子を使用して値を比較および制限できます。（等しい、等しくない、次を含む、次のすべてを含むなど） |
+| **[!UICONTROL 演算子]** | 選択した演算子を使用して値を比較および制限できます。 （等しい、等しくない、次を含む、次のすべてを含むなど） |
 | **[!UICONTROL 値]** | ディメンション、フィルターまたは指標のために入力または選択した値。 |
 | **[!UICONTROL アトリビューションモデル]** | ディメンションに対してのみ使用でき、これらのモデルは、フィルタリングするディメンションの値を決定します。 Dimensionモデルは、順次フィルターで特に役立ちます。<ul><li>**[!UICONTROL 繰り返し]**（デフォルト）：ディメンションのインスタンスと持続値を含みます。</li><li>**[!UICONTROL インスタンス]**：ディメンションのインスタンスを含みます。</li><li>**[!UICONTROL 繰り返さないインスタンス]**：ディメンション固有の（繰り返さない）インスタンスを含みます。これは、繰り返しインスタンスが除外される場合にフローに適用されるモデルです。</li></ul>例については、以下の「アトリビューションモデル」の節を参照してください。 |
-| **[!UICONTROL And/Or/Then]** | コンテナ間やルール間に [!UICONTROL AND／OR／THEN] 演算子を割り当てます。THEN 演算子は、 [順次フィルターの定義](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL And/Or/Then]** | コンテナ間やルール間に [!UICONTROL AND／OR／THEN] 演算子を割り当てます。THEN 演算子を使用すると、 [順次フィルターの定義](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL 指標]** | （緑色のサイドバー）指標リストからドラッグ&amp;ドロップした指標。 |
 | **[!UICONTROL X]** | （削除）フィルター定義のこの部分を削除できます。 |
 | **[!UICONTROL フィルターからオーディエンスを作成]** | フィルターからオーディエンスを作成すると、フィルターをAdobe Experience Platformと共有してアクティブ化できます。 [詳細情報...](/help/components/audiences/audiences-overview.md) |

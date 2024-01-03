@@ -4,10 +4,11 @@ description: どのコンポーネントCustomer Journey Analyticsオファー�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -25,10 +26,10 @@ ht-degree: 78%
 * [**フィルター**](filters/filters-overview.md)：強力で重要なオーディエンスフィルターを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいて個人のサブセットを識別できます。
 * [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
 * [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md)：ユーザーと管理者の両方が、Analytics 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。
-* [**日付範囲**](date-ranges/create.md)：日付範囲 Analysis Workspace オファーのカスタマイズと調整.
+* [**日付範囲**](date-ranges/create.md)：日付範囲Analysis Workspaceオファーをカスタマイズし、調整します。
 * [**Dimension**](/help/components/dimensions/view-dimensions.md):Dimensionは、通常、文字列値を含む変数です。 一般的なディメンションには、ページおよび参照ドメインがあります。
 * [**指標**](/help/components/apply-create-metrics.md):Analysis Workspaceでデータポイントを定量化できます。
-* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でのプロジェクトの整理と管理.
+* [**プロジェクト**](/help/analysis-workspace/home.md):Analysis Workspaceでプロジェクトを整理および管理します。
 
 ## Analysis Workspace のコンポーネント
 

@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 4%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +38,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    [ ロケーション ] ダイアログが表示されます。
 
-1. 次の情報を指定します。 |フィールド |関数 | |—|—| | [!UICONTROL **名前**] |場所の名前。  | | [!UICONTROL **説明**] |同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。 | | [!UICONTROL **場所アカウント**] |ロケーションを作成するアカウントを選択します。 アカウントの作成方法について詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
+1. 次の情報を指定します。 |フィールド | 関数 | |—|—| | [!UICONTROL **名前**] | 場所の名前。  | | [!UICONTROL **説明**] | 同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。 | | [!UICONTROL **場所アカウント**] | ロケーションを作成するアカウントを選択します。 アカウントの作成方法について詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] 「 」セクションで、ロケーションアカウントのアカウントタイプに固有の情報を指定します。
 
@@ -90,7 +91,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **グループ**] | Adobe Analyticsデータを送信するAmazon S3 アカウント内のバケット。 Adobeから提供されたユーザー ARN が、このバケットにファイルをアップロードするためのアクセス権を持っていることを確認します。 |
+   | [!UICONTROL **バケット**] | Adobe Analyticsデータを送信するAmazon S3 アカウント内のバケット。 Adobeから提供されたユーザー ARN が、このバケットにファイルをアップロードするためのアクセス権を持っていることを確認します。 |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例えば、folder_name/ |
 
    {style="table-layout:auto"}
@@ -109,7 +110,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **グループ**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 ファイルをこのバケットにアップロードするための権限が、Adobeから提供されるプリンシパルに対して付与されていることを確認します。 ( 本人は、次の場合に定める。 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).) 権限の付与について詳しくは、 [プリンシパルをバケットレベルのポリシーに追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) ( Google Cloud ドキュメント ) を参照してください。 |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 ファイルをこのバケットにアップロードするための権限が、Adobeから提供されるプリンシパルに対して付与されていることを確認します。 ( 本人は、次の場合に定める。 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).) 権限の付与について詳しくは、 [プリンシパルをバケットレベルのポリシーに追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) ( Google Cloud ドキュメント ) を参照してください。 |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例えば、folder_name/ |
 
    {style="table-layout:auto"}

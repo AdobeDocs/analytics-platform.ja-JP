@@ -4,10 +4,11 @@ description: Adobe Experience PlatformのオーディエンスをCustomer Journe
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 52%
+source-wordcount: '968'
+ht-degree: 50%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 52%
 
 ## 前提条件
 
-* Adobe Experience Platform(Adobe Experience Platform)、特にリアルタイム顧客プロファイルへのアクセス
+* Adobe Experience Platform(Adobe Experience Platform)、特にリアルタイム顧客プロファイルへのアクセス。
 * Adobe Experience Platformのスキーマとデータセットを作成/管理するためのアクセス権。
 * Adobe Experience Platformクエリサービス（および SQL を書き込む機能）へのアクセス、またはいくつかの光変換を実行する別のツールへのアクセス。
 * Customer Journey Analytics にアクセスします。Customer Journey Analytics接続とデータ表示を作成/変更するには、Customer Journey Analyticsの製品管理者である必要があります。
@@ -71,11 +72,11 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 
 * 必要に応じて、他のオーディエンスメタデータを追加します。
 
-## 手順 5:このプロファイルデータセットをCustomer Journey Analyticsの既存の接続に追加
+## 手順 5：このプロファイルデータセットをCustomer Journey Analyticsの既存の接続に追加する
 
 [新しい接続を作成](/help/connections/create-connection.md)できましたが、ほとんどのお客様は、既存の接続にプロファイルデータセットを追加したいはずです。オーディエンス ID が、Customer Journey Analyticsの既存のデータを「エンリッチメント」する。
 
-## 手順 6:既存のデータビューを変更 ( または新規Customer Journey Analytics)
+## 手順 6：既存のCustomer Journey Analyticsデータビューを変更（または新規作成）する
 
 データビューに `audienceMembershipId`、`audienceMembershipIdName` および `personID` を追加します。
 

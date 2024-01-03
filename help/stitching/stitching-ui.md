@@ -6,10 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -73,13 +74,13 @@ ht-degree: 2%
 
         Adobe Analytics の [!UICONTROL サンプル値を使用した実験] ダイアログでは、次の値の例が表に表示されます。 [!UICONTROL timestamp], [!UICONTROL 永続 ID], [!UICONTROL 一時的な ID], [!UICONTROL ステッチ済み ID （ライブ）], [!UICONTROL ステッチ済み ID（1 日再生）]、および [!UICONTROL ステッチ済み ID（7 日間再生）].
 
-            ![サンプル値で実験](./assets/experiment-sample-values.png)
+            ![ サンプル値を試す ](./assets/experiment-sample-values.png)
             
             1.  **の値を入力[!UICONTROL **永続 ID**]**.
             
             2.  選択**[!UICONTROL **ステッチされた ID を更新**]**をクリックすると、データセット内のデータに対するステッチ処理の影響を確認できます。
             
-            3.選択**[!UICONTROL **閉じる**]**サンプル値の実験が終了したら、次の手順に従います。
+            3.  選択**[!UICONTROL **閉じる**]**サンプル値の実験が終了したら、次の手順に従います。
         
 
         戻る [!UICONTROL ステッチされたデータセット > _データセット名_] 画面：
@@ -109,9 +110,9 @@ ht-degree: 2%
   | 値 | 説明 |
   |-----|-----|
   | **[!UICONTROL **&#x200B;待機中&#x200B;**]** | リクエストを受信し、すぐに処理します。 |
-  | **[!UICONTROL **&#x200B;作成中&#x200B;**]** | リソースと新しくステッチされたデータセットは作成中です。 |
+  | **[!UICONTROL **&#x200B;作成&#x200B;**]** 進行中 | リソースと新しくステッチされたデータセットは作成中です。 |
   | **[!UICONTROL **&#x200B;ステッチ中&#x200B;**]** | リソースとステッチされたデータセットが存在し、ステッチが進行中です |
-  | **[!UICONTROL ** Error **]** | ステッチに問題があります。 ソースデータセットとステッチ済みデータセットの間でスキーマが変更された、1 日のボリュームが大きすぎる、または… (_**詳細はこちら…**_) |
+  | **[!UICONTROL **&#x200B;エラー&#x200B;**]** | ステッチに問題があります。 ソースデータセットとステッチ済みデータセットの間でスキーマが変更された、1 日のボリュームが大きすぎる、または… (_**詳細はこちら…**_) |
 
   >[!INFO]
   >

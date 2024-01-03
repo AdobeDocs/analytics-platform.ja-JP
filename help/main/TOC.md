@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
+source-git-commit: fbd801dbbdd8240eef4c60d0877bbb01f06dd768
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1040'
 ht-degree: 80%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 80%
    + [接続の管理](../connections/manage-connections.md)
    + [組み合わせイベントデータセット](../connections/combined-dataset.md)
    + [標準検索](../connections/standard-lookups.md)
-   + [クロスチャネル分析](../connections/cca.md)
 
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
@@ -303,11 +302,6 @@ ht-degree: 80%
    + [ステッチの仕組み](../stitching/explained.md)
    + [ステッチされたデータセットの作成と管理](../stitching/stitching-ui.md)
    + [よくある質問](../stitching/faq.md)
-
-+ クロスチャネル分析 {#cca}
-   + [クロスチャネル分析の概要](../cca/overview.md)
-   + [再生の仕組み](../cca/replay.md)
-   + [クロスチャネル分析に関する FAQ](../cca/faq.md)
 
 + アドビの統合 {#integrations}
    + [AdobeソリューションとCustomer Journey Analyticsの概要](/help/integrations/overview.md)

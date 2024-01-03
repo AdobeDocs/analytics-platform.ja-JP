@@ -3,9 +3,10 @@ title: フリーフォームテーブルの動的ディメンション項目と�
 description: テーブルの動的および静的ディメンション項目の操作方法。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '550'
 ht-degree: 81%
 
 ---

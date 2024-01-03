@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer Decision Management とAdobe Customer Journey Ana
 description: Adobe Journey Optimizer Decision Management で生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 20%
+source-wordcount: '710'
+ht-degree: 18%
 
 ---
 
@@ -31,17 +32,17 @@ Adobe Experience Platformは、中央のデータソースとして機能し、�
 
 | データセット | データセットタイプ | 接続設定 | 説明 |
 | --- | --- | --- | --- |
-| ODE DecisonEvents - _sandbox_ 判定 | イベント | ユーザー ID: `IdentityMap` | 決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_ は、特定のサンドボックス名を参照します。 |
-| Adobe Journey Optimizer Message Feedback イベントデータセット | イベント | ユーザー ID: `IdentityMap` | メッセージ配信イベントを含みます。 |
-| Adobe Journey Optimizer E メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | 電子メールトラッキングイベントが含まれます。 |
-| Adobe Journey Optimizerプッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID: `IdentityMap` | プッシュトラッキングイベントが含まれます。 |
+| ODE DecisonEvents - _sandbox_ 判定 | イベント | ユーザー ID : `IdentityMap` | 決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_ は、特定のサンドボックス名を参照します。 |
+| Adobe Journey Optimizer Message Feedback イベントデータセット | イベント | ユーザー ID : `IdentityMap` | メッセージ配信イベントを含みます。 |
+| Adobe Journey Optimizer E メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID : `IdentityMap` | 電子メールトラッキングイベントが含まれます。 |
+| Adobe Journey Optimizerプッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID : `IdentityMap` | プッシュトラッキングイベントが含まれます。 |
 | Adobe Journey Optimizerエンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべてのAdobe Journey Optimizerイベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれます。 |
 
 {style="table-layout:auto"}
 
 ## データレイヤーの作成
 
-接続を作成したら、1 つ以上の[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
+接続を作成したら、1 つ以上の[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
 >[!NOTE]
 >

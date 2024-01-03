@@ -4,9 +4,10 @@ description: Adobe Experience Platform Edge Network Server API と Edge Network 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2308'
 ht-degree: 60%
 
 ---
@@ -227,7 +228,7 @@ datastream は、Adobe Experience Platform Web および Mobile SDK とAdobe Exp
 
 これで、データストリームは、ゲームから収集したデータをAdobe Experience Platformのデータセットに転送するように設定されました。
 
-データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
+データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)を参照してください。
 
 ## Edge Network Server API の使用
 
@@ -375,4 +376,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、収集するデータ（スキーマ）と、そのデータ（データセット）をAdobe Experience Platform内のどこに保存するかを定義します。Edge ネットワーク上にデータストリームを設定し、データをそのデータセットに転送できるようにしました。 次に、Edge Network Server API を使用して、そのデータをデータストリームに送信しました。 ゲームデータや他のデータを使用するCustomer Journey Analyticsで接続を定義しました。 データビュー定義を使用すると、使用するディメンションと指標を指定でき、最後に、ゲームデータを視覚化および分析する最初のプロジェクトを作成しました。
+>すべての手順が完了しました。まず、収集するデータ（スキーマ）と、そのデータ（データセット）をAdobe Experience Platform内のどこに保存するかを定義します。 Edge ネットワーク上にデータストリームを設定し、データをそのデータセットに転送できるようにしました。 次に、Edge Network Server API を使用して、そのデータをデータストリームに送信しました。 ゲームデータや他のデータを使用するCustomer Journey Analyticsで接続を定義しました。 データビュー定義を使用すると、使用するディメンションと指標を指定でき、最後に、ゲームデータを視覚化および分析する最初のプロジェクトを作成しました。

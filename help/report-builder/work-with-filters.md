@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 60%
 
 ---
@@ -132,3 +132,4 @@ ht-degree: 60%
    ![フィルタードロップダウンメニュー](./assets/filter-drop-down.png)
 
 1. 「**適用**」をクリックします。
+

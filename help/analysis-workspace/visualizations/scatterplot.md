@@ -3,7 +3,8 @@ title: 散布図
 description: 最大 3 つの指標間の関係を示すビジュアライゼーション。
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 94%

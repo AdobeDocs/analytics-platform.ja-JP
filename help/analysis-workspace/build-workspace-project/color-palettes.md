@@ -3,9 +3,10 @@ description: ビジュアライゼーションのカラーパレットを変更�
 title: ビジュアライゼーションカラーパレット
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 88%
 
 ---

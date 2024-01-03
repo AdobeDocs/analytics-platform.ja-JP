@@ -2,11 +2,11 @@
 description: 自動保存、名前を付けて保存、テンプレートとして保存などの様々な保存オプションおよび以前のバージョンの開き方について説明します。
 title: プロジェクトの保存
 feature: Workspace Basics
-role: User, Admin
+role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '775'
 ht-degree: 93%
 
 ---

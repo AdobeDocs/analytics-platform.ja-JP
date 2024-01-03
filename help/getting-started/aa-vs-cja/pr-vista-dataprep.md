@@ -3,9 +3,10 @@ title: 処理ルール、VISTA および分類と Analytics ソースコネク�
 description: 処理ルールおよび VISTA を使用した場合とデータ準備を使用した場合を比較し、データ変換について学ぶ
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: ht
-source-wordcount: '619'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---

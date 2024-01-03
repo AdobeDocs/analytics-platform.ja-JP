@@ -3,9 +3,10 @@ title: Adobe Experience Platform への Google Analytics データのストリ�
 description: Google データレイヤーを Adobe Experience Platform に送信するための実装の設定方法について説明します
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '234'
 ht-degree: 100%
 
 ---

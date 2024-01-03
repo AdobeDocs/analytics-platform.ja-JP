@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 72%
+source-wordcount: '1336'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +30,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 | 要素 | 説明 |
 |---|---|
-| [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルの Analysis Workspace とその関連コンポーネントの設定を管理します。 |
+| [環境設定を編集](/help/analysis-workspace/user-preferences.md) | 作成するすべての新規プロジェクトまたはパネルに関する、Analysis Workspaceおよびその関連コンポーネントの設定を管理します。 |
 | [フォルダーを作成](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 新しいフォルダまたはサブフォルダをプロジェクトとフォルダのリストに追加します。 |
 | [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md) | 新しいプロジェクトを最初から開始します。 |
 | 詳細を表示 | 空のプロジェクトまたはモバイルスコアカードを作成するためのオプションを表示します。 [トレーニングチュートリアルの表示](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=ja)または [リリースノートの表示](/help/release-notes/latest.md). |
@@ -47,7 +48,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 | 最終変更日 | プロジェクトが最後に変更された日付。 |
 | 最終開封日 | プロジェクトが最後に開かれた日時。 |
 | プロジェクト ID | プロジェクトの ID。 |
-| 最長の日付範囲 | プロジェクトの最も長い日付範囲。 |
+| 最も長い日付範囲 | プロジェクトの最も長い日付範囲。 |
 | クエリ数 | プロジェクトに含まれるクエリの合計数。 |
 | 場所 | プロジェクトが存在するフォルダー。 |
 
@@ -77,7 +78,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 | 設定 | 説明 |
 |---|---|
-| プロジェクト名前 | プロジェクトに設定された名前。名前をダブルクリックすると編集できます。 |
+| プロジェクト名 | プロジェクトに設定された名前。名前をダブルクリックすると編集できます。 |
 | 作成者 | プロジェクト所有者名。 |
 | 最終変更日 | プロジェクトの最終変更日。 |
 | タグ | 分類を簡単にするためにプロジェクトに適用されたタグのリスト。 |

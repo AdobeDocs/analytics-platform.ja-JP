@@ -3,9 +3,10 @@ title: フィルターの作成
 description: フィルター作成ユーザーインターフェイスについて説明します。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '308'
 ht-degree: 55%
 
 ---
@@ -19,7 +20,7 @@ Workspace では、必要な複雑さ、現在のプロジェクトにのみ適�
 | フィルタータイプ | 作成場所 | 適用対象となる場所 | 使用するタイミング |
 | --- | --- | --- | --- |
 | コンポーネントリストフィルター | 「+」をクリックすると、[フィルタービルダー](/help/components/filters/filter-builder.md)が表示されます。 | すべてのワークスペースプロジェクト | より複雑なフィルターの場合、順次フィルター |
-| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | アドホックの単一ルールフィルター（ドラッグ&amp;ドロップを使用）または（フィルターアイコンをクリックして）複数のルールを追加/編集するために使用できます |
+| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | アドホックの単一ルールフィルター（ドラッグ&amp;ドロップを使用）または（フィルターアイコンをクリックして）複数のルールを追加/編集するために使用できます。 |
 | フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
 | 計算指標ベースのフィルター | [計算指標ビルダー](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
 

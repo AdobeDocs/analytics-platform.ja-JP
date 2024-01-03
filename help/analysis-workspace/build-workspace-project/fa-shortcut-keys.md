@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Workspace のホットキーの使用方法
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-source-git-commit: 378098861bde949a2224a9b8c6376aa7b5e8ec27
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '299'
 ht-degree: 93%
 
 ---

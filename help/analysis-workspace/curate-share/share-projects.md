@@ -4,10 +4,11 @@ keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 36%
+source-wordcount: '1966'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +51,7 @@ ht-degree: 36%
 
 * プロジェクトの役割 (**[!UICONTROL オリジナルを編集]**, **[!UICONTROL コピーを編集]**、および **[!UICONTROL 読み取り専用]**) は、ユーザーと特定のプロジェクト ID に結び付けられます。 プロジェクトの役割は、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) で管理されるユーザー権限とは独立しています。
 
-* Customer Journey Analytics では、[Adobe Experience Cloud 管理コンソール](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja)の製品プロファイルによってグループが定義されます。管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
+* Customer Journey Analyticsでは、グループは [Adobe Experience Cloud admin console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja). 管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
 
 * 複数の役割に配置されたユーザーは、常に最高のエクスペリエンスを得ることができます。これは、ユーザーが個人として、またはグループの一部として追加された場合に発生する可能性があります。例えば、ユーザーに **[!UICONTROL オリジナルを編集]** 個人としての役割と **[!UICONTROL 読み取り専用]** グループのメンバーとしての役割を持つユーザーは、 **[!UICONTROL オリジナルを編集]** プロジェクト体験。
 
@@ -59,8 +60,7 @@ ht-degree: 36%
 特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには：
 
 1. 共有するプロジェクトに移動し、「 **[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]**.
-
-未保存の変更がある場合は、最初にプロジェクトを保存するように求められます。
+未保存の変更がある場合は、最初にプロジェクトを保存するよう求められます。
 
    ![プロジェクトを共有ウィンドウ。](assets/share-proj-modal.png)
 
@@ -96,7 +96,7 @@ ht-degree: 36%
 
 プロジェクトリンクを組織内のユーザーと共有するには、次の手順を実行します。
 
-1. プロジェクトを保存します。未保存の変更がある場合は、リンクを共有する前にプロジェクトを保存するよう求められます。
+1. プロジェクトを保存します。 未保存の変更がある場合は、リンクを共有する前にプロジェクトを保存するよう求められます。
 
 1. 選択 **[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択し、「 **[!UICONTROL コピー]** の横 **[!UICONTROL リンクで共有]** フィールドに入力します。
 
@@ -150,7 +150,7 @@ ht-degree: 36%
 
 1. 次のセキュリティオプションを有効にするかどうかを選択します ( このオプションはCustomer Journey Analytics管理者が制御できます )。
 
-   * **[!UICONTROL Experience Cloud 認証を要求]:**
+   * **[!UICONTROL Experience Cloud認証が必要]:**
 
      このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーだけです。 ただし、と共有するユーザーは、Adobe Analyticsにアクセスできる必要はありません。
 

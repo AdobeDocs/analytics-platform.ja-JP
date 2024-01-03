@@ -4,9 +4,10 @@ description: Adobe Experience Platform Web SDK と Edge Network を使用して 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3616'
+source-wordcount: '3560'
 ht-degree: 85%
 
 ---
@@ -227,7 +228,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 これで、web サイトから収集したデータを Adobe Experience Platform でデータセットに転送するように、データストリームが設定されました。
 
-データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
+データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)を参照してください。
 
 
 

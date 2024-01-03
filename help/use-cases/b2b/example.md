@@ -5,10 +5,12 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
+exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 21%
+source-wordcount: '1755'
+ht-degree: 22%
 
 ---
 
@@ -33,7 +35,7 @@ ht-degree: 21%
 | B2B 商談人物関係データセット | B2B 商談人物関係スキーマ | ルックアップ | XDM Business Opportunity Person Relation | XDM Business Opportunity Person Relation は、ビジネスオポチュニティに関連付けられている人物の最小限の必要なプロパティをキャプチャする、標準の Experience Data Model(XDM) クラスです。 |
 | B2B キャンペーンデータセット | B2B キャンペーンスキーマ | ルックアップ | XDM Business Campaign | XDM ビジネスキャンペーンは、ビジネスキャンペーンの最低限必要なプロパティを取り込む、標準のエクスペリエンスデータモデル (XDM) クラスです。 |
 | B2B マーケティングリストデータセット | B2B マーケティングリストスキーマ | ルックアップ | XDM マーケティングリスト | XDM ビジネスマーケティングリストは、マーケティングリストの最低限必要なプロパティを取り込む、標準の Experience Data Model(XDM) クラスです。 マーケティングリストを使用すると、製品を購入する可能性が最も高い見込み客を優先することができます。 |
-| B2B マーケティングリストメンバーデータセット | B2B マーケティングリストメンバースキーマ | ルックアップ | XDM Marketing List Members | XDM Business Marketing List Members は、マーケティングリストに関連付けられたメンバー、人、または連絡先を記述する、標準の Experience Data Model(XDM) クラスです。 |
+| B2B マーケティングリストメンバーデータセット | B2B マーケティングリストメンバースキーマ | ルックアップ | XDM マーケティングリストメンバー | XDM Business Marketing List Members は、マーケティングリストに関連付けられたメンバー、人、または連絡先を記述する、標準の Experience Data Model(XDM) クラスです。 |
 
 ルックアップスキーマ、プロファイルスキーマ、イベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 詳しくは、 [Real-time Customer Data Platform B2B エディション](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) および [Real-time Customer Data Platform B2B Edition で 2 つのスキーマ間に多対 1 の関係を定義する](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) を参照してください。
 
@@ -307,4 +309,3 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 ![ビジュアライゼーション](assets/visualizations.png)
 
 +++
-

@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 87%

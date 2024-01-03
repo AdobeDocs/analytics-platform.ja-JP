@@ -2,13 +2,13 @@
 description: ダッシュボードスコアカードの使用手順。
 title: Analytics ダッシュボードエグゼクティブガイド
 feature: Analytics Dashboards
-role: User, Admin
+role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 77%
+source-wordcount: '1294'
+ht-degree: 75%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 77%
    ログインして、何も共有されていないというメッセージが表示された場合は、キュレーターに次の点を確認してください。
 
    * 適切なCustomer Journey Analyticsサンドボックスにログインできます。
-   * スコアカードが共有されている.
+   * スコアカードが共有されている。
 
    ![何も共有されていない](assets/nothing.png)
 
@@ -115,7 +115,7 @@ ht-degree: 77%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。画面右上の「**[!UICONTROL 完了]**」をタップします。「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. スコアカードにセグメントフィルターを適用するには、フィルタードロップダウンリストをタップし、キュレーターが設定したセグメントを選択します。 アプリの[フィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、 Workspace と同様に機能します。
+1. スコアカードにセグメントフィルターを適用するには、フィルタードロップダウンリストをタップし、キュレーターが設定したセグメントを選択します。 [フィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) アプリの機能は、Workspace の場合と同じです。
 
    ![セグメントフィルター](assets/segment_filter.png)
 
