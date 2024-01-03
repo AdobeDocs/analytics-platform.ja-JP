@@ -1,21 +1,21 @@
 ---
 title: Customer Journey Analytics での Report Builder の設定方法
 description: Customer Journey AnalyticsでReport Builderを設定する方法を説明します
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
 # Report Builder の設定
 
-Excel のアドインメニューを使用して、Report Builder にすばやくアクセスできます。
+Excel アドインメニューを使用すると、Report Builderにすばやくアクセスできます。
 
 ## 要件
 

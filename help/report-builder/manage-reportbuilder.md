@@ -1,15 +1,15 @@
 ---
 title: Customer Journey Analytics での Report Builder を使用したデータブロックの管理方法
 description: Report Builder での管理機能の使用方法を説明します
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 73%
+ht-degree: 71%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 73%
 
 <img src="./assets/refresh-icon.png" width="15%" alt="更新アイコン"/>
 
-データブロックが更新されたかどうかを確認するには、更新ステータスアイコンを確認します。
+データ・ブロックが更新されたかどうかを確認するには、「更新ステータス」アイコンを表示します。
 
 データブロックが正常に更新されると、緑の円にチェックマークが表示されます。 <img src="./assets/refresh-success.png" width="5%" alt="チェックマークアイコン付きの緑の円"/> を参照してください。
 

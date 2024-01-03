@@ -1,12 +1,12 @@
 ---
 title: Customer Journey AnalyticsでのReport Builderの設定方法
 description: オフラインモード、言語、基準日、トラブルシューティングの設定方法について説明します。
-role: Data Engineer, Data Architect, Admin, User
+role: Admin
 feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 87%
