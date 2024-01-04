@@ -4,9 +4,9 @@ description: Customer Journey Analyticsのガードレールの詳細
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 13%
 
 ---
@@ -210,8 +210,9 @@ ht-degree: 13%
 | Adobe Analyticsソースコネクタからリアルタイム顧客プロファイル（A4T は無効） | &lt; 2 分 |
 | Adobe Analyticsソースコネクタからリアルタイム顧客プロファイル（A4T 有効） | &lt; 30 分 |
 | Edge ネットワークからデータレイクにデータを取り込む、またはストリーミングを取り込む | &lt; 60 分 |
-| Adobe Analyticsソースコネクタからデータレイクにデータを取り込む | &lt; 90 分 |
+| Adobe Analyticsソースコネクタからデータレイクにデータを取り込む | &lt; 2.25 時間 |
 | データレイクからCustomer Journey Analyticsにデータを取り込む | &lt; 90 分 |
+| ステッチ ( オプション機能： [ステッチの概要](../stitching/overview.md) （詳細情報） | &lt; 3.25 時間 |
 | 100 億イベント未満のAdobe Analyticsソースコネクタのバックフィル（最大 13 ヶ月の履歴データ） | &lt; 4 週間 |
 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | ≈ 60 分 |
 | オーディエンスの更新頻度 | 1 回の更新：5 分未満の待ち時間。<br/>4 時間ごと、日別、週別、月別に更新します（遅延は更新率と連携します）。 |
