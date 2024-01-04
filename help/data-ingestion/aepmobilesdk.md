@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3342'
-ht-degree: 61%
+source-wordcount: '3385'
+ht-degree: 60%
 
 ---
 
@@ -101,6 +101,10 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
 1. Adobe Analytics の [!UICONTROL フィールドのプロパティ] パネル、入力 `identification` として [!UICONTROL フィールド名], **[!UICONTROL 識別]** として [!UICONTROL 表示名]を選択します。 **[!UICONTROL オブジェクト]** として [!UICONTROL タイプ] を選択し、 **[!UICONTROL ExperienceEvent Core v2.1]** として [!UICONTROL フィールドグループ].
+
+   >[!NOTE]
+   >
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-mobile.png)
 
