@@ -5,7 +5,7 @@ title: エクスポートを管理
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 4%
