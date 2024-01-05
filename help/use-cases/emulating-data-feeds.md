@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2558'
 ht-degree: 17%
 
 ---
@@ -66,7 +66,7 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 
 クエリで使用できる XDM フィールドは、データセットの基となるスキーマ定義に応じて異なります。 データセットの基になるスキーマを理解していることを確認します。
 
-データフィード列と XDM フィールド間のマッピングを容易にするには、 [Adobe Analytics ExperienceEvent テンプレート](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) フィールドグループを作成します。 詳しくは、 [データモデリングのベストプラクティス](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 具体的には [Adobeアプリケーションスキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+データフィード列と XDM フィールド間のマッピングを定義するには、 [Adobe Analytics ExperienceEvent テンプレート](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) フィールドグループを使用します。 詳しくは、 [データモデリングのベストプラクティス](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 具体的には [Adobeアプリケーションスキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 例えば、 *ページ名* をデータフィードの一部として使用する場合：
 
