@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 
 オプションの標準コンポーネントは、 **[!UICONTROL データビュー]**／ **[!UICONTROL データビューを編集]**／ **[!UICONTROL コンポーネント]**&#x200B;タブ／ **[!UICONTROL 標準コンポーネント]** タブにあります。
 
-| コンポーネント名 | ディメンションまたは指標 | メモと値 |
+| コンポーネント名 | ディメンションまたは指標 | メモおよび値 |
 | --- | --- | --- |
 | [!UICONTROL 午前／午後] | 時間分割ディメンション | 午前または午後 |
 | [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL イベント]が含まれていた Experience Platform バッチを表します。 |
