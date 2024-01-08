@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
+source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 17%
+source-wordcount: '2537'
+ht-degree: 13%
 
 ---
 
@@ -57,7 +57,7 @@ SELECT 文およびその他の制限付きコマンドに対して、標準 ANS
 
 Experience Platformでは、様々な ID を使用できます。 クエリを作成する場合は、ID に対して正しくクエリを実行していることを確認します。
 
-多くの場合、ID は別のフィールドグループで見つかります。 実装 ECID(`ecid`) は、 `core` それ自体が一部であるオブジェクト `identification` オブジェクト。 ( 例： `_sampleorg.identification.core.ecid`) をクリックします。 ECID は、スキーマ内で別々に整理される場合があります。
+多くの場合、ID は別のフィールドグループで見つかります。 実装 ECID(`ecid`) は、 `core` それ自体が一部であるオブジェクト `identification` オブジェクト ( 例： `_sampleorg.identification.core.ecid`) をクリックします。 ECID は、スキーマ内で別々に整理される場合があります。
 
 または、 `identityMap` をクリックして id をクエリします。 このオブジェクトのタイプはです `Map` とは、 [ネストされたデータ構造](#nested-data-structure).
 
@@ -71,9 +71,9 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 例えば、 *ページ名* をデータフィードの一部として使用する場合：
 
 * Adobe Analyticsデータフィードの UI で、次のように選択します。 **[!UICONTROL pagename]** をデータフィード定義に追加する列として使用します。
-* クエリサービスで、以下を含めます。 `web.webPageDetails.name` から `sample_event_dataset_for_website_global_v1_1` データセット ( **Web サイト用のサンプルイベントスキーマ (Gobal v1.1)** エクスペリエンスイベントスキーマ ) をクエリに含める必要があります。 詳しくは、 [Web 詳細スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) を参照してください。
+* クエリサービスで、以下を含めます。 `web.webPageDetails.name` から `sample_event_dataset_for_website_global_v1_1` データセット ( **Web サイト用のサンプルイベントスキーマ (Global v1.1)** エクスペリエンスイベントスキーマ ) をクエリに含める必要があります。 詳しくは、 [Web 詳細スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) を参照してください。
 
-エクスペリエンスイベントデータセットと基になるスキーマの以前のAdobe Analyticsデータフィード列と XDM フィールドのマッピングについて詳しくは、 [Analytics フィールドのマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja) そして [Adobe Analytics ExperienceEvent Full Extension スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) を参照してください。
+エクスペリエンスイベントデータセットと基になるスキーマのAdobe Analyticsデータフィード列と XDM フィールドのマッピングについて詳しくは、 [Analytics フィールドのマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja) および [Adobe Analytics ExperienceEvent Full Extension スキーマフィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) を参照してください。
 
 さらに、 [Experience PlatformWeb SDK によって自動的に収集された情報（初期設定の状態）](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) は、クエリの列を識別するのに関連する場合があります。
 
@@ -84,21 +84,21 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 | データフィード列 | XDM フィールド | タイプ | 説明 |
 |---|---|---|---|
 | hitid_high + hitid_low | _id | string | ヒットを識別する一意の ID。 |
-| hitid_low | _id | string | hitid_high と組み合わせて使用し、ヒットを一意に識別します。 |
-| hitid_high | _id | string | hitid_high と組み合わせて使用し、ヒットを一意に識別します。 |
-| hit_time_gmt | receivedTimestamp | string | ヒットのタイムスタンプ（UNIX 時間）。 |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | 訪問者の本当に最初のヒットのタイムスタンプ（UNIX 時間）。 |
-| cust_hit_time_gmt | タイムスタンプ | string | タイムスタンプが有効なデータセットでのみ使用されます。Unix 時間に基づいて送信されるタイムスタンプです。 |
+| hitid_low | _id | string | hitid_high と共に使用し、ヒットを一意に識別します。 |
+| hitid_high | _id | string | hitid_high と共に使用し、ヒットを一意に識別します。 |
+| hit_time_gmt | receivedTimestamp | string | ヒットのタイムスタンプ (UNIX®時間 )。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | 訪問者の最初のヒットのタイムスタンプ (UNIX®時間 )。 |
+| cust_hit_time_gmt | タイムスタンプ | string | タイムスタンプが有効なデータセットでのみ使用されます。UNIX®時間に基づいて、ヒットと共に送信されるタイムスタンプです。 |
 | visid_high + visid_low | identityMap | オブジェクト | 訪問の一意の ID。 |
 | visid_high + visid_low | endUserIDs._experience.aaid.id | string | 訪問の一意の ID。 |
-| visid_high | endUserIDs._experience.aaid.primary | ブール型 | visid_low と組み合わせて使用し、訪問を一意に識別します。 |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | visid_low と組み合わせて使用し、訪問を一意に識別します。 |
-| visid_low | identityMap | オブジェクト | visid_high と組み合わせて使用し、訪問を一意に識別します。 |
+| visid_high | endUserIDs._experience.aaid.primary | ブール型 | visid_low と共に使用し、訪問を一意に識別します。 |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | visid_low と共に使用し、訪問を一意に識別します。 |
+| visid_low | identityMap | オブジェクト | visid_high と共に使用し、訪問を一意に識別します。 |
 | cust_visid | identityMap | オブジェクト | 顧客訪問者 ID |
 | cust_visid | endUserIDs._experience.aacustomid.id | オブジェクト | 顧客訪問者 ID。 |
 | cust_visid | endUserIDs._experience.aacustomid.primary | ブール型 | 顧客訪問者 ID 名前空間コード。 |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | visid_low と組み合わせて使用し、顧客の訪問者 ID を一意に識別します。 |
-| geo\_* | placeContext.geo.* | 文字列、数値 | 位置情報データ（国、地域、市区町村など） |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | visid_low と共に使用し、顧客の訪問者 ID を一意に識別します。 |
+| geo\_* | placeContext.geo.* | 文字列、数値 | 国、地域、市区町村などの位置情報データ |
 | visit_page_num | _experience.analytics.session.depth | number | 「ヒットの深さ」ディメンションで使用される変数。この値は、ユーザーが生成したヒットごとに 1 ずつ増加し、各訪問後にリセットされます。 |
 | event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | 標準コマースおよびカスタムイベントがヒット時にトリガーされました。 |
 | page_event | web.webInteraction.type | string | イメージリクエストで送信されるヒットのタイプ（標準的なヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
@@ -106,7 +106,7 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 | page_event_var_1 | web.webInteraction.URL | string | リンクトラッキングイメージリクエストでのみ使用される変数。この変数には、クリックされたダウンロードリンク、離脱リンク、またはカスタムリンクの URL が含まれます。 |
 | page_event_var_2 | web.webInteraction.name | string | リンクトラッキングイメージリクエストでのみ使用される変数。このリストは、リンクのカスタム名をリスト表示します（指定されている場合）。 |
 | first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | 訪問者の最初のリファラーのリファラータイプを表す数値 ID。 |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 整数 | 訪問者の本当に最初のヒットのタイムスタンプ（UNIX 時間）。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 整数 | 訪問者の最初のヒットのタイムスタンプ (UNIX®時間 )。 |
 | paid_search | search.isPaid | ブール型 | ヒットが有料検索の検出に一致した場合に設定されるフラグ。 |
 | ref_type | web.webReferrertype | string | ヒットのリファラルのタイプを表す数値 ID。 |
 
@@ -114,7 +114,7 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 
 Adobe Analyticsデータフィードは、列の概念を使用し、 `post_` プレフィックス。処理後のデータを含む列です。 詳しくは、[データフィードに関する FAQ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post) を参照してください。
 
-Experience PlatformEdge Network（Web SDK、モバイル SDK、Server API）を使用してデータセットで収集されたデータには、 `post_` フィールド：理由を説明します。 `post_` 先頭に *non* `post_` プレフィックスが付いたデータフィード列が Analytics フィールドにマッピングされ、同じ XDM フィールドにマッピングされます。 例えば、 `page_url` および `post_page_url` データフィード列を同じにマッピングする `web.webPageDetails.URL` XDM フィールド。
+Experience PlatformEdge Network（Web SDK、モバイル SDK、Server API）を使用してデータセットで収集されたデータには、 `post_` フィールド。 その結果、 `post_` 先頭に *non*-`post_` プレフィックスが付いたデータフィード列は、同じ XDM フィールドにマッピングされます。 例えば、 `page_url` および `post_page_url` データフィード列を同じにマッピングする `web.webPageDetails.URL` XDM フィールド。
 
 詳しくは、 [Adobe AnalyticsとCustomer Journey Analyticsでのデータ処理の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=ja) ：データの処理の違いの概要。
 
@@ -168,11 +168,11 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 例
 
-例えば、Experience Platformデータレイクのデータセットのデータを使用するクエリでは、Adobe定義関数や Spark SQL の追加機能を利用し、同等のAdobe Analyticsデータフィードと同様の結果を提供します。
+Experience Platformデータレイクのデータセットのデータを使用するクエリで、は、Adobe定義関数や Spark SQL の追加機能をタップし、同等のAdobe Analyticsデータフィードと同様の結果を提供するクエリについては、
 
-* [離脱した参照](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
-* [アトリビューション分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
-* [ボットフィルタリング](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* [離脱した参照](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)
+* [アトリビューション分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)
+* [ボットフィルタリング](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)
 * およびクエリサービスガイドのその他の使用例を参照してください。
 
 
@@ -238,7 +238,7 @@ Experience PlatformUI を使用して、出力データセットの書き出し�
 
 #### 基本を学ぶ
 
-次の条件を満たしていることを確認します。 [必要な権限](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) ：データセットと、出力データセットの送信先である宛先が、データセットの書き出しをサポートしている書き出し先。 次に、次の操作を行う必要があります。 [必須ヘッダーとオプションヘッダーの値の収集](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) API 呼び出しでを使用し、 [宛先の接続仕様 ID とフロー仕様 ID を特定します。](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) データセットをに書き出す予定です。
+データセットを書き出すには、 [必要な権限](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions). また、出力データセットの送信先が、データセットの書き出しをサポートしていることを確認します。 次に、次の操作を行う必要があります。 [必須ヘッダーとオプションヘッダーの値の収集](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) API 呼び出しで使用する また、 [宛先の接続仕様 ID とフロー仕様 ID を特定します。](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) データセットをに書き出す予定です。
 
 #### 適格なデータセットの取得
 
