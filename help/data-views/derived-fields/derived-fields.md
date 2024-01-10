@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5783'
+source-wordcount: '5933'
 ht-degree: 13%
 
 ---
@@ -1280,6 +1280,34 @@ storeID を含むデータを収集します。 storeID には、省略された
 - 派生フィールドのルールを定義する場合、最大 10 個の異なるスキーマフィールド（標準フィールドを除く）を使用できます。
    - この最大 10 個の異なるスキーマフィールドから、最大 3 つのルックアップスキーマまたはプロファイルスキーマフィールドのみを使用できます。
 - 1 つのCustomer Journey Analytics接続につき最大 100 個の派生フィールドを指定できます。
+
+
+### 関数制限の概要
+
+| 関数 | 制限 |
+|---|---|
+| <p>Case When</p> | <ul><li>5 例派生フィールドごとの関数の場合</li><li>派生フィールドあたり 200 個の演算子</li></ul> |
+| <p>分類</p> | <ul><li>派生フィールドごとの 5 つの関数の分類</li><li>1 関数あたり 100 行</li></ul> |
+| <p>連結</p> | <ul><li>派生フィールドごとの 2 つの連結関数</li></ul> |
+| <p>検索と置換</p> | <ul><li>2 派生フィールドごとの検索と置換関数</li></ul> |
+| <p>ルックアップ</p> | <ul><li>派生フィールドごとの 5 つのルックアップ関数</li></ul> |
+| <p>小文字</p> | <ul><li>派生フィールドごとの 2 つの小文字関数</li></ul> |
+| <p>フィールドを結合</p> | <ul><li>派生フィールドごとの 2 つの結合フィールド関数</li></ul> |
+| <p>正規表現による置換</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
+| <p>Split</p> | <ul><li>派生フィールドごとに 5 つの分割関数</li></ul> |
+| <p>トリミング</p> | <ul><li>派生フィールドごとの 1 トリミング関数</li></ul> |
+| <p>URL の解析</p> | <ul><li>5 つの URL 解析関数（派生フィールドごと）</li></ul> |
+
+{style="table-layout:auto"}
+
+### 演算子
+
+Case 内の If または Else If 構文の演算子 When 関数は、条件と **1 つ** の値です。 条件に値を追加するたびに、演算子の数が増加します。
+
+例えば、以下の条件では 13 演算子が使用されています。
+
+![サンプル演算子](assets/operators-sample.png)
+
 
 ## 詳細情報
 
