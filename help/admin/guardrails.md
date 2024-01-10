@@ -4,9 +4,9 @@ description: Customer Journey Analyticsのガードレールの詳細
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 13%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 13%
 | オーディエンス更新頻度 | 4 | システムが適用するガードレール | 最大頻度（時間単位、1 時間単位） [audience](../components/audiences/audiences-overview.md) 更新される可能性があります。 | |
 | オーディエンス更新のルックバックウィンドウ | 90 | システムが適用するガードレール | 更新ルックバックウィンドウの最大日数。 |
 | オーディエンスの有効期限日を更新しています | 13 | システムが適用するガードレール | オーディエンスの最大月数は、作成日から更新されなくなります。 お客様は、この機能をさらに 13 ヶ月延長できます。 |
-| 更新するオーディエンスの数 | 75, 100, 150 | システムが適用するガードレール | 更新するオーディエンスの最大数。値は、パッケージによって異なります。 |
+| 更新するオーディエンスの数 | 75, 100 | システムが適用するガードレール | オーディエンスの更新の最大数。値は、パッケージによって異なります（製品の説明を参照）。 |
 
 {style="table-layout:auto"}
 
