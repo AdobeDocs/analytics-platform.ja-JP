@@ -4,16 +4,26 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2756'
-ht-degree: 89%
+source-wordcount: '2781'
+ht-degree: 88%
 
 ---
 
 # Customer Journey Analytics - ドキュメントのアップデート
 
 Customer Journey Analytics ドキュメントには、初回リリース以降に次の更新が行われました。
+
+## 2024
+
+| 機能 | 説明 |
+| --- | --- |
+| **2024年1月** | |
+| 派生フィールド | 関数の概要を追加しました。 [制限](/help/data-views/derived-fields/derived-fields.md#limitations) 数の決定方法に関する説明 [演算子](/help/data-views/derived-fields/derived-fields.md#operators) 関数で使用されます。 |
+
+{style="table-layout:auto"}
+
 
 ## 2023年
 
@@ -94,6 +104,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ランディングページ | CJA の[ランディングページ](/help/getting-started/landing.md)が更新されました。 |
 | ワークブックのスケジュール設定 | Report Builder で[ワークブックのスケジュールを設定](/help/report-builder/schedule-reportbuilder.md)する方法について説明する専用ページを追加しました。 |
 | プロファイルおよびルックアップデータセットでのオブジェクト配列のサポート | [オブジェクトの配列の使用](/help/use-cases/object-arrays.md)および [Adobe Experience Platform オーディエンスの取り込み](/help/use-cases/data-ingestion/ingest-aep-segments.md)を更新して、プロファイルデータセットとルックアップデータセットでのオブジェクト配列のサポートを反映しました。 |
+
+{style="table-layout:auto"}
 
 ## 2022
 
