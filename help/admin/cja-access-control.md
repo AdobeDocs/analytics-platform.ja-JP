@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 81%
+source-wordcount: '969'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
 ## 製品管理者の役割
 
-製品管理者には、Customer Journey Analytics内で必要なタスクを完了する権限があります。 [Admin Console](https://adminconsole.adobe.com/enterprise/) の [!UICONTROL Customer Journey Analytics]／「[!UICONTROL 管理者]」タブ／[!UICONTROL 管理者を追加]で、**Customer Journey Analytics 製品プロファイル**&#x200B;に自身が製品管理者として追加されている必要があります。製品管理者には、次の権限が付与されます。
+製品管理者には、Customer Journey Analytics内で必要なタスクを完了する権限があります。 製品管理者として、 **Customer Journey Analytics製品プロファイル** （内） [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理者] タブ/ [!UICONTROL 管理者を追加]. 製品管理者には、次の権限が付与されます。
 
 * 接続またはデータ表示の作成／更新／削除を行う
 * 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新／削除を行います。
@@ -93,7 +93,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
-| [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). <p>Adobe Experience PlatformでCustomer Journey Analyticsユーザーの宛先アクセスを追加する方法について詳しくは、 [宛先とアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja)</p> |
 | **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
 | **[!UICONTROL フィルターの作成]** | ユーザーは[フィルター](/help/components/filters/filters-overview.md)を作成できます。 |
 | **[!UICONTROL Labs のアクセス]** | ユーザーが [Labs](/help/labs/labs.md) 」タブをCustomer Journey Analyticsに追加します。 |
