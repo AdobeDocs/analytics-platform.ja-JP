@@ -4,10 +4,10 @@ description: Google データレイヤーを Adobe Experience Platform に送信
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 1. [Google データレイヤー拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html?lang=ja)をインストールする。この拡張機能は、Web SDK 拡張機能をインストールした環境の代替となるもので、Google データレイヤーに特化しています。
 1. Adobe Experience Platform データ収集に[データストリームを作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja)する。データを Adobe Experience Platform に送信するようデータストリームを設定します。現時点では、ここで各 Google データレイヤーオブジェクトを該当する XDM フィールドにマッピングする必要があります。アドビでは今後、このマッピングワークフローを簡略化する予定です。
 
-サイトに目的のタグを実装して公開したら、[接続を作成](/help/connections/create-connection.md)手順、さらに[データビューを作成](/help/data-views/create-dataview.md)手順に進むことができます。
+サイトに目的のタグを実装して公開したら、次に進みます。 [接続の作成](/help/connections/create-connection.md)を、 [データビューの作成](/help/data-views/create-dataview.md).

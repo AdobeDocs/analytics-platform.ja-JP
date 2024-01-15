@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 60%
+source-wordcount: '393'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Platform(Adobe Experience Platform) で新しく利用可能な
 
 ## 手順 3:Customer Journey Analyticsでこのデータセットへの接続を設定する
 
-Experience Platformデータセットに関するレポートを作成するには、まずExperience PlatformとCustomer Journey Analyticsのデータセット間で接続を確立する必要があります。 詳しくは、[接続の作成](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja)を参照してください。
+Experience Platformデータセットに関するレポートを作成するには、まずExperience PlatformとCustomer Journey Analyticsのデータセット間で接続を確立する必要があります。 詳細については、を参照してください。 [接続の作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja).
 
 ## 手順 4： 1 つ以上のデータビューの作成
 

@@ -1,18 +1,18 @@
 ---
-title: 接続の作成
-description: Customer Journey Analytics で Platform データセットへの接続を作成する方法について説明します。
+title: 接続の作成または編集
+description: Customer Journey Analyticsで接続データセットへの接続を作成または編集する方法についてExperience Platformします。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2741'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 99%
 
 ---
 
-# 接続の作成
+# 接続の作成または編集
 
 接続の作成と編集ワークフローエクスペリエンスでは、すべてのデータセットと接続設定が、補助的なワークフローで画面の中央に表示されます。データセットのタイプ、サイズ、スキーマ、データセット ID、バッチステータス、バックフィルステータス、ユーザー ID などの重要な情報を含む詳細なデータセットの選択、設定、レビューエクスペリエンスを提供し、接続設定ミスのリスクを軽減します。機能の概要を以下に示します。
 
