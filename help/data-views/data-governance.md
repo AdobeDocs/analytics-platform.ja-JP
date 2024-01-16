@@ -4,10 +4,10 @@ description: Adobe Experience Platform で定義されたデータラベルと�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 ## 有効なポリシーがデータビューに与える影響
 
-**[!UICONTROL Analytics の適用]**&#x200B;ポリシーまたは&#x200B;**[!UICONTROL ダウンロードの適用]**&#x200B;ポリシーがオンになると、特定のデータラベル（C8 や C12 など）が関連付けられているスキーマコンポーネントは、データビューに追加できません。
+次の場合、 **[!UICONTROL Analytics の適用]** ポリシーがオンになっている場合、特定のデータラベル（C8 など）が関連付けられているスキーマコンポーネントは、データビューに追加できません。
 
 これらのコンポーネントは、左側のパネルの[!UICONTROL スキーマフィールド]リストでグレー表示されます。
 
