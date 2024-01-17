@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ Customer Journey Analytics製品およびドキュメントの最新の機能強
 
 >[!TAB Workspace：時系列の予測]
 
-予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しいAnalysis Workspace機能です。
+予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しいAnalysis Workspace機能です。 予測は、時系列関連のデータに対してのみ使用できます。
 
 [![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB 接続：スキップされたレコード]
 
-接続の定義の一環としてレコードがスキップされた理由を調べることができるようになりました。 詳しくは、接続の管理を参照してください。
+接続を定義する際に、イベントデータセットのレコードがスキップされた理由を調べることができるようになりました。 空の訪問者 ID、データ保持など、レコードがスキップされた理由に関する詳細を取得できます。
 
 [![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
