@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 13%
+source-wordcount: '520'
+ht-degree: 19%
 
 ---
 
 # Customer Journey Analytics ガイド
 
+このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。Customer Journey Analyticsを使用すると、選択したチャネル（オンラインとオフラインの両方）から顧客データをAdobe Experience Platformに取り込み、今日のAnalysis Workspaceを使用する既存のデジタルデータと同様に、このデータを分析できます。
+
+Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータを接続する方法を制御でき、最終的に、アトリビューション、フィルター、フロー、フォールアウトなどを実行できます。」と入力します。
 
 ## 新着情報
 
@@ -21,23 +24,23 @@ Customer Journey Analytics製品およびドキュメントの最新の機能強
 
 >[!BEGINTABS]
 
->[!TAB Workspace：時系列の予測]
+>[!TAB ガイド付き分析 — 定着率]
 
-予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しいAnalysis Workspace機能です。 予測は、時系列関連のデータに対してのみ使用できます。
+目的の日付範囲内での最初のエンゲージメント後に再訪するユーザーの割合を示す新しい表示タイプ
 
-[![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB 接続：スキップされたレコード]
+>[!TAB ガイド付き分析 — 近似曲線]
 
-接続を定義する際に、イベントデータセットのレコードがスキップされた理由を調べることができるようになりました。 空の訪問者 ID、データ保持など、レコードがスキップされた理由に関する詳細を取得できます。
-
-[![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics：近似曲線]
-
-トレンドラインオーバーレイがガイド付き分析の使用状況ビューで使用できるようになり、データにより明確なパターンを表現するのに役立ちました。
+使用状況ビューでトレンドラインオーバーレイを使用できるようになり、データにより明確なパターンを表現するのに役立ちました。
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB 主要指標の概要ビジュアライゼーション]
+
+主要指標の概要ビジュアライゼーションを使用する場合、選択した比較日付範囲オプションが主日付範囲に対するものか固定のものかに応じて、比較日付範囲が自動的に更新されるようになりました。
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
