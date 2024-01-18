@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
+source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1097'
 ht-degree: 63%
 
 ---
@@ -56,13 +56,17 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
      Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja)を参照してください。
 
-* AEP の宛先からデータセットを書き出す
+* データセットをクラウドに書き出す [宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)
+
+  >[!AVAILABILITY]
+  >
+  >この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース手順については、 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
 
   このタスクを実行するには、次のExperience Platform権限も必要です。
    * 宛先の管理
    * 宛先のアクティブ化
 
-     宛先の権限について詳しくは、「Experience Platformの宛先」を参照してください。 [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja).
+     宛先の権限について詳しくは、「Experience Platformの宛先」を参照してください。 [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
 
 ## 製品プロファイル管理者の役割
 

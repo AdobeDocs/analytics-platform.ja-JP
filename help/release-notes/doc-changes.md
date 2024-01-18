@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9beeb2013eb3b94dc55fb721233096f1813e2bf3
+source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
 workflow-type: tm+mt
-source-wordcount: '2792'
-ht-degree: 88%
+source-wordcount: '2809'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年1月** | |
+| データセットの書き出しに必要な権限 | 次の項目を説明する情報を追加しました： [必要な権限](/help/admin/cja-access-control.md) データセットをクラウドの宛先に書き出す。 |
 | 接続の管理 | 更新された [接続を管理](../connections/manage-connections.md) お客様のフィードバックに基づく記事。 |
 | 派生フィールド | 関数の概要を追加しました。 [制限](/help/data-views/derived-fields/derived-fields.md#limitations) 数の決定方法に関する説明 [演算子](/help/data-views/derived-fields/derived-fields.md#operators) 関数で使用されます。 |
 
