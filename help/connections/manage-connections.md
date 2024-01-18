@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2485'
 ht-degree: 27%
 
 ---
@@ -118,17 +118,11 @@ ht-degree: 27%
 
 ![ウィジェットと設定を表示するすべてのデータセットウィンドウ](assets/conn-details.png)
 
-接続の詳細画面には、接続のステータスの詳細が表示されます。 次のことができます。
+[ 接続の詳細 ] インターフェイスには、接続の状態の詳細が表示されます。 次のことができます。
 
 * 接続データセットのステータスと取り込みプロセスのステータスを確認します。
 * スキップまたは削除されたレコードを引き起こす可能性のある設定の問題を特定します。
 * データをレポートに使用できるタイミングを確認します。
-
->[!IMPORTANT]
->
->2021 年 8 月 14 日より前に取り込まれたデータは、この変数には反映されません [!UICONTROL 接続] ダイアログ。
-
-### 接続の詳細
 
 | ユーザーインターフェイス | 説明 |
 | --- | --- |
@@ -154,6 +148,10 @@ ht-degree: 27%
 | スキーマ | Experience Platformセットの基になるデータスキーマ。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータのインポートのステータスを示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _オン]**データセットが新しいデータを読み込むように設定されている場合、および<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** データセットが新しいデータインポートをインポートしないように設定されている場合。 |
 | [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _バックフィル処理]**（バックフィル処理の数）<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィルの数、および<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合に備えて、 |
+
+>[!IMPORTANT]
+>
+>2021 年 8 月 14 日より前に取り込まれたデータは、 [!UICONTROL 接続] インターフェイス。
 
 ### 接続パネル
 
