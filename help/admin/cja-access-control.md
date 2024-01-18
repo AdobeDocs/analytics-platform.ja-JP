@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
+source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 63%
+source-wordcount: '1099'
+ht-degree: 61%
 
 ---
 
@@ -60,7 +60,7 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
   >[!AVAILABILITY]
   >
-  >この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース手順については、 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
+  >データセットをクラウドに書き出す機能は、リリースのテスト段階に限定されており、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsのリリース手順については、 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
 
   このタスクを実行するには、次のExperience Platform権限も必要です。
    * 宛先の管理
