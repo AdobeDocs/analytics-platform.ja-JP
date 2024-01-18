@@ -5,8 +5,8 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 20f48259881bade1978909610055d6b20b894092
+workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 100%
 
@@ -36,6 +36,9 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 月] | ディメンション | 特定のイベントが発生した月。最初のディメンション項目は日付範囲の最初の月で、最後のディメンション項目は日付範囲の最後の月です。 |
 | [!UICONTROL 四半期] | ディメンション | 特定のイベントが発生した四半期。最初のディメンション項目は日付範囲の最初の四半期で、最後のディメンション項目は日付範囲の最後の四半期です。 |
 | [!UICONTROL 年] | ディメンション | 特定のイベントが発生した年。最初のディメンション項目は日付範囲の最初の年で、最後のディメンション項目は日付範囲の最も新しい年です。 |
+| [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。フィルター定義で使用する場合（例：「[!UICONTROL セッション開始]が存在する」）、各セッションの最初のイベントのみにフィルターされます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
+| [!UICONTROL セッション終了] | 指標 | セッションの最後のイベントとなったイベントの数。「[!UICONTROL セッション開始]」と同様、これをフィルター定義で使用してフィルタリングし、各セッションの最後のイベントだけを残すこともできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
+| [!UICONTROL 滞在時間 (秒)] | 指標 | あるディメンションについて、2 つの異なる値の間の時間を合計します。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>ユーザー別滞在時間</li><li>セッションごとの滞在時間</li></p> |
 
 {style="table-layout:auto"}
 
@@ -59,10 +62,7 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
 | [!UICONTROL リピートセッション] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。フィルター定義で使用する場合（例：「[!UICONTROL セッション開始]が存在する」）、各セッションの最初のイベントのみにフィルターされます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
-| [!UICONTROL セッション終了] | 指標 | セッションの最後のイベントとなったイベントの数。「[!UICONTROL セッション開始]」と同様、これをフィルター定義で使用してフィルタリングし、各セッションの最後のイベントだけを残すこともできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
 | [!UICONTROL セッションタイプ] | ディメンション | このディメンションには、1) [!UICONTROL 初回]と 2) 再来訪の 2 つの値があります。[!UICONTROL 初回]行項目には、個人の定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。指標がどのセッションにも含まれていない場合、このディメンションの「該当なし」バケットに入ります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL 滞在時間 (秒)] | 指標 | あるディメンションについて、2 つの異なる値の間の時間を合計します。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>ユーザー別滞在時間</li><li>セッションごとの滞在時間</li></p> |
 | [!UICONTROL イベント別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL イベント] グループ別にまとめたものです。 |
 | [!UICONTROL セッション別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL セッション] 別にまとめたものです。 |
 | [!UICONTROL ユーザー別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL 個人] グループ別にまとめたものです。 |
