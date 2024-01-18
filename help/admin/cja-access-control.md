@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 78%
+source-wordcount: '1047'
+ht-degree: 63%
 
 ---
 
@@ -21,21 +21,48 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
 ## 製品管理者の役割
 
-製品管理者には、Customer Journey Analytics内で必要なタスクを完了する権限があります。 製品管理者として、 **Customer Journey Analytics製品プロファイル** （内） [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理者] タブ/ [!UICONTROL 管理者を追加]. 製品管理者には、次の権限が付与されます。
+製品管理者の役割を割り当てられたユーザーには、デフォルトで、Customer Journey Analytics内でほとんどのタスクを実行するために必要な権限が付与されます。 ただし、一部のタスクには追加の権限が必要です。
 
-* 接続またはデータ表示の作成／更新／削除を行う
-* 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新／削除を行います。
+ユーザーを製品管理者として追加するには：
+
+1. 次に移動： [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. 選択 [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **管理者**] タブ/ [!UICONTROL **管理者を追加**].
+
+   追加したユーザーには、 [製品管理者のデフォルトの権限](#product-admin-default-permissions). また、付与することもできます [追加の権限](#product-admin-additional-permissions) 必要に応じて。
+
+### 製品管理者のデフォルトの権限
+
+製品管理者には、タスク内のほとんどのタスクを完了する権限があります。Customer Journey Analytics
+
+製品管理者には、デフォルトで次のタスクを実行するために必要な権限が付与されます。
+
+* データビューの作成、更新、削除
+* 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新と削除
 * Workspace プロジェクトをすべてのユーザーと共有する
 * でのレポートアクティビティの管理 [レポートアクティビティマネージャー](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Customer Journey Analytics 内で製品管理者になるだけでは、[接続](/help/connections/overview.md)を作成、更新または削除することはできません。Experience Platform データセットへの接続を作成するには、Experience Platform 権限も必要です。特に、**Experience Platform 製品プロファイル**&#x200B;の一部であり、次の権限が与えられていることが必要です。
+### 製品管理者の追加の権限
 
-* データモデリング：ビュースキーマ、スキーマの管理
-* データ管理：ビューデータセット，データセットの管理
-* データ取り込み：ソースの管理
-* ID 名前空間の表示
+製品管理者として追加されたことに加えて、 **Customer Journey Analytics製品プロファイル** （内） [Admin Console](https://adminconsole.adobe.com/enterprise/)の場合、Customer Journey Analytics内で次のタスクを完了するには、追加の権限が必要です。
 
-Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja)を参照してください。
+* データの作成、更新、削除 [接続](/help/connections/overview.md)
+
+  このタスクを実行するには、ユーザーが **Experience Platform製品プロファイル** には次の権限があります。
+   * データモデリング：ビュースキーマ、スキーマの管理
+   * データ管理：ビューデータセット，データセットの管理
+   * データ取り込み：ソースの管理
+   * ID 名前空間の表示
+
+     Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja)を参照してください。
+
+* AEP の宛先からデータセットを書き出す
+
+  このタスクを実行するには、次のExperience Platform権限も必要です。
+   * 宛先の管理
+   * 宛先のアクティブ化
+
+     宛先の権限について詳しくは、「Experience Platformの宛先」を参照してください。 [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ja).
 
 ## 製品プロファイル管理者の役割
 
