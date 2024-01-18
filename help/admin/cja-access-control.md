@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
+source-git-commit: 5e4367c1e5dd8654ae888cf9b4258f9c06fe2961
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 61%
+source-wordcount: '1167'
+ht-degree: 58%
 
 ---
 
@@ -122,6 +122,9 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL データビュー]** | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
 | **[!UICONTROL レポートツール]**： |   |
 | **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
+| **[!UICONTROL Analysis Workspace アクセス]** | ユーザーがCustomer Journey AnalyticsでAnalysis Workspaceにアクセスできるようにします。 |
+| [!UICONTROL **ガイド付き分析アクセス**] | ユーザーが [ガイド付き分析プロジェクト](/help/guided-analysis/overview.md). |
+| [!UICONTROL **予測**] | ユーザーがAnalysis Workspaceの予測機能にアクセスできるようにします |
 | **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます |
 | **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
 | [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
@@ -131,5 +134,9 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL 注釈の作成]** | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
+| [!UICONTROL **プロジェクトリンクを他のユーザーと共有**] | ユーザーに許可 [誰とでもプロジェクトを共有できます。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja#share-public-link) |
+| **[!UICONTROL データ表示ツール]**: |   |
+| [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **SQL クエリサービスへのアクセス**] | ユーザーが [AEP のクエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja). |
 
 {style="table-layout:auto"}
