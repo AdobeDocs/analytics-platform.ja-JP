@@ -5,9 +5,9 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1733'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ## クラウドエクスポートアカウントの作成を開始します
 
+1. 必ず [最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) をクラウドにエクスポートするために使用します。
 1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
 1. 次の日： [!UICONTROL エクスポート] ページで、 [!UICONTROL **場所のアカウント**] タブをクリックします。
 1. 選択 [!UICONTROL **アカウントを追加**].
