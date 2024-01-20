@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 製品分析
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ The [!UICONTROL 使用状況] 表示では、次のグラフ設定を利用で�
    * [!UICONTROL 対数]：曲線回帰線を作成します。 データの増加や減少が速いと、レベルが高くなるのに最適です。 数式：`y = a + b * log(x)`
    * [!UICONTROL 移動平均]：平均セットに基づいて、スムーズなトレンドラインを作成します。 移動平均は、ローリング平均とも呼ばれ、特定数の前のデータポイント（選択範囲で決定される）を使用して、それらを平均し、その平均値を折れ線グラフのポイントとして使用します。 例としては、7 日間の移動平均や 4 週間の移動平均などがあります。 使用可能な移動平均オプションは、選択した間隔と日付範囲に応じて異なります。
 
-## 時間比較を適用
+## 時間比較
 
 {{apply-time-comparison}}
 

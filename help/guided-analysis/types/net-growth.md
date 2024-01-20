@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,14 @@ The **[!UICONTROL 純増加]** 表示タイプは、特定の期間にユーザ�
 
 クエリレールでは、次のコンポーネントを設定できます。
 
+* **[!UICONTROL 表示]**：このビュータイプとの間で切り替えます。 [アクティブ](active.md).
 * **[!UICONTROL イベント]**：測定するイベント。 このビュータイプはユーザーベースなので、期間内に 1 回イベントを操作したユーザーはアクティブユーザーとしてカウントされます。 1 つのクエリに 1 つのイベントを含めることができます。
-* **[!UICONTROL People]**：測定するセグメント。 1 つのクエリに 1 つのセグメントを含めることができます。
+* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザー数] および [!UICONTROL ユーザーの割合].
+* **[!UICONTROL セグメント]**：測定するセグメント。 1 つのクエリに 1 つのセグメントを含めることができます。
+
+## 時間比較
+
+{{apply-time-comparison}}
 
 ## 日付範囲
 
