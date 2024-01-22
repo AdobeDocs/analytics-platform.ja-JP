@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Experience Platform で作成したデータラベルは、データビューの
 
 ## 有効なポリシーがデータビューに与える影響
 
-次の場合、 **[!UICONTROL Analytics の適用]** ポリシーがオンになっている場合、特定のデータラベル（C8 など）が関連付けられているスキーマコンポーネントは、データビューに追加できません。
+**[!UICONTROL Analytics の適用]**&#x200B;ポリシーがオンになると、特定のデータラベル（C8 など）が関連付けられているスキーマコンポーネントは、データビューに追加できません。
 
 これらのコンポーネントは、左側のパネルの[!UICONTROL スキーマフィールド]リストでグレー表示されます。
 
