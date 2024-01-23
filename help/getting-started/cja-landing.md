@@ -1,57 +1,134 @@
 ---
 title: Customer Journey Analytics ガイド
 description: Customer Journey Analytics のランディングページ。
-exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
-role: User, Admin, Developer
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '299'
-ht-degree: 100%
+exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
+source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 21%
 
 ---
 
 # Customer Journey Analytics ガイド
 
-このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。Customer Journey Analytics を使用すれば、お好きなチャネルから、オンラインとオフラインの両方ですべての顧客データを Adobe Experience Platform に取り込むことができます。その後、現在 Analysis Workspace を使用して、既存のデジタルデータを分析しているのと同じようにこのデータを分析できます。
+このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。Customer Journey Analyticsを使用すると、選択したチャネル（オンラインとオフラインの両方）から顧客データをAdobe Experience Platformに取り込み、今日のAnalysis Workspaceを使用する既存のデジタルデータと同様に、このデータを分析できます。
 
-Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータを接続する方法を制御でき、最終的に、アトリビューション、フィルター、フロー、フォールアウトなどを実行できます。その対象は Customer Journey Analytics の顧客データセット全体にわたります。
+Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータを接続する方法を制御でき、最終的に、アトリビューション、フィルター、フロー、フォールアウトなどを実行できます。」と入力します。
 
-<table frame="none"> 
- <tbody> 
-  <tr> 
-   <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新しいトピックまたは注目トピック</b> </p> <p> 
-     <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html?lang=ja"> クロスチャネル分析（Customer Journey Analytics での ID のステッチ）</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=ja">Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja"> レポートスイートを様々なスキーマと組み合わせる </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=ja"> 処理ルール、VISTA および分類とデータ準備の比較 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=ja"> Adobe Analytics と Customer Journey Analytics のレポート機能におけるデータ処理の比較 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja"> 仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=ja"> Adobe Analytics から Customer Journey Analytics への進化 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html?lang=ja"> Adobe Analytics ユーザー向け Customer Journey Analytics ユーザーガイド </a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#connection-detail"> 強化された接続管理機能の使用 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja#cja-dataviews"> 強化されたデータビュー機能の使用 </a> </li>
-   <td colname="col2" valign="top"><p class="head"> <b>はじめに</b> </p> 
-      <ul> 
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja">Customer Journey Analytics を使い始める</a> </li> 
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja">よくある質問</a> </li> 
-   </ul> <p class="head"><b>リリースノート</b> </p> 
-     <li>新機能と修正点については、最新の <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=ja" format="https" scope="external">Customer Journey Analytics リリースノート</a>を参照してください。 </li>
-    <td colname="col3" valign="top"> <p class="head"><b>Customer Journey Analytics API</b> </p> 
-    <ul> 
-     <li>すべての <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external">Customer Journey Analytics API</a> を参照してください。 </li>
-      <li>最新の <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external">Customer Journey Analytics Reporting API</a> を参照してください。 </li>
-    </ul> <p class="head"> <b>Adobe Experience Platform リソース</b> </p> 
-    <ul> 
-     <li><a href="https://www.adobe.com/jp/experience-platform.html" format="http" scope="external">Adobe Experience Platform</a> </li> 
-     <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=ja" format="https" scope="external">Adobe Experience Platform チュートリアル</a> </li> 
-     <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external">API リファレンス</a> </li> 
-     <li><a href="https://www.adobe.com/jp/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">ドキュメントと開発者向けリソース</a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html?lang=ja" format="https" scope="external"> 従来の Adobe Analytics からのデータの取り込みと使用の方法に関するクイックスタートガイド
-     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja" format="https" scope="external">レポートスイートデータ用の Adobe Analytics ソースコネクタ</a> </li>
-    </ul> </td> 
-  </tr> 
- </tbody> 
+## 新着情報
+
+Customer Journey Analytics製品およびドキュメントの最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。[ドキュメントの更新ページ](../release-notes/doc-changes.md)にアクセスして、ドキュメントの最新の変更点を常に最新の状態に保ってください。
+
+>[!BEGINTABS]
+
+>[!TAB ガイド付き分析* — 定着率]
+
+目的の日付範囲内での最初のエンゲージメント後に再来訪するユーザーの割合を示す新しいビュータイプ。横軸は、ユーザーの最初のエンゲージメントからの日数を表します。 縦軸は、再びエンゲージしたユーザーの割合を表します。
+
+[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+
+<span style="color:gray">*_ガイド付き分析は、Adobe Product Analyticsの一部で、Customer Journey Analyticsへの有料アドオンです。_</span>
+
+
+
+
+>[!TAB ガイド付き分析* — 近似曲線]
+
+使用状況ビューでトレンドラインオーバーレイを使用できるようになり、データにより明確なパターンを表現するのに役立ちました。 使用できるトレンドラインのタイプは、線形、対数、移動平均です。
+
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+<span style="color:gray">*_ガイド付き分析は、Adobe Product Analyticsの一部で、Customer Journey Analyticsへの有料アドオンです。_</span>
+
+
+>[!TAB 主要指標の概要ビジュアライゼーション]
+
+主要指標の概要ビジュアライゼーションを使用する場合、選択した比較日付範囲オプションが主日付範囲に対するものか固定のものかに応じて、比較日付範囲が自動的に更新されるようになりました。
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
+
+>[!ENDTABS]
+
+## 基本について学ぶ
+
+まず、以下のリンクにある資料を読んで、Customer Journey Analyticsの機能について学びましょう。
+
+<table style="table-layout:fixed">
+  <tr style="border: 0;">
+    <td>
+    <a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/aa-vs-cja.png"></a>
+    <div><strong>オンラインデータを超える</strong><br/>Customer Journey AnalyticsとAdobe Analyticsの比較方法、共有されている機能、Analytics データの使用方法について説明します。</div>
+    </td>
+    <td>
+    <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
+    <div><strong>データの取り込みと使用</strong><br/>データをExperience Platformに取り込み、Customer Journey Analyticsでの分析とレポートに使用する必要があるオプションについて説明します。</div>
+    </td>
+    <td>
+    <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
+    <div><strong>ガイド付き分析</strong><br/>ワークフローを使用して、顧客の製品エクスペリエンスに関するデータとインサイトを得る方法を説明します。 ガイド付き分析によるProduct Analytics...
+    </div>
+    </td>
+    <td>
+    <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
+    <div><strong>Analysis Workspace</strong><br/>Analysis Workspaceを使用して、アトリビューション、フロー、フォールアウトの図、ディメンションの分類など、基本的な分析と高度な分析を実行します。</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
+    </tr>
 </table>
+
+## ドキュメントの参照
+
+Customer Journey AnalyticsがAdobe Analyticsと比較する方法、およびソリューションでデータを取得する方法を理解し、そのデータと結果の分析とレポートを準備、表示、分析し、民主化します。
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="./assets/analytics.svg" width="35px"><br/>
+      <strong>Adobe Analyticsと比較</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">概要</a> - <a href="/help/getting-started/aa-to-cja.md">変化</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analyticsデータを使用</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">機能のサポート</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">用語</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">データ処理</a>
+    </td>
+    <td>
+      <img src="./assets/connections.svg" width="35px"><br/>
+      <strong>接続</strong><br/><a href="/help/connections/overview.md">概要</a> - <a href="/help/connections/create-connection.md">作成</a> - <a href="/help/connections/manage-connections.md">管理</a> - <a href="/help/stitching/overview.md">ステッチ</a> - <a href="/help/connections/combined-dataset.md">組み合わせイベントデータセット</a> - <a href="/help/connections/standard-lookups.md">標準参照</a>
+    </td>
+     <td>
+      <img src="./assets/dataviews.svg" width="35px"><br/>
+      <strong>データビュー</strong><br/><a href="/help/data-views/data-views.md">概要</a> - <a href="/help/data-views/create-dataview.md">作成または編集</a> - <a href="/help/data-views/session-settings.md">セッション設定</a> - <a href="/help/data-views/derived-fields/derived-fields.md">派生フィールド</a> - <a href="/help/data-views/component-reference.md">コンポーネントの参照</a>
+    </td>
+
+</tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="./assets/workspace.svg" width="35px"><br/>
+      <strong>Workspace プロジェクト</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">基本 </a> &amp; <a href="/help/analysis-workspace/perform-adv-analysis.md">アドバンス分析</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">プロジェクト</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">ビジュアライゼーション</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">パネル</a>
+    </td>
+    <td>
+      <img src="./assets/guided-analysis.svg" width="35px"><br/>
+      <strong>ガイド付き分析</strong><br/><a href="/help/guided-analysis/overview.md">概要</a> - <a href="/help/guided-analysis/types/active.md">ユーザーの増加</a> - <a href="/help/guided-analysis/types/usage.md">トレンド</a> - <a href="/help/guided-analysis/types/friction.md">ファネル</a> - <a href="/help/guided-analysis/types/release.md">影響</a> - <a href="/help/guided-analysis/industry-use-cases.md">業界の使用例</a>
+    </td>
+    <td>
+      <img src="./assets/share.svg" width="35px"><br/>
+      <strong>共有、エクスポート、統合</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">プロジェクト</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">統合</a>
+    </td>
+  </tr>
+</table>
+
+## その他のリソース
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><strong>Customer Journey Analytics</strong><br/>
+<a href="https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics製品の説明</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics(Customer Journey Analyticsアドオン ) 製品の説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey AnalyticsAPI</a>
+</td>
+<td><strong>データ取り込み</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概要</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">モバイル SDK</a> - <a href="/help/data-ingestion/batch.md">バッチ</a> - <a href="/help/data-ingestion/streaming.md">ストリーミング</a> - <a href="/help/data-ingestion/sources.md">ソース</a> - <a href="/help/data-ingestion/serverapi.md">サーバー API</a>
+</td>
+</tr></table>
+
+
+<table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
+<b>常に情報を提供し、コミュニティに貢献し、Customer Journey Analytics体験を向上させます。</b><br>Adobe Analyticsコミュニティにアクセスして、実務担当者と機能について話し合ってください。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja">今すぐコミュニティに参加！</a></td></tr></tbody></table>
