@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1394'
-ht-degree: 100%
+source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 95%
 
 ---
 
@@ -81,6 +81,12 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 * ボットフィルタリング
 * ストリーミングメディア測定
 * ライブストリームまたはライブストリームトリガー
+
+### 5.プロジェクトとコンポーネントをAdobe AnalyticsからCustomer Journey Analyticsにマッピングする
+
+プロジェクトと関連コンポーネントをAdobe AnalyticsからCustomer Journey Analyticsに移行します。
+
+組織の誰かがプロジェクトの移行を開始する前に、「 [Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)，最初 [コンポーネントとプロジェクトをAdobe AnalyticsからCustomer Journey Analyticsに移行する準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)
 
 ## 重要な違いに対する準備
 

@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
+source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 87%
+source-wordcount: '2879'
+ht-degree: 85%
 
 ---
 
@@ -20,6 +20,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年1月** | |
+| Adobe Analyticsからの移行時の新しいコンポーネント移行情報 | 次の情報を追加しました： [Adobe Analyticsからの変化](/help/getting-started/aa-to-cja.md) 新しい [コンポーネントの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja) 機能については、 Adobe Analytics管理ガイドを参照してください。 |
+| 特定の情報が管理者のみに提供されることを明確にしました。 | 「最後に使用した日」列と「次で使用された日」列について、 [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md) そして [フィルターマネージャー](/help/components/filters/manage-filters.md) は、システム管理者のみが使用できます。 |
 | データセットの書き出しに必要な権限 | 次の項目を説明する情報を追加しました： [必要な権限](/help/admin/cja-access-control.md) データセットをクラウドの宛先に書き出す。 |
 | 接続の管理 | 更新された [接続を管理](../connections/manage-connections.md) お客様のフィードバックに基づく記事。 |
 | 派生フィールド | 関数の概要を追加しました。 [制限](/help/data-views/derived-fields/derived-fields.md#limitations) 数の決定方法に関する説明 [演算子](/help/data-views/derived-fields/derived-fields.md#operators) 関数で使用されます。 |
