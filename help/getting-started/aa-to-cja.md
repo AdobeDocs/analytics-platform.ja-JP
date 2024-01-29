@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 95%
+source-wordcount: '1495'
+ht-degree: 93%
 
 ---
 
@@ -84,9 +84,17 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 
 ### 5.プロジェクトとコンポーネントをAdobe AnalyticsからCustomer Journey Analyticsにマッピングする
 
-プロジェクトと関連コンポーネントをAdobe AnalyticsからCustomer Journey Analyticsに移行します。
+Adobe Analytics管理者は、Adobe Analyticsプロジェクトとそれに関連するコンポーネントをCustomer Journey Analyticsに移行できます。
 
-組織の誰かがプロジェクトの移行を開始する前に、「 [Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)，最初 [コンポーネントとプロジェクトをAdobe AnalyticsからCustomer Journey Analyticsに移行する準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)
+移行プロセスには、以下が含まれます。
+
+* Customer Journey AnalyticsでのAdobe Analyticsプロジェクトの再作成
+
+* ディメンションと指標をAdobe Analyticsレポートスイートから指標データビューのディメンションとCustomer Journey Analyticsにマッピングする。
+
+移行を開始する前に、まず [コンポーネントとプロジェクトをAdobe AnalyticsからCustomer Journey Analyticsに移行する準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja).
+
+必要な準備をすべて整えたら、次の準備ができます。 [Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
 
 ## 重要な違いに対する準備
 
