@@ -5,9 +5,9 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b76f534a01326b911ffbf93f089d46c6fc860979
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '2182'
 ht-degree: 3%
 
 ---
@@ -73,8 +73,8 @@ Analysis Workspaceから完全なテーブルをエクスポートするには�
    | 開始日 | スケジュールされたエクスポートを開始する日時。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
    | 終了日 | スケジュールされたエクスポートの有効期限が切れる日時。 設定した日時以降、スケジュールされたエクスポートは実行されなくなります。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
    | ファイル形式 | 書き出したデータを.csv 形式と.json 形式のどちらにするかを選択します。 |
-   | アカウント | データを送信するクラウドエクスポートアカウントを選択します。 <p>詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md).</p> |
-   | 場所名 | エクスポートデータを送信するアカウント上の場所を選択します。 <p>詳しくは、 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).</p><p>次の項目を選択できます。 [!UICONTROL **新しい場所を追加**] ボタンをクリックして、既存のエクスポートアカウントの新しい場所を作成します。 |
+   | アカウント | データを送信するクラウドエクスポートアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>選択 [!UICONTROL **アカウントを追加**]&#x200B;次の情報を指定します。<ul><li>[!UICONTROL **場所のアカウント名**]：ロケーションアカウントの名前を指定します。 この名前は、ロケーションを作成する際に表示されます </li><li>[!UICONTROL **場所アカウントの説明**]：同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。</li><li>[!UICONTROL **アカウントタイプ**]：書き出し先のクラウドアカウントのタイプを選択します。 使用可能なアカウントの種類は、Amazon S3 ロール ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP データランディングゾーンです。</li></ul><li>アカウントの設定を完了するには、次の [!UICONTROL **アカウントタイプ**] 選択した項目：<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 ロール ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 場所名 | エクスポートデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>選択 [!UICONTROL **場所を追加**]&#x200B;次の情報を指定します。 <ul><li>[!UICONTROL **名前**]：場所の名前。</li><li>[!UICONTROL **説明**]：アカウント上の他の場所と区別するのに役立つ、場所の簡単な説明を入力します。</li><li>[!UICONTROL **場所アカウント**]：ロケーションを作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、 [!UICONTROL **場所アカウント**] フィールド：<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 ロール ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 

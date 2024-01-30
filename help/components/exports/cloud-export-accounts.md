@@ -5,9 +5,9 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1877'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 >
 >Customer Journey AnalyticsレポートをAdobe Experience Platform Data Landing Zone に書き出す場合は、7 日以内にデータをダウンロードしてから、AEP Data Landing Zone から削除してください。 7 日後に、データは AEP データランディングゾーンから自動的に削除されます。
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
@@ -100,7 +104,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Amazon S3 Role ARN
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスで、次の情報を指定します。
 
@@ -124,7 +132,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Google Cloud Platform
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスで、次の情報を指定します。
 
@@ -148,7 +160,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Azure SAS
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスで、次の情報を指定します。
 
@@ -176,7 +192,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Azure RBAC
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスで、次の情報を指定します。
 
@@ -202,7 +222,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Snowflake
 
-1. [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)（前述のように）
+1. 次のいずれかの方法で、クラウドエクスポートアカウントの作成を開始します。
+
+   * 上記のように、Exports ページから、 [クラウドエクスポートアカウントの作成を開始します](#begin-creating-a-cloud-export-account)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **アカウントのプロパティ**] のセクション [!UICONTROL **アカウントを追加**] ダイアログボックスで、次の情報を指定します。
 

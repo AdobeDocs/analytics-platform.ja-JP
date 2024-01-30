@@ -5,10 +5,10 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,18 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    [ ロケーション ] ダイアログが表示されます。
 
-1. 次の情報を指定します。 |フィールド | 関数 | |—|—| | [!UICONTROL **名前**] | 場所の名前。  | | [!UICONTROL **説明**] | 同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。 | | [!UICONTROL **場所アカウント**] | ロケーションを作成するアカウントを選択します。 アカウントの作成方法について詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
+1. 次の情報を指定します。 |フィールド | 関数 | |—|—| | [!UICONTROL **名前**] | 場所の名前。  | | [!UICONTROL **説明**] | アカウント上の他の場所と区別するのに役立つ、場所の簡単な説明を入力します。 | | [!UICONTROL **場所アカウント**] | ロケーションを作成するアカウントを選択します。 アカウントの作成方法について詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] 「 」セクションで、ロケーションアカウントのアカウントタイプに固有の情報を指定します。
 
    で選択したアカウントタイプに対応する以下のセクションに進みます。 [!UICONTROL **場所アカウント**] フィールドに入力します。
+
+   * [AEP データランディングゾーン](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [Azure SAS](#azure-sas)
+   * [Azure RBAC](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### AEP データランディングゾーン
 
@@ -50,7 +57,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 >
 >Customer Journey AnalyticsレポートをAdobe Experience Platform Data Landing Zone に書き出す場合は、7 日以内にデータをダウンロードしてから、AEP Data Landing Zone から削除してください。 7 日後に、データは AEP データランディングゾーンから自動的に削除されます。
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、Adobe Experience Platform Data Landing Zone の場所を設定する次の情報を指定します。
 
@@ -83,7 +94,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Amazon S3 Role ARN
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定して、Amazon S3 の役割の ARN の場所を設定します。
 
@@ -102,7 +117,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Google Cloud Platform
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定してGoogle Cloud Platform の場所を設定します。
 
@@ -121,7 +140,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Azure SAS
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定して Azure SAS の場所を構成します。
 
@@ -138,7 +161,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Azure RBAC
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定して Azure RBAC の場所を設定します。
 
@@ -156,7 +183,11 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
 ### Snowflake
 
-1. [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)（前述のように）
+1. クラウドの書き出し場所の作成は、次のいずれかの方法で開始します。
+
+   * 上記のように、Exports ページから、 [クラウドの書き出し場所の作成を開始します](#begin-creating-a-cloud-export-location)
+
+   * 条件 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Adobe Analytics の [!UICONTROL **場所のプロパティ**] のセクション [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定してSnowflakeの場所を設定します。
 
