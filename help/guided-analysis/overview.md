@@ -5,9 +5,9 @@ keywords: 製品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6f80a1aa4ec9142d75fe1abb2f268dc60c7dd245
+source-git-commit: a5c2003a593917bce67346279a033a6041aff959
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,15 @@ Analysis Workspaceおよびモバイルのスコアカードと同様、ガイ�
 
 | 分析タイプ | ビュータイプ | 説明 |
 | --- | --- | --- |
-| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間でパフォーマンスを比較します。 |
-| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 主要指標に対する初回の機能使用の影響を測定します。 |
 | [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
 | [!UICONTROL ファネル] | [コンバージョンの傾向](types/conversion-trends.md) | コンバージョン率の変化を経時的に追跡する。 |
-| [!UICONTROL ユーザーの増加] | [アクティブ](types/active.md) | 誰が新規、定着、復帰、休止状態かを識別します。 |
-| [!UICONTROL ユーザーの増加] | [純増加](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間でパフォーマンスを比較します。 |
+| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 主要指標に対する初回の機能使用の影響を測定します。 |
+| [!UICONTROL リテンション] | [定着率](types/retention-rates.md) | ユーザーの継続的な再来訪傾向を測定します。 |
 | [!UICONTROL トレンド] | [用途](types/usage.md) | 時間の経過と共にユーザーエンゲージメントを測定します。 |
 | [!UICONTROL トレンド] | [頻度](types/frequency.md) | 使用頻度でエンゲージメントを測定します。 |
+| [!UICONTROL ユーザーの増加] | [アクティブ](types/active.md) | 誰が新規、定着、復帰、休止状態かを識別します。 |
+| [!UICONTROL ユーザーの増加] | [純増加](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
 
 {style="table-layout:auto"}
 
