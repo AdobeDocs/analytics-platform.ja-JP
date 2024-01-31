@@ -5,10 +5,10 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 81%
+source-wordcount: '1326'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 | ビジュアライゼーション名 | 説明 |
 | --- | --- | 
-| [面グラフ](/help/analysis-workspace/visualizations/area.md)<p>![領域アイコン](assets/Smock_GraphArea_18_N.svg)</p> | 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 | 次のような質問に答えます。 <ul><li> |
+| [面グラフ](/help/analysis-workspace/visualizations/area.md)<p>![領域アイコン](assets/Smock_GraphArea_18_N.svg)</p> | 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 |
 | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) <p>![バーアイコン](assets/Smock_GraphBarVertical_18_N.svg)</p> | 1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。 |
 | [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![箇条書きアイコン](assets/Smock_GraphBullet_18_N.svg)</p> | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
 | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![コホートテーブルアイコン](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、リテンション、チャーン、または遅延の分析に役立ちます。 |
@@ -80,9 +80,9 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 ## 設定 {#settings}
 
-各ビジュアライゼーションには、管理可能な独自の設定があります。「[!UICONTROL ビジュアライゼーション設定]」にアクセスするには、[!UICONTROL ビジュアライゼーション設定]歯車アイコンをクリックします。
+各ビジュアライゼーションには、管理可能な独自の設定があります。ビジュアライゼーション設定にアクセスするには、設定アイコンを選択します ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![ビジュアライゼーション設定に、次の節で説明する設定オプションが表示されています。](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="ビジュアライゼーション設定" width="50%" />
 
 | 設定 | 説明 |
 | --- | --- |
@@ -96,6 +96,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | 正規化 | 指標を均等な比率にします。これは、プロットされた指標の大きさが非常に異なる場合に役立ちます。 |
 | 二重軸を表示 | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。これは、プロットされた指標の大きさが非常に異なる場合に役立ちます。 |
 | 異常値を表示 | 異常値検出を表示することで、折れ線グラフおよびフリーフォームテーブルを強化します。線のビジュアライゼーションでの異常値検出には、期待値（破線）と期待範囲（影付きの帯）が含まれます。 |
+| 予測を表示 | 予測値を表示して、折れ線グラフおよびフリーフォームテーブルを強化します。 |
 
 ## 凡例 {#legend}
 

@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '2951'
-ht-degree: 83%
+source-wordcount: '2984'
+ht-degree: 82%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024 年 1 月** | |
+| 予測 | に関するドキュメントを追加しました。 [予測](../analysis-workspace/c-forecast/forecasting.md)：フリーフォームテーブルおよびリンクチャートでサポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）を使用して標準指標または計算指標を予測する新しいAnalysis Workspace機能。 |
 | 完全なテーブルをエクスポートする際のアカウントと場所の追加に関するドキュメントを更新しました。 | 新しいアカウントや場所を設定する際に、以下の場合にマイナーインターフェイスが更新されるようにドキュメントを更新しました。 [Analysis Workspaceからのフルテーブルのエクスポート](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新しい [!UICONTROL **アカウントを追加**] オプションが [!UICONTROL **アカウント**] ドロップダウンメニュー。 The [!UICONTROL **場所を追加**] 以前、 [!UICONTROL **場所名**] ドロップダウンメニューがメニュー自体内で使用できるようになりました。 |
 | Adobe Analyticsからの移行時の新しいコンポーネント移行情報 | 次の情報を追加しました： [Adobe Analyticsからの変化](/help/getting-started/aa-to-cja.md) 新しい [コンポーネントの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja) 機能については、 Adobe Analytics管理ガイドを参照してください。 |
 | 特定の情報が管理者のみに提供されることを明確にしました。 | 「最後に使用した日」列と「次で使用された日」列について、 [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md) そして [フィルターマネージャー](/help/components/filters/manage-filters.md) は、システム管理者のみが使用できます。 |
@@ -41,7 +42,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 異常値検出ドキュメントの更新 | 異常値検出のドキュメントは、以前、仮想アナリストに関する節に配置されていました。 次の変更が加えられました。 <ul><li>Virtual Analyst という用語はドキュメントから削除されました。</li><li>に関する節 [異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) は、Analysis Workspaceセクションのすぐ下に移動されました。</li></ul> |
 | **2023年10月** | |
 | 目標/ターゲットの設定に派生フィールドを使用 | 追加済み [使用例](../use-cases/goals-using-derived-fields.md) 目標/ターゲットの設定とレポートに派生フィールドを使用する方法を示す記事。 |
-| 完全なテーブルをクラウドにエクスポート | 数百万行の Workspace 行を含む完全なテーブルをクラウドの宛先に書き出す方法に関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 | 2023年10月4日（PT） |
+| 完全なテーブルをクラウドにエクスポート | 数百万行の Workspace 行を含む完全なテーブルをクラウドの宛先に書き出す方法に関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
 | レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。このレポートは、レポートの消費状況を詳細に把握し、ピーク時のレポート作成時に容量の問題を簡単に診断して修正できるように管理者に提供します。</p> <p>次の新しい記事が追加されました。<ul><li>[Activity Manager のレポートの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理ページの新しい列 | で使用できるようになった新しい列の説明 [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) そして [フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja). |
 | Adobe Analytics との比較 | 追加された [概要ページ](../getting-started/aa-vs-cja/overview.md) Customer Journey AnalyticsとAdobe Analyticsの違いの比較と理解に関する概要。 |

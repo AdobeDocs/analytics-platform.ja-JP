@@ -4,10 +4,10 @@ title: 行
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 84%
+source-wordcount: '524'
+ht-degree: 81%
 
 ---
 
@@ -21,13 +21,14 @@ ht-degree: 84%
 
 ![行のビジュアライゼーション](assets/line-viz.png)
 
-行のビジュアライゼーションの右上にある歯車アイコンをクリックして、 使用可能な&#x200B;[**ビジュアライゼーション設定**](freeform-analysis-visualizations.md)&#x200B;にアクセスします。設定は次の分類に分類されます。
+設定アイコンを選択します。 ![設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 行のビジュアライゼーションの上部のバーで、 [ビジュアライゼーション設定](freeform-analysis-visualizations.md) 使用可能 設定は次の分類に分類されます。
+
+<img src="./assets/viz-settings-line.png" alt="ビジュアライゼーション設定" width="50%" />
 
 * **一般**：ビジュアライゼーションタイプ間で共通の設定
 * **軸**：線のビジュアライゼーションの X または Y 軸に影響する設定
 * **オーバーレイ**：行のビジュアライゼーションに表示されるシリーズに、追加のコンテキストを追加するオプションです。
 
-![ビジュアライゼーション設定](assets/viz-settings-modal.png)
 
 ## 精度の変更
 
