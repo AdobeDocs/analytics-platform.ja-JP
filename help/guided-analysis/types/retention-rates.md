@@ -5,18 +5,16 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: c5cc2a696ac1a5619b174163b2b6b87116e4f778
+source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # リテンション率
 
-{{release-limited-testing}}
-
-The **[!UICONTROL 定着率]** 表示は、目的の日付範囲内での最初のエンゲージメントの後に再来訪するユーザーの割合を示します。 横軸は、ユーザーの最初のエンゲージメントからの日数を表します。 縦軸は、再びエンゲージしたユーザーの割合を表します。
+The **[!UICONTROL 定着率]** 表示は、目的の日付範囲内での最初のエンゲージメントの後に再来訪するユーザーの割合を示します。 横軸は、ユーザーの最初のエンゲージメントからの日数を表します。縦軸は、再度エンゲージするユーザーの割合を表します。
 
 この分析では、次の 2 つの重要なイベントに基づいてユーザーをカウントします。
 
