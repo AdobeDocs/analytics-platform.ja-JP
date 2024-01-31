@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 90d91f07296f8c961d1b60ddbdc3d6b086958141
+source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 75%
+source-wordcount: '439'
+ht-degree: 71%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 75%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics — 定着率** | リテンション率は、目的の日付範囲内での初回エンゲージメント後に再訪するユーザーの割合を示す、新しいガイド付き分析です。 [詳細情報](../guided-analysis/types/retention-rates.md) | 該当なし | 2024年1月8日（PT） |
-| **Adobe Product Analytics — 近似曲線** | 近似曲線は、 [使用状況](/help/guided-analysis/types/usage.md) 表示を使用します。これは、データでより明確なパターンを表現するのに役立ちます。 | 該当なし | 2024年1月17日（PT） |
-| **主要指標の概要ビジュアライゼーションの更新** | 主要指標の概要ビジュアライゼーションを使用する際、選択した比較日付範囲オプションが主な日付範囲に対して相対的であるか固定であるかに応じて、比較日付範囲が自動的に更新されるようになりました。[詳細情報](/help/analysis-workspace/visualizations/key-metric.md)。 | 該当なし | 2024年1月17日（PT） |
-| **Adobe Product Analytics — ユーザーストリーム** | ユーザーストリームは、個々のユーザーイベントストリームを調査できる新しいガイド付き分析です。 この分析により、エクスペリエンスのパターンを見つけ、より優れたユーザーストーリーを示すことができます。 | 該当なし | 2024年2月7日（PT） |
-| **Adobe Product Analytics — クエリレールの改善** | ガイド付き分析で、一部のコンポーネント設定がクエリレールに含まれ、使いやすさが向上しました。 | 該当なし | 2024年1月31日（PT） |
 | **時系列予測** | 予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しい Analysis Workspace 機能です。 | 2024年1月31日（PT） | 2024年2月21日（PT） |
+| **主要指標の概要ビジュアライゼーションの更新** | 主要指標の概要ビジュアライゼーションを使用する際、選択した比較日付範囲オプションが主な日付範囲に対して相対的であるか固定であるかに応じて、比較日付範囲が自動的に更新されるようになりました。[詳細情報](/help/analysis-workspace/visualizations/key-metric.md)。 | 該当なし | 2024年1月17日（PT） |
+| **Adobe Product Analytics — 定着率の分析** | リテンション率は、ユーザーの継続的な再来訪傾向を測定できる新しいガイド付き分析です。 [詳細情報](../guided-analysis/types/retention-rates.md) | 該当なし | 2024年1月8日（PT） |
+| **Adobe Product Analytics — 近似曲線オーバーレイ** | 近似曲線は、 [使用状況の傾向](/help/guided-analysis/types/usage.md) データにより明確なパターンを表現するための表示とヘルプ。 | 該当なし | 2024年1月17日（PT） |
+| **Adobe Product Analytics — クエリレールの機能強化** | ガイド付き分析で、左側のクエリレールに、以前ビジュアライゼーション設定で使用できた、ビュータイプとカウント設定が含まれるようになりました。 | 該当なし | 2024年1月31日（PT） |
+| **Adobe Product Analytics — ユーザーストリーム分析** | ユーザーストリームは、個々のユーザーイベントストリームを調査し、エクスペリエンスパターンを見つけて、より優れたユーザーストーリーを伝えるのに役立つ、新しいガイド付き分析です。 | 該当なし | 2024年2月7日（PT） |
 
 {style="table-layout:auto"}
 
