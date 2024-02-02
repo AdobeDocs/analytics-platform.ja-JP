@@ -4,10 +4,10 @@ title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 1%
 ![製品表示トレンドのインテリジェントキャプションを表示する Analysis ウィンドウを起動します。 ](assets/intell-caps-1.png)
 
 自然言語の洞察が生成されています。
+
+次の点に注意してください。
+
+* キャプションを正常に生成するには、少なくとも 3 つのデータポイントが必要です。 そうしないと、「分析するのに十分なデータがありません」というエラーが表示される場合があります。
 
 * キャプションは、ビジュアライゼーションを実行するテーブルで基に選択されたデータが変更されるたびに生成されます。
 
