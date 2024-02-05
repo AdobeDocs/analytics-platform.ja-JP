@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 65%
+source-wordcount: '470'
+ht-degree: 62%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 65%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **スキップされたレコードの詳細** | 接続の設定時にレコードがスキップされた理由の詳細を取得できます。 詳しくは、 [接続の詳細](../connections/manage-connections.md#connection-details) を参照してください。 | 2024年2月5日（PT） | 2024年2月5日（PT） |
 | **時系列予測** | [予測](../analysis-workspace/c-forecast/forecasting.md) は、フリーフォームテーブルや折れ線グラフでサポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）を使用して標準指標や計算指標を予測する新しいAnalysis Workspace機能です。 | 2024年1月31日（PT） | 2024年2月21日（PT） |
 | **主要指標の概要ビジュアライゼーションの更新** | 主要指標の概要ビジュアライゼーションを使用する際、選択した比較日付範囲オプションが主な日付範囲に対して相対的であるか固定であるかに応じて、比較日付範囲が自動的に更新されるようになりました。[詳細情報](/help/analysis-workspace/visualizations/key-metric.md)。 | 該当なし | 2024年1月17日（PT） |
 | **Adobe Product Analytics — 定着率の分析** | リテンション率は、ユーザーの継続的な再来訪傾向を測定できる新しいガイド付き分析です。 [詳細情報](../guided-analysis/types/retention-rates.md) | 該当なし | 2024年1月8日（PT） |
