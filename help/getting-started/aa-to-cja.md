@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
 workflow-type: tm+mt
 source-wordcount: '1495'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Analytics のお客様は、Analytics ソースコネクタを使用して
 * ストリーミングメディア測定
 * ライブストリームまたはライブストリームトリガー
 
-### 5.プロジェクトとコンポーネントをAdobe AnalyticsからCustomer Journey Analyticsにマッピングする
+### 5. Adobe Analytics から Customer Journey Analytics へのプロジェクトとコンポーネントのマッピング
 
 Adobe Analytics管理者は、Adobe Analyticsプロジェクトとそれに関連するコンポーネントをCustomer Journey Analyticsに移行できます。
 
@@ -94,7 +94,7 @@ Adobe Analytics管理者は、Adobe Analyticsプロジェクトとそれに関�
 
 移行を開始する前に、まず [コンポーネントとプロジェクトをAdobe AnalyticsからCustomer Journey Analyticsに移行する準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja).
 
-必要な準備をすべて整えたら、次の準備ができます。 [Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
+必要な準備をすべて整えたら、次の準備ができます。 [Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html?lang=ja).
 
 ## 重要な違いに対する準備
 
