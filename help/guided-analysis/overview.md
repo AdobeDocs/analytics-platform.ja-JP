@@ -5,9 +5,9 @@ keywords: 製品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a5c2003a593917bce67346279a033a6041aff959
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1310'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,7 @@ Analysis Workspaceおよびモバイルのスコアカードと同様、ガイ�
 | [!UICONTROL トレンド] | [頻度](types/frequency.md) | 使用頻度でエンゲージメントを測定します。 |
 | [!UICONTROL ユーザーの増加] | [アクティブ](types/active.md) | 誰が新規、定着、復帰、休止状態かを識別します。 |
 | [!UICONTROL ユーザーの増加] | [純増加](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [!UICONTROL ユーザーストリーム] | [今後の予定](types/timeline.md) | セッションアクティビティのパターンを調べます。 |
 
 {style="table-layout:auto"}
 
