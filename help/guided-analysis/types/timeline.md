@@ -4,9 +4,9 @@ description: エクスペリエンスパターンを調べ、より優れたユ�
 feature: Guided Analysis
 keywords: 製品分析
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,11 @@ The **[!UICONTROL タイムライン]** 「表示」では、時間の経過と�
 
 >[!NOTE]
 >
->タイムラインビューでは、 **[!UICONTROL 人物 ID]** 標準コンポーネントは、 [データビュー](/help/data-views/component-reference.md#optional). データビューへのユーザー ID の追加は、Adobe Analyticsのデータ管理者が管理し、組織はこのデータにアクセスできるユーザーを完全にプライバシーで制御できます。 データビューに [!UICONTROL 人物 ID] コンポーネントが追加されると、次のメッセージが表示されます。
+>タイムラインビューでは、 **[!UICONTROL 人物 ID]** 標準コンポーネントは、 [データビュー](/help/data-views/component-reference.md#optional). データビューへのユーザー ID の追加は、Adobe Analyticsのデータ管理者が管理し、組織はこのデータにアクセスできるユーザーを完全にプライバシーで制御できます。
 
-* **管理者**：この分析には PersonID プロパティが必要です。 データビューに PersonID を追加してください。
-* **管理者以外**：この分析には PersonID プロパティが必要です。 Adobe Analytics管理者に問い合わせてください。
+データビューに [!UICONTROL 人物 ID] コンポーネントが追加されると、次のメッセージが表示されます。
+* **管理者**：この分析には PersonID プロパティが必要です。 ユーザー ID をデータビューに追加してください。
+* **管理者以外**：この分析には PersonID プロパティが必要です。 データビューにCustomer Journey AnalyticsID を追加するには、ユーザー管理者にお問い合わせください。
 
 ## ユースケース
 
