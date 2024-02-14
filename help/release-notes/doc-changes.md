@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 81%
@@ -20,7 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年2月** | |
-| 製品管理者が常にフルテーブルのエクスポートにアクセスできることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceから完全なテーブルをエクスポートする権限を持っていることを明確にするために、次の変更を行いました。 <ul><li>新しい箇条書きを [製品管理者のデフォルトの権限](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>次の場所にメモを追加しました： [完全なテーブルをクラウドにエクスポートするための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
+| 製品管理者が常にフルテーブルのエクスポートにアクセスできることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceから完全なテーブルをエクスポートする権限を持っていることを明確にするために、次の変更を行いました。 <ul><li>新しい箇条書きを [製品管理者のデフォルトの権限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>次の場所にメモを追加しました： [完全なテーブルをクラウドにエクスポートするための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | スキップされたレコードの詳細 | 接続のスキップされたレコードの詳細機能に関するドキュメントを追加しました。 詳しくは、 [接続の詳細](../connections/manage-connections.md#connection-details) を参照してください。 |
 | **2024年1月** | |
 | 予測 | に関するドキュメントを追加しました。 [予測](../analysis-workspace/c-forecast/forecasting.md)、新しいAnalysis Workspaceの機能では、フリーフォームテーブルや折れ線グラフの標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測できます。 |
