@@ -4,7 +4,7 @@ description: ユーザーレベルのセッションイベントを経時的に�
 feature: Guided Analysis
 keywords: 製品分析
 role: User
-source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
+source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 The **[!UICONTROL タイムライン]** 「表示」では、ユーザーレベルのセッションイベントを経時的に観察し、エクスペリエンスパターンを見つけて、より優れたユーザーストーリーを示すことができます。 左側のレールでは、プロパティ値とセグメントでストリームをフィルタリングできます。 右側のレールでは、フィルター条件に一致するユーザーのランダム化リストから選択できます。 中央の領域には、選択したユーザーのストリームがセッション別に表示されます。このストリームは、タイムスタンプ、プロパティ値および期間で構成されます。 期間は、特定のセッションの最後のイベントには使用できません。
 
+![タイムラインのスクリーンショット](../assets/timeline.png)
+
 >[!NOTE]
 >
 >タイムラインビューでは、 **[!UICONTROL 人物 ID]** 標準コンポーネントは、 [データビュー](/help/data-views/component-reference.md#optional). データビューへの個人 ID の追加は、Customer Journey Analytics管理者が管理し、組織でこのデータにアクセスできるユーザーを完全にプライバシー制御できます。
@@ -23,8 +25,6 @@ The **[!UICONTROL タイムライン]** 「表示」では、ユーザーレベ�
 
 * **管理者**: *この分析には PersonID プロパティが必要です。 ユーザー ID をデータビューに追加してください。*
 * **管理者以外**: *この分析には PersonID プロパティが必要です。 データビューにCustomer Journey AnalyticsID を追加するには、ユーザー管理者にお問い合わせください。*
-
-![タイムラインのスクリーンショット](../assets/timeline.png)
 
 ## ユースケース
 
