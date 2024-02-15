@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
+source-git-commit: de78569389f5a9d74603870e72b4f3871ef4aa92
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 1%
@@ -37,8 +37,7 @@ The **[!UICONTROL 初回使用]** 「表示」には、ユーザーが初めて�
 
 * **[!UICONTROL 表示]**：このビュータイプとの間で切り替えます。 [リリース](release.md).
 * **[!UICONTROL 主要指標]**：ユーザーごとに測定するイベントです。 選択した各キーインジケーターは、色付きの線で表されます。 イベントを表す行が表に追加されます。 最大 3 つのイベントを含めることができます。
-* 
-   * **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザーごとのイベント数], [!UICONTROL イベント], [!UICONTROL セッション]、および [!UICONTROL ユーザー].
+* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザーごとのイベント数], [!UICONTROL イベント], [!UICONTROL セッション]、および [!UICONTROL ユーザー].
 * **[!UICONTROL 要因]**：このビューには、次の 2 つの要因があります。
    * **[!UICONTROL 日付]**：初回使用イベントが発生したまでの距離。
    * **[!UICONTROL イベント]**：を最初に使用して分析を中心として検索するイベント。
