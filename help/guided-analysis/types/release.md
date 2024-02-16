@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ The **[!UICONTROL リリース]** ビューには、特定の日付の前後で�
 クエリレールでは、次のコンポーネントを設定できます。
 
 * **[!UICONTROL 主要指標]**：ユーザーごとに測定するイベントです。 選択した各キーインジケーターは、色付きの線で表されます。 イベントを表す行が表に追加されます。 最大 3 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザーごとのイベント数], [!UICONTROL ユーザーの割合], [!UICONTROL イベント], [!UICONTROL セッション]、および [!UICONTROL ユーザー].
+* **[!UICONTROL 次としてカウント：]**：選択したイベントに適用するカウント方法。 次のオプションがあります [!UICONTROL ユーザーごとのイベント数], [!UICONTROL ユーザーの割合], [!UICONTROL イベント], [!UICONTROL セッション]、および [!UICONTROL ユーザー].
 * **[!UICONTROL 要因]**：前後に比較する日付。
 * **[!UICONTROL セグメント]**：測定するセグメント。 選択したセグメントは、データをフィルタリングして、セグメント条件に一致する個人のみに焦点を当てます。
 

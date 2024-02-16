@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: 製品分析
 role: User
-source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ The **アクティブ** ビューは、特定の期間におけるユーザー�
 
 * **[!UICONTROL 表示]**：このビュータイプとの間で切り替えます。 [純増加](net-growth.md).
 * **[!UICONTROL イベント]**：測定するイベント。 このビュータイプはユーザーベースなので、期間内に 1 回イベントを操作したユーザーはアクティブユーザーとしてカウントされます。 1 つのクエリに 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザー数] および [!UICONTROL ユーザーの割合].
+* **[!UICONTROL 次としてカウント：]**：選択したイベントに適用するカウント方法。 次のオプションがあります [!UICONTROL ユーザー数] および [!UICONTROL ユーザーの割合].
 * **[!UICONTROL セグメント]**：データのフィルタリングに使用するセグメント。 1 つのクエリに 1 つのセグメントを含めることができます。
 
 ## グラフ設定

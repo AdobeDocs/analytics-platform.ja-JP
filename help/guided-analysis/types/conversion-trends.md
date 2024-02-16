@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ The **コンバージョンの傾向** ビューは、コンバージョン率�
 
 * **[!UICONTROL 表示]**：このビュータイプとの間で切り替えます。 [摩擦](friction.md).
 * **[!UICONTROL 手順]**：追跡するイベントタッチポイント。 グラフの各棒は、1 つのステップを表します。 最大 10 個の手順を含めることができます。
-* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザー] および [!UICONTROL セッション].
+* **[!UICONTROL 次としてカウント：]**：選択したイベントに適用するカウント方法。 次のオプションがあります [!UICONTROL ユーザー] および [!UICONTROL セッション].
 * **[!UICONTROL セグメント]**：ファネルを比較するセグメント。 選択した各セグメントは、各ステップを複数のバーに分割します。 各色は異なるセグメントを表します。 最大 3 つのセグメントを含めることができます。
 
 ## グラフ設定

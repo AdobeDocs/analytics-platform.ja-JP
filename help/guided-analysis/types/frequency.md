@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ The **[!UICONTROL 頻度]** 製品内でイベントが発生する頻度別に�
 
 * **[!UICONTROL 表示]**：このビュータイプとの間で切り替えます。 [使用状況](usage.md).
 * **[!UICONTROL イベント]**：測定するイベントです。 選択された各イベントは、別々のグラフとして表示されます。 トレンドイベントを表す行がテーブルに追加されます。 最大 5 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント：]**：測定する指標です。 次のオプションがあります [!UICONTROL ユーザー],  [!UICONTROL セッション],  [!UICONTROL ユーザーの割合] および  [!UICONTROL セッションの割合]. この表示での割合ベースの指標の分母は、製品のすべてのアクティブユーザーではなく、選択したイベントを実行したユーザーまたはセッションです。
+* **[!UICONTROL 次としてカウント：]**：選択したイベントに適用するカウント方法。 次のオプションがあります [!UICONTROL ユーザー],  [!UICONTROL セッション],  [!UICONTROL ユーザーの割合] および  [!UICONTROL セッションの割合]. この表示での割合ベースの指標の分母は、製品のすべてのアクティブユーザーではなく、選択したイベントを実行したユーザーまたはセッションです。
 * **[!UICONTROL セグメント]**：測定するセグメントです。 選択した各セグメントの場合、グラフの棒の数とテーブルの行の数が 2 倍になります。 最大 5 つのセグメントを含めることができます。
 
 ## グラフ設定

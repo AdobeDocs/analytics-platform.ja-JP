@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ The **[!UICONTROL 定着率]** 表示は、目的の日付範囲内での最初�
 クエリレールでは、次のコンポーネントを設定できます。
 
 * **[!UICONTROL イベントを開始してリターン]**：分析に含める資格を得るためにユーザーが関与する必要があるイベント条件。 1 つのイベントがサポートされていますが、プロパティフィルターを含めることができます。
-* **[!UICONTROL 次としてカウント：]**：保持されたユーザーの測定方法。 次のオプションがあります [!UICONTROL 保持されたユーザー] および [!UICONTROL 定着したユーザーの割合].
+* **[!UICONTROL 次としてカウント：]**：保持されたユーザーに適用するカウント方法です。 次のオプションがあります [!UICONTROL 保持されたユーザー] および [!UICONTROL 定着したユーザーの割合].
 * **[!UICONTROL セグメント]**：測定するセグメントです。 選択した各セグメントにより、コホートテーブルに行が追加されます。 最大 3 つのセグメントを含めることができます。
 
 ## グラフ設定
