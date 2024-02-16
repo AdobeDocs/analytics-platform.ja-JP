@@ -5,9 +5,9 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
+source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1632'
 ht-degree: 4%
 
 ---
@@ -106,7 +106,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Adobe Analyticsデータを送信するAmazon S3 アカウント内のバケット。 Adobeから提供されたユーザー ARN が、このバケットにファイルをアップロードするためのアクセス権を持っていることを確認します。 |
+   | [!UICONTROL **バケット**] | Adobe Analyticsデータを送信するAmazon S3 アカウント内のバケット。 <p>Adobeが提供したユーザー ARN に `S3:PutObject` 権限を持っています。 </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例えば、folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 ファイルをこのバケットにアップロードするための権限が、Adobeから提供されるプリンシパルに対して付与されていることを確認します。 ( 本人は、次の場合に定める。 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).) 権限の付与について詳しくは、 [プリンシパルをバケットレベルのポリシーに追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) ( Google Cloud ドキュメント ) を参照してください。 |
+   | [!UICONTROL **バケット**] | Adobe Analyticsデータを送信する GCP アカウント内のバケット。 <p>次の権限を付与したことを確認します。 `roles/storage.objectCreator` Adobeが提供するプリンシパルに対する許可 ( 本人は、次の場合に定める。 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).) <p>権限の付与について詳しくは、 [プリンシパルをバケットレベルのポリシーに追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) ( Google Cloud ドキュメント ) を参照してください。</p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例えば、folder_name/ |
 
    {style="table-layout:auto"}
