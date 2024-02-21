@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 58%
+source-wordcount: '1247'
+ht-degree: 52%
 
 ---
 
@@ -79,7 +79,18 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
 ## ユーザーレベルのアクセス
 
-ユーザーは、Customer Journey Analytics では、データビューや接続を作成、編集または表示できません。ユーザーは、Admin Console で特別な権限を持つフィルター、プロジェクト、オーディエンスおよび計算指標を作成できます。
+以下の表に、非製品管理者および CJA 製品管理者向けの様々なCustomer Journey Analytics機能に対する主なアクセス権限の概要を示します。 これらの権限を理解すると、ユーザーは組織内での役割と責務に基づいて CJA を効果的にナビゲートおよび利用するのに役立ちます。
+
+| CJA 製品の機能 | 製品管理者以外（ユーザー） | 製品管理者 |
+| --- | --- | --- |
+| **データビュー** | 表示/更新/作成/削除できません | 作成/更新/削除可能 |
+| **接続** | 表示/更新/作成/削除できません | 作成/更新/削除可能 |
+| **フィルター** | 作成可能 | 作成可能 |
+| **プロジェクト** | 作成可能 | 作成/更新/削除可能 |
+| **オーディエンス** | 特別な権限でAdmin Console | 作成可能 |
+| **計算指標** | 特別な権限でAdmin Console | 作成可能 |
+
+{style="table-layout:auto"}
 
 ## Workspace プロジェクトのキュレーション
 

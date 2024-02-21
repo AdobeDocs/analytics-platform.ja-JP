@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 20f48259881bade1978909610055d6b20b894092
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -29,6 +29,7 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 人物] | 指標 | 「[!UICONTROL 接続]」で指定された個人 ID に基づいています。 |
 | [!UICONTROL セッション] | 指標 | データビューのセッション設定に基づいています。 |
 | [!UICONTROL イベント] | 指標 | 「[!UICONTROL 接続]」内のすべてのイベントデータセットの行数。 |
+| [!UICONTROL 秒] | ディメンション | 特定のイベントが発生した秒（切り捨て）。 最初のディメンション項目は日付範囲の最初の秒で、最後のディメンション項目は日付範囲の最後の秒です。 |
 | [!UICONTROL 分] | ディメンション | 特定のイベントが発生した時刻の分（切り捨て）。最初のディメンション項目は日付範囲の最初の分で、最後のディメンション項目は日付範囲の最後の分です。 |
 | [!UICONTROL 時間] | ディメンション | 特定のイベントが発生した時刻の時間（切り捨て）。 最初のディメンション項目は日付範囲の最初の時間で、最後のディメンション項目は日付範囲の最後の時間です。 |
 | [!UICONTROL 日] | ディメンション | 特定のイベントが発生した日。 最初のディメンション項目は日付範囲の最初の日で、最後のディメンション項目は日付範囲の最後の日です。 |
