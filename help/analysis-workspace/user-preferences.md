@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: b091606cefa79d5c6d46e2a4a70a77a4cb015c6e
+source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
 workflow-type: tm+mt
 source-wordcount: '3259'
 ht-degree: 84%
@@ -72,7 +72,7 @@ ht-degree: 84%
 | --- | --- | --- |
 | **表示** | | |
 |  | [表示密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=ja) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceとガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceおよびガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度のトレンド（積み重ね棒）のガイド付き分析に適用されます。 このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
+| | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspaceおよびガイド付き分析で使用するビジュアライゼーションカラーパレットを選択します。 <ul><li> 分類パレット：Analysis Workspaceの多くのビジュアライゼーションおよびガイド付き分析に適用されます。 各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット： Analysis Workspaceのコホートテーブルに適用され、ユーザーの増加に関するガイド付き分析に含まれます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度のトレンド（積み重ね棒）のガイド付き分析に適用されます。 このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
 | **データ** | | |
 |  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出す場所を選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択した特定のデータビュー</li></ul> |
 |  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>カスタム定義範囲</li></ul> |
