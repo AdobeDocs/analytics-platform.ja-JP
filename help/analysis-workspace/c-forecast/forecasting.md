@@ -3,20 +3,20 @@ description: Analysis Workspaceでの予測について説明します。
 title: 予測の概要
 feature: Visualizations
 role: User
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
 # 予測の概要
 
-{{release-limited-testing}}
+
 
 {{select-package}}
 
-予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しいAnalysis Workspace機能です。 予測は、時系列関連のデータに対してのみ使用できます。
+予測は、Analysis Workspaceの標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する機能です。 予測は、時系列関連のデータに対してのみ使用できます。
 
 予測は次の場合に利用できます。
 

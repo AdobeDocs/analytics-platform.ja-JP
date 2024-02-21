@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 94%
 
 ---
 
@@ -23,15 +23,20 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 
 >[!BEGINTABS]
 
+>[!TAB 予測]
+
+予測は、Analysis Workspaceの標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する機能です。 予測は、時系列関連のデータに対してのみ使用できます。
+
+[![i画像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
+
+
 >[!TAB ガイド付き分析* - リテンション率]
 
 目的の日付範囲内で最初にエンゲージメントした後に再来訪するユーザーの割合を示す、新しいビュータイプ。横軸は、ユーザーの最初のエンゲージメントからの日数を表します。縦軸は、再度エンゲージするユーザーの割合を表します。
 
-[![i画像](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+[![i画像](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
 
 <span style="color:gray">*_ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics の有料アドオンです。_</span>
-
-
 
 
 >[!TAB ガイド付き分析* - トレンドライン]
