@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 4%
@@ -29,7 +29,7 @@ The **[!UICONTROL 定着率]** 表示は、目的の日付範囲内での最初�
 * 最初に分析に含める資格が与えられてから数日後にイベントに関与した場合、そのイベントは最新の認定期間グループと、それに至るすべての期間グループに表示されます。 このタイプの計算は、「無限の保持」と呼ばれる場合があります。
 * ユーザーが設定した日付範囲でイベントに何度も関与した場合、最初と最後のイベントのみが分析に含まれます。
 
-![定着率のスクリーンショット](../assets/retention-rates.png)
+![定着率のスクリーンショット](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## ユースケース
 

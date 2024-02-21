@@ -5,7 +5,7 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 製品分析
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 1%
@@ -56,7 +56,7 @@ The [!UICONTROL 使用状況] 表示では、次のグラフ設定を利用で�
 
 {{apply-time-comparison}}
 
-![使用時間の比較](../assets/usage-compare.png)
+![使用時間の比較](../assets/usage-compare.png){style="border:1px solid gray"}
 
 ## 日付範囲
 

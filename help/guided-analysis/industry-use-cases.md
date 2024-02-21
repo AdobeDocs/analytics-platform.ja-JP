@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 製品分析
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
-![小売の摩擦ビュー](assets/retail-funnel-friction.png)
+![小売の摩擦ビュー](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![小売の使用状況ビュー](assets/retail-trends-usage.png)
+![小売の使用状況ビュー](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -44,11 +44,11 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
-![金融サービスの摩擦ビュー](assets/fsi-funnel-friction.png)
+![金融サービスの摩擦ビュー](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![金融サービスの使用状況ビュー](assets/fsi-trends-usage.png)
+![金融サービスの使用状況ビュー](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![金融サービスのアクティブビュー](assets/fsi-user-growth-active.png)
+![金融サービスのアクティブビュー](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -56,18 +56,18 @@ ht-degree: 1%
 
 | ユースケース | 例 | 影響 | 分析 |
 | --- | --- | --- | --- |
-| **新しい予約フロー機能の影響を定量化する** | 組織では、ガイド付き分析を使用して、新しい予約ステップ機能がコンバージョン率に与える影響をすばやく確認できます。 最も大きな成果を挙げて、エクスペリエンスの一部を特定します。 | **予約率を上げます。** 機能の使用だけでなく、ビジネスへの影響を測定できます。 | [リリースの影響ビュー](types/release.md)<br>[摩擦ビュー](types/friction.md) |
+| **新しい予約フロー機能の影響を定量化する** | 組織では、ガイド付き分析を使用して、新しい予約ステップ機能がコンバージョン率に与える影響をすばやく確認します。 最も大きな成果を挙げて、エクスペリエンスの一部を特定します。 | **予約率を上げます。** 機能の使用だけでなく、ビジネスへの影響を測定できます。 | [リリースの影響ビュー](types/release.md)<br>[摩擦ビュー](types/friction.md) |
 | **モバイルアプリエクスペリエンスの最適化** | 組織は、月別のアクティブなアプリユーザーを時間の経過と共にすばやく簡単に理解し、バージョンごとにプラスの影響を特定します。 | **MAU を増やします。** 顧客の幸せと相関関係にあるアプリの使用量を測定し、増やします。 | [アクティブなユーザーの成長ビュー](types/active.md)<br>[正味の成長見通し](types/net-growth.md) |
 | **モバイルチェックインフローで摩擦を検索** | 組織は、期待されるモバイルチェックインプロセスがどこで成功したか、またはどこからドロップアウトしたかを確認することで、エクスペリエンスを最適化する領域を簡単に特定できます。 | **CSAT を増やし、IROP を減らします。** 摩擦を取り除くことで、よりシームレスな「旅行日」体験が得られます。 | [摩擦ビュー](types/friction.md)<br>[コンバージョントレンドビュー](types/conversion-trends.md) |
 | **コールセンターコールの偏向** | ファネル表示でユーザーエクスペリエンスを確認すると、訪問者が摩擦に直面したユーザーがわかります。これにより、コストの高いコールセンターのボリュームが増加します。 次に焦点を当てる手順は明確です。 | **コールセンターの使用量を削減します。** より多くの「幸せなパス」ユーザーエクスペリエンスを取得し、コストのかかる呼び出しを削減します。 | [摩擦ビュー](types/friction.md)<br>[コンバージョントレンドビュー](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![旅行と接客に対する摩擦観](assets/th-funnel-friction.png)
+![旅行と接客に対する摩擦観](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![旅行および接客業向けの使用状況ビュー](assets/th-trends-usage.png)
+![旅行および接客業向けの使用状況ビュー](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![旅行および接客業向けのコンバージョンの傾向](assets/th-funnel-conversion-trends.png)
+![旅行および接客業向けのコンバージョンの傾向](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -79,15 +79,15 @@ ht-degree: 1%
 | **チャーンリスクの特定** | ある組織は、季節のイベントを見て、イベントが終了した直後にキャンセルするために、プラットフォームに新規登録した顧客の売り上げが高いと見ています。 これらのユーザーをすばやく特定することで、顧客がプラットフォームに関与し続けるきっかけとなるレコメンデーションを表示できます。 | **幸せな購読者を保持します。** レコメンデーションに介入するために成長セグメントに関与するコンテンツを見つけます。 | [アクティブなユーザーの成長ビュー](types/active.md)<br>[正味の成長見通し](types/net-growth.md) |
 | **アップセルの機会を見つける** | 企業の収益の伸びにとって重要なのは、スタジアムにいる間にファンにとって最も魅力的なアプリ内オファーを理解することです。 ガイド付き分析を使用すると、最も効果的なオファーを正確に確認できます。 | **付帯的な収入を増やします。** 購入行動の促進に対するアプリ内オファーの影響を理解します。 | [初回使用ビュー](types/first-use.md)<br>[摩擦ビュー](types/friction.md) |
 | **クロスデバイスエクスペリエンスの最適化** | 組織は、購読者が複数のデバイス/アプリとどのようにやり取りするかを分析したいと考えています。 この知識により、コンテンツ消費パターンを理解し、再ターゲティングするのに最適な場所を判断できます。 | **エクスペリエンスをパーソナライズします。** 各デバイスの購読者にとって最も共鳴するコンテンツを把握します。 | [使用状況トレンドビュー](types/usage.md) |
-| **コールセンターコールの偏向** | ある組織は、ガイド付き分析を使用して、自動引き落としが機能しない問題を特定し、不満を抱えたお客様がサポートセンターに連絡して計画をキャンセルするよう求めました。 | **サポート呼び出しを削減します。** より良いカスタマーエクスペリエンスを作成し、カスタマーサービスへの呼び出しを減らします。 | [摩擦ビュー](types/friction.md)<br>[コンバージョントレンドビュー](types/conversion-trends.md) |
+| **コールセンターコールの偏向** | ある組織は、ガイド付き分析を使用して、自動引き落としが機能しない問題を特定し、不満を持ったお客様がサポートセンターに連絡して計画をキャンセルする原因となりました。 | **サポート呼び出しを削減します。** より良いカスタマーエクスペリエンスを作成し、カスタマーサービスへの呼び出しを減らします。 | [摩擦ビュー](types/friction.md)<br>[コンバージョントレンドビュー](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![メディアとエンターテインメントの摩擦観](assets/me-funnel-friction.png)
+![メディアとエンターテインメントの摩擦観](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![メディアおよびエンターテインメント向けのアクティブビュー](assets/me-user-growth-active.png)
+![メディアおよびエンターテインメント向けのアクティブビュー](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![メディアおよびエンターテインメントの使用状況ビュー](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -95,14 +95,14 @@ ht-degree: 1%
 
 | ユースケース | 例 | 影響 | 分析 |
 | --- | --- | --- | --- |
-| **患者の健康の成果を改善する** | ある組織は、成長に取り組むためのデータを持っています。 ガイド付き分析を使用する前は、1 週間にウェルネスプランのメンバーが完全に使用を停止した数を明確に把握していませんでした。 | **医師の訪問を減らす。** 再エンゲージメントのために休止状態のユーザーを迅速に特定。 | [アクティブなユーザーの成長ビュー](types/active.md) |
+| **患者の健康の成果を改善する** | ある組織は、成長に取り組むためのデータを持っています。 ガイド付き分析を使用する前は、1 週間あたりウェルネスプランのメンバーが完全に使用を停止した数を明確に把握していませんでした。 | **医師の訪問を減らす。** 再エンゲージメントのために休止状態のユーザーを迅速に特定。 | [アクティブなユーザーの成長ビュー](types/active.md) |
 | **患者体験の向上** | シンプルなパスワードリセットのために多くの患者がコールセンターに接続する状況を把握することで、分析者は患者体験の強化に熱心に取り組みました。 | **提供する全体的なコストを削減します。** より良い患者体験を作り出し、患者サービスへの呼び出しを減らします。 | [使用状況トレンドビュー](types/usage.md)<br>[摩擦ビュー](types/friction.md) |
 | **セグメント別に繰り返しクロスチャネルアクションを特定する** | ある組織は、Medicare の有効なメンバーがどの程度の活動をしているかを把握し、デジタル製品で特定のメッセージを提供するためのプランの使用を希望しています。 ガイド付き分析から得られたインサイトは、マーケティングをより効果的におこなうのに役立ちます。 | **メディケアの登録の選択肢をパーソナライズします。** 最もアクティブなプラン・メンバーによる共通の順次処理を比較します。 | [摩擦ビュー](types/friction.md)<br>[アクティブなユーザーの成長ビュー](types/active.md) |
 | **業界最高の人材を保持** | 組織の Analytics リソースが時間的に停止されます。 ガイド付き分析により、組織はリーダーシップの更新に必要な製品使用状況データを迅速に取得できます。 | **アナリストの作業負荷を削減します。** 回答を迅速に得る。 最も重要なタイミングに関する適切なレポート。 | [ガイド付き分析](overview.md) |
 
 {style="table-layout:auto"}
 
-![医療に関する摩擦観](assets/healthcare-funnel-friction.png)
+![医療に関する摩擦観](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -117,6 +117,6 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
-![B2B の使用状況ビュー](assets/b2b-trends-usage.png)
+![B2B の使用状況ビュー](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++
