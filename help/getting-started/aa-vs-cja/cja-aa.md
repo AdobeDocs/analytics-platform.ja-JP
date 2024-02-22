@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
+workflow-type: tm+mt
+source-wordcount: '2032'
+ht-degree: 94%
 
 ---
 
@@ -20,21 +20,23 @@ ht-degree: 100%
 
 | Adobe Analytics 機能 | サポートに関するメモ |
 | --- | --- |
-| 異常値の検出 | フルサポート |
-| Attribution IQ | フルサポート |
+| 異常値の検出 | 完全なサポート |
+| Attribution IQ | 完全なサポート |
+| ボット検出 | *近日開始！* の場合 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットの場合、ボットフィルタリングが適用されます。 他のデータセットの一般的なボット検出ロジックは、 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
 | 計算指標 | フルサポート。従来の Analysis Workspace の既存の計算指標は、Customer Journey Analytics に移植されません。 |
 | カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
-| CSV のダウンロード | フルサポート |
-| カスタムカレンダー | フルサポート |
-| 日付の比較 | フルサポート |
+| CSV のダウンロード | 完全なサポート |
+| カスタムカレンダー | 完全なサポート |
+| 日付の比較 | 完全なサポート |
 | 日付範囲 | すべての日付範囲機能がサポートされています。 |
 | ディメンション | フルサポート。Customer Journey Analytics は XDM を使用し、無制限のディメンションをサポートします。Customer Journey Analytics は、従来の Adobe Analytics のカスタム eVar や prop に関連付けられていません。 |
-| GDPR の削除 | フルサポート。GDPR は、[!UICONTROL Adobe Experience Platform] と連携して処理されることに注意してください。Customer Journey Analytics は、[!UICONTROL Experience Platform] が基盤となるデータセットに対して行ったデータ変更をすべて継承します。 |
-| リフトおよび信頼性レポート | [実験パネル](/help/analysis-workspace/c-panels/experimentation.md)を介したフルサポート |
+| GDPR の削除 | 完全なサポート。GDPR は [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics は、[!UICONTROL Experience Platform] が基盤となるデータセットに対して行ったデータ変更をすべて継承します。 |
+| リフトおよび信頼性レポート | を介した完全なサポート [実験パネル](/help/analysis-workspace/c-panels/experimentation.md) |
 | リスト変数／リスト prop | フルサポート。Customer Journey Analytics では XDM を使用し、listVars と同様に使用できる無制限の文字列配列をサポートします。 |
-| マーチャンダイジング eVar | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
-| 指標 | Customer Journey Analytics ではエクスペリエンスデータモデル（XDM）を使用し、無制限の指標をサポートします。Adobe Analytics のカスタム成功イベントには関連付けられません。一部の標準指標は、Adobe Analytics から名前が変更されました。訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベント。 |
-| モバイルスコアカード／ダッシュボード | フルサポート |
+| マーチャンダイジング eVar | を介した完全なサポート [ディメンションとバインディング指標のバインディング](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension) |
+| 指標 | 完全なサポート。Customer Journey Analyticsはエクスペリエンスデータモデル (XDM) を使用し、無制限の指標をサポートし、Adobe Analyticsのカスタム成功イベントとは関係ありません。 一部の標準指標は、Adobe Analytics から名前が変更されました。訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベント。 |
+| Adobe Analytics から Customer Journey Analytics へのプロジェクト／フィルター／計算指標の移行 | 完全なサポート。 |
+| モバイルスコアカード／ダッシュボード | 完全なサポート |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。 |
 | PDF の書き出し | フルサポート |
 | プロジェクトのキュレーション | フルサポート |
@@ -75,7 +77,7 @@ ht-degree: 100%
 | プロジェクトの共有 | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | Report Builder | Excel 用の新しい Office 365 プラグインでサポートされます。 |
 | ユーザー権限／データアクセス制御 | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、フィルターまたは注釈などを作成するためのユーザー権限を追加できます。 |
-| ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのビジュアライゼーションがサポートされます。 |
+| ビジュアライゼーション | すべての Workspace ビジュアライゼーションがサポートされますが、マップビジュアライゼーションは除きます。 |
 | クロスデバイス／クロスチャネルのステッチ | ID 情報を直接含むデータセット（「フィールドベースのステッチ」とも呼ばれます）でサポートされます。グラフベースのステッチは、まだサポートされていませんが、今後予定されています。[ステッチ](../../stitching/overview.md)を参照してください。 |
 
 {style="table-layout:auto"}
@@ -84,7 +86,6 @@ ht-degree: 100%
 
 | 機能 | メモ |
 | --- | --- |
-| ボットフィルタリング | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットには、ボットフィルタリングが適用されます。他のデータセットの一般的なボットフィルタリングロジックは、[!UICONTROL Experience Platform] または Customer Journey Analytics では実行されません。 |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 | Analytics for Target（A4T） | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
 
@@ -101,7 +102,6 @@ ht-degree: 100%
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
 | トランザクション ID データソース | サポートが予定されています。 |
-| Adobe Analytics から Customer Journey Analytics へのプロジェクト／フィルター／計算指標の移行 | サポートが予定されています。 |
 | 概要レベルデータソース | サポートが予定されています。 |
 
 {style="table-layout:auto"}
@@ -118,9 +118,6 @@ ht-degree: 100%
 ## サポートなし {#never}
 
 * クロスデバイス Coop を使用した人物指標
-* Reports &amp; Analytics ダッシュボード
-* Reports &amp; Analytics ブックマーク
-* Reports &amp; Analytics のターゲット
 
 ## Adobe Analytics で使用できない Adobe Customer Journey Analytics の機能 {#cja-not-aa}
 
