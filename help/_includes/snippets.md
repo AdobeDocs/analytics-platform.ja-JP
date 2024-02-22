@@ -1,8 +1,8 @@
 ---
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 63%
+source-wordcount: '1158'
+ht-degree: 59%
 
 ---
 # スニペット
@@ -23,7 +23,19 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->次を持っている必要があります： **選択** この節で説明する機能を使用するために、パッケージを作成してください。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
+>次を持っている必要があります： **選択** この節で説明する機能を使用するには、パッケージ以降を使用します。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
+
+## Prime パッケージ {#prime-package}
+
+>[!NOTE]
+>
+>次を持っている必要があります： **Prime** この節で説明する機能を使用するには、パッケージ以降を使用します。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
+
+## Ultimate パッケージ {#ultimate-package}
+
+>[!NOTE]
+>
+>次を持っている必要があります： **Ultimate** この節で説明する機能を使用するために、パッケージを作成してください。 使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
 
 
 ## データ要素のフィルター条件 {#dd-filter-criteria}
