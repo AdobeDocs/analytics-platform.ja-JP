@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 80%
+source-wordcount: '3188'
+ht-degree: 78%
 
 ---
 
@@ -19,9 +19,11 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
-| **2024年2月** | |
+| **2024 年 2 月** | |
+| クラウドの書き出し場所を設定する際に Azure SAS および Azure RBAC にファイルをアップロードするための権限要件を追加しました。 | Azure SAS および Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました ( [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
 | クラウドの書き出し場所を設定する際に、Amazon S3 の役割 ARN および GCP バケットにファイルをアップロードするための権限要件を追加しました。 | 次の場合に、Amazon S3 ロール ARN およびGoogle Cloud Platform バケットにファイルをアップロードするための正確な権限要件を追加しました。 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
 | 製品管理者が常にフルテーブルのエクスポートにアクセスできることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceから完全なテーブルをエクスポートする権限を持っていることを明確にするために、次の変更を行いました。 <ul><li>新しい箇条書きを [製品管理者のデフォルトの権限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>次の場所にメモを追加しました： [完全なテーブルをクラウドにエクスポートするための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| Adobe Analyticsからのコンポーネントの移行中にセグメントが再作成されることを明確にしました。 | Adobe Analytics の [Adobe Analyticsユーザー向けユーザーガイド](/help/getting-started/aa-to-cja-user.md)では、コンポーネントの移行プロセスの一環としてAdobe Analyticsでセグメントが自動的に再作成されること、および手動で再作成する必要がないことを明確にしました。 |
 | スキップされたレコードの詳細 | 接続のスキップされたレコードの詳細機能に関するドキュメントを追加しました。 詳しくは、[接続の詳細](../connections/manage-connections.md#connection-details)を参照してください。 |
 | **2024年1月** | |
 | 予測 | に関するドキュメントを追加しました。 [予測](../analysis-workspace/c-forecast/forecasting.md)、新しいAnalysis Workspaceの機能では、フリーフォームテーブルや折れ線グラフの標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測できます。 |

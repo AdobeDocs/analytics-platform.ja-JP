@@ -5,10 +5,10 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 4%
+source-wordcount: '1738'
+ht-degree: 3%
 
 ---
 
@@ -151,7 +151,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **コンテナ名**] | アカウントデータの送信先として指定したCustomer Journey Analytics内のコンテナです。 |
-   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダーです。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/` |
+   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダーです。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure SAS アカウントを構成する際に、Key Vault のシークレット名フィールドで指定した SAS トークンストアに、 `Write` 権限。 これにより、SAS トークンが Azure コンテナにファイルを作成できます。 <p>SAS トークンでファイルも上書きする場合は、SAS トークンストアに `Delete` 権限。</p><p>詳しくは、 [BLOB ストレージリソース](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) （Azure BLOB ストレージのドキュメント）を参照してください。</p> |
 
    {style="table-layout:auto"}
 
@@ -172,7 +172,7 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **コンテナ**] | Adobe Analyticsデータを送信するアカウント内のコンテナです。 前に作成した Azure アプリケーションにファイルをアップロードする権限を付与してください。 |
-   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダーです。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/` |
+   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダーです。 フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID が、 `Storage Blob Data Contributor` ロールを使用して、コンテナ（フォルダー）にアクセスできます。</p> <p>詳しくは、 [Azure の組み込みの役割](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **アカウント**] | Azure ストレージアカウント。 |
 
    {style="table-layout:auto"}
