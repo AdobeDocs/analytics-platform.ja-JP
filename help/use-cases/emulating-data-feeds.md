@@ -6,7 +6,8 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
+source-git-commit: 744c8cfc903ed841dd39b29fd3fef68ef2e7b7cb
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 10%
@@ -128,7 +129,7 @@ The `post_` プレフィックス列タイプのデータをExperience Platform�
 
 #### 計算
 
-フィールド（列）に対して計算を実行するには、標準の SQL 関数 ( 例： `COUNT(*)` または [数学および統計の演算子と関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL の一部。 また、 [窓関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) は、集計を更新し、順序付けされたサブセットの各行に対して単一の項目を返す機能を提供します。 詳しくは、 [例](#examples) これらの関数の使用方法に関する説明。
+フィールド（列）に対して計算を実行するには、標準の SQL 関数 ( 例： `COUNT(*)`)、または [数学および統計の演算子と関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL の一部。 また、 [窓関数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) は、集計を更新し、順序付けされたサブセットの各行に対して単一の項目を返す機能を提供します。 詳しくは、 [例](#examples) これらの関数の使用方法に関する説明。
 
 #### ネストされたデータ構造
 
@@ -277,4 +278,3 @@ Experience PlatformUI を使用して、出力データセットの書き出し�
 >[!IMPORTANT]
 >
 >この使用例には、2 つのスケジューラーが関与しています。 エミュレートされたデータフィード機能の適切な動作を保証するには、クエリサービスとデータのエクスポートで設定したスケジュールが干渉しないようにします。
-
