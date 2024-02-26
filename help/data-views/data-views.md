@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1060'
-ht-degree: 100%
+source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
 * データビューを作成または管理するには、[Adobe Admin Console で一連の権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja#admin-access-permissions)が必要です。
+* を使用している場合、 [Adobe Analyticsソースコネクタ](/help/data-ingestion/analytics.md) または、Adobe Analyticsの背景知識を持っている場合は、スキーマとデータセットのフィールド、接続の一部、Adobe Analyticsの同等機能との関係を理解する必要があります。 詳しくは、 [Analytics フィールドのマッピング](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja) を参照してください。
 
 ## ワークスペースで上書きできるデータビュー設定 {#settings-override}
 
