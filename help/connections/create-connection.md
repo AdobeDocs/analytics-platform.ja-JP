@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
-workflow-type: ht
-source-wordcount: '2748'
-ht-degree: 100%
+source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+workflow-type: tm+mt
+source-wordcount: '2763'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 前提条件
 
-接続に無制限の数のデータセットを追加するには、**Select** パッケージが必要です。**Foundation** パッケージは 1 つのデータセットに制限されます。使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
+次を持っている必要があります： **選択** パッケージを作成し、1 つの接続にイベントデータセットを無制限に追加します。 The **Foundation** パッケージは 1 つのイベントデータセットに制限されます。 1 つの接続に追加できるプロファイルまたは参照データセットの数に制限はありません。 使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
 
 ## 接続の作成と設定 {#create-connection}
 
