@@ -2,9 +2,8 @@
 description: フィルタービルダーのキャンバスに指標Dimension、フィルターおよびイベントをドラッグ&ドロップすると、コンテナ階層のロジック、ルールおよび演算子に基づいて個人をフィルタリングできます。 この統合開発ツールを使用すると、訪問やイベントをまたいでユーザーの属性やアクションを識別する、単純なフィルターや複雑なフィルターを作成して保存できます。
 title: フィルターの作成
 feature: Filters
-exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c19309488e0a541b522ca6925c7ca2bdb90f2390
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 20%
