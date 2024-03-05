@@ -6,9 +6,9 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,6 @@ ht-degree: 90%
 
 * 広告インプレッションデータ、Customer Journey Analytics データ、メールデータ、POS データ、コールセンターデータ、調査データなど、データソース別にオーディエンスサイズを示します。
 
-![基本的な分析グラフのビジュアライゼーションの例。 ](assets/cja-basic-analysis.png)
+![基本的な分析グラフのビジュアライゼーションの例。](assets/cja-basic-analysis.png)
 
-![基本分析グラフのビジュアライゼーションのその他の例](assets/cja-basic-analysis2.png)
+![基本的な分析グラフのビジュアライゼーションのその他の例。](assets/cja-basic-analysis2.png)

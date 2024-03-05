@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 91%
 
 1. 「**移動先**」を選択し、プロジェクトの移動先のフォルダーを選択します。
 
-   ![「ロケーションの選択」ウィンドウが表示されます。](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![場所を選択ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. 「**移動**」をクリックします。
 
@@ -38,7 +38,7 @@ ht-degree: 91%
 
    プロジェクトが移動したことを確認するトーストメッセージが表示されます。
 
-   ![移動確認トースト。 ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![移動確認トースト。](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## プロジェクトフォルダーからのプロジェクトの削除 {#delete-project-in-folder}
 

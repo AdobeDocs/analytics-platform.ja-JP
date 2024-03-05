@@ -1,13 +1,13 @@
 ---
-description: Workspace の FAQ とトラブルシューティングのヒントについて説明します。
+description: Workspace に関する FAQ とトラブルシューティングのヒントについて説明します。
 title: よくある質問
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 | 質問 | 回答 |
 |--- |--- |
-| **Analysis Workspace を使用するための前提条件を教えてください。** | Analysis WorkspaceをCustomer Journey Analyticsで使用するには、動作中のCustomer Journey Analytics実装が必要です。 ツールを使用する前に、組織が Adobe Experience Platform にデータを送信していることを確認します。 |
+| **Analysis Workspace を使用するための前提条件を教えてください。** | Customer Journey Analytics で Analysis Workspace を使用するには、動作している Customer Journey Analytics 実装が必要です。ツールを使用する前に、組織が Adobe Experience Platform にデータを送信していることを確認します。 |
 | **Analysis Workspace の管理およびアクセスの要件を教えてください。** | [管理要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)を参照してください。 |
 | **Analysis Workspace を使用するとデータ収集に影響がありますか？** | Analysis Workspace はレポート作成ツールなので、データ収集には影響しません。何が機能するかを確認するためにコンポーネントをプロジェクトに適当にドラッグしても、データに影響はありません。様々なディメンションと指標の組み合わせを Workspace プロジェクトにドラッグして、利用可能な項目を確認してください。無効なコンポーネントを誤って Workspace プロジェクトにドラッグした場合や、手順を 1 つ戻したい場合は、Ctrl + Z キー（Windows）または Command + Z キー（Mac）を押して、最後におこなった操作を元に戻します。左上のメニューで&#x200B;*[!UICONTROL プロジェクト]／[!UICONTROL 新規]*&#x200B;をクリックして、新しいスレートから始めることもできます。 |
 | **Analysis Workspace を実装するにはどうすればよいですか？** | 特別な実装は必要ありません。Analysis Workspace は、あらゆる企業の Customer Journey Analytics で利用できます。 ただし、コンテンツ（プロジェクトコンポーネントなど）へのアクセスやプロジェクトのキュレーションおよび共有には、標準の権限が適用されます。[管理およびアクセス要件](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md) を参照してください。 |

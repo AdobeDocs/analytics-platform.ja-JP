@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Workspace には、会社フォルダーと個人用フォルダーという 2 �
 
 Workspace にログインすると、プロジェクトホームページに、会社フォルダーおよび作成した個人用フォルダーと共に、プロジェクトのリストが表示されます。
 
-![プロジェクトと Company フォルダーをリストするプロジェクトのホームページ。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![プロジェクトと会社情報フォルダーを一覧表示するプロジェクトのホームページ。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## 会社フォルダーについて {#company-folder}
 
@@ -41,7 +41,7 @@ Workspace にログインすると、プロジェクトホームページに、�
 
 ![管理オプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
-管理者以外のユーザーには限られたオプションがあります。
+管理者以外のユーザーには、オプションが限られます。
 
 ![フォルダーの管理者以外のオプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 

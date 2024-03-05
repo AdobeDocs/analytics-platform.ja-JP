@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 75%
 
 1. Workspace で、新しいプロジェクトを作成します。
 
-   ![フリーフォームテーブルウィンドウで、新しいプロジェクトを作成できます。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![新しいプロジェクトを作成できるフリーフォームテーブルウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. **プロジェクト**／**保存**&#x200B;ダイアログで、「フォルダー」ドロップダウンメニューからフォルダー名を選択します。
+1. **プロジェクト**／**保存**&#x200B;ダイアログで、フォルダーのドロップダウンメニューからフォルダー名を選択します。
 
-   ![新しいプロジェクトをフォルダに保存するための保存ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![新しいプロジェクトをフォルダーに保存する保存ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. 「**保存**」をクリックします。
 

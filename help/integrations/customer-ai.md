@@ -1,18 +1,18 @@
 ---
-description: Adobe Experience Platform Customer AI データと Workspace の統合の仕組みをCustomer Journey Analyticsで確認します。
-title: 顧客 AI データとCustomer Journey Analyticsの統合
+description: Adobe Experience Platform 顧客 AI データが Customer Journey Analytics の Workspace とどのように統合されるのかを説明します。
+title: 顧客 AI データと Customer Journey Analytics の統合
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 48%
+workflow-type: ht
+source-wordcount: '968'
+ht-degree: 100%
 
 ---
 
-# 顧客 AI データとAdobe Customer Journey Analyticsの統合
+# 顧客 AI データと Adobe Customer Journey Analytics の統合
 
 {{release-limited-testing}}
 
@@ -20,64 +20,64 @@ ht-degree: 48%
 
 顧客 AI は、影響力のある要因の助けを借りて、顧客が何をする可能性があるかとその理由を知ることができます。さらに、マーケターは、顧客 AI の予測と洞察を活用して、最も適切なオファーとメッセージを提供することで、顧客のエクスペリエンスをパーソナライズできます。
 
-顧客 AI は、傾向スコアリングに個々の行動データとプロファイルデータに依存します。顧客 AI には、Adobe Analytics、Adobe Audience Manager、消費者エクスペリエンスイベントデータ、エクスペリエンスイベントデータなど、複数のデータソースを柔軟に取り込むことができます。Experience Platform ソースコネクタを使用して Adobe Audience Manager と Adobe Analytics のデータを取り込むと、モデルは自動的に標準のイベントタイプを選択し、モデルのトレーニングとスコアリングを実施します。標準のイベントタイプを使用せずに独自のエクスペリエンスイベントデータセットを取り込む場合、モデルで使用するには、関連するフィールドをカスタムイベントまたはプロファイル属性としてマッピングする必要があります。これは、Experience Platformの顧客 AI の設定手順でおこなえます。
+顧客 AI は、傾向スコアリングに個々の行動データとプロファイルデータに依存します。顧客 AI には、Adobe Analytics、Adobe Audience Manager、消費者エクスペリエンスイベントデータ、エクスペリエンスイベントデータなど、複数のデータソースを柔軟に取り込むことができます。Experience Platform ソースコネクタを使用して Adobe Audience Manager と Adobe Analytics のデータを取り込むと、モデルは自動的に標準のイベントタイプを選択し、モデルのトレーニングとスコアリングを実施します。標準のイベントタイプを使用せずに独自のエクスペリエンスイベントデータセットを取り込む場合、モデルで使用するには、関連するフィールドをカスタムイベントまたはプロファイル属性としてマッピングする必要があります。これは、Experience Platform の顧客 AI の設定手順で行えます。
 
-顧客 AI は、顧客 AI 対応のデータセットをCustomer Journey Analyticsのデータビューおよびレポートで利用できる範囲で、Customer Journey Analyticsと統合できます。 次のことができます。
+顧客 AI は、顧客 AI 対応データセットを Customer Journey Analytics のデータビューおよびレポートで利用できる範囲で、Customer Journey Analytics と統合できます。次のことができます。
 
 * **ユーザーのセグメントの傾向スコアを経時的に追跡する**。
-   * 使用例：特定のセグメントでの顧客がコンバージョンする可能性を把握します。
-   * 例：ホテルチェーンのマーケターは、ホテルのコンサート会場でホテルの顧客がショーチケットを購入する可能性を把握したいと考えています。
-* **傾向スコアに関連付けられている成功イベントまたは属性を分析する**.
-   * ユースケース：傾向スコアに関連付けられた属性や成功イベントについて理解します。
-   * 例：ホテルチェーンのマーケターは、ホテルのコンサート会場でのショーチケットの購入が傾向スコアにどのように関連付けられているかを把握したいと考えています。
+   * ユースーケース：特定のセグメントの顧客がコンバージョンする可能性を把握します。
+   * 例：ホテルのコンサート会場で宿泊客がショーチケットを購入する可能性をホテルチェーンのマーケターが把握したい場合。
+* **傾向スコアに関連付けられている成功イベントまたは属性を分析する**。
+   * ユースーケース：傾向スコアに関連付けられている属性や成功イベントを把握します。
+   * 例：ホテルのコンサート会場でのショーチケットの購入が傾向スコアにどのように関連付けられているかをホテルチェーンのマーケターが把握したい場合。
 * **異なるスコアリング実行での顧客傾向のエントリフローに従う**。
-   * 使用例：最初に傾向が低かったユーザーで、長期にわたって傾向が高くなったユーザーを把握します。
-   * 例：ホテルチェーンのマーケターは、ショーチケットを購入する傾向が低い顧客として最初に特定されたホテルの顧客を把握したいと考えていますが、時間が経つと、ショーチケットを購入する傾向が高い顧客になりました。
+   * ユースーケース：最初は傾向の低いユーザーだったのが、時間の経過と共に傾向の高いユーザーになった顧客を把握します。
+   * 例：最初はショーチケットを購入する傾向が低い顧客として特定されたが、時間が経つにつれて、ショーチケットを購入する傾向が高い顧客になった宿泊客をホテルチェーンのマーケターが把握したい場合。
 * **傾向の分布を確認する**。
-   * 使用例：傾向スコアの分布を理解し、セグメントを定義する際により正確にします。
-   * 例：ある小売業者が、1 つの製品で 50 ドルの特定のプロモーションを実行したいと考えています。 この業者は、予算などの理由から、非常に限定的なプロモーションのみの実施を希望することがあります。データを分析し、顧客の上位 80%以上をターゲットにすることにします。
-* **特定のコホートがアクションを実行する傾向を経時的に確認する**。
-   * 使用例：特定のコホートを経時的に追跡します。
-   * 例：ホテルチェーンのマーケターは、時間の経過と共に、ブロンズ層と銀層、または銀層と金層を比較してトラッキングしたいと考えています。 訪問者は、時間の経過と共にホテルを予約する各コホートの傾向を確認できます。
+   * ユースーケース：傾向スコアの分布を把握して、より正確にセグメントを定義します。
+   * 例：小売業者がある製品に対して 50 ドル割引のプロモーションを実施したい場合。この業者は、予算などの理由から、限定的なプロモーションのみの実施を希望しています。データを分析し、顧客の上位 80％以上のみをターゲットにすることを決定します。
+* **特定のコホートのアクションを遂行する傾向を経時的に確認する**。
+   * ユースーケース：特定のコホートを経時的に追跡します。
+   * 例：ブロンズ層とシルバー層の対比またはシルバー層とゴールド層の対比をホテルチェーンのマーケターが経時的に追跡したい場合。各コホートのホテル予約の傾向を経時的に確認できます。
 
-実際に顧客 AI データをCustomer Journey Analyticsと統合するには、次の手順に従います。
+実際に顧客 AI データを Customer Journey Analytics と統合するには、次の手順に従います。
 
 >[!NOTE]
 >
->手順の一部は、Customer Journey Analyticsの出力を操作する前に、Adobe Experience Platformで実行されます。
+>この手順の一部は、Customer Journey Analytics の出力を処理する前に、Adobe Experience Platform で実行されます。
 
 
 ## 手順 1：顧客 AI インスタンスを設定する
 
 データを準備し、すべての資格情報とスキーマを設定したら、Adobe Experience Platform ガイドの[顧客インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=ja)の手順に従って開始します。
 
-## 手順 2：顧客 AI データセットへのCustomer Journey Analytics接続を設定する
+## 手順 2：顧客 AI データセットへの Customer Journey Analytics 接続を設定する
 
-Customer Journey Analyticsで、 [1 つ以上の接続を作成する](/help/connections/create-connection.md) を、顧客 AI に実装されたExperience Platformデータセットに追加しました。 「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
+Customer Journey Analytics で、顧客 AI 用に計測された Experience Platform データセットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
 
 >[!IMPORTANT]
 >
->切り替えをオンにして手順 1 の設定時にCustomer Journey Analyticsのスコアを有効にすると、各顧客 AI インスタンスには 2 つの出力データセットがあります。 1 つの出力データセットが Profile XDM 形式、もう 1 つが Experience Event XDM 形式で表示されます。
+>手順 1 での設定時に Customer Journey Analytics のスコアを有効にする切替スイッチをオンにしている場合、各顧客 AI インスタンスには 2 つの出力データセットがあります。1 つの出力データセットが Profile XDM 形式、もう 1 つが Experience Event XDM 形式で表示されます。
 
 ![CAI スコア](assets/cai-scores.png)
 
 ![接続を作成](assets/create-conn.png)
 
-次に、Customer Journey Analyticsが既存または新しいデータセットの一部として取り込む XDM スキーマの例を示します。
+Customer Journey Analytics が既存または新規データセットの一部として取り込む XDM スキーマの例を以下に示します。
 
 ![CAI スキーマ](assets/cai-schema.png)
 
-( この例はプロファイルデータセットです。Customer Journey Analyticsが取得するエクスペリエンスイベントデータセットに、同じスキーマオブジェクトのセットが含まれます。 エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます。）このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが関連付けられています。
+（この例はプロファイルデータセットです。同じスキーマオブジェクトセットは、Customer Journey Analytics が取得するエクスペリエンスイベントデータセットの一部になります。エクスペリエンスイベントデータセットには、スコアの日付としてタイムスタンプが含まれます。）このモデルでスコアリングされたすべての顧客には、スコア、scoreDate などが関連付けられています。
 
 ## 手順 3：これらの接続に基づいたデータビューを作成する
 
-Customer Journey Analyticsで、次に進むことができます。 [データビューを作成](/help/data-views/create-dataview.md) 確立した接続の一部として取り込まれたディメンション（スコア、スコア日、確率など）と指標を使用します。
+Customer Journey Analytics で、確立した接続の一部として得られたディメンション（スコア、スコアの日付、確率など）や指標を使用して、[データビューの作成](/help/data-views/create-dataview.md)に進むことができます。
 
-![データビューウィンドウを作成](assets/create-dataview.png)
+![データビューウィンドウの作成](assets/create-dataview.png)
 
 ## 手順 4：Workspace での CAI スコアのレポート
 
-Customer Journey Analyticsワークスペースで、新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
+Customer Journey Analytics Workspace で新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
 
 ### 傾向スコアのトレンド
 

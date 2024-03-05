@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics におけるコンポーネントとは
-description: どのコンポーネントCustomer Journey Analyticsオファーを使用するか、およびレポートでの使用方法について説明します。
+description: Customer Journey Analytics オファーのコンポーネントの詳細と、レポートでの使用方法について説明します。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 75%
 次のコンポーネントを管理できます。
 
 * [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
-* [**オーディエンス**](/help/components/audiences/audiences-overview.md)：に対して検出されたオーディエンスを作成し、公開します。Customer Journey Analytics: [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) (RTCDP) をAdobe Experience Platformで利用し、お客様のターゲティングとパーソナライゼーションをおこなう。
-* [**フィルター**](filters/filters-overview.md)：強力で重要なオーディエンスフィルターを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいて個人のサブセットを識別できます。
-* [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用する
-* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md)：ユーザーと管理者の両方が、Analytics 環境のコンポーネントを追跡し、より深く理解するのに役立ちます。
-* [**日付範囲**](date-ranges/create.md)：日付範囲Analysis Workspaceオファーをカスタマイズし、調整します。
-* [**Dimension**](/help/components/dimensions/view-dimensions.md):Dimensionは、通常、文字列値を含む変数です。 一般的なディメンションには、ページおよび参照ドメインがあります。
-* [**指標**](/help/components/apply-create-metrics.md):Analysis Workspaceでデータポイントを定量化できます。
-* [**プロジェクト**](/help/analysis-workspace/home.md):Analysis Workspaceでプロジェクトを整理および管理します。
+* [**オーディエンス**](/help/components/audiences/audiences-overview.md)：Customer Journey Analytics で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCDP）に公開し、顧客のターゲティングやパーソナライゼーションを実現します。
+* [**フィルター**](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスフィルターを作成、管理、共有し、レポートに適用します。フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
+* [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
+* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md)：ユーザーと管理者の両方にとって、Analytics 環境のコンポーネントを追跡したり理解を深めたりするのに役立ちます。
+* [**日付範囲**](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
+* [**ディメンション**](/help/components/dimensions/view-dimensions.md)：ディメンションは、通常、文字列値を含んでいる変数です。一般的なディメンションには、ページや参照ドメインなどがあります。
+* [**指標**](/help/components/apply-create-metrics.md)：Analysis Workspace でデータポイントを数量化できます。
+* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でプロジェクトを整理し維持管理します。
 
 ## Analysis Workspace のコンポーネント
 
@@ -37,7 +37,7 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
 
 コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。左側のパネルのアイコンを使用するか、[ホットキー](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用して、パネル（空白パネル、[フリーフォームパネル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[クイックインサイトパネル](/help/analysis-workspace/c-panels/quickinsight.md)、[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) パネルのいずれか）、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、コンポーネントを切り替えることができます。
 
-![左側のパネルでコンポーネントアイコンをハイライトする Workspace パネル](assets/components.png)
+![左パネルでコンポーネントアイコンをハイライト表示する Workspace パネル](assets/components.png)
 
 プロジェクトでのコンポーネントの使用については、[ワークスペースプロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
 
@@ -76,17 +76,17 @@ Analysis Workspace のコンポーネントは、プロジェクトにドラッ�
    >   複数のコンポーネントを選択するには、Shift キーを押すか、Command キー（Mac の場合）または Ctrl キー（Windows の場合）を押します。
 
 
-   ![タグ、お気に入り、承認、共有、削除を表示するコンポーネントのアクションリスト。](assets/component-actions.png)
+   ![タグ、お気に入り、承認、共有、削除を表示するコンポーネントアクションリスト。](assets/component-actions.png)
 
    | コンポーネントのアクション | 説明 |
    |--- |--- |
    | [!UICONTROL **タグ**] | コンポーネントにタグを適用して整理したり管理したりします。次に、フィルターをクリックするか「#」を入力して、左側のレールのタグで検索できます。 タグは、コンポーネントマネージャーのフィルターとしても機能します。 |
    | [!UICONTROL **お気に入り**] | コンポーネントをお気に入りのリストに追加します。タグと同様に、左側のレールのお気に入りで検索し、コンポーネントマネージャーでフィルタリングできます。 |
    | [!UICONTROL **承認**] | コンポーネントを「承認済み」とマークして、コンポーネントが組織で承認されていることをユーザーに知らせます。 タグと同様に、左側のレールで「承認済み」を検索し、コンポーネントマネージャーでフィルタリングできます。 |
-   | [!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。 このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
-   | [!UICONTROL **削除**] | 不要になったコンポーネントを削除します。 このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | [!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | [!UICONTROL **削除**] | 不要になったコンポーネントを削除します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
-カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、 [フィルターの管理](/help/components/filters/manage-filters.md).
+また、カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理できます。[フィルターの管理](/help/components/filters/manage-filters.md)などです。
 
 ## コンポーネントリストの検索、フィルタリング、並べ替え
 
@@ -98,7 +98,7 @@ Analysis Workspace の左側のパネルにあるコンポーネントリスト�
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です。 **フィルター** ![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコン ![Adobeアイコン](assets/default-calc-metric-icon.png) は、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します。 ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
+   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**ディメンション** ![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**フィルター** ![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。アドビアイコン ![アドビアイコン](assets/default-calc-metric-icon.png) は計算指標テンプレートまたはフィルターテンプレートのいずれか、電卓アイコン ![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は組織の Analytics 管理者によって作成された計算指標を示します。
 
 3. ドロップダウンリストに表示される場合に、コンポーネントを選択します。
 
@@ -106,7 +106,7 @@ Analysis Workspace の左側のパネルにあるコンポーネントリスト�
 
 1. 左側のパネルにある「**コンポーネント**」アイコン ![コンポーネントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
 
-2. を選択します。 **フィルター** アイコン ![データ辞書フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)) をクリックします。
+2. **フィルター**&#x200B;アイコン ![データ辞書フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択します。
 
    または
 
@@ -117,10 +117,10 @@ Analysis Workspace の左側のパネルにあるコンポーネントリスト�
    | オプション | 関数 |
    |---------|----------|
    | [!UICONTROL **承認済み**] | 管理者が承認済みとしてマークしたコンポーネントのみを表示します。 |
-   | [!UICONTROL **お気に入り**] | お気に入りのリストにあるコンポーネントのみを表示します。お気に入りのリストにコンポーネントを追加する方法については、 [コンポーネントの管理](#manage-components). |
+   | [!UICONTROL **お気に入り**] | お気に入りのリストにあるコンポーネントのみを表示します。お気に入りのリストにコンポーネントを追加する方法については、[コンポーネントの管理](#manage-components)を参照してください。 |
    | [!UICONTROL **ディメンション**] | ディメンションであるコンポーネントのみを表示します。 |
    | [!UICONTROL **指標**] | 指標であるコンポーネントのみを表示します。 |
-   | [!UICONTROL **フィルター**] | フィルターのコンポーネントのみを表示します。 |
+   | [!UICONTROL **フィルター**] | フィルターであるコンポーネントのみを表示します。 |
    | [!UICONTROL **日付範囲**] | 日付範囲であるコンポーネントのみを表示します。 |
    | [!UICONTROL **すべてを表示**] | すべてのコンポーネントの表示。 このオプションは、管理者のみが使用できます。 |
    | [!UICONTROL **未承認**] | 管理者が承認済みとしてまだマークしていないコンポーネントのみを表示します。レビューと承認が必要なコンポーネントを管理者が識別する際に役立ちます。このオプションは、管理者のみが使用できます。 |

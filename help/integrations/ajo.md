@@ -1,17 +1,17 @@
 ---
 title: Adobe Journey Optimizer と Customer Journey Analytics の統合
-description: Adobe Journey Optimizerで生成されたデータを取り込み、Customer Journey Analytics内でAnalysis Workspaceを使用して分析します。
+description: Adobe Journey Optimizer で生成したデータを取り込み、Customer Journey Analytics 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Adobe Journey OptimizerとAdobe Customer Journey Analyticsの統合
+# Adobe Journey Optimizer と Adobe Customer Journey Analytics の統合
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=ja) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 
@@ -23,17 +23,17 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 
 ## Customer Journey Analytics で接続を作成する
 
-Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接続の作成](/help/connections/create-connection.md) Journey Optimizerデータセットに基づいて または、既存の接続にJourney Optimizerデータセットを追加できます。
+Journey Optimizer データが Adobe Experience Platform に入ったら、Journey Optimizer データセットに基づいて[接続を作成](/help/connections/create-connection.md)できます。または、既存の接続に Journey Optimizer データセットを追加できます。
 
 次のデータセットを選択して設定します。
 
 | データセット | データセットタイプ | 接続設定 | 説明 |
 | --- | --- | --- | --- |
-| AJO メッセージフィードバックイベントデータセット | イベント | ユーザー ID : `IdentityMap` | メッセージ配信イベント（「 」など）が含まれます[!UICONTROL 送信数]&#39;および&#39;[!UICONTROL バウンス]&#39;. |
-| AJO E メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID : `IdentityMap` | 「 」などの E メールトラッキングイベントが含まれます[!UICONTROL 開封数]&#39;、&#39;[!UICONTROL クリック数]&#39;、および&#39;[!UICONTROL 配信停止]&#39;. |
-| AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID : `IdentityMap` | 「 」などのプッシュトラッキングイベントが含まれます[!UICONTROL アプリの起動回数]&#39;. |
-| ジャーニーステップイベント | イベント | ユーザー ID : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに関係したプロファイルを示すイベントが含まれます。 |
-| AJO エンティティデータセット | ルックアップ | キー： `_id`<br>一致するキー： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべてのAdobe Journey Optimizerイベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれます。 |
+| AJO メッセージフィードバックイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メッセージ配信イベント（[!UICONTROL 送信数]や[!UICONTROL バウンス数]など）が含まれています。 |
+| AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メールトラッキングイベント（[!UICONTROL 開封数]、[!UICONTROL クリック数]、[!UICONTROL 登録解除数]など）が含まれています。 |
+| AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベント（[!UICONTROL アプリの起動回数]など）が含まれています。 |
+| ジャーニーステップイベント | イベント | ユーザー ID：`_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに参加したプロファイルを示すイベントが含まれています。 |
+| AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Adobe Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
 
 {style="table-layout:auto"}
 
@@ -44,7 +44,7 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 
 >[!NOTE]
 >
->Adobe Journey OptimizerとCustomer Journey Analyticsのデータの相違は、通常、1 ～ 2 %未満です。 過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>Adobe Journey Optimizer と Customer Journey Analytics の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
 ### データビューでのディメンションの設定
@@ -76,20 +76,20 @@ Journey OptimizerデータをAdobe Experience Platformに配置すると、 [接
 
 | 指標 | 説明 | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- | --- |
-| バウンス | 配信後の直近のバウンス数とバウンス数の両方を含め、バウンスしたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：いずれかの条件を満たす場合<br>次と等しい：`bounce`、次と等しい：`denylist` |
+| バウンス数 | 即時バウンス数と配信後のバウンス数の両方を含む、バウンスしたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：いずれかの条件を満たす場合<br>次と等しい：`bounce`、次と等しい：`denylist` |
 | 配信後のバウンス | 一部のメールサービスでは、メールが配信されたと報告した後で、バウンスが発生します。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | コンポーネントタイプ：指標<br>除外値を含める：`async` と等しい |
 | メールのクリック数 | メッセージ内のクリック数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`click` と等しい |
 | メール開封数 | 開封済みメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`open` と等しい |
-| エラー | エラーが発生したメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`error` と等しい |
+| エラー数 | エラーが発生したメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`error` と等しい |
 | 除外 | 除外されたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`exclude` と等しい |
 | 送信数 | メールプロバイダーが受け入れたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`sent` と等しい |
 | スパム報告件数 | スパム報告の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`spam_complaint` と等しい |
-| 登録解除 | 配信停止の数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
-| エッジ送信数 | エッジネットワークが Web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.send` |
-| インバウンドのディスプレイ | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.display` |
-| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.interact` |
-| アプリ内トリガー | 判定エンジンがメッセージの表示を提案した回数。 Mobile SDK は、実際の表示数を減らす決定を上書きできます。 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.trigger` |
-| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素を使用する `_experience.decisioning.propositionEventType.dismiss` |
+| 登録解除 | 登録解除の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
+| エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します |
+| インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します |
+| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します |
+| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します |
+| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します |
 
 {style="table-layout:auto"}
 

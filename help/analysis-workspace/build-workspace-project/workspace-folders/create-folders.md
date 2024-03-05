@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
 1. ドロップダウンメニューからタグを選択したり、新しいタグを追加したりします。
 
-   ![新しいフォルダー名と使用可能なタグのリストを表示する新しいフォルダーを作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+   ![新規フォルダー名と使用可能なタグのリストを表示する新規フォルダー作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1. 「**作成**」をクリックします。
 
    ![「作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
-   新しいフォルダーがプロジェクトとフォルダーのメインリストに追加されます。
+   新規フォルダーがプロジェクトとフォルダーのメインリストに追加されます。
 
-   ![プロジェクトとフォルダの更新済みリストを示すプロジェクトランディングページ。](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![プロジェクトとフォルダーの更新済みリストを示すプロジェクトランディングページ。](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## サブフォルダーの作成 {#create-subfolder}
 
@@ -44,11 +44,11 @@ Workspace ランディングページのプロジェクトおよびフォルダ�
 
 1. 「**新規フォルダーを作成**」をクリックします
 
-   ![「新しいフォルダーを作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+   ![「新規フォルダーを作成」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1. サブフォルダー名を入力し、必要なタグを追加します。
 
-   ![新しい名前とタグフィールドを含む新しいフォルダーを作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![新しい名前とタグフィールドを含む新規フォルダー作成ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. 「**作成**」をクリックします。
 

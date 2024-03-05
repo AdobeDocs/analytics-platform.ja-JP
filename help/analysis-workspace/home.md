@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 次の画像と付属の表では、Analysis Workspace の主な領域の一部を説明します。
 
-![左端および左端のパネル、キャンバス、データビューのドロップダウンメニューをハイライトするAnalysis Workspaceウィンドウ。](assets/analysis-workspace-overvew.png)
+![左端と左端のパネル、キャンバス、データビューのドロップダウンメニューがハイライト表示された、Analysis Workspace ウィンドウ。](assets/analysis-workspace-overvew.png)
 
 | 画像内の場所 | 名前と機能 |
 |---------|----------|
 | A | **左端のパネル：** Analysis Workspace にパネル、ビジュアライゼーションおよびコンポーネントを追加するためのタブが含まれます。また、データ要素を開くために使用する「データ要素」アイコンも含まれます。 |
 | B | **左パネル：**&#x200B;左端のパネルで選択したタブに応じて、この領域には個々のパネル、ビジュアライゼーションまたはコンポーネントが含まれます。 |
 | C | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネル、ビジュアライゼーションおよびコンポーネントをキャンバスに追加すると、プロジェクトは動的に更新されます。 |
-| D | **データビュードロップダウンメニュー：** Analysis Workspaceのパネルごとに、データビュードロップダウンメニューを使用して、データソースとして使用するデータビューを選択できます。 |
+| D | **データビューのドロップダウンメニュー：** Analysis Workspace の各パネルでは、データビューのドロップダウンメニューを使用して、データソースとして使用するデータビューを選択できます。 |
 
 ## Analysis Workspace の機能 {#analysis}
 
