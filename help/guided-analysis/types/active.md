@@ -1,14 +1,14 @@
 ---
 title: アクティブビュー
-description: 誰が新規、定着、復帰、休止状態かを識別します。
+description: 新規、継続、再来訪または休眠状態のユーザーを特定します。
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
-keywords: 製品分析
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ The **アクティブ** ビューは、特定の期間におけるユーザー�
 * **キャンペーンの評価**：特定のキャンペーンを表示すると、そのキャンペーンで生成されたトラフィック量や、ユーザーの関与を維持するのに役立った効果を把握できます。
 * **ユーザーのライフサイクル分析**：ユーザーのライフサイクル全体を通じてアクティブなユーザーの増加を分析すると、ユーザーエンゲージメントが低下する特定のステージを特定するのに役立ちます。 例えば、オンボーディング段階で個人の休止状態のユーザーの割合が高い場合、使い勝手の問題や、より優れた製品内ガイダンスの必要性を示す可能性があります。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

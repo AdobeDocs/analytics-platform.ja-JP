@@ -1,10 +1,10 @@
 ---
 title: タイムライン表示
 description: ユーザーレベルのセッションイベントを経時的に観察し、エクスペリエンスのパターンを見つけます。
-feature: Guided Analysis
-keywords: 製品分析
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -34,7 +34,7 @@ The **[!UICONTROL タイムライン]** 「表示」では、ユーザーレベ�
 * **エラー動作**：ユーザーが製品エラーが発生した場合は、そのエラーが表示される前または後にユーザーがおこなっていた操作を調べることができます。
 * **データ収集の検証**：データ管理者は、この表示を自分のユーザー ID にフィルタリングして、組織の実装が期待どおりに動作していることを検証できます。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

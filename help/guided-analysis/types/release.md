@@ -1,14 +1,14 @@
 ---
 title: リリース表示
-description: リリース前とリリース後の同じ期間でパフォーマンスを比較します。
-feature: Guided Analysis
-keywords: 製品分析
+description: リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ The **[!UICONTROL リリース]** ビューには、特定の日付の前後で�
 * **機能の採用**：特定の機能の改善に重点を置いた製品アップデートの場合、このビューを使用して、製品アップデートの前後にその機能の使用状況を直接比較できます。
 * **バグ検出**：リリース前とリリース後のエラー数を追跡すると、顧客の問題を早期に示す可能性があります。 リリース直後にエラーが増加した場合は、エンジニアリングチームや開発チームと協力して、問題を特定して修正し、顧客への影響を防ぐことができます。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

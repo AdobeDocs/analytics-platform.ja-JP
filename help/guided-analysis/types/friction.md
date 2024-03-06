@@ -2,13 +2,13 @@
 title: 摩擦ビュー
 description: ステップ間のコンバージョン率を比較します。
 exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
-feature: Guided Analysis
-keywords: 製品分析
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ The **[!UICONTROL 摩擦]** ビューは、製品内の重要なユーザージ�
 * **機能の採用とエンゲージメント**：製品内の特定の機能とユーザーがやり取りする方法を理解します。 機能関連の手順を通じてユーザの進行状況を分析することで、機能採用率を評価し、特定の機能を放棄したり利用しなくなったりする可能性のある領域を特定できます。 この情報を使用して、機能の改善に焦点を当て、導入率を高めることができます。
 * **キャンペーンの評価**：マーケティングキャンペーンの効果を測定します。 特定のキャンペーンに触れたユーザーに焦点を当てたセグメントを作成し、そのコンバージョンプロセスを他のキャンペーンや製品全体と比較することができます。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

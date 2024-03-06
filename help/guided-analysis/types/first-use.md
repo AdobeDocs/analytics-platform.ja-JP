@@ -1,14 +1,14 @@
 ---
 title: 初回使用ビュー
-description: 主要指標に対する初回の機能使用の影響を測定します。
-feature: Guided Analysis
-keywords: 製品分析
+description: 機能の初回使用が主要指標に与える影響を測定します。
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ The **[!UICONTROL 初回使用]** 「表示」には、ユーザーが初めて�
    * 改善にさらされたユーザーのグループに分析をセグメント化
 * **キャンペーンの効果**：ユーザーが特定のキャンペーンからクリックスルーすると、ユーザーがそのキャンペーンとやり取りした前後の主要指標のパフォーマンスを比較できます。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

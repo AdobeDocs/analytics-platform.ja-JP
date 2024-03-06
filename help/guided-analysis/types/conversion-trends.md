@@ -1,14 +1,14 @@
 ---
 title: コンバージョントレンドビュー
 description: コンバージョン率の変化を経時的に追跡する。
-feature: Guided Analysis
-keywords: 製品分析
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ The **コンバージョンの傾向** ビューは、コンバージョン率�
 * **A/B テストの評価**：ファネルのコンテキスト内で実行された A/B テストまたは実験の有効性を評価します。 異なるバリエーション間のコンバージョン率を比較することで、どのテストがより高いコンバージョン率を提供するかを容易に判断でき、どのバリエーションを恒久的に実装するかに関するデータ主導型の判断を下すことができます。
 * **時間の経過と共にキャンペーンの評価**：長期にわたるマーケティングキャンペーンの効果を測定します。 特定のキャンペーンにタッチしたユーザーに焦点を当てたセグメントを作成し、そのコンバージョン率を他のキャンペーンと比較することができます。 また、現在のコンバージョン率を、過去に実行された類似のキャンペーンと比較することもできます。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 

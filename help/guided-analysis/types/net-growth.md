@@ -1,14 +1,14 @@
 ---
 title: 正味の成長見通し
 description: ユーザーは増加していますか、それとも減少していますか？
-feature: Guided Analysis
-keywords: 製品分析
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ The **[!UICONTROL 純増加]** 表示タイプは、特定の期間にユーザ�
 * **ユーザー獲得分析**：ユーザー獲得戦略の有効性を評価できます。 検索エンジン、キャンペーン、その他のマーケティングチャネルなどのユーザーの増加元を分析すると、最も重要な増加元を特定し、それに応じてリソースを割り当てることができます。
 * **チャーン分析**：純増加には、数式（休眠ユーザー）の低下が含まれます。 ユーザーベースの全体的な正常性を経時的に評価できます。 正味の伸びが常に下回る場合 `1`これは、保持戦略の導入を促す可能性のある高い低下量を示します。
 
-## クエリレール
+## クエリパネル
 
 クエリレールでは、次のコンポーネントを設定できます。
 
