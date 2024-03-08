@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1455'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## セグメントの概念の変更
 
-セグメントは、技術的にはAdobe AnalyticsからCustomer Journey Analyticsに移行されませんが、コンポーネント移行ツールを使用して、Adobe AnalyticsセグメントをCustomer Journey Analyticsで再作成できます。 マッピングされているディメンションと指標に基づいて、Customer Journey Analyticsでセグメントが再作成されます。 詳しくは、 [コンポーネントとプロジェクトをAdobe AnalyticsからCustomer Journey Analyticsに移行する準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja).
+セグメントは、技術的には Adobe Analytics から Customer Journey Analytics に移行されませんが、コンポーネント移行ツールを使用して、Customer Journey Analytics で Adobe Analytics セグメントを再作成できます。セグメントは、マッピングされたディメンションと指標に基づいて Customer Journey Analytics で再作成されます。詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行の準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)を参照してください。
 
 [!DNL Customer Journey Analytics] から Experience Platform 統合プロファイルへの[!UICONTROL フィルター]（[!UICONTROL セグメント]）の共有や公開はまだできません（この機能は現在開発中です）。
 

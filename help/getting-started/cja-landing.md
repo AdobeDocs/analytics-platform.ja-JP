@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 
 >[!TAB 予測]
 
-予測は、Analysis Workspaceの標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する機能です。 予測は、時系列関連のデータに対してのみ使用できます。
+予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する Analysis Workspace 機能です。予測は、時系列関連のデータに対してのみ使用できます。
 
 [![i画像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
