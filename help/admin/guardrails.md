@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -81,7 +81,7 @@ ht-degree: 11%
 
 {style="table-layout:auto"}
 
-関連項目：Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+関連項目：Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja).
 
 
 ## データセットの有効期限の自動化
@@ -98,10 +98,10 @@ ht-degree: 11%
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| プロジェクト | 2,000 | システムが適用するガードレール | 組織のプロジェクトの最大数。 |
+| プロジェクト | 50,000 | システムが適用するガードレール | 組織のプロジェクトの最大数。 |
 | データビュー | 2,000 | システムが適用するガードレール | 最大数： [データビュー](../data-views/data-views.md) （組織の場合） |
 | データビュー | 50 | システムが適用するガードレール | 接続の最大データビュー数 |
-| データセット | 100 | システムが適用するガードレール | 最大数： [データセット](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 接続ごと。 |
+| データセット | 100 | システムが適用するガードレール | 最大数： [データセット](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja) 接続ごと。 |
 | 接続 | 1000 | システムが適用するガードレール | 最大数： [接続](../connections/overview.md) （組織の場合） |
 | 接続のタイトル | 500 | システムが適用するガードレール | 接続タイトルの最大文字数。 |
 | 指標 | 5,000 | システムが適用するガードレール | データビューの最大指標数。 |
@@ -126,7 +126,7 @@ ht-degree: 11%
 
 {style="table-layout:auto"}
 
-関連項目：Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
+関連項目：Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## データランディングゾーン
@@ -181,7 +181,7 @@ ht-degree: 11%
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
 | ワークブックのファイルサイズ | 5 | システムが適用するガードレール | スケジュールされたワークブックの最大ファイルサイズ（MB 単位）。 |
-| データブロック | 1000 | システムが適用するガードレール | 最大数： [データブロック](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) ワークブックごと。 |
+| データブロック | 1000 | システムが適用するガードレール | 最大数： [データブロック](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja) ワークブックごと。 |
 | 指標 | 20 | システムが適用するガードレール | データブロックあたりの最大指標数。 |
 | 日付範囲の範囲の範囲 | 13 | システムが適用するガードレール | データブロックごとに日付範囲を設定できる最大月数。 |
 | 行 | 50,000 | システムが適用するガードレール | データブロックあたりの最大行数。 |
@@ -204,7 +204,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->以下の処理時間は、契約上の SLA(Service Level Agreement) ではなく、Guardrail です。 遅延は、顧客の構成、データ量、消費者のアプリケーションによって異なります。 多くの場合、リアルタイム処理の時間が短くなります。 具体的な契約条件や SLA については、Customer Journey Analytics契約を参照してください。 Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) を参照してください。
+>以下の処理時間は、契約上の SLA(Service Level Agreement) ではなく、Guardrail です。 遅延は、顧客の構成、データ量、消費者のアプリケーションによって異なります。 多くの場合、リアルタイム処理の時間が短くなります。 具体的な契約条件や SLA については、Customer Journey Analytics契約を参照してください。 Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
