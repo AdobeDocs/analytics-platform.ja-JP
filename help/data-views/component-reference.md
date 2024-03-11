@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -57,13 +57,13 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 年間通算日] | 時間分割ディメンション | 1 ～ 366 |
 | [!UICONTROL 時刻] | 時間分割ディメンション | 0 ～ 23 |
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
-| [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL セッションを返す] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
+| [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL セッションを返す] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に至るまですべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
-| [!UICONTROL リピートセッション] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL セッションタイプ] | ディメンション | このディメンションには、1) [!UICONTROL 初回]と 2) 再来訪の 2 つの値があります。[!UICONTROL 初回]行項目には、個人の定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。指標がどのセッションにも含まれていない場合、このディメンションの「該当なし」バケットに入ります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
+| [!UICONTROL リピートセッション] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL セッションタイプ] | ディメンション | このディメンションには、1) [!UICONTROL 初回]と 2) 再来訪の 2 つの値があります。[!UICONTROL 初回]行項目には、個人の定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。指標がどのセッションにも含まれていない場合、このディメンションの「該当なし」バケットに入ります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL イベント別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL イベント] グループ別にまとめたものです。 |
 | [!UICONTROL セッション別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL セッション] 別にまとめたものです。 |
 | [!UICONTROL ユーザー別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL 個人] グループ別にまとめたものです。 |

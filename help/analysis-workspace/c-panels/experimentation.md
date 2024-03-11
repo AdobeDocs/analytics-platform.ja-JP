@@ -4,7 +4,7 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 58%
@@ -29,7 +29,7 @@ ht-degree: 58%
 
 ## 手順 1：実験データセットへの接続の作成 {#connection}
 
-推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=ja)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、 **シングル** オブジェクト配列。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
+推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、 **シングル** オブジェクト配列。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの[部分文字列](/help/data-views/component-settings/substring.md)の設定を使用して 2 つに分割できます。
 
 実験データの作成後 [取得済み](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ja) Adobe Experience Platformに [接続をCustomer Journey Analytics](/help/connections/create-connection.md) を 1 つ以上の実験データセットに追加します。
 

@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2521'
-ht-degree: 100%
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
+source-wordcount: '2523'
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
@@ -237,7 +237,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 Adobe Experience Cloud では、地域データ収集（RDC）を使用して、訪問者とアドビおよびアドビ以外のソリューションとの間のインタラクションが訪問者のできるだけ近くで行われるようにします。 データがデータ収集センター （DCC、Edge サイトとも呼ばれ、Platform Edge Network の一部）に地域的に収集されると、データストリームやイベント転送の設定に基づいて、安全な接続を介して関連ソリューションに転送されます。
 
-![Edge Network を使用したデータフロー](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=ja)
+![Edge Network を使用したデータフロー](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 地域データ収集プロセスでは、次の手順に従います。
 
@@ -267,5 +267,4 @@ RDC には現在、次の場所が含まれています（変更される場合�
 Customer Journey Analytics には Adobe Experience Platform からのデータセットが必要なので、データストリーム／イベント転送設定では、地域のデータセンターから Adobe Experience Platform インスタンスが配置されているデータセンターにデータをルーティングするために Adobe Experience Platform サービスが必要です。Customer Journey Analytics とそのサポートサービスおよびインフラストラクチャは、同じ Adobe Experience Platform インスタンスにデプロイされます。
 
 
-Experience Edge Network とその地域のデータセンターを超えたデータ収集プロセスについて詳しくは、[データ収集の概要](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=ja)を参照してください。
-
+詳しくは、 [データ収集の概要](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) Adobe Experience Platform Edge Network およびその地域のデータセンターを超えたデータ収集のプロセスに関する詳細。

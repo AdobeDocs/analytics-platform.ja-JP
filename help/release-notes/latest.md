@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '627'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 | ----------- | ---------- | ------- | ---- |
 | **時系列予測** | [予測](../analysis-workspace/c-forecast/forecasting.md)は、標準指標または計算指標を、フリーフォームテーブルと折れ線グラフに対してサポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測するために使用される新しい Analysis Workspace 機能です。 | 2024年1月31日（PT） | 2024年2月21日（PT） |
 | **ルックアップおよびプロファイルデータの行数指標** | 接続の一部として設定されたデータセットの行数指標に、プロファイルおよびルックアップデータセットから追加、スキップ、削除されたレコードが含まれるようになりました。 |  | 2024年2月14日（PT） |
-| **Experience Edge ボット検出** | [ボット検出](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja)を使用すると、Web SDK、Mobile SDK、Server API で生成されたイベントが、既知のスパイダーやボットで生成されたものとして識別できます。 | | 2024年4月29日（PT） |
+| **Edge Network ボット検出** | [ボット検出](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja) を使用すると、Web SDK、Mobile SDK、Server API で生成されるイベントが、既知のスパイダーやボットで生成されたものと見なすことができます。 | | 2024年4月29日（PT） |
 | **使用状況指標** | 使用状況指標インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。このインターフェイスを使用すると、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断できます。 | 2024年2月20日（PT） | 2024年3月13日（PT） |
 | **Adobe Product Analytics：任意のユーザーと共有** | Product Analytics へのアクセス権を持たないユーザーと、Adobe Product Analytics プロジェクトへの読み取り専用リンクを共有できます。 |  | 2024 年 3 月末 |
 | **Adobe Product Analytics：計算指標の適用** | Analysis Workspace またはトレンド：使用状況ビューの計算指標ビルダーで作成された計算指標にアクセスできるようになり、時間の経過に伴う指標のトレンドと比較が可能になりました。 |  | 2024年2月16日（PT） |

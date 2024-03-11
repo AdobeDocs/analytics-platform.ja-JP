@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 18%
@@ -45,9 +45,9 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上の関�
    * **永続 ID** - 各行に存在する識別情報です。例えば、Adobe AnalyticsAppMeasurementライブラリによって生成された訪問者 ID や、Adobe Experience Cloud ID サービスによって生成された ECID などです。
    * **一時的な ID** - 一部の行にのみ存在する識別情報です。例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。ほぼすべての ID を使用できます。 ステッチでは、このフィールドを、実際のユーザー ID 情報を保持すると見なします。 結果を最適に結び付けるには、一時的な ID を各永続 ID に対して少なくとも 1 回、データセットのイベント内で送信する必要があります。 このデータセットをCustomer Journey Analytics接続内に含める場合は、他のデータセットにも類似した共通の識別子を持つことをお勧めします。
 
-  両方の列（永続 ID と一時的な ID）は、ステッチするデータセットの基になるスキーマ内の ID 名前空間を持つ ID フィールドとして定義する必要があります。 Real-time Customer Data Platformで ID ステッチを使用する場合、 [identityMap フィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)の場合、この節で説明するCustomer Journey Analyticsのステッチは identityMap フィールドグループをサポートしていないので、 id 名前空間を持つ id フィールドを追加する必要があります。 identityMap フィールドグループも使用している間に、スキーマに ID フィールドを追加する場合は、追加の ID フィールドをプライマリ ID として設定しないでください。追加の ID フィールドは、Real-time Customer Data Platformで使用される identityMap フィールドグループに干渉します。
+  両方の列（永続 ID と一時的な ID）は、ステッチするデータセットの基になるスキーマ内の ID 名前空間を持つ ID フィールドとして定義する必要があります。 Real-time Customer Data Platformで ID ステッチを使用する場合、 [identityMap フィールドグループ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#identity)の場合、この節で説明するCustomer Journey Analyticsのステッチは identityMap フィールドグループをサポートしていないので、 id 名前空間を持つ id フィールドを追加する必要があります。 identityMap フィールドグループも使用している間に、スキーマに ID フィールドを追加する場合は、追加の ID フィールドをプライマリ ID として設定しないでください。追加の ID フィールドは、Real-time Customer Data Platformで使用される identityMap フィールドグループに干渉します。
 
-* ステッチには、認証済みと未認証のユーザーデータの結合が含まれます。 イベントデータセットのステッチをアクティブ化する前に、適用される法規制（必要なエンドユーザー権限の取得を含む）に従っていることを確認します。 詳しくは、 [UI での ID フィールドの定義](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) を参照してください。
+* ステッチには、認証済みと未認証のユーザーデータの結合が含まれます。 イベントデータセットのステッチをアクティブ化する前に、適用される法規制（必要なエンドユーザー権限の取得を含む）に従っていることを確認します。 詳しくは、 [UI での ID フィールドの定義](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#) を参照してください。
 
 
 ## ステッチを使用

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: cdc82ee0b6562879afa2b955aa05f330e5cd225c
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '5932'
 ht-degree: 13%
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを、 [Workspace](../../analysis-workspace/home.md) または、派生フィールドを [データビュー](../data-views.md).
 
-派生フィールドを使用すると、Customer Journey Analyticsの外部にある他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
+派生フィールドを使用すると、Customer Journey Analyticsの外部にある他の場所でデータを変換または操作する場合と比べて、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)または独自の変換読み込みの抽出 (ETL)/読み込み変換の抽出 (ELT) プロセス内で実行できます。
 
 派生フィールドは、 [データビュー](../data-views.md)は、ルールとして定義された一連の関数に基づき、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
@@ -654,7 +654,7 @@ Customer Journey Analyticsは、次のデフォルトのコンテナモデルを
 
 <!-- FIND AND REPLACE -->
 
-### 検索と置き換え
+### 検索と置換
 
 選択したフィールド内のすべての値を検索し、新しい派生フィールド内の別の値に置き換えます。
 

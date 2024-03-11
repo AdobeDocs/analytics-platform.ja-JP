@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 85%
@@ -115,7 +115,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -236,7 +236,7 @@ HTTP API ソースコネクタを作成するには：
 
 ストリーミングエンドポイント URL をコピーし、それを使用して、Adobe Experience Platform ロイヤルティデータセットにデータをストリーミングするようロイヤルティアプリケーションを設定できます。
 
-詳しくは、 [UI を使用した HTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=ja) を参照してください。
+詳しくは、 [UI を使用した HTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) を参照してください。
 
 - 認証の使用方法、
 - 受信データと XDM スキーマとの互換性がない場合にデータをマッピングする方法、および

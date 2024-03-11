@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '2789'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -117,7 +117,7 @@ Experience Platform UI の場合：
 
       2. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;データベース&#x200B;**]**」テキストフィールドにペーストします。
 
-         `?FLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja?FLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=ja)を参照してください。
+         `?FLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja?FLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)を参照してください。
 
       3. **[!UICONTROL **&#x200B;データ接続&#x200B;**]**&#x200B;モードを求められたら、「**[!UICONTROL **&#x200B;直接クエリ&#x200B;**]**」を選択して、データ構造が適切にフラット化されていることを確認します。
 
@@ -131,7 +131,7 @@ Experience Platform UI の場合：
 
    選択した 1 つ以上のテーブルに関連付けられたすべてのディメンションと指標が右側のパネルに表示され、ビジュアライゼーションで使用できるようになります。
 
-   詳しくは、[クエリサービスへの Power BI の接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=ja)を参照してください。
+   詳しくは、[クエリサービスへの Power BI の接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)を参照してください。
 
 +++
 
@@ -159,7 +159,7 @@ Experience Platform UI の場合：
 
       3. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;データベース&#x200B;**]**」テキストフィールドにペーストします。
 
-         `%3FFLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja%3FFLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=ja)を参照してください。
+         `%3FFLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja%3FFLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)を参照してください。
 
       4. **[!UICONTROL **&#x200B;認証&#x200B;**]**&#x200B;リストから&#x200B;**[!UICONTROL **&#x200B;ユーザー名とパスワード&#x200B;**]**&#x200B;を選択します。
 
@@ -175,11 +175,11 @@ Experience Platform UI の場合：
 
    これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
 
-   詳しくは、[クエリサービスへの Tableau の接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=ja)を参照してください。
+   詳しくは、[クエリサービスへの Tableau の接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html)を参照してください。
 
 +++
 
-使用可能な様々なツールの概要と詳細情報については、[クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=ja)を参照してください。
+使用可能な様々なツールの概要と詳細情報については、[クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)を参照してください。
 
 ## 機能
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### ネスト化とフラット化
 
-デフォルトでは、データビューのスキーマは、元の XDM スキーマと同様に、ネストされた構造を使用します。また、この統合では、`FLATTEN` オプションもサポートされています。このオプションを使用すると、データビュー（およびセッション内の他のテーブル）のスキーマを強制的にフラット化できます。フラット化により、構造化スキーマをサポートしていない BI ツールでも簡単に使用できるようになります。詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=ja)を参照してください。
+デフォルトでは、データビューのスキーマは、元の XDM スキーマと同様に、ネストされた構造を使用します。また、この統合では、`FLATTEN` オプションもサポートされています。このオプションを使用すると、データビュー（およびセッション内の他のテーブル）のスキーマを強制的にフラット化できます。フラット化により、構造化スキーマをサポートしていない BI ツールでも簡単に使用できるようになります。詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)を参照してください。
 
 ### サポートされる SQL
 
-サポートされている SQL のタイプの完全なリファレンスについては、[クエリサービス SQL リファレンス](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=ja)を参照してください。
+サポートされている SQL のタイプの完全なリファレンスについては、[クエリサービス SQL リファレンス](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html)を参照してください。
 
 使用可能な SQL の例については、次の表を参照してください。
 

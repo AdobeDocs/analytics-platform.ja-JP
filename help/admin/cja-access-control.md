@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 52%
@@ -67,7 +67,7 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
    * 宛先の管理
    * 宛先のアクティブ化
 
-     宛先の権限について詳しくは、「Experience Platformの宛先」を参照してください。 [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+     宛先の権限について詳しくは、「Experience Platformの宛先」を参照してください。 [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## 製品プロファイル管理者の役割
 
@@ -146,7 +146,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | **[!UICONTROL 注釈の作成]** | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
 | **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
-| [!UICONTROL **プロジェクトリンクを他のユーザーと共有**] | ユーザーに許可 [誰とでもプロジェクトを共有できます。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja#share-public-link) |
+| [!UICONTROL **プロジェクトリンクを他のユーザーと共有**] | ユーザーに許可 [誰とでもプロジェクトを共有できます。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL データ表示ツール]**: |   |
 | [!UICONTROL **フルテーブルエクスポート**] | ユーザーに許可 [完全なテーブルをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL **SQL クエリサービスへのアクセス**] | ユーザーが [AEP のクエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja). |

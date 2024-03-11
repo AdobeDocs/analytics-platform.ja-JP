@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 90%
@@ -98,11 +98,11 @@ f. 値として「50」を指定します。
 
 1 つのディメンションと 2 つの指標を利用することで、レポートの評価が容易になります。
 
-* [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) - このディメンションには、1) [!UICONTROL 新規]と 2) [!UICONTROL 再来訪]の 2 つの値があります。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
+* [セッションタイプ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) - このディメンションには、1) [!UICONTROL 新規]と 2) [!UICONTROL 再来訪]の 2 つの値があります。この[!UICONTROL 新規]行項目には、ユーザーの定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目（すべてがセッションに属すると仮定）に含まれます。指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional). 初回セッション指標は、レポートウィンドウ内での個人の定義された最初のセッションとして定義されます。
+* [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional). 初回セッション指標は、レポートウィンドウ内での個人の定義された最初のセッションとして定義されます。
 
-* [リターンセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=ja#optional) 「Return Sessions」指標は、人物の初回セッションではなかったセッションの数です。—>
+* [リターンセッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) 「Return Sessions」指標は、人物の初回セッションではなかったセッションの数です。—>
 
 これらのコンポーネントにアクセスする手順は次のとおりです。
 

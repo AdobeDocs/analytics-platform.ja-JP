@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '3603'
 ht-degree: 84%
@@ -104,7 +104,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field.png)
 
@@ -134,7 +134,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -232,7 +232,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 これで、web サイトから収集したデータを Adobe Experience Platform でデータセットに転送するように、データストリームが設定されました。
 
-データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)を参照してください。
+データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
 
 
 

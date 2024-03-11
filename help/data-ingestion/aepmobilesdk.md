@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 60%
@@ -104,7 +104,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-mobile.png)
 
@@ -134,7 +134,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -285,7 +285,7 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成して設定するに�
 - AEP アシュランス。
 - 同意。
 
-詳しくは、 [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) の拡張機能とその設定について詳しくは、 Experience platform のモバイルアプリケーションチュートリアルを参照してください。
+詳しくは、 [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) の拡張機能とその設定について詳しくは、 Experience platform のモバイルアプリケーションチュートリアルを参照してください。
 
 #### **データ要素**
 

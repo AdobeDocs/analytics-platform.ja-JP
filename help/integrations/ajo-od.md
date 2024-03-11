@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer 意思決定管理で生成されたデー�
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Adobe Journey Optimizer [意思決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=ja)では、マーケティングオファーの一元化されたライブラリと、Adobe Experience Platform が作成するリッチなリアルタイムプロファイルにルールと制約を適用する意思決定エンジンを使用して、的確なオファーを適切なタイミングで顧客に送信します。
 
-意思決定管理は、Adobe Journey Optimizer の一部であり、Adobe Journey Optimizer と統合されています。また、豊富な [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=ja) サポートを使用して、Adobe Journey Optimizer で定義されたジャーニーやキャンペーンとは独立して使用することもできます。
+意思決定管理は、Adobe Journey Optimizer の一部であり、Adobe Journey Optimizer と統合されています。また、豊富な [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) サポートを使用して、Adobe Journey Optimizer で定義されたジャーニーやキャンペーンとは独立して使用することもできます。
 
 意思決定管理で生成されたデータを読み込み、Customer Journey Analytics でアドバンス分析を実行するには、次の手順に従ってください。
 
 ## 意思決定管理から Adobe Experience Platform にデータを送信
 
-Adobe Experience Platform は、中央のデータソースとして機能し、意思決定管理と Customer Journey Analytics の間をリンクします。意思決定管理からのデータは、Experience Platform に&#x200B;**自動的に**&#x200B;または&#x200B;**明示的に送信されたエクスペリエンスイベント**（インプレッション数やクリック数など）の一部として収集されます。詳しくは、[データ収集の開始](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=ja)を参照してください。
+Adobe Experience Platform は、中央のデータソースとして機能し、意思決定管理と Customer Journey Analytics の間をリンクします。意思決定管理からのデータは、Experience Platform に&#x200B;**自動的に**&#x200B;または&#x200B;**明示的に送信されたエクスペリエンスイベント**（インプレッション数やクリック数など）の一部として収集されます。詳しくは、[データ収集の開始](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html)を参照してください。
 
 ## 接続の作成
 

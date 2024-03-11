@@ -5,7 +5,7 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 61%
@@ -19,7 +19,7 @@ ht-degree: 61%
 ## 前提条件
 
 * レポートスイートデータは、既に、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
-* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。詳しくは、 [マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=ja) ( Adobe Analytics Components ガイド ) を参照してください。
+* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。詳しくは、 [マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) ( Adobe Analytics Components ガイド ) を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
 

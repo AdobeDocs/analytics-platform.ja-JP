@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 22%
@@ -37,7 +37,7 @@ ht-degree: 22%
 | B2B マーケティングリストデータセット | B2B マーケティングリストスキーマ | ルックアップ | XDM マーケティングリスト | XDM ビジネスマーケティングリストは、マーケティングリストの最低限必要なプロパティを取り込む、標準の Experience Data Model(XDM) クラスです。 マーケティングリストを使用すると、製品を購入する可能性が最も高い見込み客を優先することができます。 |
 | B2B マーケティングリストメンバーデータセット | B2B マーケティングリストメンバースキーマ | ルックアップ | XDM マーケティングリストメンバー | XDM Business Marketing List Members は、マーケティングリストに関連付けられたメンバー、人、または連絡先を記述する、標準の Experience Data Model(XDM) クラスです。 |
 
-ルックアップスキーマ、プロファイルスキーマ、イベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 詳しくは、 [Real-time Customer Data Platform B2B エディション](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) および [Real-time Customer Data Platform B2B Edition で 2 つのスキーマ間に多対 1 の関係を定義する](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) を参照してください。
+ルックアップスキーマ、プロファイルスキーマ、イベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 詳しくは、 [Real-time Customer Data Platform B2B エディション](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) および [Real-time Customer Data Platform B2B Edition で 2 つのスキーマ間に多対 1 の関係を定義する](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) を参照してください。
 
 ![B2B スキーマ間の関係](assets/classes.png)
 

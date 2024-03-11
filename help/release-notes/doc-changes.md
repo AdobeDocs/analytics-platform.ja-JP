@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 78%
+source-wordcount: '3208'
+ht-degree: 77%
 
 ---
 
@@ -70,8 +70,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Product Analytics | Adobe Product Analytics は、Customer Journey Analytics でクロスチャネルのデータやインサイトを操作する新しい方法です。これらの新機能により、製品チームは、[ガイド付き分析](/help/guided-analysis/overview.md)ワークフローを通じて、製品エクスペリエンスに関するデータとインサイトをセルフサービスで提供できるようになります。 |
 | 派生フィールド | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 |
 | プロファイルデータやルックアップデータへのルックアップサポートの拡張 | プロファイルデータセットまたはルックアップデータセット内のフィールドのルックアップとしてデータセットを追加できるようになります。これまでは、イベントデータセットのみがサポートされていました。[詳細情報](/help/connections/create-connection.md) |
-| Report Builder の機能強化 | <ul><li>[セルからの複数データブロックのフィルタリング](/help/report-builder/select-data-view.md)</li><li>[行ヘッダーと列ヘッダーの表示／非表示の切り替え](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=ja#build-the-data-block)</li></ul> |
-| Experience Edge 位置情報検索 | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) では、統合された地理データをすべての Experience Edge ユーザーに提供する位置情報検索サービスを追加しています。 |
+| Report Builder の機能強化 | <ul><li>[セルからの複数データブロックのフィルタリング](/help/report-builder/select-data-view.md)</li><li>[行ヘッダーと列ヘッダーの表示／非表示の切り替え](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
+| Edge ネットワーク地域ルックアップ | [データストリーム設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) には、統合された地理データを提供する地域ルックアップサービスがあります。 |
 | **2023年6月** | |
 | クロスチャネル分析とステッチ | ステッチを有効にするための変更と、ステッチを使用してクロスチャネル分析を向上させる方法をさらに明確にするための変更が今後見込まれるので、クロスチャネル分析機能に関連するドキュメントを編集して、[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)を Customer Journey Analytics の機能およびユースケースとして、また、[ステッチ](../stitching/overview.md)をそれを実現するための重要な機能として取り上げています。 |
 | Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。[詳細情報](/help/data-views/sql-connector.md) |
@@ -93,7 +93,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年4月** |  |
 | フィルターをディメンションとして使用する方法に関するビデオ | フィルターをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[フィルターの作成](/help/components/filters/create-filters.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
 | フィルタードキュメント | [フィルタービルダー](/help/components/filters/filter-builder.md)を使用する方法に関する記事を追加しました。 <p>[フィルターの作成](/help/components/filters/create-filters.md)と[フィルターの概要](/help/components/filters/filters-overview.md)のドキュメントを合理化しました。</p> |
-| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=ja#non-randomized)に関する節を追加しました。 |
+| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)に関する節を追加しました。 |
 | プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを簡素化し、重複する情報を削除しました。アドホックフィルターの作成手順は、[クイックフィルターの作成](/help/components/filters/quick-filters.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [Customer Journey Analytics での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
@@ -104,7 +104,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | プロジェクトのリンク共有（ログインは不要） | <p>Analysis Workspace へのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明するために、既存のドキュメントを更新しました。</p> <p>ユーザードキュメントの更新内容には、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)と[共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md)が含まれています。</p> <p>[環境設定](/help/analysis-workspace/user-preferences.md)に管理者向けのオプションを追加しました。</p> |
 | **2023年2月** | |
 | Customer Journey Analytics と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
-| Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#latency)に関する新しい節です。 |
+| Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)に関する新しい節です。 |
 | Audiences ドキュメントの更新 | オーディエンスを作成すると、[新しい Customer Journey Analytics オーディエンスごとに Experience Platform ストリーミングセグメントが作成](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#after-audience-created)されます。 |
 | Workspace のカレンダーと日付範囲 | 内容を更新して、相対的な日付範囲、数式計算の更新およびカレンダー UI の変更について説明しました。[パネルを基準とする相対的な日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates)を参照してください。 |
 | モバイルスコアカード | 比較日付範囲の表示／非表示を切り替える方法について説明する新しい節をドキュメントに追加しました。Customer Journey Analytics の[比較日付範囲の表示](/help/mobile-app/create-scorecard.md#show-comparison-dates)を参照してください。 |
@@ -131,8 +131,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [Customer Journey Analytics 監査ログ](/help/privacy/audit-log.md)に関する新しいトピック。 |
 | 2022年10月 | [主要な指標の概要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=ja)ビジュアライゼーションに関する新しいトピック。 |
-| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#date)に関する新しい節 |
-| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=ja#view-detail-slides)に関する新しいトピック。 |
+| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date)に関する新しい節 |
+| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)に関する新しいトピック。 |
 | 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** | |
 | 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/ga/overview.md)に関する新しいユースケース。 |
@@ -147,7 +147,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2022年7月** | |
 | 2022年7月 | [メディア再生滞在時間パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja)に関するドキュメント。 |
 | 2022年7月 | [メディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja)に関するドキュメント。 |
-| 2022年7月 | [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)のレポートドキュメント。 |
+| 2022年7月 | [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat)のレポートドキュメント。 |
 | **2022年6月** | |
 | 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=ja)に関する新しい記事。 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事。 |

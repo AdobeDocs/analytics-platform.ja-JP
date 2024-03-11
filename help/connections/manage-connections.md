@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0cf1f69d5623a827cba64427c8db614b690968a0
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2484'
 ht-degree: 26%
@@ -91,7 +91,7 @@ ht-degree: 26%
 詳しくは、 [削除の影響](/help/admin/cja-deletion.md) を参照してください。
 
 
-## データレイヤーの作成
+## データビューの作成
 
 管理者が接続のデータビューを作成できるようにします。
 
@@ -199,4 +199,4 @@ ht-degree: 26%
 
 >[!MORELIKETHIS]
 >
->[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html?lang=en) チュートリアル
+>[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html) チュートリアル

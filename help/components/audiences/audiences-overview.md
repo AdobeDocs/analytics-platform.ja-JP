@@ -4,7 +4,7 @@ description: Customer Journey Analytics でのオーディエンス公開の概�
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e1815cad331b47b281f61d427ef342ea3b5b5d87
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 50%
@@ -20,7 +20,7 @@ Customer Journey Analyticsで検出されたオーディエンスを作成し、
 * Adobe Journey Optimizer でジャーニーにオーディエンスを使用する。
 * Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートする。
 * イベントベースのデータから派生した有用な属性を使用して、リアルタイムの顧客プロファイルをCustomer Journey Analytics化する。
-* オーディエンスの公開後に、最小限の待ち時間でこれらをすべて行います。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#latency)
+* オーディエンスの公開後に、最小限の待ち時間でこれらをすべて行います。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
 * 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開。
 
 Customer Journey Analyticsで作成するオーディエンスは、プロファイルに対して有効なデータセットに基づいている必要はありません。 プロファイルに関連付けられたデータセットやExperience Platformを有効にすることなく、履歴データを取り込むことができます。 次に、これらのデータセットを使用して、Customer Journey Analytics内の関連するオーディエンスを検出し、それらのオーディエンスをExperience Platformのリアルタイム顧客プロファイルに公開して、アクティベーションを目的とします。

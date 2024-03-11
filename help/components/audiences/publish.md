@@ -4,7 +4,7 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 57%
@@ -64,7 +64,7 @@ ht-degree: 57%
    | [!UICONTROL 再来訪する見込み] | この数により、ドロップダウンリストから選択した期間内の再訪問者の推定数が表示されます。このオーディエンスの過去のチャーンレートを調べて、この数を予測します。 |
    | [!UICONTROL 指標をプレビュー] | この設定を使用すると、特定の指標を調べて、このオーディエンスがこの指標（「[!UICONTROL 売上高]または「[!UICONTROL サイトでの平均時間]」など）に対して不相応な貢献を行っているかどうかを確認できます。指標の集計数と、指標が表す合計のパーセンテージが表示されます。データ表示で使用できる任意の指標を選択できます。 |
    | [!UICONTROL 含まれる名前空間] | オーディエンス内のユーザーに関連付けられている特定の名前空間。例としては、ECID、CRM ID、メールアドレスなどがあります。 |
-   | [!UICONTROL サンドボックス] | このオーディエンスが格納されている [Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ja)。このオーディエンスを Platform に公開すると、このサンドボックスの範囲内でのみ操作できます。 |
+   | [!UICONTROL サンドボックス] | このオーディエンスが格納されている [Experience Platform サンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)。このオーディエンスを Platform に公開すると、このサンドボックスの範囲内でのみ操作できます。 |
 
    {style="table-layout:auto"}
 
@@ -141,7 +141,7 @@ Customer Journey Analyticsは、パイプラインを介してデータを RTCP 
 
 +++**Customer Journey Analyticsは何の ID を送信しますか？**
 
-どの ID/名前空間ペアも [接続の設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection). 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
+どの ID/名前空間ペアも [接続の設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
 
 +++
 

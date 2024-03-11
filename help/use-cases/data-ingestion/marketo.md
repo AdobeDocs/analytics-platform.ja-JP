@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -18,11 +18,11 @@ Adobe Experience Platform(Adobe Experience Platform) で新しく利用可能な
 
 ## 手順 1： Marketo ソースデータフィールドの XDM ターゲットへのマッピング
 
-[人物](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=ja#persons)および[アクティビティ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=ja#activities)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
+[人物](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons)および[アクティビティ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
 
 ## 手順 2:MarketoデータをAdobe Experience Platformに取り込む
 
-[Marketo Engage コネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ja)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
+[Marketo Engage コネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
 ## 手順 3:Customer Journey Analyticsでこのデータセットへの接続を設定する
 

@@ -4,7 +4,7 @@ description: 顧客管理キーを設定する方法について説明します�
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 57%
@@ -17,7 +17,7 @@ Adobe Customer Journey Analyticsは [医療用盾](https://www.adobe.com/trust/c
 
 >[!NOTE]
 >
->顧客管理キーは現在、[Healthcare Shield またはプライバシーとセキュリティシールド](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=ja)アドオンサービスを購入した組織のみが利用できます。
+>顧客管理キーは現在、[Healthcare Shield またはプライバシーとセキュリティシールド](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html)アドオンサービスを購入した組織のみが利用できます。
 
 ## Customer Journey Analytics用の CMK の設定
 

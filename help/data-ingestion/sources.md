@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1967'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -117,7 +117,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -204,7 +204,7 @@ Adobe Analytics ソースコネクタの使用方法について詳しくは、[
 
 HTTP API ソースコネクタの使用方法について詳しくは、[ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
 
-ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#terms-and-conditions)を参照してください。
+ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 
 
 ## 接続の設定

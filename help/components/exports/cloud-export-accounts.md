@@ -5,7 +5,7 @@ title: クラウドエクスポートアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -81,9 +81,9 @@ Customer Journey Analyticsレポートをクラウドの宛先に書き出す前
 
    1. まだダウンロードしていない場合は、 [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Adobe Experience Platformのドキュメントで、 [データランディングゾーンコンテナを Azure Storage Explorer に接続する](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+   1. Adobe Experience Platformのドキュメントで、 [データランディングゾーンコンテナを Azure Storage Explorer に接続する](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer).
 
-      の節で説明したタスクをスキップできます。 [データランディングゾーンの資格情報の取得](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) および [データランディングゾーン資格情報の更新](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials)コピーした URI にこれらの資格情報が含まれているので、をクリックします。
+      の節で説明したタスクをスキップできます。 [データランディングゾーンの資格情報の取得](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) および [データランディングゾーン資格情報の更新](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials)コピーした URI にこれらの資格情報が含まれているので、をクリックします。
 
    1. Adobe Experience Platformのドキュメントに従うと、 [!UICONTROL **BLOB コンテナ SAS URL**] 「 」フィールドに、手順 3 でコピーした SAS URI を貼り付けます。
 

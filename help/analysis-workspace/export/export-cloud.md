@@ -5,7 +5,7 @@ title: Customer Journey Analyticsレポートをクラウドにエクスポー�
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 3%
@@ -146,7 +146,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
 
 * **環境：** 管理者は、 [Customer Journey Analyticsで使用する IP アドレス](/help/admin/ip-addresses.md) は、ファイアウォールの許可リストに加えるに含まれます。
 
-* **権限：** Adobe Admin Consoleでは、ユーザーに、 [!UICONTROL **フルテーブルエクスポート**] 完全なテーブルをエクスポートするために割り当てられた権限。 Admin Consoleでの製品プロファイルへの権限の割り当てについて詳しくは、 [Customer Journey AnalyticsのAdmin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **権限：** Adobe Admin Consoleでは、ユーザーに、 [!UICONTROL **フルテーブルエクスポート**] 完全なテーブルをエクスポートするために割り当てられた権限。 Admin Consoleでの製品プロファイルへの権限の割り当てについて詳しくは、 [Customer Journey AnalyticsのAdmin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
   >[!NOTE]
   >

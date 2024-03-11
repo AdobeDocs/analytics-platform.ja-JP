@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 59%
@@ -104,7 +104,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-gaming.png)
 
@@ -134,7 +134,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -232,7 +232,7 @@ datastream は、Adobe Experience Platform Web および Mobile SDK とAdobe Exp
 
 これで、データストリームは、ゲームから収集したデータをAdobe Experience Platformのデータセットに転送するように設定されました。
 
-データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)を参照してください。
+データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
 
 ## Edge Network Server API の使用
 
@@ -271,7 +271,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 この例では、POSTリクエストは、 `{DATASTREAM_ID}` は、前に設定した例のデータストリームの識別子を指します。 `{sandbox}` は、カスタムの [ ブラインドライト ] フィールドグループへのパスを識別する、サンドボックスの一意の名前です。
 
-詳しくは、 [インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=en) および [非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=en) Edge Network Server API の使用方法に関する詳細
+詳しくは、 [インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja) および [非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) Edge Network Server API の使用方法に関する詳細
 
 ## 接続の設定
 

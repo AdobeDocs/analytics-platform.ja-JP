@@ -5,7 +5,7 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2091'
 ht-degree: 57%
@@ -158,7 +158,7 @@ ht-degree: 57%
 
    このオプションを選択すると、任意のユーザーと共有できるプロジェクトへのリンクが作成されます。このオプションを無効にすることで、プロジェクトへのアクセスをいつでも無効にできます。
 
-   また、プロジェクトの所有者もこのリンクの所有者です。Analytics 管理ガイドの[ユーザーアセットの転送と、アカウントの有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=ja)で説明されているように、リンクの所有権を別のユーザーに譲渡できるのは、プロジェクトの所有権を譲渡した場合のみです。
+   また、プロジェクトの所有者もこのリンクの所有者です。Analytics 管理ガイドの[ユーザーアセットの転送と、アカウントの有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html)で説明されているように、リンクの所有権を別のユーザーに譲渡できるのは、プロジェクトの所有権を譲渡した場合のみです。
 
 1. 次のセキュリティオプションを有効にするかどうかを選択します ( このオプションはCustomer Journey Analytics管理者が制御できます )。
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 この使用例では、派生フィールドの機能を使用して特定のディメンションの目標を設定し、Workspace プロジェクトでこれらの目標を使用する方法を説明します。
 
-派生フィールドについて詳しくない場合は、 [チュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=en) および [ドキュメント](../data-views/derived-fields/derived-fields.md) を参照してください。
+派生フィールドについて詳しくない場合は、 [チュートリアル](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) および [ドキュメント](../data-views/derived-fields/derived-fields.md) を参照してください。
 
 
 ## 目標の定義
