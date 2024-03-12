@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: e7a591c752714032b765910b35402c0de03e41dd
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 94%
+source-wordcount: '636'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 94%
 | **Adobe Product Analytics：任意のユーザーと共有** | Product Analytics へのアクセス権を持たないユーザーと、Adobe Product Analytics プロジェクトへの読み取り専用リンクを共有できます。 |  | 2024 年 3 月末 |
 | **Adobe Product Analytics：計算指標の適用** | Analysis Workspace またはトレンド：使用状況ビューの計算指標ビルダーで作成された計算指標にアクセスできるようになり、時間の経過に伴う指標のトレンドと比較が可能になりました。 |  | 2024年2月16日（PT） |
 | **データビューと接続 UI のリンクを更新しました** | 3 月初旬に、アドビは Customer Journey Analytics 製品のユーザーインターフェイスで、次のリンクを更新する予定です。ブックマークを必要に応じて更新してください。<ul><li>**データビューページ、データビューマネージャー**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/manager)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views)</li><li>**新しいデータビューを作成**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/new)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views/new)</li><li>**データビューを編集**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/edit/dv_65b9f6eba2c6554743236e88)／[新しいリンク](https://experience.adobe.com/#/@aresemeavalidationco/platform/analytics/#/apps/data-management/data-views/dv_62fde2e158324f2803c9e5d6/edit)</li><li>**接続マネージャー**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/manager)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections)</li><li>**接続情報**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/view/dg_66749c92-784b-45bb-b114-e9e8377a2fc1)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8)</li><li>**接続を編集**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/edit/dg_66749c92-784b-45bb-b114-e9e8377a2fc1)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8/edit)</li><li>**新しい接続を作成**：[既存のリンク](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/new)／[新しいリンク](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/new/edit)</li></ul> |  | 2024年3月 |
-| **Media Analytics レポート - 分平均オーディエンス（AMA）** | 分平均オーディエンスパネルが CJA で使用できるようになりました。Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを線形 TV 分平均指標と比較または線形 TV 分平均指標に追加できます。このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。 |  | 2024年3月14日（PT） |
+| **Media Analytics レポート - 分平均オーディエンス（AMA）** | 分平均オーディエンスパネルが CJA で使用できるようになりました。Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを線形 TV 分平均指標と比較または線形 TV 分平均指標に追加できます。このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。 <p>詳しくは、 [メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)</p> |  | 2024年3月12日（PT） |
 
 {style="table-layout:auto"}
 

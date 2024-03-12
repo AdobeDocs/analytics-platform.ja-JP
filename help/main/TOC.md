@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
+source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 79%
+source-wordcount: '1063'
+ht-degree: 80%
 
 ---
 
@@ -154,6 +154,7 @@ ht-degree: 79%
       + [空のパネル](../analysis-workspace/c-panels/blank-panel.md)
       + [実験パネル](../analysis-workspace/c-panels/experimentation.md)
       + [フリーフォームパネル](../analysis-workspace/c-panels/freeform-panel.md)
+      + [メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [クイックインサイトパネル](../analysis-workspace/c-panels/quickinsight.md)
       + [メディアの同時視聴者数パネル](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [メディア再生滞在時間パネル](../analysis-workspace/c-panels/media-playback-time-spent.md)
@@ -208,7 +209,7 @@ ht-degree: 79%
       + [正味の成長見通し](../guided-analysis/types/net-growth.md)
    + ユーザーストリーム {#streams}
       + [タイムライン](../guided-analysis/types/timeline.md)
-   + [業界の使用例](../guided-analysis/industry-use-cases.md)
+   + [業界ユースケース](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
 + コンポーネント {#cja-components}
