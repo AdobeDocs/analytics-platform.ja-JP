@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
+source-git-commit: 56b909a542915cd64251fb8849e55df920668025
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -204,7 +204,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->以下の処理時間は、契約上の SLA(Service Level Agreement) ではなく、Guardrail です。 遅延は、顧客の構成、データ量、消費者のアプリケーションによって異なります。 多くの場合、リアルタイム処理の時間が短くなります。 具体的な契約条件や SLA については、Customer Journey Analytics契約を参照してください。 Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) を参照してください。
+>以下の処理時間は、契約上の SLA(Service Level Agreement) ではなく、Guardrail です。 遅延は、顧客の構成、データ量、消費者のアプリケーションによって異なります。 多くの場合、リアルタイム処理の時間が短くなります。 具体的な契約条件や SLA については、Customer Journey Analytics契約を参照してください。 Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
