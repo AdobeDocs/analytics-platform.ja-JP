@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 26%
+source-wordcount: '2764'
+ht-degree: 23%
 
 ---
 
@@ -24,9 +24,16 @@ ht-degree: 26%
 * 接続内のすべてのデータセットを表示する。
 * 接続のデータセットのステータスと取り込みプロセスのステータスを確認します。 例えば、Analysis Workspaceでのレポートと分析を開始できるように、データが使用可能になるタイミングを指定します。
 * 設定ミスによるデータの相違を特定します。 欠落している行があるか。その場合、欠落している行とその理由を教えてください。 接続の構成を誤っておき、Customer Journey Analyticsにデータが欠落している原因を特定した場合は、
+* すべての接続で、取り込まれた行とレポート可能な行の使用状況に関するインサイトを得ます。
+
+[!UICONTROL 接続] には 2 つのインターフェイスがあります。 [[!UICONTROL リスト]](#list) および [[!UICONTROL 使用状況]](#usage).
 
 
-表に、使用可能なすべての接続が示されます。 検索を使用して、接続をすばやく検索できます。 ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックス。
+## リスト
+
+The [!UICONTROL リスト] interface は、Connections の既定のインターフェイスです。 選択されていない場合は、 **[!UICONTROL リスト]** タブをクリックして、インターフェイスにアクセスします。
+
+The [!UICONTROL リスト] インターフェイスには、使用可能なすべての接続の表が表示されます。 検索を使用して、接続をすばやく検索できます。 ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックス。
 
 テーブルでは、次の列/アイコンを使用できます。
 
@@ -46,7 +53,7 @@ ht-degree: 26%
 
 表示する列を設定するには、 ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). これにより、 **テーブルをカスタマイズ** ダイアログで、テーブルの列のオン/オフを切り替えることができます。
 
-## 接続の編集
+### 接続の編集
 
 管理者に接続の編集を許可します。
 
@@ -69,7 +76,7 @@ ht-degree: 26%
 詳しくは、 [接続の作成または編集](create-connection.md) を参照してください。
 
 
-## 接続の削除 {#connections-delete}
+### 接続の削除 {#connections-delete}
 
 管理者に接続の削除を許可します。
 
@@ -91,7 +98,7 @@ ht-degree: 26%
 詳しくは、 [削除の影響](/help/admin/cja-deletion.md) を参照してください。
 
 
-## データビューの作成
+### データビューの作成
 
 管理者が接続のデータビューを作成できるようにします。
 
@@ -112,7 +119,7 @@ ht-degree: 26%
 
 詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)を参照してください。
 
-## 接続の詳細 {#connection-detail}
+### 接続の詳細 {#connection-detail}
 
 接続の詳細に移動するには、接続テーブルで接続名を選択します。
 
@@ -153,7 +160,7 @@ ht-degree: 26%
 >
 >2021 年 8 月 14 日より前に取り込まれたデータは、 [!UICONTROL 接続] インターフェイス。
 
-### 接続パネル
+#### 接続パネル
 
 データセットテーブルでデータセットが選択されていない場合、接続インターフェイスの右側にあるパネルに、接続オプションと詳細が表示されます。
 
@@ -173,7 +180,7 @@ ht-degree: 26%
 | [!UICONTROL 最終変更日] | 接続に対する最後の変更のタイムスタンプを表示します。 |
 | [!UICONTROL 最終変更者] | 接続を最後に変更した人物を表示します。 |
 
-### データセットパネル
+#### データセットパネル
 
 データセットテーブルでデータセットを選択すると、接続インターフェイスの右側にあるパネルに、選択したデータセットの詳細が表示されます。
 
@@ -195,6 +202,31 @@ ht-degree: 26%
 | [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットの基になるExperience Platformスキーマを表示します。 |
 | [!UICONTROL データセット ID] | このデータセット ID は、Experience Platformで生成されます。 |
+
+
+## 用途
+
+The [!UICONTROL 使用状況] インターフェイスには、すべての接続で、取り込まれた行とレポート可能な行の使用方法が表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用が契約上の合意事項に準拠しているかどうかを判断できます。
+
+を選択します。 **[!UICONTROL 使用状況]** タブをクリックして、インターフェイスにアクセスします。
+
+使用状況をレポートする手順は、次のとおりです。
+
+1. を選択します。 **[!UICONTROL 時間範囲]**. 次の中から選択できます。 **[!UICONTROL 最近の 6 か月間]**, **[!UICONTROL 年から日まで]**&#x200B;または **[!UICONTROL 過去 2 年間]**.
+1. を選択します。 **[!UICONTROL 間隔]**. 次の中から選択できます。 **[!UICONTROL 毎月]** または **[!UICONTROL 四半期ごと]**.
+
+の場合 [!UICONTROL 取り込まれた行]:
+
+* ボックスに [!UICONTROL 合計] 取り込まれた行の数。
+* ボックスには、 [!UICONTROL 先月] および%の変化 ( <span style="color:green">▲</span> または <span style="color:c64545">▼</span>) を前月から削除しました。
+* 折れ線グラフには、  <span style="color:53b2ad">◼︎</span> 累積的に取り込まれた行と <span style="color:4046c3">◼︎</span> 月別に取り込まれた行。<br/>折れ線グラフの各線のデータポイントにマウスポインターを置くと、ポップアップ表示の日付と、選択したデータポイントの行数を表示できます。
+
+
+の場合 [!UICONTROL レポート可能な行]:
+
+* ボックス表示 [!UICONTROL 合計] レポート可能な行の数。
+* ボックスには、 [!UICONTROL 先月] および%の変化 ( <span style="color:green">▲</span> または <span style="color:c64545">▼</span>) を前月から削除しました。
+* 折れ線グラフには、  <span style="color:53b2ad">◼︎</span> 累積レポート可能な行と <span style="color:4046c3">◼︎</span> 月別のレポート可能な行。<br/>折れ線グラフの各線のデータポイントにマウスポインターを置くと、ポップアップ表示の日付と、選択したデータポイントの行数を表示できます。
 
 
 >[!MORELIKETHIS]
