@@ -3,7 +3,8 @@ description: 予測を表または折れ線グラフで表示する方法を説�
 title: Analysis Workspaceで予測を表示する方法
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ## 予測を表で表示
 
-予測は、時系列のフリーフォームテーブルで表示できます。 「予測を表示」が [ユーザーの環境設定](../user-preferences.md)を指定した場合、予測は、テーブルに追加された最初の指標列に対して自動的に表示されます。 その他の列の場合：
+予測は、時系列のフリーフォームテーブルで表示できます。 条件 [!UICONTROL 予測を表示] は、のフリーフォームテーブルに対して有効です。 [ユーザーの環境設定](../user-preferences.md)を指定した場合、予測は、テーブルに追加された最初の指標列に対して自動的に表示されます。 その他の列の場合：
 
 1. 列設定アイコンを選択します。 ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 列ヘッダーで、 **[!UICONTROL 予測を表示]** オプションのリストでが選択されている。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
@@ -51,4 +52,3 @@ ht-degree: 1%
    * 指標の予測値の上限
    * 指標の予測値の下限
 * 影付きの領域には、予測の信頼帯が表示されます。
-

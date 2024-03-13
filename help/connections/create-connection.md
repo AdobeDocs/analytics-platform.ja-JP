@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
 workflow-type: tm+mt
-source-wordcount: '2766'
-ht-degree: 99%
+source-wordcount: '2888'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 
 {style="table-layout:auto"}
 
-使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
+使用しているCustomer Journey Analyticsパッケージが不明な場合は、管理者に問い合わせてください。
 
 ## 接続の作成と設定 {#create-connection}
 
@@ -185,3 +185,12 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/docs/
    この例では、「analytics_demo_data」がデータセットの名前です。
 
 2. Adobe Experience Platform に存在するすべてのデータセットを表示するために、`Show Tables` クエリを実行します。
+
+
+## 大規模な参照データセットのアルゴリズムプルーニング
+
+接続を作成する際に、参照用に大きなデータセットを追加できます。 例えば、レポートやビジュアライゼーションを作成する際に、説明的な製品情報を検索できるように、製品カタログを表すデータセットを指定できます。 このような大規模な参照データセットは、現在ガードレールとして実装されている一意の参照の最大数が 1,000 万件を超え、追加のデータがスキップされる可能性があります。
+
+このような大規模なルックアップデータセットのアルゴリズムプルーニングをリクエストできます。 このプルーニングは、接続のイベントデータセット部分でキーが使用可能なルックアップデータセットにのみデータを読み込みます。 アルゴリズムで使用される参照カウントは 90 日に戻り、毎週 1 回更新されます。
+
+詳しくは、Adobe担当者にお問い合わせください。
