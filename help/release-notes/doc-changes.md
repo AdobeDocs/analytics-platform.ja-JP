@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 77%
+source-wordcount: '3246'
+ht-degree: 76%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2024年3月** | |
+| 「Used in」列の使用状況情報は、2023 年 9 月から提供されます。 | に関する使用状況情報を明確にしました。 **使用場所** 列 [プロジェクトランディングページ](/help/getting-started/landing.md) は 2023 年 9 月までしか遡りません。 |
 | **2024 年 2 月** | |
 | プロジェクト共有ドキュメントの更新 | 次の方法に関する情報を追加しました。 [自分と共有されているプロジェクトの表示](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、 [個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | クラウドの書き出し場所を設定する際に Azure SAS および Azure RBAC にファイルをアップロードするための権限要件を追加しました。 | Azure SAS および Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました ( [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
