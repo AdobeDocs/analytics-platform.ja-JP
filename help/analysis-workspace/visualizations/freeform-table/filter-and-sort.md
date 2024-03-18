@@ -4,10 +4,10 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 67%
+source-wordcount: '924'
+ht-degree: 69%
 
 ---
 
@@ -53,12 +53,15 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
    Shift キーを押しながら行の範囲を選択するか、Command キー (Mac) または Ctrl キー (Windows) を押しながら複数の行を選択します。
 
-### 右クリック > 選択した行を削除
+<!--### Right-click > Delete selected rows
 
-1. 1 つ以上の行を選択します。
-1. 右クリックして「 」を選択します。 **[!UICONTROL 選択した行を削除]**.
+Note: this option does not seem to work. AN-338422
 
-   このアクションは、テーブルから行を削除し、テーブルフィルターを適用します。
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### テーブルへの標準フィルターまたは詳細フィルターの適用
 
