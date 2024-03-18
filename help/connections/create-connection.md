@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
 workflow-type: tm+mt
 source-wordcount: '2888'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 ## 前提条件
 
-接続に追加できるデータセットの最大数の上限は 100 です。 組み合わせは、会社が購入した Customer Journey Analytics パッケージに応じて異なります。
+接続に追加できるデータセットの最大数は 100 に制限されています。組み合わせは、会社が購入した Customer Journey Analytics パッケージに応じて異なります。
 
 | **選択**&#x200B;パッケージ | **基盤**&#x200B;パッケージ |
 | --- | --- |
