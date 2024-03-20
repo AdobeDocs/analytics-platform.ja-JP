@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
+source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 46%
+source-wordcount: '957'
+ht-degree: 44%
 
 ---
 
 # 最新のAdobe Customer Journey Analyticsリリースノート（2024 年 3 月）
 
-**最終更新日**：2024年3月13日（PT）
+**最終更新日**：2024年3月20日（PT）
 
 これらのリリースノートでは、2024 年 3 月 13 日の終わりから 2024 年 4 月のリリース期間を扱っています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
@@ -26,7 +26,7 @@ ht-degree: 46%
 | **担当者からアカウントへの B2B スキーマ変換** | Customer Journey AnalyticsB2B レポートシナリオで、個人ベースの検索をより適切にサポートするようにデータセットを変換できます。 この機能は、次のクラスに基づく B2B スキーマのデータセットで使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | 2024年3月26日（PT） |
 | **Report Builder使用状況。計算指標マネージャーおよびフィルターマネージャーの「使用されている場所」列に含まれます。** | 次を表示する場合： **使用場所** 列を使用して、指標マネージャーまたはフィルターマネージャーで、使用状況データをReport Builderで使用できるようになりました。<p>以前は、フィルターマネージャーの使用状況データは、アラート、プロジェクト、スケジュール済みプロジェクトおよび計算指標に対してのみ使用でき、計算指標マネージャーの使用状況データは、アラート、プロジェクト、スケジュール済みプロジェクトに対してのみ使用できました。</p> |  | 3 月下旬または 4 月上旬 |
 | **Adobe Product Analytics：単一のファネルステップ内でイベントを比較する** | ファネル：摩擦ビューで、単一のファネルステップ内でイベントを比較できるようになりました。 これは、ジャーニーにステップオプションや、A/B 実験を実行するステップがある場合に特に便利です。 | 2024年3月29日（PT） | 2024年4月12日（PT） |
-| **管理者は組織内のすべての場所を管理できます** | ロケーションページの新しいオプションを使用すると、管理者は組織内のすべてのロケーションを表示および管理できます。 以前は、管理者は作成した場所のみを表示および管理できました。 | | 2024年4月 |
+| **管理者は、組織内のすべての場所とアカウントを管理できます** | 管理者は、「ロケーション」タブ（コンポーネント/エクスポートページ）の新しいオプションを使用して、組織内のすべてのロケーションを表示および管理できます。 <p>管理者は、「ロケーションアカウント」タブ（コンポーネント/エクスポートページ）の新しいオプションを使用して、組織内のすべてのアカウントを表示および管理できます。</p><p>以前は、管理者は自分が作成した場所とアカウントのみを表示および管理できました。</p> | | 2024年4月 |
 | **オーディエンスが、Experience Platformの新しい「オーディエンス」セクションに公開される** | Customer Journey Analyticsから公開されたオーディエンスが、Experience Platformの新しい「オーディエンス」セクションで使用できるようになりました。 以前は、Platform の「セグメント」セクションでは、Customer Journey Analyticsから公開されたオーディエンスを使用できました。 この改善には、次のような利点があります。<ul><li>オーディエンスは、Platform に表示されるまでに 1 時間の遅延がなくなりました。オーディエンスは、公開されてから数秒後に使用できます。</li><li>Platform でオーディエンスを並べ替えるには、「Origin」列を使用します。この列には、オーディエンスの最初の公開元のアプリが表示されます。</li><li>Platform のオプションのフィルターと並べ替えを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul>詳しくは、 [Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#audiences-aep). |  | 2024年4月 |
 | **Experience Edge ボット検出** | [ボット検出](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja)を使用すると、Web SDK、Mobile SDK、Server API で生成されたイベントが、既知のスパイダーやボットで生成されたものとして識別できます。 | | 2024年4月29日（PT） |
 
