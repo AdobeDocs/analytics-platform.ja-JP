@@ -4,9 +4,9 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3024'
 ht-degree: 98%
 
 ---
@@ -67,10 +67,6 @@ Approximate Count Distinct (dimension)
 レポートにおける「概算顧客数」指標の使用方法を次に示します。
 
 ![個別訪問者数と概算顧客数を示すフリーフォームテーブル ](assets/approx-customers.png)
-
-## 超過したユニーク数
-
-Count() や RowCount() と同様に、Approximate Count Distinct() も[「超過したユニーク数」制限](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=ja)の対象です。あるディメンションに関して、特定の月に「超過したユニーク数」制限に達した場合、値は 1 ディメンション項目としてカウントされます。
 
 ## カウント関数の比較
 
