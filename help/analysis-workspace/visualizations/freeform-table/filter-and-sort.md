@@ -4,9 +4,9 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
+source-git-commit: 4c96089088560da635e2499e7ec770c19c3de0ab
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '920'
 ht-degree: 69%
 
 ---
@@ -33,7 +33,6 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 フリーフォームテーブルから行をフィルタリングする方法はいくつかあります。 
 
 - 行の「X」をクリックします。
-- 右クリック >「選択した行を削除」
 - テーブルフィルター
 - セグメント化
 
