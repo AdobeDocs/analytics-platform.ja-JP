@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
+source-git-commit: 12007130027d152038b1210070f6ebd5de15c762
 workflow-type: tm+mt
 source-wordcount: '3246'
 ht-degree: 76%
@@ -21,8 +21,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | --- | --- |
 | **2024年3月** | |
 | 「Used in」列の使用状況情報は、2023 年 9 月から提供されます。 | に関する使用状況情報を明確にしました。 **使用場所** 列 [プロジェクトランディングページ](/help/getting-started/landing.md) は 2023 年 9 月までしか遡りません。 |
-| **2024 年 2 月** | |
-| プロジェクト共有ドキュメントの更新 | 次の方法に関する情報を追加しました。 [自分と共有されているプロジェクトの表示](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、 [個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
+| **2024年2月** | |
+| プロジェクト共有ドキュメントの更新 | 次の方法に関する情報を追加しました。 [自分と共有されているプロジェクトの表示](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウドの書き出し場所を設定する際に Azure SAS および Azure RBAC にファイルをアップロードするための権限要件を追加しました。 | Azure SAS および Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました ( [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
 | クラウドの書き出し場所を設定する際に、Amazon S3 の役割 ARN および GCP バケットにファイルをアップロードするための権限要件を追加しました。 | 次の場合に、Amazon S3 ロール ARN およびGoogle Cloud Platform バケットにファイルをアップロードするための正確な権限要件を追加しました。 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
 | 製品管理者が常にフルテーブルのエクスポートにアクセスできることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceから完全なテーブルをエクスポートする権限を持っていることを明確にするために、次の変更を行いました。 <ul><li>新しい箇条書きを [製品管理者のデフォルトの権限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>次の場所にメモを追加しました： [完全なテーブルをクラウドにエクスポートするための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
@@ -72,11 +72,11 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Product Analytics | Adobe Product Analytics は、Customer Journey Analytics でクロスチャネルのデータやインサイトを操作する新しい方法です。これらの新機能により、製品チームは、[ガイド付き分析](/help/guided-analysis/overview.md)ワークフローを通じて、製品エクスペリエンスに関するデータとインサイトをセルフサービスで提供できるようになります。 |
 | 派生フィールド | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 |
 | プロファイルデータやルックアップデータへのルックアップサポートの拡張 | プロファイルデータセットまたはルックアップデータセット内のフィールドのルックアップとしてデータセットを追加できるようになります。これまでは、イベントデータセットのみがサポートされていました。[詳細情報](/help/connections/create-connection.md) |
-| Report Builder の機能強化 | <ul><li>[セルからの複数データブロックのフィルタリング](/help/report-builder/select-data-view.md)</li><li>[行ヘッダーと列ヘッダーの表示／非表示の切り替え](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
+| Report Builder の機能強化 | <ul><li>[セルからの複数データブロックのフィルタリング](/help/report-builder/select-data-view.md)</li><li>[行ヘッダーと列ヘッダーの表示／非表示の切り替え](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=ja#build-the-data-block)</li></ul> |
 | Edge ネットワーク地域ルックアップ | [データストリーム設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) には、統合された地理データを提供する地域ルックアップサービスがあります。 |
 | **2023年6月** | |
 | クロスチャネル分析とステッチ | ステッチを有効にするための変更と、ステッチを使用してクロスチャネル分析を向上させる方法をさらに明確にするための変更が今後見込まれるので、クロスチャネル分析機能に関連するドキュメントを編集して、[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)を Customer Journey Analytics の機能およびユースケースとして、また、[ステッチ](../stitching/overview.md)をそれを実現するための重要な機能として取り上げています。 |
-| Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey Analytics SQL コネクタを使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。[詳細情報](/help/data-views/sql-connector.md) |
+| Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey AnalyticsBI 拡張機能を使用すると、Customer Journey Analyticsで定義したデータビューに SQL からアクセスできます。 [詳細情報](/help/data-views/bi-extension.md) |
 | Adobe Journey Optimizer データビュー | Customer Journey Analytics 管理者は、「AJO データビュー (サンドボックス名)」というタイトルの、Customer Journey Analytics のいくつかの追加データビューにアクセスできます。[詳細情報](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=ja)。 |
 | 通貨換算 | [通貨換算](../data-views/component-settings/format.md#currency)のサポートに関するドキュメントを更新しました。 |
 | 計算指標の更新 | 現在の Customer Journey Analytics 機能と整合させるために、計算指標のドキュメントで次の更新を行いました。 <ul><li>Customer Journey Analytics で利用可能な[デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)のリストを更新しました</li><li>様々な計算指標に関する記事のスクリーンショットと手順を更新しました </li></ul> |
@@ -149,7 +149,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2022年7月** | |
 | 2022年7月 | [メディア再生滞在時間パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja)に関するドキュメント。 |
 | 2022年7月 | [メディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja)に関するドキュメント。 |
-| 2022年7月 | [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat)のレポートドキュメント。 |
+| 2022年7月 | [初回セッション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat)のレポートドキュメント。 |
 | **2022年6月** | |
 | 2022年6月 | [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=ja)に関する新しい記事。 |
 | 2022年6月 | [Adobe Analytics 処理ルール、VISTA および分類と Analytics ソースコネクタのデータ準備の比較](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)に関する新しい記事。 |
