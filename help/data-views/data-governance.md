@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Platform でデータセットを作成する場合、データセッ
 >
 >データ使用状況ラベルは、ステッチされたデータセットに自動的に生成されません。ただし、手動で追加することはできます。
 
-「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。これを行うにはポリシーを使用します。ポリシーは、[Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) を使用するか、Experience Platform の [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) を介して作成します。
+「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。これを行うにはポリシーを使用します。ポリシーは、[Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja) を使用するか、Experience Platform の [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=ja) を介して作成します。
 
 Customer Journey Analytics では、次の 2 つのアドビが定義するポリシーが表示され、レポートおよびダウンロード／共有に影響します。
 
@@ -76,6 +76,6 @@ Experience Platform で作成したデータラベルは、データビューの
 >[機密データのダウンロード](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Report Builder の制限ラベルとは？](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
+>[Report Builder の制限ラベルとは？](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=ja)
 
 

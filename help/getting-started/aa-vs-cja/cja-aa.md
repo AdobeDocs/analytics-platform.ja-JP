@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1964'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 | --- | --- |
 | 異常値の検出 | フルサポート |
 | Attribution IQ | フルサポート |
-| ボット検出 | [完全なサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja) |
+| ボット検出 | [フルサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja) |
 | 計算指標 | フルサポート。従来の Analysis Workspace の既存の計算指標は、Customer Journey Analytics に移植されません。 |
 | カレンダーイベント | フルサポート。カレンダーイベントは、ワークスペースの[注釈](/help/components/annotations/overview.md)として実装されています。 |
 | CSV のダウンロード | フルサポート |
@@ -60,18 +60,18 @@ ht-degree: 99%
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics 分類ソースコネクタを使用して Experience Platform および Customer Journey Analytics に読み込むことができます。ルックアップデータセットは Experience Platform に直接アップロードして、Customer Journey Analytics で使用することもできます。 |
 | 分類ルールビルダー | Customer Journey Analytics で[部分文字列](/help/data-views/component-settings/substring.md)を使用してサポートされます。ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
 | カスタムセッションの長さ | セッションの長さは、データビューの[セッション設定](../../data-views/create-dataview.md#session-settings)を介して設定できます。詳しくは、[セッション設定](../../data-views/session-settings.md)を参照してください。<br/>モバイルバックグラウンドイベントの処理は、Adobe Experience Platform Mobile SDK を介してサポートされます。詳しくは、[Edge Network のライフサイクル](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)を参照してください。 |
-| 通貨換算 | データビューの[指標コンポーネントの書式設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html#currency)の一部としてサポートされます。 |
+| 通貨換算 | データビューの[指標コンポーネントの書式設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=ja#currency)の一部としてサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
 | 顧客属性 | 現在は、「プロファイルデータセット」と呼ばれています。これらは Experience Cloud から自動的に読み込まれませんが、Customer Journey Analytics で使用できるようにするには、Experience Platform にアップロードする必要があります。 |
 | データフィード | データセットの第 1 世代のデータ書き出しは、[Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=ja) および [Experience Platform の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)を通じて利用できます。これらのオプションを使用すると、Experience Platform データレイクに収集または取り込まれるすべてのデータをイベント／行レベルで書き出すことができます。Post 列はクエリ時に計算されるので、後処理データ列は使用できません。Post 列の書き出しは、レポートを通じて使用できます。 |
 | Data Warehouse レポート | [Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)は、AAdobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。 |
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は Customer Journey Analytics の一部ではなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
-| 地理特性ディメンション | [完全なサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja) |
+| 地理特性ディメンション | [フルサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja) |
 | IP の不明化 | Analytics ソースコネクタを使用している Customer Journey Analytics の顧客が Adobe Analytics から Customer Journey Analytics にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、Customer Journey Analytics データを通じて送られます。必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analytics の顧客が Experience Platform Web SDK を使用して、Platform と Customer Journey Analytics にデータを直接入力する場合。Platform のデータ収集用のデータ準備を使用して、会社の要件に基づいて IP アドレスを不明化するルールを設定できます。 |
 | マーケティングチャネル | Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[Customer Journey Analytics マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=ja)を参照してください。<br/>WebSDK 実装では、レポート時のマーケティングチャネル処理ルールは、[派生フィールド](../../data-views/derived-fields/derived-fields.md)を通じてサポートされます。 |
 | 指標の重複排除 | データビュー内の指標に対して設定されるようになりました。指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
-| 新規セッションレポートとリピートセッションレポート | 以前は、訪問回数ディメンションを使用して達成されていました。新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html)でサポートされています。 |
+| 新規セッションレポートとリピートセッションレポート | 以前は、訪問回数ディメンションを使用して達成されていました。新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=ja)でサポートされています。 |
 | 処理ルール、VISTA ルール、マーケティングチャネルの処理ルール | WebSDK ベースのデータセットと Analytics ソースコネクタのデータの両方で、Adobe Experience Platform データ準備機能と[派生フィールド](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html?lang=ja)の使用がサポートされます。 |
 | products 変数 | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | プロジェクトの共有 | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |

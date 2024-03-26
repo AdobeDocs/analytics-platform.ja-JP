@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,15 +62,15 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用については、[Adobe Analytics からのデータの取り込みと Customer Journey Analytics での使用](../data-ingestion/analytics.md)方法に関するクイックスタートガイドを参照してください。詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
 
-Adobeには、 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) または [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja). これらの方法は、データ収集の可能性を大幅に拡大します。 フィールドの数や、Analytics などの prop、eVar およびイベントにデータ要素をマッピングする必要性に制限はなくなりました。 Customer Journey Analytics [データビュー](/help/data-views/data-views.md)を使用すると、様々なタイプの無制限のスキーマ要素を使用し、それらを複数の方法で表すことができます。Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
+アドビでは、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) または [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) を使用してデータ収集を実装する機能も提供しています。これらの方法により、データ収集の可能性が大幅に広がります。フィールド数の制限や、Analytics のようにデータ要素を prop、eVar、イベントにマッピングする必要がなくなりました。Customer Journey Analytics [データビュー](/help/data-views/data-views.md)を使用すると、様々なタイプの無制限のスキーマ要素を使用し、それらを複数の方法で表すことができます。Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
 
 **Experience Platform SDK を使用する場合の利点：**
 
 * 必要なフィールドを何でも定義できる柔軟性がスキーマにあります
 * Adobe Analytics の用語（prop、eVar、イベントなど）に依存しません
 * 文字制限に関する問題がありません（prop の場合は 100 文字）
-* Adobe Experience Platform でのデータの可用性が向上し、[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)が強化されます
-* [ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) で訪問者識別の精度を高めます
+* Adobe Experience Platform でのデータの可用性が向上し、[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)が強化されます
+* [ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja) で訪問者識別の精度を高めます
 
 **Experience Platform SDK を使用する場合の欠点**
 
@@ -120,7 +120,7 @@ Adobe Analytics セグメント（Customer Journey Analytics では[!UICONTROL �
 
 * [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
-* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
+* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=ja)
 
 ### その他の考慮事項
 

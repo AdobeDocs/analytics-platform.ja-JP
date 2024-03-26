@@ -5,15 +5,15 @@ exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 処理ルール、VISTA および分類とデータ準備の比較
 
-Adobe Analytics の[処理ルールと VISTA ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html)は、Adobe Analytics [データ収集](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ja)に渡されるデータを変換して操作する手段を提供します。これらの変換は、Adobe Analytics でレポートや分析目的でデータが保存される前に、アドビのデータ処理の一部として行われます。
+Adobe Analytics の[処理ルールと VISTA ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=ja)は、Adobe Analytics [データ収集](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ja)に渡されるデータを変換して操作する手段を提供します。これらの変換は、Adobe Analytics でレポートや分析目的でデータが保存される前に、アドビのデータ処理の一部として行われます。
 
 [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)は、[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=ja) に取り込まれたデータに対して、行ベースのマッピングや変換を適用できるツールです。これにより、Customer Journey Analytics などを含む Experience Platform アプリケーションでデータを利用できるようになります。データ準備は、多くの Platform [ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)および [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)と統合されています。このコネクタは、Adobe Analytics から Platform にレポートスイートデータを取り込むための手段を提供します。
 
@@ -21,7 +21,7 @@ Adobe Analytics の[処理ルールと VISTA ルール](https://experienceleague
 
 Adobe Analytics で収集され、保存されたデータは、処理ルール、VISTA ルールまたはその両方で変換できます。ただし、Analytics ソースコネクタを介して Platform に転送されるレポートスイートは、データ準備を使用して、さらにもう一度変換できます。これは、様々な目的のために望ましいといえます。
 
-* **Customer Journey Analytics や RTCDP で使用するための、レポートスイート間のスキーマの違いの解決**。例えば、レポートスイート A が `eVar1` を「検索語句」として定義し、レポートスイート B が `eVar2` を「検索語句」として定義しているとします。データ準備を使用して、2 つの異なる eVar を、両方の eVar のデータを含む共通のフィールドにマッピングできます。これにより、[Customer Journey Analytics 接続](/help/connections/overview.md)や [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html) で使用するために、[レポートスイートを様々なスキーマと組み合わせる](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html)ことが可能になります。
+* **Customer Journey Analytics や RTCDP で使用するための、レポートスイート間のスキーマの違いの解決**。例えば、レポートスイート A が `eVar1` を「検索語句」として定義し、レポートスイート B が `eVar2` を「検索語句」として定義しているとします。データ準備を使用して、2 つの異なる eVar を、両方の eVar のデータを含む共通のフィールドにマッピングできます。これにより、[Customer Journey Analytics 接続](/help/connections/overview.md)や [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=ja) で使用するために、[レポートスイートを様々なスキーマと組み合わせる](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja)ことが可能になります。
 * **`eVars` フィールドを意味論的に意味のある名前にマッピングする**。Analytics ソースコネクタを使用して取得した `eVars` と `props` は、_\_ experience.analytics.customDimensions.eVars.eVar1_ などのフィールドにマッピングされます。データ準備は、`eVar` および `prop` フィールドを、ユーザーにとってより意味のある名前、または他のデータソースから取得する名前と一致する新しいフィールドにマッピングするために使用できます。（これは、[Customer Journey Analytics データビュー](/help/data-views/create-dataview.md)でフィールド名を変更するなど、他の手段でも実現できます）。
 * **データの一般的な変換**。データ準備には、何百ものマッピング関数があり、Analytics ソースコネクタを使用して取得するデータに基づいて新しいフィールドを計算するのに使用できます。区切られたフィールドを別のフィールドに分割できます。フィールドを組み合わせることができます。文字列を操作できます。正規表現に基づいてフィールドから情報を抽出できます。他にも、様々なことができます。
 

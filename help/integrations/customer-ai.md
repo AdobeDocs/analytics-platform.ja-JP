@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 99%
 
 ## 手順 1：顧客 AI インスタンスを設定する
 
-データを準備し、すべての資格情報とスキーマを設定したら、Adobe Experience Platform ガイドの[顧客インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html)の手順に従って開始します。
+データを準備し、すべての資格情報とスキーマを設定したら、Adobe Experience Platform ガイドの[顧客インスタンスの設定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=ja)の手順に従って開始します。
 
 ## 手順 2：顧客 AI データセットへの Customer Journey Analytics 接続を設定する
 

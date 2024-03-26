@@ -6,9 +6,9 @@ feature: Basics
 exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Customer Journey Analytics では、*あらゆる*&#x200B;データソースを�
 
 ## データ収集
 
-Customer Journey Analytics は、Adobe Experience Platform データセットに保存されているデータに依存しています。Experience Platform でこれらのデータセットからデータを収集して取り込むには、いくつかのオプションがあります。[データ取り込みの概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html)で、これらのオプションについて詳しく説明しています。
+Customer Journey Analytics は、Adobe Experience Platform データセットに保存されているデータに依存しています。Experience Platform でこれらのデータセットからデータを収集して取り込むには、いくつかのオプションがあります。[データ取り込みの概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=ja)で、これらのオプションについて詳しく説明しています。
 
 Adobe Analytics は、最終的に、ソリューション自体内のデータを収集します。この場合も、データを収集するオプションがいくつかあります。詳しくは、[Adobe Analytics 実装ガイド](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。
 
-Adobe Analytics のレポートスイートデータを Customer Journey Analytics で使用するには、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用します。このコネクタでは、Adobe Analytics で収集されたデータを Experience Platform に取り込みます。その後、Customer Journey Analytics でこのデータセットへの接続を作成できます。詳しくは、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html)を参照してください。
+Adobe Analytics のレポートスイートデータを Customer Journey Analytics で使用するには、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用します。このコネクタでは、Adobe Analytics で収集されたデータを Experience Platform に取り込みます。その後、Customer Journey Analytics でこのデータセットへの接続を作成できます。詳しくは、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=ja)を参照してください。
 
 
 ## データ処理
@@ -37,14 +37,14 @@ Adobe Analytics のレポートスイートデータを Customer Journey Analyti
 
 Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。
 
-詳しくは、[Adobe Analytics と Customer Journey Analytics でのデータ処理の比較](data-processing-comparisons.md)および[処理ルール、VISTA および分類とデータ準備の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html)を参照してください。
+詳しくは、[Adobe Analytics と Customer Journey Analytics でのデータ処理の比較](data-processing-comparisons.md)および[処理ルール、VISTA および分類とデータ準備の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=ja)を参照してください。
 
 
 ## 用語
 
 Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。例えば、Adobe Analytics では訪問者、訪問数、ヒット数を使用しますが、Customer Journey Analytics ではユーザー、セッション、イベントを同等の概念として使用します（必要に応じて名前を変更できます）。
 
-用語の違いについて詳しくは、[Analytics ソースコネクタを介して渡された Analytics データの用語の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html)を参照してください。
+用語の違いについて詳しくは、[Analytics ソースコネクタを介して渡された Analytics データの用語の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=ja)を参照してください。
 
 
 ## 仮想レポート環境とサンドボックス
@@ -55,7 +55,7 @@ Customer Journey Analytics には、「データビュー」という似た概�
 
 Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつかの重要な考慮事項があります。
 
-詳しくは、[仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html)を参照してください。
+詳しくは、[仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja)を参照してください。
 
 
 ## ID
@@ -67,4 +67,4 @@ Adobe Analytics は、Adobe Analytics ID（AAID）など、より明確な ID �
 
 ## サポートされる機能
 
-Adobe Analytics の機能の概要と、これらの機能が Customer Journey Analytics でどのようにサポートされるかについては、[Customer Journey Analytics 機能のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html)を参照してください。
+Adobe Analytics の機能の概要と、これらの機能が Customer Journey Analytics でどのようにサポートされるかについては、[Customer Journey Analytics 機能のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html?lang=ja)を参照してください。
