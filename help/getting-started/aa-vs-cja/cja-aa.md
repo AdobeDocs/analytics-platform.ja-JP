@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1964'
-ht-degree: 100%
+source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
+workflow-type: tm+mt
+source-wordcount: '1969'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 100%
 | 機能 | メモ |
 | --- | --- |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
-| Analytics for Target（A4T） | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
+| Analytics for Target（A4T） | 現在はベータ版です。 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
 
 {style="table-layout:auto"}
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 {style="table-layout:auto"}
 
-## サポートなし {#never}
+## サポートされません {#never}
 
 * クロスデバイス Coop を使用した人物指標
 
