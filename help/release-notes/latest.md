@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
-workflow-type: ht
-source-wordcount: '957'
+source-git-commit: e6696dc9639e3309695a7a20427753fa629d1816
+workflow-type: tm+mt
+source-wordcount: '953'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 | **使用状況指標** | [使用状況指標インターフェイス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)には、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。このインターフェイスを使用すると、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断できます。 |  | 2024年3月13日（PT） |
 | **Media Analytics レポート - 分平均オーディエンス（AMA）** | 分平均オーディエンスパネルが CJA で使用できるようになりました。Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。 <p>分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを、線形 TV 分平均指標と比較したり追加したりできます。</p><p> このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。</p><p>詳しくは、[メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)を参照してください。</p> |  | 2024年3月12日（PT） |
 | **ユーザーからアカウントへの B2B スキーマ変換** | データセットを変換すると、Customer Journey Analytics B2B レポートシナリオにおけるユーザーベースのルックアップをより適切にサポートできます。この機能は、次のクラスに基づく B2B スキーマのデータセットで使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | 2024年3月26日（PT） |
-| **Report Builder の使用状況が、計算指標マネージャーとフィルターマネージャーの「使用場所」列に含まれる** | 計算指標マネージャーまたはフィルターマネージャーで&#x200B;**使用場所**&#x200B;列を表示すると、Report Builder で使用状況データを使用できるようになりました。<p>以前は、フィルターマネージャーの使用状況データはアラート、プロジェクト、スケジュール済みプロジェクト、および計算指標に対してのみ、計算指標マネージャーの使用状況データはアラート、プロジェクト、およびスケジュール済みプロジェクトに対してのみ使用できました。</p> |  | 3 月下旬または 4 月上旬 |
+| **Report Builder の使用状況が、計算指標マネージャーとフィルターマネージャーの「使用場所」列に含まれる** | 計算指標マネージャーまたはフィルターマネージャーで&#x200B;**使用場所**&#x200B;列を表示すると、Report Builder で使用状況データを使用できるようになりました。<p>以前は、フィルターマネージャーの使用状況データはアラート、プロジェクト、スケジュール済みプロジェクト、および計算指標に対してのみ、計算指標マネージャーの使用状況データはアラート、プロジェクト、およびスケジュール済みプロジェクトに対してのみ使用できました。</p> |  | 7月 |
 | **Adobe Product Analytics：1 つのファネルステップ内のイベントを比較** | ファネル内：摩擦ビューでは、1 つのファネルステップ内のイベントを比較できるようになりました。ジャーニーにステップオプションがある場合や、A/B 実験が実行されるステップがある場合に特に便利です。 | 2024年3月29日（PT） | 2024年4月12日（PT） |
 | **管理者は組織内のすべての場所とアカウントを管理できます** | 「場所」タブ（コンポーネント／書き出しページ）の新しいオプションにより、管理者は組織内のすべての場所を表示および管理できます。 <p>「場所アカウント」タブ（コンポーネント／書き出しページ）の新しいオプションにより、管理者は組織内のすべてのアカウントを表示および管理できます。</p><p>以前は、管理者は自分が作成した場所とアカウントのみを表示および管理できました。</p> | | 2024年4月 |
 | **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。以前は、Customer Journey Analytics から公開されたオーディエンスは、プラットフォームの「セグメント」セクションで使用できました。この改善によるメリットは次のとおりです。<ul><li>オーディエンスが Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Platform で並べ替えることができます。</li><li>Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul>詳しくは、[Experience Platform での Customer Journey Analytics オーディエンスの使用](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#audiences-aep)の節を参照してください。 |  | 2024年4月 |
