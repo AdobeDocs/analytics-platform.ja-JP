@@ -5,10 +5,10 @@ title: フォルダーからのプロジェクトの削除
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: caf16a6971c4474516e116f8cb62e37f0bf6a06b
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 ## プロジェクトフォルダーからのプロジェクトの削除 {#delete-project-in-folder}
 
-フォルダーからプロジェクトを削除すると、そのプロジェクトが完全に削除されます。
+フォルダーからプロジェクトを削除すると、180 日後にシステムからパージされます。 削除後 180 日間も、ユーザーは、プロジェクトへの直接 URL を持っている場合、Web インターフェイスを通じてプロジェクトにアクセスできます。
 
 1. プロジェクトフォルダー内で、プロジェクト名の横にある省略記号（**...**）をクリックします。
 
