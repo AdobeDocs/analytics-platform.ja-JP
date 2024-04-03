@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 11%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 11%
 |---|--:|---|---|
 | フィールド | 10,000 | システムが適用するガードレール | データセット内の 1 行あたりのプロパティまたはフィールドの最大数。 |
 | 一意の文字列 | 1,000 万 | システムが適用するガードレール | ルックアップデータセットあたりの一意のキーの最大数。 |
-| 行 | 100 万 | システムが適用するガードレール | 接続内の一意のユーザー ID あたりの最大行数。 |
+| 行 | 100 万 | システムが適用するガードレール | 接続内の特定の月の一意のユーザー ID ごとの最大行数。 |
 | 行サイズ | 2 | パフォーマンスガードレール/システムが適用するガードレール | Customer Journey Analyticsに取り込まれるデータの 1 行あたりの平均サイズ（キロバイト）（ソフト制限）。 行サイズの静的制限は、Guardrails で決定され、Experience Platformでのデータ取り込みに使用されます。 |
 
 {style="table-layout:auto"}
