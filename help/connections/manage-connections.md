@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
+source-git-commit: 5078d10fe55123e45c1b890cded36965bb5e039f
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 23%
@@ -40,10 +40,10 @@ The [!UICONTROL リスト] インターフェイスには、使用可能なす�
 | 列/アイコン | 説明 |
 | --- | --- |
 | [!UICONTROL 名前] | 接続のわかりやすい名前です。接続の詳細を確認するには、ハイパーリンク名を選択します。 詳しくは、 [接続の詳細](#connection-details). |
-| ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 次に関する情報を表示するには： [!UICONTROL 含まれるデータセット], [!UICONTROL サンドボックス], [!UICONTROL 所有者]を選択し、その他を選択します。 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 接続名の横に表示されます。<p>ポップアップウィンドウに詳細が表示されます。 <p><img src="./assets/conn-info.png" alt="接続情報を表示" width="50%" /> |
+| ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 次に関する情報を表示するには： [!UICONTROL 含まれるデータセット], [!UICONTROL サンドボックス], [!UICONTROL 所有者]を選択し、その他を選択します。 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 接続名の横に表示されます。<p>ポップアップウィンドウに詳細が表示されます。 <p><img src="./assets/conn-info.png" alt="接続情報を表示" width="400"/> |
 | ![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 宛先 [データビューの作成](#create-a-data-view) 接続の場合、「 」を選択します。 ![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) . このアイコンは、データビューが接続に既に関連付けられていない場合にのみ表示されます。 |
 | ![詳細情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 選択 ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 移動先： <p>![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編集](#edit-a-connection) 接続。<p>![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [削除](#delete-a-connection) 接続。<p>![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [新しいデータビューを作成](#create-a-data-view). 接続の追加のデータビューを作成するには、これを使用します。 |
-| [!UICONTROL データセット] | 接続に含まれるデータセットへのリンクを 1 つ以上表示します。 データセットのハイパーリンクを選択して、接続にあるデータセットを表示できます。 選択した接続に他のデータセットが含まれている場合は、「 」を選択します。 **[!UICONTROL +*x* その他]** 見せる **[!UICONTROL 含まれるデータセット]** パネル。 このパネルには、すべてのデータセットへのリンクと、接続に含まれる特定のデータセットを検索するためのオプションが表示されます。<p><img src="./assets/datasets-included.png" alt="含まれるデータセット" width="50%" /><p>データセット名を選択すると、新しいタブでExperience PlatformUI にデータセットが開きます。 |
+| [!UICONTROL データセット] | 接続に含まれるデータセットへのリンクを 1 つ以上表示します。 データセットのハイパーリンクを選択して、接続にあるデータセットを表示できます。 選択した接続に他のデータセットが含まれている場合は、「 」を選択します。 **[!UICONTROL +*x* その他]** 見せる **[!UICONTROL 含まれるデータセット]** パネル。 このパネルには、すべてのデータセットへのリンクと、接続に含まれる特定のデータセットを検索するためのオプションが表示されます。<p><img src="./assets/datasets-included.png" alt="含まれるデータセット" width="400"/><p>データセット名を選択すると、新しいタブでExperience PlatformUI にデータセットが開きます。 |
 | [!UICONTROL サンドボックス] | 次を表示： [Experience Platformサンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) この接続がデータセットを描画する元となる このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 所有者] | 接続を作成したユーザー。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータのインポートのステータスを示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _オン]**新しいデータを読み込むように設定されたデータセットの数。&lt;/<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** ：新しいデータの読み込みがオフになっているデータセットの数。 |
@@ -91,7 +91,7 @@ The [!UICONTROL リスト] インターフェイスには、使用可能なす�
 
 接続を削除すると、 **[!UICONTROL 接続を削除]** パネルは、削除されるデータビューと影響を受けるワークスペースプロジェクトを示します。
 
-<img src="./assets/delete-connection.png" alt="接続を削除" width="50%" />
+<img src="./assets/delete-connection.png" alt="接続を削除" width="400"/>
 
 選択 **[!UICONTROL 続行]** 接続を削除します。
 
@@ -137,7 +137,7 @@ The [!UICONTROL リスト] インターフェイスには、使用可能なす�
 | データセットセレクター | 接続内の 1 つまたはすべてのデータセットを選択できます。複数のデータセットを選択することはできません。デフォルトは[!UICONTROL すべてのデータセット]です。 |
 | 日付範囲セレクター | 開始日/終了日の編集または選択 ![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、データ範囲セレクターを開きます。 日付範囲セレクターで、事前定義された期間 ( 例： **[!UICONTROL 最近の 6 か月間]**) またはカレンダーを使用して、開始日と終了日を選択します。 選択 **[!UICONTROL 適用]** をクリックして新しいデータ範囲を適用します。 |
 | [!UICONTROL 使用可能なイベントデータのレコード] | **接続全体について**、レポートに使用できるイベントデータセットの行の合計数を表します。この数は、カレンダーの設定とは無関係です。データセットセレクターでデータセットを選択するか、テーブル内のデータセットを選択すると、カウントは変わります。 データが追加されると、データがレポートに表示されるまでに 1 ～ 2 時間の遅延が生じます。 |
-| [!UICONTROL 指標] | **選択したデータセットと日付範囲に対して**、追加／スキップ／削除したイベントレコードと、追加したバッチ数の概要を示します。<p>選択 **[!UICONTROL 詳細を確認]** 見せる **[!UICONTROL スキップされた詳細を確認]** ポップアップ、すべてのイベントデータセットまたは選択したデータセットのリストに、スキップされたレコードの数と理由が表示されます。<p><img src="./assets/skipped-records.png" width="70%"/><p>選択 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップに詳細情報を表示します。 以下のようなスキップされた理由があります。 [!UICONTROL 空の訪問者 ID]に設定すると、ポップアップに、 [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) をクエリして、データセット内のスキップされたレコードを照会します。 選択 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL EQS 用のサンプル PSQL のコピー]** SQL をコピーします。 |
+| [!UICONTROL 指標] | **選択したデータセットと日付範囲に対して**、追加／スキップ／削除したイベントレコードと、追加したバッチ数の概要を示します。<p>選択 **[!UICONTROL 詳細を確認]** 見せる **[!UICONTROL スキップされた詳細を確認]** ポップアップ、すべてのイベントデータセットまたは選択したデータセットのリストに、スキップされたレコードの数と理由が表示されます。<p><img src="./assets/skipped-records.png" width="500"/><p>選択 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップに詳細情報を表示します。 以下のようなスキップされた理由があります。 [!UICONTROL 空の訪問者 ID]に設定すると、ポップアップに、 [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) をクエリして、データセット内のスキップされたレコードを照会します。 選択 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL EQS 用のサンプル PSQL のコピー]** SQL をコピーします。 |
 | [!UICONTROL 追加されたレコード] | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に追加された行数を示します。10 分ごとに更新されます。 |
 | [!UICONTROL スキップされたレコード] | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間にスキップされた行数を示します。レコードをスキップする理由には、タイムスタンプの欠落、ユーザー ID の欠落、無効などがあります。 10 分ごとに更新されます。 <p>無効なユーザー ID（「未定義」、「00000000」、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL 人物 ID] の文字と数字の任意の組み合わせ）を、特定のユーザーまたは人物に関連付けることはできません。これらはシステムに取り込むことができず、取り込みやレポートでエラーが発生しやすくなります。無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>用途 [ステッチ](/help/stitching/overview.md) 未定義またはゼロのユーザー ID を有効なユーザー ID で入力する場合。</li><li>ユーザー ID を空白にします。この ID は取り込み中にスキップされます（無効またはゼロのユーザー ID よりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
 | [!UICONTROL レコード] 削除済み | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に削除された行数を示します。たとえば、Experience Platform 内のデータセットが削除された可能性があります。10 分ごとに更新されます。 |
@@ -197,7 +197,7 @@ The [!UICONTROL リスト] インターフェイスには、使用可能なす�
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数をし示します。<p>レコードをスキップする理由には、タイムスタンプの欠落、ユーザー ID の欠落、無効などがあります。 10 分ごとに更新されます。<p>無効なユーザー ID（「未定義」、「00000000」、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL 人物 ID] の文字と数字の任意の組み合わせ）を、特定のユーザーまたは人物に関連付けることはできません。これらはシステムに取り込むことができず、取り込みやレポートでエラーが発生しやすくなります。無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>用途 [ステッチ](/help/stitching/overview.md) 未定義またはゼロのユーザー ID を有効なユーザー ID で入力する場合。</li><li>ユーザー ID を空白にします。この ID は取り込み中にスキップされます（無効またはゼロのユーザー ID よりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
 | [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時を示します。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータのインポートのステータスを示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _オン]**データセットが新しいデータを読み込むように設定されている場合、および<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** データセットが新しいデータインポートをインポートしないように設定されている場合。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _バックフィル処理]**（バックフィル処理の数）<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィルの数、および<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合に備えて、<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、 <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="2%" /> **[!UICONTROL 過去のバックフィル]**. |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _バックフィル処理]**（バックフィル処理の数）<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィルの数、および<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合に備えて、<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、 <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**. |
 | [!UICONTROL データソースタイプ] | データセットを接続に追加する際に定義されるデータソースタイプ。 |
 | [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットの基になるExperience Platformスキーマを表示します。 |
