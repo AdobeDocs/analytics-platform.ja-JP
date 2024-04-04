@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 11%
 
 ---
@@ -127,6 +127,18 @@ ht-degree: 11%
 {style="table-layout:auto"}
 
 関連項目：Experience Platform [データ取り込みのガードレール](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## 宛先データの書き出し
+
+| 名前 | 値 | 上限のタイプ | 説明 |
+|---|--:|---|---|
+| データの書き出し | 認証済みデータレイクストレージの合計 | パフォーマンスガードレール | お客様は、宛先データセットのエクスポートを使用して、認証済みデータレイクの合計ストレージまで、データレイクに顧客データを書き出すことができます。 |
+| 使用可能なデータセット | プロファイルとイベント | システムが適用するガードレール | ソース、Web SDK、Mobile SDK、Analytics Data Connector およびAudience Managerを使用してデータを取得または収集した後、Experience PlatformUI で作成されたプロファイルおよびエクスペリエンスイベントデータセット。 |
+
+{style="table-layout:auto"}
+
+関連項目：Experience Platform [データセット書き出しガードレール](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## データランディングゾーン
