@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: e8d55cfbb0bb50269e436bc3c38a88bc4830bed0
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 80%
+source-wordcount: '1067'
+ht-degree: 79%
 
 ---
 
@@ -188,6 +188,7 @@ ht-degree: 80%
    + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
    + [キュレータータスク](../mobile-app/curator.md)
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
+   + [モバイルスコアカードの管理](../mobile-app/manage-scorecard.md)
    + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
    + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
 

@@ -4,9 +4,9 @@ title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '453'
 ht-degree: 2%
 
 ---
@@ -71,3 +71,7 @@ ht-degree: 2%
 インテリジェントキャプションを生成しない場合は、ビジュアライゼーション環境設定に移動し、チェックを外すことで、この機能をオフに切り替えることができます **[!UICONTROL インテリジェントキャプションを表示]**.
 
 ![「インテリジェントキャプションを表示」をオフにするオプションを表示する線のビジュアライゼーションオプション。](assets/toggle-captions.png)
+
+## モバイルスコアカードのインテリジェントキャプション
+
+詳しくは、 [スコアカードの管理](/help/mobile-app/manage-scorecard.md)
