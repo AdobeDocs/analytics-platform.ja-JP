@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '544'
 ht-degree: 6%
 
 ---
@@ -39,3 +39,4 @@ Customer Journey Analyticsは、実行時にレポートを処理し、組み合
 * ルックアップデータセットディメンションを使用します。 ルックアップデータセットディメンションは、イベントデータセットのディメンション項目を組み合わせて、返される一意の値の数を制限します。
 * 以下を使用します。 [含む/除外](/help/data-views/component-settings/include-exclude-values.md) データビューマネージャのコンポーネント設定
 * リクエストの日付範囲を短くします。 多くのユニーク値が時間の経過と共に累積する場合、Workspace レポートの日付範囲を短くすると、処理するサーバーのユニーク値の数が制限される場合があります。
+* 使用を検討する [フルテーブルエクスポート](/help/analysis-workspace/export/export-cloud.md) を使用して、テーブルのすべての行を返します。

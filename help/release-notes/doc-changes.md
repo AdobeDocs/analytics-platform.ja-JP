@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 12007130027d152038b1210070f6ebd5de15c762
+source-git-commit: dd4a2e4770e0ead4c7b4c578acd2ceacdfaa856c
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3277'
 ht-degree: 76%
 
 ---
@@ -19,8 +19,10 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2024 年 4 月** | |
+| 大きな基数ディメンションに対してフルテーブルエクスポートの推奨情報を追加しました。 | に箇条書きを追加しました。 [基数の高いディメンションのベストプラクティス](/help/components/dimensions/high-cardinality.md) を使用して、大きな基数ディメンションに対してはフルテーブルエクスポートの使用をお勧めします。 |
 | **2024年3月** | |
-| 「Used in」列の使用状況情報は、2023 年 9 月から提供されます。 | に関する使用状況情報を明確にしました。 **使用場所** 列 [プロジェクトランディングページ](/help/getting-started/landing.md) は 2023 年 9 月までしか遡りません。 |
+| 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
 | **2024年2月** | |
 | プロジェクト共有ドキュメントの更新 | 次の方法に関する情報を追加しました。 [自分と共有されているプロジェクトの表示](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウドの書き出し場所を設定する際に Azure SAS および Azure RBAC にファイルをアップロードするための権限要件を追加しました。 | Azure SAS および Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました ( [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
