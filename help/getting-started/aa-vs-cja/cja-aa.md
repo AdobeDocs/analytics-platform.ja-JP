@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1969'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 99%
 | 機能 | メモ |
 | --- | --- |
 | パネル | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
-| Analytics for Target（A4T） | 現在はベータ版です。 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
+| Analytics for Target（A4T） | 現在はベータ版です。[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)のフィールドを通じて一部サポートされます。Target のアクティビティとエクスペリエンスで、A4T のわかりやすい名前をサポートする予定です。 |
 
 {style="table-layout:auto"}
 
