@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
 workflow-type: tm+mt
 source-wordcount: '3603'
 ht-degree: 84%
@@ -34,49 +34,49 @@ ht-degree: 84%
 
 >[!NOTE]
 >
-> このクイックスタートガイドは、サイトから収集したデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
+> このクイックスタートガイドは、サイトから収集されたデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を説明する簡単なガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## スキーマとデータセットの設定
 
 データをAdobe Experience Platformに取り込むには、まず収集するデータを定義する必要があります。 ダウンストリームの機能で認識し、処理するには、Adobe Experience Platform に取り込まれるすべてのデータが、標準的な非正規化された構造に準拠する必要があります。エクスペリエンスデータモデル（XDM）は、この構造をスキーマの形式で提供する標準フレームワークです。
 
-スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含むデータ（通常はテーブル）の集まりのストレージと管理の構成体です。
+スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含んだデータのコレクション（通常はテーブル）のストレージおよび管理用の構成体です。
 
 Adobe Experience Platform に取り込まれるすべてのデータは、データセットとして保持する前に、事前定義済みのスキーマに準拠している必要があります。
 
 ### スキーマの設定
 
 Web サイトを訪問するプロファイルからの最小限のデータ（ページ名、ID など）を追跡することがあります。
-最初に、このデータをモデル化するスキーマを定義する必要があります。
+まず、このデータをモデル化するスキーマを定義する必要があります。
 
 スキーマを設定するには：
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-1. 選択 **[!UICONTROL スキーマを作成]**..
-1. スキーマ作成ウィザードのクラスを選択手順で、次の操作を実行します。
+1. を選択 **[!UICONTROL スキーマを作成]**..
+1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. 選択 **[!UICONTROL エクスペリエンスイベント]**.
+   1. を選択 **[!UICONTROL エクスペリエンスイベント]**.
 
-      ![エクスペリエンスイベントをハイライトするスキーマを作成](./assets/create-ee-schema-wizard-step-1.png)
+      ![エクスペリエンスイベントをハイライト表示するスキーマの作成](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマは、 _動作_ （シーン名や、買い物かごに追加するプッシュボタンなど）のプロファイル。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. Adobe Analytics の [!UICONTROL 名前とレビュー手順] の [!UICONTROL スキーマを作成] ウィザード：
+1. が含まれる [!UICONTROL 名前を付けて手順を確認] の [!UICONTROL スキーマを作成] ウィザード：
 
-   1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
+   1. を入力 **[!UICONTROL スキーマの表示名]** スキーマの場合および（オプション） a **[!UICONTROL 説明]**.
 
-      ![「スキーマに名前を付ける」フィールドを示すスキーマウィンドウを作成します](./assets/create-ee-schema-wizard-step-2.png)
+      ![スキーマフィールドに名前を付けるを表示するスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
-1. サンプルスキーマの「構造」タブで、次の操作を実行します。
+1. 「スキーマ例の構造」タブで、次の操作を行います。
 
    1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
@@ -104,11 +104,11 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい id フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （like `ecid`, `crmId`、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field.png)
 
-   識別オブジェクトは、スキーマに識別機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。個人の ID を追跡するために使用できるその他の多くの属性（例えば、顧客 ID、ロイヤリティ ID）があります。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。 人物の ID を追跡するために使用できる属性は他にも多数あります（顧客 ID、ロイヤルティ ID など）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -156,7 +156,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 - Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
 
-- Experience CloudID をプライマリ識別子として定義し、電子メールを識別子として定義します。
+- Experience Cloud ID をプライマリ識別子、メールを識別子として定義します。
 
 - プロファイルでスキーマを有効にする
 
@@ -164,7 +164,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 ### データセットの設定
 
-スキーマを使用して、データモデルを定義しました。次に、そのデータを保存および管理するための構成を定義する必要があります。これは、データセットを通じておこなわれます。
+スキーマを使用して、データモデルを定義しました。次に、そのデータを保存および管理するための構成を定義する必要があります。これは、データセットを通じて行われます。
 
 データセットを設定するには：
 
@@ -200,7 +200,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 ## データストリームの設定
 
-データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データを転送するサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データの転送先となるサービスを決定するデータストリームです。
 
 設定では、web サイトから収集したデータを Adobe Experience Platform のデータセットに送信する必要があります。
 
@@ -238,7 +238,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 ## タグの使用
 
-実際にデータを収集するコードをサイトに実装するには、 Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
+データを収集するためのコードをサイトに実装するには、Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
 
 ### タグを作成する
 
@@ -252,14 +252,14 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 ### タグの設定
 
-タグを作成した後は、適切な拡張機能を使用してタグを設定し、サイトを追跡してAdobe Experience Platformにデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
+タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトをトラッキングしてAdobe Experience Platformにデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
 [!UICONTROL タグのプロパティ]をクリックして新しく作成したタグを開きます。
 
 
 #### **拡張機能**
 
-（データストリームを介して）Adobe Experience Platformにデータを送信できるようにするには、Adobeに Platform Web SDK 拡張機能を追加します。
+（データストリーム経由で）Adobe Experience Platformにデータを確実に送信できるようにするには、タグに Platform Web SDKAdobe拡張機能を追加します。
 
 Adobe Experience Platform Web SDK 拡張機能を作成して設定するには：
 
@@ -279,7 +279,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
-また、Experience Cloud ID を簡単に使用できるように、Experience Cloud ID サービス拡張機能を設定する必要もあります。Experience CloudID サービスは、すべてのAdobe Experience Cloudソリューションをまたいで人を識別します。
+また、Experience Cloud ID を簡単に使用できるように、Experience Cloud ID サービス拡張機能を設定する必要もあります。Experience CloudID サービスは、すべてのAdobe Experience Cloud ソリューションをまたいで人物を識別します。
 
 Experience Cloud ID サービス拡張機能を作成および設定するには：
 
@@ -299,7 +299,7 @@ Experience Cloud ID サービス拡張機能を作成および設定するには
 
 データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。
 
-データ要素には様々なタイプがあります。最初に、サイトで閲覧しているページ名の人を取り込むデータ要素を設定します。
+データ要素には様々なタイプがあります。最初にデータ要素を設定して、サイトでユーザーが表示しているページ名を取り込みます。
 
 ページ名データ要素を定義するには：
 
@@ -457,7 +457,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 「**[!UICONTROL 開発用に保存およびビルド]**」を選択します。
 
-   タグが保存され、開発環境用にビルドされます。 緑のドットは、開発環境でタグが正常に作成されたことを示します。
+   タグが保存され、開発環境用に作成されます。 緑のドットは、開発環境でタグが正常に作成されたことを示します。
 
 4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
 
@@ -470,7 +470,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデ�
 
 ### タグコードの取得
 
-最後に、追跡する Web サイトにタグをインストールする必要があります。これは、Web サイトのテンプレートのヘッダータグにコードを配置することを意味します。
+最後に、追跡する web サイトにタグをインストールする必要があります。これは、web サイトのテンプレートのヘッダータグにコードを配置することを意味します。
 
 タグを参照するコードを取得するには：
 
@@ -502,7 +502,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデ�
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformとワークスペースのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -605,7 +605,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] （内） [!UICONTROL パネル]. 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、まず、ディメンションと指標をそのレポートにドラッグ&amp;ドロップします [!UICONTROL フリーフォームテーブル] が含まれる [!UICONTROL パネル]. 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
@@ -613,4 +613,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、収集するデータ（スキーマ）と、そのデータ（データセット）をAdobe Experience Platform内のどこに保存するかを定義します。 次に、Edge ネットワーク上にデータストリームを設定し、データをそのデータセットに確実に転送できるようにしました。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 次に、Edge Network 上でデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。

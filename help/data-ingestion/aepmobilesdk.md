@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Platform Mobile SDK を使用したデータの取得
-description: Adobe Experience Platform Mobile SDK と Edge Network を使用してCustomer Journey Analyticsにデータを取り込む方法について説明する
+title: Adobe Experience Platform Mobile SDK を介したデータの取り込み
+description: Adobe Experience Platform Mobile SDK と Edge Network を使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 60%
 
 ---
 
-# Adobe Experience Platform Mobile SDK を使用したデータの取得
+# Adobe Experience Platform Mobile SDK を介したデータの取り込み
 
-このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK および Edge ネットワークを使用して、モバイルアプリトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 そのデータをCustomer Journey Analyticsで使う。
+このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK と Edge Network を使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 
 これには、次の手順を実行する必要があります。
 
@@ -22,7 +22,7 @@ ht-degree: 60%
 
 - **データストリームの設定**：収集したデータを Adobe Experience Platform で設定したデータセットにルーティングするように Adobe Experience Platform Edge Network を設定します。
 
-- **タグを使用** モバイルアプリケーションのデータに対して、ルールやデータ要素を簡単に設定できるようにする。 次に、データが Adobe Experience Platform Edge Network 上に設定されたデータストリームに送信されることを確認します。
+- **タグを使用** モバイルアプリケーション内のデータに対してルールとデータ要素を簡単に設定できます。 次に、データが Adobe Experience Platform Edge Network 上に設定されたデータストリームに送信されることを確認します。
 
 - **デプロイと検証**&#x200B;を行います。タグの開発を繰り返し実行し、すべての検証が完了したら、実稼動環境で公開できる環境を構築します。
 
@@ -34,49 +34,49 @@ ht-degree: 60%
 
 >[!NOTE]
 >
->このクイックスタートガイドは、アプリケーションから収集したデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、アプリケーションから収集されたデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を説明する簡単なガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## スキーマとデータセットの設定
 
-データを Adobe Experience Platform に取り込むには、まず収集するデータを定義する必要があります。ダウンストリームの機能で認識し、処理するには、Adobe Experience Platform に取り込まれるすべてのデータが、標準的な非正規化された構造に準拠する必要があります。エクスペリエンスデータモデル (XDM) は、スキーマの形式で構造を提供する標準フレームワークです。
+データを Adobe Experience Platform に取り込むには、まず収集するデータを定義する必要があります。ダウンストリームの機能で認識し、処理するには、Adobe Experience Platform に取り込まれるすべてのデータが、標準的な非正規化された構造に準拠する必要があります。エクスペリエンスデータモデル（XDM）は、スキーマの形式で構造を提供する標準フレームワークです。
 
-スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含むデータ（通常はテーブル）の集まりのストレージと管理の構成体です。
+スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。データセットは、スキーマ（列）とフィールド（行）を含んだデータのコレクション（通常はテーブル）のストレージおよび管理用の構成体です。
 
 Adobe Experience Platform に取り込まれるすべてのデータは、データセットとして保持する前に、事前定義済みのスキーマに準拠している必要があります。
 
 ### スキーマの設定
 
-モバイルアプリを使用して、プロファイルからの最小限のデータ（シーン名、識別情報など）を追跡する場合。
-最初に、このデータをモデル化するスキーマを定義する必要があります。
+モバイルアプリを使用して、プロファイルからの最小限のデータ（シーン名、ID など）を追跡する場合。
+まず、このデータをモデル化するスキーマを定義する必要があります。
 
 スキーマを設定するには：
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-1. 選択 **[!UICONTROL スキーマを作成]**..
-1. スキーマ作成ウィザードのクラスを選択手順で、次の操作を実行します。
+1. を選択 **[!UICONTROL スキーマを作成]**..
+1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. 選択 **[!UICONTROL エクスペリエンスイベント]**.
+   1. を選択 **[!UICONTROL エクスペリエンスイベント]**.
 
       ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、 _動作_ プロファイルの名前（シーン名、押しボタンなど、買い物かごに追加するボタン）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマは、 _動作_ （シーン名や、買い物かごに追加するプッシュボタンなど）のプロファイル。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. Adobe Analytics の [!UICONTROL 名前とレビュー手順] の [!UICONTROL スキーマを作成] ウィザード：
+1. が含まれる [!UICONTROL 名前を付けて手順を確認] の [!UICONTROL スキーマを作成] ウィザード：
 
-   1. を入力します。 **[!UICONTROL スキーマの表示名]** （スキーマ用）および（オプション）a **[!UICONTROL 説明]**.
+   1. を入力 **[!UICONTROL スキーマの表示名]** スキーマの場合および（オプション） a **[!UICONTROL 説明]**.
 
       ![スキーマに名前を付ける](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
-1. サンプルスキーマの「構造」タブで、次の操作を実行します。
+1. 「スキーマ例の構造」タブで、次の操作を行います。
 
    1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
@@ -84,13 +84,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. Adobe Analytics の [!UICONTROL フィールドグループを追加] ダイアログで、 **[!UICONTROL AEP Mobile SDK ExperienceEvent]** フィールドグループを選択します。
+   1. が含まれる [!UICONTROL フィールドグループの追加] ダイアログで、 **[!UICONTROL AEP Mobile SDK ExperienceEvent]** リストのフィールドグループ。
 
-      ![AEP Mobile Lifecycle Details フィールドグループ](./assets/select-aepmobilesdk-experienceevent.png)
+      ![AEP Mobile ライフサイクル詳細フィールドグループ](./assets/select-aepmobilesdk-experienceevent.png)
 
       「プレビュー」ボタンを選択すると、このフィールドグループに属するフィールド（`application > name` など）のプレビューを表示できます。
 
-      ![AEP Mobile Lifecycle Details フィールドグループのプレビュー](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![AEP Mobile ライフサイクルの詳細フィールドグループのプレビュー](./assets/aepmobilesdk-experienceevent-preview.png)
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
@@ -100,15 +100,15 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
-1. Adobe Analytics の [!UICONTROL フィールドのプロパティ] パネル、入力 `identification` として [!UICONTROL フィールド名], **[!UICONTROL 識別]** として [!UICONTROL 表示名]を選択します。 **[!UICONTROL オブジェクト]** として [!UICONTROL タイプ] を選択し、 **[!UICONTROL ExperienceEvent Core v2.1]** として [!UICONTROL フィールドグループ].
+1. が含まれる [!UICONTROL フィールドプロパティ] パネル、を入力 `identification` as the [!UICONTROL フィールド名], **[!UICONTROL 識別]** as the [!UICONTROL 表示名]を選択 **[!UICONTROL オブジェクト]** as the [!UICONTROL タイプ] を選択して、 **[!UICONTROL ExperienceEvent Core v2.1]** as the [!UICONTROL フィールドグループ].
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成する](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) ( 次に類似 `ecid`, `crmId`など ) をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい id フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （like `ecid`, `crmId`、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-mobile.png)
 
-   識別オブジェクトは、スキーマに識別機能を追加します。 場合は、Experience CloudID と電子メールアドレスを使用して、モバイルアプリを使用してプロファイルを識別します。 個人の ID を追跡するために使用できるその他の多くの属性（例えば、顧客 ID、ロイヤリティ ID）があります。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 その場合は、Experience CloudID とメールアドレスを使用して、モバイルアプリを使用してプロファイルを識別します。 人物の ID を追跡するために使用できる属性は他にも多数あります（顧客 ID、ロイヤルティ ID など）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -144,11 +144,11 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-モバイルアプリケーションから取得できるデータをモデル化する最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。プロファイルのスキーマを有効にすると、モバイルアプリケーションから取り込んだデータがリアルタイム顧客プロファイルに確実に追加されます。
+モバイルアプリケーションから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。プロファイルのスキーマを有効にすることで、モバイルアプリケーションから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
 
-行動データの横にある、モバイルアプリケーションからプロファイル属性データを取り込むこともできます（例えば、ニュースレターを購読したプロファイルの詳細）。
+行動データの横にある、モバイルアプリケーションからプロファイル属性データ（ニュースレターを購読したプロファイルの詳細など）を取り込むこともできます。
 
-プロファイルデータを取り込むには、次の操作を実行します。
+プロファイルデータを取得するには、次を実行します。
 
 - XDM Individual Profile クラスに基づいてスキーマを作成します。
 
@@ -156,7 +156,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 - Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
 
-- Experience CloudID をプライマリ識別子として定義し、電子メールを識別子として定義します。
+- Experience Cloud ID をプライマリ識別子、メールを識別子として定義します。
 
 - プロファイルでスキーマを有効にする
 
@@ -164,7 +164,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ### データセットの設定
 
-スキーマを使用して、データモデルを定義しました。次に、データセットを使用してデータを保存および管理するための構成を定義する必要があります。
+スキーマを使用して、データモデルを定義しました。次に、データセットを使用して、そのデータを保存および管理する構成を定義する必要があります。
 
 データセットを設定するには：
 
@@ -200,7 +200,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ## データストリームの設定
 
-データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データを転送するサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データの転送先となるサービスを決定するデータストリームです。
 
 設定では、モバイルアプリから収集したデータをAdobe Experience Platformのデータセットに送信する必要があります。
 
@@ -230,7 +230,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    4. その他の設定はそのままにし、「**[!UICONTROL 保存]**」を選択してデータストリームを保存します。
 
-これで、モバイルアプリから収集したデータをAdobe Experience Platformのデータセットに転送するようにデータストリームが設定されました。
+これで、モバイルアプリから収集したデータをAdobe Experience Platformでデータセットに転送するように、データストリームが設定されました。
 
 データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja)を参照してください。
 
@@ -238,7 +238,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ## タグの使用
 
-実際にデータを収集するコードをサイトに実装するには、Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Mobile SDK 拡張機能を使用したAdobe Experience Platformとのシームレスな統合を提供します。
+データを収集するためのコードをサイトに実装するには、Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Mobile SDK 拡張機能を使用して、Adobe Experience Platformとのシームレスな統合を提供します。
 
 ### タグを作成する
 
@@ -246,7 +246,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 2. 「**[!UICONTROL 新しいプロパティ]**」を選択します。
 
-   タグに名前を付け、「 」を選択します。 **[!UICONTROL モバイル]**. 「**[!UICONTROL 保存]**」を選択して続行します。
+   タグに名前を付け、を選択します **[!UICONTROL モバイル]**. 「**[!UICONTROL 保存]**」を選択して続行します。
 
    ![ プロパティの作成](./assets/create-mobile-property.png)
 
@@ -254,46 +254,46 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトを追跡して Adobe Experience Platform にデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
-を設定するには、新しく作成したタグを [!UICONTROL タグのプロパティ].
+設定するには、のリストから新しく作成したタグを選択します [!UICONTROL タグプロパティ].
 
 
 #### **拡張機能**
 
-タグにAdobePlatform Edge Network 拡張機能を追加して、（データストリームを介して）Adobe Experience Platformにデータを送信できるようにします。
+Adobe Platform Edge Network 拡張機能をタグに追加して、（データストリーム経由で）Adobe Experience Platformにデータを送信できるようにします。
 
-Adobe Experience Platform Mobile SDK 拡張機能を作成して設定するには、次の手順を実行します。
+Adobe Experience Platform Mobile SDK 拡張機能を作成および設定するには：
 
-1. 選択 **[!UICONTROL 拡張機能]** をクリックします。 Mobile Core および Profile 拡張機能は既に使用可能です。
+1. を選択 **[!UICONTROL 拡張機能]** 左パネルで。 Mobile Core 拡張機能とプロファイル拡張機能は既に使用可能です。
 
 1. 上部のバーで「**[!UICONTROL カタログ]**」をクリックします。
 
-1. を検索するか、 **[!UICONTROL Adobe Experience Platform Edge Network]** 拡張機能と選択 **[!UICONTROL インストール]** をクリックして、右側のウィンドウにインストールします。
+1. を検索またはスクロールして **[!UICONTROL Adobe Experience Platform Edge Network]** 拡張機能と選択 **[!UICONTROL インストール]** 右側のパネルでインストールします。
 
 1. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
    ![AEP Mobile SDK 拡張機能の設定](./assets/aepmobilesdk-extension-datastream.png)
 
-1. を入力します。 **[!UICONTROL Edge Network ドメイン]** underthen [!UICONTROL ドメイン設定]. 通常は `<organizationName>.data.adobedc.net`.
+1. を入力 **[!UICONTROL Edge ネットワークドメイン]** その下 [!UICONTROL ドメイン設定]. 通常はを使用します `<organizationName>.data.adobedc.net`.
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、 [Adobe Experience Platform Edge Network 拡張機能の設定](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
+参照： [Adobe Experience Platform Edge Network 拡張機能の設定](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
 
-また、カタログから次の追加の拡張機能を設定することもできます。
+また、カタログから次の追加拡張機能も設定する必要があります。
 
 - ID。
-- AEP アシュランス。
+- AEP Assurance.
 - 同意。
 
-詳しくは、 [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) の拡張機能とその設定について詳しくは、 Experience platform のモバイルアプリケーションチュートリアルを参照してください。
+参照： [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) 拡張機能とその設定について詳しくは、Experience Platform のモバイルアプリのチュートリアルを参照してください。
 
 #### **データ要素**
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグ内で、モバイルアプリのデータやイベントから読み取られ、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
+データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグで、モバイルアプリのデータやイベントから読み取り、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
 
 例えば、モバイルアプリから通信事業者名を収集するとします。
 
-通信事業者名データ要素を定義する手順は、次のとおりです。
+通信事業者名データ要素を定義するには：
 
 1. 左パネルで「**[!UICONTROL データ要素]**」を選択します。
 
@@ -303,23 +303,23 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成して設定するに�
 
    - データ要素に名前を付けます（例：`Carrier Name`）。
 
-   - 選択 **[!UICONTROL Mobile Core]** から [!UICONTROL 拡張] リスト。
+   - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
 
-   - 選択 **[!UICONTROL 通信事業者名]** から [!UICONTROL データ要素タイプ] リスト。
+   - を選択 **[!UICONTROL 通信事業者名]** から [!UICONTROL データ要素タイプ] リスト。
 
 
      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-mobile.png)
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
-必要な数のデータ要素を作成し、ルールで使用できます。
+必要な数のデータ要素を作成し、それらをルールで使用できます。
 
 
 #### **ルール**
 
-Adobe Experience Platform のタグは、ルールベースのシステムに従います。ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、Adobe Experience Platform Edge Network 拡張機能を使用して、XDM オブジェクトなどのデータをAdobe Experience Platformに送信できます。
+Adobe Experience Platform のタグは、ルールベースのシステムに従います。ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、XDM オブジェクトなどのデータを、Adobe Experience Platform Edge Network 拡張機能を使用してAdobe Experience Platformに送信できます。
 
-例えば、モバイルアプリが（フォアグラウンドで）使用されたときや、モバイルアプリが使用されていない（バックグラウンドにプッシュされた）ときに、イベントデータを送信したいとします。
+例えば、モバイルアプリが使用された場合（フォアグラウンドで）や、使用されなかった（バックグラウンドにプッシュされた）場合にイベントデータを送信するとします。
 
 ルールを定義するには：
 
@@ -335,25 +335,25 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - [!UICONTROL イベント設定]ダイアログで、次の手順を実行します。
 
-      - 選択 **[!UICONTROL Mobile Core]** から [!UICONTROL 拡張] リスト。
+      - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
 
-      - 選択 **[!UICONTROL 前景]** から [!UICONTROL イベントタイプ] リスト。
+      - を選択 **[!UICONTROL 前景]** から [!UICONTROL イベントタイプ] リスト。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - クリック ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の [!UICONTROL Mobile Core - Foreground].
+   - クリック ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の [!UICONTROL Mobile Core – 前景].
 
-      - 選択 **[!UICONTROL Mobile Core]** から [!UICONTROL 拡張] リスト。
+      - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
 
-      - 選択 **[!UICONTROL 背景]** から [!UICONTROL イベントタイプ] リスト。
+      - を選択 **[!UICONTROL 背景・経緯]** から [!UICONTROL イベントタイプ] リスト。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
    - クリック ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下に追加 [!UICONTROL アクション]. [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
 
-      - 選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から [!UICONTROL 拡張] リスト。
+      - を選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から [!UICONTROL 拡張機能] リスト。
 
-      - 選択 **[!UICONTROL イベントを Edge ネットワークに転送する]** から [!UICONTROL アクションタイプ] リスト。
+      - を選択 **[!UICONTROL Edge Network にイベントを転送]** から [!UICONTROL アクションタイプ] リスト。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -363,7 +363,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 「**[!UICONTROL 保存]**」を選択します。
 
-上記は、アプリケーションステータスを含む XDM データをAdobe EdgeネットワークとAdobe Experience Platformに送信するルールを定義する例に過ぎません。
+上記は、アプリケーションステータスを含む XDM データをAdobe Edge Network とAdobe Experience Platformに送信するルールを定義する例に過ぎません。
 
 タグ内で様々な方法でルールを使用して、（データ要素を使用して）変数を操作できます。
 
@@ -391,11 +391,11 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 「**[!UICONTROL 開発用に保存およびビルド]**」を選択します。
 
-   タグが保存され、開発環境用にビルドされます。 緑のドットは、開発環境でタグが正常に作成されたことを示します。
+   タグが保存され、開発環境用に作成されます。 緑のドットは、開発環境でタグが正常に作成されたことを示します。
 
 4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
 
-Adobe Experience Platformタグは、Adobe Experience Platform Edge Network のデプロイに対応する必要がある、シンプルかつ複雑な公開ワークフローをサポートします。
+Adobe Experience Platform タグは、Adobe Experience Platform Edge Network のデプロイメントに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。
 
 詳しくは、[公開の概要](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)を参照してください。
 
@@ -408,9 +408,9 @@ Adobe Experience Platformタグは、Adobe Experience Platform Edge Network の�
 
 1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
 
-2. 環境のリストから、適切なインストールを選択します。 ![ボックス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) 」ボタンをクリックします。
+2. 環境のリストから、正しいインストールを選択します ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタン。
 
-   Adobe Analytics の [!UICONTROL モバイルインストール手順] ダイアログで、適切なプラットフォーム ([!UICONTROL iOS], [!UICONTROL Android]) をクリックします。 次に、コピーを使用します。 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) ボタンをクリックし、モバイルアプリの設定と初期化に使用する、関連する各コードスニペットの横に表示されます。
+   が含まれる [!UICONTROL モバイルのインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS], [!UICONTROL Android]）に設定します。 次に、コピーを使用します ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) モバイルアプリの設定と初期化に使用する、関連する各コードスニペットの横にあるボタン：
 
    ![環境](./assets/environment-mobile.png)
 
@@ -422,17 +422,17 @@ Adobe Experience Platformタグは、Adobe Experience Platform Edge Network の�
 
 ## デプロイと検証
 
-これで、モバイルアプリ内にコードをデプロイできるようになりました。 デプロイすると、モバイルアプリがAdobe Experience Platformへのデータの収集を開始します。
+これで、モバイルアプリ内にコードをデプロイできます。 デプロイすると、モバイルアプリがAdobe Experience Platformへのデータ収集を開始します。
 
 実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と実稼動環境にデプロイします。
 
-詳しくは、 [モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
+参照： [モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
 
 ## 接続の設定
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformとワークスペースのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -452,7 +452,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    「[!UICONTROL データセットを追加]」の「[!UICONTROL データセットを選択]」手順で、次の操作を行います。
 
-   - 作成したデータセット、または接続に含める他の関連データセット ( 例：Adobe Journey Optimizerのプッシュトラッキングエクスペリエンスイベントデータやプッシュプロファイルデータ ) を選択します
+   - 以前に作成したデータセットや、接続に含める他の関連データセット（例：Adobe Journey Optimizerのプッシュトラッキングエクスペリエンスイベントデータやプッシュプロファイルデータ）を選択します
 
      ![データセットを追加](./assets/cja-connections-ajopush.png)
 
@@ -535,7 +535,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] （内） [!UICONTROL パネル] . 例えば、 `Events` 指標として `Push Title` 次元として、次の項目で分類： `Event Type` を参照して、モバイルアプリのプッシュ通知とそれらへの影響の概要を確認します。
+5. 最初のレポートを作成するには、まず、ディメンションと指標をそのレポートにドラッグ&amp;ドロップします [!UICONTROL フリーフォームテーブル] が含まれる [!UICONTROL パネル] . 例えば、次のようにドラッグします `Events` 指標および `Push Title` ディメンションとして、以下で分類 `Event Type` モバイルアプリのプッシュ通知の概要と発生状況を確認します。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5-mobile.png)
 
@@ -543,4 +543,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。Adobe Experience Platform でどのデータ（スキーマ）を収集するか、どこにそのデータセットを保存するかを定義することから開始して、データセットにデータを転送できるよう、Edge ネットワークでデータストリームを設定しました。次に、拡張機能 (Adobe Experience Platform Edge Network など )、データ要素、ルールを含むタグを定義してデプロイし、モバイルアプリからデータを取り込み、そのデータをデータストリームに送信します。 モバイルアプリのプッシュ通知トラッキングデータおよび他のCustomer Journey Analyticsを使用するための接続をデータで定義しました。 データビュー定義では、使用するディメンションと指標を指定でき、最後に、モバイルアプリデータを視覚化および分析する最初のプロジェクトを作成しました。
+>すべての手順が完了しました。Adobe Experience Platform でどのデータ（スキーマ）を収集するか、どこにそのデータセットを保存するかを定義することから開始して、データセットにデータを転送できるよう、Edge ネットワークでデータストリームを設定しました。次に、拡張機能（Adobe Experience Platform Edge Network など）、データ要素、ルールを含むタグを定義してデプロイし、モバイルアプリからデータを取得してデータストリームに送信します。 モバイルアプリのプッシュ通知トラッキングデータやその他のデータを使用するため、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、モバイルアプリデータを視覚化および分析します。
