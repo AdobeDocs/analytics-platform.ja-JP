@@ -9,17 +9,17 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 135d1832a1c22248e3c52e3f7cb9f05293626522
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1073'
 ht-degree: 79%
 
 ---
 
 
-# Adobe Customer Journey Analyticsガイド {#using}
+# Adobe Customer Journey Analytics ガイド {#using}
 
-+ [Adobe Customer Journey Analyticsガイド](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
@@ -35,7 +35,7 @@ ht-degree: 79%
    + [Customer Journey Analytics の概要](../getting-started/cja-overview.md)
    + [クイックスタートガイド](../getting-started/cja-getting-started.md)
    + [ランディングページ](../getting-started/landing.md)
-   + [ランディングページ（古い）](../getting-started/cja-landing-old.md)
+   + [ランディングページ （旧）](../getting-started/cja-landing-old.md)
    + [よくある質問](../getting-started/cja-faq.md)
    + [Customer Journey Analytics と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
 
@@ -164,8 +164,8 @@ ht-degree: 79%
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
-   + 書き出し {#export}
-      + [エクスポートの概要](../analysis-workspace/export/export-project-overview.md)
+   + Export {#export}
+      + [書き出しの概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
       + [他のユーザーに送信](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドにエクスポート](../analysis-workspace/export/export-cloud.md)
@@ -175,7 +175,8 @@ ht-degree: 79%
       + [異常値検出で使用される統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 予測 {#forecasting}
       + [予測の概要](../analysis-workspace/c-forecast/forecasting.md)
-      + [Analysis Workspaceで予測を表示](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Analysis Workspaceでの予測の表示](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
@@ -198,16 +199,16 @@ ht-degree: 79%
       + [摩擦ビュー](../guided-analysis/types/friction.md)
       + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
    + 影響 {#impact}
-      + [リリース表示](../guided-analysis/types/release.md)
-      + [初回使用ビュー](../guided-analysis/types/first-use.md)
-   + 定着 {#retention}
+      + [リリースビュー](../guided-analysis/types/release.md)
+      + [最初の使用ビュー](../guided-analysis/types/first-use.md)
+   + 保持 {#retention}
       + [リテンション率](../guided-analysis/types/retention-rates.md)
    + トレンド {#trends}
       + [使用状況ビュー](../guided-analysis/types/usage.md)
       + [頻度ビュー](../guided-analysis/types/frequency.md)
    + ユーザーの増加率 {#user-growth}
-      + [アクティブビュー](../guided-analysis/types/active.md)
-      + [正味の成長見通し](../guided-analysis/types/net-growth.md)
+      + [アクティブ ビュー](../guided-analysis/types/active.md)
+      + [純増加率ビュー](../guided-analysis/types/net-growth.md)
    + ユーザーストリーム {#streams}
       + [タイムライン](../guided-analysis/types/timeline.md)
    + [業界ユースケース](../guided-analysis/industry-use-cases.md)
@@ -222,7 +223,7 @@ ht-degree: 79%
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
       + [モバイル注釈](../components/annotations/mobile-annotations.md)
-   + [スケジュール済みプロジェクト](../components/scheduled-projects-manager.md)
+   + [スケジュールされたプロジェクト](../components/scheduled-projects-manager.md)
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
@@ -238,10 +239,10 @@ ht-degree: 79%
       + [フィルターの作成](../components/filters/create-filters.md)
       + [フィルターの共有](../components/filters/filters-share.md)
       + [タグフィルター](../components/filters/filters-tag.md)
-      + [フィルターのリストをフィルター](../components/filters/filters-filter.md)
+      + [フィルターのリストのフィルタリング](../components/filters/filters-filter.md)
       + [フィルターのお気に入りへの登録](../components/filters/filters-favorite.md)
       + [フィルターの承認](../components/filters/filters-approve.md)
-      + [フィルターをコピー](../components/filters/filters-copy.md)
+      + [フィルターのコピー](../components/filters/filters-copy.md)
       + [クイックフィルター](../components/filters/quick-filters.md)
       + [フィルタービルダー](../components/filters/filter-builder.md)
       + [フィルターの管理](../components/filters/manage-filters.md)
@@ -275,12 +276,12 @@ ht-degree: 79%
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
    + エクスポート {#exports}
-      + [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)
+      + [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)
       + [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md)
       + [クラウドの書き出し場所の管理](/help/components/exports/manage-export-locations.md)
-      + [エクスポートを管理](/help/components/exports/manage-exports.md)
-      + [書き出しログを管理](/help/components/exports/manage-export-logs.md)
-      + [エクスポートのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
+      + [書き出しの管理](/help/components/exports/manage-exports.md)
+      + [エクスポートログの管理](/help/components/exports/manage-export-logs.md)
+      + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
    + データ要素 {#data-dictionary}
       + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -309,14 +310,14 @@ ht-degree: 79%
 + ステッチ {#stitching}
    + [概要](../stitching/overview.md)
    + [ステッチの仕組み](../stitching/explained.md)
-   + [ステッチされたデータセットの作成と管理](../stitching/stitching-ui.md)
+   + [ステッチされたデータセットを作成および管理](../stitching/stitching-ui.md)
    + [よくある質問](../stitching/faq.md)
 
 + アドビの統合 {#integrations}
-   + [AdobeソリューションとCustomer Journey Analyticsの概要](/help/integrations/overview.md)
+   + [AdobeソリューションとCustomer Journey Analyticsの概要の統合](/help/integrations/overview.md)
    + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
-   + [Journey OptimizerデータとCustomer Journey Analyticsの統合](/help/integrations/ajo.md)
-   + [決定管理データとCustomer Journey Analyticsの統合](/help/integrations/ajo-od.md)
+   + [Journey Optimizer データとCustomer Journey Analyticsの統合](/help/integrations/ajo.md)
+   + [意思決定管理データとCustomer Journey Analyticsの統合](/help/integrations/ajo-od.md)
    + [顧客 AI とCustomer Journey Analyticsの統合](/help/integrations/customer-ai.md)
 
 + データガバナンス {#cja-privacy}
@@ -327,13 +328,13 @@ ht-degree: 79%
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
-      + [データを移行からGoogle AnalyticsへCustomer Journey Analyticsの概要](../use-cases/ga/overview.md)
+      + [Google AnalyticsからCustomer Journey Analyticsへのデータ移行の概要](../use-cases/ga/overview.md)
       + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
       + [Marketo EngageデータのAdobe Experience Platformへの取り込みとCustomer Journey Analyticsでのレポート](../use-cases/data-ingestion/marketo.md)
-      + [Adobe Experience PlatformオーディエンスのCustomer Journey Analyticsへの取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Adobe Experience Platform オーディエンスのCustomer Journey Analyticsへの取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
@@ -350,7 +351,7 @@ ht-degree: 79%
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
    + 派生フィールド {#derived-fields}
-      + [派生フィールドを使用した目標のレポート](../use-cases/goals-using-derived-fields.md)
+      + [派生フィールドを使用した目標に関するレポート](../use-cases/goals-using-derived-fields.md)
 
 
 + 管理 {#cja-admin}
@@ -358,7 +359,7 @@ ht-degree: 79%
    + [アクセス制御](../admin/cja-access-control.md)
    + [使用状況の表示と管理](../admin/estimate-usage.md)
    + [削除の影響](../admin/cja-deletion.md)
-   + [Customer Journey Analyticsパフォーマンスの最適化](../admin/optimizing-performance.md)
+   + [Customer Journey Analyticsのパフォーマンスの最適化](../admin/optimizing-performance.md)
    + [IP アドレス](../admin/ip-addresses.md)
 
 + ラボ {#labs}
@@ -366,7 +367,7 @@ ht-degree: 79%
 
 + トラブルシューティング {#troubleshooting}
    + [Adobe Analytics データと Customer Journey Analytics データの比較](../troubleshooting/compare.md)
-   + [リアルタイム CDP とCustomer Journey Analyticsの間の指標とオーディエンスメンバーシップ数の一貫性](../troubleshooting/consistency-rcdp-cja.md)
+   + [Real-time CDP とCustomer Journey Analyticsの間における指標とオーディエンスメンバーシップカウントの一貫性](../troubleshooting/consistency-rcdp-cja.md)
    + [権限の欠如](../troubleshooting/lack-of-permissions.md)
 
 + テクニカルノート {#technotes}
