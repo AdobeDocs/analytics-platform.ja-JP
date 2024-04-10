@@ -3,24 +3,25 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e27e2ad81ed997c5aa19a270a9d682ac6a03ce2a
+source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 94%
+source-wordcount: '1037'
+ht-degree: 91%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2024年3月）
 
-**最終更新日**：2024年4月3日（PT）
+**最終更新日**：2024年4月10日（PT）
 
-このリリースノートは、2024年3月13日（PT）～2024年4月のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
+このリリースノートは、2024年3月13日（PT）～2024年4月（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Workspace プロジェクトの削除プロトコルの変更** | 以前は、削除された Workspace プロジェクトはシステムからパージされませんでした。 180 日後に削除されたプロジェクトのパージを開始するようになりました。 削除後 180 日間も、ユーザーは、ダイレクトプロジェクトへの URL を持っている場合、Web インターフェイスを通じて削除済みのプロジェクトにアクセスできます。 | | 2024年3月14日（PT） |
+| **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 Customer Journey Analyticsスコアカードで使用できるようになりました。 |  | 2024年4月10日（PT） |
+| **ワークスペースプロジェクトの削除プロトコルへの変更** | 以前は、削除されたワークスペースプロジェクトはシステムからパージされませんでした。 削除されたプロジェクトのパージを 180 日後に開始します。 直接プロジェクトへの URL がある場合、削除後 180 日間は、ユーザーは web インターフェイスを使用して削除されたプロジェクトに引き続きアクセスできます。 | | 2024年3月14日（PT） |
 | **プロジェクトランディングページで新しい列を使用できます** | **[!UICONTROL 前回開いた日時]**&#x200B;列が、[Customer Journey Analytics ランディングページ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=ja)の「プロジェクト」タブを表示するときに利用できるようになりました。 <p>この情報は、プロジェクトが最後に開かれた日時を示し、組織内のユーザーにとってプロジェクトが有用かどうかを判断するのに役立ちます。以前は、**[!UICONTROL 前回の使用]**&#x200B;列は、計算指標マネージャー、セグメントマネージャー、アラートマネージャーでしか使用できませんでした。</p> |  | 2024年3月13日（PT） |
 | **使用状況指標** | [使用状況指標インターフェイス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)には、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。このインターフェイスを使用すると、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断できます。 |  | 2024年3月13日（PT） |
 | **Media Analytics レポート - 分平均オーディエンス（AMA）** | 分平均オーディエンスパネルが CJA で使用できるようになりました。Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。 <p>分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを、線形 TV 分平均指標と比較したり追加したりできます。</p><p> このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。</p><p>詳しくは、[メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)を参照してください。</p> |  | 2024年3月12日（PT） |
