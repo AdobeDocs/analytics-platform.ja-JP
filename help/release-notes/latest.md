@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
+source-git-commit: dea4a862f2e40e31bf96d0898418adfd7ca3a2f7
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 91%
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 Customer Journey Analyticsスコアカードで使用できるようになりました。 |  | 2024年4月10日（PT） |
+| **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 Customer Journey Analyticsスコアカードで使用できるようになりました。 |  | 2024年4月17日（PT） |
 | **ワークスペースプロジェクトの削除プロトコルへの変更** | 以前は、削除されたワークスペースプロジェクトはシステムからパージされませんでした。 削除されたプロジェクトのパージを 180 日後に開始します。 直接プロジェクトへの URL がある場合、削除後 180 日間は、ユーザーは web インターフェイスを使用して削除されたプロジェクトに引き続きアクセスできます。 | | 2024年3月14日（PT） |
 | **プロジェクトランディングページで新しい列を使用できます** | **[!UICONTROL 前回開いた日時]**&#x200B;列が、[Customer Journey Analytics ランディングページ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=ja)の「プロジェクト」タブを表示するときに利用できるようになりました。 <p>この情報は、プロジェクトが最後に開かれた日時を示し、組織内のユーザーにとってプロジェクトが有用かどうかを判断するのに役立ちます。以前は、**[!UICONTROL 前回の使用]**&#x200B;列は、計算指標マネージャー、セグメントマネージャー、アラートマネージャーでしか使用できませんでした。</p> |  | 2024年3月13日（PT） |
 | **使用状況指標** | [使用状況指標インターフェイス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)には、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。このインターフェイスを使用すると、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断できます。 |  | 2024年3月13日（PT） |
