@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: dea4a862f2e40e31bf96d0898418adfd7ca3a2f7
+source-git-commit: 6057084f26c85929d307f2b7d750358dce590ca6
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 91%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 97%
 | **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 Customer Journey Analyticsスコアカードで使用できるようになりました。 |  | 2024年4月17日（PT） |
 | **Workspace プロジェクトの削除プロトコルの変更** | 以前は、削除した Workspace プロジェクトはシステムからパージされませんでした。180 日後に削除したプロジェクトのパージを開始します。削除後 180 日間は、直接プロジェクトへの URL を持っているユーザーは、web インターフェイス経由で削除したプロジェクトに引き続きアクセスできます。 | | 2024年3月14日（PT） |
 | **プロジェクトランディングページで新しい列を使用できます** | **[!UICONTROL 前回開いた日時]**&#x200B;列が、[Customer Journey Analytics ランディングページ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=ja)の「プロジェクト」タブを表示するときに利用できるようになりました。 <p>この情報は、プロジェクトが最後に開かれた日時を示し、組織内のユーザーにとってプロジェクトが有用かどうかを判断するのに役立ちます。以前は、**[!UICONTROL 前回の使用]**&#x200B;列は、計算指標マネージャー、セグメントマネージャー、アラートマネージャーでしか使用できませんでした。</p> |  | 2024年3月13日（PT） |
+| **Media Edge API のユースケースドキュメント** | Media Edge API の使用には、2 つの新しいユースケースがあります。 最初のユースケースでは、次の要素を含むメディアセッションをトラッキングする方法を説明します [広告ブレーク付きの 2 つの章](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/chapters-with-ad-timeline/). 2 番目の使用例では、次のコンポーネントを含むメディアセッションをトラッキングする方法を説明します [バッファー状態と一時停止](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/buffer-and-pause-timeline/). |  | 2024年3月13日（PT） |
 | **使用状況指標** | [使用状況指標インターフェイス](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja)には、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。このインターフェイスを使用すると、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断できます。 |  | 2024年3月13日（PT） |
 | **Media Analytics レポート - 分平均オーディエンス（AMA）** | 分平均オーディエンスパネルが CJA で使用できるようになりました。Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより詳細に把握できます。 <p>分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。さらに、お客様はこのデジタル分平均オーディエンスを、線形 TV 分平均指標と比較したり追加したりできます。</p><p> このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。</p><p>詳しくは、[メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)を参照してください。</p> |  | 2024年3月12日（PT） |
 | **ユーザーからアカウントへの B2B スキーマ変換** | データセットを変換すると、Customer Journey Analytics B2B レポートシナリオにおけるユーザーベースのルックアップをより適切にサポートできます。この機能は、次のクラスに基づく B2B スキーマのデータセットで使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | 2024年4月17日（PT） |
