@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
+source-git-commit: 4cb3c61a518b93119d8ffd503fc8653076ad56a1
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2007'
 ht-degree: 7%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 7%
 1. 組織内のすべての接続に対するレポートリクエストの合計数を表示するには、を展開します [!UICONTROL **さらに表示**] を表示するには [!UICONTROL **月次レポートリクエスト**] グラフ。
 
    当月と前月の組織内のレポートリクエスト数を表示できます。
+
+   ![レポートキューを表示するレポートアクティビティ](assets/reporting-activity-monthly.png)
 
 1. （オプション）接続のリストを検索またはフィルタリングできます。
 
