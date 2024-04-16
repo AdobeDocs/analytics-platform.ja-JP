@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 6057084f26c85929d307f2b7d750358dce590ca6
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 91%
 
 **最終更新日**：2024年4月10日（PT）
 
-このリリースノートは、2024年3月13日（PT）～2024年4月（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。リリースノートを定期的に確認してください。
+このリリースノートは、2024年3月13日（PT）～2024年4月のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 Customer Journey Analyticsスコアカードで使用できるようになりました。 |  | 2024年4月17日（PT） |
+| **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)は、アナリスト以外のユーザーがアナリストの助けを借りずにデータをより深く理解するのに役立ちます。これが Customer Journey Analytics スコアカードで使用できるようになりました。 |  | 2024年4月17日（PT） |
 | **Workspace プロジェクトの削除プロトコルの変更** | 以前は、削除した Workspace プロジェクトはシステムからパージされませんでした。180 日後に削除したプロジェクトのパージを開始します。削除後 180 日間は、直接プロジェクトへの URL を持っているユーザーは、web インターフェイス経由で削除したプロジェクトに引き続きアクセスできます。 | | 2024年3月14日（PT） |
 | **プロジェクトランディングページで新しい列を使用できます** | **[!UICONTROL 前回開いた日時]**&#x200B;列が、[Customer Journey Analytics ランディングページ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=ja)の「プロジェクト」タブを表示するときに利用できるようになりました。 <p>この情報は、プロジェクトが最後に開かれた日時を示し、組織内のユーザーにとってプロジェクトが有用かどうかを判断するのに役立ちます。以前は、**[!UICONTROL 前回の使用]**&#x200B;列は、計算指標マネージャー、セグメントマネージャー、アラートマネージャーでしか使用できませんでした。</p> |  | 2024年3月13日（PT） |
 | **Media Edge API のユースケースドキュメント** | Media Edge API の使用には、2 つの新しいユースケースがあります。 最初のユースケースでは、次の要素を含むメディアセッションをトラッキングする方法を説明します [広告ブレーク付きの 2 つの章](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/chapters-with-ad-timeline/). 2 番目の使用例では、次のコンポーネントを含むメディアセッションをトラッキングする方法を説明します [バッファー状態と一時停止](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/buffer-and-pause-timeline/). |  | 2024年3月13日（PT） |
