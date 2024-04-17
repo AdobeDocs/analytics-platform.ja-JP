@@ -1,98 +1,98 @@
 ---
-description: クラウドの場所にAnalysis Workspaceプロジェクトを書き出す方法を説明します。
+description: Analysis Workspace プロジェクトをクラウドの場所に書き出す方法を説明します。
 keywords: Analysis Workspace
-title: Customer Journey Analyticsレポートをクラウドにエクスポート
+title: クラウドへのCustomer Journey Analyticsレポートの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: cf9920eb45803ff105e0d411475ee3df2a676cd1
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2217'
 ht-degree: 3%
 
 ---
 
-# Customer Journey Analyticsレポートをクラウドにエクスポート
+# クラウドへのCustomer Journey Analyticsレポートの書き出し
 
-Workspace の完全なテーブルをCustomer Journey Analyticsから書き出し、書き出しを指定されたクラウドの宛先に送信できます。
+Workspace から Workspace の完全なテーブルを書き出し、指定したCustomer Journey Analytics宛先に書き出しを送信できます。
 
-また、Customer Journey Analyticsレポートを書き出すその他の方法も使用できます。詳しくは、 [エクスポートの概要](/help/analysis-workspace/export/export-project-overview.md).
+Customer Journey Analyticsレポートを書き出すその他の方法も使用できます。詳細については、を参照してください [書き出しの概要](/help/analysis-workspace/export/export-project-overview.md).
 
-## 完全なテーブルの書き出しについて
+## 完全テーブル書き出しについて
 
-Analysis Workspaceから、Google、Azure、Amazon、Adobeなどのクラウドプロバイダーに、完全なテーブルを書き出すことができます。
+Analysis WorkspaceからGoogle、Azure、Amazon、Adobeなどのクラウドプロバイダーに完全なテーブルを書き出すことができます。
 
-[完全なテーブルをクラウドにエクスポートする利点](#advantages-of-exporting-to-the-cloud) には、何百万もの行をエクスポートする機能、計算指標を含める機能、連結された値での構造データ出力などが含まれます。
+[クラウドに完全なテーブルを書き出す利点](#advantages-of-exporting-to-the-cloud) 数百万行のエクスポート機能、計算指標のインクルード機能、連結された値でのデータ出力の構造化機能など。
 
-完全なテーブルをエクスポートする場合は、次の点に注意してください。
+テーブル全体を書き出す場合は、次の点を考慮してください。
 
-* クラウドにエクスポートする前に、テーブル、環境、権限が [輸出要件](#export-requirements).
+* クラウドに書き出す前に、テーブル、環境、権限が次の条件を満たしていることを確認します [書き出し要件](#export-requirements).
 
-* 一部 [機能](#unsupported-features) および [コンポーネント](#unsupported-components) 完全なテーブルをクラウドにエクスポートする場合、はサポートされません。
+* 一部 [の機能](#unsupported-features) および [components](#unsupported-components) 完全なテーブルをクラウドに書き出す場合は、はサポートされません。
 
-完全なテーブルをクラウドにエクスポートする場合は、次のプロセスを使用します。
+完全なテーブルをクラウドに書き出す場合は、次の手順を使用します。
 
 1. [クラウドアカウントの設定](/help/components/exports/cloud-export-accounts.md)
 
-1. [アカウント上の場所の設定](/help/components/exports/cloud-export-locations.md)
+1. [アカウントの場所の設定](/help/components/exports/cloud-export-locations.md)
 
-1. [Workspace からの完全なテーブルのエクスポート](#export-full-tables-from-analysis-workspace)
+1. [Workspace からの完全なテーブルの書き出し](#export-full-tables-from-analysis-workspace)
 
-1. [クラウド内のデータにアクセスする](#view-exported-data-and-manifest-file) および [エクスポートをAdobeで管理](/help/components/exports/manage-exports.md)
+1. [クラウド内のデータへのアクセス](#view-exported-data-and-manifest-file) および [Adobeでの書き出しの管理](/help/components/exports/manage-exports.md)
 
-![手順 1 ～ 4 で説明されている完全なテーブルエクスポートプロセス。](assets/export-full-table-process.png)
+![手順 1～4 で説明した完全テーブルの書き出しプロセス。](assets/export-full-table-process.png)
 
-## Analysis Workspaceからの完全なテーブルのエクスポート
+## Analysis Workspaceからの完全なテーブルの書き出し
 
 >[!NOTE]
 >
->この節で説明するようにデータをエクスポートする前に、 [完全なテーブルの書き出しについて](#understand-full-table-export) 」の節を参照してください。
+>この節の説明に従ってデータを書き出す前に、テーブル全体の書き出しの詳細を以下で確認してください [完全テーブル書き出しについて](#understand-full-table-export) 上記の節
 
-Analysis Workspaceから完全なテーブルをエクスポートするには：
+Analysis Workspaceから完全なテーブルを書き出すには：
 
-1. まだエクスポートアカウントを設定していない場合は、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md).
+1. まだ設定していない場合は、の説明に従って、書き出しアカウントと場所を設定します [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md).
 
-1. Analysis Workspaceで、エクスポートするデータを含むフリーフォームテーブルを右クリックします。
+1. Analysis Workspaceで、書き出すデータを含んだフリーフォームテーブルを右クリックします。
 
-1. 選択 [!UICONTROL **完全なテーブルをエクスポート**].
+1. を選択 [!UICONTROL **完全なテーブルを書き出し**].
 
-   ![フリーフォームテーブルドロップダウンメニュー（「完全なテーブルを書き出し」がハイライト表示されています）。](assets/export-full-table.png)
+   ![「完全なテーブルを書き出し」がハイライト表示された「フリーフォームテーブル」ドロップダウンメニュー。](assets/export-full-table.png)
 
-1. Adobe Analytics の [!UICONTROL **新しいフルテーブルエクスポート**] ダイアログボックスで、次の情報を指定します。
+1. が含まれる [!UICONTROL **新しい完全テーブルの書き出し**] ダイアログボックスで、次の情報を指定します。
 
    | フィールド名 | 関数 |
    |---------|----------|
-   | 名前 | エクスポートの名前を指定します。 この名前は、エクスポートのリストに表示されます。 |
-   | タグ | 既存のタグをエクスポートに適用することも、新しいタグを作成して適用することもできます。 <p>既存のタグをエクスポートに適用するには、ドロップダウンメニューから任意のタグを選択します。 会社内のタグを適用できます<!-- double-check this -->.</p> <p>新しいタグを作成するには、新しいタグの名前を入力し、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮してください。 <ul><li>適用したタグは、エクスポートテーブルでフィルタリングしたり、検索したりできます。</li> <li>表全体をエクスポートする際に、プロジェクトに適用されたタグは自動的には適用されません。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md). ( または、 [完全なプロジェクトの書き出しをスケジュールする](/help/analysis-workspace/export/t-schedule-report.md)に設定すると、プロジェクトに適用されたタグが自動的に書き出しに適用されます )。  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
-   | 説明 | エクスポートに説明を追加します。 説明を列として [書き出しページ](/help/components/exports/manage-exports.md) （エクスポートを表示する場合） |
-   | データビュー | エクスポートに含めるコンポーネントを含むデータビューを選択します。 データビュードロップダウンメニューは、ダイアログの左上隅にあり、データビューアイコンで識別できます![データ表示アイコン](assets/data-view-icon.png).  <p>**注意：** データテーブルに既に含まれているコンポーネントが見つからないデータビューを選択すると、データテーブルをクリアし、選択したデータビューに含まれるコンポーネントを使用して再作成するよう求められます。 </p> |
-   | ルックバックウィンドウ | 各エクスポートファイルに含めるレポート期間を選択します。 次のオプションがあります [!UICONTROL **今日**], [!UICONTROL **昨日**], [!UICONTROL **過去 7 日間**], [!UICONTROL **過去 30 日間**], [!UICONTROL **今週**]、および [!UICONTROL **今月**]. <p>このオプションは、 [!UICONTROL **書き出し頻度**] が [!UICONTROL **今すぐ送信（1 回のみ）**]. |
-   | データテーブル | エクスポートするフリーフォームテーブルを表示します。 データテーブルを変更するには、左側のパネルからテーブルにコンポーネントをドラッグします。 キャンバスにコンポーネントを追加すると、テーブルが動的に更新されます。  <p>プロジェクト内の全表に適用されたセグメントは、表内の各列の上部に表示されます。</p> |
-   | クリア | データテーブルの内容をクリアします。 これにより、新しいフルテーブルの書き出しダイアログ内で、新しいテーブルの作成を直接開始できます。 |
-   | 書き出し頻度 | エクスポートを実行する頻度のスケジュールを設定します。 <p>次を選択できます。 [!UICONTROL **今すぐ送信（1 回のみ）**] を 1 回だけ送信する必要があります。 このオプションを選択すると、エクスポートが直ちに開始されます。<p>または、定義したスケジュールに従ってエクスポートを送信することもできます。 スケジュールに従って送信する場合、次のオプションがあります。 [!UICONTROL **毎日**], [!UICONTROL **毎週**], [!UICONTROL **毎月（曜日別）**], [!UICONTROL **毎月（日別）**], [!UICONTROL **毎年 — 月の日別**]、および [!UICONTROL **毎年 — 特定の日別**]. </p><p>書き出し頻度を選択する際は、次の点に注意してください。</p><ul><li>Adobe Analytics の [!UICONTROL **ルックバックウィンドウ**] フィールドは、ここで選択した内容に応じて変わります。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>選択したオプションに応じて、追加の設定フィールドが表示されます。</li></ul> |
-   | 開始日 | スケジュールされたエクスポートを開始する日時。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
-   | 終了日 | スケジュールされたエクスポートの有効期限が切れる日時。 設定した日時以降、スケジュールされたエクスポートは実行されなくなります。 <p>このオプションは、スケジュールされた書き出し頻度を選択した場合にのみ使用できます。</p> |
-   | ファイル形式 | 書き出したデータを.csv 形式と.json 形式のどちらにするかを選択します。 |
-   | アカウント | データを送信するクラウドエクスポートアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>選択 [!UICONTROL **アカウントを追加**]&#x200B;次の情報を指定します。<ul><li>[!UICONTROL **場所のアカウント名**]：ロケーションアカウントの名前を指定します。 この名前は、ロケーションを作成する際に表示されます </li><li>[!UICONTROL **場所アカウントの説明**]：同じアカウントタイプの他のアカウントと区別するのに役立つ、アカウントの簡単な説明を入力します。</li><li>[!UICONTROL **アカウントタイプ**]：書き出し先のクラウドアカウントのタイプを選択します。 使用可能なアカウントの種類は、Amazon S3 ロール ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP データランディングゾーンです。</li></ul><li>アカウントの設定を完了するには、次の [!UICONTROL **アカウントタイプ**] 選択した項目：<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 ロール ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | 場所名 | エクスポートデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>選択 [!UICONTROL **場所を追加**]&#x200B;次の情報を指定します。 <ul><li>[!UICONTROL **名前**]：場所の名前。</li><li>[!UICONTROL **説明**]：アカウント上の他の場所と区別するのに役立つ、場所の簡単な説明を入力します。</li><li>[!UICONTROL **場所アカウント**]：ロケーションを作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、 [!UICONTROL **場所アカウント**] フィールド：<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 ロール ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | 名前 | 書き出しの名前を指定します。 この名前は、書き出しのリストに表示されます。 |
+   | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成して適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。 会社内のすべてのタグを適用できます<!-- double-check this -->.</p> <p>新しいタグを作成するには、新しいタグの名前を入力し、Enter キーを押します。</p><p>書き出しにタグを適用する場合は、次の点を考慮してください。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>の「書き出しページでの列の設定」で説明されているように、プロジェクトに適用されるタグがテーブル全体を書き出す際に自動的に適用されない [書き出しの管理](/help/components/exports/manage-exports.md). （または、の場合 [書き出すプロジェクト全体のスケジュール](/help/analysis-workspace/export/t-schedule-report.md)プロジェクトに適用されているタグはすべて、書き出しに自動的に適用されます）。  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | 説明 | エクスポートに説明を追加します。 では、説明を列として表示するように選択できます [書き出しページ](/help/components/exports/manage-exports.md) 書き出しを表示する場合 |
+   | データビュー | 書き出しに含めるコンポーネントを含んだデータビューを選択します。 データビュードロップダウンメニューは、ダイアログの左上隅にあり、データビューアイコンで識別できます![データビューアイコン](assets/data-view-icon.png).  <p>**注意：** データテーブルに既に含まれているコンポーネントが欠落しているデータビューを選択した場合は、データテーブルを消去し、選択したデータビューに含まれているコンポーネントを使用してデータテーブルを再作成するように求めるプロンプトが表示されます。 </p> |
+   | ルックバックウィンドウ | 各エクスポートファイルに含めるレポート期間を選択します。 次のようなオプションがあります [!UICONTROL **今日**], [!UICONTROL **昨日**], [!UICONTROL **過去 7 日間**], [!UICONTROL **過去 30 日間**], [!UICONTROL **今週**]、および [!UICONTROL **今月**]. <p>このオプションは、 [!UICONTROL **書き出し頻度**] はに設定されています。 [!UICONTROL **今すぐ送信（1 回限り）**]. |
+   | データテーブル | 書き出すフリーフォームテーブルを表示します。 左側のパネルからコンポーネントをテーブルにドラッグして、データテーブルを変更できます。 キャンバスにコンポーネントを追加すると、テーブルが動的に更新されます。  <p>プロジェクト内のテーブル全体に適用されたセグメントは、テーブルの個々の列の上部に表示されます。</p> |
+   | クリア | データ テーブルの内容をクリアします。 これにより、新しい完全なテーブルの書き出しダイアログ内で直接新しいテーブルの作成を開始できます。 |
+   | 書き出し頻度 | 書き出しの実行頻度のスケジュールを設定します。 <p>以下から選択できます [!UICONTROL **今すぐ送信（1 回限り）**] エクスポートを 1 回だけ送信します。 このオプションを選択すると、書き出しが直ちに開始されます。<p>または、定義したスケジュールで書き出しを送信するように選択できます。 スケジュールに従って送信する場合、次のようなオプションがあります [!UICONTROL **日次**], [!UICONTROL **毎週**], [!UICONTROL **毎月（曜日）**], [!UICONTROL **毎月**], [!UICONTROL **年ごとの日**]、および [!UICONTROL **特定の日付による毎年**]. </p><p>書き出し頻度を選択する際は、次の点を考慮してください。</p><ul><li>のオプション [!UICONTROL **ルックバックウィンドウ**] フィールドは、ここで選択した内容に応じて変わります。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>選択したオプションに応じて、追加の設定フィールドが表示されます。</li></ul> |
+   | 開始日 | スケジュールされたエクスポートを開始する日時。 <p>このオプションは、スケジュールされた書き出し頻度を選択する場合にのみ使用できます。</p> |
+   | 終了日 | スケジュールされた書き出しが期限切れになる日時。 スケジュールされた書き出しは、設定した日時以降は実行されなくなります。 <p>このオプションは、スケジュールされた書き出し頻度を選択する場合にのみ使用できます。</p> |
+   | ファイル形式 | 書き出すデータを.csv 形式と.json 形式のどちらにするかを選択します。 |
+   | アカウント | データを送信するクラウド書き出しアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>「[!UICONTROL **アカウントを追加**]」を選択し、次の情報を指定します。<ul><li>[!UICONTROL **場所アカウント名**]：場所アカウントの名前を指定します。 この名前は、場所の作成時に表示されます </li><li>[!UICONTROL **場所アカウントの説明**]：アカウントの簡単な説明を入力して、同じアカウントタイプを持つ他のアカウントとの区別に役立てます。</li><li>[!UICONTROL **アカウントタイプ**]：エクスポート先のクラウドアカウントのタイプを選択します。 使用可能なアカウントタイプは、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP Data Landing Zone です。</li></ul><li>アカウントの設定を完了するには、以下の、に対応するリンクを続行します [!UICONTROL **アカウントタイプ**] 次が選択されました：<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 場所名 | 書き出しデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>を選択 [!UICONTROL **場所を追加**]&#x200B;を入力し、次の情報を指定します。 <ul><li>[!UICONTROL **名前**]：場所の名前。</li><li>[!UICONTROL **説明**]：アカウント上の他の場所との区別に役立つ、場所の短い説明を入力します。</li><li>[!UICONTROL **場所アカウント**]：場所を作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、で選択したアカウントタイプに対応する以下のリンクを続行します [!UICONTROL **場所アカウント**] フィールド :<ul><li>[AEP データランディングゾーン](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
-1. 選択 [!UICONTROL **保存**] エクスポートを保存します。
+1. を選択 [!UICONTROL **保存**] をクリックして書き出しを保存します。
 
-   指定した頻度で指定したクラウドアカウントにデータが送信されます。
+   データは、指定した頻度で指定したクラウドアカウントに送信されます。
 
-1. （オプション）エクスポートを作成した後、今すぐ送信するか、定義したスケジュールに従って送信するかを選択した場合は、 [書き出しページ](/help/components/exports/manage-exports.md) をクリックし、 [ログの書き出し](/help/components/exports/manage-export-logs.md).</p>
+1. （オプション）書き出しを作成したら、すぐに送信するか定義済みのスケジュールで送信するかを問わず、で表示および管理できます [書き出しページ](/help/components/exports/manage-exports.md) で表示できます [ログをエクスポート](/help/components/exports/manage-export-logs.md).</p>
 
-## エクスポートを管理
+## 書き出しの管理
 
-Analysis Workspaceからデータを書き出した後、既存の書き出しを編集、再書き出し、複製、タグ付け、削除できます。詳しくは、 [エクスポートを管理](/help/components/exports/manage-exports.md).
+Analysis Workspaceからデータを書き出した後は、の説明に従って、既存の書き出しを編集、再書き出し、複製、タグ付け、または削除することができます [書き出しの管理](/help/components/exports/manage-exports.md).
 
-## 書き出されたデータとマニフェストファイルを表示
+## 書き出されたデータとマニフェスト ファイルの表示
 
 ### 書き出したデータ
 
-書き出されたデータは、設定したクラウドの宛先で圧縮ファイルとして使用できます。詳しくは、 [クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
+書き出されたデータは、の説明に従って、設定したクラウドの宛先で圧縮ファイルとして使用できます [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
 圧縮ファイルのファイル名は、ファイル形式として CSV と JSON のどちらを選択したかに応じて、次のようになります。
 
@@ -102,11 +102,11 @@ Analysis Workspaceからデータを書き出した後、既存の書き出し�
 
 >[!NOTE]
 >
->ファイル形式は、 [!UICONTROL **ファイル形式**] フィールド（テーブルのエクスポート時） [Analysis Workspaceからの完全なテーブルのエクスポート](#export-full-tables-from-analysis-workspace).
+>ファイル形式は、 [!UICONTROL **ファイル形式**] テーブルのエクスポート時のフィールド（「」を参照） [Analysis Workspaceからの完全なテーブルの書き出し](#export-full-tables-from-analysis-workspace).
 
 ### マニフェストファイル
 
-ファイル名がのマニフェストファイル `cja-export-{reportInstanceId}-{idx}.json.gz` は、少なくとも 1 つのファイルを含む、成功した書き出し配信に含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。 次の情報が含まれます。
+ファイル名がのマニフェストファイル `cja-export-{reportInstanceId}-{idx}.json.gz` は、少なくとも 1 つのファイルを含む正常なエクスポート配信に含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。 これには以下の情報が含まれます。
 
 * 配信されたすべてのファイルのリスト
 
@@ -114,71 +114,71 @@ Analysis Workspaceからデータを書き出した後、既存の書き出し�
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## クラウドに書き出す利点
+## クラウドに書き出すメリット
 
-Customer Journey Analyticsデータをクラウドに書き出すと、次のことができます。
+Customer Journey Analyticsデータをクラウドに書き出すと、次の操作を実行できます。
 
-* Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有場所にエクスポートします。
+* Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有の場所に書き出します。
 
 * 大量の履歴データを保存する。
 
-  このタイプのデータは、ビジネスインテリジェンスを獲得し、最終的により良いビジネス意思決定を引き起こすために、長期的な傾向を検出するために使用できます。
+  このタイプのデータを使用すると、ビジネスインテリジェンスを得るために長期的なトレンドを検出し、最終的にビジネスの意思決定を向上させることができます。
 
-* 数千または数百万の行（ライセンスタイプに応じて 300 万、3000 万、1 億 5000 万、3 億行）を含む完全なテーブルをエクスポートします。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
+* 数千行または数百万行（ライセンスタイプに応じて、300 万行、3,000 万行、1 億 5,000 万行、3 億行）を含む完全なテーブルを書き出します。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
 
-* エクスポートされた指標データに計算Customer Journey Analyticsを含めます。
+* エクスポートされたCustomer Journey Analyticsデータに計算指標を含めます。
 
-* 連結された値としての構造データ出力。
+* 連結された値として出力される構造データ。
 
-* 1 回のみ、またはスケジュールに従って書き出します。 ( また、 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).)
+* 1 回限りのエクスポート、またはスケジュールに従ったエクスポート。 （でも利用可能 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).）
 
-* CSV 形式または JSON 形式でファイルを書き出します。 ( また、 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).)
+* ファイルを CSV 形式または JSON 形式で書き出します。 （でも利用可能 [その他の書き出しオプション](/help/analysis-workspace/export/export-project-overview.md).）
 
-* 複数のディメンションを含むテーブルをエクスポートします。
+* 複数のディメンションが含まれるテーブルをエクスポートします。
 
-## エクスポート要件 {#export-requirements}
+## 書き出し要件 {#export-requirements}
 
 ### 最小要件
 
 テーブル、環境、権限が次の要件を満たしていることを確認します。
 
-* **テーブル：** フルテーブルエクスポートでサポートされるように、すべてのテーブルで、行に少なくとも 1 つのディメンションと各列に 1 つの指標を含める必要があります。
+* **テーブル：** すべてのテーブルに、テーブル全体の書き出しをサポートするために、行に 1 つ以上のディメンションを、各列に 1 つの指標を含める必要があります。
 
-* **環境：** 管理者は、 [Customer Journey Analyticsで使用する IP アドレス](/help/admin/ip-addresses.md) は、ファイアウォールの許可リストに加えるに含まれます。
+* **環境：** 管理者は、にリストされている IP アドレスを確認する必要があります。 [Customer Journey Analyticsが使用する IP アドレス](/help/admin/ip-addresses.md) ファイアーウォールに組み込まれている許可リストです。
 
-* **権限：** Adobe Admin Consoleでは、ユーザーに、 [!UICONTROL **フルテーブルエクスポート**] 完全なテーブルをエクスポートするために割り当てられた権限。 Admin Consoleでの製品プロファイルへの権限の割り当てについて詳しくは、 [Customer Journey AnalyticsのAdmin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **権限：** Adobe Admin Consoleでは、ユーザーには、次の情報を持つ製品プロファイルが割り当てられている必要があります [!UICONTROL **テーブル全体の書き出し**] すべてのテーブルを書き出すために割り当てられた権限。 Admin Consoleで製品プロファイルに権限を割り当てる方法については、を参照してください。 [Admin ConsoleのCustomer Journey Analytics権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) 。対象： [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
   >[!NOTE]
   >
-  >  次の項目を割り当てられたユーザー： [製品管理者の役割](/help/admin/cja-access-control.md#product-admin-role) 常にフルテーブルをエクスポートするアクセス権を持っているため、これらのユーザーに割り当てる必要はありません [!UICONTROL **フルテーブルエクスポート**] 権限。
+  >  を割り当てられているユーザー [製品管理者の役割](/help/admin/cja-access-control.md#product-admin-role) テーブル全体を書き出すためのアクセス権が常に付与されていて、これらのユーザーにを割り当てる必要がない [!UICONTROL **テーブル全体の書き出し**] 権限。
 
 
-### サポートされない機能
+### サポートされていない機能
 
 次の機能はサポートされておらず、フルテーブル書き出しから自動的に削除されます。
 
 * 割合（％）
 * 合計
 * 検索フィルター
-* 静的な行
+* 静的行
 * 日付の整列
 * 動的ディメンション
 
-  詳しくは、 [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
-* 最初の分類のDimensionは変換されて、エクスポートされたテーブルの行にセカンダリディメンションとして追加されます。その他の分類は、テーブルに含まれません。
-* ほとんどのデータセットでは並べ替えがサポートされていません。小さいデータセットではデータを並べ替えることができます
+  詳しくは、を参照してください [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+* 最初の分類のDimensionは変換され、エクスポートされたテーブルの行にセカンダリディメンションとして追加されます。その他の分類はテーブルに含まれません
+* 並べ替えは、ほとんどのデータセットでサポートされていません。小さなデータセットでは、データが並べ替えられる場合があります
 
 ### サポートされていないコンポーネント
 
-次のコンポーネントはサポートされていません。フルテーブルエクスポートの実行時に、Analysis Workspaceからコンポーネントを削除するよう求められます。
+以下のコンポーネントはサポートされておらず、テーブル全体に書き出す場合に、テーブルからコンポーネントを削除するようにAnalysis Workspaceから求められます。
 
-* 指標定義で基本関数または高度な関数を使用する計算指標 ( [基本関数](/help/components/calc-metrics/cm-functions.md) および [高度な関数](/help/components/calc-metrics/cm-adv-functions.md) （詳細情報）
-* 管理者によって制限されたコンポーネントのエクスポート ( *データビューのデータガバナンスポリシーに対するフィルタリング* のセクション [ラベルとポリシー](/help/data-views/data-governance.md) （詳細情報）
-* 次の条件のすべてに一致するディメンション：
-   * は、 [オブジェクトの配列](/help/use-cases/object-arrays.md)
-   * 次が含まれる [永続性有効](/help/data-views/component-settings/persistence.md)
-   * 次を使用していない： [結合ディメンション](/help/use-cases/data-views/binding-dimensions-metrics.md)
-* 1 レポートにつき 5 つ以上のディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
+* 指標定義で基本的な関数または高度な関数を使用する計算指標（を参照） [基本関数](/help/components/calc-metrics/cm-functions.md) および [高度な関数](/help/components/calc-metrics/cm-adv-functions.md) （詳細情報）
+* 管理者によって書き出しを制限されているコンポーネント（を参照） *データビューでデータガバナンスポリシーをフィルタリング* のセクション [ラベルとポリシー](/help/data-views/data-governance.md) （詳細情報）
+* 次のすべての条件を満たすディメンション。
+   * は、の一部であるフィールドから作成されました [オブジェクトの配列](/help/use-cases/object-arrays.md) （Adobe Analyticsの複数値の変数と同様）
+   * が [永続性が有効](/help/data-views/component-settings/persistence.md)
+   * を使用していない [バインディングディメンション](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* 1 つのレポートにつき 5 つを超えるディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
 * テーブルの列：
    * 日付範囲
    * ディメンション
@@ -188,41 +188,41 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次のこ
    * 日付範囲
    * フィルター
 
-### アトリビューション動作
+### 属性動作
 
-フルテーブルでの書き出しでは、デフォルト以外のアトリビューションモデル ( *デフォルト以外のアトリビューションモデルを使用* のセクション [列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)) をクリックします。
+完全テーブルの書き出しでは、（で説明しているように）デフォルト以外のアトリビューションモデルを使用する計算指標をサポートしています *デフォルト以外のアトリビューションモデルの使用* のセクション [列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)）に設定します。
 
-デフォルト以外のアトリビューションモデルがレポートで使用されている場合、レポートに単一のディメンションが使用されているか複数のディメンションが使用されているかに応じて、レポートで使用される配分モデルは無視または保持されます。
+デフォルト以外のアトリビューションモデルがレポートで使用されている場合、レポートで使用されている配分モデルは、レポートに単一のディメンションがあるかまたは複数のディメンションがあるかどうかに応じて、無視されるか保持されます。
 
-* **単一のディメンションに指標アトリビューションを含むレポートの場合：** [指標アトリビューション](/help/data-views/component-settings/attribution.md) 上書きする [配分モデル](/help/data-views/component-settings/persistence.md) は、通常、指標アトリビューションを使用する際におこなわれます。
+* **単一のディメンションに指標アトリビューションが含まれるレポートの場合：** [指標アトリビューション](/help/data-views/component-settings/attribution.md) をオーバーライドします [配分モデル](/help/data-views/component-settings/persistence.md) 通常、指標アトリビューションを使用する場合と同様です。
 
-  例えば、「ファーストタッチ」指標アトリビューションは、「最新」のディメンション配分を上書きします。
+  例えば、「ファーストタッチ」指標アトリビューションは「最新」のディメンション配分を上書きします。
 
-* **複数のディメンションに同時に指標アトリビューションを含むレポートの場合：** [指標アトリビューション](/help/data-views/component-settings/attribution.md) は、ディメンションに加えて適用されます。 [配分モデル](/help/data-views/component-settings/persistence.md).
+* **複数のディメンションに関する指標アトリビューションを同時に含むレポートの場合：** [指標アトリビューション](/help/data-views/component-settings/attribution.md) ディメンションに加えて適用されます [配分モデル](/help/data-views/component-settings/persistence.md).
 
-  例えば、「最新」のディメンション配分に加えて、「ファーストタッチ」指標アトリビューションが適用されます。 さらに、指標アトリビューションは、フリーフォームテーブルで通常おこなわれるように、各ディメンション項目に個別にではなく、単一のディメンション項目であるかのように、後で割り当てられたディメンション項目のペアに適用されます。
+  例えば、「最新」のディメンション配分に加えて、「ファーストタッチ」指標アトリビューションが適用されます。 さらに、指標アトリビューションは、通常フリーフォームテーブルで行われるように、各ディメンション項目に個別に適用されるのではなく、割り当て後のディメンション項目のペアに対して、単一のディメンション項目であるかのように適用されます。
 
   >[!NOTE]
   >
-  >複数次元レポートは、この記事で説明するように、データをクラウドにエクスポートする場合にのみサポートされます。
+  >多次元レポートは、この記事で説明しているように、データをクラウドに書き出す場合にのみサポートされます。
 
-## フルテーブルエクスポート (Customer Journey Analytics) とData Warehouse(Adobe Analytics) の比較
+## Data Warehouseに対する完全テーブル書き出し（Customer Journey Analytics）の比較（Adobe Analytics）
 
-以前にData Warehouseを使用してAdobe Analyticsデータをエクスポートした場合、次の表は、Customer Journey AnalyticsでのフルテーブルのエクスポートとAdobe AnalyticsでのData Warehouseを使用したデータのエクスポートの違いを理解するのに役立ちます。
+以前にData Warehouseを使用してAdobe Analytics データを書き出した場合、完全なテーブルをData Warehouseで書き出す場合と、データをCustomer Journey Analyticsで書き出す場合をAdobe Analyticsで書き出す場合の違いを理解するのに、次の表が役立ちます。
 
 
-| 機能 | フルテーブルエクスポートCustomer Journey Analytics | Adobe AnalyticsでのData Warehouse |
+| 機能 | Customer Journey Analyticsでのテーブル全体の書き出し | Adobe AnalyticsのData Warehouse |
 |---------|----------|---------|
 | カスタムレポートの作成 | ○ | ○ |
 | 計算指標 | ○ | × |
 | セグメント | ○ | 制限あり |
-| ディメンション | 5 の制限 | 制限なし |
-| 指標 | 5 の制限 | 制限なし |
-| レポート行 | 制限は、階層に応じて 300 万、3000 万、1 億 5000 万、3 億 | 制限なし |
+| ディメンション | 上限は 5 です | 制限なし |
+| 指標 | 上限は 5 です | 制限なし |
+| レポート行 | 階層に応じて、300 万、3,000 万、1 億 5,000 万、3 億の上限 | 制限なし |
 | レポート数 | 制限なし | 制限なし |
-| アドホック（1 回限り）配信 | ○ | ○ |
-| 定期的な配信のスケジュール設定 | ○ | ○ |
-| E メール配信 | × | ○ |
+| アドホック（1 回限りの）配信 | ○ | ○ |
+| 繰り返し配信をスケジュール | ○ | ○ |
+| メール配信 | × | ○ |
 | FTP/SFTP | × | レガシーサポート |
 | Azure | ○ | ○ |
 | Amazon S3 | ○ | ○ |

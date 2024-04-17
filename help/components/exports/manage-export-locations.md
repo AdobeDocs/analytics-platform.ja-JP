@@ -1,34 +1,34 @@
 ---
-description: Customer Journey Analyticsデータの送信先となるクラウドの書き出し場所を管理します
+description: Customer Journey Analyticsデータを送信できるクラウドの書き出し場所の管理
 keywords: Analysis Workspace
-title: クラウドの書き出し場所とアカウントを管理
+title: クラウドの書き出し場所とアカウントの管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 1%
 
 ---
 
-# クラウドの書き出し場所とアカウントを管理
+# クラウドの書き出し場所とアカウントの管理
 
 クラウドの書き出し場所を表示、編集、削除できます。
 
-新しいロケーションの作成方法について詳しくは、 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
+新しい場所の作成方法については、を参照してください。 [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md).
 
-## フィルターと検索場所
+## フィルターと検索の場所
 
-必要な情報を検索するには、場所のリストをフィルターするか、場所を検索します。
+必要な情報を検索するには、場所のリストをフィルタリングするか、場所を検索します。
 
-### 場所のリストをフィルター
+### 場所のリストのフィルタリング
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **場所**] タブをクリックします。
+1. 「」を選択します [!UICONTROL **場所**] タブ。
 
-1. を選択します。 **フィルター** アイコン。
+1. 「」を選択します **フィルター** アイコン。
 
    <!-- add screenshot -->
 
@@ -36,88 +36,104 @@ ht-degree: 2%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **場所のタイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **場所タイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **アカウント**] | 場所が関連付けられているアカウントの名前。 |
-   | [!UICONTROL **作成者**] | ロケーションを作成したユーザーの電子メールアドレス。 |
+   | [!UICONTROL **作成者**] | 場所を作成したユーザーのメールアドレス。 |
 
    {style="table-layout:auto"}
 
-### 場所の検索
+### 場所を検索
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **場所**] タブをクリックします。
+1. 「」を選択します [!UICONTROL **場所**] タブ。
 
-1. 検索フィールドに、検索する場所に関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーの場所を表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
 
-## 場所の編集
+1. 検索フィールドに、検索する場所に関連付けられている情報の入力を開始します。 テーブルで使用可能な任意の列からデータを検索できます。
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+## 場所を編集
 
-1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、編集する場所を選択します。
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-   ![「ロケーション」タブとロケーションのリストを示すエクスポートウィンドウ。](assets/locations-edit.png)
+1. 「」を選択します [!UICONTROL **場所**] タブ。
+
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーの場所を表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
+
+1. 編集する場所を選択します。
+
+   ![「場所」タブと場所のリストを表示するエクスポートウィンドウ。](assets/locations-edit.png)
 
 1. 「[!UICONTROL **編集**]」を選択します。
 
-1. 必要に応じて変更を加え、「 」を選択します。 [!UICONTROL **保存**].
+1. 必要な変更を加え、選択します。 [!UICONTROL **保存**].
 
-## 場所の削除
+## 場所を削除
 
-場所を削除すると、その場所を使用する書き出しもすべて削除されます。 削除時に確認ダイアログをチェックして、その場所にエクスポートが関連付けられていないことを確認します。
+場所を削除すると、その場所を使用する書き出しも削除されます。 削除時の確認ダイアログを確認して、書き出しが場所に関連付けられていないことを確認します。
 
 場所を削除するには：
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **場所**] 」タブをクリックし、削除する 1 つ以上の場所を選択します。
+1. 「」を選択します [!UICONTROL **場所**] タブ。
 
-   ![「ロケーション」タブとロケーションのリストを表示するエクスポートウィンドウ](assets/locations-edit.png)
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーの場所を表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
+
+1. 削除する場所を 1 つ以上選択します。
+
+   ![「場所」タブと場所のリストを表示する書き出しウィンドウ](assets/locations-edit.png)
 
 1. 「[!UICONTROL **削除**]」を選択します。
 
-   [ 場所を削除 ] ダイアログボックスが表示されます。
+   [ 場所を削除 ] ダイアログ ボックスが表示されます。
 
-1. [ 場所の削除 ] ダイアログボックスで、削除を確認する前に、場所が書き出しに関連付けられていないことを確認します。
+1. 場所を削除ダイアログボックスで、削除を確認する前に、その場所が書き出しに関連付けられていないことを確認します。
 
-   ![場所の削除確認ダイアログ](assets/delete-location-confirmation-dialog.png)
+   ![場所を削除の確認ダイアログ](assets/delete-location-confirmation-dialog.png)
 
-1. 選択 [!UICONTROL **削除**] 再び確認します。
+1. を選択 [!UICONTROL **削除**] もう一度確認します。
 
 ## アカウントの編集
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
+1. 「」を選択します [!UICONTROL **場所アカウント**] タブ。
 
-   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
+   ![場所アカウントタブを表示する書き出しウィンドウ](assets/account-add.png)
 
-1. 選択 [!UICONTROL **詳細を表示**] を編集するアカウントに設定します。
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーのアカウントの表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
 
-1. 必要に応じて変更を加え、「 」を選択します。 [!UICONTROL **保存**].
+1. を選択 [!UICONTROL **詳細を表示**] 編集するアカウント上で。
 
-## アカウントキーを表示
+1. 必要な変更を加え、選択します。 [!UICONTROL **保存**].
 
-アカウントを作成した後は、そのアカウントに関連付けられているすべてのアカウントキーを表示できます。 クラウドプロバイダーとのアカウント設定を完了していない場合は、この情報を表示する必要がある場合があります [アカウントを最初に設定したとき](/help/components/exports/cloud-export-accounts.md).
+## アカウントキーの表示
 
-エクスポートアカウントに関連付けられたキーを表示するには：
+アカウントを作成すると、そのアカウントに関連付けられているアカウントキーを表示できます。 クラウドプロバイダーでアカウントの設定を完了していない場合は、この情報を表示する必要がある可能性があります [アカウントの初回設定時](/help/components/exports/cloud-export-accounts.md).
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+エクスポートアカウントに関連付けられているキーを表示するには：
 
-1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
+1. 「」を選択します [!UICONTROL **場所アカウント**] タブ。
 
-1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントキー**].
+   ![場所アカウントタブを表示する書き出しウィンドウ](assets/account-add.png)
+
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーのアカウントの表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
+
+1. 編集するアカウント上の「。..」アイコンを選択し、次に選択します [!UICONTROL **アカウントキー**].
 
 ## アカウントの削除
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
-1. を選択します。 [!UICONTROL **場所のアカウント**] タブをクリックします。
+1. 「」を選択します [!UICONTROL **場所アカウント**] タブ。
 
-   ![「ロケーションアカウント」タブを表示する「エクスポート」ウィンドウ](assets/account-add.png)
+   ![場所アカウントタブを表示する書き出しウィンドウ](assets/account-add.png)
 
-1. 編集するアカウントの 3 ドットアイコンを選択し、「 」を選択します。 [!UICONTROL **アカウントを削除**].
+1. （条件付き）システム管理者は、次を有効にできます [!UICONTROL **すべてのユーザーのアカウントの表示**] 組織内のすべてのユーザーが作成した事業所を表示するオプション。
 
-1. 選択 [!UICONTROL **削除**] を再び確認ダイアログに表示します。
+1. 編集するアカウント上の「。..」アイコンを選択し、次に選択します [!UICONTROL **アカウントを削除**].
+
+1. を選択 [!UICONTROL **削除**] もう一度、確認ダイアログで確認します。
