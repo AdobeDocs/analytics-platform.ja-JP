@@ -5,17 +5,18 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 55%
 
 ---
 
 # 接続の概要
 
-接続を使用すると、Customer Journey Analytics 製品管理者は、イベント、ルックアップ、プロファイルデータセットなど、様々な AEP データソースとの接続を確立できます。これらの接続により、接続から派生データビューへのデータの統合を有効にすることができます。接続管理へのアクセスをコア管理グループに制限することをお勧めします。接続レベルの設定は、Customer Journey Analytics に取り込まれるデータ量の割り当てに関して契約上の影響を受けます。
-接続は CJA の基盤で、AEP ソースデータセットから作成されます。接続へのアクセスにより、接続マネージャーを表示する機能も提供されます。これにより、接続を構成する基になるデータセットを表示し、重要な編集や設定の選択を行うことができます。
+接続を使用すると、Customer Journey Analyticsの製品管理者は別のユーザーとの接続を確立できます [!DNL Adobe Experience Platform] データソース（イベント、ルックアップ、プロファイルデータセットなど）。 これらの接続により、接続から派生データビューへのデータの統合を有効にすることができます。接続は CJA の基盤であり、次の場所から作成されます [!DNL Experience Platform] ソースデータセット。 接続にアクセスすると、接続マネージャーを表示することもできます。ここでは、接続を構成する基になるデータセットを表示したり、重要な編集および設定選択を行うことができます。
+
+接続管理へのアクセスをコア管理グループに制限することをお勧めします。接続レベルでの設定には、Customer Journey Analytics対象データのボリューム割り当てに関する契約上の影響があります。
 
 次に、概要に関するビデオを示します。
 
