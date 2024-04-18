@@ -5,10 +5,10 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
+source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 19%
+source-wordcount: '1792'
+ht-degree: 16%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 19%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Adobe Analytics データを送信する Amazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、次のものが含まれていることを確認します `S3:PutObject` このバケットにファイルをアップロードするための権限。 </p><p>バケット名は、特定の命名規則を満たす必要があります。 例えば、3 ～ 63 文字の長さにする必要があり、小文字、数字、ドット （.）、ハイフン （–）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信するAmazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、次のものが含まれていることを確認します `S3:PutObject` このバケットにファイルをアップロードするための権限。 </p><p>バケット名は、特定の命名規則を満たす必要があります。 例えば、3 ～ 63 文字の長さにする必要があり、小文字、数字、ドット （.）、ハイフン （–）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ ht-degree: 19%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Adobe Analytics データを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
@@ -171,7 +171,7 @@ ht-degree: 19%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **コンテナ**] | Adobe Analytics データの送信先として指定したアカウント内のコンテナ。以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
+   | [!UICONTROL **コンテナ**] | Customer Journey Analyticsデータの送信先として指定したアカウント内のコンテナ。 以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
    | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID に、コンテナ（フォルダー）にアクセスするための `Storage Blob Data Contributor` の役割が付与されていることを確認します。</p> <p>詳しくは、[Azure の組み込みの役割](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles)を参照してください。</p> |
    | [!UICONTROL **アカウント**] | Azure ストレージアカウント。 |
 
