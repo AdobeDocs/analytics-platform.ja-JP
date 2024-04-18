@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
+source-git-commit: abaa747934ff2cdd0a3dab867165afb46fbc71db
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 48%
+source-wordcount: '945'
+ht-degree: 44%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 48%
 | **ユーザーからアカウントへの B2B スキーマ変換** | データセットを変換すると、Customer Journey Analytics B2B レポートシナリオにおけるユーザーベースのルックアップをより適切にサポートできます。この機能は、次のクラスに基づく B2B スキーマのデータセットで使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | 2024年5月1日（PT） |
 | **Experience Edge ボット検出** | [ボット検出](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja)を使用すると、Web SDK、Mobile SDK、Server API で生成されたイベントが、既知のスパイダーやボットで生成されたものとして識別できます。 | | 2024年5月1日（PT） |
 | **派生フィールド：Next 関数または Previous 関数** | これらの新機能により、フィールドを入力として取得し、n-previous 値または n-next 値を識別することで、ユーザージャーニーをより詳細に把握できるようになります。 この機能は、の他の機能と組み合わせることもできます [!UICONTROL 派生フィールド]（例：） [!UICONTROL 連結]新しいディメンションを作成します。 |  | 2024年5月1日（PT） |
+| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analyticsから公開されたオーディエンスを、Adobe Experience Platformの新しい「オーディエンス」セクションで利用できるようになりました。<p>以前は、Customer Journey Analyticsから公開されたオーディエンスは、「セグメント」セクションのExperience Platformで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスがExperience Platformに表示されるまでの 1 時間の遅延がなくなり、公開後も数秒で利用できるようになりました。</li><li>オーディエンスは、「接触チャネル」列を使用してExperience Platformで並べ替えることができます。この列には、オーディエンスが最初に公開されたアプリケーションが表示されます。</li><li>Experience Platformの「フィルター」オプションと「並べ替え」オプションを使用すると、関連するオーディエンスをより迅速に見つけることができます。</li></ul> |  | 2024年5月 |
 
 {style="table-layout:auto"}
 
