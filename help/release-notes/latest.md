@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9c89f05c85ce7232bece6de08efbab222d51a644
+source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 48%
@@ -27,8 +27,8 @@ ht-degree: 48%
 | **管理者は組織内のすべての場所を管理できます** | の新しいオプション [場所ページ](https://experienceleague.adobe.com/en/docs/analytics/components/locations/locations-manager) を使用すると、管理者は組織内のすべての場所を表示および管理できます。 以前は、管理者は作成した場所のみを表示および管理できました。 |  | 2024年4月17日（PT） |
 | **Adobe Product Analytics：機能マトリックス** | お客様のコア、機能、1 回限りの機能、および疑問の残る機能を理解することにより、投資に関する意思決定を促進します。 [!UICONTROL 機能マトリックス] は、アクティブユーザーの % に対する使用頻度別にイベントを測定し、使用中央値と比較します。 | 2024年4月17日（PT） | 2024年4月30日（PT） |
 | **Adobe Product Analytics：ファネルのインサイトの強化** | が含まれる [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 表示に関するインサイトが強化され、カテゴリ、差分および説明が追加されて、グラフとテーブルがよりわかりやすくなりました。 | 2024年4月17日（PT） | 2024年4月26日（PT） |
-| **Adobe Product Analytics：リテンション・ビューの強化** | いくつかの機能が「」に追加されました [保持](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates) レート表示により、より深くカスタマイズ可能な保持インサイトを引き出すことができます。<ul><li>開始および再来訪イベントをリンク解除</li><li>単一ビューでの複数のリターンイベントの比較</li><li>各（境界付き）および括弧で囲まれた設定で、on または after （境界付きなし）で適用される保持モデルをカスタマイズします</li><li>グラフ内の個々のコホート行の表示/非表示</li></ul> | 2024年4月10日（PT） | 2024年4月26日（PT） |
-| **Adobe Product Analytics：1 つのファネルステップ内のイベントを比較** | で、1 つのファネルステップ内のイベントを比較できるようになりました [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 表示。 ジャーニーにステップオプションがある場合や、A/B 実験が実行されるステップがある場合に特に便利です。 | 2024年4月12日（PT） | 2024年4月26日（PT） |
+| **Adobe Product Analytics：リテンション・ビューの強化** | いくつかの機能が「」に追加されました [保持](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates) レート表示により、より深くカスタマイズ可能な保持インサイトを引き出すことができます。<ul><li>開始および再来訪イベントをリンク解除</li><li>単一ビューでの複数のリターンイベントの比較</li><li>各（境界付き）および括弧で囲まれた設定で、on または after （境界付きなし）で適用される保持モデルをカスタマイズします</li><li>グラフ内の個々のコホート行の表示/非表示</li></ul> | 2024年4月24日（PT） | 2024年5月8日（PT） |
+| **Adobe Product Analytics：1 つのファネルステップ内のイベントを比較** | で、1 つのファネルステップ内のイベントを比較できるようになりました [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 表示。 ジャーニーにステップオプションがある場合や、A/B 実験が実行されるステップがある場合に特に便利です。 | 2024年4月23日（PT） | 2024年5月3日（PT） |
 | **ユーザーからアカウントへの B2B スキーマ変換** | データセットを変換すると、Customer Journey Analytics B2B レポートシナリオにおけるユーザーベースのルックアップをより適切にサポートできます。この機能は、次のクラスに基づく B2B スキーマのデータセットで使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | 2024年5月1日（PT） |
 | **Experience Edge ボット検出** | [ボット検出](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja)を使用すると、Web SDK、Mobile SDK、Server API で生成されたイベントが、既知のスパイダーやボットで生成されたものとして識別できます。 | | 2024年5月1日（PT） |
 | **派生フィールド：Next 関数または Previous 関数** | これらの新機能により、フィールドを入力として取得し、n-previous 値または n-next 値を識別することで、ユーザージャーニーをより詳細に把握できるようになります。 この機能は、の他の機能と組み合わせることもできます [!UICONTROL 派生フィールド]（例：） [!UICONTROL 連結]新しいディメンションを作成します。 |  | 2024年5月1日（PT） |
