@@ -6,16 +6,17 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: da71e96749093821b49806c5a1bfd2f82ca85dd4
+exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
+source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '788'
 ht-degree: 4%
 
 ---
 
 # 手順 4:Customer Journey Analyticsへの移行時の XDM スキーマへのデータのマッピング
 
-+++このページの情報は、大規模な移行プロセスの一部です。 このセクションを展開すると、移行プロセス内でこの情報が収まる場所を確認できます。 </br></br>このページの情報を続行する前に、以前の移行手順をすべて完了する必要があります。
++++このセクションを展開すると、このページの情報が大規模な移行プロセスのどこに適合するかを確認できます。 以前の移行手順がすべて完了していることを確認します。
 
 この節を続行する前に、まず、以前のすべての移行タスクを完了していることを確認してください。
 
@@ -26,7 +27,7 @@ ht-degree: 4%
 | **手順 1: [移行の基本を学ぶ](/help/getting-started/cja-migration/cja-migration-getstarted.md)** | Adobe Analyticsへの移行のメリットと基本的な移行プロセスについて説明します。 |
 | **手順 2: [移行方法の選択](/help/getting-started/cja-migration/cja-migration-method.md)** | Customer Journey Analyticsへの移行には様々な方法があります。 組織の現在のAdobe Analytics環境と長期目標に応じて、組織に最適な方法を選択します。 |
 | **手順 3: [Adobe Experience Platformへのデータの送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)** | Adobe Experience Platformにデータを送信するプロセスは、手順 1 で選択した移行方法によって異なります。 |
-| <span class="preview">**手順 4: [XDM スキーマへのデータマッピングを計画します](/help/getting-started/cja-migration/cja-migration-xdm.md)**</span> | <span class="preview">[XDM スキーマ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) は、Adobe Experience Platformで使用され、一貫した再利用可能な方法でデータの構造を記述します。 システムをまたいで一貫したデータを定義することで、意味を保有しやすくなり、データから価値を得ることができます。<p>ほとんどの移行方法では、新しい XDM スキーマを作成するか、データストリームマッピングを使用して既存のAdobe Analytics スキーマを XDM にマッピングする必要があります。</p></span> |
+| <span class="preview">**手順 4: [XDM スキーマへのデータのマッピング](/help/getting-started/cja-migration/cja-migration-xdm.md)**</span> | <span class="preview">[XDM スキーマ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) は、Adobe Experience Platformで使用され、一貫した再利用可能な方法でデータの構造を記述します。 システムをまたいで一貫したデータを定義することで、意味を保有しやすくなり、データから価値を得ることができます。<p>ほとんどの移行方法では、新しい XDM スキーマを作成するか、データストリームマッピングを使用して既存のAdobe Analytics スキーマを XDM にマッピングする必要があります。</p></span> |
 | **手順 5: [履歴データを保持](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | ほとんどの企業は、Adobe Analyticsの履歴データを一定期間保持する必要があります。 そのための様々なオプションが用意されています。 |
 | **手順 6: [ユーザーのオンボーディングの計画](/help/getting-started/cja-migration/cja-migration-onboarding.md)** | Customer Journey AnalyticsにおけるAnalysis Workspaceの主な違いを理解できるように、ユーザーに十分な時間（3 ～ 6 か月）を与える必要があります。 |
 | **手順 7: [レポート API の使用状況を移植](/help/getting-started/cja-migration/cja-migration-api.md)** | Customer Journey Analyticsレポート API は同じ形式ですが、異なるエンドポイントを使用しています。 レポート API の使用状況をAdobe Analytics レポート API からCustomer Journey Analyticsレポート API に移植します。 |
@@ -45,7 +46,7 @@ ht-degree: 4%
 | **Web SDK の新しい実装**<p>基本的な手順は次のとおりです。</p><ol><li>組織の XDM スキーマの作成</li><li>Web SDK の実装</li><li>Platform にデータを送信</li></ol> | × | 既にマッピングしているので、マッピングは必要ありません [新しい XDM スキーマの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) 新しい実装の一環として。 |
 | **Web SDK を使用するようにAdobe Analytics実装を移行する**<p>基本的な手順は次のとおりです。</p><ol><li>既存のAdobe Analytics実装を Web SDK に移行し、すべてがそこで機能していることを検証します。</li><li>時間の経過に応じて、組織の XDM スキーマを作成します。</li><li>データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。</li><li>Platform にデータを送信</li></ol> | ○ | データチームと協力して、Customer Journey Analyticsに対する組織の理想的なスキーマデザインを特定し、eVar と Prop を XDM にマッピングする方法を決定します。</br>[データ準備を使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home) |
 | **既存のAdobe Analytics Web SDK 実装を設定し、データをCustomer Journey Analyticsに送信します**<p>基本的な手順は次のとおりです。</p><ol><li>Customer Journey Analyticsへのデータ送信を開始します。<!-- What's involved here? Just point it at CJA? --></li><li>（オプション）時間に応じて、組織の XDM スキーマを作成します。</li><li>データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。</li></ol> | ○ | データチームと協力して、Customer Journey Analyticsに対する組織の理想的なスキーマデザインを特定し、eVar と Prop を XDM にマッピングする方法を決定します。</br>[データ準備を使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home) |
-| **Analytics ソースコネクタ**</br> Adobe Analyticsの実装がAppMeasurementまたは Analytics 拡張機能の場合、Customer Journey Analyticsでデータビューへのデータ送信を開始できます。<p>これは、データをCustomer Journey Analyticsに取得する最も簡単な方法ですが、長期的には最も実行可能でない方法です。</p> | × | Analytics ソースコネクタは XDM スキーマではなく同じAdobe Analytics スキーマを使用するので、マッピングは必要ありません。 |
+| **Analytics ソースコネクタ**</br> Adobe Analyticsの実装がAppMeasurementまたは Analytics 拡張機能の場合、Customer Journey Analyticsでデータビューへのデータ送信を開始できます。<p>これは、データをCustomer Journey Analyticsに取得する最も簡単な方法ですが、長期的には最も実行可能でない方法です。</p> | × | Analytics ソースコネクタは XDM スキーマではなく既存のAdobe Analytics スキーマを使用するので、マッピングは必要ありません。 |
 
 {style="table-layout:auto"}
 
