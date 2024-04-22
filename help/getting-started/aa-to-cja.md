@@ -5,22 +5,20 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1443'
-ht-degree: 100%
+source-git-commit: 01188253d4a8d794e9cd9bbea9c0fef02180c940
+workflow-type: tm+mt
+source-wordcount: '1085'
+ht-degree: 91%
 
 ---
 
 # Adobe Analytics からの進化
 
-Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。この記事は管理者を対象として書かれています。
-
-## データの準備
+## 手順 3：既存データの準備
 
 Customer Journey Analytics にシームレスに移行するために Adobe Analytics データを準備することは、データの整合性とレポートの一貫性を保つうえできわめて重要です。
 
-### 1. ID の収集 {#identities}
+### ID の収集
 
 カスタマージャーニーを理解するうえで最も重要な要素は、各ステップで顧客が誰であるかを把握することです。Customer Journey Analytics の場合、すべてのチャネルとそれに対応するデータに存在する識別子を持つことで、Customer Journey Analytics 内で複数のソースを結び付ける（ステッチする）ことができます。
 ID の例としては、顧客 ID、アカウント ID、メール ID などがあります。ID（場合によっては複数の ID）に関係なく、ID ごとに次の点を必ず考慮してください。
@@ -30,11 +28,11 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
 
-Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために、クロスチャネル分析（「スティッチング」とも呼ばれます）を使用できます。[詳細情報](../stitching/overview.md)。
+Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。この場合、 [クロスチャネル分析（「ステッチ」とも呼ばれます）](/help/stitching/overview.md) は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために使用できます。
 
-### 2. 変数の整合性を確保 {#variables}
+### 変数の整合
 
-Adobe Analytics のデータを Customer Journey Analytics のデータに変換する最も簡単な方法は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
+Adobe Analytics データをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用したExperience Platform [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
 
 グローバルレポートスイートすべてを完全に実装することが現実的ではない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込むには、次の 2 つのオプションがあります。
 
@@ -46,7 +44,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 次に、[レポートスイートと様々なスキーマの組み合わせ](/help/use-cases/aa-data/combine-report-suites.md)に関するユースケースを示します。
 
-### 3.マーケティングチャネルの（再）設定 {#marketing-channels}
+### マーケティングチャネルの（再）設定
 
 従来の Adobe Analytics マーケティングチャネル設定は、Customer Journey Analytics では同じようには行われません。これは次の 2 つの理由があります。
 
@@ -58,43 +56,9 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 また、Customer Journey Analytics データビューの一部として[派生フィールド](../data-views/derived-fields/derived-fields.md)を導入したことにより、[マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates)を使用した非破壊的かつ遡及的な方法でマーケティングチャネルもサポートされます。
 
-### 4. Analytics ソースコネクタと Experience Platform SDK のどちらを使用するかの決定 {#connector-vs-sdk}
+## Customer Journey Analyticsへの移行時に重要な違いに備える
 
-Adobe Analytics のお客様は、Analytics ソースコネクタを使用して、Adobe Experience Platform および Customer Journey Analytics でレポートスイートを簡単に活用できます。Analytics ソースコネクタの使用については、[Adobe Analytics からのデータの取り込みと Customer Journey Analytics での使用](../data-ingestion/analytics.md)方法に関するクイックスタートガイドを参照してください。詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)も参照してください。
-
-アドビでは、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=ja) または [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ja) を使用してデータ収集を実装する機能も提供しています。これらの方法により、データ収集の可能性が大幅に広がります。フィールド数の制限や、Analytics のようにデータ要素を prop、eVar、イベントにマッピングする必要がなくなりました。Customer Journey Analytics [データビュー](/help/data-views/data-views.md)を使用すると、様々なタイプの無制限のスキーマ要素を使用し、それらを複数の方法で表すことができます。Adobe Experience Platform に直接送信すると、Adobe Analytics を介したデータ処理の時間が不要になるので、データの可用性が向上します。
-
-**Experience Platform SDK を使用する場合の利点：**
-
-* 必要なフィールドを何でも定義できる柔軟性がスキーマにあります
-* Adobe Analytics の用語（prop、eVar、イベントなど）に依存しません
-* 文字制限に関する問題がありません（prop の場合は 100 文字）
-* Adobe Experience Platform でのデータの可用性が向上し、[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)が強化されます
-* [ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja) で訪問者識別の精度を高めます
-
-**Experience Platform SDK を使用する場合の欠点**
-
-次の Adobe Analytics の機能またはコンポーネントはサポートされていません。
-
-* ボットフィルタリング
-* ストリーミングメディア測定
-* ライブストリームまたはライブストリームトリガー
-
-### 5. Adobe Analytics から Customer Journey Analytics へのプロジェクトとコンポーネントのマッピング
-
-Adobe Analytics 管理者は、Adobe Analytics プロジェクトとその関連コンポーネントを Customer Journey Analytics に移行できます。
-
-移行プロセスには、次が含まれます。
-
-* Customer Journey Analytics で Adobe Analytics プロジェクトを再作成する。
-
-* Adobe Analytics レポートスイートのディメンションと指標を、Customer Journey Analytics データビューのディメンションと指標へマッピングする。
-
-移行を開始する前に、まず[コンポーネントとプロジェクトを Adobe Analytics から Customer Journey Analytics に移行する準備をします](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)。
-
-必要な準備をすべて整えたら、[コンポーネントとプロジェクトを Adobe Analytics から Customer Journey Analytics に移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html?lang=ja)できます。
-
-## 重要な違いに対する準備
+Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。この記事は管理者を対象として書かれています。
 
 ### レポート時の処理を使いこなす {#report-time}
 
@@ -132,6 +96,6 @@ Adobe Analytics セグメント（Customer Journey Analytics では[!UICONTROL �
 
 * ユーザーに対してデータディクショナリを提供するか、SDR を拡張してスキーマ要素の Experience Platform フィールド名を含めることを検討してください。
 
-## 次の手順
+### 次の手順
 
 Customer Journey Analytics に移行した後、データの相違に気付いた場合は、元の Adobe Analytics データと、現在 Customer Journey Analytics にある Adobe Analytics データを比較できます。[詳細情報](/help/troubleshooting/compare.md)
