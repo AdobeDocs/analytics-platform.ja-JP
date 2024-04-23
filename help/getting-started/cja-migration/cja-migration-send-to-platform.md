@@ -6,9 +6,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 21d77f06595993172460b724dc7991cb9a5a02a8
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '795'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 3%
 
 | 移行方法 | Platform へのデータ送信プロセス |
 |---------|----------|
-| Web SDK の新しい実装 | [Adobe Experience Platform Web SDK を使用したデータの取り込み](/help/data-ingestion/aepwebsdk.md) |
-| Web SDK を使用するようにAdobe Analytics実装を移行する | Analytics タグ拡張機能を使用している場合： [Adobe Analyticsのタグ拡張機能から Web SDK のタグ拡張機能への移行](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)<p>または</p><p>AppMeasurementを使用している場合： [AppMeasurementから Web SDK への移行](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
-| 既存のAdobe Analytics Web SDK 実装を設定し、データをCustomer Journey Analyticsに送信します | [データストリームの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) 。対象： [Adobe Experience Platform Web SDK を使用したデータの取り込み](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) |
+| Web SDK の新しい実装 | これは Web SDK の新しい実装なので、に記載されているすべての手順に従う必要があります [Adobe Experience Platform Web SDK を使用したデータの取り込み](/help/data-ingestion/aepwebsdk.md). |
+| Web SDK を使用するようにAdobe Analytics実装を移行する | Adobe Analytics Web SDK に移行する手順は、現在の実装が Analytics 拡張機能かAppMeasurementかによって異なります。 <p>Analytics タグ拡張機能を使用している場合： [Adobe Analyticsのタグ拡張機能から Web SDK のタグ拡張機能への移行](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)</p><p>または</p><p>AppMeasurementを使用している場合： [AppMeasurementから Web SDK への移行](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
+| 既存のAdobe Analytics Web SDK 実装を設定し、データをCustomer Journey Analyticsに送信します | Adobe Analyticsの実装は既に Web SDK を使用しているので、次の操作のみ必要です [データストリームの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream). その他のセクションは無視できます [Adobe Experience Platform Web SDK を使用したデータの取り込み](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk). |
 | Analytics ソースコネクタ | [従来の Adobe Analytics からのデータの取り込みと使用](/help/data-ingestion/analytics.md) |
 
 ## 次に、XDM スキーマへのデータのマッピング

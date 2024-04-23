@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
-source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '800'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 +++
 
-次の表は、データを XDM スキーマにマッピングする必要がある実装方法を示しています。
+すべての移行方法で、Adobe Analytics データを XDM スキーマにマッピングする必要があるわけではありません。 次の表に、XDM スキーママッピングが必要な実装方法を示します。
 
 
 | 移行方法 | XDM マッピングが必要ですか？ | 詳細情報 |
