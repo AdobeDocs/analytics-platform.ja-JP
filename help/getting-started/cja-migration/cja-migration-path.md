@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 6d4fdb464775967074547f8401de679f181d29d7
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1965'
 ht-degree: 2%
 
 ---
@@ -137,16 +137,6 @@ Experience PlatformWeb SDK を使用してAdobe Analyticsを実装している�
 
 +++
 
-## 次に、XDM スキーマへのデータのマッピング
+## 次に、Adobe Experience Platformにデータを送信します
 
-上の表に記載されているリンクをたどってExperience Platformにデータを送信した後、次の操作が必要になる場合があります [xdm スキーマへのデータのマッピング](/help/getting-started/cja-migration/cja-migration-xdm.md)選択した実装方法によって異なります。
-
-次の実装方法では、データを XDM スキーマにマッピングする必要があります。
-
-* Adobe Analyticsのタグ拡張機能から Web SDK のタグ拡張機能への移行
-
-* 既存のAdobe Analytics Web SDK 実装を設定し、データをCustomer Journey Analyticsに送信します
-
-または、Experience PlatformWeb SDK の新しい実装を行うことを選択した場合、既にマッピングは必要ありません [新しい XDM スキーマの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) 新しい実装の一環として。
-
-移行に Analytics ソースコネクタを使用することを選択した場合は、マッピングは必要ありません。これは、Analytics ソースコネクタが XDM スキーマではなく既存のAdobe Analytics スキーマを使用するからです。
+上記の情報を使用して移行パスを選択したら、次の方法を学習します [Adobe Experience Platformへのデータの送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) 選択した移行パスによって異なります。

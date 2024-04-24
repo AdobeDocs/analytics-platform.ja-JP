@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
+source-git-commit: 366fc232fad278f6a6448d68cda6d0e1f05718f3
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 77%
+source-wordcount: '1091'
+ht-degree: 78%
 
 ---
 
@@ -46,12 +46,7 @@ ht-degree: 77%
       + [基本を学ぶ](/help/getting-started/cja-migration/cja-migration-getstarted.md)
       + [移行パスを選択](/help/getting-started/cja-migration/cja-migration-path.md)
       + [Platform にデータを送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
-      + [XDM へのデータのマッピング](/help/getting-started/cja-migration/cja-migration-xdm.md)
       + [履歴データを保持](/help/getting-started/cja-migration/cja-migration-historical-data.md)
-      + [ユーザーのオンボーディングの計画](/help/getting-started/cja-migration/cja-migration-onboarding.md)
-      + [ポート API 使用量](/help/getting-started/cja-migration/cja-migration-api.md)
-      + [データフィードとData Warehouseの置き換え](/help/getting-started/cja-migration/cja-migration-export-options.md)
-      + [プロジェクトとコンポーネントを移行する](/help/getting-started/cja-migration/cja-migration-projects.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
