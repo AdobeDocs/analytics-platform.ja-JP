@@ -4,12 +4,10 @@ description: Adobe AnalyticsからCustomer Journey Analyticsへの移行の計�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: 21d77f06595993172460b724dc7991cb9a5a02a8
+source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '634'
 ht-degree: 10%
 
 ---
@@ -51,25 +49,20 @@ Adobe AnalyticsからCustomer Journey Analyticsへの移行プロセスを開始
 ## 移行プロセスについて
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-このページは、次の表に示すように、移行のステップ 1 を表します。 Adobe AnalyticsからCustomer Journey Analyticsに移行するには、次の表のすべての手順を実行します。
+このページの情報では、次の表で強調表示されている、移行の手順 1 について説明します。 Adobe AnalyticsからCustomer Journey Analyticsに移行するには、次の表のすべての手順を実行します。
 
-| タスク | 詳細 |
+| 移行タスク | 詳細 |
 |---------|----------|
-| **手順 1: [移行の基本を学ぶ](/help/getting-started/cja-migration/cja-migration-getstarted.md)** | Adobe Analyticsへの移行のメリットと基本的な移行プロセスについて説明します。 |
-| **手順 2: [移行方法の選択](/help/getting-started/cja-migration/cja-migration-method.md)** | Customer Journey Analyticsへの移行には様々な方法があります。 組織の現在のAdobe Analytics環境と長期目標を考慮して、組織に最適な方法を選択します。 |
-| **手順 3: [Adobe Experience Platformへのデータの送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)** | Adobe Experience Platformにデータを送信するプロセスは、手順 1 で選択した移行方法によって異なります。 |
-| **手順 4: [XDM スキーマへのデータのマッピング](/help/getting-started/cja-migration/cja-migration-xdm.md)** | [XDM スキーマ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) は、Adobe Experience Platformで使用され、一貫した再利用可能な方法でデータの構造を記述します。 システムをまたいで一貫したデータを定義することで、意味を保有しやすくなり、データから価値を得ることができます。<p>ほとんどの移行方法では、新しい XDM スキーマを作成するか、データストリームマッピングを使用して既存のAdobe Analytics スキーマを XDM にマッピングする必要があります。</p> |
-| **手順 5: [履歴データを保持](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | ほとんどの企業は、Adobe Analyticsの履歴データを一定期間保持する必要があります。 そのための様々なオプションが用意されています。 |
-| **手順 6: [ユーザーのオンボーディングの計画](/help/getting-started/cja-migration/cja-migration-onboarding.md)** | Customer Journey AnalyticsにおけるAnalysis Workspaceの主な違いを理解できるように、ユーザーに十分な時間（3 ～ 6 か月）を与える必要があります。 |
-| **手順 7: [レポート API の使用状況を移植](/help/getting-started/cja-migration/cja-migration-api.md)** | Customer Journey Analyticsレポート API は同じ形式ですが、異なるエンドポイントを使用しています。 レポート API の使用状況をAdobe Analytics レポート API からCustomer Journey Analyticsレポート API に移植します。 |
-| **手順 8: [データフィードとData Warehouseの置き換え](/help/getting-started/cja-migration/cja-migration-export-options.md)** | Adobe Analyticsで使用していたデータフィードとData Warehouse機能を置き換えるために、Customer Journey Analyticsで使用可能な書き出しオプションの使用方法を決定します。 |
-| **手順 9: [プロジェクトとコンポーネントを移行する](/help/getting-started/cja-migration/cja-migration-projects.md)** | Adobe Analyticsのコンポーネント移行領域を使用すると、プロジェクトとその関連コンポーネントをAdobe AnalyticsからCustomer Journey Analyticsに移行できます。 |
-| **手順 10: [移行後のタスクの実行](/help/getting-started/cja-getting-started.md)** | 移行が完了したら、様々なタスクを実行する必要があります。これには、他のデータのExperience Platformへの取り込み、Platform データセットとCustomer Journey Analytics間の接続の作成、データビューの作成、Analysis Workspaceでのクロスチャネルデータのレポート方法の学習が含まれます。 |
+| <span class="preview">**手順 1：移行の概要**</span> | <span class="preview">Adobe Analyticsへの移行のメリットと基本的な移行プロセスについて説明します。</span> |
+| **手順 2: [移行パスを選択](/help/getting-started/cja-migration/cja-migration-path.md)** | Customer Journey Analyticsへの移行には様々な方法があります。 組織の現在のAdobe Analytics環境と長期目標に応じて、組織に最適な方法を選択します。 |
+| **手順 3: [Adobe Experience Platformへのデータの送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)** | Adobe Experience Platformにデータを送信するプロセスは、手順 2 で選択した移行パスによって異なります。 |
+| **手順 4: [履歴データを保持](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | ほとんどの企業は、Adobe Analyticsの履歴データを一定期間保持する必要があります。 そのための様々なオプションが用意されています。 |
+| **手順 5: [追加の実装タスクの実行](/help/getting-started/cja-getting-started.md)** | Customer Journey Analyticsプロセスのこの時点では、移行に使用する準備が整う前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analyticsからの移行と、新しいCustomer Journey Analytics実装に当てはまります。</p><p>次のようなタスクがあります。</p><ul><li>他のデータのExperience Platform化</li><li>Platform データセットとCustomer Journey Analytics間の接続の作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとData Warehouseのアカウント</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーのオンボーディングの計画</li></ul> <p>詳しくは、を参照してください [Customer Journey Analyticsを開始する](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 
-## まず、移行方法を選択します
+## まず、移行パスを選択します。
 
-Customer Journey Analyticsへの移行には様々な方法があります。 [組織に最適な方法を選択します](/help/getting-started/cja-migration/cja-migration-method.md).
+Customer Journey Analyticsへの移行には様々な方法があります。 [組織に最適な方法を選択します](/help/getting-started/cja-migration/cja-migration-path.md).
 
-どの移行方法を選択するかは、組織の現在のAdobe Analytics環境と長期目標によって異なります。
+どの移行パスを選択するかは、組織の現在のAdobe Analytics環境と長期目標によって異なります。

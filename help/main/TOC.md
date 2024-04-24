@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 9450ecdce53088b008f3a5a5413d3e824fbd9b13
+source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 77%
@@ -44,7 +44,7 @@ ht-degree: 77%
    + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
    + Customer Journey Analyticsに移行 {#migrate-to-cja}
       + [基本を学ぶ](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-      + [移行方法を選択](/help/getting-started/cja-migration/cja-migration-method.md)
+      + [移行パスを選択](/help/getting-started/cja-migration/cja-migration-path.md)
       + [Platform にデータを送信](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
       + [XDM へのデータのマッピング](/help/getting-started/cja-migration/cja-migration-xdm.md)
       + [履歴データを保持](/help/getting-started/cja-migration/cja-migration-historical-data.md)
