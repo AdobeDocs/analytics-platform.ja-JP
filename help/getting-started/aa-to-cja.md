@@ -5,16 +5,16 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 01188253d4a8d794e9cd9bbea9c0fef02180c940
+source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1083'
 ht-degree: 91%
 
 ---
 
 # Adobe Analytics からの進化
 
-## 手順 3：既存データの準備
+## 既存データの準備
 
 Customer Journey Analytics にシームレスに移行するために Adobe Analytics データを準備することは、データの整合性とレポートの一貫性を保つうえできわめて重要です。
 
