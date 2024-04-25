@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: 7d17ef31053bbf0d480bfa923fc961aeba4fc15e
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 2%
@@ -109,13 +109,21 @@ Adobe Analyticsの実装の種類ごとに、すべての移行パスを使用�
 
 +++
 
-+++Adobe Analyticsの Web SDK への移行 |利点 |短所 | |----------|---------| | <ul><li>既存のAdobe Analyticsのレポートに影響を与えることなく、Web SDK に移行できます。</li><li>Analytics 実装で既に設定されているルールとデータ要素を保持します（Adobe Analytics拡張機能を使用する組織用）。</li><li>組織の XDM スキーマを後で作成する柔軟性を提供：必要なフィールドと、関連するフィールドのみを定義する柔軟なスキーマ。</br>Adobe Experience PlatformのAdobe Analytics エクスペリエンスイベントフィールドグループは必要ありません。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>Adobe Analyticsの用語（prop、eVar、イベントなど）に依存しません</li><li>文字制限に関する問題がありません（prop の場合は 100 文字）</li><li>Adobe Experience Platformは強力に設計されているので、レポートとデータの可用性が高いパフォーマンスを発揮します。 [リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)</li><li>将来の拡張にも対応（最新の機能をすべて搭載）</li><li>Adobe Experience Cloud データ収集用のタグを他のExperience Cloud製品（AJO、RTCDP など）間で統合します</li><li>[ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja) で訪問者識別の精度を高めます</li></ul> | <ul><li>は、データストリームマッピングを使用して、将来のある時点で XDM スキーマに準拠する必要があります。</li><li>多少の技術的負債が生じる。 例えば、従来のAppMeasurementや Analytics 拡張機能コードは残すことができます。 </li></ul> |
++++Adobe Analyticsの Web SDK への移行
+
+| メリット | デメリット |
+|----------|---------|
+| <ul><li>既存のAdobe Analyticsのレポートに影響を与えることなく、Web SDK に移行できます。</li><li>Analytics 実装で既に設定されているルールとデータ要素を保持します（Adobe Analytics拡張機能を使用する組織用）。</li><li>組織の XDM スキーマを後で作成する柔軟性を提供：必要なフィールドと、関連するフィールドのみを定義する柔軟なスキーマ。</br>Adobe Experience PlatformのAdobe Analytics エクスペリエンスイベントフィールドグループは必要ありません。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>Adobe Analyticsの用語（prop、eVar、イベントなど）に依存しません</li><li>文字制限に関する問題がありません（prop の場合は 100 文字）</li><li>Adobe Experience Platformは強力に設計されているので、レポートとデータの可用性が高いパフォーマンスを発揮します。 [リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)</li><li>将来の拡張にも対応（最新の機能をすべて搭載）</li><li>Adobe Experience Cloud データ収集用のタグを他のExperience Cloud製品（AJO、RTCDP など）間で統合します</li><li>[ファーストパーティのデバイス ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ja) で訪問者識別の精度を高めます</li></ul> | <ul><li>は、データストリームマッピングを使用して、将来のある時点で XDM スキーマに準拠する必要があります。</li><li>多少の技術的負債が生じる。 例えば、従来のAppMeasurementや Analytics 拡張機能コードは残すことができます。 </li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++Analytics ソースコネクタの使用 |利点 |短所 | |----------|---------| | <ul><li>最も時間がかかり、要求の厳しい移行パス。 <p>最小限の投資でデータを迅速にCustomer Journey Analyticsに移行</p></li></ul> | <ul><li>データは、Edge Networkに送信されず、他のAdobe Experience Platform アプリケーションと共有できません。Customer Journey Analyticsのみに制限されます<li>今後 Web SDK に移行するのは困難です</li><li>スキーマで Analytics エクスペリエンスイベントフィールドグループを使用します。</br>このフィールドグループは、Customer Journey Analyticsスキーマに不要な多くのAdobe Analytics イベントを追加します。  これにより、Customer Journey Analyticsに必要なスキーマよりも、より雑然とした複雑なスキーマが生じる可能性があります。</li><li>最高レベルの [待ち時間](/help/admin/guardrails.md#latencies) すべての実装方法で</li></ul> |
++++Analytics ソースコネクタの使用
+
+| メリット | デメリット |
+|----------|---------|
+| <ul><li>最も時間がかかり、要求の厳しい移行パス。 <p>最小限の投資でデータを迅速にCustomer Journey Analyticsに移行</p></li></ul> | <ul><li>データは、Edge Networkに送信されず、他のAdobe Experience Platform アプリケーションと共有できません。Customer Journey Analyticsのみに制限されます<li>今後 Web SDK に移行するのは困難です</li><li>スキーマで Analytics エクスペリエンスイベントフィールドグループを使用します。</br>このフィールドグループは、Customer Journey Analyticsスキーマに不要な多くのAdobe Analytics イベントを追加します。  これにより、Customer Journey Analyticsに必要なスキーマよりも、より雑然とした複雑なスキーマが生じる可能性があります。</li><li>最高レベルの [待ち時間](/help/admin/guardrails.md#latencies) すべての実装方法で</li></ul> |
 
 {style="table-layout:auto"}
 
