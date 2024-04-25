@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
+source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 76%
+source-wordcount: '3375'
+ht-degree: 74%
 
 ---
 
@@ -22,8 +22,11 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2024 年 4 月** | |
 | 統計的手法の予測 | を説明する記事を追加しました [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 基数の高いディメンションに対して完全なテーブル書き出しを推奨する情報を追加しました | に箇条書きを追加しました [基数の高いディメンションのベストプラクティス](/help/components/dimensions/high-cardinality.md) カーディナリティの高いディメンションに対して完全テーブル書き出しを使用することをお勧めします。 |
+| モバイルスコアカードのインテリジェント キャプションに関するドキュメントを追加しました | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 |
+| Adobe Product Analyticsの新機能に関するドキュメント | <ul><li>[機能マトリックス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [リテンション率](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[ファネルのインサイトの強化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
+| プロジェクトのみのワークスペースコンポーネントの権限強化に関するドキュメントを追加しました | プロジェクトを他のユーザーと共有すると、それらのユーザーは以下を編集できます [クイックフィルター](/help/components/filters/quick-filters.md) および共有プロジェクトに埋め込まれた、その他のプロジェクト専用コンポーネント。 |
 | **2024年2月** | |
 | プロジェクト共有ドキュメントの更新 | 方法に関する情報を追加しました [自分と共有されているプロジェクトを表示する](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウド書き出し場所を設定する際に、Azure SAS と Azure RBAC にファイルをアップロードするための権限要件を追加しました | 次の場合に Azure SAS と Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
@@ -76,7 +79,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 派生フィールド | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 |
 | プロファイルデータやルックアップデータへのルックアップサポートの拡張 | プロファイルデータセットまたはルックアップデータセット内のフィールドのルックアップとしてデータセットを追加できるようになります。これまでは、イベントデータセットのみがサポートされていました。[詳細情報](/help/connections/create-connection.md) |
 | Report Builder の機能強化 | <ul><li>[セルからの複数データブロックのフィルタリング](/help/report-builder/select-data-view.md)</li><li>[行ヘッダーと列ヘッダーの表示／非表示の切り替え](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=ja#build-the-data-block)</li></ul> |
-| Edge ネットワーク位置情報検索 | [データストリーム設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) では、統一された地理データを提供する地理検索サービスをどのようにして提供するのでしょうか。 |
+| Edge Network位置情報のルックアップ | [データストリーム設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) では、統一された地理データを提供する地理検索サービスをどのようにして提供するのでしょうか。 |
 | **2023年6月** | |
 | クロスチャネル分析とステッチ | ステッチを有効にするための変更と、ステッチを使用してクロスチャネル分析を向上させる方法をさらに明確にするための変更が今後見込まれるので、クロスチャネル分析機能に関連するドキュメントを編集して、[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)を Customer Journey Analytics の機能およびユースケースとして、また、[ステッチ](../stitching/overview.md)をそれを実現するための重要な機能として取り上げています。 |
 | Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey AnalyticsBI 拡張機能を使用すると、Customer Journey Analyticsで定義したデータビューへの SQL アクセスが可能になります。 [詳細情報](/help/data-views/bi-extension.md) |
