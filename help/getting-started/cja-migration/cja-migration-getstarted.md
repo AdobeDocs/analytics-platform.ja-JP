@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: d734e5daf9b5c9a559c0390622ab5aa15f2aa7a2
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '633'
 ht-degree: 10%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 Customer Journey Analyticsは次世代の分析です。 マルチチャネルデータ収集（オンラインデータとオフラインデータの両方）と、強力なレポート時間処理機能を組み合わせることができます（データビューでコンポーネントや派生フィールドを定義します）。
 
-Adobe AnalyticsからCustomer Journey Analyticsへの移行プロセスを開始する前に、移行の利点とCustomer Journey Analyticsを正常に行うために必要な手順を理解する必要があります。
+Adobe AnalyticsからCustomer Journey Analyticsへの移行プロセスを開始する前に、移行のメリットとCustomer Journey Analyticsを成功させるために必要な手順を理解する必要があります。
 
 ## Customer Journey Analyticsのメリットについて
 
