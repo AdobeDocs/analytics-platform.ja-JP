@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 366fc232fad278f6a6448d68cda6d0e1f05718f3
+source-git-commit: 4ab43b345adabb1add21294f5bf1f7858d08a11a
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 78%
@@ -40,8 +40,6 @@ ht-degree: 78%
    + [Customer Journey Analytics と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics と Adobe Analytics {#compare-aa-cja}
-   + [Adobe Analytics からの進化](../getting-started/aa-to-cja.md)
-   + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
    + Customer Journey Analyticsに移行 {#migrate-to-cja}
       + [基本を学ぶ](/help/getting-started/cja-migration/cja-migration-getstarted.md)
       + [移行パスを選択](/help/getting-started/cja-migration/cja-migration-path.md)
@@ -56,6 +54,8 @@ ht-degree: 78%
       + [仮想レポート環境とサンドボックス環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+   + [Adobe Analytics からの進化](../getting-started/aa-to-cja.md)
+   + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
 
 + データ取り込み {#cja-data-ingestion}
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
