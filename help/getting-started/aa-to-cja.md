@@ -6,15 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics からの進化
 
-## 既存データの準備
+## 既存のデータの準備
 
 Customer Journey Analytics にシームレスに移行するために Adobe Analytics データを準備することは、データの整合性とレポートの一貫性を保つうえできわめて重要です。
 
@@ -28,11 +28,11 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 * ID に PII は含まれていません。機密性が高い可能性のあるすべての要素にはハッシュを適用します。
 * ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
 
-Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。この場合、 [クロスチャネル分析（「ステッチ」とも呼ばれます）](/help/stitching/overview.md) は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるために使用できます。
+Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるのに、[クロスチャネル分析（「スティッチング」とも呼ばれます）](/help/stitching/overview.md)を使用できます。
 
 ### 変数の整合
 
-Adobe Analytics データをCustomer Journey Analyticsデータに変換する最も簡単な方法は、 [グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja) を使用したExperience Platform [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja). このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
+Adobe Analytics のデータを Customer Journey Analytics のデータに変換する最も簡単な方法は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=ja)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
 
 グローバルレポートスイートすべてを完全に実装することが現実的ではない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込むには、次の 2 つのオプションがあります。
 
@@ -56,7 +56,7 @@ Adobe Analytics データをCustomer Journey Analyticsデータに変換する�
 
 また、Customer Journey Analytics データビューの一部として[派生フィールド](../data-views/derived-fields/derived-fields.md)を導入したことにより、[マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates)を使用した非破壊的かつ遡及的な方法でマーケティングチャネルもサポートされます。
 
-## Customer Journey Analyticsへの移行時に重要な違いに備える
+## Customer Journey Analytics への移行時の重大な違いの準備
 
 Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。この記事は管理者を対象として書かれています。
 

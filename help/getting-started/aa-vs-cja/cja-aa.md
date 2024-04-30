@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2034'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 96%
 | セグメント | フルサポート。現在は、「フィルター」と呼ばれています。従来の Analysis Workspace の既存のセグメントは Customer Journey Analytics に移植されません。 |
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | 仮想レポートスイートコンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
-| デバイス, ブラウザー, リファラー, 技術の各ディメンション | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットと WebSDK によって生成されたデータセットの両方でサポートされます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。Experience Platform Web SDK データ収集を使用する場合、デバイスルックアップに基づくデバイスとディメンションは現在サポートされていません。将来的にサポートされる予定です。Web SDK データストリームにデバイスとブラウザーの検索を追加するには、次を参照してください。 [このドキュメント](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja) |
+| デバイス, ブラウザー, リファラー, 技術の各ディメンション | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットと WebSDK によって生成されたデータセットの両方でサポートされます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。Experience Platform Web SDK データ収集を使用する場合、デバイスルックアップに基づくデバイスとディメンションは現在サポートされていません。将来的にサポートされる予定です。Web SDK データストリームにデバイスおよびブラウザー検索を追加する方法について詳しくは、[このドキュメント](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja)を参照してください |
 | ストリーミングメディア分析 | メディアデータは、Analytics ソースコネクタを使用すると、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として使用できます。 |
 
 {style="table-layout:auto"}
@@ -131,9 +131,9 @@ ht-degree: 96%
 | 派生フィールド | 派生フィールドを使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、すべてのレポートに対して遡って適用できます。 |
 | セキュリティとプライバシーに関するオプションの機能強化 - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する追加のセキュリティオプションを提供します。Adobe Analytics は HIPAA に対応していません。 |
 | 実験分析 | Customer Journey Analytics では、接続の一部として定義された任意のデータソースから、任意の実験の上昇率と信頼性を評価できます。この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
-| 予測 | 予測は、Customer Journey Analyticsに既に存在する履歴データに基づいて、時系列関連データの統計予測を含む AI/ML 機能です。 予測は、フリーフォームテーブルおよび折れ線グラフのビジュアライゼーションに表示できます。 |
+| 予測 | 予測は、Customer Journey Analytics に既に存在する履歴データに基づく時系列関連データの統計的予測を含む AI／ML 機能です。予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
 | ガイド付き分析 | ガイド付き分析は、ユーザーがデータのニーズを迅速にセルフサービスで取得できるようにするレポート形式で、高品質のインサイトを迅速に取得し、より多くのデータ主導型の意思決定を行うことができます。ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics のアドオンです。 |
-| インテリジェントキャプション | インテリジェントキャプションは、高度な機械学習とジェネレーティブ AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。 最初のリリースでは、の自動生成インサイトが提供されます [ライン](/help/analysis-workspace/visualizations/line.md) ビジュアライゼーション。 |
+| インテリジェントキャプション | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
 | レポート時の変換 | Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | SQL アクセス | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | 無制限の顧客ディメンションと指標 | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
