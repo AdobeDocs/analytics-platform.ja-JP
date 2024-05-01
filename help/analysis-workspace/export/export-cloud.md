@@ -5,9 +5,9 @@ title: クラウドへのCustomer Journey Analyticsレポートの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: cf9920eb45803ff105e0d411475ee3df2a676cd1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2205'
 ht-degree: 3%
 
 ---
@@ -144,13 +144,13 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
 
 * **テーブル：** すべてのテーブルに、テーブル全体の書き出しをサポートするために、行に 1 つ以上のディメンションを、各列に 1 つの指標を含める必要があります。
 
-* **環境：** 管理者は、にリストされている IP アドレスを確認する必要があります。 [Customer Journey Analyticsが使用する IP アドレス](/help/admin/ip-addresses.md) ファイアーウォールに組み込まれている許可リストです。
+* **環境：** 必ずを [IP アドレス](/help/technotes/ip-addresses.md) および [ドメイン](/help/technotes/domains.md) Customer Journey Analyticsで使用されるユーザーは、組織のファイアウォールを通じて許可されます。
 
-* **権限：** Adobe Admin Consoleでは、ユーザーには、次の情報を持つ製品プロファイルが割り当てられている必要があります [!UICONTROL **テーブル全体の書き出し**] すべてのテーブルを書き出すために割り当てられた権限。 Admin Consoleで製品プロファイルに権限を割り当てる方法については、を参照してください。 [Admin ConsoleのCustomer Journey Analytics権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) 。対象： [Customer Journey Analyticsアクセス制御](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **権限：** Adobe Admin Consoleでは、ユーザーには、次の情報を持つ製品プロファイルが割り当てられている必要があります [!UICONTROL **テーブル全体の書き出し**] すべてのテーブルを書き出すために割り当てられた権限。 Admin Consoleで製品プロファイルに権限を割り当てる方法については、を参照してください。 [Admin ConsoleのCustomer Journey Analytics権限](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
-  >  を割り当てられているユーザー [製品管理者の役割](/help/admin/cja-access-control.md#product-admin-role) テーブル全体を書き出すためのアクセス権が常に付与されていて、これらのユーザーにを割り当てる必要がない [!UICONTROL **テーブル全体の書き出し**] 権限。
+  >  を割り当てられているユーザー [製品管理者の役割](/help/technotes/access-control.md#product-admin-role) テーブル全体を書き出すためのアクセス権が常に付与されていて、これらのユーザーにを割り当てる必要がない [!UICONTROL **テーブル全体の書き出し**] 権限。
 
 
 ### サポートされていない機能

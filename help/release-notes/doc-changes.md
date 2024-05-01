@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '3375'
 ht-degree: 74%
@@ -31,7 +31,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | プロジェクト共有ドキュメントの更新 | 方法に関する情報を追加しました [自分と共有されているプロジェクトを表示する](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウド書き出し場所を設定する際に、Azure SAS と Azure RBAC にファイルをアップロードするための権限要件を追加しました | 次の場合に Azure SAS と Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
 | クラウド書き出しの場所を設定する際に、Amazon S3 ロール ARN および GCP バケットにファイルをアップロードするための権限要件を追加しました | 次の場合にAmazon S3 ロール ARN およびGoogle Cloud Platform バケットにファイルをアップロードするための正確な権限要件を追加しました [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
-| 製品管理者が常にすべてのテーブルをエクスポートするためのアクセス権を持っていることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceからすべてのテーブルを書き出すためのアクセス権を持つことを明確にするために、次の変更を加えました。 <ul><li>に新しい箇条書きを追加しました。 [製品管理者のデフォルトの権限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>の下にメモを追加しました [完全なテーブルをクラウドに書き出すための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| 製品管理者が常にすべてのテーブルをエクスポートするためのアクセス権を持っていることを明確にしました | 製品管理者の役割を割り当てられたユーザーが、デフォルトでAnalysis Workspaceからすべてのテーブルを書き出すためのアクセス権を持つことを明確にするために、次の変更を加えました。 <ul><li>に新しい箇条書きを追加しました。 [製品管理者のデフォルトの権限](/help/technotes/access-control.md#product-admin-default-permissions).</li><li>の下にメモを追加しました [完全なテーブルをクラウドに書き出すための最小要件](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Adobe Analyticsからのコンポーネント移行中にセグメントが再作成されることを明確にしました | が含まれる [Adobe Analytics ユーザー向けユーザーガイド](/help/getting-started/aa-to-cja-user.md)を使用する場合、コンポーネントの移行プロセスの一環としてAdobe Analyticsでセグメントが自動的に再作成され、手動で再作成する必要がないことを明確にしました。 |
 | スキップされたレコードの詳細 | 接続のスキップされたレコードの詳細機能に関するドキュメントを追加しました。 詳しくは、[接続の詳細](../connections/manage-connections.md#connection-details)を参照してください。 |
 | **2024年1月** | |
@@ -39,7 +39,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | フルテーブルを書き出す際のアカウントと場所の追加に関するドキュメントを更新しました | 新しいアカウントまたは場所を設定する際のマイナーインターフェイスの更新を反映するように、ドキュメントを更新しました。 [Analysis Workspaceからの完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新品 [!UICONTROL **アカウントを追加**] オプションが [!UICONTROL **アカウント**] ドロップダウンメニュー。 この [!UICONTROL **場所を追加**] 以前は横のボタンとして使用できたオプション [!UICONTROL **場所名**] ドロップダウンメニューがメニュー自体の中で使用できるようになりました。 |
 | Adobe Analyticsから移行する際の新しいコンポーネントの移行情報 | に情報を追加しました [Adobe Analyticsからの進化](/help/getting-started/aa-to-cja.md) 新しいを参照する [コンポーネントの移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja) Adobe Analytics管理ガイドに記載されている機能。 |
 | 特定の情報は管理者のみが利用できることを明確化 | で説明されている「前回の使用」列と「使用された場所」列を示す情報を追加しました [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md) および [フィルターマネージャー](/help/components/filters/manage-filters.md) は、システム管理者のみが使用できます。 |
-| データセットのエクスポートに必要な権限 | の説明を追加しました [必要な権限](/help/admin/cja-access-control.md) で、データセットをクラウド宛先に書き出します。 |
+| データセットのエクスポートに必要な権限 | の説明を追加しました [必要な権限](/help/technotes/access-control.md) で、データセットをクラウド宛先に書き出します。 |
 | 接続の管理 | が更新されました [接続の管理](../connections/manage-connections.md) お客様からのフィードバックに基づいた記事。 |
 | 派生フィールド | 関数の概要を追加しました [制限事項](/help/data-views/derived-fields/derived-fields.md#limitations) 次の数を決定する方法の説明 [演算子](/help/data-views/derived-fields/derived-fields.md#operators) 関数で使用されます。 |
 
@@ -51,8 +51,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2023年12月** | |
-| データセンター | Customer Journey Analyticsに関する記事を追加しました [ホスティングの場所](../technotes/cja-datacenters.md). |
-| ガードレール | 記事一覧Customer Journey Analyticsを追加しました [ガードレール](../admin/guardrails.md). |
+| データセンター | Customer Journey Analyticsに関する記事を追加しました [ホスティングの場所](../technotes/data-centers.md). |
+| ガードレール | 記事一覧Customer Journey Analyticsを追加しました [ガードレール](../technotes/guardrails.md). |
 | 通貨換算の更新 | 方法に関するドキュメントを明確にしました。 [通貨換算の設定](/help/data-views/component-settings/format.md). |
 | 異常値検出ドキュメントの更新 | 異常値検出のドキュメントは、以前は Virtual Analyst に関する節に記載されていました。 次の変更を行いました。 <ul><li>Virtual Analyst という用語はドキュメントから削除しました。</li><li>[異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)に関する節は、Analysis Workspace の節のすぐ下に移動しました。</li></ul> |
 | **2023年10月** | |
@@ -90,7 +90,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ディープリンク（モバイルアプリ）ドキュメント | ユーザーが、アプリ内のスコアカードプロジェクトに直接アクセスできるスコアカードへのリンクを送信できるようにします。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#share-scorecards-using-a-shareable-link) |
 | Report Builder の「セルからデータビューを選択」に関するドキュメント | この機能を使用すると、ユーザーはセルからデータブロックのデータビューを選択できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=ja) |
 | Analytics ダッシュボードアプリ（モバイルアプリ）の更新されたホーム画面に関するドキュメント | 更新された新しいホーム画面では、すべてのスコアカードが、統合された 1 つのスコアカードリストに表示されます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html?lang=ja#use-dashboards) |
-| 最適化の更新 | [Customer Journey Analytics のパフォーマンスの最適化](/help/admin/optimizing-performance.md)に関する記事を更新しました |
+| 最適化の更新 | [Customer Journey Analytics のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)に関する記事を更新しました |
 | Analysis Workspace の概要 | より一般的な概要情報と関連コンテンツへのリンクを含むように、[Analysis Workspace の概要](/help/analysis-workspace/home.md)の概要を更新しました。 |
 | プロジェクトの作成 | Analysis Workspace で[プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)を行う方法を詳しく説明する新しい記事を作成しました。 |
 | 左側のパネルでのコンポーネントの並べ替え | 左側のパネルでのコンポーネントのリストの並べ替えに関する情報を追加しました。詳しくは、[コンポーネントの概要](/help/components/overview.md)の「コンポーネントリストの検索、フィルタリング、並べ替え」の節を参照してください。 |
@@ -133,7 +133,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 日付 | アップデートの内容 |
 | --- | --- |
 | **2022年12月** |  |
-| 2022年12月16日（PT） | [Customer Journey Analytics データ使用状況の測定と管理](/help/admin/estimate-usage.md)に関する新しいトピック。 |
+| 2022年12月16日（PT） | [Customer Journey Analytics データ使用状況の測定と管理](/help/technotes/estimate-usage.md)に関する新しいトピック。 |
 | **2022年10月** | |
 | 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
@@ -148,7 +148,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年9月 | Workspace の[実験パネル](/help/analysis-workspace/c-panels/experimentation.md)に関する新しいトピック。 |
 | **2022年8月** | |
 | 2022年8月 | [Analytics ソースコネクタのクロス地域サポート](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)に関する Adobe Experience Platform の記事。 |
-| 2022年8月 | [Customer Journey Analytics のアクセス制御](/help/admin/cja-access-control.md)に関する記事の大幅な更新。 |
+| 2022年8月 | [Customer Journey Analytics のアクセス制御](/help/technotes/access-control.md)に関する記事の大幅な更新。 |
 | 2022年8月 | [Customer Journey Analytics でのデータガバナンスラベルおよびポリシーのサポート](/help/data-views/data-governance.md)に関する新しい記事。 |
 | 2022年8月 | [Analytics ソースコネクタを通じて渡された Analytics データに関する用語の比較](/help/getting-started/aa-vs-cja/terminology.md)に関する新しい記事。 |
 | 2022年8月 | に関する新しいドキュメント [リアルタイム顧客プロファイルへのオーディエンス公開](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=ja). |

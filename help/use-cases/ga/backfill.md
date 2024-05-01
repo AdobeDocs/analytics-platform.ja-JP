@@ -1,11 +1,11 @@
 ---
 title: Google Analytics 履歴データの Adobe Experience Platform への取り込み
-description: Adobe Customer Journey Analyticsを使用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法について説明します。
+description: Adobe Customer Journey Analyticsを使用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法を説明します。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 90%
@@ -23,7 +23,7 @@ ht-degree: 90%
 
 * Adobe Experience Platform へのアクセス
 * Google Analytics（GA スタンダード版または GA 360）へのアクセス権限
-* Customer Journey Analytics への[管理者アクセス権限](/help/admin/cja-access-control.md)
+* Customer Journey Analytics への[管理者アクセス権限](/help/technotes/access-control.md)
 
 ## BigQuery エクスポートの設定
 
@@ -78,11 +78,11 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!TIP]
 >
->Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 データセットは、 [組み合わせデータセット](/help/connections/combined-dataset.md).
+>Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 を使用して、データセットをCustomer Journey Analyticsに結合できます [結合データセット](/help/connections/combined-dataset.md).
 
 選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、データセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
-![GA データフィールドとターゲットスキーママッピングをハイライトするスキーママップ](../assets/schema-map.png)
+![GA データフィールドとターゲットスキーママッピングをハイライト表示したスキーママップ](../assets/schema-map.png)
 
 フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、インポートしたデータに関する問題が生じなくなります。
 
@@ -98,7 +98,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
   ![タイムスタンプ](../assets/timestamp.png)
 
-* **`_id`**：このフィールドには値が必要です。Customer Journey Analyticsは値を気にしません。 フィールドに「1」を追加できます。
+* **`_id`** Customer Journey Analytics：このフィールドには値が必要です。どのような値でも構いません。 フィールドに「1」を追加できます。
 
   ![ID](../assets/_id.png)
 

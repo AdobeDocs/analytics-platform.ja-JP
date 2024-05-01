@@ -1,16 +1,16 @@
 ---
 description: Customer Journey Analytics の継続的な機能リリース戦略を説明します
-title: Customer Journey Analytics 機能リリース
+title: Customer Journey Analytics機能のリリース方法
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 88%
 
 ---
 
-# Customer Journey Analytics 機能リリース
+# Customer Journey Analytics機能のリリース方法
 
 Customer Journey Analytics リリースは、機能のデプロイメントに対するスケーラブルかつ段階的なアプローチを可能にする継続的な配信モデルに基づいて動作します。
 
@@ -28,7 +28,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 ## 機能フラグ
 
-機能フラグは、リリース時の新機能の表示を制御するために使用します。リリース時に最適なエクスペリエンスを得るために、`app.launchdarkly.com` をファイアウォールの[許可リスト](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=ja)に追加することを推奨します。GA に達した直後に、フラグが削除されます。
+機能フラグは、リリース時の新機能の表示を制御するために使用します。Adobeでは、次を許可することをお勧めします `app.launchdarkly.com` リリース時に最適なエクスペリエンスを得るために、組織のファイアウォールを通じて行う。 これらのフラグは、機能が全員にリリースされた後に削除されます。 参照： [Customer Journey Analyticsが使用するドメイン](../technotes/domains.md) を参照してください。
 
 アクティブな機能フラグは、**ヘルプ／Workspace について／アクティブな機能フラグ**&#x200B;からいつでも表示できます。
 

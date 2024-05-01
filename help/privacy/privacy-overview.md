@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータガバナンスの仕組�
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 74%
+source-wordcount: '375'
+ht-degree: 56%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 74%
 
 ## データガバナンス
 
-Adobe Customer Journey Analyticsと [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) では、機密Customer Journey Analyticsデータのラベル付けとプライバシーポリシーの実施を可能にします。
+Adobe Customer Journey Analyticsとの統合 [Adobe Experience Platformのデータガバナンス](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) では、機密Customer Journey Analyticsデータのラベル付けとプライバシーポリシーの実施が可能です。
 
 Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 Customer Journey Analytics データビューワークフローで表示できます。これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。
 
-また、データがCustomer Journey Analyticsから（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加され、特定の方法で処理する必要のある機密情報がレポートに含まれていることをユーザーに通知します。
+また、データがCustomer Journey Analyticsから（レポート、書き出し、API などを介して）書き出されると、警告またはラベルが追加されて、特定の方法で扱う必要のある機密情報がレポートに含まれていることをユーザーに知らせます。
 
-この統合により、コンプライアンスを管理しやすくなります。組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Customer Journey Analyticsユーザーは、データ管理人が定義したポリシーに準拠していることを知り、より自信を持ってデータを使用できます。
+この統合により、コンプライアンスを管理しやすくなります。組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Customer Journey Analyticsユーザーは、データ管理人が定義したポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
 
 [詳細情報](/help/data-views/data-governance.md)
 
 ## GDPR
 
-Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央サービスを直接登録せず、代わりに Experience Platform でおこなわれたデータセットの変更をすべて継承します。アドビでは、GDPR の削除リクエストの実施や、パイプラインでそれらが完了したことを通知するために、Platform Data Lake を使用しています。パイプラインをリッスンし、影響を受けるバッチに加えられたすべての変更を Customer Journey Analytics で同期して、イベントデータセットを取得します。GDPR の削除要求による影響を受けるプロファイルと参照データセットは、削除要求のたびに、再度完全に取り込まれます。削除要求は、Data Lake での削除イベントから 7 日以内に必ず実行されます。
+Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央サービスを直接登録せず、代わりに Experience Platform でおこなわれたデータセットの変更をすべて継承します。Customer Journey Analyticsは、GDPR の削除リクエストを実施し、リクエストが完了したときにCustomer Journey Analyticsに通知するために、Platform Data Lake に依存します。 イベントデータセットのCustomer Journey Analyticsで影響を受けるバッチに対して行われたすべての変更は、Platform データと同期されます。 GDPR の削除リクエストの影響を受けたプロファイルおよびルックアップデータセットは、削除リクエストのたびに完全に再取り込みされます。 削除リクエストは、通常、データレイクの削除イベントから 7 日以内に完了します。
 
 ## CCPA
 

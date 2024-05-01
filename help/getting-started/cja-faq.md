@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '2523'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '2522'
+ht-degree: 99%
 
 ---
 
@@ -212,7 +212,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 ## 9. 接続サイズの推定 {#estimate-size}
 
-[使用状況の推定と管理](/help/admin/estimate-usage.md)を参照してください。
+参照： [使用状況の推定と管理](/help/technotes/estimate-usage.md).
 
 ## 10. 使用量超過について {#overage}
 

@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '2937'
 ht-degree: 21%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 21%
 
 を選択 **[!UICONTROL 続行]** ：接続を削除します。
 
-参照： [影響を削除](/help/admin/cja-deletion.md) 接続の削除の影響について詳しくは、を参照してください。
+参照： [削除の影響](/help/technotes/deletion.md) 接続の削除について詳しくは、こちらを参照してください。
 
 
 ### データビューの作成

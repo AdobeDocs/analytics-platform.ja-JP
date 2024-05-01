@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '919'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## アクセス制御
 
-[アクセス制御](/help/admin/cja-access-control.md)に関するトピックを参照してください。
+参照： [アクセス制御](/help/technotes/access-control.md).
 
 ## 用語の更新
 

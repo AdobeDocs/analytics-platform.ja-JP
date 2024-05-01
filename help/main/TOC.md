@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4ab43b345adabb1add21294f5bf1f7858d08a11a
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1081'
 ht-degree: 78%
 
 ---
@@ -28,8 +28,8 @@ ht-degree: 78%
    + [2022年リリース](../release-notes/2022.md)
    + [2021年リリース](../release-notes/2021.md)
    + [2020年リリース](../release-notes/2020.md)
-   + [Customer Journey Analyticsリリース](../release-notes/releases.md)
-   + [Customer Journey Analytics ドキュメントの更新](../release-notes/doc-changes.md)
+   + [機能リリース戦略](../release-notes/releases.md)
+   + [ドキュメントの更新](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
    + [Customer Journey Analytics の概要](../getting-started/cja-overview.md)
@@ -358,15 +358,6 @@ ht-degree: 78%
    + 派生フィールド {#derived-fields}
       + [派生フィールドを使用した目標に関するレポート](../use-cases/goals-using-derived-fields.md)
 
-
-+ 管理 {#cja-admin}
-   + [ガードレール](../admin/guardrails.md)
-   + [アクセス制御](../admin/cja-access-control.md)
-   + [使用状況の表示と管理](../admin/estimate-usage.md)
-   + [削除の影響](../admin/cja-deletion.md)
-   + [Customer Journey Analyticsのパフォーマンスの最適化](../admin/optimizing-performance.md)
-   + [IP アドレス](../admin/ip-addresses.md)
-
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
 
@@ -376,8 +367,14 @@ ht-degree: 78%
    + [権限の欠如](../troubleshooting/lack-of-permissions.md)
 
 + テクニカルノート {#technotes}
-   + [Customer Journey Analyticsデータセンター](../technotes/cja-datacenters.md)
-
-+ [Customer Journey Analytics の用語集](../getting-started/cja-glossary.md)
+   + [アクセス制御](../technotes/access-control.md)
+   + [データセンター](../technotes/data-centers.md)
+   + [削除の影響](../technotes/deletion.md)
+   + [ドメイン](../technotes/domains.md)
+   + [用語集](../technotes/glossary.md)
+   + [ガードレール](../technotes/guardrails.md)
+   + [IP アドレス](../technotes/ip-addresses.md)
+   + [Customer Journey Analyticsのパフォーマンスの最適化](../technotes/optimizing-performance.md)
+   + [使用状況の表示と管理](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

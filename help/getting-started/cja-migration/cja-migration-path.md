@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Adobe Analyticsの実装の種類ごとに、すべての移行パスを使用�
 
 | メリット | デメリット |
 |----------|---------|
-| <ul><li>最も時間がかかり、要求の厳しい移行パス。 <p>最小限の投資でデータを迅速にCustomer Journey Analyticsに移行</p></li></ul> | <ul><li>**データがEdge Networkに送信されない**: <p>その結果、次のようなデメリットが生じます。</p><ul><li>最高レベルの [待ち時間](/help/admin/guardrails.md#latencies) （すべての移行パスにわたるレポート作成）。リアルタイムパーソナライゼーションのユースケース向けに最適化されていない。</li><li>データを他のAdobe Experience Platform アプリケーションと共有することはできません。Customer Journey Analyticsのみに制限されます</li><li>Adobe Analyticsの命名法（prop、eVar、イベントなど）に依存する</li></ul><li>**今後 Web SDK に移行するのは困難です**: </li><li>**スキーマ内で Analytics エクスペリエンスイベントフィールドグループを使用します**：このフィールドグループには、Customer Journey Analyticsスキーマに必要のない多くのAdobe Analytics イベントが追加されます。  これにより、Customer Journey Analyticsに必要なスキーマよりも、より雑然とした複雑なスキーマが生じる可能性があります。</li></ul> |
+| <ul><li>最も時間がかかり、要求の厳しい移行パス。 <p>最小限の投資でデータを迅速にCustomer Journey Analyticsに移行</p></li></ul> | <ul><li>**データがEdge Networkに送信されない**: <p>その結果、次のようなデメリットが生じます。</p><ul><li>最高レベルの [待ち時間](/help/technotes/guardrails.md#latencies) （すべての移行パスにわたるレポート作成）。リアルタイムパーソナライゼーションのユースケース向けに最適化されていない。</li><li>データを他のAdobe Experience Platform アプリケーションと共有することはできません。Customer Journey Analyticsのみに制限されます</li><li>Adobe Analyticsの命名法（prop、eVar、イベントなど）に依存する</li></ul><li>**今後 Web SDK に移行するのは困難です**: </li><li>**スキーマ内で Analytics エクスペリエンスイベントフィールドグループを使用します**：このフィールドグループには、Customer Journey Analyticsスキーマに必要のない多くのAdobe Analytics イベントが追加されます。  これにより、Customer Journey Analyticsに必要なスキーマよりも、より雑然とした複雑なスキーマが生じる可能性があります。</li></ul> |
 
 {style="table-layout:auto"}
 
