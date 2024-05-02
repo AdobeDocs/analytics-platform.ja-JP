@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 355052289c5e613212030b7748b6116a12455953
+source-git-commit: 3d2ce208e468a68a45d900c4437639ad5145b8cb
 workflow-type: tm+mt
-source-wordcount: '3375'
-ht-degree: 74%
+source-wordcount: '3481'
+ht-degree: 72%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2024年5月** | |
+| Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する新しいドキュメント | Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合、組織の現在のAdobe Analyticsの実装と長期目標に基づいて、複数のアップグレードオプションや多くの考慮事項に留意する必要があります。<p>次の内容をより深く理解するのに役立つ新しいドキュメントリソースが利用できるようになりました。</p><ul><li>存在するさまざまなアップグレードパス</li><li>組織の現在のAdobe Analytics実装に基づいて使用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスのステップバイステップのガイダンス</li><li>履歴データの処理に関する考慮事項</li><li>その他</li></ul><p>[Customer Journey Analyticsへのアップグレードの概要](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | **2024 年 4 月** | |
 | 統計的手法の予測 | を説明する記事を追加しました [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 基数の高いディメンションに対して完全なテーブル書き出しを推奨する情報を追加しました | に箇条書きを追加しました [基数の高いディメンションのベストプラクティス](/help/components/dimensions/high-cardinality.md) カーディナリティの高いディメンションに対して完全テーブル書き出しを使用することをお勧めします。 |
