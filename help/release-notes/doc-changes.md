@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 355052289c5e613212030b7748b6116a12455953
 workflow-type: tm+mt
 source-wordcount: '3375'
 ht-degree: 74%
@@ -23,7 +23,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 統計的手法の予測 | を説明する記事を追加しました [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 基数の高いディメンションに対して完全なテーブル書き出しを推奨する情報を追加しました | に箇条書きを追加しました [基数の高いディメンションのベストプラクティス](/help/components/dimensions/high-cardinality.md) カーディナリティの高いディメンションに対して完全テーブル書き出しを使用することをお勧めします。 |
 | モバイルスコアカードのインテリジェント キャプションに関するドキュメントを追加しました | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) は、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解するのに役立ちます。 |
-| Adobe Product Analyticsの新機能に関するドキュメント | <ul><li>[機能マトリックス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [リテンション率](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[ファネルのインサイトの強化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
+| Adobe Product Analytics機能に関する新しいドキュメント | <ul><li>[機能マトリックス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [リテンション率](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[ファネルのインサイトの強化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
 | プロジェクトのみのワークスペースコンポーネントの権限強化に関するドキュメントを追加しました | プロジェクトを他のユーザーと共有すると、それらのユーザーは以下を編集できます [クイックフィルター](/help/components/filters/quick-filters.md) および共有プロジェクトに埋め込まれた、その他のプロジェクト専用コンポーネント。 |
