@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2536'
+ht-degree: 98%
 
 ---
 
@@ -174,9 +174,9 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## 8. [!UICONTROL Adobe Analytics] コンポーネント
 
-+++**[!UICONTROL フィルター]を [!DNL Customer Journey Analytics] から Experience Platform Real-Time CDP または他の Experience Cloud アプリケーションに共有または公開することはできますか？**
++++**共有/公開可能 [!UICONTROL オーディエンス] から [!DNL Customer Journey Analytics] Real-Time CDPや他のExperience CloudアプリケーションをExperience Platformにしますか？**
 
-現在はできませんが、アドビではこの機能を提供できるように鋭意取り組んでいます。
+次のことができます [オーディエンスの作成と公開](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) 顧客のターゲティングとパーソナライゼーションのために、Adobe Experience Platformのリアルタイム顧客プロファイルにCustomer Journey Analyticsして特定されます。
 
 +++
 
