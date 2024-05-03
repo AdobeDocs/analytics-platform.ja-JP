@@ -4,8 +4,8 @@ description: Adobe Journey Optimizer 意思決定管理で生成されたデー�
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
+source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 100%
 
@@ -73,12 +73,12 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 | イベントタイプ（名前を変更して特定のイベントを参照する、`message.feedback` の場合 `Feedback` など）[1] | 特定のタイプのイベントの量 | `eventType` | コンポーネントタイプ：指標<br/>**[!UICONTROL 「値を含める／除外」を設定&#x200B;]**：オン<br/>**[!UICONTROL 一致]**：[!UICONTROL すべての条件を満たす場合]<br/>**[!UICONTROL 条件&#x200B;]**：**[!UICONTROL &#x200B;等しい&#x200B;]**`message.feedback` |
 | 決定オプションスコア | 単一スコープのコンテキストにおける決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | コンポーネントタイプ：指標 |
 | フォールバック決定オプションのスコア | 単一スコープのコンテキストにおけるフォールバック決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | コンポーネントタイプ：指標 |
-| オファーの却下 | 他の直接のインタラクションなしで却下または拒否されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
+| オファーの却下 | 他の直接のインタラクションなしで却下または拒否されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
 | オファーの表示 | プロファイルに表示されるオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
 | オファーの操作 | プロファイルに表示されるオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | コンポーネントタイプ：指標 |
 | オファーの送信 | プロファイルに送信されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.send` | コンポーネントタイプ：指標 |
 | オファーのトリガー | クライアント SDK によって表示されるように選択されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | コンポーネントタイプ：指標 |
-| オファーの登録解除 | プロファイルによってリクエストされた今後表示されないオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | コンポーネントタイプ：指標 |
+| オファーの登録解除 | プロファイルによってリクエストされた今後表示されないオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | コンポーネントタイプ：指標 |
 
 {style="table-layout:auto"}
 
