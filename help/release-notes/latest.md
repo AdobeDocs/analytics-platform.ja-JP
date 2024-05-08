@@ -4,9 +4,9 @@ description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '946'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 | **ストリーミングメディア：Adobe Experience Platform Edge への Roku データの送信** | [Experience Platform Edge を使用して Media Analytics をインストール](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge)する際、Adobe Experience Platform Roku SDK を使用してストリーミングメディアデータを Adobe Experience Platform に送信できるようになりました。 |  | 2024年4月12日（PT） |
 | **レポートアクティビティマネージャーで公開した月別レポート** | レポートアクティビティマネージャーですべての接続のレポートアクティビティを表示すると、今月と前月の両方で IMS 組織レベルで実行した[月別レポート／リクエスト](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/reporting-activity-manager/reporting-activity#view-all-report-suites)を示すグラフが表示されるようになりました。<p>**メモ：** データは、2024年3月中旬から利用可能です。 | | 2024年4月15日（PT） |
 | **モバイルスコアカードのインテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)は、アナリスト以外のユーザーがアナリストの助けを借りずにデータをより深く理解するのに役立ちます。これが Customer Journey Analytics スコアカードで使用できるようになりました。 |  | 2024年4月17日（PT） |
-| **プロジェクト専用の[!UICONTROL ワークスペース]コンポーネントの権限の強化** | 以前は、あるユーザー（ユーザー A）が別のユーザー（ユーザー B）とプロジェクトを共有し、ユーザー B にプロジェクトへの編集アクセス権を付与した場合、ユーザー B はプロジェクトを編集できました。ただし、ユーザー B はを編集できません [!UICONTROL クイックフィルター] プロジェクトに埋め込まれています。 この制限は削除されました – ユーザー B は編集できます [クイックフィルター](/help/components/filters/quick-filters.md) および共有プロジェクトに埋め込まれた、その他のプロジェクト専用コンポーネント。 |  | 2024年4月17日（PT） |
+| **プロジェクト専用の[!UICONTROL ワークスペース]コンポーネントの権限の強化** | 以前は、あるユーザー（ユーザー A）が別のユーザー（ユーザー B）とプロジェクトを共有し、ユーザー B にプロジェクトへの編集アクセス権を付与した場合、ユーザー B はプロジェクトを編集できました。ただし、ユーザー B はプロジェクトに埋め込まれた[!UICONTROL クイックフィルター]を編集できませんでした。この制限は現在削除され、ユーザー B は共有プロジェクトに埋め込まれている[クイックフィルター](/help/components/filters/quick-filters.md)や他のプロジェクト専用コンポーネントを編集できるようになりました。 |  | 2024年4月17日（PT） |
 | **管理者は組織内のすべての場所を管理できます** | [場所ページ](https://experienceleague.adobe.com/ja/docs/analytics/components/locations/locations-manager)の新しいオプションにより、管理者は組織内のすべての場所を表示および管理できます。以前は、管理者は作成した場所のみを表示および管理できました。 |  | 2024年4月 |
 | **Adobe Product Analytics：機能マトリックス** | お客様のコア機能、強力な機能、1 回限りの機能、疑わしい機能が何であるかを理解することで、投資に関する意思決定を促進します。[!UICONTROL 機能マトリックス]では、イベントを使用頻度とアクティブユーザーの割合で測定し、使用量の中央値と比較します。 | 2024年4月17日（PT） | 2024年4月30日（PT） |
 | **Adobe Product Analytics：ファネルのインサイトの強化** | [フリクション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)ビューでは、グラフとテーブルをさらに理解しやすくするために、カテゴリ、差分、説明を含めるようにドキュメント化されたインサイトが強化されました。 | 2024年4月17日（PT） | 2024年4月26日（PT） |
