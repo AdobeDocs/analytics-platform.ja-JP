@@ -5,10 +5,10 @@ title: フォルダーの概要
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Workspace には、会社フォルダーと個人用フォルダーという 2 �
 
 Workspace にログインすると、プロジェクトホームページに、会社フォルダーおよび作成した個人用フォルダーと共に、プロジェクトのリストが表示されます。
 
-![プロジェクトと会社情報フォルダーを一覧表示するプロジェクトのホームページ。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![プロジェクトのホームページ](../assets/landing-page2.png)
 
 ## 会社フォルダーについて {#company-folder}
 
@@ -34,7 +34,6 @@ Workspace にログインすると、プロジェクトホームページに、�
 
 ユーザーが Workspace にログインすると、会社フォルダーがプロジェクトとフォルダーのリストに自動的に追加されます。会社フォルダー内に含まれるプロジェクトに対する特定の権限はありません。
 
-
 ### 管理オプション {#admin-options}
 
 管理者には、会社フォルダーに対する特別な権限が割り当てられています。例えば、管理者のみ、会社フォルダー内のフォルダーやプロジェクトを追加または削除できます。管理者アクセス権を持たないユーザーは、会社フォルダーの内容を表示できます。
@@ -43,7 +42,7 @@ Workspace にログインすると、プロジェクトホームページに、�
 
 管理者以外のユーザーには、オプションが限られます。
 
-![フォルダーの管理者以外のオプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![フォルダーの管理者以外のオプションを表示するプロジェクトページ。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### 会社フォルダーのガイドライン {#company-folder-guidelines}
 
@@ -53,6 +52,6 @@ Workspace にログインすると、プロジェクトホームページに、�
 
 - 管理者は、別の管理者が作成した会社フォルダー内のフォルダーを削除できます。管理者は、場合によっては、フォルダーやプロジェクトへのアクセスの一貫性を保つために、他の管理者と連携する必要があります。
 
-- 管理者がプロジェクトを会社フォルダーに移動すると、元の共有権限が制限されていた場合でも、プロジェクトは全員で共有されます。
+- 管理者がプロジェクトを会社フォルダーに移動すると、プロジェクトは、次のユーザーと全員で共有されます **コピーを編集** 役割（元の共有権限が制限されていた場合も含む）。
 
 - 管理者が会社フォルダーからプロジェクトを移動すると、元の共有権限または以前の共有権限に従います。

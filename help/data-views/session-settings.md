@@ -5,20 +5,20 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 90%
 
 ---
 
 # セッション設定
 
-データビューのセッション設定では、Customer Journey Analytics が接続内のデータからセッションを計算する方法を変更します。
+Customer Journey Analyticsとして、ユーザーによるデジタルエクスペリエンスとのやり取りに合わせて、任意の方法でセッションを定義できます。 セッション設定はデータビュー内で行います。
 
-データビューの「**[!UICONTROL 設定]**」タブ内では、ユーザーがデジタルエクスペリエンスを操作する方法に合わせて、任意の方法でセッションを定義できます。セッション設定の定義は非破壊的で、基になるデータを変更しません。Workspace プロジェクトの基盤として、複数のデータビュー（それぞれに特定のセッション設定の定義を含む）を設定できます。
+セッション設定の定義は非破壊的で、基になるデータを変更しません。Workspace プロジェクトの基盤として、複数のデータビュー（それぞれに特定のセッション設定の定義を含む）を設定できます。
 
-データビューのセッションのコンテキストを定義するには：
+データビュー内のセッションのコンテキストを定義するには：
 
 1. Customer Journey Analytics の UI で「**[!UICONTROL データビュー]**」を選択します。
 

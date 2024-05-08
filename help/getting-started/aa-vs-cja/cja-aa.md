@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c8796834de6b566783d53ba1602e44a8c91127bf
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 92%
+source-wordcount: '2141'
+ht-degree: 91%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 92%
 | インテリジェントキャプション | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
 | レポート時の変換 | Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | SQL アクセス | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
-| 無制限の顧客ディメンションと指標 | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
+| 無制限の顧客ディメンションと指標 | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。 <p>これに対し、Adobe Analyticsは、最大 75 個の prop と 250 個の eVar をサポートします。</p> |
 | 無制限の一意の値 | Customer Journey Analyticsでは、1 つのディメンション内でレポートできる一意の値またはディメンション項目を制限なくサポートしています。<p>がありません [ディメンションの基数の制限](/help/components/dimensions/high-cardinality.md)一意の値を任意に表示およびカウントできるようにします。</p><p>このアプローチにより、大規模なAdobe Analytics実装で発生する可能性のある Reporting and Analysis の制限がなくなり、 [!UICONTROL 低トラフィック] ラベル。</p><p>Customer Journey Analyticsでは、 [!UICONTROL ユニーク数を超えています] ラベル付けが行われますが、発生する頻度ははるかに低く、フィルターまたはセグメントをデータに適用することで軽減できます。</p> |
 
 {style="table-layout:auto"}
