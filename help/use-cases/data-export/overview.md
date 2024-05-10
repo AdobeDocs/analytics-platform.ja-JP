@@ -1,16 +1,16 @@
 ---
-title: データフィードの使用例
+title: データ書き出しの使用例
 description: Customer Journey Analyticsのための様々なデータエクスポートのユースケースについて
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # データ書き出しの使用例
 
@@ -77,4 +77,3 @@ Customer Journey Analyticsすると、イベントが順番に収集されず、
 | **データの検証**<br/>&#x200B;データ収集の正確性を確保するために、クリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> お気に入りの SQL ツールを使用してアドホック SQL クエリを実行し、データセット内のデータを検証する Interactive PostgreSQL インターフェイス。<br/><br/>**Customer Journey Analytics**: [**完全なテーブルを書き出し**](export-full-table.md)<br/>&#x200B;アトリビューションとセッション化が適用された CJA から処理済みのデータを検証します。 |
 | **Data Lake、Data Warehouseまたは BI ツール**<br/>&#x200B;独自の BI ツールまたはデータレイクにデジタルデータを取り込み、追加のデータセットで使用します。 | **Customer Journey Analytics**: [**BI 拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsの処理済み指標をデータなどのデータビジュアライゼーションツールに追加し、カスタムPower BIの追加データと組み合わせます&#x200B;<br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br>&#x200B;クラウドの宛先に配信する SQL を使用して、カスタマイズされたクリックストリームデータを生成します。 |
 | **AI/ML に対する対応**<br/> Customer Journey Analyticsデータを使用して、人工知能/機械学習のモデルとタスクを強化します。 | **Customer Journey Analytics**: [**完全なテーブルを書き出し**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標を、計算指標やセグメント化を含め、クラウドの宛先に 1 回限りまたは定期的に書き出します。<br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQL を使用してカスタマイズされたクリックストリームデータを生成し、AI/ML モデルを強化します。 |
-
