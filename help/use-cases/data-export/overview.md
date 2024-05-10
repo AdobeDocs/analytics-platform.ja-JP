@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
+source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # データ書き出しの使用例
 
-この節では、データ書き出しのユースケースについて説明します。 ユースケースごとに、それぞれ独自の記事で説明しています。 一部のユースケースでは、複数のソリューションが提供されています。
+この節では、データ書き出しの使用例と、1 つ以上のCustomer Journey AnalyticsまたはExperience Platformの機能を使用してこれらの使用例を実装する方法について説明します。 各機能について詳しくは、別の記事を参照してください。
 
 ## はじめに
 
@@ -67,7 +67,7 @@ Customer Journey Analyticsすると、イベントが順番に収集されず、
    * スケジュールされた配信期間における配信の問題と制限に関するアラートを設定します。
 
 
-## ユースケースとソリューション
+## ユースケースと機能
 
 一般に、データの書き出しでは、多くのユースケースをサポートしています。 必要なデータとそのデータにアクセスして書き出す方法に関しては、ユースケースごとに異なります。 Experience PlatformとCustomer Journey Analyticsには、様々なユースケースを解決できる多数の機能が用意されており、それぞれ単独で使用することも、組み合わせて使用することもできます。 次の表に、特定されたデータ書き出しのユースケースと、これらのユースケースを実装するためのExperience PlatformおよびCustomer Journey Analytics機能の概要を示します。
 
