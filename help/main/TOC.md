@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
+source-git-commit: 300868a88cf8ea3c345c5a211076f632dd9d0bbc
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1105'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 77%
       + [履歴データを保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
-      + [Adobe Analytics データの Customer Journey Analytics での活用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Customer Journey AnalyticsでのAdobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語を比較](../getting-started/aa-vs-cja/terminology.md)
       + [Adobe Analytics と Customer Journey Analytics におけるデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -200,6 +200,8 @@ ht-degree: 77%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
+   + 機能マトリックス {#feature-matrix}
+      + [エンゲージメント](../guided-analysis/types/engagement.md)
    + ファネル {#funnel}
       + [摩擦ビュー](../guided-analysis/types/friction.md)
       + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
