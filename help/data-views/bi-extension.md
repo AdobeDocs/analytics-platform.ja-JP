@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: ad7f748fb7aa684d134cf110460a84d1b9ec3895
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 76%
+source-wordcount: '2748'
+ht-degree: 75%
 
 ---
 
@@ -312,6 +312,11 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 この `daterange` フィールドは、イベントの日付を解析または切り捨てるために日付/時間関数でも使用できます。
 
 この `daterangeName` 次のような名前付き日付範囲を使用して、クエリをフィルタリングするために特別な列を使用できます。 `Last Quarter`.
+
+>[!NOTE]
+>
+>PowerBI は、 `daterange` 1 日未満の指標（時間、30 分、5 分など）。
+
 
 #### フィルター ID
 
