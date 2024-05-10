@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 84%
+source-wordcount: '2041'
+ht-degree: 78%
 
 ---
 
@@ -172,37 +172,45 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 ロイヤルティデータをどこで受け取るかに応じて、Adobe Experience Platform で使用可能な関連するソースコネクタを選択します。
 
+様々なソースからデータを取り込むことができます。 次に、利用できる多くのソースの一部を示します。
+
+- Adobeアプリケーション（ソースコネクタには次のものが含まれます [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)、など）
+
+- クラウドストレージ （ソースコネクタ : [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)、など）
+
+- データベース（ソースコネクタには次のものが含まれます） [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)、など）
+
 ソースコネクタを設定するには：
 
-1. Adobe Experience Platform UI の左パネルで、「[!UICONTROL 接続]」から「**[!UICONTROL ソース]**」を選択します。
+1. Adobe Experience Platformで、を選択します。 **[!UICONTROL ソース]** から [!UICONTROL 接続] 左パネルで。
 
-2. 使用可能なソースコネクタのリストからソースコネクタを選択します。各コネクタは、同様のワークフローに従います。
+1. 使用可能なソースコネクタのリストからソースコネクタを選択します。
 
-   - **[!UICONTROL 認証]**：認証の詳細を指定して、データのソースにアクセスします。
+   各コネクタは、同様のワークフローに従います。
 
-   - **[!UICONTROL データを選択]**：取り込むソースデータを選択します。
+   1. **[!UICONTROL 認証]**：認証の詳細を指定して、データのソースにアクセスします。
 
-   - **[!UICONTROL データフローの詳細]**：データフローに関する追加の詳細（名前、使用するデータセットなど）を指定します。
+   1. **[!UICONTROL データを選択]**：取り込むソースデータを選択します。
 
-   - **[!UICONTROL マッピング]**：受け取ったソースデータフィールドを、選択したデータセットに関連付けられたスキーマ内の属性にマッピングします。
+   1. **[!UICONTROL データフローの詳細]**：データフローに関する追加の詳細（名前、使用するデータセットなど）を指定します。
 
-   - **[!UICONTROL スケジュール]**：可能な場合は、データの取り込みをスケジュールできます。
+   1. **[!UICONTROL マッピング]**：受け取ったソースデータフィールドを、選択したデータセットに関連付けられたスキーマ内の属性にマッピングします。
 
-   - **[!UICONTROL レビュー]**：ソースコネクタの定義のレビューが表示されます。
+   1. **[!UICONTROL スケジュール]**：可能な場合は、データの取り込みをスケジュールできます。
 
-   各コネクタには、詳細なドキュメントが用意されています。
+   1. **[!UICONTROL レビュー]**：ソースコネクタの定義のレビューが表示されます。
 
-   このドキュメントにアクセスするには：
+1. 各コネクタには、詳細なドキュメントが用意されています。 このドキュメントにアクセスするには：
 
-   - コネクタタイルで、「[!UICONTROL 設定]」または「[!UICONTROL データを追加]」の隣にある「**[!UICONTROL ...]**」を選択します。
+   1. コネクタタイルで、「[!UICONTROL 設定]」または「[!UICONTROL データを追加]」の隣にある「**[!UICONTROL ...]**」を選択します。
 
-     ![ドキュメントを表示](./assets/sourceconnector-documentation.png)
+      ![ドキュメントを表示](./assets/sourceconnector-documentation.png)
 
-   - 「**[!UICONTROL ドキュメントを表示]**」を選択します。
+   1. 「**[!UICONTROL ドキュメントを表示]**」を選択します。
 
-Adobe Analytics ソースコネクタの使用方法について詳しくは、[従来の Adobe Analytics からのデータの取り込みと使用](./analytics.md)を参照してください。
+参照： [従来のAdobe Analyticsからのデータの取り込みと使用](./analytics.md) Adobe Analytics ソースコネクタの使用方法について説明します。
 
-HTTP API ソースコネクタの使用方法について詳しくは、[ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
+参照： [ストリーミングデータの取り込みと使用](./streaming.md) http API ソースコネクタの使用方法について説明します。
 
 ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 

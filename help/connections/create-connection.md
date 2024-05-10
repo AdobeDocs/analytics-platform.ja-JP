@@ -5,8 +5,8 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
-workflow-type: ht
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 100%
 
@@ -28,14 +28,14 @@ ht-degree: 100%
 
 接続に追加できるデータセットの最大数は 100 に制限されています。組み合わせは、会社が購入した Customer Journey Analytics パッケージに応じて異なります。
 
+使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
+
 | **選択**&#x200B;パッケージ | **基盤**&#x200B;パッケージ |
 | --- | --- |
 | イベント／プロファイル／ルックアップデータセットの任意の組み合わせ（最大 100 個の追加） | 接続あたり 1 個のイベントデータセット |
 |  | 接続あたり最大 99 個のプロファイルまたは参照データセット |
 
 {style="table-layout:auto"}
-
-使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
 
 ## 接続の作成と設定 {#create-connection}
 

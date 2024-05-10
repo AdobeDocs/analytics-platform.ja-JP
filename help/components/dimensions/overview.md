@@ -2,9 +2,10 @@
 title: ディメンションの概要
 description: ディメンションの概要とCustomer Journey Analyticsでの使用方法を説明します
 feature: Dimensions
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '190'
 ht-degree: 37%
 
 ---
@@ -29,7 +30,7 @@ Customer Journey Analyticsの基本レポートは、指標の列（一般的に
 
 ## ディメンションの作成
 
-Customer Journey Analytics管理者は次の操作を実行できます [データビュー内で数値ベースのディメンションを作成](/help/data-views/create-dataview.md#components).
+Customer Journey Analytics管理者は次の操作を実行できます [データビュー内でのディメンションの作成](/help/data-views/create-dataview.md#components).
 
 ## ディメンションの説明の追加
 
