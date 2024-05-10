@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: d1497c20c0e986ae27fd7c64a14fd92630081650
+source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 78%
+source-wordcount: '1102'
+ht-degree: 77%
 
 ---
 
@@ -344,6 +344,12 @@ ht-degree: 78%
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
+   + データのエクスポート {#data-export}
+      + [概要](../use-cases/data-export/overview.md)
+      + [BI 拡張機能](../use-cases/data-export/bi-extension.md)
+      + [データセットを書き出し](../use-cases/data-export/export-datasets.md)
+      + [フルテーブルを書き出し](../use-cases/data-export/export-full-table.md)
+      + [クエリサービスとデータセットの書き出し](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [B2B プロジェクトの例](../use-cases/b2b/example.md)
       + [アカウントレベルのデータをルックアップデータセットとして追加](../use-cases/b2b/b2b.md)
@@ -353,7 +359,6 @@ ht-degree: 78%
    + Adobe Analytics データ {#aa-data}
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
-      + [データフィードのエミュレート](../use-cases/emulating-data-feeds.md)
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
    + 派生フィールド {#derived-fields}
