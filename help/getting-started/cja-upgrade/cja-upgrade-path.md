@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 68%
+source-wordcount: '2483'
+ht-degree: 63%
 
 ---
 
@@ -44,11 +44,11 @@ Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに使
 
 組織に最適なアップグレードパスを決定するには、次の節を順番に参照する必要があります。
 
-1. まず、 [使用可能なアップグレードパスについて](#understand-migration-methods).
+1. まず、 [使用可能なアップグレードパスについて](#understand-upgrade-paths).
 
-1. その後、 [使用可能なアップグレードパスの評価](#assess-the-migration-methods-available-to-you-based-on-your-current-adobe-analytics-implementation).
+1. その後、 [使用可能なアップグレードパスの評価](#assess-the-upgrade-paths-available-to-you-based-on-your-current-adobe-analytics-implementation).
 
-1. 最後に、 [各アップグレードパスのメリットとデメリットを比較検討する](#weigh-the-advantages-and-disadvantages-of-the-migration-methods-available-to-you).
+1. 最後に、 [各アップグレードパスのメリットとデメリットを比較検討する](#weigh-the-advantages-and-disadvantages-of-the-upgrade-paths-available-to-you).
 
 ## アップグレードパスについて
 
@@ -62,7 +62,7 @@ Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードには
 |---------|----------|---------|
 | **Experience PlatformWeb SDK の新しい実装**</br> Experience Platform Web SDK の新しい実装を行うことで、Customer Journey Analyticsの使用を開始できます。 これにより、Adobe Experience Platform Edge Network および Customer Journey Analytics へのデータの送信を開始できます。 <p>Web SDK をまだ使用していない組織の場合、このアップグレードパスは必要な手順が最も少ないため、データをEdge Networkに送信する際に最も簡単です。ただし、すべての作業が事前に行われる（XDM スキーマの作成など）ので、より大きな初期作業が必要です。</p><p>基本的な手順は次のとおりです。</p><ol><li>組織の XDM スキーマを作成します。</li><li>Web SDKを実装します。</li><li>Platform にデータを送信します。</li></ol> | 高 | 高 |
 | **Web SDK を使用するための Adobe Analytics の実装の移行**</br> Adobe Analytics の実装が AppMeasurement または Analytics 拡張機能である場合は、Customer Journey Analytics にデータを送信する前に、Adobe Experience Platform Web SDK を使用するように実装を移行すると、Edge Network と Adobe Analytics へのデータの送信を開始できます。<p>まだ Web SDK を使用していない組織の場合、これは Edge Network にデータを取得する最も簡単かつスムーズな方法です。多くの手順が必要になりますが、Adobe Analytics から Customer Journey Analytics へのより体系的な移行が可能になり、具体的なマイルストーンが得られます。</p><p>基本的な手順は次のとおりです。</p><ol><li>既存の Adobe Analytics の実装を Web SDK に移行し、Adobe Analytics ですべてが機能していることを検証します。</li><li>時間があれば、組織の XDM スキーマを作成します。</li><li>データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。</li><li>Platform にデータを送信します。</li></ol> | 中 | 高 |
-| **既存の Adobe Analytics Web SDK 実装の設定**</br> Adobe Analytics の実装で既に Adobe Experience Platform Web SDK を使用している場合は、最小限の労力で Customer Journey Analytics へのデータの送信を開始できます。<p>Customer Journey Analytics にデータを送信する前に、組織や使用する他のプラットフォームアプリケーションの特定のニーズに合わせて Adobe Analytics スキーマを更新することを検討します。</p><p>基本的な手順は次のとおりです。</p><ol><li>Customer Journey Analytics へのデータの送信を開始します。<!-- What's involved here? Just point it at CJA? --></li><li>（オプション）時間があれば、組織の XDM スキーマを作成します。</li><li>（条件付き）XDM スキーマを作成した場合は、データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。</li></ol> | 低 | 高 |
+| **既存のAdobe Analytics Web SDK 実装の設定**</br> Adobe Analytics実装で既にAdobe Experience Platform Web SDK を使用している場合は、データストリームを設定することで Platform へのデータ送信を開始できます。 または、既に Platform にデータを送信している場合は、Platform データセットとCustomer Journey Analyticsの間に接続を作成するだけで済みます。<p>Customer Journey Analyticsで使用するデータを Platform に送信する前に、組織や使用するその他の Platform アプリケーションの特定のニーズに合わせてAdobe Analytics スキーマを更新することを検討してください。</p><p>基本的な手順は次のとおりです。</p><ol><li>Platform へのデータ送信を開始します。<p>Adobe Analyticsの実装で既に Platform にデータを送信している場合、この手順は必要ありません。 このプロセスで後ほど説明するように、Platform データセットとCustomer Journey Analyticsの間で接続を作成するだけで済みます。</p></li><li>（オプション）時間があれば、組織の XDM スキーマを作成します。</li><li>（条件付き）XDM スキーマを作成した場合は、データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。</li></ol> | 低 | 高 |
 | **Analytics ソースコネクタの使用**</br> Adobe Analytics の実装が AppMeasurement または Analytics 拡張機能である場合は、Customer Journey Analytics のデータビューへのデータの送信を開始できます。<p>これは、Customer Journey Analytics にデータを取得する最も簡単な方法ですが、長期的には最も実行可能性が低い方法です。</p> | 低 | 低 |
 
 {style="table-layout:auto"}
