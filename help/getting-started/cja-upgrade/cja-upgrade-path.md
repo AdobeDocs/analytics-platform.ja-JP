@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
+source-git-commit: f1e1fdd5ca8aa51a28de13cdb028bf585a0324e7
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 63%
+source-wordcount: '2475'
+ht-degree: 61%
 
 ---
 
@@ -83,7 +83,7 @@ Adobe Analyticsの実装の種類ごとに、すべてのアップグレード�
 |---------|----------|
 | AppMeasurement | <ul><li>Experience Platform Web SDK の新しい実装</li><li>Web SDK への Adobe Analytics の移行</li><li>Analytics ソースコネクタ</li></ul> |
 | Adobe Analytics 拡張機能 | <ul><li>Experience Platform Web SDK の新しい実装</li><li>Web SDK への Adobe Analytics の移行</li><li>Analytics ソースコネクタ</li></ul> |
-| Web SDK | <ul><li>Adobe Analytics Web SDK 実装を設定して、Customer Journey Analytics にデータを送信します</li></ul> |
+| Web SDK | <ul><li>Platform にデータを送信するようにAdobe Analytics Web SDK を実装します。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Experience Platform Web SDK を使用してAdobe Analyticsを実装している�
 
 #### アップグレードパス
 
-+++Adobe Analytics Web SDK 実装を設定して、Customer Journey Analytics にデータを送信
++++Platform にデータを送信するようにAdobe Analytics Web SDK を実装します
 
 | メリット | デメリット |
 |----------|---------|
@@ -149,7 +149,7 @@ Experience Platform Web SDK を使用してAdobe Analyticsを実装している�
 
 #### スキーマの選択
 
-データをCustomer Journey Analyticsに送信するようにAdobe Analytics Web SDK 実装を設定できるアップグレードパスを選択した場合は、使用するスキーマを選択できます。
+Platform にデータを送信するようにAdobe Analytics Web SDK 実装を設定できるアップグレードパスを選択した場合は、使用するスキーマを選択できます。
 
 既存の Adobe Analytics スキーマを使用するか、他の Platform サービスの使用を開始する際に組織のニーズに合わせて独自の XDM スキーマに更新するかを選択できます。
 
@@ -165,7 +165,7 @@ Experience Platform Web SDK を使用してAdobe Analyticsを実装している�
 
 | メリット | デメリット |
 |----------|---------|
-| <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Customer Journey Analytics へのデータの送信を開始する前に必要な時間のかかるプロセスです。</li></ul> |
+| <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Platform へのデータ送信を開始する前に必要な、時間がかかるプロセスです。</li></ul> |
 
 +++
 
