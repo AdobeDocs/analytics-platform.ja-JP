@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4ad92a72f0ced81f84198da744fef9fe4c0a6b0b
+source-git-commit: cc74a8fdb3e44c5fa46e82a5111619970f090870
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 37%
+source-wordcount: '622'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 37%
 | **Customer Journey Analytics用 AI アシスタント** | Customer Journey AnalyticsUI で自然言語の質問をし、Customer Journey Analyticsドキュメントに基づいて回答を得ることができます。 （ドキュメントへのリンクを添付） | | 2024年5月30日（PT） |
 | **ストリーミングメディア：Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信** | Adobe Experience Platform Web SDK を使用して、Streaming Media web データをAdobe Experience Platform Edge Networkに送信できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべての Platform ソリューションにわたって Web 実装の統合的な収集手段が提供されます。 以前は、Streaming Media web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 [詳細情報](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge) | | 2024年5月31日（PT） |
 | **派生フィールド – 数学関数** | では、データビュー内で単純な数学演算子を使用して、ユーザーに関する質問に回答できます。 例えば、製品、保証、配送料を組み合わせることができます。 （ドキュメントへのリンクを添付） | | 2024年6月5日 |
-| **派生フィールド - Next または Previous 関数** | 次または前の値を確認できます。 例えば、選択したマーケティングチャネルの前に操作した以前のマーケティングチャネルは何でしたか？ または、選択したページの前後でユーザーが操作したページは何でしたか？ 最も人気のあるチャネルユーザーは、店舗に出向く前にどのようなことを行いますか？  （ドキュメントへのリンクを添付） | | 2024年6月12日 |
 | **Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する新しいドキュメント** | Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合、組織の現在のAdobe Analyticsの実装と長期目標に基づいて、複数のアップグレードオプションや多くの考慮事項に留意する必要があります。 次の内容をより深く理解するのに役立つ新しいドキュメントリソースが利用できるようになりました。<ul><li>存在するさまざまなアップグレードパス</li><li>組織の現在のAdobe Analytics実装に基づいて使用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスのステップバイステップのガイダンス</li><li>履歴データの処理に関する考慮事項</li></ul>[Customer Journey Analyticsへのアップグレードの概要](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | 今すぐ利用可能 |
 | **に関する新しいドキュメント [データ書き出しの使用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | この新しい節では、次のようなデータ書き出しの使用例について説明します<ul><li>データバックアップ</li><li>データの検証</li><li>Data Lake、Data Warehouseまたは BI ツール</li><li>AI/ML に対する対応</li></ul> Experience PlatformとCustomer Journey Analyticsの機能を使用して実装する方法について説明します。 | | 今すぐ利用可能 |
 
