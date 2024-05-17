@@ -4,9 +4,9 @@ title: Adobe Customer Journey Analyticsの AI アシスタント
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 02a0ad53d8c3ef0c10e2b9c2b11bb75a6a962cf0
+source-git-commit: 49f2c393bbd0bff28dd8bc166b3c60bc49d4df37
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,16 @@ Customer Journey Analytics用 AI アシスタントは、すべての製品層�
 >[!IMPORTANT]
 >
 >現時点では、Customer Journey Analytics用 AI アシスタントは組織内のデータオブジェクトに関する使用状況の質問には回答しません。
+
+## 機能へのアクセス
+
+この最初のリリースでは、AI アシスタント機能へのアクセスは、次のパラメータによって制御されます。
+
+* **ソリューションへのアクセス**:AI アシスタントはCustomer Journey Analyticsでは使用できますが、Adobe Analyticsでは使用できません。 また、Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDPやその他のExperience Platformアプリでも使用できます。
+
+* **契約によるアクセス**:Adobeの販売契約には、Adobeが AI/ML モデル開発でデータを使用できるようにする句を含める必要があります（句 6.2）。
+
+* **権限**：です [!UICONTROL Adobe Admin Console] [!UICONTROL レポートツール] 「AI Assistant ドキュメント」権限により、このツールへのアクセスが決まります。 この権限は、5 月中旬にレポートツール セクションに追加される予定です。 必ずを作成してください。 [製品プロファイル](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) この権限が付与されたAdmin Consoleで、このプロファイルにユーザーを手動で追加します。
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
