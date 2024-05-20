@@ -1,18 +1,18 @@
 ---
-title: Customer Journey AnalyticsでのAdobe Analytics レポートスイートデータの使用
+title: Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用
 description: Adobe Experience Platform および Customer Journey Analytics に取り込むための Adobe Analytics レポートスイートの設定方法
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Customer Journey AnalyticsでのAdobe Analytics レポートスイートデータの使用
+# Customer Journey Analytics での Adobe Analytics レポートスイートデータの使用
 
 Adobe Analytics のお客様は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を使用することで、Adobe Experience Platform および Customer Journey Analytics で、簡単にレポートスイートを活用できます。その方法について、次に説明します。
 

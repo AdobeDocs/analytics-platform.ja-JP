@@ -6,19 +6,19 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 # 基本分析の実行
 
-Customer Journey Analyticsでは、Analysis Workspaceの機能と柔軟性を使用してデータを分析できます。
+Customer Journey Analytics では、Analysis Workspace の機能と柔軟性を使用してデータを分析できます。
 
 >[!TIP]
 >
->Analysis Workspaceで利用できるデータがない場合は、に従っていることを確認します [データ取得プロセス](/help/data-ingestion/data-ingestion.md)。このプロパティには、次のものが含まれます。<ul><li>[接続の作成](/help/connections/create-connection.md#create-and-configure-the-connection) </br>新しいデータ、バックフィルデータ、またはその両方を読み込むように接続が設定されていることを確認します。</li><li>[データセットを追加](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[データビューの作成](/help/data-views/create-dataview.md)</li></ul>
+>Analysis Workspace で使用可能なデータがない場合は、以下を含む[データ取り込みプロセス](/help/data-ingestion/data-ingestion.md)に従っていることを確認します。<ul><li>[接続を作成](/help/connections/create-connection.md#create-and-configure-the-connection) </br>新しいデータ、バックフィルデータ、またはその両方を読み込むように接続が設定されていることを確認します。</li><li>[データセットを追加](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[データビューの作成](/help/data-views/create-dataview.md)</li></ul>
 
 ディメンションや指標を自由に試してドラッグし、ディメンションや指標のアトリビューション設定、フレンドリ名、タイムゾーン、セッション設定などを変更できます。
 

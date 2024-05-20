@@ -6,15 +6,15 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # セッション設定
 
-Customer Journey Analyticsとして、ユーザーによるデジタルエクスペリエンスとのやり取りに合わせて、任意の方法でセッションを定義できます。 セッション設定はデータビュー内で行います。
+Customer Journey Analytics では、ユーザーがどのようにデジタルエクスペリエンスを操作するかに合わせて、任意の方法でセッションを定義できます。セッション設定は、データビュー内で行います。
 
 セッション設定の定義は非破壊的で、基になるデータを変更しません。Workspace プロジェクトの基盤として、複数のデータビュー（それぞれに特定のセッション設定の定義を含む）を設定できます。
 
