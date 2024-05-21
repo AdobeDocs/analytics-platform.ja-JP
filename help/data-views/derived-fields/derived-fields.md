@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
+source-git-commit: 09da072a3863a2d0a0ed7d90802f65b64f6f753c
 workflow-type: tm+mt
-source-wordcount: '5986'
+source-wordcount: '5987'
 ht-degree: 13%
 
 ---
@@ -1287,7 +1287,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | 関数 | 制限事項 |
 |---|---|
 | <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの場合</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
-| <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>関数あたり 100 行</li></ul> |
+| <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの関数を連結</li></ul> |
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの検索と置換関数</li></ul> |
 | <p>ルックアップ</p> | <ul><li>派生フィールドごとに 5 つのルックアップ関数</li></ul> |
