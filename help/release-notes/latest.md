@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7619818cafec3891379099c31fe46dd803b378c7
+source-git-commit: cb3fa165901f9df658709e5118d2cc2d7367d9de
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 35%
+source-wordcount: '714'
+ht-degree: 33%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 35%
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **BI 拡張機能** | BI 拡張機能を使用すると、Customer Journey Analyticsで定義したデータ・ビューへの SQL アクセスが可能になります。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension) | | 2024年5月15日（PT） |
-| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul> [フォローする詳細情報] |  | 2024 年 5 月下旬～6 月上旬 |
-| **Customer Journey Analytics用 AI アシスタント** | Customer Journey AnalyticsUI で自然言語の質問をし、Customer Journey Analyticsドキュメントに基づいて回答を得ることができます。 （ドキュメントへのリンクを添付） | | 2024年5月30日（PT） |
-| **ストリーミングメディア：Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信** | Adobe Experience Platform Web SDK を使用して、Streaming Media web データをAdobe Experience Platform Edge Networkに送信できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべての Platform ソリューションにわたって Web 実装の統合的な収集手段が提供されます。 以前は、Streaming Media web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 [フォローする詳細情報] | | 2024年5月31日（PT） |
-| **派生フィールド – 数学関数** | では、データビュー内で単純な数学演算子を使用して、ユーザーに関する質問に回答できます。 例えば、製品、保証、配送料を組み合わせることができます。 （ドキュメントへのリンクを添付） | | 2024年6月5日 |
-| **書き出しと読み込みに使用されるアカウントと場所を共有する** | ユーザーは、作成したアカウントと場所を、組織内のすべてのユーザーが使用できるようになりました。 アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。<p>以前は、アカウントと場所は、それらを作成したユーザーのみが使用できました。</p><p>これらの設定は、ユーザーが次の場合に使用できます [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). </p> | 2024年6月 | 2024年6月 |
+| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul> <p>（フォローするための更新されたドキュメントリンク）</p> |  | 2024 年 5 月下旬～6 月上旬 |
+| **Customer Journey Analytics用 AI アシスタント** | Customer Journey AnalyticsUI で自然言語の質問をし、Customer Journey Analyticsドキュメントに基づいて回答を得ることができます。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年5月30日（PT） |
+| **ストリーミングメディア：Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信** | Adobe Experience Platform Web SDK を使用して、Streaming Media web データをAdobe Experience Platform Edge Networkに送信できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべての Platform ソリューションにわたって Web 実装の統合的な収集手段が提供されます。 以前は、Streaming Media web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年5月31日（PT） |
+| **派生フィールド – 数学関数** | では、データビュー内で単純な数学演算子を使用して、ユーザーに関する質問に回答できます。 例えば、製品、保証、配送料を組み合わせることができます。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年6月5日 |
+| **書き出しと読み込みに使用されるアカウントと場所を共有する** | ユーザーは、作成したアカウントと場所を、組織内のすべてのユーザーが使用できるようになりました。 アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。<p>以前は、アカウントと場所は、それらを作成したユーザーのみが使用できました。</p><p>これらの設定は、ユーザーがクラウドの書き出しアカウントを設定し、クラウドの書き出し場所を設定する際に使用できます。</p> <p>（フォローするための更新されたドキュメントリンク）</p> | 2024年6月 | 2024年6月 |
 | **Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する新しいドキュメント** | Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合、組織の現在のAdobe Analyticsの実装と長期目標に基づいて、複数のアップグレードオプションや多くの考慮事項に留意する必要があります。 次の内容をより深く理解するのに役立つ新しいドキュメントリソースが利用できるようになりました。<ul><li>存在するさまざまなアップグレードパス</li><li>組織の現在のAdobe Analytics実装に基づいて使用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスのステップバイステップのガイダンス</li><li>履歴データの処理に関する考慮事項</li></ul>[Customer Journey Analyticsへのアップグレードの概要](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | 今すぐ利用可能 |
 | **に関する新しいドキュメント [データ書き出しの使用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | この新しい節では、次のようなデータ書き出しの使用例について説明します<ul><li>データバックアップ</li><li>データの検証</li><li>Data Lake、Data Warehouseまたは BI ツール</li><li>AI/ML に対する対応</li></ul> Experience PlatformとCustomer Journey Analyticsの機能を使用して実装する方法について説明します。 | | 今すぐ利用可能 |
 
