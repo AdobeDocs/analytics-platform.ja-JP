@@ -5,10 +5,10 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 16%
+source-wordcount: '1823'
+ht-degree: 18%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 16%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信するAmazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、次のものが含まれていることを確認します `S3:PutObject` このバケットにファイルをアップロードするための権限。 </p><p>バケット名は、特定の命名規則を満たす必要があります。 例えば、3 ～ 63 文字の長さにする必要があり、小文字、数字、ドット （.）、ハイフン （–）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信するAmazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、次のものが含まれていることを確認します `S3:PutObject` このバケットにファイルをアップロードするための権限。 </p><p>バケット名は、特定の命名規則を満たす必要があります。例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。[命名規則の完全なリストについて詳しくは、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
@@ -125,11 +125,9 @@ ht-degree: 16%
 
 1. が含まれる [!UICONTROL **場所のプロパティ**] の節 [!UICONTROL **場所を追加**] ダイアログボックスで、次の情報を指定してGoogle Cloud Platform の場所を設定します。
 
-   <!-- still need to update; can't create GCP account -->
-
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織がを使用している場合 [組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints) 許可リストでGoogle Cloud Platform アカウントのみを許可するには、Adobeが所有する次のGoogle Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
