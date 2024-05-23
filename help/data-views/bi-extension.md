@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
 workflow-type: tm+mt
-source-wordcount: '2747'
-ht-degree: 75%
+source-wordcount: '2770'
+ht-degree: 74%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 75%
 
 [!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](./data-views.md)への SQL アクセスが可能になります。データエンジニアやアナリストは、Power BI、Tableau またはその他のビジネスインテリジェンスツールやビジュアライゼーションツール（以降、BI ツールと呼びます）に精通している可能性があります。Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
-Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)は、Experience Platform のデータレイクで使用可能なデータへの SQL インターフェイスです。[!DNL Customer Journey Analytics BI extension] を有効にすると、[!DNL Query Service] の機能が拡張され、Customer Journey Analytics データビューを [!DNL Query Service] セッションのテーブルまたはビューとして表示できるようになります。その結果、[!DNL Query Service] を PostgresSQL インターフェイスとして使用するビジネスインテリジェンスツールは、この拡張機能のメリットをシームレスに受けられます。
+Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)は、Experience Platform のデータレイクで使用可能なデータへの SQL インターフェイスです。[!DNL Customer Journey Analytics BI extension] を有効にすると、[!DNL Query Service] の機能が拡張され、Customer Journey Analytics データビューを [!DNL Query Service] セッションのテーブルまたはビューとして表示できるようになります。その結果、[!DNL Query Service] を PostgresSQL インターフェイスとして使用するビジネスインテリジェンスツールは、この拡張機能のメリットをシームレスに受けられます。
 
 主なメリットは次のとおりです。
 
@@ -184,7 +184,7 @@ Adobe Experience Platformで：
 
 ## 機能
 
-デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。例えば、という名前のデータビューです。 [!UICONTROL マイ Web データ ビュー] というビュー名があります `my_web_data_view`.
+デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。例えば、という名前のデータビューです。 [!UICONTROL マイ Web データ ビュー] というビュー名があります `my_web_data_view`. データビューの BI ツールで使用する優先名を定義できます。 参照： [データ表示設定](create-dataview.md#settings) を参照してください。
 
 データビュー ID をテーブル名として使用する場合は、接続時にデータベース名にオプションの `CJA_USE_IDS` 設定を追加できます。例えば、`prod:cja?CJA_USE_IDS` は、`dv_ABC123` のような名前でデータビューを表示します。
 
