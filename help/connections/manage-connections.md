@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '2995'
 ht-degree: 14%
 
 ---
@@ -208,7 +208,7 @@ ht-degree: 14%
 
 「」を選択します **[!UICONTROL 使用方法]** tab キーを押してインターフェイスにアクセスします。
 
-使用状況をレポートするには：
+### 使用状況のレポート
 
 1. を選択 **[!UICONTROL 時間範囲]**. 以下から選択できます **[!UICONTROL 過去 6 か月]**, **[!UICONTROL 年度累計]**、または **[!UICONTROL 過去 2 年間]**.
 1. を選択 **[!UICONTROL 間隔]**. 以下から選択できます **[!UICONTROL 毎月]** または **[!UICONTROL 毎四半期]**.
