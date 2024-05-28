@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2996'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 14%
 ## リスト
 
 この [!UICONTROL リスト] 接続のデフォルトのインターフェイスはインターフェイスです。 選択されていない場合は、 **[!UICONTROL リスト]** tab キーを押してインターフェイスにアクセスします。
+
+![リスト表示](assets/list-view.png)
 
 この [!UICONTROL リスト] インターフェイスには、使用可能なすべての接続のテーブルが表示されます。 検索を使用して、接続をすばやく検索できます ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックス。
 
@@ -201,6 +203,8 @@ ht-degree: 14%
 ## 用途
 
 この [!UICONTROL 使用方法] インターフェイスには、すべての接続における取り込まれた行とレポート可能な行の使用状況が表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。
+
+![usage-view](assets/usage-view.png)
 
 「」を選択します **[!UICONTROL 使用方法]** tab キーを押してインターフェイスにアクセスします。
 
