@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+source-git-commit: dcd7484a98363a6a818b59e9e183f699eecc1ed4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '710'
 ht-degree: 79%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 79%
 | **BI 拡張機能** | BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/bi-extension) | | 2024年5月15日（PT） |
 | **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul> <p>（フォローするための更新されたドキュメントリンク）</p> |  | 2024年5月下旬～6月上旬 |
 | **Customer Journey Analytics 向けの AI アシスタント** | Customer Journey AnalyticsUI で自然言語の質問をし、Customer Journey Analyticsドキュメントに基づいて回答を得ることができます。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年5月30日（PT） |
-| **ストリーミングメディア：Web SDK を使用した Adobe Experience Platform Edge Network への web データの送信** | Adobe Experience Platform Web SDK を使用して、ストリーミングメディア web データを Adobe Experience Platform Edge Network に送信できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供できるので、レポート対象のトラッキングデータが増加します。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションにわたる web 実装に統一された収集方法が提供されます。以前は、Streaming Media web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年5月31日（PT） |
+| **ストリーミングメディア：Web SDK を使用した Adobe Experience Platform Edge Network への web データの送信** | Adobe Experience Platform Web SDK を使用して、ストリーミングメディア web データを Adobe Experience Platform Edge Network に送信できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供できるので、レポート対象のトラッキングデータが増加します。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションにわたる web 実装に統一された収集方法が提供されます。以前は、Streaming Media web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 <p>[詳細情報](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/edge-web-sdk)</p> | | 2024年5月29日（PT） |
 | **派生フィールド - 数学関数** | データビュー内で簡単な数学演算子を実行して、ユーザーに関する質問に回答できます。例えば、製品、保証、配送料を組み合わせることができます。 <p>（フォローするための更新されたドキュメントリンク）</p> | | 2024年6月5日 |
 | **書き出しと読み込みに使用されるアカウントと場所を共有する** | ユーザーは、作成したアカウントと場所を、組織内のすべてのユーザーが使用できるようになりました。 アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。<p>以前は、アカウントと場所は、それらを作成したユーザーのみが使用できました。</p><p>これらの設定は、ユーザーがクラウドの書き出しアカウントを設定し、クラウドの書き出し場所を設定する際に使用できます。</p> <p>（フォローするための更新されたドキュメントリンク）</p> | 2024年6月12日 | 2024年6月30日 |
 | **Adobe Analytics から Customer Journey Analytics へのアップグレードに関する新しいドキュメント** | Adobe Analytics から Customer Journey Analytics にアップグレードする組織の場合、組織の現在の Adobe Analytics 実装と長期目標に基づいて、複数のアップグレードオプションと多くの考慮事項があることに留意する必要があります。次の内容に対する理解を深めるのに役立つ、新しいドキュメントリソースが利用できるようになりました。<ul><li>存在する様々なアップグレードパス</li><li>組織の現在の Adobe Analytics 実装に基づいて利用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスの段階的なガイダンス</li><li>履歴データの処理に関する考慮事項</li></ul>[詳しくは、Customer Journey Analytics へのアップグレードを参照してください](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted)。 | | 今すぐ利用可能 |
