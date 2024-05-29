@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: e8057ea64c8a5393790700da2fee6144161cb58a
+source-git-commit: 6b1761baec8cb1b102943ef7145403ccd2dbf840
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 76%
+source-wordcount: '1088'
+ht-degree: 78%
 
 ---
 
@@ -323,11 +323,12 @@ ht-degree: 76%
    + [よくある質問](../stitching/faq.md)
 
 + アドビの統合 {#integrations}
-   + [AdobeソリューションとCustomer Journey Analyticsの概要の統合](/help/integrations/overview.md)
-   + [Adobe Analytics と Customer Journey Analytics の統合](/help/integrations/aa.md)
-   + [Journey Optimizer データとCustomer Journey Analyticsの統合](/help/integrations/ajo.md)
-   + [意思決定管理データとCustomer Journey Analyticsの統合](/help/integrations/ajo-od.md)
-   + [顧客 AI とCustomer Journey Analyticsの統合](/help/integrations/customer-ai.md)
+   + [概要](/help/integrations/overview.md)
+   + [Adobe Analyticsの統合](/help/integrations/aa.md)
+   + [Target の統合](/help/integrations/cja4t.md)
+   + [Journey Optimizer データの統合](/help/integrations/ajo.md)
+   + [意思決定管理データの統合](/help/integrations/ajo-od.md)
+   + [顧客 AI の統合](/help/integrations/customer-ai.md)
 
 + データガバナンス {#cja-privacy}
    + [データガバナンス](../privacy/privacy-overview.md)
