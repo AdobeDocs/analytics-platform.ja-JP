@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >Customer Journey Analytics用 AI アシスタントは現在ベータ版です。 機能とそのドキュメントは変更される場合があります。
 
-AI アシスタントは、Adobe Customer Journey Analyticsの概念や用語を移動して理解するための UI 機能です。 Customer Journey Analyticsの AI アシスタントは、Adobe Experience Leagueのドキュメントでトレーニングを受けます。 質問すると、AI アシスタントは迅速な学習を可能にする便利な回答で応答します。
+AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、エキスパートでないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+
+Customer Journey Analyticsの AI アシスタントは、Adobe Experience Leagueのドキュメントでトレーニングを受けます。 質問すると、AI アシスタントは迅速な学習を可能にする便利な回答で応答します。
 
 初心者ユーザーであれば、AI アシスタントを使用してCustomer Journey Analyticsのコンセプトを学習し、なじみのない製品や機能に自分をオンボーディングできます。 経験豊富なユーザーは、AI アシスタントを使用して、より高度なユースケースやヒントやテクニックを提示できます。
 
@@ -58,6 +60,6 @@ Customer Journey Analytics用 AI アシスタントは、すべての製品層�
 
    ![質問ボックス](assets/ai-asst2.png)
 
-1. （オプション）ソースを表示するには、 **[!UICONTROL ソースを表示]**、および回答に情報を提供したドキュメントソースが表示されます。
+1. （オプション）ソースを表示するには、 **[!UICONTROL ソースを表示]**、および回答に情報を提供したドキュメントソース（1 つまたは複数）が表示されます。
 
 1. （任意）回答の有用性について、サムズアップまたはサムズダウンの投票を提供することもできます。
