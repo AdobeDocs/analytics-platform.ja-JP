@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: 9659ebfc267be769c7a87c01b129245c97b82a95
+source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,11 @@ AI アシスタントは、Adobe Customer Journey Analyticsの概念や用語を
 * Customer Journey Analyticsの用途を教えてください。
 * データビューを設定するにはどうすればよいですか？
 
-ドキュメント取得モデルは、Customer Journey Analyticsに基づいてトレーニングされます。 Adobe TargetやAdobe Creative Cloudスイートなど、他のAdobe製品に関する質問など、Customer Journey Analytics範囲外の質問には回答できません。
+Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをトレーニングする。 データ分析などのその他の機能は、後日展開される予定です。
+
+Adobe TargetやAdobe Creative Cloudスイートなど、他のAdobe製品に関する質問など、Customer Journey Analytics範囲外の質問には回答できません。
 
 Customer Journey Analytics用 AI アシスタントは、すべての製品層で使用できます。
-
->[!IMPORTANT]
->
->現時点では、Customer Journey Analytics用 AI アシスタントは組織内のデータオブジェクトに関する使用状況の質問には回答しません。
 
 ## 機能へのアクセス
 
@@ -46,7 +44,7 @@ Customer Journey Analytics用 AI アシスタントは、すべての製品層�
 
 * **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 AI アシスタントを組織で使用する前に、会社は GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**：です [!UICONTROL Adobe Admin Console] [!UICONTROL レポートツール] 「AI Assistant ドキュメント」権限により、このツールへのアクセスが決まります。 この権限は、5 月中旬にレポートツール セクションに追加される予定です。 必ずを作成してください。 [製品プロファイル](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) この権限が付与されたAdmin Consoleで、このプロファイルにユーザーを手動で追加します。
+* **権限**：です [!UICONTROL Adobe Admin Console] [!UICONTROL レポートツール] 「AI アシスタント：製品ナレッジ」権限により、このツールへのアクセスが決定します。 この権限は、5 月中旬にレポートツール セクションに追加される予定です。 製品プロファイル管理者は、 [製品プロファイル](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) この権限が付与されたAdmin Consoleで、このプロファイルにユーザーを手動で追加します。
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
