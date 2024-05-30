@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
+source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
 workflow-type: tm+mt
-source-wordcount: '3650'
-ht-degree: 69%
+source-wordcount: '3667'
+ht-degree: 72%
 
 ---
 
@@ -20,11 +20,12 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年5月** | |
+| Target の統合 | 追加済み [Adobe統合節への記事](/help/integrations/cja4t.md) target とCustomer Journey Analyticsの統合方法については、を参照してください。 |
 | 組織ポリシーの制約を使用しながらCustomer Journey AnalyticsレポートをGoogle Cloud Platform に書き出す場合に必要な情報です | Adobeが所有するGoogle Cloud Platform 組織 ID をに追加しました [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md) Google Cloud Platform へのCustomer Journey Analyticsレポートの書き出しに関するドキュメント。 <p>この情報は、を使用する組織の場合にのみ必要です [組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints) （Google Cloud Platform の場合）。</p> |
 | プロジェクトへのコンポーネントの追加に関するドキュメント | 方法に関する一般情報を追加しました [様々なタイプのコンポーネントをAnalysis Workspaceのプロジェクトに追加します](/help/components/use-components-in-workspace.md). |
 | データ書き出しの使用例 | を説明する一連の新しい記事 [データ書き出しのユースケース](/help/use-cases/data-export/overview.md) Experience PlatformとCustomer Journey Analytics機能を使用してこれらのユースケースを実装する方法 |
-| Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する新しいドキュメント | Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合、組織の現在のAdobe Analyticsの実装と長期目標に基づいて、複数のアップグレードオプションや多くの考慮事項に留意する必要があります。<p>次の内容をより深く理解するのに役立つ新しいドキュメントリソースが利用できるようになりました。</p><ul><li>存在するさまざまなアップグレードパス</li><li>組織の現在のAdobe Analytics実装に基づいて使用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスのステップバイステップのガイダンス</li><li>履歴データの処理に関する考慮事項</li><li>その他</li></ul><p>[Customer Journey Analyticsへのアップグレードの概要](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| カスタム日付範囲に関するドキュメントを更新しました | に関連するスクリーンショットと手順を更新しました [カスタム日付範囲の作成](/help/components/date-ranges/custom-date-ranges.md) 現在の製品の機能やデザインに合わせるために。 |
+| Adobe Analytics から Customer Journey Analytics へのアップグレードに関する新しいドキュメント | Adobe Analytics から Customer Journey Analytics にアップグレードする組織の場合、組織の現在の Adobe Analytics 実装と長期目標に基づいて、複数のアップグレードオプションと多くの考慮事項があることに留意する必要があります。<p>次の内容に対する理解を深めるのに役立つ、新しいドキュメントリソースが利用できるようになりました。</p><ul><li>存在する様々なアップグレードパス</li><li>組織の現在の Adobe Analytics 実装に基づいて利用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスの段階的なガイダンス</li><li>履歴データの処理に関する考慮事項</li><li>その他</li></ul><p>[詳しくは、Customer Journey Analytics へのアップグレードを参照してください](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
+| カスタム日付範囲に関するドキュメントを更新 | 現在の製品の機能とデザインに一致させるために、[カスタム日付範囲の作成](/help/components/date-ranges/custom-date-ranges.md)に関連するスクリーンショットと手順を更新しました。 |
 | Dimensionに関する概要 | に関する情報を追加しました [寸法](/help/components/dimensions/overview.md). |
 | ソースコネクタの例 | 方法を説明する際に使用できるソースコネクタの例を追加しました [ソースコネクタの使用](/help/data-ingestion/sources.md#use-a-source-connector) データの取り込み用。 |
 | **2024年4月** | |
