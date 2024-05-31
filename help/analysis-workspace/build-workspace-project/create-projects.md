@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '681'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -78,21 +78,21 @@ Analysis Workspace で提供される多くのパネルは、少数のユーザ�
 >
 >各コンポーネントについて詳しくは、左側のパネルでコンポーネントの名前の横にある情報アイコンを選択するか、[コンポーネントの概要](/help/components/overview.md)を参照してください。
 
-Analysis Workspaceでコンポーネントをプロジェクトに追加する方法に関する基本情報を以下に示します。 様々なタイプのコンポーネント（ディメンション、指標、フィルター、日付範囲）の追加について詳しくは、 [Analysis Workspaceのコンポーネントの使用](/help/components/use-components-in-workspace.md).
+Analysis Workspace のプロジェクトにコンポーネントを追加する方法に関する基本情報を以下に示します。様々なタイプのコンポーネント（ディメンション、指標、フィルター、日付範囲）の追加について詳しくは、[Analysis Workspace でのコンポーネントの使用](/help/components/use-components-in-workspace.md)を参照してください。
 
-Analysis Workspaceでコンポーネントをプロジェクトに追加するには：
+Analysis Workspace のプロジェクトにコンポーネントを追加するには：
 
 1. 左側のパネルにある&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンを選択します。
 
    ![選択したコンポーネントアイコンおよび使用可能なディメンションのリスト。](assets/build-components.png)
 
-1. 追加するコンポーネントまでスクロールするか検索し、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
+1. 追加するコンポーネントまでスクロールまたは検索し、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
 
    例えば、フィルターをパネルヘッダーのフィルタードロップゾーンにドラッグできます。
 
-   ![ドロップゾーンにフィルターをドロップ](assets/filter-dropzone.png)
+   ![ドロップゾーンでのフィルターのドロップ](assets/filter-dropzone.png)
 
-   プロジェクトへのコンポーネントの追加について詳しくは、 [Analysis Workspaceのコンポーネントの使用](/help/components/use-components-in-workspace.md).
+   プロジェクトへのコンポーネントの追加について詳しくは、[Analysis Workspace でのコンポーネントの使用](/help/components/use-components-in-workspace.md)を参照してください。
 
 1. （オプション）[プロジェクトの保存と共有](#save-and-share-the-project)の説明に従って、プロジェクトを共有します。
 
