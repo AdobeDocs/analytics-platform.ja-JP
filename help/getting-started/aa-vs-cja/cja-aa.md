@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 5db0a92a94d9683a414813ac302b49f908c3e324
+source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 96%
+source-wordcount: '2255'
+ht-degree: 86%
 
 ---
 
@@ -125,19 +125,20 @@ ht-degree: 96%
 
 | 機能 | さらに詳細を表示 |
 | --- | --- |
-| データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能 | Customer Journey Analytics を使用すると、複数のレポートスイートのデータを、Adobe Analytics の単一のレポートスイートであるかのように組み合わせることができます。 |
+| データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能 | Customer Journey Analyticsでは、次の操作を実行できます [データの結合](/help/connections/combined-dataset.md) まるでAdobe Analyticsの 1 つのレポートスイートであるかのように、複数のレポートスイートから。 |
 | あらゆる種類のデータへの対応 | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。[エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用すると、データを均等に表現および整理して、組み合わせや探索にすぐに使用できます。Adobe Analytics は、主に web およびモバイル分析データに焦点を当てており、[データを読み込む](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=ja)機能もいくつかあります。 |
-| クロスデバイス分析 | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
+| クロスデバイス分析 | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analyticsでは、この機能は、1 つのレポートスイートと 1 つのデバイスグラフの使用に制限されます。 |
 | ディメンションの機能強化 | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数の組み込みの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
-| 派生フィールド | 派生フィールドを使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、すべてのレポートに対して遡って適用できます。 |
-| セキュリティとプライバシーに関するオプションの機能強化 - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する追加のセキュリティオプションを提供します。Adobe Analytics は HIPAA に対応していません。 |
-| 実験分析 | Customer Journey Analytics では、接続の一部として定義された任意のデータソースから、任意の実験の上昇率と信頼性を評価できます。この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
-| 予測 | 予測は、Customer Journey Analytics に既に存在する履歴データに基づく時系列関連データの統計的予測を含む AI／ML 機能です。予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
-| ガイド付き分析 | ガイド付き分析は、ユーザーがデータのニーズを迅速にセルフサービスで取得できるようにするレポート形式で、高品質のインサイトを迅速に取得し、より多くのデータ主導型の意思決定を行うことができます。ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics のアドオンです。 |
+| 派生フィールド | [派生フィールド](/help/data-views/derived-fields/derived-fields.md) データへのレポート時の変換を許可します。 データは、その場で結合、修正、作成し、すべてのレポートに対して遡って適用できます。 |
+| セキュリティとプライバシーに関するオプションの機能強化 - HIPAA 対応 | Customer Journey Analyticsは HIPAA 対応で、 [追加のセキュリティオプション](/help/privacy/cmk.md) （規制への準拠のため）。 Adobe Analytics は HIPAA に対応していません。 |
+| 実験分析 | Customer Journey Analyticsは [実験の上昇率と信頼性の評価](/help/analysis-workspace/c-panels/experimentation.md) 接続の一部として定義された任意のデータソースから。 この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
+| 予測 | [予測](/help/analysis-workspace/c-forecast/forecasting.md) は、Customer Journey Analyticsに既に存在する履歴データに基づいて、時系列関連データの統計予測を含む AI/ML 機能です。 予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
+| ガイド付き分析 | [ガイド付き分析](/help/guided-analysis/overview.md) は、ユーザーがデータニーズを迅速にセルフサービスで提供できるようにするもので、高品質のインサイトを迅速に得て、よりデータ駆動型の意思決定を行うことができます。 ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics のアドオンです。 |
 | インテリジェントキャプション | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
-| レポート時の変換 | Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
+| レポート時の変換 | [データビュー](/help/data-views/data-views.md) Customer Journey Analyticsでは、接続からデータをさらに解釈できます。 実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | BI 拡張機能 | この [BI 拡張機能](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) では、CJA を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。 この拡張機能を使用すると、Analysis Workspaceや他の CJA レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。 これは、生データからレポート/指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
 | SQL アクセス | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
+| ステッチ | [ID ステッチ](/help/stitching/overview.md) （または単に、ステッチする）は、イベントデータセットがクロスチャネル分析に適していることを示す強力な機能です。 クロスチャネル分析は、Customer Journey Analyticsで処理できる主なユースケースで、共通の ID （ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | 無制限の顧客ディメンションと指標 | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。 <p>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。</p> |
 | 無制限の一意の値 | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL ユニーク数超過]ラベルが表示されることがありますが、発生する頻度ははるかに低いので、データにフィルターまたはセグメントを適用することで軽減できます。</p> |
 
