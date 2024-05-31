@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+source-git-commit: 8e6f16acc475fb89c9b9ba50ccef174d3c7b10ea
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 99%
+source-wordcount: '2198'
+ht-degree: 96%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 99%
 | ガイド付き分析 | ガイド付き分析は、ユーザーがデータのニーズを迅速にセルフサービスで取得できるようにするレポート形式で、高品質のインサイトを迅速に取得し、より多くのデータ主導型の意思決定を行うことができます。ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics のアドオンです。 |
 | インテリジェントキャプション | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
 | レポート時の変換 | Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
+| BI 拡張機能 | BI 拡張機能を使用すると、CJA を PowerBI や Tableau などの一般的な BI 視覚化ツールに直接接続でき、Analysis Workspaceや他の CJA レポートインターフェイスと正確に一致する BI レポートを作成できます。 これは、生データからレポート/指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
 | SQL アクセス | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | 無制限の顧客ディメンションと指標 | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。 <p>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。</p> |
 | 無制限の一意の値 | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL ユニーク数超過]ラベルが表示されることがありますが、発生する頻度ははるかに低いので、データにフィルターまたはセグメントを適用することで軽減できます。</p> |
