@@ -5,8 +5,8 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
-workflow-type: ht
+source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 100%
 
@@ -27,12 +27,14 @@ ht-degree: 100%
 Customer Journey Analytics 接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) で次の権限が必要です。
 
 Adobe Experience Platform:
+
 * データモデリング：ビュースキーマ、スキーマの管理
 * データ管理：ビューデータセット，データセットの管理
 * データ取り込み：ソースの管理
 * ID 名前空間の表示
 
 Customer Journey Analytics
+
 * 製品管理者アクセス
 
 >[!IMPORTANT]
