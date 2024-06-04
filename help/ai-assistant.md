@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
+source-git-commit: fb9b0d2c8d2333aba83598ab1e1aea2370636002
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -32,6 +32,10 @@ Customer Journey Analyticsの AI アシスタントは、Adobe Experience League
 * Customer Journey Analyticsの用途を教えてください。
 * データビューを設定するにはどうすればよいですか？
 
+Adobe TargetやAdobe Creative Cloudスイートなど、他のAdobe製品に関する質問など、Customer Journey Analytics範囲外の質問には回答できません。
+
+Customer Journey Analytics用 AI アシスタントは、すべての製品層で使用できます。
+
 ## 製品に関する知識 {#knowledge}
 
 Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをトレーニングする。 データ分析などのその他の機能は、後日展開される予定です。
@@ -41,10 +45,6 @@ Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをト
 | 先を見越した学習 | <ul><li>Adobe AnalyticsとCustomer Journey Analyticsの違いは何ですか？</li><li>計算指標の作成方法</li></ul> |
 | 検出を開く | <ul><li>ワークスペースプロジェクトを書き出すにはどうすればよいですか？</li><li>重複する Workspace コンポーネントを見つけるにはどうすればよいですか？</li></ul> |
 | トラブルシューティング | <ul><li>データが CJA に取り込まれるまでにどのくらい時間がかかりますか？</li><li>Customer Journey Analytics接続に含めることができる派生フィールドはいくつですか？</li></ul> |
-
-Adobe TargetやAdobe Creative Cloudスイートなど、他のAdobe製品に関する質問など、Customer Journey Analytics範囲外の質問には回答できません。
-
-Customer Journey Analytics用 AI アシスタントは、すべての製品層で使用できます。
 
 ## 機能へのアクセス
 
