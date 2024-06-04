@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
+source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,15 @@ Customer Journey Analyticsの AI アシスタントは、Adobe Experience League
 * Customer Journey Analyticsの用途を教えてください。
 * データビューを設定するにはどうすればよいですか？
 
+## 製品に関する知識 {#knowledge}
+
 Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをトレーニングする。 データ分析などのその他の機能は、後日展開される予定です。
+
+| 製品に関する知識 | 例 |
+| --- | --- |
+| 先を見越した学習 | <ul><li>Adobe AnalyticsとCustomer Journey Analyticsの違いは何ですか？</li><li>計算指標の作成方法</li></ul> |
+| 検出を開く | <ul><li>ワークスペースプロジェクトを書き出すにはどうすればよいですか？</li><li>重複する Workspace コンポーネントを見つけるにはどうすればよいですか？</li></ul> |
+| トラブルシューティング | <ul><li>データが CJA に取り込まれるまでにどのくらい時間がかかりますか？</li><li>Customer Journey Analytics接続に含めることができる派生フィールドはいくつですか？</li></ul> |
 
 Adobe TargetやAdobe Creative Cloudスイートなど、他のAdobe製品に関する質問など、Customer Journey Analytics範囲外の質問には回答できません。
 
@@ -46,7 +54,10 @@ Customer Journey Analytics用 AI アシスタントは、すべての製品層�
 
 * **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 AI アシスタントを組織で使用する前に、会社は GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**：です [!UICONTROL Adobe Admin Console] [!UICONTROL レポートツール] 「AI アシスタント：製品ナレッジ」権限により、このツールへのアクセスが決定します。 この権限は、5 月中旬にレポートツール セクションに追加される予定です。 製品プロファイル管理者は、 [製品プロファイル](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) この権限が付与されたAdmin Consoleで、このプロファイルにユーザーを手動で追加します。
+* **権限**：の [!UICONTROL Adobe Admin Console], [!UICONTROL レポートツール] 「AI アシスタント：製品ナレッジ」権限により、このツールへのアクセスが決定します。
+A [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、Admin Consoleで次の手順に従う必要があります。
+   1. に移動します。 [!UICONTROL Admin Console] > [!UICONTROL 製品とサービス] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL 製品プロファイル] > [!UICONTROL 権限] > [!UICONTROL レポートツールを編集].
+   1. 「AI アシスタント：製品に関する知識」を追加します。
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
