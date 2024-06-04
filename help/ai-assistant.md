@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: fb9b0d2c8d2333aba83598ab1e1aea2370636002
+source-git-commit: f73e7e9be8593c3bbcad02925ab8b525694a4a15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをト
 A [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、Admin Consoleで次の手順に従う必要があります。
    1. に移動します。 [!UICONTROL Admin Console] > [!UICONTROL 製品とサービス] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL 製品プロファイル] > [!UICONTROL 権限] > [!UICONTROL レポートツールを編集].
    1. 「AI アシスタント：製品に関する知識」を追加します。
+      ![権限を追加](assets/image.png)
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
