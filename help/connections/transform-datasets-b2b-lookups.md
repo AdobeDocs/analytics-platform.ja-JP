@@ -4,10 +4,11 @@ description: 特定の B2B ルックアップスキーマのデータセット�
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -17,10 +18,10 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 この変換は、次のクラスに基づく、B2B ルックアップスキーマ用のデータを含んだデータセットでのみ使用できます。
 
-* XDM Business Account Person Relation
-* XDM Business Opportunity Person Relation
-* XDM Business Marketing List Members
-* XDM Business Campaign Members
+* [XDM ビジネスアカウント人物関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM ビジネスオポチュニティ人物関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM ビジネスキャンペーンメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 このようなデータセットの変換を有効にするには：
 
