@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6717'
+source-wordcount: '7147'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ ht-degree: 12%
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### 次または前
+
+フィールドを入力として受け取り、セッションまたは使用の範囲内で、そのフィールドの次または前の値を解決します。 これは、訪問およびイベント テーブルのフィールドにのみ適用されます。
+
++++ 詳細
+
+## 仕様 {#prevornext-io}
+
+| 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL メソッド]:<ul><li>前の値</li><li>次の値</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 索引]:<ul><li>数値</li></ul><li>[!UICONTROL 繰り返しを含める]:<ul><li>ブール値</li></ul></li><li>[!UICONTROL 「値なし」を含める]:<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## ユースケース {#prevornext-uc1}
+
+以下を理解する必要があります **次へ** または **前へ** 値は、受け取るデータのを、繰り返し値を考慮に入れて指定します。
+
+### データ {#prevornext-uc1-databefore}
+
+**例 1 – 繰り返しを含める処理**
+
+| 受信データ | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない |
+|---|---|---|---|---|
+| ホーム | ホーム | 検索 | *値なし* | *値なし* |
+| ホーム | 検索 | 検索 | ホーム | *値なし* |
+| 検索 | 検索 | 製品の詳細 | ホーム | ホーム |
+| 検索 | 製品の詳細 | 製品の詳細 | 検索 | ホーム |
+| 製品の詳細 | 検索 | 検索 | 検索 | 検索 |
+| 検索 | 製品詳細 | 製品の詳細 | 製品の詳細 | 製品の詳細 |
+| 製品の詳細 | 検索 | 検索 | 検索 | 検索 |
+| 検索 | 検索 | *値なし* | 製品の詳細 | 製品の詳細 |
+| 検索 | *値なし* | *値なし* | 検索 | 製品の詳細 |
+
+{style="table-layout:auto"}
+
+**例 2 – 処理には、受信したデータに空白の値を含めて繰り返しを含める**
+
+| 受信データ | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない |
+|---|---|---|---|---|
+| ホーム | ホーム | 検索 | *値なし* | *値なし* |
+| ホーム | ホーム | 検索 | ホーム | *値なし* |
+| ホーム | 検索 | 検索 | ホーム | *値なし* |
+| 検索 | 検索 | 製品の詳細 | ホーム | ホーム |
+|   |   |   |   |   |
+| 検索 | 検索 | 製品の詳細 | 検索 | ホーム |
+| 検索 | 製品の詳細 | 製品の詳細 | 検索 | ホーム |
+| 製品の詳細 | *値なし* | *値なし* | 検索 | 検索 |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#prevnext-uc1-derivedfield}
+
+を定義します `Next Value` または `Previous value` 派生フィールド。 を使用します [!UICONTROL 次または前] を選択するルールを定義する関数 [!UICONTROL 受信データ] フィールド、選択 [!UICONTROL 次の値] または [!UICONTROL 前の値] as [!UICONTROL メソッド], [!UICONTROL Session] 範囲として、の値を設定します。 [!UICONTROL 索引] 対象： `1`.
+
+![結合フィールドルールのスクリーンショット](assets/prevnext-next.png)
+
+## 詳細情報 {#prevnext-moreinfo}
+
+選択できるのは、「訪問」または「イベント」テーブルに属するフィールドのみです。
+
+[!UICONTROL 繰り返しを含める] の繰り返し値の処理方法を決定します [!UICONTROL 次または前] 関数。
+
+- 繰り返しのルックと、次または前の値を含めます。 次の場合 [!UICONTROL 繰り返しを含める] を選択すると、現在のヒットから次または前の値の連続した繰り返しが無視されます。
+
+- 選択したフィールドに（空白の）値がない行では、次または前の値が [!UICONTROL 次または前] 関数の出力
+
++++
 
 <!-- REGEX REPLACE -->
 
