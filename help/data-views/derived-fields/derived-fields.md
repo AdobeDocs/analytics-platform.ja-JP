@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
+source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
 workflow-type: tm+mt
-source-wordcount: '7147'
+source-wordcount: '7542'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ ht-degree: 12%
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -1002,6 +1002,85 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 +++
 
+<!-- MATH -->
+
+### Math
+
+数値フィールドに対して基本的な数学演算子（加算、減算、乗算、除算、累乗）を使用します。
+
++++ 詳細
+
+## 仕様 {#math-io}
+
+| 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>数値</li></ul> | <ul><li>1 つまたは複数の数値フィールド</li><li>1 つまたは複数の演算子（加算、減算、乗算、除算、累乗）</li><li>ユーザー入力値</li></ul> | <ul><li>`+` （追加）</li><li>`-` （減算）</li><li>`*` （multiply）</li><li>`/` （除算）</li><li>`^` （昇任）</li></ul> | <ul><li>派生フィールドあたり 25 操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+## ユースケース {#math-uc}
+
+インフレが原因で、取り込んだ CRM データの収益数を 5% のインフレで修正する必要があります。
+
+### 前のデータ {#math-uc-databefore}
+
+| CRM ID | 年間売上高 |
+|---|---:|
+| 1234 | 35,070,000 |
+| 4133 | 7,500,000 |
+| 8110 | 10,980 |
+| 2201 | 42,620 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#math-uc-derivedfield}
+
+を定義します `Corrected Annual Revenue` 派生フィールド。 を使用します [!UICONTROL MATH] 元の年間売上高の数値に 1.05 を乗算するルールを定義する関数。
+
+![数学ルールのスクリーンショット](assets/math.png)
+
+
+### 後のデータ {#math-uc-dataafter}
+
+| CRM ID | 修正済み年間収益 |
+|---|---:|
+| 1234 | 36,823,500 |
+| 4133 | 7,875,000 |
+| 8110 | 11,529,00 |
+| 2201 | 44,751 |
+
+{style="table-layout:auto"}
+
+## 詳細情報 {#math-more-info}
+
+式を作成するには、次の手順に従います。
+
+1. 数式フィールドと入力した値に一致する数値フィールドに入力するだけで、ポップアップメニューに表示されます。 または、左側のペインの使用可能なフィールドから数値フィールドをドラッグ&amp;ドロップすることもできます。
+   ![算術の詳細情報 1](assets/math-more-info-1.png)
+
+1. オペランドを追加（例： `*` 乗算）の後に別のフィールドまたは静的な値を指定します。 括弧を使用すると、より複雑な式を定義できます。
+
+1. 静的な値を挿入するには（例： `1.05`）、値を入力して選択します。 **[!UICONTROL 追加 *x* 静的値として]** または **[!UICONTROL 追加 – *x* 負の静的値として]** ポップアップメニューから選択します。
+   ![算術の詳細情報 2](assets/math-more-info-2.png)
+
+1. 緑のチェックマーク ![チェックマーク](./assets/checkmark.svg)</span> 数式が有効かどうかを示します。有効でない場合は、警告が表示されます <span style="color:red">![アラート](./assets/alert.svg)</span> とメッセージ <span style="color:#ea3829">[!UICONTROL 式が無効です].</span>
+   ![算術の詳細情報 3](assets/math-more-info-3.png)
+
+で静的な数値を使用する場合、いくつかの重要な考慮事項があります [!UICONTROL MATH] 関数：
+
+- 静的値はフィールドに関連付ける必要があります。 例えば、 [!UICONTROL MATH] 静的フィールドのみを含む関数はサポートされていません。
+- 累乗演算子（`ˆ`）に設定する必要があります。
+- 数式内で複数の静的値を使用している場合、数式を有効にするには、これらの静的値を括弧で囲む必要があります。 次に例を示します。
+
+   - この式はエラーを返します。
+     ![算術の詳細情報 4](assets/math-more-info-4.png)
+
+   - この式は有効です。
+     ![算術の詳細情報 5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### フィールドを結合
@@ -1544,7 +1623,9 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの検索と置換関数</li></ul> |
 | <p>ルックアップ</p> | <ul><li>派生フィールドごとに 5 つのルックアップ関数</li></ul> |
 | <p>小文字</p> | <ul><li>派生フィールドごとに 2 つの小文字の関数</li></ul> |
+| <p>Math</p> | <ul><li>派生フィールドあたり 25 操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> |
 | <p>フィールドを結合</p> | <ul><li>派生フィールドごとに 2 つの結合フィールド関数</li></ul> |
+| <p>次または前</p> | <ul><li>派生フィールドごとに 3 つの次または前の関数</li></ul> |
 | <p>正規表現による置換</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
 | <p>Split</p> | <ul><li>派生フィールドごとに 5 つの分割関数</li></ul> |
 | <p>トリミング</p> | <ul><li>派生フィールドごとに 1 つの Trim 関数</li></ul> |
