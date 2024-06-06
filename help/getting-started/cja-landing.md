@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6b5a9050d6c13e3c9d637a3ed992840a46058cee
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,24 @@ Customer Journey Analytics を使用すると、共通の顧客 ID に基づい�
 Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。最新の変更内容を常に把握するには、[ドキュメントの更新ページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
+
+>[!TAB AI アシスタント]
+
+AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、エキスパートでないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+
+[![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B ルックアップ]
+
+接続の設定の一環として、特定の B2B ルックアップスキーマのデータセットを変換して、B2B データに対するユーザーベースの検索をより適切にサポートできます。
+
+[![画像](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB 派生フィールド]
+
+新しい派生フィールド関数（数学、次または前）と追加の関数テンプレート（バウンス、毎月の目標、シンプルなボット検出など）を使用できます。
+
+[![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI 拡張機能*]
 
@@ -41,35 +59,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB 新しいドキュメント]
-
-新しいドキュメントが以下で利用可能になりました。<ul><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
-
-[![i画像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB 予測]
 
 予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する Analysis Workspace 機能です。予測は、時系列関連のデータに対してのみ使用できます。
 
 [![i画像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB ガイド付き分析* - リテンション率]
+>[!TAB 新しいドキュメント]
 
-目的の日付範囲内で最初にエンゲージメントした後に再来訪するユーザーの割合を示す、新しいビュータイプ。横軸は、ユーザーの最初のエンゲージメントからの日数を表します。縦軸は、再度エンゲージするユーザーの割合を表します。
+新しいドキュメントが以下で利用可能になりました。<ul><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
 
-[![i画像](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics の有料アドオンです。_</span>
-
-
->[!TAB ガイド付き分析* - トレンドライン]
-
-使用状況ビューでトレンドラインオーバーレイが使用できるようになりました。これは、データの、より明確なパターンを示すのに役立ちます。使用可能なトレンドラインのタイプは、線形、対数、移動平均です。
-
-[![画像](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_ガイド付き分析は、Adobe Product Analytics の一部で、Customer Journey Analytics の有料アドオンです。_</span>
+[![i画像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
