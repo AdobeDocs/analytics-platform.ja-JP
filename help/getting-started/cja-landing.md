@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 86%
+source-wordcount: '677'
+ht-degree: 81%
 
 ---
 
@@ -37,7 +37,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB 派生フィールド]
 
-新しい派生フィールド関数（数学、次または前）と追加の関数テンプレート（バウンス、毎月の目標、シンプルなボット検出など）を使用できます。
+新しい派生フィールド関数（数学、次または前）と追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、毎月の目標、シンプルなボット検出など）が使用できるようになりました。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -67,7 +67,7 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 >[!TAB 新しいドキュメント]
 
-新しいドキュメントが以下で利用可能になりました。<ul><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
+以下の場所で新しいドキュメントの節を利用できるようになりました。<ul><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
 
 [![i画像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -105,11 +105,12 @@ Audiences that are published from Customer Journey Analytics are now available i
     </tr>
 </table>
 
+
 ## ドキュメントの参照
 
 Customer Journey Analytics と Adobe Analytics の比較方法について説明します。また、ソリューションにデータを取り込み、そのデータと結果として得られる分析とレポートを準備、表示、分析、民主化する方法についても説明します。
 
-<table style="table-layout:auto">
+<table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
@@ -145,11 +146,12 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">チュートリアル</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics 製品の説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analyticsアドオン）製品の説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a>
+<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics商品の説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analyticsアドオン）製品の説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">CUSTOMER JOURNEY ANALYTICSAPI</a> - <a href="/help/ai-assistant.md">AI アシスタント</a>
 </td>
 <td><strong>データ取り込み</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概要</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">バッチ</a> - <a href="/help/data-ingestion/streaming.md">ストリーミング</a> - <a href="/help/data-ingestion/sources.md">ソース</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>
-</tr></table>
+</tr>
+</table>
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
 source-wordcount: '7542'
 ht-degree: 12%
@@ -1035,7 +1035,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#math-uc-derivedfield}
 
-を定義します `Corrected Annual Revenue` 派生フィールド。 を使用します [!UICONTROL MATH] 元の年間売上高の数値に 1.05 を乗算するルールを定義する関数。
+を定義します `Corrected Annual Revenue` 派生フィールド。 を使用します [!UICONTROL MATH] 元の年間売上高の数値に 1.05 を乗算するルールを定義する機能。
 
 ![数学ルールのスクリーンショット](assets/math.png)
 
