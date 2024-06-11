@@ -5,9 +5,9 @@ title: クラウドの書き出し場所とアカウントの管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 1%
 
 ## 場所を編集
 
+場所は、作成したユーザーまたはシステム管理者のみが編集できます。
+
+ロケーションを編集するには：
+
 1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 
 1. 「」を選択します [!UICONTROL **場所**] タブ。
@@ -95,6 +99,10 @@ ht-degree: 1%
 1. を選択 [!UICONTROL **削除**] もう一度確認します。
 
 ## アカウントの編集
+
+アカウントは、作成したユーザーまたはシステム管理者のみが編集できます。
+
+アカウントを編集するには：
 
 1. Customer Journey Analyticsで、を選択します。 [!UICONTROL **Components**] > [!UICONTROL **エクスポート**].
 

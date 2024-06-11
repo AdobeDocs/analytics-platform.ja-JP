@@ -5,10 +5,10 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
+source-git-commit: 1bf36f60b0b3aec04bb1452e5f63f97051d9bb50
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 18%
+source-wordcount: '1932'
+ht-degree: 20%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 18%
 
    場所ダイアログが表示されます。
 
-1. 次の情報を指定します。 |フィールド |関数 | |---------|----------| | [!UICONTROL **名前**] |場所の名前。  | | [!UICONTROL **説明**] | アカウント上の他の場所との区別に役立つ、場所の短い説明を入力します。 | | [!UICONTROL **場所アカウント**] |場所を作成するアカウントを選択します。 アカウントの作成方法については、を参照してください [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
+1. 次の情報を指定します。 |フィールド |関数 | |---------|----------| | [!UICONTROL **名前**] |場所の名前。  | | [!UICONTROL **説明**] | アカウント上の他の場所との区別に役立つ、場所の短い説明を入力します。 | | [!UICONTROL **組織内のすべてのユーザーが場所を利用できるようにする**] | **注意：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。 <p>組織内の他のユーザーが場所を使用できるようにするには、このオプションを有効にします。</p> <p>場所を共有する際は、次の点に注意してください。</p><ul><li>共有する場所の共有を解除することはできません。</li><li>共有場所は、その場所の所有者のみが編集できます。</li><li>場所を共有できるのは、その場所が関連付けられているアカウントも共有されている場合のみです。</li></ul> | | [!UICONTROL **場所アカウント**] |場所を作成するアカウントを選択します。 アカウントの作成方法については、を参照してください [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md). |
 
 1. Adobe Analytics の「[!UICONTROL **場所のプロパティ**]」セクションで、場所アカウントのアカウントタイプに固有の情報を指定します。
 
@@ -127,7 +127,7 @@ ht-degree: 18%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織がを使用している場合 [組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints) 許可リストでGoogle Cloud Platform アカウントのみを許可するには、Adobeが所有する次のGoogle Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>を付与したことを確認します `roles/storage.objectCreator` Adobeで提供されるプリンシパルへの許可。 （元本の確定時期 [Google Cloud Platform アカウントの設定](/help/components/exports/cloud-export-accounts.md).） <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
