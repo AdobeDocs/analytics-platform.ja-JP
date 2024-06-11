@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
 workflow-type: tm+mt
-source-wordcount: '3603'
-ht-degree: 84%
+source-wordcount: '3546'
+ht-degree: 83%
 
 ---
 
@@ -279,21 +279,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
-また、Experience Cloud ID を簡単に使用できるように、Experience Cloud ID サービス拡張機能を設定する必要もあります。Experience CloudID サービスは、すべてのAdobe Experience Cloud ソリューションをまたいで人物を識別します。
-
-Experience Cloud ID サービス拡張機能を作成および設定するには：
-
-1. 左パネルで「**[!UICONTROL 拡張機能]**」を選択します。
-
-2. 上部のバーで「**[!UICONTROL カタログ]**」をクリックします。
-
-3. Experience Cloud ID サービス拡張機能を検索またはスクロールし、「**[!UICONTROL インストール]**」をクリックしてインストールします。
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. すべての設定はデフォルトのままにします。
-
-5. 「**[!UICONTROL 保存]**」を選択します。
+Web SDK には、 [!UICONTROL Adobe Experience Cloud ID サービス] ネイティブなので、タグに ID サービス拡張機能を追加する必要はありません。
 
 #### **データ要素**
 
@@ -613,4 +599,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 次に、Edge Network 上でデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 次に、Edge Network上にデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
