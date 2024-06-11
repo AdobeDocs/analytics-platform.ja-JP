@@ -4,16 +4,20 @@ description: Customer Journey Analytics 用のプロトタイププロジェク�
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
 role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: fd033854a3b871c802c38c098d0907062a1c9c07
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 89%
+source-wordcount: '469'
+ht-degree: 81%
 
 ---
 
 # [!UICONTROL ラボ]ユーザーガイド
 
-[!UICONTROL ラボ]を使用すると、初期段階のアイデアのプロトタイピングを高速化できます。お客様の注力により、透過的に開発を促進するツールとプロセスを組み合わせたものです。新しいテクノロジーとの連携、価値ある洞察の発見、将来の機能の開発と優先事項への影響を可能にします。ラボを使用すると、Adobe Customer Journey Analyticsの革新的な機能に早期にアクセスし、自社のビジネス事例やデータの中で将来の機能を評価することができます。
+[!UICONTROL ラボ]を使用すると、初期段階のアイデアのプロトタイピングを高速化できます。お客様の注力により、透過的に開発を促進するツールとプロセスを組み合わせたものです。新しいテクノロジーとの連携、価値ある洞察の発見、将来の機能の開発と優先事項への影響を可能にします。ラボを使用すると、Adobe Customer Journey Analyticsの革新的な機能に早期にアクセスし、自社のビジネス事例やデータの中で今後の機能を評価できます。
+
+>[!IMPORTANT]
+>
+>Customer Journey Analyticsラボは、HIPAA に対応したサービスではなく、許可された医療データ（個人の医療Customer Journey Analyticsや PHI など）を含む、組織が情報の中で使用することが許可されている機密性の高い個人データの処理に使用することはできません。
 
 ## 要件
 
@@ -27,7 +31,7 @@ ht-degree: 89%
 
 1. [!UICONTROL Workspace]および[!UICONTROL ラボ]へのアクセス権をまだ持っていない場合は管理者に権限を問い合わせてください。
 
-1. Customer Journey Analyticsで、 **[!UICONTROL Labs]** タブをクリックします。
+1. Customer Journey Analyticsで、 **[!UICONTROL Labs]** タブ。
 
 ## プロトタイプの評価
 
@@ -55,7 +59,7 @@ ht-degree: 89%
 
 1. 「**[!UICONTROL フィードバックを与える]**」ボタンをクリックすると、プロトタイプの操作中はいつでも、メッセージボックスにフィードバックを入力できます。
 
-   ![フィードバックウィンドウ](assets/give_feedback.png)
+   ![Feedback window](assets/give_feedback.png)
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、フィードバックを送信します。
 
