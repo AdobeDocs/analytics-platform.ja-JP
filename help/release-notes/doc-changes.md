@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3731'
 ht-degree: 72%
 
 ---
@@ -21,7 +21,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | --- | --- |
 | **2024年6月** | |
 | AI アシスタント | 追加済み [詳細を見る](../ai-assistant.md) Customer Journey Analytics用の AI アシスタントで。 |
-| B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) （アカウント、商談、マーケティングリスト、キャンペーンを含む）、B2B ルックアップデータセットの変換が必要です。 |
+| B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) B2B ルックアップデータセットの変換を使用する（アカウント、オポチュニティ、マーケティングリスト、キャンペーンを含む）。 |
 | 派生フィールド関数と関数テンプレート | 追加の派生フィールド関数（[Math](/help/data-views/derived-fields/derived-fields.md#math), [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)）および [関数テンプレート](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **2024年5月** | |
 | Target の統合 | 追加済み [Adobe統合節への記事](/help/integrations/cja4t.md) target とCustomer Journey Analyticsの統合方法については、を参照してください。 |
