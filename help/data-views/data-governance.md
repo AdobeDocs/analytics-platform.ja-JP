@@ -4,10 +4,10 @@ description: Adobe Experience Platform で定義されたデータラベルと�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 950c121e6c889e202f048d4a33e8fecde3cd9efe
+source-git-commit: 6526ca2b7caaf64acf29d97c859c3e813d003d2d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 67%
+source-wordcount: '583'
+ht-degree: 45%
 
 ---
 
@@ -27,10 +27,10 @@ Experience Platformでデータセットを作成する場合は、以下を作�
 
 「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。これを行うにはポリシーを使用します。ポリシーを作成するには、 [EXPERIENCE PLATFORMUI](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) または経由 [Policy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) Experience Platformで。
 
-Customer Journey Analytics では、次の 2 つのアドビが定義するポリシーが表示され、レポートおよびダウンロード／共有に影響します。
+Experience Platformでは、次の 2 つのAdobe定義のポリシーを使用できます。これらのポリシーは、Customer Journey Analyticsに表示され、レポートやデータの書き出しに影響を与える可能性があります。
 
-* **[!UICONTROL Analytics の適用]** ポリシー
-* **[!UICONTROL ダウンロードの適用]**&#x200B;ポリシー
+* **[!UICONTROL 使用分析とユーザーベースの測定を制限]** ポリシー、使用する `C8` ラベル、
+* **[!UICONTROL データの書き出しを制限]** ポリシー、使用する `C12` ラベル。
 
 ## Customer Journey Analytics データビューでのデータラベルの表示
 
@@ -40,13 +40,13 @@ Customer Journey Analytics では、次の 2 つのアドビが定義するポ�
 | --- | --- |
 | スキーマフィールドの情報ボタン | このボタンをクリックすると、現在フィールドに適用される[!UICONTROL データ使用状況ラベル]が表示されます。<p>![](assets/data-label-left.png) |
 | [コンポーネント設定](/help/data-views/component-settings/overview.md)の下の右パネル | すべての[!UICONTROL データ使用状況ラベル]はここに一覧表示されます。<p>![](assets/data-label-right.png) |
-| データラベルを列として追加 | データビューの「[!UICONTROL 含まれるコンポーネント]」列に、「[!UICONTROL データ使用状況ラベル]」を列として追加できます。列セレクターアイコンをクリックし、「**[!UICONTROL データ使用状況ラベル]**」を選択します。<p>![](assets/data-label-column.png) |
+| データラベルを列として追加 | データビューの「[!UICONTROL 含まれるコンポーネント]」列に、「[!UICONTROL データ使用状況ラベル]」を列として追加できます。列セレクターアイコンを選択し、 **[!UICONTROL データ使用ラベル]**:<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
 ## データビューのデータガバナンスラベルに対するフィルター
 
-データビューエディターで、左側のパネルの[!UICONTROL フィルター]アイコンをクリックし、**[!UICONTROL データガバナンス]**&#x200B;および&#x200B;**[!UICONTROL ラベル]**&#x200B;のタイプで、データビューコンポーネントをフィルタリングします。
+データビューエディターで、 [!UICONTROL フィルター] アイコンをクリックし、データビューコンポーネントを次の基準でフィルタリングします **[!UICONTROL データガバナンス]** およびタイプ **[!UICONTROL ラベル]**:
 
 ![](assets/filter-labels.png)
 
@@ -54,17 +54,17 @@ Customer Journey Analytics では、次の 2 つのアドビが定義するポ�
 
 ## データビューでデータガバナンスポリシーをフィルタリング
 
-あるポリシー（例えば、Analytics の適用という名前のポリシー）がオンになっているかどうか、およびそのポリシーが Analytics 用の特定のCustomer Journey Analyticsデータビュー要素の使用をブロックしているかどうかを確認できます。
+ポリシー（自分で作成した、という名前のポリシーなど）があるかどうかを確認できます **[!UICONTROL Analytics の適用]**）がオンになっています。 また、特定のCustomer Journey Analyticsデータビュー要素の分析またはデータ書き出しの使用をポリシーがブロックしているかどうかも考慮されます。
 
-再度、左側のパネルの&#x200B;**[!UICONTROL データガバナンス]**&#x200B;下の [!UICONTROL フィルター] アイコン、「**[!UICONTROL ポリシー]**」の順にクリックします。
+もう一度選択します [!UICONTROL フィルター] アイコンが左パネルの下に表示されます。 **[!UICONTROL データガバナンス]**&#x200B;を選択 **[!UICONTROL ポリシー]**:
 
-![「Analytics を適用」が選択されていることを示すリストで含まれるコンポーネントをフィルタリングする](assets/filter-policies.png)
+![「使用制限の分析」と「ユーザーベースの測定」が選択されていることを示すリストによるフィルターの含まれるコンポーネント](assets/filter-policies.png)
 
 クリック **[!UICONTROL 適用]** を使用して、有効になっているポリシーを確認します。
 
 ## 有効なポリシーがデータビューに与える影響
 
-**[!UICONTROL Analytics の適用]**&#x200B;ポリシーがオンになると、特定のデータラベル（C8 など）が関連付けられているスキーマコンポーネントは、データビューに追加できません。
+C8 または C12 ラベルの付いた 1 つ以上のポリシーをオンにすると、特定のデータラベルが適用されたスキーマコンポーネントは、データビューに追加できません。
 
 これらのコンポーネントは左側のパネルでグレー表示されます [!UICONTROL スキーマフィールド] リスト :
 
@@ -72,7 +72,7 @@ Customer Journey Analytics では、次の 2 つのアドビが定義するポ�
 
 また、ブロックされたフィールドがあるデータビューは保存できません。
 
-データビューで既にコンポーネントを定義しているExperience Platform内のフィールドまたはフィールドグループに、アクセスラベルとデータガバナンスラベルを適用する場合は注意が必要です。 このダイアログが表示される場合があります。
+データビューで既にコンポーネントを定義しているExperience Platform内のフィールドまたはフィールドグループに、（ポリシーを通じて）アクセスラベルとデータガバナンスラベルを適用する場合は、注意が必要です。 このダイアログが表示される場合があります。
 
 ![違反](assets/violation.png)
 
