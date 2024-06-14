@@ -1,25 +1,26 @@
 ---
-title: Target とCustomer Journey Analyticsの統合
-description: Target とCustomer Journey Analyticsの統合
+title: Target と Customer Journey Analytics の統合
+description: Target と Customer Journey Analytics の統合
 feature: Experience Platform Integration
 role: User
-source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
-workflow-type: tm+mt
+exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
+source-git-commit: 85abe07d29ad74578aa5bf6a23ae4016b0e9d82f
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Target とCustomer Journey Analyticsの統合
+# Target と Customer Journey Analytics の統合
 
-Adobe Targetのお客様は、Customer Journey Analyticsをレポートソースとして設定できます。
+Adobe Target のお客様は、Customer Journey Analytics をレポートソースとして設定できます。
 
 主なメリットは次のとおりです。
 
-* マーケターは、Target のアクティビティレポートにCustomer Journey Analytics成功指標をいつでも動的に適用できます。 アクティビティを実行する前にすべての項目を指定する必要がありません。
-* マーケターは、実験パネルなどのCustomer Journey Analytics機能を活用して、web サイトのパーソナライゼーションをさらに分析できます。
-* マーケターは、Adobe Journey Optimizerと Target に関するレポートソースを 1 つだけ持つことができます。 どちらのパーソナライゼーション製品もCustomer Journey Analyticsに接続して、web パーソナライゼーションの全体像を把握できます。
+* マーケターは、Customer Journey Analytics の成功指標を Target アクティビティレポートにいつでも動的に適用できます。アクティビティを実行する前にすべての項目を指定する必要がありません。
+* マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライゼーションをさらに分析できます。
+* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。どちらのパーソナライゼーション製品も Customer Journey Analytics に接続して、web パーソナライズ機能の全体像を把握できます。
 
-参照： [Adobe Customer Journey Analyticsでの Target レポート](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) 詳しくは、Target ドキュメントを参照してください。
+詳しくは、Target ドキュメントの [Adobe Customer Journey Analytics での Target レポート](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)を参照してください。
 
-を参照してください。 [実験パネル](../analysis-workspace/c-panels/experimentation.md) アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断する方法について詳しくは、こちらを参照してください。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
+アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くの最適なのはどれかを判断する方法について詳しくは、[実験パネル](../analysis-workspace/c-panels/experimentation.md)を参照してください。A/B 実験の上昇率と信頼性は、Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。

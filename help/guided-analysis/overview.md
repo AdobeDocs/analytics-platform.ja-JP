@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 | 分析タイプ | ビュータイプ | 説明 |
 | --- | --- | --- |
-| [!UICONTROL 機能マトリックス] | [エンゲージメント](types/engagement.md) | 機能エンゲージメントの広さと深さを理解する。 |
+| [!UICONTROL 機能マトリックス] | [エンゲージメント](types/engagement.md) | 機能エンゲージメントの幅と深度を理解します。 |
 | [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
 | [!UICONTROL ファネル] | [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の推移を追跡します。 |
 | [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。 |
