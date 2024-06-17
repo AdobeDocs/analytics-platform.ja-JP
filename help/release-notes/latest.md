@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 484ec8c32a8da4c33bb3236b9c7a8e1de83ead76
+source-git-commit: 46156d663b4a5559ee0769c4170323b3891d4272
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 38%
+source-wordcount: '1042'
+ht-degree: 36%
 
 ---
 
@@ -28,10 +28,11 @@ ht-degree: 38%
 | **派生フィールド – 概要関数** | イベント、セッションおよびユーザーレベルで指標またはディメンションに集計タイプ関数を適用する機能を提供します。 （ドキュメントへのリンクを添付） | | 2024年6月26日（PT） |
 | **派生フィールド – 重複排除機能** | 値が繰り返しカウントされるのを防ぐのに役立ちます。 ユーザーレベルまたはセッションレベルで適用することも、ディメンションの一意の値に基づいて適用することもできます。 （ドキュメントへのリンクを添付） |  | 2024年6月26日（PT） |
 | **取り込みの優先順位と待ち時間** | イベントデータが 24 時間、48 時間、7 日前のいずれであっても、90 分以内（SLT）にCustomer Journey Analyticsでイベントデータを取り込めるようになりました。 この機能は、会社が購入した SKU パッケージによって異なることに注意してください。<ul><li>CJA 優先取り込み基本：90 分 SLT 処理中の 24 時間前のデータ（CJA 基盤および CJA セレクトで利用可能）</li><li>CJA 優先取り込み中級：90 分 SLT 処理中の 72 時間前のデータ（CJA プライムで使用可能）</li><li>CJA の優先取り込みの詳細設定：90 分 SLT 処理中の 1 週間の古いデータ（CJA Ultimate で利用可能）</li></ul> |  | 2024年6月12日（PT） |
-| **書き出しと読み込みに使用されるアカウントと場所の共有** | ユーザーは、作成したアカウントと場所を組織内のすべてのユーザーに対して使用できるようになりました。アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。 以前は、アカウントと場所は、それらを作成したユーザーのみが使用できました。 これらの設定は、ユーザーが次の場合に使用できます [クラウド書き出しアカウントの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts) および [クラウドの書き出し場所の設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations). | 2024年6月12日（PT） | 2024年6月18日（PT） |
+| **書き出しと読み込みに使用されるアカウントと場所の共有** | ユーザーは、作成したアカウントと場所を組織内のすべてのユーザーに対して使用できるようになりました。アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。 以前は、アカウントと場所は、それらを作成したユーザーのみが使用できました。 これらの設定は、ユーザーが次の場合に使用できます [クラウド書き出しアカウントの設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts) および [クラウドの書き出し場所の設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations). | 2024年6月12日（PT） | 2024年6月30日（PT） |
 | **ドロップダウンフィルターでの複数フィールドの選択** | ドロップダウンフィルターに複数のフィールドが追加された場合、ユーザーは一度に複数のフィールドを選択できるようになりました。 パネルがフィルタリングされ、選択したフィールドのいずれかが含まれます。 <p>以前は、ユーザーはドロップダウンフィルターで一度に 1 つのフィールドのみを選択できました。</p><p>（フォローするためのドキュメントリンク。）</p> |  | 2024年6月19日（PT） |
 | **ワークスペースプロジェクトの目次** | プロジェクトで新しい目次が使用できるようになりました。 目次には、プロジェクト内のパネルやビジュアライゼーションにすばやくジャンプできるリンクがあります。 <p>目次は、個々のプロジェクトに対して、または特定のユーザーのすべてのプロジェクトに対して有効にできます。</p><p>（フォローするためのドキュメントリンク。）<!--For more information, see "Display the project table of contents" in "Create projects".--> |  | 2024年6月19日（PT） |
 | **フリーフォームテーブルでのディメンション項目のハイパーリンクの作成** | 1 つ以上のディメンション項目にハイパーリンクを作成して、Analysis Workspaceのフリーフォームテーブル内でクリックできるようにします。 <p>URL 値を持つディメンション項目のハイパーリンクを作成したり、非 URL 値を持つディメンション項目のカスタム URL を作成したりできます。</p><p>変数を使用して、複数のディメンション項目の動的カスタム URL を作成できます。 変数は、ディメンション項目の値を参照することも、分類ディメンションを参照することもできます。</p><p>（フォローするためのドキュメントリンク。）<!--For more information, see "Add hyperlinks to dimensions in a freeform table."--></p> |  | 2024年6月19日（PT） |
+| **Adobe Journey OptimizerでのCustomer Journey Analyticsデータビューの使用** | Customer Journey Analyticsの新しい設定オプションを使用すると、手動の設定を行わなくても、Adobe Journey Optimizerで使用するCustomer Journey Analyticsデータビューを指定できます。 <!-- add this in: <p>For information about how to enable this configuration option, see the [Compatibility](/help/data-views/create-dataview.md#compatibility) section in [Create or edit a data view](/help/data-views/create-dataview.md).</p> --><p>以前は、Adobe Journey Optimizer データをCustomer Journey Analyticsで表示する際に、接続ビューとデータビューを手動で設定する必要がありました。</p><p>（ドキュメントへのリンクを添付）</p> |  | 2024年6月19日（PT） |
 | **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul> <p>（ドキュメントへのリンクを添付）</p> |  | 2024年7月14日（PT） |
 
 {style="table-layout:auto"}
