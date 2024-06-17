@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7843'
-ht-degree: 13%
+source-wordcount: '8377'
+ht-degree: 12%
 
 ---
 
@@ -593,7 +593,7 @@ ht-degree: 13%
 | [!DNL long trip] |
 
 
-## 詳細情報
+## 詳細情報 {#casewhen-more-info}
 
 Customer Journey Analyticsでは、Adobe Experience Platformのに倣って、ネストされたコンテナ構造を使用します [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 参照： [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的に柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約を課します。
 
@@ -841,6 +841,8 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 +++ 詳細
 
+{{release-limited-testing}}
+
 ## 仕様 {#deduplicate-io}
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
@@ -1022,7 +1024,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ![Lowercase ルールのスクリーンショット](assets/lookup.png)
 
-## 詳細情報
+## 詳細情報 {#lookup-more-info}
 
 を素早く挿入できます [!UICONTROL 参照] ルールビルダー内の関数。1 つ以上の他の関数が既に含まれています。
 
@@ -1161,6 +1163,8 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
    - この式は有効です。
      ![算術の詳細情報 5](assets/math-more-info-5.png)
+
+ヒットレベルに基づく計算には、数学関数を使用します。 の使用 [要約](#summarize) イベント、セッションまたはユーザーの範囲に基づく計算の関数。
 
 +++
 
@@ -1350,7 +1354,7 @@ URL の一部を取得し、それを一意のページ識別子として使用�
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## 詳細情報
+## 詳細情報 {#regex-replace-more-info}
 
 Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを使用します。 次の式がサポートされています。
 
@@ -1492,6 +1496,75 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 +++
 
+<!-- SUMMARIZE -->
+
+### 要約
+
+イベント、セッションおよびユーザーレベルで指標またはディメンションに集計タイプ関数を適用します。
+
++++ 詳細
+
+{{release-limited-testing}}
+
+## 仕様 {#summarize-io}
+
+| 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>値<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>要約方法</li><li>範囲<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li></ul> | <ul><li>数値<ul><li>MAX – 値のセットから最大値を返します</li><li>MIN – 値のセットから最小値を返します</li><li>MEDIAN – 一連の値の中央値を返します</li><li>MEAN – 一連の値の平均を返します。</li><li>SUM - セットの値の合計を返します</li><li>COUNT – 受信した値の数を返します</li><li>DISTINCT - ユニーク値のセットを返します。</li></ul></li><li>文字列<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li></ul></li><li>日付<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li><li>最早値 – 最も早く受け取った値（時間によって決定）。セッションおよびイベント表にのみ適用されます。</li><li>LATEST – 受信した最新の値（時間によって決定）。セッションテーブルとイベントテーブルにのみ適用されます</li></ul></li></ul> | 派生フィールドごとに 3 つの関数 | 新しい派生フィールド |
+
+{style="table-layout:auto"}
+
+## ユースケース {#summarize-uc}
+
+買い物かごに追加の売上高を、小、中、大の 3 つの異なるカテゴリに分類したいとします。 これにより、価値の高い顧客の特性を分析および特定できます。
+
+### 前のデータ {#summarize-uc-databefore}
+
+前提：
+
+- 買い物かごに追加する売上高は、数値フィールドとして収集されます。
+
+シナリオ：
+
+- CustomerABC123 は、ProductABC の買い物かごに 35 ドルを追加し、その後、75 ドルで ProductDEF を買い物かごに個別に追加します。
+- CustomerDEF456 は、ProductGHI の買い物かごに 50 ドルを追加し、その後 275 ドルで ProductJKL を買い物かごに個別に追加します。
+- CustomerGHI789 は、ProductMNO のために買い物かごに 500 ドルを追加します。
+
+ロジック :
+
+- 訪問者の「買い物かごに追加する売上高の合計」が 150 ドル未満の場合は、「小」に設定します。
+- 訪問者の「買い物かごに追加する売上高の合計」が 150 ドルを超え、500 ドル未満の場合は、「中」に設定します。
+- 訪問者の「買い物かごに追加する売上高の合計」が 500 ドル以上の場合は、「大」に設定します。
+
+結果：
+
+- CustomerABC123 に対する$110 の買い物かごへの追加売上高の合計。
+- CustomerDEF456 の買い物かごへの追加売上高の合計（$325）。
+- CustomerGHI789 の買い物かごへの追加売上高の合計が 500 ドルになる。
+
+### 派生フィールド {#summarize-uc-derivedfield}
+
+を作成します `Add To Cart Revenue Size` 派生フィールド。 を使用します [!UICONTROL 要約] 関数と [!UICONTROL 合計] [!UICONTROL 要約方法] （を使用） [!UICONTROL 範囲] をに設定 [!UICONTROL 人物] の値を合計する [!UICONTROL cart_add] フィールド。 次に、秒を使用します [!UICONTROL 条件の場合] 結果をツリーカテゴリサイズで分割するルール。
+
+![要約ルール 1 のスクリーンショット](assets/summarize.png)
+
+
+
+### 後のデータ {#summarize-uc-dataafter}
+
+| 買い物かごに追加の売上高サイズ | 訪問者 |
+|---|--:|
+| 小 | 1 |
+| メディア | 1 |
+| 大 | 1 |
+
+{style="table-layout:auto"}
+
+## 詳細情報 {#summarize-more-info}
+
+イベント、セッションまたはユーザー範囲に基づく計算に要約関数を使用します。 の使用 [Math](#math) ヒットレベルに基づく計算の関数。
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 |---|---|---|---|---|
 | <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>送信元 <ul><li>文字列の開始</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の終了</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>送信元 <ul><li>文字列の終了</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の開始</li><li>位置<ul><li>位置#</li></ul></li><li>文字列<ul><li>文字列値</li><li>索引</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 1 つの関数</p> | <p>新しい派生フィールド</p> |
 
-{style="table-layout:auto"}
 
 ## ユースケース 1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | <p>次または前</p> | <ul><li>派生フィールドごとに 3 つの次または前の関数</li></ul> |
 | <p>正規表現による置換</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
 | <p>Split</p> | <ul><li>派生フィールドごとに 5 つの分割関数</li></ul> |
+| <p>要約</p> | <ul><li>3 派生フィールドごとの要約関数</li></ul> |
 | <p>トリミング</p> | <ul><li>派生フィールドごとに 1 つの Trim 関数</li></ul> |
 | <p>URL の解析</p> | <ul><li>派生フィールドごとに 5 つの URL 解析関数</li></ul> |
 
@@ -1733,7 +1806,7 @@ Classify 関数の演算子は、 [!UICONTROL 値が元の値と等しい場合]
 ![分類ルール 1 のスクリーンショット](assets/classify-1.png)
 
 
-## 詳細情報
+## 詳細情報 {#trim-more-info}
 
 [`Trim`](#trim) および [`Lowercase`](#lowercase) は、のコンポーネント設定で既に使用できる機能です。 [データビュー](../component-settings/overview.md). 派生フィールドを使用すると、これらの関数を組み合わせて、より複雑なデータ変換をCustomer Journey Analyticsで直接実行できます。 例えば、 `Lowercase` イベント フィールドで大文字と小文字を区別しないようにするには、次を使用します [`Lookup`](#lookup) 小文字のルックアップキーのみを持つルックアップデータセットに対して、新しい小文字フィールドを一致させます。 または、次を使用できます `Trim` 設定前に文字を削除するには `Lookup` 新しいフィールドで、をクリックします。
 
