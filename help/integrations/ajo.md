@@ -4,8 +4,8 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | --- | --- | --- |
 | ジャーニー名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | コンポーネントタイプ：ディメンション |
 | ジャーニー名とバージョン | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | コンポーネントタイプ：ディメンション |
-| ジャーニーノード名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | コンポーネントタイプ：ディメンション |
+| ジャーニーノード名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | コンポーネントタイプ：ディメンション |
 | ジャーニーノードタイプ | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | コンポーネントタイプ：ディメンション |
 | キャンペーン名 | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | コンポーネントタイプ：ディメンション |
 | チャネル | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | コンポーネントタイプ：ディメンション |
@@ -85,11 +85,11 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | 送信数 | メールプロバイダーが受け入れたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`sent` と等しい |
 | スパム報告件数 | スパム報告の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`spam_complaint` と等しい |
 | 登録解除 | 登録解除の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
-| エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します |
-| インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します |
-| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します |
-| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します |
-| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します |
+| エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します | |
+| インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します | |
+| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します | |
+| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
+| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します | |
 
 {style="table-layout:auto"}
 
