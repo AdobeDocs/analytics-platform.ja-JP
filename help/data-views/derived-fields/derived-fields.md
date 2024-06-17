@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
 workflow-type: tm+mt
-source-wordcount: '7542'
-ht-degree: 12%
+source-wordcount: '7843'
+ht-degree: 13%
 
 ---
 
@@ -441,7 +441,7 @@ ht-degree: 12%
 
 ### 派生フィールド {#casewhen-uc1-derivedfield}
 
-新しいを定義します `Marketing Channel` 派生フィールド。 を使用します [!UICONTROL 条件の場合] 両方のコンポーネントの既存の値に基づいての値を作成するルールを定義するための関数 `Page URL` および `Referring URL` フィールド。
+を定義します `Marketing Channel` 派生フィールド。 を使用します [!UICONTROL 条件の場合] 両方のコンポーネントの既存の値に基づいての値を作成するルールを定義するための関数 `Page URL` および `Referring URL` フィールド。
 
 関数の使い方に注意してください [!UICONTROL URL の解析] 値を取得するルールを定義するには `Page Url` および `Referring Url` 次の前 [!UICONTROL 条件の場合] ルールが適用されます。
 
@@ -814,7 +814,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 ### 派生フィールド {#concatenate-derivedfield}
 
-新しいを定義します [!UICONTROL 接触チャネル – 移動先] 派生フィールド。 を使用します [!UICONTROL 連結] を連結するためのルールを定義する関数 [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用したフィールド `-` [!UICONTROL 区切り文字].
+を定義します。 `Origin - Destination` 派生フィールド。 を使用します [!UICONTROL 連結] を連結するためのルールを定義する関数 [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用したフィールド `-` [!UICONTROL 区切り文字].
 
 ![連結ルールのスクリーンショット](assets/concatenate.png)
 
@@ -827,6 +827,90 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 | SLC 海 |
 | SLC-SJO |
 | SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- DEDUPLICATE -->
+
+### 重複排除
+
+値を複数回数えるのを防ぎます。
+
++++ 詳細
+
+## 仕様 {#deduplicate-io}
+
+| 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+|---|---|---|---|---|
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 重複排除 ID]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul><li>[!UICONTROL 保持する値]:<ul><li>最初のインスタンスを維持</li><li>最後のインスタンスを維持</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+
+{style="table-layout:auto"}
+
+
+## ユースケース 1 {#deduplicate-uc1}
+
+ユーザーが予約確認ページをリロードする際に、重複売上高がカウントされないようにする必要がある。 同じイベントで受信した収益を再度カウントしないように、識別子で予約確認 ID を使用します。
+
+### 前のデータ {#deduplicate-uc1-databefore}
+
+| 予約確認 ID | 売上高 |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#deduplicate-uc1-derivedfield}
+
+を定義します `Booking Confirmation` 派生フィールド。 を使用します [!UICONTROL 重複排除] ルールの重複排除を定義する関数 [!UICONTROL 値] [!DNL Booking] （用） [!UICONTROL 範囲] [!DNL Person] 使用 [!UICONTROL 重複排除 ID] [!UICONTROL 予約確認 ID]. を選択します [!UICONTROL 最初のインスタンスを保持] as [!UICONTROL 保持する値].
+
+![連結ルールのスクリーンショット](assets/deduplicate-1.png)
+
+### 後のデータ {#deduplicate-uc1-dataafter}
+
+| 予約確認 ID | 売上高 |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## ユースケース 2 {#deduplicate-uc2}
+
+イベントを、外部マーケティングキャンペーンでのキャンペーンのクリックスルーのプロキシとして使用します。 リロードとリダイレクトが原因で、イベント指標が水増しされる。 トラッキングコードディメンションの重複を排除して、最初のディメンションのみが収集されるようにし、イベントのオーバーカウントを最小限に抑えたいと考えています。
+
+### 前のデータ {#deduplicate-uc2-databefore}
+
+| 訪問者 ID | マーケティングチャネル | イベント |
+|----|---|---:|
+| ABC123 | 有料検索 | 1 |
+| ABC123 | 有料検索 | 1 |
+| ABC123 | 有料検索 | 1 |
+| DEF123 | メール | 1 |
+| DEF123 | メール | 1 |
+| JKL123 | 自然検索 | 1 |
+| JKL123 | 自然検索 | 1 |
+
+{style="table-layout:auto"}
+
+### 派生フィールド {#deduplicate-uc2-derivedfield}
+
+新しいを定義します `Tracking Code (deduplicated)` 派生フィールド。 を使用します [!UICONTROL 重複排除] ルールの重複排除を定義する関数 [!UICONTROL 追跡コード] （を使用） [!UICONTROL 重複排除範囲] 件中 [!UICONTROL Session] および [!UICONTROL 最初のインスタンスを保持] as the [!UICONTROL 保持する値].
+
+![連結ルールのスクリーンショット](assets/deduplicate-2.png)
+
+### 後のデータ {#deduplicate-uc2-dataafter}
+
+| 訪問者 ID | マーケティングチャネル | イベント |
+|----|---|---:|
+| ABC123 | 有料検索 | 1 |
+| DEF123 | メール | 1 |
+| JKL123 | 自然検索 | 1 |
 
 {style="table-layout:auto"}
 
@@ -1620,6 +1704,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの場合</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
 | <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの関数を連結</li></ul> |
+| <p>重複排除</p> | <ul><li>派生フィールドごとに 5 つの重複排除関数</li></ul> |
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの検索と置換関数</li></ul> |
 | <p>ルックアップ</p> | <ul><li>派生フィールドごとに 5 つのルックアップ関数</li></ul> |
 | <p>小文字</p> | <ul><li>派生フィールドごとに 2 つの小文字の関数</li></ul> |
