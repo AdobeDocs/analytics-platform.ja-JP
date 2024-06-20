@@ -4,13 +4,12 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 4c96089088560da635e2499e7ec770c19c3de0ab
+source-git-commit: 0300422b50cf6312c9148bbe38cd43003eb73bb2
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 69%
 
 ---
-
 
 # フリーフォームテーブルのフィルタリングと並べ替え
 
@@ -26,31 +25,31 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 >[!NOTE]
 >
-> この節で説明するように、動的ディメンション項目のみをフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、 [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> 動的ディメンション項目のみを、この節で説明するようにフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、を参照してください [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
-## フリーフォームテーブルの行をフィルター
+## フリーフォームテーブルの行のフィルタリング
 
-フリーフォームテーブルから行をフィルタリングする方法はいくつかあります。 
+いくつかの方法を使用して、フリーフォームテーブルの行をフィルタリングできます。 
 
-- 行の「X」をクリックします。
+- 行の「X」をクリックします
 - テーブルフィルター
 - セグメント化
 
-各メソッドの影響を必ず確認してください [フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+各方法の影響を必ずお読みください [フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
-### テーブルから特定の行をすばやく除外する
+### テーブルから特定の行をすばやく除外
 
-フィルタダイアログを開かなくても、テーブルから特定の行をすばやく除外できます。
+フィルターダイアログを開かなくても、特定の行をテーブルからすばやく除外できます。
 
 >[!NOTE]
 >
->この節で説明するように行を除外する場合、 [!UICONTROL **常に項目を除外**] ルールは、[ フィルタの詳細設定 ] ダイアログボックスで自動的に適用されます。 ( 適用されたルールを表示するには、フィルターアイコンを選択し、 [**[!UICONTROL 詳細を表示]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>このセクションで説明するように行を除外すると、 [!UICONTROL **常に項目を除外**] ルールは、詳細フィルターダイアログで自動的に適用されます。 （「フィルター」アイコンを選択すると、適用されたルールを表示できます [**[!UICONTROL 詳細を表示]**](#apply-a-simple-or-advanced-filter-to-a-table).）
 
-フリーフォームテーブルから特定の行をすばやく除外するには：
+フリーフォームテーブルから特定の行をすばやく除外するには、次の手順に従います。
 
-1. 除外する行の上にマウスポインターを置いて、x アイコンを選択します。
+1. 除外する行にポインタを合わせて、「x」アイコンを選択します。
 
-   Shift キーを押しながら行の範囲を選択するか、Command キー (Mac) または Ctrl キー (Windows) を押しながら複数の行を選択します。
+   Shift キーを押しながら行の範囲を選択するか、Command キー（Macの場合）または Ctrl キー（Windows の場合）を押しながら複数の行を選択します。
 
 <!--### Right-click > Delete selected rows
 
@@ -62,15 +61,15 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### テーブルへの標準フィルターまたは詳細フィルターの適用
+### テーブルへの単純フィルターまたは詳細フィルターの適用
 
 フリーフォームテーブルでデータをフィルタリングするには：
 
-1. フィルターを適用するデータが格納されている列の上にマウスポインターを置きます。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. フィルター処理するデータを含んだ列の上にマウスポインターを置きます。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. **フィルター**&#x200B;アイコンが表示されたら選択します。
 
-   ![フィルターアイコンをハイライトしたフリーフォームテーブル。](assets/table-filter-icon.png)
+   ![フィルターアイコンがハイライト表示されたフリーフォームテーブル。](assets/table-filter-icon.png)
 
    次のオプションがあります。
 
@@ -96,21 +95,21 @@ Note: this option does not seem to work. AN-338422
 
 ### フィルター
 
-詳しくは、 [フィルタリングドキュメント](/help/components/filters/filters-overview.md) を参照してください。
+のを表示 [フィルタリングドキュメント](/help/components/filters/filters-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 
-フリーフォームテーブルのデータは、Analysis Workspace内のディメンションまたは指標のいずれかである列で並べ替えることができます。
+フリーフォームテーブルのデータを、Analysis Workspaceのディメンションまたは指標のいずれかの列で並べ替えることができます。
 
 現在データの並べ替えに使用されている列のヘッダーに、下向き矢印アイコン（![テーブルの並べ替えに使用された列を示す下向き矢印アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)）が表示されます。
 
-1. Analysis Workspaceの任意のフリーフォームテーブルで、ディメンションまたは指標の名前の横にある矢印をクリックします。
+1. Analysis Workspaceのいずれかのフリーフォームテーブルで、ディメンションまたは指標の名前の横にある矢印をクリックします。
 
    並べ替えの際は、次の点を考慮してください。
 
    - 下向き矢印は降順、上向き矢印（デフォルト）は昇順の並べ替えを示します。
    - ディメンションは、アルファベット順または数字順に並べ替えることができます。例えば、ワークフローに番号付きの手順があり、その手順番号で並べ替えたい場合があります。日付関連のディメンションを日付順に並べ替えることができます。または、データソースをアルファベット順に並べ替えることもできます（下図を参照）。
 
-   ![並べ替えアイコンをハイライトしたデータソース表示。](assets/sort-dimensions.png)
+   ![並べ替えアイコンをハイライト表示したデータソースビュー。](assets/sort-dimensions.png)
 
 

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
-workflow-type: ht
-source-wordcount: '1093'
-ht-degree: 100%
+source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 100%
       + [プロジェクトの概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [プロジェクトの目次](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Workspace のフォルダー {#workspace-folders}
          + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -120,6 +121,7 @@ ht-degree: 100%
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
       + フリーフォームテーブル {#freeform-table}
          + [フリーフォームテーブル](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [フリーフォームテーブルでのディメンションのハイパーリンクの作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + 列および行の設定 {#column-row-settings}
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)

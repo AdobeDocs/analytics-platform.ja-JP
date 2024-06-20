@@ -1,16 +1,17 @@
 ---
 description: Analysis Workspaceでプロジェクトにコンポーネントを追加する方法を説明します
-title: Analysis Workspaceのコンポーネントの使用
+title: Analysis Workspace でのコンポーネントの使用
 feature: Components
 role: User
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 18%
+source-wordcount: '849'
+ht-degree: 16%
 
 ---
 
-# Analysis Workspaceのコンポーネントの使用
+# Analysis Workspace でのコンポーネントの使用
 
 コンポーネントは、Analysis Workspaceの任意のプロジェクトの実際のデータを構成します。 コンポーネントは、ディメンション、指標、フィルターおよび日付範囲で構成されています。 コンポーネントをビジュアライゼーションまたはパネルにドラッグすることで、プロジェクトに追加できます。
 
@@ -32,11 +33,15 @@ ht-degree: 18%
 
    ![](assets/build-components.png)
 
-1. 追加するコンポーネントまでスクロールするか検索し、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
+1. 追加するコンポーネントまでスクロールまたは検索し、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
 
-   例えば、フィルターをパネルヘッダーのフィルタードロップゾーンにドラッグできます。
+1. （任意）コンポーネントをパネルヘッダーのフィルタードロップゾーンにドラッグします。
 
-   ![ドロップゾーンにフィルターをドロップ](assets/filter-dropzone.png)
+   フィルターは、パネル内のすべてのコンテンツに適用されます。
+
+   パネル上でフィルタードロップゾーンを使用してパネルをフィルタリングする方法については、を参照してください。 [ドロップゾーン](/help/analysis-workspace/c-panels/panels.md#drop-zone) 。対象： [パネルの概要](/help/analysis-workspace/c-panels/panels.md).
+
+   ![ドロップゾーンでのフィルターのドロップ](assets/filter-dropzone.png)
 
 1. 詳しくは、追加するコンポーネントのタイプに応じて、次のいずれかの節に進みます。
 
@@ -61,6 +66,10 @@ ht-degree: 18%
      ![プロジェクトへのディメンションの追加](assets/add-dimensions.png)
 
    * の説明に従って、左側のパネルからフィルタ ドロップゾーンに 1 つまたは複数のディメンションをドラッグして、アドホック フィルタを作成します [プロジェクトへのフィルターの追加](#add-filters-to-a-project).
+
+1. （任意）Analysis Workspace内のディメンションおよびディメンション項目を、他のコンポーネントで分類できます。
+
+   詳しくは、を参照してください [ワークスペースのディメンションの分類](/help/components/dimensions/t-breakdown-fa.md).
 
 Analysis Workspaceでディメンションを使用する方法について詳しくは、以下を参照してください [ディメンションをプレビュー](/help/components/dimensions/view-dimensions.md), [ディメンションの分類](/help/components/dimensions/t-breakdown-fa.md)、および [時間分割ディメンション](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,31 +99,23 @@ Analysis Workspaceでプロジェクトに指標を追加するには：
 
 [フィルター](/help/components/filters/filters-overview.md) を使用すると、特性や特定のインタラクションに基づいて訪問者のサブセットを識別できます。
 
-Analysis Workspaceでプロジェクトにフィルターを追加するには：
+Analysis Workspaceでは、次のいずれかの方法でフィルターを使用できます。
 
-1. の説明に従って、Analysis Workspaceでプロジェクトにフィルタを追加します [プロジェクトへのコンポーネントの追加の開始](#begin-adding-components-to-a-project).
+### パネルへのフィルターの追加
 
-1. パネルのフィルターを開始するには、次のいずれかの方法を選択します。
+パネルにフィルターを追加すると、フィルターはパネル内のすべてのコンテンツに適用されます。
 
-   * 個々のフィルターを左パネルからフィルタードロップゾーンにドラッグします。
+パネル上でフィルタードロップゾーンを使用してパネルをフィルタリングする方法については、を参照してください。 [ドロップゾーン](/help/analysis-workspace/c-panels/panels.md#drop-zone) 。対象： [パネルの概要](/help/analysis-workspace/c-panels/panels.md).
 
-     ![ドロップゾーンにフィルターをドロップ](assets/filter-dropzone.png)
+### フリーフォームテーブルの列へのフィルターの追加
 
-   * 左側のパネルで複数のフィルターを選択するには、Shift キーまたは Ctrl キーを押しながらフィルターをフィルタードロップゾーンにドロップします。
+フリーフォームテーブルの列にフィルターを追加すると、そのフィルターはテーブル列内のすべてのコンテンツに適用されます。
 
-     ![ドロップゾーンに複数のフィルターをドロップ](assets/filter-dropzone-multiple.png)
+### 計算指標の作成時にフィルターを使用
 
-     これによりドロップダウンメニューが作成され、パネルのユーザーが適用するフィルターを選択できるようになります。 ドロップダウンメニューには、 [!UICONTROL **フィルターなし**] パネルにフィルターを適用しない、ユーザーが選択できるオプション。
+計算指標ビルダーでは、指標の定義内でフィルターを適用できます。
 
-     （x）を選択すると、ドロップダウンメニューから任意のオプションを削除できます。 を削除した場合 [!UICONTROL **フィルターなし**] オプションを選択する場合は、フィルターが必要です。
-
-   * フィルター以外のコンポーネントをドロップゾーンにドラッグしてアドホックフィルターを作成します。 これにより、フィルタービルダーに移動する時間と労力を節約できます。 この方法で作成されたフィルターは、ヒットレベルのフィルターとして自動的に定義されます。この定義を変更するには、フィルターの横にある情報アイコン（i）、鉛筆の形をした編集アイコンの順にクリックし、フィルタービルダーで編集します。
-
-     アドホックフィルターはクイックフィルターの一種で、プロジェクトに対してローカルです。公開しない限り、左パネルには表示されません。
-
-     詳しくは、[クイックフィルター](/help/components/filters/quick-filters.md)を参照してください。
-
-パネル上でフィルタードロップゾーンを使用してパネルをフィルタリングする方法について詳しくは、を参照してください。 [ドロップゾーン](/help/analysis-workspace/c-panels/panels.md#drop-zone) 。対象： [パネルの概要](/help/analysis-workspace/c-panels/panels.md).
+詳しくは、を参照してください [フィルター済み指標](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## プロジェクトへの日付範囲の追加
 

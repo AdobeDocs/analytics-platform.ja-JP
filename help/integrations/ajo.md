@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 100%
+source-wordcount: '1006'
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,21 @@ ht-degree: 100%
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=ja) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 
-Journey Optimizer で生成されたデータを読み込み、Customer Journey Analytics でアドバンス分析を実行するには、次の手順に従ってください。
+Journey Optimizerで生成されたデータを読み込んで、Customer Journey Analyticsでアドバンス分析を実行できます。 これは自動的に実行できます。 必要に応じて、Adobe Journey OptimizerとCustomer Journey Analyticsの両方に使用するデータビューで利用可能なデータセット、ディメンションまたは指標を、手動で追加でカスタマイズできます。
 
-## Journey Optimizer から Adobe Experience Platform にデータを送信
+## Journey Optimizerで使用するCustomer Journey Analyticsデータビューの自動設定
+
+Customer Journey Analyticsのコンフィギュレーションオプションを使用すると、手動でコンフィギュレーションを行わなくても、Journey Optimizerで使用するCustomer Journey Analyticsデータビューを指定できます。 <p>この設定オプションを有効にする方法については、 [互換性](/help/data-views/create-dataview.md#compatibility) のセクション [データビューの作成または編集](/help/data-views/create-dataview.md).
+
+## Journey Optimizerで使用するCustomer Journey Analyticsデータビューの手動設定
+
+次の節では、Customer Journey Analyticsでアドバンス分析を実行するためにJourney Optimizerで生成されたデータを手動でインポートする方法について説明します。 これは、 [自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) はニーズを満たすには不十分です。
+
+### Journey Optimizer から Adobe Experience Platform にデータを送信
 
 Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。Journey Optimizer データをプラットフォームにデータセットとして送信する手順については、Journey Optimizer ユーザーガイドの[データセットの基本を学ぶ](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html?lang=ja)を参照してください。
 
-## Customer Journey Analytics で接続を作成する
+### Customer Journey Analytics で接続を作成する
 
 Journey Optimizer データが Adobe Experience Platform に入ったら、Journey Optimizer データセットに基づいて[接続を作成](/help/connections/create-connection.md)できます。または、既存の接続に Journey Optimizer データセットを追加できます。
 
@@ -38,7 +46,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 {style="table-layout:auto"}
 
 
-## Journey Optimizer のディメンションと指標に対応するようにデータビューを設定
+### Journey Optimizer のディメンションと指標に対応するようにデータビューを設定
 
 接続を作成したら、1 つ以上の[データビュー](/help/data-views/create-dataview.md)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
@@ -47,7 +55,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 >Adobe Journey Optimizer と Customer Journey Analytics の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
-### データビューでのディメンションの設定
+#### データビューでのディメンションの設定
 
 データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
@@ -70,7 +78,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 {style="table-layout:auto"}
 
-### データビューでの指標の設定
+#### データビューでの指標の設定
 
 データビューで次の指標を作成すると、Journey Optimizer の同様の指標とほぼ同等にすることができます。指標のカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
@@ -93,7 +101,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 {style="table-layout:auto"}
 
-### Analysis Workspace の計算指標の設定
+#### Analysis Workspace の計算指標の設定
 
 Journey Optimizer データセットに必要なディメンションと指標を設定したら、[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を設定し、そのデータに関する追加のインサイトを得ることもできます。これらの計算指標は、データビューマネージャーで作成された上記の指標に基づいています。
 

@@ -5,10 +5,10 @@ title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 69%
+source-wordcount: '1342'
+ht-degree: 64%
 
 ---
 
@@ -70,7 +70,7 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 ### プロジェクト情報および設定 {#info-settings}
 
-**[!UICONTROL Workspace]**／**[!UICONTROL プロジェクト]**／**[!UICONTROL プロジェクト情報および設定]**&#x200B;では、現在アクティブなプロジェクトに関するプロジェクトレベルの情報が提供されます。
+**[!UICONTROL ワークスペース]** > **[!UICONTROL プロジェクト]** > **[!UICONTROL プロジェクト情報および設定]** 現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
 
 ![プロジェクト情報および設定ウィンドウ](assets/projectinfo.png)
 
@@ -89,11 +89,19 @@ Workspace プロジェクトでは、データコンポーネント、テーブ�
 
 ## 左側のパネル {#left-rail}
 
-プロジェクトでは、左側のパネルから [パネル](/help/analysis-workspace/c-panels/panels.md)、テーブル、 [ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) および [コンポーネント] ルからアクセスします。これらはプロジェクトの構成要素です。
+プロジェクト内の左側のパネルでは様々なアイコンを使用でき、それぞれがプロジェクトの重要な部分を表しています。
 
-また、 [空のパネル](/help/analysis-workspace/c-panels/blank-panel.md) からもビジュアライゼーションやパネルにアクセスできます。
+* [パネル](/help/analysis-workspace/c-panels/panels.md) ![パネルアイコン](assets/panels-icon.png)
 
-左側のパネルのコンポーネント（ディメンション、指標、フィルター、日付範囲）は、アクティブなパネルデータビューに関連しています。アクティブパネルの周囲に青い境界線が表示され、アクティブなデータビューがコンポーネントパネルの上部に表示されます。
+* [ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![ビジュアライゼーションアイコン](assets/visualizations-icon.png)
+
+* [Components](/help/components/overview.md)![コンポーネントアイコン](assets/components-icon.png)
+
+* [データディクショナリ](/help/components/data-dictionary/data-dictionary-overview.md)![データ要素アイコン](assets/data-dictionary-icon.png)
+
+* [目次](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![目次アイコン](assets/toc-icon.png)
+
+左側のパネルのコンポーネント（ディメンション、指標、フィルター、日付範囲）は、アクティブなパネルデータビューに関連しています。アクティブなパネルは、それを囲む青い境界線で識別され、アクティブなデータビューはコンポーネントパネルの上部にリストされます。
 
 ![業界横断的なデモデータビューのアクティブなパネルデータビューに関連するコンポーネント。](assets/left-rail.png)
 
