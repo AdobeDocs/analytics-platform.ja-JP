@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 52%
+source-wordcount: '1195'
+ht-degree: 54%
 
 ---
 
@@ -59,11 +59,7 @@ Customer Journey Analytics管理者には、製品内のほとんどのタスク
 
 * クラウドへのデータセットの書き出し [宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)
 
-  >[!AVAILABILITY]
-  >
-  >データセットをクラウドに書き出す機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsリリースプロセスについて詳しくは、を参照してください。 [Customer Journey Analytics機能リリース](/help/release-notes/releases.md).
-
-  このタスクを実行するには、次のExperience Platform権限も必要です。
+  このタスクを実行するには、次のExperience Platform権限が必要です。
    * 宛先の管理
    * 宛先のアクティブ化
 
