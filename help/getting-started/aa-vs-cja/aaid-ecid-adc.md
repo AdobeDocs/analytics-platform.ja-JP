@@ -4,10 +4,10 @@ description: Analytics ソースコネクタで Adobe Analytics ID フィール�
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 92%
 
 ---
 
@@ -51,6 +51,12 @@ identityMap 内：
 
 * ECID が存在する場合、イベントのプライマリ ID としてマークされます。この場合、AAID は、前述のように ECID に基づいている可能性があることに注意してください。それ以外の場合、AAID は、イベントのプライマリ ID としてマークされます。
 * AACUSTOMID は、イベントのプライマリ ID としてマークされることはありません。ただし、AACUSTOMID が存在する場合、AAID は、前述のように、AACUSTOMID に基づきます。
+
+ID がにコピーされる場合 `identityMap`, `endUserIDs._experience.mcid.namespace.code` も同じイベントに設定されます。
+
+* AAID が存在する場合、 `endUserIDs._experience.aaid.namespace.code` は「AAID」に設定されています。
+* ECID が存在する場合、 `endUserIDs._experience.mcid.namespace.code` は「ECID」に設定されています。
+* AACUSTOMID が存在する場合、 `endUserIDs._experience.aacustomid.namespace.code` は、「AACUSTOMID」に設定されています。
 
 ## Customer Journey Analytics とプライマリ ID
 
