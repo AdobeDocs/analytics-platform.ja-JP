@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: ca7e8db5f439d5447725473cb5c3a47c4d801ffa
+source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
 workflow-type: tm+mt
-source-wordcount: '8377'
+source-wordcount: '8373'
 ht-degree: 12%
 
 ---
@@ -1247,7 +1247,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL メソッド]:<ul><li>前の値</li><li>次の値</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 索引]:<ul><li>数値</li></ul><li>[!UICONTROL 繰り返しを含める]:<ul><li>ブール値</li></ul></li><li>[!UICONTROL 「値なし」を含める]:<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL メソッド]:<ul><li>前の値</li><li>次の値</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 索引]:<ul><li>数値</li></ul><li>[!UICONTROL 繰り返しを含める]:<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
