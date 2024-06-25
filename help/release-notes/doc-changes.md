@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
+source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 72%
@@ -24,7 +24,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) B2B ルックアップデータセットの変換を使用する（アカウント、オポチュニティ、マーケティングリスト、キャンペーンを含む）。 |
 | 派生フィールド関数と関数テンプレート | 追加の派生フィールド関数（[Math](/help/data-views/derived-fields/derived-fields.md#math), [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)）および [関数テンプレート](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **2024年5月** | |
-| Target の統合 | 追加済み [Adobe統合節への記事](/help/integrations/cja4t.md) target とCustomer Journey Analyticsの統合方法については、を参照してください。 |
+| Target の統合 | 追加済み [Adobe統合節への記事](/help/integrations/at.md) target とCustomer Journey Analyticsの統合方法については、を参照してください。 |
 | 組織ポリシーの制約を使用しながらCustomer Journey AnalyticsレポートをGoogle Cloud Platform に書き出す場合に必要な情報です | Adobeが所有するGoogle Cloud Platform 組織 ID をに追加しました [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md) Google Cloud Platform へのCustomer Journey Analyticsレポートの書き出しに関するドキュメント。 <p>この情報は、Google Cloud Platform で[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用している組織にのみ必要です。</p> |
 | プロジェクトへのコンポーネントの追加に関するドキュメント | [Analysis Workspace のプロジェクトに様々なタイプのコンポーネントを追加](/help/components/use-components-in-workspace.md)する方法について、一般情報を追加しました。 |
 | データ書き出しの使用例 | を説明する一連の新しい記事 [データ書き出しのユースケース](/help/use-cases/data-export/overview.md) Experience PlatformとCustomer Journey Analytics機能を使用してこれらのユースケースを実装する方法 |
