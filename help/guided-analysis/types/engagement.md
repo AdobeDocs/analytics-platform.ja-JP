@@ -1,14 +1,14 @@
 ---
 title: エンゲージメント表示
-description: 機能エンゲージメントの広さと深さを理解する。
+description: 機能エンゲージメントの幅と深度を理解します。
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a4c35466b225d44130bb55204e2fdb155fa7dee6
+source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 3%
+source-wordcount: '721'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 * マトリックスの左下に表示される機能は、 **影響の少ない** 機能：広く採用されたり、頻繁に使用されたりしているわけではありません。
 * マトリックスの右下に表示される機能は、 **1 回限り** 機能：広く採用されているが、頻繁に使用されているわけではない。
 
-![エンゲージメントのスクリーンショット](../assets/feature-matrix.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 ## ユースケース
 
