@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
 source-wordcount: '2536'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,14 +58,14 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**ステッチでは「再生」はどのように機能しますか？**
 
-ステッチでは、学習した一意の ID に基づいてデータを「再生」します。再生は、当面、識別されたデバイスから、最初は未認証のイベントをステッチすることを目的としています。[詳細情報](../stitching/explained.md)
+ステッチでは、学習した一意の ID に基づいてデータを「再生」します。再生は、当面、識別されたデバイスから、最初は未認証のイベントをステッチすることを目的としています。[詳細情報](../stitching/overview.md)
 
 +++
 
 
 +++**履歴データのステッチ（バックフィル）はどのように機能しますか？**
 
-初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](../stitching/explained.md)
+初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](../stitching/overview.md)
 
 +++
 
@@ -174,9 +174,9 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## 8. [!UICONTROL Adobe Analytics] コンポーネント
 
-+++**共有/公開可能 [!UICONTROL オーディエンス] から [!DNL Customer Journey Analytics] Real-Time CDPや他のExperience CloudアプリケーションをExperience Platformにしますか？**
++++**[!UICONTROL オーディエンス]を [!DNL Customer Journey Analytics] から Experience Platform Real-Time CDP または他の Experience Cloud アプリケーションに共有または公開できますか？**
 
-次のことができます [オーディエンスの作成と公開](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) 顧客のターゲティングとパーソナライゼーションのために、Adobe Experience Platformのリアルタイム顧客プロファイルにCustomer Journey Analyticsして特定されます。
+Adobe Experience Platform のリアルタイム顧客プロファイルに Customer Journey Analytics で識別された[オーディエンスを作成して公開](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish)し、顧客のターゲティングやパーソナライゼーションを実現できます。
 
 +++
 
@@ -212,7 +212,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 ## 9. 接続サイズの推定 {#estimate-size}
 
-参照： [使用状況の推定と管理](/help/technotes/estimate-usage.md).
+詳しくは、[使用状況の推定と管理](/help/technotes/estimate-usage.md)を参照してください。
 
 ## 10. 使用量超過について {#overage}
 

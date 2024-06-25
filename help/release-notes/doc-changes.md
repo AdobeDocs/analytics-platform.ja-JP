@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
+source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
 workflow-type: tm+mt
-source-wordcount: '3731'
+source-wordcount: '3742'
 ht-degree: 72%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年6月** | |
+| グラフベースのステッチ | グラフベースのステッチの導入を含むステッチドキュメントを更新しました。 |
 | AI アシスタント | 追加済み [詳細を見る](../ai-assistant.md) Customer Journey Analytics用の AI アシスタントで。 |
 | B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) B2B ルックアップデータセットの変換を使用する（アカウント、オポチュニティ、マーケティングリスト、キャンペーンを含む）。 |
 | 派生フィールド関数と関数テンプレート | 追加の派生フィールド関数（[Math](/help/data-views/derived-fields/derived-fields.md#math), [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)）および [関数テンプレート](/help/data-views/derived-fields/derived-fields.md#function-templates). |
