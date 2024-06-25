@@ -6,18 +6,18 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
+source-git-commit: 1a470345a6a2748b992263c3ad25e4cd7d3daa9e
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 54%
+source-wordcount: '1288'
+ht-degree: 42%
 
 ---
 
 # Customer Journey Analytics のアクセス制御
 
-Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの役割（製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセス）によって管理されます。 このトピックでは、これらの役割について詳しく説明します。
+Customer Journey Analyticsは、3 つのアクセスレベル（3 つの役割）によって管理されます。製品管理者の役割、製品プロファイル管理者の役割、ユーザーレベルのアクセスです。 このトピックでは、これらの役割について詳しく説明します。
 
-さらに、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセス制限についてのより詳細な方法についても説明します。
+さらに、この記事では、Workspace のキュレーションや行レベル、値レベルのアクセス制御など、アクセス制限についてのより詳細な方法についても説明します。
 
 ## 製品管理者の役割
 
@@ -45,39 +45,49 @@ Customer Journey Analytics管理者には、製品内のほとんどのタスク
 
 ### 製品管理者の追加権限
 
-で製品管理者として追加されるほか、 **Customer Journey Analytics製品プロファイル** が含まれる [Admin Console](https://adminconsole.adobe.com/enterprise/)を使用する場合、Customer Journey Analytics内で次のタスクを実行するために追加の権限が必要になります。
+で製品管理者として追加されるほか、 **Customer Journey Analytics製品プロファイル** が含まれる [Admin Console](https://adminconsole.adobe.com/enterprise/)の場合、Customer Journey Analytics内で次のタスクを実行するための追加の権限が必要です。
 
 * データの作成、更新、削除 [接続](/help/connections/overview.md)
 
-  このタスクを実行するには、ユーザーは次の要素の一部である必要があります **Experience Platform製品プロファイル** 次の権限を提供します。
+  このタスクを実行するには、ユーザーは **Experience Platform製品プロファイル** 次の権限を提供します。
    * データモデリング：ビュースキーマ、スキーマの管理
    * データ管理：ビューデータセット，データセットの管理
    * データ取り込み：ソースの管理
    * ID 名前空間の表示
 
-     Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja)を参照してください。
+     Experience Platform の権限について詳しくは、[Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)を参照してください。
 
 * クラウドへのデータセットの書き出し [宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)
 
   このタスクを実行するには、次のExperience Platform権限が必要です。
+
    * 宛先の管理
    * 宛先のアクティブ化
 
-     Experience Platformの宛先の権限について詳しくは、以下を参照してください [宛先の概要](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
+     Experience Platformの宛先の権限について詳しくは、以下を参照してください [宛先の概要](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
+
+* の使用 [BI 拡張機能](../data-views/bi-extension.md)
+
+  BI 拡張機能を使用するユーザー向けに、製品管理者
+
+   * ユーザーのExperience Platform権限に、クエリの管理およびクエリサービス統合の管理オプションを備えたクエリサービスリソースを持つロールが含まれていることを確認する必要があります。 参照： [製品プロファイルの権限管理](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * 次のユーザーに対する適切なCustomer Journey Analytics権限を確認する必要があります。
+      * 関連するデータビューにアクセスする権限。 のデータビューを参照してください [Admin ConsoleのCustomer Journey Analytics権限](#customer-journey-analytics-permissions-in-admin-console).
+      * cja BI 拡張機能にアクセスする権限。 のデータビューツールを参照してください。 [Admin ConsoleのCustomer Journey Analytics権限](#customer-journey-analytics-permissions-in-admin-console).
 
 ## 製品プロファイル管理者の役割
 
 製品プロファイルは、一連の権限です。製品プロファイル管理者が実行できる操作
 
-* 新しいユーザーの追加や、ユーザーグループとそれらに関連する製品プロファイルの管理など、単体製品のプロファイルを作成および管理します。
+* 個々の製品プロファイルを作成および管理します。 例えば、新規ユーザーの追加や、ユーザーグループとそれらに関連する製品プロファイルの管理などです。
 
 * Customer Journey Analyticsで、管理する製品プロファイルの一部であるデータビューを編集します。 新しいデータビューを作成することはできません。
 
 ## ユーザーレベルのアクセス
 
-次の表に、製品管理者以外と CJA 製品管理者の様々なCustomer Journey Analytics機能に対する主なアクセス権の概要を示します。 これらの権限を理解すると、ユーザーは、組織内での役割と責任に基づいて CJA を効果的に移動および利用できます。
+次のマトリックスに、製品管理者以外のユーザーとCustomer Journey AnalyticsCustomer Journey Analytics管理者の様々な製品機能に対する主なアクセス権の概要を示します。 これらの権限を理解すると、組織内での自分の役割と責務に基づいてCustomer Journey Analyticsを効果的に移動および使用できます。
 
-| CJA 製品機能 | 製品管理者以外（ユーザー） | 製品管理者 |
+| 製品機能 | 製品管理者以外（ユーザー） | 製品管理者 |
 | --- | --- | --- |
 | **データビュー** | 表示/更新/作成/削除できない | 作成/更新/削除可能 |
 | **接続** | 表示/更新/作成/削除できない | 作成/更新/削除可能 |
@@ -102,7 +112,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 ### サードパーティアクセス
 
-会社が連携するサードパーティには、製品プロファイル管理者になれるチームリードがいます。この管理者は、この製品プロファイルで自分のチームにユーザーを追加できます。この管理者は、特定のデータビューへのアクセス権を付与し、この製品プロファイルに他のユーザーを追加できます。また、チームのニーズに合わせて制御可能なデータビューを変更することもできます。
+会社が連携するサードパーティには、製品プロファイル管理者になれるチームリードがいます。この管理者は、会社のチームのユーザーをこの製品プロファイルに追加できます。 この管理者は、特定のデータビューへのアクセス権を付与し、この製品プロファイルに他のユーザーを追加できます。また、チームのニーズに合わせて制御可能なデータビューを変更することもできます。
 
 ### 行レベルのアクセス制御
 
@@ -129,22 +139,22 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 | --- | --- |
 | **[!UICONTROL データビュー]** | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
 | **[!UICONTROL レポートツール]**： |   |
-| **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
-| **[!UICONTROL Analysis Workspace アクセス]** | ユーザーはCustomer Journey AnalyticsでAnalysis Workspaceにアクセスできます。 |
-| [!UICONTROL **ガイド付分析へのアクセス**] | ユーザーは次を作成できます [ガイド付き分析プロジェクト](/help/guided-analysis/overview.md). |
-| [!UICONTROL **予測**] | ユーザーはAnalysis Workspaceの予測機能にアクセスできます |
-| **[!UICONTROL レポート使用状況の管理]** | ユーザーは、会社で実行されているレポートを表示および削除できます |
-| **[!UICONTROL レポート使用状況のビュー]** | ユーザーは同時レポートリクエストをすべて表示できます。 |
+| **[!UICONTROL 監査ログへのアクセス]** | この権限は、[API](https://www.adobe.io/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
+| **[!UICONTROL Analysis Workspace アクセス]** | ユーザーがCustomer Journey AnalyticsでAnalysis Workspaceにアクセスできるようにする。 |
+| [!UICONTROL **ガイド付分析へのアクセス**] | ユーザーに次を作成させる [ガイド付き分析プロジェクト](/help/guided-analysis/overview.md). |
+| [!UICONTROL **予測**] | ユーザーがAnalysis Workspaceの予測機能にアクセスできるようにする |
+| **[!UICONTROL レポート使用状況の管理]** | ユーザーが会社で実行しているレポートを表示および削除できるようにします。 |
+| **[!UICONTROL レポート使用状況のビュー]** | ユーザーが同時レポートリクエストをすべて表示できるようにします。 |
 | [!UICONTROL **テーブル全体の書き出し**] | ユーザーを許可 [完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL 計算指標の作成]** | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 |
-| **[!UICONTROL フィルターの作成]** | ユーザーは[フィルター](/help/components/filters/filters-overview.md)を作成できます。 |
-| **[!UICONTROL Labs のアクセス]** | ユーザーはにアクセスできます [Labs](/help/labs/labs.md) Customer Journey Analyticsのタブ。 |
-| **[!UICONTROL 注釈の作成]** | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 |
-| **[!UICONTROL オーディエンスの作成]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 |
-| **[!UICONTROL オーディエンスの表示]** | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
-| [!UICONTROL **任意のユーザーとプロジェクトリンクを共有**] | ユーザーを許可 [任意のユーザーとプロジェクトを共有する。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja#share-public-link) |
+| **[!UICONTROL 計算指標の作成]** | ユーザーに次を作成させる [計算指標](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL フィルターの作成]** | ユーザーに次を作成させる [フィルター](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Labs のアクセス]** | ユーザーにへのアクセスを許可 [Labs](/help/labs/labs.md) Customer Journey Analyticsのタブ。 |
+| **[!UICONTROL 注釈の作成]** | ユーザーに次を作成させる [注釈](/help/components/annotations/overview.md). |
+| **[!UICONTROL オーディエンスの作成]** | ユーザーに次を作成させる [オーディエンス](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL オーディエンスの表示]** | ユーザーに表示を許可 [オーディエンス](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **任意のユーザーとプロジェクトリンクを共有**] | ユーザーを許可 [任意のユーザーとプロジェクトを共有する。](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | **[!UICONTROL データ表示ツール]**: |   |
 | [!UICONTROL **テーブル全体の書き出し**] | ユーザーを許可 [完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL **SQL クエリサービスへのアクセス**] | ユーザーにアクセスを許可 [AEP のクエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja). |
+| **[!UICONTROL [!UICONTROL CJA BI 拡張機能]]** | ユーザーに次を使用させる [BI 拡張機能](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}

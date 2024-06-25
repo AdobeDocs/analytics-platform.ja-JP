@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI 拡張機能
-description: クエリサービス、Power BI、Tableau、その他の BI ツールや SQL ツールを使用して、Customer Journey Analytics BI 拡張機能を使用してデータビューにアクセスする方法について説明します。
+description: データまたは Tableau を使用して、Customer Journey AnalyticsBI 拡張機能を使用してPower BIビューにアクセスする方法について説明します。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 963b8788f9657844d56449bf315abc5018deb5d8
+source-git-commit: 483f74408cfb81f2cbbbb25df9402aa829be09b1
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 74%
+source-wordcount: '2797'
+ht-degree: 68%
 
 ---
 
@@ -28,19 +28,17 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 ## 前提条件
 
-この機能を使用するには、次の手順に従う必要があります。
+この機能を使用するには、次のものが必要です。
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* 関連する製品プロファイル、ユーザーグループおよび/または個々のユーザーの機能を設定します。 アクセス要件は次のとおりです。
-   * Adobe Experience Platform クエリサービス
-   * Customer Journey Analyticsのワークスペースプロジェクト
-   * 使用する目的の CJA データビュー
-   * データビューツールの BI 拡張機能へのアクセス
-
+* Experience PlatformおよびCustomer Journey Analyticsへのアクセス権を付与しました。
+* Customer Journey Analyticsへの製品管理者アクセス権が付与され、接続およびデータビューを表示、編集、更新または削除できるようになりました。
+* アクセスするデータビューへのアクセス権を付与しました。
+* CJA BI 拡張機能へのアクセス権を付与しました。
 * 有効期限のない資格情報の有効期限を使用して、BI ツールをに接続 [!DNL Customer Journey Analytics BI extension]. この [資格情報ガイド](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) 有効期限のある資格情報または有効期限のない資格情報の設定に関する詳細情報を提供します。
 
-詳しくは、Customer Journey Analytics 管理の節にある[アクセス制御](../technotes/access-control.md)を参照してください。
+参照： [顧客ジャーニーのアクセス制御](../technotes/access-control.md) 詳しくは、 [製品管理者の追加権限](../technotes/access-control.md#product-admin-additional-permissions) および [Admin ConsoleのCustomer Journey Analytics権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## 用途
@@ -84,7 +82,7 @@ Adobe Experience Platformで：
 
 +++
 
-詳しくは、[クエリエディター UI ガイド](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide)を参照してください。
+を参照してください。 [クエリエディター UI ガイド](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) を参照してください。
 
 
 ### BI ツール
@@ -113,9 +111,9 @@ Adobe Experience Platformで：
 
    1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;ホスト&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] が含まれる  **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;データベース&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;データベース&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] が含まれる **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
 
          `?FLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja?FLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
@@ -124,7 +122,7 @@ Adobe Experience Platformで：
       1. **[!UICONTROL ユーザー名]**&#x200B;と&#x200B;**[!UICONTROL パスワード]**&#x200B;の入力を求められます。Experience Platform クエリ[!UICONTROL 資格情報]の同等のパラメーターを使用します。
 
 
-   1. ログインに成功すると、Customer Journey AnalyticsデータビューテーブルがPower BIのに表示されます **[!UICONTROL **&#x200B;ナビゲーター&#x200B;**]**.
+   1. ログインに成功すると、Power BI にCustomer Journey Analyticsデータビューテーブルが表示されます **[!UICONTROL **&#x200B;ナビゲーター&#x200B;**]**.
 
    1. 使用するデータビューテーブルを選択し、「**[!UICONTROL **&#x200B;読み込み&#x200B;**]**」を選択します。
 
@@ -154,11 +152,11 @@ Adobe Experience Platformで：
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;ホスト&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ポート&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;ポート&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;ポート&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;ポート&#x200B;**]** テキストフィールド。
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;データベース&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;データベース&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
 
          `%3FFLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja%3FFLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
@@ -166,9 +164,9 @@ Adobe Experience Platformで：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**」テキストフィールドにペーストします。
 
-      1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;パスワード&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;パスワード&#x200B;**]**」テキストフィールドにペーストします。
+      1. を貼り付けます **[!UICONTROL **&#x200B;パスワード&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;パスワード&#x200B;**]** テキストフィールド。
 
-      1. 「**[!UICONTROL **&#x200B;ログイン&#x200B;**]**」を選択します。
+      1. 「」を選択します **[!UICONTROL **&#x200B;ログイン&#x200B;**]**.
 
    1. Customer Journey Analyticsデータビューは、のテーブルとして表示されます。 **[!UICONTROL **&#x200B;テーブル&#x200B;**]** リスト。
 
@@ -222,7 +220,7 @@ prod:all=> \dv
 | パターン | 例 |
 |---|---|
 | スキーマの検出 | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
-| ランク付け／分類 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| ランクまたは分類 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
 | `HAVING` 句 | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
 | 個別、上位の<br/>ディメンション値 | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | 指標の合計値 | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</pre> |
@@ -258,7 +256,7 @@ prod:all=> \dv
 
 #### ユニーク値のカウント
 
-Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。次の SQL 文である `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` は、個別の人物の数であるデフォルトのユーザー指標の値を返します。その他のディメンションの場合は、おおよその個別のカウントが返されます。
+Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。次の SQL 文 `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` デフォルトの人物指標の値を返します。これは、個別のユーザーの数です。 その他のディメンションの場合は、おおよその個別のカウントが返されます。
 
 #### 条件付き指標
 
@@ -276,7 +274,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### インライン計算
 
-追加の数式を指標の式に適用するには、 `SELECT` 計算指標で数学を定義する代わりに、 次の表に、サポートされている式の種類を示します。
+追加の数式を指標の式に適用するには、 `SELECT`. 計算指標で数学を定義する代わりに、この数学を使用できます。 次の表に、サポートされている式の種類を示します。
 
 | 演算子または関数 | 詳細 |
 |---|---|
@@ -304,19 +302,19 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 日付範囲
 
-`daterange` 特殊列は `timestamp` と同様に機能しますが、フィルタリングは全日に制限されます。`daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
+この `daterange` 特殊な列の機能はと同様です `timestamp`ただし、フィルタリングは 1 日に制限されます。 `daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
 この `daterange` フィールドは、イベントの日付を解析または切り捨てるために日付/時間関数でも使用できます。
 
 この `daterangeName` 次のような名前付き日付範囲を使用して、クエリをフィルタリングするために特別な列を使用できます。 `Last Quarter`.
 
 >[!NOTE]
 >
->PowerBI がサポートしていない `daterange` 1 日未満の指標（時間、30 分、5 分など）。
+>Power BIはサポートしていません `daterange` 1 日未満の指標（時間、30 分、5 分など）。
 
 
 #### フィルター ID
 
-`filterId` 特殊列はオプションで、外部で定義されたフィルターをクエリに適用するために使用されます。外部で定義されたフィルターをクエリに適用することは、Workspace のパネルにフィルターをドラッグすることと似ています。複数のフィルター ID は、`AND` 演算することで指定できます。
+`filterId` 特殊列はオプションで、外部で定義されたフィルターをクエリに適用するために使用されます。外部で定義されたフィルターをクエリに適用することは、Workspace のパネルにフィルターをドラッグすることと似ています。複数のフィルター ID の利用者 `AND` – それらを参照してください。
 
 を追加します `filterId`、以下を使用できます `filterName` ID の代わりにフィルターの名前を使用するには：
 
