@@ -4,30 +4,108 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
+source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 83%
+source-wordcount: '1547'
+ht-degree: 52%
 
 ---
 
-# Adobe Journey Optimizer と Adobe Customer Journey Analytics の統合
+# Journey OptimizerとCustomer Journey Analyticsの統合
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=ja) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 
-Journey Optimizerで生成されたデータを読み込んで、Customer Journey Analyticsでアドバンス分析を実行できます。 これは自動的に実行できます。 必要に応じて、Adobe Journey OptimizerとCustomer Journey Analyticsの両方に使用するデータビューで利用可能なデータセット、ディメンションまたは指標を、手動で追加でカスタマイズできます。
+Journey Optimizerで生成されたデータを設定して、Customer Journey Analyticsでアドバンス分析を実行できます。 この統合は自動的に設定できます。 必要に応じて、接続ビューまたはデータビューで使用できるデータセット、ディメンションまたは指標を手動で追加カスタマイズできます。
 
-## Journey Optimizerで使用するCustomer Journey Analyticsデータビューの自動設定
+## Journey Optimizer統合の自動設定
 
-Customer Journey Analyticsのコンフィギュレーションオプションを使用すると、手動でコンフィギュレーションを行わなくても、Journey Optimizerで使用するCustomer Journey Analyticsデータビューを指定できます。 <p>この設定オプションを有効にする方法については、 [互換性](/help/data-views/create-dataview.md#compatibility) のセクション [データビューの作成または編集](/help/data-views/create-dataview.md).
+{{release-limited-testing-section}}
 
-## Journey Optimizerで使用するCustomer Journey Analyticsデータビューの手動設定
+Journey Optimizerでは、レポートエンジンとしてのCustomer Journey Analyticsの使用をサポートしています。 参照： [新しいレポートインターフェイスの概要](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) Journey Optimizerのドキュメントで説明しています。
 
-次の節では、Customer Journey Analyticsでアドバンス分析を実行するためにJourney Optimizerで生成されたデータを手動でインポートする方法について説明します。 これは、 [自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) はニーズを満たすには不十分です。
+Journey OptimizerのCustomer Journey Analyticsレポートを有効にすると、自動的に [接続](/help/connections/overview.md) および [データビュー](/help/data-views/data-views.md) は、特定のサンドボックス用に作成されます。
 
-### Journey Optimizer から Adobe Experience Platform にデータを送信
+### 接続
 
-Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。Journey Optimizer データをプラットフォームにデータセットとして送信する手順については、Journey Optimizer ユーザーガイドの[データセットの基本を学ぶ](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html?lang=ja)を参照してください。
+接続の名前はです **[!UICONTROL AJO対応の接続（*サンドボックス名*）]** とは、設定およびデータセットに次の標準値があります。
+
+| **接続設定** | 値 |
+|---|---| 
+| [!UICONTROL 接続名] | `AJO Enabled Connection (`_`sandbox name`_`)` |
+| [!UICONTROL 接続の説明] | [!UICONTROL *ここに接続の説明を入力*] |
+| [!UICONTROL タグ] | [!UICONTROL *タグを選択*] |
+
+
+| **データ設定** | 値 |
+|---|---| 
+| [!UICONTROL 周期的なデータ時間枠を有効にする] | 有効。 [!UICONTROL 選択した月数] `13`. |
+| [!UICONTROL サンドボックス] | [!UICONTROL *サンドボックスの名前*] （無効。この設定は変更できません）。 |
+| [!UICONTROL 毎日のイベントの平均数] | 100 万未満（無効。この設定は変更できません）。 |
+
+
+| データセット名 | スキーマ | データセットタイプ | データソースタイプ | 人物 Id | キー | 一致するキー | 新しいデータを読み込む | データをバックフィル |
+|---|---|---|---|---|---|---|---|---|
+| [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestrationのジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メッセージフィードバックイベントデータセット] | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+
+
+### データビュー
+
+データビューには名前が付けられます **AJOのデータビューを有効にする（*サンドボックス名*）**.
+
+- が含まれる **[!UICONTROL 設定]** タブで、次の値が標準で設定されています。
+
+  | 設定 | 値 |
+  |---|---|
+  | [!UICONTROL 接続] | AJO対応の接続（*サンドボックス名*） |
+  | [!UICONTROL 名前] | `AJO Enabled Data View (`_`sandbox name`_`)` |
+  | [!UICONTROL 外部 ID] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` （名前から派生） |
+  | [!UICONTROL 説明] | `undefined` |
+
+  {style="table-layout:fixed"}
+
+  | 互換性 | 値 |
+  |---|---|
+  | [!UICONTROL Adobe Journey Optimizerのデフォルトデータビューとして設定] | 有効（デフォルト）。<br/><br/>この設定オプションを使用すると、手動で設定しなくても、Journey Optimizerで使用するデータビューを指定できます。 この設定オプションを有効にする方法（デフォルトでまだ有効になっていない場合）については、 [互換性](/help/data-views/create-dataview.md#compatibility) のセクション [データビューの作成または編集](/help/data-views/create-dataview.md). <br/><br/>このオプションを無効にすると、デフォルトのデータビューの変更を続行するかどうかを確認するダイアログが表示されます。 選択した場合 **[!UICONTROL 続行]**&#x200B;を使用する場合、別のデータビューをデフォルトのデータビューとして選択する必要があります。 を選択 **[!UICONTROL 確認]** をクリックして選択を確定します。 を選択 **[!UICONTROL キャンセル]** デフォルトデータビューの変更をキャンセルします。 |
+
+  | コンテナ | 値 |
+  |---|---|
+  | [!UICONTROL 人物のコンテナ名] | `Person` |
+  | [!UICONTROL セッションのコンテナ名] | `Session` |
+  | [!UICONTROL イベントのコンテナ名] | `Event` |
+
+  | カレンダー | 値 |
+  |---|---|
+  | [!UICONTROL タイムゾーン] | 所在地に合ったタイム ゾーン |
+  | [!UICONTROL カレンダータイプ] | グレゴリオ暦 |
+  | [!UICONTROL 年の最初の月] | 1月 |
+  | [!UICONTROL 週の最初の曜日] | 日曜日 |
+
+
+- が含まれる **Components** タブ：
+   - 次を持つすべての指標およびディメンション **[!UICONTROL （AJO）]** の名前にが追加され、この自動設定の一部として自動的に追加されます。
+   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。 例えば、ランディングページクリック数（AJO）指標は、ランディングページクリック数の派生フィールドに基づいています。
+   - 一部の指標またはディメンションには、追加の設定があります。 例えば、スパムの苦情（AJO）には、「形式」設定と「値を含める」設定が適用されています。
+   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります **[!UICONTROL :*name_of_metric_or_dimension *]**. 例：[!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある [!UICONTROL ：ランディングページのクリック数（AJO）].
+
+- が含まれる **[!UICONTROL 設定]** タブが表示され、特定の設定値が適用されない
+
+>[!IMPORTANT]
+>
+>接続およびデータビューの自動設定された値を変更すると、自動設定されたCustomer Journey Analytics統合に依存し、使用しているJourney Optimizer レポートに影響します。
+
+
+## Journey Optimizerで使用するデータビューの手動設定
+
+次の節では、Journey Optimizerで生成されたデータを手動で使用して、Customer Journey Analyticsのアドバンス分析を実行する方法について説明します。 これは、 [自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) はニーズを満たすには不十分です。
+
+### Journey OptimizerからExperience Platformへのデータの送信
+
+Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。参照： [データセットの基本を学ぶ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) Journey Optimizer データをデータセットとしてExperience Platformに送信する手順については、Journey Optimizer ユーザーガイドを参照してください。
 
 ### Customer Journey Analytics で接続を作成する
 
@@ -41,7 +119,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メールトラッキングイベント（[!UICONTROL 開封数]、[!UICONTROL クリック数]、[!UICONTROL 登録解除数]など）が含まれています。 |
 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベント（[!UICONTROL アプリの起動回数]など）が含まれています。 |
 | ジャーニーステップイベント | イベント | ユーザー ID：`_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに参加したプロファイルを示すイベントが含まれています。 |
-| AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Adobe Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
+| AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | ジャーニーとキャンペーンのメタデータをすべてのJourney Optimizer イベントデータに関連付ける分類が含まれます。 |
 
 {style="table-layout:auto"}
 
@@ -52,12 +130,12 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 >[!NOTE]
 >
->Adobe Journey Optimizer と Customer Journey Analytics の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>Journey OptimizerとCustomer Journey Analyticsの間のデータの不一致は、通常、1～2% 未満です。 過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
 #### データビューでのディメンションの設定
 
-データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
+データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。参照： [コンポーネント設定](/help/data-views/component-settings/overview.md) ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーを参照してください。
 
 | ディメンション | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- |
@@ -96,7 +174,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します | |
 | インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します | |
 | インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します | |
-| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
+| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は、決定を上書きして、実際のディスプレイの数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
 | アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します | |
 
 {style="table-layout:auto"}
