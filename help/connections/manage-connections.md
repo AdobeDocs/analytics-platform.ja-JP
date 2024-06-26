@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
-source-wordcount: '3155'
+source-wordcount: '3188'
 ht-degree: 14%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 14%
 | [!UICONTROL データセット] | 接続に含まれるデータセットへの 1 つ以上のリンクを表示します。 データセットのハイパーリンクを選択して、接続内のデータセットを表示できます。 選択した接続に含まれるデータセットがさらに存在する場合は、 **[!UICONTROL +*x* 詳細]** 見せる **[!UICONTROL 含まれるデータセット]** パネル。 このパネルには、すべてのデータセットへのリンクと、接続の一部である特定のデータセットを検索するオプションが表示されます。<p><img src="./assets/datasets-included.png" alt="含まれるデータアセット" width="400"/><p>データセット名を選択すると、Experience PlatformUI のデータセットが新しいタブで開きます。 |
 | [!UICONTROL サンドボックス] | を表示します [Experience Platformサンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) この接続がデータセットを取得する元になります。 このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 所有者] | 接続を作成したユーザー。 |
-| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**新しいデータをインポートするように設定されたデータセットの場合<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** 新しいデータをインポートするように設定されていないデータセットの場合。 |
+| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)）    **[!UICONTROL _x _日付：]**新しいデータをインポートするように設定されたデータセットの場合<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータをインポートするように設定されていないデータセットの場合。 |
 | [!UICONTROL 作成日] | 接続が作成されたときのタイムスタンプ。 |
 | [!UICONTROL 最終変更日] | 接続が最後に更新されたときのタイムスタンプ。 |
-| [!UICONTROL データをバックフィル] | データセット間のバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
+| [!UICONTROL データをバックフィル] | データセット間のバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p>![ステータス オレンジ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p>![ステータスが緑](assets/status-green.svg)）   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
 
 表示する列を設定するには、次を選択します ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。この中には、 **テーブルをカスタマイズ** テーブルの列のオンとオフを切り替えることができるダイアログ。
 
@@ -149,11 +149,11 @@ ht-degree: 14%
 | [!UICONTROL データソースタイプ] | データセットのソースタイプ。 接続を作成する際に、ソースタイプを定義します。 |
 | [!UICONTROL データセットタイプ] | このデータセットのデータセットタイプ。 タイプは以下のようになります。 [!UICONTROL イベント], [!UICONTROL 参照]、または [!UICONTROL Profile]. [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | スキーマ | データセットのベースとなるExperience Platformスキーマ。 |
-| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合。<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** データセットが新しいデータの読み込みを行わないように設定されている場合。 |
-| [!UICONTROL データを変換] | 適用可能な B2B ルックアップデータセットの変換ステータスを表示します。 参照： [B2B ルックアップ用のデータセットの変換](transform-datasets-b2b-lookups.md) を参照してください。<p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**変換が有効な適用可能なデータセットの場合、 <p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** 変換が有効になっていない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]** その他のすべてのデータセットの場合。変換には適用されません。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
-| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合、および<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
+| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合。<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** データセットが新しいデータの読み込みを行わないように設定されている場合。 |
+| [!UICONTROL データを変換] | 適用可能な B2B ルックアップデータセットの変換ステータスを表示します。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**変換が有効な適用可能なデータセットの場合、 <p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 変換が有効になっていない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]** その他のすべてのデータセットの場合。変換には適用されません。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p>![ステータスが赤](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
+| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合、および<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p>![ステータスが赤](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
 
 >[!IMPORTANT]
 >
@@ -173,9 +173,9 @@ ht-degree: 14%
 | [!UICONTROL サンドボックス] | この [Experience Platformサンドボックス](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja) この接続がデータセットを取得します。このサンドボックスは、接続を初めて作成したときに選択されています。 変更できません。 |
 | [!UICONTROL 接続 ID] | この ID は、Experience Platformで生成されます。 次を使用できます ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) ID をコピーします。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
-| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**新しいデータをインポートするように設定されているデータセットの数<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** 新しいデータの読み込みがオフになっているデータセットの数。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
-| データを変換 | 適用可能な B2B ルックアップデータセットの変換ステータスを表示します。 参照： [B2B ルックアップ用のデータセットの変換](transform-datasets-b2b-lookups.md) を参照してください。<p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**（変換が有効になっているデータセットの数）。 |
+| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**新しいデータをインポートするように設定されているデータセットの数<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータの読み込みがオフになっているデータセットの数。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p>![ステータスが赤](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
+| データを変換 | 適用可能な B2B ルックアップデータセットの変換ステータスを表示します。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**（変換が有効になっているデータセットの数）。 |
 | [!UICONTROL 作成者] | 接続を作成したユーザーの名前を表示します。 |
 | [!UICONTROL 最終変更日] | 接続に対する最後の変更のタイムスタンプを表示します。 |
 | [!UICONTROL 最終変更者] | 接続を最後に変更した人物を表示します。 |
@@ -196,8 +196,8 @@ ht-degree: 14%
 | [!UICONTROL 追加されたバッチ] | このデータセットに追加されたデータバッチの数を表示します。 |
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数を表示します。<p>レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID の欠落または無効なユーザー ID などがあります。 10 分ごとに更新されます。<p>無効な人物 ID （など） `undefined`、または `00000000`または、内の数字と文字の組み合わせ [!UICONTROL 人物 ID] 特定の月に 100 万回以上イベントに表示される）は、特定のユーザーに関連付けることができない ID です。 これらの行はシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。 無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>使用方法 [ステッチ](/help/stitching/overview.md) ：未定義またはすべてがゼロのユーザー ID の代わりに有効なユーザー ID を生成します。</li><li>ユーザー ID を空白にする。この ID は取り込み中にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
 | [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時を表示します。 |
-| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p><span style="color:green">●</span>   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合、および<p><span style="color:gray">●</span>   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p><span style="color:red">●</span>   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p><span style="color:orange">●</span>   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p><span style="color:green">●</span>   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p><span style="color:grey">●</span>   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、次を選択します <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**. |
+| [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _日付：]**新しいデータをインポートするようにデータセットが設定されている場合、および<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**失敗したバックフィルの数<p>![ステータスが赤](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**処理するバックフィル数の場合、<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _バックフィル完了]**完了したバックフィル数およびの場合<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、次を選択します <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**. |
 | [!UICONTROL データソースタイプ] | データセットを接続に追加する際に定義されるデータソースタイプ。 |
 | [!UICONTROL データセットタイプ] | [!UICONTROL イベント]、[!UICONTROL ルックアップ]、[!UICONTROL プロファイル]のいずれかです。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#configure-dataset) |
 | [!UICONTROL スキーマ] | このデータセットのベースとなるExperience Platformスキーマを示します。 |
@@ -220,17 +220,17 @@ ht-degree: 14%
 の場合 [!UICONTROL 取り込まれた行]:
 
 * 月の 2 日ごとに更新されたすべての接続のすべてのイベントデータを含んだ、取り込まれた行の合計がパネルに表示されます。 パネル内で以下を行います。
-   * ボックスには、先月に取り込んだ行の数と変化が % で表示されます（ <span style="color:green">▲</span> または <span style="color:c64545">▼</span>）から選択します。
-   * 折れ線グラフには、 <span style="color:53b2ad">◼︎</span> [!UICONTROL 毎月の取り込み行].<br/>1 か月に取得した月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
+   * ボックスには、先月に取り込んだ行の数と、先月からの変化が % で（▲または▼で示されます）表示されます。
+   * 折れ線グラフに◼︎が表示されます [!UICONTROL 毎月の取り込み行].<br/>1 か月に取得した月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
 
 
 の場合 [!UICONTROL レポート可能な行]:
 
 * 月の 2 日ごとに更新されたすべての接続にわたるすべてのイベントデータを含んだ、レポート可能な行の合計がパネルに表示されます。 パネル内で以下を行います。
    * レポート可能な行の累積合計数がボックスに表示されます。
-   * ボックスには、先月のレポート可能な行の合計数と変化が % で表示されます（ <span style="color:green">▲</span> または <span style="color:c64545">▼</span>）から選択します。
-   * 折れ線グラフには、 <span style="color:53b2ad">◼︎</span> [!UICONTROL 月次レポート可能行].<br/>特定の月のレポート可能な累積行数を表示するポップアップを確認するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
-   * 折れ線グラフには、 <span style="color:53b2ad">◼︎</span> [!UICONTROL レポート可能な累積行].<br/>1 か月についてレポート可能な月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
+   * ボックスには、先月のレポート可能な行の合計数と、先月からの変化が % で表示されます（▲または▼で示されます）。
+   * 折れ線グラフに◼︎が表示されます [!UICONTROL 月次レポート可能行].<br/>特定の月のレポート可能な累積行数を表示するポップアップを確認するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
+   * 折れ線グラフに◼︎が表示されます [!UICONTROL レポート可能な累積行].<br/>1 か月についてレポート可能な月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
 
 
 >[!MORELIKETHIS]

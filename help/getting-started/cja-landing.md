@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -53,7 +53,7 @@ BI 拡張機能を使用すると、Customer Journey Analytics で定義した�
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-<span style="color:gray">*_BI 拡張機能を使用するには、Select パッケージ以上が必要です。_</span>
+*_BI 拡張機能を使用するには、Select パッケージ以降が必要です。_*
 
 
 <!--

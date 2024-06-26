@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '8075'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # 派生フィールド
 
-派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面になります。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その後、その派生フィールドをコンポーネント（指標またはディメンション）として次で使用できます [ワークスペース](../../analysis-workspace/home.md) または、派生フィールドをでさらにコンポーネントとして定義します [データビュー](../data-views.md).
+派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面になります。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その後、その派生フィールドをコンポーネント（指標またはディメンション）として次で使用できます [Workspace](../../analysis-workspace/home.md) または、派生フィールドをでさらにコンポーネントとして定義します [データビュー](../data-views.md).
 
 派生フィールドを使用すると、Customer Journey Analytics外の他の場所でデータを変換または操作する場合と比較して、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)または、独自の抽出変換読み込み（ETL）/抽出読み込み変換（ELT）プロセス内で使用します。
 
@@ -607,9 +607,9 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 |  | 制約 |
 |:---:|----|
-| **<span style='color: red'>A</span>** | ユーザーが設定する値 *選択* 同じ範囲内で [!UICONTROL 次の場合], [!UICONTROL Else If] コンストラクト（使用 [!UICONTROL および] または [!UICONTROL または]）内のルールは、同じコンテナから生成され、任意のタイプ（文字列）にすることができます ![文字列](assets/Smock_ABC_18_N.svg)、数値 ![数値](assets/Smock_123_18_N.svg)など）。 <br/>![依存関係 A のスクリーンショット](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | すべての値 *set* ルール全体は、同じコンテナから得られ、同じ型または同じ型の派生値を持つ必要があります。 <br/> ![依存関係 B のスクリーンショット](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | 指定した値 *選択* 間 [!UICONTROL 次の場合], [!UICONTROL Else If] ルール内の構成要素 do *ではない* 同じ容器から生まれて行わなければならない *ではない* 同じタイプにする必要があります。 <br/> ![依存関係 C のスクリーンショット](assets/dependency-c.png) |
+| **A** | ユーザーが設定する値 *選択* 同じ範囲内で [!UICONTROL 次の場合], [!UICONTROL Else If] コンストラクト（使用 [!UICONTROL および] または [!UICONTROL または]）内のルールは、同じコンテナから生成され、任意のタイプ（文字列）にすることができます ![文字列](assets/Smock_ABC_18_N.svg)、数値 ![数値](assets/Smock_123_18_N.svg)など）。 <br/>![依存関係 A のスクリーンショット](assets/dependency-a.png) |
+| **B** | すべての値 *set* ルール全体は、同じコンテナから得られ、同じ型または同じ型の派生値を持つ必要があります。 <br/> ![依存関係 B のスクリーンショット](assets/dependency-b.png) |
+| **C** | 指定した値 *選択* 間 [!UICONTROL 次の場合], [!UICONTROL Else If] ルール内の構成要素 do *ではない* 同じ容器から生まれて行わなければならない *ではない* 同じタイプにする必要があります。 <br/> ![依存関係 C のスクリーンショット](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 1. 静的な値を挿入するには（例： `1.05`）、値を入力して選択します。 **[!UICONTROL 追加 *x* 静的値として]** または **[!UICONTROL 追加 – *x* 負の静的値として]** ポップアップメニューから選択します。
    ![算術の詳細情報 2](assets/math-more-info-2.png)
 
-1. 緑のチェックマーク ![チェックマーク](./assets/checkmark.svg)</span> 数式が有効かどうかを示します。有効でない場合は、警告が表示されます <span style="color:red">![アラート](./assets/alert.svg)</span> とメッセージ <span style="color:#ea3829">[!UICONTROL 式が無効です].</span>
+1. 緑のチェックマーク ![チェックマーク](./assets/checkmark.svg)</span> 数式が有効かどうかを示します。有効でない場合は、警告が表示されます ![アラート](./assets/alert.svg) とメッセージ [!UICONTROL 式が無効です].
    ![算術の詳細情報 3](assets/math-more-info-3.png)
 
 で静的な数値を使用する場合、いくつかの重要な考慮事項があります [!UICONTROL MATH] 関数：
@@ -1516,7 +1516,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ## ユースケース {#summarize-uc}
 
-買い物かごに追加の売上高を、小、中、大の 3 つの異なるカテゴリに分類したいとします。 これにより、価値の高い顧客の特性を分析および特定できます。
+買い物かごに追加売上高は、小、Medium、大の 3 つの異なるカテゴリに分類したいとします。 これにより、価値の高い顧客の特性を分析および特定できます。
 
 ### 前のデータ {#summarize-uc-databefore}
 
@@ -1533,7 +1533,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 ロジック :
 
 - 訪問者の「買い物かごに追加する売上高の合計」が 150 ドル未満の場合は、「小」に設定します。
-- 訪問者の「買い物かごに追加する売上高の合計」が 150 ドルを超え、500 ドル未満の場合は、「中」に設定します。
+- 訪問者の「買い物かごに追加する売上高の合計」が 150 ドルを超え、500 ドル未満の場合は、Mediumに設定します。
 - 訪問者の「買い物かごに追加する売上高の合計」が 500 ドル以上の場合は、「大」に設定します。
 
 結果：
