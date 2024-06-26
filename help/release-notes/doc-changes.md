@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 72%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年6月** | |
+| ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集してAnalysis Workspaceに表示するストリーミングメディア機能のセットを参照する際に、「Media Analytics」と「Streaming Media」のインスタンスを「Streaming Media Collection Add-on」という名前に置き換えました。 <p>これらのアップデートは、Customer Journey Analyticsドキュメントでも入手できます。 [ストリーミングメディアコレクションアドオンのドキュメント](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview).</p> |
 | グラフベースのステッチ | 更新および再構築 [ドキュメントのステッチ](/help/stitching/overview.md) グラフベースのステッチの導入により、 |
 | AI アシスタント | 追加済み [詳細を見る](../ai-assistant.md) Customer Journey Analytics用の AI アシスタントで。 |
 | B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) B2B ルックアップデータセットの変換を使用する（アカウント、オポチュニティ、マーケティングリスト、キャンペーンを含む）。 |
@@ -40,7 +41,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Product Analytics機能に関する新しいドキュメント | <ul><li>[機能マトリックス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [リテンション率](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[ファネルのインサイトの強化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
-| プロジェクトのみのワークスペースコンポーネントの権限強化に関するドキュメントを追加しました | プロジェクトを他のユーザーと共有すると、それらのユーザーは以下を編集できます [クイックフィルター](/help/components/filters/quick-filters.md) および共有プロジェクトに埋め込まれた、その他のプロジェクト専用コンポーネント。 |
+| プロジェクトのみのWorkspace コンポーネントの権限強化に関するドキュメントを追加しました | プロジェクトを他のユーザーと共有すると、それらのユーザーは以下を編集できます [クイックフィルター](/help/components/filters/quick-filters.md) および共有プロジェクトに埋め込まれた、その他のプロジェクト専用コンポーネント。 |
 | **2024年2月** | |
 | プロジェクト共有ドキュメントの更新 | 方法に関する情報を追加しました [自分と共有されているプロジェクトを表示する](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウド書き出し場所を設定する際に、Azure SAS と Azure RBAC にファイルをアップロードするための権限要件を追加しました | 次の場合に Azure SAS と Azure RBAC にファイルをアップロードするための正確な権限要件を追加しました [クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md) および [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md). |
@@ -71,7 +72,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 異常値検出ドキュメントの更新 | 異常値検出のドキュメントは、以前は Virtual Analyst に関する節に記載されていました。 次の変更を行いました。 <ul><li>Virtual Analyst という用語はドキュメントから削除しました。</li><li>[異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)に関する節は、Analysis Workspace の節のすぐ下に移動しました。</li></ul> |
 | **2023年10月** | |
 | 派生フィールドを使用した目標/ターゲットの設定 | 追加済み [ユースケース](../use-cases/goals-using-derived-fields.md) 目標/ターゲットを設定し、これらに関するレポートを作成するために、派生フィールドを使用する方法を説明する記事。 |
-| 完全なテーブルをクラウドに書き出す | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
+| 完全なテーブルをクラウドに書き出す | 数百万のWorkspace行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
 | レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。管理者はレポートの使用状況を詳細に把握できるため、ピーク時のレポート作成時の容量に関する問題を容易に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[レポートアクティビティマネージャーの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理ページの新しい列 | で利用できるようになったドキュメント化された新しい列 [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) および [フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja). |
 | Adobe Analytics との比較 | さんがを追加しました [概要ページ](../getting-started/aa-vs-cja/overview.md) Customer Journey AnalyticsとAdobe Analyticsの違いの比較と理解に関する概要です。 |
