@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 14%
@@ -51,7 +51,7 @@ ht-degree: 14%
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータスを表示します。 <p>![ステータスが緑](assets/status-green.svg)）    **[!UICONTROL _x _日付：]**新しいデータをインポートするように設定されたデータセットの場合<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータをインポートするように設定されていないデータセットの場合。 |
 | [!UICONTROL 作成日] | 接続が作成されたときのタイムスタンプ。 |
 | [!UICONTROL 最終変更日] | 接続が最後に更新されたときのタイムスタンプ。 |
-| [!UICONTROL データをバックフィル] | データセット間のバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p>![ステータス オレンジ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p>![ステータスが緑](assets/status-green.svg)）   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
+| [!UICONTROL データをバックフィル] | データセット間のバックフィルデータのステータスを表示します。<p>![ステータスが赤](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p>![ステータス オレンジ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**データセット間の処理バックフィルの数<p>![ステータスが緑](assets/status-green.svg)   **[!UICONTROL _x _バックフィル完了]**データセットの完了したバックフィルの数<p>![ステータスがグレー](assets/status-gray.svg)   **[!UICONTROL _オフ_]** 接続のデータセットに対してバックフィルが定義されていない場合。 |
 
 表示する列を設定するには、次を選択します ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。この中には、 **テーブルをカスタマイズ** テーブルの列のオンとオフを切り替えることができるダイアログ。
 
@@ -89,7 +89,7 @@ ht-degree: 14%
 
 接続を削除すると、 **[!UICONTROL 接続を削除]** パネルは、削除されるデータビューと、影響を受けるワークスペースプロジェクトを示します。
 
-<img src="./assets/delete-connection.png" alt="接続を削除" width="400"/>
+![接続を削除](assets/delete-connection.png)
 
 を選択 **[!UICONTROL 続行]** ：接続を削除します。
 
