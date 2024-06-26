@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '8373'
+source-wordcount: '8075'
 ht-degree: 12%
 
 ---
@@ -833,32 +833,32 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 +++
 
 
-<!-- DEDUPLICATE -->
+<!-- DEDUPLICATE
 
-### 重複排除
+### Deduplicate
 
-値を複数回数えるのを防ぎます。
+Prevents counting a value multiple times.
 
-+++ 詳細
++++ Details
 
 {{release-limited-testing-section}}
 
-## 仕様 {#deduplicate-io}
+## Specifications {#deduplicate-io}
 
-| 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
+| Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 重複排除 ID]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul><li>[!UICONTROL 保持する値]:<ul><li>最初のインスタンスを維持</li><li>最後のインスタンスを維持</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 
-## ユースケース 1 {#deduplicate-uc1}
+## Use case 1 {#deduplicate-uc1}
 
-ユーザーが予約確認ページをリロードする際に、重複売上高がカウントされないようにする必要がある。 同じイベントで受信した収益を再度カウントしないように、識別子で予約確認 ID を使用します。
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
 
-### 前のデータ {#deduplicate-uc1-databefore}
+### Data before {#deduplicate-uc1-databefore}
 
-| 予約確認 ID | 売上高 |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 359 |
@@ -866,15 +866,15 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 {style="table-layout:auto"}
 
-### 派生フィールド {#deduplicate-uc1-derivedfield}
+### Derived field {#deduplicate-uc1-derivedfield}
 
-を定義します `Booking Confirmation` 派生フィールド。 を使用します [!UICONTROL 重複排除] ルールの重複排除を定義する関数 [!UICONTROL 値] [!DNL Booking] （用） [!UICONTROL 範囲] [!DNL Person] 使用 [!UICONTROL 重複排除 ID] [!UICONTROL 予約確認 ID]. を選択します [!UICONTROL 最初のインスタンスを保持] as [!UICONTROL 保持する値].
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
 
-![連結ルールのスクリーンショット](assets/deduplicate-1.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
 
-### 後のデータ {#deduplicate-uc1-dataafter}
+### Data after {#deduplicate-uc1-dataafter}
 
-| 予約確認 ID | 売上高 |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 0 |
@@ -882,41 +882,43 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 {style="table-layout:auto"}
 
-## ユースケース 2 {#deduplicate-uc2}
+## Use case 2 {#deduplicate-uc2}
 
-イベントを、外部マーケティングキャンペーンでのキャンペーンのクリックスルーのプロキシとして使用します。 リロードとリダイレクトが原因で、イベント指標が水増しされる。 トラッキングコードディメンションの重複を排除して、最初のディメンションのみが収集されるようにし、イベントのオーバーカウントを最小限に抑えたいと考えています。
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
 
-### 前のデータ {#deduplicate-uc2-databefore}
+### Data before {#deduplicate-uc2-databefore}
 
-| 訪問者 ID | マーケティングチャネル | イベント |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | 有料検索 | 1 |
-| ABC123 | 有料検索 | 1 |
-| ABC123 | 有料検索 | 1 |
-| DEF123 | メール | 1 |
-| DEF123 | メール | 1 |
-| JKL123 | 自然検索 | 1 |
-| JKL123 | 自然検索 | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
-### 派生フィールド {#deduplicate-uc2-derivedfield}
+### Derived field {#deduplicate-uc2-derivedfield}
 
-新しいを定義します `Tracking Code (deduplicated)` 派生フィールド。 を使用します [!UICONTROL 重複排除] ルールの重複排除を定義する関数 [!UICONTROL 追跡コード] （を使用） [!UICONTROL 重複排除範囲] 件中 [!UICONTROL Session] および [!UICONTROL 最初のインスタンスを保持] as the [!UICONTROL 保持する値].
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
 
-![連結ルールのスクリーンショット](assets/deduplicate-2.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
 
-### 後のデータ {#deduplicate-uc2-dataafter}
+### Data after {#deduplicate-uc2-dataafter}
 
-| 訪問者 ID | マーケティングチャネル | イベント |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | 有料検索 | 1 |
-| DEF123 | メール | 1 |
-| JKL123 | 自然検索 | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
 +++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -1503,8 +1505,6 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 イベント、セッションおよびユーザーレベルで指標またはディメンションに集計タイプ関数を適用します。
 
 +++ 詳細
-
-{{release-limited-testing-section}}
 
 ## 仕様 {#summarize-io}
 

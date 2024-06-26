@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 85%
 
 ---
 
@@ -29,6 +29,12 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 [![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB グラフベースのステッチ]
+
+グラフベースのステッチを使用すると、Experience PlatformID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。 <ul><li>追加データを抽出、変換、読み込んで単一の識別子を反映することなく、異なる識別子を持つデータセットを結合する。</li> <li>データセット間で ID を共有することで、単一のデータセットの優先 ID またはゴールデン ID のカバレッジを向上させる。</li><li>Real-time Customer Data PlatformおよびJourney Optimizerで作成されたプロファイルとCustomer Journey Analytics内のユーザーを一致させる。</li></ul>
+
+[![画像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
 >[!TAB B2B ルックアップ]
 
 接続設定の一環として、特定の B2B ルックアップスキーマのデータセットを変換して、B2B データに対するユーザーベースの検索をより適切にサポートできます。
@@ -37,7 +43,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB 派生フィールド]
 
-新しい派生フィールド関数（数学、次または前）と追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、毎月の目標、単純なボット検出など）が使用できるようになりました。
+新しい派生フィールド関数（数学、次または前、要約）および追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、月別の目標、シンプルなボット検出など）が使用できるようになりました。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
