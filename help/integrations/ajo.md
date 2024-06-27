@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
+source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1541'
 ht-degree: 52%
 
 ---
@@ -45,7 +45,7 @@ Journey OptimizerのCustomer Journey Analyticsレポートを有効にすると�
 
 | データセット名 | スキーマ | データセットタイプ | データソースタイプ | 人物 Id | キー | 一致するキー | 新しいデータを読み込む | データをバックフィル |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestrationのジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
@@ -87,10 +87,10 @@ Journey OptimizerのCustomer Journey Analyticsレポートを有効にすると�
 
 
 - が含まれる **Components** タブ：
-   - 次を持つすべての指標およびディメンション **[!UICONTROL （AJO）]** の名前にが追加され、この自動設定の一部として自動的に追加されます。
-   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。 例えば、ランディングページクリック数（AJO）指標は、ランディングページクリック数の派生フィールドに基づいています。
-   - 一部の指標またはディメンションには、追加の設定があります。 例えば、スパムの苦情（AJO）には、「形式」設定と「値を含める」設定が適用されています。
-   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります **[!UICONTROL :*name_of_metric_or_dimension *]**. 例：[!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある [!UICONTROL ：ランディングページのクリック数（AJO）].
+   - 次を持つすべての指標およびディメンション [!UICONTROL （AJO）] の名前にが追加され、この自動設定の一部として自動的に追加されます。
+   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。 例えば、指標です [!UICONTROL ランディングページのクリック数（AJO）] は、に基づいています [!UICONTROL ランディングページクリック数] 派生フィールド。
+   - 一部の指標またはディメンションには、追加の設定があります。 例： [!UICONTROL スパムの苦情（AJO）] 持つ [!UICONTROL 形式] および [!UICONTROL 値を含める/除外] 設定が適用されました。
+   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります `:`*`name_of_metric_or_dimension`*. 例： [!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある `: Landing page clicks (AJO)`.
 
 - が含まれる **[!UICONTROL 設定]** タブが表示され、特定の設定値が適用されない
 
