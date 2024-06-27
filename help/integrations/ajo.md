@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
+source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 52%
@@ -90,7 +90,7 @@ Journey OptimizerのCustomer Journey Analyticsレポートを有効にすると�
    - 次を持つすべての指標およびディメンション [!UICONTROL （AJO）] の名前にが追加され、この自動設定の一部として自動的に追加されます。
    - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。 例えば、指標です [!UICONTROL ランディングページのクリック数（AJO）] は、に基づいています [!UICONTROL ランディングページクリック数] 派生フィールド。
    - 一部の指標またはディメンションには、追加の設定があります。 例： [!UICONTROL スパムの苦情（AJO）] 持つ [!UICONTROL 形式] および [!UICONTROL 値を含める/除外] 設定が適用されました。
-   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります `:`*`name_of_metric_or_dimension`*. 例： [!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある `: Landing page clicks (AJO)`.
+   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります `:`*`name_of_metric_or_dimension`*. 例： [!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある `:Landing page clicks (AJO)`.
 
 - が含まれる **[!UICONTROL 設定]** タブが表示され、特定の設定値が適用されない
 
