@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3277'
 ht-degree: 14%
 
 ---
@@ -206,7 +206,12 @@ ht-degree: 14%
 
 ## 用途
 
-この [!UICONTROL 使用方法] インターフェイスには、すべての接続における取り込まれた行とレポート可能な行の使用状況が表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。
+この [!UICONTROL 使用方法] インターフェイスには、すべての接続における取り込まれた行とレポート可能な行の使用状況が表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 使用状況 UI を使用すると、モニタリングの目的に加えて、Customer Journey Analyticsライセンスの更新をより適切に計画できます。
+
+Customer Journey Analyticsの使用状況を監視する時間範囲（過去 6 か月、年初から今日、または過去 2 年）と間隔（月または四半期）を選択できます。 インターフェイスは、次の 2 つのセクションに分かれています。
+
+* 取り込み済み行：すべての CJA 接続でイベントデータセットから取り込まれ/送信された行の総数（取り込み時にスキップされたレコードを含む）
+* レポート可能行：すべての CJA 接続にわたるすべてのイベントデータを含むレポート可能行の合計
 
 ![usage-view](assets/usage-view.png)
 
