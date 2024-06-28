@@ -4,9 +4,9 @@ description: Analysis Workspaceのフリーフォームテーブルでディメ�
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: afa6a3cf8763a2d6419ec859385abc4cf095f214
+source-git-commit: e1e57eaa9445fc4d553aa7804c4038c03fbe65cd
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1736'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,11 @@ ht-degree: 1%
 
 * リンク先の URL の一部である値を持つDimension項目または分類（URL の一部であるページ名ディメンションなど）
 
-次に、この機能を紹介するビデオを示します。
++++この機能のデモ動画をご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+
++++
 
 ## 1 つ以上のディメンション項目のハイパーリンクの作成
 
