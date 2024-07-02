@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1747'
 ht-degree: 10%
 
 ---
@@ -58,8 +58,6 @@ ht-degree: 10%
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ ht-degree: 10%
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
 | ステッチされたデータセット | 5～50 | システム強制ガードレール | お客様ごとのステッチされたデータセットの最大数。値は、Customer Journey Analyticsパッケージによって異なります（「製品の説明」を参照）。 |
-| データをバックフィル | 60 - 395 | システム強制ガードレール | バックフィルデータの最大日数。値は、Customer Journey Analyticsパッケージによって異なります（商品説明を参照）。 |
+| バックフィルの長さ | 6 - 25 | システム強制ガードレール | バックフィルデータの最大月数。値は、Customer Journey Analyticsパッケージによって異なります（商品説明を参照）。 |
+| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。値は、Customer Journey Analyticsパッケージによって異なります（製品の説明を参照）。 |
 
 {style="table-layout:auto"}
+
+
+## グラフベースのステッチ
+
+| 名前 | 値 | 上限のタイプ | 説明 |
+|---|--:|---|---|
+| ステッチされたデータセット | 10～50 | システム強制ガードレール | お客様ごとのステッチされたデータセットの最大数。値は、Customer Journey Analyticsパッケージによって異なります（「製品の説明」を参照）。 |
+| バックフィルの長さ | 13 ～ 25 | システム強制ガードレール | バックフィルデータの最大月数。値は、Customer Journey Analyticsパッケージによって異なります（商品説明を参照）。 |
+| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。値は、Customer Journey Analyticsパッケージによって異なります（製品の説明を参照）。 |
 
 
 ## フィルターと計算指標
@@ -222,14 +230,14 @@ ht-degree: 10%
 
 | データフロー | 予想遅延時間 |
 |---|---|
-| Adobe AnalyticsからAdobe Analyticsへのソースコネクタ（A4T 対応） | &lt; 30 分 |
-| リアルタイム顧客プロファイルへのAdobe Analytics ソースコネクタ（A4T が有効になっていません） | &lt; 2 分 |
-| Adobe Analytics ソースコネクタからリアルタイム顧客プロファイルへ（A4T 対応） | &lt; 30 分 |
+| Adobe Analytics/Adobe Analytics Source コネクタ（A4T 対応） | &lt; 30 分 |
+| Adobe Analytics Source Connector からリアルタイム顧客プロファイルへ（A4T が無効） | &lt; 2 分 |
+| Adobe Analytics Source Connector からリアルタイム顧客プロファイルへ（A4T 対応） | &lt; 30 分 |
 | Edge Networkまたはストリーミング取得からのデータレイクへのデータ取得 | &lt; 60 分 |
-| Adobe Analytics ソースコネクタからのデータレイクへのデータ取り込み | &lt; 2.25 時間 |
+| Adobe Analytics Source コネクタからのデータレイクへのデータ取り込み | &lt; 2.25 時間 |
 | データレイクからCustomer Journey Analyticsへのデータ取り込み | &lt; 90 分 |
 | ステッチ（オプション機能。を参照） [ステッチの概要](../stitching/overview.md) （詳細情報） | &lt; 3.25 時間 |
-| Adobe Analytics ソースコネクタのバックフィルが 100 億未満のイベント（最大 13 か月分の履歴データ） | &lt; 4 週間 |
+| Adobe Analytics Source コネクタのバックフィルが 100 億未満のイベント（最大 13 か月分の履歴データ） | &lt; 4 週間 |
 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | ≈ 60 分 |
 | オーディエンスの更新頻度 | 1 回限りの更新：5 分未満の待ち時間。<br/>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 

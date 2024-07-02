@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 12%
 
 ---
@@ -345,13 +345,13 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 ### オプション
 
-ステッチのオプションを選択します。 Customer Journey Analyticsパッケージは、初期バックフィル期間、ルックバックウィンドウ、再生頻度、ステッチ可能なデータセットの最大数に関して使用可能なオプションを決定します。
+ステッチのオプションを選択します。 Customer Journey Analyticsパッケージは、初期バックフィル期間、ルックバックウィンドウ、再生頻度、ステッチ可能なデータセットの最大数に関して使用可能なオプションを決定します。 を参照してください。 [Customer Journey Analytics商品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。
 
 | | Customer Journey Analytics<br/>を選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>究極の |
 |---|---|---|---|
 | 1 回限りのステッチバックフィル期間 | 13 ヶ月 | 13 ヶ月 | 25 ヶ月 |
 | ルックバックウィンドウと再生頻度 | <li>1 日、毎日</li><li>最大 7 日間、毎週</li> | <li>1 日、毎日</li><li>最大 14 日間、毎週</li> | <li>1 日、毎日</li><li>最大 30 日間、毎週</li> |
-| ステッチできるデータセットの最大数 | 5 | 10 | 15 |
+| ステッチできるデータセットの最大数 | 5 | 10 | 50 |
 
 ### サポートをリクエスト
 
