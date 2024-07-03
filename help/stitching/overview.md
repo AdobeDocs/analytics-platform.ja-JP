@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 11%
@@ -326,7 +326,7 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 >[!NOTE]
 >
->あなたは、 **ではない** グラフベースのステッチにはReal-time Customer Data Platform ライセンスが必要です。 この **を選択** Customer Journey Analyticsのまたはそれ以上のパッケージには、必要な User Identity Service 使用権限が含まれています。
+>あなたは、 **ではない** グラフベースのステッチにはReal-time Customer Data Platform ライセンスが必要です。 この **を選択** Customer Journey Analyticsのそれ以上のパッケージには、必要な User Identity Service 資格が含まれています。
 
 
 
