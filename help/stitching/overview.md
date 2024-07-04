@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 11%
+source-wordcount: '3793'
+ht-degree: 12%
 
 ---
 
 # ステッチ
 
-{{select-package}}
+>[!NOTE]
+>
+>以下が必要です。 **を選択** パッケージ以上（フィールドベースのステッチの場合）または **Prime** この節で説明している機能を使用するには、パッケージ以降（グラフベースのステッチの場合）。 使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
+
 
 ID のステッチ（または単にステッチ）は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。 クロスチャネル分析は、Customer Journey Analyticsで処理できる主なユースケースで、共通の ID （ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに対してレポートをシームレスに組み合わせて実行できます。
 
@@ -189,7 +192,7 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 - ステッチを適用するAdobe Experience Platformのイベントデータセットには、訪問者の識別に役立つ次の 2 つの列が必要です。
 
-   - A **永続 ID**：各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Cloud ID サービスで生成された ECID などです。
+   - A **永続 ID**：各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
    - A **一時 ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 このデータセットをCustomer Journey Analytics接続内に含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 - 両方の列（永続 ID と一時 ID）は、ステッチするデータセットのスキーマで、ID 名前空間を持つ ID フィールドとして定義する必要があります。 Real-time Customer Data Platformで ID ステッチを使用する場合は、 [`identityMap` フィールドグループ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)を選択した場合でも、id 名前空間を持つ id フィールドを追加する必要があります。 Customer Journey Analyticsのステッチではをサポートしていないので、この ID フィールドの ID は必須です `identityMap` フィールドグループ。 スキーマに ID フィールドを追加すると、同時にを使用する場合 `identityMap` フィールドグループで、「追加 id」フィールドをプライマリ id として設定しないでください。 追加 ID フィールドをプライマリ ID として設定すると、に干渉します。 `identityMap` Real-time Customer Data Platformに使用されるフィールドグループ。
@@ -321,13 +324,12 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用するAdobe Experience Platformのイベントデータセットには、すべての行で訪問者を特定する 1 つの列がある必要があります。 **永続 ID**. 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Cloud ID サービスで生成された ECID などです。
-- Experience CloudID サービスの ID グラフには、名前空間が必要です（例： `Email`、または `Phone`）を使用します **一時 ID**. 参照： [Experience PlatformID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) を参照してください。
+- ステッチを適用するAdobe Experience Platformのイベントデータセットには、すべての行で訪問者を特定する 1 つの列がある必要があります。 **永続 ID**. 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
+- Experience PlatformID サービスの ID グラフには、名前空間が必要です（例： `Email`、または `Phone`）を使用します **一時 ID**. 参照： [Experience PlatformID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
 >
->あなたは、 **ではない** グラフベースのステッチにはReal-time Customer Data Platform ライセンスが必要です。 この **を選択** Customer Journey Analyticsのそれ以上のパッケージには、必要な User Identity Service 資格が含まれています。
-
+>あなたは、 **ではない** グラフベースのステッチにはReal-time Customer Data Platform ライセンスが必要です。 この **Prime** パッケージ以降のCustomer Journey Analyticsには、必要なExperience Platform ID サービス使用権限が含まれています。
 
 
 ### 制限事項
