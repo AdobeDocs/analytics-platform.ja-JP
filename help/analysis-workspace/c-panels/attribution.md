@@ -4,19 +4,25 @@ description: Analysis Workspace でのアトリビューションパネルの使
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
+source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 75%
+source-wordcount: '620'
+ht-degree: 70%
 
 ---
 
 # アトリビューションパネル {#attribution-panel}
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution"
+>id="cja_workspace_attribution_button"
 >title="アトリビューション"
 >abstract="任意のディメンションとコンバージョン指標を使用して、任意の数のアトリビューションモデルをすばやく比較および視覚化します"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQパネル"
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution_panel"
+>title="アトリビューションパネル"
+>abstract="任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。<br/><br/>**パラメーター&#x200B;**<br/>**チャネル**<br/>&#x200B;属性を設定するディメンション。 マーケティングチャネル、キャンペーン、またはその他のディメンションを指定できます。<br/>**モデル**<br/>&#x200B;モデルは、タッチポイントにクレジットを割り当てる方法を決定します。<br/>**ルックバックウィンドウ**<br/>&#x200B;この設定により、各コンバージョンに適用されるデータアトリビューションの期間が決まります。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQパネル"
 
 
