@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1761'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -54,13 +54,13 @@ ht-degree: 83%
 
 {{release-limited-testing-section}}
 
-Customer Journey Analyticsに加えて、Adobe Journey Optimizerを使用する場合に適用できる設定を提供します。
+Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用する際に適用できる設定を提供します。
 
-このセクションは、Journey Optimizerでプロビジョニングされた管理者にのみ表示されます。
+このセクションは、Journey Optimizer がプロビジョニングされている管理者にのみ表示されます。
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL **Adobe Journey Optimizerのデフォルトデータビューとして設定**] | この設定オプションは、Journey OptimizerとCustomer Journey Analytics全体でレポートを標準化します。 また、次のオプションを選択して、Customer Journey Analytics内のAdobe Journey Optimizer データのアドバンス分析を実行することもできます ![開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **CJA での分析**] Journey Optimizerの場合）。<p>Journey OptimizerがこのタイプのCustomer Journey Analyticsを実行するには、分析データビューにアクセスする必要があります。<p>これを、サンドボックスのJourney Optimizer レポートで使用されるデフォルトのデータビューにするには、このオプションを有効にします。</p><p>この設定オプションは自動的に以下を行います。</p><ul><li>Journey Optimizerで使用するために、関連するCustomer Journey Analyticsで、必要なすべてのJourney Optimizer データセットを設定します。</li><li>データビューにJourney Optimizerの指標とディメンションのセット（派生フィールドと計算指標を含む）を作成します。 コンテキストラベルは、これらすべての指標およびディメンションに自動的に設定されます。</li></ul><p><p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>後でデフォルトのデータビューを変更できますが、これによりJourney Optimizerのレポートデータが変わる可能性があります。 有効にした後でこのオプションを無効にすると、新しいデフォルトのデータビューを選択するように求められます。</li><li>設定データビューのデータセット、ディメンションまたは指標に対して既に手動のカスタマイズを行っている場合、このCustomer Journey Analyticsオプションを有効にしても手動のカスタマイズはそのままです。 このオプションにより、Journey OptimizerとCustomer Journey Analytics間でレポートをさらに標準化するためのカスタマイズが追加されます。 このオプションを有効にした後で、手動でカスタマイズすることもできます。</li></ul>参照： [Adobe Journey OptimizerとAdobe Customer Journey Analyticsの統合](/help/integrations/ajo.md) を参照してください。 |
+| [!UICONTROL **Adobe Journey Optimizer のデフォルトのデータビューとして設定**] | この設定オプションは、Journey Optimizer と Customer Journey Analytics 全体のレポートを標準化します。また、Customer Journey Analytics で Adobe Journey Optimizer データのアドバンス分析を実行することもできます（Journey Optimizer で![開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg)[!UICONTROL **CJA で分析**]&#x200B;を選択）。<p>このタイプの分析を実行するには、Journey Optimizer で Customer Journey Analytics データビューにアクセスする必要があります。<p>このオプションを有効にすると、サンドボックスの Journey Optimizer レポートで使用されるデフォルトのデータビューになります。</p><p>この設定オプションでは、自動的に次の操作を行います。</p><ul><li>Journey Optimizer で使用するために、Customer Journey Analytics の関連接続で必要なすべての Journey Optimizer データセットを設定する。</li><li>データビューに Journey Optimizer の指標とディメンションのセットを作成する（派生フィールドと計算指標を含む）。これらすべての指標とディメンションにコンテキストラベルが自動的に設定されます。</li></ul><p><p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>デフォルトのデータビューは後で変更できますが、変更すると Journey Optimizer レポートデータが変更される可能性があります。このオプションを有効にした後に無効にすることを選択した場合は、新しいデフォルトのデータビューを選択するように求められます。</li><li>Customer Journey Analytics データビューでデータセット、ディメンションまたは指標を既に手動でカスタマイズしている場合は、この設定オプションを有効にしても、手動カスタマイズはそのまま保持されます。このオプションでは、Journey Optimizer と Customer Journey Analytics 全体のレポートをさらに標準化する追加のカスタマイズを行います。また、このオプションを有効にした後に、手動でカスタマイズすることもできます。</li></ul>詳しくは、[Adobe Journey Optimizer と Adobe Customer Journey Analytics の統合](/help/integrations/ajo.md)を参照してください。 |
 
 {style="table-layout:auto"}
 

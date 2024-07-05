@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB グラフベースのステッチ]
 
-グラフベースのステッチを使用すると、Experience PlatformID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。 <ul><li>追加データを抽出、変換、読み込んで単一の識別子を反映することなく、異なる識別子を持つデータセットを結合する。</li> <li>データセット間で ID を共有することで、単一のデータセットの優先 ID またはゴールデン ID のカバレッジを向上させる。</li><li>Real-time Customer Data PlatformおよびJourney Optimizerで作成されたプロファイルとCustomer Journey Analytics内のユーザーを一致させる。</li></ul>
+グラフベースのステッチを実行すると、Experience Platform ID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。 <ul><li>単一の識別子を反映させるために追加のデータの抽出、変換、読み込みを行わずに、異なる識別子を持つデータセットを結合する。</li> <li>データセット間で ID を共有して、単一のデータセットの優先 ID またはゴールデン ID の適用範囲を向上させる。</li><li>Real-Time Customer Data Platform と Journey Optimizer で作成したプロファイルを Customer Journey Analytics のユーザーと整合する。</li></ul>
 
 [![画像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -43,7 +43,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB 派生フィールド]
 
-新しい派生フィールド関数（数学、次または前、要約）および追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、月別の目標、シンプルなボット検出など）が使用できるようになりました。
+新しい派生フィールド関数（数学、次または前、要約）と追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、毎月の目標、単純なボット検出など）が使用できるようになりました。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -53,7 +53,7 @@ BI 拡張機能を使用すると、Customer Journey Analytics で定義した�
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-*_BI 拡張機能を使用するには、Select パッケージ以降が必要です。_*
+*_BI 拡張機能を使用するには、Select パッケージ以上が必要です。_*
 
 
 <!--
