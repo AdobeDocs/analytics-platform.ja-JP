@@ -8,7 +8,7 @@ role: User
 source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
 workflow-type: tm+mt
 source-wordcount: '2287'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 97%
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | 仮想レポートスイートコンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
 | デバイス, ブラウザー, リファラー, 技術の各ディメンション | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットと WebSDK によって生成されたデータセットの両方でサポートされます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。Experience Platform Web SDK データ収集を使用する場合、デバイスルックアップに基づくデバイスとディメンションは現在サポートされていません。将来的にサポートされる予定です。Web SDK データストリームにデバイスおよびブラウザー検索を追加する方法について詳しくは、[このドキュメント](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja)を参照してください |
-| ストリーミングメディアコレクションアドオン | ストリーミングメディアデータは、Analytics ソースコネクタを使用すると、Workspaceのメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として使用できます。 |
+| ストリーミングメディアコレクションアドオン | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
 
 {style="table-layout:auto"}
 

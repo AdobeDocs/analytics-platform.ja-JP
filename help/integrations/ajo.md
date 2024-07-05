@@ -7,105 +7,105 @@ role: Admin
 source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
-# Journey OptimizerとCustomer Journey Analyticsの統合
+# Journey Optimizer と Customer Journey Analytics の統合
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 
-Journey Optimizerで生成されたデータを設定して、Customer Journey Analyticsでアドバンス分析を実行できます。 この統合は自動的に設定できます。 必要に応じて、接続ビューまたはデータビューで使用できるデータセット、ディメンションまたは指標を手動で追加カスタマイズできます。
+Journey Optimizer で生成されたデータを設定して、Customer Journey Analytics でアドバンス分析を実行できます。この統合は、自動的に設定できます。必要に応じて、接続またはデータビューで使用できるデータセット、ディメンションまたは指標に対して追加の手動カスタマイズを行うことができます。
 
-## Journey Optimizer統合の自動設定
+## Journey Optimizer 統合の自動設定
 
 {{release-limited-testing-section}}
 
-Journey Optimizerでは、レポートエンジンとしてのCustomer Journey Analyticsの使用をサポートしています。 参照： [新しいレポートインターフェイスの概要](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) Journey Optimizerのドキュメントで説明しています。
+Journey Optimizer では、レポートエンジンとして Customer Journey Analytics の使用をサポートしています。Journey Optimizer ドキュメントの[新しいレポートインターフェイスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channel-report/report-gs-cja)を参照してください。
 
-Journey OptimizerのCustomer Journey Analyticsレポートを有効にすると、自動的に [接続](/help/connections/overview.md) および [データビュー](/help/data-views/data-views.md) は、特定のサンドボックス用に作成されます。
+Journey Optimizer の Customer Journey Analytics レポートを有効にすると、特定のサンドボックスに対して[接続](/help/connections/overview.md)と[データビュー](/help/data-views/data-views.md)が自動的に作成されます。
 
 ### 接続
 
-接続の名前はです **[!UICONTROL AJO対応の接続（*サンドボックス名*）]** とは、設定およびデータセットに次の標準値があります。
+接続の名前は **[!UICONTROL AJO が有効な接続（*サンドボックス名*）]**&#x200B;で、設定とデータセットには次の標準の値があります。
 
 | **接続設定** | 値 |
 |---|---| 
 | [!UICONTROL 接続名] | `AJO Enabled Connection (`_`sandbox name`_`)` |
-| [!UICONTROL 接続の説明] | [!UICONTROL *ここに接続の説明を入力*] |
+| [!UICONTROL 接続の説明] | [!UICONTROL *接続の説明をここに入力*] |
 | [!UICONTROL タグ] | [!UICONTROL *タグを選択*] |
 
 
 | **データ設定** | 値 |
 |---|---| 
-| [!UICONTROL 周期的なデータ時間枠を有効にする] | 有効。 [!UICONTROL 選択した月数] `13`. |
-| [!UICONTROL サンドボックス] | [!UICONTROL *サンドボックスの名前*] （無効。この設定は変更できません）。 |
+| [!UICONTROL 周期的なデータ時間枠を有効にする] | 有効。[!UICONTROL 選択した月数] `13`。 |
+| [!UICONTROL サンドボックス] | [!UICONTROL *サンドボックスの名前*]（無効。この設定は変更できません）。 |
 | [!UICONTROL 毎日のイベントの平均数] | 100 万未満（無効。この設定は変更できません）。 |
 
 
-| データセット名 | スキーマ | データセットタイプ | データソースタイプ | 人物 Id | キー | 一致するキー | 新しいデータを読み込む | データをバックフィル |
+| データセット名 | スキーマ | データセットタイプ | データソースタイプ | ユーザー ID | キー | 一致するキー | 新しいデータを読み込む | データをバックフィル |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestrationのジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO メッセージフィードバックイベントデータセット] | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap （\&lt;primary>）] | - | - | ![ステータス グリーン](assets/../../connections/assets/status-green.svg) 日付： | ![ステータス グレー](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestration のジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メッセージフィードバックイベントデータセット] | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 
 
 ### データビュー
 
-データビューには名前が付けられます **AJOのデータビューを有効にする（*サンドボックス名*）**.
+データビューの名前は **AJO が有効なデータビュー（*サンドボックス名*）**&#x200B;です。
 
-- が含まれる **[!UICONTROL 設定]** タブで、次の値が標準で設定されています。
+- 「**[!UICONTROL 設定]**」タブでは、次の値が標準で設定されています。
 
   | 設定 | 値 |
   |---|---|
-  | [!UICONTROL 接続] | AJO対応の接続（*サンドボックス名*） |
+  | [!UICONTROL 接続] | AJO が有効な接続（*サンドボックス名*） |
   | [!UICONTROL 名前] | `AJO Enabled Data View (`_`sandbox name`_`)` |
-  | [!UICONTROL 外部 ID] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` （名前から派生） |
+  | [!UICONTROL 外部 ID] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_`（名前から派生） |
   | [!UICONTROL 説明] | `undefined` |
 
   {style="table-layout:fixed"}
 
   | 互換性 | 値 |
   |---|---|
-  | [!UICONTROL Adobe Journey Optimizerのデフォルトデータビューとして設定] | 有効（デフォルト）。<br/><br/>この設定オプションを使用すると、手動で設定しなくても、Journey Optimizerで使用するデータビューを指定できます。 この設定オプションを有効にする方法（デフォルトでまだ有効になっていない場合）については、 [互換性](/help/data-views/create-dataview.md#compatibility) のセクション [データビューの作成または編集](/help/data-views/create-dataview.md). <br/><br/>このオプションを無効にすると、デフォルトのデータビューの変更を続行するかどうかを確認するダイアログが表示されます。 選択した場合 **[!UICONTROL 続行]**&#x200B;を使用する場合、別のデータビューをデフォルトのデータビューとして選択する必要があります。 を選択 **[!UICONTROL 確認]** をクリックして選択を確定します。 を選択 **[!UICONTROL キャンセル]** デフォルトデータビューの変更をキャンセルします。 |
+  | [!UICONTROL Adobe Journey Optimizer のデフォルトのデータビューとして設定] | 有効（デフォルト）。<br/><br/>この設定オプションを使用すると、手動設定を行わなくても、Journey Optimizer で使用するデータビューを指定できます。この設定オプションを有効にする方法（デフォルトで有効になっていない場合）について詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[互換性](/help/data-views/create-dataview.md#compatibility)の節を参照してください。<br/><br/>オプションを無効にすると、デフォルトのデータビューの変更を続行するかどうかを尋ねるダイアログが表示されます。「**[!UICONTROL 続行]**」を選択した場合は、デフォルトのデータビューとして別のデータビューを選択する必要があります。「**[!UICONTROL 確認]**」を選択して選択内容を確定します。デフォルトのデータビューの変更をキャンセルするには、「**[!UICONTROL キャンセル]**」を選択します。 |
 
   | コンテナ | 値 |
   |---|---|
-  | [!UICONTROL 人物のコンテナ名] | `Person` |
-  | [!UICONTROL セッションのコンテナ名] | `Session` |
-  | [!UICONTROL イベントのコンテナ名] | `Event` |
+  | [!UICONTROL 人物コンテナ名] | `Person` |
+  | [!UICONTROL セッションコンテナ名] | `Session` |
+  | [!UICONTROL イベントコンテナ名] | `Event` |
 
   | カレンダー | 値 |
   |---|---|
-  | [!UICONTROL タイムゾーン] | 所在地に合ったタイム ゾーン |
+  | [!UICONTROL タイムゾーン] | 自身の地域に応じたタイムゾーン |
   | [!UICONTROL カレンダータイプ] | グレゴリオ暦 |
   | [!UICONTROL 年の最初の月] | 1月 |
-  | [!UICONTROL 週の最初の曜日] | 日曜日 |
+  | [!UICONTROL 週の最初の日] | 日曜日 |
 
 
-- が含まれる **Components** タブ：
-   - 次を持つすべての指標およびディメンション [!UICONTROL （AJO）] の名前にが追加され、この自動設定の一部として自動的に追加されます。
-   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。 例えば、指標です [!UICONTROL ランディングページのクリック数（AJO）] は、に基づいています [!UICONTROL ランディングページクリック数] 派生フィールド。
-   - 一部の指標またはディメンションには、追加の設定があります。 例： [!UICONTROL スパムの苦情（AJO）] 持つ [!UICONTROL 形式] および [!UICONTROL 値を含める/除外] 設定が適用されました。
-   - 自動的に追加されたすべての指標およびディメンションには、という名前のコンテキストラベルがあります `:`*`name_of_metric_or_dimension`*. 例： [!UICONTROL ランディングページのクリック数（AJO）] 指標にコンテキストラベルがある `:Landing page clicks (AJO)`.
+- 「**コンポーネント**」タブで、次の操作を行います。
+   - 名前に[!UICONTROL （AJO）]が付加されたすべての指標とディメンションは、この自動設定の一部として自動的に追加されます。
+   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。これらの派生フィールドは、この統合用に特別に作成されます。例えば、[!UICONTROL ランディングページクリック数（AJO）]という指標は、「[!UICONTROL ランディングページクリック数]」派生フィールドに基づいています。
+   - 一部の指標またはディメンションには、追加の設定があります。例えば、[!UICONTROL スパム報告件数（AJO）]には、[!UICONTROL 形式]と[!UICONTROL 値を含める／除外]の設定が適用されています。
+   - 自動的に追加されたすべての指標とディメンションには、`:`*`name_of_metric_or_dimension`*という名前のコンテキストラベルが付きます。例えば、[!UICONTROL ランディングページクリック数（AJO）]という指標には、コンテキストラベル `:Landing page clicks (AJO)` が付きます。
 
-- が含まれる **[!UICONTROL 設定]** タブが表示され、特定の設定値が適用されない
+- 「**[!UICONTROL 設定]**」タブでは、特定の設定値は適用されません
 
 >[!IMPORTANT]
 >
->接続およびデータビューの自動設定された値を変更すると、自動設定されたCustomer Journey Analytics統合に依存し、使用しているJourney Optimizer レポートに影響します。
+>接続とデータビューに対して自動設定された値を変更すると、自動設定された Customer Journey Analytics 統合に依存し、使用している Journey Optimizer レポートに影響します。
 
 
-## Journey Optimizerで使用するデータビューの手動設定
+## Journey Optimizer で使用するデータビューの手動設定
 
-次の節では、Journey Optimizerで生成されたデータを手動で使用して、Customer Journey Analyticsのアドバンス分析を実行する方法について説明します。 これは、 [自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) はニーズを満たすには不十分です。
+次の節では、Journey Optimizer で生成されたデータを手動で使用して、Customer Journey Analytics でアドバンス分析を実行する方法について説明します。これは、[自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)がニーズに対して不十分な場合にのみ必要です。
 
-### Journey OptimizerからExperience Platformへのデータの送信
+### Journey Optimizer から Experience Platform にデータを送信
 
-Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。参照： [データセットの基本を学ぶ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) Journey Optimizer データをデータセットとしてExperience Platformに送信する手順については、Journey Optimizer ユーザーガイドを参照してください。
+Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。Journey Optimizer データを Experience Platform にデータセットとして送信する手順については、Journey Optimizer ユーザーガイドの[データセットの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/data-management/datasets/get-started-datasets)を参照してください。
 
 ### Customer Journey Analytics で接続を作成する
 
@@ -119,7 +119,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | AJO メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メールトラッキングイベント（[!UICONTROL 開封数]、[!UICONTROL クリック数]、[!UICONTROL 登録解除数]など）が含まれています。 |
 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベント（[!UICONTROL アプリの起動回数]など）が含まれています。 |
 | ジャーニーステップイベント | イベント | ユーザー ID：`_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに参加したプロファイルを示すイベントが含まれています。 |
-| AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | ジャーニーとキャンペーンのメタデータをすべてのJourney Optimizer イベントデータに関連付ける分類が含まれます。 |
+| AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
 
 {style="table-layout:auto"}
 
@@ -130,12 +130,12 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 >[!NOTE]
 >
->Journey OptimizerとCustomer Journey Analyticsの間のデータの不一致は、通常、1～2% 未満です。 過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
+>Journey Optimizer と Customer Journey Analytics の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
 #### データビューでのディメンションの設定
 
-データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。参照： [コンポーネント設定](/help/data-views/component-settings/overview.md) ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーを参照してください。
+データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
 | ディメンション | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- |
@@ -174,7 +174,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します | |
 | インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します | |
 | インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します | |
-| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は、決定を上書きして、実際のディスプレイの数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
+| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
 | アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します | |
 
 {style="table-layout:auto"}
