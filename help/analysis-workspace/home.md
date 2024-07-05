@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 50312012b68fdcbcb300cf1f0ed9ce28b21fea29
+source-git-commit: e766858a93f8dcfadda2e7518b0d74468ff1ae4b
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '750'
 ht-degree: 96%
 
 ---
@@ -19,8 +19,9 @@ ht-degree: 96%
 >id="cja_workspace_fundamentals"
 >title="Analysis Workspaceの基本"
 >abstract="以下のツアーに従って、テーブルの作成、ビジュアライゼーションの追加、日付範囲の変更などを含む、Analysis Workspaceの基本を学習します。"
->
->Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するためのビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとのプロジェクトの共有とスケジュールを行うことができます。
+>additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Analysis Workspace の概要"
+
+Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するためのビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとのプロジェクトの共有とスケジュールを行うことができます。
 
 次のビデオでは、短い概要と可能な例を示します。
 
