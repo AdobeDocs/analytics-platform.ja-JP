@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -29,11 +29,13 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 [![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB グラフベースのステッチ]
+>[!TAB グラフベースのステッチ*]
 
 グラフベースのステッチを実行すると、Experience Platform ID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。 <ul><li>単一の識別子を反映させるために追加のデータの抽出、変換、読み込みを行わずに、異なる識別子を持つデータセットを結合する。</li> <li>データセット間で ID を共有して、単一のデータセットの優先 ID またはゴールデン ID の適用範囲を向上させる。</li><li>Real-Time Customer Data Platform と Journey Optimizer で作成したプロファイルを Customer Journey Analytics のユーザーと整合する。</li></ul>
 
 [![画像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_グラフベースのステッチには、プライムパッケージが必要です。_*
 
 >[!TAB B2B ルックアップ]
 
