@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
-workflow-type: ht
-source-wordcount: '3027'
-ht-degree: 100%
+source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+workflow-type: tm+mt
+source-wordcount: '3174'
+ht-degree: 95%
 
 ---
 
@@ -72,15 +72,33 @@ ht-degree: 100%
 
 1. 接続設定ダイアログで、「**[!UICONTROL データセットを追加]**」を選択します。
 
-2. [!UICONTROL データセットの選択]手順で、1 つ以上のデータセットを選択し、「**[!UICONTROL 次へ]**」をクリックします。少なくとも 1 つのイベントデータセットを接続に含める必要があります。
+1. が含まれる [!UICONTROL データセットを選択] 手順で、Experience Platformデータセットのリストが表示されます。
+
+   ![データセットの選択](assets/select-datasets.png)
+
+   各データセットに対して、リストには次が表示されます。
+
+   | 列 | 説明 |
+   |---|---|
+   | データセット | データセットの名前 名前を選択して、Experience Platformのデータセットに移動します。 を選択 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) データセットの詳細を含むポップアップを表示します。 ポップアップで、次の項目を選択できます **[!UICONTROL Platform で編集]** Experience Platformでデータセットを直接編集できます。 |
+   | データセットタイプ | データセットのタイプ（イベント、プロファイル、ルックアップ）。 |
+   | レコード数 | Experience Platform中のデータセットの最後のバッチで使用可能なレコードの数。 |
+   | スキーマ | データセットのベースとなるスキーマ。 名前を選択して、Experience Platformのスキーマに移動します。 |
+   | 前回のバッチ | Experience Platformで最後に取り込まれたバッチのステータス。 参照： [バッチステート](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) 詳細情報。 |
+   | データセット ID | データセットの ID。 |
+   | 最終更新日時 | データセットの最終更新タイムスタンプ。 |
+
+
+1. 1 つ以上のデータセットを選択して、 **[!UICONTROL 次]**. 少なくとも 1 つのイベントデータセットを接続に含める必要があります。
    * データセットのリストに表示される列を変更するには、「![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)」をクリックし、[!UICONTROL テーブルをカスタマイズ]ダイアログで表示する列を選択します。
    * 特定のデータセットを検索するには、「![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」検索フィールドを使用します。
    * 選択したデータセットの表示や非表示を切り替えるには、「![選択](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg)」、「**[!UICONTROL 選択した項目を非表示]**」または「**[!UICONTROL 選択した項目を表示]**」の順に選択します。
    * 選択したデータセットのリストからデータセットを削除するには、「![閉じる](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)」を使用します。選択したすべてのデータセットを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
 
-   ![データセットの選択](assets/select-datasets.png)
 
-3. 次に、データセットを 1 つずつ設定します。
+
+
+1. 次に、データセットを 1 つずつ設定します。
 
    ![データセットの設定](assets/add-dataset.png)
 
