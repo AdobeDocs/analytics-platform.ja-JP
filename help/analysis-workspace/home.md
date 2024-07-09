@@ -9,7 +9,7 @@ role: User
 source-git-commit: e766858a93f8dcfadda2e7518b0d74468ff1ae4b
 workflow-type: tm+mt
 source-wordcount: '750'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fundamentals"
->title="Analysis Workspaceの基本"
->abstract="以下のツアーに従って、テーブルの作成、ビジュアライゼーションの追加、日付範囲の変更などを含む、Analysis Workspaceの基本を学習します。"
+>title="Analysis Workspace の基本"
+>abstract="以下のツアーに従って、テーブルの作成、ビジュアライゼーションの追加、日付範囲の変更などを含む、Analysis Workspace の基本を学習します。"
 >additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Analysis Workspace の概要"
 
 Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するためのビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとのプロジェクトの共有とスケジュールを行うことができます。
