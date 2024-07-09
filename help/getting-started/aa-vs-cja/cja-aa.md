@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2287'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 98%
 | 入口、出口、滞在時間の各ディメンションと指標 | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
 | eVar の永続性設定 | eVar は Customer Journey Analytics の一部ではなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
 | 地理特性ディメンション | [フルサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja) |
-| グラフベースのステッチ | から [グラフベースのステッチ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview#graph-based-stitching)を使用すると、で ID グラフの機能を活用できます [Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) データセットを優先 ID に昇格させます。 |
+| グラフベースのステッチ | [グラフベースのステッチ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/overview#graph-based-stitching)を使用すると、[Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)の ID グラフの力を活用して、データセットを優先 ID に昇格させることができます。 |
 | IP の不明化 | Analytics ソースコネクタを使用している Customer Journey Analytics の顧客が Adobe Analytics から Customer Journey Analytics にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、Customer Journey Analytics データを通じて送られます。必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analytics の顧客が Experience Platform Web SDK を使用して、Platform と Customer Journey Analytics にデータを直接入力する場合。Platform のデータ収集用のデータ準備を使用して、会社の要件に基づいて IP アドレスを不明化するルールを設定できます。 |
 | マーケティングチャネル | Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[Customer Journey Analytics マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=ja)を参照してください。<br/>WebSDK 実装では、レポート時のマーケティングチャネル処理ルールは、[派生フィールド](../../data-views/derived-fields/derived-fields.md)を通じてサポートされます。 |
 | マーチャンダイジング変数の持続性 | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |
