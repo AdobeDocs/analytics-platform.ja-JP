@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 12%
 
 ---
@@ -381,9 +381,6 @@ ht-degree: 12%
 
 - 制約（該当する場合）。
 
->[!NOTE]
->
->ルックアップ関数の名前をに変更しました [分類](#classify). を参照してください。 [分類](#classify) 関数を使用すると詳細情報が得られます。
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 新しい派生フィールドで対応する値に置き換えられる値のセットを定義します。
 
 +++ 詳細
-
->[!NOTE]
->
->この関数は、最初は Lookup という名前でしたが、別の機能を持つ Lookup 関数に対応するために、Classify という名前に変更されました。
 
 ## 仕様 {#classify-io}
 
@@ -1027,6 +1020,8 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 ![Lowercase ルールのスクリーンショット](assets/lookup.png)
 
 ## 詳細情報 {#lookup-more-info}
+
+ルックアップ関数は、接続の一部として設定したルックアップデータセットからCustomer Journey Analyticsによって取得されたデータに、レポート時に適用されます。
 
 を素早く挿入できます [!UICONTROL 参照] ルールビルダー内の関数。1 つ以上の他の関数が既に含まれています。
 
