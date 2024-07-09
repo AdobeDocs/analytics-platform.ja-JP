@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 12%
 
 ---
@@ -325,7 +325,7 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
 - ステッチを適用するAdobe Experience Platformのイベントデータセットには、すべての行で訪問者を特定する 1 つの列がある必要があります。 **永続 ID**. 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
-- Experience PlatformID サービスの ID グラフには、名前空間が必要です（例： `Email`、または `Phone`）を使用します **一時 ID**. 参照： [Experience PlatformID サービス](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) を参照してください。
+- Experience PlatformID サービスの ID グラフには、名前空間が必要です（例： `Email`、または `Phone`）を使用します **一時 ID**. 参照： [Experience PlatformID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
 >
@@ -352,10 +352,11 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 ### オプション
 
-ステッチのオプションを選択します。 Customer Journey Analyticsパッケージは、初期バックフィル期間、ルックバックウィンドウ、再生頻度、ステッチ可能なデータセットの最大数に関して使用可能なオプションを決定します。 を参照してください。 [Customer Journey Analytics商品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。
+ステッチのオプションを選択します。 Customer Journey Analyticsパッケージでは、使用可能なステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数を決定します。 を参照してください。 [Customer Journey Analytics商品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。
 
 | | Customer Journey Analytics<br/>を選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>究極の |
 |---|---|---|---|
+| 使用可能なステッチ方法 | <li>フィールドベースのステッチ</li> | <li>フィールドベースのステッチ</li><li>グラフベースのステッチ</li> | <li>フィールドベースのステッチ</li><li>グラフベースのステッチ</li> |
 | 1 回限りのステッチバックフィル期間 | 13 ヶ月 | 13 ヶ月 | 25 ヶ月 |
 | ルックバックウィンドウと再生頻度 | <li>1 日、毎日</li><li>最大 7 日間、毎週</li> | <li>1 日、毎日</li><li>最大 14 日間、毎週</li> | <li>1 日、毎日</li><li>最大 30 日間、毎週</li> |
 | ステッチできるデータセットの最大数 | 5 | 10 | 50 |
