@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 12%
 
 ---
@@ -350,9 +350,9 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 組織がすべてを満たしたら [前提条件](#prerequisites) 共通のことを理解している [制限事項](#limitations) とステッチ方法固有（[フィールドベース](#limitations-1) および [グラフベース](#limitations-2)）の制限により、次の手順に従ってCustomer Journey Analyticsでステッチを使用し始めることができます。
 
-### オプション
+### オプションを選択
 
-ステッチのオプションを選択します。 Customer Journey Analyticsパッケージでは、使用可能なステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数を決定します。 を参照してください。 [Customer Journey Analytics商品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。
+使用できるCustomer Journey Analyticsパッケージによって、ステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 を参照してください。 [Customer Journey Analytics商品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
 
 | | Customer Journey Analytics<br/>を選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>究極の |
 |---|---|---|---|
