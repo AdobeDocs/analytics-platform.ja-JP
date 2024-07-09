@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
+source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 35%
@@ -88,7 +88,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->結合されたフィールドが接続内の 1 つのイベントデータセットのルックアップキーの場合、関連するルックアップデータセットが強化されます *all* そのフィールドの値。 ルックアップ関係は共有スキーマパスに関連付けられているので、行がどのイベントデータセットから取得されたかは関係ありません。
+>結合されたフィールドが接続内の 1 つのイベントデータセットのルックアップキーの場合、関連するルックアップデータセットが強化されます **all** そのフィールドの値。 ルックアップ関係は共有スキーマパスに関連付けられているので、行がどのイベントデータセットから取得されたかは関係ありません。
 
 ## クロスチャネル分析
 
