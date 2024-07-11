@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 70%
+source-wordcount: '3824'
+ht-degree: 72%
 
 ---
 
@@ -19,8 +19,10 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2024年7月** | |
+| 一般的なエラーメッセージを更新しました | にマイナーアップデートを加えました [一般的なエラーメッセージ](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **2024年6月** | |
-| ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集してAnalysis Workspaceに表示するストリーミングメディア機能のセットを参照する際に、「Media Analytics」と「Streaming Media」のインスタンスを「Streaming Media Collection Add-on」という名前に置き換えました。 <p>これらのアップデートは、Customer Journey Analyticsドキュメントでも入手できます。 [ストリーミングメディアコレクションアドオンのドキュメント](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview).</p> |
+| ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集して Analysis Workspace に表示するストリーミングメディア機能のセットを参照する際に、「メディア分析」と「ストリーミングメディア」のインスタンスを「ストリーミングメディアコレクションアドオン」という名前に置き換えました。 <p>これらのアップデートは、Customer Journey Analyticsドキュメントでも入手できます。 [ストリーミングメディアコレクションアドオンのドキュメント](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview).</p> |
 | グラフベースのステッチ | 更新および再構築 [ドキュメントのステッチ](/help/stitching/overview.md) グラフベースのステッチの導入により、 |
 | AI アシスタント | 追加済み [詳細を見る](../ai-assistant.md) Customer Journey Analytics用の AI アシスタントで。 |
 | B2B ルックアップ用のデータセットの変換 | サポート方法に関するドキュメントを追加しました [b2B データに対するユーザーベースの検索](/help/connections//transform-datasets-b2b-lookups.md) B2B ルックアップデータセットの変換を使用する（アカウント、オポチュニティ、マーケティングリスト、キャンペーンを含む）。 |
@@ -98,7 +100,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年6月** | |
 | クロスチャネル分析とステッチ | ステッチを有効にするための変更と、ステッチを使用してクロスチャネル分析を向上させる方法をさらに明確にするための変更が今後見込まれるので、クロスチャネル分析機能に関連するドキュメントを編集して、[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)を Customer Journey Analytics の機能およびユースケースとして、また、[ステッチ](../stitching/overview.md)をそれを実現するための重要な機能として取り上げています。 |
 | Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey AnalyticsBI 拡張機能を使用すると、Customer Journey Analyticsで定義したデータビューへの SQL アクセスが可能になります。 [詳細情報](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer データビュー | Customer Journey Analytics 管理者は、「AJO データビュー (サンドボックス名)」というタイトルの、Customer Journey Analytics のいくつかの追加データビューにアクセスできます。[詳細情報](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration)。 |
+| Adobe Journey Optimizer データビュー | Customer Journey Analytics 管理者は、「AJO データビュー (サンドボックス名)」というタイトルの、Customer Journey Analytics のいくつかの追加データビューにアクセスできます。[詳細情報](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration)。 |
 | 通貨換算 | [通貨換算](../data-views/component-settings/format.md#currency)のサポートに関するドキュメントを更新しました。 |
 | 計算指標の更新 | 現在の Customer Journey Analytics 機能と整合させるために、計算指標のドキュメントで次の更新を行いました。 <ul><li>Customer Journey Analytics で利用可能な[デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)のリストを更新しました</li><li>様々な計算指標に関する記事のスクリーンショットと手順を更新しました </li></ul> |
 | **2023年5月** | |
