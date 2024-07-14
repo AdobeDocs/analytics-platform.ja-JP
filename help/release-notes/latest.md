@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1534b628841a5b4588379b944822073f3288d710
-workflow-type: ht
-source-wordcount: '1129'
-ht-degree: 100%
+source-git-commit: 2ea7c9ec4d02685164a10da3e3f3a38526fc9730
+workflow-type: tm+mt
+source-wordcount: '1232'
+ht-degree: 93%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2024年6月）
 
-**最終更新日**：2024年6月18日（PT）
+**最終更新日**：2024年7月12日（PT）
 
 このリリースノートは、2024年6月6日（PT）～2024年7月のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **レポートをクラウドに書き出す際に使用するアカウントと場所を制御するための管理者設定** | [ ロケーションマネージャー」の新しい「管理者設定」タブでは ](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only) ユーザーがアカウントとロケーションを作成および編集できるかどうかを管理者が制御できます。<p>これらの設定は、ユーザー [ クラウド書き出しアカウントを設定 ](/help/components/exports/cloud-export-accounts.md) および [ クラウド書き出し場所を設定 ](/help/components/exports/cloud-export-locations.md) の際に適用されます。</p><p>また、管理者は、ユーザーが作成および使用できるアカウントのタイプを制限することもできます。 アカウントタイプには、Google Cloud Platform、Azure RBAC、Amazon S3、AEP Data Landing Zone、Snowflakeなどがあります。</p><p>以前は、すべてのユーザーが、あらゆるタイプのアカウントと場所を作成、編集、使用できました。</p> | 2024年7月11日（PT） | 2024年7月19日（PT） |
 | **Customer Journey Analytics 向けの AI アシスタント** | Customer Journey Analytics UI で自然言語の質問をし、Customer Journey Analytics ドキュメントに基づいて回答を得ることができます。[詳細情報](/help/ai-assistant.md) | | 2024年6月6日（PT） |
 | **グラフベースのステッチ** | グラフベースのステッチを実行すると、Experience Platform ID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。<ul><li>単一の識別子を反映させるために追加のデータの抽出、変換、読み込みを行わずに、異なる識別子を持つデータセットを結合する。</li><li>データセット間で ID を共有して、単一のデータセットの優先 ID またはゴールデン ID の適用範囲を向上させる。</li><li>Real-Time Customer Data Platform と Journey Optimizer で作成したプロファイルを Customer Journey Analytics のユーザーと整合する。</li></ul>[詳細情報](/help/stitching/overview.md) |  | 2024年6月28日（PT） |
 | **ユーザーからアカウントへの B2B スキーマ変換** | B2B データ（アカウント、商談、マーケティングリスト、キャンペーンなど）のユーザーベースのルックアップをサポートするために、B2B ルックアップデータセットを変換できます。この変換は、次のクラスに基づく B2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul>[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 2024年6月5日（PT） |
