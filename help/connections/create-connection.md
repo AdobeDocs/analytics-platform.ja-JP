@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,24 +72,24 @@ ht-degree: 95%
 
 1. 接続設定ダイアログで、「**[!UICONTROL データセットを追加]**」を選択します。
 
-1. [!UICONTROL データセットの選択]ステップには、Experience Platformデータセットのリストが表示されます。
+1. [!UICONTROL データセットを選択]手順では、Experience Platform データセットのリストが表示されます。
 
    ![データセットの選択](assets/select-datasets.png)
 
-   データセットごとに、リストには次の情報が表示されます。
+   各データセットに対して、リストには次が表示されます。
 
    | 列 | 説明 |
    |---|---|
-   | データセット | データセットの名前。 Experience Platform内のデータセットに移動するための名前を選択します。 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)を選択すると、データセットの詳細を含むポップアップが表示されます。ポップアップで、Platform ]**で**[!UICONTROL &#x200B;編集を選択して、Experience Platformで直接データセットを編集できます。 |
-   | データセットタイプ | データセットのタイプ(イベント、プロフィールまたはルックアップ)。 |
-   | レコード数 | Experience Platform 年のデータセットに対する前月の合計レコード。 |
-   | スキーマ | データセットの基になるスキーマ。 Experience Platform 内のスキーマに移動するための名前を選択します。 |
-   | 前回のバッチ | Experience Platform で最後に取り込まれたバッチの状態。 [バッチ状態](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states)を参照してください。 |
+   | データセット | データセットの名前。名前を選択すると、Experience Platform のデータセットに移動します。![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)を選択すると、データセットの詳細を含むポップアップが表示されます。ポップアップで「**[!UICONTROL Platform で編集]**」を選択して、Experience Platform でデータセットを直接編集できます。 |
+   | データセットタイプ | データセットのタイプ（イベント、プロファイル、ルックアップ）。 |
+   | レコード数 | Experience Platform 内のデータセットの先月の合計レコード数。 |
+   | スキーマ | データセットのベースとなるスキーマ。名前を選択すると、Experience Platform のスキーマに移動します。 |
+   | 前回のバッチ | Experience Platform で最後に取り込まれたバッチの状態。詳しくは、[バッチの状態](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/batch/troubleshooting#batch-states)を参照してください。 |
    | データセット ID | データセットの ID。 |
-   | 最終更新日時 | データセットの最終更新タイムスタンプ。 |
+   | 最終更新日時 | データセットの最終更新日タイムスタンプ。 |
 
 
-1. 1 つ以上のデータセットを選択し、 **[!UICONTROL 次へ]**&#x200B;を選択します。 少なくとも 1 つのイベントデータセットを接続に含める必要があります。
+1. 1 つ以上のデータセットを選択して、「**[!UICONTROL 次へ]**」を選択します。少なくとも 1 つのイベントデータセットを接続に含める必要があります。
    * データセットのリストに表示される列を変更するには、「![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)」をクリックし、[!UICONTROL テーブルをカスタマイズ]ダイアログで表示する列を選択します。
    * 特定のデータセットを検索するには、「![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」検索フィールドを使用します。
    * 選択したデータセットの表示や非表示を切り替えるには、「![選択](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg)」、「**[!UICONTROL 選択した項目を非表示]**」または「**[!UICONTROL 選択した項目を表示]**」の順に選択します。

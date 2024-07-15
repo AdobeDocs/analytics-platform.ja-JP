@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 [![画像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_グラフベースのステッチには、プライムパッケージが必要です。_*
+*_グラフベースのステッチには、Prime パッケージが必要です。_*
 
 >[!TAB B2B ルックアップ]
 
