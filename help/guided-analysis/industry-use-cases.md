@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: Product Analytics
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
-workflow-type: ht
-source-wordcount: '1487'
-ht-degree: 100%
+source-git-commit: 2b503ba784762d60efe8581c9ee06587aed416eb
+workflow-type: tm+mt
+source-wordcount: '1477'
+ht-degree: 98%
 
 ---
 
 # 業界ユースケース
 
-ガイド付き分析のユースケースは、業界によって異なります。このページでは、ガイド付き分析と Adobe Product Analytics 機能を使用して製品チームが何を達成できるかを理解するうえで役に立つ例をいくつか示します。
+このページでは、様々な業界の製品チームがガイド付き分析でどのような作業を行えるかを、いくつかの例を使って示します。
 
 +++**小売**
 
