@@ -5,20 +5,20 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
+source-git-commit: 0a046a89e1742d3470a78ebad4f93cb3b4ea7f4c
 workflow-type: tm+mt
-source-wordcount: '8068'
+source-wordcount: '8366'
 ht-degree: 12%
 
 ---
 
 # 派生フィールド
 
-派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面になります。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その後、その派生フィールドをコンポーネント（指標またはディメンション）として次で使用できます [Workspace](../../analysis-workspace/home.md) または、派生フィールドをでさらにコンポーネントとして定義します [データビュー](../data-views.md).
+派生フィールドは、Adobe Customer Journey Analyticsのリアルタイムレポート機能の重要な側面になります。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。その派生フィールドを [Workspaceのコンポーネント （指標またはディメンション）として使用したり ](../../analysis-workspace/home.md) さらに派生フィールドを [ データビュー ](../data-views.md) のコンポーネントとして定義したりできます。
 
-派生フィールドを使用すると、Customer Journey Analytics外の他の場所でデータを変換または操作する場合と比較して、大幅な時間と労力を節約できます。 例： [データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)または、独自の抽出変換読み込み（ETL）/抽出読み込み変換（ELT）プロセス内で使用します。
+派生フィールドを使用すると、Customer Journey Analytics外の他の場所でデータを変換または操作する場合と比較して、大幅な時間と労力を節約できます。 [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)、[Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)、独自の ETL （Extract Transform Load）/ELT （Extract Load Transform）プロセスなど。
 
-派生フィールドは以下で定義されます。 [データビュー](../data-views.md)は、ルールとして定義された一連の関数に基づいており、使用可能な標準フィールドやスキーマフィールドに適用されます。
+派生フィールドは、[ データビュー ](../data-views.md) 内で定義され、ルールとして定義された一連の関数に基づいており、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
 例えば、次のようなユースケースがあります。
 
@@ -30,122 +30,122 @@ ht-degree: 12%
 
 派生フィールドを作成または編集する場合は、派生フィールドインターフェイスを使用します。
 
-![派生フィールドダイアログのスクリーンショット](assets/derived-field-dialog.png)
+![ 派生フィールドダイアログのスクリーンショット ](assets/derived-field-dialog.png)
 
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
-| 1 | **セレクター** | セレクター領域を使用して、関数、関数テンプレート、スキーマフィールド、または標準フィールドを選択してルールビルダーにドラッグ&amp;ドロップします。 <br/>ドロップダウンを使用して、次のいずれかを選択します。 <br/>![関数](assets/Smock_Function_18_N.svg) [!UICONTROL 関数] - リストが使用可能 [関数](#function-reference), </br>![関数テンプレートアイコン](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 関数テンプレート] - リストが使用可能 [関数テンプレート](#function-templates), <br/>![スキーマフィールドのアイコン](assets/Smock_Folder_18_N.svg)  [!UICONTROL スキーマフィールド] - データセットカテゴリ（イベント、プロファイル、ルックアップ）から使用できるフィールドと、以前に定義した派生フィールドをリストします。 <br/>![標準フィールドのアイコン](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 標準フィールド]  – 標準の使用可能フィールド（Platform データセット ID など）。 文字列および数値の標準フィールドのみがセレクターに表示されます。 関数が他のデータタイプをサポートしている場合、これらの他のデータタイプを持つ標準フィールドを、値またはルールインターフェイス内のフィールドに選択できます。<br/>関数、関数テンプレート、スキーマおよび標準フィールドは、 ![検索アイコン](assets/Smock_Search_18_N.svg) 検索ボックス。 <br/>選択したオブジェクトリストをフィルタリングするには、次のオプションを選択します。 ![フィルターアイコン](assets/Smock_Filter_18_N.svg) でのフィルターとフィルターの指定 [!UICONTROL フィールドのフィルター基準] ダイアログ。 を使用すると、フィルターを簡単に削除できます ![閉じるアイコン](assets/CrossSize75.svg) 各フィルターに対して。 |
-| 2 | **ルールビルダー** | 1 つ以上のルールを使用して、派生フィールドを順番に作成します。 ルールは関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数タイプは、ルールのインターフェイスを決定します。<br/>を参照してください。 [ルールインターフェイス](#rule-interface) を参照してください。 <br/>関数は、ルールビルダーで既に使用可能なルールの先頭、末尾または間に挿入できます。 ルールビルダーの最後のルールによって、派生フィールドの最終的な出力が決定されます。 |
-| 3 | **[!UICONTROL **&#x200B;フィールド設定&#x200B;**]** | 派生フィールドに名前を付けて説明し、そのフィールドタイプを調べることができます。 |
-| 4 | **[!UICONTROL **&#x200B;最終出力&#x200B;**]** | この領域には、過去 30 日間のデータと、ルールビルダーで派生フィールドに加えた変更に基づいて、出力値を即座に更新したプレビューが表示されます。 |
+| 1 | **セレクター** | セレクター領域を使用して、関数、関数テンプレート、スキーマフィールド、または標準フィールドを選択してルールビルダーにドラッグ&amp;ドロップします。 <br/> ドロップダウンを使用して、次のいずれかを選択します。<br/>![ 関数 ](assets/Smock_Function_18_N.svg) [!UICONTROL  関数 ] – 使用可能なリスト [ 関数 ](#function-reference)、</br>![ 関数テンプレートアイコン ](assets/Smock_FileTemplate_18_N.svg)[!UICONTROL  関数テンプレート ] – 使用可能なリスト [ 関数テンプレート ](#function-templates)、<br/>![ スキーマフィールドアイコン ](assets/Smock_Folder_18_N.svg)[!UICONTROL  スキーマフィールド ] - データセットカテゴリ（イベント、プロファイル、ルックアップ）および以前定義した派生フィールドから使用可能なフィールド、<br/>![ 標準フィールドアイコン ](assets/Smock_DragHandle_18_N.svg)  – 標準の使用可能なフィールド（Platform データセット ID など）。 文字列および数値の標準フィールドのみがセレクターに表示されます。 関数が他のデータタイプをサポートしている場合、これらの他のデータタイプを持つ標準フィールドを、値またはルールインターフェイス内のフィールドに選択できます。<br/> 関数、関数テンプレート、スキーマおよび標準フィールドは、「![ 検索アイコン ](assets/Smock_Search_18_N.svg) 検索ボックスを使用して検索できます。 <br/> 選択したオブジェクトリストをフィルタリングするには、「![ フィルターアイコン ](assets/Smock_Filter_18_N.svg)」を選択し、「[!UICONTROL  フィールドのフィルター ]」ダイアログでフィルターを指定します。 フィルターごとに ![ 閉じるアイコン ](assets/CrossSize75.svg) を使用して、フィルターを簡単に削除できます。 |
+| 2 | **ルールビルダー** | 1 つ以上のルールを使用して、派生フィールドを順番に作成します。 ルールは関数の特定の実装なので、常に 1 つの関数にのみ関連付けられます。 ルールを作成するには、関数をルールビルダーにドラッグ&amp;ドロップします。 関数タイプは、ルールのインターフェイスを決定します。<br/> 詳しくは、[ ルールインターフェイス ](#rule-interface) を参照してください。 <br/> 関数は、ルールビルダーで既に使用可能なルールの先頭、末尾、またはその間に挿入できます。 ルールビルダーの最後のルールによって、派生フィールドの最終的な出力が決定されます。 |
+| 3 | **[!UICONTROL ** フィールド設定 **]** | 派生フィールドに名前を付けて説明し、そのフィールドタイプを調べることができます。 |
+| 4 | **[!UICONTROL ** 最終出力 **]** | この領域には、過去 30 日間のデータと、ルールビルダーで派生フィールドに加えた変更に基づいて、出力値を即座に更新したプレビューが表示されます。 |
 
 {style="table-layout:auto"}
 
 ## フィールドテンプレートウィザード
 
-派生フィールドインターフェイスに初めてアクセスする場合は、 [!UICONTROL フィールドテンプレートから開始] ウィザードが表示されます。
+派生フィールドインターフェイスに初めてアクセスすると、[!UICONTROL  フィールドテンプレートで開始 ] ウィザードが表示されます。
 
 1. 作成しようとしているフィールドのタイプに最も近いテンプレートを選択します。
-2. 「」を選択します **[!UICONTROL **&#x200B;を選択&#x200B;**]** ボタンをクリックして続行します。
+2. 「**[!UICONTROL ** 選択 **]**」ボタンを選択して続行します。
 
-派生フィールドダイアログには、選択したフィールドのタイプに必須または便利なルール（および関数）が入力されます。 参照： [関数テンプレート](#function-templates) 使用可能なテンプレートについて詳しくは、こちらを参照してください。
+派生フィールドダイアログには、選択したフィールドのタイプに必須または便利なルール（および関数）が入力されます。 使用可能なテンプレートについて詳しくは、[ 関数テンプレート ](#function-templates) を参照してください。
 
 ## ルールインターフェイス
 
 ルールビルダーでルールを定義する場合は、ルールインターフェイスを使用します。
 
-![派生フィールドルールインターフェイスのスクリーンショット](assets/rule-interface.png)
+![ 派生フィールドルールインターフェイスのスクリーンショット ](assets/rule-interface.png)
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
-| A | **ルール名** | デフォルトでは、ルール名はです **ルール X** （X はシーケンス番号）。 ルールの名前を編集するには、名前を選択し、新しい名前を入力します（例：）。 `Query Parameter`. |
-| B | **関数名** | ルール用に選択された関数名（例：） [!UICONTROL URL の解析]. 関数が関数のシーケンスの最後にあり、最終的な出力値を決定する場合、関数名の後に [!UICONTROL  – 最終出力]、例： [!UICONTROL URL の解析 – 最終出力]. <br/>関数に関する詳細をポップアップに表示するには、 ![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg). |
-| C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/>を選択 ![詳細アイコン](assets/More.svg)を選択してから、 **[!UICONTROL **&#x200B;説明を追加&#x200B;**]** 説明を追加する **[!UICONTROL **&#x200B;説明を編集&#x200B;**]** 既存の説明を編集するには、次の手順を実行します。<br/>エディターを使用して説明を入力します。 ツールバーを使用して、テキストの書式を設定したり（スタイルセレクター、太字、斜体、アンダーライン、右、左、中央、カラー、番号リスト、箇条書きを使用）、外部情報へのリンクを追加したりできます。 <br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 のドロップダウン [!UICONTROL フィールド] または [!UICONTROL 値] 関数が想定する入力の種類に基づいて、使用可能なすべてのフィールドのカテゴリ （動作規則、標準フィールド、フィールド）を表示します。 または、スキーマと標準フィールド セレクターからフィールドをフィールドまたは値にドラッグ&amp;ドロップすることもできます。 ドラッグされたフィールドがルックアップデータセットから派生している場合、ルックアップ関数は、定義した関数の前に自動的に挿入されます。 <br/>参照： [関数リファレンス](#function-reference) サポートされる各関数の詳細情報について説明します。 |
+| A | **ルール名** | デフォルトでは、ルール名は **Rule X** （X はシーケンス番号を表します）です。 ルールの名前を編集するには、ルールの名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
+| B | **関数名** | ルール用に選択された関数名（例：[!UICONTROL URL PARSE]）。 関数が関数のシーケンスの最後にあり、最終的な出力値を決定する場合、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます。例：[!UICONTROL URL PARSE - FINAL OUTPUT]。 <br/> 関数の詳細をポップアップに表示するには、![ ヘルプアイコン ](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
+| C | **ルールの説明** | オプションで、ルールに説明を追加できます。<br/> 詳細アイコン ![ を選択して ](assets/More.svg) 説明を追加するには **[!UICONTROL ** 説明を追加 **]** を選択し、既存の説明を編集するには **[!UICONTROL ** 説明を編集 **]** を選択します。<br/> エディターを使用して説明を入力します。 ツールバーを使用して、テキストの書式を設定したり（スタイルセレクター、太字、斜体、アンダーライン、右、左、中央、カラー、番号リスト、箇条書きを使用）、外部情報へのリンクを追加したりできます。 <br/> 説明の編集を終了するには、エディターの外側をクリックします。 |
+| D | **関数領域** | 関数のロジックを定義します。 インターフェイスは、関数のタイプによって異なります。 [!UICONTROL  フィールド ] または [!UICONTROL  値 ] のドロップダウンには、関数で想定される入力のタイプに基づいて、使用可能なすべてのフィールドのカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマと標準フィールド セレクターからフィールドをフィールドまたは値にドラッグ&amp;ドロップすることもできます。 ドラッグされたフィールドがルックアップデータセットから派生している場合、ルックアップ関数は、定義した関数の前に自動的に挿入されます。 <br/> サポートされる各関数の詳細については、[ 関数リファレンス ](#function-reference) を参照してください。 |
 
 {style="table-layout:auto"}
 
 ## 派生フィールドの作成
 
-1. 既存のデータビューを選択するか、データビューを作成します。 参照： [データビュー](../data-views.md) を参照してください。
+1. 既存のデータビューを選択するか、データビューを作成します。 詳しくは、[ データビュー ](../data-views.md) を参照してください。
 
-2. 「」を選択します **[!UICONTROL ** Components **]** データ ビューのタブです。
+2. データビューの **[!UICONTROL ** コンポーネント **]** タブを選択します。
 
-3. を選択 **[!UICONTROL **&#x200B;派生フィールドを作成&#x200B;**]** 左パネルから。
+3. 左パネルから「**[!UICONTROL ** 派生フィールドを作成 **]**」を選択します。
 
-4. 派生フィールドを定義するには、を使用します [!UICONTROL 派生フィールドを作成] インターフェイス。 参照： [派生フィールドインターフェイス](#derived-field-interface).
+4. 派生フィールドを定義するには、[!UICONTROL  派生フィールドを作成 ] インターフェイスを使用します。 [ 派生フィールドインターフェイス ](#derived-field-interface) を参照してください。
 
-   新しい派生フィールドを保存するには、を選択します。 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
+   新しい派生フィールドを保存するには、「**[!UICONTROL ** 保存 **]**」を選択します。
 
-5. 新しい派生フィールドがに追加されます [!UICONTROL 派生フィールド >] コンテナ（の一部） **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** データビューの左側のパネルで、
+5. 新しい派生フィールドが、データビューの左側のパネルにある [!UICONTROL  スキーマフィールド **]** の一部として、**[!UICONTROL ** 派生フィールド/] コンテナに追加されます。
 
 
 ## 派生フィールドの編集
 
-1. 既存のデータビューを選択します。 参照： [データビュー](../data-views.md) を参照してください。
+1. 既存のデータビューを選択します。 詳しくは、[ データビュー ](../data-views.md) を参照してください。
 
-2. 「」を選択します **[!UICONTROL ** Components **]** データ ビューのタブです。
+2. データビューの **[!UICONTROL ** コンポーネント **]** タブを選択します。
 
-3. を選択 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** タブ [!UICONTROL 接続] 左側のペイン。
+3. 左側の **[!UICONTROL ** 接続 **]** パネルにある [!UICONTROL  スキーマフィールド ] タブを選択します。
 
-4. を選択 **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ。
+4. **[!UICONTROL ** 派生フィールド/**]** コンテナを選択します。
 
-5. 編集する派生フィールドの上にマウスポインターを置いて、次を選択します ![編集アイコン](assets/Smock_Edit_18_N.svg).
+5. 編集する派生フィールドの上にマウスポインターを置いて、「編集アイコン ![ を選択し ](assets/Smock_Edit_18_N.svg) す。
 
-6. 派生フィールドを編集するには、を使用します [!UICONTROL 派生フィールドを編集] インターフェイス。 参照： [派生フィールドインターフェイス](#derived-field-interface).
+6. 派生フィールドを編集するには、「[!UICONTROL  派生フィールドを編集 ] インターフェイスを使用します。 [ 派生フィールドインターフェイス ](#derived-field-interface) を参照してください。
 
-   - を選択 **[!UICONTROL **&#x200B;保存&#x200B;**]** 更新した派生フィールドを保存します。
+   - 「**[!UICONTROL ** 保存 **]**」を選択して、更新した派生フィールドを保存します。
 
-   - を選択 **[!UICONTROL **&#x200B;キャンセル&#x200B;**]** ：派生フィールドに加えた変更をキャンセルします。
+   - 派生フィールドに加えた変更をキャンセルするには、「**[!UICONTROL ** キャンセル **]**」を選択します。
 
-   - を選択 **[!UICONTROL **&#x200B;名前を付けて保存&#x200B;**]** 派生フィールドを新しい派生フィールドとして保存します。 新しい派生フィールドの名前は、元のフィールドが編集されたのと同じです `(copy)` がに追加されました。
+   - 「**[!UICONTROL ** 名前を付けて保存 **]**」を選択して、派生フィールドを新しい派生フィールドとして保存します。 新しい派生フィールドの名前は、編集した元の派生フィールドと同じで、`(copy)` が追加されています。
 
 または、派生フィールドをデータビューのディメンションまたは指標のコンポーネントとして使用した場合は、次のようになります。
 
 1. コンポーネントを選択します。 コンポーネントは、派生フィールドとは異なる名前を持つ場合があることに注意してください。
 
-1. コンポーネントパネルで、 ![編集アイコン](assets/Smock_Edit_18_N.svg) 派生フィールドの横の「スキーマフィールド名」の下
+1. コンポーネントパネルで、スキーマフィールド名の下の派生フィールドの横にある ![ 編集アイコン ](assets/Smock_Edit_18_N.svg) を選択します。
 
-1. 派生フィールドを編集するには、を使用します [!UICONTROL 派生フィールドを編集] インターフェイス。 参照： [派生フィールドインターフェイス](#derived-field-interface).
+1. 派生フィールドを編集するには、「[!UICONTROL  派生フィールドを編集 ] インターフェイスを使用します。 [ 派生フィールドインターフェイス ](#derived-field-interface) を参照してください。
 
-   - を選択 **[!UICONTROL **&#x200B;保存&#x200B;**]** 更新した派生フィールドを保存します。
+   - 「**[!UICONTROL ** 保存 **]**」を選択して、更新した派生フィールドを保存します。
 
-   - を選択 **[!UICONTROL **&#x200B;キャンセル&#x200B;**]** ：派生フィールドに加えた変更をキャンセルします。
+   - 派生フィールドに加えた変更をキャンセルするには、「**[!UICONTROL ** キャンセル **]**」を選択します。
 
-   - を選択 **[!UICONTROL **&#x200B;名前を付けて保存&#x200B;**]** 派生フィールドを新しい派生フィールドとして保存します。 新しい派生フィールドの名前は、元のフィールドが編集されたのと同じです `(copy)` がに追加されました。
+   - 「**[!UICONTROL ** 名前を付けて保存 **]**」を選択して、派生フィールドを新しい派生フィールドとして保存します。 新しい派生フィールドの名前は、編集した元の派生フィールドと同じで、`(copy)` が追加されています。
 
 
 
 ## 派生フィールドの削除
 
-1. 既存のデータビューを選択します。 参照： [データビュー](../data-views.md) を参照してください。
+1. 既存のデータビューを選択します。 詳しくは、[ データビュー ](../data-views.md) を参照してください。
 
-2. 「」を選択します **[!UICONTROL ** Components **]** データ ビューのタブです。
+2. データビューの **[!UICONTROL ** コンポーネント **]** タブを選択します。
 
-3. を選択 **[!UICONTROL **&#x200B;スキーマフィールド&#x200B;**]** タブ [!UICONTROL 接続] ペイン。
+3. **[!UICONTROL ** 接続 **]** ペインの「[!UICONTROL  スキーマフィールド ]」タブを選択します。
 
-4. を選択 **[!UICONTROL **&#x200B;派生フィールド >**]** コンテナ。
+4. **[!UICONTROL ** 派生フィールド/**]** コンテナを選択します。
 
-5. 削除する派生フィールドの上にマウスポインターを置いて、次を選択します ![編集アイコン](assets/Smock_Edit_18_N.svg).
+5. 削除する派生フィールドの上にマウスポインターを置いて、「編集アイコン ![ を選択し ](assets/Smock_Edit_18_N.svg) す。
 
-6. が含まれる [!UICONTROL 派生フィールドを編集] インタフェース、選択 **[!UICONTROL 削除]**.
+6. [!UICONTROL  派生フィールドを編集 ] インターフェイスで、「**[!UICONTROL 削除]**」を選択します。
 
-   A [!UICONTROL コンポーネントを削除] 削除を確認するダイアログが表示されます。 データビューの外部の派生フィールドに外部参照が存在する可能性があることを考慮してください。
+   削除を確認する [!UICONTROL  コンポーネントを削除 ] ダイアログが表示されます。 データビューの外部の派生フィールドに外部参照が存在する可能性があることを考慮してください。
 
-   - を選択 **[!UICONTROL **&#x200B;続行&#x200B;**]** をクリックして、派生フィールドを削除します。
+   - 「**[!UICONTROL ** 続行 **]**」を選択して、派生フィールドを削除します。
 
 または、派生フィールドをデータビューのディメンションまたは指標のコンポーネントとして使用した場合は、次のようになります。
 
 1. コンポーネントを選択します。 コンポーネントは、派生フィールドとは異なる名前を持つ場合があることに注意してください。
 
-1. コンポーネントパネルで、 ![編集アイコン](assets/Smock_Edit_18_N.svg) 派生フィールドの横の「スキーマフィールド名」の下
+1. コンポーネントパネルで、スキーマフィールド名の下の派生フィールドの横にある ![ 編集アイコン ](assets/Smock_Edit_18_N.svg) を選択します。
 
-1. が含まれる [!UICONTROL 派生フィールドを編集] インタフェース、選択 **[!UICONTROL 削除]**.
+1. [!UICONTROL  派生フィールドを編集 ] インターフェイスで、「**[!UICONTROL 削除]**」を選択します。
 
-   A [!UICONTROL コンポーネントを削除] 削除を確認するダイアログが表示されます。 データビューの外部の派生フィールドに外部参照が存在する可能性があることを考慮してください。
+   削除を確認する [!UICONTROL  コンポーネントを削除 ] ダイアログが表示されます。 データビューの外部の派生フィールドに外部参照が存在する可能性があることを考慮してください。
 
-   - を選択 **[!UICONTROL **&#x200B;続行&#x200B;**]** をクリックして、派生フィールドを削除します。
+   - 「**[!UICONTROL ** 続行 **]**」を選択して、派生フィールドを削除します。
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ ht-degree: 12%
 
 ## 関数テンプレート
 
-特定のユースケースの派生フィールドをすばやく作成するために、関数テンプレートを使用できます。 これらの関数テンプレートは、派生フィールドインターフェイスのセレクター領域からアクセスすることも、 [!UICONTROL フィールドテンプレートから開始] ウィザード。
+特定のユースケースの派生フィールドをすばやく作成するために、関数テンプレートを使用できます。 これらの関数テンプレートは、派生フィールドインターフェイスのセレクター領域からアクセスすることも、[!UICONTROL  フィールドテンプレートで開始 ] ウィザードで初めて使用するときに表示することもできます。
 
 
 ### マーケティングチャネル
@@ -164,9 +164,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![マーケティングチャネルテンプレートルールビルダーのスクリーンショット](assets/function-template-marketing-channel-template.png)
+![ マーケティングチャネルテンプレートルールビルダーのスクリーンショット ](assets/function-template-marketing-channel-template.png)
 
 +++
 
@@ -176,9 +176,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![バウンスルールビルダーのスクリーンショット](assets/function-template-bounces.png)
+![ バウンスルールビルダーのスクリーンショット ](assets/function-template-bounces.png)
 
 +++
 
@@ -188,9 +188,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![複数Dimensionの結合ルールビルダーのスクリーンショット](assets/function-template-multi-dimension-combine.png)
+![ 複数Dimensionの結合ルールビルダーのスクリーンショット ](assets/function-template-multi-dimension-combine.png)
 
 +++
 
@@ -200,9 +200,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![わかりやすいデータセット名ルールビルダーのスクリーンショット](assets/function-template-friendly-dataset-name.png)
+![ わかりやすいデータセット名ルールビルダーのスクリーンショット ](assets/function-template-friendly-dataset-name.png)
 
 +++
 
@@ -212,9 +212,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![URL ルールビルダーからのページ名のスクリーンショット](assets/function-template-page-name-from-url.png)
+![URL ルールビルダーからのページ名のスクリーンショット ](assets/function-template-page-name-from-url.png)
 
 +++
 
@@ -224,9 +224,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![ホリデーシーズンルールビルダーのスクリーンショット](assets/function-template-holiday-season.png)
+![ ホリデーシーズンルールビルダーのスクリーンショット ](assets/function-template-holiday-season.png)
 
 +++
 
@@ -236,9 +236,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![月別目標ルールビルダーのスクリーンショット](assets/function-template-monthly-goals.png)
+![ 月別目標ルールビルダーのスクリーンショット ](assets/function-template-monthly-goals.png)
 
 +++
 
@@ -248,21 +248,21 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット](assets/function-template-get-all-values-in-delimited-list.png)
+![ 区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
 
 +++
 
 ### 区切りリストの最初の値を取得
 
-この関数テンプレートは、区切られたリストの最初の値を取得します。
+この関数はテンプレート区切り文字リスト内の最初の値を取得します。
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは [関数リファレンス](#function-reference) を参照してください。
 
-![区切りリストルールビルダーでの最初の値の取得のスクリーンショット](assets/function-template-get-first-value-in-delimited-list.png)
+![区切り文字で区切られたリスト ルールビルダーの「Get First 値」のスクリーンショット](assets/function-template-get-first-value-in-delimited-list.png)
 
 +++
 
@@ -272,9 +272,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![区切りリストルールビルダーでの最後の値を取得のスクリーンショット](assets/function-template-get-last-value-in-delimited-list.png)
+![ 区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -284,9 +284,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![ドメイン名ルールビルダーのスクリーンショット](assets/function-template-domain-name.png)
+![ ドメイン名ルールビルダーのスクリーンショット ](assets/function-template-domain-name.png)
 
 +++
 
@@ -296,9 +296,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![クエリ文字列を取得パラメータールールビルダーのスクリーンショット](assets/function-template-get-query-string-parameter.png)
+![ クエリ文字列を取得パラメータールールビルダーのスクリーンショット ](assets/function-template-get-query-string-parameter.png)
 
 +++
 
@@ -308,9 +308,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![トランジションフィールドルールビルダーのスクリーンショット](assets/function-template-transition-field.png)
+![ トランジションフィールドルールビルダーのスクリーンショット ](assets/function-template-transition-field.png)
 
 +++
 
@@ -320,9 +320,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![シンプルなボット検出ルールビルダーのスクリーンショット](assets/function-template-simple-bot-detection.png)
+![ シンプルなボット検出ルールビルダーのスクリーンショット ](assets/function-template-simple-bot-detection.png)
 
 +++
 
@@ -332,9 +332,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![離脱リンクのルールビルダーのスクリーンショット](assets/function-template-exit-link.png)
+![ 離脱リンクのルールビルダーのスクリーンショット ](assets/function-template-exit-link.png)
 
 +++
 
@@ -344,9 +344,9 @@ ht-degree: 12%
 
 +++ 詳細
 
-テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 参照： [関数リファレンス](#function-reference) を参照してください。
+テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![ダウンロードリンクのルールビルダーのスクリーンショット](assets/function-template-download-link.png)
+![ ダウンロードリンクのルールビルダーのスクリーンショット ](assets/function-template-download-link.png)
 
 +++
 
@@ -394,23 +394,23 @@ ht-degree: 12%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 次の場合], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件] （選択した値のタイプに基づいて、含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 次に、値を以下のように設定], [!UICONTROL それ以外の場合は、値を次のように設定]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句も含まない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>200 [演算子](#operators) 派生フィールドごとに。 単一のオペレーターの例としては、「参照ドメインに google が含まれる」などがあります。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL  条件 ] （選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL  次に値をに設定 ]、[!UICONTROL  それ以外の場合は値をに設定 ]:</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句も含まない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)。 単一のオペレーターの例としては、「参照ドメインに google が含まれる」などがあります。 </li></ul> | <p>派生フィールド新規</p> |
 
 {style="table-layout:auto"}
 
-## ユースケース 1 {#casewhen-uc1}
+## 使用例 1 {#casewhen-uc1}
 
-カスケードロジックを適用してマーケティングチャネルフィールドを適切な値に設定することで、様々なマーケティングチャネルを識別するルールを定義する必要があります。
+カスケードロジックを適用してマーケティングチャネルフィールドを適切な値に設定することにより、さまざまなマーケティングチャネルを識別するルールを定義します。
 
-- リファラーが検索エンジンからのリファラーで、ページにクエリ文字列値がある場合 `cid` 次を含む `ps_`マーケティングチャネルはとして識別される必要があります。 [!DNL *ペイド検索*].
-- リファラーが検索エンジンからのファイルで、ページにクエリ文字列が含まれていない場合 `cid`マーケティングチャネルはとして識別される必要があります。 [!DNL *自然検索*].
-- ページにクエリ文字列値がある場合、次のように指定します `cid` 次を含む `em_`マーケティングチャネルはとして識別される必要があります。 [!DNL *電子メール*].
-- ページにクエリ文字列値がある場合、次のように指定します `cid` 次を含む `ds_`マーケティングチャネルはとして識別される必要があります。 [!DNL *広告を表示*].
-- ページにクエリ文字列値がある場合、次のように指定します `cid` 次を含む `so_`マーケティングチャネルはとして識別される必要があります。 [!DNL *ペイドソーシャル*].
-- リファラーがの参照ドメインからの場合 [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com]、または [!DNL tiktok.com]マーケティングチャネルはとして識別される必要があります。 [!DNL *自然社会*].
-- 上記のルールのいずれも一致しない場合、マーケティングチャネルはと識別される必要があります。 [!DNL *その他のリファラー*].
+- 転送者が検索エンジンからのものであり、ページにクエリー文字列値が含まれ、 `cid` に `ps_`が含まれている場合、マーケティングチャネルは [!DNL *有料Search*]&#x200B;として識別する必要があります。
+- リファラーが検索エンジンからのもので、ページにクエリ文字列 `cid` がない場合、マーケティングチャネルは [!DNL *自然検索*] として識別される必要があります。
+- ページに `em_` を含むクエリ文字列値が `cid` る場合、マーケティングチャネルは [!DNL *メール*] として識別される必要があります。
+- ページに `ds_` を含むクエリ文字列値が `cid` る場合、マーケティングチャネルは [!DNL *ディスプレイ広告*] として識別される必要があります。
+- ページに `so_` を含むクエリ文字列値が `cid` る場合、マーケティングチャネルは [!DNL *有料ソーシャル*] として識別される必要があります。
+- リファラーが [!DNL twitter.com]、[!DNL facebook.com]、[!DNL linkedin.com] または [!DNL tiktok.com] の参照ドメインからの場合、マーケティングチャネルは [!DNL *ナチュラルソーシャル*] として識別される必要があります。
+- 上記のルールのいずれも一致しない場合、マーケティングチャネルは [!DNL *その他のリファラー*] として識別される必要があります。
 
-サイトが次のサンプルイベントを受け取った場合、以下を含みます [!UICONTROL リファラー] および [!UICONTROL ページ URL]これらのイベントは、次のように識別する必要があります。
+サイトが [!UICONTROL  リファラー ] と [!UICONTROL  ページ URL] を含む次のサンプルイベントを受け取った場合、これらのイベントは次のように識別される必要があります。
 
 | [!DNL Event] | [!DNL Referrer] | [!DNL Page URL] | [!DNL Marketing Channel] |
 |:--:|----|----|----|
@@ -438,11 +438,11 @@ ht-degree: 12%
 
 ### 派生フィールド {#casewhen-uc1-derivedfield}
 
-を定義します `Marketing Channel` 派生フィールド。 を使用します [!UICONTROL 条件の場合] 両方のコンポーネントの既存の値に基づいての値を作成するルールを定義するための関数 `Page URL` および `Referring URL` フィールド。
+`Marketing Channel` の派生フィールドを定義します。 [!UICONTROL CASE WHEN] 関数を使用して、「`Page URL`」フィールドと「`Referring URL`」フィールドの両方の既存の値に基づいての値を作成するルールを定義します。
 
-関数の使い方に注意してください [!UICONTROL URL の解析] 値を取得するルールを定義するには `Page Url` および `Referring Url` 次の前 [!UICONTROL 条件の場合] ルールが適用されます。
+[!UICONTROL CASE WHEN] ルールが適用される前に `Page Url` と `Referring Url` の値を取得するルールを定義するための関数 [!UICONTROL URL PARSE] の使用に注意してください。
 
-![ルール 1 の場合のケースのスクリーンショット](assets/case-when-1.png)
+![ ルール 1 の場合のケースのスクリーンショット ](assets/case-when-1.png)
 
 ### 後のデータ {#casewhen-uc1-dataafter}
 
@@ -460,9 +460,9 @@ ht-degree: 12%
 
 ## ユースケース 2 {#casewhen-uc2}
 
-内でいくつかの異なるバリエーションの検索を収集しました [!DNL Product Finding Methods] ディメンション。 検索と参照の全体的なパフォーマンスを理解するには、結果を手動で組み合わせることに多くの時間を費やす必要があります。
+[!DNL Product Finding Methods] ディメンション内の複数の異なるバリエーションの検索を収集しました。 検索と参照の全体的なパフォーマンスを理解するには、結果を手動で組み合わせることに多くの時間を費やす必要があります。
 
-サイトは、に対して次の値を収集します [!DNL Product Finding Methods] ディメンション。 最後に、これらの値はすべて検索を示します。
+サイトは、[!DNL Product Finding Methods] ディメンションに対して次の値を収集します。 最後に、これらの値はすべて検索を示します。
 
 | 収集された値 | 実際の値 |
 |---|---|
@@ -494,9 +494,9 @@ ht-degree: 12%
 
 ### 派生フィールド {#casewhen-uc2-derivedfield}
 
-を定義します `Product Finding Methods (new)` 派生フィールド。 次を作成します [!UICONTROL 条件の場合] ルールビルダーのルール。 これらのルールは、古いのすべてのバリエーションにロジックを適用します。 [!UICONTROL 製品の検索方法] のフィールド値 `search` および `browse` の使用 [!UICONTROL フレーズを含む] 条件。
+`Product Finding Methods (new)` の派生フィールドを定義します。 次の [!UICONTROL CASE WHEN] ルールをルールビルダーで作成します。 これらのルールは、「[!UICONTROL  フレーズを含む ]」条件を使用して `search` と `browse` の古い ] 製品検索方法 [!UICONTROL  フィールド値のすべての可能なバリエーションにロジックを適用します。
 
-![ルール 2 の場合のケースのスクリーンショット](assets/case-when-2.png)
+![ ルール 2 の場合のスクリーンショット ](assets/case-when-2.png)
 
 ### 後のデータ {#casewhen-uc2-dataafter}
 
@@ -522,9 +522,9 @@ ht-degree: 12%
 前提：
 
 - 組織が、旅行期間を数値フィールドに収集しています。
-- 1～3 日の期間を「」というバケットにバケット化します。[!DNL short trip]&#39;
-- 期間を 4～7 日のバケットと呼ばれるバケットに入れようとします。[!DNL medium trip]&#39;
-- 8 日以上の期間を「」というバケットにバケット化しようとしています[!DNL long trip]&#39;
+- 1～3 日の期間を「[!DNL short trip]」というバケットにバケット化したいと考えています
+- 期間が 4～7 日のバケットを「[!DNL medium trip]」というバケットに入れたいと考えています
+- 8 日以上の期間を「[!DNL long trip]」というバケットにバケット化したいとします
 - 132 回の旅行が 1 日間の期間で予約されました
 - 2 日間で 110 回の旅行が予約されました
 - 3 日間で 105 回の旅行が予約されました
@@ -567,9 +567,9 @@ ht-degree: 12%
 
 ### 派生フィールド {#casewhen-uc3-derivedfield}
 
-を定義します `Trip Duration (bucketed)` 派生フィールド。 次を作成します [!UICONTROL 条件の場合] ルールビルダーのルール。 このルールは、古いをバケット化するロジックを適用します [!UICONTROL 旅の期間] フィールド値を次の 3 つの値に変換します。 `short trip`, `medium  trip`、および `long trip`.
+`Trip Duration (bucketed)` の派生フィールドを定義します。 次の [!UICONTROL CASE WHEN] ルールをルールビルダーで作成します。 このルールは、古い [!UICONTROL  トリップ期間 ] フィールド値を `short trip`、`medium  trip` および `long trip` の 3 つの値にバケット化するロジックを適用します。
 
-![ルール 3 の場合のケースのスクリーンショット](assets/case-when-3.png)
+![ ルール 3 を採用した場合のスクリーンショット ](assets/case-when-3.png)
 
 
 ### 後のデータ {#casewhen-uc3-dataafter}
@@ -592,7 +592,7 @@ ht-degree: 12%
 
 ## 詳細情報 {#casewhen-more-info}
 
-Customer Journey Analyticsでは、Adobe Experience Platformのに倣って、ネストされたコンテナ構造を使用します [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）。 参照： [コンテナ](../create-dataview.md#containers) および [フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的に柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約を課します。
+Customer Journey Analyticsでは、Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）に倣ってモデル化された、ネストされたコンテナ構造を使用します。 背景の情報について詳しくは、[ コンテナ ](../create-dataview.md#containers) および [ フィルターコンテナ ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的に柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約を課します。
 
 Customer Journey Analyticsでは、次のデフォルトのコンテナモデルを使用します。
 
@@ -600,13 +600,13 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-次の制約が適用され、次の場合に適用されます *選択* および *設定* 値。
+次の制約が適用され、値 *選択* および *設定* 時に適用されます。
 
 |  | 制約 |
 |:---:|----|
-| **A** | ユーザーが設定する値 *選択* 同じ範囲内で [!UICONTROL 次の場合], [!UICONTROL Else If] コンストラクト（使用 [!UICONTROL および] または [!UICONTROL または]）内のルールは、同じコンテナから生成され、任意のタイプ（文字列）にすることができます ![文字列](assets/Smock_ABC_18_N.svg)、数値 ![数値](assets/Smock_123_18_N.svg)など）。 <br/>![依存関係 A のスクリーンショット](assets/dependency-a.png) |
-| **B** | すべての値 *set* ルール全体は、同じコンテナから得られ、同じ型または同じ型の派生値を持つ必要があります。 <br/> ![依存関係 B のスクリーンショット](assets/dependency-b.png) |
-| **C** | 指定した値 *選択* 間 [!UICONTROL 次の場合], [!UICONTROL Else If] ルール内の構成要素 do *ではない* 同じ容器から生まれて行わなければならない *ではない* 同じタイプにする必要があります。 <br/> ![依存関係 C のスクリーンショット](assets/dependency-c.png) |
+| **A** | ルール内の同じ *If*、[!UICONTROL Else If[!UICONTROL  の同じ ]And] または [!UICONTROL Or] を使用する）コンストラクト内の [!UICONTROL  選択 ] 値は、同じコンテナから生成され、任意のタイプ（文字列 ![String](assets/Smock_ABC_18_N.svg)、数値 ![Numeric](assets/Smock_123_18_N.svg) など）にする必要があります。 <br/>![ 依存関係 A のスクリーンショット ](assets/dependency-a.png) |
+| **B** | ルール全体にわたって *設定* する値は、同じコンテナから得られ、同じタイプまたは同じタイプの派生値を持つ必要があります。<br/> ![ 依存関係 B のスクリーンショット ](assets/dependency-b.png) |
+| **C** | ルール内の [!UICONTROL If]、[!UICONTROL Else If] 構成全体で *選択* した値は、同じコンテナから生成される必要はなく *ありません* また、同じタイプである必要も *ありません*。<br/> ![ 依存関係 C のスクリーンショット ](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -624,17 +624,17 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 分類するフィールド]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL 値がと等しい場合] および [!UICONTROL 値を次の値に置換]:</p><ul><li>文字列</li></ul><li>元の値を表示<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <ul><li>派生フィールドごとに 5 つの関数</li><li>200 [演算子](#operators) 派生フィールドごとに。 のすべてのエントリ [!UICONTROL 値が元の値と等しい場合] [!UICONTROL 値を新しい値に置換] は操作と見なされます。</li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL  分類するフィールド ]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL  値がに等しい場合 ] および [!UICONTROL  値をで置き換える ]:</p><ul><li>文字列</li></ul><li>元の値を表示<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)。 [!UICONTROL  値が元の値と等しい場合 ][!UICONTROL  値を新しい値に置き換える ] のすべてのエントリは操作と見なされます。</li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 
 ## ユースケース 1 {#classify-uc1}
 
-のキー列を含む CSV ファイルがあります `hotelID` と、に関連付けられた 1 つ以上の追加の列 `hotelID`: `city`, `rooms`, `hotel name`.
-を収集しています [!DNL Hotel ID] あるディメンションで、を作成したい場合 [!DNL Hotel Name] から派生したディメンション `hotelID` を CSV ファイル内に記述します。
+`hotelID` のキー列と、`hotelID` に関連付けられた 1 つ以上の追加の列（`city`、`rooms`、`hotel name`）を含む CSV ファイルがあります。
+ディメンションの [!DNL Hotel ID] を収集していますが、CSV ファイルの `hotelID` から派生した [!DNL Hotel Name] ディメンションを作成したいと考えています。
 
-**CSV ファイルの構造とコンテンツ**
+**CSV ファイル構造とコンテンツ**
 
 | [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
 |---|---|---:|---|
@@ -681,11 +681,11 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 ### 派生フィールド {#classify-uc1-derivedfield}
 
-を定義します `Hotel Name` 派生フィールド。 を使用します [!UICONTROL 分類] の値を分類できるルールを定義する関数 [!UICONTROL ホテル ID] フィールドに移動し、新しい値で置き換えます。
+`Hotel Name` の派生フィールドを定義します。 [!UICONTROL CLASSIFY] 関数を使用して、「[!UICONTROL  ホテル ID]」フィールドの値を分類し、新しい値に置き換えることができるルールを定義します。
 
-分類する値の一部として定義していない元の値を含める場合（例：ホテル ID AMS789）、必ず選択してください **[!UICONTROL 元の値を表示]**. これにより、値が分類されていないにもかかわらず、AMS789 が派生フィールドの出力の一部になります。
+分類する値の一部として定義していない元の値（例：ホテル ID AMS789）を含める場合は、「元の値を表示 **[!UICONTROL を選択していることを確認し]** す。 これにより、値が分類されていないにもかかわらず、AMS789 が派生フィールドの出力の一部になります。
 
-![分類ルール 1 のスクリーンショット](assets/classify-1.png)
+![ 分類ルール 1 のスクリーンショット ](assets/classify-1.png)
 
 ### 後のデータ {#classify-uc1-dataafter}
 
@@ -718,9 +718,9 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 ### 派生フィールド {#classify-uc2-derivedfield}
 
-を定義します `Page Name (updated)` 派生フィールド。 を使用します [!UICONTROL 分類] 既存の値を分類できるルールを定義する関数 [!UICONTROL ページ名] フィールドに入力し、更新された正しい値で置き換えます。
+`Page Name (updated)` の派生フィールドを定義します。 [!UICONTROL CLASSIFY] 関数を使用して、既存の [!UICONTROL  ページ名 ] フィールドの値を分類し、更新された正しい値に置き換えることができるルールを定義します。
 
-![分類ルール 2 のスクリーンショット](assets/classify-2.png)
+![ 分類ルールのスクリーンショット 2](assets/classify-2.png)
 
 ### 後のデータ {#classify-uc2-dataafter}
 
@@ -739,10 +739,10 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 分類ルールインターフェイスでは次の追加機能を使用できます。
 
-- すべてのテーブル値をすばやくクリアするには、 ![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL すべてのテーブル値をクリア]**.
-- 「値が等しい場合」の元の値と「値を次の値に置き換える」の新しい値を含む CSV ファイルをアップロードするには、次を選択します ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL CSV をアップロード]**.
-- アップロードする元の値と新しい値を含む CSV ファイルを作成するためのテンプレートをダウンロードするには、以下を選択します ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV テンプレートをダウンロード]**.
-- ルールインターフェイスに入力された元の値と新しい値をすべて含む CSV ファイルをダウンロードするには、以下を選択します ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV 値をダウンロード]**.
+- すべてのテーブル値をすばやくクリアするには、「![ 消去 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg)**[!UICONTROL すべてのテーブル値をクリア]** を選択します。
+- 「値が等しい場合」の元の値と「値を置き換える」の新しい値を含む CSV ファイルをアップロードするには、「![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg)**[!UICONTROL CSV をアップロード]**」を選択します。
+- アップロードする元の値と新しい値を含む CSV ファイルを作成するためのテンプレートをダウンロードするには、「![ ダウンロード ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg)**[!UICONTROL CSV テンプレートをダウンロード]**」を選択します。
+- ルールインターフェイスに入力された元の値と新しい値をすべて含む CSV ファイルをダウンロードするには、「![ ダウンロード ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg)**[!UICONTROL CSV 値をダウンロード]**」を選択します。
 
 
 +++
@@ -759,7 +759,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL 区切り文字]:<ul><li>文字列</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL  値 ]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL  区切り文字 ]:<ul><li>文字列</li></ul></li> </ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -807,13 +807,13 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 ### 派生フィールド {#concatenate-derivedfield}
 
-を定義します。 `Origin - Destination` 派生フィールド。 を使用します [!UICONTROL 連結] を連結するためのルールを定義する関数 [!UICONTROL オリジナル] および [!UICONTROL 宛先] を使用したフィールド `-` [!UICONTROL 区切り文字].
+`Origin - Destination` 派生フィールドを定義します。 [!UICONTROL CONCATENATE] 関数を使用すると、`-` [!UICONTROL Delimiter] を使用して「[!UICONTROL Original]」フィールドと「[!UICONTROL Destination]」フィールドを連結するルールを定義できます。
 
-![連結ルールのスクリーンショット](assets/concatenate.png)
+![ 連結ルールのスクリーンショット ](assets/concatenate.png)
 
 ### 後のデータ {#concatenate-dataafter}
 
-| 接触チャネル – 移動先<br/>（派生フィールド） |
+| 接触チャネル – 宛先 <br/> （派生フィールド） |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -826,32 +826,29 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 +++
 
 
-<!-- DEDUPLICATE
+### 重複排除
 
-### Deduplicate
+値を複数回数えるのを防ぎます。
 
-Prevents counting a value multiple times.
++++ 詳細
 
-+++ Details
 
-{{release-limited-testing-section}}
+## 仕様 {#deduplicate-io}
 
-## Specifications {#deduplicate-io}
-
-| Input Data Type | Input | Included Operators | Limitations | Output |
+| 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL  値 ]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul></li><li>[!UICONTROL  範囲 ]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL  重複排除 ID]:<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li><li>文字列</li></ul><li>[!UICONTROL  保持する値 ]:<ul><li>最初のインスタンスを維持</li><li>最後のインスタンスを維持</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 
-## Use case 1 {#deduplicate-uc1}
+## ユースケース 1 {#deduplicate-uc1}
 
-You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
+ユーザーが予約確認ページをリロードする際に、重複売上高がカウントされないようにする必要がある。 同じイベントで受信した収益を再度カウントしないように、識別子で予約確認 ID を使用します。
 
-### Data before {#deduplicate-uc1-databefore}
+### 前のデータ {#deduplicate-uc1-databefore}
 
-| Booking Confirmation ID | Revenue |
+| 予約確認 ID | 売上高 |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 359 |
@@ -859,15 +856,15 @@ You want to prevent counting duplicate revenue when a user reloads the booking c
 
 {style="table-layout:auto"}
 
-### Derived field {#deduplicate-uc1-derivedfield}
+### 派生フィールド {#deduplicate-uc1-derivedfield}
 
-You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+`Booking Confirmation` の派生フィールドを定義します。 [!UICONTROL DEDUPLICATE] 関数を使用すると、[!UICONTROL  重複排除 ID][!UICONTROL  予約確認 ID] を使用して [!UICONTROL  範囲 ][!DNL Person] の [!UICONTROL  値 ][!DNL Booking] の重複排除を行うルールを定義できます。 [!UICONTROL  最初のインスタンスを保持 ] を [!UICONTROL  保持する値 ] として選択します。
 
-![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
+![ 連結ルールのスクリーンショット ](assets/deduplicate-1.png)
 
-### Data after {#deduplicate-uc1-dataafter}
+### 後のデータ {#deduplicate-uc1-dataafter}
 
-| Booking Confirmation ID | Revenue |
+| 予約確認 ID | 売上高 |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 0 |
@@ -875,43 +872,42 @@ You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUP
 
 {style="table-layout:auto"}
 
-## Use case 2 {#deduplicate-uc2}
+## ユースケース 2 {#deduplicate-uc2}
 
-You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
+イベントを、外部マーケティングキャンペーンでのキャンペーンのクリックスルーのプロキシとして使用します。 リロードとリダイレクトが原因で、イベント指標が水増しされる。 トラッキングコードディメンションの重複を排除して、最初のディメンションのみが収集されるようにし、イベントのオーバーカウントを最小限に抑えたいと考えています。
 
-### Data before {#deduplicate-uc2-databefore}
+### 前のデータ {#deduplicate-uc2-databefore}
 
-| Visitor ID | Marketing Channel | Events |
+| 訪問者 ID | マーケティングチャネル | イベント |
 |----|---|---:|
-| ABC123 | paid search | 1 |
-| ABC123 | paid search | 1 |
-| ABC123 | paid search | 1 |
-| DEF123 | email | 1 |
-| DEF123 | email | 1 |
-| JKL123 | natural search | 1 |
-| JKL123 | natural search | 1 |
+| ABC123 | 有料検索 | 1 |
+| ABC123 | 有料検索 | 1 |
+| ABC123 | 有料検索 | 1 |
+| DEF123 | メール | 1 |
+| DEF123 | メール | 1 |
+| JKL123 | 自然検索 | 1 |
+| JKL123 | 自然検索 | 1 |
 
 {style="table-layout:auto"}
 
-### Derived field {#deduplicate-uc2-derivedfield}
+### 派生フィールド {#deduplicate-uc2-derivedfield}
 
-You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
+新しい `Tracking Code (deduplicated)` 派生フィールドを定義します。 [!UICONTROL DEDUPLICATE] 関数を使用すると、[!UICONTROL  トラッキングコード ] の重複を除外するルールを、[!UICONTROL  重複排除範囲 ] の [!UICONTROL  セッション ] と、[!UICONTROL  最初のインスタンスを保持 ] を保持する値 [!UICONTROL  として定義できます ]。
 
-![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
+![ 連結ルールのスクリーンショット ](assets/deduplicate-2.png)
 
-### Data after {#deduplicate-uc2-dataafter}
+### 後のデータ {#deduplicate-uc2-dataafter}
 
-| Visitor ID | Marketing Channel | Events |
+| 訪問者 ID | マーケティングチャネル | イベント |
 |----|---|---:|
-| ABC123 | paid search | 1 |
-| DEF123 | email | 1 |
-| JKL123 | natural search | 1 |
+| ABC123 | 有料検索 | 1 |
+| DEF123 | メール | 1 |
+| JKL123 | 自然検索 | 1 |
 
 {style="table-layout:auto"}
 
 +++
 
--->
 
 <!-- FIND AND REPLACE -->
 
@@ -925,16 +921,16 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL すべてを検索], [!UICONTROL すべてを以下で置換]:<ul><li>文字列</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべてを検索], [!UICONTROL すべてを以下で置換]</li></ul> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL  すべてを検索 ]、[!UICONTROL  すべてを次に置換 ]:<ul><li>文字列</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL Find all], [!UICONTROL and replace all with]</li></ul> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 
 ## ユースケース {#findreplace-uc}
 
-外部マーケティングチャネルレポートに対して、不正な形式の値（など）を受け取っています `email%20 marketing` の代わりに `email marketing`. これらの不正な値によりレポートが破損するため、メールのパフォーマンスを確認するのが難しくなります。 置換する `email%20marketing` （を使用） `email marketing`.
+外部マーケティングチャネルレポートに不正な値（例：`email marketing` ではなく `email%20 marketing`）が一部届いています。 これらの不正な値によりレポートが破損するため、メールのパフォーマンスを確認するのが難しくなります。 `email%20marketing` を `email marketing` に置き換えます。
 
-**元のレポート**
+**原本報告書**
 
 | [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
@@ -964,9 +960,9 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 ### 派生フィールド {#findreplace-uc-derivedfield}
 
-を定義します。 `Email Marketing (updated)` 派生フィールド。 を使用します [!UICONTROL 検索と置換] すべての出現箇所を検索して置換するルールを定義する関数 `email%20marketing` （を使用） `email marketing`.
+`Email Marketing (updated)` 派生フィールドを定義します。 [!UICONTROL FIND AND REPLACE] 関数を使用して、`email%20marketing` のすべての出現箇所を検索して `email marketing` に置換するルールを定義します。
 
-![検索と置換ルールのスクリーンショット](assets/find-and-replace.png)
+![ 検索と置換ルールのスクリーンショット ](assets/find-and-replace.png)
 
 ### 後のデータ {#findreplace-uc-dataafter}
 
@@ -995,7 +991,7 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL 参照を適用するフィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL データセットを検索]</li><ul><li>データセット</li></ul><li>[!UICONTROL 一致するキー]<ul><li>ルール</li><li>フィールド</li></ul></li><li>戻す値<ul><li>ルール</li><li>フィールド</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>次のルールでさらに処理するための新しい派生フィールドまたは値</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL  ルックアップを適用するフィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL  データセットを検索 ]</li><ul><li>データセット</li></ul><li>[!UICONTROL 一致するキー]<ul><li>ルール</li><li>フィールド</li></ul></li><li>戻す値<ul><li>ルール</li><li>フィールド</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>次のルールでさらに処理するための新しい派生フィールドまたは値</p> |
 
 {style="table-layout:auto"}
 
@@ -1015,21 +1011,21 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#lookup-uc-derivedfield}
 
-を定義します。 `Activity Name` 派生フィールド。 を使用します [!UICONTROL 参照] 関数を使用すると、で指定された、収集したデータから値を検索するルールを定義することができます。 [!UICONTROL 参照を適用するフィールド] フィールド（例： **[!DNL ActivityIdentifier]**）に設定します。 からルックアップデータセットを選択します [!UICONTROL データセットを検索] リスト（例： **[!DNL New CJA4T Activities]**）に設定します。 次に、識別子フィールドを選択します（例： **[!DNL ActivityIdentifier]**）から [!UICONTROL 一致するキー] リストおよび返されるフィールド [!UICONTROL 返す値] リスト（例： **[!DNL ActivityName]**）に設定します。
+`Activity Name` 派生フィールドを定義します。 [!UICONTROL LOOKUP] 関数を使用すると、収集したデータから値を検索するルールを定義できます。このルールは、[!UICONTROL  ルックアップを適用するフィールド ] フィールド（**[!DNL ActivityIdentifier]** など）で指定します。 [!UICONTROL  ルックアップデータセット ] リストからルックアップデータセットを選択します（例：**[!DNL New CJA4T Activities]**）。 次に、「[!UICONTROL  一致するキー ]」リストから識別子フィールド（例：**[!DNL ActivityIdentifier]**）を選択し、「[!UICONTROL  返す値 ]」リストから返すフィールド（例：**[!DNL ActivityName]**）を選択します。
 
-![Lowercase ルールのスクリーンショット](assets/lookup.png)
+![Lowercase ルールのスクリーンショット ](assets/lookup.png)
 
 ## 詳細情報 {#lookup-more-info}
 
 ルックアップ関数は、接続の一部として設定したルックアップデータセットからCustomer Journey Analyticsによって取得されたデータに、レポート時に適用されます。
 
-を素早く挿入できます [!UICONTROL 参照] ルールビルダー内の関数。1 つ以上の他の関数が既に含まれています。
+既に 1 つ以上の他の関数が含まれている [!UICONTROL  ルックアップ ] 関数を、ルールビルダーにすばやく挿入できます。
 
-1. を選択 **[!UICONTROL スキーマフィールド]** セレクターから。
-1. を選択 ![スキーマフィールドのアイコン](assets/Smock_Folder_18_N.svg) **[!UICONTROL 参照データセット]**.
+1. セレクターから **[!UICONTROL スキーマフィールド]** を選択します。
+1. ![ スキーマフィールドアイコン ](assets/Smock_Folder_18_N.svg)**[!UICONTROL ルックアップデータセット]** を選択します。
 1. ルックアップデータセットを選択し、ルックアップに使用するフィールドを見つけます。
-1. 関数に使用可能な入力フィールドのいずれかにルックアップフィールドをドラッグ&amp;ドロップします（例：Case When）。 有効な場合、というラベルの付いた青いボックス **[!UICONTROL +追加]**を使用すると、フィールドをドロップして、ルックアップフィールドをドロップした関数の前にルックアップ関数を自動的に挿入できます。 挿入されたルックアップ関数は、すべてのフィールドの関連する値に自動的に設定されます。
-   ![参照ドラッグ](assets/lookup-drag.png)
+1. 関数に使用可能な入力フィールドのいずれかにルックアップフィールドをドラッグ&amp;ドロップします（例：Case When）。 有効な場合、**[!UICONTROL +追加]** というラベルの付いた青いボックスを使用して、フィールドをドロップし、ルックアップ フィールドをドロップした関数の前にルックアップ関数を自動的に挿入できます。 挿入されたルックアップ関数は、すべてのフィールドの関連する値に自動的に設定されます。
+   ![ 参照ドラッグ ](assets/lookup-drag.png)
 
 +++
 
@@ -1046,15 +1042,15 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>派生フィールド新規</p> |
 
 {style="table-layout:auto"}
 
 ## ユースケース {#lowercase-uc}
 
-適切なレポートを作成するために、収集されたすべての製品名を小文字に変換したいと考えています。
+適切なレポートのために、収集したすべての製品名をすべて小文字に変換するする必要があります。
 
-### 前のデータ {#lowercase-uc-databefore}
+### データ前 {#lowercase-uc-databefore}
 
 | 収集された製品名 | 製品表示 |
 |---|---:|
@@ -1069,9 +1065,9 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#lowercase-uc-derivedfield}
 
-を定義します `Product Names` 派生フィールド。 を使用します [!UICONTROL 小文字] 値を変換するルールを定義する関数 [!UICONTROL 収集された製品名] フィールドを小文字に変換して、新しい派生フィールドに保存します。
+`Product Names` の派生フィールドを定義します。 [!UICONTROL LOWERCASE] 関数を使用して、「[!UICONTROL  収集された製品名 ]」フィールドの値を小文字に変換し、新しい派生フィールドに保存するルールを定義します。
 
-![Lowercase ルールのスクリーンショット](assets/lowercase.png)
+![Lowercase ルールのスクリーンショット ](assets/lowercase.png)
 
 
 ### 後のデータ {#lowercase-uc-dataafter}
@@ -1097,7 +1093,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>数値</li></ul> | <ul><li>1 つまたは複数の数値フィールド</li><li>1 つまたは複数の演算子（加算、減算、乗算、除算、累乗）</li><li>ユーザー入力値</li></ul> | <ul><li>`+` （追加）</li><li>`-` （減算）</li><li>`*` （multiply）</li><li>`/` （除算）</li><li>`^` （昇任）</li></ul> | <ul><li>派生フィールドあたり 25 操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>数値</li></ul> | <ul><li>1 つまたは複数の数値フィールド</li><li>1 つまたは複数の演算子（加算、減算、乗算、除算、累乗）</li><li>ユーザー入力値</li></ul> | <ul><li>`+` （追加）</li><li>`-` （減算）</li><li>`*` （multiply）</li><li>`/` （除算）</li><li>`^` （累乗）</li></ul> | <ul><li>派生フィールドあたり 25 操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1118,9 +1114,9 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#math-uc-derivedfield}
 
-を定義します `Corrected Annual Revenue` 派生フィールド。 を使用します [!UICONTROL MATH] 元の年間売上高の数値に 1.05 を乗算するルールを定義する機能。
+`Corrected Annual Revenue` の派生フィールドを定義します。 [!UICONTROL MATH] 関数を使用して、元の年間売上高の数値に 1.05 を乗算するルールを定義します。
 
-![数学ルールのスクリーンショット](assets/math.png)
+![ 数学ルールのスクリーンショット ](assets/math.png)
 
 
 ### 後のデータ {#math-uc-dataafter}
@@ -1139,29 +1135,29 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 式を作成するには、次の手順に従います。
 
 1. 数式フィールドと入力した値に一致する数値フィールドに入力するだけで、ポップアップメニューに表示されます。 または、左側のペインの使用可能なフィールドから数値フィールドをドラッグ&amp;ドロップすることもできます。
-   ![算術の詳細情報 1](assets/math-more-info-1.png)
+   ![ 算術詳細情報 1](assets/math-more-info-1.png)
 
-1. オペランドを追加（例： `*` 乗算）の後に別のフィールドまたは静的な値を指定します。 括弧を使用すると、より複雑な式を定義できます。
+1. オペランド（乗算する場合は `*`）の後に別のフィールドまたは静的な値を追加します。 括弧を使用すると、より複雑な式を定義できます。
 
-1. 静的な値を挿入するには（例： `1.05`）、値を入力して選択します。 **[!UICONTROL 追加 *x* 静的値として]** または **[!UICONTROL 追加 – *x* 負の静的値として]** ポップアップメニューから選択します。
-   ![算術の詳細情報 2](assets/math-more-info-2.png)
+1. 静的な値（`1.05` など）を挿入するには、値を入力し、ポップアップメニューから「**[!UICONTROL 静的な値として *x* を追加]** または「**[!UICONTROL -*x* 負の静的な値を追加]**」を選択します。
+   ![ 算術詳細情報 2](assets/math-more-info-2.png)
 
-1. 緑のチェックマーク ![チェックマーク](./assets/checkmark.svg)</span> 数式が有効かどうかを示します。有効でない場合は、警告が表示されます ![アラート](./assets/alert.svg) とメッセージ [!UICONTROL 式が無効です].
-   ![算術の詳細情報 3](assets/math-more-info-3.png)
+1. 緑のチェックマーク ![ チェックマーク ](./assets/checkmark.svg)</span> は、数式が有効かどうかを示します。それ以外の場合は、警告 ![ アラート ](./assets/alert.svg) とメッセージ [!UICONTROL  数式が無効です ] が表示されます。
+   ![ 算術詳細情報 3](assets/math-more-info-3.png)
 
-で静的な数値を使用する場合、いくつかの重要な考慮事項があります [!UICONTROL MATH] 関数：
+[!UICONTROL MATH] 関数で静的な数値を使用する場合は、いくつかの重要な考慮事項があります。
 
-- 静的値はフィールドに関連付ける必要があります。 例えば、 [!UICONTROL MATH] 静的フィールドのみを含む関数はサポートされていません。
-- 累乗演算子（`ˆ`）に設定する必要があります。
+- 静的値はフィールドに関連付ける必要があります。 例えば、静的フィールドのみで [!UICONTROL MATH] 関数を使用することはできません。
+- 静的値に raise to power 演算子（`ˆ`）を使用することはできません。
 - 数式内で複数の静的値を使用している場合、数式を有効にするには、これらの静的値を括弧で囲む必要があります。 次に例を示します。
 
    - この式はエラーを返します。
-     ![算術の詳細情報 4](assets/math-more-info-4.png)
+     ![ 算術詳細情報 4](assets/math-more-info-4.png)
 
    - この式は有効です。
-     ![算術の詳細情報 5](assets/math-more-info-5.png)
+     ![ 算術詳細情報 5](assets/math-more-info-5.png)
 
-ヒットレベルに基づく計算には、数学関数を使用します。 の使用 [要約](#summarize) イベント、セッションまたはユーザーの範囲に基づく計算の関数。
+ヒットレベルに基づく計算には、数学関数を使用します。 イベント、セッション、またはユーザー範囲に基づく計算には、[Summarize](#summarize) 関数を使用します。
 
 +++
 
@@ -1178,7 +1174,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1206,9 +1202,9 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#merge-fields-uc-derivedfield}
 
-を定義します `Cross Channel Interactions` 派生フィールド。 を使用します [!UICONTROL フィールドを結合] から値を結合するルールを定義する関数 [!UICONTROL ページ名] フィールドと [!UICONTROL 通話理由] フィールドに移動し、それを新しい派生フィールドに保存します。
+`Cross Channel Interactions` の派生フィールドを定義します。 [!UICONTROL MERGE FIELDS] 関数を使用して、「[!UICONTROL  ページ名 ]」フィールドと「[!UICONTROL  問い合わせ理由 ]」フィールドの値を結合して新しい派生フィールドに保存するルールを定義します。
 
-![結合フィールドルールのスクリーンショット](assets/merge-fields.png)
+![ 結合フィールドルールのスクリーンショット ](assets/merge-fields.png)
 
 ### 後のデータ {#merge-fields-uc-dataafter}
 
@@ -1227,7 +1223,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 結合フィールドルール内で同じタイプのフィールドを選択する必要があります。 例えば、日付フィールドを選択した場合、結合する他のすべてのフィールドは日付フィールドである必要があります。
 
-![結合フィールドに対する制約のスクリーンショット](assets/merge-fields-constraint.png)
+![ 結合フィールドに対する制約のスクリーンショット ](assets/merge-fields-constraint.png)
 
 +++
 
@@ -1244,19 +1240,19 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL メソッド]:<ul><li>前の値</li><li>次の値</li></ul></li><li>[!UICONTROL 範囲]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL 索引]:<ul><li>数値</li></ul><li>[!UICONTROL 繰り返しを含める]:<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL  メソッド ]:<ul><li>前の値</li><li>次の値</li></ul></li><li>[!UICONTROL  範囲 ]:<ul><li>ユーザー</li><li>セッション</li></ul></li><li>[!UICONTROL  指数 ]:<ul><li>数値</li></ul><li>[!UICONTROL  繰り返しを含める ]:<ul><li>ブール値</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 ## ユースケース {#prevornext-uc1}
 
-以下を理解する必要があります **次へ** または **前へ** 値は、受け取るデータのを、繰り返し値を考慮に入れて指定します。
+受け取ったデータの **次** または **前** の値を、繰り返し値を考慮して理解する必要があります。
 
 ### データ {#prevornext-uc1-databefore}
 
-**例 1 – 繰り返しを含める処理**
+**例 1 – 繰り返しを含む処理**
 
-| 受信データ | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない |
+| 受信データ | 次の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含める | 次の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含まない | 前の値 <br/>Session<br/>Index = 1<br/>Include Repeats | 前の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含まない |
 |---|---|---|---|---|
 | ホーム | ホーム | 検索 | *値なし* | *値なし* |
 | ホーム | 検索 | 検索 | ホーム | *値なし* |
@@ -1270,9 +1266,9 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 {style="table-layout:auto"}
 
-**例 2 – 処理には、受信したデータに空白の値を含めて繰り返しを含める**
+**例 2 – 処理には、受信したデータに空白の値を使用して繰り返しが含まれる**
 
-| 受信データ | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 次の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含める | 前の値<br/>Session<br/>インデックス = 1<br/>繰り返しを含めない |
+| 受信データ | 次の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含める | 次の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含まない | 前の値 <br/>Session<br/>Index = 1<br/>Include Repeats | 前の値 <br/>Session<br/>Index = 1<br/> 繰り返しを含まない |
 |---|---|---|---|---|
 | ホーム | ホーム | 検索 | *値なし* | *値なし* |
 | ホーム | ホーム | 検索 | ホーム | *値なし* |
@@ -1288,19 +1284,19 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 ### 派生フィールド {#prevnext-uc1-derivedfield}
 
-を定義します `Next Value` または `Previous value` 派生フィールド。 を使用します [!UICONTROL 次または前] を選択するルールを定義する関数 [!UICONTROL 受信データ] フィールド、選択 [!UICONTROL 次の値] または [!UICONTROL 前の値] as [!UICONTROL メソッド], [!UICONTROL Session] 範囲として、の値を設定します。 [!UICONTROL 索引] 対象： `1`.
+`Next Value` または `Previous value` の派生フィールドを定義します。 [!UICONTROL NEXT OR PREVIOUS] 関数を使用すると、[!UICONTROL Data received] フィールドを選択するルールを定義し、[!UICONTROL Next value] または [!UICONTROL Previous value] を [!UICONTROL Method] として選択し、[!UICONTROL Session] を Scope として選択し、[!UICONTROL Index] の値を `1` に設定することができます。
 
-![結合フィールドルールのスクリーンショット](assets/prevnext-next.png)
+![ 結合フィールドルールのスクリーンショット ](assets/prevnext-next.png)
 
 ## 詳細情報 {#prevnext-moreinfo}
 
 選択できるのは、「訪問」または「イベント」テーブルに属するフィールドのみです。
 
-[!UICONTROL 繰り返しを含める] の繰り返し値の処理方法を決定します [!UICONTROL 次または前] 関数。
+[!UICONTROL  繰り返しを含める ] [!UICONTROL NEXT または PREVIOUS] 関数の繰り返し値の処理方法を指定します。
 
-- 繰り返しのルックと、次または前の値を含めます。 次の場合 [!UICONTROL 繰り返しを含める] を選択すると、現在のヒットから次または前の値の連続した繰り返しが無視されます。
+- 繰り返しのルックと、次または前の値を含めます。 [!UICONTROL  繰り返しを含める ] が選択されている場合、現在のヒットから次または前の値の連続した繰り返しが無視されます。
 
-- 選択したフィールドに（空白の）値がない行では、次または前の値が [!UICONTROL 次または前] 関数の出力
+- 選択したフィールドに値がない（空白の）行は、[!UICONTROL NEXT OR PREVIOUS] 関数出力の一部として返される次の値または前の値を持ちません。
 
 +++
 
@@ -1316,13 +1312,13 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL 正規表現]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL 出力形式]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 1 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL  正規表現 ]:</li><ul><li>文字列</li></ul></li><li>[!UICONTROL  出力形式 ]:<ul><li>文字列</li></ul></ul><ul><li>大文字と小文字を区別</li><ul><li>ブール値</li></ul></li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 1 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 ## ユースケース {#regex-replace-uc}
 
-URL の一部を取得し、それを一意のページ識別子として使用してトラフィックを分析します。 を使用します `[^/]+(?=/$|$)` URL の末尾を取得する正規表現および `$1` 出力パターンとして使用します。
+URL の一部を取得し、それを一意のページ識別子として使用してトラフィックを分析します。 正規表現に `[^/]+(?=/$|$)` を使用して、URL の末尾を取得し、出力パターンとして `$1` を使用します。
 
 ### 前のデータ {#regex-replace-uc-databefore}
 
@@ -1337,9 +1333,9 @@ URL の一部を取得し、それを一意のページ識別子として使用�
 
 ### 派生フィールド {#regex-replace-uc-derivedfield}
 
-を作成します `Page Identifier` 派生フィールド。 を使用します [!UICONTROL 正規表現の置換] の値を置換するルールを定義する関数 [!UICONTROL 参照 URL] を使用したフィールド [!UICONTROL 正規表現] 件中 `[^/]+(?=/$|$)` および [!UICONTROL 出力形式] 件中 `$1`.
+`Page Identifier` の派生フィールドを作成します。 [!UICONTROL REGEX REPLACE] 関数を使用して、`[^/]+(?=/$|$)` の [!UICONTROL Regex] と `$1` の [!UICONTROL  出力形式 ] を使用して「[!UICONTROL  参照 URL]」フィールドの値を置換するルールを定義します。
 
-![正規表現置換ルールのスクリーンショット](assets/regex-replace.png)
+![ 正規表現置換ルールのスクリーンショット ](assets/regex-replace.png)
 
 
 ### 後のデータ {#regex-replace-uc-dataafter}
@@ -1392,7 +1388,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 | 出力プレースホルダーシーケンス | 説明 |
 | --- | --- |
 | `$&` | 式全体に一致したものを出力します。 |
-| `$n` | n 番目のサブ式に一致したものを出力します。 例： `$1` 最初のサブ式を出力します。 |
+| `$n` | n 番目のサブ式に一致したものを出力します。 例えば、`$1` は、最初のサブ式を出力します。 |
 | ``$` `` | 最後に見つかった一致の終わり（前に一致が見つからなかった場合は、テキストの始まり）から、現在の一致の始まりまでのテキストを出力します。 |
 | `$+` | 正規表現で最後にマークされたサブ式に一致するものを出力します。 |
 | `$$` | 文字列文字 `"$"` を出力します。 |
@@ -1413,7 +1409,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL メソッド]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL  メソッド ]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1433,9 +1429,9 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ### 派生フィールド {#split-u1-derivedfield}
 
-を作成します `Responses` 派生フィールド。 を使用します [!UICONTROL SPLIT] を使用してルールを定義する関数  [!UICONTROL 配列に変換] 値を AEM の [!UICONTROL 音声アプリの応答] を使用したフィールド `,` as the [!UICONTROL 区切り文字].
+`Responses` の派生フィールドを作成します。 [!UICONTROL SPLIT] 関数を使用して、[!UICONTROL  配列に変換 ] メソッドを使用し、`,` を [!UICONTROL  区切り文字 ] として使用して [!UICONTROL  音声アプリの応答 ] フィールドの値を変換するルールを定義します。
 
-![分割ルール 1 のスクリーンショット](assets/split-1.png)
+![ 分割ルール 1 のスクリーンショット ](assets/split-1.png)
 
 ### 後のデータ {#split-uc1-dataafter}
 
@@ -1467,13 +1463,13 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ### 派生フィールド {#split-u2-derivedfield}
 
-を作成します  `First Response` 派生フィールド。 を使用します [!UICONTROL SPLIT] 最初の値をから取得するルールを定義する関数 [!UICONTROL 回答] 応答の左側からのフィールド `,` を区切り文字として使用します。
+`First Response` の派生フィールドを作成します。 [!UICONTROL SPLIT] 関数を使用して、応答 `,` の左側の [!UICONTROL Responses] フィールドから最初の値を区切り文字として取得するルールを定義します。
 
-![分割ルールのスクリーンショット – 最初の値](assets/split-2.png)
+![ 分割ルールのスクリーンショット – 最初の値 ](assets/split-2.png)
 
-を作成します `Second Response` から最後の値を取得するための派生フィールド [!UICONTROL 回答] フィールドを作成するには、右側から「From」、区切り文字として「1」、インデックスとして「1」を選択します。
+[!UICONTROL Responses] フィールドから最後の値を取得するための `Second Response` 派生フィールドを作成するには、右側から「From」を選択し、区切り文字として「1」、インデックスとして「1」を選択します。
 
-![分割ルールのスクリーンショット – 最後の値](assets/split-3.png)
+![ 分割ルールのスクリーンショット – 最後の値 ](assets/split-3.png)
 
 ### 後のデータ {#split-uc2-dataafter}
 
@@ -1529,19 +1525,19 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 - 訪問者の「買い物かごに追加する売上高の合計」が 150 ドル未満の場合は、「小」に設定します。
 - 訪問者の「買い物かごに追加する売上高の合計」が 150 ドルを超え、500 ドル未満の場合は、Mediumに設定します。
-- 訪問者の「買い物かごに追加する売上高の合計」が 500 ドル以上の場合は、「大」に設定します。
+- 訪問者の買い物かごへの合計 追加の売上高が $500 以上の場合は、大 に設定します。
 
-結果：
+業績：
 
-- CustomerABC123 に対する$110 の買い物かごへの追加売上高の合計。
-- CustomerDEF456 の買い物かごへの追加売上高の合計（$325）。
-- CustomerGHI789 の買い物かごへの追加売上高の合計が 500 ドルになる。
+- 合計 追加 to CustomerABC123 の $110 の売上高。
+- 買い物かごへの合計 追加の売上高は CustomerDEF456 の場合 $325 です。
+- 買い物かごへの合計 追加の売上高は 500 ドルで、CustomerGHI789 が支払われます。
 
 ### 派生フィールド {#summarize-uc-derivedfield}
 
-を作成します `Add To Cart Revenue Size` 派生フィールド。 を使用します [!UICONTROL 要約] 関数と [!UICONTROL 合計] [!UICONTROL 要約方法] （を使用） [!UICONTROL 範囲] をに設定 [!UICONTROL 人物] の値を合計する [!UICONTROL cart_add] フィールド。 次に、秒を使用します [!UICONTROL 条件の場合] 結果をツリーカテゴリサイズで分割するルール。
+`Add To Cart Revenue Size` 派生フィールドを作成します。 [!UICONTROL SUMMARIZE] 関数と [!UICONTROL Sum] [!UICONTROL Summarize メソッド ] を使用し、[!UICONTROL Scope] を [!UICONTROL Person] に設定すると、[!UICONTROL cart_add] フィールドの値を合計できます。 次に、2 つ目の [!UICONTROL CASE WHEN] ルールを使用して、結果をツリーカテゴリサイズに分割します。
 
-![要約ルール 1 のスクリーンショット](assets/summarize.png)
+![Summarize rule 1 のスクリーンショット ](assets/summarize.png)
 
 
 
@@ -1557,7 +1553,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ## 詳細情報 {#summarize-more-info}
 
-イベント、セッションまたはユーザー範囲に基づく計算に要約関数を使用します。 の使用 [Math](#math) ヒットレベルに基づく計算の関数。
+イベント、セッションまたはユーザー範囲に基づく計算に要約関数を使用します。 ヒットレベルに基づく計算には、[Math](#math) 関数を使用します。
 
 +++
 
@@ -1592,9 +1588,9 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ### 派生フィールド {#trim-u1-derivedfield}
 
-を作成します `Product Identifier` 派生フィールド。 を使用します [!UICONTROL TRIM] ルールを定義する関数 **[!UICONTROL 空白をトリミング]** から **[!UICONTROL 商品 ID]** フィールド。
+`Product Identifier` の派生フィールドを作成します。 [!UICONTROL TRIM] 関数を使用して、「**[!UICONTROL 製品 ID]**」フィールドから **[!UICONTROL 空白をトリミング]** するルールを定義します。
 
-![分割ルール 1 のスクリーンショット](assets/trim-1.png)
+![ 分割ルール 1 のスクリーンショット ](assets/trim-1.png)
 
 ### 後のデータ {#trim-uc1-dataafter}
 
@@ -1622,9 +1618,9 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 ### 派生フィールド {#trim-u2-derivedfield}
 
-を作成します  `Page Name` 派生フィールド。 を使用します [!UICONTROL TRIM] ルールを定義する関数 [!UICONTROL 特殊文字をトリミング] から [!UICONTROL 名前] を使用したフィールド [!UICONTROL 特殊文字] `#?%&/`.
+`Page Name` の派生フィールドを作成します。 [!UICONTROL TRIM] 関数を使用すると、「特殊文字 [!UICONTROL `#?%&/` を使用して「[!UICONTROL  名前 ] フィールドから  特殊文字をトリミング ] するルールを定義できます。
 
-![分割ルールのスクリーンショット – 最初の値](assets/trim-2.png)
+![ 分割ルールのスクリーンショット – 最初の値 ](assets/trim-2.png)
 
 ### 後のデータ {#trim-uc2-dataafter}
 
@@ -1655,9 +1651,9 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 ### 派生フィールド {#trim-u3-derivedfield}
 
-を作成します  `Store Identifier` 派生フィールド。 を使用します [!UICONTROL TRIM] ルールを定義する関数 [!UICONTROL 右から切り捨て] この [!UICONTROL storeID] 文字列の末尾から位置までのフィールド `3`.
+`Store Identifier` の派生フィールドを作成します。 [!UICONTROL TRIM] 関数を使用して、文字列の末尾から位置の `3` まで ][!UICONTROL storeID] フィールドを「右から切り捨て [!UICONTROL 」するルールを定義します。
 
-![分割ルールのスクリーンショット – 最初の値](assets/trim-3.png)
+![ 分割ルールのスクリーンショット – 最初の値 ](assets/trim-3.png)
 
 ### 後のデータ {#trim-uc3-dataafter}
 
@@ -1685,7 +1681,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL オプション]:<ul><li>[!UICONTROL プロトコルを取得]</li><li>[!UICONTROL ホストを取得]</li><li>[!UICONTROL パスを取得]</li><li>[!UICONTROL クエリ文字列値を取得]<ul><li>[!UICONTROL クエリパラメーター]:<ul><li>文字列</li></ul></li></ul></li><li>[!UICONTROL ハッシュ値を取得]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL  オプション ]:<ul><li>[!UICONTROL  プロトコルを取得 ]</li><li>[!UICONTROL  ホストを取得 ]</li><li>[!UICONTROL  パスを取得 ]</li><li>[!UICONTROL  クエリ文字列値を取得 ]<ul><li>[!UICONTROL  クエリパラメーター ]:<ul><li>文字列</li></ul></li></ul></li><li>[!UICONTROL  ハッシュ値を取得 ]</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1707,9 +1703,9 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 ### 派生フィールド {#urlparse-uc1-derivedfield}
 
-を定義します  `Referring Domain` 派生フィールド。 を使用します [!UICONTROL URL の解析] からホストを取得するルールを定義する関数 [!UICONTROL 参照 URL] フィールドに移動し、それを新しい派生フィールドに保存します。
+`Referring Domain` の派生フィールドを定義します。 [!UICONTROL URL PARSE] 関数を使用して、「[!UICONTROL  参照 URL]」フィールドからホストを取得し、新しい派生フィールドに保存するルールを定義します。
 
-![URL 解析ルール 1 のスクリーンショット](assets/url-parse-1.png)
+![Url 解析ルール 1 のスクリーンショット ](assets/url-parse-1.png)
 
 ### 後のデータ {#urlparse-uc1-dataafter}
 
@@ -1725,7 +1721,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 ## ユースケース 2 {#urlparse-uc2}
 
-の値を使用する `cid` 内のクエリ文字列のパラメーター [!DNL Page URL] 派生トラッキングコードレポートの出力の一部として。
+クエリ文字列の `cid` パラメーターの値を、派生トラッキングコードレポートの出力の一部として [!DNL Page URL] で使用する場合。
 
 ### 前のデータ {#urlparse-uc2-databefore}
 
@@ -1739,9 +1735,9 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 ### 派生フィールド {#urlparse-uc2-derivedfield}
 
-を定義します `Query String CID` 派生フィールド。 を使用します [!UICONTROL URL の解析] 内のクエリ文字列パラメーターの値を取得するルールを定義する関数 [!UICONTROL ページ URL] フィールド、指定する `cid` クエリパラメーターとして使用します。 出力値は新しい派生フィールドに保存されます。
+`Query String CID` の派生フィールドを定義します。 [!UICONTROL URL PARSE] 関数を使用して、「[!UICONTROL  ページ URL]」フィールドのクエリ文字列パラメーターの値を取得するルールを定義し、`cid` をクエリパラメーターとして指定します。 出力値は新しい派生フィールドに保存されます。
 
-![Url 解析ルール 2 のスクリーンショット](assets/url-parse-2.png)
+![Url 解析ルール 2 のスクリーンショット ](assets/url-parse-2.png)
 
 ### 後のデータ {#urlparse-uc2-dataafter}
 
@@ -1768,8 +1764,8 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 | 関数 | 制限事項 |
 |---|---|
-| <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの場合</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
-| <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>200 [演算子](#operators) 派生フィールドあたり</li></ul> |
+| <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの場合</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)</li></ul> |
+| <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの関数を連結</li></ul> |
 | <p>重複排除</p> | <ul><li>派生フィールドごとに 5 つの重複排除関数</li></ul> |
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの検索と置換関数</li></ul> |
@@ -1788,13 +1784,13 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 ### 演算子
 
-Case When 関数内の If または Else If 構成内の演算子は、条件と **1** の値。 条件に値を追加するたびに、演算子の数が加算されます。
+Case When 関数内の If または Else If 構文の演算子は、条件と **1** 値の組み合わせです。 条件に値を追加するたびに、演算子の数が加算されます。
 
 例えば、以下の条件では、13 個の演算子を使用しています。
 
-![サンプル演算子](assets/operators-sample.png)
+![ サンプル演算子 ](assets/operators-sample.png)
 
-Classify 関数の演算子は、 [!UICONTROL 値が元の値と等しい場合] [!UICONTROL 値を新しい値に置換].
+分類関数の演算子は、[!UICONTROL  値が元の値と等しい場合 ][!UICONTROL  値を新しい値に置き換える ] の単一のエントリです。
 
 例えば、以下の分類ルールでは、3 つの演算子を使用します。
 
@@ -1803,12 +1799,12 @@ Classify 関数の演算子は、 [!UICONTROL 値が元の値と等しい場合]
 
 ## 詳細情報 {#trim-more-info}
 
-[`Trim`](#trim) および [`Lowercase`](#lowercase) は、のコンポーネント設定で既に使用できる機能です。 [データビュー](../component-settings/overview.md). 派生フィールドを使用すると、これらの関数を組み合わせて、より複雑なデータ変換をCustomer Journey Analyticsで直接実行できます。 例えば、 `Lowercase` イベント フィールドで大文字と小文字を区別しないようにするには、次を使用します [`Lookup`](#lookup) 小文字のルックアップキーのみを持つルックアップデータセットに対して、新しい小文字フィールドを一致させます。 または、次を使用できます `Trim` 設定前に文字を削除するには `Lookup` 新しいフィールドで、をクリックします。
+[`Trim`](#trim) と [`Lowercase`](#lowercase) は、 [データ ビューのコンポーネント設定で既に使用できる機能です](../component-settings/overview.md)。 派生フィールドを使用すると、これらの関数を組み合わせて、より複雑なデータ変換を Customer Journey Analytics で直接実行できます。 たとえば、 `Lowercase` を使用してイベント フィールドの大文字と小文字の区別を削除し、 [`Lookup`](#lookup) を使用して、新しいすべて小文字 フィールドを、すべて小文字 にルックアップ キーのみを持つルックアップ データセットと一致させることができます。 または、新しいフィールドに`Lookup`を設定する前に、`Trim`を使用して文字を削除することもできます。
 
 派生フィールドでの参照およびプロファイルフィールドのサポートにより、イベントの参照とプロファイル属性に基づいてデータを変換できます。 これは、ルックアップまたはプロファイルデータセットにアカウントレベルのデータが含まれている B2B シナリオで特に役立ちます。 また、このサポートは、ルックアップデータ（キャンペーン情報やオファータイプなど）やプロファイルデータ（メンバー層やアカウントタイプなど）の共通フィールドでデータを操作する場合に役立ちます。
 
 派生フィールドの背景情報については、を参照してください。
 
-- [データを最大限に活用：Customer Journey Analyticsで派生フィールドを使用するフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+- [ データを最大限に活用：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
-- [派生フィールドのCustomer Journey Analytics用ユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+- [ 派生フィールドのCustomer Journey Analyticsのユースケース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
