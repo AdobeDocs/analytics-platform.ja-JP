@@ -3,44 +3,36 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2ea7c9ec4d02685164a10da3e3f3a38526fc9730
+source-git-commit: a2673763fce0766b732ac7ab557d3a0a193173fd
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 93%
+source-wordcount: '781'
+ht-degree: 42%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2024年6月）
+# 現在の Adobe Customer Journey Analytics リリースノート（2024年7月）
 
-**最終更新日**：2024年7月12日（PT）
+**最終更新日**：2024年7月17日（PT）
 
-このリリースノートは、2024年6月6日（PT）～2024年7月のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+これらのリリースノートは、2024 年 7 月 17 日（PT）から 2024 年 8 月 17 日（PT）までのリリース期間を対象としています。 Adobe Customer Journey Analytics リリースは、機能のデプロイメントに対する、よりスケーラブルで段階的なアプローチを実現する [ 継続的な配信モデル ](releases.md) に基づいて動作します。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **インテリジェントアラート** | インテリジェントアラートがCustomer Journey Analyticsで使用できるようになり、データで異常なイベントが発生した場合に、すぐに通知を受け取れるようになりました。<p>異常値のしきい値、変更された割合、または特定のデータポイントに基づいてトリガーされるアラートを設定できます。 アラートは、異常値検出と統合され、最も必要なときにトリガーされる詳細なコントロールを提供します。</p><p>Customer Journey Analyticsでインテリジェントアラートを使用するプロセスは、Adobe Analyticsでインテリジェントアラートを使用するプロセスとほとんど同じです。 1 つの主な違いは、1 時間ごとのアラートはCustomer Journey Analyticsでは使用できないことです。 この違いは、取り込み可能な様々な種類のイベントデータのデータ取り込みが、遅延（通常、データイベント時間から 3～9 時間後）の後にのみ完了するためです。</p><p>（フォローするドキュメントのリンクを更新）</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | 2024年7月26日（PT） |
 | **レポートをクラウドに書き出す際に使用するアカウントと場所を制御するための管理者設定** | [ ロケーションマネージャー」の新しい「管理者設定」タブでは ](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only) ユーザーがアカウントとロケーションを作成および編集できるかどうかを管理者が制御できます。<p>これらの設定は、ユーザー [ クラウド書き出しアカウントを設定 ](/help/components/exports/cloud-export-accounts.md) および [ クラウド書き出し場所を設定 ](/help/components/exports/cloud-export-locations.md) の際に適用されます。</p><p>また、管理者は、ユーザーが作成および使用できるアカウントのタイプを制限することもできます。 アカウントタイプには、Google Cloud Platform、Azure RBAC、Amazon S3、AEP Data Landing Zone、Snowflakeなどがあります。</p><p>以前は、すべてのユーザーが、あらゆるタイプのアカウントと場所を作成、編集、使用できました。</p> | 2024年7月11日（PT） | 2024年7月19日（PT） |
-| **Customer Journey Analytics 向けの AI アシスタント** | Customer Journey Analytics UI で自然言語の質問をし、Customer Journey Analytics ドキュメントに基づいて回答を得ることができます。[詳細情報](/help/ai-assistant.md) | | 2024年6月6日（PT） |
-| **グラフベースのステッチ** | グラフベースのステッチを実行すると、Experience Platform ID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。<ul><li>単一の識別子を反映させるために追加のデータの抽出、変換、読み込みを行わずに、異なる識別子を持つデータセットを結合する。</li><li>データセット間で ID を共有して、単一のデータセットの優先 ID またはゴールデン ID の適用範囲を向上させる。</li><li>Real-Time Customer Data Platform と Journey Optimizer で作成したプロファイルを Customer Journey Analytics のユーザーと整合する。</li></ul>[詳細情報](/help/stitching/overview.md) |  | 2024年6月28日（PT） |
-| **ユーザーからアカウントへの B2B スキーマ変換** | B2B データ（アカウント、商談、マーケティングリスト、キャンペーンなど）のユーザーベースのルックアップをサポートするために、B2B ルックアップデータセットを変換できます。この変換は、次のクラスに基づく B2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul>[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 2024年6月5日（PT） |
-| **派生フィールド - 数学関数** | データビュー内で簡単な数学演算子を実行して、ユーザーに関する質問に回答できます。例えば、製品、保証、発送による収益を組み合わせることができます。[詳細情報](/help/data-views/derived-fields/derived-fields.md#math)</p> | | 2024年6月5日（PT） |
-| **派生フィールド - Next 関数または Previous 関数** | 次の値または前の値を確認できます。例えば、選択したマーケティングチャネルの前に操作した以前のマーケティングチャネルは何でしたか？または、選択したページの前後でユーザーが操作したページは何でしたか？ユーザーが店舗を訪れる前にやり取りする、一番人気のチャネルは何ですか？[詳細情報](/help/data-views/derived-fields/derived-fields.md#next-or-previous)</p> | | 2024年6月12日（PT） |
-| **派生フィールド - 要約関数** | イベント、セッションおよびユーザーレベルで指標またはディメンションに集計タイプ関数を適用する機能を提供します。[詳細情報](/help/data-views/derived-fields/derived-fields.md#summarize) | | 2024年6月26日（PT） |
-| **派生フィールド - 重複排除関数** | ある値が繰り返しカウントされるのを防ぐのに役立ちます。ユーザーレベルまたはセッションレベルで適用することも、ディメンションの一意の値に基づいて適用することもできます。（ドキュメントへのリンクを添付） |  | 2024年7月10日（PT） |
-| **取り込みの優先順位と待ち時間** | イベントデータが 24 時間、48 時間、7 日前のいずれかに関係なく、90 分以内（SLT）に Customer Journey Analytics に取り込めるようになりました。この機能は、会社が購入した SKU パッケージによって異なります。<ul><li>CJA 優先取り込み基本：24 時間前のデータを 90 分以内に SLT 処理（CJA Foundation および CJA Select で使用可能）</li><li>CJA 優先取り込み中級：72 時間前のデータを 90 分以内に SLT 処理（CJA Prime で使用可能）</li><li>CJA 優先取り込み上級：1 週間前のデータを 90 分以内に SLT 処理（CJA Ultimate で使用可能）</li></ul> |  | 2024年6月12日（PT） |
+| **概要レベルデータソース** | 人物 ID を持たない時系列データを取り込むことができます。 この時系列データは、次のような様々なユースケースをサポートするために使用できます。<ul><li>イベントレベルのデータの一部または隣にハイレベルのパフォーマンス指標を提示する。 これには、日付などの単純なものから 1 つの指標値を含めるか、広告インプレッション数、メール開封数、広告費用、売上原価など、複数のディメンションと指標を含めることができます。</li><li>毎日、毎週、毎月、または四半期ごとにターゲットまたは目標をアップロードし、イベントレベルの指標に対してこれらのターゲットまたは目標を配置すると、組織のターゲットまたは目標に対する指標のトレンドを視覚化するのに役立ちます。</li></ul><p>（フォローするドキュメントのリンクを更新）</p> |  | 2024年7月31日（PT） |
+| **派生フィールド – 重複排除関数** | 派生フィールドの重複排除機能は、値が複数回カウントされるのを防ぐのに役立ちます。<p>（ドキュメントへのリンクを添付）</p> |  | 2024年7月16日（PT） |
+| **CJA のお客様向けのガイド付き分析プロビジョニング** | ガイド付きCustomer Journey Analyticsを使用すると、分析のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 <p>マーケティングから製品まで部門を横断するチームがリアルタイムでつながって、これらのレポートを使用し理解することができます。</p><p>CJA パッケージ内で最大 11 個のガイド付き分析ビューを使用できるようになりました。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 2024年7月17日（PT） |
 | **書き出しと読み込みに使用されるアカウントと場所の共有** | ユーザーは、作成したアカウントと場所を組織内のすべてのユーザーに対して使用できるようになりました。アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。以前は、アカウントと場所を使用できるのは、それらを作成したユーザーのみでした。これらの設定は、ユーザーが[クラウドの書き出しアカウントを設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)し、[クラウドの書き出し場所を設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)する際に使用できます。 | 2024年6月12日（PT） | 2024年7月中旬 |
-| **ドロップダウンフィルターでの複数フィールドの選択** | ドロップダウンフィルターに複数のフィールドが追加されている場合、ユーザーは一度に複数のフィールドを選択できるようになりました。パネルがフィルタリングされ、選択したフィールドのいずれかが含まれます。 <p>以前は、ユーザーはドロップダウンフィルターで一度に 1 つのフィールドしか選択できませんでした。</p><p>ドロップダウンフィルターを右クリックした際にメニューに移動されるように、ドロップダウンフィルターでの選択を必須とするオプションです。</p><p>以前は、ユーザーは、ドロップダウンメニューで「フィルターなし」オプションの横にある「x」をクリックできました。</p><p>詳しくは、[パネルの概要](/help/analysis-workspace/c-panels/panels.md)の[静的ドロップダウンフィルター](/help/analysis-workspace/c-panels/panels.md#static-drop-down-filters)を参照してください。</p><p>[この機能のビデオデモをご覧ください](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/use-multi-select-drop-down-filters)。</p> |  | 2024年6月19日（PT） |
-| **ワークスペースプロジェクトの目次** | プロジェクトで新しい目次を使用できるようになりました。目次には、ユーザーがプロジェクト内のパネルやビジュアライゼーションの間をすばやく移動できるリンクがあります。 <p>目次は、すべてのプロジェクトの左側のパネルで使用できます。</p><p>詳しくは、[プロジェクトの目次](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)を参照してください。</p><p>[この機能のビデオデモをご覧ください](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace)。</p> |  | 2024年6月19日（PT） |
-| **フリーフォームテーブルでのディメンション項目のハイパーリンクの作成** | 1 つ以上のディメンション項目にハイパーリンクを作成して、Analysis Workspace のフリーフォームテーブル内でクリックできるようにします。 <p>URL 値を持つディメンション項目のハイパーリンクを作成したり、URL 以外の値を持つディメンション項目のカスタム URL を作成したりできます。</p><p>変数を使用して、複数のディメンション項目の動的カスタム URL を作成できます。変数は、ディメンション項目の値や、分類ディメンションを参照できます。</p><p>詳しくは、[フリーフォームテーブルでディメンションのハイパーリンクを作成する](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)を参照してください。</p><p>[この機能のビデオデモをご覧ください](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables)。</p> |  | 2024年6月19日（PT） |
-| **Adobe Journey Optimizer での Customer Journey Analytics データビューの使用** | Customer Journey Analytics の新しい設定オプションを使用すると、手動設定を行わなくても、Adobe Journey Optimizer で使用する Customer Journey Analytics データビューを指定できます。 <p>この設定オプションを有効にする方法について詳しくは、[データビューを作成または編集](/help/data-views/create-dataview.md)の「[互換性](/help/data-views/create-dataview.md#compatibility)」セクションを参照してください。</p><p>以前は、Journey Optimizer データを Customer Journey Analytics で表示する際に、接続ビューとデータビューを手動で設定する必要がありました。</p> |  | 2024年6月19日（PT） |
-| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをよりすばやく見つけることができます。</li></ul> <p>（ドキュメントへのリンクを添付）</p> |  | 2024年7月14日（PT） |
+| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platformの「フィルター」オプションと「並べ替え」オプションを使用すると、関連するオーディエンスをより迅速に見つけることができます。</li></ul> <p>（ドキュメントへのリンクを添付）</p> |  | 未定 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics の修正点
 
-AN-345454、AN-349816、AN-349905、AN-350617
+AN-306000; AN-288748; AN-351547; AN-351110
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 
