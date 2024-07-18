@@ -5,20 +5,16 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: ht
-source-wordcount: '1397'
-ht-degree: 100%
+source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 93%
 
 ---
 
 # ガイド付き分析の概要
 
 ガイド付き分析を使用すると、Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。マーケティングから製品まで部門を横断するチームがリアルタイムでつながって、これらのレポートを使用し理解することができます。
-
->[!NOTE]
->
-> ガイド付き分析は、現在 Adobe Product Analytics の一部としてのみ使用でき、Customer Journey Analytics の有料アドオンになっています。組織でこの一連の機能の使用を開始する場合は、アドビのアカウントチームにお問い合わせください。
 
 Analysis Workspace やモバイルスコアカードと同様に、ガイド付き分析では、[データビュー](../data-views/data-views.md)のデータを使用します。このビューは、[接続](../connections/overview.md)を通じて Adobe Experience Platform のデータを参照するものです。ガイド付き分析で作成した多くのレポートは、Analysis Workspace にシームレスに転送して、さらに調査することができます。
 
@@ -72,9 +68,19 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 ## プロビジョニング
 
-ガイド付き分析は、Adobe Product Analytics の一部であり、Customer Journey Analytics の有料アドオンです。組織でこの一連の機能の使用を開始する場合は、アドビのアカウントチームにお問い合わせください。
+ガイド付き分析ビューは、次の方法でCustomer Journey Analyticsパッケージに含まれています。
 
-ガイド付き分析を使用するよう組織をプロビジョニングすると、製品プロファイル管理者は、Adobe Admin Console でアクセスを追加または削除できます。
+| パッケージ | 使用可能なビュー |
+| --- | --- |
+| [!UICONTROL CJA アドオン ] | トレンド：使用状況、トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL CJA の基盤 ] | トレンド：使用状況 |
+| [!UICONTROL CJA 選択 ] | 基盤ビュー+ トレンド：頻度、ファネル：摩擦、ファネル：コンバージョンのトレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL CJA プライム ] | ビュー+ ユーザーストリームを選択：タイムライン、機能マトリックス：エンゲージメント、影響：リリース、影響：初回使用 |
+| [!UICONTROL CJA Ultimate] | プライムビュー |
+
+{style="table-layout:auto"}
+
+製品プロファイル管理者は、Adobe Admin Consoleでガイド付き分析へのアクセスを追加または削除できます。
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com) にログインします。
 1. 製品リストから **[!UICONTROL Customer Journey Analytics]** を選択します。
