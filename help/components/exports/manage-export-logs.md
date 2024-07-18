@@ -1,74 +1,74 @@
 ---
-description: 既存のエクスポートのログを管理
+description: 既存の書き出しのログの管理
 keywords: Analysis Workspace
-title: 書き出しログを管理
+title: 書き出しログの管理
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# 書き出しログを管理
+# 書き出しログの管理
 
-書き出しログは、各書き出しに関する詳細を提供し、Analysis Workspaceデータがクラウドに書き出されるたびに生成されます。 ( データをクラウドに書き出す方法について詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md).)
+エクスポートログは、各エクスポートの詳細を提供し、Analysis Workspace データがクラウドに書き出されるたびに生成されます。 （データをクラウドに書き出す方法については、[Customer Journey Analyticsレポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
-スケジュールされたエクスポートの場合、ログには、ログの送信時と同じエクスポート設定が反映されます。 ログは削除できません。
+スケジュールされた書き出しの場合、ログには、ログが送信されたときの書き出し設定が反映されます。 ログは削除できません。
 
 ## 書き出しログを表示
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-   ![「ログ」タブを表示するエクスポートウィンドウ](assets/export-logs-tab.png)
+   ![ 「ログ」タブを表示する「書き出し」ウィンドウ ](assets/export-logs-tab.png)
 
    各ログの詳細は、使用可能な列に表示されます。
 
 1. 次のいずれかの操作を行います。
 
-   * [列のカスタマイズ](#configure-columns) 表示される
+   * 表示される [ 列をカスタマイズ ](#configure-columns) します。
 
-   * を選択します。 **情報アイコン** ![情報アイコン](assets/information-icon.png) ログ名の横に表示され、ログに関連付けられているエクスポートを表示します。
+   * ログ名の横にある **情報アイコン**![ 情報アイコン ](assets/information-icon.png) を選択して、ログに関連付けられているエクスポートを表示します。
 
-   * を選択します。 **エクスポートアイコンを編集** ![情報アイコン](assets/edit-export-icon.png) ログ名の横に表示され、ログに関連付けられているエクスポートを編集します。
+   * ログ名の横にある **書き出しを編集アイコン**![ 情報アイコン ](assets/edit-export-icon.png) を選択して、ログに関連付けられている書き出しを編集します。
 
-     エクスポートの編集について詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md).
+     書き出しの編集について詳しくは、[Customer Journey Analyticsレポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
-## ログのフィルターと検索
+## ログのフィルタリングと検索
 
-必要な情報を見つけるには、ログのリストをフィルターするか、ログを検索します。
+必要な情報を見つけるには、ログのリストをフィルタリングするか、ログを検索します。
 
-### ログのリストをフィルター
+### ログのリストのフィルタリング
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. を選択します。 **フィルター** アイコン。
+1. **フィルター** アイコンを選択します。
 
-   ![[ アカウントタイプ別のフィルタ ] リストを表示する [ エクスポート ] ウィンドウ](assets/export-log-filters.png)
+   ![ アカウントタイプ別のフィルターリストを表示する書き出しウィンドウ ](assets/export-log-filters.png)
 
    次の条件でフィルタリングできます。
 
    | フィルター | 説明 |
    |---------|----------|
    | [!UICONTROL **書き出し ID**] | 表示するエクスポートログのエクスポート ID を指定します。 |
-   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスは開始されましたが、まだ完了していません。<p>ステータスが「保留」のエクスポートを再実行すると、エクスポート処理が遅れます。</p></li><li>[!UICONTROL **完了**]：エクスポートの特定のインスタンスの処理が終了し、エクスポートアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、エクスポートが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗に関する詳細が表示されます。<p>エラーの考えられる理由について詳しくは、 [失敗した書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google クラウドプラットフォーム**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスが開始されましたが、まだ完了していません。<p>ステータスが保留中のエクスポートを再実行すると、エクスポートプロセスが遅延します。</p></li><li>[!UICONTROL **完了**]：書き出しの特定のインスタンスの処理が完了し、書き出しアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、書き出しが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗の詳細が表示されます。<p>失敗の考えられる理由について詳しくは、[ 失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md) を参照してください。</p> |
 
    {style="table-layout:auto"}
 
 ### ログを検索
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. 検索フィールドに、検索するログに関連する情報を入力します。 テーブル内の任意の列からデータを検索できます。
+1. 検索フィールドに、検索するログに関連付けられている情報の入力を開始します。 テーブルで使用可能な任意の列からデータを検索できます。
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -82,59 +82,59 @@ This option is not available when selecting multiple logs. -->
 
 1. Select [!UICONTROL **Retry**]. -->
 
-## エクスポートの編集
+## 書き出しの編集
 
-特定のログに関連付けられたエクスポートを編集できます。
+特定のログに関連付けられている書き出しを編集できます。
 
-複数のログを選択する場合は、このオプションを使用できません。
+このオプションは、複数のログを選択している場合は使用できません。
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. 編集するエクスポートに関連付けられているログを探します。
+1. 編集するエクスポートに関連付けられているログを見つけます。
 
-1. を選択します。 **エクスポートを編集** アイコン ![ログを書き出しアイコン](assets/export-icon.png) ログ名の横に表示されます。
+1. ログ名の横にある **エクスポートを編集** アイコン ![ エクスポートログアイコン ](assets/export-icon.png) を選択します。
 
    または
 
-   ログの横にあるチェックボックスを選択し、「 」を選択します。 [!UICONTROL **エクスポートを編集**].
+   ログの横にあるチェックボックスをオンにし、「[!UICONTROL **書き出しを編集**]」を選択します。
 
-## 列の設定
+## 列を設定
 
-列を追加または削除するには、 [!UICONTROL ログ] タブをクリックして、表示する情報を設定します。
+「[!UICONTROL  ログ ]」タブの列を追加または削除して、表示する情報を設定できます。
 
-列ヘッダーを選択して、その列でログを並べ替えます。 デフォルトでは、ログはエクスポートが開始された日時で並べ替えられます。
+列ヘッダーを選択して、その列でログを並べ替えます。 デフォルトでは、ログは書き出しが開始された日時で並べ替えられます。
 
-上の列を設定するには [!UICONTROL ログ] タブ：
+「[!UICONTROL  ログ ] タブの列を設定するには：
 
-1. 「Customer Journey Analytics」で、「 [!UICONTROL **コンポーネント**] > [!UICONTROL **エクスポート**].
+1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. を選択します。 [!UICONTROL **ログ**] タブをクリックします。
+1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. を選択します。 **テーブルをカスタマイズ** アイコン ![テーブルをカスタマイズ](assets/customize-table-icon.png) の右上に [!UICONTROL ログ] ページに貼り付けます。
+1. **ログ** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」アイコン [!UICONTROL  テーブルをカスタマイズ ] を選択します。
 
    以下の列を表示できます。
 
    | 使用可能な列 | 説明 |
    |---------|----------|
-   | 書き出し名 | エクスポートの名前。 ユーザーは、作成時にエクスポートに名前を付けます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
-   | 書き出し ID | エクスポートの作成時に、エクスポートに自動的に割り当てられる ID です。 <!-- True? --> |
-   | インスタンス ID | Customer Journey Analyticsインスタンスの ID。 <!-- True? --> |
-   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 ユーザーは、エクスポートの作成時にデータビューを選択できます。詳しくは、 [Customer Journey Analyticsレポートをクラウドにエクスポート](/help/analysis-workspace/export/export-cloud.md). |
+   | 書き出し名 | エクスポートの名前。 [Customer Journey Analyticsレポートをクラウドに書き出す ](/help/analysis-workspace/export/export-cloud.md) で説明されているように、ユーザーは作成時に名前を付けます。 |
+   | 書き出し ID | エクスポートの作成時にエクスポートに自動的に割り当てられた ID。<!-- True? --> |
+   | インスタンス ID | Customer Journey Analyticsインスタンスの ID。<!-- True? --> |
+   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 [ クラウドへのCustomer Journey Analyticsレポートの書き出し ](/help/analysis-workspace/export/export-cloud.md) で説明しているように、書き出しを作成する際にデータビューを選択できます。 |
    | ファイル数 | エクスポートに含まれるファイルの数。 |
-   | サイズ | 書き出しのサイズ。<p>ファイルサイズは 1024 の底を使用して計算され、KIB および MIB と表される場合があります。 クラウドプロバイダーが基数 1,000 のサイズを計算した場合、クラウドプロバイダーに表示されるサイズがここに表示されるサイズと少し異なる場合があります。</p> |
+   | サイズ | 書き出しのサイズ。<p>ファイルサイズは 1024 を基準に計算されます。これは KIB および MIB として表されることがあります。 クラウドプロバイダーがベース 1000 を使用してサイズを計算すると、クラウドプロバイダーに表示されるサイズが、ここに表示されるサイズとは少し異なる場合があります。</p> |
    | 場所 | データが書き出されたアカウント上の場所。 |
    | アカウント | データが書き出されたアカウント。 |
-   | ステータス | エクスポートのステータス。 利用可能なステータスは次のとおりです。 [!UICONTROL 保留中], [!UICONTROL 配信済み]、および [!UICONTROL 失敗]. |
-   | 配信日 | エクスポートがおこなわれた日付。 |
-   | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 利用可能なアカウントのタイプは次のとおりです [!UICONTROL Amazon S3 ロール ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake]、および [!UICONTROL Adobe Experience Platform]. |
-   | 行数 | エクスポートするテーブルに含まれる行の数。 |
+   | ステータス | エクスポートのステータス。 使用可能なステータスは、[!UICONTROL  保留中 ]、[!UICONTROL  配信済み ]、[!UICONTROL  失敗 ] です。 |
+   | 配信日 | エクスポートが行われた日付。 |
+   | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 使用可能なアカウントタイプは、[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]、[!UICONTROL Adobe Experience Platform] です。 |
+   | 行数 | エクスポートされたテーブルに含まれる行数。 |
 
    {style="table-layout:auto"}
 
-1. 表示する列が選択されていることを確認します。 選択した列は、 [!UICONTROL ログ] ページを開き、関連情報を表示します。
+1. 表示する列が選択されていることを確認します。 選択した列は [!UICONTROL  ログ ] ページに表示され、関連情報が表示されます。
 
 ## 監査ログの表示
 
-また、 [Customer Journey Analytics監査ログ](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+完全テーブルの書き出しは、[Customer Journey Analytics監査ログ ](/help/privacy/audit-log.md) でも追跡されます。<!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

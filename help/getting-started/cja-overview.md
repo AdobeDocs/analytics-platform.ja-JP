@@ -8,7 +8,7 @@ role: User, Admin
 source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Customer Journey Analytics の使用を開始する前に、次の前提条件�
 
 ## アクセス制御
 
-参照： [アクセス制御](/help/technotes/access-control.md).
+詳しくは、[アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 ## 用語の更新
 

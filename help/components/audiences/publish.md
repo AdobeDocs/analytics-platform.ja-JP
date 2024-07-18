@@ -13,9 +13,9 @@ ht-degree: 57%
 
 # オーディエンスの作成と公開
 
-このトピックでは、にCustomer Journey Analyticsして特定されたオーディエンスを作成および公開する方法について説明します [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) Adobe Experience Platformで顧客のターゲティングとパーソナライゼーションを行います。
+このトピックでは、Customer Journey Analyticsで特定されたオーディエンスをAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) に作成して公開し、顧客のターゲティングやパーソナライズ機能を実現する方法について説明します。
 
-これを読む [の概要](/help/components/audiences/audiences-overview.md) Customer Journey Analyticsオーディエンスの概念を理解する。
+この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analyticsオーディエンスの概念を理解してください。
 
 ## オーディエンスを作成 {#create}
 
@@ -33,7 +33,7 @@ ht-degree: 57%
 
    オーディエンスを公開する前に、これらの設定を行います。
 
-   ![次の節で説明するオーディエンスの署名設定のスクリーンショット。](assets/create-audience.png)
+   ![ 次の節で説明するオーディエンスの署名設定のスクリーンショット ](assets/create-audience.png)。
 
    | 設定 | 説明 |
    | --- | --- |
@@ -53,7 +53,7 @@ ht-degree: 57%
 
    オーディエンスのプレビューが右側のパネルに表示されます。作成したオーディエンスの要約分析が可能になります。
 
-   ![オーディエンスの要約分析を示すデータプレビューのスクリーンショット。](assets/data-preview.png)
+   ![ オーディエンスの要約分析を示すデータプレビューのスクリーンショット。](assets/data-preview.png)
 
    | プレビュー設定 | 説明 |
    | --- | --- |
@@ -86,14 +86,14 @@ ht-degree: 57%
 
 オーディエンスの公開前、公開中および公開後の複数の時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
 
-![オーディエンス公開の待ち時間（この節を参照）。](/help/components/audiences/assets/latency-diagram.png)
+![ この節で説明しているように、オーディエンスの公開に待ち時間が発生します。](/help/components/audiences/assets/latency-diagram.png)
 
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
 | 表示しない | Adobe Analyticsから Analytics ソースコネクタ（A4T） | 最大 30 分 |
 | 1 | （Analytics ソースコネクタまたはその他のソースから）データレイクへのデータ取り込み | 最大 90 分 |
 | 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
-| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。<p>**注意**：オーディエンスは、1～2 分以内にExperience Platformで作成または定義されます。 ただし、オーディエンスが、一致した条件に基づいて ID の受信を開始し、アクティベーションの準備が整うまでに、約 60 分かかります。 | 約 60 分 |
+| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。<p>**メモ**：オーディエンスは、1 ～ 2 分以内にExperience Platformで作成または定義されます。 ただし、オーディエンスが、一致した条件に基づいて ID の受信を開始し、アクティベーションの準備が整うまでに、約 60 分かかります。 | 約 60 分 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 | 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
@@ -101,27 +101,27 @@ ht-degree: 57%
 
 ## Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。 Customer Journey Analyticsは、として選択された項目に応じて、プライマリ ID を設定したExperience Platformにオーディエンスを送信します。 [!UICONTROL 人物 ID] 接続が設定された時点。
+Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送ります。
 
-次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。ここで、例： <user@adobe.com> すべてのデバイスおよびチャネルにわたってターゲット設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。現在は、例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
-Platform でCustomer Journey Analyticsオーディエンスを表示するには、次の URL に移動します。 **[!UICONTROL セグメント]** > **[!UICONTROL セグメントの作成]** > **[!UICONTROL オーディエンス]** タブ > **[!UICONTROL CJA オーディエンス]**.
+Platform でCustomer Journey Analyticsオーディエンスを表示するには、**[!UICONTROL セグメント]**/**[!UICONTROL セグメントを作成]**/**[!UICONTROL オーディエンス]** タブ/**[!UICONTROL CJA オーディエンス]** に移動します。
 
 Customer Journey AnalyticsオーディエンスをAdobe Experience Platform セグメントのセグメント定義にドラッグできます。
 
-![左側のペインのセグメントとメインパネルの CJA オーディエンスがハイライト表示されたAdobe Experience Platform UI。](assets/audiences-aep.png)
+![ 左側のパネルでセグメントをハイライト表示したAdobe Experience Platform UI と、メインパネルで CJA オーディエンス。](assets/audiences-aep.png)
 
 ## よくある質問（FAQ） {#faq}
 
 オーディエンスの投稿に関するよくある質問です。
 
-+++**Customer Journey Analyticsでユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか。**
++++**Customer Journey Analyticsでユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか？**
 
 この場合、exit イベントがCustomer Journey AnalyticsからExperience Platformに送信されます。
 
 +++
 
-+++**Customer Journey Analyticsでオーディエンスを削除するとどうなりますか。**
++++**Customer Journey Analyticsでオーディエンスを削除するとどうなりますか？**
 
 Customer Journey Analyticsオーディエンスが削除されると、そのオーディエンスはExperience PlatformUI に表示されなくなります。 ただし、そのオーディエンスに関連付けられたプロファイルは、実際には Platform では削除されません。
 
@@ -141,7 +141,7 @@ Customer Journey Analyticsはパイプラインを介してデータを RTCP に
 
 +++**Customer Journey Analyticsはどのような ID を送信しますか？**
 
-で指定された ID/名前空間ペアのいずれかです [接続設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection). 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
+[ 接続設定 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection) で指定された ID/名前空間ペアのいずれかです。 特に、「ユーザー ID」として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
 
 +++
 
@@ -151,19 +151,19 @@ Customer Journey Analyticsはパイプラインを介してデータを RTCP に
 
 +++
 
-+++**RTCP はCustomer Journey Analyticsメッセージも処理しますか。 Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか。**
++++**RTCP はCustomer Journey Analyticsメッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
 いいえ。「ユーザー」ごとに送信される ID は 1 つだけなので、RTCP はグラフエッジを使用しません。
 
 +++
 
-+++**毎日、毎週、毎月の更新は何時に行われますか？ 毎週更新を行う曜日を指定してください。**
++++**毎日、毎週、毎月の更新は何時に行われますか？ 毎週更新は何曜日に実行されますか？**
 
 更新のタイミングは、元のオーディエンスが公開された日時と、その日時（および曜日または月）に固定されます。
 
 +++
 
-+++**ユーザーが日単位、週単位、月単位で更新時間を設定できますか。**
++++**日別、週別、月別の更新時間をユーザーが設定できますか？**
 
 いいえ。ユーザーが設定することはできません。
 

@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platform Mobile SDK を介したデータの取り込み
-description: Adobe Experience Platform Mobile SDK と Edge Network を使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
+description: Adobe Experience Platform Mobile SDK とEdge Networkを使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
@@ -14,7 +14,7 @@ ht-degree: 60%
 
 # Adobe Experience Platform Mobile SDK を介したデータの取り込み
 
-このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK と Edge Network を使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
+このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK とEdge Networkを使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 
 これには、次の手順を実行する必要があります。
 
@@ -22,7 +22,7 @@ ht-degree: 60%
 
 - **データストリームの設定**：収集したデータを Adobe Experience Platform で設定したデータセットにルーティングするように Adobe Experience Platform Edge Network を設定します。
 
-- **タグを使用** モバイルアプリケーション内のデータに対してルールとデータ要素を簡単に設定できます。 次に、データが Adobe Experience Platform Edge Network 上に設定されたデータストリームに送信されることを確認します。
+- **タグを使用**：モバイルアプリケーションのデータに対してルールやデータ要素を簡単に設定できます。 次に、データが Adobe Experience Platform Edge Network 上に設定されたデータストリームに送信されることを確認します。
 
 - **デプロイと検証**&#x200B;を行います。タグの開発を繰り返し実行し、すべての検証が完了したら、実稼動環境で公開できる環境を構築します。
 
@@ -54,23 +54,24 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-1. を選択 **[!UICONTROL スキーマを作成]**..
+1. **[!UICONTROL スキーマを作成]** を選択します。
+.
 1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. を選択 **[!UICONTROL エクスペリエンスイベント]**.
+   1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
 
       ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、 _動作_ （シーン名や、買い物かごに追加するプッシュボタンなど）のプロファイル。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマは、プロファイルの _動作_ をモデル化するために使用します（シーン名、買い物かごに追加するプッシュボタンなど）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. が含まれる [!UICONTROL 名前を付けて手順を確認] の [!UICONTROL スキーマを作成] ウィザード：
+1. [!UICONTROL  スキーマを作成 ] ウィザードの [!UICONTROL  名前とレビューの手順 ] で、次の操作を行います。
 
-   1. を入力 **[!UICONTROL スキーマの表示名]** スキーマの場合および（オプション） a **[!UICONTROL 説明]**.
+   1. スキーマの **[!UICONTROL スキーマ表示名]** と（オプション） **[!UICONTROL 説明]** を入力します。
 
       ![スキーマに名前を付ける](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -84,13 +85,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. が含まれる [!UICONTROL フィールドグループの追加] ダイアログで、 **[!UICONTROL AEP Mobile SDK ExperienceEvent]** リストのフィールドグループ。
+   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、リストから **[!UICONTROL AEP Mobile SDK ExperienceEvent]** フィールドグループを選択します。
 
-      ![AEP Mobile ライフサイクル詳細フィールドグループ](./assets/select-aepmobilesdk-experienceevent.png)
+      ![AEP Mobile ライフサイクル詳細フィールドグループ ](./assets/select-aepmobilesdk-experienceevent.png)
 
       「プレビュー」ボタンを選択すると、このフィールドグループに属するフィールド（`application > name` など）のプレビューを表示できます。
 
-      ![AEP Mobile ライフサイクルの詳細フィールドグループのプレビュー](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![AEP Mobile ライフサイクルの詳細フィールドグループのプレビュー ](./assets/aepmobilesdk-experienceevent-preview.png)
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
@@ -100,11 +101,11 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
-1. が含まれる [!UICONTROL フィールドプロパティ] パネル、を入力 `identification` as the [!UICONTROL フィールド名], **[!UICONTROL 識別]** as the [!UICONTROL 表示名]を選択 **[!UICONTROL オブジェクト]** as the [!UICONTROL タイプ] を選択して、 **[!UICONTROL ExperienceEvent Core v2.1]** as the [!UICONTROL フィールドグループ].
+1. 「[!UICONTROL  フィールドプロパティ ]」パネルで、[!UICONTROL  フィールド名 ] に `identification` と入力し、**[!UICONTROL 表示名 ] に [!UICONTROL ID]** と入力し、[!UICONTROL  タイプ ] で **[!UICONTROL オブジェクト]** を選択し、[!UICONTROL  フィールドグループ ] で **[!UICONTROL ExperienceEvent Core v2.1]** を選択します。
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい id フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （like `ecid`, `crmId`、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [ 新しいフィールドグループを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) して [ 新しい ID フィールドを追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （`ecid`、`crmId` など、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-mobile.png)
 
@@ -246,7 +247,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 2. 「**[!UICONTROL 新しいプロパティ]**」を選択します。
 
-   タグに名前を付け、を選択します **[!UICONTROL モバイル]**. 「**[!UICONTROL 保存]**」を選択して続行します。
+   タグに名前を付け、「**[!UICONTROL モバイル]**」を選択します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
    ![ プロパティの作成](./assets/create-mobile-property.png)
 
@@ -254,30 +255,30 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトを追跡して Adobe Experience Platform にデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
-設定するには、のリストから新しく作成したタグを選択します [!UICONTROL タグプロパティ].
+を設定するには、[!UICONTROL  タグのプロパティ ] のリストから、新しく作成したタグを選択します。
 
 
 #### **拡張機能**
 
-Adobe Platform Edge Network 拡張機能をタグに追加して、（データストリーム経由で）Adobe Experience Platformにデータを送信できるようにします。
+Adobe Platform Edge Network拡張機能をタグに追加して、（データストリーム経由で）Adobe Experience Platformにデータを送信できるようにします。
 
 Adobe Experience Platform Mobile SDK 拡張機能を作成および設定するには：
 
-1. を選択 **[!UICONTROL 拡張機能]** 左パネルで。 Mobile Core 拡張機能とプロファイル拡張機能は既に使用可能です。
+1. 左パネルで **[!UICONTROL 拡張機能]** を選択します。 Mobile Core 拡張機能とプロファイル拡張機能は既に使用可能です。
 
 1. 上部のバーで「**[!UICONTROL カタログ]**」をクリックします。
 
-1. を検索またはスクロールして **[!UICONTROL Adobe Experience Platform Edge Network]** 拡張機能と選択 **[!UICONTROL インストール]** 右側のパネルでインストールします。
+1. **[!UICONTROL Adobe Experience Platform Edge Network]** 拡張機能を検索またはスクロールし、右側のパネルで「**[!UICONTROL インストール]**」を選択してインストールします。
 
 1. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
-   ![AEP Mobile SDK 拡張機能の設定](./assets/aepmobilesdk-extension-datastream.png)
+   ![AEP Mobile SDK 拡張機能の設定 ](./assets/aepmobilesdk-extension-datastream.png)
 
-1. を入力 **[!UICONTROL Edge ネットワークドメイン]** その下 [!UICONTROL ドメイン設定]. 通常はを使用します `<organizationName>.data.adobedc.net`.
+1. [!UICONTROL Domain configuration] の下に **[!UICONTROL Edge Networkドメイン]** を入力します。 通常、`<organizationName>.data.adobedc.net` を使用します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-参照： [Adobe Experience Platform Edge Network 拡張機能の設定](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
+詳しくは [Adobe Experience Platform Edge Network拡張機能の設定 ](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
 
 また、カタログから次の追加拡張機能も設定する必要があります。
 
@@ -285,7 +286,7 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成および設定する�
 - AEP Assurance.
 - 同意。
 
-参照： [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) 拡張機能とその設定について詳しくは、Experience Platform のモバイルアプリのチュートリアルを参照してください。
+拡張機能とその設定について詳しくは、Experience Platform 用モバイルアプリチュートリアルの [ タグプロパティの設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) を参照してください。
 
 #### **データ要素**
 
@@ -303,9 +304,9 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成および設定する�
 
    - データ要素に名前を付けます（例：`Carrier Name`）。
 
-   - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
+   - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-   - を選択 **[!UICONTROL 通信事業者名]** から [!UICONTROL データ要素タイプ] リスト。
+   - **[!UICONTROL データ要素タイプ]** リストから [!UICONTROL  通信事業者名 ] を選択します。
 
 
      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-mobile.png)
@@ -317,7 +318,7 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成および設定する�
 
 #### **ルール**
 
-Adobe Experience Platform のタグは、ルールベースのシステムに従います。ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、XDM オブジェクトなどのデータを、Adobe Experience Platform Edge Network 拡張機能を使用してAdobe Experience Platformに送信できます。
+Adobe Experience Platform のタグは、ルールベースのシステムに従います。ユーザーの操作と関する各種データを参照します。ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。ルールを使用し、XDM オブジェクトなどのデータを、Adobe Experience Platform Edge Network拡張機能を使用してAdobe Experience Platformに送信できます。
 
 例えば、モバイルアプリが使用された場合（フォアグラウンドで）や、使用されなかった（バックグラウンドにプッシュされた）場合にイベントデータを送信するとします。
 
@@ -335,25 +336,25 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - [!UICONTROL イベント設定]ダイアログで、次の手順を実行します。
 
-      - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
+      - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - を選択 **[!UICONTROL 前景]** から [!UICONTROL イベントタイプ] リスト。
-
-      - 「**[!UICONTROL 変更を保持]**」を選択します。
-
-   - クリック ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 次の [!UICONTROL Mobile Core – 前景].
-
-      - を選択 **[!UICONTROL Mobile コア]** から [!UICONTROL 拡張機能] リスト。
-
-      - を選択 **[!UICONTROL 背景・経緯]** から [!UICONTROL イベントタイプ] リスト。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  フォアグラウンド ] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - クリック ![プラス](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下に追加 [!UICONTROL アクション]. [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+   - [!UICONTROL  モバイルコア – 前景 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「![ プラス ]」をクリックします。
 
-      - を選択 **[!UICONTROL Adobe Experience Platform Edge Network]** から [!UICONTROL 拡張機能] リスト。
+      - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - を選択 **[!UICONTROL Edge Network にイベントを転送]** から [!UICONTROL アクションタイプ] リスト。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  背景 ] を選択します。
+
+      - 「**[!UICONTROL 変更を保持]**」を選択します。
+
+   - [!UICONTROL ACTIONS] の下の「![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加」をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+
+      - 「拡張機能 ]**」リストから [!UICONTROL 0}Adobe Experience PlatformEdge Network] を選択します。**[!UICONTROL 
+
+      - **[!UICONTROL アクションタイプ]** リストから [!UICONTROL Edge Networkにイベントを転送 ] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -395,7 +396,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
 4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
 
-Adobe Experience Platform タグは、Adobe Experience Platform Edge Network のデプロイメントに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。
+Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkのデプロイメントに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。
 
 詳しくは、[公開の概要](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)を参照してください。
 
@@ -408,9 +409,9 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Network の
 
 1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
 
-2. 環境のリストから、正しいインストールを選択します ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタン。
+2. 環境のリストから、正しいインストール ![ ボックス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
 
-   が含まれる [!UICONTROL モバイルのインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS], [!UICONTROL Android]）に設定します。 次に、コピーを使用します ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) モバイルアプリの設定と初期化に使用する、関連する各コードスニペットの横にあるボタン：
+   [!UICONTROL  モバイルインストール手順 ] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連コードスニペットの横にある「コピー ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
 
    ![環境](./assets/environment-mobile.png)
 
@@ -426,13 +427,13 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Network の
 
 実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と実稼動環境にデプロイします。
 
-参照： [モバイルアプリでのAdobe Experience Cloudの実装のチュートリアル](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
+詳しくは、[ モバイルアプリでのAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
 
 ## 接続の設定
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformとワークスペースのデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience PlatformとWorkspaceのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -535,7 +536,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、まず、ディメンションと指標をそのレポートにドラッグ&amp;ドロップします [!UICONTROL フリーフォームテーブル] が含まれる [!UICONTROL パネル] . 例えば、次のようにドラッグします `Events` 指標および `Push Title` ディメンションとして、以下で分類 `Event Type` モバイルアプリのプッシュ通知の概要と発生状況を確認します。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Events` を指標、`Push Title` をディメンションにドラッグし、`Event Type` ごとに分類して、モバイルアプリのプッシュ通知の概要と通知に何が起こったかを取得します。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5-mobile.png)
 
@@ -543,4 +544,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。Adobe Experience Platform でどのデータ（スキーマ）を収集するか、どこにそのデータセットを保存するかを定義することから開始して、データセットにデータを転送できるよう、Edge ネットワークでデータストリームを設定しました。次に、拡張機能（Adobe Experience Platform Edge Network など）、データ要素、ルールを含むタグを定義してデプロイし、モバイルアプリからデータを取得してデータストリームに送信します。 モバイルアプリのプッシュ通知トラッキングデータやその他のデータを使用するため、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、モバイルアプリデータを視覚化および分析します。
+>すべての手順が完了しました。Adobe Experience Platform でどのデータ（スキーマ）を収集するか、どこにそのデータセットを保存するかを定義することから開始して、データセットにデータを転送できるよう、Edge ネットワークでデータストリームを設定しました。次に、拡張機能（Adobe Experience Platform要素など）、データEdge Network、ルールを含むタグを定義してデプロイし、モバイルアプリからデータを取得してデータストリームに送信します。 モバイルアプリのプッシュ通知トラッキングデータやその他のデータを使用するため、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、モバイルアプリデータを視覚化および分析します。

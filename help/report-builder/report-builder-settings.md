@@ -1,5 +1,5 @@
 ---
-title: Customer Journey AnalyticsでのReport Builderの設定方法
+title: Customer Journey AnalyticsでReport Builderを設定する方法
 description: オフラインモード、言語、基準日、トラブルシューティングの設定方法について説明します。
 role: Admin
 feature: Report Builder
@@ -25,7 +25,7 @@ Report Builder 設定を変更するには
 
 1. 「**適用**」をクリックします。
 
-   ![Report Builderと適用ボタンを示すキャンセル日付範囲ペイン。](./assets/image38.png)
+   ![ 「キャンセルして適用」ボタンを表示するReport Builderの日付範囲のペイン。](./assets/image38.png)
 
 ## オフラインモード
 
@@ -51,7 +51,7 @@ Report Builder UI で使用する言語を選択するには
 
 1. 「**言語**」ドロップダウンメニューから言語を選択します。
 
-   ![Report Builderを選択した言語リストを表示する言語日付範囲ペイン。](./assets/image39.png)
+   ![ 英語が選択されたReport Builderの一覧を表示する言語の日付範囲ウィンドウ。](./assets/image39.png)
 
 1. 「**適用**」をクリックします。
 

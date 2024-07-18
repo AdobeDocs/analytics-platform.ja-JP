@@ -1,5 +1,5 @@
 ---
-description: Web サイトやアプリの顧客パスを示すフロー機能について説明します。
+description: Web サイトやアプリを通じた顧客パスを表示するフロー機能について説明します。
 title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 86%
 
 ## フロービジュアライゼーションの設定
 
-フロービジュアライゼーションの設定方法について詳しくは、 [フロービジュアライゼーションの設定](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+フロービジュアライゼーションの設定方法については、[フロービジュアライゼーションの設定](/help/analysis-workspace/visualizations/c-flow/create-flow.md)を参照してください。
 
 ## フロー図が含まれたプロジェクト .CSV ファイルの書き出し {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

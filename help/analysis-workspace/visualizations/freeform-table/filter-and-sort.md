@@ -25,7 +25,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 >[!NOTE]
 >
-> 動的ディメンション項目のみを、この節で説明するようにフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、を参照してください [フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> 動的ディメンション項目のみを、この節で説明するようにフィルタリングできます。 静的ディメンション項目はフィルタリングできません。 詳しくは、[ フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) を参照してください。
 
 ## フリーフォームテーブルの行のフィルタリング
 
@@ -35,7 +35,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 - テーブルフィルター
 - セグメント化
 
-各方法の影響を必ずお読みください [フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+各方法が与える影響 [ フリーフォームテーブルの合計 ](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) を必ずお読みください。
 
 ### テーブルから特定の行をすばやく除外
 
@@ -43,7 +43,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 >[!NOTE]
 >
->このセクションで説明するように行を除外すると、 [!UICONTROL **常に項目を除外**] ルールは、詳細フィルターダイアログで自動的に適用されます。 （「フィルター」アイコンを選択すると、適用されたルールを表示できます [**[!UICONTROL 詳細を表示]**](#apply-a-simple-or-advanced-filter-to-a-table).）
+>この節で説明するように行を除外する場合、詳細フィルターダイアログでは [!UICONTROL **常に項目を除外**] ルールが自動的に適用されます。 （適用されたルールを表示するには、フィルターアイコン、「詳細を表示 [**[!UICONTROL  の順に選択します ]**](#apply-a-simple-or-advanced-filter-to-a-table)。
 
 フリーフォームテーブルから特定の行をすばやく除外するには、次の手順に従います。
 
@@ -65,17 +65,17 @@ Note: this option does not seem to work. AN-338422
 
 フリーフォームテーブルでデータをフィルタリングするには：
 
-1. フィルター処理するデータを含んだ列の上にマウスポインターを置きます。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. フィルター処理するデータを含んだ列の上にマウスポインターを置きます。<!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. **フィルター**&#x200B;アイコンが表示されたら選択します。
 
-   ![フィルターアイコンがハイライト表示されたフリーフォームテーブル。](assets/table-filter-icon.png)
+   ![ フィルターアイコンがハイライト表示されたフリーフォームテーブル。](assets/table-filter-icon.png)
 
    次のオプションがあります。
 
    | オプション | 関数 |
    |---------|----------|
-   | [!UICONTROL **単語または語句を検索**] | フィルターに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。 |
+   | [!UICONTROL **検索語句**] | フィルターに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。 |
    | [!UICONTROL **未指定 (なし) を含む**] | テーブルのどのディメンションにも該当しないデータをテーブルに表示するには、このオプションを選択します。 <!--what is this?--> |
 
 1. （オプション）異なる条件または複数の条件でフィルタリングする場合は、「[!UICONTROL **詳細を表示**]」を選択します。
@@ -95,7 +95,7 @@ Note: this option does not seem to work. AN-338422
 
 ### フィルター
 
-のを表示 [フィルタリングドキュメント](/help/components/filters/filters-overview.md) を参照してください。
+詳しくは、[ フィルタリングドキュメント ](/help/components/filters/filters-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 
@@ -110,6 +110,6 @@ Note: this option does not seem to work. AN-338422
    - 下向き矢印は降順、上向き矢印（デフォルト）は昇順の並べ替えを示します。
    - ディメンションは、アルファベット順または数字順に並べ替えることができます。例えば、ワークフローに番号付きの手順があり、その手順番号で並べ替えたい場合があります。日付関連のディメンションを日付順に並べ替えることができます。または、データソースをアルファベット順に並べ替えることもできます（下図を参照）。
 
-   ![並べ替えアイコンをハイライト表示したデータソースビュー。](assets/sort-dimensions.png)
+   ![ 並べ替えアイコンをハイライト表示したデータソースビュー。](assets/sort-dimensions.png)
 
 

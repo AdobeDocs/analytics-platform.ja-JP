@@ -10,7 +10,7 @@ role: User
 source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 ## 接続
 
-接続を定義して、関連するすべての B2B データセットをExperience Platformから含めます。 一般的な B2B ユーザーベースのレポートシナリオに必要な、すべての関連するルックアップデータセットを必ず含めて変換します。 参照： [B2B ルックアップデータセットの変換](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
+接続を定義して、関連するすべての B2B データセットをExperience Platformから含めます。 一般的な B2B ユーザーベースのレポートシナリオに必要な、すべての関連するルックアップデータセットを必ず含めて変換します。 詳しくは、[B2B ルックアップデータセットの変換 ](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
 
 接続に追加することを検討できるデータセット：
 
@@ -40,13 +40,13 @@ ht-degree: 19%
 -->
 
 
-ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 スキーマを参照： [Real-time Customer Data Platform B2B エディション](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) および [Real-time Customer Data Platform B2B Edition の 2 つのスキーマ間の多対 1 の関係を定義する](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) を参照してください。
+ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 詳しくは、[Real-time Customer Data Platform B2B エディションのスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) および [Real-time Customer Data Platform B2B エディションの 2 つのスキーマ間の多対 1 の関係の定義 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) を参照してください。
 
-![B2B スキーマ間の関係](assets/classes.png)
+![B2B スキーマ間の関係 ](assets/classes.png)
 
-接続に追加する各ルックアップデータセットに対して、を使用してイベントデータセットへの関係を明示的に定義する必要があります **[!UICONTROL キー]** および **[!UICONTROL 一致するキー]** が含まれる **[!UICONTROL データセットを編集]** ダイアログ。 次に例を示します。
+接続に追加する各ルックアップデータセットについて、**[!UICONTROL データセットを編集]** ダイアログで **[!UICONTROL キー]** と **[!UICONTROL 一致するキー]** を使用して、イベントデータセットへの関係を明示的に定義する必要があります。 次に例を示します。
 
-![キー – 一致するキー](assets/key-matchingkey.png)
+![ キー – 一致するキー ](assets/key-matchingkey.png)
 
 人物スキーマを他の関連スキーマに接続するために、4 つのスキーマ（アカウント、商談、キャンペーンおよびマーケティングリスト）が明示的に使用されます。 これらのスキーマは、次のスキーマクラスに基づいています。
 
@@ -55,9 +55,9 @@ ht-degree: 19%
 * XDM Business Marketing List Members
 * XDM Business Campaign Members
 
-ルックアップデータセットごとに、このようなスキーマクラスに基づくスキーマの場合も有効にします **[!UICONTROL データセットを変換]** を使用して、ユーザーベースの検索のためにデータが確実に変換されるようにします。 参照： [B2B ルックアップ用のデータセットの変換](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
+ルックアップデータセットごとに、このようなスキーマクラスに基づくスキーマの場合、**[!UICONTROL データセットを変換]** を有効にして、ユーザーベースのルックアップ用にデータが確実に変換されるようにすることもできます。 詳しくは、[B2B ルックアップ用にデータセットを変換](/help/connections/transform-datasets-b2b-lookups.md)を参照してください。
 
-次の表に、 [!UICONTROL 人物 ID], [!UICONTROL キー]、および [!UICONTROL 一致するキー] 各データセットの値。
+次の表に、各データセットの [!UICONTROL  ユーザー ID]、[!UICONTROL  キー ] および [!UICONTROL  一致するキー ] 値の概要例を示します。
 
 
 | データセット | ユーザー ID | キー | 一致するキー（イベントデータセット内） |
@@ -71,12 +71,12 @@ ht-degree: 19%
 
 {style="table-layout:auto"}
 
-参照： [データセットの追加と設定](../../connections/create-connection.md) データセットの設定を構成する方法について詳しくは、こちらを参照してください。
+データセットの設定を構成する方法について詳しくは、[ データセットの追加と構成 ](../../connections/create-connection.md) を参照してください。
 
 
 ## データビュー
 
-Workspace プロジェクトを作成する際に関連する B2B ディメンションと指標にアクセスできるようにするには、それに応じてデータビューを定義する必要があります。
+Workspace プロジェクトを作成する際に、関連する B2B ディメンションと指標にアクセスできるようにするには、それに応じてデータビューを定義する必要があります。
 
 以下のコンポーネントをディメンションとしてデータビューに追加して、B2B データに基づいてユーザーベースのレベルでレポートできるようにします。 分かりやすくするために、コンポーネント名が変更されています。
 
@@ -298,11 +298,11 @@ No metric components are defined as part of this dataset.
 
 ## Workspace
 
-コンポーネントをデータビューで適切に定義すれば、ワークスペースプロジェクトで特定の B2B レポートおよびビジュアライゼーションを作成できるようになります。
+コンポーネントをデータビューで適切に定義すれば、Workspace プロジェクトで特定の B2B レポートおよびビジュアライゼーションを作成できるようになります。
 
 以下は、上記の接続とデータビューに依存するプロジェクトの例です。
 
-![サンプルプロジェクト](assets/sample-project.png)
+![ サンプルプロジェクト ](assets/sample-project.png)
 
 <!-- See the descriptions for each visualization for more details.
 

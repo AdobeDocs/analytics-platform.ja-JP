@@ -23,13 +23,13 @@ ht-degree: 80%
 1. **[!UICONTROL ヒストグラム]**&#x200B;をパネルにドラッグします。
 1. 指標を選択してヒストグラムビジュアライゼーションにドラッグし、「**[!UICONTROL ビルド]**」をクリックします。
 
-![「以下に指標をドロップ」フィールドを示す空のヒストグラムパネル。](assets/histogram.png)
+![ 「指標を下にドロップ」フィールドを表示する、空のヒストグラムパネル。](assets/histogram.png)
 
 >[!NOTE]
 >
 >ヒストグラムは、計算指標ではなく、標準指標のみをサポートします。
 
-ここでは、ユニーク訪問者数ごとにページビュー数指標を使用しました。最初の（左）グループは個別ユーザーあたり 1 ページビューに対応し、2 番目のグループは 2 ページビューに対応します。
+ここでは、ユニーク訪問者数ごとにページビュー数指標を使用しました。最初（左）のバケットは一意のユーザーごとに 1 つのページビューに対応し、2 番目のバケットは 2 つのページビューに対応します。
 
 ![](assets/histogram2.png)
 
@@ -42,7 +42,7 @@ ht-degree: 80%
 | 開始グループ | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
 | 指標グループ | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
 | 指標グループのサイズ | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
-| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問あたりのページビュー数や、人物ごとのページビュー数、イベントごとのページビュー数などです。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
+| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問ごとのページビュー、ユーザーごとのページビュー、イベントごとのページビューなどです。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -55,14 +55,14 @@ ht-degree: 80%
 
 ヒストグラムのデータソースを表示または変更するには、ヒストグラムヘッダーの隣の点をクリックして、 **[!UICONTROL データソース設定]**／**[!UICONTROL データソースを表示]** に移動します。
 
-![「Show Data Source」と「Lock Selection」が選択された状態の「Data Source Settings」オプション](assets/manage-data-source.png)
+![ 「データSourceを表示」および「選択をロック」が選択された状態の「データSource設定」オプション ](assets/manage-data-source.png)
 
 テーブルに表示される事前定義済みフィルターは、内部フィルターで、フィルターセレクターには表示されません。フィルター名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックしてフィルターを公開します。
 
-![編集ウィンドウと「公開する」リンクを表示するセグメント。](assets/prebuilt_segments.png)
+![ 編集ウィンドウと「公開する」リンクを表示するセグメント。](assets/prebuilt_segments.png)
 
 データを分類するなど、フリーフォームデータテーブルおよびその他のビジュアライゼーションを管理するその他の方法については、[こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja)を参照してください。
 
 ## ブログ投稿
 
-次の情報に関するブログ投稿を参照してください： [ヒストグラムを使用した予期しないデータ値の特定](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
+[ ヒストグラムを使用して予期しないデータ値を識別する ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168) に関する情報については、このブログ投稿を参照してください。

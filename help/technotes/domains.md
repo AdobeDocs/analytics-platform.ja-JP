@@ -2,7 +2,8 @@
 title: Customer Journey Analyticsが使用するドメイン
 description: 組織のファイアウォールで、アドビから派生する IP アドレスがブロックされている場合は、このリストを使用してファイアウォール設定を更新してください。
 role: Admin
-source-git-commit: 43bda939a5464c5f65b0a050ccfdb5ba17f7d34b
+exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
+source-git-commit: 8ffbca5dd83987a90d7b744d236e0556314000dd
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 20%
@@ -27,10 +28,10 @@ ht-degree: 20%
 
 ## Adobe Experience Cloud ドメイン
 
-上記のドメインに加えて、Adobe Experience Cloudでは、データ収集とレポートの書き出しに複数のドメインを使用します。 参照： [Adobe Experience Cloudが使用するドメイン](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) （ドメインのこのリスト）。
+上記のドメインに加えて、Adobe Experience Cloudでは、データ収集とレポートの書き出しに複数のドメインを使用します。 このドメインのリストについては、[Adobe Experience Cloudで使用されるドメイン ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) を参照してください。
 
 >[!MORELIKETHIS]
 >
->[Customer Journey Analyticsが使用する IP アドレス](ip-addresses.md)
+>[Customer Journey Analyticsが使用する IP アドレス ](ip-addresses.md)
 >
->[Adobe Experience Cloudが使用するドメイン](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Adobe Experience Cloudが使用するドメイン ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

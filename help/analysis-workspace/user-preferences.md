@@ -6,7 +6,7 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3259'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | --- | --- | --- |
 | **テーブル** | | |
 | | テーブルタイプ | <ul><li>フリーフォーム</li><li>テーブルビルダー</li></ul> |
-| | デフォルトのテーブル指標 | <ul><li>発生件数</li><li>ユニーク訪問者</li><li>訪問数</li></ul> |
+| | デフォルトのテーブル指標 | <ul><li>発生件数</li><li>ユニーク訪問者</li><li>訪問回数</li></ul> |
 | | デフォルトのテーブルディメンション | 分、時間、日、週、月、四半期、年から選択します。 |
 | | 日付の整列 | このオプションを選択して各列の日付を整列させ、すべて同じ行から始まるようにすることもできます。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |

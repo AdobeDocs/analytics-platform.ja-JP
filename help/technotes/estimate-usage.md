@@ -15,7 +15,7 @@ ht-degree: 71%
 
 Customer Journey Analyticsの使用状況を表示するには、次のいくつかの方法を使用できます。
 
-* 各接続のイベントデータ行を追加します。参照： [接続サイズの予測](#estimate-connection-size) 下。 この方法では、特定のタイムスタンプについて、接続ごとのイベント行データを簡単に確認することができます。
+* 各接続のイベントデータ行を追加します。以下の [ 接続サイズの予測 ](#estimate-connection-size) を参照してください。 この方法では、特定のタイムスタンプについて、接続ごとのイベント行データを簡単に確認することができます。
 
 * 使用状況を 3 つの方法で表示します。それぞれの方法について詳しくは、以下で説明します。
    * Analysis Workspace を使用して先月のイベントを報告します。
@@ -42,7 +42,7 @@ Customer Journey Analyticsの使用状況を管理するには：
 
 1. 組織が作成したすべての接続について、**[!UICONTROL 使用可能なイベントデータのレコード]**&#x200B;を追加します（接続のサイズによっては、数字の表示に時間がかかる場合があります）。
 
-   ![使用可能なイベントデータのレコード。](./assets/event-data.png)
+   ![ 使用可能なイベントデータのレコード。](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -56,7 +56,7 @@ Customer Journey Analyticsの使用状況を管理するには：
 
    * [データ保持設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)を変更する。
    * [未使用の接続を削除する](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
-   * [Adobe Experience Platformのデータセットを削除する場合](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components).
+   * [Adobe Experience Platformのデータセットを削除 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)。
    * 追加容量のライセンスを取得する場合は、Adobeアカウントチームにお問い合わせください。
 
 ## すべてのイベントデータを使用してワークスペースプロジェクトを作成する {#workspace-event-data}
@@ -69,9 +69,9 @@ Customer Journey Analyticsの使用状況を管理するには：
 >
 >    使用量が事実上 2 倍になってしまうので、使用量を測定するだけのために、すべてのデータを含む新しい接続を作成しないでください。
 
-1. ワークスペースで、各データビューに基づいて新しいプロジェクトを作成し、すべてのイベントを（ **[!UICONTROL 指標]** ドロップダウンリスト）から毎月第一金曜日（現在のCustomer Journey Analytics契約の最初の日から始まります。
+1. Workspaceでは、各データビューに基づいて新しいプロジェクトを作成し、現在のCustomer Journey Analytics契約の最初の日から始まる、月の第一金曜日までのすべてのイベント（「**[!UICONTROL 指標]**」ドロップダウンリストから）を取り込みます。
 
-   ![イベントを表示するフリーフォームテーブル。](./assets/events-usage.png)
+   ![ イベントを表示するフリーフォームテーブル ](./assets/events-usage.png)
 
    これにより、月々の使用状況のトレンドを把握できます。
 
@@ -83,7 +83,7 @@ Report Builder で各データ表示に [1 つのデータブロックを作成]
 
 ## Customer Journey AnalyticsAPI での自動レポートの作成 {#api-report}
 
-1. の使用 [Customer Journey Analyticsレポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) すべてのイベントデータに関するレポートを実行するには、 **接続ごとに**. レポートが次のタイミングで実行されるように設定します
+1. [Customer Journey Analyticsレポート API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) を使用して、（すべての接続について **すべてのイベントデータに関するレポートを実行し** す。 レポートが次のタイミングで実行されるように設定します
 
    * 毎月第一金曜日
    * 現在のCustomer Journey Analytics契約の最初の日に戻ります。
@@ -94,7 +94,7 @@ Report Builder で各データ表示に [1 つのデータブロックを作成]
 
 ## 周期的なデータウィンドウを定義して使用状況を管理する {#rolling}
 
-使用状況を管理するには、 [接続 UI](/help/connections/create-connection.md) Customer Journey Analyticsデータ保持を、接続レベルでの月単位（1 か月、3 か月、6 か月など）のローリングウィンドウとして定義できます。
+使用状況を管理するために、[ 接続 UI](/help/connections/create-connection.md) を使用してCustomer Journey Analyticsデータ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）の周期的な時間枠として定義できます。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 

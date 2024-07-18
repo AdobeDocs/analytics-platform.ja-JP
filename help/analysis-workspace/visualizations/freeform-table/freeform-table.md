@@ -15,19 +15,19 @@ ht-degree: 90%
 
 Analysis Workspaceでは、フリーフォームテーブルはインタラクティブなデータ分析の基盤となっています。[コンポーネント](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=ja)の組み合わせを行と列にドラッグ＆ドロップして、分析用のカスタムテーブルを作成できます。各コンポーネントが削除されると、テーブルは直ちに更新されるので、分析や掘り下げを迅速におこなうことができます。
 
-![フリーフォームテーブルで、複数の Web ページの訪問回数やオンライン注文件数を含む行と列のコンポーネントを表示します。](assets/opening-section.png)
+![ 複数の web ページの訪問およびオンライン注文を含む、行と列のコンポーネントを表示するフリーフォームテーブル。](assets/opening-section.png)
 
 ## 自動化されたテーブル
 
 テーブルを最もすばやく作成するには、空のプロジェクト、パネル、またはフリーフォームテーブルにコンポーネントを直接ドロップします。推奨される形式のフリーフォームテーブルが自動的に作成されます。[こちら](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=ja)から、チュートリアルをご覧ください。
 
-![訪問回数コンポーネントが作業スペースにドロップされた新しいパネル。](assets/automated-table.png)
+![ 訪問コンポーネントを作業スペースにドロップした新しいパネル。](assets/automated-table.png)
 
 ## フリーフォームテーブルビルダー
 
 最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、フリーフォームテーブルビルダーを有効にできます。ビルダーを有効にすれば、多くのディメンション、分類、指標およびフィルターをドラッグ＆ドロップして、より複雑な質問に回答するテーブルを作成できます。データはその場では更新されず、「**[!UICONTROL ビルド]**」をクリックすると更新されます。
 
-![表示されるフリーフォームテーブルビルダー ](assets/table-builder.png)
+![](assets/table-builder.png) を表示するフリーフォームテーブルビルダー
 
 ## テーブルの操作
 
@@ -54,4 +54,4 @@ Analysis Workspace のすべてのデータエクスポートオプションに�
 
 Analysis Workspace のすべてのデータエクスポートオプションついては、[こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=ja)から確認できます。
 
-![選択した書き出しオプションと「データをクリップボードにコピー」を表示するフリーフォームテーブル。](assets/export-options.png)
+![ 書き出しオプションと「データをクリップボードにコピー」が選択されていることを示すフリーフォームテーブル ](assets/export-options.png)

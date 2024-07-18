@@ -7,7 +7,7 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 100%
 

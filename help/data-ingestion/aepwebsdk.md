@@ -54,25 +54,26 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL スキーマ]**」を選択します。
 
-1. を選択 **[!UICONTROL スキーマを作成]**..
+1. **[!UICONTROL スキーマを作成]** を選択します。
+.
 1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. を選択 **[!UICONTROL エクスペリエンスイベント]**.
+   1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
 
-      ![エクスペリエンスイベントをハイライト表示するスキーマの作成](./assets/create-ee-schema-wizard-step-1.png)
+      ![ エクスペリエンスイベントをハイライト表示したスキーマの作成 ](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、 _動作_ （シーン名や、買い物かごに追加するプッシュボタンなど）のプロファイル。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマは、プロファイルの _動作_ をモデル化するために使用します（シーン名、買い物かごに追加するプッシュボタンなど）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. が含まれる [!UICONTROL 名前を付けて手順を確認] の [!UICONTROL スキーマを作成] ウィザード：
+1. [!UICONTROL  スキーマを作成 ] ウィザードの [!UICONTROL  名前とレビューの手順 ] で、次の操作を行います。
 
-   1. を入力 **[!UICONTROL スキーマの表示名]** スキーマの場合および（オプション） a **[!UICONTROL 説明]**.
+   1. スキーマの **[!UICONTROL スキーマ表示名]** と（オプション） **[!UICONTROL 説明]** を入力します。
 
-      ![スキーマフィールドに名前を付けるを表示するスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを表示するスキーマを作成ウィンドウ ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -104,7 +105,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) および [新しい id フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （like `ecid`, `crmId`、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [ 新しいフィールドグループを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) して [ 新しい ID フィールドを追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （`ecid`、`crmId` など、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field.png)
 
@@ -279,7 +280,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
-Web SDK には、 [!UICONTROL Adobe Experience Cloud ID サービス] ネイティブなので、タグに ID サービス拡張機能を追加する必要はありません。
+Web SDK には、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
 #### **データ要素**
 
@@ -488,7 +489,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデ�
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformとワークスペースのデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience PlatformとWorkspaceのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -591,7 +592,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、まず、ディメンションと指標をそのレポートにドラッグ&amp;ドロップします [!UICONTROL フリーフォームテーブル] が含まれる [!UICONTROL パネル]. 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

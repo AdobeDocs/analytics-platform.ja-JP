@@ -23,15 +23,15 @@ Adobe Customer Journey Analyticsでは、システムで実行されるアクテ
 
 組織に対してこの機能が有効になっている場合、アクティビティの発生に応じて監査ログが自動的に収集されます。ログ収集を手動で有効にする必要はありません。
 
-監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。Customer Journey Analytics機能の個々の権限を管理する方法については、を参照してください [アクセス制御ドキュメント](../technotes/access-control.md).
+監査ログを表示および書き出すには、Adobe コンソールで&#x200B;**[!UICONTROL 監査ログのアクセス]**&#x200B;アクセス制御権限を付与されている必要があります。Customer Journey Analytics機能の個々の権限を管理する方法については、[ アクセス制御ドキュメント ](../technotes/access-control.md) を参照してください。
 
 ## UI での監査ログの表示
 
-Customer Journey Analyticsーで、に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL 監査ログ]**.
+Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL 監査ログ]** に移動します。
 
 デフォルトでは、今日と昨日の監査ログが表示されます。
 
-![今日と昨日を強調表示する監査ログ。 ](assets/audit_ui.png)
+![ 今日と昨日の監査ログのハイライト表示。](assets/audit_ui.png)
 
 右上の列セレクターに移動して、表示する列を選択できます。
 
@@ -39,11 +39,11 @@ Customer Journey Analyticsーで、に移動します。 **[!UICONTROL ツール
 
 説明の横にある情報（i）ボタンをダブルクリックします。
 
-![「情報」ボタンを強調表示した監査ログ。 ](assets/info-button-audit.png)
+![ 「情報」ボタンをハイライト表示した監査ログ。](assets/info-button-audit.png)
 
 次の項目が表示されます。
 
-* **[!UICONTROL アクション名]**：実行されたアクション。 指定できる値には以下のものがあります。
+* **[!UICONTROL アクション名]**：実行されるアクション。 指定できる値には以下のものがあります。
    * API_REQUEST
    * 承認
    * 作成
@@ -60,9 +60,9 @@ Customer Journey Analyticsーで、に移動します。 **[!UICONTROL ツール
 * **[!UICONTROL 作成日]**：アクションが実行された日時。
 * **[!UICONTROL 説明]**：アクションの概要。
 * **[!UICONTROL ユーザー名]**：アクションを実行したユーザー。
-* **[!UICONTROL 電子メール]**：アクションを実行したユーザーのメールアドレス。
+* **[!UICONTROL メール]**：アクションを実行したユーザーのメールアドレス。
 * **[!UICONTROL コンポーネント名]**：ユーザーがアクションを実行したコンポーネント。
-* **[!UICONTROL コンポーネントタイプ]**：コンポーネントのタイプ。 指定できる値には以下のものがあります。
+* **[!UICONTROL コンポーネントタイプ]**: コンポーネントのタイプ。 指定できる値には以下のものがあります。
    * 注釈
    * 対象読者
    * CALCULATED_METRIC
@@ -81,7 +81,7 @@ Customer Journey Analyticsーで、に移動します。 **[!UICONTROL ツール
    * ユーザー
    * USER_GROUP
 * **[!UICONTROL コンポーネント ID]**：ユーザーがアクションを実行したコンポーネントの ID。
-* **[!UICONTROL IMS 組織 ID]**：組織の IMS ID （形式：） `ABC123@AdobeOrg`.
+* **[!UICONTROL IMS 組織 ID]**：組織の IMS ID （`ABC123@AdobeOrg` 形式）。
 * **[!UICONTROL ログ ID]**：このログエントリを識別する一意の ID。
 * **[!UICONTROL ユーザー ID]**：アクションを実行したユーザーを識別する一意の ID。
 * **[!UICONTROL ユーザータイプ]**：使用する認証タイプ。 有効な設定値は以下のとおりです。
@@ -92,7 +92,7 @@ Customer Journey Analyticsーで、に移動します。 **[!UICONTROL ツール
 
 ファネルアイコン（![フィルター](assets/filter-icon.png)）を選択して、結果を絞り込むのに役立つフィルターコントロールのリストを表示します。選択した各種フィルターに関係なく、最新 1,000 件のレコードのみが表示されます。
 
-![データ範囲に表示されたフィルターを示す監査ログ。](assets/filters.png)
+![ データ範囲に対して表示されたフィルターを示す監査ログ。](assets/filters.png)
 
 UI の監査イベントには、次のフィルターを使用できます。
 
@@ -139,4 +139,4 @@ UI の監査イベントには、次のフィルターを使用できます。
 
 ## API での監査ログの管理
 
-UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。を参照してください。 [Customer Journey AnalyticsAPI リファレンスドキュメント](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) を参照してください。
+UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。詳しくは、[Customer Journey AnalyticsAPI リファレンスドキュメント ](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) を参照してください。

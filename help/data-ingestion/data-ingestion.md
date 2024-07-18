@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 63%
 
 [概要](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja)で前述の、大まかな Customer Journey Analytics アーキテクチャを参照してください。
 
-![この節で説明するCustomer Journey Analyticsーアーキテクチャ](./assets/cja-architecture.png)
+![ この節で説明するCustomer Journey Analyticsアーキテクチャ ](./assets/cja-architecture.png)
 
 上記のアーキテクチャのデータセットのソースには、次のようにさまざまなものがあります。
 
@@ -46,13 +46,13 @@ ht-degree: 63%
 
 イベントデータが 24 時間、48 時間、7 日前のいずれであっても、90 分以内（SLT）にCustomer Journey Analyticsからイベントデータを取り込むことができます。
 
-この機能は、会社が購入した SKU パッケージによって異なることに注意してください。
+この機能は、会社が購入した SKU パッケージによって異なります。
 
-- 優先度取り込み基本：90 分 SLT 処理で 24 時間経過したデータ（で利用可能） **CJA の基盤** および **CJA 選択**）
+- 優先度取り込み基本：90 分の SLT 処理で 24 時間経過したデータ（**CJA Foundation** および **CJA Select** で利用可能）
 
-- 優先度取り込み中級：90 分 SLT 処理で 72 時間経過したデータ（で利用可能） **CJA プライム**）
+- 優先度取り込み中級：90 分 SLT 処理で 72 時間経過したデータ（**CJA Prime** で利用可能）
 
-- 優先度取り込みの詳細設定：90 分 SLT 処理で 1 週間の古いデータ（で利用可能） **CJA Ultimate**）
+- 優先度取り込みの詳細設定：90 分 SLT 処理で 1 週間の古いデータ（**CJA Ultimate** で利用可能）
 
 ## 従来の Adobe Analytics からのデータの取り込みと使用
 
@@ -67,19 +67,19 @@ ht-degree: 63%
 
 Web サイトをAdobeテクノロジで分析し、潜在的に別のソリューションから移行するか、ユーザーの行動の追跡を開始します。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
-参照： [Adobe Experience Platform Web SDK を介したデータの取り込みと使用](./aepwebsdk.md) を参照してください。
+詳しくは、[Adobe Experience Platform Web SDK を使用したデータの取り込みと使用 ](./aepwebsdk.md) を参照してください。
 
 ### Adobe Experience Platform Mobile SDK の使用
 
 Adobeテクノロジーを使用してモバイルアプリを分析し、潜在的に別のソリューションから移行するか、アプリ内でのユーザーの行動のトラッキングを最初から開始する場合。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
-参照： [Adobe Experience Platform Mobile SDK を介したデータの取り込みと使用](./aepmobilesdk.md) を参照してください。
+詳しくは、[Adobe Experience Platform Mobile SDK を使用したデータの取り込みと使用 ](./aepmobilesdk.md) を参照してください。
 
 ### Adobe Experience Platform Edge Networkサーバー API の使用
 
 デスクトップアプリケーション、ゲーム機でプレイしたゲーム、セットトップボックスでのビデオストリーミングアプリケーションの使用状況、またはAdobeテクノロジを使用した IoT デバイスを分析する場合。 潜在的に別のソリューションから移行するか、これらのデバイスでのユーザーの行動の追跡を最初から開始します。 実装に関するAdobeのベストプラクティス（Adobe Experience Platform Edge Networkサーバー API とEdge Networkを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
-参照： [Adobe Experience Platform Edge Networkサーバー API を介したデータの取り込みと使用](./serverapi.md) を参照してください。
+詳しくは、[Adobe Experience Platform Edge Networkサーバー API を使用したデータの取り込みと使用 ](./serverapi.md) を参照してください。
 
 ## バッチデータの取り込みと使用
 

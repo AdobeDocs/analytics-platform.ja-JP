@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 | フォールバック決定オプションのスコア | 単一スコープのコンテキストにおけるフォールバック決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | コンポーネントタイプ：指標 |
 | オファーの却下 | 他の直接のインタラクションなしで却下または拒否されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
 | オファーの表示 | プロファイルに表示されるオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
-| オファーの操作 | プロファイルがやり取りするオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | コンポーネントタイプ：指標 |
+| オファーの操作 | プロファイルがやり取りしたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | コンポーネントタイプ：指標 |
 | オファーの送信 | プロファイルに送信されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.send` | コンポーネントタイプ：指標 |
 | オファーのトリガー | クライアント SDK によって表示されるように選択されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | コンポーネントタイプ：指標 |
 | オファーの登録解除 | プロファイルによってリクエストされた今後表示されないオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | コンポーネントタイプ：指標 |

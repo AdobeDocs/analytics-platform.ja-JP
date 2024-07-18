@@ -17,7 +17,7 @@ ht-degree: 56%
 
 ## データガバナンス
 
-Adobe Customer Journey Analyticsとの統合 [Adobe Experience Platformのデータガバナンス](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) では、機密Customer Journey Analyticsデータのラベル付けとプライバシーポリシーの実施が可能です。
+Adobe Customer Journey Analyticsと [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ja) の統合により、機密Customer Journey Analyticsデータのラベル付けとプライバシーポリシーの実施が可能になります。
 
 Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 Customer Journey Analytics データビューワークフローで表示できます。これらのラベルにより、ユーザーが機密性の高いフィールドから指標やディメンションを作成しようとしても、それができなかったり警告が表示されたりします。
 

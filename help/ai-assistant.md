@@ -1,20 +1,20 @@
 ---
 description: Customer Journey Analyticsドキュメントを確認する方法
-title: Adobe Customer Journey Analyticsの AI アシスタント
+title: Adobe Customer Journey Analytics 向けの AI アシスタント
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Adobe Customer Journey Analyticsの AI アシスタント
+# Adobe Customer Journey Analytics 向けの AI アシスタント
 
-AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、エキスパートでないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
 
 Customer Journey Analyticsの AI アシスタントは、Adobe Experience Leagueのドキュメントでトレーニングを受けます。 質問すると、AI アシスタントは迅速な学習を可能にする便利な回答で応答します。
 
@@ -37,35 +37,35 @@ Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをト
 | 製品に関する知識 | 例 |
 | --- | --- |
 | 先を見越した学習 | <ul><li>Adobe AnalyticsとCustomer Journey Analyticsの違いは何ですか？</li><li>計算指標の作成方法</li></ul> |
-| 検出を開く | <ul><li>ワークスペースプロジェクトを書き出すにはどうすればよいですか？</li><li>重複する Workspace コンポーネントを見つけるにはどうすればよいですか？</li></ul> |
+| 検出を開く | <ul><li>Workspace プロジェクトを書き出すにはどうすればよいですか？</li><li>重複するWorkspace コンポーネントを見つけるにはどうすればよいですか？</li></ul> |
 | トラブルシューティング | <ul><li>データが CJA に取り込まれるまでにどのくらい時間がかかりますか？</li><li>Customer Journey Analytics接続に含めることができる派生フィールドはいくつですか？</li></ul> |
 
 ## 機能へのアクセス
 
 この最初のリリースでは、AI アシスタント機能へのアクセスは、次のパラメータによって制御されます。
 
-* **ソリューションへのアクセス**:AI アシスタントはCustomer Journey Analyticsでは使用できますが、Adobe Analyticsでは使用できません。 また、Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDPやその他のExperience Platformアプリでも使用できます。
+* **ソリューションアクセス**:AI Assistant はCustomer Journey Analyticsでは使用できますが、Adobe Analyticsでは使用できません。 また、Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDPやその他のExperience Platformアプリでも使用できます。
 
 * **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 AI アシスタントを組織で使用する前に、会社は GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**：の [!UICONTROL Adobe Admin Console], [!UICONTROL レポートツール] 「AI アシスタント：製品ナレッジ」権限により、このツールへのアクセスが決定します。 A [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、Admin Consoleで次の手順に従う必要があります。
-   1. に移動します。 [!UICONTROL Admin Console] > [!UICONTROL 製品とサービス] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL 製品プロファイル] > [!UICONTROL 権限] > [!UICONTROL レポートツールを編集].
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ] 「AI アシスタント：製品ナレッジ」権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、Admin Consoleで次の手順に従う必要があります。
+   1. [!UICONTROL Admin Console] / [!UICONTROL  製品とサービス ] / [!UICONTROL Customer Journey Analytics] / [!UICONTROL  製品プロファイル ] / [!UICONTROL  権限 ] / [!UICONTROL  レポートツールを編集 ] に移動します。
    1. 「AI アシスタント：製品に関する知識」を追加します。
-      ![権限を追加](assets/image.png)
+      ![ 権限を追加 ](assets/image.png)
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
 1. AI アシスタントを起動するには、Customer Journey AnalyticsUI の任意のページの上部ヘッダーから「AI アシスタント」アイコンを選択します。
 
-   ![AI アシスタント アイコン](assets/ai-asst1.png)
+   ![AI アシスタント アイコン ](assets/ai-asst1.png)
 
    AI アシスタントを初めて使用する際には、アシスタントの使用条件に関する免責事項が表示されます。
 
 1. 表示されたボックスで、AI アシスタントの特定の自然言語の質問をします。
 
-   ![質問ボックス](assets/ai-asst2.png)
+   ![ 質問ボックス ](assets/ai-asst2.png)
 
-1. （オプション）ソースを表示するには、 **[!UICONTROL ソースを表示]**、および回答に情報を提供したドキュメントソース（1 つまたは複数）が表示されます。
+1. （任意）ソースを表示するには、「**[!UICONTROL ソースを表示]**」をクリックします。回答に情報を提供したドキュメントソース（1 つまたは複数）が表示されます。
 
 1. （任意）回答の有用性について、サムズアップまたはサムズダウンの投票を提供することもできます。
 

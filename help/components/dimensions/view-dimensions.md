@@ -1,6 +1,6 @@
 ---
 description: 時間以外のディメンションの上位 5 つ（時間ディメンションの場合は 15 つ）の値が表示されます。
-title: Workspace でディメンションをプレビューするCustomer Journey Analytics
+title: Customer Journey AnalyticsWorkspaceでディメンションをプレビューする方法
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 ディメンションの隣の情報「i」アイコンにマウスポインターを置きます。時間以外のディメンションの上位 5 位（時間ディメンションの場合は 15 位）の値が表示されます。以前は、常に静的な値が表示されていました（選択された 5 つの値は変更されることはありませんでした）。
 
-![非時間ディメンションの上位 5 つの値。](assets/dimension-preview.png)
+![ 時間以外のディメンションの上位 5 つの値。](assets/dimension-preview.png)
 
 現在は、デフォルトでは静的な値ではなく動的な値が表示されると共に、静的な値に変更するオプションもあります。その他の注意事項を次に示します。
 
@@ -23,7 +23,7 @@ ht-degree: 90%
 * 手動でコピーまたは移動された動的ディメンション列は、静的に変更されます。
 * 静的ディメンション列の上にマウスポインターを置くと、ディメンションが静的であることを示すロックアイコンが表示されます。
 
-![Dimension列のポップアップで、ロックアイコンをハイライトします。](assets/dimension_static.png)
+![ ロックアイコンを強調表示するDimension列のポップアップ。](assets/dimension_static.png)
 
 ## ディメンション項目の表示
 

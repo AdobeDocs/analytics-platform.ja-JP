@@ -19,7 +19,7 @@ ht-degree: 93%
 - **[!UICONTROL 快適]**：コンパクトよりも余裕を持たせた表示です。
 - **[!UICONTROL 拡張]**（デフォルト）：Workspace の通常の表示です。
 
-![コンパクト、快適、拡張されたビュー密度。](assets/view-density.png)
+![ コンパクトで快適、かつ広い視野の密度 ](assets/view-density.png)
 
 表示密度を設定するには、以下のようにします。
 

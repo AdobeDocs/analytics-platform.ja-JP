@@ -36,12 +36,12 @@ Analysis Workspaceでは、同時視聴者数は、セッション数にかか�
 
 ### デフォルトのビュー
 
-![メディア同時視聴者数のデフォルトビュー。](assets/concurrent-viewers-default.png)
+![ メディア同時視聴者数のデフォルトビュー ](assets/concurrent-viewers-default.png)
 
 
 ### シリーズの分類表示
 
-![10 のディメンション、セグメントまたは日付範囲のうち 7 つを表示するメディア同時視聴者数シリーズの分類表示。](assets/concurrent-viewers-series-breakdown.png)
+![10 個のディメンション、セグメントまたは日付範囲のうち 7 個が表示されているメディア同時視聴者数シリーズの分類表示。](assets/concurrent-viewers-series-breakdown.png)
 
 ## パネル出力 {#Output}
 
@@ -51,7 +51,7 @@ Analysis Workspaceでは、同時視聴者数は、セッション数にかか�
 
 シリーズの分類を選択した場合は、折れ線グラフに線と次の各項目の概要番号が表示されます。
 
-![メディア同時ビューア出力。](assets/concurrent-viewers-output.png)
+![ メディア同時ビューア出力 ](assets/concurrent-viewers-output.png)
 
 ### データソース
 
@@ -64,7 +64,7 @@ Analysis Workspaceでは、同時視聴者数は、セッション数にかか�
 このビューでは、フリーフォームテーブルは使用できません。 データソースを表示するには、折れ線グラフを右クリックし、.csv ファイルとしてダウンロードします。 シリーズの分類が含まれます。
 
 
-![「データを CSV 形式でダウンロード」がハイライト表示された同時ビューア出力オプション](assets/concurrent-viewers-download-csv.png)
+![ 「データを CSV 形式でダウンロード」がハイライト表示された同時ビューア出力オプション ](assets/concurrent-viewers-download-csv.png)
 
 ## よくある質問（FAQ） {#FAQ}
 

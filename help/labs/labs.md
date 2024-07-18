@@ -31,7 +31,7 @@ ht-degree: 81%
 
 1. [!UICONTROL Workspace]および[!UICONTROL ラボ]へのアクセス権をまだ持っていない場合は管理者に権限を問い合わせてください。
 
-1. Customer Journey Analyticsで、 **[!UICONTROL Labs]** タブ。
+1. Customer Journey Analyticsで、「**[!UICONTROL ラボ]**」タブをクリックします。
 
 ## プロトタイプの評価
 
@@ -65,7 +65,7 @@ ht-degree: 81%
 
 1. 別のプロトタイプを試す場合、またはプロトタイプ環境を終了する場合は、画面の右上にある「**[!UICONTROL プロトタイプを終了]**」ボタンをクリックして、プロトタイプについての短いアンケートを完了します。プロトタイププロジェクトに対して行った変更は、プロトタイプ環境を終了すると失われます。
 
-   ![インテリジェントパスフィードバックウィンドウ](assets/short-survey.png)
+   ![ インテリジェントパスフィードバックウィンドウ ](assets/short-survey.png)
 
 1. **[!UICONTROL 送信]**&#x200B;をクリックして、メインのプレビューポータルに戻ります。
 

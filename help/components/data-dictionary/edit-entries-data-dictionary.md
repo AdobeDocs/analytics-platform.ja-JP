@@ -6,14 +6,14 @@ role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 69%
+source-wordcount: '324'
+ht-degree: 64%
 
 ---
 
 # データ要素でのコンポーネントエントリの編集
 
-Customer Journey Analytics管理者は、特定のデータビューのデータディクショナリ内のコンポーネントエントリを編集できます。 加えた変更は、データビューのすべてのユーザーに表示されます。
+Customer Journey Analytics管理者は、特定のデータビューのデータ要素でのコンポーネントエントリを編集できます。 行われた変更は、データビューのすべてのユーザーに表示されます。
 
 データ要素でのコンポーネントを編集するには：
 
@@ -23,13 +23,13 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
 
 データ要素ウィンドウが表示されます。
 
-![辞書の正常性を示すデータ辞書管理者の表示](assets/data-dictionary-admin.png)
+![ 要素の正常性を示すデータ要素管理者ビュー ](assets/data-dictionary-admin.png)
 
 1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。 デフォルトでは、既に存在するデータビューが表示されます。
 
 1. （オプション）検索フィールドに、編集するコンポーネントの名前を入力します。
 
-コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色です。 **フィルター** ![セグメントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青い **日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色で **指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑です。 Adobeアイコンは、計算指標テンプレートまたはフィルターテンプレート、および計算ツールアイコンを示します ![計算ツールアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の Analytics 管理者が作成した計算指標を示していました。
+コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**Dimension** ![Dimensionアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色、**フィルター** ![ セグメントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青色、**日付範囲** ![ 日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色、**指標** ![ 指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 緑色です。 Adobeアイコンは計算指標テンプレートまたはフィルターテンプレートのいずれか、電卓アイコン ![ 電卓アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は組織の Analytics 管理者によって作成された計算指標を示します。
 
 {{dd-filter-criteria}}
 

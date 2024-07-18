@@ -31,4 +31,4 @@ ht-degree: 92%
 
 ## ブログ投稿
 
-関連するブログ投稿を以下に示します。 [Customer Journey Analyticsでの「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+以下は、[Customer Journey Analyticsでの「値なし」の処理 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339) に関する関連ブログ投稿です。

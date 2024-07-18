@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analyticsの「Report Builder」でデータ範囲を選択する方法
-description: Customer Journey AnalyticsのReport Builderでのカレンダー、相対日付、カスタム式の使用方法を説明します
+title: Customer Journey AnalyticsでReport Builderのデータ範囲を選択する方法
+description: Customer Journey AnalyticsのReport Builderでカレンダー、相対日付およびカスタム式を使用する方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
@@ -36,7 +36,7 @@ ht-degree: 89%
 
 選択した日付範囲の今日を除外するオプションもあります。
 
-![Report Builderのクイック編集ペインで、カレンダーが選択され、「今日を除外」が選択されています。](./assets/image17.png)
+![ カレンダーを選択し、「今日を除外」を選択したReport Builderのクイック編集ペイン。](./assets/image17.png)
 
 ## カレンダーの使用
 
@@ -62,7 +62,7 @@ ht-degree: 89%
 
 日付範囲を逆の順序で設定するには、終了日を最初にクリックしてから、開始日をクリックします。
 
-![Report Builderしたカレンダー、終了日、開始日を示すカレンダー日付範囲ウィンドウ。](./assets/image18.png)
+![ 選択したカレンダー、終了日、および開始日を示すReport Builderの日付範囲ペイン。](./assets/image18.png)
 
 ### プリセットドロップダウンメニュー
 
@@ -76,7 +76,7 @@ ht-degree: 89%
 
 1. 開始日または終了日、あるいはその両方の相対式を選択します。
 
-   ![「相対日付を使用」が選択され、相対式が表示されるReport Builderの日付範囲ウィンドウ。](./assets/image19.png)
+   ![ 「相対日付を使用」が選択され、相対式が表示されているReport Builderの日付範囲ペイン。](./assets/image19.png)
 
    **開始時** - 日、週、月、四半期、年の始めを選択できます。
 
@@ -86,11 +86,11 @@ ht-degree: 89%
 
 1. 相対期間として日、週、月、四半期、年を選択します。
 
-   ![Report Builderした日付を示す日付範囲ウィンドウ。](./assets/image20.png)
+   ![ 選択した現在の日付を示すReport Builderの日付範囲ペイン。](./assets/image20.png)
 
 1. 相対日付から日数、週数、月数、四半期数または年数を加算または減算します。
 
-   ![Report Builder日付範囲ウィンドウで、現在の日に選択した 14 日を加えた日付を表示します。](./assets/image21.png)
+   ![ 現在の日付と選択した 14 日を表示するReport Builderの日付範囲ペイン。](./assets/image21.png)
 
 1. 「次へ」をクリックして、データ範囲を定義します。
 
@@ -106,7 +106,7 @@ ht-degree: 89%
 
    「**カスタム式の使用**」オプションを選択すると、標準の相対日付範囲コントロールは無効になります。
 
-   ![「tm-1m から td-1d までのカスタム式を使用」を選択します。](./assets/custom_expression.png)
+   ![ 「tm-1m から td-1d を示すカスタム式の使用」を選択します。](./assets/custom_expression.png)
 
 1. カスタム式を入力します。
 
@@ -157,13 +157,13 @@ ht-degree: 89%
 | tm-1d | 先月の最終日 |
 | td-52w | 52 週間前の同じ曜日 |
 | tm-11m-1d | 昨年同月の最終日 |
-| &quot;2020-09-06&quot; | 2020 年 9 月 9 日（PT） |
+| 「2020-09-06」 | 2020 年 9 月 9 日（PT） |
 
 ## セルからの日付範囲
 
 日付範囲は、ワークシートのセルで指定できます。「**セルからの日付範囲**」オプションを使用して、選択したセルからデータブロックの開始日と終了日を選択します。「**セルから**」オプションを選択すると、パネルに「**開始**」フィールドと「**終了**」フィールドが表示され、セルの場所を入力できます。
 
-![セルの [ シート 1!H4] から [ シート 1!I4] までを選択します。](./assets/image23.png)
+![ セル シート 1!H4 からシート 1!I4 を選択 ](./assets/image23.png)
 
 ## 今日を除外
 

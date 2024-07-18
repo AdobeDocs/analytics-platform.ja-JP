@@ -22,7 +22,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 主なメリットは次のとおりです。
 
-* BI ツール自体内で Customer Journey Analytics データビューの同等の表示域を再作成する必要はありません。<br/>参照： [データビュー](data-views.md) 再作成が必要な項目を理解するためのデータビューの機能に関する詳細情報。
+* BI ツール自体内で Customer Journey Analytics データビューの同等の表示域を再作成する必要はありません。<br/> データビューの機能について詳しくは、[ データビュー ](data-views.md) を参照して、再作成する必要があるものを理解します。
 * BI ツールと Customer Journey Analytics 間のレポートと分析の一貫性が向上します。
 * Customer Journey Analytics データを、BI ツールで既に使用可能な他のデータソースと組み合わせます。
 
@@ -36,9 +36,9 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 * Customer Journey Analyticsへの製品管理者アクセス権が付与され、接続およびデータビューを表示、編集、更新または削除できるようになりました。
 * アクセスするデータビューへのアクセス権を付与しました。
 * CJA BI 拡張機能へのアクセス権を付与しました。
-* 有効期限のない資格情報の有効期限を使用して、BI ツールをに接続 [!DNL Customer Journey Analytics BI extension]. この [資格情報ガイド](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) 有効期限のある資格情報または有効期限のない資格情報の設定に関する詳細情報を提供します。
+* 有効期限のない資格情報で有効期限が切れる場合を使用して、BI ツールを [!DNL Customer Journey Analytics BI extension] に接続します。 [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) には、有効期限のある資格情報または有効期限のない資格情報の設定に関する詳細が記載されています。
 
-参照： [顧客ジャーニーのアクセス制御](../technotes/access-control.md) 詳しくは、 [製品管理者の追加権限](../technotes/access-control.md#product-admin-additional-permissions) および [Admin ConsoleのCustomer Journey Analytics権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+特に [ 製品管理者の追加の権限 ](../technotes/access-control.md) および [4}Admin ConsoleのCustomer Journey Analytics権限 ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console) について詳しくは ](../technotes/access-control.md#product-admin-additional-permissions) 顧客ジャーニーのアクセス制御 } を参照してください。[
 
 
 ## 用途
@@ -57,9 +57,9 @@ Adobe Experience Platformで：
 
 1. ![クエリを作成](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B;クエリを作成&#x200B;**]** を選択します。
 
-1. 「」を選択します `cja` **[!UICONTROL **&#x200B;データベース&#x200B;**]**.
+1. `cja` **[!UICONTROL ** データベース **]** を選択します。
 
-1. クエリを実行するには、SQL ステートメントを入力し、 ![再生](assets/Smock_Play_18_N.svg) ボタン （または押す `[SHIFT]` + `[ENTER]`）に設定します。
+1. クエリを実行するには、SQL ステートメントを入力して「![ 再生 ](assets/Smock_Play_18_N.svg)」ボタンを選択します（または、`[SHIFT]` + `[ENTER]` キーを押します）。
 
 +++
 
@@ -72,9 +72,9 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. 「」を選択します `cja` **[!UICONTROL **&#x200B;データベース&#x200B;**]**.
+   1. `cja` **[!UICONTROL ** データベース **]** を選択します。
 
-   1. コマンド文字列をコピーするには、を使用します。 ![コピー](assets/Smock_Copy_18_N.svg) が含まれる **[!UICONTROL ** PSQL コマンド&#x200B;**]** セクション。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド ](assets/Smock_Copy_18_N.svg)」セクションの ![ コピー **]** を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -82,12 +82,12 @@ Adobe Experience Platformで：
 
 +++
 
-を参照してください。 [クエリエディター UI ガイド](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) を参照してください。
+詳しくは、[ クエリエディター UI ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) を参照してください。
 
 
 ### BI ツール
 
-現在、 [!DNL Customer Journey Analytics BI extension] は、Power BIおよび Tableau に対してのみサポートおよびテストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
+現在、[!DNL Customer Journey Analytics BI extension] はPower BIと Tableau に対してのみサポートおよびテストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
 
 +++ Power BI
 
@@ -97,7 +97,7 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. 「」を選択します `cja` **[!UICONTROL **&#x200B;データベース&#x200B;**]**.
+   1. `cja` **[!UICONTROL ** データベース **]** を選択します。
 
    1. Power BI で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -111,18 +111,18 @@ Adobe Experience Platformで：
 
    1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;ホスト&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] が含まれる  **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;データベース&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] が含まれる **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
 
          `?FLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja?FLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
-      1. 次を要求されたら **[!UICONTROL データ接続性]** モード、選択 **[!UICONTROL DirectQuery]**.
+      1. **[!UICONTROL Data Connectivity]** モードのプロンプトが表示されたら、「**[!UICONTROL DirectQuery]**」を選択します。
 
       1. **[!UICONTROL ユーザー名]**&#x200B;と&#x200B;**[!UICONTROL パスワード]**&#x200B;の入力を求められます。Experience Platform クエリ[!UICONTROL 資格情報]の同等のパラメーターを使用します。
 
 
-   1. ログインに成功すると、Power BI にCustomer Journey Analyticsデータビューテーブルが表示されます **[!UICONTROL **&#x200B;ナビゲーター&#x200B;**]**.
+   1. ログインに成功すると、Power BI **[!UICONTROL ** Navigator **]** にCustomer Journey Analyticsデータビューテーブルが表示されます。
 
    1. 使用するデータビューテーブルを選択し、「**[!UICONTROL **&#x200B;読み込み&#x200B;**]**」を選択します。
 
@@ -140,7 +140,7 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. 「」を選択します ` cja` **[!UICONTROL **&#x200B;データベース&#x200B;**]**.
+   1. ` cja` **[!UICONTROL ** データベース **]** を選択します。
 
    1. Tableau で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -152,11 +152,11 @@ Adobe Experience Platformで：
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;ホスト&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;サーバー&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** から [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;ポート&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;ポート&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Port] パラメーターを **[!UICONTROL ** Port **]** テキストフィールドに貼り付けます。
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;データベース&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;データベース&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** から [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
 
          `%3FFLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja%3FFLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
@@ -164,11 +164,11 @@ Adobe Experience Platformで：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**」テキストフィールドにペーストします。
 
-      1. を貼り付けます **[!UICONTROL **&#x200B;パスワード&#x200B;**]** Experience Platformクエリからのパラメーター [!UICONTROL 資格情報] を、に追加します。 **[!UICONTROL **&#x200B;パスワード&#x200B;**]** テキストフィールド。
+      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL  パスワード ] パラメーターを **[!UICONTROL ** パスワード **]** テキストフィールドに貼り付けます。
 
-      1. 「」を選択します **[!UICONTROL **&#x200B;ログイン&#x200B;**]**.
+      1. 「**[!UICONTROL ** ログイン **]**」を選択します。
 
-   1. Customer Journey Analyticsデータビューは、のテーブルとして表示されます。 **[!UICONTROL **&#x200B;テーブル&#x200B;**]** リスト。
+   1. Customer Journey Analyticsデータビューは、**[!UICONTROL ** テーブル **]** リストにテーブルとして表示されます。
 
    1. 使用するテーブルをキャンバス上でドラッグします。
 
@@ -182,7 +182,7 @@ Adobe Experience Platformで：
 
 ## 機能
 
-デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。例えば、という名前のデータビューです。 [!UICONTROL マイ Web データ ビュー] というビュー名があります `my_web_data_view`. データビューの BI ツールで使用する優先名を定義できます。 参照： [データ表示設定](create-dataview.md#settings) を参照してください。
+デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。例えば、[!UICONTROL My Web Data View] という名前のデータビューは、ビュー名が `my_web_data_view` です。 データビューの BI ツールで使用する優先名を定義できます。 詳しくは、[ データ表示設定 ](create-dataview.md#settings) を参照してください。
 
 データビュー ID をテーブル名として使用する場合は、接続時にデータベース名にオプションの `CJA_USE_IDS` 設定を追加できます。例えば、`prod:cja?CJA_USE_IDS` は、`dv_ABC123` のような名前でデータビューを表示します。
 
@@ -190,7 +190,7 @@ Adobe Experience Platformで：
 
 Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。Customer Journey Analytics と Adobe Experience Platform のデータガバナンスの統合により、機密性の高い Customer Journey Analytics データのラベル付けとプライバシーポリシーの実施が可能になります。
 
-Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 Customer Journey Analytics データビューワークフローで表示できます。したがって、次を使用してデータをクエリします [!DNL Customer Journey Analytics BI extension] 定義されたプライバシーラベルおよびポリシーに準拠していない場合、適切な警告またはエラーを表示します。
+Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 Customer Journey Analytics データビューワークフローで表示できます。したがって、[!DNL Customer Journey Analytics BI extension] を使用してクエリされたデータが、定義されたプライバシーラベルやポリシーに準拠していない場合、適切な警告やエラーが表示されます。
 
 ### データビューのリスト
 
@@ -225,9 +225,9 @@ prod:all=> \dv
 | 個別、上位の<br/>ディメンション値 | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | 指標の合計値 | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</pre> |
 | マルチディメンションの<br/>分類<br/>と上位の個別 | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
-| 副選択：<br/>フィルターの追加<br/>件の結果 | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| 副選択：<br/>でのクエリ<br/>データビュー | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| 副選択： <br/>階層型ソース、 <br/>フィルター、 <br/>および集計 | サブ選択を使用したレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>CTE WITH を使用するレイヤー：<br/><pre>行を（<br/>  \_を（<br/>    SELECT * FROM data_ares<br/>    ここで、\&#39;timestamp\&#39;は&#39;2021-01-01&#39;と&#39;2021-02-01&#39;の間です<br/>  ）<br/>  \_.item, \_.units FROM \_<br/>  \_.item が NULL でない場合<br/>）<br/>SELECT rows.item, SUM （rows.units） AS units<br/>FROM 行 WHERE 行.item in （&#39;A&#39;, &#39;B&#39;, &#39;C&#39;）<br/>行ごとにグループ化.item</pre> |
+| Subselect:<br/>Filter additional<br/>results | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Subselect:<br/> クエリの実行 <br/> データビュー | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
+| Subselect:<br/> レイヤー化されたソース、<br/> フィルタリング、<br/> および集約 | サブ選択を使用したレイヤー化：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>CTE WITH を使用するレイヤー：<br/><pre>行を（<br/> を\_に（<br/>    SELECT * FROM data_ares<br/>    ここで、\&#39;timestamp\&#39; BETWEEN &#39;2021-01&#39; AND &#39;2021-02-01&#39;<br/>） <br/>\_.item, \_.units FROM \_<br/> WHERE \_.item IS NOT NULL<br/>） <br/>SELECT rows.item, SUM （rows.units） AS UNITS<br/>WHERE rows.item IN （&#39;A&#39;, &#39;B&#39;, &#39;C&#39;） <br/>GROUP BY ROWS.ITEM</pre> |
 | <br/>指標をディメンションの前<br/>に配置するか、ディメンションと<br/>混合する場所を選択します | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
@@ -251,12 +251,12 @@ prod:all=> \dv
 以下が可能です：
 
 * `SELECT COUNT(*)` または `COUNT(1)` を使用して、発生件数指標を取得する。
-* `SELECT COUNT(DISTINCT dimension)` または `SELECT APPROX_COUNT_DISTINCT(dimension)` を使用して、ディメンションの個別概算値をカウントする。の詳細を参照してください。 [ユニーク値のカウント](#counting-distinct-values).
-* [インライン計算](#inline-calculations) その場で指標を組み合わせたり、計算を行ったりする。
+* `SELECT COUNT(DISTINCT dimension)` または `SELECT APPROX_COUNT_DISTINCT(dimension)` を使用して、ディメンションの個別概算値をカウントする。詳しくは、[ 個別の値のカウント ](#counting-distinct-values) を参照してください。
+* [ インライン計算 ](#inline-calculations)：指標をその場で組み合わせたり、計算を行ったりする。
 
 #### ユニーク値のカウント
 
-Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。次の SQL 文 `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` デフォルトの人物指標の値を返します。これは、個別のユーザーの数です。 その他のディメンションの場合は、おおよその個別のカウントが返されます。
+Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。次の SQL ステートメントは、`SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` は、個別のユーザーの数であるデフォルトの人物指標の値を返します。 その他のディメンションの場合は、おおよその個別のカウントが返されます。
 
 #### 条件付き指標
 
@@ -274,7 +274,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### インライン計算
 
-追加の数式を指標の式に適用するには、 `SELECT`. 計算指標で数学を定義する代わりに、この数学を使用できます。 次の表に、サポートされている式の種類を示します。
+`SELECT` ール内の指標式に追加の数式を適用できます。 計算指標で数学を定義する代わりに、この数学を使用できます。 次の表に、サポートされている式の種類を示します。
 
 | 演算子または関数 | 詳細 |
 |---|---|
@@ -294,7 +294,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 `timestamp` はオプションで、全範囲を指定しない場合は、デフォルトが使用されます。
 
 * 最小値のみを指定している場合（`timestamp > X` または ` timestamp >= X`）、範囲は X から現在までです。
-* 最大値のみ指定した場合（`timestamp < X` または `timestamp <= X`）、範囲は X から 30 日を引いた値から X の値です。
+* 最大値（`timestamp < X` または `timestamp <= X`）のみを指定した場合、範囲は X から 30 日を引いた X です。
 * 何も指定されない場合、範囲は現在から今まで–30 日です。
 
 タイムスタンプ範囲は、RankRequest の日付範囲グローバルフィルターに変換されます。
@@ -302,33 +302,33 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 日付範囲
 
-この `daterange` 特殊な列の機能はと同様です `timestamp`ただし、フィルタリングは 1 日に制限されます。 `daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
-この `daterange` フィールドは、イベントの日付を解析または切り捨てるために日付/時間関数でも使用できます。
+`daterange` 特別列は `timestamp` と同様に機能しますが、フィルタリングは 1 日に制限されます。 `daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
+`daterange` フィールドは、イベントの日付を解析または切り捨てるために日付/時間関数でも使用できます。
 
-この `daterangeName` 次のような名前付き日付範囲を使用して、クエリをフィルタリングするために特別な列を使用できます。 `Last Quarter`.
+`daterangeName` 特別列は、`Last Quarter` のような名前付き日付範囲を使用してクエリをフィルタリングするために使用できます。
 
 >[!NOTE]
 >
->Power BIはサポートしていません `daterange` 1 日未満の指標（時間、30 分、5 分など）。
+>1 日未満（時間、30 分、5 分など）の `daterange` 指標はPower BIでサポートされていません。
 
 
 #### フィルター ID
 
-`filterId` 特殊列はオプションで、外部で定義されたフィルターをクエリに適用するために使用されます。外部で定義されたフィルターをクエリに適用することは、Workspace のパネルにフィルターをドラッグすることと似ています。複数のフィルター ID の利用者 `AND` – それらを参照してください。
+`filterId` 特殊列はオプションで、外部で定義されたフィルターをクエリに適用するために使用されます。外部で定義されたフィルターをクエリに適用することは、Workspace のパネルにフィルターをドラッグすることと似ています。複数のフィルター ID を使用する場合は、それらを `AND` イライトします。
 
-を追加します `filterId`、以下を使用できます `filterName` ID の代わりにフィルターの名前を使用するには：
+`filterId` と共に、`filterName` を使用して、ID の代わりにフィルターの名前を使用できます。
 
 ### Where 句
 
-この `WHERE` 句は次の 3 つの手順で処理されます。
+`WHERE` 句は次の 3 つの手順で処理されます。
 
-1. からの日付範囲の検索 `timestamp`, `daterange`、または `daterangeName` 特殊なフィールド
+1. `timestamp`、`daterange` または `daterangeName` の特別なフィールドから日付範囲を検索します。
 
-1. 外部で定義されたものを検索 `filterId`または `filterName`をフィルタリングに含めます。
+1. フィルターに含める、外部で定義された `filterId` または `filterName` を見つけます。
 
 1. 残りの式をアドホックフィルターに変換します。
 
-この処理は、`WHERE` 句の最初のレベルの `AND` を解析することによって行われます。各最上位レベル `AND`-ed 式は、上記のいずれかに一致する必要があります。 最初のレベルの `AND` より深い部分や、`WHERE` 句が最上位レベルで `OR` を使用している場合は、アドホックフィルターとして処理されます。
+この処理は、`WHERE` 句の最初のレベルの `AND` を解析することによって行われます。トップレベルの `AND` 式は、上記のいずれかに一致する必要があります。 最初のレベルの `AND` より深い部分や、`WHERE` 句が最上位レベルで `OR` を使用している場合は、アドホックフィルターとして処理されます。
 
 ### ソート順序
 
@@ -348,11 +348,11 @@ ORDER BY -metric1 DESC
 
 | 関数 | 例 | 詳細 |
 |---|---|---|
-| [ギプス包帯](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または <br/> `` `timestamp`::string `` | 型キャストは現在サポートされていませんが、エラーはスローされません。`CAST` 関数は無視されます。 |
+| [ キャスト ](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または <br/> `` `timestamp`::string `` | 型キャストは現在サポートされていませんが、エラーはスローされません。`CAST` 関数は無視されます。 |
 | [タイムスタンプ](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | `WHERE` 句内で使用するタイムスタンプとして時刻文字列を解析します。 |
-| [タイムスタンプへ](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 時刻文字列を `WHERE` 句内で使用するタイムスタンプとして解析し、オプションでその時刻文字列の形式を指定します。 |
+| [ 終了タイムスタンプ ](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 時刻文字列を `WHERE` 句内で使用するタイムスタンプとして解析し、オプションでその時刻文字列の形式を指定します。 |
 | [日付](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | `WHERE` 句内で使用するために、日付文字列をタイムスタンプとして解析します。 |
-| [終了日](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | 日付文字列を `WHERE` 句内で使用するタイムスタンプとして解析し、オプションでその日付文字列の形式を指定します。 |
+| [ 終了日 ](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | 日付文字列を `WHERE` 句内で使用するタイムスタンプとして解析し、オプションでその日付文字列の形式を指定します。 |
 
 {style="table-layout:auto"}
 
@@ -381,8 +381,8 @@ ORDER BY -metric1 DESC
 | [四半期](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 |
 | [時間](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。 |
 | [分](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。 |
-| [抽出](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる一部は次のとおりです。<br>- キーワード：`YEAR`、`MONTH`、`DAYOFMONTH`、`DAYOFWEEK`、`DAYOFYEAR`、`WEEK`、`QUARTER`、`HOUR`、`MINUTE`。<br/>- 文字列：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
-| [日付（部分）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる文字列部分は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
-| [日付（切り捨て）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
+| [ 抽出 ](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる一部は次のとおりです。<br>- キーワード：`YEAR`、`MONTH`、`DAYOFMONTH`、`DAYOFWEEK`、`DAYOFYEAR`、`WEEK`、`QUARTER`、`HOUR`、`MINUTE`。<br/>- 文字列：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
+| [ 日付（部分） ](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる文字列部分は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
+| [ 日付（切り捨て） ](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
 
 {style="table-layout:auto"}

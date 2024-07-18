@@ -1,5 +1,5 @@
 ---
-description: Adobe Analyticsダッシュボードモバイルアプリを使用するためのユーザーの設定方法
+description: Adobe Analytics ダッシュボードモバイルアプリを使用するユーザーの設定方法
 title: ダッシュボードを使用するエグゼクティブの設定
 feature: Analytics Dashboards
 role: User, Admin
@@ -7,7 +7,7 @@ exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '712'
 ht-degree: 74%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 74%
 エグゼクティブユーザーがアプリのスコアカードにアクセスできるようにするには、次の点を確認します。
 
 * ユーザーのモバイル OS が、iOS バージョン 10 以上または Android バージョン 4.4（KitKat）以上である。
-* ユーザーには、有効なログイン情報がCustomer Journey Analyticsに含まれています。
+* ユーザーにCustomer Journey Analyticsへの有効なログインがある。
 * モバイルスコアカードを正しく作成し、共有している。
 * ユーザーがスコアカードに含まれるコンポーネントにアクセスできる。スコアカードを共有する際に、「**[!UICONTROL 埋め込みコンポーネントを共有]**」オプションを選択することもできます。
 
@@ -35,23 +35,23 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->モバイルアプリは、App Store では「Adobe Analytics dashboard」という名前ですが、アプリはCustomer Journey Analyticsのモバイルスコアカードでも同じように使用できます。
+>モバイルアプリの名前はアプリストアでAdobe Analytics dashboard に付けられていますが、アプリはCustomer Journey Analyticsモバイルスコアカードでも同様に使用できます。
 
 **iOS**：
 
-次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイル商談）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックし（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（mobile opp）]** の下のCustomer Journey Analyticsでも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Android**：
 
-次のリンクをクリックします (Customer Journey Analyticsの **[!UICONTROL ツール]** > **[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]**) をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンク（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** の下のCustomer Journey Analyticsでも使用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-ダウンロードしてインストールすると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。AdobeID と Enterprise/Federated ID の両方をサポートしています。
+ダウンロードしてインストールすると、エグゼクティブユーザーは既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。アドビでは、Adobe ID と Enterprise/Federated ID の両方をサポートしています。
 
-![Adobe Analyticsダッシュボードのようこそ画面](assets/welcome.png)
+![Adobe Analytics ダッシュボードのスタートアップスクリーン ](assets/welcome.png)
 
 ## エグゼクティブによるスコアカードへのアクセスの支援
 
@@ -74,7 +74,7 @@ ht-degree: 74%
 
 共有するスコアカードにタイルが表示される仕方をエグゼクティブユーザーに説明します。
 
-![選択した日付範囲、セグメントフィルター、指標およびディメンションを含むタイルの説明を実行する](assets/newexplain.png)
+![ 日付範囲、セグメントフィルター、選択した指標およびディメンションを含む説明タイル ](assets/newexplain.png)
 
 ![スコアカードの例](assets/intro_scorecard.png)
 
@@ -112,7 +112,7 @@ ht-degree: 74%
 
 ![何も共有されていない](assets/nothing.png)
 
-* エグゼクティブユーザーが誤ったCustomer Journey Analyticsサンドボックスを選択している、または
+* エグゼクティブユーザーが間違ったCustomer Journey Analyticsサンドボックスを選択した、または
 * スコアカードがエグゼクティブユーザーと共有されていない
 
-エグゼクティブユーザーが適切なCustomer Journey Analyticsサンドボックスにログインでき、スコアカードが共有されていることを確認します。
+エグゼクティブユーザーが適切なスコアカードサンドボックスにログインでき、Customer Journey Analyticsが共有されていることを確認します。

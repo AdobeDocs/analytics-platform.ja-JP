@@ -14,18 +14,18 @@ ht-degree: 61%
 
 # Adobe Experience Platform でのマーケティングチャネルディメンションの使用
 
-組織が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) レポートスイートのデータをCustomer Journey Analyticsに取り込むには、マーケティングチャネルディメンションに関するレポートをCustomer Journey Analyticsで接続を設定します。
+[Analytics ソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を使用してレポートスイートデータをCustomer Journey Analyticsに送信する場合は、Customer Journey Analyticsの接続を設定して、マーケティングチャネルディメンションに関するレポートを作成できます。
 
 ## 前提条件
 
-* レポートスイートデータは、既に、 [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja). 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
-* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。詳しくは、 [マーケティングチャネルの処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) ( Adobe Analytics Components ガイド ) を参照してください。
+* [Analytics ソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja) を使用して、事前にレポートスイートデータをAdobe Experience Platformに読み込んでおく必要があります。 他のデータソースはサポートされません。これは、マーケティングチャネルが Analytics レポートスイートの処理ルールに依存しているためです。
+* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。Adobe Analytics コンポーネントガイドの [ マーケティングチャネルの処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=ja) を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
 
-目的のレポートスイートに Analytics ソースコネクタを確立すると、XDM スキーマが作成されます。 このスキーマには、すべての Analytics ディメンションと指標が生データとして含まれています。この生データには、アトリビューションや永続性は含まれていません。代わりに、各イベントはマーケティングチャネルの処理ルールを確認し、最初に一致したルールを記録します。アトリビューションと永続性は、Customer Journey Analyticsでデータビューを作成する際に指定します。
+目的のレポートスイートに Analytics ソースコネクタを確立すると、XDM スキーマが作成されます。 このスキーマには、すべての Analytics ディメンションと指標が生データとして含まれています。この生データには、アトリビューションや永続性は含まれていません。代わりに、各イベントはマーケティングチャネルの処理ルールを確認し、最初に一致したルールを記録します。Customer Journey Analyticsでデータビューを作成する際に、アトリビューションと永続性を指定します。
 
-1. [接続の作成](/help/connections/create-connection.md) Analytics ソースコネクタに基づくデータセットを含む
+1. Analytics ソースコネクタに基づいたデータセットを含む [ 接続を作成 ](/help/connections/create-connection.md)。
 2. 次のディメンションを含む[データビューを作成](/help/data-views/create-dataview.md)します。
    * **`channel.typeAtSource`**：[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=ja)に相当します。
    * **`channel._id`**：[マーケティングチャネルの詳細](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=ja)に相当します。
@@ -36,7 +36,7 @@ ht-degree: 61%
 
 >[!NOTE]
 >
-> Analytics ソースコネクタでは、 `channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があります。それ以外の場合、XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、空白になります `channel._id` Analytics ソースコネクタは空白になります。 `channel.typeAtSource` 同様に。 その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
+> Analytics ソースコネクタでは、`channel.typeAtSource` （マーケティングチャネル）および `channel._id` （マーケティングチャネルの詳細）を入力する必要があり、そうでない場合は、どちらも XDM ExperienceEvent に引き継がれません。 ソースレポートスイートでマーケティングチャネルの詳細が空白の場合、`channel._id` が空白となり、Analytics ソースコネクタはも `channel.typeAtSource` 空白にします。 その結果、Adobe Analytics と Customer Journey Analytics の間でレポートの違いが生じる可能性があります。
 
 ## 処理とアーキテクチャの違い
 
@@ -55,21 +55,21 @@ ht-degree: 61%
   ![訪問の最初のページ](../assets/first-page-of-visit.png)
 
 * **ラストタッチチャネルの上書き**：マーケティングチャネルマネージャでこのオプションを設定すると、通常は、特定のチャネルがラストタッチチャネルのクレジットを受け取るのを回避できます。Platform ではこの設定が無視されるため、「ダイレクト」や「内部」などの幅広いチャネルが、潜在的に好ましくない方法で指標の影響を受けます。「ラストタッチチャネルの上書き」をオフにしているチャネルを削除することをお勧めします。
-   * マーケティングチャネルマネージャーで「ダイレクト」マーケティングチャネルを削除して、そのチャネルでCustomer Journey Analyticsの「値なし」ディメンション項目を使用できます。 また、データビューを設定する際に、このディメンション項目の名前を「ダイレクト」に変更したり、ディメンション項目を完全に除外したりすることもできます。
-   * また、マーケティングチャネルの分類を作成し、Customer Journey Analyticsで除外するチャネル以外に、各値をそれ自体に分類することもできます。 その後、データビューを作成する際に、`channel.typeAtSource` の代わりに、この分類ディメンションを使用できます。
+   * マーケティングチャネルマネージャーで「ダイレクト」マーケティングチャネルを削除し、そのチャネルのCustomer Journey Analyticsの「値なし」ディメンション項目を利用できます。 また、データビューを設定する際に、このディメンション項目の名前を「ダイレクト」に変更したり、ディメンション項目を完全に除外したりすることもできます。
+   * または、Customer Journey Analyticsで除外するチャネルを除く各値をそれ自体に分類して、マーケティングチャネルの分類を作成できます。 その後、データビューを作成する際に、`channel.typeAtSource` の代わりに、この分類ディメンションを使用できます。
 
   ![ラストタッチチャネルの上書き](../assets/override-last-touch-channel.png)
 
-* **マーケティングチャネルの有効期限**：このエンゲージメント期間の設定に従い、無操作状態が続いた後に、レポートスイートデータで新しいファーストタッチチャネルを取得できるようにします。 Platform は独自の属性設定を使用するので、この設定はCustomer Journey Analyticsでは完全に無視されます。
+* **マーケティングチャネルの有効期限**：このエンゲージメント期間設定では、レポートスイートデータでユーザーが新しいファーストタッチチャネルを取得するまでの非アクティブ期間を決定します。 Platform は独自のアトリビューション設定を使用するので、この設定はCustomer Journey Analyticsでは完全に無視されます。
 
   ![マーケティングチャネルの有効期限](../assets/marketing-channel-expiration.png)
 
-## Customer Journey AnalyticsとAdobe Analyticsのデータの比較
+## Customer Journey AnalyticsとAdobe Analytics間のデータの比較
 
-Adobe Experience PlatformのアーキテクチャはAdobe Analyticsのレポートスイートとは異なるので、結果が一致するかどうかは保証されません。 ただし、次のヒントを参考にすると、データの比較が容易になります。
+Adobe Experience PlatformのアーキテクチャはAdobe Analytics レポートスイートとは異なるので、結果の一致は保証されません。 ただし、次のヒントを参考にすると、データの比較が容易になります。
 
 * 上記のアーキテクチャの違いが比較に影響しないことを確認します。これには、ラストタッチチャネルを上書きしないチャネルの削除や、訪問（セッション）の初回ヒットというルール条件の削除が含まれます。
-* 接続でAdobe Analyticsと同じレポートスイートが使用されていることを再確認します。 Customer Journey Analytics接続に、独自のマーケティングチャネルの処理ルールを持つ複数のレポートスイートが含まれる場合、Adobe Analyticsと比較するのは簡単ではありません。 データを比較するには、各レポートスイートに対して個別に接続を作成する必要があります。
+* 接続でAdobe Analyticsと同じレポートスイートが使用されていることを再確認します。 Customer Journey Analytics接続に、独自のマーケティングチャネル処理ルールを持つ複数のレポートスイートが含まれている場合、Adobe Analyticsと比較する簡単な方法はありません。 データを比較するには、各レポートスイートに対して個別に接続を作成する必要があります。
 * 同じ日付範囲を比較すること、およびデータビューのタイムゾーン設定がレポートスイートのタイムゾーンと同じであることを確認してください。
 * レポートスイートデータを表示する際には、カスタムアトリビューションモデルを使用します。例えば、デフォルト以外のアトリビューションモデルを使用する指標を含む[マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=ja)ディメンションを使用します。デフォルトのディメンションである[ファーストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=ja)または[ラストタッチチャネル](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=ja)に対する比較は行わないことをお勧めします。これは、これらがレポートスイートで収集されるアトリビューションに依存しているためです。Customer Journey Analyticsは、レポートスイートのアトリビューションデータに依存しません。代わりに、Customer Journey Analyticsレポートの実行時に計算されます。
-* レポートスイートデータと Platform データのアーキテクチャの違いにより、一部の指標は適切に比較されません。例えば、訪問/セッション、人/人、回数/イベントなどがあります。
+* レポートスイートデータと Platform データのアーキテクチャの違いにより、一部の指標は適切に比較されません。例としては、訪問/セッション、人物/人物、発生件数/イベントがあります。

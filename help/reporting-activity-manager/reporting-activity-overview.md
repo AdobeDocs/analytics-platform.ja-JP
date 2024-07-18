@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # レポートアクティビティマネージャーの概要
 
-この [!UICONTROL レポートアクティビティマネージャー] は、管理者が使用できます。
+[!UICONTROL  レポートアクティビティマネージャー ] は、管理者が使用できます。
 
 ピーク時のレポート作成時にレポートのパフォーマンスが低下した場合は、レポートアクティビティマネージャーを使用すると、Adobeカスタマーケアの対応なしで処理能力の問題を自己診断して修正できます。 単一のインターフェイス内でレポートキューを簡単に管理でき、即座にアクションを起こ&#x200B;てユーザーエクスペリエンスを向上さ&#x200B;せることができます。
 
@@ -32,12 +32,12 @@ ht-degree: 16%
 
 <!-- update for CJA -->
 
-レポートアクティビティを管理するには、製品管理者の役割が必要です。 詳しくは、を参照してください [Customer Journey Analyticsアクセス制御](/help/technotes/access-control.md).
+レポートアクティビティを管理するには、製品管理者の役割が必要です。 詳しくは、[Customer Journey Analyticsアクセス制御 ](/help/technotes/access-control.md) を参照してください。
 
 ## レポートアクティビティの表示
 
-レポートアクティビティマネージャーでのレポートアクティビティの表示については、次を参照してください [レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md).
+レポートアクティビティマネージャーでレポートアクティビティを表示する方法については、[ レポートアクティビティマネージャーでのレポートアクティビティの表示 ](/help/reporting-activity-manager/reporting-activity.md) を参照してください。
 
 ## レポートリクエストのキャンセル
 
-レポートアクティビティマネージャーでのレポートリクエストのキャンセルについて詳しくは、以下を参照してください [レポートアクティビティマネージャーでのレポートリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
+レポートアクティビティマネージャーでのレポートリクエストのキャンセルについて詳しくは、[ レポートアクティビティマネージャーでのレポートリクエストのキャンセル ](/help/reporting-activity-manager/reporting-activity-cancel-requests.md) を参照してください。

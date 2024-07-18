@@ -18,10 +18,10 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 この変換は、次のクラスに基づく、B2B ルックアップスキーマ用のデータを含んだデータセットでのみ使用できます。
 
-* [XDM ビジネスアカウント人物関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM ビジネスオポチュニティ人物関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM ビジネスキャンペーンメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM ビジネスアカウント人物関係 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM ビジネスオポチュニティ人物関係 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM ビジネスマーケティングリストメンバー ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM ビジネスキャンペーンメンバー ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 このようなデータセットの変換を有効にするには：
 
-![変換データセットを有効にする](assets/transform-dataset.gif)
+![ 変換データセットを有効にする ](assets/transform-dataset.gif)
 
-* に適した ID を選択してください。 **[!UICONTROL キー]** および **[!UICONTROL 一致するキー]**、例： `personKey.sourceKey`.
+* **[!UICONTROL キー]** および **[!UICONTROL 一致するキー]** に対して適切な識別子（例：`personKey.sourceKey`）を選択してください。
 
 * 新しいデータの読み込みとデータセットのバックフィルに関するオプションを選択します。
 
-* を選択 **[!UICONTROL B2B ルックアップ用のデータセットの変換]**.
+* **[!UICONTROL B2B ルックアップ用のデータセットを変換]** を選択します。
 
   このオプションは、B2B シナリオでのユーザーベースの検索に使用できるように、データセットを変換します。
 
@@ -57,4 +57,4 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 変換により、4 つのスキーマクラス（下図のオレンジ色）のデータセットが変更され、各個人識別子に対して、ルックアップデータセットに関連するデータ（アカウント、商談、マーケティングリストまたはキャンペーン）の（オブジェクト）配列（下図のピンク色）が作成されます。 この変換により、人物 ID ベースの検索を正しく機能させることができます。
 
-![B2B スキーマ](./assets/b2b-schemas.svg)
+![B2B スキーマ ](./assets/b2b-schemas.svg)

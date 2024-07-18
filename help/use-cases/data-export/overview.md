@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## はじめに
 
-Adobe Analyticsとアトリビューションのユニークな違いの 1 つは、Customer Journey Analyticsとセッション化のためのデータの処理に関連しています。 参照： [Adobe AnalyticsとCustomer Journey Analytics間でのデータ処理の比較](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) を参照してください。
+Adobe Analyticsとアトリビューションのユニークな違いの 1 つは、Customer Journey Analyticsとセッション化のためのデータの処理に関連しています。 詳しくは、[Adobe AnalyticsとCustomer Journey Analytics間でのデータ処理の比較 ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) を参照してください。
 
 ### Adobe Analytics：コレクション時間のアトリビューションとセッション。
 
@@ -38,7 +38,7 @@ Adobe Analyticsでは、すべてのイベントがデバイス ID 別にライ�
 
 Customer Journey Analyticsすると、イベントが順番に収集されず、デバイス ID の代わりにユーザー ID が使用されるので、Customer Journey Analyticsはレポート時にアトリビューションとセッション化を更新できます。 このタイプのデータ収集では、次のような柔軟性が導入されます。
 
-* ステッチは次のことができます _再生_ 毎日または毎週のデータ。匿名イベントと既知のイベントを関連付けます。 参照： [ステッチ](../../stitching/overview.md) を参照してください。
+* ステッチでは、毎日または毎週データを _再生_ し、匿名イベントを既知のイベントに関連付けることができます。 詳しくは、[ ステッチ ](../../stitching/overview.md) を参照してください。
 * セッション化と永続化の値は毎回変更されます
    * 新しいデータが収集されるか、
    * ステッチにより、個人の履歴にイベントが追加されます。
@@ -73,7 +73,7 @@ Customer Journey Analyticsすると、イベントが順番に収集されず、
 
 | データ書き出しの使用例 | Experience PlatformとCustomer Journey Analytics機能 |
 |---|---|
-| **データバックアップ**<br/>&#x200B;コンプライアンスまたは規制目的で、デジタル・データの完全なコピーを保持します。 | **Experience Platform**: [**データセットを書き出し**](export-datasets.md)<br/> Experience Platformで収集したデータを、スケジュールに従って、またはアドホックでクラウドの宛先に直接書き出します。<br/>*現在の限定リリースでは、Customer Journey Analyticsのお客様向けの完全リリースは 2024 年 6 月に予定されています。* |
-| **データの検証**<br/>&#x200B;データ収集の正確性を確保するために、クリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> お気に入りの SQL ツールを使用してアドホック SQL クエリを実行し、データセット内のデータを検証する Interactive PostgreSQL インターフェイス。<br/><br/>**Customer Journey Analytics**: [**完全なテーブルを書き出し**](export-full-table.md)<br/>&#x200B;アトリビューションとセッション化が適用された CJA から処理済みのデータを検証します。 |
-| **Data Lake、Data Warehouseまたは BI ツール**<br/>&#x200B;独自の BI ツールまたはデータレイクにデジタルデータを取り込み、追加のデータセットで使用します。 | **Customer Journey Analytics**: [**BI 拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsの処理済み指標をデータなどのデータビジュアライゼーションツールに追加し、カスタムPower BIの追加データと組み合わせます&#x200B;<br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br>&#x200B;クラウドの宛先に配信する SQL を使用して、カスタマイズされたクリックストリームデータを生成します。 |
-| **AI/ML に対する対応**<br/> Customer Journey Analyticsデータを使用して、人工知能/機械学習のモデルとタスクを強化します。 | **Customer Journey Analytics**: [**完全なテーブルを書き出し**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標を、計算指標やセグメント化を含め、クラウドの宛先に 1 回限りまたは定期的に書き出します。<br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQL を使用してカスタマイズされたクリックストリームデータを生成し、AI/ML モデルを強化します。 |
+| **データのバックアップ**<br/> コンプライアンスや規制の目的で、デジタル・データの完全なコピーを保持します。 | **Experience Platform**: [**データセットを書き出し**](export-datasets.md)<br/> Experience Platformで収集したデータを、スケジュールに従って、またはアドホックでクラウドの宛先に直接書き出します。<br/>*現在限定リリースで、Customer Journey Analyticsのお客様向けの完全リリースは 2024 年 6 月に予定されています。* |
+| **データの検証**<br/> データ収集の正確性を確保するためにクリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス （データDistiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> お気に入りの SQL ツールを使用してアドホック SQL クエリを実行し、データセット内のデータを検証する Interactive PostgreSQL インターフェイス。<br/><br/>**Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> アトリビューションとセッション化が適用された状態で、CJA から処理済みデータを検証します。 |
+| **データレイク、Data Warehouseまたは BI ツール**<br/> 独自の BI ツールまたはデータレイクにデジタルデータを取り込み、追加のデータセットで使用します。 | **Customer Journey Analytics**: [**BI 拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsの処理済み指標をデータなどのPower BIビジュアライゼーションツールに追加し、カスタムレポートの追加データと組み合わせます <br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br> SQL を使用してカスタマイズされたクリックストリームデータを生成し、クラウドの宛先に配信します。 |
+| **AI/ML への対応**<br/> Customer Journey Analyticsデータを用いて人工知能/機械学習モデルとタスクを強化します。 | **Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標を、計算指標やセグメント化を含めて、クラウドの宛先に 1 回限りまたは定期的にエクスポートします。<br/><br/>**Experience Platform**: [**クエリサービス （データDistiller）およびデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQL を使用してカスタマイズされたクリックストリームデータを生成し、AI / ML モデルを強化します。 |

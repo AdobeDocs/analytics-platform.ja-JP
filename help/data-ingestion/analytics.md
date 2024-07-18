@@ -28,9 +28,9 @@ ht-degree: 81%
 
 これには、次の手順を実行する必要があります。
 
-- Adobe Experience Platform で **Adobe Analytics ソースコネクタを設定**&#x200B;します。ソースコネクタは、現在のAdobe AnalyticsデータをAdobe Experience Platformのデータセットに取り込む処理をおこないます。
+- Adobe Experience Platform で **Adobe Analytics ソースコネクタを設定**&#x200B;します。ソースコネクタは、現在のAdobe Analytics データをAdobe Experience Platformのデータセットに取り込みます。
 
-- Customer Journey Analytics で、**接続を設定**&#x200B;します。接続には、少なくともAdobe Experience Platformデータセットを含める必要があります。
+- Customer Journey Analytics で、**接続を設定**&#x200B;します。接続には、（少なくとも）Adobe Experience Platform データセットを含める必要があります。
 
 - Customer Journey Analytics で&#x200B;**データ表示を設定**&#x200B;し、Analysis Workspace で使用する指標とディメンションを定義します。
 
@@ -39,7 +39,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->このクイックスタートガイドは、Adobe Analyticsソースコネクタを使用してデータを取り込み、Customer Journey Analyticsでそのデータを使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、Adobe Analytics ソースコネクタを使用してデータを取り込み、Customer Journey Analyticsでそのデータを使用する方法に関するシンプルなガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## Adobe Analytics ソースコネクタの設定
@@ -54,32 +54,32 @@ Adobe Analytics ソースコネクタを作成するには：
 
 3. Adobe Analytics タイル内で「**[!UICONTROL 設定]**」または「**[!UICONTROL データを追加]**」を選択します。
 
-   ![Adobe Experience Platformウィンドウで、「ソース」が選択され、「Adobe」アプリケーションと「データを追加」がハイライト表示されています。](./assets/sources-overview.png)
+   ![ 選択したソースを含むAdobe Experience Platform ウィンドウと、Adobeアプリケーション、「データを追加」がハイライト表示されています。](./assets/sources-overview.png)
 
 4. **[!UICONTROL レポートスイート]**&#x200B;を選択します。レポートスイートのリストから、使用するレポートスイートを選択します。
 
-   ![レポートスイートリストを表示するAdobe Experience Platformウィンドウ](./assets/report-suites.png)
+   ![ レポートスイートリストを表示するAdobe Experience Platform ウィンドウ ](./assets/report-suites.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 5. 「**[!UICONTROL デフォルトのスキーマ]**」を[!UICONTROL ターゲットスキーマ]として選択します。Adobe Experience Platform は、選択した Adobe Analytics レポートスイートのすべての標準フィールドをマッピングするために、スキーマと対応するデータセットを自動的に作成します。
 
-   ![デフォルトスキーマが選択されたAdobe Experience Platformウィンドウ](./assets/default-schema.png)
+   ![ デフォルトのスキーマが選択されたAdobe Experience Platform ウィンドウ ](./assets/default-schema.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 6. データフローに名前を付け、（オプションで）説明を入力します。
 
-   ![「データフローの詳細」セクションをハイライトしたAdobe Experience Platformウィンドウ](./assets/dataflow-detail.png)
+   ![ データフローの詳細セクションを強調表示したAdobe Experience Platform ウィンドウ ](./assets/dataflow-detail.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
 7. 接続を確認し、「**[!UICONTROL 終了]**」を選択します。
 
-   ![確認用に「接続」セクションと「データタイプ」セクションをハイライトしたAdobe Experience Platformウィンドウ](./assets/review.png)
+   ![ レビュー用に「接続」セクションと「データタイプ」セクションがハイライト表示されたAdobe Experience Platform ウィンドウ ](./assets/review.png)
 
 
-接続が作成されると、データフローが自動的に作成され、レポートスイートのAdobe Analyticsデータがデータセットに入力されます。 データフローは、実稼働サンドボックス用に最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、最大 3 か月に制限されています。
+接続が作成されると、レポートスイートのAdobe Analytics データをデータセットに入力するデータフローが自動的に作成されます。 データフローは、実稼動用サンドボックスに対して最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスでのバックフィルは、3 か月に制限されています。
 
 初回の取り込みが完了すると、Adobe Analytics レポートスイートのデータが Customer Journey Analytics で使用できる状態になります。
 
@@ -90,7 +90,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
 Adobe Experience Platform データを Customer Journey Analytics で使用するには、接続（スキーマ、データセット、ワークフローの設定によって生成されたデータを含む）を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience Platformと Workspace のデータセット間で接続を確立する必要があります。
+接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience PlatformとWorkspaceのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -112,7 +112,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-     ![データセットウィンドウを追加](./assets/cja-connections-2a.png)
+     ![ データセットを追加ウィンドウ ](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
 
@@ -193,7 +193,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、ディメンションと指標のドラッグ&amp;ドロップを [!UICONTROL フリーフォームテーブル] （内） [!UICONTROL パネル] . 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
@@ -202,5 +202,5 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。取り込んだAdobe Analyticsデータと他のデータを使用するCustomer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。取り込んだAdobe Analytics データと他のデータを使用するために、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
 

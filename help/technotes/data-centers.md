@@ -17,6 +17,6 @@ Adobe Customer Journey Analyticsは、北米（バージニア オンタリオ�
 
 プロビジョニング時に、お客様はAdobe Experience Platform データが存在する地域を指定します。 Experience Platformデータレイクから CJA に取り込まれたデータは、同じリージョンに保存されます。
 
-![CJA データセンター](assets/data-centers.png)
+![CJA データセンター ](assets/data-centers.png)
 
-参照： [地域データ収集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) 詳しくは、Adobe Experience Cloud ドキュメントを参照してください。
+詳しくは、Adobe Experience Cloud ドキュメントの [ 地域データ収集 ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) を参照してください。

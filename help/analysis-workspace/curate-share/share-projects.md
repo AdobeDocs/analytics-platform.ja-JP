@@ -51,7 +51,7 @@ ht-degree: 69%
 
 * プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。プロジェクトの役割は、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) で管理されるユーザー権限とは独立しています。
 
-* Customer Journey Analyticsでは、グループはの製品プロファイルによって定義されています。 [Adobe Experience Cloud admin console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja). 管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
+* Customer Journey Analyticsでは、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) の製品プロファイルによってグループが定義されます。 管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
 
 * 複数の役割に配置されたユーザーは、常に最高のエクスペリエンスを得ることができます。これは、ユーザーが個人として、またはグループの一部として追加された場合に発生する可能性があります。例えば、個人として&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割、グループのメンバーとして&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;の役割を付与されたユーザーは、**[!UICONTROL オリジナルを編集]**&#x200B;プロジェクトエクスペリエンスを受け取ります。
 
@@ -65,7 +65,7 @@ ht-degree: 69%
 
 特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには、次の手順に従います。
 
-1. Customer Journey Analyticsで、 [!UICONTROL **ワークスペース**] tab キーを押してから、 [!UICONTROL **プロジェクト**] 左パネルで。
+1. Customer Journey Analyticsで「[!UICONTROL **Workspace**]」タブを選択し、左パネルで「[!UICONTROL **プロジェクト**] を選択します。
 
 1. 共有する 1 つ以上のプロジェクトの横にあるチェックボックスを選択し、「[!UICONTROL **共有**]」を選択します。
 
@@ -76,7 +76,7 @@ ht-degree: 69%
 
    共有プロジェクトダイアログボックスが表示されます。ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
 
-   ![プロジェクトを共有ウィンドウ。](assets/share-proj-modal.png)
+   ![ プロジェクトを共有ウィンドウ ](assets/share-proj-modal.png)
 
 1. 提供された役割フィールドの 1 つに、受信者または受信者のグループを追加します。
 
@@ -88,7 +88,7 @@ ht-degree: 69%
 
 1. （条件付き） 1 つのプロジェクトを共有する場合は、プロジェクトを共有する際に次のオプションを有効にするかどうかを選択します。
 
-   * **埋め込みプロジェクトコンポーネントの共有：** フィルター、計算指標、日付範囲をすべての受信者と共有します。 共有すると、これらのコンポーネントは受信者の Workspace のコンポーネントドロップダウンに表示されます。この設定は持続しません。共有時の 1 回限りのアクションです。
+   * **埋め込みプロジェクトコンポーネント：** フィルター、計算指標、日付範囲をすべての受信者と共有します。 共有すると、これらのコンポーネントは受信者の Workspace のコンポーネントドロップダウンに表示されます。この設定は持続しません。共有時の 1 回限りのアクションです。
 
    * **受信者のランディングページとして設定：**&#x200B;このページを受信者のランディングページとして設定します。この設定は持続しません。共有時の 1 回限りのアクションです。
 
@@ -112,13 +112,13 @@ ht-degree: 69%
 
 1. **[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択したあと、「**[!UICONTROL リンクで共有]**」フィールドの横の「**[!UICONTROL コピー]**」を選択します。
 
-   ![「リンクで共有」フィールドをハイライト表示した共有プロジェクト。](assets/share-proj-modal.png)
+   ![ 「リンクで共有」フィールドをハイライト表示した共有プロジェクト。](assets/share-proj-modal.png)
 
 1. リンクを組織内のユーザーと共有します。例えば、メールや内部 web サイトなどにペーストすることができます。
 
 ## 任意のユーザーとのプロジェクトの共有（ログイン不要） {#share-public-link}
 
-付与できる権限 [読み取り専用アクセス](/help/analysis-workspace/curate-share/view-only-projects.md) へのAnalysis Workspace プロジェクトを、Customer Journey Analyticsへのアクセス権を持たないユーザーに公開します。 このようなユーザーには以下が含まれます。
+Customer Journey Analyticsへのアクセス権を持たないユーザーに対して、Analysis Workspace プロジェクトへの [ 読み取り専用アクセス ](/help/analysis-workspace/curate-share/view-only-projects.md) を付与できます。 このようなユーザーには以下が含まれます。
 
 * 組織外のユーザー
 
@@ -128,17 +128,17 @@ ht-degree: 69%
 >
 >Customer Journey Analyticsへのアクセス権を持たないユーザーとAnalysis Workspace プロジェクトを共有する場合は、次の点を考慮してください。
 >
->* この方法でプロジェクトを共有する機能は、の説明に従って、Customer Journey Analytics管理者が無効にすることができます [環境設定](/help/analysis-workspace/user-preferences.md). この節で説明するようにプロジェクトを共有できない場合、Customer Journey Analytics管理者がこの機能を無効にしています。
+>* この方法でプロジェクトを共有する機能は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、Customer Journey Analytics管理者が無効にすることができます。 この節で説明するようにプロジェクトを共有できない場合、Customer Journey Analytics管理者がこの機能を無効にしています。
 >
 >* 50 を超える展開されたビジュアライゼーションを含むプロジェクトは、Customer Journey Analyticsへのアクセス権を持たないユーザーと共有することはできません。
 >
->* と共有するユーザーは、次の期間にプロジェクトに適用されたフィルターを表示できます [キュレーション](curate.md).
+>* 共有するユーザーは、[ キュレーション ](curate.md) 中にプロジェクトに適用されたフィルターを表示できます。
 > 
 >* 共有相手となるユーザーは、プロジェクトの日付範囲を変更できます。プロジェクトに設定した日付範囲がデフォルトで表示されます。
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* この [!UICONTROL 任意のユーザーと共有] healthcare Shield ライセンスとプライバシーおよびセキュリティシールド ライセンスの両方で、機能がブロックされています。
+>* Healthcare Shield ライセンスとプライバシーおよびセキュリティシールド ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能がブロックされています。
 
 次のビデオデモおよび付属のドキュメントでは、任意のユーザーとのリンクの共有に関連するオプションについて説明しています。
 
@@ -166,13 +166,13 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
      このオプションが有効になっている場合、プロジェクトにアクセスできるのは、共有しているプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーのみです。 ただし、共有相手のユーザーは、Adobe Analytics へのアクセス権が不要です。
 
-     の説明に従って、Customer Journey Analytics管理者は会社のこの環境設定を設定できます。 [環境設定](/help/analysis-workspace/user-preferences.md). 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
+     Customer Journey Analytics管理者は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、会社のこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 
       * このオプションが表示されない場合は、Customer Journey Analytics管理者がこの機能を有効にしていません。
 
       * このオプションが有効になっていて、無効にできない場合は、Customer Journey Analytics管理者がAnalysis Workspace プロジェクトにアクセスするすべてのユーザーにExperience Cloud認証を要求していることを意味します。 これは、Healthcare Shield のライセンスを取得している組織には常に当てはまります。
 
-1. 「」の横 **[!UICONTROL 任意のユーザーと共有（ログイン不要）]** フィールドで、 **リンクをコピー** アイコン ![リンクアイコンをコピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)）を選択して、リンクをシステムクリップボードにコピーします。
+1. 「**[!UICONTROL 任意のユーザーと共有（ログインは不要）]**」フィールドの横にある **リンクをコピー** アイコン ![ リンクアイコンをコピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)）をクリックして、リンクをシステムのクリップボードにコピーします。
 
 1. プロジェクトへのアクセス権を付与するユーザーとリンクを共有します。例えば、リンクをメールにペーストできます。
 
@@ -186,7 +186,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 ユーザーが[特定のプロジェクトの役割を共有](#share-a-specific-project-role)してプロジェクトを共有すると、[Analytics ランディングページの「プロジェクト」タブ](/help/getting-started/landing.md#navigate-the-projects-tab)から共有プロジェクトにアクセスできます。
 
-の送信者または [「プロジェクトを共有」タブ](#share-a-link-to-a-project) または [任意のユーザーと共有リンク](#share-a-project-with-anyone-no-login-required)）、プロジェクトにアクセスするには、共有されていたリンクを使用する必要があります。 例えば、メールや内部 web サイトなどでリンクが共有されている場合があります。
+[ 「プロジェクトを共有」タブ ](#share-a-link-to-a-project) または [ 任意のユーザーと共有リンク ](#share-a-project-with-anyone-no-login-required) を使用して）リンクを共有してプロジェクトを共有する場合、プロジェクトにアクセスするには、共有されているリンクを使用する必要があります。 例えば、メールや内部 web サイトなどでリンクが共有されている場合があります。
 
 ## 埋め込みコンポーネントの共有
 
@@ -199,6 +199,6 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 | 質問 | 回答 |
 |---|---|
 | 2 人の編集者が同時にプロジェクトを保存するとどうなりますか？ | 変更は結合されず、最後に保存したプロジェクトのバージョンが保持されます。Analysis Workspace は現在、ライブコラボレーションをサポートしていません。 |
-| 管理者として、どのプロジェクトエクスペリエンスが表示されますか。 | に配置された管理者 **[!UICONTROL コピーを編集]** または **[!UICONTROL 読み取り専用]** 役割は、プロジェクトを開いたときに、これらの限定的なエクスペリエンスを受け取ります。 管理者は、必要に応じて、以下の目的で役割を拡大することができます。 **[!UICONTROL オリジナルを編集]** ～までいつでもできる **[!UICONTROL Components] > [!UICONTROL プロジェクト]**. |
-| 受信者が 1 つの役割に個人として配置され、別の役割にグループのメンバとして配置された場合はどうなりますか？ | 受信者が複数の役割に配置されている場合、常により高いエクスペリエンスを受け取ります。例えば、受信者にパスワードが指定された場合、 **[!UICONTROL オリジナルを編集]** 個人としての役割と **[!UICONTROL 表示可能]** グループのメンバーとしての役割は、次を受け取ります **[!UICONTROL オリジナルを編集]** プロジェクトエクスペリエンス。 |
+| 管理者として、どのプロジェクトエクスペリエンスが表示されますか。 | **[!UICONTROL 編集コピー]** または **[!UICONTROL 読み取り専用]** の役割を付与された管理者は、プロジェクトを開いたときに、それらの限定的なエクスペリエンスを受け取ります。 管理者は、必要に応じて、**[!UICONTROL コンポーネント ]/[!UICONTROL  プロジェクト]** を使用して、いつでも自分の役割を **[!UICONTROL 元の編集]** に増やすことができます。 |
+| 受信者が 1 つの役割に個人として配置され、別の役割にグループのメンバとして配置された場合はどうなりますか？ | 受信者が複数の役割に配置されている場合、常により高いエクスペリエンスを受け取ります。例えば、受信者が個人として **[!UICONTROL オリジナルを編集]** の役割、グループのメンバーとして **[!UICONTROL 閲覧]** の役割を付与された場合、受信者は **[!UICONTROL オリジナルを編集]** プロジェクトエクスペリエンスを受け取ります。 |
 | プロジェクトのリンクを開いた場合、ユーザーはどのようなエクスペリエンスを得られますか。 | 受信者は、共有モーダルに配置した役割を受け取ります。受信者に役割が割り当てられておらず、プロジェクトへのリンクを受信した場合（**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;で、「**[!UICONTROL リンクごとに共有]**」フィールドの横にある「**[!UICONTROL コピー]**」を選択）、受信者はデフォルトで役割に配置されます。管理者は「**[!UICONTROL オリジナルを編集]**」を受信し、管理者以外は「**[!UICONTROL コピーを編集]**」を受信します。 |

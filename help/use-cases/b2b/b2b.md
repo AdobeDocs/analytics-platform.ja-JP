@@ -32,9 +32,9 @@ B2B のこのユースケースは、個人レベルではなくアカウント�
 
 ## 1. ルックアップスキーマの作成（Experience Platform）
 
-用の独自スキーマの作成 [参照](/help/technotes/glossary.md) 表は、使用するデータセットが正しい設定（レコードタイプ）でCustomer Journey Analyticsで使用できることを確認しています。 ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#create-new-class)することです。
+[ ルックアップ ](/help/technotes/glossary.md) テーブル用に独自のスキーマを作成すると、使用するデータセットが正しい設定（レコードタイプ）でCustomer Journey Analyticsできるようになります。 ベストプラクティスは、「Lookup」と呼ばれる、すべての要素が空ですべてのルックアップテーブルに再使用できる[カスタムスキーマクラスを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#create-new-class)することです。
 
-![新規クラスを作成ダイアログ。](../assets/create-new-class.png)
+![ 新しいクラスを作成ダイアログ ](../assets/create-new-class.png)
 
 ## 2. ルックアップデータセットの作成（Experience Platform）
 
@@ -63,8 +63,8 @@ CSV ファイルを使用している場合は、[CSV ファイルを XDM スキ
 | データセット名 | 説明 | Adobe Experience Platform スキーマクラス | データセットの詳細 |
 | --- | --- | --- | --- |
 | B2B インプレッション | アカウントレベルのクリックストリーム、イベントレベルのデータが含まれます。例えば、マーケティング広告を実行するための電子メール ID と対応するアカウント ID、およびマーケティング名が含まれます。また、各ユーザーに対するこれらの広告のインプレッションも含まれます。 | XDM ExperienceEvent スキーマクラスに基づく | `emailID` はプライマリ ID として使用され、 `Customer ID` 名前空間が割り当てられています。その結果、この変数は Customer Journey Analytics でデフォルトの&#x200B;**[!UICONTROL ユーザー ID]** として表示されます。![インプレッション](../assets/impressions-mixins.png) |
-| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | を選択 `emailID` このスキーマのプライマリ ID として。 |
-| B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | ～間の関係 `accountID` と、B2B インプレッションデータセットは、次の手順で説明するように、B2B 情報データセットをCustomer Journey Analyticsの B2B インプレッションデータセットに接続することで、自動的に作成されました。 ![ルックアップ](../assets/lookup-mixins.png) |
+| B2B プロファイル | このプロファイルデータセットは、役職、所属先のアカウント、LinkedIn プロファイルなど、アカウント内のユーザーに関する詳細情報を提供します。 | XDM 個人版プロファイルスキーマクラスに基づく | このスキーマのプライマリ ID として `emailID` を選択します。 |
+| B2B 情報 | 上記の「ルックアップデータセットの作成」を参照してください。 | B2BAccount（カスタムルックアップスキーマクラス） | 以下の手順に示すように、B2B 情報データセットと B2B インプレッションデータセットをCustomer Journey Analyticsで接続することで、`accountID` と B2B インプレッションデータセットの間の関係が自動的に作成されます。 ![ルックアップ](../assets/lookup-mixins.png) |
 
 データセットを組み合わせる方法を次に示します。
 

@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # データ要素の正常性の監視
 
-Customer Journey Analytics管理者は、正常なデータディクショナリの管理を担当します。
+Customer Journey Analytics管理者は、正常なデータディクショナリを保持する責任があります。
 
 ## 正常なデータ要素の特徴
 
@@ -37,7 +37,7 @@ Customer Journey Analytics管理者は、正常なデータディクショナリ
 
    データ要素ウィンドウが表示されます。
 
-   ![辞書のヘルスを示すデータ辞書管理者のビュー](assets/data-dictionary-admin.png)
+   ![ 要素の正常性を示すデータ要素管理者ビュー ](assets/data-dictionary-admin.png)
 
 1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。
 

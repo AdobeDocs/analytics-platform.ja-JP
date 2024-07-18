@@ -18,7 +18,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 ## 従来の Adobe Analytics からのデータの取り込み
 
-このワークフローでは、Analytics ソースコネクタを使用し、タグマネージャーとして DTM を使用するか、Launch を使用するかによって異なります。
+このワークフローでは、Analytics ソースコネクタを使用し、タグマネージャーとして DTM と Launch のどちらを使用するかによって異なります。
 
 ### Adobe Experience Platform（以前の [!UICONTROL Launch]）のタグを使用する場合
 
@@ -31,7 +31,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja) は、Adobe Experience Cloud のお客様が Adobe Experience Platform Edge Network. を通じて Experience Cloud の様々なサービスとやり取りできるようにする、クライアントサイド JavaScript ライブラリです。
 
-1. [タグでのAdobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja) を使用して、web プロパティからAdobe Experience Platform Edge Network を通じてAdobe Experience Cloudにデータを送信できます。
+1. [ タグでAdobe Experience Platform Web SDK 拡張機能を設定 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja) し、web プロパティからAdobe Experience Platform Edge Networkを通じてAdobe Experience Cloudにデータを送信します。
 1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の[接続](/help/connections/create-connection.md)と[データ表示](/help/data-views/data-views.md)を作成します。
 
 ## バッチ取り込みとストリーミング取り込みによるデータの取り込み
@@ -52,7 +52,7 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 
 [Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html)について、このチュートリアルをご確認ください。
 
-## 一括データ挿入 API を使用してデータを Analytics に取り込み、Analytics ソースコネクタを介して取り込みます。Experience Platform
+## Bulk Data Insertion API を使用してデータを Analytics に取り込んでから、Experience Platformで Analytics ソースコネクタを介して取り込む
 
 1. [Bulk Data Insertion API を使用](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)して、サーバーサイドの収集データを Adobe Analytics に送信します。イベントデータを含む CSV 形式のファイルを送信できます。
 1. [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成して、このコンシューマデータを Adobe Experience Platform に取得します。

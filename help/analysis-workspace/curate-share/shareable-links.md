@@ -8,25 +8,25 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 55%
+ht-degree: 79%
 
 ---
 
 # 共有可能なリンクの作成
 
-Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。リンクタイプによっては、プロジェクトにアクセスする前に受信者がAdobe Analyticsにログインする必要がある場合と、ログインしない場合があります。
+Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。一部のリンクタイプでは、プロジェクトにアクセスする前に受信者が Adobe Analytics にログインする必要がありますが、その他のリンクタイプでは必要ありません。
 
-## 他の Workspace ユーザーと共有するプロジェクトリンクを取得する {#project-link}
+## 他の Workspace ユーザーと共有するプロジェクトリンクの取得 {#project-link}
 
-プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、「次に移動」を選択します。 [!UICONTROL **共有**] > [!UICONTROL **プロジェクトリンクを取得**] ( または **共有**] > [!UICONTROL **Workspace ユーザーと共有**] > [!UICONTROL **リンクで共有**) をクリックします。 リンクを共有するユーザーは、ログインする必要があります。
+プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、[!UICONTROL **共有**]/[!UICONTROL **プロジェクトリンクを取得**] （または **共有**]/[!UICONTROL **Workspace ユーザーと共有**]/**UICONTROL （リンクで共有**）に移動します。 リンクを共有するユーザーは、ログインする必要があります。
 
-リンクの受信者に [プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)管理者が受け取る **[!UICONTROL オリジナルを編集]** 管理者以外が受け取る **[!UICONTROL コピーを編集]** エクスペリエンス。
+リンクの受信者に[プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)が割り当てられていない場合、管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;エクスペリエンスを受信し、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;エクスペリエンスを受信します。
 
-## 他のユーザーと共有する読み取り専用リンクを取得する
+## 任意のユーザーと共有する読み取り専用リンクの取得
 
-Customer Journey Analyticsへのアクセス権を持たないユーザーと、Analysis Workspaceプロジェクトへの読み取り専用リンクを共有できます。
+Customer Journey Analyticsへのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できます。
 
-詳しくは、この記事の「誰とでもプロジェクトを共有する（ログインは不要）」を参照してください。 [プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md).
+詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の記事の「任意のユーザーとのプロジェクトの共有（ログイン不要）」を参照してください。
 
 ## パネルまたはビジュアライゼーションリンクの取得 {#panel-link}
 
@@ -37,7 +37,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja)します。
 
-![「ビジュアライゼーションを取得」リンクがハイライトされたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-viz-link.png)
+![ ビジュアライゼーションリンクを取得がハイライト表示されたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-viz-link.png)
 
 ## 目次でのリンクの使用 {#TOC}
 
@@ -45,4 +45,4 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 リンクと Workspace のリッチテキストエディターを使用して目次を作成する方法に関する[ビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=ja)をご覧ください。
 
-![プロジェクト目次です。](assets/toc.png)
+![ プロジェクトの目次。](assets/toc.png)

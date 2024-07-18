@@ -12,20 +12,20 @@ ht-degree: 24%
 
 # フィルターの積み重ねと置き換え
 
-計算指標ビルダー内で、フィルターの積み重ねと置き換えをおこなうことができます。
+計算指標ビルダー内でフィルターの積み重ねと置き換えができます。
 
 ## フィルターを積み重ねる {#stack-filter}
 
-1. 指標の作成を開始します ( [指標の作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. 指標の作成を開始します。詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
 
-1. 「定義」キャンバスで、既存のフィルターの横に新しいフィルターをドロップします。
+1. 定義キャンバスで、既存のフィルターの横に新しいフィルターをドロップします。
 
-![既存の国際訪問者の横にドロップされた米国の訪問者指標を示す定義キャンバス。](assets/cm_stack_seg.png)
+![ 既存の国際訪問者の横にドロップされた米国訪問者指標を示す定義キャンバス。](assets/cm_stack_seg.png)
 
 ## フィルターを別のフィルターに置き換える {#replace-filter}
 
-1. 指標の作成を開始します ( [指標の作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. 指標の作成を開始します。詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
 
-1. 「定義」キャンバスで、既存のフィルターの上に新しいフィルターをドロップします。
+1. 定義キャンバスで、既存のフィルターの上に新しいフィルターをドロップします。
 
-![「国際訪問者」指標の上にドロップした米国の訪問者数を示す定義キャンバス。](assets/cm_replace_seg.png)
+![ 国際訪問者指標の上位にドロップされた米国の訪問者を示す定義キャンバス。](assets/cm_replace_seg.png)

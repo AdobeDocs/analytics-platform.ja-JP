@@ -3,13 +3,13 @@ description: Analysis Workspaceでの予測では、一連の高度な統計的�
 title: 予測で使用される統計的手法
 feature: Visualizations
 role: User
-source-git-commit: 1bd24ee1163e4615bf5626c51aec9f167352f2f6
+exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
+source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # 予測サービスで使用される統計的手法
 
@@ -54,7 +54,6 @@ ht-degree: 5%
 
 ## 参照
 
-1. Taylor, Sean J., and Benjamin Letham: *大規模な予測。* アメリカの統計学者 72.1 （2018 年）:37-45。
-1. Triebe, Oskar, et al.: *Neuralprophet：大規模な予測が可能です。* arXiv 事前印刷 arXiv:2111.15397 （2021）.
-1. Zhang と Arbor: *時系列の異常値検出。* 米国特許出願#18/057883.
-
+1. Taylor, Sean J., and Benjamin Letham: *大規模な予測。アメリカの統計学者 72.1 （2018）:37-45 を* します。
+1. Triebe, Oskar, et al.: *Neuralprophet：大規模な予測。* arXiv preprint arXiv:2111.15397 （2021）.
+1. Zhang and Arbor: *時系列の異常値検出。* 米国特許出願#18/057883.

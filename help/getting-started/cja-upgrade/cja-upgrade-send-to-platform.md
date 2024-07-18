@@ -21,8 +21,8 @@ ht-degree: 66%
 
 | アップグレードタスク | 詳細 |
 |---------|----------|
-| **手順 1: [アップグレードの概要](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | Customer Journey Analyticsへのアップグレードのメリットと基本的なアップグレードプロセスについて説明します。 |
-| **手順 2: [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
+| **手順 1:[ アップグレードの概要](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | Customer Journey Analyticsへのアップグレードのメリットと基本的なアップグレードプロセスについて説明します。 |
+| **手順 2:[ アップグレードパスを選択する](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
 | <span class="preview">**手順 3：データを Adobe Experience Platform に送信**</span> | <span class="preview">Adobe Experience Platformにデータを送信するプロセスは、手順 2 で選択したアップグレードパスによって異なります。</span> |
 | **手順 4：[履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | ほとんどの組織では、Adobe Analytics の履歴データを一定期間保持する必要があります。これを実現するために様々なオプションが利用できます。 |
 | **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analyticsからのアップグレードや、新しいCustomer Journey Analyticsの実装にも当てはまります。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
@@ -32,7 +32,7 @@ ht-degree: 66%
 +++
 
 
-お先に [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md) 組織に最適な方法は、Adobe Experience Platformへのデータの送信を開始して、Customer Journey Analyticsで利用できるようにすることです。
+組織に最適な [ アップグレードパスを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-path.md) した後、Adobe Experience Platformへのデータの送信を開始して、Customer Journey Analyticsで利用できるようにします。
 
 各アップグレードパスのデータをExperience Platformに送信するプロセスを以下に示します。 詳細な設定情報については、表内のリンクに従ってください。
 

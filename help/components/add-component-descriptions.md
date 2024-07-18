@@ -1,5 +1,5 @@
 ---
-description: 管理者は、データビューを使用して、コンポーネントの説明を追加できます。
+description: 管理者は、データビューを使用してコンポーネントの説明を追加できます。
 title: コンポーネントの説明の追加
 feature: Components
 role: Admin
@@ -15,17 +15,17 @@ ht-degree: 39%
 
 説明は、ユーザーが Analysis Workspace でプロジェクトを作成する際またはレポートを表示する際に、様々なコンポーネントを最適に使用する方法を理解するのに役立ちます。
 
-Customer Journey Analytics管理者は、コンポーネント (Dimension、指標、フィルター、日付範囲 ) の説明をデータビュー内で追加したり、Analysis Workspace内で直接データディクショナリを使用したりできます。
+Customer Journey Analytics管理者は、データビュー内またはAnalysis Workspace内でデータ要素を直接使用して、コンポーネント（Dimension、指標、フィルターおよび日付範囲）の説明を追加できます。
 
-## データビューでのコンポーネントへの説明の追加
+## データビューのコンポーネントへの説明の追加
 
-次のビデオでは、データビューにディメンションと指標の説明を追加する方法を説明します。
+次のビデオでは、データビューでディメンションと指標の説明を追加する方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
 ## （データ辞書を使用した）Analysis Workspace のコンポーネントへの説明の追加 {#add-descriptions}
 
-Analysis Workspaceのデータディクショナリは、ユーザーと管理者の両方が、ユーザー環境のコンポーネントを追跡し、より深く理解するのに役立ちます。 これには、Customer Journey Analytics管理者がAnalysis Workspace内でコンポーネントの説明を直接追加する機能が含まれます。
+Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCustomer Journey Analytics環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。 これには、Customer Journey Analytics管理者がAnalysis Workspace内にコンポーネントの説明を直接追加する機能が含まれます。
 
 データ辞書にコンポーネントの説明を追加する方法については、[データ辞書でのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。
 

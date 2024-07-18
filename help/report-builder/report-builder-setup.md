@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics での Report Builder の設定方法
-description: Customer Journey AnalyticsでReport Builderを設定する方法を説明します
+description: Customer Journey AnalyticsでReport Builderを設定する方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 # Report Builder の設定
 
-Excel アドインメニューを使用すると、Report Builderにすばやくアクセスできます。
+Excel のアドインメニューを使用して、Report Builderにすばやくアクセスできます。
 
 ## 要件
 
@@ -72,11 +72,11 @@ Report Builder アドインをダウンロードしてインストールする�
 
 IT またはセキュリティチームに連絡して、Report Builder アドインの承認をリクエストします。承認されたら、Office アドインダイアログで、「管理者による管理」タブを選択します。
 
-![Office アドインダイアログの [ 管理 ] タブ](./assets/image1.png)
+![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png)
 
 Report Builder アドインをインストールすると、Report Builder アイコンが Excel の「ホーム」タブのリボンに表示されます。Excel リボンの「ホーム」タブに「Report Builder」アイコンが表示されます。
 
-![Excel のReport Builderアイコン](./assets/rb_app_icon.png)
+![Excel のReport Builderアイコン ](./assets/rb_app_icon.png)
 
 ## Report Builder へのログイン
 
@@ -88,11 +88,11 @@ Report Builder アドインをインストールすると、Report Builder ア�
 
 1. Adobe Report Builder ツールバーで、「**ログイン**」をクリックします。
 
-   ![「ログインReport Builder」ボタンをクリックします。](./assets/rb_login.png)
+   ![ 「Report Builderログイン」ボタンをクリックします。](./assets/rb_login.png)
 
 1. Adobe Experience ID アカウント情報を入力します。アカウント情報は、Customer Journey Analytics の資格情報と一致する必要があります。
 
-   ![ログインアイコンと組織。](./assets/image4.png)
+   ![ ログインアイコンと組織。](./assets/image4.png)
 
 ログインすると、パネルの上部にログインアイコンと組織が表示されます
 
@@ -104,7 +104,7 @@ Report Builder アドインをインストールすると、Report Builder ア�
 
 1. 使用可能な組織のリストから組織を選択します。自身がアクセス権を持っている組織のみが表示されます。
 
-   ![アクセスできる組織のリスト。](./assets/image5.png)
+   ![ アクセスできる組織のリスト ](./assets/image5.png)
 
 ## ログアウト
 
@@ -114,6 +114,6 @@ Report Builder アドインをインストールすると、Report Builder ア�
 
 1. アバターアイコンをクリックして、ユーザープロファイルを表示します。
 
-   ![ユーザープロファイルのアバターと「サインアウト」ボタン。](./assets/image6.png)
+   ![ ユーザープロファイルのアバターと「ログアウト」ボタン ](./assets/image6.png)
 
 1. 「**ログアウト**」をクリックします。
