@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 42%
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 42%
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **インテリジェントアラート** | インテリジェントアラートがCustomer Journey Analyticsで使用できるようになり、データで異常なイベントが発生した場合に、すぐに通知を受け取れるようになりました。<p>異常値のしきい値、変更された割合、または特定のデータポイントに基づいてトリガーされるアラートを設定できます。 アラートは、異常値検出と統合され、最も必要なときにトリガーされる詳細なコントロールを提供します。</p><p>Customer Journey Analyticsでインテリジェントアラートを使用するプロセスは、Adobe Analyticsでインテリジェントアラートを使用するプロセスとほとんど同じです。 1 つの主な違いは、1 時間ごとのアラートはCustomer Journey Analyticsでは使用できないことです。 この違いは、取り込み可能な様々な種類のイベントデータのデータ取り込みが、遅延（通常、データイベント時間から 3～9 時間後）の後にのみ完了するためです。</p><p>（フォローするドキュメントのリンクを更新）</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | 2024年7月26日（PT） |
-| **レポートをクラウドに書き出す際に使用するアカウントと場所を制御するための管理者設定** | [ ロケーションマネージャー」の新しい「管理者設定」タブでは ](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only) ユーザーがアカウントとロケーションを作成および編集できるかどうかを管理者が制御できます。<p>これらの設定は、ユーザー [ クラウド書き出しアカウントを設定 ](/help/components/exports/cloud-export-accounts.md) および [ クラウド書き出し場所を設定 ](/help/components/exports/cloud-export-locations.md) の際に適用されます。</p><p>また、管理者は、ユーザーが作成および使用できるアカウントのタイプを制限することもできます。 アカウントタイプには、Google Cloud Platform、Azure RBAC、Amazon S3、AEP Data Landing Zone、Snowflakeなどがあります。</p><p>以前は、すべてのユーザーが、あらゆるタイプのアカウントと場所を作成、編集、使用できました。</p> | 2024年7月11日（PT） | 2024年7月19日（PT） |
+| **レポートをクラウドに書き出す際に使用されるアカウントと場所を制御する管理者設定** | [場所マネージャーの新しい「管理設定」タブ](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only)により、管理者はユーザーがアカウントと場所を作成および編集できるかどうかを制御できます。<p>これらの設定は、ユーザーが[クラウドの書き出しアカウントを設定](/help/components/exports/cloud-export-accounts.md)し、[クラウドの書き出し場所を設定](/help/components/exports/cloud-export-locations.md)する際に適用されます。</p><p>また、管理者は、ユーザーが作成および使用できるアカウントのタイプを制限することもできます。アカウントタイプには、Google Cloud Platform、Azure RBAC、Amazon S3、AEP データランディングゾーン、Snowflake などがあります。</p><p>以前は、すべてのユーザーが、あらゆるタイプのアカウントと場所を作成、編集、使用できました。</p> | 2024年7月11日（PT） | 2024年7月19日（PT） |
 | **概要レベルデータソース** | 人物 ID を持たない時系列データを取り込むことができます。 この時系列データは、次のような様々なユースケースをサポートするために使用できます。<ul><li>イベントレベルのデータの一部または隣にハイレベルのパフォーマンス指標を提示する。 これには、日付などの単純なものから 1 つの指標値を含めるか、広告インプレッション数、メール開封数、広告費用、売上原価など、複数のディメンションと指標を含めることができます。</li><li>毎日、毎週、毎月、または四半期ごとにターゲットまたは目標をアップロードし、イベントレベルの指標に対してこれらのターゲットまたは目標を配置すると、組織のターゲットまたは目標に対する指標のトレンドを視覚化するのに役立ちます。</li></ul><p>（フォローするドキュメントのリンクを更新）</p> |  | 2024年7月31日（PT） |
 | **派生フィールド – 重複排除関数** | 派生フィールドの [ 重複排除関数 ](/help/data-views/derived-fields/derived-fields.md#deduplicate) を使用すると、値が複数回カウントされるのを防ぐことができます。 |  | 2024年7月17日（PT） |
 | **CJA のお客様向けのガイド付き分析プロビジョニング** | ガイド付きCustomer Journey Analyticsを使用すると、分析のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 <p>マーケティングから製品まで部門を横断するチームがリアルタイムでつながって、これらのレポートを使用し理解することができます。</p><p>CJA パッケージ内で最大 11 個のガイド付き分析ビューを使用できるようになりました。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 2024年7月17日（PT） |
