@@ -5,10 +5,10 @@ title: クラウドの書き出しアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 9a0e6ed66a20eac1fa5f94efd378842a579826c0
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 30%
+source-wordcount: '1965'
+ht-degree: 29%
 
 ---
 
@@ -45,8 +45,6 @@ ht-degree: 30%
    * 共有アカウントは、そのアカウントの所有者のみが編集できます。
 
    * 共有アカウントの場所は誰でも作成できます。
-
-   **メモ：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。
 
 1. 「[!UICONTROL **アカウントタイプ**]」フィールドで、書き出し先のクラウドアカウントのタイプを選択します。 使用可能なアカウントタイプは、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP Data Landing Zone です。
 
