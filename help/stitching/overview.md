@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
+source-git-commit: f390789287721a777947093123f672e0a854540a
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3830'
 ht-degree: 12%
 
 ---
@@ -324,7 +324,8 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
+- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- 永続 ID も、スキーマで [ID として定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
 - Experience PlatformID サービスの ID グラフには、ステッチ中に **一時的な ID** を解決するために使用する名前空間（`Email` や `Phone` など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
