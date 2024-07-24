@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '3836'
-ht-degree: 71%
+source-wordcount: '3940'
+ht-degree: 70%
 
 ---
 
@@ -20,8 +20,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年7月** | |
+| クイック計算指標に関する情報を追加しました | [ 計算指標ビルダーで作成された計算指標 ](/help/components/apply-create-metrics.md) と [1 つのプロジェクト内でクイック計算指標として作成された計算指標 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) との違いを明確にするために、[ 指標 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) の情報を更新しました。 また、クイック計算指標を作成する方法に関する詳細も追加しました。<p>計算指標ビルダーで作成した計算指標はコンポーネントリストで使用でき、組織全体のプロジェクトに適用できます。一方、クイック計算指標として作成した計算指標は、その計算指標を作成したプロジェクト内でのみ使用できます。</p><p>また、[ 指標を作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) の情報を更新して、同様の説明を行いました。</p> |
 | 派生フィールドの重複排除関数 | 派生フィールド [ 重複排除 ](/help/data-views/derived-fields/derived-fields.md#deduplicate) 関数に関するドキュメントを追加しました。 |
-| 一般的なエラーメッセージを更新しました | [ 一般的なエラーメッセージ ](/help/analysis-workspace/workspace-faq/error-messages.md) をマイナーアップデートしました。 |
+| 一般的なエラーメッセージを更新しました。 | [一般的なエラーメッセージ](/help/analysis-workspace/workspace-faq/error-messages.md)に対するマイナーな更新を行いました。 |
 | **2024年6月** | |
 | ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集して Analysis Workspace に表示するストリーミングメディア機能のセットを参照する際に、「メディア分析」と「ストリーミングメディア」のインスタンスを「ストリーミングメディアコレクションアドオン」という名前に置き換えました。 <p>これらのアップデートは、Customer Journey Analyticsドキュメントと [Streaming Media Collection アドオンドキュメント ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview) から入手できます。</p> |
 | グラフベースのステッチ | グラフベースのステッチの導入を受けて、更新および再構築された [ ステッチドキュメント ](/help/stitching/overview.md)。 |

@@ -4,10 +4,10 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 40%
+source-wordcount: '537'
+ht-degree: 18%
 
 ---
 
@@ -37,15 +37,41 @@ ht-degree: 40%
 
 指標は、Analysis Workspace 内で様々な方法で使用できます。 Analysis Workspaceに指標やその他のタイプのコンポーネントを追加する方法について詳しくは、[Analysis Workspaceでのコンポーネントの使用 ](/help/components/use-components-in-workspace.md) を参照してください。
 
-## 計算指標
+## 計算指標の作成
 
-計算指標を使用すると、単純な演算子や統計関数を使用して、指標が相互にどのように関連しているかを簡単に確認できます。計算指標を作成する方法はいくつかあります。
+計算指標を使用すると、単純な演算子や統計関数を使用して、指標が相互にどのように関連しているかを簡単に確認できます。
 
-**[!UICONTROL コンポーネント]**/**[!UICONTROL 計算指標]** を選択できます。 これにより、[ 計算指標ビルダー ](/help/components/calc-metrics/calc-metr-overview.md) に移動し、既存の指標からカスタム指標を作成できます。
+計算指標を作成する方法はいくつかあります。 選択した方法によって、計算指標をすべてのプロジェクトのコンポーネントリストから使用できるか、計算指標が作成されたプロジェクトでのみ使用できるかが決まります。
 
-計算指標をすばやく簡単に作成できるように、フリーフォームテーブルの列の右クリックメニューに「**[!UICONTROL 選択から指標を作成]**」が追加されました。このオプションは、ヘッダー列のセルが 1 つ以上選択されると表示されます。
+### すべてのプロジェクトの計算指標を作成
 
-![ 選択範囲から作成を強調表示したWorkspace パネル ](assets/create-metric-from-selection.png)
+計算指標ビルダーを使用して、計算指標を作成できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。
+
+計算指標ビルダーへのアクセス方法について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
+
+### 単一プロジェクトの計算指標の作成
+
+作成したプロジェクトでのみ使用できるクイック計算指標を作成できます。
+
+単一プロジェクトの計算指標を作成するには：
+
+1. Analysis Workspaceで、計算指標を作成するプロジェクトを開きます。
+
+1. フリーフォームテーブルで、1 つ以上のヘッダー列のセルを右クリックし、「**[!UICONTROL 選択から指標を作成]**」を選択します。
+
+   ![ 選択範囲から作成を強調表示したWorkspace パネル ](assets/create-metric-from-selection.png)
+
+1. このプロジェクトにのみ計算指標を作成するには、次のオプションから選択します。
+
+   * [!UICONTROL **除算**]
+
+   * [!UICONTROL **減算**]
+
+   * [!UICONTROL **追加**]
+
+   * [!UICONTROL **Multiply**]
+
+   計算指標ビルダーを開いて、すべてのプロジェクトの計算指標を作成するには、「[!UICONTROL **計算指標ビルダーで開く**]」を選択して [ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を続行します。
 
 [計算指標： 実装なしの指標](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=ja)（3:42）
 

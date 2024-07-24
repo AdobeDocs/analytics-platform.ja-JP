@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 54%
+source-wordcount: '1150'
+ht-degree: 50%
 
 ---
 
@@ -16,11 +16,17 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 ## 計算指標の作成を開始
 
-計算指標の作成は、次のいずれかの方法で開始できます。
+計算指標ビルダーを使用して、計算指標を作成できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。 または、[ 指標 ](/help/components/apply-create-metrics.md) の「単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) の説明に従って、クイック計算指標を作成する [ こともできます。
 
-* Analysis Workspaceで、プロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL 指標を作成]** を選択します。
-* Analysis Workspaceでプロジェクトを開き、左パネルの **指標** セクションの横にある [!UICONTROL **プラス**] アイコンを選択します。
-* [!DNL Customer Journey Analytics] で、**[!UICONTROL コンポーネント]**/**[!UICONTROL 計算指標]** に移動し、計算指標ページの上部にある「**[!UICONTROL +追加]**」を選択します。
+計算指標ビルダーにアクセスして、コンポーネントリストで使用できる計算指標の作成を開始します。
+
+1. 次のいずれかの方法で、計算指標ビルダーにアクセスします。
+
+   * Analysis Workspaceで、プロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL 指標を作成]** を選択します。
+   * Analysis Workspaceでプロジェクトを開き、左パネルの **指標** セクションの横にある [!UICONTROL **プラス**] アイコンを選択します。
+   * [!DNL Customer Journey Analytics] で、**[!UICONTROL コンポーネント]**/**[!UICONTROL 計算指標]** に移動し、計算指標ページの上部にある「**[!UICONTROL +追加]**」を選択します。
+
+1. [ 計算指標ビルダーの領域 ](#areas-of-the-calculated-metrics-builder) に進みます。
 
 ## 計算指標ビルダーの領域
 
