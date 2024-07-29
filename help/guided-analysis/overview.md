@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -68,19 +68,19 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 ## プロビジョニング
 
-ガイド付き分析ビューは、次の方法でCustomer Journey Analyticsパッケージに含まれています。
+ガイド付き分析ビューは、次の方法で Customer Journey Analytics パッケージに含まれています。
 
-| パッケージ | 使用可能なビュー |
+| パッケージ | 利用可能なビュー |
 | --- | --- |
-| [!UICONTROL CJA アドオン ] | トレンド：使用状況、トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
-| [!UICONTROL CJA の基盤 ] | トレンド：使用状況 |
-| [!UICONTROL CJA 選択 ] | 基盤ビュー+ トレンド：頻度、ファネル：摩擦、ファネル：コンバージョンのトレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
-| [!UICONTROL CJA プライム ] | ビュー+ ユーザーストリームを選択：タイムライン、機能マトリックス：エンゲージメント、影響：リリース、影響：初回使用 |
-| [!UICONTROL CJA Ultimate] | プライムビュー |
+| [!UICONTROL CJA アドオン] | トレンド：使用状況、トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL CJA Foundation] | トレンド：使用状況 |
+| [!UICONTROL CJA Select] | 基盤ビュー + トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL CJA Prime] | ビュー + ユーザーストリームを選択：タイムライン、機能マトリックス：エンゲージメント、影響：リリース、影響：初回使用 |
+| [!UICONTROL CJA Ultimate] | Prime ビュー数 |
 
 {style="table-layout:auto"}
 
-製品プロファイル管理者は、Adobe Admin Consoleでガイド付き分析へのアクセスを追加または削除できます。
+製品プロファイル管理者は、Adobe Admin Console でガイド付き分析へのアクセスを追加または削除できます。
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com) にログインします。
 1. 製品リストから **[!UICONTROL Customer Journey Analytics]** を選択します。

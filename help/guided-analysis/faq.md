@@ -1,24 +1,24 @@
 ---
 title: ガイド付き分析に関するよくある質問
-description: ガイド付き分析に関するよくある質問です。
+description: ガイド付き分析に関するよくある質問。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
 source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 # ガイド付き分析に関するよくある質問
 
-ガイド付き分析に関するよくある質問です。
+ガイド付き分析に関するよくある質問。
 
 +++**組織はガイド付き分析にアクセスできますか？**
 
-ガイド付き分析ビューは、すべてのCustomer Journey Analyticsパッケージに含まれています。 CJA パッケージのロックが解除されるビューについて詳しくは、概要ページの [ プロビジョニング ](overview.md#provisioning) の節を参照してください。
+ガイド付き分析ビューは、すべての Customer Journey Analytics パッケージに含まれています。CJA パッケージのロックが解除されるビューについて詳しくは、概要ページの[プロビジョニング](overview.md#provisioning)の節を参照してください。
 
 +++
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 現在既に Customer Journey Analytics を使用している場合、追加の実装変更は必要ありません。ガイド付き分析では、[Analysis Workspace](../analysis-workspace/home.md) などの他の CJA インターフェイスと同じ[データビュー](../data-views/data-views.md)と[接続](../connections/overview.md)を使用します。
 
-ガイド付き分析でエンドユーザーを最も成功させるには、Adobe Experience Platformおよび [ データビュー ](../data-views/data-views.md) に強力なイベントスキーマと管理戦略を導入することをお勧めします。
+ガイド付き分析でエンドユーザーの成功を最大限に導くには、Adobe Experience Platform と[データビュー](../data-views/data-views.md)で強力なイベントスキーマと管理戦略を導入することをお勧めします。
 
 +++
 
@@ -38,7 +38,7 @@ ht-degree: 71%
 
 +++
 
-+++**ガイド付き分析とAnalysis Workspaceの用語の比較**
++++**ガイド付き分析と Analysis Workspace の用語の比較方法**
 
 ガイド付き分析では、製品チーム間でより頻繁に使用される用語を使用します。ガイド付き分析と [Analysis Workspace](../analysis-workspace/home.md) を切り替える際に、このテーブルを参照できます。
 
@@ -54,7 +54,7 @@ ht-degree: 71%
 
 +++
 
-+++**ガイド付き分析とAnalysis Workspaceによるレポートのアプローチには、どのような違いがありますか？**
++++**ガイド付き分析と Analysis Workspace アプローチのレポートの相違点**
 
 [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分析では同じ基礎データを使用しますが、各ツールでそのデータのクエリを作成する方法が異なります。
 
@@ -70,7 +70,7 @@ Web サイトのホームページに関するデータに焦点を当てる次�
 
   ![ディメンション中心](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* 一般的なイベントとユーザー中心のガイド付き分析アプローチは、「ホームページを訪問したユーザーは何人か」です。
+* イベントやユーザーを中心にした一般的な分析アプローチでは、「ホームページを訪問したユーザーの数を確認」します。
 
   ![イベント中心](assets/event-centered.png){style="border:1px solid gray"}
 

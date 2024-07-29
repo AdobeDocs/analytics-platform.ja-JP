@@ -6,15 +6,15 @@ keywords: Product Analytics
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
 source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 業界ユースケース
 
-このページでは、アナリストから製品チーム、マーケターに至るまで、顧客体験チームがガイド付き分析でどのような成果を上げられるかを、業界の例を使って示します。
+このページでは、アナリストから製品チーム、マーケターに至るまで、カスタマーエクスペリエンスチームがガイド付き分析を使用して達成できることについて、業界の例をいくつか紹介します。
 
 +++**小売**
 

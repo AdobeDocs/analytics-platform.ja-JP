@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB 派生フィールド]
 
-新しい派生フィールド関数（数学、次または前、要約、重複排除）および追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、毎月の目標、シンプルなボット検出など）が使用できるようになりました。
+新しい派生フィールド関数（数学、次または前、要約、重複排除）と追加の関数テンプレート（バウンス、わかりやすいデータセット名、ホリデーシーズン、毎月の目標、単純なボット検出など）が使用できるようになりました。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
