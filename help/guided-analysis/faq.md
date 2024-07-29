@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 94%
 
 ---
 
@@ -40,15 +40,17 @@ ht-degree: 100%
 
 +++**ガイド付き分析と Analysis Workspace の用語の比較方法**
 
-ガイド付き分析では、製品チーム間でより頻繁に使用される用語を使用します。ガイド付き分析と [Analysis Workspace](../analysis-workspace/home.md) を切り替える際に、このテーブルを参照できます。
+ガイド付き分析と [Analysis Workspace](../analysis-workspace/home.md) は、ほとんどの主要な用語に基づいて調整しますが、いくつかの小さな違いがあります。
 
 | ガイド付き分析の用語 | Analysis Workspace の用語 |
 | --- | --- |
-| イベント | 指標 |
+| イベント （バイナリ 1/0 指標） | 指標 |
 | ユーザー | ユーザー |
-| プロパティ | ディメンション |
-| 値 | ディメンション項目 |
+| ディメンション | ディメンション |
+| ディメンション項目 | ディメンション項目 |
 | セグメント | フィルター |
+| フィルター | レポートフィルター |
+| 計算指標、指標 | 計算指標 |
 
 {style="table-layout:auto"}
 
