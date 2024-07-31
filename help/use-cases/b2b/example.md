@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
+source-git-commit: c3d97fe2353011f4747d0c1742e49189cc91b85c
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 21%
@@ -32,6 +32,7 @@ ht-degree: 21%
 | B2B オポチュニティ人物関係データセット | B2B オポチュニティ人物関係スキーマ | ルックアップ | XDM Business Opportunity Person Relation | XDM Business Opportunity ユーザー関係は、ビジネスオポチュニティに関連付けられたユーザーの最低限必要なプロパティをキャプチャする、標準のエクスペリエンスデータモデル（XDM）クラスです。 |
 | B2B マーケティングリストメンバーデータセット | B2B マーケティングリストメンバースキーマ | ルックアップ | XDM マーケティングリストメンバー | XDM ビジネスマーケティングリストメンバーは、マーケティングリストに関連付けられたメンバー、人物または連絡先を記述する、標準のエクスペリエンスデータモデル（XDM）クラスです。 |
 | B2B キャンペーンメンバーデータセット | B2B キャンペーンメンバースキーマ | ルックアップ | XDM Business Campaign Members | XDM ビジネスキャンペーンメンバーは、ビジネスキャンペーンに関連付けられた連絡先またはリードを記述する標準のエクスペリエンスデータモデル（XDM）クラスです。 |
+
 <!--
 | B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
 | B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity.  |
