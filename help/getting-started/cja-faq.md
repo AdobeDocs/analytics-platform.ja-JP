@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 100%
+source-wordcount: '2547'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**履歴データのステッチ（バックフィル）はどのように機能しますか？**
 
-初めてオンにしたとき、前月の初め（最大 60 日前）まで遡ってステッチデータのバックフィルが行われます。このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](../stitching/overview.md)
+最初にオンにしたとき、Adobeはステッチデータのバックフィルを提供し、選択した範囲（使用資格のあるCustomer Journey Analyticsパッケージに応じて最大 25 か月）に戻ります。 このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。[詳細情報](../stitching/overview.md)
 
 +++
 
