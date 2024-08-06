@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2273'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 99%
 | Report Builder | Excel 用の新しい Office 365 プラグインでサポートされます。 |
 | ユーザー権限／データアクセス制御 | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、フィルターまたは注釈などを作成するためのユーザー権限を追加できます。 |
 | ビジュアライゼーション | マップビジュアライゼーションを除く、すべてのワークスペースビジュアライゼーションがサポートされます。 |
-| クロスデバイス／クロスチャネルのステッチ | ID 情報を含むイベントデータセットでサポートされます。 [ステッチ](../../stitching/overview.md)を参照してください。 |
+| クロスデバイス／クロスチャネルのステッチ | ID 情報を含むイベントデータセットに対してサポートされます。[ステッチ](../../stitching/overview.md)を参照してください。 |
 
 {style="table-layout:auto"}
 

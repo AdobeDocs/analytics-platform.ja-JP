@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: Product Analytics
 role: User
 source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 94%
 
 +++**ガイド付き分析と Analysis Workspace の用語の比較方法**
 
-ガイド付き分析と [Analysis Workspace](../analysis-workspace/home.md) は、ほとんどの主要な用語に基づいて調整しますが、いくつかの小さな違いがあります。
+ガイド付き分析と [Analysis Workspace](../analysis-workspace/home.md) は、いくつかの小さな違いはありますが、ほとんどの主要な用語が合致しています。
 
 | ガイド付き分析の用語 | Analysis Workspace の用語 |
 | --- | --- |
-| イベント （バイナリ 1/0 指標） | 指標 |
+| イベント（バイナリ 1/0 指標） | 指標 |
 | ユーザー | ユーザー |
 | ディメンション | ディメンション |
 | ディメンション項目 | ディメンション項目 |
