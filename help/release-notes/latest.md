@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4f228dbe58a9efbe988f274c071c61ec5e36d321
-workflow-type: ht
-source-wordcount: '776'
+source-git-commit: 466b4e22ba39197208a191a7298bf37a0b3e36c8
+workflow-type: tm+mt
+source-wordcount: '777'
 ht-degree: 100%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2024年7月）
 
-**最終更新日**：2024年7月29日（PT）
+**最終更新日**：2024年8月7日（PT）
 
 このリリースノートは、2024年7月17日（PT）～2024年8月のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 | **派生フィールド - 重複排除関数** | 派生フィールドの[重複排除関数](/help/data-views/derived-fields/derived-fields.md#deduplicate)を使用すると、値が複数回カウントされるのを防ぐことができます。 |  | 2024年7月17日（PT） |
 | **CJA のお客様向けのガイド付き分析プロビジョニング** | ガイド付き分析を使用すると、Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 <p>マーケティングから製品まで部門を横断するチームがリアルタイムでつながって、これらのレポートを使用し理解することができます。</p><p>CJA パッケージ内で最大 11 個のガイド付き分析ビューを使用できるようになりました。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 2024年7月17日（PT） |
 | **書き出しと読み込みに使用されるアカウントと場所の共有** | ユーザーは、作成したアカウントと場所を組織内のすべてのユーザーに対して使用できるようになりました。アカウントと場所の所有者およびシステム管理者のみが、アカウントと場所を編集および削除できます。以前は、アカウントと場所を使用できるのは、それらを作成したユーザーのみでした。これらの設定は、ユーザーが[クラウドの書き出しアカウントを設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)し、[クラウドの書き出し場所を設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)する際に使用できます。 | 2024年6月12日（PT） | 2024年7月19日（PT） |
-| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをより迅速に見つけることができます。</li></ul> <p>（ドキュメントへのリンクを添付）</p> |  | 未定 |
+| **オーディエンスは Experience Platform の新しい「オーディエンス」セクションに公開される** | Customer Journey Analytics から公開されたオーディエンスが、Adobe Experience Platform の新しい「オーディエンス」セクションで使用できるようになりました。<p>以前は、Customer Journey Analytics から公開されたオーディエンスは、Experience Platform の「セグメント」セクションで使用できました。</p><p>この改善によるメリットは次のとおりです。</p><ul><li>オーディエンスが Experience Platform に表示されるまでに 1 時間の遅延がなくなりました。公開されてから数秒後に使用できるようになります。</li><li>オーディエンスは、オーディエンスが最初に公開されたアプリケーションを表示する「接触チャネル」列を使用して、Experience Platform で並べ替えることができます。</li><li>Experience Platform のフィルターと並べ替えのオプションを使用すると、関連するオーディエンスをより迅速に見つけることができます。</li></ul> <p>（ドキュメントへのリンクを添付）</p> | 2024年8月14日（PT） | 2024年8月22日（PT） |
 
 {style="table-layout:auto"}
 
