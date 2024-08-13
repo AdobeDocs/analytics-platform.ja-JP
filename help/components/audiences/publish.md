@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
+source-git-commit: c384c4cdd1a63fd26e6eff0ff3394a089105275c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 57%
+source-wordcount: '1697'
+ht-degree: 53%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 57%
 
 この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analyticsオーディエンスの概念を理解してください。
 
-## オーディエンスを作成 {#create}
+## オーディエンスの作成と公開 {#create}
 
-1. オーディエンスを作成する際には、3 つの方法で開始できます。
+1. オーディエンスの作成と公開を開始するには、次のいずれかの操作を行います。
 
    | 作成方法 | 詳細 |
    | --- | --- |
@@ -74,26 +74,26 @@ ht-degree: 57%
 
 1. 同じメッセージ内で「**[!UICONTROL AEP でのオーディエンスの表示]**」をクリックすると、Adobe Experience Platform の [セグメント UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ja) に移動します。詳しくは、次を参照してください。
 
-## オーディエンスを作成した後はどうなりますか？ {#after-audience-created}
+## オーディエンスを作成して公開した後はどうなりますか。 {#after-audience-created}
 
-オーディエンスを作成すると、新しいCustomer Journey AnalyticsオーディエンスごとにExperience PlatformストリーミングセグメントがAdobeによって作成されます。 Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
+Customer Journey Analyticsでオーディエンスを作成して公開すると、そのオーディエンスをExperience Platformで使用できるようになります。 Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
 
-* Adobe Experience Platform セグメントは、Customer Journey Analyticsオーディエンスと同じ名前/説明を共有しますが、一意であることを確認するために、名前にCustomer Journey Analyticsオーディエンス ID が追加されます。
-* Customer Journey Analyticsオーディエンスの名前/説明を変更した場合、Adobe Experience Platform セグメントの名前/説明にもその変更が反映されます。
-* ユーザーがCustomer Journey Analyticsオーディエンスを削除しても、Adobe Experience Platform セグメントは削除されません。 これは、Customer Journey Analyticsオーディエンスの削除が後で取り消される可能性があるためです。
+* Platform のオーディエンスは、Customer Journey Analyticsオーディエンスと同じ名前/説明を共有しますが、一意になるように、名前にCustomer Journey Analyticsオーディエンス ID が追加されます。
+* Customer Journey Analyticsでオーディエンスの名前や説明に加えられた変更は、すべて Platform に反映されます。
+* Platform でオーディエンスが削除されても、そのオーディエンスはCustomer Journey Analyticsで引き続き使用できます。
 
 ## 待ち時間に関する考慮事項 {#latency}
 
 オーディエンスの公開前、公開中および公開後の複数の時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
 
-![ この節で説明しているように、オーディエンスの公開に待ち時間が発生します。](/help/components/audiences/assets/latency-diagram.png)
+![ この節で説明しているように、オーディエンスの公開に待ち時間が発生します。](assets/latency-diagram.svg)
 
 | # | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
 | 表示しない | Adobe Analyticsから Analytics ソースコネクタ（A4T） | 最大 30 分 |
 | 1 | （Analytics ソースコネクタまたはその他のソースから）データレイクへのデータ取り込み | 最大 90 分 |
 | 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
-| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。<p>**メモ**：オーディエンスは、1 ～ 2 分以内にExperience Platformで作成または定義されます。 ただし、オーディエンスが、一致した条件に基づいて ID の受信を開始し、アクティベーションの準備が整うまでに、約 60 分かかります。 | 約 60 分 |
+| 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 数秒 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 | 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
@@ -101,15 +101,34 @@ ht-degree: 57%
 
 ## Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送ります。
+Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送信します。
 
-次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。現在は、例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
-Platform でCustomer Journey Analyticsオーディエンスを表示するには、**[!UICONTROL セグメント]**/**[!UICONTROL セグメントを作成]**/**[!UICONTROL オーディエンス]** タブ/**[!UICONTROL CJA オーディエンス]** に移動します。
+Platform でCustomer Journey Analyticsオーディエンスを表示するには：
 
-Customer Journey AnalyticsオーディエンスをAdobe Experience Platform セグメントのセグメント定義にドラッグできます。
+>[!AVAILABILITY]
+>
+>次の手順で説明されている機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 これらの手順が環境に表示される手順と一致しない場合は、代わりに次の手順を使用します。[!UICONTROL **セグメント**]/[!UICONTROL **セグメントの作成**]/[!UICONTROL **オーディエンス**] タブ/[!UICONTROL **CJA オーディエンス**] に移動します。
+>
+>機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsリリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。
 
-![ 左側のパネルでセグメントをハイライト表示したAdobe Experience Platform UI と、メインパネルで CJA オーディエンス。](assets/audiences-aep.png)
+1. 左側のパネルで [!UICONTROL **顧客**] を展開し、「[!UICONTROL **オーディエンス**]」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
+
+1. 「[!UICONTROL **参照**] タブを選択します。
+
+   ![ 左パネルの「オーディエンス」オプション ](assets/audiences-aep.png)
+
+1. Customer Journey Analyticsから公開したオーディエンスを見つけるには、次のいずれかの操作を行います。
+
+   * [!UICONTROL **オリジン**] 列でテーブルを並べ替えると、[!UICONTROL **Customer Journey Analytics**] をオリジンとして示すオーディエンスが表示されます。
+
+   * フィルターアイコンを選択します。
+
+   * 検索フィールドを使用します。
+
+Platform でのオーディエンスの使用について詳しくは、Experience Platformドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ja) オーディエンス ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) の節を参照してください。
+
 
 ## よくある質問（FAQ） {#faq}
 
