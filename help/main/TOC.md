@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6d4dd1cd0e2c9b89ed37ca713ecc6d5db7d9e745
+source-git-commit: 9c022dba63fd837aee28393aceb4eac851a993ec
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 98%
 
 ---
 
@@ -91,10 +91,12 @@ ht-degree: 100%
       + [値オプションなし](../data-views/component-settings/no-value-options.md)
       + [永続性](../data-views/component-settings/persistence.md)
       + [部分文字列](../data-views/component-settings/substring.md)
+      + [概要データグループ](../data-views/component-settings/summary-data-group.md)
       + [値のバケット化](../data-views/component-settings/value-bucketing.md)
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
    + [BI 拡張機能](../data-views/bi-extension.md)
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
+   + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
 
 + Workspace プロジェクト {#cja-workspace}
@@ -346,11 +348,12 @@ ht-degree: 100%
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
-      + [Marketo Engage データの Adobe Experience Platform への取り込みと Customer Journey Analytics でのレポート](../use-cases/data-ingestion/marketo.md)
-      + [Adobe Experience Platform オーディエンスの Customer Journey Analytics への取り込み](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Marketo Engageデータの取り込みと使用](../use-cases/data-ingestion/marketo.md)
+      + [Experience Platformオーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [概要データの使用](../use-cases/data-views/summary-data.md)
    + データの書き出し {#data-export}
       + [概要](../use-cases/data-export/overview.md)
       + [BI 拡張機能](../use-cases/data-export/bi-extension.md)
