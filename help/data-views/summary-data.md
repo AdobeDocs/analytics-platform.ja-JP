@@ -4,7 +4,7 @@ description: データビューで概要データを使用および設定する�
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 
 
 # 概要データ
+
+{{release-limited-testing}}
 
 概要データは、個々のユーザー ID に関連付けられていない時系列データです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータをCustomer Journey Analyticsで使用して、様々なユースケースに対応できます。 例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
 
