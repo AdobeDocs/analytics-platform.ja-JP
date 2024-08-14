@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
-workflow-type: ht
-source-wordcount: '2273'
-ht-degree: 100%
+source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 100%
 | レポート API へのアクセス | フルサポート。[Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) を通じて使用できます。 |
 | 予定レポート／プロジェクト | フルサポート |
 | セグメント | フルサポート。現在は、「フィルター」と呼ばれています。従来の Analysis Workspace の既存のセグメントは Customer Journey Analytics に移植されません。 |
+| 概要レベルデータソース | フルサポート |
 | 仮想レポートスイート | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | 仮想レポートスイートコンポーネントのキュレーション | フルサポート。データビューの一部になりました。 |
 | デバイス, ブラウザー, リファラー, 技術の各ディメンション | [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセットと WebSDK によって生成されたデータセットの両方でサポートされます。[ADC 経由でサポートされる Analytics 変数に関するドキュメント](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=ja)を参照してください。Experience Platform Web SDK データ収集を使用する場合、デバイスルックアップに基づくデバイスとディメンションは現在サポートされていません。将来的にサポートされる予定です。Web SDK データストリームにデバイスおよびブラウザー検索を追加する方法について詳しくは、[このドキュメント](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja)を参照してください |
@@ -103,7 +104,6 @@ ht-degree: 100%
 | リアルタイムレポート | サポートが予定されています。 |
 | Segment IQ | サポートが予定されています。 |
 | トランザクション ID データソース | サポートが予定されています。 |
-| 概要レベルデータソース | サポートが予定されています。 |
 
 {style="table-layout:auto"}
 
