@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
+source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 12%
 
 ---
@@ -62,7 +62,7 @@ B2B データのユーザーベースの検索をサポートする接続を適�
    | B2B 人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
    | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
    | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
-   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>c **ampaignKey.sourceKey**❸<br/> |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**❸<br/> |
    | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
    | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
    | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
