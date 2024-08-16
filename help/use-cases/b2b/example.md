@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1223'
 ht-degree: 12%
 
 ---
@@ -58,16 +58,16 @@ B2B データのユーザーベースの検索をサポートする接続を適�
 
    | データセット | ユーザー ID | キー | 一致するキー <br/> （イベントデータセット内） |
    |---|---|---|---| 
-   | B2B アクティビティデータセット | `personKey.sourceKey` | | |
-   | B2B 人物データセット | `b2b.personKey.sourceKey` | | |
-   | B2B アカウントデータセット | | `accountKey.sourceKey`{❶1}Source キー<br/> | `b2b.accountKey.sourceKey`❶<br/> （B2B 人物データセット） |
-   | B2B 商談データセット | | `opportunityKey.sourceKey`{❷1}Source キー<br/> | `opportunityKey.sourceKey`❷<br/> （B2B 商談関係データセット） |
-   | B2B キャンペーンデータセット | | `campaignKey.sourceKey`{❸1}Source キー<br/> | `campaignKey.sourceKey`❸<br/> （B2B キャンペーンメンバーデータセット） |
-   | B2B マーケティングリストデータセット | | `marketingListKey.sourceKey`{❹1}Source キー<br/> | `marketingListKey.sourceKey`❹<br/> （B2B マーケティングリストメンバーデータセット） |
-   | B2B アカウント人物関係データセット | | `personKey.sourceKey`{❺1}Source キー<br/> | `personKey.sourceKey`{❺1}Source キー（イベントデータセット）<br/> |
-   | B2B オポチュニティ人物関係データセット | | `personKey.sourceKey`{❻1}Source キー<br/> | `personKey.sourceKey`{❻1}Source キー（イベントデータセット）<br/> |
-   | B2B キャンペーンメンバーデータセット | | `personKey.sourceKey`{❼1}Source キー<br/> | `personKey.sourceKey`{❼1}Source キー（イベントデータセット）<br/> |
-   | B2B マーケティングリストメンバーデータセット | | `personKey.sourceKey`{❽1}Source キー<br/> | `personKey.sourceKey`{❽1}Source キー（イベントデータセット）<br/> |
+   | B2B アクティビティデータセット | SourceKey <br/>**personKey.sourceKey** | | |
+   | B2B 人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
+   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>c **ampaignKey.sourceKey**❸<br/> |
+   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
+   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
+   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
+   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❼ |
+   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
