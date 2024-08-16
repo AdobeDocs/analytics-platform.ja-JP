@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
 workflow-type: tm+mt
-source-wordcount: '3940'
-ht-degree: 70%
+source-wordcount: '3990'
+ht-degree: 71%
 
 ---
 
@@ -19,8 +19,11 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| 2024年8月 | |
+| データ書き出しのユースケースの更新 | ルックバックウィンドウを使用してセッション間でアトリビューションを適切に適用する方法を示す詳細なクエリの例を [ クエリサービス（データDistiller）とデータセットの書き出し ](/help/use-cases/data-export/queryservice-export-datasets.md) に追加しました。 |
+| 概要データ | [ 概要データ ](/help/data-views/summary-data.md)、[ 概要データグループコンポーネント設定 ](/help/data-views/component-settings/summary-data-group.md) および [ 概要データのユースケース ](/help/use-cases/data-views/summary-data.md) に関するドキュメントを追加しました。 |
 | **2024年7月** | |
-| クイック計算指標に関する情報を追加しました | [ 計算指標ビルダーで作成された計算指標 ](/help/components/apply-create-metrics.md) と [1 つのプロジェクト内でクイック計算指標として作成された計算指標 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) との違いを明確にするために、[ 指標 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) の情報を更新しました。 また、クイック計算指標を作成する方法に関する詳細も追加しました。<p>計算指標ビルダーで作成した計算指標はコンポーネントリストで使用でき、組織全体のプロジェクトに適用できます。一方、クイック計算指標として作成した計算指標は、その計算指標を作成したプロジェクト内でのみ使用できます。</p><p>また、[ 指標を作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) の情報を更新して、同様の説明を行いました。</p> |
+| クイック計算指標に関する情報を追加しました | [計算指標ビルダーで作成された計算指標](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects)と [1 つのプロジェクト内でクイック計算指標として作成された計算指標](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)との違いを明確にするために、[指標](/help/components/apply-create-metrics.md)の情報を更新しました。また、クイック計算指標を作成する方法に関する詳細も追加しました。<p>計算指標ビルダーで作成した計算指標はコンポーネントリストで使用でき、組織全体のプロジェクトに適用できます。一方、クイック計算指標として作成した計算指標は、作成されたプロジェクト内でのみ使用できます。</p><p>また、[指標を作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)の情報を更新して、同様の説明を追加しました。</p> |
 | 派生フィールドの重複排除関数 | 派生フィールド [ 重複排除 ](/help/data-views/derived-fields/derived-fields.md#deduplicate) 関数に関するドキュメントを追加しました。 |
 | 一般的なエラーメッセージを更新しました。 | [一般的なエラーメッセージ](/help/analysis-workspace/workspace-faq/error-messages.md)に対するマイナーな更新を行いました。 |
 | **2024年6月** | |
