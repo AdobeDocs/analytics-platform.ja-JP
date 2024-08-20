@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 8%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 8%
 
 #### 最終認証アトリビューション
 
-Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Last-auth は、Audience Managerで使用され、リアルタイム顧客データプロファイルのユースケースで推奨されるアプローチです。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。
+Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Last-auth は、Audience Managerで使用され、リアルタイム顧客データプロファイルのユースケースで推奨されるアプローチです。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
 
 ステッチで last-auth アトリビューションを使用する場合、次の表に示すように、ステッチ ID が解決されます。
 
@@ -65,7 +65,7 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 
 #### デバイス分割
 
-デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、最も近い既知の人物に、未認証と認証済みの両方のアクティビティのクレジットを与えるので、分析ユースケースには推奨されるアプローチです。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
+デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、現在、フィールドベースのステッチで使用されています。 デバイス分割は、最も近い既知の人物に、未認証と認証済みの両方のアクティビティのクレジットを与えるので、分析ユースケースには推奨されるアプローチです。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
 
 ステッチでデバイス分割アトリビューションを使用する場合、次の表に示すように、ステッチされた ID が解決されます。
 
