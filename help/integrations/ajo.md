@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
+source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 69%
+source-wordcount: '3028'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 
 Adobe Experience Platform は、中央のデータソースとして機能し、Journey Optimizer と Customer Journey Analytics の間をリンクします。Journey Optimizer データを Experience Platform にデータセットとして送信する手順については、Journey Optimizer ユーザーガイドの[データセットの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/data-management/datasets/get-started-datasets)を参照してください。
 
-### Customer Journey Analytics で接続を作成する
+### 接続の作成
 
 Journey Optimizer データが Adobe Experience Platform に入ったら、Journey Optimizer データセットに基づいて[接続を作成](/help/connections/create-connection.md)できます。または、既存の接続に Journey Optimizer データセットを追加できます。
 
@@ -174,7 +174,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 {style="table-layout:auto"}
 
-#### データビューでの指標の設定
+#### 指標の設定
 
 データビューで次の指標を作成すると、Journey Optimizer の同様の指標とほぼ同等にすることができます。指標のカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
@@ -184,8 +184,8 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | アプリの起動回数 (AJO) | モバイルアプリが起動された回数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `application.launches.value` | コンポーネントタイプ：指標 |
 | アウトバウンドチャネルのバウンス (AJO) | アウトバウンドチャネルでのバウンスされたメッセージの合計数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標 |
 | クリック数 (AJO) | すべてのチャネルでのクリックの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
-| フォールバックオファー数（AJO） | フォールバックオファーの数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | コンポーネントタイプ：指標 |
-| オファー数（AJO） | オファーの数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | ` _experience.decisioning.`<br/>`propositions.items.id` | コンポーネントタイプ：指標 |
+| フォールバックオファー数 (AJO) | フォールバックオファー数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | コンポーネントタイプ：指標 |
+| オファー数 (AJO) | オファー数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | ` _experience.decisioning.`<br/>`propositions.items.id` | コンポーネントタイプ：指標 |
 | 重複排除の指標 (AJO) | 重複排除の指標 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_id` | コンポーネントタイプ：指標 |
 | 配信済み (AJO) | 配信されたメッセージの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
 | 却下済み (AJO) | エンドユーザーが選択して閉じたアクションに関係なく、Adobe SDK によってアプリ内メッセージが閉じられるたびにカウントします。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
