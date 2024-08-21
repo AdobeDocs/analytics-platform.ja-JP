@@ -11,8 +11,8 @@ user-guide-description: Adobe Customer Journey Analytics と、Experience Platfo
 breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -348,8 +348,8 @@ ht-degree: 98%
       + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
       + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
-      + [Marketo Engageデータの取り込みと使用](../use-cases/data-ingestion/marketo.md)
-      + [Experience Platformオーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
+      + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
       + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
