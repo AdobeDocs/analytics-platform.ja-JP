@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
+source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '3036'
+ht-degree: 69%
 
 ---
 
@@ -48,7 +48,6 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 | [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestration のジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メッセージフィードバックイベントデータセット] | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 
@@ -70,7 +69,7 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 
   | 互換性 | 値 |
   |---|---|
-  | [!UICONTROL Adobe Journey Optimizer のデフォルトのデータビューとして設定] | 有効（デフォルト）。<br/><br/>この設定オプションを使用すると、手動設定を行わなくても、Journey Optimizer で使用するデータビューを指定できます。この設定オプションを有効にする方法（デフォルトで有効になっていない場合）について詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[互換性](/help/data-views/create-dataview.md#compatibility)の節を参照してください。<br/><br/>オプションを無効にすると、デフォルトのデータビューの変更を続行するかどうかを尋ねるダイアログが表示されます。「**[!UICONTROL 続行]**」を選択した場合は、デフォルトのデータビューとして別のデータビューを選択する必要があります。「**[!UICONTROL 確認]**」を選択して選択内容を確定します。デフォルトのデータビューの変更をキャンセルするには、「**[!UICONTROL キャンセル]**」を選択します。 |
+  | [!UICONTROL Adobe Journey Optimizerのデフォルトのデータビューとして設定 ] | 有効（デフォルト）。<br/><br/>この設定オプションを使用すると、手動設定を行わなくても、Journey Optimizer で使用するデータビューを指定できます。この設定オプションを有効にする方法（デフォルトで有効になっていない場合）について詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[互換性](/help/data-views/create-dataview.md#compatibility)の節を参照してください。<br/><br/>オプションを無効にすると、デフォルトのデータビューの変更を続行するかどうかを尋ねるダイアログが表示されます。「**[!UICONTROL 続行]**」を選択した場合は、デフォルトのデータビューとして別のデータビューを選択する必要があります。「**[!UICONTROL 確認]**」を選択して選択内容を確定します。デフォルトのデータビューの変更をキャンセルするには、「**[!UICONTROL キャンセル]**」を選択します。 |
 
   | コンテナ | 値 |
   |---|---|
@@ -88,7 +87,7 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 
 - 「**コンポーネント**」タブで、次の操作を行います。
    - 名前に[!UICONTROL （AJO）]が付加されたすべての指標とディメンションは、この自動設定の一部として自動的に追加されます。
-   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。これらの派生フィールドは、この統合用に特別に作成されます。例えば、[!UICONTROL ランディングページクリック数（AJO）]という指標は、「[!UICONTROL ランディングページクリック数]」派生フィールドに基づいています。
+   - 自動的に追加された指標やディメンションの一部は、派生フィールドに基づいています。 これらの派生フィールドは、この統合用に特別に作成されます。例えば、[!UICONTROL ランディングページクリック数（AJO）]という指標は、「[!UICONTROL ランディングページクリック数]」派生フィールドに基づいています。
    - 一部の指標またはディメンションには、追加の設定があります。例えば、[!UICONTROL スパム報告件数（AJO）]には、[!UICONTROL 形式]と[!UICONTROL 値を含める／除外]の設定が適用されています。
    - 自動的に追加されたすべての指標とディメンションには、`:`*`name_of_metric_or_dimension`*という名前のコンテキストラベルが付きます。例えば、[!UICONTROL ランディングページクリック数（AJO）]という指標には、コンテキストラベル `:Landing page clicks (AJO)` が付きます。
 
@@ -101,7 +100,7 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 
 ## Journey Optimizer で使用するデータビューの手動設定
 
-次の節では、Journey Optimizer で生成されたデータを手動で使用して、Customer Journey Analytics でアドバンス分析を実行する方法について説明します。これは、[自動設定オプション](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)がニーズに対して不十分な場合にのみ必要です。
+次の節では、Journey Optimizer で生成されたデータを手動で使用して、Customer Journey Analytics でアドバンス分析を実行する方法について説明します。この手動設定は、[ 自動設定オプション ](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) がニーズを満たさない場合にのみ必要です。
 
 ### Journey Optimizer から Experience Platform にデータを送信
 
@@ -124,7 +123,7 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 {style="table-layout:auto"}
 
 
-### Journey Optimizer のディメンションと指標に対応するようにデータビューを設定
+### データ表示の設定
 
 接続を作成したら、1 つ以上の[データビュー](/help/data-views/create-dataview.md)を作成して、Customer Journey Analytics で使用できる目的のディメンションと指標を設定できます。
 
@@ -133,26 +132,45 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 >Journey Optimizer と Customer Journey Analytics の間のデータの不一致は通常、1～2％未満です。過去 2 時間以内に収集されたデータについては、より大きな不一致が生じる可能性があります。処理時間に関わる不一致を軽減するために、当日を除く日付範囲を使用します。
 
 
-#### データビューでのディメンションの設定
+#### ディメンションの設定
 
 データビューで次のディメンションを作成すると、Journey Optimizer の同様のディメンションとほぼ同等にすることができます。ディメンションのカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
-| ディメンション | スキーマ要素 | コンポーネント設定 |
-| --- | --- | --- |
-| ジャーニー名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | コンポーネントタイプ：ディメンション |
-| ジャーニー名とバージョン | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | コンポーネントタイプ：ディメンション |
-| ジャーニーノード名 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | コンポーネントタイプ：ディメンション |
-| ジャーニーノードタイプ | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | コンポーネントタイプ：ディメンション |
-| キャンペーン名 | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | コンポーネントタイプ：ディメンション |
-| チャネル | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | コンポーネントタイプ：ディメンション |
-| プッシュタイトル | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | コンポーネントタイプ：ディメンション |
-| メールの件名 | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | コンポーネントタイプ：ディメンション |
-| リンクラベル | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | コンポーネントタイプ：ディメンション |
-| 実験の名前 | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | コンポーネントタイプ：ディメンション<br>コンテキストラベル：実験 |
-| 処理の名前 | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | コンポーネントタイプ：ディメンション<br>コンテキストラベル：実験バリアント |
-| メール配信失敗の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | コンポーネントタイプ：ディメンション |
-| メール配信除外の理由 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | コンポーネントタイプ：ディメンション |
-| 要素ラベル | `_experience.decisioning.propositionAction.label` | コンポーネントタイプ：ディメンション |
+| ディメンション | 説明 | データセット | スキーマ要素 | コンポーネント設定 |
+| --- | --- | --- | --- | --- |
+| アクション実行エラー (AJO) | ジャーニーの実行時にアクションを実行できないエラー条件。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.actionExecutionError ` | コンポーネントタイプ：ディメンション |
+| アクションラベル (AJO) | エンドユーザーが操作した要素の顧客が生成した表示名。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionAction.label` | コンポーネントタイプ：ディメンション |
+| バッチ ID (AJO) | スケジュールされたアクションまたはキャンペーンジャーニーの各新しいバッチインスタンスの呼び出し時に作成された GUID。 例えば、スケジュールされたジャーニーまたはキャンペーンアクションが午前 8:00 および午前 10:00 で実行される場合、2 つの異なる batchInstanceID があります。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | ` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | コンポーネントタイプ：ディメンション |
+| バッチインスタンスのタイムスタンプ (AJO) | バッチインスタンスのタイムスタンプ | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：Dimension（派生フィールド） |
+| キャンペーン ID (AJO) | キャンペーンの ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.entities.`<br/>`campaign.campaignID` | コンポーネントタイプ：ディメンション |
+| キャンペーン名 (AJO) | キャンペーンの名前。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.entities.`<br/>`campaign.name` | コンポーネントタイプ：ディメンション |
+| キャンペーンバージョン ID (AJO) | キャンペーンのバージョン ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.campaign.campaignVersionID` | コンポーネントタイプ：ディメンション |
+| チャネル (AJO) | このデータを相関させる必要があるチャネル。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.channel._id` | コンポーネントタイプ：ディメンション |
+| 相関 ID (AJO) | 相関 ID。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.`<br/>`scopeDetails.correlationID` | コンポーネントタイプ：ディメンション |
+| 決定ポリシー ID (AJO) | この提案に含める項目を決定する際に使用する決定ポリシーの ID。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：Dimension（派生フィールド） |
+| メール受信者ドメイン (AJO) | メールアドレスのドメイン | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`emailChannelContext.address` | コンポーネントタイプ：ディメンション |
+| メールの件名 (AJO) | メールの件名 (パーソナライズされていない) | AJO エンティティデータセット | `_experience.customerJourneyManagement.entities.`<br/>`channelDetails.email.subject` | コンポーネントタイプ：ディメンション |
+| イベント ID (AJO) | 時系列イベントの一意の ID。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_id` | コンポーネントタイプ：Dimension（派生フィールド） |
+| 離脱条件 ID (AJO) | ジャーニーを終了するかどうかを決定するために使用される終了条件の ID。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaID` | コンポーネントタイプ：ディメンション |
+| 終了条件名 (AJO) | 終了条件の名前。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaName` | コンポーネントタイプ：ディメンション |
+| 実験 ID (AJO) | 実験の ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | コンポーネントタイプ：ディメンション |
+| 実験名 (AJO) | 実験の名前。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.entities.`<br/>`experiment.experimentName` | コンポーネントタイプ：Dimensionコンテキストラベル：実験 |
+| 取得エラー (AJO) | ジャーニーの実行時に取得を実行できないエラー条件。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.fetchError` | コンポーネントタイプ：ディメンション |
+| 最適化された送信時間です (AJO) | メッセージ実行の最適化された送信時間です | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageProfile.isSendTimeOptimized` | コンポーネントタイプ：ディメンション |
+| テストジャーニーです (AJO) | テストジャーニー実行のイベント部分です | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.inTest` | コンポーネントタイプ：ディメンション |
+| テストメッセージです (AJO) | テスト実行として送信されたメッセージです | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageProfile.isTestExecution` | コンポーネントタイプ：ディメンション |
+| 項目 ID (AJO) | 項目の ID。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositions.items.id` | コンポーネントタイプ：ディメンション |
+| 項目名 (AJO) | 項目の名前 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositions.items.name` | コンポーネントタイプ：ディメンション |
+| ジャーニー操作 ID | MessageExecution がトリガーされるジャーニーアクション ID。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageExecution.journeyActionID` | コンポーネントタイプ：ディメンション |
+| ジャーニーアクションノード名 (AJO) | ジャーニーのアクションノード名。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO エンティティデータセット | 派生フィールド | コンポーネントタイプ：Dimension（派生フィールド） |
+| ジャーニーイベントノード名 (AJO) | この値は、ジャーニーでセグメントまたは外部イベントが発生するたびに設定されます。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO エンティティデータセット | 派生フィールド | コンポーネントタイプ：Dimension（派生フィールド） |
+| ジャーニー ID (AJO) | ジャーニーの ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyID` | コンポーネントタイプ：ディメンション |
+| ジャーニー名 (AJO) | ジャーニーの名前。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyName` | コンポーネントタイプ：ディメンション |
+| ジャーニー名とバージョン (AJO) | ジャーニーの名前とバージョン。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNameAndVersion` | コンポーネントタイプ：ディメンション |
+| ジャーニーバージョン ID (AJO) | ジャーニーのバージョン ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.entities.`<br/>`journey.journeyVersionID` | コンポーネントタイプ：ディメンション |
+| ランディングページ ID (AJO) | ランディングページの一意の ID | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | コンポーネントタイプ：ディメンション |
+| ランディングページソース (AJO) | ランディングページのソース。 | AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：Dimension（派生フィールド） |
+| リンク URL (AJO) | ユーザーがクリックした URL。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | コンポーネントタイプ：ディメンション |
 
 {style="table-layout:auto"}
 
@@ -160,32 +178,44 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 
 データビューで次の指標を作成すると、Journey Optimizer の同様の指標とほぼ同等にすることができます。指標のカスタマイズオプションについて詳しくは、データビューマネージャーの[コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
-| 指標 | 説明 | スキーマ要素 | コンポーネント設定 |
-| --- | --- | --- | --- |
-| バウンス数 | 即時バウンス数と配信後のバウンス数の両方を含む、バウンスしたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：いずれかの条件を満たす場合<br>次と等しい：`bounce`、次と等しい：`denylist` |
-| 配信後のバウンス | 一部のメールサービスでは、メールが配信されたと報告した後で、バウンスが発生します。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | コンポーネントタイプ：指標<br>除外値を含める：`async` と等しい |
-| メールのクリック数 | メッセージ内のクリック数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`click` と等しい |
-| メール開封数 | 開封済みメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`open` と等しい |
-| エラー数 | エラーが発生したメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`error` と等しい |
-| 除外 | 除外されたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`exclude` と等しい |
-| 送信数 | メールプロバイダーが受け入れたメッセージの数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標<br>除外値を含める：`sent` と等しい |
-| スパム報告件数 | スパム報告の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`spam_complaint` と等しい |
-| 登録解除 | 登録解除の件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | コンポーネントタイプ：指標<br>除外値を含める：`unsubscribe` と等しい |
-| エッジ送信数 | エッジネットワークが web または Mobile SDK にメッセージを送信した回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.send` を使用します | |
-| インバウンド表示数 | Web またはアプリ内メッセージがユーザーに表示された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.display` を使用します | |
-| インバウンドクリック数 | Web またはアプリ内メッセージのクリック数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.interact` を使用します | |
-| アプリ内トリガー数 | 決定支援エンジンがメッセージの表示を提案した回数。Mobile SDK は決定を上書きして、実際の表示数を減らすことができます。 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.trigger` を使用します | |
-| アプリ内破棄数 | SDK によってアプリ内メッセージが UI から削除された回数 | スキーマ文字列要素 `_experience.decisioning.propositionEventType.dismiss` を使用します | |
-
-{style="table-layout:auto"}
-
-#### Analysis Workspace の計算指標の設定
-
-Journey Optimizer データセットに必要なディメンションと指標を設定したら、[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を設定し、そのデータに関する追加のインサイトを得ることもできます。これらの計算指標は、データビューマネージャーで作成された上記の指標に基づいています。
-
-| 計算指標 | 説明 | 数式 |
-| --- | --- | --- |
-| 送信済みメッセージ | 送信済みメッセージの合計数。成功または失敗したメッセージが含まれます。 | `[Sends] + [Bounces] - [Bounces After Delivery]` |
-| 配信済みメッセージ | 顧客に配信されたメールの数。 | `[Sends] - [Bounces After Delivery]` |
+| 指標 | 説明 | データセット | スキーマ要素 | コンポーネント設定 |
+| --- | --- | --- | --- | --- |
+| アプリインストール数（AJO） | アプリのインストール数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `application.installs.value` | コンポーネントタイプ：指標 |
+| アプリの起動回数 (AJO) | モバイルアプリが起動された回数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `application.launches.value` | コンポーネントタイプ：指標 |
+| アウトバウンドチャネルのバウンス (AJO) | アウトバウンドチャネルでのバウンスされたメッセージの合計数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標 |
+| クリック数 (AJO) | すべてのチャネルでのクリックの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| フォールバックオファー数（AJO） | フォールバックオファーの数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | コンポーネントタイプ：指標 |
+| オファー数（AJO） | オファーの数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | ` _experience.decisioning.`<br/>`propositions.items.id` | コンポーネントタイプ：指標 |
+| 重複排除の指標 (AJO) | 重複排除の指標 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_id` | コンポーネントタイプ：指標 |
+| 配信済み (AJO) | 配信されたメッセージの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| 却下済み (AJO) | エンドユーザーが選択して閉じたアクションに関係なく、Adobe SDK によってアプリ内メッセージが閉じられるたびにカウントします。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
+| 表示数 (AJO) | このカウントには、AJO メッセージ数が表示されます。これには、メールの開封数、web 表示数、アプリ内表示数が含まれます。モバイルプラットフォームは SMS やプッシュメッセージの表示数を報告しないのでカウントされません。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| メール開封数（AJO） | メール開封の合計数 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
+| インバウンドクリック数（AJO） | インバウンドチャネルでのクリックの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.interact` | コンポーネントタイプ：指標 |
+| インバウンド解除数（AJO） | インバウンドチャネルでの却下の合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
+| インバウンドインプレッション数（AJO） | インバウンドチャネルでのインプレッションの合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
+| ジャーニーの終了 (AJO) | 現在のステップがジャーニーのインスタンスの終了につながった場合は true。 特定のプロファイルのジャーニーの最後のステップが正常に実行された。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | コンポーネントタイプ：指標 |
+| ジャーニーエントリ (AJO) | ステップイベントがプロファイルのジャーニーエントリイベントであった場合は True。 | ジャーニーステップイベント | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| ジャーニーの出口 (AJO) | 現在のステップがジャーニーのインスタンスの終了につながった場合は true。 これは、特定のプロファイルのジャーニーの最後の手順が正常に実行された場合です。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | コンポーネントタイプ：指標 |
+| ジャーニーの失敗 (AJO) | 実行が完了したステップの現在の状態を示します。 使用可能な値：`Transitions` （次のステップはイベントの移行時に発生します）、`EndStep` （このジャーニーインスタンスの最後のステップが実行されました）、`Error` （このステップでエラーが発生し、現在のジャーニーインスタンスが終了しました）、`TimedOut` （取得またはアクションのタイムアウトによって現在のステップが終了しました）。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | コンポーネントタイプ：指標 |
+| ランディングページクリック数 (AJO) | ランディングページのクリックの合計数 | AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| ランディングページコンバージョン数 (AJO) | ランディングページのコンバージョンの合計数。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
+| ランディングページビュー数 (AJO) | ランディングページのビューの合計数。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
+| ノードエントリ (AJO) | ステップイベントがプロファイルのノードエントリイベントであった場合は True。 | ジャーニーステップイベント | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| アウトバウンドクリック数（AJO） | アウトバウンドチャネルでのクリックの合計数 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
+| アウトバウンドエラー数 (AJO) | アウトバウンドチャネル間でエラーのあるメッセージの合計数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標 |
+| アウトバウンド除外数 (AJO) | アウトバウンドチャネルでの除外イベントの合計数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標 |
+| アウトバウンド送信数（AJO） | アウトバウンドチャネルでのメッセージ送信の合計数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | コンポーネントタイプ：指標 |
+| プッシュカスタムアクション (AJO) | プッシュインタラクションのカスタムアクションの合計数。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `eventType` | コンポーネントタイプ：指標 |
+| プッシュインタラクション （AJO） | 直接プッシュメッセージのインタラクションによりモバイルアプリが起動された回数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `application.launches.value` | コンポーネントタイプ：指標 |
+| 送信数 (AJO) | すべてのチャネルでのメッセージ送信の合計数 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| SMS インバウンドメッセージ (AJO) | SMS インバウンド返信。 例えば、停止、開始、購読など。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | コンポーネントタイプ：指標 |
+| スパム報告件数 (AJO) | スパム報告の合計件数 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
+| 製品リスト追加数 (AJO) | サブスクリプションリストへの追加の合計数 | AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| サブスクリプションリストの削除数 (AJO) | サブスクリプションリストからの削除の合計数。 | AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| ターゲット (AJO) | 提案回数のこのカウントは、ユーザーに対してターゲットが絞り込まれていました。これは、ユーザーに対する表示の提案が考慮された回数です。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：指標（派生フィールド） |
+| トリガー済み (AJO) | 提案が Adobe SDK によって表示されるように選択されました。その他の要因により、実際には表示されない場合があります。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット、ジャーニーステップイベント、AJO メッセージフィードバックイベントデータセット、AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositionEventType.trigger` | コンポーネントタイプ：指標 |
+| 実験のユニーク訪問者数 (AJO) | 実験のユニーク訪問者数 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | コンポーネントタイプ：指標 |
+| 登録解除数 (AJO) | 購読解除の合計数 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | コンポーネントタイプ：指標 |
 
 {style="table-layout:auto"}
