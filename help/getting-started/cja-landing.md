@@ -4,9 +4,9 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 90%
 
 ---
@@ -84,7 +84,7 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 >[!TAB 新しいドキュメント]
 
-新しいドキュメントの節が以下で利用可能になりました。<ul><li>概要データのユースケースと B2B のユースケースです。</li><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
+新しいドキュメントの節が以下で利用可能になりました。<ul><li>概要データのユースケースと B2B のユースケース。</li><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
 
 [![i画像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
