@@ -4,19 +4,17 @@ description: データビューで概要データを使用および設定する�
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
 # 概要データ
 
-{{release-limited-testing}}
-
-概要データは、個々のユーザー ID に関連付けられていない時系列データです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータをCustomer Journey Analyticsで使用して、様々なユースケースに対応できます。 例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
+概要データは、個々のユーザー ID に関連付けられていない時系列データです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
 
 この概要データを使用して、高レベルの業績評価指標を提示したり、分析を実行したりできます。 概要データの例としては、広告インプレッション数、電子メールの開封数、広告費用、販売した商品のコスト、S&amp;P インデックスなどがあります。 概要データを使用して、1 時間ごとまたは 1 日ごとにターゲットや目標をアップロードすることもできます。
 

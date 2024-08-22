@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '4026'
 ht-degree: 71%
@@ -19,7 +19,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
-| 2024年8月 | |
+| **2024年8月** | |
 | B2B プロジェクトの例 | 新しい [B2B ルックアップ用のデータセットを変換 ](/help/use-cases/b2b/example.md) 機能を使用して、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データを設定、設定、レポートする方法について説明した [ ユースケース ](/help/connections/transform-datasets-b2b-lookups.md) を追加しました。 |
 | データ書き出しのユースケースの更新 | ルックバックウィンドウを使用してセッション間でアトリビューションを適切に適用する方法を示す詳細なクエリの例を [ クエリサービス（データDistiller）とデータセットの書き出し ](/help/use-cases/data-export/queryservice-export-datasets.md) に追加しました。 |
 | 概要データ | [ 概要データ ](/help/data-views/summary-data.md)、[ 概要データグループコンポーネント設定 ](/help/data-views/component-settings/summary-data-group.md) および [ 概要データのユースケース ](/help/use-cases/data-views/summary-data.md) に関するドキュメントを追加しました。 |
