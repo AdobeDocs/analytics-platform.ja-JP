@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 63%
+source-wordcount: '1253'
+ht-degree: 58%
 
 ---
 # スニペット
@@ -68,6 +68,7 @@ ht-degree: 63%
 | [!UICONTROL **説明**] | コンポーネントの意図された機能について説明します（この情報は、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)で説明しているように、Analytics 管理者が追加します）。 |
 | [!UICONTROL **次でよく使用される**] | <p>表示しているコンポーネントと最も一緒に使用されるコンポーネントを表示します。</p><p>指標、計算指標、Dimension、フィルターおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>このリストは、過去 90 日間のデータに基づいています。表示するアクセス権を持つコンポーネントのみを表示します。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレートする前に、最初に **すべて表示** フィルターを適用して、共有されていないコンポーネントのうち、別の管理者によって追加された可能性のあるものを表示します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p> |
 | [!UICONTROL **類似**] | <p>表示しているコンポーネントと同様の名前を持つコンポーネントを表示します。</p><p>指標、計算指標、Dimension、フィルターおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>表示するアクセス権を持つコンポーネントのみを表示します。</p><p>データビューで重複するコンポーネントはすべてここに表示されます。 [データ要素の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、Analytics 管理者はすべての重複するコンポーネントを特定して削除する必要があります。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。ユーザーに表示されるコンポーネントをキュレートする前に、最初に **すべて表示** フィルターを適用して、共有されていないコンポーネントのうち、別の管理者によって追加された可能性のあるものを表示します。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all filter to make it editable. --></p><p>**メモ：**&#x200B;現在、「**類似**」セクションには、ユーザー作成のコンポーネントのみが含まれており、アドビ提供のコンポーネントは含まれていません。アドビ提供のコンポーネントは、今後のリリースで追加される予定です。</p> |
+| [!UICONTROL **製品の互換性**] | この計算指標をCustomer Journey Analytics内で使用できる場所を示します。 <p>使用可能な値は次のとおりです。</p><ul><li>[!UICONTROL **Customer Journey Analytics内のすべての場所**]：計算指標は、Analysis WorkspaceやReport Builderなど、すべてのCustomer Journey Analyticsで使用できます。</li><li>[!UICONTROL **Customer Journey Analyticsのすべての場所（実験を除く）**]：計算指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。</li> <p>計算指標が実験で使用できるかどうかを決定する条件について詳しくは、[ 実験パネル ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) の [ 実験パネルで計算指標を使用 ](/help/analysis-workspace/c-panels/experimentation.md) を参照してください。</p></ul> |
 | [!UICONTROL **タグ**] | コンポーネントに適用されているすべてのタグを表示します。管理者アクセス権を持つユーザーは、コンポーネントの編集時にタグを追加できます。 |
 | [!UICONTROL **コンポーネントの種類**] | Dimension、指標、フィルター、または日付範囲のいずれかであるコンポーネントのタイプをリストします。 |
 | [!UICONTROL **作成者**] | コンポーネントを作成したユーザーの名前を表示します。 |

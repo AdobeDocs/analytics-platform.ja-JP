@@ -4,16 +4,16 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
+source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 35%
+source-wordcount: '2069'
+ht-degree: 29%
 
 ---
 
 # 実験パネル
 
-**[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。
+**[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
 
 詳しくは、[Adobe Customer Journey AnalyticsとAdobe Targetの統合 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) を参照してください。
 
@@ -29,7 +29,7 @@ ht-degree: 35%
 
 推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、**単一** のオブジェクト配列である必要があります。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの [ 部分文字列 ](/help/data-views/component-settings/substring.md) 設定を使用してディメンションを 2 つに分割できます。
 
-実験データがAdobe Experience Platformに [ 取り込み ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) れた後、[Customer Journey Analyticsで接続を作成 ](/help/connections/create-connection.md) 1 つ以上の実験データセットに対して。
+実験データがAdobe Experience Platformに [ 取り込み ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) れた後、[Customer Journey Analyticsで接続を作成 ](/help/connections/create-connection.md)1 つ以上の実験データセットに対して実行します。
 
 ## 手順 2：データビューでのコンテキストラベルの追加 {#context-labels}
 
@@ -46,14 +46,14 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
 ## 手順 3：実験パネルの設定 {#configure}
 
-1. Customer Journey AnalyticsWorkspaceで、実験パネルをプロジェクトにドラッグします。
+1. Customer Journey AnalyticsのAnalysis Workspaceで、実験パネルをプロジェクトに追加します。 プロジェクトへのパネルの追加について詳しくは、「[ プロジェクトの作成 [ の ](/help/analysis-workspace/build-workspace-project/create-projects.md#add-panels-to-the-project) プロジェクトへのパネルの追加 ](/help/analysis-workspace/build-workspace-project/create-projects.md) を参照してください。
 
-![ プロジェクトにドラッグされた実験パネル。](assets/experiment.png)
+   ![ プロジェクトにドラッグされた実験パネル。](assets/experiment.png)
 
->[!IMPORTANT]
->
->Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、先に進む前に「[!UICONTROL  データビューで実験ディメンションとバリアントディメンションを設定してください ]」というメッセージが表示されます。
->
+   >[!IMPORTANT]
+   >
+   >Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、先に進む前に「[!UICONTROL  データビューで実験ディメンションとバリアントディメンションを設定してください ]」というメッセージが表示されます。
+   >
 
 1. パネル入力設定を行います。
 
@@ -61,15 +61,16 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
    | --- | --- |
    | **[!UICONTROL 実験]** | どのエクスペリエンスを永続的に保持することが最適かを判断するために、エンドユーザーに公開されたエクスペリエンスに対する一連のバリエーションです。 実験は、2 つ以上のバリアントで構成され、そのうちの 1 つがコントロールバリアントと見なされます。 この設定には、データビューで&#x200B;**[!UICONTROL 実験]**&#x200B;ラベルが付けられたディメンションと、過去 3 か月分の実験データが事前に入力されています。 |
    | **[!UICONTROL コントロールバリアント]** | エンドユーザーのエクスペリエンスにおいて、より優れた代替策を特定するために比較する、複数の選択肢の 1 つです。1 つのバリアントをコントロールとして選択する必要があり、1 つのバリアントのみがコントロールバリアントと見なされます。 この設定には、データ ビューで&#x200B;**[!UICONTROL バリアント]**&#x200B;ラベルが付けられたディメンションが事前に入力されています。 この設定により、この実験に関連付けられているバリアントデータを取得します。 |
-   | **[!UICONTROL 成功指標]** | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の「最もパフォーマンスの高いバリアント」として宣言されます。 最大 5 つの指標を追加できます。 |
+   | **[!UICONTROL 成功指標]** | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の「最もパフォーマンスの高いバリアント」として宣言されます。 最大 5 つの指標を追加できます。 <p>必要な条件を満たす計算指標を使用することもできます。 詳しくは、[ 実験パネルでの計算指標の使用 ](#use-calculated-metrics-in-the-experimentation-panel) を参照してください。</p> |
    | **[!UICONTROL 指標の標準化]** | テストが実行される基準（[!UICONTROL  人 ]、[!UICONTROL  セッション ] または [!UICONTROL  イベント ]）。 例えば、テストでは、いくつかのバリエーションのコンバージョン率を比較できます。**[!UICONTROL コンバージョン率]**&#x200B;は、**[!UICONTROL セッションあたりのコンバージョン数]**&#x200B;または **[!UICONTROL 1 人あたりのコンバージョン数]**&#x200B;として計算されます。 |
+   | [!UICONTROL **信頼性の上限/下限を含める**] |  |
    | **[!UICONTROL 日付範囲]** | 選択した実験に対してCustomer Journey Analyticsで最初に受け取ったイベントに基づいて、日付範囲が自動的に設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
 
-1. 「**[!UICONTROL 作成]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」を選択します。
 
 ## 手順 4：パネル出力の表示 {#view}
 
-実験パネルは、豊富なデータとビジュアライゼーションのセットを返し、実験のパフォーマンスをより深く理解するのに役立ちます。パネルの上部に、選択したパネル設定を示すサマリー行が表示されます。右上の編集鉛筆をクリックすると、いつでもパネルを編集できます。
+実験パネルは、豊富なデータとビジュアライゼーションのセットを返し、実験のパフォーマンスをより深く理解するのに役立ちます。パネルの上部に、選択したパネル設定を示すサマリー行が表示されます。右上の編集鉛筆を選択すると、いつでもパネルを編集できます。
 
 また、実験が決定的かどうかを示すテキストの概要を取得し、結果の概要を示します。 結論は統計的有意性に基づいています。 （以下の「統計的手法」を参照。） 上昇率と信頼性が最も高く、最もパフォーマンスの高いバリアントの概要数値概要数を確認できます。
 
@@ -113,7 +114,7 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
 Customer Journey Analyticsを使用すると、アナリストは任意のディメンションを「実験」として選択できます。 しかし、実験として選択されたディメンションが、どのユーザーがランダム化されているかではない場合、分析をどのように解釈しますか？
 
-例えば、ユーザーに表示される広告について考えてみましょう。 「広告 A」ではなく「広告 B」を表示することを決定した場合は、一部の指標（平均売上高など）の変化を測定することに興味がある可能性があります。 広告 A の代わりに広告 B を表示することの因果関係は、マーケティングの決定に到達する際に最も重要です。 この因果関係は、広告 A を表示するという現状を、広告 B を表示するという代替戦略に置き換えた場合、母集団全体の平均売上高として測定できます。
+例えば、ユーザーに表示される広告について考えてみましょう。 「広告 A」ではなく「広告 B」を表示することを決定した場合は、一部の指標（平均売上高など）の変化を測定することに興味がある可能性があります。 広告 A の代わりに広告 B を表示することの因果関係は、マーケティングの決定に到達する際に最も重要です。 広告 A を表示するという現状を、広告 B を表示するという別の戦略に置き換えた場合、この因果関係は、母集団全体の平均売上高として測定できます。
 
 A/B テストは、このような介入の効果を客観的に測定するための業界内のゴールドスタンダードです。 A/B テストが因果関係の推定を導き出す決定的な理由は、考えられる変種の 1 つを受け取る人のランダム化にある。
 
@@ -127,6 +128,26 @@ Customer Journey Analyticsの実験パネルを使用すると、データを人
 
 介入 X が結果 Y に与える影響を測定する場合、両者の実際の原因が交絡因子 C である可能性があります。X に人をランダム化してデータを得なければ、影響は測定しにくく、分析は C を明確に説明しています。ランダム化は X の C への依存を壊し、他の変数を心配することなく X の Y への影響を測定できます。
 
-## 実験パネルでの計算指標の使用
+## 実験での計算指標の使用 {#use-in-experimentation}
+
+>[!NOTE]
+>
+>Customer Journey AnalyticsとAdobe Journey Optimizerの両方を使用する組織の場合、この節の情報は、Journey Optimizer内の実験機能にも適用されます。
+
+
+すべての計算指標に実験パネルとの互換性があるわけではありません。
+
+次の指標または定数のいずれかを含む計算指標は、実験パネルと互換性がありません。
+
+* 概要データセットのベース指標 <!--add link to Rob's "Summary data" doc when it's published -->
+* 相互に分割または乗算された基本指標（`Revenue`/`Orders` など）
+* 基本指標に追加または減算される定数（`Revenue+50` など）
+* 次のいずれかの基本指標。
+   * ユーザー
+   * （他に何がありますか？）
+
+実験パネルと互換性のない計算指標は、計算指標を作成する際に [!UICONTROL **Customer Journey Analyticsの互換性**] フィールドに [!UICONTROL **製品のすべての場所（実験を除く）**] という値を持ちます。 計算指標の作成について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
+
+## 実験パネルでの派生指標の使用
 
 [ 実験パネルでの派生指標の使用 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119) については、このブログ投稿を参照してください。

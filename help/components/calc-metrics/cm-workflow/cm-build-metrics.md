@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 50%
+source-wordcount: '1214'
+ht-degree: 48%
 
 ---
 
@@ -30,6 +30,18 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 ## 計算指標ビルダーの領域
 
+<!-- 
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_viz_product_compatibility"
+>title="Product compatibility"
+>abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
+>"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
+>"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+
+-->
+
 次の画像と付属の表で、計算指標ビルダーの主な領域と機能の一部を説明します。
 
 ![ この節で説明した主な領域と機能を示す新しい計算指標ウィンドウ。](assets/cm_builder_ui.png)
@@ -47,7 +59,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 | 定義 | ここに指標/計算指標、フィルター、関数などをドラッグして、計算指標を作成します。 <ul><li>計算指標をドラッグすると、指標の定義が自動的に展開されます。 </li> <li>コンテナを使用して定義をネストできます。ただし、フィルターコンテナとは異なり、これらのコンテナは数式のように機能し、操作の順序を決定します。 </li> </ul> |
 | 演算子 | 除算（ <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" />）はデフォルトの演算子です。他にも、+、– および x の演算子があります。 |
 | プレビュー | 可能性のあるエラーについて簡単に確認できます。プレビューには過去 90 日の情報が表示されます。これは、指標に適したコンポーネントを選択したかどうかを最初に判断するための手段です。予期しない結果が生じた場合は、指標の定義を見直す必要があります。 |
-| 製品の互換性 | Customer Journey Analyticsで作成した計算指標の場合、この値は常に [!UICONTROL **Fully Processed Data**] として表示されます。 計算指標には、イベントデータセットからのデータのみを含めることができます。 |
+| 製品の互換性 | この計算指標をCustomer Journey Analytics内で使用できる場所を示します。 <p>使用可能な値は次のとおりです。</p><ul><li>[!UICONTROL **Customer Journey Analytics内のすべての場所**]：計算指標は、Analysis WorkspaceやReport Builderなど、すべてのCustomer Journey Analyticsで使用できます。</li><li>[!UICONTROL **Customer Journey Analyticsのすべての場所（実験を除く）**]：計算指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。</li> <p>計算指標が実験で使用できるかどうかを決定する条件について詳しくは、[ 実験パネル ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) の [ 実験パネルで計算指標を使用 ](/help/analysis-workspace/c-panels/experimentation.md) を参照してください。</p></ul> |
 | 追加 | すべてのタイプの計算指標の場合、コンテナおよび静的な数値を定義に追加できます。詳細な計算指標では、フィルターと関数も追加できます。<ul><li>コンテナは数式のように機能し、演算の順序を指定します。そのため、コンテナ内の項目は、次の演算の前に処理されます。</li><li>フィルターをコンテナにドラッグすると、そのコンテナ内のすべてをフィルタリングできます。 （高度な計算指標のみ）</li><li>コンテナでは複数のフィルターを積み重ねることができます。</li></ul> |
 | 歯車アイコン（指標タイプ、アトリビューション） | 指標の横にある歯車アイコンをクリックすると、指標タイプとアトリビューションモデルを指定できます。 <p>**メモ：** コンポーネントのアトリビューションをデフォルト以外のアトリビューションモデルに更新する場合は、次の点に注意してください。</p><ul><li>***単一ディメンション* でレポートでコンポーネントを使用する場合：** デフォルト以外のアトリビューションモデルが使用されている場合、コンポーネントのアトリビューションでは配分モデルが無視されます。</li><li>***複数ディメンション* を使用したレポートでコンポーネントを使用する場合：** デフォルト以外のアトリビューションモデルを使用すると、コンポーネントのアトリビューションで配分モデルが保持されます。</li><li>複数のディメンションは、[ クラウドへのデータの書き出し ](/help/analysis-workspace/export/export-cloud.md) 時にのみ使用できます。</li></ul> <p>割り当てについて詳しくは、[ 永続性コンポーネント設定 ](/help/data-views/component-settings/persistence.md) を参照してください。</p> |
 | プラス（+） アイコン | 新しいフィルターなどの新しいコンポーネントを作成できます（フィルタービルダーが表示されます）。 |

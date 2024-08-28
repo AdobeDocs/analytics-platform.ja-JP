@@ -5,10 +5,10 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 80%
+source-wordcount: '1344'
+ht-degree: 78%
 
 ---
 
@@ -27,7 +27,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [ブレットグラフ](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![ 箇条書きアイコン ](assets/Smock_GraphBullet_18_N.svg)</p> | 目的の値が、他のパフォーマンス範囲（目標）と照らし合わせて、どのように比較または測定されるかを示します。 |
 | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![ コホートテーブルアイコン ](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* とは、特定の期間、共通の特性を共有する人々のグループのことです。コホート分析は、リテンション、チャーン、または遅延の分析に役立ちます。 |
 | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) <p>![ ドーナツアイコン ](assets/Smock_GraphDonut_18_N.svg)</p> | このビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
-| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![ フォールアウトアイコン ](assets/Smock_ConversionFunnel_18_N.svg)</p> | フォールアウトレポートは、事前に定義した一連のページ間で、ユーザーが離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 最終的または正確なシーケンスに設定できます |
+| [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![ フォールアウトアイコン ](assets/Smock_ConversionFunnel_18_N.svg)</p> | <!-- Similar to Journey canvas, -->フォールアウトビジュアライゼーションは、事前に定義された一連のページ間で、人物が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 フォールアウトビジュアライゼーションは、最終的または正確なシーケンスに設定できます。 <p><!-- Unlike Journey canvas, -->フォールアウトビジュアライゼーションは、開始と終了が既知のジャーニーが 1 つだけの線形ジャーニーの分析のみを提供します。</p> |
 | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![ フローアイコン ](assets/flow-icon.png)</p> | web サイトおよびアプリを介して正確な顧客パスを表示します。 |
 | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![ フリーフォームテーブルアイコン ](assets/Smock_ViewTable_18_N.svg)</p> | フリーフォームテーブルは、単なるデータテーブルではなく、インタラクティブなビジュアライゼーションです。これは、ワークスペースのデータ分析の基礎になります。 |
 | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)<p>![ ヒストグラムアイコン ](assets/Smock_GraphHistogram_18_N.svg)</p> | ヒストグラムは、指標の量に基づいて、個人、訪問、またはイベントをバケットにまとめます。 |
@@ -39,6 +39,8 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | [テキスト](/help/analysis-workspace/visualizations/text.md)<p>![ 散布図アイコン ](assets/Smock_Text_18_N.svg)</p> | ユーザー定義のテキストをワークスペースに追加できます。パネルおよびビジュアライゼーションの説明の活用に加えて、分析とインサイトにコンテキストを追加するのに役立ちます。 |
 | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md)<p>![ ツリーマップアイコン ](assets/Smock_GraphTree_18_N.svg)</p> | ネストされた長方形の集まりとして、（ツリー構造の）階層データが表示されます。 |
 | [ベン図](/help/analysis-workspace/visualizations/venn.md)<p>![ ベン図アイコン ](assets/venn-icon.png)</p> | 円を使用して、最大 3 つのフィルターの指標の重複を表します。 |
+
+<!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## パネルへのビジュアライゼーションの追加
 
