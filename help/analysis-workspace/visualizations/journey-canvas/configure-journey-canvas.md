@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: e06793a0ce73fa8d6aa9b798209bfc044e696931
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4138'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,12 @@ ht-degree: 1%
 ### ノードの接続
 
 既にキャンバス上にあるノードを接続するか、キャンバスに追加するときにノードを接続できます。
+
+#### ノードを接続する際のロジック
+
+ジャーニーキャンバスでノードをコネクトする場合、THEN 演算子を使用してノードがコネクトされます。 これは、「順次フィルタリング [ とも呼ばれ ](/help/components/filters/seg-sequential-build.md) す。
+
+接続されたノードのロジックを表示するには、ノードを右クリックして [!UICONTROL **ノードからフィルターを作成**] を選択します。 ロジックは、「[!UICONTROL **定義**] セクションに表示されます。
 
 #### 既存のノードの接続
 
