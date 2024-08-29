@@ -5,7 +5,8 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -14,9 +15,11 @@ ht-degree: 2%
 
 # ジャーニーキャンバスの概要
 
+{{release-limited-testing}}
+
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。 ジャーニーを一から定義したり、Journey Optimizerからジャーニーを表示して、ジャーニー内でのユーザーの離脱や継続の様子を確認できます。
 
-イベント、ディメンション項目、フィルター、日付範囲を任意に組み合わせて使用し、ジャーニーノードを作成することで、ユーザージャーニーの分析を作成できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 変更を加えると、データがリアルタイムで更新されます。
+イベント、ディメンション項目、フィルター、日付範囲を任意に組み合わせて ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、[ ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 変更を加えると、データがリアルタイムで更新されます。
 
 ## 主な特長
 
@@ -161,5 +164,3 @@ Journey Optimizerにある 1 つのことを意味する特定の用語は、Cus
 ## ジャーニーキャンバスでの分析の作成
 
 Analysis Workspaceで使用可能な任意のディメンションまたは指標に基づく分析を、ジャーニーキャンバスで作成できます。 または、Journey Optimizerで作成されたジャーニーを分析できます。 詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
-
-
