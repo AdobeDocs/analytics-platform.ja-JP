@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
+source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 65%
@@ -192,19 +192,6 @@ Customer Journey Analytics のデータガバナンス関連の設定は、Adobe
 
 Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルとポリシーは、 Customer Journey Analytics データビューワークフローで表示できます。したがって、[!DNL Customer Journey Analytics BI extension] を使用してクエリされたデータが、定義されたプライバシーラベルやポリシーに準拠していない場合、適切な警告やエラーが表示されます。
 
-#### デフォルトと制限事項
-
-データガバナンスの理由から、次の追加のデフォルトと制限が適用されます。
-
-* BI 拡張機能では、クエリ結果の行制限が必要です。 デフォルトは 50 ですが、`LIMIT n` を使用して SQL でこれを上書きできます（`n` は 1～50000）。
-* BI 拡張機能では、計算に使用する行を制限する日付範囲が必要です。 デフォルトは過去 30 日間ですが、特殊 [`timestamp`](#timestamp) または [`daterange`](#date-range) 列を使用して、SQL `WHERE` 句でこれを上書きできます。
-* BI 拡張機能には、集約クエリーが必要です。 `SELECT * FROM ...` のような SQL を使用して、生の基になる行を取得することはできません。 集計クエリには、大まかに言えば、次を使用します。
-   * `SUM` や `COUNT` を使用して合計を選択します。<br/> 例：`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * ディメンション別に分類された指標を選択します。 <br/> 例：`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * 個別の指標値を選択します。<br/> 例：`SELECT DISTINCT dimension1 FROM ...`
-
-     詳しくは、を参照してください [ サポートされている SQL](#supported-sql)。
-
 ### データビューのリスト
 
 標準の PostgreSQL CLI では、`\dv` を使用してビューをリストできます
@@ -221,6 +208,21 @@ prod:all=> \dv
 ### ネスト化とフラット化
 
 デフォルトでは、データビューのスキーマは、元の XDM スキーマと同様に、ネストされた構造を使用します。また、この統合では、`FLATTEN` オプションもサポートされています。このオプションを使用すると、データビュー（およびセッション内の他のテーブル）のスキーマを強制的にフラット化できます。フラット化により、構造化スキーマをサポートしていない BI ツールでも簡単に使用できるようになります。詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
+
+
+### デフォルトと制限事項
+
+BI 拡張機能を使用する場合、次の追加のデフォルトと制限が適用されます。
+
+* BI 拡張機能では、クエリ結果の行制限が必要です。 デフォルトは 50 ですが、`LIMIT n` を使用して SQL でこれを上書きできます（`n` は 1～50000）。
+* BI 拡張機能では、計算に使用する行を制限する日付範囲が必要です。 デフォルトは過去 30 日間ですが、特殊 [`timestamp`](#timestamp) または [`daterange`](#date-range) 列を使用して、SQL `WHERE` 句でこれを上書きできます。
+* BI 拡張機能には、集計クエリが必要です。 `SELECT * FROM ...` のような SQL を使用して、生の基になる行を取得することはできません。 集計クエリには、大まかに言えば、次を使用します。
+   * `SUM` や `COUNT` を使用して合計を選択します。<br/> 例：`SELECT SUM(metric1), COUNT(*) FROM ...`
+   * ディメンション別に分類された指標を選択します。 <br/> 例：`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * 個別の指標値を選択します。<br/> 例：`SELECT DISTINCT dimension1 FROM ...`
+
+     詳しくは、を参照してください [ サポートされている SQL](#supported-sql)。
+
 
 ### サポートされる SQL
 
