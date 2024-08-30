@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
+source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4484'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
    |---------|----------|
    | [!UICONTROL **プライマリ指標**] | 主要指標は、ジャーニーキャンバスビジュアライゼーションの次の側面に影響します。  <ul><li>ジャーニーの進行状況を定義します。</li><li>各ノードに表示される合計数。<p>例えば、主要指標がユーザーであれば、各ノードはジャーニーのそのノードに到達したユーザーの数を示します。</p></li><li>各ノードに表示されるパーセンテージ。 （ビジュアライゼーションが構築されたら、合計に対する割合または開始ノードに対する割合を選択できます）。</li><p>例えば、主要指標がユーザーである場合、各ノードはジャーニーのそのノードに到達したユーザーの割合（合計の割合または開始ノードの割合）を示します。</p></li><li>ディメンションがビジュアライゼーションに追加されると、プライマリ指標に基づいて、ビジュアライゼーションの上位 3 ノードが追加されます。</li></ul> |
    | [!UICONTROL **セカンダリ指標**] | セカンダリ指標はオプションです。 1 つを選択すると、プライマリ指標の下にある各ノードに次の情報が表示されます。 <ul><li>合計数<p>例えば、セッションがセカンダリ指標の場合、各ノードは、ジャーニーでそのノードに到達したセッション数を示します。</p></li><li>割合（ビジュアライゼーションが作成されたら、合計の割合または開始ノードの割合のいずれかを選択できます）。</li><p>例えば、セッションがセカンダリ指標の場合、各ノードは、ジャーニーでそのノードに到達したセッションの割合（合計の割合または開始ノードの割合）を示します。</p></li></ul> |
-   | [!UICONTROL **Journey Optimizer ジャーニー**]<!-- name? --> | ジャーニーキャンバスでの分析の基礎として使用するJourney Optimizer ジャーニーを選択します。 （または、Analysis Workspace内で分析を構築する空白のキャンバスが必要な場合、このオプションを空白のままにすることもできます。）</p> <p>ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 詳しくは、[ジャーニーキャンバスの概要 [ の ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys)Journey Optimizer ジャーニーの分析 ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) を参照してください。</p><p>**注意**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択されたデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
+   | [!UICONTROL **Journey Optimizer ジャーニー**]<!-- name? --> | ジャーニーキャンバスでの分析の基礎として使用するJourney Optimizer ジャーニーを選択します。 （または、Analysis Workspace内で分析を構築する空白のキャンバスが必要な場合、このオプションを空白のままにすることもできます。）</p> <p>ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 詳しくは、[ジャーニーキャンバスの概要 [ の ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys)Journey Optimizer ジャーニーの分析 ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) を参照してください。</p><p>**メモ**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択したのと同じデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
 
 1. （オプション）「[!UICONTROL **詳細設定を表示**]」を選択して、次の情報を指定します。
 
@@ -84,10 +84,11 @@ ht-degree: 1%
 
    | 設定 | 関数 |
    |---------|----------|
-   | [!UICONTROL **ノードタイプ**] | ビジュアライゼーションに表示するノードタイプを設定できます。 ビジュアライゼーションでノードタイプを非表示にするには、ノードタイプの横にある「x」を選択するか、ドロップダウンメニューから選択を解除します。 非表示のノードタイプを表示するには、ドロップダウンメニューから選択します。 <p>ビジュアライゼーションの内容に応じて、次のようなノードタイプが考えられます。</p><ul><li>[!UICONTROL **セグメントを読み取り**]</li><li>[!UICONTROL **終了**]</li><li>[!UICONTROL **ディメンション**]</li><li>[!UICONTROL **指標**]</li></ul><p>**メモ**：このフィールドを使用する場合は、次の点に注意してください。</p><ul><li>このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択されたデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</li><li>ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、このオプションは使用できなくなります。 詳しくは、[ジャーニーキャンバスでジャーニーを変更した後の視覚的な違い ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas) を参照してください</li></ul></p> |
+   | [!UICONTROL **ノードタイプ**] | ビジュアライゼーションに表示するノードタイプを設定できます。 ビジュアライゼーションでノードタイプを非表示にするには、ノードタイプの横にある「x」を選択するか、ドロップダウンメニューから選択を解除します。 非表示のノードタイプを表示するには、ドロップダウンメニューから選択します。 <p>ビジュアライゼーションの内容に応じて、次のようなノードタイプが考えられます。</p><ul><li>[!UICONTROL **セグメントを読み取り**]</li><li>[!UICONTROL **終了**]</li><li>[!UICONTROL **ディメンション**]</li><li>[!UICONTROL **指標**]</li></ul><p>**メモ**：このフィールドを使用する場合は、次の点に注意してください。</p><ul><li>このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択したのと同じデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</li><li>ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、このオプションは使用できなくなります。 詳しくは、[ジャーニーキャンバスでジャーニーを変更した後の視覚的な違い ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas) を参照してください</li></ul></p> |
    | [!UICONTROL **パーセンテージ値**] | 次のオプションから選択します。 <ul><li>[!UICONTROL **合計の割合**]：パネルの日付範囲内でデータビューに含まれるすべての人物の割合。</li><li>[!UICONTROL **開始ノードの割合**]：パネルの日付範囲内でデータビューに含まれ、ジャーニーの開始ノードの条件も満たす、すべての人物の割合。 （このオプションは、開始ノードが 1 つのジャーニーでのみ使用できます。複数の開始ノードを持つジャーニーでは無効になります。 開始ノードは、接続が入っていないすべてのノードと定義されます）。</li></ul> |
-   | [!UICONTROL **矢印の設定**] | 次のオプションから選択します。<ul><li>[!UICONTROL **なし**]: </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **すべてのラベル**]: </li></ul><p>**注意**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択されたデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
+   | [!UICONTROL **矢印の設定**] | 次のオプションから選択します。<ul><li>[!UICONTROL **なし**]: </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **すべてのラベル**]: </li></ul><p>**メモ**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択したのと同じデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
    | [!UICONTROL **フォールアウトを表示**] | 各ノードのフォールアウトデータを表示します。 これは、特定のノードの後にジャーニーを離れたユーザーの数と割合を示します。 <p>ジャーニーから外れたユーザーは、サイトで他のアクションを実行した可能性がありますが、ジャーニーの次のノードで定義された条件を満たしたことはありません。</p> |
+   | **ズームコントロール** | キャンバスの右上隅には、次のズームコントロールが用意されています。<ul><li>**ズームイン**![ ズームインアイコン ](assets/zoom-in-icon.png)：ビジュアライゼーションの特定の領域を拡大します。<p>トラックパッドをつまむなどのマウスコントロールを使用することもできます。</p></li><li>**ズームアウト**![ ズームアウトアイコン ](assets/zoom-out-icon.png)：キャンバスに広い領域ができるようにビジュアライゼーションを縮小します。<p>トラックパッドをつまむなどのマウスコントロールを使用することもできます。</p></li><li>**画面に合わせる**![ 画面に合わせるアイコン ](assets/fill-screen-icon.png)：現在のズームとパンの設定を調整して、画面を完全にビジュアライゼーションで埋めます。</li></ul><p>ズームインまたはズームアウトした後にキャンバス上でパンするには、マウスをクリックして目的の場所にドラッグします。</p> |
 
 1. [ ノードを追加 ](#add-nodes) を続行します。
 
@@ -208,7 +209,9 @@ ht-degree: 1%
 
 ジャーニーキャンバスのジャーニーは、イベント、ディメンション項目、フィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフで構成されています。
 
-キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えることができます。 すると、データはそれに応じて更新されます。
+キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えることができます。 Command キー（Macの場合）または Ctrl キー（Windows の場合）を押して、複数のノードを選択できます。
+
+ジャーニー内のノードの順序を並べ替えると、それに応じてデータが更新されます。
 
 ### ノードの結合
 
@@ -282,7 +285,7 @@ ht-degree: 1%
 
 キャンバスにノードを追加する場合、接続された 2 つのノードの間にノードを配置できます。 ノードは、2 つの既存のノード間のジャーニーのフローに追加されます。
 
-詳しくは、「[ ノードを追加 ](#add-a-node)」を参照してください。
+詳しくは、[ ノードの追加 ](#add-nodes) を参照してください。
 
 ### ノード間に時間制約を追加する
 
@@ -369,7 +372,7 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 左側のパネルから、分類を適用するキャンバス上のノードにディメンションをドラッグできます。
 
-詳しくは、「[ ノードを追加 ](#add-a-node)」を参照してください。
+詳しくは、[ ノードの追加 ](#add-nodes) を参照してください。
 
 ### オーディエンスの作成
 
