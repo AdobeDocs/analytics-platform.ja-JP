@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
+source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 22%
@@ -92,7 +92,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
       * 関連するデータビューにアクセスする権限。 [!UICONTROL  ユーザーレベルアクセス ] の [ データビュー ](#user-level-access) を参照してください。
       * Customer Journey AnalyticsBI 拡張機能にアクセスする権限。 [ ユーザーレベルアクセス ](#user-level-access) の [!UICONTROL  データ表示ツール ] を参照してください。
 
-## 製品プロファイル管理者の役割
+### 製品プロファイル管理者の役割
 
 製品プロファイルは、一連の権限です。製品管理者は、製品プロファイルを作成し、製品プロファイル管理者を割り当てて、1 つ以上の製品プロファイルを管理できます。 製品プロファイル管理者は、次の操作を実行できます。
 
@@ -100,7 +100,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 
 * Customer Journey Analyticsで、割り当てられた製品プロファイルの一部であるデータビューを編集します。 製品プロファイル管理者が、新しいデータビューを作成できない。
 
-## ユーザーレベルのアクセス
+### ユーザーレベルのアクセス
 
 次の表に、関連するユーザーに設定できる様々なCustomer Journey Analytics機能の主なアクセス権限の概要を示します。 製品プロファイルを通じて、様々なレベルのユーザーアクセスを管理できます。 製品プロファイルは、多数の権限を組み合わせたものであり、個別のユーザーやユーザーグループに割り当てることができます。
 
