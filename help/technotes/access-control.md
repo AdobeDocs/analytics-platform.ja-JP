@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1463'
 ht-degree: 22%
 
 ---
@@ -110,7 +110,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 
 | カテゴリ | 権限 | 説明 |
 | --- | --- | ---|
-| [!UICONTROL データビュー] | *データビューの名前* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
+| [!UICONTROL データビュー] | *データビュー名* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL Analysis Workspace アクセス] | ユーザーに [Analysis Workspace](/help/analysis-workspace/home.md) へのアクセスを許可します。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL  ガイド付き分析へのアクセス ] | ユーザーを [ ガイド付き分析 ](/help/guided-analysis/overview.md) にアクセスさせる。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 計算指標の作成] | ユーザーが [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) を作成できるようにする ユーザーは、作成した計算指標または共有された計算指標に対してのみ、タグ付け、共有、削除、名前変更、承認、未承認の操作を行うことができます。 |
