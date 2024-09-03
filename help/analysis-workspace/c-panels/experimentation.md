@@ -4,7 +4,7 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 29%
@@ -148,6 +148,6 @@ Customer Journey Analyticsの実験パネルを使用すると、データを人
 
 実験パネルと互換性のない計算指標は、計算指標を作成する際に [!UICONTROL **Customer Journey Analyticsの互換性**] フィールドに [!UICONTROL **製品のすべての場所（実験を除く）**] という値を持ちます。 計算指標の作成について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
 
-## 実験パネルでの派生指標の使用
+## 実験パネルでの計算指標の使用
 
-[ 実験パネルでの派生指標の使用 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119) については、このブログ投稿を参照してください。
+[ 実験パネルでの計算指標の使用 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119) については、このブログ投稿を参照してください。
