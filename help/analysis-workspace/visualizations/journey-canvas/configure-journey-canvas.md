@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 1%
 
 ---
@@ -145,6 +145,10 @@ ht-degree: 1%
 
 ### 既存のノードに基づいて上位のノードを追加
 
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
+
 既にキャンバス上にあるノードに基づいて、上位のノードを自動的に追加できます。
 
 このオプションは、キャンバス上の次のオブジェクトで使用できます。
@@ -188,6 +192,10 @@ ht-degree: 1%
    上位 3 つのノードは 2 つの既存のノードの間に追加され、それぞれが別々のブランチとして接続されます。
 
 ### 重複ノード
+
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
 
 複製するオプションは、キャンバス上の次のオブジェクトで使用できます。
 
@@ -289,6 +297,10 @@ ht-degree: 1%
 
 ### ノード間に時間制約を追加する
 
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
+
 ノード間に時間制約を設定できます。 時間制約が設定されている場合、ある人物が定義されたジャーニーを進んだが、ノード間を移動するために割り当てられた時間より長い時間がかかる場合、その人物はジャーニーから外れたと見なされます。
 
 時間制約を追加するオプションは、キャンバス上の次のオブジェクトで使用できます。
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### ノードまたは矢印の色を変更する
 
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
+
 キャンバス上の任意のノードや矢印の色を変更することで、ジャーニーを視覚的にカスタマイズできます。 例えば、望ましいイベントや望ましくないイベントを示すためにカラーを調整できます。
 
 カラーを変更するオプションは、キャンバス上の次のオブジェクトで使用できます。
@@ -329,6 +345,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
    使用できるカラーは次のとおりです。<!--look into this interaction and color list-->
 
 ### ノードまたは矢印の名前を変更
+
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
 
 コンポーネントをジャーニーカンバスビジュアライゼーションにドラッグすると、コンポーネント名と同じ名前のノードが作成されます。 ノードが表すジャーニーのステップに合うように、ノードの名前を変更できます。
 
@@ -359,6 +379,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 * ノード間の複数の矢印
 
 #### 1 つ以上のノードまたは矢印への分類の適用
+
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
 
 1. 分類を適用するノードを 1 つ以上選択し、選択したノードの 1 つを右クリックします。
 
@@ -400,6 +424,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### トレンドデータの表示
 
+>[!AVAILABILITY]
+>
+>この機能はまだ使用できません。
+
 トレンドデータは、ジャーニーキャンバスのオブジェクトの折れ線グラフで表示できます。<!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 キャンバス上の次のオブジェクトに対して、トレンドのオプションを使用できます。
@@ -421,7 +449,6 @@ from Travis: You can set time to be within X amount of time or after X amount of
    トレンド・データを表示する 2 つのノード間の 1 つ以上の矢印を選択し、選択した矢印のいずれかを右クリックします。
 
 1. [!UICONTROL **トレンド**] を選択します。
-
 
 ### ノードまたは矢印に基づいてフィルターを作成します
 

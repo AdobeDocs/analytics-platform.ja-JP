@@ -6,7 +6,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -133,7 +133,7 @@ ht-degree: 2%
 
 #### データ処理の違い
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーを変更した後、デフォルト以外のアトリビューションモデルを持つ指標がジャーニーに含まれている場合は、データが変更されることがあります。
+ジャーニーキャンバスでJourney Optimizer ジャーニーを変更した後、デフォルト以外のアトリビューションモデルを持つ指標がジャーニーに含まれている場合は、データが変更される場合があります。
 
 これは、Journey Optimizerとは異なり、ジャーニーキャンバスを使用すると、1 つのジャーニー内に複数のディメンションを適用できるからです。 この機能は、[ 指標アトリビューション ](/help/data-views/component-settings/attribution.md) がサポートされていないことを意味します。
 
