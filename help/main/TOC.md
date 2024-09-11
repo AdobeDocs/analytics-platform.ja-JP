@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 99%
 
 ---
 
@@ -190,6 +190,12 @@ ht-degree: 100%
       + [予測の概要](../analysis-workspace/c-forecast/forecasting.md)
       + [Analysis Workspace での予測表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + インテリジェントアラート {#alerts}
+      + [インテリジェントアラートの概要](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+      + [Customer Journey Analyticsの違い](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [アラートの作成](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
+      + [アラートの管理](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
+      + [ユースケース](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)

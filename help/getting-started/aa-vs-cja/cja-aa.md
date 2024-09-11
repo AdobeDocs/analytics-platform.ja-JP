@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 75edfb09e3d2d4673d4c7f86b53eb5a620e77cbc
+source-git-commit: 789e461bf45f272e4c93ea5aa77e5bcaf4ee6a29
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 98%
+source-wordcount: '2307'
+ht-degree: 96%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 98%
 
 | 機能 | メモ |
 | --- | --- |
+| アラート | [Customer Journey Analyticsでのインテリジェントアラートの使用 ](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md) プロセスは、Adobe Analyticsでインテリジェントアラートを使用する場合とほぼ同じです。 <p>ただし、Customer Journey Analyticsでのデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。</p> |
 | Analytics for Target（A4T） | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | オーディエンスパブリッシング | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | 分類 | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics 分類ソースコネクタを使用して Experience Platform および Customer Journey Analytics に読み込むことができます。ルックアップデータセットは Experience Platform に直接アップロードして、Customer Journey Analytics で使用することもできます。 |
@@ -97,7 +98,6 @@ ht-degree: 98%
 
 | 機能 | メモ |
 | --- | --- |
-| アラート | サポートが予定されています。 |
 | 貢献度分析 | サポートが予定されています。 |
 | プロジェクトテンプレート | サポートが予定されています。 |
 | リアルタイムレポート | サポートが予定されています。 |
