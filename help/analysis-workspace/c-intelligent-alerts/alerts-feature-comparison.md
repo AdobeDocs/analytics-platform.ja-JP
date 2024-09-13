@@ -3,9 +3,9 @@ description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるイン�
 title: インテリジェントアラート機能の比較Customer Journey AnalyticsとAdobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Adobe Analyticsとは異なり、時間別アラートはCustomer Journey Analyt
 
 デフォルトの 9 時間の遅延は、0 ～ 24 時間の間に調整できます。 ただし、遅延を 9 時間未満に減らすと、不完全なデータに関するレポートを作成していることになり、アラート情報が不正確になる可能性があります。
 
-遅延の調整方法と、調整する際に考慮すべき要因について詳しくは、<!--add link --> を参照してください。
+遅延の調整方法と、調整する際に考慮すべき要因について詳しくは、[ アラートの作成 ](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md) を参照してください。
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
