@@ -3,14 +3,18 @@ description: 新しいインテリジェントアラートシステムでは、�
 title: インテリジェントアラートの概要
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 17a7e794533c1536e362ca1fd11f45b053954c0a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 56%
+source-wordcount: '356'
+ht-degree: 52%
 
 ---
 
 # インテリジェントアラートの概要
+
+>[!NOTE]
+>
+>インテリジェントアラートは、すべてのお客様が利用できます。 ただし、インテリジェントアラート内で異常値検出を使用するには、Customer Journey Analytics Select、Prime または Ultimate が必要です。
 
 Customer Journey Analytics内のインテリジェントアラート（または単に「アラート」）を使用すると、データで異常なイベントが発生した場合に通知を受け取ることができます。
 

@@ -3,10 +3,10 @@ description: プロジェクトコンポーネントが特定のしきい値に�
 title: アラートの作成（Analysis Workspace）
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 8f866d47ef0caccb91bd0e9cb9043bb1e16e0d89
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 22%
+source-wordcount: '1001'
+ht-degree: 21%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->インテリジェントアラートは、Adobe Analytics Prime および Adobe Analytics Ultimate のお客様のみご利用いただけます。
+>インテリジェントアラートは、すべてのお客様が利用できます。 ただし、インテリジェントアラート内で異常値検出を使用するには、Customer Journey Analytics Select、Prime または Ultimate が必要です。
 
 Customer Journey Analyticsでは、インテリジェントアラート（または単に「アラート」）を使用すると、データで異常なイベントが発生した場合に、すぐに通知を受け取ることができます。
 
