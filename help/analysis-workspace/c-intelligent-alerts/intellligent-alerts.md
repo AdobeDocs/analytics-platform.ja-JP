@@ -3,7 +3,7 @@ description: 新しいインテリジェントアラートシステムでは、�
 title: インテリジェントアラートの概要
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 74ad39f6ccc6436f7c8540b7d8b69b20b93d2b5c
+source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 56%
@@ -11,8 +11,6 @@ ht-degree: 56%
 ---
 
 # インテリジェントアラートの概要
-
-{{release-limited-testing}}
 
 Customer Journey Analytics内のインテリジェントアラート（または単に「アラート」）を使用すると、データで異常なイベントが発生した場合に通知を受け取ることができます。
 
