@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 33602a2c82d14463ebe4317704dbfa47b7b8ae35
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 85%
@@ -78,7 +78,7 @@ ht-degree: 85%
 
 | 機能 | メモ |
 | --- | --- |
-| **アラート** | [Customer Journey Analyticsでのインテリジェントアラートの使用 ](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md) プロセスは、Adobe Analyticsでインテリジェントアラートを使用する場合とほぼ同じです。 <p>ただし、Customer Journey Analyticsでのデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。</p> |
+| **アラート** | [Customer Journey Analyticsでのインテリジェントアラートの使用 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) プロセスは、Adobe Analyticsでインテリジェントアラートを使用する場合とほぼ同じです。 <p>ただし、Customer Journey Analyticsでのデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。</p> |
 | **Analytics for Target （A4T）** | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | **オーディエンスの公開** | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | **分類** | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics 分類ソースコネクタを使用して Experience Platform および Customer Journey Analytics に読み込むことができます。ルックアップデータセットは Experience Platform に直接アップロードして、Customer Journey Analytics で使用することもできます。 |

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1124'
 ht-degree: 99%
 
 ---
@@ -190,12 +190,6 @@ ht-degree: 99%
       + [予測の概要](../analysis-workspace/c-forecast/forecasting.md)
       + [Analysis Workspace での予測表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + インテリジェントアラート {#alerts}
-      + [インテリジェントアラートの概要](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-      + [Customer Journey Analyticsの違い](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [アラートの作成](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
-      + [アラートの管理](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
-      + [ユースケース](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
@@ -299,6 +293,12 @@ ht-degree: 99%
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
+   + インテリジェントアラート {#alerts}
+      + [概要](/help/components/c-intelligent-alerts/intellligent-alerts.md)
+      + [Customer Journey Analyticsの違い](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [作成](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [管理](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [ユースケース](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 書き出し {#exports}
       + [クラウドの書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)
       + [クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md)
