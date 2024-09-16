@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
-workflow-type: ht
-source-wordcount: '2547'
-ht-degree: 100%
+source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+workflow-type: tm+mt
+source-wordcount: '2566'
+ht-degree: 98%
 
 ---
 
@@ -136,7 +136,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 アドビでは、最近、Customer Journey Analytics でのデータの処理方法を変更しました。
 
-<ul><li>発生後の経過時間が 24 時間未満のイベントデータは、すべてストリーミングで取り込まれます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
+<ul><li>「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。 前日のイベント時間が 11:59:59 （23:59:59）より前のデータは、バックフィルとして扱われます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
