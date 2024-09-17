@@ -3,7 +3,7 @@ description: プロジェクトコンポーネントが特定のしきい値に�
 title: アラートの作成（Analysis Workspace）
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 4155f486c8398b75c2bed41d93562483d35c1477
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 Customer Journey Analyticsでは、インテリジェントアラート（または単に「アラート」）を使用すると、データで異常なイベントが発生した場合に、すぐに通知を受け取ることができます。
 
-インテリジェントアラートの概要について詳しくは、「[ インテリジェントアラートの概要 ](/help/components/c-intelligent-alerts/intellligent-alerts.md)」を参照してください。
+インテリジェントアラートの概要について詳しくは、「[ インテリジェントアラートの概要 ](/help/components/c-intelligent-alerts/intelligent-alerts.md)」を参照してください。
 
 アラートを作成するには：
 
