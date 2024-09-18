@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1123'
 ht-degree: 99%
 
 ---
@@ -293,7 +293,7 @@ ht-degree: 99%
       + [日付範囲を管理](../components/date-ranges/manage.md)
       + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
-   + インテリジェントアラート {#alerts}
+   + アラート {#alerts}
       + [概要](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [Customer Journey Analyticsの違い](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [作成](/help/components/c-intelligent-alerts/alert-builder.md)

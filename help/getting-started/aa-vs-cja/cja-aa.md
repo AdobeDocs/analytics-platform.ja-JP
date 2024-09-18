@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2315'
 ht-degree: 85%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 85%
 
 | 機能 | メモ |
 | --- | --- |
-| **アラート** | [Customer Journey Analyticsでのインテリジェントアラートの使用 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) プロセスは、Adobe Analyticsでインテリジェントアラートを使用する場合とほぼ同じです。 <p>ただし、Customer Journey Analyticsでのデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。</p> |
+| **アラート** | [Customer Journey Analyticsでのアラートの使用 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) プロセスは、Adobe Analyticsでアラートを使用する場合とほぼ同じです。 <p>ただし、Customer Journey Analyticsでのデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。</p> |
 | **Analytics for Target （A4T）** | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | **オーディエンスの公開** | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
 | **分類** | 「ルックアップデータセット」という名称に変更されました。Analytics で使用される分類は、Analytics 分類ソースコネクタを使用して Experience Platform および Customer Journey Analytics に読み込むことができます。ルックアップデータセットは Experience Platform に直接アップロードして、Customer Journey Analytics で使用することもできます。 |
@@ -92,7 +92,7 @@ ht-degree: 85%
 | **eVar永続性設定** | eVar は Customer Journey Analytics の一部ではなくなりました。ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
 | **地理特性ディメンション** | [フルサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja) |
 | **グラフベースのステッチ** | [グラフベースのステッチ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/overview#graph-based-stitching)を使用すると、[Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)の ID グラフの力を活用して、データセットを優先 ID に昇格させることができます。 |
-| **インテリジェントアラート** | Customer Journey Analyticsで [ インテリジェントアラート ](/help/components/c-intelligent-alerts/intelligent-alerts.md) を使用するプロセスは、Adobe Analyticsでインテリジェントアラートを使用するプロセスとほとんど同じです。 ただし、次のような [ 重要な違い ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison) があります。 |
+| **アラート** | Customer Journey Analyticsで [ アラート ](/help/components/c-intelligent-alerts/intelligent-alerts.md) を使用するプロセスは、Adobe Analyticsでアラートを使用するプロセスとほとんど同じです。 ただし、次のような [ 重要な違い ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison) があります。 |
 | **IP の不明化** | Analytics ソースコネクタを使用している Customer Journey Analytics の顧客が Adobe Analytics から Customer Journey Analytics にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、Customer Journey Analytics データを通じて送られます。必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analytics の顧客が Experience Platform Web SDK を使用して、Platform と Customer Journey Analytics にデータを直接入力する場合。Platform のデータ収集用のデータ準備を使用して、会社の要件に基づいて IP アドレスを不明化するルールを設定できます。 |
 | **マーケティングチャネル** | Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[Customer Journey Analytics マーケティングチャネル](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=ja)を参照してください。<br/>WebSDK 実装では、レポート時のマーケティングチャネル処理ルールは、[派生フィールド](../../data-views/derived-fields/derived-fields.md)を通じてサポートされます。 |
 | **マーチャンダイジング変数の永続性** | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)によるフルサポート |

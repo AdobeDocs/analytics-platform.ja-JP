@@ -1,18 +1,18 @@
 ---
-description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるインテリジェントアラートの違いについて説明します
-title: インテリジェントアラート機能の比較Customer Journey AnalyticsとAdobe Analytics
+description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるアラートの違いを説明します
+title: アラート機能の比較Customer Journey AnalyticsとAdobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 3%
+source-wordcount: '566'
+ht-degree: 0%
 
 ---
 
-# インテリジェントアラート機能の比較：Customer Journey AnalyticsとAdobe Analytics
+# アラート機能の比較：Customer Journey AnalyticsとAdobe Analytics
 
-Customer Journey Analytics でインテリジェントアラートを使用するプロセスは、Adobe Analytics でインテリジェントアラートを使用するプロセスとほとんど同じです。ただし、重要な違いがあります。
+Customer Journey Analyticsでアラートを使用するプロセスは、Adobe Analyticsでアラートを使用するプロセスとほとんど同じです。 ただし、重要な違いがあります。
 
 以下の節では、主な違いについて説明します。
 
