@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4016'
 ht-degree: 71%
 
 ---
@@ -262,7 +262,6 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2020年10月7日（PT） | [組み合わせイベントデータセット](/help/connections/combined-dataset.md) に関するトピックを追加しました。 |
 | 2020年9月15日（PT） | [データの取り込み](/help/data-ingestion/data-ingestion.md) に関するトピックを追加しました。 |
 | 2020年9月2日（PT） | [ユーザー権限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=ja) に関する節を更新しました。 |
-| 2020年8月7日（PT） | [B2B のユースケース - ルックアップデータセット](/help/use-cases/b2b/b2b.md)に関する新しいトピックを追加しました。 |
 | 2020年7月 | [ユーザー ID の「ID マップ」オプション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) に関する情報を追加しました。 |
 | 2020年7月 | [オブジェクト配列](/help/use-cases/object-arrays.md) または「データ階層」に関する新しいトピックを追加しました。 |
 | 2020年4月14日（PT） | 「[接続の作成](/help/connections/create-connection.md)」トピックの最新 UI を更新しました。 |

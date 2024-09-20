@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## 分類の概念の変更
 
-「分類」は「ルックアップデータセット」になりました。ルックアップデータセットは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。ユースケースの例については、[アカウントレベルのデータをルックアップデータセットとして追加](/help/use-cases/b2b/b2b.md)を参照してください。
+「分類」は *ルックアップデータセット* になりました。 ルックアップデータセットは、イベントまたはプロファイルデータにある値やキーを検索するために使用されます。例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。
 
 ## 顧客属性の概念の変更
 
