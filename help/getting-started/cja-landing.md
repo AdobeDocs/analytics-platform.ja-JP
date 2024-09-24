@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 96%
 
 ---
 
@@ -29,11 +29,17 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 [![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB  概要データ ]
+>[!TAB アラート]
 
-ユーザー ID を持たない時系列データを取り込むことができます。この時系列データは、次のような様々なユースケースをサポートするために使用できます
+アラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受け取ることができます。 アラートがトリガーされる頻度をプレビューしたり、メールまたは SMS でアラートを送信したり、積み重ねられたアラートを作成したりできます。
 
-- イベントレベルのデータの一部または隣にハイレベルのパフォーマンス指標を提示する。
+[![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+>[!TAB 概要データ]
+
+ユーザー ID を持たない時系列データを取り込むことができます。この時系列データは、次のような様々なユースケースをサポートするのに使用できます。
+
+- イベントレベルのデータの一部として、またはイベントレベルのデータの横に、高レベルのパフォーマンスインジケーターを表示する。
 - 時間単位または日単位でターゲットまたは目標をアップロードし、イベントレベルの指標に対してこれらのターゲットまたは目標を配置する。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
@@ -139,7 +145,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
-      <strong> データビュー </strong><br/><a href="/help/data-views/data-views.md"> 概要 </a> - <a href="/help/data-views/create-dataview.md"> 作成または編集 </a> - <a href="/help/data-views/session-settings.md"> セッション設定 </a> - <a href="/help/data-views/derived-fields/derived-fields.md"> 派生フィールド </a> - <a href="/help/data-views/summary-data.md"> 概要データ </a> - <a href="/help/data-views/component-reference.md"> コンポーネントリファレンス </a>
+      <strong>データビュー</strong><br/><a href="/help/data-views/data-views.md">概要</a> - <a href="/help/data-views/create-dataview.md">作成または編集</a> - <a href="/help/data-views/session-settings.md">セッション設定</a> - <a href="/help/data-views/derived-fields/derived-fields.md">派生フィールド</a> - <a href="/help/data-views/summary-data.md">概要データ</a> - <a href="/help/data-views/component-reference.md">コンポーネントの参照</a>
     </td>
 
 </tr>
@@ -154,7 +160,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード </a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Cloud エクスポート </a> - <a href="/help/integrations/overview.md"> 統合 </a>
+      <strong>共有、書き出し、統合</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">プロジェクト</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">クラウドの書き出し</a> - <a href="/help/integrations/overview.md">統合</a>
     </td>
   </tr>
 </table>
