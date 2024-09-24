@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1300'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,16 @@ ht-degree: 2%
 
 ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、データ処理、使用可能な機能、同期動作が変更される場合があります。
 
+ジャーニーキャンバスでJourney Optimizer ジャーニーに大きな変更を加えると、データ処理、使用可能な機能、同期動作に変更が生じる可能性があります。 重要な変更には、次のいずれかが含まれます。
+
+* ノードの追加または削除
+
+* ノード間の矢印の追加または削除
+
+* ノード上のコンポーネントの変更
+
+ノードをドラッグしたり分類を追加したりするなど、ジャーニーキャンバスでJourney Optimizer ジャーニーに他の変更を加える場合、次の節で説明する違いは適用されません。
+
 >[!NOTE]
 >
 >ジャーニーを元の状態に戻すには、ジャーニーキャンバスで最初の変更を行った後に Ctrl+Z キーを押します。 または、ジャーニーキャンバスでジャーニーを削除および [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) できます。
@@ -139,9 +149,13 @@ ht-degree: 2%
 
 #### 機能の違い
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、[!UICONTROL **ノードタイプ**] ドロップダウンフィールドは使用できなくなります。
+ジャーニーキャンバスでJourney Optimizer ジャーニーを変更した後、変更に応じて、次の機能の機能が変わる場合があります。
 
-このフィールドについて詳しくは、[ 設定の指定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
+* 「[!UICONTROL **ノードタイプ**]」フィールドに表示される値が変わります。
+
+* [!UICONTROL **矢印設定**] ドロップダウンフィールドで使用できるオプションが変わります。
+
+これらのフィールドについて詳しくは、[ 設定の指定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
 
 #### 同期の違い
 
