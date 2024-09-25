@@ -4,17 +4,17 @@ title: Adobe Customer Journey Analytics 向けの AI アシスタント
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
+source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 5%
+source-wordcount: '604'
+ht-degree: 2%
 
 ---
 
 
 # Adobe Customer Journey Analytics 向けの AI アシスタント
 
-AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+AI アシスタントは、実務担当者が迅速にタスクを実行できる会話経験です。 タスクが、概念の理解、問題のトラブルシューティング、情報の検索のいずれを目的としているか。 また、AI アシスタントを使用すると、エキスパートでないユーザーでも専門的なタスクを実行でき、作業の全体的な品質を向上させることができます。
 
 Customer Journey Analyticsの AI アシスタントは、Adobe Experience Leagueのドキュメントでトレーニングを受けます。 質問すると、AI アシスタントは迅速な学習を可能にする便利な回答で応答します。
 
@@ -32,7 +32,7 @@ Customer Journey Analytics用 AI アシスタントは、すべての製品層�
 
 ## 製品に関する知識 {#knowledge}
 
-Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをトレーニングする。 データ分析などのその他の機能は、後日展開される予定です。
+Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをトレーニングする。 データ分析などのその他の機能は、後で展開されます。
 
 | 製品に関する知識 | 例 |
 | --- | --- |
@@ -42,16 +42,24 @@ Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをト
 
 ## 機能へのアクセス
 
-この最初のリリースでは、AI アシスタント機能へのアクセスは、次のパラメータによって制御されます。
+次のパラメータは、AI アシスタント機能へのアクセスを制御します。
 
 * **ソリューションアクセス**:AI Assistant はCustomer Journey Analyticsでは使用できますが、Adobe Analyticsでは使用できません。 また、Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDPやその他のExperience Platformアプリでも使用できます。
 
-* **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 AI アシスタントを組織で使用する前に、会社は GenAI 関連の特定の法的条項に同意する必要があります。
+* **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 組織が AI アシスタントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ] 「AI アシスタント：製品ナレッジ」権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、Admin Consoleで次の手順に従う必要があります。
-   1. [!UICONTROL Admin Console] / [!UICONTROL  製品とサービス ] / [!UICONTROL Customer Journey Analytics] / [!UICONTROL  製品プロファイル ] / [!UICONTROL  権限 ] / [!UICONTROL  レポートツールを編集 ] に移動します。
-   1. 「AI アシスタント：製品に関する知識」を追加します。
-      ![ 権限を追加 ](assets/image.png)
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：製品ナレッジ]** 権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Consoleの次の手順に従う必要があり ] す。
+   1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL 製品]** / **[!UICONTROL Customer Journey Analyticsプロファイル]** に移動します
+   1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
+   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
+   1. ![ 編集 ](/help/assets/icons/Edit.svg) を選択して **[!UICONTROL レポートツール]** を編集します。
+   1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** を **[!UICONTROL 含まれる権限項目]** に追加します。
+
+      ![ 権限を追加 ](assets/ai-assistant-permissions.png).
+
+   1. 「**[!UICONTROL 保存]**」を選択して、権限を保存します。
+
+詳しくは、[ アクセス制御 ](/help/technotes/access-control.md#access-control) を参照してください。
 
 ## Customer Journey AnalyticsUI で AI アシスタントにアクセスする
 
