@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 アドビでは、最近、Customer Journey Analytics でのデータの処理方法を変更しました。
 
-<ul><li>「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。 前日の午後 11:59:59 （23:59:59）より前のイベント時間を持つデータは、バックフィルとして扱われます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
+<ul><li>「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。前日の午後 11:59:59（23:59:59）より前のイベント時間を持つデータは、バックフィルとして処理されます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
@@ -150,7 +150,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 | 目的 | 結果 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。この削除されたサンドボックスに関連する接続、データビュー、指標およびディメンションも削除されます。 | |
+| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。また、この削除されたサンドボックスに関連する接続、データビュー、指標およびディメンションも削除されます。 | |
 | [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上の[!UICONTROL データセット]が関連付けられている[!UICONTROL スキーマ]を削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
 | [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platform データレイクでデータセットを削除すると、そのデータセットからそのデータセットを含む Customer Journey Analytics 接続へのデータフローが停止します。そのデータセットのデータは、関連付けられた Customer Journey Analytics 接続から自動的に削除されます。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 保存した接続内のデータセットの削除プロセスを実行するには、アドビのアカウントチームにお問い合わせください。 |
