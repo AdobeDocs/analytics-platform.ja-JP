@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
+source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 65%
+source-wordcount: '3044'
+ht-degree: 63%
 
 ---
 
@@ -399,5 +399,15 @@ ORDER BY -metric1 DESC
 | [ 抽出 ](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる一部は次のとおりです。<br>- キーワード：`YEAR`、`MONTH`、`DAYOFMONTH`、`DAYOFWEEK`、`DAYOFYEAR`、`WEEK`、`QUARTER`、`HOUR`、`MINUTE`。<br/>- 文字列：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
 | [ 日付（部分） ](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。この関数の一部では、わかりやすい名前ではなく数値が必要なので、値の代わりに項目 ID を使用します。<br/>サポートされる文字列部分は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
 | [ 日付（切り捨て） ](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 渡されたフィールドで動的ディメンション ID を生成します。<br/>サポートされる文字列の精度は次のとおりです。`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` または `'MINUTE'`。 |
+
+{style="table-layout:auto"}
+
+### 部分的なサポート
+
+一部の SQL 機能は、BI 拡張機能で部分的にのみサポートされており、他のデータベースで見られるような結果を返しません。  この特定の機能は、様々な BI ツールで生成される SQL で使用されます。これらのツールでは、BI 拡張機能に完全一致はありません。 その結果、BI 拡張機能は、エラーをスローせずに BI ツールの最小使用量をカバーする限定的な実装に焦点を当てています。 詳しくは、次の表を参照してください。
+
+| 関数 | 例 | 詳細 |
+|---|---|---|
+| MIN （）およびMAX（） | ``MIN(daterange)`` または<br/> ``MAX(daterange)`` | `timestamp`、`daterange` または `daterangeday` のような `daterangeX` の `MIN()` は 2 年前に戻ります。<br/><br/> `timestamp`、`daterange`、または `daterangeday` のような `daterangeX` のいずれかに `MAX()` すると、現在の日付/時刻が返されます。他のディメンション、指標、式の <br/><br/>`MIN()` または `MAX()` は 0 を返します。 |
 
 {style="table-layout:auto"}
