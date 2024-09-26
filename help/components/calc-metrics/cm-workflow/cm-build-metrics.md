@@ -6,7 +6,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -28,7 +28,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 1. [ 計算指標ビルダーの領域 ](#areas-of-the-calculated-metrics-builder) に進みます。
 
-## 計算指標ビルダーの領域
+## 計算指標ビルダーのエリア
 
 <!-- 
 
