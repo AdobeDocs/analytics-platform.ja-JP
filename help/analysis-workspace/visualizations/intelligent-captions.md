@@ -4,9 +4,9 @@ title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '632'
 ht-degree: 5%
 
 ---
@@ -19,8 +19,6 @@ ht-degree: 5%
 
 * 他のユーザーと共有するためにストーリーを必要とするアナリスト。 アナリストがユーザーにコンテキストを提供するには、これらのインサイトが必要です。
 * ビジネスユーザーは、ハイレベルな留意点をすばやく見つけたいと考えています。
-
-キャプションは、すべてのCustomer Journey Analyticsユーザーが使用でき、特別な権限を必要としません。
 
 ## インテリジェントキャプションを起動 {#launch}
 
@@ -101,7 +99,7 @@ ht-degree: 5%
 
 * **ソリューションアクセス**：インテリジェントキャプション機能は、Customer Journey Analyticsでは使用できますが、Adobe Analyticsでは使用できません。
 
-* **契約によるアクセス**：インテリジェントキャプションを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 組織でインテリジェントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
+* **契約によるアクセス**：インテリジェントキャプションを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 組織でインテリジェントキャプションを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
 * **権限**: [!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL インテリジェントキャプション]** 権限によってアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Consoleの次の手順に従う必要があり ] す。
    1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL 製品]** / **[!UICONTROL Customer Journey Analyticsプロファイル]** に移動します。
