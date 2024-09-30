@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
-workflow-type: ht
-source-wordcount: '2315'
-ht-degree: 100%
+source-git-commit: 6820adc70412f6abeae81bf8389227999d13f0d5
+workflow-type: tm+mt
+source-wordcount: '2306'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | **セキュリティとプライバシーに関するオプションの機能強化** - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する[追加のセキュリティオプション](/help/privacy/cmk.md)を提供します。Adobe Analytics は HIPAA に対応していません。 |
 | **実験分析** | Customer Journey Analytics では、接続の一部として定義された任意のデータソースから、[任意の実験の上昇率と信頼性を評価](/help/analysis-workspace/c-panels/experimentation.md)できます。この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
 | **予測** | [予測](/help/analysis-workspace/c-forecast/forecasting.md)は、Customer Journey Analytics に既に存在する履歴データに基づく時系列関連データの統計的予測を含む AI／ML 機能です。予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
-| **ガイド付き分析** | [ガイド付き分析](/help/guided-analysis/overview.md)は、ユーザーがデータのニーズを迅速にセルフサービスで取得できるようにするレポート形式で、高品質のインサイトを迅速に取得し、より多くのデータ主導型の意思決定を行うことができます。ガイド付き分析は、Adobe Product Analytics の一部です。 |
+| **ガイド付き分析** | [ ガイド付き分析 ](/help/guided-analysis/overview.md) を使用すると、Customer Journey Analyticsのクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 |
 | **インテリジェントキャプション** | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、CJA を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の CJA レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。これは、生データからレポート／指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
