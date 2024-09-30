@@ -3,7 +3,7 @@ title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
 hide: true
 hidefromtoc: true
-source-git-commit: 60c53b29f8e4105f96bf312462610024517605b8
+source-git-commit: 18686285efbdbc9e8fdac93e215adc4061bb0022
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 11%
