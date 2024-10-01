@@ -3,7 +3,7 @@ title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->この機能は、Adobe Experience Platformでの契約上のデータ制限にカウントされます。 この機能を有効にする前に、この機能で生成されたデータを組織が調整できることを確認してください。
+>この機能は、Adobe Experience Platformの契約上の行制限にカウントされます。 この機能を有効にする前に、この機能で生成されたデータを組織が調整できることを確認してください。
 
 ## 使用可能なディメンション
 
