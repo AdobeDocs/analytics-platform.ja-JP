@@ -4,7 +4,7 @@ description: Analysis Workspace で日付範囲を共有、名前変更または
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 9%
@@ -51,7 +51,7 @@ ht-degree: 9%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ 日付範囲ビルダー ](create.md#date-range-builder) を使用して、別の日付範囲を追加します。 |
 | ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストで日付範囲が選択されていない場合、この検索フィールドを使用して日付範囲を検索します。 |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択した日付範囲にタグ付け。 **[!UICONTROL 日付範囲のタグ付け]** ダイアログで、選択した日付範囲のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した日付範囲のタグを保存します。 |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | 選択した日付範囲を共有します。 **[!UICONTROL 日付範囲を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した日付範囲の共有の詳細を保存します。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | 選択した日付範囲を共有します。 **[!UICONTROL 日付範囲を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した日付範囲の共有の詳細を保存します。 |
 | ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択した日付範囲を削除します。 確認メッセージが表示されます。 |
 | ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つの日付範囲の名前を変更します。 選択した場合、日付範囲の名前をインラインで変更できます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | 選択した日付範囲を承認します |

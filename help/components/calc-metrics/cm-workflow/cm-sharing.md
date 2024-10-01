@@ -3,7 +3,7 @@ description: 権限に応じて、指標を組織全体、グループまたは�
 title: 計算指標の共有
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -20,7 +20,7 @@ ht-degree: 10%
 1 つ以上の計算指標を共有するには：
 
 1. [ 計算指標マネージャー ](cm-manager.md) で、共有する計算指標を 1 つ以上選択します。
-1. アクションバーの「![ 共有 ](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共有]**」を選択します。
+1. アクションバーの「![ 共有 ](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共有]**」を選択します。
 1. **[!UICONTROL 計算指標を共有]** ダイアログで、次の手順を実行します。
 
    ![ 計算指標を共有ダイアログ ](assets/share-calculated-metrics-dialog.png)

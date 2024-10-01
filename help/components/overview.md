@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 33%
@@ -75,7 +75,7 @@ Analysis Workspaceの **[!UICONTROL コンポーネント]** メニューを使�
    | ![ スター ](/help/assets/icons/Star.svg) [!UICONTROL **お気に入り**] | コンポーネントをお気に入りのリストに追加します。タグと同様に、左側のパネルのお気に入りで検索し、コンポーネントマネージャーでフィルタリングできます。 |
    | ![StarOutline](/help/assets/icons/StarOutline.svg)**[!UICONTROL お気に入りから外す]** | コンポーネントをお気に入りのリストから削除します。 |
    | ![ チェックマーク ](/help/assets/icons/Checkmark.svg)[!UICONTROL **承認**] | コンポーネントを「承認済み」とマークして、コンポーネントが組織で承認されていることをユーザーに知らせます。 タグと同様に、左側のパネルで「承認済み」を検索してフィルタリングできます。 ![ チェックマーク ](/help/assets/icons/Checkmark.svg) は、承認済みのコンポーネントを識別します。 |
-   | ![Share](/help/assets/icons/ShareLight.svg) [!UICONTROL **Share**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Share**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
    | ![Delete](/help/assets/icons/Delete.svg)[!UICONTROL **Delete**] | 不要になったコンポーネントを削除します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
 また、カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理できます。例えば、[ フィルターの管理 ](/help/components/filters/manage-filters.md) を参照してください。

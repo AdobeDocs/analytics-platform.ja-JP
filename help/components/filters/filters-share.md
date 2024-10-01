@@ -4,7 +4,7 @@ title: フィルターの共有
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 10%
@@ -21,7 +21,7 @@ ht-degree: 10%
 1 つ以上のフィルターを共有するには：
 
 1. [ フィルターマネージャー ](manage-filters.md) で、共有するフィルターを 1 つ以上選択します。
-1. アクションバーの「![ 共有 ](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共有]**」を選択します。
+1. アクションバーの「![ 共有 ](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共有]**」を選択します。
 1. **[!UICONTROL フィルターを共有]** ダイアログで、次の手順を実行します。
 
    ![ フィルターを共有ダイアログ ](assets/share-filter-dialog.png)

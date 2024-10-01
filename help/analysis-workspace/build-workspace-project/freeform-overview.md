@@ -5,7 +5,7 @@ title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -52,7 +52,7 @@ Customer Journey Analyticsのプロジェクトにアクセスするには、**[
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | 1 つ以上のプロジェクトを選択すると、プロジェクトインターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[ アクション ](#actions) を参照してください。 |
 | ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | プロジェクトの ![ 星 ](/help/assets/icons/Star.svg) または ![ 星の概要 ](/help/assets/icons/StarOutline.svg) を優先するかどうかを選択します。 |
-| **[!UICONTROL タイトルと説明]** | プロジェクトを編集するには、タイトルリンクを選択して、[Workspace プロジェクト ](/help/analysis-workspace/home.md) を開きます。 自分と共有されているプロジェクトは、![ 共有 ](/help/assets/icons/ShareLight.svg) で示されます。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、プロジェクトの詳細を示すポップアップメニューが表示されます。 ![ 詳細 ](/help/assets/icons/More.svg) を選択して、アクションを含むコンテキストメニューを開きます。 詳しくは、[ アクション ](#actions) を参照してください。 |
+| **[!UICONTROL タイトルと説明]** | プロジェクトを編集するには、タイトルリンクを選択して、[Workspace プロジェクト ](/help/analysis-workspace/home.md) を開きます。 自分と共有されているプロジェクトは、![ 共有 ](/help/assets/icons/ShareAlt.svg) で示されます。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、プロジェクトの詳細を示すポップアップメニューが表示されます。 ![ 詳細 ](/help/assets/icons/More.svg) を選択して、アクションを含むコンテキストメニューを開きます。 詳しくは、[ アクション ](#actions) を参照してください。 |
 | **[!UICONTROL タイプ]** | Workspace プロジェクト、![FolderUser](/help/assets/icons/FolderUser.svg) フォルダーまたは [ モバイルスコアカード ](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home)。 |
 | **[!UICONTROL タグ]** | プロジェクトに適用されるタグ。 |
 | スケジュール済み | プロジェクトが受信者にメールで送信されるようにスケジュールされているかどうか。 オプションは ![StatusGreen](/help/assets/icons/StatusGreen.svg)**[!UICONTROL On]** または ![StatusGray](/help/assets/icons/StatusGray.svg)**[!UICONTROL Off]** です。 [ プロジェクトデータの他のユーザーへの送信 ](/help/analysis-workspace/export/t-schedule-report.md) を参照してください。 |
@@ -82,7 +82,7 @@ Customer Journey Analyticsのプロジェクトにアクセスするには、**[
 |---|---|
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *が選択されました]** | 選択したプロジェクトとフォルダーの選択を解除して、青いアクションバーを削除します。 |
 | ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 1 つ以上のプロジェクトまたはフォルダーを削除します。 確認メッセージが表示されます。 |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | プロジェクトを共有します。 詳しくは、[ プロジェクトの共有 ](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | プロジェクトを共有します。 詳しくは、[ プロジェクトの共有 ](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
 | ![ 編集 ](/help/assets/icons/Edit.svg) 名前変更 | プロジェクトの名前を変更する。 **[!UICONTROL 名前を変更：*プロジェクト名ダイアログ&#x200B;*]**を開きます。 新しい名前を入力し、「**[!UICONTROL 保存&#x200B;]**」を選択します。 |
 | ![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 1 つ以上のプロジェクトをコピーします。 プロジェクトの名前と接尾辞の `(Copy)` が同じになります。 |
 | ![ ピン留め ](/help/assets/icons/PinOff.svg)**[!UICONTROL ピン留め]** または **[!UICONTROL ピン留めを解除]** | 1 つ以上のプロジェクトまたはフォルダーをピン留めまたはピン留めを解除します。 ピン留めされたプロジェクトとフォルダーはリストの上部に表示され、指定した並べ替え順を無視します。 |

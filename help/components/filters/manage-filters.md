@@ -4,7 +4,7 @@ description: Customer Journey Analyticsでフィルターを管理する方法�
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%
@@ -37,7 +37,7 @@ ht-degree: 4%
 | 列 | 説明 |
 | --- | --- | 
 | ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | フィルターの ![ 星 ](/help/assets/icons/Star.svg) を優先するか、![ 星のアウトライン ](/help/assets/icons/StarOutline.svg) を優先しないかを選択します。 [ フィルターをお気に入りとしてマーク ](/help/components/filters/filters-favorite.md) を参照してください。 |
-| **[!UICONTROL タイトルと説明]** | フィルターを編集するには、タイトルリンクを選択して [ フィルタービルダー ](filter-builder.md) を開きます。 共有フィルターには「![ 共有 ](/help/assets/icons/ShareLight.svg) と表示されます。 |
+| **[!UICONTROL タイトルと説明]** | フィルターを編集するには、タイトルリンクを選択して [ フィルタービルダー ](filter-builder.md) を開きます。 共有フィルターには「![ 共有 ](/help/assets/icons/ShareAlt.svg) と表示されます。 |
 | **[!UICONTROL データビュー]** | このフィルターを適用するデータビュー。 |
 | **[!UICONTROL 所有者]** | フィルターの所有者。 ユーザーには、自分が所有するフィルターまたは自分と共有されている注釈のみが表示されます。 |
 | **[!UICONTROL タグ]** | このフィルターのタグ。 |
@@ -59,7 +59,7 @@ ht-degree: 4%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ フィルタービルダー ](filter-builder.md) を使用して、別のフィルターを追加します。 |
 | ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストでフィルターが選択されていない場合、この検索フィールドを使用してフィルターを検索します。 |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択したフィルターにタグを付けます。 **[!UICONTROL タグフィルター]** ダイアログで、選択したフィルターのタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択したフィルターのタグを保存します。 詳しくは、[ タグフィルター ](/help/components/filters/filters-tag.md) を参照してください。 |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | 選択したフィルターを共有します。 **[!UICONTROL フィルターを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したフィルターの共有の詳細を保存します。 詳しくは、[ フィルターの共有 ](filters-share.md) を参照してください。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | 選択したフィルターを共有します。 **[!UICONTROL フィルターを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したフィルターの共有の詳細を保存します。 詳しくは、[ フィルターの共有 ](filters-share.md) を参照してください。 |
 | ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択したフィルターを削除します。 確認メッセージが表示されます。 |
 | ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つのフィルターの名前を変更します。 選択した場合、フィルターの名前をインラインで変更できます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | 選択したフィルターを承認します。 詳しくは、[ フィルターを承認 ](filters-approve.md) を参照してください。 |

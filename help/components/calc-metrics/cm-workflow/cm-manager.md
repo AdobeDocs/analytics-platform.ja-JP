@@ -3,7 +3,7 @@ description: 計算指標マネージャーを使用すると、共有、フィ�
 title: 計算指標マネージャー
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 5%
@@ -34,7 +34,7 @@ ht-degree: 5%
 | 列 | 説明 |
 | --- | --- | 
 | ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | 計算指標である ![Star](/help/assets/icons/Star.svg) を優先するか、または ![StarOutline](/help/assets/icons/StarOutline.svg) を優先しないかを選択します。 [ 計算指標をお気に入りとしてマーク ](/help/components/filters/filters-favorite.md) を参照してください。 |
-| **[!UICONTROL タイトルと説明]** | 計算指標を編集するには、タイトルリンクを選択して [ 計算指標ビルダー ](cm-build-metrics.md) を開きます。 共有計算指標は、「![ 共有 ](/help/assets/icons/ShareLight.svg) と表示されます。 |
+| **[!UICONTROL タイトルと説明]** | 計算指標を編集するには、タイトルリンクを選択して [ 計算指標ビルダー ](cm-build-metrics.md) を開きます。 共有計算指標は、「![ 共有 ](/help/assets/icons/ShareAlt.svg) と表示されます。 |
 | **[!UICONTROL データビュー]** | この計算指標が適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | 計算指標の所有者。 ユーザーには、自分が所有する注釈または自分と共有されている注釈のみが表示されます。 |
 | **[!UICONTROL タグ]** | この計算指標のタグをリストします。 |
@@ -56,7 +56,7 @@ ht-degree: 5%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ 計算指標ビルダー ](cm-build-metrics.md) を使用して、別の計算指標を追加します。 |
 | ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストで計算指標が選択されていない場合は、この検索フィールドを使用してフィルターを検索します。 |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択した計算指標のタグ付け。 **[!UICONTROL 計算指標をタグ付け]** ダイアログで、選択した計算指標のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標のタグを保存します。 詳しくは、[ 計算指標のタグ付け ](cm-tagging.md) を参照してください。 |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | 選択した計算指標を共有します。 **[!UICONTROL 計算指標を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標の共有の詳細を保存します。 詳しくは、[ 計算指標の共有 ](cm-sharing.md) を参照してください。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | 選択した計算指標を共有します。 **[!UICONTROL 計算指標を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標の共有の詳細を保存します。 詳しくは、[ 計算指標の共有 ](cm-sharing.md) を参照してください。 |
 | ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択した計算指標を削除します。 確認メッセージが表示されます。 |
 | ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つの計算指標の名前を変更します。 選択した場合、計算指標の名前をインラインで変更できます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | 選択した計算指標を承認します。 [ 計算指標の承認 ](cm-approving.md) を参照してください。 |
