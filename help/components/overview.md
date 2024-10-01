@@ -5,140 +5,131 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 100%
+source-wordcount: '923'
+ht-degree: 33%
 
 ---
 
 # コンポーネントの概要
 
-コンポーネントは、レポートで使用したり、レポート機能を補完したりできる、Customer Journey Analytics の機能です。これらのコンポーネントは、次の手順で管理できます。
+コンポーネントは、ビジュアライゼーション （フリーフォームテーブルなど）で使用できる、またはレポート機能を補完するCustomer Journey Analyticsの機能です。
 
-1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
-2. ヘッダーメニューで[!UICONTROL コンポーネント]／[!UICONTROL コンポーネント]に移動します。
+メインCustomer Journey Analyticsインターフェイスからコンポーネントを管理するには：
+
+1. 上部バーの **[!UICONTROL コンポーネント]** を選択します。
+1. **[!UICONTROL コンポーネント]** を選択して、管理できるコンポーネントの概要を表示するか、メニューから管理するコンポーネントを直接選択します。
 
 次のコンポーネントを管理できます。
 
-* [**注釈**](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
-* [**オーディエンス**](/help/components/audiences/audiences-overview.md)：Customer Journey Analytics で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)（RTCDP）に公開し、顧客のターゲティングやパーソナライゼーションを実現します。
-* [**フィルター**](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスフィルターを作成、管理、共有し、レポートに適用します。フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
-* [**計算指標**](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
-* [**データ辞書**](/help/components/data-dictionary/data-dictionary-overview.md)：ユーザーと管理者の両方にとって、Analytics 環境のコンポーネントを追跡したり理解を深めたりするのに役立ちます。
-* [**日付範囲**](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
-* [**ディメンション**](/help/components/dimensions/view-dimensions.md)：ディメンションは、通常、文字列値を含んでいる変数です。一般的なディメンションには、ページや参照ドメインなどがあります。
-* [**指標**](/help/components/apply-create-metrics.md)：Analysis Workspace でデータポイントを数量化できます。
-* [**プロジェクト**](/help/analysis-workspace/home.md)：Analysis Workspace でプロジェクトを整理し維持管理します。
+* [フィルター](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスフィルターを作成、管理、共有し、レポートに適用します。フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
+* [計算指標](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
+* [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
+* [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
+* [ インテリジェントアラート ](/help/components/c-intelligent-alerts/intelligent-alerts.md)：変更された割合または特定のデータポイントに基づいて通知を受け取ることができます。
+* [ スケジュールされたプロジェクト ](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager)：スケジュールされたプロジェクトを管理します。
+* [ 環境設定 ](/help/analysis-workspace/user-preferences.md):Analysis Workspaceの環境設定を管理します。
+* [ オーディエンス ](/help/components/audiences/audiences-overview.md)：ターゲティングやパーソナライゼーションにExperience Platformして、Customer Journey Analyticsから [Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) にオーディエンスを作成して公開します。
+* [ 書き出し ](/help/components/exports/manage-export-locations.md)：書き出しアカウントと場所を管理します。
+
 
 ## Analysis Workspace のコンポーネント
 
-Analysis Workspace のコンポーネントは、プロジェクトにドラッグ＆ドロップできる指標、ディメンション、フィルターおよび時間精度で構成されています。カスタム日付範囲などの、作成したカスタムコンポーネントがこれらのパネルに追加されます。
+Analysis Workspaceのコンポーネントは、Workspace プロジェクトのパネルおよびビジュアライゼーションにドラッグ&amp;ドロップできる指標、ディメンション、フィルターおよび日付範囲で構成されています。 作成したカスタムコンポーネントは、計算指標やカスタム日付範囲など、これらのパネルに追加されます。
 
-コンポーネントパネルにアクセスするには、左側のパネルで&#x200B;**[!UICONTROL コンポーネント]**&#x200B;アイコンをクリックします。左側のパネルのアイコンを使用するか、[ホットキー](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)を使用して、パネル（空白パネル、[フリーフォームパネル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[クイックインサイトパネル](/help/analysis-workspace/c-panels/quickinsight.md)、[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) パネルのいずれか）、[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、コンポーネントを切り替えることができます。
+コンポーネントパネルにアクセスするには、ボタンパネル内の ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** を選択します。
 
 ![左パネルでコンポーネントアイコンをハイライト表示する Workspace パネル](assets/components.png)
 
-プロジェクトでのコンポーネントの使用については、[ワークスペースプロジェクトの作成](/help/analysis-workspace/home.md)を参照してください。
+プロジェクトでのコンポーネントの使用方法については、[ プロジェクトの作成 ](/help/analysis-workspace/home.md) を参照してください。
 
-## コンポーネントのアクション
 
-コンポーネントは、様々な方法で（個別に、または複数選択して同時に）管理できます。コンポーネントを右クリックするか、コンポーネントリストの上部にある「**[!UICONTROL アクション]**」をクリックします。
-
->[!NOTE]
->
->これらのアクションは、時間コンポーネントには適用されません。
-
-| コンポーネントのアクション | 説明 |
-| --- | --- |
-| タグ | コンポーネントにタグを適用して整理したり管理したりします。これらは、[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL フィルター]や[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL プロジェクト]などの各コンポーネントマネージャーに表示されます。 |
-| お気に入り | コンポーネントをお気に入りのリストに追加します。これらは、[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL フィルター]や[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL プロジェクト]などの各コンポーネントマネージャーに表示されます。 |
-| 承認 | コンポーネントを正規のものとして承認します。これらは、[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL フィルター]や[!UICONTROL 分析]／[!UICONTROL コンポーネント]／[!UICONTROL プロジェクト]などの各コンポーネントマネージャーに表示されます。 |
-| 共有 | フィルターにのみ適用されます。 |
-| 削除 | フィルターにのみ適用されます。 |
-
-指標、フィルター、日付の作成に関するビデオを視聴してください。
++++ コンポーネントの可能性を示すビデオを視聴してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
++++
+
 ## コンポーネントの管理 {#actions}
 
-左側のパネルでコンポーネントを直接管理できます。
+Analysis Workspaceの **[!UICONTROL コンポーネント]** メニューを使用して、新しいコンポーネントをすばやく作成できます。 詳しくは、[Analysis Workspace メニュー ](/help/analysis-workspace/home.md#menu) を参照してください。
 
-1. コンポーネントを右クリックします。
+コンポーネントを（個別に、または複数を選択して）管理できます。
 
-   または
+1. 1 つ以上のコンポーネントを選択します。
 
-   コンポーネントを選択し、コンポーネントリストの上部にある「**アクション**」（3 ドット）アイコンを選択します。
+1. コンテキストメニュー、または ![ その他の垂直方向 ](/help/assets/icons/MoreVertical.svg) コンポーネントアクションボタン（コンポーネントの上部）から、次のいずれかのアクションを選択します。
+
 
    >[!TIP]
    >
-   >   複数のコンポーネントを選択するには、Shift キーを押すか、Command キー（Mac の場合）または Ctrl キー（Windows の場合）を押します。
+   >複数のコンポーネントを選択するには、**[!UICONTROL Shift]** キーを押すか、**[!UICONTROL Command]** キー（macOSの場合）または **[!UICONTROL Ctrl]** キー（Windows の場合）を押します。
 
 
-   ![タグ、お気に入り、承認、共有、削除を表示するコンポーネントアクションリスト。](assets/component-actions.png)
+   ![ タグ、お気に入り、承認、共有、削除を表示するコンポーネントアクションリスト。](assets/component-menu.gif){width=100%}
 
    | コンポーネントのアクション | 説明 |
    |--- |--- |
-   | [!UICONTROL **タグ**] | コンポーネントにタグを適用して整理したり管理したりします。次に、フィルターをクリックするか「#」を入力して、左側のレールのタグで検索できます。 タグは、コンポーネントマネージャーのフィルターとしても機能します。 |
-   | [!UICONTROL **お気に入り**] | コンポーネントをお気に入りのリストに追加します。タグと同様に、左側のレールのお気に入りで検索し、コンポーネントマネージャーでフィルタリングできます。 |
-   | [!UICONTROL **承認**] | コンポーネントを「承認済み」とマークして、コンポーネントが組織で承認されていることをユーザーに知らせます。 タグと同様に、左側のレールで「承認済み」を検索し、コンポーネントマネージャーでフィルタリングできます。 |
-   | [!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
-   | [!UICONTROL **削除**] | 不要になったコンポーネントを削除します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **Tag**] | コンポーネントにタグを適用して整理したり管理したりします。その後、![ フィルター ](/help/assets/icons/Filter.svg) フィルターを選択するか `#` を入力して、左側のパネルのタグで検索できます。 タグは、コンポーネントマネージャーのフィルターとしても機能します。 |
+   | ![ スター ](/help/assets/icons/Star.svg) [!UICONTROL **お気に入り**] | コンポーネントをお気に入りのリストに追加します。タグと同様に、左側のパネルのお気に入りで検索し、コンポーネントマネージャーでフィルタリングできます。 |
+   | ![StarOutline](/help/assets/icons/StarOutline.svg)**[!UICONTROL お気に入りから外す]** | コンポーネントをお気に入りのリストから削除します。 |
+   | ![ チェックマーク ](/help/assets/icons/Checkmark.svg)[!UICONTROL **承認**] | コンポーネントを「承認済み」とマークして、コンポーネントが組織で承認されていることをユーザーに知らせます。 タグと同様に、左側のパネルで「承認済み」を検索してフィルタリングできます。 ![ チェックマーク ](/help/assets/icons/Checkmark.svg) は、承認済みのコンポーネントを識別します。 |
+   | ![Share](/help/assets/icons/ShareLight.svg) [!UICONTROL **Share**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | ![Delete](/help/assets/icons/Delete.svg)[!UICONTROL **Delete**] | 不要になったコンポーネントを削除します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
-また、カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理できます。[フィルターの管理](/help/components/filters/manage-filters.md)などです。
+また、カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理できます。例えば、[ フィルターの管理 ](/help/components/filters/manage-filters.md) を参照してください。
 
-## コンポーネントリストの検索、フィルタリング、並べ替え
+## コンポーネントリストの管理
 
-Analysis Workspace の左側のパネルにあるコンポーネントリストを検索、フィルタリング、並べ替えて、特定のコンポーネントを素早く見つけることができます。
+Analysis Workspaceの左側のパネルにあるコンポーネントリストを検索、フィルタリング、並べ替えて、特定のコンポーネントを見つけることができます。
 
-### コンポーネントリストの検索
+### 検索
 
-1. 左側のパネルで「**コンポーネント**」アイコン ![コンポーネントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
+1. 左側のパネルで **コンポーネント** ![ コンポーネントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**ディメンション** ![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**フィルター** ![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。アドビアイコン ![アドビアイコン](assets/default-calc-metric-icon.png) は計算指標テンプレートまたはフィルターテンプレートのいずれか、電卓アイコン ![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は組織の Analytics 管理者によって作成された計算指標を示します。
+   コンポーネントのタイプは、カラーとアイコンで識別されます。 **Dimension** ![Dimensionアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) オレンジ色、**フィルター** ![ フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 青色、**日付範囲** ![ 日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 紫色、**指標** ![ 指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 緑色です。<br/>Adobeアイコン ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) は、計算指標テンプレートまたはフィルターテンプレートのいずれかを示します。 電卓アイコン ![ 電卓アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は、組織の管理者が作成した計算指標を示します。
 
-3. ドロップダウンリストに表示される場合に、コンポーネントを選択します。
+3. ドロップダウンリストからコンポーネントを選択します。
 
-### コンポーネントリストのフィルタリング
+### フィルター
 
-1. 左側のパネルにある「**コンポーネント**」アイコン ![コンポーネントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
+1. 左側のパネルで「**コンポーネント**」アイコン ![ コンポーネントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
 
-2. **フィルター**&#x200B;アイコン ![データ辞書フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択します。
-
-   または
-
-   検索フィールドにシャープ記号（#）を入力します。
+2. **フィルター**![ データ要素のフィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択するか、検索フィールドに `#` を入力します。
 
 3. 次のいずれかのフィルターオプションを選択して、コンポーネントのリストをフィルタリングします。
 
-   | オプション | 関数 |
-   |---------|----------|
-   | [!UICONTROL **承認済み**] | 管理者が承認済みとしてマークしたコンポーネントのみを表示します。 |
-   | [!UICONTROL **お気に入り**] | お気に入りのリストにあるコンポーネントのみを表示します。お気に入りのリストにコンポーネントを追加する方法については、[コンポーネントの管理](#manage-components)を参照してください。 |
-   | [!UICONTROL **ディメンション**] | ディメンションであるコンポーネントのみを表示します。 |
-   | [!UICONTROL **指標**] | 指標であるコンポーネントのみを表示します。 |
-   | [!UICONTROL **フィルター**] | フィルターであるコンポーネントのみを表示します。 |
-   | [!UICONTROL **日付範囲**] | 日付範囲であるコンポーネントのみを表示します。 |
-   | [!UICONTROL **すべてを表示**] | すべてのコンポーネントの表示。 このオプションは、管理者のみが使用できます。 |
-   | [!UICONTROL **未承認**] | 管理者が承認済みとしてまだマークしていないコンポーネントのみを表示します。レビューと承認が必要なコンポーネントを管理者が識別する際に役立ちます。このオプションは、管理者のみが使用できます。 |
+   | アイコン | フィルターオプション | 説明 |
+   |---------|---|----------|
+   | ![ チェックマーク ](/help/assets/icons/Checkmark.svg) | **[!UICONTROL 承認済み]** | 管理者が承認済みとしてマークしたコンポーネントのみを表示します。 |
+   | ![ 星 ](/help/assets/icons/Star.svg) | **[!UICONTROL お気に入り]** | お気に入りのリストにあるコンポーネントのみを表示します。<br/> お気に入りのリストにコンポーネントを追加する方法については、[ コンポーネントの管理 ](#manage-components) を参照してください。 |
+   | ![ディメンション](/help/assets/icons/Dimensions.svg) | **[!UICONTROL ディメンション]** | ディメンションであるコンポーネントのみを表示します。 |
+   | ![イベント](/help/assets/icons/Event.svg) | **[!UICONTROL 指標]** | 指標であるコンポーネントのみを表示します。 |
+   | ![セグメント化](/help/assets/icons/Segmentation.svg) | **[!UICONTROL フィルター]** | フィルターであるコンポーネントのみを表示します。 |
+   | ![カレンダー](/help/assets/icons/Calendar.svg) | **[!UICONTROL 日付範囲]** | 日付範囲であるコンポーネントのみを表示します |
+   | ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL *タグ名&#x200B;*]** | 特定のタグが選択されているコンポーネントのみを表示します。 Adobeテンプレートには専用のタグが使用できます。これは、Adobeの [ デフォルトの計算指標 ](/help/components/calc-metrics/default-calcmetrics.md) です。 |
 
-4. （オプション）リストをさらに絞り込むには、[コンポーネントリストの並べ替え](#sort-the-component-list)で説明しているように、コンポーネントリストを並べ替えます。
+   フィルターで ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、フィルターを削除します。
 
-### コンポーネントリストを並べ替え
+4. オプションで、「コンポーネントリストの並べ替え [ の説明に従って、コンポーネントリストを並べ替えること ](#sort-the-component-list) できます。
 
-{{release-limited-testing-section}}
+### 並べ替え
+
+<!-- {{release-limited-testing-section}}-->
 
 1. （オプション）[コンポーネントリストのフィルタリング](#filter-the-component-list)で説明しているように、コンポーネントリストにフィルターを適用します。
 
-2. 左側のパネルにある「**コンポーネント**」アイコン ![コンポーネントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
+2. 左側のパネルで **コンポーネント** ![ コンポーネントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) を選択します。
 
-3. 「**並べ替え**」アイコン ![コンポーネントを並べ替えアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択してコンポーネントのリストを並べ替えます。
+3. **並べ替え**![ コンポーネントを並べ替えアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択してコンポーネントのリストを並べ替えます。
 
-   {{components-sort-options}}
+次の並べ替えオプションを使用できます。
 
-## コンポーネントのアクセス権限
+{{components-sort-options}}
 
-Analysis Workspace では、管理者はレポートでユーザーに公開するコンポーネントを[キュレート](/help/analysis-workspace/curate-share/curate.md)できます。
+## アクセス権限
+
+Analysis Workspaceでは、管理者は、レポートでユーザーに公開されるコンポーネントを [ キュレーション ](/help/analysis-workspace/curate-share/curate.md) できます。
