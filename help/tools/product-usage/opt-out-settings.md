@@ -3,14 +3,14 @@ title: 製品使用のオプトアウト設定
 description: 組織内の個々のユーザーのオプトアウト設定を管理します。
 hide: true
 hidefromtoc: true
-source-git-commit: 18686285efbdbc9e8fdac93e215adc4061bb0022
+source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
-# 製品使用のオプトアウト設定
+# 製品使用のオプトアウト設定 {#product-usage-opt-out-settings}
 
 _オプトアウト設定_ ページを使用すると、組織内のユーザーを製品の使用状況のトラッキングから除外または再含めることができます。
 
@@ -22,3 +22,8 @@ _オプトアウト設定_ ページを使用すると、組織内のユーザ�
 * **[!UICONTROL オプトアウトユーザーリスト]**：製品使用状況のトラッキングから現在オプトアウトされているすべてのユーザーを表示するテーブル。 ユーザーを製品使用状況トラッキングにオプトインするには、特定のユーザーの横にあるチェックボックスをオンにし、「**[!UICONTROL オプトイン]**」ボタンを選択します。
 
 Adobeでは、クライアントサイドのトラッキングとサーバーサイドのトラッキングを組み合わせて、組織の商品使用状況データを収集します。 ユーザーが最初にオプトアウトすると、ログアウトしてCustomer Journey Analyticsに戻るまで、そのユーザーのデバッガーにクライアントサイドのトラッキングデータが表示される場合があります。 Adobeのサーバーサイド検証により、オプトアウトされたユーザーに対してクライアントサイドのトラッキングデータが破棄されるようにします。
+
+>[!CONTEXTUALHELP]
+>id="cja_product_usage_opt_out_settings"
+>title="オプトアウトユーザー"
+>abstract="製品使用状況のトラッキングからユーザーを除外します。"
