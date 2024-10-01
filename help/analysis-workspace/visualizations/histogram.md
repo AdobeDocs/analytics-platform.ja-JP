@@ -4,64 +4,71 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 80%
+source-wordcount: '330'
+ht-degree: 37%
 
 ---
 
-# ヒストグラム
+# ヒストグラム {#histogram}
 
-ヒストグラムは、棒グラフに似ていますが、数を範囲（グループ）でグループ化します。Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#section_09D774C584864D4CA6B5672DC2927477)で設定を変更できます。
+<!-- markdownlint-disable MD034 -->
 
-## ヒストグラムのビルド {#section_74647707CC984A1CB6D3097F43A30B45}
+>[!CONTEXTUALHELP]
+>id="cja_workspace_histogram_button"
+>title="ヒストグラム"
+>abstract="数値データの分布を範囲のグループに表すヒストグラムビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![ ヒストグラム ](/help/assets/icons/Histogram.svg)**[!UICONTROL ヒストグラム]** ビジュアライゼーションは、[!UICONTROL  棒グラフ ] ビジュアライゼーションに似ていますが、数値を範囲（バケット）にグループ化します。 Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#advanced-settings)で設定を変更できます。
+
+## 用途
 
 ヒストグラムを作成するには
 
-1. 左側のパネルで、 **[!UICONTROL ビジュアライゼーション]** をクリックします。
-1. **[!UICONTROL ヒストグラム]**&#x200B;をパネルにドラッグします。
-1. 指標を選択してヒストグラムビジュアライゼーションにドラッグし、「**[!UICONTROL ビルド]**」をクリックします。
-
-![ 「指標を下にドロップ」フィールドを表示する、空のヒストグラムパネル。](assets/histogram.png)
+1. ![ ヒストグラム ](/help/assets/icons/Histogram.svg)**[!UICONTROL ヒストグラム]** ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
+1. **[!UICONTROL 指標]** コンポーネントリストから指標をドラッグするか、[!UICONTROL *指標を追加*] ドロップダウンメニューから指標を選択します。
+1. （任意）「**[!UICONTROL 詳細設定を表示]**」を選択します。 [ 詳細設定 ](#advanced-settings) を参照してください。
+1. 「**[!UICONTROL 作成]**」を選択します。
 
 >[!NOTE]
 >
 >ヒストグラムは、計算指標ではなく、標準指標のみをサポートします。
 
-ここでは、ユニーク訪問者数ごとにページビュー数指標を使用しました。最初（左）のバケットは一意のユーザーごとに 1 つのページビューに対応し、2 番目のバケットは 2 つのページビューに対応します。
+次の例では、ヒストグラムを使用して、人数のセッションをバケット化します。 ヒストグラムは、ほとんどの人が選択したデータ範囲に対して 16～21 のセッションを持っていることを示しています。
 
-![](assets/histogram2.png)
+![](assets/histogram.png)
 
 ## 詳細設定 {#section_09D774C584864D4CA6B5672DC2927477}
 
-ヒストグラム設定を調整するには、右上隅の設定（「ギア」）アイコンをクリックします。変更できる設定を次に示します。
+ビジュアライゼーションの一部として、特定のヒストグラム設定を使用できます。
 
 | ヒストグラムの設定 | 説明 |
 |---|---|
-| 開始グループ | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
-| 指標グループ | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
-| 指標グループのサイズ | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
-| カウント方法 | [訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)、[訪問](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)、ヒットタイプから選択できます。例えば、訪問ごとのページビュー、ユーザーごとのページビュー、イベントごとのページビューなどです。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。 |
+| **[!UICONTROL 開始バケット]** | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
+| **[!UICONTROL 指標バケット]** | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
+| **[!UICONTROL 指標バケットのサイズ]** | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
+| **[!UICONTROL カウント方法]** | **[!UICONTROL ユーザー]**、**[!UICONTROL セッション]** または **[!UICONTROL イベント]** から選択します。 例えば、セッションごとのページビュー、1 人あたりのページビュー、1 つのイベントあたりのページビューなどです。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
 **例**：
 
-* 開始グループ：1、指標グループ：5、指標グループのサイズ：2 は、1～2、3～4、5～6、7～8、9～10 というヒストグラムになります。
-* 開始グループ：0、指標グループ：3、指標グループのサイズ：5 は、0～4、5～9、10～14 というヒストグラムになります。
+| 開始バケット | 指標グループ | 指標バケットのサイズ | 結果 |
+|:----:|:--:|:--:|:--|
+| 1 | 5 | 2 | ![ ヒストグラム、開始バケット 1、指標バケット 5、指標バケット サイズ 2](assets/histogram-1-5-2.png) |
+| 0 | 3 | 5 | ![ ヒストグラム、開始バケット 0、指標バケット 3、指標バケット サイズ 5](assets/histogram-0-3-5.png) |
 
-## ヒストグラムデータの表示と編集 {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
+>[!MORELIKETHIS]
+>
+>[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 
-ヒストグラムのデータソースを表示または変更するには、ヒストグラムヘッダーの隣の点をクリックして、 **[!UICONTROL データソース設定]**／**[!UICONTROL データソースを表示]** に移動します。
-
-![ 「データSourceを表示」および「選択をロック」が選択された状態の「データSource設定」オプション ](assets/manage-data-source.png)
-
-テーブルに表示される事前定義済みフィルターは、内部フィルターで、フィルターセレクターには表示されません。フィルター名の横にある「i」アイコンをクリックし、「**[!UICONTROL 公開する]**」をクリックしてフィルターを公開します。
-
-![ 編集ウィンドウと「公開する」リンクを表示するセグメント。](assets/prebuilt_segments.png)
-
-データを分類するなど、フリーフォームデータテーブルおよびその他のビジュアライゼーションを管理するその他の方法については、[こちら](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=ja)を参照してください。
 
 ## ブログ投稿
 

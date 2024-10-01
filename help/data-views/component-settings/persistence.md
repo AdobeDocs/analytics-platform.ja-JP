@@ -5,15 +5,26 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '900'
+ht-degree: 81%
 
 ---
 
 
-# [!UICONTROL 永続性] コンポーネントの設定
+# [!UICONTROL 永続性] コンポーネントの設定 {#persistence-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_persistence"
+>title="永続性"
+>abstract="ディメンションに適用されるデフォルト配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL 永続性] とは、特定のディメンション値を、設定されたイベント以外の指標にも関連付けることのできる機能です。配分と有効期限の組み合わせを使用します。
 

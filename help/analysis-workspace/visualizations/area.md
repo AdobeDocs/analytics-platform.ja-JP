@@ -4,27 +4,56 @@ title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 75%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
 # 面グラフおよび積み重ね面グラフ
 
-## 面グラフ {#Area}
+## 面グラフ {#area}
 
-この ビジュアライゼーションは折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。
+<!-- markdownlint-disable MD034 -->
 
-![ ページビュー数、訪問数、ユニーク訪問者数、バウンス率など、複数の指標を表示する領域ビジュアライゼーション。](assets/area.png)
+>[!CONTEXTUALHELP]
+>id="cja_workspace_area_button"
+>title="面グラフ"
+>abstract="複数の指標の積集合を表す面グラフ ビジュアライゼーションを作成します。"
 
-## 積み重ね面グラフ {#stacked}
+<!-- markdownlint-enable MD034 -->
 
-このビジュアライゼーションは面グラフに似ていますが、各系列は前の系列の上から開始されています。
+
+![GraphArea](/help/assets/icons/GraphArea.svg)**[!UICONTROL Area]** ビジュアライゼーションは折れ線グラフに似ていますが、線の下に色付きの領域があります。 複数の指標があり、2 つ以上の指標の積集合で表される領域を視覚化する場合は、面グラフを追加します。
+
+![ 複数の指標を表示する領域のビジュアライゼーション ](assets/area.png)
+
+## 積み重ね面グラフ {#area-stacked}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_areastacked_button"
+>title="積み重ね面グラフ"
+>abstract="複数の指標の積み重ねを表す面グラフのビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+
+![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg)**[!UICONTROL 積み重ね面グラフ]** ビジュアライゼーションは面グラフに似ていますが、各シリーズは前のシリーズの上から始まります。
 
 ![ 前の系列の上に各系列を示す積み重ね面グラフ。](assets/area-stacked.png)
 
-積み重ね面グラフのビジュアライゼーションを「100% の積み重ね」に変更する新しい設定が追加されました。
+![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** の「**[!UICONTROL 100% 積み重ね]**」オプションを使用して、グラフを 100% 積み重ねビジュアライゼーションに変換します。
 
-![100% 積み重ねビジュアライゼーションを表示する積み重ね面グラフ。](assets/areastacked100.png)
+![100% 積み重ねビジュアライゼーションを表示する積み重ね面グラフ。](assets/area-stacked100.png)
+
+>[!MORELIKETHIS]
+>
+>[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

@@ -5,14 +5,24 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 90%
+source-wordcount: '340'
+ht-degree: 82%
 
 ---
 
-# 動作コンポーネントの設定
+# 動作コンポーネントの設定 {#behavior-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_behavior"
+>title="動作"
+>abstract="このディメンションの行項目の集計方法を決定します。<br/><br/>**パラメーター&#x200B;**<br/>**小文字**: フィールドの文字列値が小文字である必要があるかどうかを指定できます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 動作の設定は、ディメンションと指標の両方で使用できます。使用できる設定は、コンポーネントタイプとスキーマデータタイプによって異なります。
 

@@ -4,25 +4,44 @@ title: ベン
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 79%
+source-wordcount: '136'
+ht-degree: 17%
 
 ---
 
-# ベン
+# ベン {#venn}
 
-ベン図ビジュアライゼーションを使用すると、（コンポーネントから）最大 3 フィルターおよび 1 つの指標をドラッグして、ベン図を作成できます。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_venn_button"
+>title="ベン"
+>abstract="ベン図ビジュアライゼーションを作成して、2 つの要素とその重複のサイズを視覚的にすばやく比較します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![ タイプ ](/help/assets/icons/TwoDots.svg) **[!UICONTROL ベン図]** ビジュアライゼーションを使用すると、（コンポーネントパネルから）最大 3 つのフィルターと 1 つの指標をドラッグして、ベン図を作成できます。
 
 ![3 つのフィルターを含むベン図ビジュアライゼーション。](assets/venn.png)
 
-次に、フィルターにカーソルを合わせると、パーセンテージなどについて、より多くのインサイトが得られます。
+フィルターにカーソルを合わせると、パーセンテージなどについて、より多くのインサイトが得られます。
 
-![2015 年秋の屋外参加者用フィルターに関する情報を拡張したベン図ビジュアライゼーション。](assets/venn_hover.png)
+[!UICONTROL  ベン ] ビジュアライゼーションから [!UICONTROL  フリーフォームテーブル ] を生成するには、![ ベン **[!UICONTROL ヘッダーの横にある色付きの ](/help/assets/icons/StatusOrange.svg) ステータスオレンジ]** を選択し、**[!UICONTROL データソースを表示]** を選択します。 **[!UICONTROL ベン]** ビジュアライゼーションの作成に使用されるデータを含む [!UICONTROL  ベン ] データ」フリーフォームテーブルが表示されます。
 
-ベン図をフリーフォームテーブルに変換するには、**[!UICONTROL ベン]**&#x200B;のヘッダーの隣にある色付きの点をクリックして、**[!UICONTROL データソースを管理]**／**[!UICONTROL 使用可能なデータソース]**／**[!UICONTROL フリーフォームテーブル]**&#x200B;を選択します。
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-ベン図を正規化する（サイズを測る）には、ビジュアライゼーション設定アイコンに移動し、「**[!UICONTROL 正規化]**」を選択します。
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-![ ビジュアライゼーションタイプの「ビジュアライゼーション設定」オプション：ベン図。](assets/normalization.png)
+-->
+
+>[!MORELIKETHIS]
+>
+>[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

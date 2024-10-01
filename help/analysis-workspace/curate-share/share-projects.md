@@ -5,14 +5,24 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 19923592c8c50d93e150ba908f23313513d3450b
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 69%
+source-wordcount: '2047'
+ht-degree: 65%
 
 ---
 
-# プロジェクトの共有
+# プロジェクトの共有 {#share-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_shareprojects"
+>title="プロジェクトの共有"
+>abstract="これらのプロジェクトの役割を組織内の他のユーザーと共有できます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 次のタイプのユーザーと Analysis Workspace プロジェクトを共有できます。
 
@@ -30,10 +40,13 @@ ht-degree: 69%
 
 共有より前に適用した[キュレーション](curate.md)は、受信者がプロジェクトを開くと反映されます。
 
-以下は、プロジェクト共有の概要に関するビデオです。
++++ プロジェクト共有の使用方法を示すビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
+{{videoaa}}
+
++++
 
 ## 組織内のCustomer Journey Analyticsユーザーおよびグループと共有する {#Add}
 
@@ -65,7 +78,7 @@ ht-degree: 69%
 
 特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには、次の手順に従います。
 
-1. Customer Journey Analyticsで「[!UICONTROL **Workspace**]」タブを選択し、左パネルで「[!UICONTROL **プロジェクト**] を選択します。
+1. Customer Journey Analyticsで「[!UICONTROL **Workspace**]」タブを選択し、左パネルで「[!UICONTROL **プロジェクト**]」を選択します。
 
 1. 共有する 1 つ以上のプロジェクトの横にあるチェックボックスを選択し、「[!UICONTROL **共有**]」を選択します。
 
@@ -82,9 +95,9 @@ ht-degree: 69%
 
    **オリジナルを編集：**&#x200B;受信者は、変更内容をプロジェクトに&#x200B;**[!UICONTROL 保存]**&#x200B;し、共同所有者になることができます。この役割は、他の同僚とプロジェクトを共同管理する場合に役立ちます。これには、共有プロジェクトの受信者リストの編集、削除、変更が含まれます。<br>注：Analysis Workspace は現在、ライブコラボレーションをサポートしていないので、一度に 1 人のユーザーだけがプロジェクトを編集することをお勧めします。プロジェクトを同時に保存すると、最後のバージョンが保持されます。
 
-   **コピーを編集：**&#x200B;受信者は、**[!UICONTROL 別名で保存]**&#x200B;し、左側のパネルにアクセスできます。この役割では、プロジェクトの操作は制限されません。この役割は、組織のデータと Analysis Workspace の使用方法を理解しているが、プロジェクトを変更してほしくないユーザーとプロジェクトを共有する場合に役立ちます。
+   **コピーを編集：** 受信者は、**[!UICONTROL 名前を付けて保存]** したり、左側のパネルにアクセスしたりできます。 この役割では、プロジェクトの操作は制限されません。この役割は、組織のデータと Analysis Workspace の使用方法を理解しているが、プロジェクトを変更してほしくないユーザーとプロジェクトを共有する場合に役立ちます。
 
-   **読み取り専用：**&#x200B;受信者は、**[!UICONTROL 保存]**&#x200B;または&#x200B;**[!UICONTROL 別名で保存]**&#x200B;することができず、左側のパネルにもアクセスできません。プロジェクトの操作も制限されます。このロールは、組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analyticsに関する一般的な知識の低いユーザーにプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーに引き続き、安全な環境でデータやインサイトを利用してもらいたい場合です。読み取り専用プロジェクトエクスペリエンスについて詳しくは、[こちら](/help/analysis-workspace/curate-share/view-only-projects.md)を参照してください。
+   **読み取り専用：** 受信者は **[!UICONTROL 保存]** または **[!UICONTROL 名前を付けて保存]** できず、左側のパネルにアクセスできません。 プロジェクトの操作も制限されます。このロールは、組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analyticsに関する一般的な知識の低いユーザーにプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーに引き続き、安全な環境でデータやインサイトを利用してもらいたい場合です。読み取り専用プロジェクトエクスペリエンスについて詳しくは、[こちら](/help/analysis-workspace/curate-share/view-only-projects.md)を参照してください。
 
 1. （条件付き） 1 つのプロジェクトを共有する場合は、プロジェクトを共有する際に次のオプションを有効にするかどうかを選択します。
 
@@ -148,7 +161,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 1. 共有する Analysis Workspace プロジェクトを開きます。
 
-1. **[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**&#x200B;をクリックします。
+1. **[!UICONTROL 共有]**/**[!UICONTROL 任意のユーザーと共有]** を選択します。
 
    未保存の変更がある場合は、プロジェクトを保存するように求められます。
 
@@ -164,7 +177,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    * **[!UICONTROL Experience Cloud 認証を要求]：**
 
-     このオプションが有効になっている場合、プロジェクトにアクセスできるのは、共有しているプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーのみです。 ただし、共有相手のユーザーは、Adobe Analytics へのアクセス権が不要です。
+     このオプションが有効になっている場合、プロジェクトにアクセスできるのは、共有しているプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーのみです。 ただし、共有先のユーザーがCustomer Journey Analyticsにアクセスする必要はありません。
 
      Customer Journey Analytics管理者は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、会社のこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 
@@ -172,13 +185,13 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
       * このオプションが有効になっていて、無効にできない場合は、Customer Journey Analytics管理者がAnalysis Workspace プロジェクトにアクセスするすべてのユーザーにExperience Cloud認証を要求していることを意味します。 これは、Healthcare Shield のライセンスを取得している組織には常に当てはまります。
 
-1. 「**[!UICONTROL 任意のユーザーと共有（ログインは不要）]**」フィールドの横にある **リンクをコピー** アイコン ![ リンクアイコンをコピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)）をクリックして、リンクをシステムのクリップボードにコピーします。
+1. **[!UICONTROL 任意のユーザーと共有（ログインは不要）]** フィールドの横にある ![ リンク ](/help/assets/icons/Link.svg) を選択して、リンクをシステムクリップボードにコピーします。
 
 1. プロジェクトへのアクセス権を付与するユーザーとリンクを共有します。例えば、リンクをメールにペーストできます。
 
    リンクの共有相手であるユーザーであれば誰でも、Analysis Workspace プロジェクトを表示できます。
 
-1. （オプション）「**新しいリンクを生成**」アイコン ![リンクを生成アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) をクリックすると、以前にプロジェクトへのリンクを受信したユーザーからのアクセスを削除できます。新しいリンクが生成され、プロジェクトへのアクセスを付与するユーザーにそのリンクを共有できます。
+1. （オプション） ![ 新しいリンクを生成 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) アイコンを選択して、以前にプロジェクトへのリンクを受け取ったユーザーからアクセスを削除できます。 新しいリンクが生成され、プロジェクトへのアクセスを付与するユーザーにそのリンクを共有できます。
 
 1. 「**[!UICONTROL 閉じる]**」を選択して、共有ダイアログボックスを閉じます。変更内容は自動的に保存されます。
 

@@ -1,19 +1,41 @@
 ---
-description: ユーザー定義のテキストを Workspace に追加できます。
+description: Workspaceにユーザー定義のテキストを追加します。
 title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 86%
+source-wordcount: '243'
+ht-degree: 25%
 
 ---
 
-# テキスト
+# テキスト {#text-visualization}
 
-テキストのビジュアライゼーションまたはパネル／ビジュアライゼーションの説明を使用して、ユーザー定義のテキストを Workspace プロジェクトに追加できます（ヘッダー／**[!UICONTROL 説明を編集]**&#x200B;を右クリック）。 また、テキストの書式設定の変更、ハイパーリンクの追加、画像の追加をおこなうこともできます。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_text_button"
+>title="テキスト"
+>abstract="ユーザー定義のリッチテキストビジュアライゼーションをプロジェクトに追加します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+ユーザー定義のリッチテキストをWorkspace プロジェクトに追加するには、![ テキスト ](/help/assets/icons/Text.svg)**[!UICONTROL テキスト]** ビジュアライゼーションを使用するか、ビジュアライゼーションとパネルの説明を使用します。
+
+## 用途
+
+テキスト ビジュアライゼーションは、次のように使用できます。
+
+1. ![ テキスト ](/help/assets/icons/Text.svg)**[!UICONTROL テキスト]** ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
+
+1. パネルまたはビジュアライゼーションのコンテキストメニューで「**[!UICONTROL 説明を編集]**」を選択します。
+
+   説明の編集が完了したら ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) を選択し、キャンセルするには ![CloseCircle](/help/assets/icons/CloseCircle.svg) を選択します。
+
+テキストの書式設定の変更、ハイパーリンクの追加、画像の追加を行うことができます。
 
 ## 書式設定の調整 {#format}
 
@@ -23,12 +45,12 @@ ht-degree: 86%
 
 ## ハイパーリンクの追加 {#hyperlinks}
 
-ハイパーリンクを追加するには、テキストをハイライト表示し、メニューのハイパーリンクアイコンをクリックします。 ハイパーリンクは、外部の Web サイト、ドキュメントページ、[Workspace プロジェクト／パネル／ビジュアライゼーション](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=ja)などにリンクさせて、プロジェクトの受信者をサポートできます。
+ハイパーリンクを追加するには、テキストをハイライト表示し、メニューで ![ リンク ](/help/assets/icons/Link.svg) を選択します。 ハイパーリンクを使用すると、プロジェクトの受信者にさらに支援を提供できます。 ハイパーリンクは、外部の web サイト、ドキュメントページ、[Workspace プロジェクト、パネル、ビジュアライゼーションなどにリンク ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) きます。
 
 ![ リンクアイコンがハイライト表示されたテキストオプション ](assets/hyperlink.png)
 
 ## 画像を追加 {#images}
 
-プロジェクトに画像を追加するには、メニューの画像アイコンをクリックし、公開画像 URL を挿入します。 画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
+プロジェクトに画像を追加するには、メニューで ![ 画像 ](/help/assets/icons/Image.svg) を選択し、公開画像 URL を挿入します。 画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
 
 ![ 画像アイコンが選択されたテキストオプション ](assets/image.png)

@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '2672'
+ht-degree: 67%
 
 ---
 
-# モバイルスコアカードの作成
+# モバイルスコアカードの作成 {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="注釈"
+>abstract="注釈は、ワークスペースプロジェクト内ののコンポーネントマネージャーで作成できます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 次の情報は、Customer Journey Analyticsデータのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。 はじめに、Analytics ダッシュボードのスコアカードビルダーのビデオを視聴できます。
 
@@ -135,7 +145,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ### [!UICONTROL ドーナツ]
 
-このビジュアライゼーションは、円グラフと同様に、データを全体の一部として表示します。合計に対する割合を比較する際にドーナツグラフを使用します。例えば、ユニークなユーザーの合計数に貢献した広告プラットフォームを確認するとします。
+このビジュアライゼーションは、円グラフと同様に、データを全体の一部として表示します。合計に対する割合を比較する際にドーナツグラフを使用します。例えば、一意のユーザーの合計数に貢献した広告プラットフォームを確認するとします。
 
 ![ ドーナツビジュアライゼーションを表示する新しいモバイルスコアカード ](assets/donut-viz.png)
 

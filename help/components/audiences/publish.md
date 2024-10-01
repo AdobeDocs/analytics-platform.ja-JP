@@ -4,14 +4,32 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 50%
+source-wordcount: '1726'
+ht-degree: 49%
 
 ---
 
-# オーディエンスの作成と公開
+# オーディエンスの作成と公開 {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="更新頻度"
+>abstract="オーディエンスのメンバーシップが再評価される頻度を確認します。<br/>1 回のみのオーディエンスは、1 回だけ評価されます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="オーディエンス制限"
+>abstract="更新対象のオーディエンスは更新頻度に基づいて制限されます。"
+
+<!-- markdownlint-enable MD034 -->
 
 このトピックでは、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
 
@@ -53,7 +71,7 @@ ht-degree: 50%
 
 1. データのプレビューを解釈します。
 
-   オーディエンスのプレビューが右側のパネルに表示されます。作成したオーディエンスの要約分析が可能になります。
+   オーディエンスのプレビューが右側のパネルに表示されます。 作成したオーディエンスの要約分析が可能になります。
 
    ![ オーディエンスの要約分析を示すデータプレビューのスクリーンショット。](assets/data-preview.png)
 

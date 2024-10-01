@@ -5,14 +5,60 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 99%
+source-wordcount: '3507'
+ht-degree: 97%
 
 ---
 
-# 接続の作成または編集
+# 接続の作成または編集 {#create-or-edit-a-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsadded"
+>title="追加されたレコード"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続に追加されたレコード （行）の数。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsskipped"
+>title="スキップされたレコード"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続のデータ転送中にスキップされたレコード （行）の数。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsdeleted"
+>title="削除されたレコード"
+>abstract="選択したデータセットについて、選択した時間間隔で接続から削除されたレコード （行）の数"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_lastadded"
+>title="前回追加した日時"
+>abstract="接続に転送された任意のデータセットからの最新のバッチのタイムスタンプ。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_enablerollingdatawindow"
+>title="周期的なデータ期間を有効にする"
+>abstract="データ保持を周期的な期間の月数として接続レベルで定義します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 接続の作成と編集ワークフローエクスペリエンスでは、すべてのデータセットと接続設定が、補助的なワークフローで画面の中央に表示されます。詳細なデータセットの選択、設定、確認のエクスペリエンスを提供します。また、データセットのタイプ、サイズ、スキーマ、データセット ID、バッチステータス、バックフィルステータス、ユーザー ID などの重要な情報を指定できるので、誤った接続設定のリスクを軽減できます。機能の概要を以下に示します。
 
@@ -22,7 +68,11 @@ ht-degree: 99%
 * （例えば、別のバックフィルをリクエストするために）データセットを編集できます。
 * データセットごとに既存のデータ読み込むことができます。
 
++++ 接続の作成と編集のエクスペリエンスを示すビデオ
+
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
++++
 
 ## 前提条件
 
@@ -70,6 +120,42 @@ ht-degree: 99%
    {style="table-layout:auto"}
 
 ## データセットの追加と設定 {#add-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="一致するキー"
+>abstract="いずれかのイベントデータセットで、結合するフィールドを選択します。このリストが空の場合、イベントデータセットを追加または設定していない可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_importnewdata"
+>title="新しいデータを読み込む"
+>abstract="Experience Platformデータセットに追加された新しいバッチは、自動的にこの接続に追加され、分析に使用できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_datasetbackfill"
+>title="データセットのバックフィル"
+>abstract="このオプションを使用すると、接続内のこのデータセットについて、Experience Platform からの既存の (履歴) データがバックフィルされます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_transformdataset"
+>title="データセットを変換"
+>abstract="このオプションは、B2B シナリオで個人ベースのルックアップに使用できるようにデータセットを変換します。一度オンにすると、データセットの変換は元に戻せません。"
+
+<!-- markdownlint-enable MD034 -->
 
 新しいワークフローを使用すると、接続を作成する際に、Experience Platform データセットを追加できます。
 

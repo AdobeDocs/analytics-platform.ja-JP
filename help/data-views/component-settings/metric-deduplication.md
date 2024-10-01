@@ -5,14 +5,24 @@ exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 100%
 
 ---
 
-# 指標の重複排除コンポーネントの設定
+# 指標の重複排除コンポーネントの設定 {#metric-deduplication-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_deduplication"
+>title="指標の重複排除"
+>abstract="繰り返し発生しない値のみをカウントする指標を設定します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 指標の重複排除は指標を設定して、値を繰り返さずにカウントできます。
 

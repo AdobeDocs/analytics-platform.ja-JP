@@ -5,20 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 7%
+source-wordcount: '2016'
+ht-degree: 8%
 
 ---
 
-# レポートアクティビティマネージャーでのレポートアクティビティの表示
+# レポートアクティビティの表示 {#view-reporting-activity}
 
 管理者は、[!UICONTROL  レポートアクティビティマネージャー ] を使用して、ピーク時のレポート処理能力の問題をすばやく診断および修正できます。
 
 主なメリットや権限要件など、レポートアクティビティマネージャーについて詳しくは、[ レポートアクティビティマネージャーの概要 ](/help/reporting-activity-manager/reporting-activity-overview.md) を参照してください。
 
-## すべての接続のレポートアクティビティを表示 {#view-all-report-suites}
+## すべての接続の場合 {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="接続"
+>abstract="このテーブルには、レポートアクティビティを管理する権限のある接続が表示されます。各接続に関する情報は、テーブルの各列に表示されます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL レポートアクティビティマネージャー]** に移動します。
 
@@ -36,7 +46,7 @@ ht-degree: 7%
 
    * 検索フィールドを使用して、特定の接続を検索します。 接続名または ID の入力を開始すると、入力中に接続のリストが更新されます。
 
-   * 「[!UICONTROL **フィルター**]」アイコン ![ フィルターアイコン ](assets/filter-icon.png) を選択して、フィルターオプションのリストを展開します。 [!UICONTROL **お気に入り**] または [!UICONTROL **ステータス**] でフィルタリングできます。
+   * ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターオプションのリストを展開します。 [!UICONTROL **お気に入り**] または [!UICONTROL **ステータス**] でフィルタリングできます。
 
      接続をお気に入りとしてマークするには、接続名の左側にあるスターアイコンを選択します。
 
@@ -57,7 +67,7 @@ ht-degree: 7%
 
    {style="table-layout:auto"}
 
-## 1 つの接続のレポートアクティビティの表示
+## 1 つの接続の場合
 
 1. Customer Journey Analyticsで、[!UICONTROL **ツール**]/[!UICONTROL **レポートアクティビティマネージャー**] を選択します。
 

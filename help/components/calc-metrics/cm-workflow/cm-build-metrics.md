@@ -1,71 +1,206 @@
 ---
 description: 計算指標ビルダーは、ディメンション、指標、フィルターおよび関数をドラッグ＆ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成するためのキャンバスです。この統合開発ツールでは、シンプルな計算指標または複雑で高度な計算指標を作成および保存できます。
-title: 指標の作成
+title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 49%
+source-wordcount: '1526'
+ht-degree: 6%
 
 ---
 
-# 指標の作成
+# 計算指標の作成 {#build-metrics}
 
-Customer Journey Analyticsは、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成するためのキャンバスです。 この統合開発ツールでは、シンプルな計算指標または複雑で高度な計算指標を作成および保存できます。
-
-## 計算指標の作成を開始
-
-計算指標ビルダーを使用して、計算指標を作成できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。 または、[ 指標 ](/help/components/apply-create-metrics.md) の「単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) の説明に従って、クイック計算指標を作成する [ こともできます。
-
-計算指標ビルダーにアクセスして、コンポーネントリストで使用できる計算指標の作成を開始します。
-
-1. 次のいずれかの方法で、計算指標ビルダーにアクセスします。
-
-   * Analysis Workspaceで、プロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL 指標を作成]** を選択します。
-   * Analysis Workspaceでプロジェクトを開き、左パネルの **指標** セクションの横にある [!UICONTROL **プラス**] アイコンを選択します。
-   * [!DNL Customer Journey Analytics] で、**[!UICONTROL コンポーネント]**/**[!UICONTROL 計算指標]** に移動し、計算指標ページの上部にある「**[!UICONTROL +追加]**」を選択します。
-
-1. [ 計算指標ビルダーの領域 ](#areas-of-the-calculated-metrics-builder) に進みます。
-
-## 計算指標ビルダーのエリア
-
-<!-- 
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_journeycanvas_viz_product_compatibility"
->title="Product compatibility"
->abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
->"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
->"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="製品の互換性"
+>abstract="Analysis WorkspaceやReport Builderなど、この計算指標をCustomer Journey Analyticsのどの場所で使用できるかを示します。 一部の計算指標は、実験では使用できません。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="実験で計算指標を使用"
 
--->
+<!-- markdownlint-enable MD034 -->
 
-次の画像と付属の表で、計算指標ビルダーの主な領域と機能の一部を説明します。
+<!-- markdownlint-disable MD034 -->
 
-![ この節で説明した主な領域と機能を示す新しい計算指標ウィンドウ。](assets/cm_builder_ui.png)
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="外部 ID"
+>abstract="外部 ID を変更すると、ビジネスインテリジェンスツールなどの外部ソースでの計算指標の表示方法に影響する可能性があります"
 
-| フィールド | 説明 |
-| --- | --- |
-| タイトル | 指標には必ず名前を付ける必要があります。名前を付けていない指標は保存できません。 |
-| 説明 | 指標の用途を示し、類似した指標と区別するための、ユーザーにわかりやすい説明を入力します。 <p>この説明はレポート内にも表示されます。説明には数式を記述しないことをお勧めします。その代わりに、この指標を使うべき状況と使ってはいけない状況について記述してください（数式は、指標の作成時に「概要」という見出しの下に生成されます。そのため、この説明に数式を追加する必要はありません）。 </p> |
-| 形式 | 小数、時間、割合、通貨から選択できます。 |
-| 小数点以下の桁数 | レポートに表示する小数点以下の桁数を示します。指定可能な小数点以下の桁数の最大値は 10 です。 |
-| 上昇傾向を次の形式で表示 | この指標の両極性の設定は、Analytics が指標の上昇傾向を良い（緑）または悪い（赤）のどちらと見なすべきかを示します。そのため、レポートのグラフは、上昇傾向の場合に緑または赤で表示されます。 |
-| 通貨 | このデータビューのベース通貨。 |
-| タグ | タグ付けは、指標を管理するための便利な方法です。すべてのユーザーがタグを付けることができます。指標には 1 つ以上のタグを適用できます。ただし、タグを表示できるのは、自分が所有しているフィルターまたは自分と共有されているフィルターに限られます。 どのような種類のタグを作成する必要がありますか。次に、便利なタグのいくつかを示します。<ul><li>**チーム名** （ソーシャルマーケティング、モバイルマーケティングなど）。</li><li>**プロジェクト** （分析タグ）（エントリページ分析など）。</li><li>**カテゴリ** （Women&#39;s;Geography など）。</li><li>**ワークフロー** 承認待ち、キュレーション対象（特定の事業部門））</li></ul> |
-| 概要 | <p>「概要」の数式は、指標の定義を変更すると更新されます。 この数式は、左側の指標レールで、指標の上にマウスポインターを置いて指標をクリックした場合にも表示されます <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> アイコン。 </p> |
-| 定義 | ここに指標/計算指標、フィルター、関数などをドラッグして、計算指標を作成します。 <ul><li>計算指標をドラッグすると、指標の定義が自動的に展開されます。 </li> <li>コンテナを使用して定義をネストできます。ただし、フィルターコンテナとは異なり、これらのコンテナは数式のように機能し、操作の順序を決定します。 </li> </ul> |
-| 演算子 | 除算（ <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" />）はデフォルトの演算子です。他にも、+、– および x の演算子があります。 |
-| プレビュー | 可能性のあるエラーについて簡単に確認できます。プレビューには過去 90 日の情報が表示されます。これは、指標に適したコンポーネントを選択したかどうかを最初に判断するための手段です。予期しない結果が生じた場合は、指標の定義を見直す必要があります。 |
-| 製品の互換性 | この計算指標をCustomer Journey Analytics内で使用できる場所を示します。 <p>使用可能な値は次のとおりです。</p><ul><li>[!UICONTROL **Customer Journey Analytics内のすべての場所**]：計算指標は、Analysis WorkspaceやReport Builderなど、すべてのCustomer Journey Analyticsで使用できます。</li><li>[!UICONTROL **Customer Journey Analyticsのすべての場所（実験を除く）**]：計算指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。</li> <p>計算指標が実験で使用できるかどうかを決定する条件について詳しくは、[ 実験パネル ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) の [ 実験パネルで計算指標を使用 ](/help/analysis-workspace/c-panels/experimentation.md) を参照してください。</p></ul> |
-| 追加 | すべてのタイプの計算指標の場合、コンテナおよび静的な数値を定義に追加できます。詳細な計算指標では、フィルターと関数も追加できます。<ul><li>コンテナは数式のように機能し、演算の順序を指定します。そのため、コンテナ内の項目は、次の演算の前に処理されます。</li><li>フィルターをコンテナにドラッグすると、そのコンテナ内のすべてをフィルタリングできます。 （高度な計算指標のみ）</li><li>コンテナでは複数のフィルターを積み重ねることができます。</li></ul> |
-| 歯車アイコン（指標タイプ、アトリビューション） | 指標の横にある歯車アイコンをクリックすると、指標タイプとアトリビューションモデルを指定できます。 <p>**メモ：** コンポーネントのアトリビューションをデフォルト以外のアトリビューションモデルに更新する場合は、次の点に注意してください。</p><ul><li>***単一ディメンション* でレポートでコンポーネントを使用する場合：** デフォルト以外のアトリビューションモデルが使用されている場合、コンポーネントのアトリビューションでは配分モデルが無視されます。</li><li>***複数ディメンション* を使用したレポートでコンポーネントを使用する場合：** デフォルト以外のアトリビューションモデルを使用すると、コンポーネントのアトリビューションで配分モデルが保持されます。</li><li>複数のディメンションは、[ クラウドへのデータの書き出し ](/help/analysis-workspace/export/export-cloud.md) 時にのみ使用できます。</li></ul> <p>割り当てについて詳しくは、[ 永続性コンポーネント設定 ](/help/data-views/component-settings/persistence.md) を参照してください。</p> |
-| プラス（+） アイコン | 新しいフィルターなどの新しいコンポーネントを作成できます（フィルタービルダーが表示されます）。 |
-| コンポーネントを検索 | この検索バーを使用すると、ディメンション、指標、フィルター（高度な計算指標のみ）および関数（高度な計算指標のみ）を検索できます。 |
-| ディメンションリスト | 「ページ = ホームページ」などの簡単なフィルターを作成する場合、計算指標ビルダーから離れてフィルタービルダーで作成しなくても、計算指標ビルダーから直接ページをドラッグしてホームページを選択できます。 これにより、フィルタリングされた計算指標を作成するワークフローを効率化できます。 |
-| 指標リスト | 指標は次の 3 つのカテゴリに分かれています。<ul><li>標準指標</li><li>計算指標</li><li>指標テンプレート - リストの一番下</li></ul>指標の上にカーソルを移動すると、右側に情報アイコンが表示されます。このアイコンをクリックすると、次の情報が表示されます。<ul><li>指標の計算を行うための数式。</li><li>指標の傾向のプレビュー</li><li>右上の編集（鉛筆）アイコンをクリックすると、計算指標ビルダーに移動し、この計算指標を編集できます。</li></ul> |
-| フィルターのリスト | （詳細な計算指標のみ）管理者の場合、ログイン会社で作成されたすべてのフィルターがこのリストに表示されます。管理者でないユーザーの場合、自分が所有するフィルターと自分に共有されたフィルターがこのリストに表示されます。 |
-| 関数リスト | （高度な計算指標のみ）関数は、基本（最も頻繁に使用される）と詳細の 2 つのリストに分かれています。 |
-| データビューセレクター | 右上のこのセレクターを使用すると、別のデータビューに切り替えることができます。 |
+<!-- markdownlint-enable MD034 -->
+
+
+**[!UICONTROL 計算指標ビルダー]** ダイアログは、新しい計算指標の作成または既存の計算指標の編集に使用します。 このダイアログには、**[!UICONTROL 計算指標]** マネージャーから作成または管理する指標のタイトルが **** 新しい計算指標 [[!UICONTROL  または ] 計算指標を編集 ](/help/components/calc-metrics/cm-workflow/cm-manager.md) になります。
+
+>[!BEGINTABS]
+
+>[!TAB 計算指標ビルダー]
+
+![ 次の節で説明するフィールドとオプションを示す、計算指標の詳細ウィンドウ。](assets/calculated-metric-builder.png)
+
+>[!TAB  計算指標の作成または編集 ]
+
+![ 次の節で説明するフィールドとオプションを示す、計算指標の詳細ウィンドウ。](assets/create-edit-calculated-metric.png)
+
+>[!ENDTABS]
+
+1. 次の詳細を指定します（![ 必須 ](/help/assets/icons/Required.svg) は必須）。
+
+   | 要素 | 説明 |
+   | --- | --- |
+   | **[!UICONTROL データビュー]** | 計算指標のデータビューを選択できます。  定義した計算指標は、選択したデータビューに基づいてWorkspace プロジェクトで使用できます。 |
+   | **[!UICONTROL プロジェクトのみの指標]** | 指標が作成されたプロジェクトにのみ表示され、指標がコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL この指標をすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、「選択から指標を作成 **[!UICONTROL を使用してWorkspaceで指標を作成し、関数]****[!UICONTROL 平均]** や **[!UICONTROL 中央値]** など）を選択している場合にのみ表示されます。 後で [ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) を使用して、作成した指標を編集します。 |
+   | **[!UICONTROL タイトル]** ![ 必須 ](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
+   | **[!UICONTROL 外部 ID]** ![ 必須 ](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する場合の計算指標の名前。 値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
+   | **[!UICONTROL 説明]** | フィルターの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能なので、説明する必要はありません。 |
+   | **[!UICONTROL 形式]** | 計算指標の形式の選択：**[!UICONTROL 小数]**、**[!UICONTROL 時間]**、**[!UICONTROL パーセント]**、**[!UICONTROL 通貨]** から選択できます。 |
+   | **[!UICONTROL 小数点以下の桁数]** | 選択した書式の小数点以下の桁数を指定します。 選択した形式が小数、通貨、パーセントの場合にのみ有効です。 |
+   | **[!UICONTROL 上昇傾向を次の形式で表示]** | 計算指標の上昇傾向を▲ **** 良（緑）または▼**[!UICONTROL 悪（赤）]** のいずれで表示すかを指定します。 |
+   | **[!UICONTROL 通貨]** | 計算指標の通貨を指定します。 「形式」で「通貨」を選択した場合にのみ有効になります。 |
+   | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、計算指標を整理します。 入力を開始して、選択可能な既存のタグを検索します。 または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、タグを削除します。 |
+   | **[!UICONTROL プレビュー]** | プレビューは過去 90 日間をカバーしており、指標が正しく定義されているかどうかを判断するための手段となります。 |
+   | **[!UICONTROL 概要]** | 計算指標の定義の概要を表示します。 <br/> 例：![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 合計注文数]** ![ 除算 ](/help/assets/icons/Divide.svg) ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL セッション]**。 |
+   | **[!UICONTROL 定義]** ![ 必須 ](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してフィルターを定義します。 |
+
+1. 計算指標の定義が正しいかどうかを確認するには、計算指標の結果の絶えず更新される **[!UICONTROL プレビュー]** を使用します。 **[!UICONTROL プレビュー]** は過去 90 日間をカバーし、計算指標の定義を継続的に評価します。
+
+   **[!UICONTROL 製品の互換性]** は、計算指標を実験で使用できるかどうかを示します。 使用可能な値：
+   * **[!UICONTROL 実験のすべての場所]**:Customer Journey Analyticsパネルを除く、Customer Journey Analytics指標は、すべての実験で使用できます。
+   * **[!UICONTROL 実験を除く、Customer Journey Analyticsのすべての場所]**：計算指標は、すべてのCustomer Journey Analyticsで使用できます。
+
+1. 選択：
+   * **[!UICONTROL 保存]**：計算指標を保存します。
+   * **[!UICONTROL 名前を付けて保存]**：計算指標のコピーを保存します。
+   * **[!UICONTROL キャンセル]**：計算指標に対して行った変更をキャンセルするか、新しい計算指標の作成をキャンセルします。
+
+
+## 定義ビルダー
+
+定義ビルダーを使用して、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成します。 この構成では、標準指標、Adobe定義指標、計算指標、フィルター、ディメンションおよび関数を使用できます。 これらのすべてのコンポーネントは、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、定義内で演算子やコンテナを使用できます。
+
+![ 計算指標を作成 ](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
+
+**[!UICONTROL 定義]** 領域では、指標のみが単一のコンポーネントとして定義されます。 その他のコンポーネントはすべて、コンテナ、ラッピング指標、またはその他のコンテナとして定義されます。 詳しくは、[ コンテナ ](#containers) を参照してください。
+
+### 指標
+
+指標を追加するには：
+
+* コンポーネントパネルから ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 指標]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+
+定義の一部として計算指標を使用すると、計算指標が展開されます。
+
+指標を変更するには：
+
+1. ![ 定義 ](/help/assets/icons/Setting.svg) 領域の指標コンポーネントで **[!UICONTROL 設定]** を選択します。
+1. ポップアップダイアログで、指標のタイプとアトリビューションモデルを定義できます。 [ 指標タイプとアトリビューション ](m-metric-type-alloc.md) を参照してください。
+
+指標を削除するには：
+
+* 指標で ![ 閉じる ](/help/assets/icons/Close.svg) を選択します。
+
+### 演算子
+
+演算子を使用すると、コンポーネントまたはコンテナ間の演算子を指定できます。 次の期間の演算子は自動的に表示されます
+
+* コンテナ内の 2 つ以上の指標。
+* コンテナ内の 2 つ以上のコンテナ
+* コンテナ内の 1 つ以上の指標と 1 つ以上のコンテナ。
+
+以下を選択できます。
+
+| 記号 | 演算子 |
+|:---:|---|
+| ![ 除算 ](/help/assets/icons/Divide.svg) | 除算（デフォルト） |
+| ![閉じる](/help/assets/icons/Close.svg) | 乗算 |
+| ![削除](/help/assets/icons/Remove.svg) | 減算 |
+| ![追加](/help/assets/icons/Add.svg) | 追加 |
+
+### 静的数
+
+計算指標の定義に静的な数値を追加できます。 静的な数値を追加するには：
+
+* コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します。
+* **[!UICONTROL 静的な数値]** を選択します。 静的な数値コンテナが表示されます。
+* [!UICONTROL *クリックして値を追加*] を選択し、値を入力します。
+
+
+### コンテナ
+
+ディメンション、フィルターおよび関数をコンテナとして計算指標の定義に追加します。 汎用のコンテナを追加することもできます。 コンテナは数式のように機能し、演算の順序を指定します。コンテナ内の処理はすべて、次のコンポーネントまたはコンテナの前に行われます。
+
+
+#### フィルターコンテナ
+
+フィルターコンテナの概念を使用して、[ フィルターされた指標 ](metrics-with-segments.md) を作成します。 フィルターを使用するか、ディメンションから作成したフィルターを使用して、フィルターコンテナを作成できます。
+
+* ディメンションからフィルターコンテナを追加するには：
+
+   1. コンポーネントパネルから ![Dimension](/help/assets/icons/Dimensions.svg)**[!UICONTROL Dimension]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+   1. **[!UICONTROL Dimensionからフィルターを作成]** ポップアップで、フィルターの条件を定義します。 演算子のリストから選択し、値を選択するか、値を入力します。 例えば、**[!UICONTROL Month]****[!UICONTROL equals]**![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` です。
+   1. 「**[!UICONTROL 完了]**」を選択します。 フィルターコンテナが **[!UICONTROL 定義]** に追加されます。
+
+
+* フィルターからフィルターコンテナを追加するには、次を使用できます。
+
+   * コンポーネントパネルから ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のフィルターを検索できます。
+自動的にフィルターコンテナが、フィルターの名前を使用して **[!UICONTROL 定義]** に追加されます。
+
+   * ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントをコンポーネントパネルから汎用コンテナにドラッグ&amp;ドロップします。 コンテナがフィルターコンテナに変更されます。
+
+   * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します。
+
+      1. **[!UICONTROL フィルター]** を選択します。 フィルターコンテナが **[!UICONTROL 定義]** に追加されます。
+      1. 新しいフィルターコンテナで、「[!UICONTROL *選択…*]」ドロップダウンメニューからフィルターを選択します。
+
+  >[!TIP]
+  >
+  >コンテナには複数のフィルターを追加できます。
+
+  コンテナ内のフィルターは、フィルターコンポーネントに従って名前が付けられます。 例えば、![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL web セッション]** などです。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、フィルターの詳細を含むポップアップが表示されます。 ポップアップで、「![ 編集 ](/help/assets/icons/Edit.svg) を選択して、フィルター定義を編集します。
+
+コンテナからフィルターを削除するには：
+
+* フィルター名の横にある「![ 閉じる ](/help/assets/icons/Close.svg)」を選択します。
+
+詳細と例については、「[ フィルター適用済み指標 ](metrics-with-segments.md)」を参照してください。
+
+#### 関数コンテナ
+
+関数コンテナを追加するには、以下を使用します。
+
+* ドラッグ アンド ドロップ：
+
+   1. コンポーネントパネルから ![ 関数 ](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定の関数を検索できます。
+   1. 自動的に、関数の名前を使用して、関数コンテナが **[!UICONTROL 定義]** に追加されます。
+
+* コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します。
+
+   1. **[!UICONTROL 関数]** を選択します。
+   1. コンテナで、「選択 [!UICONTROL *ドロップダウンメニューから関数を選択*] ます。
+
+関数コンテナの名前は、関数コンポーネントの名前を取って付けられます。 例えば、![Function](/help/assets/icons/Effect.svg)**[!UICONTROL SQUARE ROOT （metric）]** のように指定します。 「![InfoOutline](/help/assets/icons/InfoOutline.svg)」を選択すると、関数の詳細を示すポップアップが表示されます。 関数について詳しくは、**[!UICONTROL 詳細情報]** を選択してください。
+
+関数の使用方法と計算指標の作成に使用できる関数について詳しくは、[ 関数の使用 ](cm-using-functions.md) を参照してください。
+
+
+#### 汎用コンテナ
+
+汎用コンテナを追加するには：
+
+* コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します
+* **[!UICONTROL コンテナ]** を選択します。 新しい空の汎用コンテナが **[!UICONTROL 定義]** に追加されます。 汎用コンテナを使用して、計算指標の定義で階層をネストまたは作成できます。
+
+
+#### コンテナの削除
+
+コンテナを削除するには、コンテナレベルで ![ 閉じる ](/help/assets/icons/Close.svg) を選択します。
+
+>[!MORELIKETHIS]
+>
+>[関数の使用](cm-using-functions.md)
+>[フィルター](/help/components/filters/filters-overview.md)
+>
+

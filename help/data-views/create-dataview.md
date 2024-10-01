@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 100%
 
 データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、Customer Journey Analytics でのディメンションや指標の動作を調整できます。
 
-次に、このトピックに関するビデオを示します。
++++ Customer Journey Analyticsでのデータビューを説明するビデオを視聴してください
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 データビューを作成または編集するには：
 
@@ -26,7 +28,17 @@ ht-degree: 100%
 1. データビューを作成するには、「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
 
 
-## 設定する
+## 設定する {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="外部 ID"
+>abstract="外部 ID を変更すると、外部ソース (ビジネスインテリジェンスツールなど) でのデータビュー名の表示に影響する可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 新規または既存のデータビューを設定するには：
 
@@ -50,9 +62,20 @@ ht-degree: 100%
 
 {style="table-layout:auto"}
 
-### 互換性
+### 互換性 {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Journey Optimizerのデータビュー"
+>abstract="Journey Optimizerは、Customer Journey Analyticsで設定されたデータビューを使用する必要があります。<br/> これをAdobe Journey Optimizer レポートで使用されるデフォルトのデータビューにするには、このオプションを有効にします。"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="追加するコンポーネントとデータセット。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用する際に適用できる設定を提供します。
 

@@ -5,14 +5,33 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 94%
 
 ---
 
-# コンポーネント設定
+# コンポーネント設定 {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="コンポーネント設定"
+>abstract="名前、説明およびコンポーネントに関連するその他の設定を表示および設定します。<br/><br/>**パラメーター&#x200B;**<br/>**レポートでコンポーネントを非表示**：このボックスをオンにすると、レポートで管理者以外のユーザーからこのコンポーネントを非表示にします。 管理者は、Workspace プロジェクトで **[!UICONTROL すべてのコンポーネントを表示]** を選択してアクセスできます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="コンテキストラベル"
+>abstract="コンテキストラベルを削除すると、コンポーネントが必要な特定のパネルまたはレポートに影響を与える可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 次の情報では、データビューコンポーネントが使用する設定について説明します。
 

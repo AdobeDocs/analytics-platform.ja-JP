@@ -4,14 +4,25 @@ description: 概要データについて適切にレポートできるように�
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 9%
+source-wordcount: '343'
+ht-degree: 17%
 
 ---
 
-# [!UICONTROL  概要データグループ ] コンポーネント設定
+# [!UICONTROL  概要データグループ ] コンポーネント設定 {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="概要データグループ"
+>abstract="概要データグループは、グループ内のすべてのディメンション間の関連付けを作成します。これを使用すると、レポート用に概要データセットのディメンションを他のディメンションと組み合わせることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 概要データグループは、グループ内のすべてのディメンション間の関連付けを作成します。これを使用すると、レポート用に概要データセットのディメンションを他のディメンションと組み合わせることができます。
 
@@ -40,5 +51,3 @@ ht-degree: 9%
 >
 >次元のグループ化は、1 つの次元からのみ行い、複数の次元からグループ化を適用しないでください。 たとえば、`campaign_name` 次元を `tracking_code` 次元に追加してグループ化を作成する場合、`campaign_name` 次元のグループ化も作成しないでください。
 >
-
-

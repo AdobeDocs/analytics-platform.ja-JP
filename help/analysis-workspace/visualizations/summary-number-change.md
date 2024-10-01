@@ -1,41 +1,58 @@
 ---
-description: 概要番号および変更ビジュアライゼーションを使用して、プロジェクト内の重要なデータポイントを表示します。
-title: 数の概要と変更の概要
+description: 数値概要および変更概要のビジュアライゼーションを使用して、プロジェクト内の重要なデータポイントを表示します。
+title: 数値の概要と変更概要
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 94%
+source-wordcount: '467'
+ht-degree: 45%
 
 ---
 
-# 数の概要と変更の概要
+# 数値概要と変更概要
 
-## 数値の概要ビジュアライゼーション {#summary-number}
+## 数値の概要 {#summary-number}
 
-概要番号ビジュアライゼーションを使用して、プロジェクトで重要な大きな数を強調表示します。このビジュアライゼーションは、次のように動作します。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="数値の概要"
+>abstract="合計と小計を表示するビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
+
+![ 要約 ](/help/assets/icons/123.svg)**[!UICONTROL 数値概要]** ビジュアライゼーションを使用すると、プロジェクトで重要になる大きな数を強調表示できます。 このビジュアライゼーションは、関連するデータソースを使用して次のように動作します。
 
 * セルが選択されていない場合、列の合計が選択されます。
 * 1 つのセルが選択されている場合、そのセルの概要が表示されます。
 * 2 つ以上のセルが選択されている場合、選択された最初のセルについて表示されます。
 * 列が選択されている場合、列に含まれている先頭のセルの値が選択されます。
 
-右上の「**ビジュアライゼーション設定**」の歯車をクリックして、概要番号の設定を指定します。
+![ 数値概要ビジュアライゼーション ](asses/../assets/summary-number.png)
 
-| 設定 | 定義 |
+ビジュアライゼーション設定の一部として、特定の概要番号オプションを使用できます。
+
+| オプション | 定義 |
 |--- |--- |
-| 割合（％） | 生の番号ではなく割合を表示します。 |
-| 凡例を表示 | 表示された指標に関する情報を表示します。 |
-| 値を短縮 | 値の省略形として、小数点以下 3 桁まで表示できます。 |
-| 値の要約基準 | データの選択範囲の最大値、最小値、平均値、中央値または合計を表示するかどうかを選択します。 |
+| **[!UICONTROL 値を短縮]** | 数値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合、省略形の量を定義する数字を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**省略形の値**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`0` に設定</td><td align="right">12 百万ドル）</td></tr><tr><td>$12,011,141.25</td><td> 選択済み、`1` に設定</td><td  align="right">1200 万ドル</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`2` に設定</td><td align="right">1201 万ドル</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`3` に設定</td><td align="right">12011 万ドル</td></tr></table> |
+| **[!UICONTROL 値の要約基準]** | 選択したデータの最大値、最小値、平均値、中央値または合計値の表示を選択します。 |
 
-{style="table-layout:auto"}
+## 変更の概要 {#summary-change}
 
-## 変更概要ビジュアライゼーション {#summary-change}
+<!-- markdownlint-disable MD034 -->
 
-変更概要ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="変更の概要"
+>abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションを作成します"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![MoveUpDown](/help/assets/icons/MoveUpDown.svg)**[!UICONTROL 変更概要]** ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -54,11 +71,17 @@ The green and red color of the Summary Change can be controlled through [custom 
 ![2 つの数値間の差分を示す変更概要ビジュアライゼーション ](assets/summary-change.png)
 
 
-右上の **ビジュアライゼーション設定** の歯車をクリックして、変更概要の設定を指定します。
+ビジュアライゼーション設定の一部として、特定の **[!UICONTROL 変更概要オプション]** を使用できます。
 
-| 設定 | 定義 |
+| オプション | 定義 |
 |--- |--- |
-| 割合（％） | 生の番号ではなく割合を表示します。 |
-| 凡例を表示 | 表示された指標に関する情報を表示します。 |
-| 変化率を表示 | 2 つの数値の変化率を表示します。 |
-| 生の差異を表示 | 2 つの数の間の生の差異を表示します。また、値の省略形を使用し、小数点以下 3 桁まで表示できます。 |
+| **[!UICONTROL 変化率を表示]** | 2 つの数値間の変化率を表示します。 |
+| **[!UICONTROL 生の差異を表示]** | 2 つの数値の生の違いを表示します。 また、値の省略形を使用し、小数点以下 3 桁まで表示できます。 |
+| **[!UICONTROL 値を短縮]** | 変更した値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合、省略形の量を定義する数字を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**省略形の値**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`0` に設定</td><td align="right">12 百万ドル）</td></tr><tr><td>$12,011,141.25</td><td> 選択済み、`1` に設定</td><td  align="right">1200 万ドル</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`2` に設定</td><td align="right">1201 万ドル</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`3` に設定</td><td align="right">12011 万ドル</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

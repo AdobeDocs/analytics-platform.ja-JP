@@ -4,29 +4,57 @@ title: 棒グラフおよび積み重ね棒グラフ
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 79%
+source-wordcount: '167'
+ht-degree: 16%
 
 ---
 
 # 棒グラフおよび積み重ね棒グラフ
 
-## 棒グラフ {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
+## 棒グラフ {#bar}
 
-このビジュアライゼーションでは、1 つ以上の指標の様々な値を表す縦棒グラフが表示されます。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bar_button"
+>title="棒グラフ"
+>abstract="棒グラフ ビジュアライゼーションを作成して、1 つ以上の指標の様々な値を表します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)**[!UICONTROL Bar]** ビジュアライゼーションには、1 つ以上の指標の様々な値を表す縦棒が表示されます。
 
 ![ ページビュー数、訪問回数、入口、出口を含む複数の指標を示す仮想バービジュアライゼーション。](assets/bar.png)
 
-ビジュアライゼーション設定の精度ドロップダウンにより、トレンドビジュアライゼーション（折れ線、棒など）を日別から週別、月別などに変更できます。
+ビジュアライゼーション設定の精度ドロップダウンを使用すると、トレンドのビジュアライゼーション（折れ線グラフ、棒グラフなど）を日別から週別から月別などに変更できます。
 
-## 積み重ね棒グラフ {#section_9EA83779AE964635907EE5031A785A49}
+## 積み重ね棒グラフ {#bar-stacked}
 
-このビジュアライゼーションは棒グラフに似ていますが、系列を表す棒は相互に積み重なっています。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_barstacked_button"
+>title="積み重ね棒グラフ"
+>abstract="1 つ以上の積み重ね指標の様々な値を表す棒グラフ ビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg)**[!UICONTROL 積み重ね棒]** ビジュアライゼーションは棒グラフに似ていますが、棒を重ねて表示します。
 
 ![ 複数の指標を表示する積み重ね棒グラフ。](assets/bar-stacked.png)
 
-積み重ね棒グラフのビジュアライゼーションを「100% の積み重ね」に変更する新しい設定が追加されました。
+![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** の「**[!UICONTROL 100% 積み重ね]**」オプションを使用して、グラフを 100% 積み重ねビジュアライゼーションに変換します。
 
-![100% 積み重ね棒グラフ。](assets/stacked_100_percent.png)
+![100% 積み重ね棒グラフ。](assets/bar-stacked100.png)
+
+>[!MORELIKETHIS]
+>
+>[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

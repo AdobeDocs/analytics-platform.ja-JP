@@ -4,20 +4,37 @@ title: データ要素の概要
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 80%
+source-wordcount: '564'
+ht-degree: 69%
 
 ---
 
-# データ要素の概要
+# データ要素の概要 {#data-dictionary-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="データディクショナリ"
+>abstract="データ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。 <br/>Analytics 管理者は、データ要素の各コンポーネントに関する情報をユーザーにキュレーションする責任があります。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspace のデータ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。
 
 Analytics 管理者は、データ要素の各コンポーネントに関する情報を調整して、ユーザーが利用できるようにする責任があります。
 
+
++++ データ要素を示すビデオを表示
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## ユーザーにとってのメリット
 
@@ -57,16 +74,14 @@ Analytics 管理者がデータ要素を使用する方法の一部を以下に�
 
 Analysis Workspace 内で、次のいずれかの方法でデータ要素にアクセスできます。
 
-* 左側のパネルの「**データ要素**」アイコンから。
+![ 左側のパネルの「データ要素」アイコン ](assets/data-dictionary-access.png)
 
-  ![左側のパネルの「データ要素」アイコン](assets/data-dictionary-access-icon.png)
+* ボタンパネルの ![ ブックマーク ](/help/assets/icons/Bookmark.svg) から。
 
-* コンポーネントの情報ポップオーバー内の「**データ要素**」アイコンから。
 
-  ![情報ポップオーバー内の「データ要素」アイコン](assets/data-dictionary-access-infopopover.png)
-  <!--update screenshot; this was taken from a mock-->
 
-* [!UICONTROL **ヘルプ**]／[!UICONTROL **データ要素**]&#x200B;メニューから。
+* コンポーネントの情報ポップオーバー内の ![ ブックマーク ](/help/assets/icons/Bookmark.svg) から。
+
 
 データ要素で使用できる様々なオプションについて詳しくは、[データ要素でのコンポーネント情報の表示](/help/components/data-dictionary/view-data-dictionary.md)を参照してください。
 
