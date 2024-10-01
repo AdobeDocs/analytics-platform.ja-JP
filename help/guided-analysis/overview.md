@@ -5,10 +5,10 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 99%
+source-wordcount: '1435'
+ht-degree: 91%
 
 ---
 
@@ -20,19 +20,19 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 以下のガイド付き分析ビューが使用可能です。
 
-| 分析タイプ | ビュータイプ | 説明 |
-| --- | --- | --- |
-| [!UICONTROL 機能マトリックス] | [エンゲージメント](types/engagement.md) | 機能エンゲージメントの幅と深度を理解します。 |
-| [!UICONTROL ファネル] | [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
-| [!UICONTROL ファネル] | [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の推移を追跡します。 |
-| [!UICONTROL 影響] | [リリース](types/release.md) | リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。 |
-| [!UICONTROL 影響] | [初回使用](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定します。 |
-| [!UICONTROL リテンション] | [リテンション率](types/retention-rates.md) | ユーザーの継続的な再来訪習慣を測定します。 |
-| [!UICONTROL トレンド] | [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します。 |
-| [!UICONTROL トレンド] | [頻度](types/frequency.md) | 使用頻度別にエンゲージメントを測定します。 |
-| [!UICONTROL ユーザーの増加率] | [アクティブ](types/active.md) | 新規、継続、再来訪または休眠状態のユーザーを特定します。 |
-| [!UICONTROL ユーザーの増加率] | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
-| [!UICONTROL ユーザーストリーム] | [タイムライン](types/timeline.md) | セッションアクティビティのパターンを探索します。 |
+| ビュータイプ | 説明 |
+| --- | --- |
+| [エンゲージメント](types/engagement.md) | 機能エンゲージメントの幅と深度を理解します。 |
+| [摩擦](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
+| [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の推移を追跡します。 |
+| [リリース](types/release.md) | リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。 |
+| [初回使用](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定します。 |
+| [リテンション率](types/retention-rates.md) | ユーザーの継続的な再来訪習慣を測定します。 |
+| [用途](types/usage.md) | ユーザーエンゲージメントの推移を測定します。 |
+| [頻度](types/frequency.md) | 使用頻度別にエンゲージメントを測定します。 |
+| [アクティブ](types/active.md) | 新規、継続、再来訪または休眠状態のユーザーを特定します。 |
+| [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| [タイムライン](types/timeline.md) | セッションアクティビティのパターンを探索します。 |
 
 {style="table-layout:auto"}
 
@@ -40,15 +40,27 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 Customer Journey Analyticsホームページからガイド付き分析にアクセスできます。
 
-1. ホームページで「**[!UICONTROL ガイド付き分析]**」をクリックすると、[使用状況トレンドビュー](types/usage.md)が直接表示されます。
+1. ホームページから **[!UICONTROL ガイド付き分析]** を選択すると、[ 使用状況のトレンド表示 ](types/usage.md) に直接移動します。
 
    ![ランディングページタイル](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. 「**[!UICONTROL 新規作成]**」をクリックして様々な表示オプションを確認し、分析用に別の開始点を選択します。
+1. 「**[!UICONTROL 新規作成]**」を選択して様々な表示オプションを表示し、分析の別の開始点を選択します。
 
    ![新しいモーダルの作成](assets/create-new-modal.png){style="border:1px solid gray"}
 
-組織でガイド付き分析がまだプロビジョニングされていない場合は、アドビのアカウントチームにお問い合わせください。
+また、Analysis Workspace プロジェクト内からガイド付き分析にアクセスすることもできます。
+
+1. ホームページから **[!UICONTROL 空のプロジェクト]** を選択して、空のWorkspace プロジェクトを作成します。
+
+   ![ 空のプロジェクトを作成 ](assets/blank-project.png){style="border:1px solid gray"}
+
+1. 左パネルで「![ ガイド付き分析 ](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL ガイド付き分析]**」を選択します。
+
+   ![Workspace左レール ](assets/workspace-left-rail.png){style="border:1px solid gray"}
+
+1. 任意のビュータイプをWorkspace キャンバスにドラッグし、「**[!UICONTROL 作成]**」ボタンをクリックして、必要な分析を生成します。 また、既存の分析を「保存済み **[!UICONTROL セクションの下からWorkspace キャンバスにドラッグす]** こともできます。
+
+   ![ パネルを作成 ](assets/create-panel.png)
 
 ## インターフェイス
 
