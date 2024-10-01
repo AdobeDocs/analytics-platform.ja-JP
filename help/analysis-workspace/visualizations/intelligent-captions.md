@@ -1,12 +1,12 @@
 ---
-description: インテリジェントキャプションを使用して自然言語のインサイトを生成し、ビジュアライゼーション内にトレンドをすばやく表示します。
+description: インテリジェントキャプションを使用して自然言語のインサイトを生成し、ビジュアライゼーション内にトレンドを表示します。
 title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 ## インテリジェントキャプションを起動 {#launch}
 
-折れ線グラフのビジュアライゼーションに自動生成されたキャプションを起動するには、ビジュアライゼーションの右上にある **[!UICONTROL インテリジェントキャプション]** アイコンをクリックします。
+折れ線グラフのビジュアライゼーションの自動生成キャプションを起動するには、ビジュアライゼーションの右上にある ![AEMScreen](/help/assets/icons/AI.svg)**[!UICONTROL インテリジェントキャプション]** を選択します。
 
 ![ 製品表示のインテリジェントキャプションのトレンドを表示するローンチ分析ウィンドウ。](assets/intell-caps-1.png)
 

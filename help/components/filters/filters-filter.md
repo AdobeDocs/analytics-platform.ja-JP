@@ -4,33 +4,53 @@ title: フィルターリストのフィルタリング
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 30%
+source-wordcount: '177'
+ht-degree: 7%
 
 ---
 
 # フィルターリストのフィルタリング
 
-タグ、所有者、その他のフィルター（すべて表示、自分が所有、自分と共有、お気に入りおよび承認済み）でフィルターマネージャーのフィルターのリストをフィルタリングします。
+フィルターのリストをフィルタリングできます。 フィルターにフィルターを使用すると、使用可能なフィルターを見つけやすく、また [ フィルターマネージャー ](manage-filters.md) からフィルターを管理しやすくなります。
 
-フィルターを使用すると、フィルターの検索が容易になります。
+>[!NOTE]
+>
+>フィルターのリストでは、[ フィルターマネージャー ](manage-filters.md#filters-list) の一部として [ フィルターリスト ](manage-filters.md) を参照します。 そのリストは、同じ [ フィルターマネージャー ](manage-filters.md#filter-panel) の一部である ![ フィルター ](/help/assets/icons/Filter.svg)[ フィルターパネル ](manage-filters.md) を使用してフィルタリングできます。
+>
 
-1. フィルターマネージャーで、「**[!UICONTROL フィルター]**」アイコン（![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)）をクリックします。
 
-   ![ フィルターアイコンと使用可能なフィルターを表示するフィルターマネージャー。](assets/filtering.png)
+フィルターのリストをフィルタリングするには：
 
-2. 次のフィルターを使用できます。
+1. ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルを開きます。 「フィルター」リストにスペースが必要な場合は、もう一度 ![ フィルター ](/help/assets/icons/Filter.svg) を選択してパネルを閉じることができます。
+1. 使用可能ないずれかの [ フィルターセクション ](#filter-sections) からフィルターを選択します。
 
-   | フィルター名 | 説明 |
-   |---|---|
-   | タグ | 特定の [ タグ ](/help/components/filters/filters-tag.md) でフィルターのリストをフィルタリングできます。 「タグ」列はデフォルトで表示されます。 |
-   | 所有者 | 所有者でフィルターのリストをフィルタリングできます。 |
-   | データビュー | データビューでフィルタリングできます。 |
-   | その他のフィルター／すべてを表示 | **（管理者のみ）** すべてのフィルター、その所有者および最終変更日を表示します。 |
-   | その他のフィルター／自分が所有 | 所有しているすべてのフィルターを表示します。 |
-   | その他のフィルター／自分と共有 | 他のユーザーが [ 共有 ](/help/components/filters/filters-share.md) しているすべてのフィルターを表示します。 |
-   | その他のフィルター／お気に入り | [ お気に入り ](/help/components/filters/filters-favorite.md) としてマークしたすべてのフィルターを表示します。 |
-   | その他のフィルター／承認済み | すべての公式に [ 承認された ](/help/components/filters/filters-approve.md) セグメントを表示します。 |
-   | セグメントを検索 | セグメントを名前で検索できます。 |
+   >[!INFO]
+   >
+   >*項目* [ フィルターリスト ](manage-filters.md#filters-list) に表示されるフィルター項目を参照します。
+   > 
+
+## フィルターセクション
+
+次のフィルターセクションを使用できます。
+
+### タグ
+
+{{tagfiltersection}}
+
+### データビュー
+
+{{dataviewfiltersection}}
+
+### 所有者
+
+{{ownerfiltersection}}
+
+
+### その他のフィルター
+
+{{otherfiltersfiltersection}}
+
+
+[ フィルターリスト ](manage-filters.md#filters-list) は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、「アクティブなフィルターバー [ に表示さ ](manage-filters.md#active-filter-bar) ます。

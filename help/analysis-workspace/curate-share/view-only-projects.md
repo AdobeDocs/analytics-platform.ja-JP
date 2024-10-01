@@ -5,10 +5,10 @@ title: 表示専用プロジェクト
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 表示のみのプロジェクトで無効になる操作には、次のものが含まれます。
 
-* 左側のレールを非表示にする
+* 非表示の左パネル
 * パネルカレンダーの日付範囲注意：受信者にカレンダー制御を付与する場合は、日付範囲を含む[ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)を追加します。
 * フリーフォームフィルター
 * 表示可能な行のフリーフォーム数

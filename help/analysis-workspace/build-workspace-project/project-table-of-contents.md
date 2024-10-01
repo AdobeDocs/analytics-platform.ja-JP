@@ -1,20 +1,20 @@
 ---
-description: プロジェクトで使用可能なプロジェクト目次に関する情報
+description: Workspace プロジェクトの目次機能に関する情報
 keywords: Analysis Workspace
-title: プロジェクトの目次
+title: 目次
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 8941b6a8339294cf121a07ca0c14bac50342d04e
+source-git-commit: 9d32100f28e8806cc30aaf52e30216cbce1a38b0
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 7%
+source-wordcount: '182'
+ht-degree: 4%
 
 ---
 
-# プロジェクトの目次
+# 目次 
 
-Analysis Workspaceでは、各プロジェクト内の目次を表示できます。これにより、プロジェクト内の任意のパネルとビジュアライゼーション間を素早く移動できます。 これは、多くのパネルとビジュアライゼーションを含む大きなプロジェクトを表示する場合に特に便利です。
+Analysis Workspaceでは、プロジェクトの目次を表示できます。これにより、プロジェクトに存在する任意のパネルとビジュアライゼーション間をすばやく移動できます。 目次は、多くのパネルやビジュアライゼーションを含む大きなプロジェクトを表示する場合に特に役立ちます。
 
 +++ この機能のビデオデモをご覧ください。
 
@@ -22,14 +22,22 @@ Analysis Workspaceでは、各プロジェクト内の目次を表示できま�
 
 +++
 
+>[!TIP]
+>
+>セクションヘッダービジュアライゼーションを使用すると、多数のビジュアライゼーションを含むパネル内のセクションを識別し、明確に表現できます。 これらのセクションヘッダーは、目次のエントリとしても表示されます。
+>
+
+
 プロジェクトの目次を表示するには：
 
 1. Analysis Workspaceで、目次を表示するプロジェクトに移動します。
 
-1. 左側のナビゲーションで、目次アイコン ![ 目次アイコン ](assets/toc-icon.png) を選択します。
+1. ボタンパネルで「![ViewList](/help/assets/icons/ViewList.svg)**[!UICONTROL 目次]**」を選択します。 詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。<br/>
 
-   プロジェクトの目次が表示され、デフォルトでは各パネルが展開されます。
+   プロジェクトの **[!UICONTROL 目次]** が表示され、デフォルトで各パネルが展開されます。
 
-   ![ プロジェクト目次が展開されました ](assets/project-toc-expanded.png)
+1. **[!UICONTROL 目次]** で、ビジュアライゼーションを選択します。<br/>
 
-1. 目次で、ビジュアライゼーションを選択して、プロジェクト内で移動します。
+   選択したビジュアライゼーションは自動的にスクロールされ、一時的にハイライト表示されます。
+
+   ![ ハイライト表示された目次 ](assets/toc-highlighted.png)

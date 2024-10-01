@@ -1,70 +1,56 @@
 ---
-description: Analysis Workspace でカスタム日付範囲を作成し、時間コンポーネントとして保存します。
+description: Analysis Workspaceのカスタム日付範囲の例。
 keywords: Analysis Workspace
-title: Analysis Workspace でカスタム日付範囲を作成
+title: カスタム日付範囲の例
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 57%
+source-wordcount: '111'
+ht-degree: 4%
 
 ---
 
-# カスタム日付範囲を作成
+# カスタム日付範囲の例
 
-Analysis Workspaceでカスタムの日付範囲を作成し、時間コンポーネントとして保存できます。
+この記事では、カスタム日付範囲のその他の例を示します
 
-プロジェクトへの既存の日付範囲の追加について詳しくは、[ カレンダーと日付範囲の概要 ](/help/components/date-ranges/calendar.md) を参照してください。
 
-カスタムの日付範囲を作成するには：
 
-1. Adobe Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL 日付範囲]** を選択します。
+## 最後の 2 か月前
 
-   ![ 日付範囲ページ ](assets/date-ranges.png)
++++ 詳細
 
-1. 「[!UICONTROL **新しい日付範囲を作成**]」を選択します。
+2 か月前を定義するカスタムの日付範囲を定義する場合。 いずれかのプリセットを使用します。
 
-1. 日付範囲ビルダーで、次の情報を指定します。
+![ 過去 2 か月前 ](assets/date-range-example-simple.png)
 
-   | オプション | 説明 |
-   |---------|----------|
-   | [!UICONTROL **タイトル**] | Analysis Workspaceで選択したときに表示される日付範囲のタイトル。 |
-   | [!UICONTROL **説明**] | 日付範囲の説明。 |
-   | [!UICONTROL **タグ**] | 日付範囲に適用するタグ。 |
-   | [!UICONTROL **日付範囲**] | カスタムの日付範囲を選択できます。 デフォルトでは、過去 30 日間が選択されます。 |
-   | [!UICONTROL **プリセット**] | [!UICONTROL **昨日**]、[!UICONTROL **過去 7 日間**]、[!UICONTROL **過去 30 日間**] などのプリセット日付範囲のリストから選択します。 |
-   | [!UICONTROL **開始時刻**] | 日付範囲が開始される時刻。 |
-   | [!UICONTROL **終了時刻**] | 日付範囲が終了する時刻。 |
-   | [!UICONTROL **相対日付を使用**] | 日周期を使用すると、レポートを実行したタイミングに基づいて、一定期間、将来や過去を確認する動的レポートを生成できます。例えば、（「作成日」フィールドに基づく）「先月」に発行されたすべての注文をレポートしたい場合、12 月にレポートを実行すると、11 月に発行された注文が表示されます。同じレポートを 1 月に実行すると、12 月に発行された注文が表示されます。<ul><li>**[!UICONTROL 日付のプレビュー]**：周期的なカレンダーに含まれる期間を示します。</li><li>**[!UICONTROL 開始]**：本日、今週、今月、今四半期、本年から選択できます。</li><li>**[!UICONTROL 終了]**：本日、今週、今月、今四半期、本年から選択できます。</li></ul><br>デフォルトで選択されています。 |
++++
 
-1. 「[!UICONTROL **保存**]」を選択します。
 
-## 例：「2 か月前」の日付範囲 {#section_C4109C57CB444BB2A79CC8082BD67294}
+## 先週末までローリング
 
-次のカスタム日付範囲は、方向の変化を示す変更概要ビジュアライゼーションで、「2 ヶ月前」の日付範囲を示します。
++++ 詳細
 
-![](assets/date-range-two-months-ago.png)
+1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する場合。 例えば、今日が 2024 年 9 月 11 日水曜日の場合。 2024 年 9 月 4 日水曜日（PT）から 2024 年 9 月 7 日土曜日までの日付範囲が必要です。 9月
 
-カスタム日付範囲は、プロジェクトの[!UICONTROL 日付範囲]コンポーネントパネルの最上部に表示されます。
+![ 日付範囲の例 ](assets/date-range-example.png)
 
-![](assets/date-range-panel-two-months-ago.png)
++++
 
-比較用に、このカスタム日付範囲を、先月プリセットを使用した、カスタムの、月周期の日付範囲の横の列にドラッグできます。変更概要ビジュアライゼーションを追加して、各列から合計を選択し、方向の変化を示します。
+<!--
+## Example: Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
-![](assets/date-range-two-months-table.png)
-
-## 例：7 日周期の日付範囲の使用 {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
-
-1 週間前に終了する 7 日間のローリングウィンドウを指定する日付範囲を作成できます。
+You can create a date range that specifies a 7-day rolling window that ends one week ago:
 
 ![](assets/create_date_range.png)
 
-*`rolling daily`*.を使用します。
+Use *`rolling daily`*.
 
-* 「開始」設定は、*`current day minus 6 days`* になります。
+* The Start settings would be *`current day minus 6 days`*.
 
-* 「終了」設定は、*`current day minus 7 days`* になります。
+* The End settings would be *`current day minus 7 days`*.
 
-この日付範囲は、コンポーネントとして任意のフリーフォームテーブルにドラッグできます。
+This date range can be a component that you drag onto any freeform table.
+-->

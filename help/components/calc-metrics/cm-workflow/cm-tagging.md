@@ -3,54 +3,80 @@ description: 計算指標マネージャでは、セグメントにタグを付�
 title: 計算指標のタグ付け
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 12%
+source-wordcount: '171'
+ht-degree: 10%
 
 ---
 
 # 計算指標のタグ付け
 
-計算指標マネージャーでは、タグ付けによってフィルターを整理できます。
 
-すべてのユーザーが計算指標にタグを付けることができます。指標には 1 つ以上のタグを適用できます。ただし、タグを表示できるのは、自分が所有している計算指標または自分と共有されている計算指標に限られます。
+[ 計算指標マネージャー ](cm-manager.md) では、タグを使用して計算指標を整理できます。 管理者は、すべての計算指標にタグを付けることができます。 管理者以外のユーザーは、自分が作成または共有された計算指標にのみタグ付けできます。
+
+1 つ以上の計算指標にタグを付けるには：
+
+1. [ 計算指標マネージャー ](cm-manager.md) で、タグ付けする計算指標を 1 つ以上選択します。
+1. アクションバーから、「![ ラベル ](/help/assets/icons/Labels.svg) **[!UICONTROL タグ]**」を選択します。
+1. **[!UICONTROL 計算指標をタグ付け]** ダイアログで
+
+   ![ 計算指標をタグ付けダイアログ ](assets/tag-calculated-metric-dialog.png)
+
+   1. （オプション） ![ 検索 ](/help/assets/icons/Search.svg) を使用して、タグのリストを検索および制限します。
+
+   2. タグのリストに基づく：
+
+      * リストから 1 つ以上の既存のタグを選択する。または
+      * 新しいタグを入力し、**[!UICONTROL Enter]** キーを押します。 繰り返して、複数の新しいタグを追加します。
+
+1. 「**[!UICONTROL 保存]**」を選択して、計算指標のタグを保存します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
+
+保存すると、タグは、[!UICONTROL  計算指標ビルダー ] で選択した計算指標の [ タグ ](cm-tagging.md) フィールドにリストされます。
+
+<!--
+
+In the Calculated metric manager, you can organize filters by tagging them.
+
+All users can create tags for calculated metrics and apply one or more tags to a metric. However, you can see tags only for those calculated metrics that you own or that have been shared with you. 
 
 >[!TIP]
 >
->最も役に立つタイプのタグは、通常、次の条件に基づくタグです。
+>The most useful types of tags are usually tags that are based on the following criteria:
 >
->* **チーム名** （ソーシャルマーケティングやモバイルマーケティングなど）。
->* **プロジェクト** （分析タグ）（入口ページ分析など）。
->* **カテゴリ**：女性、地理など。
->* **ワークフロー** （承認を受ける、キュレーションを受ける） （特定の事業部門）。
+>* **Team names**, such as Social Marketing or Mobile Marketing.
+>* **Project** (analysis tags), such as Entry-page analysis.
+>* **Categories**, such as Women's or Geography.
+>* **Workflows**, such as To be approved or Curated for (a specific business unit).
 
-## 計算指標へのタグの適用
+## Apply tags to a calculated metric
 
-1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **計算指標**] を選択します。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**].
 
-1. 計算指標マネージャーで、タグ付けする指標の横にあるチェックボックスをオンにします。
+1. In the Calculated metrics manager, select the checkbox next to any metrics that you want to tag.
 
-   ![ 計算指標リストをモバイルマーケティングを選択したタグ付け。](assets/cm_add_tags.png)
+   ![Tag Calculated metric list with Mobile marketing selected.](assets/cm_add_tags.png)
 
-1. [!UICONTROL **計算指標をタグ付け**] ダイアログボックスで、
+1. In the [!UICONTROL **Tag Calculated metric**] dialog box: 
 
-   * 新しいタグを追加します。 **[!UICONTROL タグを追加]** フィールドに名前を入力し、Enter キーを押します。
-   * 選択した指標に適用する既存のタグを 1 つ以上選択します。
+   * Add a new tag. Type the name in the **[!UICONTROL Add tags]** field, then press Enter.
+   * Select one or more existing tags to apply to the selected metrics.
 
-1. 「[!UICONTROL **保存**]」を選択して、タグを適用します。
+1. Select [!UICONTROL **Save**] to apply the tags.
 
-## 適用されたタグを表示
+## View applied tags
 
-1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **計算指標**] を選択して、計算指標マネージャーに移動します。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**] to go to the Calculated metrics manager.
 
-1. 計算指標マネージャーで、「[!UICONTROL **タグ**]」列にタグが表示されます。 （右上の歯車アイコンをクリックして列を管理します）。
+1. In the Calculated metrics manager, tags appear in the [!UICONTROL **Tags**] column. (Click the gear icon on the top-right to manage your columns.)
 
-## タグで指標をフィルター
+## Filter metrics by tags
 
-1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **計算指標**] を選択して、計算指標マネージャーに移動します。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**] to go to the Calculated metrics manager.
 
-1. 計算指標マネージャーで「**フィルター**」アイコンを選択したあと、フィルターに使用するタグを選択します。
+1. In the Calculated metrics manager, select the **Filter** icon, then select the tags that you want to filter by. 
 
-   選択したフィルターを持つ指標のみが表示されます。
+   Only metrics that have the filter you select are shown.
+
+-->
 

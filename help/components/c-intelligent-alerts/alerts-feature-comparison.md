@@ -3,22 +3,20 @@ description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるアラ�
 title: アラート機能の比較Customer Journey AnalyticsとAdobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 5%
 
 ---
 
-# アラート機能の比較：Customer Journey AnalyticsとAdobe Analytics
+# アラート機能の比較
 
-Customer Journey Analyticsでアラートを使用するプロセスは、Adobe Analyticsでアラートを使用するプロセスとほとんど同じです。 ただし、重要な違いがあります。
-
-以下の節では、主な違いについて説明します。
+Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。ただし、重要な違いがあります。 以下の節では、主な違いについて説明します。
 
 ## 時間別アラートは、Customer Journey Analyticsでは使用できません
 
-Adobe Analyticsとは異なり、時間別アラートはCustomer Journey Analyticsでは使用できません。 Customer Journey Analyticsとして、アラートを日単位、週単位、月単位で設定できます。
+Adobe Analyticsとは異なり、時間別アラートはCustomer Journey Analyticsでは使用できません。 Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。
 
 これは、Customer Journey Analyticsでデータがレポートされる前に、データをAdobe Experience Platformに取り込む様々な方法があるためです。 データの完全性と可用性は 1 時間以内には確実に達成できないので、1 時間ごとのアラートは不完全なデータの可能性が高いため、実用的ではありません。 詳しくは、[ データ取り込み時間は様々 ](#data-ingestion-times-vary-in-customer-journey-analytics) を参照してください。
 

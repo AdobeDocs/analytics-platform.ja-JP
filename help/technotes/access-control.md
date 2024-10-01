@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1461'
 ht-degree: 22%
 
 ---
@@ -146,7 +146,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 ### 行レベルのアクセス制御
 
-例えば、ユーザーに 1 日に限りデータへのアクセス権を付与するとします。 アクセスを特定の行に制限する方法を次に示します。
+ユーザーに 1 日からのデータへのアクセス権のみを付与したい。 アクセスを特定の行に制限する方法を次に示します。
 
 1. 特定のデータビューの [!UICONTROL  設定 ] でフィルターを作成します。ここで [!UICONTROL  日 ] は、データアクセスを付与する日付と等しくなります。 詳しくは [ データビューの作成 ](/help/data-views/create-dataview.md#settings-filters) を参照してください。
 1. データビューを保存します。これにより、基になる接続のデータセットのデータ部分にフィルターが適用されます。 フィルター定義に適合しない行はデータビューから自動的に除外され、このデータビューを使用する際にAnalysis Workspaceで使用できなくなります。

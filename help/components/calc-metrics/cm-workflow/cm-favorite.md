@@ -3,21 +3,19 @@ description: 計算指標を使いやすくするために整理する別の方�
 title: 計算指標をお気に入りに登録
 feature: Calculated Metrics
 exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 29%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
 # 計算指標をお気に入りに登録
 
-計算指標を使いやすくするために整理する別の方法として、計算指標をお気に入りとしてマークします。
+計算指標をお気に入りとしてマークできます。 計算指標をお気に入りとしてマークすると、計算指標を整理するのに役立ちます。 すべてのユーザーが計算指標を優先できます。
 
-1. Customer Journey Analyticsで、「**[!UICONTROL コンポーネント]**」タブを選択し、「**[!UICONTROL 計算指標]**」を選択します。
+計算指標を支持または支持しない場合は、[ 計算指標マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) で以下をおこないます。
 
-1. 計算指標マネージャーで、お気に入りとしてマークする計算指標の横にある星をオンにします。 星が黄色の星に変わります。
+* 「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して計算指標の使用を許可するか、「![Star](/help/assets/icons/Star.svg)」を選択して計算指標の使用を許可しない。
 
-   ![Bing からの訪問者を示す黄色の星。](assets/favorites.png)
-
-1. また、**[!UICONTROL フィルター]**／**[!UICONTROL その他のフィルター]**／**[!UICONTROL お気に入り]**&#x200B;で、お気に入りをフィルタリングすることもできます。
+計算指標のリストをお気に入りでフィルタリングできます。 **[!UICONTROL フィルター]** **[!UICONTROL フィルター ![ パネルから ](/help/assets/icons/Filter.svg) その他のフィルター]** を選択し、「**[!UICONTROL お気に入り]**」を選択します。 詳しくは、[ 計算指標のリストのフィルタリング ](/help/components/calc-metrics/cm-workflow/cm-filter.md) を参照してください。

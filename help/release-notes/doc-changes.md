@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: d0dbdcb6fa1402bce73584d1dd9165c1b3f00b33
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4064'
 ht-degree: 70%
 
 ---
@@ -43,7 +43,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | プロジェクトへのコンポーネントの追加に関するドキュメント | [Analysis Workspace のプロジェクトに様々なタイプのコンポーネントを追加](/help/components/use-components-in-workspace.md)する方法について、一般情報を追加しました。 |
 | データ書き出しの使用例 | [ データ書き出しの使用例 ](/help/use-cases/data-export/overview.md) と、Experience PlatformとCustomer Journey Analytics機能を使用してこれらの使用例を実装する方法を説明する新しい記事のセット |
 | Adobe Analytics から Customer Journey Analytics へのアップグレードに関する新しいドキュメント | Adobe Analytics から Customer Journey Analytics にアップグレードする組織の場合、組織の現在の Adobe Analytics 実装と長期目標に基づいて、複数のアップグレードオプションと多くの考慮事項があることに留意する必要があります。<p>次の内容に対する理解を深めるのに役立つ、新しいドキュメントリソースが利用できるようになりました。</p><ul><li>存在する様々なアップグレードパス</li><li>組織の現在の Adobe Analytics 実装に基づいて利用可能なアップグレードパス</li><li>各アップグレードパスのメリットとデメリット</li><li>各アップグレードパスの段階的なガイダンス</li><li>履歴データの処理に関する考慮事項</li><li>その他</li></ul><p>[詳しくは、Customer Journey Analytics へのアップグレードを参照してください](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
-| カスタム日付範囲に関するドキュメントを更新 | 現在の製品の機能とデザインに一致させるために、[カスタム日付範囲の作成](/help/components/date-ranges/custom-date-ranges.md)に関連するスクリーンショットと手順を更新しました。 |
+| カスタム日付範囲に関するドキュメントを更新 | 現在の製品の機能とデザインに一致させるために、[ 日付範囲の例 ](/help/components/date-ranges/custom-date-ranges.md) に関連するスクリーンショットと手順を更新しました。 |
 | Dimensionに関する概要 | [ ディメンション ](/help/components/dimensions/overview.md) に関する情報を追加しました。 |
 | ソースコネクタの例 | データの取り込みに [ ソースコネクタを使用 ](/help/data-ingestion/sources.md#use-a-source-connector) する方法を説明する際に使用できるソースコネクタの例を追加しました。 |
 | **2024年4月** | |
@@ -141,7 +141,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Customer Journey Analytics と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
 | Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)に関する新しい節です。 |
 | Audiences ドキュメントの更新 | オーディエンスを作成すると、[新しい Customer Journey Analytics オーディエンスごとに Experience Platform ストリーミングセグメントが作成](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#after-audience-created)されます。 |
-| Workspace のカレンダーと日付範囲 | 内容を更新して、相対的な日付範囲、数式計算の更新およびカレンダー UI の変更について説明しました。[パネルを基準とする相対的な日付範囲について](/help/components/date-ranges/calendar.md#relative-panel-dates)を参照してください。 |
+| Workspace のカレンダーと日付範囲 | 内容を更新して、相対的な日付範囲、数式計算の更新およびカレンダー UI の変更について説明しました。[パネルを基準とする相対的な日付範囲について](/help/components/date-ranges/overview.md#custom-date-ranges)を参照してください。 |
 | モバイルスコアカード | 比較日付範囲の表示／非表示を切り替える方法について説明する新しい節をドキュメントに追加しました。Customer Journey Analytics の[比較日付範囲の表示](/help/mobile-app/create-scorecard.md#show-comparison-dates)を参照してください。 |
 | **2023年1月** | |
 | テーブルのフィルタリングと並べ替え | [テーブルのフィルタリングと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)に関する記事の内容を更新しました（手順の追加や使用可能なオプションの説明など）。この記事の名前を「テーブルのページネーション、フィルタリングおよび並べ替え」から変更しました。 |

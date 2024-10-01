@@ -4,29 +4,26 @@ title: フィルターの承認
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 71%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
-# フィルターの承認 {#approve}
+# フィルターの承認
 
-フィルターマネージャでは、アプリケーションの各種レベル向け、特定の部門またはグループ向け、およびレポーティングポリシーに合致したフィルターを承認するワークフローを設定できます。
+[ フィルターマネージャー ](manage-filters.md) では、フィルターを承認または未承認できます。 フィルターを承認できるのは管理者のみです。
 
-次に、フィルターに承認フラグを設定する方法を示します。
+フィルターを承認するには：
 
-1. フィルターマネージャで、フィルタータイトルの左側にあるチェックボックスを選択します。
+1. [ フィルターマネージャー ](manage-filters.md) で、承認するフィルターを 1 つ以上選択します。
+1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Approve]**」を選択します。 承認されたフィルターには ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) が付きます。
 
-1. フィルター管理タスクバーの「**[!UICONTROL 承認]**」をクリックします。
+フィルターを未承認にするには：
 
-1. 承認済みフィルターを組織で共有することを検討します。
+1. [ フィルターマネージャー ](manage-filters.md) で、承認を取り消すフィルターを 1 つ以上選択します。
+1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Unapprove]**」を選択します。
 
-1. 「**[!UICONTROL OK]**」をクリックします。
 
-   リスト内のフィルターの横には、承認アイコンがあります。
-
-   ![100 件を超える注文が共有のために承認されていることを示すフィルターマネージャー。](assets/seg_approved.png)
-
-1. また、「**[!UICONTROL 未承認]**」をクリックすると、承認済みフィルターを未承認にすることもできます。
+承認済みフィルターでフィルターのリストをフィルタリングできます。 **[!UICONTROL フィルター]** **[!UICONTROL フィルター ![ パネルから ](/help/assets/icons/Filter.svg) その他のフィルター]** を選択し、「**[!UICONTROL 承認済み]**」を選択します。 詳しくは、[ フィルターのリストのフィルタリング ](/help/components/filters/filters-filter.md) を参照してください。

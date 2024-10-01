@@ -4,51 +4,38 @@ description: レポートの実行時に得られる、フィルタリングさ�
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 96%
+source-wordcount: '214'
+ht-degree: 12%
 
 ---
 
 # 計算指標の概要
 
-計算指標と高度な計算指標は、既存の指標から作成できるカスタム指標です。 計算指標ツールを使用すると、指標を極めて柔軟に作成および管理できます。マーケター、製品マネージャーおよびアナリストは、 の実装を変更することなくデータを照会できます。
+計算指標は、既存の指標から作成できるカスタム指標です。 計算指標を使用すると、実装を変更せずにデータを分析できるカスタム指標の作成、管理およびキュレーションを行う柔軟な方法を利用できます。
 
-次のことが可能です。
++++ 計算指標の使用方法の概要については、このビデオを参照してください。
 
-* 実装を変更することなく、レポートの実行時に得られる、フィルタリングされた指標を作成する。これらの指標はフィルターに基づいているので、時系列で表示できます。
-* （高度な計算指標のみ）指標でフィルタリングします。例えば、初回のセッションの訪問者の数を含む、「初回訪問者数」の指標を作成できます。
-* （高度な計算指標のみ）統計関数を組み込んで、データからより適切な情報を得る。例えば、レポート内の項目数をカウントしたり、各項目の標準偏差の数を追加したりできます。
+>[!VIDEO](https://video.tv.adobe.com/v/31787/?learn=on)
 
-## 計算指標と高度な計算指標
++++
 
-次に、計算指標と高度な計算指標の機能の比較を示します。
+計算指標の一般的なワークフローは、次のタスクで構成されます
 
-| ビルダーのオプション | 計算指標 | 高度な計算指標 |
-|---|---|---|
-| 形式のタイプ（小数、時間、割合、通貨） | ○ | ○ |
-| アトリビューションの変更（デフォルト、線形、パーティシペーションなど） | ○ | ○ |
-| 指標のタイプ（標準、合計） | ○ | ○ |
-| 基本的な演算子（可算、減算、乗算、除算） | ○ | ○ |
-| フィルターの適用 | × | ○ |
-| [基本的な関数（カウント、絶対値、平均など）](/help/components/calc-metrics/cm-functions.md) | × | ○ |
-| [高度な関数（回帰、if/then、t スコアなど）](/help/components/calc-metrics/cm-adv-functions.md) | × | ○ |
-
-## ツール
-
-| ツール | 機能 |
-|--- |--- |
-| 計算指標ビルダー | <ul><li>高度な配分モデルを使用した計算指標および高度な計算指標を作成する。</li><li>指標の数式にフィルターをインラインで追加する。</li><li>同じレポート内のフィルターを比較する。例えば、地元の訪問者と海外の訪問者を比較します。</li><li>統計関数を使用する。</li><li> 指標の詳細な説明を指定する（指標の用途や指標を使用する（または使用しない）場所を示します）。</li><li>新しい指標に定義をコピーする。</li><li>インラインで指標をプレビューする。</li><li>指標の両極性を設定する。これは、指定されたカスタムイベント（指標）が発生した場合に、それが良いか悪いかを示します。</li><li>指標にタグ付けする。</li></ul> |
-| 計算指標マネージャー | <ul><li>他のユーザーと指標を共有する。</li><li>指標を承認して管理する。</li><li>ユーザーが検索しやすいように指標を管理（タグ付け）する。</li><li>指標を削除する。</li><li>指標の名前を変更する。</li></ul> |
-| 計算指標の API | Customer Journey Analytics API セットの一部。 |
-
-## Customer Journey Analytics の計算指標テンプレート
-
-| 計算指標名 | 計算指標の説明 |
+| タスク | 説明 |
 | --- | --- |
-| 1 人あたりのセッション数 | 1 人あたりの平均セッション数 |
-| セッション開始率 | セッションの最初のイベントでディメンション項目が発生した時間の割合。 |
-| セッション終了率 | セッションの最後のイベントでディメンション項目が発生した時間の割合。 |
-| ユーザー別滞在時間 | 特定のディメンション項目に対して人が費やした平均時間。 |
-| セッションごとに費やされた時間 | 特定のディメンション項目でセッションごとに人が費やした平均時間。 |
+| プラン | 特に、公式に承認される ![ チェックマーク ](/help/assets/icons/Checkmark.svg) 指標の場合は、頻繁に使用されると予想される計算指標を慎重に計画し、構造化します。 |
+| [ビルド](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | 計算指標を作成、変更および保存します。 |
+| [適用](/help/components/use-components-in-workspace.md) | 計算指標をWorkspace プロジェクト内に直接適用します。 |
+| [管理](/help/components/calc-metrics/cm-workflow/cm-manager.md) | 計算指標を管理します。 1 つ以上の計算指標に対して、[ タグ付け ](/help/components/calc-metrics/cm-workflow/cm-tagging.md)、[ 承認 ](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[ 未承認 ](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[ フィルター ](/help/components/calc-metrics/cm-workflow/cm-filter.md)、[ 支持 ](/help/components/calc-metrics/cm-workflow/cm-favorite.md) または [ 支持しない ](/help/components/calc-metrics/cm-workflow/cm-favorite.md)、[ 共有 ](/help/components/calc-metrics/cm-workflow/cm-sharing.md)、[ コピー ](/help/components/calc-metrics/cm-workflow/cm-copy.md) を実行できます。 |
+
+計算指標の作成に使用できる様々なオプションについては、[ 計算指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-workflow.md) を参照してください。 [ 計算指標ビルダー ](cm-workflow/cm-build-metrics.md) で計算指標の定義を作成、変更および保存します。
+
+計算指標はAnalysis Workspaceで直接使用します。 [Analysis Workspaceでのコンポーネントの使用 ](/help/components/use-components-in-workspace.md) を参照してください。
+
+計算指標は、[ 計算指標マネージャー ](cm-workflow/cm-manager.md) で管理します。
+
+## デフォルトの計算指標
+
+Adobeには、![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) で識別される多数のデフォルトの計算指標が用意されています。 詳しくは、[ デフォルトの計算指標 ](/help/components/calc-metrics/default-calcmetrics.md) を参照してください。

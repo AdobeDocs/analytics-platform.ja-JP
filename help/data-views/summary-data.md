@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1135'
 ht-degree: 7%
 
 ---
@@ -153,4 +153,4 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 >[!MORELIKETHIS]
 >
->概要データの使用方法とレポート方法の詳細なユースケース例については、[ 概要データの取り込みと使用 ](/help/use-cases/data-views/summary-data.md) の記事を参照してください。
+>概要データの使用方法とレポート方法に関する詳細なユースケースの例については、[ 概要データの使用 ](/help/use-cases/data-views/summary-data.md) の記事を参照してください。

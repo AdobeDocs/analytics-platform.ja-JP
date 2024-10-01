@@ -4,10 +4,10 @@ title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 89%
 
 ---
 
@@ -28,23 +28,23 @@ ht-degree: 100%
 * [!UICONTROL フロー]：入口／出口ディメンション（例：[!UICONTROL 入口ページ]）は、フローでは使用できません。
 * [!UICONTROL コホート]：整数以外の値をコホート条件として使用することはできません。
 
-## コンポーネント／フィルター
+## フィルター
 
-* 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL 回数]、[!UICONTROL ユニーク訪問者]など）。
-* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、クイックフィルターのタイプです。公開されない限り、Workspace の左パネルまたはフィルターコンポーネントマネージャーには表示されません。詳しくは、[クイックフィルター](/help/components/filters/quick-filters.md)を参照してください。
+* 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL  イベント ]、[!UICONTROL  人物 ] など）。
+* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、クイックフィルターのタイプです。公開されない限り、これらはWorkspaceの左側のパネルやフィルターコンポーネントマネージャーには表示されません。 詳しくは、[クイックフィルター](/help/components/filters/quick-filters.md)を参照してください。
 
-## コンポーネント／計算指標
+## 計算指標 
 
-* 計算指標は、一部のビジュアライゼーションでは使用できません。上記の「ビジュアライゼーション」を参照してください。
+* 計算指標は、一部のビジュアライゼーションでは使用できません。[ ビジュアライゼーション ](#visualizations) を参照してください。
 * 計算指標自体に別々のアトリビューションモデルを含めることができるので、[!UICONTROL アトリビューションパネル]で計算指標を使用することはできません。
 * 計算指標がワークスペースから作成される場合（[!UICONTROL コンポーネント／フィルター]から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。例：[!UICONTROL IP アドレス]。
 
-## コンポーネント／日付範囲
+## 日付範囲
 
 * カスタム日付範囲では、[!UICONTROL 昨年の今日]、[!UICONTROL 先月の今日]などはサポートされません。
 
 
-## コンポーネント／レポート設定
+## レポート設定
 
 * 「[!UICONTROL レポート設定]」ページの一部の設定は適用されません。Analysis Workspace では、一番下の「[!UICONTROL 言語 / 通貨 / エンコード]」設定（[!UICONTROL 千単位区切り文字]、[!UICONTROL 予定レポートのエンコード]、[!UICONTROL CSV 区切り文字]）のみが使用されます。
 

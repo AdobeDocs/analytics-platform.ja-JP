@@ -6,97 +6,149 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: e766858a93f8dcfadda2e7518b0d74468ff1ae4b
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '1511'
+ht-degree: 13%
 
 ---
 
 # Analysis Workspace の概要 {#analysis-workspace-overview}
 
->[!CONTEXTUALHELP]
->id="cja_workspace_fundamentals"
->title="Analysis Workspace の基本"
->abstract="以下のツアーに従って、テーブルの作成、ビジュアライゼーションの追加、日付範囲の変更などを含む、Analysis Workspace の基本を学習します。"
->additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Analysis Workspace の概要"
+Analysis Workspaceを使用すると、分析をすばやく構築してインサイトを収集し、それらのインサイトを他のユーザーと共有できます。 ドラッグ&amp;ドロップブラウザーインターフェイスを使用して、分析を作成し、ビジュアライゼーションを追加してデータに活気を与え、データセットをキュレーションし、[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を任意のユーザーと共有し、スケジュールすることができます。
 
-Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するためのビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとのプロジェクトの共有とスケジュールを行うことができます。
 
-次のビデオでは、短い概要と可能な例を示します。
++++ Analytics Workspaceの可能性を示すビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Analysis Workspace の領域
+{{videoaa}}
 
-次の画像と付属の表では、Analysis Workspace の主な領域の一部を説明します。
 
-![左端と左端のパネル、キャンバス、データビューのドロップダウンメニューがハイライト表示された、Analysis Workspace ウィンドウ。](assets/analysis-workspace-overvew.png)
++++
 
-| 画像内の場所 | 名前と機能 |
-|---------|----------|
-| A | **左端のパネル：** Analysis Workspace にパネル、ビジュアライゼーションおよびコンポーネントを追加するためのタブが含まれます。また、データ要素を開くために使用する「データ要素」アイコンも含まれます。 |
-| B | **左パネル：**&#x200B;左端のパネルで選択したタブに応じて、この領域には個々のパネル、ビジュアライゼーションまたはコンポーネントが含まれます。 |
-| C | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネル、ビジュアライゼーションおよびコンポーネントをキャンバスに追加すると、プロジェクトは動的に更新されます。 |
-| D | **データビューのドロップダウンメニュー：** Analysis Workspace の各パネルでは、データビューのドロップダウンメニューを使用して、データソースとして使用するデータビューを選択できます。 |
+## インターフェイス
 
-## Analysis Workspace の機能 {#analysis}
+次の画像と付属の表に、Analysis Workspace ユーザーインターフェイスの主な要素を示します。
 
-Analysis Workspace で使用できる主な機能の一部を次に示します。
+![ 左端のパネル、左側のパネル、キャンバスおよびデータビューのドロップダウンメニューがハイライト表示されたAnalysis Workspace ウィンドウ。](assets/analysis-workspace-overview.png)
 
-### パネル
+| 場所 | 名前と機能 |
+|:---------:|----------|
+| ?? | プロジェクトの名前、機能にアクセスするためのメニュー構造、プロジェクトリストに戻るためのボタン ![ChevronLeft](/help/assets/icons/ChevronLeft.svg)、Workspace プロジェクトを共有するためのボタン **[!UICONTROL Share]** が含まれています。 <br/> プロジェクトの名前を変更するには、いつでもプロジェクトの名前（例：プロジェクトの例）を選択します。 <br/> 「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト ![Star](/help/assets/icons/Star.svg) として追加します。 |
+| ?? | **ボタンパネル：** Analysis Workspaceのプロジェクトに対して、Analysis Workspaceの主要な [ 機能 ](#features)![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**、![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL ビジュアライゼーション]**、![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL コンポーネント]** にアクセスするためのボタンが含まれています。 また、このパネルには、データディクショナリを開くための ![ViewList](/help/assets/icons/ViewList.svg)**[!UICONTROL 目次]**![ ブックマーク ](/help/assets/icons/Bookmark.svg)**[!UICONTROL データディクショナリ]** ボタンも含まれています。 |
+| ?? | **左パネル：** この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。 コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
+| ?? | **キャンバス：** 左側のパネルからコンテンツをドラッグしてプロジェクトを構築するメイン領域です。 パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。 複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/> 各パネルは、選択したデータビューに基づいています。 選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。 詳しくは、[ パネル – データビュー ](/help/analysis-workspace/c-panels/panels.md#data-view) を参照してください。 |
 
-**パネル** を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。左端のパネルで上部の&#x200B;**[!UICONTROL パネル]**&#x200B;アイコンを選択し、使用可能な パネルの完全なリストを表示します。
+## 機能
 
-パネルについて詳しくは、[パネルの概要](/help/analysis-workspace/c-panels/panels.md)を参照してください。
+Analysis Workspaceの主な機能は、ボタンパネルから使用できます。
 
-![](assets/build-panels.png)
+| アイコン | 機能 | 説明 |
+|:---:|---|---|
+| ![Web ページ ](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | パネルを使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。 Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。ボタンパネルで「![Web ページ ](/help/assets/icons/WebPage.svg)」を選択して、使用可能なパネルの完全なリストを表示します。<br/> パネルについて詳しくは、[ パネルの概要 ](/help/analysis-workspace/c-panels/panels.md) を参照してください。 |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL ビジュアライゼーション]** | 棒グラフや折れ線グラフなどのビジュアライゼーションを使用して、データに活気を与えることができます。 左端のパネルで、中央の **[!UICONTROL ビジュアライゼーション]** アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。 <br/> ビジュアライゼーションについて詳しくは、[ ビジュアライゼーションの概要 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を参照してください。 |
+| ![ キュレーション ](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | Analysis Workspace のコンポーネントは、以下で構成されます。<ul><li>![Dimension](/help/assets/icons/Dimensions.svg) [Dimension](/help/components/dimensions/overview.md)</li><li>![ イベント ](/help/assets/icons/Event.svg)[ 指標 ](/help/components/apply-create-metrics.md)</li><li>![ セグメント化 ](/help/assets/icons/Segmentation.svg)[ フィルター ](/help/components/filters/filters-overview.md)</li><li>![ カレンダー ](/help/assets/icons/Calendar.svg)[ 日付範囲 ](/help/components/date-ranges/overview.md)</li></ul>これらの各コンポーネントタイプについて詳しくは、[ コンポーネントの概要 ](/help/components/overview.md) を参照してください。 |
+| ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL 目次]** | 目次は、すべてのパネルとビジュアライゼーションを折りたたみ可能なリストで整理しており、特定のパネルやビジュアライゼーションにすばやくアクセスできます。 |
+| ![ ブックマーク ](/help/assets/icons/Bookmark.svg) | **データディクショナリ** | Analysis Workspaceのデータ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。<br/> データ要素について詳しくは、[ データ要素の概要 ](/help/components/data-dictionary/data-dictionary-overview.md) を参照してください。 |
 
-### ビジュアライゼーション
 
-棒グラフや折れ線グラフなどの&#x200B;**ビジュアライゼーション**&#x200B;を使用して、データを視覚的に活用することができます。左端のパネルで、中央の&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。
+## メニュー
 
-ビジュアライゼーションについて詳しくは、[ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を参照してください。
+Analysis Workspaceのほとんどの機能は、ドラッグ&amp;ドロップのほか、パネル、ビジュアライゼーションおよびコンポーネント内のコンテキストメニューから利用できます。
 
-![](assets/build-visualizations.png)
+Workspace メニューとショートカットまたはホットキーを使用して、機能を利用することもできます。 ショートカットキーは、ブラウザーを実行しているオペレーティングシステムによって異なります。 概要については、以下の表を参照してください。
 
-### コンポーネント
+キーボードでは、次の記号が使用される場合があります。
 
-Analysis Workspace のコンポーネントは、以下で構成されます。
+- **[!UICONTROL *shift *]**の場合は**⇧**。
+- **[!UICONTROL *cmd *]**（コマンド）の場合は**⌘**。
+- **[!UICONTROL *ctrl *]**（コントロール）の場合は**⌃**。
+- **[!UICONTROL *⌥opt *]**の****（オプション）。
+- **[!UICONTROL *alt *]**の場合は**⎇**（代替）。
 
-* ディメンション
+使用可能なメニューの概要については、次の表を参照してください。
 
-* 指標
+| **[!UICONTROL プロジェクト]** | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL プロジェクトの作成]** | **[!UICONTROL *shift+cmd+p *]** | **[!UICONTROL *shift+ctrl+p *]** | 新しいプロジェクトを作成します。 |
+| **[!UICONTROL モバイルスコアカードの作成]** | | | [ 新しいモバイルスコアカードの作成 ](/help/mobile-app/create-scorecard.md)。 |
+| **[!UICONTROL 開く…]** | **[!UICONTROL *cmd+o *]** | **[!UICONTROL *ctrl+o *]** | [ 既存のプロジェクトを開く ](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project)。 |
+| **[!UICONTROL 以前のバージョンを開く…]** | **[!UICONTROL *opt+cmd+o *]** | **[!UICONTROL *alt+ctrl+o *]** | [ 以前のバージョンのプロジェクトを開きます ](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version)。 |
+| **[!UICONTROL 保存]** | **[!UICONTROL *cmd+s *]** | **[!UICONTROL *ctrl+s *]** | [ プロジェクトを保存 ](/help/analysis-workspace/build-workspace-project/save-projects.md#save-projects) します。 |
+| **[!UICONTROL メモと共に保存…]** | **[!UICONTROL *opt+cmd+s *]** | **[!UICONTROL *alt+ctrl+s *]** | [ 保存するプロジェクトバージョンにメモを追加します ](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options)。 |
+| **[!UICONTROL 別名で保存…]** | **[!UICONTROL *shift+cmd+s *]** | **[!UICONTROL *shift+ctrl+s *]** | [ 別の名前と詳細を使用してプロジェクトを保存します ](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options)。 |
+| **[!UICONTROL プロジェクトを更新]** | **[!UICONTROL *opt+r *]** | **[!UICONTROL *alt+r *]** | プロジェクトを更新します。 |
+| **[!UICONTROL CSV をダウンロード]** | **[!UICONTROL *shift+cmd+v *]** | **[!UICONTROL *shift+ctrl+v *]** | プロジェクトを CSV ファイルとしてダウンロードします。 |
+| **[!UICONTROL ダウンロードPDF]** | **[!UICONTROL *shift+cmd+b *]** | **[!UICONTROL *shift+ctrl+b *]** | プロジェクトをPDFドキュメントとしてダウンロードします。 |
+| **[!UICONTROL プロジェクト情報および設定]** | | | 名前、タグ、カラーパレットなど、プロジェクトの設定を定義します。 |
+| **[!UICONTROL ユーザー設定]** | | | [Analysis Workspaceを使用するための環境設定を行います ](/help/analysis-workspace/user-preferences.md)。 |
 
-* フィルター
 
-* 日付範囲
+| **[!UICONTROL 編集]** | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL 元に戻す]** | **[!UICONTROL *cmd+z *]** | **[!UICONTROL *ctrl+z *]** | 前のアクションを取り消します。 |
+| **[!UICONTROL やり直し]** | **[!UICONTROL *cmd+shift+z *]** | **[!UICONTROL *ctrl+shift+z *]** | 前のアクションをやり直します。 |
+| **[!UICONTROL すべてクリア]** | **[!UICONTROL *opt+w *]** | **[!UICONTROL *alt+w *]** | 現在のプロジェクトのすべてのパネルをクリアします。 |
 
-これらの各コンポーネントタイプについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。
+| **[!UICONTROL 挿入]** | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL 空のパネル]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | [ 空のパネル ](/help/analysis-workspace/c-panels/blank-panel.md) を挿入します。 |
+| **[!UICONTROL メディア同時閲覧者数]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt-h *]** | [ メディア同時視聴者数 ](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) パネルを挿入します。 |
+| **[!UICONTROL メディア再生滞在時間]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | [ メディア再生滞在時間 ](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルを挿入します。 |
+| **[!UICONTROL メディア分平均オーディエンス]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | [ メディア分平均オーディエンス ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルを挿入します。 |
+| **[!UICONTROL アトリビューション]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | [ アトリビューション ](/help/analysis-workspace/c-panels/attribution.md) パネルを挿入します。 |
+| **[!UICONTROL フリーフォーム]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | [ フリーフォーム ](/help/analysis-workspace/c-panels/freeform-panel.md) パネルを挿入します。 |
+| **[!UICONTROL クイックインサイト]** | **[!UICONTROL *opt+j *]** | **[!UICONTROL *alt+j *]** | [ クイックインサイト ](/help/analysis-workspace/c-panels/quickinsight.md) パネルを挿入します。 |
+| **[!UICONTROL 実験]** | **[!UICONTROL *opt+x *]** | **[!UICONTROL *alt+x *]** | [ 実験 ](/help/analysis-workspace/c-panels/experimentation.md) パネルを挿入します。 |
+| **[!UICONTROL フリーフォームテーブル]** | **[!UICONTROL *opt+1 *]** | **[!UICONTROL *alt+1 *]** | [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ビジュアライゼーションを挿入します。 |
+| **[!UICONTROL 行]** | **[!UICONTROL *opt+2 *]** | **[!UICONTROL *alt+2 *]** | [ 折れ線グラフ ](/help/analysis-workspace/visualizations/line.md) ビジュアライゼーションを挿入します。 |
+| **[!UICONTROL 棒グラフ]** | **[!UICONTROL *opt+3 *]** | **[!UICONTROL *alt+3 *]** | [ 棒グラフ ](/help/analysis-workspace/visualizations/bar.md) ビジュアライゼーションを挿入します。 |
+| **[!UICONTROL コンボ]** | **[!UICONTROL *opt+4 *]** | **[!UICONTROL *alt+4 *]** | [ コンボ ](/help/analysis-workspace/visualizations/combo-charts.md) ビジュアライゼーションを挿入します。 |
 
-これらの各コンポーネントタイプをビジュアライゼーション（フリーフォームテーブルなど）に追加して、ビジネスの質問への回答を開始できます。
 
-コンポーネントの用語を理解したら、コンポーネントをビジュアライゼーション（フリーフォーム テーブルを含む）にドラッグして[分析を作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)できます。
+| **[!UICONTROL コンポーネント]** | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL フィルターを作成…]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | 新規 [ フィルター ](/help/components/filters/create-filters.md) を作成します。 |
+| **[!UICONTROL 指標を作成…]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | 新しい [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) を作成します。 |
+| **[!UICONTROL 日付範囲を作成…]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | 新規 [ データ範囲 ](/help/components/date-ranges/overview.md) を作成します。 |
+| **[!UICONTROL 注釈を作成…]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | 新規 [ 注釈 ](/help/components/annotations/overview.md) を作成します。 |
+| **[!UICONTROL オーディエンスを作成…]** | **[!UICONTROL *shift+cmd+u *]** | **[!UICONTROL *shift+ctrl+u *]** | 新しい [ オーディエンス ](/help/components/audiences/audiences-overview.md) を作成します。 |
+| **[!UICONTROL コンポーネントを参照]** | **[!UICONTROL *opt+shift+r *]** | **[!UICONTROL *alt+shift+r *]** | プロジェクトのコンポーネントを更新します。 |
 
-![](assets/build-components.png)
+| **[!UICONTROL 共有]** | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL Workspace ユーザーと共有]** | **[!UICONTROL *cmd+h *]** | **[!UICONTROL *ctrl+h *]** | [ プロジェクトを他のWorkspace ユーザーと共有します ](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization)。 |
+| **[!UICONTROL 任意のユーザーと共有]** | **[!UICONTROL *opt+l *]** | **[!UICONTROL *alt+l *]** | [ プロジェクトの読み取り専用バージョンを任意のユーザーと共有する ](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project) |
+| **[!UICONTROL ファイルを送信]** | **[!UICONTROL opt+s]** | **[!UICONTROL *alt+s *]** | [ プロジェクトを CSV またはPDFファイルとして他の受信者に送信します ](/help/analysis-workspace/curate-share/send-schedule-files.md)。 |
+| **[!UICONTROL ファイルの書き出しをスケジュール]** | **[!UICONTROL *shift+opt+s *]** | **[!UICONTROL *shift+alt+s *]** | [ スケジュールに従って、プロジェクトを CSV またはPDFファイルとして他の受信者に送信します ](/help/analysis-workspace/curate-share/send-schedule-files.md)。 |
+| **[!UICONTROL プロジェクトデータをキュレート]** | **[!UICONTROL *shift+cmd+g *]** | **[!UICONTROL *shift+ctrl+g *]** | [ プロジェクトデータをキュレーション ](/help/analysis-workspace/curate-share/curate.md) します。 |
 
-### データ要素
-
-Analysis Workspace のデータ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。
-
-データ要素について詳しくは、[データ要素の概要](/help/components/data-dictionary/data-dictionary-overview.md)を参照してください。
+| ヘルプ | ショートカットMac | ショートカットウィンドウ | 説明 |
+|---|---|---|---|
+| **[!UICONTROL ビデオ]** | | | 新しいブラウザータブで、Customer Journey AnalyticsYouTubeチャネルを開きます。 |
+| **[!UICONTROL ヘルプドキュメント]** | | | 新しいブラウザータブでドキュメントを開きます（実際には読んでいるところです）。 |
+| **[!UICONTROL ヘルプフォーラム]** | | | 新しいブラウザータブで、Adobe Analytics Experience Leagueコミュニティフォーラムを開きます。 |
+| **[!UICONTROL ホットキー]** | | | Workspaceで使用できるホットキー（ショートカット）の概要を示します。 |
+| **[!UICONTROL デバッガーの有効化]** |  | | デバッガーを有効にします。 プロジェクトが再読み込みされます。 |
+| **[!UICONTROL デバッガーを無効にする]** | | | デバッガーを無効にします。 プロジェクトが再読み込みされます。 |
+| **[!UICONTROL パフォーマンス]** | | | **[!UICONTROL Analysis Workspaceのパフォーマンス]** に関する指標を表示するダイアログを表示します。 **[!UICONTROL CSV としてダウンロード]** を使用して、パフォーマンス指標の CSV ファイルをダウンロードします。 |
+| **[!UICONTROL Workspaceについて]** | | | バージョン情報、機能アクセスレベル、アクティブな機能フラグを含む **[!UICONTROL Analysis Workspaceについて]** ダイアログを表示します。 |
 
 ## データソース
 
-ビジュアライゼーションを同期することで、ビジュアライゼーションに対応するデータテーブルまたはデータソースを制御できます。データソースを管理する方法について詳しくは、[こちら](/help/analysis-workspace/visualizations/t-sync-visualization.md)を参照してください。
+ビジュアライゼーションを同期して、ビジュアライゼーションに対応するデータテーブルまたはデータソースを制御します。 詳しくは、[ データソースの管理 ](/help/analysis-workspace/visualizations/t-sync-visualization.md) を参照してください。
 
-## Analysis Workspace の使用を開始
+## Analysis Workspaceの使用
 
-### Adobe Analytics へのログイン {#login}
 
-Analysis Workspace の使用を開始するには、[experience.adobe.com/analytics](https://experience.adobe.com/analytics) に移動して Adobe Analytics にログインします。デフォルトでは、Analysis Workspace のプロジェクトページが表示されます。特定のプロジェクトを選択している場合は、そのプロジェクトがデフォルトで表示されます。
+Analysis Workspaceを使い始めるには：
 
-### プロジェクトの作成 {#new-project}
+1. [Adobe Experience Cloud](https://experience.adobe.com) にログインします。
+1. インターフェイスの右上にあるアプリ切り替えボタン ![ アプリ ](/help/assets/icons/Apps.svg) から「**[!UICONTROL Customer Journey Analytics]**」を選択します。
+1. Analysis Workspaceの **[!UICONTROL プロジェクト]** ページがデフォルトで表示されます。 特定のプロジェクトが選択されている場合や、最近作業を行った場合は、そのプロジェクトがデフォルトで表示されます。
+
+### プロジェクトの作成
 
 Analysis Workspace での分析は、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)と呼ばれます。
 
@@ -108,13 +160,11 @@ Analysis Workspace での分析は、[プロジェクト](/help/analysis-workspa
 
 Analysis Workspace で分析を作成すると、作業内容は[自動保存](/help/analysis-workspace/build-workspace-project/save-projects.md)されます。
 
-プロジェクトの作成が完了し、実用的なインサイトを収集すると、そのプロジェクトを他のユーザーが使用できる準備が整います。プロジェクトは、組織内のユーザーやグループだけでなく、組織外の人物と共有することもできます。プロジェクトの共有について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)を参照してください。
+プロジェクトの構築が完了し、実用的なインサイトが収集されると、他のユーザーがプロジェクトを使用したいかもしれません。 プロジェクトは、組織内のユーザーやグループだけでなく、組織外の人物と共有することもできます。プロジェクトの共有について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)を参照してください。
 
 ## その他のリソース {#resources}
 
-* アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ja)を提供しています。
-* 新機能の最新情報については、 [Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja#analytics) を参照してください。
-* Analysis Workspace について詳しく知るには、Analysis Workspace トレーニングチュートリアルテンプレートを使用するのが最適な方法です。このテンプレートでは、Workspace で初めての分析を作成するための一般的な用語と手順について説明します。チュートリアルを開始するには：
-   1. Adobe Analytics の「[!UICONTROL **Workspace**]」タブで、左側の「**[!UICONTROL 学習]**」を選択します。
-   1. 「**[!UICONTROL チュートリアルを開く]**」を選択します。
-      ![](assets/training-tutorial.png)
+- Customer Journey Analyticsの [ ラーニングランディング ](/help/getting-started/landing.md#learning) ページ。 このページは、Analysis Workspaceを知るのに最適な方法です。 特にラーニングWorkspaceファンダメンタル。 このテンプレートでは、Workspaceで最初の分析を作成するための一般的な用語と手順について説明します
+- アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview)を提供しています。
+- 新機能の最新情報については、 [Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) を参照してください。
+

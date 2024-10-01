@@ -1,24 +1,21 @@
 ---
-description: フォルダーからプロジェクトを削除する方法を説明します
+description: フォルダーからプロジェクトの名前を変更する方法を学ぶ
 keywords: Analysis Workspace
 title: フォルダーからのプロジェクトの削除
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
+source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '157'
+ht-degree: 94%
 
 ---
 
-# フォルダーからのプロジェクトの削除
+# プロジェクトの削除
 
-フォルダーからプロジェクトを削除するには、プロジェクトを別の場所に移動するか、プロジェクトを削除します。
+<!-- Is this article still needed -->
 
->[!NOTE]
->
->管理者が会社フォルダーにプロジェクトを移動すると、元の共有権限が制限されていた場合でも、フォルダーは全員と共有されます。管理者が会社フォルダーからプロジェクトを移動すると、元の共有権限または以前の共有権限に従います。
 
 ## プロジェクトの移動 {#move-project-in-folder}
 

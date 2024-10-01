@@ -4,10 +4,10 @@ description: ワークスペースで注釈を表示する方法。
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 21%
 
 ---
 
@@ -17,26 +17,16 @@ ht-degree: 100%
 
 ## 折れ線グラフまたは表で注釈を表示
 
-| 日付 | 外観 |
+| ビジュアライゼーショ <br/> タイプ | 説明 |
 | --- | --- |
-| **1 日** | ![ハイライト表示された注釈を含む折れ線グラフのビジュアライゼーション](assets/single-day.png)<p>注釈の上にポインタを合わせると、その詳細が表示されます。また、ペンアイコンを選択して注釈を編集することも、注釈を削除することもできます。<p> ![注釈の詳細と、注釈を編集または削除するオプション。](assets/hover.png) |
-| **日付範囲** | アイコンが変わり、その上にマウスポインターを置くと、日付範囲が表示されます。<p>![日付範囲注釈のアイコン](assets/multi-day.png)<p>折れ線グラフで選択すると、注釈のメタデータが表示され、それを編集または削除できます。            ![](assets/multi-hover.png)<p>テーブルでは、日付範囲のすべての日付にアイコンが表示されます。<p>![](assets/multi-day-table.png) |
-| **重複する注釈** | 複数の注釈が関連付けられている日のアイコンはグレーになります。<p>![重複する注釈の詳細  ](assets/grey.png)<p>灰色のアイコンの上にポインタを合わせると、重複するすべての注釈が表示されます。<p>![](assets/overlap.png) |
+| **Line **<br/>**Single Day** | 折れ線グラフのビジュアライゼーションで ![ 注釈 ](/help/assets/icons/Annotate.svg) を選択すると、注釈の詳細を含むポップアップが表示されます。<br/>![ 注釈 1 日 ](assets/annotation-single-day.png)<br/> 注釈を編集するには [ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
+| **Line **<br/>**Date range** | ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) を選択すると、注釈の詳細を含むポップアップと、日付範囲を示す行が下部に表示されます。<br/>![ 注釈範囲 ](assets/annotation-range.png) 注釈を編集するには、[ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
+| **フリーフォームテーブル** | フリーフォームテーブルでは、ビジュアライゼーションの右上にある注釈ボタンからすべての注釈にアクセスできます。 ![ 注釈 ](/help/assets/icons/Annotate.svg) を選択して、すべての注釈の（スクロールリスト）を表示します。<br/>![ 注釈テーブル ](assets/annotations-table.png)<br/> 注釈ごとに、![ 編集 ](/help/assets/icons/Edit.svg) を選択して [ 注釈ビルダーで注釈を編集 ](create-annotations.md#annotation-builder)、![ 削除 ](/help/assets/icons/Delete.svg) を選択して注釈を削除できます。 |
 
 {style="table-layout:auto"}
 
-## .pdf ファイルで注釈を表示
+## PDFーで注釈を表示する
 
-.pdf ファイルのアイコンにカーソルを合わせることができないため、このファイル（エクスポート後）では、パネルの下部に説明のメモが表示されます。次に例を示します。
+プロジェクトをPDFとしてダウンロードしたり、プロジェクトをPDFとして送信したりすると、注釈は、「注釈の概要」セクションにPDFで要約されます。
 
-![注釈の説明を示す.pdf ファイルのハイライト表示。](assets/ann-pdf.png)
-
-## トレンドのないデータを含む注釈の表示
-
-トレンドのないデータで、特定のディメンションに関連付けられた注釈が表示されることがあります。その場合は、右下隅の概要注釈にのみ表示されます。次に例を示します。
-
-![](assets/non-date.png)
-
-概要グラフは、トレンドのないフリーフォームテーブルおよび要約数値だけでなく、すべてのビジュアライゼーションのタイプの隅に表示されます。また、[!UICONTROL ドーナツ]、[!UICONTROL フロー]、[!UICONTROL フォールアウト]、[!UICONTROL コホート]などのビジュアライゼーションにも表示されます。
-
-![ビジュアライゼーションの概要グラフ](assets/ann-summary.png)
+![注釈の説明を示す.pdf ファイルのハイライト表示。](assets/annotations-pdf.png)

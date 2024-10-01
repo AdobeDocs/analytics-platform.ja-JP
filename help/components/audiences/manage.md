@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのオーディエンスの管理方�
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 68%
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 68%
 
 | UI 設定 | 定義 |
 | --- | --- |
-| フィルターを表示／非表示 | 左側のパネルで以下のフィルターの表示／非表示を切り替えることができます。 <ul><li>[!UICONTROL データビュー]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 更新頻度]</li><li>[!UICONTROL タグ]</li></ul> |
+| フィルターを表示／非表示 | 左側のパネルで次のフィルターの表示/非表示を切り替えることができます。 <ul><li>[!UICONTROL データビュー]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 更新頻度]</li><li>[!UICONTROL タグ]</li></ul> |
 | [!UICONTROL タイトルと説明] | オーディエンスの作成時に付与されるタイトルと説明。 |
 | [!UICONTROL データビュー] | このオーディエンスが作成されたデータビュー。 |
 | [!UICONTROL オーディエンスサイズ] | このオーディエンスのユーザーの合計数。 |

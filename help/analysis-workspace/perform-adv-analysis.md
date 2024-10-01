@@ -5,16 +5,16 @@ feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '71'
+ht-degree: 73%
 
 ---
 
 # アドバンス分析の実行
 
-以下で説明するアドバンス分析を実行する前に、[基本分析](/help/analysis-workspace/perform-basic-analysis.md)について理解する必要があります。
+以下に説明するように、アドバンス分析レポートおよびビジュアライゼーションの作成を開始する前に、[ 基本分析 ](/help/analysis-workspace/perform-basic-analysis.md) を理解しておく必要があります。
 
 アドバンス分析では、[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)図、[アトリビューション](/help/analysis-workspace/c-panels/attribution.md)、[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)図、[ディメンションの内訳](/help/components/dimensions/t-breakdown-fa.md)などの機能を活用します。
 

@@ -4,10 +4,10 @@ description: データ準備を使用してレポートスイートを様々な�
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 57%
+source-wordcount: '1321'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analyticsのお客様は、[ 接続 ](https://experienceleague.
 | eVar1 = 検索語句 | eVar1 = ビジネスユニット |
 | eVar2 = 顧客カテゴリ | eVar2 = 検索語句 |
 
-簡潔にするために、両方のレポートスイートで定義されている eVar はこれらのみということにします。
+説明を簡単にするために、両方のレポートスイートで定義されている eVar はこれらのみであると仮定します。
 
 さらに、次のアクションを実行するとします。
 

@@ -5,10 +5,10 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Analysis Workspace やモバイルスコアカードと同様に、ガイド付�
 
 ## アクセス
 
-組織でガイド付き分析がプロビジョニングされている場合は、Customer Journey Analytics のホームページからアクセスできます。
+Customer Journey Analyticsホームページからガイド付き分析にアクセスできます。
 
 1. ホームページで「**[!UICONTROL ガイド付き分析]**」をクリックすると、[使用状況トレンドビュー](types/usage.md)が直接表示されます。
 

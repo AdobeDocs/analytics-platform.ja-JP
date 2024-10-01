@@ -4,23 +4,18 @@ title: フィルターのコピー
 feature: Filters
 exl-id: a64737bd-5d5b-4e85-95ff-eb1d90b95e18
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 52752beb746dabdf0e604fa28ea373d0106de8a2
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 12%
+source-wordcount: '99'
+ht-degree: 4%
 
 ---
 
 # フィルターのコピー
 
-新しいフィルターを作成する場合、作成するフィルターに近い既存のフィルターをコピーして、コピーしたバージョンを変更する方が簡単な場合があります。
+[ フィルターマネージャー ](manage-filters.md) では、フィルターをコピーできます。 フィルターのコピーは、既存のフィルターを若干変更したバージョンを作成する場合や、所有しておらず編集できないフィルターを再定義する場合に便利です。
 
-フィルターマネージャーでフィルターをコピーするには：
+1. [ フィルターマネージャー ](manage-filters.md) で、コピーするフィルターを 1 つ以上選択します。
+1. アクションバーから「![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]**」を選択します。
 
-1. Customer Journey Analyticsで、「**[!UICONTROL コンポーネント]**」タブを選択し、「**[!UICONTROL フィルター]**」を選択します。
-
-1. フィルターマネージャーで、コピーするフィルターを選択します。
-
-   フィルター管理ツールバーが表示されます。
-
-1. 「**[!UICONTROL コピー]**」を選択します。
+フィルターがコピーされ、元のフィルターと同じ名前でフィルターリストに表示されますが、（コピー）が追加されます。

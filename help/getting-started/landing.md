@@ -4,10 +4,10 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
+source-git-commit: 373d0c9989fb692da23efe371c65344093801140
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 99%
+source-wordcount: '496'
+ht-degree: 52%
 
 ---
 
@@ -15,9 +15,11 @@ ht-degree: 99%
 
 Customer Journey Analytics 用のランディングページには、[!DNL Analysis Workspace]、プロジェクトマネージャーのホームページ、カスタマージャーニーデータをより効果的に管理するのに役立つラーニングセクションが用意されています。
 
-+++ Customer Journey Analyticsの概要についてはビデオを参照してください。
++++ 概要については、ビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+
+{{videoaa}}
 
 +++
 
@@ -27,104 +29,119 @@ Customer Journey Analytics のランディングページは、「プロジェ�
 
 「**[!UICONTROL ラーニング]**」タブには、実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。
 
-## 「[!UICONTROL プロジェクト]」タブのナビゲート {#navigate-projects}
+>[!BEGINTABS]
 
-[!UICONTROL プロジェクト]は、[!UICONTROL ワークスペース]ホームページとして機能します。「プロジェクト」タブには、会社フォルダー、作成した個人用フォルダー、プロジェクトおよびモバイルスコアカードが表示されます。このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。詳しくは、[Analytics のフォルダーについて](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)を参照してください。
+>[!TAB プロジェクト]
 
-![すべてランディング](assets/landing-all2.png)
+![ プロジェクトのランディングページ ](assets/landing-projects.png)
 
-**[!UICONTROL プロジェクト]**&#x200B;は、自分が作成した、または他のユーザーが作成して自身と作成および共有したデータコンポーネント、テーブル、ビジュアライゼーションを組み合わせたカスタムのデザインです。[!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
+>[!TAB  ラーニング ]
+
+![ ラーニングランディングページ ](assets/landing-learning.png)
+
+
+>[!ENDTABS]
+
+## プロジェクト
+
+[!UICONTROL プロジェクト]は、[!UICONTROL ワークスペース]ホームページとして機能します。「**[!UICONTROL プロジェクト]**」タブには、会社フォルダー、作成した個人用フォルダー、Workspace プロジェクト、モバイルスコアカードが表示されます。 このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。詳しくは、[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を参照してください。
+
+
+**[!UICONTROL プロジェクト]**&#x200B;は、自分で作成したり、他のユーザーが作成して共有したりしたデータコンポーネント、テーブルおよびビジュアライゼーションを組み合わせてカスタマイズされたデザインです。[!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
 
 >[!NOTE]
 >
 >次の設定の一部は、セッション中およびセッション間で保持されます。例えば、選択したタブ、選択したフィルター、選択した列および列の並べ替え方向があります。検索結果は永続的ではありません。
 
-### テーブル列のカスタマイズ
+詳しくは、[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を参照してください。
 
-列の幅をカスタマイズするには、各列を区切る縦棒グラフをドラッグします。
+<!--
 
-プロジェクトのリストから列を追加または削除するには、右上の列アイコン（![すべてランディング](assets/select-column.png)）をクリックしてから、列タイトルを選択または選択解除します。
+### Customize table columns
 
-使用できる列は次のとおりです。
+To customize column widths, drag the vertical bar that separates each column. 
 
-| 列名 | 説明 |
+To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles. 
+
+The available columns are:
+
+| Column name | Description | 
 |---------|----------|
-| [!UICONTROL **名前**] | プロジェクトの名前を識別します。 |
-| [!UICONTROL **タイプ**] | このタイプが Workspace プロジェクト、モバイルスコアカードまたはフォルダーのいずれであるかを示します。 |
-| [!UICONTROL **タグ**] | プロジェクトにタグ付けして、グループに整理します。 |
-| [!UICONTROL **スケジュール済み**] | プロジェクトがスケジュール済みである場合は「[!UICONTROL オン]」、そうでない場合は「[!UICONTROL オフ]」に設定します。「[!UICONTROL オン]」リンクをクリックすると、スケジュール済みプロジェクトに関する情報を表示できます。また、プロジェクトの所有者である場合は[プロジェクトスケジュールを編集](/help/analysis-workspace/export/t-schedule-report.md)できます。 |
-| [!UICONTROL **プロジェクトの役割**] | プロジェクトの役割（自分がプロジェクトの所有者であるかどうか、およびプロジェクトの編集または複製の権限を持っているかどうか）を識別します。 |
-| [!UICONTROL **レポートスイート**] | プロジェクトに関連付けられたレポートスイートを識別します。<br>パネル内のテーブルとビジュアライゼーションは、パネルの右上で選択されたレポートスイートからデータを取得します。また、レポートスイートでは、左パネルで使用できるコンポーネントも決定します。プロジェクト内では、分析の使用例に応じて、1 つまたは複数のレポートスイートを使用できます。レポートスイートのリストは関連度に基づいて並べ替えられます。アドビは、現在のユーザーがスイートを使用した最近の頻度と、組織内でスイートが使用された頻度に基づいて関連度を定義します。 |
-| [!UICONTROL **所有者**] | プロジェクトを作成した人物を識別します。 |
-| [!UICONTROL **共有先**] | プロジェクトの現在の共有先を表示します。 |
-| [!UICONTROL **最終変更日時**] | プロジェクトが最後に変更された日時。 |
-| [!UICONTROL **前回開いた日時**] | 現在プロジェクトページを表示しているユーザーが、プロジェクトが最後に開いた日付を識別します。 |
-| [!UICONTROL **前回の使用**] | 組織内のユーザーがプロジェクトを最後に開いた日時を示すことで、プロジェクトが組織内のユーザーにとって有用かどうかを判断するのに役立ちます。<p>この列を表示する際は、次の点を考慮してください。</p><ul><li>使用状況に関する情報は、2023年9月より提供されます。</li><li>この列は、システム管理者のみが使用できます。</li></ul> |
-| [!UICONTROL **プロジェクト ID**] | プロジェクトのデバッグに使用できます。 |
-| [!UICONTROL **最長の日付範囲**] | 日付範囲を長くすると、プロジェクトの複雑さが増し、処理や読み込みにかかる時間が長くなる場合があります。 |
-| [!UICONTROL **クエリ数**] | プロジェクトの読み込み時に Analytics に対して行われたリクエストの合計数です。プロジェクトのクエリ数が増えると、プロジェクトの複雑さが増し、処理や読み込みにかかる時間が長くなる場合があります。このデータは、プロジェクトが読み込まれた後、またはスケジュールされたプロジェクトが送信された後にのみ使用できます。 |
-| [!UICONTROL **場所**] | プロジェクトが配置されているフォルダーを表示します。 |
+| [!UICONTROL **Name**] | Identifies the name of the project. |
+| [!UICONTROL **Type**] | Indicates whether this type is a Workspace project, a Mobile scorecard, or a folder. |
+| [!UICONTROL **Tags**] | Tags projects to organize them into groups. | 
+| [!UICONTROL **Scheduled**] | Set to [!UICONTROL On] when a project is scheduled or [!UICONTROL Off] when it is not. Clicking the [!UICONTROL On] link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analysis-workspace/export/t-schedule-report.md) if you are the project owner. |
+| [!UICONTROL **Project role**] | Identifies the project roles: whether you are the project Owner and whether you have permissions to Edit or Duplicate the project. |
+| [!UICONTROL **Report suite**] | Identifies the Report Suites that are associated with the project.<br>Tables and visualizations within a panel derive data from the report suite selected in the top right of the panel. The report suite also determines what components are available in the left rail. Within a project, you can use one or many report suites depending on your analysis use cases. The list of report suites is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
+| [!UICONTROL **Owner**] | Identifies the person who created the project. |
+| [!UICONTROL **Shared With**] | Shows who the project is currently shared with. |
+| [!UICONTROL **Last Modified**] | The date and time when the project was last modified. |
+| [!UICONTROL **Last Opened**] | Identifies the date that a project was last opened by the user who is currently viewing the Projects page. |
+| [!UICONTROL **Last Used**] | Helps determine whether a project is valuable to users in your organization by showing the date and time when the project was last opened by any user within the organization.<p>Consider the following when viewing this column:</p><ul><li>Usage information is available starting in September 2023.</li><li>This column is available only to system administrators.</li></ul> |
+| [!UICONTROL **Project ID**] | Can be used for debugging projects. |
+| [!UICONTROL **Longest Date Range**] | Longer date ranges increase project complexity and may increase processing and load times. |
+| [!UICONTROL **Number of queries**] | The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent. |
+| [!UICONTROL **Location**] | Shows the folder where the project is located. |
 
-### プロジェクトページのその他の UI 要素
+### Other UI elements on the Projects page
 
-| UI 要素 | 定義 |
+| UI element | Definition |
 | --- | --- |
-| 環境設定を編集 | [!UICONTROL チュートリアルを表示]して、[ユーザー環境設定を編集](/help/analysis-workspace/user-preferences.md)できます。 |
-| [!UICONTROL 新規作成] | Workspace プロジェクトやモバイルスコアカードを作成したり、会社テンプレートを開いたりできるプロジェクトモーダルを開きます。 |
-| [!UICONTROL 表示を減らす<br> さらに表示] | バナーの表示／非表示を切り替えます。![トップバナー](assets/top-banner.png) |
-| [!UICONTROL ワークスペースプロジェクト] | デザインおよび作成用の空の [Workspace プロジェクト](/help/analysis-workspace/home.md)を作成します。 |
-| [!UICONTROL モバイルスコアカード] | デザインおよび作成用の空の[モバイルスコアカード](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=ja)を作成します。 |
-| [!UICONTROL トレーニングチュートリアルを開く] | ステップバイステップのチュートリアルで新しいスタータープロジェクトの作成プロセスをガイドする Workspace トレーニングチュートリアルを開きます。 |
-| [!UICONTROL リリースノートを開く] | 最新の Adobe Experience Cloud リリースノートの Adobe Analytics セクションを開きます。 |
-| フィルターアイコン | タグ、レポートスイート、所有者、タイプおよびその他のフィルター（自分が所有、自分と共有、お気に入りおよび承認済み）でフィルタリングできます |
-| 検索バー | テーブルのすべての列を検索します。 |
-| 選択ボックス | 1 つまたは複数のプロジェクトを選択して、実行可能なプロジェクト管理アクションを表示します（**削除**、**共有**、**名前を変更**、**コピー**、**ピン留めを解除**、**上へ移動**、**下へ移動**、**タグ**、**承認**、**CSV を書き出し**&#x200B;および&#x200B;**移動**）。リストされたすべてのアクションを実行する権限がない可能性があります。 |
-| [!UICONTROL お気に入り] | フィルターとして使用できるお気に入りのプロジェクトまたはフォルダーの横に星を追加します。 |
-| [!UICONTROL 名前] | プロジェクトの名前を識別します。 |
-| ピンアイコン | 項目をピン留めすると、リストの上部に常に表示されますが、順番を植えまたは下に移動させることで順番を再調整できます。省略記号オプションメニューを使用して、リストの&#x200B;**上へ移動**&#x200B;または&#x200B;**下へ移動**&#x200B;を選択します。 |
-| 情報 (i) アイコン | プロジェクトに関する情報（タイプ、プロジェクトの役割、所有者、説明および共有相手）を表示します。また、このプロジェクトを[編集または複製](/help/analysis-workspace/curate-share/share-projects.md)できるユーザーも示します。 |
-| 省略記号（...） | 実行できるプロジェクト管理アクション（**削除**、**共有**、**名前を変更**、**コピー**、**ピン留めを解除**、**上へ移動**、**下へ移動**、**タグ**、**承認**、**CSV を書き出し**&#x200B;および&#x200B;**移動**）を表示します。リストされたすべてのアクションを実行する権限がない可能性があります。 |
-| 表示：フォルダーとプロジェクトまたはすべてのプロジェクト | テーブルの表示設定を変更して、フォルダー組織に従ってフォルダーおよびプロジェクトを表示するか、**または**&#x200B;未整理のリストのすべてのプロジェクトを表示します。 |
-| &lt;（戻るボタン） | Workspace プロジェクトまたはレポートの最新のランディングページ設定に戻ります。ランディングページを離れた時点でのページ設定は、戻った際にも保持されます。 |
+| Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analysis-workspace/user-preferences.md). |
+| [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
+| [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
+| [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
+| [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
+| [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
+| Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
+| Search bar | Searches all columns in the table. |
+| Selection box | Selects one or more projects to display the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
+| [!UICONTROL Favorites] | Adds a star next to a favorite project or folder that can be used as a filter. |
+| [!UICONTROL Name] | Identifies the name of the project. |
+| Pin icon | Pins items so they always appear at the top of your list but you can re-adjust the order by moving them up or down in the order. Use the ellipsis option menu and select **Move Up** or **Move down** in the list. |
+| Info (i) icon | Displays the following information about a project: Type, Project Role, Owner, Description, and who it is shared with. It also indicates who can [edit or duplicate](/help/analysis-workspace/curate-share/share-projects.md) this project. |
+| Ellipsis (...) | Displays the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
+| SHOW: Folders & Projects or All Projects | Changes the view setting on the table to show folders and projects according to your folder organization **or** show all of your projects in an unorganized list. |
+| < (Back button) | Returns you to your most recent landing page configuration in a Workspace project or a report. The page configuration you had when you left the landing page will persist when you return. |
 
-## 「学習」タブを使用 {#navigate-learning}
+-->
+
+## Learning
 
 学習ページには、実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。
 
 Customer Journey Analytics の学習ページを使用して、以下を学びます。
 
-* CJA の初級、中級、上級の機能とユースケース
-* Adobe Analytics から CJA によりシームレスに移行する方法
+* 初級、中級、または上級のCustomer Journey Analyticsの機能とユースケース
+* Adobe AnalyticsからCustomer Journey Analyticsへのシームレスな移行方法
 
-### 学習ページへのアクセス
+学習コンテンツにアクセスするには：
 
-1. Customer Journey Analytics で、[!UICONTROL **Workspace**]／[!UICONTROL **学習**]&#x200B;を選択します。
+* Customer Journey Analyticsで、上部のメニューから「[!UICONTROL **Workspace**]」を選択し、左のパネルから「[!UICONTROL **ラーニング**]」を選択します。
 
-### 学習ページの機能
+### 機能
 
-* **コンテンツをフィルタリング：**&#x200B;左側のパネルの「フィルター」アイコンを使用すると、学習コンテンツをエクスペリエンスレベル（初級、中級、上級）およびコンテンツタイプ（ドキュメント、ビデオ、ツアーとチュートリアル）ごとにフィルタリングできます。
-* **進行状況を追跡：**&#x200B;コンテンツを選択すると、「**[!UICONTROL 表示済み]**」タグが表示されます。このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。「**[!UICONTROL 表示済み]**」タグを選択して、コンテンツの一部から削除できます。
-* **追加コンテンツを表示：**&#x200B;ビデオの表示中に「**[!UICONTROL 詳細情報]**」ボタンを選択すると、Experience League の関連ドキュメントコンテンツが表示されます。または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
+学習ページには次の機能があります
+
+* **コンテンツをフィルター：** ![ フィルター ](/help/assets/icons/Filter.svg) を使用して、**[!UICONTROL タイプ]** （**[!UICONTROL ドキュメント]**、**[!UICONTROL ビデオ]**、**[!UICONTROL ツアーとチュートリアル]**）および **[!UICONTROL エクスペリエンスレベル]** （**[!UICONTROL 初心者]**、**[!UICONTROL 中級]**、または **[!UICONTROL 詳細]**）で学習コンテンツをフィルタリングします。
+* **進行状況の追跡：** コンテンツの一部を選択すると、![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Viewed]** タグが表示されます。 このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** タグを選択すると、コンテンツの一部から削除できます。
+* **その他のコンテンツを表示：** ビデオを表示しているときに、「**[!UICONTROL 詳細情報]**」を選択すると、Experience League上の関連するドキュメントコンテンツを表示できます。 または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
    * **[!UICONTROL YouTube を訪問]：** Analysis Workspace の完全な YouTube プレイリストを表示します。
-   * [!UICONTROL **Experience League を訪問**]：Experience League で CJA ドキュメントの完全なスイートを表示します。
-* **新規ユーザー向けの基礎：**&#x200B;新規ユーザーには、[!UICONTROL Workspace の基本]ツアーをお勧めします。このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。このツアーは、パネルヘッダーのツールチップポップオーバーを使用して、Workspace で任意の時間に再度開始することもできます。
+   * [!UICONTROL **Experience Leagueにアクセス**]:Experience Leagueに関するCustomer Journey Analyticsドキュメントの完全なスイートを表示します。
+* **新規ユーザー向けの基本：** 新規ユーザー向けに、[!UICONTROL Workspaceの基本の学習 ] ツアーをお勧めします。 このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。このツアーは、[ フリーフォームパネル ](/help/analysis-workspace/c-panels/freeform-panel.md) または [ 空のパネル ](/help/analysis-workspace/c-panels/blank-panel.md) ヘッダーのツールヒントを使用して、Workspaceでいつでも再起動できます。
 
-## ランディングページの設定 {#set-landing}
+## 優先ランディングページ
 
-ユーザーは好みのランディングページを設定できます。
+好みのランディングページを設定できます。 詳しくは、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#general-preferences) を参照してください。
 
-1. Analytics／[!UICONTROL コンポーネント]／[!UICONTROL 環境設定]／[!UICONTROL 一般]に移動します。
-1. 希望するランディングページを確認します。
+<!--
+## Landing page FAQ {#landing-faq}
 
-   ![ランディングページを設定](assets/landing-pref.png)
-
-## ランディングページに関する FAQ {#landing-faq}
-
-| 質問 | 回答 |
+| Question | Answer |
 | --- | --- |
-| ベータ版プログラム UI での作業内容は、実稼動用の[!UICONTROL ワークスペース]エクスペリエンスに引き継がれますか。 | はい、ベータ版で行った作業はすべて古い／現在の[!UICONTROL ワークスペース]エクスペリエンスに引き継がれます。 |
-| ピン留めできるプロジェクトに最大数はありますか？ | いいえ。固定できるプロジェクトの数に制限はありません。 |
-| 管理者は、このランディングページをユーザーに指定できますか？ | いいえ。管理者は、ユーザーの代わりにランディングページを指定することはできません。個々のユーザーは、自分で切り替えをオンにする必要があります。 |
-
-<!-- | Are all reports that currently exist in [!DNL Reports & Analytics] still available? | No, the following reports were phased out, based on overall usage data: <ul><li>Any custom eVars/props/events/classifications<li>My Recommended Reports</li><li>Hourly/Daily/Weekly/Monthly/Quarterly/Yearly unique visitors</li><li>DailyWeekly/Monthly/Quarterly/Yearly unique customers</li><li>Action name depth</li><li>Action name summary</li><li>Add dashboard</li><li>Age</li><li>Audio support</li><li>Billing information</li><li>Clicks to page</li><li>Color depth</li><li>Cookie support</li><li>Cookies</li><li>Connection types</li><li>Creative elements</li><li>Credit card type</li><li>Cross sell</li><li>Custom event funnels</li><li>Custom links</li><li>Customer ID</li><li>Day of week</li><li>Entry action name</li><li>Exit action name</li><li>Exit links</li><li>Fallout</li><li>File downloads</li><li>Find in store</li><li>Full paths</li><li>Gender</li><li>Hit ype VISTA rule</li><li>Image support</li><li>Java</li><li>JavaScript</li><li>JavaScript version</li><li>Manage bookmarks</li><li>Manage dashboards</li><li>Monitor color depth</li><li>Monitor resolutions</li><li>Newsletter signups</li><li>Next action name</li><li>Next action name flow</li><li>Null searches</li><li>Operating system</li><li>Order review</li><li>Page of day</li><li>Pages not found</li><li>Pathfinder</li><li>Path length</li><li>Previous action name</li><li>Previous action name flow</li><li>Product activity</li><li>Product cost</li><li>Product department</li><li>Product inventory category</li><li>Product name</li><li>Product reviews</li><li>Product season</li><li>Product shares</li><li>Product zooms</li><li>Reload</li><li>Searches</li><li>Servers</li><li>Single page visits</li><li>Shipping information</li><li>Site hierarchy</li><li>Social mentions</li><li>Time of day</li><li>Time spent on action name</li><li>Video support</li><li>Visitor state</li></ul> | 
+| Does the work I do in the beta program UI carry over to the production [!UICONTROL Workspace] experience? | Yes, any work done in the beta carries over to the old/current [!UICONTROL Workspace] experience. |
+| Is there a maximum number of projects I can pin? | No, there is no limit on the number of projects you can pin. |
+| Can admins designate this landing page for their users? | No, admins cannot designate the landing page on behalf of users. Individual users must turn on the toggle themselves. |
+| Are all reports that currently exist in [!DNL Reports & Analytics] still available? | No, the following reports were phased out, based on overall usage data: <ul><li>Any custom eVars/props/events/classifications<li>My Recommended Reports</li><li>Hourly/Daily/Weekly/Monthly/Quarterly/Yearly unique visitors</li><li>DailyWeekly/Monthly/Quarterly/Yearly unique customers</li><li>Action name depth</li><li>Action name summary</li><li>Add dashboard</li><li>Age</li><li>Audio support</li><li>Billing information</li><li>Clicks to page</li><li>Color depth</li><li>Cookie support</li><li>Cookies</li><li>Connection types</li><li>Creative elements</li><li>Credit card type</li><li>Cross sell</li><li>Custom event funnels</li><li>Custom links</li><li>Customer ID</li><li>Day of week</li><li>Entry action name</li><li>Exit action name</li><li>Exit links</li><li>Fallout</li><li>File downloads</li><li>Find in store</li><li>Full paths</li><li>Gender</li><li>Hit ype VISTA rule</li><li>Image support</li><li>Java</li><li>JavaScript</li><li>JavaScript version</li><li>Manage bookmarks</li><li>Manage dashboards</li><li>Monitor color depth</li><li>Monitor resolutions</li><li>Newsletter signups</li><li>Next action name</li><li>Next action name flow</li><li>Null searches</li><li>Operating system</li><li>Order review</li><li>Page of day</li><li>Pages not found</li><li>Pathfinder</li><li>Path length</li><li>Previous action name</li><li>Previous action name flow</li><li>Product activity</li><li>Product cost</li><li>Product department</li><li>Product inventory category</li><li>Product name</li><li>Product reviews</li><li>Product season</li><li>Product shares</li><li>Product zooms</li><li>Reload</li><li>Searches</li><li>Servers</li><li>Single page visits</li><li>Shipping information</li><li>Site hierarchy</li><li>Social mentions</li><li>Time of day</li><li>Time spent on action name</li><li>Video support</li><li>Visitor state</li></ul> | 
 -->

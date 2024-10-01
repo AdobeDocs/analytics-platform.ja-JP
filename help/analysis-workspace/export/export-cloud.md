@@ -5,7 +5,7 @@ title: クラウドへのCustomer Journey Analyticsレポートの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '2205'
 ht-degree: 4%

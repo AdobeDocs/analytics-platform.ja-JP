@@ -5,16 +5,16 @@ title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 67%
 
 ---
 
 # 共有可能なリンクの作成
 
-Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。一部のリンクタイプでは、プロジェクトにアクセスする前に受信者が Adobe Analytics にログインする必要がありますが、その他のリンクタイプでは必要ありません。
+Analysis Workspace には、プロジェクトまたはプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有する多くの方法が用意されています。一部のリンクタイプは、受信者がプロジェクトにアクセスする前にCustomer Journey Analyticsにログインする必要がありますが、そうでないリンクタイプもあります。
 
 ## 他の Workspace ユーザーと共有するプロジェクトリンクの取得 {#project-link}
 
@@ -32,8 +32,8 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 また、パネルや個々のビジュアライゼーションなど、プロジェクトの特定の部分へのリンクを共有することもできます。これは、イントラリンクと呼ばれる場合があります。これは、プロジェクト内の主要なインサイトにユーザーの注意を引くのに役立ちます。
 
-* 任意のパネルヘッダーから、「**[!UICONTROL パネルのリンクを取得]**」を右クリックします
-* 任意のテーブルまたはビジュアライゼーションのヘッダーから、「**[!UICONTROL ビジュアライゼーションリンクを取得]**」を右クリックします
+* パネルヘッダーのコンテキストメニューから、「**[!UICONTROL パネルリンクを取得]**」を選択します
+* ビジュアライゼーションヘッダーのコンテキストメニューから、「**[!UICONTROL ビジュアライゼーションリンクを取得]**」を選択します
 
 リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja)します。
 

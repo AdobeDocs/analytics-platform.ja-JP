@@ -3,35 +3,34 @@ description: タグ、データビュー、所有者、その他のフィルタ�
 title: 計算指標をフィルタリング
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 26%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
-# 計算指標をフィルタリング
+# 計算指標のリストのフィルタリング
 
-タグ、所有者およびその他のフィルター（すべてを表示、自分が所有、自分と共有、お気に入りおよび承認済み）でフィルタリングします。
+計算指標のリストをフィルタリングできます。 計算指標に対してフィルターを使用すると、使用可能な計算指標を簡単に見つけたり、[ 計算指標マネージャー ](cm-manager.md) から計算指標を管理したりできます。
 
-フィルタリングを使用すると、セグメントパネルで計算指標を簡単に検索できます。
 
-1. Customer Journey Analyticsで、「**[!UICONTROL コンポーネント]**」タブを選択し、「**[!UICONTROL 計算指標]**」を選択します。
+計算指標のリストをフィルタリングするには：
 
-1. 計算指標マネージャーで、「**[!UICONTROL フィルター]**」アイコン（![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)）をクリックします。
+1. ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルを開きます。 「フィルター」リストにスペースが必要な場合は、もう一度 ![ フィルター ](/help/assets/icons/Filter.svg) を選択してパネルを閉じることができます。
+1. 使用可能ないずれかの [ フィルターセクション ](#filter-sections) からフィルターを選択します。
 
-   ![ フィルターアイコンと使用可能なフィルター（タグ、レポートスイート、所有者など）を表示する計算指標マネージャー。](assets/filtering.png)
+   >[!INFO]
+   >
+   >*項目* [ 計算指標リスト ](cm-manager.md#filters-list) に表示されるフィルター項目を参照します。
+   > 
 
-1. 次のフィルターを使用できます。
+## フィルターセクション
 
-   | フィルター名 | 説明 |
-   |---|---|
-   | タグ | 特定の [ タグ ](/help/components/calc-metrics/cm-workflow/cm-tagging.md) を使用して計算指標をフィルタリングできます。 「タグ」列はデフォルトで表示されます。 |
-   | 所有者 | 所有者別に計算指標をフィルタリングできます。 |
-   | データビュー | データビューで計算指標をフィルタリングできます。 |
-   | その他のフィルター／すべてを表示 | **（管理者のみ）** すべての計算指標、その所有者および最終変更日を表示します。 |
-   | その他のフィルター／自分が所有 | 所有するすべての計算指標を表示します。 |
-   | その他のフィルター/自分と共有 | 他のユーザーが [ 共有 ](/help/components/calc-metrics/cm-workflow/cm-sharing.md) しているすべての計算指標を表示します。 |
-   | その他のフィルター／お気に入り | [ お気に入り ](/help/components/calc-metrics/cm-workflow/cm-favorite.md) としてマークしたすべての計算指標を表示します。 |
-   | その他のフィルター／承認済み | すべての公式に [ 承認された ](/help/components/calc-metrics/cm-workflow/cm-approving.md) 計算指標を表示します。 |
-   | 計算指標の検索 | 名前で計算指標を検索できます。 |
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{otherfiltersfiltersection}}
+
+
+[ 計算指標リスト ](cm-manager.md#filters-list) は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、「アクティブなフィルターバー [ に表示さ ](cm-manager.md#active-filter-bar) ます。

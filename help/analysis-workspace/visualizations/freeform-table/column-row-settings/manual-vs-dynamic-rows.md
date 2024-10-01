@@ -4,14 +4,14 @@ description: テーブルの動的および静的ディメンション項目の�
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
-# フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目
+# フリーフォームテーブルの動的および静的ディメンション項目
 
 フリーフォームテーブルでは、行と列に様々なコンポーネント値を含めることができます。これらの値は、作成する分析に応じて、動的（時間に応じて変更）または静的（時間に応じて変更しない）にできます。
 

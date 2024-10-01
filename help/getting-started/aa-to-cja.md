@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
+source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
@@ -90,7 +90,7 @@ Adobe Analytics セグメント（Customer Journey Analytics では[!UICONTROL �
 
 * Customer Journey Analytics データビューの機能を利用すると、Customer Journey Analytics 内で指標とディメンションをはるかに柔軟に定義できます。例えば、ディメンションの値を使用して指標の定義を作成できます。[詳細情報](/help/use-cases/data-views/data-views-usecases.md)
 
-* Adobe Analytics でカスタムカレンダーを定義した場合、Customer Journey Analytics 内でも同様の[カスタムカレンダー機能](/help/components/date-ranges/custom-date-ranges.md)を使用できます。カレンダーが正しく定義されていることを確認してください。
+* Adobe Analytics でカスタムカレンダーを定義した場合、Customer Journey Analytics 内でも同様の[カスタムカレンダー機能](/help/components/date-ranges/overview.md)を使用できます。カレンダーが正しく定義されていることを確認してください。
 
 * Customer Journey Analytics では、カスタム訪問／セッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。この機能は、モバイルデータセットで特に役に立つ可能性があります。
 

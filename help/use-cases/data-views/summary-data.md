@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analyticsでの概要データの使用
-description: 概要データをCustomer Journey Analyticsに取り込む方法の詳細をすべて説明することを使用します
+description: 概要データをCustomer Journey Analyticsに取り込む方法の詳細を説明するユースケース
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '5187'
+source-wordcount: '5188'
 ht-degree: 8%
 
 ---
@@ -512,7 +512,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          ![ 売上高の概要データ ](../assets/revenue-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributionLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributionLastTouch]****[!UICONTROL Last Touch]**」を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]**」を選択します。
             1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンリストから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. **[!UICONTROL 形式]** ドロップダウンリストから「**[!UICONTROL 通貨]**」を選択します。
@@ -522,7 +522,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          ![ 注文概要データ ](../assets/orders-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributionLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributionLastTouch]****[!UICONTROL Last Touch]**」を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]**」を選択します。
             1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンリストから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. **[!UICONTROL 形式]** ドロップダウンリストから「**[!UICONTROL 10 進]**」を選択します。

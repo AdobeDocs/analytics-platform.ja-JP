@@ -4,16 +4,17 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
 # リファレンス - 基本的な関数
 
-計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
+
+[ 計算指標ビルダー ](cm-workflow/cm-build-metrics.md) では、統計関数および数学関数を適用できます。
 
 ここでは、関数とその定義をアルファベット順に示します。
 
@@ -21,9 +22,12 @@ ht-degree: 100%
 >
 >[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
 
+
 ## 表関数と行関数
 
 表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
+
+
 
 ## 絶対値（行）
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 累乗演算子
 
-<pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*… (y 回)
-</pre>
+
+pow （x,y） = x<sup>y</sup> = x *x* x*...（y 回）
+
 
 ## 平均値（表）
 
@@ -313,7 +317,7 @@ VARIANCE(metric)
 
 この計算をすべての数字に対して実行し、1 つの合計を求めます。その合計を列内にある数字の個数で除算します。その結果が列の平方偏差です。平方偏差は単一の数字です。ただし、数字の列として表示されます。
 
-例えば、3 つの数字からなる列があるとします。
+3 項目列の場合：
 
 1
 

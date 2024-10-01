@@ -4,31 +4,32 @@ description: フィルター作成ユーザーインターフェイスについ�
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 55%
+source-wordcount: '262'
+ht-degree: 3%
 
 ---
 
 # フィルターの作成
 
-Workspaceでは、複雑さの程度、現在のプロジェクトのみに適用するか、すべてのプロジェクトに適用するかなどに応じて、様々なタイプのフィルターを作成できます。
+Customer Journey Analyticsでは、様々なタイプのフィルターを作成できます。  選択するタイプは、フィルターの複雑さと、フィルターを現在のWorkspace プロジェクトのみに適用するか、すべてのプロジェクトに適用するかによって異なります。 フィルターは、Customer Journey Analyticsのメインインターフェイスで直接作成することも、Workspace プロジェクトで作業する場合に作成することもできます。
 
-使用可能なフィルタータイプの概要と、それらの作成方法に関する情報へのリンクを次に示します。
+デフォルトでは、フィルターを作成できるのは管理者のみです。 ユーザーには、他のコンポーネント（注釈、計算指標など）を表示する場合と同様に、フィルターを表示する権限があります。
 
-| フィルタータイプ | 作成場所 | 適用対象となる場所 | 使用するタイミング |
-| --- | --- | --- | --- |
-| コンポーネントリストフィルター | 「+」をクリックすると、[フィルタービルダー](/help/components/filters/filter-builder.md)が表示されます。 | すべてのワークスペースプロジェクト | より複雑なフィルターの場合、順次フィルター |
-| クイックフィルター | [クイックフィルタービルダー](/help/components/filters/quick-filters.md) | プロジェクトのみですが、セグメントリストに保存して追加できます。 | （ドラッグ&amp;ドロップで）アドホックな単一ルールフィルターに使用したり、（フィルターアイコンをクリックして）複数のルールを追加または編集したりできます |
-| フォールアウト分析のフィルター | Analysis Workspace の [フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 個々のフォールアウトビジュアライゼーションへ | タッチポイントからのフィルターの作成、タッチポイントとしてのフィルターの追加、様々なフィルターにわたる主なワークフローの比較 |
-| 計算指標ベースのフィルター | [計算指標ビルダー](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | 個々の計算指標へ | 指標定義内でのフィルターの適用 |
+ただし、管理者は、{6 ]**Admin Console**[!UICONTROL  を介して、**[!UICONTROL CJA Workspace アクセスの権限の編集**[!UICONTROL  の ]**レポートツール ](/help/technotes/access-control.md#user-level-access) の]** フィルターの作成権限をユーザーに付与できます。[
 
-フリーフォームプロジェクトにフィルターを適用する場合は、他のいくつかの方法も使用できます。
+フィルターは、次の方法で作成できます。
 
-| アクション | 説明 |
-| --- | --- |
-| 選択範囲からフィルターを作成 | インラインフィルターを作成します。このフィルターは、開いているプロジェクトにのみ適用され、Customer Journey Analyticsーのフィルターとして保存されません。<p> 1. フィルターの対象とするテーブル行を選択します。2. 選択範囲を右クリックします。3. 「*選択内容からフィルターを作成*」をクリックします。 |
-| ワークスペース[!UICONTROL コンポーネント]／[!UICONTROL 新しいフィルター] | フィルタービルダーを表示します。フィルタリングについて詳しくは、[フィルタービルダー](/help/components/filters/filter-builder.md)を参照してください。 |
-| 共有／プロジェクトを共有または共有／プロジェクトデータをキュレート | [ プロジェクトの共有 ](/help/analysis-workspace/curate-share/share-projects.md) または [ プロジェクトのキュレーション ](/help/analysis-workspace/curate-share/curate.md) で、プロジェクトに適用するフィルターが受信者の共有分析でどのように使用できるかを説明します。 |
-| フィルターをディメンションとして使用 | 次のビデオでは、フィルターをディメンションとして使用する方法を説明します。  <p>[Analysis Workspace のディメンションとしてのフィルターの使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)</p> |
+![ フィルターの作成方法 ](assets/create-filter.png)
+
+* ??メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL フィルター]**」を選択します。 ![ フィルター ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/filters/manage-filters.md) から「[[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
+* ??Workspace プロジェクトで、左側のパネルのコンポーネントから、「![ セグメント ](/help/assets/icons/Add.svg)**フィルター ![ に ](/help/assets/icons/Segmentation.svg) 追加** を選択します。
+* ??Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL 選択範囲からフィルターを作成]**」を選択します。
+* ??Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL フィルターを作成]** を選択します。
+* ??Workspace プロジェクトで、ショートカットキー **[!UICONTROL shift+cmd+e]** （macOS）または **[!UICONTROL shift+ctrl+e]** （Windows）を使用します。
+* ??***ここにフィルター（または他のコンポーネント）をドロップ ](/help/assets/icons/Add.svg) ゾーンにドロップ）で「![ 追加***」を選択します。 このアクションは、プロジェクトのみのフィルターを作成します。
+
+新しいフィルターを定義するには、[ フィルタービルダー ](/help/components/filters/filter-builder.md) を使用します。
+
+Workspace プロジェクトでは、「クイックフィルター [ を使用してフィルターをすばやく作成するこ ](/help/components/filters/quick-filters.md) もできます。

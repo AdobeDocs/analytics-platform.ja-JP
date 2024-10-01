@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+workflow-type: tm+mt
+source-wordcount: '2565'
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 使用量制限は、アドビによって定期的にモニタリングされ、適用されます。「データ行」とは、Customer Journey Analytics 内で分析に使用できる 1 日あたりの平均データ行数を意味します。
 
-例えば、契約によって 100 万行のデータを使用できるとしましょう。Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
+例えば、契約によって 100 万行のデータを使用できるとします。 Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
 
 ## 11. データの不一致の診断 {#discrepancies}
 

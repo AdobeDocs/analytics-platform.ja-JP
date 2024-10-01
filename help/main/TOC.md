@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8310e67ea42c44e9cc6d9cfcbd27642b068ef1ed
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 99%
+source-wordcount: '1041'
+ht-degree: 91%
 
 ---
 
@@ -47,13 +47,13 @@ ht-degree: 99%
       + [履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
-      + [Adobe Analytics データの Customer Journey Analytics での使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Customer Journey Analytics の機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Analytics ソースコネクタを通じて渡された Analytics データに関する用語を比較](../getting-started/aa-vs-cja/terminology.md)
-      + [Adobe Analytics と Customer Journey Analytics におけるデータ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
-      + [仮想レポート環境とサンドボックス環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [処理ルール、VISTA および分類とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
+      + [用語の比較](../getting-started/aa-vs-cja/terminology.md)
+      + [データ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+      + [Analytics 処理とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Analytics の Id](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Adobe Analytics からの進化](../getting-started/aa-to-cja.md)
    + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
 
@@ -112,24 +112,23 @@ ht-degree: 99%
    + プロジェクト {#build-workspace-project}
       + [プロジェクトの概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
+      + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [プロジェクトの目次](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Workspace のフォルダー {#workspace-folders}
-         + [Workspace のフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Workspaceのフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [フォルダーを削除](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
-         + [プロジェクトの追加](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [プロジェクトの削除](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [新しいプロジェクトの保存](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [フォルダーの管理](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [フォルダーへのプロジェクトの追加または移動](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーションの概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
+      + [インテリジェントキャプション](../analysis-workspace/visualizations/intelligent-captions.md)
       + フリーフォームテーブル {#freeform-table}
-         + [フリーフォームテーブル](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [フリーフォームテーブルでディメンションのハイパーリンクを作成する](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [フリーフォームテーブルの概要](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [ハイパーリンクの作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + 列および行の設定 {#column-row-settings}
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -137,46 +136,44 @@ ht-degree: 99%
          + [テーブルのフィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [ワークスペースの合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
-         + [コホート分析とは](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [コホート分析レポートの設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [コホートテーブルの概要](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [コホートテーブルの設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [コホート分析のユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + フォールアウト {#fallout}
          + [フォールアウトの概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [フォールアウトビジュアライゼーションの設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [フォールアウトの設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [フォールアウト分析でのフィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + フロー {#flow}
          + [フローの概要](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [フロービジュアライゼーションの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [フローの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + ジャーニーキャンバス {#journey-canvas}
-         + [ジャーニーキャンバスの概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [ジャーニーキャンバスビジュアライゼーションの設定](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-      + [面グラフおよび積み重ね面グラフ](../analysis-workspace/visualizations/area.md)
-      + [棒グラフおよび積み重ね棒グラフ](../analysis-workspace/visualizations/bar.md)
-      + [ブレットグラフ](../analysis-workspace/visualizations/bullet-graph.md)
-      + [複合グラフ](../analysis-workspace/visualizations/combo-charts.md)
+      + [面グラフ（積み重ね）](../analysis-workspace/visualizations/area.md)
+      + [棒グラフ（積み重ね）](../analysis-workspace/visualizations/bar.md)
+      + [ブレット](../analysis-workspace/visualizations/bullet-graph.md)
+      + [コンボ](../analysis-workspace/visualizations/combo-charts.md)
       + [ドーナツ](../analysis-workspace/visualizations/donut.md)
       + [ヒストグラム](../analysis-workspace/visualizations/histogram.md)
-      + [横棒グラフおよび積み重ね横棒グラフ](../analysis-workspace/visualizations/horizontal-bar.md)
-      + [インテリジェントキャプション](../analysis-workspace/visualizations/intelligent-captions.md)
+      + [横棒グラフ（積み重ね）](../analysis-workspace/visualizations/horizontal-bar.md)
       + [主要指標の概要](../analysis-workspace/visualizations/key-metric.md)
       + [行](../analysis-workspace/visualizations/line.md)
       + [散布図](../analysis-workspace/visualizations/scatterplot.md)
-      + [数値の概要と変更概要](../analysis-workspace/visualizations/summary-number-change.md)
+      + [数値と変更の概要](../analysis-workspace/visualizations/summary-number-change.md)
+      + [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md)
       + [テキスト](../analysis-workspace/visualizations/text.md)
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
       + [ベン図](../analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
       + [パネルの概要](../analysis-workspace/c-panels/panels.md)
-      + [アトリビューションパネル](../analysis-workspace/c-panels/attribution.md)
       + [空のパネル](../analysis-workspace/c-panels/blank-panel.md)
-      + [実験パネル](../analysis-workspace/c-panels/experimentation.md)
-      + [フリーフォームパネル](../analysis-workspace/c-panels/freeform-panel.md)
-      + [メディア分平均オーディエンスパネル](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [クイックインサイトパネル](../analysis-workspace/c-panels/quickinsight.md)
-      + [メディアの同時視聴者数パネル](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [メディア再生滞在時間パネル](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [アトリビューション](../analysis-workspace/c-panels/attribution.md)
+      + [実験](../analysis-workspace/c-panels/experimentation.md)
+      + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
+      + [メディア分平均オーディエンス](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [メディア同時閲覧者数](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
+      + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [共有メニュー](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
@@ -196,6 +193,7 @@ ht-degree: 99%
       + [予測の概要](../analysis-workspace/c-forecast/forecasting.md)
       + [Analysis Workspace での予測表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
+      + [目次 ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace FAQ {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
@@ -245,7 +243,7 @@ ht-degree: 99%
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
       + [モバイル注釈](../components/annotations/mobile-annotations.md)
-   + [スケジュール済みプロジェクト](../components/scheduled-projects-manager.md)
+   + [スケジュールされたプロジェクト](../components/scheduled-projects-manager.md)
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
@@ -260,28 +258,27 @@ ht-degree: 99%
    + フィルター {#cja-filters}
       + [フィルターの概要](../components/filters/filters-overview.md)
       + [フィルターの作成](../components/filters/create-filters.md)
-      + [順次フィルターの作成](../components/filters/seg-sequential-build.md)
+      + [フィルターの作成](../components/filters/filter-builder.md)
+      + [クイックフィルター](../components/filters/quick-filters.md)
+      + [順次フィルター](../components/filters/seg-sequential-build.md)
       + [フィルターの共有](../components/filters/filters-share.md)
       + [タグフィルター](../components/filters/filters-tag.md)
       + [フィルターリストのフィルタリング](../components/filters/filters-filter.md)
       + [フィルターのお気に入りへの登録](../components/filters/filters-favorite.md)
       + [フィルターの承認](../components/filters/filters-approve.md)
       + [フィルターのコピー](../components/filters/filters-copy.md)
-      + [クイックフィルター](../components/filters/quick-filters.md)
-      + [フィルタービルダー](../components/filters/filter-builder.md)
       + [フィルターの管理](../components/filters/manage-filters.md)
       + [演算子](../components/filters/operators.md)
    + 計算指標 {#cja-calcmetrics}
       + [計算指標の概要](../components/calc-metrics/calc-metr-overview.md)
       + 計算指標のワークフロー {#cm-workflow}
-         + [計算指標のワークフロー](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [パーティシペーション指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
-         + [フィルター適用済み指標と重み付け指標](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [計算指標をフィルタリング](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [計算指標をお気に入りに登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [計算指標をコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
@@ -289,21 +286,22 @@ ht-degree: 99%
          + [計算指標をタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [計算指標の承認](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [計算指標マネージャー](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [計算指標の管理](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [例](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
       + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
-   + カレンダーと日付範囲 {#cja-date-ranges}
-      + [カレンダーと日付範囲の概要](../components/date-ranges/calendar.md)
+   + 日付範囲 {#cja-date-ranges}
+      + [概要](../components/date-ranges/overview.md)
       + [日付範囲の作成](../components/date-ranges/create.md)
       + [日付範囲を管理](../components/date-ranges/manage.md)
-      + [カスタム日付範囲の作成](../components/date-ranges/custom-date-ranges.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
+      + [例](../components/date-ranges/custom-date-ranges.md)
    + アラート {#alerts}
       + [概要](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-      + [Customer Journey Analytics の違い](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [作成](/help/components/c-intelligent-alerts/alert-builder.md)
-      + [管理](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [機能の比較](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [ユースケース](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 書き出し {#exports}
       + [クラウドの書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)
