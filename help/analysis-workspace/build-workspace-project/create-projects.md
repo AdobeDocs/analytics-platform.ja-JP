@@ -4,14 +4,24 @@ title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 40%
+source-wordcount: '412'
+ht-degree: 41%
 
 ---
 
-# プロジェクトの作成
+# プロジェクトの作成 {#create-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_countrepeatinstances"
+>title="繰り返しインスタンスのカウント"
+>abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/><br/> メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspaceの [ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を使用すると、ビジネスクリティカルな分析を作成および表示できます。  これらの分析は、組織内または組織外の関係者と共有できます。
 

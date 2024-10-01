@@ -3,10 +3,10 @@ description: 指標タイプとアトリビューションについて説明し�
 title: 指標タイプとアトリビューション
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 32%
+source-wordcount: '947'
+ht-degree: 31%
 
 ---
 
@@ -148,8 +148,8 @@ ht-degree: 32%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="タイムディケイ"
->abstract="コンバージョンに時間的に一番近いディメンション値に最も多くのクレジットが与えられます。"
+>title="カスタム"
+>abstract="独自のポジションベースのアトリビューションの重み付けを定義します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,7 +161,6 @@ ht-degree: 32%
 >abstract="クレジットは、統計的アルゴリズムに基づいて動的に決定されます。"
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}

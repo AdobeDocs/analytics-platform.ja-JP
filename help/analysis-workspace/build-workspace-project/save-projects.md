@@ -4,14 +4,24 @@ title: プロジェクトの保存
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 18%
+source-wordcount: '851'
+ht-degree: 17%
 
 ---
 
-# プロジェクトの保存
+# プロジェクトの保存 {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="メモを追加"
+>abstract="保存するプロジェクト バージョンに関するメモを追加します。 これらのメモはバージョンと共に保存され、**[!UICONTROL プロジェクト]**/**[!UICONTROL 以前のバージョンを開く]** メニューからアクセスできます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspaceのプロジェクトは、2 分ごとに自動的に保存されます。 また、自分でプロジェクトを保存したり、プロジェクトを複製として保存したり、プロジェクトをバージョンメモと共に保存したりすることもできます。
 

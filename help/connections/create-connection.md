@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '3507'
+source-wordcount: '3526'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,16 @@ ht-degree: 97%
 >abstract="データ保持を周期的な期間の月数として接続レベルで定義します。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_averagenumberofdailyuses"
+>title="日別使用の平均数"
+>abstract="接続全体で想定される毎日のイベント数の範囲を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 接続の作成と編集ワークフローエクスペリエンスでは、すべてのデータセットと接続設定が、補助的なワークフローで画面の中央に表示されます。詳細なデータセットの選択、設定、確認のエクスペリエンスを提供します。また、データセットのタイプ、サイズ、スキーマ、データセット ID、バッチステータス、バックフィルステータス、ユーザー ID などの重要な情報を指定できるので、誤った接続設定のリスクを軽減できます。機能の概要を以下に示します。
