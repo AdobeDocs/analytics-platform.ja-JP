@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1054'
 ht-degree: 91%
 
 ---
@@ -148,6 +148,10 @@ ht-degree: 91%
          + [フローの概要](../analysis-workspace/visualizations/c-flow/flow.md)
          + [フローの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + ジャーニーキャンバス {#journey-canvas}
+         + [ジャーニーキャンバスの概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [ジャーニーキャンバスビジュアライゼーションの設定](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [ジャーニーキャンバスのトラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面グラフ（積み重ね）](../analysis-workspace/visualizations/area.md)
       + [棒グラフ（積み重ね）](../analysis-workspace/visualizations/bar.md)
       + [ブレット](../analysis-workspace/visualizations/bullet-graph.md)
