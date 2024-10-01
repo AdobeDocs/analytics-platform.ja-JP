@@ -3,16 +3,18 @@ title: 製品使用のオプトアウト設定
 description: 組織内の個々のユーザーのオプトアウト設定を管理します。
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
 # 製品使用のオプトアウト設定 {#product-usage-opt-out-settings}
 
-_オプトアウト設定_ ページを使用すると、組織内のユーザーを製品の使用状況のトラッキングから除外または再含めることができます。
+{{release-limited-testing}}
+
+_オプトアウト設定_ ページを使用すると、組織内のユーザーを製品の使用状況のトラッキングから除外または再含めることができます。 製品管理者にのみ表示されます。
 
 **Customer Journey Analytics** / **[!UICONTROL ツール]** / **[!UICONTROL 製品の使用状況]** / **[!UICONTROL オプトアウト設定]**
 

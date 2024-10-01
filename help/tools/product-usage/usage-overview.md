@@ -3,7 +3,7 @@ title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # 製品の使用状況の概要
+
+{{release-limited-testing}}
 
 製品の使用状況を使用すると、組織でのCustomer Journey Analyticsの使用状況に関する分析データを表示できます。 Customer Journey Analyticsを使用するすべての組織で利用できます。 有効にすると、次のAdobe Experience Platform コンポーネントが自動的に作成され、自動的に接続されます。
 
