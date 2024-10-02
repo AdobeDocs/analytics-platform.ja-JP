@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 49%
+source-wordcount: '1651'
+ht-degree: 51%
 
 ---
 
@@ -126,12 +126,6 @@ Customer Journey Analyticsは、公開済みのオーディエンスから名前
 次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
 Platform でCustomer Journey Analyticsオーディエンスを表示するには：
-
->[!AVAILABILITY]
->
->次の手順で説明されている機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 これらの手順が環境に表示される手順と一致しない場合は、代わりに次の手順を使用します。[!UICONTROL **セグメント**]/[!UICONTROL **セグメントの作成**]/[!UICONTROL **オーディエンス**] タブ/[!UICONTROL **CJA オーディエンス**] に移動します。
->
->機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analyticsリリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。
 
 1. 左側のパネルで [!UICONTROL **顧客**] を展開し、「[!UICONTROL **オーディエンス**]」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
 

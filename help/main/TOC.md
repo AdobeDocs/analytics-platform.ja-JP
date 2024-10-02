@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 90%
+source-wordcount: '1021'
+ht-degree: 91%
 
 ---
 
@@ -127,31 +127,31 @@ ht-degree: 90%
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [インテリジェントキャプション](../analysis-workspace/visualizations/intelligent-captions.md)
       + フリーフォームテーブル {#freeform-table}
-         + [フリーフォームテーブルの概要](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [概要](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [ハイパーリンクの作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + 列および行の設定 {#column-row-settings}
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [テーブルのフィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [ワークスペースの合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace の合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
-         + [コホートテーブルの概要](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [コホートテーブルの設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [コホート分析のユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [概要](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [設定する](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [ユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + フォールアウト {#fallout}
-         + [フォールアウトの概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [フォールアウトの設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [設定する](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [フォールアウト分析でのフィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [フィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + フロー {#flow}
-         + [フローの概要](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [フローの設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [概要](../analysis-workspace/visualizations/c-flow/flow.md)
+         + [設定する](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + ジャーニーキャンバス {#journey-canvas}
-         + [ジャーニーキャンバスの概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [ジャーニーキャンバスビジュアライゼーションの設定](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [ジャーニーキャンバスのトラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [設定する](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [トラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面グラフ（積み重ね）](../analysis-workspace/visualizations/area.md)
       + [棒グラフ（積み重ね）](../analysis-workspace/visualizations/bar.md)
       + [ブレット](../analysis-workspace/visualizations/bullet-graph.md)
@@ -168,7 +168,7 @@ ht-degree: 90%
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
       + [ベン図](../analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
-      + [パネルの概要](../analysis-workspace/c-panels/panels.md)
+      + [概要](../analysis-workspace/c-panels/panels.md)
       + [空のパネル](../analysis-workspace/c-panels/blank-panel.md)
       + [アトリビューション](../analysis-workspace/c-panels/attribution.md)
       + [実験](../analysis-workspace/c-panels/experimentation.md)
@@ -185,16 +185,16 @@ ht-degree: 90%
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
       + [表示専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
    + 書き出し {#export}
-      + [書き出しの概要](../analysis-workspace/export/export-project-overview.md)
+      + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
       + [その他に送信](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + 異常値検出 {#anomaly-detection}
-      + [異常値検出の概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Analysis Workspace での異常値の表示](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [異常値検出で使用される統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 予測 {#forecasting}
-      + [予測の概要](../analysis-workspace/c-forecast/forecasting.md)
+      + [概要](../analysis-workspace/c-forecast/forecasting.md)
       + [Analysis Workspace での予測表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
       + [目次 ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
