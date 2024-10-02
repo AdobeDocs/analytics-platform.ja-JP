@@ -3,31 +3,32 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b7e8c535d178ef406e1563408cee83c638d6858b
+source-git-commit: c403e2bbf20de3dca4440160ef3f69a9d0d60a2f
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: '485'
+ht-degree: 52%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2024年9月）
+# 現在の Adobe Customer Journey Analytics リリースノート（2024年10月）
 
-**最終更新日**：2024年9月11日（PT）
+**最終更新日**：2024年10月2日（PT）
 
-このリリースノートは、2024年9月11日（PT）～10月上旬のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+これらのリリースノートは、2024 年 10 月 2 日（PT）から 2024 年 10 月 22 日（PT）までのリリース期間に対応しています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **計算指標マネージャーとフィルターマネージャーの「使用場所」列に含まれる追加情報** | 計算指標マネージャーとフィルターマネージャーの「使用場所」列には、次の新しいレポート領域が含まれています。<ul><li>**Report Builder**：Report Builder で使用中の計算指標またはフィルターの数を示します。</li><li>**アドホックコンポーネント**：プロジェクトで使用中のアドホック計算指標またはアドホックフィルターの数を表示します。これらのアドホック計算指標およびアドホックフィルター（別名「クイック計算指標」および「クイックフィルター」）は、作成元のプロジェクト内でしか使用できないので、「使用場所」列の「プロジェクト」レポート領域とは別に報告されます。</li></ul>詳しくは、[計算指標マネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager)および[セグメントマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters)を参照してください。 |  | 2024年9月11日（PT） |
-| **アラート** | Customer Journey Analytics のアラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。<p>また、Customer Journey Analytics パッケージに応じて、異常しきい値に基づいてトリガーされるアラートを使用することもできます。これらのアラート（「インテリジェントアラート」とも呼ばれる）は、異常値検出と統合された詳細なコントロールを提供し、最も必要なときにトリガーされます。</p><p>Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。1 つの主な違いは、Customer Journey Analytics では 1 時間ごとのアラートが使用できないことです。この違いは、取り込み可能な様々な種類のイベントデータのデータ取り込みが、通常はデータイベント時間から 3～9 時間遅れて完了するためです。</p><p>Adobe Analytics の Customer Journey Analytics でアラートを使用する場合の違いについて詳しくは、[アラート機能の比較](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)を参照してください。</p><p>アラートについて詳しくは、[アラートの概要](/help/components/c-intelligent-alerts/intelligent-alerts.md)を参照してください。 |  | 2024年9月13日（PT） |
-| **Adobe Analytics ソースコネクタの更新** | Analytics ソースコネクタは、アドビが完全に管理しているので、データセットアクティビティページには、バッチに関する情報が表示されません。取り込まれたレコードに関する指標を確認することで、データのフローを監視できます。詳しくは、[Analytics データのソース接続の作成](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)に関するガイドを参照してください。 |  | 公開中 |
-| **ガイド付き分析：Workspace への埋め込み** | 複数のガイド付き分析を Analysis Workspace の 1 つのビューに組み合わせます。（ドキュメントへのリンクを添付） | 2024年10月2日（PT） | 2024年10月31日（PT） |
+| **ガイド付き分析：Workspace への埋め込み** | [ ガイド付き分析 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/overview) がAnalysis Workspaceで直接利用できるようになり、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。 新しい左側のパネルセクションから、新しいガイド付き分析を作成して、プロジェクトに追加できます。 また、多くのプロジェクトで構成要素として再利用できる、保存済みのガイド付き分析にアクセスすることもできます。 | 2024年10月2日（PT） | 2024年10月31日（PT） |
+| **製品の使用状況** | 組織が Customer Journey Analytics をどのように使用しているかを確認します。この機能を有効にすると、組織内のユーザーが Analysis Workspace を使用する際に、データを収集するデータセットが Adobe Experience Platform に作成されます。また、接続とデータビューも自動的に作成され、プロジェクトで使用される上位のプロジェクトタイプ、最もアクティブなユーザー、一番人気のコンポーネントなどのディメンションにアクセスできます。[詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | 2024年10月3日（PT） | 2024年10月23日（PT） |
+| **ジャーニーキャンバスビジュアライゼーション** | ジャーニーキャンバスは、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義されたジャーニーをどのように進めたり、そこから離脱したりするかを分析することができます。 イベント、ディメンション項目、およびフィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成して、ユーザージャーニーの分析を作成します。キャンバス上でノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。すると、それに応じてデータが更新されます。<p>Adobe Journey Optimizer へのアクセス権を持つお客様は、既存の Journey Optimizer ジャーニーを分析できます。<p>ジャーニー キャンバスの詳細については、[ジャーニー キャンバスの概要 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas) を参照してください。<p>ジャーニーキャンバスビジュアライゼーションの作成方法については、[ジャーニーキャンバスの設定 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas) を参照してください。 | 2024年10月2日（PT） | 2024年10月14日（PT） |
+| **オーディエンスの作成時にパネルフィルターと列フィルターが含まれるようになりました** | Analysis Workspace内のビジュアライゼーションからオーディエンスを作成する際に、パネルフィルターと列フィルターが追加の条件として含まれるようになりました。 フィルターが不要な場合は、オーディエンスを公開する前に削除できます。 以前は、Analysis Workspaceのパネルやビジュアライゼーションの列に適用されたフィルターは、オーディエンスの作成時に無視されていました。<p>Customer Journey Analyticsからオーディエンスを作成する方法について詳しくは、[ オーディエンスの作成と公開 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish) を参照してください。 |  | 2024年10月2日（PT） |
+
 
 ## Customer Journey Analytics の修正点
 
-AN-352461、AN-355446、AN-355665
+AN-354085; AN-355870; AN-356037; AN-356881; AN-357100; AN-358193; AN-358364; AN-358911; AN-359000; AN-359160
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 
@@ -35,7 +36,6 @@ AN-352461、AN-355446、AN-355665
 | --- | --- | --- |
 | 該当なし | | |
 
-{style="table-layout:auto"}
 
 ## 関連リソース
 
