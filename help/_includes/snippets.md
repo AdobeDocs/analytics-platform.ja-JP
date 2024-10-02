@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '3646'
 ht-degree: 34%
@@ -97,18 +97,15 @@ ht-degree: 34%
 
 ## デモンストレーション用ビデオAdobe Analytics {#videoaa}
 
->[!NOTE]
->
->このビデオでは、Adobe Analyticsを使用した機能を説明します。 ただし、この機能はCustomer Journey Analyticsでも同様に使用できます。 用語には次の違いがあることに注意してください。
->
->
->| Adobe Analytics | Customer Journey Analytics |
->|:---:|:---:|
->| セグメント | フィルター |
->| 訪問者 | ユーザー |
->| 訪問 | セッション |
->| ヒット | イベント |
->
+このビデオでは、Adobe Analyticsを使用した機能を説明します。 ただし、この機能はCustomer Journey Analyticsでも同様に使用できます。 用語には次の違いがあることに注意してください。
+
+| Adobe Analytics | Customer Journey Analytics |
+|:---:|:---:|
+| セグメント | フィルター |
+| 訪問者 | ユーザー |
+| 訪問 | セッション |
+| ヒット | イベント |
+
 
 ## フィルターパネル {#filterspanel}
 

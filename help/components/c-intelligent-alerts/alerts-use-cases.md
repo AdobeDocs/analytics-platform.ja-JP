@@ -1,12 +1,12 @@
 ---
 description: アラートのユースケース。
-title: アラート – ユースケース
+title: アラートのユースケース
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 38%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 38%
 
 以下の節では、アラートを作成する際に考慮すべきユースケースの例を示します。
 
-## 2 つのフィルターでフィルターしたシンプルなアラートの作成 {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## アラートをフィルター
+
+フィルターを使用して、シンプルなアラートを作成できます。 例えば、モバイルアプリセッションを使用してホームページにアクセスする人のセッション数に関するアラートを定義します。
 
 <!-- 
 
@@ -24,12 +26,12 @@ Update screenshots for better readability.
 
  -->
 
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## 複数のアラートを作成する代わりに（スタック）アラートを統合する {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## スタックアラート
 
-アラートのスタックは、アラートを組み合わせて、多数の異なるアラートを受け取ることがないようにします。
+複数のアラートを作成する代わりに、（スタック）アラートを統合できます。 アラートのスタックは、アラートを組み合わせて、多数の異なるアラートを受け取らないようにします。 以下の例では、いずれかの指標しきい値がトリガーされると、アラートが送信されます。
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

@@ -4,9 +4,9 @@ title: Analysis Workspace でのコンポーネントの使用
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '952'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!TIP]
 >
->各コンポーネントの情報については、コンポーネント名の横にある ![InfoOutline](/help/assets/icons/InfoOutline.svg) アイコンを選択してください。
+>各コンポーネントの詳細については、![InfoOutline](/help/assets/icons/InfoOutline.svg) を使用してください。 詳しくは、[ コンポーネント情報 ](#component-info) を参照してください
 
 ## プロジェクトへのコンポーネントの追加
 

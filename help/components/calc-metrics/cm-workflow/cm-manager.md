@@ -3,10 +3,10 @@ description: 計算指標マネージャーを使用すると、共有、フィ�
 title: 計算指標マネージャー
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 5%
+source-wordcount: '901'
+ht-degree: 6%
 
 ---
 
@@ -51,17 +51,17 @@ ht-degree: 5%
 
 アクションバーの➋を使用して、フィルターに対してアクションを実行できます。 アクションバーには、次のアクションが含まれます。
 
-| アクション | 説明 |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ 計算指標ビルダー ](cm-build-metrics.md) を使用して、別の計算指標を追加します。 |
-| ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストで計算指標が選択されていない場合は、この検索フィールドを使用してフィルターを検索します。 |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択した計算指標のタグ付け。 **[!UICONTROL 計算指標をタグ付け]** ダイアログで、選択した計算指標のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標のタグを保存します。 詳しくは、[ 計算指標のタグ付け ](cm-tagging.md) を参照してください。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | 選択した計算指標を共有します。 **[!UICONTROL 計算指標を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標の共有の詳細を保存します。 詳しくは、[ 計算指標の共有 ](cm-sharing.md) を参照してください。 |
-| ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択した計算指標を削除します。 確認メッセージが表示されます。 |
-| ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つの計算指標の名前を変更します。 選択した場合、計算指標の名前をインラインで変更できます。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | 選択した計算指標を承認します。 [ 計算指標の承認 ](cm-approving.md) を参照してください。 |
-| ![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択した計算指標をコピーします。 同じ名前とサフィックスの `(Copy)` を持つ新しい計算指標が作成されます |
-| ![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL CSV への書き出し]** | 計算指標を `Calculated  metric List.csv` ファイルにエクスポートします。 |
+| アイコン | アクション | 説明 |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [ 計算指標ビルダー ](cm-build-metrics.md) を使用して、別の計算指標を追加します。 |
+| ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストで計算指標が選択されていない場合は、この検索フィールドを使用してフィルターを検索します。 |
+| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択した計算指標のタグ付け。 **[!UICONTROL 計算指標をタグ付け]** ダイアログで、選択した計算指標のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標のタグを保存します。 詳しくは、[ 計算指標のタグ付け ](cm-tagging.md) を参照してください。 |
+| ![共有](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共有]** | 選択した計算指標を共有します。 **[!UICONTROL 計算指標を共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した計算指標の共有の詳細を保存します。 詳しくは、[ 計算指標の共有 ](cm-sharing.md) を参照してください。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択した計算指標を削除します。 確認メッセージが表示されます。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した 1 つの計算指標の名前を変更します。 選択した場合、計算指標の名前をインラインで変更できます。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択した計算指標を承認します。 [ 計算指標の承認 ](cm-approving.md) を参照してください。 |
+| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択した計算指標をコピーします。 同じ名前とサフィックスの `(Copy)` を持つ新しい計算指標が作成されます |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 計算指標を `Calculated  metric List.csv` ファイルにエクスポートします。 |
 
 ### アクティブなフィルターバー
 

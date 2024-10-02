@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 42%
+source-wordcount: '579'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 42%
    | 折れ線比較タイプ | 定義 |
    | --- | --- |
    | **[!UICONTROL 時間比較]** | 最も一般的なタイプの比較です。例えば、この期間と 4 週間前の期間を比較します。 [!UICONTROL 時間比較]を選択した場合は、比較する期間についての補助的な選択を行います。<p>![ 選択された期間と期間のセカンダリ選択フィールドとの比較。](assets/combo-time-period.png) |
-   | **[!UICONTROL 関数]** | [!UICONTROL 平均]などの関数を比較に導入できます。以下のサポートされている関数のリストを参照してください。<p>![ 選択された関数と使用可能なサポートされている関数のリストを示すリネ比較ドロップダウンメニュー。](assets/combo-functions.png) |
+   | **[!UICONTROL 関数]** | [!UICONTROL 平均]などの関数を比較に導入できます。[ サポートされている関数 ](#supported-functions) のリストを参照してください。<p>![ 選択された関数と使用可能なサポートされている関数のリストを示すリネ比較ドロップダウンメニュー。](assets/combo-functions.png) |
    | **[!UICONTROL セカンダリ指標]** | 例えば、[!UICONTROL 売上高]を別の指標と比較できます。<p>![2 つの指標を比較した複合グラフ。](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

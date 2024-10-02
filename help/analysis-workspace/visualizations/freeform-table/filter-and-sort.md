@@ -4,9 +4,9 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 42%
 
 ---
@@ -47,7 +47,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 1. 除外する行にポインタを合わせて、「閉じる ![ を選択し ](/help/assets/icons/Close.svg) す。
 
-   Shift キーを押しながら行の範囲を選択するか、Command キー（Macの場合）または Ctrl キー（Windows の場合）を押しながら複数の行を選択します。
+   行の範囲を選択するには、***shift*** キーを押したままにします。複数の行を選択するには、***cmd*** キー（Macの場合）または ***ctrl*** キー（Windows の場合）を押します。
 
 <!--### Right-click > Delete selected rows
 

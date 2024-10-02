@@ -4,7 +4,7 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 28%
@@ -32,7 +32,7 @@ ht-degree: 28%
 <!-- markdownlint-enable MD034 -->
 
 
-*コホート* とは、特定の期間、共通の特徴を共有する人々のグループです。 ![ テキスト番号付き ](/help/assets/icons/TextNumbered.svg)[!UICONTROL  コホートテーブル ] ビジュアライゼーションは、例えば、コホートがブランドとどのように関わっているかを学びたい場合に役立ちます。 トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://ja.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。
+*コホート* とは、特定の期間、共通の特徴を共有する人々のグループです。 ![ テキスト番号付き ](/help/assets/icons/TextNumbered.svg)**[!UICONTROL コホートテーブル]** ビジュアライゼーションは、例えば、コホートがブランドとどのように関わっているかを学びたい場合に役立ちます。 トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://ja.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。
 
 コホートレポートを作成したら、コンポーネント（特定のディメンション、指標およびフィルター）をキュレートして、任意のユーザーとコホートレポートを共有できます。[キュレートおよび共有](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 

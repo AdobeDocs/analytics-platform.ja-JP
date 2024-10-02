@@ -4,10 +4,10 @@ description: ワークスペースでの注釈を管理する方法。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 6%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -52,16 +52,16 @@ ht-degree: 6%
 
 注釈に対するアクションは、アクションバーの➋を使用して実行できます。 アクションバーには、次のアクションが含まれます。
 
-| アクション | 説明 |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ 注釈ビルダー ](create-annotations.md#annotation-builder) を使用して、別の注釈を追加します。 |
-| ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストで注釈が選択されていない場合は、この検索フィールドを使用して注釈を検索します。 |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択した注釈にタグを付けます。 **[!UICONTROL タグコンポーネント]** ダイアログで、選択した注釈のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した注釈のタグを保存します。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | 選択した注釈を共有します。 **[!UICONTROL コンポーネントを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した注釈の共有の詳細を保存します。 詳しくは、[ 注釈を共有 ](#share-annotations) を参照してください。 |
-| ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択した注釈を削除します。 確認メッセージが表示されます。 |
-| ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つの注釈の名前を変更します。 選択すると、注釈の名前をインラインで変更できます。 |
-| ![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択した注釈をコピーします。 同じ名前とサフィックスを持つ新しい注釈が作成されます（コピー） |
-| ![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL CSV への書き出し]** | 注釈を `Annotations List.csv` ファイルに書き出します。 |
+| アイコン | アクション | 説明 |
+|:--:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [ 注釈ビルダー ](create-annotations.md#annotation-builder) を使用して、別の注釈を追加します。 |
+| ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストで注釈が選択されていない場合は、この検索フィールドを使用して注釈を検索します。 |
+| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択した注釈にタグを付けます。 **[!UICONTROL タグコンポーネント]** ダイアログで、選択した注釈のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した注釈のタグを保存します。 |
+| ![共有](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共有]** | 選択した注釈を共有します。 **[!UICONTROL コンポーネントを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した注釈の共有の詳細を保存します。 詳しくは、[ 注釈を共有 ](#share-annotations) を参照してください。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択した注釈を削除します。 確認メッセージが表示されます。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した 1 つの注釈の名前を変更します。 選択すると、注釈の名前をインラインで変更できます。 |
+| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択した注釈をコピーします。 同じ名前とサフィックスを持つ新しい注釈が作成されます（コピー） |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 注釈を `Annotations List.csv` ファイルに書き出します。 |
 
 ### アクティブなフィルターバー
 

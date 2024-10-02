@@ -4,9 +4,9 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -180,7 +180,6 @@ Customer Journey Analyticsの実験パネルを使用すると、データを人
 * 基本指標に追加または減算される定数（`Revenue+50` など）
 * 次のいずれかの基本指標。
    * ユーザー
-   * （他に何がありますか？）
 
 実験パネルと互換性のない計算指標は、計算指標を作成する際に [!UICONTROL **Customer Journey Analyticsの互換性**] フィールドに [!UICONTROL **製品のすべての場所（実験を除く）**] という値を持ちます。 計算指標の作成について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
 

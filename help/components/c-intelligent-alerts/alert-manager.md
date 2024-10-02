@@ -3,10 +3,10 @@ description: アラートを作成、編集または削除します。
 title: アラートの管理
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 7%
 
 ---
 
@@ -50,17 +50,17 @@ ht-degree: 4%
 
 アクションバーの➋を使用して、アラートに対するアクションを実行できます。 アクションバーには、次のアクションが含まれます。
 
-| アクション | 説明 |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ アラートビルダー ](alert-builder.md#alert-builder) を使用して、別のアラートを追加します。 |
-| ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストでアラートが選択されていない場合は、この検索フィールドを使用してアラートを検索します。 |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 選択したアラートにタグを付けます。 **[!UICONTROL タグアラート]** ダイアログで、選択したアラートのタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択したアラートのタグを保存します。 |
-| ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 選択したアラートを削除します。 確認メッセージが表示されます。 |
-| ![ 編集 ](/help/assets/icons/Edit.svg) 名前 **[!UICONTROL 変更]** | 選択した 1 つのアラートの名前を変更します。 選択した場合、アラートの名前をインラインで変更できます。 |
-| ![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択したアラートをコピーします。 同じ名前とサフィックスの `(Copy)` を持つ新しいアラートが作成されます。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Enable]** または **[!UICONTROL Disable]** | 選択したアラートを有効または無効にします。 |
-| ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Renew]** | アラートの有効期限を更新します。 有効期限は、元の有効期限に関係なく、このオプションを選択した日から 1 年間延長されます。 |
-| ![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL CSV への書き出し]** | アラートを `Alerts List.csv` ファイルに書き出します。 |
+| アイコン | アクション | 説明 |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [ アラートビルダー ](alert-builder.md#alert-builder) を使用して、別のアラートを追加します。 |
+| ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストでアラートが選択されていない場合は、この検索フィールドを使用してアラートを検索します。 |
+| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択したアラートにタグを付けます。 **[!UICONTROL タグアラート]** ダイアログで、選択したアラートのタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択したアラートのタグを保存します。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択したアラートを削除します。 確認メッセージが表示されます。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した 1 つのアラートの名前を変更します。 選択した場合、アラートの名前をインラインで変更できます。 |
+| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択したアラートをコピーします。 同じ名前とサフィックスの `(Copy)` を持つ新しいアラートが作成されます。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Enable]** または **[!UICONTROL Disable]** | 選択したアラートを有効または無効にします。 |
+| ![更新](/help/assets/icons/Refresh.svg) | **[!UICONTROL 更新]** | アラートの有効期限を更新します。 有効期限は、元の有効期限に関係なく、このオプションを選択した日から 1 年間延長されます。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | アラートを `Alerts List.csv` ファイルに書き出します。 |
 
 
 ### アクティブなフィルターバー
