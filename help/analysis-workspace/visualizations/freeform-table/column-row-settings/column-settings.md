@@ -4,9 +4,9 @@ title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 19%
 
 条件付き書式により、上限、中間点、下限を定義して書式を適用できます。[!UICONTROL  カスタム ] 制限が選択されていない限り、フリーフォームテーブル内で条件付き書式を適用することも、分類で自動的に有効になります。
 
-<img src="./assets/conditional-formatting.png" alt="カスタムが選択された条件付き書式オプション" width="40%" />
+![ 条件付き書式 ](./assets/conditional-formatting.png)
 
 | 条件付き書式オプション | 説明 |
 | --- | --- |
@@ -67,9 +67,19 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="デフォルト以外のアトリビューションモデルを使用"
->abstract="選択した列に対してデフォルト以外の属性モデルを有効にする"
+>abstract="選択した列に対してデフォルト以外の属性モデルを有効にします。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="デフォルト以外のアトリビューションモデルを使用"
+>abstract="この指標では、デフォルト以外のアトリビューションモードは使用できません。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 [ データビュー ](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
