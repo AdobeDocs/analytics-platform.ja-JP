@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '6391'
 ht-degree: 1%
 
 ---
@@ -149,10 +149,6 @@ ht-degree: 1%
 
 ### 既存のノードに基づいて上位のノードを表示
 
->[!AVAILABILITY]
->
->この機能はまだ使用できません。
-
 既にキャンバス上にあるノードに基づいて、上位のノードを自動的に表示できます。 上部ノードをジャーニーキャンバスに追加したり、フリーフォームテーブルで表示したりできます。
 
 このオプションは、キャンバス上の次のオブジェクトで使用できます。
@@ -221,17 +217,17 @@ ht-degree: 1%
 
 ### 重複ノード
 
->[!AVAILABILITY]
->
->この機能はまだ使用できません。
-
 複製するオプションは、キャンバス上の次のオブジェクトで使用できます。
+
+* 個々のノード
 
 * 複数のノード
 
 ノードを複製するには：
 
-1. 複製するノードを複数選択します。
+1. 複製するノードを 1 つ以上選択します。
+
+   複数のノードを選択するには、Command （Macの場合）または Ctrl （Windows の場合）を押します。
 
 1. 選択したノードの 1 つを右クリックし、「[!UICONTROL **複製**]」を選択します。
 
@@ -263,7 +259,7 @@ ht-degree: 1%
 
 * 左側のパネルから、Shift キーを押しながら複数のコンポーネントをキャンバスの空白の領域に同時にドラッグします。
 
-* キャンバスで、結合するノードを選択し、選択したノードの 1 つを右クリックして、「**結合**<!--Is there a limit on how many you can combine? --> を選択します。
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### ノードを組み合わせる際のロジック
 
@@ -304,7 +300,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスでノードをコネクトする場合、THEN 演算子を使用してノードがコネクトされます。 これは、「順次フィルタリング [ とも呼ばれ ](/help/components/filters/seg-sequential-build.md) す。
 
-ノードは「最終的なパス」として接続されます。つまり、2 つのノード間で発生したイベントに関係なく、最終的にノード間で移動する限り、訪問者はカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナ設定によって決定されます。 また、[ 時間制約の追加 ](#add-a-time-constraint-between-nodes) によって制御することもできます。
+ノードは「最終的なパス」として接続されます。つまり、2 つのノード間で発生したイベントに関係なく、最終的にノード間で移動する限り、訪問者はカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナ設定によって決定されます。<!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 接続されたノードのロジックを表示するには、ノードを右クリックして [!UICONTROL **ノードからフィルターを作成**] を選択します。 ロジックは、「[!UICONTROL **定義**] セクションに表示されます。
 
@@ -328,23 +324,23 @@ ht-degree: 1%
 
 詳しくは、[ ノードの追加 ](#add-nodes) を参照してください。
 
-### ノード間に時間制約を追加する
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->この機能はまだ使用できません。
+>This feature is not yet available.
 
-ノード間に時間制約を設定できます。 時間制約が設定されている場合、定義されたジャーニーに従い、ノード間の移動に割り当てられた期間よりも長い時間がかかると、ジャーニーから離脱したと見なされます。
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-時間制約を追加するオプションは、キャンバス上の次のオブジェクトで使用できます。
+The option to add a time constraint is available for the following objects on the canvas:
 
-* ノード間の矢印
+* The arrow between nodes
 
-時間制約を追加するには：
+To add a time constraint:
 
-1. ジャーニーキャンバスビジュアライゼーションで、2 つのノード間の矢印を右クリックし、「[!UICONTROL **時間制約を追加**]」を選択します。
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## ノードまたは矢印を管理
 
-### ノードまたは矢印の色を変更する
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->この機能はまだ使用できません。
+>This feature is not yet available.
 
-キャンバス上の任意のノードや矢印の色を変更することで、ジャーニーを視覚的にカスタマイズできます。 例えば、望ましいイベントや望ましくないイベントを示すためにカラーを調整できます。
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-カラーを変更するオプションは、キャンバス上の次のオブジェクトで使用できます。
+The option to change the color is available for the following objects on the canvas:
 
-* 個々のノード
+* Individual nodes
 
-* ノード間の矢印
+* The arrow between nodes
 
-ノードまたは矢印の色を変更するには：
+To change the color of a node or arrow:
 
-1. ジャーニーキャンバスビジュアライゼーションで、カラーを変更するノードまたは矢印を右クリックします。
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. [!UICONTROL **色を変更**]. <!--make sure "color" isn't capitalized. It is in the req doc--> を選択します。
+1. Select [!UICONTROL **Change color**]. 
 
-1. 目的の色を選択します。
+1. Select the desired color. 
 
-   使用できるカラーは次のとおりです。<!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### ノードの名前を変更
-
->[!AVAILABILITY]
->
->この機能はまだ使用できません。
 
 コンポーネントをジャーニーカンバスビジュアライゼーションにドラッグすると、コンポーネント名と同じ名前のノードが作成されます。 ノードが表すジャーニーのステップに合うように、ノードの名前を変更できます。
 
@@ -453,15 +449,13 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 #### 1 つ以上のノードまたは矢印への分類の適用
 
->[!AVAILABILITY]
->
->この機能はまだ使用できません。
-
 1. ジャーニーキャンバスビジュアライゼーションで、分類を適用する 1 つ以上のノードを選択し、選択したノードのいずれかを右クリックします。
 
    または
 
    ジャーニーキャンバスビジュアライゼーションで、分類を適用する 2 つのノード間の 1 つ以上の矢印を選択し、選択した矢印のいずれかを右クリックします。
+
+   複数のノードまたは矢印を選択するには、Command （Macの場合）または Ctrl （Windows の場合）を押します。
 
 1. 「[!UICONTROL **分類**]」を選択します。
 
@@ -513,6 +507,8 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
    ジャーニーキャンバスビジュアライゼーションで、オーディエンスを作成する 2 つのノード間の 1 つ以上の矢印を選択し、選択した矢印のいずれかを右クリックします。
 
+   複数のノードまたは矢印を選択するには、Command （Macの場合）または Ctrl （Windows の場合）を押します。
+
    >[!NOTE]
    >
    >オーディエンスには、（概要データセット [ に基づく計算指標や指標は含めることができません ](/help/data-views/summary-data.md)。 計算指標または概要データセットに基づく指標を含むジャーニーキャンバスの任意の領域からオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。
@@ -522,10 +518,6 @@ from Travis: You can set time to be within X amount of time or after X amount of
 1. [ オーディエンスの作成と公開 ](/help/components/audiences/publish.md) の説明に従って、オーディエンスの作成と公開を続行します。
 
 ### トレンドデータの表示
-
->[!AVAILABILITY]
->
->この機能はまだ使用できません。
 
 トレンドデータは、ジャーニーキャンバスのオブジェクトの折れ線グラフで表示できます。<!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ from Travis: You can set time to be within X amount of time or after X amount of
    または
 
    ジャーニーキャンバスビジュアライゼーションで、トレンドデータを表示する 2 つのノード間の 1 つ以上の矢印を選択し、選択した矢印の 1 つを右クリックします。
+
+   複数のノードまたは矢印を選択するには、Command （Macの場合）または Ctrl （Windows の場合）を押します。
 
 1. [!UICONTROL **トレンド**] を選択します。
 
