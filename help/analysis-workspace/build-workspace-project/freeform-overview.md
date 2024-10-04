@@ -5,10 +5,10 @@ title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 6%
+source-wordcount: '1628'
+ht-degree: 7%
 
 ---
 
@@ -78,21 +78,21 @@ Customer Journey Analyticsのプロジェクトにアクセスするには、**[
 
 コンテキストメニュー ![ その他 ](/help/assets/icons/More.svg) または青いアクションバーを使用して、1 つ以上のプロジェクトに対してアクションを実行できます。
 
-| アクション | 説明 |
-|---|---|
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *が選択されました]** | 選択したプロジェクトとフォルダーの選択を解除して、青いアクションバーを削除します。 |
-| ![Delete](/help/assets/icons/Delete.svg)**[!UICONTROL Delete]** | 1 つ以上のプロジェクトまたはフォルダーを削除します。 確認メッセージが表示されます。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | プロジェクトを共有します。 詳しくは、[ プロジェクトの共有 ](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
-| ![ 編集 ](/help/assets/icons/Edit.svg) 名前変更 | プロジェクトの名前を変更する。 **[!UICONTROL 名前を変更：*プロジェクト名ダイアログ&#x200B;*]**を開きます。 新しい名前を入力し、「**[!UICONTROL 保存&#x200B;]**」を選択します。 |
-| ![ コピー ](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 1 つ以上のプロジェクトをコピーします。 プロジェクトの名前と接尾辞の `(Copy)` が同じになります。 |
-| ![ ピン留め ](/help/assets/icons/PinOff.svg)**[!UICONTROL ピン留め]** または **[!UICONTROL ピン留めを解除]** | 1 つ以上のプロジェクトまたはフォルダーをピン留めまたはピン留めを解除します。 ピン留めされたプロジェクトとフォルダーはリストの上部に表示され、指定した並べ替え順を無視します。 |
-| ![ArrowUp](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Move up]** | ピン留めされたプロジェクトまたはフォルダーをプロジェクトリスト内で上に移動します。 |
-| ![ArrowDown](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Move down]** | ピン留めされたプロジェクトまたはフォルダーを、プロジェクトリスト内で下に移動します。 |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | 1 つ以上のプロジェクトまたはフォルダーにタグを付けます。 **[!UICONTROL タグコンポーネント]** ダイアログが表示され、1 つ以上のタグを選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したプロジェクトまたはフォルダーのタグを保存します。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL 承認]** または **[!UICONTROL 未承認]** | プロジェクトを承認または未承認にする。 管理者のみがプロジェクトを承認できます。 |
-| ![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Export CSV]** | 選択したプロジェクトを `Project List.csv` という名前の CSV ファイルにエクスポートします。 |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg)**[!UICONTROL Add Projects]** | 選択したフォルダーに 1 つ以上のプロジェクトを追加します。 **[!UICONTROL プロジェクトを追加]** で、1 つ以上のプロジェクトを選択できます。 「**[!UICONTROL 追加]**」を選択して、プロジェクトをフォルダーに追加します。 詳しくは、[ フォルダーへのプロジェクトの追加 ](workspace-folders/add-projects.md#from-inside-a-folder) を参照してください。 |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg)**[!UICONTROL Move to]** | 選択した 1 つ以上のプロジェクトをフォルダーに移動します。 **[!UICONTROL フォルダーを選択]** で、選択したプロジェクトの移動先フォルダーを選択し、「**[!UICONTROL 移動]**」を選択します。 詳しくは、[ フォルダーへのプロジェクトの追加 ](workspace-folders/add-projects.md#from-the-project-list) を参照してください。 |
+| アイコン | アクション | 説明 |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *個選択済み]** | 選択したプロジェクトとフォルダーの選択を解除して、青いアクションバーを削除します。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 1 つ以上のプロジェクトまたはフォルダーを削除します。 確認メッセージが表示されます。 |
+| ![共有](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共有]** | プロジェクトを共有します。 詳しくは、[ プロジェクトの共有 ](/help/analysis-workspace/curate-share/share-projects.md) を参照してください。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | プロジェクトの名前を変更する。 **[!UICONTROL 名前を変更：*プロジェクト名ダイアログ&#x200B;*]**を開きます。 新しい名前を入力し、「**[!UICONTROL 保存&#x200B;]**」を選択します。 |
+| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 1 つ以上のプロジェクトをコピーします。 プロジェクトの名前と接尾辞の `(Copy)` が同じになります。 |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL ピン留め]** または **[!UICONTROL ピン留めを解除]** | 1 つ以上のプロジェクトまたはフォルダーをピン留めまたはピン留めを解除します。 ピン留めされたプロジェクトとフォルダーはリストの上部に表示され、指定した並べ替え順を無視します。 |
+| ![ 上矢印 ](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上へ移動]** | ピン留めされたプロジェクトまたはフォルダーをプロジェクトリスト内で上に移動します。 |
+| ![ 下矢印 ](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下へ移動]** | ピン留めされたプロジェクトまたはフォルダーを、プロジェクトリスト内で下に移動します。 |
+| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 1 つ以上のプロジェクトまたはフォルダーにタグを付けます。 **[!UICONTROL タグコンポーネント]** ダイアログが表示され、1 つ以上のタグを選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したプロジェクトまたはフォルダーのタグを保存します。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** または **[!UICONTROL 未承認]** | プロジェクトを承認または未承認にする。 管理者のみがプロジェクトを承認できます。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV を書き出し]** | 選択したプロジェクトを `Project List.csv` という名前の CSV ファイルにエクスポートします。 |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL プロジェクトの追加]** | 選択したフォルダーに 1 つ以上のプロジェクトを追加します。 **[!UICONTROL プロジェクトを追加]** で、1 つ以上のプロジェクトを選択できます。 「**[!UICONTROL 追加]**」を選択して、プロジェクトをフォルダーに追加します。 詳しくは、[ フォルダーへのプロジェクトの追加 ](workspace-folders/add-projects.md#from-inside-a-folder) を参照してください。 |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移動先]** | 選択した 1 つ以上のプロジェクトをフォルダーに移動します。 **[!UICONTROL フォルダーを選択]** で、選択したプロジェクトの移動先フォルダーを選択し、「**[!UICONTROL 移動]**」を選択します。 詳しくは、[ フォルダーへのプロジェクトの追加 ](workspace-folders/add-projects.md#from-the-project-list) を参照してください。 |
 
 
 

@@ -4,7 +4,7 @@ title: 棒グラフおよび積み重ね棒グラフ
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 16%
@@ -38,7 +38,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="積み重ね棒グラフ"
->abstract="1 つ以上の積み重ね指標の様々な値を表す棒グラフ ビジュアライゼーションを作成します。"
+>abstract="棒グラフ ビジュアライゼーションを作成して、1 つ以上の積み重ね指標の様々な値を表します。"
 
 <!-- markdownlint-enable MD034 -->
 

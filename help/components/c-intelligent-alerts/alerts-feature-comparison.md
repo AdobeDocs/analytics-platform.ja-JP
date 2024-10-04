@@ -3,16 +3,16 @@ description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるアラ�
 title: アラート機能の比較Customer Journey AnalyticsとAdobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
 
 # アラート機能の比較
 
-Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。ただし、重要な違いがあります。 以下の節では、主な違いについて説明します。
+Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 ただし、重要な違いがあります。 以下の節では、主な違いについて説明します。
 
 ## 時間別アラートは、Customer Journey Analyticsでは使用できません
 
@@ -56,9 +56,8 @@ Adobe Analyticsでは、次のオプションを使用できます。
 
 * Analysis Workspaceでプロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL アラートを作成]** を選択します。
 
-* Analysis Workspaceでプロジェクトを開いて、次のショートカットを使用します。
+* Analysis Workspaceでプロジェクトを開き、ショートカットキー **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**（Windows）または**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** （macOS）を使用します。
 
-  `ctrl (or cmd) + shift + a`
 
 
 

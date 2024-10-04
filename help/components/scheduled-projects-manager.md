@@ -4,10 +4,10 @@ title: 指標
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 25%
+source-wordcount: '784'
+ht-degree: 15%
 
 ---
 
@@ -15,15 +15,20 @@ ht-degree: 25%
 
 スケジュールされたAnalysis Workspace プロジェクトは、**[!UICONTROL コンポーネント]**/**[!UICONTROL スケジュールされたプロジェクト]** を使用してCustomer Journey Analyticsで管理できます。
 
-スケジュ **[!UICONTROL ルされたプロジェクト]** では、繰り返しプロジェクトスケジュールを編集および削除できます。 ![ 検索 ](/help/assets/icons/Search.svg) 検索フィールドを使用してスケジュールを検索します。 または、左側のパネルの ![ フィルター ](/help/assets/icons/Filter.svg) フィルターオプションを使用します。 **[!UICONTROL タグ]**、**[!UICONTROL 所有者]**、**[!UICONTROL その他のフィルター]** でフィルタリングできます。
+**[!UICONTROL スケジュールされたプロジェクト]** では、繰り返しプロジェクトスケジュールを編集および削除できます。  [ スケジュール済みプロジェクトリスト ](#scheduled-project-list) には、特定のユーザーが作成した項目が表示されます。 アプリケーションでユーザーアカウントが無効になっている場合、スケジュールされたすべての配信が停止します。
 
-「スケジュール済みプロジェクト」リストには、次の列が表示されます。
+![ スケジュールされたプロジェクトインターフェイス ](assets/scheduled-projects.png)
 
-| フィールド | 説明 |
+## スケジュール済みプロジェクトリスト
+
+「スケジュール済みプロジェクト」リストには、次の列➊が表示されます。
+
+| 列 | 説明 |
 | --- | --- |
-| ![ 星 ](/help/assets/icons/Star.svg) | 「![ 星 ](/help/assets/icons/Star.svg)」を選択すると、このスケジュールがお気に入りになります。 |
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | スケジュールされたプロジェクトを 1 つ以上選択すると、スケジュールされたプロジェクト インターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[ アクション ](#actions) を参照してください。 |
+| ![ 星 ](/help/assets/icons/Star.svg) | スケジュールされたプロジェクトを ![ 星 ](/help/assets/icons/Star.svg) にするか、![ 星の概要 ](/help/assets/icons/StarOutline.svg) にするかを選択します。 |
 | **[!UICONTROL スケジュール ID]** | 主にデバッグ目的で使用される ID。 |
-| [!UICONTROL 名前] | このプロジェクトの名前。<br/>![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、スケジュールされたプロジェクトの詳細が表示されます。<br/> 詳細 ![ を選択して ](/help/assets/icons/More.svg) コンテキストメニューを開きます。 このメニューから、次の操作を実行できます。<ul><li>![ 削除 ](/help/assets/icons/Delete.svg)**[!UICONTROL 削除]** スケジュールされたプロジェクト。</li><li>![ ラベル ](/help/assets/icons/Labels.svg)**[!UICONTROL タグ付け]** スケジュールされたプロジェクト。</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Approve]** スケジュールされたプロジェクト。</li><li>![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Export CSV]**：スケジュールされたプロジェクトを CSV ファイルに書き出します。</li></ul> |
+| **[!UICONTROL 名前]** | このプロジェクトの名前。<br/>![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、スケジュールされたプロジェクトの詳細が表示されます。<br/> 詳細 ![ を選択して ](/help/assets/icons/More.svg) コンテキストメニューを開きます。 このメニューから、次の操作を実行できます。<ul><li>![ 削除 ](/help/assets/icons/Delete.svg)**[!UICONTROL 削除]** スケジュールされたプロジェクト。</li><li>![ ラベル ](/help/assets/icons/Labels.svg)**[!UICONTROL タグ付け]** スケジュールされたプロジェクト。</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Approve]** スケジュールされたプロジェクト。</li><li>![FileCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Export CSV]**：スケジュールされたプロジェクトを CSV ファイルに書き出します。</li></ul> |
 | **[!UICONTROL 所有者]** | プロジェクトを作成し所有しているユーザー。 |
 | **[!UICONTROL タグ]** | （任意）タグ付けは、プロジェクトを整理するのに適した方法です。すべてのユーザーがタグを作成し、1 つ以上のタグをプロジェクトに適用できます。ただし、タグを表示できるのは、自分が所有しているプロジェクトか、自分と共有されているプロジェクトに限られます。 |
 | **[!UICONTROL 配信先]** | スケジュールされたプロジェクトの受信者。 |
@@ -34,27 +39,55 @@ ht-degree: 25%
 | **[!UICONTROL 最長の日付範囲]** | スケジュールされたプロジェクトに定義されている最長の日付範囲。 この値は、パフォーマンスの問題の調査に関連する可能性があります。 詳しくは、[ レポートアクティビティマネージャー ](/help/reporting-activity-manager/reporting-activity-overview.md) を参照してください。 |
 | **[!UICONTROL クエリ数]** | スケジュールされたプロジェクトで実行されたクエリの数。 この値は、パフォーマンスの問題の調査に関連する可能性があります。 詳しくは、[ レポートアクティビティマネージャー ](/help/reporting-activity-manager/reporting-activity-overview.md) を参照してください。 |
 
+
 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用して、表示する列を構成できます。
 
-スケジュールされたプロジェクトには、特定のユーザーが作成した項目が表示されます。 アプリケーションでユーザーアカウントが無効になっている場合、スケジュールされたすべての配信が停止します。
+![ 検索 ](/help/assets/icons/Search.svg) を使用して、スケジュールされたプロジェクトを検索します。 また、フィルターパネルからフィルターが適用されているかどうかを確認することもできます。 フィルターを削除するには、フィルターに ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択します。 すべてのフィルターを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
+
+スケジュールされたプロジェクトを編集するには、スケジュールされたプロジェクトのタイトルを選択します。 **[!UICONTROL スケジュールされたプロジェクトを編集]** ダイアログを使用して、スケジュールの詳細を更新します。
+
+![ スケジュールされたプロジェクトを編集 ](assets/edit-scheduled-project.png)
+
+「**[!UICONTROL 更新]**」を選択して、スケジュールを更新します。
+
 
 
 
 ## アクション
 
-スケジュール済みプロジェクトマネージャーで一般的なアクションは次のとおりです。 コンテキストメニューから、または複数のスケジュールされたプロジェクトを選択する際の青いアクションバーから、アクションを選択できます。
+スケジュール済みプロジェクトマネージャーで一般的なアクションは次のとおりです。 1 つ以上のスケジュールされたプロジェクトを選択する際に、コンテキストメニューまたは青いアクションバーからアクションを選択できます。
 
-| アクション | 説明 |
+| アイコン | アクション | 説明 |
+|:---:|---|---|
+| ![閉じる](/help/assets/icons/Close.svg) | **[!UICONTROL *x *個選択済み]** | 「」を選択すると、選択したスケジュールされたプロジェクトの選択を解除できます。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | プロジェクト用に選択したスケジュール済みプロジェクトを削除します。プロジェクトは削除されません。 |
+| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したスケジュール済みプロジェクトにタグ付けします。 **[!UICONTROL スケジュールされたプロジェクトにタグ付け]** で、タグを選択し、「**[!UICONTROL 保存]**」を選択して保存します。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択したスケジュールされたプロジェクトを承認します。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 選択したスケジュールされたプロジェクトを `Export Scheduled Projects List.csv` という名前のファイルにエクスポートします。 |
+
+
+## フィルター
+
+フィルターパネル➌を使用して、スケジュールされたプロジェクト [ スケジュールされたプロジェクトリスト ](#scheduled-project-list) をフィルタリングできます。 フィルターパネルを表示または非表示にするには、![ フィルター ](/help/assets/icons/Filter.svg) を使用します。
+
+フィルターパネルは、次のセクションで構成されます。
+
+### タグ
+
+| タグ | 説明 |
 |---|---|
-| **[!UICONTROL 承認]** | スケジュールされたプロジェクトを承認します。 |
-| **[!UICONTROL 編集]** | スケジュールのタイトルをクリックして、配信設定を更新します。 |
-| **[!UICONTROL 削除]** | プロジェクトに対して選択したスケジュールを削除します。プロジェクト自体は削除されません。 |
-| **[!UICONTROL タグ]** | スケジュールされたプロジェクトにタグを付けて、プロジェクトを見つけやすくします。 |
+| ![タグ](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | 「**[!UICONTROL タグ]**」セクションでは、タグに対してフィルターを適用できます。 <ul><li>![ 検索 ](/help/assets/icons/Search.svg)**[!UICONTROL タグを検索]** を使用して、フィルタリングに使用するタグを検索します。</li><li>複数のタグを選択できます。 使用できるタグは、フィルターパネルの他のセクションで選択した内容によって異なります。</li><li>数値は次の内容を示します。<ul><li>7︎⃣：特定のタグに関連付けられているスケジュールされたプロジェクトの数。</li></ul></li></ul> |
 
-![ フィルター ](/help/assets/icons/Filter.svg) フィルターを使用すると、次の操作も実行できます。
 
-| アクション | 説明 |
+### 所有者
+
+| 所有者 | 説明 |
 |---|---|
-| **[!UICONTROL 失敗スケジュールを表示]** | **[!UICONTROL その他のフィルター]** に移動し、「**[!UICONTROL 失敗]** を選択して、失敗したスケジュールを表示します。 |
-| **[!UICONTROL 期限切れスケジュールを表示]** | **[!UICONTROL その他のフィルター]** に移動し、「**[!UICONTROL 期限切れ]**」を選択して、期限切れのスケジュールを表示します。 スケジュールのタイトルをクリックして、新しい配信スケジュールを設定します。 |
+| ![ 所有者 ](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | **[!UICONTROL 所有者]** セクションでは、所有者をフィルタリングできます。 <ul><li>![Search](/help/assets/icons/Search.svg)*Search Owners* を使用して、フィルタリングに使用する所有者を検索します。</li><li>複数の所有者を選択できます。 使用できる所有者は、フィルターパネルの他のセクションで選択した内容によって異なります。</li><li>数値は次の内容を示します。<ul><li>4︎⃣：特定の所有者に関連付けられているスケジュールされたプロジェクトの数。</li></ul></li></ul> |
 
+
+### その他のフィルター
+
+| その他のフィルター | 説明 |
+|---|---|
+| ![その他のフィルター](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | 「**[!UICONTROL その他のフィルター]**」セクションでは、他の定義済みフィルターでフィルタリングできます。<ul><li>次のオプションを 1 つ以上選択できます。<ul><li> **[!UICONTROL 期限切れ]**：期限切れのスケジュール済みプロジェクトをフィルタリングします。</li><li>**[!UICONTROL 失敗]**: スケジュールが失敗した、スケジュールされたプロジェクトをフィルタリングします。</li></ul>選択できる内容は、役割と権限によって異なります。</li><li>他の複数のフィルターを選択できます。 使用できるその他のフィルターは、フィルターパネルの他のセクションで選択した内容によって異なります。</li><li>数値は次の内容を示します。<ul><li>4︎⃣：特定の他のフィルターに関連付けられているスケジュールされたプロジェクトの数。</li></ul></li></ul> |

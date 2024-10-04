@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1469'
 ht-degree: 22%
 
 ---
@@ -117,6 +117,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 | [!UICONTROL  レポートツール ] | [!UICONTROL フィルターの作成] | ユーザーが [ フィルター ](/help/components/filters/filters-overview.md) を作成できるようにします。 ユーザーは、作成したフィルターまたは共有されたフィルターのみをタグ付け、共有、削除、名前変更、承認、未承認にすることができます。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL Labs のアクセス] | ユーザーがCustomer Journey Analyticsの「[Labs](/help/labs/labs.md)」タブにアクセスできるようにします。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 注釈の作成] | ユーザーが [ 注釈 ](/help/components/annotations/overview.md) を作成できるようにする ユーザーは、作成した注釈または共有された注釈にのみ、タグ付け、共有、削除および名前変更を行えます。 |
+| [!UICONTROL  レポートツール ] | [!UICONTROL オーディエンスの表示] | ユーザーが [ オーディエンス ](/help/components/audiences/audiences-overview.md) を表示できるようにする |
 | [!UICONTROL  レポートツール ] | [!UICONTROL オーディエンスの作成] | ユーザーが [ オーディエンス ](/help/components/audiences/audiences-overview.md) を作成できるようにする |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 監査ログへのアクセス] | [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) と監査ログ UI に対して権限チェックを実施します。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL  任意のユーザーとプロジェクトリンクを共有 ] | ユーザーが [ 任意のユーザーとプロジェクトを共有 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) できるようにする |

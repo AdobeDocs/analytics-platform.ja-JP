@@ -4,14 +4,14 @@ description: Customer Journey Analytics でのオーディエンス公開の概�
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 4d71aaaaa0ac0162588dd6767e6c6209676dfc18
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 50%
+source-wordcount: '506'
+ht-degree: 42%
 
 ---
 
-# Customer Journey Analyticsオーディエンス公開の概要
+# オーディエンス公開の概要
 
 Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja) に公開し、顧客のターゲティングやパーソナライゼーションに使用できるようになりました。
 
@@ -31,15 +31,15 @@ Customer Journey Analyticsで作成するオーディエンスは、プロファ
 
 **フィルター**：一連のデータを一定期間評価した場合に、データのサブセットを生成する一連のルール。フィルターは、他のサポートサービスと組み合わせて、オーディエンスを作成するプロセスで使用できます。フィルターはCustomer Journey Analyticsで定義および管理されます。
 
-**フィルター** と **セグメント**:Customer Journey Analyticsは、「セグメント」の概念を使用しません。代わりに、「フィルター」を使用します。 いずれにも類似したロジックを含めることができる一連のルールですが、生成される出力は異なります。フィルターは、分析目的でデータセットを絞り込むために使用します。セグメントは、アクティベーションに使用できる ID のリストを生成するために使用されます。セグメントはリアルタイム顧客プロファイルでオーディエンスを生成しますが、フィルター（単独）では生成されません。Customer Journey Analyticsオーディエンスの公開は、Customer Journey Analyticsフィルターを使用して、リアルタイム顧客プロファイルで利用できるオーディエンスを作成するプロセスです。
+**フィルター** と **セグメント**:Customer Journey Analyticsでは、*セグメント* の概念を使用しません。代わりに、*フィルター* を使用します。 いずれにも類似したロジックを含めることができる一連のルールですが、生成される出力は異なります。フィルターは、分析目的でデータセットを絞り込むために使用します。セグメントは、アクティベーションに使用できる ID のリストを生成するために使用されます。セグメントはリアルタイム顧客プロファイルでオーディエンスを生成しますが、フィルター（単独）では生成されません。Customer Journey Analyticsオーディエンスの公開は、Customer Journey Analyticsフィルターを使用して、リアルタイム顧客プロファイルで利用できるオーディエンスを作成するプロセスです。
 
 ## 権限
 
-* 管理者には、Adobe Admin Console での&#x200B;**[!UICONTROL オーディエンス公開]**&#x200B;権限が自動的に付与されます。
+* 管理者には、Adobe Admin Consoleでの **[!UICONTROL オーディエンスの公開]** 権限が付与されます。
 
-* 管理者は、この権限を個々のユーザーに付与できます。
+* 管理者と製品プロファイル管理者は、個々のユーザーに **[!UICONTROL オーディエンスの作成]** および **[!UICONTROL オーディエンスの表示]** 権限を付与できます。 詳しくは、[ ユーザーレベルのアクセス制御 ](/help/technotes/access-control.md#user-level-access) を参照してください。
 
-* 管理者には Adobe Experience Platform での&#x200B;**[!UICONTROL プロファイル管理]**&#x200B;権限も必要です。
+* 管理者にはAdobe Experience Platformでの **[!UICONTROL プロファイルの管理]** 権限も必要です。
 
 ## データガバナンスと同意
 
