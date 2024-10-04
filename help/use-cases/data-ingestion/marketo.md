@@ -1,18 +1,18 @@
 ---
-title: Marketo Engage データの Adobe Experience Platform への取り込みと Customer Journey Analytics でのレポート
-description: Marketo EngageデータをCustomer Journey Analyticsに取り込む方法を説明します
+title: Marketo Engageデータのレポート
+description: Customer Journey AnalyticsのMarketo Engageデータに関するレポート方法を学ぶ
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 64%
+source-wordcount: '376'
+ht-degree: 59%
 
 ---
 
-# Marketo Engage データの Adobe Experience Platform への取り込みと Customer Journey Analytics でのレポート
+# Marketo Engageデータのレポート
 
 Adobe Experience Platform（Adobe Experience Platform）で新しく使用できるようになったMarketo Engageデータセットを活用して、B2B マーケターに価値のある分析およびレポートソリューションを提供できます。 次に、Adobe Customer Journey Analyticsでこれらのデータセットについてレポートします。
 

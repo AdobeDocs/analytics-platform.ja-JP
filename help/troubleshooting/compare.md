@@ -1,19 +1,19 @@
 ---
-title: Adobe Analytics データと Customer Journey Analytics データの比較
+title: Adobe Analytics データとの比較
 description: Adobe Analytics データを Customer Journey Analytics のデータと比較する方法を学ぶ
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
-# Adobe Analytics データと Customer Journey Analytics データの比較
+# Adobe Analytics データとの比較
 
 組織で Customer Journey Analytics を導入すると、Adobe Analytics と Customer Journey Analytics のデータにいくつか違いが出ることがあります。これは正常な動作で、いくつかの理由で発生する場合があります。Customer Journey Analytics は、AA のデータに関する制限の一部を改善できるように設計されています。ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念に妨げられることなくユーザーとチームが Customer Journey Analytics を使用できるように、それらの違いを診断し、解決することを目的としています。
 

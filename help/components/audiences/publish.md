@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 17%
+source-wordcount: '1952'
+ht-degree: 16%
 
 ---
 
@@ -147,25 +147,25 @@ Customer Journey Analyticsでオーディエンスを作成して公開すると
 
 ## Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、それらをリアルタイム顧客プロファイル（RTCP）にストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送信します。
+Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-time Customer Data Platformにストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送信します。
 
-次に、RTCP は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、Real-time Customer Data Platformは、各名前空間/ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。 プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
 Platform でCustomer Journey Analyticsオーディエンスを表示するには：
 
-1. 左側のパネルで [!UICONTROL **顧客**] を展開し、「[!UICONTROL **オーディエンス**]」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
+1. 左側のパネルで **[!UICONTROL 顧客]** を展開し、「**[!UICONTROL オーディエンス]**」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
 
-1. 「[!UICONTROL **参照**] タブを選択します。
-
-   ![ 左パネルの「オーディエンス」オプション ](assets/audiences-aep.png)
+1. 「**[!UICONTROL 参照]** タブを選択します。
 
 1. Customer Journey Analyticsから公開したオーディエンスを見つけるには、次のいずれかの操作を行います。
 
-   * [!UICONTROL **オリジン**] 列でテーブルを並べ替えると、[!UICONTROL **Customer Journey Analytics**] をオリジンとして示すオーディエンスが表示されます。
+   ![ 左パネルの「オーディエンス」オプション ](assets/aep-audiences.png)
 
-   * フィルターアイコンを選択します。
+   * **[!UICONTROL オリジン]** 列でテーブルを並べ替えると、[!UICONTROL **Customer Journey Analytics**] をオリジンとして示すオーディエンスが表示されます。
 
-   * 検索フィールドを使用します。
+   * ![ 接触チャネル ](/help/assets/icons/Filter.svg) に対して **[!UICONTROL フィルター]** を適用し、**[!UICONTROL Customer Journey Analytics]** を選択します。
+
+   * ![ 検索 ](/help/assets/icons/Search.svg) 検索フィールドを使用します。
 
 Platform でのオーディエンスの使用について詳しくは、Experience Platformドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) の節を参照してください。
 
@@ -186,7 +186,7 @@ Customer Journey Analyticsオーディエンスを削除すると、そのオー
 
 +++
 
-+++**対応するプロファイルが RTCDP に存在しない場合、新しいプロファイルは作成されますか？**
++++**対応するプロファイルがReal-time Customer Data Platformに存在しない場合、新しいプロファイルは作成されますか？**
 
 はい、作成されます。
 
@@ -194,7 +194,7 @@ Customer Journey Analyticsオーディエンスを削除すると、そのオー
 
 +++**Customer Journey Analyticsは、オーディエンスデータをパイプラインイベントとして送信しますか、それともデータレイクにも送られるフラットファイルとして送信しますか？**
 
-Customer Journey Analyticsはパイプラインを介してデータを RTCP にストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
+Customer Journey Analyticsは、パイプラインを介してデータをReal-time Customer Data Platformにストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
 
 +++
 
@@ -210,9 +210,9 @@ Customer Journey Analyticsはパイプラインを介してデータを RTCP に
 
 +++
 
-+++**RTCP はCustomer Journey Analyticsメッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
++++**Real-time Customer Data PlatformはCustomer Journey Analyticsメッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
-いいえ。1 人につき 1 つの ID のみが送信されるので、RTCP が使用するグラフエッジはありません。
+いいえ。1 人のユーザーにつき 1 つの ID のみが送信されるので、Real-time Customer Data Platformが使用するグラフエッジはありません。
 
 +++
 

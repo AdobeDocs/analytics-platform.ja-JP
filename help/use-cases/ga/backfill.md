@@ -1,19 +1,19 @@
 ---
-title: Google Analytics 履歴データの Adobe Experience Platform への取り込み
+title: Google Analytics履歴データの取り込み
 description: Adobe Customer Journey Analyticsを使用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法を説明します。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 90%
+source-wordcount: '618'
+ht-degree: 88%
 
 ---
 
 
-# Google Analytics 履歴データの Adobe Experience Platform への取り込み
+# Google Analytics履歴データの取り込み
 
 このページでは、Google Analytics の履歴データをデータセットとして Adobe Experience Platform に取り込み、Customer Journey Analytics 内のデータビューでそのデータセットを参照できるようにする方法について重点的に説明します。このページの手順を、繰り返しデータセットの生成について説明した[ライブ Google Analytics の実装の設定](streaming.md)のページと組み合わせることができます。この履歴データセットを現在の実装環境のデータセットと組み合わせることで、Customer Journey Analytics に現在のデータとバックフィルされたデータの両方をシームレスに表示して確認できます。
 

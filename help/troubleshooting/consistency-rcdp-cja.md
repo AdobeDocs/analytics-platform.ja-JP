@@ -1,18 +1,18 @@
 ---
 description: Real-time Customer Data Platform（Real-time CDP）と Customer Journey Analytics の間の指標とオーディエンスメンバーシップのカウントの一貫性に影響する要因について説明します。
-title: Real-Time CDP と Customer Journey Analytics 間の指標およびオーディエンスメンバーシップカウントの一貫性
+title: 指標とオーディエンスメンバーシップの一貫性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
 
-# Real-Time CDP と Adobe Customer Journey Analytics 間の指標およびオーディエンスメンバーシップカウントの一貫性
+# 指標とオーディエンスメンバーシップの一貫性
 
 実際のシナリオでは、Real-time Customer Data Platform（Real-time CDP）と Customer Journey Analytics 全体で指標とオーディエンスメンバーシップのカウントの一貫性を保証することはできません。このドキュメントでは、その理由を説明します。
 

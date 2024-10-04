@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2348'
 ht-degree: 59%
 
 ---
 
-# Adobe Experience Platform Edge Networkサーバー API を使用したデータの取り込み
+# Edge Networkサーバー API を使用したデータの取り込み
 
 このクイックスタートガイドでは、IoT デバイス、セットトップボックス、ゲームコンソール、デスクトップアプリケーションなどのデバイスからAdobe Experience Platform Edge Networkサーバー API およびEdge Networkを使用してトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 

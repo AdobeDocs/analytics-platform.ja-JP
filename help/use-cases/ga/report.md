@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics での Google Analytics データに関するレポート
+title: Google Analyticsデータのレポート
 description: Customer Journey Analytics での Google Analytics データに関する有用なレポートを示します
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 87%
+source-wordcount: '682'
+ht-degree: 85%
 
 ---
 
-# Customer Journey Analytics での Google Analytics データに関するレポート
+# Google Analyticsデータのレポート
 
 Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。
 

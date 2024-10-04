@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 91%
+source-wordcount: '964'
+ht-degree: 86%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 91%
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Experience PlatformEdge Network{#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server API](../data-ingestion/serverapi.md)
@@ -115,7 +115,7 @@ ht-degree: 91%
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace のフォルダー {#workspace-folders}
-         + [Workspaceのフォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [フォルダーの管理](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [フォルダーへのプロジェクトの追加または移動](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -175,7 +175,7 @@ ht-degree: 91%
       + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
       + [メディア分平均オーディエンス](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [メディア同時閲覧者数](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [メディア再生に費やした時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
@@ -191,20 +191,20 @@ ht-degree: 91%
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + 異常値検出 {#anomaly-detection}
       + [概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Analysis Workspace での異常値の表示](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [異常値検出で使用される統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [異常値を表示](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 予測 {#forecasting}
       + [概要](../analysis-workspace/c-forecast/forecasting.md)
-      + [Analysis Workspace での予測表示](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [予測サービスで使用される統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
-      + [目次 ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [予測の表示](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + [目次 ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
-   + Workspace FAQ {#workspace-faq}
+   + Workspaceに関する FAQ と {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
       + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace の制限](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [制限事項](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Analysis Workspace のアクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics ダッシュボード {#cja-dashboards}
    + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
@@ -360,10 +360,10 @@ ht-degree: 91%
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
-      + [Google Analytics から Customer Journey Analytics へのデータ移行の概要](../use-cases/ga/overview.md)
-      + [Platform への Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
-      + [Platform への Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
-      + [Customer Journey Analytics での Google Analytics データに関するレポート](../use-cases/ga/report.md)
+      + [Google Analyticsからデータを移行する](../use-cases/ga/overview.md)
+      + [Google Analytics履歴データの取り込み](../use-cases/ga/backfill.md)
+      + [ストリーミングGoogle Analyticsデータの設定](../use-cases/ga/streaming.md)
+      + [Google Analyticsデータのレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
       + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
       + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -390,14 +390,14 @@ ht-degree: 91%
    + ステッチ {#stitching}
       + [共有デバイス](/help/use-cases/stitching/shared-devices.md)
    + 派生フィールド {#derived-fields}
-      + [派生フィールドを使用した目標に関するレポート](../use-cases/goals-using-derived-fields.md)
+      + [目標のレポート](../use-cases/goals-using-derived-fields.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
 
 + トラブルシューティング {#troubleshooting}
-   + [Adobe Analytics データと Customer Journey Analytics データの比較](../troubleshooting/compare.md)
-   + [Real-Time CDP と Customer Journey Analytics 間の指標およびオーディエンスメンバーシップカウントの一貫性](../troubleshooting/consistency-rcdp-cja.md)
+   + [データの比較](../troubleshooting/compare.md)
+   + [指標とオーディエンスの一貫性](../troubleshooting/consistency-rcdp-cja.md)
    + [権限の不足](../troubleshooting/lack-of-permissions.md)
 
 + テクニカルノート {#technotes}
@@ -408,7 +408,7 @@ ht-degree: 91%
    + [用語集](../technotes/glossary.md)
    + [ガードレール](../technotes/guardrails.md)
    + [IP アドレス](../technotes/ip-addresses.md)
-   + [Customer Journey Analytics のパフォーマンスの最適化](../technotes/optimizing-performance.md)
+   + [パフォーマンスの最適化](../technotes/optimizing-performance.md)
    + [使用状況の表示と管理](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

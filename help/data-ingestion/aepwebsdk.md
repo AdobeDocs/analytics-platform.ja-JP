@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3543'
 ht-degree: 83%
 
 ---
 
-# Adobe Experience Platform Web SDK を使用したデータの取り込み
+# Web SDK を使用したデータの取り込み
 
 このクイックスタートガイドでは、Adobe Experience Platform Web SDK と Edge Network を使用して web サイトトラッキングデータを Adobe Experience Platform に直接取り込み、Customer Journey Analytics で使用する方法について説明します。
 

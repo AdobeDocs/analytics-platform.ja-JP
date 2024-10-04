@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform への Google Analytics データのストリーミング設定
+title: ストリーミングGoogle Analyticsデータの設定
 description: Google データレイヤーを Adobe Experience Platform に送信するための実装の設定方法について説明します
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '226'
+ht-degree: 84%
 
 ---
 
-# Adobe Experience Platform への Google Analytics データのストリーミング設定
+# ストリーミングGoogle Analyticsデータの設定
 
 このページでは、ライブ Google Analytics のデータを Adobe Experience Platform に取り込み、Customer Journey Analytics 内のデータビューでそのデータセットを参照する方法について重点的に説明します。このページの手順を、履歴データを含むデータセットの生成方法を説明した [Google Analytics 履歴データの Adobe Experience Platform への取り込み](backfill.md)ページと組み合わせることができます。ストリーミングデータセットとバックフィルデータセットを組み合わせて、過去のデータと現在のデータをシームレスにCustomer Journey Analytics に表示して確認できます。
 

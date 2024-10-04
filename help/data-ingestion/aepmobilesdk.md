@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# Adobe Experience Platform Mobile SDK を介したデータの取り込み
+# Mobile SDK を介したデータの取り込み
 
 このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK とEdge Networkを使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 
@@ -283,7 +283,7 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成および設定する�
 また、カタログから次の追加拡張機能も設定する必要があります。
 
 - ID。
-- AEP Assurance.
+- AEP Assurance。
 - 同意。
 
 拡張機能とその設定について詳しくは、Experience Platform 用モバイルアプリチュートリアルの [ タグプロパティの設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) を参照してください。

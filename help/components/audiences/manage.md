@@ -4,9 +4,9 @@ description: Customer Journey Analytics でのオーディエンスの管理方�
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 20%
 
 ---
@@ -24,6 +24,8 @@ ht-degree: 20%
 * Customer Journey Analyticsのオーディエンスが **Real-time Customer Platform でアクティブに使用されている** かどうかを確認します。 または（理想的に） Customer Journey Analyticsで作成されたオーディエンスを使用するExperience Platformアプリケーション。
 
 [ オーディエンス表示 ](/help/technotes/access-control.md#user-level-access) アクセス権がある場合は、オーディエンスを表示できます。 [ オーディエンスの作成 ](/help/technotes/access-control.md#user-level-access) アクセス権を持っている場合は、オーディエンスを編集および削除できます。 [ オーディエンスリスト ](#audiences-list) には、オーディエンスが表示されます。
+
+![Audiences マネージャー ](assets/audiences-manager.png)
 
 ## オーディエンスリスト
 
