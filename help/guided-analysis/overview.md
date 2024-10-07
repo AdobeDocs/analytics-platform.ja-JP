@@ -5,10 +5,10 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 82%
 
 ---
 
@@ -84,11 +84,11 @@ Customer Journey Analyticsホームページからガイド付き分析にアク
 
 | パッケージ | 利用可能なビュー |
 | --- | --- |
-| [!UICONTROL CJA アドオン] | トレンド：使用状況、トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
-| [!UICONTROL CJA Foundation] | トレンド：使用状況 |
-| [!UICONTROL CJA Select] | 基盤ビュー+ トレンド：頻度、ファネル：摩擦、ファネル：コンバージョンのトレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
-| [!UICONTROL CJA Prime] | ビュー+ ユーザーストリームを選択：タイムライン、機能マトリックス：エンゲージメント、影響：リリース、影響：初回使用 |
-| [!UICONTROL CJA Ultimate] | Prime ビュー数 |
+| [!UICONTROL Customer Journey Analyticsアドオン ] | トレンド：使用状況、トレンド：頻度、ファネル：摩擦、ファネル：コンバージョントレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL Customer Journey Analytics基盤 ] | トレンド：使用状況 |
+| [!UICONTROL Customer Journey Analyticsを選択 ] | 基盤ビュー+ トレンド：頻度、ファネル：摩擦、ファネル：コンバージョンのトレンド、リテンション：リテンション率、ユーザーの増加：アクティブ、ユーザーの増加：純増加率 |
+| [!UICONTROL Customer Journey Analyticsプライム ] | ビュー+ ユーザーストリームを選択：タイムライン、機能マトリックス：エンゲージメント、影響：リリース、影響：初回使用 |
+| [!UICONTROL Ultimate Customer Journey Analytics] | Prime ビュー数 |
 
 {style="table-layout:auto"}
 
