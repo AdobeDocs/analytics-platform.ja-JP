@@ -1,17 +1,17 @@
 ---
 description: Analysis Workspace のデータ要素を使用すると、Analysis Workspace の様々なコンポーネント（使用目的、承認済み、重複など）をカタログ化して追跡できます。
-title: データ要素の表示
+title: コンポーネント情報の表示
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 75%
+source-wordcount: '315'
+ht-degree: 73%
 
 ---
 
-# データ要素でのコンポーネント情報の表示
+# コンポーネント情報の表示
 
 データ要素を使用すると、コンポーネントの説明、類似のコンポーネント、コンポーネントが頻繁に使用される他のコンポーネントなど、コンポーネントに関する情報を表示できます。
 

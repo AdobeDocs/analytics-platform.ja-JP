@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 86%
+source-wordcount: '950'
+ht-degree: 85%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 86%
    + [基本分析の実行](../analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
    + プロジェクト {#build-workspace-project}
-      + [プロジェクトの概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
@@ -123,7 +123,7 @@ ht-degree: 86%
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
    + ビジュアライゼーション {#visualizations}
-      + [ビジュアライゼーションの概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [インテリジェントキャプション](../analysis-workspace/visualizations/intelligent-captions.md)
       + フリーフォームテーブル {#freeform-table}
@@ -179,7 +179,7 @@ ht-degree: 86%
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
-      + [共有メニュー](../analysis-workspace/curate-share/send-schedule-files.md)
+      + [概要](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
@@ -207,7 +207,7 @@ ht-degree: 86%
       + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics ダッシュボード {#cja-dashboards}
-   + [Analytics ダッシュボード - 概要](../mobile-app/home.md)
+   + [概要](../mobile-app/home.md)
    + [キュレータータスク](../mobile-app/curator.md)
    + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
    + [モバイルスコアカードの管理](../mobile-app/manage-scorecard.md)
@@ -238,7 +238,7 @@ ht-degree: 86%
    + [FAQ](../guided-analysis/faq.md)
 
 + コンポーネント {#cja-components}
-   + [コンポーネントの概要](../components/overview.md)
+   + [概要](../components/overview.md)
    + [Analysis Workspace でのコンポーネントの使用](../components/use-components-in-workspace.md)
    + [コンポーネントの説明の追加](../components/add-component-descriptions.md)
    + 注釈 {#annotations}
@@ -260,7 +260,7 @@ ht-degree: 86%
       + [基数の高いディメンション](../components/dimensions/high-cardinality.md)
    + [指標](../components/apply-create-metrics.md)
    + フィルター {#cja-filters}
-      + [フィルターの概要](../components/filters/filters-overview.md)
+      + [概要](../components/filters/filters-overview.md)
       + [フィルターの作成](../components/filters/create-filters.md)
       + [フィルターの作成](../components/filters/filter-builder.md)
       + [クイックフィルター](../components/filters/quick-filters.md)
@@ -274,7 +274,7 @@ ht-degree: 86%
       + [フィルターの管理](../components/filters/manage-filters.md)
       + [演算子](../components/filters/operators.md)
    + 計算指標 {#cja-calcmetrics}
-      + [計算指標の概要](../components/calc-metrics/calc-metr-overview.md)
+      + [概要](../components/calc-metrics/calc-metr-overview.md)
       + 計算指標のワークフロー {#cm-workflow}
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -315,13 +315,13 @@ ht-degree: 86%
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
    + データ要素 {#data-dictionary}
-      + [データ要素の概要](../components/data-dictionary/data-dictionary-overview.md)
+      + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [データ要素の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-   + [Report Builder の概要](../report-builder/report-buider-overview.md)
+   + [概要](../report-builder/report-buider-overview.md)
    + [Report Builder の設定](../report-builder/report-builder-setup.md)
    + [データブロックの作成](../report-builder/create-a-data-block.md)
    + [Report Builder ハブ](../report-builder/report-builder-hub.md)

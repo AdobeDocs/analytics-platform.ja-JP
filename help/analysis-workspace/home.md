@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1479'
 ht-degree: 13%
 
 ---
@@ -34,8 +34,8 @@ Analysis Workspaceを使用すると、分析をすばやく構築してイン�
 
 | 場所 | 名前と機能 |
 |:---------:|----------|
-| ?? | プロジェクトの名前、機能にアクセスするためのメニュー構造、プロジェクトリストに戻るためのボタン ![ChevronLeft](/help/assets/icons/ChevronLeft.svg)、Workspace プロジェクトを共有するためのボタン **[!UICONTROL Share]** が含まれています。 <br/> プロジェクトの名前を変更するには、いつでもプロジェクトの名前（例：プロジェクトの例）を選択します。 <br/> 「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト ![Star](/help/assets/icons/Star.svg) として追加します。 |
-| ?? | **ボタンパネル：** Analysis Workspaceの主要な [ 機能 ](#features) にアクセスするためのボタンが含まれています。<br/>![WebPage](/help/assets/icons/WebPage.svg)**[!UICONTROL Panels]**<br/>![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL  Guided Analysis]**<br/>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)**[!UICONTROL Visualizations]**<br/>![Curate](/help/assets/icons/Curate.svg)**[!UICONTROL  Components]**<br/>![ViewList](/help/assets/icons/ViewList.svg)**[!UICONTROL Table of contents]**<br/>![](/help/assets/icons/Bookmark.svg)****BookmarkAnalysisData |
+| ?? | プロジェクトの名前、機能にアクセスするためのメニュー構造、プロジェクトリストに戻るためのボタン ![ChevronLeft](/help/assets/icons/ChevronLeft.svg)、および [Workspace プロジェクトを共有 ]**するためのボタン**[!UICONTROL  共有 ](/help/analysis-workspace/curate-share/share-projects.md) が含まれています。 <br/> プロジェクトの名前を変更するには、いつでもプロジェクトの名前（例：新規プロジェクト）を選択します。 <br/> 「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト ![Star](/help/assets/icons/Star.svg) としてマークします。 |
+| ?? | **ボタンパネル：** Analysis Workspaceの主要な [ 機能 ](#features) にアクセスするためのボタンが含まれています。<ul><li>![Web ページ ](/help/assets/icons/WebPage.svg) [[!UICONTROL  パネル ]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ ガイド付き分析 ](/help/assets/icons/GuidedAnalysis.svg)[[!UICONTROL  ガイド付き分析 ]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)[[!UICONTROL  ビジュアライゼーション ]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Curate](/help/assets/icons/Curate.svg)[[!UICONTROL Components]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg)[[!UICONTROL  目次 ]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ ブックマーク ](/help/assets/icons/Bookmark.svg)[[!UICONTROL  データディクショナリ ]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ?? | **左パネル：** この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。 コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
 | ?? | **キャンバス：** 左側のパネルからコンテンツをドラッグしてプロジェクトを構築するメイン領域です。 パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。 複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/> 各パネルは、選択したデータビューに基づいています。 選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。 詳しくは、[ パネル – データビュー ](/help/analysis-workspace/c-panels/panels.md#data-view) を参照してください。 |
 
@@ -45,7 +45,7 @@ Analysis Workspaceの主な機能は、ボタンパネルから使用できま�
 
 | アイコン | 機能 | 説明 |
 |:---:|---|---|
-| ![Web ページ ](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md) を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。ボタンパネルで「![Web ページ ](/help/assets/icons/WebPage.svg)」を選択して、使用可能なパネルの完全なリストを表示します。 |
+| ![Web ページ ](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md) を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。 |
 | ![ ガイド付き分析 ](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL ガイド付き分析]** | [ ガイド付き分析 ](../guided-analysis/overview.md) では、ガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 分析を作成してWorkspace プロジェクトに含めたり、以前に保存した既存の分析を含めたりできます。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL ビジュアライゼーション]** | 棒グラフや折れ線グラフなどの [ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を使用して、データに命を吹き込むことができます。 左端のパネルで、中央の **[!UICONTROL ビジュアライゼーション]** アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。 |
 | ![ キュレーション ](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [ コンポーネント ](/help/components/overview.md) 次の要素があります。<ul><li>![Dimension](/help/assets/icons/Dimensions.svg) [Dimension](/help/components/dimensions/overview.md)</li><li>![ イベント ](/help/assets/icons/Event.svg)[ 指標 ](/help/components/apply-create-metrics.md)</li><li>![ セグメント化 ](/help/assets/icons/Segmentation.svg)[ フィルター ](/help/components/filters/filters-overview.md)</li><li>![ カレンダー ](/help/assets/icons/Calendar.svg)[ 日付範囲 ](/help/components/date-ranges/overview.md)</li></ul> |
