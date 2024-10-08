@@ -4,40 +4,47 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '820'
 ht-degree: 96%
 
 ---
 
 # Customer Journey Analytics ガイド
 
-このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
+このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
 
-Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータの接続方法を制御し、顧客データ全体でアトリビューション、フィルター、フロー、フォールアウトなどを実行できます。
+Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータの接続方法を制御し、顧客データ全体でアトリビューション、フィルター、フロー、フォールアウトなどを 実行できます。
 
 ## 新着情報
 
-Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。最新の変更内容を常に把握するには、[ドキュメントの更新ページ](../release-notes/doc-changes.md)にアクセスしてください。
+Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新の変更内容を常に把握するには、[ドキュメントの更新ページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
 
 >[!TAB AI アシスタント]
 
-AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。また、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
 
 [![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+
+>[!TAB  ガイド付き分析 ]
+
+ガイド付き分析をAnalysis Workspace内から直接使用できるようになり、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。
+
+[![画像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
 >[!TAB アラート]
 
-アラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受け取ることができます。 アラートがトリガーされる頻度をプレビューしたり、メールまたは SMS でアラートを送信したり、積み重ねられたアラートを作成したりできます。
+アラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。 アラートがどのような頻度でトリガーされるかをプレビュー、メールまたは SMS でのアラートを送信、積み重ねアラートを作成することなどを行うことができます。
 
 [![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB 概要データ]
 
-ユーザー ID を持たない時系列データを取り込むことができます。この時系列データは、次のような様々なユースケースをサポートするのに使用できます。
+ユーザー ID を持たない時系列データを取り込むことができます。 この時系列データは、次のような様々なユースケースをサポートするのに使用できます。
 
 - イベントレベルのデータの一部として、またはイベントレベルのデータの横に、高レベルのパフォーマンスインジケーターを表示する。
 - 時間単位または日単位でターゲットまたは目標をアップロードし、イベントレベルの指標に対してこれらのターゲットまたは目標を配置する。
@@ -66,33 +73,12 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB BI 拡張機能*]
 
-BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。お気に入りの BI ツールを使用して、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。
+BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツールを使用して、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
 *_BI 拡張機能を使用するには、Select パッケージ以上が必要です。_*
 
-
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB 予測]
-
-予測は、標準指標または計算指標を、サポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する Analysis Workspace 機能です。予測は、時系列関連のデータに対してのみ使用できます。
-
-[![i画像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB 新しいドキュメント]
-
-新しいドキュメントの節が以下で利用可能になりました。<ul><li>概要データのユースケースと B2B のユースケース。</li><li>Adobe Analytics から Customer Journey Analytics へのアップグレード方法。</li><li>データの書き出しのユースケースと、必要な Experience Platform およびカスタマージャーニー機能。 </li></ul>このドキュメントやその他のドキュメントの更新については、「**[!UICONTROL 詳細情報]**」を選択してください。
-
-[![i画像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
@@ -112,7 +98,7 @@ Audiences that are published from Customer Journey Analytics are now available i
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>ガイド付き分析</strong><br/>ワークフローを使用して、お客様の製品エクスペリエンスに関するデータとインサイトを取得する方法について説明します。ガイド付き分析による製品分析...
+    <div><strong>ガイド付き分析</strong><br/>ワークフローを使用して、お客様の製品エクスペリエンスに関するデータとインサイトを取得する方法について説明します。 ガイド付き分析による製品分析…
     </div>
     </td>
     <td>
@@ -131,7 +117,7 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 ## ドキュメントの参照
 
-Customer Journey Analytics と Adobe Analytics の比較方法について説明します。また、ソリューションにデータを取り込み、そのデータと結果として得られる分析とレポートを準備、表示、分析、民主化する方法についても説明します。
+Customer Journey Analytics と Adobe Analytics の比較方法について説明します。 また、ソリューションにデータを取り込み、そのデータと結果として得られる分析とレポートを準備、表示、分析、民主化する方法についても説明します。
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -178,4 +164,4 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>常に最新情報を入手、コミュニティに貢献し、Customer Journey Analytics エクスペリエンスを向上させましょう。</b><br>Adobe Analytics コミュニティにアクセスして、実務担当者と機能について語り合いましょう。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja">今すぐコミュニティに参加</a></td></tr></tbody></table>
+<b>常に最新情報を入手、コミュニティに貢献し、Customer Journey Analytics エクスペリエンスを向上させましょう。</b><br>Adobe Analytics コミュニティにアクセスして、実務担当者と機能について語り合いましょう。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja">今すぐコミュニティに参加</a></td></tr></tbody></table>

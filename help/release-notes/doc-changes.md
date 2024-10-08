@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4108'
 ht-degree: 69%
 
 ---
@@ -21,6 +21,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | --- | --- |
 | **2024年10月** | |
 | Workspaceとコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、フィルター、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
+| ガイド付き分析 | Analysis Workspace内から提供されている [ ガイド付き分析 ](/help/guided-analysis/overview.md) のドキュメントを更新しました。 |
 | **2024年9月** | |
 | 概要データの更新 | 概要データに関するレポートを作成する際の [ ルックアップデータ ](/help/data-views/summary-data.md#lookup-data) の適切な使用方法に関する情報を含む概要データに関する記事を更新しました。 |
 | BI 拡張機能の更新 | BI 拡張機能ドキュメントに [ デフォルトと制限 ](/help/data-views/bi-extension.md#defaults-and-limitations) の節を追加しました。 |
