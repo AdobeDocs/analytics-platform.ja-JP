@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 216783872bf4dd26fe2137dffe8994d03193b604
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 表示]**：この表示タイプと [ コンバージョントレンド ](conversion-trends.md) を切り替えます。
 * **[!UICONTROL 手順]**：トラッキングするイベントタッチポイント。 グラフ内の各棒グラフはステップを表します。 最大 10 個の手順を含めることができます。
-   * [!UICONTROL  比較 ]：各手順には、単一のファネルステップで複数のイベントを比較し、「フォークされたファネル」を作成するオプションが用意されています。 この機能を使用すると、2 つの異なる分析を作成せずに、2 つのジャーニーを並べて摩擦を比較できます。 これは、ステップオプションがある場合や、A/B 実験がファネル内で実行されている場合に便利です。 ファネルを比較する方法を説明するビデオについては、Customer Journey Analyticsチュートリアルの [ ファネルフリクション分析 ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis) を参照してください。
+   * [!UICONTROL  比較 ]：各手順には、単一のファネルステップで複数のイベントを比較し、「フォークされたファネル」を作成するオプションが用意されています。 この機能を使用すると、2 つの異なる分析を作成せずに、2 つのジャーニーを並べて摩擦を比較できます。 これは、ステップオプションがある場合や、A/B 実験がファネル内で実行されている場合に便利です。 ファネルの比較方法を説明するビデオについては、Customer Journey Analyticsチュートリアルの [ ファネル ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) を参照してください。
 * **[!UICONTROL カウント対象]**：ファネルに適用する範囲。 オプションには [!UICONTROL  セッション ] および [!UICONTROL  ユーザー ] が含まれます。
    * [!UICONTROL  セッション ]：すべての手順が同じセッション内で発生してカウントされる必要があります。
    * [!UICONTROL  ユーザー ]：すべての手順が、カウントされるためには、選択したレポートウィンドウ内で発生する必要があります。

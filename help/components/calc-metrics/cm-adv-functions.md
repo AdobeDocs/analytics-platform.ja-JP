@@ -4,7 +4,7 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '3126'
 ht-degree: 19%
@@ -168,7 +168,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL CONFIDENCE （normalizing-container, success-metric, control, significity-treshold）]**
 
-[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](http://arxiv.org/pdf/2103.06476) 低い）を計算します。
+[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](https://arxiv.org/pdf/2103.06476) 低い）を計算します。
 
 信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。 信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
 
@@ -183,7 +183,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL CONFIDENCE （normalizing-container, success-metric, control, significity-treshold）]**
 
-[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](http://arxiv.org/pdf/2103.06476) 上限）を計算します。
+[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](https://arxiv.org/pdf/2103.06476) 上限）を計算します。
 
 信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。 信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
 
