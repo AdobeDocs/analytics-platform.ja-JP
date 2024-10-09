@@ -4,10 +4,10 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 31%
 
 ---
 
@@ -20,130 +20,417 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[!DNL MAXV(metrics)] を [!DNL MAXV(PageViews + Visits).] としてもかまいません。
+>[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[COLUMN MAXIMUM （metrics） ](#column-maximum) では [COLUMN MAXIMUM （PageViews + Visits） ](#column-maximum) も使用できます。
 
 
-## 表関数と行関数
+## テーブル関数と行関数
 
-表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
+表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、テーブルの行ごとに出力が異なる関数です。 該当する場合は、関数のタイプで注釈が付けられます。
+
+
+## 絶対値
+
+![ 効果 ](/help/assets/icons/Effect.svg)**[!UICONTROL 絶対値（指標）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 絶対値を計算する指標。 |
+
+
+## 列の最大値
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM （metric, include_zeros）]**
+
+指標列の一連のディメンション要素の中の最大値を返します。MAXV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## 列の最小値
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM （metric, include_zeros）]**
+
+指標列の一連のディメンション要素の中の最小値を返します。MINV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## 列の合計値
+
+![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 列の合計（指標）]**
+
+（1 つのディメンションのすべての要素について） 1 つの列内の指標の数値をすべて加算します。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+
+
+## カウント
+
+![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL カウント（指標）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | カウントする指標。 |
+
+
+## 指数
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT （metric）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 底 e に適用される指数です。 |
+
+
+## 平均
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN （metric, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 平均を計算する指標。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## 中央値
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN （metric, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 中央値を計算する指標。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## 剰余
+
+![ エフェクト ](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO （metric_X, metric_Y）]**
+
+ユークリッド除算を使用して x を y で除算した後の剰余を返します。
+
+| 引数 | 説明 |
+|---|---|
+| metric_X | 分割する最初の指標。 |
+| metric_Y | 除算する 2 番目の指標。 |
+
+### 例
+
+返される値の符号は入力した値の符号と同じです（またはゼロが返されます）。
+
+```
+MODULO(4,3) = 1
+MODULO(-4,3) = -1
+MODULO(-3,3) = 0
+```
+
+常に正の数を取得するには、を使用します
+
+```
+MODULO(MODULO(x,y)+y,y)
+```
+
+## 百分位
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE （metric, k, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 0 ～ 100（0 と 100 を含む）の範囲のパーセンタイル値です。 |
+| k | 相対的な値を定義する指標列です。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 
-## 絶対値（行）
+## 累乗演算子
 
-数の絶対値を返します。数の絶対値とは、正の値を持つ数です。
+![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 演算子（metric_X, metrix_Y）]**
+
+x の y 乗を返します。
+
+| 引数 | 説明 |
+|---|---|
+| metric_X | metric_Y の累乗に上げたい指標です。 |
+| metric_Y | metric_X を発生させる指数です。 |
+
+
+## 四分位数
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE （metric, quartile, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)、および [COLUMN MAXIMUM](#column-maximum) は、四分位数がそれぞれ `0` （ゼロ）、`2`、`4` に等しい場合、[QUARTILE](#quartile) と同じ値を返します。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 四分位値を計算する指標です。 |
+| 四分位数 | 返される四分位値を示します。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## ラウンド数
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND （metric, number）]**
+
+*number* パラメーターを指定しない round は、*number* パラメーターが 0 の round と同じです。つまり、最も近い整数に round します。  *number* パラメーターを指定すると、小数点以下の *number* 桁が返されます。  *数値* が負の場合、小数の左側の 0 を返します。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 丸める指標です。 |
+| number | 返す小数点以下の桁数。 負の値を指定すると、小数の左側にゼロが返されます。 |
+
+### 例
+
+```
+ROUND( 314.15, 0) = 314
+ROUND( 314.15, 1) = 314.1
+ROUND( 314.15, -1) = 310
+ROUND( 314.15, -2) = 300
+```
+
+
+## 行数
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT （）]**
+
+指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*ユニーク数を超えています* は 1 としてカウントされます。
+
+
+## 行最大
+
+![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL ROW MAX（metric, include_zeros）]**
+
+各行の列の最大値。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+## 行の最小
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN （metric, include_zeros）]**
+
+各行の列の最小値。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+
+## 行の合計
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM （metric, include_zeros）]**
+
+各行の列の合計。
+
+| 引数 | 説明 |
+|---|---|
+| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+
+
+## 平方根
+
+![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 平方根（メートル，include_zeros）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 平方根を計算する指標です。 |
+
+
+## 標準偏差
+
+![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 標準偏差（metric, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| | 標準偏差を計算する指標。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+## 平方偏差
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE （metric, include_zeros）]**
+
+[!BADGE テーブル]{type="Neutral"}
+
+| 引数 | 説明 |
+|---|---|
+| metric | 平方偏差を計算する指標。 |
+| include_zeros | 計算にゼロ値を含めるかどうか。 |
+
+
+VARIANCE の式は次のようになります。
+
+![](assets/variance_eq.png){width="100"}
+
+ここで、*x* はサンプル平均、[MEAN （*metric*） ](#mean)、*n* はサンプルサイズです。
+
+
+分散を計算するには、数値の列全体を調べます。 まず、すべての数字の平均を求めます。平均を求めたら、各エントリを調べて、次の計算を行います。
+
+1. 数字から平均を減算します。
+
+1. 結果を 2 乗します。
+
+1. その結果を合計に加算します。
+
+列全体に対して反復処理が行われると、合計が 1 つになります。 その合計を列内にある数字の個数で除算します。その結果が列の平方偏差です。平方偏差は単一の数字です。ただし、数字の列として表示されます。
+
+次の 3 項目列の例では、
+
+| 列 |
+|:---:|
+| 1 |
+| 2 |
+| 3 |
+
+この列の平均は 2 です。列の差異は、（（1 - 2） <sup>2</sup> + （2 - 2） <sup>2</sup> + （3 - 2） <sup>2</sup>/3） = 2/3 です。
+
+
+
+
+<!--
+
+## Absolute Value (Row)
+
+Returns the absolute value of a number. The absolute value of a number is the number with a positive value.
 
 ```
 ABS(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 絶対値を求める指標です。 |
+|  *metric* | The metric for which you want the absolute value.  |
 
-## 列の最大値
+## Column Maximum
 
-指標列の一連のディメンション要素の中の最大値を返します。MAXV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
+Returns the largest value in a set of dimension elements for a metric column. MAXV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MAXV(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 評価する指標です。 |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## 列の最小値
+## Column Minimum 
 
-指標列の一連のディメンション要素の中の最小値を返します。MINV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
+Returns the smallest value in a set of dimension elements for a metric column. MINV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MINV(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 評価する指標です。 |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## 列の合計値
+## Column Sum 
 
-（1 つのディメンションの複数の要素の）1 つの列内の指標のすべての数値を加算します。
+Adds all of the numeric values for a metric within a column (across the elements of a dimension).
 
 ```
 SUM(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 合計値を求める指標です。 |
+|  *metric* | The metric for which you want the total value or sum.  |
 
-## カウント（表）
+## Count (Table) 
 
-1 つの列内の指標のゼロ以外の値の数（カウント）（ディメンション内でレポートされた一意の要素の数）を返します。
+Returns the number, or count, of non-zero values for a metric within a column (the number of unique elements reported within a dimension).
 
 ```
 COUNT(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | カウントする指標です。 |
+|  *metric* | The metric that you want to count.  |
 
-## 指数（行）
+## Exponent (Row) 
 
-指定された数の指数（*e*）を返します。定数 *e* は 2.71828182845904 と等しく、これは自然対数の底です。EXP は LN（数の自然対数）の逆関数です。
+Returns *e* raised to the power of a given number. The constant *e* equals 2.71828182845904, the base of the natural logarithm. EXP is the inverse of LN, the natural logarithm of a number.
 
 ```
 EXP(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 底 *e* に適用される指数です。 |
+|  *metric* | The exponent applied to the base *e*.  |
 
-## 累乗法
+## Exponentiation 
 
-累乗演算子
-
-
-pow （x,y） = x<sup>y</sup> = x *x* x*...（y 回）
+Power Operator
 
 
-## 平均値（表）
+pow(x,y) = x<sup>y</sup> = x*x*x*… (y times)
 
-1 つの列の指標の算術平均（平均値）を返します。
+
+## Mean (Table) 
+
+Returns the arithmetic mean, or average, for a metric in a column.
 
 ```
 MEAN(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 平均を求める指標です。 |
+|  *metric* | The metric for which you want the average.  |
 
-## 中央値（表）
+## Median (Table) 
 
-1 つの列の指標の中央値を返します。中央値とは、一連の数の中央に位置する数です。つまり、半分の数は中央値以上の値を持ち、残りの半分は中央値以下の値を持ちます。
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 中央値を求める指標です。 |
+|  *metric* | The metric for which you want the median.  |
 
-## 剰余
+## Modulo 
 
-ユークリッドの割り算を使用した場合の col1 / col2 の余りです。
+The remainder of col1 / col2, using Euclidean division.
 
-x を y で割った余りを返します。
+Returns the remainder after dividing x by y.
 
 ```
 x = floor(x/y) + modulo(x,y)
 ```
 
-返される値の符号は入力した値の符号と同じです（またはゼロが返されます）。
+The return value has the same sign as the input (or is zero).
 
 ```
 modulo(4,3) = 1 
@@ -151,15 +438,15 @@ modulo(-4,3) = -1
 modulo(-3,3) = 0
 ```
 
-常に正の数を求めるには、次の構文を使用します。
+To always get a positive number, use 
 
 ```
 modulo(modulo(x,y)+y,y)
 ```
 
-## パーセンタイル（表）
+## Percentile (Table) 
 
-指標の値の k 番目のパーセンタイルを返します。この関数を使用すると、受け入れのしきい値を確立できます。例えば、スコアが 90 番目のパーセンタイルを超えるディメンション要素を確認するように指定できます。
+Returns the k-th percentile of values for a metric. You can use this function to establish a threshold of acceptance. For example, you can decide to examine dimension elements who score above the 90  percentile.
 
 ```
 PERCENTILE(metric,k)
@@ -168,25 +455,25 @@ PERCENTILE(metric,k)
 <table id="table_35CD840ACFB44CD9979881DB8823CC53"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 引数 </th> 
-   <th colname="col2" class="entry"> 説明 </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i> metric</i>  </td> 
-   <td colname="col2"> 相対的な値を定義する指標列です。 </td> 
+   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col2"> The metric column that defines relative standing. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
-   <td colname="col2"> 0 ～ 100（0 と 100 を含む）の範囲のパーセンタイル値です。 </td> 
+   <td colname="col2"> The percentile value in the range 0 to 100, inclusive. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 四分位数（表）
+## Quartile (Table) 
 
-指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高の多い上位 25 ％の製品を探すことができます。MINV、MEDIAN および MAXV は、クォートがそれぞれ 0（ゼロ）、2、4 と等しい場合、QUARTILE と同じ値を返します。
+Returns the quartile of values for a metric. For example, quartiles can be used to find the top 25% of products driving the most revenue. MINV, MEDIAN, and MAXV return the same value as QUARTILE when quart is equal to 0 (zero), 2, and 4, respectively.
 
 ```
 QUARTILE(metric,quart)
@@ -195,37 +482,37 @@ QUARTILE(metric,quart)
 <table id="table_64EA3DAAE77541439D59FAF0353F83A2"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 引数 </th> 
-   <th colname="col2" class="entry"> 説明 </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i> metric</i>  </td> 
-   <td colname="col2"> 四分位数を求める指標です。 </td> 
+   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col2"> The metric for which you want the quartile value. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>quart </p> </td> 
-   <td colname="col2"> 四分位数として返す値*を示します。 </td> 
+   <td colname="col2"> Indicates which *value to return. </td> 
   </tr> 
  </tbody> 
 </table>
 
-&#42;*quart* = 0 の場合、QUARTILE は最小値を返します。*quart* = 1 の場合、QUARTILE は第 1 四分位数（25 番目のパーセンタイル）を返します。*quart* = 2 の場合、QUARTILE は第 1 四分位数（50 番目のパーセンタイル）を返します。*quart* = 3 の場合、QUARTILE は第 1 四分位数（75 番目のパーセンタイル）を返します。*quart* = 4 の場合、QUARTILE は最大値を返します。
+&#42;If *quart* = 0, QUARTILE returns the minimum value. If *quart* = 1, QUARTILE returns the first quartile (25 percentile). If *quart* = 2, QUARTILE returns the first quartile (50 percentile). If *quart* = 3, QUARTILE returns the first quartile (75 percentile). If *quart* = 4, QUARTILE returns the maximum value.
 
-## ラウンド数
+## Round 
 
-指定された値の直近の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、Round(*Revenue*) という数式を使用して、売上高を直近のドル値（$569）に丸めます。$569.51 とレポートされる製品は、直近のドル値（$570）に丸められます。
+Returns the nearest integer for a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula Round( *Revenue*) to round revenue to the nearest dollar, or $569. A product reporting $569.51 will be round to the nearest dollar, or $570.
 
 ```
 ROUND(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *数値* | 丸める指標です。 |
+|  *number* | The metric you want to round.  |
 
-桁数パラメーターのない丸めは、桁数パラメーターが 0 の丸めと同じで、直近の整数に丸めます。桁数パラメーターがある場合、小数の右側が指定された桁数の値が返されます。桁数が負数の場合、小数の左側の指定された桁数が 0 として返されます。
+Round without a digits parameter is the same as round with a digits parameter of 0, namely round to the nearest integer. With a digits parameter it returns that many digits to the right of the decimal. If digits is negative, it returns 0's to the left of the decimal.
 
 ```
 round( 314.15, 0) = 314 
@@ -234,43 +521,43 @@ round( 314.15, -1) = 310
 round( 314.15, -2) = 300
 ```
 
-## 行数
+## Row Count 
 
-指定された列の数（ディメンション内でレポートされた一意の要素の数）を返します。「超過したユニーク数」は 1 とカウントされます。
+Returns the count of rows for a given column (the number of unique elements reported within a dimension). "Uniques exceeded" is counted as 1.
 
-## 行最大
+## Row Max 
 
-各行の列の最大値。
+The maximum of the columns in each row.
 
-## 行の最小
+## Row Min 
 
-各行の列の最小値。
+The minimum of the columns in each row.
 
-## 行の合計
+## Row Sum
 
-各行の列の合計。
+The sum of the columns of each row.
 
-## 平方根（行）
+## Square Root (Row) 
 
-数の正の平方根を返します。数の平方根は、2 乗してその数になる値です。
+Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2.
 
 ```
 SQRT(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *数値* | 平方根を求める指標です。 |
+|  *number* | The metric for which you want the square root.  |
 
-## 標準偏差（表）
+## Standard Deviation (Table) 
 
-データのサンプル母集団に基づいて標準偏差（平方偏差の平方根）を返します。
+Returns the standard deviation, or square root of the variance, based on a sample population of data.
 
-STDEV の式は次のようになります。
+The equation for STDEV is:
 
 ![](assets/std_dev.png)
 
-ここで、x はサンプルの平均値（*metric*）であり、*n* はサンプルサイズです。
+where x is the sample mean (*metric*) and *n* is the sample size.
 
 ```
 STDEV(metric)
@@ -279,45 +566,45 @@ STDEV(metric)
 <table id="table_8BCF2E4B02434AABAAD026FB3C4E8B2F"> 
  <tbody> 
   <tr> 
-   <td> <b> 引数</b> </td> 
-   <td> <b> 説明</b> </td> 
+   <td> <b> Argument</b> </td> 
+   <td> <b> Description</b> </td> 
   </tr> 
   <tr> 
-   <td> <b> <i>metric</i> </b> </td> 
-   <td> <p> 標準偏差に必要な指標です。 </p> </td> 
+   <td> <b> <i> metric</i> </b> </td> 
+   <td> <p> The metric for which you want for standard deviation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 平方偏差（表）
+## Variance (Table) 
 
-データのサンプル母集団に基づいて平方偏差を返します。
+Returns the variance based on a sample population of data.
 
-VARIANCE の式は次のようになります。
+The equation for VARIANCE is:
 
 ![](assets/variance_eq.png)
 
-ここで、x はサンプルの平均値 MEAN(*metric*) であり、*n* はサンプルサイズです。
+where x is the sample mean, MEAN(*metric*), and *n* is the sample size.
 
 ```
 VARIANCE(metric)
 ```
 
-| 引数 | 説明 |
+|  Argument  | Description  |
 |---|---|
-| *metric*  | 平方偏差を求める指標です。 |
+|  *metric* | The metric for which you want the variance.  |
 
-平方偏差を計算するには、数字の列全体を見ます。まず、すべての数字の平均を求めます。平均を求めたら、各数字に対して次の計算を行います。
+In order to calculate a variance you look at an entire column of numbers. From that list of numbers you first calculate the average. Once you have the average you go through each entry and do the following:
 
-1. 数字から平均を減算します。
+1. Subtract the average from the number.
 
-2. 結果を 2 乗します。
+2. Square the result.
 
-3. その結果を合計に加算します。
+3. Add that to the total.
 
-この計算をすべての数字に対して実行し、1 つの合計を求めます。その合計を列内にある数字の個数で除算します。その結果が列の平方偏差です。平方偏差は単一の数字です。ただし、数字の列として表示されます。
+Once you have iterated over the entire column you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
 
-3 項目列の場合：
+In case of a three-item column:
 
 1
 
@@ -325,4 +612,6 @@ VARIANCE(metric)
 
 3
 
-この列の平均は 2 です。この列の平方偏差は、((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3 です。
+The average of this column is 2. The variance for the column will be ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.
+
+-->

@@ -5,9 +5,9 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1617'
 ht-degree: 15%
 
 ---
@@ -35,6 +35,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | ヒストグラムビジュアライゼーションは、指標の量に基づいて、個人、訪問、またはイベントをバケットにまとめます。 |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 横棒グラフビジュアライゼーションには、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [ 積み重ね横棒グラフ ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 積み重ね横棒グラフビジュアライゼーションには、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
+| ![ ブランチ 3](/help/assets/icons/Branch3.svg) | [ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | ジャーニーキャンバスのビジュアライゼーションは、ユーザーや顧客に提供するジャーニーを分析し、インサイトを得るのに役立ちます。 |
 | ![ 主要指標 ](/help/assets/icons/KeyMetrics.svg) | [ 主要指標の概要 ](/help/analysis-workspace/visualizations/key-metric.md) | 主要指標の概要ビジュアライゼーションは、折れ線グラフ、変更概要および数値概要のビジュアライゼーションを組み合わせます。 |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [行](/help/analysis-workspace/visualizations/line.md) | 折れ線グラフのビジュアライゼーションは、線を使用して指標を表し、時間の経過に伴う値の変化を示します。 折れ線グラフは、X 軸で時間を表します。 |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | 散布図のビジュアライゼーションには、ディメンション項目と最大 3 つの指標との関係が表示されます。 |
