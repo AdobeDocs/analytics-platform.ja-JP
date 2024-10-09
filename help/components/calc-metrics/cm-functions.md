@@ -1,31 +1,41 @@
 ---
-title: リファレンス - 基本的な関数
+title: 基本関数
 description: 計算指標ビルダーを使用すると、統計関数と数学関数を適用して、高度な計算指標を作成できます。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 31%
+source-wordcount: '1185'
+ht-degree: 29%
 
 ---
 
-# リファレンス - 基本的な関数
+# 基本関数
 
 
-[ 計算指標ビルダー ](cm-workflow/cm-build-metrics.md) では、統計関数および数学関数を適用できます。
-
-ここでは、関数とその定義をアルファベット順に示します。
+[ 計算指標ビルダー ](cm-workflow/cm-build-metrics.md) では、統計関数および数学関数を適用できます。 この記事では、関数とその定義のアルファベット順のリストについて説明します。
 
 >[!NOTE]
 >
 >[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[COLUMN MAXIMUM （metrics） ](#column-maximum) では [COLUMN MAXIMUM （PageViews + Visits） ](#column-maximum) も使用できます。
 
 
+
 ## テーブル関数と行関数
 
-表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、テーブルの行ごとに出力が異なる関数です。 該当する場合は、関数のタイプで注釈が付けられます。
+表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
+
+該当する場合および関連する場合、関数には、関数のタイプで注釈が付けられます。[!BADGE  表 ]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+
+## include-zeros パラメータは何を意味しますか？
+
+このパラメーターは、計算にゼロを含むかどうかを示します。ゼロは時には *無* を意味することもありますが、時にはそれが重要です。
+
+例えば、売上高指標を持っていて、レポートにページビュー指標を追加すると、突然売上高の行が増え、すべてがゼロになります。 その追加の指標が、売上高列にある **[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)** およびその他の計算に影響を与えることはお勧めしません。 この場合、`include-zeros` パラメーターを確認します。
+
+別のシナリオとして、2 つの目標指標があり、一方の指標の平均または最小値が高くなるのは、一部の行がゼロであるためです。  その場合、パラメーターにゼロを含めるかどうかを確認しないことを選択できます
+
 
 
 ## 絶対値
