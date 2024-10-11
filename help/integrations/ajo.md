@@ -1,17 +1,17 @@
 ---
-title: Adobe Journey Optimizer と Customer Journey Analytics の統合
+title: Adobe Journey Optimizerの統合
 description: Adobe Journey Optimizer で生成したデータを取り込み、Customer Journey Analytics 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
-workflow-type: ht
-source-wordcount: '3028'
-ht-degree: 100%
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+workflow-type: tm+mt
+source-wordcount: '3020'
+ht-degree: 99%
 
 ---
 
-# Journey Optimizer と Customer Journey Analytics の統合
+# Journey Optimizerの統合
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 

@@ -1,17 +1,17 @@
 ---
-title: Adobe Customer Journey Analyticsでの Target レポート
+title: Target レポート
 description: Adobe TargetとCustomer Journey Analyticsの統合
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: b189776de8cadae3a93c717b6814f2130ab1be43
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 40%
+source-wordcount: '375'
+ht-degree: 41%
 
 ---
 
-# Adobe Customer Journey Analyticsでの Target レポート
+# Target レポート
 
 Customer Journey Analyticsの Target レポートを使用すると、Adobe Target アクティビティをCustomer Journey Analyticsで直接測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行される機能と同等ですが、Adobe Experience Platform（AEP）への接続も備えています。
 
