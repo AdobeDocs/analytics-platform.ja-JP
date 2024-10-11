@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 21%
 
 ---
 
@@ -56,3 +56,22 @@ ht-degree: 30%
 >[ フロービジュアライゼーションの設定 ](/help/analysis-workspace/visualizations/c-flow/create-flow.md)。
 >
 
+## フロー、フォールアウト、ジャーニーのいずれかのキャンバスビジュアライゼーションを選択します
+
+フロービジュアライゼーションは、[ フォールアウトビジュアライゼーション ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) および [ジャーニーキャンバスビジュアライゼーション ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) と似ていますが、重要な違いがあります。
+
+### 違いについて
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### フローを使用するタイミング
+
+フロービジュアライゼーションは、次の場合に最適です。
+
+* パス上の次のタッチポイントに対する探索的アドホック分析。 （事前に定義された一連のページを含むジャーニーや、最終的なパスを使用するジャーニーでは、ジャーニーキャンバスを使用します）。
+
+* 複数のエントリポイントとパスを持つ非線形ジャーニー。 （事前に定義されたページのシーケンスを含むジャーニーにはジャーニーキャンバスを使用します）。
+
+[ 上の表 ](#understand-the-differences) を使用して、フロー、フォールアウトおよびジャーニーキャンバスの違いを理解します。

@@ -4,10 +4,10 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 2%
+source-wordcount: '1606'
+ht-degree: 1%
 
 ---
 
@@ -82,32 +82,31 @@ ht-degree: 2%
 
 * ジャーニーのノードに分類ディメンションを追加して、その特定のノードの追加データを表示します
 
-## ジャーニーキャンバスとフォールアウトビジュアライゼーションのどちらかを選択します
+## ジャーニーキャンバス、フォールアウト、フロービジュアライゼーションから選択します
 
-ジャーニーキャンバスのビジュアライゼーションは、[ フォールアウトビジュアライゼーション ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) に似ていますが、どちらのビジュアライゼーションも、事前に定義された一連のページの間で、人物が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。
-
-ただし、重要な違いがあります。
+ジャーニーキャンバスビジュアライゼーションは、[ フォールアウトビジュアライゼーション ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) および [ フロービジュアライゼーション ](/help/analysis-workspace/visualizations/c-flow/flow.md) と似ていますが、重要な違いがあります。
 
 ### 違いについて
 
-次の表に、ジャーニーキャンバスビジュアライゼーションとフォールアウトビジュアライゼーションでサポートされている分析のタイプを示します。
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| 関数 | ジャーニーキャンバスビジュアライゼーション | フォールアウトビジュアライゼーション |
-|---------|----------|---------|
-| 線形ジャーニー | ○ | ○ |
-| 複数のエントリポイントとパスを持つ非線形ジャーニー | ○ | × |
-| Adobe Journey Optimizer ジャーニー | ○ | × |
-| プライマリ指標 | 計算指標を含む任意の指標 | セッションまたはユーザー指標のみを使用できます |
-| セカンダリ指標 | ○<p>計算指標を含む任意の指標</p> | × |
-| フィルターの比較 | × | ○<p>フィルターの比較 [ 無制限の数 ](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### 使用するビジュアライゼーションを選択
+### ジャーニーキャンバスを使用するタイミング
 
-ジャーニーキャンバスとフォールアウトのどちらを使用するかを選択する前に、[2 つの違いを理解する ](#understand-the-differences) ことを確認してください。
+ジャーニーキャンバスは、次の場合に不可欠です。
 
-フォールアウト分析で関係するジャーニーが開始と終了が既知のジャーニーがいずれも 1 つだけの場合は、より簡単なユーザージャーニーのオプションとして [ フォールアウトビジュアライゼーション ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) を使用することを検討してください。
+* 複数のエントリポイントとパスを持つジャーニーが関与するフォールアウト分析。
 
-ジャーニーキャンバスは、複数のエントリポイントとパスを持つジャーニーや、Journey Optimizerで作成されたジャーニーを分析する場合に不可欠です。
+* 事前に定義されたページのシーケンスを使用した、複数のエントリポイントとパスを持つ非線形ジャーニー。
+
+* 事前定義済みのジャーニーに基づく探索的なアドホック分析。
+
+* セッション、ユーザーまたは発生件以外のプライマリ指標を必要とする分析。
+
+* Adobe Journey Optimizerで作成されたジャーニーの詳細な分析。
+
+[ 上の表 ](#understand-the-differences) を使用して、ジャーニーキャンバス、フォールアウトおよびフロービジュアライゼーションの違いを理解します。
 
 ## Journey Optimizer ジャーニーの分析
 
