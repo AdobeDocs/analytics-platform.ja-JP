@@ -3,7 +3,7 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 5f4c24f624c5cd22f1a440a4acfb4307960f6d1c
+source-git-commit: 68bdee0cfc0a8a6718ea16cfdaea407c3c8c6e0b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 50%
@@ -12,7 +12,7 @@ ht-degree: 50%
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2024年10月）
 
-**最終更新日**：2024年10月9日（PT）
+**最終更新日**：2024年10月15日（PT）
 
 これらのリリースノートは、2024 年 10 月 2 日（PT）から 2024 年 10 月 22 日（PT）までのリリース期間に対応しています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -20,11 +20,11 @@ ht-degree: 50%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **資産の譲渡** | プロジェクト、フィルター、計算指標などのコンポーネントの所有権を他のユーザーに転送して、継続性を確保し、適切なアクセス権を持つことができます。 [詳細情報](/help/tools/asset-transfer/transfer-assets.md) |  | 15年10月 |
 | **ガイド付き分析：Workspace への埋め込み** | [ ガイド付き分析 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/overview) がAnalysis Workspaceで直接利用できるようになり、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。 新しい左側のパネルセクションから、新しいガイド付き分析を作成して、プロジェクトに追加できます。 また、多くのプロジェクトで構成要素として再利用できる、保存済みのガイド付き分析にアクセスすることもできます。 | 2024年10月2日（PT） | 2024年10月31日（PT） |
 | **製品の使用状況** | 組織が Customer Journey Analytics をどのように使用しているかを確認します。この機能を有効にすると、組織内のユーザーが Analysis Workspace を使用する際に、データを収集するデータセットが Adobe Experience Platform に作成されます。また、接続とデータビューも自動的に作成され、プロジェクトで使用される上位のプロジェクトタイプ、最もアクティブなユーザー、一番人気のコンポーネントなどのディメンションにアクセスできます。[詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | 2024年10月23日（PT） | 2025 年 1 月 |
 | **ジャーニーキャンバスビジュアライゼーション** | ジャーニーキャンバスは、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義されたジャーニーをどのように進めたり、そこから離脱したりするかを分析することができます。 イベント、ディメンション項目、およびフィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成して、ユーザージャーニーの分析を作成します。キャンバス上でノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。すると、それに応じてデータが更新されます。<p>Adobe Journey Optimizer へのアクセス権を持つお客様は、既存の Journey Optimizer ジャーニーを分析できます。<p>ジャーニー キャンバスの詳細については、[ジャーニー キャンバスの概要 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas) を参照してください。<p>ジャーニーキャンバスビジュアライゼーションの作成方法については、[ジャーニーキャンバスの設定 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas) を参照してください。 | 2024年10月2日（PT） | 2024年10月14日（PT） |
 | **オーディエンスの作成時にパネルフィルターと列フィルターが含まれるようになりました** | Analysis Workspace内のビジュアライゼーションからオーディエンスを作成する際に、パネルフィルターと列フィルターが追加の条件として含まれるようになりました。 フィルターが不要な場合は、オーディエンスを公開する前に削除できます。 以前は、Analysis Workspaceのパネルやビジュアライゼーションの列に適用されたフィルターは、オーディエンスの作成時に無視されていました。<p>Customer Journey Analyticsからオーディエンスを作成する方法について詳しくは、[ オーディエンスの作成と公開 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish) を参照してください。 |  | 2024年10月2日（PT） |
-| **資産の譲渡** | プロジェクト、フィルター、計算指標などのコンポーネントの所有権を他のユーザーに転送して、継続性を確保し、適切なアクセス権を持つことができます。 | 15年10月 | 22年10月 |
 
 ## Customer Journey Analytics の修正点
 
