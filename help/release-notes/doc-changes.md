@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4104'
 ht-degree: 69%
 
 ---
@@ -53,7 +53,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 統計的手法の予測 | [ 予測サービスで使用される統計的手法 ](../analysis-workspace/c-forecast/statistics-forecasting.md) を説明する記事を追加しました。 |
 | 基数の高いディメンションに対して完全なテーブル書き出しを推奨する情報を追加しました | [ 高カーディナリティのディメンションのベストプラクティス ](/help/components/dimensions/high-cardinality.md) に箇条書きを追加し、高カーディナリティのディメンションに完全なテーブル書き出しを使用することを推奨しました。 |
 | モバイルスコアカードのインテリジェント キャプションに関するドキュメントを追加しました | [ インテリジェントキャプション ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) を使用すると、アナリストの助けを借りずに、アナリスト以外のユーザーがデータをよりよく理解できます。 |
-| Adobe Product Analytics機能に関する新しいドキュメント | <ul><li>[機能マトリックス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>[ リテンション率 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/retention/retention-rates) の向上</li><li>[ ファネルの強化されたインサイト ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
+| Adobe Product Analytics機能に関する新しいドキュメント | <ul><li>[機能マトリックス](/help/guided-analysis/types/funnel.md)</li><li>強化 [ リテンション ](/help/guided-analysis/types/retention.md)</li><li>[ ファネルの強化されたインサイト ](/help/guided-analysis/types/funnel.md)</li><li>ファネルの単一ステップでのイベントの比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
 | プロジェクトのみのWorkspace コンポーネントの権限強化に関するドキュメントを追加しました | プロジェクトを他のユーザーと共有すると、それらのユーザーは、共有プロジェクトに埋め込まれた [ クイックフィルター ](/help/components/filters/quick-filters.md) およびその他のプロジェクト専用のコンポーネントを編集できます。 |
