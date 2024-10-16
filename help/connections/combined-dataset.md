@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 35%
+source-wordcount: '919'
+ht-degree: 34%
 
 ---
 
@@ -30,20 +30,20 @@ ht-degree: 35%
 >
 >Adobe Experience Platformは通常、タイムスタンプを UNIX® ミリ秒単位で保存します。 この例では、読みやすくするために日付と時刻を使用しています。
 
-| `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
-| --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
-| `user_310` | `1 Jan 7:04 AM` | | | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` | | | `2` |
+| example_id | タイムスタンプ | string_color | string_animal | metric_a |
+| --- | --- | --- | --- | ---: |
+| user_310 | 1 月 1 日午前 7 時 2 分 | 赤 | フォックス | |
+| user_310 | 1 月 1 日午前 7 時 4 分 | | | 2 |
+| user_310 | 1 月 1 日午前 7 時 8 分 | 青 | | 3 |
+| user_847 | 1 月 2 日午後 12:31 | | 亀 | 4 |
+| user_847 | 1 月 2 日午後 12:44 | | | 2 |
 
-| `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
-| --- | --- | --- | --- | --- |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
+| different_id | タイムスタンプ | string_color | string_shape | metric_b |
+| --- | --- | --- | --- | ---: |
+| user_847 | 1 月 2 日午後 12:26 | 黄色 | 円 | 8.5 |
+| user_847 | 1 月 2 日午後 1 時 1 分 | 赤 | | |
+| alternateid_656 | 1 月 2 日午後 8:58 | 赤 | 正方形 | 4.2 |
+| alternateid_656 | 1 月 2 日午後 9 時 3 分 | | 三角形 | 3.1 |
 
 これら 2 つのイベントデータセットを使用して接続を作成し、を識別した場合
 
@@ -52,19 +52,31 @@ ht-degree: 35%
 
 レポートには、以下の結合データセットが使用されます。
 
-| `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
-| --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
-| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
-| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
+| ID | タイムスタンプ | string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| user_310 | 1 月 1 日午前 7 時 2 分 | 赤 | フォックス | | | |
+| user_310 | 1 月 1 日午前 7 時 4 分 | | | | 2 | |
+| user_310 | 1 月 1 日午前 7 時 8 分 | 青 | | | 3 | |
+| user_847 | 1 月 2 日午後 12:26 | 黄色 | | 円 | | 8.5 |
+| user_847 | 1 月 2 日午後 12:31 | | 亀 | | 4 | |
+| user_847 | 1 月 2 日午後 12:44 | | | | 2 | |
+| user_847 | 1 月 2 日午後 1 時 1 分 | 赤 | | | | |
+| alternateid_656 | 1 月 2 日午後 8:58 | 赤 | | 正方形 | | 4.2 |
+| alternateid_656 | 1 月 2 日午後 9 時 3 分 | | | 三角形 | | 3.1 |
 
 スキーマパスの重要性を示すために、次のシナリオについて考えてみます。 最初のデータセットでは `string_color` はスキーマパス `_experience.whatever.string_color` に基づき、2 番目のデータセットではスキーマパス `_experience.somethingelse.string_color` に基づきます。 このシナリオでは、結果として得られる結合されたデータセット内で、データは 1 つの列に結合 **されません**。 代わりに、結合されたデータセット内の 2 つの `string_color` 列が結果として返されます。
+
+| ID | タイムスタンプ | _experience.<br/> なんでも。<br/>string_color | 経験。<br/> 他の何か。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | --- | ---: | ---:|
+| user_310 | 1 月 1 日午前 7 時 2 分 | 赤 | | フォックス | | | |
+| user_310 | 1 月 1 日午前 7 時 4 分 | | | | | 2 | |
+| user_310 | 1 月 1 日午前 7 時 8 分 | 青 | | | | 3 | |
+| user_847 | 1 月 2 日午後 12:26 | | 黄色 | | 円 | | 8.5 |
+| user_847 | 1 月 2 日午後 12:31 | | | 亀 |  | 4 | |
+| user_847 | 1 月 2 日午後 12:44 | | | | | 2 | |
+| user_847 | 1 月 2 日午後 1 時 1 分 | | 赤 | | | | |
+| alternateid_656 | 1 月 2 日午後 8:58 | | 赤 | | 正方形 | | 4.2 |
+| alternateid_656 | 1 月 2 日午後 9 時 3 分 | | | | 三角形 | | 3.1 |
 
 この組み合わせイベントデータセットは、レポートで使用されるデータセットです。行がどのデータセットから取得されたかは関係ありません。 Customer Journey Analyticsでは、すべてのデータを同じデータセット内にあるかのように扱います。 一致するユーザー ID が両方のデータセットに表示されると、それらは同じ一意のユーザーと見なされます。 一致するユーザー ID がタイムスタンプ付きで 30 分以内に両方のデータセットに表示された場合、それらは同じセッションの一部と見なされます。 スキーマパスが同じフィールドは結合されます。
 
@@ -73,7 +85,7 @@ ht-degree: 35%
 接続に最初のテーブルのみが含まれ、2 番目のテーブルは含まれない場合、ラストタッチアトリビューションでディメンション `string_color` と `metric_a` 指標を使用してレポートを取り込むと、次のように表示されます。
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | 未指定 | 6 |
 | 青 | 3 |
 | 赤 | 2 |
@@ -81,7 +93,7 @@ ht-degree: 35%
 ただし、両方のテーブルを接続に含めた場合、`user_847` は両方のデータセットにあるので、属性は変更されます。2 つ目のデータセット属性 `metric_a` から「Yellow」（以前は未指定）までの行
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | 黄色 | 6 |
 | 青 | 3 |
 | 赤 | 2 |
