@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 34%
@@ -66,7 +66,7 @@ ht-degree: 34%
 
 スキーマパスの重要性を示すために、次のシナリオについて考えてみます。 最初のデータセットでは `string_color` はスキーマパス `_experience.whatever.string_color` に基づき、2 番目のデータセットではスキーマパス `_experience.somethingelse.string_color` に基づきます。 このシナリオでは、結果として得られる結合されたデータセット内で、データは 1 つの列に結合 **されません**。 代わりに、結合されたデータセット内の 2 つの `string_color` 列が結果として返されます。
 
-| ID | タイムスタンプ | _experience.<br/> なんでも。<br/>string_color | 経験。<br/> 他の何か。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| ID | タイムスタンプ | _experience.<br/> なんでも。<br/>string_color | _experience.<br/> 他の何か。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | --- | ---: | ---:|
 | user_310 | 1 月 1 日午前 7 時 2 分 | 赤 | | フォックス | | | |
 | user_310 | 1 月 1 日午前 7 時 4 分 | | | | | 2 | |
