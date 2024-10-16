@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
+source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '938'
 ht-degree: 85%
 
 ---
@@ -218,24 +218,17 @@ ht-degree: 85%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + 機能マトリックス {#feature-matrix}
-      + [エンゲージメント](../guided-analysis/types/engagement.md)
-   + ファネル {#funnel}
-      + [フリクションビュー](../guided-analysis/types/friction.md)
-      + [コンバージョントレンドビュー](../guided-analysis/types/conversion-trends.md)
-   + 影響 {#impact}
-      + [リリースビュー](../guided-analysis/types/release.md)
-      + [初回使用ビュー](../guided-analysis/types/first-use.md)
-   + 保持 {#retention}
-      + [リテンション率](../guided-analysis/types/retention-rates.md)
-   + トレンド {#trends}
-      + [使用状況ビュー](../guided-analysis/types/usage.md)
-      + [頻度ビュー](../guided-analysis/types/frequency.md)
-   + ユーザーの増加率 {#user-growth}
-      + [アクティブビュー](../guided-analysis/types/active.md)
-      + [純増加率ビュー](../guided-analysis/types/net-growth.md)
-   + ユーザーストリーム {#streams}
-      + [タイムライン](../guided-analysis/types/timeline.md)
+   + [アクティブな増加](../guided-analysis/types/active-growth.md)
+   + [コンバージョントレンド](../guided-analysis/types/conversion-trends.md)
+   + [エンゲージメント](../guided-analysis/types/engagement.md)
+   + [最初の使用の影響](../guided-analysis/types/first-use-impact.md)
+   + [頻度](../guided-analysis/types/frequency.md)
+   + [ファネル](../guided-analysis/types/funnel.md)
+   + [純増加率](../guided-analysis/types/net-growth.md)
+   + [リリースの影響](../guided-analysis/types/release-impact.md)
+   + [定着](../guided-analysis/types/retention.md)
+   + [タイムライン](../guided-analysis/types/timeline.md)
+   + [傾向](../guided-analysis/types/trends.md)
    + [業界ユースケース](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 

@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 6%
 
 ---
 
 # [!UICONTROL  頻度 ] ビュー
 
-**[!UICONTROL 頻度]** ビューでは、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。 このビューの垂直軸には、イベントの頻度を表すバケットが含まれます。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
+![ 頻度 ](/help/assets/icons/Histogram.svg) **[!UICONTROL 頻度]** ビューでは、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。 このビューの垂直軸には、イベントの頻度を表すバケットが含まれます。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 クエリパネルでは、次のコンポーネントを設定できます。
 
-* **[!UICONTROL 表示]**：この表示タイプと [ 使用状況 ](usage.md) を切り替えます。
+* **[!UICONTROL 表示]**：この表示タイプと [ 使用状況 ](trends.md) を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベントです。選択した各イベントは、個別のグラフとして表されます。 トレンドイベントを表す行がテーブルに追加されます。 最大 5 つのイベントを含めることができます。
 * **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには、[!UICONTROL  ユーザー ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザーの割合 ] および [!UICONTROL  セッションの割合 ] があります。 このビューの割合ベースの指標の分母は、製品のすべてのアクティブユーザーではなく、選択したイベントを実行したユーザーまたはセッションです。
 * **[!UICONTROL セグメント]**：測定するセグメント。選択した各セグメントは、グラフの棒の数とテーブルの行の数を 2 倍にします。 最大 5 つのセグメントを含めることができます。

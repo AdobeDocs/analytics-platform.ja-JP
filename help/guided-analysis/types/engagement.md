@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '722'
 ht-degree: 4%
 
 ---
 
 # [!UICONTROL  エンゲージメント ] ビュー
 
-**[!UICONTROL エンゲージメント]** ビューは、機能が使用された頻度と使用されたユーザーの数に関するインサイトを提供します。 この分析は、複数の機能を相互に比較する場合に最も適しています。 コア、パワー、ワンタイム、疑問の機能を理解することで、投資の意思決定に役立ちます。
+![EngagementGraph](/help/assets/icons/EngagementGraph.svg)**[!UICONTROL Engagement]** ビューは、機能が使用された頻度と使用されたユーザーの数に関するインサイトを提供します。 この分析は、複数の機能を相互に比較する場合に最も適しています。 コア、パワー、ワンタイム、疑問の機能を理解することで、投資の意思決定に役立ちます。
 
 このビジュアライゼーションの上部にプロットされる機能は、エンゲージメントのあるユーザー間で頻繁に使用されていることを示します。 このビジュアライゼーションの右側にプロットされる機能は、アクティブユーザーに広く採用されていることを示しています。 機能を使用した中央値の回数により、グラフが水平方向に分割されます。 アクティブユーザーの中央値の割合により、グラフが垂直方向に分割されます。 メディアは、すべてのデータではなく、クエリで選択されたイベントに基づいて計算されます。
 

@@ -5,9 +5,9 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1393'
 ht-degree: 72%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 72%
 
 次のガイド付き分析を利用できます。
 
-| 分析 | 説明 |
-| --- | --- |
-| [ 積極的成長 ](types/active.md) | 新規、継続、再来訪または休眠状態のユーザーを特定します。 |
-| [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の推移を追跡します。 |
-| [エンゲージメント](types/engagement.md) | 機能エンゲージメントの幅と深度を理解します。 |
-| [ 初回使用時の影響 ](types/first-use.md) | 機能の初回使用が主要指標に与える影響を測定します。 |
-| [頻度](types/frequency.md) | 使用頻度別にエンゲージメントを測定します。 |
-| [ファネル](types/friction.md) | ステップ間のコンバージョン率を比較します。 |
-| [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
-| [ リリースの影響 ](types/release.md) | リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。 |
-| [リテンション](types/retention-rates.md) | ユーザーの継続的な再来訪習慣を測定します。 |
-| [タイムライン](types/timeline.md) | セッションアクティビティのパターンを探索します。 |
-| [トレンド](types/usage.md) | ユーザーエンゲージメントの推移を測定します。 |
+| アイコン | 分析 | 説明 |
+| :----:|--- | --- |
+| ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) | [ 積極的成長 ](types/active-growth.md) | 新規、継続、再来訪または休眠状態のユーザーを特定します。 |
+| ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) | [コンバージョントレンド](types/conversion-trends.md) | コンバージョン率の推移を追跡します。 |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [エンゲージメント](types/engagement.md) | 機能エンゲージメントの幅と深度を理解します。 |
+| ![FirstUse](/help/assets/icons/FirstUse.svg) | [ 初回使用時の影響 ](types/first-use-impact.md) | 機能の初回使用が主要指標に与える影響を測定します。 |
+| ![ヒストグラム](/help/assets/icons/Histogram.svg) | [頻度](types/frequency.md) | 使用頻度別にエンゲージメントを測定します。 |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [ファネル](types/funnel.md) | ステップ間のコンバージョン率を比較します。 |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [純増加率](types/net-growth.md) | ユーザーは増加していますか、それとも減少していますか？ |
+| ![リリース](/help/assets/icons/Release.svg) | [ リリースの影響 ](types/release-impact.md) | リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。 |
+| ![リテンション](/help/assets/icons/Retention.svg) | [リテンション](types/retention.md) | ユーザーの継続的な再来訪習慣を測定します。 |
+| ![タイムライン](/help/assets/icons/Timeline.svg) | [タイムライン](types/timeline.md) | セッションアクティビティのパターンを探索します。 |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [トレンド](types/trends.md) | ユーザーエンゲージメントの推移を測定します。 |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ ht-degree: 72%
 
 Customer Journey Analyticsホームページからガイド付き分析にアクセスできます。
 
-1. ホームページから **[!UICONTROL ガイド付き分析]** を選択すると、[ 使用状況のトレンド表示 ](types/usage.md) に直接移動します。
+1. ホームページから **[!UICONTROL ガイド付き分析]** を選択すると、[ 使用状況のトレンド表示 ](types/trends.md) に直接移動します。
 
    ![ランディングページタイル](assets/landing-page-tile.png){style="border:1px solid gray"}
 

@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 hide: true
 hide-from-toc: true
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1954'
 ht-degree: 14%
 
 ---
@@ -247,7 +247,7 @@ ht-degree: 14%
 | 委任 | `![Delegate](/help/assets/icons/Delegate.svg)` | ![ 委任 ](/help/assets/icons/Delegate.svg) |
 | 削除 | `![Delete](/help/assets/icons/Delete.svg)` | ![削除](/help/assets/icons/Delete.svg) |
 | DeleteOutline | `![DeleteOutline](/help/assets/icons/DeleteOutline.svg)` | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) |
-| 人口統計 | `![Demographic](/help/assets/icons/Demographic.svg)` | ![ 人口統計 ](/help/assets/icons/Demographic.svg) |
+| デモグラフィック | `![Demographic](/help/assets/icons/Demographic.svg)` | ![ 人口統計 ](/help/assets/icons/Demographic.svg) |
 | 選択を解除 | `![Deselect](/help/assets/icons/Deselect.svg)` | ![ 選択を解除 ](/help/assets/icons/Deselect.svg) |
 | DeselectCircular | `![DeselectCircular](/help/assets/icons/DeselectCircular.svg)` | ![DeselectCircular](/help/assets/icons/DeselectCircular.svg) |
 | デスクトップとモバイル | `![DesktopAndMobile](/help/assets/icons/DesktopAndMobile.svg)` | ![ デスクトップとモバイル ](/help/assets/icons/DesktopAndMobile.svg) |
@@ -408,7 +408,6 @@ ht-degree: 14%
 | 予測 | `![Forecast](/help/assets/icons/Forecast.svg)` | ![ 予測 ](/help/assets/icons/Forecast.svg) |
 | フォーム | `![Form](/help/assets/icons/Form.svg)` | ![フォーム](/help/assets/icons/Form.svg) |
 | 転送 | `![Forward](/help/assets/icons/Forward.svg)` | ![ 進む ](/help/assets/icons/Forward.svg) |
-| 頻度 | `![Frequency](/help/assets/icons/Frequency.svg)` | ![頻度](/help/assets/icons/Frequency.svg) |
 | FullScreen | `![FullScreen](/help/assets/icons/FullScreen.svg)` | ![ 全画面表示 ](/help/assets/icons/FullScreen.svg) |
 | FullScreenExit | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)` | ![FullScreenExit](/help/assets/icons/FullScreenExit.svg) |
 | 関数 | `![Function](/help/assets/icons/Function.svg)` | ![関数](/help/assets/icons/Function.svg) |
@@ -706,6 +705,7 @@ ht-degree: 14%
 | 必須 | `![Required](/help/assets/icons/Required.svg)` | ![必須](/help/assets/icons/Required.svg) |
 | サイズ変更 | `![Resize](/help/assets/icons/Resize.svg)` | ![ サイズ変更 ](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ResolvedComments](/help/assets/icons/ResolvedComment.svg) |
+| 定着 | `![Retention](/help/assets/icons/Retention.svg)` | ![リテンション](/help/assets/icons/Retention.svg) |
 | RetentionRate | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![ 保存率 ](/help/assets/icons/RetentionRates.svg) |
 | リツイート | `![Retweet](/help/assets/icons/Retweet.svg)` | ![ リツイート ](/help/assets/icons/Retweet.svg) |
 | 再利用 | `![Reuse](/help/assets/icons/Reuse.svg)` | ![ 再利用 ](/help/assets/icons/Reuse.svg) |
@@ -918,7 +918,6 @@ ht-degree: 14%
 | UnresolvedComment | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)` | ![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg) |
 | UploadToCloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)` | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)` | ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| 用途 | `![Usage](/help/assets/icons/Usage.svg)` | ![用途](/help/assets/icons/Usage.svg) |
 | ユーザー | `![User](/help/assets/icons/User.svg)` | ![ユーザー](/help/assets/icons/User.svg) |
 | UserActivity | `![UserActivity](/help/assets/icons/UserActivity.svg)` | ![UserActivity](/help/assets/icons/UserActivity.svg) |
 | UserAdd | `![UserAdd](/help/assets/icons/UserAdd.svg)` | ![ ユーザー追加 ](/help/assets/icons/UserAdd.svg) |
