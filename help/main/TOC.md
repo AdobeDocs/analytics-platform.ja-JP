@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
+source-git-commit: 29869538b2f2475b707fd3c088b5715f44de319a
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 85%
 
 + [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 + [Adobe Customer Journey Analytics 向けの AI アシスタント](../ai-assistant.md)
+
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
    + [2024年リリース](../release-notes/2024.md)
@@ -287,7 +288,7 @@ ht-degree: 85%
          + [計算指標の共有](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [計算指標の管理](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [例](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [デフォルトの計算指標](../components/calc-metrics/default-calcmetrics.md)
+      + [計算指標テンプレート](../components/calc-metrics/default-calcmetrics.md)
       + [基本関数](../components/calc-metrics/cm-functions.md)
       + [高度な関数](../components/calc-metrics/cm-adv-functions.md)
    + 日付範囲 {#cja-date-ranges}

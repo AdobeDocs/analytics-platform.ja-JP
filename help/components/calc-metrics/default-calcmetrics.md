@@ -1,19 +1,19 @@
 ---
 description: Adobeでは、使用可能な様々な計算指標を提供します。 このページでは、これらの指標とその使用目的を一覧表示します。
-title: デフォルトの計算指標
+title: 計算指標テンプレート
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: a507417c945f827ebb8bc92f7b5f54a9c4e6faa0
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 9%
+source-wordcount: '386'
+ht-degree: 8%
 
 ---
 
-# デフォルトの計算指標
+# 計算指標テンプレート
 
-Customer Journey Analyticsでは、最も一般的なユースケースに対応するために、次のデフォルトの計算指標を提供しています。 これらのAdobe定義のデフォルト計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、{ コンポーネントフィルター ]**の ![ ラベル ](/help/assets/icons/Label.svg) {2[Adobeテンプレート ](/help/components/overview.md#filter) を選択します。**[!UICONTROL 
+Customer Journey Analyticsでは、最も一般的なユースケースに対応するために、次の計算指標テンプレートを提供しています。 これらのAdobe定義の計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、{ コンポーネントフィルター ]**の ![ ラベル ](/help/assets/icons/Label.svg) {2[Adobeテンプレート ](/help/components/overview.md#filter) を選択します。**[!UICONTROL 
 
 | 計算指標名 | 説明 <br/> 数式 |
 |---------|----------|
