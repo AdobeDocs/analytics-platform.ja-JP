@@ -4,10 +4,10 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * キャンバスにコンポーネントを追加したり、既存のノードを再配置したりするためのドラッグ&amp;ドロップ操作。
 
-* ジャーニーキャンバス内にユーザージャーニーの分析を作成するオプション、またはJourney Optimizer ジャーニーに基づいてユーザージャーニーを自動作成するオプション。
+* ジャーニーキャンバス内にユーザージャーニーの分析を作成するオプション、またはJourney Optimizer ジャーニーに基づいて自動的に作成するオプション。
 
 ## 潜在的なインサイト
 
