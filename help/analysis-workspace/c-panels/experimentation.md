@@ -4,10 +4,10 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
+source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 19%
+source-wordcount: '2144'
+ht-degree: 16%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 19%
 
 
 
-**[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
+**[!UICONTROL 実験]** パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
 
 詳しくは、[Adobe Customer Journey AnalyticsとAdobe Targetの統合 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) を参照してください。
 
@@ -41,9 +41,9 @@ ht-degree: 19%
 
 実験パネルは、すべてのCustomer Journey Analyticsユーザーが使用できます。 管理者権限やその他の権限は必要ありません。 ただし、前提条件では、管理者のみが実行できるアクションが必要です。
 
-## 計算指標の新しい関数
+## 計算指標の関数
 
-上昇率および信頼性の 2 つの高度な関数が追加されました。 詳しくは、[リファレンス - 高度な関数](/help/components/calc-metrics/cm-adv-functions.md)を参照してください。
+上昇率および信頼性の 2 つの高度な関数を使用できます。 詳しくは、[リファレンス - 高度な関数](/help/components/calc-metrics/cm-adv-functions.md)を参照してください。
 
 ## 前提条件
 
@@ -51,7 +51,7 @@ ht-degree: 19%
 
 ### 実験データセットへの接続を作成
 
-推奨されるデータスキーマは、実験データを[オブジェクト配列](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、**単一** のオブジェクト配列である必要があります。 実験データとバリアントデータを区切り文字列で区切った単一のディメンションに実験データがある場合、パネルで使用するために、データビューの [ 部分文字列 ](/help/data-views/component-settings/substring.md) 設定を使用してディメンションを 2 つに分割できます。
+推奨されるデータスキーマは、実験データを [ オブジェクト配列 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、**単一** のオブジェクト配列である必要があります。 実験データが単一のディメンションに（実験データとバリアントデータを区切り文字列で区切った）存在する場合、パネルで使用するために、データビューの [ 部分文字列 ](/help/data-views/component-settings/substring.md) 設定を使用してディメンションを 2 つに分割できます。
 
 
 実験データがAdobe Experience Platformに [ 取り込み ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) れた後、[Customer Journey Analyticsで接続を作成 ](/help/connections/create-connection.md)1 つ以上の実験データセットに対して実行します。
@@ -91,7 +91,7 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
 1. パネル入力設定を指定します。
 
-   ![ プロジェクトにドラッグされた実験パネル。](assets/experiment-input.png)
+   ![ 実験パネルがプロジェクトにドラッグされました。](assets/experiment-input.png)
 
    | 設定 | 定義 |
    | --- | --- |
@@ -168,12 +168,11 @@ Customer Journey Analyticsの実験パネルを使用すると、データを人
 >
 >Customer Journey AnalyticsとAdobe Journey Optimizerの両方を使用する組織の場合、この節の情報は、Journey Optimizer内の実験機能にも適用されます。
 
-
 すべての計算指標に実験パネルとの互換性があるわけではありません。
 
 次の指標または定数のいずれかを含む計算指標は、実験パネルと互換性がありません。
 
-* 概要データセットのベース指標 <!--add link to Rob's "Summary data" doc when it's published -->
+* [ 概要データセット ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data) のベース指標
 * 相互に分割または乗算された基本指標（`Revenue`/`Orders` など）
 * 基本指標に追加または減算される定数（`Revenue+50` など）
 * 次のいずれかの基本指標。

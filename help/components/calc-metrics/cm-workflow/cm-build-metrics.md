@@ -3,7 +3,7 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 6%
@@ -67,8 +67,8 @@ ht-degree: 6%
 1. 計算指標の定義が正しいかどうかを確認するには、計算指標の結果の絶えず更新される **[!UICONTROL プレビュー]** を使用します。 **[!UICONTROL プレビュー]** は過去 90 日間をカバーし、計算指標の定義を継続的に評価します。
 
    **[!UICONTROL 製品の互換性]** は、計算指標を実験で使用できるかどうかを示します。 使用可能な値：
-   * **[!UICONTROL 実験のすべての場所]**:Customer Journey Analyticsパネルを除く、Customer Journey Analytics指標は、すべての実験で使用できます。
-   * **[!UICONTROL 実験を除く、Customer Journey Analyticsのすべての場所]**：計算指標は、すべてのCustomer Journey Analyticsで使用できます。
+   * **[!UICONTROL Customer Journey Analytics内のすべての場所]**：計算指標は、すべてのCustomer Journey Analyticsで使用できます。
+   * **[!UICONTROL Customer Journey Analyticsのすべての場所（実験を除く）]**：計算指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
 
 1. 選択：
    * **[!UICONTROL 保存]**：計算指標を保存します。
