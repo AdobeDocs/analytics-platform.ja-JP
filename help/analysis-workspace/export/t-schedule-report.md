@@ -92,7 +92,7 @@ Customer Journey Analyticsデータを書き出すその他の方法も利用で
 >[!CONTEXTUALHELP]
 >id="cja_workspace_sendfile_password"
 >title="パスワードの暗号化"
->abstract="指定したパスワードは、スケジュールされたプロジェクトのファイルを暗号化するために使用されます。組織のセキュリティ要件では、パスワードの暗号化が必要です。"
+>abstract="指定されたパスワードは、スケジュールされたプロジェクトのファイルを暗号化するために使用されます。組織のセキュリティ要件では、パスワードの暗号化が必須です。"
 
 <!-- markdownlint-enable MD034 -->
 

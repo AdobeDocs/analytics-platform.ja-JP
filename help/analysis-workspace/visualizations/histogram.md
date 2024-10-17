@@ -7,7 +7,7 @@ role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 37%
+ht-degree: 42%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_histogram_button"
 >title="ヒストグラム"
->abstract="数値データの分布を範囲のグループに表すヒストグラムビジュアライゼーションを作成します。"
+>abstract="数値データの分布を範囲のグループに表す、ヒストグラムのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

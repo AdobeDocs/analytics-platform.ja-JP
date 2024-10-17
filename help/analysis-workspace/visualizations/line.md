@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 18%
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_line_button"
 >title="行"
->abstract="時間の経過に伴う値の変化を示す折れ線グラフ ビジュアライゼーションを作成します。 折れ線グラフのビジュアライゼーションは、時間がディメンションとして使用される場合にのみ使用できます。"
+>abstract="一定期間にわたる値の変化を示す、折れ線グラフのビジュアライゼーションを作成します。折れ線グラフのビジュアライゼーションは、ディメンションとして時間を使用する場合にのみ使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 

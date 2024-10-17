@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 11%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbar_button"
 >title="横棒グラフ"
->abstract="横棒グラフビジュアライゼーションを作成して、1 つ以上の指標の様々な値を表します。"
+>abstract="1 つ以上の指標の様々な値を表す、横棒グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbarstacked_button"
 >title="積み重ね横棒グラフ"
->abstract="横棒グラフビジュアライゼーションを作成して、1 つ以上の積み重ね指標の様々な値を表します。"
+>abstract="1 つ以上の指標の様々な値を表す、積み重ね横棒グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
 >title="値のバケット化"
->abstract="バケットの値を特定の範囲に収めます。これらの範囲は、ディメンション項目としてレポートに表示されます。"
+>abstract="バケットの値を特定の範囲に収めます。これらの範囲は、レポートでディメンション項目として表示されます。"
 
 <!-- markdownlint-enable MD034 -->
 

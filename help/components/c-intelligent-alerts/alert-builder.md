@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_components_alerts_timegranularity"
 >title="時間の精度"
->abstract="時間の精度とは、アラートのチェック頻度と対象となる内容の両方を指します"
+>abstract="時間の精度とは、アラートのチェック頻度とアラートに含まれる内容の両方を指します"
 
 <!-- markdownlint-enable MD034 -->
 

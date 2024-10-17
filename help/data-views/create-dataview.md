@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
 >title="外部 ID"
->abstract="外部 ID を変更すると、外部ソース (ビジネスインテリジェンスツールなど) でのデータビュー名の表示に影響する可能性があります。"
+>abstract="外部 ID を変更すると、ビジネスインテリジェンスツールなどの外部ソースでのデータビュー名の表示方法に影響する可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,9 +70,9 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
->title="Journey Optimizerのデータビュー"
->abstract="Journey Optimizerは、Customer Journey Analyticsで設定されたデータビューを使用する必要があります。<br/> これをAdobe Journey Optimizer レポートで使用されるデフォルトのデータビューにするには、このオプションを有効にします。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="追加するコンポーネントとデータセット。"
+>title="Journey Optimizer のデータビュー"
+>abstract="Journey Optimizer は、Customer Journey Analytics で設定されたデータビューを使用する必要があります。<br/>このオプションを有効にすると、Adobe Journey Optimizer レポートで使用されるデフォルトのデータビューになります。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo#connection" text="追加されるコンポーネントとデータセット。"
 
 <!-- markdownlint-enable MD034 -->
 

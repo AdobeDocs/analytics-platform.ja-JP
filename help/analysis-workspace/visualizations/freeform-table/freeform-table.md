@@ -7,7 +7,7 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_button"
 >title="フリーフォームテーブル"
->abstract="ディメンション、セグメント、指標および日付範囲を使用して作成できる、空のフリーフォームテーブルビジュアライゼーションを作成します。 フリーフォームテーブルを他のビジュアライゼーションの基礎として使用できます。"
+>abstract="ディメンション、セグメント、指標および日付範囲を使用して作成できる、空のフリーフォームテーブルのビジュアライゼーションを作成します。フリーフォームテーブルを他のビジュアライゼーションの基礎として使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 

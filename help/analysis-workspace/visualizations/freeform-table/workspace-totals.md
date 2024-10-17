@@ -7,7 +7,7 @@ role: User
 source-git-commit: b9abcf48c5334d71639d7d96558a63611a4a491c
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_grandtotal"
 >title="総計"
->abstract="総計は、静的行を含むテーブルまたは分類ではサポートされていません"
+>abstract="静的な行を含むテーブルや分類では、総計はサポートされません。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 17%
+ht-degree: 32%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_area_button"
->title="面グラフ"
->abstract="複数の指標の積集合を表す面グラフ ビジュアライゼーションを作成します。"
+>title="階層グラフ"
+>abstract="複数の指標の積集合を表す、階層グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_areastacked_button"
 >title="積み重ね面グラフ"
->abstract="複数の指標の積み重ねを表す面グラフのビジュアライゼーションを作成します。"
+>abstract="複数の指標の積み重ねを表す、階層グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

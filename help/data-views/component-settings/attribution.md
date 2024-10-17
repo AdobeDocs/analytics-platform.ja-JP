@@ -19,7 +19,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_attribution"
 >title="アトリビューション"
->abstract="レポートで指標に適用されるデフォルトのアトリビューションモデルを設定します。"
+>abstract="レポートの指標に適用されるデフォルトのアトリビューションモデルを設定します。"
 
 <!-- markdownlint-enable MD034 -->
 

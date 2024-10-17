@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_countrepeatinstances"
 >title="繰り返しインスタンスのカウント"
->abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/><br/> メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
+>abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/><br/>メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -61,7 +61,7 @@ Analysis Workspaceの [ プロジェクト ](/help/analysis-workspace/build-work
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_repeatinstances"
 >title="繰り返しインスタンスのカウント"
->abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/> メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
+>abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/>メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
 
 <!-- markdownlint-enable MD034 -->
 

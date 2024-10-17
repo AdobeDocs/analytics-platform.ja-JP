@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 17%
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
 >title="メディア分平均オーディエンス"
->abstract="パネルを作成して、特定のコンテンツの分平均オーディエンスまたは特定の期間の分平均オーディエンスを分析します。"
+>abstract="パネルを作成して、特定のコンテンツまたは特定の期間の分平均オーディエンスを分析します。"
 
 
 <!-- markdownlint-enable MD034 -->
@@ -28,9 +28,9 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaaverageminuteaudience_panel"
 >title="メディア分平均オーディエンス"
->abstract="特定のメディアコンテンツまたはカスタム期間のパフォーマンスを表示します。<br/><br/>**一般パラメーター&#x200B;**<br/>**指標の計算**：パネルに使用する指標を選択します。 **特定のコンテンツ** を選択し、コンテンツの長さに基づいて、特定のコンテンツまたはイベントの分平均オーディエンスを分析します。 **カスタム期間を選択** カスタム選択された期間の分平均オーディエンスの変化を分析します。<br/>**レポートディメンション**: **コンテンツ ID** ディメンションの **ビデオ名** でレポートする場合に選択します。 指標として「特定のコンテンツ」を選択した場合にのみ使用できます。<br/>**精度**：レポートの精度を選択します。 指標としてカスタム期間を選択した場合にのみ使用できます。<br/>**コンテンツのフィルター基準（オプション）**：特定の番組、シーズン、エピソードを選択するか、コンテンツをフィルタリングするカスタムディメンションを選択します。<br/><br/>**詳細設定&#x200B;**<br/>**テーブル設定**：計算値をテーブルに表示するかどうかを選択します。<br/>**滞在時間指標**：特定のコンテンツ計算に使用する滞在時間指標を選択します。 指標として「特定のコンテンツ」を選択した場合にのみ使用できます。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定のコンテンツ"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="カスタム期間"
+>abstract="特定のメディアコンテンツまたはカスタム期間のパフォーマンスを表示します。<br/><br/>**一般パラメーター&#x200B;**<br/>**指標の計算**：パネルに使用する指標を選択します。「**特定のコンテンツ**」を選択し、コンテンツの長さに基づいて、特定のコンテンツまたはイベントの分平均オーディエンスを分析します。**カスタム期間を選択**&#x200B;し、カスタム選択された期間の分平均オーディエンスの変化を分析します。<br/>**レポートディメンション**：**コンテンツ ID** ディメンションの&#x200B;**ビデオ名**&#x200B;でレポートする場合に選択します。指標として「特定のコンテンツ」を選択した場合にのみ使用できます。<br/>**精度**：レポートの精度を選択します。指標として「カスタム期間」を選択した場合にのみ使用できます。<br/>**コンテンツのフィルター基準（オプション）**：特定の番組、シーズン、エピソードを選択するか、コンテンツをフィルタリングするカスタムディメンションを選択します。<br/><br/>**詳細設定&#x200B;**<br/>**テーブル設定**：計算値をテーブルに表示するかどうかを選択します。<br/>**滞在時間指標**：特定のコンテンツ計算に使用する滞在時間指標を選択します。指標として「特定のコンテンツ」を選択した場合にのみ使用できます。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定のコンテンツ"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="カスタム期間"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -19,7 +19,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields"
 >title="派生フィールド"
->abstract="派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、その場でデータ操作を定義できます。次に、その派生フィールドを Workspace でコンポーネント (指標やディメンション) として使用したり、データビューでコンポーネントとしてさらに定義したりできます。"
+>abstract="派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、データ操作をその場で定義できます。その派生フィールドを Workspace のコンポーネント（指標またはディメンション）として使用したり、さらにデータビューでコンポーネントとして定義したりできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -403,7 +403,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="この関数は、1 つまたは複数のフィールドから定義された基準に基づいて条件を適用する機能を提供します。これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するために使用されます。"
+>abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -636,14 +636,14 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 
 <!-- CLASSIFY -->
 
-### 分類 {#classify}
+### Classify {#classify}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_classify"
->title="分類"
->abstract="この関数は、テキスト入力によって対応する値に置き換えられる一連の値を定義する機能を提供します。"
+>title="Classify"
+>abstract="この関数には、テキスト入力によって対応する値に置き換えられる一連の値を定義する機能があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -788,7 +788,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_concatenate"
 >title="連結"
->abstract="この関数は、2 つ以上のフィールド、派生フィールドまたはユーザーが入力した文字列値を、定義済みの区切り文字を使用して 1 つのフィールドに結合する機能を提供します"
+>abstract="この関数は、2 つ以上のフィールド、派生フィールド、またはユーザーが入力した文字列値を、定義済みの区切り文字を使用して 1 つのフィールドに結合する機能を提供します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -868,14 +868,14 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 +++
 
 
-### 重複排除 {#dedup}
+### Deduplicate {#dedup}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_deduplicate"
->title="重複排除"
->abstract="この関数は、セッションレベルまたはユーザーレベルで値を重複せずにカウントするようにフィールドを設定する機能を提供します。さらに、重複排除 ID を使用すれば、特定の ID (購入 ID など) に基づいて、1 つの値 (最初のインスタンスまたは最後のインスタンス) のみを使用することができます。"
+>title="Deduplicate"
+>abstract="この関数は、セッションレベルまたはユーザーレベルで繰り返し値をカウントしないようにフィールドを設定する機能を提供します。さらに、重複排除 ID を使用すると、特定の ID（購入 ID など）に基づいて、1 つの値（最初のインスタンスまたは最後のインスタンス）のみが使用されるようにすることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -970,7 +970,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_findandreplace"
 >title="検索と置換"
->abstract="この関数は、選択したフィールド内のすべての値を検索し、それらの値を新しい派生フィールド内の別の値に置換する機能を提供します。"
+>abstract="この関数は、選択したフィールド内のすべての値を検索し、それらの値を新しい派生フィールド内の別の値に置き換える機能を提供します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1050,7 +1050,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lookup"
 >title="ルックアップ"
->abstract="この関数は、データセット間で一致するキーを使用してルックアップデータセットのフィールドを使用する機能を提供します。"
+>abstract="この関数には、データセット間で一致するキーを使用して、ルックアップデータセットのフィールドを使用する機能があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1104,13 +1104,13 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 <!-- LOWERCASE -->
 
-### 小文字 {#lowercase}
+### Lowercase {#lowercase}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lowercase"
->title="小文字"
+>title="Lowercase"
 >abstract="この関数は、文字列テキスト全体を小文字の値に変換します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -1172,7 +1172,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_math"
 >title="Math"
->abstract="この関数は、フィールドに対して数学的演算を実行できます。この関数を使用して、加算、減算、乗算、除算などの基本的な算術演算を実行できます。"
+>abstract="この関数は、フィールドに対して数学演算を実行する機能を提供します。この関数を使用して、加算、減算、乗算、除算などの基本的な算術演算を実行できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1256,14 +1256,14 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 <!-- MERGE FIELDS -->
 
-### フィールドを結合 {#merge}
+### Merge Fields {#merge}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_mergefields"
->title="フィールドを結合"
->abstract="この関数は、2 つの異なるフィールドから値を取得し、それぞれの値を 1 つのディメンションに含める機能を提供します。このルールは、まず、最初の値が設定されているかどうかを確認します。設定されていない場合は、2 番目の値が使用されます。以下、同様です。"
+>title="Merge Fields"
+>abstract="この関数は、2 つの異なるフィールドから値を取得し、それぞれの値を 1 つのディメンションに含める機能を提供します。まず、最初の値が設定されているかどうかを確認します。設定されていない場合は、2 番目の値などが使用されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1332,14 +1332,14 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 <!-- NEXT OR PREVIOUS -->
 
-### 次または前 {#next-previous}
+### Next or Previous {#next-previous}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_nextprevious"
->title="次または前"
->abstract="この関数は、特定のフィールドに関して収集された次または前の値を調べる機能を提供します。"
+>title="Next or Previous"
+>abstract="この関数は、特定のフィールドに関して収集された次または前の値を確認する機能を提供します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1414,14 +1414,14 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 
 <!-- REGEX REPLACE -->
 
-### 正規表現による置換 {#regex-replace}
+### Regex Replace {#regex-replace}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_regexreplace"
->title="正規表現による置換"
->abstract="この関数は、正規表現を使用して文字列の一部を抽出する機能を提供します。"
+>title="Regex Replace"
+>abstract="この関数には、正規表現を使用して文字列の一部を抽出する機能があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1528,7 +1528,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_split"
 >title="Split"
->abstract="この関数は、区切り文字に基づいてフィールドを複数のフィールドに分割する機能を提供します。"
+>abstract="この関数には、区切り文字に基づいてフィールドを複数のフィールドに分割する機能があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1623,14 +1623,14 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 <!-- SUMMARIZE -->
 
-### 要約 {#summarize}
+### Summarize {#summarize}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_summarize"
->title="要約"
->abstract="この関数は、イベント、セッションまたはユーザーレベルで値を集計する機能を提供します。選択フィールドのフィールドタイプに応じて、様々なオプションが使用可能になります。"
+>title="Summarize"
+>abstract="この関数には、イベント、セッションまたはユーザーのレベルで値を集計する機能があります。選択フィールドのフィールドタイプに応じて、様々なオプションを使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1643,7 +1643,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>値<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>要約方法</li><li>範囲<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li></ul> | <ul><li>数値<ul><li>MAX – 値のセットから最大値を返します</li><li>MIN – 値のセットから最小値を返します</li><li>MEDIAN – 一連の値の中央値を返します</li><li>MEAN – 一連の値の平均を返します。</li><li>SUM - セットの値の合計を返します</li><li>COUNT – 受信した値の数を返します</li><li>DISTINCT - ユニーク値のセットを返します。</li></ul></li><li>文字列<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li></ul></li><li>日付<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li><li>最早値 – 最も早く受け取った値（時間によって決定）。セッションおよびイベント表にのみ適用されます。</li><li>LATEST – 受信した最新の値（時間によって決定）。セッションテーブルとイベントテーブルにのみ適用されます</li></ul></li></ul> | 派生フィールドごとに 3 つの関数 | 新しい派生フィールド |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>値<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>要約方法</li><li>対象範囲<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li></ul> | <ul><li>数値<ul><li>MAX – 値のセットから最大値を返します</li><li>MIN – 値のセットから最小値を返します</li><li>MEDIAN – 一連の値の中央値を返します</li><li>MEAN – 一連の値の平均を返します。</li><li>SUM - セットの値の合計を返します</li><li>COUNT – 受信した値の数を返します</li><li>DISTINCT - ユニーク値のセットを返します。</li></ul></li><li>文字列<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li></ul></li><li>日付<ul><li>DISTINCT - ユニーク値のセットを返します。</li><li>COUNT DISTINCT – 個別の値の数を返します</li><li>MOST COMMON – 最も頻繁に受信された文字列値を返します</li><li>LEAST COMMON – 最も頻度が低い文字列値を返します</li><li>FIRST – 受け取った最初の値。セッションテーブルとイベントテーブルにのみ適用されます。</li><li>LAST – 最後に受け取った値。セッションテーブルとイベントテーブルにのみ適用できます。</li><li>最早値 – 最も早く受け取った値（時間によって決定）。セッションおよびイベント表にのみ適用されます。</li><li>LATEST – 受信した最新の値（時間によって決定）。セッションテーブルとイベントテーブルにのみ適用されます</li></ul></li></ul> | 派生フィールドごとに 3 つの関数 | 新しい派生フィールド |
 
 {style="table-layout:auto"}
 
@@ -1708,7 +1708,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_trim"
 >title="トリミング"
->abstract="この関数は、文字列の先頭または末尾から空白または特殊文字をトリミングする機能を提供します。また、文字列の先頭または末尾から、戻り値に使用する文字数を指定する機能も提供します。"
+>abstract="この関数には、文字列の先頭または末尾から空白文字や特殊文字をトリミングする機能があります。また、文字列の先頭または末尾から、戻り値に使用する文字数を指定する機能もあります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1829,7 +1829,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_urlparse"
->title="URL の解析"
+>title="Url Parse"
 >abstract="この関数には、ホスト、パス、クエリパラメーターなど、URL の様々な部分を解析する機能があります。"
 
 <!-- markdownlint-enable MD034 -->
@@ -1927,18 +1927,18 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | 関数 | 制限事項 |
 |---|---|
 | <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの場合</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)</li></ul> |
-| <p>分類</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)</li></ul> |
+| <p>Classify</p> | <ul><li>派生フィールドごとに 5 つの分類関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの関数を連結</li></ul> |
-| <p>重複排除</p> | <ul><li>派生フィールドごとに 5 つの重複排除関数</li></ul> |
+| <p>Deduplicate</p> | <ul><li>派生フィールドごとに 5 つの重複排除関数</li></ul> |
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの検索と置換関数</li></ul> |
 | <p>ルックアップ</p> | <ul><li>派生フィールドごとに 5 つのルックアップ関数</li></ul> |
-| <p>小文字</p> | <ul><li>派生フィールドごとに 2 つの小文字の関数</li></ul> |
+| <p>Lowercase</p> | <ul><li>派生フィールドごとに 2 つの小文字の関数</li></ul> |
 | <p>Math</p> | <ul><li>派生フィールドあたり 25 操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> |
-| <p>フィールドを結合</p> | <ul><li>派生フィールドごとに 2 つの結合フィールド関数</li></ul> |
-| <p>次または前</p> | <ul><li>派生フィールドごとに 3 つの次または前の関数</li></ul> |
-| <p>正規表現による置換</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
+| <p>Merge Fields</p> | <ul><li>派生フィールドごとに 2 つの結合フィールド関数</li></ul> |
+| <p>Next or Previous</p> | <ul><li>派生フィールドごとに 3 つの次または前の関数</li></ul> |
+| <p>Regex Replace</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
 | <p>Split</p> | <ul><li>派生フィールドごとに 5 つの分割関数</li></ul> |
-| <p>要約</p> | <ul><li>3 派生フィールドごとの要約関数</li></ul> |
+| <p>Summarize</p> | <ul><li>3 派生フィールドごとの要約関数</li></ul> |
 | <p>トリミング</p> | <ul><li>派生フィールドごとに 1 つの Trim 関数</li></ul> |
 | <p>URL の解析</p> | <ul><li>派生フィールドごとに 5 つの URL 解析関数</li></ul> |
 

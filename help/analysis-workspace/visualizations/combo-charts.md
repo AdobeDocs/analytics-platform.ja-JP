@@ -7,7 +7,7 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_combo_button"
 >title="コンボ"
->abstract="最初にフリーフォームテーブルを作成する必要なく、コンボグラフのビジュアライゼーションをすばやく作成します。"
+>abstract="最初にフリーフォームテーブルを作成せずに、コンボグラフのビジュアライゼーションをすばやく作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

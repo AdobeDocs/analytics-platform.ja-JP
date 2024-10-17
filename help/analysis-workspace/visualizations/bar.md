@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 13%
+ht-degree: 29%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bar_button"
 >title="棒グラフ"
->abstract="棒グラフ ビジュアライゼーションを作成して、1 つ以上の指標の様々な値を表します。"
+>abstract="1 つ以上の指標の様々な値を表す、棒グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="積み重ね棒グラフ"
->abstract="棒グラフ ビジュアライゼーションを作成して、1 つ以上の積み重ね指標の様々な値を表します。"
+>abstract="1 つ以上の積み重ね指標の様々な値を表す、棒グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_audiencelimit"
->title="オーディエンス制限"
+>title="オーディエンスの制限"
 >abstract="更新対象のオーディエンスは更新頻度に基づいて制限されます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -36,7 +36,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_refreshlookbackwindow"
 >title="ルックバックウィンドウを更新"
->abstract="オーディエンスが評価された、今日からのルックバック日数を定義します。"
+>abstract="オーディエンスの評価を行うルックバック期間（今日を基点としてカウントした日数）を定義します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_audiencesizelimit"
->title="オーディエンスサイズの上限"
->abstract="オーディエンスのサイズは 2,000 万人を超えることはできません。"
+>title="オーディエンスサイズの制限"
+>abstract="オーディエンスのサイズは 2,000 万人を超えてはなりません。"
 
 <!-- markdownlint-enable MD034 -->
 

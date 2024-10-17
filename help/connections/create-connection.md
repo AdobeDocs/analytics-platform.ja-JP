@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="追加されたレコード"
->abstract="選択したデータセットに関して、選択した時間間隔で接続に追加されたレコード （行）の数。"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続に追加されたレコード（行）数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="スキップされたレコード"
->abstract="選択したデータセットに関して、選択した時間間隔で接続のデータ転送中にスキップされたレコード （行）の数。"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続のデータ転送中にスキップされたレコード（行）数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="削除されたレコード"
->abstract="選択したデータセットについて、選択した時間間隔で接続から削除されたレコード （行）の数"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続から削除されたレコード（行）数"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="前回追加した日時"
->abstract="接続に転送された任意のデータセットからの最新のバッチのタイムスタンプ。"
+>abstract="接続に転送された任意のデータセットからの、最新バッチのタイムスタンプ。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,8 +54,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
->title="周期的なデータ期間を有効にする"
->abstract="データ保持を周期的な期間の月数として接続レベルで定義します。"
+>title="周期的なデータ時間枠を有効にする"
+>abstract="データ保持の周期的な期間を、接続レベルの月単位で定義します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
->title="日別使用の平均数"
+>title="毎日の使用の平均数"
 >abstract="接続全体で想定される毎日のイベント数の範囲を選択します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -136,7 +136,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="一致するキー"
->abstract="いずれかのイベントデータセットで、結合するフィールドを選択します。このリストが空の場合、イベントデータセットを追加または設定していない可能性があります。"
+>abstract="いずれかのイベントデータセットで結合するフィールドを選択します。このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -145,7 +145,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="新しいデータを読み込む"
->abstract="Experience Platformデータセットに追加された新しいバッチは、自動的にこの接続に追加され、分析に使用できるようになります。"
+>abstract="Experience Platform データセットに追加された新しいバッチは、自動的にこの接続に追加され、分析に使用できるようになります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -154,7 +154,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="データセットのバックフィル"
->abstract="このオプションを使用すると、接続内のこのデータセットについて、Experience Platform からの既存の (履歴) データがバックフィルされます。"
+>abstract="このオプションを選択すると、接続内のこのデータセットに対して、Experience Platform からの既存の（履歴）データがバックフィルされます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -163,7 +163,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="データセットを変換"
->abstract="このオプションは、B2B シナリオで個人ベースのルックアップに使用できるようにデータセットを変換します。一度オンにすると、データセットの変換は元に戻せません。"
+>abstract="このオプションは、B2B シナリオでのユーザーベースの検索に使用できるようにデータセットを変換します。オンにすると、データセットの変換を元に戻すことはできません。"
 
 <!-- markdownlint-enable MD034 -->
 

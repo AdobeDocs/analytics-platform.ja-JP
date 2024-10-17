@@ -1,16 +1,16 @@
 ---
-title: 製品使用のオプトアウト設定
+title: 製品使用状況のオプトアウト設定
 description: 組織内の個々のユーザーのオプトアウト設定を管理します。
 hide: true
 hidefromtoc: true
 source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# 製品使用のオプトアウト設定 {#product-usage-opt-out-settings}
+# 製品使用状況のオプトアウト設定 {#product-usage-opt-out-settings}
 
 {{release-limited-testing}}
 

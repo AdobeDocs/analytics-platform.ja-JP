@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_includeexcludevalues"
 >title="値を含める / 除外"
->abstract="特定の条件に合致する値のみを含めるようにディメンションを絞り込みます。インクルージョンおよび除外は、配分およびレポートのフィルターの前に行われます。<br/><br/>**パラメーター&#x200B;**<br/>**大文字と小文字を区別**：以下のフィルターロジックで大文字と小文字を区別するかどうかを決定します。"
+>abstract="特定の条件に合致する値のみを含めるようにディメンションを絞り込みます。含めるおよび除外は、レポートの配分およびフィルターの前に行われます。<br/><br/>**パラメーター&#x200B;**<br/>**大文字と小文字を区別**：以下のフィルターロジックで大文字と小文字を区別するかどうかを決定します。"
 
 <!-- markdownlint-enable MD034 -->
 

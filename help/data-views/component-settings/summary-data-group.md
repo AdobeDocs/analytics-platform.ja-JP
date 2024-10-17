@@ -8,23 +8,23 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
-# [!UICONTROL  概要データグループ ] コンポーネント設定 {#summary-data-group-component-settings}
+# [!UICONTROL 概要データグループ] コンポーネント設定 {#summary-data-group-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup"
 >title="概要データグループ"
->abstract="概要データグループは、グループ内のすべてのディメンション間の関連付けを作成します。これを使用すると、レポート用に概要データセットのディメンションを他のディメンションと組み合わせることができます。"
+>abstract="概要データグループは、グループ内のすべてのディメンション間で関連付けを作成し、概要データセットのディメンションを他のディメンションと組み合わせてレポートに使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
-概要データグループは、グループ内のすべてのディメンション間の関連付けを作成します。これを使用すると、レポート用に概要データセットのディメンションを他のディメンションと組み合わせることができます。
+概要データグループは、グループ内のすべてのディメンション間で関連付けを作成し、概要データセットのディメンションを他のディメンションと組み合わせてレポートに使用します。
 
 ![ 概要データグループコンポーネントの設定 ](/help/data-views/assets/summary-data-group.png)
 

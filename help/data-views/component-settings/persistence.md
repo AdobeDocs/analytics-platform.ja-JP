@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="永続性"
->abstract="ディメンションに適用されるデフォルト配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。"
+>abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。"
 
 <!-- markdownlint-enable MD034 -->
 

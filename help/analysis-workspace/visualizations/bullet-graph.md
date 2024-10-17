@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 23%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_goalvalue"
 >title="目標値"
->abstract="**[!UICONTROL 高い目標]** は、あなたが目指している主な目標です。 **[!UICONTROL 低い目標]** と **[!UICONTROL 中程度の目標]** は [!UICONTROL  高い目標 ] の下の範囲を作成します。 注意：「**[!UICONTROL パーセンテージ]**」オプションが選択されている場合は、整数として目標を入力します。 例：目標が 20% の場合は `20`。"
+>abstract="**[!UICONTROL 高い目標]**&#x200B;は、目指している主な目標です。**[!UICONTROL 低い目標]**&#x200B;と&#x200B;**[!UICONTROL 中程度の目標]**&#x200B;では、[!UICONTROL 高い目標]を下回る範囲を作成します。メモ：「**[!UICONTROL 割合]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_button"
 >title="ブレット"
->abstract="ブレットグラフのビジュアライゼーションを作成して、指標とパフォーマンス範囲（目標）の比較または測定を示します。"
+>abstract="箇条書きグラフのビジュアライゼーションを作成して、指標がパフォーマンス範囲（目標）とどのように比較または測定されるかを示します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ ht-degree: 23%
 
 | 設定 | 説明 |
 |---|---|
-| **[!UICONTROL 箇条書きオプション]** | **[!UICONTROL ブレット]** ビジュアライゼーションで **[!UICONTROL 高目標]**、**[!UICONTROL 中目標]**、[!UICONTROL  低目標 ] の値を指定します。 <br/>**[!UICONTROL  高い目標 ]**は、あなたが目指している主な目標です。**[!UICONTROL  低い目標 ]**と**[!UICONTROL  中程度の目標 ]**は、高い目標の下に範囲を作成します。 注意：「**[!UICONTROL  パーセンテージ ]**」オプションが選択されている場合は、整数として目標を入力します。 例：目標が 20% の場合は `20`。 |
+| **[!UICONTROL 箇条書きオプション]** | **[!UICONTROL ブレット]** ビジュアライゼーションで **[!UICONTROL 高目標]**、**[!UICONTROL 中目標]**、[!UICONTROL  低目標 ] の値を指定します。 <br/>**[!UICONTROL 高い目標&#x200B;]**は、目指している主な目標です。**[!UICONTROL  低い目標 ]**と**[!UICONTROL  中程度の目標 ]**は、高い目標の下に範囲を作成します。 メモ：「**[!UICONTROL &#x200B;割合&#x200B;]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。 |
 
 >[!MORELIKETHIS]
 >

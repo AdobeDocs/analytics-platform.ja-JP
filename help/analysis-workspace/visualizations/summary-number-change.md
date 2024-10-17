@@ -7,19 +7,19 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 45%
+ht-degree: 51%
 
 ---
 
 # 数値概要と変更概要
 
-## 数値の概要 {#summary-number}
+## 概要番号 {#summary-number}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarynumber_button"
->title="数値の概要"
+>title="概要番号"
 >abstract="合計と小計を表示するビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -47,7 +47,7 @@ ht-degree: 45%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="変更の概要"
->abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションを作成します"
+>abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションの作成"
 
 <!-- markdownlint-enable MD034 -->
 

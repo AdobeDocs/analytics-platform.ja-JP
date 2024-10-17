@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 17%
+ht-degree: 24%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_details"
 >title="注釈の詳細"
->abstract="注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。カレンダーイベントを特定のディメンションや指標に関連付けることができます。"
+>abstract="注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。カレンダーイベントを、特定のディメンションや指標に関連付けることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -49,8 +49,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_scope"
->title="範囲"
->abstract="範囲を使用すると、どのデータに注釈を適用するかをカスタマイズできます。 計算指標とセグメントは、その定義で使用されるコンポーネントに適用される注釈を自動的に継承しません。 既存の注釈の範囲セクションに新しい計算指標を追加できます。 新しいセグメントには新しい注釈が必要です。"
+>title="対象範囲"
+>abstract="範囲を使用すると、どのデータに注釈を適用するかをカスタマイズできます。計算指標とセグメントは、その定義で使用されるコンポーネントに適用される注釈を自動的に継承しません。新しい計算指標を既存の注釈の範囲セクションに追加できます。新しいセグメントには新しい注釈が必要です。"
 
 <!-- markdownlint-enable MD034 -->
 

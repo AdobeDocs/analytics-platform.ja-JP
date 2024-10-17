@@ -18,14 +18,14 @@ ht-degree: 8%
 
 主なメリットや権限要件など、レポートアクティビティマネージャーについて詳しくは、[ レポートアクティビティマネージャーの概要 ](/help/reporting-activity-manager/reporting-activity-overview.md) を参照してください。
 
-## すべての接続の場合 {#view-all-report-suites}
+## すべての接続 {#view-all-report-suites}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="接続"
->abstract="このテーブルには、レポートアクティビティを管理する権限のある接続が表示されます。各接続に関する情報は、テーブルの各列に表示されます。"
+>abstract="この表は、レポートアクティビティを管理する権限がある接続を示しています。各接続に関する情報は、表の各列に表示されます。"
 
 <!-- markdownlint-enable MD034 -->
 

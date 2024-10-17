@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="デフォルト以外のアトリビューションモデルを使用"
->abstract="選択した列に対してデフォルト以外の属性モデルを有効にします。"
+>abstract="選択した列に対してデフォルト以外のアトリビューションモデルを有効にします。"
 
 <!-- markdownlint-enable MD034 -->
 

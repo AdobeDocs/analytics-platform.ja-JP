@@ -7,18 +7,18 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 36%
+ht-degree: 44%
 
 ---
 
-# メディアの同時視聴者数パネル {#media-concurrent-viewers-panel}
+# メディア同時視聴者数パネル {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="メディア同時閲覧者数"
->abstract="パネルを作成して、特定のコンテンツの分平均オーディエンスまたは特定の期間の分平均オーディエンスを分析します。"
+>abstract="パネルを作成して、特定のコンテンツまたは特定の期間の分平均オーディエンスを分析します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_panel"
 >title="メディア同時閲覧者数"
->abstract="同時視聴者数の推移を分析したり、同時実行性のピークを表示したり、分類して比較したりします。<br/><br>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネルの要約数値**:<br/> 各行の日付または時刻の詳細と共に要約数値を表示するオプション。 最大値は、ピーク同時実行性の詳細を表示します。 最小値は、トラフの詳細を表示します。<br/>**シリーズの分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類します。 一度に最大 10 行を表示します。 分類は 1 つのレベルに制限されます。"
+>abstract="同時視聴者数の推移を分析、ピーク時の同時実行を表示、または分類して比較します。<br/><br>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネルの概要数値**：<br/>各行の日付または時刻の詳細と共に概要数値を表示するオプション。最大値は、ピーク時の同時実行の詳細を示します。最小値は、トラフの詳細を示します。<br/>**系列の分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。"
 
 <!-- markdownlint-enable MD034 -->
 

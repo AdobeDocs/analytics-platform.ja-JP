@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_scatter_button"
 >title="散布図"
->abstract="ディメンション項目と最大 3 つの指標の間の関係を示す散布図ビジュアライゼーションを作成します。"
+>abstract="ディメンション項目と最大 3 つの指標の関係を示す、散布図のビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

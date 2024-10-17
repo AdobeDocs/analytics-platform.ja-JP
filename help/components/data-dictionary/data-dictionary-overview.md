@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 69%
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="cja_component_datadictionary"
 >title="データディクショナリ"
->abstract="データ要素は、ユーザーと管理者の両方が Analytics 環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。 <br/>Analytics 管理者は、データ要素の各コンポーネントに関する情報をユーザーにキュレーションする責任があります。"
+>abstract="データ辞書はユーザーと管理者の両方にとって、Analytics 環境のコンポーネントを追跡したり理解を深めたりするのに役立ちます。<br/>Analytics 管理者は、データ辞書の各コンポーネントに関する情報を調整して、ユーザーに提供する責任があります。"
 
 <!-- markdownlint-enable MD034 -->
 

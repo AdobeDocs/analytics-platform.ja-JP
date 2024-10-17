@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 18%
+ht-degree: 28%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_blankpanel_button"
 >title="空のパネル"
->abstract="完全にカスタマイズされた分析を作成するために作成できる選択したパネルまたはビジュアライゼーションを表示します。"
->additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspaceのパネル"
+>abstract="完全にカスタマイズされた分析の作成に使用できる、幅広いパネルまたはビジュアライゼーションを表示します。"
+>additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspace のパネル"
 
 <!-- markdownlint-enable MD034 -->
 

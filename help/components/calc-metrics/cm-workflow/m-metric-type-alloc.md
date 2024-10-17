@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 31%
+ht-degree: 40%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lasttouch"
 >title="ラストタッチ"
->abstract="訪問者が閲覧した最後のディメンション値にクレジットの 100% を割り当てます。"
+>abstract="訪問者が閲覧した最後のディメンション値に、クレジットの 100％を割り当てます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_firsttouch"
 >title="ファーストタッチ"
->abstract="訪問者が閲覧した最初のディメンション値にクレジットの 100% を割り当てます。"
+>abstract="訪問者が閲覧した最初のディメンション値に、クレジットの 100％を割り当てます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_participation"
 >title="パーティシペーション"
->abstract="訪問者が閲覧したすべてのディメンション値にクレジットの 100%<br/> 列の合計は誇張されています。"
+>abstract="訪問者が閲覧したすべてのディメンション値に 100%クレジットされます。<br/>列の合計は誇張されています。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,7 +104,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_sametouch"
 >title="同じタッチ"
->abstract="コンバージョンと同じイベントで発生するディメンション値にのみクレジットを割り当てます。"
+>abstract="コンバージョンと同じイベントで発生するディメンション値にのみ、クレジットを割り当てます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,7 +113,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_ushaped"
 >title="U 字型"
->abstract="最初のディメンション値にクレジットの 40%、最後のディメンション値に 40% が配分され、その中間で 20% が共有されます。"
+>abstract="最初のディメンション値に 40%、最後のディメンション値に 40%、中央の値に 20%のクレジットが配分されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -122,7 +122,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_jcurve"
 >title="J カーブ"
->abstract="最後のディメンション値にクレジットの 60%、最初のディメンション値に 20% が配分され、その中間で 20% が共有されます。"
+>abstract="最後のディメンション値に 60%、最初のディメンション値に 20%、中央の値に 20%のクレジットが配分されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_inversej"
 >title="逆 J 形"
->abstract="最初のディメンション値にクレジットの 60%、最後のディメンション値に 20% が配分され、その中間で 20% が共有されます。"
+>abstract="最初のディメンション値に 60%、最後のディメンション値に 20%、中央の値に 20%のクレジットが配分されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -140,7 +140,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_timedecay"
 >title="タイムディケイ"
->abstract="コンバージョンに時間的に一番近いディメンション値に最も多くのクレジットが与えられます。"
+>abstract="コンバージョンに最も近いディメンション値に、最も多くのクレジットを付与します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,7 +149,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
 >title="カスタム"
->abstract="独自のポジションベースのアトリビューションの重み付けを定義します。"
+>abstract="独自の位置ベースのアトリビューションの重み付けを定義します。"
 
 <!-- markdownlint-enable MD034 -->
 

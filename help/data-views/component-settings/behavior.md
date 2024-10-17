@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_behavior"
 >title="動作"
->abstract="このディメンションの行項目の集計方法を決定します。<br/><br/>**パラメーター&#x200B;**<br/>**小文字**: フィールドの文字列値が小文字である必要があるかどうかを指定できます。"
+>abstract="このディメンションの行項目の集計方法を決定します。<br/><br/>**パラメーター&#x200B;**<br/>**小文字**：フィールドの文字列値が小文字である必要があるかどうかを指定できます。"
 
 <!-- markdownlint-enable MD034 -->
 

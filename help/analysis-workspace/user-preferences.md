@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_shareonlyworkspace"
 >title="Workspace ユーザーとのみ共有を許可"
->abstract="有効にすると、ユーザーはAnalysis Workspace プロジェクトを共有する際に **[!UICONTROL 任意のユーザーと共有]** オプションを使用できなくなります。 以前にこの共有オプションを通じてプロジェクトへのアクセス権を取得していたユーザーは、プロジェクトにアクセスできなくなります。"
+>abstract="有効にすると、ユーザーは Analysis Workspace プロジェクトを共有する際に「**[!UICONTROL 任意のユーザーと共有]**」オプションを使用できなくなります。以前にこの共有オプションを通じてプロジェクトへのアクセス権を取得していたユーザーは、プロジェクトにアクセスできなくなります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_requireexperiencecloudauth"
 >title="Experience Cloud 認証を要求"
->abstract="有効にすると、Analysis Workspaceの「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。"
+>abstract="有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,7 +65,7 @@ ht-degree: 73%
 | --- | --- | --- |
 | **プロジェクトの共有** | | |
 | | Workspace ユーザーとのみ共有を許可 | このオプションが有効になっている場合、組織内のユーザーは **[!UICONTROL 共有]** メニューの **[!UICONTROL 任意のユーザーと共有]** オプションを表示できません。 つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/> このオプションは、Healthcare Shield のライセンスを持つ顧客を除くすべての組織（ユーザーが組織外のユーザーとプロジェクトを共有できる）で、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを通じてプロジェクトへのアクセス権を取得していたユーザーは ] プロジェクトにアクセスできなくなります。</li><li>このオプションが有効になっている（Workspace ユーザーとのみ共有を許可する）と、後で無効になった（任意のユーザーとの共有を許可する）場合、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用してプロジェクトへのアクセス権を取得したユーザーは ] プロジェクトへのアクセス権を自動的には取り戻しません。 この場合、プロジェクトを共有したユーザーは、[!UICONTROL **プロジェクトを共有**] の [ 任意のユーザーとプロジェクトを共有（ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) で説明されているように、プロジェクトを任意のユーザーと共有する場合に使用できる [ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md) オプションを有効にする必要があります **[!UICONTROL  共有]** > **[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**、このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして「[!UICONTROL  任意のユーザーと共有 ] 共有オプションを使用できるようにするには、まず、Adobe Admin Consoleの [!UICONTROL  レポートツール ] にある [!UICONTROL  任意のユーザーとプロジェクトリンクを共有 ] 権限を追加する必要があります。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
-| | Experience Cloud 認証を要求 | 有効にすると、Analysis Workspaceの「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが [!UICONTROL  任意のユーザーと共有 ] 共有オプションおよび [!UICONTROL Experience Cloud認証を必要 ] オプションを使用してプロジェクトを共有するたびに、共有ダイアログで有効になり、プロジェクトを共有するユーザーが無効にすることはできなくなります。 ユーザーが任意のユーザーとプロジェクトを共有する方法について詳しくは、「[ プロジェクトを共有 [ の ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 任意のユーザーとプロジェクトを共有（ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md)」を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用して共有されていたプロジェクトのうち、「]Experience Cloud認証が必要 [!UICONTROL  オプションが有効になっていないプロジェクトは、すべて非アクティブ化さ ] ます。<p>このオプションを有効にして（Experience Cloud認証を要求するために）、後で無効にして（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用してプロジェクトへのアクセス権を取得したユーザーが ] プロジェクトへのアクセス権を自動的に取り戻すことはありません。 この場合、プロジェクトを共有したユーザーは、[!UICONTROL  プロジェクトを共有 ] で [](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) プロジェクトを任意のユーザーと共有 **（[!UICONTROL  共有]** > **[!UICONTROL 任意のユーザーと共有]** > **[!UICONTROL リンクがアクティブ]**）の説明に従って、[ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md)*オプションを有効にする必要があります。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法については、[ID とシングルサインオンの設定 ](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html) を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常は、[ アカウントの自動作成を有効にする ](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html) で説明しているように、システム管理者が設定します。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| | Experience Cloud 認証を要求 | 有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが [!UICONTROL  任意のユーザーと共有 ] 共有オプションおよび [!UICONTROL Experience Cloud認証を必要 ] オプションを使用してプロジェクトを共有するたびに、共有ダイアログで有効になり、プロジェクトを共有するユーザーが無効にすることはできなくなります。 ユーザーが任意のユーザーとプロジェクトを共有する方法について詳しくは、「[ プロジェクトを共有 [ の ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 任意のユーザーとプロジェクトを共有（ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md)」を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用して共有されていたプロジェクトのうち、「]Experience Cloud認証が必要 [!UICONTROL  オプションが有効になっていないプロジェクトは、すべて非アクティブ化さ ] ます。<p>このオプションを有効にして（Experience Cloud認証を要求するために）、後で無効にして（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用してプロジェクトへのアクセス権を取得したユーザーが ] プロジェクトへのアクセス権を自動的に取り戻すことはありません。 この場合、プロジェクトを共有したユーザーは、[!UICONTROL  プロジェクトを共有 ] で [](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) プロジェクトを任意のユーザーと共有 **（[!UICONTROL  共有]** > **[!UICONTROL 任意のユーザーと共有]** > **[!UICONTROL リンクがアクティブ]**）の説明に従って、[ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md)*オプションを有効にする必要があります。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法については、[ID とシングルサインオンの設定 ](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html) を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常は、[ アカウントの自動作成を有効にする ](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html) で説明しているように、システム管理者が設定します。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_categoricalpalette"
 >title="カテゴリ順パレット"
->abstract="Analysis Workspace およびガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。"
+>abstract="Analysis Workspace とガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_divergingpalette"
 >title="分岐パレット"
->abstract="Analysis Workspace およびユーザーの増加率のガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインの数値的意味を保持します。"
+>abstract="Analysis Workspace とユーザー成長ガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_sequentialpalette"
 >title="順次パレット"
->abstract="頻度トレンド (積み重ね棒グラフ) ガイド付き分析に適用されます。このパレットは、明から暗までの数値的意味を保持します。"
+>abstract="頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -126,7 +126,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showanomalies"
 >title="異常値を表示"
->abstract="**[!UICONTROL 異常値を表示]** を選択すると、時系列フリーフォームテーブルビジュアライゼーションに追加された最初の指標列で異常値検出が自動的に実行されます。"
+>abstract="「**[!UICONTROL 異常値を表示]**」を選択すると、時系列フリーフォームテーブルのビジュアライゼーションに追加された最初の指標列で異常値検出が自動的に実行されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -135,7 +135,7 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showforecast"
 >title="予測を表示"
->abstract="**[!UICONTROL 予測を表示]** を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列が自動的に予測されます。"
+>abstract="「**[!UICONTROL 予測を表示]**」を選択すると、最初の指標列が自動的に予測され、時系列のフリーフォームテーブルのビジュアライゼーションに追加されます。"
 
 <!-- markdownlint-enable MD034 -->
 
