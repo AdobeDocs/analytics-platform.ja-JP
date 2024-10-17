@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
 source-wordcount: '4009'
 ht-degree: 13%
@@ -17,7 +17,6 @@ ht-degree: 13%
 >[!NOTE]
 >
 >この節で説明する機能を使用するには、**選択** パッケージ以上（フィールドベースのステッチの場合）または **プライム** パッケージ以上（グラフベースのステッチの場合）が必要です。 使用している Customer Journey Analytics パッケージが不明な場合は、管理者にお問い合わせください。
-
 
 ID のステッチ（または単にステッチ）は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。 クロスチャネル分析は、Customer Journey Analyticsで処理できる主なユースケースで、共通の ID （ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに対してレポートをシームレスに組み合わせて実行できます。
 

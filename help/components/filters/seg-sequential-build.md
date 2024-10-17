@@ -3,16 +3,16 @@ description: 順次フィルターは、THEN 演算子を使用してフィル�
 title: 順次フィルター
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: d6ea541de7c8b97151f16a01f61a002c5b877e7c
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 2%
+source-wordcount: '2459'
+ht-degree: 3%
 
 ---
 
 # 順次フィルター
 
-順次フィルターは、コンポーネント、コンテナとコンポーネントまたはコンテナの間の THEN 論理演算子を使用して作成します。 Then 論理演算子は、1 つのフィルター条件が発生し、その後に別のフィルター条件が発生することを意味します。
+順次フィルターは、コンポーネント、コンテナおよびコンポーネントまたはコンテナの間の [!UICONTROL Then] 論理演算子を使用して作成します。 [!UICONTROL Then] 論理演算子は、1 つのフィルター条件が発生し、その後に別のフィルター条件が発生することを意味します。
 
 +++ 次に、順次セグメント化を示すビデオを示します。
 
@@ -21,7 +21,6 @@ ht-degree: 2%
 {{videoaa}}
 
 +++
-
 
 順次フィルターには、いくつかの [ 基本機能 ](#basics) と、順次フィルターをより複雑にするために設定できる追加オプションがあります。
 
@@ -42,7 +41,7 @@ ht-degree: 2%
 
 
 
-順次フィルターの作成の基本は、[ フィルタービルダー ](filter-builder.md) を使用して通常のフィルターを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、フィルター定義を作成します。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常フィルターは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、自動的に順次フィルターになります。
+順次フィルターの作成の基本は、[ フィルタービルダー ](filter-builder.md) を使用して通常のフィルターを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、フィルター定義を作成できます。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常フィルターは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、自動的に順次フィルターになります。
 
 ### 例
 
@@ -79,7 +78,7 @@ ht-degree: 2%
 
 ![ ネストされたシーケンス ](assets/sequence-nested.png)
 
-## 後および内
+## [!UICONTROL After] and [!UICONTROL Within]
 
 **[!UICONTROL Then]** 演算子の ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** と ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** を使用して、さらに [time 制約 ](#time-constraints) または [Events、Sessions、またはDimensionの制約 ](#event-session-and-dimension-constraints) を定義できます。
 
@@ -99,7 +98,7 @@ ht-degree: 2%
 | 演算子 | 説明 |
 |--- |--- |
 | **[!UICONTROL 後]** | [!UICONTROL After] 演算子は、2 つのチェックポイント間の時間の最小制限を指定するために使用されます。 「後」の値を設定すると、フィルターを適用した時点で制限時間が開始されます。 例えば、ページ A に訪問したユーザーを識別するコンテナに [!UICONTROL After] 演算子が設定されていて、1 日後までページ B に戻らない場合、訪問者がページ A を離れたところでその日が始まります。 訪問者をフィルターに含めるには、ページ A を離れてページ B を表示してから、少なくとも 1440 分（1 日）経つ必要があります。 |
-| **[!UICONTROL 内部]** | [!UICONTROL Within] 演算子は、2 つのチェックポイント間の時間の最大限度を指定するために使用されます。 例えば、ページ A にアクセスしたユーザーを識別するコンテナに [!UICONTROL Within] 演算子が設定され、その後 1 日以内にページ B に戻った場合、その日はページ A を離れたところから始まります。このフィルターに含めるには、ユーザーがページ B を開く前の最大時間を 1 日間とします。フィルターに含まれるユーザーの場合、ページ B を開くには、ページ A からページ B を表示してから最大 1440 分（1 日）以内にページ B を開く必要があります。 |
+| **[!UICONTROL 内部]** | [!UICONTROL Within] 演算子は、2 つのチェックポイントの間隔の最大値を指定するために使用します。例えば、ページ A にアクセスしたユーザーを識別するコンテナに [!UICONTROL Within] 演算子が設定され、その後 1 日以内にページ B に戻った場合、その日はページ A を離れたところから始まります。このフィルターに含めるには、ユーザーがページ B を開く前の最大時間を 1 日間とします。フィルターに含まれるユーザーの場合、ページ B を開くには、ページ A からページ B を表示してから最大 1440 分（1 日）以内にページ B を開く必要があります。 |
 | **[!UICONTROL 後だが中]** | [!UICONTROL After] 演算子と [!UICONTROL Within] 演算子の両方を使用する場合、両方の演算子は順番ではなく、並行して開始および終了します。 <br/> 例えば、コンテナを `After = 1 Week(s) and Within = 2 Week(s)` に設定したフィルターを作成します。<br/> このフィルターで訪問者を識別するための条件が満たされるのは、1 ～ 2 週間のみです。 どちらの条件も、最初のページビューの時点から適用されます。 |
 
 
@@ -107,7 +106,7 @@ ht-degree: 2%
 
 時間制約の使用例をいくつか示します。
 
-##### After 演算子
+##### [!UICONTROL After] 演算子
 
 2 週間後にのみ、あるページを訪問したユーザーと別のページを訪問したユーザーを特定します。 例えば、ホームページを訪問した人は、女性は |靴ページは 2 週間後のみ。
 
@@ -115,7 +114,7 @@ ht-degree: 2%
 
 ホームのページビューが 2024 年 6 月 1 日 00:01 に発生した場合、ページビューは Women に移動します | 2024 年 6 月 15 日（PT） 00:01 以降、ページビューが発生する限り、シューズは一致します。
 
-##### Within 演算子
+##### [!UICONTROL Within] 演算子
 
 5 分以内に、あるページを訪問したユーザーと別のページを訪問したユーザーを特定します。 例えば、ホームページにアクセスした訪問者が、次に女性ページにアクセスした訪問者です |5 分以内に靴ページ。
 
@@ -123,7 +122,7 @@ ht-degree: 2%
 
 ホームのページビューが 2024 年 6 月 1 日 12:01 に発生した場合、ページビューは Women に移動します | 2024 年 6 月 15 日（PT） 12:16 より前にページビューが発生する限り、シューズは一致します。
 
-##### After but Within 演算子
+##### [!UICONTROL After] but [!UICONTROL Within] 演算子
 
 2 週間後から 1 か月以内に、あるページを訪問した後に別のページを訪問した人物を特定します。 例えば、ホームページにアクセスしてから 2 週間後、1 か月以内に女性を訪問した人物 |靴ページ。
 
@@ -132,7 +131,7 @@ ht-degree: 2%
 2024 年 6 月 1 日にホームページにアクセスし、その女性を訪問するために戻っている人物 | 2019 年 6 月 15 日（PT）以降 00:01、ただし 2019 年 7 月 1 日（PT）より前のシューズページには該当するセグメントがあります。
 
 
-### イベント、セッション、Dimensionの制約
+### [!UICONTROL Event]、{Session] および [!UICONTROL 4}Dimension] の制約[!UICONTROL 
 
 ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** 制約および ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** 制約を使用すると、時間制約だけでなく、イベント、セッション、ディメンションの制約も指定できます。 **[!UICONTROL イベント]**、**[!UICONTROL セッション]** または **[!UICONTROL その他のディメンション]** ![ 山形の権限 ](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension名&#x200B;*]**を選択します。 「[!UICONTROL *検索*]」フィールドを使用して、ディメンションを検索できます。
 
@@ -149,11 +148,11 @@ ht-degree: 2%
 | ページ `Women \| Shoes` の後にページ `Checkout \| Thank You` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | ページ `Women \| Shoes`、ページ `Women \| Tops`、ページ `Checkout \| Thank You` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
-## 以下を含む
+## [!UICONTROL 含める]
 
 順次フィルターまたは順次フィルターの一部である順次コンテナに含めるデータを指定できます。
 
-### 全員 {#include_everyone}
+### [!UICONTROL  全員 ] {#include_everyone}
 
 全員を含む順次フィルターを作成するには、「![ ユーザーグループ ](/help/assets/icons/UserGroup.svg)**[!UICONTROL 全員を含める]** オプションを選択します。
 
@@ -169,7 +168,7 @@ ht-degree: 2%
 | 2 | `Women \| Shoes` の後、`Men \| Shoes` の `Checkout \| Thank You` （異なるセッション間） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 3 | `Checkout \| Thank You`、`Women \| Shoes` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
-### シーケンスの前のみおよびシーケンスの後のみ
+### [!UICONTROL  シーケンスの前のみ ] および [!UICONTROL  シーケンスの後のみ ]
 
 オプション ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL Only Before Sequence]** および ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]** は、指定したシーケンスの前または後のサブセットにデータをフィルタリングします。
 
@@ -203,7 +202,7 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 ![ 順次フィルターレポート ](assets/sequential-filter-freeform-table.png)
 
-## 以下を除外する
+## [!UICONTROL 除外]
 
 フィルター定義には、**[!UICONTROL 除外]** を使用して ![ ユーザー ](/help/assets/icons/User.svg) [!UICONTROL  ユーザー ]、![ 訪問 ](/help/assets/icons/Visit.svg) [!UICONTROL  セッション ] または ![web ページ ](/help/assets/icons/WebPage.svg) [!UICONTROL  イベント ] のデータを特別に除外しない限り、すべてのデータが含まれます。
 
@@ -215,7 +214,7 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 * **参照ドメインの除外**。Google.comからの参照ドメインのみを含み、それ以外のドメインはすべて除外する定義を使用します。
 * **非購入者の識別**。注文件数が 0 より大きい場合を識別し、[!UICONTROL  個人 ] を除外します。
 
-[!UICONTROL  除外 ] を使用すると、特定のセッションやイベントがユーザーによって実行されないシーケンスを識別できます。 [!UICONTROL  除外 ] は、[!UICONTROL  論理グループ ] に含めることもできます（以下を参照）。
+[!UICONTROL  除外 ] を使用すると、ユーザーが特定のセッションに参加していない、または特定のイベントを実行していないシーケンスを識別できます。 [!UICONTROL  除外 ] は、[!UICONTROL  論理グループ ] に含めることもできます（以下を参照）。
 
 コンテナは除外できますが、コンポーネントは除外できません。
 
@@ -223,28 +222,28 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 [!UICONTROL  除外 ] の使用例については、以下を参照してください。
 
-#### 次の範囲内を除外
+#### [!UICONTROL  除外 ] 内
 
 あるページを訪問した人、別のページを訪問しなかった人、さらに別のページを訪問した人を特定します。 ![ 設定 ](/help/assets/icons/Setting.svg) 除外 ] を使用してコンテナを除外 [!UICONTROL  ます。 除外されたコンテナは、左側の薄い赤いバーで識別されます。
 
 ![ シーケンスを除外 ](assets/sequence-exclude.png)
 
 
-#### 開始時に除外
+#### 開始時の [!UICONTROL  除外 ]
 
 別のページに移動せずに、あるページを訪問した人物を特定します。 例えば、これまでホームページを訪問したことがなく購入をチェックアウトした人などです。
 
 ![ シーケンス除外開始 ](assets/sequence-exclude-start.png)
 
 
-#### 終了時に除外
+#### 最後に [!UICONTROL  除外 ]
 
 あるページを訪問したが、他のページを訪問しなかった人物を特定します。 例えば、ホームページを訪問したが、チェックアウトページにはアクセスしなかったユーザーです。
 
 ![ シーケンス除外の終了 ](assets/sequence-exclude-end.png)
 
 
-## 論理グループ
+## [!UICONTROL  論理グループ ]
 
 >[!NOTE]
 >
@@ -283,13 +282,13 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 ![ 論理グループとの最初の一致を使用した例 ](assets/logicgroup-example-firstmatch.png)
 
-#### およびを除外
+#### [!UICONTROL Exclude][!UICONTROL And]
 
 あるページを訪問したユーザーを識別し、他のページのセットには明示的に訪問しなかったが、さらに別のページには訪問したユーザーを識別します。 例えば、ホームページにアクセスしたユーザーは、男性ページや女性ページにはアクセスせず、子供ページにはアクセスしました。
 
 ![ 論理グループの除外および ](assets/logicgroup-exclude-and.png)
 
-#### Exclude Or
+#### [!UICONTROL Exclude][!UICONTROL Or]
 
 あるページを訪問したユーザーを識別し、一連のページのどのページにも明示的に訪問しなかったが、さらに別のページにも訪問したユーザーを識別します。 例えば、ホームページにアクセスしたユーザーは、男性および女性ページにはアクセスせず、子供ページにはアクセスしました。
 
