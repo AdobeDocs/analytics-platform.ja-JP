@@ -3,10 +3,10 @@ title: 製品の使用状況データ設定
 description: 製品の使用設定を有効化、無効化または構成します。
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 13%
+source-wordcount: '318'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,7 @@ _データ設定_ ページでは、製品の使用設定を処理します。 �
 **[!UICONTROL Customer Journey Analytics]**/**[!UICONTROL ツール]**/**[!UICONTROL 製品の使用状況]**/**[!UICONTROL データ設定]**
 
 >[!IMPORTANT]
->
->この機能を有効にする場合は、使用条件に同意してから使用する必要があります。 これらの条件に同意する場合は、組織全体を代表して同意します。 これらの利用条件に同意したユーザーは、この機能が有効になると自動的に作成されるデータビューを所有します。
+>この機能を有効にする場合は、使用条件に同意してから使用する必要があります。 これらの条件に同意する場合は、組織全体を代表して同意します。
 
 このページでは以下の設定を使用できます。
 

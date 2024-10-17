@@ -3,9 +3,9 @@ title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 6%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 6%
 
 {{release-limited-testing}}
 
-製品の使用状況を使用すると、組織でのCustomer Journey Analyticsの使用状況に関する分析データを表示できます。 Customer Journey Analyticsを使用するすべての組織で利用できます。 有効にすると、次のAdobe Experience Platform コンポーネントが自動的に作成され、自動的に接続されます。
+製品の使用状況を使用すると、組織でのCustomer Journey Analyticsの使用状況に関する分析データを表示できます。 Customer Journey Analyticsを使用するすべての組織で利用できます。 有効にすると、次のAdobe Experience Platform コンポーネントが自動的に作成され、自動的に接続されます。 これらのコンポーネントはすべてシステムが所有し、読み取り専用で、編集できません。
 
-* Adobe Experience Platformのスキーマ。 このスキーマはシステムが所有し、読み取り専用で、編集できません。
-* Adobe Experience Platformのデータセット。 このデータセットは、システムが所有し、読み取り専用で、編集できません。
-* Customer Journey Analyticsの接続。 この接続は、システムが所有し、読み取り専用で、編集できません。
-* Customer Journey Analyticsのデータビュー。 このデータビューを編集するか、上記の接続を使用してさらにデータビューを作成できます。 データ表示の所有者は、組織の製品使用を有効にする個人です。
+* Adobe Experience Platformのスキーマ
+* Adobe Experience Platformのデータセット
+* Customer Journey Analyticsの接続
+* Customer Journey Analyticsのデータビュー
 
 すべてのデータ収集と設定は、有効にすると自動的に設定されます。 ユーザーがAnalysis Workspaceでアクションを実行するたびに、そのアクションが追跡され、レポートに使用できます。
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 ## 使用可能なディメンション
 
-製品の使用を有効にすると、次のディメンションを使用できます。
+製品の使用を有効にすると、次のディメンションを使用できます。 ディメンション設定を変更する場合は、システムが所有するデータビューのコピーを作成し、コピーしたデータビューをAnalysis Workspaceで使用します。
 
 | ディメンション | 説明 |
 | --- | --- |
