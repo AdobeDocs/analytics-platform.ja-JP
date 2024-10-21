@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
 workflow-type: tm+mt
-source-wordcount: '3526'
-ht-degree: 99%
+source-wordcount: '3676'
+ht-degree: 95%
 
 ---
 
@@ -134,11 +134,67 @@ ht-degree: 99%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_matchingkey"
->title="一致するキー"
->abstract="いずれかのイベントデータセットで結合するフィールドを選択します。このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。"
+>id="cja_connection_primaryID"
+>title="プライマリ ID"
+>abstract="接続に適したプライマリ ID を選択します（B2C シナリオの場合はユーザー）。 B2B シナリオのアカウント。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_optionalContainers"
+>title="オプションコンテナ"
+>abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL  グローバルアカウント ]**：接続内のグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL Opportunity]**：接続内のオポチュニティの設定を有効にします。<br/>**[!UICONTROL  購入グループ ]**：接続内の購入グループを設定できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personID"
+>title="ユーザー ID"
+>abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からユーザー ID を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountID"
+>title="アカウント ID"
+>abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_globalAccountID"
+>title="グローバルアカウント ID"
+>abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID からグローバルアカウント ID （グローバルアカウントの一意の ID）を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_opportunityID"
+>title="商談 ID　"
+>abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID から商談 ID （商談の一意の ID）を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_buyingGroupID"
+>title="購買グループ ID"
+>abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID から購入グループ ID （購入グループの一意の ID）を選択します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
