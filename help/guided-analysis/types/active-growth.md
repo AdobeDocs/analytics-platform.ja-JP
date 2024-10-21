@@ -5,7 +5,7 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 +++
 
-![ アクティブ時間比較 ](../assets/active-growth-compare.png){style="border:1px solid gray"}
+![ アクティブ時間比較 ](../assets/active-growth-compare.png)
 
 ## ユースケース
 
