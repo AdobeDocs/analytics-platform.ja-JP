@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 3%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg)**[!UICONTROL Trends]** 分析は、製品のパフォーマンスやユーザーの行動に関する時間の経過に伴う貴重なインサイトを提供します。 このレポートの横軸は時間間隔で、縦軸は目的のイベントを測定します。
 
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
-
-+++
-
-![ トレンド比較 ](../assets/trends-compare.png)
 
 ## ユースケース
 
@@ -75,3 +69,8 @@ ht-degree: 3%
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、時間別、日別、週別、月別、四半期別があります。 同じ日付範囲に異なる間隔を設定すると、グラフのデータポイント数とテーブルの列数に影響を与える場合があります。 例えば、毎日の精度で 3 日間の分析を表示すると、3 日間の精度で 3 つのデータポイントのみが表示され、時間単位の精度で 3 日間の分析では、72 のデータポイントが表示されます。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
 
+## 例
+
+分析の例については、以下を参照してください。
+
+![ トレンド比較 ](../assets/trends-compare.png)

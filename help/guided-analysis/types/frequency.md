@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 ![ 頻度 ](/help/assets/icons/Histogram.svg)**[!UICONTROL 頻度]** 分析では、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。 この分析の垂直軸には、イベントの頻度を表すバケットが含まれます。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
 
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![頻度](../assets/frequency.png)
 
 ## ユースケース
 
@@ -72,3 +66,13 @@ ht-degree: 5%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 デフォルトでは、グラフとテーブルに集計データが表示され、テーブルをトレンドビューに展開するオプションもあります。 トレンドビューでは、ユーザーは、合計および各間隔での使用頻度に基づいてグループ化されます。つまり、1 人のユーザーを異なる間隔の異なるグループにカウントできます。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

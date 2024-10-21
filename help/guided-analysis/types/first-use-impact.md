@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,8 @@ ht-degree: 4%
 
 ![FirstUse](/help/assets/icons/FirstUse.svg)**[!UICONTROL First use impact]** 分析は、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベントの前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、特定のユーザーが最初に機能を使用した日の 0 日を表します。 ユーザーは必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって発生する可能性があるので、0 日目はユーザーごとに異なる意味を持つ場合があります。
 
-+++ デモビデオ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
-
-+++
-
-![ 初回使用時の影響 ](../assets/first-use-impact.png)
 
 
 ## ユースケース
@@ -66,3 +61,12 @@ ht-degree: 4%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、[!UICONTROL  毎日 ]、[!UICONTROL  毎週 ]、[!UICONTROL  毎月 ]、[!UICONTROL  四半期 ] などがあります。 間隔を変更すると、「前」期間と「後」期間で使用可能なオプションに影響します。
 * **[!UICONTROL 期間の前後]**：クエリレールで指定された最初の使用イベントの前後に分析する時間。 使用できるオプションは、「[!UICONTROL  間隔 ] の選択によって異なります。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![First use impact](../assets/first-use-impact.png)
+
+-->

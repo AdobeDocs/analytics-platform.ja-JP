@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,8 @@ ht-degree: 4%
 * マトリックスの左下に表示される機能は、お客様の **影響が小さい** 機能であり、広く採用されたり、頻繁に使用されたりしているわけではありません。
 * マトリックスの右下に表示される機能は、**1 回限り** の機能です。これらの機能は広く採用されていますが、頻繁には使用されません。
 
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![ エンゲージメントの比較 ](../assets/engagement-compare.png)
 
 ## ユースケース
 
@@ -76,3 +71,11 @@ ht-degree: 4%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 この分析では、クエリパネルの [!UICONTROL  カウント済み ] と同様に [!UICONTROL  間隔 ] を処理します。 1 時間ごとのアクティブユーザーはサポートされていません。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

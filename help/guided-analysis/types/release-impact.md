@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '520'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 ![ リリース ](/help/assets/icons/Release.svg)**[!UICONTROL リリースの影響]** 分析では、特定の日付の前後に主要指標がどのように実行されたかを比較します。 このレポートの横軸は期間を示し、縦軸は目的の主要指標を示します。 グラフの中央にある縦棒グラフは、比較する日付を前後に表します。 この日付は、通常、製品の更新やキャンペーンの開始など、測定の対象となる製品への注目すべき変更を表します。
 
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
-
-+++
-
-![ リリースの影響 ](../assets/release-impact.png)
 
 ## ユースケース
 
@@ -59,3 +53,13 @@ ht-degree: 5%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、[!UICONTROL  毎日 ]、[!UICONTROL  毎週 ]、[!UICONTROL  毎月 ]、[!UICONTROL  四半期 ] などがあります。 間隔を変更すると、「前」期間と「後」期間で使用可能なオプションに影響します。
 * **[!UICONTROL 期間の前後]**：クエリパネルで指定した日付の前後に分析する時間。 使用できるオプションは、「[!UICONTROL  間隔 ] の選択によって異なります。
+
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Release impact](../assets/release-impact.png)
+
+-->

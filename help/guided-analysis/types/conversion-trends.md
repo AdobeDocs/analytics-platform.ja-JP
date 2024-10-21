@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 2%
 
 ![ コンバージョンの傾向 ](/help/assets/icons/ConversionTrends.svg)**[!UICONTROL コンバージョンの傾向]** 分析では、コンバージョン率の経時的なトレンドをビジュアライゼーションできます。 横軸は時間間隔、縦軸はコンバージョン率を表します。
 
-+++ デモビデオ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
-+++
-
-![ コンバージョントレンドと時間比較 ](../assets/conversion-trends-compare.png)
 
 ## ユースケース
 
@@ -67,3 +63,12 @@ ht-degree: 2%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、時間別、日別、週別、月別、四半期別があります。 同じ日付範囲に異なる間隔を設定すると、グラフのデータポイント数とテーブルの列数に影響します。 例えば、毎日の精度で 3 日間の分析を表示すると、3 日間の精度で 3 つのデータポイントのみが表示され、時間単位の精度で 3 日間の分析では、72 のデータポイントが表示されます。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Conversion trends time compare](../assets/conversion-trends-compare.png)
+
+-->

@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '664'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 2%
 
 ![ コンバージョンファネル ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL  ファネル ]**分析は、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各ステップを表します。 縦軸は、各ステップにおけるユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
-
-+++
-
-![ ファネル時間比較 ](../assets/funnel-compare.png)
 
 ## ユースケース
 
@@ -69,3 +63,12 @@ ht-degree: 2%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 この設定は、[ ファネル ](funnel.md) など、トレンドのない分析には影響しません。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Funnel time compare](../assets/funnel-compare.png)
+
+-->

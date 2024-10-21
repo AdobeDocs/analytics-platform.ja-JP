@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,9 @@ ht-degree: 2%
 >* **Admins**: *この分析には、PersonID プロパティが必要です。 データビューにユーザー ID を追加してください。*
 >* **管理者以外**: *この分析には PersonID プロパティが必要です。 Customer Journey Analytics管理者と協力して、ユーザー ID をデータビューに追加してください。*
 
-
-+++ デモビデオ
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![タイムライン](../assets/timeline-new.png)
 
 ## ユースケース
 
@@ -68,3 +63,10 @@ ht-degree: 2%
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 この設定は、タイムラインなど、トレンドのない分析には影響しません。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
+
+
+## 例
+
+分析の例については、以下を参照してください。
+
+![タイムライン](../assets/timeline-new.png)
