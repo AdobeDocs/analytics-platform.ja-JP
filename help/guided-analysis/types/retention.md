@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1249'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,11 @@ ht-degree: 2%
 * **[!UICONTROL 開始イベントを行ったユーザーを [ 日付範囲]]** で分析：ユーザーがこの日付範囲内でイベントにエンゲージした場合、そのユーザーは分析に含まれます。 この日付範囲は、すべての期間バケットに選定するのに十分な時間をすべてのユーザーに保証します。 この日付範囲は、現在の日付に近い場合、選択した日付範囲とは異なる可能性があります。
 * **[!UICONTROL [ 日付範囲 ] からのデータは、分析を完了するために予約されています]**：この期間内に初めてユーザーが参加した場合、そのユーザーは分析に含まれ **いません**。 最近の日付範囲の場合、これらのユーザーには、すべての期間バケットに適格となる機会はありません。 過去の日付範囲の場合、これらのユーザーは、選択した日付範囲外でアクティブでした。
 
-## 例
+<!--
+## Example
 
-分析の例については、以下を参照してください。
+See below for an example of the analysis.
 
-![リテンション](../assets/retention.png)
+![Retention](../assets/retention.png)
+
+-->

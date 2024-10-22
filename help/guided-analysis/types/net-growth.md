@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 2%
 
 ---
@@ -67,9 +67,11 @@ ht-degree: 2%
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、時間別、日別、週別、月別、四半期別があります。 同じ日付範囲に異なる間隔を設定すると、グラフのデータポイント数とテーブルの列数に影響を与える場合があります。 例えば、毎日の精度で 3 日間の分析を表示すると、3 日間の精度で 3 つのデータポイントのみが表示され、時間単位の精度で 3 日間の分析では、72 のデータポイントが表示されます。
 * **[!UICONTROL 日付]**：開始日と終了日。 周期的な日付範囲のプリセットと以前に保存したカスタム範囲は便利に使用できます。または、カレンダーセレクターを使用して固定された日付範囲を選択できます。
 
+<!-- 
+## Example
 
-## 例
+See below for an example of the analysis.
 
-分析の例については、以下を参照してください。
+![Net growth compare](../assets/net-growth-compare.png)
 
-![ 純増加率の比較 ](../assets/net-growth-compare.png)
+-->

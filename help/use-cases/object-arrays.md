@@ -5,10 +5,10 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 66%
+source-wordcount: '489'
+ht-degree: 61%
 
 ---
 
@@ -265,3 +265,10 @@ Customer Journey Analyticsでは、イベントの次の部分を調べてレポ
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
+
+
+
+## 制限事項
+
+制限は、スキーマで使用され、Experience PlatformのCustomer Journey Analyticsの一部としてモデル化されるデータ内の配列に適用されます。 [ リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール [ の [](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限 ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) および ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) データサイズの制限）を参照してください。
+
