@@ -5,9 +5,9 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1806'
 ht-degree: 28%
 
 ---
@@ -15,11 +15,6 @@ ht-degree: 28%
 # ガイド付き分析の概要
 
 ガイド付き分析を使用すると、マーケティングから製品、アナリストに至るまで、Customer Journey Analyticsのクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 Analysis Workspaceおよびモバイルスコアカードと同様に、ガイド付き分析では、[ 接続 ](/help/data-views/data-views.md) を介してAdobe Experience Platformのデータを参照する [ データビュー ](../connections/overview.md) のデータを使用します。 ガイド付き分析で作成された多くのレポートは、追加研究のためにAnalysis Workspaceにシームレスに転送できます。
-
->[!NOTE]
->
->Guided Analysis とAnalysis Workspaceの用語（セグメント、フィルターなど）の違いについては、[FAQ](faq.md) を参照してください。
-
 
 次のガイド付き分析を利用できます。
 
