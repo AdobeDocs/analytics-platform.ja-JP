@@ -4,10 +4,10 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1654'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,13 @@ ht-degree: 0%
 
 このキャプションは、ジャーニーのすべてのパスのうち、コンバージョン率が最も高いパスを要約します。
 
+ジャーニーに複数の開始ノードが含まれる場合、キャプションは次のようになります。
+
 ![ジャーニーキャンバスインサイトキャプション ](assets/journey-canvas-caption.png)
+
+ジャーニーに 1 つの開始ノードが含まれる場合、キャプションは次のようになります。
+
+![ジャーニーキャンバスインサイトキャプションの単一スタートノード ](assets/journey-canvas-caption-singlestart.png)
 
 このキャプションを解釈する際は、次の点に注意してください。
 
@@ -176,13 +182,9 @@ ht-degree: 0%
 
 #### 機能の違い
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーを変更した後、変更に応じて、次の機能の機能が変わる場合があります。
+ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、変更に応じて、[!UICONTROL **矢印の設定**] ドロップダウンフィールドで使用できるオプションが変わります。 詳しくは、[ 設定の指定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
 
-* 「[!UICONTROL **ノードタイプ**]」フィールドに表示される値が変わります。
-
-* [!UICONTROL **矢印設定**] ドロップダウンフィールドで使用できるオプションが変わります。
-
-これらのフィールドについて詳しくは、[ 設定の指定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
+「[!UICONTROL **ノードタイプ**]」フィールドは、Journey Optimizerでのみ使用できます。 ジャーニーキャンバスでJourney Optimizer ジャーニーを表示している場合は、ジャーニーキャンバスでジャーニーを変更するかどうかに関係なく、この機能は使用できません。
 
 #### 同期の違い
 
