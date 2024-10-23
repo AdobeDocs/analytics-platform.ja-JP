@@ -1,15 +1,15 @@
 ---
-title: Customer Journey AnalyticsでReport Builderのデータ範囲を選択する方法
+title: Customer Journey AnalyticsでReport Builderの日付範囲を選択する方法
 description: Customer Journey AnalyticsのReport Builderでカレンダー、相対日付およびカスタム式を使用する方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 89%
 
    ![ 現在の日付と選択した 14 日を表示するReport Builderの日付範囲ペイン。](./assets/image21.png)
 
-1. 「次へ」をクリックして、データ範囲を定義します。
+1. 「次へ」をクリックして、日付範囲を定義します。
 
    日付プレビューを使用して、結果の日付範囲が目的の範囲であることを確認します。
 

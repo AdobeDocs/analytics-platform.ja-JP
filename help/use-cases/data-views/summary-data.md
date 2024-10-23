@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -430,7 +430,7 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 1. 「」から「**[!UICONTROL Customer Journey Analytics]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
 1. トップメニューから **[!UICONTROL 接続]** を選択します。
 1. 接続を選択します（例：概要データを使用した接続 **[!UICONTROL 。]**。
-1. **[!UICONTROL 接続]**/**[!UICONTROL 概要データを使用した接続例]** の詳細で、適切なデータ範囲を選択します。
+1. **[!UICONTROL 接続]**/**[!UICONTROL 概要データを使用した接続例]** の詳細で、適切な日付範囲を選択します。
    1. ![ カレンダー ](/help/assets/icons/Calendar.svg) を選択してから、「**[!UICONTROL 過去 7 日間]** を選択します。
    1. 「**[!UICONTROL 適用]**」を選択します。
 
@@ -550,7 +550,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 空の [!UICONTROL  フリーフォームテーブル ] で構成される [!UICONTROL  フリーフォーム ] パネルを持つ空のキャンバスが表示されます。
 
 1. パネル用に選択したデータビューが、概要データの設定を含むデータビューを参照していることを確認します。 例：**[!UICONTROL 概要データを使用したデータビューの例]**
-1. レポート対象のデータに対してデータ範囲が有効であることを確認します。 例：**[!UICONTROL 過去 2 か月]**。
+1. レポート対象のデータに対して日付範囲が有効であることを確認します。 例：**[!UICONTROL 過去 2 か月]**。
 1. **[!UICONTROL 2}Dimension」から]** トラッキングコード （イベント） ]**をドラッグし、空のフリーフォームテーブルにディメンションをドロップします。**[!UICONTROL 
 1. **[!UICONTROL 指標]** から **[!UICONTROL 注文]** をドラッグし、指標を **[!UICONTROL イベント]** 列にドロップして、フリーフォームテーブルのその列を置き換えます。
 1. **[!UICONTROL 指標]** から **[!UICONTROL 売上高]** をドラッグし、指標をドロップして、フリーフォームテーブルに列として追加します。

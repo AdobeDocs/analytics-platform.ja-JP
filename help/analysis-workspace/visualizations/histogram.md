@@ -4,7 +4,7 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 42%
@@ -38,7 +38,7 @@ ht-degree: 42%
 >
 >ヒストグラムは、計算指標ではなく、標準指標のみをサポートします。
 
-次の例では、ヒストグラムを使用して、人数のセッションをバケット化します。 ヒストグラムは、ほとんどの人が選択したデータ範囲に対して 16～21 のセッションを持っていることを示しています。
+次の例では、ヒストグラムを使用して、人数のセッションをバケット化します。 ヒストグラムは、ほとんどの人が選択した日付範囲で 16～21 のセッションを持っていることを示しています。
 
 ![](assets/histogram.png)
 

@@ -4,7 +4,7 @@ description: Customer Journey Analytics監査ログの表示方法と管理方�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 67%
@@ -111,7 +111,7 @@ Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL 監査�
 
 ファネルアイコン（![フィルター](assets/filter-icon.png)）を選択して、結果を絞り込むのに役立つフィルターコントロールのリストを表示します。選択した各種フィルターに関係なく、最新 1,000 件のレコードのみが表示されます。
 
-![ データ範囲に対して表示されたフィルターを示す監査ログ。](assets/filters.png)
+![ 日付範囲に対して表示されたフィルターを示す監査ログ。](assets/filters.png)
 
 UI の監査イベントには、次のフィルターを使用できます。
 

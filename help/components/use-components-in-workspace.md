@@ -4,7 +4,7 @@ title: Analysis Workspace でのコンポーネントの使用
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -120,7 +120,7 @@ Analysis Workspaceでは、次のいずれかの方法でフィルターを使�
 
      ![ 日付範囲のドロップ ](assets/add-date-range.gif)
 
-   * フリーフォームテーブルビジュアライゼーションの指標またはディメンション。 詳しくは、[ データ範囲の使用 ](/help/components/date-ranges/overview.md#use-date-ranges) を参照してください。
+   * フリーフォームテーブルビジュアライゼーションの指標またはディメンション。 詳しくは、[ 日付範囲の使用 ](/help/components/date-ranges/overview.md#use-date-ranges) を参照してください。
 
 Analysis Workspaceでの日付範囲の使用方法と管理方法について詳しくは、[ 日付範囲の概要 ](/help/components/date-ranges/overview.md) を参照してください。
 

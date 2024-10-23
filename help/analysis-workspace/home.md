@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 13%
@@ -111,7 +111,7 @@ Workspace メニューとショートカットまたはホットキーを使用�
 |---|---|---|---|
 | **[!UICONTROL フィルターを作成…]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | 新規 [ フィルター ](/help/components/filters/create-filters.md) を作成します。 |
 | **[!UICONTROL 指標を作成…]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | 新しい [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) を作成します。 |
-| **[!UICONTROL 日付範囲を作成…]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | 新規 [ データ範囲 ](/help/components/date-ranges/overview.md) を作成します。 |
+| **[!UICONTROL 日付範囲を作成…]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | 新しい [ 日付範囲 ](/help/components/date-ranges/overview.md) を作成します |
 | **[!UICONTROL 注釈を作成…]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | 新規 [ 注釈 ](/help/components/annotations/overview.md) を作成します。 |
 | **[!UICONTROL オーディエンスを作成…]** | **[!UICONTROL *shift+cmd+u *]** | **[!UICONTROL *shift+ctrl+u *]** | 新しい [ オーディエンス ](/help/components/audiences/audiences-overview.md) を作成します。 |
 | **[!UICONTROL コンポーネントを参照]** | **[!UICONTROL *opt+shift+r *]** | **[!UICONTROL *alt+shift+r *]** | プロジェクトのコンポーネントを更新します。 |

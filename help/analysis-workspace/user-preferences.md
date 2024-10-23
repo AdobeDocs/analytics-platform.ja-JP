@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '3466'
 ht-degree: 77%
@@ -229,7 +229,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **積み重ねグラフ** | | |
 | | 100% の積み重ね | 積み上げ面、積み上げ棒、または積み上げ横棒のビジュアライゼーションのこの設定は、グラフを「100 % の積み上げ」のビジュアライゼーションに変更します。 <p>詳しくは、[棒グラフおよび積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md)を参照してください。</p> |
 | **[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | バケット数 | ビジュアライゼーション内のデータ範囲（バケット）の数を選択します。グループの最大数は 50 です。 <p>詳しくは、[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)を参照してください。</p> |
+| | バケット数 | ビジュアライゼーションの日付範囲（バケット）の数を選択します。 グループの最大数は 50 です。 <p>詳しくは、[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)を参照してください。</p> |
 | | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>セッション</li><li>ユーザー</li></ul> <p>例えば、ページビューと組み合わせて使用する場合は、個人ごとのページビュー、訪問のページビュー、イベントごとのページビューを選択できます。ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。</p> |
 | **[変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 値 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>パーセントの変更</li><li>生の差異</li></ul> |
