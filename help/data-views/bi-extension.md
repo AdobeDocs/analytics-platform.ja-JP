@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3044'
-ht-degree: 63%
+source-wordcount: '3078'
+ht-degree: 62%
 
 ---
 
@@ -28,15 +28,22 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 ## 前提条件
 
-この機能を使用するには、次のものが必要です。
-
+この機能を使用するには、有効期限のある資格情報または有効期限のない資格情報を使用して、BI ツールを [!DNL Customer Journey Analytics BI extension] に接続します。 [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) には、有効期限のある資格情報または有効期限のない資格情報の設定に関する詳細が記載されています。
+CJA 権限を設定するための追加手順を以下に示します
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
+
+### 資格情報の期限切れ
 
 * Experience PlatformおよびCustomer Journey Analyticsへのアクセス権を付与しました。
 * Customer Journey Analyticsへの製品管理者アクセス権が付与され、接続およびデータビューを表示、編集、更新または削除できるようになりました。
+* OR
 * アクセスするデータビューへのアクセス権を付与しました。
 * CJA BI 拡張機能へのアクセス権を付与しました。
-* 有効期限のない資格情報で有効期限が切れる場合を使用して、BI ツールを [!DNL Customer Journey Analytics BI extension] に接続します。 [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) には、有効期限のある資格情報または有効期限のない資格情報の設定に関する詳細が記載されています。
+
+### 有効期限が切れていない資格情報
+
+* 有効期限のない資格情報をAdobe experience platform に作成します。
+* [ 資格情報の有効期限 ](#Expiring-credentials) に記載されている手順と同じ手順に従って、有効期限のない資格情報へのアクセス権を付与します。
 
 特に [ 製品管理者の追加の権限 ](../technotes/access-control.md) および [4}Admin ConsoleのCustomer Journey Analytics権限 ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console) について詳しくは ](../technotes/access-control.md#product-admin-additional-permissions) 顧客ジャーニーのアクセス制御 } を参照してください。[
 
