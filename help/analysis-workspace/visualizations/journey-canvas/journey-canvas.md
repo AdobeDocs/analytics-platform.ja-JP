@@ -4,7 +4,7 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 1%
@@ -12,8 +12,6 @@ ht-degree: 1%
 ---
 
 # ジャーニーキャンバスの概要
-
-{{release-limited-testing}}
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。 ジャーニーを一から定義したり、Journey Optimizerからジャーニーを表示して、ジャーニー内でのユーザーの離脱や継続の様子を確認できます。
 
