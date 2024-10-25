@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 84%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 84%
       + [データ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [環境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Analytics 処理とデータ準備の比較](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [Analytics の Id](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Analytics ID](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Adobe Analytics からの進化](../getting-started/aa-to-cja.md)
    + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
 
@@ -105,7 +105,7 @@ ht-degree: 84%
    + 製品の使用状況 {#product-usage}
       + [概要](../tools/product-usage/usage-overview.md)
       + [データ設定](../tools/product-usage/data-settings.md)
-      + [オプトアウトの設定](../tools/product-usage/opt-out-settings.md)
+      + [オプトアウト設定](../tools/product-usage/opt-out-settings.md)
 
 + Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
@@ -154,17 +154,17 @@ ht-degree: 84%
          + [概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [設定する](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [トラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-      + [面グラフ（積み重ね）](../analysis-workspace/visualizations/area.md)
-      + [棒グラフ（積み重ね）](../analysis-workspace/visualizations/bar.md)
+      + [積み重ね面グラフ](../analysis-workspace/visualizations/area.md)
+      + [積み重ね棒グラフ](../analysis-workspace/visualizations/bar.md)
       + [ブレット](../analysis-workspace/visualizations/bullet-graph.md)
       + [コンボ](../analysis-workspace/visualizations/combo-charts.md)
       + [ドーナツ](../analysis-workspace/visualizations/donut.md)
       + [ヒストグラム](../analysis-workspace/visualizations/histogram.md)
-      + [横棒グラフ（積み重ね）](../analysis-workspace/visualizations/horizontal-bar.md)
+      + [積み重ね横棒グラフ](../analysis-workspace/visualizations/horizontal-bar.md)
       + [主要指標の概要](../analysis-workspace/visualizations/key-metric.md)
       + [行](../analysis-workspace/visualizations/line.md)
       + [散布図](../analysis-workspace/visualizations/scatterplot.md)
-      + [数値と変更の概要](../analysis-workspace/visualizations/summary-number-change.md)
+      + [数と変更の概要](../analysis-workspace/visualizations/summary-number-change.md)
       + [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md)
       + [テキスト](../analysis-workspace/visualizations/text.md)
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
@@ -177,7 +177,7 @@ ht-degree: 84%
       + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
       + [メディア分平均オーディエンス](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [メディア同時閲覧者数](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [メディア再生に費やした時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
    + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
@@ -199,7 +199,7 @@ ht-degree: 84%
       + [概要](../analysis-workspace/c-forecast/forecasting.md)
       + [予測の表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [目次 ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+   + [目次](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspaceに関する FAQ と {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
@@ -293,7 +293,7 @@ ht-degree: 84%
    + 日付範囲 {#cja-date-ranges}
       + [概要](../components/date-ranges/overview.md)
       + [日付範囲の作成](../components/date-ranges/create.md)
-      + [日付範囲を管理](../components/date-ranges/manage.md)
+      + [日付範囲の管理](../components/date-ranges/manage.md)
       + [日付の比較](../components/date-ranges/time-comparison.md)
       + [例](../components/date-ranges/custom-date-ranges.md)
    + アラート {#alerts}
@@ -363,9 +363,10 @@ ht-degree: 84%
       + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
       + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
    + データビュー {#data-views}
-      + [データビューのユースケース](../use-cases/data-views/data-views-usecases.md)
-      + [バインディングディメンションと指標の使用](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [概要データの使用](../use-cases/data-views/summary-data.md)
+      + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
+      + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [概要データの使用](/help/use-cases/data-views/summary-data.md)
+      + [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
    + データの書き出し {#data-export}
       + [概要](../use-cases/data-export/overview.md)
       + [BI 拡張機能](../use-cases/data-export/bi-extension.md)

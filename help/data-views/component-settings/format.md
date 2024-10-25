@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 21%
+source-wordcount: '737'
+ht-degree: 23%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 21%
 >abstract="レポートで使用される際のコンポーネントの表示方法を決定します。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="通貨換算"
+>abstract="通貨コードのディメンションを選択して、選択した通貨タイプで通貨を設定および表示します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 形式を使用すると、レポートで使用される際の特定の指標の表示方法を決定できます。

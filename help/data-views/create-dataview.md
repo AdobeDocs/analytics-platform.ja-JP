@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、Customer Journey Analytics でのディメンションや指標の動作を調整できます。
 
-+++ Customer Journey Analyticsでのデータビューを説明するビデオを視聴してください
++++ Customer Journey Analytics でのデータビューを説明するビデオをご覧ください
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
 >title="外部 ID"
->abstract="外部 ID を変更すると、ビジネスインテリジェンスツールなどの外部ソースでのデータビュー名の表示方法に影響する可能性があります。"
+>abstract="外部 ID を変更すると、外部ソース（ビジネスインテリジェンスツールなど）でのデータビュー名の表示に影響する可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer のデータビュー"
->abstract="Journey Optimizer は、Customer Journey Analytics で設定されたデータビューを使用する必要があります。<br/>このオプションを有効にすると、Adobe Journey Optimizer レポートで使用されるデフォルトのデータビューになります。"
+>abstract="Customer Journey Analytics には、Adobe Journey Optimizer と互換性のある接続とデータビューを使用する必要があります。デフォルトでは、この目的のために接続とデータビューが自動的に作成されます。<br/> または、このオプションを有効にして、これをAdobe Journey Optimizer レポートで使用されるデフォルトのデータビューにすることもできます。有効にすると、Journey Optimizerに必要なすべての必須コンポーネントがこのデータビューに追加され、必要なすべてのJourney Optimizer データセットがこのデータビューに関連付けられた接続に追加されます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo#connection" text="追加されるコンポーネントとデータセット。"
 
 <!-- markdownlint-enable MD034 -->
