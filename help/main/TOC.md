@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 92%
+source-wordcount: '975'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 92%
       + [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Platform にデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + [推奨プロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [スキーマを構築](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [既存のスキーマを使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [データセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [データストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Platform をサービスとして追加](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [接続の作成](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+      + [データビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)

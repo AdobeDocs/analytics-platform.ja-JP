@@ -5,10 +5,10 @@ exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '787'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +27,7 @@ Customer Journey Analytics を利用できる人物は次のとおりです。
 
 | タスク | 詳細 |
 | --- | --- |
-| **手順 1：Adobe Analytics から Customer Journey Analytics にアップグレードする場合：アップグレードパスを選択し、データを Adobe Experience Platform に送信します** | Adobe Analytics から Customer Journey Analytics にアップグレードする場合、様々なパスが使用可能です。考えられるアップグレードパスにはそれぞれ独自のメリットとデメリットがあり、ある組織にとって適切なパスでも別の組織にとって適切ではない場合があります。 <p>Adobe Analytics から Customer Journey Analytics へのアップグレードを開始する方法について詳しくは、[Customer Journey Analytics へのアップグレードの基本を学ぶ](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)を参照してください 。<!-- [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) --> </p> |
+| **手順 1:Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合：アップグレードパスを選択し、データをAdobe Experience Platformに送信する** | Adobe Analytics から Customer Journey Analytics にアップグレードする場合、様々なパスが使用可能です。考えられるアップグレードパスにはそれぞれ独自のメリットとデメリットがあり、ある組織にとって適切なパスでも別の組織にとって適切ではない場合があります。 <p>Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードを開始するには、次のいずれかの操作を行います。</p><ul><li>Adobeが推奨するアップグレードパスに従います。 詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時の推奨パス ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</li><li>使用可能なすべてのアップグレードパスについて説明し、組織に最適なパスを選択します。 詳しくは、[Customer Journey Analyticsへのアップグレードの概要 ](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md) を参照してください。</li></ul> |
 | **手順 2：他のデータを Adobe Experience Platform に取り込む** | この手順は、Adobe Experience Platform で実行され、いくつかのサブ手順が必要となります。<ul><li>**手順 2a：データスキーマの準備**：[Adobe Experience Data Model（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して顧客体験データを標準化し、顧客体験管理の[スキーマを定義](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja)します。</li><li>**手順 2b：スキーマに基づいたデータセットの作成**：Platform 内のデータは、メールデータセット、CRM データセット、POS データセット、Adobe Analytics データセットなどのデータセットで構成されます。各データセットは、データのスキーマとバッチで構成されます。[Experience Platform でデータセットを作成](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=ja)できます。</li><li>**手順 2c：Experience Platform へのデータの取り込み**：いくつかのオプションがあります。</li></ul> |
 | **手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続の作成** | 接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。Experience Platform データセットに関するレポートを作成するには、まず Experience Platform とワークスペースのデータセット間で接続を確立する必要があります。<br>詳しくは、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。 |
 | **手順 4：データビューの作成** | データ表示は、データの「フィルタリングされた」表示です。同じ接続に対して異なるデータビューを作成し、訪問のタイムアウト、アトリビューションなどに関する設定を変えることができます。1 つのデータセットに対して複数のデータビューを作成できます。<br>[データビューの作成](/help/data-views/create-dataview.md)を参照してください。 |

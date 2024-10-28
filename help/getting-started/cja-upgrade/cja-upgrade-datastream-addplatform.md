@@ -1,0 +1,58 @@
+---
+title: Customer Journey Analytics用スキーマの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+role: Admin
+solution: Customer Journey Analytics
+feature: Basics
+hide: true
+hidefromtoc: true
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 30%
+
+---
+
+# データストリームに Platform をサービスとして追加します
+
+>[!NOTE]
+>
+>このドキュメントは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) に回答した後で使用してください。
+> 
+>このページの手順は、組織に対して動的に生成された以前のすべての手順を完了した後でのみ実行します。
+>
+>このページの手順を完了した後も、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で動的に生成されたアップグレード手順を引き続き実行してください。
+
+<!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
+
+この節の手順を完了する前に、データストリームが既に存在している必要があります。 データストリームが作成されるタイミングと方法は、次のようにAdobe Analyticsの実装によって異なります。
+
+* Adobe Analytics実装で Web SDK または Web SDK Extension を使用している場合、アップグレードプロセスの前に、Adobe Analytics環境でデータストリームを使用できました。
+
+* 他のAdobe Analytics実装では、[Customer Journey Analyticsで使用するデータストリームの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) で説明されているように、データストリームの作成はアップグレードプロセスの一部です。
+
+データストリームを使用できる状態で、Platform をサービスとして追加する必要があります。
+
+1. Adobe Experience Platform UI の左パネルで、「[!UICONTROL データ収集]」から「**[!UICONTROL データストリーム]**」を選択します。
+
+1. 以前に設定したデータストリームを選択します。<!--true?-->
+
+1. 「**[!UICONTROL サービスを追加]**」を選択します。
+
+1. [!UICONTROL サービスを追加画面]で、次の操作を行います。
+
+   1. [!UICONTROL サービス]リストから&#x200B;**[!UICONTROL Adobe Experience Platform]** を選択します。
+
+   1. 「**[!UICONTROL 有効]**」が選択されていることを確認します。
+
+   1. [!UICONTROL イベントデータセット]リストからお使いのデータセットを選択します。
+
+      ![Datastream AEP サービス](./assets/datastream-aep-service.png)
+
+   1. その他の設定はそのままにし、「**[!UICONTROL 保存]**」を選択してデータストリームを保存します。
+
+   これで、web サイトから収集したデータを Adobe Experience Platform でデータセットに転送するように、データストリームが設定されました。
+
+   データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
+
+1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で動的に生成されたアップグレード手順を引き続き実行します。
