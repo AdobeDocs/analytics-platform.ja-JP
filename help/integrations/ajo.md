@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+source-git-commit: 5e239753928f5c994245025c8b5d2aee3eee6091
 workflow-type: tm+mt
 source-wordcount: '3020'
 ht-degree: 99%
@@ -18,8 +18,6 @@ ht-degree: 99%
 Journey Optimizer で生成されたデータを設定して、Customer Journey Analytics でアドバンス分析を実行できます。この統合は、自動的に設定できます。必要に応じて、接続またはデータビューで使用できるデータセット、ディメンションまたは指標に対して追加の手動カスタマイズを行うことができます。
 
 ## Journey Optimizer 統合の自動設定
-
-{{release-limited-testing-section}}
 
 Journey Optimizer では、レポートエンジンとして Customer Journey Analytics の使用をサポートしています。Journey Optimizer ドキュメントの[新しいレポートインターフェイスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channel-report/report-gs-cja)を参照してください。
 
