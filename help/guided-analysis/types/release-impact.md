@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '530'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL  リリースの影響 ] 分析
+# [!UICONTROL  リリースの影響 ] 分析 {#release-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_releaseimpact_button"
+>title="リリースの影響"
+>abstract="リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![ リリース ](/help/assets/icons/Release.svg)**[!UICONTROL リリースの影響]** 分析では、特定の日付の前後に主要指標がどのように実行されたかを比較します。 このレポートの横軸は期間を示し、縦軸は目的の主要指標を示します。 グラフの中央にある縦棒グラフは、比較する日付を前後に表します。 この日付は、通常、製品の更新やキャンペーンの開始など、測定の対象となる製品への注目すべき変更を表します。
 

@@ -5,14 +5,23 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 3%
+source-wordcount: '781'
+ht-degree: 4%
 
 ---
 
-# [!UICONTROL  トレンド ] 分析
+# [!UICONTROL  トレンド ] 分析 {#trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_trends_button"
+>title="傾向"
+>abstract="ユーザーエンゲージメントの推移を測定します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg)**[!UICONTROL Trends]** 分析は、製品のパフォーマンスやユーザーの行動に関する時間の経過に伴う貴重なインサイトを提供します。 このレポートの横軸は時間間隔で、縦軸は目的のイベントを測定します。
 

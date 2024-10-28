@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '657'
+ht-degree: 7%
 
 ---
 
-# [!UICONTROL  頻度 ] 分析
+# [!UICONTROL  頻度 ] 分析 {#frequency}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_frequency_button"
+>title="頻度"
+>abstract="特定のイベントに対するリピートユーザーアクティビティの配分を表示します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![ 頻度 ](/help/assets/icons/Histogram.svg)**[!UICONTROL 頻度]** 分析では、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。 この分析の垂直軸には、イベントの頻度を表すバケットが含まれます。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
 

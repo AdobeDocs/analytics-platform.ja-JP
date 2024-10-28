@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL  純増加率 ] 分析
+# [!UICONTROL  純増加率 ] 分析 {#net-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_netgrowth_button"
+>title="純増加率"
+>abstract="ユーザーは増加していますか、それとも減少していますか？"
+
+<!-- markdownlint-enable MD034 -->
 
 ![ 純増加率 ](/help/assets/icons/NetGrowth.svg)**[!UICONTROL 純増加率]** 分析は、特定の期間におけるユーザーの増加率または減少率に関するインサイトを提供します。 水平軸は時間間隔、垂直軸は成長の測定です。
 

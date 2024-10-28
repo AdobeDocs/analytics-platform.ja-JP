@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '674'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL  初回使用時の影響 ] 分析
+# [!UICONTROL  初回使用時の影響 ] 分析 {#first-use-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>title="最初の使用の影響"
+>abstract="機能の初回使用が主要指標に与える影響を測定します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![FirstUse](/help/assets/icons/FirstUse.svg)**[!UICONTROL First use impact]** 分析は、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベントの前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、特定のユーザーが最初に機能を使用した日の 0 日を表します。 ユーザーは必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって発生する可能性があるので、0 日目はユーザーごとに異なる意味を持つ場合があります。
 

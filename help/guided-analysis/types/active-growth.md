@@ -5,14 +5,24 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 3%
+source-wordcount: '637'
+ht-degree: 4%
 
 ---
 
-# [!UICONTROL  能動的成長 ] 分析
+# [!UICONTROL  能動的成長 ] 分析 {#active-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_activegrowth_button"
+>title="アクティブな増加"
+>abstract="新規、継続、再来訪または休眠状態のユーザーを特定します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg)**[!UICONTROL 積極的な成長]** 分析は、特定の期間におけるユーザーの成長と獲得に関するインサイトを提供します。 横軸は時間間隔、縦軸はユーザーの測定です。 ユーザーは次の 4 つのカテゴリに分類されます。
 

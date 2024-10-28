@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 18%
+source-wordcount: '376'
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 18%
 >abstract="概要データグループは、グループ内のすべてのディメンション間で関連付けを作成し、概要データセットのディメンションを他のディメンションと組み合わせてレポートに使用します。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="レポートで非表示"
+>abstract="このオプションを選択すると、そのディメンションの **[!UICONTROL レポートでコンポーネントを非表示]** が有効になり、Analysis Workspaceやその他のCustomer Journey Analyticsレポートツールでコンポーネントが表示されなくなります。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 概要データグループは、グループ内のすべてのディメンション間で関連付けを作成し、概要データセットのディメンションを他のディメンションと組み合わせてレポートに使用します。
@@ -40,7 +50,7 @@ ht-degree: 18%
 ## 同じコンポーネント設定
 
 ディメンションをグループ化する場合は、グループに含まれる各ディメンションの [!UICONTROL  部分文字列 ]、[!UICONTROL  動作（小文字） ] および [!UICONTROL  除外値を含める ] の設定が同じであることを確認する必要があります。 そうしないと、グループ化の前に、グループの各ディメンションが異なる結果を返す可能性があります。
-次に例を示します。
+例：
 
 1. `campaign_code` （概要データの一部）と `tracking_code` （イベントデータの一部）の概要データグループを作成しました。
 1. [!UICONTROL  動作（小文字） ] を `campaign_code` に適用しましたが、`tracking_code` のディメンションには適用していません。

@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 5%
+source-wordcount: '748'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL  エンゲージメント ] 分析
+# [!UICONTROL  エンゲージメント ] 分析 {#engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_engagement_button"
+>title="エンゲージメント"
+>abstract="機能エンゲージメントの幅と深度を理解します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![EngagementGraph](/help/assets/icons/EngagementGraph.svg)**[!UICONTROL Engagement]** 分析は、機能の使用頻度と使用人数に関するインサイトを提供します。 この分析は、複数の機能を相互に比較する場合に最も適しています。 コア、パワー、ワンタイム、疑問の機能を理解することで、投資の意思決定に役立ちます。
 

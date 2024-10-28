@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL  タイムライン ] 分析
+# [!UICONTROL  タイムライン ] 分析 {#timeline}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_timeline_button"
+>title="タイムライン"
+>abstract="ユーザーレベルのセッションイベントの推移を確認します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![ タイムライン ](/help/assets/icons/Timeline.svg)**[!UICONTROL タイムライン]** 分析を使用すると、ユーザーレベルのセッションイベントを経時的に監視して、エクスペリエンスパターンを見つけ、より良いユーザーストーリーを伝えることができます。 左側のパネルでは、プロパティ値とセグメントでストリームをフィルタリングできます。 右側のパネルでは、フィルター条件に一致するユーザーのランダム化リストから選択できます。 中央の領域には、選択したユーザーのセッション別ストリームが表示されます。このストリームは、タイムスタンプ、プロパティ値、期間で構成されます。 特定のセッションの最後のイベントには期間を使用できません。
 
