@@ -5,7 +5,7 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 23%
@@ -22,16 +22,6 @@ ht-degree: 23%
 >abstract="レポートで使用される際のコンポーネントの表示方法を決定します。"
 
 <!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
->title="通貨換算"
->abstract="通貨コードのディメンションを選択して、選択した通貨タイプで通貨を設定および表示します。"
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 形式を使用すると、レポートで使用される際の特定の指標の表示方法を決定できます。
@@ -64,7 +54,16 @@ ht-degree: 23%
 
    {style="table-layout:auto"}
 
-## 通貨換算を使用
+## 通貨換算を使用 {#use-currency-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="通貨換算"
+>abstract="通貨コードのディメンションを選択して、選択した通貨タイプで通貨を設定および表示します。"
+
+<!-- markdownlint-enable MD034 -->
 
 Customer Journey Analyticsの為替コンバージョンは、国際的に事業を展開する企業にとって非常に価値があります。 Customer Journey Analyticsの為替コンバージョンは、手動での為替コンバージョンの複雑さを取り除くことで、財務データの均一性と明確性をもたらします。 通貨コンバージョンでは、毎日の履歴為替レートを追跡し、それらの毎日のレートを 4 年間維持します。
 
