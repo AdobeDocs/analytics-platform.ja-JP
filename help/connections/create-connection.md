@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="追加されたレコード"
->abstract="選択したデータセットに関して、選択した時間間隔で接続に追加されたレコード（行）数。"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続に追加されたレコード（行）の数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="スキップされたレコード"
->abstract="選択したデータセットに関して、選択した時間間隔で接続のデータ転送中にスキップされたレコード（行）数。"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続のデータ転送中にスキップされたレコード（行）の数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="削除されたレコード"
->abstract="選択したデータセットに関して、選択した時間間隔で接続から削除されたレコード（行）数"
+>abstract="選択したデータセットに関して、選択した時間間隔で接続から削除されたレコード（行）の数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="前回追加した日時"
->abstract="接続に転送された任意のデータセットからの、最新バッチのタイムスタンプ。"
+>abstract="接続に転送された任意のデータセットからの最新のバッチのタイムスタンプ。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,8 +54,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
->title="周期的なデータ時間枠を有効にする"
->abstract="データ保持の周期的な期間を、接続レベルの月単位で定義します。"
+>title="周期的なデータ期間を有効にする"
+>abstract="データ保持を月数で周期的な期間として接続レベルで定義します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -78,7 +78,7 @@ ht-degree: 94%
 * （例えば、別のバックフィルをリクエストするために）データセットを編集できます。
 * データセットごとに既存のデータ読み込むことができます。
 
-+++ 接続の作成と編集のエクスペリエンスを示すビデオ
++++ 接続エクスペリエンスの作成と編集を示すビデオ
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
@@ -136,7 +136,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
 >title="プライマリ ID"
->abstract="接続に適したプライマリ ID を選択します（B2C シナリオの場合はユーザー）。 B2B シナリオのアカウント。"
+>abstract="接続に適したプライマリ ID を選択します（B2C シナリオの場合は「ユーザー」）。B2B シナリオのアカウント。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalContainers"
 >title="オプションコンテナ"
->abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL  グローバルアカウント ]**：接続内のグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL Opportunity]**：接続内のオポチュニティの設定を有効にします。<br/>**[!UICONTROL  購入グループ ]**：接続内の購入グループを設定できます。"
+>abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL グローバルアカウント&#x200B;]**：接続内のグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL 商談]**：接続内の商談の設定を有効にします。<br/>**[!UICONTROL 購買グループ&#x200B;]**：接続内の購買グループの設定を有効にします。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -164,7 +164,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountID"
 >title="アカウント ID"
->abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。"
+>abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からアカウント ID（アカウントの一意の ID）を選択します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalAccountID"
 >title="グローバルアカウント ID"
->abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID からグローバルアカウント ID （グローバルアカウントの一意の ID）を選択します。"
+>abstract="Experience Platform のデータセットスキーマで定義されている、使用可能な ID からグローバルアカウント ID（グローバルアカウントの一意の ID）を選択します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -181,8 +181,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityID"
->title="商談 ID　"
->abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID から商談 ID （商談の一意の ID）を選択します。"
+>title="商談 ID"
+>abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID から商談 ID（商談の一意の ID）を選択します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -191,7 +191,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyingGroupID"
 >title="購買グループ ID"
->abstract="Experience Platformのデータセットスキーマで定義されている使用可能な ID から購入グループ ID （購入グループの一意の ID）を選択します。"
+>abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID から購買グループ ID（購入グループの一意の ID）を選択します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -200,7 +200,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="一致するキー"
->abstract="結合方法を選択：一致するキーまたは一致するコンテナに基づいて。<br/><br/>**[!UICONTROL  一致するキー ]**：いずれかのイベントデータセットと結合するフィールドを選択します。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。<br/>**[!UICONTROL  一致するコンテナ]**：イベントデータセットの 1 つと結合するために使用するコンテナを選択します。 このリストが空の場合、おそらく 1 つ以上のコンテナが設定されていません。"
+>abstract="結合方法を選択：一致するキーまたは一致するコンテナに基づきます。<br/><br/>**[!UICONTROL 一致するキー&#x200B;]**：いずれかのイベントデータセットで結合するフィールドを選択します。このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。<br/>**[!UICONTROL 一致するコンテナ]**：イベントデータセットの 1 つと結合するために使用するコンテナを選択します。このリストが空の場合は、1 つ以上のコンテナを設定していない可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -210,8 +210,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
->title="新しいデータを読み込む"
->abstract="Experience Platform データセットに追加された新しいバッチは、自動的にこの接続に追加され、分析に使用できるようになります。"
+>title="新しいデータの読み込み"
+>abstract="Experience Platform データセットに追加される新しいバッチはすべて、この接続に自動的に追加され、分析に使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -220,7 +220,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="データセットのバックフィル"
->abstract="このオプションを選択すると、接続内のこのデータセットに対して、Experience Platform からの既存の（履歴）データがバックフィルされます。"
+>abstract="このオプションを使用すると、接続内のこのデータセットについて、Experience Platform からの既存の（履歴）データがバックフィルされます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -228,8 +228,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
->title="データセットを変換"
->abstract="このオプションは、B2B シナリオでのユーザーベースの検索に使用できるようにデータセットを変換します。オンにすると、データセットの変換を元に戻すことはできません。"
+>title="データセットの変換"
+>abstract="このオプションは、B2B シナリオで個人ベースのルックアップに使用できるようにデータセットを変換します。一度オンにすると、データセットの変換は元に戻せません。"
 
 <!-- markdownlint-enable MD034 -->
 
