@@ -6,10 +6,10 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: b111a75041743e14a71d0df56b04c85ed4bae7b8
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 4%
+source-wordcount: '2575'
+ht-degree: 1%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 4%
 ユースケースごとに、「**詳細**」セクション内の次の BI ツールの手順を参照できます。
 
 * Power BIデスクトップ（バージョン 2.136.1478.0 64 ビット（2024 年 9 月））
-* Tableau Desktop （バージョン 2022.3.5 （20223.23..0310） 64 ビット）
+* Tableau Desktop （バージョン 2024.1.5 （20241.24.0705.0334） 64 ビット）
 
-これらの手順では、**[!UICONTROL public.ares_sql_validation]** という名前のデータビューの例、2 つのディメンション（**[!UICONTROL 製品名]** と **[!UICONTROL 製品カテゴリ]**）の例、2 つの指標（**[!UICONTROL 購入]** と **[!UICONTROL 購入収益]**）の例について説明しています。 手順を実行する際は、必要に応じて特定の環境に合わせてこれらのサンプルオブジェクトを変更します。
+この手順では、**[!UICONTROL public.cc_data_view]** という名前のデータビューの例、2 つのディメンション（**[!UICONTROL 製品名]** と **[!UICONTROL 製品カテゴリ]**）の例、2 つの指標（**[!UICONTROL 購入]** と **[!UICONTROL 購入収益]**）の例について説明します。 手順を実行する際は、必要に応じて特定の環境に合わせてこれらのサンプルオブジェクトを変更します。
 
 
 ## データビューの接続とリスト表示
@@ -81,13 +81,13 @@ ht-degree: 4%
    1. **[!UICONTROL 接続]** を選択します。
 1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得後：
    ![Destkop Power BI読み込みデータ ](assets/powerbi-navigator-load.png)
-   1. 左側のパネルのリストから **[!UICONTROL public.ares_sql_validation]** を選択します。
+   1. 左パネルのリストから **[!UICONTROL public.cc_data_view]** を選択します。
    1. **[!UICONTROL ロード]** を選択します。
 1. しばらくすると、使用可能な指標とディメンションが **[!UICONTROL データ]** パネルに表示されます。
    ![Destkop サーバーのPower BIが読み込まれました ](assets/powerbi-navigator-loaded.png)
 
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 1. Experience Platformクエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
@@ -118,8 +118,8 @@ ht-degree: 4%
    * **[!UICONTROL Database]** の下のデータベースの名前。
    * **[!UICONTROL Table]** の下のテーブルのリスト。
      ![Tableau Connected](assets/tableau-connected.png)
-   1. **[!UICONTROL ares_sql_validation]** エントリをドラッグし、「テーブルをドラッグ **[!UICONTROL と表示されるメインビューにここにエントリをドロップ]** ます。
-1. メインウィンドウに、**[!UICONTROL ares_sql_validation]** データビューの詳細が表示されるようになりました。
+   1. **[!UICONTROL cc_data_view]** エントリをドラッグし、「**[!UICONTROL テーブルをドラッグ]**」と表示されるメインビューにここにエントリをドロップします。
+1. メインウィンドウに、**[!UICONTROL cc_data_view]** データビューの詳細が表示されます。
    ![Tableau Connected](assets/tableau-validation.png)
 
 >[!ENDTABS]
@@ -132,6 +132,11 @@ ht-degree: 4%
 このユースケースでは、2023 年 1 月 1 日から 2023 年 1 月 31 日までの毎日の発生件数のトレンドを表示するテーブルとシンプルな線のビジュアライゼーションを表示します。
 
 +++ 詳細
+
+>[!PREREQUISITES]
+>
+>このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>
 
 >[!BEGINTABS]
 
@@ -169,7 +174,7 @@ ht-degree: 4%
 
    ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc2-pbi-filter-final.png)
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
@@ -196,11 +201,11 @@ ht-degree: 4%
    1. **[!UICONTROL DAY （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
    1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
 
-      **[!UICONTROL Day]** ビューは次のようになります。
+      **[!UICONTROL データ]** ビューは次のようになります。
 
       ![Tableau Desktop データ ](assets/uc2-tableau-data.png)
 
-1. **[!UICONTROL ダッシュボード]** タブを選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
+1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
    1. **[!UICONTROL データ]** シートを、**[!UICONTROL グラフ]** シートの下にある **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
    1. ビューで **[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]** を **[!UICONTROL 固定幅]** に変更します。
@@ -209,7 +214,6 @@ ht-degree: 4%
 
       ![Tableau Desktop ダッシュボード 1](assets/uc2-tableau-dashboard.png)
 
-
 >[!ENDTABS]
 
 +++
@@ -217,19 +221,61 @@ ht-degree: 4%
 
 ## 毎時トレンド
 
-ユースケースの概要
+このユースケースでは、2023 年 1 月 1 日の発生の 1 時間ごとのトレンドを表示するテーブルと単純な線のビジュアライゼーションを表示します。
 
 +++ 詳細
+
+>[!PREREQUISITES]
+>
+>このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-手順
+![ アラート ](/help/assets/icons/Alert.svg)Power BIは、日時列の処理方法を **認識** しないので、**[!UICONTROL daterangehour]** や **[!UICONTROL daterangeminute]** などのディメンションはサポートされていません。
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
-手順
+1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
+   1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
+   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `02/01/2023` の期間を指定します。
+
+      ![Tableau Desktop フィルター ](assets/uc3-tableau-filter.png)
+
+   1. **[!UICONTROL データ]** ペインの「**[!UICONTROL テーブル]**」リストから **[!UICONTROL Daterangehour]** をドラッグ&amp;ドロップし、「**[!UICONTROL 列]**」の横のフィールドにエントリをドロップします。
+      * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
+   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
+      * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
+   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+
+      シート 1 のビューは次のようになります。
+
+      ![Tableau Desktop グラフ ](assets/uc3-tableau-graph.png)
+
+1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
+1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
+1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
+1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
+   1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
+   1. **[!UICONTROL HOUR （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
+   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+
+      **[!UICONTROL データ]** ビューは次のようになります。
+
+      ![Tableau Desktop データ ](assets/uc3-tableau-data.png)
+
+1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
+   1. **[!UICONTROL データ]** シートを、**[!UICONTROL グラフ]** シートの下にある **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
+   1. ビューで **[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]** を **[!UICONTROL 固定幅]** に変更します。
+
+      **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
+
+      ![Tableau Desktop ダッシュボード 1](assets/uc3-tableau-dashboard.png)
+
 
 >[!ENDTABS]
 
@@ -238,19 +284,90 @@ ht-degree: 4%
 
 ## 月間トレンド
 
-ユースケースの概要
+このユースケースでは、2023 年 1 月 1 日～2024 年 1 月 1 日の月別トレンドを表示するテーブルとシンプルな線のビジュアライゼーションを表示します。
 
 +++ 詳細
+
+>[!PREREQUISITES]
+>
+>このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-手順
+1. **[!UICONTROL データ]** ペインで、次の操作を行います。
+   1. **[!UICONTROL daterangemonth]** ディメンションを選択します。
+   1. **[!UICONTROL 発生件数]** 指標を選択します。
 
->[!TAB Tableau]
+   当月の発生件数を示すテーブルが表示されます。 視認性を高めるには、テーブルのビジュアライゼーションを拡大します。
 
-手順
+1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
+
+   1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterangemonth is （All）]** を選択します。
+   1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
+   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **** `1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `1/1/2024.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
+   1. 「**[!UICONTROL フィルターを適用]**」を選択します。
+
+   適用した **[!UICONTROL daterangeday]** フィルターで更新されたテーブルが表示されます。
+
+1. **[!UICONTROL ビジュアライゼーション]** パネルで、
+
+   1. **[!UICONTROL 折れ線グラフ]** ビジュアライゼーションを選択します。
+
+   折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。
+
+   ![Power BIデスクトップのユースケース 2 日付範囲フィルター ](assets/uc4-pbi-filter-daterange.png)
+
+1. 折れ線グラフのビジュアライゼーションで：
+
+   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
+
+   メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。
+
+   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc4-pbi-filter-final.png)
+
+>[!TAB Tableau Desktop]
+
+1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
+   1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
+   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/01/2024` の期間を指定します。
+
+      ![Tableau Desktop フィルター ](assets/uc4-tableau-filter.png)
+
+   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
+      * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されるようにします。
+   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
+      * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
+   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+
+      シート 1 のビューは次のようになります。
+
+      ![Tableau Desktop グラフ ](assets/uc4-tableau-graph.png)
+
+1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
+1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
+1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
+1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
+   1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
+   1. **[!UICONTROL MONTH （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
+   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+
+      **[!UICONTROL データ]** ビューは次のようになります。
+
+      ![Tableau Desktop データ ](assets/uc4-tableau-data.png)
+
+1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
+   1. **[!UICONTROL データ]** シートを、**[!UICONTROL グラフ]** シートの下にある **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
+   1. ビューで **[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]** を **[!UICONTROL 固定幅]** に変更します。
+
+      **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
+
+      ![Tableau Desktop ダッシュボード 1](assets/uc4-tableau-dashboard.png)
 
 >[!ENDTABS]
 
@@ -263,13 +380,18 @@ ht-degree: 4%
 
 +++ 詳細
 
+>[!PREREQUISITES]
+>
+>このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>
+
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -290,7 +412,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -311,7 +433,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -333,7 +455,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -355,7 +477,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -377,7 +499,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -399,7 +521,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -421,7 +543,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -443,7 +565,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -465,7 +587,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 
@@ -487,7 +609,7 @@ ht-degree: 4%
 
 手順
 
->[!TAB Tableau]
+>[!TAB Tableau Desktop]
 
 手順
 

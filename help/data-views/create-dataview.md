@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bab067f50e04b7eb1a211d8767cd2cd7a2acd9c5
+source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 97%
@@ -30,16 +30,6 @@ ht-degree: 97%
 
 ## 設定する {#configure}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="外部 ID"
->abstract="外部 ID を変更すると、外部ソース（ビジネスインテリジェンスツールなど）でのデータビュー名の表示に影響する可能性があります。"
-
-<!-- markdownlint-enable MD034 -->
-
-
 新規または既存のデータビューを設定するには：
 
 1. 「**[!UICONTROL 設定]**」タブを選択します（まだアクティブでない場合）。
@@ -49,7 +39,16 @@ ht-degree: 97%
 1. 「**[!UICONTROL 保存して続行]**」を選択して、新規または既存のデータ ビューの設定を続行します。「**[!UICONTROL 保存]**」を選択して、既存のデータビューの設定を保存します。
 
 
-### 設定
+### 設定 {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="外部 ID"
+>abstract="外部 ID を変更すると、外部ソース（ビジネスインテリジェンスツールなど）でのデータビュー名の表示に影響する可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 データビューの包括的な設定を提供します。
 
