@@ -4,9 +4,9 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1973'
 ht-degree: 18%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 18%
 
 
 
-このトピックでは、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
+このトピックでは、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
 
 この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analyticsオーディエンスの概念を理解してください。
 
@@ -126,7 +126,7 @@ Customer Journey Analyticsでオーディエンスを作成して公開すると
 
 * Platform のオーディエンスは、Customer Journey Analyticsオーディエンスと同じ名前および説明を共有します。 オーディエンスが一意になるように、名前にCustomer Journey Analyticsオーディエンス ID が追加されます。
 * Customer Journey Analyticsでオーディエンスの名前や説明に加えられた変更は、すべてExperience Platformに反映されます。
-* Customer Journey Analyticsでオーディエンスが削除されても、そのオーディエンスは引き続きExperience Platformで使用できます。
+* Customer Journey Analyticsでオーディエンスを削除しても、オーディエンスのプロファイルメンバーシップが期限切れになるまで、オーディエンスは引き続きExperience Platformで使用できます。 プロファイルメンバーシップは、1 回限りのオーディエンスの場合は 420 日後、繰り返しオーディエンスの場合は 16 日後に有効期限が切れます。
 
 ## 待ち時間に関する考慮事項 {#latency}
 
