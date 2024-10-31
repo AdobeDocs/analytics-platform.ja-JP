@@ -6,17 +6,17 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
+source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 6%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
-
 # 共有デバイス
 
-この記事では、共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスのデータを処理および軽減する方法およびクエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明します。
+この記事では、共有デバイスに関するコンテキスト、[ ステッチ ](/help/stitching/overview.md) を使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータにおける共有デバイスの漏洩を理解する方法について説明します。
 
 ## 共有デバイスとは
 
@@ -24,35 +24,36 @@ ht-degree: 6%
 
 2 人のユーザーが同じデバイスを使用し、両方のユーザーが購入を行う場合、サンプルイベントデータは次のようになります。
 
-| タイムスタンプ | ページ名 | デバイス ID | 電子メール |
-|---|---|---|---|
-| 2023-05-12 12:01 | ホームページ | `1234` | |
-| 2023-05-12 12:02 | 製品紹介ページ | `1234` | |
-| 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` |
-| 2023-05-12 12:07 | 製品紹介ページ | `1234` | |
-| 2023-05-12 12:08 | 注文の成功 | `1234` | `cassidy@a.com` |
+| イベント | タイムスタンプ | ページ名 | デバイス ID | 電子メール |
+|--:|---|---|---|---|
+| 1 | 2023-05-12 12:01 | ホームページ | `1234` | |
+| 2 | 2023-05-12 12:02 | 製品紹介ページ | `1234` | |
+| 3 | 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | 製品紹介ページ | `1234` | |
+| 5 | 2023-05-12 12:08 | 注文の成功 | `1234` | `cassidy@a.com` |
 
-注文成功（購入）イベントは、データを正しいメールに正確に割り当てます。 この割り当てが分析に与える影響は、分析の実行方法によって異なります。
+この表からわかるように、イベント 3 と 5 で認証が行われると、デバイス ID とユーザー ID の間にリンクが形成され始めます。 マーケティング活動がユーザーレベルに与える影響を理解するには、これらの未認証イベントを適切なユーザーに関連付ける必要があります。
 
-- デバイス中心アプローチ：デバイス ID を使用して実行される分析。 このアプローチでは、認証済みデータと未認証データの両方が分析に含まれます。 ただし、このアプローチでは、より多くの人物に基づいた分析はできません。
-- ユーザー中心アプローチ：メールアドレスまたは他のユーザー識別子を使用して実行される分析。 このアプローチでは、認証済みイベントのみが分析に含まれます。 このアプローチでは、買収を含むカスタマージャーニーの全体像を示すことはできません
+<!--
+The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
+
+- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data are included in analysis. However, this approach does not allow for a more person based analysis. 
+- Person centric approach: analysis performed using the email address or other person identifier. With this approach, only authenticated events are included in the analysis. This approach doesn't provide a complete picture of the customer journey, including acquisition
+
+-->
 
 ## ユーザー中心の分析の向上
 
-サンプルデータには、同じデバイスに対する認証済みアクティビティと未認証アクティビティが混在しています。 課題は、認証されていないトラフィックにユーザーを割り当てることで、ユーザー中心の分析を実行し、カスタマージャーニー分析がユーザー ID 値を持たないアクティビティをドロップするのを防ぐことです。 この課題を解決するには、2 つのオプションがあります。ステッチを使用するか、ECID リセット機能を実装するかです。 両方のオプションについて、以下の節で詳しく説明します。
+ステッチプロセスは、選択した人物識別子（サンプルデータ内のメール）を、その識別子が存在しないイベントに追加することで、このアトリビューション問題に対処します。 ステッチでは、デバイス ID とユーザー ID のマッピングを活用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、ユーザー中心を維持します。 詳しくは、[ ステッチ ](/help/stitching/overview.md) を参照してください。
 
-### ステッチ
-
-ステッチプロセスは、人物中心のアプローチの欠点に対処します。 ステッチは、選択したユーザー識別子（サンプルデータ内のメール）がその識別子に存在しないイベントに追加します。 ステッチでは、デバイス ID とユーザー ID のマッピングを活用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、ユーザー中心を維持します。 詳しくは、[ ステッチ ](/help/stitching/overview.md) を参照してください。
-
-ステッチでは、最終認証アトリビューションまたはデバイス分割アトリビューションのいずれかを使用して、共有デバイスデータの属性を設定できます。 ただし、ECID のリセットを介した実装の変更でも、共有デバイスに対処できます。
+ステッチでは、最終認証アトリビューションまたはデバイス分割アトリビューションのいずれかを使用して、共有デバイスデータの属性を設定できます。 未認証のイベントを既知のユーザーに関連付けようとする試みはすべて、非決定的です。
 
 
-#### 最終認証アトリビューション
+### 最終認証アトリビューション
 
-Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Last-auth は、Audience Managerで使用され、リアルタイム顧客データプロファイルのユースケースで推奨されるアプローチです。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
+Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
 
-ステッチで last-auth アトリビューションを使用する場合、次の表に示すように、ステッチ ID が解決されます。
+ステッチで last-auth アトリビューションを使用すると、次の表に示すように、ステッチされた ID が解決されます。
 
 | タイムスタンプ | ページ名 | デバイス ID | 電子メール | ステッチ ID |
 |---|---|---|---|---|
@@ -64,9 +65,9 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 | 2023-05-13 11:08 | ホームページ | `1234` | | `cassidy@a.com` |
 
 
-#### デバイス分割
+### デバイス分割
 
-デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、現在、フィールドベースのステッチで使用されています。 デバイス分割は、最も近い既知の人物に、未認証と認証済みの両方のアクティビティのクレジットを与えるので、分析ユースケースには推奨されるアプローチです。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
+デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、最も近い既知の人物に、未認証と認証済みの両方のアクティビティのクレジットを与えるので、分析ユースケースには推奨されるアプローチです。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
 
 ステッチでデバイス分割アトリビューションを使用する場合、次の表に示すように、ステッチされた ID が解決されます。
 
@@ -80,21 +81,25 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 | 2023-05-13 11:08 | ホームページ | `1234` | | `cassidy@a.com` |
 
 
-### ECID のリセット
+<!--
 
-名前が示すように、ECID のリセットは、ほとんどの場合、ログインまたはログアウトイベントで、事前に決められたトリガーに ECID をリセットする機能を実装します。 この実装では、所定のトリガーが起動するたびに、1 台のデバイスが新しい ECID を取得します。 基本的に、このリセットにより、データの観点からデバイスが何度も *新しいデバイス* になります。 ECID のリセットは、共有デバイスがデータに表示されるのを防ぐためにも役立ちます。 追加のアルゴリズムは必要ありませんが、Adobeデータ収集の一環として ECID リセットシグナルを実装する必要があります。
+### ECID reset 
+
+As the name implies, ECID reset implements functionality that resets the ECID on a predetermined trigger, in most cases a login or logout event. With this implementation, a single device gets a new ECID every time the predetermined trigger fires. Essentially, this reset forces the device to become a *new device* over and again from a data perspective. The ECID reset also helps to prevent shared devices from even showing up in the data. No additional algorithms are required, but you have the responsibility to implement the ECID reset signal as part of your Adobe data collection implementation.
 
 
-ECID リセットを使用する場合、ステッチ ID は、次の表に示すように解決されます。
+When using ECID reset, Stitched IDs resolve as shown in the table below. 
 
-| タイムスタンプ | ページ名 | デバイス ID | 電子メール | ステッチ ID |
+| Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | ホームページ | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | 製品紹介ページ | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | 製品紹介ページ | 5678 | | `cassidy@a.com` |
-| 2023-05-12 12:08 | 注文の成功 | 5678 | `cassidy@a.com` | `cassidy@a.com` |
-| 2023-05-13 11:08 | ホームページ | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
+
+-->
 
 ## 共有医療機器曝露
 
@@ -120,7 +125,7 @@ ECID リセットを使用する場合、ステッチ ID は、次の表に示�
 
 2. **共有デバイスに対するイベントの帰属**
 
-   識別された共有デバイスについて、これらのデバイスに起因する可能性のあるイベントの数を合計から決定します。 これにより、共有デバイスがデータに与える影響と分析への影響に関するインサイトを得ることができます。
+   識別された共有デバイスについて、これらのデバイスに起因する可能性のあるイベントの数を合計から決定します。 このアトリビューションは、共有デバイスがデータに与える影響と分析に対する影響に関するインサイトを提供します。
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -198,5 +203,3 @@ ECID リセットを使用する場合、ステッチ ID は、次の表に示�
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-
