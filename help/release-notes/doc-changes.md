@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
+source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
 workflow-type: tm+mt
-source-wordcount: '4138'
-ht-degree: 68%
+source-wordcount: '4173'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年10月** | |
-| Analysis Workspaceのパフォーマンスにおけるリクエスト要因に関する新しい情報 | [Analysis Workspaceのパフォーマンスの最適化 ](/help/technotes/optimizing-performance.md#request-factors) 記事の新しい [ リクエスト要因 ](/help/technotes/optimizing-performance.md) の節で、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
+| 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法を説明するユースケースの記事を追加しました。 |
+| Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
 | Workspaceとコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、フィルター、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
 | ガイド付き分析 | Analysis Workspace内から提供されている [ ガイド付き分析 ](/help/guided-analysis/overview.md) のドキュメントを更新しました。 |
 | **2024年9月** | |

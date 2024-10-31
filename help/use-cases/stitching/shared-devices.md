@@ -3,14 +3,12 @@ title: 共有デバイス
 description: ステッチなどの手法を用いた共有デバイスの取り扱いについて説明します。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 7%
+source-wordcount: '659'
+ht-degree: 8%
 
 ---
 
@@ -67,7 +65,7 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 
 ### デバイス分割
 
-デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、最も近い既知の人物に、未認証と認証済みの両方のアクティビティのクレジットを与えるので、分析ユースケースには推奨されるアプローチです。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
+デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
 
 ステッチでデバイス分割アトリビューションを使用する場合、次の表に示すように、ステッチされた ID が解決されます。
 
