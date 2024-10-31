@@ -8,23 +8,23 @@ role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 77%
+ht-degree: 99%
 
 ---
 
 # ユーザー環境設定
 
-作成するすべての新規プロジェクトまたはパネルについて、Analysis Workspaceおよび関連コンポーネントのユーザー設定または環境設定を管理できます。 既存のプロジェクトやパネルは影響を受けません。
+作成するすべての新規プロジェクトまたはパネルについて、Analysis Workspace および関連コンポーネントのユーザー設定や環境設定を管理できます。既存のプロジェクトやパネルは影響を受けません。
 
 ## 環境設定を更新
 
 環境設定は次の方法で更新できます。
 
-- Workspaceのメインインターフェイスから ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL 環境設定を編集]** を選択します。
-- Workspace プロジェクトでの作業時に、メニューから **[!UICONTROL プロジェクト]**/**[!UICONTROL ユーザー環境設定]** を選択します。
-- メインCustomer Journey Analyticsの上部バーから **[!UICONTROL コンポーネント]**/**[!UICONTROL 環境設定]** を選択します（製品管理者のみが使用できます）。
+- Workspace のメインインターフェイスから「![UserAdmin](/help/assets/icons/UserAdmin.svg)」、「**[!UICONTROL 環境設定を編集]**」を選択します。
+- Workspace プロジェクトでの作業時に、メニューから&#x200B;**[!UICONTROL プロジェクト]**／**[!UICONTROL ユーザー環境設定]**&#x200B;を選択します。
+- Customer Journey Analytics のメイン上部バーから&#x200B;**[!UICONTROL コンポーネント]**／**[!UICONTROL 環境設定]**&#x200B;を選択します（製品管理者のみが利用可能）。
 
-## 環境設定を指定
+## 環境設定の設定
 
 次の環境設定を行うことができます。
 
@@ -34,9 +34,9 @@ ht-degree: 77%
 
 | 環境設定 | オプション |
 | --- | --- |
-| **[!UICONTROL ランディングページ]** | Customer Journey Analyticsにアクセスしたときに既定のページとして表示するページを選択してください： <ul><li>プロジェクトリスト（デフォルト）</li><li>空のプロジェクト</li><li>空のトレンドのガイド付き分析</li><li>特定のプロジェクト、リストから選択</li></ul> |
+| **[!UICONTROL ランディングページ]** | Customer Journey Analytics にアクセスしたときにデフォルトのページとして表示するページを選択します。 <ul><li>プロジェクトリスト（デフォルト）</li><li>空のプロジェクト</li><li>空のトレンドのガイド付き分析</li><li>リストから選択された特定のプロジェクト</li></ul> |
 | **[!UICONTROL ヒント]** | Analysis Workspace の右下にある青いボックスにヒントを表示します。 <p>このオプションは、デフォルトでは有効になっています。</p> |
-| **[!UICONTROL 左側のパネルグループに表示されるコンポーネント]** | 左パネルのコンポーネントメニューに表示する各コンポーネントグループの数を選択します。 <p>コンポーネントグループに 0 を選択すると、左側のパネルからコンポーネントグループにアクセスできなくなります。</p><p>デフォルトでは、次のコンポーネントグループごとに 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>フィルター</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
+| **[!UICONTROL 左パネルグループに表示されるコンポーネント]** | 左パネルのコンポーネントメニューに表示する各コンポーネントグループの数を選択します。 <p>コンポーネントグループに 0 を選択すると、左パネルからコンポーネントグループにアクセスできなくなります。</p><p>デフォルトでは、次の各コンポーネントグループに対して 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>フィルター</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
 
 ### IMS 組織の環境設定 {#ims-organization-preferences}
 
@@ -45,7 +45,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_shareonlyworkspace"
 >title="Workspace ユーザーとのみ共有を許可"
->abstract="有効にすると、ユーザーは Analysis Workspace プロジェクトを共有する際に「**[!UICONTROL 任意のユーザーと共有]**」オプションを使用できなくなります。以前にこの共有オプションを通じてプロジェクトへのアクセス権を取得していたユーザーは、プロジェクトにアクセスできなくなります。"
+>abstract="有効にすると、ユーザーは Analysis Workspace プロジェクトを共有する際に、「**[!UICONTROL 任意のユーザーと共有]**」オプションを使用できなくなります。以前にこの共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、プロジェクトにアクセスできなくなります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -64,8 +64,8 @@ ht-degree: 77%
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | このオプションが有効になっている場合、組織内のユーザーは **[!UICONTROL 共有]** メニューの **[!UICONTROL 任意のユーザーと共有]** オプションを表示できません。 つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/> このオプションは、Healthcare Shield のライセンスを持つ顧客を除くすべての組織（ユーザーが組織外のユーザーとプロジェクトを共有できる）で、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを通じてプロジェクトへのアクセス権を取得していたユーザーは ] プロジェクトにアクセスできなくなります。</li><li>このオプションが有効になっている（Workspace ユーザーとのみ共有を許可する）と、後で無効になった（任意のユーザーとの共有を許可する）場合、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用してプロジェクトへのアクセス権を取得したユーザーは ] プロジェクトへのアクセス権を自動的には取り戻しません。 この場合、プロジェクトを共有したユーザーは、[!UICONTROL **プロジェクトを共有**] の [ 任意のユーザーとプロジェクトを共有（ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) で説明されているように、プロジェクトを任意のユーザーと共有する場合に使用できる [ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md) オプションを有効にする必要があります **[!UICONTROL  共有]** > **[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**、このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして「[!UICONTROL  任意のユーザーと共有 ] 共有オプションを使用できるようにするには、まず、Adobe Admin Consoleの [!UICONTROL  レポートツール ] にある [!UICONTROL  任意のユーザーとプロジェクトリンクを共有 ] 権限を追加する必要があります。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
-| | Experience Cloud 認証を要求 | 有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが [!UICONTROL  任意のユーザーと共有 ] 共有オプションおよび [!UICONTROL Experience Cloud認証を必要 ] オプションを使用してプロジェクトを共有するたびに、共有ダイアログで有効になり、プロジェクトを共有するユーザーが無効にすることはできなくなります。 ユーザーが任意のユーザーとプロジェクトを共有する方法について詳しくは、「[ プロジェクトを共有 [ の ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 任意のユーザーとプロジェクトを共有（ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md)」を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用して共有されていたプロジェクトのうち、「]Experience Cloud認証が必要 [!UICONTROL  オプションが有効になっていないプロジェクトは、すべて非アクティブ化さ ] ます。<p>このオプションを有効にして（Experience Cloud認証を要求するために）、後で無効にして（リンクを持つすべてのユーザーがプロジェクトにアクセスできるようにする）、以前に「任意のユーザーと共有 [!UICONTROL  共有オプションを使用してプロジェクトへのアクセス権を取得したユーザーが ] プロジェクトへのアクセス権を自動的に取り戻すことはありません。 この場合、プロジェクトを共有したユーザーは、[!UICONTROL  プロジェクトを共有 ] で [](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) プロジェクトを任意のユーザーと共有 **（[!UICONTROL  共有]** > **[!UICONTROL 任意のユーザーと共有]** > **[!UICONTROL リンクがアクティブ]**）の説明に従って、[ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md)*オプションを有効にする必要があります。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法については、[ID とシングルサインオンの設定 ](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html) を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常は、[ アカウントの自動作成を有効にする ](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html) で説明しているように、システム管理者が設定します。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
+| | Experience Cloud 認証を要求 | 有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」*オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_categoricalpalette"
 >title="カテゴリ順パレット"
->abstract="Analysis Workspace とガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。"
+>abstract="Analysis Workspace およびガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_divergingpalette"
 >title="分岐パレット"
->abstract="Analysis Workspace とユーザー成長ガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。"
+>abstract="Analysis Workspace およびユーザーの増加率のガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインの数値的意味を保持します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_sequentialpalette"
 >title="順次パレット"
->abstract="頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。"
+>abstract="頻度トレンド（積み重ね横棒グラフ）ガイド付き分析に適用されます。このパレットは、明から暗までの数値的意味を保持します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -111,9 +111,9 @@ ht-degree: 77%
 | | [カラーパレット](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=ja) | Analysis Workspace とガイド付き分析で使用するビジュアライゼーションのカラーパレットを選択します。 <ul><li> カテゴリ順パレット：Analysis Workspace とガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット：Analysis Workspace とユーザー成長ガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
 | **データ** | | |
 |  | [データビュー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#report-suite) | テーブルとビジュアライゼーションがデータを導き出すデータを選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択された特定のデータビュー</li></ul> |
-|  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>[!UICONTROL  デフォルトでパネルカレンダーを基準とする相対的な日付範囲コンポーネントにする ] を有効にできます。</li></ul> |
+|  | [カレンダー](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>「[!UICONTROL デフォルトでパネルカレンダーを基準とした日付範囲コンポーネントを作成]」を有効にすることができます。</li></ul> |
 |  | [パネルタイプ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=ja) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
-|  | インスタンスのカウント | [!UICONTROL  繰り返しインスタンスをカウント ] を有効にして、繰り返しインスタンスがレポート内でカウントされるかどうかを指定します。 例えば、有効になっている場合、同じページに対して複数の連続するページビューが複数のページビューとして扱われます。 無効にすると、複数の連続するページビューが、単一のページビューと同じページ数になります。 <p>**メモ：** この設定は、特定の指標（セッションなど）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
+|  | インスタンスのカウント | 「[!UICONTROL 繰り返しインスタンスをカウント]」を有効にして、インスタンスがレポート内でカウントされるかどうかを指定します。例えば、有効にすると、同じページに対して複数の連続するページビューが複数のページビューとして扱われます。無効にすると、同じページに対する複数の連続するページビューが、単一のページビューとしてカウントされます。 <p>**メモ：**&#x200B;この設定は、特定の指標（セッションなど）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
 |  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 区切り文字 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
 |  | 注釈を表示 | 注釈をプロジェクトに表示するかどうかを選択します。注釈について詳しくは、[注釈：概要](/help/components/annotations/overview.md)を参照してください。 |
@@ -126,7 +126,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showanomalies"
 >title="異常値を表示"
->abstract="「**[!UICONTROL 異常値を表示]**」を選択すると、時系列フリーフォームテーブルのビジュアライゼーションに追加された最初の指標列で異常値検出が自動的に実行されます。"
+>abstract="「**[!UICONTROL 異常を表示]**」を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列で、異常値検出が自動的に実行されるようになります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -135,7 +135,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showforecast"
 >title="予測を表示"
->abstract="「**[!UICONTROL 予測を表示]**」を選択すると、最初の指標列が自動的に予測され、時系列のフリーフォームテーブルのビジュアライゼーションに追加されます。"
+>abstract="「**[!UICONTROL 予測を表示]**」を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列が、自動的に予測されるようになります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -187,7 +187,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 2 軸を表示（該当する場合） | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。これは、プロットされた指標の大きさが非常に異なる場合に役立ちます。 |
 | | 正規化（該当する場合） | 指標を均等な比率にします。これは、プロットされた指標の大きさが非常に異なる場合に役立ちます。 |
 | | Y 軸をゼロに固定 | グラフに示されるすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外になります。このボックスをチェックすると、Y 軸は強制的にゼロになります（グラフは再描画されます）。 |
-| | 異常値を固定して Y 軸をスケール | Y 軸は、異常値を使用してスケーリングされます。 |
+| | 異常値で Y 軸のスケールの設定を固定 | Y 軸は、異常値を使用してスケーリングされます。 |
 | **[行](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 割合（％） | 折れ線グラフビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 折れ線グラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
@@ -218,7 +218,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 比較を表示 | 比較データを表示します。非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
 | | 数値オプション | [!UICONTROL **主要指標の概要**]&#x200B;セクション内 <ul><li>変化率を表示</li><li>生の差異を表示</li>プライマリ日付範囲とセカンダリ日付範囲で、指標の合計値の生の差異を表示または非表示</ul> |
 | **[フォールアウト](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | コンテナ | **[!UICONTROL セッション]** と **[!UICONTROL 人物]** を切り替えて、人物パスを分析できます。 デフォルトは **[!UICONTROL ユーザー]** です。 これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 <p>次のオプションがあります。</p> <ul><li>セッション</li><li>ユーザー</li></ul> |
+| | コンテナ | 「**[!UICONTROL セッション]**」と「**[!UICONTROL ユーザー]**」を切り替えて、ユーザーのパスを分析できます。デフォルトは「**[!UICONTROL ユーザー]**」です。これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 <p>次のオプションがあります。</p> <ul><li>セッション</li><li>ユーザー</li></ul> |
 | **[フロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
 | | コンテナ | [!UICONTROL **フロー**]&#x200B;セクション内 <ul><li>セッション</li><li>ユーザー</li></ul> |
 | | ラベルの折り返し | 通常、フロー要素のラベルは、画面の領域を節約するために切り捨てられます。しかし、このチェックボックスをオンにすることで完全なラベルを表示できます（デフォルト = オフ）。 |
@@ -257,19 +257,19 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 
 このアクションは取り消しできません。
 
-1. Customer Journey Analyticsで、上部のメニューから [!UICONTROL **コンポーネント**]**>**[!UICONTROL **環境設定**] を選択します。 または、Workspaceメニューから **[!UICONTROL プロジェクト]**/**[!UICONTROL ユーザー設定]** を選択します。
+1. Customer Journey Analytics で、上部のメニューから&#x200B;[!UICONTROL **コンポーネント**]**／**[!UICONTROL **環境設定**]&#x200B;を選択します。または、Workspace メニューから&#x200B;**[!UICONTROL プロジェクト]**／**[!UICONTROL ユーザー設定]**&#x200B;を選択します。
 
 1. 右上で、「**[!UICONTROL デフォルトに戻す]**」を選択します。
 
-1. **[!UICONTROL システムのデフォルト設定を復元]** で **[!UICONTROL デフォルトを復元]** を選択します。
+1. **[!UICONTROL システムのデフォルト設定を復元]**&#x200B;で「**[!UICONTROL デフォルトを復元]**」を選択します。
 
 ## [!UICONTROL ダークテーマ]
 
 Customer Journey Analytics ユーザーインターフェイスの背景を暗くする場合は、[!UICONTROL ダークテーマ]に切り替えることができます。
 
-1. 右上の「Experience Cloudユーザー」アイコンを選択します。
+1. 右上の Experience Cloud ユーザーアイコンを選択します。
 
    ![ダークテーマ](assets/dark-theme.png)
 
-1. **[!UICONTROL ダークテーマ]** の有効化…
+1. **[!UICONTROL ダークテーマ]**&#x200B;を有効にします。
 

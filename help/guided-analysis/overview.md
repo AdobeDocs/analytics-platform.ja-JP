@@ -8,7 +8,7 @@ role: User
 source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -42,23 +42,23 @@ Customer Journey Analyticsホームページからガイド付き分析にアク
 
    ![ランディングページタイル](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. 「**[!UICONTROL 新規作成]**」を選択して様々な表示オプションを表示し、分析の別の開始点を選択します。
+1. 「**[!UICONTROL 新規作成]**」を選択して様々な表示オプションを確認し、分析用に別の開始点を選択します。
 
    ![新しいモーダルの作成](assets/create-new-modal.png){style="border:1px solid gray"}
 
 また、Analysis Workspace プロジェクト内からガイド付き分析にアクセスすることもできます。
 
-1. ホームページから **[!UICONTROL 空のプロジェクト]** を選択して、空のWorkspace プロジェクトを作成します。
+1. ホームページから「**[!UICONTROL 空のプロジェクト]**」を選択して、空の Workspace プロジェクトを作成します。
 
-   ![ 空のプロジェクトを作成 ](assets/blank-project.png){style="border:1px solid gray"}
+   ![空のプロジェクトの作成](assets/blank-project.png){style="border:1px solid gray"}
 
-1. 左パネルで「![ ガイド付き分析 ](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL ガイド付き分析]**」を選択します。
+1. 左パネルで「![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg)」、**[!UICONTROL ガイド付き分析]**&#x200B;を選択します。
 
-   ![Workspace左レール ](assets/workspace-left-rail.png){style="border:1px solid gray"}
+   ![Workspace 左パネル](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
-1. 新しい分析をWorkspace キャンバスにドラッグし、「**[!UICONTROL 作成]**」を選択して目的の分析を生成します（例：**[!UICONTROL トレンドを作成]**）。 また、既存の分析を「保存済み **[!UICONTROL セクションの下からWorkspace キャンバスにドラッグす]** こともできます。
+1. 新しい分析をWorkspace キャンバスにドラッグし、「**[!UICONTROL 作成]**」を選択して目的の分析を生成します（例：**[!UICONTROL トレンドを作成]**）。 また、既存の分析を「**[!UICONTROL 保存済み]**」セクションの下から Workspace キャンバスにドラッグすることもできます。
 
-   ![ パネルを作成 ](assets/create-guided-analysis-panel.gif)
+   ![パネルの作成](assets/create-guided-analysis-panel.gif)
 
 ## インターフェイス
 
