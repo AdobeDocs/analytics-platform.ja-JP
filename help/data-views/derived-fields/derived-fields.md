@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8842'
+source-wordcount: '8841'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 17%
 ![ 派生フィールドダイアログのスクリーンショット ](assets/derived-field-dialog.png)
 
 
-![ プログラムの概要 ](/help/assets/icons/ProgramOverview.svg)
 
 |  | 名前 | 説明 |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ バウンスルールビルダーのスクリーンショット ](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ ht-degree: 17%
 この関数テンプレートは、2 つの値を 1 つに結合します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -212,6 +215,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ わかりやすいデータセット名ルールビルダーのスクリーンショット ](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ ht-degree: 17%
 この関数テンプレートは、単純なページ名を作成します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -236,6 +243,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ ホリデーシーズンルールビルダーのスクリーンショット ](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ ht-degree: 17%
 この関数テンプレートは、カスタムの月次目標を設定します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -260,6 +271,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ 区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ ht-degree: 17%
 この関数テンプレートは、区切られたリストの最初の値を取得します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -284,6 +299,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ 区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ ht-degree: 17%
 この関数テンプレートは、正規表現を使用してドメイン名を抽出します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -308,6 +327,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ クエリ文字列を取得パラメータールールビルダーのスクリーンショット ](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ ht-degree: 17%
 この関数テンプレートは、あるフィールドから別のフィールドにレポートを移行します。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
@@ -332,6 +355,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ シンプルなボット検出ルールビルダーのスクリーンショット ](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ ht-degree: 17%
 
 +++ 詳細
 
+{{select-package}}
+
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
 ![ 離脱リンクのルールビルダーのスクリーンショット ](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ ht-degree: 17%
 この関数テンプレートは、一般的なダウンロードリンクにフラグを立てます。
 
 +++ 詳細
+
+{{select-package}}
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
