@@ -7,8 +7,8 @@ role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 25%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
 >title="レポートで非表示"
->abstract="このオプションを選択すると、そのディメンションの **[!UICONTROL レポートでコンポーネントを非表示]** が有効になり、Analysis Workspaceやその他のCustomer Journey Analyticsレポートツールでコンポーネントが表示されなくなります。"
+>abstract="このオプションを選択すると、そのディメンションの&#x200B;**[!UICONTROL レポートでコンポーネントを非表示]**&#x200B;が有効になり、Analysis Workspace やその他の Customer Journey Analytics レポートツールにコンポーネントが表示されなくなります。"
 
 <!-- markdownlint-enable MD034 -->
 

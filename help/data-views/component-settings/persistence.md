@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="永続性"
->abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。 [ 配分設定 ](/help/data-views/component-settings/persistence.md#allocation-settings)、[ 有効期限設定 ](/help/data-views/component-settings/persistence.md#expiration-settings)、[ バインディングディメンション ](/help/data-views/component-settings/persistence.md#binding-dimension) およびバインディング指標について詳しくは、を参照してください。"
+>abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。詳しくは、[配分設定](/help/data-views/component-settings/persistence.md#allocation-settings)、[有効期限設定](/help/data-views/component-settings/persistence.md#expiration-settings)、[バインディングディメンション](/help/data-views/component-settings/persistence.md#binding-dimension)およびバインディング指標を参照してください。"
 
 <!-- markdownlint-enable MD034 -->
 

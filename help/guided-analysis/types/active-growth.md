@@ -7,18 +7,18 @@ keywords: Product Analytics
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 5%
 
 ---
 
-# [!UICONTROL  能動的成長 ] 分析 {#active-growth}
+# [!UICONTROL アクティブな成長]分析 {#active-growth}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_activegrowth_button"
->title="アクティブな増加"
+>title="アクティブな成長"
 >abstract="新規、継続、再来訪または休眠状態のユーザーを特定します。"
 
 <!-- markdownlint-enable MD034 -->

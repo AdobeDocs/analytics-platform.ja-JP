@@ -12,7 +12,7 @@ ht-degree: 4%
 
 ---
 
-# [!UICONTROL  トレンド ] 分析 {#trends}
+# [!UICONTROL 傾向]分析 {#trends}
 
 <!-- markdownlint-disable MD034 -->
 

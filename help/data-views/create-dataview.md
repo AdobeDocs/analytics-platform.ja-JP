@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer のデータビュー"
->abstract="Customer Journey Analytics には、Adobe Journey Optimizer と互換性のある接続とデータビューを使用する必要があります。デフォルトでは、この目的のために接続とデータビューが自動的に作成されます。<br/> または、このオプションを有効にして、これをAdobe Journey Optimizer レポートで使用されるデフォルトのデータビューにすることもできます。有効にすると、Journey Optimizerに必要なすべての必須コンポーネントがこのデータビューに追加され、必要なすべてのJourney Optimizer データセットがこのデータビューに関連付けられた接続に追加されます。"
+>abstract="Customer Journey Analytics では、Adobe Journey Optimizer と互換性のある接続とデータビューを使用する必要があります。デフォルトでは、この目的のために接続とデータビューが自動的に作成されます。<br/>または、このオプションを有効にして、Adobe Journey Optimizer レポートで使用されるデフォルトのデータビューにすることもできます。有効にすると、Journey Optimizer に必要なすべてのコンポーネントがこのデータビューに追加され、必要なすべての Journey Optimizer データセットがこのデータビューに関連付けられた接続に追加されます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo#connection" text="追加されるコンポーネントとデータセット。"
 
 <!-- markdownlint-enable MD034 -->

@@ -7,7 +7,7 @@ role: User
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 49%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="変更の概要"
->abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションを作成します"
+>abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションの作成"
 
 <!-- markdownlint-enable MD034 -->
 
