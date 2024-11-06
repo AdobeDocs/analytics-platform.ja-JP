@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
+source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 89%
+source-wordcount: '1003'
+ht-degree: 88%
 
 ---
 
@@ -47,6 +47,9 @@ ht-degree: 89%
       + [Platform にデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [推奨プロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [タグを使用したアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [スキーマを構築](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [既存のスキーマを使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
@@ -231,14 +234,14 @@ ht-degree: 89%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + [アクティブな増加](../guided-analysis/types/active-growth.md)
+   + [アクティブな成長](../guided-analysis/types/active-growth.md)
    + [コンバージョントレンド](../guided-analysis/types/conversion-trends.md)
    + [エンゲージメント](../guided-analysis/types/engagement.md)
    + [最初の使用の影響](../guided-analysis/types/first-use-impact.md)
    + [頻度](../guided-analysis/types/frequency.md)
    + [ファネル](../guided-analysis/types/funnel.md)
    + [純増加率](../guided-analysis/types/net-growth.md)
-   + [リリースの影響](../guided-analysis/types/release-impact.md)
+   + [リリース影響](../guided-analysis/types/release-impact.md)
    + [定着](../guided-analysis/types/retention.md)
    + [タイムライン](../guided-analysis/types/timeline.md)
    + [傾向](../guided-analysis/types/trends.md)

@@ -6,26 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 30%
+source-wordcount: '262'
+ht-degree: 33%
 
 ---
 
 # Customer Journey Analyticsで使用するデータセットの作成
 
 >[!NOTE]
->
->このドキュメントは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) に回答した後で使用してください。
 > 
->このページの手順は、組織に対して動的に生成された以前のすべての手順を完了した後でのみ実行します。
+>このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
 >
->このページの手順を完了した後も、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で動的に生成されたアップグレード手順を引き続き実行してください。
+>このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-XDM スキーマを作成したら、そのデータを保存および管理するための構造を定義する必要があります。この処理は、データセットを使用してAdobe Experience Platformで行われます。
+データセットは、Adobe Experience Platformに収集するデータを保存および管理する構造です。
 
 データセットを作成するには：
 
@@ -59,5 +57,5 @@ XDM スキーマを作成したら、そのデータを保存および管理す�
 
    データセットの表示、プレビュー、作成、削除の方法について詳しくは、[ データセット UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja) を参照してください。 リアルタイム顧客プロファイルのデータセットを有効にする方法についても説明します。
 
-1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で動的に生成されたアップグレード手順を引き続き実行します。
+1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
 

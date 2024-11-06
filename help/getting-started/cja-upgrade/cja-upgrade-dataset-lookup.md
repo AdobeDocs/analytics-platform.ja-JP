@@ -8,12 +8,12 @@ hide: true
 hidefromtoc: true
 source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
-# Customer Journey Analyticsで使用するデータストリームを作成する
+# Customer Journey Analytics内のデータを分類するルックアップデータセットの作成
 
 >[!NOTE]
 > 
@@ -21,23 +21,18 @@ ht-degree: 27%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-<!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
+Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsでデータを分類するための手法です。
 
-データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データの転送先となるサービスを決定するデータストリームです。
+Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[ データセットへの標準検索の追加 ](/help/connections/standard-lookups.md) を参照してください。
 
-設定では、収集したデータをAdobe Experience Platformのデータセットに送信するようにデータストリームを設定します。
+Experience Platform Web SDK の新しい実装でデータを分類するには、分類するデータを含むディメンションごとにルックアップデータセットを作成する必要があります。
 
-データストリームを設定するには：
+Customer Journey Analyticsで使用するルックアップデータセットを作成するには、次の手順に従います。
 
-1. Adobe Experience Platformで、左パネルの **[!UICONTROL データ収集]** から [!UICONTROL  データストリーム ] を選択します。
+1. AEP で、新しいスキーマを作成します。 これは、ルックアップデータセットに固有の新しいスキーマです。 既存のスキーマは使用できません。
 
-1. **[!UICONTROL 新しいデータストリーム]**&#x200B;を選択します。
+1. ルックアップ用の新しいスキーマクラスを作成する必要があります。
 
-1. データストリームに名前を付けて説明します。[!UICONTROL イベントスキーマ]リストからスキーマを選択します。
-
-   ![新規データストリーム](assets/new-datastream.png)
-
-1. 「**[!UICONTROL 保存]**」を選択します。
+1. それをもとにルックアップデータセットを作成します。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-
