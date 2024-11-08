@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
+source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
 workflow-type: tm+mt
-source-wordcount: '9056'
+source-wordcount: '9048'
 ht-degree: 1%
 
 ---
@@ -1476,10 +1476,10 @@ Customer Journey Analyticsで定義したフィルターは、「**[!UICONTROL f
 Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL  外部 ID] によって識別されます。 例えば、計算指標 **[!UICONTROL Product Name （Count Distinct）]** は [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** を持ち、Power BIデスクトップでは**[!UICONTROL cm_product_name_count_distinct]**t と表示されます。
 
 **日付範囲**
-Customer Journey Analyticsで定義した日付範囲は、**[!UICONTROL daterangeName]** フィールドの一部として使用できます。 **[!UICONTROL daterangeName]** フィールドを使用する場合は、使用する日付範囲を指定できます。
+Customer Journey Analyticsで定義した日付範囲は、「**[!UICONTROL daterangeName]**」フィールドの一部として使用できます。 **[!UICONTROL daterangeName]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Power BIデスクトップは、[ データ分析式（DAX） ](https://learn.microsoft.com/en-us/dax/dax-overview) を使用したカスタム変換機能を提供します。 例えば、単一ディメンションのランク付けのユースケースを製品名の小文字で実行するとします。 次に手順を示します。
+Power BIデスクトップは、[ データ分析式（DAX） ](https://learn.microsoft.com/en-us/dax/dax-overview) を使用したカスタム変換機能を提供します。 例えば、単一ディメンションのランク付けのユースケースを製品名の小文字で実行するとします。
 
 1. レポート表示で、棒グラフ ビジュアライゼーションを選択します。
 1. データ・ペインで product_name を選択します。
@@ -1554,7 +1554,7 @@ Customer Journey Analyticsで定義した計算指標は、計算指標に対し
 Customer Journey Analyticsで定義した日付範囲は、「**[!UICONTROL Daterange Name]**」フィールドの一部として使用できます。 **[!UICONTROL Daterange Name]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm) を使用したカスタム変換機能を提供します。 例えば、単一ディメンションのランク付けのユースケースを製品名の小文字で実行するとします。 次に手順を示します。
+Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm) を使用したカスタム変換機能を提供します。 例えば、単一ディメンションのランク付けのユースケースを製品名の小文字で実行するとします。
 
 1. メインメニューから **[!UICONTROL 分析]**/**[!UICONTROL 計算フィールドを作成]** を選択します。
    1. 関数 `LOWER([Product Name])` を使用して **[!UICONTROL 小文字の製品名]** を定義します。
