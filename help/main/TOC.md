@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
+source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1009'
 ht-degree: 88%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 88%
       + [推奨プロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [タグを使用したアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [スキーマを構築](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)

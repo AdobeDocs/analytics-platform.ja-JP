@@ -1,15 +1,15 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics内のデータを分類するルックアップデータセットの作成
+description: ルックアップデータセットを作成してCustomer Journey Analytics内のデータを分類する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 3827bafd85a03e8574667095b372aa61afb6756b
+source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '853'
 ht-degree: 5%
 
 ---
