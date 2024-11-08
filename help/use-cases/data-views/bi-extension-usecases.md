@@ -6,57 +6,66 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 48310c12680feb30be2cb1ff62e73474ff59e534
+exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
+source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
 workflow-type: tm+mt
-source-wordcount: '8625'
+source-wordcount: '8807'
 ht-degree: 1%
 
 ---
 
 # BI 拡張機能のユースケース
 
-この記事では、様々な BI ツールで BI 拡張機能の機能を使用する方法を説明するユースケースを多数紹介します。
+この記事では、Customer Journey Analytics BI 拡張機能を使用して様々なユースケースを達成する方法について説明します。 各ユースケースでは、Customer Journey Analytics機能を説明し、その後でサポートされている各 BI ツールの詳細を説明します。
+
+* **Power BI デスクトップ**。 使用されるバージョンは 2.137.1102.0 64 ビット（2024 年 10 月）です。
+* **Tableau Desktop**。 使用されるバージョンは 2024.1.5 （20241.24.0705.0334） 64 ビットです。
 
 次のユースケースについて説明します。
 
-1. [ データビューの接続とリスト ](#connect-and-list-data-views)。
-1. [ 毎日のトレンド ](#daily-trend)。
-1. [ 時間別トレンド ](#hourly-trend)。
-1. [ 月間トレンド ](#monthly-trend)。
-1. [ ランク付けされた単一のディメンション ](#single-dimension-ranked)。
-1. [ 複数のディメンションがランク付けされました ](#multiple-dimension-ranked)。
-1. [ 個別ディメンション値をカウント ](#count-distinct-dimension-values)。
-1. [ 日付範囲名を使用してフィルター ](#use-date-range-names-to-filter)。
-1. [ フィルター名を使用してフィルタリングします ](#use-filter-names-to-filter)。
-1. [ ディメンション値を使用してフィルター ](#use-dimension-values-to-filter)。
-1. [ ソート ](#sort)。
-1. [ 制限 ](#limits)。
-1. [FLATTEN か NOT](#to-flatten-or-not)。
-1. [ 変換 ](#object-transformations).
-1. [ ビジュアライゼーション ](#visualizations).
+* [データビューの接続とリスト表示](#connect-and-validate)
+* [毎日のトレンド](#daily-trend)
+* [毎時トレンド](#hourly-trend)
+* [月間トレンド](#monthly-trend)
+* [ランク付けされた単一ディメンション](#single-dimension-ranked)
+* [複数のディメンションのランク](#multiple-dimension-ranked)
+* [個別ディメンション値のカウント](#count-distinct-dimension-values)
+* [日付範囲名を使用してフィルター](#use-date-range-names-to-filter)
+* [フィルター名を使用したフィルタリング](#use-filter-names-to-filter)
+* [ディメンション値を使用したフィルタリング](#use-dimension-values-to-filter)
+* [並べ替え](#sort)
+* [制限](#limits)
+* [FLATTEN か NOT か](#to-flatten-or-not)
+* [Transformations](#transformations)
+* [ビジュアライゼーション](#visualizations)
 
-最初のユースケースは、Customer Journey Analytics BI 拡張機能を使用して BI ツールを接続する方法に重点を置いています。 その他のすべてのユースケースでは、現在サポートされている BI ツールで同様のCustomer Journey Analyticsビジュアライゼーションを実行する方法に関する手順を参照できます。
+最初のユースケースは、Customer Journey Analytics BI 拡張機能を使用して BI ツールを接続する方法に重点を置いています。
 
-* Power BIデスクトップ 使用されるバージョンは 2.137.1102.0 64 ビット（2024 年 10 月）です。
-* Tableau Desktop。 使用されるバージョンは 2024.1.5 （20241.24.0705.0334） 64 ビットです。
+ユースケース 2 ～ 12 では、現在サポートされている BI ツールで同様のCustomer Journey Analyticsビジュアライゼーションを実行する方法に関する手順が説明されています。
+
+ユースケース 13 ～ 15 では、次の項目の詳細を説明します。
+
+* BI ツールに接続する様々な方法。
+* BI ツールを使用してレポートおよび分析を行う場合に発生する変換。
+* ビジュアライゼーションのCustomer Journey Analyticsツールと BI ツールの類似点と相違点。
 
 
-## データビューの接続とリスト表示
+## 接続と検証
 
-このユースケースでは、BI ツールからCustomer Journey Analyticsへの接続を設定し、接続を正常にテストするために使用可能なデータビューを一覧表示します。
+このユースケースでは、BI ツールからCustomer Journey Analyticsへの接続を設定し、使用可能なデータビューを一覧表示して、使用するデータビューを選択します。
 
 +++ Customer Journey Analytics
 
-この手順では、次のオブジェクトで設定した例を参照しています。
+この手順では、次のオブジェクトを持つ環境例を参照しています。
 
-* データビュー **[!UICONTROL C&amp;C - データビュー]** ??。
-* Dimension **[!UICONTROL 商品名]**?？と **[!UICONTROL 商品カテゴリ]**??。
-* 指標 **[!UICONTROL 購入売上高]**?？および **[!UICONTROL 購入]**??。
-* フィルター **[!UICONTROL 釣り製品]**??。
+* データビュー：**[!UICONTROL C&amp;C - データビュー]** ??。
+* Dimension: **[!UICONTROL 商品名]** ?? and **[!UICONTROL 商品カテゴリ]** ??.
+* 指標：**[!UICONTROL 購入売上高]**?？および **[!UICONTROL 購入]**??。
+* フィルター：**[!UICONTROL 釣り製品]** ??。
 
 ![Customer Journey Analyticsベースの設定 ](assets/cja-base.png)
 
-手順を実行する際は、これらのサンプルオブジェクトを特定の環境に適したオブジェクトに置き換えます。
+ユースケースを確認したら、これらのサンプルオブジェクトを特定の環境に適したオブジェクトに置き換えます。
 
 +++
 
@@ -85,14 +94,14 @@ ht-degree: 1%
       ![PowerBI デスクトップサーバーとデータベースの設定 ](assets/powerbi-serverdatabase.png)
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付けます。**[!UICONTROL Server]** の値として、`:` で区切ってください。 例：`examplecompany.platform-query.adobe.io:80`。
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報**[!UICONTROL  パネルから ]**Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
-      1. **[!UICONTROL Data connectivity mode]** として [!UICONTROL DirectQuery] を選択します。
+      1. **[!UICONTROL Data connectivity mode]** として **[!UICONTROL DirectQuery]** を選択します。
       1. **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** - **[!UICONTROL データベース]** ダイアログで、
       ![PowerBI デスクトップユーザーとパスワード ](assets/powerbi-userpassword.png)
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード**[!UICONTROL  フィールドのExperience Platform ]**クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. **[!UICONTROL これらの設定を適用するレベルを選択]** のドロップダウンメニューが、前に定義した **[!UICONTROL サーバー]** に設定されていることを確認します。
       1. **[!UICONTROL 接続]** を選択します。
-   1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得後：
+   1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BIデスクトップに次のように表示されます。
       ![ データのデストコップ読み込みPower BI](assets/powerbi-navigator-load.png)
       1. 左パネルのリストから **[!UICONTROL public.cc_data_view]** を選択します。
       1. 次の 2 つのオプションがあります。
@@ -100,7 +109,7 @@ ht-degree: 1%
          1. **[!UICONTROL データを変換]** を選択します。 オプションで設定の一部として変換を適用できるダイアログが表示されます。
             ![Power BI デスクトップ変換データ ](assets/powerbi-transform-data.png)
             * **[!UICONTROL 閉じて適用]** を選択します。
-   1. しばらくすると、**[!UICONTROL public cc_data_view]** が **[!UICONTROL Data]** ペインに表示されます。 ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択して、ディメンションと指標を表示します。
+   1. しばらくすると、**[!UICONTROL public.cc_data_view]** が **[!UICONTROL Data]** ペインに表示されます。 ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択して、ディメンションと指標を表示します。
       ![Destkop サーバーのPower BIが読み込まれました ](assets/powerbi-navigator-loaded.png)
 
 
@@ -160,7 +169,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールの [ 接続に成功した ](#connect-and-validate) 検証され、データビューのリスト作成と使用ができることを確認します。
 >
 
 >[!BEGINTABS]
@@ -171,7 +180,7 @@ ht-degree: 1%
    1. **[!UICONTROL daterangeday]** を選択します。
    1. 「**[!UICONTROL ∑回数]**」を選択します。
 
-   当月の発生件数を示すテーブルが表示されます。 視認性を高めるには、テーブルのビジュアライゼーションを拡大します。
+   当月の発生件数を示すテーブルが表示されます。 視認性を高めるには、ビジュアライゼーションを拡大します。
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
@@ -202,7 +211,7 @@ ht-degree: 1%
 1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」ビューから切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
-   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `31/01/2023` の期間を指定します。
+   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/02/2023` の期間を指定します。
 
       ![Tableau Desktop フィルター ](assets/uc2-tableau-filter.png)
 
@@ -210,7 +219,7 @@ ht-degree: 1%
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL Day]** を選択し、値が **[!UICONTROL DAY （Daterangeday）]** に更新されます。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -219,10 +228,10 @@ ht-degree: 1%
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
 1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
-1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
+1. **[!UICONTROL データ]** シートが選択されていることを確認します。 **[!UICONTROL データ]** 表示で、次の操作を行います。
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. ツールバーの **[!UICONTROL 行と列を入れ替える]** を選択します。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -258,14 +267,14 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-![ アラート ](/help/assets/icons/Alert.svg)Power BIは、日時列の処理方法を **認識** しないので、**[!UICONTROL daterangehour]** や **[!UICONTROL daterangeminute]** などのディメンションはサポートされていません。
+![AlertRed](/help/assets/icons/AlertRed.svg) のPower BIは、日時フィールドの処理方法を **理解** ていないので、**[!UICONTROL daterangehour]** や **[!UICONTROL daterangeminute]** などのディメンションはサポートされていません。
 
 >[!TAB Tableau Desktop]
 
@@ -280,7 +289,7 @@ ht-degree: 1%
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -289,10 +298,10 @@ ht-degree: 1%
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
 1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
-1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
+1. **[!UICONTROL データ]** シートが選択されていることを確認します。 **[!UICONTROL データ]** 表示で、次の操作を行います。
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. **[!UICONTROL HOUR （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -329,7 +338,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -340,7 +349,7 @@ ht-degree: 1%
    1. **[!UICONTROL daterangemonth]** を選択します。
    1. 「**[!UICONTROL ∑回数]**」を選択します。
 
-   当月の発生件数を示すテーブルが表示されます。 視認性を高めるには、テーブルのビジュアライゼーションを拡大します。
+   当月の発生件数を示すテーブルが表示されます。 視認性を高めるには、ビジュアライゼーションを拡大します。
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
@@ -381,7 +390,7 @@ ht-degree: 1%
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されるようにします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -393,7 +402,7 @@ ht-degree: 1%
 1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. **[!UICONTROL MONTH （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
-   1. ツールバーのドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL 表示全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -428,7 +437,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -441,7 +450,7 @@ ht-degree: 1%
    1. 「**[!UICONTROL ∑ purchase_revenue]**」を選択します。
    1. 「**[!UICONTROL ∑購入]**」を選択します。
 
-   選択した要素の列ヘッダーのみを表示する空のテーブルが表示されます。 視認性を高めるには、テーブルのビジュアライゼーションを拡大します。
+   選択した要素の列ヘッダーのみを表示する空のテーブルが表示されます。 視認性を高めるには、ビジュアライゼーションを拡大します。
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
@@ -466,7 +475,7 @@ ht-degree: 1%
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
    1. **[!UICONTROL product_name is （All）]** を選択します。
-   1. フィルタータイプを上位 N に設定します。
+   1. **[!UICONTROL フィルタータイプ]** を **[!UICONTROL 上位 N]** に設定します。
    1. フィルターを定義して **[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`10`**[!UICONTROL 値]** にします。
    1. **[!UICONTROL purchase_revenue]** を **[!UICONTROL By value]** **[!UICONTROL ここにデータフィールドを追加]** にドラッグ&amp;ドロップします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
@@ -479,7 +488,7 @@ ht-degree: 1%
 
    折れ線グラフおよび積み重ね柱状グラフビジュアライゼーションは、テーブルを置き換え、テーブルと同じデータを使用します。
 
-1. 購入をビジュアライゼーションパネルの Y 軸上にドラッグ&amp;ドロップします。
+1. **[!UICONTROL 購入]** を **[!UICONTROL ビジュアライゼーション]** ペインの **[!UICONTROL 線の Y 軸]** にドラッグ&amp;ドロップします。
 
    折れ線グラフと積み重ね柱状グラフが更新されます。 Power BIデスクトップは次のようになります。
 
@@ -508,8 +517,8 @@ ht-degree: 1%
       * 値は自動的に **[!UICONTROL SUM （Purchases）]** に変換されます。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 購入収益]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップして、**[!UICONTROL SUM （購入）]** から左にドロップします。
       * 値は **[!UICONTROL SUM （Purchase Revenue）]** に自動変換されます。
-   1. 両方のグラフを購買収益の降順で並べ替えるには、購買収益のタイトルにポインタを合わせて、並べ替えアイコンを選択します。
-   1. グラフのエントリ数を制限するには、「行」で「SUM （Purchase Revenue）」を選択し、ドロップダウンメニューから「フィルター」を選択します。
+   1. 両方のグラフを降順で並べ替えるには、**[!UICONTROL 購買収益]** タイトルにポインタを合わせて、並べ替えアイコンを選択します。
+   1. グラフのエントリ数を制限するには、「**[!UICONTROL 行**[!UICONTROL 」で「SUM （購入売上高） ]**を選択し、ドロップダウンメニューから]** フィルター **[!UICONTROL を選択し]** す。
    1. **[!UICONTROL フィルター\[Purchase Revenue\]]** ダイアログで **[!UICONTROL 値の範囲]** を選択し、適切な値を入力します。 例：`1,000,000`～`2,000,000` **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
    1. 2 つの棒グラフを 2 つの組み合わせのグラフに変換するには、「**[!UICONTROL 行**[!UICONTROL 」で「合計 ]**購入）]** を選択し、ドロップダウンメニューから「**[!UICONTROL 二重軸]**」を選択します。 棒グラフは散布図に変換されます。
    1. 散布図を棒グラフに変更するには、次の手順に従います。
@@ -562,22 +571,25 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** ペインからこのページの **[!UICONTROL フィルター]** に **[!UICONTROL daterangeday]** をドラッグ&amp;ドロップします。
+1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** パネルから **[!UICONTROL このページのフィルター**[!UICONTROL  に ]**daterangeday]** をドラッグ&amp;ドロップします。
    1. **[!UICONTROL このページのフィルター]** から **[!UICONTROL daterangeday is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 相対日付]** を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. フィルターを定義して **[!UICONTROL 値が過去]** **[!UICONTROL 暦年**[!UICONTROL  に含まれる場合に項目を表示 ]**`1` します]**。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
    1. **[!UICONTROL datarangeday]** を選択します。
-   1. Customer Journey Analyticsで定義された計算指標である **[!UICONTROL ∑ cm_product_name_count_distinct]** を選択します。
+   1. **[!UICONTROL product_category]** を選択します。
+   1. **[!UICONTROL product_name]** を選択します。
+   1. 「**[!UICONTROL ∑ purchase_revenue]**」を選択します。
+   1. **[!UICONTROL ∑の購入を選択]**
 
 1. 縦棒グラフをテーブルに変更するには、テーブルが選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから **[!UICONTROL マトリックス]** を選択します。
    * **[!UICONTROL product_name]** を **[!UICONTROL 列]** からドラッグし、**[!UICONTROL 行]** の**[!UICONTROL product_categor]**y の下にあるフィールドを **[!UICONTROL ビジュアライゼーション]** ペインにドロップします。
@@ -586,7 +598,7 @@ ht-degree: 1%
 
    1. **[!UICONTROL 詳細フィルター]** を選択します。
    1. **[!UICONTROL フィルタータイプ]****[!UICONTROL 上位 N]****[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`15`**[!UICONTROL 値別]** を選択します。
-   1. **[!UICONTROL データ]** ペインから**[!UICONTROL purchases]**e を **[!UICONTROL ここにデータフィールドを追加]** にドラッグします。
+   1. **[!UICONTROL データ]** ペインから **[!UICONTROL 購入]** を **[!UICONTROL ここにデータフィールドを追加]** にドラッグします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. 読みやすくするには、トップメニューから **[!UICONTROL 表示]** を選択し、**[!UICONTROL ページビュー]**/**[!UICONTROL 実際のサイズ]** を選択して、テーブルビジュアライゼーションのサイズを変更します。
@@ -617,7 +629,7 @@ ht-degree: 1%
    1. **[!UICONTROL 購入]** を選択します。
 
 1. **[!UICONTROL ビジュアライゼーション]** パネルで、
-   1. ビジュアライゼーションを変更するには、「**[!UICONTROL 折れ線グラフと積み重ね柱状グラフ]**」を選択します。
+   1. ビジュアライゼーションを変更するには、**[!UICONTROL 折れ線グラフと積み重ね柱状グラフ]** を選択します。
    1. **[!UICONTROL 列の y 軸]** から **[!UICONTROL 行の y 軸]** に **[!UICONTROL sum_of_purchases]** をドラッグします。
 
 1. レポートで、個々のビジュアライゼーションを再シャッフルします。
@@ -722,7 +734,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -731,7 +743,7 @@ ht-degree: 1%
 
 1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** パネルからこのページの **[!UICONTROL フィルター]** に **[!UICONTROL daterangeday]** をドラッグ&amp;ドロップします。
    1. **[!UICONTROL このページのフィルター]** から **[!UICONTROL daterangeday is （すべて）]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL RelAdvanced フィルタリング]** を選択します。
+   1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
    1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -746,7 +758,7 @@ ht-degree: 1%
    ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-table.png)
 
 1. テーブルビジュアライゼーションを選択します。 コンテキストメニューから **[!UICONTROL コピー]**/**[!UICONTROL ビジュアルをコピー]** を選択します。
-1. キー **[!UICONTROL ctrl + v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
+1. **[!UICONTROL ctrl+v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
 1. コピーしたビジュアライゼーションをテーブルからカードに変更するには、**[!UICONTROL ビジュアライゼーション]** から **[!UICONTROL カード]** を選択します。
 
    Power BIデスクトップは次のようになります。
@@ -820,7 +832,7 @@ Customer Journey Analyticsで定義した日付範囲を使用して、昨年の
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -886,7 +898,7 @@ Customer Journey Analyticsに使用するフィルターをInspectします。
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -924,7 +936,7 @@ Customer Journey Analyticsに使用するフィルターをInspectします。
    1. **[!UICONTROL フィルター\[ フィルター名\]]** ダイアログで **[!UICONTROL リストから選択]** が選択されていることを確認し、リストから **[!UICONTROL 釣り製品]** を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグします。
    1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
-   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付の範囲]** を選択し、`01/01/2023` - `1/2/2023` を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
+   1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付の範囲]** を選択し、`01/01/2023` - `01/02/2023` を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** を **[!UICONTROL 行]** にドラッグします。
    1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 列]** に **[!UICONTROL 発生件数]** エントリをドラッグします。 値が「**[!UICONTROL SUM （発生件数）]**」に変わります。
    1. **[!UICONTROL 表示]** から **[!UICONTROL テキストテーブル]** を選択します。
@@ -949,7 +961,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 ![Customer Journey AnalyticsフィルターにDimension値を使用 ](assets/cja-hunting-products.png)
 
-次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでそのフィルターを使用できます。
+次に、使用例の **[!UICONTROL Dimension値をフィルターに使用]** パネルでそのフィルターを使用できます。
 
 ![Customer Journey Analytics個別カウント値 ](assets/cja-using-dimension-values-to-filter.png)
 
@@ -959,7 +971,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -994,7 +1006,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 >[!TAB Tableau Desktop]
 
-1. **[!UICONTROL Data Source]** ビューの **[!UICONTROL Data]** の下で、**[!UICONTROL cc_data_view （prod:cja%3FFLATTEN）]** のコンテキストメニューから **[!UICONTROL 更新]** を選択します。
+1. **[!UICONTROL Data Source]** ビューの **[!UICONTROL Data]** の下で、**[!UICONTROL cc_data_view （prod:cja%3FFLATTEN）]** のコンテキストメニューから **[!UICONTROL 更新]** を選択します。 Customer Journey Analyticsで定義した新しいフィルターを取得するには、連携を更新する必要があります。
 1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL テーブル]** リストから **[!UICONTROL フィルター名]** エントリをドラッグします。
    1. **[!UICONTROL フィルター\[ フィルター名\]]** ダイアログで **[!UICONTROL リストから選択]** が選択されていることを確認し、リストから **[!UICONTROL ハンティング製品]** を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
@@ -1018,11 +1030,9 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 ## 並べ替え
 
-ユースケースの概要
+2023 年 1 月の製品名の購入収益と購入を、購入収益の降順に並べ替えてレポートします。
 
 +++ Customer Journey Analytics
-
-2023 年 1 月の製品名の購入収益と購入を、購入収益の降順に並べ替えてレポートします。
 
 このユースケースでは、例えば **[!UICONTROL 並べ替え]** パネルを使用します。
 
@@ -1034,7 +1044,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1054,15 +1064,15 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 1. ビジュアライゼーション パネルで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、Columns から daterange を削除します。
-   1. purchase_revenue の合計を列項目の下部にドラッグします。
+   1. **[!UICONTROL purchase_revenue の合計]** を **[!UICONTROL 列]** 項目の下部にドラッグします。
 
-1. レポートで、「purchase_revenue の合計」を選択し、購買収益の降順でテーブルをソートします。
+1. レポートで、「**[!UICONTROL purchase_revenue の合計]** を選択して、購買収益の降順でテーブルをソートします。
 
    Power BIデスクトップは次のようになります。
 
    ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc11-powerbi-final.png)
 
-BI 拡張機能を使用してPower BIデスクトップで実行されるクエリに、`sort` ステートメントが含まれていません。 `sort` ステートメントがないということは、降順での並べ替えがクライアントベースであることを意味します。
+BI 拡張機能を使用してPower BIデスクトップで実行されるクエリに、`sort` ステートメントが含まれていません。 `sort` ステートメントがないということは、並べ替えがクライアントサイドで実行されることを意味します。
 
 ```sql
 select "_"."product_name",
@@ -1157,9 +1167,9 @@ limit 1000001
    1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグします。
    1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付の範囲]** を選択し、`01/01/2023` - `1/2/2023` を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
-   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** を **[!UICONTROL 行]** にドラッグします。
+   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** をドラッグし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
    1. **[!UICONTROL 購入]** エントリを **[!UICONTROL テーブル]** リストから **[!UICONTROL 列]** にドラッグします。 値が **[!UICONTROL SUM （Purchases）]** に変更されます。
-   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 購入売上高]** エントリを **[!UICONTROL 列]**、**[!UICONTROL SUM （購入）]** の横にドラッグします。 値が「**[!UICONTROL SUM （Purchase Revenue）]**」に変わります。
+   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 購入売上高]** エントリをドラッグし、**[!UICONTROL 列]** の横のフィールド、**[!UICONTROL SUM （購入）]** の横のエントリをドロップします。 値が「**[!UICONTROL SUM （Purchase Revenue）]**」に変わります。
    1. **[!UICONTROL 表示]** から **[!UICONTROL テキストテーブル]** を選択します。
    1. **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL フィット幅]** を選択します。
    1. **[!UICONTROL 購入収益]** 列ヘッダーを選択し、この列のテーブルを降順で並べ替えます。
@@ -1168,7 +1178,7 @@ limit 1000001
 
       ![Tableau Desktop 並べ替え ](assets/uc11-tableau-final.png)
 
-BI 拡張機能を使用して Tableau Desktop で実行されるクエリには、`sort` ステートメントが含まれていません。 この `sort` ステートメントがないということは、降順での並べ替えがクライアントベースであることを意味します。
+BI 拡張機能を使用して Tableau Desktop で実行されるクエリには、`sort` ステートメントが含まれていません。 この `sort` ステートメントがないということは、並べ替えがクライアント側で実行されることを意味します。
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1200,7 +1210,7 @@ GROUP BY 1
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1217,7 +1227,7 @@ GROUP BY 1
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 相対日付]** を選択します。
    1. フィルターを定義して **[!UICONTROL 値が過去]** **[!UICONTROL 暦年**[!UICONTROL  に含まれる場合に項目を表示 ]**`1` します]**。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
-   1. **[!UICONTROL このビジュアルでフィルター]** から product_name が（すべて）を選択します。
+   1. **[!UICONTROL このビジュアルのフィルター**[!UICONTROL  から ]**product_name は（すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 上位 N]** を選択します。
    1. 「**[!UICONTROL 項目を表示]****[!UICONTROL 上位]**」 `5` 「**[!UICONTROL 値別]**」を選択します。
    1. **[!UICONTROL データ]** ペインから **[!UICONTROL ∑回数]** をドラッグ&amp;ドロップし、「**[!UICONTROL データフィールドをここに追加]**」にドロップします。
@@ -1230,7 +1240,7 @@ GROUP BY 1
 
    ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc12-powerbi-final.png)
 
-BI 拡張機能を使用してPower BIデスクトップが実行するクエリに、`limit` ステートメントが含まれていますが、想定されているものではありません。 クライアントから返される明示的な製品名の結果により、上位 5 回の発生に対する制限が暗黙的に適用されます。
+BI 拡張機能を使用してPower BIデスクトップが実行するクエリに、`limit` ステートメントが含まれていますが、想定されているものではありません。 上位 5 件の発生件数の制限は、明示的な製品名の結果を使用して、Power BIデスクトップによって適用されます。
 
 ```sql
 select "_"."product_name",
@@ -1326,12 +1336,12 @@ limit 1000001
    1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 列]** に **[!UICONTROL 発生件数]** エントリをドラッグします。 値が「**[!UICONTROL SUM （発生件数）]**」に変わります。
    1. **[!UICONTROL 表示]** から **[!UICONTROL テキストテーブル]** を選択します。
    1. **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL フィット幅]** を選択します。
-   1. 行の製品名を選択します。 ドロップダウンメニューから「フィルター」を選択します。
+   1. **[!UICONTROL 行]** の **[!UICONTROL 製品名]** を選択します。 ドロップダウンメニューから **[!UICONTROL フィルター]** を選択します。
       1. **[!UICONTROL フィルター\[ 製品名\]]** ダイアログで **[!UICONTROL トップ]** タブを選択します。
       1. **[!UICONTROL フィールド別：]** **[!UICONTROL 上位]** `5` **[!UICONTROL 発生件数別]** **[!UICONTROL 合計]** を選択します。
       1. **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
 
-         テーブルが消えます。 このフィルターを使用して発生件数別に上位 5 つの製品名を選択しても、適切に機能しません。
+         ![AlertRed](/help/assets/icons/AlertRed.svg) テーブルが消えていることがわかります。 発生件数別に上位 5 つの製品名を選択しても、このフィルターを使用して正しく機能しない **** 場合。
       1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL 製品名]** を選択し、ドロップダウンメニューから **[!UICONTROL 削除]** を選択します。 テーブルが再び表示されます。
    1. **[!UICONTROL マーク]** シェルフで **[!UICONTROL SUM （発生件数）]** を選択します。 ドロップダウンメニューから **[!UICONTROL フィルター]** を選択します。
       1. **[!UICONTROL フィルタ \[ オカレンス\]]** ダイアログで **[!UICONTROL 最低]** を選択します。
@@ -1341,7 +1351,7 @@ limit 1000001
 
          ![Tableau Desktop の制限 ](assets/uc12-tableau-final.png)
 
-製品名に対して上位 5 件の発生件数フィルターを定義する際に、Tableau Desktop が BI 拡張機能を使用して実行するクエリを以下に示します。
+上に示すように、Tableau Desktop が実行するこのクエリは、製品名に対して上位 5 件の発生フィルターを定義すると失敗します。
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1360,7 +1370,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-発生件数の上位 5 件のフィルターを定義する際に、Tableau Desktop が BI 拡張機能を使用して実行するクエリを以下に示します。 制限は、クエリには表示されず、クライアントレベルでのみ適用されます。
+Tableau Desktop で実行されるクエリは、発生件数に対して上位 5 件のフィルターを定義する際に、以下のように表示されます。 制限は、クエリおよび適用されたクライアントサイドには表示されません。
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1397,12 +1407,14 @@ Customer Journey Analyticsでは、Experience Platformインターフェイス�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。 適切な接続に必要な明示的な `FLATTEN` パラメーターオプションについては、BI ツールの節を参照してください。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。 適切な接続に必要な明示的な `FLATTEN` パラメーターオプションについては、BI ツールの節を参照してください。
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
+
+Power BIデスクトップでは、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -1411,6 +1423,8 @@ Customer Journey Analyticsでは、Experience Platformインターフェイス�
 | `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI デスクトップに次のエラーが表示されます：**[!UICONTROL 指定された資格情報では認証できませんでした。 もう一度やり直してください。]** |
 
 >[!TAB Tableau Desktop]
+
+Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -1439,7 +1453,7 @@ Customer Journey Analyticsでは、データセットのコンポーネントを
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功し、データビューをリスト ](#connect-and-list-data-views) したことを検証します。
+>このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1471,7 +1485,7 @@ Customer Journey Analytics オブジェクトは、シートで作業する際�
 
 **Dimension**
 Customer Journey AnalyticsからのDimensionは [!UICONTROL  コンポーネント名 ] で識別されます。 [!UICONTROL  コンポーネント名 ] は、Customer Journey Analyticsデータビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]** には、Tableau のディメンションの名前である [!UICONTROL  コンポーネント名 ] **[!UICONTROL Product Name]** が含まれています。 すべてのディメンションは、**[!UICONTROL Abc]** で識別されます。
-**[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]** など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]** などの形式で使用できます。
+**[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]** など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]** などの形式で使用できます。 日付範囲ディメンションを使用する場合、ドロップダウンメニューから日付または時間の適切な定義を選択して、その日付範囲ディメンションに適用する必要があります。 例えば、**[!UICONTROL Year]**、**[!UICONTROL Quarter]**、**[!UICONTROL Month]**、**[!UICONTROL Day]** などです。
 
 **指標**
 Customer Journey Analyticsの指標は、[!UICONTROL  コンポーネント名 ] で識別されます。 [!UICONTROL  コンポーネント名 ] は、Customer Journey Analyticsデータビューで定義されます。 例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には、Tableau の指標の名前である [!UICONTROL  コンポーネント名 ] **[!UICONTROL 購入売上高]** があります。 すべての指標は、**[!UICONTROL #]** によって識別されます。 任意のビジュアライゼーションで指標を使用すると、指標の名前が **[!UICONTROL Sum （*metric*）]** に変更されます。
@@ -1570,5 +1584,3 @@ Customer Journey Analyticsには多数のビジュアライゼーションがあ
 >[!ENDTABS]
 
 +++
-
-
