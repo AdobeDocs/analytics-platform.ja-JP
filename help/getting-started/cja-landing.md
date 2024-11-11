@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 [![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB  ガイド付き分析 ]
+>[!TAB ガイド付き分析]
 
-ガイド付き分析をAnalysis Workspace内から直接使用できるようになり、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。
+ガイド付き分析を Analysis Workspace 内から直接使用できるようになったので、ユーザーは、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。
 
 [![画像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 

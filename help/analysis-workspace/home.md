@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,8 +34,8 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 | 場所 | 名前と機能 |
 |:---------:|----------|
-| ?? | プロジェクトの名前、機能にアクセスするためのメニュー構造、プロジェクトリストに戻るためのボタン ![ChevronLeft](/help/assets/icons/ChevronLeft.svg)、および [Workspace プロジェクトを共有 ]**するためのボタン**[!UICONTROL  共有 ](/help/analysis-workspace/curate-share/share-projects.md) が含まれています。 <br/> プロジェクトの名前を変更するには、いつでもプロジェクトの名前（例：新規プロジェクト）を選択します。 <br/> 「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト ![Star](/help/assets/icons/Star.svg) としてマークします。 |
-| ?? | **ボタンパネル：** Analysis Workspaceの主要な [ 機能 ](#features) にアクセスするためのボタンが含まれています。<ul><li>![Web ページ ](/help/assets/icons/WebPage.svg) [[!UICONTROL  パネル ]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ ガイド付き分析 ](/help/assets/icons/GuidedAnalysis.svg)[[!UICONTROL  ガイド付き分析 ]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)[[!UICONTROL  ビジュアライゼーション ]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Curate](/help/assets/icons/Curate.svg)[[!UICONTROL Components]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg)[[!UICONTROL  目次 ]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ ブックマーク ](/help/assets/icons/Bookmark.svg)[[!UICONTROL  データディクショナリ ]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| ?? | プロジェクトの名前、機能にアクセスするメニュー構造、プロジェクトリストに戻るための「![ChevronLeft](/help/assets/icons/ChevronLeft.svg)」ボタン、[Workspace プロジェクトを共有する](/help/analysis-workspace/curate-share/share-projects.md)ための「**[!UICONTROL 共有]**」ボタンが含まれています。<br/>いつでもプロジェクトの名前（新規プロジェクトなど）を選択して、名前を変更します。<br/>「![StarOutline](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト「![星](/help/assets/icons/Star.svg)」として登録します。 |
+| ?? | **ボタンパネル：** Analysis Workspace の主要な[機能](#features)にアクセスするボタンが含まれています。<ul><li>![Web ページ](/help/assets/icons/WebPage.svg) [[!UICONTROL パネル]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL ガイド付き分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL ビジュアライゼーション]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>[[!UICONTROL コンポーネント]](/help/components/overview.md)を![キュレーション](/help/assets/icons/Curate.svg)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目次]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ブックマーク](/help/assets/icons/Bookmark.svg) [[!UICONTROL データ辞書]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ?? | **左パネル：**&#x200B;この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
 | ?? | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/>各パネルは、選択したデータビューに基づいています。選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。詳しくは、[パネル - データビュー](/help/analysis-workspace/c-panels/panels.md#data-view)を参照してください。 |
 
@@ -45,7 +45,7 @@ Analysis Workspace の主な機能は、ボタンパネルから使用できま�
 
 | アイコン | 機能 | 説明 |
 |:---:|---|---|
-| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md) を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。 |
+| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md)を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。 |
 | ![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL ガイド付き分析]** | [ガイド付き分析](../guided-analysis/overview.md)では、ガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。分析を作成して Workspace プロジェクトに含めたり、以前に保存した既存の分析を含めたりできます。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL ビジュアライゼーション]** | 棒グラフや折れ線グラフなどの[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して、データを視覚的に表示できます。左端のパネルで、中央の&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。 |
 | ![キュレート](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [コンポーネント](/help/components/overview.md)には、次の要素が含まれます。<ul><li>![ディメンション](/help/assets/icons/Dimensions.svg)[ディメンション](/help/components/dimensions/overview.md)</li><li>![イベント](/help/assets/icons/Event.svg)[指標](/help/components/apply-create-metrics.md)</li><li>![セグメント化](/help/assets/icons/Segmentation.svg)[フィルター](/help/components/filters/filters-overview.md)</li><li>![カレンダー](/help/assets/icons/Calendar.svg)[日付範囲](/help/components/date-ranges/overview.md)</li></ul> |
@@ -111,7 +111,7 @@ Workspace メニューとショートカットまたはホットキーを使用�
 |---|---|---|---|
 | **[!UICONTROL フィルターを作成...]** | **[!UICONTROL *Shift + Cmd + E キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + E キー&#x200B;*]** | 新しい[フィルター](/help/components/filters/create-filters.md)を作成します。 |
 | **[!UICONTROL 指標を作成…]** | **[!UICONTROL *Shift + Cmd + C キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + C キー&#x200B;*]** | 新しい[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成します。 |
-| **[!UICONTROL 日付範囲を作成...]** | **[!UICONTROL *Shift + Cmd + D キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + D キー&#x200B;*]** | 新しい [ 日付範囲 ](/help/components/date-ranges/overview.md) を作成します |
+| **[!UICONTROL 日付範囲を作成...]** | **[!UICONTROL *Shift + Cmd + D キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + D キー&#x200B;*]** | 新しい[日付範囲](/help/components/date-ranges/overview.md)を作成します。 |
 | **[!UICONTROL 注釈を作成…]** | **[!UICONTROL *Shift + Cmd + O キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + O キー&#x200B;*]** | 新しい[注釈](/help/components/annotations/overview.md)を作成します。 |
 | **[!UICONTROL オーディエンスを作成...]** | **[!UICONTROL *Shift + Cmd + U キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + U キー&#x200B;*]** | 新しい[オーディエンス](/help/components/audiences/audiences-overview.md)を作成します。 |
 | **[!UICONTROL コンポーネントを更新]** | **[!UICONTROL *Opt + Shift + R キー&#x200B;*]** | **[!UICONTROL *Alt + Shift + R キー&#x200B;*]** | プロジェクトのコンポーネントを更新します。 |

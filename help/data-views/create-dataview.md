@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 1. データビューを作成するには、「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
 
 
-## 設定する {#configure}
+## 設定 {#configure}
 
 新規または既存のデータビューを設定するには：
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer のデータビュー"
->abstract="Customer Journey Analytics では、Adobe Journey Optimizer と互換性のある接続とデータビューを使用する必要があります。デフォルトでは、この目的のために接続とデータビューが自動的に作成されます。<br/>または、このオプションを有効にして、Adobe Journey Optimizer レポートで使用されるデフォルトのデータビューにすることもできます。有効にすると、Journey Optimizer に必要なすべてのコンポーネントがこのデータビューに追加され、必要なすべての Journey Optimizer データセットがこのデータビューに関連付けられた接続に追加されます。"
+>abstract="Customer Journey Analytics には、Adobe Journey Optimizer と互換性のある接続とデータビューを使用する必要があります。デフォルトでは、この目的のために接続とデータビューが自動的に作成されます。<br/>または、このオプションを有効にして、これを Adobe Journey Optimizer レポートで使用されるデフォルトのデータビューにすることもできます。有効にすると、Journey Optimizer に必要なすべてのコンポーネントがこのデータビューに追加され、必要な Journey Optimizer データセットがすべてこのデータビューに関連付けた接続に追加されます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo#connection" text="追加されるコンポーネントとデータセット。"
 
 <!-- markdownlint-enable MD034 -->

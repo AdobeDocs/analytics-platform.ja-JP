@@ -5,140 +5,140 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 # 基本関数
 
 
-[ 計算指標ビルダー ](cm-workflow/cm-build-metrics.md) では、統計関数および数学関数を適用できます。 この記事では、関数とその定義のアルファベット順のリストについて説明します。
+[計算指標ビルダー](cm-workflow/cm-build-metrics.md)では、統計関数および数学関数を適用できます。この記事では、関数とその定義をアルファベット順に示します。
 
 >[!NOTE]
 >
->[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[COLUMN MAXIMUM （metrics） ](#column-maximum) では [COLUMN MAXIMUM （PageViews + Visits） ](#column-maximum) も使用できます。
+>[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。例えば、[COLUMN MAXIMUM(metrics)](#column-maximum) を [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum) としてもかまいません。
 
 
 
-## テーブル関数と行関数
+## 表関数と行関数
 
 表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
 
-該当する場合および関連する場合、関数には、関数のタイプで注釈が付けられます。[!BADGE  表 ]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+該当する場合および関連する場合、関数には、関数のタイプで注釈が付けられます。[!BADGE テーブル]{type="Neutral"}[!BADGE 行]{type="Neutral"}
 
-## include-zeros パラメータは何を意味しますか？
+## ゼロを含むパラメーターとは
 
-このパラメーターは、計算にゼロを含むかどうかを示します。ゼロは時には *無* を意味することもありますが、時にはそれが重要です。
+このパラメーターは、計算にゼロを含むかどうかを示します。ゼロは&#x200B;*何もない*&#x200B;ことを意味する場合もあれば、重要な意味を持つ場合もあります。
 
-例えば、売上高指標を持っていて、レポートにページビュー指標を追加すると、突然売上高の行が増え、すべてがゼロになります。 その追加の指標が、売上高列にある **[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)** およびその他の計算に影響を与えることはお勧めしません。 この場合、`include-zeros` パラメーターを確認します。
+例えば、売上高の指標がある場合に、ページビュー数の指標をレポートに追加すると、すべてゼロの売上高の行が突然表示されます。その追加の指標が **[MEAN](cm-functions.md#mean)**（平均値）、**[ROW MINIMUM](cm-functions.md#row-min)**（行の最小値）、**[QUARTILE](cm-functions.md#quartile)**（四分位数）および売上高列にあるその他の計算に影響を与えることは避けるべきです。この場合は、`include-zeros` パラメーターを確認します。
 
-別のシナリオとして、2 つの目標指標があり、一方の指標の平均または最小値が高くなるのは、一部の行がゼロであるためです。  その場合、パラメーターにゼロを含めるかどうかを確認しないことを選択できます
+別のシナリオとして、2 つの目標指標があり、一方の指標の平均または最小値が高くなるのは、一部の行がゼロであるためです。その場合、パラメーターにゼロを含めるかどうかを確認しないことを選択できます。
 
 
 
 ## 絶対値
 
-![ 効果 ](/help/assets/icons/Effect.svg)**[!UICONTROL 絶対値（指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 絶対値を計算する指標。 |
+| 指標 | 絶対値を求める指標です。 |
 
 
 ## 列の最大値
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
 指標列の一連のディメンション要素の中の最大値を返します。MAXV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 ## 列の最小値
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
 指標列の一連のディメンション要素の中の最小値を返します。MINV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 ## 列の合計値
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 列の合計（指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-（1 つのディメンションのすべての要素について） 1 つの列内の指標の数値をすべて加算します。
+（1 つのディメンションの複数の要素の）1 つの列内の指標のすべての数値を加算します。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 
 
 ## カウント
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL カウント（指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | カウントする指標。 |
+| 指標 | カウントする指標です。 |
 
 
 ## 指数
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT （metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 底 e に適用される指数です。 |
+| 指標 | 底 e に適用される指数です。 |
 
 
 ## 平均
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 平均を計算する指標。 |
+| 指標 | 平均を求める指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 ## 中央値
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 中央値を計算する指標。 |
+| 指標 | 中央値を求める指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 剰余
+## モジュロ
 
-![ エフェクト ](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO （metric_X, metric_Y）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
-ユークリッド除算を使用して x を y で除算した後の剰余を返します。
+ユークリッド除法 で x を y で割った余りを返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 分割する最初の指標。 |
+| metric_X | 除算する最初の指標。 |
 | metric_Y | 除算する 2 番目の指標。 |
 
 ### 例
@@ -151,21 +151,21 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-常に正の数を取得するには、を使用します
+常に正の数を求めるには、次の構文を使用します。
 
 ```
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## 百分位
+## パーセンタイル
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE （metric, k, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 0 ～ 100（0 と 100 を含む）の範囲のパーセンタイル値です。 |
+| 指標 | 0 ～ 100（0 と 100 を含む）の範囲のパーセンタイル値です。 |
 | k | 相対的な値を定義する指標列です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
@@ -173,39 +173,39 @@ MODULO(MODULO(x,y)+y,y)
 
 ## 累乗演算子
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 演算子（metric_X, metrix_Y）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
 x の y 乗を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y の累乗に上げたい指標です。 |
-| metric_Y | metric_X を発生させる指数です。 |
+| metric_X | metric_Y の累乗に上げる指標です。 |
+| metric_Y | metric_X を何乗まで上げるかを示します。 |
 
 
 ## 四分位数
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE （metric, quartile, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)、および [COLUMN MAXIMUM](#column-maximum) は、四分位数がそれぞれ `0` （ゼロ）、`2`、`4` に等しい場合、[QUARTILE](#quartile) と同じ値を返します。
+[!BADGE テーブル]{type="Neutral"}[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)、および [COLUMN MAXIMUM](#column-maximum) は、四分位数がそれぞれ `0`（ゼロ）、`2`、`4` に等しい場合、[QUARTILE](#quartile) と同じ値を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 四分位値を計算する指標です。 |
-| 四分位数 | 返される四分位値を示します。 |
+| 指標 | 四分位数値を求める指標です。 |
+| 四分位数 | 四分位数として返す値を示します。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## ラウンド数
+## 四捨五入
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND （metric, number）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-*number* パラメーターを指定しない round は、*number* パラメーターが 0 の round と同じです。つまり、最も近い整数に round します。  *number* パラメーターを指定すると、小数点以下の *number* 桁が返されます。  *数値* が負の場合、小数の左側の 0 を返します。
+*数値*&#x200B;パラメーターのない四捨五入は、*数値*&#x200B;パラメーターが 0 の四捨五入と同じで、直近の整数に四捨五入します。*数値*&#x200B;パラメーターがある場合、ROUND は小数点の右側に&#x200B;*数*&#x200B;桁を返します。*数*&#x200B;が負数の場合、小数点の左側に 0 が返されます。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 丸める指標です。 |
-| number | 返す小数点以下の桁数。 負の値を指定すると、小数の左側にゼロが返されます。 |
+| 指標 | 四捨五入する指標です。 |
+| 数 | 小数点の右側に返す桁数。（負の数が小数点の左側に 0 を返す場合）。 |
 
 ### 例
 
@@ -219,78 +219,78 @@ ROUND( 314.15, -2) = 300
 
 ## 行数
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*ユニーク数を超えています* は 1 としてカウントされます。
+指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*超過したユニーク数*&#x200B;は 1 としてカウントされます。
 
 
-## 行最大
+## 行の最大値
 
-![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL ROW MAX（metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
 各行の列の最大値。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
-## 行の最小
+## 行の最小値
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
 各行の列の最小値。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 
 ## 行の合計
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
 各行の列の合計。
 
 | 引数 | 説明 |
 |---|---|
-| metric | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定することもできます。 |
+| 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 
 
 ## 平方根
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 平方根（メートル，include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 平方根を計算する指標です。 |
+| 指標 | 平方根を求める指標です。 |
 
 
 ## 標準偏差
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 標準偏差（metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| | 標準偏差を計算する指標。 |
+| | 標準偏差を求める指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
 ## 平方偏差
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
 [!BADGE テーブル]{type="Neutral"}
 
 | 引数 | 説明 |
 |---|---|
-| metric | 平方偏差を計算する指標。 |
+| 指標 | 平方偏差を計算する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
@@ -298,10 +298,10 @@ VARIANCE の式は次のようになります。
 
 ![](assets/variance_eq.png){width="100"}
 
-ここで、*x* はサンプル平均、[MEAN （*metric*） ](#mean)、*n* はサンプルサイズです。
+ここで、*x* はサンプルの平均値 [MEAN(*metric*)](#mean) であり、*n* はサンプルサイズです。
 
 
-分散を計算するには、数値の列全体を調べます。 まず、すべての数字の平均を求めます。平均を求めたら、各エントリを調べて、次の計算を行います。
+平方偏差を計算するには、数字の列全体を見ます。まず、すべての数字の平均を求めます。平均を求めたら、各数字に対して次の計算を行います。
 
 1. 数字から平均を減算します。
 
@@ -309,7 +309,7 @@ VARIANCE の式は次のようになります。
 
 1. その結果を合計に加算します。
 
-列全体に対して反復処理が行われると、合計が 1 つになります。 その合計を列内にある数字の個数で除算します。その結果が列の平方偏差です。平方偏差は単一の数字です。ただし、数字の列として表示されます。
+この計算をすべての列に対して実行したら、1 つの合計を求めます。その合計を列内にある数字の個数で除算します。その結果が列の平方偏差です。平方偏差は単一の数字です。ただし、数字の列として表示されます。
 
 次の 3 項目列の例では、
 
@@ -319,7 +319,7 @@ VARIANCE の式は次のようになります。
 | 2 |
 | 3 |
 
-この列の平均は 2 です。列の差異は、（（1 - 2） <sup>2</sup> + （2 - 2） <sup>2</sup> + （3 - 2） <sup>2</sup>/3） = 2/3 です。
+この列の平均は 2 です。この列の平方偏差は、((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3 です。
 
 
 
