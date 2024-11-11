@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 29%
+source-wordcount: '1871'
+ht-degree: 26%
 
 ---
 
@@ -70,6 +70,80 @@ Cross-channel analysis は、人がどのようにデバイスとチャネルの
 +++**ステッチではプライバシーリクエストをどのように処理しますか？**
 
 Adobeは、地域および国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+
+>[!IMPORTANT]
+>
+>ステッチ解除プロセスは、プライバシーリクエストの一環として、2025 年の初めに変更されます。 現在のステッチ解除プロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 イベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を修正するために、2025 年以降、新しいステッチプロセスにより、プライバシーリクエストの対象となるイベントが永続 ID で更新されます。
+> 
+
+説明するために、ID の次のデータを想定します。つまり、ステッチの前と後のイベントです。
+
+| ID マップ | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | ボブ | CustId |
+|  | 2 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| イベントデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | ボブ | CustId |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| ステッチされたデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 | ステッチ ID | ステッチされた名前空間 |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | ボブ | CustId |
+| | 2 | ts1 | 123 | ecid | ボブ | CustId | ボブ | CustId |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId | アレックス | CustId |
+
+
+**プライバシーリクエストの現在のプロセス**
+
+CustID Bob を持つ顧客に対するプライバシーリクエストを受信すると、取り消し線エントリを含む行が削除されます。 その他のイベントは、ID マップを使用して再タイトルされます。 例えば、ステッチされたデータセット内の最初のステッチ ID は **Alex** に更新されます。
+
+| ID マップ | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| イベントデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| ステッチされたデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 | ステッチ ID | ステッチされた名前空間 |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **アレックス** | CustId |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ | ~~ボブ~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId | アレックス | CustId |
+
+
+**プライバシーリクエストの新しいプロセス**
+
+CustID Bob を持つ顧客に対するプライバシーリクエストを受信すると、取り消し線エントリを含む行が削除されます。 その他のイベントは、永続 ID を使用して再タイトルされます。 例えば、ステッチされたデータセット内の最初のステッチ ID は **123** に更新されます。
+
+| ID マップ | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| イベントデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId |
+
+
+| ステッチされたデータセット | Id | タイムスタンプ | 永続 ID | 永続的な名前空間 | 一時 id | 一時的な名前空間 | ステッチ ID | ステッチされた名前空間 |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~ボブ~~ | ~~CustId~~ | ~~ボブ~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | アレックス | CustId | アレックス | CustId |
 
 +++
 

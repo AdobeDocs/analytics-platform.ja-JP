@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
+source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 69%
+source-wordcount: '4195'
+ht-degree: 68%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2024年11月** | |
+| ステッチとプライバシーリクエスト | プライバシーリクエストの結果である [ 未ステッチプロセスの今後の変更 ](/help/stitching/faq.md#frequently-asked-questions) に関する通知を追加しました。 |
 | **2024年10月** | |
 | 共有デバイス | 共有デバイスのコンテキスト、ステッチを使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法を説明する [ ユースケース記事 ](/help/use-cases/stitching/shared-devices.md) を追加しました。 |
 | Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
