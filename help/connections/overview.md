@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 100%
+source-wordcount: '224'
+ht-degree: 70%
 
 ---
 
@@ -24,18 +24,20 @@ ht-degree: 100%
 
 ## 必要な権限
 
-Customer Journey Analytics 接続を作成するには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) で次の権限が必要です。
+Customer Journey Analytics接続を作成するには、次の権限が必要です。 権限について詳しくは、[Adobe Admin Consoleおよび ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)2}Adobe Experience Platformの権限 ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home) のドキュメントを参照してください。[
 
-Adobe Experience Platform:
+### Adobe Admin Console内：
+
+* Customer Journey Analytics：製品管理者
+* Adobe Experience Platform:*AEP-Default-All-Users* という名前の製品プロファイルに追加されました
+
+### Adobe Experience Platform内の権限：
 
 * データモデリング：ビュースキーマ、スキーマの管理
 * データ管理：ビューデータセット，データセットの管理
 * データ取り込み：ソースの管理
-* ID 名前空間の表示
-
-Customer Journey Analytics
-
-* 製品管理者アクセス
+* Identity Management:Id 名前空間の表示
+* サンドボックス：関連するCustomer Journey Analytics接続で使用されるサンドボックス
 
 >[!IMPORTANT]
 >
