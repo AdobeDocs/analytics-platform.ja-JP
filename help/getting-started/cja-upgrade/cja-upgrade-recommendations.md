@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 6fe081690782272f550c8f9c33dfd9ae6b227d13
+exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
+source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1490'
 ht-degree: 7%
 
 ---
@@ -27,7 +28,7 @@ Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場
 >
 >ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。 その場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を使用して、組織固有の状況に合わせたアップグレード手順を動的に生成します。
 
-Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする際の推奨手順は、Customer Journey Analyticsで推奨されるデータ収集方法であるExperience Platform Web SDK の新しい実装です。 Adobeでは、Web SDK と組み合わせて、Analytics ソースコネクタを使用して、Adobe Analyticsの履歴データを保持し、並列データ比較を実行することをお勧めします。
+Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードには、Experience Platform Web SDK の新しい実装を使用することをお勧めします。これは、Customer Journey Analyticsに推奨されるデータ収集方法です。 Adobeでは Web SDK と組み合わせて、Analytics ソースコネクタをCustomer Journey Analyticsへの移行に役立てることもお勧めします。 Analytics ソースコネクタを使用して、Adobe Analyticsの履歴データを保持し、横に並べてデータを比較します。
 
 Customer Journey Analyticsへの完全な移行が完了したら、Analytics ソースコネクタをオフにして、Experience Platform Web SDK のみを使用できます。
 
@@ -79,7 +80,7 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
 1. （任意）Adobe Analyticsの分類データを使用する場合、Customer Journey Analyticsのデータセットに分類データを追加できます。
 
-   分類データを含む各ディメンションのルックアップデータセットを作成します。
+   これを行うには、[ 分類データを含んだ各ディメンションのルックアップデータセットを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
 
 1. AppMeasurementまたはAdobe Analytics拡張機能（タグ）を使用した Analytics 実装の場合は、[Adobe Experience Platformでデータストリームを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
@@ -93,7 +94,7 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    詳しくは、[ ソースコネクタを使用したデータの取り込みと使用 ](/help/data-ingestion/sources.md#use-a-source-connector) の [ ソースコネクタの使用 ](/help/data-ingestion/sources.md) を参照してください。
 
-1. 目的のCustomer Journey Analytics実装を説明するセクションを展開し、関連する手順を実行します。
+1. Customer Journey Analytics実装用のExperience Platform Web SDK の実装方法を説明するセクションを展開し、関連する手順を実行します。
 
    +++手動実装（JS ファイル）
 
@@ -105,13 +106,11 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    +++タグ
 
-   1. [Adobe Experience Platform Data Collection でタグプロパティを作成します ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/quick-start#create-a-property)。
+   1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)。
 
-   1. Adobe Experience Platform Web SDK 拡張機能を追加します。
+   1. [ タグプロパティを作成して、Adobe Experience Platform Web SDK 拡張機能を追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
 
-   1. サイトにローダータグを実装します。
-
-   1. タグに XDM データ収集ロジックを追加します。
+   1. [ タグに XDM データ収集ロジックを追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
 
 +++
 
@@ -220,12 +219,3 @@ Generic upgrade steps are also available.
    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
    
 -->
-
-
-
-
-
-
-
-
-
