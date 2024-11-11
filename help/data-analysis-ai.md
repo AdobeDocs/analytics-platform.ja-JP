@@ -5,19 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
+exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
+source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 4%
 
 ---
 
+# CJA の AI アシスタントでデータビジュアライゼーションが使用できるようになりました
 
-# Customer Journey Analyticsでの Data Analysis AI アシスタント -Alpha
+Customer Journey Analyticsにおける AI アシスタント（CJA）は、CJA のAnalysis Workspace データに関する質問に、より迅速かつ効率的に回答するのに役立つジェネレーティブ AI コンバージョンエージェントです。
 
-Data Analysis AI アシスタントは、Customer Journey Analytics内のAnalysis Workspace データに関する質問に、より迅速かつ効率的に回答するのに役立つジェネレーティブ AI コンバージョンエージェントです。
-
-AI アシスタントで質問すると、AI アシスタントは、様々なタイプの指標やコンポーネントを含む、データビューのすべてのコンポーネントをスキャンし、分析に適したディメンション、指標、日付範囲にプロンプトを翻訳します。 データビューコンポーネントに慣れてから、これらのコンポーネントを最適な組み合わせでドラッグ&amp;ドロップして質問に答える代わりに、AI アシスタントに質問を入力するだけです。
+データ ビジュアライゼーションに関する質問をする際に、AI アシスタントは様々なタイプの指標やコンポーネントを含む、データビュー内のすべてのコンポーネントをスキャンし、分析に適したディメンション、指標、日付範囲にプロンプトを翻訳します。 データビューコンポーネントに慣れてから、これらのコンポーネントを最適な組み合わせでドラッグ&amp;ドロップして質問に答える代わりに、AI アシスタントに質問を入力するだけです。
 
 ![Data Analysis AI アシスタント ](assets/cja-ai-asst-da.gif)
 
@@ -48,20 +48,20 @@ AI アシスタントで質問すると、AI アシスタントは、様々な�
 
 [Do we even need this section for the Alpha?]
 
-The following parameters govern access to the Data Analysis AI Assistant feature:
+The following parameters govern access to Data visualization in AI Assistant:
 
-* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
 It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
    1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
    1. In the specific product profile, select **[!UICONTROL Permissions]**.
    1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
    
       ![Add permission](assets/ai-assistant-permissions.png).
 
@@ -69,7 +69,7 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
 See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
-## Data Analysis AI アシスタントへのアクセスと使用
+## AI アシスタントでのデータビジュアライゼーションへのアクセスと使用
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
@@ -83,7 +83,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    ![AI アシスタント アイコン ](/help/assets/ai-asst-icon.png)
 
-6. 下部の **[!UICONTROL Customer Journey Analyticsについて尋ねる]** ダイアログで、AI アシスタントでデータ分析の質問をします。
+6. 下部にある **[!UICONTROL Customer Journey Analyticsについて尋ねる]** ダイアログで、AI アシスタントでデータビジュアライゼーションに関する質問をします。
 
 ### 例 1
 
@@ -125,11 +125,11 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 1. プロンプトウィンドウで、「製品カテゴリ別の売上高の割合 *と入力します。*
 
-2. ここでも、データ分析 AI アシスタントは、最も適切なビジュアライゼーション（この場合は **[!UICONTROL ドーナツ]** ビジュアライゼーション）を選択して、質問に答えます。
+2. ここでも、AI アシスタントのデータビジュアライゼーションは、最も適切なビジュアライゼーション（この場合は **[!UICONTROL ドーナツ]** ビジュアライゼーション）を選択して、質問に答えます。
 
    ![ドーナツ](/help/assets/ai-asst-result3.png)
 
-## データ分析プロンプトの例
+## データビジュアライゼーションプロンプトの例
 
 一般的なプロンプトの例と、AI 支援がそれらのプロンプトに応答するために使用するビジュアライゼーションを示します。
 
@@ -152,7 +152,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 AI アシスタントは、各ユーザープロンプトによって提供されるコンテキストを処理し、フリーフォームテーブルのコンポーネントだけでなく、最も適切なビジュアライゼーションでもインテリジェントな応答を試みます。 ただし、AI アシスタントの応答は、プロンプトで使用される特定の単語やフレーズによって異なる場合があるので、言語をわずかに変更すると異なる結果になる可能性があります。 これを最大限に活用する方法を次に示します。 <ul><li>具体的：正確な用語（「先月のカリフォルニアでの売上高」など）を含めて、応答を絞り込みます。</li><li>指標とフィルターのクリアな使用：特定の指標（「売上高」など）、ディメンション（「web サイト名」など）、フィルター（「iPhone ユーザー」など）、および日付範囲（「過去 3 か月」など）を追加すると、AI アシスタントが適切なデータに集中することができます。</li><li>直接質問する：「今年の製品カテゴリ別平均売上高は何か」など、フレーズで直接質問する を使用すると、AI アシスタントが明確で関連性の高いインサイトを提供しやすくなります。</li></ul>
 
-CJA の Data Analysis AI アシスタントでプロンプトで使用できる用語とフレーズの例を、期待できる応答のタイプと共に以下の表で確認してください。 これらの例は、特定の単語や構造が AI アシスタントの出力に与える影響を理解し、より正確で価値のあるインサイトを確保するのに役立つように設計されています。 AI アシスタントは生成 AI を使用するので、類似のプロンプト間でビジュアライゼーションや選択したデータが若干異なる場合があります。
+AI アシスタントのデータビジュアライゼーションを使用してプロンプトで使用できる用語とフレーズの例を、期待できる応答のタイプと共に以下の表で確認してください。 これらの例は、特定の単語や構造が AI アシスタントの出力に与える影響を理解し、より正確で価値のあるインサイトを確保するのに役立つように設計されています。 AI アシスタントは生成 AI を使用するので、類似のプロンプト間でビジュアライゼーションや選択したデータが若干異なる場合があります。
 
 | 望ましい結果 | 用語とフレーズの例 |
 | --- | --- |
@@ -181,5 +181,3 @@ CJA の Data Analysis AI アシスタントでプロンプトで使用できる�
 ## 質問と連絡先
 
 * AlphaSlack チャンネルで質問やフィードバックを送信：#aep-cja-ai-assistant-testers ???
-
-
