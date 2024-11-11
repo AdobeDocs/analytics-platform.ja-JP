@@ -1,5 +1,5 @@
 ---
-title: Adobe Journey Optimizerの統合
+title: Adobe Journey Optimizer の統合
 description: Adobe Journey Optimizer で生成したデータを取り込み、Customer Journey Analytics 内で Analysis Workspace を使用して分析します。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
@@ -11,7 +11,7 @@ ht-degree: 99%
 
 ---
 
-# Journey Optimizerの統合
+# Journey Optimizer の統合
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。カスタマージャーニーで次のステップに顧客を表示するのに役立ちます。
 

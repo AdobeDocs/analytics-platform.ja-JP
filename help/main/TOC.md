@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 + [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 + [Adobe Customer Journey Analytics 向けの AI アシスタント](../ai-assistant.md)
-+ [Customer Journey Analyticsのための Data Analysis AI 支援](../data-analysis-ai.md)
++ [Customer Journey Analytics のデータ分析 AI アシスタント](../data-analysis-ai.md)
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
@@ -51,9 +51,9 @@ ht-degree: 88%
       + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [タグを使用したアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
-      + [スキーマを構築](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [スキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [既存のスキーマを使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [既存のスキーマの使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [データセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [データストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
       + [Platform をサービスとして追加](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
@@ -77,7 +77,7 @@ ht-degree: 88%
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Experience PlatformEdge Network{#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server API](../data-ingestion/serverapi.md)
@@ -116,8 +116,8 @@ ht-degree: 88%
    + [ラベルとポリシー](../data-views/data-governance.md)
 
 + ツール {#tools}
-   + 資産移動 {#asset-transfer}
-      + [ 資産の譲渡 ](../tools/asset-transfer/transfer-assets.md)
+   + アセットの転送 {#asset-transfer}
+      + [アセットを転送](../tools/asset-transfer/transfer-assets.md)
    + 製品の使用状況 {#product-usage}
       + [概要](../tools/product-usage/usage-overview.md)
       + [データ設定](../tools/product-usage/data-settings.md)
@@ -156,20 +156,20 @@ ht-degree: 88%
          + [Workspace の合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
          + [概要](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [設定する](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [ユースケース](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + フォールアウト {#fallout}
          + [概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [設定する](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [フィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + フロー {#flow}
          + [概要](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [設定する](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [ディメンション間のフロー](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + ジャーニーキャンバス {#journey-canvas}
          + [概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [設定する](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [設定](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [トラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [積み重ね面グラフ](../analysis-workspace/visualizations/area.md)
       + [積み重ね棒グラフ](../analysis-workspace/visualizations/bar.md)
@@ -214,11 +214,11 @@ ht-degree: 88%
       + [統計的手法](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 予測 {#forecasting}
       + [概要](../analysis-workspace/c-forecast/forecasting.md)
-      + [予測の表示](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [予測を表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [目次](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
-   + Workspaceに関する FAQ と {#workspace-faq}
+   + Workspace に関する FAQ とその他 {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
       + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
       + [制限事項](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -235,17 +235,17 @@ ht-degree: 88%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + [アクティブな成長](../guided-analysis/types/active-growth.md)
+   + [アクティブな増加率](../guided-analysis/types/active-growth.md)
    + [コンバージョントレンド](../guided-analysis/types/conversion-trends.md)
    + [エンゲージメント](../guided-analysis/types/engagement.md)
-   + [最初の使用の影響](../guided-analysis/types/first-use-impact.md)
+   + [初回使用の影響](../guided-analysis/types/first-use-impact.md)
    + [頻度](../guided-analysis/types/frequency.md)
    + [ファネル](../guided-analysis/types/funnel.md)
    + [純増加率](../guided-analysis/types/net-growth.md)
-   + [リリース影響](../guided-analysis/types/release-impact.md)
-   + [定着](../guided-analysis/types/retention.md)
+   + [リリースの影響](../guided-analysis/types/release-impact.md)
+   + [リテンション](../guided-analysis/types/retention.md)
    + [タイムライン](../guided-analysis/types/timeline.md)
-   + [傾向](../guided-analysis/types/trends.md)
+   + [トレンド](../guided-analysis/types/trends.md)
    + [業界ユースケース](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
@@ -326,7 +326,7 @@ ht-degree: 88%
       + [書き出しの管理](/help/components/exports/manage-exports.md)
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
-   + データ要素 {#data-dictionary}
+   + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
@@ -372,10 +372,10 @@ ht-degree: 88%
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
    + Google Analytics データ {#ga}
-      + [Google Analyticsからデータを移行する](../use-cases/ga/overview.md)
-      + [Google Analytics履歴データの取り込み](../use-cases/ga/backfill.md)
-      + [ストリーミングGoogle Analyticsデータの設定](../use-cases/ga/streaming.md)
-      + [Google Analyticsデータのレポート](../use-cases/ga/report.md)
+      + [Google Analytics からデータを移行](../use-cases/ga/overview.md)
+      + [Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
+      + [Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
+      + [Google Analytics データに関するレポート](../use-cases/ga/report.md)
    + データ取り込み {#data-ingestion}
       + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
       + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -403,7 +403,7 @@ ht-degree: 88%
    + ステッチ {#stitching}
       + [共有デバイス](/help/use-cases/stitching/shared-devices.md)
    + 派生フィールド {#derived-fields}
-      + [目標のレポート](../use-cases/goals-using-derived-fields.md)
+      + [目標に関するレポート](../use-cases/goals-using-derived-fields.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
