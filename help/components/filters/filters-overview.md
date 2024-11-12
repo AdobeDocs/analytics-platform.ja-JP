@@ -4,9 +4,9 @@ description: フィルターの用途と、単純なフィルターの作成方�
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1423'
 ht-degree: 8%
 
 ---
@@ -174,9 +174,13 @@ Customer Journey Analyticsのデータビューを使用すると、セッショ
 2. ネストされたフィルター定義を残りのデータに適用します。 ネストされたフィルター定義は、最初の定義が破棄されたデータには適用されません。
 3. ネストされたすべてのコンテナフィルター定義が計算されるまで繰り返します。 残りのデータは結果に含まれ、レポートに使用されます。
 
+>[!NOTE]
+>
+>フィルター内にフィルターをネストする場合（例えば、コンポーネント パネルからフィルター定義にフィルターをドラッグする場合）、コンテナは、ドラッグしたフィルター定義のコピー（参照ではなく）と共に作成されます。
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
