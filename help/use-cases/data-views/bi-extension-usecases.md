@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -70,7 +70,7 @@ ht-degree: 1%
 * 指標：**[!UICONTROL 購入売上高]**?？および **[!UICONTROL 購入]**??。
 * フィルター：**[!UICONTROL 釣り製品]** ??。
 
-![Customer Journey Analyticsベースの設定 ](assets/cja-base.png)
+![Customer Journey Analyticsベースの設定 ](assets/cja-base.png){zoomable="yes"}
 
 ユースケースを確認したら、これらのサンプルオブジェクトを特定の環境に適したオブジェクトに置き換えます。
 
@@ -89,7 +89,7 @@ ht-degree: 1%
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Power BI デスクトップを起動します。
    1. メインインターフェイスから、「**[!UICONTROL 他のソースからデータを取得]**」を選択します。
@@ -129,7 +129,7 @@ ht-degree: 1%
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Tableau の起動
    1. **[!UICONTROL To a Server]** の下の左パネルから「**[!UICONTROL PostgreSQL]**」を選択します。 使用できない場合は、「**[!UICONTROL その他…]**」を選択し、「**[!UICONTROL インストールされているコネクタ**[!UICONTROL 」から「]**PostgreSQL]**」を選択します。
