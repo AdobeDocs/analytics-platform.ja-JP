@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
+source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -89,35 +89,35 @@ ht-degree: 1%
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){width="100" zoomable="yes"}
+      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Power BI デスクトップを起動します。
    1. メインインターフェイスから、「**[!UICONTROL 他のソースからデータを取得]**」を選択します。
    1. **[!UICONTROL データを取得]** ダイアログで、次の手順を実行します。
-      ![PowerBI PostgreSQL データベース ](assets/powerbi-postgresql.png)
+      ![PowerBI PostgreSQL データベース ](assets/powerbi-postgresql.png){zoomable="yes"}
       1. **[!UICONTROL PostgreSQL データベース]** を検索して選択します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** ダイアログで、次の手順を実行します。
-      ![PowerBI デスクトップサーバーとデータベースの設定 ](assets/powerbi-serverdatabase.png)
+      ![PowerBI デスクトップサーバーとデータベースの設定 ](assets/powerbi-serverdatabase.png){zoomable="yes"}
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付けます。**[!UICONTROL Server]** の値として、`:` で区切ってください。 例：`examplecompany.platform-query.adobe.io:80`。
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報**[!UICONTROL  パネルから ]**Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
       1. **[!UICONTROL Data connectivity mode]** として **[!UICONTROL DirectQuery]** を選択します。
       1. **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** - **[!UICONTROL データベース]** ダイアログで、
-      ![PowerBI デスクトップユーザーとパスワード ](assets/powerbi-userpassword.png)
+      ![PowerBI デスクトップユーザーとパスワード ](assets/powerbi-userpassword.png){zoomable="yes"}
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード**[!UICONTROL  フィールドのExperience Platform ]**クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. **[!UICONTROL これらの設定を適用するレベルを選択]** のドロップダウンメニューが、前に定義した **[!UICONTROL サーバー]** に設定されていることを確認します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BIデスクトップに次のように表示されます。
-      ![ データのデストコップ読み込みPower BI](assets/powerbi-navigator-load.png)
+      ![ データのデストコップ読み込みPower BI](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. 左パネルのリストから **[!UICONTROL public.cc_data_view]** を選択します。
       1. 次の 2 つのオプションがあります。
          1. **[!UICONTROL 読み込み]** を選択して続行し、設定を完了します。
          1. **[!UICONTROL データを変換]** を選択します。 オプションで設定の一部として変換を適用できるダイアログが表示されます。
-            ![Power BI デスクトップ変換データ ](assets/powerbi-transform-data.png)
+            ![Power BI デスクトップ変換データ ](assets/powerbi-transform-data.png){zoomable="yes"}
             * **[!UICONTROL 閉じて適用]** を選択します。
    1. しばらくすると、**[!UICONTROL public.cc_data_view]** が **[!UICONTROL Data]** ペインに表示されます。 ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択して、ディメンションと指標を表示します。
-      ![Destkop サーバーのPower BIが読み込まれました ](assets/powerbi-navigator-loaded.png)
+      ![Destkop サーバーのPower BIが読み込まれました ](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -133,9 +133,9 @@ ht-degree: 1%
 
 1. Tableau の起動
    1. **[!UICONTROL To a Server]** の下の左パネルから「**[!UICONTROL PostgreSQL]**」を選択します。 使用できない場合は、「**[!UICONTROL その他…]**」を選択し、「**[!UICONTROL インストールされているコネクタ**[!UICONTROL 」から「]**PostgreSQL]**」を選択します。
-      ![Tableau コネクタ ](assets/tableau-connectors.png)
+      ![Tableau コネクタ ](assets/tableau-connectors.png){zoomable="yes"}
    1. **[!UICONTROL PostgreSQL]** ダイアログの **[!UICONTROL 一般]** タブで、次の操作を行います。
-      ![Tableau へのログインダイアログ ](assets/tableau-signin.png)
+      ![Tableau へのログインダイアログ ](assets/tableau-signin.png){zoomable="yes"}
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報**[!UICONTROL  パネルから ]**ホスト]** をコピーして **[!UICONTROL サーバー]** に貼り付けます。
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報**[!UICONTROL  パネルから ]**Port]** に **[!UICONTROL Port]** をコピー&amp;ペーストします。
       1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL データベース]** に **[!UICONTROL データベース]** をコピー&amp;ペーストします。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
@@ -150,10 +150,10 @@ ht-degree: 1%
       * **[!UICONTROL 接続]** の下の接続名。
       * **[!UICONTROL Database]** の下のデータベースの名前。
       * **[!UICONTROL Table]** の下のテーブルのリスト。
-        ![Tableau Connected](assets/tableau-connected.png)
+        ![Tableau Connected](assets/tableau-connected.png){zoomable="yes"}
       1. **[!UICONTROL cc_data_view]** エントリをドラッグし、「**[!UICONTROL テーブルをドラッグ]**」と表示されるメインビューにここにエントリをドロップします。
    1. メインウィンドウに、**[!UICONTROL cc_data_view]** データビューの詳細が表示されます。
-      ![Tableau Connected](assets/tableau-validation.png)
+      ![Tableau Connected](assets/tableau-validation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -172,7 +172,7 @@ Customer Journey Analyticsでは、Experience Platformインターフェイス�
 1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
 1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
 
-![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
 
 
 +++
@@ -219,7 +219,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ユースケースの例 **[!UICONTROL 毎日のトレンド]** パネルを次に示します。
 
-![Customer Journey Analytics日別トレンドパネル ](assets/cja_daily_trend.png)
+![Customer Journey Analytics日別トレンドパネル ](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -253,7 +253,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 2 日付範囲フィルター ](assets/uc2-pbi-daterange.png)
+   ![Power BIデスクトップのユースケース 2 日付範囲フィルター ](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. 折れ線グラフのビジュアライゼーションで：
 
@@ -262,7 +262,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc2-pbi-final.png)
+   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc2-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -271,7 +271,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/02/2023` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc2-tableau-filter.png)
+      ![Tableau Desktop フィルター ](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL Day]** を選択し、値が **[!UICONTROL DAY （Daterangeday）]** に更新されます。
@@ -281,7 +281,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc2-tableau-graph.png)
+      ![Tableau Desktop グラフ ](assets/uc2-tableau-graph.png){zoomable="yes"}
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -293,7 +293,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc2-tableau-data.png)
+      ![Tableau Desktop データ ](assets/uc2-tableau-data.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -302,7 +302,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop ダッシュボード 1](assets/uc2-tableau-dashboard.png)
+      ![Tableau Desktop ダッシュボード 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -317,7 +317,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ユースケースの例 **[!UICONTROL 時間別トレンド]** パネル：
 
-![Customer Journey Analyticsの時間別トレンドビジュアライゼーション ](assets/cja_hourly_trend.png)
+![Customer Journey Analyticsの時間別トレンドビジュアライゼーション ](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -341,7 +341,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `02/01/2023` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc3-tableau-filter.png)
+      ![Tableau Desktop フィルター ](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. **[!UICONTROL データ]** ペインの「**[!UICONTROL テーブル]**」リストから **[!UICONTROL Daterangehour]** をドラッグ&amp;ドロップし、「**[!UICONTROL 列]**」の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
@@ -351,7 +351,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc3-tableau-graph.png)
+      ![Tableau Desktop グラフ ](assets/uc3-tableau-graph.png){zoomable="yes"}
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -363,7 +363,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc3-tableau-data.png)
+      ![Tableau Desktop データ ](assets/uc3-tableau-data.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -372,7 +372,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-      ![Tableau Desktop ダッシュボード 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau Desktop ダッシュボード 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -388,7 +388,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ユースケースの例 **[!UICONTROL 月間トレンド]** パネルを次に示します。
 
-![Customer Journey Analyticsの月間トレンドビジュアライゼーション ](assets/cja_monthly_trend.png)
+![Customer Journey Analyticsの月間トレンドビジュアライゼーション ](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -424,7 +424,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 2 日付範囲フィルター ](assets/uc4-pbi-filter-daterange.png)
+   ![Power BIデスクトップのユースケース 2 日付範囲フィルター ](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. 折れ線グラフのビジュアライゼーションで：
 
@@ -433,7 +433,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc4-pbi-filter-final.png)
+   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -442,7 +442,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/01/2024` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc4-tableau-filter.png)
+      ![Tableau Desktop フィルター ](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されるようにします。
@@ -452,7 +452,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc4-tableau-graph.png)
+      ![Tableau Desktop グラフ ](assets/uc4-tableau-graph.png){zoomable="yes"}
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -464,7 +464,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc4-tableau-data.png)
+      ![Tableau Desktop データ ](assets/uc4-tableau-data.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -473,7 +473,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop ダッシュボード 1](assets/uc4-tableau-dashboard.png)
+      ![Tableau Desktop ダッシュボード 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -488,7 +488,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 このユースケースの例では **[!UICONTROL シングルDimensionランク]** パネルは次のようになります。
 
-![Customer Journey Analyticsの単一ディメンションのランク付けビジュアライゼーション ](assets/cja-single-dimension-ranked.png)
+![Customer Journey Analyticsの単一ディメンションのランク付けビジュアライゼーション ](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ BI ツール
@@ -528,7 +528,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    1. **[!UICONTROL purchase_revenue の合計]** を選択すると、商品名を降順で並べ替えることができます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 5 テーブルのステータス ](assets/uc5-pbi-table.png)
+   ![Power BIデスクトップのユースケース 5 テーブルのステータス ](assets/uc5-pbi-table.png){zoomable="yes"}
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
@@ -550,7 +550,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    折れ線グラフと積み重ね柱状グラフが更新されます。 Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップのユースケース 5 グラフ ](assets/uc5-pbi-chart.png)
+   ![Power BIデスクトップのユースケース 5 グラフ ](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. 折れ線グラフおよび積み重ね柱状グラフのビジュアライゼーションで：
 
@@ -559,7 +559,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。
 
-   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc5-pbi-final.png)
+   ![Power BIデスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc5-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -568,7 +568,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `31/12/2024` の期間を指定します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
 
-      ![Tableau Desktop フィルター ](assets/uc5-tableau-filter.png)
+      ![Tableau Desktop フィルター ](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 購入]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
@@ -585,7 +585,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop グラフ ](assets/uc5-tableau-graph.png)
+   ![Tableau Desktop グラフ ](assets/uc5-tableau-graph.png){zoomable="yes"}
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
@@ -597,7 +597,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop データ ](assets/uc5-tableau-data.png)
+   ![Tableau Desktop データ ](assets/uc5-tableau-data.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -606,7 +606,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-   ![Tableau Desktop ダッシュボード 1](assets/uc5-tableau-dashboard.png)
+   ![Tableau Desktop ダッシュボード 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -621,7 +621,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ユースケースの例 **[!UICONTROL 複数のDimensionのランク付け]** パネルを次に示します。
 
-![Customer Journey Analyticsの複数のDimensionのランク パネル ](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analyticsの複数のDimensionのランク パネル ](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -663,7 +663,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 1. テーブルの各カテゴリを分類するには、製品カテゴリレベルで **[!UICONTROL +]** を選択します。 Power BIデスクトップは次のようになります。
 
-   ![Power BI デスクトップの複数Dimensionのランク付けマトリックス テーブル ](assets/uc6-powerbi-data.png)
+   ![Power BI デスクトップの複数Dimensionのランク付けマトリックス テーブル ](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -677,7 +677,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Power BIデスクトップは次のようになります。
 
-   ![Power BIデスクトップの複数Dimensionのランクツリーマップ ](assets/uc6-powerbi-treemap.png)
+   ![Power BIデスクトップの複数Dimensionのランクツリーマップ ](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -694,7 +694,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Power BIデスクトップは次のようになります。
 
-   ![Power BI デスクトップの複数のDimensionが最終評価 ](assets/uc6-powerbi-final.png)
+   ![Power BI デスクトップの複数のDimensionが最終評価 ](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -706,7 +706,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc6-tableau-filter.png)
+      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. **[!UICONTROL 製品カテゴリ]** をドラッグして、「列 **[!UICONTROL の横にドロップ]** ます。
    1. **[!UICONTROL 購入売上高]** をドラッグし、「行 **[!UICONTROL の横にドロップ]** ます。 値が「**[!UICONTROL SUM （Purchase Revenue）]**」に変わります。
@@ -719,7 +719,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionのランク付けカテゴリー ](assets/uc6-tableau-category.png)
+      ![Tableau Desktop 複数Dimensionのランク付けカテゴリー ](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. 現在の **[!UICONTROL シート 1]** シートの名前を `Category` に変更します。
 1. **[!UICONTROL 新規ワークシート]** を選択して新規シートを作成し、名前を `Data` に変更します。
@@ -738,7 +738,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionのランクデータ ](assets/uc6-tableau-data.png)
+      ![Tableau Desktop 複数Dimensionのランクデータ ](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ワークシート]** を選択して新しいシートを作成し、名前を **[!UICONTROL ツリーマップ]** に変更します。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
@@ -755,7 +755,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionのランクデータ ](assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop 複数Dimensionのランクデータ ](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL カテゴリ]** シートを **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビュー（「シートをここにドロップ *」と表示される* にドラッグ&amp;ドロップします。
@@ -765,7 +765,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-   ![Tableau Desktop ダッシュボード 1](assets/uc6-tableau-final.png)
+   ![Tableau Desktop ダッシュボード 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -780,11 +780,11 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 商品名の個別カウントについてレポートするには、**[!UICONTROL タイトル]**`Product Name (Count Distinct)` と **[!UICONTROL 外部 ID]**`product_name_count_distinct` を使用してCustomer Journey Analyticsの計算指標を設定します。
 
-![Customer Journey Analytics製品名（Distincr カウント）の計算指標 ](assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics製品名（Distincr カウント）の計算指標 ](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 次に、その指標をユースケースの例の **[!UICONTROL 個別Dimension値をカウント]** パネルで使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics個別カウント値 ](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -813,7 +813,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Power BIデスクトップは次のようになります。
 
-   ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-table.png)
+   ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. テーブルビジュアライゼーションを選択します。 コンテキストメニューから **[!UICONTROL コピー]**/**[!UICONTROL ビジュアルをコピー]** を選択します。
 1. **[!UICONTROL ctrl+v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
@@ -821,7 +821,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Power BIデスクトップは次のようになります。
 
-   ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-final.png)
+   ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -837,7 +837,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc7-tableau-data.png)
+      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
@@ -852,7 +852,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc7-tableau-card.png)
+   ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Card]** シートを *ここにシートをドロップ* と表示される **[!UICONTROL Dashboard 1]** ビューにドラッグ&amp;ドロップします。
@@ -860,7 +860,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-   ![Tableau Desktop ダッシュボード 1](assets/uc7-tableau-final.png)
+   ![Tableau Desktop ダッシュボード 1](assets/uc7-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -876,11 +876,11 @@ Customer Journey Analyticsで定義した日付範囲を使用して、昨年の
 
 日付範囲を使用してレポートを作成するには、Customer Journey Analyticsで日付範囲を **[!UICONTROL タイトル]**`Last Year 2023` を使用して設定します。
 
-![Customer Journey Analyticsフィルターに日付範囲名を使用 ](assets/cja-daterange.png)
+![Customer Journey Analyticsフィルターに日付範囲名を使用 ](assets/cja-daterange.png){zoomable="yes"}
 
 次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでその日付範囲を使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 ](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 フリーフォームテーブルのビジュアライゼーションで定義された日付範囲が、パネルに適用される日付範囲をどのように上書きするかに注意してください。
 
@@ -913,7 +913,7 @@ Customer Journey Analyticsで定義した日付範囲を使用して、昨年の
 
    適用した **[!UICONTROL daterangeName]** フィルターで更新されたテーブルが表示されます。 Power BIデスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc8-powerbi-final.png)
+   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -928,7 +928,7 @@ Customer Journey Analyticsで定義した日付範囲を使用して、昨年の
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc8-tableau-final.png)
+      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -944,11 +944,11 @@ Customer Journey Analyticsで定義した日付範囲を使用して、昨年の
 
 Customer Journey Analyticsに使用するフィルターをInspectします。
 
-![Customer Journey Analyticsフィルター名を使用してフィルター ](assets/cja-fishing-products.png)
+![Customer Journey Analyticsフィルター名を使用してフィルター ](assets/cja-fishing-products.png){zoomable="yes"}
 
 次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでそのフィルターを使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 ](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -984,7 +984,7 @@ Customer Journey Analyticsに使用するフィルターをInspectします。
 
    適用した **[!UICONTROL filterName]** フィルターで更新されたテーブルが表示されます。 Power BIデスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc9-powerbi-final.png)
+   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -1002,7 +1002,7 @@ Customer Journey Analyticsに使用するフィルターをInspectします。
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc9-tableau-final.png)
+      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc9-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1017,11 +1017,11 @@ Customer Journey Analyticsで新しいフィルターを作成し、ハンティ
 
 Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` を含む新しいフィルターを作成します。
 
-![Customer Journey AnalyticsフィルターにDimension値を使用 ](assets/cja-hunting-products.png)
+![Customer Journey AnalyticsフィルターにDimension値を使用 ](assets/cja-hunting-products.png){zoomable="yes"}
 
 次に、使用例の **[!UICONTROL Dimension値をフィルターに使用]** パネルでそのフィルターを使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-dimension-values-to-filter.png)
+![Customer Journey Analytics個別カウント値 ](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1058,7 +1058,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
    適用した **[!UICONTROL filterName]** フィルターで更新されたテーブルが表示されます。 Power BIデスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc10-powerbi-final.png)
+   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1078,7 +1078,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc10-tableau-final.png)
+      ![Tableau Desktop 複数Dimensionランク フィルター ](assets/uc10-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1094,7 +1094,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
 このユースケースでは、例えば **[!UICONTROL 並べ替え]** パネルを使用します。
 
-![Customer Journey Analytics並べ替えパネル ](assets/cja-sort.png)
+![Customer Journey Analytics並べ替えパネル ](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1128,7 +1128,7 @@ Customer Journey Analyticsに **[!UICONTROL タイトル]**`Hunting Products` �
 
    Power BIデスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc11-powerbi-final.png)
+   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 BI 拡張機能を使用してPower BIデスクトップで実行されるクエリに、`sort` ステートメントが含まれていません。 `sort` ステートメントがないということは、並べ替えがクライアントサイドで実行されることを意味します。
 
@@ -1234,7 +1234,7 @@ limit 1000001
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 並べ替え ](assets/uc11-tableau-final.png)
+      ![Tableau Desktop 並べ替え ](assets/uc11-tableau-final.png){zoomable="yes"}
 
 BI 拡張機能を使用して Tableau Desktop で実行されるクエリには、`sort` ステートメントが含まれていません。 この `sort` ステートメントがないということは、並べ替えがクライアント側で実行されることを意味します。
 
@@ -1260,7 +1260,7 @@ GROUP BY 1
 
 このユースケースの例では **[!UICONTROL 制限]** パネルは次のようになります。
 
-![Customer Journey Analytics制限パネル ](assets/cja-limit.png)
+![Customer Journey Analytics制限パネル ](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1296,7 +1296,7 @@ GROUP BY 1
 
    Power BIデスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc12-powerbi-final.png)
+   ![ 日付範囲名を使用してフィルター処理するPower BI デスクトップ ](assets/uc12-powerbi-final.png){zoomable="yes"}
 
 BI 拡張機能を使用してPower BIデスクトップが実行するクエリに、`limit` ステートメントが含まれていますが、想定されているものではありません。 上位 5 件の発生件数の制限は、明示的な製品名の結果を使用して、Power BIデスクトップによって適用されます。
 
@@ -1407,7 +1407,7 @@ limit 1000001
 
          Tableau Desktop は次のようになります。
 
-         ![Tableau Desktop の制限 ](assets/uc12-tableau-final.png)
+         ![Tableau Desktop の制限 ](assets/uc12-tableau-final.png){zoomable="yes"}
 
 上に示すように、Tableau Desktop が実行するこのクエリは、製品名に対して上位 5 件の発生フィルターを定義すると失敗します。
 
@@ -1489,12 +1489,12 @@ Power BIデスクトップは、[ データ分析式（DAX） ](https://learn.mi
 1. データ・ペインで product_name を選択します。
 1. ツールバーの「新しい列」を選択します。
 1. 式エディターで、`product_name_lower = LOWER('public.cc_data_view[product_name])` のように `product_name_lower` という名前の新しい列を定義します。
-   ![Power BIデスクトップの下位変換 ](assets/uc14-powerbi-transformation.png)
+   ![Power BIデスクトップの下位変換 ](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. データ・ペインでは、product_name 列ではなく、新しい product_name_lower 列を選択します。
 1. テーブルビジュアライゼーションの ![ 詳細 ](/help/assets/icons/More.svg) から「テーブルとしてレポート」を選択します。
 
    Power BIデスクトップは次のようになります。
-   ![Power BI デスクトップ変換の最終版 ](assets/uc14-powerbi-final.png)
+   ![Power BI デスクトップ変換の最終版 ](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 カスタム変換の結果、SQL クエリが更新されます。 以下の SQL の例で、`lower` 関数の使用を参照してください。
 
@@ -1562,7 +1562,7 @@ Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current
 
 1. メインメニューから **[!UICONTROL 分析]**/**[!UICONTROL 計算フィールドを作成]** を選択します。
    1. 関数 `LOWER([Product Name])` を使用して **[!UICONTROL 小文字の製品名]** を定義します。
-      ![Tableau 計算フィールド ](assets/uc14-tableau-calculated-field.png)
+      ![Tableau 計算フィールド ](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
    1. **[!UICONTROL OK]** を選択します。
 1. **[!UICONTROL データ]** シートを選択します。
    1. **[!UICONTROL テーブル]** から **[!UICONTROL 小文字の製品名]** をドラッグし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
@@ -1571,7 +1571,7 @@ Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current
 
 Tableau Desktop は次のようになります。
 
-![ 変換後の Tableau Desktop](assets/uc14-tableau-final.png)
+![ 変換後の Tableau Desktop](assets/uc14-tableau-final.png){zoomable="yes"}
 
 カスタム変換の結果、SQL クエリが更新されます。 以下の SQL の例で、`LOWER` 関数の使用を参照してください。
 
@@ -1642,11 +1642,11 @@ Customer Journey Analyticsには多数のビジュアライゼーションがあ
 
 Power BIでは、特定のビジュアライゼーションの詳細を調べる [ ドリルモード ](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) をサポートしています。 次の例では、製品カテゴリの購入売上高を分析します。 製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL ドリルダウン]**」を選択できます。
 
-![Power BIドリルダウン ](assets/uc15-powerbi-drilldown.png)
+![Power BIドリルダウン ](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 ドリルダウンすると、選択した製品カテゴリ内の製品の購入売上高でビジュアライゼーションが更新されます。
 
-![Power BI ドリルアップ ](assets/uc15-powerbi-drillup.png)
+![Power BI ドリルアップ ](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 ドリルダウンすると、`WHERE` 句を使用する次の SQL クエリが生成されます。
 
@@ -1725,11 +1725,11 @@ limit 1001
 
 Tableau は [ ドリルモード ](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) から [ 階層 ](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm) までサポートしています。 次の例では、テーブル内の「製品名」フィールドを選択して「製品カテゴリ」の上にドラッグすると、階層を作成できます。 次に、製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL + ドリルダウン]**」を選択します。
 
-![Tableau のドリルダウン ](assets/uc15-tableau-drilldown.png)
+![Tableau のドリルダウン ](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
 ドリルダウンすると、選択した製品カテゴリ内の製品の購入売上高でビジュアライゼーションが更新されます。
 
-![Tableau のドリルアップ ](assets/uc15-tableau-drillup.png)
+![Tableau のドリルアップ ](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
 ドリルダウンの結果、GROUP BY 句を使用する次の SQL 問合せが生成されます。
 
@@ -1745,11 +1745,11 @@ GROUP BY 1,
 
 クエリでは、選択した製品カテゴリに結果が制限 **されません**。選択した製品カテゴリが表示されるのはビジュアライゼーションのみです。
 
-![Tableau のドリルアップ ](assets/uc15-tableau-drillup2.png)
+![Tableau のドリルアップ ](assets/uc15-tableau-drillup2.png){zoomable="yes"}
 
 または、あるビジュアルが別のビジュアルでの選択の結果であるドリルダウン・ダッシュボードを作成することもできます。 次の例では、**[!UICONTROL 製品カテゴリ]** ビジュアライゼーションをフィルターとして使用して、**[!UICONTROL 製品名]** テーブルを更新しています。 このビジュアライゼーションフィルターはクライアント専用であり、追加の SQL クエリは生成されません。
 
-![Tableau ビジュアライゼーションフィルター ](assets/uc15-tableau-visualizationfilter.png)
+![Tableau ビジュアライゼーションフィルター ](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
 >[!ENDTABS]
