@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 4%
+source-wordcount: '1637'
+ht-degree: 3%
 
 ---
 
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. パネル用に選択したデータビューが、Alphaテスト用に AI アシスタントが使用できるようになったデータビューであることを確認します（不明な場合はAlphaの Slack チャンネルでお問い合わせください）
 
-5. 右上の AI Assistant チャットアイコンをクリックします。
+5. 右上の AI Assistant チャットアイコンをクリックします。 注：右上にチャットアイコンが表示されない場合は、管理者に問い合わせて、[ これらの手順 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) に従ってAdmin Consoleで「AI Assistant:Product Knowledge」および「AI Assistant:Data Analysis」を有効にしてもらってください。
 
    ![AI アシスタント アイコン ](/help/assets/ai-asst-icon.png)
 
