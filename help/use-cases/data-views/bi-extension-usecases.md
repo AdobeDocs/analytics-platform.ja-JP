@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
+source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '9736'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 1%
 
 * **接続**
    * [データビューの接続とリスト表示](#connect-and-validate)
-   * [FLATTEN か NOT か](#to-flatten-or-not)
 
 * **報告及び分析**
    * [毎日のトレンド](#daily-trend)
@@ -120,6 +119,25 @@ ht-degree: 1%
       ![Destkop サーバーのPower BIが読み込まれました ](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
+### FLATTEN か NOT か
+
+Power BIデスクトップでは、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+
+| FLATTEN パラメータ | 例 | サポート | 備考 |
+|---|---|:---:|---|
+| なし | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **推奨されるオプションは次のとおりです。** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI デスクトップに次のエラーが表示されます：**[!UICONTROL 指定された資格情報では認証できませんでした。 もう一度やり直してください。]** |
+
+### 詳細情報
+
+* [前提条件](/help/data-views/bi-extension.md#prerequisites)
+* [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [ クエリサービスへのPower BIの接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+
+
+
+
 >[!TAB Tableau Desktop]
 
 1. Experience Platformクエリサービス UI から必要な資格情報とパラメーターにアクセスします。
@@ -155,56 +173,23 @@ ht-degree: 1%
    1. メインウィンドウに、**[!UICONTROL cc_data_view]** データビューの詳細が表示されます。
       ![Tableau Connected](assets/tableau-validation.png){zoomable="yes"}
 
->[!ENDTABS]
+### FLATTEN か NOT か
 
-+++
-
-## FLATTEN か NOT か
-
-このユースケースでは、BI 拡張機能を使用してCustomer Journey Analyticsに接続する際に、データベースに追加の `FLATTEN` パラメーターを使用する必要があるかどうかを確認します。
-
-+++ Customer Journey Analytics
-
-Customer Journey Analyticsでは、Experience Platformインターフェイスでの接続方法に関する情報を提供します。
-
-1. Experience Platform用サンドボックスに移動します。
-1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
-1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
-1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
-
-![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
-
-
-+++
-
-+++ BI ツール
-
->[!PREREQUISITES]
->
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。 適切な接続に必要な明示的な `FLATTEN` パラメーターオプションについては、BI ツールの節を参照してください。
->
-
->[!BEGINTABS]
-
->[!TAB Power BI デスクトップ ]
-
-Power BIデスクトップでは、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。
+Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
 | なし | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI デスクトップに次のエラーが表示されます：**[!UICONTROL 指定された資格情報では認証できませんでした。 もう一度やり直してください。]** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **推奨されるオプション**。 `%3FFLATTEN` は URL エンコードされたバージョンの `?FLATTEN` であることに注意してください。 |
 
->[!TAB Tableau Desktop]
+### 詳細情報
 
-Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。
+* [前提条件](/help/data-views/bi-extension.md#prerequisites)
+* [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Tableau Desktop をクエリサービスに接続します ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau)。
 
-| FLATTEN パラメータ | 例 | サポート | 備考 |
-|---|---|:---:|---|
-| なし | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+
 
 >[!ENDTABS]
 
@@ -277,7 +262,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL Day]** を選択し、値が **[!UICONTROL DAY （Daterangeday）]** に更新されます。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -289,7 +274,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 1. **[!UICONTROL データ]** シートが選択されていることを確認します。 **[!UICONTROL データ]** 表示で、次の操作を行います。
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. ツールバーの **[!UICONTROL 行と列を入れ替える]** を選択します。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -347,7 +332,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -359,7 +344,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 1. **[!UICONTROL データ]** シートが選択されていることを確認します。 **[!UICONTROL データ]** 表示で、次の操作を行います。
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. **[!UICONTROL HOUR （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -448,7 +433,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されるようにします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
       * 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -460,7 +445,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 1. **[!UICONTROL データ]** シートが選択されていることを確認します。 データビューで、
    1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
    1. **[!UICONTROL MONTH （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
-   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL IUICONTROL フィット]** ドロップダウンメニューから **[ビュー全体]** に変更します。
+   1. **[!UICONTROL 標準]** を、ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL ビュー全体]** に変更します。
 
       Tableau Desktop は次のようになります。
 
@@ -823,6 +808,15 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
    ![Power BI デスクトップの個別カウントの複数テーブル ](assets/uc7-powerbi-final.png){zoomable="yes"}
 
+または、Power BIから個別にカウント機能を使用できます。
+
+1. **[!UICONTROL product_name]** ディメンションを選択します。
+1. **[!UICONTROL Count （Distinct）]** 関数を **[!UICONTROL Columns]** の **[!UICONTROL product_name]** ディメンションに適用します。
+
+   ![ 個別のPower BI数 ](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+
+
+
 >[!TAB Tableau Desktop]
 
 1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
@@ -861,6 +855,14 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
    ![Tableau Desktop ダッシュボード 1](assets/uc7-tableau-final.png){zoomable="yes"}
+
+
+または、Tableau Desktop の個別カウント機能を使用することもできます。
+
+1. **[!UICONTROL Cm の製品名の個別カウント]** ではなく **[!UICONTROL 製品名]** を使用します。
+1. **[!UICONTROL Marks]** の **[!UICONTROL 製品名]** に **[!UICONTROL Measure]** > **[!UICONTROL Count （Distinct）]** を適用します。
+
+   ![ 個別のPower BI数 ](assets/uc7-tableau-alternative.png){zoomable="yes"}
 
 >[!ENDTABS]
 
