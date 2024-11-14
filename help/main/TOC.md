@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 261396f3a63e3356f100b860324b2e8bb9702800
+source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 94%
+source-wordcount: '1062'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 94%
       + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+      + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [タグに Web SDK 拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [タグに XDM データ収集ロジックを追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
@@ -64,6 +64,9 @@ ht-degree: 94%
       + [データビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [アップグレードショートカット：Web SDK に移行](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+      + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+      + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)

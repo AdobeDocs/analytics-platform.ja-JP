@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
+source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 52%
+source-wordcount: '1072'
+ht-degree: 48%
 
 ---
 
-# Customer Journey Analyticsで使用する XDM スキーマを作成する
+# Customer Journey AnalyticsWeb SDK 実装で使用する XDM スキーマを作成します
 
 >[!NOTE]
 > 
@@ -39,7 +40,7 @@ Adobeでは、Customer Journey Analyticsへのアップグレード時にエク�
 
 1. **[!UICONTROL スキーマを作成]** を選択します。
 
-1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
+1. スキーマ作成ウィザードの **[!UICONTROL クラスを選択]** 手順で、次の操作を行います。
 
    1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
 
@@ -60,11 +61,11 @@ Adobeでは、Customer Journey Analyticsへのアップグレード時にエク�
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
-1. スキーマの [!UICONTROL **構造**] タブで、次の操作を行います。
+1. スキーマに含めるフィールドを含むすべてのフィールドグループを追加します。
+
+   フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
    1. 「**[!UICONTROL フィールドグループ]**」セクションで、「**[!UICONTROL +追加]**」を選択します。
-
-      フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
       ![フィールドグループを追加](assets/add-field-group-button.png)
 
@@ -78,7 +79,19 @@ Adobeでは、Customer Journey Analyticsへのアップグレード時にエク�
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
+   1. （オプション）含める追加のフィールドグループを選択します。
+
    1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
+
+1. （オプション）スキーマに含めるカスタムフィールドがある場合は、カスタムフィールドグループを作成し、そのフィールドグループにカスタムフィールドを追加します。
+
+   1. 「**[!UICONTROL フィールドグループ]**」セクションで、「**[!UICONTROL +追加]**」を選択します。
+
+      ![フィールドグループを追加](assets/add-field-group-button.png)
+
+   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
+
+   1. 表示名と説明（オプション）を指定し、「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
 1. [!UICONTROL 構造]パネルで、スキーマ名の隣にある「**[!UICONTROL +]**」をクリックします。
 
@@ -147,4 +160,3 @@ Adobeでは、Customer Journey Analyticsへのアップグレード時にエク�
    フィールドグループと個々のフィールドをスキーマに追加、またはスキーマから削除する方法について詳しくは、[UI でのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja)を参照してください。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-

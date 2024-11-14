@@ -1,0 +1,49 @@
+---
+title: Web SDK 拡張機能用のローダータグの実装
+description: Web SDK 拡張機能のローダータグを実装する方法を説明します
+role: Admin
+solution: Customer Journey Analytics
+feature: Basics
+hide: true
+hidefromtoc: true
+exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
+source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 34%
+
+---
+
+# Web SDK 拡張機能用のローダータグの実装
+
+>[!NOTE]
+> 
+>このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
+>
+>このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+
+追跡する web サイトにタグをインストールする必要があります。これは、web サイトのテンプレートのヘッダータグにコードを配置することを意味します。
+
+次のプロセスでは、タグを参照するコードの取得方法を説明します。 補足情報については、Experience Platformドキュメントの [ タグとイベント転送の実装ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) を参照してください。
+
+タグを参照するコードを取得するには：
+
+1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
+
+1. 環境のリストから、正しいインストール（ボックス）ボタンを選択します。
+
+   [!UICONTROL Web インストール手順]ダイアログで、次のように読み込むスクリプトコードの横にある「コピー」ボタンを選択します。
+
+   ```
+   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>>
+   ```
+
+   ![環境](assets/environment.png)
+
+1. 「**[!UICONTROL 閉じる]**」を選択します。
+
+   開発環境用のコードの代わりに、Adobe Experience Platform Web SDK をデプロイするプロセスの場所に基づいて、別の環境（ステージング、実稼動）を選択することもできます。
+
+   詳しくは、[環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ja)を参照してください。
+
+1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。

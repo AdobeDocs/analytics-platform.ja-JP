@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
+source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -92,7 +92,11 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
 1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
 
-   詳しくは、[ ソースコネクタを使用したデータの取り込みと使用 ](/help/data-ingestion/sources.md#use-a-source-connector) の [ ソースコネクタの使用 ](/help/data-ingestion/sources.md) を参照してください。
+   1. [Analytics ソースコネクタのスキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。
+
+   1. [Analytics ソースコネクタの作成とフィールドのマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   1. [ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
 1. Customer Journey Analytics実装用のExperience Platform Web SDK の実装方法を説明するセクションを展開し、関連する手順を実行します。
 
@@ -106,7 +110,7 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    +++タグ
 
-   1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)。
+   1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
 
    1. [ タグプロパティを作成して、Adobe Experience Platform Web SDK 拡張機能を追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
 
