@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +73,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB BI 拡張機能*]
 
-BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツールを使用して、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。
+BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツールを使用して、Customer Journey AnalyticsユーザーがAnalysis Workspace プロジェクトで使用するのと同じデータビューに基づいてレポートとダッシュボードを作成できるようになりました。 [ ユースケース ](/help/use-cases/data-views/bi-extension-usecases.md) について説明します。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

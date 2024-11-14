@@ -5,10 +5,10 @@ exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '217'
+ht-degree: 90%
 
 ---
 
@@ -21,4 +21,4 @@ Customer Journey Analytics では、次の主な使用例を実現できます�
 * **データアナリスト向けデータサイエンスの機能を活用**：Customer Journey Analytics を使用すると、専門家でなくてもデータサイエンスを活用して、深いインサイトと分析を解き放つことができます。
 * **アドホックレポートを使用してデータセットの視覚化や操作を行う**：ワークスペースでは、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
 * **Web 以外の表示データ**：ワークスペースは、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。カスタムスキーマでは、データと定義を完全に制御できます。
-* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、ワークスペースへの読み込みを行います。Adobe Experience Platform は、Experience Platform クエリサービスを通じて、クエリ、抽出、変換およびツールの読み込みを行います。
+* **データ操作をより詳細に制御**：アップロードしたデータの変更、新しいデータセットの作成、ワークスペースへの読み込みを行います。Adobe Experience Platformは、Experience Platformクエリサービスと BI 拡張機能を通じて、ツールのクエリ、抽出、変換および読み込みを行います。

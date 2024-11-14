@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI 拡張機能
-description: データまたは Tableau を使用して、Customer Journey AnalyticsBI 拡張機能を使用してPower BIビューにアクセスする方法について説明します。
+description: Power BIまたは Tableau Desktop を使用して、Customer Journey AnalyticsBI 拡張機能を使用してデータビューにアクセスする方法について説明します。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '3091'
-ht-degree: 62%
+source-wordcount: '3116'
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 62%
 
 {{select-package}}
 
-[!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](./data-views.md)への SQL アクセスが可能になります。データエンジニアやアナリストは、Power BI、Tableau またはその他のビジネスインテリジェンスツールやビジュアライゼーションツール（以降、BI ツールと呼びます）に精通している可能性があります。Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
+[!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](./data-views.md)への SQL アクセスが可能になります。データエンジニアやアナリストは、Power BI、Tableau Desktop、その他のビジネスインテリジェンスおよびビジュアライゼーションツール（BI ツールとも呼ばれます）に精通している可能性があります。 Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
 Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)は、Experience Platform のデータレイクで使用可能なデータへの SQL インターフェイスです。[!DNL Customer Journey Analytics BI extension] を有効にすると、[!DNL Query Service] の機能が拡張され、Customer Journey Analytics データビューを [!DNL Query Service] セッションのテーブルまたはビューとして表示できるようになります。その結果、[!DNL Query Service] を PostgresSQL インターフェイスとして使用するビジネスインテリジェンスツールは、この拡張機能のメリットをシームレスに受けられます。
 
@@ -100,7 +100,7 @@ Adobe Experience Platformで：
 
 ### BI ツール
 
-現在、[!DNL Customer Journey Analytics BI extension] はPower BIと Tableau に対してのみサポートおよびテストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
+現在、[!DNL Customer Journey Analytics BI extension] はPower BIと Tableau Desktop でのみサポートされ、テストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
 
 +++ Power BI
 
@@ -145,7 +145,7 @@ Adobe Experience Platformで：
 
 +++
 
-+++Tableau
++++Tableau Desktop
 
 1. Adobe Experience Platformで PostgresSQL 資格情報の詳細を調べます。
 
@@ -155,9 +155,9 @@ Adobe Experience Platformで：
 
    1. ` cja` **[!UICONTROL ** データベース **]** を選択します。
 
-   1. Tableau で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
+   1. ![ コピー ](assets/Smock_Copy_18_N.svg) を使用して、Tableau Desktop で必要に応じて各 Postgres 資格情報パラメーター（[!UICONTROL  ホスト ]、[!UICONTROL  ポート ]、[!UICONTROL  データベース ]、[!UICONTROL  ユーザー名 ] など）をコピーします。
 
-1. Tableau の場合：
+1. Tableau Desktop の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
@@ -192,6 +192,8 @@ Adobe Experience Platformで：
 +++
 
 使用可能な様々なツールの概要と詳細情報については、[クエリサービスへのクライアントの接続](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview)を参照してください。
+
+Customer Journey Analytics BI 拡張機能を使用して様々なユースケースを達成する方法については、[ ユースケース ](/help/use-cases/data-views/bi-extension-usecases.md) を参照してください。
 
 ## 機能
 
