@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 6820adc70412f6abeae81bf8389227999d13f0d5
+source-git-commit: 1cf7ae6635f51f0ca06cbc235032525e3d9b3fec
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 98%
+source-wordcount: '2320'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 98%
 | **セキュリティとプライバシーに関するオプションの機能強化** - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する[追加のセキュリティオプション](/help/privacy/cmk.md)を提供します。Adobe Analytics は HIPAA に対応していません。 |
 | **実験分析** | Customer Journey Analytics では、接続の一部として定義された任意のデータソースから、[任意の実験の上昇率と信頼性を評価](/help/analysis-workspace/c-panels/experimentation.md)できます。この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
 | **予測** | [予測](/help/analysis-workspace/c-forecast/forecasting.md)は、Customer Journey Analytics に既に存在する履歴データに基づく時系列関連データの統計的予測を含む AI／ML 機能です。予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
-| **ガイド付き分析** | [ ガイド付き分析 ](/help/guided-analysis/overview.md) を使用すると、Customer Journey Analyticsのクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 |
+| **ガイド付き分析** | [ガイド付き分析](/help/guided-analysis/overview.md)を使用すると、Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 |
 | **インテリジェントキャプション** | インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーションに関する自動生成された分析情報が提供されます。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、CJA を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の CJA レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。これは、生データからレポート／指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
@@ -78,6 +78,7 @@ ht-degree: 98%
 
 | 機能 | メモ |
 | --- | --- |
+| **Advertising Cloud** | [Adobe Customer Journey Analyticsで使用する AMO ID および EF ID の履歴データを収集 ](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) できます。 |
 | **アラート** | [Customer Journey Analytics でアラートを使用](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 <p>ただし、Customer Journey Analytics におけるデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。</p> |
 | **Analytics for Target（A4T）** | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | **オーディエンスの公開** | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
@@ -127,9 +128,6 @@ ht-degree: 98%
 | 機能 | メモ |
 | --- | --- |
 | **Activity Map** | まだサポートの予定はありません。 |
-| **Advertising Cloud** | まだサポートの予定はありません。 |
-
-{style="table-layout:auto"}
 
 ## サポートされません {#never}
 
