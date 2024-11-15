@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 92%
       + [接続の作成](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [データビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [アップグレードショートカット：Web SDK に移行](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [アップグレードショートカット：Web SDK への移行](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
       + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
@@ -146,7 +146,7 @@ ht-degree: 92%
       + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
-   + [テンプレートの使用](../analysis-workspace/templates/use-templates.md)
+   + [テンプレートを使用](../analysis-workspace/templates/use-templates.md)
    + ビジュアライゼーション {#visualizations}
       + [概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [データソースの管理](../analysis-workspace/visualizations/t-sync-visualization.md)

@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
 source-wordcount: '4216'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | --- | --- |
 | **2024年11月** | |
 | BI 拡張機能のユースケース | Power BIデスクトップや Tableau Desktop などの BI ツール向けの ](/help/use-cases/data-views/bi-extension-usecases.md)BI 拡張機能のユースケース [ に関するドキュメント。 |
-| ステッチとプライバシーリクエスト | プライバシーリクエストの結果である [ 未ステッチプロセスの今後の変更 ](/help/stitching/faq.md#frequently-asked-questions) に関する通知を追加しました。 |
+| ステッチとプライバシーリクエスト | プライバシーリクエストの結果である[未ステッチプロセスの今後の変更](/help/stitching/faq.md#frequently-asked-questions)に関する通知を追加しました。 |
 | **2024年10月** | |
-| 共有デバイス | 共有デバイスのコンテキスト、ステッチを使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法を説明する [ ユースケース記事 ](/help/use-cases/stitching/shared-devices.md) を追加しました。 |
+| 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスからのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明する[ユースケース記事](/help/use-cases/stitching/shared-devices.md)を追加しました。 |
 | Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
 | Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、フィルター、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
 | ガイド付き分析 | Analysis Workspace 内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
@@ -118,7 +118,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年6月** | |
 | クロスチャネル分析とステッチ | ステッチを有効にするための変更と、ステッチを使用してクロスチャネル分析を向上させる方法をさらに明確にするための変更が今後見込まれるので、クロスチャネル分析機能に関連するドキュメントを編集して、[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)を Customer Journey Analytics の機能およびユースケースとして、また、[ステッチ](../stitching/overview.md)をそれを実現するための重要な機能として取り上げています。 |
 | Power BI および Tableau から Customer Journey Analytics データビューへのアクセス | Customer Journey Analytics BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。[詳細情報](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer データビュー | Customer Journey Analytics 管理者は、「AJO データビュー (サンドボックス名)」というタイトルの、Customer Journey Analytics のいくつかの追加データビューにアクセスできます。[詳細情報](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration)。 |
+| Adobe Journey Optimizer データビュー | Customer Journey Analytics 管理者は、「AJO データビュー (サンドボックス名)」というタイトルの、Customer Journey Analytics のいくつかの追加データビューにアクセスできます。[詳細情報](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration)。 |
 | 通貨換算 | [通貨換算](../data-views/component-settings/format.md#currency)のサポートに関するドキュメントを更新しました。 |
 | 計算指標の更新 | 現在の Customer Journey Analytics 機能と整合させるために、計算指標のドキュメントで次の更新を行いました。 <ul><li>Customer Journey Analytics で利用可能な[デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)のリストを更新しました</li><li>様々な計算指標に関する記事のスクリーンショットと手順を更新しました </li></ul> |
 | **2023年5月** | |
