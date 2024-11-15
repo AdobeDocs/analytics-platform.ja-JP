@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8e51e97b0616a5406c5c3a29431fde87a551ab9f
+exl-id: f96565a2-f556-4b45-b88e-984613614d2e
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 3%
+source-wordcount: '636'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +22,23 @@ ht-degree: 3%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
+## Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込む方法を理解する
+
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
 
-以下の手順では、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせて調整された合理化されたスキーマが必要なので、[Platform へのアップグレード時に XDM スキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) する必要があると想定しています。
+ここでは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせて調整される合理化されたスキーマが必要なので、](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)Platform へのアップグレード時に XDM スキーマを作成 [ できることを前提としています。
 
-XDM スキーマを作成したら、履歴データに使用するAdobe Analytics ソースコネクタを作成する必要があります。
+Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
-ソースコネクタの作成に関する、より包括的な一般的なガイドラインについては、[UI でのAdobe Analytics ソース接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
+1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. 以下に説明するように、Analytics ソースコネクタを作成してフィールドをマッピングします。
+
+1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Analytics ソースコネクタの作成とフィールドのマッピング
+
+XDM スキーマを作成したら、履歴データに使用するAdobe Analytics ソースコネクタを作成する必要があります。 （ソースコネクタの作成に関する、より包括的な一般的なガイドラインについては、[UI でのAdobe Analytics ソース接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
 
 履歴データに使用するAdobe Analytics ソースコネクタを作成するには：
 
@@ -78,7 +89,3 @@ XDM スキーマを作成したら、履歴データに使用するAdobe Analyti
    Analytics ソースコネクタを使用して履歴データをCustomer Journey AnalyticsWeb SDK 実装に取り込む場合は、自動作成されたデータセットを、Web SDK 実装用に作成した接続に追加する必要があります。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-
-
-
-

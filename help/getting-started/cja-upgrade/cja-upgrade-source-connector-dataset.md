@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d30a1a7cbe441529f5b094215c0ea1131c1f67fc
+exl-id: 424485a3-a076-4656-83b6-733f16cc2326
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 38%
+source-wordcount: '818'
+ht-degree: 26%
 
 ---
 
@@ -20,6 +21,30 @@ ht-degree: 38%
 >このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+
+>[!NOTE]
+>
+>このページの情報は、次のことを前提としています。
+>
+>* Adobe AnalyticsからCustomer Journey Analyticsにアップグレードしています。
+>* 今後のCustomer Journey Analyticsデータ収集に Web SDK を使用する予定です。
+>* Analytics ソースコネクタを使用して、Adobe履歴の分析データをCustomer Journey Analyticsに取り込む場合。
+
+## Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込む方法を理解する
+
+Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
+
+ここでは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせて調整される合理化されたスキーマが必要なので、](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)Platform へのアップグレード時に XDM スキーマを作成 [ できることを前提としています。
+
+Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
+
+1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. 以下に説明するように、Analytics ソースコネクタデータセットを接続に追加します。
+
+## 接続への Analytics ソースコネクタデータセットの追加
 
 [ 履歴データ用の Analytics ソースコネクタを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) すると、Analytics データ用のデータセットが自動的に作成されます。
 
@@ -68,7 +93,7 @@ ht-degree: 38%
 
 1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して、バックフィルに含める期間を定義します。
 
-   Analytics ソースコネクタは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。
+   Analytics ソースコネクタでは、実稼動用サンドボックスに（サイズに関係なく） 13 か月分のデータを読み込みます。 非実稼動用サンドボックスでのバックフィルは 3 か月です。
 
    >[!IMPORTANT]
    >
@@ -83,4 +108,3 @@ ht-degree: 38%
 1. **[!UICONTROL データセットを追加]** を選択してから、「**[!UICONTROL 保存]** を選択して接続を保存します。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-
