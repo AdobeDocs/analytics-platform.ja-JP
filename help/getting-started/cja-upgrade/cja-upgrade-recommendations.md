@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1545'
 ht-degree: 7%
 
 ---
@@ -90,14 +90,6 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
 1. （オプション）パーソナライゼーションをAdobe Journey Optimizerと統合する場合は、Adobe Journey Optimizerで使用するCustomer Journey Analytics内のパーソナライゼーションオブジェクトを使用します。
 
-1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
-
-   1. [Analytics ソースコネクタのスキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。
-
-   1. [Analytics ソースコネクタの作成とフィールドのマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
-
-   1. [ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
-
 1. Customer Journey Analytics実装用のExperience Platform Web SDK の実装方法を説明するセクションを展開し、関連する手順を実行します。
 
    +++手動実装（JS ファイル）
@@ -135,6 +127,20 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 1. [Customer Journey Analyticsでデータビューを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)。
 
 1. [ データがCustomer Journey Analyticsに送られていることを検証します ](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
+
+1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
+
+   >[!NOTE]
+   >
+   >Analytics ソースコネクタをまだ作成していない場合は、次の手順を使用します。
+   >
+   >既に Analytics ソースコネクタをCustomer Journey Analyticsで使用している場合は、[Analytics ソースコネクタから Web SDK に移動してCustomer Journey Analyticsする ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) の手順に従ってください。
+
+   1. [Analytics ソースコネクタ用の XDM スキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
+
+   1. [Analytics ソースコネクタの作成とフィールドのマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   1. [ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
 1. [ プロジェクトとコンポーネントを移行する ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
 

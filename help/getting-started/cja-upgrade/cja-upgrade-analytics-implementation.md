@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 18%
+source-wordcount: '590'
+ht-degree: 19%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 18%
 
 >[!NOTE]
 > 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+>[Customer Journey Analytics アップグレード チェックリスト ](https://gigazelle.github.io/cja-ttv/) の質問に答える際は、このページの情報を使用してください。
 
-Customer Journey Analyticsにアップグレードするには様々な方法がありますが、Adobe Analyticsの実装の種類ごとに、すべてのアップグレードパスを使用できるわけではありません。 ただし、組織でのAdobe Analyticsの実装方法に関係なく、推奨されるアップグレードパスを利用できます。
+Adobe Analyticsの実装方法は様々です。 Customer Journey Analyticsにアップグレードする場合、すべてのAdobe Analytics実装ですべてのアップグレードパスを使用できるわけではありません。 ただし、組織でのAdobe Analyticsの実装方法に関係なく、推奨されるアップグレードパスを利用できます。
 
-現在のAdobe Analyticsの実装と、組織で使用可能なアップグレードパスについて理解するには、以下の情報を使用します。
+以下の情報を使用して、現在のAdobe Analyticsの実装と、組織で使用可能なアップグレードパスを確認します。
 
 具体的なアドバイス、ガイダンス、サポートが必要な場合は、アドビ担当者にお問い合わせください。
 

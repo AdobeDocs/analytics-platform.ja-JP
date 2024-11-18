@@ -1,33 +1,49 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analyticsするスキーマを選択
+description: Customer Journey Analyticsするスキーマを選択する際に使用できるオプションと、それぞれの長所と短所について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 59%
+source-wordcount: '387'
+ht-degree: 54%
 
 ---
 
-# Adobe Analytics スキーマをCustomer Journey Analyticsで使用
+# Customer Journey Analyticsするスキーマを選択
 
 >[!NOTE]
 >
 >このドキュメントは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードアンケート ](https://gigazelle.github.io/cja-ttv/) の一部として使用してください。
 
-<!-- this page exists as the "Learn more" link in the info icon for the option "I am comfortable using my Adobe Analytics schema as a basis" -->
+<!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Customer Journey Analyticsで既存のAdobe Analytics スキーマを使用するオプションは、Adobe Analytics実装がAdobe Experience Platform Web SDK で設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
+Customer Journey Analyticsにアップグレードする場合、Adobeでは、他の Platform サービスを使用し始める際に、組織のニーズに合わせて新しい XDM スキーマを作成することをお勧めします。 または、既存のAdobe Analytics スキーマを使用することもできます。
 
-Adobe Analytics スキーマをCustomer Journey Analyticsで使用する場合の次のメリットとデメリットを検討します。
+それぞれの利点と欠点を考慮してください。
+
+## 組織に合わせた XDM スキーマの作成（推奨）
+
+Adobeは、Customer Journey Analyticsへのアップグレード時に新しい XDM スキーマを作成することをお勧めします。
+
+| メリット | デメリット |
+|----------|---------|
+| <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Platform へのデータ送信を開始する前に必要な、時間がかかるプロセスです。</li></ul> |
+
+## 既存のAdobe Analytics スキーマを使用する
+
+既存のAdobe Analytics スキーマをCustomer Journey Analyticsで使用するオプションは、Adobe Analytics実装がAdobe Experience Platform Web SDK で設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | メリット | デメリット |
 |----------|---------|
 | <p>Adobe Analytics スキーマを使用すると、次のようなメリットがあります。</p><ul><li>アップグレードが容易<p>既にAdobe Experience Platform Web SDK を使用して Adobe Analytics にデータを送信している場合は、データストリームに追加サービスを追加して、Adobe Experience Platform にデータを送信できます（これは Customer Journey Analytics 設定で使用できます）。</p></li></ul> | <p>Adobe Analytics スキーマを使用すると、次のようなデメリットがあります。</p><ul><li>Adobe Analytics スキーマを使用しても、他の Platform アプリケーションでの使用方法が制限されることはありませんが、スキーマは他の方法よりも複雑になります。これは、Adobe Analytics スキーマには、組織で使用される可能性が低い Adobe Analytics に固有のオブジェクトが多数含まれているからです。<p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要があります。</p></li></ul> |
+
+
+
 
 <!-- Not sure about any of this: 
 
