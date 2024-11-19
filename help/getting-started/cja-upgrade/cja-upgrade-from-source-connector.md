@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
+source-git-commit: a1feb2e8458169ed208da2c42fab62d25e1015bb
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -33,17 +34,17 @@ Analytics ソースコネクタから、Analytics ソースコネクタと Web S
 
 1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) の記事の詳細な推奨アップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) の説明に従って、Web SDK 実装を作成 [ ます。
 
-   Web SDK 実装が設定されたら、次の手順を続行します。
+   Web SDK 実装を設定したら、次の手順を続行します。
 
 1. Web SDK 実装でAdobe Analytics スキーマと XDM スキーマのどちらを使用するかを決定します。
 
    詳しくは、[Customer Journey Analyticsするスキーマの選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
 
-1. （条件付き）Adobe Analytics スキーマを使用する予定の場合は、Analytics ソースコネクタによって自動的に作成されたデータセットをCustomer Journey Analytics接続に追加します。
+1. （条件付き） Web SDK 実装でAdobe Analytics スキーマを使用する予定がある場合は、Analytics ソースコネクタによって自動的に作成されたデータセットをCustomer Journey Analytics接続に追加します。
 
    詳しくは、[ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md) を参照してください。
 
-1. （条件付き） XDM スキーマを作成する予定の場合：
+1. （条件付き） Web SDK 実装で使用する XDM スキーマを作成する予定の場合：
 
    1. [Analytics ソースコネクタ用の XDM スキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 
@@ -54,11 +55,3 @@ Analytics ソースコネクタから、Analytics ソースコネクタと Web S
    1. 元の Analytics ソースコネクタを削除します。<!-- need to add steps somewhere about how to do this -->
 
    1. [ 新しい Analytics ソースコネクタを作成し、フィールドをマッピングします ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
-
-
-
-
-
-
-
-
