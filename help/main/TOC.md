@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: a5425eccff643cd45fd630172b0113e646b2a9cc
 workflow-type: tm+mt
 source-wordcount: '1081'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -53,8 +53,8 @@ ht-degree: 92%
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [タグに Web SDK 拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [タグに XDM データ収集ロジックを追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+      + [タグへの Web SDK 拡張機能の追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [タグへの XDM データ収集ロジックの追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [スキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [既存のスキーマの使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
