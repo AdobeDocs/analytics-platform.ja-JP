@@ -6,9 +6,9 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ ht-degree: 70%
 
 ## 必要な権限
 
-Customer Journey Analytics接続を作成するには、次の権限が必要です。 権限について詳しくは、[Adobe Admin Consoleおよび ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)2}Adobe Experience Platformの権限 ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home) のドキュメントを参照してください。[
+Customer Journey Analytics 接続を作成するには、次の権限が必要です。権限について詳しくは、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) および [Adobe Experience Platform 権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)のドキュメントを参照してください。
 
-### Adobe Admin Console内：
+### Adobe Admin Console 内：
 
 * Customer Journey Analytics：製品管理者
-* Adobe Experience Platform:*AEP-Default-All-Users* という名前の製品プロファイルに追加されました
+* Adobe Experience Platform：*AEP-Default-All-Users* という名前の製品プロファイルに追加されました
 
-### Adobe Experience Platform内の権限：
+### Adobe Experience Platform 権限内：
 
 * データモデリング：ビュースキーマ、スキーマの管理
 * データ管理：ビューデータセット，データセットの管理
 * データ取り込み：ソースの管理
-* Identity Management:Id 名前空間の表示
-* サンドボックス：関連するCustomer Journey Analytics接続で使用されるサンドボックス
+* Identity Management：ID 名前空間の表示
+* サンドボックス：関連する Customer Journey Analytics 接続で使用されるサンドボックス
 
 >[!IMPORTANT]
 >
-> 複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
+>複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。

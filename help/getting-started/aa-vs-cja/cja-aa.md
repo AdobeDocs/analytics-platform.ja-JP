@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2320'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 99%
 
 ## 完全にサポートされる Adobe Analytics 機能／コンポーネント {#full-support}
 
-| Adobe Analytics 機能 | CJA サポートに関する注意事項 |
+| Adobe Analytics 機能 | CJA サポートに関するメモ |
 | --- | --- |
 | **異常値検出** | フルサポート |
 | **Attribution IQ** | フルサポート |
@@ -78,7 +78,7 @@ ht-degree: 99%
 
 | 機能 | メモ |
 | --- | --- |
-| **Advertising Cloud** | [Customer Journey Analyticsで使用する AMO ID および EF ID の履歴データを収集 ](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) できます。 |
+| **Advertising Cloud** | [Customer Journey Analytics で使用する AMO ID と EF ID の履歴データを収集](https://experienceleague.adobe.com/ja/docs/advertising/integrations/analytics/planning/rvars-to-evars)できます。 |
 | **アラート** | [Customer Journey Analytics でアラートを使用](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 <p>ただし、Customer Journey Analytics におけるデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。</p> |
 | **Analytics for Target（A4T）** | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | **オーディエンスの公開** | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |

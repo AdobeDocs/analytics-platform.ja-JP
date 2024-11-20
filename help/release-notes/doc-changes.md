@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4216'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2024年11月** | |
-| BI 拡張機能のユースケース | Power BIデスクトップや Tableau Desktop などの BI ツール向けの ](/help/use-cases/data-views/bi-extension-usecases.md)BI 拡張機能のユースケース [ に関するドキュメント。 |
+| BI 拡張機能のユースケース | Power BI デスクトップや Tableau Desktop などの BI ツールのいくつかの [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)のドキュメント。 |
 | ステッチとプライバシーリクエスト | プライバシーリクエストの結果である[未ステッチプロセスの今後の変更](/help/stitching/faq.md#frequently-asked-questions)に関する通知を追加しました。 |
 | **2024年10月** | |
 | 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスからのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明する[ユースケース記事](/help/use-cases/stitching/shared-devices.md)を追加しました。 |
