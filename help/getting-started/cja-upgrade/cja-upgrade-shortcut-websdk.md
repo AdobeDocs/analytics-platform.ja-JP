@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8ef60cc3918b79919674e3c0478a2c1b1bd21d27
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 46%
+ht-degree: 56%
 
 ---
 
-# アップグレードショートカット：Web SDK を使用するようにAppMeasurementまたは Analytics 拡張機能の実装を移行します {#shortcut-migrate-websdk}
+# アップグレードショートカット：Web SDK を使用するために AppMeasurement または Analytics 拡張機能の実装を移行します {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -23,8 +24,8 @@ ht-degree: 46%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="Web SDK を使用するように Analytics 実装を移行する"
->abstract="XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてAppMeasurement形式ですべての変数を送信できます。 このショートカットを使用すると、AppMeasurementロジックを引き続き使用して Platform にデータを送信できます。"
+>title="Web SDK を使用するための Analytics の実装の移行"
+>abstract="XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてすべての変数を AppMeasurement 形式で送信できます。このショートカットを使用すると、AppMeasurement ロジックを引き続き使用して、データを Platform に送信できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,4 +56,3 @@ Web SDK を使用するように Analytics またはAppMeasurement拡張機能�
 1. （オプション）時間があれば、組織の XDM スキーマを作成します。
 
 1. （条件付き）XDM スキーマを作成した場合は、データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。
-
