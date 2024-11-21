@@ -4,10 +4,10 @@ description: 使用状況の推定方法を 2 つ、管理方法を 1 つ示し�
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
+source-git-commit: 191d1b7a4b851e93a44487dad4794709cbbd0374
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 69%
+source-wordcount: '856'
+ht-degree: 68%
 
 ---
 
@@ -29,10 +29,6 @@ Customer Journey Analyticsの使用状況を管理するには：
 ## 接続サイズの予測 {#estimate-size}
 
 [!UICONTROL Customer Journey Analytics] にある現在のイベントデータの行数を把握する必要が出ることがあります。組織のイベントデータレコード（データ行）の使用状況を正確に把握するには、**組織が作成した各接続に対して**、次の手順を実行します。
-
->[!NOTE]
->
->これを、毎月第一金曜日（アドビがその日に最新の使用状況レポートを実行するため）に実行します。
 
 1. [!UICONTROL Customer Journey Analytics] で、「**[!UICONTROL 接続]**」タブをクリックします。
 
