@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '537'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,11 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. 以下に説明するように、Analytics ソースコネクタ用の XDM スキーマを作成します。
 
-1. [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Analytics ソースコネクタがない場合は [Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   または
+
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
 
 1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -40,11 +44,11 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 Experience PlatformWeb SDK 実装がCustomer Journey Analyticsで使用できるように、[ 新しい XDM スキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) しておく必要があります。 このスキーマには、データを収集するフィールドのフィールドグループを含める必要があります。
 
-Web SDK 実装用に既に作成した XDM スキーマに加えて、2 つ目の XDM スキーマを作成し、Analytics ソースコネクタで使用して履歴データをCustomer Journey Analyticsに取り込む必要があります。
+次に、Web SDK スキーマから同じフィールドグループを使用し、Analytics ソースコネクタで使用できる新しいスキーマに追加する必要があります。
 
-この 2 番目のスキーマには、次を含める必要があります。
+Analytics ソースコネクタのこのスキーマには、次を含める必要があります。
 
-* Web SDK 実装用に作成したスキーマに含まれるすべてのフィールドグループ（カスタムフィールドグループを含む）。 （デフォルトのフィールドグループに含まれないカスタムフィールドは、カスタムフィールドグループの一部として Web SDK スキーマに追加する必要があります）。
+* Web SDK 実装用に作成したカスタムスキーマに含まれるすべてのフィールドグループ（作成したカスタムフィールドグループを含む）。 （デフォルトのフィールドグループに含まれないカスタムフィールドは、カスタムフィールドグループの一部として Web SDK スキーマに追加する必要があります）。
 
 * 「Adobe Analytics ExperienceEvent テンプレート」フィールドグループ
 

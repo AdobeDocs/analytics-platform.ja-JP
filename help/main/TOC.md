@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a5425eccff643cd45fd630172b0113e646b2a9cc
+source-git-commit: 5af92d5eaaa671bfbe9d29ab2a336eab78a067cc
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 98%
+source-wordcount: '1085'
+ht-degree: 97%
 
 ---
 
@@ -70,6 +70,7 @@ ht-degree: 98%
       + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Analytics ソースコネクタのみを使用](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
       + [Analytics ソースコネクタから Web SDK に移動します](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+      + [AppMeasurementデータ収集を無効にする](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)

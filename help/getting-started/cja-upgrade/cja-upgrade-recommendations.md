@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1595'
 ht-degree: 7%
 
 ---
@@ -22,19 +22,17 @@ Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場
 
 ## 大部分の組織で推奨されるアップグレード手順
 
->[!NOTE]
->
->この節で説明するアップグレード手順は、Adobe AnalyticsからCustomer Journey Analyticsに正常にアップグレードするために組織で使用できる推奨アップグレード手順です。
->
->ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。 その場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を使用して、組織固有の状況に合わせたアップグレード手順を動的に生成します。
-
 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードには、Experience Platform Web SDK の新しい実装を使用することをお勧めします。これは、Customer Journey Analyticsに推奨されるデータ収集方法です。 Adobeでは Web SDK と組み合わせて、Analytics ソースコネクタをCustomer Journey Analyticsへの移行に役立てることもお勧めします。 Analytics ソースコネクタを使用して、Adobe Analyticsの履歴データを保持し、横に並べてデータを比較します。
 
-Customer Journey Analyticsへの完全な移行が完了したら、Analytics ソースコネクタをオフにして、Experience Platform Web SDK のみを使用できます。
+Experience Platform Web SDK を使用する履歴データが十分にあり、Customer Journey Analyticsへの移行が完了したら、Analytics ソースコネクタをオフにして、Web SDK のみを使用できます。
+
+>[!NOTE]
+>
+>ここで説明しているアップグレード手順は、お客様の組織では実用的ではありません。[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を利用して、組織の固有の状況に合わせてカスタマイズしたアップグレード手順を動的に生成してください。
 
 ### 推奨アップグレードプロセスの概要
 
-1. **Experience PlatformWeb SDK の実装**
+1. **Experience PlatformWeb SDK を実装（継続的なデータ収集用）**
 
    Customer Journey Analytics用のデータを収集する方法として最適なのは、Experience PlatformWeb SDK の新しい実装です。 Customer Journey Analyticsを最大限に活用するための最適な基盤を提供します。これは、Customer Journey Analyticsを実装するための最もパフォーマンスが高く、簡単で、将来性の高い方法であるためです。
 
@@ -44,7 +42,7 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    * Adobe Analytics の用語（prop、eVar、イベントなど）に依存しない
 
-1. **Adobe Analytics ソースコネクタの設定**
+1. **Adobe Analytics ソースコネクタの設定（履歴データを引き継ぐための）**
 
    Adobeでは、Customer Journey AnalyticsでExperience Platform Web SDK を使用する方法へスムーズに移行できるように、Adobe Analytics ソースコネクタを使用することをお勧めします。 これにより、履歴データを保持し、既存のAdobe Analytics実装のデータを、新しいExperience Platform Web SDK 実装のデータと並べてCustomer Journey Analyticsで表示できます。
 
@@ -128,21 +126,9 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
 1. [ データがCustomer Journey Analyticsに送られていることを検証します ](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
 
-1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
-
-   >[!NOTE]
-   >
-   >Analytics ソースコネクタをまだ作成していない場合は、次の手順を使用します。
-   >
-   >既に Analytics ソースコネクタをCustomer Journey Analyticsで使用している場合は、[Analytics ソースコネクタから Web SDK に移動してCustomer Journey Analyticsする ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) の手順に従ってください。
-
-   1. [Analytics ソースコネクタ用の XDM スキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
-
-   1. [Analytics ソースコネクタの作成とフィールドのマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
-
-   1. [ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
-
 1. [ プロジェクトとコンポーネントを移行する ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
+
+   <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
 
 1. （任意）Adobe Analyticsでマーケティングチャネルを使用する場合は、[Customer Journey Analyticsでマーケティングチャネル派生フィールドを作成 ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) できます。
 
@@ -152,9 +138,25 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    派生フィールドで [ マーケティングチャネル機能テンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) を使用して、マーケティングチャネルの派生フィールドをすばやく作成します。
 
-1. 古い実装のデータと新しい実装のデータを比較し、違いとその理由を理解していることを確認します。
+1. 古い実装のAdobe Analyticsのデータと新しい実装のCustomer Journey Analyticsのデータを比較し、違いとその理由を理解していることを確認します。<!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. [Customer Journey Analyticsでの機能サポート ](/help/getting-started/aa-vs-cja/cja-aa.md) について説明します。 Adobe Analyticsのほとんどの機能はCustomer Journey Analyticsでサポートされており、その他の多くの機能はCustomer Journey Analyticsで利用できます。
+1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
+
+   >[!NOTE]
+   >
+   >Analytics ソースコネクタをまだ作成していない場合は、次の手順を使用します。
+   >
+   >既に Analytics ソースコネクタをCustomer Journey Analyticsで使用している場合は、[Analytics ソースコネクタから Web SDK に移動してCustomer Journey Analyticsする ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) の手順に従ってください。
+
+   1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+   1. Analytics ソースコネクタがない場合は [Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+      または
+
+      既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
+
+   1. [ 接続への Analytics ソースコネクタデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
 1. ユーザーのオンボーディングを計画します。
 
@@ -164,9 +166,11 @@ Customer Journey Analyticsへの完全な移行が完了したら、Analytics �
 
    Adobe Analytics と Customer Journey Analytics の主な違いについて詳しくは、[Adobe Analytics ユーザー向けユーザーガイド](/help/getting-started/aa-to-cja-user.md)を参照してください。
 
-1. AppMeasurementデータ収集を無効にします。
+1. [Customer Journey Analyticsでの機能サポート ](/help/getting-started/aa-vs-cja/cja-aa.md) について説明します。 Adobe Analyticsのほとんどの機能はCustomer Journey Analyticsでサポートされており、その他の多くの機能はCustomer Journey Analyticsで利用できます。
 
-1. Analytics ソースコネクタを無効にします。
+1. Web SDK の実装が完了し、収集するデータに慣れたら、[AppMeasurementデータ収集を無効にします ](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)。
+
+1. すべての Analytics ソースコネクタのデータがデータ保持期間を終了したら、Analytics ソースコネクタを無効にします。
 
    Experience Platform Web SDK の実装では、Analytics ソースコネクタは、Adobe Analyticsの履歴データに対してのみ必要であり、元の実装のデータを新しい実装のデータと比較するために必要です。
 

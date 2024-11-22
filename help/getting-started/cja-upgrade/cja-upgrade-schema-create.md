@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1073'
 ht-degree: 48%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 48%
 >
 >XDM スキーマの作成を開始する前に、データチームや組織全体のその他の関係者と協力して、Customer Journey Analyticsおよび使用するその他のAdobe Experience Platform アプリケーションに対する組織の理想的なスキーマデザインを特定します。 詳しくは、[Customer Journey Analyticsで使用するスキーマの構築 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) を参照してください。
 
-Adobeでは、Customer Journey Analyticsへのアップグレード時にエクスペリエンスデータモデル（XDM）スキーマを作成することをお勧めします。 XDM スキーマを使用すると、組織のニーズや使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマを提供できます。 スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。
+Adobeは、Customer Journey Analyticsへのアップグレード時に、カスタムエクスペリエンスデータモデル（XDM）スキーマを作成することをお勧めします。 カスタムスキーマを使用すると、組織のニーズや使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが可能になります。 スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。
 
 ## スキーマの作成
 
 定義する XDM スキーマは、Adobe Experience Platformに収集するデータのモデルを表します。
 
-スキーマを作成するには：
+カスタムスキーマを作成するには：
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

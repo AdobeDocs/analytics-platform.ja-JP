@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '847'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Analytics ソースコネクタを使用する場合、一部の標準検索デ�
 
 Experience Platform Web SDK を使用する場合にCustomer Journey Analyticsでデータを分類するには、分類するデータを含む各ディメンションに対して XDM スキーマとルックアップデータセットを作成する必要があります。
 
-## XDM スキーマの作成
+## ルックアップデータセットで使用する XDM スキーマを作成する
 
 Customer Journey Analyticsで分類するデータを含むディメンションごとに、新しい XDM スキーマを作成します。 後の手順でルックアップデータセットを作成すると、このスキーマが参照されます。
 
@@ -100,7 +100,7 @@ Customer Journey Analyticsのスキーマで使用するルックアップデー
 
 ## ルックアップデータセットをCustomer Journey Analyticsの接続に追加します
 
-[XDM スキーマを作成 ](#create-an-xdm-schema-for-lookup-datasets)、[ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsでルックアップデータセットを接続に追加する必要があります。
+[XDM スキーマを作成 ](#create-an-xdm-schema-for-lookup-datasets) して [ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsでルックアップデータセットを接続に追加する必要があります。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
@@ -120,9 +120,9 @@ Customer Journey Analyticsの接続にルックアップデータセットを追
 
 1. **[!UICONTROL データセットを追加]** を選択してから、「**[!UICONTROL 保存]** を選択します。
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. **[!UICONTROL キー]** フィールドと **[!UICONTROL 一致するキー]** フィールドを使用して、ルックアップデータセット内のフィールドとイベントまたはサマリーデータセット内のフィールドの間の相関関係を作成します。
 
 1. すべてのルックアップデータセットがCustomer Journey Analyticsで接続に追加されたら、[ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-
-1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
 

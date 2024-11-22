@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 27%
+source-wordcount: '889'
+ht-degree: 28%
 
 ---
 
@@ -32,7 +32,11 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Analytics ソースコネクタがない場合は [Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   または
+
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
 
 1. 以下に説明するように、Analytics ソースコネクタデータセットを接続に追加します。
 
@@ -83,20 +87,26 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して、バックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して、Customer Journey Analyticsへの接続のバックフィルに含める期間を定義します。
 
-   Analytics ソースコネクタでは、実稼動用サンドボックスに（サイズに関係なく） 13 か月分のデータを読み込みます。 非実稼動用サンドボックスでのバックフィルは 3 か月です。
+   バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
-   >[!IMPORTANT]
-   >
-   >バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 終了日は、Web SDK 実装でデータの収集を最初に開始した日付にする必要があります。
-   >
-   >または、Web SDK 実装でデータの収集を初めて開始した日付の直後の日付を選択し、セグメントを使用して重複するデータを除外することもできます。
+   * Web SDK 実装でデータの収集を最初に開始した日付と同じ終了日を選択します。
+
+   * Web SDK 実装でデータの収集を初めて開始した日付のすぐ後の終了日を選択し、データ表示セグメントを使用して重複するデータを除外します。
+
+   * データの重複が大きくなる終了日を選択してから、データビューセグメントを使用して重複するデータを除外します。
+
+     **メモ：** このオプションを使用すると、接続の行が増えるため、コストが増加します。
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. 「**[!UICONTROL キューのバックフィル]**」を選択します。
 
 1. **[!UICONTROL データセットを追加]** を選択してから、「**[!UICONTROL 保存]** を選択して接続を保存します。
+
+1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics内のデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
+
+   これは、Web SDK 実装の設定時にまだ実行していない場合にのみ必要です。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。

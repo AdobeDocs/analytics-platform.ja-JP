@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '689'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,11 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. 以下に説明するように、Analytics ソースコネクタを作成してフィールドをマッピングします。
+1. Analytics ソースコネクタがまだない場合は、以下に説明するように、Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします。
+
+   または
+
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
 
 1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -69,6 +73,8 @@ XDM スキーマを作成したら、履歴データに使用するAdobe Analyti
    ![ スキーマフィールドのマッピング ](assets/schema-mapping.png)
 
    1. 「**[!UICONTROL Source フィールド]**」で、「Adobe Analytics ExperienceEvent テンプレート」フィールドグループからAdobe Analytics フィールドを選択します。 次に、**[!UICONTROL ターゲットフィールド]** で、マッピングする XDM フィールドを選択します。
+
+      AppMeasurementと XDM のアーキテクチャには固有の違いがあるので、すべてのAdobe Analytics フィールドに XDM の対応するフィールドがあるわけではありません。
 
    1. Adobe Analyticsでのデータ収集に使用するAdobe Analytics ExperienceEvent テンプレートフィールドグループのフィールドごとに、このプロセスを繰り返します。
 
