@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15295'
+source-wordcount: '15373'
 ht-degree: 58%
 
 ---
@@ -33,9 +33,17 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 1. Analysis Workspace で、「[!UICONTROL **ワークスペース**]」タブを選択します。
 
-1. [!UICONTROL **テンプレート**] を選択します。
+   ![ 「テンプレート」タブ ](assets/view-prebuilt-templates.png)
 
-   ![「レポート」タブ](assets/view-prebuilt-reports.png)
+1. [[!UICONTROL **テンプレート**]] セクションで、次のいずれかのタブを選択します。
+
+   * **[!UICONTROL Adobeテンプレート]**:Adobeが提供するすべてのテンプレートを表示します。
+
+   * **[!UICONTROL _login_company_name _templates]**：組織で使用するために作成されたすべての会社テンプレートを表示します。
+
+     会社テンプレートは管理者のみが作成できます。
+
+1. 列表示 ![ 列表示アイコン）またはカード表示 ![ カード表示アイコン ](assets/column-view-icon.png) アイコンを選択して、列表示またはカード表示でテンプレートを表示す ](assets/card-view-icon.png) かどうかを選択します。
 
 1. 検索フィールドに検索するテンプレートの名前の入力を開始し、テンプレートのリストから選択します。
 
@@ -61,19 +69,19 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 1. 選択したテンプレートに基づいてレポートを作成するためのテンプレートを選択します。
 
-## テンプレートのカスタマイズと保存 {#use-reports}
+## テンプレートに基づくプロジェクトの作成 {#use-reports}
 
-テンプレートは、ニーズに正確に適合しない場合もありますが、必要に応じて近づける可能性があります。 その場合は、テンプレートを出発点として使用し、特定の目的に合わせてカスタマイズできます。
+テンプレートは、ニーズに正確に適合しない場合もありますが、必要に応じて近づける可能性があります。 その場合は、プロジェクトの出発点としてテンプレートを使用し、特定の目的に最適にカスタマイズできます。
 
 変更を加えた後にテンプレートから移動すると、変更を保存または破棄するように求められます。 テンプレートに対する変更を保存すると、テンプレートが新しいプロジェクトとして保存されます。
 
-テンプレートをカスタマイズして保存するには：
+テンプレートをカスタマイズしてプロジェクトとして保存するには：
 
 1. Adobe Analytics で、「[!UICONTROL **ワークスペース**]」タブを選択します。
 
 1. 「[!UICONTROL **テンプレート**]」タブを選択します。
 
-1. 表示するテンプレートを選択します。 例えば、「[!UICONTROL **一番人気**]」で、[!UICONTROL **ページ**]&#x200B;レポートを選択します。
+1. 表示するテンプレートを選択します。 例えば、「[!UICONTROL **一番人気**] で、「[!UICONTROL **ページ**] テンプレートを選択します。
 
    Analysis Workspaceに表示されるページテンプレートには、2 つの [ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) （[ 棒グラフ ](/help/analysis-workspace/visualizations/bar.md) および [ 概要番号 ](/help/analysis-workspace/visualizations/summary-number-change.md)）と [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) が表示されます。 使用される指標は発生件数です。
 
@@ -82,7 +90,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 1. 次のいずれかの操作を行います。
 
    * テンプレートを表示します。
-   * 上部のセグメントドロップゾーンに、1 つ以上のセグメントをドラッグする。例えば、[!UICONTROL **モバイル顧客**]&#x200B;セグメントをドラッグし、結果を表示します。
+   * 1 つ以上のフィルターを上部のフィルタードロップゾーンにドラッグします。 例えば、フィルター [!UICONTROL **モバイル顧客**] をドラッグし、結果を表示します。
    * 右上のカレンダーに移動して、日付範囲を変更する。
    * ディメンション分類を追加し、他の指標をドラッグし、一般的にニーズに合わせてテンプレートをカスタマイズします。
 
