@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 54%
+source-wordcount: '389'
+ht-degree: 49%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 54%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Customer Journey Analyticsにアップグレードする場合、Adobeでは、他の Platform サービスを使用し始める際に、組織のニーズに合わせて新しい XDM スキーマを作成することをお勧めします。 または、既存のAdobe Analytics スキーマを使用することもできます。
+Customer Journey Analyticsにアップグレードする場合、Adobeでは、他の Platform サービスを使用し始める際に組織のニーズに合わせてカスタム Experience Data Model （XDM）スキーマを作成することをお勧めします。 または、既存のAdobe Analytics スキーマを使用することもできます。
 
 それぞれの利点と欠点を考慮してください。
 
-## 組織に合わせた XDM スキーマの作成（推奨）
+## 組織に合わせたカスタムスキーマの作成（推奨）
 
-Adobeは、Customer Journey Analyticsへのアップグレード時に新しい XDM スキーマを作成することをお勧めします。
+Adobeは、Customer Journey Analyticsにアップグレードする際に、カスタムスキーマを作成することをお勧めします。
 
 | メリット | デメリット |
 |----------|---------|
-| <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Platform へのデータ送信を開始する前に必要な、時間がかかるプロセスです。</li></ul> |
+| <ul><p>独自のカスタムスキーマに更新する利点は次のとおりです。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自のカスタムスキーマに更新するデメリットには、次のものがあります。</p><ul><li>スキーマの更新は、Platform へのデータ送信を開始する前に必要な、時間がかかるプロセスです。</li></ul> |
 
 ## 既存のAdobe Analytics スキーマを使用する
 

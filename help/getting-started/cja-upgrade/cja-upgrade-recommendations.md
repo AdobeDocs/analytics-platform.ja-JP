@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1594'
 ht-degree: 7%
 
 ---
@@ -140,7 +140,7 @@ Experience Platform Web SDK を使用する履歴データが十分にあり、C
 
 1. 古い実装のAdobe Analyticsのデータと新しい実装のCustomer Journey Analyticsのデータを比較し、違いとその理由を理解していることを確認します。<!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. （任意） Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
+1. Analytics ソースコネクタを使用して、Adobe Analyticsから履歴データを取り込みます。
 
    >[!NOTE]
    >

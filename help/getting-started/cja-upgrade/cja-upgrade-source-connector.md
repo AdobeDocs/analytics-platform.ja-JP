@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -26,23 +26,23 @@ ht-degree: 8%
 
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
 
-ここでは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせて調整される合理化されたスキーマが必要なので、](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)Platform へのアップグレード時に XDM スキーマを作成 [ できることを前提としています。
+ここでは、[Platform Web SDK の実装で使用するカスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが必要なためです。
 
 Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
-1. [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Analytics ソースコネクタのカスタムスキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Analytics ソースコネクタがまだない場合は、以下に説明するように、Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします。
+1. Analytics ソースコネクタがまだない場合は、以下に説明するように、Analytics ソースコネクタを作成し、フィールドをカスタム Web SDK スキーマにマッピングします。
 
    または
 
-   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドをカスタム Web SDK スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
 
 1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## Analytics ソースコネクタの作成とフィールドのマッピング
 
-XDM スキーマを作成したら、履歴データに使用するAdobe Analytics ソースコネクタを作成する必要があります。 （ソースコネクタの作成に関する、より包括的な一般的なガイドラインについては、[UI でのAdobe Analytics ソース接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
+カスタムスキーマを作成したら、履歴データに使用するAdobe Analytics ソースコネクタを作成する必要があります。 （ソースコネクタの作成に関する、より包括的な一般的なガイドラインについては、[UI でのAdobe Analytics ソース接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を参照してください。
 
 履歴データに使用するAdobe Analytics ソースコネクタを作成するには：
 
@@ -60,11 +60,11 @@ XDM スキーマを作成したら、履歴データに使用するAdobe Analyti
 
 1. 画面の右上隅にある「**[!UICONTROL 次へ]**」を選択します。
 
-1. **[!UICONTROL カスタムスキーマ]** を選択し、[Adobe Analytics フィールドグループを含む XDM スキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md) で作成したスキーマを選択します。<!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
+1. **[!UICONTROL カスタムスキーマ]** を選択し、[Adobe Analytics フィールドグループを含むカスタムスキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md) で作成したスキーマを選択します。<!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
 
    <!-- add screenshot -->
 
-1. 各Adobe Analytics ディメンションをカスタム XDM スキーマディメンションにマッピングします。
+1. 各Adobe Analytics ディメンションをカスタムスキーマディメンションにマッピングします。
 
    1. 「**[!UICONTROL 標準フィールドをマッピング]**」セクションで、「**[!UICONTROL カスタム]**」タブを選択します。
 
@@ -72,7 +72,7 @@ XDM スキーマを作成したら、履歴データに使用するAdobe Analyti
 
    ![ スキーマフィールドのマッピング ](assets/schema-mapping.png)
 
-   1. 「**[!UICONTROL Source フィールド]**」で、「Adobe Analytics ExperienceEvent テンプレート」フィールドグループからAdobe Analytics フィールドを選択します。 次に、**[!UICONTROL ターゲットフィールド]** で、マッピングする XDM フィールドを選択します。
+   1. 「**[!UICONTROL Source フィールド]**」で、「Adobe Analytics ExperienceEvent テンプレート」フィールドグループからAdobe Analytics フィールドを選択します。 次に、**[!UICONTROL ターゲットフィールド]** で、マッピングする XDM スキーマのカスタムフィールドを選択します。
 
       AppMeasurementと XDM のアーキテクチャには固有の違いがあるので、すべてのAdobe Analytics フィールドに XDM の対応するフィールドがあるわけではありません。
 

@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 5%
@@ -26,11 +26,11 @@ Adobe Analyticsのデータの分類と同様に、ルックアップデータ�
 
 Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[ データセットへの標準検索の追加 ](/help/connections/standard-lookups.md) を参照してください。
 
-Experience Platform Web SDK を使用する場合にCustomer Journey Analyticsでデータを分類するには、分類するデータを含む各ディメンションに対して XDM スキーマとルックアップデータセットを作成する必要があります。
+Experience Platform Web SDK を使用する場合にCustomer Journey Analyticsでデータを分類するには、分類するデータを含む各ディメンションに対して、カスタムスキーマとルックアップデータセットを作成する必要があります。
 
-## ルックアップデータセットで使用する XDM スキーマを作成する
+## ルックアップデータセットで使用するカスタムスキーマの作成
 
-Customer Journey Analyticsで分類するデータを含むディメンションごとに、新しい XDM スキーマを作成します。 後の手順でルックアップデータセットを作成すると、このスキーマが参照されます。
+分類するデータをCustomer Journey Analyticsに含むカスタムスキーマをディメンションごとに新規作成します。 後の手順でルックアップデータセットを作成すると、このスキーマが参照されます。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
@@ -58,7 +58,7 @@ Customer Journey Analyticsのルックアップデータセットで使用する
 
 ## ルックアップデータセットの作成
 
-[XDM スキーマを作成 ](#create-an-xdm-schema-for-lookup-datasets) してルックアップデータセットに使用するには、ルックアップデータセットを作成してスキーマにマッピングする必要があります。
+[ カスタムスキーマを作成 ](#create-a-custom-schema-to-use-with-the-lookup-dataset) してルックアップデータセットに使用するには、ルックアップデータセットを作成してスキーマにマッピングする必要があります。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
@@ -100,7 +100,7 @@ Customer Journey Analyticsのスキーマで使用するルックアップデー
 
 ## ルックアップデータセットをCustomer Journey Analyticsの接続に追加します
 
-[XDM スキーマを作成 ](#create-an-xdm-schema-for-lookup-datasets) して [ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsでルックアップデータセットを接続に追加する必要があります。
+[ カスタムスキーマを作成 ](#create-a-custom-schema-to-use-with-the-lookup-dataset) し、[ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsでルックアップデータセットを接続に追加する必要があります。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
