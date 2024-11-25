@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [推奨プロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [データセット取り込みの監視](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + [データ取り込みの監視](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
@@ -68,8 +68,8 @@ ht-degree: 97%
       + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Analytics ソースコネクタのみを使用](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-      + [Analytics ソースコネクタから Web SDK に移動します](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+      + [Analytics ソースコネクタのみの使用](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
+      + [Analytics ソースコネクタから Web SDK への移動](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
       + [AppMeasurementデータ収集を無効にする](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
