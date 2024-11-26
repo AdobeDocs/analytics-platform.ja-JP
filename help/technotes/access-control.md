@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 22%
+source-wordcount: '1549'
+ht-degree: 21%
 
 ---
 
@@ -65,6 +65,16 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
   | [!UICONTROL Identity Management] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
 
   Experience Platformの権限について詳しくは、[ 製品プロファイルの権限の管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) を参照してください。
+
+
+* Adobe Journey Optimizerが CJA と統合されていて、AJO Connections が存在する場合、接続にアクセスするにはジャーニー権限も追加する必要があります。
+
+  | カテゴリ | 権限 | 説明 |
+  |---|---|---|
+  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーイベント、データソース、アクションの表示 ] | ジャーニーイベント、ジャーニーカスタムアクション、ジャーニーデータソースへの読み取り専用アクセス。 |
+  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーイベント、データソース、アクションの管理 ] | イベント、ソース、アクションの読み取り、作成、編集、削除。 |
+  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーの表示 ] | ジャーニーへの読み取り専用アクセス。 |
+  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーの管理 ] | ジャーニーの読み取り、作成、編集、削除。 |
 
 * [ 宛先 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) へのデータセットの書き出し
 
