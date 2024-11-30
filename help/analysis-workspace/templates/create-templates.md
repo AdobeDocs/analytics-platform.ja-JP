@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -20,15 +21,13 @@ ht-degree: 4%
 
 ## テンプレートの作成
 
-<!-- is this only admins? -->
-
 ログイン会社のユーザーが使用できる新しいテンプレートを作成するには：
 
 1. Analysis Workspaceで、目的のステートにプロジェクトをビルドします。
 
 1. [!UICONTROL **プロジェクト**]/**[!UICONTROL テンプレートとして保存]** を選択します。
 
-   ![会社レポート](assets/company-template-save.png)
+   ![ 会社テンプレート ](assets/company-template-save.png)
 
 1. [!UICONTROL  テンプレートとして保存 ] ダイアログボックスで、次の情報を指定します。
 
@@ -45,11 +44,37 @@ ht-degree: 4%
 
 ユーザーがテンプレートに基づいてプロジェクトを作成する方法については、[ テンプレートの使用 [ の「テンプレートに基づいてプロジェクトを作成する ](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) を参照してください ](/help/analysis-workspace/templates/use-templates.md)。
 
-## 会社テンプレートの管理
+## テンプレートの編集または削除
 
-管理者は、会社テンプレートを削除、名前変更、タグ付けおよび承認できます。
+管理者は、会社テンプレートを編集または削除できます。
 
-会社テンプレートを表示および管理するには：
+1. Analysis Workspaceで、「[!UICONTROL **Workspace**]」タブを選択し、「**[!UICONTROL _login_company_name _templates]**」を選択します。
+
+1. 列表示 ![ 列表示アイコン ](assets/column-view-icon.png) でテンプレートを表示している場合：
+
+   1. 編集または削除するテンプレートに移動し、テンプレート名の横にある情報アイコンを選択します。
+
+      ![ 会社テンプレート情報 ](assets/company-template-info.png)
+
+   1. **[!UICONTROL プレビュー]** を選択します。
+
+   1. その他アイコンを選択し、「**[!UICONTROL 編集]** または **[!UICONTROL 削除]** を選択します。
+
+      ![ テンプレートを編集または削除 ](assets/company-template-edit-delete.png)
+
+1. カード表示 ![ カード表示アイコン ](assets/card-view-icon.png) でテンプレートを表示している場合：
+
+   1. 編集または削除するテンプレートを見つけます。
+
+      ![ 会社テンプレートカード表示 ](assets/company-template-cards.png)
+
+   1. その他アイコンを選択し、「**[!UICONTROL 編集]** または **[!UICONTROL 削除]** を選択します。
+
+      ![ 会社テンプレートカードの編集または削除 ](assets/company-template-card-edit-delete.png)
+
+## テンプレートの名前変更、タグ付け、承認
+
+管理者は、会社テンプレートの名前変更、タグ付けおよび承認を行うことができます。
 
 1. Analysis Workspaceで、「[!UICONTROL **Workspace**]」タブを選択し、左パネルで **[!UICONTROL 「プロジェクト」タブ]** を選択します。
 
@@ -61,24 +86,20 @@ ht-degree: 4%
 
    会社テンプレートは、テンプレート名の前に付く ![ テンプレートアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) によって識別できます。
 
-   <!-- Update screenshot -->
-
-   ![ 会社テンプレートフィルターを表示 ](assets/company-reports-filter.png)
-
-1. テンプレートリストで、1 つ以上の会社テンプレートを選択します。
+   ![ 会社テンプレートフィルターを表示 ](assets/company-templates-filter.png)
 
 1. テンプレートの横にある **...** 省略記号アイコンをクリックして、使用可能なオプションを表示します。
 
-   <!-- Update screenshot -->
+   ![ 会社テンプレートのアクション ](assets/company-templates-actions.png)
 
-   ![ 会社テンプレートのアクション ](assets/company-reports-actions.png)
+1. **[!UICONTROL 名前を変更]**、**[!UICONTROL タグ]** または **[!UICONTROL 承認]** を選択します。
 
-1. 「**[!UICONTROL 削除]**」、「**[!UICONTROL 名前を変更]**」、「**[!UICONTROL タグ]**」または「**[!UICONTROL 承認]**）を選択します。
+   [ テンプレートの編集または削除 ](#edit-or-delete-templates) で説明されているように、テンプレートを削除したり、テンプレートを削除したりすることもできます。
 
 1. （任意）通常の表示に戻すには、フィルターパネルで「**[!UICONTROL 会社テンプレート]**」の選択を解除します。
 
 ## 会社テンプレートへのアクセス
 
-Adobeから提供されるテンプレートと同様に、組織内のユーザーが作成したテンプレートにアクセスできます。
+Adobeが提供するテンプレートと同様に、組織内のユーザーは、管理者が作成するテンプレートにアクセスできます。
 
 会社テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 [ の「テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) を参照してください ](/help/analysis-workspace/templates/use-templates.md)。
