@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
 workflow-type: tm+mt
-source-wordcount: '15449'
+source-wordcount: '15490'
 ht-degree: 78%
 
 ---
@@ -61,7 +61,11 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
    使用可能なテンプレートのリストについては、以下の [ 使用可能なテンプレート ](#available-templates) の節を参照してください。
 
-1. （任意）データビューで使用できないコンポーネントを含むテンプレートを表示して使用します。 （デフォルトでは、テンプレートは、データビューで使用可能なコンポーネントを使用する場合にのみ表示されます）。
+1. （オプション）データビューで使用できないコンポーネントを含むテンプレートを表示できます。 （デフォルトでは、テンプレートは、データビューで使用可能なコンポーネントを使用する場合にのみ表示されます）。
+
+   >[!NOTE]
+   >
+   >   これらのテンプレートを使用する前に、管理者は、これらの不足しているコンポーネントに必要なコンテキストラベルをデータビューに追加する必要があります。 詳しくは、[ テンプレートの使用 [ の「特定のテンプレートのデータビューへの欠落しているコンポーネントの追加 ](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) を参照してください ](/help/analysis-workspace/templates/create-templates.md)。
 
    1. フィルターアイコンを選択します。
 
