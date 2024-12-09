@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
+source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1262'
 ht-degree: 12%
 
 ---
 
 # B2B プロジェクトの例
 
-この記事では、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法について説明します。
+この記事では、一般的な B2B 設定のコンテキスト内で人物データに関してCustomer Journey Analyticsに適切にレポートする使用例を説明します。 このような設定は、[Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) の一部です。  このユースケースでは、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法を説明します。
 
 ## 接続
 
@@ -41,7 +41,7 @@ ht-degree: 12%
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 詳しくは、[Real-time Customer Data Platform B2B Edition のスキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) および [Real-time Customer Data Platform B2B Edition の 2 つのスキーマ間の多対 1 の関係の定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b) を参照してください。
+B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-time Customer Data Platform B2B editionのスキーマおよび [Real-time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b) を参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
 
 
 B2B データのユーザーベースの検索をサポートする接続を適切に設定するには、概要について次の図を使用し、次の手順に従います。
