@@ -5,10 +5,10 @@ title: プロジェクトの概要
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -46,14 +46,14 @@ Customer Journey Analyticsのプロジェクトにアクセスするには、**[
 ## プロジェクトリスト
 
 
-プロジェクトリスト➋には、自分が所有し、自分と共有されているすべてのプロジェクトが表示されます。 リストには次の列があります。
+プロジェクトリスト➋には、自分が所有し、自分と共有されているすべてのプロジェクトが表示されます。 リストには、次の列があります。
 
 | 列 | 説明 |
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | 1 つ以上のプロジェクトを選択すると、プロジェクトインターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[ アクション ](#actions) を参照してください。 |
-| ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | プロジェクトの ![ 星 ](/help/assets/icons/Star.svg) または ![ 星の概要 ](/help/assets/icons/StarOutline.svg) を優先するかどうかを選択します。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | プロジェクトの ![ 星 ](/help/assets/icons/Star.svg) または ![ 星の概要 ](/help/assets/icons/StarOutline.svg) を優先するかどうかを選択します。 |
 | **[!UICONTROL タイトルと説明]** | プロジェクトを編集するには、タイトルリンクを選択して、[Workspace プロジェクト ](/help/analysis-workspace/home.md) を開きます。 自分と共有されているプロジェクトは、![ 共有 ](/help/assets/icons/ShareAlt.svg) で示されます。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、プロジェクトの詳細を示すポップアップメニューが表示されます。 ![ 詳細 ](/help/assets/icons/More.svg) を選択して、アクションを含むコンテキストメニューを開きます。 詳しくは、[ アクション ](#actions) を参照してください。 |
-| **[!UICONTROL タイプ]** | Workspace プロジェクト、![FolderUser](/help/assets/icons/FolderUser.svg) フォルダーまたは [ モバイルスコアカード ](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home)。 |
+| **[!UICONTROL タイプ]** | Workspace プロジェクト、![FolderUser](/help/assets/icons/FolderUser.svg) フォルダーまたは [ モバイルスコアカード ](/help/mobile-app/home.md)。 |
 | **[!UICONTROL タグ]** | プロジェクトに適用されるタグ。 |
 | スケジュール済み | プロジェクトが受信者にメールで送信されるようにスケジュールされているかどうか。 オプションは ![StatusGreen](/help/assets/icons/StatusGreen.svg)**[!UICONTROL On]** または ![StatusGray](/help/assets/icons/StatusGray.svg)**[!UICONTROL Off]** です。 [ プロジェクトデータの他のユーザーへの送信 ](/help/analysis-workspace/export/t-schedule-report.md) を参照してください。 |
 | **[!UICONTROL 共有リンク （任意のユーザー）]** | Analysis Workspaceへのアクセス権を持たないユーザーであっても、プロジェクトを任意のユーザーと共有するかどうか。 オプションは ![StatusGreen](/help/assets/icons/StatusGreen.svg)**[!UICONTROL アクティブ]** または ![StatusGray](/help/assets/icons/StatusGray.svg)**[!UICONTROL 非アクティブ]** です。 詳しくは、[ プロジェクトを共有 ](/help/analysis-workspace/curate-share/share-projects.md) の「プロジェクトを任意のユーザーと共有する [ ログインは不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください。 |

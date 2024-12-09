@@ -4,10 +4,10 @@ title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 25%
+source-wordcount: '242'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 ユーザー定義のリッチテキストをWorkspace プロジェクトに追加するには、![ テキスト ](/help/assets/icons/Text.svg)**[!UICONTROL テキスト]** ビジュアライゼーションを使用するか、ビジュアライゼーションとパネルの説明を使用します。
 
-## 用途
+## 使用
 
 テキスト ビジュアライゼーションは、次のように使用できます。
 
@@ -45,7 +45,7 @@ ht-degree: 25%
 
 ## ハイパーリンクの追加 {#hyperlinks}
 
-ハイパーリンクを追加するには、テキストをハイライト表示し、メニューで ![ リンク ](/help/assets/icons/Link.svg) を選択します。 ハイパーリンクを使用すると、プロジェクトの受信者にさらに支援を提供できます。 ハイパーリンクは、外部の web サイト、ドキュメントページ、[Workspace プロジェクト、パネル、ビジュアライゼーションなどにリンク ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) きます。
+ハイパーリンクを追加するには、テキストをハイライト表示し、メニューで ![ リンク ](/help/assets/icons/Link.svg) を選択します。 ハイパーリンクを使用すると、プロジェクトの受信者にさらに支援を提供できます。 ハイパーリンクは、外部の web サイト、ドキュメントページ、[Workspace プロジェクト、パネル、ビジュアライゼーションなどにリンク ](/help/analysis-workspace/curate-share/shareable-links.md) きます。
 
 ![ リンクアイコンがハイライト表示されたテキストオプション ](assets/hyperlink.png)
 

@@ -4,9 +4,9 @@ description: フリーフォームテーブルは、Workspace のデータ分析
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '754'
 ht-degree: 26%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 26%
 <!-- markdownlint-enable MD034 -->
 
 
-Analysis Workspaceでは、![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル **[!UICONTROL ビジュアライゼーション]** インタラクティブなデータ分析の基盤となります。 [コンポーネント](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components)の組み合わせを行と列にドラッグ＆ドロップして、分析用のカスタムテーブルを作成できます。各コンポーネントがドロップされると、テーブルが直ちに更新されるので、分析したり、深く掘り下げたりすることができます。
+Analysis Workspaceでは、![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル **[!UICONTROL ビジュアライゼーション]** インタラクティブなデータ分析の基盤となります。 [コンポーネント](/help/components/overview.md)の組み合わせを行と列にドラッグ＆ドロップして、分析用のカスタムテーブルを作成できます。各コンポーネントがドロップされると、テーブルが直ちに更新されるので、分析したり、深く掘り下げたりすることができます。
 
 ![ 複数の web ページの訪問およびオンライン注文を含む、行と列のコンポーネントを表示するフリーフォームテーブル。](assets/opening-section.png)
 
@@ -54,16 +54,16 @@ Analysis Workspaceでは、![ テーブル ](/help/assets/icons/Table.svg) フ�
 ### 行
 
 * ![GraphBarVerticalAdd[ を使用すると、1 つ以上の行から ](../freeform-analysis-visualizations.md#visualize) 新しいビジュアライゼーションを作成 ](/help/assets/icons/GraphBarVerticalAdd.svg) をすばやく実行できます。
-* プロジェクトの[表示密度](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density)を調整すると、1 つの画面に表示する行を増やすことができます。
+* プロジェクトの[表示密度](/help/analysis-workspace/build-workspace-project/view-density.md)を調整すると、1 つの画面に表示する行を増やすことができます。
 * 各ディメンション行は、ページネーションの前に最大 400 行を表示できます。最初の列ヘッダーの **[!UICONTROL 行]** の横にある数字を選択して、ページにさらに行を表示します。 最初の列ヘッダーで ![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用して、別のページに移動する。
-* 行は、追加のコンポーネントで分類できます。 複数の行を一度に分類するには、複数の行を選択してから、選択した行の上に次のコンポーネントをドラッグします。 [分類](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa)について説明します。
-* 行を[フィルタリング](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort)して、表示する項目数を減らすここができます。[行設定](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings)で追加の設定を使用できます。
+* 行は、追加のコンポーネントで分類できます。 複数の行を一度に分類するには、複数の行を選択してから、選択した行の上に次のコンポーネントをドラッグします。 [分類](/help/components/dimensions/t-breakdown-fa.md)について説明します。
+* 行を[フィルタリング](/help/components/filters/filters-overview.md)して、表示する項目数を減らすここができます。[行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
 
 ### 列
 
 * 列内にコンポーネントを積み重ねて、フィルター適用済み指標やクロスタブ分析などを作成できます。
-* 各列の表示は、[列設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings)で調整できます。
-* [ コンテキストメニュー ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency) から使用できるアクションがいくつかあります。 メニューには、テーブルのヘッダー、行、列のどちらを選択したかに応じて異なるアクションが表示されます。
+* 各列の表示は、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)で調整できます。
+* [ コンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu) から使用できるアクションがいくつかあります。 メニューには、テーブルのヘッダー、行、列のどちらを選択したかに応じて異なるアクションが表示されます。
 
 
 ## 設定

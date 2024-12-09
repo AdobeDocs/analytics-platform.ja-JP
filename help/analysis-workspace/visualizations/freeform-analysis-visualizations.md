@@ -5,16 +5,16 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 15%
+source-wordcount: '1616'
+ht-degree: 17%
 
 ---
 
 # ビジュアライゼーションの概要
 
-Workspaceには、データを視覚的に表現できる様々なビジュアライゼーションが用意されています。 棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図など。
+Workspaceには、データを視覚的に表現できる様々なビジュアライゼーションが用意されています。 棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図などがあります。
 
 ## タイプ
 
@@ -25,10 +25,10 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | 面グラフのビジュアライゼーション。 折れ線グラフに似ていますが、線の下に色付きの領域があります。指標が複数あり、2 個以上の指標の交差により表現される領域を視覚化する場合は、面グラフを使用します。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | 1 つ以上の指標の様々な値を表す縦棒を持つ棒グラフビジュアライゼーション。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [ 積み重ね棒グラフ ](/help/analysis-workspace/visualizations/bar.md) | 1 つ以上の指標の様々な値を表す縦棒を持つ積み重ね棒グラフビジュアライゼーション。 |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ 箇条書き ](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値と他のパフォーマンス範囲（目標）との比較または測定を示すブレットグラフのビジュアライゼーション。 |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) | 目的の値と他のパフォーマンス範囲（目標）との比較または測定を示すブレットグラフのビジュアライゼーション。 |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | コホートビジュアライゼーションは、特定の期間、共通の特性を共有する人々のグループです。 コホートテーブルは、リテンション、チャーン、または待ち時間の分析に役立ちます。 |
-| ![ コンボ ](/help/assets/icons/ComboChart.svg) | [ コンボ ](combo-charts.md) | コンボグラフを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく作成できます。 |
-| ![ グラフドーナツ ](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | ドーナツビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
+| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](combo-charts.md) | コンボグラフを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく作成できます。 |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | ドーナツビジュアライゼーションは、円グラフと同様に、データを全体の一部またはフィルターとして表示します。 |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | フォールアウトビジュアライゼーションは、事前に定義された一連のページ間で、ユーザーが離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。 |
 | ![ グラフパス ](/help/assets/icons/GraphPathing.svg) | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | フロービジュアライゼーションは、web サイトとアプリを介した正確な顧客パスを表示します。 |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | フリーフォームテーブルのビジュアライゼーションは、インタラクティブなビジュアライゼーションです。 フリーフォームテーブルのビジュアライゼーションは、Workspaceのデータ分析の基盤です。 |
@@ -37,7 +37,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [ 積み重ね横棒グラフ ](/help/analysis-workspace/visualizations/horizontal-bar.md) | 積み重ね横棒グラフビジュアライゼーションには、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。 |
 | ![ ブランチ 3](/help/assets/icons/Branch3.svg) | [ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | ジャーニーキャンバスのビジュアライゼーションは、ユーザーや顧客に提供するジャーニーを分析し、インサイトを得るのに役立ちます。 |
 | ![ 主要指標 ](/help/assets/icons/KeyMetrics.svg) | [ 主要指標の概要 ](/help/analysis-workspace/visualizations/key-metric.md) | 主要指標の概要ビジュアライゼーションは、折れ線グラフ、変更概要および数値概要のビジュアライゼーションを組み合わせます。 |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [行](/help/analysis-workspace/visualizations/line.md) | 折れ線グラフのビジュアライゼーションは、線を使用して指標を表し、時間の経過に伴う値の変化を示します。 折れ線グラフは、X 軸で時間を表します。 |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | 折れ線グラフのビジュアライゼーションは、線を使用して指標を表し、時間の経過に伴う値の変化を示します。 折れ線グラフは、X 軸で時間を表します。 |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | 散布図のビジュアライゼーションには、ディメンション項目と最大 3 つの指標との関係が表示されます。 |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [ セクションヘッダー ](section-header.md) | パネル内のセクションを識別し、明確にする。 |
 | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | 変更概要ビジュアライゼーションには、選択したセル間の変更が 1 つの大きな数値またはパーセンテージで表示されます。 |
@@ -60,7 +60,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
    * ビジュアライゼーションを追加するパネルで「![AddCircle](/help/assets/icons/AddCircle.svg)」を選択し、追加するビジュアライゼーションを表すアイコンを選択します。 各ビジュアライゼーションのアイコンにマウスポインターを置くと、名前が表示されます。
 
-   * [ 空のパネル ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) を追加してから、追加するビジュアライゼーションを選択します。
+   * [ 空のパネル ](/help/analysis-workspace/c-panels/blank-panel.md) を追加してから、追加するビジュアライゼーションを選択します。
 
    * Analysis Workspace プロジェクト内の既存のビジュアライゼーションのコンテキストメニューから、**[!UICONTROL ビジュアライゼーションを複製]** または **[!UICONTROL ビジュアライゼーションをコピー]** を選択します。
 

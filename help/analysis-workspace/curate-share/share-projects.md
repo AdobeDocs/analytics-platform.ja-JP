@@ -5,10 +5,10 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 65%
+source-wordcount: '2042'
+ht-degree: 64%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 65%
 
    または
 
-   「**[!UICONTROL キュレーションと共有]**」を選択して、プロジェクトのキュレーションを自動的に適用します。（プロジェクトがすでに共有されている場合は、「**[!UICONTROL キュレーションと共有]**」を選択します。）[プロジェクトのキュレーションの詳細](curate.md)を表示します。
+   「**[!UICONTROL キュレーションと共有]**」を選択して、プロジェクトのキュレーションを自動的に適用します。（プロジェクトが既に共有されている場合は、「**[!UICONTROL キュレーションと更新]** を選択します。） [ プロジェクトキュレーション ](curate.md) の詳細を説明します。
 
 ## プロジェクトへのリンクの共有
 
@@ -171,7 +171,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    このオプションを選択すると、任意のユーザーと共有できるプロジェクトへのリンクが作成されます。このオプションを無効にすることで、プロジェクトへのアクセスをいつでも無効にできます。
 
-   また、プロジェクトの所有者もこのリンクの所有者です。Analytics 管理ガイドの[ユーザーアセットの転送と、アカウントの有効期限の設定](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=ja)で説明されているように、リンクの所有権を別のユーザーに譲渡できるのは、プロジェクトの所有権を譲渡した場合のみです。
+   また、プロジェクトの所有者もこのリンクの所有者です。Analytics 管理ガイドの [ ユーザーアセットの転送 ](/help/tools/asset-transfer/transfer-assets.md) に説明されているように、プロジェクトの所有権が転送された場合にのみ、リンクの所有権を別のユーザーに転送できます。
 
 1. 次のセキュリティ・オプションを有効にするかどうかを選択します（このオプションはCustomer Journey Analytics管理者が制御できます）。
 

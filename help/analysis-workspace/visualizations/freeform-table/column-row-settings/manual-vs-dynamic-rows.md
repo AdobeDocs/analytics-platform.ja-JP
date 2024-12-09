@@ -4,10 +4,10 @@ description: テーブルの動的および静的ディメンション項目の�
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 49%
+source-wordcount: '542'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 49%
 
 フリーフォームテーブルにディメンションをドロップすると、動的な行が返されます。動的行は、特定の指標および期間のディメンションに対応する上位の項目を表します。 また、ディメンションをフリーフォームテーブルの列にドロップすると、ディメンションを自動的に上位 5 つのディメンション項目に展開します。
 
-例えば、ブラウザータイプディメンションをテーブルにドラッグすると、上位のブラウザータイプディメンション項目（Microsoft、Apple、Google など） が動的にテーブル行に戻ります。列にドロップすると、上位 5 つのブラウザータイプディメンション項目が動的に返されます。
+例えば、ブラウザータイプ ディメンションをテーブルにドラッグすると、上位のブラウザータイプ ディメンション項目（Microsoft、Apple、Googleなど）がテーブルの行に動的に戻ります。 列にドロップすると、上位 5 つのブラウザータイプディメンション項目が動的に返されます。
 
 動的ディメンション項目には、行フィルターオプション ![ フィルター ](/help/assets/icons/Filter.svg) と ![ 閉じる ](/help/assets/icons/Close.svg) があり、ロック **LockClosed** は存在し ![ せん ](/help/assets/icons/LockClosed.svg)。 <!--do they have the lock icon? --> 動的ディメンション項目の横にある ![ 閉じる ](/help/assets/icons/Close.svg) をクリックすると、フィルターが自動的に適用されます。 テーブルにフィルタを適用する方法の詳細については、「テーブルをフィルタして並べ替える [ を参照してください ](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。
 
@@ -53,4 +53,4 @@ ht-degree: 49%
 フリーフォーム合計行での動的な行と静的な行の動作は異なります。デフォルトでは:：
 
 * 動的な行は、セッションやユーザーなどのサーバーサイドの指標と重複排除の指標の合計になります。
-* 静的な行は、クライアントサイドで合計され、重複を取り除き&#x200B;**ません**。サーバーサイドの合計行を計算するには、「行」設定を「**総合計を表示**」に変更します。[詳細情報](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=ja)
+* 静的な行は、クライアントサイドで合計され、重複を取り除き&#x200B;**ません**。サーバーサイドの合計行を計算するには、「行」設定を「**総合計を表示**」に変更します。[詳細情報](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

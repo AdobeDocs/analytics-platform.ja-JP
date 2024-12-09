@@ -5,10 +5,10 @@ title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 67%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -18,9 +18,9 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 
 ## 他の Workspace ユーザーと共有するプロジェクトリンクの取得 {#project-link}
 
-プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、[!UICONTROL **共有**]/[!UICONTROL **プロジェクトリンクを取得**] （または **共有**]/[!UICONTROL **Workspace ユーザーと共有**]/**UICONTROL （リンクで共有**）に移動します。 リンクを共有するユーザーは、ログインする必要があります。
+プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、**[!UICONTROL 共有]**/**[!UICONTROL プロジェクトリンクを取得]** （または **[!UICONTROL 共有]**/**[!UICONTROL Workspace ユーザーと共有]**/**[!UICONTROL リンクで共有]**）を選択します。 リンクを共有するユーザーは、ログインする必要があります。
 
-リンクの受信者に[プロジェクトの役割](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=ja)が割り当てられていない場合、管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;エクスペリエンスを受信し、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;エクスペリエンスを受信します。
+リンクの受信者に [ プロジェクトの役割 ](/help/analysis-workspace/curate-share/share-projects.md) が割り当てられていない場合、管理者は **[!UICONTROL 元の画像を編集]** エクスペリエンスを受け取り、管理者以外は **[!UICONTROL コピーを編集]** エクスペリエンスを受け取ります。
 
 ## 任意のユーザーと共有する読み取り専用リンクの取得
 
