@@ -4,10 +4,10 @@ description: Analysis Workspaceのメディア分平均オーディエンスパ�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 28%
+source-wordcount: '1789'
+ht-degree: 30%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 28%
 >title="メディア分平均オーディエンス"
 >abstract="パネルを作成して、特定のコンテンツまたは特定の期間の分平均オーディエンスを分析します。"
 
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -29,8 +28,6 @@ ht-degree: 28%
 >id="cja_workspace_mediaaverageminuteaudience_panel"
 >title="メディア分平均オーディエンス"
 >abstract="特定のメディアコンテンツまたはカスタム期間のパフォーマンスを表示します。<br/><br/>**一般パラメーター&#x200B;**<br/>**指標の計算**：パネルに使用する指標を選択します。「**特定のコンテンツ**」を選択し、コンテンツの長さに基づいて、特定のコンテンツまたはイベントの分平均オーディエンスを分析します。**カスタム期間を選択**&#x200B;し、カスタム選択された期間の分平均オーディエンスの変化を分析します。<br/>**レポートディメンション**：**コンテンツ ID** ディメンションの&#x200B;**ビデオ名**&#x200B;でレポートする場合に選択します。指標として「特定のコンテンツ」を選択した場合にのみ使用できます。<br/>**精度**：レポートの精度を選択します。指標として「カスタム期間」を選択した場合にのみ使用できます。<br/>**コンテンツのフィルター基準（オプション）**：特定の番組、シーズン、エピソードを選択するか、コンテンツをフィルタリングするカスタムディメンションを選択します。<br/><br/>**詳細設定&#x200B;**<br/>**テーブル設定**：計算値をテーブルに表示するかどうかを選択します。<br/>**滞在時間指標**：特定のコンテンツ計算に使用する滞在時間指標を選択します。指標として「特定のコンテンツ」を選択した場合にのみ使用できます。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定のコンテンツ"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="カスタム期間"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,18 +56,18 @@ Analysis Workspaceでは、分平均オーディエンスは、次の情報を�
 
   指標を使用するときにこの更新を行うと、期間の分類は存在しません（分類が存在しない場合）。 または、期間の分類が古くなっています（分類が存在したが正しくない場合）。
 
-## 用途
+## 使用
 
 **[!UICONTROL メディア分平均オーディエンス]** パネルを使用するには：
 
-1. **[!UICONTROL メディア分平均オーディエンス]** パネルを作成します。 パネルの作成方法について詳しくは、[ パネルの作成 ](panels.md#create-a-panel) を参照してください。
+1. **[!UICONTROL メディア分平均オーディエンス]** パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
 1. ストリーミングメディアコレクションアドオンから設定されたコンポーネントを含むパネルのデータビューを選択していることを確認してください。
 
 
-1. パネルの [ 入力 ](#panel-input) を指定します。
+1. パネルの[入力](#panel-input)を指定します。
 
-1. パネルの [output](#panel-output) を確認します。
+1. パネルの[出力](#panel-output)を確認します。
 
 ### パネル入力
 
@@ -185,7 +182,7 @@ Analysis Workspaceでは、分平均オーディエンスは、次の情報を�
 
 >[!MORELIKETHIS]
 >
-> [ パネルを作成 ](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > [メディアの同時視聴者数パネル ](media-concurrent-viewers.md)
 > [メディア再生滞在時間パネル ](media-playback-time-spent.md)
 >
