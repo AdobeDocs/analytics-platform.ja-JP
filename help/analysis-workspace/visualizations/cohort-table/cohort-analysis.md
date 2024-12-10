@@ -4,10 +4,10 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 37%
+source-wordcount: '641'
+ht-degree: 34%
 
 ---
 
@@ -56,6 +56,8 @@ ht-degree: 37%
 >[!IMPORTANT]
 >
 >[!UICONTROL  コホート分析 ] では、フィルタリングできない指標（計算指標など）、整数以外の指標（売上高など）、発生件数はサポートしていません。 [!UICONTROL  コホート分析 ] で使用できるのはフィルターで使用できる指標のみで、一度に増やせるのは 1 つのみです。
+
+Customer Journey Analyticsのコホートテーブルでは、ダブルベース（または任意の数値ベース）の指標をサポートしています。 例えば、Purchase.Value （double）はインクルージョン/リターン指標として使用できます。 また、Analytics Source Connector を介してAdobe Experience Platformに渡されるすべての指標も重複しています。
 
 ## コホートテーブル機能
 

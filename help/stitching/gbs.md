@@ -1,0 +1,155 @@
+---
+title: グラフベースのステッチ
+description: グラフベースのステッチの説明
+solution: Customer Journey Analytics
+feature: Stitching, Cross-Channel Analysis
+role: Admin
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+workflow-type: tm+mt
+source-wordcount: '1361'
+ht-degree: 7%
+
+---
+
+# グラフベースのステッチ
+
+
+グラフベースのステッチでは、イベントデータセットと、そのデータセットの一時的な ID （ユーザー ID）の永続 ID （cookie）および名前空間を指定します。 グラフベースのステッチでは、新しいステッチされたデータセットのステッチ ID に新しい列が作成されます。 次に、永続 ID を使用して、指定された名前空間を使用してExperience PlatformID サービスから ID グラフをクエリし、ステッチされた ID を更新します。
+
+![ グラフベースのステッチ ](/help/stitching/assets/gbs.png)
+
+## グラフベースのステッチの仕組み
+
+ステッチでは、特定のデータセット内のデータに対して少なくとも 2 つのパスが作成されます。
+
+- **ライブステッチ**：は、永続 ID を使用して、ID グラフにクエリを実行し、選択した名前空間の一時的な ID を検索し、発生した各ヒット（イベント）をステッチしようとします。 ルックアップから一時的な ID を使用できる場合、この一時的な ID は直ちにステッチされます。
+
+- **ステッチを再生**:*再生* ID グラフから更新された ID に基づいてデータを再生します。 このステージでは、ID グラフが名前空間の ID を解決したので、以前は不明だったデバイス（永続的な ID）からのヒットがステッチされます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
+   - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていない訪問者は、サイトを訪問した日に認証を行う必要があります。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+
+- **プライバシー**：プライバシー関連のリクエストを受信した場合、ソースデータセットからリクエストされた ID を削除する以外に、認証されていないイベントに対するその ID のステッチも取り消す必要があります。 また、その特定の ID に対してグラフベースのステッチが今後行われないようにするために、ID を ID グラフから削除する必要があります。
+
+  >[!IMPORTANT]
+  >
+  >ステッチ解除プロセスは、プライバシーリクエストの一環として、2025 年の初めに変更されます。 現在のステッチ解除プロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 イベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を修正するために、2025 年以降、新しいステッチプロセスにより、プライバシーリクエストの対象となるイベントが永続 ID で更新されます。
+  > 
+
+ルックバックウィンドウを超えたデータは再生されません。未認証の訪問と認証された訪問を一緒に識別するには、訪問者は、所定のルックバックウィンドウ内で認証する必要があります。 デバイスが認識されると、その時点からライブステッチされます。
+
+永続 ID `246` および `3579` の次の 2 つの ID グラフ、これらの ID グラフが時間の経過と共にどのように更新されるか、およびこれらの更新がグラフベースのステッチの手順にどのように影響するかを考えてみましょう。
+
+![ID グラフ 246](assets/identity-graph-246.svg)
+![ID グラフ 3579](assets/identity-graph-3579.svg)
+
+[ID グラフビューア ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
+
+### 手順 1：ライブステッチ
+
+ライブステッチは、コレクション時に、各イベントを ID グラフからその時点での既知の情報にステッチしようと試みます。
+
++++ 詳細
+
+| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID （ライブステッチ後） |
+|--:|---|---|---|---|
+| 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+
+{style="table-layout:auto"}
+
+ステッチされた ID がイベントごとにどのように解決されるかを確認できます。 時刻、永続 ID、指定された名前空間の ID グラフのルックアップに基づきます（同時）。
+参照が複数のステッチ ID に解決される場合（イベント 7 の場合など）、ID グラフによって返される辞書的な最初の ID が選択されます（この例では `a.b@yahoo.co.uk`）。
+
++++
+
+### 手順 2：再生のステッチ
+
+一定の間隔（選択したルックバックウィンドウに応じて）で、再生のステッチを行うと、その間隔の時点での ID グラフの最新バージョンに基づいて、履歴データが再計算されます。
+
++++ 詳細
+
+2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（「再生 ![ で示されます ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)）。
+
+| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 24 時間後） |
+|---|---|---|---|---|---|
+| 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+
+{style="table-layout:auto"}
+
+
+2023-05-13 16:30 に再生のステッチが行われ、7 日間のルックバックウィンドウ設定がある場合、サンプルからのすべてのイベントが再ステッチされます。
+
+
+| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 7 日後） |
+|---|---|---|---|---|---|
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+
+{style="table-layout:auto"}
+
++++
+
+### 手順 3：プライバシーリクエスト
+
+プライバシーリクエストを受け取ると、ステッチされた ID は、プライバシーリクエストのユーザー主体に対するすべてのレコードで削除されます。
+
++++ 詳細
+
+次の表は上記と同じデータですが、サンプルイベントに対するプライバシーリクエスト（例：2023-05-13 18:00）の効果を示しています。
+
+| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID （プライバシーリクエスト後） |
+|--:|---|---|---|---|
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
+
+{style="table-layout:auto"}
+
++++
+
+## 前提条件
+
+次の前提条件は、特にグラフベースのステッチに適用されます。
+
+- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- 永続 ID も、スキーマで [ID として定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
+- Experience PlatformID サービスの ID グラフには、ステッチ中に **一時的な ID** を解決するために使用する名前空間（`Email` や `Phone` など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
+
+>[!NOTE]
+>
+>グラフベースのステッチに **Real-time Customer Data Platform ライセンスは必要ありません**。 Customer Journey Analyticsの **Prime** パッケージ以降には、必要なExperience Platform ID サービス使用権限が含まれています。
+
+
+## 制限事項
+
+次の制限は、特にグラフベースのステッチに適用されます。
+
+- 指定された名前空間を使用して一時的な ID をクエリする場合、タイムスタンプは考慮されません。 そのため、永続的 ID が、以前のタイムスタンプを持つレコードからの一時的な ID でステッチされる可能性があります。
+- 共有デバイスはサポートされていません。 複数の ID が返される場合、名前空間を使用して ID グラフにクエリを実行すると、最初の辞書作成 ID が使用されます。
+- ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data PlatformのようなExperience Platformアプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
+- [ID サービスガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [ 静的制限 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
+   - グラフ内の ID の最大数：50。
+   - 単一のバッチ取得での ID へのリンクの最大数：50。
+   - グラフ取り込み用の XDM レコードの ID の最大数：20。
+   - グラフ取り込み用の XDM レコードの最小 ID 数：2.

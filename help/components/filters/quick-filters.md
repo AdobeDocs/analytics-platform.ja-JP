@@ -4,7 +4,7 @@ title: クイックフィルター
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ## 作成
 
-クイックフィルターはパネルに適用されます。 Workspace プロジェクトのすべてのパネルに対して、1 つ以上のクイックフィルターを作成できます。 Analysis Workspaceのどのユーザーもクイックフィルターを作成できます。
+クイックフィルターはパネルに適用されます。 Workspace プロジェクト内のすべてのパネルに 1 つ以上のクイックフィルターを作成できます。 Analysis Workspaceのどのユーザーもクイックフィルターを作成できます。
 
 クイックフィルターを作成するには：
 
