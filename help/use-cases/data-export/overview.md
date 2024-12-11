@@ -1,18 +1,18 @@
 ---
-title: データ書き出しの使用例
+title: データ書き出しのユースケース
 description: Customer Journey Analyticsのための様々なデータエクスポートのユースケースについて
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 1%
 
 ---
 
-# データ書き出しの使用例
+# データ書き出しのユースケース
 
 この節では、データ書き出しの使用例と、1 つ以上のCustomer Journey AnalyticsまたはExperience Platformの機能を使用してこれらの使用例を実装する方法について説明します。 各機能について詳しくは、別の記事を参照してください。
 
@@ -71,9 +71,9 @@ Customer Journey Analyticsすると、イベントが順番に収集されず、
 
 一般に、データの書き出しでは、多くのユースケースをサポートしています。 必要なデータとそのデータにアクセスして書き出す方法に関しては、ユースケースごとに異なります。 Experience PlatformとCustomer Journey Analyticsには、様々なユースケースを解決できる多数の機能が用意されており、それぞれ単独で使用することも、組み合わせて使用することもできます。 次の表に、特定されたデータ書き出しのユースケースと、これらのユースケースを実装するためのExperience PlatformおよびCustomer Journey Analytics機能の概要を示します。
 
-| データ書き出しの使用例 | Experience PlatformとCustomer Journey Analytics機能 |
+| データ書き出しのユースケース | Experience PlatformとCustomer Journey Analytics機能 |
 |---|---|
-| **データのバックアップ**<br/> コンプライアンスや規制の目的で、デジタル・データの完全なコピーを保持します。 | **Experience Platform**: [**データセットを書き出し**](export-datasets.md)<br/> Experience Platformで収集したデータを、スケジュールに従って、またはアドホックでクラウドの宛先に直接書き出します。<br/>*現在限定リリースで、Customer Journey Analyticsのお客様向けの完全リリースは 2024 年 6 月に予定されています。* |
+| **データのバックアップ**<br/> コンプライアンスや規制の目的で、デジタル・データの完全なコピーを保持します。 | **Experience Platform**: [**データセットを書き出し**](export-datasets.md)<br/> Experience Platformで収集したデータを、スケジュールに従って、またはアドホックでクラウドの宛先に直接書き出します。 |
 | **データの検証**<br/> データ収集の正確性を確保するためにクリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス （データDistiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> お気に入りの SQL ツールを使用してアドホック SQL クエリを実行し、データセット内のデータを検証する Interactive PostgreSQL インターフェイス。<br/><br/>**Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> アトリビューションとセッション化が適用された状態で、CJA から処理済みデータを検証します。 |
 | **データレイク、Data Warehouseまたは BI ツール**<br/> 独自の BI ツールまたはデータレイクにデジタルデータを取り込み、追加のデータセットで使用します。 | **Customer Journey Analytics**: [**BI 拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsの処理済み指標をデータなどのPower BIビジュアライゼーションツールに追加し、カスタムレポートの追加データと組み合わせます <br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br> SQL を使用してカスタマイズされたクリックストリームデータを生成し、クラウドの宛先に配信します。 |
 | **AI/ML への対応**<br/> Customer Journey Analyticsデータを用いて人工知能/機械学習モデルとタスクを強化します。 | **Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標を、計算指標やセグメント化を含めて、クラウドの宛先に 1 回限りまたは定期的にエクスポートします。<br/><br/>**Experience Platform**: [**クエリサービス （データDistiller）およびデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQL を使用してカスタマイズされたクリックストリームデータを生成し、AI / ML モデルを強化します。 |
