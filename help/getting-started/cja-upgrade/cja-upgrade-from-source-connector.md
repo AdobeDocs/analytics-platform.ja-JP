@@ -1,20 +1,20 @@
 ---
-title: Analytics ソースコネクタからCustomer Journey Analytics用の Web SDK への移行
-description: Customer Journey Analyticsへのアップグレード時に Analytics ソースコネクタから Web SDK に移行する方法を説明します
+title: Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行
+description: Customer Journey Analyticsへのアップグレード時に Analytics ソースコネクタから web SDKに移行する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# Analytics ソースコネクタからCustomer Journey Analytics用の Web SDK への移行
+# Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行
 
 >[!NOTE]
 > 
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 Analytics ソースコネクタを、Customer Journey Analyticsの唯一の実装として使用する場合、固有の欠点があります。
 
-Analytics ソースコネクタ実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合は、（履歴データを引き継ぐための） Analytics ソースコネクタを使用する実装に、（継続的なデータ収集のための） Web SDK の新しい実装を組み合わせて移行することを検討してください。
+Analytics ソースコネクタ実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeでは、（履歴データ用に） Analytics ソースコネクタを使用する実装に、進行中のデータ収集のための） Web SDKの新規実装を組み合わせて移行することをお勧めします。
 
 ## Analytics ソースコネクタのみを使用する場合のメリットとデメリットについて
 
 Analytics ソースコネクタを使用するメリットとデメリットについては、[Analytics ソースコネクタをCustomer Journey Analyticsにのみ使用してアップグレードする ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md) を参照してください。
 
-## Analytics ソースコネクタから Web SDK への移行
+## Analytics ソースコネクタから Web SDKへの移行
 
-以下は、Analytics ソースコネクタのみの使用から、Analytics ソースコネクタと Web SDK 実装の両方で構成される実装に移行するプロセスの概要です。
+以下は、Analytics ソースコネクタのみの使用から、Analytics ソースコネクタと Web SDK実装の両方で構成される実装に移行するプロセスの概要です。
 
-1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) の記事の詳細な推奨アップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) の説明に従って、Web SDK 実装を作成 [ ます。
+1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) の記事の詳細な推奨アップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) の説明に従って、web SDKを実装 [ ます。
 
-   Web SDK 実装を設定したら、次の手順を続行します。
+   Web SDKの実装が設定されたら、次の手順を続行します。
 
 1. [Analytics ソースコネクタ用の XDM スキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 

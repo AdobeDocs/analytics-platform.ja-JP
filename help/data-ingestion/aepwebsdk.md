@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Platform Web SDK を使用したデータの取り込み
+title: Adobe Experience Platform Web SDKを介したデータの取り込み
 description: Adobe Experience Platform Web SDK と Edge Network を使用して Customer Journey Analytics にデータを取り込む方法について説明する
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3543'
 ht-degree: 83%
 
 ---
 
-# Web SDK を使用したデータの取り込み
+# Web SDKを介したデータの取り込み
 
 このクイックスタートガイドでは、Adobe Experience Platform Web SDK と Edge Network を使用して web サイトトラッキングデータを Adobe Experience Platform に直接取り込み、Customer Journey Analytics で使用する方法について説明します。
 
@@ -280,7 +280,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
-Web SDK には、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
+Web SDKには、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
 #### **データ要素**
 

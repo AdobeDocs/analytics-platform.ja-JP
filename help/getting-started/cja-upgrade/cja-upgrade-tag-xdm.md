@@ -1,19 +1,20 @@
 ---
-title: タグに XDM データ収集ロジックを追加します
+title: タグへの XDM データ収集ロジックの追加
 description: タグに XDM データ収集ロジックを追加する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# タグに XDM データ収集ロジックを追加します
+# タグへの XDM データ収集ロジックの追加
 
 >[!NOTE]
 > 
@@ -21,7 +22,7 @@ ht-degree: 48%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-[ タグを作成して Web SDK 拡張機能を追加 ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) した後、サイトを追跡してデータをAdobe Experience Platformに送信する方法に従って、データ要素とルールを使用してタグを設定する必要があります。 タグのデータ要素とルールを設定したら、タグを作成して公開できます。
+[ タグを作成して web SDK拡張機能を追加 ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) した後、サイトをトラッキングしてAdobe Experience Platformにデータを送信する方法に従って、データ要素とルールを使用してタグを設定する必要があります。 タグのデータ要素とルールを設定したら、タグを作成して公開できます。
 
 ## データ要素の設定
 
@@ -194,7 +195,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
 データ要素とルールを定義したら、タグを作成して公開する必要があります。 ライブラリビルドを作成する場合は、そのビルドを環境に割り当てる必要があります。ビルドの拡張機能、ルール、およびデータ要素がコンパイルされ、割り当てられた環境に配置されます。各環境は、割り当てられたビルドをサイトに統合できる、一意の埋め込みコードを提供します。
 
-Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデプロイメントに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。 詳しくは、[公開の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)を参照してください。
+Adobe Experience Platform タグは、Adobe Experience Platform web SDKのデプロイメントに対応する必要がある、シンプルな公開ワークフローから複雑な公開ワークフローをサポートします。 詳しくは、[公開の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)を参照してください。
 
 タグを構築して公開するには、次の手順に従います。
 
@@ -225,4 +226,3 @@ Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデ�
 1. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
 
    ![公開 - ライブラリを作成](assets/build-library.png)
-

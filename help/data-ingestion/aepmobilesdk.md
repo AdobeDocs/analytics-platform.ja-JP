@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Platform Mobile SDK を介したデータの取り込み
-description: Adobe Experience Platform Mobile SDK とEdge Networkを使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
+title: Adobe Experience Platform Mobile SDKを介したデータの取り込み
+description: Adobe Experience Platform Mobile SDKとEdge Networkを使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# Mobile SDK を介したデータの取り込み
+# Mobile SDKを介したデータの取り込み
 
-このクイックスタートガイドでは、Adobe Experience Platform Mobile SDK とEdge Networkを使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
+このクイックスタートガイドでは、Adobe Experience Platform Mobile SDKとEdge Networkを使用して、モバイルアプリのトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 
 これには、次の手順を実行する必要があります。
 
@@ -239,7 +239,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ## タグの使用
 
-データを収集するためのコードをサイトに実装するには、Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Mobile SDK 拡張機能を使用して、Adobe Experience Platformとのシームレスな統合を提供します。
+データを収集するためのコードをサイトに実装するには、Adobe Experience Platformのタグ機能を使用します。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Mobile SDK拡張機能を使用して、Adobe Experience Platformとのシームレスな統合を提供します。
 
 ### タグを作成する
 
@@ -262,7 +262,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 Adobe Platform Edge Network拡張機能をタグに追加して、（データストリーム経由で）Adobe Experience Platformにデータを送信できるようにします。
 
-Adobe Experience Platform Mobile SDK 拡張機能を作成および設定するには：
+Adobe Experience Platform Mobile SDK拡張機能を作成および設定するには：
 
 1. 左パネルで **[!UICONTROL 拡張機能]** を選択します。 Mobile Core 拡張機能とプロファイル拡張機能は既に使用可能です。
 
@@ -272,7 +272,7 @@ Adobe Experience Platform Mobile SDK 拡張機能を作成および設定する�
 
 1. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
-   ![AEP Mobile SDK 拡張機能の設定 ](./assets/aepmobilesdk-extension-datastream.png)
+   ![AEP Mobile SDK拡張機能の設定 ](./assets/aepmobilesdk-extension-datastream.png)
 
 1. [!UICONTROL Domain configuration] の下に **[!UICONTROL Edge Networkドメイン]** を入力します。 通常、`<organizationName>.data.adobedc.net` を使用します。
 
@@ -417,7 +417,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 3. 「**[!UICONTROL 閉じる]**」を選択します。
 
-開発環境用のコードの代わりに、Adobe Experience Platform Mobile SDK をデプロイするプロセスの場所に基づいて、別の環境（ステージング、実稼動）を選択することもできます。
+開発環境用のコードの代わりに、Adobe Experience Platform Mobile SDKをデプロイするプロセスの場所に基づいて、別の環境（ステージング、実稼動）を選択することもできます。
 
 詳しくは、[環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ja)を参照してください。
 
