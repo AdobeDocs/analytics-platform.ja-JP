@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
+source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
 workflow-type: tm+mt
-source-wordcount: '15490'
-ht-degree: 78%
+source-wordcount: '17969'
+ht-degree: 81%
 
 ---
 
@@ -152,10 +152,23 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### 一番人気 {#most-popular}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--training"
+>id="aa-template--unitsOvertimeReport"
+>title="すべての注文内で購入されたユニットの合計数を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
+>abstract="**これにより**、時間の経過とともにユニット販売数がどのように増加または減少しているかをより深く理解できます。セグメントを適用することにより、どの顧客や地域が最も多くのユニットを購入していて、それらのユニット販売数が時間の経過とともにどのように変化しているかを把握できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最近ローンチされたマーケティングキャンペーンの有効性について、キャンペーンのローンチ前後のユニット販売数を比較することで評価できます。また、前年の休日中のユニット販売数を比較することもできます。<br/>このテンプレートでは、日ディメンションとユニット数指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!--both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--training"
 >title="トレーニングチュートリアルテンプレート"
 >abstract="最初の分析を作成する一般的な Analysis Workspace の用語と手順について説明します。"
 
@@ -164,7 +177,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--pagesRankedReport"
+>id="template--pagesRankedReport"
 >title="一番人気のあるページと人気のないページを特定します。"
 >abstract="**これにより**、オーディエンスのことや、オーディエンスが最も興味を持つ情報の種類をより深く理解できます。<br/>**学習内容に基づいて**、さまざまな操作を行うことができます。例えば、あまり多く閲覧されていないページの閲覧回数を増やすためにページのメタデータを調整したり、最も多く閲覧されたページのコンテンツの改善に時間を費やしたりできます。<br/>このテンプレートでは、ページディメンションとページビュー指標を使用します。"
 
@@ -173,7 +186,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--pageViewsOvertimeReport"
+>id="template--pageViewsOvertimeReport"
 >title="ページビューの合計数を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。 "
 >abstract="**これにより**、サイト上のトラフィックが時間の経過とともにどのように増加または減少するかを把握しやすくなります。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最近ローンチされたマーケティングキャンペーンの有効性について、キャンペーンのローンチ前後のサイトトラフィックを比較することで評価できます。または、前年の休日のトラフィックと比較することもできます。<br/>このテンプレートでは、日ディメンションとページビュー指標を使用します。"
 
@@ -182,7 +195,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--visitsOvertimeReport"
+>id="template--visitsOvertimeReport"
 >title="訪問の合計数を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
 >abstract="**これにより**、サイト上のトラフィックが時間の経過とともにどのように増加または減少するかを把握しやすくなります。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最近ローンチされたマーケティングキャンペーンの有効性について、キャンペーンのローンチ前後のサイトトラフィックを比較することで評価できます。または、前年の休日のトラフィックと比較することもできます。<br/>このテンプレートでは、日ディメンションと訪問指標を使用します。"
 
@@ -191,7 +204,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--visitorsOvertimeReport"
+>id="template--visitorsOvertimeReport"
 >title="ユニーク訪問者の合計数を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。 "
 >abstract="**これにより**、サイトのリーチとオーディエンスサイズが時間の経過とともに、あるいは前の時期と比較してどのように増加または減少しているかを把握しやすくなります。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最近ローンチされたマーケティングキャンペーンがサイトへの新規訪問者の引き付けに成功したかどうかを、キャンペーンのローンチ前後でユニーク訪問者を比較することで評価できます。また、休日にサイトを訪問した人の数を前年と比較することもできます。<br/>このテンプレートでは、日ディメンションとユニーク訪問者指標を使用します。 "
 
@@ -200,7 +213,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--keyMetricsReport"
+>id="template--keyMetricsReport"
 >title="ページビュー指標、訪問指標、ユニーク訪問者指標を並べたレポートを表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
 >abstract="**これにより**、これらの重要な指標を比較して、サイトのユニーク訪問者の数、ページへ訪問の数、セッションの数の全体像を知ることができます。<br/>**学習した内容に基づいて**、様々な操作を行うことができます。例えば、特定の週または月にサイトを訪問した各ユーザーが閲覧したページの平均数や、1 年の特定の時間またはマーケティングキャンペーンを実行する前後の平均数の変化を評価できます。<br/>このテンプレートでは、日ディメンション、ページビュー指標、訪問指標およびユニーク訪問者指標を使用します。"
 
@@ -209,7 +222,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--siteSectionRankedReport"
+>id="template--siteSectionRankedReport"
 >title="サイトで最も人気のあるセクションやパフォーマンスの高いセクションを表示します。"
 >abstract="**これにより**、サイトのどのセクションが最もよく訪問されたかをより深く理解できます。<br>**学習内容に基づいて**、様々な操作を行うことができます。例えば、提供した製品やサービスのうち、どれが最も訪問者の興味を引いたかを評価できます。<br/>このテンプレートでは、サイトセクションディメンションと訪問指標を使用します。"
 
@@ -218,7 +231,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--next-page-report"
+>id="template--next-page-report"
 >title="人々がある場所を訪問する直後または直前に行く最も一般的な場所を表示します。"
 >abstract="**これにより**、トラフィックが特定のページからサイトの他の部分にどのように移動するかを理解し、特定のページに到達するまでの訪問者の経路を理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、訪問者をより望ましいページ（購入やレビューを行うためのページなど）に誘導するようにページデザインやレイアウトを最適化できるかどうかを評価できます。または、訪問者が前のページから現在のページに来る時に、そこにある情報がその訪問者の求めている方向性やアクションを提供する可能性が高いかどうかを評価します。または、前のページとして表示されないページに、現在のページへのより目立つリンクを貼る必要があるかどうかを評価することもできます。<br/>このテンプレートは、次または前の項目パネルを使用します。"
 
@@ -227,7 +240,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--campaignRankedReport"
+>id="template--campaignRankedReport"
 >title="サイトへのトラフィックを推進するのに最も成功したリンクを表示します。"
 >abstract="**これにより**、サイトへのアクセスに最もよく使用されたトラッキングコード（および関連付けられているリンク）がどれかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、どこにサイトへのリンクを追加するかについての戦略を調整できます。<br/>このテンプレートでは、トラッキングコードディメンションと訪問指標を使用します。"
 
@@ -236,7 +249,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--productsRankedReport"
+>id="template--productsRankedReport"
 >title="注文数を製品別に表示します。データは一定期間にわたって表示されます。"
 >abstract="**これにより**、需要が最も高い製品と低い製品がどれかを把握できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、マーケティング戦略を調整して、パフォーマンスの高い製品を宣伝したり、パフォーマンスの低い製品を改善または製造中止にしたりすることができます。また、データの分析に基づいて製品在庫を調整することもできます。<br/>このテンプレートでは、製品ディメンションと注文指標を使用します。"
 
@@ -245,7 +258,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--lastTouchChannelRankedReport"
+>id="template--lastTouchChannelRankedReport"
 >title="エンゲージメント期間中（デフォルトでは 30 日間）に訪問者と一致した最新のマーケティングチャネルを表示します。"
 >abstract="**これにより**、コンバージョンにつながるサイトに訪問者を誘導する際に最も効果的だったマーケティングチャネルはどれだったかを理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、パフォーマンスの高いチャネルに割り当てるリソースを増やしたり、パフォーマンスの低いチャネルに割り当てるリソースを減らしたりすることができます。<br/>このテンプレートでは、ラストタッチチャネルディメンションとユニーク訪問者指標を使用します。"
 
@@ -254,7 +267,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--lastTouchChannelDetailRankedReport"
+>id="template--lastTouchChannelDetailRankedReport"
 >title="エンゲージメント期間中（デフォルトでは 30 日間）に訪問者と一致した最新のマーケティングチャネルに関する詳細を表示します。"
 >abstract="**これにより**、コンバージョンにつながるサイトに訪問者を誘導する際に最も効果的だったマーケティングチャネルはどれだったかだけでなく、それらのマーケティングチャネルに関する詳細も理解できます。例えば、訪問者がサイトを訪問し、「有料検索」マーケティングチャネルと一致した場合、チャネルの詳細を使用して、どの検索エンジンが使用されたか、どのキーワードを検索したかを確認できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、パフォーマンスの高いチャネルに割り当てるリソースを増やしたり、パフォーマンスの低いチャネルに割り当てるリソースを減らしたりすることができます。<br/>このテンプレートでは、ラストタッチチャネルの詳細ディメンションとユニーク訪問者指標を使用します。 "
 
@@ -263,7 +276,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--revenueOvertimeReport"
+>id="template--revenueOvertimeReport"
 >title="すべての注文内で購入された製品の金額を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
 >abstract="**これにより**、時間の経過とともに売上高がどのように増加または減少しているかを理解できます。この指標を任意のディメンションと組み合わせて、売上高に貢献したディメンション項目を確認できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、以前のトレンドを基に将来の売上高を予想できます。また、トラッキングコードディメンションなど、別のディメンションを追加して、どのキャンペーンが最も高い売上を生んでいるかを特定することもできます。<br/>このテンプレートでは、日ディメンションと売上高指標を使用します。"
 
@@ -272,7 +285,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--ordersOvertimeReport"
+>id="template--ordersOvertimeReport"
 >title="購入イベントの合計数を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
 >abstract="**これにより**、製品やサービスに対する関心が時間の経過とともにどのように増加または減少しているかをより深く理解できます。セグメントを適用することにより、どの顧客や地域が最も多く注文していて、それらの注文が時間の経過とともにどのように変化しているかを把握できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最近ローンチされたマーケティングキャンペーンの有効性について、キャンペーンのローンチ前後の注文数を比較することで評価できます。また、前年の休日の注文数と比較することもできます。<br/>このテンプレートでは、日ディメンションと注文数指標を使用します。"
 
@@ -299,6 +312,127 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### Web：エンゲージメント {#web-engagement}
 
+<!--AA only-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timeSpentVisitOvertimeReport"
+>title="訪問者が各訪問中にサイトに滞在した平均時間を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
+>abstract="**これにより**、訪問者のエンゲージメントレベルと、訪問者がサイトに滞在した時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトの変更によって訪問者がサイトに滞在する時間が長くなったかどうかを評価できます。<br/>このテンプレートでは、日ディメンションと訪問あたりの滞在時間（秒）指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timePriorRankedReport"
+>title="成功イベントの前にユーザーが滞在した平均時間を表示します。"
+>abstract="**これにより**、訪問者が購入などの目的のアクションを実行するのにかかる時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトの変更によって訪問者が成功イベントに迅速に到達する能力が向上したかどうかを評価できます。<br/>このテンプレートでは、イベント前の時間ディメンションとユニーク訪問者指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--falloutReport"
+>title="事前に定義された一連のページを通じて、ユーザーが移動または続行する場所を表示します。"
+>abstract="**これにより**、ユーザーがフォールアウトしているユーザージャーニーの場所をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイト上の特定のプロセス（購入や登録のプロセスなど）を通じたコンバージョン率を分析することや、サイト上のイベント間の相関関係を分析することができます（例えば、プライバシーポリシーを閲覧したユーザーのうち製品を購入したユーザーの割合など）。また、このテンプレートを使用して、同じレポート内の 2 つの異なるセグメントを並べて比較することもできます。<br/>このテンプレートでは、フォールアウトビジュアライゼーションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--cross-device-analysis"
+>title="ジャーニーのすべてのポイントでユーザーが使用したデバイスを表示します。"
+>abstract="**これにより**、ブランドとやり取りするユーザーの数、ユーザーが使用するデバイスのタイプ、複数のデバイスの使用がエクスペリエンスに与える影響をより深く理解できます。例えば、モバイルデバイスでタスクを開始し、後でデスクトップに移動してタスクを完了する頻度はどのくらいか。ユーザーがあるデバイスから別のデバイスへと移動する際の、最も一般的なパスは何か。どこからドロップアウトするか。成功した場所はどこか。その他。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、モバイルエクスペリエンス向けにユーザージャーニーの特定の部分を最適化できます。<br/>このテンプレートでは、フロービジュアライゼーション、フォールアウトビジュアライゼーション、コホート分析、人物指標および一意のデバイス指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--web-retention"
+>title="常連であるユーザーと、そのユーザーがサイトで行っていることを表示します。"
+>abstract="**これにより**、平均的なユーザーがサイトを訪問した回数、ユーザーがサイトに戻る頻度、再訪問の間の日数をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーをサイトに呼び戻すのに最も効果的なコンテンツを分析できます。<br/>このテンプレートでは、訪問指標とユニーク訪問者指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--audio-consumption-template"
+>title="すべてのデジタルデバイス全体でのメディアオーディオ消費のトレンドと上位指標を表示します。"
+>abstract="**これにより**、訪問者がサイト上でオーディオコンテンツを消費する方法をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も消費されているコンテンツを分析できます。<br/>このテンプレートでは、訪問指標とユニーク訪問者指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--media-recency-frequency-loyalty"
+>title="すべてのデジタルデバイス全体でのメディア消費のトレンドと上位指標を表示します。"
+>abstract="**これにより**、平均的なユーザーがサイトを訪問した回数、ユーザーがサイトに戻る頻度、再訪問の間の日数をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーをサイトに呼び戻すのに最も効果的なコンテンツを分析できます。<br/>このテンプレートでは、訪問指標とユニーク訪問者指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--reloadsRankedReport"
+>title="再読み込み中にディメンション項目が存在した回数を表示します。訪問者によるブラウザーの更新は、再読み込みをトリガーする最も一般的な方法です。"
+>abstract="**これにより**、特定のページで問題が発生し、訪問者にページを再読み込みするプロンプトが表示されるタイミングを特定できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、対処する必要がある問題が発生したページを評価できます。<br/>このテンプレートでは、再読み込み指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timeSpentPageRankedReport"
+>title="訪問者が各訪問中にサイトに滞在した平均時間を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
+>abstract="**これにより**、訪問者のエンゲージメントレベルと、訪問者がサイトに滞在した時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトの変更によって訪問者がサイトに滞在する時間が長くなったかどうかを評価できます。<br/>このテンプレートでは、日ディメンションと訪問あたりの滞在時間（秒）指標を使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--entryPageOriginalRankedReport"
+>title="訪問者の全期間を通じて、最初にサイトを訪問したときにアクセスする上位のページを表示します。"
+>abstract="**これにより**、サイトへのトラフィックを最も多く推進しているページを理解したり、サイトの訪問者が最初に持った印象を把握したりできます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、訪問者がサイトへの最初のアクセスで得るエクスペリエンスを最適化したり、訪問者がサイトに入ったときに最初に表示されるページが居心地が良く、サイトの他の領域へ移動する必要なリンクを提供していることを確認したりすることができます。<br/>このテンプレートでは、セッション指標を使用します。また、棒グラフビジュアライゼーションとフリーフォームテーブルビジュアライゼーションも使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--singlePageVisitsRankedReport"
+>title="単一の個別ページで構成された訪問数を表示します。"
+>abstract="**これにより**、訪問者のエンゲージメントレベルと、訪問者がサイトに滞在した時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトの変更によって訪問者がサイトに滞在する時間が長くなったかどうかを評価できます。<br/>このテンプレートでは、単一ページ訪問数ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--sitePerformanceOverview"
+>title="Adobe Experience Manager サイトのパフォーマンスデータを表示します。"
+>abstract="**これにより**、Adobe Experience Manager の価値実現をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、Experience Manager の設定を最適化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--itp-impact"
+>title="データの収集とレポートに関する Intelligent Tracking Prevention（ITP）の効果を表示および分析します。"
+>abstract="**これにより**、ITP によって課された cookie 制限による潜在的なデータ損失をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ITP の影響を最小限に抑えるために分析設定を適応できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -311,7 +445,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-content-consumption"
+>id="template--web-content-consumption"
 >title="どの web コンテンツが最も消費され、ユーザーのエンゲージメントを高めているかを表示します。"
 >abstract="**これにより**、ユーザーが最初にサイトを訪問した際にどこに移動しているか、ユーザーが最も訪問しているサイトのセクションはどれか、ユーザーをサイトから離れさせる可能性が最も高いページはどれかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーを最も重要なページに誘導するサイト上の経路やユーザーをサイトから離れさせる可能性が高いページを評価できます。<br/>このテンプレートは、ページディメンションとページビュー指標、訪問指標、ユニーク訪問者指標、入場率指標、バウンス率指標、退場率指標およびコンテンツ速度指標を使用します。また、入場、退場、上位のセクションにフロービジュアライゼーションを使用します。"
 
@@ -320,7 +454,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--media-content-consumption"
+>id="template--media-content-consumption"
 >title="どのメディアコンテンツが最も消費され、ユーザーのエンゲージメントを高めているかを表示します。"
 >abstract="**これにより**、ユーザーがどこから最初にサイトに入るのか、ユーザーが最も訪問しているサイトのセクションはどれか、ユーザーをサイトから離れさせる可能性が最も高いページはどれかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーを最も重要なページに誘導するサイト上の経路やユーザーをサイトから離れさせる可能性が高いページを評価できます。<br/>このテンプレートは、ページディメンションとページビュー指標、訪問指標、ユニーク訪問者指標、入場率指標、バウンス率指標、退場率指標およびコンテンツ速度指標を使用します。また、入場、退場、上位のセクションのフロービジュアライゼーション、最も一般的なページのページビューを表示する散布図ビジュアライゼーション、バケット化された時間でページビューを表示する棒グラフビジュアライゼーション、サイトでの平均滞在時間のトレンドビューを表示する折れ線グラフビジュアライゼーションも使用します。"
 
@@ -329,7 +463,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--page-summary-report"
+>id="template--page-summary-report"
 >title="プロパティをまたいだ任意のページに関する主要な情報を表示します。ページビュー、トレンドライン、フロービジュアライゼーションなどを表示します。"
 >abstract="**これにより**、訪問者が特定のページをどのように閲覧しているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、一定期間のページのパフォーマンスを分析したり、ページへのトラフィックを推進する要因をより深く理解したりすることができます。<br/>このテンプレートでは、ページビュー指標を使用します。また、折れ線グラフビジュアライゼーションとフロービジュアライゼーションも使用します。"
 
@@ -338,7 +472,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--entryPageRankedReport"
+>id="template--entryPageRankedReport"
 >title="訪問者が最初にサイトを訪問したときにアクセスする上位のページを表示します。"
 >abstract="**これにより**、サイトへのトラフィックを最も多く推進しているページを理解したり、サイトの訪問者が最初に持った印象を把握したりできます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、訪問者がサイトへの最初のアクセスで得るエクスペリエンスを最適化したり、訪問者がサイトに入ったときに最初に表示されるページが居心地が良く、サイトの他の領域へ移動する必要なリンクを提供していることを確認したりすることができます。<br/>このテンプレートでは、セッション指標を使用します。また、棒グラフビジュアライゼーションとフリーフォームテーブルビジュアライゼーションも使用します。"
 
@@ -347,7 +481,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--exitPageRankedReport"
+>id="template--exitPageRankedReport"
 >title="訪問者がサイトを離れる直前にアクセスした上位のページを表示します。"
 >abstract="**これにより**、どのページが訪問者をサイトから離れさせているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、一般的な出口ページを更新して、退出前のエクスペリエンスを最適化したり、コンテンツやリンクを追加して、訪問者がサイトに留まるようにしたりすることができます。<br/>このテンプレートでは、セッション指標を使用します。また、棒グラフビジュアライゼーションとフリーフォームテーブルビジュアライゼーションも使用します。"
 
@@ -373,10 +507,32 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### Web：コンバージョン {#web-conversion}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--productConversionReport"
+>id="aa-template--categoryRankedReport"
+>title="。"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--commerce-and-marketing-management"
+>title="販売向上に役立つ、コマースアクティビティの小売業者向けの事前定義済みインサイトを表示します。これは Magento のユーザーを対象にしていますが、どのオンライン小売業者でも利用できます。"
+>abstract="**これにより**、コマースアクティビティが販売数に貢献している仕組みをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ROI が最も高いアクティビティに合わせて予算を調整できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--productConversionReport"
 >title="製品コンバージョンファネルテンプレート"
 >abstract=""
 
@@ -385,7 +541,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--retail-products-template"
+>id="template--retail-products-template"
 >title="最もパフォーマンスの高い製品を表示します。"
 >abstract="**これにより**、どの製品が最も成功しているかをより深く理解できます。<br/>**学習した内容に基づいて**、様々な操作を行うことができます。例えば、成功している製品に対する資金を増やしたり、成功していない製品に対する資金を減らしたりすることができます。<br/>このテンプレートでは、製品ビュー、買い物かごへの追加、注文数、売上高、ユニットの各指標を使用します。製品ディメンションも使用します。"
 
@@ -394,7 +550,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartConversionReport"
+>id="template--cartConversionReport"
 >title="買い物かごへのアイテムの追加、買い物かごの表示、買い物かごからのアイテムの削除、チェックアウトなど、訪問者が主要なチェックアウトイベントを実行した回数を表示します。"
 >abstract="**これにより**、チェックアウトプロセスファネルのどの部分がコンバージョンにつながり、どの部分が買い物かごの放棄につながりやすいかをより深く理解できます。<br/>**学習した内容に基づいて**、様々な操作を行うことができます。例えば、チェックアウトプロセスの特定の段階でのフリクションを減らすことができます。<br/>このテンプレートは次を使用します。"
 
@@ -403,7 +559,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartsOvertimeReport"
+>id="template--cartsOvertimeReport"
 >title="買い物かごに製品を追加した訪問者の数を表示します。"
 >abstract="**これにより**、買い物かごに追加される製品の総数ではなく、買い物かごに製品を追加する訪問者の数をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、製品ページの有効性を測定できます。<br/>このテンプレートでは、買い物かご指標を使用します。"
 
@@ -412,7 +568,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartViewsOvertimeReport"
+>id="template--cartViewsOvertimeReport"
 >title="訪問者が買い物かごを表示した回数を表示します。"
 >abstract="**これにより**、チェックアウトのエクスペリエンスをより深く理解して、買い物かごの放棄率を減らしたり、様々な製品に関して買い物かごへの製品の追加からチェックアウトまでにかかった時間を分析したりできます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、買い物かごに最も長く留まっていて放棄されるリスクが最も高い製品に対して、値引を提供できます。<br/>このテンプレートでは、買い物かご表示指標を使用します。"
 
@@ -421,7 +577,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartAdditionsOvertimeReport"
+>id="template--cartAdditionsOvertimeReport"
 >title="訪問者が買い物かごに何かを追加した回数を表示します。"
 >abstract="**これにより**、顧客が買い物かごに追加するほどに関心が高い製品のコンバージョンファネルの部分をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、すべての顧客に対するおすすめ製品の提案を改善できます。これは、同じ買い物かごに頻繁に追加される製品を分析し、既に買い物かごに入っているアイテムに基づいて関連製品を提案することで実行できます。"
 
@@ -430,7 +586,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartRemovalsOvertimeReport"
+>id="template--cartRemovalsOvertimeReport"
 >title="訪問者が買い物かごから何かを削除した回数を表示します。"
 >abstract="**これにより**、顧客が製品に興味をなくしたコンバージョンファネルの部分をより深く理解したり、チェックアウトプロセスで問題が存在する可能性がある場所を理解したりできます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、複雑なユーザーエクスペリエンスなど、チェックアウトプロセスに存在する可能性のある障壁を取り除くことができます。<br/>このテンプレートは、買い物かごからの削除指標を使用します。"
 
@@ -439,7 +595,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--purchaseConversionReport"
+>id="template--purchaseConversionReport"
 >title="購入コンバージョンファネルテンプレート"
 >abstract=""
 
@@ -463,10 +619,158 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### Web：オーディエンス {#web-audience}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--countryGeoReport"
+>id="aa-template--timeZoneRankedReport"
+>title="サイトにアクセスした訪問者の上位のタイムゾーンを表示します。"
+>abstract="**これにより**、訪問者が滞在するタイムゾーンをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトのメンテナンスを最も少ない人数のユーザーに影響を与える時間に調整できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--domainRankedReport"
+>title="サイトにアクセスした訪問者の上位のドメインを表示します。"
+>abstract="**これにより**、訪問者がどの組織から来ているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツのターゲットを最大の顧客に向けることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--topLevelDomainRankedReport"
+>title="サイトにアクセスした訪問者の上位のドメインを表示します。"
+>abstract="**これにより**、訪問者がどの組織から来ているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツのターゲットを最大の顧客に向けることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--browserWidthRankedReport"
+>title="訪問者がサイトへのアクセス時に使用する上位のブラウザーの幅を表示します。"
+>abstract="**これにより**、訪問者に対するコンテンツの表示をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なブラウザーの幅を使用してサイトの新しいバージョンをテストすることでサイトの質を向上させることができます。これにより、品質管理の取り組みを最大化できます。<br/>このテンプレートでは、ブラウザーディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--browserHeightRankedReport"
+>title="訪問者がサイトへのアクセス時に使用する上位のブラウザーの高さを表示します。"
+>abstract="**これにより**、訪問者に対するコンテンツの表示をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なブラウザーの高さを使用してサイトの新しいバージョンをテストして、サイトの質を向上できます。これにより、品質管理の取り組みを最大化できます。<br/>このテンプレートでは、ブラウザーディメンションを使用します。 "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--operatingSystemRankedReport"
+>title="訪問者がサイトへのアクセス時に使用するオペレーティングシステムの名前とバージョンを表示します。"
+>abstract="**これにより**、訪問者が最も一般的に使用するオペレーティングシステムとバージョンをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、上位のオペレーティングシステムとバージョンを使用してサイトの新しいバージョンをテストすることでサイトの質を向上させることができます。これにより、品質管理の取り組みを最大化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--operatingSystemTypeRankedReport"
+>title="訪問者がサイトへのアクセス時に使用するオペレーティングシステムの名前を表示します。"
+>abstract="**これにより**、訪問者が最も一般的に使用するオペレーティングシステムをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、上位のオペレーティングシステムを使用してサイトの新しいバージョンをテストすることでサイトの質を向上させることができます。これにより、品質管理の取り組みを最大化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--returnFrequencyRankedReport"
+>title="訪問者がサイトへのアクセスに使用するモバイルデバイスへの携帯電話ネットワーク接続を提供する通信会社を表示します。"
+>abstract="**これにより**、どの携帯電話会社がユーザーベースの中で最も人気があるのかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、スムーズなユーザーエクスペリエンスを確保することを目的に、さまざまな携帯電話会社のネットワーク能力に基づいてコンテンツ配信をカスタマイズできます。<br/>このテンプレートでは、携帯電話会社ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--returnVisitorsOvertimeReport"
+>title="訪問者がサイトへのアクセスに使用するモバイルデバイスへの携帯電話ネットワーク接続を提供する通信会社を表示します。"
+>abstract="**これにより**、どの携帯電話会社がユーザーベースの中で最も人気があるのかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、スムーズなユーザーエクスペリエンスを確保することを目的に、さまざまな携帯電話会社のネットワーク能力に基づいてコンテンツ配信をカスタマイズできます。<br/>このテンプレートでは、携帯電話会社ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--visitNumberRankedReport"
+>title="訪問者のサイト訪問回数を表示します。"
+>abstract="**これにより**、訪問者がサイトに戻った際に関与している程度をより深く理解できます。これは、プロジェクトの日付範囲に関係なく、訪問者の全期間に適用されます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、頻繁に訪れる訪問者に対するマーケティング活動を調整できます。<br/>このテンプレートでは、訪問数ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--customerLoyaltyRankedReport"
+>title="以前に 0 回、1 回、2 回、3 回以上購入したサイトへの訪問者数を表示します。"
+>abstract="**これにより**、サイトが購入行動に与える影響をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、購入のために戻ってくる訪問者に焦点を当てることができます。これにより、新しい訪問者にも同様の行動を促すことができます。<br/>このテンプレートでは、顧客の忠誠度ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--daysBeforeFirstPurchaseRankedReport"
+>title="訪問者がサイトを初めて訪問してから購入するまでに経過した日数を表示します。例えば、訪問者が最初の訪問の 1 日後に購入した場合、それ以降の訪問またはイベントはすべて 1 日ディメンション項目に属します。"
+>abstract="**これにより**、訪問者が購入するまでにかかる時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、より迅速な獲得を促すためにサイトを更新できます。<br/>このテンプレートでは、初回購入前の日ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--daysSinceLastPurchaseRankedReport"
+>title="訪問者の現在のヒットと、その時点での最新の購入との間の経過時間を表示します。"
+>abstract="**これにより**、サイトで購入した後の訪問者の行動をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、フォローアップ購入を促すためにサイトを更新できます。<br/>このテンプレートでは、前回の購入からの日ディメンションを使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenSizeRankedReport"
+>title="訪問者がサイトへのアクセス時に使用する上位のモバイルの画面サイズを表示します。"
+>abstract="**これにより**、訪問者に対するコンテンツの表示をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なモバイルの画面サイズを使用してサイトの新しいバージョンをテストして、サイトの質を向上できます。これにより、品質管理の取り組みを最大化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenHeightRankedReport"
+>title="訪問者がサイトへのアクセス時に使用する上位のモバイルの画面の高さを表示します。"
+>abstract="**これにより**、訪問者に対するコンテンツの表示をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なモバイルの画面の高さを使用してサイトの新しいバージョンをテストして、サイトの質を向上できます。これにより、品質管理の取り組みを最大化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenWidthRankedReport"
+>title="訪問者がサイトへのアクセス時に使用する上位のモバイルの画面の幅を表示します。"
+>abstract="**これにより**、訪問者に対するコンテンツの表示をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なモバイルの画面の幅を使用してサイトの新しいバージョンをテストして、サイトの質を向上できます。これにより、品質管理の取り組みを最大化できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--countryGeoReport"
 >title="サイトの訪問者がどの国から訪問しているかを表示します。"
 >abstract="**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、国ディメンションを使用します。"
 
@@ -475,7 +779,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--stateGeoReport"
+>id="template--stateGeoReport"
 >title="サイトの訪問者がどの州（米国）から訪問しているかを表示します。これは、地理的地域テンプレートに似ていますが、米国に固有である点が異なります。"
 >abstract="**これにより**、米国のどの州から訪問する訪問者が最も多いかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、データを使用してこれらの州でのマーケティング活動に注力できます。<br/>このテンプレートでは、米国州ディメンションを使用します。"
 
@@ -484,7 +788,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--regionGeoReport"
+>id="template--regionGeoReport"
 >title="サイトの訪問者がどの地理的地域から訪問しているかを表示します。地域とは、国より小さく市区町村より大きい地理的地域です。一部の国では、地域とは、州または都道府県を指します。他の地域では、構成国、省、または大都市圏を指します。 "
 >abstract="**これにより**、どの地域から訪問する訪問者が最も多いかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの地域でのマーケティング活動に注力するデータを使用したり、第一言語が異なる地域でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、ID（変数と地域）ディメンションと地域ディメンションを使用します。 "
 
@@ -493,7 +797,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cityGeoReport"
+>id="template--cityGeoReport"
 >title="サイトの訪問者がどの市区町村から訪問しているかを表示します。"
 >abstract="**これにより**、どの市区町村からの訪問者が最も多いかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、データを使用してこれらの市区町村でのマーケティング活動に注力できます。<br/>このテンプレートでは、市区町村ディメンションを使用します。"
 
@@ -502,7 +806,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--dmaGeoReport"
+>id="template--dmaGeoReport"
 >title="サイトの訪問者がどの米国内の特定のマーケティング領域（DMA）から訪問しているかを表示します。"
 >abstract="**これにより**、どの地域からの訪問者が最も多くサイトを訪問しているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、データを使用して、最も成功した地域でのマーケティング活動に注力できます。 "
 
@@ -511,7 +815,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--languageRankedReport"
+>id="template--languageRankedReport"
 >title="訪問者がコンテンツの表示に好んで使用する上位の言語を示します。"
 >abstract="**これにより**、訪問者が最も頻繁に使用する言語をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も頻繁に使用される言語でのローカライゼーションやマーケティング活動に注力できます。<br/>このテンプレートでは、言語ディメンションを使用します。"
 
@@ -520,7 +824,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-technology-template"
+>id="template--web-technology-template"
 >title="技術概要"
 >abstract=""
 
@@ -529,7 +833,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--browserRankedReport"
+>id="template--browserRankedReport"
 >title="訪問者がサイトへのアクセス時に使用する上位のブラウザーの名前とバージョンを表示します。"
 >abstract="**これにより**、訪問者が最も一般的に使用するブラウザーをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、上位のブラウザーを使用してサイトの新しいバージョンをテストすることでサイトの質を向上させることができます。これにより、品質管理の取り組みを最大化できます。<br/>このテンプレートでは、ブラウザーディメンションを使用します。"
 
@@ -538,7 +842,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--browserTypeRankedReport"
+>id="template--browserTypeRankedReport"
 >title="訪問者がサイトへのアクセス時に使用する上位のブラウザーを開発した組織の名前を表示します。これは、同じブラウザーの異なるバージョンが別々のディメンション項目としてリストされない点でブラウザーテンプレートとは異なります。"
 >abstract="**これにより**、訪問者が使用する最も一般的なブラウザーをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、上位のブラウザーを使用してサイトの新しいバージョンをテストすることで、サイトの質を向上させることができます。これにより、品質管理の取り組みを最大化できます。<br/>このテンプレートはブラウザータイプディメンションを使用します。 "
 
@@ -563,10 +867,43 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### Web：獲得 {#web-acquisition}
 
+<!--CJA only-->
+
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--marketing-channel-overview-template"
+>id="aa-template--mobile-app-acquisition-template"
+>title="モバイルデバイスで web サイトでの訪問者の獲得方法を表示します。"
+>abstract="**これにより**、検索キーワードや参照ドメインなど、獲得につながる様々な要因についてより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も効果的なチャネルでのマーケティング活動に注力できます。<br/>このテンプレートでは、バウンス率指標とバウンス指標を使用します。また、検索エンジンディメンション、検索キーワードディメンション、入場ページディメンション、参照ドメインディメンション、トラッキングコードディメンション、リファラーディメンションも使用します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--advertisingAnalyticsPaidSearch"
+>title="Google および Bing のすべての有料検索データを並べて表示します。"
+>abstract="**これにより**、サイトに送信されるトラフィックの量と、顧客がコンバージョンを行っているかどうかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、広告キャンペーンのコスト効率を見積もることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--searchEngineRankRankedReport"
+>title="訪問者がサイトにクリックスルーした検索結果のページを表示します。例えば、サイトが検索エンジンの検索結果の 2 ページ目に表示される場合、この変数のディメンション項目は「検索ページ 2」になります。"
+>abstract="**これにより**、検索結果でのページのランキングの高さをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、SEO 戦略を改善して、コンテンツが検索結果の最初のページに表示されるようにすることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--marketing-channel-overview-template"
 >title="カスタム属性を使用する場合、このテンプレートは、訪問者がサイトにどのように到達するかを示します。"
 >abstract="**これにより**、最も効果的なマーケティングチャネルがどれかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、効果的なマーケティングチャネルへの投資を増やしたり、効果的でないマーケティングチャネルから撤退したりすることができます。<br/>このテンプレートでは、ID（変数とマーケティングチャネル）ディメンションと売上高指標を使用します。"
 
@@ -575,7 +912,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--firstouchChannelRankedReport"
+>id="template--firstouchChannelRankedReport"
 >title="訪問者のエンゲージメント期間中（デフォルトでは 30 日間）に訪問者と一致した最初のマーケティングチャネルを表示します。"
 >abstract="**これにより**、サイトへの最初のトラフィックを推進するマーケティングチャネルがどれかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も効果的な分野でのマーケティング活動に注力できます。<br/>このテンプレートでは、ファーストタッチチャネルディメンションを使用します。"
 
@@ -584,7 +921,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--firstouchChannelDetailRankedReport"
+>id="template--firstouchChannelDetailRankedReport"
 >title="訪問者のエンゲージメント期間中（デフォルトでは 30 日間）に訪問者と一致した最初のマーケティングチャネルの詳細を表示します。"
 >abstract="**これにより**、マーケティングチャネルと一致するヒットに何が貢献したかをより深く理解できます。例えば、訪問者がサイトを訪問し、「有料検索」マーケティングチャネルと一致した場合、チャネルの詳細を使用して、どの検索エンジンが使用されたか、どのキーワードを検索したかを確認できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も効果的な分野でのマーケティング活動に注力できます。<br/>このテンプレートでは、ファーストタッチチャネル詳細ディメンションを使用します。"
 
@@ -593,7 +930,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--campaignConversionReport"
+>id="template--campaignConversionReport"
 >title="キャンペーンコンバージョンファネル"
 >abstract=""
 
@@ -602,7 +939,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--retail-campaign-performance-template"
+>id="template--retail-campaign-performance-template"
 >title="マーケティングキャンペーンのパフォーマンスに関する詳細を表示します。"
 >abstract="**これにより**、売上高、製品表示、注文数など、キャンペーンに関連する様々な成功指標をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も売上高が大きいキャンペーンのマーケティング活動に注力できます。<br/>このテンプレートは、売上高指標、製品表示指標、買い物かごへの追加の指標、注文数指標、単位指標を使用します。また、トラッキングコードディメンションと参照ドメインディメンションも使用します。"
 
@@ -611,7 +948,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-acquisition-template"
+>id="template--web-acquisition-template"
 >title="Web サイトでの訪問者の獲得方法を表示します。"
 >abstract="**これにより**、検索キーワードや参照ドメインなど、獲得につながる様々な要因についてより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も効果的なチャネルでのマーケティング活動に注力できます。<br/>このテンプレートでは、バウンス率指標とバウンス指標を使用します。また、検索エンジンディメンション、検索キーワードディメンション、入場ページディメンション、参照ドメインディメンション、トラッキングコードディメンション、リファラーディメンションも使用します。"
 
@@ -620,7 +957,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchKeywordRankedReport"
+>id="template--searchKeywordRankedReport"
 >title="有料か自然かに関係なく、訪問者がサイトへ到達するのに使用した検索キーワードを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用するキーワードをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、使用されているキーワードとサイトトラフィックを促進するキーワードとの間の SEO ギャップを特定したり埋めたりすることができます。<br/>このテンプレートでは、検索キーワードディメンションを使用します。"
 
@@ -629,7 +966,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchPaidKeywordRankedReport"
+>id="template--searchPaidKeywordRankedReport"
 >title="訪問者がサイトへ到達するのに使用した検索キーワードで、有料検索検知と一致したものを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用するキーワードをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、使用されているキーワードとサイトトラフィックを促進するキーワードとの間の SEO ギャップを特定したり埋めたりすることができます。<br/>このテンプレートでは、検索キーワード - 有料ディメンションを使用します。 "
 
@@ -638,7 +975,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchNaturalKeywordRankedReport"
+>id="template--searchNaturalKeywordRankedReport"
 >title="訪問者がサイトへ到達するのに使用した検索キーワードで、有料検索検知と一致しなかったものを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用するキーワードをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、使用されているキーワードとサイトトラフィックを促進するキーワードとの間の SEO ギャップを特定したり埋めたりすることができます。<br/>このテンプレートでは、検索キーワード - 自然ディメンションを使用します。 "
 
@@ -647,7 +984,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchRankedReport"
+>id="template--searchRankedReport"
 >title="有料か自然かに関係なく、訪問者がサイトへ到達するのに使用した検索エンジンを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用する検索エンジンをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトへのトラフィックが最も多い検索エンジンに SEO の取り組みを集中させることができます。<br/>このテンプレートでは、検索エンジンディメンションを使用します。 "
 
@@ -656,7 +993,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchPaidRankedReport"
+>id="template--searchPaidRankedReport"
 >title="訪問者がサイトへ到達するのに使用した検索エンジンで、有料検索検知と一致したものを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用する検索エンジンをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトへのトラフィックが最も多い検索エンジンに SEO の取り組みを集中させることができます。<br/>このテンプレートでは、検索エンジン - 有料ディメンションを使用します。"
 
@@ -665,7 +1002,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchNaturalRankedReport"
+>id="template--searchNaturalRankedReport"
 >title="訪問者がサイトへ到達するのに使用した検索キーワードで、有料検索検知と一致しなかったものを表示します。"
 >abstract="**これにより**、サイトトラフィックにつながる検索で訪問者が使用する検索エンジンをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトへのトラフィックが最も多い検索エンジンに SEO の取り組みを集中させることができます。<br/>このテンプレートでは、検索エンジン - 自然ディメンションを使用します。"
 
@@ -674,7 +1011,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referringDomainRankedReport"
+>id="template--referringDomainRankedReport"
 >title="訪問者がサイトに到達するまでにクリックするドメインを表示します。"
 >abstract="**これにより**、どのサードパーティサイトが最もサイトへのトラフィックを増やしているかをより深く理解できます。（ディメンション項目を表示するには、外部サイトにリンクが存在し、訪問者がリンクをクリックする必要があります。）<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツを作成または調整して、上位の参照ドメインからの訪問者の関心により適合させるようにします。<br/>このテンプレートでは、参照ドメインディメンションを使用します。"
 
@@ -683,7 +1020,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referringDomainOriginalRankedReport"
+>id="template--referringDomainOriginalRankedReport"
 >title="訪問者がサイトに到達するまでにクリックする最初の参照ドメインを表示します。（設定した後は、その訪問者 ID の有効期間中にわたって同じ値が含まれます。）"
 >abstract="**これにより**、どのサードパーティサイトが最初にサイトへのトラフィックを増やしているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツを作成または調整して、上位の最初の参照ドメインからの訪問者の関心により適合させるようにします。<br/>このテンプレートでは、最初の参照ドメインディメンションを使用します。"
 
@@ -692,7 +1029,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referrerRankedReport"
+>id="template--referrerRankedReport"
 >title="訪問者がクリックしてサイトに到達するまでにどの URL にいたかを表示します。（ディメンション項目を表示するには、外部 URL にリンクが存在し、訪問者がリンクをクリックする必要があります。）"
 >abstract="**これにより**、どの特定の URL が最もサイトへのトラフィックを増やしているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツを作成または調整して、上位の URL からの訪問者の関心により適合させるようにします。<br/>このテンプレートでは、参照ドメインディメンションを使用します。</p>"
 
@@ -701,7 +1038,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referrerTypeRankedReport"
+>id="template--referrerTypeRankedReport"
 >title="訪問者がサイトに到達するまでにクリックした汎用チャネルを表示します。アドビでは、各チャネルのルールを維持します。使用できるチャネルには、検索エンジン、ソーシャルネットワーク、その他の web サイト、ハードドライブ、メールなどがあります。"
 >abstract="**これにより**、どのタイプのリファラーが最もサイトへのトラフィックを増やしているかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、コンテンツを作成または調整して、特定のチャネルからの訪問者の関心により適合させるようにします。<br/>このテンプレートでは、リファラータイプディメンションを使用します。"
 
@@ -735,10 +1072,12 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 <!-- add contextual help for Mobile app screens and mobile app actions -->
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-lifecycle-metrics-app-usage-template"
+>id="template--mobile-lifecycle-metrics-app-usage-template"
 >title="アプリのユーザー数、起動数、初回起動数、セッションの平均の長さを表示します。"
 >abstract="**これにより**、アプリが使用されている度合いをより深く理解できます。<br/>**学習した内容に基づいて**、様々な操作を行うことができます。例えば、使用量に合わせてスケールできるようにアプリのパフォーマンスを向上させることができます。"
 
@@ -747,7 +1086,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-journeys"
+>id="template--mobile-app-journeys"
 >title="モバイルアプリの主な使用パターンを表示します。"
 >abstract="**これにより**、人物がアプリを使用している仕組みをより深く理解できます。<br/>**学習した内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なワークフローをターゲットにして、人物がある画面から別の画面に移動する方法を改善できます。"
 
@@ -756,7 +1095,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-key-metrics"
+>id="template--mobile-app-key-metrics"
 >title="最も一般的なモバイルアプリの指標の一部を表示します。"
 >abstract="**これにより**、モバイルアプリの基本的なパフォーマンスをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、アプリの全体的なヘルスとパフォーマンスを評価できます。"
 
@@ -765,7 +1104,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-messaging"
+>id="template--mobile-app-messaging"
 >title="アプリのアプリ内メッセージとプッシュメッセージのパフォーマンスデータを表示します。"
 >abstract="**これにより**、人物がアプリ内メッセージング機能を使用している仕組みと、プッシュ通知がアプリへのトラフィックを効果的に推進している仕組みをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、アプリ内メッセージのプッシュ通知エクスペリエンスを改善できます。"
 
@@ -774,7 +1113,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-performance-template"
+>id="template--mobile-app-performance-template"
 >title="アプリのパフォーマンスと、ユーザーに対する問題が発生している場所を表示します。"
 >abstract="**これにより**、アプリを使用している人物に速度低下やパフォーマンス低下が発生しているかどうかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、問題が発生する前に既存の問題を修正することや、アプリのパフォーマンスを改善することができます。"
 
@@ -783,7 +1122,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-retention"
+>id="template--mobile-app-retention"
 >title="アプリに最も常連であるユーザーと、そのユーザーがアプリ内で行っていることを表示します。"
 >abstract="**これにより**、最も常連であるユーザーがアプリを使用している仕組みをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も常連であるユーザーが使用している機能に対するマーケティング活動を改善できます。"
 
@@ -807,7 +1146,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileCarrierRankedReport"
+>id="template--mobileCarrierRankedReport"
 >title="訪問者がサイトへのアクセスに使用するモバイルデバイスへの携帯電話ネットワーク接続を提供する通信会社を表示します。"
 >abstract="**これにより**、どの携帯電話会社がユーザーベースの中で最も人気があるのかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、スムーズなユーザーエクスペリエンスを確保することを目的に、さまざまな携帯電話会社のネットワーク能力に基づいてコンテンツ配信をカスタマイズできます。<br/>このテンプレートでは、携帯電話会社ディメンションを使用します。"
 
@@ -816,7 +1155,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileDeviceNameRankedReport"
+>id="template--mobileDeviceNameRankedReport"
 >title="訪問者がサイトへのアクセスに使用するモバイルデバイスのメーカーとモデルを表示します。"
 >abstract="**これにより**、どのモバイルデバイスがユーザーベースの中で最も人気があるのかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も一般的なモバイルデバイスに合わせてサイトのレンダリングを最適化できます。<br/>このテンプレートでは、モバイルデバイス名ディメンションを使用します。"
 
@@ -825,7 +1164,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileDeviceTypeRankedReport"
+>id="template--mobileDeviceTypeRankedReport"
 >title="携帯電話やタブレットなど、訪問者がサイトへのアクセスに使用するモバイルデバイスタイプを表示します。"
 >abstract="**これにより**、サイトへのアクセスに使用されている様々な種類のモバイルデバイスをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、最も使用されているモバイルデバイスのタイプに合わせてサイトを最適化できます。<br/>このテンプレートでは、モバイルデバイスタイプディメンションを使用します。"
 
@@ -834,7 +1173,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileManufacturerRankedReport"
+>id="template--mobileManufacturerRankedReport"
 >title="Apple や Samsung など、訪問者がサイトへのアクセスに使用するモバイルデバイスを製造しているメーカーを表示します。"
 >abstract="**これにより**、どのメーカーがユーザーベースの中で最も人気があるのかをより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、スムーズなユーザーエクスペリエンスを確保することを目的に、様々なメーカーの能力に基づいてコンテンツ配信をカスタマイズできます。<br/>このテンプレートでは、携帯電話メーカーディメンションを使用します。"
 
@@ -850,6 +1189,8 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 | **製造元** | Apple や Samsung など、訪問者がサイトへのアクセスに使用するモバイルデバイスを製造しているメーカーを表示します。<p>**これにより**、どのメーカーがユーザーベースの中で最も人気があるのかをより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、スムーズなユーザーエクスペリエンスを確保することを目的に、様々なメーカーの能力に基づいてコンテンツ配信をカスタマイズできます。</p><p>このテンプレートでは、モバイルの製造元ディメンションを使用します。</p> |
 
 ### 時間分類 {#time-parting}
+
+<!--CJA only-->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -958,6 +1299,8 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### クロスチャネル {#cross-channel}
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -1016,6 +1359,8 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 ### AJO {#AJO-templates}
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -1071,27 +1416,3 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 | **AJO概要レポート** | 環境内のすべてのキャンペーンとジャーニーに対するトラフィック指標とエンゲージメント指標の完全な概要を表示します。<p>**これにより** キャンペーンとジャーニーの効果の概要をより深く理解できます。 </p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ターゲットオーディエンスのエンゲージメントレベルに基づいてキャンペーンとジャーニーを調整できます。</p> |
 | **AJO サブスクリプション** | 特定のリストに関連付けられたプロファイルの購読と購読解除を表示します。<p>**これにより**、エンゲージメントとコンバージョンを推進する様々な購読キャンペーンやイニシアチブの効果をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ターゲットオーディエンスのエンゲージメントレベルに基づいて購読キャンペーンを調整できます。</p> |
 
-
-<!-- deleted: 
-
-| [!UICONTROL **Real-Time**] | View the dimensions and metrics that are currently being collected on your site. <p>**This can help you** better understand what is trending on your site.</p><p>**Based on what you learn, you might** respond to and actively manage the performance of your current marketing content and campaigns.</p> <p>This template uses the [Real-time report](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md).</p> | 
-| [!UICONTROL **Fallout**] | View where people leave or continue through a predefined sequence of pages.<p>**This can help you** better understand where people are falling out of the user journey.</p><p>**Based on what you learn, you might** do any number of things, like analyze conversion rates through specific processes on your site (such as a purchase or registration process), or analyze correlations between events on your site. (For example, what percentage of people who looked at your privacy policy went on to purchase a product.) You can also use this template to perform side-by-side comparisons of two different segments in the same report.</p> <p>This template uses the [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).</p> | 
-| [!UICONTROL **Cross-device analysis**] | View which devices people used across all points of the journey.<p>**This can help you** better understand how many people interact with your brand, the types of devices they use, and how their use of multiple devices affects their experience. For example, how often do people begin a task on a mobile device and then later move to a desktop to complete a task? What are the most common paths users take from one device to another? Where do they drop out? Where do they succeed? And so forth.</p><p>**Based on what you learn, you might** do any number of things, like optimize certain parts of the user journey for a mobile experience.</p> <p>This template uses the [Flow visualization](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md), [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md), [Cohort analysis](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), [the People metric](/help/components/metrics/people.md), and [the Unique devices metric](/help/components/metrics/unique-devices.md).</p> |
-| [!UICONTROL **Web retention**] | View who your loyal users are and what they are doing on your site.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
-| [!UICONTROL **Streaming Media Consumption**] | View  trends and top metrics of media consumption across all digital devices.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
-
--->
-
-<!--
-
-Ignore below this 
-
-| Menu item | Reports under this menu item |
-| --- | --- | 
-| **[!UICONTROL Most Popular]** | <ul><li>Training Tutorial (Pre-existing Workspace template)</li><li>Pages (What are my top pages?)</li><li>Page views (How many page views am I generating?)</li><li>Visits (How many visits am I getting?)</li><li>Visitors (How many visitors am I getting?)</li><li>Key metrics (How are my most important metrics performing?)</li><li>Site sections (Which sections of my site generated the most page views?)</li><li>Real-Time (What is trending on my site, and why?)</li><li>Next page (What are the next pages my visitors go to?)</li><li>Previous page (What are the previous pages my visitors went to?)</li><li>Campaigns (What campaigns are driving my key metrics?)</li><li>Products (What products are driving my key metrics?)</li><li>Last touch channel (Which last touch channel is performing best?</li><li>Last touch channel detail (Which specific last touch channel is outperforming others?)</li><li>Revenue (How is my revenue performing?)</li><li>Orders (How are my orders performing?)</li><li>Units (How many units am I selling?)</li></ul> | 
-| **[!UICONTROL Engagement]** | <ul><li>Key metrics (How are my most important metrics performing?)</li><li>Page views (How many page views am I generating?)</li><li>Pages (What are my top pages?)</li><li>Visits (How many visits am I getting?)</li><li>Visitors (How many visitors am I getting?)</li><li>Time spent per visit (How much time do my users spend per visit?)</li><li>Time prior to event (How much time do my users spend prior to a success event?)</li><li>Site sections (Which sections of my site generated the most page views?</li><li>Web content consumption (Which content is consumed most and is engaging users?)</li><li>Media content consumption (Which content is consumed most and is engaging users?)</li><li>Next and previous page flow (What are/were the next/previous paths my visitors take/took?)</li><li>Fallout (Where am I seeing fallout through my digital properties?)</li><li>Cross-device analysis (Using cross-device analysis in Analysis Workspace)</li><li>Web retention (Who are my loyal users and what do they do?)</li><li>Media audio consumption (What are trends and top metrics of audio consumption?)</li><li>Media recency, frequency, loyalty (Who are my loyal readers?)</li><li>Page analysis > Reloads (Which pages generate the most reloads?)</li><li>Page analysis > Time spent on page (How much time do my users spend on my pages?)</li><li>Entries & exits > Entry pages (What are my top entry pages?)</li><li>Entries & exits > Original entry pages (What page did my visitor originally enter from?)</li><li>Entries & exits > Single-page visits (Which pages generated the most single-page visits?)</li><li>Entries & exits > Exit pages (What are my top exit pages?)</li><li>Page Analysis > Page summary</li></ul> |
-| **[!UICONTROL Conversion]** | <ul><li>Products > Products (Which products are driving my key metrics?)</li><li>Products > Product performance (Which products are performing best?)</li><li>Products > Categories (What are my best performing product categories?</li><li>Shopping cart > Carts (How many users added a product to cart?</li><li>Shopping cart > Cart views (How many times did my visitors view their carts?)</li><li>Shopping cart > Cart additions (How often are users adding a product to their cart?)</li><li>Shopping cart > Cart removals (How often are users removing a product from their cart?)</li><li>Purchases > Revenue (How is my revenue performing?)</li><li>Purchases > Orders (How are my orders performing?)</li><li>Purchases > Units (How many units am I selling?)</li><li>[Magento: marketing and commerce](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#commerce)</li></ul> |
-| **[!UICONTROL Audience]** |<ul><li>People metric (How many people are interacting with my brand?)</li><li>Visitor profile > Location overview (Which locations are driving the most usage among users)</li><li>Visitor profile > Geosegmentation > Geo Counties, Geo US States, Geo Regions, Geo Cities, Geo US DMA (Which geographies are my users visiting from?)</li><li>Visitor profile > Languages (Which language do my users prefer?)</li><li>Visitor profile > Time zones (Which time zones are my users visiting from?)</li><li>Visitor profile > Domains (Which ISPs are my visitors using to access my site?)</li><li>Visitor profile > Top level domains (Which domains are driving traffic to my site?)</li><li>Visitor profile > Technology > Technology overview (What technologies are people using to access my site?)</li><li>Visitor profile > Technology > Browsers, Browser type, Browser width, Browser height (Which company's browser, browser version, and its width and height, are people using to access my site?)</li><li>Visitor profile > Technology > Operating system, Operating system types (Which OS and which version of it do my visitors use?)</li><li>Visitor profile > Technology > Mobile carrier (Which mobile carriers do my visitors use to access my site?)</li><li>Visitor retention > Return frequency (How much time passes between my user's current visit and previous visits?)</li><li>Visitor retention > Return visits (How many of my visits are returning users?)</li><li>Visitor retention > Visit number (Which visit number bucket drives most of my key metrics)</li><li>Visitor retention > Sales cycle > Customer loyalty (Which loyalty segment do my users belong to?)</li><li>Visitor retention > Sales cycle > Days before first purchase (How many days passed between my users' first visit and their first purchase?)</li><li>Visitor retention > Sales cycle > Days since last purchase (How many days have passed between my users' current visit and their last purchase? )</li><li>Visitor retention > Mobile > Devices and Device types (Which devices and device types are my visitors using?)</li><li>Visitor retention > Mobile > Manufacturer (Which mobile device manufacturer do my visitors use?)</li><li>Visitor retention > Mobile > Screen size, Screen height, Screen width (Which mobile screen size/height/width do my visitors have?)</li><li>Visitor retention > Mobile > [Mobile app usage](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app journeys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app metrics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app messaging](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app performance](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app retention](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li></ul> |
-| **[!UICONTROL Acquisition]** |<ul><li>Marketing channels > First touch channel, First touch channel detail (Which first touch channel, and which specific first touch channel is performing best?)</li><li>Marketing channels > First last channel, First last channel detail (Which last touch channel, and which specific last touch channel is performing best?)</li><li>Campaigns > Campaigns (Which campaigns are driving my key metrics?)</li><li>Campaigns > Campaign performance (What campaigns are driving the most revenue?)</li><li>Campaigns > Tracking code (Which campaign tracking codes perform the best?)</li><li>[Web acquisition](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#web)</li><li>[Mobile acquisition](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>[Advertising Analytics: paid search](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#advertising)</li><li>Search keywords - all, paid, natural (Which search keywords and paid/natural search keywords drive my key metrics the best?)</li><li>Search engines - all, paid, natural (Which search engines and paid/natural search engines drive my key metrics the best?)</li><li>All search page ranking (Which search page are my users visiting from?)</li><li>Referring domains (Which domains are driving traffic to my site?)</li><li>Original referring domains (What was the first domain users were on before visiting my site?)</li><li>Referrers (Which URLs were my users on before clicking through to my site?)</li><li>Referrer types (Which category do my referring URLs belong to?)</li></ul> |
-
--->
