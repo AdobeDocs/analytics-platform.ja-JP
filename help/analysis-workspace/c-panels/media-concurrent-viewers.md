@@ -4,10 +4,10 @@ description: Analysis Workspaceのメディア同時視聴者数パネルを使�
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 44%
+source-wordcount: '1207'
+ht-degree: 47%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="メディア同時閲覧者数"
 >abstract="パネルを作成して、特定のコンテンツまたは特定の期間の分平均オーディエンスを分析します。"
 
@@ -25,7 +25,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="メディア同時閲覧者数"
 >abstract="同時視聴者数の推移を分析、ピーク時の同時実行を表示、または分類して比較します。<br/><br>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネルの概要数値**：<br/>各行の日付または時刻の詳細と共に概要数値を表示するオプション。最大値は、ピーク時の同時実行の詳細を示します。最小値は、トラフの詳細を示します。<br/>**系列の分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。"
 
@@ -55,17 +55,17 @@ Analysis Workspaceでは、同時視聴者数指標は、セッション数に�
 
 +++
 
-## 用途
+## 使用
 
 **[!UICONTROL メディア同時視聴者数]** パネルを使用するには：
 
-1. **[!UICONTROL メディア同時視聴者数]** パネルを作成します。 パネルの作成方法について詳しくは、[ パネルの作成 ](panels.md#create-a-panel) を参照してください。
+1. **[!UICONTROL メディア同時視聴者数]** パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
-1. ストリーミングメディアコレクションアドオンから設定されたコンポーネントを含むパネルのデータビューを選択していることを確認してください。
+1. ストリーミングメディアコレクションから設定されたコンポーネントを含むパネルのデータビューを選択していることを確認してください。
 
-1. パネルの [ 入力 ](#panel-input) を指定します。
+1. パネルの[入力](#panel-input)を指定します。
 
-1. パネルの [output](#panel-output) を確認します。
+1. パネルの[出力](#panel-output)を確認します。
 
 ### パネル入力
 
@@ -123,7 +123,7 @@ Analysis Workspaceでは、同時視聴者数指標は、セッション数に�
 
 >[!MORELIKETHIS]
 >
->[ パネルを作成 ](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[メディア再生滞在時間パネル ](media-playback-time-spent.md)
 >[メディア分平均オーディエンスパネル ](average-minute-audience-panel.md)
 >

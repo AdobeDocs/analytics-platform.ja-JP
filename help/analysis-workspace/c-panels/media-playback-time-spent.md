@@ -4,10 +4,10 @@ description: Analysis Workspaceのメディア再生滞在時間パネルを使�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 54%
+source-wordcount: '1127'
+ht-degree: 56%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 54%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_button"
+>id="workspace_mediaplaybacktimespent_button"
 >title="メディア再生滞在時間"
 >abstract="様々なレベルの精度でビデオ消費の推移を分析するためのパネルを作成し、分類して比較できます。"
 
@@ -25,7 +25,7 @@ ht-degree: 54%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_panel"
+>id="workspace_mediaplaybacktimespent_panel"
 >title="メディア再生滞在時間"
 >abstract="ビデオ消費の推移を分析し、様々な精度を選択して、分類および比較します。<br/><br/>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネル概要数値（オプション）**：各行の日付または時間の詳細と共に概要の数値を表示するオプション。最大値は、ピーク時の再生に費やした時間の詳細を示します。最小値は、トラフの詳細を示します。合計には、再生に費やした合計時間の詳細が表示されます。<br/>**系列の分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。<br/>**時間形式**：ビジュアライゼーションの時間形式を時間または分で表示するオプション。"
 
@@ -57,17 +57,17 @@ Analysis Workspaceでの再生滞在時間は、特定の時点でメディア�
 
 +++
 
-## 用途
+## 使用
 
 **[!UICONTROL メディア再生滞在時間]** パネルを使用するには：
 
-1. **[!UICONTROL メディア再生滞在時間]** パネルを作成します。 パネルの作成方法について詳しくは、[ パネルの作成 ](panels.md#create-a-panel) を参照してください。
+1. **[!UICONTROL メディア再生滞在時間]** パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
-1. ストリーミングメディアコレクションアドオンから設定されたコンポーネントを含むパネルのデータビューを選択していることを確認してください。
+1. ストリーミングメディアコレクションから設定されたコンポーネントを含むパネルのデータビューを選択していることを確認してください。
 
-1. パネルの [ 入力 ](#panel-input) を指定します。
+1. パネルの[入力](#panel-input)を指定します。
 
-1. パネルの [output](#panel-output) を確認します。
+1. パネルの[出力](#panel-output)を確認します。
 
 
 ### パネル入力
@@ -118,7 +118,7 @@ Analysis Workspaceでの再生滞在時間は、特定の時点でメディア�
 
 >[!MORELIKETHIS]
 >
->[ パネルを作成 ](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[メディア分平均オーディエンスパネル ](average-minute-audience-panel.md)
 >[メディアの同時視聴者数パネル ](media-concurrent-viewers.md)
 >

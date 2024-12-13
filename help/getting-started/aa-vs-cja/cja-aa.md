@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: ht
-source-wordcount: '2320'
-ht-degree: 100%
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+workflow-type: tm+mt
+source-wordcount: '2319'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 | **レポート API へのアクセス** | フルサポート。[Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) を通じて使用できます。 |
 | **予定レポート／プロジェクト** | フルサポート |
 | **セグメント** | フルサポート。現在は、「フィルター」と呼ばれています。従来の Analysis Workspace の既存のセグメントは Customer Journey Analytics に移植されません。 |
-| **ストリーミングメディアコレクションアドオン** | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
+| **ストリーミングメディアコレクション** | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
 | **概要レベルデータソース** | フルサポート |
 | **仮想レポートスイート** | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
 | **仮想レポートスイートコンポーネントのキュレーション** | フルサポート。データビューの一部になりました。 |

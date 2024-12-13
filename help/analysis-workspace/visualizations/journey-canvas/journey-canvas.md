@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーとのやり取りに関する、アクションにつながる深いインサイトが得られます。
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 ジャーニーキャンバス内でジャーニーを変更できる場合、[ 変更内容はJourney Optimizerから同期されなくなります ](#synchronization-between-journey-optimizer-and-journey-canvas)。
+ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 ジャーニーキャンバス内のジャーニーに大きな変更を加えると、[ 変更はJourney Optimizerから同期されなくなります ](#synchronization-between-journey-optimizer-and-journey-canvas)。
 
 ### ジャーニーキャンバスを使用してJourney Optimizer ジャーニーを分析するメリット
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスでJourney Optimizer ジャーニーの分析を作成すると、データはJourney Optimizerからジャーニーキャンバスに向かって 1 方向にのみ同期されます。 つまり、ジャーニーキャンバスでジャーニーに加えた変更は、Journey Optimizerには反映されません。
 
-さらに、Journey Optimizerのジャーニーに加えられた変更は、ジャーニーキャンバスでジャーニーが変更されていない場合にのみ、ジャーニーキャンバスに同期されます。 ジャーニーキャンバスでジャーニーを変更した後は、Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスには反映されません。 ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
+さらに、Journey Optimizerでジャーニーに加えた変更は、[ジャーニーキャンバスでジャーニーが大幅に変更されていない場合のみ ](#differences-after-modifying-a-journey-in-journey-canvas)ジャーニーキャンバスと同期されます。 ジャーニーキャンバスでジャーニーを変更した後は、Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスには反映されません。 ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 
