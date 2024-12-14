@@ -4,7 +4,7 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 44%
@@ -16,7 +16,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="コンボ"
 >abstract="最初にフリーフォームテーブルを作成せずに、コンボグラフのビジュアライゼーションをすばやく作成します。"
 
@@ -39,7 +39,7 @@ ht-degree: 44%
 * 1 つの指標に最大 3 つのフィルターを適用できます。
 * 計算指標は複合グラフではサポートされません。
 
-## 用途
+## 使用
 
 1. ![ コメント ](/help/assets/icons/ComboChart.svg)[!UICONTROL  コンボ ] ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
 

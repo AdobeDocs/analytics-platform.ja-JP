@@ -4,7 +4,7 @@ title: プロジェクトの保存
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 20%
@@ -16,7 +16,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_addnotes"
+>id="workspace_project_addnotes"
 >title="メモを追加"
 >abstract="保存するプロジェクトバージョンに関するメモを追加します。これらのメモはバージョンと共に保存され、**[!UICONTROL プロジェクト]**／**[!UICONTROL 以前のバージョンを開く]**&#x200B;メニューからアクセスできます。"
 

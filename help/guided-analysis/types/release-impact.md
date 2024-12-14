@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 7%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_releaseimpact_button"
->title="リリース影響"
+>id="workspace_guidedanalysis_releaseimpact_button"
+>title="リリースの影響"
 >abstract="リリース前とリリース後の同じ期間にわたるパフォーマンスを比較します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -46,7 +46,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 表示]**：この分析と [ 初回使用時の影響 ](first-use-impact.md) を切り替えます。
 * **[!UICONTROL 主要指標]**：ユーザーごとに測定するイベント。 選択した各キーインジケータは、色付きの線で表されます。 イベントを表す行がテーブルに追加されます。 最大 3 つのイベントを含めることができます。
-* **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには、[!UICONTROL  ユーザーあたりのイベント ]、[!UICONTROL  ユーザーの割合 ]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザー ] があります。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL  ユーザーあたりのイベント ]、[!UICONTROL  ユーザーの割合 ]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザー ] があります。
 * **[!UICONTROL 要因]**：比較する前後の日付。
 * **[!UICONTROL セグメント]**：測定するセグメント。 選択したセグメントでは、セグメント条件に一致する個人にのみフォーカスするようにデータをフィルタリングします。
 

@@ -6,7 +6,7 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 58%
@@ -90,7 +90,7 @@ Customer Journey Analyticsデータを書き出すその他の方法も利用で
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_sendfile_password"
+>id="workspace_sendfile_password"
 >title="パスワードの暗号化"
 >abstract="指定されたパスワードは、スケジュールされたプロジェクトのファイルを暗号化するために使用されます。組織のセキュリティ要件では、パスワードの暗号化が必須です。"
 

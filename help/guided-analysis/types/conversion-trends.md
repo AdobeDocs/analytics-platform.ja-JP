@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_conversiontrends_button"
+>id="workspace_guidedanalysis_conversiontrends_button"
 >title="コンバージョントレンド"
 >abstract="コンバージョン率の推移を追跡します。"
 
@@ -48,7 +48,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 表示]**：この分析と [ ファネル ](funnel.md) を切り替えます。
 * **[!UICONTROL 手順]**：トラッキングするイベントタッチポイント。 グラフ内の各棒グラフはステップを表します。 最大 10 個の手順を含めることができます。
-* **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには [!UICONTROL  ユーザー ] と [!UICONTROL  セッション ] があります。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには [!UICONTROL  ユーザー ] と [!UICONTROL  セッション ] があります。
 * **[!UICONTROL セグメント]**：ファネルを比較するセグメント。 選択したセグメントごとに、各ステップが複数の棒に分割されます。 それぞれの色が異なるセグメントを表します。 最大 3 つのセグメントを含めることができます。
 
 ### グラフ設定

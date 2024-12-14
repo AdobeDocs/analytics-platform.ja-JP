@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 6%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_firstuseimpact_button"
->title="最初の使用の影響"
+>id="workspace_guidedanalysis_firstuseimpact_button"
+>title="初回使用の影響"
 >abstract="機能の初回使用が主要指標に与える影響を測定します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -52,7 +52,7 @@ ht-degree: 6%
 
 * **[!UICONTROL 表示]**：この分析と [ リリース ](release-impact.md) を切り替えます。
 * **[!UICONTROL 主要指標]**：ユーザーごとに測定するイベント。 選択した各キーインジケータは、色付きの線で表されます。 イベントを表す行がテーブルに追加されます。 最大 3 つのイベントを含めることができます。
-* **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには、[!UICONTROL  ユーザーあたりのイベント ]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザー ] があります。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL  ユーザーあたりのイベント ]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザー ] があります。
 * **[!UICONTROL 要因]**：この分析には次の 2 つの要因があります。
    * **[!UICONTROL 日付]**：初回使用イベントの検索を開始するまでの期間。
    * **[!UICONTROL イベント]**：分析を中心として配置し、最初に使用することを求めるイベントです。

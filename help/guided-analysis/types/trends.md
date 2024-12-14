@@ -5,10 +5,10 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 4%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_trends_button"
->title="傾向"
+>id="workspace_guidedanalysis_trends_button"
+>title="トレンド"
 >abstract="ユーザーエンゲージメントの推移を測定します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -46,7 +46,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 表示]**：この分析と [ 頻度 ](frequency.md) を切り替えます。
 * **[!UICONTROL イベントと指標]**：測定するイベントまたは指標。 各選択範囲は、グラフの系列および表の行として表されます。 イベントと指標をクエリで組み合わせることはできません。最初の選択を行ったら、残りのクエリの選択は同じタイプである必要があります。 最大 5 つまで選択できます。
-* **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには、イベント、セッション、ユーザー、ユーザーの割合、セッションあたりのイベント、ユーザーあたりのイベントがあります。 カウントされるオプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、イベント、セッション、ユーザー、ユーザーの割合、セッションあたりのイベント、ユーザーあたりのイベントがあります。 カウントされるオプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
 * **[!UICONTROL セグメント]**：測定するセグメント。選択した各セグメントは、グラフの系列とテーブルの行の数を 2 倍にします。 最大 5 つのセグメントを含めることができます。
 * **[!UICONTROL Breakdown プロパティ]**: グラフの系列およびテーブルの行を、選択したプロパティの値で分類します。 単一の分類プロパティがサポートされています。 テーブルには上位 20 個の値が表示され、グラフには最大 10 個の値を表示できます。 ![ 非表示アイコンを表示 ](../assets/hide-in-chart.png) アイコンを切り替えることで、グラフの行を非表示または表示できます。
 

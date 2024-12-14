@@ -4,7 +4,7 @@ title: 主要指標の概要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 41%
@@ -16,7 +16,7 @@ ht-degree: 41%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_keymetricsummary_button"
+>id="workspace_keymetricsummary_button"
 >title="主要指標の概要"
 >abstract="折れ線グラフ、変更概要グラフおよび数値の概要グラフを組み合わせたビジュアライゼーションを作成します。このビジュアライゼーションを使用すると、2 つの期間での重要な指標のトレンドを比較できます。"
 
@@ -39,7 +39,7 @@ ht-degree: 41%
 
 * エグゼクティブは新規予約が今四半期から前四半期にどのように変化したかを理解したいと考えています。
 
-## 用途
+## 使用
 
 1. ![ 主要指標 ](/help/assets/icons/KeyMetrics.svg)**[!UICONTROL 主要指標の概要]** ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
 
@@ -96,7 +96,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 * ここから、折れ線グラフの上にマウスポインターを置くと、個々の日の統計情報を表示できます。
 
 
-## 設定する
+## 設定
 
 ビジュアライゼーションを作成したら、元の設定を編集できます。
 

@@ -4,10 +4,10 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 42%
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 42%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="ヒストグラム"
 >abstract="数値データの分布を範囲のグループに表す、ヒストグラムのビジュアライゼーションを作成します。"
 
@@ -25,7 +25,7 @@ ht-degree: 42%
 
 ![ ヒストグラム ](/help/assets/icons/Histogram.svg)**[!UICONTROL ヒストグラム]** ビジュアライゼーションは、[!UICONTROL  棒グラフ ] ビジュアライゼーションに似ていますが、数値を範囲（バケット）にグループ化します。 Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#advanced-settings)で設定を変更できます。
 
-## 用途
+## 使用
 
 ヒストグラムを作成するには
 
@@ -49,7 +49,7 @@ ht-degree: 42%
 | ヒストグラムの設定 | 説明 |
 |---|---|
 | **[!UICONTROL 開始バケット]** | どのグループからヒストグラムが始まるかを決定します。1 がデフォルトです。開始の数を 0 から無限大まで（負の数はなし）設定できます。 |
-| **[!UICONTROL 指標バケット]** | データ範囲（グループ）の数を増減できます。グループの最大数は 50 です。 |
+| **[!UICONTROL 指標バケット]** | データ範囲（バケット）の数を増減できます。 グループの最大数は 50 です。 |
 | **[!UICONTROL 指標バケットのサイズ]** | 各グループのサイズを設定できます。例えば、グループサイズを 1 ページビューから 2 ページビューに変更できます。 |
 | **[!UICONTROL カウント方法]** | **[!UICONTROL ユーザー]**、**[!UICONTROL セッション]** または **[!UICONTROL イベント]** から選択します。 例えば、セッションごとのページビュー、1 人あたりのページビュー、1 つのイベントあたりのページビューなどです。 |
 

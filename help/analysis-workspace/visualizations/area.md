@@ -4,7 +4,7 @@ title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 32%
@@ -18,7 +18,7 @@ ht-degree: 32%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_area_button"
+>id="workspace_area_button"
 >title="階層グラフ"
 >abstract="複数の指標の積集合を表す、階層グラフのビジュアライゼーションを作成します。"
 
@@ -34,7 +34,7 @@ ht-degree: 32%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_areastacked_button"
+>id="workspace_areastacked_button"
 >title="積み重ね面グラフ"
 >abstract="複数の指標の積み重ねを表す、階層グラフのビジュアライゼーションを作成します。"
 

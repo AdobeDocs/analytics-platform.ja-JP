@@ -4,7 +4,7 @@ title: ドーナツ
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 32%
@@ -16,7 +16,7 @@ ht-degree: 32%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_donut_button"
+>id="workspace_donut_button"
 >title="ドーナツ"
 >abstract="合計の割合を比較する場合は一般的に、項目数が少ないドーナツのビジュアライゼーションを使用します。"
 

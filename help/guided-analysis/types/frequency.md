@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_frequency_button"
+>id="workspace_guidedanalysis_frequency_button"
 >title="頻度"
 >abstract="特定のイベントに対するリピートユーザーアクティビティの配分を表示します。"
 
@@ -46,7 +46,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 表示]**：この分析と [ トレンド ](trends.md) を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベントです。選択した各イベントは、個別のグラフとして表されます。 トレンドイベントを表す行がテーブルに追加されます。 最大 5 つのイベントを含めることができます。
-* **[!UICONTROL カウント対象]**：選択したイベントに適用するカウント方法。 オプションには、[!UICONTROL  ユーザー ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザーの割合 ] および [!UICONTROL  セッションの割合 ] があります。 この分析における割合ベースの指標の分母は、製品のすべてのアクティブユーザーではなく、選択したイベントを実行したユーザーまたはセッションです。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL  ユーザー ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザーの割合 ] および [!UICONTROL  セッションの割合 ] があります。 この分析における割合ベースの指標の分母は、製品のすべてのアクティブユーザーではなく、選択したイベントを実行したユーザーまたはセッションです。
 * **[!UICONTROL セグメント]**：測定するセグメント。選択した各セグメントは、グラフの棒の数とテーブルの行の数を 2 倍にします。 最大 5 つのセグメントを含めることができます。
 
 ### グラフ設定

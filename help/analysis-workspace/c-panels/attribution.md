@@ -4,10 +4,10 @@ description: Analysis Workspace でのアトリビューションパネルの使
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 44%
+ht-degree: 49%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="アトリビューション"
 >abstract="任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
+>id="workspace_attribution_panel"
 >title="アトリビューションパネル"
 >abstract="任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。<br/><br/>**パラメーター&#x200B;**<br/>**チャネル**<br/>&#x200B;属性の対象となるディメンション。このディメンションには、マーケティングチャネル、キャンペーン、その他のディメンションを指定できます。<br/>**モデル**<br/>：モデルは、タッチポインへのクレジット割り当て方法を決定します。<br/>**ルックバックウィンドウ**<br/>：この設定により、各コンバージョンに適用されるデータアトリビューションの期間が決まります。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
@@ -43,15 +43,15 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 * 主要なマーケティングシーケンスの視覚的分析：コンバージョンにつながったパスをマルチノードのフローおよびフォールアウトビジュアライゼーションで視覚的に調査できます。
 * 計算指標の構築：任意の数のアトリビューション割り当て方法を使用できます。
 
-## 用途
+## 使用
 
 **[!UICONTROL アトリビューション]** パネルを使用するには：
 
-1. **[!UICONTROL アトリビューション]** パネルを作成します。 パネルの作成方法について詳しくは、[ パネルの作成 ](panels.md#create-a-panel) を参照してください。
+1. **[!UICONTROL アトリビューション]** パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
-1. パネルの [ 入力 ](#panel-input) を指定します。
+1. パネルの[入力](#panel-input)を指定します。
 
-1. パネルの [output](#panel-output) を確認します。
+1. パネルの[出力](#panel-output)を確認します。
 
 ### パネル入力
 
@@ -93,5 +93,5 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
 >[!MORELIKETHIS]
 >
-> [ パネルを作成 ](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >

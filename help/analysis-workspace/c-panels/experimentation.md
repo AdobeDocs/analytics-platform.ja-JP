@@ -4,7 +4,7 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 20%
@@ -16,7 +16,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="実験"
 >abstract="パネルを作成して、様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較します。また、特定の結果を導くのに最適なバリエーションを判断します。"
 
@@ -25,9 +25,9 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="実験"
->abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導く上で最適な判断を下すことができます。<br/><br/>**パラメーター&#x200B;**<br/>**実験**：分析対象となる実験。<br>**バリアントの制御**：選択した実験のバリアントを制御します。<br/>**成功指標**：実験を分析するための最大 5 つの標準（計算されていない）成功指標。<br/>**指標の標準化**：ユーザー、セッションまたはイベント。この指標（カウント手法とも呼ばれます）は、上昇率計算の分母になります。この指標は、信頼性計算が適用される前のデータの集計方法にも影響します。"
+>abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断します。<br/><br/>**パラメーター&#x200B;**<br/>**実験**：分析対象となる実験。<br>**バリアントの制御**：選択した実験のバリアントを制御します。<br/>**成功指標**：実験を分析するための最大 5 つの標準（計算されていない）成功指標。<br/>**指標の標準化**：ユーザー、セッションまたはイベント。この指標（カウント手法とも呼ばれます）は、上昇率計算の分母になります。この指標は、信頼性計算が適用される前のデータの集計方法にも影響します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -69,16 +69,16 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
 これらのラベルが存在しない場合、操作する実験がないため、実験パネルは機能しません。
 
-## 用途
+## 使用
 
 **[!UICONTROL 実験]** パネルを使用するには：
 
-1. **[!UICONTROL 実験]** パネルを作成します。 パネルの作成方法について詳しくは、[ パネルの作成 ](panels.md#create-a-panel) を参照してください。
+1. **[!UICONTROL 実験]** パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
 
-1. パネルの [ 入力 ](#panel-input) を指定します。
+1. パネルの[入力](#panel-input)を指定します。
 
-1. パネルの [output](#panel-output) を確認します。
+1. パネルの[出力](#panel-output)を確認します。
 
    >[!IMPORTANT]
    >
@@ -109,7 +109,7 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
 実験パネルは、豊富なデータとビジュアライゼーションのセットを返し、実験のパフォーマンスをより深く理解するのに役立ちます。パネルの上部に、選択したパネル設定を示す [ 変更概要 ](../visualizations/summary-number-change.md) ビジュアライゼーションが表示されます。 右上の編集鉛筆を選択すると、いつでもパネルを編集できます。
 
-また、実験が決定的かどうかを示すテキストの概要を取得し、結果の概要を示します。 結論は統計的優位差に基づきます（[ 統計的手法 ](#adobes-statistical-methodology) を参照）。 上昇率と信頼性が最も高く、最もパフォーマンスの高いバリアントの概要数値概要数を確認できます。
+また、実験が決定的かどうかを示すテキストの概要を取得し、結果の概要を示します。 結論は統計的優位差に基づきます（[ 統計的手法 ](#adobes-statistical-methodology) を参照）。上昇率と信頼性が最も高く、最もパフォーマンスの高いバリアントの概要数値を確認できます。
 
 選択した各成功指標に対して、[ フリーフォームテーブル ](../visualizations/freeform-table/freeform-table.md) ビジュアライゼーションおよびコンバージョン率 [ 折れ線グラフ ](../visualizations/line.md) ビジュアライゼーションが表示されます。
 

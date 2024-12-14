@@ -5,7 +5,7 @@ title: データソースの管理
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 27%
@@ -17,7 +17,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection"
+>id="workspace_freeformtable_lockselection"
 >title="選択をロック"
 >abstract="この設定を有効にすると、ビジュアライゼーションがデータソースで選択した位置または選択した項目にロックされます。"
 
@@ -26,7 +26,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection_showtable"
+>id="workspace_freeformtable_lockselection_showtable"
 >title="テーブルを表示"
 >abstract="「**[!UICONTROL テーブルを表示]**」を選択すると、元のデータソースとは別に、現在のビジュアライゼーション用の新しいデータソースが生成されます。"
 
