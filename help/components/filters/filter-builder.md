@@ -4,10 +4,10 @@ title: フィルターの作成
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 8772f2dcd5f9c20ca9d366b8c172218f45e4713c
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 6%
+source-wordcount: '1494'
+ht-degree: 7%
 
 ---
 
@@ -21,6 +21,16 @@ ht-degree: 6%
 >abstract="オーディエンスは、フィルターから作成して、アクティブ化するために Adobe Experience Platform と共有できます。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filter_datapreview"
+>title="データのプレビュー"
+>abstract="このフィルターのデータをデータビューのデータと比較します。 プレビューの割合は、**過去 90 日間** のデータビューの合計数に基づきます。<br><br/> プレビューが読み込まれない場合、接続がまだバックフィル中の可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 **[!UICONTROL フィルタービルダー]** ダイアログでは、新しいフィルターの作成や、既存のフィルターの編集を行えます。 このダイアログには、「**[!UICONTROL フィルター]** マネージャーから作成または管理するフィルターのタイトルが **** 新しいフィルター [[!UICONTROL  または ] フィルターを編集 ](/help/components/filters/manage-filters.md) と表示されます。
@@ -37,15 +47,15 @@ ht-degree: 6%
 
 >[!ENDTABS]
 
-1. 次の詳細を指定します（![ 必須 ](/help/assets/icons/Required.svg) は必須）。
+1. 次の詳細を指定します（![必須](/help/assets/icons/Required.svg)は必須です）。
 
    | 要素 | 説明 |
    | --- | --- |
    | **[!UICONTROL データビュー]** | フィルターのデータ表示を選択できます。  定義したフィルターは、データビューの [ 設定 ](/help/data-views/create-dataview.md#settings-filters) タブでフィルターとして使用できます。 |
    | **[!UICONTROL プロジェクトのみのフィルター]** | フィルターが作成されたプロジェクトにのみ表示され、フィルターがコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL このフィルターをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、[ クイックフィルター ](quick-filters.md) インターフェイスから **[!UICONTROL ビルダーを開く]** を使用して [!UICONTROL  クイックフィルター ] を作成し、クイックフィルター情報を標準フィルターに切り替えた場合にのみ表示されます。 |
-   | **[!UICONTROL タイトル]** ![ 必須 ](/help/assets/icons/Required.svg) | フィルターに名前を付けます（例：`Last month mobile customers`）。 |
+   | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | フィルターに名前を付けます（例：`Last month mobile customers`）。 |
    | **[!UICONTROL 説明]** | フィルターの説明（例：`Filter to define the mobile customers for the last month`）を指定します。 |
-   | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、フィルターを整理します。 入力を開始して、選択可能な既存のタグを検索します。 または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、タグを削除します。 |
+   | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、フィルターを整理します。 入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
    | **[!UICONTROL 定義]** ![ 必須 ](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してフィルターを定義します。 |
 
    {style="table-layout:auto"}
