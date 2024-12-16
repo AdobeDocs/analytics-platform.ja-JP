@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3364'
 ht-degree: 14%
 
 ---
@@ -166,8 +166,8 @@ ht-degree: 14%
 | オプション | 説明 |
 | --- | --- |
 | ![ 更新 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL  更新 ] | 接続を更新し、最近追加したレコードを反映するには、「![ 更新 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)**[!UICONTROL 更新]**」を選択します。 |
-| ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**[!UICONTROL Delete]** | [ 削除 ](#delete-a-connection) この接続。 |
-| ![ データビューを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)**[!UICONTROL データビューを作成]** | この接続に基づいて ](#create-a-data-view) データビューを作成 [ します。 詳しくは、[ データビュー ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) を参照してください。 |
+| ![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)、**[!UICONTROL 削除]** | [ 削除 ](#delete-a-connection) この接続。 |
+| ![ データビューを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)**[!UICONTROL データビューを作成]** | この接続に基づいて ](#create-a-data-view) データビューを作成 [ します。 詳しくは、[ データビュー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views) を参照してください。 |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前。 |
 | [!UICONTROL 接続の説明] | この接続の目的を説明する、より詳細な説明。 |
 | [!UICONTROL サンドボックス] | この接続がデータセットを取得する ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)0}Experience Platformサンドボックス。このサンドボックスは、接続を初めて作成したときに選択されています。 [変更できません。 |
@@ -205,6 +205,46 @@ ht-degree: 14%
 
 
 ## 用途
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_keyusagemetrics"
+>title="主要な使用状況指標"
+>abstract="コアおよび履歴レポート可能行の月別および合計データを提供します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyingestedrows"
+>title="月別の取り込まれた行数"
+>abstract="システムに毎月追加される合計レコード数を測定して、データの増加と取り込み率に関するインサイトを提供します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyreportablerows"
+>title="月別のレポート可能な行数"
+>abstract="レポートに使用できる行数をトラッキングします。 レポート可能な行は、取り込まれた行から、取り込み中にスキップおよび削除された行を引いたものです。 レポート可能行は、請求とデータ使用の主要な指標として機能します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_detailbreakdown"
+>title="詳細な分類。"
+>abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別およびタグ別に詳細な指標を表示できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL  使用状況 ] インターフェイスには、取り込んだ行とレポート可能な行の使用状況がすべての接続で表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 監視の目的に加えて、使用状況 UI を使用してCustomer Journey Analyticsライセンスの更新を計画できます。
 
