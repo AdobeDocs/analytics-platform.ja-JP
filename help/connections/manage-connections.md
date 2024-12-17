@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3418'
 ht-degree: 14%
 
 ---
@@ -243,6 +243,25 @@ ht-degree: 14%
 >abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別およびタグ別に詳細な指標を表示できます。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="その他のデータセット"
+>abstract="2024 年 9 月より前の数か月間は、データがデータセットレベルで収集され、わかりやすくするために *その他のデータセット* として表示されていました。 2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、*その他のデータセット* は表示されなくなります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="不明なデータセットまたは接続"
+>abstract="不明なデータセットまたは接続が、その ID を使用して表示されます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 
