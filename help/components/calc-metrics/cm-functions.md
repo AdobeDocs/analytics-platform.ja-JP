@@ -4,7 +4,7 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -191,7 +191,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="中央値"
 >abstract="1 つの列の指標の中央値を返します。中央値は、一連の数値の中央にある数値です。 つまり、半分の数値は中央値よりも大きいか等しい値を持ち、半分の数値は中央値よりも小さいか等しい値を持ちます。"
 
@@ -426,7 +426,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="平方根"
 >abstract="数の正の平方根を返します。数の平方根は、2 乗してその数になる値です。"
 

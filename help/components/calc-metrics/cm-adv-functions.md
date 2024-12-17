@@ -4,9 +4,9 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
-source-wordcount: '4428'
+source-wordcount: '4438'
 ht-degree: 27%
 
 ---
@@ -874,7 +874,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="回帰を記録：相関係数"
->abstract="abstract"
+>abstract="回帰を記録：Y = a ln （X） + b相関係数を返します。"
 
 <!-- markdownlint-enable MD034 -->
 
