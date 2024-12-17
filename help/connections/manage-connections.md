@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
+source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
-source-wordcount: '3418'
-ht-degree: 14%
+source-wordcount: '3536'
+ht-degree: 13%
 
 ---
 
@@ -262,7 +262,32 @@ ht-degree: 14%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="データを使用できません"
+>abstract="2024 年 9 月より前の履歴データは、システム制限により利用できません。 指標は、2024 年 9 月以降に収集され、表示されます。 グラフはタイムラインの過去 18 か月を表示し、データが利用可能になると将来のデータが表示されます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="コアのレポート可能な行数"
+>abstract="過去 13 か月間に使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月から 2024 年 1 月のイベントタイムスタンプで使用可能な合計行を示します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="履歴のレポート可能な行数"
+>abstract="13 か月を超える期間で使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月より古いイベントタイムスタンプで使用可能な合計行を示します。"
+
+<!-- markdownlint-enable MD034 -->
 
 
 [!UICONTROL  使用状況 ] インターフェイスには、取り込んだ行とレポート可能な行の使用状況がすべての接続で表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 監視の目的に加えて、使用状況 UI を使用してCustomer Journey Analyticsライセンスの更新を計画できます。
