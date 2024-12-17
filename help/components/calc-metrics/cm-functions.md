@@ -4,10 +4,10 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,17 @@ ht-degree: 100%
 
 
 
-## 絶対値
+## 絶対値 {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="絶対値"
+>abstract="数の絶対値を返します。数の絶対値とは、正の値を持つ数です。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -49,7 +59,16 @@ ht-degree: 100%
 | 指標 | 絶対値を求める指標です。 |
 
 
-## 列の最大値
+## 列の最大値 {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="列の最大値"
+>abstract="指標列の一連のディメンション要素の中の最大値を返します。MAXV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -61,7 +80,17 @@ ht-degree: 100%
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 列の最小値
+## 列の最小値 {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="列の最小値"
+>abstract="指標列の一連のディメンション要素の中の最小値を返します。MINV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -73,7 +102,17 @@ ht-degree: 100%
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 列の合計値
+## 列の合計値 {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="列の合計値"
+>abstract="（1 つのディメンションの複数の要素の）1 つの列内の指標のすべての数値を加算します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -84,7 +123,17 @@ ht-degree: 100%
 | 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 
 
-## カウント
+## カウント {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="カウント"
+>abstract="1 つの列内の指標のゼロ以外の値の数（カウント）（ディメンション内でレポートされた一意の要素の数）を返します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -95,7 +144,16 @@ ht-degree: 100%
 | 指標 | カウントする指標です。 |
 
 
-## 指数
+## 指数 {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="指数"
+>abstract="指定された数の指数（e）を返します。定数 e は 2.71828182845904 と等しく、これは自然対数の底です。EXPONENT は、数値の自然対数である LN の逆数です。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -106,7 +164,17 @@ ht-degree: 100%
 | 指標 | 底 e に適用される指数です。 |
 
 
-## 平均
+## 平均 {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="平均"
+>abstract="列の指標の算術平均（平均）を返します"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -118,7 +186,17 @@ ht-degree: 100%
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 中央値
+## 中央値 {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="中央値"
+>abstract="1 つの列の指標の中央値を返します。中央値は、一連の数値の中央にある数値です。 つまり、半分の数値は中央値よりも大きいか等しい値を持ち、半分の数値は中央値よりも小さいか等しい値を持ちます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -130,7 +208,17 @@ ht-degree: 100%
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## モジュロ
+## モジュロ {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="モジュロ"
+>abstract="ユークリッド除法 で x を y で割った余りを返します。 "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -157,7 +245,17 @@ MODULO(-3,3) = 0
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## パーセンタイル
+## パーセンタイル {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="パーセンタイル"
+>abstract="n 番目のパーセンタイルを返します。これは、0 ～ 100 の値です。 n &lt; 0 の場合、関数は 0 を使用します。 n > 100 の場合、この関数は 100 を返します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -171,7 +269,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## 累乗演算子
+## 累乗演算子 {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="累乗演算子"
+>abstract="x の y 乗を返します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
@@ -183,7 +290,17 @@ x の y 乗を返します。
 | metric_Y | metric_X を何乗まで上げるかを示します。 |
 
 
-## 四分位数
+## 四分位数 {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="四分位数"
+>abstract="指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高が大きい製品の上位 25% を見つけることができます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -196,7 +313,16 @@ x の y 乗を返します。
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 四捨五入
+## 四捨五入 {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="四捨五入"
+>abstract="*数値*&#x200B;パラメーターのない四捨五入は、*数値*&#x200B;パラメーターが 0 の四捨五入と同じで、直近の整数に四捨五入します。*数値*&#x200B;パラメーターがある場合、ROUND は小数点の右側に&#x200B;*数*&#x200B;桁を返します。*数*&#x200B;が負数の場合、小数点の左側に 0 が返されます。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -216,15 +342,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
+## 行数 {#row-count}
 
-## 行数
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="行数"
+>abstract="指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*超過したユニーク数*&#x200B;は 1 としてカウントされます。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*超過したユニーク数*&#x200B;は 1 としてカウントされます。
 
 
-## 行の最大値
+## 行の最大値 {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="行の最大値"
+>abstract="各行の列の最大値。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -235,7 +378,17 @@ ROUND( 314.15, -2) = 300
 | 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
-## 行の最小値
+
+## 行の最小値 {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="行の最小値"
+>abstract="各行の列の最小値。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -248,7 +401,16 @@ ROUND( 314.15, -2) = 300
 
 
 
-## 行の合計
+## 行の合計 {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="行の合計"
+>abstract="各行の列の合計。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -259,7 +421,17 @@ ROUND( 314.15, -2) = 300
 | 指標 | 少なくとも 1 つの指標が必要ですが、任意の数の指標をパラメーターとして指定できます。 |
 
 
-## 平方根
+## 平方根 {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="平方根"
+>abstract="数の正の平方根を返します。数の平方根は、2 乗してその数になる値です。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -270,7 +442,16 @@ ROUND( 314.15, -2) = 300
 | 指標 | 平方根を求める指標です。 |
 
 
-## 標準偏差
+## 標準偏差 {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="標準偏差"
+>abstract="データのサンプル母集団に基づいて標準偏差（平方偏差の平方根）を返します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -282,7 +463,16 @@ ROUND( 314.15, -2) = 300
 | include_zeros | 計算にゼロ値を含めるかどうか。 |
 
 
-## 平方偏差
+## 平方偏差 {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="平方偏差"
+>abstract="データのサンプル母集団に基づいて平方偏差を返します。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -320,9 +510,6 @@ VARIANCE の式は次のようになります。
 | 3 |
 
 この列の平均は 2 です。この列の平方偏差は、((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3 です。
-
-
-
 
 <!--
 
