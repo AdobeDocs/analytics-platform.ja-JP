@@ -4,7 +4,7 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
 ht-degree: 27%
@@ -37,7 +37,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_and"
+>id="functions-and"
 >title="および"
 >abstract="接続詞。 ゼロに等しくないは true、ゼロに等しいは false と見なされます。 出力は 0 （false）または 1 （true）です。"
 
@@ -57,7 +57,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_approximate_count_distinct"
+>id="functions-count-distinct-metric"
 >title="重複を除外した概算カウント"
 >abstract="選択したディメンションのディメンション項目の個別概算カウントを返します。"
 
@@ -84,7 +84,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_cosine"
+>id="functions-acos"
 >title="逆余弦"
 >abstract="指標のアークコサイン（逆コサイン）を返します。アークコサインは、そのコサインが数値である角度です。0（ゼロ）～ pi の範囲のラジアンで角度が返されます。結果をラジアンから度に変換する場合は、180/PI （）で乗算します。"
 
@@ -107,7 +107,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_sine"
+>id="functions-asin"
 >title="逆正弦"
 >abstract="数のアークサイン（逆サイン）を返します。アークサインは、そのサインが数値である角度です。 -pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークサインを度数で表すには、その値に 180/PI （）を掛けます"
 
@@ -130,7 +130,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_tangent"
+>id="functions-atan"
 >title="円弧の接線"
 >abstract="数のアークタンジェント（逆タンジェント）を返します。アークタンジェントは、そのタンジェントが数値である角度です。 -pi/2 ～ pi/2 の範囲のラジアンで角度が返されます。アークタンジェントを度数で表すには、結果に 180/PI （）を掛けます。"
 
@@ -153,7 +153,7 @@ ht-degree: 27%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_t"
+>id="functions-cdf-t"
 >title="Cdf-T"
 >abstract="自由度 n の student-t 分布を持つ確率変数の z スコアが col より小さい確率を返します。"
 
@@ -184,7 +184,7 @@ CDF-T(x, ∞) ? cdf_z(x)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_z"
+>id="functions-cdf-z"
 >title="Cdf-Z"
 >abstract="正規分布を持つ確率変数の z スコアが col 未満になる確率を返します。"
 
@@ -213,7 +213,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_ceiling"
+>id="functions-ceil"
 >title="天井"
 >abstract="指定された値以上の最小の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、CEILING(Revenue) という数式を使用して、売上高を直近のドル値（$570）に切り上げます。"
 
@@ -233,7 +233,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence"
+>id="functions-waskr-confidence"
 >title="信頼性"
 >abstract="[ 時間一様中央限界理論と漸近的信頼性シーケンス ](https://arxiv.org/pdf/2103.06476) で説明されているように、WASKR メソッドを使用して任意の時間の有効な信頼性を計算します。"
 
@@ -258,7 +258,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_lower"
+>id="functions-waskr-confidence-interval-lower"
 >title="信頼性 (下限)"
 >abstract="[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](https://arxiv.org/pdf/2103.06476) 低い）を計算します。"
 
@@ -282,7 +282,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_upper"
+>id="functions-waskr-confidence-interval-upper"
 >title="信頼性 (上限)"
 >abstract="[ 時間一様中央限界理論と漸近的信頼性シーケンス **で説明されているように** WASKR メソッドを使用して任意の時間の有効な信頼性 ](https://arxiv.org/pdf/2103.06476) 上限）を計算します。"
 
@@ -307,7 +307,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cosine"
+>id="functions-cos"
 >title="余弦"
 >abstract="指定された角度のコサインを返します。角度が度単位の場合は、その角度に PI （）/180 を掛けます。"
 
@@ -327,7 +327,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cube_root"
+>id="functions-cube-root"
 >title="立方根"
 >abstract="数の正の立方根を返します。数の立方根は、3 乗してその数になる値です。"
 
@@ -350,7 +350,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative"
+>id="functions-cumul"
 >title="累積"
 >abstract="列 x の最後の n 個の要素の合計を返します。n > 0 の場合、最後の n 個の要素または x を合計します。n &lt; 0 の場合、前の要素を合計します。"
 
@@ -379,7 +379,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative_average"
+>id="functions-cumul-avg"
 >title="累積（平均）"
 >abstract="列 x の最後の n 個の要素の平均を返します。n > 0 の場合、最後の n 個の要素または x を合計します。n &lt; 0 の場合、前の要素を合計します。"
 
@@ -405,7 +405,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_equal"
+>id="functions-eq"
 >title="次と等しい"
 >abstract="等しい。 出力は 0 （false）または 1 （true）です。"
 
@@ -431,7 +431,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>id="functions-ls-corr-exp"
 >title="指数回帰：相関係数"
 >abstract="指数回帰：Y = a exp （X） + b。相関係数を返します。"
 
@@ -454,7 +454,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_predicted_y"
+>id="functions-ls-pred-exp"
 >title="指数回帰：予測 Y"
 >abstract="指数回帰：Y = a exp （X） + b。Y を返します。"
 
@@ -478,7 +478,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_intercept"
+>id="functions-ls-intercept-exp"
 >title="指数回帰：切片"
 >abstract="指数回帰：Y = a exp （X） + b。b を返します。"
 
@@ -501,7 +501,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_slope"
+>id="functions-ls-slope-exp"
 >title="指数回帰：勾配"
 >abstract="指数回帰：Y = a exp （X） + b。を返します。"
 
@@ -525,7 +525,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_floor"
+>id="functions-floor"
 >title="Floor"
 >abstract="指定された値以下の最大の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（$569）に切り捨てます。"
 
@@ -545,7 +545,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than"
+>id="functions-gt"
 >title="次よりも大きい"
 >abstract="出力は 0 （false）または 1 （true）です。"
 
@@ -570,7 +570,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than_or_equal"
+>id="functions-ge"
 >title="次よりも大きいか等しい"
 >abstract="次よりも大きいか等しい。 出力は 0 （false）または 1 （true）です。"
 
@@ -596,7 +596,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_cosine"
+>id="functions-cosh"
 >title="双曲線余弦"
 >abstract="数のハイパボリックコサインを返します。"
 
@@ -619,7 +619,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_sine"
+>id="functions-sinh"
 >title="双曲線正弦"
 >abstract="数のハイパボリックサインを返します。"
 
@@ -639,7 +639,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_tangent"
+>id="functions-tanh"
 >title="双曲線正接"
 >abstract="数のハイパボリックタンジェントを返します。"
 
@@ -659,8 +659,8 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_if"
->title="If"
+>id="functions-if"
+>title="  "
 >abstract="条件パラメーターの値がゼロ以外（true）の場合、結果は value_if_true パラメーターの値になります。 それ以外の場合は、value_if_false パラメーターの値になります。"
 
 <!-- markdownlint-enable MD034 -->
@@ -683,7 +683,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than"
+>id="functions-lt"
 >title="未満"
 >abstract="出力は 0 （false）または 1 （true）です。"
 
@@ -708,7 +708,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than_or_equal"
+>id="functions-le"
 >title="次よりも小さいか等しい"
 >abstract="次よりも小さいか等しい。 出力は 0 （false）または 1 （true）です。"
 
@@ -734,7 +734,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_lift"
+>id="functions-waskr-lift"
 >title="上昇率"
 >abstract="制御値と比較した比率の上昇率。"
 
@@ -753,7 +753,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_correlation_coefficient"
+>id="functions-ls-corr-linear"
 >title="線形回帰：相関係数"
 >abstract="線形回帰：Y = a X + b 相関係数を返します。"
 
@@ -778,7 +778,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_intercept"
+>id="functions-ls-intercept-linear"
 >title="線形回帰：切片"
 >abstract="線形回帰：Y = a X + bb を返します。"
 
@@ -803,7 +803,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_predicted_y"
+>id="functions-ls-pred-linear"
 >title="線形回帰：予測 Y"
 >abstract="線形回帰：Y = a X + bY を返します。"
 
@@ -828,7 +828,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_slope"
+>id="functions-ls-slope-linear"
 >title="線形回帰：勾配"
 >abstract="線形回帰：Y = a X + bを返します。"
 
@@ -850,7 +850,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_base_ten"
+>id="functions-log10"
 >title="ログベース 10"
 >abstract="数の 10 を底とする対数を返します。"
 
@@ -872,7 +872,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_coefficient"
+>id="functions-ls-corr-log"
 >title="回帰を記録：相関係数"
 >abstract="回帰を記録：Y = a ln （X） + b相関係数を返します。"
 
@@ -894,7 +894,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_intercept"
+>id="functions-ls-intercept-log"
 >title="ログ回帰：インターセプト"
 >abstract="回帰を記録：Y = a ln （X） + bb を返します。"
 
@@ -917,7 +917,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_predicted_y"
+>id="functions-ls-pred-log"
 >title="回帰を記録：予測 Y"
 >abstract="回帰を記録：Y = a ln （X） + bY を返します。"
 
@@ -940,7 +940,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_slope"
+>id="functions-ls-slope-log"
 >title="回帰を記録：勾配"
 >abstract="回帰を記録：Y = a ln （X） + bを返します。"
 
@@ -963,7 +963,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_natural_log"
+>id="functions-log"
 >title="自然対数"
 >abstract="数の自然対数を返します。自然対数の底は定数 e（2.71828182845904）です。LN は、EXP 関数の逆関数です。"
 
@@ -984,7 +984,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not"
+>id="functions-not"
 >title=" ではない"
 >abstract="否定（ブール値として）。 出力は 0 （false）または 1 （true）です。"
 
@@ -1005,7 +1005,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not_equal"
+>id="functions-ne"
 >title="次と等しくない"
 >abstract="等しくない。 出力は 0 （false）または 1 （true）です。"
 
@@ -1032,7 +1032,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_or"
+>id="functions-or"
 >title="または"
 >abstract="分離。 ゼロに等しくないは true、ゼロに等しいは false と見なされます。 出力は 0 （false）または 1 （true）です。"
 
@@ -1059,7 +1059,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_pi"
+>id="functions-pi"
 >title="円周率"
 >abstract="円周率を返します。円周率：3.14159.."
 
@@ -1075,7 +1075,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_correlation_coefficient"
+>id="functions-ls-corr-power"
 >title="累乗回帰：相関係数"
 >abstract="累乗回帰：Y = b X ^ a。相関係数を返します。"
 
@@ -1098,7 +1098,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_intercept"
+>id="functions-ls-intercept-power"
 >title="累乗回帰：インターセプト"
 >abstract="累乗回帰：Y = b X ^ a。b を返します。"
 
@@ -1122,7 +1122,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_predicted_y"
+>id="functions-ls-pred-power"
 >title="累乗回帰：予測 Y"
 >abstract="累乗回帰：Y = b X ^ a。Y を返します。"
 
@@ -1145,7 +1145,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_slope"
+>id="functions-ls-slope-power"
 >title="累乗回帰：勾配"
 >abstract="累乗回帰：Y = b X ^ a。を返します。"
 
@@ -1168,7 +1168,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>id="functions-ls-corr-quadratic"
 >title="二次回帰：相関係数"
 >abstract="二次回帰：Y = （a + bX） ^ 2、相関係数を返します。"
 
@@ -1189,7 +1189,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_intercept"
+>id="functions-ls-intercept-quadratic"
 >title="二次回帰：切片"
 >abstract="二次回帰：Y = （a + bX） ^ 2, a を返します。"
 
@@ -1211,7 +1211,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_predicted_y"
+>id="functions-ls-pred-quadratic"
 >title="二次回帰：予測 Y"
 >abstract="二次回帰：Y = （a + bX） ^ 2、Y を返します。"
 
@@ -1233,7 +1233,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_slope"
+>id="functions-ls-slope-quadratic"
 >title="二次回帰：勾配"
 >abstract="二次回帰：Y = （a + bX） ^ 2、b を返します。"
 
@@ -1256,7 +1256,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>id="functions-ls-corr-reciprocal"
 >title="逆回帰：相関係数"
 >abstract="逆回帰：Y = a + b X ^ -1。 相関係数を返します。"
 
@@ -1278,7 +1278,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_intercept"
+>id="functions-ls-intercept-reciprocal"
 >title="逆回帰：切片"
 >abstract="逆回帰：Y = a + b X ^ -1。 を返します。"
 
@@ -1300,7 +1300,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_predicted_y"
+>id="functions-ls-pred-reciprocal"
 >title="逆回帰：予測 Y"
 >abstract="逆回帰：Y = a + b X ^ -1。 Y を返します。"
 
@@ -1322,7 +1322,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_slope"
+>id="functions-ls-slope-reciprocal"
 >title="回帰：勾配"
 >abstract="逆回帰：Y = a + b X ^ -1。 b を返します。"
 
@@ -1346,7 +1346,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_sine"
+>id="functions-sin"
 >title="正弦"
 >abstract="指定された角度のサインを返します。角度が度単位の場合は、その角度に PI （）/180 を掛けます。"
 
@@ -1370,7 +1370,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_score"
+>id="functions-t-score"
 >title="t スコア"
 >abstract="[MEAN](cm-functions.md#mean) からの偏差を標準偏差で割ったもの。 [Z スコア ](#z-score) のエイリアス。"
 
@@ -1391,7 +1391,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_test"
+>id="functions-t-test"
 >title="t 検定"
 >abstract="t スコアが x および n 自由度の m テール型 t 検定を実行します。"
 
@@ -1438,7 +1438,7 @@ t スコアが x および n 自由度の m テール型 t 検定を実行しま
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_tangent"
+>id="functions-tan"
 >title="タンジェント"
 >abstract="指定された角度のタンジェントを返します。角度が度単位の場合は、その角度に PI （）/180 を掛けます。"
 
@@ -1459,7 +1459,7 @@ t スコアが x および n 自由度の m テール型 t 検定を実行しま
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_score"
+>id="functions-z-score"
 >title="Z スコア"
 >abstract="平均からの偏差を標準偏差で割ったもの。"
 
@@ -1493,7 +1493,7 @@ z スコアの式は次のようになります。
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_test"
+>id="functions-z-test"
 >title="Z 検定"
 >abstract="z スコアが x の n 方向の z 検定を実行します。"
 

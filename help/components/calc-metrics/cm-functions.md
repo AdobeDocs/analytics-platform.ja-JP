@@ -4,7 +4,7 @@ description: 計算指標ビルダーを使用すると、統計関数と数学�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -43,7 +43,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_absolute_value"
+>id="functions-abs"
 >title="絶対値"
 >abstract="数の絶対値を返します。数の絶対値とは、正の値を持つ数です。"
 
@@ -64,7 +64,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_maximum"
+>id="functions-col-max"
 >title="列の最大値"
 >abstract="指標列の一連のディメンション要素の中の最大値を返します。MAXV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。"
 
@@ -85,7 +85,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_minimum"
+>id="functions-col-min"
 >title="列の最小値"
 >abstract="指標列の一連のディメンション要素の中の最小値を返します。MINV は、複数のディメンション要素の 1 つの列（指標）内を垂直方向に評価します。"
 
@@ -107,7 +107,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_sum"
+>id="functions-col-sum"
 >title="列の合計値"
 >abstract="（1 つのディメンションの複数の要素の）1 つの列内の指標のすべての数値を加算します。"
 
@@ -128,7 +128,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_count"
+>id="functions-count"
 >title="カウント"
 >abstract="1 つの列内の指標のゼロ以外の値の数（カウント）（ディメンション内でレポートされた一意の要素の数）を返します。"
 
@@ -149,7 +149,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponent"
+>id="functions-exp"
 >title="指数"
 >abstract="指定された数の指数（e）を返します。定数 e は 2.71828182845904 と等しく、これは自然対数の底です。EXPONENT は、数値の自然対数である LN の逆数です。"
 
@@ -169,7 +169,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_mean"
+>id="functions-mean"
 >title="平均"
 >abstract="列の指標の算術平均（平均）を返します"
 
@@ -191,7 +191,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_median"
+>id="functions-median"
 >title="中央値"
 >abstract="1 つの列の指標の中央値を返します。中央値は、一連の数値の中央にある数値です。 つまり、半分の数値は中央値よりも大きいか等しい値を持ち、半分の数値は中央値よりも小さいか等しい値を持ちます。"
 
@@ -213,7 +213,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_modulo"
+>id="functions-modulo"
 >title="モジュロ"
 >abstract="ユークリッド除法 で x を y で割った余りを返します。 "
 
@@ -250,7 +250,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_percentile"
+>id="functions-percentile"
 >title="パーセンタイル"
 >abstract="n 番目のパーセンタイルを返します。これは、0 ～ 100 の値です。 n &lt; 0 の場合、関数は 0 を使用します。 n > 100 の場合、この関数は 100 を返します。"
 
@@ -274,7 +274,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_operator"
+>id="functions-pow"
 >title="累乗演算子"
 >abstract="x の y 乗を返します。"
 
@@ -295,7 +295,7 @@ x の y 乗を返します。
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quartile"
+>id="functions-quartile"
 >title="四分位数"
 >abstract="指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高が大きい製品の上位 25% を見つけることができます。"
 
@@ -318,7 +318,7 @@ x の y 乗を返します。
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_round"
+>id="functions-round"
 >title="四捨五入"
 >abstract="*数値*&#x200B;パラメーターのない四捨五入は、*数値*&#x200B;パラメーターが 0 の四捨五入と同じで、直近の整数に四捨五入します。*数値*&#x200B;パラメーターがある場合、ROUND は小数点の右側に&#x200B;*数*&#x200B;桁を返します。*数*&#x200B;が負数の場合、小数点の左側に 0 が返されます。"
 
@@ -347,7 +347,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_count"
+>id="functions-count-rows"
 >title="行数"
 >abstract="指定された列の行の数（ディメンション内でレポートされた一意の要素の数）を返します。*超過したユニーク数*&#x200B;は 1 としてカウントされます。"
 
@@ -363,7 +363,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_max"
+>id="functions-row-max"
 >title="行の最大値"
 >abstract="各行の列の最大値。"
 
@@ -384,7 +384,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_min"
+>id="functions-row-min"
 >title="行の最小値"
 >abstract="各行の列の最小値。"
 
@@ -406,7 +406,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_sum"
+>id="functions-row-sum"
 >title="行の合計"
 >abstract="各行の列の合計。"
 
@@ -426,7 +426,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_square_root"
+>id="functions-sqrt"
 >title="平方根"
 >abstract="数の正の平方根を返します。数の平方根は、2 乗してその数になる値です。"
 
@@ -447,7 +447,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_standard_deviation"
+>id="functions-stdev"
 >title="標準偏差"
 >abstract="データのサンプル母集団に基づいて標準偏差（平方偏差の平方根）を返します。"
 
@@ -468,7 +468,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_variance"
+>id="functions-variance"
 >title="平方偏差"
 >abstract="データのサンプル母集団に基づいて平方偏差を返します。"
 
