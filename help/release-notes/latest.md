@@ -4,9 +4,9 @@ description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,6 +44,6 @@ Report Builder：AN-361022
 
 * [2024年の以前の Customer Journey Analytics リリースノート](/help/release-notes/2024.md)
 * [Adobe Analytics リリースノート](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ja)
-* [Streaming Media Collection リリースノート ](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=ja)
+* [ストリーミングメディアコレクションのリリースノート](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=ja)
 * [Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
 * [Customer Journey Analytics ドキュメントのアップデート](/help/release-notes/doc-changes.md)

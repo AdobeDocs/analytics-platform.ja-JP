@@ -6,9 +6,9 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="データのプレビュー"
->abstract="このフィルターのデータと接続のデータを比較します。 プレビューの割合は、**過去 90 日間** の接続の合計数に基づきます。<br><br/> プレビューが読み込まれない場合、接続がまだバックフィル中の可能性があります。"
+>abstract="このフィルターのデータと接続のデータを比較します。プレビューの割合は、**過去 90 日間**&#x200B;の接続の合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

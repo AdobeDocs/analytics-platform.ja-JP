@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4219'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 派生フィールド重複排除関数 | 派生フィールド[重複排除](/help/data-views/derived-fields/derived-fields.md#deduplicate)関数に関するドキュメントを追加しました。 |
 | 一般的なエラーメッセージを更新しました。 | [一般的なエラーメッセージ](/help/analysis-workspace/workspace-faq/error-messages.md)に対するマイナーな更新を行いました。 |
 | **2024年6月** | |
-| ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集してAnalysis Workspaceに表示するストリーミングメディア機能のセットを参照する際に、「Media Analytics」と「Streaming Media」のインスタンスを、「Streaming Media Collection アドオン」と「Streaming Media Collection」という名前に置き換えました。 <p>これらのアップデートは、Customer Journey Analyticsドキュメントと [Streaming Media Collection ドキュメント ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview) で入手できます。</p> |
+| ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集して Analysis Workspace に表示するストリーミングメディア機能のセットを参照する際に、「メディア分析」と「ストリーミングメディア」のインスタンスを「ストリーミングメディアコレクションアドオン」と「ストリーミングメディアコレクション」という名前に置き換えました。 <p>これらの更新は、Customer Journey Analytics のドキュメントと[ストリーミングメディアコレクションのドキュメント](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview)の全体で利用できます。</p> |
 | グラフベースのステッチ | グラフベースのステッチの導入を受けて、[ステッチドキュメント](/help/stitching/overview.md)を更新し、再構築しました。 |
 | AI アシスタント | Customer Journey Analytics 用 AI アシスタントに関する[ドキュメント](../ai-assistant.md)を追加しました。 |
 | B2B ルックアップ用にデータセットを変換 | B2B ルックアップデータセットの変換を使用して、アカウント、機会、マーケティングリスト、キャンペーンなどの [B2B データに対するユーザーベースのルックアップ](/help/connections//transform-datasets-b2b-lookups.md)をサポートする方法に関するドキュメントを追加しました。 |
