@@ -7,7 +7,7 @@ role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="指数"
->abstract="指定された数の指数（e）を返します。定数 e は 2.71828182845904 と等しく、これは自然対数の底です。EXPONENT は、数値の自然対数である LN の逆数です。"
+>abstract="指定された数の指数（e）を返します。定数 e は 2.71828182845904 と等しく、これは自然対数の底です。EXPONENT（指数）は LN（数の自然対数）の逆関数です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="平均"
->abstract="列の指標の算術平均（平均）を返します"
+>abstract="1 つの列の指標の算術平均（平均値）を返します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -193,7 +193,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="中央値"
->abstract="1 つの列の指標の中央値を返します。中央値は、一連の数値の中央にある数値です。 つまり、半分の数値は中央値よりも大きいか等しい値を持ち、半分の数値は中央値よりも小さいか等しい値を持ちます。"
+>abstract="1 つの列の指標の中央値を返します。中央値は、一連の数の中央にある数値です。つまり、数の半分は中央値よりも大きいか等しい値であり、残りの半分は中央値よりも小さいか等しい値です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -252,7 +252,7 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-percentile"
 >title="パーセンタイル"
->abstract="n 番目のパーセンタイルを返します。これは、0 ～ 100 の値です。 n &lt; 0 の場合、関数は 0 を使用します。 n > 100 の場合、この関数は 100 を返します。"
+>abstract="0～100 の値である、n 番目のパーセンタイルを返します。n &lt; 0 の場合、関数は 0 を使用します。n > 100 の場合、関数は 100 を返します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -297,7 +297,7 @@ x の y 乗を返します。
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="四分位数"
->abstract="指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高が大きい製品の上位 25% を見つけることができます。"
+>abstract="指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高の多い上位 25 ％の製品を探すことができます。"
 
 <!-- markdownlint-enable MD034 -->
 
