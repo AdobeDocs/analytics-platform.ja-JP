@@ -660,7 +660,7 @@ CDF-Z(-3) ? 0.0013499
 
 >[!CONTEXTUALHELP]
 >id="functions-if"
->title="If"
+>title="  "
 >abstract="条件パラメーターの値がゼロ以外（true）の場合、結果は value_if_true パラメーターの値になります。 それ以外の場合は、value_if_false パラメーターの値になります。"
 
 <!-- markdownlint-enable MD034 -->
