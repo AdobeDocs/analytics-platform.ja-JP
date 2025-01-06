@@ -4,10 +4,10 @@ title: フィルターの作成
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: b1bf7dfa4b2b95c2b3c00b71719a93bc7394ed33
+source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
 workflow-type: tm+mt
 source-wordcount: '1494'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_datapreview"
 >title="データのプレビュー"
->abstract="このフィルターのデータをデータビューのデータと比較します。 プレビューの割合は、**過去 90 日間** のデータビューの合計数に基づきます。<br><br/> プレビューが読み込まれない場合、接続がまだバックフィル中の可能性があります。"
+>abstract="このフィルターのデータをデータビューのデータと比較します。 プレビューの割合は、**過去 90 日間** のデータビューの合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -213,7 +213,7 @@ ht-degree: 7%
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 | 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
 | インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
-| 繰り返しなしインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
+| 繰り返しなしインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
 
 3 つのフィルターを使用したイベントに関するレポートの例を次に示します。
 
