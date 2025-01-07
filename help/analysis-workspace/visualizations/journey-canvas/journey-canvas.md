@@ -4,10 +4,10 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1759'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="ジャーニーキャンバス"
->abstract="フォールアウト率と同様に、このビジュアライゼーションでは、ユーザーが一連のタッチポイントをどのように通過するか、または離脱するかを示します。ジャーニーキャンバスは、複数のエントリポイントとパスを持つジャーニー、または Journey Optimizer で作成されたジャーニーを分析する場合に使用します。"
+>abstract="一連のタッチポイントを通過する方法や一連のタッチポイントから抜け出す方法を示します。 複数のエントリポイントおよびパスを持つジャーニーに使用するか、Journey Optimizerで作成されたジャーニーを分析します。"
 
 <!-- markdownlint-enable MD034 -->
 
