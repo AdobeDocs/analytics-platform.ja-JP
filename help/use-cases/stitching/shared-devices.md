@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 8%
 
 ---
@@ -49,7 +49,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最終認証アトリビューション
 
-Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) を参照してください。
+Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) を参照してください。
 
 ステッチで last-auth アトリビューションを使用すると、次の表に示すように、ステッチされた ID が解決されます。
 
@@ -65,7 +65,7 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 
 ### デバイス分割
 
-デバイス分割は、共有デバイスからの匿名アクティビティを、その匿名アクティビティに最も近いユーザーに属性します。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
+デバイス分割は、共有デバイスの匿名アクティビティを、過去の情報を最新の既知のユーザーに属性にします。 デバイス分割は、現在、フィールドベースのステッチで使用されています。
 
 ステッチでデバイス分割アトリビューションを使用する場合、次の表に示すように、ステッチされた ID が解決されます。
 
