@@ -5,10 +5,10 @@ title: クラウドの書き出しアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 1ba2ef57a6ecc8246c1481f02d28ebeb62cc9909
+source-git-commit: cb4c2721867585fd11c0929f0947436872272da6
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 28%
+source-wordcount: '2230'
+ht-degree: 26%
 
 ---
 
@@ -66,7 +66,11 @@ ht-degree: 28%
 
 >[!IMPORTANT]
 >
->Customer Journey AnalyticsレポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データは AEP データランディングゾーンから自動的に削除されます。
+>書き出しアカウントに AEP データランディングゾーンを使用する際は、次の点を考慮してください。
+>
+> * Customer Journey AnalyticsレポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データは AEP データランディングゾーンから自動的に削除されます。
+> * AEP Data Landing Zone は、Azure またはAWS ストレージを使用します。 Azure を使用するように設定されたログイン会社を組織が使用している場合、AEP データランディングゾーンは Azure を使用します。 ログイン会社がAWSを使用するように設定されている場合、AEP Data Landing Zone はAWSを使用します。
+>
 
 1. 次のいずれかの方法で、クラウド書き出しアカウントの作成を開始します。
 
@@ -74,42 +78,75 @@ ht-degree: 28%
 
    * [Analysis Workspaceからの完全なテーブルの書き出し ](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) の場合
 
-1. 「[!UICONTROL **保存**]」を選択します。
+1. **[!UICONTROL AEP データランディングゾーン]** を選択した後、「**[!UICONTROL アカウントタイプ]**」フィールドで「[!UICONTROL **保存**]」を選択します。
 
-   [!UICONTROL **作成されたアカウントを書き出し**] ダイアログが表示されます。
+   AEP Data Landing Zone が Azure またはAWS ストレージを使用するように設定されているかどうかに応じて、次のダイアログのいずれかが表示されます。
 
-   ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
+   * **Azure ストレージ：**
 
-1. [!UICONTROL **SAS URI**] フィールドの内容をクリップボードにコピーします。 この SAS URI を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+     [!UICONTROL **作成されたアカウントを書き出し**] ダイアログが表示されます。
 
-   このフィールドが空の場合、Adobe Experience Platformへのアクセス権を付与されている必要があります。
+     ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
 
-1. Adobe Experience Platformで、コピーした SAS URI を使用するようにデータランディングゾーンコンテナを設定します。
+   * **AWS ストレージ：**
 
-   >[!NOTE]
-   >
-   >AEP データランディングゾーンのアカウントは Azure に基づいているので、AEP データランディングゾーンに書き出したレポートにアクセスする最も簡単な方法は、Azure ストレージエクスプローラーを使用することです。 次の手順では、この方法を使用します。
+     >[!AVAILABILITY]
+     >
+     >この節の内容は、Amazon Web Services（AWS）上で動作するExperience Platformの実装に適用されます。 AWSで実行されるExperience Platformは、現在、限られた数のお客様が利用できます。 サポートされるExperience Platformインフラストラクチャについて詳しくは、[Experience Platformマルチクラウドの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud) を参照してください。
 
-   1. まだダウンロードしていない場合は、[Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) をダウンロードします。
+     [!UICONTROL **作成されたアカウント**] ダイアログが表示されます。
 
-   1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
+     ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep-aws.png)
 
-      [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
+1. （条件付き） Azure ストレージを使用している場合：
 
-   1. Adobe Experience Platformのドキュメントに従って「[!UICONTROL **Blob コンテナ SAS URL**]」フィールドに移動したら、手順 3 でコピーした SAS URI を貼り付けます。
+   1. [!UICONTROL **SAS URI**] フィールドの内容をクリップボードにコピーします。 この SAS URI を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします。
+
+      このフィールドが空の場合、Adobe Experience Platformへのアクセス権を付与されている必要があります。
+
+   1. Adobe Experience Platformで、コピーした SAS URI を使用するようにデータランディングゾーンコンテナを設定します。
 
       >[!NOTE]
       >
-      >SAS URI は作成後 7 日で期限切れになるので、このアクションは 7 日ごとに実行する必要があります。 このプロセスを自動化するスクリプトを作成できます。
+      >Azure に基づく AEP データランディングゾーンアカウントを使用する場合、AEP データランディングゾーンに書き出すレポートにアクセスする最も簡単な方法は、Azure ストレージエクスプローラーを使用することです。 次の手順では、この方法を使用します。
 
+      1. まだダウンロードしていない場合は、[Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) をダウンロードします。
 
-      ![SAS URL フィールドを表示する接続情報を入力ウィンドウ ](assets/blob-container-sas-uri.png)
+      1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
+
+         [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
+
+      1. Adobe Experience Platformのドキュメントに従って「[!UICONTROL **Blob コンテナ SAS URL**]」フィールドに移動したら、手順 3 でコピーした SAS URI を貼り付けます。
+
+         >[!NOTE]
+         >
+         >SAS URI は作成後 7 日で期限切れになるので、このアクションは 7 日ごとに実行する必要があります。 このプロセスを自動化するスクリプトを作成できます。
+
+         ![SAS URL フィールドを表示する接続情報を入力ウィンドウ ](assets/blob-container-sas-uri.png)
 
    1. [!UICONTROL **次へ**] / [!UICONTROL **接続**] を選択します。
 
-1. Customer Journey Analyticsの [!UICONTROL **作成されたアカウントを書き出し**] ダイアログで [!UICONTROL **OK**] を選択します。
+   1. Customer Journey Analyticsの [!UICONTROL **作成されたアカウントを書き出し**] ダイアログで [!UICONTROL **OK**] を選択します。
 
-   ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
+      ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
+
+1. （条件付き）AWS ストレージを使用している場合：
+
+   1. 以下のフィールドの内容をクリップボードにコピーします（この情報を使用して、AEP データランディングゾーンからAnalysis Workspaceから書き出されたデータにアクセスします）。
+
+      * [!UICONTROL **アクセスキー ID**]
+
+      * **[!UICONTROL 秘密アクセスキー]**
+
+      * **[!UICONTROL セッショントークン]**
+
+      * **[!UICONTROL バケット名]**
+
+      * **[!UICONTROL DLZ フォルダー]**
+
+      ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep-aws.png)
+
+   1. [!UICONTROL **OK**] を選択します。
 
 1. [ クラウドの書き出し場所を設定 ](/help/components/exports/cloud-export-locations.md) に進みます。
 
