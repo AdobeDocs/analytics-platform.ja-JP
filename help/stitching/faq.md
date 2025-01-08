@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 78803a2062b38b0f4a80837d18dbf3e9cc609cc8
+source-git-commit: 02026709480872216ee76e842045517822c59bff
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 28%
+source-wordcount: '1919'
+ht-degree: 27%
 
 ---
 
@@ -46,6 +46,8 @@ ht-degree: 28%
 状況によっては、同じデバイスから複数のユーザーがログインすることがあります。例としては、自宅の共有デバイス、図書館の共有 PC、小売アウトレットのキオスクなどがあります。
 
 一時的な ID は永続 ID よりも優先されるので、共有デバイスは（同じデバイスから操作している場合でも）別のユーザーと見なされます。
+
+詳しくは、[ 共有デバイス ](/help/use-cases/stitching/shared-devices.md) のユースケースを参照してください。
 
 +++
 
