@@ -4,7 +4,7 @@ title: ブレットグラフ
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: b1cdaa871bf5040cf1cf436348b4ca03c5553a76
+source-git-commit: 9d2df264659341252c0ad02705eb4db04337ab0c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 63%
@@ -19,7 +19,7 @@ ht-degree: 63%
 >id="workspace_bullet_goalvalue"
 >title="目標値"
 >abstract="**[!UICONTROL 高い目標]**&#x200B;は、目指している主な目標です。**[!UICONTROL 低い目標]**&#x200B;と&#x200B;**[!UICONTROL 中程度の目標]**&#x200B;では、[!UICONTROL 高い目標]を下回る範囲を作成します。メモ：「**[!UICONTROL 割合]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph" text="箇条書き（Adobe Analytics）"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="箇条書き（Adobe Analytics）"
 
 <!-- markdownlint-enable MD034 -->
 
