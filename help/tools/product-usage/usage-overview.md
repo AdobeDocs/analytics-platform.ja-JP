@@ -1,9 +1,10 @@
 ---
 title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
-source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
+exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
+source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '367'
 ht-degree: 6%
 
 ---
@@ -24,6 +25,12 @@ ht-degree: 6%
 >[!IMPORTANT]
 >
 >この機能は、Adobe Experience Platformの契約上の行制限にカウントされます。 この機能を有効にする前に、この機能で生成されたデータを組織が調整できることを確認してください。
+
+## 製品の使用状況を有効にする
+
+**[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL ツール]** / **[!UICONTROL 製品の使用状況]**
+
+Customer Journey Analyticsでインターフェイスのこのセクションに移動すると、[ データ設定 ](data-settings.md) に移動し、この機能を有効にできます。
 
 ## 使用可能なディメンション
 
