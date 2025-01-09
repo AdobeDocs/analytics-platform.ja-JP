@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
 workflow-type: tm+mt
-source-wordcount: '3116'
-ht-degree: 60%
+source-wordcount: '3176'
+ht-degree: 59%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Experience Platformで：
 
 1. ![クエリを作成](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B;クエリを作成&#x200B;**]** を選択します。
 
-1. `cja` **[!UICONTROL ** データベース **]** を選択します。
+1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
 
 1. クエリを実行するには、SQL ステートメントを入力して「![ 再生 ](assets/Smock_Play_18_N.svg)」ボタンを選択します（または、`[SHIFT]` + `[ENTER]` キーを押します）。
 
@@ -85,7 +85,7 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. `cja` **[!UICONTROL ** データベース **]** を選択します。
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
 
    1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド ](assets/Smock_Copy_18_N.svg)」セクションの ![ コピー **]** を使用します。
 
@@ -110,7 +110,7 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. `cja` **[!UICONTROL ** データベース **]** を選択します。
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
 
    1. Power BI で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -153,7 +153,7 @@ Adobe Experience Platformで：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. ` cja` **[!UICONTROL ** データベース **]** を選択します。
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
 
    1. ![ コピー ](assets/Smock_Copy_18_N.svg) を使用して、Tableau Desktop で必要に応じて各 Postgres 資格情報パラメーター（[!UICONTROL  ホスト ]、[!UICONTROL  ポート ]、[!UICONTROL  データベース ]、[!UICONTROL  ユーザー名 ] など）をコピーします。
 

@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3749'
 ht-degree: 13%
 
 ---
@@ -151,9 +151,9 @@ ht-degree: 13%
 | スキーマ | データセットのベースとなるExperience Platformスキーマ。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _On]**新しいデータを読み込むようにデータセットが設定されている場合、および<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータインポートをインポートしないようにデータセットが設定されている場合。 |
 | [!UICONTROL  データを変換 ] | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _On]**変換が有効になっている該当するデータセットの場合、 <p>![ ステータスがグレー ](assets/status-gray.svg)   変換が有効になっていない該当するデータセットの **[!UICONTROL _x オフ_]**<p>他のすべてのデータセットに対して **[!UICONTROL なし]**、変換には適用されません。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**件のバックフィル数の処理<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _処理中のバックフィル]**処理のバックフィル数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _オン]**新しいデータを読み込むようにデータセットが設定されている場合。<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**件のバックフィル数の処理<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _処理中のバックフィル]**処理のバックフィル数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
 
 >[!IMPORTANT]
 >
@@ -195,16 +195,16 @@ ht-degree: 13%
 | [!UICONTROL 削除されたレコード] | 選択した期間に削除されたレコードの数。 |
 | [!UICONTROL 追加されたバッチ] | このデータセットに追加されたデータバッチの数。 |
 | [!UICONTROL スキップされたレコード] | 選択した期間の取り込み中にスキップされた行数。<p>レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID の欠落または無効なユーザー ID などがあります。 10 分ごとに更新されます。<p>無効なユーザー ID （`undefined`、`00000000`、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL  ユーザー ID] の数字と文字の任意の組み合わせ）は、特定のユーザーまたは人物に関連付けることのできない ID です。 これらの行はシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。 無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>[ ステッチ ](/help/stitching/overview.md) を使用して、未定義またはすべてがゼロのユーザー ID の代わりに有効なユーザー ID を生成する。</li><li>ユーザー ID を空白にする。この ID は取り込み中にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
-| [!UICONTROL 前回追加した日時] | 最後のバッチが追加された日時。 |
+| [!UICONTROL 前回追加した日時] | 前回バッチが追加されたタイムスタンプ。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _オン]**新しいデータを読み込むようにデータセットが設定されている場合。<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータを読み込まないようにデータセットが設定されている場合。 |
-| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**件のバックフィル数の処理<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、次を選択します <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**。 |
+| [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _処理中のバックフィル]**処理のバックフィル数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、次を選択します <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**。 |
 | [!UICONTROL データソースタイプ] | データセットを接続に追加する際に定義されるデータソースタイプ。 |
 | [!UICONTROL データセットタイプ] | [!UICONTROL  イベント ]、[!UICONTROL  プロファイル ]、[!UICONTROL  ルックアップ ]、[!UICONTROL  概要 ] のいずれかです。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection) |
 | [!UICONTROL スキーマ] | このデータセットのベースとなるExperience Platformスキーマ。 |
 | [!UICONTROL データセット ID] | このデータセット ID は、Experience Platformで生成されます。 |
 
 
-## 用途
+## 用途 {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -212,7 +212,6 @@ ht-degree: 13%
 >id="cja_connections_usage_keyusagemetrics"
 >title="主要な使用状況指標"
 >abstract="コアおよび履歴レポート可能行の月別および合計データを提供します。"
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -222,7 +221,6 @@ ht-degree: 13%
 >id="cja_connections_usage_monthlyingestedrows"
 >title="月別の取り込まれた行数"
 >abstract="システムに毎月追加される合計レコード数を測定して、データの増加と取り込み率に関するインサイトを提供します。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -231,7 +229,6 @@ ht-degree: 13%
 >id="cja_connections_usage_monthlyreportablerows"
 >title="月別のレポート可能な行数"
 >abstract="レポートに使用できる行数をトラッキングします。 レポート可能な行は、取り込まれた行から、取り込み中にスキップおよび削除された行を引いたものです。 レポート可能行は、請求とデータ使用の主要な指標として機能します。"
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -241,7 +238,6 @@ ht-degree: 13%
 >id="cja_connections_usage_detailbreakdown"
 >title="詳細な分類。"
 >abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別およびタグ別に詳細な指標を表示できます。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -250,7 +246,6 @@ ht-degree: 13%
 >id="cja_connections_usage_otherdatasets"
 >title="その他のデータセット"
 >abstract="2024 年 9 月より前の数か月間は、データがデータセットレベルで収集され、わかりやすくするために *その他のデータセット* として表示されていました。 2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、*その他のデータセット* は表示されなくなります。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -259,7 +254,6 @@ ht-degree: 13%
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="不明なデータセットまたは接続"
 >abstract="不明なデータセットまたは接続が、その ID を使用して表示されます。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -268,7 +262,6 @@ ht-degree: 13%
 >id="cja_connections_usage_datanotavailable"
 >title="データを使用できません"
 >abstract="2024 年 9 月より前の履歴データは、システム制限により利用できません。 指標は、2024 年 9 月以降に収集され、表示されます。 グラフはタイムラインの過去 18 か月を表示し、データが利用可能になると将来のデータが表示されます。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -277,7 +270,6 @@ ht-degree: 13%
 >id="cja_connections_corereportablerows"
 >title="コアのレポート可能な行数"
 >abstract="過去 13 か月間に使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月から 2024 年 1 月のイベントタイムスタンプで使用可能な合計行を示します。"
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -286,41 +278,94 @@ ht-degree: 13%
 >id="cja_connections_historicalreportablerows"
 >title="履歴のレポート可能な行数"
 >abstract="13 か月を超える期間で使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月より古いイベントタイムスタンプで使用可能な合計行を示します。"
-
 <!-- markdownlint-enable MD034 -->
 
 
-[!UICONTROL  使用状況 ] インターフェイスには、取り込んだ行とレポート可能な行の使用状況がすべての接続で表示されます。 このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 監視の目的に加えて、使用状況 UI を使用してCustomer Journey Analyticsライセンスの更新を計画できます。
+[!UICONTROL  使用状況 ] インターフェイスには、取り込んだ行とレポート可能な行の使用状況がすべての接続で表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
 
-Customer Journey Analyticsの使用状況を監視する時間範囲（過去 6 か月、年初から今日、または過去 2 年）と間隔（月または四半期）を選択できます。 インターフェイスは、次の 2 つのセクションに分かれています。
+このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 使用状況インターフェイスでは、モニタリングの目的に加え、Customer Journey Analyticsライセンスの更新を計画することもできます。
 
-* 取り込み行：すべてのCustomer Journey Analytics接続でイベントデータセットから取り込まれ/送信された行の総数。取り込み時にスキップされたレコードも含まれます
-* レポート可能行：すべてのCustomer Journey Analytics接続にわたるすべてのイベントデータを含むレポート可能行の合計
+使用状況インターフェイスでは、次の指標を使用します
 
-![usage-view](assets/usage-view.png)
+| Metric name | 説明 |
+|---|---|
+| 履歴のレポート可能な行数 | 13 か月を超える期間の行数。 |
+| コアのレポート可能な行数 | 過去 13 か月間の行数。 |
+| 取り込まれた行数 | 特定の期間に取り込まれた行数。 |
+| レポート可能な行数 | 特定の期間の接続の一部として持つデータの行数。 |
+| 累積行 | 特定の月までに取り込まれた行数。 |
 
-**[!UICONTROL 使用状況]** タブを選択して、インターフェイスにアクセスします。
-
-### 使用状況のレポート
-
-1. **[!UICONTROL 時間範囲]** を選択します。 **[!UICONTROL 過去 6 か月]**、**[!UICONTROL 年累計]**、または **[!UICONTROL 過去 2 年]** から選択できます。
-1. **[!UICONTROL 間隔]** を選択します。 **[!UICONTROL 毎月]** または **[!UICONTROL 四半期]** から選択できます。
-
-[!UICONTROL  取り込まれた行 ] の場合：
-
-* 月の 2 日ごとに更新されたすべての接続のすべてのイベントデータを含んだ、取り込まれた行の合計がパネルに表示されます。 パネル内で以下を行います。
-   * ボックスには、先月に取り込んだ行の数と、先月からの変化が % で（▲または▼で示されます）表示されます。
-   * 折れ線グラフに、◼︎[!UICONTROL  毎月取り込まれた行 ] が表示されます。<br/>1 か月に取得した月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
+>[!NOTE]
+>
+>コアレコード、履歴レコードおよび合計レコードについて、2024 年 7 月からデータが収集されます。 以前の履歴データについては、担当のアカウントマネージャーにお問い合わせください。
+>
 
 
-[!UICONTROL  レポート可能な行 ] について：
 
-* 月の 2 日ごとに更新されたすべての接続にわたるすべてのイベントデータを含んだ、レポート可能な行の合計がパネルに表示されます。 パネル内で以下を行います。
-   * レポート可能な行の累積合計数がボックスに表示されます。
-   * ボックスには、先月のレポート可能な行の合計数と、先月からの変化が % で表示されます（▲または▼で示されます）。
-   * 折れ線グラフには、◼︎[!UICONTROL  月別レポート可能行 ] が表示されます。<br/> 特定の月についてレポート可能な累積行の数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
-   * 折れ線グラフに、◼︎[!UICONTROL  レポート可能な累積行 ] が表示されます。<br/>1 か月についてレポート可能な月の行数を表示するポップアップを表示するには、折れ線グラフの任意のデータポイントにポインタを合わせます。
+使用状況インターフェイスは、次の 2 つのパネルで構成されます。
 
+* **[!UICONTROL 主要な使用状況指標]** パネル：レポート可能なコアデータと履歴データの行が表示されます。 また、このパネルでは、コアと履歴の両方のデータ行について、前月と比較した変更率も追跡します。
+
+  パネルがビジュアライゼーションに表示されます。
+
+   * **[!UICONTROL コアデータのレポート可能な行]**。
+
+     過去 13 ヶ月間にレポート可能な行の数。 概要番号は、先月（例：2024 年 12 月）のレポート可能なコア行の数（例：741M）です。
+
+   * **[!UICONTROL 履歴データレポート可能な行]**。
+
+     13 か月を超える期間のレポート可能な行の数。 概要番号は、先月（例：2024 年 12 月）のレポート可能な履歴行の数（例：127M）です。
+
+  ビジュアライゼーション内の積み重ね棒の上にマウスポインターを置くと、棒の特定の部分の行数がポップアップに表示されます（例：）。
+
+
+  ![ 主要な使用状況指標 ](assets/usage-key-usage-metrics.png)
+
+* 以下の 3 つのサブパネルを表示する組み合わせパネル。
+
++++ 取り込まれた行数
+
+  **[!UICONTROL 取り込まれた行]** サブパネルは、毎月システムに追加されたレコードの合計数を測定し、データの増加と取り込み率に関するインサイトを提供します。 サブパネルには、取り込まれた当月の合計行の概要と前月からの変化が表示されます。
+
+  ![ 取り込まれた行 ](assets/usage-ingested-rows.png)
+
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。
+
++++
+
++++ レポート可能な行数
+
+  **[!UICONTROL レポート可能な行]** ビジュアライゼーションは、取り込まれた行からスキップされた行と削除された行を減算することで、レポートに使用できる行数を追跡し、請求とデータ使用の主要な指標として機能します。 サブパネルには、次の 2 つの概要が表示されます。
+
+   * **[!UICONTROL 先月の合計]**：今月までのレポート可能な行の合計の概要。
+   * **[!UICONTROL 今月]**：今月のレポート可能行の合計と先月の変化の概要。
+
+  ![ レポート可能な行 ](assets/usage-reportable-rows.png)
+
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。
+
++++
+
++++ 詳細分類
+
+  **[!UICONTROL 詳細分類]** テーブルを使用すると、接続、データセット、サンドボックス、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更できるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続が、ID を使用してレポートされます。
+
+  2024 年 9 月より前の数か月間は、データがデータセットレベルで収集され、わかりやすくするために [!UICONTROL  その他のデータセット ] として表示されていました。 2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、[!UICONTROL  その他のデータセット ] は表示されなくなります。
+
+   * 分類を変更するには、「表示別 **[!UICONTROL と「分類]** の組み合わせ **[!UICONTROL を選択し]** す。
+
+     | **[!UICONTROL 表示別]** オプション | **[!UICONTROL 分類]** オプション |
+     |---|---|
+     | **[!UICONTROL 接続]** | **[!UICONTROL -]** および **[!UICONTROL データセット]** |
+     | **[!UICONTROL データセット]** | **[!UICONTROL -]** |
+     | **[!UICONTROL サンドボックス]** | **[!UICONTROL 接続]** |
+     | **[!UICONTROL タグ]** | **[!UICONTROL 接続]** |
+
+  ![ 詳細の分類 ](assets/usage-detail-breakdown.png)
+
++++
+
+  レポートする **[!UICONTROL 時間範囲]** を月単位で定義できます。 ![ カレンダー ](/help/assets/icons/Calendar.svg) を使用して、時間範囲を選択します。
 
 >[!MORELIKETHIS]
 >
