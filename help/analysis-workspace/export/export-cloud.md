@@ -5,10 +5,10 @@ title: クラウドへのCustomer Journey Analyticsレポートの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 4%
+source-wordcount: '2226'
+ht-degree: 3%
 
 ---
 
@@ -178,6 +178,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
    * [ オブジェクトの配列 ](/help/use-cases/object-arrays.md) の一部であるフィールドから作成されました（Adobe Analyticsの複数値変数と同様）
    * [ 永続性が有効 ](/help/data-views/component-settings/persistence.md) になっている
    * [ バインディングディメンション ](/help/use-cases/data-views/binding-dimensions-metrics.md) を使用していない
+* 異なる [ オブジェクトの配列 ](/help/use-cases/object-arrays.md) を参照するフィールドの複数のディメンション。 （同じオブジェクトの配列を参照する複数のディメンションを使用できます）。
 * 1 つのレポートにつき 5 つを超えるディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
 * テーブルの列：
    * 日付範囲
