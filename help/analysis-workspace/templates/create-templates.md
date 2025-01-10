@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
+source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,9 @@ ht-degree: 2%
    | **[!UICONTROL 説明]** | テンプレートの使用目的を説明する短い説明を入力します。 |
    | **[!UICONTROL このテンプレートを使用する理由]** | このテンプレートの使用方法について組織内のユーザーに通知するための短い説明を入力します。 この説明は、テンプレートのプレビューページに表示されます。 |
    | **[!UICONTROL チャネル]** | このテンプレートに適用される適用可能なチャネルを選択します。 複数のチャネル（**[!UICONTROL Web]**、**[!UICONTROL モバイル]**、**[!UICONTROL クロスチャネル]**、**[!UICONTROL コールセンター]** および **[!UICONTROL 店舗]**）を選択できます。<p>選択した項目によって、テンプレートの表示場所と、そのテンプレートにアクセスするユーザーに対して「組織テンプレート」ページから適用されるフィルターが決まります。</p> |
-   | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。 **[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]** など、複数のユースケースを選択できます。 <p>選択した項目によって、テンプレートの表示場所と、そのテンプレートにアクセスするユーザーに対して「組織テンプレート」ページから適用されるフィルターが決まります。</p> |
+   | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。 複数のユースケース（**[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]**）を選択できます。 <p>選択した項目によって、「組織テンプレート」 ページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**注意：** **[!UICONTROL Journey Optimizer]** を選択すると、Adobe Journey Optimizerでもテンプレートを使用できるようになります。 Journey Optimizerでは、**[!UICONTROL レポート]** ページにドロップダウンメニューが表示され、このテンプレートまたはデフォルトテンプレートを選択できます。 詳しくは、Journey Optimizer ドキュメントの [ 更新されたレポートエクスペリエンスの概要 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) を参照してください。 |
+   | **[!UICONTROL Journey Optimizer アクティビティタイプ]** | このテンプレートに関連付けるJourney Optimizer アクティビティのタイプを選択します：**[!UICONTROL キャンペーン]**、**[!UICONTROL ジャーニー]**、**[!UICONTROL ランディングページ]**、**[!UICONTROL レポート]** または **[!UICONTROL サブスクリプション]**。 <p>このテンプレートをすべてのアクティビティタイプに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「ユースケース ]**フィールドで**[!UICONTROL  0}Journey Optimizer ]**が選択されている場合にのみ表示されます。**[!UICONTROL </p> |
+   | **[!UICONTROL Journey Optimizer アクティビティ]** | このテンプレートに関連付けるJourney Optimizer アクティビティを選択します。 <p>このテンプレートを選択したアクティビティタイプのすべてのアクティビティに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「ユースケース ]**フィールドで**[!UICONTROL  0}Journey Optimizer ]**が選択されている場合にのみ表示されます。**[!UICONTROL </p> |
    | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ユーザーは、追加するタグでテンプレートのリストをフィルタリングできます。 |
 
 1. [!UICONTROL **テンプレートとして保存**] を選択します。
@@ -73,6 +75,25 @@ ht-degree: 2%
    1. その他アイコンを選択し、「**[!UICONTROL 編集]** または **[!UICONTROL 削除]** を選択します。
 
       ![ 会社テンプレートカードの編集または削除 ](assets/company-template-card-edit-delete.png)
+
+1. テンプレートを編集する場合は、必要な編集を行い、[!UICONTROL **プロジェクト**]/**[!UICONTROL テンプレートとして保存]** を選択します。
+
+   ![ 会社テンプレート ](assets/company-template-save.png)
+
+1. [!UICONTROL  テンプレートとして保存 ] ダイアログボックスで、次の情報を指定します。
+
+   | フィールド | 説明 |
+   |---------|----------|
+   | **[!UICONTROL 名前]** | テンプレートのわかりやすい名前を指定します。 |
+   | **[!UICONTROL 説明]** | テンプレートの使用目的を説明する短い説明を入力します。 |
+   | **[!UICONTROL このテンプレートを使用する理由]** | このテンプレートの使用方法について組織内のユーザーに通知するための短い説明を入力します。 この説明は、テンプレートのプレビューページに表示されます。 |
+   | **[!UICONTROL チャネル]** | このテンプレートに適用される適用可能なチャネルを選択します。 複数のチャネル（**[!UICONTROL Web]**、**[!UICONTROL モバイル]**、**[!UICONTROL クロスチャネル]**、**[!UICONTROL コールセンター]** および **[!UICONTROL 店舗]**）を選択できます。 チャネルを選択していない場合、テンプレートはすべてのチャネルに含まれます。<p>選択した項目によって、テンプレートの表示場所と、そのテンプレートにアクセスするユーザーに対して「組織テンプレート」ページから適用されるフィルターが決まります。</p> |
+   | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。 複数のユースケース（**[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]**）を選択できます。 <p>選択した項目によって、「組織テンプレート」 ページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**注意：** **[!UICONTROL Journey Optimizer]** を選択すると、Adobe Journey Optimizerでもテンプレートを使用できるようになります。 Journey Optimizerでは、**[!UICONTROL レポート]** ページにドロップダウンメニューが表示され、このテンプレートまたはデフォルトテンプレートを選択できます。 詳しくは、Journey Optimizer ドキュメントの [ 更新されたレポートエクスペリエンスの概要 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) を参照してください。 |
+   | **[!UICONTROL Journey Optimizer アクティビティタイプ]** | このテンプレートに関連付けるJourney Optimizer アクティビティのタイプを選択します：**[!UICONTROL キャンペーン]**、**[!UICONTROL ジャーニー]**、**[!UICONTROL ランディングページ]**、**[!UICONTROL レポート]** または **[!UICONTROL サブスクリプション]**。 <p>このテンプレートをすべてのアクティビティタイプに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「ユースケース ]**フィールドで**[!UICONTROL  0}Journey Optimizer ]**が選択されている場合にのみ表示されます。**[!UICONTROL </p> |
+   | **[!UICONTROL Journey Optimizer アクティビティ]** | このテンプレートに関連付けるJourney Optimizer アクティビティを選択します。 <p>このテンプレートを選択したアクティビティタイプのすべてのアクティビティに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「ユースケース ]**フィールドで**[!UICONTROL  0}Journey Optimizer ]**が選択されている場合にのみ表示されます。**[!UICONTROL </p> |
+   | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ユーザーは、追加するタグでテンプレートのリストをフィルタリングできます。 |
+
+1. [!UICONTROL **テンプレートとして保存**] を選択します。
 
 ## テンプレートの名前変更、タグ付け、承認
 
