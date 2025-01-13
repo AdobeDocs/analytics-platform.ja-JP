@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノートを表示
 description: 最新の Customer Journey Analytics リリースノート
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: af9ed77160d1bf784d900d50055dded3e9f98eb1
+source-git-commit: f1474d55a262b25a76ac474db867cc9f0c2d2e36
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **アセットの転送** | プロジェクト、フィルター、計算指標などのコンポーネントの所有権を他のユーザーに転送して、継続的に適切なアクセス権を持てるようにします。[詳細情報](/help/tools/asset-transfer/transfer-assets.md) |  | 10月15日（PT） |
-| **ガイド付き分析：Workspace への埋め込み** | [ガイド付き分析](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/overview)を Analysis Workspace 内から直接使用できるようになったので、ユーザーは、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。新しい左側のパネルセクションから、新しいガイド付き分析を作成して、プロジェクトに追加できます。また、多くのプロジェクトで構成要素として再利用できる、保存済みのガイド付き分析にアクセスすることもできます。 |   | 2025年1月22日（PT） |
+| **ガイド付き分析：Workspace への埋め込み** | [ガイド付き分析](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/guided-analysis/overview)を Analysis Workspace 内から直接使用できるようになったので、ユーザーは、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。新しい左側のパネルセクションから、新しいガイド付き分析を作成して、プロジェクトに追加できます。また、多くのプロジェクトで構成要素として再利用できる、保存済みのガイド付き分析にアクセスすることもできます。 | 2024年10月2日（PT） | 2024年10月23日（PT） |
 | **製品の使用状況** | 組織が Customer Journey Analytics をどのように使用しているかを確認します。この機能を有効にすると、組織内のユーザーが Analysis Workspace を使用する際に、データを収集するデータセットが Adobe Experience Platform に作成されます。また、接続とデータビューも自動的に作成され、プロジェクトで使用される上位のプロジェクトタイプ、最もアクティブなユーザー、一番人気のコンポーネントなどのディメンションにアクセスできます。[詳細情報](/help/tools/product-usage/usage-overview.md) | 2024年10月23日（PT） | 2025年1月 |
 | **Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報** | Analysis Workspace でパフォーマンスを分析する際に、新しい「リクエスト要因」セクションが使用できるようになりました。リクエストの処理方法と、処理時間に影響を与える様々な要因について詳しくは、[Analysis Workspace のパフォーマンスの最適化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/optimizing-performance#request-factors)の「リクエスト要因」を参照してください。 |  | 2024年10月1日（PT） |
 
