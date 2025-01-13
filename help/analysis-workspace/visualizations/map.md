@@ -3,10 +3,10 @@ description: Workspace プロジェクトでマップのビジュアライゼー
 title: マップ
 feature: Visualizations
 role: User, Admin
-badgePremium: label="Adobe Analytics版" url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization" tooltip="を選択して、この記事のAdobe Analytics版を確認してください。"
+badgePremium: label="Adobe Analytics版" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="を選択して、この記事のAdobe Analytics版を確認してください。"
 hide: true
 hidefromtoc: true
-source-git-commit: d05990b0eac6b08530b8526b3b48b722139be018
+source-git-commit: 3c3ef1c79e5863b74a3b7458c87d1f83f7188e5a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 13%
