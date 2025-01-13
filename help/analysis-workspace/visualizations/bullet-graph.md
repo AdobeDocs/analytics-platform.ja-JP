@@ -4,11 +4,10 @@ title: ブレットグラフ
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics版" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="を選択して、この記事のAdobe Analytics版を確認してください。"
-source-git-commit: 896c7be6f1cfa4b0b714eb08ac47c1b89edecb79
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 60%
+source-wordcount: '249'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +19,6 @@ ht-degree: 60%
 >id="workspace_bullet_goalvalue"
 >title="目標値"
 >abstract="**[!UICONTROL 高い目標]**&#x200B;は、目指している主な目標です。**[!UICONTROL 低い目標]**&#x200B;と&#x200B;**[!UICONTROL 中程度の目標]**&#x200B;では、[!UICONTROL 高い目標]を下回る範囲を作成します。メモ：「**[!UICONTROL 割合]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。"
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="箇条書き（Adobe Analytics）"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 60%
 >abstract="箇条書きグラフのビジュアライゼーションを作成して、指標がパフォーマンス範囲（目標）とどのように比較または測定されるかを示します。"
 
 <!-- markdownlint-enable MD034 -->
+
+*この記事は、**Customer Journey Analyticsの箇条書きビジュアライゼーションについて説明します**。 [2}Anaytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) のAdobe版については&#x200B;**Bullet} を参照してください。***
 
 ![GraphBullet](/help/assets/icons/GraphBullet.svg)**[!UICONTROL Bullet]** ビジュアライゼーションは、指標とパフォーマンス範囲（目標）の比較または測定の方法を示します。
 
