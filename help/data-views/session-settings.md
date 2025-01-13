@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 614e15a492b247d98e4e32c0f06d8ae438ca6d45
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="データのプレビュー"
->abstract="このデータビューのデータと接続のデータを比較します。 プレビューの割合は、**過去 90 日間**&#x200B;の接続の合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
+>abstract="このデータビューのデータと接続のデータを比較します。プレビューの割合は、**過去 90 日間**&#x200B;の接続の合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
