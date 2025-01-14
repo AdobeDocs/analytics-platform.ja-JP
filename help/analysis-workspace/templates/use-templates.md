@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '19285'
 ht-degree: 71%
@@ -464,7 +464,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_template_time_spent"
+>id="template_time_spent"
 >title="訪問者が各訪問中にサイトに滞在した平均時間と、成功イベントの前にユーザーが費やした平均時間を表示します。データは、一定期間にわたって表示され、前の期間と比較されます。"
 >abstract="**これにより**、訪問者のエンゲージメントレベルと、訪問者が購入などの目的のアクションを実行するのにかかる時間をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、サイトの変更によって訪問者が成功イベントに迅速に到達する能力が向上したかどうかを評価できます。<br/>このテンプレートでは、日ディメンションと訪問あたりの滞在時間（秒）指標を使用します。"
 

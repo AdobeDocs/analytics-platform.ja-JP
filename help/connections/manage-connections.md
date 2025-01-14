@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '3749'
-ht-degree: 13%
+source-wordcount: '4023'
+ht-degree: 12%
 
 ---
 
@@ -278,6 +278,82 @@ ht-degree: 13%
 >id="cja_connections_historicalreportablerows"
 >title="履歴のレポート可能な行数"
 >abstract="13 か月を超える期間で使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月より古いイベントタイムスタンプで使用可能な合計行を示します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_keyusagemetrics"
+>title="主要な使用状況指標"
+>abstract="コアおよび履歴レポート可能行の月別および合計データを提供します。"
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyingestedrows"
+>title="月別の取り込まれた行数"
+>abstract="システムに毎月追加される合計レコード数を測定して、データの増加と取り込み率に関するインサイトを提供します。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyreportablerows"
+>title="月別のレポート可能な行数"
+>abstract="レポートに使用できる行数をトラッキングします。 レポート可能な行は、取り込まれた行から、取り込み中にスキップおよび削除された行を引いたものです。 レポート可能行は、請求とデータ使用の主要な指標として機能します。"
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_detailbreakdown"
+>title="詳細な分類。"
+>abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別およびタグ別に詳細な指標を表示できます。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_otherdatasets"
+>title="その他のデータセット"
+>abstract="2024 年 9 月より前の数か月間は、データがデータセットレベルで収集され、わかりやすくするために *その他のデータセット* として表示されていました。 2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、*その他のデータセット* は表示されなくなります。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_unknowndatasetsorconnections"
+>title="不明なデータセットまたは接続"
+>abstract="不明なデータセットまたは接続が、その ID を使用して表示されます。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_datanotavailable"
+>title="データを使用できません"
+>abstract="2024 年 9 月より前の履歴データは、システム制限により利用できません。 指標は、2024 年 9 月以降に収集され、表示されます。 グラフはタイムラインの過去 18 か月を表示し、データが利用可能になると将来のデータが表示されます。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_corereportablerows"
+>title="コアのレポート可能な行数"
+>abstract="過去 13 か月間に使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月から 2024 年 1 月のイベントタイムスタンプで使用可能な合計行を示します。"
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_historicalreportablerows"
+>title="履歴のレポート可能な行数"
+>abstract="13 か月を超える期間で使用可能な行の合計数を表示します。 例えば、2024 年 2 月 1 日の場合、この数は、2023 年 1 月より古いイベントタイムスタンプで使用可能な合計行を示します。"
+
 <!-- markdownlint-enable MD034 -->
 
 

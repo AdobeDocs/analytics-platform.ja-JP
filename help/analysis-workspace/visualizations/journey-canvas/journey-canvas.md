@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
+source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,23 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="journeycanvas_button"
+>title="ジャーニーキャンバス"
+>abstract="一連のタッチポイントを通過する方法や一連のタッチポイントから抜け出す方法を示します。 複数のエントリポイントおよびパスを持つジャーニーに使用するか、Journey Optimizerで作成されたジャーニーを分析します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="journeycanvas_panel"
+>title="ジャーニーキャンバス"
+>abstract="ユーザーが定義されたジャーニーをどのように進めたり、そこから外れたりするかを分析します。 イベント、ディメンション項目、フィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成することで、ユーザージャーニーの分析を構築します。キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 すると、データはそれに応じて更新されます。 <br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます"
+
+<!-- markdownlint-enable MD034 -->
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。 ジャーニーを一から定義したり、Journey Optimizerからジャーニーを表示して、ジャーニー内でのユーザーの離脱や継続の様子を確認できます。
 

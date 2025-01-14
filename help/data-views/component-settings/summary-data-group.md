@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 25%
@@ -17,7 +17,7 @@ ht-degree: 25%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_summarydatagroup"
+>id="dataview_component_dimension_summarydatagroup"
 >title="概要データグループ"
 >abstract="概要データグループは、グループ内のすべてのディメンション間で関連付けを作成し、概要データセットのディメンションを他のディメンションと組み合わせてレポートに使用します。"
 
@@ -26,7 +26,7 @@ ht-degree: 25%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>id="dataview_component_dimension_summarydatagroup_hideinreporting"
 >title="レポートで非表示"
 >abstract="このオプションを選択すると、そのディメンションの&#x200B;**[!UICONTROL レポートでコンポーネントを非表示]**&#x200B;が有効になり、Analysis Workspace やその他の Customer Journey Analytics レポートツールにコンポーネントが表示されなくなります。"
 

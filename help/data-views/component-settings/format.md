@@ -5,7 +5,7 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 23%
@@ -17,7 +17,7 @@ ht-degree: 23%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format"
+>id="dataview_component_metric_format"
 >title="形式"
 >abstract="レポートで使用される際のコンポーネントの表示方法を決定します。"
 
@@ -59,7 +59,7 @@ ht-degree: 23%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
+>id="dataview_component_metric_format_currencyconversion"
 >title="通貨換算"
 >abstract="通貨コードのディメンションを選択して、選択した通貨タイプで通貨を設定および表示します。"
 

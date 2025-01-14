@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_productcompatibility"
+>id="components_calculatedmetrics_productcompatibility"
 >title="製品の互換性"
 >abstract="Analysis Workspace、Report Builder など、この計算指標を使用できる Customer Journey Analytics の場所を示します。一部の計算指標は、実験では使用できません。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="実験で計算指標を使用"
@@ -25,7 +25,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_externalid"
+>id="components_calculatedmetrics_externalid"
 >title="外部 ID"
 >abstract="外部 ID を変更すると、ビジネスインテリジェンスツールなどの外部ソースでの計算指標の表示方法に影響する可能性があります"
 
@@ -46,20 +46,20 @@ ht-degree: 10%
 
 >[!ENDTABS]
 
-1. 次の詳細を指定します（![ 必須 ](/help/assets/icons/Required.svg) は必須）。
+1. 次の詳細を指定します（![必須](/help/assets/icons/Required.svg)は必須です）。
 
    | 要素 | 説明 |
    | --- | --- |
    | **[!UICONTROL データビュー]** | 計算指標のデータビューを選択できます。  定義した計算指標は、選択したデータビューに基づいてWorkspace プロジェクトで使用できます。 |
    | **[!UICONTROL プロジェクトのみの指標]** | 指標が作成されたプロジェクトにのみ表示され、指標がコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL この指標をすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、「選択から指標を作成 **[!UICONTROL を使用してWorkspaceで指標を作成し、関数]****[!UICONTROL 平均]** や **[!UICONTROL 中央値]** など）を選択している場合にのみ表示されます。 後で [ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) を使用して、作成した指標を編集します。 |
-   | **[!UICONTROL タイトル]** ![ 必須 ](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
+   | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
    | **[!UICONTROL 外部 ID]** ![ 必須 ](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する場合の計算指標の名前。 値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
    | **[!UICONTROL 説明]** | フィルターの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能なので、説明する必要はありません。 |
    | **[!UICONTROL 形式]** | 計算指標の形式の選択：**[!UICONTROL 小数]**、**[!UICONTROL 時間]**、**[!UICONTROL パーセント]**、**[!UICONTROL 通貨]** から選択できます。 |
    | **[!UICONTROL 小数点以下の桁数]** | 選択した書式の小数点以下の桁数を指定します。 選択した形式が小数、通貨、パーセントの場合にのみ有効です。 |
    | **[!UICONTROL 上昇傾向を次の形式で表示]** | 計算指標の上昇傾向を▲ **** 良（緑）または▼**[!UICONTROL 悪（赤）]** のいずれで表示すかを指定します。 |
    | **[!UICONTROL 通貨]** | 計算指標の通貨を指定します。 「形式」で「通貨」を選択した場合にのみ有効になります。 |
-   | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、計算指標を整理します。 入力を開始して、選択可能な既存のタグを検索します。 または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、タグを削除します。 |
+   | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、計算指標を整理します。 入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
    | **[!UICONTROL プレビュー]** | プレビューは過去 90 日間をカバーしており、指標が正しく定義されているかどうかを判断するための手段となります。 |
    | **[!UICONTROL 概要]** | 計算指標の定義の概要を表示します。 <br/> 例：![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 合計注文数]** ![ 除算 ](/help/assets/icons/Divide.svg) ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL セッション]**。 |
    | **[!UICONTROL 定義]** ![ 必須 ](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してフィルターを定義します。 |

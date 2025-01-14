@@ -4,8 +4,8 @@ description: ワークスペースでの注釈の作成方法
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="注釈の詳細"
 >abstract="注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。カレンダーイベントを特定のディメンションや指標に関連付けることができます。"
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="範囲"
 >abstract="範囲を使用すると、どのデータに注釈を付けるかをカスタマイズできます。計算指標とセグメントは、その定義で使用されるコンポーネントに適用される注釈を自動的に継承しません。既存の注釈の範囲セクションに新しい計算指標を追加できます。新しいセグメントには新しい注釈が必要です。"
 

@@ -3,7 +3,7 @@ description: 指標タイプとアトリビューションについて説明し�
 title: 指標タイプとアトリビューション
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 40%
@@ -48,7 +48,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_nondefaultattributionmodel"
+>id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="デフォルト以外のアトリビューションモデルを使用"
 >abstract="選択した指標に対してデフォルト以外のアトリビューションモデルを有効にします。"
 
@@ -57,7 +57,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attributionmodel"
+>id="components_calculatedmetrics_attributionmodel"
 >title="モデル"
 >abstract="指標のアトリビューションモデルを選択します。"
 
@@ -66,7 +66,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lasttouch"
+>id="components_calculatedmetrics_attribution_lasttouch"
 >title="ラストタッチ"
 >abstract="訪問者が閲覧した最後のディメンション値に、クレジットの 100％を割り当てます。"
 
@@ -75,7 +75,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_firsttouch"
+>id="components_calculatedmetrics_attribution_firsttouch"
 >title="ファーストタッチ"
 >abstract="訪問者が閲覧した最初のディメンション値に、クレジットの 100％を割り当てます。"
 
@@ -84,7 +84,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_linear"
+>id="components_calculatedmetrics_attribution_linear"
 >title="線形"
 >abstract="クレジットはすべてのディメンション値に均等に配分されます。"
 
@@ -93,7 +93,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_participation"
+>id="components_calculatedmetrics_attribution_participation"
 >title="パーティシペーション"
 >abstract="訪問者が閲覧したすべてのディメンション値に 100%クレジットされます。<br/>列の合計は誇張されています。"
 
@@ -102,7 +102,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_sametouch"
+>id="components_calculatedmetrics_attribution_sametouch"
 >title="同じタッチ"
 >abstract="コンバージョンと同じイベントで発生するディメンション値にのみ、クレジットを割り当てます。"
 
@@ -111,7 +111,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_ushaped"
+>id="components_calculatedmetrics_attribution_ushaped"
 >title="U 字型"
 >abstract="最初のディメンション値に 40%、最後のディメンション値に 40%、中央の値に 20%のクレジットが配分されます。"
 
@@ -120,7 +120,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_jcurve"
+>id="components_calculatedmetrics_attribution_jcurve"
 >title="J カーブ"
 >abstract="最後のディメンション値に 60%、最初のディメンション値に 20%、中央の値に 20%のクレジットが配分されます。"
 
@@ -129,7 +129,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_inversej"
+>id="components_calculatedmetrics_attribution_inversej"
 >title="逆 J 形"
 >abstract="最初のディメンション値に 60%、最後のディメンション値に 20%、中央の値に 20%のクレジットが配分されます。"
 
@@ -138,7 +138,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_timedecay"
+>id="components_calculatedmetrics_attribution_timedecay"
 >title="タイムディケイ"
 >abstract="コンバージョンに最も近いディメンション値に、最も多くのクレジットを付与します。"
 
@@ -147,7 +147,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_custom"
+>id="components_calculatedmetrics_attribution_custom"
 >title="カスタム"
 >abstract="独自の位置ベースのアトリビューションの重み付けを定義します。"
 
@@ -156,7 +156,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_algorithmic"
+>id="components_calculatedmetrics_attribution_algorithmic"
 >title="アルゴリズム"
 >abstract="クレジットは、統計的アルゴリズムに基づいて動的に決定されます。"
 
@@ -171,7 +171,7 @@ ht-degree: 40%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lookbackwindow"
+>id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="ルックバックウィンドウ"
 >abstract="この設定により、各コンバージョンに適用されるデータアトリビューションの期間が決まります。"
 

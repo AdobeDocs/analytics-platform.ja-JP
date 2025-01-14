@@ -1,10 +1,11 @@
 ---
 title: 製品の使用状況データ設定
 description: 製品の使用設定を有効化、無効化または構成します。
-source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
+exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 14%
+source-wordcount: '356'
+ht-degree: 23%
 
 ---
 
@@ -32,5 +33,15 @@ _データ設定_ ページでは、製品の使用設定を処理します。 �
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
+>title="データ保持ウィンドウの上書き"
+>abstract="製品の使用状況データの可用性を短縮して、コストの削減やプライバシーガイドラインへの準拠に役立てます。"
+
+>[!CONTEXTUALHELP]
+>id="product_usage_sandbox"
+>title="Adobe Experience Platform サンドボックス"
+>abstract="スキーマとデータセットが作成された Adobe Experience Platform サンドボックスを特定します。"
+
+>[!CONTEXTUALHELP]
+>id="product_usage_data_retention"
 >title="データ保持ウィンドウの上書き"
 >abstract="製品の使用状況データの可用性を短縮して、コストの削減やプライバシーガイドラインへの準拠に役立てます。"

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '8841'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="派生フィールド"
 >abstract="派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、データ操作をその場で定義できます。その派生フィールドを Workspace のコンポーネント（指標またはディメンション）として使用したり、さらにデータビューでコンポーネントとして定義したりできます。"
 
@@ -430,7 +430,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。"
 
@@ -670,7 +670,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="Classify"
 >abstract="この関数には、テキスト入力によって対応する値に置き換えられる一連の値を定義する機能があります。"
 
@@ -815,7 +815,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="連結"
 >abstract="この関数は、2 つ以上のフィールド、派生フィールド、またはユーザーが入力した文字列値を、定義済みの区切り文字を使用して 1 つのフィールドに結合する機能を提供します。"
 
@@ -902,7 +902,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="Deduplicate"
 >abstract="この関数は、セッションレベルまたはユーザーレベルで繰り返し値をカウントしないようにフィールドを設定する機能を提供します。さらに、重複排除 ID を使用すると、特定の ID（購入 ID など）に基づいて、1 つの値（最初のインスタンスまたは最後のインスタンス）のみが使用されるようにすることができます。"
 
@@ -997,7 +997,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="検索と置換"
 >abstract="この関数は、選択したフィールド内のすべての値を検索し、それらの値を新しい派生フィールド内の別の値に置き換える機能を提供します。"
 
@@ -1077,7 +1077,7 @@ Customer Journey Analyticsでは、次のデフォルトのコンテナモデル
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="ルックアップ"
 >abstract="この関数には、データセット間で一致するキーを使用して、ルックアップデータセットのフィールドを使用する機能があります。"
 
@@ -1138,7 +1138,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="Lowercase"
 >abstract="この関数は、文字列テキスト全体を小文字の値に変換します。"
 
@@ -1199,7 +1199,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="Math"
 >abstract="この関数は、フィールドに対して数学演算を実行する機能を提供します。この関数を使用して、加算、減算、乗算、除算などの基本的な算術演算を実行できます。"
 
@@ -1290,7 +1290,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
 >abstract="この関数は、2 つの異なるフィールドから値を取得し、それぞれの値を 1 つのディメンションに含める機能を提供します。まず、最初の値が設定されているかどうかを確認します。設定されていない場合は、2 番目の値などが使用されます。"
 
@@ -1366,7 +1366,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="Next or Previous"
 >abstract="この関数は、特定のフィールドに関して収集された次または前の値を確認する機能を提供します。"
 
@@ -1448,7 +1448,7 @@ Adobe Targetを通じて表示されるパーソナライズされたバナー�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="この関数には、正規表現を使用して文字列の一部を抽出する機能があります。"
 
@@ -1555,7 +1555,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="Split"
 >abstract="この関数には、区切り文字に基づいてフィールドを複数のフィールドに分割する機能があります。"
 
@@ -1657,7 +1657,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="Summarize"
 >abstract="この関数には、イベント、セッションまたはユーザーのレベルで値を集計する機能があります。選択フィールドのフィールドタイプに応じて、様々なオプションを使用できます。"
 
@@ -1735,7 +1735,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="トリミング"
 >abstract="この関数には、文字列の先頭または末尾から空白文字や特殊文字をトリミングする機能があります。また、文字列の先頭または末尾から、戻り値に使用する文字数を指定する機能もあります。"
 
@@ -1857,7 +1857,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="Url Parse"
 >abstract="この関数には、ホスト、パス、クエリパラメーターなど、URL の様々な部分を解析する機能があります。"
 

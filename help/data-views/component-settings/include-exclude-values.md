@@ -5,7 +5,7 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 555dbd5c84fbec7c71b328229da5196fe2e64b76
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 74%
@@ -17,7 +17,7 @@ ht-degree: 74%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_includeexcludevalues"
+>id="dataview_component_metric_includeexcludevalues"
 >title="値を含める / 除外"
 >abstract="特定の条件に合致する値のみをカウントするように指標をフィルタリングします。"
 
@@ -26,7 +26,7 @@ ht-degree: 74%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_includeexcludevalues"
+>id="dataview_component_dimension_includeexcludevalues"
 >title="値を含める / 除外"
 >abstract="特定の条件に合致する値のみを含めるようにディメンションを絞り込みます。含めるおよび除外は、レポートの配分およびフィルターの前に行われます。<br/><br/>**パラメーター&#x200B;**<br/>**大文字と小文字を区別**：以下のフィルターロジックで大文字と小文字を区別するかどうかを決定します。"
 

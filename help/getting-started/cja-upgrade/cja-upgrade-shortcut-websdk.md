@@ -1,5 +1,5 @@
 ---
-title: アップグレードショートカット Web SDK を使用するようにAppMeasurementまたは Analytics 拡張機能の実装を移行する
+title: アップグレードショートカット Web SDKを使用するようにAppMeasurementまたは Analytics 拡張機能の実装を移行する
 description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 56%
+source-wordcount: '690'
+ht-degree: 58%
 
 ---
 
@@ -29,13 +29,22 @@ ht-degree: 56%
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analyticsにアップグレードする場合、Adobeでは [Experience Platform Web SDK の新規実装をお勧めします ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。 ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
+<!-- markdownlint-disable MD034 -->
 
-お使いのAdobe Analytics実装がAppMeasurementまたは Analytics 拡張機能の場合は、アップグレードショートカットを使用してAdobe Analytics実装を移行し、Adobe Experience Platform Web SDK を使用してEdge NetworkおよびAdobe Analyticsへのデータ送信を開始してから、Customer Journey Analyticsに送信することができます。
+>[!CONTEXTUALHELP]
+>id="migrate_aa_to_websdk"
+>title="Web SDK を使用するための Analytics の実装の移行"
+>abstract="XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてすべての変数を AppMeasurement 形式で送信できます。このショートカットを使用すると、AppMeasurement ロジックを引き続き使用して、データを Platform に送信できます。"
+
+<!-- markdownlint-enable MD034 -->
+
+Customer Journey Analyticsにアップグレードする場合、Adobeでは [Web SDKのExperience Platformを新しく実装することをお勧めします ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。 ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
+
+お使いのAdobe Analyticsの実装がAppMeasurementまたは Analytics 拡張機能の場合、アップグレードショートカットを使用してAdobe Analytics実装を移行し、Adobe Experience Platform Web SDKを使用してEdge NetworkおよびAdobe Analyticsへのデータ送信を開始してからCustomer Journey Analyticsに送信することができます。
 
 ## メリットとデメリット
 
-アップグレードショートカットの次のメリットとデメリットを考慮して、AppMeasurementまたは Analytics 拡張機能の実装を Web SDK を使用するように移行します。
+アップグレードショートカットの次のメリットとデメリットを考慮して、AppMeasurementまたは Analytics 拡張機能の実装を Web SDKを使用するように移行します。
 
 | メリット | デメリット |
 |----------|---------|
@@ -45,9 +54,9 @@ Customer Journey Analyticsにアップグレードする場合、Adobeでは [Ex
 
 ## 基本手順
 
-アップグレード ショートカットを使用して、AppMeasurementまたは Analytics 拡張機能の実装から Web SDK を使用するように移行する場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で、動的に生成される手順に新しい手順が追加されます。
+アップグレード ショートカットを使用して、AppMeasurementまたは Analytics 拡張機能の実装から Web SDKを使用するように移行する場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) に、動的に生成される手順に新しい手順が追加されます。
 
-Web SDK を使用するように Analytics またはAppMeasurement拡張機能の実装を移行する基本的な手順は、次のとおりです。
+Web SDKを使用するように Analytics またはAppMeasurement拡張機能の実装を移行するための基本的な手順は次のとおりです。
 
 1. Platform へのデータ送信を開始します。
 
