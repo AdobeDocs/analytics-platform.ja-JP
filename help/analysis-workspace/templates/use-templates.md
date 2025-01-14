@@ -3,12 +3,10 @@ description: Analysis Workspaceでのデフォルトテンプレートの使用�
 title: テンプレートを使用
 feature: Workspace Basics
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
 workflow-type: tm+mt
-source-wordcount: '19285'
+source-wordcount: '19294'
 ht-degree: 71%
 
 ---
@@ -65,7 +63,9 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
    >[!NOTE]
    >
-   >   これらのテンプレートを使用する前に、管理者は、これらの不足しているコンポーネントに必要なコンテキストラベルをデータビューに追加する必要があります。 詳しくは、[ テンプレートの使用 [ の「特定のテンプレートのデータビューへの欠落しているコンポーネントの追加 ](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) を参照してください ](/help/analysis-workspace/templates/create-templates.md)。
+   >これらのテンプレートを使用する前に、管理者は、これらの不足しているコンポーネントに必要なコンテキストラベルをデータビューに追加する必要があります。 詳しくは、[ テンプレートの使用 [ の「特定のテンプレートのデータビューへの欠落しているコンポーネントの追加 ](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) を参照してください ](/help/analysis-workspace/templates/create-templates.md)。
+   >
+   >コンテキストラベルについて詳しくは、[ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を参照してください。
 
    1. フィルターアイコンを選択します。
 
