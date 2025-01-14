@@ -4,14 +4,77 @@ title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
+source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 5%
+source-wordcount: '771'
+ht-degree: 20%
 
 ---
 
-# インテリジェントキャプション
+# インテリジェントキャプション {#intelligent-captions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_area"
+>title="インテリジェントキャプション：領域"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_bar"
+>title="インテリジェントキャプション：棒"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_donut"
+>title="インテリジェントキャプション : ドーナツ"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_horizontalbar"
+>title="インテリジェントキャプション：横棒"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_line"
+>title="インテリジェントキャプション：折れ線"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_fallout"
+>title="インテリジェントキャプション：フォールアウト"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_flow"
+>title="インテリジェントキャプション：フロー"
+>abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+
+<!-- markdownlint-enable MD034 -->
 
 インテリジェントキャプションは、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。最初のリリースでは、[ 折れ線グラフ ](line.md) ビジュアライゼーションの自動生成されたインサイトを提供しています。 その他のビジュアライゼーションも続きます。
 
