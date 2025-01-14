@@ -4,9 +4,9 @@ title: テンプレートを使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -191,3 +191,10 @@ ht-degree: 2%
 Adobeが提供するテンプレートと同様に、組織内のユーザーは、管理者が作成するテンプレートにアクセスできます。
 
 会社テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 [ の「テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) を参照してください ](/help/analysis-workspace/templates/use-templates.md)。
+
+## 「テンプレート」タブを非表示にします
+
+管理者は、組織内のすべてのユーザーの「テンプレート」タブを非表示にできます。
+
+1. **[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL コンポーネント]** / **[!UICONTROL 環境設定]** / **[!UICONTROL 会社]** に移動します。
+1. オプションを選択して **[!UICONTROL 「テンプレートを非表示」タブ]** を表示します。
