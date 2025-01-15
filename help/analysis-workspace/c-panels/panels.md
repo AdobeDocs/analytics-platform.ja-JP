@@ -4,10 +4,10 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
 workflow-type: tm+mt
-source-wordcount: '2126'
-ht-degree: 100%
+source-wordcount: '2159'
+ht-degree: 98%
 
 ---
 
@@ -149,17 +149,21 @@ ht-degree: 100%
 
 詳しくは、[クイックフィルター](/help/components/filters/quick-filters.md)を参照してください。
 
-![公開されてドロップゾーンにドロップされるアドホックフィルター。](assets/adhoc-segment-filter.png)
+![ 公開されてドロップゾーンにドロップされるアドホックフィルター ](assets/adhoc-segment-filter.png)
 
 ### ドロップダウンフィルター
 
-+++ ドロップダウンフィルターについて説明するビデオをご覧ください。
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+このビデオでは、Adobe Analyticsを使用した機能を説明します。 ただし、この機能はCustomer Journey Analyticsでも同様に使用できます。 用語には次の違いがあることに注意してください。
 
-+++
+| Adobe Analytics | 顧客ジャーニー分析 |
+| --- | --- |
+| セグメント | フィルター |
+| 訪問者 | ユーザー |
+| 訪問 | セッション |
+| ヒット | イベント |
+
 
 #### 静的ドロップダウンフィルター
 

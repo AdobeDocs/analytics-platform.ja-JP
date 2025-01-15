@@ -4,7 +4,7 @@ title: フィルターの作成
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 8eb146fccbdbe47df8ca28f7b8dcbce2bf6888fd
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 8%
@@ -192,7 +192,7 @@ ht-degree: 8%
 |---|---|
 | **[!UICONTROL 繰り返しモデル（デフォルト）]** | 検証を決定するために、ディメンションのインスタンスと持続値を含めます。 |
 | **[!UICONTROL インスタンス]** | 検証を決定するために、ディメンションのインスタンス値のみを含めます。 |
-| **[!UICONTROL 繰り返さないインスタンス]** | 選定を決定するために、ディメンションに一意のインスタンス（繰り返さない）値を含めます。 |
+| **[!UICONTROL 繰り返さないインスタンス]** | 検証を決定するために、ディメンションに一意のインスタンス（繰り返さない）値を含めます。 |
 
 
 ![ フィルター構築時のディメンションのアトリビューションモデル ](assets/filter-dimension-attribution.png)
