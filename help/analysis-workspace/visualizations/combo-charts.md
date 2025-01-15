@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 45%
+source-wordcount: '602'
+ht-degree: 44%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 45%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsのコンボビジュアライゼーションについて説明します**。 この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) バージョンについては、[ コンボ**を参照してください。*
+*この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**のコンボビジュアライゼーションについて説明します。<br/> この記事の [AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については ![Combo**を参照してください。*
 
 >[!ENDSHADEBOX]
 

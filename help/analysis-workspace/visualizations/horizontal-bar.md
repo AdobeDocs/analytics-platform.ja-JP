@@ -4,9 +4,9 @@ title: 横棒グラフおよび積み重ね横棒グラフ
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 31%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsの横棒グラフおよび積み重ね横棒グラフのビジュアライゼーションについて説明します**。 [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) 版については、**横棒グラフおよび積み重ね横棒グラフ* を参照してください。**
+*この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![3}Customer Journey Analyticsの横棒グラフおよび積み重ね横棒グラフのビジュアライゼーションについて説明します&#x200B;**。**<br/> この記事の [AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**バージョンについては、![ 横棒グラフおよび積み重ね横棒グラフ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) を参照してください。*
 
 >[!ENDSHADEBOX]
 

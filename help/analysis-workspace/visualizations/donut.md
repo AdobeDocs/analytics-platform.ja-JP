@@ -4,9 +4,9 @@ title: ドーナツ
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '119'
 ht-degree: 26%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsのドーナツビジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics **版については、{ ドーナツ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) を参照してください。***
+*この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**のドーナツビジュアライゼーションについて説明します。<br/> この記事の [AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut)**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については ![ ドーナツ**を参照してください。*
 
 >[!ENDSHADEBOX]
 

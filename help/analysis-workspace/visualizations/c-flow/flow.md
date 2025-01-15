@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 50%
+source-wordcount: '385'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 50%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsのフロービジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) バージョンについては&#x200B;**フロー* を参照してください。**
+*この記事では、{CustomerJourneyAnalytics![**Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) のフロービジュアライゼーションについて説明します**。<br/> この記事の ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**バージョンについては、[ フロー ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) を参照してください。*
 
 >[!ENDSHADEBOX]
 
