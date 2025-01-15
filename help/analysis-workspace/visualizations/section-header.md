@@ -4,7 +4,7 @@ description: Workspace プロジェクトにセクションヘッダーを挿入
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 18%
@@ -21,6 +21,17 @@ ht-degree: 18%
 >abstract="パネルにセクションヘッダーを追加します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- uncomment when section header page in AA is available.
+>[!BEGINSHADEBOX]
+
+
+*This article documents the Section header visualization in **Customer Journey Analytics**. See [Section header](...) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+-->
 
 
 パネル内のセクションを識別して明確に表現するには、パネル内の任意の場所に ![PageRule](/help/assets/icons/PageRule.svg)**[!UICONTROL Section ヘッダー]** ビジュアライゼーションを挿入できます。

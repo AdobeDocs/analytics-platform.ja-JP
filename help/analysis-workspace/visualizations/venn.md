@@ -4,10 +4,10 @@ title: ベン
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 30%
+source-wordcount: '157'
+ht-degree: 26%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 30%
 >abstract="ベン図ビジュアライゼーションを作成して、2 つの要素とその重複のサイズを視覚的にすばやく比較します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのベン図ビジュアライゼーションを説明します**。 この記事の&#x200B;**Adobe Analytics**版については、[ ベン ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) を参照してください。*
+
+>[!ENDSHADEBOX]
 
 
 ![ タイプ ](/help/assets/icons/TwoDots.svg) **[!UICONTROL ベン図]** ビジュアライゼーションを使用すると、（コンポーネントパネルから）最大 3 つのフィルターと 1 つの指標をドラッグして、ベン図を作成できます。

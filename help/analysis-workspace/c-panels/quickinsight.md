@@ -4,10 +4,10 @@ title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 100%
 >abstract="パネルを作成してフリーフォームテーブルとそれに伴うビジュアライゼーションを素早く作成し、インサイトをより迅速に分析して明らかにします。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsのクイックインサイトパネルを説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight) バージョンについては、**クイックインサイトパネル* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 [!UICONTROL クイックインサイト]は、アナリスト以外のユーザーおよび [!UICONTROL Analysis Workspace] の新規ユーザーに対して、ビジネスの質問にすばやく簡単に答える方法を学ぶためのガイダンスを提供します。また、テーブルを自分で作ることなく、簡単な質問にすばやく答えたいと考える上級ユーザーにとっても優れたツールです。

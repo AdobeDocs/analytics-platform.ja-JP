@@ -4,10 +4,10 @@ title: ツリーマップ
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 32%
+source-wordcount: '154'
+ht-degree: 27%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 32%
 >abstract="ツリーマップビジュアライゼーションを作成して、ネストされた長方形で階層（ツリー構造）データを表示します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのツリーマップビジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) バージョンについては&#x200B;**ツリーマップ* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 ![GraphTree](/help/assets/icons/GraphTree.svg)**[!UICONTROL ツリーマップ]** ビジュアライゼーションを使用すると、ネストされた長方形のセットとして階層（ツリー構造）データを表示できます。

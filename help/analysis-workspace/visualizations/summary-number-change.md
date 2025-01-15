@@ -4,10 +4,10 @@ title: 数値の概要と変更概要
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 51%
+source-wordcount: '496'
+ht-degree: 48%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 51%
 >abstract="合計と小計を表示するビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsの数値概要と変更概要のビジュアライゼーションについて説明します**。 この記事の&#x200B;**Adobe Analytics**版については、[ 数値概要と変更概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) を参照してください。*
+
+>[!ENDSHADEBOX]
+
 
 ![ 要約 ](/help/assets/icons/123.svg)**[!UICONTROL 数値概要]** ビジュアライゼーションを使用すると、プロジェクトで重要になる大きな数を強調表示できます。 このビジュアライゼーションは、関連するデータソースを使用して次のように動作します。
 

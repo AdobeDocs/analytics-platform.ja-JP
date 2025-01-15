@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 44%
+source-wordcount: '600'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 44%
 >abstract="最初にフリーフォームテーブルを作成せずに、コンボグラフのビジュアライゼーションをすばやく作成します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのコンボビジュアライゼーションについて説明します**。 この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) バージョンについては、[ コンボ**を参照してください。*
+
+>[!ENDSHADEBOX]
 
 
 ![ コメント ](/help/assets/icons/ComboChart.svg)**[!UICONTROL コンボ]** ビジュアライゼーションを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく簡単に作成できます。 折れ線グラフと棒グラフの組み合わせで、データのトレンドを簡単に表示できます。
@@ -71,7 +78,7 @@ ht-degree: 44%
 | --- | --- |
 | **[!UICONTROL 列の合計値]** | （1 つのディメンションのすべての要素について） 1 つの列内の指標の数値をすべて加算します |
 | **[!UICONTROL 累加平均]** | 最終 N 行の平均を返します。 |
-| **[!UICONTROL 中央値]** | 1 つの列の指標の中央値を返します。中央値は、一連の数値の中央にある数値です。 数値の半分は中央値より大きいか等しい値を持ち、半分は中央値より小さいか等しい値を持ちます。 |
+| **[!UICONTROL 中央値]** | 1 つの列の指標の中央値を返します。中央値は、一連の数の中央にある数値です。数値の半分は中央値より大きいか等しい値を持ち、半分は中央値より小さいか等しい値を持ちます。 |
 | **[!UICONTROL 累積]** | N 行の累積合計です。 |
 | **[!UICONTROL 列の最大値]** | 指標列の一連のディメンション要素の中の最大値を返します。 |
 | **[!UICONTROL 平均値]** | 指標の算術平均（平均）を返します。 |

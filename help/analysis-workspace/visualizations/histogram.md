@@ -4,10 +4,10 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 37%
 >abstract="数値データの分布を範囲のグループに表す、ヒストグラムのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのヒストグラムビジュアライゼーションについて説明します**。 この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) 版については、[ ヒストグラム**を参照してください。*
+
+>[!ENDSHADEBOX]
 
 
 ![ ヒストグラム ](/help/assets/icons/Histogram.svg)**[!UICONTROL ヒストグラム]** ビジュアライゼーションは、[!UICONTROL  棒グラフ ] ビジュアライゼーションに似ていますが、数値を範囲（バケット）にグループ化します。 Analytics は、数から範囲への「グループ化」を自動化しますが、[詳細設定](#advanced-settings)で設定を変更できます。

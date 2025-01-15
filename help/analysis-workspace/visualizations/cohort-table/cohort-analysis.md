@@ -4,10 +4,10 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4fac7b05f8972028df5c06a40394dc0527b22208
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 34%
+source-wordcount: '663'
+ht-degree: 33%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 34%
 >abstract="イベントの完了に基づいてユーザーをグループ化し、進行中のエンゲージメントとチャーンの推移を分析します。<br/><br/>**パラメーター&#x200B;**<br/>**インクルージョン条件**：最初の訪問者コホートの定義に使用するコンポーネント。<br/>**再来訪条件**：訪問者が再来訪したかどうかを判断するために使用するコンポーネント。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsのコホートテーブルに関するドキュメントです**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) バージョンについては、{ コホートテーブル&#x200B;**を参照してください。***
+
+>[!ENDSHADEBOX]
 
 
 *コホート* とは、特定の期間、共通の特徴を共有する人々のグループです。 ![ テキスト番号付き ](/help/assets/icons/TextNumbered.svg)**[!UICONTROL コホートテーブル]** ビジュアライゼーションは、例えば、コホートがブランドとどのように関わっているかを学びたい場合に役立ちます。 トレンドの変更を簡単に見分けて、それに応じて対応できます（[!UICONTROL コホート分析]の説明は、[コホート分析 101](https://ja.wikipedia.org/wiki/Cohort_analysis) など、Web 上で参照できます）。

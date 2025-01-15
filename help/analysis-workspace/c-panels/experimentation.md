@@ -4,9 +4,9 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsの実験パネルを説明します**。 [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) での Analytics のアクティビティとエクスペリエンスを分析する方法については、{Adobe Target **パネル* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 **[!UICONTROL 実験]** パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。

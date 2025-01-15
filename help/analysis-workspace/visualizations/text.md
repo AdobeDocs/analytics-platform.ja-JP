@@ -4,10 +4,10 @@ title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 29%
+source-wordcount: '263'
+ht-degree: 27%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 29%
 >abstract="ユーザー定義のリッチテキストビジュアライゼーションをプロジェクトに追加します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのテキストビジュアライゼーションについて説明します**。 この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text)2}Adobe Analytics} 版については、[ テキスト&#x200B;**を参照してください。***
+
+>[!ENDSHADEBOX]
 
 
 ユーザー定義のリッチテキストをWorkspace プロジェクトに追加するには、![ テキスト ](/help/assets/icons/Text.svg)**[!UICONTROL テキスト]** ビジュアライゼーションを使用するか、ビジュアライゼーションとパネルの説明を使用します。

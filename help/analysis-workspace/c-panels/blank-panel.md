@@ -4,10 +4,10 @@ title: 空のパネル
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 100%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspace のパネル"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsの空白のパネルに関する説明です**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) バージョンについては&#x200B;**空のパネル* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 **[!UICONTROL 空白のパネル]**&#x200B;には、完全にカスタマイズされた分析を構築するのに作成できる、選択したパネル（![web ページ](/help/assets/icons/WebPage.svg)で示されます）またはビジュアライゼーションが表示されます。

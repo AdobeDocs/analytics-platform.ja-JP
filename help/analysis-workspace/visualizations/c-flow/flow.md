@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 53%
+source-wordcount: '383'
+ht-degree: 50%
 
 ---
 
@@ -27,6 +27,12 @@ ht-degree: 53%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのフロービジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) バージョンについては&#x200B;**フロー* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 ![GraphPathing](/help/assets/icons/GraphPathing.svg)**[!UICONTROL フロー]** ビジュアライゼーションには、web サイトやアプリを介した顧客パスが表示されます。

@@ -4,10 +4,10 @@ title: 横棒グラフおよび積み重ね横棒グラフ
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 38%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -25,6 +25,13 @@ ht-degree: 38%
 >abstract="1 つ以上の指標の様々な値を表す、横棒グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsの横棒グラフおよび積み重ね横棒グラフのビジュアライゼーションについて説明します**。 [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) 版については、**横棒グラフおよび積み重ね横棒グラフ* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 
 この ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)**[!UICONTROL 横棒グラフ]** ビジュアライゼーションでは、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。

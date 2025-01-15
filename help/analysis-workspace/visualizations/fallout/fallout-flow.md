@@ -4,10 +4,10 @@ title: フォールアウトレポートとビジュアライゼーションに�
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 32%
+source-wordcount: '352'
+ht-degree: 30%
 
 ---
 
@@ -22,6 +22,12 @@ ht-degree: 32%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのフォールアウトビジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) バージョンについては&#x200B;**フォールアウト* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 ![ コンバージョンファネル ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL フォールアウト]** ビジュアライゼーションは、事前に定義された一連のページ間で、人物が離脱した（フォールアウト）箇所や、次に進んだ（フォールスルー）箇所を表示します。
 

@@ -4,7 +4,7 @@ title: ブレットグラフ
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 59b0462f114ca98289b4f7de92478d031d97fd31
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 59%
@@ -33,7 +33,7 @@ ht-degree: 59%
 
 >[!BEGINSHADEBOX]
 
-*この記事は、**Customer Journey Analyticsの箇条書きビジュアライゼーションについて説明します**。 [2}Anaytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) のAdobe版については&#x200B;**Bullet} を参照してください。***
+*この記事は、**Customer Journey Analyticsの箇条書きビジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) バージョンについては&#x200B;**箇条書き* を参照してください。**
 
 >[!ENDSHADEBOX]
 

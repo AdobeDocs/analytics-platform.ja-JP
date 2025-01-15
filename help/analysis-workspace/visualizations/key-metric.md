@@ -4,10 +4,10 @@ title: 主要指標の概要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: e4107e2f795b9beb7aa2802aa7ea646be6733212
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 37%
+source-wordcount: '957'
+ht-degree: 36%
 
 ---
 
@@ -21,6 +21,14 @@ ht-degree: 37%
 >abstract="折れ線グラフ、変更概要グラフおよび数値の概要グラフを組み合わせたビジュアライゼーションを作成します。このビジュアライゼーションを使用すると、2 つの期間での重要な指標のトレンドを比較できます。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsの主要指標の概要ビジュアライゼーションについて説明します**。 この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) バージョンについては、[ 主要指標の概要**を参照してください。*
+
+>[!ENDSHADEBOX]
+
 
 ![ 主要指標 ](/help/assets/icons/KeyMetrics.svg)**[!UICONTROL 主要指標の概要]** ビジュアライゼーションを使用すると、1 つの期間内で重要な指標のトレンドを確認できます。 また、2 つの期間にわたる指標のパフォーマンスを比較することもできます。次のような複数のビジュアライゼーションが 1 つのビジュアライゼーションに統合されるメリットがあります。
 

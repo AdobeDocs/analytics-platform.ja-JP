@@ -4,10 +4,10 @@ description: フリーフォームテーブルは、Workspace のデータ分析
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 26%
+source-wordcount: '777'
+ht-degree: 25%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 26%
 >abstract="ディメンション、セグメント、指標および日付範囲を使用して作成できる、空のフリーフォームテーブルのビジュアライゼーションを作成します。フリーフォームテーブルを他のビジュアライゼーションの基礎として使用できます。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのフリーフォームテーブル ビジュアライゼーションについて説明します**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) バージョンについては、{ フリーフォームテーブル&#x200B;**を参照してください。***
+
+>[!ENDSHADEBOX]
 
 
 Analysis Workspaceでは、![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル **[!UICONTROL ビジュアライゼーション]** インタラクティブなデータ分析の基盤となります。 [コンポーネント](/help/components/overview.md)の組み合わせを行と列にドラッグ＆ドロップして、分析用のカスタムテーブルを作成できます。各コンポーネントがドロップされると、テーブルが直ちに更新されるので、分析したり、深く掘り下げたりすることができます。

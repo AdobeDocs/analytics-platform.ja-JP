@@ -4,10 +4,10 @@ description: Analysis Workspace でのアトリビューションパネルの使
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 49%
+source-wordcount: '691'
+ht-degree: 47%
 
 ---
 
@@ -29,6 +29,11 @@ ht-degree: 49%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+*この記事は、**Customer Journey Analyticsのアトリビューションパネルに関するドキュメント**。 この記事の [2}Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) バージョンについては、**アトリビューションパネル* を参照してください。**
+
+>[!ENDSHADEBOX]
 
 **[!UICONTROL アトリビューション]**&#x200B;パネルを使用すると、各種アトリビューションモデルの比較分析を簡単に作成できます。このパネルには、アトリビューションモデルを使用および比較するための専用のワークスペースが用意されています。
 
