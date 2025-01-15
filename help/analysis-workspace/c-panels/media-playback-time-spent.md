@@ -4,9 +4,9 @@ description: Analysis Workspaceのメディア再生滞在時間パネルを使�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1155'
 ht-degree: 55%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 55%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![3}Customer Journey Analyticsのメディア再生滞在時間パネルについて説明します&#x200B;**。**この記事の <br/>AdobeAnalytics[ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) バージョンについては、![ メディア再生滞在時間パネル**を参照してください。*
+*この記事では、**Customer Journey Analyticsのメディア再生滞在時間パネルについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[ メディア再生滞在時間パネル ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) を参照してください。*
 
 >[!ENDSHADEBOX]
 

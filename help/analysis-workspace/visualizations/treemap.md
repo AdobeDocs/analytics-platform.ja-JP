@@ -4,9 +4,9 @@ title: ツリーマップ
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '154'
 ht-degree: 27%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**のツリーマップビジュアライゼーションについて説明します。<br/> この記事の [](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**バージョンについては、![ ツリーマップ* を参照してください。
+*この記事では、**Customer Journey Analyticsのツリーマップビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) ツリーマップ* を参照してください。
 
 >[!ENDSHADEBOX]
 

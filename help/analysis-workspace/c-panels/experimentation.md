@@ -4,9 +4,9 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 20%
 
 >[!BEGINSHADEBOX]
 
-*この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analyticsの実験パネルに関するドキュメント**です。<br/>AdobeAnalytics[**Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) でAdobe Targetのアクティビティとエクスペリエンスを分析する方法については、![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) パネル**を参照してください*。
+*この記事は、**Customer Journey Analyticsの実験パネルを説明します**。<br/>**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) での Analytics のアクティビティとエクスペリエンスを分析する方法については、[Adobe Target for Target パネル**を参照してください*。
 
 >[!ENDSHADEBOX]
 

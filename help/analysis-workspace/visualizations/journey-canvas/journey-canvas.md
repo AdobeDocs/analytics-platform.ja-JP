@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
+source-git-commit: c7828617d45991f9f3ba946fc12e248ac172141d
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,12 @@ ht-degree: 1%
 >abstract="ユーザーが定義されたジャーニーをどのように進めたり、そこから外れたりするかを分析します。 イベント、ディメンション項目、フィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成することで、ユーザージャーニーの分析を構築します。キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 すると、データはそれに応じて更新されます。 <br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます"
 
 <!-- markdownlint-enable MD034 -->
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsのジャーニーキャンバスビジュアライゼーションについて説明します**。<br/>**Adobe Analyticsに同等のビジュアライゼーションはありません**。*
+
+>[!ENDSHADEBOX]
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。 ジャーニーを一から定義したり、Journey Optimizerからジャーニーを表示して、ジャーニー内でのユーザーの離脱や継続の様子を確認できます。
 

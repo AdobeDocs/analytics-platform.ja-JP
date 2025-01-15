@@ -4,10 +4,10 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 34%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![3}Customer Journey Analyticsのヒストグラムビジュアライゼーションについて説明します&#x200B;**。**<br/> この記事の [](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版については、![ ヒストグラム* を参照してください。
+*この記事では、**Customer Journey Analyticsのヒストグラムビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ ヒストグラム ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) を参照してください。*
 
 >[!ENDSHADEBOX]
 

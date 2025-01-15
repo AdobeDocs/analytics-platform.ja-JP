@@ -4,9 +4,9 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '663'
 ht-degree: 33%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 33%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![3}Customer Journey Analyticsのコホートテーブルについて説明します&#x200B;**。**<br/> この記事の [AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) バージョンについては ![ コホートテーブル**を参照してください*。
+*この記事は、**Customer Journey Analyticsのコホートテーブルに関するドキュメントです**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[ コホートテーブル ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) を参照してください。*
 
 >[!ENDSHADEBOX]
 
