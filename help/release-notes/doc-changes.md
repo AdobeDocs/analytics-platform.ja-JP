@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4256'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 99%
 
 Customer Journey Analytics ドキュメントには、初回リリース以降に次の更新が行われました。
 
-## 2025
+## 2025年
 
 | 機能 | 説明 |
 | --- | --- |
 | **2025年1月** |  |
-| 使用状況指標 | 改善された [ 使用指標 ](/help/connections/manage-connections.md#usage) インターフェイスに関するドキュメントを更新しました。 |
+| 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |
 
 
 ## 2024
@@ -31,7 +31,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | BI 拡張機能のユースケース | Power BI デスクトップや Tableau Desktop などの BI ツールのいくつかの [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)のドキュメント。 |
 | ステッチとプライバシーリクエスト | プライバシーリクエストの結果である[未ステッチプロセスの今後の変更](/help/stitching/faq.md#frequently-asked-questions)に関する通知を追加しました。 |
 | **2024年10月** | |
-| 使用インターフェイスの改善 | 改善されたインターフェイスに関する記事を更新して、[ すべての接続における取り込まれた行とレポート可能な行の使用 ](/help/connections/manage-connections.md#usage) を表示しました。 |
+| 改善された使用状況インターフェイス | [すべての接続で取り込まれた行とレポート可能な行の使用状況](/help/connections/manage-connections.md#usage)を表示するように改善されたインターフェイスに関する記事を更新しました。 |
 | 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスからのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明する[ユースケース記事](/help/use-cases/stitching/shared-devices.md)を追加しました。 |
 | Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
 | Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、フィルター、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
