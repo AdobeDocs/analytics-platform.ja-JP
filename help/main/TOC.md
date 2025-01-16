@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: d05990b0eac6b08530b8526b3b48b722139be018
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
@@ -194,8 +194,8 @@ ht-degree: 100%
       + [行](../analysis-workspace/visualizations/line.md)
       + [マップ](/help/analysis-workspace/visualizations/map.md)
       + [散布図](../analysis-workspace/visualizations/scatterplot.md)
-      + [数と変更の概要](../analysis-workspace/visualizations/summary-number-change.md)
       + [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md)
+      + [数と変更の概要](../analysis-workspace/visualizations/summary-number-change.md)
       + [テキスト](../analysis-workspace/visualizations/text.md)
       + [ツリーマップ](../analysis-workspace/visualizations/treemap.md)
       + [ベン図](../analysis-workspace/visualizations/venn.md)

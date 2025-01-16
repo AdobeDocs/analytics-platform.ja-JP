@@ -4,14 +4,22 @@ title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 27%
+source-wordcount: '202'
+ht-degree: 26%
 
 ---
 
 # 積み重ね面グラフ
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsの面グラフおよび積み重ね面グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ 面グラフおよび積み重ね面グラフ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) を参照してください。*
+
+>[!ENDSHADEBOX]
+
+面グラフのビジュアライゼーションには、標準および積み重ねオプションがあります。
 
 ## 面グラフ {#area}
 
@@ -25,11 +33,7 @@ ht-degree: 27%
 <!-- markdownlint-enable MD034 -->
 
 
->[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsの面グラフおよび積み重ね面グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ 面グラフおよび積み重ね面グラフ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) を参照してください。*
-
->[!ENDSHADEBOX]
 
 
 ![GraphArea](/help/assets/icons/GraphArea.svg)**[!UICONTROL Area]** ビジュアライゼーションは折れ線グラフに似ていますが、線の下に色付きの領域があります。 複数の指標があり、2 つ以上の指標の積集合で表される領域を視覚化する場合は、面グラフを追加します。
