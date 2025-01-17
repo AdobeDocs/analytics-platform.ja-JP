@@ -4,7 +4,7 @@ title: 棒グラフおよび積み重ね棒グラフ
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 26%
@@ -12,6 +12,12 @@ ht-degree: 26%
 ---
 
 # 積み重ね棒グラフ
+
+>[!BEGINSHADEBOX]
+
+*この記事では、**Customer Journey Analyticsの棒グラフおよび積み重ね棒グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) バージョンについては、[ 棒グラフおよび積み重ね棒グラフ**を参照してください。*
+
+>[!ENDSHADEBOX]
 
 棒グラフビジュアライゼーションには、標準および積み重ねオプションがあります。
 
@@ -26,12 +32,6 @@ ht-degree: 26%
 
 <!-- markdownlint-enable MD034 -->
 
-
->[!BEGINSHADEBOX]
-
-*この記事では、**Customer Journey Analyticsの棒グラフおよび積み重ね棒グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) バージョンについては、[ 棒グラフおよび積み重ね棒グラフ**を参照してください。*
-
->[!ENDSHADEBOX]
 
 
 ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)**[!UICONTROL Bar]** ビジュアライゼーションには、1 つ以上の指標の様々な値を表す縦棒が表示されます。
