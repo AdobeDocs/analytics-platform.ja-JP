@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 49%
+source-wordcount: '1612'
+ht-degree: 32%
 
 ---
 
@@ -26,25 +26,39 @@ ht-degree: 49%
 
 ## データ要素の設定
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。
+データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。 （データ要素について詳しくは、タグドキュメントの [ データ要素 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) を参照してください。）
 
-データ要素には様々なタイプがあります。まず、データ要素を設定して、サイトでユーザーが表示しているページ名を取り込みます。 次に、Experience Cloud ID を参照するデータ要素を設定します。 最後に、XDM オブジェクトデータ要素を定義します。
+以下の節では、推奨されるデータ要素と、設定可能なその他の一般的なデータ要素について説明します。
 
-### ページ名データ要素
+データ要素にはさまざまなタイプがあります。 設定する一般的なデータ要素は、サイトで閲覧されているユーザーのページ名を取得する要素と、サイトを訪問する各ユーザーのExperience Cloud ID を取得する要素の 2 つです。
 
-ページ名データ要素を定義するには：
+これら 2 つのデータ要素を設定した後、取得する特定のデータに対して追加のデータ要素を設定できます。
+
+最後に、目的のデータ要素をすべて定義した後、前に作成した [ スキーマ ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) にデータ要素を割り当てる必要があります。 これを行うには、XDM スキーマを表す XDM データ要素を定義します。
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
+
+### 提案されたデータ要素の作成
+
+次の節では、ほとんどの組織に適用される一般的なデータ要素の作成方法について説明します。
+
+#### ページ名データ要素
+
+ほとんどの組織に適用される共通のデータ要素は、ユーザーが表示しているページ名をキャプチャするデータ要素です。
+
+ページ名データ要素を作成するには：
 
 1. Adobe IDの資格情報を使用してexperience.adobe.comにログインします。
 
 1. Adobe Experience Platformで、**[!UICONTROL Data Collection]**/**[!UICONTROL Tags]** に移動します。
 
-1. [!UICONTROL タグのプロパティ]をクリックして新しく作成したタグを開きます。
+1. **[!UICONTROL タグプロパティ]** ページで、プロパティのリストから新しく作成したタグを選択して開きます。
 
 1. 左パネルで「**[!UICONTROL データ要素]**」を選択します。
 
 1. 「**[!UICONTROL データ要素を追加]**」を選択します。
 
-1. [!UICONTROL  データ要素を作成 ] ダイアログで、次の情報を指定します。
+1. **[!UICONTROL データ要素を作成]** ダイアログで、次の情報を指定します。
 
    * **[!UICONTROL 名前]**：データ要素の名前。 例：`Page Name`。
 
@@ -66,9 +80,11 @@ ht-degree: 49%
 
 1. [ECID データ要素 ](#ecid-data-element) を続行します。
 
-### ECID データ要素
+#### ECID データ要素
 
-ECID データ要素を定義するには：
+ほとんどの組織に適用される共通のデータ要素は、サイトを訪問する各ユーザーのExperience CloudID を取得するデータ要素です。
+
+ECID データ要素を作成するには：
 
 1. Adobe IDの資格情報を使用してexperience.adobe.comにログインします。
 
@@ -76,11 +92,23 @@ ECID データ要素を定義するには：
 
 1. [!UICONTROL タグのプロパティ]をクリックして新しく作成したタグを開きます。
 
+1. （条件付き）Experience CloudID サービス拡張機能がまだインストールされていない場合は、インストールします。
+
+   1. 左パネルで「**[!UICONTROL 拡張機能]**」を選択します。
+
+   1. 「**[!UICONTROL インストール済み]**」タブがデフォルトで選択されています。 「**[!UICONTROL Experience CloudID サービス]**」タイルが表示されている場合は、手順 5 に進みます。
+
+   1. **[!UICONTROL Experience CloudID サービス]** タイルが表示されない場合は、「**[!UICONTROL カタログ]**」タブを選択します。
+
+   1. 検索フィールドで、**[!UICONTROL Experience CloudID サービス]** を検索し、表示されたらタイルを選択します
+
+   1. **[!UICONTROL インストール]**/**[!UICONTROL 保存]** を選択します。
+
 1. 左パネルで「**[!UICONTROL データ要素]**」を選択します。
 
 1. 「**[!UICONTROL データ要素を追加]**」を選択します。
 
-1. [!UICONTROL  データ要素を作成 ] ダイアログで、次の情報を指定します。
+1. **[!UICONTROL データ要素を作成]** ダイアログで、次の情報を指定します。
 
    * **[!UICONTROL 名前]**：データ要素の名前。 例：`ECID`。
 
@@ -92,11 +120,45 @@ ECID データ要素を定義するには：
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-1. [XDM オブジェクトデータ要素 ](#xdm-object-data-element) を続行します。
+1. [ 追加のデータ要素の作成 ](#create-additional-data-elements) を参照してください。
+
+### 追加のデータ要素の作成
+
+収集するデータのタイプごとにデータ要素を作成します。 [ ページ名データ要素 ](#page-name-data-element) および [ECID データ要素 ](#ecid-data-element) で説明したのと同じプロセスを使用して、追加の各データ要素を作成します。
+
+作成するデータ要素には、スキーマ内に関連するフィールドが必要です。
+
+一般的なデータ要素は、業界やビジネスの要件によって異なります。 次の一般的なデータ要素を、業界別に整理して考えてみましょう。
+
+**小売データ要素**
+
+* 製品
+
+* 買い物かごへの追加
+
+* チェックアウト
+
+**財務データ要素**
+
+* トランザクション ID
+
+* トランザクション日
+
+* サービスタイプ
+
+**ヘルスケアデータ要素**
+
+* プロバイダー ID
+
+* 訪問日
+
+* 処理タイプ
+
+組織で必要なすべてのデータ要素を実装に作成したら、[XDM オブジェクトデータ要素 ](#xdm-object-data-element) に進みます。
 
 ### XDM オブジェクトデータ要素
 
-最後に、特定のデータ要素を、前に定義したスキーマにマッピングします。XDM スキーマを表す別のデータ要素を定義します。
+最後に、作成したデータ要素を、前に作成した [ スキーマ ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) にマッピングします。 これを行うには、XDM スキーマを表現する XDM オブジェクトデータ要素を定義します。
 
 XDM オブジェクトデータ要素を定義するには：
 
@@ -110,7 +172,7 @@ XDM オブジェクトデータ要素を定義するには：
 
 1. 「**[!UICONTROL データ要素を追加]**」を選択します。
 
-1. [!UICONTROL  データ要素を作成 ] ダイアログで、次の情報を指定します。
+1. **[!UICONTROL データ要素を作成]** ダイアログで、次の情報を指定します。
 
    * **[!UICONTROL 名前]**：データ要素の名前。 例：`XDM - Page View`。
 
@@ -127,7 +189,6 @@ XDM オブジェクトデータ要素を定義するには：
    ![ECID データ要素を選択](assets/pick-ecid-dataelement.png)
 
    ![ECID データ要素をマッピング](assets/map-ecid.png)
-
 
 1. スキーマ内で定義した `web > webPageDetails > name` 属性を、ページ名データ要素にマッピングします。
 
@@ -159,13 +220,13 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
 1. 左パネルで「**[!UICONTROL ルール]**」を選択します。
 
-1. 「**[!UICONTROL 新規ルールを作成]**」を選択します。
+1. 「**[!UICONTROL ルールを追加]**」を選択します。
 
-1. [!UICONTROL  ルールを作成 ] ダイアログで、次の情報を指定します。
+1. **[!UICONTROL ルールを作成]** ダイアログで、次の情報を指定します。
 
    * **[!UICONTROL 名前]**：ルールの名前。 例：`Page View`。
 
-   * **[!UICONTROL イベント]**:「**[!UICONTROL +追加]**」を選択します。 次に、[!UICONTROL  イベント設定 ] ダイアログで、次の情報を指定します。 完了したら、「変更を保持 **[!UICONTROL を選択し]** す。
+   * **[!UICONTROL イベント]**:「**[!UICONTROL +追加]**」を選択します。 次に、**[!UICONTROL イベント設定]** ダイアログで、次の情報を指定します。 完了したら、「変更を保持 **[!UICONTROL を選択し]** す。
 
       * **[!UICONTROL 拡張機能]**：リストから **[!UICONTROL Core]** を選択します。
 
@@ -179,7 +240,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       * **[!UICONTROL アクションタイプ]**：リストから **[!UICONTROL イベントを送信]** を選択します。
 
-      * **[!UICONTROL タイプ]**：リストから **[!UICONTROL web.webpagedetails.pageViews]** を選択します。
+      * **[!UICONTROL タイプ]**：リストから「**[!UICONTROL Web Webpagedetails ページビュー]**」を選択します。
 
       * **[!UICONTROL XDM データ]**：円柱アイコンを選択し、データ要素のリストから **[!UICONTROL XDM - ページビュー]** を選択します。
 
@@ -190,6 +251,12 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
         ![ルールを作成](assets/rule-pageview.png)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
+
+1. サイトに追加する各ルールに対して、このプロセスを繰り返します。
+
+   ルールについて詳しくは、タグドキュメントの [ ルール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) を参照してください。
+
+1. [ タグを作成して公開 ](#build-and-publish-your-tag) をクリックして進みます。
 
 ## タグを作成して公開する
 
@@ -207,9 +274,9 @@ Adobe Experience Platform タグは、Adobe Experience Platform web SDKのデプ
 
 1. 左パネルから「**[!UICONTROL 公開フロー]**」をクリックします。
 
-1. **[!UICONTROL 作業ライブラリを選択]**／**[!UICONTROL ライブラリを追加…]**&#x200B;を選択します。
+1. **[!UICONTROL ライブラリを追加]** を選択します。
 
-1. [!UICONTROL  ライブラリを作成 ] ダイアログで、次の情報を指定します。
+1. **[!UICONTROL ライブラリを作成]** ダイアログで、次の情報を指定します。
 
    * **[!UICONTROL 名前]**: ライブラリの名前。
 

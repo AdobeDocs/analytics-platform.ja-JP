@@ -7,18 +7,16 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1565'
 ht-degree: 7%
 
 ---
 
 # Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード
 
-Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする場合は、[ ほとんどのAdobeの推奨アップグレード手順 ](#recommended-upgrade-steps-for-most-organizations) に示すように、Analytics ソースコネクタと組み合わせて、Experience Platform web SDKの新しい実装をお勧めします。
-
-タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織に適さない場合があります。 その場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を使用して、組織固有の状況に合わせたアップグレード手順を動的に生成します。
+Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードを行う場合は、[ 推奨されるアップグレード手順 ](#recommended-upgrade-steps-for-most-organizations) に従ってください。 または、組織固有の状況に合わせて [ アップグレード手順を動的に生成 ](#dynamically-generate-upgrade-steps-for-your-organization) することもできます。
 
 ## 大部分の組織で推奨されるアップグレード手順
 
@@ -100,9 +98,11 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 
    +++タグ
 
-   1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
-
    1. [ タグプロパティを作成して、Adobe Experience Platform Web SDK拡張機能を追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
+
+   1. [タグプロパティにAdobe Experience Platform Web SDK拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+
+   1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
 
    1. [ タグに XDM データ収集ロジックを追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
 
@@ -120,11 +120,11 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 
 1. （任意） web データを、コールセンターデータなどの他のチャネルのデータと結び付けます。
 
-   これを行うには、Customer Journey Analytics接続にデータセットを追加します。
+   これを行うには、[ コールセンターと Web データの読み込み ](/help/use-cases/cross-channel/call-center.md) で説明しているように、Customer Journey Analytics接続にデータセットを追加します。
 
 1. [Customer Journey Analyticsでデータビューを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)。
 
-1. [ データがCustomer Journey Analyticsに送られていることを検証します ](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
+1. [Customer Journey Analyticsでデータがデータビューに送られていることを検証します ](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
 
 1. [ プロジェクトとコンポーネントを移行する ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
 

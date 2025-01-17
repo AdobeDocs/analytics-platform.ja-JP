@@ -1,16 +1,16 @@
 ---
 title: Web SDK 拡張機能用のローダータグの実装
-description: Web SDK 拡張機能のローダータグを実装する方法を説明します
+description: Web SDK拡張機能のローダータグを実装する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 34%
+source-wordcount: '285'
+ht-degree: 36%
 
 ---
 
@@ -27,6 +27,12 @@ ht-degree: 34%
 次のプロセスでは、タグを参照するコードの取得方法を説明します。 補足情報については、Experience Platformドキュメントの [ タグとイベント転送の実装ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) を参照してください。
 
 タグを参照するコードを取得するには：
+
+1. Adobe IDの資格情報を使用してexperience.adobe.comにログインします。
+
+1. Adobe Experience Platformで、**[!UICONTROL Data Collection]**/**[!UICONTROL Tags]** に移動します。
+
+1. **[!UICONTROL タグプロパティ]** ページで、プロパティのリストから新しく作成したタグを選択して開きます。
 
 1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
 

@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: f76d098d-d223-40e4-be81-d28e7581396b
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '256'
+ht-degree: 23%
 
 ---
 
@@ -27,6 +28,12 @@ ht-degree: 27%
 
 設定では、収集したデータをAdobe Experience Platformのデータセットに送信するようにデータストリームを設定します。
 
+>[!NOTE]
+>
+>次の手順は、Analytics またはAdobe AnalyticsAppMeasurement（タグ）を使用する Analytics 実装にのみ必要です。
+>
+>Adobe Analyticsの実装で Web SDKまたは Web SDK拡張機能を使用している場合、データストリームはAdobe Analytics環境に既に存在します。
+
 データストリームを設定するには：
 
 1. Adobe Experience Platformで、左パネルの **[!UICONTROL データ収集]** から [!UICONTROL  データストリーム ] を選択します。
@@ -40,4 +47,3 @@ ht-degree: 27%
 1. 「**[!UICONTROL 保存]**」を選択します。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
-

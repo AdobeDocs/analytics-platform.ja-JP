@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 31%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 31%
 
 この節の手順を完了する前に、データストリームが既に存在している必要があります。 データストリームが作成されるタイミングと方法は、次のようにAdobe Analyticsの実装によって異なります。
 
-* Adobe Analytics実装で Web SDK または Web SDK Extension を使用している場合、アップグレードプロセスの前に、Adobe Analytics環境でデータストリームを使用できました。
+* Adobe Analytics実装で Web SDKまたは Web SDK拡張機能を使用する場合、アップグレードプロセスの前に、Adobe Analytics環境でデータストリームを使用できました。
 
 * 他のAdobe Analytics実装では、[Customer Journey Analyticsで使用するデータストリームの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) で説明されているように、データストリームの作成はアップグレードプロセスの一部です。
 
