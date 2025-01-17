@@ -4,10 +4,10 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 33%
+source-wordcount: '687'
+ht-degree: 30%
 
 ---
 
@@ -68,7 +68,9 @@ Customer Journey Analyticsのコホートテーブルでは、ダブルベース
 
 ## コホートテーブル機能
 
-次の機能を使用すると、作成するコホートを細かく制御できます。
+以下の節では、作成するコホートを微調整して制御できるコホート分析機能について説明します。
+
+コホートの作成および [!UICONTROL  コホート分析 ] レポートの実行について詳しくは、[ コホートテーブルの設定 ](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) を参照してください。
 
 ### [!UICONTROL  リテンション ] テーブル
 
