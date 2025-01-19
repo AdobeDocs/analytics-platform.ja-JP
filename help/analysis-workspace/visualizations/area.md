@@ -4,7 +4,7 @@ title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: 834296485a1e21cf15fb5d8162e421d28e2fcd21
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 26%
@@ -18,6 +18,7 @@ ht-degree: 26%
 *この記事では、**Customer Journey Analyticsの面グラフおよび積み重ね面グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ 面グラフおよび積み重ね面グラフ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) を参照してください。*
 
 >[!ENDSHADEBOX]
+
 
 面グラフのビジュアライゼーションには、標準および積み重ねオプションがあります。
 
