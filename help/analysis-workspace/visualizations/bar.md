@@ -4,9 +4,9 @@ title: 棒グラフおよび積み重ね棒グラフ
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 834296485a1e21cf15fb5d8162e421d28e2fcd21
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '203'
 ht-degree: 26%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsの棒グラフおよび積み重ね棒グラフのビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) バージョンについては、[ 棒グラフおよび積み重ね棒グラフ**を参照してください。*
+_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analytics_ の棒グラフおよび積み重ね棒グラフのビジュアライゼーションについて説明します **。_**_<br/>_[ この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ 棒グラフおよび積み重ね棒グラフ ![ を参照してください。_
 
 
 >[!ENDSHADEBOX]

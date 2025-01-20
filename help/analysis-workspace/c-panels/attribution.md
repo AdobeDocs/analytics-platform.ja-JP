@@ -4,9 +4,9 @@ description: Analysis Workspace でのアトリビューションパネルの使
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '693'
 ht-degree: 47%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 47%
 
 >[!BEGINSHADEBOX]
 
-*この記事は、**Customer Journey Analyticsのアトリビューションパネルに関するドキュメント**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[ アトリビューションパネル ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) を参照してください。*
+_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のアトリビューションパネルに関するドキュメントです**_。この記事の <br/>_[ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ アトリビューションパネル ![ を参照してください。_
 
 >[!ENDSHADEBOX]
 

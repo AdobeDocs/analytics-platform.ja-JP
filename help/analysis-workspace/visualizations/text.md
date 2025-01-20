@@ -4,9 +4,9 @@ title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '265'
 ht-degree: 27%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsのテキストビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ テキスト ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) を参照してください。*
+_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics![ でのテキストビジュアライゼーションについて説明します**。この記事の _![AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text)_**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、_<br/>_[ テキスト** を参照してください。_
 
 >[!ENDSHADEBOX]
 

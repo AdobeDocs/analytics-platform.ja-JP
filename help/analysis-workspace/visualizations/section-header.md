@@ -4,9 +4,9 @@ description: Workspace プロジェクトにセクションヘッダーを挿入
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-*この記事では、**Customer Journey Analyticsのセクション ヘッダービジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[ セクションヘッダー ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) を参照してください。*
+_この記事は、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics![ のセクションヘッダービジュアライゼーションに関するドキュメント** です。_<br/>_この記事の_ AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)** 版については、[ セクションヘッダー ![ を参照してください。_
 
 >[!ENDSHADEBOX]
 

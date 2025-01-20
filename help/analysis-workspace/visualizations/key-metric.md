@@ -4,9 +4,9 @@ title: 主要指標の概要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '959'
 ht-degree: 36%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-*この記事では、**Customer Journey Analyticsの主要指標の概要ビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**バージョンについては、[ 主要指標の概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) を参照してください。*
+_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics![ の主要指標の概要ビジュアライゼーションについて説明します**。この記事の _<br/>_AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**バージョンについては、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)_ 主要指標の概要 ![ を参照してください。_
 
 >[!ENDSHADEBOX]
 

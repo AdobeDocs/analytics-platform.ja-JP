@@ -4,9 +4,9 @@ title: 数値の概要と変更概要
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 48%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-*この記事は、**Customer Journey Analyticsの数値概要と変更概要のビジュアライゼーションについて説明します**。<br/> この記事の&#x200B;**Adobe Analytics**版については、[ 数値概要と変更概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) を参照してください。*
+_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analytics_ の数値概要と変更概要のビジュアライゼーションについて説明します **。_**_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[ 数値概要と変更概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) を参照してください。_
 
 >[!ENDSHADEBOX]
 
