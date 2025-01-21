@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 8%
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 共有デバイスとは、複数のユーザーが使用するデバイスです。 一般的なシナリオは、タブレット、キオスクで使用されるデバイス、コールセンターのエージェントが共有するコンピューター機器などのデバイスです。
 
-2 人のユーザーが同じデバイスを使用し、両方のユーザーが購入を行う場合、サンプルイベントデータは次のようになります。
+2 人のユーザーが同じデバイスを使用し、両方のユーザーが認証済みの購入を行った場合、サンプルイベントデータは次のようになります。
 
 | イベント | タイムスタンプ | ページ名 | デバイス ID | 電子メール |
 |--:|---|---|---|---|
