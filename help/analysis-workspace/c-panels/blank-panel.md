@@ -26,7 +26,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_ の空白のパネルに関する説明です。<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) 空白パネル _を参照してください。
+_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_ の空白のパネルに関する説明です。<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/blank-panel) 空白パネル _を参照してください。
 
 >[!ENDSHADEBOX]
 
