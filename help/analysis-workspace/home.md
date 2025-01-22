@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+workflow-type: tm+mt
+source-wordcount: '1473'
+ht-degree: 99%
 
 ---
 
@@ -17,14 +17,13 @@ ht-degree: 100%
 
 Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとの[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)の共有とスケジュールを行うことができます。
 
+>[!BEGINSHADEBOX]
 
-+++ Analytics Workspace の可能性を示すビデオをご覧ください。
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!ENDSHADEBOX]
 
-{{videoaa}}
 
-+++
 
 ## インターフェイス
 

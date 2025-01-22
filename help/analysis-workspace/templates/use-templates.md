@@ -4,9 +4,9 @@ title: テンプレートを使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19294'
+source-wordcount: '19288'
 ht-degree: 71%
 
 ---
@@ -31,7 +31,7 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 1. Analysis Workspace で、「[!UICONTROL **ワークスペース**]」タブを選択します。
 
-   ![ 「テンプレート」タブ ](assets/view-prebuilt-templates.png)
+   ![ 「テンプレート」タブ ](assets/view-prebuilt-templates-full.png)
 
 1. [[!UICONTROL **テンプレート**]] セクションで、次のいずれかのタブを選択します。
 
@@ -43,9 +43,9 @@ Analysis Workspaceのテンプレート（または会社テンプレート）�
 
 1. 使用可能なテンプレートの表示方法を変更するには、次のいずれかのオプションを使用します。
 
-   * 列表示 ![ 列表示アイコン）またはカード表示 ![ カード表示アイコン ](assets/column-view-icon.png) アイコンのいずれかを選択して、列表示またはカード表示でテンプレートを表示す ](assets/card-view-icon.png) かどうかを選択します。
+   * 列表示 ![ViewColumn）またはカード表示 ![ カード ](/help/assets/icons/Card.svg) アイコンのいずれかを選択して、列表示またはカード表示でテンプレートを表示す ](/help/assets/icons/ViewColumn.svg) かどうかを選択します。
 
-   * カード表示 ![ カード表示アイコン ](assets/card-view-icon.png) を使用する場合は、**[!UICONTROL 最近使用された項目]**、**[!UICONTROL 一番人気]**、**[!UICONTROL アルファベット順]**、**[!UICONTROL カテゴリ順]** から選択します。
+   * カード表示 ![ カード ](/help/assets/icons/Card.svg) を使用する場合は、**[!UICONTROL 最近使用された項目]**、**[!UICONTROL 一番人気の項目]**、**[!UICONTROL アルファベット順]**、**[!UICONTROL カテゴリ順]** から選択します。
 
 1. 検索フィールドに検索するテンプレートの名前の入力を開始し、テンプレートのリストから選択します。
 
