@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: e326b5457c82a7b4789c68588546707fabca42f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 77%
 | [!UICONTROL コンポーネント名] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。Analysis Workspace UI で検索／フィルタリングを行いやすくするために、カスタムタグまたは標準搭載のタグでコンポーネントにタグを付けることができます。 |
-| [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義のラベルのドロップダウンリスト。 <p>これらのラベルは、次の状況で必要になる場合があります。</p> <ul><li>Analysis Workspace プロジェクトの [ 実験パネル ](/help/analysis-workspace/c-panels/experimentation.md) を使用して、実験レポートで使用できる一連のコンポーネントを定義します。<p>詳しくは、[Journey Optimizerとの統合 ](/help/integrations/ajo.md#data-view) および [Target レポート ](/help/integrations/at.md) を参照してください。</p></li><li>Adobe提供のテンプレートを使用する場合。 デフォルトでは、Adobeが提供する一部のテンプレートは、データビューに存在しないコンポーネントを含んでいるので、機能しません。<p>見つからないコンポーネントごとに、一致するコンテキストラベルがデータビューで使用できます。 一致するコンテキストラベルをデータビューに既に存在するコンポーネントに追加するか、新しいコンポーネントをデータビューに追加してコンテキストラベルを追加する必要があります。</p><p>詳しくは、「テンプレートの作成と管理 [ の記事の「特定のテンプレートのデータビューへの不足しているコンポーネントの追加 ](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) を参照し [ ください ](/help/analysis-workspace/templates/create-templates.md)。</p> |
+| [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義のラベルのドロップダウンリスト。 <p>これらのラベルは、次の状況で必要になる場合があります。</p> <ul><li>Analysis Workspace プロジェクトの[実験パネル](/help/analysis-workspace/c-panels/experimentation.md)を使用して、実験レポートで使用できる一連のコンポーネントを定義する場合。<p>詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。</p></li><li>アドビが提供するテンプレートを使用する場合。デフォルトでは、アドビが提供する一部のテンプレートは、データビューにないコンポーネントが含まれているので機能しません。<p>欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。データビューに既に存在するコンポーネントに一致するコンテキストラベルを追加するか、データビューに新しいコンポーネントを追加して、このコンポーネントにコンテキストラベルを追加する必要があります。</p><p>詳しくは、[テンプレートの作成と管理](/help/analysis-workspace/templates/create-templates.md)の記事の[特定のテンプレートのデータビューへの欠落しているコンポーネントの追加](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)を参照してください。</p> |
 | [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
