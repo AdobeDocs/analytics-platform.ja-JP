@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新のCustomer Journey Analyticsリリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: eff900722dc06d3bb272d1143c0e2344855e3c5c
+source-git-commit: 806bcaa72479c3e871e12fd1c4802bac97eda439
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 29%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 29%
 アラート：AN-363263、AN-364880、AN-365029、AN-365960
 オーディエンス：AN-362564; AN-363254;
 データ取り込み：AN-362359; AN-362751
-データビュー：AN-362089; AN-365213; AN-365770; AN-366171
+データビュー：AN-362089; AN-365213; AN-365770; AN-366171; AN-366681
 派生フィールド：AN-359711; AN-362496
 書き出し場所：AN-363999
 テーブル全体の書き出し：AN-363055
