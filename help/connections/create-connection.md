@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: ht
-source-wordcount: '4260'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
