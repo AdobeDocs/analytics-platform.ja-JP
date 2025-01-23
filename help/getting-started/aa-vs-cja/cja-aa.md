@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
 source-wordcount: '2417'
 ht-degree: 94%
@@ -34,7 +34,7 @@ ht-degree: 94%
 | **ガイド付き分析** | [ガイド付き分析](/help/guided-analysis/overview.md)を使用すると、Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 |
 | **インテリジェントキャプション** | [ インテリジェントキャプション ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) 高度な機械学習とジェネレーティブ AI を使用して、Workspaceのビジュアライゼーションに貴重な自然言語のインサイトを提供します。 インテリジェントキャプションは、折れ線グラフ、複数行、棒グラフ、横棒グラフ、ドーナツ、領域、フロー、フォールアウトのビジュアライゼーションでサポートされます。 |
 | **ジャーニー キャンバス** | [ジャーニーキャンバス ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) は、ユーザーが定義されたジャーニーをどのように進めたり、そこから離脱したりするかを分析できる、Analysis Workspace のビジュアライゼーションです。 |
-| **製品の使用状況** | [ 製品の使用状況 ] （https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()は、組織でのCustomer Journey Analyticsの使用方法を示します。 |
+| **製品の使用状況** | [Customer Journey Analytics使用状況 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview) は、組織での製品の使用方法を示します。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | **SQL アクセス** | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
