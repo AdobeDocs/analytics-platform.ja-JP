@@ -4,10 +4,10 @@ description: Customer Journey Analytics監査ログの表示方法と管理方�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 67%
+source-wordcount: '932'
+ht-degree: 60%
 
 ---
 
@@ -63,22 +63,22 @@ Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL 監査�
 次の項目が表示されます。
 
 * **[!UICONTROL アクション名]**：実行されるアクション。 指定できる値には以下のものがあります。
-   * API_REQUEST
-   * 承認
-   * 作成
-   * DELETE
-   * 編集
-   * 禁輸措置
-   * 書き出し
-   * ORG_CHANGE
-   * 更新
-   * SHARE
-   * 転送
-   * 承認取消
-   * 共有解除
+   * API_REQUEST：すべてのアクションが、バックエンドの API リクエストをトリガーします。 API リクエストの内容に関する詳細が表示されます。
+   * 承認：「承認」アクションが実行されました。
+   * 作成：「作成」アクションが実行されました。
+   * DELETE: 「削除」アクションが実行されました。
+   * 編集：「編集」アクションが実行されました。
+   * 禁輸措置：
+   * 書き出し：「書き出し」アクションが実行されました。
+   * ORG_CHANGE：組織変更アクションが実行されました。
+   * 更新：「更新」アクションが実行されました。
+   * 共有：「共有」アクションが実行されました。
+   * 転送：転送アクションが実行されました。
+   * 承認取消：「承認取消」アクションが実行されました。
+   * 共有解除：「共有解除」アクションが実行されました。
 * **[!UICONTROL 作成日]**：アクションが実行された日時。
 * **[!UICONTROL 説明]**：アクションの概要。
-* **[!UICONTROL ユーザー名]**：アクションを実行したユーザー。
+* **[!UICONTROL ユーザー名]**：アクションを実行したユーザー。 場合によっては、ユーザー名が見つからない可能性があります。 [ 製品の使用状況 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview) 機能には常にログインユーザー名が含まれるので、この機能の使用を検討してください。
 * **[!UICONTROL メール]**：アクションを実行したユーザーのメールアドレス。
 * **[!UICONTROL コンポーネント名]**：ユーザーがアクションを実行したコンポーネント。
 * **[!UICONTROL コンポーネントタイプ]**: コンポーネントのタイプ。 指定できる値には以下のものがあります。
@@ -94,7 +94,7 @@ Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL 監査�
    * フィルター
    * IMS_ORG
    * MOBILE
-   * プロジェクト
+   * プロジェクト （Workspace）
    * レポート
    * SCHEDULED_PROJECT
    * ユーザー
