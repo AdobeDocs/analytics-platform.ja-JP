@@ -6,14 +6,22 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 987d09a10da9cf972947fae99e5b88bfc8da135d
+source-git-commit: 4438f4f7bd2794f459a1f771b1685f2501838b5f
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 1%
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
 # Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用
+
+パーソナライゼーションオブジェクトの結果がデータセットに返されます。 実験の結果。 お客様が Target で AA を使用した場合、最終的には、CJA に移行する際やAdobe Targetで CJA を使用する際とは全く異なる領域で使用することになります。
+
+Target は、A/B テストや実験を設定する古い方法でした。 その後、Target でそれらのテストの結果を確認すると、レポート用に AA に変換されていました。 これで、Target を使用する場合に、Target でデータを必要とするのではなく、Adobe Target アクティビティのレポートソースとして CJA を選択できます。 したがって、顧客が AA でこれをおこない、CJA に移行したい場合、
+
+AJOを持ち、AJOでオファーを使用している顧客は、オファーを設定できるので、Platform でもデータセットを作成できます。ただし、これはアップグレードとは正確には関係ありません。
+
+
 
 回答が必要な質問：
 
@@ -29,6 +37,8 @@ ht-degree: 1%
 
 ## Web SDKの手動実装
 
+
+## Mobile SDKの実装
 
 
 

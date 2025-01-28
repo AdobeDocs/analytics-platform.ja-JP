@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
+source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
-# Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行
+# Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行 {#transition-from-source-connector}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector"
+>title="Analytics ソースコネクタの実装"
+>abstract="Analytics ソースコネクタを使用すると、Customer Journey Analyticsから簡単に価値を得ることができますが、Adobe AnalyticsとCustomer Journey Analyticsの両方の費用を支払う必要があります。 このガイドは、独立した web SDKの実装に向かって進む際に役立ちます。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

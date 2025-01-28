@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1587'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードを行う場合は、[ 推奨されるアップグレード手順 ](#recommended-upgrade-steps-for-most-organizations) に従ってください。 または、組織固有の状況に合わせて [ アップグレード手順を動的に生成 ](#dynamically-generate-upgrade-steps-for-your-organization) することもできます。
 
-## 大部分の組織で推奨されるアップグレード手順
+## 大部分の組織で推奨されるアップグレード手順 {#upgrade-process}
 
 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードにお勧めのプロセスは、Experience Platform Web SDKの新しい実装です。これは、Customer Journey Analyticsに推奨されるデータ収集方法です。 Adobeでは、Web SDKと併せて、Analytics ソースコネクタをCustomer Journey Analyticsへの移行に役立てることもお勧めします。 Analytics ソースコネクタを使用して、Adobe Analyticsの履歴データを保持し、横に並べてデータを比較します。
 
@@ -28,7 +28,16 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 >
 >ここで説明しているアップグレード手順が貴社にとって実用的でない場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を使用して、貴社の固有の状況に合わせたアップグレード手順を動的に生成してください。
 
-### 推奨アップグレードプロセスの概要
+### 推奨アップグレードプロセスの概要 {#high-level-upgade-process}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-historical-data"
+>title="Adobe Analyticsの履歴データ"
+>abstract="Adobe Analyticsの履歴レポートスイートデータをAdobe Experience PlatformとCustomer Journey Analyticsに取り込みます。"
+
+<!-- markdownlint-enable MD034 -->
 
 1. **Experience Platform Web SDKを実装する（継続的なデータ収集用）**
 
@@ -54,7 +63,7 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 
      違いに慣れて慣れるまで、Analytics ソースコネクタを動作し続けることができます。<!--elaborate on what those differences are? -->
 
-   Analytics ソースコネクタをスタンドアロンCustomer Journey Analyticsとして使用することは、長期的に実装を使用する方法にはお勧めしません。 これは、待ち時間が長く、スキーマが散乱し複雑であり、Adobe Analyticsの命名法（prop、eVarなど）に依存しており、最終的にソースコネクタから推奨される web SDK実装に移行するのが難しいためです。
+   Analytics ソースコネクタをスタンドアロンCustomer Journey Analyticsとして使用することは、長期的に実装を使用する方法にはお勧めしません。 これは、待ち時間が長く、スキーマが散乱し、複雑であり、Adobe Analyticsの命名法（prop、eVarなど）に依存しており、最終的に Analytics ソースコネクタから、推奨される web SDK実装に移行するのが難しいためです。
 
 ### 推奨されるアップグレード手順の詳細
 

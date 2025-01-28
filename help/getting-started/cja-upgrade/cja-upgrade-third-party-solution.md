@@ -1,81 +1,26 @@
 ---
-title: Adobe Analyticsの実装と、Customer Journey Analyticsへのアップグレードに与える影響について説明します
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: サードパーティの分析ソリューションからCustomer Journey Analyticsへのアップグレード
+description: サードパーティの分析ソリューションからCustomer Journey Analyticsにアップグレードする方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 11%
+source-wordcount: '768'
+ht-degree: 12%
 
 ---
 
-# Adobe Analyticsの実装と、Customer Journey Analyticsへのアップグレードに与える影響について説明します {#implementation-affects-upgrade}
+# サードパーティの分析ソリューションからCustomer Journey Analyticsへのアップグレード {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-upgrade-appmeasurement"
->title="AppMeasurement（手動 JS ファイル）"
->abstract="AppMeasurement.js をページに読み込み、s オブジェクトを使用してデータをAdobeeVarに送信するJavaScript実装（例：s.data1）。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-analyticsextension"
->title="Adobe Analytics拡張機能（タグ）"
->abstract="Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグにはAdobe Analytics拡張機能がインストールされています。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdk"
->title="Web SDK（alloy.js）"
->abstract="Web SDK ライブラリ（alloy.js）をページに読み込み、JSON ペイロードを使用してデータをAdobeに送信するJavaScript実装。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdkextension"
->title="Web SDK拡張機能（タグ）"
->abstract="Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグには Web SDK拡張機能がインストールされています。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-api"
->title="データ挿入 API"
->abstract="データ挿入 API または一括データ挿入 API を使用する実装。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-mobilesdk"
->title="Mobile SDK"
->abstract="Adobe Experience Platform Mobile SDKを使用する実装。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-unknown"
->title="不明な実装"
->abstract="実装を管理していない場合は、このオプションを一時的に選択できます。"
+>id="cja-upgrade-third-party"
+>title="サードパーティの分析製品"
+>abstract="Google Analyticsなどのサードパーティの分析製品のデータを収集する実装。 このオプションを選択すると、アンケートの一部のオプションが無効になり、サードパーティの Analytics 製品からCustomer Journey Analyticsにアップグレードする際には適用されません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,13 +28,18 @@ ht-degree: 11%
 > 
 >[Customer Journey Analytics アップグレード チェックリスト ](https://gigazelle.github.io/cja-ttv/) の質問に答える際は、このページの情報を使用してください。
 
-Adobe Analyticsの実装方法は様々です。 Customer Journey Analyticsにアップグレードする場合、すべてのAdobe Analytics実装ですべてのアップグレードパスを使用できるわけではありません。 ただし、組織でのAdobe Analyticsの実装方法に関係なく、推奨されるアップグレードパスを利用できます。
+サードパーティの分析ソリューションからCustomer Journey Analyticsにアップグレードする場合は、Experience Platform Web SDKの新しい実装を使用することをお勧めします。これは、Customer Journey Analyticsで推奨されるデータ収集方法です。 Adobeでは、Web SDKと併せて、履歴データをサードパーティの分析ソリューションからAdobe Experience Platformに取り込むこともお勧めします。
 
-以下の情報を使用して、現在のAdobe Analyticsの実装と、組織で使用可能なアップグレードパスを確認します。
+<!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
+
+サードパーティの分析ソリューション（Google Analyticsなど）からCustomer Journey Analyticsに移行する場合は、次の手順を実行します。
+
+1. ：
+
 
 具体的なアドバイス、ガイダンス、サポートが必要な場合は、アドビ担当者にお問い合わせください。
 
-| 既存の Adobe Analytics の実装 | 説明 | 使用可能なアップグレードパス |
+| 既存の分析ソリューション | 説明 | 使用可能なアップグレードパス |
 |---------|----------|----------|
 | AppMeasurement | これまで、JavaScriptのAppMeasurementは、Adobe Analyticsを実装する一般的な方法でした。<p>この実装タイプについて詳しくは、[JavaScriptのAppMeasurementを使用したAdobe Analyticsの実装 ](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview) を参照してください。</p> | <ul><li>[ （推奨）継続的なデータ収集のためのExperience Platform Web SDKの新しい実装。履歴データのための Analytics Source コネクタ ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDKの新しい実装 ](/help/data-ingestion/aepwebsdk.md) </li><li>Web SDK への Adobe Analytics の移行</li><li>[Analytics Source コネクタ ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |
 | Adobe Analytics拡張機能（タグ） | <p>Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。アドビは他のソリューションや製品との統合を提供し、カスタムコードの導入に対応します。これらのタスクはすべて、組織の開発チームに依存せずに実行できるので、自らサイト上のコードを更新できます。</p><p>この実装タイプについて詳しくは、[Analytics 拡張機能を使用したAdobe Analyticsの実装 ](https://experienceleague.adobe.com/en/docs/analytics/implementation/launch/overview) を参照してください。</p> | <ul><li>[ （推奨）継続的なデータ収集のためのExperience Platform Web SDKの新しい実装。履歴データのための Analytics Source コネクタ ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDKの新しい実装 ](/help/data-ingestion/aepwebsdk.md) </li><li>Web SDK への Adobe Analytics の移行</li><li>[Analytics Source コネクタ ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |
