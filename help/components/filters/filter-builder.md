@@ -4,7 +4,7 @@ title: フィルターの作成
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8eb146fccbdbe47df8ca28f7b8dcbce2bf6888fd
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 8%
@@ -132,13 +132,13 @@ ht-degree: 8%
 
 ![ 相対日付範囲を使用したフィルター ](assets/filter-rolling-date-range.gif)
 
-+++ 以下は、フィルターでの周期的な日付範囲の使用に関するビデオです
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ セグメントでの日付範囲のローリング ](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} を参照してください。
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## フィルターを積み重ねる {#stack}
 

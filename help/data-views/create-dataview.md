@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '1899'
-ht-degree: 100%
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 100%
 
 データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、Customer Journey Analytics でのディメンションや指標の動作を調整できます。
 
-+++ Customer Journey Analytics でのデータビューを説明するビデオをご覧ください
 
->[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ データビューの作成または編集 ](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 データビューを作成または編集するには：
 

@@ -4,10 +4,10 @@ title: ブレットグラフ
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 58%
+source-wordcount: '263'
+ht-degree: 56%
 
 ---
 
@@ -39,9 +39,18 @@ _この記事は、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ![GraphBullet](/help/assets/icons/GraphBullet.svg)**[!UICONTROL Bullet]** ビジュアライゼーションは、指標とパフォーマンス範囲（目標）の比較または測定の方法を示します。
 
-![](assets/bullet.png)
+![ ブレットグラフのビジュアライゼーション ](assets/bullet.png)
 
 ブレットグラフは、1 つ主要測定値（例えば、現在の年次累計売上高）を使用し、パフォーマンスの質的範囲を入力できます（例えば、ターゲット売上高と比較）。高、中、低の目標範囲を指定できます。 目標の範囲は ![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL 設定]** で指定できます。
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Bullet グラフのビジュアライゼーション ](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## 設定
 

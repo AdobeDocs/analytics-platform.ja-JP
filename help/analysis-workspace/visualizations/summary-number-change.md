@@ -4,14 +4,26 @@ title: 数値の概要と変更概要
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 48%
+source-wordcount: '510'
+ht-degree: 47%
 
 ---
 
 # 数値概要と変更概要
+
+>[!BEGINSHADEBOX]
+
+_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analytics_ の数値概要と変更概要のビジュアライゼーションについて説明します **。_**_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[ 数値概要と変更概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) を参照してください。_
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 数値概要と変更概要のビジュアライゼーション ](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 ## 概要番号 {#summary-number}
 
@@ -23,14 +35,6 @@ ht-degree: 48%
 >abstract="合計と小計を表示するビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analytics_ の数値概要と変更概要のビジュアライゼーションについて説明します **。_**_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[ 数値概要と変更概要 ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) を参照してください。_
-
->[!ENDSHADEBOX]
-
 
 ![ 要約 ](/help/assets/icons/123.svg)**[!UICONTROL 数値概要]** ビジュアライゼーションを使用すると、プロジェクトで重要になる大きな数を強調表示できます。 このビジュアライゼーションは、関連するデータソースを使用して次のように動作します。
 

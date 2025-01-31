@@ -4,10 +4,10 @@ title: ツリーマップ
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 27%
+source-wordcount: '164'
+ht-degree: 26%
 
 ---
 
@@ -37,6 +37,13 @@ _この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJour
 ![ サブブランチを表す小さい長方形のタイルを示したツリーマップの例 ](assets/treemap.png)
 
 ツリーマップを使用すると、他の方法では検出が困難なパターンを確認できます。 寸法の色とサイズを使用すると、寸法の相関関係や、特定の寸法が特に関連しているかどうかの確認ができます。 ツリーマップの 2 つ目の利点は、構造によって、ツリーマップがスペースを効率的に使用することです。
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ツリーマップビジュアライゼーション ](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]

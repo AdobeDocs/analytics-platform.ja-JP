@@ -4,9 +4,9 @@ title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '889'
 ht-degree: 21%
 
 ---
@@ -15,13 +15,15 @@ ht-degree: 21%
 
 [!UICONTROL  列設定 ] を使用すると、列の書式を設定できます。条件付きのものも設定できます。
 
-+++ この機能のビデオデモをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![ フリーフォームテーブルの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 行と列の設定 ](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 [!UICONTROL  列設定 ] にアクセスするには、列見出しで ![ 列設定 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択します。
 

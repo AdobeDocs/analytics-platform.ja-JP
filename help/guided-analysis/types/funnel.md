@@ -5,7 +5,7 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ![ コンバージョンファネル ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL  ファネル ]**分析は、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各ステップを表します。 縦軸は、各ステップにおけるユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## ユースケース
 

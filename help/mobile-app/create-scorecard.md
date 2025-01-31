@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 68%
+source-wordcount: '2703'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,13 @@ ht-degree: 68%
 
 次の情報は、Customer Journey Analyticsデータのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。 はじめに、Analytics ダッシュボードのスコアカードビルダーのビデオを視聴できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ モバイルスコアカードの作成 ](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
@@ -202,7 +208,14 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 カスタムの詳細スライドを使用すると、オーディエンスと共有する情報をさらに絞り込むことができます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ カスタム詳細ビュー ](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 各詳細スライドのレイアウトを変更し、テキストを追加して、エンドユーザーに表示されるデータをより適切に説明できます。また、ドロップダウンメニューを使用してグラフのタイプを変更することもできます。
 
@@ -240,7 +253,15 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 Analysis Workspace のモバイルスコアカードプロジェクトでデータストーリーを作成する方法について詳しくは、ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![ モバイルスコアカードプロジェクトの場合は VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ データストーリー ](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 **データストーリーを作成するには**{#data-story-create}
 

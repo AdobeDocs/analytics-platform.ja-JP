@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 66%
+source-wordcount: '1813'
+ht-degree: 65%
 
 ---
 
@@ -40,7 +40,12 @@ ht-degree: 66%
 
 カスタムの詳細スライドを使用すると、オーディエンスと共有する情報をさらに絞り込むことができます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ カスタム詳細ビュー ](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 各詳細スライドのレイアウトを変更し、テキストを追加して、エンドユーザーに表示されるデータをより適切に説明できます。また、ドロップダウンメニューを使用してグラフのタイプを変更することもできます。
 
@@ -78,7 +83,13 @@ ht-degree: 66%
 
 Analysis Workspace のモバイルスコアカードプロジェクトでデータストーリーを作成する方法について詳しくは、ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ モバイルスコアカードプロジェクトのデータストーリー ](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 **データストーリーを作成するには**{#data-story-create}
 

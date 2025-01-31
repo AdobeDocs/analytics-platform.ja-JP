@@ -4,9 +4,9 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '692'
 ht-degree: 30%
 
 ---
@@ -52,13 +52,15 @@ _この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJour
 
 [!UICONTROL  コホートテーブル ] は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべてのCustomer Journey Analyticsユーザーが利用できます。
 
-+++ コホートテーブルのデモンストレーションを紹介するビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![Analysis Workspaceでの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ コホート分析 ](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!IMPORTANT]
 >

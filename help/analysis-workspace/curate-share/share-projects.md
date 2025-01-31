@@ -5,10 +5,10 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 64%
+source-wordcount: '2053'
+ht-degree: 62%
 
 ---
 
@@ -40,13 +40,15 @@ ht-degree: 64%
 
 共有より前に適用した[キュレーション](curate.md)は、受信者がプロジェクトを開くと反映されます。
 
-+++ プロジェクト共有の使用方法を示すビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![Analysis Workspaceでの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ プロジェクトの共有 ](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## 組織内のCustomer Journey Analyticsユーザーおよびグループと共有する {#Add}
 
@@ -153,9 +155,13 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーに対
 >
 >* Healthcare Shield ライセンスとプライバシーおよびセキュリティシールド ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能がブロックされています。
 
-次のビデオデモおよび付属のドキュメントでは、任意のユーザーとのリンクの共有に関連するオプションについて説明しています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 任意のユーザーと共有 ](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 Analysis Workspace プロジェクトを任意のユーザーと共有するには：
 
@@ -201,11 +207,18 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 [ 「プロジェクトを共有」タブ ](#share-a-link-to-a-project) または [ 任意のユーザーと共有リンク ](#share-a-project-with-anyone-no-login-required) を使用して）リンクを共有してプロジェクトを共有する場合、プロジェクトにアクセスするには、共有されているリンクを使用する必要があります。 例えば、メールや内部 web サイトなどでリンクが共有されている場合があります。
 
-## 埋め込みコンポーネントの共有
+## 埋め込みコンポーネントを共有
 
-以下は、このトピックに関するビデオです。
+プロジェクトの一部である埋め込みコンポーネントを共有できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspaceの埋め込みコンポーネントの共有 ](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## よくある質問（FAQ） {#FAQs}
 

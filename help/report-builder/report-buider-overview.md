@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
-workflow-type: ht
-source-wordcount: '309'
-ht-degree: 100%
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,12 @@ Customer Journey Analytics の Report Builder は、次のプラットフォー�
 
 ## 概要ビデオ
 
->[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Customer Journey Analytics用レポートビルダー ](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 Customer Journey Analytics 用 Report Builder は、[Microsoft ストア](https://www.microsoft.com/ja-jp/store/apps/windows)からダウンロードできます。
 

@@ -4,7 +4,7 @@ title: 行
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 22%
@@ -31,14 +31,6 @@ _この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg)**[!UICONTROL 折れ線グラフ]** ビジュアライゼーションは、線を使用して指標を表し、一定期間の値の変化を示します。 折れ線グラフのビジュアライゼーションは、時間がディメンションとして使用される場合にのみ使用できます。
-
-<!--
->[!NOTE]
->
->The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
-
-The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
--->
 
 ![行のビジュアライゼーション](assets/line-viz.png)
 

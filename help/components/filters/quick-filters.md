@@ -4,9 +4,9 @@ title: クイックフィルター
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1170'
 ht-degree: 2%
 
 ---
@@ -16,12 +16,13 @@ ht-degree: 2%
 クイックフィルターを使用すると、[ フィルタービルダー ](/help/components/filters/create-filters.md) でフィルターを作成しなくても、Workspace プロジェクト内のデータをすばやく調査できます。
 
 
-+++ 次のビデオでは、クイックフィルターの使用方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
+デモビデオについては、![Analysis Workspaceの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ クイックセグメント ](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} を参照してください。
 
-+++
+>[!ENDSHADEBOX]
+
 
 クイックフィルターを使用する場合は、次の点に注意してください。
 

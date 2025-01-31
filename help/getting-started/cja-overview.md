@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 93%
 
 ---
 
@@ -20,9 +20,13 @@ Customer Journey Analytics の高レベルのアーキテクチャを以下に�
 
 ![この節で説明する Customer Journey Analytics アーキテクチャ](assets/cja-architecture.png)
 
-Customer Journey Analytics のビデオの概要は次のとおりです。
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+Customer Journey Analyticsの概要ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Customer ジャーニー分析：Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 ## Customer Journey Analytics と従来の Adobe Analytics の比較
 
@@ -88,11 +92,17 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 ## ビデオ
 
-* Customer Journey Analytics でのデータの操作：
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+>[!BEGINSHADEBOX]
 
-* Customer Journey Analytics のアーキテクチャと統合：
+Customer Journey Analytics内のデータの操作方法に関する入門ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Customer Journey Analytics内のデータの操作 ](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} を参照してください。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Customer Journey Analyticsのアーキテクチャと統合に関する概要ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ アーキテクチャと統合 ](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 

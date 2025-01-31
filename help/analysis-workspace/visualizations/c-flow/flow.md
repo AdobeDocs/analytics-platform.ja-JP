@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 49%
+source-wordcount: '387'
+ht-degree: 46%
 
 ---
 
@@ -41,15 +41,17 @@ _この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 
 * Web サイトまたはアプリケーションを通じたカスタマージャーニーを視覚化します。
 * 顧客が指定のチェックポイントの前後に移動する場所（入口、特定のディメンション、出口など）を分析します。
-* 選択したパスの特定のポイントを指定することによりセグメントを作成
+* 選択したパス内の特定のポイントを指定してフィルターを作成します。
 
-+++ フロービジュアライゼーションのビデオデモをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ フロービジュアライゼーションの作成 ](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## ディメンション間のフロー
 

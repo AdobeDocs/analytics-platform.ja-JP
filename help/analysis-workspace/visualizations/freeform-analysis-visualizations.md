@@ -5,7 +5,7 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 17%
@@ -126,8 +126,6 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | **[!UICONTROL 最小値を表示]** | ビジュアライゼーションに最小値を表示します。 |
 | **[!UICONTROL 最大値を表示]** | ビジュアライゼーションに最大値を表示します。 |
 | **[!UICONTROL トレンドラインを表示]** | ビジュアライゼーションにトレンドラインを表示します。 選択した場合、トレンドラインのタイプをドロップダウンメニューから選択できます。 |
-
-
 
 作成するすべてのビジュアライゼーションの設定をカスタマイズできます。 詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md)を参照してください。
 

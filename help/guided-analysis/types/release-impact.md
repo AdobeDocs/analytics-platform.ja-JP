@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 10%
@@ -25,7 +25,7 @@ ht-degree: 10%
 
 ![ リリース ](/help/assets/icons/Release.svg)**[!UICONTROL リリースの影響]** 分析では、特定の日付の前後に主要指標がどのように実行されたかを比較します。 このレポートの横軸は期間を示し、縦軸は目的の主要指標を示します。 グラフの中央にある縦棒グラフは、比較する日付を前後に表します。 この日付は、通常、製品の更新やキャンペーンの開始など、測定の対象となる製品への注目すべき変更を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## ユースケース
 

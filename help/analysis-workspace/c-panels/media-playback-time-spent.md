@@ -4,9 +4,9 @@ description: Analysis Workspaceのメディア再生滞在時間パネルを使�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1160'
 ht-degree: 55%
 
 ---
@@ -57,11 +57,15 @@ Analysis Workspaceでの再生滞在時間は、特定の時点でメディア�
 
 * ドロップオフが発生した場所。
 
-+++ この機能のビデオデモをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/338699)
+>[!BEGINSHADEBOX]
 
-+++
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ メディア再生滞在時間 ](https://video.tv.adobe.com/v/338699){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## 使用
 

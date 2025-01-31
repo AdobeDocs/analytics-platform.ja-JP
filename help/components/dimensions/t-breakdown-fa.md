@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 58%
+source-wordcount: '540'
+ht-degree: 52%
 
 ---
 
@@ -51,28 +51,49 @@ ht-degree: 58%
 
 * 列ツリーに既にアトリビューションが存在する場合、アトリビューションの変更は、編集中のアトリビューションにのみ影響します。
 
-+++ ディメンションとディメンションの分類を説明するビデオを表示します
+>[!BEGINSHADEBOX]
 
-Analysis WorkspaceのDimension
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Dimensionの分類
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Analysis Workspace でのプロジェクトへのディメンションと指標の追加：
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-フリーフォームテーブルでのディメンションの操作：
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-ディメンションを位置で分類：
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis WorkspaceのDimension](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの分類 ](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ディメンションと指標の追加 ](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ フリーフォームテーブルでのディメンションの操作 ](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別分類 ](https://video.tv.adobe.com/v/24033){target="_blank"} を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

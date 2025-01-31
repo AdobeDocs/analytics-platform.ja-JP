@@ -1,19 +1,19 @@
 ---
-title: Google Analytics履歴データの取り込み
+title: Google Analytics 履歴データの取り込み
 description: Adobe Customer Journey Analyticsを使用してGoogle AnalyticsデータをAdobe Experience Platformに取り込む方法を説明します。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 88%
+source-wordcount: '646'
+ht-degree: 86%
 
 ---
 
 
-# Google Analytics履歴データの取り込み
+# Google Analytics 履歴データの取り込み
 
 このページでは、Google Analytics の履歴データをデータセットとして Adobe Experience Platform に取り込み、Customer Journey Analytics 内のデータビューでそのデータセットを参照できるようにする方法について重点的に説明します。このページの手順を、繰り返しデータセットの生成について説明した[ライブ Google Analytics の実装の設定](streaming.md)のページと組み合わせることができます。この履歴データセットを現在の実装環境のデータセットと組み合わせることで、Customer Journey Analytics に現在のデータとバックフィルされたデータの両方をシームレスに表示して確認できます。
 
@@ -40,7 +40,13 @@ ht-degree: 88%
 
 ユニバーサルアナリティクスのプロパティは、各レコードを、個々のイベントではなくユーザーのセッションとしてデータに保存します。ユニバーサルアナリティクスデータを Adobe Experience Platform と互換性のある形式に変換する SQL クエリが必要です。GA スキーマで `UNNEST` 関数を `hits` フィールドに適用し、BigQuery テーブルとして保存します。
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Google AnalyticsからCustomer Journey Analyticsへの移行 – BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 1. Adobe Experience Platform で、左側の「**[!UICONTROL ソース]**」を選択します。
 1. カタログの下で、「**[!UICONTROL Google Cloud Storage]**」オプションを見つけます。 「**[!UICONTROL データを追加]**」をクリックします。
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Adobe Experience PlatformへのGoogle Analyticsデータの読み込み ](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

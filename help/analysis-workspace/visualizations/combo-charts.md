@@ -4,9 +4,9 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '603'
 ht-degree: 44%
 
 ---
@@ -30,7 +30,7 @@ _この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 >[!ENDSHADEBOX]
 
 
-![ コメント ](/help/assets/icons/ComboChart.svg)**[!UICONTROL コンボ]** ビジュアライゼーションを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく簡単に作成できます。 折れ線グラフと棒グラフの組み合わせで、データのトレンドを簡単に表示できます。
+![ コンボグラフ ](/help/assets/icons/ComboChart.svg)**[!UICONTROL コンボグラフ]** ビジュアライゼーションを使用すると、最初にテーブルを作成しなくても、比較ビジュアライゼーションをすばやく簡単に作成できます。 折れ線グラフと棒グラフの組み合わせで、データのトレンドを簡単に表示できます。
 
 [!UICONTROL Combo] を使用して、次の操作を行います。
 

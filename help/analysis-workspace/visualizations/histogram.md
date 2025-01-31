@@ -4,10 +4,10 @@ title: ヒストグラム
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 34%
+source-wordcount: '344'
+ht-degree: 36%
 
 ---
 
@@ -47,7 +47,7 @@ _この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics*
 
 次の例では、ヒストグラムを使用して、人数のセッションをバケット化します。 ヒストグラムは、ほとんどの人が選択した日付範囲で 16～21 のセッションを持っていることを示しています。
 
-![](assets/histogram.png)
+![ヒストグラム](assets/histogram.png)
 
 ## 詳細設定
 
@@ -74,9 +74,5 @@ _この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics*
 >[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
->
+>[ヒストグラムを使用して予期しないデータ値を識別する ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
 
-
-## ブログ投稿
-
-[ ヒストグラムを使用して予期しないデータ値を識別する ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168) に関する情報については、このブログ投稿を参照してください。

@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 9%
@@ -26,7 +26,7 @@ ht-degree: 9%
 ![FirstUse](/help/assets/icons/FirstUse.svg)**[!UICONTROL First use impact]** 分析は、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベントの前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒は、特定のユーザーが最初に機能を使用した日の 0 日を表します。 ユーザーは必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって発生する可能性があるので、0 日目はユーザーごとに異なる意味を持つ場合があります。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## ユースケース

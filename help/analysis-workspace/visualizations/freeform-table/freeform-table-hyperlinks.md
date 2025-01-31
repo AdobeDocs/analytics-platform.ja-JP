@@ -4,9 +4,9 @@ description: Analysis Workspaceのフリーフォームテーブルでディメ�
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1607'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 1%
 
 この機能は、次のタイプのディメンション項目のハイパーリンクを作成する場合に特に便利です。
 
-* URL 値を持つDimension項目（例えば、ページ URL ディメンション）
+* URL 値を持つDimension項目（例えば、ページ URL ディメンション）。
 
-* URL 値を持つ分類を含むDimension項目（例えば、ページ URL ディメンションの分類を持つページ名ディメンション）
+* URL 値を持つ分類を含むDimension項目（例えば、ページ URL ディメンションの分類を持つページ名ディメンション）。
 
-* 値が URL の一部であるDimension項目または分類（URL の一部であるページ名ディメンションなど）
+* 値が URL の一部であるDimension項目または分類（URL の一部であるページ名ディメンションなど）。
 
-+++ この機能のビデオデモをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ フリーフォームテーブルでのハイパーリンクの作成 ](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} を参照してください。
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## ハイパーリンクの作成
 
@@ -91,7 +91,7 @@ ht-degree: 1%
      | フィールド | 説明 |
      |---------|----------|
      | [!UICONTROL **カスタム URL**] | ハイパーリンクに使用するカスタム URL を指定します。 URL は完全修飾 URL として入力する必要があります。 例：<https://www.example.com><p>作成するカスタム URL は、静的または動的にすることができます。</p> <ul><li>**静的 URL:** 静的 URL は、単一のディメンション項目に対して、またはすべてのディメンション項目に対して、すべての項目を同じ URL にリンクさせる場合に指定できます。 例：`https://wiki.internal.company_name/page_name#item_definition`</p></li><li>**動的 URL:** 動的 URL は、複数のディメンション項目に対して、またはディメンション列内のすべてのディメンション項目に対して、一意のハイパーリンクを作成する場合に作成できます。<p>カスタム URL を動的にするには、URL に変数を含め、ディメンションの値または分類ディメンションの値に基づいて URL を変更します。</p><p>変数を使用する場合、URL で無効な文字（スペースなど）を含んだディメンション項目は URL エンコードされます。</p><p>次の変数を使用できます。（**メモ**：これらの変数は同じ URL で使用できますが、別々に使用する方が一般的です。）</p> <ul><li>**`$value`:** 指定した URL にディメンション項目の値を挿入できます。 <p>例えば、フリーフォームテーブルのすべてのページ名ディメンション項目にハイパーリンクを作成し、各ディメンション項目の値が web ページの URL の一部であるとします。 その場合、各ディメンション項目に対して動的に調整される単一のカスタム URL を作成できます。 <br/>例：`https://company-name.com/browse/product#\$value`</p><p>このカスタム URL がページ名ディメンション項目に適用され、その値が「ProductY」および「ProductZ」の場合、生成されたハイパーリンクは次のようになります。<br/>`https://company-name.com/browse/product#ProductY` および <br/>`https://company-name.com/browse/product#ProductZ` </p><p>![ ハイパーリンクで値を使用 ](assets/table-hyperlinks-vaule.png)</p><p>**ヒント**：カスタム URL フィールドに `$value` 変数のみを追加するのは、URL の作成時に「[!UICONTROL **ディメンション項目の値を使用**]」オプションを選択するのと同じです。</p></li><li>**`$breakdown`:** 分類ディメンション項目の値を、指定した URL に挿入できます。 `$breakdown` を使用すると、レポートでわかりやすい名前のディメンション（製品名ディメンションなど）を使用できます。 そして、使いやすさが低下する可能性のある分類ディメンション（製品 ID やページ URL ディメンションなど）に基づいてハイパーリンクを生成します。<p>分類ディメンションを参照する場合、特定のディメンションアイテムに対して分類アイテムを 1 つだけ持つことが最も一般的です。 特定のディメンション項目に対して複数の分類項目がある場合、最初の分類項目の値が URL で使用されます。 分類項目が一覧表示されない場合、その URL は無効です。 分類項目には、テーブルと同じ並べ替え順が適用されます。</p><p>分類ディメンションは、以下の [!UICONTROL **分類ディメンション**] フィールドで指定します。</p> <p>以下の「分類ディメンション [!UICONTROL **フィールドで説明するシナリオ例につ**] て考えてみます。</p></li></ul> |
-     | [!UICONTROL **分類ディメンション （オプション）**] | 使用する分類ディメンションの名前の入力を開始し、ドロップダウンリストから選択します。 <p>このフィールドで分類ディメンションを選択する場合は、「[!UICONTROL **カスタム URL**]」フィールドに指定する URL の `$breakdown` 変数を使用して、そのディメンションを参照する必要があります。</p><p>フリーフォームテーブル内のすべての製品名ディメンション項目にハイパーリンクを作成するとします。 各製品名ディメンション項目には、製品 ID ディメンションの分類が含まれます。</p></p>この場合、「製品 ID の分類」ディメンションの値を使用して、製品ページにユーザーを誘導するハイパーリンクを各製品名ディメンションに作成できます。 </p><p>[!UICONTROL **カスタム URL**] フィールドに指定するカスタム URL の末尾に `$breakdown` 変数を追加します。 次に例を示します。</p><p>`https://company-name.com/browse/product/$breakdown`</p>このカスタム URL が製品名ディメンション項目（値が「ProductY」と「ProductZ」の分類ディメンション項目を持つ）に適用されると、生成されたハイパーリンクは <br/>`https://company-name.com/browse/product/ProductY` および <br/>`https://company-name.com/browse/product/ProductZ` のようになります。</p><p>次に、「分類ディメンション [!UICONTROL **フィールドで製品 ID ディメンション**] を選択します </p><p>![ ハイパーリンクで分類を使用 ](assets/table-hyperlinks-breakdown.png)</p> |
+     | [!UICONTROL **分類ディメンション （オプション）**] | 使用する分類ディメンションの名前の入力を開始し、ドロップダウンリストから選択します。 <p>このフィールドで分類ディメンションを選択する場合は、「[!UICONTROL **カスタム URL**]」フィールドに指定する URL の `$breakdown` 変数を使用して、そのディメンションを参照する必要があります。</p><p>フリーフォームテーブル内のすべての製品名ディメンション項目にハイパーリンクを作成するとします。 各製品名ディメンション項目には、製品 ID ディメンションの分類が含まれます。</p></p>この場合、「製品 ID の分類」ディメンションの値を使用して、製品ページにユーザーを誘導するハイパーリンクを各製品名ディメンションに作成できます。 </p><p>[!UICONTROL **カスタム URL**] フィールドに指定するカスタム URL の末尾に `$breakdown` 変数を追加します。 例：</p><p>`https://company-name.com/browse/product/$breakdown`</p>このカスタム URL が製品名ディメンション項目（値が「ProductY」と「ProductZ」の分類ディメンション項目を持つ）に適用されると、生成されたハイパーリンクは <br/>`https://company-name.com/browse/product/ProductY` および <br/>`https://company-name.com/browse/product/ProductZ` のようになります。</p><p>次に、「分類ディメンション [!UICONTROL **フィールドで製品 ID ディメンション**] を選択します </p><p>![ ハイパーリンクで分類を使用 ](assets/table-hyperlinks-breakdown.png)</p> |
 
 1. 「[!UICONTROL **作成**]」を選択します。
 

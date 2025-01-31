@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 3%
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 この分析では、グラフの x 軸はユーザーの最初の開始イベントからの時間を表し、y 軸は 1 つ以上のリターンイベントにエンゲージするユーザーの割合を表します。 期間をまたいだリテンションとチャーンの両方を表示でき、表示される期間はクエリ設定を使用してカスタマイズできます。 グラフの下のテーブルには、個々のコホート（同じ日付に開始イベントを行ったユーザーのグループ）を表示するオプションを持つ集計データが表示されます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## ユースケース

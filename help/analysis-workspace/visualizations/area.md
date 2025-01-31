@@ -4,7 +4,7 @@ title: 面グラフおよび積み重ね面グラフ
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 25%
@@ -51,8 +51,6 @@ _この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJour
 >abstract="複数の指標の積み重ねを表す、階層グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg)**[!UICONTROL 積み重ね面グラフ]** ビジュアライゼーションは面グラフに似ていますが、各シリーズは前のシリーズの上から始まります。

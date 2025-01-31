@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4261'
+ht-degree: 99%
 
 ---
 
@@ -131,11 +131,13 @@ ht-degree: 0%
 * （例えば、別のバックフィルをリクエストするために）データセットを編集できます。
 * データセットごとに既存のデータ読み込むことができます。
 
-+++ 接続エクスペリエンスの作成と編集を示すビデオ
 
->[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 接続の作成と編集 ](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 ## 前提条件
 

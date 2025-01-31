@@ -5,18 +5,23 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 75%
+source-wordcount: '1299'
+ht-degree: 73%
 
 ---
 
 # エグゼクティブユーザー向けクイックスタートガイド
 
-以下は、 Analytics ダッシュボードの使用と表示についてのベストプラクティスに関する情報をエグゼクティブユーザーに提供します。次のビデオでは、この情報を紹介しています。
+次の情報は、Analytics ダッシュボードを使用および表示する際のベストプラクティスに関する情報をエグゼクティブユーザーに提供します。
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![ モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Assist エグゼクティブ ](https://video.tv.adobe.com/v/343460/){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 このガイドは、エグゼクティブユーザーが Analytics ダッシュボードでスコアカードを読み、解釈するのに役立つように作成されています。エグゼクティブユーザーは、自分のモバイルデバイスで、重要な概要データの幅広いレンダリングをすばやく簡単に表示できます。
 

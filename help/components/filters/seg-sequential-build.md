@@ -3,9 +3,9 @@ description: 順次フィルターは、THEN 演算子を使用してフィル�
 title: 順次フィルター
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 3%
 
 ---
@@ -14,13 +14,15 @@ ht-degree: 3%
 
 順次フィルターは、コンポーネント、コンテナおよびコンポーネントまたはコンテナの間の [!UICONTROL Then] 論理演算子を使用して作成します。 [!UICONTROL Then] 論理演算子は、1 つのフィルター条件が発生し、その後に別のフィルター条件が発生することを意味します。
 
-+++ 次に、順次セグメント化を示すビデオを示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 順次セグメント化 ](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 順次フィルターには、いくつかの [ 基本機能 ](#basics) と、順次フィルターをより複雑にするために設定できる追加オプションがあります。
 

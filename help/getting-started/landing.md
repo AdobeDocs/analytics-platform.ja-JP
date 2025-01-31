@@ -4,10 +4,10 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 373d0c9989fb692da23efe371c65344093801140
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 52%
+source-wordcount: '501'
+ht-degree: 97%
 
 ---
 
@@ -15,13 +15,15 @@ ht-degree: 52%
 
 Customer Journey Analytics 用のランディングページには、[!DNL Analysis Workspace]、プロジェクトマネージャーのホームページ、カスタマージャーニーデータをより効果的に管理するのに役立つラーニングセクションが用意されています。
 
-+++ 概要については、ビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![Analysis Workspaceの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ランディングページ ](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Customer Journey Analytics のランディングページは、「プロジェクト」および「ラーニング」のサブタブで構成されます。
 
@@ -33,18 +35,18 @@ Customer Journey Analytics のランディングページは、「プロジェ�
 
 >[!TAB プロジェクト]
 
-![ プロジェクトのランディングページ ](assets/landing-projects.png)
+![プロジェクトランディングページ](assets/landing-projects.png)
 
->[!TAB  ラーニング ]
+>[!TAB 学習]
 
-![ ラーニングランディングページ ](assets/landing-learning.png)
+![学習ランディングページ](assets/landing-learning.png)
 
 
 >[!ENDTABS]
 
 ## プロジェクト
 
-[!UICONTROL プロジェクト]は、[!UICONTROL ワークスペース]ホームページとして機能します。「**[!UICONTROL プロジェクト]**」タブには、会社フォルダー、作成した個人用フォルダー、Workspace プロジェクト、モバイルスコアカードが表示されます。 このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。詳しくは、[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を参照してください。
+[!UICONTROL プロジェクト]は、[!UICONTROL ワークスペース]ホームページとして機能します。「**[!UICONTROL プロジェクト]**」タブには、会社フォルダー、作成した個人用フォルダー、Workspace プロジェクト、モバイルスコアカードが表示されます。このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 
 
 **[!UICONTROL プロジェクト]**&#x200B;は、自分で作成したり、他のユーザーが作成して共有したりしたデータコンポーネント、テーブルおよびビジュアライゼーションを組み合わせてカスタマイズされたデザインです。[!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
@@ -53,7 +55,7 @@ Customer Journey Analytics のランディングページは、「プロジェ�
 >
 >次の設定の一部は、セッション中およびセッション間で保持されます。例えば、選択したタブ、選択したフィルター、選択した列および列の並べ替え方向があります。検索結果は永続的ではありません。
 
-詳しくは、[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を参照してください。
+詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 
 <!--
 
@@ -107,33 +109,33 @@ The available columns are:
 
 -->
 
-## Learning
+## 学習
 
 学習ページには、実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。
 
 Customer Journey Analytics の学習ページを使用して、以下を学びます。
 
-* 初級、中級、または上級のCustomer Journey Analyticsの機能とユースケース
-* Adobe AnalyticsからCustomer Journey Analyticsへのシームレスな移行方法
+* Customer Journey Analytics の初級、中級、上級の機能とユースケース
+* Adobe Analytics から Customer Journey Analytics によりシームレスに移行する方法
 
 学習コンテンツにアクセスするには：
 
-* Customer Journey Analyticsで、上部のメニューから「[!UICONTROL **Workspace**]」を選択し、左のパネルから「[!UICONTROL **ラーニング**]」を選択します。
+* Customer Journey Analytics で、上部のメニューから「[!UICONTROL **Workspace**]」を選択し、左パネルから「[!UICONTROL **学習**]」を選択します。
 
 ### 機能
 
-学習ページには次の機能があります
+学習ページは、次の機能を提供します。
 
-* **コンテンツをフィルター：** ![ フィルター ](/help/assets/icons/Filter.svg) を使用して、**[!UICONTROL タイプ]** （**[!UICONTROL ドキュメント]**、**[!UICONTROL ビデオ]**、**[!UICONTROL ツアーとチュートリアル]**）および **[!UICONTROL エクスペリエンスレベル]** （**[!UICONTROL 初心者]**、**[!UICONTROL 中級]**、または **[!UICONTROL 詳細]**）で学習コンテンツをフィルタリングします。
-* **進行状況の追跡：** コンテンツの一部を選択すると、![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Viewed]** タグが表示されます。 このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** タグを選択すると、コンテンツの一部から削除できます。
-* **その他のコンテンツを表示：** ビデオを表示しているときに、「**[!UICONTROL 詳細情報]**」を選択すると、Experience League上の関連するドキュメントコンテンツを表示できます。 または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
+* **コンテンツをフィルタリング：**![フィルター](/help/assets/icons/Filter.svg)を使用して、**[!UICONTROL タイプ]**（**[!UICONTROL ドキュメント]**、**[!UICONTROL ビデオ]**、**[!UICONTROL ツアーとチュートリアル]**）および&#x200B;**[!UICONTROL エクスペリエンスレベル]**（**[!UICONTROL 初級]**、**[!UICONTROL 中級]**、または&#x200B;**[!UICONTROL 上級]**）で学習コンテンツをフィルタリングします。
+* **進行状況を追跡：**&#x200B;コンテンツを選択すると、「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグが表示されます。このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグを選択して、コンテンツの一部から削除できます。
+* **追加コンテンツを表示：**&#x200B;ビデオの表示中に「**[!UICONTROL 詳細情報]**」を選択すると、Experience League の関連ドキュメントコンテンツが表示されます。または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
    * **[!UICONTROL YouTube を訪問]：** Analysis Workspace の完全な YouTube プレイリストを表示します。
-   * [!UICONTROL **Experience Leagueにアクセス**]:Experience Leagueに関するCustomer Journey Analyticsドキュメントの完全なスイートを表示します。
-* **新規ユーザー向けの基本：** 新規ユーザー向けに、[!UICONTROL Workspaceの基本の学習 ] ツアーをお勧めします。 このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。このツアーは、[ フリーフォームパネル ](/help/analysis-workspace/c-panels/freeform-panel.md) または [ 空のパネル ](/help/analysis-workspace/c-panels/blank-panel.md) ヘッダーのツールヒントを使用して、Workspaceでいつでも再起動できます。
+   * [!UICONTROL **Experience League を訪問**]：Experience League で Customer Journey Analytics ドキュメントの完全なスイートを表示します。
+* **新規ユーザー向けの基礎：**&#x200B;新規ユーザーには、[!UICONTROL Workspace の基礎を学ぶ]ツアーをお勧めします。このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。このツアーは、[フリーフォームパネル](/help/analysis-workspace/c-panels/freeform-panel.md)または[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)ヘッダーのツールチップを使用して、Workspace でいつでも再度開始することもできます。
 
-## 優先ランディングページ
+## 好みのランディングページ
 
-好みのランディングページを設定できます。 詳しくは、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#general-preferences) を参照してください。
+好みのランディングページを設定できます。詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md#general-preferences)を参照してください。
 
 <!--
 ## Landing page FAQ {#landing-faq}
