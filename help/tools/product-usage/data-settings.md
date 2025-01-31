@@ -2,7 +2,7 @@
 title: 製品の使用状況データ設定
 description: 製品の使用設定を有効化、無効化または構成します。
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 23%
@@ -10,8 +10,6 @@ ht-degree: 23%
 ---
 
 # 製品の使用状況データ設定 {#product-usage-data-settings}
-
-{{release-limited-testing}}
 
 _データ設定_ ページでは、製品の使用設定を処理します。 このページを使用して、組織での製品の使用を有効または無効にできます。 また、データセットを作成するAdobe Experience Platform サンドボックスを設定し、必要に応じて、データ保持ウィンドウを上書きすることもできます。 製品管理者にのみ表示されます。
 

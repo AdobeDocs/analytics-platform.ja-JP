@@ -2,10 +2,10 @@
 title: 製品の使用状況の概要
 description: 組織でのCustomer Journey Analyticsの使用方法に関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: dbf4ff28f693085320c3e496ea99eede2ddb17d2
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 12%
+source-wordcount: '523'
+ht-degree: 13%
 
 ---
 
@@ -98,7 +98,6 @@ Customer Journey Analyticsでインターフェイスのこのセクションに
    * `workspace-projects`
    * `guided-analysis`
    * `mobile-scorecard-builder`
-* **[!UICONTROL ユーザー ID]**：イベントをトリガーしたユーザー ID。
 * **[!UICONTROL 使用されたビジュアライゼーション]**：追加、削除または変更されたビジュアライゼーション。 Dimension項目は次のとおりです。
    * [!UICONTROL フリーフォームテーブル]
    * [!UICONTROL コホートテーブル]

@@ -2,7 +2,7 @@
 title: 製品使用状況のオプトアウト設定
 description: 組織内の個々のユーザーのオプトアウト設定を管理します。
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 11%
@@ -10,8 +10,6 @@ ht-degree: 11%
 ---
 
 # 製品使用状況のオプトアウト設定 {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 _オプトアウト設定_ ページを使用すると、組織内のユーザーを製品の使用状況のトラッキングから除外または再含めることができます。 製品管理者にのみ表示されます。
 
