@@ -6,15 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 0e3f15abbc904786c359160749d62754a9ebbe50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2418'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics の機能のサポート
 
-次の表に、Customer Journey Analyticsに特有の機能と、Customer Journey AnalyticsでサポートされるAdobe Analytics機能、部分的にサポートされる機能、サポートされない機能を示します。 これらのリストは、Customer Journey Analytics に機能が追加されるにつれて変更されます。
+次の表に、Customer Journey Analytics に一意の機能と、Customer Journey Analytics でサポートされている、部分的にサポートされている、またはサポートされていない Adobe Analytics 機能を示します。これらのリストは、Customer Journey Analytics に機能が追加されるにつれて変更されます。
 
 ## Adobe Customer Journey Analytics に一意の機能 {#cja-not-aa}
 
@@ -32,13 +32,13 @@ ht-degree: 93%
 | **実験分析** | Customer Journey Analytics では、接続の一部として定義された任意のデータソースから、[任意の実験の上昇率と信頼性を評価](/help/analysis-workspace/c-panels/experimentation.md)できます。この評価により、あらゆるチャネルにわたる顧客インタラクション間の因果関係を把握できます。Analytics は、A4T による実験分析に制限されています。 |
 | **予測** | [予測](/help/analysis-workspace/c-forecast/forecasting.md)は、Customer Journey Analytics に既に存在する履歴データに基づく時系列関連データの統計的予測を含む AI／ML 機能です。予測は、フリーフォームテーブルや折れ線グラフのビジュアライゼーションで表示できます。 |
 | **ガイド付き分析** | [ガイド付き分析](/help/guided-analysis/overview.md)を使用すると、Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。 |
-| **インテリジェントキャプション** | [ インテリジェントキャプション ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) 高度な機械学習とジェネレーティブ AI を使用して、Workspaceのビジュアライゼーションに貴重な自然言語のインサイトを提供します。 インテリジェントキャプションは、折れ線グラフ、複数行、棒グラフ、横棒グラフ、ドーナツ、領域、フロー、フォールアウトのビジュアライゼーションでサポートされます。 |
-| **ジャーニー キャンバス** | [ジャーニーキャンバス ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) は、ユーザーが定義されたジャーニーをどのように進めたり、そこから離脱したりするかを分析できる、Analysis Workspace のビジュアライゼーションです。 |
-| **製品の使用状況** | [Customer Journey Analytics使用状況 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview) は、組織での製品の使用方法を示します。 |
+| **インテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)は、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。インテリジェントキャプションは、折れ線グラフ、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされます。 |
+| **ジャーニーキャンバス** | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
+| **製品の使用状況** | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | **SQL アクセス** | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
-| **Adobe Journey Optimizerのテンプレート** | Adobe Journey Optimizerの新しいレポートインターフェイスをカスタマイズするには、Customer Journey Analyticsで [ テンプレート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) を作成または編集したあと、Journey Optimizerのレポートページで使用するテンプレートを保存します。 |
+| **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。<br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
 | **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL ユニーク数超過]ラベルが表示されることがありますが、発生する頻度ははるかに低いので、データにフィルターまたはセグメントを適用することで軽減できます。</p> |
 
@@ -47,7 +47,7 @@ ht-degree: 93%
 | Adobe Analytics 機能 | CJA サポートに関するメモ |
 | --- | --- |
 | **異常値検出** | フルサポート |
-| **資産の譲渡** | フルサポート |
+| **アセットの転送** | フルサポート |
 | **Attribution IQ** | フルサポート |
 | **ボット検出** | [フルサポート](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=ja) |
 | **計算指標** | フルサポート。従来の Analysis Workspace の既存の計算指標は、Customer Journey Analytics に移植されません。 |
@@ -68,7 +68,7 @@ ht-degree: 93%
 | **PDF への書き出し** | フルサポート |
 | **プロジェクトのキュレーション** | フルサポート |
 | **プロジェクトリンク** | フルサポート |
-| **製品テンプレート** | [ 事前定義済みテンプレート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) および [ 会社テンプレート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template) が含まれます。 |
+| **製品テンプレート** | [事前定義済みテンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)および[会社テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template)が含まれます。 |
 | **レポート時間処理** | フルサポート。Customer Journey Analytics は、レポート時の処理にのみ依存します。 |
 | **レポート API へのアクセス** | フルサポート。[Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) を通じて使用できます。 |
 | **予定レポート／プロジェクト** | フルサポート |
