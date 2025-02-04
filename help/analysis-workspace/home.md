@@ -9,7 +9,7 @@ role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace の概要 ](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
