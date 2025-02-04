@@ -7,7 +7,7 @@ role: User
 source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
->title="インテリジェントキャプション：領域"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>title="インテリジェントキャプション：面グラフ"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
->title="インテリジェントキャプション：棒"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>title="インテリジェントキャプション：棒グラフ"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -35,8 +35,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
->title="インテリジェントキャプション : ドーナツ"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>title="インテリジェントキャプション：ドーナツグラフ"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
->title="インテリジェントキャプション：横棒"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>title="インテリジェントキャプション：横棒グラフ"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,8 +53,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
->title="インテリジェントキャプション：折れ線"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>title="インテリジェントキャプション：折れ線グラフ"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
 >title="インテリジェントキャプション：フォールアウト"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,7 +72,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
 >title="インテリジェントキャプション：フロー"
->abstract="自然言語形式でインサイトを生成すると、このビジュアライゼーションのデータをより簡単に理解し、解釈できるようになります。"
+>abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 

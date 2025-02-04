@@ -9,7 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: 00c57793846d997dbfd80b413f3cf3b78a96097b
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 19%
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_map_button"
 >title="マップ"
->abstract="このビジュアライゼーションでは、指標をマップにオーバーレイして表示します。 これは、様々な地域をまたいだデータを識別する場合に役立ちます。"
+>abstract="このビジュアライゼーションでは、指標をマップにオーバーレイして表示します。これは、様々な地域をまたいだデータを識別する場合に役立ちます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_map_heatmap"
 >title="ヒートマップ"
->abstract="ヒートマップを使用したイベントのプロット。"
+>abstract="ヒートマップを使用してイベントをプロットします。"
 
 <!-- markdownlint-enable MD034 -->
 
