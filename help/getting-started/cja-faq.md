@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: edbe0a1b3354b17defb9aef90564f2e36586b181
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 99%
+source-wordcount: '2583'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 >[!NOTE]
 >Customer Journey Analytics のデータサイズは固定ではないので、アドビは標準的な取り込み時間を明言することはできません。アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
-<ul><li>ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上）。</li><li>小さなバックフィル：7 日以内<li>大きなバックフィル：30 日以内</li></ul>
+<ul><li>ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上） **注意：**ステッチを有効にする場合、取り込みに最大で 3.25 時間かかる場合があります。 詳しくは、[ ガードレール ] （https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails）を参照してください。</li><li>小さなバックフィル：7 日以内<li>大きなバックフィル：30 日以内</li></ul>
 
 アドビでは、最近、Customer Journey Analytics でのデータの処理方法を変更しました。
 
@@ -142,7 +142,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 [**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
-主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。契約上の上限を超えないようにし、超過コストのリスクを軽減します。
+主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
 ## 6. データコンポーネントの削除の影響 {#deletion}
 
@@ -218,7 +218,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 使用量制限は、アドビによって定期的にモニタリングされ、適用されます。「データ行」とは、Customer Journey Analytics 内で分析に使用できる 1 日あたりの平均データ行数を意味します。
 
-例えば、契約によって 100 万行のデータを使用できるとします。 Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
+例えば、契約では 100 万行のデータを使用できるとします。Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
 
 ## 11. データの不一致の診断 {#discrepancies}
 
