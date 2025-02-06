@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# データがCustomer Journey Analyticsに送られていることを検証します
+# データがCustomer Journey Analyticsに送られていることを検証します {#validate-data}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-data-validate"
+>title="データのフローの検証"
+>abstract="Customer Journey Analyticsの詳細を使用して、データが接続に送られているかどうかを検証します。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

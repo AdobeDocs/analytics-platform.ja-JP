@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
 
-# Analytics ソースコネクタのカスタムスキーマの作成
+# Analytics ソースコネクタのカスタムスキーマの作成 {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create-schema"
+>title="Analytics ソースコネクタ用のスキーマの作成"
+>abstract="このスキーマは、Adobe Analytics ExperienceEvent フィールドグループと、組織のカスタムスキーマを構成するすべてのフィールドグループの組み合わせです。 これにより、Analytics ソースコネクタで使用されるフィールドを組織のスキーマにマッピングでき、履歴データにのみ使用されます。<br><br> 本質的に技術的ですが、このスキーマの作成は数時間で完了します。組織のカスタムスキーマを構成するフィールドグループが正確にわかっている場合は、おそらくより高速になります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,7 +35,7 @@ ht-degree: 3%
 
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
 
-ここでは、[Platform Web SDK の実装で使用するカスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが必要なためです。
+ここでは、[Customer Journey Analyticsの Web SDKの実装で使用するカスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、組織のニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが必要なためです。
 
 Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
@@ -42,21 +51,21 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 ## Analytics ソースコネクタのカスタムスキーマの作成
 
-Customer Journey Analyticsで使用するExperience PlatformWeb SDK 実装には、既に [ 新しいカスタムスキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) している必要があります。 このスキーマには、データを収集するフィールドのフィールドグループを含める必要があります。
+Experience Platformの Web SDK実装がCustomer Journey Analyticsで使用できるように、[ 新しいカスタムスキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) しておく必要があります。 このスキーマには、データを収集するフィールドのフィールドグループを含める必要があります。
 
-次に、Web SDK スキーマから同じフィールドグループを使用し、Analytics ソースコネクタで使用できる新しいスキーマに追加する必要があります。
+次に、Web SDK スキーマと同じフィールドグループを使用し、Analytics ソースコネクタで使用できる新しいスキーマに追加する必要があります。
 
 Analytics ソースコネクタのこのスキーマには、次を含める必要があります。
 
-* Web SDK 実装用に作成したカスタムスキーマに含まれるすべてのフィールドグループ（作成したカスタムフィールドグループを含む）。 （デフォルトのフィールドグループに含まれないカスタムフィールドは、カスタムフィールドグループの一部として Web SDK スキーマに追加する必要があります）。
+* Web SDK実装用に作成したカスタムスキーマに含まれるすべてのフィールドグループ（作成したカスタムフィールドグループを含む）。 （デフォルトのフィールドグループに含まれないカスタムフィールドは、カスタムフィールドグループの一部として Web SDK スキーマに追加する必要があります）。
 
 * 「Adobe Analytics ExperienceEvent テンプレート」フィールドグループ
 
 Analytics ソースコネクタで使用するカスタムスキーマを作成するには：
 
-1. Adobe Experience Platformで、[Customer Journey AnalyticsWeb SDK 実装で使用するカスタムスキーマの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) の説明に従って、新しいカスタムスキーマの作成を開始します。
+1. Adobe Experience Platformで、[Customer Journey Analyticsの Web SDK実装で使用するカスタムスキーマの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) の説明に従って、新しいカスタムスキーマの作成を開始します。
 
-1. Web SDK 実装用に作成したスキーマに含まれるすべてのフィールドグループ（カスタムフィールドグループを含む）を追加します。
+1. Web SDK実装用に作成したスキーマに含まれるすべてのフィールドグループ（カスタムフィールドグループを含む）を追加します。
 
 1. これらのフィールドグループの追加が完了したら、Adobe Analytics ExperienceEvent フィールドグループを追加します。
 

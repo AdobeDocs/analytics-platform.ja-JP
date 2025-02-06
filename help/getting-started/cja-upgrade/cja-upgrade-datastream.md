@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 23%
+source-wordcount: '300'
+ht-degree: 20%
 
 ---
 
-# Customer Journey Analyticsで使用するデータストリームを作成する
+# Customer Journey Analyticsで使用するデータストリームを作成する {#upgrade-create-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="Adobe Experience Platformでのデータストリームの作成"
+>abstract="データストリームは、設定済みのすべてのサービスにデータを渡す仲介場所です。 Adobe Experience Platformにこの場所を作成します。<br><br>Platform インターフェイスでのデータストリームの初期作成は数分で済みます。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

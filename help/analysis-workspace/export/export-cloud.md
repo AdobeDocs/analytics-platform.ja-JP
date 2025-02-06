@@ -5,14 +5,23 @@ title: クラウドへのCustomer Journey Analyticsレポートの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2281'
 ht-degree: 3%
 
 ---
 
-# クラウドへのCustomer Journey Analyticsレポートの書き出し
+# クラウドへのCustomer Journey Analyticsレポートの書き出し {#full-table-export}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-full-table-export"
+>title="Data Warehouseに類似した完全なテーブル書き出しを作成します"
+>abstract="完全なテーブルの書き出しは、Analysis Workspaceにデータが表示されたらすぐに使用できます。 必要に応じて、完全なテーブルの書き出しを作成またはスケジュールできます。<br><br> 書き出しに含めるデータが既にわかっている場合、完全なテーブルの書き出しを作成するのに数分しかかかりません。"
+
+<!-- markdownlint-enable MD034 -->
 
 クラウドからWorkspaceの完全なテーブルを書き出し、指定したCustomer Journey Analytics宛先に書き出しを送信できます。
 

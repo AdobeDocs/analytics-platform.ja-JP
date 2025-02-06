@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 701e3d3ce535318e3d3debcdcd591615ea9ca4a1
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 24%
+source-wordcount: '414'
+ht-degree: 23%
 
 ---
 
-# Analytics ソースコネクタを、Customer Journey Analyticsへのアップグレードにのみ使用してください
+# Analytics ソースコネクタを、Customer Journey Analyticsへのアップグレードにのみ使用してください {#use-source-connector-exclusively}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-exclusively"
+>title="Analytics ソースコネクタのみを使用する"
+>abstract="（推奨しません）他のAdobe Experience Platform サービスと統合したり、Analytics ソースコネクタを使用してAdobe Analyticsから移動したりすることはできません。 他のソースからデータを結び付けるには、ステッチが必要になる可能性があります。 このオプションを選択するには、アンケートの要件をすべて満たしている必要があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 7%
+source-wordcount: '1568'
+ht-degree: 8%
 
 ---
 
@@ -34,7 +34,7 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
->title="Adobe Analyticsの履歴データ"
+>title="Adobe Analytics の履歴データ"
 >abstract="Adobe Analyticsの履歴レポートスイートデータをAdobe Experience PlatformとCustomer Journey Analyticsに取り込みます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -177,13 +177,11 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、Cu
 
 1. [Customer Journey Analyticsでの機能サポート ](/help/getting-started/aa-vs-cja/cja-aa.md) について説明します。 Adobe Analyticsのほとんどの機能はCustomer Journey Analyticsでサポートされており、その他の多くの機能はCustomer Journey Analyticsで利用できます。
 
-1. Web SDKの実装が完了し、収集するデータに慣れたら、[AppMeasurementデータ収集を無効にします ](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)。
+1. Customer Journey Analyticsの Web SDKの実装が完了し、収集するデータに慣れたら、Adobe Analyticsを無効にします。
 
-1. すべての Analytics ソースコネクタのデータがデータ保持期間を終了したら、Analytics ソースコネクタを無効にします。
+   Adobeでは、Customer Journey Analyticsを実装した後も一定期間Adobe Analytics環境を実行し続けることをお勧めします。
 
-   Experience Platform Web SDKの実装では、Analytics ソースコネクタは、Adobe Analyticsの履歴データに対してのみ必要であり、元の実装のデータを新しい実装のデータと比較するために必要です。
-
-   新しい実装から十分な履歴データを入手し、Customer Journey Analyticsのレポートの違いに精通したら、Analytics ソースコネクタをオフにする必要があります。
+   アップグレード中およびアップグレード後のAdobe Analyticsの使用の詳細、およびAdobe Analyticsを無効にする推奨されるタイミングについては、[Customer Journey Analyticsへのアップグレード後にAdobe Analyticsが必要な期間の評価 ](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) を参照してください。
 
 ## 組織に合わせたアップグレード手順の動的な生成
 

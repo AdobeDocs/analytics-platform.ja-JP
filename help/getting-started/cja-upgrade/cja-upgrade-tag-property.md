@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 24%
+source-wordcount: '371'
+ht-degree: 20%
 
 ---
 
-# プロパティのタグの作成
+# プロパティのタグの作成 {#upgrade-tag-property}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-property"
+>title="Adobe Experience Platform Data Collection でのタグプロパティの作成"
+>abstract="タグの使用は、データ収集の一般的な標準です。 Adobe Experience Platform インターフェイスでタグを作成して、いつでもデータ収集変数を更新できるようにします。<br><br> タグプロパティの作成は、数回のクリックで完了できます（数分で完了します）。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 32%
+source-wordcount: '1697'
+ht-degree: 31%
 
 ---
 
-# タグへの XDM データ収集ロジックの追加
+# タグへの XDM データ収集ロジックの追加 {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="タグへの XDM データ収集ロジックの追加"
+>abstract="ローダータグがサイトにインストールされている場合は、ルールとデータ要素を追加し、XDM オブジェクトにデータを入力してAdobeに送信できます。 Adobeでは、タグの設定方法をトラッキングするために、ソリューションデザインドキュメントを管理することをお勧めします。<br><br> この手順には、プロパティの Analytics ロジックをすべて設定する必要があるので、手間がかかります。 正しいタグルールを確立し、テストしてサイトにデプロイするために、1 か月以上を費やしたいと考えています。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

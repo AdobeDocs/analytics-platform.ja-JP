@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 6%
 
 ---
 
-# Analytics ソースコネクタの作成とフィールドのマッピング
+# Analytics ソースコネクタの作成とフィールドのマッピング {#create-source-connector}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create"
+>title="Analytics ソースコネクタの作成"
+>abstract="Analytics ソースコネクタを使用して、Customer Journey Analyticsで使用するレポートスイートデータを取り込みます。<br><br>Analytics ソースコネクタの作成は、デフォルト設定を使用すると数分で完了します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-map-fields"
+>title="Analytics ソースコネクタの作成とスキーマフィールドのマッピング"
+>abstract="ソースコネクタは、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を理解している必要があります。 このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、履歴データをCustomer Journey Analyticsに追加する作業の一部です。<br><br> この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。 この手順は退屈で繰り返されるほど難しくありません。 データストリームマッピングの完了には約 1 週間かかる予定です。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,17 +44,17 @@ ht-degree: 7%
 
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
 
-ここでは、[Platform Web SDK の実装で使用するカスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが必要なためです。
+ここでは、[Customer Journey Analyticsの Web SDKの実装で使用するカスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、組織のニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマが必要なためです。
 
 Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
 1. [Analytics ソースコネクタのカスタムスキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Analytics ソースコネクタがまだない場合は、以下に説明するように、Analytics ソースコネクタを作成し、フィールドをカスタム Web SDK スキーマにマッピングします。
+1. Analytics ソースコネクタがない場合は、以下に示すように、Analytics ソースコネクタを作成し、フィールドをカスタム web SDK スキーマにマッピングします。
 
    または
 
-   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドをカスタム Web SDK スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドをカスタム web SDK スキーマにマッピング ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) します。
 
 1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -92,6 +110,6 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
    接続が作成されると、レポートスイートのAdobe Analytics データをデータセットに入力するデータフローが自動的に作成されます。 データフローは、実稼動用サンドボックスに対して最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスでのバックフィルは、3 か月に制限されています。
 
-   Analytics ソースコネクタを使用して履歴データをCustomer Journey AnalyticsWeb SDK 実装に取り込む場合は、自動作成されたデータセットを、Web SDK 実装用に作成した接続に追加する必要があります。
+   Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsの web SDK実装に取り込む場合は、自動作成されたデータセットを、web SDK実装用に作成した接続に追加する必要があります。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。

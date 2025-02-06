@@ -6,14 +6,23 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 4438f4f7bd2794f459a1f771b1685f2501838b5f
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
-# Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用
+# Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用 {#upgrade-personalization}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-personalization"
+>title="Adobe Journey Optimizerのパーソナライゼーションオブジェクトの使用"
+>abstract="Adobe Journey Optimizerで使用するには、実装でパーソナライゼーションオブジェクトを使用します。"
+
+<!-- markdownlint-enable MD034 -->
 
 パーソナライゼーションオブジェクトの結果がデータセットに返されます。 実験の結果。 お客様が Target で AA を使用した場合、最終的には、CJA に移行する際やAdobe Targetで CJA を使用する際とは全く異なる領域で使用することになります。
 

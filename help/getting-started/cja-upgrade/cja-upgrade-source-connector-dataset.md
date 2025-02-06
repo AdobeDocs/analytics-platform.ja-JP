@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 28%
+source-wordcount: '960'
+ht-degree: 26%
 
 ---
 
-# 接続への Analytics ソースコネクタデータセットの追加
+# 接続への Analytics ソースコネクタデータセットの追加 {#upgrade-source-connector-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-dataset"
+>title="接続への Analytics ソースコネクタデータセットの追加"
+>abstract="Analytics レポートスイートの履歴データがAdobe Experience Platformに表示されたので、最初にCustomer Journey Analyticsを設定する際に作成した既存の接続に、そのデータセットを追加します。 この手順が完了すると、Customer Journey Analyticsの履歴データを使用できます。<br><br> データセットをCustomer Journey Analyticsの接続に追加するのは簡単で、完了するまでに数分しかかかりません。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -44,13 +53,13 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 [ 履歴データ用の Analytics ソースコネクタを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) すると、Analytics データ用のデータセットが自動的に作成されます。
 
-この自動作成されたデータセットを、Web SDK 実装用に作成したのと同じ接続に追加する必要があります。 これにより、Analytics データが、Web SDK データとCustomer Journey Analyticsが同じデータビューになります。
+この自動作成されたデータセットを、Web SDK実装用に作成したのと同じ接続に追加する必要があります。 これにより、Analytics データが、Web SDK データとCustomer Journey Analyticsが同じデータビューになります。
 
-自動的に作成されたデータセットを Web SDK 実装用に作成したのと同じ接続に追加するには：
+自動作成されたデータセットを Web SDK実装用に作成したのと同じ接続に追加する場合：
 
 1. Customer Journey Analytics で、「**[!UICONTROL 接続]**」タブをクリックします。
 
-1. [Web SDK 実装用に作成した ](/help/getting-started/cja-upgrade/cja-upgrade-connection.md) 接続を選択します。
+1. [Web SDK実装用に作成した ](/help/getting-started/cja-upgrade/cja-upgrade-connection.md) 接続を選択します。
 
 1. 「**[!UICONTROL 編集]**」を選択します。
 
@@ -91,9 +100,9 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
-   * Web SDK 実装でデータの収集を最初に開始した日付と同じ終了日を選択します。
+   * Web SDKの実装でデータの収集を最初に開始した日付と同じ終了日を選択します。
 
-   * Web SDK 実装でデータの収集を初めて開始した日付のすぐ後の終了日を選択し、データ表示セグメントを使用して重複するデータを除外します。
+   * Web SDKの実装でデータの収集を初めて開始した日付の直後の終了日を選択し、データビューセグメントを使用して重複するデータを除外します。
 
    * データの重複が大きくなる終了日を選択してから、データビューセグメントを使用して重複するデータを除外します。
 
@@ -107,6 +116,6 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics内のデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
 
-   これは、Web SDK 実装の設定時にまだ実行していない場合にのみ必要です。
+   これは、web SDKの実装時にまだ実行していない場合にのみ必要です。
 
 1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。

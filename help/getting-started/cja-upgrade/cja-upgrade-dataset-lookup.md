@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '876'
 ht-degree: 5%
 
 ---
 
-# Customer Journey Analytics内のデータを分類するルックアップデータセットの作成
+# Customer Journey Analytics内のデータを分類するルックアップデータセットの作成 {#upgrade-lookup-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-lookup-dataset-create"
+>title="分類データを含む各ディメンションのルックアップデータセットを作成します"
+>abstract="Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsでデータを分類するための手法です。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,7 +35,7 @@ Adobe Analyticsのデータの分類と同様に、ルックアップデータ�
 
 Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[ データセットへの標準検索の追加 ](/help/connections/standard-lookups.md) を参照してください。
 
-Experience Platform Web SDK を使用する場合にCustomer Journey Analyticsでデータを分類するには、分類するデータを含む各ディメンションに対して、カスタムスキーマとルックアップデータセットを作成する必要があります。
+Experience Platform Web SDKを使用する場合、Customer Journey Analyticsでデータを分類するには、分類するデータを含む各ディメンションのカスタムスキーマとルックアップデータセットを作成する必要があります。
 
 ## ルックアップデータセットで使用するカスタムスキーマの作成
 

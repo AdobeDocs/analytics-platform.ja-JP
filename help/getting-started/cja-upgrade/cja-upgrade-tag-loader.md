@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 36%
+source-wordcount: '362'
+ht-degree: 28%
 
 ---
 
-# Web SDK 拡張機能用のローダータグの実装
+# Web SDK 拡張機能用のローダータグの実装 {#upgrade-tag-loader}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-loader"
+>title="サイトへのローダータグの実装"
+>abstract="Web サイトの開発チームと協力して、サイトのすべてのページにローダータグをインストールします。<br><br> このタスクの完了時間は、コードのデプロイに協力するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、このステップを数日で完了できる場合もあれば、タスクの膨大なバックログを持つエンジニアリングチームでは 1 か月以上かかる場合もあります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -5,14 +5,23 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 61%
+source-wordcount: '582'
+ht-degree: 51%
 
 ---
 
-# クロスチャネル分析
+# クロスチャネル分析 {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-additional-datasets"
+>title="接続へのデータセットの追加"
+>abstract="Adobe Experience Platformのデータセットにデータを追加したら、Customer Journey Analyticsでそのデータセットを接続に追加できます。 他のチャネルのデータを追加する場合は、組織が使用するスキーマに準拠していることを確認してください。<br><br> 追加する各データセットには、膨大な作業が必要です。特に、すべてのイベントに一意の ID が存在することと、包括的なデータ構造が組織のカスタムスキーマに準拠していることを確認することに関連する作業が必要です。 このワークフローの確立には、数か月にわたる組織内の多くのチーム間の調整が必要になる場合があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 クロスチャネル分析では、様々な web、モバイル、オフラインのプロパティのデータを統合することで、様々なチャネルをまたいだ顧客の行動を 1 つの統合ビューで把握できます。 例えば、この統合ビューを使用して、デスクトップとモバイルをまたいで顧客のインタラクションを分析し、顧客の行動を把握し、インサイトを抽出してデジタル顧客体験を最適化できます。 また、チャネルをまたいだ顧客インタラクション（例：サポートのやり取りや店頭購入など、デジタルチャネルとオフラインチャネル）を分析して、カスタマージャーニーをより深く理解し、最適化することもできます。
 

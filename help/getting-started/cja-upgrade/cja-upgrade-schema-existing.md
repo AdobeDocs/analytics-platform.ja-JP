@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 49%
+source-wordcount: '493'
+ht-degree: 38%
 
 ---
 
-# Customer Journey Analyticsするスキーマを選択
+# Customer Journey Analyticsするスキーマを選択 {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="カスタムスキーマの使用"
+>abstract="（推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡でき、不要な散らかったフィールドに関連するオーバーヘッドを回避できます。 このオプションには、Web SDKによって追加されたフィールドグループと、組織にカスタムのフィールドグループが含まれます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="デフォルトのスキーマを使用"
+>abstract="（非推奨）Adobe Analytics スキーマには 1,000 個を超えるフィールドが含まれているので、スキーマが散乱し、複雑になる可能性があります。 お客様の組織は、prop や eVar の概念を引き続き遵守する必要があります。これは、Customer Journey Analyticsでは使用されていない従来の概念です。 他のAdobe Experience Platform サービスとの統合はより困難です。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
@@ -36,7 +54,7 @@ Adobeは、Customer Journey Analyticsにアップグレードする際に、カ�
 
 ## 既存のAdobe Analytics スキーマを使用する
 
-既存のAdobe Analytics スキーマをCustomer Journey Analyticsで使用するオプションは、Adobe Analytics実装がAdobe Experience Platform Web SDK で設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
+既存のAdobe Analytics スキーマをCustomer Journey Analyticsで使用するオプションは、Adobe Analytics実装がAdobe Experience Platform web SDKで設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | メリット | デメリット |
 |----------|---------|

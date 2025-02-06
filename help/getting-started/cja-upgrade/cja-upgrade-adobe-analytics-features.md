@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1460cbd05cce793b25d026c413744508ab951147
+source-git-commit: 8d14bb23283107402332106df36e8f7898ea5d30
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 29%
+source-wordcount: '437'
+ht-degree: 31%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 29%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map"
->title="Activity Map のオーバーレイとリンクトラッキング"
+>title="Activity Map オーバーレイとリンクトラッキング"
 >abstract="サイト上にオーバーレイとしてリンクトラッキングデータを表示できるブラウザー拡張機能。"
 
 <!-- markdownlint-enable MD034 -->
@@ -82,7 +82,7 @@ ht-degree: 29%
 > 
 >[Customer Journey Analytics アップグレード チェックリスト ](https://gigazelle.github.io/cja-ttv/) の質問に答える際は、このページの情報を使用してください。
 
-以下の一覧は、[Customer Journey Analyticsアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に含まれる機能のみを示しています。 Customer Journey AnalyticsでサポートされているAdobe Analytics機能、一部サポートされている機能、サポートされていない機能の一覧については、[Customer Journey Analytics機能のサポート ](/help/getting-started/aa-vs-cja/cja-aa.md) を参照してください。
+以下のリストは、Customer Journey Analyticsへのアップグレードプロセスで考慮する必要があるAdobe Analytics機能のみを示しています。 Customer Journey Analyticsで完全にサポートされているAdobe Analytics機能、部分的にサポートされている機能、サポートされていない機能の一覧については、[Customer Journey Analytics機能のサポート ](/help/getting-started/aa-vs-cja/cja-aa.md) を参照してください。
 
 Customer Journey Analyticsにアップグレードする際に、引き続き使用するAdobe Analyticsの次の機能を検討してください。
 

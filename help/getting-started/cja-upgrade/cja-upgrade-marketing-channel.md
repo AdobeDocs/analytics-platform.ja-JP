@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
-# Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成
+# Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="マーケティングチャネル派生フィールドの作成"
+>abstract="派生フィールドは、データビュー内で作成されます。<br><br> デフォルトのマーケティングチャネル設定の使用は数分で済みます。高度にカスタマイズされたマーケティングチャネル設定の作成には数時間かかる場合があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -24,7 +33,7 @@ ht-degree: 5%
 
 Analytics ソースコネクタを使用する場合、マーケティングチャネルのデータは、そのコネクタを通じてCustomer Journey Analyticsに送られます。 従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[ マーケティングチャネルディメンションの使用 ](/help/use-cases/aa-data/marketing-channels.md) を参照してください。
 
-Experience Platform Web SDK を使用する場合にCustomer Journey Analyticsでマーケティングチャネルを使用するために、データビューで派生フィールドを使用して、同じマーケティングチャネルとCustomer Journey Analyticsの処理ルールを再作成できます。
+Experience Platform Web SDKを使用する際にCustomer Journey Analyticsでマーケティングチャネルを使用するために、データビューで派生フィールドを使用して、同じマーケティングチャネルとCustomer Journey Analyticsの処理ルールを再作成できます。
 
 1. Customer Journey Analyticsで、マーケティングチャネルを追加するデータビューを選択します。
 

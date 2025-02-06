@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Customer Journey Analyticsへのアップグレード時のデータセット取り込みの監視
+# Customer Journey Analyticsへのアップグレード時のデータセット取り込みの監視 {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="データセット内のデータの検証"
+>abstract="Web SDKの実装が完了したので、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。 主に取り込まれたバッチが表示された場合、この手順は完了です。 主に失敗したバッチが表示される場合やバッチが表示されない場合は、web SDKの実装を調べて、Adobeに正しくデータが送信されていることを確認してください。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
