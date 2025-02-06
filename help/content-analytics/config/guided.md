@@ -2,13 +2,14 @@
 title: Content Analytics ガイド付き設定
 description: オンボーディングガイド付き設定を使用した Content Analytics の設定方法
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 69e2f358398fd8d2646e5a3c1cb6dfd1b5b5efbb
+exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1699'
 ht-degree: 11%
 
 ---
@@ -200,6 +201,16 @@ ht-degree: 11%
 >title="データ収集"
 >abstract="コンテンツ分析のデータを収集する際に、**含める**&#x200B;または&#x200B;**除外する**&#x200B;アセットを指定します"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_experiences_edit_button"
+>title="データ収集"
+>abstract="選択した設定に関連付けられている、タグプロパティのAdobeContent Analytics 拡張機能のページの設定を編集できます。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_edit_button"
+>title="データ収集"
+>abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能のアセットの設定を編集できます。"
+
 <!-- markdownlint-enable MD034 -->
 
 #### 新しい設定
@@ -272,5 +283,3 @@ ht-degree: 11%
       1. Web SDKがタグプロパティ用に設定されていない場合、コンテンツ分析イベントのみを送信する新しい web SDK設定が作成されます。
       1. Web SDKがこのタグプロパティ用に設定されている場合、既存の web SDKの設定は変更されません。
 * **[!UICONTROL 保存]**：実装された設定に対する変更が保存され、実装が更新されます。
-
-
