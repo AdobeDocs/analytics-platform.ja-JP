@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1696'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="コンテンツ分析データの結合先となる既存のデータビューをCustomer Journey Analyticsから選択します。<br/>[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="コンテンツ分析データの結合先となる既存のデータビューをCustomer Journey Analyticsから選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ ht-degree: 11%
 データビューはCustomer Journey Analyticsに関連付けられています [ 接続 ](/help/connections/overview.md)。 また、接続は組織内のサンドボックスに基づいています。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの適切な名前が **[!UICONTROL サンドボックス]** に自動入力されます。
 
 
-### エクスペリエンスのキャプチャと定義
+### エクスペリエンスのキャプチャと定義 {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
