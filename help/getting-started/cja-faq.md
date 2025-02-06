@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
+source-git-commit: 1bea6a1bc7d2070f01a60ef859675a0f9d03c86d
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -134,7 +134,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 >
 >Customer Journey Analytics のデータサイズは固定ではないので、アドビは標準的な取り込み時間を明言することはできません。アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
-* ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上）。 ステッチが有効になっている場合、取り込みには最大 3.25 時間かかる場合があります。 詳しくは、[ ガードレール ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) を参照してください。
+* ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上）。 ステッチを有効にした場合、取り込みに最大 4 時間かかることがあります。 詳しくは、[ ガードレール ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) を参照してください。
 * 小さなバックフィル：7 日以内
 * 大きなバックフィル：30 日以内
 
