@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
+source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -122,7 +122,8 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 +++**過去または未来の日付やタイムスタンプを Customer Journey Analytics イベントデータセットに取り込む場合、どのような制限がありますか？**
 
-<ul><li>過去の日付／タイムスタンプの場合：最大 10 年前までのイベントデータ。</li><li>将来の日付／タイムスタンプの場合：最大 1 か月先のイベントデータ（予測）。</li></ul>
+* 過去の日付／タイムスタンプの場合：最大 10 年前までのイベントデータ。
+* 将来の日付／タイムスタンプの場合：最大 1 か月先のイベントデータ（予測）。
 
 +++
 
@@ -130,13 +131,17 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 ## 4. 待ち時間に関する考慮事項 {#latency}
 
 >[!NOTE]
+>
 >Customer Journey Analytics のデータサイズは固定ではないので、アドビは標準的な取り込み時間を明言することはできません。アドビでは、更新プログラムの提供と取り込みの最適化を通じて、これらの待ち時間を短縮するよう積極的に取り組んでいます。
 
-<ul><li>ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上）。 ステッチが有効になっている場合、取り込みには最大 3.25 時間かかる場合があります。<p>詳しくは、[ ガードレール ] （https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails）を参照してください。</li><li>小さなバックフィル：7 日以内<li>大きなバックフィル：30 日以内</li></ul>
+* ライブデータまたはイベント：Adobe Experience Platform でデータが使用可能になってから 90 分以内に処理して取り込みます。（バッチサイズが 5,000 万行を超える場合：90 分以上）。 ステッチが有効になっている場合、取り込みには最大 3.25 時間かかる場合があります。 詳しくは、[ ガードレール ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) を参照してください。
+* 小さなバックフィル：7 日以内
+* 大きなバックフィル：30 日以内
 
 アドビでは、最近、Customer Journey Analytics でのデータの処理方法を変更しました。
 
-<ul><li>「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。前日の午後 11:59:59（23:59:59）より前のイベント時間を持つデータは、バックフィルとして処理されます。</li><li>経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。</li></ul>
+* 「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。前日の午後 11:59:59（23:59:59）より前のイベント時間を持つデータは、バックフィルとして処理されます。
+* 経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。
 
 ## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
