@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
+source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1715'
 ht-degree: 11%
 
 ---
@@ -283,3 +283,9 @@ ht-degree: 11%
       1. Web SDKがタグプロパティ用に設定されていない場合、コンテンツ分析イベントのみを送信する新しい web SDK設定が作成されます。
       1. Web SDKがこのタグプロパティ用に設定されている場合、既存の web SDKの設定は変更されません。
 * **[!UICONTROL 保存]**：実装された設定に対する変更が保存され、実装が更新されます。
+* **[!UICONTROL 終了]**。 ガイド付き設定を終了します。 実装された設定に対して行われた変更はすべて破棄されます。
+
+>[!MORELIKETHIS]
+>
+>[ コンテンツ分析の手動設定 ](manual.md)
+>

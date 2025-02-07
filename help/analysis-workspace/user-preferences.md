@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3562'
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="デフォルトのテーブル指標"
->abstract="フリーフォームテーブルに使用するデフォルトの指標またはコンテナを選択します。 選択したデータビューに選択したデフォルトの指標またはコンテナが含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
+>abstract="フリーフォームテーブルに使用するデフォルト指標を選択します。 選択したデータビューに選択したデフォルトの指標が含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | パーセンテージ計算 | <ul><li>列</li><li>行</li></ul> |
 | | 列の合計（静的行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
 
-### ビジュアライゼーションの環境設定
+### ビジュアライゼーションの環境設定 {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="デフォルトのテーブル指標"
+>abstract="フロービジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、フロービジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="デフォルトのテーブル指標"
+>abstract="フォールアウトビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、フォールアウトビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーション環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
