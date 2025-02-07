@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '3461'
-ht-degree: 100%
+source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+workflow-type: tm+mt
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -138,6 +138,17 @@ ht-degree: 100%
 >abstract="「**[!UICONTROL 予測を表示]**」を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列が、自動的に予測されるようになります。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="デフォルトのテーブル指標"
+>abstract="フリーフォームテーブルに使用するデフォルトの指標またはコンテナを選択します。 選択したデータビューに選択したデフォルトの指標またはコンテナが含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Analysis Workspace で作成するすべての新しいプロジェクトについて、フリーフォームテーブルの環境設定をカスタマイズできます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
