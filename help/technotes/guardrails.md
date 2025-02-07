@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -236,7 +236,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 | Edge Networkまたはストリーミング取得からのデータレイクへのデータ取得 | &lt; 60 分 |
 | Adobe Analytics Source コネクタからのデータレイクへのデータ取り込み | &lt; 2.25 時間 |
 | データレイクからCustomer Journey Analyticsへのデータ取り込み | &lt; 90 分 |
-| ステッチ（オプション機能。詳しくは [ ステッチの概要 ](../stitching/overview.md) を参照してください） | 4 時間 |
+| ステッチ（オプション機能。詳しくは [ ステッチの概要 ](../stitching/overview.md) を参照してください） | &lt; 4 時間 |
 | Adobe Analytics Source コネクタのバックフィルが 100 億未満のイベント（最大 13 か月分の履歴データ） | &lt; 4 週間 |
 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | ≈ 60 分 |
 | オーディエンスの更新頻度 | 1 回限りの更新：5 分未満の待ち時間。<br/>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
