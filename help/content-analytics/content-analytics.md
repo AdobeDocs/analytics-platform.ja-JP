@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
+source-git-commit: e29b22fe7ba78faa5d4d169f1ff755b0ca488f8e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -68,5 +68,5 @@ Content Analytics は、Experience Platformのイベントデータセットで�
 
 >[!MORELIKETHIS]
 >
->[ コンテンツ分析レポート ](#report/report.md)
+>[ コンテンツ分析レポート ](report/report.md)
 >[Content Analytics の設定 ](config/configuration.md)
