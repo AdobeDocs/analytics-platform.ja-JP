@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics用のスキーマの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="データのフローの検証"
->abstract="Customer Journey Analyticsの詳細を使用して、データが接続に送られているかどうかを検証します。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
+>abstract="接続の詳細を使用して、データがCustomer Journey Analyticsに送信されているかどうかを検証します。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-接続がアクティブであり、Customer Journey Analyticsでデータがデータビューに送られていることを検証できます。
+接続がアクティブで、Customer Journey Analyticsでデータがデータビューに送られていることを検証できます。
 
 1. Customer Journey Analyticsで、「接続」タブを選択します。
 

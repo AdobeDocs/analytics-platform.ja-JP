@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -256,7 +256,7 @@ ht-degree: 10%
 
 * コンテンツ分析用のデータを収集する際に含める、または除外するアセットを編集するには、「**[!UICONTROL アセット]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。
 
-### 概要
+### 概要 {#summary}
 
 必要な詳細をすべて入力すると、作成または変更されたアーティファクトの詳細が概要に表示されます。
 
@@ -266,7 +266,7 @@ ht-degree: 10%
 
 ![Content Analytics 設定の概要 ](../assets/aca-configuration-summary.png)
 
-### アクション
+### アクション {#actions}
 
 <!-- markdownlint-disable MD034 -->
 

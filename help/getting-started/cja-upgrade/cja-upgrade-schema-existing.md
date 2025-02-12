@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analyticsするスキーマを選択
-description: Customer Journey Analyticsするスキーマを選択する際に使用できるオプションと、それぞれの長所と短所について説明します
+title: Customer Journey Analyticsのスキーマを選択
+description: Customer Journey Analyticsのスキーマを選択する際に使用できるオプションと、それぞれの長所と短所について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,7 +14,7 @@ ht-degree: 38%
 
 ---
 
-# Customer Journey Analyticsするスキーマを選択 {#choose-schema}
+# Customer Journey Analyticsのスキーマを選択 {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="デフォルトのスキーマを使用"
->abstract="（非推奨）Adobe Analytics スキーマには 1,000 個を超えるフィールドが含まれているので、スキーマが散乱し、複雑になる可能性があります。 お客様の組織は、prop や eVar の概念を引き続き遵守する必要があります。これは、Customer Journey Analyticsでは使用されていない従来の概念です。 他のAdobe Experience Platform サービスとの統合はより困難です。"
+>abstract="（非推奨）Adobe Analytics スキーマには 1,000 個を超えるフィールドが含まれているので、スキーマが散乱し、複雑になる可能性があります。 貴社は、prop と eVar の概念（Customer Journey Analyticsでは使用されていない従来の概念）に引き続き従う必要があります。 他のAdobe Experience Platform サービスとの統合はより困難です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ Customer Journey Analyticsにアップグレードする場合、Adobeでは、�
 
 ## 組織に合わせたカスタムスキーマの作成（推奨）
 
-Adobeは、Customer Journey Analyticsにアップグレードする際に、カスタムスキーマを作成することをお勧めします。
+Adobeでは、Customer Journey Analyticsにアップグレードする際にカスタムスキーマを作成することをお勧めします。
 
 | メリット | デメリット |
 |----------|---------|
@@ -54,7 +54,7 @@ Adobeは、Customer Journey Analyticsにアップグレードする際に、カ�
 
 ## 既存のAdobe Analytics スキーマを使用する
 
-既存のAdobe Analytics スキーマをCustomer Journey Analyticsで使用するオプションは、Adobe Analytics実装がAdobe Experience Platform web SDKで設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
+Customer Journey Analyticsで既存のAdobe Analytics スキーマを使用するオプションは、Adobe Analytics実装がAdobe Experience Platform web SDKで設定されている場合にのみ使用できます。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | メリット | デメリット |
 |----------|---------|

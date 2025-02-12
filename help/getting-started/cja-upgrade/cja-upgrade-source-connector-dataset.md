@@ -21,7 +21,7 @@ ht-degree: 26%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="接続への Analytics ソースコネクタデータセットの追加"
->abstract="Analytics レポートスイートの履歴データがAdobe Experience Platformに表示されたので、最初にCustomer Journey Analyticsを設定する際に作成した既存の接続に、そのデータセットを追加します。 この手順が完了すると、Customer Journey Analyticsの履歴データを使用できます。<br><br> データセットをCustomer Journey Analyticsの接続に追加するのは簡単で、完了するまでに数分しかかかりません。"
+>abstract="Analytics レポートスイートの履歴データがCustomer Journey Analyticsにあるので、Adobe Experience Platformを最初に設定する際に作成した既存の接続に、そのデータセットを追加します。 この手順が完了すると、Customer Journey Analyticsの履歴データを使用できるようになります。<br><br>Customer Journey Analyticsの接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,11 +31,11 @@ ht-degree: 26%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-## Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込む方法を理解する
+## Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込む方法を説明します
 
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
 
-ここでは、Customer Journey Analyticsのニーズと使用する特定の Platform アプリケーションに合わせて調整される合理化されたスキーマが必要なので、](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)Platform へのアップグレード時に XDM スキーマを作成 [ できることを前提としています。
+ここでは、[Customer Journey Analyticsへのアップグレード時に XDM スキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、組織のニーズと使用する特定の Platform アプリケーションに合わせて調整される合理化されたスキーマが必要なためです。
 
 Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
@@ -53,7 +53,7 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 [ 履歴データ用の Analytics ソースコネクタを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) すると、Analytics データ用のデータセットが自動的に作成されます。
 
-この自動作成されたデータセットを、Web SDK実装用に作成したのと同じ接続に追加する必要があります。 これにより、Analytics データが、Web SDK データとCustomer Journey Analyticsが同じデータビューになります。
+この自動作成されたデータセットを、Web SDK実装用に作成したのと同じ接続に追加する必要があります。 これにより、Analytics データが、Web SDK データと同じCustomer Journey Analyticsのデータビューになります。
 
 自動作成されたデータセットを Web SDK実装用に作成したのと同じ接続に追加する場合：
 
@@ -96,7 +96,7 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して、Customer Journey Analyticsへの接続のバックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analyticsへの接続のバックフィルに含める期間を定義します。
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
@@ -114,7 +114,7 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. **[!UICONTROL データセットを追加]** を選択してから、「**[!UICONTROL 保存]** を選択して接続を保存します。
 
-1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics内のデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
+1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analyticsでデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
 
    これは、web SDKの実装時にまだ実行していない場合にのみ必要です。
 

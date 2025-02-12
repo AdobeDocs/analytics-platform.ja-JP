@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics用カスタムスキーマの作成
+title: Customer Journey Analyticsのカスタムスキーマの作成
 description: Customer Journey Analyticsのカスタムスキーマを作成する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -39,7 +39,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="プロファイルでスキーマを有効にする"
->abstract="Adobeの Real-time CDP で使用するために、スキーマでプロファイルを有効にします。 この手順が表示されるのは、Adobe Real-time CDP と統合する必要があることを選択したためです。<br><br> この手順には 1 つのボックスをクリックする必要があるので、この手順は数分で済みます。"
+>abstract="Adobe Real-time CDP で使用するために、スキーマ内のプロファイルを有効にします。 この手順が表示されるのは、Adobe Real-time CDP と統合する必要があることを選択したためです。<br><br> この手順には 1 つのボックスをクリックする必要があるので、この手順は数分で済みます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ ht-degree: 37%
 
 * **Adobe Analytics ExperienceEvent フィールドグループを使用するAdobe Analytics スキーマ：** 不要なフィールドを何千も追加する必要があります。 必要な今後の変更はより困難になります。
 
-これらのスキーマオプションについて詳しくは、[Customer Journey Analyticsするスキーマの選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
+これらのスキーマオプションについて詳しくは、[Customer Journey Analytics用のスキーマを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
 
 ## スキーマの作成
 
@@ -116,7 +116,7 @@ Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Pl
 
       カスタム XDM スキーマを作成するのではなく、デフォルトのAdobe Analytics スキーマを使用することを選択した場合は、ここでAdobe Analytics ExperienceEvent フィールドグループを追加できます。 ただし、Adobeでは、このフィールドグループを追加するのではなく、カスタム XDM スキーマを作成することをお勧めします。
 
-      これらのスキーマオプションについて詳しくは、[Customer Journey Analyticsするスキーマの選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
+      これらのスキーマオプションについて詳しくは、[Customer Journey Analytics用のスキーマを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
 
    1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
 

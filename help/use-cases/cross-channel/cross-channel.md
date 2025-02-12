@@ -19,7 +19,7 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="接続へのデータセットの追加"
->abstract="Adobe Experience Platformのデータセットにデータを追加したら、Customer Journey Analyticsでそのデータセットを接続に追加できます。 他のチャネルのデータを追加する場合は、組織が使用するスキーマに準拠していることを確認してください。<br><br> 追加する各データセットには、膨大な作業が必要です。特に、すべてのイベントに一意の ID が存在することと、包括的なデータ構造が組織のカスタムスキーマに準拠していることを確認することに関連する作業が必要です。 このワークフローの確立には、数か月にわたる組織内の多くのチーム間の調整が必要になる場合があります。"
+>abstract="Adobe Experience Platformのデータセットにデータを追加したら、そのデータセットをCustomer Journey Analyticsの接続に追加できます。 他のチャネルのデータを追加する場合は、組織が使用するスキーマに準拠していることを確認してください。<br><br> 追加する各データセットには、膨大な作業が必要です。特に、すべてのイベントに一意の ID が存在することと、包括的なデータ構造が組織のカスタムスキーマに準拠していることを確認することに関連する作業が必要です。 このワークフローの確立には、数か月にわたる組織内の多くのチーム間の調整が必要になる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 51%
 
 1. 取り込むデータの [スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja) します。
 1. 取り込むデータの [データセットを作成](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=ja) します。
-1. [ データをExperience Platformに取り込む ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=ja):
+1. [Experience Platformへのデータの取り込み ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=ja):
    1. Edge Networkまたは Analytics ソースコネクタを介した web サイトまたはモバイルアプリからのイベントベースのデータ ![ イベント ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
    2. プロファイルデータ ![ プロファイル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) （CRM システム、コールセンターアプリケーション、ロイヤルティアプリケーションからなど）。
    3. 参照データ ![ 参照 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) （製品名、製品情報システムからのカテゴリなど）。

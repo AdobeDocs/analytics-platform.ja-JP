@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics内のデータを分類するルックアップデータセットの作成
-description: ルックアップデータセットを作成してCustomer Journey Analytics内のデータを分類する方法を説明します
+title: Customer Journey Analyticsでデータを分類するためのルックアップデータセットを作成する
+description: Customer Journey Analyticsでルックアップデータセットを作成してデータを分類する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,14 +14,14 @@ ht-degree: 5%
 
 ---
 
-# Customer Journey Analytics内のデータを分類するルックアップデータセットの作成 {#upgrade-lookup-dataset}
+# Customer Journey Analyticsでデータを分類するためのルックアップデータセットを作成する {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="分類データを含む各ディメンションのルックアップデータセットを作成します"
->abstract="Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsでデータを分類するための手法です。"
+>abstract="Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsでデータを分類するための手法です。
+Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。
 
 Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[ データセットへの標準検索の追加 ](/help/connections/standard-lookups.md) を参照してください。
 
@@ -39,11 +39,11 @@ Experience Platform Web SDKを使用する場合、Customer Journey Analyticsで
 
 ## ルックアップデータセットで使用するカスタムスキーマの作成
 
-分類するデータをCustomer Journey Analyticsに含むカスタムスキーマをディメンションごとに新規作成します。 後の手順でルックアップデータセットを作成すると、このスキーマが参照されます。
+Customer Journey Analyticsで分類するデータを含むカスタムスキーマをディメンションごとに新規作成します。 後の手順でルックアップデータセットを作成すると、このスキーマが参照されます。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
-Customer Journey Analyticsのルックアップデータセットで使用するスキーマを作成するには、次の手順を実行します。
+Customer Journey Analyticsでルックアップデータセットとともに使用するスキーマを作成するには、次の手順を実行します。
 
 1. Adobe Experience Platformで、左パネルの「**[!UICONTROL Data Management]**」セクションの **[!UICONTROL スキーマ]** を選択します。
 
@@ -71,7 +71,7 @@ Customer Journey Analyticsのルックアップデータセットで使用する
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
-Customer Journey Analyticsのスキーマで使用するルックアップデータセットを作成するには、次の手順を実行します。
+Customer Journey Analyticsでスキーマとともに使用するルックアップデータセットを作成するには、次の手順を実行します。
 
 >[!NOTE]
 >
@@ -101,15 +101,15 @@ Customer Journey Analyticsのスキーマで使用するルックアップデー
 
    Platform は、選択したターゲットスキーマまたはデータセットに基づいて、自動マッピングされたフィールドに対してインテリジェントなレコメンデーションを自動的に提供します。 マッピングルールは、ユースケースに合わせて手動で調整できます。
 
-   マッピングプロセスについて詳しくは、Experience Platformドキュメントの [ 既存の XDM スキーマへの CSV ファイルのマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) を参照してください。
+   マッピングプロセスについて詳しくは、Experience Platform ドキュメントの [ 既存の XDM スキーマへの CSV ファイルのマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) を参照してください。
 
 1. 「**[!UICONTROL 完了]**」を選択します。
 
 1. [Customer Journey Analyticsの接続へのルックアップデータセットの追加 ](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics) を続けます。
 
-## ルックアップデータセットをCustomer Journey Analyticsの接続に追加します
+## Customer Journey Analyticsの接続へのルックアップデータセットの追加
 
-[ カスタムスキーマを作成 ](#create-a-custom-schema-to-use-with-the-lookup-dataset) し、[ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsでルックアップデータセットを接続に追加する必要があります。
+[ カスタムスキーマを作成 ](#create-a-custom-schema-to-use-with-the-lookup-dataset) して [ ルックアップデータセットを作成 ](#create-a-lookup-dataset) した後、Customer Journey Analyticsの接続にルックアップデータセットを追加する必要があります。
 
 分類するデータを含むディメンションごとに、このプロセスを繰り返します。
 
@@ -125,7 +125,7 @@ Customer Journey Analyticsの接続にルックアップデータセットを追
 
 1. **[!UICONTROL データセットを追加]** ダイアログボックスで、作成したルックアップデータセットを選択して、「**[!UICONTROL 次へ]**」を選択します。
 
-1. 「**[!UICONTROL ユーザー ID]**」フィールドで、Experience Platformで設定したデータセットスキーマで定義されている使用可能な ID からユーザー ID を選択します。<!-- fill out other fields? -->
+1. **[!UICONTROL ユーザー ID]** フィールドで、Experience Platformで設定したデータセットスキーマで定義されている使用可能な ID からユーザー ID を選択します。<!-- fill out other fields? -->
 
 1. **[!UICONTROL データセットを追加]** を選択してから、「**[!UICONTROL 保存]** を選択します。
 
@@ -133,5 +133,5 @@ Customer Journey Analyticsの接続にルックアップデータセットを追
 
 1. **[!UICONTROL キー]** フィールドと **[!UICONTROL 一致するキー]** フィールドを使用して、ルックアップデータセット内のフィールドとイベントまたはサマリーデータセット内のフィールドの間の相関関係を作成します。
 
-1. すべてのルックアップデータセットがCustomer Journey Analyticsで接続に追加されたら、[ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+1. すべてのルックアップデータセットがCustomer Journey Analyticsの接続に追加されたら、[ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
 

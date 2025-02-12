@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics用のスキーマの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -21,7 +21,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Customer Journey Analytics で接続を作成する"
->abstract="接続を使用すると、Adobe Experience Platformのデータを、Customer Journey Analyticsレポート用に最適化された形式に変換できます。 Customer Journey Analyticsでの接続の作成は簡単で、数分で完了します。"
+>abstract="接続を使用すると、Adobe Experience Platformのデータを、Customer Journey Analytics レポート用に最適化された形式に変換できます。 Customer Journey Analyticsでは、簡単に接続を作成できます。作成にかかる時間は数分で済みます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,7 +33,7 @@ ht-degree: 87%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-次に、接続を作成および設定する方法と、作成する接続にExperience Platformデータセットを追加する方法について説明します。 接続の作成と設定について詳しくは、[ 接続の作成または編集 ](/help/connections/create-connection.md) を参照してください。
+次に、接続を作成および設定する方法と、作成する接続にExperience Platform データセットを追加する方法について説明します。 接続の作成と設定について詳しくは、[ 接続の作成または編集 ](/help/connections/create-connection.md) を参照してください。
 
 ## 接続の作成と設定 {#create-connection}
 
@@ -69,7 +69,7 @@ ht-degree: 87%
 
 ## データセットの追加と設定 {#add-dataset}
 
-接続を作成する際に、Experience Platformデータセットを追加できます。
+接続の作成時に、Experience Platform データセットを追加できます。
 
 1. 接続設定ダイアログで、「**[!UICONTROL データセットを追加]**」を選択します。
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成
+title: Customer Journey Analytics用マーケティングチャネル派生フィールドの作成
 description: Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 ---
 
-# Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
+# Customer Journey Analytics用マーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 Analytics ソースコネクタを使用する場合、マーケティングチャネルのデータは、そのコネクタを通じてCustomer Journey Analyticsに送られます。 従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[ マーケティングチャネルディメンションの使用 ](/help/use-cases/aa-data/marketing-channels.md) を参照してください。
 
-Experience Platform Web SDKを使用する際にCustomer Journey Analyticsでマーケティングチャネルを使用するために、データビューで派生フィールドを使用して、同じマーケティングチャネルとCustomer Journey Analyticsの処理ルールを再作成できます。
+Experience Platform Web SDKを使用する際に、Customer Journey Analyticsでマーケティングチャネルを使用するために、データビューで派生フィールドを使用して、Customer Journey Analyticsと同じマーケティングチャネルと処理ルールを再作成できます。
 
 1. Customer Journey Analyticsで、マーケティングチャネルを追加するデータビューを選択します。
 

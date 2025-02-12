@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics用のスキーマの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,7 +14,7 @@ ht-degree: 20%
 
 ---
 
-# Customer Journey Analyticsで使用するデータストリームを作成する {#upgrade-create-datastream}
+# Customer Journey Analyticsで使用するデータストリームの作成 {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -39,7 +39,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->次の手順は、Analytics またはAdobe AnalyticsAppMeasurement（タグ）を使用する Analytics 実装にのみ必要です。
+>次の手順は、AppMeasurementまたはAdobe Analytics拡張機能（タグ）を使用する Analytics 実装にのみ必要です。
 >
 >Adobe Analyticsの実装で Web SDKまたは Web SDK拡張機能を使用している場合、データストリームはAdobe Analytics環境に既に存在します。
 

@@ -1,7 +1,7 @@
 ---
 description: Analysis Workspace プロジェクトをクラウドの場所に書き出す方法を説明します。
 keywords: Analysis Workspace
-title: クラウドへのCustomer Journey Analyticsレポートの書き出し
+title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
@@ -12,20 +12,20 @@ ht-degree: 3%
 
 ---
 
-# クラウドへのCustomer Journey Analyticsレポートの書き出し {#full-table-export}
+# Customer Journey Analytics レポートのクラウドへの書き出し {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
->title="Data Warehouseに類似した完全なテーブル書き出しを作成します"
+>title="Data Warehouseと同様に、完全なテーブルを書き出す"
 >abstract="完全なテーブルの書き出しは、Analysis Workspaceにデータが表示されたらすぐに使用できます。 必要に応じて、完全なテーブルの書き出しを作成またはスケジュールできます。<br><br> 書き出しに含めるデータが既にわかっている場合、完全なテーブルの書き出しを作成するのに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
-クラウドからWorkspaceの完全なテーブルを書き出し、指定したCustomer Journey Analytics宛先に書き出しを送信できます。
+Customer Journey AnalyticsからWorkspaceの完全なテーブルを書き出し、指定したクラウドの宛先に書き出しを送信できます。
 
-[ 書き出しの概要 ](/help/analysis-workspace/export/export-project-overview.md) に記載されているように、Customer Journey Analyticsレポートを書き出すその他の方法も使用できます。
+[ 書き出しの概要 ](/help/analysis-workspace/export/export-project-overview.md) に示すように、Customer Journey Analytics レポートのその他の書き出し方法も使用できます。
 
 ## 完全テーブル書き出しについて
 
@@ -125,7 +125,7 @@ Analysis Workspaceからデータを書き出した後は、[ 書き出しの管
 
 ## クラウドに書き出すメリット
 
-Customer Journey Analyticsデータをクラウドに書き出すと、次の操作を実行できます。
+Customer Journey Analytics データを Cloud に書き出すと、次の操作を実行できます。
 
 * Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3、Snowflakeなどの共有の場所に書き出します。
 
@@ -135,7 +135,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
 
 * 数千行または数百万行（ライセンスタイプに応じて、300 万行、3,000 万行、1 億 5,000 万行、3 億行）を含む完全なテーブルを書き出します。 その他の書き出し方法では、最大 50,000 行まで書き出すことができます。
 
-* エクスポートされたCustomer Journey Analyticsデータに計算指標を含めます。
+* 書き出されたCustomer Journey Analytics データに計算指標を含めます。
 
 * 連結された値として出力される構造データ。
 
@@ -155,7 +155,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
 
 * **環境：** Customer Journey Analyticsで使用される [IP アドレス ](/help/technotes/ip-addresses.md) および [ ドメイン ](/help/technotes/domains.md) が、組織のファイアウォールを通過できることを確認します。
 
-* **権限：** Adobe Admin Consoleでは、すべてのテーブルを書き出すには、[!UICONTROL **フルテーブルの書き出し**] 権限が割り当てられている製品プロファイルが割り当てられている必要があります。 Admin Consoleの製品プロファイルにアクセス権を割り当てる方法については、[Admin ConsoleのCustomer Journey Analyticsアクセス権 ](/help/technotes/access-control.md) を参照してください。
+* **権限：** Adobe Admin Consoleでは、すべてのテーブルを書き出すには、[!UICONTROL **フルテーブルの書き出し**] 権限が割り当てられている製品プロファイルが割り当てられている必要があります。 Admin Consoleで製品プロファイルに権限を割り当てる方法については、[Admin ConsoleのCustomer Journey Analytics権限 ](/help/technotes/access-control.md) を参照してください。
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
 * 動的ディメンション
 
   詳しくは、[ フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) を参照してください。
-* 最初の分類のDimensionは変換され、エクスポートされたテーブルの行にセカンダリディメンションとして追加されます。その他の分類はテーブルに含まれません
+* 最初の分類のディメンションは、変換され、エクスポートされたテーブルの行にセカンダリディメンションとして追加されます。その他の分類はテーブルに含まれません
 * 並べ替えは、ほとんどのデータセットでサポートされていません。小さなデータセットでは、データが並べ替えられる場合があります
 
 ### サポートされていないコンポーネント
@@ -218,7 +218,7 @@ Customer Journey Analyticsデータをクラウドに書き出すと、次の操
 
 ## Data Warehouseに対する完全テーブル書き出し（Customer Journey Analytics）の比較（Adobe Analytics）
 
-以前にData Warehouseを使用してAdobe Analytics データを書き出した場合、完全なテーブルをData Warehouseで書き出す場合と、データをCustomer Journey Analyticsで書き出す場合をAdobe Analyticsで書き出す場合の違いを理解するのに、次の表が役立ちます。
+以前にData Warehouseを使用してAdobe Analytics データを書き出した場合、次の表を参考にしてCustomer Journey Analyticsでの完全なテーブルの書き出しとAdobe AnalyticsでのData Warehouseを使用したデータの書き出しの違いを理解できます。
 
 
 | 機能 | Customer Journey Analyticsでのテーブル全体の書き出し | Adobe AnalyticsのData Warehouse |

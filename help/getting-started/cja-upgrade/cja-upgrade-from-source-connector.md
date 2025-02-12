@@ -1,6 +1,6 @@
 ---
-title: Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行
-description: Customer Journey Analyticsへのアップグレード時に Analytics ソースコネクタから web SDKに移行する方法を説明します
+title: Analytics ソースコネクタからCustomer Journey Analyticsの Web SDKへの移行
+description: Customer Journey Analyticsにアップグレードする際に、Analytics ソースコネクタから web SDKに移行する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,28 +14,28 @@ ht-degree: 0%
 
 ---
 
-# Analytics ソースコネクタからCustomer Journey Analytics用の web SDKへの移行 {#transition-from-source-connector}
+# Analytics ソースコネクタからCustomer Journey Analyticsの Web SDKへの移行 {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Analytics ソースコネクタの実装"
->abstract="Analytics ソースコネクタを使用すると、Customer Journey Analyticsから簡単に価値を得ることができますが、Adobe AnalyticsとCustomer Journey Analyticsの両方の費用を支払う必要があります。 このガイドは、独立した web SDKの実装に向かって進む際に役立ちます。"
+>abstract="Analytics ソースコネクタを使用すると、Customer Journey Analyticsから簡単に価値を得ることができますが、Adobe AnalyticsとCustomer Journey Analyticsの両方の代金を支払う必要があります。 このガイドは、独立した web SDKの実装に向かって進む際に役立ちます。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->[Customer Journey Analytics アップグレード チェックリスト ](https://gigazelle.github.io/cja-ttv/) の質問に答える際は、このページの情報を使用してください。
+>[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
 
-Analytics ソースコネクタを、Customer Journey Analyticsの唯一の実装として使用する場合、固有の欠点があります。
+Customer Journey Analyticsの唯一の実装として Analytics ソースコネクタを使用する場合、固有の欠点があります。
 
-Analytics ソースコネクタ実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeでは、（履歴データ用に） Analytics ソースコネクタを使用する実装に、進行中のデータ収集のための） Web SDKの新規実装を組み合わせて移行することをお勧めします。
+Analytics ソースコネクタ実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeでは、（履歴データ用に） Analytics ソースコネクタを使用する実装に、（継続的なデータ収集用に） web SDKの新しい実装を組み合わせて移行することをお勧めします。
 
 ## Analytics ソースコネクタのみを使用する場合のメリットとデメリットについて
 
-Analytics ソースコネクタを使用するメリットとデメリットについては、[Analytics ソースコネクタをCustomer Journey Analyticsにのみ使用してアップグレードする ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md) を参照してください。
+Analytics ソースコネクタを使用するメリットとデメリットについては、[Analytics ソースコネクタのみを使用してCustomer Journey Analyticsにアップグレードする ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md) を参照してください。
 
 ## Analytics ソースコネクタから Web SDKへの移行
 
@@ -66,7 +66,7 @@ Analytics ソースコネクタを使用するメリットとデメリットに�
 
    詳しくは、[ 現在の Analytics ソースコネクタから接続へのデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md) を参照してください。
 
-1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics内のデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
+1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analyticsでデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
 
 1. 元の Analytics ソースコネクタを削除します。<!-- need to add steps somewhere about how to do this -->
 
