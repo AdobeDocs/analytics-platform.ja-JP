@@ -6,14 +6,22 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 1%
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 # コンテンツ分析レポートの概要
+
+>[!WARNING]
+>
+>この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
+>
+
+{{release-limited-testing}}
 
 コンテンツ分析に関するレポートは、Analysis Workspace内で行われます。 特定のWorkspace[ テンプレート ](#template) を使用できるので、関連するコンテンツインサイトを含む事前入力されたWorkspace プロジェクトに直ちにアクセスできます。
 

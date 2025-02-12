@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -21,7 +21,8 @@ ht-degree: 0%
 >この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
+
 
 組織にコンテンツ分析を設定するには、次のいずれかを実行します。
 

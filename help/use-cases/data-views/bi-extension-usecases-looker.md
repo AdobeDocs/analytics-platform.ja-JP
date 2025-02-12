@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
+source-git-commit: 007674fd9da69a4a333d5300c4f4d30640c4b366
 workflow-type: tm+mt
-source-wordcount: '13066'
+source-wordcount: '13056'
 ht-degree: 2%
 
 ---
@@ -222,7 +222,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
       1. **[!UICONTROL オプション設定]** で **[!UICONTROL すべて展開]** を選択します。
       1. ノードごとの **[!UICONTROL 最大接続数]** を `5` に設定します。
       1. **[!UICONTROL SSL]** が有効になっていることを確認します。
-      1. 「**[!UICONTROL テスト]**」を選択して、接続をテストします。 画面上部にバナーと「**[!UICONTROL Success, can connect JDBC string: jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;sslmode=prefer]**」のようなメッセージが表示されます。
+      1. 「**[!UICONTROL テスト]**」を選択して、接続をテストします。 画面の上部にバナーが表示され、「Success, can connect JDBC ...**[!UICONTROL のようなメッセージが表示されます]**。
       1. 「**[!UICONTROL 接続]**」を選択し、接続を確立して保存します。
    1. **[!UICONTROL Connections]** インターフェイスに新しい接続が表示されます。
    1. **[!UICONTROL 管理者]** から **←** を選択して、左側のパネルのメインナビゲーションに移動します。

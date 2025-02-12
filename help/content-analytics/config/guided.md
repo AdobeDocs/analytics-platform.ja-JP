@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 11%
+source-wordcount: '1856'
+ht-degree: 10%
 
 ---
 
@@ -21,13 +21,18 @@ ht-degree: 11%
 >この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 ガイド付き設定を使用すると、コンテンツ分析をすばやく簡単に設定できます。 ガイド付き設定では、ウィザードを使用して、組織のコンテンツ分析を自動的に設定するための要件を設定します。 **[!UICONTROL 設定]** 画面で、新しい設定を作成するか、既存の設定を編集できます。
 
+>[!IMPORTANT]
+>
+>組織のサンドボックスごとに 1 つの Content Analytics 設定のみを持つことができます。
+
+
 コンテンツ分析設定にアクセスするには
 
-* Customer Journey Analyticsのメインメニューから **[!UICONTROL Data Management]**/**[!UICONTROL Content Analytics]** を選択します。
+* Customer Journey Analyticsのメインメニューから **[!UICONTROL データ管理]**/**[!UICONTROL コンテンツ分析]** を選択します。
 
 コンテンツ分析設定画面に、既存のコンテンツ分析設定のテーブルが表示されます。
 
@@ -92,12 +97,12 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="コンテンツ分析データの結合先となる既存のデータビューをCustomer Journey Analyticsから選択します。"
+>abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="データビュー"
->abstract="コンテンツ分析データの結合先となる既存のデータビューをCustomer Journey Analyticsから選択します。<br/>"
+>abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。<br/>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -141,13 +146,15 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="選択した設定に関連付けられている、タグプロパティのAdobeContent Analytics 拡張機能の設定を編集できます。"
+>abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能の設定を編集できます。"
 
 
 
 <!-- markdownlint-enable MD034 -->
 
-このセクションでは、コンテンツ分析で収集するデータにエクスペリエンスを含めるように選択できます。 エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。 選択した場合、エクスペリエンスを含める URL を定義する必要があります。
+このセクションでは、コンテンツ分析で収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。
+
+デフォルトでは、**[!UICONTROL エクスペリエンスを含める]** はオフになっています。 選択した場合、エクスペリエンスを含める URL を定義する必要があります。
 
 新しい設定や実装されていない設定にエクスペリエンスを含めるには：
 
@@ -157,14 +164,14 @@ ht-degree: 11%
 1. Web サイトでのコンテンツのレンダリング方法を決定するパラメーターを指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。
    1. **[!UICONTROL ドメイン正規表現]** を入力します（例：`(?!.*\b(store|help|admin)\b)`）。
    1. **[!UICONTROL クエリパラメーター]** のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
-   1. 組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
-   1. 別の組み合わせを追加する場合は、「**[!UICONTROL 別の組み合わせを追加]**」を選択します。
+1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
+1. 正規表現とクエリパラメーターの別の組み合わせを追加する場合は、「**[!UICONTROL さらに追加]**」を選択します。
 
 既存のエクスペリエンスを編集するか、実装された設定に新しいエクスペリエンスを含めるには：
 
 ![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience-edit.png)
 
-* ![ 編集 ](/help/assets/icons/Edit.svg) 編集を選択して、選択した設定に関連付けられた、タグプロパティのAdobe Content Analytics 拡張機能のパラメーターを編集します。
+* 「![ 編集 ](/help/assets/icons/Edit.svg) 編集」を選択して、選択した設定に関連付けられた、タグプロパティのAdobe Content Analytics 拡張機能のパラメーターを編集します。
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -204,7 +211,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="データ収集"
->abstract="選択した設定に関連付けられている、タグプロパティのAdobeContent Analytics 拡張機能のページの設定を編集できます。"
+>abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能のページの設定を編集できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
@@ -230,10 +237,7 @@ ht-degree: 11%
 
    1. **[!UICONTROL 新規作成]** を選択します。
    2. **[!UICONTROL タグ名]** を指定します（例：`ACA Test`）。
-   3. 1 つ以上の **[!UICONTROL ドメイン]** を指定します。例：`example.com`。
-
-   * ドメインを追加するには、「**[!UICONTROL さらに追加]**」を選択します。
-   * ドメインを削除するには、「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択します。
+   3. **[!UICONTROL Domains]** を指定します（例：`example.com`）。
 
 * エクスペリエンスを含めることを選択した場合は、コンテンツ分析用のデータを収集するときに、どのページを含めるか除外するかを指定します。
 
@@ -254,13 +258,25 @@ ht-degree: 11%
 
 ### 概要
 
-必要な詳細をすべて指定すると、**[!UICONTROL コンテンツ分析の _設定名_ を実装する準備がほぼ整いました]** 概要が表示されます。
+必要な詳細をすべて入力すると、作成または変更されたアーティファクトの詳細が概要に表示されます。
 
-既存の実装済み設定の場合、**[!UICONTROL Content Analytics 用に _設定名_ を実装しました]** という概要が表示されます。
+* 新しい設定を実装すると、**[!UICONTROL コンテンツ分析の _設定名_ の概要を実装する準備がほぼ整いました]** というメッセージが表示されます。
+
+* 既存の実装済み設定の場合、**[!UICONTROL Content Analytics 用に _設定名_ を実装しました]** という概要が表示されます。
 
 ![Content Analytics 設定の概要 ](../assets/aca-configuration-summary.png)
 
 ### アクション
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="オンボーディング実装の警告"
+>abstract="これにより、このワークフローで指定した入力に部分的に基づいてコンテンツ分析が設定されます。 その他にも、コンテンツ分析に一般的に役立つ設定に基づいて、いくつかの設定が自動的に選択されます。 各アーティファクトの設定を確認して、要件とガイドラインを満たしていることを確認することをお勧めします。 <br/> この設定に関連付けられているタグライブラリを手動で公開するまで、データは収集されないことに注意してください。<br/> また、画像とテキストの属性を取得するために、Adobeは、実装したデータ収集設定に従って、ユーザーの訪問時に取得した URL を使用してこれらの属性を取得します。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 設定を作成または編集すると、次のアクションを使用できます。
 
@@ -272,7 +288,7 @@ ht-degree: 11%
       1. Content Analytics イベント、アセット属性および（設定されている場合は）エクスペリエンス属性を収集するデータセットの作成。
    * **[!UICONTROL コンテンツ分析]** 設定：
       * 設定に基づく機能アセンブリプロセスのセットアップ。
-   * **[!UICONTROL Customer Journey Analytics]** 構成：
+   * **[!UICONTROL Customer Journey Analytics]** 設定：
       1. 選択したデータビューが更新され、Content Analytics のディメンションと指標が表示されます。
       1. 選択したデータビューに結び付けられた接続が変更され、コンテンツ分析イベントと属性データセットが含まれるようになりました。
       1. コンテンツ分析レポートテンプレートがWorkspaceに追加されます。

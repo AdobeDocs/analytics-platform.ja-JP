@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 >この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 *そして今、完全に異なる何かのために…*
 
