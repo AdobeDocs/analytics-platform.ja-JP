@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 5fbda947c847c803f95e5c3f412219b0af927d12
+source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
 workflow-type: tm+mt
-source-wordcount: '14688'
+source-wordcount: '14697'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 2%
 * **Power BI デスクトップ**。 使用されるバージョンは 2.137.1102.0 64 ビット（2024 年 10 月）です。
 * **Tableau Desktop**。 使用されるバージョンは 2024.1.5 （20241.24.0705.0334） 64 ビットです。
 * **Looker**。 オンラインバージョン 25.0.23、[looker.com](https://looker.com){target="_blank"} から入手可能
-* **Jupyter Notebook**。 使用されるバージョンは 7.3.2 です
+* **Jupyter Notebook**。 使用されるバージョンは 7.3.2 です。
+* **RStudio**. 使用されるバージョンは 2024.12.0、ビルド 467 です。
 
 次のユースケースについて説明します。
 
