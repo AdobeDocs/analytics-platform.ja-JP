@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: ffa5bcbe246696a8364ff312bff1b7cc1256ff2c
+source-git-commit: 5fbda947c847c803f95e5c3f412219b0af927d12
 workflow-type: tm+mt
-source-wordcount: '13056'
+source-wordcount: '14688'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 2%
 * **Power BI デスクトップ**。 使用されるバージョンは 2.137.1102.0 64 ビット（2024 年 10 月）です。
 * **Tableau Desktop**。 使用されるバージョンは 2024.1.5 （20241.24.0705.0334） 64 ビットです。
 * **Looker**。 オンラインバージョン 25.0.23、[looker.com](https://looker.com){target="_blank"} から入手可能
+* **Jupyter Notebook**。 使用されるバージョンは 7.3.2 です
 
 次のユースケースについて説明します。
 
@@ -264,6 +265,199 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
 * [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
+
+>[!TAB Jupyter Notebook]
+
+1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
+
+   1. Experience Platform サンドボックスに移動します。
+   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
+   1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
+
+      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Jupyter Notebook 環境を実行するための専用の Python 仮想環境をセットアップしていることを確認します。
+1. 仮想環境に必要なライブラリがインストールされていることを確認します。
+   * ipython-sql: `pip install ipython-sql`。
+   * psycopg2-binary: `pip install psycopg-binary`。
+   * sqlalchemy: pip `install sqlalchemy`。
+
+1. 仮想環境 `jupyter notebook` から Jupyter Notebook を起動します。
+1. 新しいノートブックを作成するか、[ このサンプルノートブック ](assets/BI-Extension.ipynb.zip) をダウンロードします。
+1. 最初のセルに、次のように入力して実行します。
+
+   ```
+   %config SqlMagic.style = '_DEPRECATED_DEFAULT'
+   ```
+
+1. 新しいセルに、接続の設定パラメーターを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルの値をコピーして、設定パラメーターに必要な値に貼り付けます。 例：
+
+   ```
+   import ipywidgets as widgets
+   from IPython.display import display
+   
+   config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
+                           layout=widgets.Layout(width="600px"))
+   display(config_host)
+   config_port = widgets.IntText(description='Port:', value=80,
+                              layout=widgets.Layout(width="200px"))
+   display(config_port)
+   config_db = widgets.Text(description='Database:', value='prod:cja',
+                         layout=widgets.Layout(width="300px"))
+   display(config_db)
+   config_username = widgets.Text(description='Username:', value='EC582F955C8A79F70A49420E@AdobeOrg',
+                               layout=widgets.Layout(width="600px"))
+   display(config_username)
+   config_password = widgets.Password(description='Password:', value='***',
+                                   layout=widgets.Layout(width="600px"))
+   display(config_password)
+   ```
+
+1. セルを実行します。
+1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
+
+   ![Jupter Notebook 設定の手順 1](assets/jupyter-config-step1.png)
+
+1. 新しいセルに、SQL 拡張機能を読み込むためのステートメント、必要なライブラリを入力し、Customer Journey Analyticsに接続します。
+
+   ```python
+   %load_ext sql
+   from sqlalchemy import create_engine
+   %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
+   ```
+
+   シェルを実行します。 出力は表示されませんが、セルは警告なしで実行する必要があります。
+
+   ![Jupyer Notebook 設定手順 4](assets/jupyter-config-step2.png)
+
+1. 新しい呼び出しで、ステートメントを入力して、接続に基づいて使用可能なデータビューのリストを取得します。
+
+   ```python
+   %%sql
+   SELECT n.nspname as "Schema",
+      c.relname as "Name",
+      CASE c.relkind WHEN 'r' THEN 'table' WHEN 'v' THEN 'view' WHEN 'm' THEN 'materialized view' WHEN 'i' THEN 'index' WHEN 'S' THEN 'sequence' WHEN 's' THEN 'special' WHEN 't' THEN 'TOAST table' WHEN 'f' THEN 'foreign table' WHEN 'p' THEN 'partitioned table' WHEN 'I' THEN 'partitioned index' END as "Type",
+      pg_catalog.pg_get_userbyid(c.relowner) as "Owner"
+   FROM pg_catalog.pg_class c
+   LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+   WHERE c.relkind IN ('v','')
+      AND n.nspname <> 'pg_catalog'
+      AND n.nspname !~ '^pg_toast'
+      AND n.nspname <> 'information_schema'
+      AND pg_catalog.pg_table_is_visible(c.oid)
+      AND c.relname NOT LIKE '%test%'
+      AND c.relname NOT LIKE '%ajo%'
+   ORDER BY 1,2;
+   ```
+
+   シェルを実行します。 以下のスクリーンショットに同様に出力が表示されます。
+
+   ![Jupyter Notebook 設定の手順 5](assets/jupyter-config-step3.png)
+
+   データビューのリストに **[!UICONTROL cc_data_view]** が表示されます。
+
+### FLATTEN か NOT か
+
+Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+
+| FLATTEN パラメータ | 例 | サポート | 備考 |
+|---|---|:---:|---|
+| なし | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **推奨されるオプション**。 `%3FFLATTEN` は URL エンコードされたバージョンの `?FLATTEN` であることに注意してください。 |
+
+### 詳細情報
+
+* [前提条件](/help/data-views/bi-extension.md#prerequisites)
+* [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+>[!TAB RStudio]
+
+1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
+
+   1. Experience Platform サンドボックスに移動します。
+   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
+   1. **[!UICONTROL データベース]** ドロップダウンメニューから「`prod:cja`」を選択します。
+
+      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. RStudio を起動します。
+1. 新しい R Markdown ファイルを作成するか、[ このサンプル R Markdown ファイル ](assets/BI-Extension.Rmd.zip) をダウンロードします。
+1. 最初のチャンクでは、` ```{r} ` ～ ` ``` ` の間に次のステートメントを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから `host`、`dbname`、`user` などの様々なパラメーターに必要な値にコピー&amp;ペーストします。 例：
+
+   ```R
+   library(rstudioapi)
+   library(DBI)
+   library(dplyr)
+   library(tidyr)
+   library(RPostgres)
+   library(ggplot2)
+   
+   host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
+   dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
+   user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
+   password <- rstudioapi::askForPassword(prompt = "Password")
+   ```
+
+1. チャンクを実行します。 「**[!UICONTROL Host]**」、「**[!UICONTROL Database]**」、「**[!UICONTROL User]**」の入力を求められます。 前の手順の一部として指定した値をそのまま使用します。
+1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
+
+   ![RStudio 設定手順 1](assets/rstudio-config-step1.png)
+
+1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+
+   ```R
+   con <- dbConnect(
+      RPostgres::Postgres(),
+      host = host,
+      port = 80,
+      dbname = dbname,
+      user = user,
+      password = password,
+      sslmode = 'require'
+   )
+   ```
+
+1. チャンクを実行します。 接続に成功した場合は、出力は表示されません。
+
+
+1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+
+   ```R
+   views <- dbListTables(con)
+   print(views)
+   ```
+
+1. チャンクを実行します。 `character(0)` が唯一の出力として表示されます。
+
+
+1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+
+   ```R
+   glimpse(dv)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットに同様に出力が表示されます。
+
+   ![RStudio 構成の手順 2](assets/rstudio-config-step2.png)
+
+### FLATTEN か NOT か
+
+RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+
+| FLATTEN パラメータ | 例 | サポート | 備考 |
+|---|---|:---:|---|
+| なし | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **推奨されるオプション**。 |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+
+### 詳細情報
+
+* [前提条件](/help/data-views/bi-extension.md#prerequisites)
+* [ 資格情報ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
 >[!ENDTABS]
 
 +++
@@ -381,6 +575,54 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
 ![Looker 結果日別トレンド ](assets/uc2-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangeday AS Date, COUNT(*) AS Events \
+             FROM cc_data_view \
+             WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+             GROUP BY 1 \
+             ORDER BY Date ASC
+   df = data.DataFrame()
+   df = df.groupby('Date', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Date', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc2-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Daily Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(daterangeday) %>%
+      count() %>%
+      arrange(daterangeday, .by_group = FALSE)
+   ggplot(df, aes(x = daterangeday, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Date")
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc2-rstudio-results.png)
+
 >[!ENDTABS]
 
 +++
@@ -470,6 +712,54 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
 ![Looker 結果日別トレンド ](assets/uc3-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangehour AS Hour, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-01-02' \
+               GROUP BY 1 \
+                ORDER BY Hour ASC
+   df = data.DataFrame()
+   df = df.groupby('Hour', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Hour', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc3-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -589,6 +879,54 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
 ![Looker 結果日別トレンド ](assets/uc4-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc4-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -767,6 +1105,57 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
 ![Looker 結果日別トレンド ](assets/uc5-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Purchase Revenue', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc5-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   library(tidyr)
+   
+   ## Single dimension ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases)) %>%
+      arrange(product_name, .by_group = FALSE)
+   dfV <- df %>%
+      head(5)
+   ggplot(dfV, aes(x = purchase_revenue, y = product_name)) +
+      geom_col(position = "dodge") +
+      geom_text(aes(label = purchase_revenue), vjust = -0.5)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -976,6 +1365,52 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
 ![Looker 結果日別トレンド ](assets/uc6-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1, 2 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby(['Product Category', 'Product Name'], as_index=False).sum()
+   plt.figure(figsize=(8, 8))
+   sns.scatterplot(x='Product Category', y='Product Name', size='Purchase Revenue', sizes=(10, 200), hue='Purchases', palette='husl', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc6-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Multiple dimensions ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_category, product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc6-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1109,6 +1544,40 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
 ![Looker count distinct](assets/uc7-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
+      FROM cc_data_view \
+      WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc7-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Count Distinct
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      summarise(product_name_count_distinct = n_distinct(product_name))
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc7-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1193,6 +1662,73 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
 ![Looker count distinct](assets/uc8-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT daterangeName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   daterange_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Date Range Name:',
+      style=style
+   )
+   display(daterange_name)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-input.png)
+
+1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterangeName = '{daterange_name.value}' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
+
+   ```R
+   ## Monthly Events for Last Year
+   df <- dv %>%
+      filter(daterangeName == "Last Year 2023") %>%
+      group_by(daterangemonth) %>%
+      count() %>%
+      arrange(daterangemonth, .by_group = FALSE)
+   ggplot(df, aes(x = daterangemonth, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1293,6 +1829,72 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 
 ![Looker count distinct](assets/uc9-looker-result.png){zoomable="yes"}
 
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT filterName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   filter_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Filter Name:',
+      style=style
+   )
+   display(filter_name)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-input.png)
+
+1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+                  AND filterName = '{filter_name.value}' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切なフィルター名を使用していることを確認してください。 例：`Fishing Products`。
+
+   ```R
+   ## Dimension filtered by name
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & filterName == "Fishing Products") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc9-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1300,7 +1902,8 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 
 ## ディメンション値を使用したフィルタリング
 
-Customer Journey Analyticsで、ハンティング商品カテゴリの商品をフィルタリングする新しいフィルターを作成します。 次に、新しいフィルターを使用して、2023 年 1 月のハンティングカテゴリの商品の製品名と発生件数（イベント）についてレポートします。
+**[!UICONTROL 商品カテゴリ]** の動的 **[!UICONTROL ハンティング]** 値を使用して、ハンティングカテゴリから商品をフィルタリングします。 また、商品カテゴリの値を動的に取得する機能をサポートしていない BI ツールの場合は、Customer Journey Analyticsで新しいフィルターを作成し、ハンティング商品カテゴリの商品をフィルタリングします。
+次に、新しいフィルターを使用して、2023 年 1 月のハンティングカテゴリの商品の製品名と発生件数（イベント）についてレポートします。
 
 +++ Customer Journey Analytics
 
@@ -1329,7 +1932,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
    1. **[!UICONTROL daterange]** を選択します。
-   1. **[!UICONTROL filterName]** を選択します。
+   1. **[!UICONTROL product_category]** を選択します。
    1. **[!UICONTROL product_name]** を選択します。
    1. 「**[!UICONTROL ∑回数]**」を選択します。
 
@@ -1338,20 +1941,22 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL filterName is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 基本フィルタリング]** を選択します。
-   1. **[!UICONTROL 検索]** フィールドの下の **[!UICONTROL ハンティング商品]** を選択します。これは、Customer Journey Analyticsで定義されている既存のフィルターの名前です。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
    1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL product_category]** の **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 基本フィルター]** を選択し、使用可能な値のリストから **[!UICONTROL ハンティング]** を選択します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、**[!UICONTROL filterName]** を **[!UICONTROL Columns]** から削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して **[!UICONTROL Daterange]** を **[!UICONTROL Columns]** から削除します。
 
-   適用した **[!UICONTROL filterName]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
+   適用した **[!UICONTROL product_category]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
    ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
 >[!TAB Tableau Desktop]
+
+![AlertRed](/help/assets/icons/AlertRed.svg)Tableau Desktop は、Customer Journey Analyticsからの動的な商品カテゴリのリストの取得をサポートしていません。 代わりに、このユースケースでは、新しく作成した **[!UICONTROL ハンティング商品]** のフィルターを使用し、フィルター名条件を使用します。
 
 1. **[!UICONTROL Data Source]** ビューの **[!UICONTROL Data]** の下で、**[!UICONTROL cc_data_view （prod:cja%3FFLATTEN）]** のコンテキストメニューから **[!UICONTROL 更新]** を選択します。 Customer Journey Analyticsで定義した新しいフィルターを取得するには、連携を更新する必要があります。
 1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
@@ -1384,15 +1989,75 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣製品カテゴリ]**」を選択します。
 1. フィルターの選択として **[!UICONTROL is]** を使用していることを確認します。
-1. 可能な値のリストから **[!UICONTROL ハンティング製品]** を選択します。
-1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
-   1. **[!UICONTROL 製品名]** を選択します。
-   1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
-1. 「**[!UICONTROL 実行]**」を選択します。
 
-次のようなテーブルが表示されます。
+![AlertRed](/help/assets/icons/AlertRed.svg) Lookes で **[!UICONTROL 製品カテゴリ]** の可能な値のリストが表示されない。
 
 ![Looker count distinct](assets/uc10-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
+   style = {'description_width': 'initial'}
+   category_filter = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Product Category:',
+      style=style
+   )
+   display(category_filter)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-input.png)
+
+1. ドロップダウンメニューから **[!UICONTROL ハンティング]** を選択します。
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               AND product_category = '{category_filter.value}' \
+               GROUP BY 1 \
+               ORDER BY Events DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切なカテゴリを使用していることを確認します。 例：`Hunting`。
+
+   ```R
+   ## Dimension 1 Filtered by Dimension 2 value
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & product_category == "Hunting") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1601,12 +2266,69 @@ SELECT
     COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
 FROM
     "public"."cc_data_view" AS "cc_data_view"
-WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2024-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
 GROUP BY
     1
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc11-jupyter-results.png)
+
+クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
+
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Dimension 1 Sorted
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc11-rstudio-results.png)
+
+RStudio が BI 拡張機能を使用して生成するクエリには `ORDER BY` が含まれています。これは、RStudio と BI 拡張機能を通じて順序が適用されることを意味します。
+
+```sql
+SELECT
+  "product_name",
+  SUM("purchase_revenue") AS "purchase_revenue",
+  SUM("purchases") AS "purchases"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2023-02-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "purchase_revenue" DESC
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1838,6 +2560,60 @@ ORDER BY
 FETCH NEXT 5 ROWS ONLY
 ```
 
+
+>[!TAB Jupyter Notebook]
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc12-jupyter-results.png)
+
+クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
+
+>[!TAB RStudio]
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   ## Dimension 1 Limited
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE) %>%
+      head(5)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc12-rstudio-results.png)
+
+RStudio が BI 拡張機能を使用して生成するクエリには `LIMIT 5` が含まれています。これは、RStudio と BI 拡張機能によって制限が適用されることを意味します。
+
+```sql
+SELECT "product_name", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2024-01-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "n" DESC
+LIMIT 5
+```
+
 >[!ENDTABS]
 
 +++
@@ -1987,7 +2763,7 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 >[!TAB Looker]
 
-Customer Journey Analytics オブジェクトは、**[!UICONTROL 探索]** インターフェイスの c で使用できます。 およびは、Looker での接続、プロジェクト、モデルの設定の一環として取得されます。 例えば、**[!UICONTROL cc_data_view]** と指定します。 ビューの名前は、Customer Journey Analyticsのデータビューに対して定義した外部 ID と同じです。 例えば、**[!UICONTROL タイトル]**`C&C - Data View` と **[!UICONTROL 外部 ID]**`cc_data_view` のデータビューなどです。
+Customer Journey Analytics オブジェクトは、**[!UICONTROL 参照]** インターフェイスで使用できます。 およびは、Looker での接続、プロジェクト、モデルの設定の一環として取得されます。 例えば、**[!UICONTROL cc_data_view]** と指定します。 ビューの名前は、Customer Journey Analyticsのデータビューに対して定義した外部 ID と同じです。 例えば、**[!UICONTROL タイトル]**`C&C - Data View` と **[!UICONTROL 外部 ID]**`cc_data_view` のデータビューなどです。
 
 **寸法**
 Customer Journey Analyticsのディメンションは、{Cc データビュー ]**の左パネルに**[!UICONTROL  2}DIMENSION ]**として表示されます。**[!UICONTROL &#x200B;ディメンションは、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]** には、Looker のディメンションの名前である **[!UICONTROL DIMENSION]****[!UICONTROL Product Name]** が含まれています。
@@ -2034,6 +2810,66 @@ GROUP BY
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+>[!TAB Jupyter Notebook]
+
+Customer Journey Analytics オブジェクト （ディメンション、指標、フィルター、計算指標、日付範囲）は、作成する Embedded SQL クエリの一部として使用できます。 前述の例を参照してください。
+
+**カスタム変換**
+
+1. 新しいセルに次のステートメントを入力します。
+
+   ```python
+   data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![Jupyter Notebook の結果 ](assets/uc13-jupyter-results.png)
+
+クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
+
+>[!TAB RStudio]
+
+Customer Journey Analytics コンポーネント（ディメンション、指標、フィルター、計算指標、日付範囲）は、R 言語の同様の名前付きオブジェクトとして使用できます。 コンポーネントを使用してコンポーネントを参照します。前述の例を参照してください。
+
+**カスタム変換**
+
+1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+
+   ```R
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange <= "2024-01-01") %>%
+      mutate(d2=lower(product_category)) %>%
+      group_by(d2) %>%
+      count() %>%
+      arrange(d2, .by_group = FALSE)
+   print(df)
+   ```
+
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
+
+   ![RStudio の結果 ](assets/uc13-rstudio-results.png)
+
+RStudio が BI 拡張機能を使用して生成するクエリには `lower` が含まれています。これは、カスタム変換が RStudio と BI 拡張機能によって実行されることを意味します。
+
+```sql
+SELECT "d2", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*, lower("product_category") AS "d2"
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" <= '2024-01-01')
+) AS "q01"
+GROUP BY "d2"
+ORDER BY "d2"
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -2235,7 +3071,19 @@ GROUP BY 1,
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | [ツリーマップ](https://cloud.google.com/looker/docs/treemap) |
 | ![タイプ](/help/assets/icons/TwoDots.svg) | [ ベン図 ](/help/analysis-workspace/visualizations/venn.md) | [ ベン図 ](https://cloud.google.com/looker/docs/venn) |
 
+>[!TAB Jupyter Notebook]
+
+matplotlib への状態ベースのインターフェイスである **matplotlib.pyplot** のビジュアライゼーション機能の比較は、この記事の目的を超えています。 インスピレーションと [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) ドキュメントについては、上記の例を参照してください。
+
+
+>[!TAB RStudio]
+
+R のデータビジュアライゼーションパッケージである **ggplot2** のビジュアライゼーション機能の比較は、この記事の目的を超えています。 インスピレーションと [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html) のドキュメントについては、上記の例を参照してください。
+
 >[!ENDTABS]
+
+
+
 
 +++
 
@@ -2271,6 +3119,15 @@ GROUP BY 1,
 * **[!UICONTROL Daterange Date]** や **[!UICONTROL Daterangeday Date]** などの日付または日時フィールドにおける Looker のユーザーエクスペリエンスは、混乱を招きます。
 * Looker の日付範囲は、包括的ではなく排他的です。  （前の **[!UICONTROL まで]** はグレーで表示されるので、その側面を見逃すことがあります。  終了日には、レポートする日付の後の日付を選択する必要があります。
 * Looker では、指標を指標として自動的に処理しません。  指標を選択すると、デフォルトでは、Looker は指標をクエリ内のディメンションとして扱おうとします。  指標を指標として扱うには、上記のようにカスタムフィールドを作成する必要があります。 ショートカットとして、「**[!UICONTROL ⋮]**」を選択し、「**[!UICONTROL 集計]**」を選択してから「**[!UICONTROL 合計]**」を選択できます。
+
+>[!TAB Jupyter Notebook]
+
+* Jupyter Notebook の主な注意点は、他の BI ツールのように、ツールがドラッグ&amp;ドロップによるユーザーインターフェイスを持っていないことです。 優れたビジュアルを作成できますが、それにはコードを記述する必要があります。
+
+>[!TAB RStudio]
+
+* R dplyr はフラット スキーマで動作するため、**[!UICONTROL FLATTEN]** オプションが必要です。
+* RStudio の主な注意点は、他の BI ツールのように、ツールがドラッグ&amp;ドロップのユーザーインターフェイスではないことです。 優れたビジュアルを作成できますが、それにはコードを記述する必要があります。
 
 >[!ENDTABS]
 
