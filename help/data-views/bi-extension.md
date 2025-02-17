@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI 拡張機能
-description: Power BIまたは Tableau Desktop を使用して、Customer Journey AnalyticsBI 拡張機能を使用してデータビューにアクセスする方法について説明します。
+description: Power BIまたは Tableau Desktop を使用して、Customer Journey Analytics BI 拡張機能を使用してデータビューにアクセスする方法について説明します。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
+source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 59%
+source-wordcount: '3620'
+ht-degree: 53%
 
 ---
 
@@ -36,13 +36,13 @@ CJA 権限を設定するための追加手順を以下に示します
 
 有効期限が切れる資格情報を使用するには、次の操作を実行します。
 
-* Experience PlatformおよびCustomer Journey Analyticsへのアクセス権を付与します。
+* Experience PlatformとCustomer Journey Analyticsへのアクセス権を付与します。
 * Customer Journey Analyticsへの製品管理者アクセス権を付与して、接続およびデータビューを表示、編集、更新または削除できるようにします。
 
 または、次のことができます。
 
 * アクセスするデータビューへのアクセス権を付与します。
-* Customer Journey AnalyticsBI 拡張機能へのアクセス権を付与します。
+* Customer Journey Analytics BI 拡張機能へのアクセス権を付与します。
 
 ### 有効期限が切れていない資格情報
 
@@ -51,7 +51,7 @@ CJA 権限を設定するための追加手順を以下に示します
 * 有効期限のない認証情報をExperience Platformに作成します。
 * [ 資格情報の有効期限 ](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
 
-特に [ 製品管理者の追加の権限 ](../technotes/access-control.md) および [4}Admin ConsoleのCustomer Journey Analytics権限 ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console) について詳しくは ](../technotes/access-control.md#product-admin-additional-permissions) 顧客ジャーニーのアクセス制御 } を参照してください。[
+特に [ 製品管理者の追加の権限 ](../technotes/access-control.md) および [4}Admin ConsoleのCustomer Journey Analyticsの権限 ](../technotes/access-control.md#product-admin-additional-permissions) について詳しくは、{ 顧客ジャーニーのアクセス制御 ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console) を参照してください。[
 
 
 ## 用途
@@ -100,7 +100,7 @@ Adobe Experience Platformで：
 
 ### BI ツール
 
-現在、[!DNL Customer Journey Analytics BI extension] はPower BIと Tableau Desktop でのみサポートされ、テストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
+現在、[!DNL Customer Journey Analytics BI extension] はPower BIおよび Tableau Desktop でのみサポートおよびテストされています。 PSQL インターフェイスを使用するその他の BI ツールも同様に機能する場合がありますが、まだ正式にはサポートされていません。
 
 +++ Power BI
 
@@ -124,9 +124,9 @@ Adobe Experience Platformで：
 
    1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
 
          `?FLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja?FLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
@@ -135,13 +135,13 @@ Adobe Experience Platformで：
       1. **[!UICONTROL ユーザー名]**&#x200B;と&#x200B;**[!UICONTROL パスワード]**&#x200B;の入力を求められます。Experience Platform クエリ[!UICONTROL 資格情報]の同等のパラメーターを使用します。
 
 
-   1. ログインに成功すると、Power BI **[!UICONTROL ** Navigator **]** にCustomer Journey Analyticsデータビューテーブルが表示されます。
+   1. ログインに成功すると、Customer Journey Analytics データビューテーブルが Power BI **[!UICONTROL ** Navigator **]** に表示されます。
 
    1. 使用するデータビューテーブルを選択し、「**[!UICONTROL **&#x200B;読み込み&#x200B;**]**」を選択します。
 
    選択した 1 つ以上のテーブルに関連付けられたすべてのディメンションと指標が右側のパネルに表示され、ビジュアライゼーションで使用できるようになります。
 
-   詳しくは、[クエリサービスへの Power BI の接続](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi)を参照してください。
+   詳しくは [ クエリサービスへのPower BIの接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) を参照してください。 詳細な例については、[BI 拡張機能の使用例 ](/help/use-cases/data-views/bi-extension-usecases.md) も参照してください。
 
 +++
 
@@ -165,11 +165,11 @@ Adobe Experience Platformで：
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** から [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** から [!UICONTROL Host] パラメーターを **[!UICONTROL ** Server **]** テキストフィールドに貼り付けます。
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Port] パラメーターを **[!UICONTROL ** Port **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Port] パラメーターを **[!UICONTROL ** Port **]** テキストフィールドに貼り付けます。
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** から [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL Database] パラメーターを **[!UICONTROL ** Database **]** テキストフィールドに貼り付けます。
 
          `%3FFLATTEN` を&#x200B;**[!UICONTROL **&#x200B;データベース&#x200B;**]**&#x200B;パラメーターに追加すると、例えば、`prod:cja%3FFLATTEN` のように読み込まれます。詳しくは、[サードパーティの BI ツールで使用するネストされたデータ構造のフラット化](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)を参照してください。
 
@@ -177,17 +177,92 @@ Adobe Experience Platformで：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;ユーザー名&#x200B;**]**」テキストフィールドにペーストします。
 
-      1. Experience Platformクエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL  パスワード ] パラメーターを **[!UICONTROL ** パスワード **]** テキストフィールドに貼り付けます。
+      1. Experience Platform クエリ **[!UICONTROL ** 資格情報 **]** の [!UICONTROL  パスワード ] パラメーターを **[!UICONTROL ** パスワード **]** テキストフィールドに貼り付けます。
 
       1. 「**[!UICONTROL ** ログイン **]**」を選択します。
 
-   1. Customer Journey Analyticsデータビューは、**[!UICONTROL ** テーブル **]** リストにテーブルとして表示されます。
+   1. Customer Journey Analyticsのデータビューは、「テーブル **[!UICONTROL ** リストにテーブルとして表示さ **]** ます。
 
    1. 使用するテーブルをキャンバス上でドラッグします。
 
    これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
 
-   詳しくは、[クエリサービスへの Tableau の接続](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau)を参照してください。
+   詳しくは、[Tableau のクエリサービスへの接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) を参照してください。 詳細な例については、[BI 拡張機能の使用例 ](/help/use-cases/data-views/bi-extension-usecases.md) も参照してください。
+
++++
+
++++ Looker
+
+1. Adobe Experience Platformで PostgresSQL 資格情報の詳細を調べます。
+
+   1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
+
+   1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
+
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+
+   1. ![ コピー ](assets/Smock_Copy_18_N.svg) を使用して、Looker で必要に応じて各 Postgres 認証情報パラメーター（[!UICONTROL  ホスト ]、[!UICONTROL  ポート ]、[!UICONTROL  データベース ]、[!UICONTROL  ユーザー名 ] などを）をコピーします。
+
+1. Looker で：
+
+   1. 左パネルから **[!UICONTROL 管理者]** を選択します。
+   1. **[!UICONTROL 接続]** を選択します。
+   1. **[!UICONTROL 接続を追加]** を選択します。
+   1. **[!UICONTROL データベースを Looker に接続]** 画面で、新しい接続を設定する際に適切な値を貼り付けます。 ダイアレクトとして **[!UICONTROL PostgreSQL 9.5 以降]** を選択していることを確認してください。
+   1. **[!UICONTROL テスト]** を選択して、接続をテストします。
+   1. 正常に終了したら、「**[!UICONTROL 更新]**」を選択して接続を保存します。
+
+   これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
+
+   詳しくは、[ クエリサービスへの Looker の接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) を参照してください。 詳細な例については、[BI 拡張機能の使用例 ](/help/use-cases/data-views/bi-extension-usecases.md) も参照してください。
+
++++
+
++++ Jupyter Noteboook
+
+1. Adobe Experience Platformで PostgresSQL 資格情報の詳細を調べます。
+
+   1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
+
+   1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
+
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+
+   1. Jupyter Notebook で必要に応じて、![ コピー ](assets/Smock_Copy_18_N.svg) を使用して、各 Postgres 資格情報パラメーター（[!UICONTROL  ホスト ]、[!UICONTROL  ポート ]、[!UICONTROL  データベース ]、[!UICONTROL  ユーザー名 ] など）をコピーします。
+
+1. Jupyter Notebook で以下を行います。
+
+   1. 必要なライブラリを使用していることを確認します。
+   1. 接続を設定して実行する際は、適切な値を使用します。
+   1. 関連するクエリを実行して、接続をテストします。
+
+   成功したら、データを操作して、レポートとビジュアライゼーションを作成できます。
+
+   詳しくは、[ クエリサービスへの Jupyter Notebook の接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook) を参照してください。 詳細な例については、[BI 拡張機能の使用例 ](/help/use-cases/data-views/bi-extension-usecases.md) も参照してください。
+
++++
+
++++ RStudio
+
+1. Adobe Experience Platformで PostgresSQL 資格情報の詳細を調べます。
+
+   1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
+
+   1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
+
+   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+
+   1. Jupyter Notebook で必要に応じて、![ コピー ](assets/Smock_Copy_18_N.svg) を使用して、各 Postgres 資格情報パラメーター（[!UICONTROL  ホスト ]、[!UICONTROL  ポート ]、[!UICONTROL  データベース ]、[!UICONTROL  ユーザー名 ] など）をコピーします。
+
+1. RStudio の場合：
+
+   1. 必要なライブラリを使用していることを確認します。
+   1. 接続を設定して実行する際は、適切な値を使用します。
+   1. 関連するクエリを実行して、接続をテストします。
+
+   成功したら、データを操作して、レポートとビジュアライゼーションを作成できます。
+
+   詳しくは、[ クエリサービスへの RStudio の接続 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio) を参照してください。 詳細な例（代わりに RPostgres パッケージを使用）については、[BI 拡張機能の使用例 ](/help/use-cases/data-views/bi-extension-usecases.md) も参照してください。
 
 +++
 
@@ -339,7 +414,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 >[!NOTE]
 >
->1 日未満（時間、30 分、5 分など）の `daterange` 指標はPower BIでサポートされていません。
+>Power BIは、1 日未満（時、30 分、5 分など）の `daterange` 指標をサポートしていません。
 >
 
 #### フィルター ID

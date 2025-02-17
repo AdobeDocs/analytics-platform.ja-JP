@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
+source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
 workflow-type: tm+mt
 source-wordcount: '14697'
 ht-degree: 2%
@@ -318,7 +318,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 1. セルを実行します。
 1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
 
-   ![Jupter Notebook 設定の手順 1](assets/jupyter-config-step1.png)
+   ![Jupter Notebook 設定の手順 1](assets/jupyter-config-step1.png){zoomable="yes"}
 
 1. 新しいセルに、SQL 拡張機能を読み込むためのステートメント、必要なライブラリを入力し、Customer Journey Analyticsに接続します。
 
@@ -330,7 +330,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
    シェルを実行します。 出力は表示されませんが、セルは警告なしで実行する必要があります。
 
-   ![Jupyer Notebook 設定手順 4](assets/jupyter-config-step2.png)
+   ![Jupyer Notebook 設定手順 4](assets/jupyter-config-step2.png){zoomable="yes"}
 
 1. 新しい呼び出しで、ステートメントを入力して、接続に基づいて使用可能なデータビューのリストを取得します。
 
@@ -354,7 +354,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
    シェルを実行します。 以下のスクリーンショットに同様に出力が表示されます。
 
-   ![Jupyter Notebook 設定の手順 5](assets/jupyter-config-step3.png)
+   ![Jupyter Notebook 設定の手順 5](assets/jupyter-config-step3.png){zoomable="yes"}
 
    データビューのリストに **[!UICONTROL cc_data_view]** が表示されます。
 
@@ -405,7 +405,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 1. チャンクを実行します。 「**[!UICONTROL Host]**」、「**[!UICONTROL Database]**」、「**[!UICONTROL User]**」の入力を求められます。 前の手順の一部として指定した値をそのまま使用します。
 1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
 
-   ![RStudio 設定手順 1](assets/rstudio-config-step1.png)
+   ![RStudio 設定手順 1](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
 
@@ -442,7 +442,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 
 1. チャンクを実行します。 以下のスクリーンショットに同様に出力が表示されます。
 
-   ![RStudio 構成の手順 2](assets/rstudio-config-step2.png)
+   ![RStudio 構成の手順 2](assets/rstudio-config-step2.png){zoomable="yes"}
 
 ### FLATTEN か NOT か
 
@@ -599,7 +599,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc2-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -622,7 +622,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc2-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -737,7 +737,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc3-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -760,7 +760,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc3-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -904,7 +904,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc4-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -927,7 +927,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc4-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1130,7 +1130,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc5-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1156,7 +1156,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc5-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1390,7 +1390,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc6-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1409,7 +1409,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc6-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1559,7 +1559,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc7-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1576,7 +1576,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc7-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1682,7 +1682,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-input.png)
+   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -1706,7 +1706,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1729,7 +1729,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc8-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1849,7 +1849,7 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-input.png)
+   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -1874,7 +1874,7 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1893,7 +1893,7 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc9-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2013,7 +2013,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-input.png)
+   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. ドロップダウンメニューから **[!UICONTROL ハンティング]** を選択します。
 
@@ -2039,7 +2039,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2058,7 +2058,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc10-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2292,7 +2292,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc11-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
@@ -2313,7 +2313,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc11-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 RStudio が BI 拡張機能を使用して生成するクエリには `ORDER BY` が含まれています。これは、RStudio と BI 拡張機能を通じて順序が適用されることを意味します。
 
@@ -2578,7 +2578,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc12-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
@@ -2599,7 +2599,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc12-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 RStudio が BI 拡張機能を使用して生成するクエリには `LIMIT 5` が含まれています。これは、RStudio と BI 拡張機能によって制限が適用されることを意味します。
 
@@ -2833,7 +2833,7 @@ Customer Journey Analytics オブジェクト （ディメンション、指標�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc13-jupyter-results.png)
+   ![Jupyter Notebook の結果 ](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
@@ -2857,7 +2857,7 @@ Customer Journey Analytics コンポーネント（ディメンション、指�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc13-rstudio-results.png)
+   ![RStudio の結果 ](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 RStudio が BI 拡張機能を使用して生成するクエリには `lower` が含まれています。これは、カスタム変換が RStudio と BI 拡張機能によって実行されることを意味します。
 
