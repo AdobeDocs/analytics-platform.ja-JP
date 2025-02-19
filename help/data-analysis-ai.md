@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 3814e3241a202fda802934685b4472b4c11c4245
+source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 4%
@@ -90,7 +90,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    * **[!UICONTROL AI アシスタント：データ分析]**
 
-   詳細については、管理者は [ 以下の手順 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) を参照してください。
+   詳細については、管理者は [ 以下の手順 ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) を参照してください。
 
    ![AI アシスタント アイコン ](/help/assets/ai-asst-icon.png)
 
