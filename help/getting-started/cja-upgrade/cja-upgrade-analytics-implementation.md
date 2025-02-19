@@ -1,5 +1,5 @@
 ---
-title: Adobe Analyticsの実装と、Customer Journey Analyticsへのアップグレードへの影響について
+title: Adobe Analytics の実装と、Customer Journey Analyticsへのアップグレードに与える影響について
 description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
-# Adobe Analyticsの実装と、Customer Journey Analyticsへのアップグレードへの影響について {#implementation-affects-upgrade}
+# Adobe Analytics の実装と、Customer Journey Analyticsへのアップグレードに与える影響について {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
 >title="AppMeasurement（手動 JS ファイル）"
->abstract="AppMeasurement.js をページに読み込み、s オブジェクト（s.eVar1 など）を使用してAdobeにデータを送信するJavaScript実装。"
+>abstract="AppMeasurement.js をページに読み込み、s オブジェクト（例：s.eVar1）を使用して、データをアドビ に送信する JavaScript 実装。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
->title="Adobe Analytics 拡張機能 (タグ)"
->abstract="Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグにはAdobe Analytics拡張機能がインストールされています。"
+>title="Adobe Analytics 拡張機能（タグ）"
+>abstract="Adobe Experience Platform データ収集（旧称 Launch）を読み込むタグ実装。タグには Adobe Analytics 拡張機能がインストールされています。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
->title="Web SDK (alloy.js)"
->abstract="Web SDK ライブラリ（alloy.js）をページに読み込み、JSON ペイロードを使用してAdobeにデータを送信するJavaScript実装。"
+>title="Web SDK（alloy.js）"
+>abstract="Web SDK ライブラリ（alloy.js）をページに読み込み、JSON ペイロードを使用してデータをアドビ に送信する JavaScript 実装。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Web SDK拡張機能（タグ）"
->abstract="Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグには Web SDK拡張機能がインストールされています。"
+>title="Web SDK 拡張機能（タグ）"
+>abstract="Adobe Experience Platform データ収集（旧称 Launch）を読み込むタグ実装。タグには Web SDK 拡張機能がインストールされています。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="データ挿入 API"
->abstract="データ挿入 API または一括データ挿入 API を使用する実装。"
+>abstract="Data Insertion API または Bulk Data Insertion API を使用する実装。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
 >title="Mobile SDK"
->abstract="Adobe Experience Platform Mobile SDKを使用する実装。"
+>abstract="Adobe Experience Platform Mobile SDK を使用する実装。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-unknown"
 >title="不明な実装"
->abstract="実装を管理していない場合は、このオプションを一時的に選択できます。"
+>abstract="実装を管理するユーザーでない場合は、このオプションを一時的に選択できます。"
 
 <!-- markdownlint-enable MD034 -->
 

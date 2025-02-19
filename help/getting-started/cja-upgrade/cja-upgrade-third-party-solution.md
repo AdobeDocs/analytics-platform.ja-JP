@@ -1,5 +1,5 @@
 ---
-title: サードパーティの分析ソリューションからCustomer Journey Analyticsへのアップグレード
+title: サードパーティの分析ソリューションから Customer Journey Analytics へのアップグレード
 description: サードパーティの分析ソリューションからCustomer Journey Analyticsにアップグレードする方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 87df2fb92f238ce051ac5f6cc90e218737279471
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 12%
+ht-degree: 20%
 
 ---
 
-# サードパーティの分析ソリューションからCustomer Journey Analyticsへのアップグレード {#upgrade-from-third-party}
+# サードパーティの分析ソリューションから Customer Journey Analytics へのアップグレード {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="サードパーティの分析製品"
->abstract="Google Analyticsなどのサードパーティの分析製品のデータを収集する実装。 このオプションを選択すると、質問表に記載されている、サードパーティの分析製品からCustomer Journey Analyticsにアップグレードするときに適用されないオプションのいくつかが無効になります。"
+>abstract="Google Analytics などのサードパーティの分析製品のデータを収集する実装。このオプションを選択すると、サードパーティの分析製品から Customer Journey Analytics にアップグレードする際に適用されない、アンケートのいくつかのオプションが無効になります。"
 
 <!-- markdownlint-enable MD034 -->
 

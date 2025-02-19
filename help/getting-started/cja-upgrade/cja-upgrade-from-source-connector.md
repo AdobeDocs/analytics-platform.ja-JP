@@ -1,5 +1,5 @@
 ---
-title: Analytics ソースコネクタからCustomer Journey Analyticsの Web SDKへの移行
+title: Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行
 description: Customer Journey Analyticsにアップグレードする際に、Analytics ソースコネクタから web SDKに移行する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# Analytics ソースコネクタからCustomer Journey Analyticsの Web SDKへの移行 {#transition-from-source-connector}
+# Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行 {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Analytics ソースコネクタの実装"
->abstract="Analytics ソースコネクタを使用すると、Customer Journey Analyticsから簡単に価値を得ることができますが、Adobe AnalyticsとCustomer Journey Analyticsの両方の代金を支払う必要があります。 このガイドは、独立した web SDKの実装に向かって進む際に役立ちます。"
+>abstract="Analytics ソースコネクタを使用すると、Customer Journey Analytics から簡単に価値を得ることができますが、Adobe Analytics と Customer Journey Analytics の両方に対して料金を支払う必要があります。このガイドは、独立した Web SDK の実装に移行するのに役立ちます。"
 
 <!-- markdownlint-enable MD034 -->
 
