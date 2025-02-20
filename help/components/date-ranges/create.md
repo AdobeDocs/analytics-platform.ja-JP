@@ -18,7 +18,7 @@ ht-degree: 39%
 
 ![注釈の作成](assets/create-date-range.png)
 
-* ??メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
+* ??メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ![AddCircle](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「][!UICONTROL **[!UICONTROL Add]**]」を選択します。
 * ??Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
 * ??Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します。
 * ??Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
