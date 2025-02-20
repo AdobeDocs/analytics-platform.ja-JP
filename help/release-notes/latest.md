@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
+source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2025年2月）
 
-**最終更新日**：2025年2月19日（PT）
+**最終更新日**：2025年2月20日（PT）
 
 このリリースノートは、2025年1月24日～2025年3月18日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -20,7 +20,9 @@ ht-degree: 65%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI 拡張機能 – Looker サポート** | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook および R Studio](/help/data-views/bi-extension.md) をサポートするようになりました。 [BI 拡張機能のユースケース ](/help/use-cases/data-views/bi-extension-usecases.md) が更新され、サポートされる追加のツールが反映されました。 |   | 2025年1月24日（PT） |
+| **BI 拡張機能 – 拡張サポート** | Customer Journey Analytics BI 拡張機能は [Looker、Jupyter Notebook および R Studio をサポート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases) するようになりました。 |   | 2025年1月24日（PT） |
+| **メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新** | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025年1月30日（PT） |
+
 
 ## Customer Journey Analytics の修正点
 
