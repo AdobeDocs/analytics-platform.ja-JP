@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 89ad5b445c79ee318ca064cbeb1da5948a714671
+source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 69%
+source-wordcount: '208'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 69%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI 拡張機能 – Looker サポート** | Customer Journey Analytics BI 拡張機能は [Looker、Jupyter Notebook および R Studio をサポート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases) するようになりました。 |   | 2025年1月24日（PT） |
+| **BI 拡張機能 – Looker サポート** | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook および R Studio](/help/data-views/bi-extension.md) をサポートするようになりました。 [BI 拡張機能のユースケース ](/help/use-cases/data-views/bi-extension-usecases.md) が更新され、サポートされる追加のツールが反映されました。 |   | 2025年1月24日（PT） |
 
 ## Customer Journey Analytics の修正点
 

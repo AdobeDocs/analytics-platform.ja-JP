@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
-workflow-type: ht
-source-wordcount: '824'
-ht-degree: 100%
+source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 92%
 
 ---
 
@@ -35,6 +35,13 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 ガイド付き分析を Analysis Workspace 内から直接使用できるようになったので、ユーザーは、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。
 
 [![画像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
+
+>[!TAB  インテリジェントキャプション v2]
+
+インテリジェントキャプションがサポートされ、[ 線 ](/help/analysis-workspace/visualizations/line.md) （複数行を含む）、[ 棒グラフ ](/help/analysis-workspace/visualizations/bar.md)、[ 横棒グラフ ](/help/analysis-workspace/visualizations/horizontal-bar.md)、[ 面積 ](/help/analysis-workspace/visualizations/area.md) （複数のエリアラインを含む）、[ ドーナツ ](/help/analysis-workspace/visualizations/donut.md)、[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md) のビジュアライゼーションに対するインターフェイスが強化されました。
+
+[![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB アラート]
 
@@ -73,7 +80,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB BI 拡張機能*]
 
-BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツールを使用し、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。[ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)が提供されます。
+BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツール（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook、RStudio）を使用して、Customer Journey Analytics ユーザーがAnalysis Workspace プロジェクトで使用しているのと同じデータビューに基づいてレポートやダッシュボードを作成できるようになりました。 [ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)が提供されます。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
