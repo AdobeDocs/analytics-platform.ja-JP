@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1911'
 ht-degree: 10%
 
 ---
@@ -148,13 +148,16 @@ ht-degree: 10%
 >title="エクスペリエンスのキャプチャと定義"
 >abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能の設定を編集できます。"
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 このセクションでは、コンテンツ分析で収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。
 
 デフォルトでは、**[!UICONTROL エクスペリエンスを含める]** はオフになっています。 選択した場合、エクスペリエンスを含める URL を定義する必要があります。
+
+エクスペリエンスは、次のいずれかに該当する場合にのみ含めるようにしてください。
+
+* サイト上のコンテンツは、URL でのみ駆動されます。
+* ページ URL を使用して、サイト上のページを再現できる必要があります。
 
 新しい設定や実装されていない設定にエクスペリエンスを含めるには：
 
@@ -286,6 +289,7 @@ ht-degree: 10%
    * **[!UICONTROL Adobe Experience Platform]** 設定：
       1. Content Analytics イベント、アセット属性、（設定されている場合は）エクスペリエンス属性をモデル化するスキーマの作成。
       1. Content Analytics イベント、アセット属性および（設定されている場合は）エクスペリエンス属性を収集するデータセットの作成。
+      1. 機能サービスを使用して Content Analytics イベントからコンテンツ属性を生成および更新するデータフローの作成。
    * **[!UICONTROL コンテンツ分析]** 設定：
       * 設定に基づく機能アセンブリプロセスのセットアップ。
    * **[!UICONTROL Customer Journey Analytics]** 設定：
