@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2036'
 ht-degree: 9%
 
 ---
@@ -105,9 +105,14 @@ ht-degree: 9%
 >abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change"
->title="データ表示を選択"
+>id="aca_onboarding_dataview_change_content"
+>title="新規データビュー"
 >abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。 必要に応じて、関連する接続も更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_title"
+>title="新規データビュー"
+>abstract="新規データビュー"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -144,12 +149,12 @@ ht-degree: 9%
 >abstract="コンテンツ分析でのエクスペリエンスの収集"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="以下のパラメーターを適用する URL を指定します"
+>abstract="Web サイトでのコンテンツのレンダリング方法を決定するパラメーターを指定します。"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
 >abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能の設定を編集できます。"
 
@@ -194,7 +199,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="データ収集"
->abstract="タグプロパティの指定"
+>abstract="**タグプロパティを指定**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -228,7 +233,7 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
-#### 新しい設定
+#### 新しい設定 {#new-configuration}
 
 新しい設定では、使用するタグプロパティを定義するか、新しいタグプロパティを作成する必要があります。 また、正規表現を使用して、含めるか除外するページとアセットを定義する必要があります。
 
@@ -256,7 +261,7 @@ ht-degree: 9%
    * **[!UICONTROL Asset]** の正規表現を指定します。 例：`(?!.*\b(store|help|admin)\b)`。
 
 
-#### 既存の設定
+#### 既存の設定 {#existing-configuration}
 
 既存の設定では、タグプロパティは編集できません。 ただし、含めるか除外するページとアセットを編集することはできます。
 
@@ -279,9 +284,19 @@ ht-degree: 9%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
+>id="aca_onboarding_implementation_warning_content"
 >title="オンボーディング実装の警告"
 >abstract="**[!UICONTROL 実装]** を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。 いくつかの設定は、デフォルトでコンテンツ分析に一般的に役立つ内容に基づいて選択されますが、ユーザー（データ管理者）は、各アーティファクトの設定を確認して、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/> この設定に関連付けられているタグライブラリを手動で公開するまで、データは収集されないことに注意してください。<br/><br/> 画像とテキストの属性を取得するために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けてはいけません。"
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning_title"
+>title="実装の確認"
+>abstract="実装の確認"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,6 +322,11 @@ ht-degree: 9%
       * コンテンツ分析レポートテンプレートがWorkspaceに追加されます。
 * **[!UICONTROL 保存]**：実装された設定に対する変更が保存され、実装が更新されます。
 * **[!UICONTROL 終了]**。 ガイド付き設定を終了します。 実装された設定に対して行われた変更はすべて破棄されます。
+
+
+## 公開 {#publish}
+
+Content Analytics 設定をアクティブ化するには、[ 手動で ](manual.md) ガイド付き設定ウィザードの一部として **[!UICONTROL 実装]** を選択した後に作成されたタグプロパティを公開する必要があります。
 
 >[!MORELIKETHIS]
 >

@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '125'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,16 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-*そして今、完全に異なる何かのために…*
+この記事では、コンテンツ分析の実装を変更するために必要になる可能性のある手動の設定アクションについて詳しく説明します。 通常、実装に変更を加えるには、[ ガイド付き設定ウィザード ](guided.md) を使用しますが、すべての変更をその設定ウィザードで行えるわけではありません。
+
+次の手動設定アクションを使用できます。
+
+## 公開
+
+Content Analytics 設定をアクティブ化するには、関連するタグプロパティを公開する必要があります。
+
+
+## 変更
 
 >[!MORELIKETHIS]
 >
