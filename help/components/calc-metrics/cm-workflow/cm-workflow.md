@@ -3,10 +3,10 @@ description: 計算指標の作成方法を説明します。
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 デフォルトでは、計算指標を作成できるのは管理者のみです。 ユーザーには、他のコンポーネント（フィルター、注釈など）の表示方法と同様に、計算指標を表示する権限があります。
 
-ただし、管理者は、**[!UICONTROL 6}Admin Console]** を介して、**[!UICONTROL CJA Workspace アクセスの権限の編集**[!UICONTROL  にある ]**レポートツール ](/help/technotes/access-control.md#user-level-access) の]** 計算指標の作成権限をユーザーに付与できます。[
+ただし、管理者は、**[!UICONTROL 6}Admin Console]** を介して、**[!UICONTROL CJA Workspace アクセスの権限の編集**[!UICONTROL  の ]**レポートツール ](/help/technotes/access-control.md#user-level-access) の]** 計算指標の作成権限をユーザーに付与できます。[
 
 
 計算指標は次の方法で作成できます。
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * ??メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 計算指標]**」を選択します。 ![ 計算指標 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) から「[[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
 * ??Workspace プロジェクトの左側のコンポーネント パネルで、「![ イベント ](/help/assets/icons/Event.svg) **指標**」の「![ 追加 ](/help/assets/icons/Add.svg)」を選択します。
-* ??Workspace プロジェクトの指標列ヘッダーのコンテキストメニューで、「**[!UICONTROL 選択から指標を作成]**」を選択します。 サブメニューから、関数を選択するか、「**[!UICONTROL 計算指標ビルダーで開く]**」を選択できます。 <br/> 関数を選択すると、計算指標はプロジェクトのみの指標として定義されます。 後でこの指標を編集する際に、[ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) ポップアップを使用して、[ 計算指標ビルダー ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) で通知が表示されます。
+* ??Workspace プロジェクトの指標列ヘッダーのコンテキストメニューで、「**[!UICONTROL 選択から指標を作成]**」を選択します。 サブメニューから、関数を選択するか、「**[!UICONTROL 計算指標ビルダーで開く]**」を選択できます。 <br/> 関数を選択すると、計算指標はプロジェクトのみの指標として定義されます。 後でこの指標を編集する際に、[ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) ポップアップを通じて、[ 計算指標ビルダー ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) に通知が表示されます。
 * ??Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 指標を作成]** を選択します。
 * ??Workspace プロジェクトで、ショートカットキー **[!UICONTROL shift+cmd+c]** （macOS）または **[!UICONTROL shift+ctrl+c]** （Windows）を使用します。
 
