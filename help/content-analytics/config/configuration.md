@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 22%
+source-wordcount: '373'
+ht-degree: 20%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 22%
 
 
 組織にコンテンツ分析を設定するには、コンテンツ分析 [ ガイド付き設定 ](guided.md) を使用します。 設定ウィザードでは、コンテンツ分析の自動設定の前提条件を設定するために必要なすべての手順を説明します。
+
+実装が成功したら、ガイド付き設定ウィザードを使用して変更を加えることができます。 ただし、これに加えて [ 手動の変更 ](manual.md) が必要になる場合があります。
 
 ## 前提条件
 
@@ -56,6 +58,8 @@ ht-degree: 22%
 >>
 [!MORELIKETHIS]
 >>
+* [ ガイド付き設定 ](guided.md)
+* [ 手動設定 ](manual.md)
 * [アクセス制御](/help/technotes/access-control.md)
 >
 
