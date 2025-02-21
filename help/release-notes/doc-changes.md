@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
-workflow-type: ht
-source-wordcount: '4402'
-ht-degree: 100%
+source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
+workflow-type: tm+mt
+source-wordcount: '4649'
+ht-degree: 95%
 
 ---
 
@@ -19,10 +19,17 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2025年2月** |  |
+| Media Collection：新しい Media Reporting XDM 用にAdobe Source コネクタを更新しました | Analytics Source Connector は、Web SDKが使用するフィールドと同じフィールドに自動的に [Adobe Analyticsのストリーミングメディアデータをマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) します。 以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
+| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook および R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en) をサポートするようになりました。 |
 | **2025年1月** |  |
+| 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。また、使用状況データを接続別、データセット別、サンドボックス別またはタグ別に表示して分類することもできます。 |
 | 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |
 | 製品の使用状況 | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
 | ガイド付き分析 | ガイド付き分析内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
+| Journey OptimizerのレポートページでのCustomer Journey Analyticsのカスタムテンプレートの使用に関するドキュメント | Adobe Journey Optimizerのレポートページで使用するテンプレートをJourney Optimizerに保存した後で [Customer Journey Analyticsでテンプレートを作成または編集 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja) することで、の新しいレポートインターフェイスをカスタマイズできるようになりました。 以前は、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできませんでした。 |
+| Analysis Workspaceのテンプレート | [ 事前に作成されたテンプレート ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates) および [ 会社テンプレート ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates) がCustomer Journey Analyticsで使用できるようになりました。 |
+| インテリジェントキャプション v2 | [ インテリジェントキャプション ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) が、複数行、棒グラフ、横棒グラフ、ドーナツ、領域、フロー、フォールアウトのビジュアライゼーションでサポートされるようになりました。 拡張ビューで、すべてのインテリジェントキャプションを一度に表示するか、個々のインテリジェントキャプションを 1 つずつ表示するかを選択できます。 |
 
 ## 2024
 
