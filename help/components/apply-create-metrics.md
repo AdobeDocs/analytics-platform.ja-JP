@@ -4,9 +4,9 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
+source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 8%
 
 ---
@@ -103,7 +103,7 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 
    * [!UICONTROL **乗算**]：選択した 2 つの列の値を乗算する新しい列を作成します。
 
-   * [!UICONTROL **変化率**]：選択した 2 つの列の変化率を表示する新しい列を作成します。
+   * [!UICONTROL **変化率**]：選択した 2 つの列の間の変化率を示す新しい列を作成します。
 
 [計算指標： 実装なしの指標](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=ja)（3:42）
 
