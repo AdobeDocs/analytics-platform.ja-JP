@@ -55,12 +55,12 @@ ht-degree: 20%
    * コンテンツエンゲージメントの分析とインサイトを取り込むアセット（タイプ）を明確に理解している。
 
 
->>
-[!MORELIKETHIS]
->>
-* [ ガイド付き設定 ](guided.md)
-* [ 手動設定 ](manual.md)
-* [アクセス制御](/help/technotes/access-control.md)
+>
+>[!MORELIKETHIS]
+>
+>* [ ガイド付き設定 ](guided.md)
+>* [ 手動設定 ](manual.md)
+>* [アクセス制御](/help/technotes/access-control.md)
 >
 
 
