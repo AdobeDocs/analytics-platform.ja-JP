@@ -5,9 +5,9 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -169,31 +169,31 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | ランディングページ ID (AJO) | ランディングページの一意の ID | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | コンポーネントタイプ：ディメンション |
 | ランディングページソース (AJO) | ランディングページのソース。 | AJO メールトラッキングエクスペリエンスイベントデータセット | 派生フィールド | コンポーネントタイプ：ディメンション（派生フィールド） |
 | リンク URL (AJO) | ユーザーがクリックした URL。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | コンポーネントタイプ：ディメンション |
-| メッセージの除外理由 (AJO) | 除外の理由 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | コンポーネントタイプ：ディメンション |
+| メッセージの除外理由（AJO） | 除外の理由 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | コンポーネントタイプ：ディメンション |
 | メッセージ失敗カテゴリ (AJO) | 失敗カテゴリ | AJO メッセージフィードバックイベントデータセット | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | コンポーネントタイプ：ディメンション |
-| メッセージ失敗の理由 (AJO) | エラーの理由 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | コンポーネントタイプ：ディメンション |
+| メッセージ失敗の理由 (AJO) | 失敗の理由 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | コンポーネントタイプ：ディメンション |
 | メッセージ失敗タイプ (AJO) | 失敗タイプ | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | コンポーネントタイプ：ディメンション |
-| メッセージエラーステータス（AJO） | 失敗ステータス | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | コンポーネントタイプ：ディメンション |
+| メッセージ失敗ステータス (AJO) | 失敗ステータス | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | コンポーネントタイプ：ディメンション |
 | メッセージ ID (AJO) | このデータを相関させる必要があるメッセージ ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | コンポーネントタイプ：ディメンション |
 | メッセージの再試行 (AJO) | 再試行回数 | AJO メッセージフィードバックイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | コンポーネントタイプ：ディメンション |
-| ノード ID （AJO） | ジャーニーノードのノード ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | コンポーネントタイプ：ディメンション |
+| ノード ID (AJO) | ジャーニーノードのノード ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | コンポーネントタイプ：ディメンション |
 | ノード名 (AJO) | ジャーニーノードのノード名。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | コンポーネントタイプ：ディメンション |
-| ノードタイプ (AJO) | ジャーニーノードのノードタイプ。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | コンポーネントタイプ：ディメンション |
-| OS （AJO） | オペレーティングシステムの名前。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `environment.operatingSystem` | コンポーネントタイプ：ディメンション |
-| OS バージョン （AJO） | オペレーティングシステムのバージョン。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | environment.operatingSystemVersion | コンポーネントタイプ：ディメンション |
-| プッシュプラットフォーム (AJO) | プッシュプロバイダーサービス（apns、fcm など） | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | コンポーネントタイプ：ディメンション |
-| プッシュタイトル (AJO) | プッシュタイトル（パーソナライズされていない）。 | AJO エンティティデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
-| 同意ポリシーの却下（AJO） | 対応する却下された同意ポリシーの名前。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | コンポーネントタイプ：ディメンション |
-| SMS インバウンドメッセージ (AJO) | SMS インバウンド返信 (例 : 停止、開始、購読など) | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | コンポーネントタイプ：ディメンション |
-| SMS メッセージタイプ （AJO） | SMS プロバイダー (例 : inbound、inboundReply、send)。 | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | コンポーネントタイプ：ディメンション |
-| SMS プロバイダー (AJO) | SMS プロバイダー (例 : sinch または twilio)。 | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | コンポーネントタイプ：ディメンション |
-| 選択タイプ (AJO) | メッセージが表示されたチャネルサーフェス。 | ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | コンポーネントタイプ：ディメンション |
-| サブスクリプションリスト ID (AJO) | サブスクリプションリストの一意の ID。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | コンポーネントタイプ：ディメンション |
-| サーフェス (AJO) |  | ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositions.scope` | コンポーネントタイプ：ディメンション |
-| 処理 ID (AJO) | 実験用の選択した処理の ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | コンポーネントタイプ：ディメンション |
-| 処理名 (AJO) | 実験のために選択した処理の名前。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | コンポーネントタイプ：ディメンション |
-| URL ID (AJO) | ユーザーがクリックした URL の一意の ID。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | コンポーネントタイプ：ディメンション |
-| URL ラベル （AJO） | URL 用のわかりやすいラベル。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | コンポーネントタイプ：ディメンション |
+| ノードタイプ（AJO） | ジャーニーノードのノードタイプ。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | コンポーネントタイプ：ディメンション |
+| OS（AJO） | オペレーティングシステムの名前。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | `environment.operatingSystem` | コンポーネントタイプ：ディメンション |
+| OS バージョン（AJO） | オペレーティングシステムのバージョン。 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | environment.operatingSystemVersion | コンポーネントタイプ：ディメンション |
+| プッシュプラットフォーム（AJO） | プッシュプロバイダーサービス（例：apns または fcm） | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | コンポーネントタイプ：ディメンション |
+| プッシュタイトル（AJO） | プッシュタイトル（パーソナライズされていない）。 | AJO エンティティデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| 却下された同意ポリシー（AJO） | 対応する却下された同意ポリシーの名前。 | ジャーニーステップイベント | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | コンポーネントタイプ：ディメンション |
+| SMS インバウンドメッセージ（AJO） | SMS インバウンド返信（例：停止、開始、購読など） | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | コンポーネントタイプ：ディメンション |
+| SMS メッセージタイプ（AJO） | SMS プロバイダー（例：inbound、inboundReply、send)。 | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | コンポーネントタイプ：ディメンション |
+| SMS プロバイダー（AJO） | SMS プロバイダー（例：sinch または twilio）。 | AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | コンポーネントタイプ：ディメンション |
+| 選択タイプ（AJO） | メッセージが表示されたチャネルサーフェス。 | ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | コンポーネントタイプ：ディメンション |
+| サブスクリプションリスト ID（AJO） | サブスクリプションリストの一意の ID。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | コンポーネントタイプ：ディメンション |
+| サーフェス（AJO） |  | ジャーニーステップイベント、AJO メールトラッキングエクスペリエンスイベントデータセット、AJO メッセージフィードバックイベントデータセット、AJO プッシュトラッキングエクスペリエンスイベントデータセット | `_experience.decisioning.`<br/>`propositions.scope` | コンポーネントタイプ：ディメンション |
+| 処理 ID（AJO） | 実験用の選択した処理の ID。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | コンポーネントタイプ：ディメンション |
+| 処理名（AJO） | 実験用の選択した処理の名前。 | AJO エンティティデータセット | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | コンポーネントタイプ：ディメンション |
+| URL ID（AJO） | ユーザーがクリックした URL の一意の ID。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | コンポーネントタイプ：ディメンション |
+| URL ラベル（AJO） | 人間にとってわかりやすい URL のラベル。 | AJO メールトラッキングエクスペリエンスイベントデータセット | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | コンポーネントタイプ：ディメンション |
 
 {style="table-layout:auto"}
 
