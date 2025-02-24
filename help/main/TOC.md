@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
 workflow-type: tm+mt
 source-wordcount: '1131'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 98%
       + [AppMeasurement データ収集の無効化](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + [サードパーティの分析ソリューションからのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + [アップグレード時の Adobe Analytics 機能のサポート](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [アップグレード中およびアップグレード後のAdobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [アップグレード中およびアップグレード後の Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -242,7 +242,7 @@ ht-degree: 98%
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ Content Analytics {#content-analytics}
++ コンテンツ分析 {#content-analytics}
    + [概要](/help/content-analytics/content-analytics.md)
    + 報告書 {#report}
       + [概要](/help/content-analytics/report/report.md)
