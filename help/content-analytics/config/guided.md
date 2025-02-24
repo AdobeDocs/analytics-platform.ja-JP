@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
+source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2024'
 ht-degree: 9%
 
 ---
@@ -105,14 +105,9 @@ ht-degree: 9%
 >abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_content"
+>id="aca_onboarding_dataview_change_dialog"
 >title="新規データビュー"
 >abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。 必要に応じて、関連する接続も更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_title"
->title="新規データビュー"
->abstract="新規データビュー"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -284,19 +279,9 @@ ht-degree: 9%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_content"
->title="オンボーディング実装の警告"
->abstract="**[!UICONTROL 実装]** を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。 いくつかの設定は、デフォルトでコンテンツ分析に一般的に役立つ内容に基づいて選択されますが、ユーザー（データ管理者）は、各アーティファクトの設定を確認して、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/> この設定に関連付けられているタグライブラリを手動で公開するまで、データは収集されないことに注意してください。<br/><br/> 画像とテキストの属性を取得するために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けてはいけません。"
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_title"
+>id="aca_onboarding_implementation_warning_dialog"
 >title="実装の確認"
->abstract="実装の確認"
-
-<!-- markdownlint-enable MD034 -->
-
+>abstract="**[!UICONTROL 実装]** を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。 いくつかの設定は、デフォルトでコンテンツ分析に一般的に役立つ内容に基づいて選択されますが、ユーザー（データ管理者）は、各アーティファクトの設定を確認して、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/> この設定に関連付けられているタグライブラリを手動で公開するまで、データは収集されないことに注意してください。<br/><br/> 画像とテキストの属性を取得するために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けてはいけません。"
 
 <!-- markdownlint-enable MD034 -->
 
