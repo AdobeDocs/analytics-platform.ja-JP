@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 11%
+source-wordcount: '1501'
+ht-degree: 12%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 11%
    | 要素 | 説明 |
    | --- | --- |
    | **[!UICONTROL データビュー]** | 計算指標のデータビューを選択できます。  定義した計算指標は、選択したデータビューに基づいてWorkspace プロジェクトで使用できます。 |
-   | **[!UICONTROL プロジェクトのみの指標]** | 指標が作成されたプロジェクトにのみ表示され、指標がコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL この指標をすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、「選択から指標を作成 **[!UICONTROL を使用してWorkspaceで指標を作成し、関数]****[!UICONTROL 平均]** や **[!UICONTROL 中央値]** など）を選択している場合にのみ表示されます。 後で [ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) を使用して、作成した指標を編集します。 |
+   | **[!UICONTROL プロジェクトのみの指標]** | 単一プロジェクト用に作成された計算指標を編集すると、このダイアログの上部に情報ボックスが表示されます。詳しくは、[ 単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) を参照してください。 <p>この計算指標をすべてのプロジェクトで使用できるようにする場合は、「この指標をすべてのプロジェクトで使用できるようにする **[!UICONTROL というオプションを選択し、コンポーネントリストに追加します]**。</p> |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
    | **[!UICONTROL 外部 ID]** ![ 必須 ](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する場合の計算指標の名前。 値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
    | **[!UICONTROL 説明]** | フィルターの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能なので、説明する必要はありません。 |
@@ -67,7 +67,7 @@ ht-degree: 11%
 1. 計算指標の定義が正しいかどうかを確認するには、計算指標の結果の絶えず更新される **[!UICONTROL プレビュー]** を使用します。 **[!UICONTROL プレビュー]** は過去 90 日間をカバーし、計算指標の定義を継続的に評価します。
 
    **[!UICONTROL 製品の互換性]** は、計算指標を実験で使用できるかどうかを示します。 使用可能な値：
-   * **[!UICONTROL Customer Journey Analytics内のすべての場所]**：計算指標は、すべてのCustomer Journey Analyticsで使用できます。
+   * **[!UICONTROL Customer Journey Analyticsのすべての場所]**：計算指標は、Customer Journey Analytics全体で使用できます。
    * **[!UICONTROL Customer Journey Analyticsのすべての場所（実験を除く）]**：計算指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
 
 1. 選択：
@@ -78,7 +78,7 @@ ht-degree: 11%
 
 ## 定義ビルダー
 
-定義ビルダーを使用して、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成します。 この構成では、標準指標、Adobe定義指標、計算指標、フィルター、ディメンションおよび関数を使用できます。 これらのすべてのコンポーネントは、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、定義内で演算子やコンテナを使用できます。
+定義ビルダーを使用して、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成します。 この構成では、標準指標、Adobe定義の指標、計算指標、フィルター、ディメンションおよび関数を使用できます。 これらのすべてのコンポーネントは、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、定義内で演算子やコンテナを使用できます。
 
 ![ 計算指標を作成 ](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -138,7 +138,7 @@ ht-degree: 11%
 
 * ディメンションからフィルターコンテナを追加するには：
 
-   1. コンポーネントパネルから ![Dimension](/help/assets/icons/Dimensions.svg)**[!UICONTROL Dimension]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+   1. コンポーネントパネルから ![ ディメンション ](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
    1. **[!UICONTROL Dimensionからフィルターを作成]** ポップアップで、フィルターの条件を定義します。 演算子のリストから選択し、値を選択するか、値を入力します。 例えば、**[!UICONTROL Month]****[!UICONTROL equals]**![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` です。
    1. 「**[!UICONTROL 完了]**」を選択します。 フィルターコンテナが **[!UICONTROL 定義]** に追加されます。
 

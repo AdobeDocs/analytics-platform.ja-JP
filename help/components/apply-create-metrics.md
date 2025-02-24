@@ -4,9 +4,9 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 
 ### 単一プロジェクトの計算指標の作成
 
-作成したプロジェクトでのみ使用できるクイック計算指標を作成できます。
+計算指標を素早く作成できます。計算指標は、これを作成したプロジェクトでのみ使用できます。
 
 単一プロジェクトの計算指標を作成するには：
 
