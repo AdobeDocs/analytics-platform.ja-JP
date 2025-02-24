@@ -4,7 +4,7 @@ title: ディメンション間のフロー
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 role: User
-source-git-commit: 80522177d5258e4b5046b3872483ce2b482ae77d
+source-git-commit: 1eeba4dc9de52f2890cf25794e767f199a4aa04c
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 7%
@@ -37,7 +37,7 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 
   ![ 末尾の空白にドラッグされたページディメンションを示すフロー。](assets/flowapp-add.png)
 
-以下のフロービジュアライゼーションは、**[!UICONTROL Event Types]** ディメンションを追加した結果を示しています。 このビジュアライゼーションは、モバイルアプリのユーザーが、商品を買い物かごに追加する前やアプリケーションを閉じる前やオファーを表示する前に、アプリ内の様々な画面をどのように移動するかについてのインサイトを提供します。
+以下のフロービジュアライゼーションは、**[!UICONTROL イベントタイプ]** ディメンションを追加した結果を示しています。 このビジュアライゼーションは、モバイルアプリのユーザーが、商品を買い物かごに追加する前やアプリケーションを閉じる前やオファーを表示する前に、アプリ内の様々な画面をどのように移動するかについてのインサイトを提供します。
 
 ![ ページディメンションの結果をリストの上部に表示する fLow。](assets/flowapp-result.png)
 
