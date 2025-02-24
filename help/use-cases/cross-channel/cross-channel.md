@@ -5,9 +5,9 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
-source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
+source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 51%
 
 ---

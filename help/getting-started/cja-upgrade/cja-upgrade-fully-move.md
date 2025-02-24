@@ -7,21 +7,21 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
-# Customer Journey Analyticsへのアップグレード後、Adobe Analyticsが必要となる期間の評価 {#evaluate-aa-needs}
+# Customer Journey Analyticsへのアップグレード後にAdobe Analyticsを無効にするタイミングの評価 {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Customer Journey Analyticsに完全に移動"
->abstract="（推奨）Customer Journey Analyticsは、組織の主要な Analytics ツールとなることを目的としています。 ただし、ツール専用の機能に大きく依存し、それらのワークフローを変更できない場合は、Adobe Analyticsが引き続き必要になる可能性があります。"
+>abstract="（推奨）Adobeでは、Adobe AnalyticsからCustomer Journey Analyticsに完全に移行することをお勧めします。 移行期間中は、データを並べて比較するために、Customer Journey Analyticsと共にAdobe Analyticsを実行することを計画してください。 データに慣れたら、Adobe Analyticsを無効にできます。"
 
 <!-- markdownlint-enable MD034 -->
 

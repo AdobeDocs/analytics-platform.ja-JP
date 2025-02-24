@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
+source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 99%
+source-wordcount: '1160'
+ht-degree: 94%
 
 ---
 
@@ -47,34 +47,44 @@ ht-degree: 99%
       + [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Platform にデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-      + [推奨プロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-      + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [データ取り込みの監視](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-      + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [タグへの Web SDK 拡張機能の追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [タグへの XDM データ収集ロジックの追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [スキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-      + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [既存のスキーマの使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + [データセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-      + [データストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Platform をサービスとして追加](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + スキーマ {#schema} ースのアーキテクトと作成
+         + [スキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+         + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+         + [既存のスキーマの使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + データストリーム {#create-datastream} の作成
+         + [データストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+         + [Platform をサービスとして追加](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + データセットの作成 {#create-datasets}
+         + [データセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+         + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+         + [データ取り込みの監視](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + タグの作成 {#create-tags}
+         + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+         + [タグへの Web SDK 拡張機能の追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [タグへの XDM データ収集ロジックの追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [接続の作成](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [データビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [アップグレードショートカット：Web SDK への移行](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-      + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-      + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-      + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Analytics ソースコネクタのみの使用](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-      + [Analytics ソースコネクタから Web SDK への移動](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [AppMeasurement データ収集の無効化](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + [サードパーティの分析ソリューションからのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-      + [アップグレード時の Adobe Analytics 機能のサポート](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [アップグレード中およびアップグレード後の Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + Analytics ソースコネクタ {#historical-data-source-connector} で履歴データを保持
+         + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+         + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+      + [Adobe Analyticsを無効にするタイミングの評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Adobe Analyticsを無効にする](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + 代替アップグレード方法 {#alternative-upgrade-methods}
+         + [AppMeasurementのデータ収集の使用](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+         + [データレイヤーを送信](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+         + [Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+      + その他のアップグレードシナリオ {#other-upgrade-scenarios}
+         + [Analytics ソースコネクタから Web SDK への移動](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+         + [Adobe Analytics以外のソリューションからのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + 追加情報 {#additional-information}
+         + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+         + [アップグレード時の Adobe Analytics 機能のサポート](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+         + [Customer Journey Analytics機能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -214,7 +224,7 @@ ht-degree: 99%
       + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
-   + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
+   + でのプロジェクトのキュレーション、共有 {#curate-share} スケジュール
       + [概要](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)

@@ -4,9 +4,9 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 
 ## 様々なアトリビューションモデルとの指標の比較
 
-指標のアトリビューションモデルを別のアトリビューションモデルと素早く簡単に比較したい場合は、指標のコンテキストメニューから **[!UICONTROL アトリビューションモデルを比較]** を選択します。
+指標のアトリビューションモデルを別のアトリビューションモデルとすばやく比較するには、指標のコンテキストメニューから **[!UICONTROL アトリビューションモデルを比較]** を選択します。
 
 ![ アトリビューションモデルの比較を強調表示したWorkspace パネル ](assets/compare-attribution.png)
 
-このショートカットを使用すると、アトリビューションモデルをすばやく簡単に比較できます。
+このショートカットを使用すると、指標をドラッグして 2 回設定することなく、1 つのアトリビューションモデルを別のアトリビューションモデルと比較できます。
 
 ## 計算指標の作成
 

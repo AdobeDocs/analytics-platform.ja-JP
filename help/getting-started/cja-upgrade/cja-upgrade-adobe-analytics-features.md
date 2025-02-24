@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
+source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 59%
+source-wordcount: '482'
+ht-degree: 53%
 
 ---
 
@@ -31,6 +31,15 @@ ht-degree: 59%
 >id="cja-upgrade-activity-map"
 >title="Activity Map のオーバーレイとリンクトラッキング"
 >abstract="リンクトラッキングデータをサイト上のオーバーレイとして表示できるブラウザー拡張機能。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-activity-map-support"
+>title="Activity Map のオーバーレイは、まだサポートされていません"
+>abstract="Activity Mapのオーバーレイは、Customer Journey Analyticsではまだサポートされていません。 今後利用可能になる予定です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,6 +85,15 @@ ht-degree: 59%
 >id="cja-upgrade-streaming-media"
 >title="ストリーミングメディアデータ"
 >abstract="オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とする Adobe Analytics のアドオンです。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-component-migration"
+>title="プロジェクトとコンポーネントを移行する"
+>abstract="Adobe Analytics プロジェクトとそれに関連するコンポーネントをCustomer Journey Analyticsに取り込みます。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 9%
+source-wordcount: '201'
+ht-degree: 6%
 
 ---
 
-# AppMeasurement データ収集の無効化 {#disable-appmeasurement}
+# Adobe Analyticsを無効にする {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 9%
 >
 >このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
 
-<!-- need to work on this -->
+Adobe Analyticsを無効にする前に、[Customer Journey Analyticsへのアップグレード後にAdobe Analyticsを無効にするタイミングを評価する ](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) の内容を確認してください。
 
 * **タグ：** Adobe Analytics拡張機能を無効にする
 
