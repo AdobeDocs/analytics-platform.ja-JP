@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3632'
 ht-degree: 95%
 
 ---
@@ -185,22 +185,22 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="デフォルトのテーブル指標"
+>title="デフォルトのコンテナ"
 >abstract="[!UICONTROL  フロー ] ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フロー ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="デフォルトのテーブル指標"
+>title="デフォルトのコンテナ"
 >abstract="[!UICONTROL  フォールアウト ] ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フォールアウト ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
->title="デフォルトのテーブル指標"
+>title="デフォルトのカウント方法"
 >abstract="[!UICONTROL  ヒストグラム ] ビジュアライゼーションに使用するデフォルトのカウント方法を選択します。 選択したデータビューに、選択したデフォルトのカウント方法が含まれていない場合、[!UICONTROL  ヒストグラム ] ビジュアライゼーションは別のプライマリアカウント方法に自動的に切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="デフォルトのテーブル指標"
+>title="デフォルトのコンテナ"
 >abstract="[!UICONTROL ジャーニーキャンバス ] のビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  プライマリキャンバス ] ビジュアライゼーションは別のジャーニーコンテナに自動的に切り替わります。"
 
 
