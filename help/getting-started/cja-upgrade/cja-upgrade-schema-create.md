@@ -7,20 +7,20 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 37%
+source-wordcount: '1265'
+ht-degree: 40%
 
 ---
 
-# Customer Journey Analytics Web SDKの実装で使用するカスタムスキーマの作成 {#create-custom-schema}
+# Customer Journey Analyticsで使用するカスタムスキーマの作成 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Adobe Experience Platformで目的のカスタムスキーマを作成します"
+>title="Adobe Experience Platform で目的のカスタムスキーマを作成"
 >abstract="Adobe Experience Platform UI を使用して、Adobeがデータを格納するための正しい形式を認識できるスキーマを作成します。<br><br> この手順では、組織が合意したスキーマの実際の作成を行います。 Adobe Experience Platform インターフェイスでスキーマを作成するための推定時間は、作成する必要があるディメンションと指標の数に応じて、約 1 週間です。"
 
 <!-- markdownlint-enable MD034 -->
@@ -38,16 +38,12 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="プロファイルでスキーマを有効にする"
+>title="プロファイルのスキーマを有効にする"
 >abstract="Adobe Real-time CDP で使用するために、スキーマ内のプロファイルを有効にします。 この手順が表示されるのは、Adobe Real-time CDP と統合する必要があることを選択したためです。<br><br> この手順には 1 つのボックスをクリックする必要があるので、この手順は数分で済みます。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 >[!IMPORTANT]
 >

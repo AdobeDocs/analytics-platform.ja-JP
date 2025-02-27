@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 53%
+source-wordcount: '469'
+ht-degree: 50%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="ストリーミングメディアデータ"
->abstract="オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とする Adobe Analytics のアドオンです。"
+>abstract="オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とするAdobe AnalyticsおよびCustomer Journey Analyticsのアドオンです。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,9 +97,7 @@ ht-degree: 53%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+{{upgrade-note}}
 
 以下のリストは、Customer Journey Analyticsへのアップグレードプロセスで考慮する必要があるAdobe Analytics機能のみを示しています。 Customer Journey Analyticsで完全にサポートされているAdobe Analytics機能、部分的にサポートされている機能、サポートされていない機能を示す包括的なリストについては、[Customer Journey Analytics機能のサポート ](/help/getting-started/aa-vs-cja/cja-aa.md) を参照してください。
 
