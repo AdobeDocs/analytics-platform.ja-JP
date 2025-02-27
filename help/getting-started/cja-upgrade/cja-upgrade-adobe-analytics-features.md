@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
+source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 50%
+source-wordcount: '464'
+ht-degree: 38%
 
 ---
 
@@ -109,6 +109,6 @@ Customer Journey Analyticsにアップグレードする際に、引き続き使
 | [Activity Map のオーバーレイとリンクトラッキング ](https://experienceleague.adobe.com/en/docs/analytics/analyze/activity-map/overview) | まだ利用できません |
 | [ 分類データ ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/c-classifications) | ルックアップデータセットは、Customer Journey Analyticsでのデータの分類に使用されます。<p>[ 分類データを含む各ディメンションのルックアップデータセットを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。</p> |
 | [マーケティングチャネル](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | 派生フィールドは、データビュー内で作成されます。 <p>[ マーケティングチャネル派生フィールドを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)。</p> |
-| [データフィード](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | データセットの第 1 世代のデータ書き出しは、[Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=ja) および [Experience Platform の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)を通じて利用できます。これらのオプションを使用すると、Experience Platform データレイクに収集または取り込まれるすべてのデータをイベント／行レベルで書き出すことができます。Post 列はクエリ時に計算されるので、後処理データ列は使用できません。Post 列の書き出しは、レポートを通じて使用できます。 |
+| [データフィード](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience PlatformとCustomer Journey Analyticsには、様々な書き出し要件を解決するための様々な機能が用意されています。これらの機能は、単独で使用することも、組み合わせて使用することもできます。 これらの機能には、[Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=ja)、[Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)、[Customer Journey Analyticsの完全なテーブルの書き出し ](/help/analysis-workspace/export/export-cloud.md)、[BI ツールの統合 ](/help/data-views/bi-extension.md) などがあります。<p>書き出しオプションについて詳しくは、[ データ書き出しの使用例 ](/help/use-cases/data-export/overview.md) を参照してください。</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)は、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。 |
 | [ ストリーミングメディアデータ ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview) | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
