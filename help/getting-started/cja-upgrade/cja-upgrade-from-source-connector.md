@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '445'
 ht-degree: 15%
 
 ---
@@ -25,13 +25,11 @@ ht-degree: 15%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+{{upgrade-note}}
 
 Customer Journey Analyticsの唯一の実装として Analytics ソースコネクタを使用する場合、固有の欠点があります。
 
-Analytics ソースコネクタ実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeでは、（履歴データ用に） Analytics ソースコネクタを使用する実装に、（継続的なデータ収集用に） web SDKの新しい実装を組み合わせて移行することをお勧めします。
+Analytics ソースコネクタの実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeは継続的なデータ収集には web SDKの新しい実装に移行し、履歴データにのみ Analytics ソースコネクタを使用することをお勧めします。
 
 ## Analytics ソースコネクタのみを使用する場合のメリットとデメリットについて
 

@@ -1,35 +1,31 @@
 ---
-title: Customer Journey Analyticsでのデータビューの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics でデータビューを作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 20%
+source-wordcount: '409'
+ht-degree: 29%
 
 ---
 
-# Customer Journey Analyticsでのデータビューの作成 {#upgrade-create-dataview}
+# Customer Journey Analytics でデータビューを作成 {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="Customer Journey Analyticsでのデータビューの作成"
+>title="Customer Journey Analytics でデータビューを作成"
 >abstract="データビューはCustomer Journey Analyticsに特有のコンテナで、接続からデータを解釈する方法を決定できます。<br><br> データビューの初期作成には数分かかりますが、各ディメンションと指標を目的のコンポーネント設定で設定するには数日かかる場合があります。 これらの設定の調整は遡及的に適用されるので、組織で時間の経過と共に調整できます。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
@@ -53,7 +49,7 @@ ht-degree: 20%
 
    ![「コンポーネント」タブ](assets/dataview-components.png)
 
-1. 「[!UICONTROL **コンポーネント**]」タブで、左側のパネルから「{Metrics **]」セクションまたは[!UICONTROL ** 4}Dimension **]セクションにスキーマ要素をドラッグします。[!UICONTROL **&#x200B;追加するスキーマ要素は、データビューの指標またはディメンションになります。
+1. 「[!UICONTROL **コンポーネント**]」タブで、左側のパネルから「[!UICONTROL **指標**]」セクションまたは「[!UICONTROL **ディメンション**]」セクションにスキーマ要素をドラッグします。 追加するスキーマ要素は、データビューの指標またはディメンションになります。
 
    データビューにコンポーネントを追加する際に使用できるオプションについて詳しくは、[ データビューの作成または編集 [ の ](/help/data-views/create-dataview.md#components) コンポーネント ](/help/data-views/create-dataview.md) を参照してください。
 

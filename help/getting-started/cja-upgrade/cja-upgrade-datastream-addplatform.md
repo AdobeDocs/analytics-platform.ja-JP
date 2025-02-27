@@ -1,16 +1,16 @@
 ---
-title: Customer Journey Analytics用スキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに推奨されるパスについて説明します
+title: Customer Journey Analytics用のスキーマの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 27%
+source-wordcount: '287'
+ht-degree: 36%
 
 ---
 
@@ -20,16 +20,12 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
->title="Adobe Experience Platformをサービスとしてデータストリームに追加します"
+>title="Adobe Experience Platform をサービスとしてデータストリームに追加"
 >abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。 データストリームでAdobe Experience Platformをサービスとして設定します。<br><br> データストリームへのサービスの追加は簡単なプロセスで、完了までわずか数分で済みます。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

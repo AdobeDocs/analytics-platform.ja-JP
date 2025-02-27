@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
-source-git-commit: d2d945724e7972bd4a29fa13291577bb76288229
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 14%
+source-wordcount: '237'
+ht-degree: 15%
 
 ---
 
@@ -25,9 +25,7 @@ ht-degree: 14%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+{{upgrade-note}}
 
 Adobe Analytics以外の分析ソリューションからCustomer Journey Analyticsにアップグレードする場合は、Customer Journey Analyticsに推奨されるデータ収集方法であるExperience Platform Web SDKの新規実装を使用することをお勧めします。 Adobeでは、Web SDKと組み合わせて、履歴データをサードパーティの分析ソリューションからAdobe Experience Platformに取り込むこともお勧めします。
 

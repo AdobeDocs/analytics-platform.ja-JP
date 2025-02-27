@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 28%
+source-wordcount: '296'
+ht-degree: 37%
 
 ---
 
@@ -20,20 +20,16 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="サイトへのローダータグの実装"
+>title="サイトにローダータグを実装"
 >abstract="Web サイトの開発チームと協力して、サイトのすべてのページにローダータグをインストールします。<br><br> このタスクの完了時間は、コードのデプロイに協力するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、このステップを数日で完了できる場合もあれば、タスクの膨大なバックログを持つエンジニアリングチームでは 1 か月以上かかる場合もあります。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 追跡する web サイトにタグをインストールする必要があります。これは、web サイトのテンプレートのヘッダータグにコードを配置することを意味します。
 
-次のプロセスでは、タグを参照するコードの取得方法を説明します。 補足情報については、Experience Platformドキュメントの [ タグとイベント転送の実装ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) を参照してください。
+次のプロセスでは、タグを参照するコードの取得方法を説明します。 補足情報については、Experience Platform ドキュメントの [ タグとイベント転送の実装ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) を参照してください。
 
 タグを参照するコードを取得するには：
 

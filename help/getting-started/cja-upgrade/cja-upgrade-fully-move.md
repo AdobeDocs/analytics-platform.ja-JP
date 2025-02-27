@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
->
->このドキュメントは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードアンケート ](https://gigazelle.github.io/cja-ttv/) の一部として使用してください。
+{{upgrade-note}}
 
 ほとんどの企業は、Customer Journey Analyticsへのアップグレード後に、最終的にAdobe Analyticsを無効にします。 これは、2 つの分析環境の維持に伴うコストと複雑さによるものです。
 

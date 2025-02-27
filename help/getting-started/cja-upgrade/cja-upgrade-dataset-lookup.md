@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 5%
+source-wordcount: '810'
+ht-degree: 6%
 
 ---
 
@@ -20,16 +20,12 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
->title="分類データを含む各ディメンションのルックアップデータセットを作成します"
+>title="分類データを含む各ディメンションのルックアップデータセットを作成"
 >abstract="Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。
 

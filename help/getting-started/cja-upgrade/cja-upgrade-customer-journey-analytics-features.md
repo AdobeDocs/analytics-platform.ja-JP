@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 74719504960f00f4593633bb62f29d8655cdadd9
+exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 18%
+source-wordcount: '465'
+ht-degree: 19%
 
 ---
 
@@ -78,9 +79,7 @@ ht-degree: 18%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+{{upgrade-note}}
 
 次のリストは、アップグレードプロセス中に考慮する必要があるCustomer Journey Analytics機能のみを示しています。 Customer Journey Analyticsで完全にサポートされているAdobe Analytics機能、部分的にサポートされている機能、サポートされていない機能を示す包括的なリストについては、[Customer Journey Analytics機能のサポート ](/help/getting-started/aa-vs-cja/cja-aa.md) を参照してください。
 
@@ -94,5 +93,3 @@ Customer Journey Analyticsにアップグレードする際には、次のどの
 | [Adobe Target（A4T）との一時的な統合 ](/help/integrations/at.md) | Customer Journey Analyticsの Target レポートを使用すると、Adobe Target アクティビティを [ 測定およびレポート ](/help/integrations/at.md)Customer Journey Analyticsで直接行えます。 |
 | [Adobe Journey Optimizerとの統合 ](/help/integrations/ajo.md) | Journey Optimizerで生成されたデータを設定 [Customer Journey Analyticsでアドバンス分析を実行 ](/help/integrations/ajo.md) できます。 |
 | Adobe Audience Manager と一時的に統合する |  |
-
-

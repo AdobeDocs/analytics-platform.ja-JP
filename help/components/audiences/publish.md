@@ -4,7 +4,7 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -61,9 +61,9 @@ ht-degree: 18%
 
 
 
-このトピックでは、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用する方法について説明します。
+このトピックでは、顧客のターゲティングやパーソナライゼーションのために、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開する方法について説明します。
 
-この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analyticsオーディエンスの概念を理解してください。
+この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analytics オーディエンスの概念を理解してください。
 
 ## オーディエンスの作成と公開 {#create}
 
@@ -71,7 +71,7 @@ ht-degree: 18%
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]** インターフェイス内から。 | メインCustomer Journey Analyticsメニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 **[!UICONTROL オーディエンスを作成]** を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
+   | **[!UICONTROL オーディエンス]** インターフェイス内から。 | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
    | Analysis Workspaceのビジュアライゼーションから | Analysis Workspaceの多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。 例えば、**[!UICONTROL フリーフォームテーブル]** の項目のコンテキストメニューから [ オーディエンスを作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を選択したり、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) のノードを選択したりできます。<p>この方法を使用すると、オーディエンスビルダーのフィルターに、選択したディメンションまたはディメンション項目があらかじめ入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：** オーディエンスに計算指標を含めることはできません。 計算指標を含むオーディエンスを作成しようとしても、計算指標はオーディエンスの定義に含まれません。</p> |
    | フィルターの作成／編集 UI から | 「**[!UICONTROL このフィルターからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、フィルターが事前に設定されます。 詳しくは、[ フィルターの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
 
@@ -83,10 +83,10 @@ ht-degree: 18%
 
 1. 「**[!UICONTROL [!UICONTROL サンプル ID を表示]]**」を選択して、このオーディエンスの ID のサンプルを表示します。 **[!UICONTROL サンプル ID]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *サンプル ID を検索*] を使用してサンプル ID を検索できます。
 
-1. オーディエンスの設定を再度確認し、「**[!UICONTROL Publish]**」を選択します。
+1. オーディエンスの設定を再度確認し、「**[!UICONTROL 公開]**」を選択します。
 オーディエンスが公開されたことを示す確認メッセージが表示されます。 このオーディエンスは、1 ～ 2 分でExperience Platformに表示されます。
 
-1. 同じメッセージ内で **[!UICONTROL AEP でオーディエンスを表示]** を選択すると、Adobe Experience Platformの [ セグメント UI](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) に移動します。 詳しくは、次を参照してください。
+1. 同じメッセージ内で **[!UICONTROL AEPでオーディエンスを表示]** を選択すると、Adobe Experience Platformの [ セグメント UI](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/overview) に移動します。 詳しくは、次を参照してください。
 
 ## Audience builder
 
@@ -124,7 +124,7 @@ ht-degree: 18%
 
 Customer Journey Analyticsでオーディエンスを作成して公開すると、そのオーディエンスをExperience Platformで使用できるようになります。 Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
 
-* Platform のオーディエンスは、Customer Journey Analyticsオーディエンスと同じ名前および説明を共有します。 オーディエンスが一意になるように、名前にCustomer Journey Analyticsオーディエンス ID が追加されます。
+* Platform のオーディエンスは、Customer Journey Analytics オーディエンスと同じ名前および説明を共有します。 オーディエンスが一意になるように、名前にCustomer Journey Analytics オーディエンス ID が追加されます。
 * Customer Journey Analyticsでオーディエンスの名前や説明に加えられた変更は、すべてExperience Platformに反映されます。
 * Customer Journey Analyticsでオーディエンスを削除しても、オーディエンスのプロファイルメンバーシップが期限切れになるまで、オーディエンスは引き続きExperience Platformで使用できます。 プロファイルメンバーシップは、1 回限りのオーディエンスの場合は 420 日後、繰り返しオーディエンスの場合は 16 日後に有効期限が切れます。
 
@@ -138,20 +138,20 @@ Customer Journey Analyticsでオーディエンスを作成して公開すると
 | --- | --- | --- |
 | 表示しない | Adobe Analyticsから Analytics ソースコネクタ（A4T） | 最大 30 分 |
 | 1 | （Analytics ソースコネクタまたはその他のソースから）データレイクへのデータ取り込み | 最大 90 分 |
-| 2 | Experience PlatformデータレイクからCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
+| 2 | Experience Platform Data Lake からCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
 | 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 数秒 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
 | 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
 {style="table-layout:auto"}
 
-## Experience PlatformでのCustomer Journey Analyticsオーディエンスの使用 {#audiences-aep}
+## Experience PlatformでのCustomer Journey Analytics オーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-time Customer Data Platformにストリーミングします。 Customer Journey Analyticsは、Experience Platformの設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスを接続に送信します。
+Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-Time Customer Data Platformにストリーミングします。 Customer Journey Analyticsは、接続設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスをExperience Platformに送信します。
 
-次に、Real-time Customer Data Platformは、各名前空間/ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。 プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、Real-Time Customer Data Platformは、各名前空間/ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。 プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
 
-Platform でCustomer Journey Analyticsオーディエンスを表示するには：
+Platform でCustomer Journey Analytics オーディエンスを表示するには：
 
 1. 左側のパネルで **[!UICONTROL 顧客]** を展開し、「**[!UICONTROL オーディエンス]**」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
 
@@ -167,7 +167,7 @@ Platform でCustomer Journey Analyticsオーディエンスを表示するには
 
    * ![ 検索 ](/help/assets/icons/Search.svg) 検索フィールドを使用します。
 
-Platform でのオーディエンスの使用について詳しくは、Experience Platformドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) の節を参照してください。
+Platform でのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) の節を参照してください。
 
 
 ## よくある質問（FAQ） {#faq}
@@ -182,11 +182,11 @@ Platform でのオーディエンスの使用について詳しくは、Experien
 
 +++**Customer Journey Analyticsでオーディエンスを削除するとどうなりますか？**
 
-Customer Journey Analyticsオーディエンスを削除すると、そのオーディエンスはExperience PlatformUI に表示されなくなります。 ただし、そのオーディエンスに関連付けられたプロファイルは、Experience Platformでは削除されません。
+Customer Journey Analytics オーディエンスが削除されると、そのオーディエンスはExperience Platform UI に表示されなくなります。 ただし、そのオーディエンスに関連付けられたプロファイルは、Experience Platformでは削除されません。
 
 +++
 
-+++**対応するプロファイルがReal-time Customer Data Platformに存在しない場合、新しいプロファイルは作成されますか？**
++++**対応するプロファイルがReal-Time Customer Data Platformに存在しない場合、新しいプロファイルは作成されますか？**
 
 はい、作成されます。
 
@@ -194,7 +194,7 @@ Customer Journey Analyticsオーディエンスを削除すると、そのオー
 
 +++**Customer Journey Analyticsは、オーディエンスデータをパイプラインイベントとして送信しますか、それともデータレイクにも送られるフラットファイルとして送信しますか？**
 
-Customer Journey Analyticsは、パイプラインを介してデータをReal-time Customer Data Platformにストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
+Customer Journey Analyticsは、パイプラインを介してデータをReal-Time Customer Data Platformにストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
 
 +++
 
@@ -206,13 +206,13 @@ Customer Journey Analyticsは、パイプラインを介してデータをReal-t
 
 +++**プライマリ ID として選択されるのはどの ID ですか？**
 
-上記を参照してください。Customer Journey Analyticsユーザーごとに 1 つの ID のみが送信されます。
+上記を参照してください。Customer Journey Analytics ユーザーごとに 1 つの ID のみが送信されます。
 
 +++
 
-+++**Real-time Customer Data PlatformはCustomer Journey Analyticsメッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
++++**Real-Time Customer Data PlatformはCustomer Journey Analytics メッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
-いいえ。1 人のユーザーにつき 1 つの ID のみが送信されるので、Real-time Customer Data Platformが使用するグラフエッジはありません。
+いいえ。1 人のユーザーにつき 1 つの ID のみが送信されるので、Real-Time Customer Data Platformが使用するグラフエッジはありません。
 
 +++
 

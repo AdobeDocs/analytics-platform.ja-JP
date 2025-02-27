@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -42,7 +42,9 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
-Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードにお勧めのプロセスは、Experience Platform Web SDKの新しい実装です。これは、Customer Journey Analyticsに推奨されるデータ収集方法です。
+{{upgrade-note}}
+
+Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードには、Experience Platform Web SDKの新規実装を使用することをお勧めします。これは、Customer Journey Analyticsで推奨されるデータ収集方法です。
 
 Adobe Experience Platform Web SDKの使用方法として、次の 3 つがサポートされています。
 
@@ -52,7 +54,7 @@ Adobe Experience Platform Web SDKの使用方法として、次の 3 つがサ�
 
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm):NPM パッケージマネージャーを使用して、サイトに web SDKをインストールします。
 
-詳しくは、Experience PlatformWeb SDKガイドの [Web SDKのインストールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) を参照してください。
+詳しくは、『Experience Platform Web SDK ガイド』の [Web SDKのインストールの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) を参照してください。
 
 
 

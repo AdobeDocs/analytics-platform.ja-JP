@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 22%
+source-wordcount: '413'
+ht-degree: 23%
 
 ---
 
@@ -25,9 +25,7 @@ ht-degree: 22%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+{{upgrade-note}}
 
 お勧めはしませんが、Customer Journey Analytics ソースコネクタを、Analytics の唯一の実装パスとして使用することはできます。 ただし、このタイプのアップグレードには不利な点があることから、Adobeでは、Analytics ソースコネクタをExperience Platform Web SDKの新規実装と組み合わせて使用することをお勧めします。 この推奨アップグレードパスについて詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパス ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。
 

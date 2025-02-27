@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 20%
+source-wordcount: '305'
+ht-degree: 28%
 
 ---
 
@@ -20,22 +20,18 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-property"
->title="Adobe Experience Platform Data Collection でのタグプロパティの作成"
+>title="Adobe Experience Platform データ収集にタグプロパティを作成"
 >abstract="タグの使用は、データ収集の一般的な標準です。 Adobe Experience Platform インターフェイスでタグを作成して、いつでもデータ収集変数を更新できるようにします。<br><br> タグプロパティの作成は、数回のクリックで完了できます（数分で完了します）。"
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+{{upgrade-note-step}}
 
 Adobe Experience Platformのタグ機能を使用して、データを収集するコードをサイトに実装できます。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
 
-次の情報では、プロパティのタグを作成する方法について説明します。 詳しくは、Experience Platformドキュメントの [Web SDK タグ拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。 Web SDKには、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
+次の情報では、プロパティのタグを作成する方法について説明します。 詳しくは、Experience Platform ドキュメントの [Web SDK タグ拡張機能の設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を参照してください。 Web SDKには、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
-プロパティは基本的に、サイトにタグをデプロイする際に拡張機能、ルール、データ要素およびライブラリを入力するコンテナです。多くのユーザーは、同じタグセットをデプロイする web サイト（または密接に関連するサイトのグループ）ごとにプロパティを作成しています。 プロパティについて詳しくは、Experience Platformデータ収集ドキュメントの [ プロパティ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) を参照してください。
+プロパティは基本的に、サイトにタグをデプロイする際に拡張機能、ルール、データ要素およびライブラリを入力するコンテナです。多くのユーザーは、同じタグセットをデプロイする web サイト（または密接に関連するサイトのグループ）ごとにプロパティを作成しています。 プロパティについて詳しくは、Experience Platform データ収集ドキュメントの [ プロパティ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) を参照してください。
 
 プロパティのタグを作成するには：
 
