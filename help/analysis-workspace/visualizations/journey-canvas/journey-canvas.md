@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics![ のジャーニーキャンバスビジュアライゼーションについて説明します**。<br/>**Adobe Analyticsに同等のビジュアライゼーションはありません**。_
+_この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーション ](/help/assets/icons/CustomerJourneyAnalytics.svg) ついて説明します。<br/>**Adobe Analyticsに同等のビジュアライゼーションはありません**。_
 
 >[!ENDSHADEBOX]
 
@@ -170,11 +170,11 @@ _この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 
 ジャーニーキャンバスを使用して、Journey Optimizerで作成されたジャーニーを分析すると、次のような様々な利点があります。
 
-* 任意のイベントディメンション、指標、フィルターまたは日付範囲を使用して、Customer Journey Analyticsを作成します。
+* 任意のCustomer Journey Analytics ディメンション、指標、フィルターまたは日付範囲を使用して、イベントを作成します。
 
   Journey Optimizerでは、テクニカルユーザーは、ジャーニーに追加する前にイベントを作成する必要があります。
 
-* 作成したカスタムノードに基づいてオーディエンスを作成します（Customer Journey Analyticsオーディエンスビルダーを起動）。
+* 作成したカスタムノードに基づいてオーディエンスを作成します（Customer Journey Analytics audience builder を起動します）。
 
   Journey Optimizerでは、事前に定義されたアクティビティに対してのみオーディエンスを作成できます。
 
@@ -234,11 +234,11 @@ Journey Optimizerのジャーニーに加えられた変更は、ジャーニー
 
 ### Journey OptimizerとCustomer Journey Analyticsの用語の違い
 
-Journey Optimizerにある 1 つのことを意味する特定の用語は、Customer Journey Analyticsでは他のことを意味します。 ジャーニーキャンバスを使用する場合、Customer Journey Analytics用語が使用されます。
+Journey Optimizerにある 1 つのことを意味する特定の用語は、Customer Journey Analyticsの他の何かを意味します。 ジャーニーキャンバスを使用する場合、Customer Journey Analytics用語が使用されます。
 
 | 用語 | ジャーニーキャンバス | Journey Optimizer |
 |---------|----------|---------|
-| **イベント** | Customer Journey Analyticsで使用できる複数の標準指標の 1 つ。 この指標は、売上高、サブスクリプション、生成されたリードなどをカウントします。 | オンライン購入など、パーソナライズされたジャーニーをトリガーにするアクティビティのカテゴリ。 |
+| **イベント** | Customer Journey Analyticsで使用できる、いくつかの標準指標の 1 つです。 この指標は、売上高、サブスクリプション、生成されたリードなどをカウントします。 | オンライン購入など、パーソナライズされたジャーニーをトリガーにするアクティビティのカテゴリ。 |
 
 ### ジャーニーキャンバスでのJourney Optimizer ジャーニーの分析
 
@@ -247,3 +247,9 @@ Journey Optimizerにある 1 つのことを意味する特定の用語は、Cus
 ## ジャーニーキャンバスでの分析の作成
 
 Analysis Workspaceで使用可能な任意のディメンションまたは指標に基づく分析を、ジャーニーキャンバスで作成できます。 または、Journey Optimizerで作成されたジャーニーを分析できます。 詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
+
+
+>[!MORELIKETHIS]
+>
+> * [Adobe Customer Journey Analyticsでのジャーニーキャンバスビジュアライゼーションのガイド ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+

@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 93%
+source-wordcount: '991'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics の高レベルのアーキテクチャを以下に�
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analyticsの概要ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Customer ジャーニー分析：Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} を参照してください。
+Customer Journey Analytics の概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis：エクスペリエンスビジネスの分析](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -92,17 +92,20 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 ## ビデオ
 
-
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics内のデータの操作方法に関する入門ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Customer Journey Analytics内のデータの操作 ](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} を参照してください。
+Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analyticsのアーキテクチャと統合に関する概要ビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ アーキテクチャと統合 ](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} を参照してください。
+Customer Journey Analytics のアーキテクチャと統合に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [アーキテクチャと統合](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
+* [ アナリスト向けAdobe Customer Journey Analytics クラッシュコース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
 
+* [ マインドセットとAdobe Customer Journey Analyticsのワークフローの最適化：あらゆる規模の組織に対応するチームモデル ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+
+* [ 組織への対応の構築：Adobe Customer Journey Analyticsを拡張するための人物ファーストのガイド ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)

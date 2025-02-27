@@ -5,9 +5,9 @@ title: 目次
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '200'
 ht-degree: 4%
 
 ---
@@ -42,3 +42,8 @@ Analysis Workspaceでは、プロジェクトの目次を表示できます。�
    選択したビジュアライゼーションは自動的にスクロールされ、一時的にハイライト表示されます。
 
    ![ ハイライト表示された目次 ](assets/toc-highlighted.png)
+
+
+>[!MORELIKETHIS]
+>
+>* [Adobe Analyticsの新しい目次機能によるダッシュボードの操作の簡素化 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
