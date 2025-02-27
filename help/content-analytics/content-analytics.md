@@ -7,25 +7,21 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # コンテンツ分析の概要
 
-<!-- 
-This is a placeholder article for upcoming Content Analytics documentation. Currently used to set up contextual help entries for developer working on onboarding UI and workspace UI 
--->
-
 >[!WARNING]
 >
 >この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 コンテンツ分析は、マーケターが、コンテンツがビジネスが定義した主要業績評価指標にどのように影響するかを理解するのに役立ちます。 Content Analytics は、行動データに加えて、コンテンツの消費方法と、コンテンツが与える影響に関するデータを収集します。 例えば、特定のトーン、特定のカラーパレット、特定のテーマに対する顧客の反応は良いですか？ この情報を特別に設計されたレポートワークフローおよびテンプレートと組み合わせると、Customer Journey Analyticsでのより優れた分析を実行し、カスタマージャーニーデータに関するより深いインサイトを得ることができます。
 
@@ -63,6 +59,12 @@ Content Analytics では、次のような主要な用語を使用します。
 1. 再訪問されたデータは、機能 Assembler サービスと ID サービスで処理されます。
 1. これらのサービスの結果（コンポーネント、属性、ID）は、Experience Platformの関連する特定のコンテンツ分析データセットの更新に使用されます。
 1. コンテンツ分析データは、行動データやその他のルックアップデータセットと共に、Customer Journey Analytics設定（接続、データビュー、Workspace）で使用できます。 この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤となります。
+
+>[!NOTE]
+>
+>コンテンツ分析では AI/ML を活用します。 結果（エクスペリエンスやアセットの機能に対する結果）が不正確な場合があります。
+>
+
 
 >[!MORELIKETHIS]
 >

@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 9%
+source-wordcount: '2097'
+ht-degree: 8%
 
 ---
 
@@ -179,7 +179,7 @@ ht-degree: 9%
 
 ![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience-edit.png)
 
-* 「![ 編集 ](/help/assets/icons/Edit.svg) 編集」を選択して、選択した設定に関連付けられた、タグプロパティのAdobe Content Analytics 拡張機能のパラメーターを編集します。
+* ![ 編集 ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択して、選択した設定に関連付けられた、タグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)4}Adobe Content Analytics 拡張機能のパラメーターを編集します。[
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -260,9 +260,9 @@ ht-degree: 9%
 
 既存の設定では、タグプロパティは編集できません。 ただし、含めるか除外するページとアセットを編集することはできます。
 
-* コンテンツ分析用のデータを収集する際に含める、または除外するページを編集するには、「**[!UICONTROL エクスペリエンス]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。
+* コンテンツ分析用のデータを収集する際に含める、または除外するページを編集するには、「**[!UICONTROL エクスペリエンス]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 コンテンツ分析設定のタグプロパティに関連付けられている ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics 拡張機能にリダイレクトされます。 [正規表現を編集して、ページを含めたり除外したりできます。 必ず変更 [ 公開 ](manual.md#publish) します。
 
-* コンテンツ分析用のデータを収集する際に含める、または除外するアセットを編集するには、「**[!UICONTROL アセット]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。
+* コンテンツ分析用のデータを収集する際に含める、または除外するアセットを編集するには、「**[!UICONTROL アセット]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 コンテンツ分析設定のタグプロパティに関連付けられている ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics 拡張機能にリダイレクトされます。 [正規表現を編集して、アセットを含めたり除外したりできます。 変更を必ず [ 公開 ](manual.md#publish) します。
 
 ### 概要 {#summary}
 

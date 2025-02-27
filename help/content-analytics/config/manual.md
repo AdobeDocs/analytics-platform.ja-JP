@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 公開
 
-Content Analytics 設定をアクティブ化するには、関連するタグプロパティを公開する必要があります。
+Content Analytics 設定をアクティブ化するには、関連するタグプロパティを [ 公開 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} する必要があります。 Content Analytics タグプロパティを公開した場合にのみ、設定したドメイン、エクスペリエンス、アセットに関する Content Analytics データが収集されます
 
 
 ## 変更
@@ -37,4 +37,5 @@ Content Analytics 設定をアクティブ化するには、関連するタグ�
 >[!MORELIKETHIS]
 >
 >[ ガイド付き設定 ](guided.md)
+>[データ収集タグの公開 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) 概要
 >
