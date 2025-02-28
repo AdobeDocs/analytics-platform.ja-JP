@@ -4,10 +4,10 @@ description: Analysis Workspaceでコホートテーブルをコホート分析�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 30%
+source-wordcount: '705'
+ht-degree: 23%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="コホートテーブル"
->abstract="イベントの完了に基づいてユーザーをグループ化し、進行中のエンゲージメントとチャーンの推移を分析します。<br/><br/>**パラメーター&#x200B;**<br/>**インクルージョン条件**：最初の訪問者コホートの定義に使用するコンポーネント。<br/>**再来訪条件**：訪問者が再来訪したかどうかを判断するために使用するコンポーネント。"
+>abstract="イベントの完了に基づいてユーザーをグループ化し、進行中のエンゲージメントおよび時間の経過にともなうチャーンを分析します。 精度、コホート分析のタイプ、ローリング計算を使用するかどうかなどの追加設定を指定します。 詳細オプションを設定して、選択したディメンションに基づいて待ち時間テーブルまたはカスタムディメンションコホートを作成できます。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analytics_ のコホートテーブルについて説明します **。_**_<br/>_[ この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ コホートテーブル ![ を参照してください。_
+_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のコホートテーブルに関する説明です**。_<br/>_[ この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ コホートテーブル ![ を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ _この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJour
 * 価値を最大化するために、体験版またはオファーを終了するタイミングを認識します。
 * 価格やアップグレードパスなどの領域で、A/B テストの着想を得る。
 
-[!UICONTROL  コホートテーブル ] は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべてのCustomer Journey Analyticsユーザーが利用できます。
+[!UICONTROL  コホートテーブル ] は、[!UICONTROL Analysis Workspace] へのアクセス権を持つすべてのCustomer Journey Analytics ユーザーが利用できます。
 
 
 >[!BEGINSHADEBOX]

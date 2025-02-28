@@ -4,10 +4,10 @@ description: Analysis Workspaceのメディア同時視聴者数パネルを使�
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 46%
+source-wordcount: '1174'
+ht-degree: 40%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="メディア同時閲覧者数"
->abstract="パネルを作成して、特定のコンテンツまたは特定の期間の分平均オーディエンスを分析します。"
+>abstract="特定の期間の同時視聴者数を分析するパネルを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,23 +27,23 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="メディア同時閲覧者数"
->abstract="同時視聴者数の推移を分析、ピーク時の同時実行を表示、または分類して比較します。<br/><br>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネルの概要数値**：<br/>各行の日付または時刻の詳細と共に概要数値を表示するオプション。最大値は、ピーク時の同時実行の詳細を示します。最小値は、トラフの詳細を示します。<br/>**系列の分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。"
+>abstract="同時視聴者数の推移を分析し、ピーク同時実行性を表示します。また、オプションで、フィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analyticsのメディア同時閲覧者パネルについて説明します ![**_。<br/>_この記事の [AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、![ メディア同時視聴者数パネル** を参照してください。_
+_この記事は、![CustomerJourneyAnalytics_ _**Customer Journey Analyticsのメディア同時閲覧者パネルに関する説明 ](/help/assets/icons/CustomerJourneyAnalytics.svg) す**_。<br/>_この記事の [AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、![ メディア同時視聴者数パネル** を参照してください。_
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->メディア分平均オーディエンスパネルは、Customer Journey Analytics用のストリーミングメディアコレクションアドオンを購入したお客様のみが利用できます。
+>メディア分平均オーディエンスパネルを使用できるのは、Customer Journey Analytics用 Streaming Media Collection アドオンを購入したお客様のみです。
 >
->詳しくは、Adobeの営業担当またはAdobeアカウントチームにお問い合わせください。
+>詳しくは、Adobe営業担当またはAdobe アカウントチームにお問い合わせください。
 >
 
 **[!UICONTROL メディア同時視聴者数]** パネルを使用すると、同時実行性のピークに関する詳細や、分類機能と比較機能を使用して、時系列の同時視聴者数を分析できます。

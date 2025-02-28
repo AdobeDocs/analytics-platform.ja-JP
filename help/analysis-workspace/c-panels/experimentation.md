@@ -1,13 +1,13 @@
 ---
-description: Customer Journey Analytics実験パネルで A/B テストの結果を分析する方法を説明します。
+description: Customer Journey Analyticsの実験パネルで A/B テストの結果を分析する方法を説明します。
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 20%
+source-wordcount: '2141'
+ht-degree: 16%
 
 ---
 
@@ -27,25 +27,25 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="実験"
->abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断します。<br/><br/>**パラメーター&#x200B;**<br/>**実験**：分析対象となる実験。<br>**バリアントの制御**：選択した実験のバリアントを制御します。<br/>**成功指標**：実験を分析するための最大 5 つの標準（計算されていない）成功指標。<br/>**指標の標準化**：ユーザー、セッションまたはイベント。この指標（カウント手法とも呼ばれます）は、上昇率計算の分母になります。この指標は、信頼性計算が適用される前のデータの集計方法にも影響します。"
+>abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断します。 実験、比較対象のコントロールバリアント、成功指標および標準化指標を指定します。 オプションで、信頼性の上限と下限を設定します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事は、_ CustomerJourneyAnalytics![_**Customer Journey Analyticsの実験パネルに関するドキュメ ](/help/assets/icons/CustomerJourneyAnalytics.svg) トです**。_<br/>_での Adobe Analytics のアクティビティとエクスペリエンスを分析する方法については、[Adobe Target for Target パネル ![ を参照してください_ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics** の実験パネルに関するドキュメントです。_<br/>_での Adobe Analytics のアクティビティとエクスペリエンスを分析する方法については、[Adobe Target for Target パネル ![ を参照してください_ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
-**[!UICONTROL 実験]** パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobeソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
+**[!UICONTROL 実験]** パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンライン、オフライン、Target やJourney OptimizerなどのAdobe ソリューション、さらには BYO （bring-your-own）データなど、あらゆる実験プラットフォームから評価できます。
 
 詳しくは、[Adobe Customer Journey AnalyticsとAdobe Targetの統合 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) を参照してください。
 
 ## アクセス制御 {#access}
 
-実験パネルは、すべてのCustomer Journey Analyticsユーザーが使用できます。 管理者権限やその他の権限は必要ありません。 ただし、前提条件では、管理者のみが実行できるアクションが必要です。
+実験パネルは、すべてのCustomer Journey Analytics ユーザーが使用できます。 管理者権限やその他の権限は必要ありません。 ただし、前提条件では、管理者のみが実行できるアクションが必要です。
 
 ## 計算指標の関数
 
@@ -64,7 +64,7 @@ _この記事は、_ CustomerJourneyAnalytics![_**Customer Journey Analyticsの�
 
 ### データビューへのコンテキストラベルの追加
 
-Customer Journey Analyticsデータビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL  実験 ] パネルなどのCustomer Journey Analyticsサービスでこれらのラベルを使用できます。 実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
+Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL  実験 ] パネルなどのCustomer Journey Analytics サービスでこれらのラベルを使用できます。 実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
 
 * [!UICONTROL 実験的な実験]
 * [!UICONTROL 実験バリアント]
@@ -88,7 +88,7 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
    >[!IMPORTANT]
    >
-   >Customer Journey Analyticsデータビューで必要な設定が完了していない場合は、先に進む前に次のメッセージが表示されます。[!UICONTROL  データビューで実験ディメンションとバリアントディメンションを設定してください ]。
+   >Customer Journey Analytics データビューで必要な設定が完了していない場合は、先に進む前に次のメッセージが表示されます。[!UICONTROL  データビューで実験ディメンションとバリアントディメンションを設定してください ]。
    >
 
 ### パネル入力
@@ -101,7 +101,7 @@ Customer Journey Analyticsデータビューの設定では、管理者はディ
 
    | 設定 | 定義 |
    | --- | --- |
-   | **[!UICONTROL 日付範囲]** | 選択した実験のCustomer Journey Analyticsで最初に受信したイベントに基づいて、実験パネルの日付範囲が自動的に設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
+   | **[!UICONTROL 日付範囲]** | 選択した実験のCustomer Journey Analyticsで最初に受け取ったイベントに基づいて、実験パネルの日付範囲が自動的に設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
    | **[!UICONTROL 実験]** | どのエクスペリエンスを永続的に保持することが最適かを判断するために、エンドユーザーに公開されたエクスペリエンスに対する一連のバリエーションです。 実験は、2 つ以上のバリアントで構成され、そのうちの 1 つがコントロールバリアントと見なされます。 この設定には、データビューで **[!UICONTROL 実験]** ラベルが付けられたディメンションと、過去 3 か月分の実験データが事前に入力されています。 |
    | **[!UICONTROL コントロールバリアント]** | エンドユーザーのエクスペリエンスにおいて、より優れた代替策を特定するために比較する、複数の選択肢の 1 つです。1 つのバリアントをコントロールとして選択する必要があり、1 つのバリアントのみがコントロールバリアントと見なされます。 この設定には、データビューで **[!UICONTROL バリアント]** ラベルが付けられたディメンションが事前に入力されています。 この設定により、この実験に関連付けられているバリアントデータを取得します。 |
    | **[!UICONTROL 成功指標]** ➊ | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の *最もパフォーマンスの高いバリアント* として宣言されます。 最大 5 つの指標を追加できます。 |
@@ -160,7 +160,7 @@ A/B テストは、このような介入の効果を客観的に測定するた�
 
 さて、ランダム化によって達成されないディメンションについて考えてみましょう。例えば、人の米国の状態などです。 人は主にニューヨークとカリフォルニアの 2 つの州から来ています。 冬物衣料品ブランドの平均売上高は、地域の天候の違いにより、2 つの州で異なる可能性があります。 このような状況では、天候は冬の衣料品の販売の真の因果的要因であり、人の地理的状態が異なるという事実ではないかもしれません。
 
-Customer Journey Analyticsの実験パネルを使用すると、データを人物の州ごとの平均収益差異として分析できます。 このような状況では、出力には因果的な解釈がありません。 しかし、そのような分析はまだ興味があるかもしれません。 これは、人物の州ごとの平均売上高の違いの推定値（不確実性の測定と共に）を提供します。  この値は、*統計的仮説テスト* とも呼ばれます。 この分析の結果は興味深いものになるかもしれませんが、必ずしも実用的ではありません。 単に、ランダム化されておらず、ディメンションの可能な値の 1 つに人物をランダム化できないという理由です。
+Customer Journey Analyticsの実験パネルを使用すると、データを人物の状態別の平均収益差異として分析できます。 このような状況では、出力には因果的な解釈がありません。 しかし、そのような分析はまだ興味があるかもしれません。 これは、人物の州ごとの平均売上高の違いの推定値（不確実性の測定と共に）を提供します。  この値は、*統計的仮説テスト* とも呼ばれます。 この分析の結果は興味深いものになるかもしれませんが、必ずしも実用的ではありません。 単に、ランダム化されておらず、ディメンションの可能な値の 1 つに人物をランダム化できないという理由です。
 
 次の図は、これらの状況を対比したものです。
 
@@ -184,7 +184,7 @@ Customer Journey Analyticsの実験パネルを使用すると、データを人
 * 次のいずれかの基本指標。
    * ユーザー
 
-実験パネルと互換性のない計算指標は、計算指標を作成する際に [!UICONTROL **Customer Journey Analyticsの互換性**] フィールドに [!UICONTROL **製品のすべての場所（実験を除く）**] という値を持ちます。 計算指標の作成について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
+実験パネルと互換性のない計算指標では、計算指標の作成時に [!UICONTROL **製品の互換性**] フィールドに [!UICONTROL **Customer Journey Analyticsのすべての場所（実験を除く）**] という値が使用されます。 計算指標の作成について詳しくは、[ 指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を参照してください。
 
 ## 実験パネルでの計算指標の使用
 

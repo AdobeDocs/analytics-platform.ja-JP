@@ -4,10 +4,10 @@ title: 次または前の項目パネル
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 36%
+source-wordcount: '420'
+ht-degree: 19%
 
 ---
 
@@ -20,26 +20,29 @@ ht-degree: 36%
 >title="次または前の項目"
 >abstract="パネルを作成して、ユーザーが来訪前にいたディメンションまたはユーザーが次に移動するディメンションを理解します。"
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="次または前の項目"
->abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。<br/><br/>**ディメンション**：ディメンションを選択します。例：**ページ**。<br/>**ディメンション項目**：特定のディメンション項目を選択します。例：**ホームページ**。<br/>**方向**：「**次へ**」を選択すると、選択したディメンション項目の直後のディメンション項目が表示されます。「**前へ**」を選択すると、選択したディメンション項目に至るまでのディメンション項目が表示されます。<br/>**コンテナ**：「**セッション**」を選択して同じセッション内の次／前のディメンション項目を表示するか、「**ユーザー**」を選択して同じユーザーの次／前のディメンション項目を表示します。"
+>abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。 ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
+
+
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_この記事では、{CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ![4}Customer Journey Analyticsの次または前の項目パネルについて説明します_**_。_**<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) 次または前の項目パネル _を参照してください。
+_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ の次または前の項目パネルに関する説明です**_。<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) 次または前の項目パネル _を参照してください。
 
 >[!ENDSHADEBOX]
 
 **[!UICONTROL 次または前の項目]** パネルには、特定のディメンションの次または前のディメンション項目を識別する多数のテーブルおよびビジュアライゼーションが含まれています。 例えば、顧客がホームページを訪問した後に最も頻繁に訪問したページを調べる必要があるとします。
 
-## 使用
+## 使用 {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="コンテナ"
+>abstract="コンテナを選択して、問い合わせの範囲を決定します。"
 
 **[!UICONTROL 次または前の項目]** パネルを使用するには：
 

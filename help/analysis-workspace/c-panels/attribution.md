@@ -4,10 +4,10 @@ description: Analysis Workspace でのアトリビューションパネルの使
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 47%
+source-wordcount: '661'
+ht-degree: 38%
 
 ---
 
@@ -18,20 +18,20 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="アトリビューション"
->abstract="任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。"
+>abstract="成功指標、チャネル、ルックバックウィンドウを使用して、任意の数のアトリビューションモデルをすばやく比較および視覚化します。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="アトリビューションパネル"
->abstract="任意のディメンションとコンバージョン指標を使用して、アトリビューションモデルをすばやく比較および視覚化します。<br/><br/>**パラメーター&#x200B;**<br/>**チャネル**<br/>&#x200B;属性の対象となるディメンション。このディメンションには、マーケティングチャネル、キャンペーン、その他のディメンションを指定できます。<br/>**モデル**<br/>：モデルは、タッチポインへのクレジット割り当て方法を決定します。<br/>**ルックバックウィンドウ**<br/>：この設定により、各コンバージョンに適用されるデータアトリビューションの期間が決まります。"
+>abstract="成功指標に向けて、任意の数のアトリビューションモデルをすばやく比較および視覚化します。 チャネル（ディメンション）、含めるモデルおよびルックバックウィンドウを選択します。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のアトリビューションパネルに関するドキュメントです**_。この記事の <br/>_[ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ アトリビューションパネル ![ を参照してください。_
+_この記事は、![CustomerJourneyAnalytics_ _**Customer Journey Analyticsのアトリビューションパネルに関するドキュメ ](/help/assets/icons/CustomerJourneyAnalytics.svg) トです**_。この記事の <br/>_[ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ アトリビューションパネル ![ を参照してください。_
 
 >[!ENDSHADEBOX]
 

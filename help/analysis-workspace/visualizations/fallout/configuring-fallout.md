@@ -4,14 +4,15 @@ title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 36%
+source-wordcount: '734'
+ht-degree: 38%
 
 ---
 
-# フォールアウトビジュアライゼーションの設定
+# フォールアウトビジュアライゼーションの設定 {#configure-fallout-visualization}
+
 
 タッチポイントを指定して、複数のディメンションのフォールアウトシーケンスを作成できます。通常、タッチポイントはサイト上のページです。ただし、タッチポイントはページに限定されません。例えば、ユニットや一意のユーザー、再来訪などのイベントを追加できます。 また、カテゴリ、ブラウザーのタイプ、内部検索語句などのディメンションも追加できます。
 
@@ -21,7 +22,7 @@ ht-degree: 36%
 
 ディメンション、指標およびフィルターに対してパスを設定できます。 例えば、誰かが靴やシャツを 1 ページで見ていて、次のページではシャツや靴下を見ているとします。 靴の次の製品フローレポートは、シャツではなく、シャツおよびソックスです。
 
-## 用途
+## 使用
 
 1. ![ コンバージョンファネル ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL フォールアウト]** ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
 1. ページ（ホームなど）をページディメンションから「*タッチポイントを追加*」ドロップダウンメニューにドラッグします。
@@ -54,13 +55,18 @@ ht-degree: 36%
    | **[!UICONTROL 次のイベント]** | は、次のイベントのパスの次のページに到達するとカウントされます。 |
 
 
-## 設定
+## 設定 {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="フォールアウトコンテナ"
+>abstract="パスを分析するコンテナを選択します。 この選択により、エンゲージメントを理解し、選択したコンテナに対する解析を拘束できます。"
 
 ビジュアライゼーションの一部として、特定の設定を使用できます。
 
 | フォールアウトコンテナ | 説明 |
 |--- |--- |
-| **[!UICONTROL Session]** または **[!UICONTROL Person]** | [!UICONTROL  セッション ] と [!UICONTROL  人物 ] を切り替えて、人物パスを分析します。 デフォルトは [!UICONTROL  ユーザー ] です。 これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 |
+| **[!UICONTROL Session]** または **[!UICONTROL Person]** | [!UICONTROL  セッション ] と [!UICONTROL  人物 ] を切り替えて、人物パスを分析します。 デフォルトは「[!UICONTROL ユーザー]」です。これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 |
 
 
 ## コンテキストメニュー
@@ -80,8 +86,8 @@ ht-degree: 36%
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

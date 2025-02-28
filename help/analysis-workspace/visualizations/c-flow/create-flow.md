@@ -4,14 +4,20 @@ title: フロービジュアライゼーションの設定方法
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1446'
 ht-degree: 37%
 
 ---
 
-# フロービジュアライゼーションの設定
+# フロービジュアライゼーションの設定 {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_container"
+>title="フローコンテナ"
+>abstract="パスの表示（数値）に使用するコンテナを選択します。"
+
 
 フロービジュアライゼーションは、web サイトやアプリ上の特定のコンバージョンイベントに起因するジャーニーを理解するのに役立ちます。 または、特定のコンバージョンイベントに至る。 ビジュアライゼーションは、ディメンション（およびディメンション項目）または指標を通過するパスをトレースします。
 
@@ -19,7 +25,7 @@ ht-degree: 37%
 
 ![ 「次で始まる」、「次を含む」、および「次で終わる」フィールドを示すフロー設定画面 ](assets/new-flow.png)
 
-## 用途
+## 使用
 
 1. ![ グラフパス ](/help/assets/icons/GraphPathing.svg)**[!UICONTROL フロー]** ビジュアライゼーションを追加します。 [ パネルへのビジュアライゼーションの追加 ](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel) を参照してください。
 
@@ -39,7 +45,7 @@ ht-degree: 37%
    >
    >計算指標は「**[!UICONTROL 次で始まる]**」または「**[!UICONTROL 次で終わる]** フィールドでは使用できません。
 
-1. 指標を選択する場合は、次に示すように、選択したコンポーネントに続くパスまたは選択したコンポーネントから来るパスとして使用するために、[!UICONTROL **パスDimension**] を指定する必要もあります。 デフォルトは「[!UICONTROL **ページ**]」です。
+1. 指標を選択する場合は、次に示すように、選択したコンポーネントに続くパスまたは選択したコンポーネントからのパスとして使用するための [!UICONTROL **パスDimension**] を指定する必要もあります。 デフォルトは「[!UICONTROL **ページ**]」です。
 
    ![ フロー設定 ](assets/flow-configure.png)
 
@@ -73,7 +79,7 @@ ht-degree: 37%
 1. [ 設定 ](#configure) の説明に従って、フローのデータを分析します。
 
 
-## 設定する
+## 設定
 
 フロー設定の概要が、ビジュアライゼーションの上部に表示されます。 図のパスは比例します。アクティビティの多いパスは太く表示されます。
 
@@ -141,13 +147,13 @@ ht-degree: 37%
   次の例では、フローの各ステップの *製品メインカテゴリ* と *買い物かごに追加* の **最後** の発生のみが含まれます。
   ![ リント、スタート ](assets/limitonlast.png)
 * 使用されるシリーズは、コンテナに基づいて異なります。**[!UICONTROL ユーザー]** コンテナを使用する場合、一連のイベントがセッションになります。 **[!UICONTROL セッション]** コンテナを使用している場合、一連のイベントは、指定された日付範囲での指定されたユーザーに対するすべてのイベントです。
-* 「**[!UICONTROL 最初/最後の発生に制限]**」オプションは、「次で始まる ]**または「次で終わる**[!UICONTROL  フィールドで指標またはDimension項目を使用している場合に **[!UICONTROL 詳細設定で設定でき]** す。
+* 「**[!UICONTROL 最初/最後の発生に制限]** **[!UICONTROL 」オプションは、「次で始まる]** または **[!UICONTROL 次で終わる]** フィールドで指標またはDimension項目を使用している場合に、詳細設定で設定できます。
 
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[ビジュアライゼーション設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[ビジュアライゼーションコンテキストメニュー ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -4,10 +4,10 @@ description: Analysis Workspaceのメディア再生滞在時間パネルを使�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 55%
+source-wordcount: '1073'
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="メディア再生滞在時間"
->abstract="ビデオ消費の推移を分析し、様々な精度を選択して、分類および比較します。<br/><br/>**精度**：同時視聴者数を表示する期間を選択します。<br/>**パネル概要数値（オプション）**：各行の日付または時間の詳細と共に概要の数値を表示するオプション。最大値は、ピーク時の再生に費やした時間の詳細を示します。最小値は、トラフの詳細を示します。合計には、再生に費やした合計時間の詳細が表示されます。<br/>**系列の分類（オプション）**：セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。<br/>**時間形式**：ビジュアライゼーションの時間形式を時間または分で表示するオプション。"
+>abstract="ビデオ消費の推移を分析し、様々な精度を選択し、オプションで、フィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,8 +41,8 @@ _この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 
 >[!NOTE]
 >
->メディア分平均オーディエンスパネルは、Customer Journey Analytics用のストリーミングメディアコレクションアドオンを購入したお客様のみが利用できます。
->詳しくは、Adobeの営業担当またはAdobeアカウントチームにお問い合わせください。
+>メディア分平均オーディエンスパネルを使用できるのは、Customer Journey Analytics用 Streaming Media Collection アドオンを購入したお客様のみです。
+>詳しくは、Adobe営業担当またはAdobe アカウントチームにお問い合わせください。
 >
 
 **[!UICONTROL メディア再生滞在時間]** パネルを使用すると、同時実行のピークに関する詳細や、分類機能と比較機能を使用して、時間の経過と共に再生を分析できます。

@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="コンポーネント設定"
->abstract="名前、説明およびコンポーネントに関連するその他の設定を表示および設定します。<br/><br/>**パラメーター&#x200B;**<br/>**レポートでコンポーネントを非表示**：このボックスをオンにすると、レポートで管理者以外のユーザーに対してこのコンポーネントが非表示になります。管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択してアクセスできます。"
+>abstract="名前、説明およびコンポーネントに関連するその他の設定を表示および設定します。 このチェックボックスをオンにして、レポートで管理者以外のユーザーに対してこのコンポーネントを非表示にします。 管理者は、Workspace プロジェクトで **[!UICONTROL すべてのコンポーネントを表示]** を選択して、コンポーネントにアクセスできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ コンポーネントタイプの設定 ](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 46%
+source-wordcount: '326'
+ht-degree: 25%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="フロー"
->abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。<br/><br/>**パラメーター&#x200B;**<br/>**次で開始**：ディメンション、ディメンション項目または指標を追加して、選択したコンポーネントよりも後に発生する上位のタッチポイントを確認します。<br/>**次を含む**：ディメンションまたはディメンション項目を追加して、選択したコンポーネントの発生前後に発生する上位のタッチポイントを確認します。<br/>**次で終了**：ディメンション、ディメンション項目または指標を追加して、選択したコンポーネントよりも前に発生する上位のタッチポイントを確認します。<br/>**パスディメンション**：選択したコンポーネントに続くパスや選択したコンポーネントから来るパスとして使用するディメンションを追加します。"
+>abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。 開始元および終了元のコンポーネント（指標、ディメンション、または項目）を指定します。 オプションで、詳細設定を定義して、ビジュアライゼーションをさらに設定できます。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics![ のフロービジュアライゼーションについて説明します**。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) フロー _を参照してください。
+_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics![ のフロービジュアライゼーションについて説明します**。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) フロー _を参照してください。
 
 >[!ENDSHADEBOX]
 
