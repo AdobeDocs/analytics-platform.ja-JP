@@ -5,7 +5,7 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 96%
@@ -104,8 +104,8 @@ Customer Journey Analytics のアーキテクチャと統合に関する概要�
 
 >[!ENDSHADEBOX]
 
-* [ アナリスト向けAdobe Customer Journey Analytics クラッシュコース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
-
-* [ マインドセットとAdobe Customer Journey Analyticsのワークフローの最適化：あらゆる規模の組織に対応するチームモデル ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
-
-* [ 組織への対応の構築：Adobe Customer Journey Analyticsを拡張するための人物ファーストのガイド ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
+>[!MORELIKETHIS]
+>
+>* [ アナリスト向けAdobe Customer Journey Analytics クラッシュコース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [ マインドセットとAdobe Customer Journey Analyticsのワークフローの最適化：あらゆる規模の組織に対応するチームモデル ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [ 組織への対応の構築：Adobe Customer Journey Analyticsを拡張するための人物ファーストのガイド ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)

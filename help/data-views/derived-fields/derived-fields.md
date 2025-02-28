@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '8841'
+source-wordcount: '8844'
 ht-degree: 17%
 
 ---
@@ -205,7 +205,7 @@ ht-degree: 17%
 
 テンプレートを使用するには、テンプレートのルールの一部としてリストされている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[ 関数リファレンス ](#function-reference) を参照してください。
 
-![ 複数Dimensionの結合ルールビルダーのスクリーンショット ](assets/function-template-multi-dimension-combine.png)
+![ マルチDimension結合ルールビルダーのスクリーンショット ](assets/function-template-multi-dimension-combine.png)
 
 +++
 
@@ -643,7 +643,7 @@ ht-degree: 17%
 
 ## 詳細情報 {#casewhen-more-info}
 
-Customer Journey Analyticsでは、Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）に倣ってモデル化された、ネストされたコンテナ構造を使用します。 背景の情報について詳しくは、[ コンテナ ](../create-dataview.md#containers) および [ フィルターコンテナ ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的に柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約を課します。
+Customer Journey Analyticsは、Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja) （エクスペリエンスデータモデル）に倣ってモデル化された、ネストされたコンテナ構造を使用します。 背景の情報について詳しくは、[ コンテナ ](../create-dataview.md#containers) および [ フィルターコンテナ ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的に柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約を課します。
 
 Customer Journey Analyticsでは、次のデフォルトのコンテナモデルを使用します。
 
@@ -1948,7 +1948,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 
 - 派生フィールドのルールを定義する際には、（標準フィールドを除く）最大 10 個の異なるスキーマフィールドを使用できます。
    - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマまたはプロファイルスキーマフィールドのみを使用できます。
-- Customer Journey Analytics接続ごとに最大 100 個の派生フィールドを設定できます。
+- Customer Journey Analytics接続ごとに最大 100 個の派生フィールドを持つことができます。
 
 
 ### 関数の制限事項の概要
@@ -1990,12 +1990,13 @@ Case When 関数内の If または Else If 構文の演算子は、条件と **
 
 ## 詳細情報 {#trim-more-info}
 
-[`Trim`](#trim) と [`Lowercase`](#lowercase) は、[ データビュー ](../component-settings/overview.md) のコンポーネント設定で既に使用できる機能です。 派生フィールドを使用すると、これらの関数を組み合わせて、より複雑なデータ変換をCustomer Journey Analyticsで直接実行できます。 例えば、`Lowercase` を使用して、イベントフィールドで大文字と小文字の区別を削除し、[`Lookup`](#lookup) を使用して、小文字のルックアップキーのみを持つルックアップデータセットに対して新しい小文字フィールドを照合します。 または、`Trim` を使用して、新しいフィールドに `Lookup` を設定する前に文字を削除できます。
+[`Trim`](#trim) と [`Lowercase`](#lowercase) は、[ データビュー ](../component-settings/overview.md) のコンポーネント設定で既に使用できる機能です。 派生フィールドを使用すると、これらの関数を組み合わせて、Customer Journey Analyticsで直接、より複雑なデータ変換を実行できます。 例えば、`Lowercase` を使用して、イベントフィールドで大文字と小文字の区別を削除し、[`Lookup`](#lookup) を使用して、小文字のルックアップキーのみを持つルックアップデータセットに対して新しい小文字フィールドを照合します。 または、`Trim` を使用して、新しいフィールドに `Lookup` を設定する前に文字を削除できます。
 
 派生フィールドでの参照およびプロファイルフィールドのサポートにより、イベントの参照とプロファイル属性に基づいてデータを変換できます。 これは、ルックアップまたはプロファイルデータセットにアカウントレベルのデータが含まれている B2B シナリオで特に役立ちます。 また、このサポートは、ルックアップデータ（キャンペーン情報やオファータイプなど）やプロファイルデータ（メンバー層やアカウントタイプなど）の共通フィールドでデータを操作する場合に役立ちます。
 
-派生フィールドの背景情報については、を参照してください。
+>[!MORELIKETHIS]
+>
+>- [ ブログ：データを最大限に活用：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ ブログ：Customer Journey Analyticsの派生フィールドのユースケース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ ブログ：Adobe Customer Journey Analytics派生フィールドの機能強化 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [ データを最大限に活用：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
-
-- [ 派生フィールドのCustomer Journey Analyticsのユースケース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)

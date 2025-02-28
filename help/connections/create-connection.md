@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
 workflow-type: tm+mt
-source-wordcount: '4261'
+source-wordcount: '4276'
 ht-degree: 99%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 接続の作成と編集 ](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [接続の作成と編集](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -182,7 +182,6 @@ ht-degree: 99%
    | **[!UICONTROL データをバックフィル]** | データセット内のデータのバックフィルをリクエストできます。 例えば、過去 7 日間のデータのバックフィルをリクエストできます。 データセットを正しく設定し、接続をテストします。 問題がないようであれば、残りのすべてのデータを簡単にバックフィルできます。<p>また、データセット別に新しいデータの読み込みを有効にすることもできます。 |
    | **[!UICONTROL バックフィルのステータス]** | このステータスは、バックフィルデータが処理中かどうかを示します。 |
 
-   {style="table-layout:auto"}
 
 ## データセットの追加と設定 {#add-dataset}
 
@@ -501,7 +500,9 @@ ht-degree: 99%
 | **[!UICONTROL プロファイル]** | [!UICONTROL イベント]データ内のユーザーまたは顧客に適用されるデータ。 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | 「XDM 個別プロファイル」クラスに基づいた組み込みスキーマまたはカスタムイベント。 | 含めるユーザー ID を選択できます。 [!DNL Experience Platform] で定義された各データセット（概要データセットを除く）には、1 つ以上のユーザー ID セットが定義されています。 例えば、cookie ID、ステッチ ID、ユーザー ID、トラッキングコードなどがあります。<br>![ユーザー ID ](assets/person-id.png)**メモ**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。 データセットを結合するには、同じユーザー ID を使用する必要があります。 |
 | **概要** | 個々のユーザー ID に関連付けられていない時系列データ。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 詳しくは、[概要データ](/help/data-views/summary-data.md)を参照してください。 | Experience Platform のイベントベースの概要指標スキーマからデフォルトのタイムスタンプフィールドへと自動的に設定されます。 時間単位または日単位の精度のみがサポートされます。 | 「XDM 概要指標」クラスに基づいた組み込みスキーマまたはカスタムスキーマ。 | 該当なし |
 
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>ブログ：[Adobe Customer Journey Analyticsでイベント、ルックアップ、プロファイルのデータセットを活用する方法 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## ルックアップキーおよびルックアップ値としての数値フィールドの使用 {#numeric}
 

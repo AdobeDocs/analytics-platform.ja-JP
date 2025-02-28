@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1146'
 ht-degree: 7%
 
 ---
 
 # 概要データ
 
-概要データは、個々のユーザー ID に関連付けられていない時系列データです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
+概要データは、個々のユーザー ID に関連付けられていない時系列データです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
 
 この概要データを使用して、高レベルの業績評価指標を提示したり、分析を実行したりできます。 概要データの例としては、広告インプレッション数、電子メールの開封数、広告費用、販売した商品のコスト、S&amp;P インデックスなどがあります。 概要データを使用して、1 時間ごとまたは 1 日ごとにターゲットや目標をアップロードすることもできます。
 
@@ -55,7 +55,7 @@ ht-degree: 7%
 
 ### 組み合わせデータ
 
-[ 結合イベントデータセット ](/help/connections/combined-dataset.md) で説明したように、接続を定義する場合、Customer Journey Analyticsは全体的な結合イベントデータセットを作成します。 概要データセットから生じるディメンションに対してデータビューを設定する場合、Workspaceでのレポートの準備として、ディメンションをグループ化および非表示にするオプションが用意されています。 特に概要データの場合、概要データは、[ 概要データグループコンポーネント ](component-settings/summary-data-group.md) 設定に基づいて、イベントデータと組み合わされます。
+[ 結合イベントデータセット ](/help/connections/combined-dataset.md) で説明したように、接続を定義する際に、Customer Journey Analyticsは全体的な結合イベントデータセットを作成します。 概要データセットから生じるディメンションに対してデータビューを設定する場合、Workspaceでのレポートの準備として、ディメンションをグループ化および非表示にするオプションが用意されています。 特に概要データの場合、概要データは、[ 概要データグループコンポーネント ](component-settings/summary-data-group.md) 設定に基づいて、イベントデータと組み合わされます。
 
 | トラッキングコード | キャンペーンコード | 印象 | コスト | クリックスルー | 売上高 |
 |---|---|--:|--:|--:|--:|
@@ -104,7 +104,7 @@ Customer Journey Analyticsで概要データを含むデータセットを設定
 概要データのタイムゾーンは、Experience Platformの概要スキーマレベルで定義されます。 タイムゾーンは、1 時間ごとの詳細データにのみ適用されます。
 
 - 毎日の精度の場合、タイムスタンプにタイムゾーンオフセットが含まれていない限り、Experience Platformは UTC を想定します。 毎日のサマリーデータを含むサマリーデータセットを追加する場合、Customer Journey Analyticsはスキーマに設定されたタイムゾーン定義を無視し、データセットのデータからタイムスタンプに関連付けられた日を考慮します。
-- 時間単位の精度の場合、Customer Journey Analyticsは、タイムスタンプを解釈する際に、Experience Platformの概要データスキーマで設定されたタイムゾーンに従います。 次の表に、この解釈の例をいくつか示します。
+- 1 時間ごとの精度については、Customer Journey Analyticsはタイムスタンプを解釈する際に、Experience Platformの概要データスキーマで設定されたタイムゾーンに従います。 次の表に、この解釈の例をいくつか示します。
 
   | タイムスタンプ <br/> ソースデータ | Timezone<br/>schema | Timestamp<br/>Experience<br/>Platform | タイムゾーン <br/> データ <br/> ビュー | Timestamp<br/>Customer<br/>ジャーニー<br> 分析 |
   |---|---|---|:---|---|
@@ -142,8 +142,8 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | 変数 | 値 |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | これらの変数の値の指定方法について詳しくは、[ 認証およびアクセスExperience PlatformAPI](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) を参照してください。 |
-| `$SCHEMA_ID` | スキーマの ID は、Experience PlatformUI で確認できます。 スキーマのリストから概要スキーマを選択し、右側のパネルで **[!UICONTROL API 使用状況]**/**[!UICONTROL スキーマ ID]** を見つけます。 その ID を値として使用します。 |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | これらの変数の値の指定方法について詳しくは、[Experience Platform API の認証とアクセス ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) を参照してください。 |
+| `$SCHEMA_ID` | スキーマの ID は、Experience Platform UI で確認できます。 スキーマのリストから概要スキーマを選択し、右側のパネルで **[!UICONTROL API 使用状況]**/**[!UICONTROL スキーマ ID]** を見つけます。 その ID を値として使用します。 |
 | `$GRANULARITY` | 値として `hour` または `day` を指定します。 |
 | `$TIMEZONE` | [tz データベースのタイムゾーンのリスト ](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) の TZ 識別子列から適切なタイムゾーン識別子の値を指定します。 例：`America/Los_Angeles`。 |
 
@@ -153,4 +153,6 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 >[!MORELIKETHIS]
 >
->概要データの使用方法とレポート方法に関する詳細なユースケースの例については、[ 概要データの使用 ](/help/use-cases/data-views/summary-data.md) の記事を参照してください。
+>- 概要データの使用方法とレポート方法に関する詳細なユースケースの例については、[ 概要データの使用 ](/help/use-cases/data-views/summary-data.md) の記事を参照してください。
+>- ブログ：[ 概要データがAdobe Customer Journey Analytics データセットを強化する方法 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+
