@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,19 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 >
 >各 ID には、10,000 項目以下の制限があります。 つまり、特定のユーザー id に対して、10,000 個のアカウント、10,000 個のオポチュニティ、10,000 個のマーケティングリスト、10,000 個のキャンペーンのみを持つことができます。
 
+>[!PREREQUISITES]
+>
+>取り込みが正しく機能するには、B2B ルックアップデータセットに次のフィールドのデータが入力されていることを検証する必要があります（B2B ルックアップスキーマで定義されている）。
+>
+>| スキーマに準拠するデータを含むデータセット | データが入力されたフィールド |
+>|---|---|
+>| XDM Business Account Person Relation | `accountPersonID` |
+>| XDM ビジネスオポチュニティ担当者 | `opportunityPersonID` |
+>| XDM Business Marketing List | `marketingListMemberID` |
+>| XDM Business Campaign Members | `campaign.sourceKey` |
+>
 
-このようなデータセットの変換を有効にするには：
+B2B ルックアップデータセットの変換を有効にするには：
 
 ![ 変換データセットを有効にする ](/help/connections/assets/transform.gif)
 
