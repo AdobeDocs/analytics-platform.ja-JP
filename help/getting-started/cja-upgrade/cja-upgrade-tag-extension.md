@@ -10,7 +10,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 27%
+ht-degree: 40%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
->title="タグプロパティに Platform Web SDK拡張機能を追加します"
->abstract="タグプロパティにAdobe Experience Platform Web SDK拡張機能を追加します。 タグプロパティへの Web SDK拡張機能の追加は効率化されており、完了までわずか数分で済みます。"
+>title="タグプロパティへの Platform Web SDK 拡張機能の追加"
+>abstract="タグプロパティに Adobe Experience Platform Web SDK 拡張機能を追加します。タグプロパティへの Web SDK 拡張機能の追加は効率化されており、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 9%
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement"
 >title="AppMeasurement データ収集の無効化"
->abstract="Web SDKのデータがすべて機能するので、開発者チームと協力して、web サイトまたはプロパティからAppMeasurement.js を削除します。<br><br>Web サイトからAppMeasurementを削除する作業は数分で完了します。ただし、エンジニアリングチームは時間がかかります。 ただし、Analytics ユーザーがAdobe AnalyticsではなくCustomer Journey Analyticsを使用していることを確認してください。まだ行っていない場合は、全員を移行するためのこの通知プロセスに大幅に時間がかかる可能性があります。"
+>abstract="Web SDK データが完全に機能したら、開発者チームと協力して、web サイトまたはプロパティから AppMeasurement.js を削除します。<br><br>AppMeasurement を web サイトから削除する作業は数分しかかかりませんが、完了するにはエンジニアリングチームの時間が必要です。ただし、Analytics ユーザーが Adobe Analytics ではなく Customer Journey Analytics を使用していることを確認してください。まだこの操作を行っていない場合、全員を移行するこの通知プロセスには大幅に時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

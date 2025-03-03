@@ -8,7 +8,7 @@ role: User
 source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
 source-wordcount: '3632'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="デフォルトのテーブル指標"
->abstract="フリーフォームテーブルに使用するデフォルト指標を選択します。 選択したデータビューに選択したデフォルトの指標が含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
+>abstract="フリーフォームテーブルに使用するデフォルトの指標を選択します。選択したデータビューに選択したデフォルトの指標が含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
 
 
 <!-- markdownlint-enable MD034 -->

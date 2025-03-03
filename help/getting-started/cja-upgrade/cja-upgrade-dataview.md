@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics でデータビューを作成
+title: Customer Journey Analytics でのデータビューの作成
 description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 29%
+ht-degree: 44%
 
 ---
 
-# Customer Journey Analytics でデータビューを作成 {#upgrade-create-dataview}
+# Customer Journey Analytics でのデータビューの作成 {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="Customer Journey Analytics でデータビューを作成"
->abstract="データビューはCustomer Journey Analyticsに特有のコンテナで、接続からデータを解釈する方法を決定できます。<br><br> データビューの初期作成には数分かかりますが、各ディメンションと指標を目的のコンポーネント設定で設定するには数日かかる場合があります。 これらの設定の調整は遡及的に適用されるので、組織で時間の経過と共に調整できます。"
+>title="Customer Journey Analytics でのデータビューの作成"
+>abstract="データ表示は、Customer Journey Analytics に固有のコンテナで、接続からデータを解釈する方法を決定できます。<br><br>データビューの初期作成には数分かかりますが、各ディメンションと指標を目的のコンポーネント設定で設定するには数日かかる場合があります。 これらの設定の調整は遡及的に適用されるので、組織は時間の経過と共に設定を調整できます。"
 
 <!-- markdownlint-enable MD034 -->
 

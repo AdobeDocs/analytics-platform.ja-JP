@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsへのアップグレード時のデータセット取り込みの監視
+title: Customer Journey Analytics にアップグレードする際のデータセットの取り込みの監視
 description: Customer Journey Analyticsへのアップグレード時にデータセットの取り込みを監視する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 0%
+ht-degree: 40%
 
 ---
 
-# Customer Journey Analyticsへのアップグレード時のデータセット取り込みの監視 {#monitor-ingestion}
+# Customer Journey Analytics にアップグレードする際のデータセットの取り込みの監視 {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="データセット内のデータの検証"
->abstract="Web SDKの実装が完了したので、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。 主に取り込まれたバッチが表示された場合、この手順は完了です。 主に失敗したバッチが表示される場合やバッチが表示されない場合は、web SDKの実装を調べて、Adobeに正しくデータが送信されていることを確認します。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
+>abstract="Web SDK 実装の設定が完了したら、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。主に取り込まれたバッチが表示されている場合、この手順は完了です。主に失敗したバッチが表示されるか、バッチがまったく表示されない場合は、Web SDK の実装を確認して、アドビにデータが正しく送信されていることを確認してください。<br><br>すべてが正しく完璧に行われた場合、この手順は 1 日未満に完了できます。データ収集の問題が複数ある場合、トラブルシューティングにかなり長い時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

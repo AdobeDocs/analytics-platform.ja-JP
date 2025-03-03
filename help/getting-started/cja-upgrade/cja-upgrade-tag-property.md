@@ -10,7 +10,7 @@ exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 28%
+ht-degree: 43%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-property"
->title="Adobe Experience Platform データ収集にタグプロパティを作成"
->abstract="タグの使用は、データ収集の一般的な標準です。 Adobe Experience Platform インターフェイスでタグを作成して、いつでもデータ収集変数を更新できるようにします。<br><br> タグプロパティの作成は、数回のクリックで完了できます（数分で完了します）。"
+>title="Adobe Experience Platform データ収集でのタグプロパティの作成"
+>abstract="タグの使用は、データ収集の一般的な標準です。Adobe Experience Platform インターフェイスでタグを作成し、いつでもデータ収集変数を更新できるようにします。<br><br>タグプロパティの作成は数回のクリックで完了し、わずか数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

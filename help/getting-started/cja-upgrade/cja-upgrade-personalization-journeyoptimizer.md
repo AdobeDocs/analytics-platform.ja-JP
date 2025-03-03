@@ -1,5 +1,5 @@
 ---
-title: Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用
+title: Adobe Journey Optimizer で使用するパーソナライゼーションオブジェクトの使用
 description: Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -9,18 +9,18 @@ hidefromtoc: true
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# Adobe Journey Optimizerで使用するパーソナライゼーションオブジェクトの使用 {#upgrade-personalization}
+# Adobe Journey Optimizer で使用するパーソナライゼーションオブジェクトの使用 {#upgrade-personalization}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
->title="Adobe Journey Optimizerのパーソナライゼーションオブジェクトの使用"
->abstract="Adobe Journey Optimizerで使用するには、実装でパーソナライゼーションオブジェクトを使用します。"
+>title="Adobe Journey Optimizer のパーソナライゼーションオブジェクトの使用"
+>abstract="Adobe Journey Optimizer で使用するには、実装でパーソナライゼーションオブジェクトを使用します。"
 
 <!-- markdownlint-enable MD034 -->
 

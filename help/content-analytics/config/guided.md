@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 8%
+ht-degree: 17%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="詳細"
->abstract="接続の名前を指定します。**[!UICONTROL データビュー]**、**[!UICONTROL エクスペリエンスの取得と定義]**、および **[!UICONTROL データ収集]** の各セクションでは、コンテンツ分析を正しく設定できるようにするための詳細情報を指定します。"
+>abstract="接続の名前を指定します。**[!UICONTROL データビュー]**、**[!UICONTROL エクスペリエンスのキャプチャと定義]**、**[!UICONTROL データ収集]**&#x200B;の各セクションでは、コンテンツ分析が正しく設定されるように詳細を指定します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -92,17 +92,17 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="データビュー"
->abstract="コンテンツ分析を設定するには、既存のデータビューを選択する必要があります。 そのため、コンテンツ分析データを他のデータと結合できます。"
+>abstract="コンテンツ分析の設定には、既存のデータビューを選択する必要があります。 そのため、コンテンツ分析データを他のデータと結合できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。"
+>abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存のデータビューを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="データビュー"
->abstract="コンテンツ分析データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。<br/>"
+>abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存のデータビューを選択します。<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -151,7 +151,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能の設定を編集できます。"
+>abstract="選択した設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能の設定を編集できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -189,7 +189,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
->abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。また、正規表現を使用して、含めるページや除外するアセットを定義します。"
+>abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
@@ -219,12 +219,12 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="データ収集"
->abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能のページの設定を編集できます。"
+>abstract="選択した設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のページの設定を編集できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="データ収集"
->abstract="選択した設定に関連付けられている、タグプロパティのAdobe Content Analytics 拡張機能のアセットの設定を編集できます。"
+>abstract="選択した設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のアセットの設定を編集できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -281,7 +281,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="実装の確認"
->abstract="**[!UICONTROL 実装]** を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。 いくつかの設定は、デフォルトでコンテンツ分析に一般的に役立つ内容に基づいて選択されますが、ユーザー（データ管理者）は、各アーティファクトの設定を確認して、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/> この設定に関連付けられているタグライブラリを手動で公開するまで、データは収集されないことに注意してください。<br/><br/> 画像とテキストの属性を取得するために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けてはいけません。"
+>abstract="**[!UICONTROL 実装]** を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。 いくつかの設定は、デフォルトでコンテンツ分析に一般的に役立つ内容に基づいて選択されますが、ユーザー（データ管理者）は、各アーティファクトの設定を確認して、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/> 画像とテキストの属性を取得するために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けてはいけません。"
 
 <!-- markdownlint-enable MD034 -->
 

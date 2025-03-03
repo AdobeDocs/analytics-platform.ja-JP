@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsに特有の機能について
+title: Customer Journey Analytics に固有の機能について
 description: Customer Journey Analytics固有の機能について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 19%
+ht-degree: 35%
 
 ---
 
-# Customer Journey Analyticsに特有の機能について {#feature-support-upgrade}
+# Customer Journey Analytics に固有の機能について {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
->title="様々なソースのデータを結合"
->abstract="（推奨）他のチャネルからの分析データを組み合わせる機能は、Customer Journey Analyticsの主なユースケースです。"
+>title="様々なソースのデータの結合"
+>abstract="（推奨）他のチャネルからの分析データを組み合わせる機能は、Customer Journey Analytics の主なユースケースです。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 19%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
->title="複数のデータセットからのヒットをステッチ"
->abstract="データセットのいずれかがプライマリ識別情報（Experience Cloud ID など）を共有しない場合でも、ログインユーザー名やメールアドレスなど、別のディメンションを使用して、そのデータを結び付けることができます。"
+>title="複数のデータセットからのヒットのステッチ"
+>abstract="データセットのいずれかがプライマリ識別子（Experience Cloud ID など）を共有していない場合でも、ログインユーザー名やメールアドレスなどの別のディメンションを使用してそのデータをステッチできます。"
 
 <!-- markdownlint-enable MD034 -->
 

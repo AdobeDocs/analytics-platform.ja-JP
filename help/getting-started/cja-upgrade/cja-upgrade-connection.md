@@ -10,18 +10,18 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '1642'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
-# Customer Journey Analyticsで使用する接続の作成と設定 {#upgrade-create-connection}
+# Customer Journey Analytics で使用する接続の作成および設定 {#upgrade-create-connection}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Customer Journey Analytics で接続を作成する"
->abstract="接続を使用すると、Adobe Experience Platformのデータを、Customer Journey Analytics レポート用に最適化された形式に変換できます。 Customer Journey Analyticsでは、簡単に接続を作成できます。作成にかかる時間は数分で済みます。"
+>abstract="接続により、Adobe Experience Platform のデータを Customer Journey Analytics レポートに最適化された形式に変換できます。Customer Journey Analytics での接続の作成は簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

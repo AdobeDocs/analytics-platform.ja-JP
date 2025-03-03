@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsで使用するスキーマの構築
+title: Customer Journey Analytics で使用するスキーマの設計
 description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 1%
+ht-degree: 28%
 
 ---
 
-# Customer Journey Analyticsで使用するスキーマの構築 {#upgrade-schema-architect}
+# Customer Journey Analytics で使用するスキーマの設計 {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
->title="スキーマを設計"
->abstract="組織内でデータ収集の要件について話し合い、Adobe Experience Platformで使用するスキーマを作成する方法を決定します。 この手順は、組織に合わせてカスタマイズされたスキーマを推奨されるプロセスを使用する場合に表示されます。 組織内のすべてのチームが連携するスキーマにより、データの取り込みが大幅に容易になるので、この手順を正しく実行することが極めて重要です。<br><br> 組織内のすべての関係者を統合スキーマ上で足並みをそろえるための推定時間は 1～2 か月です。 この時間枠は、調整に必要なチームの数、および調整するディメンションと指標の数に大きく依存します。"
+>title="スキーマの設計"
+>abstract="組織内でデータ収集の要件について話し合い、Adobe Experience Platform で使用するスキーマの作成方法を決定します。この手順は、組織に合わせて調整されたスキーマを使用する推奨プロセスを使用するために表示されます。組織内のすべてのチームが調整するスキーマにより、データ取り込みが大幅に容易になるので、この手順を正しく実行することは極めて重要です。<br><br>組織内のすべての関係者を集めて統一スキーマに合わせて調整するまでにかかる推定時間は 1 ～ 2 か月です。この時間枠は、調整が必要なチームの数と、調整するディメンションと指標の数に大きく依存します。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsのスキーマを選択
+title: Customer Journey Analytics のスキーマの選択
 description: Customer Journey Analyticsのスキーマを選択する際に使用できるオプションと、それぞれの長所と短所について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 40%
+ht-degree: 65%
 
 ---
 
-# Customer Journey Analyticsのスキーマを選択 {#choose-schema}
+# Customer Journey Analytics のスキーマの選択 {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
 >title="カスタムスキーマの使用"
->abstract="（推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡でき、不要な散らかったフィールドに関連するオーバーヘッドを回避できます。 このオプションには、Web SDKによって追加されたフィールドグループと、組織にカスタムのフィールドグループが含まれます。"
+>abstract="（推奨）スキーマをカスタマイズすると、組織は必要なものだけを追跡でき、乱雑で不要なフィールドに関連するオーバーヘッドを回避できます。このオプションには、Web SDK によって追加されたフィールドグループと、組織にカスタマイズされたフィールドグループが含まれます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
->title="デフォルトのスキーマを使用"
->abstract="（非推奨）Adobe Analytics スキーマには 1,000 個を超えるフィールドが含まれているので、スキーマが散乱し、複雑になる可能性があります。 貴社は、prop と eVar の概念（Customer Journey Analyticsでは使用されていない従来の概念）に引き続き従う必要があります。 他のAdobe Experience Platform サービスとの統合はより困難です。"
+>title="デフォルトのスキーマの使用"
+>abstract="（非推奨）Adobe Analytics スキーマには 1,000 を超えるフィールドが含まれているので、スキーマが乱雑で複雑になる場合があります。 組織は、Customer Journey Analytics では使用されていない従来の概念である props と eVars の概念に引き続き従う必要があります。他の Adobe Experience Platform サービスとの統合はより困難です。"
 
 <!-- markdownlint-enable MD034 -->
 

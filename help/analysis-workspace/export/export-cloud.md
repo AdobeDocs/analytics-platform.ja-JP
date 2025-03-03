@@ -8,7 +8,7 @@ role: User
 source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
 source-wordcount: '2281'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
->title="Data Warehouseと同様に、完全なテーブルを書き出す"
->abstract="完全なテーブルの書き出しは、Analysis Workspaceにデータが表示されたらすぐに使用できます。 必要に応じて、完全なテーブルの書き出しを作成またはスケジュールできます。<br><br> 書き出しに含めるデータが既にわかっている場合、完全なテーブルの書き出しを作成するのに数分しかかかりません。"
+>title="Data Warehouse と同様の完全なテーブルの書き出しの作成"
+>abstract="Analysis Workspace でデータが表示されるとすぐに、完全なテーブルの書き出しが使用できます。 必要に応じて、完全なテーブルの書き出しを作成またはスケジュールできます。<br><br>書き出しに含めるデータが既にわかっている場合、完全なテーブルの書き出しの作成は数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

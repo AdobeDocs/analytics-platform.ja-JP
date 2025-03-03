@@ -1,5 +1,5 @@
 ---
-title: Analytics ソースコネクタを、Customer Journey Analyticsへのアップグレードにのみ使用します
+title: Customer Journey Analytics へのアップグレードに対する Analytics ソースコネクタのみの使用
 description: Analytics ソースコネクタを作成しフィールドをマッピングする方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,7 +10,7 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
->title="Analytics ソースコネクタのみを使用する"
+>title="Analytics ソースコネクタのみの使用"
 >abstract="（非推奨）Customer Journey Analytics ソースコネクタを、Analytics の唯一の実装パスとして使用できます。 <br><br> このオプションを使用すると、データをCustomer Journey Analyticsにすばやく送信できるので、実装時間を節約できます。 ただし、待ち時間の増加や今後のAdobe Analyticsからの移行の困難さなど、様々な欠点があります。"
 
 <!-- markdownlint-enable MD034 -->

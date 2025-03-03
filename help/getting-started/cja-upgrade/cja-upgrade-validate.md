@@ -10,18 +10,18 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 0%
+ht-degree: 38%
 
 ---
 
-# データがCustomer Journey Analyticsに送られていることを検証します {#validate-data}
+# Customer Journey Analytics へのデータのフローの検証 {#validate-data}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="データのフローの検証"
->abstract="接続の詳細を使用して、データがCustomer Journey Analyticsに送信されているかどうかを検証します。<br><br> すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。 データ収集に関する複数の問題がある場合、トラブルシューティングに時間がかかる可能性があります。"
+>abstract="接続の詳細を使用して、Customer Journey Analytics へのデータのフローが発生しているかどうかを検証します。<br><br>すべてが正しく完璧に行われた場合、この手順は 1 日未満に完了できます。データ収集の問題が複数ある場合、トラブルシューティングにかなり長い時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

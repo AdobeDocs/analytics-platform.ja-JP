@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics用マーケティングチャネル派生フィールドの作成
+title: Customer Journey Analytics 用マーケティングチャネル派生フィールドの作成
 description: Customer Journey Analytics用のマーケティングチャネル派生フィールドの作成方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 5%
+ht-degree: 24%
 
 ---
 
-# Customer Journey Analytics用マーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
+# Customer Journey Analytics 用マーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
 >title="マーケティングチャネル派生フィールドの作成"
->abstract="派生フィールドは、データビュー内で作成されます。<br><br> デフォルトのマーケティングチャネル設定の使用は数分で済みます。高度にカスタマイズされたマーケティングチャネル設定の作成には数時間かかる場合があります。"
+>abstract="派生フィールドは、データビュー内で作成されます。<br><br>デフォルトのマーケティングチャネル設定を使用する場合は数分しかかかりませんが、高度にカスタマイズされたマーケティングチャネル設定を作成するには数時間かかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

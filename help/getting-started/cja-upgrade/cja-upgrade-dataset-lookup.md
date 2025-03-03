@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsでデータを分類するためのルックアップデータセットを作成する
+title: Customer Journey Analytics でデータを分類するルックアップデータセットの作成
 description: Customer Journey Analyticsでルックアップデータセットを作成してデータを分類する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
-# Customer Journey Analyticsでデータを分類するためのルックアップデータセットを作成する {#upgrade-lookup-dataset}
+# Customer Journey Analytics でデータを分類するルックアップデータセットの作成 {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
->title="分類データを含む各ディメンションのルックアップデータセットを作成"
->abstract="Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。"
+>title="分類データを含む各ディメンションのルックアップデータセットの作成"
+>abstract="Adobe Analytics の分類データと同様に、ルックアップデータセットは Customer Journey Analytics でデータを分類する方法です。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Adobe Analyticsのデータの分類と同様に、ルックアップデータセットは、Customer Journey Analyticsのデータを分類するための手段です。
+Adobe Analytics の分類データと同様に、ルックアップデータセットは Customer Journey Analytics でデータを分類する方法です。
 
 Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[ データセットへの標準検索の追加 ](/help/connections/standard-lookups.md) を参照してください。
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analyticsへのアップグレード後、Adobe Analyticsが必要となる期間の評価
+title: Customer Journey Analytics へのアップグレード後、Adobe Analytics が必要となる期間の評価
 description: Customer Journey Analyticsへのアップグレード後、Adobe Analyticsが必要となる期間を評価する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,7 +10,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
->title="Customer Journey Analyticsに完全に移動"
+>title="Customer Journey Analytics への完全な移行"
 >abstract="（推奨）Adobeでは、Adobe AnalyticsからCustomer Journey Analyticsに完全に移行することをお勧めします。 移行期間中は、データを並べて比較するために、Customer Journey Analyticsと共にAdobe Analyticsを実行することを計画してください。 データに慣れたら、Adobe Analyticsを無効にできます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
->title="両方の分析製品を保持"
->abstract="（非推奨）このオプションを選択すると、Adobeとの契約にはAdobe AnalyticsとCustomer Journey Analyticsの両方が含まれるので、時間の経過と共に組織にとってよりコストが高くなる可能性があります。"
+>title="両方の分析製品の保持"
+>abstract="（非推奨）このオプションを選択すると、アドビとの契約に Adobe Analytics と Customer Journey Analytics の両方が含まれるので、時間の経過と共に組織にとってコストが高くなる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,14 +50,14 @@ Customer Journey Analyticsを無効にするかどうかを判断する際や、
 | Adobe Analyticsの履歴データを保持 | Adobeでは、新しいAdobe Analytics環境が動作してデータを収集した後、しばらくの間Customer Journey Analytics環境を Analytics ソースコネクタと共に保持することをお勧めします。 これは、Adobe Analyticsの履歴データをCustomer Journey Analyticsに取り込む最適な方法です。<p>新しい Web SDKの実装で、Customer Journey Analyticsに十分な履歴データを収集したら、Analytics ソースコネクタを完全に削除できます。 新しいCustomer Journey Analytics web SDKの実装で収集した履歴データのみを利用できる場合は、この方法を使用します。</p><p>**メモ：** Adobeでは、履歴データ用の Analytics ソースコネクタと組み合わせて、Customer Journey Analytics環境に対応する新しい実装の web SDKを使用することをお勧めします。 [詳細情報](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | データフィードまたはその他のAdobe Analytics機能の使用 | Customer Journey Analyticsでは、少数の機能はまだ完全には使用できません。 これらの機能にアクセスする必要がある場合は、これらの機能が使用可能になるまで、Adobe AnalyticsをCustomer Journey Analyticsと組み合わせて使用する必要がある可能性があります。 <p>Customer Journey Analyticsで完全には使用できない機能には、データフィードと貢献度分析が含まれます。 まだ利用できない機能の一覧については、[Customer Journey Analytics機能のサポート ](/help/getting-started/aa-vs-cja/cja-aa.md) を参照してください。</p> |
 
-## Adobe Analyticsを無効にするプロセスとタイムライン {#disable-adobe-analytics}
+## Adobe Analytics を無効にするプロセスとタイムライン {#disable-adobe-analytics}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="サードパーティのタグ管理システムの無効化"
->abstract="Web SDKのデータがすべて機能するので、タグ管理者と協力して、サードパーティのタグ管理システムからAppMeasurement ライブラリを削除します。<br><br> この手順の推定実行時間は、タグ管理製品からAppMeasurementを簡単に無効にできるか、およびタグコードのデプロイと管理に導入するリリースサイクルによって異なります。"
+>abstract="Web SDK データが完全に機能したら、タグ管理者と協力してサードパーティのタグ管理システムから AppMeasurement ライブラリを削除します。<br><br>この手順を実行するのにかかる推定時間は、タグ管理製品から AppMeasurement を無効にする容易さと、組織がタグコードのデプロイと管理に導入しているリリースサイクルによって異なります。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 40%
+ht-degree: 52%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Adobe Experience Platform で目的のカスタムスキーマを作成"
->abstract="Adobe Experience Platform UI を使用して、Adobeがデータを格納するための正しい形式を認識できるスキーマを作成します。<br><br> この手順では、組織が合意したスキーマの実際の作成を行います。 Adobe Experience Platform インターフェイスでスキーマを作成するための推定時間は、作成する必要があるディメンションと指標の数に応じて、約 1 週間です。"
+>title="Adobe Experience Platform での目的のカスタムスキーマの作成"
+>abstract="Adobe Experience Platform UI を使用してスキーマを作成し、アドビがデータを保存するための正しい形式を認識できるようにします。<br><br>この手順では、組織で合意されたスキーマを実際に作成します。 Adobe Experience Platform インターフェイスでスキーマを作成するのにかかる推定時間は、作成する必要があるディメンションと指標の数に応じて約 1 週間です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Adobe Analytics ExperienceEvent フィールドグループを使用したスキーマの作成"
->abstract="「Adobe Analytics ExperienceEvent」フィールドグループを使用して、Adobe Analyticsで使用されるすべてのフィールドを含むAdobe Experience Platformのスキーマを作成します。<br><br>Adobe Analytics ExperienceEvent フィールドグループに基づくスキーマの作成は簡単です。作成にかかる時間は数分で済みます。"
+>title="「Adobe Analytics ExperienceEvent」フィールドグループを使用したスキーマの作成"
+>abstract="「Adobe Analytics ExperienceEvent」フィールドグループを使用して、Adobe Analytics で使用されるすべてのフィールドを含むスキーマを Adobe Experience Platform で作成します。<br><br>「Adobe Analytics ExperienceEvent」フィールドグループに基づくスキーマの作成は簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="プロファイルのスキーマを有効にする"
->abstract="Adobe Real-time CDP で使用するために、スキーマ内のプロファイルを有効にします。 この手順が表示されるのは、Adobe Real-time CDP と統合する必要があることを選択したためです。<br><br> この手順には 1 つのボックスをクリックする必要があるので、この手順は数分で済みます。"
+>title="プロファイルでのスキーマの有効化"
+>abstract="Adobe Real-Time CDP で使用するために、スキーマのプロファイルを有効にします。この手順は、Adobe Real-Time CDP と統合する必要があることを選択したので表示されます。<br><br>この手順では 1 つのボックスをクリックするだけなので、この手順には数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

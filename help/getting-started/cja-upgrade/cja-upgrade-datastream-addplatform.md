@@ -10,18 +10,18 @@ exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 36%
+ht-degree: 52%
 
 ---
 
-# データストリームに Platform をサービスとして追加します {#upgrade-addplatform-datastream}
+# データストリームへのサービスとしての Platform の追加 {#upgrade-addplatform-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
->title="Adobe Experience Platform をサービスとしてデータストリームに追加"
->abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。 データストリームでAdobe Experience Platformをサービスとして設定します。<br><br> データストリームへのサービスの追加は簡単なプロセスで、完了までわずか数分で済みます。"
+>title="データストリームへのサービスとしての Adobe Experience Platform の追加"
+>abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。データストリームのサービスとして Adobe Experience Platform を設定します。<br><br>データストリームにサービスを追加するのは簡単なプロセスであり、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Analytics ソースコネクタのカスタムスキーマの作成
+title: Analytics ソースコネクタ用のカスタムスキーマの作成
 description: Analytics ソースコネクタのカスタムスキーマを作成する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 3%
+ht-degree: 22%
 
 ---
 
-# Analytics ソースコネクタのカスタムスキーマの作成 {#create-custom-schema}
+# Analytics ソースコネクタ用のカスタムスキーマの作成 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create-schema"
 >title="Analytics ソースコネクタ用のスキーマの作成"
->abstract="このスキーマは、Adobe Analytics ExperienceEvent フィールドグループと、組織のカスタムスキーマを構成するすべてのフィールドグループの組み合わせです。 これにより、Analytics ソースコネクタで使用されるフィールドを組織のスキーマにマッピングでき、履歴データにのみ使用されます。<br><br> 本質的に技術的ですが、このスキーマの作成は数時間で完了します。組織のカスタムスキーマを構成するフィールドグループが正確にわかっている場合は、おそらくより高速になります。"
+>abstract="このスキーマは、「Adobe Analytics ExperienceEvent」フィールドグループと、組織のカスタムスキーマを構成するすべてのフィールドグループを組み合わせたものです。これにより、Analytics ソースコネクタで使用されるフィールドを組織のスキーマにマッピングでき、履歴データにのみ使用されます。<br><br>本質的には技術的なものですが、このスキーマの作成は数時間で完了できます。組織のカスタムスキーマを構成するフィールドグループを正確に把握している場合は、さらに早く完了できる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
 1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Analytics ソースコネクタのカスタムスキーマの作成
+## Analytics ソースコネクタ用のカスタムスキーマの作成
 
 Customer Journey Analyticsで使用するExperience Platform Web SDKの実装には、既に [ 新しいカスタムスキーマを作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) している必要があります。 このスキーマには、データを収集するフィールドのフィールドグループを含める必要があります。
 

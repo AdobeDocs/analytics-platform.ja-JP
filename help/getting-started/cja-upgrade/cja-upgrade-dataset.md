@@ -10,18 +10,18 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 40%
+ht-degree: 56%
 
 ---
 
-# Customer Journey Analyticsで使用するデータセットの作成 {#upgrade-create-dataset}
+# Customer Journey Analytics で使用するデータセットの作成 {#upgrade-create-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
->title="Adobe Experience Platform でデータセットを作成"
->abstract="データセットは、収集されたデータが存在する場所です。 Adobe Experience Platformにこの場所を作成します。<br><br> スキーマを考慮したデータセットの作成は、数分で完了します。"
+>title="Adobe Experience Platform でのデータセットの作成"
+>abstract="データセットは、収集されたデータが存在する場所です。Adobe Experience Platform でこの場所を作成します。<br><br>スキーマを念頭に置いたデータセットの作成には、わずか数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 

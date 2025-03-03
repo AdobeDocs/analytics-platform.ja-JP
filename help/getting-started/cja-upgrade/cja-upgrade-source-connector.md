@@ -10,7 +10,7 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 7%
+ht-degree: 24%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
->title="Analytics ソースコネクタを作成"
->abstract="Analytics ソースコネクタを使用して、Customer Journey Analyticsで使用するレポートスイートデータを取り込みます。<br><br>Analytics ソースコネクタの作成は、デフォルト設定を使用すると数分で完了します。"
+>title="Analytics ソースコネクタの作成"
+>abstract="Analytics ソースコネクタを使用して、Customer Journey Analytics で使用するレポートスイートデータを取り込みます。<br><br>デフォルト設定を使用すると、Analytics ソースコネクタの作成には数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Analytics ソースコネクタの作成とスキーマフィールドのマッピング"
->abstract="ソースコネクタは、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を理解している必要があります。 このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、履歴データをCustomer Journey Analyticsに追加する作業の一部です。<br><br> この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。 この手順は退屈で繰り返されるほど難しくありません。 データストリームマッピングの完了には約 1 週間かかる予定です。"
+>abstract="ソースコネクタは、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を理解している必要があります。このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、Customer Journey Analytics に履歴データを追加する手順の一部です。<br><br>この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。この手順は、退屈で反復的な作業ですが、それほど難しいものではありません。データストリームマッピングが完了するまでに約 1 週間の作業がかかると予想されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ Analytics ソースコネクタを使用して、Adobe Analytics レポートス
 
 Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込むには、次の操作が必要です。
 
-1. [Analytics ソースコネクタのカスタムスキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Analytics ソースコネクタ用のカスタムスキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
 1. Analytics ソースコネクタがない場合は、以下に示すように、Analytics ソースコネクタを作成し、フィールドをカスタム web SDK スキーマにマッピングします。
 

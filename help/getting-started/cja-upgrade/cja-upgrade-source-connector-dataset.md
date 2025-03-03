@@ -10,7 +10,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 28%
+ht-degree: 36%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="接続への Analytics ソースコネクタデータセットの追加"
->abstract="Analytics レポートスイートの履歴データがCustomer Journey Analyticsにあるので、Adobe Experience Platformを最初に設定する際に作成した既存の接続に、そのデータセットを追加します。 この手順が完了すると、Customer Journey Analyticsの履歴データを使用できるようになります。<br><br>Customer Journey Analyticsの接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
+>abstract="Analytics レポートスイートの履歴データが Adobe Experience Platform にあるので、そのデータセットを、Customer Journey Analytics を最初に設定する際に作成した既存の接続に追加します。この手順が完了すると、Customer Journey Analytics の履歴データが使用できるようになります。<br><br>Customer Journey Analytics での接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
