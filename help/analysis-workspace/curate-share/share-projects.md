@@ -5,9 +5,9 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2070'
 ht-degree: 62%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 62%
 
   編集、複製、表示の各アクセス権を共有できます
 
-* Customer Journey Analyticsへのアクセス権を持たない、組織内のユーザーやグループ
+* 組織内で、Customer Journey Analyticsへのアクセス権を持たないユーザーとグループ
 
   受信者は読み取り専用でアクセスできます
 
@@ -50,9 +50,9 @@ ht-degree: 62%
 >[!ENDSHADEBOX]
 
 
-## 組織内のCustomer Journey Analyticsユーザーおよびグループと共有する {#Add}
+## 組織内のCustomer Journey Analytics ユーザーおよびグループと共有する {#Add}
 
-プロジェクトを組織内の既存のCustomer Journey Analyticsユーザーまたはグループと共有できます。 この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既にCustomer Journey Analyticsアカウントを持っている必要があります。
+プロジェクトを組織内の既存のCustomer Journey Analytics ユーザーまたはグループと共有できます。 この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既にCustomer Journey Analytics アカウントを持っている必要があります。
 
 特定の役割をユーザーやグループと共有したり、リンクを共有したりできます。
 
@@ -66,7 +66,7 @@ ht-degree: 62%
 
 * プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。プロジェクトの役割は、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) で管理されるユーザー権限とは独立しています。
 
-* Customer Journey Analyticsでは、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) の製品プロファイルによってグループが定義されます。 管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
+* Customer Journey Analyticsでは、[Adobe Experience Cloud管理コンソール ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja) の製品プロファイルによってグループが定義されます。 管理者は、「すべて」を含む任意のグループと共有できます。管理者以外のユーザーは、「すべて」を除き、自分が属するグループと共有できます。
 
 * 複数の役割に配置されたユーザーは、常に最高のエクスペリエンスを得ることができます。これは、ユーザーが個人として、またはグループの一部として追加された場合に発生する可能性があります。例えば、個人として&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割、グループのメンバーとして&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;の役割を付与されたユーザーは、**[!UICONTROL オリジナルを編集]**&#x200B;プロジェクトエクスペリエンスを受け取ります。
 
@@ -80,7 +80,7 @@ ht-degree: 62%
 
 特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには、次の手順に従います。
 
-1. Customer Journey Analyticsで「[!UICONTROL **Workspace**]」タブを選択し、左パネルで「[!UICONTROL **プロジェクト**]」を選択します。
+1. Customer Journey Analyticsで、「[!UICONTROL **Workspace**]」タブを選択し、左パネルで「[!UICONTROL **プロジェクト**] を選択します。
 
 1. 共有する 1 つ以上のプロジェクトの横にあるチェックボックスを選択し、「[!UICONTROL **共有**]」を選択します。
 
@@ -99,7 +99,7 @@ ht-degree: 62%
 
    **コピーを編集：** 受信者は、**[!UICONTROL 名前を付けて保存]** したり、左側のパネルにアクセスしたりできます。 この役割では、プロジェクトの操作は制限されません。この役割は、組織のデータと Analysis Workspace の使用方法を理解しているが、プロジェクトを変更してほしくないユーザーとプロジェクトを共有する場合に役立ちます。
 
-   **読み取り専用：** 受信者は **[!UICONTROL 保存]** または **[!UICONTROL 名前を付けて保存]** できず、左側のパネルにアクセスできません。 プロジェクトの操作も制限されます。このロールは、組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analyticsに関する一般的な知識の低いユーザーにプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーに引き続き、安全な環境でデータやインサイトを利用してもらいたい場合です。読み取り専用プロジェクトエクスペリエンスについて詳しくは、[こちら](/help/analysis-workspace/curate-share/view-only-projects.md)を参照してください。
+   **読み取り専用：** 受信者は **[!UICONTROL 保存]** または **[!UICONTROL 名前を付けて保存]** できず、左側のパネルにアクセスできません。 プロジェクトの操作も制限されます。一般的に、組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analyticsに慣れていないユーザーにプロジェクトを共有する場合、このロールは役立ちます。 ただし、これらのユーザーに引き続き、安全な環境でデータやインサイトを利用してもらいたい場合です。読み取り専用プロジェクトエクスペリエンスについて詳しくは、[こちら](/help/analysis-workspace/curate-share/view-only-projects.md)を参照してください。
 
 1. （条件付き） 1 つのプロジェクトを共有する場合は、プロジェクトを共有する際に次のオプションを有効にするかどうかを選択します。
 
@@ -141,7 +141,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーに対
 
 >[!NOTE]
 >
->Customer Journey Analyticsへのアクセス権を持たないユーザーとAnalysis Workspace プロジェクトを共有する場合は、次の点を考慮してください。
+>Customer Journey Analyticsへのアクセス権を持たないユーザーとAnalysis Workspace プロジェクトを共有する場合は、次の点に注意してください。
 >
 >* この方法でプロジェクトを共有する機能は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、Customer Journey Analytics管理者が無効にすることができます。 この節で説明するようにプロジェクトを共有できない場合、Customer Journey Analytics管理者がこの機能を無効にしています。
 >
@@ -153,8 +153,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーに対
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* Healthcare Shield ライセンスとプライバシーおよびセキュリティシールド ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能がブロックされています。
-
+>* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方について、[!UICONTROL  任意のユーザーと共有 ] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
 
 >[!BEGINSHADEBOX]
 
@@ -179,17 +178,17 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    また、プロジェクトの所有者もこのリンクの所有者です。Analytics 管理ガイドの [ ユーザーアセットの転送 ](/help/tools/asset-transfer/transfer-assets.md) に説明されているように、プロジェクトの所有権が転送された場合にのみ、リンクの所有権を別のユーザーに転送できます。
 
-1. 次のセキュリティ・オプションを有効にするかどうかを選択します（このオプションはCustomer Journey Analytics管理者が制御できます）。
+1. 次のセキュリティオプションを有効にするかどうかを選択します（このオプションはCustomer Journey Analytics管理者が制御できます）。
 
    * **[!UICONTROL Experience Cloud 認証を要求]：**
 
-     このオプションが有効になっている場合、プロジェクトにアクセスできるのは、共有しているプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーのみです。 ただし、共有先のユーザーがCustomer Journey Analyticsにアクセスする必要はありません。
+     このオプションが有効になっている場合、プロジェクトにアクセスできるのは、共有しているプロジェクトが作成されたAdobe Experience Cloud組織にログインできるユーザーのみです。 ただし、共有相手となるユーザーは、Customer Journey Analyticsにアクセスできる必要はありません。
 
      Customer Journey Analytics管理者は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、会社のこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 
       * このオプションが表示されない場合は、Customer Journey Analytics管理者がこの機能を有効にしていません。
 
-      * このオプションが有効になっていて、無効にできない場合は、Customer Journey Analytics管理者がAnalysis Workspace プロジェクトにアクセスするすべてのユーザーにExperience Cloud認証を要求していることを意味します。 これは、Healthcare Shield のライセンスを取得している組織には常に当てはまります。
+      * このオプションが有効になっており、無効にできない場合は、Analysis Workspace管理者が、Customer Journey Analytics プロジェクトにアクセスするすべてのユーザーにExperience Cloud認証を要求していることを意味します。 これは、Healthcare Shield のライセンスを取得している組織には常に当てはまります。
 
 1. **[!UICONTROL 任意のユーザーと共有（ログインは不要）]** フィールドの横にある ![ リンク ](/help/assets/icons/Link.svg) を選択して、リンクをシステムクリップボードにコピーします。
 
