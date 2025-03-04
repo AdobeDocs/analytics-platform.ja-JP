@@ -5,9 +5,9 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
+source-git-commit: 100fe0c9bf5dd1db78ae8188e8de1f8ea53123dc
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2069'
 ht-degree: 62%
 
 ---
@@ -153,7 +153,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーに対
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方について、[!UICONTROL  任意のユーザーと共有 ] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
+>* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
 
 >[!BEGINSHADEBOX]
 
