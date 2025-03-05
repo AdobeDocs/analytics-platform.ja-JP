@@ -4,7 +4,7 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -71,7 +71,7 @@ ht-degree: 18%
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]** インターフェイス内から。 | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
+   | **[!UICONTROL オーディエンス]** インターフェイス内から | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
    | Analysis Workspaceのビジュアライゼーションから | Analysis Workspaceの多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。 例えば、**[!UICONTROL フリーフォームテーブル]** の項目のコンテキストメニューから [ オーディエンスを作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を選択したり、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) のノードを選択したりできます。<p>この方法を使用すると、オーディエンスビルダーのフィルターに、選択したディメンションまたはディメンション項目があらかじめ入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：** オーディエンスに計算指標を含めることはできません。 計算指標を含むオーディエンスを作成しようとしても、計算指標はオーディエンスの定義に含まれません。</p> |
    | フィルターの作成／編集 UI から | 「**[!UICONTROL このフィルターからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、フィルターが事前に設定されます。 詳しくは、[ フィルターの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
 
