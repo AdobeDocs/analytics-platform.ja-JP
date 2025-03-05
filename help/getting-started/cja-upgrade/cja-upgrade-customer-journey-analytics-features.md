@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 35%
+source-wordcount: '519'
+ht-degree: 27%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="様々なソースのデータの結合"
->abstract="（推奨）他のチャネルからの分析データを組み合わせる機能は、Customer Journey Analytics の主なユースケースです。"
+>abstract="（推奨）様々な web、モバイル、オフラインのプロパティのデータを結び付けて、顧客の行動を単一の統合ビューで表示します。 他のチャネルからの分析データを組み合わせるこの機能は、Customer Journey Analyticsの主なユースケースです。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="一時的にAdobe Targetと統合する"
->abstract="Adobeでは、パーソナライゼーションのユースケースに対してAdobe Journey Optimizerとの統合を推奨します。 Adobe Targetとの統合は可能ですが、一時的な解決策です。"
+>abstract="Adobeでは、パーソナライゼーションのユースケースに対してAdobe Journey Optimizerとの統合を推奨します。 Adobe Targetとの統合は可能ですが、短期的な解決策になります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="Adobe Audience Manager と一時的に統合する"
->abstract="Adobeでは、オーディエンスベースのユースケースに対して、Adobe Real-time CDP との統合を推奨します。 Audience Managerとの統合は可能ですが、一時的な解決策です。"
+>abstract="Adobeでは、オーディエンスベースのユースケースに対して、Adobe Real-time CDP との統合を推奨します。 Audience Managerとの統合は可能ですが、短期的な解決策になります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -90,6 +90,6 @@ Customer Journey Analyticsにアップグレードする際には、次のどの
 | [Web データを、コールセンターデータなどの他のチャネルのデータと結び付ける ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。[エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用すると、データを均等に表現および整理して、組み合わせや探索にすぐに使用できます。Adobe Analytics は、主に web およびモバイル分析データに焦点を当てており、[データを読み込む](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=ja)機能もいくつかあります。 |
 | [ カスタムディメンションを使用して他のデータセットからのヒットをステッチする ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) | Customer Journey Analytics を使用すると、Adobe Analytics の単一のレポートスイートであるかのように、複数のレポートスイートの[データを組み合わせる](/help/connections/combined-dataset.md)ことができます。 |
 | [Adobe Real-time CDP との統合 ](/help/components/audiences/audiences-overview.md) | Customer Journey Analyticsで検出されたオーディエンスを [ 作成して公開 ](/help/components/audiences/audiences-overview.md) し、Adobe Experience Platformのリアルタイム顧客プロファイルに公開して、顧客のターゲティングやパーソナライゼーションに使用できます。 |
-| [Adobe Target（A4T）との一時的な統合 ](/help/integrations/at.md) | Customer Journey Analyticsの Target レポートを使用すると、Adobe Target アクティビティを [ 測定およびレポート ](/help/integrations/at.md)Customer Journey Analyticsで直接行えます。 |
+| [Adobe Target（A4T）との統合 ](/help/integrations/at.md) | Customer Journey Analyticsの Target レポートを使用すると、Adobe Target アクティビティを [ 測定およびレポート ](/help/integrations/at.md)Customer Journey Analyticsで直接行えます。 ただし、Adobeでは、パーソナライゼーションのユースケースにはAdobe Journey Optimizerとの統合を推奨しています。 |
 | [Adobe Journey Optimizerとの統合 ](/help/integrations/ajo.md) | Journey Optimizerで生成されたデータを設定 [Customer Journey Analyticsでアドバンス分析を実行 ](/help/integrations/ajo.md) できます。 |
-| Adobe Audience Manager と一時的に統合する |  |
+| [Adobe Audience Managerとの統合 ](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing) | [Audience Managerの特性とセグメントをAdobe Experience Platformと共有する ](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing) ことができます。 ただし、Adobeでは、オーディエンスベースのユースケースに対して、Adobe Real-time CDP との統合を推奨します。 |
