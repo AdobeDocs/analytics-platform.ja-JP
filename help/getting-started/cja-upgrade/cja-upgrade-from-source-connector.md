@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 15%
+source-wordcount: '538'
+ht-degree: 14%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 15%
 >id="cja-upgrade-source-connector"
 >title="Analytics ソースコネクタの実装"
 >abstract="Analytics ソースコネクタを使用すると、Customer Journey Analytics から簡単に価値を得ることができますが、Adobe Analytics と Customer Journey Analytics の両方に対して料金を支払う必要があります。このガイドは、独立した Web SDK の実装に移行するのに役立ちます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="既存の Analytics ソースコネクタを削除"
+>abstract="現在持っている Analytics ソースコネクタは、組織のカスタムスキーマと互換性がありません。 ただし、データは Analytics レポートスイートにまだ存在しています。 この手順では、現在の Analytics ソースコネクタを削除するので、後の手順で正しいスキーマを使用して再作成できます。<br><br> ソースコネクタを削除する前に、組織内の他のユーザーと調整して、ソースコネクタの削除が組織内のレポートに影響を与えないようにすることができます。 この調整は、完了するまで数週間かかる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 

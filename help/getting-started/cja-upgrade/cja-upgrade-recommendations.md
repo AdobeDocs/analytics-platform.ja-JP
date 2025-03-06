@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 10%
+source-wordcount: '1585'
+ht-degree: 11%
 
 ---
 
@@ -89,7 +89,7 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、An
 
 1. AppMeasurementまたはAdobe Analytics拡張機能（タグ）を使用した Analytics 実装の場合は、[Adobe Experience Platformでデータストリームを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   Web SDKを使用したAdobe Analytics実装の場合、データストリームは既に存在しています。
+   Web SDKを使用したAdobe Analytics実装の場合、データストリームは既に存在しています。 詳しくは、[Platform にデータを送信するための既存のAdobe Analytics Web SDK実装の設定 ](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md) を参照してください。
 
 1. [ データストリームにAdobe Experience Platformをサービスとして追加します ](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)。
 
@@ -109,7 +109,7 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、An
 
    1. [ タグプロパティを作成して、Adobe Experience Platform Web SDK拡張機能を追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
 
-   1. [タグプロパティにAdobe Experience Platform Web SDK拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+   1. [タグプロパティに Adobe Experience Platform Web SDK 拡張機能を追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
 
    1. [ サイトにローダータグを実装します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
 

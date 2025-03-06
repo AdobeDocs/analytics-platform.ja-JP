@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 14%
+source-wordcount: '1067'
+ht-degree: 12%
 
 ---
 
@@ -31,6 +31,15 @@ ht-degree: 14%
 >id="cja-upgrade-keep-aa"
 >title="両方の分析製品の保持"
 >abstract="（非推奨）このオプションを選択すると、アドビとの契約に Adobe Analytics と Customer Journey Analytics の両方が含まれるので、時間の経過と共に組織にとってコストが高くなる場合があります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Web SDKのデータを排他的に使用するように Analytics ソースコネクタを無効にする"
+>abstract="Analytics ソースコネクタは、横に並べられたデータ比較、履歴データ、Customer Journey Analyticsでは完全には使用できない一部の機能へのアクセスを提供するために使用されます。 これらの目的でAdobe Analyticsが不要になったら、Analytics ソースコネクタを無効にできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,6 +67,24 @@ Customer Journey Analyticsを無効にするかどうかを判断する際や、
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="サードパーティのタグ管理システムの無効化"
 >abstract="Web SDK データが完全に機能したら、タグ管理者と協力してサードパーティのタグ管理システムから AppMeasurement ライブラリを削除します。<br><br>この手順を実行するのにかかる推定時間は、タグ管理製品から AppMeasurement を無効にする容易さと、組織がタグコードのデプロイと管理に導入しているリリースサイクルによって異なります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="タグの Analytics 拡張機能を無効にする"
+>abstract="Web SDKのデータがすべて機能している場合は、タグ管理者に問い合わせて、タグプロパティからAdobe Analytics拡張機能を削除してください。 これを行う前に、ユーザーがAdobe Analyticsを使用してからCustomer Journey Analyticsに移行したことを確認してください。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Adobe Analytics の API データ収集を無効にする"
+>abstract="Web SDKのデータがすべて機能するので、該当するエンジニアリングチームと協力して、Adobe Analytics コードをプロジェクトから削除します。 これを行う前に、ユーザーがAdobe Analyticsを使用してからCustomer Journey Analyticsに移行したことを確認してください。"
 
 <!-- markdownlint-enable MD034 -->
 

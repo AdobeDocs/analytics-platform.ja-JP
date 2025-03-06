@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 55%
+ht-degree: 45%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 55%
 | アップグレードタスク | 詳細 |
 |---------|----------|
 | **手順 1:[ アップグレードの概要](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | Customer Journey Analyticsへのアップグレードのメリットと基本的なアップグレードプロセスについて説明します。 |
-| **手順 2:[ アップグレードパスを選択する](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
+| **手順 2:[ アップグレードパスを選択する](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには、様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
 | **手順 3：[データを Adobe Experience Platform に送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Adobe Experience Platformにデータを送信するプロセスは、手順 2 で選択したアップグレードパスによって異なります。 |
 | <span class="preview">**手順 4：履歴データを保持**</span> | <span class="preview">ほとんどの組織では、Adobe Analytics の履歴データを一定期間保持する必要があります。これを実現するために様々なオプションが利用できます。</span> |
-| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analyticsからのアップグレードや、新しいCustomer Journey Analyticsの実装にも当てはまります。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
+| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々なタスクを実行する必要があります。<p>これらの追加作業は、Adobe Analyticsからのアップグレードと、Customer Journey Analyticsの新規実装に当てはまります。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -40,11 +40,11 @@ Adobe Analytics から Customer Journey Analytics に移行する際に履歴デ
 
 ## Analytics ソースコネクタの使用
 
-[Analytics ソースコネクタ](/help/data-ingestion/analytics.md)を使用すると、履歴データを保持できます。選択するアップグレードパスに関係なく（Web SDK を使用してアップグレードする場合でも）、Analytics Source Connector を使用して、Adobe Analytics環境からの履歴データを保持できます。
+[Analytics ソースコネクタ ](/help/data-ingestion/analytics.md) を使用して、履歴データを保持できます。 選択するアップグレードパスに関係なく（Web SDKを使用してアップグレードした場合でも）、Analytics ソースコネクタを使用して、Adobe Analytics環境からの履歴データを保持できます。
 
-Analytics ソースコネクタを使用すると、履歴データを現在のデータとは別の専用の場所に取り込むことで、履歴データを保持できます。
+Analytics ソースコネクタを使用して、履歴データを現在のデータとは別の専用の場所に取り込むことで、履歴データを保持できます。
 
-Analytics ソースコネクタは、履歴データにアクセスする必要がある限り機能している必要があります。
+履歴データにアクセスする必要がある限り、Analytics ソースコネクタは機能している必要があります。
 
 <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 
@@ -60,7 +60,7 @@ Analytics ソースコネクタは、履歴データにアクセスする必要�
 
 アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々な実装作業を実行する必要があります。
 
-これらの追加タスクは、Adobe Analyticsからのアップグレードや、新しいCustomer Journey Analyticsの実装にも当てはまります。
+これらの追加作業は、Adobe Analyticsからのアップグレードと、Customer Journey Analyticsの新規実装に当てはまります。
 
 これらのタスクには次のものが含まれます。
 

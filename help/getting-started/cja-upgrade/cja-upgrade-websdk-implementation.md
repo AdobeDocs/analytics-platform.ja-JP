@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 43%
+source-wordcount: '349'
+ht-degree: 38%
 
 ---
 
@@ -39,6 +39,24 @@ ht-degree: 43%
 >id="cja-upgrade-websdk-api"
 >title="NPM パッケージ"
 >abstract="Data Collection API を使用して、データをデータストリームに直接送信します。非認証（クライアントからサーバー）と認証（サーバーからサーバー）の両方のタイプがサポートされています。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="指定されたプロパティの Web SDK を実装"
+>abstract="詳細な手順については、アンケートで目的の実装タイプを選択してください。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="サードパーティの Tag Management システムに Web SDK ライブラリを追加"
+>abstract="タグ管理システムで管理者と協力して、web SDK ライブラリをサイトに追加します。<br><br> このタスクの完了時間は、タグ管理システムの担当者の応答速度に大きく依存します。 Web SDK ライブラリの追加は、関連付けられた実装ロジックにバンドルされ、組織の標準リリースサイクル中にデプロイされる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 

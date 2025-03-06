@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 87b2927735834d253fa8a35ba106c1ed720a4ced
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 93%
+source-wordcount: '1193'
+ht-degree: 91%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 93%
          + [データセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [分類のルックアップデータセットの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [データ取り込みの監視](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + タグの作成 {#create-tags}
+      + タグを使用した web SDKの実装 {#create-tags}
          + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [タグへの Web SDK 拡張機能の追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
@@ -88,6 +88,8 @@ ht-degree: 93%
          + [Analytics の実装について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
          + [アップグレード時の Adobe Analytics 機能のサポート](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
          + [Customer Journey Analytics機能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+         + [Web SDK実装オプション](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+         + [Adobe Analytics Web SDK for Platform の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
