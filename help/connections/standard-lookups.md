@@ -5,10 +5,10 @@ exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5807700b9fe10769bf86f5c4020dd7c23df6e616
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 73%
+source-wordcount: '430'
+ht-degree: 47%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 73%
 >標準検索は、Customer Journey Analyticsの Analytics ソースコネクタデータソースでのみ使用できます。 これらは、標準の Adobe Analytics 実装、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、または Experience Platform Data Collection API で使用できます。
 >
 
-標準検索（アドビ提供の検索とも呼ばれる）は、Customer Journey Analytics の機能を強化して、単体では役に立たなくても、他のデータと結合すると役立つディメンションや属性についてレポートします。例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準検索」はルックアップデータセットに似ています。 標準検索は Experience Cloud 組織をまたいで適用できます。これらは、特定の XDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（特定のフィールドについては、以下を参照してください）。標準の検索データセットは、アドビが分類しているスキーマの場所ごとに存在します。
+標準検索（アドビ提供の検索とも呼ばれる）は、Customer Journey Analytics の機能を強化して、単体では役に立たなくても、他のデータと結合すると役立つディメンションや属性についてレポートします。例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。「標準検索」はルックアップデータセットに似ています。 標準検索は Experience Cloud 組織をまたいで適用できます。これらは、特定の XDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（具体的なフィールドについては、以下を参照してください）。標準の検索データセットは、Adobeが分類しているスキーマの場所ごとに存在します。
 
 従来のAdobe Analyticsでは、これらのディメンションは単独で表示されますが、Customer Journey Analyticsでは、データビューを作成するときにこれらのディメンションを積極的に含める必要があります。 接続ワークフローでは、標準検索用のキーを持つデータセットとしてフラグが付けられたデータセットを選択します。データビュー UI は、すべての標準検索ディメンションを自動的に認識し、レポートに使用可能として含めます。すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。これらは、顧客に関連付けられた地域固有の組織に保存されます。
 
 ## Analytics ソースコネクタデータセットでの標準検索の使用
 
-標準検索データセットは、レポート時に自動的に適用されます。Analytics ソースコネクタを使用して、Adobeが標準検索を提供するディメンションを取り込むと、この標準検索が自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
+標準検索データセットは、レポート時に自動的に適用されます。Analytics ソースコネクタを使用して、Adobeが標準検索を提供しているディメンションを取り込むと、この標準検索が自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
 
 <!--
 ### Specific IDs that need to be populated
@@ -75,10 +75,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## 標準検索ディメンションに関するレポート
 
-標準検索ディメンションについてレポートするには、Customer Journey Analytics でデータビューを作成する際にそれらのディメンションを追加する必要があります。
+Adobeの標準検索ディメンションについてレポートするには、Customer Journey Analyticsで [ データビュー ](/help/data-views/data-views.md) を作成する際に、これらのディメンションを 1 つ以上追加する必要があります。 **[!UICONTROL データビュー]**/**[!UICONTROL コンポーネント]** で以下を実行します。
 
-![ コンポーネントを追加リストを表示するデータビューを作成する ](assets/global-lookup.png)
+1. 左パネルのドロップダウンメニューから **[!UICONTROL スキーマフィールド]** を選択します。
+1. スキーマフィールドコンテナのリストから ]**0}Adobe ルックアップ } を選択します。**[!UICONTROL 
+1. 追加するディメンションが見つかるまで、**[!UICONTROL ブラウザー]**、**[!UICONTROL モバイル]** または **[!UICONTROL オペレーティングシステム]** にドリルダウンします。
+1. ディメンションを **[!UICONTROL 含まれるコンポーネント]** 内の **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** テーブルにドラッグします。
 
-そうすると、ワークスペースで検索データを確認できるようになります。
+   ![ コンポーネントを追加リストを表示するデータビューを作成する ](assets/add-standard-lookup-dimension.gif)
+
+その後、Workspaceでルックアップデータを使用できます。
 
 ![ データを表示するフリーフォームテーブル ](assets/gl-reporting.png)

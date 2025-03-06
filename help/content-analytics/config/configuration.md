@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 13%
@@ -39,10 +39,11 @@ ht-degree: 13%
    * データ収集
       * データストリームが作成され、データストリーム内にExperience Platform サービスが設定されて、Content Analytics エクスペリエンスイベントデータセットにデータがストリーミングされます。
       * タグプロパティは、設定ウィザードで正しいサンドボックス、データストリーム、その他の設定オプションに設定されたAdobe Content Analytics 拡張機能を使用して作成されます。
-1. タグプロパティを手動で公開した場合にのみ、コンテンツ分析が効果的にデプロイされアクティブ化されます。
+1. タグプロパティ [ 手動で公開 ](manual.md) した場合にのみ、コンテンツ分析が効果的にデプロイおよびアクティブ化されます。
+
 1. [ ガイド付き設定 ](guided.md) ウィザードを使用して、実装済み設定に対して一部の制限付き変更のみを行うことができます。 例えば、「[ データビュー ](/help/data-views/data-views.md) を変更します。
 1. 関連するタグプロパティの [Adobe Content Analytics 拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) を使用して、実装された設定に他の変更を加えることができます。
-1. タグプロパティを手動で再公開した場合にのみ、手順 4 と 5 での設定変更が効果的にデプロイされアクティブ化されます。
+1. タグプロパティを [ 手動で再公開 ](manual.md) した場合にのみ、手順 4 と 5 での設定変更が効果的にデプロイされアクティブ化されます。
 
 
 コンテンツ分析を設定する前に、次の前提条件が満たされていることを確認してください。

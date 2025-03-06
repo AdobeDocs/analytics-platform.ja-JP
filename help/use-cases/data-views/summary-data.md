@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 このユースケースは、レポートおよび分析での概要データの使用方法を理解するのに役立ちます。 このユースケースは、Customer Journey Analyticsで概要データを使用するために必要なすべての手順の詳細を示します。
 
-- [ 取り込み ](#ingest)Experience Platform内の概要データおよびその他のデータソース。
+- Experience Platformでの [ 取り込み ](#ingest) 概要データおよびその他のデータソース。
 - 概要データやその他のデータソース用に [ 接続 ](#connection) を設定します。
 - [ データビュー ](#data-view) を設定して、データソースを組み合わせます。
 - 結合したデータに関するレポートと分析を ](#workspace)0}Workspace} で行います。[
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 ## 取り込み
 
-このユースケースでは、以下のサンプルサマリーデータを使用して、Facebookでキャンペーンを実行中のサマリーデータを示します。
+このユースケースでは、以下のサンプルサマリーデータを使用して、Facebook でキャンペーンを実行する際のサマリーデータを表示します。
 
 +++概要データ
 
@@ -54,11 +54,11 @@ ht-degree: 8%
 
 +++
 
-Customer Journey Analytics、レポートまたはWorkspaceでのデータ分析の一部として概要データを使用するには、次のものが必要です
+Customer Journey Analyticsの概要データをレポートやWorkspaceのデータ分析の一部として使用するには、次のものが必要です
 
 - Experience Platformの概要スキーマ
 - Experience Platformの概要データセット
-- 概要データセットを使用するように設定されたCustomer Journey Analytics内の接続
+- 概要データセットを使用するように設定されたCustomer Journey Analyticsの接続。
 - 概要データの指標およびディメンションで正しく設定された、Customer Journey Analyticsのデータビュー。
 
 この概要データを、イベントデータのデータセットおよびルックアップデータのデータセットと共に使用します。
@@ -289,9 +289,9 @@ Customer Journey Analytics、レポートまたはWorkspaceでのデータ分析
 
 ### 概要スキーマ
 
-概要データには、Experience Platformに概要スキーマが必要です。 概要スキーマは、XDM 概要指標を基本クラスとして使用するスキーマです。
+概要データには、Experience Platformで概要スキーマが必要です。 概要スキーマは、XDM 概要指標を基本クラスとして使用するスキーマです。
 
-Experience Platformにサマリースキーマを作成するには：
+Experience Platformでサマリースキーマを作成するには：
 
 1. 「」から「**[!UICONTROL Experience Platform]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
 1. 左パネルから **[!UICONTROL スキーマ]** を選択します。
@@ -338,7 +338,7 @@ Experience Platformにサマリースキーマを作成するには：
 
 ### 概要データセット
 
-概要データをExperience Platformに保存するには、まずデータセットを作成し、次に概要データをデータセットにアップロードする必要があります。
+概要データをExperience Platformに保存するには、まずデータセットを作成してから、概要データをデータセットにアップロードする必要があります。
 
 データセットを作成するには：
 
@@ -452,7 +452,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
       1. 他のすべての設定はそのままにしておきます。
       1. 「**[!UICONTROL 保存して続行]**」を選択します。
    1. **[!UICONTROL データビュー]**/**[!UICONTROL 概要データを使用したサンプルデータビュー]** の **[!UICONTROL コンポーネント]** 手順で以下を実行します。
-      1. Dimensionと指標リストに次のコンポーネントを追加します。 わかりやすくするために、コンポーネントパネル（右側）の **[!UICONTROL コンポーネント設定]** 内の **[!UICONTROL コンポーネント名]** を使用して、コンポーネント名がデフォルト名から変更されています。
+      1. ディメンションと指標リストに次のコンポーネントを追加します。 わかりやすくするために、コンポーネントパネル（右側）の **[!UICONTROL コンポーネント設定]** 内の **[!UICONTROL コンポーネント名]** を使用して、コンポーネント名がデフォルト名から変更されています。
 
          **指標**
 
@@ -478,14 +478,14 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          | 追跡コード （イベント） | イベントデータデータセットの例 | 文字列 | *_tenant*.tracking_code |
          | トラッキングコード（参照） | ルックアップデータデータセットの例 | 文字列 | *_tenant*.tracking_code |
 
-      1. **[!UICONTROL 2}Dimension]** リストで「トラッキングコード （イベント） ]**」ディメンションを選択します。**[!UICONTROL &#x200B;コンポーネントパネルで以下を実行します。
+      1. **[!UICONTROL ディメンション]** リストで、「**[!UICONTROL トラッキングコード （イベント）]**」ディメンションを選択します。 コンポーネントパネルで以下を実行します。
 
          ![ トラッキングコード概要データ ](../assets/tracking-code-summary-data.png)
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]** を有効にします。
-         1. **[!UICONTROL 2}Dimension]** ドロップダウンリストから「]**キャンペーン ID} を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
-         1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL  レポートで非表示 ] 選択したディメンション（[!UICONTROL  キャンペーン ID]）が、Analysis Workspaceやその他のCustomer Journey Analyticsレポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
-            1. **[!UICONTROL 2}Dimension]** リストで「キャンペーン ID」ディメンションを選択 ]**ます。**[!UICONTROL 
+         1. **[!UICONTROL 2} キャンペーン ID]** ドロップダウンリストから「]**Dimension ID」を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
+         1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL  レポートで非表示 ] 選択したディメンション（[!UICONTROL  キャンペーン ID]）が、Analysis Workspaceや他のCustomer Journey Analytics レポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
+            1. **[!UICONTROL ディメンション]** リストで「**[!UICONTROL キャンペーン ID]**」ディメンションを選択します。
             1. **[!UICONTROL コンポーネント設定]** の **[!UICONTROL レポートでコンポーネントを非表示]** が自動的に有効になっていることに注意してください。
 
       1. 新しい派生フィールド（例：`Campaign Name (Lookup Derived Field)`）を作成して、ルックアップデータデータセットの例からキャンペーン名（ルックアップ）ディメンションを使用してWorkspaceでレポートできるようにします。
@@ -498,15 +498,15 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          1. **[!UICONTROL 返す値]** ドロップダウンメニューから **[!UICONTROL campaign_name]** を選択します。
          1. 「**[!UICONTROL 保存]**」を選択します。
 
-      1. 新しく作成した派生フィールド **[!UICONTROL キャンペーン名（ルックアップ派生フィールド）]** を **[!UICONTROL Dimension]** コンポーネントリストに追加します。
+      1. 新しく作成した派生フィールド **[!UICONTROL キャンペーン名（ルックアップ派生フィールド）]** を **[!UICONTROL ディメンション]** コンポーネントリストに追加します。
 
-      1. **[!UICONTROL キャンペーン名（ルックアップ）]** ディメンションを **[!UICONTROL Dimension]** リストで選択します。 コンポーネントパネルで以下を実行します。
+      1. **[!UICONTROL ディメンション）リストで]** キャンペーン名 **[!UICONTROL ルックアップ]** ディメンションを選択します。 コンポーネントパネルで以下を実行します。
 
          ![ 派生フィールドの概要データグループ ](../assets/derived-field-summary-data-group.png)
 
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]** を有効にします。
-         1. **[!UICONTROL 2}Dimension]** ドロップダウンリストから「]**キャンペーン名（ルックアップ派生フィールド）」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
+         1. **[!UICONTROL 2} キャンペーン名（ルックアップ派生フィールド）]** ドロップダウンリストから ]**Dimension名」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
 
       1. **[!UICONTROL 指標]** リストから「**[!UICONTROL 売上高]** 指標を選択します。 コンポーネントパネルで以下を実行します。
 
@@ -551,7 +551,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
 1. パネル用に選択したデータビューが、概要データの設定を含むデータビューを参照していることを確認します。 例：**[!UICONTROL 概要データを使用したデータビューの例]**
 1. レポート対象のデータに対して日付範囲が有効であることを確認します。 例：**[!UICONTROL 過去 2 か月]**。
-1. **[!UICONTROL 2}Dimension」から]** トラッキングコード （イベント） ]**をドラッグし、空のフリーフォームテーブルにディメンションをドロップします。**[!UICONTROL 
+1. **[!UICONTROL ディメンション]** から **[!UICONTROL トラッキングコード （イベント）]** をドラッグし、空のフリーフォームテーブルにディメンションをドロップします。
 1. **[!UICONTROL 指標]** から **[!UICONTROL 注文]** をドラッグし、指標を **[!UICONTROL イベント]** 列にドロップして、フリーフォームテーブルのその列を置き換えます。
 1. **[!UICONTROL 指標]** から **[!UICONTROL 売上高]** をドラッグし、指標をドロップして、フリーフォームテーブルに列として追加します。
 1. **[!UICONTROL 指標]** から **[!UICONTROL インプレッション数（概要）]** をドラッグし、指標をドロップして、フリーフォームテーブルに列を追加します。

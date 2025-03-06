@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 17%
@@ -49,6 +50,9 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 | エクスペリエンスの水平方向のピクセルの深度 | エクスペリエンスの水平方向のピクセル深度の定量化可能な値。 | Dimension<br/> 派生フィールド | \|値なし <br/> 最新の\| セッションを表示 |
 | エクスペリエンスの垂直方向のピクセルの深度 | エクスペリエンスの垂直方向のピクセル深度の定量化可能な値。 | Dimension<br/> 派生フィールド | \|値なし <br/> 最新の\| セッションを表示 |
 
+{style="table-layout:fixed"}
+
+
 
 ## エクスペリエンス属性
 
@@ -68,6 +72,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 | エクスペリエンス語数 | ![AI が生成されました ](/help/assets/icons/AI.svg) エクスペリエンスの単語数。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
 | エクスペリエンス 1 文あたりの語数 | ![AI が生成されました ](/help/assets/icons/AI.svg) エクスペリエンスの文あたりの単語数。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
 
+{style="table-layout:fixed"}
+
 
 ## エクスペリエンスイベント
 
@@ -75,6 +81,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 |---|---|---|---|
 | エクスペリエンスビュー | エクスペリエンスのビュー数の定量化可能な測定。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
 | エクスペリエンスクリック数 | エクスペリエンスのクリック数の定量化可能な測定。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
+
+{style="table-layout:fixed"}
 
 
 ## アセットメタデータ
@@ -96,6 +104,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 | アセット作成日 | アセットの作成日。 | ディメンション | 最新\| セッション |
 | アセット最終更新者 | アセット更新の識別子。 | ディメンション | \|値なし <br/> 最新の\| セッションを表示 |
 | アセット最終更新日 | アセットの更新日。 | ディメンション | 最新\| セッション |
+
+{style="table-layout:fixed"}
 
 
 ## アセット属性
@@ -119,6 +129,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 | アセット照明条件 | ![AI 生成 ](/help/assets/icons/AI.svg) アセットの照明条件。 取り得る値は、ゴールデンアワー、ブルーアワー、正午、曇り、夜、ハイキー、ローキー、デイライト、白熱灯、蛍光灯、カラフルおよびスタジオです。 | Dimension<br/> 派生フィールド | \|値なし <br/> 最新の\| セッションを表示 |
 | アセットカメラ設定 | ![AI 生成 ](/help/assets/icons/AI.svg) アセットのカメラ設定。 可能な値：速いシャッタースピード、長い露出。 ボケブラー、モーションブラー、チルトシフトブラー、フラッシュ、広角、白黒、シュール、二重露光、マクロ、ノーマルモード。 | Dimension<br/> 派生フィールド | \|値なし <br/> 最新の\| セッションを表示 |
 
+{style="table-layout:fixed"}
+
 
 ## アセットイベント
 
@@ -126,6 +138,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 |---|---|---|---|
 | アセット表示 | アセットの表示数の定量化可能な測定。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
 | アセットのクリック | アセットのクリック数の定量化可能な測定。 | 指標 | カウント値 <br/> 小数点以下\|小数点以下の桁数：0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## 計算指標
@@ -145,3 +161,5 @@ Content Analytics では、次に示すカテゴリのコンポーネント（�
 |---|---|---|---|
 | アセットのクリックスルー率 | アセットのクリック数/アセットビュー数 | 計算指標 | |
 | エクスペリエンスのクリックスルー率 | エクスペリエンスのクリック数/エクスペリエンスの表示回数 | 計算指標 | |
+
+{style="table-layout:fixed"}
