@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 19771d5cd2d2a38919c42e7f76bd700016020912
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics の Report Builder を使用すると、Adobe Custome
 
 Customer Journey Analytics の Report Builder を使用すると、次のことができます。
 
-- 既存のワークシートセルを参照して、適切な行の順序、日付範囲またはフィルターを取得
+- 既存のワークシートセルを参照して、完全な行の順序、日付範囲またはセグメントを取得する
 - カレンダー、セル参照または日付計算を使用したカスタム日付を作成
 - 慣れ親しんだ Excel 書式設定ツールを使用してテーブルおよびビジュアライゼーションをデザイン
 
