@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 80%
@@ -28,7 +28,9 @@ ht-degree: 80%
 
 パーソナライズされた最適化では、監視された機械学習とディープラーニングの最先端のテクノロジーを活用することで、ビジネスユーザー（マーケター）はビジネス目標を定義し、顧客データを利用してビジネス指向モデルをトレーニングし、パーソナライズされたオファーを提供して KPI を最大化できます。
 
-詳しくは、Journey Optimizerガイドの [ パーソナライズされた最適化モデル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) を参照してください。
+1. Journey Optimizer ガイドの [ パーソナライズされた最適化モデル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) の情報に従ってください。
+
+{{upgrade-final-step}}
 
 <!--
 

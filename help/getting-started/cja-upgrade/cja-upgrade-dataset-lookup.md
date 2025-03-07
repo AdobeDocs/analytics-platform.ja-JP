@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 13%
+source-wordcount: '800'
+ht-degree: 14%
 
 ---
 
@@ -129,5 +129,7 @@ Customer Journey Analyticsの接続にルックアップデータセットを追
 
 1. **[!UICONTROL キー]** フィールドと **[!UICONTROL 一致するキー]** フィールドを使用して、ルックアップデータセット内のフィールドとイベントまたはサマリーデータセット内のフィールドの間の相関関係を作成します。
 
-1. すべてのルックアップデータセットがCustomer Journey Analyticsの接続に追加されたら、[ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+1. すべてのルックアップデータセットがCustomer Journey Analyticsの接続に追加されるまで、このプロセスを繰り返します。
+
+{{upgrade-final-step}}
 

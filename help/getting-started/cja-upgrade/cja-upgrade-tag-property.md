@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 43%
+source-wordcount: '292'
+ht-degree: 45%
 
 ---
 
@@ -45,4 +45,4 @@ Adobe Experience Platformのタグ機能を使用して、データを収集す�
 
    ![ プロパティの作成](assets/create-property.png)
 
-1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+{{upgrade-final-step}}

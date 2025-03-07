@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 40%
+source-wordcount: '302'
+ht-degree: 42%
 
 ---
 
@@ -55,4 +55,4 @@ Adobe Experience Platformのタグ機能を使用して、データを収集す�
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+{{upgrade-final-step}}

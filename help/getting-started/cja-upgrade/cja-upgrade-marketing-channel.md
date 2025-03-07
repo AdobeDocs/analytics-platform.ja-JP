@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 24%
+source-wordcount: '289'
+ht-degree: 25%
 
 ---
 
@@ -53,4 +53,4 @@ Experience Platform Web SDKを使用する際に、Customer Journey Analyticsで
 
    新しい派生フィールドが、データビューの左側のパネルのスキーマフィールドの一部として、派生フィールド/コンテナに追加されます。
 
-1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+{{upgrade-final-step}}

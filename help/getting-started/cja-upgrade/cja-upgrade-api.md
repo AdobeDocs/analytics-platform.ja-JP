@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
+exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '115'
 ht-degree: 4%
 
 ---
@@ -28,5 +29,7 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK JavaScriptのビルドプロセスを制御するために NPM パッケージをインストールすると、Platform Web SDKをインストールできます。
 
-詳しくは、Web SDKガイドの [](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) Web SDKのインストール [ にあるオプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) を参照してください。
+1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) にある [ オプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) の節の情報に従います。
+
+{{upgrade-final-step}}
 

@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 12%
@@ -135,3 +135,6 @@ Customer Journey Analyticsを無効にするかどうかを判断する際や、
    新しい Web SDKの実装で、Customer Journey Analyticsに十分な履歴データを収集したら、Analytics ソースコネクタを完全に削除できます。
 
    これは、Analytics ソースコネクタを使用してAdobe Analytics環境から履歴データを必要とせず、新しい web SDKの実装で収集した履歴データのみを使用できる場合に行います。
+
+{{upgrade-final-step}}
+

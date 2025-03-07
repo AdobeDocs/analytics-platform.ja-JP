@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 45%
+source-wordcount: '673'
+ht-degree: 39%
 
 ---
 
@@ -31,6 +31,10 @@ ht-degree: 45%
 {style="table-layout:auto"}
 
 +++
+
+>[!AVAILABILITY]
+>
+>このページの情報は、次のより包括的なアップグレード情報に置き換えられています。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時の推奨パス ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>新しいアップグレードガイドは、組織と独自の状況に合わせたアップグレード手順を動的に生成するものです。</p><p>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
 
 Adobe Analytics から Customer Journey Analytics に移行する際に履歴データを保持するには、次のオプションのいずれかを選択します。
 

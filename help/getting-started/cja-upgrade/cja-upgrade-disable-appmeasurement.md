@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 64%
+source-wordcount: '149'
+ht-degree: 58%
 
 ---
 
@@ -32,3 +32,8 @@ Adobe Analyticsを無効にする前に、[Customer Journey Analyticsへのア�
 * **タグ：** Adobe Analytics拡張機能を無効にする
 
 * **AppMeasurment:** AppMeasurement.js ライブラリ s=newobject を置き換えます
+
+>[!NOTE]
+>
+>この情報はまだ利用できません。 近い将来に利用可能になる予定です。
+

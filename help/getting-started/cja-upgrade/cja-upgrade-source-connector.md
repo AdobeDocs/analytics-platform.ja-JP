@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '745'
 ht-degree: 24%
 
 ---
@@ -108,4 +108,4 @@ Analytics ソースコネクタを使用して履歴データをCustomer Journey
 
    Analytics ソースコネクタを使用して履歴データをCustomer Journey Analytics web SDK実装に取り込む場合は、自動作成されたデータセットを、web SDK実装用に作成した接続に追加する必要があります。
 
-1. [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または [ 動的に生成されるアップグレード手順 ](https://gigazelle.github.io/cja-ttv/) に従って続行します。
+{{upgrade-final-step}}

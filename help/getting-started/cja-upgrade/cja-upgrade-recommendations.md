@@ -1,16 +1,16 @@
 ---
-title: Adobe AnalyticsからCustomer Journey Analyticsへアップグレードする際に推奨されるパス
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
+title: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨される手順について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 11%
+source-wordcount: '1629'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、An
 
 >[!NOTE]
 >
->ここで説明しているアップグレード手順が貴社にとって実用的でない場合は、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) を使用して、貴社の固有の状況に合わせたアップグレード手順を動的に生成してください。
+>この節で説明しているアップグレード手順が組織で実用的でない場合は、Customer Journey Analytics アップグレードガイドを使用して、組織固有の状況に合わせたアップグレード手順を動的に生成します。 （Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います）。
 
 ### 高レベルの推奨アップグレードプロセス {#high-level-upgade-process}
 
@@ -189,9 +189,11 @@ Experience Platform Web SDKを使用する履歴データが十分にあり、An
 
 組織固有の状況に合わせてアップグレード手順を動的に生成するには：
 
-1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) に回答してください。
+1. Customer Journey Analytics アップグレードガイドを参照してください。
 
-   このアンケートに回答すると、組織の要件に固有の最適なアップグレード手順の概要が段階的に説明されます。 これらは、既存のAdobe Analytics環境とCustomer Journey Analyticsの目標に最も適したアップグレード手順です。
+   Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。
+
+   このアップグレードガイドを完了すると、組織の要件に固有の最適なアップグレード手順の概要が段階的に説明されます。 これらは、既存のAdobe Analytics環境とCustomer Journey Analyticsの目標に最も適したアップグレード手順です。
 
 1. 生成されたステップバイステップの手順に従って、Customer Journey Analyticsにアップグレードします。
 

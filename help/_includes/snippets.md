@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '3184'
-ht-degree: 23%
+source-wordcount: '3333'
+ht-degree: 22%
 
 ---
 # スニペット
@@ -206,12 +206,14 @@ ht-degree: 23%
 
 >[!NOTE]
 > 
->[Customer Journey Analyticsのアップグレードチェックリスト ](https://gigazelle.github.io/cja-ttv/) に関する質問に答える際は、このページの情報を使用してください。
+>Customer Journey Analytics アップグレードガイドで質問に答える際は、このページの情報を使用してください。 <br><br>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。
 
 ## チェックリストメモの後続ステップのアップグレード {#upgrade-note-step}
 
 >[!NOTE]
 > 
->このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) に従うか、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関するアンケート ](https://gigazelle.github.io/cja-ttv/) で組織用に動的に生成されたアップグレード手順に従うことができます。
->
->このページの手順を完了した後、推奨されるアップグレード手順または動的に生成されるアップグレード手順に従って続行します。
+>このページの手順は、以前のアップグレード手順をすべて完了した後でのみ実行してください。 推奨されるアップグレード手順に従うことも（ほとんどの組織で推奨）、Customer Journey Analytics アップグレードガイドを使用して動的に生成される手順に従うこともできます。 <ul><li>**推奨されるアップグレード手順** （ほとんどの組織で推奨）<p>理想的なCustomer Journey Analyticsの実装に導く一連の手順です。</p><p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド** （お客様の具体的なニーズに合わせたカスタム手順）<p>新しいアップグレードガイドは、組織と独自の状況に合わせたアップグレード手順を動的に生成するものです。</p><p>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
+
+## アップグレードチェックリストの最終ステップ {#upgrade-final-step}
+
+1. 引き続き『Customer Journey Analytics アップグレードガイド』の [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または動的に生成されるアップグレード手順に従います。 Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。

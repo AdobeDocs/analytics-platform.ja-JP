@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 439bc00f2a7e08c8b73a4caa3a3c7269a3a7f895
+source-git-commit: 5f0d99f4304f0be44036b271525cdbc3c791440b
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1216'
 ht-degree: 90%
 
 ---
@@ -90,6 +90,7 @@ ht-degree: 90%
          + [Customer Journey Analytics機能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
          + [Web SDK実装オプション](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Adobe Analytics Web SDK for Platform の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+         + [Adobe Journey Optimizerでのパーソナライゼーションの使用](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -428,7 +429,7 @@ ht-degree: 90%
          + [セッション再生のタイ](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [ヒートマップの使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + [Source コネクタ](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + [ソースコネクタ](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + データ取り込み {#data-ingestion}
       + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
       + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)

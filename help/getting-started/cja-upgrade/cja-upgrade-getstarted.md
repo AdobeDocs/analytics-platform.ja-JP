@@ -5,14 +5,18 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 63%
+source-wordcount: '721'
+ht-degree: 56%
 
 ---
 
 # 手順 1:Customer Journey Analyticsへのアップグレードの概要
+
+>[!AVAILABILITY]
+>
+>このページの情報は、次のより包括的なアップグレード情報に置き換えられています。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時の推奨パス ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>新しいアップグレードガイドは、組織と独自の状況に合わせたアップグレード手順を動的に生成するものです。</p><p>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
 
 Customer Journey Analytics は、次世代の分析です。強力なレポート時処理機能（データビューでのコンポーネントと派生フィールドの定義を通じて）と組み合わせて、マルチチャネルデータ収集（オンラインデータとオフラインデータの両方）を実現できます。
 
@@ -49,20 +53,20 @@ Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードのプ
 ## アップグレードプロセスについて
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-このページの情報では、次の表で強調表示されている、アップグレードプロセスの手順 1 について説明します。 Adobe AnalyticsからCustomer Journey Analyticsにアップグレードするには、次の表に示すすべての手順を実行します。
+このページの情報では、次の表で強調表示されている、アップグレードプロセスの手順 1 について説明します。 Adobe AnalyticsからCustomer Journey Analyticsにアップグレードするには、次の表のすべての手順を実行します。
 
 | アップグレードタスク | 詳細 |
 |---------|----------|
 | <span class="preview">**手順 1：アップグレードの概要**</span> | <span class="preview">Customer Journey Analyticsへのアップグレードのメリットと基本的なアップグレードプロセスについて説明します。</span> |
-| **手順 2:[ アップグレードパスを選択する](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
+| **手順 2:[ アップグレードパスを選択する](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analyticsへのアップグレードには、様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
 | **手順 3：[データを Adobe Experience Platform に送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Adobe Experience Platformにデータを送信するプロセスは、手順 2 で選択したアップグレードパスによって異なります。 |
 | **手順 4：[履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | ほとんどの組織では、Adobe Analytics の履歴データを一定期間保持する必要があります。これを実現するために様々なオプションが利用できます。 |
-| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analyticsからのアップグレードや、新しいCustomer Journey Analyticsの実装にも当てはまります。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
+| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics環境を使用する準備を整える前に、様々なタスクを実行する必要があります。<p>これらの追加作業は、Adobe Analyticsからのアップグレードと、Customer Journey Analyticsの新規実装に当てはまります。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
 
 {style="table-layout:auto"}
 
 ## まず、アップグレードパスを選択します
 
-Customer Journey Analyticsへのアップグレードには様々な方法があります。 [組織に最適な方法を選択します](/help/getting-started/cja-upgrade/cja-upgrade-path.md)。
+Customer Journey Analyticsへのアップグレードには、様々な方法があります。 [組織に最適な方法を選択します](/help/getting-started/cja-upgrade/cja-upgrade-path.md)。
 
 選択するアップグレードパスは、組織の現在のAdobe Analytics環境と長期目標によって異なります。
