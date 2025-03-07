@@ -1,21 +1,21 @@
 ---
-title: Customer Journey Analytics の Report Builder でのフィルターの使用方法
-description: Report Builderでフィルターを使用してCustomer Journey Analyticsする方法について説明します
+title: Customer Journey AnalyticsのReport Builderでのセグメントの使用方法
+description: Report Builder for Customer Journey Analyticsでのセグメントの使用方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 60%
+ht-degree: 56%
 
 ---
 
-# Report Builder でのフィルターの操作
+# Report Builderでのセグメントの操作
 
-新しいデータブロックを作成するとき、またはコマンドパネルから「**データブロックの編集**」オプションを選択するとき、フィルターを適用できます。
+セグメントを適用できるのは、新しいデータブロックを作成するとき、またはコマンドパネルから **データブロックの編集** オプションを選択するときです。
 
 ## データブロックへのフィルターの適用
 

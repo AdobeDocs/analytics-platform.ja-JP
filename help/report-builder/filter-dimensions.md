@@ -1,12 +1,12 @@
 ---
 title: Report Builderでディメンションをフィルタリングする方法
-description: Customer Journey Analytics用にReport Builderでディメンションをフィルターを使用する方法について説明します
+description: Customer Journey AnalyticsのReport Builderでディメンションのフィルターを使用する方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 88%
@@ -21,7 +21,7 @@ ht-degree: 88%
 
 1. データブロックを選択し、「コマンド」パネルの「データブロックを編集」をクリックします。
 
-1. 「次へ」をクリックして、「ディメンション」タブを表示します。
+1. 「**[!UICONTROL 次へ]**」をクリックして、「ディメンション」タブを表示します。
 
 1. テーブルのコンポーネント名の横にある「**...**」アイコンをクリックします。
 
@@ -175,6 +175,6 @@ Customer Journey Analytics では、一部のディメンションは「値な�
 
 「**ディメンション**」タブで、ディメンション名の横にある山形記号のアイコンをクリックして、ディメンション項目のリストを表示します。
 
-![ 「Dimension」タブとディメンションのリスト ](./assets/dimensions_chevron.png)
+![ 「ディメンション」タブとディメンションのリスト ](./assets/dimensions_chevron.png)
 
 項目を&#x200B;**テーブル**&#x200B;にドラッグ＆ドロップするか、項目名をダブルクリックして **テーブル**&#x200B;ビルダーに追加できます。
