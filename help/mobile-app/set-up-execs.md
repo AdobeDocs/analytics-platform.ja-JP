@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 74%
+source-wordcount: '711'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 1. [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=ja) で新しいユーザーを設定します。
 
-1. スコアカードを共有するには、Analysis Workspace、スコアカードの基になるデータビュー、フィルター、指標、ディメンションなどのスコアカードコンポーネントにアクセスする権限をアプリユーザーに付与する必要があります。
+1. スコアカードを共有するには、Analysis Workspace、スコアカードの基になるデータビュー、セグメント、指標、ディメンションなどのスコアカードコンポーネントにアクセスする権限をアプリユーザーに付与する必要があります。
 
 ## アプリユーザーのシステム前提条件
 
@@ -35,17 +35,17 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->モバイルアプリの名前はアプリストアでAdobe Analytics dashboard に付けられていますが、アプリはCustomer Journey Analyticsモバイルスコアカードでも同様に使用できます。
+>モバイルアプリの名前はアプリストアでAdobe Analytics dashboard に付けられていますが、このアプリはCustomer Journey Analytics モバイルスコアカードでも同様に使用できます。
 
 **iOS**：
 
-次のリンクをクリックし（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（mobile opp）]** の下のCustomer Journey Analyticsでも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
+次のリンクをクリックし（Customer Journey Analyticsの **[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（mobile opp）]** でも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Android**：
 
-次のリンク（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** の下のCustomer Journey Analyticsでも使用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックし（Customer Journey Analyticsの **[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** でも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
@@ -74,7 +74,7 @@ ht-degree: 74%
 
 共有するスコアカードにタイルが表示される仕方をエグゼクティブユーザーに説明します。
 
-![ 日付範囲、セグメントフィルター、選択した指標およびディメンションを含む説明タイル ](assets/newexplain.png)
+![ 日付範囲、セグメント、選択した指標およびディメンションを含むタイルの説明 ](assets/newexplain.png)
 
 ![スコアカードの例](assets/intro_scorecard.png)
 
@@ -112,7 +112,7 @@ ht-degree: 74%
 
 ![何も共有されていない](assets/nothing.png)
 
-* エグゼクティブユーザーが間違ったCustomer Journey Analyticsサンドボックスを選択した、または
+* エグゼクティブユーザーが間違ったCustomer Journey Analytics サンドボックスを選択した、または
 * スコアカードがエグゼクティブユーザーと共有されていない
 
-エグゼクティブユーザーが適切なスコアカードサンドボックスにログインでき、Customer Journey Analyticsが共有されていることを確認します。
+エグゼクティブユーザーが適切なCustomer Journey Analytics サンドボックスにログインでき、スコアカードが共有されていることを確認します。

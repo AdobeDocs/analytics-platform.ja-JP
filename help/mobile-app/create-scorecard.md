@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2689'
 ht-degree: 67%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 67%
 <!-- markdownlint-enable MD034 -->
 
 
-次の情報は、Customer Journey Analyticsデータのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。 はじめに、Analytics ダッシュボードのスコアカードビルダーのビデオを視聴できます。
+次の情報は、Customer Journey Analytics データのキュレーターに、エグゼクティブユーザー向けのダッシュボードの設定方法と表示方法を示しています。 はじめに、Analytics ダッシュボードのスコアカードビルダーのビデオを視聴できます。
 
 
 >[!BEGINSHADEBOX]
@@ -91,13 +91,13 @@ Analytics スコアカードでは、次のように、エグゼクティブユ�
 
 ![ ディメンション リストからスコアカードペインを指す矢印が表示された、新しいモバイルスコアカードウィンドウ。](assets/layer_dimensions.png)
 
-## フィルターの適用 {#filters}
+## セグメントの適用 {#segments}
 
-個々のタイルにフィルターを適用するには、左パネルからフィルター（セグメントはCustomer Journey Analytics内のフィルターです）をドラッグし、タイルの上に直接ドロップします。
+個々のタイルにセグメントを適用するには、左パネルからセグメントをドラッグし、タイルの上に直接ドロップします。
 
-スコアカードのすべてのタイルにフィルターを適用する場合は、スコアカードの上にタイルをドロップします。 または、日付範囲の下にあるフィルターメニューでフィルターを選択して、フィルターを適用することもできます。Customer Journey Analytics Workspaceと同じ方法で [ スコアカードに対してフィルターを設定し ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) 適用します。
+スコアカードのすべてのタイルにセグメントを適用する場合は、スコアカードの上にタイルをドロップします。 または、日付範囲の下のセグメントメニューでセグメントを選択して、適用することもできます。 Customer Journey Analytics Workspaceと同じ方法で ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) スコアカードに対してセグメントを設定し、適用します [。
 
-![ ビルドフィルターをハイライト表示するフィルタードロップダウンセレクター ](assets/segment_ui.png)
+![ 作成セグメントをハイライト表示するセグメントドロップダウンセレクター ](assets/segment_ui.png)
 
 ## 日付範囲の追加 {#dates}
 
@@ -186,7 +186,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ## タイルのプロパティの表示と設定 {#tiles}
 
-スコアカードビルダーでタイルをクリックすると、右側のパネルにそのタイルに関連付けられているプロパティと特性および詳細スライドが表示されます。 このパネルでは、タイルに新しい&#x200B;**タイトル**&#x200B;を提供したり、またはフィルターを適用してタイルを設定したりできます。セグメントは、Customer Journey Analyticsのフィルターです。
+スコアカードビルダーでタイルをクリックすると、右側のパネルにそのタイルに関連付けられているプロパティと特性および詳細スライドが表示されます。 このパネルで、タイルに新しい&#x200B;**タイトル**&#x200B;を提供するか、セグメントを適用してタイルを設定することもできます。
 
 ![プロパティタイル](assets/properties-tile-new.png)
 
@@ -281,7 +281,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 ### データストーリーのカスタマイズ {#customize-data-story}
 
-データストーリーを使用すると、すべてをカスタマイズできるので、共有したい情報を共有し、不要な情報をすべて除外できます。タイルと個々のスライドをカスタマイズすると、フィルターの追加、分類の表示、レイアウトの変更、ビジュアライゼーションの変更を行うことができます。
+データストーリーを使用すると、すべてをカスタマイズできるので、共有したい情報を共有し、不要な情報をすべて除外できます。タイルと個々のスライドをカスタマイズすると、セグメントの追加、分類の表示、レイアウトの変更、ビジュアライゼーションの変更を行うことができます。
 
 **タイルをカスタマイズするには**
 

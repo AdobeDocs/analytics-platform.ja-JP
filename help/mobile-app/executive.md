@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 73%
 
 ---
@@ -42,23 +42,23 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->モバイルアプリの名前はアプリストアでAdobe Analytics dashboard に付けられていますが、アプリはCustomer Journey Analyticsモバイルスコアカードでも同様に使用できます。
+>モバイルアプリの名前はアプリストアでAdobe Analytics dashboard に付けられていますが、このアプリはCustomer Journey Analytics モバイルスコアカードでも同様に使用できます。
 
 **iOS**：
 
-次のリンク（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** の下のCustomer Journey Analyticsでも使用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックし（Customer Journey Analyticsの **[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** でも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
 
 [iOS リンク](https://apple.co/2zXq0aN)：
 
 **Android**：
 
-次のリンク（**[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** の下のCustomer Journey Analyticsでも使用できます）をクリックし、画面の指示に従ってアプリをダウンロード、インストールし、開きます。
+次のリンクをクリックし（Customer Journey Analyticsの **[!UICONTROL ツール]**/**[!UICONTROL Analytics ダッシュボード（モバイルアプリ）]** でも使用できます）、画面の指示に従ってアプリをダウンロード、インストール、開きます。
 
 [Android リンク](https://bit.ly/2LM38Oo)
 
-ダウンロードしてインストールすると、エグゼクティブユーザーは既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。
+ダウンロードしてインストールすると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。
 
-![Customer Journey Analyticsアプリのスタートアップスクリーン ](assets/welcome.png)
+![Customer Journey Analytics アプリのスタートアップスクリーン ](assets/welcome.png)
 
 ## ダッシュボードの使用 {#use-dashboards}
 
@@ -82,7 +82,7 @@ ht-degree: 73%
 
    ログインして、何も共有されていないというメッセージが表示された場合は、キュレーターに次の点を確認してください。
 
-   * 適切なCustomer Journey Analyticsのサンドボックスにログインできます。
+   * 適切なCustomer Journey Analytics サンドボックスにログインできます。
    * スコアカードが共有されています。
 
    ![何も共有されていない](assets/nothing.png)
@@ -120,11 +120,11 @@ ht-degree: 73%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。画面右上の「**[!UICONTROL 完了]**」をタップします。「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. セグメントフィルターをスコアカードに適用するには、「フィルター」ドロップダウンリストをタップし、キュレーターによって設定されているセグメントを選択します。 アプリの [ フィルター ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) 機能は、Workspaceと同じです。
+1. セグメントをスコアカードに適用するには、セグメント ドロップダウンリストをタップし、キュレーターによって設定されたセグメントを選択します。 アプリ内の [ セグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) は、Workspace内と同じように機能します。
 
-   ![セグメントフィルター](assets/segment_filter.png)
+   ![セグメント](assets/segment_filter.png)
 
-1. スコアカードの更新：興味のある指標や分類の一部がスコアカードに含まれていない場合は、Customer Journey Analyticsチームに問い合わせてスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL  スコアカード ] の更新情報を取得します。 [!UICONTROL  スコアカード ] に、関心のある指標や分類のすべてが含まれていない場合は、Customer Journey Analytics チームに連絡してスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. アプリケーションでフィードバックを残す手順は、次のとおりです。
 
@@ -157,8 +157,8 @@ ht-degree: 73%
 
 | 用語 | 定義 |
 |--- |--- |
-| 消費者 | モバイルデバイスでCustomer Journey Analyticsから主要指標とインサイトを得るエグゼクティブペルソナ |
-| キュレーター | Customer Journey Analyticsからインサイトを検索して配信し、消費者が表示するスコアカードを構成する、データ専門家のペルソナです |
+| 消費者 | モバイルデバイスでCustomer Journey Analyticsの主要指標とインサイトを確認するエグゼクティブペルソナ |
+| キュレーター | Customer Journey Analyticsからインサイトを検索して配信し、消費者が表示するスコアカードを設定する、データ専門家のペルソナです |
 | キュレーション | 消費者に関連する指標、ディメンション、その他のコンポーネントを含むモバイルスコアカードを作成または編集する行為 |
 | スコアカード | 1 つ以上のタイルを含むダッシュボードビュー |
 | タイル | スコアカードビュー内の指標のレンダリング |
