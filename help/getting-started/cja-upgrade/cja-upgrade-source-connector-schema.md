@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '587'
 ht-degree: 23%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 23%
 >id="cja-upgrade-source-connector-create-schema"
 >title="Analytics ソースコネクタ用のスキーマの作成"
 >abstract="このスキーマは、「Adobe Analytics ExperienceEvent」フィールドグループと、組織のカスタムスキーマを構成するすべてのフィールドグループを組み合わせたものです。これにより、Analytics ソースコネクタで使用されるフィールドを組織のスキーマにマッピングでき、履歴データにのみ使用されます。<br><br>本質的には技術的なものですが、このスキーマの作成は数時間で完了できます。組織のカスタムスキーマを構成するフィールドグループを正確に把握している場合は、さらに早く完了できる可能性があります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="履歴データ用の Analytics ソースコネクタを作成"
+>abstract="Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 
