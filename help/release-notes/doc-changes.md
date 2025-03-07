@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: ht
-source-wordcount: '4649'
-ht-degree: 100%
+source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
+workflow-type: tm+mt
+source-wordcount: '4664'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 | --- | --- |
+| **2025年3月** | |
+| Quantum Metric のユースケース | [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md) からデータを収集するためのユースケースを追加しました。 |
 | **2025年2月** |  |
 | メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
 | BI 拡張機能 - 拡張サポート | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
@@ -199,7 +201,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)に関する新しいトピック。 |
 | 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** | |
-| 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/ga/overview.md)に関する新しいユースケース。 |
+| 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/third-party/ga/overview.md)に関する新しいユースケース。 |
 | 2022年9月 | Workspace の[複合グラフ](/help/analysis-workspace/visualizations/combo-charts.md)に関する新しいトピック。 |
 | 2022年9月 | Workspace の[実験パネル](/help/analysis-workspace/c-panels/experimentation.md)に関する新しいトピック。 |
 | **2022年8月** | |
@@ -269,7 +271,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2021年4月 | [永続性](/help/data-views/component-settings/persistence.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | ワークスペースでのスケジュール済みプロジェクトのサポートに関する新しいドキュメントを追加しました。 |
 | 2021年4月 | [強化されたデータビューエクスペリエンス](/help/data-views/data-views.md) に関する新しいトピックを追加しました。 |
-| 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/ga/overview.md) と [データの分析](/help/use-cases/ga/report.md) に関する新しいトピックを追加しました。 |
+| 2021年4月 | [Google Analytics データの取り込み](/help/use-cases/third-party/ga/overview.md) と [データの分析](/help/use-cases/third-party/ga/report.md) に関する新しいトピックを追加しました。 |
 | 2021年4月 | ワークスペースの[予定レポート](/help/analysis-workspace/export/t-schedule-report.md)に関するトピックを追加しました。 |
 | 2021年4月 | [Customer Journey Analytics の高基数ディメンション](/help/components/dimensions/high-cardinality.md)に関する新しいトピック。 |
 | **2021年3月** | |

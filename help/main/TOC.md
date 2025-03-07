@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 439bc00f2a7e08c8b73a4caa3a3c7269a3a7f895
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1210'
+ht-degree: 90%
 
 ---
 
@@ -416,11 +416,19 @@ ht-degree: 91%
 
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
-   + Google Analytics データ {#ga}
-      + [Google Analytics からデータを移行](../use-cases/ga/overview.md)
-      + [Google Analytics 履歴データの取り込み](../use-cases/ga/backfill.md)
-      + [Google Analytics データのストリーミングの設定](../use-cases/ga/streaming.md)
-      + [Google Analytics データに関するレポート](../use-cases/ga/report.md)
+   + サードパーティのデータ {#third-party}
+      + [概要](/help/use-cases/third-party/overview.md)
+      + Google Analytics {#ga}
+         + [Google Analytics からデータを移行](/help/use-cases/third-party/ga/overview.md)
+         + [Google Analytics 履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)
+         + [Google Analytics データのストリーミングの設定](/help/use-cases/third-party/ga/streaming.md)
+         + [Google Analytics データに関するレポート](/help/use-cases/third-party/ga/report.md)
+      + Quantum Metric {#qm}
+         + [セッション ID を収集](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+         + [セッション再生のタイ](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+         + [ヒートマップの使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
+         + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
+         + [Source コネクタ](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + データ取り込み {#data-ingestion}
       + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
       + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
