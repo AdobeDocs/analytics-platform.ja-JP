@@ -3,18 +3,18 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f61e3c1563187a4852734fcca5ffbd21b70849f0
+source-git-commit: 816208ae82ac8cc0b79ba2621aa4174306cf7397
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 77%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2025年2月）
 
-**最終更新日**：2025年2月20日（PT）
+**最終更新日**：2025年3月11日（PT）
 
-このリリースノートは、2025年1月24日～2025年3月18日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+このリリースノートは、2025年1月24日～2025年3月12日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
@@ -22,6 +22,7 @@ ht-degree: 100%
 | ----------- | ---------- | ------- | ---- |
 | **BI 拡張機能 - 拡張サポート** | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases)するようになりました。 |   | 2025年1月24日（PT） |
 | **メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新** | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025年1月30日（PT） |
+| **Customer Journey Analytics アップグレードガイド** | Adobe AnalyticsからCustomer Journey Analyticsにアップグレードするためのステップバイステップのガイドを生成できます。 このガイドは、お客様の組織に合わせてカスタマイズされ、現在のAdobe Analytics環境、Customer Journey Analyticsの使用目的、お客様の組織が望んでいる時間節約のメリットを考慮しています。<p>カスタムガイドの作成を開始するには、[!DNL Customer Journey Analytics] にログインし、「**[!UICONTROL Workspace**[!UICONTROL 」タブで ]**Customer Journey Analyticsにアップグレード]** を選択します。<p>[詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | 2025年3月11日（PT） |
 
 
 ## Customer Journey Analytics の修正点
