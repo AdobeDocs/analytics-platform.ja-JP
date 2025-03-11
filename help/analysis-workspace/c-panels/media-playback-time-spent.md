@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 49%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="メディア再生滞在時間"
->abstract="ビデオ消費の推移を分析し、様々な精度を選択し、オプションで、フィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
+>abstract="ビデオ消費の推移を分析し、様々な精度を選択して、オプションでフィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 

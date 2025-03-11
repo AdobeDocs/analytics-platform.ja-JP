@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="フォールアウトコンテナ"
->abstract="パスを分析するコンテナを選択します。 この選択により、エンゲージメントを理解し、選択したコンテナに対する解析を拘束できます。"
+>abstract="パスを分析するコンテナを選択します。 この選択により、エンゲージメントを理解し、選択したコンテナに対する分析を制約できます。"
 
 ビジュアライゼーションの一部として、特定の設定を使用できます。
 

@@ -10,18 +10,18 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
-# Customer Journey Analyticsへのアップグレード後にAdobe Analyticsを無効にするタイミングの評価 {#evaluate-aa-needs}
+# Customer Journey Analytics へのアップグレード後、Adobe Analytics を無効にするタイミングの評価 {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Customer Journey Analytics への完全な移行"
->abstract="（推奨）Adobeでは、Adobe AnalyticsからCustomer Journey Analyticsに完全に移行することをお勧めします。 移行期間中は、データを並べて比較するために、Customer Journey Analyticsと共にAdobe Analyticsを実行することを計画してください。 データに慣れたら、Adobe Analyticsを無効にできます。"
+>abstract="（推奨）アドビでは、Adobe Analytics から Customer Journey Analytics に完全に移行することをお勧めします。移行期間中は、データを横に並べて比較するために、Adobe Analytics を Customer Journey Analytics と共に実行するよう計画する必要があります。データに問題がなければ、Adobe Analytics を無効にできます。"
 
 <!-- markdownlint-enable MD034 -->
 

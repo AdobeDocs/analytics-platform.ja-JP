@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
->title="データフィードに類似した書き出し機能の使用"
->abstract="データフィードの正確な置き換えは、まだCustomer Journey Analyticsでは使用できません。 ただし、完全なテーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート API などの機能を使用すると、同様の機能を実現できます。"
+>title="データフィードと同様の書き出し機能の使用"
+>abstract="データフィードの完全な代替機能は、Customer Journey Analytics ではまだ利用できません。ただし、完全なテーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート API などの機能を使用すると、同様の機能を実現できます。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,18 +10,18 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 40%
+ht-degree: 47%
 
 ---
 
-# アップグレードの選択肢：AppMeasurement データ収集をExperience Platform Web SDKおよびCustomer Journey Analyticsで使用する {#data-collection-appmeasurement}
+# アップグレードの代替案：Experience Platform Web SDK と Customer Journey Analytics での AppMeasurement データ収集の使用 {#data-collection-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
->title="Web SDKでのAppMeasurement ロジックの使用"
->abstract="XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてAppMeasurement形式のすべての変数を送信します。<br><br> このオプションを使用すると、XDM オブジェクトをゼロから入力するのではなく、AppMeasurement ロジックを XDM にマッピングできるので、実装時間を節約できます。 ただし、将来に追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。"
+>title="Web SDK での AppMeasurement ロジックの使用"
+>abstract="XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてすべての変数を AppMeasurement 形式で送信します。<br><br>このオプションを使用すると、XDM オブジェクトをゼロから入力するのではなく、AppMeasurement ロジックを XDM にマッピングできるので、実装時間が節約されます。ただし、今後追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。"
 
 <!-- markdownlint-enable MD034 -->
 

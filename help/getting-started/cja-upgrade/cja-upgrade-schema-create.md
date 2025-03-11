@@ -10,11 +10,11 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
-# Customer Journey Analyticsで使用するカスタムスキーマの作成 {#create-custom-schema}
+# Customer Journey Analytics で使用するカスタムスキーマの作成 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 

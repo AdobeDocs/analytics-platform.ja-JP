@@ -10,7 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 27%
+ht-degree: 46%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="ステッチされたデータセットを生成するには、Adobe カスタマーケアにお問い合わせください"
->abstract="複数のデータセットに存在するがプライマリ識別子ではない識別子を含むフィールドがある場合、それを使用して、一貫性のある識別子で新しいデータセットを生成できます。"
+>title="ステッチされたデータセットを生成するには、アドビカスタマーケアにお問い合わせください"
+>abstract="複数のデータセットに存在するがプライマリ識別子ではない識別子を含むフィールドがある場合は、これを使用して一貫性のある識別子で新しいデータセットを生成できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="Real-time CDP との統合"
->abstract="複数のソースのプロファイルデータを組み合わせて、ユーザー特性に基づいてオーディエンスとセグメントを生成します。"
+>title="Real-Time CDP との統合"
+>abstract="複数のソースからのプロファイルデータを組み合わせて、ユーザー特性に基づいてオーディエンスとセグメントを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -56,8 +56,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
->title="一時的にAdobe Targetと統合する"
->abstract="Adobeでは、パーソナライゼーションのユースケースに対してAdobe Journey Optimizerとの統合を推奨します。 Adobe Targetとの統合は可能ですが、短期的な解決策になります。"
+>title="Adobe Target との一時的な統合"
+>abstract="アドビでは、パーソナライゼーションのユースケースに対して Adobe Journey Optimizer との統合をお勧めします。Adobe Targetとの統合は可能ですが、短期的な解決策になります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="Journey Optimizerとの統合"
->abstract="顧客とのつながり、コンテキスト、パーソナライズされたエクスペリエンスを提供します。"
+>title="Journey Optimizer との統合"
+>abstract="顧客とのつながり、コンテキスト、パーソナライズされたエクスペリエンスを配信します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,8 +74,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
->title="Adobe Audience Manager と一時的に統合する"
->abstract="Adobeでは、オーディエンスベースのユースケースに対して、Adobe Real-time CDP との統合を推奨します。 Audience Managerとの統合は可能ですが、短期的な解決策になります。"
+>title="Adobe Audience Manager との一時的な統合"
+>abstract="アドビでは、オーディエンスベースのユースケースに対して Adobe Real-Time CDP との統合をお勧めします。Audience Managerとの統合は可能ですが、短期的な解決策になります。"
 
 <!-- markdownlint-enable MD034 -->
 

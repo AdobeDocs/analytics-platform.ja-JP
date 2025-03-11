@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 25%
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="フロー"
->abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。 開始元および終了元のコンポーネント（指標、ディメンション、または項目）を指定します。 オプションで、詳細設定を定義して、ビジュアライゼーションをさらに設定できます。"
+>abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。開始元および終了元のコンポーネント（指標、ディメンションまたは項目）を指定します。オプションで、詳細設定を定義して、ビジュアライゼーションをさらに設定できます。"
 
 <!-- markdownlint-enable MD034 -->
 

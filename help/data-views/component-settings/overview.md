@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="コンポーネント設定"
->abstract="名前、説明およびコンポーネントに関連するその他の設定を表示および設定します。 このチェックボックスをオンにして、レポートで管理者以外のユーザーに対してこのコンポーネントを非表示にします。 管理者は、Workspace プロジェクトで **[!UICONTROL すべてのコンポーネントを表示]** を選択して、コンポーネントにアクセスできます。"
+>abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。このボックスをオンにすると、レポートで管理者以外のユーザーに対してこのコンポーネントが非表示になります。管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
 
 <!-- markdownlint-enable MD034 -->
 

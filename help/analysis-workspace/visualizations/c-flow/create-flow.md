@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="フローコンテナ"
->abstract="パスの表示（数値）に使用するコンテナを選択します。"
+>abstract="パス（の数値）の表示に使用するコンテナを選択します。"
 
 
 フロービジュアライゼーションは、web サイトやアプリ上の特定のコンバージョンイベントに起因するジャーニーを理解するのに役立ちます。 または、特定のコンバージョンイベントに至る。 ビジュアライゼーションは、ディメンション（およびディメンション項目）または指標を通過するパスをトレースします。

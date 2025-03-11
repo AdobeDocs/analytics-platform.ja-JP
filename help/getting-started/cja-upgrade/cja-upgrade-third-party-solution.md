@@ -10,7 +10,7 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 15%
+ht-degree: 32%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Adobe Analytics 以外の製品"
->abstract="Google Analyticsなど、Adobe Analytics以外の製品のデータを収集する実装。 このオプションを選択すると、質問表に記載されている、Adobe Analytics以外の製品からCustomer Journey Analyticsにアップグレードするときに適用されないオプションのいくつかが無効になります。"
+>abstract="Google Analytics など、Adobe Analytics 以外の製品のデータを収集する実装。このオプションを選択すると、Adobe Analytics 以外の製品から Customer Journey Analytics にアップグレードする際に適用されない、アンケートのいくつかのオプションが無効になります。"
 
 <!-- markdownlint-enable MD034 -->
 

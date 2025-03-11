@@ -10,18 +10,18 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 25%
+ht-degree: 41%
 
 ---
 
-# 代替アップグレード：Analytics ソースコネクタを使用して、Customer Journey Analyticsにのみアップグレードします {#use-source-connector-exclusively}
+# アップグレードの代替案：Customer Journey Analytics へのアップグレードに対する Analytics ソースコネクタのみの使用 {#use-source-connector-exclusively}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
 >title="Analytics ソースコネクタのみの使用"
->abstract="（非推奨）Customer Journey Analytics ソースコネクタを、Analytics の唯一の実装パスとして使用できます。 <br><br> このオプションを使用すると、データをCustomer Journey Analyticsにすばやく送信できるので、実装時間を節約できます。 ただし、待ち時間の増加や今後のAdobe Analyticsからの移行の困難さなど、様々な欠点があります。"
+>abstract="（非推奨）Analytics ソースコネクタを、Customer Journey Analytics の唯一の実装パスとして使用できます。<br><br>このオプションを使用すると、Customer Journey Analytics にデータをすばやく送信できるので、実装時間が節約されます。ただし、待ち時間が長い、今後 Adobe Analytics から移行するのが難しいなど、様々な欠点があります。"
 
 <!-- markdownlint-enable MD034 -->
 

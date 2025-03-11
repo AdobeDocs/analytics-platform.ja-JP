@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics用の Streaming Media Collection の設定
+title: Customer Journey Analytics 用ストリーミングメディアコレクションの設定
 description: Customer Journey Analytics用の Streaming Media Collection の設定方法について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 source-git-commit: f7b06838bbe5b1a5e304c6d0da6d34635391a90b
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
-# Customer Journey Analytics用の Streaming Media Collection の設定 {#streaming-media-setup}
+# Customer Journey Analytics 用ストリーミングメディアコレクションの設定 {#streaming-media-setup}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
->title="Media Edgeのセットアップと実装"
->abstract="Streaming Media Collection をCustomer Journey Analyticsで使用する場合は、アップグレードプロセスの特定の手順で具体的に選択する必要があります。 例えば、スキーマに MediaAnalytics インタラクションの詳細フィールドグループを追加したり、データストリームで Media Analytics を有効にしたりする必要があります。"
+>title="Media Edge の設定と実装"
+>abstract="ストリーミングメディアコレクションを Customer Journey Analytics と共に使用する予定の場合は、アップグレードプロセスの特定の手順で特定の選択を行う必要があります。例えば、スキーマに MediaAnalytics インタラクションの詳細フィールドグループを追加したり、データストリームで Media Analytics を有効にしたりする必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 38%
+ht-degree: 45%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="アトリビューション"
->abstract="成功指標、チャネル、ルックバックウィンドウを使用して、任意の数のアトリビューションモデルをすばやく比較および視覚化します。"
+>abstract="成功指標、チャネルおよびルックバックウィンドウを使用して、アトリビューションモデルをすばやく比較および視覚化します。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="アトリビューションパネル"
->abstract="成功指標に向けて、任意の数のアトリビューションモデルをすばやく比較および視覚化します。 チャネル（ディメンション）、含めるモデルおよびルックバックウィンドウを選択します。"
+>abstract="成功指標のアトリビューションモデルをすばやく比較および視覚化します。チャネル（ディメンション）、含めるモデルおよびルックバックウィンドウを選択します。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ パネル"
 
 <!-- markdownlint-enable MD034 -->

@@ -10,7 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 38%
+ht-degree: 55%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
->title="Activity Map のオーバーレイは、まだサポートされていません"
->abstract="Activity Mapのオーバーレイは、Customer Journey Analyticsではまだサポートされていません。 今後利用可能になる予定です。"
+>title="Activity Map のオーバーレイのサポートはまだ利用できません"
+>abstract="Activity Map のオーバーレイのサポートは、Customer Journey Analytics ではまだ利用できません。今後利用可能になる予定です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -84,7 +84,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="ストリーミングメディアデータ"
->abstract="オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とするAdobe AnalyticsおよびCustomer Journey Analyticsのアドオンです。"
+>abstract="オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とする Adobe Analytics と Customer Journey Analytics のアドオンです。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -92,8 +92,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"
->title="プロジェクトとコンポーネントを移行する"
->abstract="Adobe Analytics プロジェクトとそれに関連するコンポーネントをCustomer Journey Analyticsに取り込みます。"
+>title="プロジェクトとコンポーネントの移行"
+>abstract="Adobe Analytics プロジェクトと関連コンポーネントを Customer Journey Analytics に取り込みます。"
 
 <!-- markdownlint-enable MD034 -->
 

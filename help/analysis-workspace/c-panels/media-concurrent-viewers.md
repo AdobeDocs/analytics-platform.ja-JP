@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="メディア同時閲覧者数"
->abstract="同時視聴者数の推移を分析し、ピーク同時実行性を表示します。また、オプションで、フィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
+>abstract="同時視聴者数の推移を分析し、ピーク時の同時実行を表示して、オプションでフィルター、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 

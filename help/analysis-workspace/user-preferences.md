@@ -8,7 +8,7 @@ role: User
 source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
 source-wordcount: '3632'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -186,22 +186,22 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL  フロー ] ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フロー ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
+>abstract="[!UICONTROL フロー]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトのコンテナが含まれていない場合、[!UICONTROL フロー]ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL  フォールアウト ] ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フォールアウト ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
+>abstract="[!UICONTROL フォールアウト]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトのコンテナが含まれていない場合、[!UICONTROL フォールアウト]ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="デフォルトのカウント方法"
->abstract="[!UICONTROL  ヒストグラム ] ビジュアライゼーションに使用するデフォルトのカウント方法を選択します。 選択したデータビューに、選択したデフォルトのカウント方法が含まれていない場合、[!UICONTROL  ヒストグラム ] ビジュアライゼーションは別のプライマリアカウント方法に自動的に切り替わります。"
+>abstract="[!UICONTROL ヒストグラム]ビジュアライゼーションに使用するデフォルトのカウント方法を選択します。選択したデータビューに選択したデフォルトのカウント方法が含まれていない場合、[!UICONTROL ヒストグラム]ビジュアライゼーションは自動的に別のプライマリカウント方法に切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL ジャーニーキャンバス ] のビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  プライマリキャンバス ] ビジュアライゼーションは別のジャーニーコンテナに自動的に切り替わります。"
+>abstract="[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトのコンテナが含まれていない場合、[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 
 Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーション環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。

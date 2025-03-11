@@ -7,7 +7,7 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 19%
+ht-degree: 28%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="次または前の項目"
->abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。 ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
+>abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
 
 
 

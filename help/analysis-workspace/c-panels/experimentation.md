@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '2141'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="実験"
->abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断します。 実験、比較対象のコントロールバリアント、成功指標および標準化指標を指定します。 オプションで、信頼性の上限と下限を設定します。"
+>abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導く上で最適な判断を下せます。実験、比較対象のコントロールバリアント、成功指標および標準化指標を指定します。オプションで、信頼性の上限と下限を設定します。"
 
 <!-- markdownlint-enable MD034 -->
 

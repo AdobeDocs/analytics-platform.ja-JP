@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 64%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="接続へのデータセットの追加"
->abstract="Adobe Experience Platformのデータセットにデータを追加したら、そのデータセットをCustomer Journey Analyticsの接続に追加できます。 他のチャネルからデータを追加する際は、組織が使用するスキーマに準拠していることを確認してください。<br><br>追加するデータセットごとに、特にすべてのイベントに一意の ID が存在することと、全体的なデータ構造が組織のカスタムスキーマに準拠していることを確認することなど、膨大な作業が必要になります。このワークフローを確立するには、数か月にわたって組織内の多くのチーム間で調整が必要になる場合があります。"
+>abstract="Adobe Experience Platform のデータセットにデータを追加したら、そのデータセットを Customer Journey Analytics の接続に追加できます。他のチャネルからデータを追加する際は、組織が使用するスキーマに準拠していることを確認してください。<br><br>追加するデータセットごとに、特にすべてのイベントに一意の ID が存在することと、全体的なデータ構造が組織のカスタムスキーマに準拠していることを確認することなど、膨大な作業が必要になります。このワークフローを確立するには、数か月にわたって組織内の多くのチーム間で調整が必要になる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 28%
+ht-degree: 35%
 
 ---
 
@@ -92,8 +92,8 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
->title="既存の実装タイプを決定"
->abstract="組織内で内部的に作業して、Adobe Analyticsへのデータ送信に現在使用している実装のタイプを判断します。 Customer Journey Analyticsへの移行の準備が整った時点で、この情報を把握している個人またはチームと提携する可能性が高くなります。<br><br> 組織が使用する実装のタイプを決定したら、アンケートの回答を変更します。"
+>title="既存の実装タイプの決定"
+>abstract="組織内で作業して、Adobe Analytics へのデータ送信に現在使用している実装のタイプを決定します。Customer Journey Analytics への移行の準備が整った時点で、この情報を把握している個人またはチームと提携する可能性があります。<br><br>組織が使用する実装のタイプを決定したら、アンケートの回答を変更します。"
 
 <!-- markdownlint-enable MD034 -->
 
