@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
-source-wordcount: '2689'
-ht-degree: 67%
+source-wordcount: '2698'
+ht-degree: 66%
 
 ---
 
@@ -48,7 +48,7 @@ Analytics スコアカードでは、次のように、エグゼクティブユ�
 
 スコアカードを作成するには、次の手順を実行する必要があります。
 
-1. 「[!UICONTROL 空のモバイルスコアカード]」テンプレートにアクセスします。
+1. Workspaceの [!UICONTROL  空のモバイルスコアカード ] テンプレートにアクセスします。
 2. データを使用したスコアカードを構成し、保存します。
 
 ## 「[!UICONTROL 空のモバイルスコアカード]」テンプレートへのアクセス {#template}
@@ -58,6 +58,7 @@ Analytics スコアカードでは、次のように、エグゼクティブユ�
 ### 新規プロジェクトを作成 {#create}
 
 1. Customer Journey Analyticsを開いて「**[!UICONTROL Workspace]**」タブをクリックします。
+1. 左パネルで、「**[!UICONTROL プロジェクト]**」をクリックします。
 1. 「**[!UICONTROL プロジェクトを作成]**」をクリックして、「**[!UICONTROL 空のモバイルスコアカード]**」プロジェクトテンプレートを選択します。
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -72,7 +73,7 @@ Analytics スコアカードでは、次のように、エグゼクティブユ�
 
 スコアカードテンプレートを実装する手順は、次のとおりです。
 
-1. 右側のパネルの「**[!UICONTROL プロパティ]**」で、使用するデータの元となる&#x200B;**[!UICONTROL プロジェクトデータビュー]**&#x200B;を指定します。
+1. 右側のパネルの **[!UICONTROL スコアカードのプロパティ]** で、データを使用する **[!UICONTROL プロジェクトデータビュー]** を指定します。
 
    ![ データビューの選択を強調表示した新しいモバイルスコアカードウィンドウ ](assets/properties_save.png)
 
