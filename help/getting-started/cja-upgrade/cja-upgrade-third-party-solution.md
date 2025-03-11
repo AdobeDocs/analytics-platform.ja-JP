@@ -4,13 +4,11 @@ description: サードパーティの分析ソリューションからCustomer J
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 32%
+source-wordcount: '238'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Adobe Analytics 以外の製品"
->abstract="Google Analytics など、Adobe Analytics 以外の製品のデータを収集する実装。このオプションを選択すると、Adobe Analytics 以外の製品から Customer Journey Analytics にアップグレードする際に適用されない、アンケートのいくつかのオプションが無効になります。"
+>abstract="Google Analytics など、Adobe Analytics 以外の製品のデータを収集する実装。このオプションを選択すると、アップグレードガイドの一部のオプションが無効になります。これらのオプションは、Adobe Analytics以外の製品からCustomer Journey Analyticsにアップグレードするときに適用されません。"
 
 <!-- markdownlint-enable MD034 -->
 

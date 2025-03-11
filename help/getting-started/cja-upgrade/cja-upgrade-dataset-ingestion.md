@@ -4,13 +4,11 @@ description: Customer Journey Analyticsへのアップグレード時にデー�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 42%
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 42%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="データセット内のデータの検証"
->abstract="Web SDK 実装の設定が完了したら、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。主に取り込まれたバッチが表示されている場合、この手順は完了です。主に失敗したバッチが表示されるか、バッチがまったく表示されない場合は、Web SDK の実装を確認して、アドビにデータが正しく送信されていることを確認してください。<br><br>すべてが正しく完璧に行われた場合、この手順は 1 日未満に完了できます。データ収集の問題が複数ある場合、トラブルシューティングにかなり長い時間がかかる可能性があります。"
+>abstract="実装の設定が完了したので、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。 主に取り込まれたバッチが表示されている場合、この手順は完了です。主に失敗したバッチが表示される場合やバッチが表示されない場合は、実装を調べて、Adobeに正しくデータが送信されていることを確認します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,7 +27,7 @@ ht-degree: 42%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Web SDKの実装を設定した後、個々のバッチのステータスを確認して、データがデータセットに取り込まれていることを確認する必要があります。
+Web SDKまたは API の実装を設定した後、データがデータセットに取り込まれていることを確認するには、個々のバッチのステータスを確認する必要があります。
 
 1. Experience Platform UI の左側のナビゲーションで「**[!UICONTROL モニタリング]**」を選択します。
 
@@ -39,13 +37,13 @@ Web SDKの実装を設定した後、個々のバッチのステータスを確�
 
 1. **[!UICONTROL エンドツーエンドのバッチ]** を選択して、バッチのリストを表示します。
 
-   バッチが表示されない場合は、web SDKの実装を調べ、Adobeに正しくデータが送信されていることを確認してください。
+   バッチが表示されない場合は、実装でAdobeにデータが正しく送信されていることを確認してください。
 
    <!-- insert screenshot -->
 
 1. 特定のデータセットのバッチ ID を選択し、**[!UICONTROL 成功]** が **[!UICONTROL ステータス]** フィールドに表示されることを検証します。
 
-   **[!UICONTROL 失敗]** が **[!UICONTROL ステータス]** フィールドに表示される場合は、Web SDKの実装を確認し、Adobeに正しくデータが送信されていることを確認します。
+   **[!UICONTROL 失敗]** が **[!UICONTROL ステータス]** フィールドに表示される場合は、実装を確認し、Adobeに正しくデータが送信されていることを確認します。
 
    この手順を繰り返して、各バッチのステータスを確認します。
 
