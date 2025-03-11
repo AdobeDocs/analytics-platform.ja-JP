@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
+source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -51,23 +52,4 @@ Adobe Experience Platformに送信するデータに Quantum Metric セッショ
 1. 右側のウィンドウで、「永続性 [ 設定を ](/help/data-views/component-settings/persistence.md) セッション」に設定します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-## 手順 4：セッション ID ディメンションに対応するようにWorkspaceを設定する
 
-Workspaceでフリーフォームテーブルを作成し、セッション ID 値が Quantum Metric に直接リンクするように設定します。
-
-1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで ]**0}Workspace} を選択します。**[!UICONTROL 
-1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
-1. セッション ID ディメンションをWorkspace キャンバスにドラッグします。
-1. ディメンション列ヘッダーを右クリックし、「**[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]**」を選択します。
-1. **[!UICONTROL カスタム URL の作成]** を選択します。
-1. 次の URL 構造を貼り付けます。
-
-   ```
-   https://adobe.quantummetric.com/#/replay/cookie:$value
-   ```
-
-1. 「**[!UICONTROL 作成]**」をクリックします。
-
-各セッション ID は、クリック可能なリンクになりました。 これらのリンクを使用すると、新しいタブで Quantum Metric に移動し、その特定のセッションをより詳細に分析できます。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
