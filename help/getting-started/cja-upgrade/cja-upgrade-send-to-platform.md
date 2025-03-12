@@ -3,11 +3,13 @@ title: Customer Journey Analytics への移行時にデータを Adobe Experienc
 description: Customer Journey Analytics への移行時にデータを Adobe Experience Platform に送信
 solution: Customer Journey Analytics
 feature: Basics
+hide: true
+hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 97d48d88af969705f2664781e7a972f20c1b4239
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 64%
+source-wordcount: '897'
+ht-degree: 58%
 
 ---
 
@@ -31,13 +33,9 @@ ht-degree: 64%
 
 +++
 
-<!--
-
 >[!AVAILABILITY]
 >
->The information on this page is being replaced with the following more comprehensive upgrade information: <ul><li>**Recommended upgrade steps**<p>For detailed information, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
-
--->
+>このページの情報は、次のより包括的なアップグレード情報に置き換えられています。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時の推奨パス ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>新しいアップグレードガイドは、組織と独自の状況に合わせたアップグレード手順を動的に生成するものです。</p><p>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
 
 組織に最適な [ アップグレードパスを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-path.md) した後、Adobe Experience Platformへのデータの送信を開始して、Customer Journey Analyticsで利用できるようにします。
 

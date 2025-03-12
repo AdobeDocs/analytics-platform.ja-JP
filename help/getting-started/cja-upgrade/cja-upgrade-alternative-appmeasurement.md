@@ -4,10 +4,8 @@ description: Customer Journey Analyticsへのアップグレード時の代替�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 47%

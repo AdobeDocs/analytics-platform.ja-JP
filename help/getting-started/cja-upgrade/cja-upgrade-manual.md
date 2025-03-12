@@ -4,10 +4,8 @@ description: alloy.js を使用して Platform Web SDKをインストールす�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 8%

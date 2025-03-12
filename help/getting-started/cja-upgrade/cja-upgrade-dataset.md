@@ -4,10 +4,8 @@ description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグ�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 60%
