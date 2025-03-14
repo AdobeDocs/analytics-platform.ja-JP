@@ -4,7 +4,7 @@ description: レポートで使用する日付範囲を作成します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a913f23506f692e64633408b8cd9bad6be27970b
+source-git-commit: 2ed18bcf2767d513265f909690ea53fdbd90a2b5
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 39%
@@ -18,11 +18,11 @@ ht-degree: 39%
 
 ![注釈の作成](assets/create-date-range.png)
 
-* ??メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle]**[!UICONTROL Add]**」を選択します。
-* ??Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
-* ??Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します。
-* ??Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
-* ??Workspace プロジェクトのコンポーネント左パネルで、「![ カレンダー ](/help/assets/icons/Add.svg)**日付範囲 ![ に ](/help/assets/icons/Calendar.svg) 「追加**」を選択します。
+* （A） メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle]**[!UICONTROL Add]**」を選択します。
+* （B） Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
+* （C） Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します
+* （D）Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
+* （E） Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Add.svg)**日付範囲 ![ に ](/help/assets/icons/Calendar.svg) 「追加**」を選択します。
 
 注釈を定義するには、[[!UICONTROL  日付範囲ビルダー ]](#annotation-builder) を使用します。
 
