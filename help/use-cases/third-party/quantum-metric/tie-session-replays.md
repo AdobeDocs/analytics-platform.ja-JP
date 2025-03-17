@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
+source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # Quantum Metric session replays to data in Customer Journey Analytics
 
-Quantum Metric セッションの再生をCJAのデータとリンクさせることで、お客様は「何」の背後にある「理由」をより深く理解できます。  Workspaceを使用してフリクションのあるセッションを検出し、ハイパーリンクされたセッション ID をクリックして、Quantum Metric でのセッションの再生を調べることができます。  このデータにより、セッション内の動作を確認し、消費者の摩擦を引き起こす要因をより深く理解できます。
+Quantum Metric セッションの再生をCJAのデータとリンクさせることで、お客様は「何」の背後にある「理由」をより深く理解できます。  Workspaceを使用してフリクションのあるセッションを検出し、ハイパーリンクされたセッション ID をクリックして、Quantum Metric でのセッションの再生を調べることができます。  このデータにより、セッション内の動作を確認し、消費者の摩擦を引き起こす要因をより深く理解できます。  CJAと連動したセッションリプレイを通じて、お客様の行動に関する重要なコンテキストをエクスペリエンスに取り込むことができます。
 
 ## 前提条件
 
@@ -46,5 +46,5 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID �
 ## 手順 2 Customer Journey Analyticsからのセッションの表示
 
 クリック可能なリンクを含んだWorkspace レポートを作成したら、Customer Journey Analyticsのフィルターを使用して、Quantum Metric で詳細に分析できる興味深いセッションを特定できます。
-この表は、そのセグメント内のすべてのセッションを返します。任意のセッションをクリックすると、QM で詳細を確認できます。  Quantum Metric セッションの再生について詳しくは、https://www.quantummetric.com/platform/session-replayを参照してください。
+この表は、そのセグメント内のすべてのセッションを返します。任意のセッションをクリックすると、QM で詳細を確認できます。  Quantum Metric セッションの再生の詳細については、[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay) を参照してください
 
