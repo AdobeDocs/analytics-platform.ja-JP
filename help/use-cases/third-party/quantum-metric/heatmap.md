@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: a0f82948895f3eac86cf00df1dec8abc2f723fc2
+source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
 
 # Customer Journey Analyticsでの Quantum Metric ヒートマップの使用
 
-Quantum Metric ヒートマッピングをCJA データにリンクすると、ページレベルのエンゲージメントをより深く理解し、消費者の行動に基づいてページを最適化できます。 Workspaceを使用すると、消費者のユーザーフローを理解し、ページ間でたどる消費者のパスを確認できます。 次に、ハイパーリンクされたページ URL をクリックして、ユーザーのコンテンツへのエンゲージメント方法を視覚的にヒートマップできます。
+Quantum Metric ヒートマッピングをCJA データにリンクすると、ページレベルのエンゲージメントをより深く理解し、消費者の行動に基づいてページを最適化できます。 Workspaceを使用すると、消費者のユーザーフローを理解し、ページ間でたどる消費者のパスを確認できます。 次に、ハイパーリンクされたページ URL をクリックして、ユーザーのコンテンツへのエンゲージメント方法を視覚的にヒートマップできます。  Quantum Metric Heatmapping をCJAにリンクすることで、ページレベルのインタラクションをビジネス成果に関連付け、分析を次のレベルに進めることができるようになりました。
 
 この表は、そのセグメント内のすべてのセッションを返します。任意のセッションをクリックすると、QM で詳細を確認できます。  Quantum Metric セッションの再生について詳しくは、https://www.quantummetric.com/platform/session-replayを参照してください。
 
@@ -48,6 +48,6 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 
 ## Customer Journey Analytics内のリンクをクリックした場合のヒートマップの表示
 
-ヒートマッピングの調査対象となるページが見つかったら、URL が含まれるパネルに適用できます。 このテーブルは、対象のページのヒートマップ、スクロールの深さ、インタラクションのキーゾーンを探索できる URL を返します。  Quantum Metric ヒートマップについて詳しくは、https://www.quantummetric.com/platform/interaction-heatmapsを参照してください。
+ヒートマッピングの調査対象となるページが見つかったら、URL が含まれるパネルに適用できます。 このテーブルは、対象のページのヒートマップ、スクロールの深さ、インタラクションのキーゾーンを探索できる URL を返します。  Quantum Metric ヒートマップについて詳しくは、[https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps) を参照してください
 
 
