@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 61b27e14386aaba1612844f3e00692edd38cba17
+source-git-commit: 5eb9136107ed872639b02df2549a2f81dee83e76
 workflow-type: tm+mt
 source-wordcount: '3295'
 ht-degree: 13%
@@ -192,7 +192,7 @@ ht-degree: 13%
 ![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience.png)
 
 1. **[!UICONTROL エクスペリエンスを含める]** を有効にします。
-1. オプション。 web サイトでのコンテンツのレンダリング方法を指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。
+1. オプション。 web サイトでのコンテンツのレンダリング方法をパラメーターで指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。
    1. **[!UICONTROL ドメイン正規表現]** を入力します（例：`/^(?!.*\b(store|help|admin)\b)/`）。 `/` を使用して、正規表現をエスケープする必要があります。
    1. **[!UICONTROL クエリパラメーター]** のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
