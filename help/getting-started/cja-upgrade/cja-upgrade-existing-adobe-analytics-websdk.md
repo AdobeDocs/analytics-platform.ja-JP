@@ -1,5 +1,5 @@
 ---
-title: Platform にデータを送信するように既存のAdobe Analytics Web SDKの実装を設定する
+title: Platform にデータを送信する既存の Adobe Analytics Web SDK の実装の設定
 description: 既存のAdobe Analytics Web SDK実装の設定について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -8,18 +8,18 @@ exl-id: 1459a512-bfa8-4805-97e8-5b6acc6e4ac9
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 53%
+ht-degree: 59%
 
 ---
 
-# Platform にデータを送信するように既存のAdobe Analytics Web SDKの実装を設定する {#existing-websdk-implementation}
+# Platform にデータを送信する既存の Adobe Analytics Web SDK の実装の設定 {#existing-websdk-implementation}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-remove-aa-from-datastream"
->title="Adobe Analytics をサービスとしてデータストリームから削除"
->abstract="Web SDKのデータがすべて機能するので、Platform 管理者と協力して、Adobe Analytics as a service をデータストリームから削除します。 これを行う前に、ユーザーがAdobe Analyticsを使用してからCustomer Journey Analyticsに移行したことを確認してください。"
+>title="データストリームからのサービスとしての Adobe Analytics の削除"
+>abstract="Web SDK データが完全に機能したら、Platform 管理者と協力して、データストリームからサービスとして Adobe Analytics を削除します。これを実行する前に、ユーザーが Adobe Analytics から Customer Journey Analytics に移行していることを確認します。"
 
 <!-- markdownlint-enable MD034 -->
 

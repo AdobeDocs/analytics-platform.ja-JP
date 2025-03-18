@@ -8,7 +8,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="様々なソースのデータの結合"
->abstract="（推奨）様々な web、モバイル、オフラインのプロパティのデータを結び付けて、顧客の行動を単一の統合ビューで表示します。 他のチャネルからの分析データを組み合わせるこの機能は、Customer Journey Analyticsの主なユースケースです。"
+>abstract="（推奨）様々な web、モバイル、オフラインのプロパティのデータを結び付けて、顧客行動の単一の統合ビューを作成します。他のチャネルからの分析データを組み合わせるこの機能は、Customer Journey Analytics の主なユースケースです。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="Adobe Target との一時的な統合"
->abstract="アドビでは、パーソナライゼーションのユースケースに対して Adobe Journey Optimizer との統合をお勧めします。Adobe Targetとの統合は可能ですが、短期的な解決策になります。"
+>abstract="アドビでは、パーソナライゼーションのユースケースに対して Adobe Journey Optimizer との統合をお勧めします。Adobe Target との統合は可能ですが、短期的な解決策です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="Adobe Audience Manager との一時的な統合"
->abstract="アドビでは、オーディエンスベースのユースケースに対して Adobe Real-Time CDP との統合をお勧めします。Audience Managerとの統合は可能ですが、短期的な解決策になります。"
+>abstract="アドビでは、オーディエンスベースのユースケースに対して Adobe Real-Time CDP との統合をお勧めします。Audience Manager との統合は可能ですが、短期的な解決策です。"
 
 <!-- markdownlint-enable MD034 -->
 

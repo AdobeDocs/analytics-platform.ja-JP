@@ -8,7 +8,7 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-historical"
->title="履歴データ用の Analytics ソースコネクタを作成"
->abstract="Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。"
+>title="履歴データ用の Analytics ソースコネクタの作成"
+>abstract="Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータを Adobe Experience Platform に取り込むことができます。このデータは、Customer Journey Analytics で履歴データとして使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 23%
 
 ## Analytics ソースコネクタを使用して履歴データをCustomer Journey Analyticsに取り込む方法を説明します
 
-Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータをAdobe Experience Platformに取り込むことができます。 その後、このデータをCustomer Journey Analyticsの履歴データとして使用できます。
+Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータを Adobe Experience Platform に取り込むことができます。このデータは、Customer Journey Analytics で履歴データとして使用できます。
 
 ここでは、Customer Journey Analytics Web SDKの実装で使用する [ カスタムスキーマを作成する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ことを前提としています。これは、組織のニーズと使用する特定の Platform アプリケーションに合わせて調整される、合理化されたスキーマが必要なためです。
 

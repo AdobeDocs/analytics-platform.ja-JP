@@ -8,24 +8,24 @@ exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 4%
+ht-degree: 60%
 
 ---
 
-# Edge Network API を使用した Platform Web SDKのインストール {#upgrade-manual}
+# Edge Network API を使用した Platform Web SDK のインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api-implementation"
->title="サイトに alloy.js を追加"
->abstract="Adobe Experience Platform Web SDK JavaScriptのビルドプロセスを制御するために NPM パッケージをインストールすると、Platform Web SDKをインストールできます。"
+>title="サイトへの alloy.js の追加"
+>abstract="Adobe Experience Platform Web SDK JavaScript のビルドプロセスを制御することを目的に、NPM パッケージをインストールすると、Platform Web SDK をインストールできます。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Adobe Experience Platform Web SDK JavaScriptのビルドプロセスを制御するために NPM パッケージをインストールすると、Platform Web SDKをインストールできます。
+Adobe Experience Platform Web SDK JavaScript のビルドプロセスを制御することを目的に、NPM パッケージをインストールすると、Platform Web SDK をインストールできます。
 
 1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) にある [ オプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) の節の情報に従います。
 

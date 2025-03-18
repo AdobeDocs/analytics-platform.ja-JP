@@ -8,7 +8,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 18%
+ht-degree: 31%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="Web SDKのデータを排他的に使用するように Analytics ソースコネクタを無効にする"
->abstract="Analytics ソースコネクタは、横に並べられたデータ比較、履歴データ、Customer Journey Analyticsでは完全には使用できない一部の機能へのアクセスを提供するために使用されます。 これらの目的でAdobe Analyticsが不要になったら、Analytics ソースコネクタを無効にできます。"
+>title="Web SDK からのデータのみを使用する Analytics ソースコネクタを無効にする"
+>abstract="Analytics ソースコネクタは、並べてデータを比較したり、履歴データを提供したり、Customer Journey Analytics では完全には使用できない一部の機能にアクセスしたりするのに使用されます。これらの目的で Adobe Analytics が不要になった場合は、Analytics ソースコネクタを無効にすることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ Customer Journey Analyticsを無効にするかどうかを判断する際や、
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
 >title="タグの Analytics 拡張機能を無効にする"
->abstract="Web SDKのデータがすべて機能している場合は、タグ管理者に問い合わせて、タグプロパティからAdobe Analytics拡張機能を削除してください。 これを行う前に、ユーザーがAdobe Analyticsを使用してからCustomer Journey Analyticsに移行したことを確認してください。"
+>abstract=" Web SDK データが完全に機能したら、タグ管理者と協力して、タグプロパティから Adobe Analytics 拡張機能を削除します。これを実行する前に、ユーザーが Adobe Analytics から Customer Journey Analytics に移行していることを確認します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Customer Journey Analyticsを無効にするかどうかを判断する際や、
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
 >title="Adobe Analytics の API データ収集を無効にする"
->abstract="Web SDKのデータがすべて機能するので、該当するエンジニアリングチームと協力して、Adobe Analytics コードをプロジェクトから削除します。 これを行う前に、ユーザーがAdobe Analyticsを使用してからCustomer Journey Analyticsに移行したことを確認してください。"
+>abstract="Web SDK データが完全に機能したら、該当するエンジニアリングチームと協力して、プロジェクトから Adobe Analytics コードを削除します。これを実行する前に、ユーザーが Adobe Analytics から Customer Journey Analytics に移行していることを確認します。"
 
 <!-- markdownlint-enable MD034 -->
 

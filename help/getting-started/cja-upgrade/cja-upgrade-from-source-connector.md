@@ -8,7 +8,7 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 14%
+ht-degree: 30%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 14%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
->title="既存の Analytics ソースコネクタを削除"
->abstract="現在持っている Analytics ソースコネクタは、組織のカスタムスキーマと互換性がありません。 ただし、データは Analytics レポートスイートにまだ存在しています。 この手順では、現在の Analytics ソースコネクタを削除するので、後の手順で正しいスキーマを使用して再作成できます。<br><br> ソースコネクタを削除する前に、組織内の他のユーザーと調整して、ソースコネクタの削除が組織内のレポートに影響を与えないようにすることができます。 この調整は、完了するまで数週間かかる場合があります。"
+>title="既存の Analytics ソースコネクタの削除"
+>abstract="現在使用している Analytics ソースコネクタは、組織のカスタムスキーマと互換性がありません。ただし、データは Analytics レポートスイートにまだ存在しています。この手順では、現在の Analytics ソースコネクタを削除するので、後続の手順で正しいスキーマを使用して再作成できます。<br><br>ソースコネクタを削除する前に、組織内の他のユーザーと調整して、ソースコネクタの削除が組織内のレポートに影響を与えないことを確認することをお勧めします。この調整が完了するまでに数週間かかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

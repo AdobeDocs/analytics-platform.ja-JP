@@ -1,5 +1,5 @@
 ---
-title: alloy.js を使用して Platform Web SDKをインストールします
+title: alloy.js を使用した Platform Web SDK のインストール
 description: alloy.js を使用して Platform Web SDKをインストールする方法を説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -8,18 +8,18 @@ exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 8%
+ht-degree: 70%
 
 ---
 
-# alloy.js を使用して Platform Web SDKをインストールします {#upgrade-manual}
+# alloy.js を使用した Platform Web SDK のインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-implementation"
->title="サイトに alloy.js を追加"
->abstract="実装の各ページにベースコードを直接追加することで、Platform Web SDKを手動でインストールできます。 Web サイトの開発チームと協力して、これを実現します。"
+>title="サイトへの alloy.js の追加"
+>abstract="実装の各ページにベースコードを直接追加すると、Platform Web SDK を手動でインストールできます。Web サイト開発チームと協力して、これを実現します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-populate-xdm"
->title="XDM オブジェクトを入力してデータストリームに送信"
->abstract="この手順では、データストリームにデータを送信するためのJavaScript ロジック全体を使用します。 Adobeでは、XDM オブジェクトの入力方法を追跡するために、ソリューションデザインドキュメントを管理することをお勧めします。 正しい JSON ペイロード値を確立し、テストしてサイトにデプロイするために 1 か月以上を費やすことを想定しています。 この手順は、エンジニアリングチームと常に連絡を取って完了する必要があるので、応答性によっては時間がかかる可能性があります。"
+>title="XDM オブジェクトを入力し、データストリームに送信します"
+>abstract="この手順には、データストリームにデータを送信するための JavaScript ロジック全体が含まれます。 アドビでは、入力した XDM オブジェクトを追跡するためにソリューションデザインドキュメントを保守することをお勧めします。正しい JSON ペイロード値を確立し、テストして、サイトにデプロイするには、1 か月以上かかることを想定してください。この手順を完了するには、エンジニアリングチームとの継続的な連絡が必要になるので、チームの応答性によっては時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

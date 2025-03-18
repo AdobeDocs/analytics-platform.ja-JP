@@ -8,7 +8,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 47%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
->title="Web SDK を指すように AppMeasurement ロジックを変更"
->abstract="この手順が表示されるのは、実装のショートカットを選択したためです。 AppMeasurement ロジックをコピーまたは変更し、s オブジェクトではなく、データオブジェクトを入力します。 例えば、s.eVar1 の割り当てを data に変更します。__adobe.analytics.eVar1 を繰り返し、すべての Analytics 変数に対して繰り返します。"
+>title="Web SDK を参照する AppMeasurement ロジックの変更"
+>abstract="この手順は、実装のショートカットを選択したので表示されます。AppMeasurement ロジックをコピーまたは変更して、s オブジェクトの代わりにデータオブジェクトを入力します。例えば、s.eVar1 の割り当てを data.__adobe.analytics.eVar1 に変更し、すべての Analytics 変数に対して繰り返します。"
 
 <!-- markdownlint-enable MD034 -->
 

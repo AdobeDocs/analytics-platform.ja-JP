@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 38%
+ht-degree: 54%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
->title="指定されたプロパティの Web SDK を実装"
+>title="指定したプロパティの Web SDK の実装"
 >abstract="アップグレードガイドで目的の実装タイプを選択して、手順の詳細を確認します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -54,8 +54,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
->title="サードパーティの Tag Management システムに Web SDK ライブラリを追加"
->abstract="タグ管理システムで管理者と協力して、web SDK ライブラリをサイトに追加します。<br><br> このタスクの完了時間は、タグ管理システムの担当者の応答速度に大きく依存します。 Web SDK ライブラリの追加は、関連付けられた実装ロジックにバンドルされ、組織の標準リリースサイクル中にデプロイされる場合があります。"
+>title="サードパーティの Tag Management システムへの Web SDK ライブラリの追加"
+>abstract="Tag Management システムの管理者と協力して、Web SDK ライブラリをサイトに追加します。<br><br>このタスクの完了時間は、Tag Management システムの担当者の応答性に大きく依存します。Web SDK ライブラリを追加すると、関連する実装ロジックとバンドルされ、組織の標準リリースサイクル中にデプロイされる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 
