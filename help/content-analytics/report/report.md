@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,9 @@ ht-degree: 0%
 コンテンツ分析に関するレポートをゼロから開始するには：
 
 1. Workspaceで [ 新しいプロジェクトを作成 ](/help/analysis-workspace/build-workspace-project/create-projects.md) または [ 既存のプロジェクトを開く ](/help/analysis-workspace/build-workspace-project/open-projects.md) ことができます。
+1. Content Analyticsのレポート用に [ データビューを選択 ](/help/analysis-workspace/c-panels/panels.md#data-view) してください。 Content Analytics レポートは、Content Analyticsで [ 設定 ](/help/content-analytics/config/configuration.md) されたデータビューでのみ使用できます。
 1. ![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル [ ビジュアライゼーションをキャンバス ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ドラッグします。
-1. [ 特定のコンテンツ分析コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （フィルター、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
+1. [ 特定のコンテンツ分析コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （フィルター、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。 または、Content Analytics テンプレートを使用します。
 
 ## サムネール
 
@@ -49,7 +50,7 @@ ht-degree: 0%
   |---|---|
   | ![Content Analytics エクスペリエンスのプレビュー ](../assets/aca-experience-preview.png) | ![Content Analytics アセットのプレビュー ](../assets/aca-asset-preview.png) |
   | **[!UICONTROL エクスペリエンスの名前]** | **[!UICONTROL アセットの名前]** |
-  | **[!UICONTROL インプレッション数（常に）]**：エクスペリエンスのインプレッション数。 | **[!UICONTROL インプレッション数（すべての mes）]**：アセットのインプレッション数。 |
+  | **[!UICONTROL インプレッション数（常に）]**：エクスペリエンスのインプレッション数。 | **[!UICONTROL インプレッション数（常に）]**：アセットのインプレッション数。 |
   | **[!UICONTROL Assets]**：このエクスペリエンスに含まれるアセットの数。 「![ 分類 ](/help/assets/icons/Breakdown.svg) 分類を選択して、アセットを調べます。 | **[!UICONTROL エクスペリエンス]**：このアセットが表示されるエクスペリエンスの数。 [ 分類 ](/help/assets/icons/Breakdown.svg) アセットを調べるための分類。 |
   | **[!UICONTROL ファーストインプレッション]**：エクスペリエンスのファーストインプレッションの日付。 | **[!UICONTROL 最初のインプレッション]**：アセットの最初のインプレッションの日付。 |
   | **[!UICONTROL 最新のインプレッション]**：エクスペリエンスの最新のインプレッションの日付。 | **[!UICONTROL 最新のインプレッション]**：アセットの最新のインプレッションの日付。 |

@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -31,31 +31,31 @@ ht-degree: 1%
 
 新しい設定または既存の設定に加えた変更をアクティベートするには：
 
-1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従う必要があります。 Content Analytics 設定を含むタグプロパティのライブラリを正常に公開した場合にのみ、設定したドメイン、エクスペリエンスおよびアセットに関する Content Analytics データが収集されます。
+1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従う必要があります。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。 設定したドメイン、エクスペリエンスおよびアセットについてContent Analytics データが収集されるのは、その後のみです。
 
-1. 埋め込みコードは、コンテンツ分析に応じて ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) 開発、ステージングまたは公開環境上のページの `<head>` 要素に [ インストール」する必要があります。
+1. Content Analyticsに従って、開発、ステージングまたはパブリッシ `<head>` 環境のページの構成要素に埋め込みコードを [ インストール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) する必要があります。
 
 
 ## 非アクティブ化
 
 コンテンツ分析データの収集を無効にするには：
 
-1. コンテンツ分析の対象となる、開発環境、ステージング環境または実稼動環境のページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) を削除します。
-1. [ 削除 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)Content Analytics 設定に関連付けられたタグプロパティ。
+1. Content Analyticsに従って、開発環境、ステージング環境または実稼動環境でページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) を削除します。
+1. [ 削除 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview):Content Analytics設定に関連するタグプロパティ。
 
 
 
 ## 変更
 
-一般に、実装を変更するには、[ ガイド付き設定ウィザード ](guided.md) を使用します。
+[ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更します。
 
-または、Content Analytics 設定に関連付けられたタグプロパティで ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics 拡張機能 } を使用して、次のアーティファクトを変更することもできます。[
+Content Analytics設定に関連付けられたタグプロパティで ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、次のアーティファクトを変更します。[
 
 * [ サンドボックスとデータストリーム ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
-  >Adobe Content Analytics 拡張機能で設定したサンドボックスとデータストリームが、以前の段階で [ ガイド付き設定 ](guided.md) を使用してコンテンツ分析用に設定されていることを確認する必要があります。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/> また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定された別の Content Analytics 設定に干渉しないことを確認する必要もあります。
+  >Adobe Content Analytics拡張機能で設定したサンドボックスとデータストリームが、以前の段階で [ ガイド付き設定 ](guided.md) を使用してContent Analytics用に設定されていることを確認します。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/> また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定された別のContent Analytics設定の妨げとならないことも確認します。
   >
 
 * [ イベントのフィルタリング ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
@@ -76,9 +76,9 @@ Adobe Content Analytics 拡張機能で変更を行った後、使用する [ �
 
 ## バージョン管理
 
-Content Analytics エクスペリエンスのバージョン管理が必要な場合は、分析するエクスペリエンスについて考慮するページにグローバル `adobe.getContentExperienceVersion` 関数を追加する必要があります。
+Content Analytics エクスペリエンスのバージョン管理が必要な場合は、分析するエクスペリエンスについて検討するページにグローバル `adobe.getContentExperienceVersion` 関数を追加する必要があります。
 
-`adobe.getContentExperienceVersion` 関数は、値として文字列を返す必要があります。この文字列は、バージョンを識別するために選択した任意の値になります。 バージョンがエクスペリエンス ID の URL に追加されます。
+`adobe.getContentExperienceVersion` 関数は、バージョンを識別する文字列を値として返す必要があります。この値は、任意で選択できます。 バージョンが [ エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
 
 関数が存在しない場合や関数から値が返されない場合は、値 `NoVersion` がデフォルトとして使用されます。
 
