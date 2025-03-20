@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 17%
@@ -1570,7 +1570,7 @@ Customer Journey Analyticsでは、Perl 正規表現構文のサブセットを�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL  メソッド ]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL  フィールド ]:</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL  メソッド ]:</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り文字の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1966,7 +1966,7 @@ storeID を含むデータを収集します。 storeID には、最初の 2 文
 | <p>Merge Fields</p> | <ul><li>派生フィールドごとに 2 つの結合フィールド関数</li></ul> |
 | <p>Next or Previous</p> | <ul><li>派生フィールドごとに 3 つの次または前の関数</li></ul> |
 | <p>Regex Replace</p> | <ul><li>派生フィールドごとに 1 つの正規表現置換関数</li></ul> |
-| <p>Split</p> | <ul><li>派生フィールドごとに 5 つの分割関数</li></ul> |
+| <p>Split</p> | <ul><li>派生フィールドごとに 2 つの分割関数</li></ul> |
 | <p>Summarize</p> | <ul><li>3 派生フィールドごとの要約関数</li></ul> |
 | <p>トリミング</p> | <ul><li>派生フィールドごとに 1 つの Trim 関数</li></ul> |
 | <p>URL の解析</p> | <ul><li>派生フィールドごとに 5 つの URL 解析関数</li></ul> |

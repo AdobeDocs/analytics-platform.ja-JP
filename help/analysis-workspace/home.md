@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 次の画像と付属の表では、Analysis Workspace ユーザーインターフェイスの主な要素を説明します。
 
-![ インターフェイスの様々なセクションを強調表示したAnalysis Workspace ウィンドウ ](assets/analysis-workspace-overview.png)
+![インターフェイスの様々なセクションがハイライト表示された、Analysis Workspace ウィンドウ](assets/analysis-workspace-overview.png)
 
 | 場所 | 名前と機能 |
 |:---------:|----------|
-| ?? | プロジェクトの名前、機能にアクセスするためのメニュー構造、プロジェクトリストに戻るためのボタン ![ 「戻る ](/help/assets/icons/ChevronLeft.svg) ボタン、および [Workspace プロジェクトを共有 **[!UICONTROL するための]** 共有 ](/help/analysis-workspace/curate-share/share-projects.md) ボタンが含まれています。 <br/>いつでもプロジェクトの名前（新規プロジェクトなど）を選択して、名前を変更します。<br/> 「![ お気に入り ](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト ![ お気に入り ](/help/assets/icons/Star.svg) としてマークします。 |
-| ?? | **ボタンパネル：** Analysis Workspace の主要な[機能](#features)にアクセスするボタンが含まれています。<ul><li>![Web ページ](/help/assets/icons/WebPage.svg) [[!UICONTROL パネル]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL ガイド付き分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL ビジュアライゼーション]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>[[!UICONTROL コンポーネント]](/help/components/overview.md)を![キュレーション](/help/assets/icons/Curate.svg)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目次]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ブックマーク](/help/assets/icons/Bookmark.svg) [[!UICONTROL データ辞書]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
-| ?? | **左パネル：**&#x200B;この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
-| ?? | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/>各パネルは、選択したデータビューに基づいています。選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。詳しくは、[パネル - データビュー](/help/analysis-workspace/c-panels/panels.md#data-view)を参照してください。 |
+| A | プロジェクトの名前、機能にアクセスするメニュー構造、プロジェクトリストに戻る「![戻るボタン](/help/assets/icons/ChevronLeft.svg)」、[Workspace プロジェクトを共有する](/help/analysis-workspace/curate-share/share-projects.md)「**[!UICONTROL 共有]**」ボタンが含まれています。<br/>いつでもプロジェクトの名前（新規プロジェクトなど）を選択して、名前を変更します。<br/>「![お気に入りから外す](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト「![お気に入りに追加](/help/assets/icons/Star.svg)」として登録します。 |
+| B | **ボタンパネル：** Analysis Workspace の主要な[機能](#features)にアクセスするボタンが含まれています。<ul><li>![Web ページ](/help/assets/icons/WebPage.svg) [[!UICONTROL パネル]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL ガイド付き分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL ビジュアライゼーション]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>[[!UICONTROL コンポーネント]](/help/components/overview.md)を![キュレーション](/help/assets/icons/Curate.svg)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目次]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ブックマーク](/help/assets/icons/Bookmark.svg) [[!UICONTROL データ辞書]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| C | **左パネル：**&#x200B;この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
+| D | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/>各パネルは、選択したデータビューに基づいています。選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。詳しくは、[パネル - データビュー](/help/analysis-workspace/c-panels/panels.md#data-view)を参照してください。 |
 
 ## 機能
 

@@ -4,10 +4,10 @@ description: ワークスペースでの注釈の作成方法
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '872'
-ht-degree: 100%
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+workflow-type: tm+mt
+source-wordcount: '873'
+ht-degree: 91%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 ![注釈の作成](assets/create-annotation.png)
 
-* ?? メインインターフェイスで、「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 注釈]**」を選択します。[[!UICONTROL 注釈]マネージャー](/help/components/annotations/manage-annotations.md)から ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 追加]**]を選択します。
-* ?? Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから、「**[!UICONTROL 選択から注釈を作成]**」を選択します。
-* ?? Workspace プロジェクトで、折れ線グラフのコンテキストメニューから、「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
-* ?? Workspace プロジェクトで、メニューから「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 注釈を作成]**」を選択します。
-* ?? Workspace プロジェクトで、ショートカット **[!UICONTROL Ctrl + Shift + O キー]**（Windows）または **[!UICONTROL Shift + Command + O キー]**（macOS）を使用します。
+* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 注釈]**」を選択します。 [[!UICONTROL 注釈]マネージャー](/help/components/annotations/manage-annotations.md)から ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 追加]**]を選択します。
+* **B**. Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL 選択から注釈を作成]**」を選択します。
+* **C**。 Workspace プロジェクトで、折れ線グラフのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]** を選択します。
+* **D**。 Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 注釈を作成]** を選択します。
+* **E**.  Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+o]** （Windows）または **[!UICONTROL shift+command+o]** （macOS）を使用します
 
 注釈を定義するには、[[!UICONTROL 注釈ビルダー]](#annotation-builder)を使用します。
 

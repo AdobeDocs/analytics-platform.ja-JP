@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 02026709480872216ee76e842045517822c59bff
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '1919'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 27%
 
 フロービジュアライゼーションを、データセット ID ディメンションと合わせて使用できます。
 
-1. [Customer Journey Analyticsにログインし ](https://analytics.adobe.com) 空のWorkspace プロジェクトを作成します。
+1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、空のWorkspace プロジェクトを作成します。
 2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL ** フロー **]** ビジュアライゼーションを右側のキャンバスにドラッグします。
-3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL ** Dimensionまたは項目 **]** というラベルが付いた場所にドラッグします。
+3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL ** Dimensionまたは Item **]** というラベルが付いた場所にドラッグします。
 4. このフローレポートはインタラクティブです。後続または前のページにフローを展開するには、いずれかの値を選択します。 右クリックメニューを使用して、列を展開または折りたたむことができます。同じフローレポート内で異なるディメンションを使用することもできます。
 
 データセット ID ディメンションの項目の名前を変更する場合は、検索データセットを使用できます。
@@ -85,7 +85,7 @@ Cross-channel analysis は、人がどのようにデバイスとチャネルの
 
 +++ ステッチではプライバシーリクエストをどのように処理しますか？
 
-Adobeは、地域および国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+Adobeでは、各国および国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 ステッチされるデータセット内のイベントで「永続 ID」フィールドが空白の場合、そのイベントのステッチ ID は次の 2 つの方法のいずれかで決定されます。
 
 * 一時的な ID フィールドが空白でない場合、Customer Journey Analyticsは一時的な ID の値をステッチされた ID として使用します。
-* 「一時的な ID」フィールドが空白の場合、Customer Journey Analyticsではステッチされた ID も空白のままになります。 この場合、永続 ID、一時 ID、ステッチ ID はすべてイベントで空白になります。 これらのタイプのイベントは、ステッチされた ID がユーザー ID として選択されたステッチ対象のデータセットを使用しているどのCustomer Journey Analytics接続でもドロップされます。
+* 「一時的な ID」フィールドが空白の場合、Customer Journey Analyticsではステッチされた ID も空白のままになります。 この場合、永続 ID、一時 ID、ステッチ ID はすべてイベントで空白になります。 これらのタイプのイベントは、ステッチされた ID が人物 ID として選択されたステッチ対象のデータセットを使用しているどのCustomer Journey Analytics接続でもドロップされます。
 
 +++
 
@@ -199,7 +199,7 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 
 ## 指標の比較
 
-+++ Customer Journey Analyticsでステッチされたデータセットの指標は、Customer Journey Analyticsでステッチされていないデータセットの同様の指標およびAdobe Analyticsと比較してどうでしょうか？
++++ Customer Journey Analyticsでステッチされたデータセットの指標は、Customer Journey Analyticsの未ステッチデータセットの同様の指標およびAdobe Analyticsと比較してどうですか？
 
 Customer Journey Analyticsの特定の指標は、従来の Analytics の指標に似ていますが、比較する対象によっては、それ以外の指標は異なります。 下の表では、一般的な指標をいくつか比較しています。
 
@@ -207,17 +207,17 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 | ----- | ----- | ----- | ----- |
 | **People** = ステッチされた ID がユーザー ID として選択された場合の個別のユーザー ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **People** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。 Analytics ソースコネクタデータセットの **人物** は、Customer Journey Analyticsでユーザー ID として使用される場合、従来のAdobe Analyticsの **ユニーク訪問者** に似 `endUserIDs._experience.aaid.id` います。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=ja)を参照してください。 |
 | **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ja)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=ja)で指定されたセッション設定に基づいて定義されます。 |
-| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の永続 ID を持つ行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platformデータレイクの未ステッチデータに空白の人物 ID が含まれているイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 |
+| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の永続 ID を持つ行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白の人物 ID が含まれているイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)を参照してください。 |
 
-その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[ カスタムイベント ](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=ja) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除など、[ 機能の違い ](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
+その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[ カスタムイベント ](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=ja) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除などの [ 機能の違い ](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
 
 +++
 
 ## ID マップ
 
-+++ Customer Journey Analyticsは ID マップフィールドを使用できますか。
++++ Customer Journey Analyticsで「ID マップ」フィールドを使用できますか？
 
-いいえ。Customer Journey Analyticsは現在、ステッチに ID マップのフィールドを使用できません。
+いいえ。Customer Journey Analyticsでは現在、ステッチに ID マップフィールドを使用できません。
 
 +++
 
@@ -225,7 +225,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 +++ フィールドベースのステッチからグラフベースのステッチに切り替えるには、データを取り込む必要がありますか？
 
-データはExperience Platformに取り込む必要はありませんが、Customer Journey Analyticsで再設定する必要があります。 次の手順に従ってください。
+データはExperience Platformに取得する必要はありませんが、Customer Journey Analyticsで再設定する必要があります。 次の手順に従ってください。
 
 1. 新しいグラフベースのステッチされたデータセットを設定します。
 1. Customer Journey Analyticsの新しい接続の一部として新しいデータセットを設定します。
