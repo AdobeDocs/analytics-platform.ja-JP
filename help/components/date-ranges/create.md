@@ -4,7 +4,7 @@ description: レポートで使用する日付範囲を作成します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a6295d550e0e357569d530b72fe50a58d7ecfbbe
+source-git-commit: 6e4f23d65a620104cfbd36fc9b4ccd06146f143c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 37%
@@ -23,7 +23,7 @@ ht-degree: 37%
 * **C**。 Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します。
 * **D**。 Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
 * **E**. Workspace プロジェクトのコンポーネント左パネルで、「![ カレンダー ](/help/assets/icons/Add.svg)**日付範囲 ![ に ](/help/assets/icons/Calendar.svg) 「追加**」を選択します。
-* F.折れ線グラフなどのサポートされているビジュアライゼーションで、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
+* **F**. 折れ線グラフ ビジュアライゼーションなどのサポートされているビジュアライゼーションで、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
 注釈を定義するには、[[!UICONTROL  日付範囲ビルダー ]](#annotation-builder) を使用します。
 

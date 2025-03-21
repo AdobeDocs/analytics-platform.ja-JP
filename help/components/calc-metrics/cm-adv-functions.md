@@ -4,10 +4,10 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4542'
-ht-degree: 55%
+source-wordcount: '4659'
+ht-degree: 54%
 
 ---
 
@@ -729,7 +729,7 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 上昇率（#lift）
+## 上昇率 {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -739,6 +739,10 @@ CDF-Z(-3) ? 0.0013499
 >abstract="制御値と比較した比率の上昇率。"
 
 <!-- markdownlint-enable MD034 -->
+
+![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL LIFT （normalizing-container, success-metric, control）]**
+
+制御値と比較した比率の上昇率。
 
 | 引数 | 説明 |
 | --- | --- |
@@ -1338,6 +1342,27 @@ CDF-Z(-3) ? 0.0013499
 | metric_Y | 独立データとして指定する指標 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
+
+
+## 標本分散
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="標本分散"
+>abstract="数式（sum （metric^2） / （N - 1）） – （sum （metric））^2/（N*（N-1））を使用してサンプル分散の推定値を計算します。 ここで、N は正規化コンテナのカウントです。 <br/> これは、*常に有効な* 信頼性計算の一部として使用されます。 通常、この関数は単独では役に立ちませんが、計算のチェックや信頼性計算の実行 *手動* に使用できます。"
+
+![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL SAMPLE VARIANCE （normalizing-container, success-metric）]**
+
+標本分散の推定値を計算します。
+
+| 引数 | 説明 |
+| --- | --- |
+| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
+| 成功指標 | ユーザーがバリアントと比較する指標。 |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
