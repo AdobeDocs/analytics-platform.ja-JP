@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Content Analytics ディメンションの行にサムネールが表示され�
 1. **[!UICONTROL テンプレートの設定]** ダイアログで、**[!UICONTROL コンバージョン指標を選択]** ダイアログから指標を選択します。 例えば、**[!UICONTROL Asset CTR]** と入力します。
 1. 「**[!UICONTROL 続行]**」を選択します。
 
-Workspaceに **[!UICONTROL Content Analyticsの概要]** プロジェクトが開きます。 このプロジェクトは 4 つのパネルで構成され、各パネルには、特定の質問に回答するためのフリーフォームテーブルとビジュアライゼーションが表示されます。
+**[!UICONTROL Content Analyticsの概要]** プロジェクトが [Analysis Workspace](/help/analysis-workspace/home.md) で開きます。 プロジェクトは 4 つの [ パネル ](/help/analysis-workspace/c-panels/panels.md) で構成され、各パネルには特定の質問に回答するための [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) および [ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) が表示されます。
 
 * **最もパフォーマンスの高いコンテンツは何ですか？**
 このパネルを使用すると、エンゲージメントとコンバージョンに寄与しているエクスペリエンスと、それらのエクスペリエンス内のアセットを理解できます。 エクスペリエンスは、特定の時間にキャプチャされた完全な web ページです。 エクスペリエンスには、テキストと複数の個々の画像アセットの両方を含めることができます。 アセットは個々の画像です。
@@ -85,9 +85,9 @@ Workspaceに **[!UICONTROL Content Analyticsの概要]** プロジェクトが�
 
    * **エクスペリエンス**
 
-      * **エクスペリエンス CTR**：エクスペリエンス CTR を表示する、変更概要ビジュアライゼーション。
-      * **エクスペリエンスの上位変換**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する横棒グラフビジュアライゼーション。
-      * **最もパフォーマンスの高いエクスペリエンス**：最もパフォーマンスの高いエクスペリエンスに関するフリーフォームテーブル（サムネールとプレビューを含む）。
+      * **エクスペリエンス CTR**：エクスペリエンス CTR を表示する [ 変更概要 ](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
+      * **上位のエクスペリエンスのコンバージョン**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する [ 横棒 ](/help/analysis-workspace/visualizations/horizontal-bar.md) ビジュアライゼーション。
+      * **最もパフォーマンスの高いエクスペリエンス**：最もパフォーマンスの高いエクスペリエンスの [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails) および [ プレビュー ](#previews) を含む）。
 
    * **Assets**
 
