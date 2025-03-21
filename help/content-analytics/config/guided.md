@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: e8ba272d2deb535374a47b61c22d58c4168ff50c
 workflow-type: tm+mt
-source-wordcount: '3324'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -262,7 +262,7 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 
   ![Content Analytics データ収集既存のタグ ](../assets/aca-configuration-datacollection-existingtag.png)
 
-   1. **[!UICONTROL 既存]** を選択します。
+   1. 「**[!UICONTROL 既存を選択]**」を選択します。
    2. **[!UICONTROL タグプロパティ]** ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して、使用可能なオプションを検索し制限することができます。
 
 * 新しいタグプロパティを作成するには：
@@ -271,16 +271,15 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 
    1. **[!UICONTROL 新規作成]** を選択します。
    1. **[!UICONTROL タグ名]** を指定します（例：`ACA Test for Documentation`）。
-  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-   1. 「**[!UICONTROL 追加]**」を選択します。
+   1. **[!UICONTROL Domains]** を指定します（例：`example.com`）。
 
 * エクスペリエンスを含めることを選択した場合は、コンテンツ分析用のデータを収集するときに、どのページを含めるか除外するかを指定します。
 
-   * **[!UICONTROL エクスペリエンス]** の正規表現を指定します。 例：すべてのドキュメントページをContent Analyticsから除外するには、`/^(?!.*documentation).*/` を指定します。 `/` を使用して、正規表現をエスケープする必要があります。
+   * **[!UICONTROL 含める/除外するページ]** の正規表現文字列を指定します。 例：すべてのドキュメントページをContent Analyticsから除外するには、`/^(?!.*documentation).*/` を指定します。 `/` を使用して、正規表現をエスケープする必要があります。
 
 * コンテンツ分析用のデータを収集する際に含める、または除外するアセットを指定します。
 
-   * **[!UICONTROL Asset]** の正規表現を指定します。 例：Content Analyticsからすべてのロゴ JPEGとSVG画像を除外するには、`/^(?!.*(logo\.jpg|\.svg)).*$/` を指定します。 `/` を使用して、正規表現をエスケープする必要があります。
+   * 含める/除外する **[!UICONTROL Assetsの正規表現文字列を指定し]** す。 例：Content Analyticsからすべてのロゴ JPEGとSVG画像を除外するには、`/^(?!.*(logo\.jpg|\.svg)).*$/` を指定します。 `/` を使用して、正規表現をエスケープする必要があります。
 
 
 #### 既存の設定 {#existing-configuration}
