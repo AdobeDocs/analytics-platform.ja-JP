@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 5eb9136107ed872639b02df2549a2f81dee83e76
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '3295'
+source-wordcount: '3324'
 ht-degree: 13%
 
 ---
 
 # Content Analytics ガイド付き設定
 
->[!WARNING]
->
->この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -29,12 +26,11 @@ ht-degree: 13%
 >
 >組織のサンドボックスごとに 1 つの Content Analytics 設定のみを持つことができます。
 
-
 コンテンツ分析設定にアクセスするには
 
 * Customer Journey Analyticsのメインメニューから **[!UICONTROL データ管理]**/**[!UICONTROL コンテンツ分析]** を選択します。
 
-コンテンツ分析設定画面に、既存のコンテンツ分析設定のテーブルが表示されます。
+**[!UICONTROL Content Analytics設定]** 画面に、既存のContent Analytics設定のテーブルが表示されます。
 
 ![Content Analytics 設定 ](../assets/aca-configuration-table.png)
 各設定で、次の詳細を使用できます。
@@ -54,15 +50,15 @@ ht-degree: 13%
 
 新しい設定を作成するには：
 
-* **[!UICONTROL 設定を作成]** を選択します。 このアクションにより、ガイド付き設定ウィザードが開きます。
+* **[!UICONTROL 設定を作成]** を選択します。 このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
 
 既存の設定を編集するには：
 
-* 既存のコンテンツ分析設定に対して、![ 詳細 ](/help/assets/icons/More.svg) を選択してから ![ 編集 ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。 このアクションにより、ガイド付き設定ウィザードが開きます。
+* 既存のコンテンツ分析設定に対して、![ 詳細 ](/help/assets/icons/More.svg) を選択してから ![ 編集 ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。 このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
 
 ## ガイド付き設定ウィザード
 
-ガイド付き設定ウィザードは、4 つのセクション（[ 詳細 ](#details)、[ データ表示 ](#data-view)、[ エクスペリエンスの取得と定義 ](#experience-capture-and-definition)、[ データ収集 ](#data-collection)）で構成され、それぞれが適切に設定してコンテンツ分析を設定するために必要な詳細を求めます。 セクション内の一部の設定は、前のセクションの設定値に依存する場合があるので、次のセクションに進む前に各セクションを完了してください。
+ガイド付き設定ウィザードは、4 つのセクション（[ 詳細 ](#details)、[ データビュー ](#data-view)、[ エクスペリエンスキャプチャと定義 ](#experience-capture-and-definition)、[ データ収集 ](#data-collection)）で構成され、それぞれがContent Analyticsの適切な設定に必要な詳細を求めます。 セクション内の一部の設定は、前のセクションの設定値に依存する場合があるので、次のセクションに進む前に各セクションを完了してください。
 
 ### 詳細 {#onboarding-details}
 
@@ -142,14 +138,17 @@ ht-degree: 13%
 
    既存の設定を編集すると、リストには、既存の設定に既に関連付けられているサンドボックス内で使用可能なデータビューのみが表示されます。
 
+   次のアクションを実行できます。
+
    * 特定のデータビューを検索するには、「![ 検索 ](/help/assets/icons/Search.svg)」フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 接続、所有者、サンドボックスのリストをフィルタリングできます。<br/> フィルターウィンドウを非表示にするには、![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルターを非表示]** を使用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL  接続 ]、[!UICONTROL  所有者 ]、[!UICONTROL  サンドボックス ] でリストをフィルタリングできます。<br/> フィルターウィンドウを非表示にするには、![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルターを非表示]** を使用します。
    * テーブルに表示する列を定義するには、「![ 列設定 ](/help/assets/icons/ColumnSetting.svg)」を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログに表示する列を選択し、「**[!UICONTROL 適用]** を選択して変更を適用します。
 
+1. 使用するデータビューの ![SelectBox](/help/assets/icons/SelectBox.svg) を選択します。
 1. 「**[!UICONTROL 保存]**」を選択して、選択したデータビューを確定します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 
-データビューはCustomer Journey Analyticsに関連付けられています [ 接続 ](/help/connections/overview.md)。 また、接続は組織内のサンドボックスに基づいています。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの適切な名前が **[!UICONTROL サンドボックス]** に自動入力されます。
+Customer Journey Analyticsでは、データビューはCustomer Journey Analytics[ 接続 ](/help/connections/overview.md) に関連付けられています。 また、接続は組織内のサンドボックスに基づいています。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの名前が **[!UICONTROL サンドボックス]** に自動入力されます。
 
 
 ### エクスペリエンスのキャプチャと定義 {#onboarding-experiences}
@@ -192,7 +191,7 @@ ht-degree: 13%
 ![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience.png)
 
 1. **[!UICONTROL エクスペリエンスを含める]** を有効にします。
-1. オプション。 web サイトでのコンテンツのレンダリング方法をパラメーターで指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。
+1. オプション。 web サイト上のコンテンツのレンダリング方法に関するパラメーターを指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。
    1. **[!UICONTROL ドメイン正規表現]** を入力します（例：`/^(?!.*\b(store|help|admin)\b)/`）。 `/` を使用して、正規表現をエスケープする必要があります。
    1. **[!UICONTROL クエリパラメーター]** のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
@@ -271,8 +270,9 @@ ht-degree: 13%
   ![Content Analytics データ収集の新しいタグ ](../assets/aca-configuration-datacollection-newtag.png)
 
    1. **[!UICONTROL 新規作成]** を選択します。
-   2. **[!UICONTROL タグ名]** を指定します（例：`ACA Test`）。
-   3. **[!UICONTROL Domains]** を指定します（例：`example.com`）。
+   1. **[!UICONTROL タグ名]** を指定します（例：`ACA Test for Documentation`）。
+  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
+   1. 「**[!UICONTROL 追加]**」を選択します。
 
 * エクスペリエンスを含めることを選択した場合は、コンテンツ分析用のデータを収集するときに、どのページを含めるか除外するかを指定します。
 
@@ -317,20 +317,671 @@ ht-degree: 13%
 * **[!UICONTROL 破棄]**：新しい設定の作成または既存の設定の編集の一環として行われたすべての変更は破棄されます。
 * **[!UICONTROL 後で使用するために保存]**：新しい設定または既存の実装されていない設定に対する変更が保存されます。 後から設定を再度参照して、さらに変更を加えたり、設定を実装したりできます。
 * **[!UICONTROL 実装]**：新しい設定または既存の設定に対する設定や変更、まだ実装されていない設定は保存されて実装されます。 実装は次で構成されます。
+
+   * **[!UICONTROL Customer Journey Analytics]** 設定：
+      * 選択したデータビューが更新され、Content Analytics のディメンションと指標が表示されます。
+      * 選択したデータビューに結び付けられた接続が変更され、Content Analytics イベントと属性データセットが含まれるようになりました。
+      * コンテンツ分析レポートテンプレートがWorkspaceに追加されます。
+
++++ 詳細
+
+     詳細は、次のシナリオで提供されます。
+
+      * **タグ** プロパティが存在する **✓** または存在しない **✕**。
+      * タグプロパティの **Web SDK** 拡張機能が存在する **✓** または存在しない **✕**。
+      * タグプロパティのAdobe **Content Analytics** 拡張機能が存在する **✓**、または存在しない **✕**。
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">シナリオ：</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>設定</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>レポートテンプレート</td>
+          <td colspan="4">レポートテンプレートを使用できます</td>
+        </tr>
+        <tr>
+          <td>データビュー</td>
+          <td colspan="4">ACAのディメンションと指標を持つように変更/作成されました</td>
+        </tr>
+        <tr>
+          <td>接続</td>
+          <td colspan="4">ACA データセット（ACA イベント、アセット属性、エクスペリエンス属性）を含むように変更されました</td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
    * **[!UICONTROL Adobe Experience Platform]** 設定：
       * Content Analytics イベント、アセット属性、（設定されている場合は）エクスペリエンス属性をモデル化するスキーマの作成。
       * Content Analytics イベント、アセット属性および（設定されている場合は）エクスペリエンス属性を収集するデータセットの作成。
       * 機能サービスを使用して Content Analytics イベントからコンテンツ属性を生成および更新するデータフローの作成。
+
++++ 詳細
+
+     詳細は、次のシナリオで提供されます。
+
+      * **タグ** プロパティが存在する **✓** または存在しない **✕**。
+      * タグプロパティの **Web SDK** 拡張機能が存在する **✓** または存在しない **✕**。
+      * タグプロパティのAdobe **Content Analytics** 拡張機能が存在する **✓**、または存在しない **✕**。
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">シナリオ：</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>設定</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics イベントスキーマ</strong></td>
+        </tr>
+        <tr>
+          <td style="margin-left: 160.0px;">名前</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics イベントデータセット</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+        </tr>
+        <tr>
+          <td>スキーマ</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+          <td>Content Analytics イベント</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>タグ</td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+        </tr>
+        <tr>
+          <td>システムデータセット</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td>データガバナンス（DULE ラベル）</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics アセット属性スキーマ</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics Assets属性データセット</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+        </tr>
+        <tr>
+          <td>スキーマ</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+          <td>Content Analytics アセット属性</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>タグ</td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+        </tr>
+        <tr>
+          <td>システムデータセット</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td>データガバナンス（DULE ラベル）</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics エクスペリエンス属性スキーマ</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics エクスペリエンス属性データセット</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+        </tr>
+        <tr>
+          <td>スキーマ</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+          <td>Content Analytics エクスペリエンス属性</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+          <td><i>事前定義済み未定</i></td>
+        </tr>
+        <tr>
+          <td>タグ</td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+          <td><i>空？</i></td>
+        </tr>
+        <tr>
+          <td>システムデータセット</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>プロファイルが有効</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <td>データガバナンス（DULE ラベル）</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
    * **[!UICONTROL データ収集]** 設定：
       * 新しいタグプロパティまたは既存のタグプロパティは、Content Analyticsのデータ収集をサポートするように設定されます。 この設定は、Tags 用のAdobe Content Analytics 拡張機能を含めることを意味します。
       * Content Analytics イベント用にデータストリームが作成されます。
       * Adobe Content Analytics 拡張機能は、Content Analytics イベントが Content Analytics 用のデータストリームに確実に送信されるように設定されています。
       * Web SDKがタグプロパティ用に設定されていない場合、コンテンツ分析イベントのみを送信する新しい web SDK設定が作成されます。
       * Web SDKがこのタグプロパティ用に設定されている場合、既存の web SDKの設定は変更されません。
-   * **[!UICONTROL Customer Journey Analytics]** 設定：
-      * 選択したデータビューが更新され、Content Analytics のディメンションと指標が表示されます。
-      * 選択したデータビューに結び付けられた接続が変更され、Content Analytics イベントと属性データセットが含まれるようになりました。
-      * コンテンツ分析レポートテンプレートがWorkspaceに追加されます。
+
++++ 詳細
+
+     詳細は、次のシナリオで提供されます。
+
+      * **タグ** プロパティが存在する **✓** または存在しない **✕**。
+      * タグプロパティの **Web SDK** 拡張機能が存在する **✓** または存在しない **✕**。
+      * タグプロパティのAdobe **Content Analytics** 拡張機能が存在する **✓**、または存在しない **✕**。
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">シナリオ：</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>設定</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td colspan="5"><strong><br/>データストリーム</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td><i>既存の値</i></td>
+          <td>コンテンツ分析</td>
+          <td>コンテンツ分析</td>
+          <td>コンテンツ分析</td>
+        </tr>
+        <tr>
+          <td>説明</td>
+          <td><i>既存の値</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+        </tr>
+        <tr>
+          <td>マッピングスキーマ</td>
+          <td><i>既存の値</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+        </tr>
+        <tr>
+          <td>ジオロケーションとネットワーク検索</td>
+          <td><i>既存の値</i></td>
+          <td>すべてのオプションがオフ</td>
+          <td>すべてのオプションがオフ</td>
+          <td>すべてのオプションがオフ</td>
+        </tr>
+        <tr>
+          <td>デバイス検索</td>
+          <td><i>既存の値</i></td>
+          <td>デバイス情報を収集しない</td>
+          <td>デバイス情報を収集しない</td>
+          <td>デバイス情報を収集しない</td>
+        </tr>
+        <tr>
+          <td>IP の不明化</td>
+          <td><i>既存の値</i></td>
+          <td>なし</td>
+          <td>なし</td>
+          <td>なし</td>
+        </tr>
+        <tr>
+          <td>ファーストパーティ ID Cookie</td>
+          <td><i>既存の値</i></td>
+          <td>オフ</td>
+          <td>オフ</td>
+          <td>オフ</td>
+        </tr>
+        <tr>
+          <td>サードパーティ ID 同期</td>
+          <td><i>既存の値</i></td>
+          <td>オフ</td>
+          <td>オフ</td>
+          <td>オフ</td>
+        </tr>
+        <tr>
+          <td>アクセスタイプ</td>
+          <td><i>既存の値</i></td>
+          <td>混合認証</td>
+          <td>混合認証</td>
+          <td>混合認証</td>
+        </tr>
+        <tr>
+          <td>Media Analytics</td>
+          <td><i>既存の値</i></td>
+          <td>オフ</td>
+          <td>オフ</td>
+          <td>オフ</td>
+        </tr>
+            <tr>
+          <td>ボットの検出</td>
+          <td><i>既存の値</i></td>
+          <td>オフ</td>
+          <td>オフ</td>
+          <td>オフ</td>
+        </tr>
+        <tr>
+          <td>マッピング</td>
+          <td><i>既存の値</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Tags プロパティ </strong><br/> 既存のプロパティまたは新しいプロパティ。 名前とドメインはユーザーが指定します。</td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td><i>user provided</i> （デフォルトは「Content Analytics」）</td>
+        </tr>
+        <tr>
+          <td>ドメイン</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td ><i>所定の</i></td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>タグライブラリ</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Web SDK拡張機能</strong></td>
+        </tr>
+        <tr>
+          <td>名前</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>Content Analytics - Web SDK</td>
+          <td>Content Analytics - Web SDK</td>
+        </tr>
+        <tr>
+          <td>IMS 組織</td>
+          <td><i>自動入力</i></td>
+          <td><i>自動入力</i></td>
+          <td><i>自動入力</i></td>
+          <td><i>自動入力</i></td>
+        </tr>
+        <tr>
+          <td>エッジドメイン</td>
+          <td><i>既存の値 <br/>AppMeasurementの実装に一致するように更新する必要がある可能性があります。</i></td>
+          <td><i>既存の値 <br/>AppMeasurementの実装に一致するように更新する必要がある可能性があります。</i></td>
+          <td>
+            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+          </td>
+          <td>
+            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>データストリーム</strong></td>
+        </tr>
+        <tr>
+          <td>実稼動</td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i> ユーザーが指定 </i>?</td>
+          <td><i> ユーザーが指定 </i>?</td>
+        </tr>
+        <tr>
+          <td>ステージング</td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i> ユーザーが指定 </i>?</td>
+          <td><i> ユーザーが指定 </i>?</td>
+        </tr>
+        <tr>
+          <td>開発</td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
+          <td><i> ユーザーが指定 </i>?</td>
+          <td><i> ユーザーが指定 </i>?</td>
+        </tr>
+        <tr>
+          <td>プライバシー</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>中に？</td>
+          <td>中に？</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>ID</strong></td>
+        </tr>
+        <tr>
+          <td>ECID を移行</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>確認済み</td>
+          <td>確認済み</td>
+        </tr>
+        <tr>
+          <td>サードパーティ Cookie の使用</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>確認済み</td>
+          <td>確認済み</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>パーソナライズ機能</strong></td>
+        </tr>
+        <tr>
+          <td>Target を at.js から Web SDKに移行する</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>未チェック</td>
+          <td>未チェック</td>
+        </tr>
+        <tr>
+          <td>パーソナライゼーションストレージの有効化</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>未チェック</td>
+          <td>未チェック</td>
+        </tr>
+        <tr>
+          <td>Adobe Journey Optimizerの自動クリックコレクション</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>常に</td>
+          <td>常に</td>
+        </tr>
+        <tr>
+          <td>Adobe Targetの自動クリックコレクション</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>なし</td>
+          <td>なし</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>データ収集</strong></td>
+        </tr>
+        <tr>
+          <td>内部リンククリック数の収集</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>未チェック</td>
+          <td>未チェック</td>
+        </tr>
+        <tr>
+          <td>外部リンククリック数の収集</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>未チェック</td>
+          <td>未チェック</td>
+        </tr>
+        <tr>
+          <td>ダウンロードリンクのクリック数を収集</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>未チェック</td>
+          <td>未チェック</td>
+        </tr>
+        <tr>
+          <td>イベントデータを送信する場合、自動的に次を含める</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>デフォルトのすべてのコンテキスト情報</td>
+          <td>デフォルトのすべてのコンテキスト情報</td>
+        </tr>
+        <tr>
+          <td>ストリーミングメディア</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>空白値</td>
+          <td>空白値</td>
+        </tr>
+        <tr>
+          <td>データストリーム設定の上書き</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>データストリーム設定を一致</td>
+          <td>データストリーム設定を一致</td>
+        </tr>
+        <tr>
+          <td>詳細設定 – Edgeのベースパス</td>
+          <td><i>既存の値</i></td>
+          <td><i>既存の値</i></td>
+          <td>ee</td>
+          <td>ee</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics拡張機能</strong></td>
+        </tr>
+        <tr>
+          <td>データストリーム</td>
+          <td><i>既存の値</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+          <td><i>所定の</i></td>
+        </tr>
+        <tr>
+          <td>エクスペリエンスのキャプチャと定義</td>
+          <td><i>既存の値</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+        </tr>
+        <tr>
+          <td>イベントのフィルター</td>
+          <td><i>既存の値</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+          <td><i>ユーザーが指定</i></td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
 * **[!UICONTROL 保存]**：実装された設定に対する変更が保存され、実装が更新されます。
 * **[!UICONTROL 終了]**。 ガイド付き設定を終了します。 実装された設定に対して行われた変更はすべて破棄されます。
 
@@ -340,26 +991,28 @@ ht-degree: 13%
 Content Analytics設定をアクティベートするには、「**[!UICONTROL 実装]**[ 手動 ](manual.md)」を選択した後に作成されたタグプロパティを公開する必要があります。
 
 
-## オンボーディングの設定と構成
 
-以下の節では、Content Analytics設定の実装の一環として、[Customer Journey Analytics](#customer-journey-analytics-cja)、[Experience Platform](#experience-platform-aep) および [ データ収集 ](#data-collection-dc) に適用される設定および設定について概説します。
+<!--
+## Onboarding settings and configurations
 
-詳細は、次のシナリオで提供されます。
+The following sections outline the settings and configurations applied to [Customer Journey Analytics](#customer-journey-analytics-cja), [Experience Platform](#experience-platform-aep) and [Data Collection](#data-collection-dc) as part of the implementation of a Content Analytics configuration.
 
-* **タグ** プロパティが存在する **✓** または存在しない **✕**。
-* タグプロパティの **Web SDK** 拡張機能が存在する **✓** または存在しない **✕**。
-* タグプロパティのAdobe **Content Analytics** 拡張機能が存在する **✓**、または存在しない **✕**。
+Details are provided for the following scenarios:
+
+* **Tags** property exists **✓** or does not exist **✕**.
+* **Web SDK** extension for the Tags property exists **✓** or does not exist **✕**.
+* Adobe **Content Analytics** extension for the Tag property exists **✓** or does not exist **✕**.
 
 ### Customer Journey Analytics {#cja}
 
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">シナリオ：</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>設定</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -376,16 +1029,16 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
   </tr>
   <tbody>
     <tr>
-      <td>レポートテンプレート</td>
-      <td colspan="4">レポートテンプレートを使用できます</td>
+      <td>Report Template</td>
+      <td colspan="4">A report template is available</td>
     </tr>
     <tr>
-      <td>データビュー</td>
-      <td colspan="4">ACAのディメンションと指標を持つように変更/作成されました</td>
+      <td>Data view</td>
+      <td colspan="4">Modified/Created to have ACA dimensions and metrics</td>
     </tr>
     <tr>
-      <td>接続</td>
-      <td colspan="4">ACA データセット（ACA イベント、アセット属性、エクスペリエンス属性）を含むように変更されました</td>
+      <td>Connection</td>
+      <td colspan="4">Modified to include ACA datasets (ACA events, Asset attributes, Experience Attribute)</td>
     </tr>
   </tbody>
 </table>
@@ -395,11 +1048,11 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">シナリオ：</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>設定</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -416,228 +1069,228 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
   </tr>
   <tbody>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics イベントスキーマ</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Events schema</strong></td>
     </tr>
     <tr>
-      <td style="margin-left: 160.0px;">名前</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
+      <td style="margin-left: 160.0px;">Name</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics イベントデータセット</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Events dataset</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
+      <td>Name</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
     </tr>
     <tr>
-      <td>スキーマ</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
-      <td>Content Analytics イベント</td>
+      <td>Schema</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>タグ</td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>システムデータセット</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>データガバナンス（DULE ラベル）</td>
+      <td>Data governance (DULE labels)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics アセット属性スキーマ</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Asset Attributes schema</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
+      <td>Name</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics Assets属性データセット</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Assets Attributes dataset</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
+      <td>Name</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
-      <td>スキーマ</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
-      <td>Content Analytics アセット属性</td>
+      <td>Schema</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>タグ</td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>システムデータセット</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>データガバナンス（DULE ラベル）</td>
+      <td>Data governance (DULE labels)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics エクスペリエンス属性スキーマ</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes schema</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
+      <td>Name</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics エクスペリエンス属性データセット</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes dataset</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
+      <td>Name</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
-      <td>スキーマ</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
-      <td>Content Analytics エクスペリエンス属性</td>
+      <td>Schema</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
-      <td><i>事前定義済み未定</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>タグ</td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
-      <td><i>空？</i></td>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>システムデータセット</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td>プロファイルが有効</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
-      <td>×</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>データガバナンス（DULE ラベル）</td>
+      <td>Data governance (DULE labels)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -647,16 +1300,16 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
 </table>
 
 
-### データ収集 {#dc}
+### Data Collection {#dc}
 
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">シナリオ：</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>設定</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -673,142 +1326,142 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
   </tr>
   <tbody>
     <tr>
-      <td colspan="5"><strong><br/>データストリーム</strong></td>
+      <td colspan="5"><strong><br/>Datastream</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td><i>既存の値</i></td>
-      <td>コンテンツ分析</td>
-      <td>コンテンツ分析</td>
-      <td>コンテンツ分析</td>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
     </tr>
     <tr>
-      <td>説明</td>
-      <td><i>既存の値</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
+      <td>Description</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>マッピングスキーマ</td>
-      <td><i>既存の値</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
+      <td>Mapping schema</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>ジオロケーションとネットワーク検索</td>
-      <td><i>既存の値</i></td>
-      <td>すべてのオプションがオフ</td>
-      <td>すべてのオプションがオフ</td>
-      <td>すべてのオプションがオフ</td>
+      <td>Geolocation and Network Lookup</td>
+      <td><i>existing values</i></td>
+      <td>All options off</td>
+      <td>All options off</td>
+      <td>All options off</td>
     </tr>
     <tr>
-      <td>デバイス検索</td>
-      <td><i>既存の値</i></td>
-      <td>デバイス情報を収集しない</td>
-      <td>デバイス情報を収集しない</td>
-      <td>デバイス情報を収集しない</td>
+      <td>Device Lookup</td>
+      <td><i>existing value</i></td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
     </tr>
     <tr>
-      <td>IP の不明化</td>
-      <td><i>既存の値</i></td>
-      <td>なし</td>
-      <td>なし</td>
-      <td>なし</td>
+      <td>IP Obfuscation</td>
+      <td><i>existing value</i></td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
     </tr>
     <tr>
-      <td>ファーストパーティ ID Cookie</td>
-      <td><i>既存の値</i></td>
-      <td>オフ</td>
-      <td>オフ</td>
-      <td>オフ</td>
+      <td>First Party ID Cookie</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>サードパーティ ID 同期</td>
-      <td><i>既存の値</i></td>
-      <td>オフ</td>
-      <td>オフ</td>
-      <td>オフ</td>
+      <td>Third Party ID Synch</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>アクセスタイプ</td>
-      <td><i>既存の値</i></td>
-      <td>混合認証</td>
-      <td>混合認証</td>
-      <td>混合認証</td>
+      <td>Access Type</td>
+      <td><i>existing value</i></td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
     </tr>
     <tr>
       <td>Media Analytics</td>
-      <td><i>既存の値</i></td>
-      <td>オフ</td>
-      <td>オフ</td>
-      <td>オフ</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
         <tr>
-      <td>ボットの検出</td>
-      <td><i>既存の値</i></td>
-      <td>オフ</td>
-      <td>オフ</td>
-      <td>オフ</td>
+      <td>Bot Detection</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>マッピング</td>
-      <td><i>既存の値</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
+      <td>Mapping</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Tags プロパティ </strong><br/> 既存のプロパティまたは新しいプロパティ。 名前とドメインはユーザーが指定します。</td>
+      <td colspan="5"><strong><br/>Tags property</strong><br/>An existing property or new property. The name and domain are provided by the user.</td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td><i>user provided</i> （デフォルトは「Content Analytics」）</td>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i> (default "Content Analytics")</td>
     </tr>
     <tr>
-      <td>ドメイン</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td ><i>所定の</i></td>
+      <td>Domain</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td ><i>predetermined</i></td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>タグライブラリ</strong></td>
+      <td colspan="5"><strong><br/>Tags library</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>
         <br/>
       </td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Web SDK拡張機能</strong></td>
+      <td colspan="5"><strong><br/>Web SDK Extension</strong></td>
     </tr>
     <tr>
-      <td>名前</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>Content Analytics - Web SDK</td>
       <td>Content Analytics - Web SDK</td>
     </tr>
     <tr>
-      <td>IMS 組織</td>
-      <td><i>自動入力</i></td>
-      <td><i>自動入力</i></td>
-      <td><i>自動入力</i></td>
-      <td><i>自動入力</i></td>
+      <td>IMS Org</td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
     </tr>
     <tr>
-      <td>エッジドメイン</td>
-      <td><i>既存の値 <br/>AppMeasurementの実装に一致するように更新する必要がある可能性があります。</i></td>
-      <td><i>既存の値 <br/>AppMeasurementの実装に一致するように更新する必要がある可能性があります。</i></td>
+      <td>Edge Domain</td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
       <td>
         <a href="http://edge.adobedc.net">edge.adobedc.net</a>
       </td>
@@ -817,162 +1470,164 @@ Content Analytics設定をアクティベートするには、「**[!UICONTROL �
       </td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>データストリーム</strong></td>
+      <td colspan="5"><strong><br/>Datastreams</strong></td>
     </tr>
     <tr>
-      <td>実稼動</td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i> ユーザーが指定 </i>?</td>
-      <td><i> ユーザーが指定 </i>?</td>
+      <td>Production</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
-      <td>ステージング</td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i> ユーザーが指定 </i>?</td>
-      <td><i> ユーザーが指定 </i>?</td>
+      <td>Staging</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
-      <td>開発</td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i>別のデータストリームに送信するために使用される既存の value<br/>Datastream の上書き</i></td>
-      <td><i> ユーザーが指定 </i>?</td>
-      <td><i> ユーザーが指定 </i>?</td>
+      <td>Development</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
-      <td>プライバシー</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>中に？</td>
-      <td>中に？</td>
+      <td>Privacy</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>In?</td>
+      <td>In?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>ID</strong></td>
+      <td colspan="5"><strong><br/>Identity</strong></td>
     </tr>
     <tr>
-      <td>ECID を移行</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>確認済み</td>
-      <td>確認済み</td>
+      <td>Migrate ECID</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
     </tr>
     <tr>
-      <td>サードパーティ Cookie の使用</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>確認済み</td>
-      <td>確認済み</td>
+      <td>Use third-party cookies</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>パーソナライズ機能</strong></td>
+      <td colspan="5"><strong><br/>Personalization</strong></td>
     </tr>
     <tr>
-      <td>Target を at.js から Web SDKに移行する</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>未チェック</td>
-      <td>未チェック</td>
+      <td>Migrate Target from at.js to Web SDK</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>パーソナライゼーションストレージの有効化</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>未チェック</td>
-      <td>未チェック</td>
+      <td>Enable personalization storage</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Adobe Journey Optimizerの自動クリックコレクション</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>常に</td>
-      <td>常に</td>
+      <td>Auto click collection for Adobe Journey Optimizer</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Always</td>
+      <td>Always</td>
     </tr>
     <tr>
-      <td>Adobe Targetの自動クリックコレクション</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>なし</td>
-      <td>なし</td>
+      <td>Auto click collection for Adobe Target</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Never</td>
+      <td>Never</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>データ収集</strong></td>
+      <td colspan="5"><strong><br/>Data Collection</strong></td>
     </tr>
     <tr>
-      <td>内部リンククリック数の収集</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>未チェック</td>
-      <td>未チェック</td>
+      <td>Collect internal links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>外部リンククリック数の収集</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>未チェック</td>
-      <td>未チェック</td>
+      <td>Collect external link clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>ダウンロードリンクのクリック数を収集</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>未チェック</td>
-      <td>未チェック</td>
+      <td>Collect download links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>イベントデータを送信する場合、自動的に次を含める</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>デフォルトのすべてのコンテキスト情報</td>
-      <td>デフォルトのすべてのコンテキスト情報</td>
+      <td>When sending event data, automatically include</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>All default context information</td>
+      <td>All default context information</td>
     </tr>
     <tr>
-      <td>ストリーミングメディア</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>空白値</td>
-      <td>空白値</td>
+      <td>Streaming Media</td>
+      <td><i>existing values</i></td>
+      <td><i>existing values</i></td>
+      <td>Blank values</td>
+      <td>Blank values</td>
     </tr>
     <tr>
-      <td>データストリーム設定の上書き</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
-      <td>データストリーム設定を一致</td>
-      <td>データストリーム設定を一致</td>
+      <td>Datastream Configuration Overrides</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Match datastream configuration</td>
+      <td>Match datastream configuration</td>
     </tr>
     <tr>
-      <td>詳細設定 – Edgeのベースパス</td>
-      <td><i>既存の値</i></td>
-      <td><i>既存の値</i></td>
+      <td>Advanced Settings - Edge base path</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>ee</td>
       <td>ee</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics拡張機能</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Extension</strong></td>
     </tr>
     <tr>
-      <td>データストリーム</td>
-      <td><i>既存の値</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
-      <td><i>所定の</i></td>
+      <td>Datastreams</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>エクスペリエンスのキャプチャと定義</td>
-      <td><i>既存の値</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
+      <td>Experience Capturing & Definition</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
     <tr>
-      <td>イベントのフィルター</td>
-      <td><i>既存の値</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
-      <td><i>ユーザーが指定</i></td>
+      <td>Event Filtering</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
   </tbody>
 </table>
+
+-->
 
 >[!MORELIKETHIS]
 >

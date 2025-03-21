@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
 # Content Analytics の手動設定
 
->[!WARNING]
->
->この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -31,7 +28,7 @@ ht-degree: 1%
 
 新しい設定または既存の設定に加えた変更をアクティベートするには：
 
-1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従う必要があります。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。 設定したドメイン、エクスペリエンスおよびアセットについてContent Analytics データが収集されるのは、その後のみです。
+1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従う必要があります。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
 
 1. Content Analyticsに従って、開発、ステージングまたはパブリッシ `<head>` 環境のページの構成要素に埋め込みコードを [ インストール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) する必要があります。
 
@@ -57,6 +54,10 @@ Content Analytics設定に関連付けられたタグプロパティで ](https:
   >
   >Adobe Content Analytics拡張機能で設定したサンドボックスとデータストリームが、以前の段階で [ ガイド付き設定 ](guided.md) を使用してContent Analytics用に設定されていることを確認します。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/> また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定された別のContent Analytics設定の妨げとならないことも確認します。
   >
+
+* [ エクスペリエンスのキャプチャと定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  正規表現を編集することで、方法を変更できます。
 
 * [ イベントのフィルタリング ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

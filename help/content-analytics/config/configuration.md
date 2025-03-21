@@ -7,43 +7,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 11%
+source-wordcount: '562'
+ht-degree: 14%
 
 ---
 
 # コンテンツ分析の設定
 
->[!WARNING]
->
->この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
 コンテンツ分析の設定は、次の手順で構成されます。
 
-![ コンテンツ分析の設定 ](../assets/aca-configuration.svg)
+![ コンテンツ分析の設定 ](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. Content Analytics [ ガイド付き設定 ](guided.md) ウィザードを使用して、Content Analyticsの設定の前提条件を設定するために必要なすべての手順を確認します。 設定を保存して後で戻ることができます。
-1. 設定値に慣れたら、設定を実装できます。 この実装は、ウィザードで設定した内容に基づいて、必要なすべてのアーティファクトを作成します。 次のアーティファクトが作成、更新、選択されます。
-   * Customer Journey Analytics
-      * [ データビュー ](/help/data-views/data-views.md) が選択されます。
-      * [ 接続 ](/help/connections/overview.md) が選択され、選択したデータビューから自動的に派生します。
-   * Experience Platform
-      * サンドボックスが選択され、接続から自動的に派生します。 必要なワークフローとサービスがサンドボックスで有効になります。
-      * Content Analytics スキーマは、サンドボックスで選択されます。 使用できない場合、必要なスキーマが作成されます。
-      * Content Analytics データセットは、サンドボックスで選択されます。 使用できない場合、必要なデータセットが作成されます。
-   * データ収集
-      * データストリームが作成され、データストリーム内にExperience Platform サービスが設定されて、Content Analytics エクスペリエンスイベントデータセットにデータがストリーミングされます。
-      * タグプロパティは、設定ウィザードで正しいサンドボックス、データストリームおよびその他の設定オプション用に設定されたAdobe Content Analytics拡張機能を使用して作成されます。
+1. Content Analytics [ ガイド付き設定 ](guided.md) ウィザードを使用して、Content Analyticsの設定の前提条件を設定するために必要なすべての手順を確認します。 設定はいつでも保存し、後で戻ることができます。
+1. 設定値に慣れたら、設定を実装できます。 この実装は、ウィザードで設定した内容に基づいて、必要なすべてのアーティファクトを作成します。
 1. タグプロパティを [ 手動で公開 ](manual.md) した場合にのみ、Content Analytics設定が効果的にデプロイされアクティブ化されます。
 
 1. [ ガイド付き設定 ](guided.md) ウィザードを使用して行える実装済み設定の変更は、一部のみです。 例えば、「[ データビュー ](/help/data-views/data-views.md) を変更します。
-1. 実装された設定に対して、他の変更を加えることもできます。 関連するタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用します。[
-1. タグプロパティを [ 手動で再公開 ](manual.md) した場合にのみ、手順 4 と 5 での設定の変更が効果的にデプロイされアクティブ化されます。
+1. 関連するタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、実装された設定に他の変更を加えることができます。[
+1. タグプロパティを [ 手動で再公開 ](manual.md) した場合にのみ、設定の変更が効果的にデプロイされアクティブ化されます。
 
 
 ## 前提条件

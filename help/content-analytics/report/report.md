@@ -7,30 +7,27 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: df3a877feed82f6cbd181561da68837373bdafb8
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # コンテンツ分析レポートの概要
 
->[!WARNING]
->
->この記事は、今後の最終バージョンの非公式ドラフトバージョンであり、コンテンツ分析ドキュメントの一部です。 すべてのコンテンツは変更される可能性があり、この記事の現在のバージョンから法的義務を引き出すことはできません。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-コンテンツ分析に関するレポートは、Analysis Workspace内で行われます。 特定のWorkspace[ テンプレート ](#template) を使用できるので、関連するコンテンツインサイトを含む事前入力されたWorkspace プロジェクトに直ちにアクセスできます。
+[Analysis Workspace](/help/analysis-workspace/home.md) 内でContent Analyticsについてレポートし、分析を実行して、インサイトを得ます。 特定のWorkspace[ テンプレート ](#template) を使用できるので、関連するコンテンツインサイトを含む事前入力されたWorkspace プロジェクトに直ちにアクセスできます。
 
 コンテンツ分析に関するレポートをゼロから開始するには：
 
 1. Workspaceで [ 新しいプロジェクトを作成 ](/help/analysis-workspace/build-workspace-project/create-projects.md) または [ 既存のプロジェクトを開く ](/help/analysis-workspace/build-workspace-project/open-projects.md) ことができます。
 1. Content Analyticsのレポート用に [ データビューを選択 ](/help/analysis-workspace/c-panels/panels.md#data-view) してください。 Content Analytics レポートは、Content Analyticsで [ 設定 ](/help/content-analytics/config/configuration.md) されたデータビューでのみ使用できます。
 1. ![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル [ ビジュアライゼーションをキャンバス ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ドラッグします。
-1. [ 特定のコンテンツ分析コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （フィルター、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。 または、[ コンテンツ分析テンプレート ](#template) を使用します。
+1. [ 特定のコンテンツ分析コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （フィルター、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
 
 ## サムネール
 
@@ -38,9 +35,16 @@ ht-degree: 0%
 
 ![Content Analytics のサムネール ](../assets/aca-thumbnails.png)
 
+Content Analytics ディメンションのサムネールの表示を設定するには：
+
+* Content Analytics ディメンションのヘッダー行にポインタを合わせます。 例えば、**[!UICONTROL アセット名]** や **[!UICONTROL エクスペリエンス ID]** などです。
+* ![ 設定 ](/help/assets/icons/Setting.svg) を選択します。
+* **[!UICONTROL 行設定]** ポップアップの **[!UICONTROL 設定]** の下の **[!UICONTROL サムネールを表示]** をチェックまたはチェック解除します。
+
+
 ## プレビュー
 
-サムネールのあるディメンション（アセット名、エクスペリエンス名など）の場合は、プレビューポップアップウィンドウを開くことができます。
+Content Analytics ディメンションの行にサムネールが表示される場合は、プレビューポップアップウィンドウを開くことができます。
 
 次の詳細を含むプレビューを開くには：
 
@@ -51,10 +55,10 @@ ht-degree: 0%
   | ![Content Analytics エクスペリエンスのプレビュー ](../assets/aca-experience-preview.png) | ![Content Analytics アセットのプレビュー ](../assets/aca-asset-preview.png) |
   | **[!UICONTROL エクスペリエンスの名前]** | **[!UICONTROL アセットの名前]** |
   | **[!UICONTROL インプレッション数（常に）]**：エクスペリエンスのインプレッション数。 | **[!UICONTROL インプレッション数（常に）]**：アセットのインプレッション数。 |
-  | **[!UICONTROL Assets]**：このエクスペリエンスに含まれるアセットの数。 ![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** を選択して、アセットを調べます。 | **[!UICONTROL エクスペリエンス]**：このアセットが表示されるエクスペリエンスの数。 ![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** して、アセットを調べます。 |
+  | **[!UICONTROL Assets]**：このエクスペリエンスに含まれるアセットの数。 <br/>![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** を選択して、アセットを調べます。 | **[!UICONTROL エクスペリエンス]**：このアセットが表示されるエクスペリエンスの数。 <br/>![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** を選択して、アセットを調べます。 |
   | **[!UICONTROL ファーストインプレッション]**：エクスペリエンスのファーストインプレッションの日付。 | **[!UICONTROL 最初のインプレッション]**：アセットの最初のインプレッションの日付。 |
   | **[!UICONTROL 最新のインプレッション]**：エクスペリエンスの最新のインプレッションの日付。 | **[!UICONTROL 最新のインプレッション]**：アセットの最新のインプレッションの日付。 |
-  | **[!UICONTROL エクスペリエンス属性]**：エクスペリエンスの属性。 | **[!UICONTROL アセット属性]**：アセットの属性。 |
+  | **[!UICONTROL エクスペリエンス属性]**：エクスペリエンスの [ 属性 ](/help/content-analytics/report/components.md#experience-attributes)。 | **[!UICONTROL アセット属性]**：アセットの [ 属性 ](/help/content-analytics/report/components.md#asset-attributes)。 |
 
 
 ## テンプレート
@@ -72,7 +76,7 @@ ht-degree: 0%
 1. **[!UICONTROL テンプレートの設定]** ダイアログで、**[!UICONTROL コンバージョン指標を選択]** ダイアログから指標を選択します。 例えば、**[!UICONTROL Asset CTR]** と入力します。
 1. 「**[!UICONTROL 続行]**」を選択します。
 
-Workspaceに **[!UICONTROL Content Analyticsの概要]** プロジェクトが開きます。 このプロジェクトは 4 つのパネルで構成され、それぞれが特定の質問に回答します。
+Workspaceに **[!UICONTROL Content Analyticsの概要]** プロジェクトが開きます。 このプロジェクトは 4 つのパネルで構成され、各パネルには、特定の質問に回答するためのフリーフォームテーブルとビジュアライゼーションが表示されます。
 
 * **最もパフォーマンスの高いコンテンツは何ですか？**
 このパネルを使用すると、エンゲージメントとコンバージョンに寄与しているエクスペリエンスと、それらのエクスペリエンス内のアセットを理解できます。 エクスペリエンスは、特定の時間にキャプチャされた完全な web ページです。 エクスペリエンスには、テキストと複数の個々の画像アセットの両方を含めることができます。 アセットは個々の画像です。
@@ -129,18 +133,18 @@ Content Analyticsでは、AI と GenAI を使用して、被写体、シーン�
 選択したコンバージョン指標に基づいて上位のエクスペリエンスキーワードを表示する [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
 * **アセットはサイト上のどこに表示されますか？**
-サイト上で最も多くのビューアセットが表示される場所の詳細を示す 1 つのフリーフォームテーブルで構成されるパネル。
+最も多く表示されたアセットがサイト上で表示される場所の詳細を示す 1 つのフリーフォームテーブルで構成されるパネル。
 
   このパネルは、次の 1 つのビジュアライゼーションで構成されます。
 
    * **最も多く表示されたアセットはどこに表示されますか？**
-アセット ID をディメンション別に分類すると、その画像が表示される場所をより深く理解できます。
+アセットをディメンション別に分類すると、その画像が表示される場所をより深く理解できます。
 
-     この例 [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails) および [ プレビュー ](#previews) を含む）では、[!UICONTROL *アセット ID*] の代わりに [!UICONTROL *アセット認識 ID*] が使用されます。 サイト上で全く同じ画像が異なる画像 URL で重複する場合があります。 [!UICONTROL _アセット認識_] 属性は、これらの重複を 1 つの ID の下にグループ化するのに役立ちます。 アセットはページ上で変更できるので、各アセットを [!UICONTROL _エクスペリエンス ID_] で分類して、そのアセットが表示されたページのバージョンを識別します。
+     例 [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails) および [ プレビュー ](#previews) を含む）では、**[!UICONTROL アセット ID]** の代わりに [!UICONTROL  アセット認識 ID] が使用されます。 サイト上で全く同じ画像が異なる画像 URL で重複する場合があります。 [!UICONTROL  アセット知覚 ID] 属性を使用すると、これらの重複を 1 つの ID の下にグループ化できます。
 
-     [!UICONTROL _エクスペリエンス ID_] を、サイト上のアセットの場所を理解するのに役立つ他のディメンションに置き換えることができます。 例えば、[!UICONTROL _ページ名_]、[!UICONTROL _ページ URL_]、または [!UICONTROL _サイトセクション_] です。
+     アセットはページ上で変更できるので、各アセットを **[!UICONTROL エクスペリエンス ID]** で分類して、アセットが表示されたページのバージョンを識別します。 [!UICONTROL  エクスペリエンス ID] を、サイト上のアセットの場所を理解するのに役立つ他のディメンションに置き換えることができます。 例えば、[!UICONTROL  ページ名 ]、[!UICONTROL  ページ URL]、または [!UICONTROL  サイトセクション ] です。
 
-     また、[!UICONTROL _知覚 ID_] を [!UICONTROL _アセット ID_] に置き換えて、特定の画像 URL が参照されている場所の記録を取得することもできます。
+     また、[!UICONTROL  アセット認識 ID] を [!UICONTROL  アセット ID] に置き換えて、特定の画像 URL が参照されている場所の記録を取得することもできます。
 
 
 >[!MORELIKETHIS]

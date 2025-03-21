@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 22%
+source-wordcount: '3384'
+ht-degree: 21%
 
 ---
 # スニペット
@@ -217,3 +217,11 @@ ht-degree: 22%
 ## アップグレードチェックリストの最終ステップ {#upgrade-final-step}
 
 1. 引き続き『Customer Journey Analytics アップグレードガイド』の [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または動的に生成されるアップグレード手順に従います。 Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。
+
+
+## ドラフト Content Analytics ドキュメント {#draft-aca}
+
+>[!WARNING]
+>
+>この記事は、Content Analytics ドラフトのドキュメントの一部です。 Content Analytics ドキュメントのドラフトはすべて変更の対象であり、この記事の現在のバージョンまたはContent Analytics ドキュメントの一部であるその他の記事から派生する法的義務は一切ありません。
+>
