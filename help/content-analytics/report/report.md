@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![Content Analytics のサムネール ](../assets/aca-thumbnails.png)
 
-Content Analytics ディメンションのサムネールの表示を設定するには：
+デフォルトでは、関連するContent Analytics ディメンションのサムネールが表示されます。 Content Analytics ディメンションのサムネールの表示を設定するには：
 
 * Content Analytics ディメンションのヘッダー行にポインタを合わせます。 例えば、**[!UICONTROL アセット名]** や **[!UICONTROL エクスペリエンス ID]** などです。
 * ![ 設定 ](/help/assets/icons/Setting.svg) を選択します。
