@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
+source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +48,6 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 
 ## Customer Journey Analytics内のリンクをクリックした場合のヒートマップの表示
 
-ヒートマッピングの調査対象となるページが見つかったら、URL が含まれるパネルに適用できます。 このテーブルは、対象のページのヒートマップ、スクロールの深さ、インタラクションのキーゾーンを探索できる URL を返します。  Quantum Metric ヒートマップについて詳しくは、[https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps) を参照してください
+ヒートマッピングの調査対象となるページが見つかったら、URL が含まれるパネルに適用できます。 このテーブルは、対象のページのヒートマップ、スクロールの深さ、インタラクションのキーゾーンを探索できる URL を返します。  Quantum Metric ヒートマップについて詳しくは、[https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps) を参照してください。  その他のリソースについては、Quantum Metric のカスタマーサポート担当者にお問い合わせいただくか、Quantum Metric[ カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
 
 
