@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 54%
+ht-degree: 58%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="指定したプロパティの Web SDK の実装"
->abstract="アップグレードガイドで目的の実装タイプを選択して、手順の詳細を確認します。"
+>abstract="手順について詳しくは、アップグレードガイドで目的の実装タイプを選択してください。"
 
 <!-- markdownlint-enable MD034 -->
 

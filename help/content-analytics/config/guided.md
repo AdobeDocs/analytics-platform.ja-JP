@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: ba386bf8055498ba1cecdd49890194dd2a7d69f9
 workflow-type: tm+mt
 source-wordcount: '3335'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="詳細"
->abstract="このガイドでは、Content Analyticsの設定に必要な要件を設定します。 この設定の名前を指定してください"
+>abstract="このガイドでは、コンテンツ分析を設定するために必要な要件を設定します。この設定の名前を指定してください"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -103,17 +103,17 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="新しいデータビュー"
->abstract="新しいデータビューを選択すると、そのデータビューが更新され、Content Analyticsの指標とディメンションが含まれます。 必要に応じて、関連付けられた接続も更新され、コンテンツ分析データセットが含まれます。コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
+>abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。必要に応じて、関連付けられた接続も更新され、コンテンツ分析データセットが含まれます。コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
->title="選択したデータビューをクリーンアップ"
->abstract="既にContent Analytics用にプロビジョニングされているデータビューを選択しました。 既存のContent Analytics設定が削除され、データビューが新しい設定でプロビジョニングされます。"
+>title="選択したデータビューのクリーンアップ"
+>abstract="コンテンツ分析用に既にプロビジョニングしているデータビューが選択されました。この既存のコンテンツ分析設定は削除され、データビューが新しい設定でプロビジョニングされます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
->title="前のデータビューをクリーンアップ"
->abstract="新しいデータビューが選択されました。 以前に選択したデータビューのContent Analytics設定は削除されます。"
+>title="以前のデータビューのクリーンアップ"
+>abstract="新しいデータビューが選択されました。以前に選択したデータビューのコンテンツ分析設定は削除されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="現在の設定に関連付けられているタグプロパティのAdobe Content Analytics拡張機能の設定を編集できます。"
+>abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能の設定を編集できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -215,12 +215,12 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
->abstract="使用するタグプロパティを定義するか、新しく作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。"
+>abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="データ収集"
->abstract="**タグプロパティを指定**"
+>abstract="**タグプロパティの指定**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -245,12 +245,12 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="データ収集"
->abstract="現在の設定に関連付けられているタグプロパティのAdobe Content Analytics拡張機能のページの設定を編集できます。"
+>abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のページの設定を編集できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="データ収集"
->abstract="アセットの設定は、現在の設定に関連付けられているタグプロパティのAdobe Content Analytics拡張機能で編集できます。"
+>abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のアセットの設定を編集できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,7 +307,7 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="実装の確認"
->abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。いくつかの設定は、Content Analyticsで一般的に役立つ内容に基づいてデフォルトで選択されますが、お客様（データ管理者）は、各アーティファクトの設定を確認し、プライバシーポリシー、契約上の権利と義務、適用法の下での同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/> 画像とテキストの属性を派生させるために、Adobeは次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得された URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けることはできません。"
+>abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。コンテンツ分析に一般的に役立つ内容に基づいて、いくつかの設定がデフォルトで選択されていますが、ユーザー（データ管理者）は各アーティファクトの設定を確認し、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/>画像やテキストの属性を取得するために、アドビでは、次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得される URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けることはできません。"
 
 <!-- markdownlint-enable MD034 -->
 
