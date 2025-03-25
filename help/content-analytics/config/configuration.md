@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 17a7a9a602b92693b2ad6db10f60d3e77fef9724
+source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 14%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
@@ -39,19 +39,9 @@ Content Analyticsを設定する前に、次の前提条件が満たされてい
 
 * Content Analytics で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録している。 設定するユーザーエージェント文字列は <code>AdobeFeaturization/1.0 です。</code>。
 * Customer Journey Analyticsの製品管理者の役割に加えて、接続の管理とデータビューの管理を行う権限があります。
-* 必要なExperience Platform権限がある。
-
-  | カテゴリ | 権限 | 説明 |
-  |---|---|---|
-  | [!UICONTROL データ収集] | データストリームを表示 | データストリームへの読み取り専用アクセス |
-  | [!UICONTROL データ収集] | データストリームの管理 | データストリームの読み取り、作成、編集、削除へのアクセス。 |
-  | [!UICONTROL  データモデリング ] | [!UICONTROL スキーマの表示] | スキーマおよび関連リソースへの読み取り専用アクセス |
-  | [!UICONTROL  データモデリング ] | [!UICONTROL スキーマの管理] | 各スキーマと関連リソースへの読み取り、作成、編集および削除アクセス |
-  | [!UICONTROL データ管理] | [!UICONTROL データセットの表示] | データセットおよびスキーマへの読み取り専用アクセス |
-  | [!UICONTROL データ管理] | [!UICONTROL データセットの管理] | データセットへの読み取り、作成、編集、削除アクセススキーマへの読み取り専用アクセス |
-  | [!UICONTROL データ取り込み] | [!UICONTROL ソースの管理] | ソースへの読み取り、作成、編集、無効化アクセス |
-  | [!UICONTROL Identity Management] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
-
+* [ データ収集権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"} が必要です。 これらの権限は、次の要素で構成されます。
+   * [Experience Platformの権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Experience Platform データ収集の権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * 次の重要な設定オプションを慎重に検討しました。
 
    * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たした場合にのみ可能です。
