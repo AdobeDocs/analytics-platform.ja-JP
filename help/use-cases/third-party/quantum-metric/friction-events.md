@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: e6a77e75963fb43041c0533a28a9563a3849b8b0
+exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
+source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -16,6 +17,8 @@ ht-degree: 0%
 # Quantum Metric friction イベントのCustomer Journey Analyticsへの追加
 
 Quantum Metric は、ページ読み込み速度の低下、ページ読み込みエラー、レイジクリック数などの摩擦イベントを収集します。 これらのイベントは、ユーザージャーニーで補完的なイベントとしてCustomer Journey Analyticsに渡すことができます。 この結合データを使用すると、ダウンストリーム指標に対する摩擦の影響をより深く理解できます。
+
+## 前提条件：
 
 このユースケースには次の 2 つの要件があります。
 
