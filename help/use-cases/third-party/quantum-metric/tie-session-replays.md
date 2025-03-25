@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
+source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,11 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID �
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
-各セッション ID は、クリック可能なリンクになりました。 これらのリンクを使用すると、新しいタブで Quantum Metric に移動し、その特定のセッションをより詳細に分析できます。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
+各セッション ID は、クリック可能なリンクになりました。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
 
 ## 手順 2 Customer Journey Analyticsからのセッションの表示
 
-クリック可能なリンクを含んだWorkspace レポートを作成したら、Customer Journey Analyticsのフィルターを使用して、Quantum Metric で詳細に分析できる興味深いセッションを特定できます。
-この表は、そのセグメント内のすべてのセッションを返します。任意のセッションをクリックすると、QM で詳細を確認できます。  Quantum Metric セッションの再生の詳細については、[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay) を参照してください。 その他のリソースについては、Quantum Metric のカスタマーサポート担当者にお問い合わせいただくか、Quantum Metric[ カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
+セッションの再生を調べたい魅力的なセグメントが見つかったら、そのセグメントを、セッション ID のリンクを含むパネルに適用し、セグメントでフィルタリングできます。 この表は、そのセグメント内のすべてのセッションを返します。いずれかのセッションをクリックすると、Quantum Metric で詳細を確認できます。
+
+Quantum Metric セッションの再生の詳細については、[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay) を参照してください。 その他のリソースについては、Quantum Metric のカスタマーサポート担当者にお問い合わせいただくか、Quantum Metric[ カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
 
