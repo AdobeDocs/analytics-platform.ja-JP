@@ -4,7 +4,7 @@ description: レポートで使用する日付範囲を作成します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 6e4f23d65a620104cfbd36fc9b4ccd06146f143c
+source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 37%
@@ -18,12 +18,12 @@ ht-degree: 37%
 
 ![注釈の作成](assets/create-date-range.png)
 
-* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle]**[!UICONTROL Add]**」を選択します。
-* **B**. Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
-* **C**。 Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します。
-* **D**。 Workspace プロジェクトで、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
-* **E**. Workspace プロジェクトのコンポーネント左パネルで、「![ カレンダー ](/help/assets/icons/Add.svg)**日付範囲 ![ に ](/help/assets/icons/Calendar.svg) 「追加**」を選択します。
-* **F**. 折れ線グラフ ビジュアライゼーションなどのサポートされているビジュアライゼーションで、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
+* **A** - メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle]**[!UICONTROL Add]**」を選択します。
+* **B** - Workspace プロジェクトのビジュアライゼーションのコンテキストメニューで、「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
+* **C** - Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します
+* **D** - Workspace プロジェクトでは、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
+* **E** - Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Calendar.svg) **** 日付範囲 ![ で「追加 ](/help/assets/icons/Add.svg)」を選択します。
+* **F** – 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションの場合は、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
 注釈を定義するには、[[!UICONTROL  日付範囲ビルダー ]](#annotation-builder) を使用します。
 
