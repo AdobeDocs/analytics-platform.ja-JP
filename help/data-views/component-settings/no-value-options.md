@@ -5,9 +5,9 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
+source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '331'
 ht-degree: 53%
 
 ---
@@ -41,9 +41,10 @@ ht-degree: 53%
 
 数値をディメンションとして使用する場合、次のことができます
 
-* データビューで「値なし」オプションを設定します。 **[!UICONTROL 「値なし」を値として扱う」を除くすべての設定がサポートされていることに注意してください]**。
-* Workspaceのフリーフォームテーブルの数値ディメンションには、[!UICONTROL  「値を含めない」 ] を使用します。
-* フィルタービルダーで、数値ディメンションを持つ「exists」または「does not exists」演算子を使用します。
+* データビューで「値なし」オプションを設定します。 **[!UICONTROL 「値なし」を値として扱う」を除き、上記のすべての設定がサポートされていることに注意してください]**。
+* Workspaceのフリーフォームテーブルの数値ディメンションには、**[!UICONTROL 「値を含めない」]** を使用します。
+* フィルタービルダーで、数値ディメンションを持つ **[!UICONTROL exists]** または **[!UICONTROL does not exists]** 演算子を使用します。
+
 
 >[!MORELIKETHIS]
 >
