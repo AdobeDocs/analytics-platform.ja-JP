@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Quantum Metric セッションの再生をCJAのデータとリンクさせることで、お客様は「何」の背後にある「理由」をより深く理解できます。  Workspaceを使用してフリクションのあるセッションを検出し、ハイパーリンクされたセッション ID をクリックして、Quantum Metric でのセッションの再生を調べることができます。  このデータにより、セッション内の動作を確認し、消費者の摩擦を引き起こす要因をより深く理解できます。  CJAと連動したセッションリプレイを通じて、お客様の行動に関する重要なコンテキストをエクスペリエンスに取り込むことができます。
 
-## 前提条件
+## 前提条件：
 
 このユースケースでは、残りの実装と共に Quantum Metric のセッション ID を収集する必要があります。 実装の変更方法については、[Customer Journey Analyticsでの Quantum Metric セッション ID の収集 ](collect-session-id.md) を参照してください。
 
