@@ -5,10 +5,10 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 93%
+source-wordcount: '329'
+ht-degree: 53%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 <!-- markdownlint-enable MD034 -->
 
 
-値なしオプションにより、データセット内のイベントに指標が含まれているが、ディメンションに値が含まれていない場合に、Analysis Workspace がどのように処理するかを決定できます。このディメンション項目の名前を選択したり、完全に非表示にしたり、実際の値として扱ったりできます。
+[!UICONTROL  値オプションなし ] を使用すると、データセット内のイベントに指標が含まれているが、ディメンションに値が含まれていない場合に、Analysis Workspaceがどのように処理するかを指定できます。 このディメンション項目の名前を選択したり、完全に非表示にしたり、実際の値として扱ったりできます。
 
 ![値オプションなし](../assets/no-value-options.png)
 
@@ -32,13 +32,20 @@ ht-degree: 93%
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL 表示された場合は「値なし」を呼び出す] | **[!UICONTROL 値なし]** ディメンション項目の名前を別の項目に変更できるテキストフィールド。 |
-| [!UICONTROL デフォルトで「値なし」を表示しない] | レポートでこの値を表示しません。このディメンションに結び付けられていない指標の回数は、レポートに表示されません。 |
-| [!UICONTROL デフォルトで「値なし」を表示する] | この値をレポートに表示します。 |
-| [!UICONTROL 「値なし」を値として扱う] | データ内の空白の値を「[!UICONTROL 表示された場合は「値なし」を呼び出す]」で指定したテキストに置き換えます。例えば、モバイルデバイスのタイプをディメンションとして指定した場合、「 **[!UICONTROL 値なし]** 」項目の名前を「デスクトップ」に変更できます。 このフィールドをカスタム値に変更すると、そのカスタム値は正当な文字列値として扱われます。したがって、このフィールドに「Red」と入力した場合、データそのものに「Red」という文字列が出現すると、指定した同じ行項目に分類されます。 |
+| **[!UICONTROL 表示された場合は「値なし」を呼び出す]** | **[!UICONTROL 値なし]** ディメンション項目の名前を別の項目に変更できるテキストフィールド。 |
+| **[!UICONTROL デフォルトで「値なし」を表示しない]** | レポートでこの値を表示しません。このディメンションに結び付けられていない指標の回数は、レポートに表示されません。 |
+| **[!UICONTROL デフォルトで「値なし」を表示する]** | この値をレポートに表示します。 |
+| **[!UICONTROL 「値なし」を値として扱う]** | （数値次元ではサポートされていません）データ内の空白の値を「表示された場合は「値なし」を呼び出す [!UICONTROL  で指定したテキストに置き換えます ]。 例えば、モバイルデバイスのタイプをディメンションとして指定した場合、「 **[!UICONTROL 値なし]** 」項目の名前を「デスクトップ」に変更できます。 このフィールドをカスタム値に変更すると、そのカスタム値は正当な文字列値として扱われます。したがって、このフィールドに「Red」と入力した場合、データそのものに「Red」という文字列が出現すると、指定した同じ行項目に分類されます。 |
 
-{style="table-layout:auto"}
+## 数値ディメンションでの「値なし」のサポート {#numeric}
 
-## ブログ投稿
+数値をディメンションとして使用する場合、次のことができます
 
-以下は、[Customer Journey Analyticsでの「値なし」の処理 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339) に関する関連ブログ投稿です。
+* データビューで「値なし」オプションを設定します。 **[!UICONTROL 「値なし」を値として扱う」を除くすべての設定がサポートされていることに注意してください]**。
+* Workspaceのフリーフォームテーブルの数値ディメンションには、[!UICONTROL  「値を含めない」 ] を使用します。
+* フィルタービルダーで、数値ディメンションを持つ「exists」または「does not exists」演算子を使用します。
+
+>[!MORELIKETHIS]
+>
+>以下は、[Customer Journey Analyticsでの「値なし」の処理 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339) に関する関連ブログ投稿です。
+
