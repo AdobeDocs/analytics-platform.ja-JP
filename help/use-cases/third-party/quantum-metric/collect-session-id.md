@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: 255f06ba504a0fa189a02966c5d3c63e1a4fadfd
+source-git-commit: ae88ab16e85bd1274990f8c4d04771398293fe09
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -18,11 +18,13 @@ ht-degree: 0%
 
 [Quantum Metric セッションの再生を結び付ける ](tie-session-replays.md) または [Quantum Metric ヒートマップを使用する ](heatmap.md) などのユースケースでは、Quantum Metric セッション ID を収集するように実装を変更する必要があります。 このページでは、そのデータを既存の実装に正常に取り込むためのプロセスの概要を説明します。
 
-## 前提条件
+## 前提条件：
 
 以下の手順では、Adobe Experience Platform Data Collection でタグを使用していることを前提としています。 組織でタグを使用しない場合は、これらのデータ収集方法を手動の web SDK実装に適応させることができます。
 
-### 手順 1:Quantum Metric タグ拡張機能を使用して Quantum Metric セッション ID を取得する
+詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
+
+## 手順 1:Quantum Metric タグ拡張機能を使用して Quantum Metric セッション ID を取得する
 
 Adobe Experience Platformに送信するデータに Quantum Metric セッション ID を追加するには、次の手順に従います。
 
@@ -37,13 +39,11 @@ Adobe Experience Platformに送信するデータに Quantum Metric セッショ
 >[!NOTE]
 >Web SDKは、Quantum Metric コードよりも高速に実行される場合があります。 この場合、セッション ID は後続のヒットで送信されます。 訪問者がバウンスした場合、これらのインスタンスではセッション ID は収集されません。
 
-詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
-
-### 手順 2：含まれるデータセットフィールドを確認する
+## 手順 2：含まれるデータセットフィールドを確認する
 
 接続内のデータセットに、目的のデータセットの Quantum Metric セッション ID があることを確認します。
 
-### 手順 3：使用可能なディメンションとしての Quantum Metric セッション ID の追加
+## 手順 3：使用可能なディメンションとしての Quantum Metric セッション ID の追加
 
 既存のデータビューを編集し、セッション ID をCustomer Journey Analyticsで使用可能なディメンションとして追加します。
 
