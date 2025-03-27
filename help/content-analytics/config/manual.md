@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 1%
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
 
@@ -20,31 +20,31 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-この記事では、Content Analytics 設定のアクティブ化または非アクティブ化や、Content Analytics 実装の編集に必要な手動アクションについて詳しく説明します。
+この記事では、Content Analytics設定のデータ収集を開始または停止したり、Content Analytics実装を編集したりするために必要な手動のアクションについて詳しく説明します。
 
 次の手動設定アクションを使用できます。
 
-## アクティブ化
+## データ収集の開始
 
-新しい設定または既存の設定に加えた変更をアクティベートするには：
+実装されたContent Analytics設定のデータ収集を開始するには、次の手順を実行します。
 
-1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従う必要があります。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
+1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従います。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
 
-1. Content Analyticsに従って、開発、ステージングまたはパブリッシ `<head>` 環境のページの構成要素に埋め込みコードを [ インストール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) する必要があります。
+1. [ インストール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)Content Analyticsを使用して、開発環境、ステージング環境またはパブリッシ `<head>` 環境のページの UI 要素に埋め込まれたコード。
 
 
-## 非アクティブ化
+## データ収集の停止
 
-コンテンツ分析データの収集を無効にするには：
+実装されたContent Analytics設定のデータ収集を停止するには、次の手順を実行します。
 
 1. Content Analyticsに従って、開発環境、ステージング環境または実稼動環境でページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) を削除します。
 1. [ 削除 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview):Content Analytics設定に関連するタグプロパティ。
 
 
 
-## 変更
+## データ収集の変更
 
-[ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更します。
+[ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
 
 Content Analytics設定に関連付けられたタグプロパティで ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、次のアーティファクトを変更します。[
 
@@ -57,14 +57,14 @@ Content Analytics設定に関連付けられたタグプロパティで ](https:
 
 * [ エクスペリエンスのキャプチャと定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
-  正規表現を編集することで、方法を変更できます。
+  エクスペリエンスを有効または無効にしたり、正規表現とクエリパラメーターの組み合わせを編集したりして、web サイト上でのコンテンツのレンダリング方法を決定できます。
 
 * [ イベントのフィルタリング ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 
   正規表現を編集して、ページやアセットのフィルタリング方法を変更できます。
 
 
-Adobe Content Analytics 拡張機能で変更を行った後、使用する [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} を確認して、変更内容をアクティベートします。
+Adobe Content Analytics拡張機能で変更を行った後、使用している [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} を確認し、加えられた変更に基づいてデータの収集を開始します。
 
 
 

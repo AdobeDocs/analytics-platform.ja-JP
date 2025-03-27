@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,10 @@ Content Analyticsは、マーケターが、コンテンツがビジネスが定
 
 Content Analytics では、次のような主要な用語を使用します。
 
-![Assetsとエクスペリエンス ](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assetsとエクスペリエンス ](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **エクスペリエンス**：エクスペリエンスとは、web ページを訪問した最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。 各エクスペリエンスには一意の ID が割り当てられます。
-* **アセット**：アセットは、画像などの個別の一意のコンテンツです。 各アセットには、一意の ID も割り当てられます。
+* **エクスペリエンス**：エクスペリエンスとは、web ページを訪問した最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。 各エクスペリエンスには一意の ID が割り当てられます。 ページを変更すると、そのページのHTMLも変更され、新しいエクスペリエンスになります。
+* **アセット**：アセットは、画像などの個別の一意のコンテンツです。 各アセットには、一意の ID と知覚的 ID も割り当てられます。 知覚 ID は、視覚的に同一のアセットと共有される識別子です。 知覚的 ID は、アセット URL が異なり、そのためアセット ID も異なるが知覚的には同一である可能性のあるアセットの重複を排除するのに役立ちます。
 * **属性**：属性は、エクスペリエンスまたはアセットに関連付けられた説明的なメタデータ要素です。 属性の例としては、写真スタイル、読みやすさ、説得の方法、オブジェクトカラー、背景色があります。
 
 ## 仕組み
@@ -52,7 +52,7 @@ Content Analytics では、次のような主要な用語を使用します。
 ![ コンテンツ分析 – 仕組み ](assets/aca-overview.gif)
 
 
-1. ユーザーが [Content Analytics用に設定 ](config/configuration.md) されたサイトを訪問すると、Experience Platform web SDKはコンテンツとのインタラクションを記録します。
+1. ユーザーが [Content Analytics用に設定 ](config/configuration.md) されたサイトを訪問すると、Experience Platform web SDKは、コンテンツとのインプレッションとインタラクションを記録します。
 1. ID および機能サービスは、これらのインタラクションを処理します。 このプロセスは、インタラクションを定義する設定済み URL の公開バージョンを改訂するクローラーで構成されます。 クロールされたすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、機能サービスは、AI/ML サービスを適用して、エクスペリエンスと、アセットのメタデータと属性を検出します。
 1. これらのサービスの結果（[ コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platformの関連する特定のコンテンツ分析データセットの更新に使用されます。
 1. コンテンツ分析データは、行動データやその他のルックアップデータと共に、Customer Journey Analytics設定（[ 接続 ](/help/connections/overview.md)、[ データビュー ](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。 この設定により、コンテンツに関する独自のマクロレベルのインサイトの基盤が提供されます。 <br/>[Content Analytics テンプレートを使用して、Content Analyticsのレポートや分析をすぐに開始できます ](/help/content-analytics/report/report.md#template)。

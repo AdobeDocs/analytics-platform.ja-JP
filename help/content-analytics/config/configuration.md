@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 1. Content Analytics [ ガイド付き設定 ](guided.md) ウィザードを使用して、Content Analyticsの設定の前提条件を設定するために必要なすべての手順を確認します。 設定はいつでも保存し、後で戻ることができます。
 1. 設定値に慣れたら、設定を実装できます。 この実装は、ウィザードで設定した内容に基づいて、必要なすべてのアーティファクトを作成します。
-1. タグプロパティを [ 手動で公開 ](manual.md) した場合にのみ、Content Analytics設定が効果的にデプロイされアクティブ化されます。
+1. タグプロパティを [ 手動で公開 ](manual.md) した場合にのみ、Content Analytics設定が効果的にデプロイされ、データ収集が開始されます。
 
 1. [ ガイド付き設定 ](guided.md) ウィザードを使用して行える実装済み設定の変更は、一部のみです。 例えば、「[ データビュー ](/help/data-views/data-views.md) を変更します。
 1. 関連するタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、実装された設定に他の変更を加えることができます。[
-1. タグプロパティを [ 手動で再公開 ](manual.md) した場合にのみ、設定の変更が効果的にデプロイされアクティブ化されます。
+1. タグプロパティ [ 手動での再公開 ](manual.md) を行った場合にのみ、設定変更が効果的にデプロイされ、変更内容に基づいてデータ収集が開始されます。
 
 
 ## 前提条件

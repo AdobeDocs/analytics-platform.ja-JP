@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Content Analytics ディメンションの行にサムネールが表示され�
   | エクスペリエンスのプレビュー | アセットのプレビュー |
   |---|---|
   | ![Content Analytics エクスペリエンスのプレビュー ](../assets/aca-experience-preview.png) | ![Content Analytics アセットのプレビュー ](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL エクスペリエンスの名前]** | **[!UICONTROL アセットの名前]** |
+  | ディメンションの名前（例：**[!UICONTROL エクスペリエンス ID]）** | アセットディメンションの名前（例：**[!UICONTROL アセット ID]）** |
   | **[!UICONTROL インプレッション数（常に）]**：エクスペリエンスのインプレッション数。 | **[!UICONTROL インプレッション数（常に）]**：アセットのインプレッション数。 |
   | **[!UICONTROL Assets]**：このエクスペリエンスに含まれるアセットの数。 <br/>![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** を選択して、アセットを調べます。 | **[!UICONTROL エクスペリエンス]**：このアセットが表示されるエクスペリエンスの数。 <br/>![ 分類 ](/help/assets/icons/Breakdown.svg)**[!UICONTROL 分類]** を選択して、アセットを調べます。 |
   | **[!UICONTROL ファーストインプレッション]**：エクスペリエンスのファーストインプレッションの日付。 | **[!UICONTROL 最初のインプレッション]**：アセットの最初のインプレッションの日付。 |
@@ -83,7 +83,12 @@ Content Analytics ディメンションの行にサムネールが表示され�
 
   このパネルは、次のビジュアライゼーションで構成されます。
 
-   * **エクスペリエンス**
+   * **エクスペリエンス**。
+
+     >[!NOTE]
+     >
+     >これらのビジュアライゼーションは、Content Analytics設定に [ エクスペリエンスを含める ](/help/content-analytics/config/guided.md#experience-capture-and-definition) を加えた）場合にのみ表示されます。
+     > 
 
       * **エクスペリエンス CTR**：エクスペリエンス CTR を表示する [ 変更概要 ](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
       * **上位のエクスペリエンスのコンバージョン**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する [ 横棒 ](/help/analysis-workspace/visualizations/horizontal-bar.md) ビジュアライゼーション。
@@ -117,7 +122,13 @@ Content Analyticsでは、AI と GenAI を使用して、被写体、シーン�
 単一のアセット属性カテゴリの項目のパフォーマンスを比較する [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) の例：前景色。 このアセット属性は、他のアセット属性カテゴリ分析コードに置き換えることができます。
 
 * **コンバージョンに貢献するエクスペリエンス属性はどれですか？**
-アセット属性が画像の視覚的特性に焦点を当てるのに対して、エクスペリエンス属性はページのテキストに焦点を当てます。 以下のビジュアライゼーションを使用すると、コンバージョンに貢献するエクスペリエンス属性を調べることができます。 また、これらの属性は、AI モデルと GenAI モデルを使用して自動的に割り当てられます。
+
+  >[!NOTE]
+  >
+  >このパネルは、Content Analyticsの設定に [ エクスペリエンスを含める ](/help/content-analytics/config/guided.md#experience-capture-and-definition) を行った場合にのみ表示されます。
+  > 
+
+  アセット属性が画像の視覚的特性に焦点を当てるのに対して、エクスペリエンス属性はページのテキストに焦点を当てます。 以下のビジュアライゼーションを使用すると、コンバージョンに貢献するエクスペリエンス属性を調べることができます。 また、これらの属性は、AI モデルと GenAI モデルを使用して自動的に割り当てられます。
 
   このパネルは、次のビジュアライゼーションで構成されます。
 
