@@ -4,10 +4,10 @@ description: Customer Journey Analytics監査ログの表示方法と管理方�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 60%
+source-wordcount: '953'
+ht-degree: 58%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 60%
 <!-- markdownlint-enable MD034 -->
 
 
-Adobe Customer Journey Analyticsでは、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査証跡を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。
+Adobe Customer Journey Analyticsでは、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査記録を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。
 
 基本的に、監査ログでは、**誰が** **どの**&#x200B;アクションを、**いつ**&#x200B;実行したかがわかります。ログに記録される各アクションには、アクションのタイプ、日時、アクションを実行したユーザーの電子メール ID、アクションのタイプに関連する追加の属性を示すメタデータが含まれます。
 
@@ -66,9 +66,9 @@ Customer Journey Analyticsで、**[!UICONTROL ツール]**/**[!UICONTROL 監査�
    * API_REQUEST：すべてのアクションが、バックエンドの API リクエストをトリガーします。 API リクエストの内容に関する詳細が表示されます。
    * 承認：「承認」アクションが実行されました。
    * 作成：「作成」アクションが実行されました。
-   * DELETE: 「削除」アクションが実行されました。
+   * DELETE:「削除」アクションが実行されました。
    * 編集：「編集」アクションが実行されました。
-   * 禁輸措置：
+   * EMBARGO: [ レポート・アクティビティ・マネージャ ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) で要求を制限すると、アクションは EMBARGO の監査ログに記録されます。
    * 書き出し：「書き出し」アクションが実行されました。
    * ORG_CHANGE：組織変更アクションが実行されました。
    * 更新：「更新」アクションが実行されました。
@@ -158,4 +158,4 @@ UI の監査イベントには、次のフィルターを使用できます。
 
 ## API での監査ログの管理
 
-UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。詳しくは、[Customer Journey AnalyticsAPI リファレンスドキュメント ](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) を参照してください。
+UI で実行できるすべてのアクションは、API 呼び出しを使用して実行することもできます。詳しくは、[Customer Journey Analytics API リファレンスドキュメント ](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) を参照してください。
