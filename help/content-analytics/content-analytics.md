@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: a7bed5bdab20c1a995ccaf4294a5f9ba5918f43d
+source-git-commit: 177def4edce1908a099627e96ed159b0154c3715
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Content Analytics では、次のような主要な用語を使用します。
 
 
 1. ユーザーが [Content Analytics用に設定 ](config/configuration.md) されたサイトを訪問すると、Experience Platform web SDKは、コンテンツとのインプレッションとインタラクションを記録します。
-1. ID および機能サービスは、これらのインタラクションを処理します。 このプロセスは、インタラクションを定義する設定済み URL の公開バージョンを改訂するクローラーで構成されます。 クロールされたすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、機能サービスは、AI/ML サービスを適用して、エクスペリエンスと、アセットのメタデータと属性を検出します。
+1. ID および機能サービスは、これらのインタラクションを処理します。 このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを改訂する取得サービスで構成されます。 取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、機能サービスは、AI/ML サービスを適用して、エクスペリエンスと、アセットのメタデータと属性を検出します。
 1. これらのサービスの結果（[ コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platformの関連する特定のコンテンツ分析データセットの更新に使用されます。
 1. コンテンツ分析データは、行動データやその他のルックアップデータと共に、Customer Journey Analytics設定（[ 接続 ](/help/connections/overview.md)、[ データビュー ](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。 この設定により、コンテンツに関する独自のマクロレベルのインサイトの基盤が提供されます。 <br/>[Content Analytics テンプレートを使用して、Content Analyticsのレポートや分析をすぐに開始できます ](/help/content-analytics/report/report.md#template)。
 
