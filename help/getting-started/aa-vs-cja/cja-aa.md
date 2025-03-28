@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 0e3f15abbc904786c359160749d62754a9ebbe50
-workflow-type: ht
-source-wordcount: '2418'
-ht-degree: 100%
+source-git-commit: 916afd0d70f2690df61dde70f46f63e78d62b21a
+workflow-type: tm+mt
+source-wordcount: '2459'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 100%
 | **データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能** | Customer Journey Analytics を使用すると、Adobe Analytics の単一のレポートスイートであるかのように、複数のレポートスイートの[データを組み合わせる](/help/connections/combined-dataset.md)ことができます。 |
 | **あらゆる種類のデータへの対応** | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。[エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用すると、データを均等に表現および整理して、組み合わせや探索にすぐに使用できます。Adobe Analytics は、主に web およびモバイル分析データに焦点を当てており、[データを読み込む](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=ja)機能もいくつかあります。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、CJA を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の CJA レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。これは、生データからレポート／指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) は、コンテンツがビジネスが定義した主要業績評価指標にどのように影響するかをマーケターが理解するのに役立ちます。 Content Analyticsは、行動データに加えて、コンテンツの消費量とコンテンツが与える影響に関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数の組み込みの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
 | **派生フィールド** | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、これらの変換は、すべてのレポートに対して遡って適用できます。 |
