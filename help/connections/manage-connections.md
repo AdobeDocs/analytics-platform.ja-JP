@@ -1,15 +1,15 @@
 ---
 title: Customer Journey Analytics での接続の管理方法
-description: Customer Journey Analytics（Customer Journey Analytics）でExperience Platformデータセットへの接続を管理する方法について説明します。
+description: Customer Journey Analytics（Customer Journey Analytics）のExperience Platform データセットへの接続を管理する方法について説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 7f2f2fc92c188c4cdfba7d87b7b64458daf2f0a6
 workflow-type: tm+mt
-source-wordcount: '4023'
-ht-degree: 26%
+source-wordcount: '4143'
+ht-degree: 25%
 
 ---
 
@@ -45,8 +45,8 @@ ht-degree: 26%
 | ![ 情報 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | [!UICONTROL  含まれるデータセット ]、[!UICONTROL  サンドボックス ]、[!UICONTROL  所有者 ] などに関する情報を表示するには、接続名の横にある ![ 情報 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) を選択します。<p>ポップアップウィンドウに詳細が表示されます。 <p><img src="./assets/conn-info.png" alt="接続情報の表示" width="400"/> |
 | ![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 接続の [ データビューを作成する ](#create-a-data-view) には、![ データビュー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) を選択します。 このアイコンは、接続に関連付けられているデータビューが既にない場合にのみ表示されます。 |
 | ![詳細情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | ![ その他 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択して、次の操作を行います。 <p>![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)[ 編集 ](#edit-a-connection) 接続。<p>![ 削除 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[ 削除 ](#delete-a-connection) 接続。<p>![ データビュー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)[ 新しいデータビューを作成 ](#create-a-data-view)。 接続に追加のデータビューを作成する |
-| [!UICONTROL データセット] | 接続に含まれるデータセットへの 1 つ以上のリンク。 データセットのハイパーリンクを選択して、接続内のデータセットを表示できます。 選択した接続に属するデータセットが他にもある場合は、「**[!UICONTROL +*x* more]**」を選択して **[!UICONTROL 含まれるデータセット]** パネルを表示します。 このパネルには、すべてのデータセットへのリンクと、接続の一部である特定のデータセットを検索するオプションが表示されます。<p><img src="./assets/datasets-included.png" alt="含まれるデータアセット" width="400"/><p>データセット名を選択すると、Experience PlatformUI のデータセットが新しいタブで開きます。 |
-| [!UICONTROL サンドボックス] | このExperience Platformがデータセットを取得する ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)0} 接続サンドボックス。 [このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
+| [!UICONTROL データセット] | 接続に含まれるデータセットへの 1 つ以上のリンク。 データセットのハイパーリンクを選択して、接続内のデータセットを表示できます。 選択した接続に属するデータセットが他にもある場合は、「**[!UICONTROL +*x* more]**」を選択して **[!UICONTROL 含まれるデータセット]** パネルを表示します。 このパネルには、すべてのデータセットへのリンクと、接続の一部である特定のデータセットを検索するオプションが表示されます。<p><img src="./assets/datasets-included.png" alt="含まれるデータアセット" width="400"/><p>データセット名を選択すると、Experience Platform UI のデータセットが新しいタブで開きます。 |
+| [!UICONTROL サンドボックス] | この接続がデータセットを取得する ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)0}Experience Platform サンドボックス。 [このサンドボックスは、接続を初めて作成したときに選択されています。変更できません。 |
 | [!UICONTROL 所有者] | 接続を作成したユーザー。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)）    **[!UICONTROL _x _On]**：新しいデータを読み込むように設定されたデータセットの場合<p>![ ステータスがグレー ](assets/status-gray.svg)   新しいデータをインポートするように設定されていないデータセットの場合は **[!UICONTROL _x Off_]**。 |
 | [!UICONTROL 作成日] | 接続が作成されたときのタイムスタンプ。 |
@@ -133,13 +133,13 @@ ht-degree: 26%
 | データセットセレクター | 接続内の 1 つまたはすべてのデータセットを選択できます。複数のデータセットを選択することはできません。デフォルトは[!UICONTROL すべてのデータセット]です。 |
 | 日付範囲セレクター | 開始日または終了日を編集するか、「![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)」を選択して日付範囲セレクターを開きます。 日付範囲セレクターで、定義済みの期間の 1 つ（例：**[!UICONTROL 過去 6 か月]**）を使用して日付範囲を選択するか、カレンダーを使用して開始日と終了日を選択します。 「**[!UICONTROL 適用]**」を選択して、新しい日付範囲を適用します。 |
 | [!UICONTROL  使用可能なイベントデータのレコード ] | **接続全体について**、レポートに使用できるイベントデータセットの行の合計数。 この数は、カレンダーの設定とは無関係です。データセットセレクターからデータセットを選択するか、テーブル内のデータセットを選択すると、カウントが変わります。 データが追加されると、データがレポートに表示されるまで、1 ～ 2 時間の遅延が発生します。 |
-| [!UICONTROL 指標] | 追加、スキップ、および削除されたイベント、ルックアップ、プロファイル、および概要データセットレコードと、追加されたバッチ数を要約します。 これらの指標は、**選択したデータセットと日付範囲** に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択して、「**[!UICONTROL スキップされた詳細を確認]** ポップアップを表示します。 ポップアップに、スキップされたレコード数と、すべてのイベントデータセットまたは選択したデータセットの理由が一覧表示されます。<p><img src="./assets/skipped-records.png" width="500"/><p>詳細情報が表示されている ![ 情報 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップを選択します。 [!UICONTROL  空の訪問者 ID] などの理由でスキップされた場合、ポップアップに EQS （クエリサービスのExperience Platform）のサンプル PSQL が表示されます。[ クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) で使用すると、データセット内のスキップされたレコードをクエリできます。 「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL EQS 用サンプル PSQL をコピー]**」を選択して、SQL をコピーします。 |
+| [!UICONTROL 指標] | 追加、スキップ、および削除されたイベント、ルックアップ、プロファイル、および概要データセットレコードと、追加されたバッチ数を要約します。 これらの指標は、**選択したデータセットと日付範囲** に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択して、「**[!UICONTROL スキップされた詳細を確認]** ポップアップを表示します。 ポップアップに、スキップされたレコード数と、すべてのイベントデータセットまたは選択したデータセットの理由が一覧表示されます。<p><img src="./assets/skipped-records.png" width="500"/><p>詳細情報が表示されている ![ 情報 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップを選択します。 [!UICONTROL  空の訪問者 ID] などの理由でスキップされた場合、ポップアップに EQS のサンプル PSQL （クエリサービスのExperience Platform）が表示されます。[ クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) で使用すると、データセット内のスキップされたレコードをクエリできます。 「![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)**[!UICONTROL EQS 用サンプル PSQL をコピー]**」を選択して、SQL をコピーします。 |
 | [!UICONTROL 追加されたレコード] | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に追加された行数を示します。10 分ごとに更新されます。 |
 | [!UICONTROL スキップされたレコード] | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間にスキップされた行数を示します。レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID の欠落または無効なユーザー ID などがあります。 10 分ごとに更新されます。 <p>無効なユーザー ID （`undefined`、`00000000`、または特定の月において 100 万回を超えるイベントに存在する [!UICONTROL  ユーザー ID] の数字と文字の任意の組み合わせ）は、特定のユーザーまたは人物に関連付けることのできない ID です。 これらの行はシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。 無効なユーザー ID を修正する方法として、次の 3 つのオプションがあります。<ul><li>[ ステッチ ](/help/stitching/overview.md) を使用して、未定義またはすべてがゼロのユーザー ID の代わりに有効なユーザー ID を生成する。</li><li>ユーザー ID を空白にする。この ID は取り込み時にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
-| [!UICONTROL  レコード ] 削除されました | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に削除された行数を示します。例えば、[!DNL Experience Platform] 内のデータセットが削除された可能性があります。 10 分ごとに更新されます。<p>場合によっては、ステッチやルックアップデータセットの更新など、置き換えられたレコードがこの値に含まれることもあります。 次の例をご覧ください。</p><ul><li>1 つのレコードを XDM 個人プロファイルデータセットにアップロードし、このCustomer Journey Analyticsはプロファイルルックアップデータとして取り込むように設定されています。 接続詳細では、このデータセットには 1 件のレコードが追加されて表示されます。</li><li>元のレコードの複製を、2 つのレコードを含む同じ AEP データセットにアップロードします。 Customer Journey Analyticsは、プロファイルルックアップデータセットから追加のレコードを取り込みます。 そのユーザー ID の接続にプロファイルレコードが既に取り込まれているのを確認すると、Customer Journey Analyticsは以前のバージョンを削除し、新しいプロファイルデータを追加します。 Customer Journey Analyticsでは、取り込まれたユーザー ID の最新のプロファイル参照データのみが保持されるので、接続詳細では、このアクションは、追加されたレコード 1 件と削除されたレコード 1 件を表します。</li><li>AEP データセットには、合計で同じになる 2 つのレコードが含まれています。 個別に、Customer Journey Analytics接続の詳細には、取り込んだデータのステータス（このプロファイルデータセットに対して追加された 2 つのレコードと削除された 1 つのレコード）が表示されます。 </li></ul> |
+| [!UICONTROL  レコード ] 削除されました | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に削除された行数を示します。例えば、[!DNL Experience Platform] 内のデータセットが削除された可能性があります。 10 分ごとに更新されます。<p>場合によっては、ステッチやルックアップデータセットの更新など、置き換えられたレコードがこの値に含まれることもあります。 次の例をご覧ください。</p><ul><li>1 つのレコードを XDM 個人プロファイルデータセットにアップロードします。このデータセットは、Customer Journey Analyticsがプロファイルルックアップデータとして取り込むように設定されています。 接続詳細では、このデータセットには 1 件のレコードが追加されて表示されます。</li><li>元のレコードの複製を、2 つのレコードを含む同じAEP データセットにアップロードします。 Customer Journey Analyticsは、追加のレコードをプロファイルルックアップデータセットから取り込みます。 そのユーザー ID の接続にプロファイルレコードが既に取り込まれているのを確認すると、Customer Journey Analyticsは以前のバージョンを削除して、新しいプロファイルデータを追加します。 Customer Journey Analyticsでは、取り込まれたユーザー ID の最新のプロファイルルックアップデータのみが保持されるので、接続詳細では、このアクションは、追加されたレコード 1 件と削除されたレコード 1 件を表します。</li><li>AEP データセットには、合計で 2 つのレコードが含まれていますが、これらは同一です。 個別に、Customer Journey Analytics接続の詳細には、取り込んだデータのステータス（このプロファイルデータセットに対して追加された 2 つのレコードと削除された 1 つのレコード）が表示されます。 </li></ul> |
 | ![ 検索 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)_データセット名または ID を検索_ | データセット検索フィールド。 データセット名または [!UICONTROL  データセット ID] でデータセットテーブルを検索できます。 |
 | [!UICONTROL  データセットテーブル ] | 接続に含まれるデータセットです。 |
-| [!UICONTROL データセット] | 接続に含まれるデータセットの名前。 ハイパーリンクを選択すると、Experience PlatformUI の新しいタブでデータセットが開きます。 行またはチェックボックスを選択して、選択したデータセットの詳細のみを表示できます。 |
+| [!UICONTROL データセット] | 接続に含まれるデータセットの名前。 ハイパーリンクを選択すると、Experience Platform UI のデータセットを新しいタブで開くことができます。 行またはチェックボックスを選択して、選択したデータセットの詳細のみを表示できます。 |
 | [!UICONTROL データセット ID] | Experience Platformによって自動生成されます。 |
 | [!UICONTROL 追加されたレコード] | 選択した時間間隔で接続に追加されたデータセットレコード （行）の数。 |
 | [!UICONTROL スキップされたレコード] | 選択した時間間隔で、接続のデータ転送中にスキップされたデータセットレコード （行）の数。 |
@@ -148,7 +148,7 @@ ht-degree: 26%
 | [!UICONTROL 前回追加した日時] | 接続に追加されたデータセットからの最新のバッチのタイムスタンプ。 |
 | [!UICONTROL データソースタイプ] | データセットのソースタイプ。 接続を作成する際に、ソースタイプを定義します。 |
 | [!UICONTROL データセットタイプ] | このデータセットのデータセットタイプ。 タイプは、[!UICONTROL  イベント ]、[!UICONTROL  プロファイル ]、[!UICONTROL  ルックアップ ]、[!UICONTROL  概要 ] のいずれかです。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection) |
-| スキーマ | データセットのベースとなるExperience Platformスキーマ。 |
+| スキーマ | データセットのベースとなるExperience Platform スキーマ。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _On]**新しいデータを読み込むようにデータセットが設定されている場合、および<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _x オフ_]** 新しいデータインポートをインポートしないようにデータセットが設定されている場合。 |
 | [!UICONTROL  データを変換 ] | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _On]**変換が有効になっている該当するデータセットの場合、 <p>![ ステータスがグレー ](assets/status-gray.svg)   変換が有効になっていない該当するデータセットの **[!UICONTROL _x オフ_]**<p>他のすべてのデータセットに対して **[!UICONTROL なし]**、変換には適用されません。 |
 | [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _処理中のバックフィル]**処理のバックフィル数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。 |
@@ -170,8 +170,8 @@ ht-degree: 26%
 | ![ データビューを追加 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)**[!UICONTROL データビューを作成]** | この接続に基づいて ](#create-a-data-view) データビューを作成 [ します。 詳しくは、[ データビュー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views) を参照してください。 |
 | [!UICONTROL 接続名] | 接続のわかりやすい名前。 |
 | [!UICONTROL 接続の説明] | この接続の目的を説明する、より詳細な説明。 |
-| [!UICONTROL サンドボックス] | この接続がデータセットを取得する ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)0}Experience Platformサンドボックス。このサンドボックスは、接続を初めて作成したときに選択されています。 [変更できません。 |
-| [!UICONTROL 接続 ID] | この ID は、Experience Platformで生成されます。 ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用して、ID をコピーできます。 |
+| [!UICONTROL サンドボックス] | この接続がデータセットを取得する ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)0}Experience Platform サンドボックス。このサンドボックスは、接続を初めて作成したときに選択されています。 [変更できません。 |
+| [!UICONTROL 接続 ID] | この ID はExperience Platformで生成されます。 ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用して、ID をコピーできます。 |
 | [!UICONTROL 接続を使用するデータビュー] | この接続を使用するすべてのデータビューを表示します。 |
 | [!UICONTROL 新しいデータをインポート] | データセットの新しいデータの読み込みステータス： <p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _On]**新しいデータをインポートするように設定されているデータセットの数<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _x オフ_]**：新しいデータの読み込みがオフになっているデータセットの数。 |
 | [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _バックフィルに失敗しました]**データセット間で失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _件のバックフィル処理]**複数のデータセットをまたいだ処理バックフィルの数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル]**データセットの完了したバックフィルの数<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** 接続内のデータセットに対してバックフィルが定義されていない場合。 |
@@ -200,7 +200,7 @@ ht-degree: 26%
 | [!UICONTROL データをバックフィル] | データセットのバックフィルデータのステータス。<p>![ ステータスが赤 ](assets/status-red.svg)   **[!UICONTROL _x _失敗したバックフィル]**失敗したバックフィルの数<p>![ ステータスが赤 ](assets/status-orange.svg)   **[!UICONTROL _x _処理中のバックフィル]**処理のバックフィル数<p>![ ステータスが緑 ](assets/status-green.svg)   **[!UICONTROL _x _完了したバックフィル数]**完了したバックフィル数、<p>![ ステータスがグレー ](assets/status-gray.svg)   **[!UICONTROL _オフ_]** バックフィルが設定されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、次を選択します <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]**。 |
 | [!UICONTROL データソースタイプ] | データセットを接続に追加する際に定義されるデータソースタイプ。 |
 | [!UICONTROL データセットタイプ] | [!UICONTROL  イベント ]、[!UICONTROL  プロファイル ]、[!UICONTROL  ルックアップ ]、[!UICONTROL  概要 ] のいずれかです。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection) |
-| [!UICONTROL スキーマ] | このデータセットのベースとなるExperience Platformスキーマ。 |
+| [!UICONTROL スキーマ] | このデータセットのベースとなるExperience Platform スキーマ。 |
 | [!UICONTROL データセット ID] | このデータセット ID は、Experience Platformで生成されます。 |
 
 
@@ -356,10 +356,30 @@ ht-degree: 26%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_corereportablerows"
+>title="コアレポート可能行数"
+>abstract="主要なレポート可能な行は、集計合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の先月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_historicalreportablerows"
+>title="履歴レポート可能行数"
+>abstract="レポート可能な履歴行は、集計合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の先月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_cumulativereportablerows"
+>title="レポート可能な累積行数"
+>abstract="累積レポート可能な行は、集計合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の先月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL  使用状況 ] インターフェイスには、取り込んだ行とレポート可能な行の使用状況がすべての接続で表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
 
-このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 使用状況インターフェイスでは、モニタリングの目的に加え、Customer Journey Analyticsライセンスの更新を計画することもできます。
+このインターフェイスを使用すると、Customer Journey Analyticsの使用状況が契約上の合意内容に準拠しているかどうかを判断できます。 監視の目的に加えて、使用状況インターフェイスを使用してCustomer Journey Analytics ライセンスの更新を計画できます。
 
 使用状況インターフェイスでは、次の指標を使用します
 
