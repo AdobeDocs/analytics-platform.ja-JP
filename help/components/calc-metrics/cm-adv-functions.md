@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
 source-wordcount: '4659'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -1344,14 +1344,14 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 標本分散
+## サンプル分散
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
->title="標本分散"
->abstract="数式（sum （metric^2） / （N - 1）） – （sum （metric））^2/（N*（N-1））を使用してサンプル分散の推定値を計算します。 ここで、N は正規化コンテナのカウントです。 <br/> これは、*常に有効な* 信頼性計算の一部として使用されます。 通常、この関数は単独では役に立ちませんが、計算のチェックや信頼性計算の実行 *手動* に使用できます。"
+>title="サンプル分散"
+>abstract="数式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) を使用してサンプル分散の推定値を計算します。ここで、N は正規化コンテナのカウントです。<br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。"
 
 ![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL SAMPLE VARIANCE （normalizing-container, success-metric）]**
 
