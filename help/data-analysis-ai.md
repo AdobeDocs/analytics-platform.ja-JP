@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bc0573b2d75a18aaaac4f5d171579e9763f2f8e0
+source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1900'
 ht-degree: 3%
 
 ---
@@ -45,32 +45,28 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 | **Workspaceのアクション/機能** | データインサイトエージェントは、Workspace内のユーザーに対して、ビジュアライゼーションの作成と更新を除き、アクションを実行することはできません。 例えば、次の操作は実行できません。<ul><li>コンテキストアクションの UI ボタン（グラフに追加、新しいパネル、新しいテーブル）</li><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>キュレート</li><li>データ表示の管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li></ul> |
 | **サポートされていないビジュアライゼーションタイプ** | <ul><li>フロー</li><li>フォールアウト</li><li>コホートテーブル</li><li>面グラフ、積み重ね面グラフ</li><li>積み重ね棒グラフ</li><li>ブレット</li><li>コンボ</li><li>ヒストグラム</li><li>横棒グラフ、積み重ね横棒グラフ</li><li>主要指標の概要</li><li>散布図</li><li>変更の概要</li><li>テキスト</li><li>ツリーマップ</li><li>ベン図</li></ul> |
 
-<!---## Feature access in the Customer Journey Analytics UI
+## Customer Journey Analyticsで Data Insights Agent へのアクセスを管理します
 
-[Do we even need this section for the Alpha?]
+次のパラメーターは、Customer Journey Analyticsの Data Insights Agent へのアクセスを制御します。
 
-The following parameters govern access to Data visualization in AI Assistant:
+* **ソリューションアクセス**:Data Insights Agent は、Customer Journey Analytics PrimeおよびUltimateのお客様が使用できます。 Adobe Analyticsでは使用できません。
 
-* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **契約によるアクセス**:AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはAdobe アカウント担当者にお問い合わせください。 組織が AI アシスタントでデータインサイトエージェントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
-It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+   1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL 製品プロファイル]** に移動します
+   1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
+   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
+   1. ![ 編集 ](/help/assets/icons/Edit.svg) を選択して **[!UICONTROL レポートツール]** を編集します。
+   1. 「![AddCircle](/help/assets/icons/AddCircle.svg)」を選択して、「**AI Assistant：データビジュアライゼーション**」を **[!UICONTROL 含まれる権限項目]** に追加します。
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
+      ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
-   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
-   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
-   1. In the specific product profile, select **[!UICONTROL Permissions]**.
-   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
-   
-      ![Add permission](assets/ai-assistant-permissions.png).
+   1. 「**[!UICONTROL 保存]**」を選択して、権限を保存します。
 
-   1. Select **[!UICONTROL Save]** to save the permissions.
+詳しくは、[ アクセス制御 ](/help/technotes/access-control.md#access-control) を参照してください。
 
-See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
-
-## AI アシスタントでのアクセスおよびデータインサイトエージェント
+## AI アシスタントでデータインサイトエージェントにアクセスします
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
