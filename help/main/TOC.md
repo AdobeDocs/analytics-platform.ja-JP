@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
+source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1219'
 ht-degree: 90%
 
 ---
@@ -70,13 +70,13 @@ ht-degree: 90%
       + [データビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [ストリーミングメディアコレクションの設定](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
+      + [ストリーミングメディアコレクション設定](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Analytics ソースコネクタ {#historical-data-source-connector} で履歴データを保持
          + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Adobe Analyticsを無効にするタイミングの評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
-      + [Adobe Analyticsを無効にする](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + [Adobe Analytics の無効化](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + 代替アップグレード方法 {#alternative-upgrade-methods}
          + [AppMeasurementのデータ収集の使用](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
          + [データレイヤーを送信](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
@@ -267,6 +267,7 @@ ht-degree: 90%
       + [概要](/help/content-analytics/config/configuration.md)
       + [ガイド付き設定](/help/content-analytics/config/guided.md)
       + [手動設定](/help/content-analytics/config/manual.md)
+      + [データ収集](/help/content-analytics/config/datacollection.md)
 
 + Analytics ダッシュボード {#cja-dashboards}
    + [概要](../mobile-app/home.md)
