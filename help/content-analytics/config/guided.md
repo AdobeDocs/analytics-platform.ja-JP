@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2469'
 ht-degree: 25%
 
 ---
@@ -249,6 +249,11 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >title="データ収集"
 >abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のアセットの設定を編集できます。"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="タグプロパティが無効"
+>abstract="Content Analytics拡張機能は既にアクティブです。"
+
 <!-- markdownlint-enable MD034 -->
 
 #### 新しい設定 {#new-configuration}
@@ -277,6 +282,11 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 * コンテンツ分析用のデータを収集する際に含める、または除外するアセットを指定します。
 
    * 含める/除外する **[!UICONTROL Assetsの正規表現文字列を指定し]** す。 例：Content Analyticsからすべてのロゴ JPEGとSVG画像を除外するには、`/^(?!.*(logo\.jpg|\.svg)).*$/` を指定します。 `/` を使用して、正規表現をエスケープする必要があります。
+
+>[!IMPORTANT]
+>
+>タグを使用せずに Javascript を使用して既存の web SDK実装がある場合は、新しく作成したタグプロパティから、自動で組み込まれる Web SDK拡張機能を手動で削除する必要があります。
+
 
 
 #### 既存の設定 {#existing-configuration}

@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Content Analyticsのデータ収集
 
@@ -24,11 +24,13 @@ ht-degree: 1%
 この記事のコンテキストでは、次の定義を使用します。
 
 * **エクスペリエンス**：エクスペリエンスは、web ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsはエクスペリエンス ID を記録します。 Content Analyticsは、ページ上のテキストを記録しません。
-* **アセット**：画像。 Content Analyticsはアセット URL を記録します。
-* **関連する URL**：ベース URL と、ページ上でコンテンツを駆動するパラメーター。
 * **エクスペリエンス ID**：関連する URL とエクスペリエンスバージョンの一意の組み合わせ。
    * [ 設定 ](configuration.md) の一部として、特定の完全な URL に関連するパラメーターを指定します。
-   * 使用する [ バージョン識別子 ](manual.md#versioning) を定義できます。 データ収集の場合、バージョンは考慮されません。 関連する url のみが収集されます。
+   * 使用する [ バージョン識別子 ](manual.md#versioning) を定義できます。
+* **アセット**：画像。 Content Analyticsはアセット URL を記録します。
+* **アセット ID**：アセットの URL です。
+* **関連する URL**：ベース URL と、ページ上でコンテンツを駆動するパラメーター。
+
 
 ## 機能
 
@@ -38,7 +40,7 @@ Content Analytics ライブラリは、次の場合にデータを収集しま�
 * ページ URL は、付属のタグライブラリの一部である ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}0}Content Analytics拡張機能 } で設定されます。[
 
 
-### Content Analytics イベント
+## Content Analytics イベント
 
 Content Analytics イベントは、次の要素で構成されます。
 
@@ -50,7 +52,15 @@ Content Analytics イベントは、次の要素で構成されます。
 * アセット表示（存在する場合、および設定されている場合）
 * アセットクリック数（存在する場合、および設定されている場合）
 
-#### 記録されたビュー数またはクリック数
+
+Content Analytics イベントは、次のシーケンスとして収集されます。
+
+1. [ 記録ビューまたはクリック ](#recorded-view-or-click)。
+1. [ 通常または特定の（行動）イベント ](#regular-or-specific-behaviorial-event)。
+
+Content Analyticsでは、ビューやクリックを収集するのではなく、ビューやクリックの直後のイベントを個別に収集して、そのシーケンスを反映させるためにデータを収集します。 この方法でコンテンツ分析データを収集すると、収集されるデータの量も削減されます。 データの収集。
+
+### 記録されたビューまたはクリック
 
 アセット表示は、次の場合に記録されます。
 
@@ -73,26 +83,19 @@ Content Analytics イベントは、次の要素で構成されます。
 * エクスペリエンスが有効になっているページ上のリンクで、クリックが発生します。
 
 
-#### 送信されたイベント
+### 通常の、または特定の（行動）イベント
 
-Content Analytics イベントは、次の 2 つの条件が発生した場合に送信されます。
+Content Analyticsのコンテキストで通常または特定の（行動）イベントを発生させるトリガーは次のとおりです。
 
-* コンテンツが送信されます。これは、次の場合に発生します。
-
-   * アセットの表示やクリックが記録されます。
-   * エクスペリエンスの表示やクリックが記録されます。
-
-* イベントを送信するトリガーが発生します。これは次の場合に発生します。
-
-   * Web SDKまたは AppMeasurements がイベントを送信します。
-   * 表示が非表示に変わります。次に例を示します。
-      * ページのアンロード
-      * 「切り替え」タブ
-      * ブラウザーを最小化
-      * ブラウザーを閉じる
-      * ロック画面
-   * URL が変更されるので、関連する URL が変更されます。
-   * アセットビューがバッチ制限の 32 を超えています。
+* Web SDKまたは AppMeasurements がイベントを送信します。
+* 表示が非表示に変わります。次に例を示します。
+   * ページのアンロード
+   * 「切り替え」タブ
+   * ブラウザーを最小化
+   * ブラウザーを閉じる
+   * ロック画面
+* URL が変更されるので、関連する URL が変更されます。
+* アセットビューがバッチ制限の 32 を超えています。
 
 
 ## スキーマ

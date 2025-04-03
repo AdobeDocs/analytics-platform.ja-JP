@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: c01fbe7b991da9c21a598ebac551775afd7deeed
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 Content Analyticsを設定する前に、次の前提条件が満たされていることを確認してください。
 
 * Content Analytics で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録している。 設定するユーザーエージェント文字列は <code>AdobeFeaturization/1.0 です。</code>。
-* Javascript を使用して [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装する場合は、デフォルト名 <code>alloy を使用していることを確認します</code> （JavaScript ライブラリ用）。
+* 通常の行動データ収集用に [Javascript を使用した Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装している場合は、デフォルト名 <code>alloy を使用していることを確認します</code> （JavaScript ライブラリ用）。
 * Customer Journey Analyticsの製品管理者の役割に加えて、接続の管理とデータビューの管理を行う権限があります。
 * [ データ収集権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"} が必要です。 これらの権限は、次の要素で構成されます。
    * [Experience Platformの権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
