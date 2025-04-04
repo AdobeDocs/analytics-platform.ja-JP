@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
 
 # Content Analyticsのデータ収集
+
+{{release-limited-testing}}
 
 この記事では、コンテンツ分析でデータを収集する方法について詳しく説明します
 
@@ -23,8 +25,8 @@ ht-degree: 1%
 
 この記事のコンテキストでは、次の定義を使用します。
 
-* **エクスペリエンス**：エクスペリエンスは、web ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsはエクスペリエンス ID を記録します。 Content Analyticsは、ページ上のテキストを記録しません。
-* **エクスペリエンス ID**：関連する URL とエクスペリエンスバージョンの一意の組み合わせ。
+* **エクスペリエンス**：エクスペリエンスは、web ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsは、ページ URL に基づいたエクスペリエンス ID を記録します。 その後、ページ上のテキストが取得サービスを介して取得されます。
+* **エクスペリエンス ID**：関連する URL （ベース URL に加えて、ページ上でコンテンツを駆動するパラメーター）と [ エクスペリエンスバージョン ](manual.md#versioning) の一意の組み合わせ。
    * [ 設定 ](configuration.md) の一部として、特定の完全な URL に関連するパラメーターを指定します。
    * 使用する [ バージョン識別子 ](manual.md#versioning) を定義できます。
 * **アセット**：画像。 Content Analyticsはアセット URL を記録します。
@@ -64,7 +66,7 @@ Content Analyticsでは、ビューやクリックを収集するのではなく
 
 アセット表示は、次の場合に記録されます。
 
-* アセットは、ACA拡張機能の設定に従って除外されていません。
+* アセットは、Content Analytics拡張機能の設定に従って除外されていません。
 * アセットは 75% 表示されます。
 * そのアセットは、このページにまだ記録されていません。
 
@@ -100,7 +102,7 @@ Content Analyticsのコンテキストで通常または特定の（行動）イ
 
 ## スキーマ
 
-Content Analytics データは、特定のContent Analytics スキーマに基づいて、Experience Platformのデータセットで収集されます。 参照スキーマは公開されており、Content Analyticsのデフォルトの実装で使用されます。
+Content Analytics データは、特定のContent Analytics スキーマに基づいて、Experience Platformのデータセットで収集されます。 参照スキーマは、次の場所で公開されています。
 
 * [ デジタルアセットスキーマ ](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [ デジタルエクスペリエンススキーマ ](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)

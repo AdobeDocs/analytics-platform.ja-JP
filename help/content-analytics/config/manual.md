@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: cf8b14590a99573815c95e863fd26ae5b4244754
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -15,6 +15,7 @@ ht-degree: 0%
 # Content Analytics の手動設定
 
 {{release-limited-testing}}
+
 
 この記事では、Content Analytics設定のデータ収集を開始または停止したり、Content Analytics実装を編集したりするために必要な手動のアクションについて詳しく説明します。
 
@@ -82,7 +83,8 @@ Content Analytics エクスペリエンスのバージョン管理が必要な�
 ### 例
 
 ```
-function adobe.getContentExperienceVersion() {
+window.adobe = window.adobe || {};
+window.adobe.getContentExperienceVersion = () => {
   return "1.0";
-}
+};
 ```
