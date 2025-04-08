@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+source-git-commit: 3bdde8181ec2a0e507dae907acb3da2b702f5578
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 90%
+source-wordcount: '1216'
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 + [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 
-+ リリースノート {#releases}
++ リリースノート  {#releases}
    + [最新リリース](../release-notes/latest.md)
    + [2025年リリース](../release-notes/2025.md)
    + [2024年リリース](../release-notes/2024.md)
@@ -32,27 +32,31 @@ ht-degree: 90%
    + [ドキュメントのアップデート](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
-   + [Customer Journey Analytics の概要](../getting-started/cja-overview.md)
-   + [クイックスタートガイド](../getting-started/cja-getting-started.md)
-   + [ランディングページ](../getting-started/landing.md)
-   + [ランディングページ（旧）](../getting-started/cja-landing-old.md)
-   + [よくある質問](../getting-started/cja-faq.md)
-   + [Customer Journey Analytics と BI ソリューションの比較](../getting-started/cja-vs-bi.md)
-   + [Adobe Customer Journey Analytics 向けの AI アシスタント](../ai-assistant.md)
-   + [Customer Journey Analytics のデータ分析 AI アシスタント](../data-analysis-ai.md)
+   + Customer Journey Analytics {#cja-b2c-overview}
+      + [概要](../getting-started/cja-overview.md)
+      + [クイックスタートガイド](../getting-started/cja-getting-started.md)
+      + [ランディングページ](../getting-started/landing.md)
+      + [よくある質問](../getting-started/cja-faq.md)
+      + [BI ソリューションとの比較](../getting-started/cja-vs-bi.md)
+      + [AI アシスタント](../ai-assistant.md)
+      + [データインサイトエージェント](../data-analysis-ai.md)
+   + Customer Journey AnalyticsB2B edition {#cja-b2b}
+      + [概要](/help/getting-started/cja-b2b-edition.md)
+      + [B2B の概念と機能](/help/getting-started/cja-b2b-concepts-features.md)
+      + [クイックスタートガイド](/help/getting-started/cja-b2b-quick-start-guide.md)
 
-+ Customer Journey Analytics と Adobe Analytics {#compare-aa-cja}
++ Customer Journey AnalyticsとAdobe Analytics {#compare-aa-cja}
    + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
       + [基本を学ぶ](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Platform にデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + スキーマ {#schema} ースのアーキテクトと作成
+      + スキーマのアーキテクトと作成 {#schema}
          + [スキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
          + [スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
          + [既存のスキーマの使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + データストリーム {#create-datastream} の作成
+      + データストリームの作成 {#create-datastream}
          + [データストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
          + [Platform をサービスとして追加](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + データセットの作成 {#create-datasets}
@@ -71,7 +75,7 @@ ht-degree: 90%
       + [マーケティングチャネル派生フィールドの作成](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [ストリーミングメディアコレクション設定](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
-      + Analytics ソースコネクタ {#historical-data-source-connector} で履歴データを保持
+      + Analytics ソースコネクタでの履歴データの保持 {#historical-data-source-connector}
          + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
@@ -107,7 +111,7 @@ ht-degree: 90%
    + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Experience Platform Edge Network {#edge-network}
+      + Experience PlatformEdge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server API](../data-ingestion/serverapi.md)
@@ -146,14 +150,14 @@ ht-degree: 90%
    + [ラベルとポリシー](../data-views/data-governance.md)
 
 + ツール {#tools}
-   + アセットの転送 {#asset-transfer}
+   + アセットを転送 {#asset-transfer}
       + [アセットを転送](../tools/asset-transfer/transfer-assets.md)
    + 製品の使用状況 {#product-usage}
       + [概要](../tools/product-usage/usage-overview.md)
       + [データ設定](../tools/product-usage/data-settings.md)
       + [オプトアウト設定](../tools/product-usage/opt-out-settings.md)
 
-+ Workspace プロジェクト {#cja-workspace}
++ ワークスペースプロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
    + [基本分析の実行](../analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
@@ -162,7 +166,7 @@ ht-degree: 90%
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Workspace のフォルダー {#workspace-folders}
+      + Workspaceのフォルダー {#workspace-folders}
          + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [フォルダーの管理](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
@@ -230,7 +234,7 @@ ht-degree: 90%
       + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
-   + でのプロジェクトのキュレーション、共有 {#curate-share} スケジュール
+   + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
       + [概要](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
@@ -251,7 +255,7 @@ ht-degree: 90%
       + [統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [目次](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
-   + Workspace に関する FAQ とその他 {#workspace-faq}
+   + Workspaceに関する FAQ など {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
       + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
       + [制限事項](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -260,7 +264,7 @@ ht-degree: 90%
 
 + コンテンツ分析 {#content-analytics}
    + [概要](/help/content-analytics/content-analytics.md)
-   + 報告書 {#report}
+   + レポート {#report}
       + [概要](/help/content-analytics/report/report.md)
       + [コンポーネント](/help/content-analytics/report/components.md)
    + 設定 {#configuration}
@@ -370,7 +374,7 @@ ht-degree: 90%
       + [書き出しの管理](/help/components/exports/manage-exports.md)
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
-   + データ辞書 {#data-dictionary}
+   + データ要素 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
@@ -403,7 +407,7 @@ ht-degree: 90%
    + [ステッチされたデータセットの作成と管理](/help/stitching/stitching-ui.md)
    + [よくある質問](/help/stitching/faq.md)
 
-+ アドビの統合 {#integrations}
++ Adobe統合 {#integrations}
    + [概要](/help/integrations/overview.md)
    + [Adobe Analytics の統合](/help/integrations/aa.md)
    + [Target の統合](/help/integrations/at.md)
@@ -418,14 +422,14 @@ ht-degree: 90%
 
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
-   + サードパーティのデータ {#third-party}
+   + サードパーティデータ {#third-party}
       + [概要](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
          + [Google Analytics からデータを移行](/help/use-cases/third-party/ga/overview.md)
          + [Google Analytics 履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)
          + [Google Analytics データのストリーミングの設定](/help/use-cases/third-party/ga/streaming.md)
          + [Google Analytics データに関するレポート](/help/use-cases/third-party/ga/report.md)
-      + Quantum Metric {#qm}
+      + Quantum 指標 {#qm}
          + [概要](/help/use-cases/third-party/quantum-metric/qm-overview.md)
          + [セッション ID を収集](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
          + [セッション再生のタイ](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
