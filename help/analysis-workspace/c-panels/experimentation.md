@@ -4,9 +4,9 @@ title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2179'
 ht-degree: 18%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics** の実験パネルに関するドキュメントです。_<br/>_での Adobe Analytics のアクティビティとエクスペリエンスを分析する方法については、[Adobe Target for Target パネル ![ を参照してください_ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics** の実験パネルに関するドキュメントです。_<br/>_での Adobe Analytics のアクティビティとエクスペリエンスを分析する方法については、[Adobe Target for Target パネル ![ を参照してください_ ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 推奨されるデータスキーマは、実験データを [ オブジェクト配列 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) に配置することです。この配列には、2 つの異なるディメンションでの実験データとバリアントデータが含まれます。 両方のディメンションは、**単一** のオブジェクト配列である必要があります。 実験データが単一のディメンションに（実験データとバリアントデータを区切り文字列で区切った）存在する場合、パネルで使用するために、データビューの [ 部分文字列 ](/help/data-views/component-settings/substring.md) 設定を使用してディメンションを 2 つに分割できます。
 
 
-実験データがAdobe Experience Platformに [ 取り込み ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) れた後、[Customer Journey Analyticsで接続を作成 ](/help/connections/create-connection.md)1 つ以上の実験データセットに対して実行します。
+実験データがAdobe Experience Platformに [ 取り込み ](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home) れた後、[Customer Journey Analyticsで接続を作成 ](/help/connections/create-connection.md)1 つ以上の実験データセットに対して実行します。
 
 ### データビューへのコンテキストラベルの追加
 
@@ -105,7 +105,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
    | **[!UICONTROL 実験]** | どのエクスペリエンスを永続的に保持することが最適かを判断するために、エンドユーザーに公開されたエクスペリエンスに対する一連のバリエーションです。 実験は、2 つ以上のバリアントで構成され、そのうちの 1 つがコントロールバリアントと見なされます。 この設定には、データビューで **[!UICONTROL 実験]** ラベルが付けられたディメンションと、過去 3 か月分の実験データが事前に入力されています。 |
    | **[!UICONTROL コントロールバリアント]** | エンドユーザーのエクスペリエンスにおいて、より優れた代替策を特定するために比較する、複数の選択肢の 1 つです。1 つのバリアントをコントロールとして選択する必要があり、1 つのバリアントのみがコントロールバリアントと見なされます。 この設定には、データビューで **[!UICONTROL バリアント]** ラベルが付けられたディメンションが事前に入力されています。 この設定により、この実験に関連付けられているバリアントデータを取得します。 |
    | **[!UICONTROL 成功指標]** ➊ | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の *最もパフォーマンスの高いバリアント* として宣言されます。 最大 5 つの指標を追加できます。 |
-   | **[!UICONTROL 指標の標準化]** ➋ | テストが実行される基準（[!UICONTROL  人 ]、[!UICONTROL  セッション ] または [!UICONTROL  イベント ]）。 例えば、テストでは、いくつかのバリエーションのコンバージョン率を比較できます **[!UICONTROL コンバージョン率]** は、ページビューとして計算されます |
+   | **[!UICONTROL 指標の標準化]** ➋ | テストが実行される基準（**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL 購入グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL 人物]**、**[!UICONTROL セッション]** または **[!UICONTROL イベント]**）。 例えば、テストでは、いくつかのバリエーションのコンバージョン率を比較できます。ここで **[!UICONTROL コンバージョン率]** は、ページビューとして計算されます。 |
    | **[!UICONTROL 信頼性の上限/下限を含める]** | 信頼性レベルの上限と下限を表示するには、このオプションを有効にします。 |
 
 

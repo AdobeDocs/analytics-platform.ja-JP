@@ -1,12 +1,12 @@
 ---
-description: フィルタービルダーは、指標Dimension、フィルターおよびイベントをドラッグ&ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてユーザーをフィルタリングするためのキャンバスです。 この統合開発ツールを使用すると、訪問やイベントをまたいでユーザーの属性とアクションを識別する、シンプルまたは複雑なフィルターを作成して保存できます。
+description: フィルタービルダーは、指標のディメンション、フィルターおよびイベントをドラッグ&ドロップし、コンテナ階層のロジック、ルールおよび演算子に基づいてユーザーをフィルタリングするためのキャンバスです。 この統合開発ツールを使用すると、訪問やイベントをまたいでユーザーの属性とアクションを識別する、シンプルまたは複雑なフィルターを作成して保存できます。
 title: フィルターの作成
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1570'
 ht-degree: 10%
 
 ---
@@ -33,11 +33,11 @@ ht-degree: 10%
 
 
 
-**[!UICONTROL フィルタービルダー]** ダイアログでは、新しいフィルターの作成や、既存のフィルターの編集を行えます。 このダイアログには、「**[!UICONTROL フィルター]** マネージャーから作成または管理するフィルターのタイトルが **** 新しいフィルター [[!UICONTROL  または ] フィルターを編集 ](/help/components/filters/manage-filters.md) と表示されます。
+**[!UICONTROL フィルタービルダー]**&#x200B;ダイアログは、新しいフィルターの作成や既存のの編集に使用します。ダイアログのタイトルは&#x200B;**[!UICONTROL 新規フィルター]**&#x200B;または&#x200B;**[!UICONTROL 編集フィルター]**[[!UICONTROL フィルター] manager](/help/components/filters/manage-filters.md) から作成または管理フィルターです。
 
 >[!BEGINTABS]
 
->[!TAB  フィルタービルダー ]
+>[!TAB フィルタービルダー]
 
 ![ 次の節で説明するフィールドとオプションを表示するフィルターの詳細ウィンドウ。](assets/filter-builder.png)
 
@@ -52,7 +52,7 @@ ht-degree: 10%
    | 要素 | 説明 |
    | --- | --- |
    | **[!UICONTROL データビュー]** | フィルターのデータ表示を選択できます。  定義したフィルターは、データビューの [ 設定 ](/help/data-views/create-dataview.md#settings-filters) タブでフィルターとして使用できます。 |
-   | **[!UICONTROL プロジェクトのみのフィルター]** | フィルターが作成されたプロジェクトにのみ表示され、フィルターがコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL このフィルターをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、[ クイックフィルター ](quick-filters.md) インターフェイスから **[!UICONTROL ビルダーを開く]** を使用して [!UICONTROL  クイックフィルター ] を作成し、クイックフィルター情報を標準フィルターに切り替えた場合にのみ表示されます。 |
+   | **[!UICONTROL プロジェクトのみのフィルター]** | フィルターが作成されたプロジェクトにのみ表示され、フィルターがコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL このフィルターをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、[クイック フィルター](quick-filters.md)を作成し、[!UICONTROL クイック フィルター] インターフェイスから **[!UICONTROL 開く builder]**&#x200B;を使用してクイック フィルター情報を通常のフィルターに変えた場合にのみ表示されます。 |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | フィルターに名前を付けます（例：`Last month mobile customers`）。 |
    | **[!UICONTROL 説明]** | フィルターの説明（例：`Filter to define the mobile customers for the last month`）を指定します。 |
    | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、フィルターを整理します。 入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
@@ -66,7 +66,7 @@ ht-degree: 10%
    * **[!UICONTROL 保存]**：フィルターを保存します。
    * **[!UICONTROL 名前を付けて保存]**：フィルターのコピーを保存します。
    * **[!UICONTROL 削除]**：フィルターを削除します。
-   * **[!UICONTROL キャンセル]**：フィルターに加えた変更をキャンセルしたり、新しいフィルターの作成をキャンセルしたりします。
+   * **[!UICONTROL キャンセル]** フィルターに加えた変更をキャンセルするか、新しいフィルターの作成をキャンセルします。
 
 
 ## 定義ビルダー
@@ -76,7 +76,7 @@ ht-degree: 10%
 定義のタイプと範囲を設定できます。
 
 1. 定義のタイプを指定するには、ビルドにインクルード定義または除外定義を含めるかどうかを指定します。 ![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL オプション]** を選択し、ドロップダウンの切り替え **[!UICONTROL 含める]** または **[!UICONTROL 除外]** から選択します。
-1. 定義の範囲を指定するには、「**[!UICONTROL 含める]**」または **[!UICONTROL 除外]** ドロップダウンから、定義の範囲を **[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]** のいずれにするかを選択します。
+1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンから、定義の範囲を **[!UICONTROL Event]**、**[!UICONTROL Session]**、**[!UICONTROL Person]**、**[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Opportunity]** [!BADGE B2B editionB2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Buying Group]**]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} のいずれにするかを選択します[!BADGE 
 
 これらの設定は、後でいつでも変更できます。
 
@@ -88,7 +88,7 @@ ht-degree: 10%
 
 コンポーネントを追加するには、次の手順に従います。
 
-1. コンポーネントパネルからコンポーネントを **[!UICONTROL ここに指標、フィルター、Dimensionをドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+1. コンポーネントパネルからコンポーネントを **[!UICONTROL ここに指標、フィルター、ディメンションをドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
 1. コンポーネントの詳細を指定します 例えば、「値を選択 **[!UICONTROL から値を選択し]** す。 または値を入力します。 1 つ以上の値を指定する内容と方法は、コンポーネントと演算子によって異なります。
 1. 必要に応じて、デフォルトの演算子を変更します。 例えば、から **[!UICONTROL equals]** へ **[!UICONTROL equals any of]** へ。 使用可能な演算子の詳細な概要については、[ 演算子 ](operators.md) を参照してください。
 
@@ -106,14 +106,14 @@ ht-degree: 10%
 
 複数のコンポーネントを 1 つ以上のコンテナにグループ化し、コンテナ内およびコンテナ間のロジックを定義できます。 コンテナを使用すると、フィルターの複雑な定義を作成できます。
 
-![ コンテナを追加 ](assets/add-container.gif){Width=100%}
+![ コンテナの追加 ](assets/add-container.gif){Width=100%}
 
 * コンテナを追加するには、**[!UICONTROL 設定]****[!UICONTROL オプション ![ から ](/help/assets/icons/Setting.svg) コンテナを追加]** を選択します。
 * 既存のコンポーネントをコンテナに追加するには、コンポーネントをコンテナにドラッグ&amp;ドロップします。
-* 別のコンポーネントをコンテナに追加するには、コンポーネントパネルからコンテナにコンポーネントをドラッグ&amp;ドロップします。 青い挿入ラインをガイドとして使用します。
-* 別のコンポーネントをコンテナの外側に追加するには、コンポーネントパネルからコンテナの外側、メイン定義コンテナの内側にコンポーネントをドラッグ&amp;ドロップします。 青い挿入ラインをガイドとして使用します。
+* 別のコンポーネントをコンテナに追加するには、コンポーネントをコンポーネントパネルからコンテナにドラッグ&amp;ドロップします。 青色の挿入行をガイドとして使用します。
+* コンテナの外側に別のコンポーネントを追加するには、コンポーネントパネルからコンテナ外側のメイン定義コンテナ内にコンポーネントをドラッグアンドドロップします。 青い挿入ラインをガイドとして使用します。
 * コンテナ内のコンポーネント間、コンテナ間、コンテナとコンポーネント間のロジックを変更するには、適切な **[!UICONTROL And]**、**[!UICONTROL Or]**、**[!UICONTROL Then]** を選択します。 「次に」を選択すると、フィルターが順次フィルターに変わります。 詳しくは、[ 順次フィルターの作成 ](seg-sequential-build.md) を参照してください。
-* コンテナレベルを切り替えるには、![WebPage](/help/assets/icons/WebPage.svg)**[!UICONTROL Event]**、![Visit](/help/assets/icons/Visit.svg)**[!UICONTROL Session]** または ![User](/help/assets/icons/User.svg)**[!UICONTROL Person]** を選択します。
+* コンテナレベルを切り替えるには、「![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、![ アカウント ](/help/assets/icons/Account.svg) **[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、![ 商談 ](/help/assets/icons/Opportunity.svg) **[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} ![ ](/help/assets/icons/WebPage.svg) **** ![ ](/help/assets/icons/Visit.svg) **** ![ ](/help/assets/icons/User.svg) ****、および WebPage の WebPage を選択します
 
 以下の操作を行うために、コンテナで ![ 設定 ](/help/assets/icons/Setting.svg) を使用できます。
 
@@ -121,8 +121,8 @@ ht-degree: 10%
 |---|---|
 | **[!UICONTROL コンテナを追加]** | コンテナにネストされたコンテナを追加します。 |
 | **[!UICONTROL 除外]** | 結果をフィルター定義のコンテナから除外します。 薄い赤い左側のバーは、除外コンテナを示しています。 |
-| **[!UICONTROL 含める]** | コンテナの結果をフィルター定義に含めます。 デフォルトは「含める」です。 薄いグレーの左バーは、インクルードコンテナを示します。 |
-| **[!UICONTROL Name コンテナ]** | コンテナの名前をデフォルトの説明から変更します。 テキストフィールドに名前を入力します。 入力しない場合、デフォルトの説明が使用されます。 |
+| **[!UICONTROL 含める]** | コンテナの結果をフィルター定義に含めます。 Include がデフォルトです。 薄いグレーの左バーは、インクルードコンテナを示します。 |
+| **[!UICONTROL 名前コンテナ]** | デフォルトの説明からコンテナ名前変更します。 テキストフィールドに名前書式 ＜例外＞Photoshop のみ「テキスト」。 入力を指定しない場合は、デフォルトの説明が使用されます。 |
 | **[!UICONTROL コンテナを削除]** | 定義からコンテナを削除します。 |
 
 
@@ -135,7 +135,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ セグメントでの日付範囲のローリング ](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [セグメントでの周期的な日付範囲](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -144,9 +144,9 @@ ht-degree: 10%
 
 フィルターを使用してフィルターを作成できます。 フィルターでフィルターを使用すると、フィルターを最適化して複雑さを軽減できます。
 
-デバイスタイプ（2）と米国状態（50）の組み合わせでフィルタリングするとします。 デバイスタイプ（携帯電話かタブレットか）と米国の州の独自の組み合わせに対して、それぞれ 100 個のフィルターを作成できます。 カリフォルニアのタブレットユーザーを取得するには、100 個のフィルターのいずれかを使用します。
+デバイスタイプ（2）と米国状態（50）の組み合わせでフィルタリングするとします。 デバイスの種類(携帯電話とタブレット)と米国の州の一意の組み合わせに対して、それぞれ 100 フィルタービルドできます。 カリフォルニアのタブレットユーザーを獲得するには、100 フィルターのいずれかを使用します。
 
-![CA・タブレット用シンプルフィルター ](assets/filter-ca-tablet-single.png)
+![CAとタブレット用のシンプルなフィルター](assets/filter-ca-tablet-single.png)
 
 または、52 個のフィルターを定義できます。米国の州用に 50 個、携帯電話用に 1 個、タブレット用に 1 個のフィルターです。 次に、フィルターを積み重ねて、同じ結果を取得します。 カリフォルニアのタブレットユーザーを取得するには、次の 2 つのフィルターを積み重ねます。
 
@@ -177,7 +177,7 @@ ht-degree: 10%
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
->title="繰り返しなしインスタンス"
+>title="繰り返さないインスタンス"
 >abstract="ディメンション固有の（繰り返さない）インスタンスを含みます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -203,17 +203,17 @@ ht-degree: 10%
 
 * 女性ページ – アトリビューション – 繰り返し（デフォルト）
 * 女性ページ – アトリビューション – インスタンス
-* 女性ページ – アトリビューション – 繰り返さないインスタンス
+* 女性 ページ - アトリビューション - 繰り返さないインスタンス
 
 
-次の表に、アトリビューションモデルごとに、その条件で認定される受信イベント ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) を示します。
+次の表では、属性モデルごとに、どの受信イベントがその条件に対して認定 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) であるかについて説明します。
 
 
-| 女性ページ – アトリビューション - <br/>*アトリビューションモデル* | イベント 1:<br/> ページ名 equals<br/>Women | イベント 2:<br/> ページ名 equals<br/>Men | イベント 3:<br/> ページ名 equals<br/>Women | イベント 4:<br/> ページ名が次と等しい <br/> 女性 <br/> （永続） | イベント 5:<br/> ページ名が等しい <br/> チェックアウト | イベント 6:<br/> ページ名 equals<br/>Women | イベント 7:<br/> ページ名が <br/> ホームと等しい |
+| 女性ページ - アトリビューション - <br/>*属性モデル* | イベント1:<br/>ページ名前イコール<br/>女性 | イベント 2:<br/> ページ名 equals<br/>Men | イベント 3:<br/> ページ名 equals<br/>Women | イベント 4:<br/> ページ名が次と等しい <br/> 女性 <br/> （永続） | イベント 5:<br/> ページ名が等しい <br/> チェックアウト | イベント 6:<br/> ページ名 equals<br/>Women | イベント 7:<br/> ページ名が <br/> ホームと等しい |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 | 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
-| インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
-| 繰り返しなしインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
+| インスタンス | ![チェックマーク円](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
+| 繰り返さないインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![チェックマーク円](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
 
 3 つのフィルターを使用したイベントに関するレポートの例を次に示します。
 

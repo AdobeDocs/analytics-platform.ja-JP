@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 99%
+source-wordcount: '2120'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ データビューの作成または編集 ](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データビューの作成または編集](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -34,9 +34,22 @@ ht-degree: 99%
 
 新規または既存のデータビューを設定するには：
 
+>[!BEGINTABS]
+
+>[!TAB 標準 ]
+
+![データビューの設定](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![ データビュー B2B の設定 ](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. 「**[!UICONTROL 設定]**」タブを選択します（まだアクティブでない場合）。
 
-   ![データビューの設定](assets/dataview-configure.png)
+
 1. [!UICONTROL 設定]、[!UICONTROL コンテナ]、[!UICONTROL カレンダー]の詳細を指定します（以下を参照）。
 1. 「**[!UICONTROL 保存して続行]**」を選択して、新規または既存のデータ ビューの設定を続行します。「**[!UICONTROL 保存]**」を選択して、既存のデータビューの設定を保存します。
 
@@ -56,10 +69,10 @@ ht-degree: 99%
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL **接続**] | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
-| [!UICONTROL **名前**] | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンリストに表示されます。 |
-| [!UICONTROL **外部 ID**] | 必須。ビジネスインテリジェンスツールなどの外部ソースで使用できる、データビューの名前。デフォルトは `unspecified` です。外部 ID を指定しない場合、名前はデータビューの名前から生成され、スペースはアンダースコアに置き換えられます。 |
-| [!UICONTROL **説明**] | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
+| **[!UICONTROL 接続]** | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
+| **[!UICONTROL 名前]** | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンリストに表示されます。 |
+| **[!UICONTROL 外部 ID]** | 必須。ビジネスインテリジェンスツールなどの外部ソースで使用できる、データビューの名前。デフォルトは `unspecified` です。外部 ID を指定しない場合、名前はデータビューの名前から生成され、スペースはアンダースコアに置き換えられます。 |
+| **[!UICONTROL 説明]** | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL **人物のコンテナ名**] | [!UICONTROL 個人]（デフォルト）。[!UICONTROL ユーザー]コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。組織で別の用語（「訪問者」や「ユーザー」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
-| [!UICONTROL **セッションのコンテナ名**] | [!UICONTROL セッション]（デフォルト）。[!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。このコンテナの名前は、「訪問」または組織が指定したその他の用語に変更できます。 |
-| [!UICONTROL **イベントのコンテナ名**] | [!UICONTROL イベント]（デフォルト）。[!UICONTROL イベント] コンテナは、データセット内の個々のイベントを定義します。組織で異なる用語（「ヒット数」や「ページビュー数」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>**[!UICONTROL  グローバルアカウントコンテナ名 ]** | `Global Account` （デフォルト）。 [!UICONTROL  グローバルアカウント ] コンテナには、指定した期間内のグローバルアカウントのすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>**[!UICONTROL  アカウントコンテナ名 ]** | `Account` （デフォルト）。 [!UICONTROL  アカウント ] コンテナには、指定した期間内のアカウントのすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>**[!UICONTROL  商談コンテナ名 ]** | `Opportunity` （デフォルト）。 [!UICONTROL Opportunity] コンテナには、指定した期間内の商談に関するすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>**[!UICONTROL  購入グループコンテナ名 ]** | `Buying Group` （デフォルト）。 [!UICONTROL  購入グループ ] コンテナには、指定した期間内の購入グループに対するすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
+| **[!UICONTROL 人物コンテナ名]** | `Person` （デフォルト）。 [!UICONTROL ユーザー]コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。組織で別の用語（「訪問者」や「ユーザー」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
+| **[!UICONTROL セッションのコンテナ名]** | `Session` （デフォルト）。 [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。このコンテナの名前は、「訪問」または組織が指定したその他の用語に変更できます。 |
+| **[!UICONTROL イベントのコンテナ名]** | `Event` （デフォルト）。 [!UICONTROL イベント] コンテナは、データセット内の個々のイベントを定義します。組織で異なる用語（「ヒット数」や「ページビュー数」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
 
 {style="table-layout:auto"}
 
@@ -179,5 +196,11 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 ### セッション設定
 
 セッションの有効期限が切れてから新しいセッションが開始されるまでの間に無操作状態が続く期間を指定します。期間を指定する必要があります。オプションで、イベントに特定の指標が含まれる場合は新しいセッションを強制的に開始することもできます。詳しくは、[セッション設定](session-settings.md)を参照してください。
+
+### データのプレビュー
+
+データプレビューでは、（様々なコンテナについて）このデータビューのデータと接続のデータを比較します。 プレビューの割合は、過去 90 日間の接続の合計数に基づきます。
+
+プレビューが読み込まれない場合、接続はまだバックフィル中の可能性があります。
 
 必要な設定をすべて指定したら、「**[!UICONTROL 保存して終了]**」をクリックします。
