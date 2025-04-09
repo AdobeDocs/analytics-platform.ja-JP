@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics を使い始める
+title: Customer Journey Analytics クイックスタートガイド
 description: Customer Journey Analytics を実装するのに必要な前提条件およびワークフローについて把握します。
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 99%
 
 ---
 
-# Customer Journey Analytics を使い始める
+# クイックスタートガイド
 
 Customer Journey Analytics を実装するには、次のワークフローに従う必要があります。初期タスクの中には、Adobe Experience Platform で実行されるものと、Customer Journey Analytics で実行されるものがあります。
 
