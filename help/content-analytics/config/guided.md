@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -257,7 +257,7 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
 >title="タグプロパティが無効"
->abstract="Content Analytics拡張機能は既にアクティブです。"
+>abstract="コンテンツ分析拡張機能は既にアクティブです。"
 
 <!-- markdownlint-enable MD034 -->
 
