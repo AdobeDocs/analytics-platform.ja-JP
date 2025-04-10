@@ -4,9 +4,9 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
+source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1988'
 ht-degree: 8%
 
 ---
@@ -99,36 +99,36 @@ _この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics*
 
 * コンバージョン率の計算は、ジャーニーのタイプ（ジャーニーに含まれる開始ノードと終了ノードの数と、パスが交差しているかどうか）によって異なります。
 
-  The following table describes how conversion rates are calculated based on the journey type:
+  次の表に、ジャーニータイプに基づくコンバージョン率の計算方法を示します。
 
-  | Journey type | Conversion rate calculation | 例 |
+  | ジャーニーの種類 | コンバージョン率の計算 | 例 |
   |---------|----------|---------|
-  | **A single start node and a single end node** | コンバージョン率は、終了ノードの数を開始ノードの数で割ることによって計算されます。 | ![ 共通のノードに収束する、複数の開始を持つジャーニー](assets/journey-canvas-single-path.png) |
+  | **単一のスタートノードと単一のエンドノード** | コンバージョン率は、終了ノードの数を開始ノードの数で割ることによって計算されます。 | ![ 共通のノードに収束する、複数の開始を持つジャーニー](assets/journey-canvas-single-path.png) |
   | **1 つの開始ノードと複数の終了ノード** | コンバージョン率は、最も大きい数の終了ノードを見つけ、その数を開始ノードの数で割ることで計算されます。 | ![ 共通のノードに収束する、複数の開始を持つジャーニー](assets/journey-canvas-singlestart-multiend.png) |
   | **複数のスタンドアロンパス。各パスには、1 つの開始ノードと 1 つの終了ノードが含まれます** | コンバージョン率は、終了ノードの数を開始ノードの数で割ることによって計算されます。 最もコンバージョン率の高いパスがキャプションに表示されます。 | ![ 共通のノードに収束する、複数の開始を持つジャーニー](assets/journey-canvas-multi-start-separate.png) |
   | **ジャーニーの任意の時点で収束して共通のノードになる複数の開始ノード** | コンバージョン率は、最も大きい数の終了ノードを見つけ、その数を、最も小さい数の開始ノードの数で割ることで計算されます。 | ![ 共通のノードに収束する、複数の開始を持つジャーニー](assets/journey-canvas-multi-start-converge.png) |
 
-### Fallthrough, Fallout, and more
+### フォールスルー、フォールアウトなど
 
-Following are a few examples of other insights Journey canvas can help provide. You can choose whether these insights are based on all people in the data view, all people who started the journey, or all people from the previous node of the journey.
+ジャーニーキャンバスが提供できる他のインサイトの例を以下に示します。 これらのインサイトを、データビューのすべてのユーザー、ジャーニーを開始したすべてのユーザー、ジャーニーの以前のノードのすべてのユーザーのいずれに基づくかを選択できます。
 
 #### フォールスルー
 
-* The number and percentage of people who completed the journey (arrived at the ending node)
+* ジャーニーを完了した（終了ノードに到達した）ユーザーの数と割合
 
-* The number and percentage of people who arrived at a given node of the journey
+* ジャーニーの特定のノードに到達した人物の数と割合
 
-* The most common step that came after or before a given node of the journey
+* ジャーニーの特定のノードの後または前に発生した最も一般的なステップ
 
 #### フォールアウト
 
-* The nodes of the journey where people most commonly fell out of the journey (never arrived at any of the immediate next nodes)
+* ジャーニーからフォールアウトすることが最も多いジャーニーのノード（直近の次のノードに到達しなかった）
 
-#### Additional data for each node
+#### 各ノードの追加データ
 
-* Add a breakdown dimension on any node of the journey to view additional data for that specific node
+* ジャーニーのノードに分類ディメンションを追加して、その特定のノードの追加データを表示します
 
-## Choose between Journey canvas, Fallout, or Flow visualizations
+## ジャーニーキャンバス、フォールアウト、フロービジュアライゼーションから選択します
 
 ジャーニーキャンバスビジュアライゼーションは、[ フォールアウトビジュアライゼーション ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) および [ フロービジュアライゼーション ](/help/analysis-workspace/visualizations/c-flow/flow.md) と似ていますが、重要な違いがあります。
 
@@ -192,9 +192,21 @@ Following are a few examples of other insights Journey canvas can help provide. 
 
 ### Journey Optimizerとジャーニーキャンバスの同期
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーの分析を作成すると、データはJourney Optimizerからジャーニーキャンバスに向かって 1 方向にのみ同期されます。 つまり、ジャーニーキャンバスでジャーニーに加えた変更は、Journey Optimizerには反映されません。
+Journey Optimizerとジャーニーキャンバスの同期を理解するには、次の動作を考慮します。
 
-さらに、Journey Optimizerでジャーニーに加えた変更は、[ジャーニーキャンバスでジャーニーが大幅に変更されていない場合のみ ](#differences-after-modifying-a-journey-in-journey-canvas)ジャーニーキャンバスと同期されます。 ジャーニーキャンバスでジャーニーを変更した後は、Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスには反映されません。 ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
+* **データ同期は一方向のみ**
+
+  ジャーニーキャンバスでJourney Optimizer ジャーニーの分析を作成すると、データはJourney Optimizerからジャーニーキャンバスに向かって 1 方向にのみ同期されます。 つまり、ジャーニーキャンバスでジャーニーに加えた変更は、Journey Optimizerには反映されません。
+
+* **ジャーニーキャンバスでジャーニーを変更すると、同期が停止する**
+
+  Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスに同期されます [ ジャーニーがジャーニーキャンバスで大幅に変更されていない場合のみ ](#differences-after-modifying-a-journey-in-journey-canvas)。 ジャーニーキャンバスでジャーニーを変更した後は、Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスには反映されません。 ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
+
+* **「任意のユーザーと共有」リンクを使用するには、Journey Optimizerで変更を加えた後に、プロジェクトがCustomer Journey Analyticsに保存される必要があります**
+
+  「任意のユーザーと共有」リンクを使用すると、Journey Optimizerで行った変更は、プロジェクトがCustomer Journey Analyticsに保存されるまで、ジャーニーキャンバスに反映されません。
+
+  「任意のユーザーと共有」リンクについて詳しくは、[ プロジェクトを共有 [ の「任意のユーザーとプロジェクトを共有（不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください ](/help/analysis-workspace/curate-share/share-projects.md)。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 
@@ -228,17 +240,17 @@ Following are a few examples of other insights Journey canvas can help provide. 
 
 #### 同期の違い
 
-Changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas.
+Journey Optimizerのジャーニーに加えられた変更は、ジャーニーキャンバスでジャーニーが変更されていない場合にのみ、ジャーニーキャンバスに同期されます。
 
-After you modify a Journey Optimizer journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
+ジャーニーキャンバスでJourney Optimizer ジャーニーを変更した後は、Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスには反映されません。 ジャーニーキャンバスに反映された変更を確認するには、ジャーニーキャンバスでジャーニーを削除して [ 再作成 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) します。
 
-### Terminology differences between Journey Optimizer and Customer Journey Analytics
+### Journey OptimizerとCustomer Journey Analyticsの用語の違い
 
-Certain terms that mean one thing in Journey Optimizer mean something else in Customer Journey Analytics. When using Journey canvas, the Customer Journey Analytics terms are used.
+Journey Optimizerにある 1 つのことを意味する特定の用語は、Customer Journey Analyticsの他の何かを意味します。 ジャーニーキャンバスを使用する場合、Customer Journey Analytics用語が使用されます。
 
 | 用語 | ジャーニーキャンバス | Journey Optimizer |
 |---------|----------|---------|
-| **イベント** | Customer Journey Analyticsで使用できる、いくつかの標準指標の 1 つです。 This metric counts things like revenue, subscriptions, or leads generated. | オンライン購入など、パーソナライズされたジャーニーをトリガーにするアクティビティのカテゴリ。 |
+| **イベント** | Customer Journey Analyticsで使用できる、いくつかの標準指標の 1 つです。 この指標は、売上高、サブスクリプション、生成されたリードなどをカウントします。 | オンライン購入など、パーソナライズされたジャーニーをトリガーにするアクティビティのカテゴリ。 |
 
 ### ジャーニーキャンバスでのJourney Optimizer ジャーニーの分析
 
