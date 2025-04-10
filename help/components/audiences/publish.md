@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
+source-git-commit: 20ccc42c902cbcadb509147352a5681fab9e44e0
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 18%
+source-wordcount: '2350'
+ht-degree: 15%
 
 ---
 
@@ -169,6 +169,38 @@ Platform でCustomer Journey Analytics オーディエンスを表示するに�
 
 Platform でのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) の節を参照してください。
 
+### Customer Journey AnalyticsとReal-Time Customer Data Platformの間のオーディエンスカウントの不一致について
+
+Customer Journey AnalyticsとReal-Time Customer Data Platformの間では、オーディエンス数の不一致が発生する場合があります。 次のポイントで、これらの違いを詳しく説明します。
+
+![Customer Journey AnalyticsとReal-Time CDPのオーディエンスの違いのインフォグラフィック ](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+
+**確率論的カウントと決定論的カウント**
+
+以下に説明するように、オーディエンスメンバーシップ番号の計算方法は 2 つのアプリで異なります。
+
+* **Customer Journey Analytics**: Customer Journey Analyticsの **[!UICONTROL 合計人数]** 指標は推定値です。 つまり、カウントはオーディエンスのルールに基づく予測であり、更新間隔によって変わる可能性があります。
+* **Real-Time Customer Data Platform**: Real-Time Customer Data Platformの数は、毎日の評価ジョブに基づいて決定的であり、オーディエンスがオーディエンスポータルへの公開を完了した時点で固定されます。
+
+**公開間隔と公開率**
+
+オーディエンスは、1 秒あたり 1,500 レコード（RPS）の割合でReal-Time Customer Data Platformに公開されます。 例えば、2,000 万人のオーディエンスが完全に公開されるまでに約 3.7 時間かかります（20M/1500 RPS/1 時間あたり 3,600 秒）。 この間、2 つのアプリ間でオーディエンスメンバーシップに違いが生じる可能性があります。
+
+**プロファイルの断片化**
+
+Customer Journey Analyticsから読み込まれたプロファイルが既にReal-Time Customer Data Platformに存在する場合、それらは新しいプロファイルとしてカウントされません。 これにより、Real-Time Customer Data Platformでプロファイル数が予想より少なくなる可能性があります。
+
+**バッチオーディエンスとストリーミングオーディエンスの比較**
+
+Customer Journey Analytics オーディエンスは毎日のバッチ評価ジョブに含まれず、次の公開間隔まで固定されます。 これに対し、Real-Time Customer Data Platformの他のバッチオーディエンスは、24 時間ごとに再評価されます。
+
+### 重要な留意点
+
+* **Customer Journey Analyticsの推定カウント**:Customer Journey Analyticsの **[!UICONTROL 合計人数]** カウントは推定値であり、ストリーミングデータや ID の動作によって異なる可能性があることを理解しておきます。
+* **Real-Time Customer Data Platformにおける決定論的なカウント**:Real-Time Customer Data Platformのカウントは固定されており、次の公開間隔まで変化しません。
+* **プロファイルの断片化**:Customer Journey Analyticsから読み込む際、Real-Time Customer Data Platform内の既存のプロファイルが新しいプロファイル数の要因となっている可能性があることに注意してください。
+
+これらの側面を明確に区別することで、Customer Journey AnalyticsとReal-Time Customer Data Platform全体でオーディエンスデータをより深く理解し管理できます。
 
 ## よくある質問（FAQ） {#faq}
 
