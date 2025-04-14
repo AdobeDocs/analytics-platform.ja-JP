@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1878'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
    1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
    1. ![ 編集 ](/help/assets/icons/Edit.svg) を選択して **[!UICONTROL レポートツール]** を編集します。
-   1. 「![AddCircle](/help/assets/icons/AddCircle.svg)」を選択して、「**AI Assistant：データビジュアライゼーション**」を **[!UICONTROL 含まれる権限項目]** に追加します。
+   1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** および **AI Assistant: Data Analysis** を **[!UICONTROL 含まれる権限項目]** に追加します。
 
       ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
