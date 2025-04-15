@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
+source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
 workflow-type: tm+mt
-source-wordcount: '2493'
-ht-degree: 25%
+source-wordcount: '2571'
+ht-degree: 21%
 
 ---
 
@@ -99,18 +99,18 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="新しいデータビュー"
+>title="新規データビュー"
 >abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。必要に応じて、関連付けられた接続も更新され、コンテンツ分析データセットが含まれます。コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
->title="選択したデータビューのクリーンアップ"
->abstract="コンテンツ分析用に既にプロビジョニングしているデータビューが選択されました。この既存のコンテンツ分析設定は削除され、データビューが新しい設定でプロビジョニングされます。"
+>title="選択したデータビューをクリーンアップ"
+>abstract="Content Analytics用に既にプロビジョニングされている aata ビューを選択しました。 既存のContent Analytics設定が削除され、データビューが新しい設定でプロビジョニングされます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
->title="以前のデータビューのクリーンアップ"
->abstract="新しいデータビューが選択されました。以前に選択したデータビューのコンテンツ分析設定は削除されます。"
+>title="前のデータビューをクリーンアップ"
+>abstract="新しいデータビューが選択されました。以前に選択したデータビューのContent Analytics設定は削除されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -118,13 +118,13 @@ ht-degree: 25%
 
 1. データビューを選択
 
-   * 設定用に新しいデータビューを選択するには、![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL データビューを選択]** を使用します。
+   * 設定用に新しいデータビューを選択するには、![ データ ](/help/assets/icons/Data.svg)**[!UICONTROL データビューを選択]** を使用します。
 
-     ![ データビューの Content Analytics 設定 ](../assets/aca-configuration-dataview.png)
+     ![ データビューのContent Analytics設定 ](../assets/aca-configuration-dataview.png)
 
    * 設定のデータビューを変更するには、![ 編集 ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。
 
-     ![ データビューの Content Analytics 設定 ](../assets/aca-configuration-dataview-edit.png)
+     ![ データビューのContent Analytics設定 ](../assets/aca-configuration-dataview-edit.png)
 
 
    どちらのシナリオでも、**[!UICONTROL データビュー]** ダイアログが表示され、設定用のデータビューを選択できます。
@@ -141,11 +141,11 @@ ht-degree: 25%
    * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL  接続 ]、[!UICONTROL  所有者 ]、[!UICONTROL  サンドボックス ] でリストをフィルタリングできます。<br/> フィルターウィンドウを非表示にするには、![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルターを非表示]** を使用します。
    * テーブルに表示する列を定義するには、「![ 列設定 ](/help/assets/icons/ColumnSetting.svg)」を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログに表示する列を選択し、「**[!UICONTROL 適用]** を選択して変更を適用します。
 
-1. 使用するデータビューの ![SelectBox](/help/assets/icons/SelectBox.svg) を選択します。
+1. ![SelectBox](/help/assets/icons/SelectBox.svg) を選択して、使用するデータビューを選択します。
 1. 「**[!UICONTROL 保存]**」を選択して、選択したデータビューを確定します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 
-Customer Journey Analyticsでは、データビューはCustomer Journey Analytics[ 接続 ](/help/connections/overview.md) に関連付けられています。 また、接続は組織内のサンドボックスに基づいています。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの名前が **[!UICONTROL サンドボックス]** に自動入力されます。
+Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-views.md) はCustomer Journey Analytics [ 接続 ](/help/connections/overview.md) に関連付けられています。 また、接続は組織内のサンドボックスに基づきます。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの名前が **[!UICONTROL サンドボックス]** に自動入力されます。
 
 
 ### エクスペリエンスのキャプチャと定義 {#onboarding-experiences}
@@ -155,12 +155,12 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="コンテンツ分析で収集するデータにエクスペリエンスを含めるように選択できます。選択した場合、エクスペリエンスを含める URL を定義するために、正規表現とクエリパラメーターの 1 つ以上の組み合わせを定義する必要があります。"
+>abstract="Content Analyticsで収集するデータにエクスペリエンスを含めるように選択できます。 選択した場合、エクスペリエンスを含める URL を定義するために、正規表現とクエリパラメーターの 1 つ以上の組み合わせを定義する必要があります。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="コンテンツ分析でのエクスペリエンスの収集"
+>abstract="コンテンツ分析でエクスペリエンスを収集"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
@@ -168,13 +168,23 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 >abstract="Web サイトでのコンテンツのレンダリング方法を決定するパラメーターを指定します。"
 
 >[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_new_include_experiences"
+>title="エクスペリエンスのキャプチャと定義"
+>abstract="有効にすると、エクスペリエンスデータが収集され、エクスペリエンス属性が生成されて、エクスペリエンスレポートが使用可能になります。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_edit_include_experiences"
+>title="エクスペリエンスのキャプチャと定義"
+>abstract="有効にすると、エクスペリエンスデータが収集され、エクスペリエンス属性が生成されて、エクスペリエンスレポートが使用可能になります。 現在の設定に関連付けられているタグプロパティ内のエクスペリエンスのデータ収集設定を変更するには、<br><br/>![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を使用します。"
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能の設定を編集できます。"
+>abstract="現在の設定に関連付けられているタグプロパティのAdobe Content Analytics拡張機能で、エクスペリエンスデータ収集の設定を編集する必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 
-このセクションでは、コンテンツ分析で収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。
+このセクションでは、Content Analyticsで収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。
 
 デフォルトでは、**[!UICONTROL エクスペリエンスを含める]** はオフになっています。 選択した場合、エクスペリエンスを含める URL を定義する必要があります。
 
@@ -199,11 +209,14 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
 1. 正規表現とクエリパラメーターの別の組み合わせを追加する場合は、「**[!UICONTROL 正規表現を追加]**」を選択します。
 
-既存のエクスペリエンスを編集するか、実装された設定に新しいエクスペリエンスを含めるには：
+既存のエクスペリエンスを編集したり、実装された設定に新しいエクスペリエンスを含めたりするには：
 
-![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience-edit.png)
+![Content Analytics設定エクスペリエンスのキャプチャと定義 ](../assets/aca-configuration-experience-edit.png)
 
-* Analysis Workspaceのエクスペリエンスコンポーネント、ビジュアライゼーション、パネル、テンプレートを有効または無効にするには、**[!UICONTROL エクスペリエンスを含める]** を切り替えます。
+* **[!UICONTROL エクスペリエンスを含める]** を切り替えて有効または無効にします。
+
+   * Content Analytics イベントデータからエクスペリエンス属性を生成するプロセス
+   * Customer Journey Analyticsのレポートテンプレート。
 
 * ![Edit](/help/assets/icons/Edit.svg)**[!UICONTROL Edit]** を選択して、Content Analyticsのエクスペリエンスのデータ収集の設定をさらに編集します。 現在の設定に関連付けられているタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics拡張機能 } にリダイレクトされます。[
 
@@ -291,7 +304,7 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 
 >[!IMPORTANT]
 >
->タグを使用せずに Javascript を使用して既存の web SDK実装がある場合は、新しく作成したタグプロパティから、自動で組み込まれる Web SDK拡張機能を手動で削除する必要があります。
+>[Javascript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) を使用し、[ タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を使用しない既存の Web SDK実装がある場合、新しく作成したタグプロパティから、自動で組み込まれる Web SDK拡張機能を手動で削除する必要があります。
 
 
 
@@ -331,8 +344,8 @@ Customer Journey Analyticsでは、データビューはCustomer Journey Analyti
 * **[!UICONTROL 実装]**：設定または設定に加えた変更を保存して実装します。 ![ 必須 ](/help/assets/icons/Required.svg) とマークされたすべてのフィールドに適切な値が必要です。 実装は次で構成されます。
 
    * **[!UICONTROL Customer Journey Analytics]** 設定：
-      * 選択したデータビューが更新され、Content Analytics のディメンションと指標が表示されます。
-      * 選択したデータビューに結び付けられた接続が変更され、Content Analytics イベントと属性データセットが含まれるようになりました。
+      * 選択したデータビューが更新され、Content Analyticsのディメンションと指標が表示されます。
+      * 選択したデータビューに関連付けられた接続が変更され、Content Analytics イベントと属性データセットが含まれるようになりました。
       * コンテンツ分析レポートテンプレートがWorkspaceに追加されます。
 
 
