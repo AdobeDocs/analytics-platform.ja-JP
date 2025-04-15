@@ -7,9 +7,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
-source-git-commit: 0e4e52cfd42db321c4a7a18a9b1473a67f87e785
+exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
+source-git-commit: d7ee16c64761440989f2850d72b8159799bb8479
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '396'
 ht-degree: 22%
 
 ---
@@ -39,6 +40,10 @@ Customer Journey Analytics B2B editionを実装するには、次の前提条件
 | **手順 3：データビューの作成** | データビューは、データの *フィルター済み* ビューです。 同じ接続に対して異なるデータビューを作成し、訪問タイムアウト、アトリビューションなどに異なる設定を指定できます。 1 つのデータセットに対して複数のデータビューを作成できます。B2B editionを使用する場合、データビューを設定する際に追加のオプションを使用できます。<br>[データビューの作成](/help/data-views/create-dataview.md)を参照してください。 |
 | **手順 4：ワークスペースでのクロスチャネルデータのレポート** | 接続とデータビューを作成したら、Analysis Workspaceの機能と柔軟性を使用して、取り込んだ B2B データを分析します。<br>[基本分析の実行](/help/analysis-workspace/perform-basic-analysis.md)および[詳細分析の実行](/help/analysis-workspace/perform-adv-analysis.md)を参照してください。 |
 
-## 使用例
+<!--
 
-[B2B のユースケース ](../data-ingestion/data-ingestion.md) ドキュメントでは、Customer Journey Analytics B2B editionの実装方法に関するユースケースの例を示しています。
+## Use Case
+
+The [B2B Use Case ](../data-ingestion/data-ingestion.md) document provides an example use case on how to implement Customer  Journey Analytics B2B Edition.
+
+-->
