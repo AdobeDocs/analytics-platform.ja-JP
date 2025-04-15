@@ -5,8 +5,8 @@ feature: Workspace Basics
 title: Workspace ホットキーの使用方法
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: ht
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | アラートを作成 | **[!UICONTROL *Cmd + Shift + A キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + A キー&#x200B;*]** |
 | 計算指標を作成 | **[!UICONTROL *Cmd + Shift + C キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + C キー&#x200B;*]** |
 | 日付範囲を作成 | **[!UICONTROL *Cmd + Shift + D キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + D キー&#x200B;*]** |
-| フィルターを作成 | **[!UICONTROL *Cmd + Shift + E キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + E キー&#x200B;*]** |
+| セグメントの作成 | **[!UICONTROL *Cmd + Shift + E キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + E キー&#x200B;*]** |
 | すべてクリア | **[!UICONTROL *Alt + W キー&#x200B;*]** | **[!UICONTROL *Opt + W キー&#x200B;*]** |
 | コピー | **[!UICONTROL *Cmd + C キー&#x200B;*]** | **[!UICONTROL *Ctrl + C キー&#x200B;*]** |
 | やり直し | **[!UICONTROL *Cmd + Shift + Z キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + Z キー&#x200B;*]** |

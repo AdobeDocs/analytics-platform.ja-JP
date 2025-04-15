@@ -4,16 +4,16 @@ title: 概要を共有
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 48%
+ht-degree: 56%
 
 ---
 
 # 概要を共有
 
-Analysis Workspaceの **[!UICONTROL 共有]** メニューから使用できるオプションを使用するか、インターフェイスの右上にある **[!UICONTROL 共有]** を選択すると、組織内または他のユーザーとPDFまたは CSV ファイルとして、プロジェクトをキュレーション、共有、スケジュールできます。
+Analysis Workspaceの **[!UICONTROL 共有]** メニューから使用できるオプションを使用するか、インターフェイスの右上にある **[!UICONTROL 共有]** を選択すると、組織内または他のユーザーとプロジェクトをPDF ファイルまたは CSV ファイルとしてキュレーション、共有、スケジュールできます。
 
 ![ 新株予約権 ](assets/share-options.png)
 
@@ -23,4 +23,4 @@ Analysis Workspaceの **[!UICONTROL 共有]** メニューから使用できる�
 | **[!UICONTROL 任意のユーザーと共有]** | Customer Journey Analyticsへのアクセス権を持たないユーザーにAnalysis Workspace プロジェクトへの読み取り専用アクセス権を付与します。 [詳細情報](/help/analysis-workspace/curate-share/share-projects.md) |
 | **[!UICONTROL ファイルを書き出し]** | プロジェクトを CSV または PDF 形式で、指定した受信者にすぐに送信します。[詳細情報](/help/analysis-workspace/export/t-schedule-report.md) |
 | **[!UICONTROL ファイルの書き出しをスケジュール]** | プロジェクトを CSV または PDF 形式でスケジュールに従って指定した受信者に送信します。[詳細情報](/help/analysis-workspace/export/t-schedule-report.md) |
-| **[!UICONTROL プロジェクトデータをキュレート]** | プロジェクトで使用できるコンポーネント（ディメンション、指標、フィルター、日付範囲）を制限します。[詳細情報](/help/analysis-workspace/curate-share/curate.md) |
+| **[!UICONTROL プロジェクトデータをキュレート]** | プロジェクトで使用できるコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限します。[詳細情報](/help/analysis-workspace/curate-share/curate.md) |

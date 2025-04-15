@@ -5,16 +5,16 @@ title: 表示専用プロジェクト
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 79%
+ht-degree: 70%
 
 ---
 
 # 表示専用プロジェクト
 
-[プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis Workspace、Customer Journey Analytics全般に慣れていないユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用してもらいたい場合には、この方法が適しているかもしれません。
+[プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analytics全般に慣れていないユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用してもらいたい場合には、この方法が適しているかもしれません。
 
 ![ 表示専用の共有プロジェクト。](assets/view-only-project.png)
 
@@ -23,11 +23,11 @@ ht-degree: 79%
 表示のみのプロジェクトで無効になる操作には、次のものが含まれます。
 
 * 非表示の左パネル
-* パネルカレンダーの日付範囲注意：受信者にカレンダー制御を付与する場合は、日付範囲を含む[ドロップダウンフィルター](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)を追加します。
-* フリーフォームフィルター
+* パネルカレンダーの日付範囲メモ：受信者にカレンダーコントロールを付与する場合は、[ 日付範囲を含むドロップダウンセグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) にを追加します。
+* フリーフォームセグメント化
 * 表示可能な行のフリーフォーム数
 * フリーフォーム行、列またはビジュアライゼーションの設定
-* パネルフィルター
+* パネルセグメント
 * 編集、挿入、コンポーネントメニュー
 * Workspace のヒント
 
@@ -39,5 +39,5 @@ ht-degree: 79%
 | --- | --- |
 | フリーフォームテーブル | <ul><li>ページネーションと並べ替え</li><li>ホバリング</li><li>リンクされたビジュアライゼーションを更新するセルの選択</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>右クリックしてクリップボードにコピー</li></ul> |
 | ビジュアライゼーション | <ul><li>クリックして凡例のオン／オフを切り替え</li><li>ホバリング</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>折りたたみ／展開</li><li>フロー — フローノードを展開</li><li>マップ — ズーム</li></ul> |
-| パネル | <ul><li>インタラクティブなドロップダウンフィルター</li><li>右クリックしてパネルリンクを取得</li><li>折りたたみ／展開</li></ul> |
+| パネル | <ul><li>インタラクティブなドロップダウンセグメント</li><li>右クリックしてパネルリンクを取得</li><li>折りたたみ／展開</li></ul> |
 | プロジェクト | <ul><li>すべての情報アイコンの検査</li><li>プロジェクトメニュー — 新規、開く、ランディングページとして設定、更新、CSV／PDF をダウンロード、限られたプロジェクト情報および設定</li><li>共有メニュー — プロジェクトリンクを取得、今すぐファイルを送信</li><li>ヘルプメニュー — 「ヒント」および「デバッガー」オプション以外のすべてのアクション</li></ul> |

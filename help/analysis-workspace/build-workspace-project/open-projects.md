@@ -3,22 +3,23 @@ description: プロジェクトを開くためのオプションについて説�
 title: プロジェクトを開く
 feature: Workspace Basics
 role: User
-source-git-commit: 373d0c9989fb692da23efe371c65344093801140
+exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
 # プロジェクトを開く
 
-[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) ページから直接プロジェクトを開くことができます。 リストでプロジェクトを探します。 [ 検索 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) または [ フィルターパネル ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#filter-panel) を使用して、リストを絞り込みます。
+[ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) ページから直接プロジェクトを開くことができます。 リストでプロジェクトを探します。 [ 検索 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) または [ セグメントパネル ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) を使用して、リストを絞り込みます。
 
 * プロジェクトのタイトルをクリックして、Analysis Workspaceでプロジェクトを開きます。
 
 別のプロジェクトで作業中にプロジェクトを開くこともできます。
 
-* **[!UICONTROL プロジェクト]** メニューから **[!UICONTROL 開く]** を選択します。 [ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) ページに似たダイアログが表示されます。  [ 検索 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) または [ フィルターパネル ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#filter-panel) を使用して、リストを絞り込みます。
+* **[!UICONTROL プロジェクト]** メニューから **[!UICONTROL 開く]** を選択します。 [ プロジェクト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) ページに似たダイアログが表示されます。  [ 検索 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) または [ セグメントパネル ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) を使用して、リストを絞り込みます。
 * プロジェクトのタイトルをクリックして、Analysis Workspaceでプロジェクトを開きます。
 
 プロジェクトが見つからず、新規プロジェクトを開始する場合は、「**[!UICONTROL 新規作成]**」を選択します。

@@ -4,10 +4,10 @@ title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_ のクイックインサイトパネルに関するドキュメントです。この記事の [AdobeAnalytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight) __**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、![ クイックインサイトパネル**を参<br/>_ してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -37,10 +37,10 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 * 最も役立つビジュアライゼーションは何か。
 * インサイトを促進できるディメンションと指標は何か。
 * アイテムをドラッグ＆ドロップする場所はどこか。
-* どこにフィルターを作成するか。
+* セグメントの作成場所
 * その他の機能
 
-これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、フィルターおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、以下に示すように、ドロップダウンリストには、「[!UICONTROL 人気]」とタグ付けされたディメンション、指標およびフィルターが表示されます。
+これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンリストには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 
@@ -48,7 +48,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 
 * データテーブルと付属のビジュアライゼーションを [!UICONTROL Analysis Workspace] で適切に構築できます。
 * [!UICONTROL Analysis Workspace] の基本的なコンポーネントやパーツに関する用語と語彙を学びます。
-* ディメンションの簡単な分類を行ったり、複数の指標を追加したり、[!UICONTROL フリーフォームテーブル]内でフィルターを容易に比較したりできます。
+* ディメンションのシンプルな分類、複数の指標の追加、[!UICONTROL フリーフォームテーブル]内でのセグメントの比較を簡単に行います。
 * 様々なビジュアライゼーションタイプを変更または試して、分析の検索ツールをすばやく直感的に見つけます。
 
 ## 基本的な主要用語
@@ -62,7 +62,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 | [!UICONTROL 指標] | 指標は、ビュー数、クリックスルー数、リロード数、平均滞在時間、数量、注文件数、売上高など、人物のアクティビティに関する量的な情報です。 |
 | **[!UICONTROL ビジュアライゼーション]** | Workspace には、データを視覚的に表現する[様々なビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意されています。棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図などがあります。 |
 | **[!UICONTROL ディメンションの分類]** | ディメンションの分類は、ディメンションを他のディメンションで分類する方法です。例えば、モバイルデバイスごとに米国の州を分類して、州ごとのモバイルデバイス訪問数を取得できます。または、モバイルデバイスをモバイルデバイスタイプ、地域、内部キャンペーンなどで分類することもできます。 |
-| **[!UICONTROL フィルター]** | フィルターを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、次のような事項に基づいて、[!UICONTROL 人物]フィルターを作成できます。 <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
+| **[!UICONTROL フィルター]** | フィルターを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、に基づいて [!UICONTROL  人物 ] セグメントを作成できます <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
 
 ## 使用
 
@@ -83,7 +83,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 
 * **[!UICONTROL 分析]** - ディメンション（オレンジ色）を指定
 * **[!UICONTROL 条件]** - 指標（緑色）を指定
-* **[!UICONTROL フィルター条件]** - フィルター（青色）を指定
+* **[!UICONTROL セグメント化]** - セグメント（青）を指定します。
 * **[!UICONTROL 対象]** - 日付範囲（紫色）を指定。
 
 ビジュアライゼーションが正しく機能するには、少なくとも 1 つのディメンションと 1 つの指標を選択する必要があります。
@@ -105,7 +105,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 
    ![縦方向にディメンション、横方向に指標を表示するフリーフォームテーブル。](assets/quick-insights-output.png)
 
-   * 過去 12 か月間の web セッションでフィルタリングされた、ディメンション（国コード）と指標（セッション数）を含むフリーフォームテーブル。
+   * 過去 12 か月間の Web セッションでセグメント化された、ディメンション（国コード）と指標（セッション）を含むフリーフォームテーブル。
 
    * 付属のビジュアライゼーション（この場合は[棒グラフ](/help/analysis-workspace/visualizations/bar.md)）。生成されるビジュアライゼーションは、テーブルに追加したデータのタイプに基づいています。時間ベースのデータ（日別や月別の[!UICONTROL セッション数]など）は、デフォルトで[!UICONTROL 折れ線]グラフになります。時間ベースでないデータ（[!UICONTROL デバイス]ごとの[!UICONTROL セッション]）は、デフォルトで[!UICONTROL 棒]グラフになります。ビジュアライゼーションのタイプを変更するには、ビジュアライゼーションのタイプの横にあるドロップダウン矢印をクリックします。
 
@@ -121,7 +121,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 
   ![ヘルプアイコンを選択すると表示されるクイックインサイトパネル通知。](assets/qibuilder4.png)
 
-* 複数のディメンションと指標の分析、フィルターの組み合わせや比較、日付範囲の指定を行うことができます。
+* 複数のディメンションと指標の分析、セグメントの組み合わせや比較、日付範囲の指定を行うことができます。
 
   ![クイックインサイトビルダー結果](assets/qibuilder-result.png)
 
@@ -129,7 +129,7 @@ _この記事は、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJou
 
    * **[!UICONTROL 条件]**&#x200B;付きで指標を追加：指標は最大 2 つ追加できます。➍と➎ を参照してください。
 
-   * **[!UICONTROL フィルター条件]**：さらに最大 2 つのフィルターを追加できます。例えば、「予約」をフィルターとして追加し、そのフィルターを、比較対象の「頻繁に予約する人」フィルターと「初めて利用する人」フィルターと組み合わせます。➏、➐、➑ を参照してください。
+   * **[!UICONTROL セグメント化]**：さらに最大 2 つのセグメントを追加できます。 例えば、「予約」をセグメントとして追加し、そのセグメントを、比較対象の「頻繁に予約する人」セグメントおよび「初めて利用する人」セグメントと組み合わせます。➏、➐、➑ を参照してください。
 
    * 対象：日付範囲を指定できます。➒ を参照してください。
 

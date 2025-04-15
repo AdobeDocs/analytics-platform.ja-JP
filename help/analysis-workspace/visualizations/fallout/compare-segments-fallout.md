@@ -1,20 +1,20 @@
 ---
-description: タッチポイントからフィルターを作成したり、フィルターをタッチポイントとして追加したり、Analysis Workspace の様々なフィルターについて主なワークフローを比較したりできます。
-keywords: フォールアウトとフィルター、フォールアウト分析でのフィルター、フォールアウトでのフィルターの比較
-title: フォールアウト分析でのフィルターの適用
+description: タッチポイントからセグメントを作成したり、セグメントをタッチポイントとして追加したり、Analysis Workspace の様々なセグメントにわたって主なワークフローを比較したりできます。
+keywords: フォールアウトとセグメント；フォールアウト分析でのセグメント；フォールアウトでのセグメントの比較
+title: フォールアウト分析でのセグメントの適用
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 43%
+ht-degree: 36%
 
 ---
 
-# フォールアウト分析でのフィルターの適用
+# フォールアウト分析でのセグメントの適用
 
-タッチポイントからフィルターを作成したり、フィルターをタッチポイントとして追加したり、Analysis Workspace の様々なフィルターについて主なワークフローを比較したりできます。
+タッチポイントからセグメントを作成したり、フィルターをタッチポイントとして追加したり、Analysis Workspaceの様々なフィルターについて主なワークフローを比較したりできます。
 
 >[!IMPORTANT]
 >
