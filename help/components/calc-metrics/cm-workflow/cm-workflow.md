@@ -3,7 +3,7 @@ description: 計算指標の作成方法を説明します。
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 計算指標の作成
 
-デフォルトでは、計算指標を作成できるのは管理者のみです。 ユーザーには、他のコンポーネント（フィルター、注釈など）の表示方法と同様に、計算指標を表示する権限があります。
+デフォルトでは、計算指標を作成できるのは管理者のみです。 ユーザーには、他のコンポーネント（セグメント、注釈など）の表示方法と同様に、計算指標を表示する権限があります。
 
 ただし、管理者は、[Admin Console **[!UICONTROL を介して、]** CJA Workspace アクセスの権限の編集 **[!UICONTROL にある**[!UICONTROL  レポートツール ]**の]** 計算指標の作成 ](/help/technotes/access-control.md#user-level-access) 権限をユーザーに付与できます。
 

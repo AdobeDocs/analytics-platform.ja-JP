@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 1f21bec36f4c7d30940ed4bb95b097665a45b8ad
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -72,8 +72,8 @@ ht-degree: 15%
    | 作成方法 | 詳細 |
    | --- | --- |
    | **[!UICONTROL オーディエンス]** インターフェイス内から | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
-   | Analysis Workspaceのビジュアライゼーションから | Analysis Workspaceの多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。 例えば、**[!UICONTROL フリーフォームテーブル]** の項目のコンテキストメニューから [ オーディエンスを作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を選択したり、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) のノードを選択したりできます。<p>この方法を使用すると、オーディエンスビルダーのフィルターに、選択したディメンションまたはディメンション項目があらかじめ入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：** オーディエンスに計算指標を含めることはできません。 計算指標を含むオーディエンスを作成しようとしても、計算指標はオーディエンスの定義に含まれません。</p> |
-   | フィルターの作成／編集 UI から | 「**[!UICONTROL このフィルターからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、フィルターが事前に設定されます。 詳しくは、[ フィルターの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
+   | Analysis Workspaceのビジュアライゼーションから | Analysis Workspaceの多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。 例えば、**[!UICONTROL フリーフォームテーブル]** の項目のコンテキストメニューから [ オーディエンスを作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を選択したり、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) のノードを選択したりできます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：** オーディエンスに計算指標を含めることはできません。 計算指標を含むオーディエンスを作成しようとしても、計算指標はオーディエンスの定義に含まれません。</p> |
+   | セグメントの作成/編集 UI から | 「このセグメントからオーディエンスを作成 **[!UICONTROL というボックスをオンに]** ます。 この方法を使用すると、セグメントが事前設定されます。 詳しくは、[ フィルターの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
 
    {style="table-layout:auto"}
 
@@ -101,7 +101,7 @@ ht-degree: 15%
 | **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。 1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
 | **[!UICONTROL 説明]** | 他のオーディエンスと区別するための、オーディエンスの説明。 例：`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/>以下から選択できます <ul><li>**[!UICONTROL 1 回だけ]** オーディエンス：更新を必要としないオーディエンス（デフォルト）。 例えば、このオプションは、特定の 1 回限りのキャンペーンに役立ちます。<br/>1 回限りの日付範囲 **[!UICONTROL を指定する必要があり]** す。 ![ カレンダー ](/help/assets/icons/Calendar.svg) を使用して日付範囲を入力できます。</li><li>爽やかなオーディエンス。 選択できる項目は次のとおりです。<ul><li>**[!UICONTROL 4 時間ご]**: 4 時間ごとに更新されるオーディエンス。</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス。</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、次を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウを更新]**. オーディエンスが評価される、今日からのルックバック日数を定義します。 オプションから選択するか、カスタム時間を定義できます。 最大 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスが更新を停止するタイミングを定義します。 ![ カレンダー ](/help/assets/icons/Calendar.svg) を使用して日付を選択できます。 デフォルトは作成日の 1 年後です。有効期限が切れるオーディエンスは、予定レポートの有効期限が切れる場合と同様に扱われます。 管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul> Customer Journey Analyticsの使用権限に応じて、オーディエンスの更新回数には 75 から 150 の制限があります。</li></ul> |
-| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** パネルから 1 つ以上のフィルターをフィルター領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *検索フィルター*] を使用して、フィルターを検索できます。 最大 20 のフィルターを追加できます。フィルターは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子と結合させることができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルや列に適用されているフィルターはすべて保持されます。 自動的に適用されたフィルターを削除できます。</p> |
+| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメント ]**パネルから 1 つ以上のセグメントをセグメ**[!UICONTROL  ト領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *セグメントを検索*] を使用して、セグメントを検索できます。 最大 20 個のセグメントを追加できます。 セグメントは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子で結合することができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルまたは列に適用されているセグメントはすべて保持されます。 自動的に適用されたセグメントを削除できます。</p> |
 | **[!UICONTROL データのプレビュー]** | 「![ 情報 ](/help/assets/icons/Info.svg)」を選択すると、選択した日付範囲の [ データプレビュー ](#data-preview) の表示/非表示が切り替わります。 |
 
 ## データのプレビュー

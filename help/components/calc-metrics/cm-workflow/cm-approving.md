@@ -3,7 +3,7 @@ description: 計算指標マネージャ内では、様々なレベルのアプ�
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 22%
@@ -12,7 +12,7 @@ ht-degree: 22%
 
 # 計算指標の承認
 
-[ 計算指標マネージャー ](cm-manager.md) では、フィルターを承認および未承認できます。 計算指標を承認できるのは管理者のみです。
+[ 計算指標マネージャー ](cm-manager.md) では、セグメントの承認と未承認を行うことができます。 計算指標を承認できるのは管理者のみです。
 
 計算指標を承認するには：
 

@@ -3,7 +3,7 @@ description: 権限に応じて、指標を組織全体、グループまたは�
 title: 計算指標の共有
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 * 計算指標が特定のグループのユーザーにビジネス価値を提供する場合、管理者はそのグループと計算指標を共有します。
 
-* 管理者または個々のユーザーは、計算指標を 1 人以上の個人と共有して計算指標を検証します。 フィルターが役に立たなかった場合は、計算指標を削除できます。
+* 管理者または個々のユーザーは、計算指標を 1 人以上の個人と共有して計算指標を検証します。 セグメントが役に立つことが証明されない場合は、計算指標を削除できます。
 
 
 <!--

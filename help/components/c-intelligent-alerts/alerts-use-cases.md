@@ -3,22 +3,23 @@ description: アラートのユースケース。
 title: アラートのユースケース
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+exl-id: 3aa5e38e-fa19-40aa-a537-d4da529e1bc7
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 # アラートのユースケース
 
-「アラートの作成 [ の説明に従ってアラートを作成でき ](/help/components/c-intelligent-alerts/alert-builder.md) す。
+[アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md)で説明したように、アラートを作成できます。
 
-以下の節では、アラートを作成する際に考慮すべきユースケースの例を示します。
+次の節では、アラートを作成する際に考慮すべきユースケースの例を示します。
 
 ## アラートをフィルター
 
-フィルターを使用して、シンプルなアラートを作成できます。 例えば、モバイルアプリセッションを使用してホームページにアクセスする人のセッション数に関するアラートを定義します。
+セグメントを使用して、シンプルなアラートを作成できます。 例えば、モバイルアプリセッションを使用してホームページにアクセスする人のセッション数に関するアラートを定義します。
 
 
 ![](assets/alerts-example1.png)

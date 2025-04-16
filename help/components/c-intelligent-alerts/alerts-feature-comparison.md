@@ -1,12 +1,13 @@
 ---
-description: Adobe AnalyticsとのCustomer Journey Analyticsにおけるアラートの違いを説明します
-title: アラート機能の比較Customer Journey AnalyticsとAdobe Analytics
+description: Customer Journey AnalyticsとAdobe Analyticsのアラートの違いを説明します
+title: アラート機能のCustomer Journey AnalyticsとAdobe Analyticsの比較
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -14,21 +15,21 @@ ht-degree: 5%
 
 Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 ただし、重要な違いがあります。 以下の節では、主な違いについて説明します。
 
-## 時間別アラートは、Customer Journey Analyticsでは使用できません
+## Customer Journey Analyticsでは、時間別アラートを使用できません
 
-Adobe Analyticsとは異なり、時間別アラートはCustomer Journey Analyticsでは使用できません。 Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。
+Adobe Analyticsとは異なり、Customer Journey Analyticsでは 1 時間ごとのアラートは使用できません。 Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。
 
-これは、Customer Journey Analyticsでデータがレポートされる前に、データをAdobe Experience Platformに取り込む様々な方法があるためです。 データの完全性と可用性は 1 時間以内には確実に達成できないので、1 時間ごとのアラートは不完全なデータの可能性が高いため、実用的ではありません。 詳しくは、[ データ取り込み時間は様々 ](#data-ingestion-times-vary-in-customer-journey-analytics) を参照してください。
+これは、Customer Journey Analyticsでデータをレポートする前に、データをAdobe Experience Platformに取り込む様々な方法があるためです。 データの完全性と可用性は 1 時間以内には確実に達成できないので、1 時間ごとのアラートは不完全なデータの可能性が高いため、実用的ではありません。 詳しくは、[ データ取り込み時間は様々 ](#data-ingestion-times-vary-in-customer-journey-analytics) を参照してください。
 
-## データ取り込み時間のCustomer Journey Analyticsは様々です
+## Customer Journey Analyticsでのデータ取得時間は場合によって異なります
 
-データが完了し、Customer Journey Analyticsでレポートできる状態になるまでの時間は、組織によって異なります。
+データが完了し、Customer Journey Analyticsでレポートできるようになるまでの時間は、組織によって異なります。
 
 これは、次の理由によるものです。
 
 * あらゆる種類のデータスキーマおよびデータタイプを保持する Platform の機能
 
-  Web データのみをレポートするAdobe Analyticsとは異なり、[ 様々な種類のデータをAdobe Experience Platformに取り込んでCustomer Journey Analyticsでレポートする ](/help/data-ingestion/data-ingestion.md) ことができ、すべての種類のデータを順番にリアルタイムで送信できるわけではありません。
+  Web データのみをレポートするAdobe Analyticsとは異なり、[Adobe Experience Platformに様々な種類のデータを取り込んでCustomer Journey Analyticsでレポートする ](/help/data-ingestion/data-ingestion.md) ことができ、すべての種類のデータを順番にリアルタイムで送信できるわけではありません。
 
 * Platform データセットへのバッチデータの配信遅延
 
@@ -52,15 +53,8 @@ Adobe Analyticsでは、次のオプションを使用できます。
 
 * フリーフォームテーブルで 1 つ以上の行項目を選択し、右クリックして **[!UICONTROL 選択からアラートを作成]** を選択します。
 
-  これにより、アラートビルダーがすぐに事前設定され、適切な指標とフィルターを使用してアラートが作成されます。
+  これにより、アラートビルダーに即座に事前入力して、正しい指標とセグメントでアラートを作成できます。
 
-* Analysis Workspaceでプロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL アラートを作成]** を選択します。
+* Analysis Workspace でプロジェクトを開き、**[!UICONTROL コンポーネント]**／**[!UICONTROL アラートを作成]**&#x200B;を選択します。
 
 * Analysis Workspaceでプロジェクトを開き、ショートカットキー **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**（Windows）または**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** （macOS）を使用します。
-
-
-
-
-
-
-

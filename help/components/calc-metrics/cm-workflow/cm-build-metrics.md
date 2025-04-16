@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、フ�
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
@@ -31,21 +31,21 @@ ht-degree: 11%
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analyticsは、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成するためのキャンバスです。 この統合開発ツールでは、シンプルまたは複雑な計算指標を作成および保存できます。
+Customer Journey Analyticsは、ディメンション、指標、セグメントおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成するためのキャンバスです。 この統合開発ツールでは、シンプルまたは複雑な計算指標を作成および保存できます。
 
-## 計算指標の作成を開始
+## 計算指標の作成の開始
 
-計算指標ビルダーを使用して、計算指標を作成または編集できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。 または、[ 指標 ](/help/components/apply-create-metrics.md) の [ 単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) の説明に従って、計算指標が作成されたプロジェクトでのみ使用できる計算指標をすばやく作成することができます。
+計算指標ビルダーを使用して、計算指標を作成または編集できます。この方法で作成すると、コンポーネントリストで計算指標を使用できるようになります。このリストは、組織全体のプロジェクトで使用できます。または、[指標](/help/components/apply-create-metrics.md)の[単一プロジェクトの計算指標の作成](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)の説明に従って、作成されたプロジェクトでのみ使用可能な計算指標をすばやく作成することもできます。
 
 計算指標ビルダーにアクセスして、コンポーネントリストで使用できる計算指標の作成を開始します。
 
 1. 次のいずれかの方法で、計算指標ビルダーにアクセスします。
 
-   * Analysis Workspaceで、プロジェクトを開き、**[!UICONTROL コンポーネント]**/**[!UICONTROL 指標を作成]** を選択します。
-   * Analysis Workspaceでプロジェクトを開き、左パネルの **指標** セクションの横にある [!UICONTROL **プラス**] アイコンを選択します。
-   * [!DNL Customer Journey Analytics] で、**[!UICONTROL コンポーネント]**/**[!UICONTROL 計算指標]** に移動し、計算指標ページの上部にある「**[!UICONTROL +追加]**」を選択します。
+   * Analysis Workspace で、プロジェクトを開いて、**[!UICONTROL コンポーネント]**／**[!UICONTROL 指標を作成]**&#x200B;を選択します。
+   * Analysis Workspace でプロジェクトを開き、左側のパネルの「[!UICONTROL **指標**]」セクションの横にある&#x200B;**プラス**&#x200B;アイコンを選択します。
+   * [!DNL Customer Journey Analytics] で、**[!UICONTROL コンポーネント]**／**[!UICONTROL 計算指標]**&#x200B;に移動し、計算指標ページの上部にある「**[!UICONTROL + 追加]**」を選択します。
 
-1. [ 計算指標ビルダーの領域 ](#areas-of-the-calculated-metrics-builder) に進みます。
+1. [計算指標ビルダーの領域](#areas-of-the-calculated-metrics-builder)に進みます。
 
 ## 計算指標ビルダーのエリア
 
@@ -71,7 +71,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
    | **[!UICONTROL プロジェクトのみの指標]** | 単一プロジェクト用に作成された計算指標を編集すると、このダイアログの上部に情報ボックスが表示されます。詳しくは、[ 単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) を参照してください。 <p>この計算指標をすべてのプロジェクトで使用できるようにする場合は、「この指標をすべてのプロジェクトで使用できるようにする **[!UICONTROL というオプションを選択し、コンポーネントリストに追加します]**。</p> |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
    | **[!UICONTROL 外部 ID]** ![ 必須 ](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する場合の計算指標の名前。 値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
-   | **[!UICONTROL 説明]** | フィルターの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能なので、説明する必要はありません。 |
+   | **[!UICONTROL 説明]** | セグメントの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能になっているので、説明する必要はありません。 |
    | **[!UICONTROL 形式]** | 計算指標の形式の選択：**[!UICONTROL 小数]**、**[!UICONTROL 時間]**、**[!UICONTROL パーセント]**、**[!UICONTROL 通貨]** から選択できます。 |
    | **[!UICONTROL 小数点以下の桁数]** | 選択した書式の小数点以下の桁数を指定します。 選択した形式が小数、通貨、パーセントの場合にのみ有効です。 |
    | **[!UICONTROL 上昇傾向を次の形式で表示]** | 計算指標の上昇傾向を▲ **** 良（緑）または▼**[!UICONTROL 悪（赤）]** のいずれで表示すかを指定します。 |
@@ -79,7 +79,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
    | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、計算指標を整理します。 入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
    | **[!UICONTROL プレビュー]** | プレビューは過去 90 日間をカバーしており、指標が正しく定義されているかどうかを判断するための手段となります。 |
    | **[!UICONTROL 概要]** | 計算指標の定義の概要を表示します。 <br/> 例：![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 合計注文数]** ![ 除算 ](/help/assets/icons/Divide.svg) ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL セッション]**。 |
-   | **[!UICONTROL 定義]** ![ 必須 ](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してフィルターを定義します。 |
+   | **[!UICONTROL 定義]** ![ 必須 ](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してセグメントを定義します。 |
 
 1. 計算指標の定義が正しいかどうかを確認するには、計算指標の結果の絶えず更新される **[!UICONTROL プレビュー]** を使用します。 **[!UICONTROL プレビュー]** は過去 90 日間をカバーし、計算指標の定義を継続的に評価します。
 
@@ -95,7 +95,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 ## 定義ビルダー
 
-定義ビルダーを使用して、ディメンション、指標、フィルターおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成します。 この構成では、標準指標、Adobe定義の指標、計算指標、フィルター、ディメンションおよび関数を使用できます。 これらのすべてのコンポーネントは、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、定義内で演算子やコンテナを使用できます。
+定義ビルダーを使用して、ディメンション、指標、セグメントおよび関数をドラッグ&amp;ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成します。 この構成では、標準指標、Adobe定義の指標、計算指標、セグメント、ディメンションおよび関数を使用できます。 これらのすべてのコンポーネントは、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、定義内で演算子やコンテナを使用できます。
 
 ![ 計算指標を作成 ](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -105,7 +105,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 指標を追加するには：
 
-* コンポーネントパネルから ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 指標]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+* コンポーネントパネルから ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 指標]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
 
 定義の一部として計算指標を使用すると、計算指標が展開されます。
 
@@ -146,41 +146,41 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 ### コンテナ
 
-ディメンション、フィルターおよび関数をコンテナとして計算指標の定義に追加します。 汎用のコンテナを追加することもできます。 コンテナは数式のように機能し、演算の順序を指定します。コンテナ内の処理はすべて、次のコンポーネントまたはコンテナの前に行われます。
+ディメンション、セグメントおよび関数をコンテナとして計算指標の定義に追加します。 汎用のコンテナを追加することもできます。 コンテナは数式のように機能し、演算の順序を指定します。コンテナ内の処理はすべて、次のコンポーネントまたはコンテナの前に行われます。
 
 
-#### フィルターコンテナ
+#### セグメントコンテナ
 
-フィルターコンテナの概念を使用して、[ フィルターされた指標 ](metrics-with-segments.md) を作成します。 フィルターを使用するか、ディメンションから作成したフィルターを使用して、フィルターコンテナを作成できます。
+セグメントコンテナの概念を使用して、[ セグメント化指標 ](metrics-with-segments.md) を作成します。 セグメントを使用するか、ディメンションから作成したセグメントを使用して、セグメントコンテナを作成できます。
 
-* ディメンションからフィルターコンテナを追加するには：
+* ディメンションからセグメントコンテナを追加するには：
 
-   1. コンポーネントパネルから ![ ディメンション ](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
-   1. **[!UICONTROL Dimensionからフィルターを作成]** ポップアップで、フィルターの条件を定義します。 演算子のリストから選択し、値を選択するか、値を入力します。 例えば、**[!UICONTROL Month]****[!UICONTROL equals]**![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` です。
-   1. 「**[!UICONTROL 完了]**」を選択します。 フィルターコンテナが **[!UICONTROL 定義]** に追加されます。
+   1. コンポーネントパネルから ![ ディメンション ](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]** コンポーネントをコンポーネントパネルにドラッグ&amp;ドロップします **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップします]**。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+   1. **[!UICONTROL Dimensionからフィルターを作成]** ポップアップで、セグメントの条件を定義します。 演算子のリストから選択し、値を選択するか、値を入力します。 例えば、**[!UICONTROL Month]****[!UICONTROL equals]**![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` です。
+   1. 「**[!UICONTROL 完了]**」を選択します。 セグメントコンテナが **[!UICONTROL 定義]** に追加されます。
 
 
-* フィルターからフィルターコンテナを追加するには、次を使用できます。
+* セグメントからセグメントコンテナを追加するには、次を使用できます。
 
-   * コンポーネントパネルから ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のフィルターを検索できます。
-自動的にフィルターコンテナが、フィルターの名前を使用して **[!UICONTROL 定義]** に追加されます。
+   * コンポーネントパネルから ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL セグメント]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
+セグメントコンテナが、セグメントの名前を使用して、自動的に **[!UICONTROL 定義]** に追加されます。
 
-   * ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントをコンポーネントパネルから汎用コンテナにドラッグ&amp;ドロップします。 コンテナがフィルターコンテナに変更されます。
+   * ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントをコンポーネントパネルから汎用コンテナにドラッグ&amp;ドロップします。 コンテナがセグメントコンテナに変更されます。
 
    * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します。
 
-      1. **[!UICONTROL フィルター]** を選択します。 フィルターコンテナが **[!UICONTROL 定義]** に追加されます。
-      1. 新しいフィルターコンテナで、「[!UICONTROL *選択…*]」ドロップダウンメニューからフィルターを選択します。
+      1. **[!UICONTROL フィルター]** を選択します。 セグメントコンテナが **[!UICONTROL 定義]** に追加されます。
+      1. 新しいセグメントコンテナで、「[!UICONTROL *選択…*]」ドロップダウンメニューからセグメントを選択します。
 
   >[!TIP]
   >
-  >コンテナには複数のフィルターを追加できます。
+  >1 つのコンテナに複数のセグメントを追加できます。
 
-  コンテナ内のフィルターは、フィルターコンポーネントに従って名前が付けられます。 例えば、![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL web セッション]** などです。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、フィルターの詳細を含むポップアップが表示されます。 ポップアップで、「![ 編集 ](/help/assets/icons/Edit.svg) を選択して、フィルター定義を編集します。
+  コンテナ内のセグメントには、セグメントコンポーネントに従って名前が付けられます。 例えば、![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL web セッション]** などです。 「![ 情報アウトライン ](/help/assets/icons/InfoOutline.svg)」を選択すると、セグメントの詳細を示すポップアップが表示されます。 ポップアップで、「![ 編集 ](/help/assets/icons/Edit.svg) を選択して、セグメント定義を編集します。
 
-コンテナからフィルターを削除するには：
+コンテナからセグメントを削除するには：
 
-* フィルター名の横にある「![ 閉じる ](/help/assets/icons/Close.svg)」を選択します。
+* セグメント名の横にある「![ 閉じる ](/help/assets/icons/Close.svg)」を選択します。
 
 詳細と例については、「[ フィルター適用済み指標 ](metrics-with-segments.md)」を参照してください。
 
@@ -190,7 +190,7 @@ Customer Journey Analyticsは、ディメンション、指標、フィルター
 
 * ドラッグ アンド ドロップ：
 
-   1. コンポーネントパネルから ![ 関数 ](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定の関数を検索できます。
+   1. コンポーネントパネルから ![ 関数 ](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定の関数を検索できます。
    1. 自動的に、関数の名前を使用して、関数コンテナが **[!UICONTROL 定義]** に追加されます。
 
 * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Add]** を選択します。
