@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
+source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1760'
 ht-degree: 10%
 
 ---
@@ -53,14 +53,23 @@ ht-degree: 10%
 | プロジェクトごとのパネル数 | 15 | システム強制ガードレール | プロジェクトあたりの最大 [ パネル ](../analysis-workspace/home.md#panels) 数。 |
 | パネルごとのビジュアライゼーション | 25 | システム強制ガードレール | パネルあたりの [ ビジュアライゼーション ](../analysis-workspace/home.md#visualizations) の最大数。 |
 | フリーフォームテーブルごとの派生フィールド | 5 | システム強制ガードレール | 1 つのフリーフォームテーブルでの異なる派生フィールドの最大数。 |
-| プロジェクトごとのコメント | 1,000 | システム強制ガードレール | プロジェクトごとの最大コメント数。 |
-| コメントごとの返信 | 100 | システム強制ガードレール | コメントあたりの最大返信数。 |
-| コメントあたりの画像の数 | 5 | システム強制ガードレール | コメントあたりの最大画像数。 |
-| 画像サイズ | 2 | システム強制ガードレール | 画像あたりの最大アップロードサイズ （MB 単位） |
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -69,7 +78,6 @@ ht-degree: 10%
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## オーディエンス
