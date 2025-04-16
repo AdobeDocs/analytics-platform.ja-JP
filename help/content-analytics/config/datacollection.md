@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
+source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-この記事では、コンテンツ分析でデータを収集する方法について詳しく説明します
+この記事では、Content Analyticsによるデータの収集方法について詳しく説明します
 
 
 ## 定義
