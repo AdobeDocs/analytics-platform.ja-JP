@@ -4,10 +4,10 @@ title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 99%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -65,6 +65,15 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="コメントを許可"
+>abstract="有効になっている場合、Analysis Workspaceのプロジェクトの右側のパネルでコメント領域が使用できます。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 プロジェクト設定は、現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
 
@@ -83,6 +92,7 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
 | [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットを変更するには、色弱のユーザー向け用に最適化されている既定のパレットを選択するか、カスタムパレットを指定します。この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
 | [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 |
+| コメントを許可 | このオプションを有効にすると、Analysis Workspaceのプロジェクトの右側のパネルにコメント領域が表示されます。 詳しくは、[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。 |
 
 
 

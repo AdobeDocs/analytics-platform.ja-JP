@@ -1,20 +1,20 @@
 ---
-title: Customer Journey Analyticsガードレール
+title: Customer Journey Analytics ガードレール
 description: Customer Journey Analyticsのガードレールについて学ぶ
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
+source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1808'
 ht-degree: 10%
 
 ---
 
-# Customer Journey Analyticsガードレール
+# Customer Journey Analytics ガードレール
 
-このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに対する制限について説明します。 ガードレール、スコーピングパラメーター、使用権限については、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) または [Adobe Analytics アドオンの製品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) を参照してください。
+このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに対して制限を提供します。 ガードレール、スコーピングパラメーター、使用権限については、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) または [Adobe Analytics アドオンの製品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) を参照してください。
 
 ## 上限のタイプ
 
@@ -23,11 +23,11 @@ ht-degree: 10%
 | ガードレール タイプ | 説明 |
 |----------|---------|
 | **パフォーマンスガードレール（ソフトリミット）** | パフォーマンスガードレールは、ユースケースのスコーピングに関連する使用制限です。 パフォーマンスのガードレールを超えると、パフォーマンスの低下や待ち時間が発生する場合があります。 Adobeは、このようなパフォーマンス低下に対する責任を負いません。 パフォーマンスのガードレールを一貫して超えるお客様は、パフォーマンスの低下を避けるために、追加容量のライセンスを選択できます。 |
-| **システム適用ガードレール（ハードリミット）** | システムで適用されるガードレールは、Customer Journey AnalyticsUI または API で適用されます。 これらは、UI および API によってブロックされるか、エラーが返されるので、を超えることはできません。 |
+| **システム適用ガードレール（ハードリミット）** | システムで適用されるガードレールは、Customer Journey Analytics UI または API で適用されます。 これらは、UI および API によってブロックされるか、エラーが返されるので、を超えることはできません。 |
 
 {style="table-layout:auto"}
 
-一部の機能とそれに関連する制限値は、使用資格のあるCustomer Journey Analyticsパッケージによって異なります。
+一部の機能とそれに関連する制限値は、使用資格のあるCustomer Journey Analytics パッケージに応じて異なります。
 
 >[!NOTE]
 >
@@ -53,6 +53,10 @@ ht-degree: 10%
 | プロジェクトごとのパネル数 | 15 | システム強制ガードレール | プロジェクトあたりの最大 [ パネル ](../analysis-workspace/home.md#panels) 数。 |
 | パネルごとのビジュアライゼーション | 25 | システム強制ガードレール | パネルあたりの [ ビジュアライゼーション ](../analysis-workspace/home.md#visualizations) の最大数。 |
 | フリーフォームテーブルごとの派生フィールド | 5 | システム強制ガードレール | 1 つのフリーフォームテーブルでの異なる派生フィールドの最大数。 |
+| プロジェクトごとのコメント | 1,000 | システム強制ガードレール | プロジェクトごとの最大コメント数。 |
+| コメントごとの返信 | 100 | システム強制ガードレール | コメントあたりの最大返信数。 |
+| コメントあたりの画像の数 | 5 | システム強制ガードレール | コメントあたりの最大画像数。 |
+| 画像サイズ | 2 | システム強制ガードレール | 画像あたりの最大アップロードサイズ （MB 単位） |
 
 {style="table-layout:auto"}
 
@@ -77,11 +81,11 @@ ht-degree: 10%
 | オーディエンスの更新頻度 | 4 | システム強制ガードレール | [ オーディエンス ](../components/audiences/audiences-overview.md) が更新される最大頻度（時間単位）です。 |
 | オーディエンス更新ルックバックウィンドウ | 90 | システム強制ガードレール | 更新ルックバックウィンドウの最大日数です。 |
 | オーディエンスの有効期限を更新中 | 13 | システム強制ガードレール | オーディエンスが作成日から更新されなくなる最大月数。 お客様は、この機能をさらに 13 か月間延長できます。 |
-| オーディエンスの更新数 | 75、150 | システム強制ガードレール | 更新するオーディエンスの最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| オーディエンスの更新数 | 75、150 | システム強制ガードレール | 更新するオーディエンスの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 
 {style="table-layout:auto"}
 
-Experience Platformー [Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) も参照してください。
+Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ja) も参照してください。
 
 
 ## データセットの自動有効期限
@@ -100,7 +104,7 @@ Experience Platformー [Real-time Customer Data Platform ガードレール ](ht
 |---|--:|---|---|
 | プロジェクト | 50,000 | システム強制ガードレール | 組織のプロジェクトの最大数。 |
 | データビュー | 2,000 | システム強制ガードレール | 組織の [ データビュー ](../data-views/data-views.md) の最大数。 |
-| データビュー | 500-1000 | システム強制ガードレール | 接続のデータビューの最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| データビュー | 500-1000 | システム強制ガードレール | 接続のデータビューの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 | データセット | 100 | システム強制ガードレール | 接続あたりの最大 [ データセット ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ja) 数。 |
 | 接続 | 1000 | システム強制ガードレール | 組織の [ 接続 ](../connections/overview.md) の最大数。 |
 | 接続タイトル | 500 | システム強制ガードレール | 接続タイトルの最大文字数。 |
@@ -110,7 +114,7 @@ Experience Platformー [Real-time Customer Data Platform ガードレール ](ht
 | 注釈の説明 | 250 | システム強制ガードレール | 注釈の説明の最大文字数。 |
 | スキーマフィールド | 10 | システム強制ガードレール | [ 派生フィールド ](../data-views/derived-fields/derived-fields.md) のルールを定義する際のスキーマフィールドの最大数（標準フィールドを除く）。 |
 | ルックアップ/プロファイルフィールド | 3 | システム強制ガードレール | 派生フィールドのルールを定義する際の、スキーマフィールドの最大数（標準フィールドを除く）内の参照またはプロファイルスキーマフィールドの最大数。 |
-| 派生フィールド | 100～500 | システム強制ガードレール | 接続あたりの派生フィールドの最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| 派生フィールド | 100～500 | システム強制ガードレール | 接続あたりの派生フィールドの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 
 {style="table-layout:auto"}
 
@@ -122,7 +126,7 @@ Experience Platformー [Real-time Customer Data Platform ガードレール ](ht
 | フィールド | 10,000 | システム強制ガードレール | データセットの 1 行あたりのプロパティまたはフィールドの最大数。 |
 | 一意の文字列 | 10 百万 | システム強制ガードレール | ルックアップデータセットあたりの一意のキーの最大数。 |
 | 行 | 100 万 | システム強制ガードレール | 接続内の特定の月における一意のユーザー ID あたりの最大行数。 |
-| 行サイズ | 2 | パフォーマンスガードレール/システム適用ガードレール | Customer Journey Analyticsに取り込まれるデータの行あたりの平均サイズ（キロバイト単位）（ソフトリミット）。 行サイズの静的制限は、Experience Platformのデータ取り込み用のガードレールによって決定されます。 |
+| 行サイズ | 2 | パフォーマンスガードレール/システム適用ガードレール | Customer Journey Analyticsに取り込まれるデータの行あたりの平均サイズ（キロバイト単位）です（ソフトリミット）。 行サイズの静的制限は、Experience Platformでのデータ取り込みのガードレールによって決定されます。 |
 
 {style="table-layout:auto"}
 
@@ -134,7 +138,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
 | データの書き出し | 許可された Data Lake ストレージの合計 | パフォーマンスガードレール | お客様は、宛先データセットの書き出しを使用して、許可されたデータレイクストレージの合計に達するまで、データレイクの顧客データを書き出すことができます。 |
-| 使用可能なデータセット | プロファイルとイベント | システム強制ガードレール | ソース、Web SDK、Mobile SDK、Analytics Data Connector およびAudience Managerからデータを取り込んだり収集した後、Experience PlatformUI で作成されたイベント、プロファイル、参照データセット。 |
+| 使用可能なデータセット | プロファイルとイベント | システム強制ガードレール | ソース、Web SDK、Mobile SDK、Analytics Data Connector およびAudience Managerを使用してデータを取り込みまたは収集した後、Experience Platform UI で作成されたイベント、プロファイルまたは参照データセット。 |
 
 {style="table-layout:auto"}
 
@@ -155,9 +159,9 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| ステッチされたデータセット | 5～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
-| バックフィルの長さ | 6 - 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
-| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| ステッチされたデータセット | 5～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| バックフィルの長さ | 6 - 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 
 {style="table-layout:auto"}
 
@@ -166,9 +170,9 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| ステッチされたデータセット | 10～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
-| バックフィルの長さ | 13 ～ 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
-| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| ステッチされたデータセット | 10～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| バックフィルの長さ | 13 ～ 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 
 
 ## フィルターと計算指標
@@ -177,7 +181,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 |---|--:|---|---|
 | フィルターごとのコンテナ | 50 | システム強制ガードレール | フィルターあたりの最大コンテナ数。 |
 | 計算指標あたりの指標 | 25 | システム強制ガードレール | 計算指標あたりの最大指標の数。 |
-| フィルターごとの指標とDimension | 25 | システム強制ガードレール | フィルターごとの一意の指標とディメンションの最大数。 |
+| フィルターごとの指標とディメンション | 25 | システム強制ガードレール | フィルターごとの一意の指標とディメンションの最大数。 |
 | フィルターごとのネストされたコンテナ | 10 | システム強制ガードレール | フィルターあたりのネストされたコンテナの最大数。 |
 | フィルターごとのルール | 100 | システム強制ガードレール | フィルターごとの最大ルール数。 |
 | フィルターごとのDimensionごとの文字列比較 | 100 | システム強制ガードレール | フィルターごとのディメンションごとの文字列比較の最大数。 |
@@ -215,7 +219,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| レポートあたりの行数 | 300 万～ 3 億 | システム強制ガードレール | レポートあたりのレポート行の最大数。 値は、Customer Journey Analyticsパッケージによって異なります（製品説明を参照）。 |
+| レポートあたりの行数 | 300 万～ 3 億 | システム強制ガードレール | レポートあたりのレポート行の最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 | テーブルごとの分類 | 5 | システム強制ガードレール | テーブルあたりの分類の最大数。 |
 | テーブルあたりの指標 | 5 | システム強制ガードレール | テーブルあたりの最大指標の数。 |
 | スケジュール頻度 | 1 | システム強制ガードレール | 書き出しは、1 日に 1 回（1）または長いスケジュール（例：2 日ごとに 1 回、毎週）でスケジュールできます。 |
@@ -233,9 +237,9 @@ Experience Platform[ データセット書き出しガードレール ](https://
 | Adobe Analytics/Adobe Analytics Source コネクタ（A4T 対応） | &lt; 30 分 |
 | Adobe Analytics Source Connector からリアルタイム顧客プロファイルへ（A4T が無効） | &lt; 2 分 |
 | Adobe Analytics Source Connector からリアルタイム顧客プロファイルへ（A4T 対応） | &lt; 30 分 |
-| Edge Networkまたはストリーミング取得からのデータレイクへのデータ取得 | &lt; 60 分 |
+| Edge Networkまたはストリーミング取り込みからのデータレイクへのデータ取り込み | &lt; 60 分 |
 | Adobe Analytics Source コネクタからのデータレイクへのデータ取り込み | &lt; 2.25 時間 |
-| データレイクからCustomer Journey Analyticsへのデータ取り込み | &lt; 90 分 |
+| Data Lake からCustomer Journey Analyticsへのデータ取り込み | &lt; 90 分 |
 | ステッチ（オプション機能。詳しくは [ ステッチの概要 ](../stitching/overview.md) を参照してください） | &lt; 4 時間 |
 | Adobe Analytics Source コネクタのバックフィルが 100 億未満のイベント（最大 13 か月分の履歴データ） | &lt; 4 週間 |
 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | ≈ 60 分 |

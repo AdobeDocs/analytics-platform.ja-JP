@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 60074b300cb5fa07ed3b2d6bb2e4501881909984
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 77%
+source-wordcount: '3931'
+ht-degree: 74%
 
 ---
 
@@ -40,16 +40,10 @@ ht-degree: 77%
 
 ### IMS 組織の環境設定 {#ims-organization-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_shareonlyworkspace"
 >title="Workspace ユーザーとのみ共有を許可"
 >abstract="有効にすると、ユーザーは Analysis Workspace プロジェクトを共有する際に、「**[!UICONTROL 任意のユーザーと共有]**」オプションを使用できなくなります。以前にこの共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、プロジェクトにアクセスできなくなります。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
@@ -58,47 +52,41 @@ ht-degree: 77%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_projectcommenting"
+>title="プロジェクトへのコメントを許可"
+>abstract="有効になっている場合、Analysis Workspaceの各プロジェクトの右側のパネルにコメント領域が表示されます。"
+
+<!-- markdownlint-enable MD034 -->
 
 組織内のすべてのユーザーとプロジェクトに適用される会社環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「**[!UICONTROL &#x200B;リンクがアクティブです&#x200B;]**」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
-| | Experience Cloud 認証を要求 | 有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」*オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
+| | Experience Cloud 認証を要求 | このオプションが有効な場合、Analysis Workspaceの「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」*オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| **プロジェクトのコメント機能** | | |
+| | プロジェクトへのコメントを許可 | このオプションを有効にすると、Analysis Workspaceの各プロジェクトの右側のパネルにコメント領域が表示されます。 <p>[ プロジェクトの作成 ](/help/analysis-workspace/build-workspace-project/create-projects.md) で説明しているように、プロジェクト所有者は特定のプロジェクトのコメント領域を無効にすることができます。</p> <p>Analysis Workspace プロジェクトへのコメントの詳細については、「[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。</p> |
 
 {style="table-layout:auto"}
 
 ### プロジェクトと分析の環境設定 {#project-and-analysis-preferences}
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_categoricalpalette"
 >title="カテゴリ順パレット"
 >abstract="Analysis Workspace およびガイド付き分析の多くのビジュアライゼーションに適用されます。各カラーは、個別のカテゴリ値を表します。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_divergingpalette"
 >title="分岐パレット"
 >abstract="Analysis Workspace およびユーザーの増加率のガイド付き分析のコホートテーブルに適用されます。このパレットは、2 つの極値と中央のベースラインの数値的意味を保持します。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
 >title="順次パレット"
 >abstract="頻度トレンド（積み重ね横棒グラフ）ガイド付き分析に適用されます。このパレットは、明から暗までの数値的意味を保持します。"
-
-<!-- markdownlint-enable MD034 -->
-
 
 すべての新しい Analysis Workspace プロジェクト、新しい Analysis Workspace パネルおよび新しいガイド付き分析に対して、これらの環境設定をカスタマイズできます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
@@ -121,34 +109,21 @@ ht-degree: 77%
 
 ### フリーフォームテーブルの環境設定 {#freeform-table-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showanomalies"
 >title="異常値を表示"
 >abstract="「**[!UICONTROL 異常を表示]**」を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列で、異常値検出が自動的に実行されるようになります。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showforecast"
 >title="予測を表示"
 >abstract="「**[!UICONTROL 予測を表示]**」を選択すると、時系列のフリーフォームテーブルビジュアライゼーションに追加された最初の指標列が、自動的に予測されるようになります。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="デフォルトのテーブル指標"
 >abstract="フリーフォームテーブルに使用するデフォルトの指標を選択します。選択したデータビューに選択したデフォルトの指標が含まれていない場合、テーブルは自動的に別のプライマリ指標に切り替わります。"
-
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Analysis Workspace で作成するすべての新しいプロジェクトについて、フリーフォームテーブルの環境設定をカスタマイズできます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
@@ -250,16 +225,16 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 比較を表示 | 比較データを表示します。非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
 | | 数値オプション | [!UICONTROL **主要指標の概要**]&#x200B;セクション内 <ul><li>変化率を表示</li><li>生の差異を表示</li>プライマリ日付範囲とセカンダリ日付範囲で、指標の合計値の生の差異を表示または非表示</ul> |
 | **[フォールアウト](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | コンテナ | **[!UICONTROL セッション]** と **[!UICONTROL 人物]** を切り替えて、パスを分析できます。 これらの設定は、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
+| | コンテナ | パスを分析するコンテナを選択します。 優先コンテナは、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | **[フロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | コンテナ | **[!UICONTROL フロー]** セクションで以下を実行します。 <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
+| | コンテナ | 分析する優先コンテナを選択します。 優先コンテナは、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | | ラベルの折り返し | 通常、フロー要素のラベルは、画面の領域を節約するために切り捨てられます。しかし、このチェックボックスをオンにすることで完全なラベルを表示できます（デフォルト = オフ）。 |
 | | 繰り返しインスタンスを含める | フロービジュアライゼーションは、ディメンションのインスタンスに基づいています。この設定により、ページのリロードなど、繰り返し発生するインスタンスを含めるか除外するかを選択できます。ただし、listVar、listProp、s.product、マーチャンダイジング eVar など複数の値を持つディメンションを含むフロービジュアライゼーションから、繰り返しを削除することはできません。（デフォルト = オフ）。 |
 | | ツールチップを表示 | フロービジュアライゼーション内の個々のノードにカーソルを合わせたときに、ノードデータを含むツールチップを表示するかどうかを決定します。 |
 | | 列の数 | フロー図で必要な列数を決定します。 |
 | | 列ごとに展開される項目数 | 各列に必要な項目数。 |
 | **[ジャーニー キャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
-| | コンテナ | **[!UICONTROL セッション]** と **[!UICONTROL 人物]** を切り替えて、パスを分析できます。 デフォルトは「**[!UICONTROL ユーザー]**」です。これらの設定は、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
+| | コンテナ | パスを分析するコンテナを選択します。 優先コンテナは、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | **積み重ねグラフ** | | |
 | | 100% の積み重ね | 積み上げ面、積み上げ棒、または積み上げ横棒のビジュアライゼーションのこの設定は、グラフを「100 % の積み上げ」のビジュアライゼーションに変更します。 <p>詳しくは、[ 棒グラフおよび積み重ね棒グラフ ](/help/analysis-workspace/visualizations/bar.md) を参照してください。</p> |
 | **[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)** | | |
