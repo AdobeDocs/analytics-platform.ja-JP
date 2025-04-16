@@ -1,5 +1,5 @@
 ---
-source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 19%
@@ -236,7 +236,7 @@ ht-degree: 19%
 
 >[!AVAILABILITY]
 >
->この記事で説明されている機能、および [!BADGE B2B edition]{type=Informative} のバッジが付いたその他の記事または機能。  はリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 <br/> また、[!BADGE B2B edition]{type=Informative} の機能と [!BADGE B2B edition]{type=Informative} のドキュメントは変更される可能性があり、そこから法的義務を導き出すことはできません。<br/> 機能が一般入手可能になったら、このメモは削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。
+>この記事で説明されている機能と、[!BADGE B2B edition]{type=Informative} のバッジが付いているその他の記事または機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 <br/> また、[!BADGE B2B edition]{type=Informative} の機能と [!BADGE B2B edition]{type=Informative} のドキュメントは変更される可能性があり、そこから法的義務を導き出すことはできません。<br/> 機能が一般入手可能になったら、このメモは削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。
 >
 
 
