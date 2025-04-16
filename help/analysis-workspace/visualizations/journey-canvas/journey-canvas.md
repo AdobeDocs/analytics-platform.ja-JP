@@ -4,10 +4,10 @@ title: ジャーニーキャンバス
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="ジャーニーキャンバス"
->abstract="人物が定義されたジャーニーを通過またはフォールアウトする仕組みを分析します。イベント、ディメンション項目およびフィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成して、ユーザージャーニーの分析を作成します。キャンバス上でノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。これを行うと、それに応じてデータが更新されます。<br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます。"
+>abstract="人物が定義されたジャーニーを通過またはフォールアウトする仕組みを分析します。イベント、ディメンション項目、セグメントの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成することで、ユーザージャーニーの分析を構築します。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 これを行うと、それに応じてデータが更新されます。<br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="ジャーニーキャンバス"
->abstract="人物が定義されたジャーニーを通過またはフォールアウトする仕組みを分析します。イベント、ディメンション項目およびフィルターの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成して、ユーザージャーニーの分析を作成します。キャンバス上でノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。これを行うと、それに応じてデータが更新されます。<br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます。"
+>abstract="人物が定義されたジャーニーを通過またはフォールアウトする仕組みを分析します。イベント、ディメンション項目、セグメントの任意の組み合わせを表すノードと矢印の柔軟なグラフを作成することで、ユーザージャーニーの分析を構築します。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 これを行うと、それに応じてデータが更新されます。<br/><br/>Adobe Journey Optimizerへのアクセス権を持つお客様は、既存のJourney Optimizer ジャーニーを分析できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ _この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics*
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。 ジャーニーを一から定義したり、Journey Optimizerからジャーニーを表示して、ジャーニー内でのユーザーの離脱や継続の様子を確認できます。
 
-イベント、ディメンション項目、フィルター、日付範囲を任意に組み合わせて ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、[ ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 変更を加えると、データがリアルタイムで更新されます。
+イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせて ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、[ ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上でノードをドラッグして、ジャーニーのイベントや条件を並べ替えます。 変更を加えると、データがリアルタイムで更新されます。
 
 [ ノードは「最終的なパス」として接続されます。つまり ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)2 つのノード間でイベントが発生しても、最終的にノード間で移動する限り、訪問者はカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナ設定によって決定されます。
 
@@ -170,7 +170,7 @@ _この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics*
 
 ジャーニーキャンバスを使用して、Journey Optimizerで作成されたジャーニーを分析すると、次のような様々な利点があります。
 
-* 任意のCustomer Journey Analytics ディメンション、指標、フィルターまたは日付範囲を使用して、イベントを作成します。
+* 任意のCustomer Journey Analytics ディメンション、指標、セグメントまたは日付範囲を使用してイベントを作成します。
 
   Journey Optimizerでは、テクニカルユーザーは、ジャーニーに追加する前にイベントを作成する必要があります。
 
