@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '913'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 次のコンポーネントを管理できます。
 
-* [フィルター](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスフィルターを作成、管理、共有し、レポートに適用します。フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
+* [ セグメント ](filters/filters-overview.md)：焦点を当てた強力なオーディエンスセグメントを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
 * [計算指標](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
 * [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
 * [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
@@ -36,7 +36,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 ## Analysis Workspace のコンポーネント
 
-Analysis Workspace のコンポーネントは、Workspace プロジェクトのパネルやビジュアライゼーションにドラッグ＆ドロップできる指標、ディメンション、フィルター、日付範囲で構成されています。計算指標やカスタム日付範囲など、作成するカスタムコンポーネントがこれらのパネルに追加されます。
+Analysis Workspaceのコンポーネントは、Workspace プロジェクトのパネルおよびビジュアライゼーションにドラッグ&amp;ドロップできる指標、ディメンション、セグメントおよび日付範囲で構成されています。 計算指標やカスタム日付範囲など、作成するカスタムコンポーネントがこれらのパネルに追加されます。
 
 コンポーネントパネルにアクセスするには、ボタンパネル内の![キュレート](/help/assets/icons/Curate.svg)／**[!UICONTROL コンポーネント]**&#x200B;を選択します。
 
@@ -69,10 +69,10 @@ Analysis Workspace の&#x200B;**[!UICONTROL コンポーネント]**&#x200B;メ�
    | ![星](/help/assets/icons/Star.svg)、[!UICONTROL **お気に入り**] | コンポーネントをお気に入りのリストに追加します。タグと同様に、左パネルのお気に入りで検索し、コンポーネントマネージャーでフィルタリングできます。 |
    | ![StarOutline](/help/assets/icons/StarOutline.svg)、**[!UICONTROL お気に入りを解除]** | コンポーネントをお気に入りのリストから削除します。 |
    | ![チェックマーク](/help/assets/icons/Checkmark.svg)、[!UICONTROL **承認**] | コンポーネントを「承認済み」とマークして、コンポーネントが組織で承認されていることをユーザーに知らせます。 タグと同様に、左パネルで「承認済み」で検索してフィルタリングできます。![チェックマーク](/help/assets/icons/Checkmark.svg)は、承認済みのコンポーネントを識別します。 |
-   | ![共有](/help/assets/icons/ShareAlt.svg)、[!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
-   | ![削除](/help/assets/icons/Delete.svg)、[!UICONTROL **削除**] | 不要になったコンポーネントを削除します。このオプションは、フィルターや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | ![共有](/help/assets/icons/ShareAlt.svg)、[!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
+   | ![削除](/help/assets/icons/Delete.svg)、[!UICONTROL **削除**] | 不要になったコンポーネントを削除します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
-また、カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理できます。例えば、[フィルターの管理](/help/components/filters/manage-filters.md)を参照してください。
+カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、[ セグメントの管理 ](/help/components/filters/manage-filters.md) を参照してください。
 
 ## コンポーネントリストの管理
 
@@ -84,7 +84,7 @@ Analysis Workspace の左パネルにあるコンポーネントリストを検�
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション**（![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)）はオレンジ色、**フィルター**（![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)）は青色、**日付範囲**（![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)）は紫色、**指標**（![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)）は緑色です。<br/>アドビアイコン（![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg)）は、計算指標テンプレートまたはフィルターテンプレートのいずれかを示します。電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
+   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション**（![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)）はオレンジ色、**フィルター**（![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)）は青色、**日付範囲**（![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)）は紫色、**指標**（![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)）は緑色です。<br/>Adobe アイコン ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) は、計算指標テンプレートまたはセグメントテンプレートのいずれかを示します。 電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
 
 3. ドロップダウンリストからコンポーネントを選択します。
 
@@ -102,7 +102,7 @@ Analysis Workspace の左パネルにあるコンポーネントリストを検�
    | ![星](/help/assets/icons/Star.svg) | **[!UICONTROL お気に入り]** | お気に入りのリストにあるコンポーネントのみを表示します。<br/>お気に入りのリストにコンポーネントを追加する方法について詳しくは、[コンポーネントの管理](#manage-components)を参照してください。 |
    | ![ディメンション](/help/assets/icons/Dimensions.svg) | **[!UICONTROL ディメンション]** | ディメンションであるコンポーネントのみを表示します。 |
    | ![イベント](/help/assets/icons/Event.svg) | **[!UICONTROL 指標]** | 指標であるコンポーネントのみを表示します。 |
-   | ![セグメント化](/help/assets/icons/Segmentation.svg) | **[!UICONTROL フィルター]** | フィルターであるコンポーネントのみを表示します。 |
+   | ![セグメント化](/help/assets/icons/Segmentation.svg) | **[!UICONTROL セグメント]** | セグメントであるコンポーネントのみを表示します。 |
    | ![カレンダー](/help/assets/icons/Calendar.svg) | **[!UICONTROL 日付範囲]** | 日付範囲であるコンポーネントのみを表示します。 |
    | ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL *タグ名&#x200B;*]** | 特定のタグが選択されているコンポーネントのみを表示します。アドビテンプレートには専用のタグが使用できます。これは、アドビの[デフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)です。 |
 

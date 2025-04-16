@@ -4,10 +4,10 @@ title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 89%
+ht-degree: 79%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 89%
 
 ## ビジュアライゼーション
 
-* フィルター（[!UICONTROL フォールアウト]、[!UICONTROL フロー]、[!UICONTROL コホート]、[!UICONTROL ヒストグラム]など）を利用するビジュアライゼーションでは、計算指標を入力として使用することはできません。
+* [!UICONTROL  フォールアウト ]、[!UICONTROL  フロー ]、[!UICONTROL  コホート ]、[!UICONTROL  ヒストグラム ] など、セグメントを活用するビジュアライゼーションでは、計算指標を入力として使用することはできません。
 * [!UICONTROL フロー]：入口／出口ディメンション（例：[!UICONTROL 入口ページ]）は、フローでは使用できません。
 * [!UICONTROL コホート]：整数以外の値をコホート条件として使用することはできません。
 
 ## フィルター
 
-* 指標やディメンションには、フィルタリングできないものがあります（[!UICONTROL  イベント ]、[!UICONTROL  人物 ] など）。
-* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックフィルターは、クイックフィルターのタイプです。公開されない限り、これらはWorkspaceの左側のパネルやフィルターコンポーネントマネージャーには表示されません。 詳しくは、[クイックフィルター](/help/components/filters/quick-filters.md)を参照してください。
+* 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL  イベント ]、[!UICONTROL  人物 ] など）。
+* [ パネルドロップゾーン ](/help/analysis-workspace/c-panels/panels.md) で作成されたアドホックセグメントは、クイックセグメントの一種です。 公開されない限り、Workspace の左パネルまたはフィルターコンポーネントマネージャーには表示されません。詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
 
-## 計算指標 
+## 計算指標
 
-* 計算指標は、一部のビジュアライゼーションでは使用できません。[ ビジュアライゼーション ](#visualizations) を参照してください。
-* 計算指標自体に別々のアトリビューションモデルを含めることができるので、[!UICONTROL アトリビューションパネル]で計算指標を使用することはできません。
-* 計算指標がワークスペースから作成される場合（[!UICONTROL コンポーネント／フィルター]から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。例：[!UICONTROL IP アドレス]。
+* 計算指標は、一部のビジュアライゼーションでは使用できません。詳しくは、[ビジュアライゼーション](#visualizations)を参照してください。
+* 計算指標自体に別々のアトリビューションモデルを含めることができるので、[!UICONTROL アトリビューションパネル]で計算指標を使用できません。
+* 計算指標がWorkspaceから作成される場合（[!UICONTROL  コンポーネント/セグメント ] から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。 例：[!UICONTROL IP アドレス]。
 
 ## 日付範囲
 

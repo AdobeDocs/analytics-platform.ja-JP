@@ -4,7 +4,7 @@ title: Analysis Workspace でのコンポーネントの使用
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Analysis Workspace でのコンポーネントの使用
 
-コンポーネントは、Analysis Workspaceの任意のプロジェクトの実際のデータを構成します。 コンポーネントは、ディメンション、指標、フィルターおよび日付範囲で構成されています。 コンポーネントをビジュアライゼーションまたはパネルにドラッグすることで、プロジェクトに追加できます。
+コンポーネントは、Analysis Workspaceの任意のプロジェクトの実際のデータを構成します。 コンポーネントは、ディメンション、指標、セグメントおよび日付範囲で構成されています。 コンポーネントをビジュアライゼーションまたはパネルにドラッグすることで、プロジェクトに追加できます。
 
 追加できるコンポーネントのタイプについて詳しくは、[ コンポーネントの概要 ](/help/components/overview.md) を参照してください。
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 
 1. 追加するコンポーネントまでスクロールするか検索し、プロジェクト内のパネルまたはビジュアライゼーションにドラッグします。
 
-1. オプションで、コンポーネントをパネルヘッダーのフィルタードロップゾーンにドラッグできます。 このドラッグ&amp;ドロップでは、コンポーネントがフィルターとして定義され、パネル内のすべてのコンテンツにフィルターが適用されます。
-パネル上でフィルタードロップゾーンを使用してパネルをフィルタリングする方法について詳しくは、「[ パネルの概要 ](/help/analysis-workspace/c-panels/panels.md)」の [ ドロップゾーン ](/help/analysis-workspace/c-panels/panels.md#drop-zone) を参照してください。
+1. オプションで、コンポーネントをパネルヘッダーのセグメントドロップゾーンにドラッグできます。 このドラッグ&amp;ドロップは、コンポーネントをセグメントとして定義し、パネル内のすべてのコンテンツにセグメントを適用します。
+パネル上のセグメントドロップゾーンを使用してパネルをセグメント化する方法について詳しくは、「[ パネルの概要 ](/help/analysis-workspace/c-panels/panels.md)」の [ ドロップゾーン ](/help/analysis-workspace/c-panels/panels.md#drop-zone) を参照してください。
 
 1. 詳しくは、次の節を参照してください。
 
@@ -40,13 +40,13 @@ ht-degree: 7%
 
    * [プロジェクトへの指標の追加](#add-metrics-to-a-project)
 
-   * [プロジェクトへのフィルターの追加](#add-filters-to-a-project)
+   * [プロジェクトへのセグメントの追加](#add-segments-to-a-project)
 
    * [プロジェクトへの日付範囲の追加](#add-date-ranges-to-a-project)
 
 ### プロジェクトへのディメンションの追加
 
-[Dimension](/help/components/dimensions/overview.md) は、通常、文字列値を含むCustomer Journey Analytics内の変数です。 一方、[指標](/help/components/calc-metrics/calc-metr-overview.md)には、ディメンションに結び付く数値が含まれます。基本レポートは、文字列値（ディメンション）の行と数値（指標）の列を示します。
+[ ディメンション ](/help/components/dimensions/overview.md) は、通常、文字列値を含むCustomer Journey Analyticsの変数です。 一方、[指標](/help/components/calc-metrics/calc-metr-overview.md)には、ディメンションに結び付く数値が含まれます。基本レポートは、文字列値（ディメンション）の行と数値（指標）の列を示します。
 
 1. [ プロジェクトへのコンポーネントの追加 ](#add-components-to-a-project) の説明に従って、Analysis Workspaceでプロジェクトへのディメンションの追加を開始します。
 
@@ -56,7 +56,7 @@ ht-degree: 7%
 
    * ディメンションをAnalysis Workspaceのビジュアライゼーション（フリーフォームテーブルなど）にドラッグします。
 
-   * [ プロジェクトへのフィルターの追加 ](#add-filters-to-a-project) の説明に従って、左側のパネルから 1 つ以上のディメンションをフィルタードロップゾーンにドラッグして、クイックフィルターを作成します。
+   * [ プロジェクトへのセグメントの追加 ](#add-filters-to-a-project) で説明しているように、左側のパネルから 1 つ以上のディメンションをセグメントドロップゾーンにドラッグして、クイックセグメントを作成します。
 
 1. オプションで、Analysis Workspace内のディメンションおよびディメンション項目を他のコンポーネントで分類できます。 詳しくは、[Workspaceでのディメンションの分類 ](/help/components/dimensions/t-breakdown-fa.md) を参照してください。
 
@@ -93,17 +93,17 @@ Analysis Workspaceでプロジェクトに指標を追加するには：
 
 [ フィルター ](/help/components/filters/filters-overview.md) を使用すると、特性や特定のインタラクションに基づいて、人物、セッションまたはイベントのサブセットを識別できます。
 
-Analysis Workspaceでは、次のいずれかの方法でフィルターを使用できます。
+Analysis Workspaceでは、次のいずれかの方法でセグメントを使用できます。
 
-* パネルへのフィルターの追加
-パネルにフィルターを追加すると、フィルターはパネル内のすべてのコンテンツに適用されます。
-パネル上でフィルタードロップゾーンを使用してパネルをフィルタリングする方法について詳しくは、「[ パネルの概要 ](/help/analysis-workspace/c-panels/panels.md)」の [ ドロップゾーン ](/help/analysis-workspace/c-panels/panels.md#drop-zone) を参照してください。
+* パネルへのセグメントの追加
+パネルにセグメントを追加すると、そのセグメントはパネル内のすべてのコンテンツに適用されます。
+パネル上のセグメントドロップゾーンを使用してパネルをセグメント化する方法について詳しくは、「[ パネルの概要 ](/help/analysis-workspace/c-panels/panels.md)」の [ ドロップゾーン ](/help/analysis-workspace/c-panels/panels.md#drop-zone) を参照してください。
 
-* ビジュアライゼーションへのフィルターの追加
-フリーフォームテーブルの列にフィルターを追加すると、そのフィルターはテーブル列内のすべてのコンテンツに適用されます。 また、フォールアウトビジュアライゼーションの一部としてフィルターを追加することもできます。
+* ビジュアライゼーションへのセグメントの追加
+フリーフォームテーブルの列にセグメントを追加すると、そのセグメントはテーブルの列内のすべてのコンテンツに適用されます。 また、フォールアウトビジュアライゼーションの一部としてセグメントを追加することもできます。
 
-* コンポーネントでのフィルターの使用
-[ 計算指標 ](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[ 注釈 ](/help/components/annotations/create-annotations.md#annotation-builder)、さらには [ フィルター ](/help/components/filters/filter-builder.md) などのコンポーネントを定義する場合、定義の一部としてフィルターを使用できます。
+* コンポーネントでのセグメントの使用
+[ 計算指標 ](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[ 注釈 ](/help/components/annotations/create-annotations.md#annotation-builder) または [ セグメント ](/help/components/filters/filter-builder.md) などのコンポーネントを定義する場合は、定義の一部としてフィルターを使用できます。
 
 
 ### プロジェクトへの日付範囲の追加

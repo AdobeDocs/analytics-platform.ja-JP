@@ -4,10 +4,10 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 42%
+source-wordcount: '844'
+ht-degree: 43%
 
 ---
 
@@ -83,7 +83,7 @@ Note: this option does not seem to work. AN-338422
 
    次の詳細フィルターオプションを使用できます。
 
-   ![ フィルターのシンプル ](assets/filter-advanced.png){width=500}
+   ![ フィルター簡易 ](assets/filter-advanced.png){width=500}
 
    | オプション | 関数 |
    |---------|----------|
@@ -94,7 +94,7 @@ Note: this option does not seem to work. AN-338422
 
 1. 「**[!UICONTROL 適用]**」を選択して、データをフィルタリングします。 **[!UICONTROL 消去]** を選択して、すべての入力を消去します。 「**[!UICONTROL キャンセル]**」を選択してキャンセルし、ダイアログを閉じます。 <br/> 色付きの ![ フィルター ](/help/assets/icons/FilterColored.svg) **フィルター** アイコンは、フィルターがテーブルに適用された際に詳細を示し、表示します。
 
-### オーディエンスフィルターの使用
+### オーディエンスセグメントの使用
 
 詳しくは、[ フィルターの概要 ](/help/components/filters/filters-overview.md) を参照してください。
 

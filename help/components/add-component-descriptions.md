@@ -4,7 +4,7 @@ title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 説明は、ユーザーがAnalysis Workspaceでプロジェクトを作成する際またはレポートを表示する際に、様々なコンポーネントを使用する方法を理解するのに役立ちます。
 
-Customer Journey Analytics管理者は、データビュー内またはデータ要素を使用して、コンポーネント（ディメンション、指標、フィルターおよび日付範囲）の説明を追加できます。
+Customer Journey Analytics管理者は、データビュー内またはデータ要素を使用して、コンポーネント（ディメンション、指標、セグメントおよび日付範囲）の説明を追加できます。
 
 ## データビューへの説明の追加
 
