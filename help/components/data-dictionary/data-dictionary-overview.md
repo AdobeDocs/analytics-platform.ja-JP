@@ -5,9 +5,9 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Analytics 管理者は、データ要素の各コンポーネントに関する�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analyis Workspace用データディクショナリ ](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のデータ辞書](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -66,32 +66,32 @@ Analytics 管理者がデータ要素を使用する方法の一部を以下に�
 
 * まだ承認されていないコンポーネントを識別します。
 
-* コンポーネントの説明を Analysis Workspace で直接更新します。データ要素のコンポーネントの説明に対して行われた更新は、データビューに反映されます。
+* コンポーネントの説明を Analysis Workspace で直接更新します。データ辞書のコンポーネントの説明に対して行われた更新は、データビューに反映されます。
 
-  同様に、データビューのコンポーネントの説明に対して行われた更新は、Analysis Workspaceに反映されます。
+  同様に、データビューのコンポーネントの説明に対して行われた更新は、Analysis Workspace に反映されます。
 
-  コンポーネントの説明をAnalysis Workspaceまたはデータビューに追加する方法について詳しくは、[ コンポーネントの説明の追加 ](/help/components/add-component-descriptions.md) を参照してください。
+  コンポーネントの説明を Analysis Workspace またはデータビューに追加する方法について詳しくは、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)を参照してください。
 
 ## データ要素へのアクセス
 
 Analysis Workspace 内で、次のいずれかの方法でデータ要素にアクセスできます。
 
-![ 左側のパネルの「データ要素」アイコン ](assets/data-dictionary-access.png)
+![左側のパネルのデータ辞書アイコン](assets/data-dictionary-access.png)
 
-* ボタンパネルの ![ ブックマーク ](/help/assets/icons/Bookmark.svg) から。
+* ボタンパネルの ![ブックマーク](/help/assets/icons/Bookmark.svg) から。
 
 
 
-* コンポーネントの情報ポップオーバー内の ![ ブックマーク ](/help/assets/icons/Bookmark.svg) から。
+* コンポーネントの情報ポップオーバー内の ![ブックマーク](/help/assets/icons/Bookmark.svg) から。
 
 
 データ要素で使用できる様々なオプションについて詳しくは、[データ要素でのコンポーネント情報の表示](/help/components/data-dictionary/view-data-dictionary.md)を参照してください。
 
 ## データ要素の更新とキュレーション
 
-Customer Journey Analytics管理者は、[ データ要素の正常性の監視 ](/help/components/data-dictionary/monitor-data-dictionary-health.md) で説明しているように、組織のデータ要素を正常に保持する責任があります。
+Customer Journey Analytics 管理者は、[データ辞書の健全性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、組織のデータ辞書を正常に保持する責任があります。
 
-このプロセスの一環として、Customer Journey Analytics管理者は、[ データ要素でのコンポーネントエントリの編集 ](/help/components/data-dictionary/edit-entries-data-dictionary.md) で説明しているように、データ要素内の各コンポーネントに関する情報を編集できます。
+このプロセスの一環として、Customer Journey Analytics 管理者は、[データ辞書でのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)で説明しているように、データ辞書内の各コンポーネントに関する情報を編集できます。
 
 ## データ要素を移動、最小化または閉じる
 
