@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,9 @@ Adobe Content Analytics拡張機能で変更を行った後、使用している
 
 ## バージョン管理
 
-Content Analytics エクスペリエンスのバージョン管理が必要な場合は、分析するエクスペリエンスについて検討するページにグローバル `adobe.getContentExperienceVersion` 関数を追加する必要があります。
+Content Analytics エクスペリエンスを収集する場合は、新しいエクスペリエンス（web ページの変更内容）が適切に収集されるように、バージョン管理の実装を検討する必要があります。
+
+バージョン管理を実装するには、分析するエクスペリエンスについて検討するページにグローバル `adobe.getContentExperienceVersion` 関数を追加します。
 
 `adobe.getContentExperienceVersion` 関数は、バージョンを識別する文字列を値として返す必要があります。この値は、任意で選択できます。 バージョンが [ エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
 

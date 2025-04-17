@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
+source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2580'
 ht-degree: 21%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
 >title="選択したデータビューをクリーンアップ"
->abstract="Content Analytics用に既にプロビジョニングされている aata ビューを選択しました。 既存のContent Analytics設定が削除され、データビューが新しい設定でプロビジョニングされます。"
+>abstract="既にContent Analytics用にプロビジョニングされているデータビューを選択しました。 既存のContent Analytics設定が削除され、データビューが新しい設定でプロビジョニングされます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
@@ -145,7 +145,7 @@ ht-degree: 21%
 1. 「**[!UICONTROL 保存]**」を選択して、選択したデータビューを確定します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 
-Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-views.md) はCustomer Journey Analytics [ 接続 ](/help/connections/overview.md) に関連付けられています。 また、接続は組織内のサンドボックスに基づきます。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの名前が **[!UICONTROL サンドボックス]** に自動入力されます。
+Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-views.md) はCustomer Journey Analytics [ 接続 ](/help/connections/overview.md) に関連付けられています。 また、接続は組織内のサンドボックスに基づきます。 設定を保存すると、選択したデータビューに基づいて、サンドボックスの名前が **[!UICONTROL サンドボックス]** フィールドに自動入力されます。
 
 
 ### エクスペリエンスのキャプチャと定義 {#onboarding-experiences}
@@ -180,7 +180,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="現在の設定に関連付けられているタグプロパティのAdobe Content Analytics拡張機能で、エクスペリエンスデータ収集の設定を編集する必要があります。"
+>abstract="Adobe Content Analytics拡張機能で experience data collection の設定を編集する必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -191,7 +191,15 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 次に該当する場合にのみ、エクスペリエンスを含めることを検討してください。
 
 * ページ URL を使用して、サイト上のページを再現できる必要があります。
-* 特定のユーザーで表示されるテキストコンテンツは、ページ URL を使用して再生でき、Cookie やその他のパーソナライゼーションメカニズムには依存しません。
+* 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再生でき、Cookie やその他のパーソナライゼーションメカニズムには依存しません。
+
+>[!IMPORTANT]
+>
+>[Content Analyticsのバージョン管理 ](manual.md#versioning) を実装して、Content Analyticsに従ってエクスペリエンス（ページ）に加えた変更を収集します。
+
+
+
+#### 新しい設定 {#new-experiences-configuration}
 
 新しい設定や実装されていない設定にエクスペリエンスを含めるには：
 
@@ -209,6 +217,9 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
 1. 正規表現とクエリパラメーターの別の組み合わせを追加する場合は、「**[!UICONTROL 正規表現を追加]**」を選択します。
 
+
+### 実装された設定 {#implemented-experiences-configuration}
+
 既存のエクスペリエンスを編集したり、実装された設定に新しいエクスペリエンスを含めたりするには：
 
 ![Content Analytics設定エクスペリエンスのキャプチャと定義 ](../assets/aca-configuration-experience-edit.png)
@@ -218,7 +229,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
    * Content Analytics イベントデータからエクスペリエンス属性を生成するプロセス
    * Customer Journey Analyticsのレポートテンプレート。
 
-* ![Edit](/help/assets/icons/Edit.svg)**[!UICONTROL Edit]** を選択して、Content Analyticsのエクスペリエンスのデータ収集の設定をさらに編集します。 現在の設定に関連付けられているタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics拡張機能 } にリダイレクトされます。[
+* ![Edit](/help/assets/icons/Edit.svg)**[!UICONTROL Edit]** を選択して、Content Analyticsのエクスペリエンスのデータ収集の設定を編集します。 現在の設定に関連付けられているタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics拡張機能 } にリダイレクトされます。[
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -304,7 +315,8 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 >[!IMPORTANT]
 >
->[Javascript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) を使用し、[ タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) を使用しない既存の Web SDK実装がある場合、新しく作成したタグプロパティから、自動で組み込まれる Web SDK拡張機能を手動で削除する必要があります。
+>[ タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) ではなく [SDK ライブラリを使用する既存の Web SDK実装がある場合は、新しく作成したタグプロパティから ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) 自動で含まれる Web JavaScript拡張機能を手動で削除します。
+>
 
 
 

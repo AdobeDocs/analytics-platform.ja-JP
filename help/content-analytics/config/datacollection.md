@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 * **エクスペリエンス**：エクスペリエンスは、web ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsは、ページ URL に基づいたエクスペリエンス ID を記録します。 その後、ページ上のテキストが取得サービスを介して取得されます。
 * **エクスペリエンス ID**：関連する URL （ベース URL に加えて、ページ上でコンテンツを駆動するパラメーター）と [ エクスペリエンスバージョン ](manual.md#versioning) の一意の組み合わせ。
    * [ 設定 ](configuration.md) の一部として、特定の完全な URL に関連するパラメーターを指定します。
-   * 使用する [ バージョン識別子 ](manual.md#versioning) を定義できます。
+   * 使用する [ バージョン識別子 ](manual.md#versioning) を定義して、エクスペリエンスに対する変更を適切に収集します。
 * **アセット**：画像。 Content Analyticsはアセット URL を記録します。
 * **アセット ID**：アセットの URL です。
 * **関連する URL**：ベース URL と、ページ上でコンテンツを駆動するパラメーター。
@@ -83,7 +83,7 @@ Content Analyticsでは、ビューやクリックを収集するのではなく
 * エクスペリエンスが有効になっているページ上のリンクで、クリックが発生します。
 
 
-### 通常の、または特定の（行動）イベント
+### 通常または特定（行動）のイベント
 
 Content Analyticsのコンテキストで通常または特定の（行動）イベントを発生させるトリガーは次のとおりです。
 
