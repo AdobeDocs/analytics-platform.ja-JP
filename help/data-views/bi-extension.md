@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -519,7 +519,7 @@ Customer Journey Analytics の仕組みの基本的な性質により、正確�
 
 #### 条件付き指標
 
-`IF` 句または `CASE` 句を `SUM` 関数または `COUNT` 関数に埋め込んで、選択した指標に固有のフィルタリングを追加できます。これらの句を追加することは、Workspace レポートテーブルの指標列にフィルターを適用することと似ています。
+`SUM` 関数または `COUNT` 関数に `IF` 句または `CASE` 句を埋め込むと、選択した指標に固有のセグメント化を追加できます。 これらの句を追加する方法は、Workspaceのレポートテーブルで指標列にセグメントを適用する場合と似ています。
 
 例：
 
@@ -556,26 +556,26 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 * 最大値のみを指定している場合（`timestamp < X` または `timestamp <= X`）、範囲は X-30 日から X です。
 * 何も指定しない場合、範囲は現在-30 日から現在までです。
 
-タイムスタンプの範囲は、RankedRequest の日付範囲グローバルフィルターに変換されます。
+タイムスタンプ範囲は、RankRequest の日付範囲グローバルセグメントに変換されます。
 また、タイムスタンプフィールドを日時関数で使用して、イベントのタイムスタンプを解析したり切り捨てたりすることもできます。
 
 #### 日付範囲
 
-`daterange` 特殊列は `timestamp` と同様に機能しますが、フィルタリングは全日に制限されます。`daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
+`daterange` の特別な列は `timestamp` と同様に機能しますが、セグメント化は 1 日に制限されます。 `daterange` もオプションで、`timestamp` と同じ範囲のデフォルトが設定されます。
 また、`daterange` フィールドを日時関数で使用して、イベントの日付を解析したり切り捨てたりすることもできます。
 
-`daterangeName` 特殊列を使用すると、`Last Quarter` などの名前付き日付範囲を使用してクエリをフィルタリングできます。
+`daterangeName` 特別列は、`Last Quarter` のような名前付き日付範囲を使用してクエリをセグメント化するために使用できます。
 
 >[!NOTE]
 >
 >Power BI は、1 日未満の `daterange` 指標（時間、30 分、5 分など）をサポートしていません。
 >
 
-#### フィルター ID
+#### Segment ID
 
-`filterId` 特殊列はオプションで、外部で定義されたフィルターをクエリに適用するために使用されます。外部で定義されたフィルターをクエリに適用することは、Workspace のパネルにフィルターをドラッグすることと似ています。複数のフィルター ID は `AND` して使用できます。
+`filterId` の特別な列はオプションで、外部で定義されたセグメントをクエリに適用するために使用されます。 外部で定義されたセグメントをクエリに適用することは、Workspaceのパネル上でセグメントをドラッグすることに似ています。 複数のセグメント ID を使用する場合は、`AND` を付けます。
 
-`filterId` と共に `filterName` を使用すると、ID の代わりにフィルターの名前を使用できます。
+`filterId` と共に `filterName` を使用して、ID の代わりにセグメントの名前を使用できます。
 
 ### Where 句
 
@@ -583,11 +583,11 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 1. `timestamp`、`daterange` または `daterangeName` の特殊フィールドから日付範囲を見つけます。
 
-1. フィルタリングに含める外部で定義された `filterId` または `filterName` を見つけます。
+1. セグメントに含める、外部で定義された `filterId` または `filterName` を見つけます。
 
-1. 残りの式をアドホックフィルターに変換します。
+1. 残りの式をアドホックセグメントに変換します。
 
-この処理は、`WHERE` 句の最初のレベルの `AND` を解析することによって行われます。最上位の各 `AND` 式は、上記のいずれかと一致する必要があります。最初のレベルの `AND` より深い部分や、`WHERE` 句が最上位レベルで `OR` を使用している場合は、アドホックフィルターとして処理されます。
+この処理は、`WHERE` 句の最初のレベルの `AND` を解析することによって行われます。最上位の各 `AND` 式は、上記のいずれかと一致する必要があります。`AND` の最初のレベルより深いもの、または `WHERE` 句で `OR` を最上位レベルで使用する場合は、アドホックセグメントとして処理されます。
 
 ### 並べ替え順序
 

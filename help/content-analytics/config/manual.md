@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 5%
@@ -56,9 +56,9 @@ Content Analytics設定に関連付けられたタグプロパティで ](https:
 
   エクスペリエンスを有効または無効にしたり、正規表現とクエリパラメーターの組み合わせを編集したりして、web サイト上でのコンテンツのレンダリング方法を決定できます。
 
-* [ イベントのフィルタリング ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [ イベントのセグメント化 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  正規表現を編集して、ページやアセットのフィルタリング方法を変更できます。
+  正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 
 
 Adobe Content Analytics拡張機能で変更を行った後、使用している [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} を確認し、加えられた変更に基づいてデータの収集を開始します。

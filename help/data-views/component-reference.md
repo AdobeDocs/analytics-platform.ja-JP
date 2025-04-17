@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 87%
+ht-degree: 81%
 
 ---
 
@@ -41,8 +41,8 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 月] | ディメンション | 特定のイベントが発生した月。最初のディメンション項目は日付範囲の最初の月で、最後のディメンション項目は日付範囲の最後の月です。 |
 | [!UICONTROL 四半期] | ディメンション | 特定のイベントが発生した四半期。最初のディメンション項目は日付範囲の最初の四半期で、最後のディメンション項目は日付範囲の最後の四半期です。 |
 | [!UICONTROL 年] | ディメンション | 特定のイベントが発生した年。最初のディメンション項目は日付範囲の最初の年で、最後のディメンション項目は日付範囲の最も新しい年です。 |
-| [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。フィルター定義で使用する場合（例：「[!UICONTROL セッション開始]が存在する」）、各セッションの最初のイベントのみにフィルターされます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
-| [!UICONTROL セッション終了] | 指標 | セッションの最後のイベントとなったイベントの数。「[!UICONTROL セッション開始]」と同様、これをフィルター定義で使用してフィルタリングし、各セッションの最後のイベントだけを残すこともできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
+| [!UICONTROL セッション開始] | 指標 | セッションの最初のイベントとなったイベントの数。セグメント定義で使用する場合（「[!UICONTROL  セッション開始 ] が存在する」など）、セグメントは各セッションの最初のイベントのみに分類されます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
+| [!UICONTROL セッション終了] | 指標 | セッションの最後のイベントとなったイベントの数。[!UICONTROL  セッション開始 ] と同様、これをセグメント定義で使用して各セッションの最後のイベントまでセグメント化することもできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
 | [!UICONTROL 滞在時間 (秒)] | 指標 | あるディメンションについて、2 つの異なる値の間の時間を合計します。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>ユーザー別滞在時間</li><li>セッションごとの滞在時間</li></p> |
 
 {style="table-layout:auto"}
@@ -63,7 +63,7 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
 | [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL セッションを返す] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。 例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値に対してフィルターを作成し、そのユーザーの行動に至るまですべてをフィルタリングします。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
+| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。 例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値にセグメントを作成して、そのユーザーの行動に至るまですべてをセグメント化します。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  グローバルアカウント ID] | ディメンション | 接続でグローバルアカウントコンテナを使用する場合の [!UICONTROL  グローバルアカウント ID]。 |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  アカウント ID] | ディメンション | 接続でアカウントコンテナを使用する場合の [!UICONTROL  アカウント ID]。 |

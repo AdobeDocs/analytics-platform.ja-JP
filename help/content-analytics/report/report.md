@@ -1,18 +1,18 @@
 ---
 title: コンテンツ分析レポート
-description: コンテンツ分析のレポート方法
+description: Content Analyticsのレポート方法
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
-# コンテンツ分析レポートの概要
+# Content Analytics レポートの概要
 
 {{release-limited-testing}}
 
@@ -23,13 +23,13 @@ ht-degree: 0%
 1. Workspaceで [ 新しいプロジェクトを作成 ](/help/analysis-workspace/build-workspace-project/create-projects.md) または [ 既存のプロジェクトを開く ](/help/analysis-workspace/build-workspace-project/open-projects.md) ことができます。
 1. Content Analyticsのレポート用に [ データビューを選択 ](/help/analysis-workspace/c-panels/panels.md#data-view) してください。 Content Analytics レポートは、Content Analyticsで [ 設定 ](/help/content-analytics/config/configuration.md) されたデータビューでのみ使用できます。
 1. ![ テーブル ](/help/assets/icons/Table.svg) フリーフォームテーブル [ ビジュアライゼーションをキャンバス ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ドラッグします。
-1. [ 特定のコンテンツ分析コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （フィルター、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
+1. [ 特定のContent Analytics コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （セグメント、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを構築します。
 
 ## サムネール
 
-プロジェクトで使用する Content Analytics 固有のディメンションに基づいて、アセットとディメンションにサムネイルが表示されます。
+プロジェクトで使用するContent Analytics固有のディメンションに基づいて、アセットとディメンションにサムネールが表示されます。
 
-![Content Analytics のサムネール ](../assets/aca-thumbnails.png)
+![Content Analyticsのサムネイル ](../assets/aca-thumbnails.png)
 
 デフォルトでは、関連するContent Analytics ディメンションのサムネールが表示されます。 Content Analytics ディメンションのサムネールの表示を設定するには：
 
@@ -67,7 +67,7 @@ Content Analytics ディメンションの行にサムネールが表示され�
 
 1. メインメニューから ]**0}Workspace} を選択します。**[!UICONTROL 
 1. Content Analytics用に設定されたデータビューを選択していることを確認します。
-1. **[!UICONTROL チャネル]** の場合はフィルター（**[!UICONTROL Web]** を、**[!UICONTROL  ユースケース **[!UICONTROL の場合は ] エンゲージメント]** を検索**たは使用して、**[!UICONTROL コンテンツ分析]** テンプレートを検索して選択します。
+1. **[!UICONTROL チャネル]** の場合はセグメント（**[!UICONTROL Web]**、**[!UICONTROL  ユースケース **[!UICONTROL の場合は ] エンゲージメント]** を検索**たは使用して、**[!UICONTROL コンテンツ分析]** テンプレートを検索して選択します。
 1. **[!UICONTROL テンプレートを使用]** を選択します。
 1. **[!UICONTROL テンプレートの設定]** ダイアログで、**[!UICONTROL コンバージョン指標を選択]** ダイアログから指標を選択します。 例えば、**[!UICONTROL Asset CTR]** と入力します。
 1. 「**[!UICONTROL 続行]**」を選択します。

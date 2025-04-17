@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -101,7 +101,7 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 ### コンテナ
 
-データビューのコンテナの名前を指定します。コンテナ名は、[フィルター](/help/components/filters/filters-overview.md#Filter-containers)でよく使用されます。
+データビューのコンテナの名前を指定します。コンテナ名は、[ セグメント ](/help/components/filters/filters-overview.md#Filter-containers) でよく使用されます。
 
 | 設定 | 説明 |
 | --- | --- |
@@ -185,13 +185,13 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 ## 設定
 
 1. 「**[!UICONTROL 設定]**」タブを選択します。
-1. データビュー全体に適用するフィルターを設定します。 以下の[設定（フィルター）](#settings-filters)を参照してください。
+1. データビュー全体に適用するセグメントを設定します。 以下の [ 設定（セグメント） ](#settings-filters) を参照してください。
 1. セッションのタイムアウトと指標を設定します。 以下の[セッション設定](#session-settings)を参照してください。
 1. 「**[!UICONTROL 保存して続行]**」を選択して、新規または既存のデータビューの設定を続行します。「**[!UICONTROL 保存]**」を選択して、既存のデータビューの設定を保存します。
 
-### 設定（フィルター）
+### 設定（セグメント）
 
-データビュー全体に適用するフィルターを追加できます。このフィルターは、ワークスペースで実行するすべてのレポートに適用されます。左側のパネルのリストから「「[!UICONTROL フィルターを追加]」フィールドにフィルターをドラッグします。
+データビュー全体に適用するセグメントを追加できます。 このセグメントは、Workspaceで実行するすべてのレポートに適用されます。 左側のパネルのリストから「[!UICONTROL  セグメントを追加 ]」フィールドにセグメントをドラッグします。
 
 ### セッション設定
 

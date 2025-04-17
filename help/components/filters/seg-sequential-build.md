@@ -1,18 +1,18 @@
 ---
-description: 順次フィルターは、THEN 演算子を使用してフィルター条件のシーケンスを定義するフィルターです。
-title: 順次フィルター
+description: 順次セグメントは、THEN 演算子を使用してセグメント条件のシーケンスを定義するセグメントです。
+title: 順次セグメント
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 3%
+source-wordcount: '2459'
+ht-degree: 4%
 
 ---
 
-# 順次フィルター
+# 順次セグメント
 
-順次フィルターは、コンポーネント、コンテナおよびコンポーネントまたはコンテナの間の [!UICONTROL Then] 論理演算子を使用して作成します。 [!UICONTROL Then] 論理演算子は、1 つのフィルター条件が発生し、その後に別のフィルター条件が発生することを意味します。
+コンポーネント、コンテナおよびコンポーネントまたはコンテナの間の [!UICONTROL Then] 論理演算子を使用して順次セグメントを作成します。 [!UICONTROL Then] 論理演算子は、セグメント条件が 1 つ、続いて別のセグメント条件が発生することを意味します。
 
 
 
@@ -24,48 +24,48 @@ ht-degree: 3%
 
 >[!ENDSHADEBOX]
 
-順次フィルターには、いくつかの [ 基本機能 ](#basics) と、順次フィルターをより複雑にするために設定できる追加オプションがあります。
+順次セグメントには、いくつかの [ 基本機能 ](#basics) と、順次セグメントにより多くの複雑さを追加するように設定できる追加のオプションがあります。
 
-![ 順次フィルター ](assets/sequential-filter.gif)
+![ 順次セグメント ](assets/sequential-filter.gif)
 
-* シーケンスフィルター定義内の Then ロジックの [After and within](#after-and-within) 制約：
+* シーケンスセグメント定義の Then ロジックの [After and within](#after-and-within) 制約：
 
-* フィルター定義のシーケンス全体の一部として [ 含める ](#include) データ。 コンテナの一部として定義されたシーケンスの場合は、または。 デフォルトでは、一致するすべてのデータが考慮されます。 そのデータは ![UserGroup](/help/assets/icons/UserGroup.svg)[!UICONTROL Everyone を含める ] で識別されます。
+* セグメント定義のシーケンス全体の一部として [ 含める ](#include) データ）。 コンテナの一部として定義されたシーケンスの場合は、または。 デフォルトでは、一致するすべてのデータが考慮されます。 そのデータは ![UserGroup](/help/assets/icons/UserGroup.svg)[!UICONTROL Everyone を含める ] で識別されます。
 
    * シーケンスの前のデータのみを考慮するには、「![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL シーケンスの前のみ]**」を選択します。
    * シーケンスの後のデータのみを考慮するには、「![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]**」を選択します。
 
-* 順次フィルター定義の一部として [ 除外 ](#exclude) するデータ。
+* 順次セグメント定義の一部として [ 除外 ](#exclude) するデータ。
 
-* 順次フィルター定義での条件の [ 論理グループ化 ](#logic-group) 方法。
+* 順次セグメント定義での条件の [ 論理的なグループ化 ](#logic-group) 方法。
 
 ## 基本
 
 
 
-順次フィルターの作成の基本は、[ フィルタービルダー ](filter-builder.md) を使用して通常のフィルターを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、フィルター定義を作成できます。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常フィルターは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、自動的に順次フィルターになります。
+順次セグメントを作成する際の基本は、[ セグメントビルダー ](filter-builder.md) を使用して通常のセグメントを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、セグメント定義を作成できます。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常のセグメントは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、順次フィルターになります。
 
 ### 例
 
-以下の例は、様々なユースケースで順次フィルターを使用する方法を示しています。
+以下の例は、様々なユースケースで順次セグメントを使用する方法を示しています。
 
 #### 単純なシーケンス
 
-ページを表示してから別のページを表示した人物を特定します。 イベントレベルのデータは、このシーケンスを使用してフィルタリングされます。 前、過去、中間のユーザーのセッションや、セッション間で発生したページビューの時間や数には関係ありません。
+ページを表示してから別のページを表示した人物を特定します。 イベントレベルのデータは、このシーケンスを使用してセグメント化されます。 前、過去、中間のユーザーのセッションや、セッション間で発生したページビューの時間や数には関係ありません。
 
-![ 順次フィルター everyone を含める ](assets/sequence-include-everyone.png)
+![ 順次セグメントにすべてのユーザーを含める ](assets/sequence-include-everyone.png)
 
 #### セッション間のシーケンス
 
 あるセッションでページを表示した後に別のセッションで別のページを表示したユーザーを識別します。 セッションを区別するには、コンテナを使用してシーケンスを作成し、コンテナごとに ![ 訪問 ](/help/assets/icons/Visit.svg)**[!UICONTROL セッション]** レベルを定義します。
 
-![ セッション間のシーケンスフィルター ](assets/sequence-filter-session.png)
+![ セッション間のシーケンスセグメント ](assets/sequence-filter-session.png)
 
 #### 混合レベルシーケンス
 
 特定されていないセッション数で 2 ページを閲覧したユーザーを特定してから、別のセッションで 3 ページ目を閲覧します。 この場合も、コンテナを使用してシーケンスを作成し、個別のセッションを定義するコンテナで ![ 訪問 ](/help/assets/icons/Visit.svg) **[!UICONTROL セッション]** レベルを定義します。
 
-![ 個別の最終セッションを使用したシーケンスフィルター ](assets/sequence-filter-final-session.png)
+![ 個別の最終セッションを持つ順次セグメント ](assets/sequence-filter-final-session.png)
 
 #### 集計シーケンス
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
 ## [!UICONTROL After] and [!UICONTROL Within]
 
-**[!UICONTROL Then]** 演算子の ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** と ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** を使用して、さらに [time 制約 ](#time-constraints) または [Events、Sessions、またはDimensionの制約 ](#event-session-and-dimension-constraints) を定義できます。
+**[!UICONTROL Then]** 演算子の ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** および ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** を使用して、追加の [ 時間制約 ](#time-constraints) または [ イベント、セッションまたはディメンションの制約 ](#event-session-and-dimension-constraints) を定義できます。
 
 ### 時間制約
 
@@ -99,9 +99,9 @@ ht-degree: 3%
 
 | 演算子 | 説明 |
 |--- |--- |
-| **[!UICONTROL 後]** | [!UICONTROL After] 演算子は、2 つのチェックポイント間の時間の最小制限を指定するために使用されます。 「後」の値を設定すると、フィルターを適用した時点で制限時間が開始されます。 例えば、ページ A に訪問したユーザーを識別するコンテナに [!UICONTROL After] 演算子が設定されていて、1 日後までページ B に戻らない場合、訪問者がページ A を離れたところでその日が始まります。 訪問者をフィルターに含めるには、ページ A を離れてページ B を表示してから、少なくとも 1440 分（1 日）経つ必要があります。 |
-| **[!UICONTROL 内部]** | [!UICONTROL Within] 演算子は、2 つのチェックポイントの間隔の最大値を指定するために使用します。例えば、ページ A にアクセスしたユーザーを識別するコンテナに [!UICONTROL Within] 演算子が設定され、その後 1 日以内にページ B に戻った場合、その日はページ A を離れたところから始まります。このフィルターに含めるには、ユーザーがページ B を開く前の最大時間を 1 日間とします。フィルターに含まれるユーザーの場合、ページ B を開くには、ページ A からページ B を表示してから最大 1440 分（1 日）以内にページ B を開く必要があります。 |
-| **[!UICONTROL 後だが中]** | [!UICONTROL After] 演算子と [!UICONTROL Within] 演算子の両方を使用する場合、両方の演算子は順番ではなく、並行して開始および終了します。 <br/> 例えば、コンテナを `After = 1 Week(s) and Within = 2 Week(s)` に設定したフィルターを作成します。<br/> このフィルターで訪問者を識別するための条件が満たされるのは、1 ～ 2 週間のみです。 どちらの条件も、最初のページビューの時点から適用されます。 |
+| **[!UICONTROL 後]** | [!UICONTROL After] 演算子は、2 つのチェックポイント間の時間の最小制限を指定するために使用されます。 「後」の値を設定すると、セグメントを適用した時点で制限時間が開始されます。 例えば、ページ A に訪問したユーザーを識別するコンテナに [!UICONTROL After] 演算子が設定されていて、1 日後までページ B に戻らない場合、訪問者がページ A を離れたところでその日が始まります。 訪問者をセグメントに含めるには、ページ A を離れた後、少なくとも 1440 分（1 日）経てページ B を表示する必要があります。 |
+| **[!UICONTROL 内部]** | [!UICONTROL Within] 演算子は、2 つのチェックポイントの間隔の最大値を指定するために使用します。例えば、ページ A にアクセスしたユーザーを識別するコンテナに [!UICONTROL Within] 演算子が設定され、その後 1 日以内にページ B に戻った場合、その日はページ A を離れたところから始まります。セグメントに含める場合、ユーザーがページ B を開く前の最大時間は 1 日です。セグメントに含まれるユーザーの場合、ページ B を開くには、ページ A を離れてページ B を表示してから最大 1440 分（1 日）以内にページ B を開く必要があります。 |
+| **[!UICONTROL 後だが中]** | [!UICONTROL After] 演算子と [!UICONTROL Within] 演算子の両方を使用する場合、両方の演算子は順番ではなく、並行して開始および終了します。 <br/> 例えば、コンテナを `After = 1 Week(s) and Within = 2 Week(s)` に設定してセグメントを作成します。<br/> このセグメントで訪問者を識別するための条件が満たされるのは、1 ～ 2 週間のみです。 どちらの条件も、最初のページビューの時点から適用されます。 |
 
 
 #### 例
@@ -135,13 +135,13 @@ ht-degree: 3%
 
 ### [!UICONTROL Event]、{Session] および [!UICONTROL 4}Dimension] の制約[!UICONTROL 
 
-![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** 制約および ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** 制約を使用すると、時間制約だけでなく、イベント、セッション、ディメンションの制約も指定できます。 **[!UICONTROL イベント]**、**[!UICONTROL セッション]** または **[!UICONTROL その他のディメンション]** ![ 山形の権限 ](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension名&#x200B;*]**を選択します。 「[!UICONTROL *検索*]」フィールドを使用して、ディメンションを検索できます。
+![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** 制約および ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** 制約を使用すると、時間制約だけでなく、イベント、セッション、ディメンションの制約も指定できます。 「**[!UICONTROL イベント]**」、「**[!UICONTROL セッション]**」または「**[!UICONTROL その他のディメンション]**![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension名&#x200B;*]**」を選択します。 「[!UICONTROL *検索*]」フィールドを使用して、ディメンションを検索できます。
 
 #### 例
 
-以下は、1 つの製品カテゴリページ（女性）にアクセスした人物を検索する順次フィルターの例です |靴）、チェックアウトページ（チェックアウト） |ありがとうございました）を 1 ページに収めました。
+次に、1 つの製品カテゴリページ（女性）にアクセスした人物を検索する順次セグメントの例を示します |靴）、チェックアウトページ（チェックアウト） |ありがとうございました）を 1 ページに収めました。
 
-![ 内のシーケンスフィルター ](assets/sequence-filter-within.png)
+![ 内のシーケンスセグメント ](assets/sequence-filter-within.png)
 
 次のシーケンス例は、一致するか一致しません。
 
@@ -152,15 +152,15 @@ ht-degree: 3%
 
 ## [!UICONTROL 含める]
 
-順次フィルターまたは順次フィルターの一部である順次コンテナに含めるデータを指定できます。
+順次セグメントまたは順次セグメントの一部である順次コンテナに含めるデータを指定できます。
 
 ### [!UICONTROL  全員 ] {#include_everyone}
 
-全員を含む順次フィルターを作成するには、「![ ユーザーグループ ](/help/assets/icons/UserGroup.svg)**[!UICONTROL 全員を含める]** オプションを選択します。
+全員を含む順次セグメントを作成するには、「![ ユーザーグループ ](/help/assets/icons/UserGroup.svg)**[!UICONTROL 全員を含める]** オプションを選択します。
 
-順次フィルターは、指定したパターンに全体として一致するデータを識別します。  以下は、1 つの製品カテゴリページ（女性）にアクセスしたユーザーを検索する基本的なシーケンスフィルターの例です |靴）、チェックアウトページ（チェックアウト） |ありがとうございました）。 フィルターは ![ ユーザーグループ ](/help/assets/icons/UserGroup.svg)**[!UICONTROL 全員を含める]** に設定されています。
+順次セグメントは、全体として指定されたパターンに一致するデータを識別します。  以下は、1 つの製品カテゴリページ（女性）にアクセスした人を検索する基本的なシーケンスセグメントの例です |靴）、チェックアウトページ（チェックアウト） |ありがとうございました）。 セグメントは ![UserGroup](/help/assets/icons/UserGroup.svg)**[!UICONTROL Everyone を含める]** に設定されています。
 
-![ 順次フィルター everyone を含める ](assets/sequence-include-everyone.png)
+![ 順次セグメントにすべてのユーザーを含める ](assets/sequence-include-everyone.png)
 
 次のシーケンス例は、一致するか一致しません。
 
@@ -172,7 +172,7 @@ ht-degree: 3%
 
 ### [!UICONTROL  シーケンスの前のみ ] および [!UICONTROL  シーケンスの後のみ ]
 
-オプション ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL Only Before Sequence]** および ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]** は、指定したシーケンスの前または後のサブセットにデータをフィルタリングします。
+オプション ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL Only Before Sequence]** および ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]** は、指定したシーケンスの前または後にデータをサブセットにセグメント化します。
 
 * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**シーケンスの前のみ**：シーケンスの前のすべてのデータと、シーケンス自体の最初のデータを含みます。 シーケンスがデータの一部として複数回表示される場合、[!UICONTROL  シーケンスの前のみ ] には、シーケンスの最後の発生の最初のヒットとすべての前のヒットが含まれます。
 * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**Only After Sequence**：シーケンスとシーケンス自体の最後のデータの後のすべてのヒットを含みます。 シーケンスがデータの一部として複数回表示される場合、[!UICONTROL  シーケンスの後にのみ ] シーケンスの最初の発生の最後のヒットと、後続のすべてのヒットが含まれます。
@@ -196,23 +196,23 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 #### 例
 
-サイトセクション用の順次フィルターの 3 つのバージョンを定義しました。 オプション ![UserGroup](/help/assets/icons/UserGroup.svg)**[!UICONTROL Include Everyone]** を持つもの、オプション ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL Only Before Sequence]** を持つもの、オプション ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]** を持つもの。 3 つのフィルターに適切な名前を付けました。
+サイトセクションに対して、3 つのバージョンの順次セグメントを定義しました。 オプション ![UserGroup](/help/assets/icons/UserGroup.svg)**[!UICONTROL Include Everyone]** を持つもの、オプション ![SequenceBefore](/help/assets/icons/SequenceBefore.svg)**[!UICONTROL Only Before Sequence]** を持つもの、オプション ![SequenceAfter](/help/assets/icons/SequenceAfter.svg)**[!UICONTROL Only After Sequence]** を持つもの。 3 つのセグメントに適切な名前を付けました。
 
-![ シーケンスフィルター ](assets/site-section-filters.png)
+![ シーケンスセグメント ](assets/site-section-filters.png)
 
-これら 3 つのフィルターを使用してサイトセクションに関するレポートを作成する場合、フリーフォームテーブルの出力例は次のようになります。
+これら 3 つのセグメントを使用してサイトセクションに関するレポートを作成する場合、フリーフォームテーブルの出力例は次のようになります。
 
-![ 順次フィルターレポート ](assets/sequential-filter-freeform-table.png)
+![ 順次セグメントレポート ](assets/sequential-filter-freeform-table.png)
 
 ## [!UICONTROL 除外]
 
-フィルター定義には、**[!UICONTROL 除外]** を使用して ![ ユーザー ](/help/assets/icons/User.svg) [!UICONTROL  ユーザー ]、![ 訪問 ](/help/assets/icons/Visit.svg) [!UICONTROL  セッション ] または ![web ページ ](/help/assets/icons/WebPage.svg) [!UICONTROL  イベント ] のデータを特別に除外しない限り、すべてのデータが含まれます。
+セグメント定義には、**[!UICONTROL 除外]** を使用して ![ ユーザー ](/help/assets/icons/User.svg)[!UICONTROL  ユーザー ]、![ 訪問 ](/help/assets/icons/Visit.svg)[!UICONTROL  セッション ] または ![web ページ ](/help/assets/icons/WebPage.svg)[!UICONTROL  イベント ] データを特別に除外しない限り、すべてのデータが含まれます。
 
-[!UICONTROL  除外 ] を使用すると、一般的なデータを解除し、より焦点を絞ったフィルターを作成できます。 除外を使用すると、特定のユーザーグループを除外するフィルターを作成することもできます。 例えば、注文した人物を指定するフィルターを定義し、そのグループの人物を除外して *非購入者* を識別する場合などです。 ベストプラクティスは、特定の include 値に一致する特定のペルソナをターゲットに [!UICONTROL  除外 ] を使用しようとするのではなく、幅広い定義を使用するルールを作成することです。
+[!UICONTROL  除外 ] を使用すると、一般的なデータを解除し、より焦点を当てたセグメントを作成できます。 除外を使用すると、特定の人物グループを除外するセグメントを作成することもできます。 例えば、注文した人物を指定するセグメントを定義し、そのグループを除外して *非購入者* を識別する場合などです。 ベストプラクティスは、特定の include 値に一致する特定のペルソナをターゲットに [!UICONTROL  除外 ] を使用しようとするのではなく、幅広い定義を使用するルールを作成することです。
 
 除外定義の例を次に示します。
 
-* **ページの除外**。フィルター定義を使用して、レポートから特定のページ （[ ホーム ページ *など*）を除外し、ページが `Home Page` に等しいイベント ルールを作成してから、ルールを除外します。 この定義には、「ホームページ *を除くすべてのページが自動的に含まれ* す。
+* **ページの除外**。セグメント定義を使用して、レポートから特定のページ（*ホームページ* など）を除外し、ページが `Home Page` に等しいイベントルールを作成してから、ルールを除外します。 この定義には、「ホームページ *を除くすべてのページが自動的に含まれ* す。
 * **参照ドメインの除外**。Google.comからの参照ドメインのみを含み、それ以外のドメインはすべて除外する定義を使用します。
 * **非購入者の識別**。注文件数が 0 より大きい場合を識別し、[!UICONTROL  個人 ] を除外します。
 
@@ -249,9 +249,9 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 >[!NOTE]
 >
->[!UICONTROL  論理グループ ] は、順次フィルターでのみ定義できます。つまり、[!UICONTROL Then] 演算子がコンテナ内で使用されます。
+>[!UICONTROL  論理グループ ] は、順次セグメントでのみ定義できます。つまり、[!UICONTROL Then] 演算子がコンテナ内で使用されます。
 
-論理グループを使用すると、条件を単一の順次フィルターチェックポイントにグループ化できます。 シーケンスの一部として、論理グループとして識別されるコンテナ内で定義されるロジックは、先行する順次チェックポイントの後、後続する順次チェックポイントの前に評価されます。
+論理グループを使用すると、条件を 1 つの順次セグメントチェックポイントにグループ化できます。 シーケンスの一部として、論理グループとして識別されるコンテナ内で定義されるロジックは、先行する順次チェックポイントの後、後続する順次チェックポイントの前に評価されます。
 
 論理グループ内の条件は、どのような順序でも満たすことができます。 これに対して、非順次コンテナ（イベント、セッション、人物）では、シーケンス全体で条件を満たす必要がないので、Then 演算子で使用すると直感的でない結果が生じる可能性があります。
 
@@ -260,7 +260,7 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 論理グループを使用するためのベストプラクティスを次に示します。
 
 * 順次チェックポイントをグループ化する。
-* シーケンシャルフィルタの構成を簡単にする。
+* 順次セグメントの構成を簡単にする。
 
 ### 例
 
@@ -270,11 +270,11 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 あるページを訪問した人物を識別し、別のページのセットから各ページを任意の順序で表示しました。 例えば、ホームページを訪問した後、順序に関係なく、男性ページ、女性ページおよび子供ページを訪問したユーザーです。
 
-このフィルターは [!UICONTROL  論理グループ ] を使用せずに構築できますが、構築は複雑で手間がかかります。 訪問者が表示できるページのシーケンスをすべて指定します。 わかりやすくするために、最初のコンテナのみ ![ChevronDown](/help/assets/icons/ChevronDown.svg) 開き、その他のコンテナは閉じます ![ChevronRight](/help/assets/icons/ChevronRight.svg)。 他のコンテナの内容は、タイトルから導き出すことができます。
+[!UICONTROL  論理グループ ] なしでこのセグメントを作成できますが、構築は複雑で面倒になります。 訪問者が表示できるページのシーケンスをすべて指定します。 わかりやすくするために、最初のコンテナのみ ![ChevronDown](/help/assets/icons/ChevronDown.svg) 開き、その他のコンテナは閉じます ![ChevronRight](/help/assets/icons/ChevronRight.svg)。 他のコンテナの内容は、タイトルから導き出すことができます。
 
 ![ 論理グループを使用しない例 ](assets/logicgroup-example-notusing.png)
 
-次に示すように、[!UICONTROL  論理グループ ] を使用すると、このフィルターの作成を簡単に行うことができます。 コンテナには、必ず ![ グループ ](/help/assets/icons/Group.svg) **[!UICONTROL 論理グループ]** を選択します。
+[!UICONTROL  論理グループ ] を使用して、次に示すように、このセグメントの作成を簡略化できます。 コンテナには、必ず ![ グループ ](/help/assets/icons/Group.svg) **[!UICONTROL 論理グループ]** を選択します。
 
 ![ 論理グループを使用しない例 ](assets/logicgroup-example-using.png)
 
@@ -298,7 +298,7 @@ B で識別される条件を持つコンポーネントのシーケンス、お
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
@@ -311,4 +311,4 @@ An example of a complex sequential filter if you want to find the persons that
 最後の例として、特定の製品ページについて学習したユーザーを特定します。このユーザーが「あなたの力を与える」キャンペーンに影響を受けることはありません。 そして、あなたのオンラインストアへの彼らの最初の訪問では、ホームページを見ましたが、男性カテゴリからのフィットネス（ギア）製品についてはこれ以上見ませんでした。 しかし、その直後の次のセッションでは、製品ページに移動し、最初にホームページを経由せずにオンライン注文を行いました。
 
 
-![ 複雑な順次フィルターの例 ](assets/sequential-complex.png)
+![ 複雑な順次セグメントの例 ](assets/sequential-complex.png)
