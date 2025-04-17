@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ Customer Journey Analytics でスキーマと併用するルックアップデ�
 
 Customer Journey Analytics の接続にルックアップデータセットを追加するには：
 
-1. Customer Journey Analytics で、「**[!UICONTROL 接続]**」タブをクリックします。
+1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 
 1. ルックアップデータセットを追加する接続の横にある ![その他アイコン](assets/More.svg) を選択してから、「**[!UICONTROL 編集]**」を選択します。
 

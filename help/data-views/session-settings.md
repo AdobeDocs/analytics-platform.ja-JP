@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '462'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Customer Journey Analytics では、ユーザーがどのようにデジタル�
 
 データビュー内のセッションのコンテキストを定義するには：
 
-1. Customer Journey Analytics の UI で「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI のメインナビゲーションで、オプションで **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 新しいデータビューを作成するか、既存のデータビューを編集します。詳しくは、[データビューの作成または編集](create-dataview.md)を参照してください。
 

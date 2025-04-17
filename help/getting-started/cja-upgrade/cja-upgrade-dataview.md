@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '401'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 データビューを作成するには：
 
-1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、「**[!UICONTROL データビュー]**」タブに移動します。
+1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、必要に応じて **[!UICONTROL データ管理]** から **[!UICONTROL データビュー]** を選択します。
 
 1. 「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
 

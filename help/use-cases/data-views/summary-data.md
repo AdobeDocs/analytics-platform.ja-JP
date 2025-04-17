@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '5188'
-ht-degree: 8%
+source-wordcount: '5200'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 8%
 
 | _id | campaign_name | 費用 | 圧痕 | campaign_id | réseau | ad_group | タイムスタンプ |
 |---|---|---:|---:|---|---|---|---|
-| 1 | 123 Campaign | 100 | 5,000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
+| 1 | 123 Campaign | 100 | 5000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 2 | 123 Campaign | 50 | 4000 | def123 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 3 | 123 Campaign | 125 | 6000 | ghi123 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 | 4 | 456 キャンペーン | 25 | 2500 | abc456 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
@@ -387,7 +387,7 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 
 
 1. 「」から「**[!UICONTROL Customer Journey Analytics]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
-1. トップメニューから **[!UICONTROL 接続]** を選択します。
+1. 必要に応じて、上部のメニューで **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 1. **[!UICONTROL 接続]**/**[!UICONTROL 名称未設定の接続]** で、次の手順を実行します。
    1. **[!UICONTROL 接続名]** を入力します（例：`Example Connection Using Summary Data`）。
@@ -428,7 +428,7 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 しばらくして、データセットのデータがCustomer Journey Analyticsに正しく読み込まれていることを確認します。
 
 1. 「」から「**[!UICONTROL Customer Journey Analytics]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
-1. トップメニューから **[!UICONTROL 接続]** を選択します。
+1. 必要に応じて、上部のメニューで **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 1. 接続を選択します（例：概要データを使用した接続 **[!UICONTROL 。]**。
 1. **[!UICONTROL 接続]**/**[!UICONTROL 概要データを使用した接続例]** の詳細で、適切な日付範囲を選択します。
    1. ![ カレンダー ](/help/assets/icons/Calendar.svg) を選択してから、「**[!UICONTROL 過去 7 日間]** を選択します。
@@ -443,7 +443,7 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 Workspaceで正しいデータに関するレポートを確実に作成するには、関連する指標とディメンションを含むデータビューを作成します。
 
 1. 「」から「**[!UICONTROL Customer Journey Analytics]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
-1. トップメニューから **[!UICONTROL データビュー]** を選択します。
+1. 必要に応じて、上部のメニューで **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 1. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 1. **[!UICONTROL データビュー]** では、ウィザード画面を確認してデータビューを設定します。
    1. **[!UICONTROL データビュー]** の **[!UICONTROL 設定]** 手順で、次の操作を行います。
@@ -459,7 +459,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          | コンポーネント名 | データセット | スキーマデータタイプ | スキーマパス |
          |---|---|---|---|
          | コスト | 概要データデータセットの例 | Double | *_tenant*.cost |
-         | 印象 | 概要データデータセットの例 | 整数 | *_tenant*.impression |
+         | インプレッション数 | 概要データデータセットの例 | 整数 | *_tenant*.impression |
          | 注文件数 | イベントデータデータセットの例 | 整数 | *_tenant*.orders |
          | 売上高 | イベントデータデータセットの例 | Double | *_tenant*.revenue_amount |
 
@@ -482,7 +482,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          ![ トラッキングコード概要データ ](../assets/tracking-code-summary-data.png)
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
-         1. **[!UICONTROL グループ化を作成]** を有効にします。
+         1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
          1. **[!UICONTROL 2} キャンペーン ID]** ドロップダウンリストから「]**Dimension ID」を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
          1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL  レポートで非表示 ] 選択したディメンション（[!UICONTROL  キャンペーン ID]）が、Analysis Workspaceや他のCustomer Journey Analytics レポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
             1. **[!UICONTROL ディメンション]** リストで「**[!UICONTROL キャンペーン ID]**」ディメンションを選択します。
@@ -505,7 +505,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          ![ 派生フィールドの概要データグループ ](../assets/derived-field-summary-data-group.png)
 
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
-         1. **[!UICONTROL グループ化を作成]** を有効にします。
+         1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
          1. **[!UICONTROL 2} キャンペーン名（ルックアップ派生フィールド）]** ドロップダウンリストから ]**Dimension名」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
 
       1. **[!UICONTROL 指標]** リストから「**[!UICONTROL 売上高]** 指標を選択します。 コンポーネントパネルで以下を実行します。
@@ -585,7 +585,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
       1. **[!UICONTROL 条件付き書式]** を有効にします。
          1. 「**[!UICONTROL 自動生成]**」を選択します。
          1. 任意の **[!UICONTROL 条件付き書式パレット]** を選択します。
-   1. 「**[!UICONTROL 保存]**」を選択して、プロジェクトを保存します。
+   1. 「**[!UICONTROL 保存]**」を選択しプロジェクトを保存します。
 
 トラッキングコード（イベント）ではなくキャンペーン名でレポートする場合は、次の手順に従います。
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3543'
-ht-degree: 83%
+source-wordcount: '3551'
+ht-degree: 88%
 
 ---
 
@@ -58,22 +58,22 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 .
 1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
+   1. 「**[!UICONTROL エクスペリエンスイベント]**」を選択します。
 
-      ![ エクスペリエンスイベントをハイライト表示したスキーマの作成 ](./assets/create-ee-schema-wizard-step-1.png)
+      ![エクスペリエンスイベントをハイライト表示するスキーマの作成](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、プロファイルの _動作_ をモデル化するために使用します（シーン名、買い物かごに追加するプッシュボタンなど）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマを使用すると、プロファイルの&#x200B;_動作_（シーン名、買い物かごに追加するプッシュボタンなど）をモデル化できます。個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. [!UICONTROL  スキーマを作成 ] ウィザードの [!UICONTROL  名前とレビューの手順 ] で、次の操作を行います。
+1. [!UICONTROL スキーマを作成]ウィザードの[!UICONTROL 名前とレビューの手順]で、次の操作を行います。
 
-   1. スキーマの **[!UICONTROL スキーマ表示名]** と（オプション） **[!UICONTROL 説明]** を入力します。
+   1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![ スキーマフィールドに名前を付けるを表示するスキーマを作成ウィンドウ ](./assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -105,11 +105,11 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [ 新しいフィールドグループを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) して [ 新しい ID フィールドを追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （`ecid`、`crmId` など、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >このフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを検索します。または、フィールドグループに[新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja)し、（`ecid`、`crmId` など）[新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=ja#define-a-identity-field)して、この新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。 人物の ID を追跡するために使用できる属性は他にも多数あります（顧客 ID、ロイヤルティ ID など）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。ユーザーの ID を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -135,7 +135,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -157,7 +157,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 - Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子、メールを識別子として定義します。
+- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
 
 - プロファイルでスキーマを有効にする
 
@@ -201,7 +201,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 ## データストリームの設定
 
-データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。データの転送先となるサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。これは、データの転送先となるサービスを決定するデータストリームです。
 
 設定では、web サイトから収集したデータを Adobe Experience Platform のデータセットに送信する必要があります。
 
@@ -260,7 +260,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 #### **拡張機能**
 
-（データストリーム経由で）Adobe Experience Platformにデータを確実に送信できるようにするには、タグに Platform Web SDKAdobe拡張機能を追加します。
+（データストリーム経由で）Adobe Experience Platformにデータを確実に送信できるようにするには、タグにAdobe Platform Web SDK拡張機能を追加します。
 
 Adobe Experience Platform Web SDK 拡張機能を作成して設定するには：
 
@@ -280,7 +280,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
-Web SDKには、[!UICONTROL Adobe Experience Cloud ID サービス ] がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
+Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
 #### **データ要素**
 
@@ -444,7 +444,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    - 「**[!UICONTROL 開発用に保存およびビルド]**」を選択します。
 
-   タグが保存され、開発環境用に作成されます。 緑のドットは、開発環境でタグが正常に作成されたことを示します。
+   タグが保存され、開発環境用に作成されます。緑のドットは、開発環境でタグが正常に作成されたことを示します。
 
 4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
 
@@ -493,7 +493,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、「**[!UICONTROL 接続]**」をクリックします。
+1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -539,7 +539,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI の上部ナビゲーションで、「**[!UICONTROL データ表示]**」をクリックします。
+1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -576,7 +576,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 プロジェクトを作成するには：
 
-1. Customer Journey Analytics UI で、「**[!UICONTROL プロジェクト]**」をクリックします。
+1. Customer Journey Analytics UI で、上部メニューの「**[!UICONTROL プロジェクト]**」をクリックします。
 
 2. 左側のナビゲーションの「**[!UICONTROL プロジェクト]**」を選択します。
 
@@ -600,4 +600,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 次に、Edge Network上にデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 次に、Edge Networkでデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、拡張機能（Adobe Experience Platform Web SDK、Experience Cloud ID サービス）、データ要素、ルールを含むタグを定義してデプロイし、web サイトからデータを取得してデータストリームに送信します。Web サイトトラッキングデータやその他の Customer Journey Analytics を使用するために、接続を定義しました。データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。

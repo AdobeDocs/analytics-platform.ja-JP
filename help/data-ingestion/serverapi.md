@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Platform Edge Networkサーバー API を使用したデータの取り込み
-description: Adobe Experience Platform Edge Networkサーバー API とEdge Networkを使用してデータをCustomer Journey Analyticsに取り込む方法を説明する
+title: Adobe Experience Platform Edge Network Server API を使用したデータの取り込み
+description: Adobe Experience Platform Edge Network Server API とEdge Networkを使用してCustomer Journey Analyticsにデータを取り込む方法を説明する
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 59%
+source-wordcount: '2356'
+ht-degree: 63%
 
 ---
 
-# Edge Networkサーバー API を使用したデータの取り込み
+# Edge Network Server API を使用したデータの取り込み
 
-このクイックスタートガイドでは、IoT デバイス、セットトップボックス、ゲームコンソール、デスクトップアプリケーションなどのデバイスからAdobe Experience Platform Edge Networkサーバー API およびEdge Networkを使用してトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
+このクイックスタートガイドでは、IoT デバイス、セットトップボックス、ゲームコンソール、デスクトップアプリケーションなどのデバイスからAdobe Experience Platform Edge Network Server API やEdge Networkを使用してトラッキングデータをAdobe Experience Platformに直接取り込む方法について説明します。 次に、そのデータをCustomer Journey Analyticsで使用します。
 
 これを実現するには、次の手順に従う必要があります。
 
@@ -34,7 +34,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->このクイックスタートガイドは、IoT デバイス、セットトップボックス、ゲーム機、デスクトップで動作するアプリケーションやゲームから収集したデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、IoT デバイス、セットトップボックス、ゲームコンソール、デスクトップで動作しているアプリケーションやゲームから収集されたデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を簡単に説明するガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## スキーマとデータセットの設定
@@ -58,20 +58,20 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 .
 1. スキーマ作成ウィザードの「クラスを選択」手順で、次の操作を行います。
 
-   1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
+   1. 「**[!UICONTROL エクスペリエンスイベント]**」を選択します。
 
       ![スキーマ](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、プロファイルの _動作_ をモデル化するために使用します（シーン名、買い物かごに追加するプッシュボタンなど）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマを使用すると、プロファイルの&#x200B;_動作_（シーン名、買い物かごに追加するプッシュボタンなど）をモデル化できます。個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. [!UICONTROL  スキーマを作成 ] ウィザードの [!UICONTROL  名前とレビューの手順 ] で、次の操作を行います。
+1. [!UICONTROL スキーマを作成]ウィザードの[!UICONTROL 名前とレビューの手順]で、次の操作を行います。
 
-   1. スキーマの **[!UICONTROL スキーマ表示名]** と（オプション） **[!UICONTROL 説明]** を入力します。
+   1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
       ![スキーマに名前を付ける](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -105,11 +105,11 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [ 新しいフィールドグループを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) して [ 新しい ID フィールドを追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （`ecid`、`crmId` など、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >このフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを検索します。または、フィールドグループに[新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja)し、（`ecid`、`crmId` など）[新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=ja#define-a-identity-field)して、この新しいフィールドグループを選択します。
 
    ![ID オブジェクト](./assets/identification-field-gaming.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ゲーム機にログインする際に使用するExperience CloudID とメールアドレスを使用して、ゲームをプレイしているプロファイルを特定します。 人物の識別情報を追跡するために使用できる属性は他にも多数あります。
+   ID オブジェクトは、スキーマに ID 機能を追加します。この場合、Experience Cloud ID とメールアドレスを使用してゲームをプレイしているプロファイルを特定し、ゲーム機にログインします。 人物の識別情報を追跡するために使用できる属性は他にも多数あります。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -135,7 +135,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -157,7 +157,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 - Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子、メールを識別子として定義します。
+- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
 
 - プロファイルでスキーマを有効にする
 
@@ -201,7 +201,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ## データストリームの設定
 
-データストリームは、Adobe Experience Platform Web SDK、Mobile SDK およびAdobe Experience Platform Edge Networkサーバー API を実装する際のサーバーサイド設定を表します。 Adobe Experience Platform SDK およびEdge Networkサーバー API を使用してデータを収集する場合、データはAdobe Experience Platform Edge Networkに送信されます。 データの転送先となるサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web SDK、Mobile SDK およびAdobe Experience Platform Edge Network Server API を実装する際のサーバーサイド設定を表します。 Adobe Experience Platform SDK およびEdge Network Server API を使用してデータを収集する場合、データはAdobe Experience Platform Edge Networkに送信されます。 これは、データの転送先となるサービスを決定するデータストリームです。
 
 設定では、ゲームから収集したデータをAdobe Experience Platformのデータセットに送信する必要があります。
 
@@ -235,9 +235,9 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
 
-## Edge Networkサーバー API の使用
+## Edge Network Server API の使用
 
-ゲームの開発では、必要に応じて、Adobe Experience Platform Edge Networkサーバー API に関連する呼び出しを追加できます。
+ゲームの開発では、必要に応じて、Adobe Experience Platform Edge Network Server API に関連する呼び出しを追加できます。
 
 例えば、プレーヤーのスコアを更新するには、次を使用します。
 
@@ -270,9 +270,9 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 }'
 ```
 
-POSTリクエストの例の `{DATASTREAM_ID}` は、前に設定したデータストリームの例の識別子を指しています。 `{sandbox}` は、カスタムブリンディングライトフィールドグループへのパスを識別するサンドボックスの一意の名前です。
+サンプルの POST リクエストの `{DATASTREAM_ID}` は、前に設定したサンプルデータストリームの識別子を指しています。 `{sandbox}` は、カスタムブリンディングライトフィールドグループへのパスを識別するサンドボックスの一意の名前です。
 
-Edge Networkサーバー API の使用方法について詳しくは、[ インタラクティブデータ収集 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja) および [ 非インタラクティブデータ収集 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) を参照してください。
+Edge Network Server API の使用方法について詳しくは、[ インタラクティブデータ収集 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja) および [ 非インタラクティブデータ収集 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) を参照してください。
 
 ## 接続の設定
 
@@ -282,7 +282,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、「**[!UICONTROL 接続]**」をクリックします。
+1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -324,7 +324,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI の上部ナビゲーションで、「**[!UICONTROL データ表示]**」をクリックします。
+1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -359,7 +359,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 プロジェクトを作成するには：
 
-1. Customer Journey Analytics UI で、「**[!UICONTROL プロジェクト]**」をクリックします。
+1. Customer Journey Analytics UI で、上部メニューの「**[!UICONTROL プロジェクト]**」をクリックします。
 
 2. 左側のナビゲーションの「**[!UICONTROL プロジェクト]**」を選択します。
 
@@ -381,4 +381,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 データをそのデータセットに転送できるように、Edge Networkでデータストリームを設定しました。 次に、Edge Networkサーバー API を使用して、そのデータをデータストリームに送信しました。 ゲーム データや他のデータを使用するために、Customer Journey Analyticsでコネクションを定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、ゲームデータを視覚化および分析します。
+>すべての手順が完了しました。まず、Adobe Experience Platformで収集するデータ（スキーマ）と、そのデータ（データセット）を保存する場所を定義します。 Edge Networkでデータストリームを設定して、そのデータセットにデータを転送できるようにします。 次に、Edge Network Server API を使用して、そのデータをデータストリームに送信します。 ゲームデータやその他のデータを使用するために、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、ゲームデータを視覚化および分析します。

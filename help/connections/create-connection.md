@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4906'
 ht-degree: 83%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 83%
 >title="毎日の使用の平均数"
 >abstract="接続全体で想定される毎日のイベント数の範囲を選択します。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 接続の作成と編集ワークフローエクスペリエンスでは、すべてのデータセットと接続設定が、補助的なワークフローで画面の中央に表示されます。 詳細なデータセットの選択、設定、確認のエクスペリエンスを提供します。 また、データセットのタイプ、サイズ、スキーマ、データセット ID、バッチステータス、バックフィルステータス、ユーザー ID などの重要な情報を指定できるので、誤った接続設定のリスクを軽減できます。 機能の概要を以下に示します。
@@ -154,7 +153,7 @@ ht-degree: 83%
 
 ## 接続の作成と設定 {#create-connection}
 
-1. Customer Journey Analyticsで、メインメニューから **[!UICONTROL 接続]** を選択します。
+1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
 >[!BEGINTABS]
@@ -442,7 +441,6 @@ ht-degree: 83%
 >title="接続マップ"
 >abstract="接続マップは、イベント、ユーザー、アカウントおよび関連するルックアップデータセット（商談、キャンペーンメンバーなど）間の関係を視覚化します。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 このワークフローを使用すると、接続を作成する際に、1 つ以上のExperience Platform データセットを追加できます。

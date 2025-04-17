@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ CJAを使用すると、QM データ、シーケンシャルデータ分析、�
 Quantum Metric データのソースコネクタを作成すると、Adobe Experience Platformにデータセットが自動的に作成されます。 このデータセットをCustomer Journey Analyticsの新規または既存の [ 接続 ](/help/connections/overview.md) に追加します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsに移動し、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 1. 接続に名前を付け、その接続に Quantum Metric データセットを追加します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -46,7 +47,7 @@ Quantum Metric データのソースコネクタを作成すると、Adobe Exper
 [ データビュー ](/help/data-views/data-views.md) を作成して、ディメンションと指標の設定を行います。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、トップメニューで **[!UICONTROL データビュー]** を選択します。
+1. Customer Journey Analyticsに移動し、必要に応じて ]**データ管理**[!UICONTROL  から **[!UICONTROL データビュー]** を選択します。
 1. 目的のデータビューを選択するか、データビューを作成します。
 1. 右側のスキーマフィールドリストで目的の Quantum Metric ディメンションと指標を見つけて、中央のディメンションと指標領域にドラッグします。
 1. 右側のパネルを使用して、目的のディメンションと指標をそれぞれ設定します。

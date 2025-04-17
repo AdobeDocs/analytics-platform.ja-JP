@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Quantum Metric CSM チームは、追加する適切なスキーマ要素を判�
 既存のデータビューを編集し、セッション ID をCustomer Journey Analyticsで使用可能なディメンションとして追加します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、トップメニューで **[!UICONTROL データビュー]** を選択します。
+1. Customer Journey Analyticsに移動し、必要に応じて ]**データ管理**[!UICONTROL  から **[!UICONTROL データビュー]** を選択します。
 1. 目的の既存のデータビューを選択します。
 1. 左側の量子指標の摩擦イベントフィールドリストを見つけて、中央の指標領域にドラッグします。
 1. 右側のペインで、「[ 値を含める/除外 ](/help/data-views/component-settings/include-exclude-values.md)」設定を、追跡する摩擦イベントに設定します。 複数の摩擦イベントを同じ指標に追加して、それらを組み合わせることができます。 また、摩擦イベントフィールドの別のコピーを指標領域にドラッグして、他の摩擦イベントを別の指標として追跡することもできます。

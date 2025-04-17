@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: ae88ab16e85bd1274990f8c4d04771398293fe09
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Adobe Experience Platformに送信するデータに Quantum Metric セッショ
 既存のデータビューを編集し、セッション ID をCustomer Journey Analyticsで使用可能なディメンションとして追加します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、トップメニューで **[!UICONTROL データビュー]** を選択します。
+1. Customer Journey Analyticsに移動し、必要に応じて ]**データ管理**[!UICONTROL  から **[!UICONTROL データビュー]** を選択します。
 1. 目的の既存のデータビューを選択します。
 1. 左側の Quantum Metric session ID フィールドリストを見つけて、中央のディメンション領域にドラッグします。
 1. 右側のウィンドウで、「永続性 [ 設定を ](/help/data-views/component-settings/persistence.md) セッション」に設定します。
