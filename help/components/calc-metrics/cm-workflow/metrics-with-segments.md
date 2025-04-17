@@ -1,22 +1,22 @@
 ---
-description: 個々の指標をフィルタリングすると、同じレポート内の指標を比較できます。
-title: フィルタリングされた指標
+description: 個々の指標をセグメント化すると、同じレポート内の指標を比較できます。
+title: セグメント化指標
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
 
-# フィルタリングされた指標
+# セグメント化指標
 
-[ 計算指標ビルダー ](cm-build-metrics.md#definition-builder) では、指標の定義内でフィルターを適用できます。 フィルターの適用は、分析でデータのサブセットに指標を使用する場合に役立ちます。
+[ 計算指標ビルダー ](cm-build-metrics.md#definition-builder) では、指標の定義内にセグメントを適用できます。 セグメントの適用は、分析で指標をデータのサブセットに使用する場合に役立ちます。
 
 >[!NOTE]
 >
->フィルター定義は、[ フィルタービルダー ](/help/components/filters/filter-builder.md) を使用して更新されます。 フィルターを変更すると、フィルターが計算指標の定義に含まれているかどうかも含め、フィルターを使用するすべての場所で、フィルターが自動的に更新されます。
+>セグメント定義は、[ セグメントビルダー ](/help/components/filters/filter-builder.md) を使用して更新されます。 セグメントに変更を加えると、セグメントが計算指標定義の一部であるかどうかを含め、セグメントが使用されているすべての場所でセグメントが自動的に更新されます。
 >
 
 ブランドとやり取りするドイツ人の指標とドイツ国外のユーザーの指標を比較します。 次のような質問に答えることができます。
@@ -25,36 +25,36 @@ ht-degree: 1%
 1. 今月、ブランドとオンラインでやり取りしたドイツ人と外国人の数 [ 合計 ](#totals)。
 1. 人気のあるページを訪問したドイツ人や国際的な人々の [ 割合 ](#percentages) は何ですか？
 
-以下の節を参照して、これらの質問に答えるのに、フィルター適用済み指標がいかに役立つかを説明します。 該当する場合は、より詳細なドキュメントへの参照が行われます。
+以下の節を参照して、セグメント化指標がこれらの質問に答える際にどのように役立つかをご確認ください。 該当する場合は、より詳細なドキュメントへの参照が行われます。
 
 ## 人気のあるページ
 
 1. Workspace プロジェクトから [ 計算指標を作成 ](cm-workflow.md) し、`German people` という名前を付けます。
-1. [ 計算指標ビルダー ](cm-build-metrics.md) 内から、`Germany` というタイトルの [ フィルターを作成 ](/help/components/filters/filter-builder.md) します。これは、CRM データの CRM の国フィールドを使用して、ユーザーが来ている場所を判断します。
+1. [ 計算指標ビルダー ](cm-build-metrics.md) 内から、`Germany` というタイトルの [ セグメントを作成 ](/help/components/filters/filter-builder.md) します。これは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
 
    >[!TIP]
    >
-   >計算指標ビルダーでは、コンポーネントパネルを使用して直接フィルターを作成できます。
+   >計算指標ビルダーでは、コンポーネント パネルを使用して直接セグメントを作成できます。
    >   
 
-   フィルターは次のようになります。
+   セグメントは次のようになります。
 
    ![ ドイツのフィルター ](assets/filter-germany.png)
 
-1. 計算指標ビルダーに戻り、フィルターを使用して計算指標を更新します。
+1. 計算指標ビルダーに戻り、セグメントを使用して計算指標を更新します。
 
    ![ 計算指標ドイツ ](assets/calculated-metric-germany.png)
 
 計算指標の国際バージョンに対して、上記の手順を繰り返します。
 
 1. Workspace プロジェクトから `International people` というタイトルの計算指標を作成します。
-1. 計算指標ビルダー内から、`Not Germany` というタイトルのフィルターを作成します。これは、CRM データの CRM の「国」フィールドを使用して、ユーザーが存在する国を特定します。
+1. 計算指標ビルダー内から、`Not Germany` というタイトルのセグメントを作成します。このセグメントは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
 
-   フィルターは次のようになります。
+   セグメントは次のようになります。
 
    ![ ドイツのフィルター ](assets/filter-not-germany.png)
 
-1. 計算指標ビルダーに戻り、フィルターを使用して計算指標を更新します。
+1. 計算指標ビルダーに戻り、セグメントを使用して計算指標を更新します。
 
    ![ 計算指標ドイツ ](assets/calculated-metric-notgermany.png)
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ## 合計
 
-1. 総計に基づいて 2 つの新しいフィルターを作成します。 前に作成した各フィルターを開き、フィルターの名前を変更し、**[!UICONTROL 人物]** の **[!UICONTROL 指標タイプ]** を **[!UICONTROL 総計]** に設定して、**[!UICONTROL 名前を付けて保存]** を使用してフィルターを新しい名前で保存します。 例：
+1. 総計に基づいて 2 つの新しいセグメントを作成します。 前に作成した各セグメントを開き、セグメントの名前を変更し、**[!UICONTROL 人物]** の **[!UICONTROL 指標タイプ]** を **[!UICONTROL 総計]** に設定して、**[!UICONTROL 名前を付けて保存]** を使用してセグメントを新しい名前で保存します。 例：
 
    ![ ドイツの合計指標 ](assets/calculated-metric-germany-total.png)
 
@@ -75,7 +75,7 @@ ht-degree: 1%
    ![ ドイツ語と国際の合計人数を示すWorkspaceのフリーフォームテーブルビジュアライゼーション ](assets/workspace-german-vs-international-totals.png)
 
 
-## 割合（％）
+## 割合
 
 1. 前に作成した計算指標からパーセンテージを計算する 2 つの新しい計算指標を作成します。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ フィルタリングされた計算指標を実装なしの指標として使用 ](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ セグメント化された計算指標を実装なしの指標として使用 ](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 

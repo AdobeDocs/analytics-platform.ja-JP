@@ -4,10 +4,10 @@ title: データ要素の正常性の監視
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 87%
+ht-degree: 78%
 
 ---
 
@@ -49,6 +49,6 @@ Customer Journey Analytics管理者は、正常なデータディクショナリ
 
    * [!UICONTROL **コンポーネントにデータが接続されていません**]
 
-   選択した内容に応じて、適切なフィルターがデータ要素に適用され、関連するコンポーネントのみが表示されます。
+   選択した内容に応じて、適切なセグメントがデータ要素に適用され、関連するコンポーネントのみが表示されます。
 
 1. 任意のコンポーネントを編集して、データ要素の正常性を改善します。データ要素でコンポーネントを編集する方法については、[データ要素でのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。

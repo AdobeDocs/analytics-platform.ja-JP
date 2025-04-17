@@ -4,10 +4,10 @@ description: レポートで使用する日付範囲を作成します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 1. この日付範囲の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。例：**[!UICONTROL Quarterly]**。
 1. オプションで、「**[!UICONTROL 説明]**」を指定します。
-1. 1 つ以上の&#x200B;**[!UICONTROL タグ]**&#x200B;を作成または適用して、フィルターを整理します。入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
+1. 1 つ以上の **[!UICONTROL タグ]** を作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
 1. 最初に開始日を選択し、次に終了日を選択して、「**[!UICONTROL 日付範囲]**」を選択します。
 または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。
 

@@ -1,14 +1,14 @@
 ---
-description: Customer Journey Analyticsデータを送信できるクラウドの書き出し場所の管理
+description: Customer Journey Analytics データを送信できるクラウドの書き出し場所の管理
 keywords: Analysis Workspace
 title: クラウドの書き出し場所とアカウントの管理
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 1%
+source-wordcount: '1371'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## フィルターと検索の場所
 
-必要な情報を検索するには、場所のリストをフィルタリングするか、場所を検索します。
+必要な情報を見つけるには、場所のリストでフィルタリングするか、場所を検索します。
 
 ### 場所のリストのフィルタリング
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
    | フィルター | 説明 |
    |---------|----------|
-   | [!UICONTROL **場所のタイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google クラウドプラットフォーム**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **場所のタイプ**]<!--should this be changed to Account type?--> | 場所が関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **アカウント**] | 場所が関連付けられているアカウントの名前。 |
    | [!UICONTROL **作成者**] | 場所を作成したユーザーのメールアドレス。 |
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 すべてのユーザーによるアカウントの作成および編集を制限するには：
 
-1. Customer Journey Analyticsで **[!UICONTROL コンポーネント]**/**[!UICONTROL 書き出し]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL 書き出し]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
 
 1. 「[!UICONTROL **場所アカウント**]」セクションで、「[!UICONTROL **ユーザーが場所アカウントを作成および管理することを許可**]」オプションの選択を解除します。
 
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 すべてのユーザーに対してロケーションの作成および編集を制限するには、次のようにします。
 
-1. Customer Journey Analyticsで **[!UICONTROL コンポーネント]**/**[!UICONTROL レポート]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL レポート]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
 
 1. 「[!UICONTROL **場所**]」セクションで、「[!UICONTROL **ユーザーが場所を作成および管理することを許可**]」オプションの選択を解除します。
 
@@ -215,17 +215,17 @@ ht-degree: 1%
 
 アカウントの作成時および使用時にユーザーが使用できるアカウントタイプを制限するには：
 
-1. Customer Journey Analyticsで **[!UICONTROL コンポーネント]**/**[!UICONTROL 書き出し]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL 書き出し]** を選択し、「[!UICONTROL **管理設定**]」タブを選択します。
 
 1. 「[!UICONTROL **許可されるアカウントタイプ**] セクションを見つけます。
 
    デフォルトでは、次のアカウントタイプをユーザーが使用できます。 ユーザーによる使用を制限する勘定科目タイプの選択を解除します。
 
-   * [!UICONTROL **AEP データランディングゾーン**]
+   * [!UICONTROL **AEP Data Landing Zone**]
 
-   * [!UICONTROL **Amazon S3 ロール ARN**]
+   * [!UICONTROL **Amazon S3 Role ARN**]
 
-   * [!UICONTROL **Google クラウドプラットフォーム**]
+   * [!UICONTROL **Google Cloud Platform**]
 
    * [!UICONTROL **Azure SAS**]
 
