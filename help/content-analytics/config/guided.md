@@ -1,6 +1,6 @@
 ---
-title: Content Analytics ガイド付き設定
-description: オンボーディングガイド付き設定を使用した Content Analytics の設定方法
+title: コンテンツガイド付き設定
+description: オンボーディングガイド付き設定を使用したコンテンツ分析の設定方法
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -8,20 +8,20 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 21%
+ht-degree: 48%
 
 ---
 
-# Content Analytics ガイド付き設定
+# コンテンツガイド付き設定
 
 {{release-limited-testing}}
 
 
-ガイド付き設定を使用すると、コンテンツ分析をすばやく簡単に設定できます。 ガイド付き設定では、ウィザードを使用して、組織のコンテンツ分析を自動的に設定するための要件を設定します。 **[!UICONTROL 設定]** 画面で、新しい設定を作成するか、既存の設定を編集できます。
+ガイド付き設定を使用すると、コンテンツ分析をすばやく簡単に設定できます。ガイド付き設定では、ウィザードを使用して、組織のコンテンツ分析を自動的に設定するための要件を設定します。**[!UICONTROL 設定]**&#x200B;画面で、新しい設定を作成するか、既存の設定を編集できます。
 
 >[!IMPORTANT]
 >
->組織のサンドボックスごとに 1 つの Content Analytics 設定のみを持つことができます。
+>組織のサンドボックスごとに 1 つのコンテンツ分析設定のみを持つことができます。
 
 コンテンツ分析設定にアクセスするには
 
@@ -29,7 +29,7 @@ ht-degree: 21%
 
 **[!UICONTROL Content Analytics設定]** 画面に、既存のContent Analytics設定のテーブルが表示されます。
 
-![Content Analytics 設定 ](../assets/aca-configuration-table.png)
+![コンテンツ分析設定](../assets/aca-configuration-table.png)
 各設定で、次の詳細を使用できます。
 
 | 列 | 説明 |
@@ -39,19 +39,19 @@ ht-degree: 21%
 | **[!UICONTROL 作成日]** | 設定が作成されたときのタイムスタンプ。 |
 | **[!UICONTROL 変更日]** | 設定が最後に変更されたときのタイムスタンプ。 |
 | **[!UICONTROL サンドボックス]** | コンテンツ分析が（予定されて）設定および実装される、組織内のサンドボックス。 |
-| **[!UICONTROL ステータス]** | 設定のステータス。 ステータスは次のようになります。<br/>![StatusGray](/help/assets/icons/StatusGray.svg)**[!UICONTROL Draft]**：設定は後で使用するために保存され、デプロイされていません。<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**：設定に失敗しました。 「**[!UICONTROL 編集]**」を選択すると、エラーに関する情報を取得できます。 Adobeは、失敗した実装にプロアクティブに対処します。 詳しくは、カスタマーケアにお問い合わせください。<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg)**[!UICONTROL Complete]**：設定が完了し、正常に実装されました。 |
+| **[!UICONTROL ステータス]** | 設定のステータス。ステータスは次のようになります。<br/>![StatusGray](/help/assets/icons/StatusGray.svg)**[!UICONTROL Draft]**：設定は後で使用するために保存され、デプロイされていません。<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**：設定に失敗しました。「**[!UICONTROL 編集]**」を選択すると、エラーに関する情報を取得できます。 Adobeは、失敗した実装にプロアクティブに対処します。 詳しくは、カスタマーケアにお問い合わせください。<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**：設定が完了し、正常に実装されました。 |
 
-![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用して、テーブルをカスタマイズできます。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログに表示する列を選択し、「**[!UICONTROL 適用]** を選択して変更を適用します。
+![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用して、テーブルをカスタマイズできます。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
-コンテンツ分析 **[!UICONTROL 設定]** 画面から、新しい設定を作成したり、既存の設定を編集したりできます。
+コンテンツ分析&#x200B;**[!UICONTROL 設定]**&#x200B;画面から、新しい設定を作成したり、既存の設定を編集したりできます。
 
-新しい設定を作成するには：
+新規フォルダーを作成するには：
 
-* **[!UICONTROL 設定を作成]** を選択します。 このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
+* 「**[!UICONTROL 設定を作成]**」を選択します。このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
 
 既存の設定を編集するには：
 
-* 既存のコンテンツ分析設定に対して、![ 詳細 ](/help/assets/icons/More.svg) を選択してから ![ 編集 ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。 このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
+* 既存のコンテンツ分析設定に対して、「![詳細](/help/assets/icons/More.svg)」を選択してから![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択します。このアクションにより、[ ガイド付き設定ウィザード ](#guided-configuration-wizard) が開きます。
 
 ## ガイド付き設定ウィザード
 
@@ -73,9 +73,9 @@ ht-degree: 21%
 
 <!-- markdownlint-enable MD034 -->
 
-各設定には、一意の名前が必要です。 たとえば、`Example Content Analytics configuration` のように設定します。設定を保存または実装するには、この名前が必要です。
+各設定には、一意の名前が必要です。たとえば、`Example Content Analytics configuration` のように設定します。設定を保存または実装するには、この名前が必要です。
 
-![Content Analytics 設定の詳細 ](../assets/aca-configuration-details.png)
+![コンテンツ分析設定の詳細](../assets/aca-configuration-details.png)
 
 
 ### データビュー {#onboarding-data-view}
@@ -85,7 +85,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="データビュー"
->abstract="コンテンツ分析の設定には、既存のデータビューを選択する必要があります。 そのため、コンテンツ分析データを他のデータと結合できます。"
+>abstract="コンテンツ分析を設定するには、既存のデータビューを選択する必要があります。そのため、コンテンツ分析データを他のデータと結合できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
@@ -100,7 +100,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="新規データビュー"
->abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。必要に応じて、関連付けられた接続も更新され、コンテンツ分析データセットが含まれます。コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
+>abstract="新しいデータビューを選択すると、そのデータビューが更新され、コンテンツ分析指標およびディメンションが含まれます。必要に応じて、関連する接続も更新され、コンテンツ分析データセットが含まれます。コンテンツ分析用に現在設定されている接続とデータビューは変更されません。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -114,7 +114,7 @@ ht-degree: 21%
 
 <!-- markdownlint-enable MD034 -->
 
-設定では、[ データビュー ](/help/data-views/data-views.md) を選択する必要があります。
+設定では、[データビュー](/help/data-views/data-views.md)を選択する必要があります。
 
 1. データビューを選択
 
@@ -138,8 +138,8 @@ ht-degree: 21%
    次のアクションを実行できます。
 
    * 特定のデータビューを検索するには、「![ 検索 ](/help/assets/icons/Search.svg)」フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL  接続 ]、[!UICONTROL  所有者 ]、[!UICONTROL  サンドボックス ] でリストをフィルタリングできます。<br/> フィルターウィンドウを非表示にするには、![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルターを非表示]** を使用します。
-   * テーブルに表示する列を定義するには、「![ 列設定 ](/help/assets/icons/ColumnSetting.svg)」を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログに表示する列を選択し、「**[!UICONTROL 適用]** を選択して変更を適用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL  接続 ]、[!UICONTROL  所有者 ]、[!UICONTROL  サンドボックス ] でリストをフィルタリングできます。<br/>フィルターペインを非表示にするには、![非表示](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**&#x200B;を使用します。
+   * テーブルに表示する列を定義するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」を選択します。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
 1. ![SelectBox](/help/assets/icons/SelectBox.svg) を選択して、使用するデータビューを選択します。
 1. 「**[!UICONTROL 保存]**」を選択して、選択したデータビューを確定します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
@@ -184,9 +184,9 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 <!-- markdownlint-enable MD034 -->
 
-このセクションでは、Content Analyticsで収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページにアクセスした最初のユーザーが使用する URL を使用して再現可能な、web ページ上のすべてのテキストです。
+このセクションでは、Content Analyticsで収集するデータにエクスペリエンスを含めるように選択できます。  エクスペリエンスとは、web ページを最初に訪問したユーザーが使用した URL を使用して再現可能な、web ページ上のすべてのテキストです。
 
-デフォルトでは、**[!UICONTROL エクスペリエンスを含める]** はオフになっています。 選択した場合、エクスペリエンスを含める URL を定義する必要があります。
+デフォルトでは、**[!UICONTROL エクスペリエンスを含める]**&#x200B;はオフになっています。選択した場合、エクスペリエンスを含める URL を定義する必要があります。
 
 次に該当する場合にのみ、エクスペリエンスを含めることを検討してください。
 
@@ -203,7 +203,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 新しい設定や実装されていない設定にエクスペリエンスを含めるには：
 
-![Content Analytics 設定のエクスペリエンスキャプチャと定義 ](../assets/aca-configuration-experience.png)
+![コンテンツ分析設定エクスペリエンスの取り込みと定義](../assets/aca-configuration-experience.png)
 
 1. **[!UICONTROL エクスペリエンスを含める]** を有効にします。 エクスペリエンスを有効にする切り替えは、次の影響を受けます。
 
@@ -213,7 +213,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 1. Web サイト上でコンテンツをレンダリングする方法のパラメーターを指定します。 パラメーターは、0 個以上の **[!UICONTROL ドメイン正規表現]** と **[!UICONTROL クエリパラメーター]** の組み合わせです。 クエリパラメーターは、ページ上のコンテンツに影響を与えるパラメーターを示します。 この入力により、Content Analyticsは、一意のエクスペリエンスを定義する際に、ページ上のコンテンツに影響を与えないパラメーターを無視することができます。
    1. **[!UICONTROL ドメイン正規表現]** を入力します（例：`/^(?!.*\b(store|help|admin)\b)/`）。 `/` を使用して、正規表現をエスケープする必要があります。 ドメインの正規表現は、これらのパラメーターが適用される URL を示します。 例えば、複数のサイトがあり、サイトごとに異なるパラメーターがコンテンツを駆動する場合があります。 クエリパラメーターがすべてのページに適用される場合は、`.*` を使用してすべてのページを指定できます。
-   1. **[!UICONTROL クエリパラメーター]** のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
+   1. **[!UICONTROL クエリパラメーター]**&#x200B;のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
 1. 正規表現とクエリパラメーターの別の組み合わせを追加する場合は、「**[!UICONTROL 正規表現を追加]**」を選択します。
 
@@ -287,11 +287,11 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 #### 新しい設定 {#new-configuration}
 
-新しい設定では、既存のタグプロパティを使用するか、新しいタグプロパティを作成するかを定義する必要があります。 また、正規表現を使用して、含めるか除外するページとアセットを定義する必要があります。
+新しい設定では、既存のタグプロパティを使用するか、新しいタグプロパティを作成するかを定義する必要があります。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義する必要があります。
 
 * 既存のタグプロパティを使用するには：
 
-  ![Content Analytics データ収集既存のタグ ](../assets/aca-configuration-datacollection-existingtag.png)
+  ![コンテンツ分析のデータ収集の既存タグ](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. 「**[!UICONTROL 既存を選択]**」を選択します。
    2. **[!UICONTROL タグプロパティ]** ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して、使用可能なオプションを検索し制限することができます。 別の実装済みContent Analytics設定で既に使用されているタグプロパティは選択できません。
@@ -299,30 +299,30 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 * 新しいタグプロパティを作成するには：
 
-  ![Content Analytics データ収集の新しいタグ ](../assets/aca-configuration-datacollection-newtag.png)
+  ![コンテンツ分析のデータ収集の新しいタグ](../assets/aca-configuration-datacollection-newtag.png)
 
-   1. **[!UICONTROL 新規作成]** を選択します。
+   1. 「**[!UICONTROL 新規作成]**」を選択します。
    1. **[!UICONTROL タグ名]** を指定します（例：`ACA Test for Documentation`）。
-   1. **[!UICONTROL Domains]** を指定します（例：`example.com`）。
+   1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
 
 * Content Analyticsのデータを収集する際に含める、または除外するページを指定します。
 
   **[!UICONTROL 含める/除外するページ]** の正規表現文字列を指定します。 <br/> 例：すべてのドキュメントページをContent Analyticsから除外する `^(?!.*documentation).*`。
 
-* コンテンツ分析用のデータを収集する際に含める、または除外するアセットを指定します。
+* コンテンツ分析用のデータを収集する際に、どのアセットを含めるか除外するかを指定します。
 
   含める/除外する **[!UICONTROL Assetsの正規表現文字列を指定し]** す。 <br/> 例：Content Analyticsからすべてのロゴ JPEGとSVG画像を除外する `^(?!.*(logo\.jpg|\.svg)).*$`。
 
 >[!IMPORTANT]
 >
->[ タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) ではなく [SDK ライブラリを使用する既存の Web SDK実装がある場合は、新しく作成したタグプロパティから ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) 自動で含まれる Web JavaScript拡張機能を手動で削除します。
+>[ タグ拡張機能 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) ではなく [SDK ライブラリを使用する既存の Web SDK実装がある場合は、新しく作成したタグプロパティから ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/library) 自動で含まれる Web JavaScript拡張機能を手動で削除します。
 >
 
 
 
 #### 既存の設定 {#existing-configuration}
 
-既存の設定では、タグプロパティは編集できません。 ただし、含めるか除外するページとアセットを編集することはできます。
+既存の設定では、タグプロパティは編集できません。 ただし、含めるまたは除外するページとアセットを編集することはできます。
 
 * コンテンツ分析用のデータを収集する際に含める、または除外するページを編集するには、「**[!UICONTROL エクスペリエンス]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 現在のContent Analytics設定のタグプロパティに関連付けられている ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)0}Adobe Content Analytics拡張機能にリダイレクトされます。 [正規表現を編集して、ページを含めたり除外したりできます。 変更を必ず [ 公開 ](#publish) します。
 
@@ -332,11 +332,11 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 必要な詳細をすべて入力すると、作成または変更されたアーティファクトの詳細が概要に表示されます。
 
-* 新しい設定を実装すると、**[!UICONTROL コンテンツ分析の _設定名_ の概要を実装する準備がほぼ整いました]** というメッセージが表示されます。
+* 新しい設定を実装すると、**[!UICONTROL コンテンツ分析用の&#x200B;_設定名_を実装する準備がほとんど整いました]**&#x200B;という概要が表示されます。
 
-* 既存の実装済み設定の場合、**[!UICONTROL Content Analytics 用に _設定名_ を実装しました]** という概要が表示されます。
+* 既に実装されている設定の場合は、**[!UICONTROL コンテンツ分析用の&#x200B;_設定名_を実装しました]**&#x200B;という概要が表示されます。
 
-![Content Analytics 設定の概要 ](../assets/aca-configuration-summary.png)
+![コンテンツ分析設定の概要](../assets/aca-configuration-summary.png)
 
 ### アクション {#actions}
 
@@ -345,7 +345,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="実装の確認"
->abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。コンテンツ分析に一般的に役立つ内容に基づいて、いくつかの設定がデフォルトで選択されていますが、ユーザー（データ管理者）は各アーティファクトの設定を確認し、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/>画像やテキストの属性を取得するために、アドビでは、次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得される URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされている画像にタグを付けることはできません。"
+>abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいてコンテンツ分析を設定します。コンテンツ分析に一般的に役立つ内容に基づいて、いくつかの設定がデフォルトで選択されていますが、ユーザー（データ管理者）は各アーティファクトの設定を確認し、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/>画像やテキストの属性を取得するために、アドビでは、次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得される URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされる画像にタグを付けないでください。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -358,25 +358,25 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
    * **[!UICONTROL Customer Journey Analytics]** 設定：
       * 選択したデータビューが更新され、Content Analyticsのディメンションと指標が表示されます。
       * 選択したデータビューに関連付けられた接続が変更され、Content Analytics イベントと属性データセットが含まれるようになりました。
-      * コンテンツ分析レポートテンプレートがWorkspaceに追加されます。
+      * コンテンツ分析レポートテンプレートが Workspace に追加されます。
 
 
    * **[!UICONTROL Adobe Experience Platform]** 設定：
-      * Content Analytics イベント、アセット属性、（設定されている場合は）エクスペリエンス属性をモデル化するスキーマの作成。
-      * Content Analytics イベント、アセット属性および（設定されている場合は）エクスペリエンス属性を収集するデータセットの作成。
-      * 機能サービスを使用して Content Analytics イベントからコンテンツ属性を生成および更新するデータフローの作成。
+      * コンテンツ分析イベント、アセット属性および（設定した場合）エクスペリエンス属性をモデル化するスキーマの作成。
+      * コンテンツ分析イベント、アセット属性および（設定した場合）エクスペリエンス属性を収集するデータセットの作成。
+      * 機能サービスを使用してコンテンツ分析イベントからコンテンツ属性を生成および更新するデータフローの作成。
 
 
-   * **[!UICONTROL データ収集]** 設定：
-      * 新しいタグプロパティまたは既存のタグプロパティは、Content Analyticsのデータ収集をサポートするように設定されます。 この設定は、Tags 用のAdobe Content Analytics 拡張機能を含めることを意味します。
-      * Content Analytics イベント用にデータストリームが作成されます。
-      * Adobe Content Analytics 拡張機能は、Content Analytics イベントが Content Analytics 用のデータストリームに確実に送信されるように設定されています。
-      * Web SDKがタグプロパティ用に設定されていない場合、コンテンツ分析イベントのみを送信する新しい web SDK設定が作成されます。
+   * **[!UICONTROL データ収集]**&#x200B;設定：
+      * 新しいタグプロパティまたは既存のタグプロパティは、Content Analyticsのデータ収集をサポートするように設定されます。 つまり、この設定には、タグ用の Adobe コンテンツ分析拡張機能が含まれます。
+      * コンテンツ分析イベント用のデータストリームが作成されます。
+      * Adobe コンテンツ分析拡張機能を設定すると、コンテンツ分析イベントがコンテンツ分析用のデータストリームに送信されます。
+      * タグプロパティに対して Web SDK を設定していない場合、コンテンツ分析イベントのみを送信する新しい Web SDK 設定が作成されます。
       * Web SDKがこのタグプロパティ用に設定されている場合、既存の web SDKの設定は変更されません。
 
 
-* **[!UICONTROL 保存]**：実装された設定に対する変更が保存され、実装が更新されます。
-* **[!UICONTROL 終了]**。 ガイド付き設定を終了します。 実装された設定に対して行われた変更はすべて破棄されます。
+* **[!UICONTROL 保存]**：実装した設定に行った変更は保存され、実装が更新されます。
+* **[!UICONTROL 終了]**。ガイド付き設定を終了します。実装した設定に行ったすべての変更は破棄されます。
 
 
 ## 公開 {#publish}
@@ -386,5 +386,5 @@ Content Analytics設定のデータの収集を開始するには、[ 実装 ](m
 
 >[!MORELIKETHIS]
 >
->[ 手動設定 ](manual.md)
+>[手動設定](manual.md)
 >
