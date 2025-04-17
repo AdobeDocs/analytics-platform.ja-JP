@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analyticsのカスタムスキーマの作成
-description: Customer Journey Analyticsのカスタムスキーマを作成する方法を説明します
+title: Customer Journey Analytics のカスタムスキーマの作成
+description: Customer Journey Analytics のカスタムスキーマの作成方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Adobe Experience Platform での目的のカスタムスキーマの作成"
->abstract="Adobe Experience Platform UI を使用してスキーマを作成し、アドビがデータを保存するための正しい形式を認識できるようにします。<br><br>この手順では、組織で合意されたスキーマを実際に作成します。 Adobe Experience Platform インターフェイスでスキーマを作成するのにかかる推定時間は、作成する必要があるディメンションと指標の数に応じて約 1 週間です。"
+>title="Adobe Experience Platform で目的のカスタムスキーマを作成"
+>abstract="Adobe Experience Platform UI を使用してスキーマを作成し、アドビがデータを格納するための正しい形式を認識できるようにします。<br><br>この手順には、組織で合意されたスキーマの実際の作成が含まれます。Adobe Experience Platform インターフェイスでスキーマを作成するのにかかる推定時間は、作成する必要があるディメンションと指標の数に応じて約 1 週間です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="「Adobe Analytics ExperienceEvent」フィールドグループを使用したスキーマの作成"
->abstract="「Adobe Analytics ExperienceEvent」フィールドグループを使用して、Adobe Analytics で使用されるすべてのフィールドを含むスキーマを Adobe Experience Platform で作成します。<br><br>「Adobe Analytics ExperienceEvent」フィールドグループに基づくスキーマの作成は簡単で、完了するまでに数分しかかかりません。"
+>title="Adobe Analytics ExperienceEvent フィールドグループを使用したスキーマの作成"
+>abstract="「Adobe Analytics ExperienceEvent」フィールドグループを使用して、Adobe Analytics で使用されるすべてのフィールドを含むスキーマを Adobe Experience Platform に作成します。<br><br>Adobe Analytics ExperienceEvent フィールドグループに基づくスキーマの作成は簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,8 +36,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="プロファイルでのスキーマの有効化"
->abstract="Adobe Real-Time CDP で使用するために、スキーマのプロファイルを有効にします。この手順は、Adobe Real-Time CDP と統合する必要があることを選択したので表示されます。<br><br>この手順では 1 つのボックスをクリックするだけなので、この手順には数分しかかかりません。"
+>title="プロファイルのスキーマを有効にする"
+>abstract="Adobe Real-Time CDP で使用するために、スキーマ内のプロファイルを有効にします。この手順は、Adobe Real-Time CDP との統合を選択したので表示されます。<br><br>この手順では 1 つのボックスをクリックするだけなので、この手順には数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,46 +45,46 @@ ht-degree: 54%
 
 >[!IMPORTANT]
 >
->カスタムスキーマの作成を開始する前に、データチームや組織全体の他の関係者と協力して、Customer Journey Analyticsおよび使用するその他のAdobe Experience Platform アプリケーションに対する組織の理想的なスキーマデザインを特定します。 詳しくは、[Customer Journey Analyticsで使用するスキーマの構築 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) を参照してください。
+>カスタムスキーマの作成を開始する前に、組織全体のデータチームや他の関係者と協力して、Customer Journey Analytics や使用する他の Adobe Experience Platform アプリケーションに対する組織の理想的なスキーマ設計を特定します。詳しくは、[Customer Journey Analytics で使用するスキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
 
-以下の節では、Customer Journey Analyticsで使用できるスキーマの作成方法について説明します。 次のスキーマオプションを使用できます。
+次の節では、Customer Journey Analytics で使用できるスキーマの作成方法について説明します。 次のスキーマオプションを使用できます。
 
-* **カスタム XDM スキーマ：** （推奨）組織のニーズと使用する特定の Platform アプリケーションに合わせてカスタマイズされた、合理化されたスキーマを提供します。 必要な今後の変更は簡単です。
+* **カスタム XDM スキーマ：**（推奨）組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマを可能にします。必要な今後の変更は簡単です。
 
-* **Adobe Analytics ExperienceEvent フィールドグループを使用するAdobe Analytics スキーマ：** 不要なフィールドを何千も追加する必要があります。 必要な今後の変更はより困難になります。
+* **Adobe Analytics ExperienceEvent フィールドグループを使用する Adobe Analytics スキーマ：**&#x200B;数千の不要なフィールドの追加が必要です。必要な今後の変更はより困難になります。
 
-これらのスキーマオプションについて詳しくは、[Customer Journey Analytics用のスキーマを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
+これらのスキーマオプションについて詳しくは、[Customer Journey Analytics のスキーマの選択](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)を参照してください。
 
 ## スキーマの作成
 
-Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Platformに収集するデータのモデルを表します。
+Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience Platform に収集するデータのモデルを表します。
 
 カスタムスキーマを作成するには：
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. Adobe Experience Platformの左パネルの「**[!UICONTROL DATA MANAGEMENT]**」で「[!UICONTROL  スキーマ ]」を選択します。
+1. Adobe Experience Platform の左側のパネルで、[!UICONTROL データ管理]内の「**[!UICONTROL スキーマ]**」を選択します。
 
-1. **[!UICONTROL スキーマを作成]** を選択します。
+1. 「**[!UICONTROL スキーマを作成]**」を選択します。
 
-1. スキーマ作成ウィザードの **[!UICONTROL クラスを選択]** 手順で、次の操作を行います。
+1. スキーマを作成ウィザードの&#x200B;**[!UICONTROL クラスを選択]**&#x200B;手順で、次の操作を行います。
 
-   1. **[!UICONTROL エクスペリエンスイベント]** を選択します。
+   1. 「**[!UICONTROL エクスペリエンスイベント]**」を選択します。
 
-      ![ エクスペリエンスイベントをハイライト表示したスキーマの作成 ](assets/create-ee-schema-wizard-step-1.png)
+      ![エクスペリエンスイベントをハイライト表示するスキーマの作成](assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    エクスペリエンスイベントスキーマは、プロファイルの _動作_ をモデル化するために使用します（シーン名、買い物かごに追加するプッシュボタンなど）。 個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
+      >    エクスペリエンスイベントスキーマを使用すると、プロファイルの&#x200B;_動作_（シーン名、買い物かごに追加するプッシュボタンなど）をモデル化できます。個々のプロファイルスキーマは、プロファイル&#x200B;_属性_（名前、メール、性別など）のモデル化に使用されます。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
 
-1. [!UICONTROL  スキーマを作成 ] ウィザードの [!UICONTROL  名前とレビューの手順 ] で、次の操作を行います。
+1. [!UICONTROL スキーマを作成]ウィザードの[!UICONTROL 名前とレビューの手順]で、次の操作を行います。
 
-   1. スキーマの **[!UICONTROL スキーマ表示名]** と（オプション） **[!UICONTROL 説明]** を入力します。
+   1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![ スキーマフィールドに名前を付けるを表示するスキーマを作成ウィンドウ ](assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -108,21 +108,21 @@ Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Pl
 
    1. （オプション）含める追加のフィールドグループを選択します。
 
-      カスタム XDM スキーマを作成するのではなく、デフォルトのAdobe Analytics スキーマを使用することを選択した場合は、ここでAdobe Analytics ExperienceEvent フィールドグループを追加できます。 ただし、Adobeでは、このフィールドグループを追加するのではなく、カスタム XDM スキーマを作成することをお勧めします。
+      カスタム XDM スキーマを作成するのではなく、デフォルトの Adobe Analytics スキーマを使用することを選択した場合は、ここで Adobe Analytics ExperienceEvent フィールドグループを追加できます。ただし、アドビでは、このフィールドグループを追加するのではなく、カスタム XDM スキーマを作成することをお勧めします。
 
-      これらのスキーマオプションについて詳しくは、[Customer Journey Analytics用のスキーマを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
+      これらのスキーマオプションについて詳しくは、[Customer Journey Analytics のスキーマの選択](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)を参照してください。
 
    1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
-1. （オプション）スキーマに含めるカスタムフィールドがある場合は、カスタムフィールドグループを作成し、そのフィールドグループにカスタムフィールドを追加します。
+1. （オプション）スキーマに含めるカスタムフィールドがある場合は、カスタムフィールドグループを作成し、カスタムフィールドをフィールドグループに追加します。
 
    1. 「**[!UICONTROL フィールドグループ]**」セクションで、「**[!UICONTROL +追加]**」を選択します。
 
       ![フィールドグループを追加](assets/add-field-group-button.png)
 
-   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
+   1. [!UICONTROL フィールドグループを追加]ダイアログで、「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
 
-   1. 表示名と説明（オプション）を指定し、「**[!UICONTROL フィールドグループを追加]**」を選択します。
+   1. 表示名とオプションの説明を指定して、「**[!UICONTROL フィールドグループを追加]**」を選択します。
 
 1. [!UICONTROL 構造]パネルで、スキーマ名の隣にある「**[!UICONTROL +]**」をクリックします。
 
@@ -132,11 +132,11 @@ Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Pl
 
    >[!NOTE]
    >
-   >そのフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを探します。 または [ 新しいフィールドグループを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) して [ 新しい ID フィールドを追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) （`ecid`、`crmId` など、必要なその他）をフィールドグループに追加し、その新しいフィールドグループを選択します。
+   >このフィールドグループが使用できない場合は、ID フィールドを含む別のフィールドグループを検索します。または、フィールドグループに[新しいフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja)し、（`ecid`、`crmId` など）[新しい ID フィールドを追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=ja#define-a-identity-field)して、この新しいフィールドグループを選択します。
 
    ![ID オブジェクト](assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別します。 人物の ID を追跡するために使用できる属性は他にも多数あります（顧客 ID、ロイヤルティ ID など）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。ユーザーの ID を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -158,15 +158,15 @@ Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Pl
 
    「**[!UICONTROL 保存]**」を選択します。
 
-1. （オプション）Customer Journey Analyticsを RTCDP と統合する場合は、スキーマの名前を表示しているスキーマのルート要素を選択してから、「**[!UICONTROL プロファイル]**」スイッチを選択します。
+1. （オプション）Customer Journey Analytics を RTCDP と統合する場合は、スキーマの名前が表示されているスキーマのルート要素を選択し、**[!UICONTROL プロファイル]**&#x200B;スイッチを選択します。
 
    プロファイルのスキーマを有効にするよう求められます。有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータをリアルタイム顧客プロファイルと結合します。
 
-   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)を参照してください。
+   詳しくは、[リアルタイム顧客プロファイルで使用するスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ja#profile)を参照してください。
 
    >[!IMPORTANT]
    >
-   >プロファイルでスキーマを有効にした後は、プロファイルで無効にすることはできません。
+   >プロファイルのスキーマを有効にした後は、プロファイルに対して無効にすることはできません。
 
    ![プロファイルでスキーマを有効にする](./assets/enable-for-profile.png)
 
@@ -184,7 +184,7 @@ Web SDK実装用に定義するカスタムスキーマは、Adobe Experience Pl
 
    * Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
 
-   * Experience Cloud ID をプライマリ識別子、メールを識別子として定義します。
+   * Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
 
    * プロファイルでスキーマを有効にする
 

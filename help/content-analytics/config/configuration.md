@@ -8,7 +8,7 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 0%
+ht-degree: 19%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 0%
 
 Content Analyticsを設定する前に、次の前提条件が満たされていることを確認してください。
 
-* Content Analytics で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録している。 設定するユーザーエージェント文字列は <code>AdobeFeaturization/1.0 です。</code>。
-* 通常の行動データ収集に [JavaScriptを使用した web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装している場合は、デフォルト名 <code>alloy を使用していることを確認します</code> JavaScript ライブラリ用。
+* コンテンツ分析で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。設定するユーザーエージェント文字列は <code>AdobeFeaturization/1.0 です。</code>。
+* 通常の行動データ収集に [JavaScriptを使用した web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装している場合は、デフォルト名 <code>alloy を使用していることを確認します</code> JavaScript ライブラリ用。
 * Customer Journey Analyticsの製品管理者の役割に加えて、接続の管理とデータビューの管理を行う権限があります。
 * Content Analyticsのエクスペリエンスを収集する場合は、web ページの変更に基づいて [Content Analyticsのバージョン管理 ](manual.md#versioning) を設定および更新してください。
 * [ データ収集権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"} が必要です。
@@ -46,8 +46,8 @@ Content Analyticsを設定する前に、次の前提条件が満たされてい
    * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たした場合にのみ可能です。
       * ページ URL を使用して、サイト上のページを再現できる必要があります。
       * 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再生でき、Cookie やその他のパーソナライゼーションメカニズムには依存しません。
-   * コンテンツエンゲージメントの分析とインサイトを取り込むページを明確に理解している。
-   * コンテンツエンゲージメントの分析とインサイトを取り込むアセット（タイプ）を明確に理解している。
+   * コンテンツエンゲージメントの分析とインサイトを取り込むページを明確に理解しています。
+   * コンテンツエンゲージメントの分析とインサイトを取り込むアセット（タイプ）を明確に理解しています。
 
 
 ## アクセス制御
@@ -66,7 +66,7 @@ Content Analyticsを設定する前に、次の前提条件が満たされてい
 
 >[!MORELIKETHIS]
 >
->* [ ガイド付き設定 ](guided.md)
->* [ 手動設定 ](manual.md)
+>* [ガイド付き設定](guided.md)
+>* [手動設定](manual.md)
 >* [アクセス制御](/help/technotes/access-control.md)
 >

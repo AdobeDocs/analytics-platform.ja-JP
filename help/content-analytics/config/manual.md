@@ -1,6 +1,6 @@
 ---
-title: Content Analytics の手動設定
-description: Content Analytics の手動設定方法
+title: コンテンツ分析手動設定
+description: コンテンツ分析の手動設定方法
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -8,11 +8,11 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Content Analytics の手動設定
+# コンテンツ分析手動設定
 
 {{release-limited-testing}}
 
@@ -67,7 +67,7 @@ Adobe Content Analytics拡張機能で変更を行った後、使用している
 
 >[!MORELIKETHIS]
 >
->[ ガイド付き設定 ](guided.md)
+>[ガイド付き設定](guided.md)
 >[データ収集タグの公開 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) 概要
 >
 

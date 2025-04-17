@@ -7,7 +7,7 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ の次または前の項目パネルに関する説明です**_。<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous) 次または前の項目パネル _を参照してください。
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ の次の項目または前の項目パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[次の項目または前の項目パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous)を参照してください。_
 
 >[!ENDSHADEBOX]
 

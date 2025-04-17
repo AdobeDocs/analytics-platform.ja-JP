@@ -25,16 +25,16 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2025年3月** | |
 | 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/collect-session-id.md)からデータを収集するためのユースケースを追加しました。 |
 | **2025年2月** |  |
-| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
-| BI 拡張機能 - 拡張サポート | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
+| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
+| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
 | **2025年1月** |  |
-| 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/manage-connections?lang=ja#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。また、接続別、データセット別、サンドボックス別、タグ別に使用状況データを表示して分類することもできます。 |
+| 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。また、接続別、データセット別、サンドボックス別、タグ別に使用状況データを表示して分類することもできます。 |
 | 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |
 | 製品の使用状況 | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
 | ガイド付き分析 | ガイド付き分析内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
 | Journey Optimizer のレポートページでの Customer Journey Analytics のカスタムテンプレートの使用に関するドキュメント | [Customer Journey Analytics でテンプレートを作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできるようになりました。以前は、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできませんでした。 |
-| Analysis Workspace のテンプレート | [事前定義済みテンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)および[会社テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates)が Customer Journey Analytics で使用できるようになりました。 |
-| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
+| Analysis Workspace のテンプレート | [事前定義済みテンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)および[会社テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates)を Customer Journey Analytics で使用できるようになりました。 |
+| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
 
 ## 2024
 
@@ -173,7 +173,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | プロジェクトのリンク共有（ログインは不要） | <p>Analysis Workspace へのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明するために、既存のドキュメントを更新しました。</p> <p>ユーザードキュメントの更新内容には、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)と[共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md)が含まれています。</p> <p>[環境設定](/help/analysis-workspace/user-preferences.md)に管理者向けのオプションを追加しました。</p> |
 | **2023年2月** | |
 | Customer Journey Analytics と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
-| Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)に関する新しい節です。 |
+| Audiences ドキュメントの更新 | [待ち時間に関する考慮事項](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish#latency)に関する新しい節です。 |
 | Audiences ドキュメントの更新 | オーディエンスを作成すると、[新しい Customer Journey Analytics オーディエンスごとに Experience Platform ストリーミングセグメントが作成](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=ja#after-audience-created)されます。 |
 | Workspace のカレンダーと日付範囲 | 内容を更新して、相対的な日付範囲、数式計算の更新およびカレンダー UI の変更について説明しました。[パネルを基準とする相対的な日付範囲について](/help/components/date-ranges/overview.md#custom-date-ranges)を参照してください。 |
 | モバイルスコアカード | 比較日付範囲の表示／非表示を切り替える方法について説明する新しい節をドキュメントに追加しました。Customer Journey Analytics の[比較日付範囲の表示](/help/mobile-app/create-scorecard.md#show-comparison-dates)を参照してください。 |

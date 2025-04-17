@@ -7,7 +7,7 @@ role: User
 source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 14%
+ht-degree: 78%
 
 ---
 
@@ -61,48 +61,48 @@ ht-degree: 14%
 
 
 
-このトピックでは、顧客のターゲティングやパーソナライゼーションのために、Customer Journey Analyticsで特定されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開する方法について説明します。
+このトピックでは、Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)に Customer Journey Analytics で識別されたオーディエンスを作成して公開し、顧客のターゲティングやパーソナライゼーションを実現する方法について説明します。
 
-この [ 概要 ](/help/components/audiences/audiences-overview.md) を参照して、Customer Journey Analytics オーディエンスの概念を理解してください。
+Customer Journey Analytics オーディエンスの概念について詳しくは、この[概要](/help/components/audiences/audiences-overview.md)を参照してください。
 
 ## オーディエンスの作成と公開 {#create}
 
-1. オーディエンスを作成して公開するには、次のいずれかの操作を行います。
+1. オーディエンスを作成および公開するには、次のいずれかの操作を行います。
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]** インターフェイス内から | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL オーディエンス]** を選択します。 オーディエンス インターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
-   | Analysis Workspaceのビジュアライゼーションから | Analysis Workspaceの多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。 例えば、**[!UICONTROL フリーフォームテーブル]** の項目のコンテキストメニューから [ オーディエンスを作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を選択したり、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) のノードを選択したりできます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニー キャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：** オーディエンスに計算指標を含めることはできません。 計算指標を含むオーディエンスを作成しようとしても、計算指標はオーディエンスの定義に含まれません。</p> |
-   | セグメントの作成/編集 UI から | 「このセグメントからオーディエンスを作成 **[!UICONTROL というボックスをオンに]** ます。 この方法を使用すると、セグメントが事前設定されます。 詳しくは、[ フィルターの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
+   | **[!UICONTROL オーディエンス]** インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
+   | Analysis Workspace のビジュアライゼーションから | Analysis Workspace の多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。例えば、[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の項目または[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)のノードのコンテキストメニューから「**[!UICONTROL オーディエンスを作成]**」を選択できます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**メモ：**&#x200B;オーディエンスに計算指標を含めることはできません。計算指標を含むオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。</p> |
+   | セグメントの作成/編集 UI から | 「このセグメントからオーディエンスを作成 **[!UICONTROL というボックスをオンに]** ます。 この方法を使用すると、セグメントが事前設定されます。 詳しくは、[フィルターの作成](/help/components/filters/create-filters.md)を参照してください。 |
 
    {style="table-layout:auto"}
 
-1. [ オーディエンスビルダー ](#audience-builder) を使用してオーディエンスを作成します。
+1. [オーディエンスビルダー](#audience-builder)を使用してオーディエンスを作成します。
 
-1. [ 日付プレビュー ](#data-preview) パネルを使用してデータを解釈します。
+1. [日付プレビュー](#data-preview)パネルを使用してデータを解釈します。
 
-1. 「**[!UICONTROL [!UICONTROL サンプル ID を表示]]**」を選択して、このオーディエンスの ID のサンプルを表示します。 **[!UICONTROL サンプル ID]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *サンプル ID を検索*] を使用してサンプル ID を検索できます。
+1. 「**[!UICONTROL [!UICONTROL サンプル ID を表示]]**」を選択して、このオーディエンスの ID のサンプルを表示します。**[!UICONTROL サンプル ID]** ダイアログでは、![検索](/help/assets/icons/Search.svg)、[!UICONTROL *サンプル ID を検索*]&#x200B;を使用してサンプル ID を検索できます。
 
 1. オーディエンスの設定を再度確認し、「**[!UICONTROL 公開]**」を選択します。
-オーディエンスが公開されたことを示す確認メッセージが表示されます。 このオーディエンスは、1 ～ 2 分でExperience Platformに表示されます。
+オーディエンスが公開されたことを示す確認メッセージが表示されます。このオーディエンスは、1～2 分で Experience Platform に表示されます。
 
-1. 同じメッセージ内で **[!UICONTROL AEPでオーディエンスを表示]** を選択すると、Adobe Experience Platformの [ セグメント UI](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/overview) に移動します。 詳しくは、次を参照してください。
+1. 同じメッセージ内で「**[!UICONTROL AEP でのオーディエンスの表示]**」を選択すると、Adobe Experience Platform の[セグメント UI](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/overview) に移動します。詳しくは、次を参照してください。
 
-## Audience builder
+## Audience Builder
 
-これらの設定を構成して、オーディエンスを定義または更新します。
+これらの設定を行い、オーディエンスを定義または更新します。
 
-![ 次の節で説明するオーディエンスの署名設定のスクリーンショット ](assets/create-audience.png)。
+![次の節で説明する設定を表示するオーディエンス作成のスクリーンショット](assets/create-audience.png)。
 
 | 設定 | 説明 |
 | --- | --- |
 | ![データ](/help/assets/icons/Data.svg) | オーディエンスの作成に使用するデータビューを選択します。 |
-| **[!UICONTROL 名前]** | オーディエンスの名前。 例：`Really Interested in Potential Car Buyers` |
-| **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。 1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
-| **[!UICONTROL 説明]** | 他のオーディエンスと区別するための、オーディエンスの説明。 例：`Build an audience of really interested potential car buyers` |
-| **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/>以下から選択できます <ul><li>**[!UICONTROL 1 回だけ]** オーディエンス：更新を必要としないオーディエンス（デフォルト）。 例えば、このオプションは、特定の 1 回限りのキャンペーンに役立ちます。<br/>1 回限りの日付範囲 **[!UICONTROL を指定する必要があり]** す。 ![ カレンダー ](/help/assets/icons/Calendar.svg) を使用して日付範囲を入力できます。</li><li>爽やかなオーディエンス。 選択できる項目は次のとおりです。<ul><li>**[!UICONTROL 4 時間ご]**: 4 時間ごとに更新されるオーディエンス。</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス。</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、次を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウを更新]**. オーディエンスが評価される、今日からのルックバック日数を定義します。 オプションから選択するか、カスタム時間を定義できます。 最大 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスが更新を停止するタイミングを定義します。 ![ カレンダー ](/help/assets/icons/Calendar.svg) を使用して日付を選択できます。 デフォルトは作成日の 1 年後です。有効期限が切れるオーディエンスは、予定レポートの有効期限が切れる場合と同様に扱われます。 管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul> Customer Journey Analyticsの使用権限に応じて、オーディエンスの更新回数には 75 から 150 の制限があります。</li></ul> |
+| **[!UICONTROL 名前]** | オーディエンスの名前。例：`Really Interested in Potential Car Buyers` |
+| **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
+| **[!UICONTROL 説明]** | 他のオーディエンスと区別するためのオーディエンスの説明。例：`Build an audience of really interested potential car buyers` |
+| **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/>以下から選択できます。 <ul><li>**[!UICONTROL 1 回限り]**&#x200B;のオーディエンス：更新を必要としないオーディエンス（デフォルト）。このオプションは、特定の 1 回限りのキャンペーンなどに役立ちます。<br/>**[!UICONTROL 1 回限りの日付範囲]**&#x200B;を指定する必要があります。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を入力できます。</li><li>更新が必要なオーディエンス。選択できる項目は次のとおりです。<ul><li>**[!UICONTROL 4 時間ごと]**：4 時間ごとに更新されるオーディエンス</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、以下を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウの更新]**。オーディエンスが評価される、ルックバック期間（今日を基点としてカウントした日数）を定義します。オプションから選択するか、カスタム期間を定義できます。最大期間は 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスの更新を停止する日数を定義します。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付を選択できます。デフォルトは作成日の 1 年後です。有効期限が切れるオーディエンスは、スケジュール済みレポートの有効期限が切れる場合と同様に扱われます。管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul> Customer Journey Analytics の使用権限に応じて、オーディエンスの更新回数は 75〜150 回に制限されています。</li></ul> |
 | **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメント ]**パネルから 1 つ以上のセグメントをセグメ**[!UICONTROL  ト領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *セグメントを検索*] を使用して、セグメントを検索できます。 最大 20 個のセグメントを追加できます。 セグメントは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子で結合することができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルまたは列に適用されているセグメントはすべて保持されます。 自動的に適用されたセグメントを削除できます。</p> |
-| **[!UICONTROL データのプレビュー]** | 「![ 情報 ](/help/assets/icons/Info.svg)」を選択すると、選択した日付範囲の [ データプレビュー ](#data-preview) の表示/非表示が切り替わります。 |
+| **[!UICONTROL データのプレビュー]** | 選択した日付範囲の[データのプレビュー](#data-preview)を表示または非表示にするには、![情報](/help/assets/icons/Info.svg) を選択します。 |
 
 ## データのプレビュー
 
@@ -110,64 +110,64 @@ ht-degree: 14%
 
 | 要素 | 説明 |
 | --- | --- |
-| **[!UICONTROL 人物合計]** | このオーディエンスの合計人数の概要。最大サイズは 2,000 万人です。 オーディエンスが 2,000 万人を超える場合は、公開する前にオーディエンスサイズを小さくする必要があります。 |
+| **[!UICONTROL 人物合計]** | このオーディエンスの合計人数の概要。最大サイズは 2,000 万人です。 オーディエンスが 2,000 万人を超える場合は、オーディエンスを公開する前にサイズを小さくする必要があります。 |
 | **[!UICONTROL オーディエンスサイズの制限]** | このオーディエンスが 2,000 万の上限からどの程度離れているかを示すビジュアライゼーション。 |
-| **[!UICONTROL オーディエンス再来訪の見込み]** | この値を使用して、サイト、モバイルアプリまたは他のチャネルに戻ってくる、このオーディエンスのユーザーを再ターゲットに設定できます。<p>再来訪の可能性がある顧客の推定数に対して、期間 ]****[!UICONTROL  次の 7 日間 **[!UICONTROL 、次の 2 週間]** または **[!UICONTROL 次の月]**）を選択できます。 |
-| **[!UICONTROL 再来訪する見込み]** | この数により、選択した期間内の再訪問者の推定数が表示されます。 この数は、このオーディエンスの過去のチャーンレートを使用して予測されます。 |
-| **[!UICONTROL 指標をプレビュー]** | 特定の指標を選択して、定義したオーディエンスに基づいて、その指標のデータがどのように生成されているかを確認できます。  各プレビュー指標には、オーディエンスに基づく指標の合計が表示されます。 データビューで定義された、指標の全体的な合計に対するオーディエンスベースの指標の割合。 例えば、381 人（選択した指標）は、オーディエンス定義の結果であり、データビューで使用可能な合計ユーザーの 5% になります。 データ表示で使用できる任意の指標を選択できます。 |
+| **[!UICONTROL オーディエンス再来訪の見込み]** | この値を使用すると、サイト、モバイルアプリまたは他のチャネルに戻ってくるこのオーディエンス内の人物を再ターゲティングできます。<p>再来訪の可能性がある顧客の推定数に対して期間（**[!UICONTROL 次の 7 日間]**、**[!UICONTROL 次の 2 週間]**、**[!UICONTROL 次の 1 か月]**）を選択できます。 |
+| **[!UICONTROL 再来訪する見込み]** | この数値は、選択した期間内に再訪問者となる顧客の推定数を示します。この数値は、このオーディエンスの過去のチャーン率を使用して予測されます。 |
+| **[!UICONTROL 指標をプレビュー]** | 特定の指標を選択すると、その指標のデータが定義したオーディエンスに基づいてどのようになっているかを確認できます。各プレビュー指標には、オーディエンスに基づいて指標の合計が表示されます。データビューで定義された指標の全体合計からのオーディエンスベースの指標の割合。例えば、381 人（選択した指標）はオーディエンス定義の結果であり、データビューで使用可能な合計人数の 5％に相当します。データ表示で使用できる任意の指標を選択できます。 |
 | **[!UICONTROL 含まれる名前空間]** | オーディエンス内のユーザーに関連付けられている特定の名前空間。例としては、ECID、CRM ID、メールアドレスなどがあります。 |
 | **[!UICONTROL サンドボックス]** | このオーディエンスが格納されている [Experience Platform サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)。このオーディエンスを Platform に公開すると、このサンドボックスの範囲内でのみオーディエンスを操作できます。 |
 
 {style="table-layout:auto"}
 
-## オーディエンスを作成して公開した後はどうなりますか。 {#after-audience-created}
+## オーディエンスを作成および公開した後に行われること {#after-audience-created}
 
-Customer Journey Analyticsでオーディエンスを作成して公開すると、そのオーディエンスをExperience Platformで使用できるようになります。 Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
+Customer Journey Analytics でオーディエンスを作成および公開すると、そのオーディエンスは Experience Platform で使用できます。Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメンテーション用に設定されている場合にのみ作成されます。
 
-* Platform のオーディエンスは、Customer Journey Analytics オーディエンスと同じ名前および説明を共有します。 オーディエンスが一意になるように、名前にCustomer Journey Analytics オーディエンス ID が追加されます。
-* Customer Journey Analyticsでオーディエンスの名前や説明に加えられた変更は、すべてExperience Platformに反映されます。
-* Customer Journey Analyticsでオーディエンスを削除しても、オーディエンスのプロファイルメンバーシップが期限切れになるまで、オーディエンスは引き続きExperience Platformで使用できます。 プロファイルメンバーシップは、1 回限りのオーディエンスの場合は 420 日後、繰り返しオーディエンスの場合は 16 日後に有効期限が切れます。
+* Platform のオーディエンスは、Customer Journey Analytics オーディエンスと同じ名前および説明を共有します。オーディエンスが一意であることを確保するために、名前に Customer Journey Analytics オーディエンス ID が追加されます。
+* Customer Journey Analytics でオーディエンスの名前または説明に行った変更は、Experience Platform に反映されます。
+* Customer Journey Analytics でオーディエンスを削除した場合、オーディエンスのプロファイルメンバーシップの有効期限が切れるまで、そのオーディエンスは Experience Platform で引き続き使用できます。プロファイルメンバーシップは、1 回限りのオーディエンスの場合は 420 日後に、繰り返しオーディエンスの場合は 16 日後に有効期限が切れます。
 
 ## 待ち時間に関する考慮事項 {#latency}
 
-オーディエンスの公開前、公開中および公開後の複数の時点で、待ち時間が発生する可能性があります。 発生し得る待ち時間の概要は次のとおりです。
+オーディエンスの公開前、公開中および公開後の複数の時点で、待ち時間が発生する可能性があります。発生し得る待ち時間の概要は次のとおりです。
 
-![ この節で説明しているように、オーディエンスの公開に待ち時間が発生します。](assets/latency-diagram.svg)
+![この節で説明するオーディエンスの公開の待ち時間。](assets/latency-diagram.svg)
 
 |  | 待ち時間の時点 | 待ち時間の継続時間 |
 | --- | --- | --- |
-| 表示しない | Adobe Analyticsから Analytics ソースコネクタ（A4T） | 最大 30 分 |
+| 未表示 | Adobe Analytics から Analytics ソースコネクタ（A4T） | 最大 30 分 |
 | 1 | （Analytics ソースコネクタまたはその他のソースから）データレイクへのデータ取り込み | 最大 90 分 |
-| 2 | Experience Platform Data Lake からCustomer Journey Analyticsへのデータ取り込み | 最大 90 分 |
+| 2 | Experience Platform Data Lake から Customer Journey Analytics へのデータ取り込み | 最大 90 分 |
 | 3 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | 数秒 |
 | 4 | オーディエンスの更新頻度 | <ul><li>1 回の更新（5 分未満の待ち時間）</li><li>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
-| 5 | Adobe Experience Platformでの宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
+| 5 | Adobe Experience Platform での宛先の作成：新しいセグメントのアクティブ化 | 1～2 時間 |
 
 {style="table-layout:auto"}
 
-## Experience PlatformでのCustomer Journey Analytics オーディエンスの使用 {#audiences-aep}
+## Experience Platform での Customer Journey Analytics オーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-Time Customer Data Platformにストリーミングします。 Customer Journey Analyticsは、接続設定時に [!UICONTROL  ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定したうえで、オーディエンスをExperience Platformに送信します。
+Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-Time Customer Data Platformにストリーミングします。 Customer Journey Analytics は、接続の設定時に[!UICONTROL ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定した上で、オーディエンスを Experience Platform に送信します。
 
-次に、Real-Time Customer Data Platformは、各名前空間/ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。 プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID がこのプロファイル内の他の ID にセグメントメンバーシップ属性として追加されます。 例えば、すべてのデバイス <user@adobe.com> チャネルにわたってターゲットを設定できます。 プロファイルが見つからない場合は、新しく作成されます。
+次に、Real-Time Customer Data Platform は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID をセグメントメンバーシップ属性としてこのプロファイル内の他の ID に追加します。<user@adobe.com> などをすべてのデバイスおよびチャネルにわたってターゲットに設定できます。プロファイルが見つからない場合は、新しく作成されます。
 
-Platform でCustomer Journey Analytics オーディエンスを表示するには：
+プラットフォームで Customer Journey Analytics オーディエンスを表示するには：
 
-1. 左側のパネルで **[!UICONTROL 顧客]** を展開し、「**[!UICONTROL オーディエンス]**」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
+1. 左側のパネルで&#x200B;**[!UICONTROL 顧客]**&#x200B;を展開し、「**[!UICONTROL オーディエンス]**」を選択します。<!-- is there a folder called "Customer Journey Analytics? -->
 
-1. 「**[!UICONTROL 参照]** タブを選択します。
+1. 「**[!UICONTROL 参照]**」タブを選択します。
 
-1. Customer Journey Analyticsから公開したオーディエンスを見つけるには、次のいずれかの操作を行います。
+1. Customer Journey Analytics から公開したオーディエンスを見つけるには、次のいずれかの操作を行います。
 
-   ![ 左パネルの「オーディエンス」オプション ](assets/aep-audiences.png)
+   ![左パネルの「オーディエンス」オプション](assets/aep-audiences.png)
 
-   * **[!UICONTROL オリジン]** 列でテーブルを並べ替えると、[!UICONTROL **Customer Journey Analytics**] をオリジンとして示すオーディエンスが表示されます。
+   * **[!UICONTROL 接触チャネル]**&#x200B;列でテーブルを並べ替えると、[!UICONTROL **Customer Journey Analytics**] を接触チャネルとして示すオーディエンスが表示されます。
 
-   * ![ 接触チャネル ](/help/assets/icons/Filter.svg) に対して **[!UICONTROL フィルター]** を適用し、**[!UICONTROL Customer Journey Analytics]** を選択します。
+   * ![接触チャネル](/help/assets/icons/Filter.svg)に対して&#x200B;**[!UICONTROL フィルター]**&#x200B;を適用し、**[!UICONTROL Customer Journey Analytics]** を選択します。
 
-   * ![ 検索 ](/help/assets/icons/Search.svg) 検索フィールドを使用します。
+   * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-Platform でのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの [ セグメントビルダー UI ガイド [ の ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) の節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
 
 ### オーディエンス数の不一致について
 
@@ -208,33 +208,33 @@ Customer Journey Analytics オーディエンスは毎日のバッチ評価ジ�
 
 オーディエンスの投稿に関するよくある質問です。
 
-+++**Customer Journey Analyticsでユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか？**
++++**Customer Journey Analytics でユーザーがオーディエンスのメンバーでなくなった場合はどうなりますか？**
 
-この場合、exit イベントがCustomer Journey AnalyticsからExperience Platformに送信されます。
-
-+++
-
-+++**Customer Journey Analyticsでオーディエンスを削除するとどうなりますか？**
-
-Customer Journey Analytics オーディエンスが削除されると、そのオーディエンスはExperience Platform UI に表示されなくなります。 ただし、そのオーディエンスに関連付けられたプロファイルは、Experience Platformでは削除されません。
+この場合、離脱イベントが Customer Journey Analytics から Experience Platform に送信されます。
 
 +++
 
-+++**対応するプロファイルがReal-Time Customer Data Platformに存在しない場合、新しいプロファイルは作成されますか？**
++++**Customer Journey Analytics でオーディエンスを削除するとどうなりますか？**
+
+Customer Journey Analytics オーディエンスが削除されると、そのオーディエンスは Experience Platform UI に表示されなくなります。ただし、そのオーディエンスに関連付けられたプロファイルは、Experience Platform では削除されません。
+
++++
+
++++**対応するプロファイルが Real-Time Customer Data Platform に存在しない場合は、新しいプロファイルが作成されますか？**
 
 はい、作成されます。
 
 +++
 
-+++**Customer Journey Analyticsは、オーディエンスデータをパイプラインイベントとして送信しますか、それともデータレイクにも送られるフラットファイルとして送信しますか？**
++++**Customer Journey Analytics は、オーディエンスデータをパイプラインイベントとして送信しますか、それともデータレイクにも送られるフラットファイルとして送信しますか？**
 
-Customer Journey Analyticsは、パイプラインを介してデータをReal-Time Customer Data Platformにストリーミングし、このデータもデータレイクのシステムデータセットに収集されます。
+Customer Journey Analytics はパイプラインを介してデータを Real-Time Customer Data Platform にストリーミングし、このデータはデータレイク内のシステムデータセットにも収集されます。
 
 +++
 
 +++**Customer Journey Analyticsはどのような ID を送信しますか？**
 
-[ 接続設定 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection) で指定された ID/名前空間ペアのいずれかです。 特に、ユーザーがユーザー ID として使用するフィールドを選択する手順で使用されたペアです。
+[接続設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection)で指定された ID／名前空間ペアのいずれかです。特に、ユーザー ID として使用するフィールドをユーザーが選択する際の手順で使用されたペアです。
 
 +++
 
@@ -244,15 +244,15 @@ Customer Journey Analyticsは、パイプラインを介してデータをReal-T
 
 +++
 
-+++**Real-Time Customer Data PlatformはCustomer Journey Analytics メッセージも処理しますか？ Customer Journey Analyticsでは、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
++++**Real-Time Customer Data Platform は Customer Journey Analytics メッセージも処理しますか？Customer Journey Analytics では、オーディエンス共有を通じて ID をプロファイル ID グラフに追加できますか？**
 
-いいえ。1 人のユーザーにつき 1 つの ID のみが送信されるので、Real-Time Customer Data Platformが使用するグラフエッジはありません。
+いいえ。1 人のユーザーにつき 1 つの ID のみが送信されるので、Real-Time Customer Data Platform が使用するグラフエッジはありません。
 
 +++
 
-+++**毎日、毎週、毎月の更新は何時に行われますか？ 毎週更新は何曜日に実行されますか？**
++++**日次、週次、月次の更新はどの時間帯に行われますか？週次の更新は何曜日に実行されますか？**
 
-更新のタイミングは、元のオーディエンスが公開された日時と、その日時（および曜日または月）に固定されます。
+更新のタイミングは、元のオーディエンスが公開された日時に基づいて、その日時（および曜日または月）に固定されます。
 
 +++
 

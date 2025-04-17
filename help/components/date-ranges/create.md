@@ -7,25 +7,25 @@ role: User
 source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 37%
+ht-degree: 81%
 
 ---
 
 # 日付範囲の作成
 
 
-誰でもカスタムの日付範囲を作成できます。 日付範囲は、次の方法で作成します。
+誰でもカスタムの日付範囲を作成できます。日付範囲は、次の方法で作成します。
 
 ![注釈の作成](assets/create-date-range.png)
 
-* **A** - メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL  日付範囲 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/date-ranges/manage.md) から「![AddCircle]**[!UICONTROL Add]**」を選択します。
+* **A** - メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL 日付範囲]マネージャー](/help/components/date-ranges/manage.md)から ![AddCircle](/help/assets/icons/AddCircle.svg)、**[!UICONTROL 追加]**&#x200B;を選択します。
 * **B** - Workspace プロジェクトのビジュアライゼーションのコンテキストメニューで、「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
 * **C** - Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します
 * **D** - Workspace プロジェクトでは、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
 * **E** - Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Calendar.svg) **** 日付範囲 ![ で「追加 ](/help/assets/icons/Add.svg)」を選択します。
 * **F** – 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションの場合は、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
-注釈を定義するには、[[!UICONTROL  日付範囲ビルダー ]](#annotation-builder) を使用します。
+注釈を定義するには、[[!UICONTROL 日付範囲ビルダー]](#annotation-builder)を使用します。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -46,39 +46,39 @@ ht-degree: 37%
 
 
 
-**[!UICONTROL 新しい日付範囲]** または **[!UICONTROL 日付範囲を編集]** ダイアログを使用して、新しい日付範囲を作成または既存の日付範囲を編集します。
+**[!UICONTROL 新しい日付範囲]**&#x200B;または&#x200B;**[!UICONTROL 日付範囲を編集]**&#x200B;ダイアログを使用して、新しい日付範囲を作成または既存の日付範囲を編集します。
 
 ![次の節で説明するフィールドとオプションを表示する注釈の詳細ウィンドウ。](assets/edit-date-range.png)
 
 
-1. 日付範囲の **[!UICONTROL タイトル]** を指定します。 例えば、**[!UICONTROL 四半期]** のように指定します。
+1. この日付範囲の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。例：**[!UICONTROL Quarterly]**。
 1. オプションで、「**[!UICONTROL 説明]**」を指定します。
-1. 1 つ以上の **[!UICONTROL タグ]** を作成または適用して、フィルターを整理します。 入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、タグを削除します。 |
+1. 1 つ以上の&#x200B;**[!UICONTROL タグ]**&#x200B;を作成または適用して、フィルターを整理します。入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
 1. 最初に開始日を選択し、次に終了日を選択して、「**[!UICONTROL 日付範囲]**」を選択します。
 または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。
 
 1. オプションで、「**[!UICONTROL 詳細設定を表示]**」を選択して、次の操作を行います。
 
    * デフォルトの `12:00 AM`（`0:00`）と `11:59 PM`（`23:59`）以外の&#x200B;**[!UICONTROL 開始時間]**&#x200B;と&#x200B;**[!UICONTROL 終了時間]**&#x200B;を指定します。終了時間には常に 59 秒が含まれます。日付範囲が何日にもわたる場合、開始時間は日付範囲の最初の日、終了時間は日付範囲の最終日に適用されます。**[!UICONTROL 日時の値をリセット]**&#x200B;を使用して、開始時間と終了時間をデフォルトにリセットします。
-   * **[!UICONTROL 相対日付の使用]**&#x200B;有効にした場合、現在の日付と時間の進行状況に応じて、プリセットされた日付範囲 **[!UICONTROL 過去 7 日間]** が動的に更新されます。 無効にすると、そのようなプリセットは適用されると更新されません。
+   * **[!UICONTROL 相対日付の使用]**&#x200B;有効にした場合、現在の日付と時間の進行状況に応じて、プリセットされた日付範囲（**[!UICONTROL 過去 7 日間]**&#x200B;など）が動的に更新されます。無効にすると、そのようなプリセットは適用されると更新されません。
 
-     角括弧で囲まれたテキスト（例：**[!UICONTROL 固定開始 – 四半期ごとのローリング]**）を選択して、パネルを拡張し、**[!UICONTROL 開始]** と **[!UICONTROL 終了]** の詳細を指定できます。
+     角括弧で囲まれたテキスト（例：**[!UICONTROL 固定開始 - 日周期]**）を選択して、パネルを拡張し、**[!UICONTROL 開始]**&#x200B;と&#x200B;**[!UICONTROL 終了]**&#x200B;の詳細を指定できます。
 
-     ![Rollinf の日付 ](assets/rolliing-dates.png)
+     ![周期的な日付](assets/rolliing-dates.png)
 
       1. 「**[!UICONTROL 開始日]**」、「**[!UICONTROL 終了日]**」または「**[!UICONTROL 固定日]**」を選択します。
-      1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。例：**[!UICONTROL 終了日]****[!UICONTROL 今四半期]****[!UICONTROL マイナス]**`20`**[!UICONTROL 日]** 式の個々の部分に適した値を選択します。
-         * 現在の値を選択します。例えば、**[!UICONTROL 今四半期]** です。
-         * 追加の計算の値を選択します。例えば、**[!UICONTROL minus]** と指定します。
-         * 追加の計算を指定した場合は、値を指定します。 例：`20`。
-         * 追加の計算を指定した場合は、計算に使用する期間を選択します。 例えば、**[!UICONTROL days]** と指定します。
+      1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。例：**[!UICONTROL End of]** **[!UICONTROL current quarter]** **[!UICONTROL minus]** `20` **[!UICONTROL days]**。式の個々の部分に適した値を選択します。
+         * 現在の値を選択します。例：**[!UICONTROL current quarter]**。
+         * 追加の計算の値を選択します。例：**[!UICONTROL minus]**。
+         * 追加の計算を指定した場合は、値を指定します。例：`20`。
+         * 追加の計算を指定した場合は、計算に使用する期間を選択します。例：**[!UICONTROL days]**。
 
      周期的な日付の計算の詳細を非表示にするには、「**[!UICONTROL 詳細を非表示]**」を選択します。
 
-1. を選択：
-   * **[!UICONTROL 保存]**：日付範囲を保存します。
-   * **[!UICONTROL 名前を付けて保存]**：日付範囲のコピーを保存します。
-   * **[!UICONTROL キャンセル]**：日付範囲に対して行った変更をキャンセルしたり、新しい日付範囲の作成をキャンセルしたりします。
+1. Select：
+   * 「**[!UICONTROL 保存]**」を選択して、日付範囲を保存します。
+   * 「**[!UICONTROL 名前を付けて保存]**」を選択して、日付範囲のコピーを保存します。
+   * 「**[!UICONTROL キャンセル]**」を選択して、日付範囲に対して行った変更をキャンセルするか、新しい日付範囲の作成をキャンセルします。
 
 
 <!--

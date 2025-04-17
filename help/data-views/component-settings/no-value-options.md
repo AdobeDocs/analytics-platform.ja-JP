@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_novalueoptions"
->title="値オプションなし"
+>title="値なしオプション"
 >abstract="ディメンションに値がない場合のデフォルトの動作を設定します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -48,5 +48,5 @@ ht-degree: 53%
 
 >[!MORELIKETHIS]
 >
->以下は、[Customer Journey Analyticsでの「値なし」の処理 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339) に関する関連ブログ投稿です。
+>関連ブログ投稿について詳しくは、[Customer Journey Analytics での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339)を参照してください。
 

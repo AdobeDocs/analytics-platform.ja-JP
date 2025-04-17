@@ -6,22 +6,22 @@ exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4659'
-ht-degree: 55%
+source-wordcount: '5247'
+ht-degree: 89%
 
 ---
 
 # 高度な関数
 
-[計算指標ビルダー](cm-workflow/cm-build-metrics.md)では、統計関数および数学関数を適用できます。この記事では、高度な関数とその定義をアルファベット順にリストして説明します。
+[計算指標ビルダー](cm-workflow/cm-build-metrics.md)では、統計関数および数学関数を適用できます。この記事では、高度な関数とその定義をアルファベット順に示します。
 
-これらの関数にアクセスするには、コンポーネントパネルの ![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL 関数]** リストの下にある **[!UICONTROL すべて表示]** を選択します。 下にスクロールして、**[!UICONTROL 高度な関数]** のリストを表示します。
+これらの関数にアクセスするには、コンポーネントパネルの ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]**&#x200B;リストの下にある「**[!UICONTROL すべて表示]**」を選択します。下にスクロールして、**[!UICONTROL 高度な関数]**&#x200B;のリストを表示します。
 
 ## 表関数と行関数
 
 表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
 
-該当する場合および関連する場合、関数には、関数のタイプで注釈が付けられます。[!BADGE テーブル]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+該当する場合および関連する場合、関数には、関数のタイプ [!BADGE Table]{type="Neutral"} または [!BADGE Row]{type="Neutral"} で注釈が付けられます
 
 ## ゼロを含むパラメーターとは
 
@@ -43,13 +43,13 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND （logical_test）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
 結合。ゼロに等しくない場合は true、ゼロに等しい場合は false と見なされます。出力は 0（false）または 1（true）です。
 
 | 引数 | 説明 |
 |---|---|
-| logical_test | 少なくとも 1 つのパラメーターが必要ですが、任意の数のパラメーターを指定できます。 TRUE または FALSE と評価できる値または式 |
+| logical_test | 少なくとも 1 つのパラメーターが必要ですが、任意の数のパラメーターを指定できます。TRUE または FALSE に評価できる任意の値または式です |
 
 
 ## 個別の概算カウント {#approximate_count_distinct}
@@ -63,7 +63,7 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg)**[!UICONTROL 個別概算カウント（ディメンション）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
 
 選択したディメンションのディメンション項目の個別の概算カウントを返します。
@@ -71,11 +71,11 @@ ht-degree: 55%
 
 | 引数 | 説明 |
 |---|---|
-| ディメンション | 概算の個別品目数を計算するディメンション |
+| ディメンション | 項目の個別の概算カウントを計算するディメンションです |
 
 ### 例
 
-この関数の一般的なユースケースは、おおよその顧客数を取得したい場合です。
+この関数の一般的なユースケースは、顧客の近似数を取得する場合です。
 
 
 
@@ -90,15 +90,15 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 逆余弦（メートル法）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 指標のアークコサイン（コサインの逆数）を返します。 逆余弦は、余弦が数値である角度です。返される角度は、0（ゼロ）から pi までの範囲のラジアンで指定されます。結果をラジアンから度に変換する場合は、180/PI() で乗算します。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | -1 から 1 までの角度のコサイン |
+| metric | -1～1 で求める角度の余弦です |
 
 
 
@@ -113,15 +113,15 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 逆正弦（メートル法）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 数値の逆正弦（アークサイン）を返します。 逆正弦は、正弦が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。アークサインを度数で表すには、その値に 180/PI （）を掛けます。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 角度の正弦を–1 から 1 に指定します |
+| metric | -1～1 で求める角度の正弦です |
 
 
 
@@ -136,15 +136,15 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT （メートル）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 数値の逆正接を返します。 逆正接は、正接が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。逆正接を度で表すには、結果に 180/PI() で乗算します。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | -1 から 1 までの角度の接線 |
+| metric | -1～1 で求める角度の正接です |
 
 
 
@@ -159,14 +159,14 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg)**[!UICONTROL CDF-T （指標、数値）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
 自由度 n の student-t 分布を持つランダム変数の z スコアが col より小さくなる確率を返します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | スチューデント t 分布の累積分布関数を求める指標です。 |
-| 数 | スチューデント t 分布の累積分布関数の自由度 |
+| metric | student t 分布の累積分布関数を求める指標です |
+| number | student t 分布の累積分布関数の自由度です |
 
 ### 例
 
@@ -190,13 +190,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 
 <!-- markdownlint-enable MD034 -->
 
-![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL CDF-Z （指標、数値）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
 正規分布を持つランダム変数の z スコアが col より小さくなる確率を返します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 標準正規分布の累積分布関数を求める指標です |
+| metric | 標準正規分布の累積分布関数を求める指標です |
 
 ### 例
 
@@ -219,13 +219,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING （metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 指定した値以上の最小の整数を返します。 例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、CEILING(Revenue) という数式を使用して、売上高を直近のドル値（$570）に切り上げます。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 丸める指標 |
+| metric | 丸める指標です |
 
 
 ## 信頼性 {#confidence}
@@ -239,18 +239,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL CONFIDENCE （normalizing-container, success-metric, control, significity-treshold）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476) の説明に従って、WASKR メソッドを使用して任意の時間で有効な信頼度を計算します。
 
-信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。 信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
+信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
 
 | 引数 | 説明 |
 | --- | --- |
-| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
-| 成功指標 | ユーザーがバリアントと比較する指標。 |
+| normalizing-container | テストが実行される基準（人物、セッションまたはイベント）。 |
+| success-metric | ユーザーがバリアントと比較する指標。 |
 | control | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
-| 有意しきい値 | この関数のしきい値は、デフォルトの 95%に設定されています。 |
+| significance-threshold | この関数のしきい値は、デフォルトの 95%に設定されています。 |
 
 
 ## 信頼（下限） {#confidence-lower}
@@ -264,18 +264,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL CONFIDENCE （normalizing-container, success-metric, control, significity-treshold）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476) の説明に従って、WASKR メソッドを使用して任意の時間で有効な信頼&#x200B;**下限**&#x200B;を計算します。
 
-信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。 信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
+信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
 
 | 引数 | 説明 |
 | --- | --- |
-| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
-| 成功指標 | ユーザーがバリアントと比較する指標。 |
+| normalizing-container | テストが実行される基準（人物、セッションまたはイベント）。 |
+| success-metric | ユーザーがバリアントと比較する指標。 |
 | control | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
-| 有意しきい値 | この関数のしきい値は、デフォルトの 95%に設定されています。 |
+| significance-threshold | この関数のしきい値は、デフォルトの 95%に設定されています。 |
 
 ## 信頼（上限） {#confidence-upper}
 
@@ -288,18 +288,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL CONFIDENCE （normalizing-container, success-metric, control, significity-treshold）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476) の説明に従って、WASKR メソッドを使用して任意の時間で有効な信頼&#x200B;**上限**&#x200B;を計算します。
 
-信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。 信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
+信頼性は、特定のバリアントがコントロールバリアントと同じであるという証拠がどの程度あるかを示す確率測度です。信頼性が高いほど、コントロールバリアントおよびコントロールバリアント以外のパフォーマンスが等しいという仮定に対する証拠が少ないことを示します。
 
 | 引数 | 説明 |
 | --- | --- |
-| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
-| 成功指標 | ユーザーがバリアントと比較する指標。 |
+| normalizing-container | テストが実行される基準（人物、セッションまたはイベント）。 |
+| success-metric | ユーザーがバリアントと比較する指標。 |
 | control | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
-| 有意しきい値 | この関数のしきい値は、デフォルトの 95%に設定されています。 |
+| significance-threshold | この関数のしきい値は、デフォルトの 95%に設定されています。 |
 
 
 ## 余弦 {#cosine}
@@ -313,13 +313,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL COSINE （metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 指定された角度の余弦を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | コサインを求める角度（ラジアン単位） |
+| metric | 余弦を求めるラジアンの角度 |
 
 
 ## 立方根 {#cube-root}
@@ -333,7 +333,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 立方根（メトリック）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
 
 数値の正の立方根を返します。数値の立方根は、その数値を 1/3 乗した値です。
@@ -341,7 +341,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | キューブのルートを計算する指標 |
+| metric | 立方根の計算を求める指標 |
 
 
 
@@ -352,26 +352,26 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="累積"
->abstract="列 x の最後の n 要素の合計を返します。n > 0 の場合は、最後の n 要素または x を合計します。n &lt; 0 の場合は、前の要素を合計します。"
+>abstract="列 x の最後 n 個の要素の合計を返します。n > 0 の場合は、最後 n 個の要素または x を合計します。n &lt; 0 の場合は、前の要素を合計します。"
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE （number, metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-列 x の最後の n 要素の合計を返します。n > 0 の場合は、最後の n 要素または x を合計します。n &lt; 0 の場合は、前の要素を合計します。
+列 x の最後 n 個の要素の合計を返します。n > 0 の場合は、最後 n 個の要素または x を合計します。n &lt; 0 の場合は、前の要素を合計します。
 
 | 引数 | 説明 |
 | --- | --- |
-| number | 合計を返す最後の N 行。 N &lt;= 0 の場合は、前の行をすべて使用します。 |
-| 指標 | 累積合計を求める指標。 |
+| number | 合計を返す最終 N 行の値です。N &lt;= 0 の場合、前のすべての行を使用します。 |
+| metric | 累積合計を求める指標です。 |
 
 ### 例
 
-| 日付 | 売上高 | 累積（0，収益） | 累積（2，収益） |
+| 日付 | 売上高 | CUMULATIVE(0, Revenue) | CUMULATIVE(2, Revenue) |
 |------|------:|--------------:|--------------:|
-| 5月 | 500 ドル | 500 ドル | 500 ドル |
-| 6月 | 200 ドル | 700 ドル | 700 ドル |
-| 7月 | $400 | 1,100 ドル | $600 |
+| 5月 | $500 | $500 | $500 |
+| 6月 | $200 | $700 | $700 |
+| 7月 | $400 | $1100 | $600 |
 
 
 ## 累積（平均） {#cumulative-average}
@@ -385,33 +385,33 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 累積平均（数値、指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
 列 x の最後の n 要素の平均を返します。n > 0 の場合は、最後の n 要素または x を合計します。n &lt; 0 の場合は、前の要素を合計します。
 
 | 引数 | 説明 |
 | --- | --- |
-| number | 平均を返す最後の N 行。 N &lt;= 0 の場合は、前の行をすべて使用します。 |
-| 指標 | 累積平均を求める指標です。 |
+| number | 平均を返す最終 N 行の値です。N &lt;= 0 の場合、前のすべての行を使用します。 |
+| metric | 累積平均を求める指標です。 |
 
 >[!NOTE]
 >
->この関数は、1 人当たりの売上高などのレート指標では機能しません。 この関数は、過去 N 個の収益を合計し、過去 N 個の人物を合計して除算するのではなく、割合を平均します。 <br/> 代わりに、[**[!UICONTROL CUMULATIVE （revenue） ]**](#cumulative)![Divide](/help/assets/icons/Divide.svg)[**[!UICONTROL CUMULATIVE （person） ]**](#cumulative) を使用します。
+>この関数は、ユーザーごとの売上高などのレート指標では機能しません。この関数は、最後の N の売上高を合計し、最後の N のユーザーを合計して除算するのではなく、レートを平均します。<br/>代わりに、[**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![除算](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative) を使用します。
 >
 
 
-## 次と等しい {#equal}
+## 等号 {#equal}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-eq"
->title="次と等しい"
+>title="等号"
 >abstract="次と等しい。出力は 0（false）または 1（true）です。"
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
 次と等しい。出力は 0（false）または 1（true）です。
 
@@ -437,16 +437,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 指数回帰：Y = a exp （X） + b相関係数を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 ## 指数回帰：予測 Y {#exponential-regression-predicted-y}
@@ -460,10 +460,10 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回帰：予測 Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 指数回帰：Y = a exp （X） + b。Y を返します。
 
 
 | 引数 | 説明 |
@@ -484,15 +484,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 指数回帰：Y = a exp （X） + bb を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -507,16 +507,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 指数回帰：Y = a exp （X） + bを返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -531,27 +531,27 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 指定された値以下の最大の整数を返します。 例えば、製品価格が 569.34 ドルで、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（569 ドル）に切り捨てます。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 四捨五入する指標です。 |
+| metric | 四捨五入する指標です。 |
 
 
-## 次よりも大きい {#greather-than}
+## 次より大きい {#greather-than}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-gt"
->title="次よりも大きい"
+>title="次より大きい"
 >abstract="出力は 0（false）または 1（true）です。"
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
 出力は 0（false）または 1（true）です。
 
@@ -576,7 +576,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
 次よりも大きいか等しい。出力は 0（false）または 1（true）です。
 
@@ -602,15 +602,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲線余弦（メートル法）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 数値の双曲線余弦を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 双曲線余弦を求める角度（ラジアン） |
+| metric | 双曲線余弦を求めるラジアンの角度です |
 
 
 
@@ -625,13 +625,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲線正弦（メートル法）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 数値の双曲線正弦を返します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 双曲線正弦を求める角度（ラジアン） |
+| metric | 双曲線正弦を求めるラジアンの角度です |
 
 
 ## 双曲線正接 {#hyperbolic-tangent}
@@ -645,13 +645,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲線正接（メートル）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 数値の双曲線正接を返します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 双曲線正接を求める角度（ラジアン） |
+| metric | 双曲線正接を求めるラジアンの角度です |
 
 
 ## If {#if}
@@ -665,31 +665,31 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL IF （logical_test, value_if_true, value_if_false）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 条件パラメーターの値がゼロ以外（true）の場合、結果は value_if_true パラメーターの値になります。 それ以外の場合は、value_if_false パラメーターの値になります。
 
 
 | 引数 | 説明 |
 |---|---|
-| logical_test | 必須。TRUE または FALSE と評価できる値または式 |
-| value_if_true | logical_test 引数の値が TRUE の場合に返す値。 （含まれない場合、この引数のデフォルト値は 0 です）。 |
+| logical_test | 必須。TRUE または FALSE に評価できる任意の値または式です |
+| value_if_true | logical_test 引数が TRUE に評価された場合に返される値です（含まれない場合、この引数のデフォルト値は 0 です）。 |
 | value_if_false | logical_test 引数の値が FALSE の場合に返す値です (含まれない場合、この引数のデフォルト値は 0 です)。 |
 
 
-## 未満 {#less-than}
+## 次の値未満 {#less-than}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-lt"
->title="未満"
+>title="次の値未満"
 >abstract="出力は 0（false）または 1（true）です。"
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL LESS THAN （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
 出力は 0（false）または 1（true）です。
 
@@ -714,7 +714,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL LESS THAN OR EQUAL （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
 次よりも小さいか等しい。出力は 0（false）または 1（true）です。
 
@@ -746,8 +746,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 引数 | 説明 |
 | --- | --- |
-| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
-| 成功指標 | ユーザーがバリアントと比較する指標。 |
+| normalizing-container | テストが実行される基準（人物、セッションまたはイベント）。 |
+| success-metric | ユーザーがバリアントと比較する指標。 |
 | control | 実験におけるその他すべてのバリアントと比較されるバリアント。コントロールバリアントディメンション項目の名前を入力します。 |
 
 
@@ -763,16 +763,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 線形回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 線形回帰：Y = a X + b 相関係数を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -788,16 +788,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 線形回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 線形回帰：Y = a X + bb を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -813,16 +813,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 線形回帰：予測された Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 線形回帰：Y = a X + bY を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -838,14 +838,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 線形回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 線形回帰：Y = a X + bを返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -860,15 +860,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL ログベース 10 （指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 数値の 10 を底とする対数を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 底が 10 の対数を求める正の実数 |
+| metric | 基数 10 の対数を求める正の実数です。 |
 
 
 ## 対数回帰：相関係数 {#log-regression-correlation-coefficient}
@@ -882,14 +882,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL LOG 回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 回帰のログ：Y = a ln （X） + b相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -904,14 +904,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL LOG 回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 回帰のログ：Y = a ln （X） + bb を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -927,14 +927,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL ログ回帰：予測された Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 回帰を記録する：Y = a ln （X） + b。Y を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -950,14 +950,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL LOG 回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 回帰のログ：Y = a ln （X） + bを返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -973,34 +973,34 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 自然ログ（指標）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
 値の自然対数を返します。自然対数は、定数 e（2.71828182845904）に基づきます。LN は EXP 関数の逆関数です。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 自然対数を求める正の実数 |
+| metric | 自然対数を求める正の実数です |
 
 
 
-##  ではない {#not}
+## Not {#not}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-not"
->title=" ではない"
+>title="Not"
 >abstract="ブール値としての否定。出力は 0（false）または 1（true）です。"
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT （logical）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
 ブール値としての否定。出力は 0（false）または 1（true）です。
 
 | 引数 | 説明 |
 |---|---|
-| 論理 | 必須。TRUE または FALSE と評価できる値または式 |
+| logical | 必須。TRUE または FALSE で示される値または式です |
 
 
 
@@ -1015,7 +1015,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
 次と等しくない。出力は 0（false）または 1（true）です。
@@ -1042,15 +1042,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL OR （logical_test）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 分離。 ゼロに等しくない場合は true、ゼロに等しい場合は false と見なされます。出力は 0（false）または 1（true）です。
 
 
 | 引数 | 説明 |
 |---|---|
-| logical_test | 少なくとも 1 つのパラメーターが必要ですが、任意の数のパラメーターを指定できます。 TRUE または FALSE と評価できる値または式 |
+| logical_test | 少なくとも 1 つのパラメーターが必要ですが、任意の数のパラメーターを指定できます。TRUE または FALSE に評価できる任意の値または式です |
 
 
 >[!NOTE]
@@ -1069,7 +1069,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PI （）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
 円周率を返します。円周率：3.14159..
 
@@ -1085,14 +1085,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 累乗回帰：Y = b X ^ a.相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1108,16 +1108,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 累乗回帰：Y = b X ^ a.b を返します。
 
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1132,14 +1132,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 回帰：予測 Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 回帰の累乗：Y = b X ^ a。Y を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1155,14 +1155,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL POWER 回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 累乗回帰：Y = b X ^ a.を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1178,14 +1178,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2，相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 ## 二次回帰：切片 {#quadratic-regression-intercept}
@@ -1199,14 +1199,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2, a を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1221,14 +1221,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回帰：予測 Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2, Y を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1243,14 +1243,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2、b を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1266,14 +1266,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 逆回帰：相関係数（metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | metric_Y と関連付ける指標 |
-| metric_Y | metric_X と関連付ける指標 |
+| metric_X | metric_Y とクロス集計する指標です |
+| metric_Y | metric_X とクロス集計する指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1288,14 +1288,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 回帰回帰：INTERCEPT （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 a を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1310,14 +1310,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 逆回帰：予測 Y （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 Y を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1332,14 +1332,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 回帰回帰：SLOPE （metric_X, metric_Y, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE テーブル]{type="Neutral"}
+[!BADGE  表 ]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 b を返します。
 
 | 引数 | 説明 |
 |---|---|
-| metric_X | 依存データとして指定する指標 |
-| metric_Y | 独立データとして指定する指標 |
+| metric_X | 依存データとして指定する指標です |
+| metric_Y | 非依存データとして指定する指標です。 |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1359,8 +1359,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 引数 | 説明 |
 | --- | --- |
-| normalizing-container | テストが実行される基準（人、セッションまたはイベント）。 |
-| 成功指標 | ユーザーがバリアントと比較する指標。 |
+| normalizing-container | テストが実行される基準（人物、セッションまたはイベント）。 |
+| success-metric | ユーザーがバリアントと比較する指標。 |
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1377,15 +1377,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![ 効果 ](/help/assets/icons/Effect.svg) **[!UICONTROL 正弦（メートル法）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} 指定された角度の正弦を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。
 
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 正弦を求める角度（ラジアン単位） |
+| metric | 正弦を求めるラジアンの角度です |
 
 
 
@@ -1401,13 +1401,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
 [平均値](cm-functions.md#mean)を標準偏差で割って求める偏差値です。[z スコア](#z-score)のエイリアス。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | T スコアを求める指標 |
+| metric | t スコアを求める指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
 
@@ -1422,35 +1422,35 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST （metric, degrees, tail）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST(metric, degrees, tails)]**
 
 t スコア x および自由度 n の t 検定（m-tailed）を実行します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | T 検定を実行する指標 |
-| degrees | 自由度 |
-| 尾 | T 検定を行うために使用するテールの長さ |
+| metric | t 検定を行う指標です |
+| degrees | 自由度です |
+| すそ | t 検定を実行するために使用されるすその長さです。 |
 
 ### 詳細
 
-シグネチャは T-TEST （metric, degrees, tail）です。 その下では、単に ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)** を呼び出します。 この関数は、***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)** を実行する **[Z-TEST](#z-test)** 関数に類似しています。
+署名は T-TEST(metric, degrees, tails) です。その下には、単に ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)** を呼び出します。この関数は、***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)** を実行する **[Z-TEST](#z-test)** 関数に類似しています。
 
-- ***m*** は尾の数です。
-- ***n*** は自由度で、レポート全体に対して一定の数値である必要があります。つまり、行単位で変更されません。
-- ***x*** は T 検定の統計量で、多くの場合、指標に基づく数式（**[Z-SCORE](#z-score)** など）であり、すべての行で評価されます。
+- ***m*** はすその数です。
+- ***n*** は自由度で、レポート全体に対して一定の数値にする必要があります。つまり、行単位で変更されません。
+- ***X*** は t 検定統計量です。一般的には指標に基づく数式（**[Z-SCORE](#z-score)** など）で、すべての行で評価されます。
 
 返される値は、指定された自由度とテール数において検定統計量 x が見られる確率です。
 
 ### 例
 
-1. 関数を使用して異常値を検索します。
+1. 次の関数を使用して異常値を見つけます。
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. 関数を **[IF](#if)** と組み合わせて、非常に高いバウンス率または低いバウンス率を無視し、その他のすべてに関するセッションをカウントします。
+1. この関数に **[IF](#if)** を組み合わせて、極度に高いまたは低いバウンス率を無視し、その他すべてへの訪問回数をカウントします。
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
@@ -1458,24 +1458,24 @@ t スコア x および自由度 n の t 検定（m-tailed）を実行します�
 
 
 
-## タンジェント {#tangent}
+## 正接 {#tangent}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-tan"
->title="タンジェント"
+>title="正接"
 >abstract="指定された角度の正接を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。"
 
 <!-- markdownlint-enable MD034 -->
 
-![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL TANGENT （metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
 指定された角度の正接を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | 接線を求める角度（ラジアン単位） |
+| metric | 正接を求めるラジアンの角度です |
 
 
 
@@ -1490,26 +1490,26 @@ t スコア x および自由度 n の t 検定（m-tailed）を実行します�
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE （metric, include_zeros）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE  行 ]{type="Neutral"} 平均からの偏差を標準偏差で割った値。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | Z スコアを求める指標 |
+| metric | z スコアを求める指標です |
 | include_zeros | 計算にゼロ値を含めるかどうか |
 
-Z スコアが 0 （ゼロ）の場合は、スコアが平均と同じであることを意味します。 z スコアは正と負のどちらにもなり得ます。平均値を上回るか下回るかを標準偏差の数で示します。
+z スコア 0（ゼロ）は、スコアが平均値と同じであることを意味します。z スコアは正と負のどちらにもなり得ます。平均値を上回るか下回るかを標準偏差の数で示します。
 
 z スコアの式は次のようになります。
 
 ![](assets/z_score.png)
 
-ここで、***[!DNL x]*** は生のスコア、***[!DNL μ]*** は母集団の平均、***[!DNL σ]*** は母集団の標準偏差です。
+ここで、***[!DNL x]*** は生のスコア、***[!DNL μ]*** は母集団の平均値、***[!DNL σ]*** は母集団の標準偏差です。
 
 >[!NOTE]
 >
->***[!DNL μ]*** （mu）と ***[!DNL σ]*** （sigma）は、指標から自動的に計算されます。
+>***[!DNL μ]***（ミュー）および ***[!DNL σ]***（シグマ）は、指標から自動的に計算されます。
 
 
 
@@ -1524,14 +1524,14 @@ z スコアの式は次のようになります。
 
 <!-- markdownlint-enable MD034 -->
 
-![ エフェクト ](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST （metric_tails）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
 z スコア x の z 検定（n-tailed）を実行します。
 
 | 引数 | 説明 |
 |---|---|
-| 指標 | Z テストを実行する指標 |
-| 尾 | Z 検定を行うために使用するテールの長さ |
+| metric | z 検定を行う指標です |
+| すそ | z 検定を行うために使用するすその長さです |
 
 >[!NOTE]
 >

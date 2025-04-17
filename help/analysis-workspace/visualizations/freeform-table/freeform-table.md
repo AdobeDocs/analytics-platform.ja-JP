@@ -7,7 +7,7 @@ role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics![ のフリーフォームテーブルのビジュアライゼーションについて説明します**。この記事の _<br/>_AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については_ フリーフォームテーブル ![ を参照してください [ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフリーフォームテーブルビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[フリーフォームテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -69,7 +69,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 ### 列
 
 * 列内にコンポーネントを積み重ねて、セグメント化された指標やクロスタブ分析などを作成できます。
-* 各列の表示は、「[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)」で調整できます。
+* 各列の表示は、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)で調整できます。
 * [コンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)からはいくつかのアクションを実行できます。メニューには、テーブルヘッダー、行または列のいずれを選択するかに応じて、異なるアクションが表示されます。
 
 
@@ -103,10 +103,10 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 | **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
 | **[!UICONTROL ビジュアライゼーションをコピー]** | ビジュアライゼーションをコピーして、プロジェクト内の別の場所または完全に別のプロジェクトにビジュアライゼーションを挿入できるようにします。 |
 | **[!UICONTROL データ CSV をダウンロード]** | ビジュアライゼーションの表示データをローカルデバイスにすぐにダウンロードします。 |
-| **[!UICONTROL テーブル全体をエクスポート…]** | 指定したクラウドの場所にテーブル全体を書き出します。 [Customer Journey Analytics レポートのクラウドへの書き出し ](../../export/export-cloud.md) を参照してください。 |
+| **[!UICONTROL テーブル全体をエクスポート…]** | 指定したクラウドの場所に完全なテーブルを書き出します。詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../../export/export-cloud.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションを複製]** | ビジュアライゼーションの完全な複製を作成します。 |
-| **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。詳しくは、[テキスト](../text.md)を参照してください。 |
-| **[!UICONTROL ビジュアライゼーションリンクを取得]** | リンクをコピーして、ビジュアライゼーションと直接共有します。共有リンクダイアログにリンクが表示されます。「コピー」を選択して、リンクをクリップボードにコピーします。 |
+| **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。[テキスト](../text.md)を参照してください。 |
+| **[!UICONTROL ビジュアライゼーションリンクを取得]** | リンクをコピーして、ビジュアライゼーションと直接共有します。 共有リンクダイアログにリンクが表示されます。「コピー」を選択して、リンクをクリップボードにコピーします。 |
 | **[!UICONTROL やり直し]** | 現在のビジュアライゼーションの設定を削除し、ゼロから再設定できるようにします。 |
 
 

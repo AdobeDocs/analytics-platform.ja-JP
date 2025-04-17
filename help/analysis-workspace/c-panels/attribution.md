@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics_ _**Customer Journey Analyticsのアトリビューションパネルに関するドキュメ ](/help/assets/icons/CustomerJourneyAnalytics.svg) トです**_。この記事の <br/>_[ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ アトリビューションパネル ![ を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のアトリビューションパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[アトリビューションパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。_
 
 >[!ENDSHADEBOX]
 
-**[!UICONTROL アトリビューション]**&#x200B;パネルを使用すると、各種アトリビューションモデルの比較分析を簡単に作成できます。パネルには、アトリビューションモデルを使用および比較する専用のワークスペースが用意されています。
+**[!UICONTROL アトリビューション]**&#x200B;パネルを使用すると、各種アトリビューションモデルの比較分析を簡単に作成できます。パネルには、アトリビューションモデルを使用および比較するための専用のワークスペースが用意されています。
 
 Customer Journey Analytics を使用すると、以下が可能になるので、アトリビューションを強化できます。
 
@@ -83,7 +83,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 * **合計指標**：選択したディメンションに起因する、レポート時間枠で発生したコンバージョンの合計数。
 * **アトリビューション比較バー**：選択したディメンションの各ディメンションアイテム間で、アトリビューションされたコンバージョンを視覚的に比較します。各棒の色は、個別のアトリビューションモデルを表します。
 * **アトリビューション比較テーブル**：棒グラフと同じデータを表形式で表示します。この表で異なる列または行を選択すると、棒グラフに加えて、パネル内の他のビジュアライゼーションの一部がセグメント化されます。 このテーブルは、Workspace の他のフリーフォームテーブルと同様に機能し、指標、セグメント、分類などのコンポーネントを追加できます。
-* **重なり図**：上位 3 つのディメンション項目と、それらが共同でコンバージョンに関わる頻度を示すベン図ビジュアライゼーション。例えば、バブルの重複部分のサイズは、両方のディメンション項目にユーザーが露出されたときにコンバージョンが発生した頻度を示します。隣接したフリーフォームテーブルで他の行を選択すると、その選択を反映するようにビジュアライゼーションが更新されます。
+* **重なり図**：上位 3 つのディメンション項目と、それらが共同でコンバージョンに関わる頻度を示すベン図ビジュアライゼーション。例えば、バブルの重複部分のサイズは、両方のディメンション項目にユーザーが接触したときにコンバージョンが発生した頻度を示します。隣接したフリーフォームテーブルで他の行を選択すると、その選択を反映するようにビジュアライゼーションが更新されます。
 * **パフォーマンスの詳細**：最大 3 つのアトリビューションモデルを視覚的に比較する散布図ビジュアライゼーション。
 * **トレンドパフォーマンス**：最上位ディメンション項目の属性コンバージョンのトレンドを表示します。 隣接したフリーフォームテーブルで他の行を選択すると、その選択を反映するようにビジュアライゼーションが更新されます。
 * **フロー**：ユーザーのジャーニー全体を通して、どのチャネルが最もよく使用されているか、およびその順番を確認できます。

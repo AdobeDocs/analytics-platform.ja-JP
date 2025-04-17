@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics用のスキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
+title: Customer Journey Analytics のスキーマの作成
+description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパスについて説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,18 +8,18 @@ exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
-# データストリームへのサービスとしての Platform の追加 {#upgrade-addplatform-datastream}
+# Platform をサービスとしてデータストリームに追加 {#upgrade-addplatform-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
->title="データストリームへのサービスとしての Adobe Experience Platform の追加"
->abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。データストリームのサービスとして Adobe Experience Platform を設定します。<br><br>データストリームにサービスを追加するのは簡単なプロセスであり、完了するまでに数分しかかかりません。"
+>title="Adobe Experience Platform をサービスとしてデータストリームに追加"
+>abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。Adobe Experience Platform をデータストリームのサービスとして設定します。<br><br>データストリームへのサービスの追加は簡単なプロセスで、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,11 +27,11 @@ ht-degree: 55%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-この節の手順を完了する前に、データストリームが既に存在している必要があります。 データストリームが作成されるタイミングと方法は、次のようにAdobe Analyticsの実装によって異なります。
+この節の手順を完了する前に、データストリームが既に存在している必要があります。データストリームを作成するタイミングと方法は、次のように Adobe Analytics の実装によって異なります。
 
-* Adobe Analytics実装で Web SDKまたは Web SDK拡張機能を使用する場合、アップグレードプロセスの前に、Adobe Analytics環境でデータストリームを使用できました。
+* Adobe Analytics 実装で Web SDK または Web SDK 拡張機能を使用する場合、アップグレードプロセスの前に、Adobe Analytics 環境でデータストリームを使用できました。
 
-* 他のAdobe Analytics実装では、[Customer Journey Analyticsで使用するデータストリームの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) で説明されているように、データストリームの作成はアップグレードプロセスの一部です。
+* 他の Adobe Analytics 実装の場合、[Customer Journey Analytics で使用するデータストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)で説明されているように、データストリームの作成はアップグレードプロセスの一部です。
 
 データストリームを使用できる状態で、Platform をサービスとして追加する必要があります。
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 75%
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics![_**Customer Journey Analytics** のヒストグラムビジュアライゼーション ](/help/assets/icons/CustomerJourneyAnalytics.svg) ついて説明します。_<br/>_この記事の_![ AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、[ ヒストグラム** を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のヒストグラムビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[ヒストグラム](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/histogram)を参照してください。_
 
 >[!ENDSHADEBOX]
 

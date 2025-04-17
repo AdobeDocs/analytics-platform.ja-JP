@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 62%
+ht-degree: 79%
 
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 62%
 
 [!UICONTROL  永続性 ] とは、特定のディメンション値を、設定されたイベント以外の指標にも属性を設定する機能です。 配分と有効期限の組み合わせを使用します。
 
-![ 永続性オプションを強調表示したデータビューウィンドウ ](../assets/persistence.png)
+![「永続性」オプションをハイライト表示するデータビューウィンドウ](../assets/persistence.png)
 
 * **配分** では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値を保持するかを決定できます。
 
   >[!NOTE]
   >
-  >レポートの指標に [ デフォルト以外のアトリビューションモデル ](/help/data-views/component-settings/attribution.md) が設定されている場合、アトリビューションモデルでは、同じレポートのディメンションに設定した配分が無視されます。
+  >レポートの指標に[デフォルト以外のアトリビューションモデル](/help/data-views/component-settings/attribution.md)を設定した場合、アトリビューションモデルでは、同じレポートのディメンションに設定した配分が無視されます。
   >
-  >ただし、複数のディメンションを含む [ 完全なテーブルのエクスポート ](/help/analysis-workspace/export/export-cloud.md) を行う場合、アトリビューションでは各ディメンションに適用された配分モデルが保持されます。
+  >ただし、複数のディメンションを含む[完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)を行う場合、アトリビューションでは各ディメンションに適用された配分モデルが保持されます。
 
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 
@@ -73,7 +73,7 @@ ht-degree: 62%
   | ディメンション | ヒット 1 | ヒット 2 | ヒット 3 | ヒット 4 | ヒット 5 |
   | --- | --- | --- | --- | --- | --- |
   | データセット値 | A | B | C |  | A |
-  | 全配分 | A | A,B | A、B、C | A、B、C | A、B、C |
+  | 全配分 | A | A、B | A、B、C | A、B、C | A、B、C |
 
 * **[!UICONTROL 最初の事例]**&#x200B;および&#x200B;**[!UICONTROL 最後の事例]**：（2022 年 1 月 19 日（PT））この 2 つの配分モデルは、「入口」および「出口」ディメンションのユースケースを満たします。指定された永続性スコープ (ルックバックでのセッション、ユーザー、またはルックバックを使用したカスタム期間) 内でディメンションの最初または最後の観測値を取得し、それを指定されたスコープ内のすべてのイベントに適用します。例：
 
@@ -96,27 +96,27 @@ ht-degree: 62%
 * **商談レポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
 * **購入グループレポート期間** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}：レポート期間の最後に有効期限が切れます。
 * **カスタム時間**：指定された期間（最大 90 日）が過ぎると期限切れになります。この有効期限オプションは、オリジナル配分モデルと最新配分モデルでのみ使用できます。時間ベースの有効期限を使用する場合は、レポート期間の開始前（最大 90 日間）の値が考慮されます。
-* **指標**：この指標がイベントで表示されると、ディメンションに保持された値が直ちに期限切れになります。 このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
+* **指標**：この指標がイベントで表示されると、ディメンションの永続化された値は直ちに期限切れになります。このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
 
 
 ## [!UICONTROL バインディングディメンション]
 
-ディメンション値の永続性を別のディメンション内のディメンション値にバインドできるドロップダウンリスト。 有効なオプションには、データビューに含まれる他のディメンションが含まれます。
+ディメンション値の永続性を別のディメンション内のディメンション値にバインドできるドロップダウンリスト。有効なオプションには、データビュー内にある他のディメンションが含まれます。
 
-バインディングディメンションの効果的な使用方法の例については、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 ](../../use-cases/data-views/binding-dimensions-metrics.md) を参照してください。
+バインディングディメンションの効果的な使用方法の例について詳しくは、[Customer Journey Analytics でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)を参照してください。
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ バインディングディメンション ](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 
 ## [!UICONTROL バインディング指標]
 
-バインディングトリガーとして機能する指標を選択できるドロップダウンリスト。 有効なオプションには、データビューに含まれる指標が含まれます。
+バインディングトリガーとして機能する指標を選択できるドロップダウンリスト。有効なオプションには、データビュー内にある指標が含まれます。
 
 この設定は、オブジェクト配列のバインディングディメンションがコンポーネントよりも低い場合にのみ表示されます。 イベントにバインディング指標が存在する場合、ディメンション値はイベントレベルのディメンションからバインディングディメンションの下位のスキーマレベルにコピーされます。
 
-バインディング指標の効果的な使用方法について詳しくは、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 ](../../use-cases/data-views/binding-dimensions-metrics.md) の 2 番目の例を参照してください。
+バインディング指標の効果的な使用方法について詳しくは、[Customer Journey Analytics でのバインディングディメンションと指標の使用](../../use-cases/data-views/binding-dimensions-metrics.md)の 2 番目の例を参照してください。

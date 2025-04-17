@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics にアップグレードする際のデータセットの取り込みの監視
-description: Customer Journey Analyticsへのアップグレード時にデータセットの取り込みを監視する方法を説明します
+title: Customer Journey Analytics へのアップグレード時のデータセット取り込みの監視
+description: Customer Journey Analytics へのアップグレード時にデータセット取り込みを監視する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,11 +8,11 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 33%
+ht-degree: 69%
 
 ---
 
-# Customer Journey Analytics にアップグレードする際のデータセットの取り込みの監視 {#monitor-ingestion}
+# Customer Journey Analytics へのアップグレード時のデータセット取り込みの監視 {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -29,19 +29,19 @@ ht-degree: 33%
 
 Web SDKまたは API の実装を設定した後、データがデータセットに取り込まれていることを確認するには、個々のバッチのステータスを確認する必要があります。
 
-1. Experience Platform UI の左側のナビゲーションで「**[!UICONTROL モニタリング]**」を選択します。
+1. Experience Platform UI で、左側のナビゲーションにある「**[!UICONTROL 監視]**」を選択します。
 
-   監視ダッシュボードが表示されます。 このダッシュボードでは、バッチまたはストリーミング取り込みからの受信データのステータスを表示できます。
+   監視ダッシュボードが表示されます。 このダッシュボードでは、バッチまたはストリーミングの取り込みからの受信データのステータスを表示できます。
 
    <!-- insert screenshot -->
 
-1. **[!UICONTROL エンドツーエンドのバッチ]** を選択して、バッチのリストを表示します。
+1. バッチのリストを表示するには、「**[!UICONTROL エンドツーエンドのバッチ]**」を選択します。
 
    バッチが表示されない場合は、実装でAdobeにデータが正しく送信されていることを確認してください。
 
    <!-- insert screenshot -->
 
-1. 特定のデータセットのバッチ ID を選択し、**[!UICONTROL 成功]** が **[!UICONTROL ステータス]** フィールドに表示されることを検証します。
+1. 特定のデータセットのバッチ ID を選択し、「**[!UICONTROL ステータス]**」フィールドに&#x200B;**[!UICONTROL 成功]**&#x200B;が表示されていることを検証します。
 
    **[!UICONTROL 失敗]** が **[!UICONTROL ステータス]** フィールドに表示される場合は、実装を確認し、Adobeに正しくデータが送信されていることを確認します。
 

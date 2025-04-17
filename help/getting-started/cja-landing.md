@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -43,9 +43,9 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 [![画像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB  インテリジェントキャプション v2]
+>[!TAB インテリジェントキャプション v2]
 
-インテリジェントキャプションがサポートされ、[ 線 ](/help/analysis-workspace/visualizations/line.md) （複数行を含む）、[ 棒グラフ ](/help/analysis-workspace/visualizations/bar.md)、[ 横棒グラフ ](/help/analysis-workspace/visualizations/horizontal-bar.md)、[ 面積 ](/help/analysis-workspace/visualizations/area.md) （複数のエリアラインを含む）、[ ドーナツ ](/help/analysis-workspace/visualizations/donut.md)、[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md) のビジュアライゼーションに対するインターフェイスが強化されました。
+インテリジェントキャプションがサポートされ、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)（複数の折れ線グラフを含む）、[棒グラフ](/help/analysis-workspace/visualizations/bar.md)、[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)、[面グラフ](/help/analysis-workspace/visualizations/area.md)（複数の面グラフ線を含む）、[ドーナツグラフ](/help/analysis-workspace/visualizations/donut.md)、[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)のビジュアライゼーションに対するインターフェイスが強化されました。
 
 [![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
@@ -74,7 +74,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 
 >[!TAB BI 拡張機能*]
 
-BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツール（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook、RStudio）を使用して、Customer Journey Analytics ユーザーがAnalysis Workspace プロジェクトで使用しているのと同じデータビューに基づいてレポートやダッシュボードを作成できるようになりました。 [ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)が提供されます。
+BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツール（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook、RStudio）を使用し、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。[ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)が提供されます。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

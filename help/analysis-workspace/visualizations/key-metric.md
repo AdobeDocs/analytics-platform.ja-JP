@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ の主要指標の概要ビジュアライゼーションについて説明します**。この記事の _<br/>_AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**バージョンについては、[](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)_ 主要指標の概要 ![ を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の主要指標の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ _この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJou
 
 ## 使用
 
-1. ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 主要指標の概要]**&#x200B;ビジュアライゼーションを追加します。[パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 主要指標の概要]**&#x200B;ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL 指標]**、**[!UICONTROL プライマリ日付範囲]**、**[!UICONTROL 比較日付範囲]**（オプション）および&#x200B;**[!UICONTROL フィルター]**（オプション）を選択して、ビジュアライゼーションを設定します。
 
@@ -109,9 +109,9 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 * **[!UICONTROL 前の期間]**&#x200B;の折れ線グラフ（常にグレーで表示）は、設定手順の&#x200B;**[!UICONTROL 比較日付範囲]**&#x200B;に対応しています。
 
-* 比較日付範囲が設定時に指定されていない場合やビジュアライゼーション設定で非表示になっている場合は、プライマリ日付範囲の折れ線グラフのみが表示されます。変更の概要は非表示になります。
+* 比較日付範囲が設定時に指定されていない場合やビジュアライゼーション設定で非表示になっている場合は、プライマリ日付範囲の折れ線グラフのみが表示されます。 変更の概要は非表示になります。
 
-* ここから、折れ線グラフの上にポインタを合わせると、個々の日の統計情報を表示できます。
+* ここから、折れ線グラフの上にマウスポインターを置くと、個々の日の統計情報を表示できます。
 
 
 ## 設定
@@ -135,10 +135,10 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 | **[!UICONTROL 凡例を表示]** | ビジュアライゼーションの下部に凡例を表示または非表示にします |
 | **[!UICONTROL 注釈を表示]** | 管理者に追加された注釈を表示または非表示にします |
 | **[!UICONTROL タイトルを非表示]** | ビジュアライゼーションのタイトルを非表示にします。 |
-| **[!UICONTROL 割合（％）]** | ビジュアライゼーションを数値ではなく割合で表示します。 |
+| **[!UICONTROL 割合 (％)]** | ビジュアライゼーションを数値ではなく割合で表示します。 |
 | **[!UICONTROL トレンドラインを表示]** | ビジュアライゼーションにトレンドラインを表示します。 |
 | **[!UICONTROL トレンドラインに最大値と最小値を表示]** | プライマリ折れ線グラフと比較折れ線グラフの最小値と最大値を表示または非表示 |
-| **[!UICONTROL 比較率とトレンドラインを表示]** | 比較データを表示または非表示にします。非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
+| **[!UICONTROL 比較率とトレンドラインを表示]** | 比較データを表示または非表示にします。 非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
 | **[!UICONTROL 合計数を表示]** | 数値概要を表示または非表示 |
 | **[!UICONTROL 生の差異を表示]** | プライマリ日付範囲とセカンダリ日付範囲の指標の合計値の生の差異を表示または非表示 |
 | **[!UICONTROL 値を短縮]** | 数値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。選択した場合、短縮の量を定義する数値を入力します。次に例を示します。<br/><table><tr><td>**元の値**</td><td>**短縮**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、1 に設定</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>選択、3 に設定</td><td align="right">$12.011M</td></tr></table> |

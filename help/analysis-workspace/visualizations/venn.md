@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 59%
+ht-degree: 73%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 59%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のベン図のビジュアライゼーションについて説明します**。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版については、[ ベン ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のベン図のビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[ベン図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/venn)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +36,7 @@ _この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourne
 
 セグメントにカーソルを合わせると、パーセンテージに対するinsightが増え、さらに多くの情報が得られます。
 
-[!UICONTROL ベン図]ビジュアライゼーションから[!UICONTROL フリーフォームテーブル]を生成するには、**[!UICONTROL ベン図]**&#x200B;のヘッダーの横にあるカラー付きの ![StatusOrange](/help/assets/icons/StatusOrange.svg) を選択し、「**[!UICONTROL データソースを表示]**」を選択します。[!UICONTROL ベン図]ビジュアライゼーションを作成するのに使用されたデータを含む&#x200B;**[!UICONTROL ベン図データ]**&#x200B;フリーフォームテーブルが表示されます。
+[!UICONTROL ベン図]ビジュアライゼーションから[!UICONTROL フリーフォームテーブル]を生成するには、**[!UICONTROL ベン図]**&#x200B;のヘッダーの横にあるカラー付きの ![StatusOrange](/help/assets/icons/StatusOrange.svg) を選択し、「**[!UICONTROL データソースを表示]**」を選択します。[!UICONTROL ベン図]ビジュアライゼーションを作成するために使用されたデータを含む&#x200B;**[!UICONTROL ベン図データ]**&#x200B;フリーフォームテーブルが表示されます。
 
 <!--
 To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.

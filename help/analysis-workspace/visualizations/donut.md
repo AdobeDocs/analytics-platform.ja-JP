@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 47%
+ht-degree: 66%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 47%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics_ _**Customer Journey Analytics** のドーナツビジュアライゼーション ](/help/assets/icons/CustomerJourneyAnalytics.svg) ついて説明します。_<br/>_[ この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ ドーナツ ![ を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のドーナツビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[ドーナツ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/donut)を参照してください。_
 
 >[!ENDSHADEBOX]
 

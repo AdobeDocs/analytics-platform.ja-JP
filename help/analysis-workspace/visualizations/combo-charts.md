@@ -1,5 +1,5 @@
 ---
-description: 先月や昨年などとの比較を行うなど、Analysis Workspaceで比較データを簡単に視覚化します。
+description: 先月や昨年などとの比較を行うといった、Analysis Workspace で比較データを簡単に視覚化できます。
 title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics** のコンボビジュアライゼーションについて説明します ![。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のコンボビジュアライゼーションについて説明します。_
 
-_この記事の_![ AdobeAnalytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) 版については、[ コンボ** を参照してください。_
+_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[コンボ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)を参照してください。_
 
 >[!ENDSHADEBOX]
 

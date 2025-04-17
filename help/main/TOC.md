@@ -67,7 +67,7 @@ ht-degree: 86%
          + [プロパティのタグの作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [タグへの Web SDK 拡張機能の追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Web SDK 拡張機能用のローダータグの実装](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-         + [タグへの XDM データ収集ロジックの追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+         + [タグへの XDM データ収集ロジックを追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Web SDKの手動実装](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [API を使用した web SDKの実装](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [接続の作成](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
@@ -76,7 +76,7 @@ ht-degree: 86%
       + [データフローの検証](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [ストリーミングメディアコレクション設定](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Analytics ソースコネクタでの履歴データの保持 {#historical-data-source-connector}
-         + [Analytics ソースコネクタ用の XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [Analytics ソースコネクタ用に XDM スキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Analytics ソースコネクタの作成とフィールドのマッピング](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Adobe Analyticsを無効にするタイミングの評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
@@ -136,9 +136,9 @@ ht-degree: 86%
       + [アトリビューション](../data-views/component-settings/attribution.md)
       + [動作](../data-views/component-settings/behavior.md)
       + [形式](../data-views/component-settings/format.md)
-      + [値を含める / 除外](../data-views/component-settings/include-exclude-values.md)
+      + [値を含む／除外](../data-views/component-settings/include-exclude-values.md)
       + [指標の重複排除](../data-views/component-settings/metric-deduplication.md)
-      + [値オプションなし](../data-views/component-settings/no-value-options.md)
+      + [値なしオプション](../data-views/component-settings/no-value-options.md)
       + [永続性](../data-views/component-settings/persistence.md)
       + [部分文字列](../data-views/component-settings/substring.md)
       + [概要データグループ](../data-views/component-settings/summary-data-group.md)
@@ -176,7 +176,7 @@ ht-degree: 86%
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
    + テンプレート {#templates}
-      + [テンプレートを使用](../analysis-workspace/templates/use-templates.md)
+      + [テンプレートの使用](../analysis-workspace/templates/use-templates.md)
       + [テンプレートの作成と管理](../analysis-workspace/templates/create-templates.md)
    + ビジュアライゼーション {#visualizations}
       + [概要](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
@@ -231,7 +231,7 @@ ht-degree: 86%
       + [実験](../analysis-workspace/c-panels/experimentation.md)
       + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
       + [メディア分平均オーディエンス](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [メディア同時閲覧者数](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [メディア同時視聴者数](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
@@ -284,7 +284,7 @@ ht-degree: 86%
 
 + ガイド付き分析 {#guided-analysis}
    + [概要](../guided-analysis/overview.md)
-   + [アクティブな増加率](../guided-analysis/types/active-growth.md)
+   + [アクティブな増加](../guided-analysis/types/active-growth.md)
    + [コンバージョントレンド](../guided-analysis/types/conversion-trends.md)
    + [エンゲージメント](../guided-analysis/types/engagement.md)
    + [初回使用の影響](../guided-analysis/types/first-use-impact.md)
@@ -312,7 +312,7 @@ ht-degree: 86%
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
-      + [オーディエンス管理](../components/audiences/manage.md)
+      + [オーディエンスの管理](../components/audiences/manage.md)
    + ディメンション {#dimensions}
       + [ディメンションの概要](../components/dimensions/overview.md)
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)

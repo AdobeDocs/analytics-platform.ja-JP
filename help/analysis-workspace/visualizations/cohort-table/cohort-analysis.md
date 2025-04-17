@@ -1,13 +1,13 @@
 ---
 title: コホートテーブルの概要
-description: Analysis Workspaceでコホートテーブルをコホート分析に使用する方法を説明します
+description: Analysis Workspace でコホートテーブルをコホート分析に使用する方法について説明します
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事は、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のコホートテーブルに関する説明です**。_<br/>_[ この記事の ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**版については、_ コホートテーブル ![ を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のコホートテーブルについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[コホートテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)を参照してください。_
 
 >[!ENDSHADEBOX]
 

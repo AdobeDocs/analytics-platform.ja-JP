@@ -1,6 +1,6 @@
 ---
 title: Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行
-description: Customer Journey Analyticsにアップグレードする際に、Analytics ソースコネクタから web SDKに移行する方法を説明します
+description: Customer Journey Analytics にアップグレードする際に、Analytics ソースコネクタから Web SDK に移行する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 30%
+ht-degree: 92%
 
 ---
 
@@ -34,25 +34,25 @@ ht-degree: 30%
 
 {{upgrade-note}}
 
-Customer Journey Analyticsの唯一の実装として Analytics ソースコネクタを使用する場合、固有の欠点があります。
+Analytics ソースコネクタを Customer Journey Analytics の唯一の実装として使用する際に、固有のデメリットがあります。
 
 Analytics ソースコネクタの実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeは継続的なデータ収集には web SDKの新しい実装に移行し、履歴データにのみ Analytics ソースコネクタを使用することをお勧めします。
 
 ## Analytics ソースコネクタのみを使用する場合のメリットとデメリットについて
 
-Analytics ソースコネクタを使用するメリットとデメリットについては、[Analytics ソースコネクタのみを使用してCustomer Journey Analyticsにアップグレードする ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md) を参照してください。
+Analytics ソースコネクタを使用するメリットとデメリットについて詳しくは、[Analytics ソースコネクタのみを使用した Customer Journey Analyticsへのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)を参照してください。
 
-## Analytics ソースコネクタから Web SDKへの移行
+## Analytics ソースコネクタから Web SDK への移行
 
-以下は、Analytics ソースコネクタのみの使用から、Analytics ソースコネクタと Web SDK実装の両方で構成される実装に移行するプロセスの概要です。
+次に、Analytics ソースコネクタのみの使用から、Analytics ソースコネクタと Web SDK 実装の両方で構成される実装に移行する高レベルのプロセスを示します。
 
-1. [Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) の記事の詳細な推奨アップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) の説明に従って、web SDKを実装 [ ます。
+1. Web SDK 実装の作成について詳しくは、[Adobe Analytics から Customer Journey Analytics へのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の記事の[推奨されるアップグレード手順の詳細](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps)を参照してください。
 
-   Web SDKの実装が設定されたら、次の手順を続行します。
+   Web SDK 実装を設定したら、次の手順に進みます。
 
-1. [Analytics ソースコネクタ用の XDM スキーマを作成します ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
+1. [Analytics ソースコネクタの XDM スキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 
-1. Analytics ソースコネクタの各Adobe Analytics ディメンションを、Web SDK スキーマのディメンションにマッピングします。
+1. Analytics ソースコネクタからの各 Adobe Analytics ディメンションを Web SDK スキーマのディメンションにマッピングします。
 
    1. 
       <!-- how do you get here -->
@@ -61,20 +61,20 @@ Analytics ソースコネクタを使用するメリットとデメリットに�
 
    1. 「**[!UICONTROL 新しいマッピングを追加]**」を選択します。
 
-      ![ スキーマフィールドのマッピング ](assets/schema-mapping.png)
+      ![スキーマフィールドをマッピング](assets/schema-mapping.png)
 
-   1. 「**[!UICONTROL Source フィールド]**」で、「Adobe Analytics ExperienceEvent テンプレート」フィールドグループからAdobe Analytics フィールドを選択します。 次に、**[!UICONTROL ターゲットフィールド]** で、マッピングする XDM フィールドを選択します。
+   1. **[!UICONTROL 「ソース」フィールド]**&#x200B;で、Adobe Analytics ExperienceEvent テンプレートフィールドグループから Adobe Analytics フィールドを選択します。次に、**[!UICONTROL 「ターゲット」フィールド]**&#x200B;で、マッピング先の XDM フィールドを選択します。
 
-   1. Adobe Analyticsでのデータ収集に使用するAdobe Analytics ExperienceEvent テンプレートフィールドグループのフィールドごとに、このプロセスを繰り返します。
+   1. Adobe Analytics でデータを収集するために使用している Adobe Analytics ExperienceEvent テンプレートフィールドグループの各フィールドに対して、このプロセスを繰り返します。
 
-1. 元の Analytics ソースコネクタで自動的に作成されたデータセットをCustomer Journey Analytics接続に追加します。
+1. 元の Analytics ソースコネクタで自動的に作成されたデータセットを Customer Journey Analytics 接続に追加します。
 
-   詳しくは、[ 現在の Analytics ソースコネクタから接続へのデータセットの追加 ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md) を参照してください。
+   詳しくは、[現在の Analytics ソースコネクタから接続へのデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)を参照してください。
 
-1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analyticsでデータを分類するためのルックアップデータセットの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) を参照してください。
+1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。詳しくは、[Customer Journey Analytics でルックアップデータセットを作成してデータを分類](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)を参照してください。
 
 1. 元の Analytics ソースコネクタを削除します。<!-- need to add steps somewhere about how to do this -->
 
-1. [ 新しい Analytics ソースコネクタを作成し、フィールドをマッピングします ](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+1. [新しい Analytics ソース コネクタを作成し、フィールドをマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
 
 {{upgrade-final-step}}

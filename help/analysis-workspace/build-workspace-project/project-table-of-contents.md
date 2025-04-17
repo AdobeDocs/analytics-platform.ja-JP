@@ -8,40 +8,40 @@ exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 4%
+ht-degree: 93%
 
 ---
 
 # 目次
 
-Analysis Workspaceでは、プロジェクトの目次を表示できます。これにより、プロジェクトに存在する任意のパネルとビジュアライゼーション間をすばやく移動できます。 目次は、多くのパネルやビジュアライゼーションを含む大きなプロジェクトを表示する場合に特に役立ちます。
+Analysis Workspace では、プロジェクトの目次を表示できます。これにより、プロジェクト内に存在するパネルやビジュアライゼーション間をすばやく移動できます。目次は、多くのパネルやビジュアライゼーションを含む大規模なプロジェクトを表示する際に特に便利です。
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 目次の作成 ](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [目次の作成](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 
 >[!TIP]
 >
->セクションヘッダービジュアライゼーションを使用すると、多数のビジュアライゼーションを含むパネル内のセクションを識別し、明確に表現できます。 これらのセクションヘッダーは、目次のエントリとしても表示されます。
+>セクションヘッダーのビジュアライゼーションを使用すると、多くのビジュアライゼーションを含むパネル内のセクションを識別して明確にすることができます。これらのセクションヘッダーは、目次のエントリとしても表示されます。
 >
 
 
 プロジェクトの目次を表示するには：
 
-1. Analysis Workspaceで、目次を表示するプロジェクトに移動します。
+1. Analysis Workspace で、目次を表示するプロジェクトに移動します。
 
-1. ボタンパネルで「![ViewList](/help/assets/icons/ViewList.svg)**[!UICONTROL 目次]**」を選択します。 詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。<br/>
+1. ボタンパネルで ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL 目次]** を選択します。詳しくは、[Analysis Workspace の概要](/help/analysis-workspace/home.md)を参照してください。<br/>
 
-   プロジェクトの **[!UICONTROL 目次]** が表示され、デフォルトで各パネルが展開されます。
+   プロジェクトの&#x200B;**[!UICONTROL 目次]**&#x200B;が表示され、各パネルはデフォルトで展開されます。
 
-1. **[!UICONTROL 目次]** で、ビジュアライゼーションを選択します。<br/>
+1. **[!UICONTROL 目次]**&#x200B;で、ビジュアライゼーションを選択します。<br/>
 
-   選択したビジュアライゼーションは自動的にスクロールされ、一時的にハイライト表示されます。
+   選択されたビジュアライゼーションは自動的にスクロールされ、一時的にハイライト表示されます。
 
-   ![ ハイライト表示された目次 ](assets/toc-highlighted.png)
+   ![ハイライト表示された目次](assets/toc-highlighted.png)
 
 
 >[!MORELIKETHIS]

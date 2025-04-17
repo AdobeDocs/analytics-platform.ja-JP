@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics用のスキーマの作成
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨されるパスについて説明します
+title: Customer Journey Analytics のスキーマの作成
+description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパスについて説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,18 +8,18 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics で使用する接続の作成および設定 {#upgrade-create-connection}
+# Customer Journey Analytics で使用する接続の作成と設定 {#upgrade-create-connection}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Customer Journey Analytics で接続を作成する"
->abstract="接続により、Adobe Experience Platform のデータを Customer Journey Analytics レポートに最適化された形式に変換できます。Customer Journey Analytics での接続の作成は簡単で、完了するまでに数分しかかかりません。"
+>abstract="接続を使用すると、Adobe Experience Platform からのデータを Customer Journey Analytics レポート用に最適化された形式に変換できます。Customer Journey Analytics での接続の作成は簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 94%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-次に、接続を作成および設定する方法と、作成する接続にExperience Platform データセットを追加する方法について説明します。 接続の作成と設定について詳しくは、[ 接続の作成または編集 ](/help/connections/create-connection.md) を参照してください。
+次の情報では、接続を作成および設定する方法と、作成した接続に Experience Platform データセットを追加する方法について説明します。接続の作成と設定について詳しくは、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。
 
 ## 接続の作成と設定 {#create-connection}
 
@@ -63,7 +63,7 @@ ht-degree: 94%
 
 ## データセットの追加と設定 {#add-dataset}
 
-接続の作成時に、Experience Platform データセットを追加できます。
+接続を作成する際に、Experience Platform データセットを追加できます。
 
 1. 接続設定ダイアログで、「**[!UICONTROL データセットを追加]**」を選択します。
 
@@ -107,7 +107,7 @@ ht-degree: 94%
    | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
    | **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立する場合は、このオプションを有効にします。 継続的な接続を行うと、データセットに追加された新しいデータバッチが Workspace で自動的に使用できます。 |
    | **[!UICONTROL データセットのバックフィル]** | 既存のすべてのデータを確実にバックフィルするには、「**[!UICONTROL 既存のすべてのデータをバックフィル]**」を有効にします。<br/><br/>特定の期間の履歴データをバックフィルするには、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。 データセットのバックフィル期間を最大 10 個定義できます。<ol><li>開始データと終了データを入力するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を使用して日付を選択して期間を定義します。</li><li>「**[!UICONTROL キューのバックフィル]**」を選択してバックフィルをリストに追加するか、「**[!UICONTROL キャンセル]**」を選択してキャンセルします。</li></ol>各エントリについて、期間を編集するには ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) を選択し、エントリを削除するには ![削除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) を選択します。<br/><br/>バックフィルについて：<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。 履歴データの量は待ち時間に影響を与えます。</li><li>Analytics ソースコネクタは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。</li></ul> |
-   | **[!UICONTROL データセットを変換]** | 特定の B2B ルックアップデータセットでは、データセットの変換を有効にして、適切な B2B ユーザーベースのレポートシナリオを実現できます。 |
+   | **[!UICONTROL データセットを変換]** | 特定の B2B ルックアップデータセットでは、適切な B2B ユーザーベースのレポートシナリオに対応するデータセットの変換を有効にすることができます。 |
    | **[!UICONTROL バックフィルのステータス]** | 次に、使用可能なステータスインジケーターを示します。<ul><li>成功</li><li>X 個のバックフィルが処理中</li><li>オフ</li></ul> |
    | **[!UICONTROL データセット ID]** | この ID は自動的に生成されます。 |
    | **[!UICONTROL 説明]** | 作成された際に、このデータセットに付与された説明。 |

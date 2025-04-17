@@ -195,7 +195,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **一般的なデフォルト** | | |
-| | 割合（％） | すべてのビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | すべてのビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | すべてのビジュアライゼーションで詳細な凡例テキストを非表示にできます。 |
 | | 項目数の上限を設定 | すべてのビジュアライゼーションで X 軸の項目数を減らします。この環境設定は、大きなデータセットがある場合に役立ちます。 |
 | | 2 軸を表示（該当する場合） | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
@@ -203,7 +203,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | Y 軸をゼロに固定 | グラフにプロットされるすべての値がゼロを大幅に上回る場合、グラフのデフォルトは Y 軸の一番下をゼロ以外に更新します。 このチェックボックスをオンにすると、Y 軸が強制的にゼロになります（グラフが再描画されます）。 |
 | | 異常値で Y 軸のスケールの設定を固定 | Y 軸は、異常値を使用してスケーリングされます。 |
 | **[行](/help/analysis-workspace/visualizations/line.md)** | | |
-| | 割合（％） | 折れ線グラフビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | 折れ線グラフビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 折れ線グラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | | 項目数の上限を設定 | 折れ線グラフのビジュアライゼーションの X 軸の項目数を減らします。この環境設定は、大きなデータセットがある場合に役立ちます。 |
 | | 2 軸を表示（該当する場合） | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
@@ -240,7 +240,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | ツールチップを表示 | フロービジュアライゼーション内の個々のノードにカーソルを合わせたときに、ノードデータを含むツールチップを表示するかどうかを決定します。 |
 | | 列の数 | フロー図で必要な列数を決定します。 |
 | | 列ごとに展開される項目数 | 各列に必要な項目数。 |
-| **[ジャーニー キャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
+| **[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
 | | コンテナ | パスを分析するコンテナを選択します。 優先コンテナは、様々な B2B コンテナレベル [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} でのアカウントエンゲージメント、ユーザーレベル（複数のセッションにわたる）でのユーザーエンゲージメント、または分析を 1 つのセッションに制限するのに役立ちます。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | **積み重ねグラフ** | | |
 | | 100% の積み重ね | 積み上げ面、積み上げ棒、または積み上げ横棒のビジュアライゼーションのこの設定は、グラフを「100 % の積み上げ」のビジュアライゼーションに変更します。 <p>詳しくは、[ 棒グラフおよび積み重ね棒グラフ ](/help/analysis-workspace/visualizations/bar.md) を参照してください。</p> |
@@ -249,20 +249,20 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>セッション</li><li>ユーザー</li></ul> <p>例えば、ページビューと共に使用する場合、1 人あたりのページビュー、訪問のページビュー、またはイベントごとのページビューを選択できます。 ヒットの場合、フリーフォームテーブルの y 軸指標として、「回数」が使用されます。</p> |
 | **[変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 値 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>パーセントの変更</li><li>生の差異</li></ul> |
-| | 割合（％） | 変更の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | 変更の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 変更の概要ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | **[数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
-| | 割合（％） | 数値の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | 数値の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 数値の概要ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | | 概要値の基準 | 「最大」、「最小」、「平均」、「中央値」、「合計」から選択します。 |
 | | 値を短縮 | **[!UICONTROL 数値の概要]**&#x200B;セクション内 |
 | **[ツリーマップ](/help/analysis-workspace/visualizations/treemap.md)** | | |
-| | 割合（％） | ツリーマップビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | ツリーマップビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 項目数の上限を設定 | ツリーマップビジュアライゼーションの X 軸の項目数を減らします。この環境設定は、大きなデータセットがある場合に役立ちます。 |
 | **[ベン図](/help/analysis-workspace/visualizations/venn.md)** | | |
 | | 凡例を表示 | ベン図ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | **[散布図](/help/analysis-workspace/visualizations/scatterplot.md)** | | |
-| | 割合（％） | 散布図のビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | 散布図のビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 散布図ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | | 項目数の上限を設定 | 散布図ビジュアライゼーションの X 軸の項目数を減らします。  この環境設定は、大きなデータセットがある場合に役立ちます。 |
 | | Y 軸をゼロに固定 | グラフにプロットされるすべての値がゼロを大幅に上回る場合、グラフのデフォルトでは、Y 軸の一番下がゼロ以外になります。 このチェックボックスをオンにすると、Y 軸が強制的にゼロになります（グラフが再描画されます）。 |

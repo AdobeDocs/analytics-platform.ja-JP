@@ -1,13 +1,13 @@
 ---
 title: メディア再生滞在時間パネル
-description: Analysis Workspaceのメディア再生滞在時間パネルを使用および解釈する方法。
+description: Analysis Workspace のメディア再生滞在時間パネルを使用および解釈する方法。
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -34,14 +34,14 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics_ のメディア再生滞在時間パネルについて説明します**_。<br/>_この記事の_{AdobeAnalytics[ _**Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) バージョンについては、![](/help/assets/icons/AdobeAnalytics.svg) メディア再生滞在時間パネル** を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->メディア分平均オーディエンスパネルを使用できるのは、Customer Journey Analytics用 Streaming Media Collection アドオンを購入したお客様のみです。
+>メディア分平均オーディエンスパネルは、Customer Journey Analytics 用ストリーミングメディアコレクションアドオンを購入したお客様のみが使用できます。
 >詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
 >
 
@@ -60,7 +60,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ メディア再生滞在時間 ](https://video.tv.adobe.com/v/338699){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/338699){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -69,7 +69,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 ## 使用
 
-**[!UICONTROL メディア再生滞在時間]** パネルを使用するには：
+**[!UICONTROL メディア再生滞在時間]**&#x200B;パネルを使用するには：
 
 1. **[!UICONTROL メディア再生滞在時間]**&#x200B;パネルを作成します。パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
@@ -119,7 +119,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 | 質問 | 回答 |
 |---|---|
 | フリーフォームテーブルはどこにありますか？ データソースの確認方法を教えてください。 | <p></p><p>このビューでは、フリーフォームテーブルは使用できません。 データソースをダウンロードするには、折れ線グラフのコンテキストメニューで、CSV ファイルをダウンロードするためのオプションを選択します。</p> |
-| <p>精度が変更されたのはなぜですか？</p> | <p>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。</p><p></p><p>大きい日付範囲から小さい日付範囲に変更する場合、日付範囲が変更されると、精度は許容できる最小の詳細に更新されます。より高い精度を表示するには、パネルを編集して再作成します。</p> |
+| <p>精度が変更されたのはなぜですか？</p> | <p>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。</p><p></p><p>大きい日付範囲から小さい日付範囲に変更する場合、日付範囲が変更されると、精度は許容できる最小の詳細に更新されます。 より高い精度を表示するには、パネルを編集して再作成します。</p> |
 | <p></p><p>ビデオ名、セグメント、コンテンツタイプなどの比較方法を教えてください。</p> | <p>単一のビジュアライゼーション内でこれらを比較するには、セグメント、ディメンションまたはシリーズ分類セグメント内の特定のディメンション項目をドラッグします。</p><p></p><p>ビューの分類は 10 個に制限されています。 10 を超える表示を行うには、複数のパネルを使用する必要があります。</p> |
 | 日付範囲の比較方法を教えてください。 | 単一のビジュアライゼーション内の日付範囲を比較するには、2 つ以上の日付範囲をドラッグして、シリーズの分類を使用します。 これらの日付範囲は、パネルの日付範囲より優先されます。 |
 | ビジュアライゼーションのタイプを変更する方法を教えてください。 | <p></p><p>このパネルでは、時系列の線のビジュアライゼーションのみが可能です。</p> |
