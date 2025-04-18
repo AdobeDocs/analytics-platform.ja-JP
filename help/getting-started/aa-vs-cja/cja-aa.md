@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 916afd0d70f2690df61dde70f46f63e78d62b21a
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 98%
+source-wordcount: '2457'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 | **データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能** | Customer Journey Analytics を使用すると、Adobe Analytics の単一のレポートスイートであるかのように、複数のレポートスイートの[データを組み合わせる](/help/connections/combined-dataset.md)ことができます。 |
 | **あらゆる種類のデータへの対応** | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。[エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用すると、データを均等に表現および整理して、組み合わせや探索にすぐに使用できます。Adobe Analytics は、主に web およびモバイル分析データに焦点を当てており、[データを読み込む](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=ja)機能もいくつかあります。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、CJA を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の CJA レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。これは、生データからレポート／指標を再作成する必要なく、CJA の BI レポートを取得するはるかに簡単な方法です。 |
-| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) は、コンテンツがビジネスが定義した主要業績評価指標にどのように影響するかをマーケターが理解するのに役立ちます。 Content Analyticsは、行動データに加えて、コンテンツの消費量とコンテンツが与える影響に関するデータを収集します。 |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) は、コンテンツがビジネスが定義した主要業績評価指標にどのように影響するかをマーケターが理解するのに役立ちます。 Content Analyticsは、行動データに加えて、コンテンツの消費量とコンテンツが与える影響に関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数の組み込みの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
 | **派生フィールド** | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、これらの変換は、すべてのレポートに対して遡って適用できます。 |
@@ -41,7 +41,7 @@ ht-degree: 98%
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。<br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
-| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL ユニーク数超過]ラベルが表示されることがありますが、発生する頻度ははるかに低いので、データにフィルターまたはセグメントを適用することで軽減できます。</p> |
+| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL  ラベルを表示できますが、こ ] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
 
 ## 完全にサポートされる Adobe Analytics 機能／コンポーネント {#full-support}
 
@@ -109,7 +109,7 @@ ht-degree: 98%
 | **Products 変数** | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | **プロジェクトの共有** | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | **Report Builder** | Excel 用の新しい Office 365 プラグインでサポートされます。 |
-| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、フィルターまたは注釈などを作成するユーザー権限を追加できます。 |
+| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、セグメント、注釈などを作成するための追加のユーザー権限が利用可能です。 |
 | **ビジュアライゼーション** | マップビジュアライゼーションを除く、すべてのワークスペースビジュアライゼーションがサポートされます。 |
 | **クロスデバイス／クロスチャネルのステッチ** | ID 情報を含むイベントデータセットに対してサポートされます。[ステッチ](../../stitching/overview.md)を参照してください。 |
 

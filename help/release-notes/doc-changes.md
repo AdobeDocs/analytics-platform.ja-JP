@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -45,18 +45,18 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ステッチとプライバシーリクエスト | プライバシーリクエストの結果である[未ステッチプロセスの今後の変更](/help/stitching/faq.md#frequently-asked-questions)に関する通知を追加しました。 |
 | **2024年10月** | |
 | ジャーニーキャンバスビジュアライゼーション | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
-| アセット転送 | プロジェクト、フィルター、計算指標などのコンポーネントの[所有権を他のユーザーに転送](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/asset-transfer/transfer-assets)して、継続的に適切なアクセス権を持てるようにします。 |
+| アセット転送 | プロジェクト、セグメント、計算指標などのコンポーネントの [ 所有権 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) を他のユーザーに転送し、継続性を確保して適切なアクセス権を持つことができます。 |
 | 改善された使用状況インターフェイス | [すべての接続で取り込まれた行とレポート可能な行の使用状況](/help/connections/manage-connections.md#usage)を表示するように改善されたインターフェイスに関する記事を更新しました。 |
 | 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスからのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明する[ユースケース記事](/help/use-cases/stitching/shared-devices.md)を追加しました。 |
 | Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
-| Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、フィルター、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
+| Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）およびコンポーネント（注釈、ディメンション、（計算）指標、セグメント、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
 | ガイド付き分析 | Analysis Workspace 内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
-| Audience ドキュメントの更新 | Analysis Workspace 内のビジュアライゼーションから[オーディエンスを作成](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish?lang=ja)する際に、パネルフィルターと列フィルターが追加の条件として含まれるようになりました。 |
+| Audience ドキュメントの更新 | Analysis Workspace内のビジュアライゼーションから [ オーディエンスを作成 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish?lang=ja) する際に、パネルセグメントと列セグメントが追加の条件として含まれるようになりました。 |
 | **2024年9月** | |
 | 概要データ更新 | 概要データに関するレポートを作成する際の[ルックアップデータ](/help/data-views/summary-data.md#lookup-data)の適切な使用方法に関する情報を含む概要データに関する記事を更新しました。 |
 | BI 拡張機能の更新 | BI 拡張機能ドキュメントに[デフォルトと制限](/help/data-views/bi-extension.md#defaults-and-limitations)のセクションを追加しました。 |
 | アラート | Customer Journey Analytics で利用できるようになった[アラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)機能のドキュメントを追加しました。 |
-| 計算指標マネージャーとフィルターマネージャーの「使用場所」列に含まれる追加情報 | [計算指標マネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja)と[フィルターマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja)の「使用場所」列には、Report Builder とアドホックコンポーネントの新しいレポート領域が含まれています。 |
+| 計算指標マネージャーとセグメントマネージャーの「使用されている場所」列に表示される追加情報 | [計算指標マネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja)と[フィルターマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja)の「使用場所」列には、Report Builder とアドホックコンポーネントの新しいレポート領域が含まれています。 |
 | **2024年8月** | |
 | B2B プロジェクトの例 | 新しい[B2B ルックアップ用にデータセットを変換](/help/connections/transform-datasets-b2b-lookups.md)機能を使用して、Customer Journey Analytics でプロファイル（ユーザー）レベルの B2B データを設定、構成、レポートする方法について説明した[ユースケース](/help/use-cases/b2b/example.md)を追加しました。 |
 | データ書き出しのユースケースを更新しました | ルックバックウィンドウを使用してセッション間でアトリビューションを適切に適用する方法を示す詳細なクエリの例を[クエリサービス（Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)に追加しました。 |

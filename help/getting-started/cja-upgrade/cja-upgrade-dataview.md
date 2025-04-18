@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
    データビューにコンポーネントを追加する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[コンポーネント](/help/data-views/create-dataview.md#components)を参照してください。
 
-1. 「[!UICONTROL **設定**]」タブを選択します。ここから、データビュー全体に適用するフィルターを設定し、セッションタイムアウトと指標を設定できます。
+1. 「[!UICONTROL **設定**]」タブを選択します。ここから、データビュー全体に適用するセグメントを設定し、セッションのタイムアウトと指標を設定できます。
 
    データビューの設定を指定する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[設定](/help/data-views/create-dataview.md#settings)を参照してください。
 

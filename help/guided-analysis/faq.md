@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
-workflow-type: ht
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * **Analysis Workspace は、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。行と列の両方にフィルターを適用して、目的のデータを取得できます。
 
-* **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。** 各分析は、まずイベントを選択することで開始し、ディメンションとフィルターを追加して、そのイベントデータを絞り込むことができます。
+* **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。** 各分析はイベントの選択から始まり、ディメンションとセグメントを追加してイベントデータを絞り込むことができます。
 
 ![Analysis Workspace とガイド付き分析のビュー](assets/structure.png){style="border:1px solid gray"}
 

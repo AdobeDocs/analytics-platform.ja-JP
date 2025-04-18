@@ -4,10 +4,10 @@ description: 様々なレポート機能におけるデータ処理の違いを�
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 100%
+source-wordcount: '1078'
+ht-degree: 96%
 
 ---
 
@@ -43,8 +43,8 @@ Adobe Analytics では、通常、レポート時の処理は、収集時に発�
 | ヒットレベルのロジック | 行単位で適用されるロジック。 | 例：処理ルール、VISTA、特定のマーケティングチャネルのルール。 |
 | 訪問レベルのロジック | 訪問レベルで適用されるロジック。 | 例：訪問およびセッション定義。 |
 | 訪問者レベルのロジック | ユーザーレベルで適用されるロジック。 | 例：クロスデバイス／クロスチャネルのユーザーのステッチ。 |
-| セグメント（フィルター）ロジック | イベント／訪問／ユーザー（イベント／セッション／ユーザー）セグメント（フィルター）ルールの評価。 | 例：赤い靴を購入した人物。 |
-| 計算指標 | セグメントやフィルターを含む複雑な数式に基づく可能性のある、お客様が作成したカスタム指標の評価。 | 例：赤い靴を購入した人物の数。 |
+| セグメントのロジック | イベント/訪問/人物（イベント/セッション/人物）セグメントルールの評価。 | 例：赤い靴を購入した人物。 |
+| 計算指標 | セグメントを含む複雑な数式に基づく可能性のある、顧客が作成したカスタム指標の評価。 | 例：赤い靴を購入したユーザーの数。 |
 | アトリビューションロジック | アトリビューションを計算するためのロジック。 | 例：eVar の永続性。 |
 | コンポーネント設定 | アトリビューション、動作、形式など、指標やディメンションへのカスタマイズの適用 | 例：範囲に基づいて数値を組み合わせる値のバケット化 |
 | 派生フィールド | データビューでのコンポーネント定義の一部としてスキーマまたは標準フィールドに適用されるロジック。 | 例：新しいマーケティングチャネルディメンションの作成 |
@@ -65,7 +65,7 @@ Adobe Analytics と Customer Journey Analytics に対して実行されるデー
 | Adobe Analytics [Livestream](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md) | <ul><li> 処理ルール</li><li>VISTA ルール</li><ul> |   | <ul><li>ヒットレベルのマーケティングチャネルのルール</li><li>訪問レベルのマーケティングチャネルのルール</li><li>訪問ロジック</li><li>アトリビューションロジック</li><li>セグメントのロジック</li><li>計算指標</li><li>クロスデバイス分析</li></ul> |  |
 | Adobe Analytics [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=ja) | <ul><li>処理ルール</li><li>VISTA ルール</li><li>訪問定義（メモを参照）</li><li>クロスデバイス分析（メモを参照）</li></ul> | <ul><li>ヒットレベルのマーケティングチャネルのルール（メモを参照）</li><li>訪問レベルのマーケティングチャネルのルール（メモを参照）アトリビューションロジック</li><li>セグメントのロジック</li><li>計算指標</li></ul> |  | <ul><li>CDA では、レポート時の処理を含む仮想レポートスイートの使用が必要です。</li><li>コア Analytics の Attribution IQ は、レポート時に完全に派生されるマーケティングチャネルを使用します（つまり、派生した中央値）。</li><li>Attribution IQ は、レポート時の処理仮想レポートスイートで使用される場合を除き、処理時の訪問定義を使用します。</li></ul> |
 | [レポート時の処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を含む Adobe Analytics 仮想レポートスイート | <ul><li>処理ルール</li><li>VISTA ルール</li><li>[クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)</li></ul> | <ul><li>訪問定義</li><li>アトリビューションロジック</li><li>セグメントのロジック</li><li>計算指標</li><li>その他の仮想レポートスイートのレポート時の処理設定</li></ul> | <ul><li>ヒットレベルのマーケティングチャネルのルール</li><li>訪問レベルのマーケティングチャネルのルール</li></ul> | <ul><li>仮想レポートスイートのレポート時の処理の[ドキュメント](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)を参照してください。</li></ul> |
-| Adobe Experience Platform データレイクの [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセット | <ul><li>処理ルール</li><li>VISTA ルール</li><li>ヒットレベルのマーケティングチャネルのルール</li><li>フィールドベースのステッチ（メモを参照）</li></ul> |   | <ul><li>[訪問レベルのマーケティングチャネルのルール](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja)</li><li>訪問ロジック</li><li>アトリビューションロジック</li><li>フィルターロジック</li></ul> | <ul><li>独自のフィルターロジックおよび計算指標を適用する必要があります</li><li>フィールドベースのステッチでは、Analytics ソースコネクタで作成されたデータセットに加えて、個別のステッチされたデータセットが作成されます。</li></ul> |
+| Adobe Experience Platform データレイクの [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)ベースのデータセット | <ul><li>処理ルール</li><li>VISTA ルール</li><li>ヒットレベルのマーケティングチャネルのルール</li><li>フィールドベースのステッチ（メモを参照）</li></ul> |   | <ul><li>[訪問レベルのマーケティングチャネルのルール](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=ja)</li><li>訪問ロジック</li><li>アトリビューションロジック</li><li>フィルターロジック</li></ul> | <ul><li>独自のセグメントロジックおよび計算指標を適用する必要があります</li><li>フィールドベースのステッチでは、Analytics ソースコネクタで作成されたデータセットに加えて、個別のステッチされたデータセットが作成されます。</li></ul> |
 | [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja) レポート | <ul><li>Adobe Experience Platform データ収集の一部として実装</li></ul> | <ul><li>セッション定義</li><li>[データビュー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=ja)設定<li>アトリビューションロジック</li><li>計算指標</li><li>フィルターロジック</li></ul> | <ul><li>訪問レベルのマーケティングチャネルのルール</li></ul> | <ul><li>クロスチャネル分析を活用するには、ステッチされたデータセットを使用する必要があります。</li></ul> |
 
 {style="table-layout:auto"}

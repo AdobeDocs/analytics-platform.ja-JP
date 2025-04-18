@@ -4,10 +4,10 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics 用のランディングページには、[!DNL Analy
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![Analysis Workspaceの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ランディングページ ](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -53,7 +53,7 @@ Customer Journey Analytics のランディングページは、「プロジェ�
 
 >[!NOTE]
 >
->次の設定の一部は、セッション中およびセッション間で保持されます。例えば、選択したタブ、選択したフィルター、選択した列および列の並べ替え方向があります。検索結果は永続的ではありません。
+>次の設定の一部は、セッション中およびセッション間で保持されます。例えば、選択したタブ、選択したセグメント、選択した列および列の並べ替え方向があります。 検索結果は永続的ではありません。
 
 詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 

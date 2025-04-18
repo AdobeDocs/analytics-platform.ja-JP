@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 88%
+ht-degree: 84%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Analytics から Customer Journey Analytics へのアップグレードプ
 
 * [データビューでのレポート時の変換](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに深く解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、サブイベントをフィルタリング、または派生フィールドを使用できます。これらの変換はすべて非破壊的に行われます。
+  Customer Journey Analytics のデータビューを使用すると、接続からのデータをさらに深く解釈できます。実装を変更せずにデータを変更または削除したり、部分文字列を使用してディメンションを操作したり、任意の値から指標を作成したり、セグメントのサブ文字列を使用したり、派生フィールドを使用したりできます。 これらの変換はすべて非破壊的に行われます。
 
 * [変換は履歴データと新規データに適用されます](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 

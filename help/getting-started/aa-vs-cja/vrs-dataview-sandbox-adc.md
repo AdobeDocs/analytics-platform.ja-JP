@@ -4,10 +4,10 @@ description: 仮想レポート環境とサンドボックス環境について�
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,14 +48,14 @@ ht-degree: 100%
 
 データビューに該当すること：
 
-* Customer Journey Analytics フィルターに基づくことができる。
+* Customer Journey Analyticsのセグメントに基づくことができる。
 * 履歴データにも新しいデータにも、非破壊で適用できる。
 * 異なるビジネスチームで使用するために、Customer Journey Analytics 接続の上に 1 つまたは複数の仮想ビューを作成できる。
 * Customer Journey Analytics のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用される可能性がある。
 * Customer Journey Analytics 接続を通じて Customer Journey Analytics に取り込まれるデータを変換および強化するための強力な非破壊オプションを提供する。
 * Customer Journey Analytics のレポート時の処理機能に基づく。
 * 「セッション」のカスタム定義をユーザーが作成できるようにする。
-* フィルター評価と同様に、レポート実行時に適用される。これは、ソースコネクタ（Adobe Analytics など）が Adobe Experience Platform データレイク内のデータセットにデータを書き込んだ&#x200B;_後_&#x200B;と、Customer Journey Analytics 接続を介してデータが Customer Journey Analytics に取り込まれた&#x200B;_後_&#x200B;です。
+* セグメント評価と同様に、レポート実行時に適用される。 これは、ソースコネクタ（Adobe Analytics など）が Adobe Experience Platform データレイク内のデータセットにデータを書き込んだ&#x200B;_後_&#x200B;と、Customer Journey Analytics 接続を介してデータが Customer Journey Analytics に取り込まれた&#x200B;_後_&#x200B;です。
 * 変数の数は無制限だが、キュレーションにより、ユーザーに公開する変数を制限できる
 * イベント、セッションおよび人物コンテナにカスタムの名前を付けることができる。
 * カスタムカレンダーオプションをサポートする。
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 Adobe Experience Platform サンドボックスに該当すること：
 
-* 単一の Adobe Experience Platform インスタンスを別々の仮想環境（開発、テスト、ステージ、実稼動など）に分割する手段を提供する。デジタルエクスペリエンスアプリケーションの開発と発展を支援する。
+* 単一のAdobe Experience Platform インスタンスを別々の仮想環境（開発、テスト、ステージ、実稼動など）に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する手段を提供します。
 * 所定の環境のすべてのデータとアプリケーションを保持するコンテナと考えることができる。
 
 Adobe Experience Platform サンドボックスに該当しないこと：

@@ -4,10 +4,10 @@ title: クイックセグメント
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 30%
+ht-degree: 26%
 
 ---
 
@@ -57,11 +57,11 @@ ht-degree: 30%
 クイックセグメントを管理するには、特定の **[!UICONTROL クイックセグメント]** にポインタを合わせます。
 
 * ![ 編集 ](/help/assets/icons/Edit.svg) を選択して [ クイックセグメントビルダー ](#quick-filter-builder) を開き、クイックセグメントを編集します。
-* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにフィルターに関する情報が表示されます。「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL  クイックセグメント ] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-filter-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](filter-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
+* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにセグメントに関する情報が表示されます。 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL  クイックセグメント ] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-filter-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](filter-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
 
 ## クイックセグメントビルダー
 
-クイックセグメントビルダーの例については、以下を参照してください。 例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` というタイトルのクイックフィルターのビルダーが開かれます。上部にある両方のクイックフィルターは、[!UICONTROL 平均注文値ダッシュボード]パネルと、[!UICONTROL 国別平均注文値]フリーフォームテーブルなど、そのパネル内のすべてのビジュアライゼーションに適用されます。
+クイックセグメントビルダーの例については、以下を参照してください。 この例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` という名前のクイックセグメントに対してビルダーが開かれています。 上部の両方のクイックセグメントは、[!UICONTROL  平均注文値ダッシュボード ] パネルと、[!UICONTROL  国あたりの平均注文値 ] フリーフォームテーブルなどの内のすべてのビジュアライゼーションに適用されます。
 
 ![クイックセグメントビルダー](assets/quick-filter-builder.png)
 
