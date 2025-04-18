@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 ### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
-Adobe Analytics セグメント（Customer Journey Analytics では[!UICONTROL フィルター]と呼ばれます）および計算指標は、Customer Journey Analytics と互換性がありません。多くの場合は、使用可能な新しいスキーマとデータを使用して、Customer Journey Analytics でこれらのコンポーネントを再構築できます。
+Adobe Analyticsのセグメントと計算指標は、Customer Journey Analyticsと互換性がありません。 多くの場合は、使用可能な新しいスキーマとデータを使用して、Customer Journey Analytics でこれらのコンポーネントを再構築できます。
 
 ユーザーがシステム間を移行する際に作業ができるだけスムーズに進むように、次のことを行って前もって計画しておきます。
 
@@ -78,7 +78,7 @@ Adobe Analytics セグメント（Customer Journey Analytics では[!UICONTROL �
 
 2. 定義をドキュメント化する。
 
-3. データに必要なフィールドを特定し、それらを[フィルター](/help/components/filters/filters-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として Customer Journey Analytics にレプリケートする。
+3. データに必要なフィールドを特定し、それらを [ セグメント ](/help/components/filters/filters-overview.md) および [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) としてCustomer Journey Analyticsにレプリケートする。
 
 次に、ガイドとなるビデオをいくつか示します。
 

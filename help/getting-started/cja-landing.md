@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
 
-Customer Journey Analytics を使用すると、共通の顧客 ID に基づいて Analysis Workspace のオンラインデータとオフラインデータの接続方法を制御し、顧客データ全体でアトリビューション、フィルター、フロー、フォールアウトなどを 実行できます。
+Customer Journey Analyticsを使用すると、共通の顧客 ID に基づいてAnalysis Workspaceのオンラインデータとオフラインデータを結び付ける方法を制御でき、アトリビューション、セグメント、フロー、フォールアウトなどを実行できるようになります。 実行できます。
 
 ## 新着情報
 

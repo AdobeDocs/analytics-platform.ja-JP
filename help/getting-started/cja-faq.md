@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 13f2bdb9753c0f4252262c595061ed9b54c38a3c
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**[!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続するにはどうすればよいですか？**
 
-データセット間でユーザー ID が一致する限り、[!UICONTROL Customer Journey Analytics] はデータセット間でフィルター、アトリビューション、フロー、フォールアウトなどを接続できます。
+データセット間で個人 ID が一致する限り、[!UICONTROL Customer Journey Analytics] はデータセット間でセグメント、アトリビューション、フロー、フォールアウトなどを接続できます。
 
 +++
 
@@ -174,7 +174,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | [!UICONTROL セッション]と[!UICONTROL ユーザー]のカウント | 複数のレポートスイートをまたいで重複排除が行われます。その結果、カウントが一致しない場合があります。 |
 | 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL 購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。これにより、主要指標の数が増えすぎるのを防ぎます。その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
 | 通貨 | 通貨換算は、まだ Customer Journey Analytics でサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
-| [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md)は複数のレポートスイートにまたがって適用され、[!UICONTROL フィルター]、[!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
+| [!UICONTROL 永続性] | [ 永続性 ](../data-views/component-settings/persistence.md) は複数のレポートスイートにまたがって適用され、[!UICONTROL  セグメント ]、[!UICONTROL  アトリビューション ] などに影響します。 数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |
 
 ## 8. [!UICONTROL Adobe Analytics] コンポーネント

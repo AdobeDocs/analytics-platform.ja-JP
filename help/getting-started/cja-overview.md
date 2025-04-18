@@ -5,16 +5,16 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
 # Customer Journey Analytics の概要
 
-Customer Journey Analytics は、Adobe Experience Platform からのデータと共に Analysis Workspace の機能を使用できるアドビの次世代 Analytics ソリューションです。数年分のデータを分類、フィルタリング、クエリ、視覚化でき、あらゆる種類のデータスキーマやデータの種類を保持できる Platform の機能と組み合わせることができます。**Experience Data Model（XDM）**&#x200B;を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。**Adobe Experience Platform クエリサービス**&#x200B;では、SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
+Customer Journey Analytics は、Adobe Experience Platform からのデータと共に Analysis Workspace の機能を使用できるアドビの次世代 Analytics ソリューションです。数年分のデータを分類、セグメント化、クエリおよび視覚化でき、あらゆる種類のデータスキーマおよびタイプを保持する Platform の機能と組み合わされます。 **Experience Data Model（XDM）**&#x200B;を使用すると、データを均等に表示および整理し、組み合わせや調査に対応できます。**Adobe Experience Platform クエリサービス**&#x200B;では、SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
 
 Customer Journey Analytics の高レベルのアーキテクチャを以下に示します。
 

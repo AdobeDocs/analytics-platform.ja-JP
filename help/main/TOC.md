@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 86%
@@ -199,7 +199,7 @@ ht-degree: 86%
          + [概要](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [設定](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [ディメンション間のフォールアウト](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [フィルターの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [セグメントの適用](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + フロー {#flow}
          + [概要](../analysis-workspace/visualizations/c-flow/flow.md)
          + [設定](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -320,19 +320,19 @@ ht-degree: 86%
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数の高いディメンション](../components/dimensions/high-cardinality.md)
    + [指標](../components/apply-create-metrics.md)
-   + フィルター {#cja-filters}
+   + セグメント {#cja-segments}
       + [概要](../components/filters/filters-overview.md)
-      + [フィルターの作成](../components/filters/create-filters.md)
-      + [フィルターの作成](../components/filters/filter-builder.md)
-      + [クイックフィルター](../components/filters/quick-filters.md)
-      + [順次フィルター](../components/filters/seg-sequential-build.md)
-      + [フィルターの共有](../components/filters/filters-share.md)
-      + [タグフィルター](../components/filters/filters-tag.md)
-      + [フィルターリストのフィルタリング](../components/filters/filters-filter.md)
-      + [フィルターのお気に入りへの登録](../components/filters/filters-favorite.md)
-      + [フィルターの承認](../components/filters/filters-approve.md)
-      + [フィルターのコピー](../components/filters/filters-copy.md)
-      + [フィルターの管理](../components/filters/manage-filters.md)
+      + [セグメントの作成](../components/filters/create-filters.md)
+      + [セグメントの構築](../components/filters/filter-builder.md)
+      + [クイックセグメント](../components/filters/quick-filters.md)
+      + [順次セグメント](../components/filters/seg-sequential-build.md)
+      + [セグメントの共有](../components/filters/filters-share.md)
+      + [セグメントのタグ設定](../components/filters/filters-tag.md)
+      + [セグメントのリストのフィルタリング](../components/filters/filters-filter.md)
+      + [セグメントのお気に入りへの登録](../components/filters/filters-favorite.md)
+      + [セグメントの承認](../components/filters/filters-approve.md)
+      + [セグメントのコピー](../components/filters/filters-copy.md)
+      + [セグメントの管理](../components/filters/manage-filters.md)
       + [演算子](../components/filters/operators.md)
    + 計算指標 {#cja-calcmetrics}
       + [概要](../components/calc-metrics/calc-metr-overview.md)
@@ -342,8 +342,8 @@ ht-degree: 86%
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [パーティシペーション指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [フィルタリングされた指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [フィルターの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [セグメント化指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [セグメントの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [計算指標をフィルタリング](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [計算指標をお気に入りに登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [計算指標をコピー](../components/calc-metrics/cm-workflow/cm-copy.md)

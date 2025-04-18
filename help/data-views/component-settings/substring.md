@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ![部分文字列設定](../assets/substring-settings.png)
 
-[!UICONTROL 部分文字列]は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。フィルタリングや他の分析操作が適用される前に発生する即時のデータ変換です。
+[!UICONTROL 部分文字列]は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
 
 ## 左／右から
 
