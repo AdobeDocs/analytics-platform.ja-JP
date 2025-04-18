@@ -1,15 +1,15 @@
 ---
 title: Quantum Metric friction イベントのCustomer Journey Analyticsへの追加
-description: Quantum Metric で収集されたフリクションイベントを使用して、Customer Journey Analyticsでインサイトに深みを加えます。
+description: Quantum Metric で収集した摩擦イベントをCustomer Journey Analyticsの行動データに追加して、CJAのインサイトに深みを持たせます。
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,20 @@ Quantum Metric は、ページ読み込み速度の低下、ページ読み込�
 
 ## 手順 1:Quantum Metric タグ拡張機能を使用して摩擦イベントをキャプチャする
 
-Quantum Metric CSM チームは、追加する適切なスキーマ要素を判断するのに役立ち、Customer Journey Analyticsで使用する目的のデータを収集するように実装を変更するように指示します。 詳しくは、Quantum Metric カスタマーサクセスマネージャーにお問い合わせください。
+Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
 
-最終的には、フィールドで摩擦イベント名のトラッキングを開始する必要があります。
+Adobe Experience Platform Data Collection のタグを使用して、摩擦イベントの名前を手動で設定し、XDM オブジェクトに含めて分析できるようにします。 これを行う 1 つの方法は、ルールのカスタムコードです。
 
-## 手順 2：含まれるデータセットフィールドを確認する
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-接続内のデータセットに、目的のデータセットの Quantum Metric セッション ID があることを確認します。
+次に、動的に設定されるデータ要素を XDM オブジェクトに追加します。
 
-## 手順 3:Customer Journey Analyticsのデータビューへの 1 つ以上のディメンションと指標の追加
+![Quantum Metric エラー名のスクリーンショット ](assets/error-name.png)
+
+## 手順 2:Customer Journey Analyticsのデータビューへの 1 つ以上のディメンションと指標の追加
 
 既存のデータビューを編集し、セッション ID をCustomer Journey Analyticsで使用可能なディメンションとして追加します。
 
@@ -45,8 +50,9 @@ Quantum Metric CSM チームは、追加する適切なスキーマ要素を判�
 1. 左側の量子指標の摩擦イベントフィールドリストを見つけて、中央の指標領域にドラッグします。
 1. 右側のペインで、「[ 値を含める/除外 ](/help/data-views/component-settings/include-exclude-values.md)」設定を、追跡する摩擦イベントに設定します。 複数の摩擦イベントを同じ指標に追加して、それらを組み合わせることができます。 また、摩擦イベントフィールドの別のコピーを指標領域にドラッグして、他の摩擦イベントを別の指標として追跡することもできます。
 1. 必要なディメンションと指標をすべて作成したら、「**[!UICONTROL 保存]**」をクリックします。
+1. エラーイベントの完全なリストについては、Quantum Metric のドキュメントを参照してください。 その他の質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
 
-## 手順 4:Analysis Workspaceで、残りのデータと共にディメンションおよび指標を使用する
+## 手順 3:Analysis Workspaceで、ディメンションと指標を残りのデータと共に使用する
 
 残りの訪問者データと共に収集された Quantum Metric friction event データを使用すると、Customer Journey Analyticsの他のディメンションや指標とまったく同じように使用できます。
 

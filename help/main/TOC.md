@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 13f2bdb9753c0f4252262c595061ed9b54c38a3c
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1214'
 ht-degree: 86%
 
 ---
@@ -432,7 +432,6 @@ ht-degree: 86%
          + [Google Analytics データに関するレポート](/help/use-cases/third-party/ga/report.md)
       + Quantum 指標 {#qm}
          + [概要](/help/use-cases/third-party/quantum-metric/qm-overview.md)
-         + [セッション ID を収集](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
          + [セッション再生のタイ](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [ヒートマップの使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)

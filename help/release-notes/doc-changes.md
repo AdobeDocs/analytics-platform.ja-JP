@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
 source-wordcount: '4716'
 ht-degree: 98%
@@ -23,7 +23,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 使用状況の表示と管理 | Customer Journey Analyticsの使用方法を [ 表示 ](/help/connections/manage-connections.md#usage) および [ 管理 ](/help/technotes/estimate-usage.md) するドキュメントを修正しました |
 | コンテンツ分析 | Adobe Content Analyticsの [ ドキュメント ](/help/content-analytics/content-analytics.md)。 Content Analyticsを使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンド、異常の発見、コンテンツの疲労の特定、コンテンツの漏洩からのインサイトの取得を行うことができます。 |
 | **2025年3月** | |
-| 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/collect-session-id.md)からデータを収集するためのユースケースを追加しました。 |
+| 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/qm-overview.md)からデータを収集するためのユースケースを追加しました。 |
 | **2025年2月** |  |
 | メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
 | BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
