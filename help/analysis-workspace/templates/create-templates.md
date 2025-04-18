@@ -4,10 +4,10 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 0f4b396bb44612ef52b640ffaeba6aa5aeace423
+source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 89%
+source-wordcount: '1850'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 89%
    | **[!UICONTROL 説明]** | テンプレートの使用目的を説明する短い説明を入力します。 |
    | **[!UICONTROL このテンプレートを使用する理由]** | このテンプレートの使用方法について組織内の人物に通知する、短い説明を入力します。この説明は、テンプレートのプレビューページに表示されます。 |
    | **[!UICONTROL チャネル]** | このテンプレートに適用される、該当のチャネルを選択します。複数のチャネル（**[!UICONTROL web]**、**[!UICONTROL モバイル]**、**[!UICONTROL クロスチャネル]**、**[!UICONTROL コールセンター]**、**[!UICONTROL ストア内]**）を選択できます。<p>選択したオプションによって、テンプレートの表示場所と、テンプレートにアクセスするユーザーに適用される「組織テンプレート」ページのセグメントが決まります。</p> |
-   | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。**[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]** など、複数のユースケースを選択できます。 <p>選択した項目によって、組織テンプレートページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**メモ：**「**[!UICONTROL Journey Optimizer]**」オプションを使用できるのは、Adobe Customer Journey Analytics で使用しているデータビューに Journey Optimizer データが存在する場合のみです。「**[!UICONTROL Journey Optimizer]**」を選択すると、テンプレートを Adobe Journey Optimizer で使用できるようになります。Journey Optimizer では、**[!UICONTROL レポート]**&#x200B;ページにドロップダウンメニューがあるので、ユーザーはこのテンプレートまたはデフォルトのテンプレートを選択できます。詳しくは、Journey Optimizer ドキュメントの[更新されたレポートエクスペリエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)を参照してください。 |
+   | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。**[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]** など、複数のユースケースを選択できます。 <p>選択した項目によって、組織テンプレートページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**注意：** 「**[!UICONTROL Journey Optimizer]**」オプションを選択すると、テンプレートをAdobe Journey Optimizerで使用できるようになります。 Journey Optimizer では、**[!UICONTROL レポート]**&#x200B;ページにドロップダウンメニューがあるので、ユーザーはこのテンプレートまたはデフォルトのテンプレートを選択できます。詳しくは、Journey Optimizer ドキュメントの[更新されたレポートエクスペリエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)を参照してください。</p><p>「Journey Optimizer」オプションを選択する場合は、次の点を考慮してください。</p><ul><li>このオプションは、Customer Journey Analyticsで使用しているデータビューにJourney Optimizer データが存在する場合にのみ使用できます。</li><li>Customer Journey Analyticsでこのテンプレートを使用すると、Journey Optimizerでこのテンプレートで選択されているデータビューに関係なく、Adobe Journey Optimizerでデフォルトのデータビューとして設定されているデータビューが使用されます。 <br/> データビューをJourney Optimizerのデフォルトのデータビューとして設定する方法については、「[ データビューの作成または編集 [ の ](/help/data-views/create-dataview.md#compatibility) 互換性 ](/help/data-views/create-dataview.md) を参照してください。</li></ul> |
    | **[!UICONTROL Journey Optimizer アクティビティタイプ]** | このテンプレートに関連付ける Journey Optimizer アクティビティタイプ（**[!UICONTROL キャンペーン]**、**[!UICONTROL ジャーニー]**、**[!UICONTROL ランディングページ]**、**[!UICONTROL レポート]**&#x200B;または&#x200B;**[!UICONTROL サブスクリプション]**）を選択します。 <p>このテンプレートをすべてのアクティビティタイプに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
    | **[!UICONTROL Journey Optimizer アクティビティ]** | このテンプレートに関連付ける Journey Optimizer アクティビティを選択します。 <p>このテンプレートを選択したアクティビティタイプのすべてのアクティビティに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
    | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。ここで追加したタグによって、ユーザーはテンプレートのリストをフィルタリングできます。 |
