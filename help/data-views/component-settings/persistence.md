@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="永続性"
->abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのフィルターの前に適用されます。詳しくは、[配分設定](/help/data-views/component-settings/persistence.md#allocation-settings)、[有効期限設定](/help/data-views/component-settings/persistence.md#expiration-settings)、[バインディングディメンション](/help/data-views/component-settings/persistence.md#binding-dimension)および[バインディング指標](/help/data-views/component-settings/persistence.md#binding-metric)を参照してください。"
+>abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのセグメントの前に適用されます。 詳しくは、[配分設定](/help/data-views/component-settings/persistence.md#allocation-settings)、[有効期限設定](/help/data-views/component-settings/persistence.md#expiration-settings)、[バインディングディメンション](/help/data-views/component-settings/persistence.md#binding-dimension)および[バインディング指標](/help/data-views/component-settings/persistence.md#binding-metric)を参照してください。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 
-[!UICONTROL 永続性] は、ディメンションに対してのみ使用でき、適用対象となるデータに遡って適用されます。フィルタリングや他の分析操作が適用される前に発生する即時のデータ変換です。
+[!UICONTROL 永続性] は、ディメンションに対してのみ使用でき、適用対象となるデータに遡って適用されます。セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
 
 | 設定 | 説明 |
 | --- | --- |
