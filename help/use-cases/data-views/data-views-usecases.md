@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1364'
 ht-degree: 33%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 33%
 
 ## BI 拡張機能のユースケース
 
-Customer Journey Analytics BI 拡張機能を使用して様々なユースケースを達成する方法については ](bi-extension-usecases.md)BI 拡張機能のユースケース [ を参照してください。
+Customer Journey Analytics BI 拡張機能を使用して様々なユースケースを達成する方法については ](bi-extension-usecases.md)[BI 拡張機能のユースケース」を参照してください。
 
 ## 文字列スキーマフィールドから指標を作成 {#string}
 
@@ -39,9 +39,9 @@ Customer Journey Analytics BI 拡張機能を使用して様々なユースケ�
 1. 「**[!UICONTROL 値を含める/除外]**」セクションを開き、次の情報を指定します。
    1. 「**[!UICONTROL 除外値を設定]**」を有効にします。
    1. 「**[!UICONTROL 一致]**」から ]**すべての条件を満たす場合**[!UICONTROL  を選択します。
-   1. `confirmation` を指定してください page_title のこのテキストは、このページが注文の発注に関連していることを示しています。 これらの条件を満たすすべてのページタイトルを確認すると、各インスタンスに対して `1` がカウントされます。 結果は、（計算指標ではなく）新しい指標です。含まれた値または除外された値を含む指標は、他の指標を使用できるすべての場所で使用できます。 Attribution IQ、フィルターなど、標準指標を使用できるあらゆる場所で機能します。
+   1. `confirmation` を指定してください page_title のこのテキストは、このページが注文の発注に関連していることを示しています。 これらの条件を満たすすべてのページタイトルを確認すると、各インスタンスに対して `1` がカウントされます。 結果は、（計算指標ではなく）新しい指標です。含まれた値または除外された値を含む指標は、他の指標を使用できるすべての場所で使用できます。 Attribution IQ、セグメントなど、標準指標を使用できるあらゆる場所で機能します。
 
-   ![ 指標 ](../assets/string-to-metric.gif){width=100%} へのDimension
+   ![Dimensionから指標へ ](../assets/string-to-metric.gif){width=100%}
 1. [!UICONTROL セッション]を[!UICONTROL ルックバックウィンドウ]として、[!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。
 また、同じフィールドから別の [!UICONTROL  注文 ] 指標を作成し、別のアトリビューションモデルを指定することもできます。 [!UICONTROL  ファーストタッチ ] や別の [!UICONTROL  ルックバックウィンドウ ] （[!UICONTROL 30 日 ] など）など。
 
@@ -53,7 +53,7 @@ Customer Journey Analytics BI 拡張機能を使用して様々なユースケ�
 
 
 
-1. **[!UICONTROL 期間]** 整数を [!UICONTROL  含まれるコンポーネント ] の下の **[!UICONTROL Dimension]** セクションにドラッグします。
+1. **[!UICONTROL 期間]** 整数を「[!UICONTROL  含まれるコンポーネント ]」の下の **[!UICONTROL ディメンション]** セクションにドラッグします。
 1. これで、「**[!UICONTROL 値のグループ化]**」を追加して、このディメンションをグループ化してレポートに表示できます。バケット化がないと、このディメンションの各インスタンスは、Workspace レポートに行項目として表示されます。
    ![ ディメンション化する整数 ](../assets/integer-to-dimension.gif){width=100%}
 
@@ -88,7 +88,7 @@ f. `50` を値として指定します。
 
 会社はユーザーのトレーニングに時間を費やしており、レポート内のディメンションが「未指定」と想定している可能性があります。 データビューのディメンションのデフォルトは「値なし」です。 ただし、値をレポートしない方法をディメンションごとに指定できます。 ディメンションコンポーネントの「値なし」オプションを参照してください。
 
-![ 値オプションなし ](../assets/no-value-options.gif){width=100%}
+![値オプションなし](../assets/no-value-options.gif){width=100%}
 
 
 ## 異なるアトリビューション設定を持つ複数の指標の作成 {#attribution}
@@ -132,7 +132,7 @@ f. `50` を値として指定します。
 
 ## 日付と日時の機能の使用 {#date}
 
-Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。Customer Journey Analyticsデータビューで、これらのフィールドがサポートされるようになりました。 これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
+Adobe Experience Platform のスキーマには、[!UICONTROL 日付]および[!UICONTROL 日時]フィールドが含まれます。Customer Journey Analyticsのデータビューで、これらのフィールドがサポートされるようになりました。 これらのフィールドをディメンションとしてデータビューにドラッグする際に、[形式](/help/data-views/component-settings/format.md)を指定できます。この形式設定は、レポートでのフィールドの表示方法を決定します。次に例を示します。
 
 * 日付形式で「**[!UICONTROL 日]**」を「**[!UICONTROL 年、月、日]**」の形式で選択した場合、レポートの出力例は、2022年8月23日となります。
 

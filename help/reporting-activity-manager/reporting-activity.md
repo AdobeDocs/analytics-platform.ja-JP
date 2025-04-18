@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: ht
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,11 +51,11 @@ ht-degree: 100%
 
    ![レポートキューを表示するレポートアクティビティ](assets/reporting-activity-monthly.png)
 
-1. （オプション）接続のリストを検索またはフィルタリングできます。
+1. （オプション）接続のリストを検索またはセグメント化できます。
 
    * 検索フィールドを使用して、特定の接続を検索します。接続名または ID の入力を開始すると、入力に応じて接続のリストが更新されます。
 
-   * 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターオプションのリストを展開します。[!UICONTROL **お気に入り**]&#x200B;または&#x200B;[!UICONTROL **ステータス**]&#x200B;でフィルタリングできます。
+   * ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、セグメントオプションのリストを展開します。 [!UICONTROL **お気に入り**]&#x200B;または&#x200B;[!UICONTROL **ステータス**]&#x200B;でフィルタリングできます。
 
      接続をお気に入りとしてマークするには、接続名の左側にある星アイコンを選択します。
 

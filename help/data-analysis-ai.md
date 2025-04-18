@@ -7,10 +7,10 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1878'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,7 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 | **ビジュアライゼーションの作成と更新** | フリーフォームテーブルおよび関連するビジュアライゼーション（線、棒グラフ、ドーナツなど）を生成します。<p>例：*2 月から 5 月の SKU での利益は何ですか？* |
 | **サポートされるビジュアライゼーションタイプ** | <ul><li>行</li><li>複数行</li><li>フリーフォームテーブル</li><li>棒グラフ</li><li>ドーナツ</li><li>概要番号</li></ul> |
 | **範囲外のプロンプト検出** | 「このプロジェクトを書き出す」など、範囲外のプロンプトを送信すると、データインサイトエージェントは、質問が範囲外であることを知らせることで応答します。 |
-| **質問の明確化** | データインサイトエージェントが回答するのに十分なコンテキストがない質問や、一般的すぎる質問については、データインサイトエージェントが、明確な質問や提案されたオプションで応答します。 例： <p>**コンポーネント**<ul><li>指標：*具体的に「売上高」指標はどれですか？*</li><li>Dimension:*注目したい「地域」は、以下のうちどれですか？*</li><li>フィルター：*適用した「アカウント」セグメント*</li><li>日付範囲：*「先月」とは、過去 1 か月を意味していますか？過去 30 日を意味していますか？*</li></ul>**Dimension商品**：店舗名はどちらですか？ （例えば、Store #5274、Store #2949 など）。 |
+| **質問の明確化** | データインサイトエージェントが回答するのに十分なコンテキストがない質問や、一般的すぎる質問については、データインサイトエージェントが、明確な質問や提案されたオプションで応答します。 例： <p>**コンポーネント**<ul><li>指標：*具体的に「売上高」指標はどれですか？*</li><li>Dimension:*注目したい「地域」は、以下のうちどれですか？*</li><li>セグメント：*適用した「アカウント」セグメント*</li><li>日付範囲：*「先月」とは、過去 1 か月を意味していますか？過去 30 日を意味していますか？*</li></ul>**Dimension商品**：店舗名はどちらですか？ （例えば、Store #5274、Store #2949 など）。 |
 | **マルチターン** | データインサイトエージェントは、以前のプロンプトからのコンテキストでプロンプトに応答し、ユーザーはビジュアライゼーションを更新し、フォローアップの質問をすることができます。 例： <ul><li>プロンプト 1:*3 月からのトレンドイベント*</li><li>プロンプト 2:*代わりに 3 月から 4 月のデータを表示する*</li></ul> |
 | **検証可能性** | データの検証可能性と正確性は、生成されたフリーフォームテーブルとデータビジュアライゼーションで確認できます。 例えば、ユーザーが *先月のトレンド注文* と尋ねた場合、新しく生成されたパネル、データビジュアライゼーションおよびフリーフォームテーブルで正しい指標（「注文」）と日付範囲（「先月」）が選択されたことを確認できます。 |
 | **フィードバック** | <ul><li>親指を上に向ける</li><li>サムズダウン</li><li>Flag</li></ul> |
@@ -53,18 +53,18 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 * **契約によるアクセス**:AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはAdobe アカウント担当者にお問い合わせください。 組織がデータインサイトエージェントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
    1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL 製品プロファイル]** に移動します
    1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
-   1. ![ 編集 ](/help/assets/icons/Edit.svg) を選択して **[!UICONTROL レポートツール]** を編集します。
+   1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
    1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** および **AI Assistant: Data Analysis** を **[!UICONTROL 含まれる権限項目]** に追加します。
 
       ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
-   1. 「**[!UICONTROL 保存]**」を選択して、権限を保存します。
+   1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
-詳しくは、[ アクセス制御 ](/help/technotes/access-control.md#access-control) を参照してください。
+詳しくは、[アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
 
 ## AI アシスタントでデータインサイトエージェントにアクセスします
 

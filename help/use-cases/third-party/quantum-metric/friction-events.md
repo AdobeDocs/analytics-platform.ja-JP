@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -66,4 +66,4 @@ return true;
 
 * 摩擦イベントデータの経時的なトレンド
 * フォールアウトまたはファネルビジュアライゼーションで、Customer Journey Analytics イベントを一部のステップとして追加し、Quantum Metric friction イベントを他のステップとして追加します。 このレポートを使用すると、訪問者が最も頻繁にトラブルに巻き込まれる場所を確認できます。
-* 摩擦イベントが発生した訪問者にフィルターを作成して適用し、より深く分析できます
+* 摩擦イベントが発生した訪問者のセグメントを作成および適用して、より深く分析できます

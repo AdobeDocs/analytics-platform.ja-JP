@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,6 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID �
 
 ## 手順 5:Customer Journey Analyticsからのセッションの表示
 
-セッションの再生を調べたい魅力的なセグメントが見つかったら、そのセグメントを、セッション ID のリンクを含むパネルに適用し、セグメントでフィルタリングできます。 この表は、そのセグメント内のすべてのセッションを返します。いずれかのセッションをクリックすると、Quantum Metric で詳細を確認できます。
+セッションの再生を調べたい魅力的なセグメントが見つかったら、そのセグメントを、セッション ID のリンクとセグメントを含むパネルに適用できます。 この表は、そのセグメント内のすべてのセッションを返します。いずれかのセッションをクリックすると、Quantum Metric で詳細を確認できます。
 
 詳しくは、Quantum Metric の [ セッション再生のエンタープライズガイド ](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) を参照してください。 また、Quantum Metric のカスタマーサポート担当者に連絡するか、[Quantum Metric 顧客リクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信することもできます。

@@ -6,16 +6,16 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 21%
+ht-degree: 24%
 
 ---
 
 # アクセス制御
 
-Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つのロールによって制御されます。製品管理者ロール、製品プロファイル管理者ロール、およびユーザーレベルアクセスです。 このトピックでは、これらの役割について詳しく説明します。
+Customer Journey Analyticsには、製品管理者ロール、製品プロファイル管理者ロール、ユーザーレベルアクセスの 3 つのアクセスレベルまたは 3 つのロールがあります。 このトピックでは、これらの役割について詳しく説明します。
 
 さらに、Workspaceのキュレーションや行レベル、値レベルのアクセス制御など、アクセス制限についてのより詳細な方法についても説明します。
 
@@ -25,7 +25,7 @@ Customer Journey Analyticsは、3 つのアクセスレベルまたは 3 つの�
 
 ### 製品管理者の役割
 
-Product Administrator ロールが割り当てられたユーザーには、デフォルトでCustomer Journey Analytics内のほとんどのタスクを実行するために必要な権限が付与されます。 ただし、一部のタスクには追加の権限が必要です。
+製品管理者の役割が割り当てられたユーザーには、Customer Journey Analytics内のほとんどのタスクを実行するために必要な権限がデフォルトで付与されます。 ただし、一部のタスクには追加の権限が必要です。
 
 ユーザーを製品管理者として追加するには：
 
@@ -37,37 +37,37 @@ Product Administrator ロールが割り当てられたユーザーには、デ�
 
 #### 製品管理者のデフォルトの権限
 
-Customer Journey Analytics管理者には、製品内のほとんどのタスクを実行する権限があります。
+製品管理者には、Customer Journey Analytics内のほとんどのタスクを実行する権限があります。
 
 製品管理者には、次のタスクを実行するために必要な権限がデフォルトで付与されます。
 
 * データビューの作成、更新、削除
-* 他のユーザーが作成したプロジェクト、フィルター、計算指標、オーディエンス、注釈、フィルターの更新と削除を行います。
+* 他のユーザーが作成したプロジェクト、セグメント、計算指標、オーディエンス、注釈、セグメントの更新および削除
 * Workspace プロジェクトをすべてのユーザーと共有する
 * [ レポートアクティビティマネージャー ](/help/reporting-activity-manager/reporting-activity-overview.md) でレポートアクティビティを管理
 * Analysis Workspaceからの [ 完全なテーブルを書き出し ](/help/analysis-workspace/export/export-cloud.md)
 
 #### 製品管理者の追加の権限
 
-Customer Journey Analytics内の次のタスクを実行するには、**Customer Journey Analytics製品プロファイル**[Admin Console](https://adminconsole.adobe.com/enterprise/) に製品管理者として追加される以外に、追加の権限が必要です。
+[Admin Console} で **Customer Journey Analytics製品プロファイル** 製品管理者として追加される以外に、Customer Journey Analytics内の次のタスクを実行するには ](https://adminconsole.adobe.com/enterprise/) 追加の権限が必要です。
 
 * データの作成、更新、削除 [ 接続 ](/help/connections/overview.md)
 
-  このタスクを実行するには、次のアクセス許可を提供する **Experience Platform製品プロファイル** に属している必要があります：
+  このタスクを実行するには、ユーザーが次の権限を提供する **Experience Platform製品プロファイル** に属している必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
-  | [!UICONTROL  データモデリング ] | [!UICONTROL スキーマの表示] | スキーマおよび関連リソースへの読み取り専用アクセス |
-  | [!UICONTROL  データモデリング ] | [!UICONTROL スキーマの管理] | 各スキーマと関連リソースへの読み取り、作成、編集および削除アクセス |
+  | [!UICONTROL データモデリング] | [!UICONTROL スキーマの表示] | スキーマおよび関連リソースへの読み取り専用アクセス |
+  | [!UICONTROL データモデリング] | [!UICONTROL スキーマの管理] | 各スキーマと関連リソースへの読み取り、作成、編集および削除アクセス |
   | [!UICONTROL データ管理] | [!UICONTROL データセットの表示] | データセットおよびスキーマへの読み取り専用アクセス |
   | [!UICONTROL データ管理] | [!UICONTROL データセットの管理] | データセットへの読み取り、作成、編集、削除アクセススキーマへの読み取り専用アクセス |
   | [!UICONTROL データ取得] | [!UICONTROL ソースの管理] | ソースへの読み取り、作成、編集、無効化アクセス |
-  | [!UICONTROL Identity Management] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
+  | [!UICONTROL ID 管理] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
 
   Experience Platformの権限について詳しくは、[ 製品プロファイルの権限の管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) を参照してください。
 
 
-* Adobe Journey Optimizerが CJA と統合されていて、AJO Connections が存在する場合、接続にアクセスするにはジャーニー権限も追加する必要があります。
+* Adobe Journey OptimizerがCJAと統合されていて、AJO Connections が存在する場合は、接続にアクセスするためにジャーニー権限も追加する必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
@@ -78,7 +78,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 
 * [ 宛先 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) へのデータセットの書き出し
 
-  このタスクを実行するには、次のアクセス許可を提供する **Experience Platform製品プロファイル** に属している必要があります：
+  このタスクを実行するには、ユーザーが次の権限を提供する **Experience Platform製品プロファイル** に属している必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
@@ -100,7 +100,7 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 
    * 次のユーザーに対する適切なCustomer Journey Analytics権限を確認する必要があります。
       * 関連するデータビューにアクセスする権限。 [!UICONTROL  ユーザーレベルアクセス ] の [ データビュー ](#user-level-access) を参照してください。
-      * Customer Journey AnalyticsBI 拡張機能にアクセスする権限。 [ ユーザーレベルアクセス ](#user-level-access) の [!UICONTROL  データ表示ツール ] を参照してください。
+      * Customer Journey Analytics BI 拡張機能にアクセスする権限。 [ ユーザーレベルアクセス ](#user-level-access) の [!UICONTROL  データ表示ツール ] を参照してください。
 
 ### 製品プロファイル管理者の役割
 
@@ -124,8 +124,8 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 | [!UICONTROL  レポートツール ] | [!UICONTROL Analysis Workspace アクセス] | ユーザーに [Analysis Workspace](/help/analysis-workspace/home.md) へのアクセスを許可します。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL  ガイド付き分析へのアクセス ] | ユーザーを [ ガイド付き分析 ](/help/guided-analysis/overview.md) にアクセスさせる。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 計算指標の作成] | ユーザーが [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) を作成できるようにする ユーザーは、作成した計算指標または共有された計算指標に対してのみ、タグ付け、共有、削除、名前変更、承認、未承認の操作を行うことができます。 |
-| [!UICONTROL  レポートツール ] | [!UICONTROL フィルターの作成] | ユーザーが [ フィルター ](/help/components/filters/filters-overview.md) を作成できるようにします。 ユーザーは、作成したフィルターまたは共有されたフィルターのみをタグ付け、共有、削除、名前変更、承認、未承認にすることができます。 |
-| [!UICONTROL  レポートツール ] | [!UICONTROL Labs のアクセス] | ユーザーがCustomer Journey Analyticsの「[Labs](/help/labs/labs.md)」タブにアクセスできるようにします。 |
+| [!UICONTROL  レポートツール ] | [!UICONTROL フィルターの作成] | ユーザーが [ セグメント ](/help/components/filters/filters-overview.md) を作成できるようにする ユーザーは、作成したセグメントまたは共有されたセグメントにのみ、タグ付け、共有、削除、名前変更、承認または承認解除を行うことができます。 |
+| [!UICONTROL  レポートツール ] | [!UICONTROL Labs のアクセス] | ユーザーがCustomer Journey Analyticsの「[Labs](/help/labs/labs.md)」タブにアクセスできるようにする |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 注釈の作成] | ユーザーが [ 注釈 ](/help/components/annotations/overview.md) を作成できるようにする ユーザーは、作成した注釈または共有された注釈にのみ、タグ付け、共有、削除および名前変更を行えます。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL オーディエンスの表示] | ユーザーが [ オーディエンス ](/help/components/audiences/audiences-overview.md) を表示できるようにする |
 | [!UICONTROL  レポートツール ] | [!UICONTROL オーディエンスの作成] | ユーザーが [ オーディエンス ](/help/components/audiences/audiences-overview.md) を作成できるようにする |
@@ -141,11 +141,11 @@ Customer Journey Analytics内の次のタスクを実行するには、**Custome
 
 ## Workspace プロジェクトのキュレーション
 
-Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、フィルター、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、[ プロジェクトのキュレーション ](/help/analysis-workspace/curate-share/curate.md) を参照してください。
+Workspace レポートレベルでは、別のレベルのアクセス制御を使用できます。特定のユーザーに対して、特定のコンポーネントへのアクセスを制限できます。Workspace プロジェクトレベルでのコンポーネント（ディメンション、指標、セグメント、日付範囲）の制限方法、キュレーションがどのようにデータビューに結び付いているかについて詳しくは、[プロジェクトのキュレーション](/help/analysis-workspace/curate-share/curate.md)を参照してください。
 
 ## 個々の指標またはディメンションへのアクセス権を付与する
 
-Customer Journey Analytics では、従来の Adobe Analytics の場合とは異なり、個々の指標やディメンションに権限を付与または拒否することはできません。指標とディメンションは [ データビュー ](/help/data-views/data-views.md) で変更できるので、Customer Journey Analyticsが変化する可能性があります。 これらを変更すると、レポートも遡って変更されます。
+Customer Journey Analytics では、従来の Adobe Analytics の場合とは異なり、個々の指標やディメンションに権限を付与または拒否することはできません。指標とディメンションは [ データビュー ](/help/data-views/data-views.md) で変更できるので、Customer Journey Analyticsで変更される可能性があります。 これらを変更すると、レポートも遡って変更されます。
 
 ## ユースケース
 
@@ -161,7 +161,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 1. 特定のデータビューの [!UICONTROL  設定 ] でフィルターを作成します。ここで [!UICONTROL  日 ] は、データアクセスを付与する日付と等しくなります。 詳しくは [ データビューの作成 ](/help/data-views/create-dataview.md#settings-filters) を参照してください。
 1. データビューを保存します。これにより、基になる接続のデータセットのデータ部分にフィルターが適用されます。 フィルター定義に適合しない行はデータビューから自動的に除外され、このデータビューを使用する際にAnalysis Workspaceで使用できなくなります。
-1. Admin Consoleに新しい [ 製品プロファイル ](#product-profile-admin-role) を作成し、製品プロファイルにユーザーを追加して、この特定のデータビューのみを製品プロファイルに含めます。
+1. Admin Consoleで新しい [ 製品プロファイル ](#product-profile-admin-role) を作成し、製品プロファイルにユーザーを追加して、この特定のデータビューのみを製品プロファイルに含めます。
 
 ### 値レベルのアクセス制御
 

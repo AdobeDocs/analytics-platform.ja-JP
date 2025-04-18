@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 概要データ更新 | 概要データに関するレポートを作成する際の[ルックアップデータ](/help/data-views/summary-data.md#lookup-data)の適切な使用方法に関する情報を含む概要データに関する記事を更新しました。 |
 | BI 拡張機能の更新 | BI 拡張機能ドキュメントに[デフォルトと制限](/help/data-views/bi-extension.md#defaults-and-limitations)のセクションを追加しました。 |
 | アラート | Customer Journey Analytics で利用できるようになった[アラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)機能のドキュメントを追加しました。 |
-| 計算指標マネージャーとセグメントマネージャーの「使用されている場所」列に表示される追加情報 | [計算指標マネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja)と[フィルターマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja)の「使用場所」列には、Report Builder とアドホックコンポーネントの新しいレポート領域が含まれています。 |
+| 計算指標マネージャーとセグメントマネージャーの「使用されている場所」列に表示される追加情報 | [ 計算指標マネージャー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja) および [ セグメントマネージャー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja) の「使用されている場所」列には、Report Builderおよびアドホックコンポーネントの新しいレポート領域が含まれています |
 | **2024年8月** | |
 | B2B プロジェクトの例 | 新しい[B2B ルックアップ用にデータセットを変換](/help/connections/transform-datasets-b2b-lookups.md)機能を使用して、Customer Journey Analytics でプロファイル（ユーザー）レベルの B2B データを設定、構成、レポートする方法について説明した[ユースケース](/help/use-cases/b2b/example.md)を追加しました。 |
 | データ書き出しのユースケースを更新しました | ルックバックウィンドウを使用してセッション間でアトリビューションを適切に適用する方法を示す詳細なクエリの例を[クエリサービス（Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)に追加しました。 |
@@ -87,7 +87,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Product Analytics 機能に関する新しいドキュメント | <ul><li>[機能マトリックス](/help/guided-analysis/types/funnel.md)</li><li>強化された[保持](/help/guided-analysis/types/retention.md)</li><li>[ファネルの強化されたインサイト](/help/guided-analysis/types/funnel.md)</li><li>1 つのファネルステップ内のイベントを比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
-| プロジェクト専用の Workspace コンポーネントの権限強化に関するドキュメントを追加しました。 | プロジェクトを他のユーザーと共有すると、それらのユーザーは、共有プロジェクトに埋め込まれた[クイックフィルター](/help/components/filters/quick-filters.md)およびその他のプロジェクト専用のコンポーネントを編集できます。 |
+| プロジェクト専用の Workspace コンポーネントの権限強化に関するドキュメントを追加しました。 | プロジェクトを他のユーザーと共有すると、それらのユーザーは、共有プロジェクトに埋め込まれた [ クイックセグメント ](/help/components/filters/quick-filters.md) やその他のプロジェクト専用のコンポーネントを編集できます。 |
 | **2024年2月** | |
 | プロジェクト共有ドキュメントの更新 | [自分と共有されているプロジェクトを表示する](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you)方法に関する情報を追加しました。<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウド書き出しの場所を設定する際に、Azure SAS および Azure RBAC にファイルをアップロードする権限要件を追加しました。 | [クラウド書き出しのアカウントを設定](/help/components/exports/cloud-export-accounts.md)し、[クラウド書き出しの場所を設定](/help/components/exports/cloud-export-locations.md)する際に、Azure SAS および Azure RBAC にファイルをアップロードする正確な権限要件を追加しました。 |
@@ -118,7 +118,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 異常値検出ドキュメントの更新 | 異常値検出に関するドキュメントは、以前は Virtual Analyst に関するセクションにありました。次の変更を行いました。 <ul><li>Virtual Analyst という用語はドキュメントから削除しました。</li><li>[異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)に関する節は、Analysis Workspace の節のすぐ下に移動しました。</li></ul> |
 | **2023年10月** | |
 | 派生フィールドを使用した目標とターゲットの設定 | 派生フィールドを使用して目標とターゲットを設定し、これらに関するレポートを作成する方法を説明する[ユースケース](../use-cases/goals-using-derived-fields.md)記事を追加しました。 |
-| 完全なテーブルのクラウドへの書き出し | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、フィルター、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
+| 完全なテーブルのクラウドへの書き出し | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace内で設計されたデータテーブルを 1 回限りまたはスケジュールされた形で配信できます。また、最大 5 つの分類、5 つの指標、セグメント、計算指標をすべて連結テーブルでサポートします。 これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
 | レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、レポート作成のピーク時の処理能力に関する問題を簡単に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[レポートアクティビティマネージャーの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理ページの新しい列 | [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja)および[フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja)で使用できるようになった新しい列について文書化しました。 |
 | Adobe Analytics との比較 | Customer Journey Analytics と Adobe Analytics の違いを比較して理解することを目的としたイントロダクションとして[概要ページ](../getting-started/aa-vs-cja/overview.md)を追加しました。 |
@@ -160,10 +160,10 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | インテリジェントキャプションドキュメント | 折れ線グラフのビジュアライゼーションの[自然言語による要約](/help/analysis-workspace/visualizations/intelligent-captions.md)を使用して、ユーザー向けのストーリーテリングを強化します。 |
 | 派生フィールド | [派生フィールド](../data-views/derived-fields/derived-fields.md)機能のドキュメントを追加しました。 |
 | **2023年4月** |  |
-| フィルターをディメンションとして使用する方法に関するビデオ | フィルターをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[フィルターの作成](/help/components/filters/create-filters.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でフィルターをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
-| フィルタードキュメント | [フィルタービルダー](/help/components/filters/filter-builder.md)を使用する方法に関する記事を追加しました。 <p>[フィルターの作成](/help/components/filters/create-filters.md)と[フィルターの概要](/help/components/filters/filters-overview.md)のドキュメントを合理化しました。</p> |
+| ディメンションとしてのセグメントの使用に関するビデオ | セグメントをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[ セグメントの作成 ](/help/components/filters/create-filters.md) ページからリンクされています。</p> <p>次に、[Analysis Workspaceでセグメントをディメンションとして使用 ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja) というビデオへの直接リンクを示します。</p> |
+| セグメントのドキュメント | [ セグメントビルダー ](/help/components/filters/filter-builder.md) の使用に関する記事を追加しました。 <p>[ セグメントの作成 ](/help/components/filters/create-filters.md) および [ セグメント化の概要 ](/help/components/filters/filters-overview.md) のドキュメントを合理化しました。</p> |
 | 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)に関する節を追加しました。 |
-| プロジェクトフィルター（アドホックおよびクイックフィルター） | プロジェクトフィルターに関するドキュメントを簡素化し、重複する情報を削除しました。アドホックフィルターの作成手順は、[クイックフィルターの作成](/help/components/filters/quick-filters.md)手順と統合しました。 |
+| プロジェクトセグメント（アドホックおよびクイックセグメント） | プロジェクトセグメントに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックセグメントの作成手順は、[クイックセグメントの作成](/help/components/filters/quick-filters.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [Customer Journey Analytics での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
 | モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |

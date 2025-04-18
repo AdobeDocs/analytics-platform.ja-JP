@@ -5,10 +5,10 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -69,11 +69,11 @@ Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-conne
 
 このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2 つのフィルターを作成します。これら 2 つのフィルターで使用される変数は、各イベントのデータソースを反映する、前述の変数と同じです。詳しくは、[フィルターの作成](/help/components/filters/create-filters.md)に関するページを参照してください。
+1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[ セグメントの作成 ](/help/components/filters/create-filters.md) を参照してください。
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。
-3. 新しく作成した 2 つのフィルターを「**[!UICONTROL フィルターを追加]**」領域にドラッグし、人物指標を「**[!UICONTROL 指標を追加]**」領域にドラッグします。
+3. 新しく作成した 2 つのセグメントを「**[!UICONTROL フィルターを追加]**」領域にドラッグし、人物指標を「**[!UICONTROL 指標を追加]**」領域にドラッグします。
 
 結果のベン図ビジュアライゼーションは、web データとコールセンターデータの両方を含むデータセット内の人数を示します。重複が大きいほど、より多くの人が適切にステッチされたことになります。重複しない領域は、いずれかのデータセットにのみ存在する人を表します。
 
@@ -93,8 +93,8 @@ Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-conne
 「問い合わせ」を理由またはカテゴリ別に分割することで、このテーブルからさらに多くのインサイトを得ることができます。
 
 1. コンポーネントのリストで、「問い合わせ理由」ディメンションの下にある右の山括弧をクリックします。この操作により、個々のディメンション値が表示されます。
-2. 「問い合わせ」指標の下に目的のディメンション値をドラッグします。この指標は、問い合わせの理由ごとにその指標をフィルタリングします。
-3. ドリルダウンする各問い合わせ理由に対して同じ手順を繰り返します。「すべてのセッション」フィルターを使用して、総計を表示します。
+2. 「問い合わせ」指標の下に目的のディメンション値をドラッグします。この指標は、問い合わせの理由ごとにその指標をセグメント化します。
+3. ドリルダウンする各問い合わせ理由に対して同じ手順を繰り返します。「すべてのセッション」セグメントを使用して、総計を表示します。
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics は、数百または数千のサーバーに分析�
 
 レポートエンジンは、Customer Journey Analytics がそのレポートエンジン内のすべてのカスタマージャーニーデータをプログレッシブにやり取りし、それに基づいて機能できるようにするための基本です。Customer Journey Analytics には、視覚的にドラッグ＆ドロップで実行できるようにする広範なコンポーネントセットが付属しています。BI ビジュアライゼーションツールを使用すると、（IT が定義したとおりに）SQL で準備したデータの範囲内で探索できます。Customer Journey Analytics を使用すると、IT 部門に別の SQL ビューを作成するよう依頼しなくても、必要なだけ分類して詳しく分析できます。
 
-ここでは「プログレッシブ」が重要な概念です。BI ツールのほとんどのビジュアライゼーションとは異なり、Customer Journey Analytics の視覚的なドラッグ＆ドロップ UI を使用すると、特定のニーズに合わせてデータを継続的に分類できます。関連する指標、ディメンション、フィルター（セグメント）、計算、タイム ライン、注釈、その他の分析値などを使用して、視覚的なクエリをインタラクティブに作成できます。
+ここでの重要な概念は「プログレッシブ」です。BI ツールのほとんどのビジュアライゼーションとは異なり、Customer Journey Analyticsの視覚的なドラッグ&amp;ドロップ UI では、特定のニーズに合わせてデータを継続的に分類できます。関連する指標、ディメンション、セグメント、計算、タイムライン、注釈、その他の分析値を使用して、視覚的なクエリをインタラクティブに作成できます。
 
 これらのビジュアライゼーションコンポーネントに組み込まれているスマート機能を以下に示します。
 

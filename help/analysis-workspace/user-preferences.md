@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
 ht-degree: 75%
@@ -36,7 +36,7 @@ ht-degree: 75%
 | --- | --- |
 | **[!UICONTROL ランディングページ]** | Customer Journey Analytics にアクセスしたときにデフォルトのページとして表示するページを選択します。 <ul><li>プロジェクトリスト（デフォルト）</li><li>空のプロジェクト</li><li>空のトレンドのガイド付き分析</li><li>リストから選択された特定のプロジェクト</li></ul> |
 | **[!UICONTROL ヒント]** | Analysis Workspace の右下にある青いボックスにヒントを表示します。 <p>このオプションは、デフォルトでは有効になっています。</p> |
-| **[!UICONTROL 左パネルグループに表示されるコンポーネント]** | 左パネルのコンポーネントメニューに表示する各コンポーネントグループの数を選択します。 <p>コンポーネントグループに 0 を選択すると、左パネルからコンポーネントグループにアクセスできなくなります。</p><p>デフォルトでは、次の各コンポーネントグループに対して 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>フィルター</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
+| **[!UICONTROL 左パネルグループに表示されるコンポーネント]** | 左パネルのコンポーネントメニューに表示する各コンポーネントグループの数を選択します。 <p>コンポーネントグループに 0 を選択すると、左パネルからコンポーネントグループにアクセスできなくなります。</p><p>デフォルトでは、次の各コンポーネントグループに対して 5 つのコンポーネントが表示されます。</p> <ul><li>ディメンション</li><li>指標</li><li>セグメント</li><li>日付範囲</li></ul> <p>Analysis Workspace のコンポーネントについて詳しくは、[コンポーネントの概要](/help/components/overview.md)を参照してください。</p> |
 
 ### IMS 組織の環境設定 {#ims-organization-preferences}
 

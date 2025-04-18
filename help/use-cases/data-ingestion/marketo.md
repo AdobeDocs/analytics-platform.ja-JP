@@ -1,20 +1,20 @@
 ---
-title: Marketo Engageデータのレポート
-description: Customer Journey AnalyticsのMarketo Engageデータに関するレポート方法を学ぶ
+title: Marketo Engage データに関するレポート
+description: Customer Journey AnalyticsでMarketo Engage データをレポートする方法を説明します
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 59%
+ht-degree: 51%
 
 ---
 
-# Marketo Engageデータのレポート
+# Marketo Engage データに関するレポート
 
-Adobe Experience Platform（Adobe Experience Platform）で新しく使用できるようになったMarketo Engageデータセットを活用して、B2B マーケターに価値のある分析およびレポートソリューションを提供できます。 次に、Adobe Customer Journey Analyticsでこれらのデータセットについてレポートします。
+Adobe Experience Platform（Adobe Experience Platform）で新しく使用できるようになったMarketo Engage データセットを活用して、B2B マーケターに価値のある分析およびレポートソリューションを提供できます。 次に、Adobe Customer Journey Analyticsでこれらのデータセットについてレポートします。
 
 ## 手順 1： Marketo ソースデータフィールドの XDM ターゲットへのマッピング
 
@@ -24,9 +24,9 @@ Adobe Experience Platform（Adobe Experience Platform）で新しく使用でき
 
 [Marketo Engage コネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
-## 手順 3:Customer Journey Analyticsでの、このデータセットへの接続の設定
+## 手順 3:Customer Journey Analyticsでのこのデータセットへの接続の設定
 
-Experience Platformデータセットに関するレポートを作成するには、まずExperience PlatformとCustomer Journey Analyticsのデータセット間で接続を確立する必要があります。 詳細については、[ 接続の作成または編集 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を参照してください。
+Experience Platform データセットに関するレポートを作成するには、まずExperience PlatformとCustomer Journey Analyticsのデータセット間で接続を確立する必要があります。 詳細については、[ 接続の作成または編集 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を参照してください。
 
 ## 手順 4： 1 つ以上のデータビューの作成
 
@@ -38,11 +38,11 @@ Experience Platformデータセットに関するレポートを作成するに�
 
 1. [Analytics Workspace](/help/analysis-workspace/home.md) を開いて、新しいプロジェクトを作成します。B2B/B2P CDP のお客様は、Customer Journey Analyticsで B2C スタイルの分析を実施できます。 B2B オブジェクトは、まだ使用できません。
 
-1. 次のように、web ページビューの[フィルター](/help/components/filters/create-filters.md)を作成します。- Event Type = web.webpagedetails.pageViews :
+1. 次のように、web ページビュー用に [segment](/help/components/filters/create-filters.md) を作成します。- Event Type = web.webpagedetails.pageViews :
 
    ![ イベントとイベントタイプを表示する定義ウィンドウ ](../assets/marketo-filter.png)
 
-1. フリーフォームテーブルで、作成したフィルター（Web ページビュー）を取り込み、月の日付範囲を取り込みます。これにより、毎月のリードによる web ページ訪問数がわかります。
+1. 作成したセグメントをフリーフォームテーブル - web ページビューに取り込み、月の日付範囲を取り込みます。 これにより、毎月のリードによる web ページ訪問数がわかります。
 
    ![ イベントを月別に表示したフリーフォームテーブル。](../assets/marketo-freeform.png)
 
