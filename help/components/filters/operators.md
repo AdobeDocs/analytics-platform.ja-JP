@@ -4,7 +4,7 @@ description: コンポーネントがセグメント内の値とどのように�
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 54%
@@ -13,7 +13,7 @@ ht-degree: 54%
 
 # 演算子
 
-フィルタービルダーでは、選択した演算子を使用して、コンポーネントの値を比較および制限できます。 演算子には、[[!UICONTROL 標準カウント]](#standard-operators)と[[!UICONTROL 個別カウント]](#distinct-count-operators)の 2 つのカテゴリがあります。
+セグメントビルダーでは、選択した演算子を使用して、コンポーネントの値を比較および制限できます。 演算子には、[[!UICONTROL 標準カウント]](#standard-operators)と[[!UICONTROL 個別カウント]](#distinct-count-operators)の 2 つのカテゴリがあります。
 
 ## 標準演算子
 

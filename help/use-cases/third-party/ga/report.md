@@ -5,10 +5,10 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: fef935eb7692ffb2dade28cb6a7c3d408bcac1c3
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -56,9 +56,9 @@ Customer Journey Analyticsでは、クロスチャネルデータに対して高
 
 ![計算指標](../../assets/calc-metric.png)
 
-Attribution IQ では、データをフィルタリングすることもできます。複数のデバイスを使用しているユーザーなど、特定のユーザーの集合に対してのみアトリビューションを表示できます。
+Attribution IQでは、データをセグメント化することもできます。 複数のデバイスを使用しているユーザーなど、特定のユーザーの集合に対してのみアトリビューションを表示できます。
 
-![フィルター](../../assets/filter.png)
+![セグメント](../../assets/filter.png)
 
 Web やアプリの売上高に対する Google 広告コンテンツの効果を分析することもできます。このデータセットの例では、web よりもオンラインの Google 広告によってモバイルアプリから多くの売上高を得ています。広告を web やアプリの売上高で並べ替えると、パフォーマンスが最も高い Google 広告の様相が異なることがわかります。
 

@@ -3,10 +3,10 @@ description: 計算指標マネージャ内では、様々なレベルのアプ�
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '146'
+ht-degree: 21%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 
 計算指標の承認を取り消すには：
 
-1. [ フィルターマネージャー ](cm-approving.md) で、承認を解除する 1 つ以上の計算指標を選択します。
+1. [ 計算指標マネージャー ](cm-approving.md) で、承認を取り消す 1 つ以上の計算指標を選択します。
 1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Unapprove]**」を選択します。
 
 

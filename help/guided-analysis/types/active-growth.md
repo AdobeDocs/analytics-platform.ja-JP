@@ -5,10 +5,10 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 * **[!UICONTROL 表示]**：この分析と[純増加率](net-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベントです。この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。クエリには 1 つのイベントを含めることができます。
 * **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL ユーザー数]と[!UICONTROL ユーザーの割合]が含まれます。
-* **[!UICONTROL セグメント]**：データのフィルタリング基準にするセグメント。クエリには 1 つのセグメントを含めることができます。
+* **[!UICONTROL セグメント]**：データのセグメント化の基準にするセグメント。 クエリには 1 つのセグメントを含めることができます。
 
 ### グラフ設定
 

@@ -4,7 +4,7 @@ title: クイックセグメント
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 26%
@@ -97,7 +97,7 @@ ht-degree: 26%
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 複数の条件を定義した場合にのみ使用できます。条件間のドロップダウン ![ChevronDown](/help/assets/icons/ChevronDown.svg) から選択します。 選択によって、クイックセグメントのブール論理が決まります。 条件が 3 つある場合は、ロジックを混在させることはできません。ブール論理は **[!UICONTROL AND]** または **[!UICONTROL OR]** のいずれかです。 |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | クイックセグメントに別の条件を追加します。 このボタンは、クイックセグメントに対して 1 つまたは 2 つの条件を定義した場合にのみ使用できます。 |
 | **[!UICONTROL 適用]** | クイックセグメントに変更を適用します。 |
-| **[!UICONTROL ビルダーを開く]** | 「**[!UICONTROL よろしいですか？」という確認メッセージが表示されます。]**&#x200B;ダイアログを開きます。「**[!UICONTROL OK]**」を選択すると、[ クイックセグメントビルダー ](#quick-filter-builder) でセグメントを変更できなくなります。クイックセグメントの名前は **[!UICONTROL セグメント]** に変更され、濃い青の薄い左側のバーが表示されます。<br/> 通常の [ セグメントビルダー ](filter-builder.md)**[!UICONTROL が開き、「このセグメントをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** というオプションが表示されます。 <ul><li>このオプションを選択して「**[!UICONTROL 適用]**」を選択すると、セグメントはコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg)**[!UICONTROL フィルター]** コンポーネントリストに追加されます。</li><li>このオプションを選択せずに **[!UICONTROL 適用]** を選択すると、セグメントは、Workspace プロジェクトのみのセグメントのままになります。</li></ul> |
+| **[!UICONTROL ビルダーを開く]** | 「**[!UICONTROL よろしいですか？」という確認メッセージが表示されます。]**&#x200B;ダイアログを開きます。「**[!UICONTROL OK]**」を選択すると、[ クイックセグメントビルダー ](#quick-filter-builder) でセグメントを変更できなくなります。クイックセグメントの名前は **[!UICONTROL セグメント]** に変更され、濃い青の薄い左側のバーが表示されます。<br/> 通常の [ セグメントビルダー ](filter-builder.md)**[!UICONTROL が開き、「このセグメントをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** というオプションが表示されます。 <ul><li>このオプションを選択して「**[!UICONTROL 適用]**」を選択すると、セグメントはコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg)**[!UICONTROL セグメント]** コンポーネントリストに追加されます。</li><li>このオプションを選択せずに **[!UICONTROL 適用]** を選択すると、セグメントは、Workspace プロジェクトのみのセグメントのままになります。</li></ul> |
 | **[!UICONTROL キャンセル]** | クイックセグメントの作成または編集をキャンセルする場合に選択します。 |
 
 ## クイックセグメントとセグメント

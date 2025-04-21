@@ -3,9 +3,9 @@ description: 計算指標の作成方法を説明します。
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '225'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 計算指標は次の方法で作成できます。
 
-![ フィルターの作成方法 ](assets/create-metric.png)
+![ 計算指標の作成方法 ](assets/create-metric.png)
 
 * **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 計算指標]**」を選択します。 ![ 計算指標 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) から「[[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
 * **B**. Workspace プロジェクトの左側のコンポーネント パネルで、「![ イベント ](/help/assets/icons/Event.svg) **指標**」の「![ 追加 ](/help/assets/icons/Add.svg)」を選択します。

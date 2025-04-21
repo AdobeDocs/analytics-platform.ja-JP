@@ -4,7 +4,7 @@ title: セグメントの共有
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -22,9 +22,9 @@ ht-degree: 11%
 
 1. [ セグメントマネージャー ](manage-filters.md) で、共有するセグメントを 1 つ以上選択します。
 1. アクションバーの「![ 共有 ](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共有]**」を選択します。
-1. **[!UICONTROL フィルターを共有]** ダイアログで、次の手順を実行します。
+1. **[!UICONTROL セグメントを共有]** ダイアログで、次の手順を実行します。
 
-   ![ フィルターを共有ダイアログ ](assets/share-filter-dialog.png)
+   ![ セグメントを共有ダイアログ ](assets/share-filter-dialog.png)
 
    1. （オプション） ![ 検索 ](/help/assets/icons/Search.svg) を使用して *個人またはグループを検索* し、セグメントを共有するグループまたは個人のリストを制限します。
 

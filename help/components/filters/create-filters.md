@@ -4,7 +4,7 @@ description: セグメント作成ユーザーインターフェイスについ�
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -23,8 +23,8 @@ Customer Journey Analyticsでは、様々なタイプのセグメントを作成
 
 ![ セグメントの作成方法 ](assets/create-filter.png)
 
-* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL セグメント]**」を選択します。 ![ フィルター ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/filters/manage-filters.md) から「[[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
-* **B**. Workspace プロジェクトで、左側のパネルのコンポーネントから、「![ セグメント ](/help/assets/icons/Add.svg)**フィルター ![ に ](/help/assets/icons/Segmentation.svg) 追加** を選択します。
+* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL セグメント]**」を選択します。 [[!UICONTROL  セグメント ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/filters/manage-filters.md) から「![AddCircle]**][!UICONTROL **[!UICONTROL Add]」を選択します。
+* **B**. Workspace プロジェクトで、左側のパネルのコンポーネントから、「![ セグメント ](/help/assets/icons/Add.svg)**セグメント ![ に ](/help/assets/icons/Segmentation.svg) 追加** を選択します。
 * **C**。 Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL 選択からセグメントを作成]**」を選択します。
 * **D**。 Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL セグメントを作成]** を選択します。
 * **E**. Workspace プロジェクトで、ショートカットキー **[!UICONTROL shift+cmd+e]** （macOS）または **[!UICONTROL shift+ctrl+e]** （Windows）を使用します。

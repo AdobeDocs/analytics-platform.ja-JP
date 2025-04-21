@@ -2,8 +2,8 @@
 title: 製品使用状況の概要
 description: 組織が Customer Journey Analytics をどのように使用しているかに関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
 * **[!UICONTROL コンポーネントタイプ]**：追加、削除または変更されたコンポーネントのタイプ。 ディメンション項目には以下が含まれます。
    * [!UICONTROL ディメンション]
    * [!UICONTROL 指標]
-   * [!UICONTROL フィルター]
+   * [!UICONTROL セグメント]
    * [!UICONTROL 計算指標]
    * [!UICONTROL 日付範囲]
    * [!UICONTROL 注釈]

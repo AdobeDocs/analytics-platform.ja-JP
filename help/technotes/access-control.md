@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 24%
@@ -124,7 +124,7 @@ Customer Journey Analyticsには、製品管理者ロール、製品プロファ
 | [!UICONTROL  レポートツール ] | [!UICONTROL Analysis Workspace アクセス] | ユーザーに [Analysis Workspace](/help/analysis-workspace/home.md) へのアクセスを許可します。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL  ガイド付き分析へのアクセス ] | ユーザーを [ ガイド付き分析 ](/help/guided-analysis/overview.md) にアクセスさせる。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 計算指標の作成] | ユーザーが [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) を作成できるようにする ユーザーは、作成した計算指標または共有された計算指標に対してのみ、タグ付け、共有、削除、名前変更、承認、未承認の操作を行うことができます。 |
-| [!UICONTROL  レポートツール ] | [!UICONTROL フィルターの作成] | ユーザーが [ セグメント ](/help/components/filters/filters-overview.md) を作成できるようにする ユーザーは、作成したセグメントまたは共有されたセグメントにのみ、タグ付け、共有、削除、名前変更、承認または承認解除を行うことができます。 |
+| [!UICONTROL  レポートツール ] | [!UICONTROL セグメントの作成] | ユーザーが [ セグメント ](/help/components/filters/filters-overview.md) を作成できるようにする ユーザーは、作成したセグメントまたは共有されたセグメントにのみ、タグ付け、共有、削除、名前変更、承認または承認解除を行うことができます。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL Labs のアクセス] | ユーザーがCustomer Journey Analyticsの「[Labs](/help/labs/labs.md)」タブにアクセスできるようにする |
 | [!UICONTROL  レポートツール ] | [!UICONTROL 注釈の作成] | ユーザーが [ 注釈 ](/help/components/annotations/overview.md) を作成できるようにする ユーザーは、作成した注釈または共有された注釈にのみ、タグ付け、共有、削除および名前変更を行えます。 |
 | [!UICONTROL  レポートツール ] | [!UICONTROL オーディエンスの表示] | ユーザーが [ オーディエンス ](/help/components/audiences/audiences-overview.md) を表示できるようにする |

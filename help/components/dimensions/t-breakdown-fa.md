@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 60%
@@ -21,7 +21,7 @@ ht-degree: 60%
 
    ![ 選択した項目からアラートを作成を示すステップ結果。](assets/breakdown.png)
 
-1. サブメニューから **[!UICONTROL ディメンション]**、**[!UICONTROL 指標]**、**[!UICONTROL フィルター]** または **[!UICONTROL 日付範囲]** を選択し、項目を選択します。
+1. サブメニューから **[!UICONTROL ディメンション]**、**[!UICONTROL 指標]**、**[!UICONTROL セグメント]** または **[!UICONTROL 日付範囲]** を選択し、項目を選択します。
 
 選択した期間で、ディメンション項目またはオーディエンスセグメントで指標を分類できます。より詳細なレベルまで、さらに詳しく調べることもできます。
 

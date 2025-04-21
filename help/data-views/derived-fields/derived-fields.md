@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 99%
@@ -643,7 +643,7 @@ ht-degree: 99%
 
 ## 詳細情報 {#casewhen-more-info}
 
-Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景情報について詳しくは、[コンテナ](../create-dataview.md#containers)および[フィルターコンテナ](../../components/filters/filters-overview.md#filter-containers)を参照してください。このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
+Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景の情報について詳しくは、[ コンテナ ](../create-dataview.md#containers) および [ セグメントコンテナ ](../../components/filters/filters-overview.md#filter-containers) を参照してください。 このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
 
 Customer Journey Analytics では、次のデフォルトのコンテナモデルが使用されます。
 

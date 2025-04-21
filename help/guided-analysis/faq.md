@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 95%
 | ユーザー | ユーザー |
 | ディメンション | ディメンション |
 | ディメンション項目 | ディメンション項目 |
-| セグメント | フィルター |
+| セグメント | セグメント |
 | フィルター | レポートフィルター |
 | 計算指標、指標 | 計算指標 |
 
@@ -60,7 +60,7 @@ ht-degree: 95%
 
 [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分析では同じ基礎データを使用しますが、各ツールでそのデータのクエリを作成する方法が異なります。
 
-* **Analysis Workspace は、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。行と列の両方にフィルターを適用して、目的のデータを取得できます。
+* **Analysis Workspace は、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。セグメントは、行と列の両方に適用して、目的のデータを取得できます。
 
 * **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。** 各分析はイベントの選択から始まり、ディメンションとセグメントを追加してイベントデータを絞り込むことができます。
 

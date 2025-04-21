@@ -1,12 +1,12 @@
 ---
-description: 計算指標ビルダーは、ディメンション、指標、フィルターおよび関数をドラッグ＆ドロップし、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成するためのキャンバスです。この統合開発ツールでは、シンプルな計算指標または複雑で高度な計算指標を作成および保存できます。
+description: 計算指標ビルダーは、ディメンション、指標、セグメントおよび関数をドラッグ＆ドロップし、コンテナ階層ロジック、ルール、演算子に基づいてカスタム指標を作成するためのキャンバスです。この統合開発ツールでは、シンプルな計算指標または複雑で高度な計算指標を作成および保存できます。
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -156,7 +156,7 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
 * ディメンションからセグメントコンテナを追加するには：
 
    1. コンポーネントパネルから ![ ディメンション ](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]** コンポーネントをコンポーネントパネルにドラッグ&amp;ドロップします **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップします]**。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
-   1. **[!UICONTROL Dimensionからフィルターを作成]** ポップアップで、セグメントの条件を定義します。 演算子のリストから選択し、値を選択するか入力します。例えば、**[!UICONTROL 月]** **[!UICONTROL 次に等しい]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` などとなります。
+   1. **[!UICONTROL Dimensionからセグメントを作成]** ポップアップで、セグメントの条件を定義します。 演算子のリストから選択し、値を選択するか入力します。例えば、**[!UICONTROL 月]** **[!UICONTROL 次に等しい]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` などとなります。
    1. 「**[!UICONTROL 完了]**」を選択します。セグメントコンテナが **[!UICONTROL 定義]** に追加されます。
 
 
@@ -165,11 +165,11 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
    * コンポーネントパネルから ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL セグメント]** コンポーネントを **[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 コンポーネントバーの ![ 検索 ](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
 セグメントコンテナが、セグメントの名前を使用して、自動的に **[!UICONTROL 定義]** に追加されます。
 
-   * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL フィルター]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。コンテナがセグメントコンテナに変更されます。
+   * ![ セグメント化 ](/help/assets/icons/Segmentation.svg)**[!UICONTROL セグメント]** コンポーネントをコンポーネントパネルから汎用コンテナにドラッグ&amp;ドロップします。 コンテナがセグメントコンテナに変更されます。
 
    * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]**&#x200B;を選択します。
 
-      1. 「**[!UICONTROL フィルター]**」を選択します。セグメントコンテナが **[!UICONTROL 定義]** に追加されます。
+      1. **[!UICONTROL セグメント]** を選択します。 セグメントコンテナが **[!UICONTROL 定義]** に追加されます。
       1. 新しいセグメントコンテナで、「[!UICONTROL *選択…*]」ドロップダウンメニューからセグメントを選択します。
 
   >[!TIP]
@@ -182,7 +182,7 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
 
 * セグメント名の横にある「![ 閉じる ](/help/assets/icons/Close.svg)」を選択します。
 
-詳細と例については、[フィルター適用済み指標](metrics-with-segments.md)を参照してください。
+詳細と例については、[ セグメント化指標 ](metrics-with-segments.md) を参照してください。
 
 #### 関数コンテナ
 
@@ -218,6 +218,6 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
 >[!MORELIKETHIS]
 >
 >[関数の使用](cm-using-functions.md)
->[フィルター](/help/components/filters/filters-overview.md)
+>[セグメント ](/help/components/filters/filters-overview.md)
 >
 

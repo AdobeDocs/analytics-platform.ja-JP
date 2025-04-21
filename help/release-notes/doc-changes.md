@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '4716'
 ht-degree: 93%
@@ -99,7 +99,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 予測 | [予測](../analysis-workspace/c-forecast/forecasting.md)に関するドキュメントを追加しました。これは、標準指標または計算指標を、フリーフォームテーブルと折れ線グラフに対してサポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しい Analysis Workspace 機能です。 |
 | 完全なテーブルを書き出す際のアカウントと場所の追加に関するドキュメントを更新しました。 | ドキュメントを更新して、[Analysis Workspace からの完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)時に新しいアカウントまたは場所を設定する際のマイナーなインターフェイスの更新を反映しました。<p>新しい「[!UICONTROL **アカウントを追加**]」オプションが&#x200B;[!UICONTROL **アカウント**]&#x200B;ドロップダウンメニューで使用できるようになりました。以前は&#x200B;[!UICONTROL **場所名**]&#x200B;ドロップダウンメニューの横のボタンとして使用できた「[!UICONTROL **場所を追加**]」オプションが、メニュー内で使用できるようになりました。 |
 | Adobe Analytics から移行する際の新しいコンポーネント移行情報 | Adobe Analytics 管理ガイドに記載されている新しい[コンポーネント移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)機能を参照する [Adobe Analytics からの進化](/help/getting-started/aa-to-cja.md)に情報を追加しました。 |
-| 特定の情報は管理者のみが利用できることを明確化 | [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md)および[フィルターマネージャー](/help/components/filters/manage-filters.md)で説明している「前回の使用」列と「使用場所」列は、システム管理者のみが使用できることを示す情報を追加しました。 |
+| 特定の情報は管理者のみが利用できることを明確化 | [ 計算指標マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) および [ セグメントマネージャー ](/help/components/filters/manage-filters.md) で説明されている「最後に使用された」列と「使用された場所」列が、システム管理者のみが使用できることを示す情報を追加しました。 |
 | データセットの書き出しに必要な権限 | データセットをクラウド宛先に書き出すのに[必要な権限](/help/technotes/access-control.md)を説明した情報を追加しました。 |
 | 接続の管理 | 顧客からのフィードバックに基づいて、[接続の管理](../connections/manage-connections.md)の記事を更新しました。 |
 | 派生フィールド | 関数[制限](/help/data-views/derived-fields/derived-fields.md#limitations)の概要と、関数で使用される[演算子](/help/data-views/derived-fields/derived-fields.md#operators)の数を決定する方法の説明を追加しました。 |
@@ -120,7 +120,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 派生フィールドを使用した目標とターゲットの設定 | 派生フィールドを使用して目標とターゲットを設定し、これらに関するレポートを作成する方法を説明する[ユースケース](../use-cases/goals-using-derived-fields.md)記事を追加しました。 |
 | 完全なテーブルのクラウドへの書き出し | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace内で設計されたデータテーブルを 1 回限りまたはスケジュールされた形で配信できます。また、最大 5 つの分類、5 つの指標、セグメント、計算指標をすべて連結テーブルでサポートします。 これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
 | レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、レポート作成のピーク時の処理能力に関する問題を簡単に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[レポートアクティビティマネージャーの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
-| 管理ページの新しい列 | [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja)および[フィルターマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja)で使用できるようになった新しい列について文書化しました。 |
+| 管理ページの新しい列 | [ 計算指標マネージャー ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) および [ セグメントマネージャー ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja) で利用できるドキュメントの新しい列が追加されました。 |
 | Adobe Analytics との比較 | Customer Journey Analytics と Adobe Analytics の違いを比較して理解することを目的としたイントロダクションとして[概要ページ](../getting-started/aa-vs-cja/overview.md)を追加しました。 |
 | その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数のドキュメントを更新しました。 |
 | **2023年9月** | |

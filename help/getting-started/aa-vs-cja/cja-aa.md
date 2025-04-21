@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 96%
+source-wordcount: '2441'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 96%
 | **リスト変数／リスト prop** | フルサポート。Customer Journey Analytics では XDM を使用し、listVars と同様に使用できる無制限の文字列配列をサポートします。 |
 | **マーチャンダイジング eVar** | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)を介したフルサポート |
 | **指標** | フルサポート。Customer Journey Analytics ではエクスペリエンスデータモデル（XDM）を使用し、無制限の指標をサポートします。Adobe Analytics のカスタム成功イベントには関連付けられません。一部の標準指標は、Adobe Analytics から名前が変更されました：訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベント。 |
-| **Adobe Analytics から Customer Journey Analytics へのプロジェクト、フィルター、計算指標の移行** | フルサポート。 |
+| **Adobe AnalyticsからCustomer Journey Analyticsへのプロジェクト、セグメントおよび計算指標の移行** | フルサポート。 |
 | **モバイルスコアカード／ダッシュボード** | フルサポート |
 | **パネル** | 次のパネルをフルサポート：空のパネル、属性、フリーフォーム、クイックインサイト、次または前の項目。 |
 | **PDF への書き出し** | フルサポート |
@@ -73,7 +73,7 @@ ht-degree: 96%
 | **レポート時間処理** | フルサポート。Customer Journey Analytics は、レポート時の処理にのみ依存します。 |
 | **レポート API へのアクセス** | フルサポート。[Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) を通じて使用できます。 |
 | **予定レポート／プロジェクト** | フルサポート |
-| **セグメント** | フルサポート。現在は、「フィルター」と呼ばれています。従来の Analysis Workspace の既存のセグメントは Customer Journey Analytics に移植されません。 |
+| **セグメント** | フルサポート。（旧称「フィルター」）。 |
 | **ストリーミングメディアコレクション** | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
 | **概要レベルデータソース** | フルサポート |
 | **仮想レポートスイート** | フルサポート。現在は、[データビュー](/help/data-views/create-dataview.md)と呼ばれます。 |
@@ -109,7 +109,7 @@ ht-degree: 96%
 | **Products 変数** | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | **プロジェクトの共有** | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | **Report Builder** | Excel 用の新しい Office 365 プラグインでサポートされます。 |
-| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、フィルターまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、セグメント、注釈などを作成するための追加のユーザー権限が利用可能です。 |
+| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、セグメントまたは計算指標を作成/更新/削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。 計算指標、セグメント、注釈などを作成するための追加のユーザー権限が利用可能です。 |
 | **ビジュアライゼーション** | マップビジュアライゼーションを除く、すべてのワークスペースビジュアライゼーションがサポートされます。 |
 | **クロスデバイス／クロスチャネルのステッチ** | ID 情報を含むイベントデータセットに対してサポートされます。[ステッチ](../../stitching/overview.md)を参照してください。 |
 

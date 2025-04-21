@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -73,7 +73,7 @@ Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-conne
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。
-3. 新しく作成した 2 つのセグメントを「**[!UICONTROL フィルターを追加]**」領域にドラッグし、人物指標を「**[!UICONTROL 指標を追加]**」領域にドラッグします。
+3. 新しく作成した 2 つのセグメントを「**[!UICONTROL セグメントを追加]**」領域にドラッグし、人物指標を「**[!UICONTROL 指標を追加]**」領域にドラッグします。
 
 結果のベン図ビジュアライゼーションは、web データとコールセンターデータの両方を含むデータセット内の人数を示します。重複が大きいほど、より多くの人が適切にステッチされたことになります。重複しない領域は、いずれかのデータセットにのみ存在する人を表します。
 

@@ -3,10 +3,11 @@ description: アラートを作成、編集または削除します。
 title: アラートの管理
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 7%
+source-wordcount: '565'
+ht-degree: 21%
 
 ---
 
@@ -17,30 +18,30 @@ ht-degree: 7%
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、「**[!UICONTROL アラート]**」を選択します。
 
-アラートマネージャーは、[ フィルターマネージャー ](/help/components/filters/manage-filters.md) および [ 計算指標マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) と非常に似た構造になっています。
+アラートマネージャーは、[ セグメントマネージャー ](/help/components/filters/manage-filters.md) および [ 計算指標マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) のような構造になっています。
 
 
 ## アラートマネージャー
 
 アラートマネージャーには、次のインターフェイス要素があります。
 
-![ フィルターインターフェイス ](assets/alerts-manager.png)
+![フィルターインターフェイス](assets/alerts-manager.png)
 
 ### アラートリスト
 
-アラートリストには、所有するすべてのアラート➊、すべてのプロジェクトを対象としたアラートおよび共有されているアラートが表示されます。 リストには次の列があります。
+アラートリストには、所有するすべてのアラート➊、すべてのプロジェクトを対象としたアラートおよび共有されているアラートが表示されます。 リストには、次の列があります。
 
 | 列 | 説明 |
 |---|---|
-| ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | アラートを ![ 星 ](/help/assets/icons/Star.svg) または ![ 星アウトライン ](/help/assets/icons/StarOutline.svg) に優先するかどうかを選択します。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | アラートを ![ 星 ](/help/assets/icons/Star.svg) または ![ 星アウトライン ](/help/assets/icons/StarOutline.svg) に優先するかどうかを選択します。 |
 | **[!UICONTROL タイトルと説明]** | アラートを編集するには、タイトルリンクを選択して [ アラートビルダー ](alert-builder.md#alert-builder) を開きます。 |
-| **[!UICONTROL タイプ]** | アラートがCustomer Journey Analytics・データ・アラートかサーバ・コールの使用状況アラートかを示します。 |
+| **[!UICONTROL タイプ]** | アラートがCustomer Journey Analytics データアラートであるか、サーバーコールの使用状況アラートであるかを示します。 |
 | **[!UICONTROL 有効]** | アラートが有効か無効かを示します。 |
 | **[!UICONTROL データビュー]** | このアラートが適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | アラートの所有者。 管理者以外のユーザーには、自分が所有しているアラートまたは自分と共有されているアラートのみが表示されます。 |
 | **[!UICONTROL タグ]** | このアラートのタグ。 |
 | **[!UICONTROL 有効期限]** | アラートの有効期限が切れるように設定された日時。 |
-| **[!UICONTROL 変更日]** | アラートが最後に変更された日時。 |
+| **[!UICONTROL 変更日時]** | アラートが最後に変更された日時。 |
 
 <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
 
@@ -59,13 +60,13 @@ ht-degree: 7%
 | ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した 1 つのアラートの名前を変更します。 選択した場合、アラートの名前をインラインで変更できます。 |
 | ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択したアラートをコピーします。 同じ名前とサフィックスの `(Copy)` を持つ新しいアラートが作成されます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Enable]** または **[!UICONTROL Disable]** | 選択したアラートを有効または無効にします。 |
-| ![更新](/help/assets/icons/Refresh.svg) | **[!UICONTROL 更新]** | アラートの有効期限を更新します。 有効期限は、元の有効期限に関係なく、このオプションを選択した日から 1 年間延長されます。 |
+| ![更新](/help/assets/icons/Refresh.svg) | **[!UICONTROL 更新]** | アラートの有効期限日を更新します。有効期限は、元の有効期限に関係なく、このオプションを選択した日から 1 年間延長されます。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | アラートを `Alerts List.csv` ファイルに書き出します。 |
 
 
 ### アクティブなフィルターバー
 
-フィルターバー➌には、フィルターパネルからアラートのリスト（ある場合）に適用されたアクティブなフィルターが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。 複数のフィルターを指定した場合は、「すべて削除 **[!UICONTROL を使用して、すべてのフィルターを削除でき]** す。
+フィルターバー➌には、フィルターパネルからアラートのリスト（ある場合）に適用されたアクティブなフィルターが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターを指定した場合は、「**[!UICONTROL すべて削除]**」を使用すると、すべてのフィルターを削除できます。
 
 
 ### フィルターパネル
@@ -116,6 +117,6 @@ ht-degree: 7%
 
 ## アラートのトラブルシューティング
 
-アラートの問題をトラブルシューティングする際には、Adobeサポートに JID （ジョブインスタンス ID）番号を伝えます。 JID 番号は、受信するアラートメール通知の下部にあります。
+アラートの問題をトラブルシューティングする際には、Adobe サポートに JID （ジョブインスタンス ID）番号を伝えます。 JID 番号は、受信するアラートメール通知の下部にあります。
 
-![ アラートメール ](assets/alerts-email.PNG)
+![アラートメール](assets/alerts-email.PNG)

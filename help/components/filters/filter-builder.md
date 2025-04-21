@@ -4,10 +4,10 @@ title: セグメントの構築
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1571'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 46%
    | **[!UICONTROL データビュー]** | セグメントのデータ表示を選択できます。  定義したセグメントは、データビューの [ 設定 ](/help/data-views/create-dataview.md#settings-filters) タブでセグメントとして使用できます。 |
    | **[!UICONTROL プロジェクトのみのセグメント]** | セグメントが作成されたプロジェクトでのみ表示され、セグメントがコンポーネントリストに追加されないことを説明する情報ボックス。 **[!UICONTROL このセグメントをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** を有効にして、その設定を変更します。 この情報ボックスは、[ クイックセグメント ](quick-filters.md) インターフェイスから **[!UICONTROL ビルダーを開く]** を使用して [!UICONTROL  クイックセグメント ] を作成し、クイックセグメント情報を通常のセグメントに切り替えた場合にのみ表示されます。 |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | セグメントに名前を付けます（例：`Last month mobile customers`）。 |
-   | **[!UICONTROL 説明]** | セグメントの説明（例：`Filter to define the mobile customers for the last month`）を指定します。 |
+   | **[!UICONTROL 説明]** | セグメントの説明（例：`Segment to define the mobile customers for the last month`）を指定します。 |
    | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
    | **[!UICONTROL 定義]** ![必須](/help/assets/icons/Required.svg) | [ 定義ビルダー ](#definition-builder) を使用してセグメントを定義します。 |
 
@@ -82,7 +82,7 @@ ht-degree: 46%
 
 ### コンポーネント
 
-セグメント定義の構成の重要な部分は、ディメンション、指標、既存のセグメントおよび日付範囲を使用することです。 これらのすべてのコンポーネントは、フィルタービルダーのコンポーネントパネルから使用できます。
+セグメント定義の構成の重要な部分は、ディメンション、指標、既存のセグメントおよび日付範囲を使用することです。 これらのすべてのコンポーネントは、セグメントビルダーのコンポーネントパネルから使用できます。
 
 ![ 定義の作成を開始 ](assets/start-building-filter.gif){width=100%}
 
@@ -130,7 +130,7 @@ ht-degree: 46%
 
 周期的な日付範囲を含むセグメントを作成できます。 これにより、進行中のキャンペーンやイベントに関する質問に答えることができます。 例えば、*過去 60 日間にオンライン購入を行った全員* を含むセグメントを作成できます。
 
-![周期的な日付範囲を使用したフィルター](assets/filter-rolling-date-range.gif)
+![ 相対日付範囲を使用したセグメント ](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

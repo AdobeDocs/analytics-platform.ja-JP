@@ -3,7 +3,7 @@ description: 順次セグメントは、THEN 演算子を使用してセグメ�
 title: 順次セグメント
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 
 
-順次セグメントを作成する際の基本は、[ セグメントビルダー ](filter-builder.md) を使用して通常のセグメントを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、セグメント定義を作成できます。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常のセグメントは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、順次フィルターになります。
+順次セグメントを作成する際の基本は、[ セグメントビルダー ](filter-builder.md) を使用して通常のセグメントを作成する場合と同じです。 [ 定義ビルダー ](filter-builder.md#definition-builder) を使用して、セグメント定義を作成できます。 この構成では、コンポーネント、コンテナ、演算子、ロジックを使用します。 通常のセグメントは、メイン定義または [ 定義ビルダー ](filter-builder.md#definition-builder) 内で使用する任意のコンテナで **[!UICONTROL Then]** 演算子を選択するとすぐに、順次セグメントになります。
 
 ### 例
 

@@ -4,7 +4,7 @@ description: Customer Journey Analyticsでセグメントを管理する方法�
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 32%
@@ -21,7 +21,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->特定のWorkspace プロジェクト内で作成したクイックセグメントは、すべてのプロジェクトでセグメントを使用できるように設定しない限り、[!UICONTROL  フィルター ] マネージャーに表示されません。
+>特定のWorkspace プロジェクト内で作成したクイックセグメントは、すべてのプロジェクトでセグメントを使用できるように設定しない限り、[!UICONTROL  セグメント ] マネージャーに表示されません。
 >
 
 ## セグメントマネージャー
@@ -37,7 +37,7 @@ ht-degree: 32%
 | 列 | 説明 |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | セグメントの ![ 星 ](/help/assets/icons/Star.svg) または ![ 星のアウトライン ](/help/assets/icons/StarOutline.svg) を優先するかどうかを選択します。 詳しくは、[ セグメントをお気に入りとしてマーク ](/help/components/filters/filters-favorite.md) を参照してください。 |
-| **[!UICONTROL タイトルと説明]** | セグメントを編集するには、タイトルリンクを選択して [ フィルタービルダー ](filter-builder.md) を開きます。 共有セグメントは「![ 共有 ](/help/assets/icons/ShareAlt.svg)」で示されます。 |
+| **[!UICONTROL タイトルと説明]** | セグメントを編集するには、タイトルリンクを選択して [ セグメントビルダー ](filter-builder.md) を開きます。 共有セグメントは「![ 共有 ](/help/assets/icons/ShareAlt.svg)」で示されます。 |
 | **[!UICONTROL データビュー]** | このセグメントが適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | セグメントの所有者。 ユーザーには、自分が所有するセグメントまたは自分と共有されている注釈のみが表示されます。 |
 | **[!UICONTROL タグ]** | このセグメントのタグ。 |
@@ -54,7 +54,7 @@ ht-degree: 32%
 
 | アクション | 説明 |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ フィルタービルダー ](filter-builder.md) を使用して、別のセグメントを追加します。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ セグメントビルダー ](filter-builder.md) を使用して、別のセグメントを追加します。 |
 | ![検索](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストでセグメントが選択されていない場合、この検索フィールドを使用してセグメントを検索します。 |
 | ![ラベル](/help/assets/icons/Label.svg)、**[!UICONTROL タグ]** | 選択したセグメントにタグ付けします。 **[!UICONTROL セグメントをタグ付け]** ダイアログで、選択したセグメントのタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択したセグメントのタグを保存します。 詳しくは、[ セグメントのタグ付け ](/help/components/filters/filters-tag.md) を参照してください。 |
 | ![共有](/help/assets/icons/ShareAlt.svg)、**[!UICONTROL 共有]** | 選択したセグメントの共有 **[!UICONTROL セグメントを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したセグメントの共有の詳細を保存します。 詳しくは、[ セグメントの共有 ](filters-share.md) を参照してください。 |
@@ -62,7 +62,7 @@ ht-degree: 32%
 | ![編集](/help/assets/icons/Edit.svg)**[!UICONTROL 名前を変更]** | 選択した 1 つのセグメントの名前を変更します。 選択した場合、セグメントの名前をインラインで変更できます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 承認]** | 選択したセグメントを承認します。 詳しくは、[ セグメントの承認 ](filters-approve.md) を参照してください。 |
 | ![コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択したセグメントをコピーします。 同じ名前とサフィックス `(Copy)` を持つ新しいセグメントが作成されます。 |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV に書き出し]** | セグメントを `Filters List.csv` ファイルに書き出します。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV に書き出し]** | セグメントを `Segments List.csv` ファイルに書き出します。 |
 
 ### アクティブセグメントバー
 

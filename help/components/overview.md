@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 次のコンポーネントを管理できます。
 
-* [ セグメント ](filters/filters-overview.md)：焦点を当てた強力なオーディエンスセグメントを作成、管理、共有し、レポートに適用します。 フィルターを使用すると、特性やインタラクションに基づいてユーザーのサブセットを特定できます。
+* [ セグメント ](filters/filters-overview.md)：焦点を当てた強力なオーディエンスセグメントを作成、管理、共有し、レポートに適用します。 セグメントを使用すると、特性やインタラクションに基づいて人物のサブセットを識別できます。
 * [計算指標](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
 * [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
 * [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
@@ -84,7 +84,7 @@ Analysis Workspace の左パネルにあるコンポーネントリストを検�
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション**（![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)）はオレンジ色、**フィルター**（![フィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)）は青色、**日付範囲**（![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)）は紫色、**指標**（![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)）は緑色です。<br/>Adobe アイコン ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) は、計算指標テンプレートまたはセグメントテンプレートのいずれかを示します。 電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
+   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション** ![Dimension アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**セグメント** ![ セグメントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![ 日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![ 指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。<br/>Adobe アイコン ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) は、計算指標テンプレートまたはセグメントテンプレートのいずれかを示します。 電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
 
 3. ドロップダウンリストからコンポーネントを選択します。
 
