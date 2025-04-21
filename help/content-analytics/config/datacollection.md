@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -34,10 +34,13 @@ ht-degree: 1%
 
 ## 機能
 
+Content Analyticsでコンテンツイベントデータを収集するには、Experience Platform Edge Network Web SDKが必要です。 このイベントデータ収集は、Experience Platform Edge Network（Web SDK、Server API）や Analytics ソースコネクタ（例えば、AppMeasurementを使用）などのメカニズムを通じて、行動イベントデータの（既存の）データ収集と組み合わされます。
+
 Content Analytics ライブラリは、次の場合にデータを収集します。
 
 * Content Analyticsは、ページに読み込まれるタグライブラリに含まれています。
 * ページ URL は、付属のタグライブラリの一部である ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}0}Content Analytics拡張機能 } で設定されます。[
+
 
 
 ## Content Analytics イベント
