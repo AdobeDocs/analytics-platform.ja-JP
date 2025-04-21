@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
+exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -24,6 +25,10 @@ Analysis Workspaceのコメントを使用すると、Analysis Workspace プロ�
 >* **組織：** Customer Journey Analytics管理者は、[ 環境設定 ](/help/analysis-workspace/user-preferences.md) に記載されているように、組織に対してこの機能を無効にすることができます。
 
 ## コメントを表示
+
+コメントは、右側のパネルのコメント領域、またはコメントバッジ（存在する場合）から表示できます。
+
+![Analysis Workspaceでのコメントの表示 ](assets/workspace-comments-view.png)
 
 ### コメント領域でコメントを表示する
 
@@ -61,6 +66,12 @@ Analysis Workspace プロジェクトで作成されたすべてのコメント�
 
 1. プロジェクトをAnalysis Workspaceで開いた状態で、コメントを挿入するプロジェクトの領域を右クリックします。
 
+   すべてのビジュアライゼーションで、ビジュアライゼーションヘッダーのコメントバッジをサポートしていますが、ビジュアライゼーション内の特定のデータポイントのコメントバッジをサポートしているのは、次のビジュアライゼーションのみです。
+
+   * フリーフォームテーブル
+   * コホートテーブル
+   * 行
+
    <!--add screenshot-->
 
 1. **[!UICONTROL コメントを追加]** を選択します。
@@ -97,6 +108,8 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 1. @記号を入力し、含める人の名、姓またはメールアドレスの入力を開始します。
 
+   ![ ユーザーをタグ付け ](assets/comments-tag-user.png)
+
 1. ドロップダウンメニューに表示されたら、人物の名前を選択します。
 
 @記号を使用してコメントに人物を含める場合は、次の点に注意してください。
@@ -111,7 +124,7 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 1. 返信するコメントの横にある「**[!UICONTROL 返信]**」を選択します。
 
-   Or
+   または
 
    返信先のコメントのテキストを返信に含め、元のテキストを引用符タグで囲む場合は、返信する特定のコメントまたは返信の横にある 3 ドットアイコンを選択し、「**[!UICONTROL 引用返信]**」を選択します。 引用返信は、コメントを明確に示したり、コメントの参照先に返信したりする優れた方法です。
 
@@ -122,6 +135,38 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 1. （オプション） @記号の後に名前を入力して、コメントについて他のユーザーに通知します。 @記号を使用して他のユーザーに通知する方法については、[ コメントに他のユーザーを含める ](#include-others-in-a-comment) を参照してください。
 
 1. 「**[!UICONTROL 送信]**」を選択します。
+
+## 既存のコメントにバッジを配置する
+
+右側のパネルのコメント領域にコメントがあるが、プロジェクトにまだバッジがない場合、そのバッジを追加できます。
+
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+
+1. バッジを配置するコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL バッジを配置]** を選択します。
+
+1. 既存のコメントのバッジを配置するプロジェクトの領域を選択します。
+
+   **コメントバッジ**![ コメントバッジ ](assets/comment-indicator.png) は、選択したWorkspace プロジェクトの領域に配置されます。 コメントは、右側のパネルのコメント領域の上部にも表示されます。
+
+   詳しくは、[ プロジェクト内のコメントバッジを表示 ](#view-comment-badges-in-a-project) を参照してください。
+
+バッジを削除するには：
+
+1. 削除するバッジを選択し、「**[!UICONTROL バッジを削除]**」を選択します。
+
+   バッジは削除されますが、右側のパネルのコメント領域にはコメントを引き続き使用できます。
+
+## 既存のコメントのバッジの移動
+
+既存のコメントに既に配置されているコメントバッジを移動できます。
+
+1. プロジェクトをAnalysis Workspaceで開いた状態で、移動するコメントのバッジを見つけます。
+
+1. バッジを右クリックし、「**[!UICONTROL プレースメントを移動]**」を選択します。
+
+1. バッジを配置するプロジェクトの領域を選択します。
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## コメントへのリンクのコピー
 
@@ -182,36 +227,3 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 既定では、解決済みのコメントはコメント領域に表示されません。 解決済みコメントを表示するには、次の手順に従います。
 
 1. コメント領域でフィルターアイコンを選択し、「**[!UICONTROL 解決済みのコメントを非表示にする]** オプションの選択を解除します。
-
-## 既存のコメントにバッジを配置する
-
-右側のパネルのコメント領域にコメントがあるが、プロジェクトにまだバッジがない場合、そのバッジを追加できます。
-
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
-
-1. バッジを配置するコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL バッジを配置]** を選択します。
-
-1. 既存のコメントのバッジを配置するプロジェクトの領域を選択します。
-
-   **コメントバッジ**![ コメントバッジ ](assets/comment-indicator.png) は、選択したWorkspace プロジェクトの領域に配置されます。 コメントは、右側のパネルのコメント領域の上部にも表示されます。
-
-   詳しくは、[ プロジェクト内のコメントバッジを表示 ](#view-comment-badges-in-a-project) を参照してください。
-
-バッジを削除するには：
-
-1. 削除するバッジを選択し、「**[!UICONTROL バッジを削除]**」を選択します。
-
-   バッジは削除されますが、右側のパネルのコメント領域にはコメントを引き続き使用できます。
-
-## 既存のコメントのバッジの移動
-
-既存のコメントに既に配置されているコメントバッジを移動できます。
-
-1. プロジェクトをAnalysis Workspaceで開いた状態で、移動するコメントのバッジを見つけます。
-
-1. バッジを右クリックし、「**[!UICONTROL プレースメントを移動]**」を選択します。
-
-1. バッジを配置するプロジェクトの領域を選択します。
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
-
