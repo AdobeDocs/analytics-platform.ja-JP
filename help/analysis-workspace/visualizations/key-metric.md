@@ -4,10 +4,10 @@ title: 主要指標の概要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 1. ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 主要指標の概要]**&#x200B;ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
-1. **[!UICONTROL 指標]**、**[!UICONTROL プライマリ日付範囲]**、**[!UICONTROL 比較日付範囲]**（オプション）および&#x200B;**[!UICONTROL フィルター]**（オプション）を選択して、ビジュアライゼーションを設定します。
+1. **[!UICONTROL 指標]**、**[!UICONTROL 比較日付範囲]** **[!UICONTROL 、（プライマリ日付範囲]** （オプション）および **[!UICONTROL セグメント]** （オプション）を選択して、ビジュアライゼーションを設定します。
 
    ![指標、プライマリ日付範囲、比較日付範囲およびセグメントのオプションを表示する主要指標の設定。](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
    | **[!UICONTROL 指標]** | 調査の対象となる指標を選択します。すべての指標がサポートされています。 |
    | **[!UICONTROL プライマリ日付範囲]** | フリーフォームテーブルの現在の日付範囲。<p>データビューで使用可能な日付範囲から選択します。</p> <p>ビジュアライゼーションがあるパネルで使用されているのと同じ日付範囲を使用する場合は、「[!UICONTROL **パネルの日付範囲**]」を選択します。</p> |
    | **[!UICONTROL 比較日付範囲]** | プライマリ日付範囲の比較対象となる日付範囲。 |
-   | **[!UICONTROL フィルター（オプション）]** | この概要で関心のあるセグメント。 |
+   | **[!UICONTROL セグメント (オプション)]** | この概要で関心のあるセグメント。 |
 
    {style="table-layout:auto"}
 

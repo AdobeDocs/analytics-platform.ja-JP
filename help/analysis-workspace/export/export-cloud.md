@@ -5,10 +5,10 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a7bd67894b02174d980a730086f89df97b524356
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -183,7 +183,7 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 次のコンポーネントはサポートされていないので、Analysis Workspace では、完全なテーブルの書き出しを実行する際に、テーブルから削除するプロンプトが表示されます。
 
 * 指標定義で基本関数または高度な関数を使用する計算指標（詳しくは、[基本関数](/help/components/calc-metrics/cm-functions.md)と[高度な関数](/help/components/calc-metrics/cm-adv-functions.md)を参照してください）
-* 管理者によって書き出しが制限されているコンポーネント（詳しくは、[ラベルとポリシー](/help/data-views/data-governance.md)の&#x200B;*データビューでデータガバナンスポリシーをフィルタリング*&#x200B;の節を参照してください）。
+* 管理者によって書き出しを制限されているコンポーネント（詳しくは、*ラベルとポリシー [ の* データビューのデータガバナンスポリシーに関するセグメント ](/help/data-views/data-governance.md) の節を参照）
 * 次のすべての条件を満たす任意のディメンション。
    * [オブジェクトの配列](/help/use-cases/object-arrays.md)の一部であるフィールドから作成された（Adobe Analytics の複数値変数に類似）
    * [永続性が有効](/help/data-views/component-settings/persistence.md)になっている
@@ -197,7 +197,7 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
    * 計算指標
    * 指標
    * 日付範囲
-   * フィルター
+   * セグメント
 
 ### アトリビューションの動作
 

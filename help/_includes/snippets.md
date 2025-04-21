@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 30%
@@ -60,7 +60,7 @@ ht-degree: 30%
 *このビデオでは、Adobe Analyticsを使用した機能を説明します。 ただし、この機能は Customer Journey Analytics でも同様に使用できます。Adobe AnalyticsとCustomer Journey Analyticsの用語の違いに注意してください（「訪問回数」と「セッション数」など）。*
 
 
-## セグメントパネル {#filterspanel}
+## フィルターパネル {#filterspanel}
 
 1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。フィルターリストにスペースが必要な場合は、もう一度「![フィルター](/help/assets/icons/Filter.svg)」を選択してパネルを閉じることができます。
 1. 使用可能ないずれかのフィルターセクションからフィルターを選択します。

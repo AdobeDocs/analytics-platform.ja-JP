@@ -4,7 +4,7 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -136,26 +136,26 @@ ht-degree: 97%
 
 パネルドロップゾーンを使用すると、パネル内のすべてのテーブルおよびビジュアライゼーションにセグメントおよびドロップダウンセグメントを適用できます。1 つのパネルに 1 つまたは複数のセグメントを適用できます。
 
-### フィルター
+### セグメント
 
-パネルのドロップゾーンに左パネルからセグメントをドラッグ＆ドロップして、パネルのセグメント化を開始します。このプロセスを繰り返して、パネルにセグメントを追加します。フィルターは、パネルの上部に並んで表示されます。
+パネルのドロップゾーンに左パネルからセグメントをドラッグ＆ドロップして、パネルのセグメント化を開始します。このプロセスを繰り返して、パネルにセグメントを追加します。セグメントは、パネルの上部に並んで表示されます。
 
 ![左パネルには、パネルのドロップゾーンにドラッグされた使用可能な指標とモバイル顧客指標が表示されます。](assets/segment-filter.png)
 
 #### クイックセグメント
 
-セグメント以外のコンポーネントをドロップゾーンに直接ドラッグしてクイックセグメントを作成することもできるので、[セグメントビルダー](/help/components/filters/filter-builder.md)への移行にかかる時間と手間を省くことができます。この方法で作成されたフィルターは、イベントレベルのセグメントとして自動的に定義されます。 この定義は、セグメント名の横にある「![編集](/help/assets/icons/Edit.svg)」を選択すると、すばやく変更できます。
+セグメント以外のコンポーネントをドロップゾーンに直接ドラッグしてクイックセグメントを作成することもできるので、[セグメントビルダー](/help/components/filters/filter-builder.md)への移行にかかる時間と手間を省くことができます。この方法で作成されたセグメントは、イベントレベルのセグメントとして自動的に定義されます。この定義は、セグメント名の横にある「![編集](/help/assets/icons/Edit.svg)」を選択すると、すばやく変更できます。
 
 
 詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
 
 ![ 公開されてドロップゾーンにドロップされるアドホックセグメント ](assets/adhoc-segment-filter.png)
 
-### ドロップダウンフィルター
+### ドロップダウンセグメント
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンフィルター](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ドロップダウンセグメント ](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
