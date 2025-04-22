@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 47%
@@ -13,9 +13,6 @@ ht-degree: 47%
 ---
 
 # コンテンツガイド付き設定
-
-{{release-limited-testing}}
-
 
 ガイド付き設定を使用すると、コンテンツ分析をすばやく簡単に設定できます。ガイド付き設定では、ウィザードを使用して、組織のコンテンツ分析を自動的に設定するための要件を設定します。**[!UICONTROL 設定]**&#x200B;画面で、新しい設定を作成するか、既存の設定を編集できます。
 

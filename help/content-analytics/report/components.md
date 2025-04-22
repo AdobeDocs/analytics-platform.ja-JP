@@ -1,11 +1,11 @@
 ---
 title: Content Analytics コンポーネント
-description: ディメンション、（計算）指標、派生フィールドなど、特定の Content Analytics コンポーネントの詳細
+description: ディメンション、（計算）指標、派生フィールドなど、特定のContent Analytics コンポーネントの詳細
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 0731eadd403ecb428d36492b83351aa0e696b41f
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 22%
@@ -13,8 +13,6 @@ ht-degree: 22%
 ---
 
 # Content Analytics コンポーネント
-
-{{release-limited-testing}}
 
 Content Analytics では、次に示すカテゴリのコンポーネント（ディメンション、（計算）指標、派生フィールド）を、Customer Journey Analyticsの既に使用可能なコンポーネントに追加します。
 
