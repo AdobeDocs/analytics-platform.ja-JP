@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '14697'
+source-wordcount: '14696'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 3%
    * [ランク付けされた単一ディメンション](#single-dimension-ranked)
    * [複数のディメンションのランク](#multiple-dimension-ranked)
    * [個別ディメンション値のカウント](#count-distinct-dimension-values)
-   * [セグメント化する日付範囲名を使用](#use-date-range-names-to-segment)
+   * [日付範囲名を使用してフィルター](#use-date-range-names-to-filter)
    * [セグメント名を使用したセグメント化](#use-segment-names-to-segment)
    * [ディメンション値を使用したセグメント化](#use-dimension-values-to-segment)
    * [並べ替え](#sort)
@@ -1737,17 +1737,17 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 
 
-## フィルター名を使用したフィルタリング
+## セグメント名を使用したセグメント化
 
-このユースケースでは、Customer Journey Analyticsで定義した釣り商品カテゴリの既存のフィルターを使用します。 2023 年 1 月中に製品名と発生件数（イベント）をフィルタリングしてレポートするには、次の手順を実行します。
+このユースケースでは、Customer Journey Analyticsで定義した既存のセグメントを釣り商品カテゴリに使用します。 2023 年 1 月中に製品名と発生件数（イベント）をセグメント化し、レポートします。
 
 +++ Customer Journey Analytics
 
-Customer Journey Analyticsで使用するフィルターを調べます。
+Customer Journey Analyticsで使用するセグメントを調べます。
 
 ![Customer Journey Analytics フィルター名を使用してフィルター ](assets/cja-fishing-products.png){zoomable="yes"}
 
-次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでそのフィルターを使用できます。
+次に、使用例の **[!UICONTROL セグメント名をセグメントに使用]** パネルでそのセグメントを使用できます。
 
 ![Customer Journey Analytics個別カウント値 ](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1901,18 +1901,18 @@ Customer Journey Analyticsで使用するフィルターを調べます。
 +++
 
 
-## ディメンション値を使用したフィルタリング
+## ディメンション値を使用したセグメント化
 
-**[!UICONTROL 商品カテゴリ]** の動的 **[!UICONTROL ハンティング]** 値を使用して、ハンティングカテゴリから商品をフィルタリングします。 また、商品カテゴリの値を動的に取得する機能をサポートしていない BI ツールの場合は、Customer Journey Analyticsで新しいフィルターを作成し、ハンティング商品カテゴリの商品をフィルタリングします。
-次に、新しいフィルターを使用して、2023 年 1 月のハンティングカテゴリの商品の製品名と発生件数（イベント）についてレポートします。
+**[!UICONTROL 製品カテゴリ]** の動的な **[!UICONTROL ハンティング]** 値を使用して、ハンティングカテゴリから商品をセグメント化します。 または、商品カテゴリ値の動的取得をサポートしていない BI ツールの場合、Customer Journey Analyticsで、ハンティング商品カテゴリからの商品に関するセグメントを持つ新しいセグメントを作成します。
+次に、新しいセグメントを使用して、2023 年 1 月のハンティングカテゴリの製品の製品名と発生件数（イベント）についてレポートします。
 
 +++ Customer Journey Analytics
 
-Customer Journey Analyticsで **[!UICONTROL タイトル]** の新しいフィルターを作成し `Hunting Products` す。
+Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新しいセグメント `Hunting Products` 作成します。
 
-![Customer Journey Analytics Dimension値を使用してフィルターする ](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics Dimension値を使用してセグメント化 ](assets/cja-hunting-products.png){zoomable="yes"}
 
-次に、使用例の **[!UICONTROL Dimension値をフィルターに使用]** パネルでそのフィルターを使用できます。
+次に、使用例の **[!UICONTROL Dimension値を使用してフィルターを適用]** パネルでそのセグメントを使用できます。
 
 ![Customer Journey Analytics個別カウント値 ](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 

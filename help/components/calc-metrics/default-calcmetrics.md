@@ -4,10 +4,10 @@ title: 計算指標テンプレート
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 97%
+ht-degree: 88%
 
 ---
 
@@ -18,9 +18,9 @@ Customer Journey Analytics は、最も一般的なユースケースに対応�
 | 計算指標名 | 説明<br/>数式 |
 |---------|----------|
 | **[!UICONTROL セッション開始率]** | セッションの最初のイベントでディメンション項目が発生した割合。<p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL セッション開始] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **セッション開始** ![除算](/help/assets/icons/Divide.svg) ![イベント](/help/assets/icons/Event.svg) **セッション** **）** |
-| **[!UICONTROL ユーザー別滞在時間]** | 特定のディメンション項目に対して人が費やした平均時間。<p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL 滞在時間（秒）] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。セッションの最後のイベントを除外フィルターが人物指標に適用されます。フィルターでは、データセット内の各セッションの最後のイベントが除外されます。この除外により、最終的なアクション自体を除外しながら、購入やフォーム送信などのイベントやアクションに至るユーザーの行動を分析できます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **滞在時間（秒）** ![除算](/help/assets/icons/Divide.svg) ![セグメント化](/help/assets/icons/Segmentation.svg) **セッションの最後のイベントを除外（** ![イベント](/help/assets/icons/Event.svg) **人物））** |
+| **[!UICONTROL ユーザー別滞在時間]** | 特定のディメンション項目に対して人が費やした平均時間。<p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL 滞在時間（秒）] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。「セッションの最後のイベントを除外」セグメントは、人物指標に適用されます。 セグメントからは、データセット内の各セッションの最後のイベントが除外されます。 この除外により、最終的なアクション自体を除外しながら、購入やフォーム送信などのイベントやアクションに至るユーザーの行動を分析できます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **滞在時間（秒）** ![除算](/help/assets/icons/Divide.svg) ![セグメント化](/help/assets/icons/Segmentation.svg) **セッションの最後のイベントを除外（** ![イベント](/help/assets/icons/Event.svg) **人物））** |
 | **[!UICONTROL 1 人あたりのセッション数]** | 1 人あたりの平均セッション数。<p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **セッション** ![除算](/help/assets/icons/Divide.svg) ![イベント](/help/assets/icons/Event.svg) **人物** **）** |
-| **[!UICONTROL セッションごとの滞在時間]** | 特定のディメンション項目でセッションごとに人が費やした平均時間。<p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL 滞在時間（秒）] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。セッションの最後のイベントを除外フィルターがセッション指標に適用されます。フィルターでは、データセット内の各セッションの最後のイベントが除外されます。この除外により、最終的なアクション自体を除外しながら、購入やフォーム送信などのイベントやアクションに至るユーザーの行動を分析できます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **滞在時間（秒）** ![除算](/help/assets/icons/Divide.svg) ![セグメント化](/help/assets/icons/Segmentation.svg) **セッションの最後のイベントを除外（** ![イベント](/help/assets/icons/Event.svg) **セッション））** |
+| **[!UICONTROL セッションごとの滞在時間]** | 特定のディメンション項目でセッションごとに人が費やした平均時間。<p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL 滞在時間（秒）] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。「セッションの最後のイベントを除外」セグメントは、セッション指標に適用されます。 セグメントからは、データセット内の各セッションの最後のイベントが除外されます。 この除外により、最終的なアクション自体を除外しながら、購入やフォーム送信などのイベントやアクションに至るユーザーの行動を分析できます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **滞在時間（秒）** ![除算](/help/assets/icons/Divide.svg) ![セグメント化](/help/assets/icons/Segmentation.svg) **セッションの最後のイベントを除外（** ![イベント](/help/assets/icons/Event.svg) **セッション））** |
 | **[!UICONTROL セッション終了率]** | セッションの最後のイベントでディメンション項目が発生した割合。 <p>この計算指標は、[データビュー](/help/data-views/create-dataview.md)に[!UICONTROL セッション終了] [標準コンポーネント](/help/data-views/component-reference.md)を含めると、Workspace に自動的に追加されます。</p>概要：**（** ![イベント](/help/assets/icons/Event.svg) **セッション終了** ![除算](/help/assets/icons/Divide.svg) ![イベント](/help/assets/icons/Event.svg) **セッション** **）** |
 | **[!UICONTROL Web セッション]** | Web サイトで発生したセッション数。 |
 | **[!UICONTROL 調査の完了率]** | 調査を開始した後、その調査を完了した人物の割合。 |

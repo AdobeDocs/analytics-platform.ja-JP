@@ -4,10 +4,10 @@ description: Customer Journey Analyticsでセグメントを管理する方法�
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -64,12 +64,12 @@ ht-degree: 32%
 | ![コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択したセグメントをコピーします。 同じ名前とサフィックス `(Copy)` を持つ新しいセグメントが作成されます。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV に書き出し]** | セグメントを `Segments List.csv` ファイルに書き出します。 |
 
-### アクティブセグメントバー
+### アクティブなフィルターバー
 
-セグメントバー➌には、セグメントパネルからセグメントのリスト（ある場合）に適用されたアクティブなセグメントが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、セグメントをすばやく削除できます。 複数のセグメントが指定されている場合は、「すべて削除 **[!UICONTROL を使用して、すべてのセグメントを削除でき]** す。
+フィルターバー➌には、フィルターパネルからセグメントのリスト（ある場合）に適用されたアクティブなセグメントが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターを指定した場合は、「すべてを削除 **[!UICONTROL を使用して、すべてのフィルターを削除でき]** す。
 
-### セグメントパネル
+### フィルターパネル
 
-セグメントのリストは、左のパネル➍イアログ ![ セグメント ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用してセグメント化できます。 セグメントパネルには、セグメントのタイプと、特定のセグメントに従っているセグメントの数が表示されます。 ![ セグメント ](/help/assets/icons/Filter.svg) を選択して、セグメントパネルの表示を切り替えます。
+左のパネル➍を使用して、セグメントのリストを ![ フィルター ](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]** できます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用するセグメントの数が表示されます。 ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルの表示を切り替えます。
 
 詳しくは、[ セグメントのリストのフィルタリング ](filters-filter.md) を参照してください。

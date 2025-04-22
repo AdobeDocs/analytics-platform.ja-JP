@@ -4,10 +4,10 @@ title: アラートの概要
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
 
 ビデオチュートリアル（[アラート](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=ja)（5:34））では、アラートの基本的な概要について説明します
 
-## Adobe Customer Journey Analytics と Adobe Analytics のアラートの違いについて
+## アラートの違いについて
 
 Adobe Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。ただし、重要な違いがあります。
 

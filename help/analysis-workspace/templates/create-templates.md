@@ -4,10 +4,10 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 84%
 
 1. フィルターアイコンを選択して、プロジェクトのリストをフィルタリングします。
 
-1. フィルターパネルで、「**その他のフィルター**」を選択し、「**会社テンプレート**」を選択します。
+1. フィルターパネルでは、**[!UICONTROL その他のフィルター]** を選択してから、**[!UICONTROL 会社テンプレート]** を選択します。
 
    会社テンプレートのリストが表示されます。すべての標準プロジェクトは、ピン留めされていない限り、表示されません。
 

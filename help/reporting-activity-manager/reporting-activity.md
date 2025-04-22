@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 99%
@@ -51,7 +51,7 @@ ht-degree: 99%
 
    ![レポートキューを表示するレポートアクティビティ](assets/reporting-activity-monthly.png)
 
-1. （オプション）接続のリストを検索またはセグメント化できます。
+1. （オプション）接続のリストを検索またはフィルタリングできます。
 
    * 検索フィールドを使用して、特定の接続を検索します。接続名または ID の入力を開始すると、入力に応じて接続のリストが更新されます。
 

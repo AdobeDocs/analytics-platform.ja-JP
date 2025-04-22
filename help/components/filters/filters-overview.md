@@ -4,9 +4,9 @@ description: の使用目的とシンプルなセグメントの作成方法に�
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -160,6 +160,14 @@ Customer Journey Analyticsのデータビューを使用すると、セッショ
 - リスト prop
 - リストディメンション
 - マーチャンダイジングディメンション （イベントのコンテキスト内）
+
+
+
+### B2B コンテナ
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
+
+[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) にアクセスできる場合は、セグメントで使用するその他のコンテナを使用できます。 これらの追加コンテナの使用について詳しくは、[B2B の概念と機能 ](/help/getting-started/cja-b2b-concepts-features.md) を参照してください。
 
 
 ### 論理グループコンテナ

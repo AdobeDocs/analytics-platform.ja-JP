@@ -4,9 +4,9 @@ title: アラートの管理
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '600'
 ht-degree: 21%
 
 ---
@@ -73,7 +73,9 @@ ht-degree: 21%
 
 アラートのリストは、左側のパネル➍ージの ![ フィルター ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用してフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターに従うアラートの数が表示されます。
 
-{{filterspanel}}
+
+1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。アラート リスト用にスペースが必要な場合は、もう一度 ![ フィルター ](/help/assets/icons/Filter.svg) を選択してパネルを閉じることができます。
+1. 使用可能ないずれかのフィルターセクションからフィルターを選択します。
 
 
 #### タグフィルターセクション

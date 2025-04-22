@@ -4,7 +4,7 @@ title: セグメントの構築
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
@@ -20,17 +20,10 @@ ht-degree: 45%
 >title="オーディエンスの作成"
 >abstract="オーディエンスは、セグメントから作成し、アクティブ化するためにAdobe Experience Platformと共有できます。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="データのプレビュー"
 >abstract="このセグメントのデータをデータビューのデータと比較します。 プレビューの割合は、**過去 90 日間**&#x200B;のデータビューの合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 **[!UICONTROL セグメントビルダー]** ダイアログでは、新しいセグメントの作成や既存のセグメントの編集を行うことができます。 ダイアログのタイトルは、**[!UICONTROL セグメント]** マネージャーから作成または管理するセグメントの場合、**** 新規セグメント [[!UICONTROL  または ] セグメントを編集 ](/help/components/filters/manage-filters.md) になります。
@@ -155,32 +148,23 @@ ht-degree: 45%
 
 ## アトリビューション {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="繰り返し"
 >abstract="ディメンションのインスタンスと持続値を含みます。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="インスタンス"
 >abstract="ディメンションのインスタンスと持続値を含みます。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="繰り返さないインスタンス"
 >abstract="ディメンション固有の（繰り返さない）インスタンスを含みます。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ ht-degree: 45%
 3 つのセグメントを使用したイベントに関するレポートの例は次のとおりです。
 
 ![ セグメント属性モデルの結果 ](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

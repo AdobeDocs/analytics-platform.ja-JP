@@ -4,7 +4,7 @@ title: コンポーネント情報の表示
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 61%
@@ -33,7 +33,7 @@ ht-degree: 61%
 
    コンポーネントのタイプは、カラーとアイコンの両方で識別できます。**ディメンション** ![ディメンションアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**セグメント** ![セグメントアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![日付範囲アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![指標アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。Adobe アイコン ![Adobe アイコン ](assets/default-calc-metric-icon.png) は計算指標テンプレートまたはセグメントテンプレートのいずれか、電卓アイコン ![ 電卓アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) は組織の Analytics 管理者によって作成された計算指標を示します。
 
-1. （オプション） **フィルター** アイコン ![ データ要素のフィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のセグメントオプションのいずれかを選択して、コンポーネントのリストをセグメント化します。
+1. （オプション） **フィルター** アイコン ![ データ要素のフィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のセグメントオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
 
    | オプション | 関数 |
    |---------|----------|

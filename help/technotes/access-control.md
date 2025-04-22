@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 24%
@@ -159,8 +159,8 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 ユーザーに 1 日からのデータへのアクセス権のみを付与したい。 アクセスを特定の行に制限する方法を次に示します。
 
-1. 特定のデータビューの [!UICONTROL  設定 ] でフィルターを作成します。ここで [!UICONTROL  日 ] は、データアクセスを付与する日付と等しくなります。 詳しくは [ データビューの作成 ](/help/data-views/create-dataview.md#settings-filters) を参照してください。
-1. データビューを保存します。これにより、基になる接続のデータセットのデータ部分にフィルターが適用されます。 フィルター定義に適合しない行はデータビューから自動的に除外され、このデータビューを使用する際にAnalysis Workspaceで使用できなくなります。
+1. 特定のデータビューの [!UICONTROL  設定 ] でセグメントを作成します。ここで [!UICONTROL  日 ] は、データアクセスを付与する日付と等しくなります。 詳しくは [ データビューの作成 ](/help/data-views/create-dataview.md#settings-filters) を参照してください。
+1. データビューを保存します。これにより、基になる接続のデータセットのデータ部分にセグメントが適用されます。 セグメント定義に適合しない行はデータビューから自動的に除外され、このデータビューを使用する際にAnalysis Workspaceで使用できなくなります。
 1. Admin Consoleで新しい [ 製品プロファイル ](#product-profile-admin-role) を作成し、製品プロファイルにユーザーを追加して、この特定のデータビューのみを製品プロファイルに含めます。
 
 ### 値レベルのアクセス制御
