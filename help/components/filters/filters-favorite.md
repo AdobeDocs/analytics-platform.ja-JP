@@ -1,10 +1,10 @@
 ---
 description: セグメントを使いやすく整理するための 1 つの方法として、セグメントをお気に入りに登録することができます。
 title: セグメントのお気に入りへの登録
-feature: Filters
+feature: Filters, Segments
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 18%

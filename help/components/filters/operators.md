@@ -2,9 +2,9 @@
 title: 演算子
 description: コンポーネントがセグメント内の値とどのように相互作用するかを決定します。
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-feature: Filters
+feature: Filters, Segments
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 54%
