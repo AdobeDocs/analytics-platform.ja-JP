@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
 workflow-type: tm+mt
-source-wordcount: '4716'
-ht-degree: 94%
+source-wordcount: '5057'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,16 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | --- | --- |
 | **2025 年 4 月** | |
 | 使用状況の表示と管理 | Customer Journey Analytics の使用状況を[表示](/help/connections/manage-connections.md#usage)および[管理](/help/technotes/estimate-usage.md)する方法に関するドキュメントを改訂しました |
-| コンテンツ分析 | Adobe Content Analytics の[ドキュメント](/help/content-analytics/content-analytics.md)。Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。 |
+| Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) を使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンドを明らかにし、異常を見つけ出し、コンテンツの疲労を特定して、コンテンツの漏洩からインサイトを得ることができます。 |
+| ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
+| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| **用語の変更：「フィルター」から「セグメント」へ** | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（もちろん、検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントが更新されました。 |
 | **2025年3月** | |
 | 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/qm-overview.md)からデータを収集するためのユースケースを追加しました。 |
+| 製品使用状況テンプレート | 新しい Workspace テンプレートを使用すると、組織内での Customer Journey Analytics 製品の使用方法を確認できます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
+| Customer Journey Analytics アップグレードガイド | Adobe Analytics から Customer Journey Analytics にアップグレードするためのステップバイステップガイドを生成できます。カスタムガイドの作成を開始するには、[!DNL Customer Journey Analytics] にログインし、「**[!UICONTROL Workspace**[!UICONTROL 」タブで ]**Customer Journey Analyticsにアップグレード]** を選択します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| 数値ディメンションの「値なし」行項目を更新しました | 数値ディメンションの場合、この更新により、セグメントで「値なし」ディメンション項目を使用し、「値なし」行項目に関するレポートで分類を実行できます。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025年2月** |  |
 | メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
 | BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
