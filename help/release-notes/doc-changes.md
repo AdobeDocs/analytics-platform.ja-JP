@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -20,8 +20,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025 年 4 月** | |
-| 使用状況の表示と管理 | Customer Journey Analyticsの使用方法を [ 表示 ](/help/connections/manage-connections.md#usage) および [ 管理 ](/help/technotes/estimate-usage.md) するドキュメントを修正しました |
-| コンテンツ分析 | Adobe Content Analyticsの [ ドキュメント ](/help/content-analytics/content-analytics.md)。 Content Analyticsを使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンド、異常の発見、コンテンツの疲労の特定、コンテンツの漏洩からのインサイトの取得を行うことができます。 |
+| 使用状況の表示と管理 | Customer Journey Analytics の使用状況を[表示](/help/connections/manage-connections.md#usage)および[管理](/help/technotes/estimate-usage.md)する方法に関するドキュメントを改訂しました |
+| コンテンツ分析 | Adobe Content Analytics の[ドキュメント](/help/content-analytics/content-analytics.md)。Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。 |
 | **2025年3月** | |
 | 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/qm-overview.md)からデータを収集するためのユースケースを追加しました。 |
 | **2025年2月** |  |
@@ -194,7 +194,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 日付 | アップデートの内容 |
 | --- | --- |
 | **2022年12月** |  |
-| 2022年12月16日（PT） | [Customer Journey Analytics データ使用の管理 ](/help/technotes/estimate-usage.md) に関する新しいトピック。 |
+| 2022年12月16日（PT） | [Customer Journey Analytics のデータ使用状況の管理](/help/technotes/estimate-usage.md)に関する新しいトピック。 |
 | **2022年10月** | |
 | 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
