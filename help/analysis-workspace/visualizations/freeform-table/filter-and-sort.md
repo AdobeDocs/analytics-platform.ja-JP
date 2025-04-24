@@ -4,10 +4,10 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 - テーブルから特定の行を除外
 - テーブルにフィルターを適用
-- オーディエンスフィルターを使用
+- オーディエンスセグメントの使用
 
 各方法が与える影響について詳しくは、[フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を参照してください。
 
@@ -96,7 +96,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[フィルターの概要](/help/components/filters/filters-overview.md)を参照してください。
+詳しくは、[ セグメント化の概要 ](/help/components/filters/filters-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 
