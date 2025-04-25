@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
+source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -383,17 +383,18 @@ ht-degree: 86%
 
 + Report Builder {#cja-reportbuilder}
    + [概要](../report-builder/report-buider-overview.md)
-   + [Report Builder の設定](../report-builder/report-builder-setup.md)
+   + [Report Builderの設定](../report-builder/report-builder-setup.md)
    + [データブロックの作成](../report-builder/create-a-data-block.md)
    + [Report Builder ハブ](../report-builder/report-builder-hub.md)
    + [データビューを選択](../report-builder/select-data-view.md)
-   + [日付範囲を選択します。](../report-builder/select-date-range.md)
+   + [日付範囲を選択](../report-builder/select-date-range.md)
    + [セグメントの操作](../report-builder/work-with-filters.md)
-   + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
+   + [ディメンションのフィルター](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
    + [ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
-   + [Report Builder の設定](../report-builder/report-builder-settings.md)
+   + [Report Builder設定](../report-builder/report-builder-settings.md)
+
 
 + レポートアクティビティマネージャー {#reporting-activity-manager}
    + [概要](../reporting-activity-manager/reporting-activity-overview.md)
