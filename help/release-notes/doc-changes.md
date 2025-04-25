@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
+source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
 workflow-type: tm+mt
-source-wordcount: '5057'
-ht-degree: 91%
+source-wordcount: '5088'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025 年 4 月** | |
+| 製品分析のユースケース | [Customer Journey Analyticsの製品分析 ](/help/use-cases/product-analysis.md) を追加しました。 |
+| 共有指標およびディメンション | [ 共有指標とディメンション ](/help/data-views/shared-metrics-dimensions/smd-overview.md) 機能に関するドキュメントを追加しました。 |
+| Report Builder | [Report Builder](/help/report-builder/report-buider-overview.md) のドキュメントを確認し、更新しました。 |
 | 使用状況の表示と管理 | Customer Journey Analytics の使用状況を[表示](/help/connections/manage-connections.md#usage)および[管理](/help/technotes/estimate-usage.md)する方法に関するドキュメントを改訂しました |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) を使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンドを明らかにし、異常を見つけ出し、コンテンツの疲労を特定して、コンテンツの漏洩からインサイトを得ることができます。 |
 | ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 |

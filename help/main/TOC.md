@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1223'
 ht-degree: 83%
 
 ---
@@ -148,6 +148,9 @@ ht-degree: 83%
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
    + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
+   + 共有指標およびディメンション{#shared-metrics-dimensions}
+      + [概要](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+      + [編集者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + ツール {#tools}
    + アセットを転送 {#asset-transfer}
@@ -165,7 +168,7 @@ ht-degree: 83%
       + [概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [プロジェクト内のコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [プロジェクトにコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspaceのフォルダー {#workspace-folders}
          + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -424,6 +427,36 @@ ht-degree: 83%
 
 + ユースケース {#cja-usecases}
    + [Customer Journey Analytics のユースケース](../use-cases/cja-usecases.md)
+   + Adobe Analytics データ {#aa-data}
+      + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
+      + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
+   + B2B {#b2b}
+      + [B2B プロジェクトの例](../use-cases/b2b/example.md)
+   + 複雑なデータ {#complex-data}
+      + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
+   + クロスチャネルデータ {#cross-channel}
+      + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
+      + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
+   + データの書き出し {#data-export}
+      + [概要](../use-cases/data-export/overview.md)
+      + [BI 拡張機能](../use-cases/data-export/bi-extension.md)
+      + [データセットの書き出し](../use-cases/data-export/export-datasets.md)
+      + [フルテーブルの書き出し](../use-cases/data-export/export-full-table.md)
+      + [クエリサービスとデータセットの書き出し](../use-cases/data-export/queryservice-export-datasets.md)
+   + データ取り込み {#data-ingestion}
+      + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
+      + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + データビュー {#data-views}
+      + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
+      + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [概要データの使用](/help/use-cases/data-views/summary-data.md)
+      + [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
+   + 派生フィールド {#derived-fields}
+      + [目標に関するレポート](../use-cases/goals-using-derived-fields.md)
+   + 製品分析 {#product-analysis}
+      + [製品分析](/help/use-cases/product-analysis.md)
+   + ステッチ {#stitching}
+      + [共有デバイス](/help/use-cases/stitching/shared-devices.md)
    + サードパーティデータ {#third-party}
       + [概要](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
@@ -437,34 +470,6 @@ ht-degree: 83%
          + [ヒートマップの使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [ソースコネクタ](/help/use-cases/third-party/quantum-metric/source-connector.md)
-   + データ取り込み {#data-ingestion}
-      + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
-      + [Experience Platform オーディエンスの取り込みと使用](../use-cases/data-ingestion/ingest-aep-segments.md)
-   + データビュー {#data-views}
-      + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
-      + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
-      + [概要データの使用](/help/use-cases/data-views/summary-data.md)
-      + [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
-   + データの書き出し {#data-export}
-      + [概要](../use-cases/data-export/overview.md)
-      + [BI 拡張機能](../use-cases/data-export/bi-extension.md)
-      + [データセットの書き出し](../use-cases/data-export/export-datasets.md)
-      + [フルテーブルの書き出し](../use-cases/data-export/export-full-table.md)
-      + [クエリサービスとデータセットの書き出し](../use-cases/data-export/queryservice-export-datasets.md)
-   + B2B {#b2b}
-      + [B2B プロジェクトの例](../use-cases/b2b/example.md)
-   + クロスチャネルデータ {#cross-channel}
-      + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
-      + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics データ {#aa-data}
-      + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
-      + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
-   + 複雑なデータ {#complex-data}
-      + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
-   + ステッチ {#stitching}
-      + [共有デバイス](/help/use-cases/stitching/shared-devices.md)
-   + 派生フィールド {#derived-fields}
-      + [目標に関するレポート](../use-cases/goals-using-derived-fields.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
