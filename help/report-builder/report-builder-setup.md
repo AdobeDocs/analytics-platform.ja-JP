@@ -6,20 +6,20 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 87%
+source-wordcount: '529'
+ht-degree: 26%
 
 ---
 
-# Report Builder の設定
+# Report Builderの設定
 
-Excel のアドインメニューを使用して、Report Builderにすばやくアクセスできます。
+この記事では、Microsoft Excel でReport Builder for Customer Journey Analyticsを使用するための要件の概要を説明します。 アドインのインストール方法とセットアップ方法について説明します。
 
 ## 要件
 
-Customer Journey Analytics の Report Builder は、次のオペレーティングシステムおよび web ブラウザーでサポートされています。
+Customer Journey AnalyticsのReport Builderは、次のオペレーティングシステムおよび web ブラウザーでサポートされています。
 
 ### macOS
 
@@ -31,20 +31,20 @@ Customer Journey Analytics の Report Builder は、次のオペレーティン�
 - Windows 10、バージョン 1904 以降
 - Excel バージョン 2106 以降
 
-  すべての Windows デスクトップ Excel ユーザーは、アドインを使用するために Microsoft Edge Webview2 をインストールする必要があります。コントローラーをインストールするには：
+  すべての Windows デスクトップ Excel ユーザーは、アドインを使用するために Microsoft Edge Webview2 をインストールする必要があります。次の手順でインストールします。
 
-   1. <https://aka.ms/webview2installer> にアクセスします。
-   1. Evergreen スタンドアロンインストーラーを選択してダウンロードします。
-   1. インストールプロンプトに従います。
+   1. <https://developer.microsoft.com/en-us/microsoft-edge/webview2/> にアクセスします。
+   1. プラットフォームに適したバージョンの **[!UICONTROL Evergreen スタンドアロンインストーラー]** を選択してダウンロードします。
+   1. インストーラーを実行し、インストールプロンプトに従います。
 
 ### Web Office
 
-- すべてのブラウザーとバージョンをサポート
+- すべてのブラウザーとバージョンをサポートしています。
 
 
 ## Report Builder Excel アドイン
 
-Customer Journey Analytics の Report Builder を使用するには、Report Builder Excel アドインをインストールする必要があります。Report Builder Excel アドインをインストールすると、開いている Excel ワークブック内から Report Builder にアクセスできます。
+Report Builder for Customer Journey Analyticsを使用するには、Report Builder Excel アドインをインストールします。 Report Builder Excel アドインをインストールすると、開いている Excel ワークブック内からReport Builderにアクセスできます。
 
 ### Report Builder アドインのダウンロードとインストール
 
@@ -52,68 +52,70 @@ Report Builder アドインをダウンロードしてインストールする�
 
 1. Excel を起動し、新しいワークブックを開きます。
 
-1. 挿入／アドインの取得を選択します。
+1. メインメニューから **[!UICONTROL 挿入]**/**[!UICONTROL アドイン]**/**[!UICONTROL アドインを取得]** を選択します。
 
-1. Office アドインダイアログで、「ストア」タブを選択します。
+1. Office アドインダイアログで、「**[!UICONTROL ストア]**」タブを選択します。
 
-1. 「Report Builder」を検索し、「追加」をクリックします。
+1. `Report Builder` を検索し、「**[!UICONTROL 追加]**」を選択します。
 
-1. 「ライセンス条件とプライバシーポリシー」ダイアログボックスで、「続行」をクリックします。
+1. ライセンス条項とプライバシーポリシーのダイアログボックスで、「**[!UICONTROL 続行]**」を選択します。
 
-**「ストア」タブが表示されない場合**
+**[!UICONTROL ストア]** タブが表示されない場合：
 
-1. Excel で、ファイル／アカウント／設定を管理を選択します。
+1. Excel で、メインメニューから **[!UICONTROL ファイル]**/**[!UICONTROL アカウント]**/**[!UICONTROL 設定を管理]** を選択します。
 
-1. 「オプションの接続されたエクスペリエンスを有効にする」の横のボックスをオンにします。
+1. **[!UICONTROL オプションの接続されたエクスペリエンスを有効にする]** の横のチェックボックスをオンにします。
 
 1. Excel を再起動します。
 
-**組織が Microsoft ストアへのアクセスをブロックしている場合**
+Microsoft ストアへのアクセスがブロックされている場合：
 
-IT またはセキュリティチームに連絡して、Report Builder アドインの承認をリクエストします。承認されたら、Office アドインダイアログで、「管理者による管理」タブを選択します。
+- IT またはセキュリティチームに連絡して、Report Builder アドインの承認をリクエストします。 承認されたら、Office **[!UICONTROL アドイン]** ダイアログで、「**[!UICONTROL 管理者による管理]**」タブを選択します。
 
-![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png)
+  ![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png){zoomable="yes"}
 
-Report Builder アドインをインストールすると、Report Builder アイコンが Excel の「ホーム」タブのリボンに表示されます。Excel リボンの「ホーム」タブに「Report Builder」アイコンが表示されます。
+Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ]**タブの下に ](/help/assets/icons/AdobeLogoRedOnWhite.svg)AdobeLogoRedonWhite**[!UICONTROL  **[!UICONTROL Report Builder]** アイコンが表示されます。
 
-![Excel のReport Builderアイコン ](./assets/rb_app_icon.png)
+![Excel の「Report Builder」アイコン ](./assets/rb_app_icon.png){zoomable="yes"}
+
 
 ## Report Builder へのログイン
 
-使用しているプラットフォームまたはブラウザーに Report Builder for Excel アドインをインストールした後、次の手順に従って Report Builder にログインします。
+使用しているプラットフォームまたはブラウザーにReport Builder for Excel アドインをインストールしたら、次の手順に従ってReport Builderにログインします。
 
 1. Excel ワークブックを開きます。
 
-1. Report Builder アイコンをクリックして、Report Builder を起動します。
+1. ![AdobeLogoRedOnWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** を選択して、Report Builderを起動します。
 
-1. Adobe Report Builder ツールバーで、「**ログイン**」をクリックします。
+1. Adobe Report Builderのツールバーで「**[!UICONTROL ログイン]**」を選択します。
 
-   ![ 「Report Builderログイン」ボタンをクリックします。](./assets/rb_login.png)
+   ![ 「Report Builderへのログイン」ボタンをクリックします。](./assets/rb_login.png){zoomable="yes"}
 
-1. Adobe Experience ID アカウント情報を入力します。アカウント情報は、Customer Journey Analytics の資格情報と一致する必要があります。
+1. Adobe アカウント情報を入力します。 アカウント情報は、Customer Journey Analytics の資格情報と一致する必要があります。
 
-   ![ ログインアイコンと組織。](./assets/image4.png)
+   ![ ログインアイコンと組織。](./assets/image4.png){zoomable="yes"}
 
 ログインすると、パネルの上部にログインアイコンと組織が表示されます
 
+
 ## 組織の切り替え
 
-最初のログインでは、プロファイルに割り当てられたデフォルトの組織にログインすることになります。
+最初のログインでは、プロファイルに割り当てられたデフォルトの組織、またはログインフローの一部として選択した組織にログインすることになります。
 
-1. ログイン時に表示された組織の名前をクリックします。
+1. ログイン時に表示される組織の名前を選択します。
 
 1. 使用可能な組織のリストから組織を選択します。自身がアクセス権を持っている組織のみが表示されます。
 
-   ![ アクセスできる組織のリスト ](./assets/image5.png)
+   ![ アクセスできる組織のリスト ](./assets/image5.png){zoomable="yes"}
 
 ## ログアウト
 
-ユーザープロファイルで Report Builder からログアウトできます。
+Report Builderからログアウトするには：
 
 1. 開いているワークブックに加えた変更を保存します。
 
-1. アバターアイコンをクリックして、ユーザープロファイルを表示します。
+1. 「アバター」アイコンを選択して、ユーザープロファイルを表示します。
 
-   ![ ユーザープロファイルのアバターと「ログアウト」ボタン ](./assets/image6.png)
+   ![ ユーザープロファイルのアバターと「ログアウト」ボタン ](./assets/image6.png){zoomable="yes"}
 
-1. 「**ログアウト**」をクリックします。
+1. **[!UICONTROL ログアウト]** を選択します。

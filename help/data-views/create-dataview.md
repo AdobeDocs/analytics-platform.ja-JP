@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -191,7 +191,7 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 ### 設定（セグメント）
 
-データビュー全体に適用するセグメントを追加できます。 このセグメントは、Workspaceで実行するすべてのレポートに適用されます。 左側のパネルのリストから「[!UICONTROL  セグメントを追加 ]」フィールドにセグメントをドラッグします。
+データビュー全体に適用するセグメントを追加できます。 このセグメントは、Workspaceで実行するすべてのレポートに適用されます。 左側のパネルのリストから「**[!UICONTROL セグメントを追加]**」フィールドにセグメントをドラッグします。
 
 ### セッション設定
 
