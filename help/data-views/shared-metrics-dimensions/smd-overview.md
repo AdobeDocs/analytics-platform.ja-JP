@@ -2,7 +2,7 @@
 title: 共有指標とディメンションの概要
 description: 複数のデータビューで同じディメンションまたは指標の参照を使用します。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -89,7 +89,7 @@ ht-degree: 0%
 ![ 使用可能なアクションのプレビュー ](assets/smd-actions.png)
 
 * ![ 鉛筆アイコン ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]**：選択したディメンションと指標を [ 共有コンポーネントエディター ](shared-component-editor.md) で開くと、[ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を調整できます。 編集する複数のコンポーネントを選択した場合、それらはすべてコンポーネントエディターで開かれます。 コンポーネントエディターでコンポーネントを Shift キーを押しながらクリックすると、複数のコンポーネントの同じフィールドを編集できます。
-* ![ 共有アイコン ](/help/assets/icons/Share.svg)**[!UICONTROL データビューを共有]**：選択した接続内で使用可能なすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントを使用可能にする各データビューのチェックボックスをオンにし、「**[!UICONTROL 共有]**」を選択します。
-* ![ 共有を解除アイコン ](/help/assets/icons/SaveTo.svg)**[!UICONTROL データビューの共有を解除]**：このコンポーネントが現在共有されているすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントの可用性を削除する各データビューのチェックボックスをオンにし、「**[!UICONTROL 共有しない]**」を選択します。
+* ![ 共有アイコン ](/help/assets/icons/ShareAlt.svg)**[!UICONTROL データビューを共有]**：選択した接続内で使用可能なすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントを使用可能にする各データビューのチェックボックスをオンにし、「**[!UICONTROL 共有]**」を選択します。
+* ![ 共有を解除アイコン ](/help/assets/icons/SaveTo.svg)**[!UICONTROL データビューから共有を解除]**：このコンポーネントが現在共有されているすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントの可用性を削除する各データビューのチェックボックスをオンにし、「**[!UICONTROL 共有しない]**」を選択します。
 * ![ 複製アイコン ](/help/assets/icons/Copy.svg)**[!UICONTROL 複製]**：選択したコンポーネントのコピーを作成します。 重複したコンポーネントに対して、新しいコンポーネント ID が生成されます。
 * ![ 削除アイコン ](/help/assets/icons/Delete.svg)**[!UICONTROL 削除]**：選択したコンポーネントをインターフェイスから削除します。 選択したコンポーネントがデータビューと共有されている場合、共有は解除されます。
