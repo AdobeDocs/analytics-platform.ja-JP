@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 
   次の例では、名前空間と ID によりプライマリ ID リストが並べ替えられ、最終的に選択された ID が表示されます。
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>名前空間</th>
        <th>ID リスト</th>
@@ -44,7 +44,7 @@ ht-degree: 7%
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>並べ替えられた ID リスト</th>
       <th>選択した ID</th>
@@ -60,7 +60,7 @@ ht-degree: 7%
 
   以下の例では、名前空間と ID により、選択された名前空間（ECID）で並べ替えられた ID リストが作成され、最後に選択された ID が作成されます。
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>名前空間</th>
        <th>ID リスト</th>
@@ -75,7 +75,7 @@ ht-degree: 7%
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>並べ替えられた ID リスト</th>
       <th>選択した ID</th>
