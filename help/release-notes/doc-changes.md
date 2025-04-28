@@ -4,7 +4,7 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
+source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
 workflow-type: tm+mt
 source-wordcount: '5088'
 ht-degree: 90%
@@ -27,7 +27,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) を使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンドを明らかにし、異常を見つけ出し、コンテンツの疲労を特定して、コンテンツの漏洩からインサイトを得ることができます。 |
 | ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
 | メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| **用語の変更：「フィルター」から「セグメント」へ** | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（もちろん、検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントが更新されました。 |
+| 用語の変更：「フィルター」から「セグメント」 | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（もちろん、検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントが更新されました。 |
 | **2025年3月** | |
 | 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/qm-overview.md)からデータを収集するためのユースケースを追加しました。 |
 | 製品使用状況テンプレート | 新しい Workspace テンプレートを使用すると、組織内での Customer Journey Analytics 製品の使用方法を確認できます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
