@@ -4,9 +4,10 @@ description: フィールドベースのステッチの説明
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1779'
 ht-degree: 15%
 
 ---
@@ -16,6 +17,76 @@ ht-degree: 15%
 フィールドベースのステッチでは、イベントデータセットと、そのデータセットの永続 ID （cookie）および一時的な ID （ユーザー ID）を指定します。 フィールドベースのステッチでは、新しいステッチされたデータセットに新しいステッチ ID 列が作成され、その特定の永続 ID の一時的な ID を持つ行に基づいて、このステッチ ID 列が更新されます。 <br/>Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連する ID グラフへのアクセス権を持たない場合）、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合にも使用できます。
 
 ![フィールドベースのステッチ](/help/stitching/assets/fbs.png)
+
+
+## identityMap
+
+フィールドベースのステッチでは、次のシナリオで ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)[`identifyMap` フィールドグループの使用をサポートしています。
+
+- 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
+   - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
+   - 単一の名前空間に複数のプライマリ ID が見つかった場合は、辞書学的に利用できる最初のプライマリ ID が選択されます。
+
+  次の例では、名前空間と ID によりプライマリ ID リストが並べ替えられ、最終的に選択された ID が表示されます。
+
+  <table>
+     <tr>
+       <th>名前空間</th>
+       <th>ID リスト</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>並べ替えられた ID リスト</th>
+      <th>選択した ID</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+
+- 名前空間 `identityMap` 使用して、persistentID、transientID、またはその両方を定義します。
+   - persistentID または transientID の複数の値が `identityMap` 名前空間で見つかった場合は、最初の辞書編集可能な値が使用されます。
+   - persistentID と transientID の名前空間は、相互に排他的にする必要があります。
+
+  以下の例では、名前空間と ID により、選択された名前空間（ECID）で並べ替えられた ID リストが作成され、最後に選択された ID が作成されます。
+
+  <table>
+     <tr>
+       <th>名前空間</th>
+       <th>ID リスト</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>並べ替えられた ID リスト</th>
+      <th>選択した ID</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
 
 ## フィールドベースのステッチの仕組み
 
@@ -139,21 +210,24 @@ ht-degree: 15%
 
 - ステッチを適用するAdobe Experience Platformのイベントデータセットには、訪問者の識別に役立つ次の 2 つの列が必要です。
 
-   - **永続 ID**：各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
-   - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 このデータセットをCustomer Journey Analytics接続内に含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
+   - **永続 ID**：各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
+   - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
-- 両方の列（永続 ID と一時 ID）は、ステッチするデータセットのスキーマで、ID 名前空間を持つ ID フィールドとして定義する必要があります。 [`identityMap` フィールドグループを使用してReal-time Customer Data Platformで ID ステッチを使用する場合 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)、ID 名前空間を使用して ID フィールドを追加する必要があります。 Customer Journey Analyticsのステッチは ID フィールドグループをサポートしていないので、この `identityMap` フィールドの ID は必須です。 スキーマに ID フィールドを追加し、同時に `identityMap` フィールドグループを使用する場合は、追加の ID フィールドをプライマリ ID として設定しないでください。 追加の ID フィールドをプライマリ ID として設定すると、Real-time Customer Data Platformに使用される `identityMap` フィールドグループに干渉します。
+<!--
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+
+-->
 
 ## 制限事項
 
 次の制限は、特にフィールドベースのステッチに適用されます。
 
 - 現在のキー変更機能は、1 つの手順（永続 ID から一時的な ID への変更）に制限されます。複数手順でのキーの変更（例えば、永続 ID を一時的な ID に、その後別の一時的な IDに変更）はサポートされません。
-- デバイスが複数のユーザーによって共有されていて、ユーザー間のトランジションの合計が 50,000 を超えている場合、Customer Journey Analyticsはそのデバイスに対するデータのステッチを停止します。
+- デバイスが複数のユーザーによって共有されており、ユーザー間のトランジションの合計が 50,000 を超えている場合、Customer Journey Analyticsはそのデバイスに対するデータのステッチを停止します。
 - 組織で使用されているカスタム ID マップはサポートされていません。
-- ステッチでは大文字と小文字が区別されます。 Analytics ソースコネクタを通じて生成されたデータセットの場合、Adobeでは、一時的な ID フィールドに適用される VISTA ルールまたは処理ルールを確認することをお勧めします。 これにより、これらのルールによって同じ ID の新しいフォームが導入されることがなくなります。 例えば、VISTA ルールまたは処理ルールにより、イベントの一部のみで一時的な ID フィールドが小文字になっていないか確認する必要があります。
+- ステッチでは大文字と小文字が区別されます。 Analytics ソースコネクタを通じて生成されたデータセットの場合、Adobeでは、一時的な ID フィールドに適用される VISTA ルールまたは処理ルールのレビューを行うことをお勧めします。 これにより、これらのルールによって同じ ID の新しいフォームが導入されることがなくなります。 例えば、VISTA ルールまたは処理ルールにより、イベントの一部のみで一時的な ID フィールドが小文字になっていないか確認する必要があります。
 - ステッチでフィールドの結合や連結は行われません。
 - 一時的な ID フィールドには、1 種類の ID （1 つの名前空間からの ID）を含める必要があります。 例えば、一時的な ID フィールドにログイン ID と電子メール ID の組み合わせを含めることはできません。
 - 同じ永続 ID の同じタイムスタンプで複数のイベントが発生しても、一時 ID フィールドに異なる値がある場合、ステッチはアルファベット順に基づいて ID を選択します。 したがって、永続 ID A に同じタイムスタンプの 2 つのイベントがあり、1 つのイベントが Bob を指定し、もう 1 つが Ann を指定している場合、ステッチは Ann を選択します。
 - 一時的な ID にプレースホルダー値（例：`Undefined`）が含まれるシナリオでは注意が必要です。 詳しくは、[FAQ](faq.md) を参照してください。
-
+- persistentID と transientID の両方に同じ名前空間を使用することはできません。名前空間は相互に排他的である必要があります。

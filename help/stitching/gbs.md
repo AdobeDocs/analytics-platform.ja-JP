@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1540'
 ht-degree: 7%
 
 ---
@@ -15,9 +15,77 @@ ht-degree: 7%
 # グラフベースのステッチ
 
 
-グラフベースのステッチでは、イベントデータセットと、そのデータセットの一時的な ID （ユーザー ID）の永続 ID （cookie）および名前空間を指定します。 グラフベースのステッチでは、新しいステッチされたデータセットのステッチ ID に新しい列が作成されます。 次に、永続 ID を使用して、指定された名前空間を使用してExperience PlatformID サービスから ID グラフをクエリし、ステッチされた ID を更新します。
+グラフベースのステッチでは、イベントデータセットと、そのデータセットの一時的な ID （ユーザー ID）の永続 ID （cookie）および名前空間を指定します。 グラフベースのステッチでは、新しいステッチされたデータセットのステッチ ID に新しい列が作成されます。 次に、永続 ID を使用して、指定された名前空間を使用してExperience Platform ID サービスから ID グラフをクエリし、ステッチされた ID を更新します。
 
 ![ グラフベースのステッチ ](/help/stitching/assets/gbs.png)
+
+## identityMap
+
+グラフベースのステッチでは、次のシナリオで [`identifyMap` フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+
+- 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
+   - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
+   - 単一の名前空間に複数のプライマリ ID が見つかった場合は、辞書学的に利用できる最初のプライマリ ID が選択されます。
+
+  次の例では、名前空間と ID によりプライマリ ID リストが並べ替えられ、最終的に選択された ID が表示されます。
+
+  <table>
+     <tr>
+       <th>名前空間</th>
+       <th>ID リスト</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>並べ替えられた ID リスト</th>
+      <th>選択した ID</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+- 名前空間 `identityMap` 使用して persistentID を定義します。
+   - persistentID の複数の値が `identityMap` 名前空間で見つかった場合、最初の辞書的に利用可能な ID が使用されます。
+
+  以下の例では、名前空間と ID により、選択された名前空間（ECID）で並べ替えられた ID リストが作成され、最後に選択された ID が作成されます。
+
+  <table>
+     <tr>
+       <th>名前空間</th>
+       <th>ID リスト</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>並べ替えられた ID リスト</th>
+      <th>選択した ID</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
+
 
 ## グラフベースのステッチの仕組み
 
@@ -133,13 +201,13 @@ ht-degree: 7%
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurementライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
 - 永続 ID も、スキーマで [ID として定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
-- Experience PlatformID サービスの ID グラフには、ステッチ中に **一時的な ID** を解決するために使用する名前空間（`Email` や `Phone` など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
+- Experience Platform ID サービスの ID グラフには、ステッチ中に **一時的な ID** を解決するために使用する名前空間（`Email` や `Phone` など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
 >
->グラフベースのステッチに **Real-time Customer Data Platform ライセンスは必要ありません**。 Customer Journey Analyticsの **Prime** パッケージ以降には、必要なExperience Platform ID サービス使用権限が含まれています。
+>グラフベースのステッチに Real-time Customer Data Platform ライセンスは必要ありません **要ありません**。 Customer Journey Analyticsの **Prime** パッケージ以降には、必要なExperience Platform ID サービス使用権限が含まれています。
 
 
 ## 制限事項
@@ -148,7 +216,7 @@ ht-degree: 7%
 
 - 指定された名前空間を使用して一時的な ID をクエリする場合、タイムスタンプは考慮されません。 そのため、永続的 ID が、以前のタイムスタンプを持つレコードからの一時的な ID でステッチされる可能性があります。
 - グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[ 共有デバイス ](/help/use-cases/stitching/shared-devices.md) を参照してください。
-- ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data PlatformのようなExperience Platformアプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
+- ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data Platform などのExperience Platform アプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
 - [ID サービスガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [ 静的制限 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
    - グラフ内の ID の最大数：50。
    - 単一のバッチ取得での ID へのリンクの最大数：50。

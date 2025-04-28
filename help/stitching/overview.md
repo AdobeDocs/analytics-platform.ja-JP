@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '739'
 ht-degree: 15%
 
 ---
@@ -22,11 +22,11 @@ ID のステッチ（または単にステッチ）は、クロスチャネル�
 
 データセットを同様のユーザー ID と組み合わせると、アトリビューションはデバイスやチャネルにも伝わります。例えば、ユーザーがデスクトップコンピューターの広告を通じて最初にサイトを訪問したとします。また、注文で問題が発生し、その解決方法を求めてカスタマーサービスチームに電話をしたとします。クロスチャネル分析を使用すると、コールセンターイベントを、訪問者が最初にクリックした広告に関連付けることができます。
 
-残念ながら、Customer Journey Analyticsの連携に含まれるすべてのイベントベースのデータセットが、標準ではこのアトリビューションをサポートするデータが十分に入力されているわけではありません。 特に、web ベースまたはモバイルベースのエクスペリエンスデータセットには、多くの場合、すべてのイベントで使用できる実際のユーザー ID 情報がありません。
+残念ながら、Customer Journey Analyticsの接続に含まれるすべてのイベントベースのデータセットに、このアトリビューションをサポートするデータが標準で十分に入力されているわけではありません。 特に、web ベースまたはモバイルベースのエクスペリエンスデータセットには、多くの場合、すべてのイベントで使用できる実際のユーザー ID 情報がありません。
 
 ステッチを使用すると、1 つのデータセットの行内の ID を再入力できるので、各イベントでユーザー ID （ステッチされた ID）が使用可能になります。 ステッチでは、認証済みセッションと未認証セッションの両方からのユーザーデータを調べて、ステッチされた ID として使用できる共通の一時的な ID （ユーザー ID）値を決定します。 このキー更新により、異なるレコードを単一のステッチ ID に解決し、デバイスや cookie レベルではなく、ユーザーレベルで分析できます。
 
-Customer Journey Analyticsでは、[ フィールドベースのステッチ ](fbs.md) および [ グラフベースのステッチ ](gbs.md) の 2 種類のステッチをサポートしています。
+Customer Journey Analyticsでは 2 種類のステッチ（[ フィールドベースのステッチ ](fbs.md) および [ グラフベースのステッチ ](gbs.md) をサポートしています。
 
 ## 前提条件
 
@@ -41,7 +41,7 @@ Customer Journey Analyticsでは、[ フィールドベースのステッチ ](f
 - 目的のデータをAdobe Experience Platformに読み込みます。
 
    - Adobe Analytics データについては、[Customer Journey AnalyticsでのAdobe Analytics レポートスイートデータの利用 ](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) を参照してください。
-   - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)を参照してください。
+   - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)を参照してください。
 
 Customer Journey Analytics接続の定義の一環として、1 つ以上のステッチされたデータセットを、コールセンターデータなどの他のデータセットと組み合わせると、クロスチャネル分析のメリットが得られます。 この接続設定では、ステッチされた ID と同様に、他のデータセットに既にすべての行に人物 ID が含まれていることを前提としています。
 
@@ -50,13 +50,12 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 
 >[!IMPORTANT]
 >
->- 永続 ID として `identityMap` を使用するサポートはありません。 データセット内の特定の識別子（例えば `ECID`）を永続 ID として定義する必要があります。
 >
 >- ソースイベントデータセットスキーマに加えた変更を、新しい関連付けられたデータセットスキーマにも適用します。適用しないと、関連付けられたデータセットが破損します。
 >
 >- ソースデータセットを削除すると、ステッチされたデータセットは、処理を停止し、システムによって削除されます。
 >
->- データ使用ラベルは、ステッチされたデータセットスキーマに自動的には生成されません。 ソースデータセットスキーマにデータ使用ラベルが適用されている場合は、ステッチされたデータセットスキーマにこれらのデータ使用ラベルを手動で適用する必要があります。 詳しくは、[Experience Platformでのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) を参照してください。
+>- データ使用ラベルは、ステッチされたデータセットスキーマに自動的には生成されません。 ソースデータセットスキーマにデータ使用ラベルが適用されている場合は、ステッチされたデータセットスキーマにこれらのデータ使用ラベルを手動で適用する必要があります。 詳しくは [Experience Platformでのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) を参照してください。
 
 ステッチは画期的で堅牢な機能ですが、使用方法に制限があります。
 

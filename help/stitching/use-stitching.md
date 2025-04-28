@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 10%
+source-wordcount: '462'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 | | Customer Journey Analytics<br/> 選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | 使用可能なステッチ方法 | <li>フィールドベースのステッチ</li> | <li>フィールドベースのステッチ</li><li>グラフベースのステッチ</li> | <li>フィールドベースのステッチ</li><li>グラフベースのステッチ</li> |
-| 1 回限りのステッチバックフィル期間 | 13 ヶ月 | 13 ヶ月 | 25 ヶ月 |
+| 1 回限りのステッチバックフィル期間 | 13 か月 | 13 か月 | 25 か月 |
 | ルックバックウィンドウと再生頻度 | <li>1 日、毎日</li><li>最大 7 日間、毎週</li> | <li>1 日、毎日</li><li>最大 14 日間、毎週</li> | <li>1 日、毎日</li><li>最大 30 日間、毎週</li> |
 | ステッチできるデータセットの最大数 | 5 | 15 | 50 |
 
@@ -34,7 +34,12 @@ ht-degree: 10%
    - ステッチを有効にするリクエスト。
    - キーを変更するデータセットのデータセット ID。
    - 目的のデータセットの永続 ID の列名（ID パスと名前空間） （すべての行に表示される識別子）。
-   - フィールドベースのステッチの場合、目的のデータセットの一時的な ID の列名（ユーザー識別子。接続のコンテキストでデータセット間のリンクとしても機能します）。 グラフベースのステッチの場合、ID グラフのクエリに使用する ID 名前空間。
+   - データセットが `identityMap` をサポートしている場合：
+      - フィールドベースのステッチの場合は、永続 ID と一時 ID の両方の名前空間を指定します。
+      - グラフベースのステッチの場合は、永続 ID の名前空間と、ID グラフのクエリに使用する ID 名前空間を指定します。
+   - データセットが `identityMap` をサポートしていない場合：
+      - フィールドベースのステッチの場合、目的のデータセットの一時的な ID の列名（ユーザー識別子。接続のコンテキストでデータセット間のリンクとしても機能します）。
+      - グラフベースのステッチの場合、ID グラフのクエリに使用する ID 名前空間。
    - ルックバックウィンドウと再生頻度の環境設定。 [options](#options) については、Customer Journey Analytics パッケージを参照してください。
    - サンドボックス名
 
