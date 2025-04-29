@@ -5,18 +5,25 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 100%
+source-wordcount: '255'
+ht-degree: 10%
 
 ---
 
 # 接続の概要
 
-接続を使用すると、Customer Journey Analytics 製品管理者は、イベント、ルックアップ、プロファイルデータセットなど、様々な [!DNL Adobe Experience Platform] データソースとの接続を確立できます。これらの接続により、接続から派生データビューへのデータの統合を有効にすることができます。接続は CJA の基盤であり、[!DNL Experience Platform] ソースデータセットから作成されます。また、接続へのアクセス権があれば、接続マネージャーを表示し、そこで接続を構成する基になるデータセットを確認したり、重要な編集や設定の選択を行ったりすることもできます。
+接続を使用すると、Customer Journey Analytics製品管理者は、イベント、ルックアップ、プロファイル、概要データセットなど、様々な [!DNL Adobe Experience Platform] データソースとの接続を確立できます。 これらの接続により、接続から派生データビューへのデータの統合が可能になります。 接続はCustomer Journey Analyticsの基盤であり、ソースデータセットから作成 [!DNL Experience Platform] れます。
 
-接続管理へのアクセスを、コア管理グループに制限することをお勧めします。接続レベルでの設定は、Customer Journey Analytics に取り込まれるデータ量の割り当てに関して契約上の影響を受けます。
+>[!IMPORTANT]
+>
+>複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
+
+
+## 接続ワークフロー
+
+![ 接続ワークフロー ](assets/connection-workflow.png)
 
 <!-- Outdated interface 
 
@@ -28,23 +35,24 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 -->
 
-## 必要な権限
+接続ワークフローの概要レベルでは、次の操作を行うことができます。
 
-Customer Journey Analytics 接続を作成するには、次の権限が必要です。権限について詳しくは、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) および [Adobe Experience Platform 権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)のドキュメントを参照してください。
+| インターフェイス | 説明 |
+|:---:|---|
+| ➊ | 接続マネージャーから、Customer Journey Analyticsの [ 接続と全体的な使用状況の管理 ](manage-connections.md) を行います。 |
+| ➋ | [ 取り込まれた、スキップされた、削除されたデータセットレコードなど ](manage-connections.md#connection-details) 接続の詳細を調べる」。 |
+| ➌ | [ 周期的なデータウィンドウや、接続に含まれるデータセットなど ](create-connection.md#create-or-edit-a-connection) 接続の設定の作成または編集。 |
+| ➍ | [ 接続へのデータセットの追加 ](create-connection.md#add-datasets)。 接続には少なくとも 1 つのイベントまたは概要データセットが必要ですが、様々なイベント、プロファイル、ルックアップ、概要データセットを含めることができます。 |
+| ➎ | 追加するデータセットの [ 設定を指定 ](create-connection.md#dataset-settings) します。 そのため、共通のユーザーベースまたは [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} アカウントベースの識別子に基づいて、様々なデータセットをどのようにリンクするかを決定できます。 |
+| ➏ | [ 既存のデータセットの設定の編集 ](create-connection.md#edit-a-dataset)。 後の段階で、データセット設定を常に再検討できます。 |
 
-### Adobe Admin Console 内：
 
-* Customer Journey Analytics：製品管理者
-* Adobe Experience Platform：*AEP-Default-All-Users* という名前の製品プロファイルに追加されました
 
-### Adobe Experience Platform 権限内：
+## アクセス制御
 
-* データモデリング：ビュースキーマ、スキーマの管理
-* データ管理：ビューデータセット，データセットの管理
-* データ取り込み：ソースの管理
-* Identity Management：ID 名前空間の表示
-* サンドボックス：関連する Customer Journey Analytics 接続で使用されるサンドボックス
+接続管理へのアクセスは、コア管理グループに制限する必要があります。 接続設定には、Customer Journey Analyticsに取り込まれるデータのボリューム割り当てに関する契約上の影響があります。
 
->[!IMPORTANT]
+>[!MORELIKETHIS]
 >
->複数の [!DNL Experience Platform] データセットを 1 つの接続に組み合わせることができます。
+>[ アクセス制御 ](/help/technotes/access-control.md)。
+

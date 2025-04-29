@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
 workflow-type: tm+mt
-source-wordcount: '3873'
-ht-degree: 75%
+source-wordcount: '3947'
+ht-degree: 74%
 
 ---
 
@@ -217,6 +217,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 最大値を表示 | 最大値のラベルをオーバーレイして、指標のピークをすばやく強調表示します。 メモ：最大値は、ディメンション内のすべての値ではなく、ビジュアライゼーション内に表示されたデータポイントから得られます。 |
 | | 近似曲線を表示 | 回帰または移動平均の近似曲線を線系列に表示します。近似曲線は、データにより明確なパターンを表現するのに役立ちます。 |
 | **[コホート](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)** | | |
+| | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>Container | アカウントベースの [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} 接続を使用している場合は、コホート分析用の優先コンテナを選択します。 <p>次のオプションがあります。</p> <ul><li>グローバル アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>アカウント [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>商談 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}</li><li>ユーザー</li></ul> |
 | | 精度 | トレンドのビジュアライゼーションでは、このドロップダウンから時間の精度（日、週、月など）を。この変更は、データソーステーブルにも適用されます。 |
 | | 割合のみを表示 | 数値を削除し、パーセンテージのみを表示します。 |
 | | 割合を整数に四捨五入 | パーセント値を、小数値ではなく、最も近い整数に丸めます。 |

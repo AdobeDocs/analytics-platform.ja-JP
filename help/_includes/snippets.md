@@ -1,8 +1,8 @@
 ---
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 30%
+source-wordcount: '4061'
+ht-degree: 34%
 
 ---
 # スニペット
@@ -238,3 +238,19 @@ ht-degree: 30%
 >[!INFO]
 >
 >このドキュメントでは、Customer Journey Analytics B2B editionでのみ使用できる特定の B2B 記事または機能に、[!BADGE B2B edition]{type=Informative} とマークが付けられています。
+
+
+## 一般的なデータセット設定 {#common-dataset-settings}
+
+| 設定 | 説明 |
+|---|---|
+| **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立する場合は、このオプションを有効にします。 継続的な接続を行うと、データセットに追加された新しいデータバッチが Workspace で自動的に使用できます。 |
+| **[!UICONTROL データセットのバックフィル]** | 既存のすべてのデータを確実にバックフィルするには、「**[!UICONTROL 既存のすべてのデータをバックフィル]**」を有効にします。<br/><br/>特定の期間の履歴データをバックフィルするには、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。 データセットのバックフィル期間を最大 10 個定義できます。<ol><li>開始データと終了データを入力するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を使用して日付を選択して期間を定義します。</li><li>「**[!UICONTROL キューのバックフィル]**」を選択してバックフィルをリストに追加するか、「**[!UICONTROL キャンセル]**」を選択してキャンセルします。</li></ol>各エントリについて、期間を編集するには ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) を選択し、エントリを削除するには ![削除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) を選択します。<br/><br/>バックフィルについて：<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。 履歴データの量は待ち時間に影響を与えます。</li><li>Analytics ソースコネクタは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。</li></ul> |
+| **[!UICONTROL バッチステータス]** | 次に、使用可能なステータスインジケーターを示します。<ul><li>成功</li><li>X 個のバックフィルが処理中</li><li>オフ</li></ul> |
+| **[!UICONTROL データセット ID]** | この ID は自動的に生成されます。 |
+| **[!UICONTROL 説明]** | データセットの作成時にこのデータセットに付与される説明。 |
+| **[!UICONTROL レコード数]** | データセットのサイズ。 |
+| **[!UICONTROL スキーマ]** | Adobe Experience Platform で作成されたデータセットに基づくスキーマ。 |
+| **[!UICONTROL データセット]** | データセットの名前。 |
+| **[!UICONTROL プレビュー：*データセット名&#x200B;*]** | 最初の 10 行および最初の 10 列のデータセットをプレビューします。 |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Remove]** | 接続全体を削除せずに [ データセットを削除 ](/help/connections/create-connection.md#delete-a-dataset) できます。 データセットを接続から削除すると、データの取り込みに伴うコストと、接続全体および関連するデータビューを再作成する煩雑なプロセスが削減されます。 |
