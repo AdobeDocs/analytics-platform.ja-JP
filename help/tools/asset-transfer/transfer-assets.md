@@ -4,9 +4,9 @@ description: ユーザー間でコンポーネントを転送する方法を説�
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Assetsは多くの場合、個々の所有者に結び付けられており、�
 
 1. ユーザーを選択すると、画面の下部に「アセットを転送」オプションが表示されます。
 
-   ![ メニューオプション ](/help/tools/asset-transfer/assets/after-selection.png)
+   ![ アセット転送メニューオプション ](/help/tools/asset-transfer/assets/after-selection.png)
 
 1. **[!UICONTROL アセットを転送]** をクリックします。
 
@@ -75,6 +75,20 @@ Assetsは多くの場合、個々の所有者に結び付けられており、�
 
 - **転送エラー**:「アセットを転送できませんでした。 もう一度やり直してください」
 
+### アセット転送が失敗した潜在的な理由
+
+- エラーの原因となる依存サービス：アセット転送は、コンポーネントタイプごとに異なるサービス（ネットワークの問題、ダウンストリームサービスの問題など）とやり取りするので、部分的または完全なエラーや、断続的なエラーが発生する可能性があります。
+
+- コンポーネントが見つからない、または別の管理者によって転送された：アセット転送ジョブの処理中に、コンポーネントが別のユーザーによって削除された、または別の管理者が別のユーザーに転送された。
+
+- API POST 本文が正しく入力されていません：複数のコンポーネントタイプが選択されている場合、コンポーネントが API POST 本文に送信されない可能性があります。
+
+- ユーザーが存在しません：転送中にユーザーが削除されたか、別の理由で無効です。 転送が開始される前にユーザーが無効な場合、ツールはこれをキャッチし、ジョブを処理しません。 転送中にユーザーが削除された場合、部分的なエラーが発生する可能性があります。
+
+- 接続/ネットワーク障害：接続が転送の途中で切断されました。 バックエンドに送信済みの転送ジョブのバッチは、すべて完了処理のままですが、何が成功し、何が失敗したかの概要を含む転送結果のメッセージはユーザーに表示されません。
+
+- ブラウザータブが閉じられた中間転送：非常に大きな転送の場合、ブラウザータブが閉じられたり、ページが中間転送から移動されたりすると、タブが閉じられる/ページナビゲーションが発生する前に行われたネットワークリクエストのみが、アセットを適切に転送します。 ユーザーがページに戻っても、転送したアセットと転送しなかったアセットを示す応答ステータスメッセージは届きません。
+
 ## Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード中にアセットを転送
 
 アセット転送の主なユースケースの 1 つは、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード中です。
@@ -91,6 +105,9 @@ Adobe Analyticsの [ コンポーネント移行 ](https://experienceleague.adob
 
 **[!UICONTROL CSV に書き出し]** オプションを使用すると、管理者は、.csv ファイルに表示されたユーザーのリストをダウンロードできます。 転送したアセットのリストを.csv ファイルに書き出すことはできません。
 
-<!---## Unknown users
+## 非アクティブユーザー
 
-All previously deleted users appear under one unknown user entry, along with all their orphan components. These components can be transferred to a new recipient. This feature will be available in January.-->
+以前に削除したすべてのユーザーが、すべてのオーファンコンポーネントと共に、「非アクティブユーザー」エントリの下に表示されます。 これらのコンポーネントは、新しい受信者に転送できます。 この機能は 1 月から利用できるようになります。
+
+![ アセット転送 UI に非アクティブユーザーが表示される ](assets/inactive-users.png)
+
