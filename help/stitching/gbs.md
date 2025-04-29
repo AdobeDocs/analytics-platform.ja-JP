@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
+source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 ## identityMap
 
-グラフベースのステッチでは、次のシナリオで [`identifyMap` フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
