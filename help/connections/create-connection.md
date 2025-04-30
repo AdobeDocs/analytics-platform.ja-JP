@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '6723'
-ht-degree: 60%
+source-wordcount: '6794'
+ht-degree: 59%
 
 ---
 
@@ -210,6 +210,8 @@ ht-degree: 60%
 
 **[!UICONTROL 接続]**/**[!UICONTROL *接続名&#x200B;*]**画面で、次の操作を行います。
 
+![名称未設定の接続設定](assets/create-conn1-b2b.png)
+
 1. 接続を設定します。
 
    | 設定 | 説明 |
@@ -217,7 +219,7 @@ ht-degree: 60%
    | **[!UICONTROL 接続名]** | 接続の一意の名前を入力します。 |
    | **[!UICONTROL 接続の説明]** | この接続の目的を記述します。 |
    | **[!UICONTROL タグ]** | タグを指定して接続にタグを追加すると、後でこれらのタグを使用して接続を検索できるようになります。 |
-   | **[!UICONTROL プライマリ ID]** | 接続に適したプライマリ ID を選択します。 <ul><li>B2C シナリオの ![ ユーザー ](/help/assets/icons/User.svg) **[!UICONTROL ユーザー]**</li><li> B2B シナリオの ![ 構築 ](/help/assets/icons/Building.svg) **[!UICONTROL アカウント]**。</li></ul>。<br/> 接続に 1 つ以上のデータセットを追加すると、すぐにプライマリ ID を変更できなくなります。 <br/> プライマリ ID の選択によって、接続がユーザーベースかアカウントベースかが定義されます。 接続ベースによって、特定のタイプのデータセットで使用可能な [ 設定 ](#dataset-settings) が決まります。 |
+   | **[!UICONTROL プライマリ ID]** | 接続に適したプライマリ ID を選択します。 <ul><li>![ ユーザー ](/help/assets/icons/User.svg)**[!UICONTROL ユーザー]**：通常、B2C シナリオで使用する、ユーザーベースの接続。</li><li> ![Building](/help/assets/icons/Building.svg)**[!UICONTROL Account]**：通常、B2B シナリオで使用するアカウントベースの接続。</li></ul>接続に 1 つ以上のデータセットを追加すると、プライマリ ID を変更できなくなります。 <br/> プライマリ ID の選択によって、接続がユーザーベースかアカウントベースかが定義されます。 接続ベースによって、特定のタイプのデータセットで使用可能な [ 設定 ](#dataset-settings) が決まります。 |
    | **[!UICONTROL オプションコンテナ]** | ![4}プライマリID](/help/assets/icons/Building.svg) として **[!UICONTROL Building}]** Account ]**を選択した場合は、追加のコンテナを選択します。**[!UICONTROL <ul><li>**[!UICONTROL グローバルアカウント]**：接続内のグローバルアカウントの設定を有効にします。</li><li>**[!UICONTROL 商談]**：接続内の商談の設定を有効にします。</li><li>**[!UICONTROL 購買グループ]**：接続内の購買グループの設定を有効にします。</li><ul> |
    | **[!UICONTROL サンドボックス]** | 接続を作成するデータセットを含んだExperience Platformのサンドボックスを選択します。<p>Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供します。 サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。<p>サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 |
    | **[!UICONTROL 周期的なデータ時間枠を有効にする]** | このチェックボックスをオンにすると、Customer Journey Analytics データ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）の周期的な時間枠として定義できます。<p>データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットには、周期的なデータ時間枠設定は存在しません。 ただし、接続に（1 つ以上のイベントデータセットに加えて）プロファイルまたはルックアップデータセットが含まれる場合、そのデータは、同じ期間だけ保持されます。<p> 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。<p><ul><li>デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。 Experience Platform に 25 か月分のデータがある場合、Customer Journey Analytics はバックフィルを通じて 25 か月分のデータを取得します。 Platform でこのうち 10 か月を削除すると、Customer Journey Analytics は残りの 15 か月を保持します。</li><li>周期的なデータ時間枠を有効にする場合、周期的なデータ時間枠を有効にする月数を **[!UICONTROL 月数を選択]** で指定します。 |
@@ -463,7 +465,7 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="データセットのバックフィル"
->abstract="このオプションを使用すると、接続内のこのデータセットについて、Experience Platform からの既存の（履歴）データがバックフィルされます。"
+>abstract="このオプションを選択すると、接続内のこのデータセットについて、Experience Platformからの既存の（履歴） データがバックフィルされます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -483,7 +485,7 @@ ht-degree: 60%
 >title="接続マップ"
 >abstract="接続マップは、イベント、ユーザー、アカウントおよび関連するルックアップデータセット（商談、キャンペーンメンバーなど）間の関係を視覚化します。"
 
-## データセットを追加
+### データセットを追加
 
 接続を作成または編集する際に、1 つ以上のExperience Platform データセットを追加できます。
 
@@ -513,7 +515,7 @@ ht-degree: 60%
    * データセットの詳細を表示するには、「![InfoOutline](/help/assets/icons/InfoOutline.svg)」を選択します。
 
 
-1. 1 つ以上のデータセットを選択して、「**[!UICONTROL 次へ]**」を選択します。 少なくとも 1 つのイベントデータセットを接続に含める必要があります。
+1. 1 つ以上のデータセットを選択して、「**[!UICONTROL 次へ]**」を選択します。 少なくとも 1 つのイベントまたは概要データセットが接続に含まれている必要があります。
 
 1. **[!UICONTROL データセットを追加 ](#dataset-settings) ダイアログの [ データセット設定]** 手順で、**[!UICONTROL 選択した各データセットの設定を 1 つずつ➋設定し]** す。
 
@@ -548,7 +550,7 @@ ht-degree: 60%
 
 イベントデータセットの具体的な設定は、接続のタイプによって異なります。
 
-##### 人物ベースの接続
+##### ユーザーベースの接続
 
 ![ イベントデータセット設定 B2C](assets/event-dataset-settings-b2c.png)
 
@@ -558,8 +560,8 @@ ht-degree: 60%
 | --- | --- |
 | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、スキーマでユーザー ID が定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
 | **[!UICONTROL タイムスタンプ]** | この設定は、Experience Platformのイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動設定されます。 |
-| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
-| **[!UICONTROL データソースの説明]** | データソースのタイプとして「その他」を選択した場合は、データソースについて説明します。 |
+| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
+| **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
 
 ##### アカウントベースの接続
@@ -572,31 +574,31 @@ ht-degree: 60%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL アカウント ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。 |
-| **[!UICONTROL グローバルアカウント ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。 |
+| **[!UICONTROL アカウント ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID からグローバルアカウント ID （アカウントの一意の ID）を選択します。 グローバルアカウントを接続のコンテナとして追加した場合に適用できます。 |
+| **[!UICONTROL グローバルアカウント ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。 グローバルアカウントをコンテナとして接続に追加していない場合に適用できます。 |
 | **[!UICONTROL オポチュニティ ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID から商談 ID （商談の一意の ID）を選択します。 |
 | **[!UICONTROL 購入グループ ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID から購入グループ ID （購入グループの一意の ID）を選択します。 |
 | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
 | **[!UICONTROL タイムスタンプ]** | この設定は、Experience Platformのイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動設定されます。 |
-| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
-| **[!UICONTROL データソースの説明]** | データソースのタイプとして「その他」を選択した場合は、データソースについて説明します。 |
+| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
+| **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
 
 #### Profile データセット
 
 プロファイルデータセットの具体的な設定は、接続のタイプによって異なります。
 
-##### 人物ベースの接続
+##### ユーザーベースの接続
 
 ![ プロファイルデータセット設定 B2C](assets/profile-dataset-settings-b2c.png)
 
-ユーザーベースの接続のプロファイルデータセットの場合は、次を指定します。
+ユーザーベースの接続のプロファイルデータセットには、次を指定します。
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、スキーマでユーザー ID が定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
-| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
-| **[!UICONTROL データソースの説明]** | データソースのタイプとして「その他」を選択した場合は、データソースについて説明します。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
+| **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
 #### アカウントベースの接続
 
@@ -606,16 +608,17 @@ ht-degree: 60%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、スキーマでユーザー ID が定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
-| **[!UICONTROL アカウント ID]** | 使用可能な ID のドロップダウンリストから、データセットのアカウントベースのレポートをサポートするために使用されるアカウント ID を選択します。 |
-| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
-| **[!UICONTROL データソースの説明]** | データソースのタイプとして「その他」を選択した場合は、データソースについて説明します。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL グローバルアカウントフィールド]** | グローバルアカウントフィールドを選択して、使用可能な ID のドロップダウンリストからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントを接続のコンテナとして追加した場合に適用できます。 |
+| **[!UICONTROL アカウントフィールド]** | アカウントフィールドを選択して、使用可能な ID のドロップダウンリストからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントをコンテナとして接続に追加していない場合に適用できます。 |
+| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
+| **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
 #### ルックアップデータセット
 
 ルックアップデータセットの具体的な設定は、接続のタイプによって異なります。
 
-##### 人物ベースの接続
+##### ユーザーベースの接続
 
 ![ ルックアップイベントデータセット設定のユーザーベース ](assets/lookup-dataset-settings-b2c.png)
 
@@ -625,8 +628,8 @@ ht-degree: 60%
 |---|---|
 | **[!UICONTROL キー]** | ルックアップデータセットに使用するキーです。 |
 | **[!UICONTROL 一致するキー]** | いずれかのイベントデータセットで結合するための一致するキーです。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。 |
-| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
-| **[!UICONTROL データソースの説明]** | データソースのタイプとして「その他」を選択した場合は、データソースについて説明します。 |
+| **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
+| **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 | **[!UICONTROL データセットを変換]** | 特定の B2B ルックアップデータセットでは、適切な B2B ユーザーベースのレポートシナリオに対応するデータセットの変換を有効にすることができます。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。 |
 
 
@@ -635,7 +638,7 @@ ht-degree: 60%
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
 
-![ アカウントベースのルックアップイベントデータセット設定 ](assets/lookup-dataset-settings-b2b.png)
+![ ルックアップイベントデータセット設定のアカウントベース ](assets/lookup-dataset-settings-b2b.png)
 
 アカウントベースの接続におけるルックアップデータセットの場合は、次を指定できます。
 
@@ -675,6 +678,23 @@ ht-degree: 60%
 
 インターフェイスで ![ 履歴 ](/help/assets/icons/History.svg) **[!UICONTROL 過去のバックフィル]** を選択すると、**[!UICONTROL 過去のバックフィル : _データセット名_]**ダイアログにデータセットからの最新のバックフィルが表示されます。
 
+## データセットタイプ {#dataset-types}
+
+[!UICONTROL Customer Journey Analytics] は、この接続に追加した各データセットに対して、受信するデータに基づいてデータセットタイプを自動的に設定します。
+
+>[!IMPORTANT]
+>
+>少なくとも 1 つのイベントまたは概要データセットを接続の一部として追加します。
+
+データセットには、[!UICONTROL イベント]データ、[!UICONTROL プロファイル]データ、[!UICONTROL ルックアップ]データおよび[!UICONTROL 概要]データなど、様々なタイプがあります。
+
+| データセットタイプ | 説明 | タイムスタンプ | スキーマ | 人物 ID <br/> アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} |
+|---|---|---|---|---|
+| **[!UICONTROL イベント]** | イベントの時間を表すデータ。 例えば、web 訪問数、インタラクション、トランザクション、POS データ、サーベイデータ、広告インプレッションデータなどがあります。 このデータには、顧客 ID または cookie ID とタイムスタンプを含む一般的なクリックストリームデータを使用できます。 イベントデータを使用すると、ユーザー ID として使用する ID を柔軟に設定できます。 | [!UICONTROL Experience Platform] のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに設定します。 | *時系列* 動作を持つ XDM クラスに基づく、組み込みまたはカスタムスキーマ。 例としては、*XDM エクスペリエンスイベント* または *XDM 決定イベント* があります。 | 含めるユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を選択できます。 Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。 これらの ID のいずれかを人物 ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} として使用できます。 例としては、Cookie ID、スティッチ ID、ユーザー ID、トラッキングコード、アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} などがあります。 |
+| **[!UICONTROL ルックアップ]** | すべてのデータセットタイプ（プロファイルデータセット、ルックアップデータセット、イベントデータセット）内のフィールドのルックアップとしてデータセットを追加できます（後者は常にサポートされていました）。 この追加機能により、B2B を含む複雑なデータモデルをサポートする Customer Journey Analytics の機能が拡張されます。 このデータは、イベント、プロファイルまたはルックアップデータにある値やキーを検索するために使用します。 最大 2 レベルのルックアップを追加できます。 （[派生フィールド](/help/data-views/derived-fields/derived-fields.md)は、接続内のルックアップに一致するキーとして使用できません）。例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。詳しくは、[B2B の例](/help/use-cases/b2b/example.md)を参照してください。 | 該当なし | *Record* 動作を持つ XDM クラスに基づく、組み込みまたはカスタムスキーマ。*XDM Individual Profile* クラスを除く。 | 該当なし |
+| **[!UICONTROL プロファイル]** | [!UICONTROL  イベント ] データのアカウント、人物、ユーザーまたは顧客に適用されるデータ。 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | *XDM Individual Profile* クラスに基づく、ビルトインまたはカスタムスキーマ。 | 含めるユーザー ID / アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を選択できます。 [!DNL Experience Platform] で定義された各データセット（概要データセットを除く）には、1 つ以上のユーザー ID またはアカウント ID [!BADGE B2B edition} の独自のセットが定義されてい ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} す。 例えば、Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコード、アカウント ID などです。<br>![ユーザー ID ](assets/person-id.png)**メモ**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。 データセットを結合するには、同じユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を使用する必要があります。 |
+| **概要** | 個人のユーザー ID に関連付けられていない時系列データ。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 詳しくは、[概要データ](/help/data-views/summary-data.md)を参照してください。 | Experience Platformのイベントベースの概要指標スキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 時間単位または日単位の精度のみがサポートされます。 | *XDM Summary Metrics* クラスに基づくビルトインまたはカスタムスキーマ。 | 該当なし |
+
 ## 接続プレビュー {#preview}
 
 作成した接続をプレビューするには、接続設定ダイアログで「![PageSearch](/help/assets/icons/PageSearch.svg)**[!UICONTROL 接続プレビュー]**」を選択します。
@@ -694,26 +714,6 @@ ht-degree: 60%
 
 このマップは、接続を定義した方法をより深く理解し、識別子を使用してイベント、プロファイル、ルックアップ、概要データセット間の関係を設定するのに役立ちます。
 
-## データセットタイプ {#dataset-types}
-
-[!UICONTROL Customer Journey Analytics] は、この接続に追加した各データセットに対して、受信するデータに基づいてデータセットタイプを自動的に設定します。
-
->[!IMPORTANT]
->
->少なくとも 1 つのイベントまたは概要データセットを接続の一部として追加します。
-
-データセットには、[!UICONTROL イベント]データ、[!UICONTROL プロファイル]データ、[!UICONTROL ルックアップ]データおよび[!UICONTROL 概要]データなど、様々なタイプがあります。
-
-| データセットタイプ | 説明 | タイムスタンプ | スキーマ | 人物 ID <br/> アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} |
-|---|---|---|---|---|
-| **[!UICONTROL イベント]** | イベントの時間を表すデータ。 例えば、web 訪問数、インタラクション、トランザクション、POS データ、サーベイデータ、広告インプレッションデータなどがあります。 このデータには、顧客 ID または cookie ID とタイムスタンプを含む一般的なクリックストリームデータを使用できます。 イベントデータを使用すると、ユーザー ID として使用する ID を柔軟に設定できます。 | [!UICONTROL Experience Platform] のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに設定します。 | *時系列* 動作を持つ XDM クラスに基づく、組み込みまたはカスタムスキーマ。 例としては、*XDM エクスペリエンスイベント* または *XDM 決定イベント* があります。 | 含めるユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を選択できます。 Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。 これらの ID のいずれかを人物 ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} として使用できます。 例としては、Cookie ID、スティッチ ID、ユーザー ID、トラッキングコード、アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} などがあります。 |
-| **[!UICONTROL ルックアップ]** | すべてのデータセットタイプ（プロファイルデータセット、ルックアップデータセット、イベントデータセット）内のフィールドのルックアップとしてデータセットを追加できます（後者は常にサポートされていました）。 この追加機能により、B2B を含む複雑なデータモデルをサポートする Customer Journey Analytics の機能が拡張されます。 このデータは、イベント、プロファイルまたはルックアップデータにある値やキーを検索するために使用します。 最大 2 レベルのルックアップを追加できます。 （[派生フィールド](/help/data-views/derived-fields/derived-fields.md)は、接続内のルックアップに一致するキーとして使用できません）。例えば、イベントデータ内の数値 ID を製品名にマッピングするルックアップデータをアップロードできます。詳しくは、[B2B の例](/help/use-cases/b2b/example.md)を参照してください。 | 該当なし | *Record* 動作を持つ XDM クラスに基づく、組み込みまたはカスタムスキーマ。*XDM Individual Profile* クラスを除く。 | 該当なし |
-| **[!UICONTROL プロファイル]** | [!UICONTROL  イベント ] データのアカウント、人物、ユーザーまたは顧客に適用されるデータ。 例えば、顧客に関する CRM データをアップロードできます。 | 該当なし | *XDM Individual Profile* クラスに基づく、ビルトインまたはカスタムスキーマ。 | 含めるユーザー ID / アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を選択できます。 [!DNL Experience Platform] で定義された各データセット（概要データセットを除く）には、1 つ以上のユーザー ID またはアカウント ID [!BADGE B2B edition} の独自のセットが定義されてい ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} す。 例えば、Cookie ID、スティッチされた ID、ユーザー ID、トラッキングコード、アカウント ID などです。<br>![ユーザー ID ](assets/person-id.png)**メモ**：異なる ID のデータセットを含む接続を作成すると、レポートに反映されます。 データセットを結合するには、同じユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} を使用する必要があります。 |
-| **概要** | 個人のユーザー ID に関連付けられていない時系列データ。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 詳しくは、[概要データ](/help/data-views/summary-data.md)を参照してください。 | Experience Platformのイベントベースの概要指標スキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 時間単位または日単位の精度のみがサポートされます。 | *XDM Summary Metrics* クラスに基づくビルトインまたはカスタムスキーマ。 | 該当なし |
-
->[!MORELIKETHIS]
->
->ブログ：[Adobe Customer Journey Analyticsでイベント、ルックアップ、プロファイルのデータセットを活用する方法 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## ルックアップキーおよびルックアップ値としての数値フィールドの使用 {#numeric}
 
@@ -779,5 +779,10 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 大規模なルックアップデータセットのアルゴリズムによるプルーニングをリクエストできます。 このアルゴリズムによるプルーニングでは、イベントデータセット内のキーと一致するデータのみをルックアップデータセットに保持します。 これにより、プルーニングされていないルックアップデータセット全体を読み込む必要がなくなります。 使用頻度の低い古い項目は削除されます。その結果、レポートにわずかに影響を与える可能性がありますが、大きなメリットがもたらされます。 アルゴリズムは 90 日間遡り、毎週更新します。
 
 詳細について、およびこの機能を有効にするには、担当のアドビサポートチームにお問い合わせください。
+
+
+>[!MORELIKETHIS]
+>
+>ブログ：[Adobe Customer Journey Analyticsでイベント、ルックアップ、プロファイルのデータセットを活用する方法 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![共有](/help/assets/icons/Share.svg)

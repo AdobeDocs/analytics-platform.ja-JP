@@ -4,9 +4,9 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
 workflow-type: tm+mt
-source-wordcount: '5088'
+source-wordcount: '5103'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025 年 4 月** | |
+| 接続 | 今後のカスタマージャーニーB2B editionに関するカスタマージャーニーコネクションのドキュメントを修正し更新しました。 |
 | 製品分析のユースケース | [Customer Journey Analyticsの製品分析 ](/help/use-cases/product-analysis.md) を追加しました。 |
 | 共有指標およびディメンション | [ 共有指標とディメンション ](/help/data-views/shared-metrics-dimensions/smd-overview.md) 機能に関するドキュメントを追加しました。 |
 | Report Builder | [Report Builder](/help/report-builder/report-buider-overview.md) のドキュメントを確認し、更新しました。 |
@@ -179,7 +180,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |
 | 更新された機能のサポート | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を更新して、Customer Journey Analytics で使用でき AA では使用できないかサポートされていない機能の一覧表を追加しました。 |
 | デフォルトの計算指標 | [アドビが提供するデフォルトの計算指標](/help/components/calc-metrics/default-calcmetrics.md)を説明するコンテンツを追加しました。 |
-| データ要素 | <p>データ要素の[概要](/help/components/data-dictionary/data-dictionary-overview.md)、[表示](/help/components/data-dictionary/view-data-dictionary.md)、[編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)、[監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)など、データ要素に関する新しいドキュメントを追加しました。</p><p>[コンポーネント説明の追加](/help/components/add-component-descriptions.md)の情報を、データ要素機能を説明するために更新しました。</p> |
+| データ辞書 | <p>データ要素の[概要](/help/components/data-dictionary/data-dictionary-overview.md)、[表示](/help/components/data-dictionary/view-data-dictionary.md)、[編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)、[監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)など、データ要素に関する新しいドキュメントを追加しました。</p><p>[コンポーネント説明の追加](/help/components/add-component-descriptions.md)の情報を、データ要素機能を説明するために更新しました。</p> |
 | プロジェクトのリンク共有（ログインは不要） | <p>Analysis Workspace へのアクセス権を持たないユーザーとプロジェクトの読み取り専用リンクを共有する方法を説明するために、既存のドキュメントを更新しました。</p> <p>ユーザードキュメントの更新内容には、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)と[共有可能なリンクの作成](/help/analysis-workspace/curate-share/shareable-links.md)が含まれています。</p> <p>[環境設定](/help/analysis-workspace/user-preferences.md)に管理者向けのオプションを追加しました。</p> |
 | **2023年2月** | |
 | Customer Journey Analytics と BI ソリューションの比較 | Customer Journey Analytics と一般的な BI ソリューションの[比較](../getting-started/cja-vs-bi.md)に関する新しいドキュメントです。 |
