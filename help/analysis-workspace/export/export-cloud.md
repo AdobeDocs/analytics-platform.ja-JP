@@ -5,7 +5,7 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -189,7 +189,7 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
    * [永続性が有効](/help/data-views/component-settings/persistence.md)になっている
    * [バインディングディメンション](/help/use-cases/data-views/binding-dimensions-metrics.md)を使用していない
 * 異なる[オブジェクトの配列](/help/use-cases/object-arrays.md)を参照するフィールドからの複数のディメンション（同じオブジェクトの配列を参照する複数のディメンションが許可されます）。
-* レポートあたり 5 つ以上のディメンションと 5 つの指標（最大 5 つのディメンションと 5 つの指標がサポートされます）
+* レポートあたり 10 つ以上のディメンションと 10 つの指標（最大 10 つのディメンションと 10 つの指標がサポートされます）
 * テーブル列の場合：
    * 日付範囲
    * ディメンション
@@ -227,8 +227,8 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 | カスタムレポートを作成 | ○ | ○ |
 | 計算指標 | ○ | × |
 | セグメント | ○ | 制限あり |
-| ディメンション | 制限は 5 | 制限なし |
-| 指標 | 制限は 5 | 制限なし |
+| ディメンション | 制限は 10 | 制限なし |
+| 指標 | 制限は 10 | 制限なし |
 | レポート行 | 階層に応じて、300 万行、3,000 万行、1 億 5,000 万行、3 億行の制限 | 制限なし |
 | レポート数 | 制限なし | 制限なし |
 | アドホック（1 回限り）配信 | ○ | ○ |

@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4e65e2fd1720b63b9dec341d4a67f7356df77fcb
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 76%
+source-wordcount: '890'
+ht-degree: 71%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2025年4月）
 
-**最終更新日**：2025年4月28日（PT）
+**最終更新日**：2025年4月30日（PT）
 
 このリリースノートは、2025年3月27日（PT）～2025年5月15日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -20,6 +20,7 @@ ht-degree: 76%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **完全テーブルの書き出し制限の増加** | 完全なテーブルの書き出しで顧客が使用できる列の数を 5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に増やしています。 これは、すべてのCustomer Journey Analytics層に適用されます。 書き出し可能な行数の使用権限に変更はありません。 |  | 2025年4月30日（PT） |
 | **数値ディメンションの「値なし」行項目の更新** | 数値ディメンションの場合、この更新により次のことが可能になります<ul><li>セグメントで「値なし」ディメンション項目を使用します。</li><li>「値なし」行項目に関するレポートで分類を実行する。</li></ul> [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | 2025年3月27日（PT） |
 | **Adobe Content Analytics** | Adobe Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。<p>標準の事前定義済みのレポートテンプレートやアセットインスペクターなどの新機能を使用して時間を節約できます。この機能を使用すると、データに合わせてアセットを視覚化できるだけでなく、各アセットを開いて、パフォーマンス、配置、属性などの詳細の概要を確認することもできます。<p>完全なカスタマージャーニーのコンテキスト内でこの新しいコンテンツデータセットを調査して、重要なビジネス上の質問に回答し、コンテンツのパフォーマンスを評価し、セグメント化を強化し、最適化の機会を特定し、アクティベーション用の新しいオーディエンスを定義できます。<p>Content Analytics は、Customer Journey Analytics のアドオンです。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) |  | 2025年3月27日（PT） |
 | **メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新** | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025年3月31日（PT） |

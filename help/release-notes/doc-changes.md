@@ -4,10 +4,10 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '5103'
-ht-degree: 90%
+source-wordcount: '5133'
+ht-degree: 89%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025 年 4 月** | |
+| フルテーブルの書き出し制限の増加 | 顧客が完全なテーブルの書き出しで使用できる [ 列数 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) を 5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に変更しました。 |
 | 接続 | 今後のカスタマージャーニーB2B editionに関するカスタマージャーニーコネクションのドキュメントを修正し更新しました。 |
 | 製品分析のユースケース | [Customer Journey Analyticsの製品分析 ](/help/use-cases/product-analysis.md) を追加しました。 |
 | 共有指標およびディメンション | [ 共有指標とディメンション ](/help/data-views/shared-metrics-dimensions/smd-overview.md) 機能に関するドキュメントを追加しました。 |
