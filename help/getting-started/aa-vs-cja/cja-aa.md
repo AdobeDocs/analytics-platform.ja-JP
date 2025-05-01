@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 8972a195554971006eb4315bdd216947d6cf79f3
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 93%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 94%
 | **ジャーニーキャンバス** | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
 | **製品の使用状況** | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
+| **データビュー全体で指標とディメンションを共有** | を使用すると [ 複数のデータビューにわたってディメンションと指標の設定を適用する ](/help/data-views/shared-metrics-dimensions/smd-overview.md) ことができます。 共有ディメンションまたは指標に加えた変更は、適用可能なすべてのデータビューにわたる、そのディメンションまたは指標のすべてのインスタンスに適用されます。 |
 | **SQL アクセス** | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
