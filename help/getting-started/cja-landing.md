@@ -4,7 +4,7 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 90%
@@ -25,11 +25,11 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 
 >[!TAB Content Analytics]
 
-Adobe Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。
+Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。
 
 [![画像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
->[!TAB  共有指標とディメンション ]
+>[!TAB  共有指標およびディメンション ]
 
 共有指標およびディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元的に管理する場所を提供します。 これらのコンポーネントは、複数のデータビューを使用する組織で特に役立ちます。特に、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
 

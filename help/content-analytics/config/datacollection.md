@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
+source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,7 +15,6 @@ ht-degree: 1%
 # Content Analyticsのデータ収集
 
 この記事では、Content Analyticsによるデータの収集方法について詳しく説明します
-
 
 ## 定義
 
@@ -40,7 +39,6 @@ Content Analytics ライブラリは、次の場合にデータを収集しま�
 * ページ URL は、付属のタグライブラリの一部である ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}0}Content Analytics拡張機能 } で設定されます。[
 
 
-
 ## Content Analytics イベント
 
 Content Analytics イベントは、次の要素で構成されます。
@@ -52,7 +50,6 @@ Content Analytics イベントは、次の要素で構成されます。
 * エクスペリエンスクリック数（存在する場合、および設定されている場合）
 * アセット表示（存在する場合、および設定されている場合）
 * アセットクリック数（存在する場合、および設定されている場合）
-
 
 Content Analytics イベントは、次のシーケンスとして収集されます。
 

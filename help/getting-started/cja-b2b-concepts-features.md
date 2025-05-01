@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Customer Journey Analytics B2B editionでアカウントベースの接続に対
 ## 人物およびアカウントに基づくデータのレポート
 
 ユーザーベースのコンテナ（および人物 ID）とアカウントベースのコンテナ（およびアカウント ID）に関するレポートが必要な場合は、Customer Journey Analytics内で 2 つの異なる接続を設定する必要があります。 プライマリID としてユーザーを選択する接続と、プライマリID としてアカウントを選択する接続です。 Customer Journey Analyticsは、単一のコンテナ階層からのユーザーベースおよびアカウントベースのレポートをサポートしていません。
+
