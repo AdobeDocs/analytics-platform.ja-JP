@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 96%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -28,6 +28,12 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 Adobe Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。
 
 [![画像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB  共有指標とディメンション ]
+
+共有指標およびディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元的に管理する場所を提供します。 これらのコンポーネントは、複数のデータビューを使用する組織で特に役立ちます。特に、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
+
+[![画像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB AI アシスタント]
 
@@ -54,6 +60,7 @@ AI アシスタントは、概念の理解、問題のトラブルシューテ�
 アラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。 アラートがどのような頻度でトリガーされるかをプレビュー、メールまたは SMS でのアラートを送信、積み重ねアラートを作成することなどを行うことができます。
 
 [![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB 概要データ]
 
