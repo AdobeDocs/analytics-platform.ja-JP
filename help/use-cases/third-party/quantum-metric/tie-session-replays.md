@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
+source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 
 詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
 
-## 手順 1:Quantum Metric データを格納するスキーマフィールドの作成
+## 手順 1:Quantum Metric セッション ID に対応するスキーマフィールドの作成
 
 このユースケースでは、データの送信先となる専用のスキーマフィールドが必要です。 このフィールドは、スキーマ内の任意の場所に作成し、好きな名前を付けることができます。 組織が名前や場所を好まない場合は、値の例を指定します。
 
