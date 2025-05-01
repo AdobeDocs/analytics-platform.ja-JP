@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Content Analytics イベントは、次の要素で構成されます。
 Content Analytics イベントは、次のシーケンスとして収集されます。
 
 1. [ 記録ビューまたはクリック ](#recorded-view-or-click)。
-1. [ 通常または特定の（行動）イベント ](#regular-or-specific-behaviorial-event)。
+1. [Content Analytics イベントを送信するトリガー](#trigger-to-send-a-content-analytics-event)。
 
 Content Analyticsでは、ビューやクリックを収集するのではなく、ビューやクリックの直後のイベントを個別に収集して、そのシーケンスを反映させるためにデータを収集します。 この方法でコンテンツ分析データを収集すると、収集されるデータの量も削減されます。
 
@@ -84,11 +84,11 @@ Content Analyticsでは、ビューやクリックを収集するのではなく
 * エクスペリエンスが有効になっているページ上のリンクで、クリックが発生します。
 
 
-### 通常または特定（行動）のイベント
+### Content Analytics イベントを送信するためのトリガー
 
-Content Analyticsのコンテキストで通常または特定の（行動）イベントを発生させるトリガーは次のとおりです。
+Content Analyticsは、ページからの呼び出し数を減らすために情報を収集しますが、その情報をすぐには送信しません。 コンテンツインタラクション情報が収集され、その情報を含むイベントが、次のいずれかのトリガーが発生した場合にのみ送信されます。
 
-* Web SDKまたは AppMeasurements がイベントを送信します。
+* Web SDKまたは AppMeasurements がイベントを送信します。 このイベントのタイムスタンプは
 * 表示が非表示に変わります。次に例を示します。
    * ページのアンロード
    * 「切り替え」タブ
