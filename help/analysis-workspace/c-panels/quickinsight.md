@@ -4,10 +4,10 @@ title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 94%
+source-wordcount: '1154'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 * セグメントの作成場所
 * その他の機能
 
-これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンリストには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
+これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 
 * 左パネルからコンポーネントをドラッグ＆ドロップします。
 * 構築ブロックフィールドの 1 つに入力を開始します。入力が見つかると、構築ブロックフィールドに使用可能な値が自動的に入力されます。
-* 構築ブロックドロップダウン（**[!UICONTROL 分析]**&#x200B;の `Country` など）を指定し、使用可能な値のリスト（![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用）を使用して、使用する値（**[!UICONTROL 国コード]**&#x200B;など）を検索します。
+* 構築ブロックのドロップダウンメニュー（**[!UICONTROL Analyze]** の `Country` など）を指定し、使用可能な値のリスト（![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用）を使用して、使用する値（**[!UICONTROL 国コード]** など）を検索します。
 
 すべての入力フィールドを消去するには、「**[!UICONTROL 消去]**」を選択します。
 

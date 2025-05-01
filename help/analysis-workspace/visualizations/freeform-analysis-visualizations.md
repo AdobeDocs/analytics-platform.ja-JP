@@ -5,10 +5,10 @@ title: ビジュアライゼーションの概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -125,7 +125,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | **[!UICONTROL 予測を表示]** | 予測値を表示することで、折れ線グラフおよびフリーフォームテーブルを強化します。 |
 | **[!UICONTROL 最小値を表示]** | ビジュアライゼーションに最小値を表示します。 |
 | **[!UICONTROL 最大値を表示]** | ビジュアライゼーションに最大値を表示します。 |
-| **[!UICONTROL トレンドラインを表示]** | ビジュアライゼーションにトレンドラインを表示します。選択した場合、トレンドラインのタイプをドロップダウンメニューから選択できます。 |
+| **[!UICONTROL トレンドラインを表示]** | ビジュアライゼーションにトレンドラインを表示します。選択した場合、ドロップダウンメニューからトレンドラインのタイプを選択できます。 |
 
 作成するすべてのビジュアライゼーションの設定をカスタマイズできます。詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md)を参照してください。
 

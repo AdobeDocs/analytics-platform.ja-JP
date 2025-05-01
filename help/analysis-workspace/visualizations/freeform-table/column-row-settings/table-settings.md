@@ -4,10 +4,10 @@ title: 行設定
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 92%
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   ![表示された行数のドロップダウンリストを示すフリーフォームテーブル。400 行が選択されています。](assets/change-row-count.gif)
+   ![ 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
-1. ドロップダウンリストから、テーブルに表示する行数を選択します。
+1. ドロップダウンメニューから、テーブルに表示する行数を選択します。
 
 
 ## コンテキストメニュー

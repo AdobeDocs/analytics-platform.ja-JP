@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5200'
+source-wordcount: '5202'
 ht-degree: 15%
 
 ---
@@ -313,8 +313,8 @@ Experience Platformでサマリースキーマを作成するには：
 1. スキーマ名の横にある ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します **[!UICONTROL 例：概要データスキーマ]**。 **[!UICONTROL フィールドプロパティ]** パネルが開き、フィールドの詳細を追加できます。
    1. **[!UICONTROL フィールド名]** を入力：`campaign_id`
    1. **[!UICONTROL 表示名]** を入力：`campaign_id`
-   1. **[!UICONTROL データタイプを選択]** ドロップダウンから **[!UICONTROL タイプ]** を選択：**[!UICONTROL 文字列]**
-   1. **[!UICONTROL 割り当て先]****[!UICONTROL フィールドグループ]** が選択されていることを確認し、ドロップダウンから **[!UICONTROL 概要データの例]** を選択します。
+   1. **[!UICONTROL データタイプを選択]** ドロップダウンメニューから **[!UICONTROL タイプ]** を選択：**[!UICONTROL 文字列]**
+   1. **[!UICONTROL 割り当て先]****[!UICONTROL フィールドグループ]** が選択されていることを確認し、ドロップダウンメニューから **[!UICONTROL 概要データの例]** を選択します。
    1. 下までスクロールし、「**[!UICONTROL 適用]**」を選択します。
 1. 概要データの他のフィールドに対して、前の手順を繰り返します。 正しい値については、以下の表を参照してください。
 
@@ -362,7 +362,7 @@ Experience Platformでサマリースキーマを作成するには：
    1. **[!UICONTROL CSV を XDM スキーマにマッピング]** パネルから **[!UICONTROL 起動]** を選択します。
 1. **[!UICONTROL ワークフロー]**/**[!UICONTROL CSV を XDM スキーマにマッピング]** ウィザードの **[!UICONTROL データフローの詳細]** 手順で、次の操作を行います。
    1. **[!UICONTROL ターゲットデータセット]** に対して **[!UICONTROL 既存のデータセット]** を選択します。
-   1. ドロップダウンリストから **[!UICONTROL 概要データデータセットの例]** を選択します。
+   1. ドロップダウンメニューから **[!UICONTROL 概要データデータセットの例]** を選択します。
    1. 「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL ワークフロー]**/**[!UICONTROL CSV を XDM スキーマにマッピング]** ウィザードの **[!UICONTROL データを選択]** 手順で、次の操作を行います。
    1. CSV 形式の概要データを含むファイルを **[!UICONTROL ファイルをドラッグ&amp;ドロップ]** にドラッグ&amp;ドロップします。 または、**[!UICONTROL ファイルを選択]** を使用してファイルを選択します。
@@ -391,8 +391,8 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 1. **[!UICONTROL 接続]**/**[!UICONTROL 名称未設定の接続]** で、次の手順を実行します。
    1. **[!UICONTROL 接続名]** を入力します（例：`Example Connection Using Summary Data`）。
-   1. 作成したデータセットと含める他のデータセットを含むサンドボックスをサンドボックスドロップダウンリストから選択します。
-   1. **[!UICONTROL 1 日のイベントの平均数]** ドロップダウンリストから **[!UICONTROL 100 万未満]** を選択します。
+   1. サンドボックス ドロップダウンメニューから、作成したデータセットと含める他のデータセットを含むサンドボックスを選択します。
+   1. **[!UICONTROL 毎日のイベントの平均数]** ドロップダウンメニューから **[!UICONTROL 100 万未満]** を選択します。
    1. 「**[!UICONTROL データセットを追加]**」を選択します。
    1. **[!UICONTROL データセットを追加]** ウィザードの **[!UICONTROL データセットを選択]** 手順で、次の操作を行います。
       1. ![ 検索 ](/help/assets/icons/Search.svg)」をクリックし、**[!UICONTROL 概要データデータセットの例]**、**[!UICONTROL イベントデータデータセットの例]**、および **[!UICONTROL ルックアップデータデータセットの例]** を選択します。
@@ -483,7 +483,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          ![ トラッキングコード概要データ ](../assets/tracking-code-summary-data.png)
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
-         1. **[!UICONTROL 2} キャンペーン ID]** ドロップダウンリストから「]**Dimension ID」を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
+         1. **[!UICONTROL 2} キャンペーン ID]** ドロップダウンメニューから ]**Dimension ID} を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
          1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL  レポートで非表示 ] 選択したディメンション（[!UICONTROL  キャンペーン ID]）が、Analysis Workspaceや他のCustomer Journey Analytics レポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
             1. **[!UICONTROL ディメンション]** リストで「**[!UICONTROL キャンペーン ID]**」ディメンションを選択します。
             1. **[!UICONTROL コンポーネント設定]** の **[!UICONTROL レポートでコンポーネントを非表示]** が自動的に有効になっていることに注意してください。
@@ -493,7 +493,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          ![ キャンペーン名の派生フィールド ](../aa-data/../assets/summary-derived-field.png)
 
          1. **[!UICONTROL Value]** に **[!UICONTROL campaign_id]** を選択します。
-         1. **[!UICONTROL ルックアップデータセット]** ドロップダウンメニューから **[!UICONTROL ルックアップデータデータセットの例]** を選択します。
+         1. **[!UICONTROL ルックアップデータセット]** ドロップダウンメニューから **[!UICONTROL ルックアップデータセッ]** の例」を選択します。
          1. **[!UICONTROL 一致するキー]** ドロップダウンメニューから **[!UICONTROL tracking_code]** を選択します。
          1. **[!UICONTROL 返す値]** ドロップダウンメニューから **[!UICONTROL campaign_name]** を選択します。
          1. 「**[!UICONTROL 保存]**」を選択します。
@@ -506,27 +506,27 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
-         1. **[!UICONTROL 2} キャンペーン名（ルックアップ派生フィールド）]** ドロップダウンリストから ]**Dimension名」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
+         1. **[!UICONTROL 2}Dimension]** ドロップダウンメニューから「]**キャンペーン名（ルックアップ派生フィールド）」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
 
       1. **[!UICONTROL 指標]** リストから「**[!UICONTROL 売上高]** 指標を選択します。 コンポーネントパネルで以下を実行します。
 
          ![ 売上高の概要データ ](../assets/revenue-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]**」を選択します。
-            1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンリストから「**[!UICONTROL 30 日]**」を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]** を選択します。
+            1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
-            1. **[!UICONTROL 形式]** ドロップダウンリストから「**[!UICONTROL 通貨]**」を選択します。
-            1. **[!UICONTROL 小数点以下の桁数]** ドロップダウンリストから「**[!UICONTROL 2]**」を選択します。
+            1. **[!UICONTROL 形式]** ドロップダウンメニューから **[!UICONTROL 通貨]** を選択します。
+            1. **[!UICONTROL 小数点以下の桁数]** ドロップダウンメニューから「**[!UICONTROL 2]**」を選択します。
 
       1. **[!UICONTROL 指標]** リストから「**[!UICONTROL 注文]** 指標を選択します。 コンポーネントパネルで以下を実行します。
 
          ![ 注文概要データ ](../assets/orders-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンリストから「**[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]**」を選択します。
-            1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンリストから「**[!UICONTROL 30 日]**」を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]** を選択します。
+            1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
-            1. **[!UICONTROL 形式]** ドロップダウンリストから「**[!UICONTROL 10 進]**」を選択します。
-            1. **[!UICONTROL 上昇傾向を次の形式で表示]** ドロップダウンリストから「**[!UICONTROL ▲良好（緑）]**」を選択します。
+            1. **[!UICONTROL 形式]** ドロップダウンメニューから **[!UICONTROL 小数]** を選択します。
+            1. **[!UICONTROL 上昇傾向を次の形式で表示]** ドロップダウンメニューから「**[!UICONTROL ▲良好（緑）]**」を選択します。
 
       1. 「**[!UICONTROL 保存して続行]**」を選択します。
 

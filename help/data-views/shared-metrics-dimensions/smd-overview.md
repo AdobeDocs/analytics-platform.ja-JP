@@ -2,9 +2,9 @@
 title: 共有指標とディメンションの概要
 description: 複数のデータビューで同じディメンションまたは指標の参照を使用します。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
    * **[!UICONTROL 作成者]**：特定のユーザーが作成したコンポーネントのみを表示します。
    * **[!UICONTROL 重複]**：別のコンポーネントと同じコンポーネント ID を持つコンポーネントのみを表示します。 これらのフィルターは、概要カードを使用してコンポーネントを確認する場合と同じです。
 * **検索**:「![ 検索アイコン ](../../assets/icons/Search.svg)」アイコンを使用して、名前でコンポーネントを検索します。
-* **[!UICONTROL 接続]**: [ 接続 ](/help/connections/overview.md) を変更するドロップダウン。 共有ディメンションと指標は、常に単一の接続に固有です。
+* **[!UICONTROL 接続]**: [ 接続 ](/help/connections/overview.md) を変更するドロップダウンメニュー。 共有ディメンションと指標は、常に単一の接続に固有です。
 * **[!UICONTROL テーブルをカスタマイズ]**:「![ テーブルをカスタマイズ」アイコン ](/help/assets/icons/ColumnSetting.svg) アイコンを選択して、テーブルの列を表示または非表示にします。 次のオプションを使用できます。
    * **[!UICONTROL フィールド名]**：共有されるディメンションまたは指標の名前。 このフィールドは常に表示されます。
    * **[!UICONTROL タイプ]**：コンポーネントがディメンションか指標かを示します。 このフィールドは常に表示されます。

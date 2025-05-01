@@ -4,10 +4,10 @@ title: クイックセグメント
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: e9516455416c0e5f228d62d17dee5ef87c368337
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 26%
+source-wordcount: '1174'
+ht-degree: 23%
 
 ---
 
@@ -75,8 +75,8 @@ ht-degree: 26%
 |---|---|
 | **[!UICONTROL 名前]** | 名前は、クイックセグメント定義から自動的に派生します。 |
 | **[!UICONTROL 人物]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![アラート](/help/assets/icons/Alert.svg) | クイックセグメントから生成されたデータの視覚的なプレビュー。 棒グラフとパーセンテージは、全体的なデータがクイックセグメントの結果の一部である程度のinsightを提供します。 赤い ![ アラート ](/help/assets/icons/Alert.svg) は、クイックセグメントがデータを返さないことを示します。 |
-| **[!UICONTROL 含む]**<br/>**[!UICONTROL 除外]** | ドロップダウン ![ 山形ダウン ](/help/assets/icons/ChevronDown.svg) から、クイックセグメントの結果をパネルのデータに含めるか除外するかを選択します。 |
-| **[!UICONTROL イベント]**<br/>**[!UICONTROL セッション]**<br/>**[!UICONTROL ユーザー]** | クイックセグメントの範囲をドロップダウン ![ 山形記号 ](/help/assets/icons/ChevronDown.svg) から選択します。 |
+| **[!UICONTROL 含む]**<br/>**[!UICONTROL 除外]** | ドロップダウン ![ 山形ドロップダウン ](/help/assets/icons/ChevronDown.svg) から、クイックセグメントの結果をパネルのデータに含めるか除外するかを選択します。 |
+| **[!UICONTROL イベント]**<br/>**[!UICONTROL セッション]**<br/>**[!UICONTROL ユーザー]** | クイックセグメントの範囲をドロップダウンメニュー ![ 山形 ](/help/assets/icons/ChevronDown.svg) から選択します。 |
 
 ### 条件領域
 
@@ -84,7 +84,7 @@ ht-degree: 26%
 
 | 要素 | 説明 |
 |---|---|
-| **[!UICONTROL ディメンション]**<br/>**[!UICONTROL 指標]**<br/>**[!UICONTROL 日付範囲]** | ドロップダウン ![ChevronDown](/help/assets/icons/ChevronDown.svg) から、ディメンション、指標または日付範囲の条件を指定するかどうかを選択します。 |
+| **[!UICONTROL ディメンション]**<br/>**[!UICONTROL 指標]**<br/>**[!UICONTROL 日付範囲]** | ドロップダウンメニュー ![ 山形ダウン ](/help/assets/icons/ChevronDown.svg) から、ディメンション、指標、または日付範囲の条件を指定するかどうかを選択します。 |
 | **[!UICONTROL *コンポーネント&#x200B;*]** | 条件のコンポーネントフィールド。 コンポーネントを&#x200B;[!UICONTROL *入力して追加*]&#x200B;したり、リストからコンポーネントを選択したり、コンポーネントパネルからコンポーネントをドラッグ＆ドロップしたりすることができます。条件のコンポーネントフィールドにドロップできるのは、類似のコンポーネントのみです。例えば、ディメンション条件では、コンポーネントパネルからディメンションコンポーネントのみをドロップできます。<br/>また、既存のコンポーネントをドラッグ＆ドロップして置き換えることもできます。<br/>コンポーネントフィールドからコンポーネントを削除するには、![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択します。 |
 | **[!UICONTROL *演算子&#x200B;*]** | コンポーネントの演算子。詳しくは、[演算子](operators.md)を参照してください。ディメンションと指標でのみ使用できます。 |
 | **[!UICONTROL *value *]** | 条件の値。選択した演算子に応じて、リストから値を選択するか、値を入力します。 |
@@ -94,7 +94,7 @@ ht-degree: 26%
 
 | ボタン | 説明 |
 |---|---|
-| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 複数の条件を定義した場合にのみ使用できます。条件間のドロップダウン ![ChevronDown](/help/assets/icons/ChevronDown.svg) から選択します。 選択によって、クイックセグメントのブール論理が決まります。 条件が 3 つある場合は、ロジックを混在させることはできません。ブール論理は **[!UICONTROL AND]** または **[!UICONTROL OR]** のいずれかです。 |
+| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 複数の条件を定義した場合にのみ使用できます。条件の間で、ドロップダウンメニューから ![ 山形ロップダウン ](/help/assets/icons/ChevronDown.svg) を選択します。 選択によって、クイックセグメントのブール論理が決まります。 条件が 3 つある場合は、ロジックを混在させることはできません。ブール論理は **[!UICONTROL AND]** または **[!UICONTROL OR]** のいずれかです。 |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | クイックセグメントに別の条件を追加します。 このボタンは、クイックセグメントに対して 1 つまたは 2 つの条件を定義した場合にのみ使用できます。 |
 | **[!UICONTROL 適用]** | クイックセグメントに変更を適用します。 |
 | **[!UICONTROL ビルダーを開く]** | 「**[!UICONTROL よろしいですか？」という確認メッセージが表示されます。]**&#x200B;ダイアログを開きます。「**[!UICONTROL OK]**」を選択すると、[ クイックセグメントビルダー ](#quick-filter-builder) でセグメントを変更できなくなります。クイックセグメントの名前は **[!UICONTROL セグメント]** に変更され、濃い青の薄い左側のバーが表示されます。<br/> 通常の [ セグメントビルダー ](filter-builder.md)**[!UICONTROL が開き、「このセグメントをすべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]** というオプションが表示されます。 <ul><li>このオプションを選択して「**[!UICONTROL 適用]**」を選択すると、セグメントはコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg)**[!UICONTROL セグメント]** コンポーネントリストに追加されます。</li><li>このオプションを選択せずに **[!UICONTROL 適用]** を選択すると、セグメントは、Workspace プロジェクトのみのセグメントのままになります。</li></ul> |

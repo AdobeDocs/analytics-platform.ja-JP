@@ -4,10 +4,10 @@ title: フロービジュアライゼーションの設定方法
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 87%
 
    * ドロップダウンメニューを使用して、指標またはディメンションを選択する。
    * ディメンションまたは指標を左側のパネルからドラッグします。
-   * ディメンションまたは指標の名前を入力し始め、ドロップダウンリストに表示されたら選択します。
+   * ディメンションまたは指標の名前の入力を開始し、ドロップダウンメニューに表示されたら選択します。
 
    >[!IMPORTANT]
    >

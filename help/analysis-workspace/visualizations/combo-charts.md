@@ -4,10 +4,10 @@ title: コンボグラフビジュアライゼーション
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Ad
 
 1. ![コメント](/help/assets/icons/ComboChart.svg) [!UICONTROL コンボ]ビジュアライゼーションを追加します。[パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
-1. ドロップダウンリストから、X 軸のディメンションと Y 軸の指標を選択します。
+1. ドロップダウンメニューから、X 軸のディメンションと Y 軸の指標を選択します。
 
 1. 使用する[!UICONTROL 折れ線比較]のタイプを選択します。
 

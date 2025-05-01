@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 99%
+source-wordcount: '1147'
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ Customer Journey Analytics での概要データの使用、レポート、分�
 
 ### 精度とタイムゾーン
 
-Customer Journey Analytics で概要データを含むデータセットを設定すると、精度がデータから自動的に派生します。**[!UICONTROL タイムスタンプ]**&#x200B;と&#x200B;**[!UICONTROL タイムゾーン]**&#x200B;のドロップダウンの選択は、両方ともスキーマ定義から派生するので無効になります。
+Customer Journey Analytics で概要データを含むデータセットを設定すると、精度がデータから自動的に派生します。「**[!UICONTROL タイムスタンプ]**」と「**[!UICONTROL タイムゾーン]**」ドロップダウンメニューの選択項目は、どちらもスキーマ定義から派生するので、無効になっています。
 
 #### 精度
 

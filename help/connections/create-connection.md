@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '6794'
-ht-degree: 59%
+ht-degree: 58%
 
 ---
 
@@ -558,7 +558,7 @@ ht-degree: 59%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、スキーマでユーザー ID が定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、スキーマでユーザー ID が定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
 | **[!UICONTROL タイムスタンプ]** | この設定は、Experience Platformのイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動設定されます。 |
 | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
 | **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
@@ -578,7 +578,7 @@ ht-degree: 59%
 | **[!UICONTROL グローバルアカウント ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID からアカウント ID （アカウントの一意の ID）を選択します。 グローバルアカウントをコンテナとして接続に追加していない場合に適用できます。 |
 | **[!UICONTROL オポチュニティ ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID から商談 ID （商談の一意の ID）を選択します。 |
 | **[!UICONTROL 購入グループ ID]** | Experience Platformのデータセットスキーマで定義されている使用可能な ID から購入グループ ID （購入グループの一意の ID）を選択します。 |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
 | **[!UICONTROL タイムスタンプ]** | この設定は、Experience Platformのイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動設定されます。 |
 | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
 | **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
@@ -596,7 +596,7 @@ ht-degree: 59%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
 | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
 | **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
@@ -608,9 +608,9 @@ ht-degree: 59%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンリストからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
-| **[!UICONTROL グローバルアカウントフィールド]** | グローバルアカウントフィールドを選択して、使用可能な ID のドロップダウンリストからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントを接続のコンテナとして追加した場合に適用できます。 |
-| **[!UICONTROL アカウントフィールド]** | アカウントフィールドを選択して、使用可能な ID のドロップダウンリストからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントをコンテナとして接続に追加していない場合に適用できます。 |
+| **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platformのデータセットスキーマで定義されていました。 人物 ID として ID マップを使用する方法について詳しくは、[ 人物 ID としての ID マップの使用 ](#id-map) を参照してください。<p>選択するユーザー ID がない場合、スキーマでユーザー ID は定義されません。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+| **[!UICONTROL グローバルアカウントフィールド]** | グローバルアカウントフィールドを選択して、使用可能な ID のドロップダウンメニューからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントを接続のコンテナとして追加した場合に適用できます。 |
+| **[!UICONTROL アカウントフィールド]** | アカウントフィールドを選択して、使用可能な ID のドロップダウンメニューからデータセットのアカウントベースのレポートをサポートします。 グローバルアカウントをコンテナとして接続に追加していない場合に適用できます。 |
 | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 データソースのタイプには次のものがあります。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
 | **[!UICONTROL データソースの説明]** | データ ソースの種類として [ その他 ] を選択した場合のデータ ソースの説明。 |
 
@@ -646,7 +646,7 @@ ht-degree: 59%
 |---|---|
 | **[!UICONTROL キー]** | ルックアップデータセットに使用するキーです。 |
 | **[!UICONTROL 一致するキータイプ]** | データセットの結合方法として、「**[!UICONTROL コンテナで一致]** または **[!UICONTROL コンテナで一致]** を選択します。 詳しくは [ フィールドのコンテナで一致 ](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) を参照してください。 |
-| **[!UICONTROL 一致するキー]** | いずれかのイベントデータセットで結合するための一致するキーです。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。 <br/><br/> 選択した **[!UICONTROL 一致するキータイプ]** に基づいて、適切な値を選択します。<ul><li>**[!UICONTROL フィールドによる一致]**:![ フィールドによる一致 ](assets/match-by-field.png)<br/>**[!UICONTROL 「一致するキー]**」ドロップダウンメニューからフィールドを選択して、イベントデータセットの 1 つに結合します。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。</li><li>**[!UICONTROL コンテナで一致]**:![ コンテナで一致 ](assets/match-by-container.png)<br/>**[!UICONTROL 「一致するキー]**」ドロップダウンメニューからコンテナを選択して、イベントデータセットの 1 つに結合します。 接続の設定の一部として含めたコンテナによって、選択できるコンテナが決まります。 このリストが空の場合は、おそらく 1 つ以上のコンテナが設定されていません。</li></ul> |
+| **[!UICONTROL 一致するキー]** | いずれかのイベントデータセットで結合するための一致するキーです。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。 <br/><br/> 選択した **[!UICONTROL 一致するキータイプ]** に基づいて、適切な値を選択します。<ul><li>**[!UICONTROL フィールドによる一致]**:![ フィールドによる一致 ](assets/match-by-field.png)<br/>**[!UICONTROL 「一致するキー]**」ドロップダウンメニューからフィールドを選択して、イベントデータセットの 1 つに結合します。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。</li><li>**[!UICONTROL コンテナで一致]**:![ コンテナで一致 ](assets/match-by-container.png)<br/>**[!UICONTROL 一致するキー]** ドロップダウンメニューからコンテナを選択して、イベントデータセットの 1 つと結合するために使用します。 接続の設定の一部として含めたコンテナによって、選択できるコンテナが決まります。 このリストが空の場合は、おそらく 1 つ以上のコンテナが設定されていません。</li></ul> |
 | **[!UICONTROL グローバルアカウントフィールド]** | アカウントベースのレポートに使用するグローバルアカウント ID。 |
 
 
@@ -740,7 +740,7 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 | オプション | 説明 |
 |---|---|
 | **[!UICONTROL プライマリ ID 名前空間を使用]** | このオプションでは、Customer Journey Analytics に対し、`primary=true` 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用します。 この ID は、Experience Platform でパーティション分割に使用するプライマリキーです。 また、この ID は、（Customer Journey Analytics接続でのデータセットの設定方法に応じて）Customer Journey Analytics人物 ID として使用する際の主な候補でもあります。 |
-| **[!UICONTROL 名前空間]** | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は、[Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)のコンポーネントです。名前空間は、ID が関連付けられているコンテキストを示します。 名前空間を指定すると、Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。 Customer Journey Analytics は、すべての行の完全なデータセットスキャンを実行して、存在する名前空間を判断することはできません。そのため、使用可能なすべての名前空間がドロップダウンリストに表示されます。 データ内で指定されている名前空間を把握します。これらの名前空間は自動検出されません。 |
+| **[!UICONTROL 名前空間]** | （このオプションは、プライマリ ID 名前空間を使用しない場合にのみ使用できます）。ID 名前空間は、[Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)のコンポーネントです。名前空間は、ID が関連付けられているコンテキストを示します。 名前空間を指定すると、Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。 Customer Journey Analyticsでは、すべての行の完全なデータセットスキャンを実行して、どの名前空間が存在するかを判断することはできないので、使用可能なすべての名前空間がドロップダウンメニューに表示されます。 データ内で指定されている名前空間を把握します。これらの名前空間は自動検出されません。 |
 
 {style="table-layout:auto"}
 

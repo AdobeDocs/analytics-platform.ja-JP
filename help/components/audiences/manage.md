@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのオーディエンスの管理方�
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 65dcbf63d9e155cb7e04bf9a550151a37b8457e6
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 

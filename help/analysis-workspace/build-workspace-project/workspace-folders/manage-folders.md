@@ -5,10 +5,10 @@ title: Workspace でのフォルダーの管理
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Workspace でフォルダーを移動するには：
 * [プロジェクトリスト](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)で、移動するフォルダーを選択します。
 
    1. 選択したフォルダーのコンテキストメニュー![詳細](/help/assets/icons/More.svg)から使用可能な[アクション](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)から「**[!UICONTROL 移動先]**」を選択するか、青色のアクションバーを選択します。
-   1. **[!UICONTROL フォルダーを選択]**&#x200B;ダイアログで、**[!UICONTROL フォルダー]**&#x200B;ドロップダウンメニューからフォルダーの移動先のフォルダーを選択します。
+   1. **[!UICONTROL フォルダーを選択]** ダイアログで、「**[!UICONTROL フォルダー]**」ドロップダウンメニューからフォルダーの移動先のフォルダーを選択します。
 
    1. 「**[!UICONTROL 移動]**」を選択します。
 
@@ -52,7 +52,7 @@ Workspace でフォルダーを移動するには：
 
    1. [タイトル領域](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area)の![詳細](/help/assets/icons/More.svg)から「**[!UICONTROL フォルダーを移動]**」を選択します。
 
-   1. **[!UICONTROL フォルダーを選択]**&#x200B;ダイアログで、**[!UICONTROL フォルダー]**&#x200B;ドロップダウンメニューからフォルダーの移動先のフォルダーを選択します。
+   1. **[!UICONTROL フォルダーを選択]** ダイアログで、「**[!UICONTROL フォルダー]**」ドロップダウンメニューからフォルダーの移動先のフォルダーを選択します。
 
    1. 「**[!UICONTROL 移動]**」を選択します。
 

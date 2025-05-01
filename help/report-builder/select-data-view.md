@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # データビューを選択
 
-ドロップダウンリストからデータビューを選択するか、セルからデータビューを選択し、新しいデータビューでデータブロックを自動的に更新できます。
+ドロップダウンメニューからデータビューを選択するか、セルからデータビューを選択し、新しいデータビューでデータブロックを自動的に更新できます。
 
 ## セルからのデータビューの選択
 

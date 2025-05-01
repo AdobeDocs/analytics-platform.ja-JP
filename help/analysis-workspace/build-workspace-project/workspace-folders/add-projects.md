@@ -1,35 +1,35 @@
 ---
-description: Workspaceでフォルダーを追加または移動する方法を学ぶ
+description: Workspace でフォルダーを追加または移動する方法について説明します。
 keywords: Analysis Workspace
 title: フォルダーの追加または移動
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 22%
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
 # フォルダーへのプロジェクトの追加または移動
 
-[ プロジェクトリスト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) から直接フォルダーにプロジェクトを追加または移動できます。
+[プロジェクトリスト](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)から直接フォルダーにプロジェクトを追加または移動できます。
 
 ## フォルダーへのプロジェクトの移動
 
 >[!NOTE]
 >
->管理者が会社フォルダーにプロジェクトを移動すると、既存の共有権限が制限されている場合でも、フォルダーは全員で共有されます。 管理者が会社フォルダーからプロジェクトを移動すると、既存の共有権限が再適用されます。
+>管理者が会社フォルダーにプロジェクトを移動すると、既存の共有権限が制限されている場合でも、フォルダーは全員と共有されます。管理者が会社フォルダーからプロジェクトを移動すると、既存の共有権限に従います。
 >
 
-[ プロジェクトリスト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) からフォルダーにプロジェクトを移動するには：
+[プロジェクトリスト](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)からフォルダーにプロジェクトを移動するには：
 
-1. フォルダーに移動する 1 つ以上のプロジェクトを ![ 選択ボックス ](/help/assets/icons/SelectBox.svg) 選択します。
+1. ![SelectBox](/help/assets/icons/SelectBox.svg) で、フォルダーに移動するプロジェクトを 1 つ以上選択します。
 
-1. 可能な ![ アクション ](/help/assets/icons/FolderAddTo.svg) のリストから、「[FolderAddTo **** Move to](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)」を選択します。 **[!UICONTROL フォルダーを選択]** ダイアログが表示されます。
+1. 可能な[アクション](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)のリストから、![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **移動先**&#x200B;を選択します。**[!UICONTROL フォルダーを選択]**&#x200B;ダイアログが表示されます。
 
-1. **[!UICONTROL フォルダー]** ドロップダウンメニューからフォルダー名を選択します。 ドロップダウンを使用すると、フォルダー階層をトラバースして、任意のレベルのサブフォルダーを選択できます。
+1. **[!UICONTROL フォルダー]**&#x200B;ドロップダウンメニューからフォルダー名を選択します。ドロップダウンメニューを使用すると、フォルダー階層をトラバースして、任意のレベルのサブフォルダーを選択できます。
 
    ![ドロップダウンメニューと使用可能なサブフォルダーを表示する「フォルダーを選択」ビュー。](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
@@ -41,11 +41,11 @@ ht-degree: 22%
 
 ## フォルダーへのプロジェクトの追加
 
-[ プロジェクトリスト ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) からフォルダーにプロジェクトを追加するには、次を実行します。
+[プロジェクトリスト](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)からフォルダーにプロジェクトを追加するには：
 
-1. プロジェクトを追加するフォルダーの ![ 選択ボックス ](/help/assets/icons/SelectBox.svg) を選択します。
+1. ![SelectBox](/help/assets/icons/SelectBox.svg) で、プロジェクトを追加するフォルダーを選択します。
 
-1. 使用可能な ![ アクション ](/help/assets/icons/ProjectAdd.svg) のリストから「[ プロジェクトの追加 **** プロジェクトの追加 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)」を選択します。 **[!UICONTROL フォルダーを選択]** ダイアログが表示されます。
+1. 使用可能な[アクション](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)のリストから、![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **プロジェクトの追加**&#x200B;を選択します。**[!UICONTROL フォルダーを選択]**&#x200B;ダイアログが表示されます。
 
 1. 「[!UICONTROL *フォルダーに追加するプロジェクトを選択*]」から 1 つ以上のプロジェクトを選択します。
 

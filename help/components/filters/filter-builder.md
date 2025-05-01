@@ -4,10 +4,10 @@ title: セグメントの構築
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 45%
+source-wordcount: '1572'
+ht-degree: 43%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 45%
 
 定義のタイプと範囲を設定できます。
 
-1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]** を選択し、ドロップダウンから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を切り替えます。
-1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンから、定義の範囲を **[!UICONTROL Event]**、**[!UICONTROL Session]**、**[!UICONTROL Person]**、**[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Opportunity]** [!BADGE B2B editionB2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL Buying Group]**]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} のいずれにするかを選択します[!BADGE 
+1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL オプション]** を選択し、ドロップダウンメニューから **[!UICONTROL 含める]** または **[!UICONTROL 除外]** を選択します。
+1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を **[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL オポチュニティ]** [!BADGE B2B editionB2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}、**[!UICONTROL 購入グループ]**]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} のいずれにするかを選択します[!BADGE 
 
 これらの設定は、後で常に変更できます。
 
@@ -87,7 +87,7 @@ ht-degree: 45%
 
 コンポーネントを編集するには：
 
-* 演算子ドロップダウンメニューからコンポーネントの新しい演算子を選択します。
+* 「演算子」ドロップダウンメニューからコンポーネントの新しい演算子を選択します。
 * 必要に応じて、演算子に別の値を選択または指定します。
 * コンポーネントタイプがディメンションの場合は、アトリビューションモデルを定義できます。 詳しくは、[アトリビューションモデル](#attribution-models)を参照してください。
 

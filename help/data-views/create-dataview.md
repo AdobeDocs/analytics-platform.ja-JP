@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -70,7 +70,7 @@ ht-degree: 85%
 | 設定 | 説明 |
 | --- | --- |
 | **[!UICONTROL 接続]** | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
-| **[!UICONTROL 名前]** | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンリストに表示されます。 |
+| **[!UICONTROL 名前]** | 必須。データビューの名前。この値は、Analysis Workspaceの右上のドロップダウンメニューに表示されます。 |
 | **[!UICONTROL 外部 ID]** | 必須。ビジネスインテリジェンスツールなどの外部ソースで使用できる、データビューの名前。デフォルトは `unspecified` です。外部 ID を指定しない場合、名前はデータビューの名前から生成され、スペースはアンダースコアに置き換えられます。 |
 | **[!UICONTROL 説明]** | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 

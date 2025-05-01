@@ -3,10 +3,10 @@ description: 計算指標ビルダーは、ディメンション、指標、セ�
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -196,7 +196,7 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
 * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]**&#x200B;を選択します。
 
    1. 「**[!UICONTROL 関数]**」を選択します。
-   1. コンテナで、[!UICONTROL *選択…*]&#x200B;ドロップダウンメニューから関数を選択します。
+   1. コンテナで、「[!UICONTROL *選択…*]」ドロップダウンメニューから関数を選択します。
 
 関数コンテナの名前は、関数コンポーネントの名前を取って付けられます。例：![関数](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**。![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、機能の詳細を含むポップアップが表示されます。関数について詳しくは、「**[!UICONTROL 詳細情報]**」を選択してください。
 

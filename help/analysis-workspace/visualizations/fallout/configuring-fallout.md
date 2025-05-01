@@ -4,10 +4,10 @@ title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 ## 使用
 
 1. ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL フォールアウト]**&#x200B;ビジュアライゼーションを追加します。[パネルへのビジュアライゼーションの追加](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
-1. ページディメンションからページ（ホームなど）を&#x200B;*タッチポイントを追加*&#x200B;ドロップダウンメニューにドラッグします。
+1. ページ（ホームなど）をページディメンションから「*タッチポイントを追加*」ドロップダウンメニューにドラッグします。
 
    ![「タッチポイントを追加」フィールドにドラッグしたホームページディメンションのホームページ。](assets/fallout-drag.png)
 

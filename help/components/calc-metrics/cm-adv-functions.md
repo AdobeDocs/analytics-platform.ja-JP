@@ -1,10 +1,10 @@
 ---
 title: 高度な関数
-description: これらの関数にアクセスするには、関数ドロップダウンリストの「詳細を表示」を選択します。
+description: これらの関数にアクセスするには、関数ドロップダウンメニューの「詳細を表示」を選択します。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
 ht-degree: 89%
