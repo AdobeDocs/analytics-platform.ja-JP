@@ -2,10 +2,10 @@
 title: 製品使用状況の概要
 description: 組織が Customer Journey Analytics をどのように使用しているかに関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -126,3 +126,11 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL ベン図]
 
 プロジェクトを単に開いたり表示したりしているだけの場合、製品の使用状況によって個々のプロジェクトコンポーネントが追跡されることはありません。ただし、プロジェクトを開くというユーザーアクションは追跡されます。
+
+## 使用可能なテンプレート
+
+この機能で自動生成されたコンポーネントを使用する ](/help/analysis-workspace/templates/use-templates.md)0}Adobe テンプレート } が利用可能になっています。[
+
+**[!UICONTROL Adobe テンプレート]**/**[!UICONTROL その他]**/**[!UICONTROL 製品の使用状況の概要]**
+
+データビューセレクターで製品使用状況が自動的に作成されたデータ表示を選択し、**[!UICONTROL 製品使用状況の概要]** テンプレートを選択します。 **[!UICONTROL プレビュー]** を選択してテンプレートが使用するパネルを確認し、理想的なユースケースについて学ぶか、**[!UICONTROL テンプレートを使用]** を選択してAnalysis Workspaceで開きます。
