@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '665'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,20 @@ Quantum Metric は、ページ読み込み速度の低下、ページ読み込�
 * Quantum Metric の **Dev Ops** パッケージを利用できる権限が必要です。
 * Adobe Experience Platform Data Collection でタグを使用する必要があります。
 
-## 手順 1:Quantum Metric タグ拡張機能を使用して摩擦イベントをキャプチャする
+## 手順 1:Quantum Metric の摩擦イベントに対応するスキーマフィールドの作成
+
+このユースケースでは、データの送信先となる専用のスキーマフィールドが必要です。 このフィールドは、スキーマ内の任意の場所に作成し、好きな名前を付けることができます。 組織が名前や場所を好まない場合は、値の例を指定します。
+
+1. [experience.adobe.com](https://experience.adobe.com) にログインします。
+1. **[!UICONTROL データ収集]**/**[!UICONTROL スキーマ]** に移動します。
+1. リストから目的のスキーマを選択します。
+1. 目的のオブジェクトの横にある ![ フィールドを追加 ](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
+1. 右側で、目的の [!UICONTROL  名前 ] を入力します。 例：`qmErrorName`。
+1. 目的の [!UICONTROL  表示名 ] を入力します。 例：`Quantum Metric error name`。
+1. [!UICONTROL  タイプ ] を **[!UICONTROL 文字列]** として選択します。
+1. 「**[!UICONTROL 保存]**」を選択します。
+
+## 手順 2:Quantum Metric タグ拡張機能を使用して摩擦イベントをキャプチャする
 
 Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
 
@@ -40,7 +53,7 @@ return true;
 
 ![Quantum Metric エラー名のスクリーンショット ](assets/error-name.png)
 
-## 手順 2:Customer Journey Analyticsのデータビューへの 1 つ以上のディメンションと指標の追加
+## 手順 3:Customer Journey Analyticsのデータビューへの 1 つ以上のディメンションと指標の追加
 
 既存のデータビューを編集し、セッション ID をCustomer Journey Analyticsで使用可能なディメンションとして追加します。
 
@@ -52,7 +65,7 @@ return true;
 1. 必要なディメンションと指標をすべて作成したら、「**[!UICONTROL 保存]**」をクリックします。
 1. エラーイベントの完全なリストについては、Quantum Metric のドキュメントを参照してください。 その他の質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
 
-## 手順 3:Analysis Workspaceで、ディメンションと指標を残りのデータと共に使用する
+## 手順 4:Analysis Workspaceで、残りのデータと共にディメンションおよび指標を使用する
 
 残りの訪問者データと共に収集された Quantum Metric friction event データを使用すると、Customer Journey Analyticsの他のディメンションや指標とまったく同じように使用できます。
 
@@ -62,7 +75,7 @@ return true;
 1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. 分析に必要なディメンションと指標をWorkspace キャンバスにドラッグします。
 
-考えられる分析アイデアは次のとおりです。
+考えられる分析のアイデアは次のとおりです。
 
 * 摩擦イベントデータの経時的なトレンド
 * フォールアウトまたはファネルビジュアライゼーションで、Customer Journey Analytics イベントを一部のステップとして追加し、Quantum Metric friction イベントを他のステップとして追加します。 このレポートを使用すると、訪問者が最も頻繁にトラブルに巻き込まれる場所を確認できます。
