@@ -4,14 +4,34 @@ title: フロービジュアライゼーションの設定方法
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
+source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 85%
+source-wordcount: '1684'
+ht-degree: 79%
 
 ---
 
 # フロービジュアライゼーションの設定 {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="次の語句で始まる"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="次を含む"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="次の語句で終わる"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="パスディメンション"
+>abstract="選択したコンポーネントに続くパスや選択したコンポーネントから来るパスとして使用するディメンションを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -25,8 +45,23 @@ ht-degree: 85%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
->title="繰り返しを含める "
+>title="繰り返しを含める"
 >abstract="フロービジュアライゼーションは、ディメンションのインスタンスに基づいています。この設定には、繰り返しインスタンスを含めるか除外するオプションがあります（例：ページの再読み込み）。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="最初 / 最後の発生に制限"
+>abstract="最初/最後のタッチポイントが入口/出口である場合、結果はパスに制限されます。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="列の数"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="列ごとに展開される項目数"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
 
 
 
