@@ -4,10 +4,10 @@ title: フロービジュアライゼーションの設定方法
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
+source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 79%
+source-wordcount: '1709'
+ht-degree: 78%
 
 ---
 
@@ -63,6 +63,10 @@ ht-degree: 79%
 >title="列ごとに展開される項目数"
 >abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
 
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="更新するためにリセット"
+>abstract="このフィールドは、最初のビルドでのみ設定できます。 このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
 
 
 フロービジュアライゼーションは、web サイトやアプリ上の特定のコンバージョンイベントに起因するジャーニーを理解するのに役立ちます。 または、特定のコンバージョンイベントに至る。 ビジュアライゼーションは、ディメンション（およびディメンション項目）または指標を通過するパスをトレースします。
