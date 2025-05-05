@@ -68,7 +68,7 @@ Customer Journey Analytics で、**[!UICONTROL ツール]**／**[!UICONTROL 監�
    * CREATE： 「作成」アクションが実行されました。
    * DELETE： 「削除」アクションが実行されました。
    * EDIT： 「編集」アクションが実行されました。
-   * EMBARGO: [ レポート・アクティビティ・マネージャ ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) で要求を制限すると、アクションは EMBARGO の監査ログに記録されます。
+   * EMBARGO: [ レポート・アクティビティ・マネージャ ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) で要求を制限すると、アクションは EMBARGO の監査ログに記録されます。
    * EXPORT：「書き出し」アクションが実行されました。
    * ORG_CHANGE：組織変更アクションが実行されました。
    * REFRESH：「更新」アクションが実行されました。

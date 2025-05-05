@@ -43,7 +43,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 | ➋ | [ 取り込まれた、スキップされた、削除されたデータセットレコードなど ](manage-connections.md#connection-details) 接続の詳細を調べる」。 |
 | ➌ | [ 周期的なデータウィンドウ、使用するサンドボックス、接続に含まれるデータセットなど ](create-connection.md#create-or-edit-a-connection) 接続の設定の作成または編集。 |
 | ➍ | [ 接続へのデータセットの追加 ](create-connection.md#add-datasets)。 接続には少なくとも 1 つのイベントまたは概要データセットが必要ですが、様々なイベント、プロファイル、ルックアップ、概要データセットを含めることができます。 |
-| ➎ | 追加するデータセットの [ 設定を指定 ](create-connection.md#dataset-settings) します。 ユーザーベースまたは [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} アカウントベースの共通の ID に基づいて、様々なデータセットをどのようにリンクするかを決定できます。 |
+| ➎ | 追加するデータセットの [ 設定を指定 ](create-connection.md#dataset-settings) します。 ユーザーベースまたは [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"} アカウントベースの共通の ID に基づいて、様々なデータセットをどのようにリンクするかを決定できます。 |
 | ➏ | [ 既存のデータセットの設定の編集 ](create-connection.md#edit-a-dataset)。 後の段階で、データセット設定を常に再検討できます。 |
 
 

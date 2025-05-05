@@ -165,7 +165,7 @@ Customer Journey Analyticsのデータビューを使用すると、セッショ
 
 ### B2B コンテナ
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
 
 [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) にアクセスできる場合は、セグメントで使用するその他のコンテナを使用できます。 これらの追加コンテナの使用について詳しくは、[B2B の概念と機能 ](/help/getting-started/cja-b2b-concepts-features.md) を参照してください。
 

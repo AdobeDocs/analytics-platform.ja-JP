@@ -40,7 +40,7 @@ Quantum Metric は、ページ読み込み速度の低下、ページ読み込�
 
 ## 手順 2:Quantum Metric タグ拡張機能を使用して摩擦イベントをキャプチャする
 
-Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
+Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
 
 Adobe Experience Platform Data Collection のタグを使用して、摩擦イベントの名前を手動で設定し、XDM オブジェクトに含めて分析できるようにします。 これを行う 1 つの方法は、ルールのカスタムコードです。
 

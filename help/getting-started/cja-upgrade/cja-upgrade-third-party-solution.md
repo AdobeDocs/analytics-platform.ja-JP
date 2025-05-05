@@ -39,7 +39,7 @@ Google Analytics などのサードパーティ分析ソリューションから
 
    * Adobe Analytics以外のソリューションからプロジェクトやコンポーネントを移行することはできません。
 
-   * Analytics ソリューションによっては、ソースコネクタを使用して履歴データを取り込める場合があります。 詳しくは、Experience Platform ドキュメントの [Source コネクタの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) にある [Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#analytics) を参照してください。
+   * Analytics ソリューションによっては、ソースコネクタを使用して履歴データを取り込める場合があります。 詳しくは、Experience Platform ドキュメントの [Source コネクタの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home) にある [Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home#analytics) を参照してください。
 
 
 具体的なアドバイス、ガイダンス、サポートが必要な場合は、アドビ担当者にお問い合わせください。

@@ -36,7 +36,7 @@ Content Analyticsでコンテンツイベントデータを収集するには、
 Content Analytics ライブラリは、次の場合にデータを収集します。
 
 * Content Analyticsは、ページに読み込まれるタグライブラリに含まれています。
-* ページ URL は、付属のタグライブラリの一部である [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}0&rbrace;Content Analytics拡張機能 &rbrace; で設定されます。
+* ページ URL は、付属のタグライブラリの一部である [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}0&rbrace;Content Analytics拡張機能 &rbrace; で設定されます。
 
 
 ## Content Analytics イベント

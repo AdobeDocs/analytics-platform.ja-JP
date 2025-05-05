@@ -278,7 +278,7 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
    「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
+詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
 
 Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 

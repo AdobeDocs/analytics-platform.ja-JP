@@ -90,4 +90,4 @@ ht-degree: 89%
 
 ## 行の高さの変更
 
-プロジェクトの表示密度は、**[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 展開]** に設定できます。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。
+プロジェクトの表示密度は、**[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 展開]** に設定できます。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。

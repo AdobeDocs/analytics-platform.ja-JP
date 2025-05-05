@@ -22,17 +22,17 @@ ht-degree: 5%
 
 実装されたContent Analytics設定のデータ収集を開始するには、次の手順を実行します。
 
-1. [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} に従います。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
+1. [ 公開フロー ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"} に従います。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
 
-1. [ インストール ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)Content Analyticsを使用して、開発環境、ステージング環境またはパブリッシ `<head>` 環境のページの UI 要素に埋め込まれたコード。
+1. [ インストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation)Content Analyticsを使用して、開発環境、ステージング環境またはパブリッシ `<head>` 環境のページの UI 要素に埋め込まれたコード。
 
 
 ## データ収集の停止
 
 実装されたContent Analytics設定のデータ収集を停止するには、次の手順を実行します。
 
-1. Content Analyticsに従って、開発環境、ステージング環境または実稼動環境でページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) を削除します。
-1. [ 削除 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview):Content Analytics設定に関連するタグプロパティ。
+1. Content Analyticsに従って、開発環境、ステージング環境または実稼動環境でページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments) を削除します。
+1. [ 削除 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview):Content Analytics設定に関連するタグプロパティ。
 
 
 
@@ -40,32 +40,32 @@ ht-degree: 5%
 
 [ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
 
-Content Analytics設定に関連付けられたタグプロパティで [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; を使用して、次のアーティファクトを変更します。
+Content Analytics設定に関連付けられたタグプロパティで [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; を使用して、次のアーティファクトを変更します。
 
-* [ サンドボックスとデータストリーム ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
+* [ サンドボックスとデータストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
   >Adobe Content Analytics拡張機能で設定したサンドボックスとデータストリームが、以前の段階で [ ガイド付き設定 ](guided.md) を使用してContent Analytics用に設定されていることを確認します。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/> また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定された別のContent Analytics設定の妨げとならないことも確認します。
   >
 
-* [ エクスペリエンスのキャプチャと定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [ エクスペリエンスのキャプチャと定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
   エクスペリエンスを有効または無効にしたり、正規表現とクエリパラメーターの組み合わせを編集したりして、web サイト上でのコンテンツのレンダリング方法を決定できます。
 
-* [ イベントのセグメント化 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [ イベントのセグメント化 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 
 
-Adobe Content Analytics拡張機能で変更を行った後、使用している [ 公開フロー ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} を確認し、加えられた変更に基づいてデータの収集を開始します。
+Adobe Content Analytics拡張機能で変更を行った後、使用している [ 公開フロー ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"} を確認し、加えられた変更に基づいてデータの収集を開始します。
 
 
 
 >[!MORELIKETHIS]
 >
 >[ガイド付き設定](guided.md)
->[データ収集タグの公開 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) 概要
+>[データ収集タグの公開 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview) 概要
 >
 
 

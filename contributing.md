@@ -36,4 +36,4 @@ submitting a pull request!
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題はこのイシュートラッカーに報告しないでください。代わりに、[セキュリティ専門家に問題を報告します。](https://helpx.adobe.com/security/alertus.html)
+セキュリティ上の問題はこのイシュートラッカーに報告しないでください。代わりに、[セキュリティ専門家に問題を報告します。](https://helpx.adobe.com/jp/security/alertus.html)

@@ -86,7 +86,7 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
    * **[!UICONTROL AI アシスタント：データ分析]**
 
-   詳細については、管理者は [ 以下の手順 ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) を参照してください。
+   詳細については、管理者は [ 以下の手順 ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/access) を参照してください。
 
    ![AI アシスタント アイコン ](/help/assets/ai-asst-icon.png)
 

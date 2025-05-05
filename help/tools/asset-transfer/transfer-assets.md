@@ -93,7 +93,7 @@ Assetsは多くの場合、個々の所有者に結び付けられており、�
 
 アセット転送の主なユースケースの 1 つは、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード中です。
 
-Adobe Analyticsの [ コンポーネント移行 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) 機能を使用すると、管理者が所有するプロジェクトを他の管理者に移行できます。 その後、これらのプロジェクトを構成するすべてのコンポーネントがCustomer Journey Analyticsで再作成され、受信者管理者は、コンポーネントの作成者に関係なく、これらすべてのコンポーネントを所有します。
+Adobe Analyticsの [ コンポーネント移行 ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/component-migration/component-migration) 機能を使用すると、管理者が所有するプロジェクトを他の管理者に移行できます。 その後、これらのプロジェクトを構成するすべてのコンポーネントがCustomer Journey Analyticsで再作成され、受信者管理者は、コンポーネントの作成者に関係なく、これらすべてのコンポーネントを所有します。
 
 その後このアセット転送ツールを使用すると、管理者は、管理者であるかどうかに関係なく、正当な所有者にコンポーネントを再割り当てできます。
 

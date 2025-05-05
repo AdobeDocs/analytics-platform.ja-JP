@@ -66,7 +66,7 @@ ht-degree: 0%
    * **[!UICONTROL 説明]**: コンポーネントの [ 説明 ](/help/data-views/component-settings/overview.md)。
    * **[!UICONTROL コンテキストラベル]**: コンポーネントの [ コンテキストラベル ](/help/data-views/component-settings/overview.md)。
    * **[!UICONTROL 値を含める/除外]**: [ 値を含める/除外 ](/help/data-views/component-settings/include-exclude-values.md) で指定されたルール数をリストします。
-   * **[!UICONTROL データ使用ラベル]**：スキーマフィールドの [ データ使用ラベル ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)。
+   * **[!UICONTROL データ使用ラベル]**：スキーマフィールドの [ データ使用ラベル ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)。
    * **[!UICONTROL 非推奨]**：非推奨フラグが設定されているかどうかを示します。
    * **[!UICONTROL 形式]**：値が表示される形式。 ブール値は通常 `True | False` として表示され、指標は通常 `Decimal` として表示されます。
    * **[!UICONTROL 指標の重複排除]**: コンポーネントの [ 指標の重複排除 ](/help/data-views/component-settings/metric-deduplication.md) 設定。

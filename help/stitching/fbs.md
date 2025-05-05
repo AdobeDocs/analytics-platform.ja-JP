@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)`identityMap` フィールドグループの使用をサポートしています。
+フィールドベースのステッチでは、次のシナリオで [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity)`identityMap` フィールドグループの使用をサポートしています。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -214,7 +214,7 @@ ht-degree: 15%
    - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

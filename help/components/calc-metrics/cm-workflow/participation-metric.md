@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->管理者は、[ データビュー ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) の一部として、パーティシペーションなどのデフォルト以外のアトリビューションモデルを使用して指標を作成できます。 詳しくは、[ アトリビューションコンポーネントの設定 ](../../../data-views/component-settings/attribution.md) を参照してください。
+>管理者は、[ データビュー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views) の一部として、パーティシペーションなどのデフォルト以外のアトリビューションモデルを使用して指標を作成できます。 詳しくは、[ アトリビューションコンポーネントの設定 ](../../../data-views/component-settings/attribution.md) を参照してください。
 
 次の手順では、[ 計算指標の作成 ](/help/technotes//access-control.md#user-level-access) 権限を持つユーザーがパーティシペーション指標をどのように作成できるかを示します。
 

@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ### マイナーな変更
 
-厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
+厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
 
@@ -41,7 +41,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 ## Markdown を使用してトピックをフォーマットする方法
 

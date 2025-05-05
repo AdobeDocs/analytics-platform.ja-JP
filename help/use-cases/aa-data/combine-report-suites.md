@@ -59,7 +59,7 @@ Experience Platformのデータ準備機能は、Analytics ソースコネクタ
    | **XDM ExperienceEvent** クラス |
    | 「**Adobe Analytics ExperienceEvent テンプレート**」フィールドグループ |
 
-1. スキーマに別のフィールドグループを追加するか、[カスタムフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)してスキーマに追加します。ここでは、新しいフィールドグループを作成し、**Unified Fields** と呼ぶことにします。次に、この新しいフィールドグループに次のフィールドを追加します。
+1. スキーマに別のフィールドグループを追加するか、[カスタムフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)してスキーマに追加します。ここでは、新しいフィールドグループを作成し、**Unified Fields** と呼ぶことにします。次に、この新しいフィールドグループに次のフィールドを追加します。
 
    | 「Unified Fields」カスタムフィールドグループ |
    | --- |
@@ -158,6 +158,6 @@ Experience Platformのデータ準備機能は、Analytics ソースコネクタ
 
 ## データ準備とコンポーネント ID の比較
 
-前述のように、データ準備を使用すると、複数の Adobe Analytics レポートスイートをまたいで異なるフィールドを一緒にマッピングできます。これは、複数のデータセットのデータを 1 つのCustomer Journey AnalyticsCustomer Journey Analyticsに組み合わせる場合に便利です。 ただし、レポートスイートを別々のCustomer Journey Analytics接続のままにするつもりでも、それらの接続やデータビューで 1 セットのレポートを使用したい場合、Customer Journey Analyticsで基になるコンポーネント ID を変更すると、スキーマが異なる場合でもレポートの互換性を維持する手段が提供されます。 詳しくは、[コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html)を参照してください。
+前述のように、データ準備を使用すると、複数の Adobe Analytics レポートスイートをまたいで異なるフィールドを一緒にマッピングできます。これは、複数のデータセットのデータを 1 つのCustomer Journey AnalyticsCustomer Journey Analyticsに組み合わせる場合に便利です。 ただし、レポートスイートを別々のCustomer Journey Analytics接続のままにするつもりでも、それらの接続やデータビューで 1 セットのレポートを使用したい場合、Customer Journey Analyticsで基になるコンポーネント ID を変更すると、スキーマが異なる場合でもレポートの互換性を維持する手段が提供されます。 詳しくは、[コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=ja)を参照してください。
 
 コンポーネント ID の変更は、Customer Journey Analyticsのみの機能であり、リアルタイム顧客プロファイルおよび RTCDP に送信される Analytics ソースコネクタのデータには影響しません。

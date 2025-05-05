@@ -91,10 +91,10 @@ ht-degree: 74%
 
 * **セッション**：特定のセッションの後に期限切れとなります。デフォルトの有効期限の期間。
 * **個人レポートウィンドウ**：レポート期間の最後に期限切れとなります。
-* **グローバルアカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **アカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **商談レポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **購入グループレポート期間** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}：レポート期間の最後に有効期限が切れます。
+* **グローバルアカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
+* **アカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
+* **商談レポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
+* **購入グループレポート期間** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}：レポート期間の最後に有効期限が切れます。
 * **カスタム時間**：指定された期間（最大 90 日）が過ぎると期限切れになります。この有効期限オプションは、オリジナル配分モデルと最新配分モデルでのみ使用できます。時間ベースの有効期限を使用する場合は、レポート期間の開始前（最大 90 日間）の値が考慮されます。
 * **指標**：この指標がイベントで表示されると、ディメンションの永続化された値は直ちに期限切れになります。このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
 

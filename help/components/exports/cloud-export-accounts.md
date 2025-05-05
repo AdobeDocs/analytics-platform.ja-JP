@@ -92,7 +92,7 @@ ht-degree: 26%
 
      >[!AVAILABILITY]
      >
-     >この節の内容は、Amazon Web Services（AWS）上で動作するExperience Platformの実装に適用されます。 AWSで実行されるExperience Platformは、現在、限られた数のお客様が利用できます。 サポートされるExperience Platformインフラストラクチャについて詳しくは、[Experience Platformマルチクラウドの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud) を参照してください。
+     >この節の内容は、Amazon Web Services（AWS）上で動作するExperience Platformの実装に適用されます。 AWSで実行されるExperience Platformは、現在、限られた数のお客様が利用できます。 サポートされるExperience Platformインフラストラクチャについて詳しくは、[Experience Platformマルチクラウドの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/multi-cloud) を参照してください。
 
      [!UICONTROL **作成されたアカウント**] ダイアログが表示されます。
 
@@ -112,9 +112,9 @@ ht-degree: 26%
 
       1. まだダウンロードしていない場合は、[Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) をダウンロードします。
 
-      1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
+      1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
 
-         [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
+         [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
 
       1. Adobe Experience Platformのドキュメントに従って「[!UICONTROL **Blob コンテナ SAS URL**]」フィールドに移動したら、手順 3 でコピーした SAS URI を貼り付けます。
 

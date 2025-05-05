@@ -36,7 +36,7 @@ ht-degree: 70%
 
 実装の各ページにベースコードを直接追加することで、Platform Web SDKを手動でインストールできます。
 
-1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) の [ オプション 2：事前ビルドスタンドアロンバージョンのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) の節の手順に従います。
+1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk) の [ オプション 2：事前ビルドスタンドアロンバージョンのインストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) の節の手順に従います。
 
 {{upgrade-final-step}}
 

@@ -27,7 +27,7 @@ ht-degree: 90%
 
 パーソナライズされた最適化では、監視された機械学習とディープラーニングの最先端のテクノロジーを活用することで、ビジネスユーザー（マーケター）はビジネス目標を定義し、顧客データを利用してビジネス指向モデルをトレーニングし、パーソナライズされたオファーを提供して KPI を最大化できます。
 
-1. Journey Optimizer ガイドの [ パーソナライズされた最適化モデル ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) の情報に従ってください。
+1. Journey Optimizer ガイドの [ パーソナライズされた最適化モデル ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) の情報に従ってください。
 
 {{upgrade-final-step}}
 

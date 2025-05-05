@@ -101,5 +101,5 @@ CRM システム、ERP システム、またはその他のソースなど、顧
 
 >[!MORELIKETHIS]
 >
->ブログ：[Adobe Customer Journey Analyticsでのデータ処理と取り込みについて詳しく見る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>ブログ：[Adobe Customer Journey Analyticsでのデータ処理と取り込みについて詳しく見る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=ja)
 

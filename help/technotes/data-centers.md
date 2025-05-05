@@ -17,7 +17,7 @@ Adobe Customer Journey Analyticsは、北米、欧州、APAC のパブリック�
 
 プロビジョニング時に、お客様はAdobe Experience Platform データが存在する地域を指定します。 Adobe Experience Platform データレイクから CJA に取り込まれたデータは、同じリージョンに保存されます。
 
-詳しくは、Adobe Experience Cloud ドキュメントの [ 地域データ収集 ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) を参照してください。
+詳しくは、Adobe Experience Cloud ドキュメントの [ 地域データ収集 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/rdc) を参照してください。
 
 ## Azure
 

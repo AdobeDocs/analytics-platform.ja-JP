@@ -175,11 +175,11 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 様々なソースからデータを取り込むことができます。 次に、利用できる多くのソースの一部を示します。
 
-- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
+- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
 
-- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
+- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
 
-- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
+- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
 
 ソースコネクタを設定するには：
 
@@ -213,7 +213,7 @@ Adobe Analytics ソースコネクタの使用方法については、[ 従来�
 
 HTTP API ソースコネクタの使用方法について詳しくは、[ ストリーミングデータの取り込みと使用 ](./streaming.md) を参照してください。
 
-ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
+ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#terms-and-conditions)を参照してください。
 
 
 ## 接続の設定
