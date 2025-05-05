@@ -83,7 +83,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google Analytics データのAdobe Experience Platformへの読み込み ](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google Analytics データのAdobe Experience Platformへの読み込み ](https://video.tv.adobe.com/v/3437167?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

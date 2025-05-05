@@ -18,7 +18,7 @@ ht-degree: 21%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![ フリーフォームテーブルの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ 行と列の設定 ](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![ フリーフォームテーブルの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ 行と列の設定 ](https://video.tv.adobe.com/v/328502/?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
 
 {{videoaa}}
 
