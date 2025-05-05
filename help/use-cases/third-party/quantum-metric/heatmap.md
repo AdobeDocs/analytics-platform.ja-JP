@@ -27,7 +27,7 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 ## 手順 1:Workspaceでフリーフォームテーブルを作成し、セッション ID 値が Quantum Metric に直接リンクするように設定します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで ]**0}Workspace} を選択します。**[!UICONTROL 
+1. Customer Journey Analyticsに移動し、上部のメニューで **0&rbrace;Workspace&rbrace; を選択します。**
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
 1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. ページ URL ディメンションをWorkspace キャンバスにドラッグします。

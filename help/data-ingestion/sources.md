@@ -183,7 +183,7 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 ソースコネクタを設定するには：
 
-1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL  ソース ] を選択します。
+1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL &#x200B; ソース &#x200B;] を選択します。
 
 1. 使用可能なソースコネクタのリストからソースコネクタを選択します。
 
@@ -224,7 +224,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
 
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -270,7 +270,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -323,7 +323,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

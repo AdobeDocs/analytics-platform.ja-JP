@@ -81,7 +81,7 @@ ID は、多くの場合、別のフィールドグループで見つかりま�
 
 Experience Platformで ID フィールドを定義する方法について詳しくは、[UI での ID フィールドの定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) を参照してください。
 
-Analytics ソースコネクタを使用する際にAdobe Analytics ID がプライマリ ID にどのようにマッピングされるかについては ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)[Analytics データのExperience Platform ID を参照してください。 このマッピングは、Analytics ソースコネクタを使用していない場合でも、ID を設定するためのガイダンスとして機能する場合があります。
+Analytics ソースコネクタを使用する際にAdobe Analytics ID がプライマリ ID にどのようにマッピングされるかについては [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)Analytics データのExperience Platform ID を参照してください。 このマッピングは、Analytics ソースコネクタを使用していない場合でも、ID を設定するためのガイダンスとして機能する場合があります。
 
 
 #### ヒットレベルのデータと識別
@@ -121,7 +121,7 @@ Experience PlatformEdge Network（Web SDK、Mobile SDK、Server API）を使用�
 
 データ処理の違いの概要については、[Adobe AnalyticsとCustomer Journey Analytics間のデータ処理の比較 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) を参照してください。
 
-ただし、Experience Platformデータレイクで収集されるデータの `post_` プレフィックス列タイプでは、データフィードのユースケースで使用する前に高度な変換が必要です。 クエリでこれらの高度な変換を実行するには、セッション化、アトリビューション、重複排除に ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions)0}Adobe定義関数を使用する必要があります。 [これらの関数の使用方法については、[ 例 ](#examples) を参照してください。
+ただし、Experience Platformデータレイクで収集されるデータの `post_` プレフィックス列タイプでは、データフィードのユースケースで使用する前に高度な変換が必要です。 クエリでこれらの高度な変換を実行するには、セッション化、アトリビューション、重複排除に [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions)0&rbrace;Adobe定義関数を使用する必要があります。 これらの関数の使用方法については、[ 例 ](#examples) を参照してください。
 
 #### 参照
 

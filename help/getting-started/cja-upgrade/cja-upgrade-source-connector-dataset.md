@@ -51,7 +51,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 自動作成されたデータセットを Web SDK 実装用に作成したのと同じ接続に追加するには：
 
-1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsで、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
 
 1. [Web SDK 実装用に作成した](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)接続を選択します。
 

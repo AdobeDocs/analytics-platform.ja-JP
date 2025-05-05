@@ -13,19 +13,19 @@ ht-degree: 21%
 
 # [!UICONTROL 列設定]
 
-[!UICONTROL  列設定 ] を使用すると、列の書式を設定できます。条件付きのものも設定できます。
+[!UICONTROL &#x200B; 列設定 &#x200B;] を使用すると、列の書式を設定できます。条件付きのものも設定できます。
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![ フリーフォームテーブルの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ 行と列の設定 ](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![ フリーフォームテーブルの VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ 行と列の設定 ](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-[!UICONTROL  列設定 ] にアクセスするには、列見出しで ![ 列設定 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択します。
+[!UICONTROL &#x200B; 列設定 &#x200B;] にアクセスするには、列見出しで ![ 列設定 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択します。
 
 ![列設定](assets/column-settings.png)
 
@@ -51,7 +51,7 @@ ht-degree: 21%
 
 ## 条件付き書式 {#conditional-formatting}
 
-条件付き書式により、上限、中間点、下限を定義して書式を適用できます。[!UICONTROL  カスタム ] 制限が選択されていない限り、フリーフォームテーブル内で条件付き書式を適用することも、分類で自動的に有効になります。
+条件付き書式により、上限、中間点、下限を定義して書式を適用できます。[!UICONTROL &#x200B; カスタム &#x200B;] 制限が選択されていない限り、フリーフォームテーブル内で条件付き書式を適用することも、分類で自動的に有効になります。
 
 ![ 条件付き書式 ](./assets/conditional-formatting.png)
 

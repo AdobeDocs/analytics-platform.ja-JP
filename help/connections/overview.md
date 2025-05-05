@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # 接続の概要
 
-接続を使用すると、Customer Journey Analytics製品管理者は、イベント、ルックアップ、プロファイル、概要データセットなど、様々な [!DNL  Experience Platform] データソースとの接続を確立できます。 これらの接続により、接続からのデータを派生データビューに統合できます。 接続はCustomer Journey Analyticsの基盤であり、ソースデータセットから作成 [!DNL Experience Platform] れます。
+接続を使用すると、Customer Journey Analytics製品管理者は、イベント、ルックアップ、プロファイル、概要データセットなど、様々な [!DNL &#x200B; Experience Platform] データソースとの接続を確立できます。 これらの接続により、接続からのデータを派生データビューに統合できます。 接続はCustomer Journey Analyticsの基盤であり、ソースデータセットから作成 [!DNL Experience Platform] れます。
 
 >[!IMPORTANT]
 >

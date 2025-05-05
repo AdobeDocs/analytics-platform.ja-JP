@@ -53,9 +53,9 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 * **契約によるアクセス**:AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはAdobe アカウント担当者にお問い合わせください。 組織がデータインサイトエージェントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;]&#x200B;**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
    1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL 製品プロファイル]** に移動します
-   1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
+   1. [!UICONTROL AI アシスタント：製品ナレッジ &#x200B;] へのアクセスを提供する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
    1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
    1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** および **AI Assistant: Data Analysis** を **[!UICONTROL 含まれる権限項目]** に追加します。
@@ -70,7 +70,7 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
-2. Experience Cloud ホームから **0}Customer Journey Analytics} を選択します。**
+2. Experience Cloud ホームから **0&rbrace;Customer Journey Analytics&rbrace; を選択します。**
 
 3. プロジェクトページ上部のバナーで **[!UICONTROL 空のプロジェクト]** を選択して、新しい空のプロジェクトを開きます。
 

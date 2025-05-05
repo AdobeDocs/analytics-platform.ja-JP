@@ -41,7 +41,7 @@ ht-degree: 12%
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-time Customer Data Platform B2B editionのスキーマおよび [Real-time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b) を参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)Real-time Customer Data Platform B2B editionのスキーマおよび [Real-time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b) を参照してください 
 
 
 B2B データのユーザーベースの検索をサポートする接続を適切に設定するには、概要について次の図を使用し、次の手順に従います。
@@ -54,20 +54,20 @@ B2B データのユーザーベースの検索をサポートする接続を適�
 
    ![ キー – 一致するキー ](assets/key-matchingkey.png)
 
-   次の表に、各データセットの [!UICONTROL  ユーザー ID]、[!UICONTROL  キー ] および [!UICONTROL  一致するキー ] 値の概要例を示します。
+   次の表に、各データセットの [!UICONTROL &#x200B; ユーザー ID]、[!UICONTROL &#x200B; キー &#x200B;] および [!UICONTROL &#x200B; 一致するキー &#x200B;] 値の概要例を示します。
 
    | データセット | ユーザー ID | キー | 一致するキー <br/> （イベントデータセット内） |
    |---|---|---|---| 
    | B2B アクティビティデータセット | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B 人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
-   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
-   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**❸<br/> |
-   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
-   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
-   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
-   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❼ |
-   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❽ |
+   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**&#x200B;❷ |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❺ |
+   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❻ |
+   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❼ |
+   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 

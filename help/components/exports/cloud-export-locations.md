@@ -88,11 +88,11 @@ ht-degree: 20%
 
    1. [Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) を開きます。
 
-   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name ***に移動します。
+   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name &#x200B;***に移動します。
 
       >[!NOTE]
       >
-      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**になります。
+      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**&#x200B;です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**&#x200B;になります。
 
 
       ![Azure ストレージエクスプローラー内のファイルへのアクセス ](assets/azure-storage-explorer-access.png)

@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)[`identityMap` フィールドグループの使用をサポートしています。
+フィールドベースのステッチでは、次のシナリオで [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)`identityMap` フィールドグループの使用をサポートしています。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。

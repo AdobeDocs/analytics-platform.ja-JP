@@ -17,7 +17,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->セグメントのリストでは、[ セグメントマネージャー ](manage-filters.md#filters-list) の一部として [ セグメントリスト ](manage-filters.md) を参照しています。 ![ フィルター ](/help/assets/icons/Filter.svg)[ フィルターパネル ](manage-filters.md#filter-panel) を使用して、そのリストをフィルタリングできます。これは、同じ [ セグメントマネージャー ](manage-filters.md) の一部です。
+>セグメントのリストでは、[ セグメントマネージャー ](manage-filters.md#filters-list) の一部として [ セグメントリスト ](manage-filters.md) を参照しています。 ![ フィルター ](/help/assets/icons/Filter.svg) [ フィルターパネル ](manage-filters.md#filter-panel) を使用して、そのリストをフィルタリングできます。これは、同じ [ セグメントマネージャー ](manage-filters.md) の一部です。
 >
 
 

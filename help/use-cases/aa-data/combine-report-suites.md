@@ -32,8 +32,8 @@ Customer Journey Analyticsのお客様は、[ 接続 ](https://experienceleague.
 
 - **レポートスイート A** を（データセット A **としてAdobe Experience Platform データレイクに取り込む Analytics ソース接続を作成** データ準備を使用しない）。
 - **レポートスイート B** を（データセット B **としてAdobe Experience Platform データレイクに取り込む Analytics ソース接続を作成（データ準備を使用しない**。
-- データセット A とデータセット B を組み合わせた ](/help/connections/create-connection.md) すべてのレポートスイート **と呼ばれる** 0}Customer Journey Analytics接続を作成。[
-- すべてのレポートスイートCustomer Journey Analyticsに基づいた ](/help/data-views/create-dataview.md) グローバルビュー **と呼ばれる** 0} 接続データビューを作成します。[
+- データセット A とデータセット B を組み合わせた [&#128279;](/help/connections/create-connection.md) すべてのレポートスイート **と呼ばれる** 0&rbrace;Customer Journey Analytics接続を作成。
+- すべてのレポートスイートCustomer Journey Analyticsに基づいた [&#128279;](/help/data-views/create-dataview.md) グローバルビュー **と呼ばれる** 0&rbrace; 接続データビューを作成します。
 
 データセット A とデータセット B の間のスキーマの違いを解決するためにデータ準備を使用しない場合、グローバル表示データビューの eVar には、次の値が混在することになります。
 

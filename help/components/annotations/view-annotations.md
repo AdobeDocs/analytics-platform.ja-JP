@@ -19,8 +19,8 @@ ht-degree: 21%
 
 | ビジュアライゼーショ <br/> タイプ | 説明 |
 | --- | --- |
-| **Line **<br/>**Single Day** | 折れ線グラフのビジュアライゼーションで ![ 注釈 ](/help/assets/icons/Annotate.svg) を選択すると、注釈の詳細を含むポップアップが表示されます。<br/>![ 注釈 1 日 ](assets/annotation-single-day.png)<br/> 注釈を編集するには [ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
-| **Line **<br/>**Date range** | ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) を選択すると、注釈の詳細を含むポップアップと、日付範囲を示す行が下部に表示されます。<br/>![ 注釈範囲 ](assets/annotation-range.png) 注釈を編集するには、[ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
+| **Line &#x200B;**<br/>**Single Day** | 折れ線グラフのビジュアライゼーションで ![ 注釈 ](/help/assets/icons/Annotate.svg) を選択すると、注釈の詳細を含むポップアップが表示されます。<br/>![ 注釈 1 日 ](assets/annotation-single-day.png)<br/> 注釈を編集するには [ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
+| **Line &#x200B;**<br/>**Date range** | ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) を選択すると、注釈の詳細を含むポップアップと、日付範囲を示す行が下部に表示されます。<br/>![ 注釈範囲 ](assets/annotation-range.png) 注釈を編集するには、[ 注釈ビルダー ](create-annotations.md#annotation-builder) 「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。 注釈を削除するには、「![ 削除 ](/help/assets/icons/Delete.svg)」を選択します。 |
 | **フリーフォームテーブル** | フリーフォームテーブルでは、ビジュアライゼーションの右上にある注釈ボタンからすべての注釈にアクセスできます。 ![ 注釈 ](/help/assets/icons/Annotate.svg) を選択して、すべての注釈の（スクロールリスト）を表示します。<br/>![ 注釈テーブル ](assets/annotations-table.png)<br/> 注釈ごとに、![ 編集 ](/help/assets/icons/Edit.svg) を選択して [ 注釈ビルダーで注釈を編集 ](create-annotations.md#annotation-builder)、![ 削除 ](/help/assets/icons/Delete.svg) を選択して注釈を削除できます。 |
 
 {style="table-layout:auto"}

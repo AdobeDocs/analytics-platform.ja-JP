@@ -15,11 +15,11 @@ ht-degree: 37%
 
 >[!TIP]
 >
->[**[!UICONTROL  使用状況 ]**インターフェイス ](/help/connections/manage-connections.md#usage) を使用して、Customer Journey Analyticsのすべての接続における取り込まれた行とレポート可能な行の使用状況を** 表示 **します。
+>[**[!UICONTROL &#x200B; 使用状況 &#x200B;]**&#x200B;インターフェイス ](/help/connections/manage-connections.md#usage) を使用して、Customer Journey Analyticsのすべての接続における取り込まれた行とレポート可能な行の使用状況を **&#x200B; 表示 &#x200B;** します。
 
 
 
-Customer Journey Analyticsの使用状況は [**[!UICONTROL  接続 ]**インターフェイス ](/help/connections/create-connection.md) で管理できます。 このインターフェイスでは、Customer Journey Analytics データ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）のローリングウィンドウとして定義できます。
+Customer Journey Analyticsの使用状況は [**[!UICONTROL &#x200B; 接続 &#x200B;]**&#x200B;インターフェイス ](/help/connections/create-connection.md) で管理できます。 このインターフェイスでは、Customer Journey Analytics データ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）のローリングウィンドウとして定義できます。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 

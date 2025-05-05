@@ -54,7 +54,7 @@ Analytics ソースコネクタを使用するメリットとデメリットに�
 
 1. Analytics ソースコネクタからの各 Adobe Analytics ディメンションを Web SDK スキーマのディメンションにマッピングします。
 
-   1. 
+   1. &#x200B;
       <!-- how do you get here -->
 
    1. 「**[!UICONTROL 標準フィールドをマッピング]**」セクションで、「**[!UICONTROL カスタム]**」タブを選択します。

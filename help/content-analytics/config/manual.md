@@ -40,7 +40,7 @@ ht-degree: 5%
 
 [ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
 
-Content Analytics設定に関連付けられたタグプロパティで ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、次のアーティファクトを変更します。[
+Content Analytics設定に関連付けられたタグプロパティで [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; を使用して、次のアーティファクトを変更します。
 
 * [ サンドボックスとデータストリーム ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 

@@ -19,7 +19,7 @@ ht-degree: 15%
 - Experience Platformでの [ 取り込み ](#ingest) 概要データおよびその他のデータソース。
 - 概要データやその他のデータソース用に [ 接続 ](#connection) を設定します。
 - [ データビュー ](#data-view) を設定して、データソースを組み合わせます。
-- 結合したデータに関するレポートと分析を ](#workspace)0}Workspace} で行います。[
+- 結合したデータに関するレポートと分析を [&#128279;](#workspace)0&rbrace;Workspace&rbrace; で行います。
 
 このユースケースは、サマリーデータ、イベントデータ、ルックアップデータのサンプルデータを提供します。 すべてのデータにはランダムな値が含まれています。
 
@@ -305,7 +305,7 @@ Experience Platformでサマリースキーマを作成するには：
 
 サンプルデータのフィールドを含むフィールドグループを追加するには、次の手順に従います。
 
-1. **[!UICONTROL フィールドグループ ](/help/assets/icons/AddCircle.svg) で「![AddCircle]****[!UICONTROL Add]**」を選択します。
+1. **![[!UICONTROL フィールドグループ &#x200B;]](/help/assets/icons/AddCircle.svg) で「[AddCircle]**&#x200B;**[!UICONTROL Add]**」を選択します。
 1. **[!UICONTROL フィールドグループを追加]** ダイアログで、「**[!UICONTROL 新しいフィールドグループを作成]**」を選択します。
 1. フィールドグループに **[!UICONTROL 表示名]** を入力します（例：`Example Summary Data`）。 必要に応じて、説明を入力します。
 1. 「**[!UICONTROL フィールドグループを追加]**」を選択します。
@@ -314,7 +314,7 @@ Experience Platformでサマリースキーマを作成するには：
    1. **[!UICONTROL フィールド名]** を入力：`campaign_id`
    1. **[!UICONTROL 表示名]** を入力：`campaign_id`
    1. **[!UICONTROL データタイプを選択]** ドロップダウンメニューから **[!UICONTROL タイプ]** を選択：**[!UICONTROL 文字列]**
-   1. **[!UICONTROL 割り当て先]****[!UICONTROL フィールドグループ]** が選択されていることを確認し、ドロップダウンメニューから **[!UICONTROL 概要データの例]** を選択します。
+   1. **[!UICONTROL 割り当て先]**&#x200B;**[!UICONTROL フィールドグループ]** が選択されていることを確認し、ドロップダウンメニューから **[!UICONTROL 概要データの例]** を選択します。
    1. 下までスクロールし、「**[!UICONTROL 適用]**」を選択します。
 1. 概要データの他のフィールドに対して、前の手順を繰り返します。 正しい値については、以下の表を参照してください。
 
@@ -483,8 +483,8 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
          ![ トラッキングコード概要データ ](../assets/tracking-code-summary-data.png)
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
-         1. **[!UICONTROL 2} キャンペーン ID]** ドロップダウンメニューから ]**Dimension ID} を選択します。**[!UICONTROL &#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
-         1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL  レポートで非表示 ] 選択したディメンション（[!UICONTROL  キャンペーン ID]）が、Analysis Workspaceや他のCustomer Journey Analytics レポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
+         1. **[!UICONTROL 2&rbrace; キャンペーン ID]** ドロップダウンメニューから **Dimension ID&rbrace; を選択します。**&#x200B;この手順では、イベントデータと概要データがレポート用に適切に組み合わされていることを確認します。
+         1. オプションで、「レポートで非表示 **[!UICONTROL を有効にすることも]** できます。 [!UICONTROL &#x200B; レポートで非表示 &#x200B;] 選択したディメンション（[!UICONTROL &#x200B; キャンペーン ID]）が、Analysis Workspaceや他のCustomer Journey Analytics レポートツールで非表示になっていることを確認します。 このオプションを有効にした場合は、次のオプションを確認できます。
             1. **[!UICONTROL ディメンション]** リストで「**[!UICONTROL キャンペーン ID]**」ディメンションを選択します。
             1. **[!UICONTROL コンポーネント設定]** の **[!UICONTROL レポートでコンポーネントを非表示]** が自動的に有効になっていることに注意してください。
 
@@ -506,13 +506,13 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          1. ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Summary Data Group]** を展開します。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
-         1. **[!UICONTROL 2}Dimension]** ドロップダウンメニューから「]**キャンペーン名（ルックアップ派生フィールド）」を選択します。**[!UICONTROL &#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
+         1. **[!UICONTROL 2&rbrace;Dimension]** ドロップダウンメニューから「**キャンペーン名（ルックアップ派生フィールド）」を選択します。**&#x200B;この手順では、サンプルのルックアップデータデータセットのキャンペーン名（ルックアップ）がレポートに安全に使用できることを確認します（[Workspace](#workspace) を参照）。
 
       1. **[!UICONTROL 指標]** リストから「**[!UICONTROL 売上高]** 指標を選択します。 コンポーネントパネルで以下を実行します。
 
          ![ 売上高の概要データ ](../assets/revenue-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]** を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]**&#x200B;**[!UICONTROL ラストタッチ]** を選択します。
             1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. **[!UICONTROL 形式]** ドロップダウンメニューから **[!UICONTROL 通貨]** を選択します。
@@ -522,7 +522,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 
          ![ 注文概要データ ](../assets/orders-summary-data.png)
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!UICONTROL Attribution]**.
-            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]****[!UICONTROL ラストタッチ]** を選択します。
+            1. ![ アトリビューションモデル ](/help/assets/icons/AttributeLastTouch.svg) ドロップダウンメニューから **[!UICONTROL AttributeLastTouch]**&#x200B;**[!UICONTROL ラストタッチ]** を選択します。
             1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューから「**[!UICONTROL 30 日]**」を選択します。
          1. 展開 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. **[!UICONTROL 形式]** ドロップダウンメニューから **[!UICONTROL 小数]** を選択します。
@@ -542,12 +542,12 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 概要データに関するレポートを作成するには、Analysis Workspaceで新しいプロジェクトを作成します。
 
 1. 「」から「**[!UICONTROL Customer Journey Analytics]**」を選択します   ![ アプリ ](/help/assets/icons/Apps.svg)   アプリ切り替えボタン。
-1. トップメニューから ]**0}Workspace} を選択します。**[!UICONTROL 
+1. トップメニューから **0&rbrace;Workspace&rbrace; を選択します。**
 1. 「**[!UICONTROL プロジェクトを作成]**」を選択します。
 1. オプションを含むダイアログで **[!UICONTROL 空のWorkspace プロジェクト]** を選択して、空のWorkspace プロジェクトを作成します。
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-空の [!UICONTROL  フリーフォームテーブル ] で構成される [!UICONTROL  フリーフォーム ] パネルを持つ空のキャンバスが表示されます。
+空の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] で構成される [!UICONTROL &#x200B; フリーフォーム &#x200B;] パネルを持つ空のキャンバスが表示されます。
 
 1. パネル用に選択したデータビューが、概要データの設定を含むデータビューを参照していることを確認します。 例：**[!UICONTROL 概要データを使用したデータビューの例]**
 1. レポート対象のデータに対して日付範囲が有効であることを確認します。 例：**[!UICONTROL 過去 2 か月]**。
@@ -565,7 +565,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
    1. **[!UICONTROL 名前]** の `Cost per Impression` を指定します。
    1. **[!UICONTROL フォーマット]** に **[!UICONTROL 通貨]** を選択します。
    1. **[!UICONTROL 小数点以下の桁数]** の `4` を指定します。
-   1. ![ イベント ](/help/assets/icons/Event.svg)**[!UICONTROL コスト（概要）]****[!UICONTROL ÷]****[!UICONTROL インプレッション数（概要）]** を **[!UICONTROL 定義]** として使用します。
+   1. ![ イベント ](/help/assets/icons/Event.svg)**[!UICONTROL コスト（概要）]**&#x200B;**[!UICONTROL ÷]**&#x200B;**[!UICONTROL インプレッション数（概要）]** を **[!UICONTROL 定義]** として使用します。
    1. 「**[!UICONTROL 保存]**」を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** を選択して、別の新しい計算指標を追加します。
    1. **[!UICONTROL 名前]** の `Return on Ad Spend` を指定します。
@@ -579,7 +579,7 @@ Workspaceで正しいデータに関するレポートを確実に作成する�
 1. **[!UICONTROL 指標]** から ![ インプレッションあたりのコスト ](/help/assets/icons/Calculator.svg)**[!UICONTROL 計算ツール]** をドラッグし、指標をドロップして、フリーフォームテーブルに列を追加します。
    1. ![ 設定 ](/help/assets/icons/Setting.svg) 列設定を選択します。
       1. 「**[!UICONTROL パーセント]**」を無効にします。
-1. **[!UICONTROL 指標 ](/help/assets/icons/Calculator.svg) から**[!UICONTROL  広告費用対効果 ]**![ 計算ツール]** をドラッグし、指標をドロップして、フリーフォームテーブルに列を追加します。
+1. **![[!UICONTROL 指標 &#x200B;]](/help/assets/icons/Calculator.svg) から**&#x200B;[!UICONTROL &#x200B; 広告費用対効果 &#x200B;]&#x200B;**[ 計算ツール]** をドラッグし、指標をドロップして、フリーフォームテーブルに列を追加します。
    1. ![ 設定 ](/help/assets/icons/Setting.svg) 列設定を選択します。
       1. 「**[!UICONTROL パーセント]**」を無効にします。
       1. **[!UICONTROL 条件付き書式]** を有効にします。

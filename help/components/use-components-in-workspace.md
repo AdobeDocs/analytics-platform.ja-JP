@@ -132,5 +132,5 @@ Analysis Workspaceでの日付範囲の使用方法と管理方法について�
 
 アクセス制御に基づいて、次の操作を実行できます。
 
-* コンポーネントの ![ ブックマーク ](/help/assets/icons/Bookmark.svg)[!UICONTROL  データディクショナリ ] 定義にアクセスします。
+* コンポーネントの ![ ブックマーク ](/help/assets/icons/Bookmark.svg) [!UICONTROL &#x200B; データディクショナリ &#x200B;] 定義にアクセスします。
 * コンポーネントが定義されている ![ 編集 ](/help/assets/icons/Edit.svg) コンポーネントビルダーまたはデータビューにアクセスします。

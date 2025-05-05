@@ -48,7 +48,7 @@ Analytics スコアカードには、以下に示すように、エグゼクテ�
 
 スコアカードを作成するには、次の手順を実行する必要があります。
 
-1. Workspaceの [!UICONTROL  空のモバイルスコアカード ] テンプレートにアクセスします。
+1. Workspaceの [!UICONTROL &#x200B; 空のモバイルスコアカード &#x200B;] テンプレートにアクセスします。
 2. データを使用したスコアカードを構成し、保存します。
 
 ## 「[!UICONTROL 空のモバイルスコアカード]」テンプレートへのアクセス {#template}
@@ -96,7 +96,7 @@ Analytics スコアカードには、以下に示すように、エグゼクテ�
 
 個々のタイルにセグメントを適用するには、左パネルからセグメントをドラッグし、タイルの上に直接ドロップします。
 
-スコアカード内のすべてのタイルにセグメントを適用する場合は、スコアカードの上にタイルをドロップします。または、日付範囲の下のセグメントメニューでセグメントを選択して、適用することもできます。 Customer Journey Analytics Workspaceと同じ方法で ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) スコアカードに対してセグメントを設定し、適用します [。
+スコアカード内のすべてのタイルにセグメントを適用する場合は、スコアカードの上にタイルをドロップします。または、日付範囲の下のセグメントメニューでセグメントを選択して、適用することもできます。 Customer Journey Analytics Workspaceと同じ方法で [&#128279;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) スコアカードに対してセグメントを設定し、適用します 。
 
 ![ 作成セグメントをハイライト表示するセグメントドロップダウンセレクター ](assets/segment_ui.png)
 

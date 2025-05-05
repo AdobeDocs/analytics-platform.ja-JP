@@ -23,7 +23,7 @@ ht-degree: 19%
 1. タグプロパティを [ 手動で公開 ](manual.md) した場合にのみ、Content Analytics設定が効果的にデプロイされ、データ収集が開始されます。
 
 1. [ ガイド付き設定 ](guided.md) ウィザードを使用して行える実装済み設定の変更は、一部のみです。 例えば、「[ データビュー ](/help/data-views/data-views.md) を変更します。
-1. 関連するタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0}Adobe Content Analytics拡張機能 } を使用して、実装された設定に他の変更を加えることができます。[
+1. 関連するタグプロパティの [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; を使用して、実装された設定に他の変更を加えることができます。
 1. タグプロパティ [ 手動での再公開 ](manual.md) を行った場合にのみ、設定変更が効果的にデプロイされ、変更内容に基づいてデータ収集が開始されます。
 
 

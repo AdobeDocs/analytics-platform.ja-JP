@@ -43,7 +43,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Google AnalyticsからCustomer Journey Analyticsへの移行 – BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google AnalyticsからCustomer Journey Analyticsへの移行 – BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -83,7 +83,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Google Analytics データのAdobe Experience Platformへの読み込み ](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google Analytics データのAdobe Experience Platformへの読み込み ](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

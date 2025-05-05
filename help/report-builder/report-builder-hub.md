@@ -28,7 +28,7 @@ Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg)**[!
 
 * ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Create]** して [ 新しいデータブロックを作成 ](create-a-data-block.md) します。
 * ![TableManage](/help/assets/icons/TableManage.svg)**[!UICONTROL Manage]** 既存のデータブロックを [ 管理 ](manage-reportbuilder.md) します。
-* ![ カレンダー ](/help/assets/icons/Calendar.svg) **[!UICONTROL スケジュール]**[ ワークブックをメールで送信するスケジュールを管理 ](schedule-reportbuilder.md) します。
+* ![ カレンダー ](/help/assets/icons/Calendar.svg) **[!UICONTROL スケジュール]**&#x200B;[ ワークブックをメールで送信するスケジュールを管理 ](schedule-reportbuilder.md) します。
 
 ## コマンドパネル
 

@@ -74,7 +74,7 @@ Microsoft ストアへのアクセスがブロックされている場合：
 
   ![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png){zoomable="yes"}
 
-Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ]**タブの下に ](/help/assets/icons/AdobeLogoRedOnWhite.svg)AdobeLogoRedonWhite**[!UICONTROL  **[!UICONTROL Report Builder]** アイコンが表示されます。
+Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ]&#x200B;**タブの下に (/help/assets/icons/AdobeLogoRedOnWhite.svg)AdobeLogoRedonWhite** **[!UICONTROL Report Builder]** アイコンが表示されます。
 
 ![Excel の「Report Builder」アイコン ](./assets/rb_app_icon.png){zoomable="yes"}
 

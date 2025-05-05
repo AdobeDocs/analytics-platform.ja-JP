@@ -24,7 +24,7 @@ ht-degree: 26%
 
 1. レポートをクラウドに書き出すための [ 最小要件 ](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) を満たしていることを確認します。
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
-1. [!UICONTROL  書き出し ] ページで、「[!UICONTROL **場所アカウント**]」タブを選択します。
+1. [!UICONTROL &#x200B; 書き出し &#x200B;] ページで、「[!UICONTROL **場所アカウント**]」タブを選択します。
 
    ![ 「別のアカウントを追加」を示す書き出しページオプション ](assets/account-add.png)
 

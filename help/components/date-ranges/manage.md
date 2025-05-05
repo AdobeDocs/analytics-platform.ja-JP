@@ -14,7 +14,7 @@ ht-degree: 12%
 # 日付範囲を管理
 
 
-一元的な [!UICONTROL  日付範囲 ] 管理インターフェイスから、日付範囲の共有、フィルタリング、タグ付け、承認、コピー、共有、削除や、日付範囲をお気に入りとしてマークできます。 日付範囲を管理するには：
+一元的な [!UICONTROL &#x200B; 日付範囲 &#x200B;] 管理インターフェイスから、日付範囲の共有、フィルタリング、タグ付け、承認、コピー、共有、削除や、日付範囲をお気に入りとしてマークできます。 日付範囲を管理するには：
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、「**[!UICONTROL 日付範囲]**」を選択します。
 
@@ -92,7 +92,7 @@ ht-degree: 12%
 
 * Workspace プロジェクトでは、「[ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) アイコンを使用します。
 
-* [[!UICONTROL  日付範囲 ] リスト ](#date-ranges-list) で、日付範囲のタイトルを選択します。
+* [[!UICONTROL &#x200B; 日付範囲 &#x200B;] リスト ](#date-ranges-list) で、日付範囲のタイトルを選択します。
 
 [ 日付範囲ビルダー ](/help/components/date-ranges/create.md#date-range-builder) を使用して、日付範囲を編集します。
 

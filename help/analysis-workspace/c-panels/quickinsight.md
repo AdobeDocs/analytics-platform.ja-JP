@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 * セグメントの作成場所
 * その他の機能
 
-これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
+これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL &#x200B; 人気 &#x200B;] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 
@@ -62,7 +62,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 | [!UICONTROL 指標] | 指標は、ビュー数、クリックスルー数、リロード数、平均滞在時間、数量、注文件数、売上高など、人物のアクティビティに関する量的な情報です。 |
 | **[!UICONTROL ビジュアライゼーション]** | Workspace には、データを視覚的に表現する[様々なビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意されています。棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図などがあります。 |
 | **[!UICONTROL ディメンションの分類]** | ディメンションの分類は、ディメンションを他のディメンションで分類する方法です。例えば、モバイルデバイスごとに米国の州を分類して、州ごとのモバイルデバイス訪問数を取得できます。または、モバイルデバイスをモバイルデバイスタイプ、地域、内部キャンペーンなどで分類することもできます。 |
-| **[!UICONTROL セグメント]** | セグメントを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、に基づいて [!UICONTROL  人物 ] セグメントを作成できます <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
+| **[!UICONTROL セグメント]** | セグメントを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、に基づいて [!UICONTROL &#x200B; 人物 &#x200B;] セグメントを作成できます <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
 
 ## 使用
 

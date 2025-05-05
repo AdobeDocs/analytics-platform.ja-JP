@@ -23,7 +23,7 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 
 ## モバイルアプリのインタラクションとイベント
 
-このサンプルフローでは、[!UICONTROL  画面名 ] ディメンションを使用して、ユーザーがアプリ内の様々な画面（シーン）をどのように使用しているかを確認します。 返される上部の画面は **[!UICONTROL luma:content:ios:en:home]** で、これはアプリのホームページです。
+このサンプルフローでは、[!UICONTROL &#x200B; 画面名 &#x200B;] ディメンションを使用して、ユーザーがアプリ内の様々な画面（シーン）をどのように使用しているかを確認します。 返される上部の画面は **[!UICONTROL luma:content:ios:en:home]** で、これはアプリのホームページです。
 
 ![ 追加された項目を示すフロー。](assets/flowapp.png)
 

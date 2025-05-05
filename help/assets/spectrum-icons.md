@@ -17,7 +17,7 @@ ht-degree: 14%
 
 次の表は、Spectrum アイコン スニペットの設定で使用可能なすべての Spectrum アイコンを示しています。 という名前を使用して、スニペットをマークダウンに追加し、スペクトルアイコンを表示させます。
 
-更新については、[Wiki ページ ](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) をご覧ください。
+更新については、[Wiki ページ ] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) をご覧ください。
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 

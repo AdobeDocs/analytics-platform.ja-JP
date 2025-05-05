@@ -71,7 +71,7 @@ Customer Journey Analyticsは、ディメンション、指標、セグメント
    | **[!UICONTROL プロジェクトのみの指標]** | 単一プロジェクト用に作成された計算指標を編集すると、このダイアログの上部に情報ボックスが表示されます。詳しくは、[ 単一プロジェクトの計算指標の作成 ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) を参照してください。 <p>この計算指標をすべてのプロジェクトで使用できるようにする場合は、「この指標をすべてのプロジェクトで使用できるようにする **[!UICONTROL というオプションを選択し、コンポーネントリストに追加します]**。</p> |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
    | **[!UICONTROL 外部 ID]** ![必須](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する際の計算指標の名前。値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
-   | **[!UICONTROL 説明]** | セグメントの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL  概要 ] で自動的に使用可能になっているので、説明する必要はありません。 |
+   | **[!UICONTROL 説明]** | セグメントの説明（例：`Calculated metric to define the conversion rate.` 計算指標の数式は、既に [!UICONTROL &#x200B; 概要 &#x200B;] で自動的に使用可能になっているので、説明する必要はありません。 |
    | **[!UICONTROL 形式]** | 計算指標の形式を選択します。**[!UICONTROL 小数]**、**[!UICONTROL 時間]**、**[!UICONTROL 割合]**、**[!UICONTROL 通貨]**&#x200B;から選択できます。 |
    | **[!UICONTROL 小数点以下の桁数]** | 選択した形式の小数点以下の桁数を指定します。選択した形式が小数、通貨、割合である場合にのみ有効になります。 |
    | **[!UICONTROL 上昇傾向を次の形式で表示]** | 計算指標の上昇傾向を ▲ **[!UICONTROL 良好（緑色）]**&#x200B;として表示するか、▼ **[!UICONTROL 不良（赤色）]**&#x200B;として表示するかを指定します。 |

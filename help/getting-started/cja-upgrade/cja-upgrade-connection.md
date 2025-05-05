@@ -31,7 +31,7 @@ ht-degree: 97%
 
 ## 接続の作成と設定 {#create-connection}
 
-1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsで、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
    ![名称未設定の接続設定](assets/create-conn1.png)

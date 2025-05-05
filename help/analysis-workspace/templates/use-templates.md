@@ -128,27 +128,27 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
    以下のセクションは、使用可能なカテゴリに対応し、各テンプレートに関する情報を提供します。
 
-   * [[!UICONTROL ](#most-popular)
+   * &lbrack;[](#most-popular)
 
-   * [[!UICONTROL ](#engagement)
+   * &lbrack;[](#engagement)
 
-   * [[!UICONTROL ](#web-conversion)
+   * &lbrack;[](#web-conversion)
 
-   * [[!UICONTROL ](#web-audience)
+   * &lbrack;[](#web-audience)
 
-   * [[!UICONTROL ](#web-acquisition)
+   * &lbrack;[](#web-acquisition)
 
-   * [[!UICONTROL ](#mobile-mobile-app)
+   * &lbrack;[](#mobile-mobile-app)
 
-   * [[!UICONTROL ](#mobile-mobile-device-information)
+   * &lbrack;[](#mobile-mobile-device-information)
 
-   * [[!UICONTROL ](#time-parting)
+   * &lbrack;[](#time-parting)
 
-   * [[!UICONTROL ](#cross-channel)
+   * &lbrack;[](#cross-channel)
 
-   * [[!UICONTROL ](#other-channels)
+   * &lbrack;[](#other-channels)
 
-   * [[!UICONTROL ](#ajo)
+   * &lbrack;[](#ajo)
 
 ### 一番人気 {#most-popular}
 

@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![ モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Assist エグゼクティブ ](https://video.tv.adobe.com/v/343460/){target="_blank"} を参照してください。
+デモビデオについては、![ モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ ](https://video.tv.adobe.com/v/343460/){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -124,7 +124,7 @@ ht-degree: 73%
 
    ![セグメント](assets/segment_filter.png)
 
-1. [!UICONTROL  スコアカード ] の更新情報を取得します。 [!UICONTROL  スコアカード ] に、関心のある指標や分類のすべてが含まれていない場合は、Customer Journey Analytics チームに連絡してスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL &#x200B; スコアカード &#x200B;] の更新情報を取得します。 [!UICONTROL &#x200B; スコアカード &#x200B;] に、関心のある指標や分類のすべてが含まれていない場合は、Customer Journey Analytics チームに連絡してスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. アプリケーションでフィードバックを残す手順は、次のとおりです。
 

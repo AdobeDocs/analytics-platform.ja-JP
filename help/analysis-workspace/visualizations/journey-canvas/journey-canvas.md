@@ -51,13 +51,13 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
 
 >[!ENDSHADEBOX]
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、次に進んだ（フォールスルー）かを確認できます。
 
-イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせて ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、[ ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。変更を行うと、データがリアルタイムで更新されます。
+イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせて [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、 ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。変更を行うと、データがリアルタイムで更新されます。
 
 [ノードは「最終的なパス」として接続されます](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)。つまり、2 つのノード間で発生するイベントに関係なく、訪問者が最終的に 1 つのノードから別のノードに移動する限り、訪問者はカウントされます。ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
 
@@ -206,7 +206,7 @@ Journey Optimizerとジャーニーキャンバスの同期を理解するには
 
   「任意のユーザーと共有」リンクを使用すると、Journey Optimizerで行った変更は、プロジェクトがCustomer Journey Analyticsに保存されるまで、ジャーニーキャンバスに反映されません。
 
-  「任意のユーザーと共有」リンクについて詳しくは、[ プロジェクトを共有 [ の「任意のユーザーとプロジェクトを共有（不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください ](/help/analysis-workspace/curate-share/share-projects.md)。
+  「任意のユーザーと共有」リンクについて詳しくは、[&#128279;](/help/analysis-workspace/curate-share/share-projects.md) プロジェクトを共有 [ の「任意のユーザーとプロジェクトを共有（不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください 。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 

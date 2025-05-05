@@ -22,7 +22,7 @@ ht-degree: 76%
 * **B** - Workspace プロジェクトのビジュアライゼーションのコンテキストメニューで、「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
 * **C** - Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します
 * **D** - Workspace プロジェクトでは、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
-* **E** - Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Calendar.svg) **** 日付範囲 ![ で「追加 ](/help/assets/icons/Add.svg)」を選択します。
+* **E** - Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Calendar.svg) **&#x200B;**&#x200B;日付範囲 ![ で「追加 ](/help/assets/icons/Add.svg)」を選択します。
 * **F** – 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションの場合は、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
 注釈を定義するには、[[!UICONTROL 日付範囲ビルダー]](#annotation-builder)を使用します。

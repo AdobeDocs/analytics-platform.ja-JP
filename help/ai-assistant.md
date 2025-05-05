@@ -49,9 +49,9 @@ Customer Journey Analyticsに基づいて商品ナレッジ取得モデルをト
 
 * **契約によるアクセス**:AI アシスタントを使用できない場合は、組織の管理者またはAdobeアカウント担当者にお問い合わせください。 組織が AI アシスタントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ]**[!UICONTROL AI アシスタント：製品ナレッジ]** 権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Consoleの次の手順に従う必要があり ] す。
+* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;]&#x200B;**[!UICONTROL AI アシスタント：製品ナレッジ]** 権限によってこのツールへのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) は、[!UICONTROL Admin Consoleの次の手順に従う必要があり &#x200B;] す。
    1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL 製品]** / **[!UICONTROL Customer Journey Analyticsプロファイル]** に移動します
-   1. [!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセスを提供する製品プロファイルのタイトルを選択します。
+   1. [!UICONTROL AI アシスタント：製品ナレッジ &#x200B;] へのアクセスを提供する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
    1. ![ 編集 ](/help/assets/icons/Edit.svg) を選択して **[!UICONTROL レポートツール]** を編集します。
    1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** を **[!UICONTROL 含まれる権限項目]** に追加します。

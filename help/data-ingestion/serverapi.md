@@ -85,7 +85,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、リストから **[!UICONTROL 点滅]** フィールドグループを選択します。 このフィールドグループは、コンソールで Blinding Light という架空のゲームをプレイするユーザーの進行状況を追跡するために作成されます。
+   1. [!UICONTROL &#x200B; フィールドグループを追加 &#x200B;] ダイアログで、リストから **[!UICONTROL 点滅]** フィールドグループを選択します。 このフィールドグループは、コンソールで Blinding Light という架空のゲームをプレイするユーザーの進行状況を追跡するために作成されます。
 
       ![ 明滅フィールドグループ ](assets/schema-fieldgroup-blindinglight.png)
 
@@ -101,7 +101,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-gamingschema-plus.png)
 
-1. 「[!UICONTROL  フィールドプロパティ ]」パネルで、[!UICONTROL  フィールド名 ] に `identification` と入力し、**[!UICONTROL 表示名 ] に [!UICONTROL ID]** と入力し、[!UICONTROL  タイプ ] で **[!UICONTROL オブジェクト]** を選択し、[!UICONTROL  フィールドグループ ] で **[!UICONTROL ExperienceEvent Core v2.1]** を選択します。
+1. 「[!UICONTROL &#x200B; フィールドプロパティ &#x200B;]」パネルで、[!UICONTROL &#x200B; フィールド名 &#x200B;] に `identification` と入力し、**[!UICONTROL 表示名 &#x200B;] に [!UICONTROL ID]** と入力し、[!UICONTROL &#x200B; タイプ &#x200B;] で **[!UICONTROL オブジェクト]** を選択し、[!UICONTROL &#x200B; フィールドグループ &#x200B;] で **[!UICONTROL ExperienceEvent Core v2.1]** を選択します。
 
    >[!NOTE]
    >
@@ -282,7 +282,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -324,7 +324,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -375,7 +375,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 

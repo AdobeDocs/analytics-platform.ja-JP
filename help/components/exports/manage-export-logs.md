@@ -102,17 +102,17 @@ This option is not available when selecting multiple logs. -->
 
 ## 列を設定
 
-「[!UICONTROL  ログ ]」タブの列を追加または削除して、表示する情報を設定できます。
+「[!UICONTROL &#x200B; ログ &#x200B;]」タブの列を追加または削除して、表示する情報を設定できます。
 
 列ヘッダーを選択して、その列でログを並べ替えます。 デフォルトでは、ログは書き出しが開始された日時で並べ替えられます。
 
-「[!UICONTROL  ログ ] タブの列を設定するには：
+「[!UICONTROL &#x200B; ログ &#x200B;] タブの列を設定するには：
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
 1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. **ログ** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」アイコン [!UICONTROL  テーブルをカスタマイズ ] を選択します。
+1. **ログ** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」アイコン [!UICONTROL &#x200B; テーブルをカスタマイズ &#x200B;] を選択します。
 
    以下の列を表示できます。
 
@@ -126,14 +126,14 @@ This option is not available when selecting multiple logs. -->
    | サイズ | 書き出しのサイズ。<p>ファイルサイズは 1024 を基準に計算されます。これは KIB および MIB として表されることがあります。 クラウドプロバイダーがベース 1000 を使用してサイズを計算すると、クラウドプロバイダーに表示されるサイズが、ここに表示されるサイズとは少し異なる場合があります。</p> |
    | 場所 | データが書き出されたアカウント上の場所。 |
    | アカウント | データが書き出されたアカウント。 |
-   | ステータス | エクスポートのステータス。 使用可能なステータスは、[!UICONTROL  保留中 ]、[!UICONTROL  配信済み ]、[!UICONTROL  失敗 ] です。 |
+   | ステータス | エクスポートのステータス。 使用可能なステータスは、[!UICONTROL &#x200B; 保留中 &#x200B;]、[!UICONTROL &#x200B; 配信済み &#x200B;]、[!UICONTROL &#x200B; 失敗 &#x200B;] です。 |
    | 配信日 | エクスポートが行われた日付。 |
    | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 使用可能なアカウントタイプは、[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]、[!UICONTROL Adobe Experience Platform] です。 |
    | 行数 | エクスポートされたテーブルに含まれる行数。 |
 
    {style="table-layout:auto"}
 
-1. 表示する列が選択されていることを確認します。 選択した列は [!UICONTROL  ログ ] ページに表示され、関連情報が表示されます。
+1. 表示する列が選択されていることを確認します。 選択した列は [!UICONTROL &#x200B; ログ &#x200B;] ページに表示され、関連情報が表示されます。
 
 ## 監査ログの表示
 

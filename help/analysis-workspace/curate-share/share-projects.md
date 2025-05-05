@@ -86,7 +86,7 @@ ht-degree: 96%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**を選択します。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。
 未保存の変更がある場合は、まずプロジェクトを保存するように求められます。
 
    共有プロジェクトダイアログボックスが表示されます。ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
@@ -153,7 +153,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
+>* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方で、[!UICONTROL &#x200B; 任意のユーザーと共有 &#x200B;] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
 
 >[!BEGINSHADEBOX]
 

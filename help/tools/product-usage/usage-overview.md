@@ -129,7 +129,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
 
 ## 使用可能なテンプレート
 
-この機能で自動生成されたコンポーネントを使用する ](/help/analysis-workspace/templates/use-templates.md)0}Adobe テンプレート } が利用可能になっています。[
+この機能で自動生成されたコンポーネントを使用する [&#128279;](/help/analysis-workspace/templates/use-templates.md)0&rbrace;Adobe テンプレート &rbrace; が利用可能になっています。
 
 **[!UICONTROL Adobe テンプレート]**/**[!UICONTROL その他]**/**[!UICONTROL 製品の使用状況の概要]**
 

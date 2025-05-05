@@ -77,7 +77,7 @@ ht-degree: 94%
 
 ## データビュー
 
-各パネルは、パネルの右上にあるドロップダウンメニューの [ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**で識別される ![ データビュー ](/help/data-views/data-views.md) に関連付けられています。
+各パネルは、パネルの右上にあるドロップダウンメニューの ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**&#x200B;で識別される [ データビュー ](/help/data-views/data-views.md) に関連付けられています。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -155,7 +155,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ドロップダウンセグメント ](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ドロップダウンセグメント ](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 

@@ -78,7 +78,7 @@ The catch here is that they can only populate those IDs today if they have a dir
 Adobeの標準検索ディメンションについてレポートするには、Customer Journey Analyticsで [ データビュー ](/help/data-views/data-views.md) を作成する際に、これらのディメンションを 1 つ以上追加する必要があります。 **[!UICONTROL データビュー]**/**[!UICONTROL コンポーネント]** で以下を実行します。
 
 1. 左パネルのドロップダウンメニューから **[!UICONTROL スキーマフィールド]** を選択します。
-1. スキーマフィールドコンテナのリストから ]**0}Adobe ルックアップ } を選択します。**[!UICONTROL 
+1. スキーマフィールドコンテナのリストから **0&rbrace;Adobe ルックアップ &rbrace; を選択します。**
 1. 追加するディメンションが見つかるまで、**[!UICONTROL ブラウザー]**、**[!UICONTROL モバイル]** または **[!UICONTROL オペレーティングシステム]** にドリルダウンします。
 1. ディメンションを **[!UICONTROL 含まれるコンポーネント]** 内の **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** テーブルにドラッグします。
 
