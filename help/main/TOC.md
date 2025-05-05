@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
+source-git-commit: 1015ce248785248846f1f9ff7c6461adc0c54797
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 83%
@@ -39,7 +39,7 @@ ht-degree: 83%
       + [よくある質問](../getting-started/cja-faq.md)
       + [BI ソリューションとの比較](../getting-started/cja-vs-bi.md)
       + [AI アシスタント](../ai-assistant.md)
-      + [データインサイトエージェント](../data-analysis-ai.md)
+      + [Data Insights エージェント](../data-analysis-ai.md)
    + Customer Journey AnalyticsB2B edition {#cja-b2b}
       + [概要](/help/getting-started/cja-b2b-edition.md)
       + [B2B の概念と機能](/help/getting-started/cja-b2b-concepts-features.md)
@@ -323,7 +323,7 @@ ht-degree: 83%
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数の高いディメンション](../components/dimensions/high-cardinality.md)
    + [指標](../components/apply-create-metrics.md)
-   + セグメント {#cja-segments}
+   + セグメント {#cja-filters}
       + [概要](../components/filters/filters-overview.md)
       + [セグメントの作成](../components/filters/create-filters.md)
       + [セグメントの構築](../components/filters/filter-builder.md)
@@ -378,7 +378,7 @@ ht-degree: 83%
       + [書き出しの管理](/help/components/exports/manage-exports.md)
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
-   + データ要素 {#data-dictionary}
+   + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
