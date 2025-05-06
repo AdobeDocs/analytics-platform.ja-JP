@@ -93,7 +93,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 >[!BEGINSHADEBOX]
 
-計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"}を参照してください。
+計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/33739?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics では、ECID 以外にも ID の概念を拡張し�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/34690/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
