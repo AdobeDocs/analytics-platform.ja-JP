@@ -4,12 +4,10 @@ description: Quantum Metric ヒートマップデータを使用して、ペー�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
@@ -24,10 +22,10 @@ Quantum Metric ヒートマッピングをCJA データにリンクすると、�
 
 Quantum Metric のヒートマップ機能にアクセスするには、Quantum Metric の **UX Ops** パッケージの権利が必要です。
 
-## 手順 1:Workspaceでフリーフォームテーブルを作成し、セッション ID 値が Quantum Metric に直接リンクするように設定します。
+## 手順 1:Analysis Workspaceでのリンクの設定
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **0&rbrace;Workspace&rbrace; を選択します。**
+1. Customer Journey Analyticsに移動し、上部のメニューで ]**0}Workspace} を選択します。**[!UICONTROL 
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
 1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. ページ URL ディメンションをWorkspace キャンバスにドラッグします。
@@ -41,6 +39,8 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 1. リンクの 1 つをテストし、Quantum Metric 拡張機能が表示された状態で URL でリンクが開くかどうかを確認します。 これらのリンクは新しいタブで開くので、Workspace プロジェクトは開いたままです。
+
+![ ヒートマップ ](assets/heatmap.png)
 
 ## 手順 2:Customer Journey Analytics内のリンクをクリックしてヒートマップを表示する
 

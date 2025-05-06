@@ -4,12 +4,10 @@ description: Link Quantum Metric セッションでは、CJAデータを使用�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 
 以下の手順では、Adobe Experience Platform Data Collection でタグを使用していることを前提としています。 組織でタグを使用しない場合は、これらのデータ収集方法を手動の web SDK実装に適応させることができます。
 
-詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
+詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
 
 ## 手順 1:Quantum Metric セッション ID に対応するスキーマフィールドの作成
 
@@ -32,9 +30,9 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 1. **[!UICONTROL データ収集]**/**[!UICONTROL スキーマ]** に移動します。
 1. リストから目的のスキーマを選択します。
 1. 目的のオブジェクトの横にある ![ フィールドを追加 ](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
-1. 右側で、目的の [!UICONTROL &#x200B; 名前 &#x200B;] を入力します。 例：`qmSessionId`。
-1. 目的の [!UICONTROL &#x200B; 表示名 &#x200B;] を入力します。 例：`Quantum Metric session ID`。
-1. [!UICONTROL &#x200B; タイプ &#x200B;] を **[!UICONTROL 文字列]** として選択します。
+1. 右側で、目的の [!UICONTROL  名前 ] を入力します。 例：`qmSessionId`。
+1. 目的の [!UICONTROL  表示名 ] を入力します。 例：`Quantum Metric session ID`。
+1. [!UICONTROL  タイプ ] を **[!UICONTROL 文字列]** として選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
 ## 手順 2:Quantum Metric タグ拡張機能を使用して Quantum Metric セッション ID を取得する
@@ -48,7 +46,7 @@ Adobe Experience Platformに送信するデータに Quantum Metric セッショ
 1. 次の設定を行います。
    * **[!UICONTROL 名前]**: `Quantum Metric session ID`
    * **[!UICONTROL 拡張機能]**: [!UICONTROL Core]
-   * **[!UICONTROL データ要素タイプ]**:[!UICONTROL &#x200B; カスタムコード &#x200B;]
+   * **[!UICONTROL データ要素タイプ]**:[!UICONTROL  カスタムコード ]
 1. 「**[!UICONTROL エディターを開く]**」ボタンを選択して、次のコードを貼り付けます。
 
    ```js
@@ -94,7 +92,7 @@ XDM オブジェクトが送信イベントアクション設定に既に含ま�
 Workspaceでフリーフォームテーブルを作成し、セッション ID 値が Quantum Metric に直接リンクするように設定します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **0&rbrace;Workspace&rbrace; を選択します。**
+1. Customer Journey Analyticsに移動し、上部のメニューで ]**0}Workspace} を選択します。**[!UICONTROL 
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
 1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. セッション ID ディメンションをWorkspace キャンバスにドラッグします。
@@ -109,6 +107,8 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID �
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
 各セッション ID は、クリック可能なリンクになりました。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
+
+![ セッションの再生 ](assets/session-replay.png)
 
 ## 手順 5:Customer Journey Analyticsからのセッションの表示
 

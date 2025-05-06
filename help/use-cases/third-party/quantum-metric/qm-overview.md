@@ -1,10 +1,8 @@
 ---
 title: Quantum Metric 統合のユースケース
 description: Quantum Metric データを、Customer Journey Analyticsの残りのデータと組み合わせる方法を説明します。
-hide: true
-hidefromtoc: true
 exl-id: a74e7143-e814-42c3-a706-b64427dc9ecb
-source-git-commit: acff9827d7507e536c4cd1d8e047b7e7b62a2642
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 0%
