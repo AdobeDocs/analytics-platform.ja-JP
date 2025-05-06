@@ -3,20 +3,20 @@ title: ディメンションの概要
 description: ディメンションの概要とCustomer Journey Analyticsでの使用方法を説明します
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 36%
 
 ---
 
 # ディメンションの概要
 
-Dimensionは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、ディメンションは、[Analysis Workspace](/help/analysis-workspace/home.md) または [Report Builder](/help/report-builder/report-buider-overview.md) でレポートを作成する際に使用します。
+ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し ](/help/report-builder/rb-overview.md) す。
 
-Customer Journey Analyticsのディメンションの種類は無制限です。値には、数値、テキスト、オブジェクト、リスト、またはすべてが混在する場合があります。
+Customer Journey Analyticsのディメンションの種類は無制限です。値には、数値、テキスト、オブジェクト、リストまたはすべてが混在する場合があります。
 
-Customer Journey Analyticsの基本レポートは、指標の列（一般的には数値）に対して、ディメンションの行（一般的には文字列値）を表示します。
+Customer Journey Analyticsの基本レポートでは、指標の列（一般的には数値）に対する、ディメンションの行（一般的には文字列値）が表示されます。
 
 例えば、ページ ディメンションを人物指標と組み合わせると、訪問回数の多いページを人物で示したランクレポートが表示されます。
 
@@ -33,11 +33,11 @@ Customer Journey Analyticsの基本レポートは、指標の列（一般的に
 
 ## ディメンションの作成
 
-Customer Journey Analytics管理者は [ データビュー内でディメンションを作成 ](/help/data-views/create-dataview.md#components) できます。
+Customer Journey Analytics管理者は [ データビュー内でディメンションを作成する ](/help/data-views/create-dataview.md#components) ことができます。
 
 ## デフォルトのディメンション
 
-データビューを作成すると、デフォルトで次の時間ベースのコンポーネントがディメンションとしてデータビューに追加されます。
+データビューを作成する場合、デフォルトでは、次の時間ベースのコンポーネントがディメンションとしてデータビューに追加されます。
 
 - 15 分
 - 30 分

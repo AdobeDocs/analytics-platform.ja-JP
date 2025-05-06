@@ -4,7 +4,7 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 90%
@@ -154,7 +154,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>共有、書き出し、統合</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">プロジェクト</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">クラウドの書き出し</a> - <a href="/help/integrations/overview.md">統合</a>
+      <strong>共有、書き出し、統合</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">プロジェクト</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード</a> - <a href="/help/report-builder/rb-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">クラウドの書き出し</a> - <a href="/help/integrations/overview.md">統合</a>
     </td>
   </tr>
 </table>

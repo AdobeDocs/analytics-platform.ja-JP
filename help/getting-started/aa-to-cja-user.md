@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 98%
@@ -24,7 +24,7 @@ Customer Journey Analytics のいくつかの機能は、業界標準に合わ�
 
 * データ分析には、強力な [Analysis Workspace](/help/analysis-workspace/home.md) を引き続き使用できます。 ワークスペースの動作は、従来の Adobe Analytics 内の動作と同じです。
 * [Adobe Analytics ダッシュボード](/help/mobile-app/home.md)も、同じバージョンを使用可能で、Customer Journey Analytics と Adobe Analytics で同様に機能します。
-* [Report Builder](/help/report-builder/report-buider-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています。 （以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
+* [Report Builder](/help/report-builder/rb-overview.md) には、MS Windows、macOS および Excel（web バージョン）で動作する新しいインターフェイスが用意されています。 （以前のバージョンの Report Builder は、VMware 上で実行しない限り、Mac 上では使用できませんでした）。ただし、このバージョンは、従来の AA データリクエストにはまだ対応していません。
 
 ## レポートの変更点
 
@@ -78,7 +78,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 セグメントは、技術的には Adobe Analytics から Customer Journey Analytics に移行されませんが、コンポーネント移行ツールを使用して、Customer Journey Analytics で Adobe Analytics セグメントを再作成できます。 セグメントは、マッピングされたディメンションと指標に基づいて Customer Journey Analytics で再作成されます。 詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行の準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)を参照してください。
 
-[!DNL Customer Journey Analytics] からExperience Platform統合プロファイルへの [!UICONTROL &#x200B; セグメント &#x200B;] （[!UICONTROL &#x200B; セグメント &#x200B;]）の共有や公開はまだできません（この機能は現在開発中です）。
+[!DNL Customer Journey Analytics] からExperience Platform統合プロファイルへの [!UICONTROL  セグメント ] （[!UICONTROL  セグメント ]）の共有や公開はまだできません（この機能は現在開発中です）。
 
 セグメントの概念の変更に加えて、セグメントコンテナも次のように更新されます。
 
@@ -88,12 +88,12 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## 計算指標の概念の変更
 
-計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL &#x200B; Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
+計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
 
 
 >[!BEGINSHADEBOX]
 
-計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/33739?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics では、ECID 以外にも ID の概念を拡張し�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/34690/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
