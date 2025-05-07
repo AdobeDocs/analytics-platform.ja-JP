@@ -5,10 +5,10 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL トレンド]**&#x200B;分析は、製品のパフォーマンスやユーザーの行動の推移に関する貴重なインサイトを提供します。このレポートの横軸は時間間隔で、縦軸は目的のイベントの測定値です。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423442/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## ユースケース
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 表示]**：この分析と[頻度](frequency.md)を切り替えます。
 * **[!UICONTROL イベントと指標]**：測定するイベントまたは指標です。各選択範囲が、グラフの系列やテーブルの行として表されます。イベントと指標をクエリで組み合わせることはできません。最初の選択を行ったら、残りのクエリの選択項目は同じタイプにする必要があります。最大 5 つの選択項目を含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、イベント数、セッション数、ユーザー数、ユーザーの割合、セッションごとのイベント数、ユーザーごとのイベント数があります。「次としてカウント」オプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]** には、[!UICONTROL  ユーザー ]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザーの割合 ]、[!UICONTROL  セッションあたりのイベント ]、[!UICONTROL  ユーザーあたりのイベント ] が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}Customer Journey Analytics B2B editionでは、次の追加の **[!UICONTROL B2B オプション]** を使用できます。[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL  購入グループ ]、[!UICONTROL  商談 ]、[!UICONTROL  グローバルアカウントの割合 ]、[!UICONTROL  アカウントの割合 ]、[!UICONTROL  購入グループの割合 ]、[!UICONTROL  商談の割合 ]、    グローバルアカウントごとのイベント</li></ul>「次としてカウント」オプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
 * **[!UICONTROL セグメント]**：測定するセグメント。選択した各セグメントによって、グラフの系列とテーブルの行の数が 2 倍になります。最大 5 つのセグメントを含めることができます。
 * **[!UICONTROL 分類プロパティ]**：グラフの系列とテーブルの行を、選択したプロパティの値で分類します。単一の分類プロパティがサポートされています。テーブルには上位 20 個の値が表示され、最大 10 個の値をグラフに表示できます。![表示／非表示切り替え](../assets/hide-in-chart.png)アイコンを切り替えることで、グラフの行を非表示にしたり表示したりできます。
 

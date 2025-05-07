@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423463/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## ユースケース
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 表示]**：この分析と[アクティブな増加率](active-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベント。この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。クエリには 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL ユーザー数]と[!UICONTROL ユーザーの割合]が含まれます。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]** には、[!UICONTROL  ユーザー数 ] および [!UICONTROL  ユーザーの割合 ] が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}Customer Journey Analytics B2B editionでは、[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL  購入グループ ]、[!UICONTROL  商談 ]、[!UICONTROL  グローバルアカウントの割合 ]、[!UICONTROL  アカウントの割合 ]、[!UICONTROL  購入グループの割合 ]、および [!UICONTROL  商談の割合 ] という追加の **** B2B オプションを使用できます。</li></ul>
 * **[!UICONTROL セグメント]**：測定するセグメント。クエリには 1 つのセグメントを含めることができます。
 
 ### 時間比較

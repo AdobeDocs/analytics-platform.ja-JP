@@ -5,23 +5,20 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 98%
+source-wordcount: '677'
+ht-degree: 91%
 
 ---
 
 # [!UICONTROL アクティブな成長]分析 {#active-growth}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_activegrowth_button"
 >title="アクティブな増加"
 >abstract="新規、継続、再来訪または休眠状態のユーザーを特定します。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL アクティブな増加]**&#x200B;分析は、特定の期間におけるユーザーの増加と獲得に関するインサイトを提供します。横軸は時間間隔、縦軸はユーザーの測定値です。ユーザーは次の 4 つのカテゴリに分類されます。
@@ -34,7 +31,7 @@ ht-degree: 98%
 すべてのアクティブユーザー（新規 + 繰り返し + 復帰）は、横軸の上にティールの網掛けとして表示され、すべての休眠状態のユーザーは、横軸の下にオレンジで表示されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423396/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## ユースケース
 
@@ -54,7 +51,7 @@ ht-degree: 98%
 
 * **[!UICONTROL 表示]**：この分析と[純増加率](net-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベントです。この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。クエリには 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。オプションには、[!UICONTROL ユーザー数]と[!UICONTROL ユーザーの割合]が含まれます。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]** には、[!UICONTROL  ユーザー数 ] および [!UICONTROL  ユーザーの割合 ] が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}Customer Journey Analytics B2B editionでは、[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL  購入グループ ]、[!UICONTROL  商談 ]、[!UICONTROL  グローバルアカウントの割合 ]、[!UICONTROL  アカウントの割合 ]、[!UICONTROL  購入グループの割合 ]、および [!UICONTROL  商談の割合 ] という追加の **** B2B オプションを使用できます。</li></ul>
 * **[!UICONTROL セグメント]**：データのセグメント化の基準にするセグメント。 クエリには 1 つのセグメントを含めることができます。
 
 ### グラフ設定
