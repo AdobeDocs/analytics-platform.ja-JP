@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのオーディエンス公開の概�
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 87%
+source-wordcount: '435'
+ht-degree: 76%
 
 ---
 
@@ -17,10 +17,12 @@ Customer Journey Analytics で検出されたオーディエンスを作成し�
 
 公開オーディエンスを使用すると、Customer Journey Analytics 内で見つかったインサイトを活用してアクションを行う明確な方法がわかります。アクションの例として、次のようなものがあります。
 
-* Adobe Journey Optimizer でジャーニーにオーディエンスを使用する。
+* Adobe Journey Optimizerでのジャーニーにオーディエンスを使用する。
+Journey Optimizerに公開されているオーディエンスの使用について詳しくは、Experience Platform ドキュメントの [ オーディエンスの基本を学ぶ ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) を参照してください。
 * Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートする。
 * Customer Journey Analytics のイベントベースのデータから派生する有用な属性を使用して、リアルタイム顧客プロファイルを充実させる。
-* オーディエンスの公開後に、最小限の待ち時間でこれらをすべて行います。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish#latency)
+* オーディエンスの公開後に、最小限の待ち時間でこれらすべてを行います。
+詳しくは、[ オーディエンスの作成と公開 ](/help/components/audiences/publish.md#latency-considerations) の [ 待ち時間に関する考慮事項 ](/help/components/audiences/publish.md) を参照してください。
 * 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開。
 
 Customer Journey Analytics で作成するオーディエンスは、プロファイルで有効になっているデータセットに基づいている必要はありません。プロファイルに関連するデータセットやスキーマを有効にせずに、履歴データを Experience Platform に取り込むことができます。次に、これらのデータセットを使用して、Customer Journey Analytics で関連するオーディエンスを検出し、これらのオーディエンスを Experience Platform のリアルタイム顧客プロファイルに公開して、アクティベーションを行います。
