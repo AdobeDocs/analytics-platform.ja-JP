@@ -71,7 +71,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]** インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL  オーディエンスビルダー ] が開きます。 |
+   | **[!UICONTROL オーディエンス]** インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL &#x200B; オーディエンスビルダー &#x200B;] が開きます。 |
    | Analysis Workspace のビジュアライゼーションから | Analysis Workspace の多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。例えば、[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の項目または[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)のノードのコンテキストメニューから「**[!UICONTROL オーディエンスを作成]**」を選択できます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**メモ：**&#x200B;オーディエンスに計算指標を含めることはできません。計算指標を含むオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。</p> |
    | セグメントの作成/編集 UI から | 「このセグメントからオーディエンスを作成 **[!UICONTROL というボックスをオンに]** ます。 この方法を使用すると、セグメントが事前設定されます。 詳しくは、[ セグメントの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
 
@@ -101,7 +101,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 | **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
 | **[!UICONTROL 説明]** | 他のオーディエンスと区別するためのオーディエンスの説明。例：`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/>以下から選択できます。 <ul><li>**[!UICONTROL 1 回限り]**&#x200B;のオーディエンス：更新を必要としないオーディエンス（デフォルト）。このオプションは、特定の 1 回限りのキャンペーンなどに役立ちます。<br/>**[!UICONTROL 1 回限りの日付範囲]**&#x200B;を指定する必要があります。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を入力できます。</li><li>更新が必要なオーディエンス。選択できる項目は次のとおりです。<ul><li>**[!UICONTROL 4 時間ごと]**：4 時間ごとに更新されるオーディエンス</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、以下を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウの更新]**。オーディエンスが評価される、ルックバック期間（今日を基点としてカウントした日数）を定義します。オプションから選択するか、カスタム期間を定義できます。最大期間は 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスの更新を停止する日数を定義します。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付を選択できます。デフォルトは作成日の 1 年後です。有効期限が切れるオーディエンスは、スケジュール済みレポートの有効期限が切れる場合と同様に扱われます。管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul> Customer Journey Analytics の使用権限に応じて、オーディエンスの更新回数は 75〜150 回に制限されています。</li></ul> |
-| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメント ]**パネルから 1 つ以上のセグメントをセグメ**[!UICONTROL  ト領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg)[!UICONTROL *セグメントを検索*] を使用して、セグメントを検索できます。 最大 20 個のセグメントを追加できます。 セグメントは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子で結合することができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルまたは列に適用されているセグメントはすべて保持されます。 自動的に適用されたセグメントを削除できます。</p> |
+| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメント **パネルから 1 つ以上のセグメントをセグメ** ト領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg) [!UICONTROL *セグメントを検索*] を使用して、セグメントを検索できます。 最大 20 個のセグメントを追加できます。 セグメントは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子で結合することができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルまたは列に適用されているセグメントはすべて保持されます。 自動的に適用されたセグメントを削除できます。</p> |
 | **[!UICONTROL データのプレビュー]** | 選択した日付範囲の[データのプレビュー](#data-preview)を表示または非表示にするには、![情報](/help/assets/icons/Info.svg) を選択します。 |
 
 ## データのプレビュー
@@ -171,7 +171,7 @@ Customer Journey Analyticsは、公開済みのオーディエンスから名前
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
 
 ### オーディエンス数の不一致について
 
