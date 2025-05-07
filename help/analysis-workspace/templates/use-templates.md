@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e37ac6f67da441e2e9491307dc44e31506383a0d
+source-git-commit: d618300480cdc3b4454e5c91e5e5adacc01d0c77
 workflow-type: tm+mt
-source-wordcount: '19815'
+source-wordcount: '19827'
 ht-degree: 96%
 
 ---
@@ -128,27 +128,27 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
    以下のセクションは、使用可能なカテゴリに対応し、各テンプレートに関する情報を提供します。
 
-   * &lbrack;[](#most-popular)
+   * **[[!UICONTROL 一番人気]](#most-popular)**
 
-   * &lbrack;[](#engagement)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Engagement]](#engagement)**
 
-   * &lbrack;[](#web-conversion)
+   * **[[!UICONTROL Web]** > **[!UICONTROL  コンバージョン]](#web-conversion)**
 
-   * &lbrack;[](#web-audience)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
 
-   * &lbrack;[](#web-acquisition)
+   * **[[!UICONTROL Web]** > **[!UICONTROL  獲得]](#web-acquisition)**
 
-   * &lbrack;[](#mobile-mobile-app)
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL  モバイルアプリ]](#mobile-mobile-app)**
 
-   * &lbrack;[](#mobile-mobile-device-information)
+   * **[[!UICONTROL モバイル ]** > **[!UICONTROL  モバイルデバイス情報]](#mobile-mobile-device-information)**
 
-   * &lbrack;[](#time-parting)
+   * **[[!UICONTROL Time Parting]](#time-parting)**
 
-   * &lbrack;[](#cross-channel)
+   * **[[!UICONTROL クロスチャネル]](#cross-channel)**
 
-   * &lbrack;[](#other-channels)
+   * **[[!UICONTROL その他のチャネル]](#other-channels)**
 
-   * &lbrack;[](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### 一番人気 {#most-popular}
 
