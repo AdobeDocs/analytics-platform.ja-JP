@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # 計算指標テンプレート
 
-Customer Journey Analyticsは、最も一般的なユースケースに対応するために、次の計算指標テンプレートを提供します。 これらのAdobeで定義された計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、{ コンポーネントフィルター ]**の ![ ラベル ](/help/assets/icons/Label.svg) [**[!UICONTROL  Adobe テンプレート ](/help/components/overview.md#filter) を選択します。
+Customer Journey Analyticsは、最も一般的なユースケースに対応するために、次の計算指標テンプレートを提供します。 これらのAdobeで定義された計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、&lbrace; コンポーネントフィルター &rbrack;**の ![ ラベル ](/help/assets/icons/Label.svg) &lbrack;**&#x200B;[[!UICONTROL &#x200B; Adobe テンプレート &#x200B;]](/help/components/overview.md#filter) を選択します。
 
 | 計算指標名 | 説明<br/>数式 |
 |---------|----------|
