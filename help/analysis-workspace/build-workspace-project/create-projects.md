@@ -4,7 +4,7 @@ title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 95%
@@ -12,15 +12,6 @@ ht-degree: 95%
 ---
 
 # プロジェクトの作成 {#create-projects}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="繰り返しインスタンスをカウント"
->abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/><br/>メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を使用すると、ビジネスクリティカルな分析を作成および表示できます。これらの分析は、組織内外の関係者と共有できます。
@@ -56,23 +47,21 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 
 ## プロジェクト情報および設定 {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="繰り返しインスタンスをカウント"
+>abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/><br/>メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="繰り返しインスタンスをカウント"
 >abstract="レポート内でレポートインスタンスがカウントされるかどうかを指定します。<br/>メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="コメントを許可"
 >abstract="有効になっている場合、Analysis Workspaceのプロジェクトの右側のパネルでコメント領域が使用できます。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 プロジェクト設定は、現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
