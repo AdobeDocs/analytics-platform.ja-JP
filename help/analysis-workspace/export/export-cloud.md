@@ -5,7 +5,7 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
+source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -123,7 +123,7 @@ Analysis Workspace からデータを書き出したら、[書き出しの管理
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## クラウドへの書き出しのメリット
+## クラウドへの書き出しのメリット {#advantages}
 
 Customer Journey Analytics データをクラウドに書き出すと、次の操作を実行できます。
 
@@ -217,7 +217,7 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
   >
   >この記事で説明されているように、複数ディメンションのレポートは、データをクラウドに書き出す場合にのみサポートされます。
 
-## 完全なテーブルの書き出し（Customer Journey Analytics）と Data Warehouse（Adobe Analytics）の比較
+## 完全なテーブルの書き出し（Customer Journey Analytics）と Data Warehouse（Adobe Analytics）の比較 {#comparison}
 
 以前に Data Warehouse を使用して Adobe Analytics データを書き出したことがある場合は、次の表が、Customer Journey Analytics で完全なテーブルを書き出す場合と、Adobe Analytics で Data Warehouse を使用してデータを書き出す場合の違いを理解するのに役立ちます。
 
