@@ -3,10 +3,10 @@ description: 計算指標の作成方法を説明します。
 title: 計算指標の作成
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 2%
+source-wordcount: '386'
+ht-degree: 43%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 2%
 
 デフォルトでは、計算指標を作成できるのは管理者のみです。 ユーザーには、他のコンポーネント（セグメント、注釈など）の表示方法と同様に、計算指標を表示する権限があります。
 
-ただし、管理者は、[Admin Console **[!UICONTROL を介して、]** CJA Workspace アクセスの権限の編集 **[!UICONTROL にある**&#x200B;[!UICONTROL &#x200B; レポートツール &#x200B;]&#x200B;**の]** 計算指標の作成 ](/help/technotes/access-control.md#user-level-access) 権限をユーザーに付与できます。
+ただし、管理者は、[Admin Console **[!UICONTROL を介して、]** CJA Workspace アクセスの権限の編集 **[!UICONTROL にある**[!UICONTROL  レポートツール ]**の]** 計算指標の作成 ](/help/technotes/access-control.md#user-level-access) 権限をユーザーに付与できます。
 
 
 計算指標は次の方法で作成できます。
 
-![ 計算指標の作成方法 ](assets/create-metric.png)
+![ 指標の作成方法 ](assets/create-metric.png)
 
-* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 計算指標]**」を選択します。 ![ 計算指標 ](/help/assets/icons/AddCircle.svg) マネージャー [&#128279;](/help/components/calc-metrics/cm-workflow/cm-manager.md) から「[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
+* **A**。 メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 計算指標]**」を選択します。 ![ 計算指標 ](/help/assets/icons/AddCircle.svg) マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) から「[[!UICONTROL AddCircle][!UICONTROL **[!UICONTROL Add]**]」を選択します。
 * **B**. Workspace プロジェクトの左側のコンポーネント パネルで、「![ イベント ](/help/assets/icons/Event.svg) **指標**」の「![ 追加 ](/help/assets/icons/Add.svg)」を選択します。
 * **C**。 Workspace プロジェクトの指標列ヘッダーのコンテキストメニューで、「**[!UICONTROL 選択から指標を作成]**」を選択します。 サブメニューから、関数を選択するか、「**[!UICONTROL 計算指標ビルダーで開く]**」を選択できます。 <br/> 関数を選択すると、計算指標はプロジェクトのみの指標として定義されます。 後でこの指標を編集する際に、[ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) ポップアップを通じて、[ 計算指標ビルダー ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) に通知が表示されます。
 * **D**。 Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 指標を作成]** を選択します。
@@ -29,18 +29,15 @@ ht-degree: 2%
 
 新しい計算指標を定義するには、[ 計算指標ビルダー ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を使用します。
 
-<!--
+計算指標を作成するための手順について説明します。
 
-Learn about the steps to take for creating calculated metrics.
-
-| Workflow Task | Description |
+| ワークフロータスク | 説明 |
 | --- | --- |
-| Plan Calculated Metrics | Especially for metrics that are going to be officially "approved", it makes sense to outline which calculated metrics will be widely used and how they will be defined. |
-| [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) Calculated Metrics | Build and edit calculated and advanced calculated metrics for use in [!DNL Customer Journey Analytics] components. |
-| [Tag](cm-tagging.md) Calculated Metrics | Tag calculated metrics for ease of organization and sharing. See how to plan and assign tags for simple and advanced searches and organization. |
-| [Approve](cm-approving.md) Calculated Metrics | Approve calculated metrics to make them canonical. |
-| Apply Calculated Metrics | You can apply metrics directly from a report, from the Metric Selector (to access it, click [!UICONTROL Show Metrics]). |
-| Filter Calculated Metrics | In the Metric Selector, click [!UICONTROL Advanced Selection] and filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.) |
-| Mark Calculated Metrics as [Favorites](cm-finding.md) | Marking metrics as favorites is another way to organize them for ease of use.|
+| 計算指標の計画 | 特に、正式に「承認」される指標については、広く使用される計算指標とその定義方法の概要を確認しておくことが重要です。 |
+| 計算指標の[作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | [!DNL Customer Journey Analytics] コンポーネントで使用するために、計算指標と高度な計算指標を作成および編集します。 |
+| 計算指標の[タグ付け](cm-tagging.md) | 整理および共有が容易に行えるように計算指標にタグを付けます。簡易検索および詳細検索と整理について詳しくは、タグの計画および割り当て方法に関する説明を参照してください。 |
+| 計算指標の[承認](cm-approving.md) | 計算指標を正規の指標として承認します。 |
+| 計算指標の適用 | 指標をレポートまたは指標セレクターから直接適用できます（指標セレクターにアクセスするには、「[!UICONTROL 指標を表示]」をクリックします）。 |
+| 計算指標へのフィルター設定 | 指標セレクターで、「[!UICONTROL 詳細選択]」をクリックし、タグ、所有者およびその他のフィルター（「すべてを表示」、「自分が所有」、「自分と共有」、「お気に入り」および「承認済み」）を使用してフィルタリングします。 |
+| 計算指標を[お気に入り](cm-finding.md)とする | 指標を使いやすく整理するための 1 つの方法として、指標をお気に入りに登録することができます。 |
 
--->
