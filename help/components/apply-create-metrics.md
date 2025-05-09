@@ -4,10 +4,10 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 8%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,19 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
    * **セッション**:Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義するものです。 [ セッション設定 ](/help/data-views/session-settings.md) を参照してください。
    * **イベント**:Customer Journey Analyticsのイベント指標は、接続の一部として設定したイベントデータセットの一部であるイベントで構成されています。
 
+  標準指標の完全なリストについては、[ 標準指標 ](#standard-metrics) を参照してください。
+
 * **計算指標**![ 計算ツール ](/help/assets/icons/Calculator.svg)：標準指標、静的数値、アルゴリズム関数に基づくユーザー定義の指標です。
 
 * **計算指標テンプレート**![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)：計算指標と同様に動作するAdobe定義の指標です。 これらは、Workspace プロジェクトでそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。 [ デフォルトの計算指標 ](calc-metrics/cm-workflow/../default-calcmetrics.md) を参照してください。
 
 指標が承認されているかどうか ![ 承認済みアイコン ](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) を確認できます。 指標に関する詳細が必要な場合は、指標の上にマウスポインターを置いて、「![ 情報アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)」を選択します。 詳しくは、[ コンポーネント情報 ](use-components-in-workspace.md#component-info) を参照してください。
+
+
+## 標準指標
+
+Customer Journey Analyticsの標準指標の完全なリスト：
+{{standard-metrics}}
 
 ## 様々なアトリビューションモデルとの指標の比較
 
@@ -57,7 +65,7 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 
 ### すべてのプロジェクトの計算指標を作成
 
-計算指標ビルダーを使用して、計算指標を作成できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。
+計算指標ビルダーを使用して、計算指標を作成できます。この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。
 
 計算指標ビルダーへのアクセス方法について詳しくは、[ 計算指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-workflow.md) を参照してください。
 

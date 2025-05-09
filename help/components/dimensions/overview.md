@@ -3,16 +3,16 @@ title: ディメンションの概要
 description: ディメンションの概要とCustomer Journey Analyticsでの使用方法を説明します
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 36%
+source-wordcount: '225'
+ht-degree: 26%
 
 ---
 
 # ディメンションの概要
 
-ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[&#128279;](/help/report-builder/rb-overview.md)Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し  す。
+ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し ](/help/report-builder/rb-overview.md) す。
 
 Customer Journey Analyticsのディメンションの種類は無制限です。値には、数値、テキスト、オブジェクト、リストまたはすべてが混在する場合があります。
 
@@ -35,28 +35,12 @@ Customer Journey Analyticsの基本レポートでは、指標の列（一般的
 
 Customer Journey Analytics管理者は [ データビュー内でディメンションを作成する ](/help/data-views/create-dataview.md#components) ことができます。
 
-## デフォルトのディメンション
+## 標準寸法
 
-データビューを作成する場合、デフォルトでは、次の時間ベースのコンポーネントがディメンションとしてデータビューに追加されます。
+データビューを作成する場合、デフォルトでは、次のコンポーネントがディメンションとしてデータビューに追加されます。
 
-- 15 分
-- 30 分
-- 5 分
-- 日
-- 日付
-- 曜日
-- 年間通算日
-- 時間
-- 時刻
-- 分
-- 分 (時間)
-- 月
-- 月
-- 四半期
-- 四半期
-- 2 番目
-- 年間通算週
-- 年
+{{standard-dimensions}}
+
 
 ## ディメンションの説明の追加
 

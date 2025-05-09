@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analyticsを使用すると、共通の顧客 ID に基づい�
 
 ## 新着情報
 
-Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新の変更内容を常に把握するには、[ドキュメントの更新ページ](../release-notes/doc-changes.md)にアクセスしてください。
+Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントのアップデートについて詳しくは、[ ドキュメントのアップデートページ ](../release-notes/doc-changes.md) を参照してください。
 
 >[!BEGINTABS]
 
@@ -29,47 +29,60 @@ Content Analytics を使用すると、大量のコンテンツデータをす�
 
 [![画像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB  イベントの深度 ]
+
+イベントの深度は新しい標準ディメンションであり、顧客セッション内でのイベントの位置づけを測定し、より深く理解するための新しい方法を提供します。 イベントの深度ディメンションを使用すると、セッション内のユーザーインタラクションの順次フローで特定のイベントが発生する場所の詳細なトラッキングと分析が可能になります。
+
+[![画像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB  共有指標およびディメンション ]
 
 共有指標およびディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元的に管理する場所を提供します。 これらのコンポーネントは、複数のデータビューを使用する組織で特に役立ちます。特に、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB AI アシスタント]
 
-AI アシスタントは、概念の理解、問題のトラブルシューティング、情報の検索など、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 また、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+<!--
+>[!TAB AI Assistant] 
 
-[![画像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB ガイド付き分析]
-
-ガイド付き分析を Analysis Workspace 内から直接使用できるようになったので、ユーザーは、パネル、ビジュアライゼーション、ガイド付き分析からの包括的なインサイトを持つダッシュボードを作成できます。
-
-[![画像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB インテリジェントキャプション v2]
+>[!TAB Guided Analysis] 
 
-インテリジェントキャプションがサポートされ、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)（複数の折れ線グラフを含む）、[棒グラフ](/help/analysis-workspace/visualizations/bar.md)、[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)、[面グラフ](/help/analysis-workspace/visualizations/area.md)（複数の面グラフ線を含む）、[ドーナツグラフ](/help/analysis-workspace/visualizations/donut.md)、[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)のビジュアライゼーションに対するインターフェイスが強化されました。
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB アラート]
-
-アラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。 アラートがどのような頻度でトリガーされるかをプレビュー、メールまたは SMS でのアラートを送信、積み重ねアラートを作成することなどを行うことができます。
-
-[![画像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB 概要データ]
 
-ユーザー ID を持たない時系列データを取り込むことができます。 この時系列データは、次のような様々なユースケースをサポートするのに使用できます。
+>[!TAB Intelligent captions v2] 
 
-- イベントレベルのデータの一部として、またはイベントレベルのデータの横に、高レベルのパフォーマンスインジケーターを表示する。
-- 時間単位または日単位でターゲットまたは目標をアップロードし、イベントレベルの指標に対してこれらのターゲットまたは目標を配置する。
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![画像](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB グラフベースのステッチ*]
 

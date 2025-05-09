@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '4061'
-ht-degree: 34%
+source-wordcount: '5198'
+ht-degree: 35%
 
 ---
 # スニペット
@@ -254,3 +254,44 @@ ht-degree: 34%
 | **[!UICONTROL データセット]** | データセットの名前。 |
 | **[!UICONTROL プレビュー：*データセット名&#x200B;*]** | 最初の 10 行および最初の 10 列のデータセットをプレビューします。 |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Remove]** | 接続全体を削除せずに [ データセットを削除 ](/help/connections/create-connection.md#delete-a-dataset) できます。 データセットを接続から削除すると、データの取り込みに伴うコストと、接続全体および関連するデータビューを再作成する煩雑なプロセスが削減されます。 |
+
+## 標準寸法 {#standard-dimensions}
+
+| コンポーネント名 | メモ |
+|---|---|
+| 15 分 | 特定のイベントが発生した 15 分ごと（切り捨て）。 最初のディメンション項目は日付範囲の最初の 15 分で、最後のディメンション項目は日付範囲の最後の 15 分です。 |
+| 30 分 | 特定のイベントが発生した 30 分ごと（切り捨て）。 最初のディメンション項目は日付範囲の最初の 30 分で、最後のディメンション項目は日付範囲の最後の 30 分です。 |
+| 5 分 | 特定のイベントが発生した 5 分ごと（切り捨て）。 最初のディメンション項目は日付範囲の最初の 15 分で、最後のディメンション項目は日付範囲の最後の 5 分です。 |
+| [!UICONTROL 日] | 特定のイベントが発生した日。 最初のディメンション項目は日付範囲の最初の日で、最後のディメンション項目は日付範囲の最後の日です。 |
+| [!UICONTROL 日付] | 特定のイベントが発生した月の日。 最初のディメンション項目は日付範囲の月の最初の日で、最後のディメンション項目は日付範囲の月の最後の日です。 |
+| [!UICONTROL 曜日] | 特定のイベントが発生した曜日。 最初のディメンション項目は日付範囲の週の最初の日で、最後のディメンション項目は日付範囲の週の最終日です。 |
+| [!UICONTROL 日付] | 特定のイベントが発生した月の日。 最初のディメンション項目は日付範囲の月の最初の日で、最後のディメンション項目は日付範囲の月の最後の日です。 |
+| イベントの深度 | セッション内の各イベントインタラクションに連続した数値（1、2、3 など）を割り当てます。 このディメンションを使用すると、セッション内のユーザーインタラクションの順次フローで特定のイベントが発生する場所の詳細なトラッキングと分析を有効にできます。 境界のあるセッション内で、イベントの進行を開始から終了まで追跡できます。 例えば、訪問者がホームページにアクセスし（イベント 1、セッション開始）、検索機能を使用し（イベント 2）、製品の詳細ページを表示し（イベント 3）、買い物かごに追加し（イベント 4）、チェックアウトに進み（イベント 5）、購入を完了します（イベント 6、セッション終了）。 セグメント定義で [!UICONTROL  イベントの深度 ] を使用し、インタラクションの深度に基づいてデータをセグメント化できるようになりました。 |
+| [!UICONTROL 時間] | 特定のイベントが発生した時刻の時間（切り捨て）。 最初のディメンション項目は日付範囲の最初の時間で、最後のディメンション項目は日付範囲の最後の時間です。 |
+| [!UICONTROL 時刻] | 特定のイベントが発生した日の時間（切り捨て）。 最初のディメンション項目は日付範囲の日の最初の時間で、最後のディメンション項目は日付範囲の日の最後の時間です。 |
+| [!UICONTROL 分] | 特定のイベントが発生した時刻の分（切り捨て）。最初のディメンション項目は日付範囲の最初の分で、最後のディメンション項目は日付範囲の最後の分です。 |
+| [!UICONTROL  分（時間 ] | 特定のイベントが発生した時刻の分（切り捨て）。 最初のディメンション項目は日付範囲の時間の最初の分で、最後のディメンション項目は日付範囲の時間の最後の分です。 |
+| [!UICONTROL 月] | 特定のイベントが発生した月。最初のディメンション項目は日付範囲の最初の月で、最後のディメンション項目は日付範囲の最後の月です。 |
+| [!UICONTROL  月 ] | 特定のイベントが発生した年の月。 最初のディメンション項目は日付範囲の年の最初の月で、最後のディメンション項目は日付範囲の年の最後の月です。 |
+| [!UICONTROL 四半期] | 特定のイベントが発生した四半期。最初のディメンション項目は日付範囲の最初の四半期で、最後のディメンション項目は日付範囲の最後の四半期です。 |
+| [!UICONTROL 四半期] | 特定のイベントが発生した年の四半期。 最初のディメンション項目は日付範囲の年の最初の四半期で、最後のディメンション項目は日付範囲の年の最後の四半期です。 |
+| [!UICONTROL  秒 ] | 特定のイベントが発生した時刻の秒（切り捨て）。最初のディメンション項目は日付範囲の最初の秒、最後のディメンション項目は日付範囲の最後の秒です。 |
+| [!UICONTROL 週] | 特定のイベントが発生した週。最初のディメンション項目は日付範囲の最初の週で、最後のディメンション項目は日付範囲の最後の週です。 |
+| [!UICONTROL 年間通算週] | 特定のイベントが発生した年の週。 最初のディメンション項目は日付範囲の年の最初の週で、最後のディメンション項目は日付範囲の年の最後の週です。 |
+| [!UICONTROL 年] | 特定のイベントが発生した年。最初のディメンション項目は日付範囲の最初の年で、最後のディメンション項目は日付範囲の最も新しい年です。 |
+
+
+## 標準指標 {#standard-metrics}
+
+| コンポーネント名 | メモ |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  アカウント ] | 「[!UICONTROL  接続 ]」で指定されたアカウント ID に基づいています。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  購買グループ ] | [!UICONTROL  接続 ] で指定された購入グループ ID に基づく購入グループ。 |
+| [!UICONTROL イベント] | 「[!UICONTROL 接続]」内のすべてのイベントデータセットの行数。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  グローバルアカウント ] | [!UICONTROL  接続 ] で指定されたグローバルアカウント ID に基づいています。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL  商談 ] | 商談。「接続 [!UICONTROL  で指定した商談 ID に基づ ] ています。 |
+| [!UICONTROL 人物] | 「[!UICONTROL 接続]」で指定された個人 ID に基づいています。 |
+| [!UICONTROL セッション終了] | セッションの最後のイベントとなったイベントの数。[!UICONTROL  セッション開始 ] と同様、これをセグメント定義で使用して各セッションの最後のイベントまでセグメント化することもできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
+| [!UICONTROL セッション開始] | セッションの最初のイベントとなったイベントの数。セグメント定義で使用する場合（「[!UICONTROL  セッション開始 ] が存在する」など）、セグメントは各セッションの最初のイベントのみに分類されます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
+| [!UICONTROL セッション] | データビューのセッション設定に基づいています。 |
+| [!UICONTROL 滞在時間 (秒)] | あるディメンションについて、2 つの異なる値の間の時間を合計します。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>ユーザー別滞在時間</li><li>セッションごとの滞在時間</li></p> |
