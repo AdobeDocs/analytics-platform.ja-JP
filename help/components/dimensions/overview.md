@@ -12,7 +12,7 @@ ht-degree: 26%
 
 # ディメンションの概要
 
-ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し ](/help/report-builder/rb-overview.md) す。
+ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[&#128279;](/help/report-builder/rb-overview.md)Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し  す。
 
 Customer Journey Analyticsのディメンションの種類は無制限です。値には、数値、テキスト、オブジェクト、リストまたはすべてが混在する場合があります。
 
