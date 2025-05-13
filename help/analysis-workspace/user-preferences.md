@@ -64,7 +64,7 @@ ht-degree: 71%
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]&#x200B;**／**&#x200B;[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
 | | Experience Cloud 認証を要求 | このオプションが有効な場合、Analysis Workspaceの「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」*オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 | プロジェクトのコメント | プロジェクトへのコメントを許可 | **メモ：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。 <p>このオプションを有効にすると、Analysis Workspaceの各プロジェクトの右側のパネルにコメント領域が表示されます。</p> <p>[ プロジェクトの作成 ](/help/analysis-workspace/build-workspace-project/create-projects.md) で説明しているように、プロジェクト所有者は特定のプロジェクトのコメント領域を無効にすることができます。</p> <p>Analysis Workspace プロジェクトへのコメントの詳細については、「[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。</p> |
 
@@ -140,7 +140,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 日付の整列 | このオプションを選択して各列の日付を整列させ、すべて同じ行から始まるようにすることもできます。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
 | | ヘッダーテキストを折り返し | ヘッダーを読みやすく、またテーブルを共有しやすくするため、フリーフォームテーブルでヘッダーテキストを折り返せるようにします。これは、.pdf のレンダリングや名前の長い指標に使用すると便利です。デフォルトで有効です。 |
-| | 合計を表示 | この合計数は、通常、[!UICONTROL  総計 ] と等しいか、またはそのサブセットです。 「[!UICONTROL  なしを含む ] オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルセグメントが反映されます。 |
+| | 合計を表示 | この合計数は、通常、[!UICONTROL &#x200B; 総計 &#x200B;] と等しいか、またはそのサブセットです。 「[!UICONTROL &#x200B; なしを含む &#x200B;] オプションなど、フリーフォームテーブル内で適用されたすべてのテーブルセグメントが反映されます。 |
 | | 総計の表示 | この合計数は、収集されたすべてのイベントを表し、*データビューの合計* と呼ばれることもあります。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメントの条件に一致するすべてのイベントを反映するように調整されます。 [静的な行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を含むテーブルや分類では、総計はサポートされません。 |
 | | スパークラインを表示 | グラフの下部に折れ線グラフを表示または非表示にします。非表示にすると、凡例が変更され、折れ線が表示されなくなります。 |
 | | 数値 | セルに指標の数値を表示するかどうかを決定します。例えば、指標がページビュー数の場合、数値は行項目のページ表示回数になります。 |
@@ -160,22 +160,22 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL フロー]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フロー ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
+>abstract="[!UICONTROL フロー]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL &#x200B; フロー &#x200B;] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL フォールアウト]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  フォールアウト ] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
+>abstract="[!UICONTROL フォールアウト]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL &#x200B; フォールアウト &#x200B;] ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="デフォルトのカウント方法"
->abstract="[!UICONTROL ヒストグラム]ビジュアライゼーションに使用するデフォルトのカウント方法を選択します。選択したデータビューに選択したデフォルトのカウント方法が含まれていない場合、[!UICONTROL  ヒストグラム ] ビジュアライゼーションは別のプライマリアカウント方法に自動的に切り替わります。"
+>abstract="[!UICONTROL ヒストグラム]ビジュアライゼーションに使用するデフォルトのカウント方法を選択します。選択したデータビューに選択したデフォルトのカウント方法が含まれていない場合、[!UICONTROL &#x200B; ヒストグラム &#x200B;] ビジュアライゼーションは別のプライマリアカウント方法に自動的に切り替わります。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="デフォルトのコンテナ"
->abstract="[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL  プライマリキャンバス ] ビジュアライゼーションは別のジャーニーコンテナに自動的に切り替わります。"
+>abstract="[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。選択したデータビューに選択したデフォルトコンテナが含まれていない場合、[!UICONTROL &#x200B; プライマリキャンバス &#x200B;] ビジュアライゼーションは別のジャーニーコンテナに自動的に切り替わります。"
 
 
 Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーション環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
