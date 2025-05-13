@@ -3,10 +3,8 @@ description: Analysis Workspaceでプロジェクトにコメントする方法�
 title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
+source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%
@@ -14,6 +12,8 @@ ht-degree: 0%
 ---
 
 # プロジェクトへのコメントの追加と管理 {#comment-on-projects}
+
+{{release-limited-testing}}
 
 Analysis Workspaceのコメントを使用すると、Analysis Workspace プロジェクトのコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。
 
