@@ -5,10 +5,10 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
+source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 98%
+source-wordcount: '2312'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,16 @@ Analysis Workspace から完全なテーブルを Google、Azure、Amazon、Adob
 
 ![手順 1～4 で説明する完全なテーブル書き出しプロセス。](assets/export-full-table-process.png)
 
-## Analysis Workspace からの完全なテーブルの書き出し
+## Analysis Workspace からの完全なテーブルの書き出し {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="マニフェストファイル"
+>abstract="有効にすると、成功した書き出し配信にマニフェストファイルが含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
