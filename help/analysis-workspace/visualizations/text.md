@@ -4,10 +4,10 @@ title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 86%
 
 ---
 
@@ -58,6 +58,10 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ## 画像を追加 {#images}
 
-プロジェクトに画像を追加するには、メニューで ![画像](/help/assets/icons/Image.svg) を選択し、公開画像 URL を挿入します。画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
+プロジェクトに画像を追加するには、メニューで ![ 画像 ](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
+
+画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
+
+画像のドラッグ&amp;ドロップ挿入はサポートされていません。
 
 ![画像アイコンが選択されたテキストオプション。](assets/image.png)
