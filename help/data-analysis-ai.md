@@ -4,93 +4,123 @@ title: Customer Journey Analyticsの Data Insights Agent を使用したデー�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hidefromtoc: true
-hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f3f3b34c904c1aeba3fbd07218f323ccd81974d4
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 5%
+source-wordcount: '1861'
+ht-degree: 3%
 
 ---
 
-# Customer Journey Analyticsの Data Insights Agent を使用したデータの視覚化
+# Customer Journey AnalyticsのData Insights Agentを使用したデータの視覚化
 
-Customer Journey Analyticsの AI アシスタントに含まれる Data Insights Agent は、データに関する質問に迅速かつ効率的に回答するジェネレーティブ AI コンバージョンエージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
+{{release-limited-testing}}
 
-Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問に回答すると、Analysis Workspaceでビジュアライゼーションを手動で構築し、データビューコンポーネントに慣れるまでに費やす可能性のある、膨大な時間を節約できます。
+>[!AVAILABILITY]
+>
+>Data Insights Agentは、2025 年 11 月 30 日（PT）まで、対象となるCustomer Journey Analyticsのお客様が利用できます。 この日以降もData Insights Agentを引き続き使用する場合は、ライセンスが必要です。 ライセンスプロセスについて詳しくは、Adobe アカウントチームにお問い合わせください。
+
+Data Insights Agentは、Customer Journey Analyticsの AI アシスタントからアクセスでき、データに関する質問に迅速かつ効率的に回答するジェネレーティブ AI コンバージョンエージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
+
+Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問に回答すると、Analysis Workspaceでビジュアライゼーションを手動で作成してデータビューコンポーネントに慣れる時間を大幅に節約できます。
 
 ![AI アシスタント内の Data Insights エージェント ](assets/cja-ai-asst-da.gif)
 
-## Betaの範囲内の機能と範囲外の機能
+## 範囲内の機能と範囲外の機能
 
-### Betaの範囲内機能
+
+
+### 対象内機能
 
 | サポートされる機能 | 説明 |
 | --- | --- |
 | **ビジュアライゼーションの作成と更新** | フリーフォームテーブルおよび関連するビジュアライゼーション（線、棒グラフ、ドーナツなど）を生成します。<p>例：*2 月から 5 月の SKU での利益は何ですか？* |
 | **サポートされるビジュアライゼーションタイプ** | <ul><li>行</li><li>複数行</li><li>フリーフォームテーブル</li><li>棒グラフ</li><li>ドーナツ</li><li>概要番号</li></ul> |
-| **範囲外のプロンプト検出** | 「このプロジェクトを書き出す」など、範囲外のプロンプトを送信すると、データインサイトエージェントは、質問が範囲外であることを知らせることで応答します。 |
-| **質問の明確化** | データインサイトエージェントが回答するのに十分なコンテキストがない質問や、一般的すぎる質問については、データインサイトエージェントが、明確な質問や提案されたオプションで応答します。 例： <p>**コンポーネント**<ul><li>指標：*具体的に「売上高」指標はどれですか？*</li><li>Dimension:*注目したい「地域」は、以下のうちどれですか？*</li><li>セグメント：*適用した「アカウント」セグメント*</li><li>日付範囲：*「先月」とは、過去 1 か月を意味していますか？過去 30 日を意味していますか？*</li></ul>**Dimension商品**：店舗名はどちらですか？ （例えば、Store #5274、Store #2949 など）。 |
-| **マルチターン** | データインサイトエージェントは、以前のプロンプトからのコンテキストでプロンプトに応答し、ユーザーはビジュアライゼーションを更新し、フォローアップの質問をすることができます。 例： <ul><li>プロンプト 1:*3 月からのトレンドイベント*</li><li>プロンプト 2:*代わりに 3 月から 4 月のデータを表示する*</li></ul> |
+| **範囲外のプロンプト検出** | 「このプロジェクトを書き出す」など、範囲外のプロンプトを送信すると、Data Insights Agentは応答として、問題が範囲外であることを知らせます。 |
+| **質問の明確化** | Data Insights Agentが回答するのに十分なコンテキストがない、または一般的すぎる質問をした場合、Data Insights Agentは、明確な質問または推奨されるオプションを使用して回答します。 例： <p>**コンポーネント**<ul><li>指標：*具体的に「売上高」指標はどれですか？*</li><li>Dimension:*注目したい「地域」は、以下のうちどれですか？*</li><li>セグメント：*適用した「アカウント」セグメント*</li><li>日付範囲：*「先月」とは、過去 1 か月を意味していますか？過去 30 日を意味していますか？*</li></ul>**Dimension商品**：店舗名はどちらですか？ （例えば、Store #5274、Store #2949 など）。 |
+| **マルチターン** | Data Insights Agentは、以前のプロンプトからのコンテキストでプロンプトに応答し、ユーザーはビジュアライゼーションを更新し、フォローアップの質問をすることができます。 例： <ul><li>プロンプト 1:*3 月からのトレンドイベント*</li><li>プロンプト 2:*代わりに 3 月から 4 月のデータを表示する*</li></ul> |
 | **検証可能性** | データの検証可能性と正確性は、生成されたフリーフォームテーブルとデータビジュアライゼーションで確認できます。 例えば、ユーザーが *先月のトレンド注文* と尋ねた場合、新しく生成されたパネル、データビジュアライゼーションおよびフリーフォームテーブルで正しい指標（「注文」）と日付範囲（「先月」）が選択されたことを確認できます。 |
 | **フィードバック** | <ul><li>親指を上に向ける</li><li>サムズダウン</li><li>Flag</li></ul> |
 
-### Betaの範囲外の機能
+### 範囲外の機能
 
 | サポートされていない機能 | 説明 |
 | --- | --- |
-| **インラインの概要または応答** | データインサイトエージェントが、ユーザープロンプトの概要回答でチャットパネルのインラインで応答できません。 範囲外プロンプトの例：<ul><li>*前回のプロンプトから得られたインサイトの概要を入力します。*</li><li>*折れ線グラフのビジュアライゼーションのハイライトを要約します。*</li></ul> |
-| **質問の明確化** | 質問を明確にするのは、コンポーネントとディメンション項目に限られます。 データインサイトエージェントは、データビュー、ビジュアライゼーション、データの精度、比較、範囲などを明確にすることはできません。 質問を明確にできない場合、エージェントはデフォルトで要求している可能性が最も高いものに設定されます。 予期しないビジュアライゼーションまたはデータの精度が返された場合は、複数回転/更新機能を使用してビジュアライゼーションとデータを調整できます。 |
-| **Workspaceのアクション/機能** | データインサイトエージェントは、Workspace内のユーザーに対して、ビジュアライゼーションの作成と更新を除き、アクションを実行することはできません。 例えば、次の操作は実行できません。<ul><li>コンテキストアクションの UI ボタン（グラフに追加、新しいパネル、新しいテーブル）</li><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>キュレート</li><li>データ表示の管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li></ul> |
+| **インラインの概要または応答** | Data Insights Agentが、ユーザーからのプロンプトに対する概要の回答でチャットパネルのインラインで応答できません。 範囲外プロンプトの例：<ul><li>*前回のプロンプトから得られたインサイトの概要を入力します。*</li><li>*折れ線グラフのビジュアライゼーションのハイライトを要約します。*</li></ul> |
+| **質問の明確化** | 質問を明確にするのは、コンポーネントとディメンション項目に限られます。 Data Insights Agentでは、データビュー、ビジュアライゼーション、データの精度、比較、範囲などを明確にすることはできません。 質問を明確にできない場合、エージェントはデフォルトで要求している可能性が最も高いものに設定されます。 予期しないビジュアライゼーションまたはデータの精度が返された場合は、複数回転/更新機能を使用してビジュアライゼーションとデータを調整できます。 |
+| **Workspaceのアクション/機能** | Data Insights Agentでは、Workspace内のユーザーに対して、ビジュアライゼーションの作成と更新を除き、アクションを実行することはできません。 例えば、次の操作は実行できません。<ul><li>コンテキストアクションの UI ボタン（グラフに追加、新しいパネル、新しいテーブル）</li><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>キュレート</li><li>データ表示の管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li></ul> |
 | **サポートされていないビジュアライゼーションタイプ** | <ul><li>フロー</li><li>フォールアウト</li><li>コホートテーブル</li><li>面グラフ、積み重ね面グラフ</li><li>積み重ね棒グラフ</li><li>ブレット</li><li>コンボ</li><li>ヒストグラム</li><li>横棒グラフ、積み重ね横棒グラフ</li><li>主要指標の概要</li><li>散布図</li><li>変更の概要</li><li>テキスト</li><li>ツリーマップ</li><li>ベン図</li></ul> |
 
-## Customer Journey Analyticsで Data Insights Agent へのアクセスを管理します
+## Customer Journey AnalyticsでのData Insights Agentへのアクセスの管理
 
-次のパラメーターは、Customer Journey Analyticsの Data Insights Agent へのアクセスを制御します。
+次のパラメーターは、Customer Journey AnalyticsのData Insights Agentへのアクセスを制御します。
 
-* **ソリューションアクセス**:Data Insights Agent は、Customer Journey Analytics PrimeおよびUltimateのお客様が使用できます。 Adobe Analyticsでは使用できません。
+* **ソリューションアクセス**:Data Insights Agentは、Customer Journey Analytics PrimeおよびUltimateのお客様が利用できます。 Adobe Analyticsでは使用できません。
 
-* **契約によるアクセス**:AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはAdobe アカウント担当者にお問い合わせください。 組織がデータインサイトエージェントを使用する前に、GenAI 関連の特定の法的条項に同意する必要があります。
+* **契約によるアクセス**:AI アシスタントでData Insights Agentを使用できない場合は、組織の管理者またはAdobe アカウントチームにお問い合わせください。 組織がData Insights Agentを使用する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**:[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;]&#x200B;**[!UICONTROL AI アシスタント：データビジュアライゼーション]** 権限によってこのツールへのアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
-   1. **[!UICONTROL Admin Console]** / **[!UICONTROL 製品およびサービス]** / **[!UICONTROL Customer Journey Analytics]** / **[!UICONTROL 製品プロファイル]** に移動します
-   1. [!UICONTROL AI アシスタント：製品ナレッジ &#x200B;] へのアクセスを提供する製品プロファイルのタイトルを選択します。
-   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
-   1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
-   1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して **AI Assistant: Product Knowledge** および **AI Assistant: Data Analysis** を **[!UICONTROL 含まれる権限項目]** に追加します。
+* **権限**: ユーザーがData Insights Agentにアクセスするには、必要な権限が ]2}Adobe Admin Console} で付与されている必要があります。[!UICONTROL 
+
+  権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+   1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して **[!UICONTROL すべての製品とサービス]** ページを表示します。
+   1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
+   1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
+   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」タブを選択します。
+
+      ![Admin Consoleの「権限」タブ ](assets/ai-assistant-permissions-tab.png)
+
+   1. 提供されたテーブルの **[!UICONTROL レポートツール]** 行で、編集アイコン ![ 編集 ](/help/assets/icons/Edit.svg) を選択します。
+   1. スクロールして「**[!UICONTROL AI Assistant: Product Knowledge]**」を選択または検索し、この権限の横にあるプラス アイコン ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します。
+
+      **[!UICONTROL AI アシスタント：製品ナレッジ]** 権限が **[!UICONTROL 含まれる権限項目]** 列に追加されます。
 
       ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
+   1. **[!UICONTROL データビューツール]** タブを選択し、**[!UICONTROL Data Insights Agent![ 権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle]** を選択します。
+
+      **[!UICONTROL Data Insights Agent]** 権限が **[!UICONTROL 含まれる権限項目]** 列に追加されます。
+
+      ![ 権限を追加 ](assets/ai-assistant-permissions-dataviewtools.png).
+
+   1. 「**[!UICONTROL データビュー]**」タブを選択して、Data Insights Agentに対して有効にするデータビューを選択します。
+
+      >[!IMPORTANT]
+      >
+      >Data Insights Agentは、Admin Consoleで有効にするのと同じ日にいつでも、含まれるデータビューを参照できます。
+
+   1. 有効にするデータビューを検索またはスクロールし、各データビューの名前の横にあるプラスアイコン ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します。
+
+      追加した各データビューは、「**[!UICONTROL 含まれる権限項目]** 列に表示されます。
+
+      ![ 権限を追加 ](assets/ai-assistant-permissions-dataviews.png).
+
    1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
-詳しくは、[アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
+  アクセス制御について詳しくは、[ アクセス制御 ](/help/technotes/access-control.md#access-control) を参照してください。
 
-## AI アシスタントでデータインサイトエージェントにアクセスします
+## AI アシスタントでData Insights Agentにアクセスする
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
-2. Experience Cloud ホームから **0&rbrace;Customer Journey Analytics&rbrace; を選択します。**
+2. Experience Cloud ホームから **0}Customer Journey Analytics} を選択します。**
 
 3. プロジェクトページ上部のバナーで **[!UICONTROL 空のプロジェクト]** を選択して、新しい空のプロジェクトを開きます。
 
-4. パネル用に選択したデータビューが、Beta テスト用に Data Insights Agent で使用できるようになったデータビューと同じであることを確認します。
-
-   不明な場合は、Beta Slackにお問い合わせください。
+4. [Customer Journey AnalyticsでのData Insights Agentへのアクセスの管理 ](#manage-access-to-data-insights-agent-in-customer-journey-analytics) で説明されているように、パネル用に選択したデータビューが、Data Insights Agentで使用できるようになっていることを確認します。
 
 5. ページの右上にある AI Assistant チャットアイコンを選択します。
 
    チャットアイコンが表示されない場合は、管理者に問い合わせて、管理者が Admin Console で次の機能を有効にできるようにします。
 
-   * **[!UICONTROL AI アシスタント：製品に関する知識]**
+   * レポートツール：**[!UICONTROL AI アシスタント：製品知識]**
 
-   * **[!UICONTROL AI アシスタント：データ分析]**
+   * データ ビューツール：**[!UICONTROL Data Insights Agent]**
 
-   詳細については、管理者は [ 以下の手順 ](https://experienceleague.adobe.com/ja/docs/experience-platform/ai-assistant/access) を参照してください。
+   詳しくは、[Customer Journey AnalyticsでのData Insights Agentへのアクセスの管理 ](#manage-access-to-data-insights-agent-in-customer-journey-analytics) を参照してください。
 
    ![AI アシスタント アイコン ](/help/assets/ai-asst-icon.png)
 
-6. ページ下部の **[!UICONTROL Customer Journey Analyticsについて尋ねる]** ダイアログで、データインサイトエージェントを使用してデータビジュアライゼーションに関する質問をします。
+6. ページ下部の **[!UICONTROL Customer Journey Analyticsについて尋ねる]** ダイアログで、Data Insights Agentを使用してデータビジュアライゼーションに関する質問をします。
 
    詳しくは、次の例を参照してください。
 
@@ -102,7 +132,7 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 ![AI プロンプト ](/help/assets/ai-asst-prompt1.png)
 
-**応答：** データインサイトエージェントは、指標やコンポーネントを含むデータビューでデータを調べることでインサイトを収集します。 これにより、プロンプトがデータ範囲内の適切なディメンションと指標に変換されます。
+**回答：** Data Insights Agentは、指標やコンポーネントを含むデータビューでデータを調べることでインサイトを収集します。 これにより、プロンプトがデータ範囲内の適切なディメンションと指標に変換されます。
 
 ご覧のように、7 月の注文を表示する折れ線グラフとフリーフォームテーブルが自動的に生成されました。
 
@@ -114,13 +144,13 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 **プロンプト：** プロンプトウィンドウで、「*地域ごとの売上高を表示」と入力します*。
 
-**回答：** データインサイトエージェントは、「地域」とは「顧客地域」を意味することをインテリジェントに理解しています。 次のように、地域別の売上高が最もよく表示される棒グラフが生成されます。
+**回答：** Data Insights Agentは、「地域」とは「お客様の地域」を意味することをインテリジェントに理解しています。 次のように、地域別の売上高が最もよく表示される棒グラフが生成されます。
 
 ![ 棒グラフ ](/help/assets/ai-asst-result2.png)
 
 ### 例 3
 
-次に、地域別の売上高を把握するだけでなく、地域別の利益のデータも確認する必要があります。 前のプロンプトを繰り返す代わりに、データインサイトエージェントに依頼して、最新のビジュアライゼーションとフリーフォームテーブルを更新することができます。
+次に、地域別の売上高を把握するだけでなく、地域別の利益のデータも確認する必要があります。 前のプロンプトを繰り返す代わりに、最新のビジュアライゼーションとフリーフォームテーブルを更新するようにData Insights Agentに依頼できます。
 
 **プロンプト：** プロンプトウィンドウに *「Add profit.」と入力します*
 
@@ -134,13 +164,13 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 **プロンプト：** プロンプトウィンドウで、「*製品カテゴリ別売上高の割合」と入力します。*
 
-**応答：** データインサイトエージェントは、質問に答えるために最も適切なビジュアライゼーション（この場合は **[!UICONTROL ドーナツ]** ビジュアライゼーション）を選択します。
+**Response:** Data Insights Agentでは、最も適切なビジュアライゼーション（この場合は **[!UICONTROL ドーナツ]** ビジュアライゼーション）を選択して、質問に回答します。
 
 ![ドーナツ](/help/assets/ai-asst-result3.png)
 
 ## データビジュアライゼーションプロンプトの例
 
-以下に、一般的なプロンプトと、それらのプロンプトに応答するためにデータインサイトエージェントで使用されるビジュアライゼーションの例を示します。
+以下に、一般的なプロンプトと、Data Insights Agentがプロンプトに応答するために使用するビジュアライゼーションの例を示します。
 
 | プロンプトの例 | 期待されるビジュアライゼーション |
 | --- | --- |
@@ -159,21 +189,21 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 
 ## プロンプトのベストプラクティス
 
-データインサイトエージェントは、各ユーザープロンプトから提供されるコンテキストを処理し、フリーフォームテーブル内の最も適切なビジュアライゼーションとコンポーネントでインテリジェントな応答を試みます。
+Data Insights Agentは、各ユーザープロンプトから提供されるコンテキストを処理し、フリーフォームテーブル内の最も適切なビジュアライゼーションとコンポーネントでインテリジェントな応答を試みます。
 
 回答は、プロンプトで使用された特定の単語やフレーズによって異なる場合があり、言語がわずかに変更されただけで結果が異なる場合があります。
 
 最適な結果を得るには、次のガイドラインを考慮してください。
 
-* 具体的：応答を絞り込むために正確な用語を含めます。 次に、「カリフォルニアでの先月の売上」という特定のプロンプトの例を示します
+* **具体的：** 回答を絞り込むために、正確な用語を含めます。 次に、「カリフォルニアでの先月の売上」という特定のプロンプトの例を示します。
 
-* 明確な指標とセグメントを使用：特定の指標（「売上高」など）、ディメンション（「web サイト名」など）、セグメント（「iPhone ユーザー」など）、および日付範囲（「過去 3 か月」など）を追加すると、Data Insights Agentが適切なデータに焦点を当てるのに役立ちます。
+* **明確な指標、ディメンション、セグメントの使用：** 特定の指標（「売上高」など）、ディメンション（「web サイト名」など）、セグメント（「iPhone ユーザー」など）、および日付範囲（「過去 3 か月」など）を追加すると、Data Insights Agentが適切なデータに焦点を当てるのに役立ちます。
 
-* 直接質問する：質問を直接言い換えると、データインサイトエージェントが明確で関連性の高いインサイトを提供しやすくなります。 次に、「今年の製品カテゴリ別平均売上高は何ですか？」というプロンプトで直接質問した例を示します。
+* **直接質問する：** 直接質問すると、Data Insights Agentが明確で関連性の高いインサイトを提供しやすくなります。 次に、「今年の製品カテゴリ別平均売上高は何ですか？」というプロンプトで直接質問した例を示します。
 
-データインサイトエージェントを使用してプロンプトで使用できる用語とフレーズの例を、期待できる応答のタイプと共に次の表で確認します。
+Data Insights Agentのプロンプトで使用できる用語とフレーズの例を、想定される応答のタイプと共に、次の表で確認します。
 
-これらの例は、特定の単語や構造がデータインサイトエージェントの出力に与える影響を理解し、より正確で価値のあるインサイトを確保できるように設計されています。 データインサイトエージェントは、生成 AI を使用するので、類似のプロンプト間でビジュアライゼーションや選択したデータが若干異なる場合があります。
+これらの例は、特定の単語や構造が Data Insight Agent の出力に与える影響を理解し、より正確で価値のあるインサイトを確実にすることを目的としています。 Data Insights Agentは生成 AI を使用するので、類似のプロンプト間でビジュアライゼーションや選択したデータが若干異なる場合があります。
 
 | 望ましい結果 | 用語とフレーズの例 |
 | --- | --- |
@@ -183,24 +213,29 @@ Data Insights Agent を使用してAnalysis Workspaceのデータ中心の質問
 | 折れ線グラフビジュアライゼーション | <ul><li>トレンド</li><li>[ 時間範囲 ] の [ 指標 ]</li></ul> |
 | 棒グラフビジュアライゼーション | <ul><li>[ 指標 ] （[Dimension] による）</li></ul> |
 
-## Beta テストの期待値とリクエストされたフィードバック
+<!--
 
-質問ごとにポーズを設定した後、アシスタントの提供した回答を注意深く確認します。 フィードバックを提供する前に、生成されたビジュアライゼーションを包括的に評価することが重要です。
+## Beta testing expectations and requested feedback
 
-データインサイトエージェントからの応答を評価する際は、次の点を考慮してください。
+After posing each question, carefully review the assistant's provided answer. It's crucial to evaluate the generated visualizations comprehensively before providing feedback. 
 
-* チャットレールの応答またはテンプレート：提供されたテキスト応答を評価します。 プロンプトのコンテキストに基づいて応答は適切か
+Consider the following when evaluating a response from Data Insights Agent: 
 
-* ビジュアライゼーション/グラフ：ビジュアライゼーションを評価します。 これは質問に対する適切な、または期待されるビジュアライゼーションですか？それとも、別のビジュアライゼーションを期待していますか？
+* Chat rail response or template: Evaluate the textual response provided. Is the response appropriate given the context of your prompt? 
 
-* フリーフォームテーブル：フリーフォームテーブルを評価します。 フリーフォームテーブルデータは正しいですか？ 要求された場所でデータが分類されていますか？ 適用されたセグメントは、ユーザーが要求または想定したものですか。
+* Visualization/chart: Evaluate the visualization. Is it the appropriate or expected visualization for your question, or would you have expected a different visualization?  
 
-* エラーメッセージ/範囲外：質問が範囲外であることを示す一般的なエラーメッセージが表示された場合は、プロンプトに対して、範囲外のメッセージが適切であると思うかどうかに関するフィードバックを提供します。 あなたのプロンプトは本当にスコープに入っていたのですか？
+* Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied segments those that you requested or expected? 
 
-**すべての応答に対して、応答に基づいてサムズアップまたはサムズダウンを行います。**
+* Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate, given your prompt. Was your prompt actually in scope? 
 
-サムズアップまたはサムズダウンの選択に続いて、関連する複数選択フィードバックボックスの選択を行ってください。 追加のフィードバックを提供する場合は、「開く」テキストボックスにメモを追加します。
+**For every response, give a thumbs up or thumbs down, based on the response.**
 
-## 質問と連絡先
+Following the thumbs up or thumbs down selection, please make a selection for the relevant multi-select feedback boxes. If you want to provide additional feedback, add notes in the open text box.
 
-* Beta Slack チャネルで質問やフィードバックを送信：#data-insights-agent-in-cja-beta
+## Questions and Contact
+
+* Send questions and feedback in the Beta Slack channel: #data-insights-agent-in-cja-beta
+
+-->
+
