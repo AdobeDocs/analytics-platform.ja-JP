@@ -3,47 +3,49 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: 50dc97017913ef7064011437e233a40c862484e6
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 70%
+source-wordcount: '986'
+ht-degree: 32%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2025年4月）
+# 現在の Adobe Customer Journey Analytics リリースノート（2025年5月）
 
-**最終更新日**：2025年5月8日（PT）
+**最終更新日**：2025年5月14日（PT）
 
-このリリースノートは、2025年3月27日（PT）～2025年5月15日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+
+これらのリリースノートは、2025 年 4 月 22 日（PT）から 6 月 18 日（PT）までのリリース期間をカバーしています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **イベントの深度ディメンション** | データビューの [ 標準ディメンション ](/help/components/dimensions/overview.md#standard-dimensions) のリストに、新しいイベントの深度ディメンションが追加されます。 |  | 2025年5月8日（PT） |
-| **完全テーブルの書き出し制限の増加** | 完全なテーブルの書き出しで使用できる列数は、5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に増えました。 この増加は、すべてのCustomer Journey Analytics層に適用されます。 書き出し可能な行数の使用権限に変更はありません。 |  | 2025年4月30日（PT） |
-| **数値ディメンションの「値なし」行項目の更新** | 数値ディメンションの場合、この更新により次のことが可能になります<ul><li>セグメントで「値なし」ディメンション項目を使用します。</li><li>「値なし」行項目に関するレポートで分類を実行する。</li></ul> [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | | 2025年3月27日（PT） |
-| **Adobe Content Analytics** | Adobe Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。<p>標準の事前定義済みのレポートテンプレートやアセットインスペクターなどの新機能を使用して時間を節約できます。この機能を使用すると、データに合わせてアセットを視覚化できるだけでなく、各アセットを開いて、パフォーマンス、配置、属性などの詳細の概要を確認することもできます。<p>完全なカスタマージャーニーのコンテキスト内でこの新しいコンテンツデータセットを調査して、重要なビジネス上の質問に回答し、コンテンツのパフォーマンスを評価し、セグメント化を強化し、最適化の機会を特定し、アクティベーション用の新しいオーディエンスを定義できます。<p>Content Analytics は、Customer Journey Analytics のアドオンです。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) |  | 2025年3月27日（PT） |
-| **メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新** | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025年3月31日（PT） |
-| **Adobe Experience Platform にストリーミングメディアデータを収集するための XDM フィールドを更新** | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)。 <p>代わりに、上記のストリーミングメディアパラメータードキュメントの「XDM フィールドパスのレポート」の見出しの下で示されているように、お客様は `mediaReporting` フィールドパスに移行する必要があります。<p>3 か月の移行期間に、非推奨（廃止予定）の XDM フィールドパスでのデータ取り込みは継続されます。 ただし、2025 年 7 月末に、非推奨フィールドパスは完全に削除され、Adobe Experience Platform スキーマ UI に表示されなくなり、データは `mediaReporting` フィールドパスを使用してのみ送信されます。<p>2025 年 4 月 22 日（PT）より前にストリーミングメディアデータを Platform に収集するために Analytics ソースコネクタを実装したお客様は、新しいフィールドパスを使用するように既存の設定を移行する必要があります。 この移行は、2025年7月末までに完了する必要があります。移行サポートについては、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。2025年4月22日（PT）以降に Analytics ソースコネクタを実装するお客様については、アクションは必要ありません。</p> |  | 2025年4月22日（PT） |
-| **用語の変更：「フィルター」から「セグメント」へ** | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（もちろん、検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントが更新されました。 | | 2025年4月16日（PT） |
-| **ステッチ：XDM IdentityMap から永続 ID と一時 ID を取得** | この機能を活用すると、ステッチプロセスで XDM identityMap に保存されている ID を使用できるようになります。identityMap は、フィールドベースのステッチの永続 ID または一時 ID として使用するか、グラフベースのステッチの永続 ID として使用できます。identityMap に含まれる特定の名前空間またはプライマリ ID のいずれかを使用できます。詳しくは、[こちら](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/fbs#identitymap)と[こちら](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs#identitymap)を参照してください |  | 2025年4月28日（PT） |
+| **Customer Journey AnalyticsB2B edition** | Customer Journey Analytics B2B editionは、売上高の増加を促す実用的なアカウントインサイトを提供することで、B2B 企業がマーケティング、セールス、製品の各チームを連携させるのに役立ちます。 アカウントがデータモデルの中心に配置されるので、すべての分析はアカウントジャーニーに焦点を当てます。 人物および時間ベースのイベントの上に新しいエンティティのレイヤー（アカウント、機会、購入グループ）を追加すると、B2B マーケティングと収益のライフサイクルの全体像が作成されます。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition) |  | 2025年6月18日（PT） |
+| **Data Insights Agent** | Data Insights Agentは、Customer Journey Analyticsの AI アシスタントの一部で、ジェネレーティブ AI コンバージョンエージェントです。 データビューと実際のデータのコンポーネントを使用して、Analysis Workspaceで関連するビジュアライゼーションを構築することで、データ中心の質問にすばやく効率的に回答します。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) |  | 2025年5月28日（PT） |
+| **Analysis Workspace プロジェクトでのコメントの追加と表示** | Analysis Workspaceの新しい [ コメント機能 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) を使用すると、Analysis Workspace プロジェクトのコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。 次のことが可能です。 <ul><li>アクセス権のあるAnalysis Workspace プロジェクトにコメントします</li><li>ビジュアライゼーション内の特定のポイントにコメントする、またはプロジェクトに関して一般的なコメントを作成する</li><li>他のユーザーにタグを付けて、コメントについて通知します</li><li>既存のコメントを管理（編集、ピン留め、解決など）</li></ul>Customer Journey Analytics管理者は [ 組織レベルでコメントを無効にする ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences) ことができます。 プロジェクト所有者は [ プロジェクトレベルでコメントを無効にする ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects) ことができます。 |  | 2025年5月29日（PT） |
+| **完全テーブルの書き出し制限の増加** | Adobeでは、[ 完全なテーブルの書き出し ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) で使用できる列の数が、5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に増えました。 これは、すべてのCustomer Journey Analytics層に適用されます。 書き出し可能な行数の使用権限に変更はありません。 |  | 2025年4月30日（PT） |
+| **Adobe Experience Platform にストリーミングメディアデータを収集するための XDM フィールドを更新** | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 <p>代わりに、上記のストリーミングメディアパラメータードキュメントの「XDM フィールドパスのレポート」の見出しの下で示されているように、お客様は `mediaReporting` フィールドパスに移行する必要があります。<p>3 か月の移行期間に、非推奨（廃止予定）の XDM フィールドパスでのデータ取り込みは継続されます。 ただし、2025 年 7 月末に、非推奨フィールドパスは完全に削除され、Adobe Experience Platform スキーマ UI に表示されなくなり、データは `mediaReporting` フィールドパスを使用してのみ送信されます。<p>2025 年 4 月 22 日（PT）より前にストリーミングメディアデータを Platform に収集するために Analytics ソースコネクタを実装したお客様は、新しいフィールドパスを使用するように既存の設定を移行する必要があります。 この移行は、2025年7月末までに完了する必要があります。移行サポートについては、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。2025年4月22日（PT）以降に Analytics ソースコネクタを実装するお客様については、アクションは必要ありません。</p> |  | 2025年4月22日（PT） |
+| **ステッチ：XDM IdentityMap から永続 ID と一時 ID を取得** | この機能を活用すると、ステッチプロセスで XDM identityMap に保存されている ID を使用できるようになります。identityMap は、フィールドベースのステッチの永続 ID または一時 ID として使用するか、グラフベースのステッチの永続 ID として使用できます。identityMap に含まれる特定の名前空間またはプライマリ ID のいずれかを使用できます。詳しくは、[こちら](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/fbs#identitymap)と[こちら](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs#identitymap)を参照してください |  | 2025年4月28日（PT） |
 | **データビュー全体で指標とディメンションを共有** | 複数のデータビューをまたいでディメンションと指標の設定を適用できます。共有ディメンションまたは指標に対する変更は、適用可能なすべてのデータビュー全体で、そのディメンションまたは指標のすべてのインスタンスに適用されます。このインターフェイスにより、Customer Journey Analytics 管理者は、多くのデータビューが使用される場合に、コンポーネントをより簡単に管理できます。[詳細情報](/help/data-views/shared-metrics-dimensions/smd-overview.md) |  | 2025年4月30日（PT） |
+| **イベントの深度ディメンション** | 新しい [ イベントの深度 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference#required-standard-components) ディメンションが、データビューに必要な標準コンポーネントのリストに追加されました。 |  | 2025年5月8日（PT） |
+| **Analysis Workspaceの左パネルが開かなくなり、マウスポインターを置くと閉じる** | Analysis Workspaceの左側のパネルを使用すると、コンポーネント、パネル、ビジュアライゼーションなどをプロジェクトに追加できます。 左端のいずれかのアイコンにマウスポインターを置いて、一時的に左側のパネルを開くオプションは使用できなくなりました。 代わりに、これらのアイコンのいずれかをクリックしてパネルを開いたままにし、同じアイコンをクリックして閉じるだけです。 |  | 2025年5月29日（PT） |
+| **完全なテーブルを書き出す場合は、マニフェストファイルを無効にします** | Analysis Workspaceから完全なテーブルを書き出す際に、デフォルトで含まれるマニフェストファイルを無効にできます。 |  | 2025年5月末 |
 
 
 ## Customer Journey Analytics の修正点
 
-**Admin Console**：AN-370228
-**Analysis Workspace**：AN-371933、AN-371933、AN-371979
-**オーディエンス**：AN-373032
-**コンポーネント設定**：AN-367400
-**派生フィールド**：AN-370614、AN-370959
-**書き出し場所**：AN-371670
-**完全なテーブルの書き出し**：AN-360492、AN-369204、AN-370755、AN-372294、AN-372363、AN-372754、AN-373040、AN-373081、AN-373168
-**ジャーニーキャンバス**：AN-373294
-**モバイルアプリ**：AN-363169、AN-368496、AN-371766
-**製品の使用状況**：AN-369501
-**レポート**：AN-369085、AN-371094、AN-372580
+**Analysis Workspace**: AN-361874; AN-371360; AN-373079; AN-374382; AN-374447; AN-375277; AN-375680
+**オーディエンス**: AN-372343
+**監査ログ**: AN-378168
+**接続**: AN-373121; AN-372996
+**データ削除**: AN-375450
+**派生フィールド**:AN-373689; AN-377852
+**書き出し場所**:AN-374167
+**ジャーニーキャンバス**: AN-373319
+**Report Builder**: AN-369786
+**レポート**: AN-377326; AN-378051
+**レポートアクティビティマネージャー**:AN-377148
 
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
