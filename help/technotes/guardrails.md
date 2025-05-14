@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 17cd5170e62b410ebf6118c6ac562d20b81b4e21
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 10%
+source-wordcount: '2012'
+ht-degree: 11%
 
 ---
 
@@ -53,6 +53,10 @@ ht-degree: 10%
 | プロジェクトごとのパネル数 | 15 | システム強制ガードレール | プロジェクトあたりの最大 [ パネル ](../analysis-workspace/home.md#panels) 数。 |
 | パネルごとのビジュアライゼーション | 25 | システム強制ガードレール | パネルあたりの [ ビジュアライゼーション ](../analysis-workspace/home.md#visualizations) の最大数。 |
 | フリーフォームテーブルごとの派生フィールド | 5 | システム強制ガードレール | 1 つのフリーフォームテーブルでの異なる派生フィールドの最大数。 |
+| プロジェクトごとのコメント <p>**メモ：** プロジェクトにコメントする機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。</p> | 1,000 | システム強制ガードレール | プロジェクトごとの最大コメント数。 |
+| コメントごとの返信 <p>**メモ：** プロジェクトにコメントする機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。</p> | 100 | システム強制ガードレール | コメントあたりの最大返信数。 |
+| コメントあたりの画像の数 <p>**メモ：** プロジェクトにコメントする機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。</p> | 5 | システム強制ガードレール | コメントあたりの最大画像数。 |
+| 画像サイズ <p>**メモ：** プロジェクトにコメントする機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない場合があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。</p> | 2 | システム強制ガードレール | プロジェクトのコメントの、画像あたりの最大アップロードサイズ （MB 単位）です |
 
 {style="table-layout:auto"}
 
@@ -138,7 +142,7 @@ Experience Platform[Real-time Customer Data Platform ガードレール ](https:
 
 {style="table-layout:auto"}
 
-Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) も参照してください。
+Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) も参照してください。
 
 
 ## 宛先データの書き出し
@@ -150,7 +154,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 
 {style="table-layout:auto"}
 
-Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
+Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
 
 
 ## データランディングゾーン
@@ -238,7 +242,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
