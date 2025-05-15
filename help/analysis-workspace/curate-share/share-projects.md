@@ -5,9 +5,9 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
+source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2091'
 ht-degree: 96%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/40032/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -83,7 +83,7 @@ ht-degree: 96%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**を選択します。
 未保存の変更がある場合は、まずプロジェクトを保存するように求められます。
 
    共有プロジェクトダイアログボックスが表示されます。ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
@@ -130,6 +130,12 @@ ht-degree: 96%
 
 ## 任意のユーザーとのプロジェクトの共有（ログイン不要） {#share-public-link}
 
+>[!CONTEXTUALHELP]
+>id="workspace_share_with_anyone_require_aec_authentication"
+>title="Experience Cloud 認証を要求"
+>abstract="このリンクを使用するには、Experience Cloudにログインする必要があります。"
+
+
 Customer Journey Analytics にアクセスできないユーザーに Analysis Workspace プロジェクトへの[読み取り専用アクセス権](/help/analysis-workspace/curate-share/view-only-projects.md)を付与できます。このようなユーザーには以下が含まれます。
 
 * 組織外のユーザー
@@ -150,11 +156,11 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方で、[!UICONTROL &#x200B; 任意のユーザーと共有 &#x200B;] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
+>* [!DNL Healthcare Shield] ライセンスと [!DNL Privacy & Security Shield] ライセンスの両方で、[!UICONTROL  任意のユーザーと共有 ] 機能を使用するには、Experience Cloud認証が必要です。 [!DNL Healthcare Shield] のお客様には、「HIPAA 準拠」の警告が表示されますが、Experience Cloudへの認証後もこの機能を使用できます。
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3452450/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -209,7 +215,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/327498/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
