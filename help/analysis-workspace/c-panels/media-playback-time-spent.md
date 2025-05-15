@@ -34,7 +34,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
 
 >[!ENDSHADEBOX]
 
