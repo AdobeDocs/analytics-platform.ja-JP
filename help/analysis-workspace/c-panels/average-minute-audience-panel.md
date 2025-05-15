@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="メディア分平均オーディエンス"
->abstract="特定のメディアコンテンツのパフォーマンスまたはカスタム期間のパフォーマンスを表示します。レポートディメンションと、オプションでセグメントコンテンツを指定します。"
+>abstract="特定のメディアコンテンツのパフォーマンスまたはカスタム期間のパフォーマンスを表示します。レポートディメンションを指定し、オプションでコンテンツをセグメント化します。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア分平均オーディエンスパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア分平均オーディエンスパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア分平均オーディエンスパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア分平均オーディエンスパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_
 
 >[!ENDSHADEBOX]
 

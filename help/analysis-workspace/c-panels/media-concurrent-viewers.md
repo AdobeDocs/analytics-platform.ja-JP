@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="メディア同時視聴者数"
->abstract="同時視聴者数の推移を分析し、ピーク同時実行性を表示します。また、オプションで、セグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
+>abstract="同時視聴者数の推移を分析し、ピーク時の同時実行を表示して、オプションでセグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア同時視聴者数パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[メディア同時視聴者数パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア同時視聴者数パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[メディア同時視聴者数パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/35210/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

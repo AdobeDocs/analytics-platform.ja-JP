@@ -8,7 +8,7 @@ role: User
 source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
->title="テーブルを表示"
+>title="テーブルの表示"
 >abstract="「**[!UICONTROL テーブルを表示]**」を選択すると、元のデータソースとは別に、現在のビジュアライゼーション用の新しいデータソースが生成されます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -36,8 +36,8 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
->title="テーブルを表示"
->abstract="「**[!UICONTROL テーブルを表示]**」を選択すると、元のデータソースとは別に、現在のビジュアライゼーションの新しいデータソースが生成されます。"
+>title="テーブルの表示"
+>abstract="「**[!UICONTROL テーブルを表示]**」を選択して、元のデータソースとは別に、現在のビジュアライゼーション用の新しいデータソースを生成します。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="メディア再生滞在時間"
->abstract="ビデオ消費の推移を分析し、様々な精度を選択し、オプションで、セグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
+>abstract="ビデオ消費の推移を分析し、様々な精度を選択して、オプションでセグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/3446701?captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/338699){target="_blank"}を参照してください。
 
 {{videoaa}}
 

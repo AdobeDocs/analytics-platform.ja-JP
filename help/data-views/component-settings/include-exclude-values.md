@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="値を含む／除外"
->abstract="特定の条件に合致する値のみを含めるようにディメンションを絞り込みます。包含と除外は、レポートでの配分とセグメント化の前に行われます。 指定したセグメントロジックで大文字と小文字を区別するかどうかを決定します。"
+>abstract="特定の条件に合致する値のみを含めるようにディメンションを絞り込みます。含めることと除外することは、レポートでの配分とセグメント化の前に行われます。指定したセグメントロジックで大文字と小文字を区別するかどうかを決定します。"
 
 <!-- markdownlint-enable MD034 -->
 
