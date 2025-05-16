@@ -4,9 +4,9 @@ title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
-workflow-type: ht
-source-wordcount: '876'
+source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -16,65 +16,10 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="インテリジェントキャプション：面グラフ"
+>id="workspace_intelligentcaptions"
+>title="インテリジェントキャプション"
 >abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="インテリジェントキャプション：棒グラフ"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="インテリジェントキャプション：ドーナツグラフ"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="インテリジェントキャプション：横棒グラフ"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="インテリジェントキャプション：折れ線グラフ"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="インテリジェントキャプション：フォールアウト"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="インテリジェントキャプション：フロー"
->abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
-
-<!-- markdownlint-enable MD034 -->
 
 インテリジェントキャプション機能は、高度な生成 AI を使用して、自然言語で最も頻繁に使用される Workspaceのビジュアライゼーションに関する重要なインサイトを提供します。
 
@@ -85,7 +30,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3443139/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
