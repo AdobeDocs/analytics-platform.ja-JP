@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 83%
+source-wordcount: '1225'
+ht-degree: 84%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 83%
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトにコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [プロジェクトの保存](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Workspaceのフォルダー {#workspace-folders}
+      + Workspace のフォルダー {#workspace-folders}
          + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [フォルダーの管理](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
@@ -381,9 +381,9 @@ ht-degree: 83%
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
-      + [データ要素でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
-      + [データ要素でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
-      + [データ要素の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
+      + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
+      + [データ辞書でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [データ辞書の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
    + [概要](../report-builder/rb-overview.md)
@@ -393,7 +393,7 @@ ht-degree: 83%
    + [データビューを選択](../report-builder/select-data-view.md)
    + [日付範囲を選択](../report-builder/select-date-range.md)
    + [セグメントの操作](../report-builder/work-with-filters.md)
-   + [ディメンションのフィルター](../report-builder/filter-dimensions.md)
+   + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
    + [ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
@@ -411,6 +411,7 @@ ht-degree: 83%
    + [グラフベースのステッチ](/help/stitching/gbs.md)
    + [ステッチの使用](/help/stitching/use-stitching.md)
    + [ステッチされたデータセットの作成と管理](/help/stitching/stitching-ui.md)
+   + [ステッチを検証](/help/stitching/validate.md)
    + [よくある質問](/help/stitching/faq.md)
 
 + Adobe統合 {#integrations}
