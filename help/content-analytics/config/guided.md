@@ -140,7 +140,7 @@ ht-degree: 51%
    次のアクションを実行できます。
 
    * 特定のデータビューを検索するには、「![ 検索 ](/help/assets/icons/Search.svg)」フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL  接続 ]、[!UICONTROL  所有者 ]、[!UICONTROL  サンドボックス ] でリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL &#x200B; 接続 &#x200B;]、[!UICONTROL &#x200B; 所有者 &#x200B;]、[!UICONTROL &#x200B; サンドボックス &#x200B;] でリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
    * テーブルに表示する列を定義するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」を選択します。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
 1. ![SelectBox](/help/assets/icons/SelectBox.svg) を選択して、使用するデータビューを選択します。
@@ -231,7 +231,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
    * Content Analytics イベントデータからエクスペリエンス属性を生成するプロセス
    * Customer Journey Analyticsのレポートテンプレート。
 
-* ![Edit](/help/assets/icons/Edit.svg)**[!UICONTROL Edit]** を選択して、Content Analyticsのエクスペリエンスのデータ収集の設定を編集します。 現在の設定に関連付けられているタグプロパティの ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0}Adobe Content Analytics拡張機能 } にリダイレクトされます。[
+* ![Edit](/help/assets/icons/Edit.svg)**[!UICONTROL Edit]** を選択して、Content Analyticsのエクスペリエンスのデータ収集の設定を編集します。 現在の設定に関連付けられているタグプロパティの [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; にリダイレクトされます。
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -326,9 +326,9 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 
 既存の設定では、タグプロパティは編集できません。 ただし、含めるまたは除外するページとアセットを編集することはできます。
 
-* コンテンツ分析用のデータを収集する際に含める、または除外するページを編集するには、「**[!UICONTROL エクスペリエンス]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 現在のContent Analytics設定のタグプロパティに関連付けられている ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0}Adobe Content Analytics拡張機能にリダイレクトされます。 [正規表現を編集して、ページを含めたり除外したりできます。 変更を必ず [ 公開 ](#publish) します。
+* コンテンツ分析用のデータを収集する際に含める、または除外するページを編集するには、「**[!UICONTROL エクスペリエンス]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 現在のContent Analytics設定のタグプロパティに関連付けられている [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0&rbrace;Adobe Content Analytics拡張機能にリダイレクトされます。 正規表現を編集して、ページを含めたり除外したりできます。 変更を必ず [ 公開 ](#publish) します。
 
-* コンテンツ分析用のデータを収集する際に含める、または除外するアセットを編集するには、「**[!UICONTROL アセット]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 現在のContent Analytics設定のタグプロパティに関連付けられている ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0}Adobe Content Analytics拡張機能にリダイレクトされます。 [正規表現を編集して、アセットを含めたり除外したりできます。 変更を必ず [ 公開 ](#publish) します。
+* コンテンツ分析用のデータを収集する際に含める、または除外するアセットを編集するには、「**[!UICONTROL アセット]** の下の「![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 編集]** を選択します。 現在のContent Analytics設定のタグプロパティに関連付けられている [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)0&rbrace;Adobe Content Analytics拡張機能にリダイレクトされます。 正規表現を編集して、アセットを含めたり除外したりできます。 変更を必ず [ 公開 ](#publish) します。
 
 ### 概要 {#summary}
 
@@ -354,7 +354,7 @@ Customer Journey Analyticsでは、[ データビュー ](/help/data-views/data-
 設定を作成または編集する際には、次のオプションがあります。
 
 * **[!UICONTROL 破棄]**：設定の一部として行われたすべての変更は破棄されます。
-* **[!UICONTROL 後で使用するために保存]**：設定に対する変更は保存されます。 後から設定を再度参照して、さらに変更を加えたり、設定を実装したりできます。 設定を保存するには、[!UICONTROL  名前 ] の値のみが必要です。
+* **[!UICONTROL 後で使用するために保存]**：設定に対する変更は保存されます。 後から設定を再度参照して、さらに変更を加えたり、設定を実装したりできます。 設定を保存するには、[!UICONTROL &#x200B; 名前 &#x200B;] の値のみが必要です。
 * **[!UICONTROL 実装]**：設定または設定に加えた変更を保存して実装します。 ![ 必須 ](/help/assets/icons/Required.svg) とマークされたすべてのフィールドに適切な値が必要です。 実装は次で構成されます。
 
    * **[!UICONTROL Customer Journey Analytics]** 設定：
