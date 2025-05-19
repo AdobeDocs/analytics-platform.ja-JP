@@ -4,11 +4,10 @@ description: ステッチの検証方法
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
+source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、同じ ID 名前空間に連携されたExperience Platform内のすべてのデータセットを持つCustomer Journey Analytics設定の全体的な値については説明しません。 また、これらすべてのデータセットがうまく結合され、カスタマージャーニー全体にわたる分析を実行できます。
+>1 つ以上のデータセットの（検証）ステッチは、最終的には分析とインサイトの向上に貢献します。 ただし、この記事では、Experience Platform内のすべてのデータセットが同じ ID 名前空間に関連付けられているCustomer Journey Analytics設定の全体的な値については説明しません。 また、これらすべてのデータセットがうまく結合され、カスタマージャーニー全体にわたる分析を実行できます。
 
 
 ## データ表示の前提条件
@@ -53,7 +52,7 @@ ht-degree: 0%
 1. フィールド `stitchedID.namespae.code` 使用して、**[!UICONTROL メールステッチされた名前空間]** ディメンションを作成します。 [ 値を含む/除外コンポーネントの設定 ](/help/data-views/component-settings/include-exclude-values.md) を指定していることを確認し、データ行の昇格を試みる名前空間の値のみを考慮するようにします。
    1. 「**[!UICONTROL 値を含める/除外する]**」を選択します。
    1. **[!UICONTROL すべての条件を満たす場合]** を **[!UICONTROL 一致]** として選択します。
-   1. **[!UICONTROL 条件 `email` として**&#x200B;[!UICONTROL &#x200B; 次に等しい &#x200B;]&#x200B;**]** を指定し、メール名前空間に昇格されたイベントを選択します。
+   1. **[!UICONTROL 条件 `email` として**[!UICONTROL  次に等しい ]**]** を指定し、メール名前空間に昇格されたイベントを選択します。
 
    ![ メールの静的な名前空間指標 ](assets/emailstitchednamespace-metric.png)
 
@@ -61,9 +60,9 @@ ht-degree: 0%
 
 これらのディメンションの両方がデータビューに追加された状態で、Analysis Workspaceの [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を使用して、各ディメンションに含まれるデータを確認します。
 
-**[!UICONTROL &#x200B; ステッチされた名前空間ディメンション**] テーブルには、通常、データセットごとに 2 行が表示されます。 ステッチプロセスでフォールバックメソッド（ECID）を使用する必要があったタイミングを表す 1 行。 もう 1 つの行には、目的の ID 名前空間に関連付けられたイベント（メール）が表示されます。
+**[!UICONTROL  ステッチされた名前空間ディメンション**] テーブルには、通常、データセットごとに 2 行が表示されます。 ステッチプロセスでフォールバックメソッド（ECID）を使用する必要があったタイミングを表す 1 行。 もう 1 つの行には、目的の ID 名前空間に関連付けられたイベント（メール）が表示されます。
 
-**[!UICONTROL &#x200B; ステッチされた ID ディメンション**] テーブルには、イベントから取得された生の値が表示されます。 この表では、永続 ID と目的のユーザー ID の間で値が切り替わっていることがわかります。
+**[!UICONTROL  ステッチされた ID ディメンション**] テーブルには、イベントから取得された生の値が表示されます。 この表では、永続 ID と目的のユーザー ID の間で値が切り替わっていることがわかります。
 
 ![ ステッチ寸法をチェック ](assets/check-data-on-stitching.png)
 
@@ -75,7 +74,7 @@ ht-degree: 0%
 1. 計算指標 **[!UICONTROL 合計未認証イベント数]** を作成します。 ルールビルダーで、次のようにルールを定義します。
    ![ 認証されていないイベントの合計 ](assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. 前に定義した **[!UICONTROL _Email のセット]** 指標に基づいて、計算指標 **メール認証率** を作成します。 ルールビルダーで、次のようにルールを定義します。
+1. 前に定義した **[!UICONTROL _Email のセット]** 指標に基づいて、計算指標 ]**メール認証率**[!UICONTROL  を作成します。 ルールビルダーで、次のようにルールを定義します。
    ![ メール認証率 ](assets/calcmetric-emailauthenticationrate.png)
 
 1. **[!UICONTROL 合計に対する未認証イベント]** の計算指標を **[!UICONTROL メール認証率]** の計算指標と共に使用して、[ ドーナツ ](/help/analysis-workspace/visualizations/donut.md) ビジュアライゼーションを作成します。 このビジュアライゼーションには、データセット内の未認証と認証済みのイベントの数が表示されます。

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '741'
 ht-degree: 15%
 
 ---
@@ -41,7 +41,7 @@ Customer Journey Analyticsでは 2 種類のステッチ（[ フィールドベ�
 - 目的のデータをAdobe Experience Platformに読み込みます。
 
    - Adobe Analytics データについては、[Customer Journey AnalyticsでのAdobe Analytics レポートスイートデータの利用 ](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) を参照してください。
-   - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)を参照してください。
+   - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)を参照してください。
 
 Customer Journey Analytics接続の定義の一環として、1 つ以上のステッチされたデータセットを、コールセンターデータなどの他のデータセットと組み合わせると、クロスチャネル分析のメリットが得られます。 この接続設定では、ステッチされた ID と同様に、他のデータセットに既にすべての行に人物 ID が含まれていることを前提としています。
 
@@ -55,7 +55,7 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 >
 >- ソースデータセットを削除すると、ステッチされたデータセットは、処理を停止し、システムによって削除されます。
 >
->- データ使用ラベルは、ステッチされたデータセットスキーマに自動的には生成されません。 ソースデータセットスキーマにデータ使用ラベルが適用されている場合は、ステッチされたデータセットスキーマにこれらのデータ使用ラベルを手動で適用する必要があります。 詳しくは [Experience Platformでのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview) を参照してください。
+>- データ使用ラベルは、ステッチされたデータセットスキーマに自動的には生成されません。 ソースデータセットスキーマにデータ使用ラベルが適用されている場合は、ステッチされたデータセットスキーマにこれらのデータ使用ラベルを手動で適用する必要があります。 詳しくは [Experience Platformでのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) を参照してください。
 
 ステッチは画期的で堅牢な機能ですが、使用方法に制限があります。
 
@@ -74,5 +74,6 @@ Customer Journey Analytics接続の定義の一環として、1 つ以上のス�
 >[ フィールドベースのステッチ ](fbs.md)
 >[グラフベースのステッチ ](gbs.md)
 >[ステッチを使用する ](use-stitching.md)
+>[ステッチを検証 ](validate.md)
 >[ステッチに関する FAQ ](faq.md)
 
