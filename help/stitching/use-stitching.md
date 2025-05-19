@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
+source-git-commit: dd285caa3d9702d3ddccdba2bc656767a9fe4684
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 # ステッチの使用
 
-組織がすべての [ 前提条件 ](#prerequisites) を満たし、一般的な [ 制限 ](#limitations) およびステッチ方法固有の（[ フィールドベース ](#limitations-1) および [ グラフベース ](#limitations-2)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでのステッチの使用を開始できます。
+組織がすべての [ 前提条件 ](overview.md#prerequisites) を満たし、一般的な [ 制限 ](overview.md#limitations) およびステッチ方法固有の（[ フィールドベース ](fbs.md#limitations) および [ グラフベース ](gbs.md#limitations)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでのステッチの使用を開始できます。
 
 ## オプションを選択
 
