@@ -8,7 +8,7 @@ role: User
 source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
 source-wordcount: '2312'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Analysis Workspace から完全なテーブルを Google、Azure、Amazon、Adob
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="マニフェストファイル"
->abstract="有効にすると、成功した書き出し配信にマニフェストファイルが含まれます。 マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。"
+>abstract="有効にすると、成功した書き出し配信にマニフェストファイルが含まれます。マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。"
 
 <!-- markdownlint-enable MD034 -->
 
