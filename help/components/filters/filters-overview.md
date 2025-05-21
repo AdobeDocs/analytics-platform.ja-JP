@@ -4,7 +4,7 @@ description: の使用目的とシンプルなセグメントの作成方法に�
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Customer Journey Analyticsでは、焦点を当てた強力なオーディエン
 
    - このセグメントはいつ使用する必要がありますか。
 
-- **範囲**：後のデータを最もよく表す [ セグメントコンテナ ](#filter-containers) はどれですか？ できるだけ小さいコンテナを使用します。
+- **範囲**：後のデータを最もよく表す [ セグメントコンテナ ](#segment-containers) はどれですか？ できるだけ小さいコンテナを使用します。
 
 - **コンポーネント**：セグメント定義に含めるコンポーネントと、条件で検証する値を決定します。
 
@@ -165,14 +165,14 @@ Customer Journey Analyticsのデータビューを使用すると、セッショ
 
 ### B2B コンテナ
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}
 
 [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) にアクセスできる場合は、セグメントで使用するその他のコンテナを使用できます。 これらの追加コンテナの使用について詳しくは、[B2B の概念と機能 ](/help/getting-started/cja-b2b-concepts-features.md) を参照してください。
 
 
 ### 論理グループコンテナ
 
-論理グループを使用すると、条件を 1 つの順次セグメントチェックポイントにグループ化できます。 シーケンスの一部として、[!UICONTROL &#x200B; 論理グループ &#x200B;] として識別されるコンテナ内で定義されるロジックは、先行する順次チェックポイントの後、後続の順次チェックポイントの前に評価されます。 詳しくは、[ 論理グループ ](seg-sequential-build.md#logic-group) を参照してください。
+論理グループを使用すると、条件を 1 つの順次セグメントチェックポイントにグループ化できます。 シーケンスの一部として、[!UICONTROL  論理グループ ] として識別されるコンテナ内で定義されるロジックは、先行する順次チェックポイントの後、後続の順次チェックポイントの前に評価されます。 詳しくは、[ 論理グループ ](seg-sequential-build.md#logic-group) を参照してください。
 
 ### コンテナをネスト
 

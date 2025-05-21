@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+source-git-commit: d56605b1ae7fd6d83853ad54ce823464090e0192
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 84%
+source-wordcount: '1241'
+ht-degree: 82%
 
 ---
 
@@ -433,7 +433,13 @@ ht-degree: 84%
       + [マーケティングチャネルディメンションの使用](../use-cases/aa-data/marketing-channels.md)
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
-      + [B2B プロジェクトの例](../use-cases/b2b/example.md)
+      + [ユーザーベースの B2B プロジェクトの例](../use-cases/b2b/example.md)
+      + B2B edition {#b2b-edition}
+         + [ユースケースの概要](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+         + [セットアップ](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [アカウントマーケティングの最適化](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+         + [主要アカウントの拡大](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+         + [製品の価値を構築](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列の使用](../use-cases/object-arrays.md)
    + クロスチャネルデータ {#cross-channel}
