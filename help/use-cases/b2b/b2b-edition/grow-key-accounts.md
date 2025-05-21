@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # 主要アカウントの拡大
+
+{{draft-b2b}}
 
 B2B 企業にとって、重要なアカウントの拡大と保持は最優先事項です。 取引の進捗を確保するための前提条件は、ターゲットアカウントの主要な関係者と適切なタイミングでコミュニケーションを取ることです。
 
@@ -51,4 +55,3 @@ B2B 企業にとって、重要なアカウントの拡大と保持は最優先�
 1. [インテリジェントアラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Workspace ユーザーまたは任意のユーザーと共有](/help/analysis-workspace/curate-share/share-projects.md)
 1. [コメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

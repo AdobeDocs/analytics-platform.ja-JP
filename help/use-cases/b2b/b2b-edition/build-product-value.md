@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # 製品の価値を構築
+
+{{draft-b2b}}
 
 B2B 製品の価値に関するインサイトを製品マネージャーや CMO、CEO に提供したい。 例えば、データ駆動型のチャーン分析や予測を使用します。 また、モバイルダッシュボードを通じてこれらのインサイトを消化できます。
 
@@ -61,5 +65,3 @@ CMO や CEO の主要なインサイトを民主化して、例えば、モバ�
 1. **[!UICONTROL プレビュー]** を使用して、ダッシュボードをプレビューします。 ダッシュボードをAdobe Analytics ダッシュボードアプリから使用できるようになりました。これは、[App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) または [Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards) から使用できます。
 
    ![B2B のユースケース – 製品価値の構築 – インサイトの民主化 – モバイルスコアカードのプレビュー ](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-

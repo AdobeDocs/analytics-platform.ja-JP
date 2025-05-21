@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
 
 # アカウントマーケティングの最適化
+
+{{draft-b2b}}
 
 効果的なアカウントベースドマーケティングを行うには、アカウントレベルでの購入ジャーニーについて深く理解する必要があります。 したがって、取引を成立させるために最も効果的なマーケティングアクティビティを決定できます。
 
@@ -116,4 +120,3 @@ MQL の生成に対する影響を視覚化する（マーケティングの選�
 1. 「**[!UICONTROL 作成]**」を選択します。
 
    ![B2B のユースケース – ユーザー内イベント – フロー設定 ](assets/b2b-uc-optimize-marketing-flow.png)
-

@@ -6,14 +6,18 @@ feature: Use Cases
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
 
 # B2B edition ユースケースの概要
+
+{{draft-b2b}}
 
 この節では、多くの場合、より複雑な B2B 購入ジャーニーにインサイトを提供することを目的とした、特定の B2B ユースケースについて詳しく説明します。 一般的な B2B 購入には、購入グループ、様々な関係者によるクロスチャネルタッチポイント、セールスサイクルの様々な段階での機会などが含まれます。
 
