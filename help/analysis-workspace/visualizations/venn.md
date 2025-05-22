@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のベン図のビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[ベン図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/venn)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のベン図のビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[ベン図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/venn)を参照してください。_
 
 >[!ENDSHADEBOX]
 
 
-![ タイプ ](/help/assets/icons/TwoDots.svg) **[!UICONTROL ベン図]** ビジュアライゼーションを使用すると、（コンポーネントパネルから）最大 3 つのセグメントと 1 つの指標をドラッグして、ベン図を作成できます。
+![タイプ](/help/assets/icons/TwoDots.svg) **[!UICONTROL ベン図]**&#x200B;ビジュアライゼーションを使用すると、（コンポーネントパネルから）最大 3 セグメントおよび 1 つの指標をドラッグして、ベン図を作成できます。
 
-![3 つのセグメントを含むベン図ビジュアライゼーション ](assets/venn.png)
+![3 つのセグメントを含むベン図ビジュアライゼーション。](assets/venn.png)
 
-セグメントにカーソルを合わせると、パーセンテージに対するinsightが増え、さらに多くの情報が得られます。
+次に、セグメントにポインタを合わせると、パーセンテージなどについて、より多くのインサイトが得られます。
 
 [!UICONTROL ベン図]ビジュアライゼーションから[!UICONTROL フリーフォームテーブル]を生成するには、**[!UICONTROL ベン図]**&#x200B;のヘッダーの横にあるカラー付きの ![StatusOrange](/help/assets/icons/StatusOrange.svg) を選択し、「**[!UICONTROL データソースを表示]**」を選択します。[!UICONTROL ベン図]ビジュアライゼーションを作成するために使用されたデータを含む&#x200B;**[!UICONTROL ベン図データ]**&#x200B;フリーフォームテーブルが表示されます。
 
@@ -48,7 +48,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ベン図ビジュアライゼーション](https://video.tv.adobe.com/v/3417461/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ベン図ビジュアライゼーション](https://video.tv.adobe.com/v/335798/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

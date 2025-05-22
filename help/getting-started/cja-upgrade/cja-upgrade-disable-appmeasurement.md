@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 77%
 
 {{upgrade-note-step}}
 
-Adobe Analyticsを無効にする前に、[Customer Journey Analyticsへのアップグレード後にAdobe Analyticsを無効にするタイミングを評価する ](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) の内容を確認してください。
+Adobe Analytics を無効にする前に、[Customer Journey Analytics へのアップグレード後、Adobe Analytics を無効にするタイミングの評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)の情報を確認します。
 
 * **タグ：** Adobe Analytics 拡張機能を無効にする
 
@@ -33,5 +33,5 @@ Adobe Analyticsを無効にする前に、[Customer Journey Analyticsへのア�
 
 >[!NOTE]
 >
->この情報はまだ利用できません。 近い将来に利用可能になる予定です。
+>この情報はまだ利用できません。近い将来に利用可能になる予定です。
 

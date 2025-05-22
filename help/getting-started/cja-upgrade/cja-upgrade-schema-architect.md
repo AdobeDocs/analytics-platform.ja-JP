@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Customer Journey Analytics の基盤となるアーキテクチャには、Adobe
 
 >[!NOTE]
 >
->次の情報はまだ完成していません。 近い将来完成するでしょう。
+>次の情報はまだ完全ではありません。近い将来に完全になる予定です。
 
 | Adobe Analytics データアーキテクチャ | XDM スキーマアーキテクチャ |
 |---------|----------|
@@ -50,10 +50,10 @@ Customer Journey Analytics の基盤となるアーキテクチャには、Adobe
 
 >[!NOTE]
 >
->この情報はまだ利用できません。 近い将来に利用可能になる予定です。
+>この情報はまだ利用できません。近い将来に利用可能になる予定です。
 
-## 組織で使用されている他の Adobe Experience Platform アプリケーションを考慮します
+## 組織で使用されている他の Adobe Experience Platform アプリケーションを考慮します。
 
 >[!NOTE]
 >
->この情報はまだ利用できません。 近い将来に利用可能になる予定です。
+>この情報はまだ利用できません。近い将来に利用可能になる予定です。

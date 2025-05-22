@@ -1,14 +1,14 @@
 ---
 title: Adobe Analytics から Customer Journey Analytics へのアップグレード
-description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード時に推奨される手順について説明します
+description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨される手順について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 source-git-commit: dfc9ba843fbddc135c0f8160fb672adb36e9146f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3281'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 >[!NOTE]
 >
->この節で説明しているアップグレード手順が組織で実用的でない場合は、Customer Journey Analytics アップグレードガイドを使用して、組織固有の状況に合わせたアップグレード手順を動的に生成します。 （Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います）。
+>この節で説明するアップグレード手順が組織にとって実用的でない場合は、Customer Journey Analytics アップグレードガイドを使用して、組織の一意の状況に合わせて調整されたアップグレード手順を動的に生成します。（Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。画面の指示に従います。）
 
 ### 高レベルの推奨アップグレードプロセス {#high-level-upgade-process}
 
@@ -87,7 +87,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 1. AppMeasurement または Analytics 拡張機能（タグ）を使用した Adobe Analytics 実装の場合は、[Adobe Experience Platform でデータストリームを作成します](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   Web SDKを使用したAdobe Analytics実装の場合、データストリームは既に存在しています。 詳しくは、[Platform にデータを送信するための既存のAdobe Analytics Web SDK実装の設定 ](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md) を参照してください。
+   Web SDK を使用した Adobe Analytics 実装の場合、データストリームは既に存在しています。詳しくは、[Platform にデータを送信する既存の Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)を参照してください。
 
 1. [Adobe Experience Platform をサービスとしてデータストリームに追加します](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)。
 
@@ -101,7 +101,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    1. XDM オブジェクトを入力してデータストリームに送信します。
 
-   +++
++++
 
    +++タグ
 
@@ -113,7 +113,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    1. [タグに XDM データ収集ロジックを追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
 
-   +++
++++
 
 +++ API
 
@@ -133,7 +133,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 1. [Customer Journey Analytics でデータビューへのデータのフローを検証します](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
 
-1. Adobe Analytics環境で [Analytics Inventory を使用 ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/analytics-inventory) して、プロジェクトとコンポーネントの数、レポートスイート、ユーザー数など、Adobe Analytics環境の包括的な概要を確認します。
+1. Adobe Analytics 環境では、[Analytics インベントリを使用](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/analytics-inventory)して、プロジェクトとコンポーネント、レポートスイート、ユーザーの数など、Adobe Analytics 環境の包括的な概要を確認します。
 
 1. [プロジェクトとコンポーネントを移行します](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)。
 
@@ -185,44 +185,44 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 ## 組織に合わせたアップグレード手順の動的な生成
 
-タイムラインやリソースの制約などのいくつかの要因によっては、「[ 推奨されるアップグレード手順について ](#recommended-upgrade-steps-for-most-organizations) で説明されている推奨アップグレード手順が組織にとって実用的でない場合があります。 その場合は、組織固有の状況に合わせてアップグレード手順を動的に生成できます。 これらの手順を生成するプロセスは、既にCustomer Journey Analyticsへのアクセス権を持っているかどうかによって異なります。
+タイムラインやリソースの制約などのいくつかの要因によっては、[推奨されるアップグレード手順について](#recommended-upgrade-steps-for-most-organizations)で説明されている推奨されるアップグレード手順が組織にとって実用的ではない可能性があります。この場合、組織の一意の状況に合わせてアップグレード手順を動的に生成できます。これらの手順を生成するプロセスは、既に Customer Journey Analytics へのアクセス権を持っているかどうかによって異なります。
 
-### Customer Journey Analyticsにアクセスできるユーザーの場合
+### Customer Journey Analytics へのアクセス権を持っているお客様の場合
 
 組織の一意の状況に合わせてアップグレード手順を動的に生成するには：
 
-1. Customer Journey Analytics アップグレードガイドを参照してください。
+1. Customer Journey Analytics アップグレードガイドを完了します。
 
-   Customer Journey Analyticsで、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。
+   Customer Journey Analytics で、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。画面の指示に従います。
 
-   このアップグレードガイドを完了すると、組織の要件に固有の最適なアップグレード手順の概要が段階的に説明されます。 これらは、既存のAdobe Analytics環境とCustomer Journey Analyticsの目標に最も適したアップグレード手順です。 アップグレード手順は、共有可能なリンクとして、またはダウンロード可能な.csv ファイルとして使用できます。
+   このアップグレードガイドを完了すると、組織の要件に一意の最適なアップグレード手順の概要が段階的に説明されます。これらは、既存の Adobe Analytics 環境と Customer Journey Analytics の目標に最も適合するアップグレード手順です。アップグレード手順は、共有可能なリンクまたはダウンロード可能な .csv ファイルとして使用できます。
 
 1. 生成された段階的な手順に従って、Customer Journey Analytics にアップグレードします。
 
-### Customer Journey Analyticsへのアクセス権をまだ持っていないお客様の場合
+### Customer Journey Analytics へのアクセス権をまだ持っていないお客様の場合
 
 組織の一意の状況に合わせてアップグレード手順を動的に生成するには：
 
-1. Customer Journey Analytics アップグレードガイドを完成させるには、Adobe アカウントチームにお問い合わせください。
+1. Customer Journey Analytics アップグレードガイドを完了するには、アドビのアカウントチームにお問い合わせください。
 
-   Adobe アカウントチームは、アップグレードガイドを参照し、質問、回答および動的に生成される組織固有のアップグレード手順を含む.csv ファイルを提供できます。
+   アドビのアカウントチームがアップグレードガイドを案内し、質問、回答、組織に一意の動的に生成されたアップグレード手順を含む .csv ファイルを提供する場合があります。
 
-   Adobe アカウントチームに問い合わせる前に、Customer Journey Analytics アップグレードガイドに含まれる質問を把握して、回答を決定してください。 Customer Journey Analytics アップグレードガイドには、次の質問と考えられる回答が含まれています。
+   アドビのアカウントチームに問い合わせる前に、Customer Journey Analytics アップグレードガイドに含まれる質問をよく理解し、回答を決定しておいてください。Customer Journey Analytics アップグレードガイドには、次の質問と考えられる回答が含まれています。
 
 
    | 質問 | 使用可能な回答 | 追加情報 |
    |---------|----------|---------|
-   | 現在の Adobe Analytics 実装を説明するオプションを選択します。この情報は、Customer Journey Analytics へのアップグレード時に利用できる、代替アップグレードオプションに影響する可能性があります。 | 1 つ選択してください : <ul><li>**AppMeasurement:**<br/> AppMeasurement.js をページに読み込み、s オブジェクト（s.eVar1 など）を使用してAdobeにデータを送信するJavaScript実装。</li><li>**Adobe Analytics extension （tags）:** <br/>Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグには Adobe Analytics 拡張機能がインストールされています。</li><li>**Experience Platform Web SDK extension （tags）:**<br/> Adobe Experience Platform Data Collection （旧称 Launch）を読み込むタグ実装。 タグには Web SDK 拡張機能がインストールされています。</li><li>**Experience Platform Web SDK（alloy.js）:** Web SDK ライブラリ（alloy.js）をページに読み込み、JSON ペイロードを使用してAdobeにデータを送信するJavaScript実装。</li><li>**Bulk Data Insertion API:**<br/> データ挿入 API または一括データ挿入 API を使用する実装。</li><li>**Experience Platform Mobile SDK:**<br/> Adobe Experience Platform Mobile SDKを使用する実装。</li><li>**サードパーティのタグ管理ツールを使用するAppMeasurement:**<br/> サードパーティのタグ管理ツールを使用する実装。</li><li>**Adobe Analytics以外の製品：**<br/> Google Analyticsなど、Adobe Analytics以外の製品のデータを収集する実装。 このオプションを選択すると、Adobe Analytics 以外の製品から Customer Journey Analytics にアップグレードする際に適用されない、アップグレードガイドのいくつかのオプションが無効になります。 </li><li>**不明：**<br/> 実装を管理していない場合は、このオプションを一時的に選択できます。</li></ul><p>該当する場合は選択してください :<ul><li>**当社の実装では現在、Analytics ソースコネクタを使用しています。**<br/> Analytics ソースコネクタを使用すると、Customer Journey Analyticsから簡単に価値を得ることができますが、Adobe AnalyticsとCustomer Journey Analyticsの両方の費用を支払う必要があります。 このガイドは、独立した Web SDK の実装に移行するのに役立ちます。</li></ul></p> | <ul><li>[Adobe Analyticsの実装と、Customer Journey Analyticsへのアップグレードに与える影響について ](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[Analytics ソースコネクタからCustomer Journey Analyticsの Web SDKへの移行 ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
-   | Adobe Analytics のほとんどの機能は、Customer Journey Analytics ですぐに利用できます。ただし、次の機能はアップグレードプロセス中に考慮する必要があります。使用する予定の機能を選択してください。 | 該当項目をすべてを選択 :<ul><li>**Adobe Analyticsの履歴データ：**</br> Adobe Analyticsの履歴レポートスイートデータをAdobe Experience PlatformとCustomer Journey Analyticsに取り込みます。</li><li>**Adobe Analyticsのコンポーネントとプロジェクト：**</br> Adobe Analyticsのコンポーネントには、プロジェクト（関連するフリーフォームテーブルおよびビジュアライゼーションを含む）、セグメント、計算指標が含まれます。</li><li>**Activity map overlay and link tracking:**</br> サイト上にオーバーレイとしてリンクトラッキングデータを表示できるブラウザー拡張機能。</li><li>**分類データ：**</br> データを個別のディメンションとしてグループ化または分類します。</li><li>**マーケティングチャネル：**</br> 顧客がサイトに到達する方法を分類するルールを作成します。</li><li>**Data Warehouse:**</br> Adobe Analyticsから処理済みデータをスプレッドシート形式で書き出します。</li><li>**データフィード：**&#x200B;データフィードの正確な置き換えは、Customer Journey Analyticsではまだ使用できません。 ただし、完全なテーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート API などの機能を使用すると、同様の機能を実現できます。</br></li><li>**ストリーミングメディアデータ：**</br> オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とするAdobe AnalyticsおよびCustomer Journey Analyticsのアドオンです。</li></ul> | <ul><li>[Customer Journey Analyticsへのアップグレード時のAdobe Analytics機能のサポートについて ](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
-   | ほとんどの新機能は、Customer Journey Analytics ですぐに利用できます。ただし、次の機能はアップグレードプロセス中に考慮する必要があります。使用する予定の機能を選択してください。 | 該当項目をすべてを選択 :<ul><li>**収集したデータを他のソースからのデータ（コンタクトセンターのデータなど）と結び付ける：**</br> （推奨）様々な web、モバイル、オフラインのプロパティからのデータを結び付けて、顧客の行動を一元的に統合したビューを作成します。 他のチャネルからの分析データを組み合わせるこの機能は、Customer Journey Analytics の主なユースケースです。</li><li>**カスタムディメンションを使用して他のデータセットからのヒットをステッチする：**<br/> いずれかのデータセットが主要識別子（Experience Cloud ID など）を共有しない場合でも、ログインユーザー名やメールアドレスなど、別のディメンションを使用して、そのデータをステッチできます。</li><li>**Adobe Journey Optimizerとの統合：**<br/> 顧客とのつながり、コンテキスト、パーソナライズされたエクスペリエンスを提供します。</li><li>**Adobe Real-Time CDPとの統合：**<br/> 複数のソースのプロファイルデータを組み合わせて、ユーザー特性に基づいてオーディエンスとセグメントを生成します。</li><li>**Adobe Target（A4T）との統合：**<br/> Adobeでは、パーソナライゼーションのユースケースに対してAdobe Journey Optimizerとの統合を推奨しています。 Adobe Target との統合は可能ですが、短期的な解決策です。</li><li>**Adobe Audience Managerとの統合：**<br/> Adobeでは、オーディエンスベースのユースケースのために、Adobe Real-time CDP との統合を推奨します。 Audience Manager との統合は可能ですが、短期的な解決策です。</li></ul> | [Customer Journey Analytics固有の機能について ](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
-   | Adobe Analytics と Customer Journey Analytics を最終的にどのように使用する予定かを選択します。 | 1 つ選択してください : <ul><li>**Adobe AnalyticsからCustomer Journey Analyticsに完全に移行する予定です：**<br/> （推奨）Adobeでは、Adobe AnalyticsからCustomer Journey Analyticsに完全に移行することをお勧めします。 移行期間中は、データを横に並べて比較するために、Adobe Analytics を Customer Journey Analytics と共に実行するよう計画する必要があります。データに問題がなければ、Adobe Analytics を無効にできます。</li><li>**両方の Analytics 製品を維持する予定です：**<br/> （お勧めしません）このオプションを選択した場合、Adobeとの契約にはAdobe AnalyticsとCustomer Journey Analyticsの両方が含まれ、時間の経過と共に組織にとってより高価になる可能性があります。</li></ul> | [Customer Journey Analyticsへのアップグレード後にAdobe Analyticsを無効にするタイミングの評価 ](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
-   | Customer Journey Analytics スキーマを設定する方法を選択します。 | 1 つ選択してください : <ul><li>**組織に合わせてカスタマイズしたスキーマを使用します。**</br> （推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡し、不要な散らかったフィールドに関連するオーバーヘッドを回避できます。 このオプションには、Web SDK によって追加されたフィールドグループと、組織にカスタムのフィールドグループが含まれます。</li><li>**デフォルトのAdobe Analytics スキーマを使用します。**</br> （推奨されません） Adobe Analytics スキーマには 1,000 個を超えるフィールドが含まれているため、スキーマが散乱したり複雑になったりする可能性があります。 組織は、Customer Journey Analytics では使用されていない従来の概念である prop と eVar の概念に引き続き従わざるを得なくなります。 他の Adobe Experience Platform サービスとの統合はより困難です。</li></ul> | [Customer Journey Analyticsのスキーマを選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |
-   | Customer Journey Analytics を実装するための希望する方法を選択します。 | <ul><li>**手動実装（alloy.js）:**<br/> サイトの各ページに web SDK ライブラリ（alloy.js）を含めます。</li><li>**タグ：**<br/> （推奨） タグをまだ使用していない場合は、サイトにタグローダーをインストールします。 既にタグを使用している場合は、タグプロパティに web SDK 拡張機能を追加できます。このオプションには、Adobe Experience Platform Data Collection およびサードパーティのタグ管理システム内のタグを使用した実装が含まれます。</li><li>**API:**<br/> データ収集 API を使用して、データストリームに直接データを送信します。 認証されていない（クライアントからサーバー）タイプと、認証されている（サーバーからサーバー）タイプの両方がサポートされています。</li></ul> | [Customer Journey Analyticsへのアップグレード時の Web SDK実装オプションについて ](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md) |
-   | （任意）別のアップグレード方法を選択します | <ul><li>**Soley は Analytics ソースコネクタを使用します。**<br/> （推奨しません）Customer Journey Analyticsの唯一の実装パスとして、Analytics ソースコネクタを使用できます。<p>このオプションを使用すると、データをCustomer Journey Analyticsにすばやく送信できるので、実装時間を節約できます。 ただし、待ち時間が長い、今後 Adobe Analytics から移行するのが難しいなど、様々な欠点があります。</p></li><li>**Web SDKでAppMeasurement ロジックを使用したいのですが：**<br/> XDM オブジェクトを通じてデータを送信するのではなく、データオブジェクトを通じてAppMeasurement形式ですべての変数を送信します。<p>このオプションを使用すると、XDM オブジェクトをゼロから入力するのではなく、AppMeasurement ロジックを XDM にマッピングできるので、実装時間を節約できます。 ただし、今後追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。</p></li><li>**追加の設定を行わずにデータレイヤーをAdobeに送信したい場合：**<br/> XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてデータレイヤー全体をAdobeに送信できます。<p>このオプションを使用すると、XDM オブジェクトを最初から入力するのではなく、データレイヤーを XDM にマッピングできるので、実装時間を節約できます。 ただし、アドビではすぐに解釈できないデータが大量に存在するので、このマッピングは膨大な作業となります。また、このオプションでは、今後データに追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。</p></li></ul> | <ul><li>[ 代替アップグレード：Analytics ソースコネクタを使用して、Customer Journey Analyticsにのみアップグレードしてください ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li><li>[ 代替アップグレード：Experience Platform Web SDKとCustomer Journey AnalyticsでAppMeasurement データ収集を使用する ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[ 代替アップグレード：データレイヤーをCustomer Journey Analyticsに送信する ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)</li></ul> |
+   | 現在の Adobe Analytics 実装を説明するオプションを選択します。この情報は、Customer Journey Analytics へのアップグレード時に利用できる、代替アップグレードオプションに影響する可能性があります。 | 1 つ選択してください： <ul><li>**AppMeasurement：**<br/> AppMeasurement.js をページに読み込み、s オブジェクト（例：s.eVar1）を使用して、データをアドビに送信する JavaScript 実装。</li><li>**Adobe Analytics 拡張機能（タグ）：**<br/>Adobe Experience Platform データ収集（旧称 Launch）を読み込むタグ実装。タグには Adobe Analytics 拡張機能がインストールされています。</li><li>**Experience Platform Web SDK 拡張機能（タグ）：**<br/> Adobe Experience Platform データ収集（旧称 Launch）を読み込むタグ実装。タグには Web SDK 拡張機能がインストールされています。</li><li>**Experience Platform Web SDK（alloy.js）：** Web SDK ライブラリ（alloy.js）をページに読み込み、JSON ペイロードを使用してデータをアドビに送信する JavaScript 実装。</li><li>**Bulk Data Insertion API：**<br/> Data Insertion API または Bulk Data Insertion API を使用する実装。</li><li>**Experience Platform Mobile SDK：**<br/> Adobe Experience Platform Mobile SDK を使用する実装。</li><li>**サードパーティのタグ管理ツールを使用する AppMeasurement：**<br/>&#x200B;サードパーティのタグ管理ツールを使用する実装。</li><li>**Adobe Analytics 以外の製品：**<br/> Google Analytics など、Adobe Analytics 以外の製品のデータを収集する実装。このオプションを選択すると、Adobe Analytics 以外の製品から Customer Journey Analytics にアップグレードする際に適用されない、アップグレードガイドのいくつかのオプションが無効になります。 </li><li>**わからない：**<br/>&#x200B;実装を管理するユーザーでない場合は、このオプションを一時的に選択できます。</li></ul><p>該当する場合は選択してください：<ul><li>**現在、実装では Analytics ソースコネクタを使用：**<br/> Analytics ソースコネクタを使用すると、Customer Journey Analytics から簡単に価値を得ることができますが、Adobe Analytics と Customer Journey Analytics の両方に対して料金を支払う必要があります。このガイドは、独立した Web SDK の実装に移行するのに役立ちます。</li></ul></p> | <ul><li>[Adobe Analytics の実装と、Customer Journey Analytics へのアップグレードに与える影響について](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
+   | Adobe Analytics のほとんどの機能は、Customer Journey Analytics ですぐに利用できます。ただし、次の機能はアップグレードプロセス中に考慮する必要があります。使用する予定の機能を選択してください。 | 該当項目をすべて選択：<ul><li>**Adobe Analytics の履歴データ：**</br> Adobe Analytics レポートスイートの履歴データを Adobe Experience Platform および Customer Journey Analytics に取り込む。</li><li>**Adobe Analytics のコンポーネントとプロジェクト：**</br> Adobe Analytics のコンポーネントには、プロジェクト（関連付けられたフリーフォームテーブルとビジュアライゼーションを含む）、セグメント、計算指標が含まれます。</li><li>**アクティビティマップのオーバーレイとリンクトラッキング：**</br>&#x200B;リンクトラッキングデータをサイト上のオーバーレイとして表示できるブラウザー拡張機能。</li><li>**分類データ：**</br>&#x200B;データを個別のディメンションとしてグループ化または分類します。</li><li>**マーケティングチャネル：**</br>&#x200B;顧客がサイトに到達する方法を分類するルールを作成します。</li><li>**Data Warehouse：**</br> Adobe Analytics から処理済みデータをスプレッドシート形式で書き出します。</li><li>**データフィード：**データフィードの完全な代替機能は、Customer Journey Analytics ではまだ利用できません。ただし、完全なテーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート API などの機能を使用すると、同様の機能を実現できます。</br></li><li>**ストリーミングメディアデータ：**</br>&#x200B;オーディオ、ビデオ、ストリーミングコンテンツなどのメディアのデータ収集を専門とする Adobe Analytics と Customer Journey Analytics のアドオンです。</li></ul> | <ul><li>[Customer Journey Analytics にアップグレードする際の Adobe Analytics 機能のサポートについて](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
+   | ほとんどの新機能は、Customer Journey Analytics ですぐに利用できます。ただし、次の機能はアップグレードプロセス中に考慮する必要があります。使用する予定の機能を選択してください。 | 該当項目をすべて選択：<ul><li>**収集したデータを他のソースのデータ（コンタクトセンターのデータなど）と結び付ける：**</br>（推奨）様々な web、モバイル、オフラインのプロパティからのデータを結び付けて、顧客行動の 1 つの統合ビューを作成します。他のチャネルからの分析データを組み合わせる機能は、Customer Journey Analytics の主なユースケースです。</li><li>**カスタムディメンションを使用して他のデータセットからのヒットをステッチする：**<br/>&#x200B;データセットのいずれかがプライマリ識別子（Experience Cloud ID など）を共有しない場合でも、ログインユーザー名やメールアドレスなど、別のディメンションを使用して、そのデータを結び付けることができます。</li><li>**Adobe Journey Optimizer と統合する：**<br/>&#x200B;お客様に接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供します。</li><li>**Adobe Real-Time CDP と統合する：**<br/>&#x200B;複数のソースからのプロファイルデータを組み合わせて、ユーザー特性に基づいてオーディエンスとセグメントを生成します。</li><li>**Adobe Target（A4T）と統合する：**<br/>&#x200B;アドビでは、パーソナライゼーションのユースケースに対して Adobe Journey Optimizer との統合をお勧めします。Adobe Target との統合は可能ですが、短期的な解決策です。</li><li>**Adobe Audience Manager と統合する：**<br/>&#x200B;アドビでは、オーディエンスベースのユースケースに対して Adobe Real-time CDP との統合をお勧めします。Audience Manager との統合は可能ですが、短期的な解決策です。</li></ul> | [Customer Journey Analytics 固有の機能について](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
+   | Adobe Analytics と Customer Journey Analytics を最終的にどのように使用する予定かを選択します。 | 1 つ選択してください： <ul><li>**Adobe Analytics から Customer Journey Analytics に完全に移行するつもりです：**<br/>（推奨）アドビでは、Adobe Analytics から Customer Journey Analytics に完全に移行することをお勧めします。移行期間中は、データを横に並べて比較するために、Adobe Analytics を Customer Journey Analytics と共に実行するよう計画する必要があります。データに問題がなければ、Adobe Analytics を無効にできます。</li><li>**両方の Analytics 製品を維持するつもりです：**<br/>（非推奨）このオプションを選択する場合、アドビとの契約には Adobe Analytics と Adobe Customer Journey Analytics の両方が含まれるので、時がたつにつれて組織にとってよりコストが高くなる可能性があります。</li></ul> | [Customer Journey Analytics へのアップグレード後、Adobe Analytics を無効にするタイミングの評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
+   | Customer Journey Analytics スキーマを設定する方法を選択します。 | 1 つ選択してください： <ul><li>**組織に合わせたスキーマを使用したい：**</br>（推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡でき、乱雑で不要なフィールドに関連付けられたオーバーヘッドを回避できます。このオプションには、Web SDK によって追加されたフィールドグループと、組織にカスタムのフィールドグループが含まれます。</li><li>**デフォルトの Adobe Analytics スキーマを使用したい：**</br>（非推奨）Adobe Analytics スキーマには 1,000 を超えるフィールドが含まれており、スキーマが乱雑で複雑になる場合があります。組織は、Customer Journey Analytics では使用されていない従来の概念である prop と eVar の概念に引き続き従わざるを得なくなります。 他の Adobe Experience Platform サービスとの統合はより困難です。</li></ul> | [Customer Journey Analytics のスキーマを選択](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |
+   | Customer Journey Analytics を実装する方法を選択します。 | <ul><li>**手動による実装（alloy.js）：**<br/>&#x200B;サイトの各ページに Web SDK ライブラリ（alloy.js）を含めます。</li><li>**タグ：**<br/>（推奨）タグをまだ使用していない場合は、サイトにタグローダーをインストールします。既にタグを使用している場合は、タグプロパティに web SDK 拡張機能を追加できます。このオプションには、Adobe Experience Platform Data Collection およびサードパーティのタグ管理システム内のタグを使用した実装が含まれます。</li><li>**API：**<br/> Data Collection API を使用して、データをデータストリームに直接送信します。認証されていない（クライアントからサーバー）タイプと、認証されている（サーバーからサーバー）タイプの両方がサポートされています。</li></ul> | [Customer Journey Analytics にアップグレードする際の Web SDK 実装オプションについて](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md) |
+   | （オプション）別のアップグレード方法を選択します。 | <ul><li>**Analytics ソースコネクタのみを使用する：**<br/>（非推奨）Analytics ソースコネクタを Customer Journey Analytics の唯一の実装パスとして使用できます。<p>このオプションを使用すると、Customer Journey Analytics にデータをすばやく送信できるので、実装時間が節約されます。ただし、待ち時間が長い、今後 Adobe Analytics から移行するのが難しいなど、様々な欠点があります。</p></li><li>**WebSDK で AppMeasurement ロジックを使用したい：**<br/> XDM オブジェクトを通じてデータを送信する代わりに、すべての変数を AppMeasurement 形式でデータオブジェクトを通じて送信します。<p>このオプションを使用すると、XDM オブジェクトをゼロから入力するのではなく、AppMeasurement ロジックを XDM にマッピングできるので、実装時間が節約されます。ただし、今後追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。</p></li><li>**追加の設定なしでアドビにデータレイヤーを送信したい：**<br/> XDM オブジェクトを通じてデータを送信する代わりに、データオブジェクトを通じてデータレイヤー全体をアドビに送信できます。<p>このオプションを使用すると、XDM オブジェクトをゼロから入力するのではなく、データレイヤーを XDM にマッピングできるので、実装時間が節約されます。ただし、アドビではすぐに解釈できないデータが大量に存在するので、このマッピングは膨大な作業となります。また、このオプションでは、今後データに追加するフィールドはデータストリームの XDM にマッピングする必要があるので、時間の経過と共に複雑さが増します。</p></li></ul> | <ul><li>[アップグレードの代替案：Analytics ソースコネクタのみを使用した Customer Journey Analytics へのアップグレード](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li><li>[アップグレードの代替案：Experience Platform Web SDK と Customer Journey Analytics での AppMeasurement データ収集の使用](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[アップグレードの代替案：Customer Journey Analytics へのデータレイヤーの送信](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)</li></ul> |
 
-   Adobe アカウントチームとこのアップグレードガイドを完了すると、既存のAdobe Analytics環境とCustomer Journey Analyticsの目標に最適な質問、回答、動的に生成されたアップグレード手順を含む.csv ファイルが提供されます。
+   アドビのアカウントチームと共にこのアップグレードガイドを完了すると、質問、回答、既存の Adobe Analytics 環境と Customer Journey Analytics の目標に最適な、動的に生成されたアップグレード手順を含む .csv ファイルが提供されます。
 
-1. .csv ファイルに生成された手順に従って、Customer Journey Analyticsにアップグレードします。
+1. .csv ファイルに生成された段階的な手順に従って、Customer Journey Analytics にアップグレードします。
 
 <!--
 

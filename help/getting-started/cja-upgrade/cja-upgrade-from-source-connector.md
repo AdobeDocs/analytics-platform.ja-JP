@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 Analytics ソースコネクタを Customer Journey Analytics の唯一の実装として使用する際に、固有のデメリットがあります。
 
-Analytics ソースコネクタの実装のみを使用して、既にCustomer Journey Analyticsにアップグレードしている場合、Adobeは継続的なデータ収集には web SDKの新しい実装に移行し、履歴データにのみ Analytics ソースコネクタを使用することをお勧めします。
+組織が Analytics ソースコネクタ実装のみを使用して Customer Journey Analytics に既にアップグレードしている場合、アドビでは継続的なデータ収集用に Web SDK の新しい実装に移行し、履歴データ用に Analytics ソースコネクタのみを使用することをお勧めします。
 
 ## Analytics ソースコネクタのみを使用する場合のメリットとデメリットについて
 
@@ -54,7 +54,7 @@ Analytics ソースコネクタを使用するメリットとデメリットに�
 
 1. Analytics ソースコネクタからの各 Adobe Analytics ディメンションを Web SDK スキーマのディメンションにマッピングします。
 
-   1. &#x200B;
+   1. 
       <!-- how do you get here -->
 
    1. 「**[!UICONTROL 標準フィールドをマッピング]**」セクションで、「**[!UICONTROL カスタム]**」タブを選択します。

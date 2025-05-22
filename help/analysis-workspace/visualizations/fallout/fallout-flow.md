@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 フォールアウトビジュアライゼーションでは、次の操作を行うことができます。
 
-* 同じレポートの異なる 2 つのセグメントを並べて比較する
+* 同じレポートの異なる 2 つのセグメントを並べて比較する。
 * ファネルステップ（タッチポイント）をドラッグ＆ドロップ（および並べ替え）。
 * 様々なディメンションと指標の値を組み合わせて一致。
 * 複数ディメンションのフォールアウトレポートを作成。
@@ -75,7 +75,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 * 事前定義済みの一連のページおよび単一のエントリポイントとパスを持つジャーニーが関与するフォールアウト分析（複数のエントリポイントとパスを持つジャーニーでは、ジャーニーキャンバスを使用します）。
 
-* 同じレポートで 2 つの異なるセグメントを並べて比較する必要があるジャーニー。
+* 同じレポート内で 2 つの異なるセグメントを並べて比較する必要があるジャーニー。
 
 ジャーニーキャンバスビジュアライゼーション、フォールアウトビジュアライゼーションおよびフロービジュアライゼーションの違いを理解するには、[上記の表](#understand-the-differences)を参照してください。
 

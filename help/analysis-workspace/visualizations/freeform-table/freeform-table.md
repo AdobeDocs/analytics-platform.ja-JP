@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフリーフォームテーブルビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[フリーフォームテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフリーフォームテーブルビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[フリーフォームテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 
 ## フリーフォームテーブルビルダー
 
-最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、「**[!UICONTROL テーブルビルダーを有効にする]**」を選択できます。ビルダーを有効にすれば、ディメンション、分類、指標およびセグメントをドラッグ&amp;ドロップして、より複雑な質問に回答するテーブルを作成できます。 「**[!UICONTROL 作成]**」を選択すると、データが更新されます。
+最初に複数のコンポーネントをテーブルに追加し、次にデータをレンダリングすると、「**[!UICONTROL テーブルビルダーを有効にする]**」を選択できます。ビルダーを有効にすれば、ディメンション、分類、指標およびセグメントをドラッグ＆ドロップして、より複雑な質問に回答するテーブルを作成できます。「**[!UICONTROL 作成]**」を選択すると、データが更新されます。
 
 ![フリーフォームテーブルビルダーの表示](assets/table-builder.png)
 
@@ -56,7 +56,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 
 ### フィルタリングと並べ替え
 
-* テーブル内のデータは [ セグメント化と並べ替え ](filter-and-sort.md) できます。
+* テーブルのデータの[セグメント化と並べ替え](filter-and-sort.md)を行うことができます。
 
 ### 行
 
@@ -64,7 +64,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 * プロジェクトの[表示密度](/help/analysis-workspace/build-workspace-project/view-density.md)を調整すると、1 つの画面に表示する行を増やすことができます。
 * 各ディメンション行は、ページネーションの前に最大 400 行を表示できます。最初の列ヘッダーの&#x200B;**[!UICONTROL 行]**&#x200B;の横にある数字を選択すると、ページにさらに多くの行が表示されます。最初の列ヘッダーの ![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用して別のページに移動します。
 * 追加のコンポーネントごとに行を分類できます。複数の行を一度に分類するには、複数の行を選択し、次のコンポーネントを選択した行の上にドラッグします。[分類](/help/components/dimensions/t-breakdown-fa.md)について説明します。
-* 行を [ セグメント化 ](/help/components/filters/filters-overview.md) して、項目のセットを縮小して表示できます。 [行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
+* 行を[セグメント化](/help/components/filters/filters-overview.md)して、表示する項目数を減らすことができます。[行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
 
 ### 列
 
@@ -103,7 +103,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 | **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
 | **[!UICONTROL ビジュアライゼーションをコピー]** | ビジュアライゼーションをコピーして、プロジェクト内の別の場所または完全に別のプロジェクトにビジュアライゼーションを挿入できるようにします。 |
 | **[!UICONTROL データ CSV をダウンロード]** | ビジュアライゼーションの表示データをローカルデバイスにすぐにダウンロードします。 |
-| **[!UICONTROL テーブル全体をエクスポート…]** | 指定したクラウドの場所に完全なテーブルを書き出します。詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../../export/export-cloud.md)を参照してください。 |
+| **[!UICONTROL 完全なテーブルを書き出し...]** | 指定したクラウドの場所に完全なテーブルを書き出します。詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../../export/export-cloud.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションを複製]** | ビジュアライゼーションの完全な複製を作成します。 |
 | **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。[テキスト](../text.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションリンクを取得]** | リンクをコピーして、ビジュアライゼーションと直接共有します。 共有リンクダイアログにリンクが表示されます。「コピー」を選択して、リンクをクリップボードにコピーします。 |

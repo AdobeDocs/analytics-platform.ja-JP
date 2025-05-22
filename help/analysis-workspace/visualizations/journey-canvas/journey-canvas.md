@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="ジャーニーキャンバス"
->abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するために使用します。"
+>abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="ジャーニーキャンバス"
->abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するために使用します。"
+>abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,13 +51,13 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
 
 >[!ENDSHADEBOX]
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、次に進んだ（フォールスルー）かを確認できます。
 
-イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせて [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ジャーニーノードを作成することで、 ユーザージャーニーの分析を作成」できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。変更を行うと、データがリアルタイムで更新されます。
+イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせてジャーニーノードを作成して、[ユーザージャーニーの分析を作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)できます。ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。変更を行うと、データがリアルタイムで更新されます。
 
 [ノードは「最終的なパス」として接続されます](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)。つまり、2 つのノード間で発生するイベントに関係なく、訪問者が最終的に 1 つのノードから別のノードに移動する限り、訪問者はカウントされます。ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
 
@@ -170,7 +170,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ジャーニーキャンバスを使用して、Journey Optimizer で作成されたジャーニーを分析すると、次のような様々なメリットがあります。
 
-* 任意のCustomer Journey Analytics ディメンション、指標、セグメントまたは日付範囲を使用してイベントを作成します。
+* 任意の Customer Journey Analytics ディメンション、指標、セグメントまたは日付範囲を使用してイベントを作成します。
 
   Journey Optimizer では、テクニカルユーザーがイベントを作成してから、イベントをジャーニーに追加する必要があります。
 
@@ -192,21 +192,21 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ### Journey Optimizer とジャーニーキャンバス間の同期
 
-Journey Optimizerとジャーニーキャンバスの同期を理解するには、次の動作を考慮します。
+Journey Optimizer とジャーニーキャンバス間の同期を理解するには、次の動作を考慮します。
 
-* **データ同期は一方向のみ**
+* **データ同期は 1 方向のみである**
 
   ジャーニーキャンバスで Journey Optimizer ジャーニーの分析を作成すると、データは Journey Optimizer から Journey キャンバスへの 1 方向にのみ同期されます。つまり、ジャーニーキャンバスでジャーニーに行った変更は、Journey Optimizer に反映されません。
 
 * **ジャーニーキャンバスでジャーニーを変更すると、同期が停止する**
 
-  Journey Optimizerでジャーニーに加えた変更は、ジャーニーキャンバスに同期されます [ ジャーニーがジャーニーキャンバスで大幅に変更されていない場合のみ ](#differences-after-modifying-a-journey-in-journey-canvas)。 ジャーニーキャンバスでジャーニーを変更すると、Journey Optimizer でジャーニーに行った変更はジャーニーキャンバスに反映されません。ジャーニーキャンバスに反映された変更を確認するには、[ジャーニーキャンバスでジャーニーを削除して再作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)します。
+  Journey Optimizer でジャーニーに行った変更は、[ジャーニーがジャーニーキャンバスで大幅に変更されていない場合にのみ](#differences-after-modifying-a-journey-in-journey-canvas)、ジャーニーキャンバスに同期されます。ジャーニーキャンバスでジャーニーを変更すると、Journey Optimizer でジャーニーに行った変更はジャーニーキャンバスに反映されません。ジャーニーキャンバスに反映された変更を確認するには、[ジャーニーキャンバスでジャーニーを削除して再作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)します。
 
-* **「任意のユーザーと共有」リンクを使用するには、Journey Optimizerで変更を加えた後に、プロジェクトがCustomer Journey Analyticsに保存される必要があります**
+* **「任意のユーザーと共有」リンクを使用するには、Journey Optimizer で変更を行った後に、プロジェクトを Customer Journey Analytics に保存する必要がある**
 
-  「任意のユーザーと共有」リンクを使用すると、Journey Optimizerで行った変更は、プロジェクトがCustomer Journey Analyticsに保存されるまで、ジャーニーキャンバスに反映されません。
+  「任意のユーザーと共有」リンクを使用すると、Journey Optimizer で行った変更は、プロジェクトを Customer Journey Analytics に保存するまで、ジャーニーキャンバスに反映されません。
 
-  「任意のユーザーと共有」リンクについて詳しくは、[&#128279;](/help/analysis-workspace/curate-share/share-projects.md) プロジェクトを共有 [ の「任意のユーザーとプロジェクトを共有（不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください 。
+  「任意のユーザーと共有」リンクについて詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)を参照してください。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 
@@ -234,7 +234,7 @@ Journey Optimizerとジャーニーキャンバスの同期を理解するには
 
 #### 機能の違い
 
-ジャーニーキャンバスでJourney Optimizer ジャーニーを変更すると、変更に応じて、[!UICONTROL **矢印の設定**] ドロップダウンフィールドで使用できるオプションが変わります。 詳しくは、[設定の指定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。
+ジャーニーキャンバスで Journey Optimizer ジャーニーを変更すると、変更に応じて、[!UICONTROL **矢印の設定**]&#x200B;ドロップダウンフィールドで使用できるオプションが変更されます。詳しくは、[設定の指定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。
 
 「[!UICONTROL **ノードタイプ**]」フィールドは、Journey Optimizer でのみ使用できます。ジャーニーキャンバスで Journey Optimizer ジャーニーを表示する場合、ジャーニーキャンバスでジャーニーに変更を行ったかどうかに関係なく、この機能は使用できません。
 
@@ -263,5 +263,5 @@ Analysis Workspace で使用可能な任意のディメンションまたは指�
 
 >[!MORELIKETHIS]
 >
-> * [Adobe Customer Journey Analyticsでのジャーニーキャンバスビジュアライゼーションのガイド ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=ja)
+> * [Adobe Customer Journey Analytics でのジャーニーキャンバスビジュアライゼーションのガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 
