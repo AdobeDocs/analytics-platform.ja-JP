@@ -53,7 +53,7 @@ ht-degree: 96%
 
   エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [ イベントのセグメント化 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [ イベントのセグメント化 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 

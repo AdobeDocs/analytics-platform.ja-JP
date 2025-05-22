@@ -154,5 +154,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 概要データの使用方法とレポート方法に関するユースケースの例について詳しくは、[概要データの使用](/help/use-cases/data-views/summary-data.md)の記事を参照してください。
->- ブログ：[概要データで Adobe Customer Journey Analytics データセットを強化する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- ブログ：[概要データで Adobe Customer Journey Analytics データセットを強化する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=ja)
 

@@ -48,5 +48,5 @@ ht-degree: 95%
 
 >[!MORELIKETHIS]
 >
->関連ブログ投稿について詳しくは、[Customer Journey Analytics での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339)を参照してください。
+>関連ブログ投稿について詳しくは、[Customer Journey Analytics での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339?profile.language=ja)を参照してください。
 

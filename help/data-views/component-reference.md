@@ -69,5 +69,5 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 
 >[!MORELIKETHIS]
 >
->[ イベントの深さ機能を使用して、より深い顧客インサイトを得る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[ イベントの深さ機能を使用して、より深い顧客インサイトを得る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
 >
