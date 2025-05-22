@@ -4,9 +4,9 @@ title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -104,19 +104,23 @@ Analysis Workspaceでプロジェクトにコメントを追加するには：
 
 ## コメントに他者を含める
 
-Analysis Workspaceのコメント機能を使用すると、他のユーザーとの共同作業が容易になります。 コメントに他のユーザーを含めるには：
+Analysis Workspaceのコメント機能を使用すると、他のユーザーとの共同作業が容易になります。
+
+@記号を使用してコメントに人物を含める場合は、次の点に注意してください。
+
+* 含めるユーザーには、Adobe Experience Cloudの通知設定に基づく通知が届きます。 デフォルトでは、[Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) が届きます。
+
+  さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+
+* コメントには組織内の任意のユーザーを含めることができますが、これにより、プロジェクトへのアクセス権が自動的に付与されるわけではありません。 既にプロジェクトへのアクセス権を持つユーザーのみがプロジェクトにアクセスできます。
+
+コメントに他のユーザーを含めるには：
 
 1. @記号を入力し、含める人の名、姓またはメールアドレスの入力を開始します。
 
    ![ ユーザーをタグ付け ](assets/comments-tag-user.png)
 
 1. ドロップダウンメニューに表示されたら、人物の名前を選択します。
-
-@記号を使用してコメントに人物を含める場合は、次の点に注意してください。
-
-* 含まれるユーザーには、メール通知と Pulse 通知が届きます。
-
-* コメントには、組織内の任意のユーザーを含めることができますが、プロジェクトへのアクセス権は自動的には付与されません。 既にプロジェクトへのアクセス権を持つユーザーのみがプロジェクトにアクセスできます。
 
 ## コメントに返信する
 
@@ -126,7 +130,7 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
    または
 
-   返信先のコメントのテキストを返信に含め、元のテキストを引用符タグで囲む場合は、返信する特定のコメントまたは返信の横にある 3 ドットアイコンを選択し、「**[!UICONTROL 引用返信]**」を選択します。 引用返信は、コメントを明確に示したり、コメントの参照先に返信したりする優れた方法です。
+   返信するコメントのテキストを含め、元のテキストを引用タグで囲むには、返信する特定のコメントまたは返信の横にある 3 ドットアイコンを選択し、「**[!UICONTROL 引用返信]**」を選択します。 引用返信は、コメントまたは返信が参照しているコメントを示すのに適した方法です。
 
 1. 「**[!UICONTROL 新しいコメント]**」フィールドにコメントを指定します。
 
@@ -182,7 +186,7 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントのテキストのコピー
 
-本文をコメントとしてコピーし、他のユーザーと共有できます。
+コメントの本文をコピーして、他のユーザーと共有できます。
 
 コメントの本文をコピーするには：
 
@@ -196,7 +200,7 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
 
-1. 推奨するコメントの下にある「**[!UICONTROL いいね]**」を選択します。
+1. 推奨するコメントの下の **[!UICONTROL いいね]** を選択します。
 
 ## コメントの削除
 
