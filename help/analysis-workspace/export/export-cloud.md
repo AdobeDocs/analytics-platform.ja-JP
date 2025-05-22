@@ -5,10 +5,10 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 98%
+source-wordcount: '2340'
+ht-degree: 95%
 
 ---
 
@@ -156,9 +156,9 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 * 静的行
 * 日付の整列
 * 概要データセットからの指標
-* 動的ディメンション
+* 動的ディメンション項目
 
-  詳しくは、[フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)を参照してください。
+  動的ディメンション項目は、フリーフォームテーブルの列ヘッダーにディメンションをドロップすると作成され、その列は上位 5 つのディメンション項目によって動的にフィルタリングされます。 Analysis Workspaceでは、これらの上位 5 つのディメンション項目は、プロジェクトを読み込むたびに更新されます。 フルテーブルのエクスポートでは、これらのディメンション項目は静的になります。 詳しくは、[フリーフォームテーブルの動的ディメンション項目と静的ディメンション項目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)を参照してください。
 * 最初の分類のディメンションは変換され、書き出したテーブルの行にセカンダリディメンションとして追加されます。他の分類は、テーブルに含まれません。
 * ほとんどのデータセットでは、並べ替えはサポートされていません。小さいデータセットでは、データが並べ替えられる可能性があります。
 
