@@ -4,9 +4,9 @@ title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
+source-git-commit: ed84015c15eba817fe26c53783c28bfeba48fc0d
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 @記号を使用してコメントに人物を含める場合は、次の点に注意してください。
 
-* 含めるユーザーには、Adobe Experience Cloudの通知設定に基づく通知が届きます。 デフォルトでは、[Experience Cloud通知 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#view-notifications) が届きます。
+* 含めるユーザーには、Adobe Experience Cloudの通知設定に基づく通知が届きます。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
 
-  さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+  さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
 
 * コメントには組織内の任意のユーザーを含めることができますが、これにより、プロジェクトへのアクセス権が自動的に付与されるわけではありません。 既にプロジェクトへのアクセス権を持つユーザーのみがプロジェクトにアクセスできます。
 
