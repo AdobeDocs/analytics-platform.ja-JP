@@ -109,7 +109,7 @@ Customer Journey Analytics でスキーマと併用するルックアップデ�
 
 Customer Journey Analytics の接続にルックアップデータセットを追加するには：
 
-1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsで、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
 
 1. ルックアップデータセットを追加する接続の横にある ![その他アイコン](assets/More.svg) を選択してから、「**[!UICONTROL 編集]**」を選択します。
 

@@ -171,7 +171,7 @@ Customer Journey Analytics は、公開済みのオーディエンスからす�
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
 
 ### オーディエンス数の不一致について
 
