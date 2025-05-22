@@ -7,7 +7,7 @@ role: User
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 74%
+ht-degree: 96%
 
 ---
 
@@ -71,9 +71,9 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]** インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL &#x200B; オーディエンスビルダー &#x200B;] が開きます。 |
+   | **[!UICONTROL オーディエンス]**&#x200B;インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL オーディエンスビルダー]が開きます。 |
    | Analysis Workspace のビジュアライゼーションから | Analysis Workspace の多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。例えば、[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の項目または[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)のノードのコンテキストメニューから「**[!UICONTROL オーディエンスを作成]**」を選択できます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**メモ：**&#x200B;オーディエンスに計算指標を含めることはできません。計算指標を含むオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。</p> |
-   | セグメントの作成/編集 UI から | 「このセグメントからオーディエンスを作成 **[!UICONTROL というボックスをオンに]** ます。 この方法を使用すると、セグメントが事前設定されます。 詳しくは、[ セグメントの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
+   | セグメントの作成／編集 UI から | 「**[!UICONTROL このセグメントからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、セグメントが事前に入力されます。詳しくは、[ セグメントの作成 ](/help/components/filters/create-filters.md) を参照してください。 |
 
    {style="table-layout:auto"}
 
@@ -101,7 +101,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 | **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
 | **[!UICONTROL 説明]** | 他のオーディエンスと区別するためのオーディエンスの説明。例：`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/>以下から選択できます。 <ul><li>**[!UICONTROL 1 回限り]**&#x200B;のオーディエンス：更新を必要としないオーディエンス（デフォルト）。このオプションは、特定の 1 回限りのキャンペーンなどに役立ちます。<br/>**[!UICONTROL 1 回限りの日付範囲]**&#x200B;を指定する必要があります。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を入力できます。</li><li>更新が必要なオーディエンス。選択できる項目は次のとおりです。<ul><li>**[!UICONTROL 4 時間ごと]**：4 時間ごとに更新されるオーディエンス</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、以下を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウの更新]**。オーディエンスが評価される、ルックバック期間（今日を基点としてカウントした日数）を定義します。オプションから選択するか、カスタム期間を定義できます。最大期間は 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスの更新を停止する日数を定義します。![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付を選択できます。デフォルトは作成日の 1 年後です。有効期限が切れるオーディエンスは、スケジュール済みレポートの有効期限が切れる場合と同様に扱われます。管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul> Customer Journey Analytics の使用権限に応じて、オーディエンスの更新回数は 75〜150 回に制限されています。</li></ul> |
-| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメント **パネルから 1 つ以上のセグメントをセグメ** ト領域にドラッグ&amp;ドロップします。 ![ 検索 ](/help/assets/icons/Search.svg) [!UICONTROL *セグメントを検索*] を使用して、セグメントを検索できます。 最大 20 個のセグメントを追加できます。 セグメントは、**[!UICONTROL And]** または **[!UICONTROL Or]** 演算子で結合することができます。<p>Analysis Workspaceのビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する場合、パネルまたは列に適用されているセグメントはすべて保持されます。 自動的に適用されたセグメントを削除できます。</p> |
+| **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。左側の ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** パネルから 1 つ以上のセグメントをセグメント領域にドラッグ＆ドロップします。![検索](/help/assets/icons/Search.svg) [!UICONTROL *検索セグメント*] を使用して、セグメントを検索できます。最大 20 のセグメントを追加できます。セグメントは、**[!UICONTROL AND]** または **[!UICONTROL OR]** 演算子を使用して結合できます。<p>Analysis Workspace のビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する際に、パネルまたは列に適用されたセグメントはすべて保持されます。自動的に適用されたセグメントは削除できます。</p> |
 | **[!UICONTROL データのプレビュー]** | 選択した日付範囲の[データのプレビュー](#data-preview)を表示または非表示にするには、![情報](/help/assets/icons/Info.svg) を選択します。 |
 
 ## データのプレビュー
@@ -151,7 +151,7 @@ Customer Journey AnalyticsからExperience Platformに公開されるオーデ�
 
 ## Experience Platform での Customer Journey Analytics オーディエンスの使用 {#audiences-aep}
 
-Customer Journey Analyticsは、公開済みのオーディエンスから名前空間と ID のすべての組み合わせを取得して、Real-Time Customer Data Platformにストリーミングします。 Customer Journey Analytics は、接続の設定時に[!UICONTROL ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定した上で、オーディエンスを Experience Platform に送信します。
+Customer Journey Analytics は、公開済みのオーディエンスからすべての名前空間と ID の組み合わせを取得し、それらを Real-Time Customer Data Platform にストリーミングします。Customer Journey Analytics は、接続の設定時に[!UICONTROL ユーザー ID] として何が選択されたかに応じてプライマリ ID を設定した上で、オーディエンスを Experience Platform に送信します。
 
 次に、Real-Time Customer Data Platform は、各名前空間／ID の組み合わせを調べ、その組み合わせが含まれている可能性のあるプロファイルを探します。プロファイルは、基本的に、リンクされた名前空間、ID およびデバイスのクラスターです。プロファイルが見つかると、名前空間と ID をセグメントメンバーシップ属性としてこのプロファイル内の他の ID に追加します。<user@adobe.com> などをすべてのデバイスおよびチャネルにわたってターゲットに設定できます。プロファイルが見つからない場合は、新しく作成されます。
 
@@ -171,11 +171,11 @@ Customer Journey Analyticsは、公開済みのオーディエンスから名前
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
 
 ### オーディエンス数の不一致について
 
-Customer Journey AnalyticsとReal-Time Customer Data Platformの間では、オーディエンス数の不一致が発生する場合があります。
+Customer Journey Analytics と Real-Time Customer Data Platform の間でオーディエンス数に不一致が発生する場合があります。
 
 <!--
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
@@ -183,30 +183,30 @@ Customer Journey AnalyticsとReal-Time Customer Data Platformの間では、オ�
 
 #### 推定数と決定論的数
 
-以下に説明するように、オーディエンスメンバーシップ番号の計算方法は 2 つのアプリで異なります。
+以下に説明するように、オーディエンスメンバーシップ数の計算方法は 2 つのアプリ間で異なります。
 
-* **Customer Journey Analytics**: Customer Journey Analyticsの **[!UICONTROL 合計人数]** 指標は推定値です。 つまり、カウントはオーディエンスのルールに基づく予測であり、更新間隔によって変わる可能性があります。
-* **Real-Time Customer Data Platform**: Real-Time Customer Data Platformの数は、毎日の評価ジョブに基づいて決定的であり、オーディエンスがオーディエンスポータルへの公開を完了した時点で固定されます。
+* **Customer Journey Analytics**：Customer Journey Analytics の&#x200B;**[!UICONTROL 合計の人物]**&#x200B;指標は推定値です。つまり、この数はオーディエンスのルールに基づく推定値であり、更新間隔によって変更される場合があります。
+* **Real-Time Customer Data Platform**：Real-Time Customer Data Platform の数は毎日の評価ジョブに基づいて決定論的であり、オーディエンスがオーディエンスポータルへの公開を完了した時点で固定されます。
 
 #### 公開間隔と公開率
 
-オーディエンスは、1 秒あたり 1,500 レコード（RPS）の割合でReal-Time Customer Data Platformに公開されます。 例えば、2,000 万人のオーディエンスが完全に公開されるまでに約 3.7 時間かかります（20M/1500 RPS/1 時間あたり 3,600 秒）。 この間、2 つのアプリ間でオーディエンスメンバーシップに違いが生じる可能性があります。
+オーディエンスは、1 秒あたり 1,500 レコード（RPS）の割合で Real-Time Customer Data Platform に公開されます。例えば、2,000 万人のオーディエンスの場合、完全に公開するには約 3.7 時間かかります（20 M／1500 RPS／1 時間あたり 3,600 秒）。この間、2 つのアプリ間でオーディエンスメンバーシップに違いが発生する可能性があります。
 
-#### プロファイルの断片化
+#### プロファイルのフラグメント化
 
-Customer Journey Analyticsから読み込まれたプロファイルが既にReal-Time Customer Data Platformに存在する場合、それらは新しいプロファイルとしてカウントされません。 これにより、Real-Time Customer Data Platformでプロファイル数が予想より少なくなる可能性があります。
+Customer Journey Analytics から読み込まれたプロファイルが Real-Time Customer Data Platform に既に存在する場合、新しいプロファイルとしてカウントされません。これにより、Real-Time Customer Data Platform のプロファイル数が予想より少なくなる可能性があります。
 
-#### バッチとストリーミングオーディエンスの比較
+#### バッチオーディエンスとストリーミングオーディエンス
 
-Customer Journey Analytics オーディエンスは毎日のバッチ評価ジョブに含まれず、次の公開間隔まで固定されます。 これに対し、Real-Time Customer Data Platformの他のバッチオーディエンスは、24 時間ごとに再評価されます。
+Customer Journey Analytics オーディエンスは、毎日のバッチ評価ジョブには含まれず、次の公開間隔まで固定されたままになります。対照的に、Real-Time Customer Data Platform の他のバッチオーディエンスは 24 時間ごとに再評価されます。
 
 ### 重要な留意点
 
-* **Customer Journey Analyticsの推定カウント**:Customer Journey Analyticsの **[!UICONTROL 合計人数]** カウントは推定値であり、ストリーミングデータや ID の動作によって異なる可能性があることを理解しておきます。
-* **Real-Time Customer Data Platformにおける決定論的なカウント**:Real-Time Customer Data Platformのカウントは固定されており、次の公開間隔まで変化しません。
-* **プロファイルの断片化**:Customer Journey Analyticsから読み込む際、Real-Time Customer Data Platform内の既存のプロファイルが新しいプロファイル数の要因となっている可能性があることに注意してください。
+* **Customer Journey Analytics の推定カウント**：Customer Journey Analytics の&#x200B;**[!UICONTROL 合計の人物]**&#x200B;数は推定値であり、ストリーミングデータや ID の動作によって変更される可能性があることを理解します。
+* **Real-Time Customer Data Platform の決定論的なカウント**：Real-Time Customer Data Platform のカウントは固定されており、次の公開間隔まで変更されません。
+* **プロファイルのフラグメント化**：Real-Time Customer Data Platform の既存のプロファイルは、Customer Journey Analytics から読み込む際に、新しいプロファイル数に貢献しない場合があります。
 
-これらの側面を明確に区別することで、Customer Journey AnalyticsとReal-Time Customer Data Platform全体でオーディエンスデータをより深く理解し管理できます。—>
+これらの側面を明確に区別することで、Customer Journey Analytics と Real-Time Customer Data Platform 全体でオーディエンスデータをより適切に理解および管理できます。--->
 
 ## よくある質問（FAQ） {#faq}
 

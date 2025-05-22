@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 75%
 
 
 
-[!UICONTROL &#x200B; 永続性 &#x200B;] とは、特定のディメンション値を、設定されたイベント以外の指標にも属性を設定する機能です。 配分と有効期限の組み合わせを使用します。
+[!UICONTROL 永続性]とは、特定のディメンション値を、設定されたイベント以外の指標にも関連付けることのできる機能です。配分と有効期限の組み合わせを使用します。
 
 ![「永続性」オプションをハイライト表示するデータビューウィンドウ](../assets/persistence.png)
 
-* **配分** では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値を保持するかを決定できます。
+* **配分**&#x200B;では、1 つの列に同時に複数のディメンション項目を保持できる際、どの値が保持されるかを指定できます。
 
   >[!NOTE]
   >
@@ -45,8 +45,8 @@ ht-degree: 75%
 | 設定 | 説明 |
 | --- | --- |
 | [!UICONTROL 永続化を設定] | ディメンションの永続性を有効にします。永続性が有効になっていない場合、ディメンションは同じイベント内に存在する指標にのみ関連付けられます。この設定は、デフォルトで無効になっています。 |
-| [!UICONTROL 配分] | ディメンションで永続性のために使用する配分モデルを指定できます。オプションは次のとおりです。<ul><li>**[!UICONTROL 最新]**：ディメンション内の値は、後続の値で上書きされるまで保持されます</li><li> **[!UICONTROL 元の値]**：このディメンションの最初の値は保持され、後続の値で上書きされません</li><li>**[!UICONTROL All]**：このディメンションのすべての値が同時に保持されます</li><li>**[!UICONTROL 最初の事例]**：このディメンションの最初の値が使用され、前後のすべてのイベントに適用されます。</li><li>**[!UICONTROL 最新の情報]**：このディメンションの最後の値が使用され、前後のすべてのイベントに適用されます。</li></ul> |
-| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定できます。オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]** （デフォルト）</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>。場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索キーワードや他のマーチャンダイジングの使用例など）。設定できる最大有効期限は 90 日です。配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
+| [!UICONTROL 配分] | ディメンションで永続性のために使用する配分モデルを指定できます。オプションは次のとおりです。<ul><li>**[!UICONTROL 最新]**：ディメンションの値は、後続の値で上書きされるまで保持されます</li><li> **[!UICONTROL オリジナル]**：このディメンションの最初の値は保持され、後続の値で上書きされません</li><li>**[!UICONTROL すべて]**：このディメンションのすべての値が同時に保持されます</li><li>**[!UICONTROL 最初の事例]**：このディメンションの最初の値が使用され、前後のすべてのイベントに適用されます。</li><li>**[!UICONTROL 最後の事例]**：このディメンションの最後の値が使用され、前後のすべてのイベントに適用されます。</li></ul> |
+| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定できます。オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]**（デフォルト）</li><li>**[!UICONTROL ユーザー]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>。場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索キーワードや他のマーチャンダイジングの使用例など）。設定できる最大有効期限は 90 日です。配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
 
 {style="table-layout:auto"}
 
@@ -90,11 +90,11 @@ ht-degree: 75%
 使用可能な有効期限設定の詳細。
 
 * **セッション**：特定のセッションの後に期限切れとなります。デフォルトの有効期限の期間。
-* **個人レポートウィンドウ**：レポート期間の最後に期限切れとなります。
-* **グローバルアカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **アカウントレポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **商談レポートウィンドウ** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}: レポートウィンドウの最後に有効期限が切れます。
-* **購入グループレポート期間** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}：レポート期間の最後に有効期限が切れます。
+* **ユーザーレポート期間**：レポート期間の最後に期限切れとなります。
+* **グローバルアカウントレポート期間** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：レポート期間の最後に期限切れとなります。
+* **アカウントレポート期間** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：レポート期間の最後に期限切れとなります。
+* **商談レポート期間** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：レポート期間の最後に期限切れとなります。
+* **購買グループレポート期間** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：レポート期間の最後に期限切れとなります。
 * **カスタム時間**：指定された期間（最大 90 日）が過ぎると期限切れになります。この有効期限オプションは、オリジナル配分モデルと最新配分モデルでのみ使用できます。時間ベースの有効期限を使用する場合は、レポート期間の開始前（最大 90 日間）の値が考慮されます。
 * **指標**：この指標がイベントで表示されると、ディメンションの永続化された値は直ちに期限切れになります。このディメンションの有効期限として任意の指標を使用できます。この有効期限オプションは、オリジナルの配分設定と最新の配分設定でのみ使用できます。
 
@@ -108,7 +108,7 @@ ht-degree: 75%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/3409294/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

@@ -8,7 +8,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Customer Journey Analytics でスキーマと併用するルックアップデ�
 
 Customer Journey Analytics の接続にルックアップデータセットを追加するには：
 
-1. Customer Journey Analyticsで、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsで、必要に応じて ]**データ管理**[!UICONTROL  から「**[!UICONTROL 接続]**」を選択します。
 
 1. ルックアップデータセットを追加する接続の横にある ![その他アイコン](assets/More.svg) を選択してから、「**[!UICONTROL 編集]**」を選択します。
 
@@ -127,7 +127,7 @@ Customer Journey Analytics の接続にルックアップデータセットを�
 
 1. 「**[!UICONTROL キー]**」フィールドと「**[!UICONTROL 一致するキー]**」フィールドを使用して、ルックアップデータセットのフィールドとイベントデータセットまたは概要データセットのフィールドの間に相関性を作成します。
 
-1. すべてのルックアップデータセットがCustomer Journey Analyticsの接続に追加されるまで、このプロセスを繰り返します。
+1. すべてのルックアップデータセットが Customer Journey Analytics の接続に追加されるまで、このプロセスを繰り返します。
 
 {{upgrade-final-step}}
 

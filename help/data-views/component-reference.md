@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 75%
+ht-degree: 90%
 
 ---
 
@@ -41,8 +41,8 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | コンポーネント名 | ディメンションまたは指標 | メモおよび値 |
 | --- | --- | --- |
 | [!UICONTROL 午前／午後] | 時間分割ディメンション | 午前または午後 |
-| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL &#x200B; イベント &#x200B;] が含まれていたExperience Platform バッチの識別子。 |
-| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL &#x200B; イベント &#x200B;] が含まれていたExperience Platform データセットの識別子。 |
+| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL  イベント ] が含まれていたExperience Platform バッチの識別子。 |
+| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL  イベント ] が含まれていたExperience Platform データセットの識別子。 |
 | [!UICONTROL 日付] | 時間分割ディメンション | 1 ～ 31 |
 | [!UICONTROL 曜日] | 時間分割ディメンション | 月曜日、火曜日、水曜日、木曜日、金曜日、土曜日、日曜日 |
 | [!UICONTROL 年間通算日] | 時間分割ディメンション | 1 ～ 366 |
@@ -50,15 +50,15 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
 | [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL セッションを返す] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。 例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値にセグメントを作成して、そのユーザーの行動に至るまですべてをセグメント化します。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
+| [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットのスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。 例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値にセグメントを作成して、そのユーザーの行動に至るまですべてをセグメント化します。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; グローバルアカウント ID] | ディメンション | 接続でグローバルアカウントコンテナを使用する場合の [!UICONTROL &#x200B; グローバルアカウント ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; アカウント ID] | ディメンション | 接続でアカウントコンテナを使用する場合の [!UICONTROL &#x200B; アカウント ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; オポチュニティ ID] | ディメンション | 接続で商談コンテナを使用する場合の [!UICONTROL &#x200B; 商談 ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; 購入グループ ID] | ディメンション | 接続で購入グループコンテナを使用する場合の [!UICONTROL &#x200B; 購入グループ ID]。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL グローバルアカウント ID] | ディメンション | 接続でグローバルアカウントコンテナを使用する際の[!UICONTROL グローバルアカウント ID]。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL アカウント ID] | ディメンション | 接続でアカウントコンテナを使用する場合の [!UICONTROL  アカウント ID]。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 商談 ID] | ディメンション | 接続で商談コンテナを使用する際の[!UICONTROL 商談 ID]。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 購買グループ ID] | ディメンション | 接続で購買グループコンテナを使用する際の[!UICONTROL 購買グループ ID]。 |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
 | [!UICONTROL リピートセッション] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
-| [!UICONTROL セッションタイプ] | ディメンション | このディメンションには次の 2 つの値があります。1. [!UICONTROL &#x200B; 初回 &#x200B;] と 2. 再来訪。 [!UICONTROL 初回]行項目には、個人の定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。指標がどのセッションにも含まれていない場合、このディメンションの「該当なし」バケットに入ります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
+| [!UICONTROL セッションタイプ] | ディメンション | このディメンションには、次の 2 つの値があります。1.[!UICONTROL 初回] と 2.再来訪。[!UICONTROL 初回]行項目には、個人の定義された最初のセッションと判断されたセッションのすべての動作（このディメンションに対する指標）が含まれます。その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。指標がどのセッションにも含まれていない場合、このディメンションの「該当なし」バケットに入ります。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL イベント別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL イベント] グループ別にまとめたものです。 |
 | [!UICONTROL セッション別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL セッション] 別にまとめたものです。 |
 | [!UICONTROL ユーザー別滞在時間] | ディメンション | [!UICONTROL 滞在時間] 指標を [!UICONTROL 個人] グループ別にまとめたものです。 |
@@ -69,5 +69,5 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 
 >[!MORELIKETHIS]
 >
->[ イベントの深さ機能を使用して、より深い顧客インサイトを得る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
+>[ イベントの深さ機能を使用して、より深い顧客インサイトを得る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >

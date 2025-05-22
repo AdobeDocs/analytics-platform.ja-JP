@@ -60,8 +60,8 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
->title="コメントの許可"
->abstract="有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域が使用できます。"
+>title="コメントを許可"
+>abstract="有効にすると、Analysis Workspace でプロジェクトの右側のパネルにコメント領域が表示されます。"
 
 
 プロジェクト設定は、現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
@@ -81,7 +81,7 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
 | [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットを変更するには、色弱のユーザー向け用に最適化されている既定のパレットを選択するか、カスタムパレットを指定します。この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
 | [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 |
-| コメントの許可 | **メモ：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。 <p>このオプションを有効にすると、Analysis Workspaceのプロジェクトの右側のパネルにコメント領域が表示されます。 詳しくは、[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。</p> |
+| コメントを許可 | **メモ：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。 <p>このオプションを有効にすると、Analysis Workspaceのプロジェクトの右側のパネルにコメント領域が表示されます。 詳しくは、[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。</p> |
 
 
 

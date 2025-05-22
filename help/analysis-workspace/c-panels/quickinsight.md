@@ -6,8 +6,8 @@ exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 91%
+source-wordcount: '1145'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -37,10 +37,10 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 * 最も役立つビジュアライゼーションは何か。
 * インサイトを促進できるディメンションと指標は何か。
 * アイテムをドラッグ＆ドロップする場所はどこか。
-* セグメントの作成場所
-* その他の機能
+* セグメントを作成する場所はどこか。
+* その他の機能。
 
-これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL &#x200B; 人気 &#x200B;] がタグ付けされたディメンション、指標およびセグメントが表示されます。
+これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 
@@ -62,7 +62,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 | [!UICONTROL 指標] | 指標は、ビュー数、クリックスルー数、リロード数、平均滞在時間、数量、注文件数、売上高など、人物のアクティビティに関する量的な情報です。 |
 | **[!UICONTROL ビジュアライゼーション]** | Workspace には、データを視覚的に表現する[様々なビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意されています。棒グラフ、ドーナツグラフ、ヒストグラム、折れ線グラフ、マップ、散布図などがあります。 |
 | **[!UICONTROL ディメンションの分類]** | ディメンションの分類は、ディメンションを他のディメンションで分類する方法です。例えば、モバイルデバイスごとに米国の州を分類して、州ごとのモバイルデバイス訪問数を取得できます。または、モバイルデバイスをモバイルデバイスタイプ、地域、内部キャンペーンなどで分類することもできます。 |
-| **[!UICONTROL セグメント]** | セグメントを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、に基づいて [!UICONTROL &#x200B; 人物 &#x200B;] セグメントを作成できます <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
+| **[!UICONTROL セグメント]** | セグメントを使用すると、特性や web サイトでのインタラクションに基づいて人物のサブセットを特定できます。例えば、次のような事項に基づいて、[!UICONTROL 人物]セグメントを作成できます。 <li>属性：ブラウザータイプ、デバイス、訪問回数、国、性別、または</li><li>インタラクション：キャンペーン、キーワード検索、検索エンジン、または</li><li>出口と入口：Facebook、定義済みランディングページ、参照ドメインのユーザー、または</li><li> カスタム変数：フォームフィールド、定義済みのカテゴリ、顧客 ID。 |
 
 ## 使用
 
@@ -83,7 +83,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 
 * **[!UICONTROL 分析]** - ディメンション（オレンジ色）を指定
 * **[!UICONTROL 条件]** - 指標（緑色）を指定
-* **[!UICONTROL セグメント化]** - セグメント（青）を指定します。
+* **[!UICONTROL セグメント条件]** - セグメント（青色）を指定
 * **[!UICONTROL 対象]** - 日付範囲（紫色）を指定。
 
 ビジュアライゼーションが正しく機能するには、少なくとも 1 つのディメンションと 1 つの指標を選択する必要があります。
@@ -105,7 +105,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 
    ![縦方向にディメンション、横方向に指標を表示するフリーフォームテーブル。](assets/quick-insights-output.png)
 
-   * 過去 12 か月間の Web セッションでセグメント化された、ディメンション（国コード）と指標（セッション）を含むフリーフォームテーブル。
+   * 過去 12 か月間の web セッションでセグメント化された、ディメンション（国コード）と指標（セッション数）を含むフリーフォームテーブル。
 
    * 付属のビジュアライゼーション（この場合は[棒グラフ](/help/analysis-workspace/visualizations/bar.md)）。生成されるビジュアライゼーションは、テーブルに追加したデータのタイプに基づいています。時間ベースのデータ（日別や月別の[!UICONTROL セッション数]など）は、デフォルトで[!UICONTROL 折れ線]グラフになります。時間ベースでないデータ（[!UICONTROL デバイス]ごとの[!UICONTROL セッション]）は、デフォルトで[!UICONTROL 棒]グラフになります。ビジュアライゼーションのタイプを変更するには、ビジュアライゼーションのタイプの横にあるドロップダウン矢印をクリックします。
 
@@ -127,11 +127,11 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 
    * **[!UICONTROL 分類基準]**&#x200B;を使用してディメンションを&#x200B;**[!UICONTROL 分析]**：ディメンションで最大 3 レベルの分類を使用して、必要なデータに掘り下げることができます。➊、➋、➌ を参照してください。
 
-   * **[!UICONTROL 条件]**&#x200B;付きで指標を追加：指標は最大 2 つ追加できます。➍と➎ を参照してください。
+   * **[!UICONTROL 条件]**&#x200B;付きで指標を追加：指標は最大 2 つ追加できます。➍ および ➎ を参照してください。
 
-   * **[!UICONTROL セグメント化]**：さらに最大 2 つのセグメントを追加できます。 例えば、「予約」をセグメントとして追加し、そのセグメントを、比較対象の「頻繁に予約する人」セグメントおよび「初めて利用する人」セグメントと組み合わせます。➏、➐、➑ を参照してください。
+   * **[!UICONTROL セグメント条件]**：さらに最大 2 つのセグメントを追加できます。例えば、「予約」をセグメントとして追加し、そのセグメントを、比較対象の「頻繁に予約する人」セグメントおよび「初めて利用する人」セグメントと組み合わせます。➏、➐、➑ を参照してください。
 
-   * 対象：日付範囲を指定できます。➒ を参照してください。
+   * 対象：日付範囲を指定できます。➒ を参照。
 
 ## 既知の制限事項
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 表関数とは、表のどの行についても出力が同じになる関数です。行関数とは、表の各行で出力が異なる関数です。
 
-該当する場合および関連する場合、関数には、関数のタイプ [!BADGE Table]{type="Neutral"} または [!BADGE Row]{type="Neutral"} で注釈が付けられます
+該当する場合および関連する場合、関数には、関数のタイプで注釈が付けられます。[!BADGE テーブル]{type="Neutral"}または[!BADGE 行]{type="Neutral"}
 
 ## ゼロを含むパラメーターとは
 
@@ -93,7 +93,7 @@ ht-degree: 89%
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 指標のアークコサイン（コサインの逆数）を返します。 逆余弦は、余弦が数値である角度です。返される角度は、0（ゼロ）から pi までの範囲のラジアンで指定されます。結果をラジアンから度に変換する場合は、180/PI() で乗算します。
+[!BADGE 行]{type="Neutral"} 指標の逆余弦（余弦の逆数）を返します。逆余弦は、余弦が数値である角度です。返される角度は、0（ゼロ）から pi までの範囲のラジアンで指定されます。結果をラジアンから度に変換する場合は、180/PI() で乗算します。
 
 
 | 引数 | 説明 |
@@ -116,7 +116,7 @@ ht-degree: 89%
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} 数値の逆正弦（アークサイン）を返します。 逆正弦は、正弦が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。アークサインを度数で表すには、その値に 180/PI （）を掛けます。
+[!BADGE 行]{type="Neutral"} 数値の逆正弦 （正弦の逆数）を返します。逆正弦は、正弦が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。逆正弦を度で表すには、結果に 180/PI() で乗算します。
 
 
 | 引数 | 説明 |
@@ -139,7 +139,7 @@ ht-degree: 89%
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 数値の逆正接を返します。 逆正接は、正接が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。逆正接を度で表すには、結果に 180/PI() で乗算します。
+[!BADGE 行]{type="Neutral"} 数値の逆正接（正接の逆数）を返します。逆正接は、正接が数値である角度です。返される角度は、-pi/2 から pi/2 までの範囲のラジアンで指定されます。逆正接を度で表すには、結果に 180/PI() で乗算します。
 
 
 | 引数 | 説明 |
@@ -221,7 +221,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 指定した値以上の最小の整数を返します。 例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、CEILING(Revenue) という数式を使用して、売上高を直近のドル値（$570）に切り上げます。
+[!BADGE 行]{type="Neutral"} 指定された値以上の最小の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、CEILING(Revenue) という数式を使用して、売上高を直近のドル値（$570）に切り上げます。
 
 | 引数 | 説明 |
 |---|---|
@@ -315,7 +315,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Row]{type="Neutral"} 指定された角度の余弦を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。
+[!BADGE 行]{type="Neutral"} 指定された角度の余弦を返します。角度が度単位の場合は、角度に PI()/180 で乗算します。
 
 | 引数 | 説明 |
 |---|---|
@@ -419,7 +419,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用する指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -440,7 +440,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 指数回帰：Y = a exp （X） + b相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 指数回帰：Y = a exp(X) + b。相関係数を返します。
 
 
 | 引数 | 説明 |
@@ -463,7 +463,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Row]{type="Neutral"} 指数回帰：Y = a exp （X） + b。Y を返します。
+[!BADGE 行]{type="Neutral"} 指数回帰：Y = a exp(X) + b。Y を返します。
 
 
 | 引数 | 説明 |
@@ -487,7 +487,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 指数回帰：Y = a exp （X） + bb を返します。
+[!BADGE テーブル]{type="Neutral"} 指数回帰：Y = a exp(X) + b。b を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -510,7 +510,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 指数回帰：Y = a exp （X） + bを返します。
+[!BADGE テーブル]{type="Neutral"} 指数回帰：Y = a exp(X) + b。a を返します。
 
 
 | 引数 | 説明 |
@@ -527,13 +527,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-floor"
 >title="下限"
->abstract="指定された値以下の最大の整数を返します。例えば、製品価格が 569.34 ドルで、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（569 ドル）に切り捨てます。"
+>abstract="指定された値以下の最大の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（$569）に切り下げます。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 指定された値以下の最大の整数を返します。 例えば、製品価格が 569.34 ドルで、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（569 ドル）に切り捨てます。
+[!BADGE 行]{type="Neutral"} 指定された値以下の最大の整数を返します。例えば、製品価格が $569.34 であり、通貨の小数点以下を売上高としてレポートしない場合は、FLOOR(Revenue) という数式を使用して、売上高を直近のドル値（$569）に切り下げます。
 
 | 引数 | 説明 |
 |---|---|
@@ -558,7 +558,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用するベース指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -583,7 +583,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用するベース指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -605,7 +605,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 数値の双曲線余弦を返します。
+[!BADGE 行]{type="Neutral"} 数値の双曲線余弦を返します。
 
 
 | 引数 | 説明 |
@@ -627,7 +627,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-[!BADGE Row]{type="Neutral"} 数値の双曲線正弦を返します。
+[!BADGE 行]{type="Neutral"} 数値の双曲線正弦を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -647,7 +647,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 数値の双曲線正接を返します。
+[!BADGE 行]{type="Neutral"} 数値の双曲線正接を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -668,7 +668,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 条件パラメーターの値がゼロ以外（true）の場合、結果は value_if_true パラメーターの値になります。 それ以外の場合は、value_if_false パラメーターの値になります。
+[!BADGE 行]{type="Neutral"} 条件パラメーターの値がゼロ以外（true）の場合、結果は value_if_true パラメーターの値になります。それ以外の場合は、value_if_false パラメーターの値になります。
 
 
 | 引数 | 説明 |
@@ -696,7 +696,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用する指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -721,7 +721,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用する指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -740,7 +740,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg)**[!UICONTROL LIFT （normalizing-container, success-metric, control）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
 
 制御値と比較した比率の上昇率。
 
@@ -766,7 +766,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 線形回帰：Y = a X + b 相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 線形回帰：Y = a X + b。相関係数を返します。
 
 
 | 引数 | 説明 |
@@ -791,7 +791,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 線形回帰：Y = a X + bb を返します。
+[!BADGE テーブル]{type="Neutral"} 線形回帰：Y = a X + b。b を返します。
 
 
 | 引数 | 説明 |
@@ -816,7 +816,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 線形回帰：Y = a X + bY を返します。
+[!BADGE 行]{type="Neutral"} 線形回帰：Y = a X + b。Y を返します。
 
 
 | 引数 | 説明 |
@@ -840,7 +840,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 線形回帰：Y = a X + bを返します。
+[!BADGE テーブル]{type="Neutral"} 線形回帰：Y = a X + b。a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -863,7 +863,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 数値の 10 を底とする対数を返します。
+[!BADGE 行]{type="Neutral"} 数値のベース 10 の対数を返します。
 
 
 | 引数 | 説明 |
@@ -884,7 +884,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 回帰のログ：Y = a ln （X） + b相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 対数回帰：Y = a ln(X) + b。相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -906,7 +906,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 回帰のログ：Y = a ln （X） + bb を返します。
+[!BADGE テーブル]{type="Neutral"} 対数回帰：Y = a ln(X) + b。b を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -929,7 +929,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"} 回帰を記録する：Y = a ln （X） + b。Y を返します。
+[!BADGE 行]{type="Neutral"} 対数回帰：Y = a ln(X) + b。Y を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -952,7 +952,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 回帰のログ：Y = a ln （X） + bを返します。
+[!BADGE テーブル]{type="Neutral"} 対数回帰：Y = a ln(X) + b。a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1024,7 +1024,7 @@ CDF-Z(-3) ? 0.0013499
 | 引数 | 説明 |
 |---|---|
 | metric_X | 比較に使用する指標。 |
-| metric_Y | 比較に使用する指標。 |
+| metric_Y | 比較対象に使用する指標。 |
 
 ### 例
 
@@ -1045,7 +1045,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 分離。 ゼロに等しくない場合は true、ゼロに等しい場合は false と見なされます。出力は 0（false）または 1（true）です。
+[!BADGE 行]{type="Neutral"} 分離。ゼロに等しくない場合は true、ゼロに等しい場合は false と見なされます。出力は 0（false）または 1（true）です。
 
 
 | 引数 | 説明 |
@@ -1087,7 +1087,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 累乗回帰：Y = b X ^ a.相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 累乗回帰：Y = b X ^ a。相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1111,7 +1111,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 累乗回帰：Y = b X ^ a.b を返します。
+[!BADGE テーブル]{type="Neutral"} 累乗回帰：Y = b X ^ a。b を返します。
 
 
 | 引数 | 説明 |
@@ -1134,7 +1134,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"} 回帰の累乗：Y = b X ^ a。Y を返します。
+[!BADGE 行]{type="Neutral"} 累乗回帰：Y = b X ^ a。Y を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1157,7 +1157,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 累乗回帰：Y = b X ^ a.を返します。
+[!BADGE テーブル]{type="Neutral"} 累乗回帰：Y = b X ^ a。a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1180,7 +1180,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2，相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 二次回帰：Y = (a + bX) ^ 2、相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1201,7 +1201,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2, a を返します。
+[!BADGE テーブル]{type="Neutral"} 二次回帰：Y = (a + bX) ^ 2、a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1223,7 +1223,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2, Y を返します。
+[!BADGE 行]{type="Neutral"} 二次回帰：Y = (a + bX) ^ 2、Y を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1245,7 +1245,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 二次回帰：Y = （a + bX） ^ 2、b を返します。
+[!BADGE テーブル]{type="Neutral"} 二次回帰：Y = (a + bX) ^ 2、b を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1268,7 +1268,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 相関係数を返します。
+[!BADGE テーブル]{type="Neutral"} 逆数回帰：Y = a + b X ^ -1。相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1290,7 +1290,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 a を返します。
+[!BADGE テーブル]{type="Neutral"} 逆数回帰：Y = a + b X ^ -1。a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1312,7 +1312,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 Y を返します。
+[!BADGE 行]{type="Neutral"} 逆数回帰：Y = a + b X ^ -1。Y を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1334,7 +1334,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 逆回帰：Y = a + b X ^ -1。 b を返します。
+[!BADGE テーブル]{type="Neutral"} 逆数回帰：Y = a + b X ^ -1。b を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1353,9 +1353,9 @@ CDF-Z(-3) ? 0.0013499
 >title="サンプル分散"
 >abstract="数式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) を使用してサンプル分散の推定値を計算します。ここで、N は正規化コンテナのカウントです。<br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。"
 
-![ エフェクト ](/help/assets/icons/Effect.svg)**[!UICONTROL SAMPLE VARIANCE （normalizing-container, success-metric）]**
+![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
-標本分散の推定値を計算します。
+サンプル分散の推定値を計算します。
 
 | 引数 | 説明 |
 | --- | --- |
@@ -1380,7 +1380,7 @@ CDF-Z(-3) ? 0.0013499
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} 指定された角度の正弦を返します。 角度が度単位の場合は、角度に PI()/180 で乗算します。
+[!BADGE 行]{type="Neutral"} 指定された角度の正弦を返します。角度が度単位の場合は、角度に PI()/180 で乗算します。
 
 
 | 引数 | 説明 |
@@ -1492,7 +1492,7 @@ t スコア x および自由度 n の t 検定（m-tailed）を実行します�
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 平均からの偏差を標準偏差で割った値。
+[!BADGE 行]{type="Neutral"} 平均値を標準偏差で割って求める偏差値です。
 
 | 引数 | 説明 |
 |---|---|

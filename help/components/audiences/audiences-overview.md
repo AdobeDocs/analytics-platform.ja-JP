@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 76%
+ht-degree: 87%
 
 ---
 
@@ -31,7 +31,7 @@ Customer Journey Analytics で作成するオーディエンスは、プロフ�
 
 **オーディエンス**：名前空間と、その名前空間に関連する特定の ID の両方を持つ ID のセットまたはリスト。オーディエンスは、Adobe Experience Platform およびこれを基にしたアプリケーション（Customer Journey Analytics など）から転送できます。オーディエンスには、名前空間を混在させて含めることができます。
 
-**セグメント**：一連のデータを一定期間評価した場合に、データのサブセットを生成する一連のルール。 セグメントは、他のサポートサービスと組み合わせて、オーディエンスを作成するプロセスで使用できます。 セグメントは、Customer Journey Analyticsで定義および管理されます。
+**セグメント**：一連のデータを一定期間評価した場合に、データのサブセットを生成する一連のルール。セグメントは、他のサポートサービスと組み合わせて、オーディエンスを作成するプロセスで使用できます。セグメントは Customer Journey Analytics で定義および管理されます。
 
 ## 権限
 

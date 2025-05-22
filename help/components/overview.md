@@ -8,7 +8,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 次のコンポーネントを管理できます。
 
-* [ セグメント ](filters/filters-overview.md)：焦点を当てた強力なオーディエンスセグメントを作成、管理、共有し、レポートに適用します。 セグメントを使用すると、特性やインタラクションに基づいて人物のサブセットを識別できます。
+* [セグメント](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスセグメントを作成、管理、共有し、レポートに適用します。セグメントを使用すると、特性やインタラクションに基づいて人物のサブセットを識別できます。
 * [計算指標](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
 * [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
 * [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
@@ -36,7 +36,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 ## Analysis Workspace のコンポーネント
 
-Analysis Workspaceのコンポーネントは、Workspace プロジェクトのパネルおよびビジュアライゼーションにドラッグ&amp;ドロップできる指標、ディメンション、セグメントおよび日付範囲で構成されています。 計算指標やカスタム日付範囲など、作成するカスタムコンポーネントがこれらのパネルに追加されます。
+Analysis Workspace のコンポーネントは、Workspace プロジェクトのパネルやビジュアライゼーションにドラッグ＆ドロップできる指標、ディメンション、セグメント、日付範囲で構成されています。計算指標やカスタム日付範囲など、作成するカスタムコンポーネントがこれらのパネルに追加されます。
 
 コンポーネントパネルにアクセスするには、ボタンパネル内の![キュレート](/help/assets/icons/Curate.svg)／**[!UICONTROL コンポーネント]**&#x200B;を選択します。
 
@@ -72,7 +72,7 @@ Analysis Workspace の&#x200B;**[!UICONTROL コンポーネント]**&#x200B;メ�
    | ![共有](/help/assets/icons/ShareAlt.svg)、[!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
    | ![削除](/help/assets/icons/Delete.svg)、[!UICONTROL **削除**] | 不要になったコンポーネントを削除します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
-カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、[ セグメントの管理 ](/help/components/filters/manage-filters.md) を参照してください。
+カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、[セグメントの管理](/help/components/filters/manage-filters.md)を参照してください。
 
 ## コンポーネントリストの管理
 
@@ -84,7 +84,7 @@ Analysis Workspace の左パネルにあるコンポーネントリストを検�
 
 2. 検索フィールドに、プロジェクトで使用するコンポーネントの名前を入力します。
 
-   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション** ![Dimension アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**セグメント** ![ セグメントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![ 日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![ 指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。<br/>Adobe アイコン ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) は、計算指標テンプレートまたはセグメントテンプレートのいずれかを示します。 電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
+   コンポーネントのタイプは、カラーとアイコンで識別されます。**ディメンション** ![Dimension アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) はオレンジ色、**セグメント** ![ セグメントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) は青色、**日付範囲** ![ 日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) は紫色、**指標** ![ 指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) は緑色です。<br/>アドビアイコン（![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg)）は、計算指標テンプレートまたはセグメントテンプレートのいずれかを示します。電卓アイコン（![電卓アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)）は、組織の管理者が作成した計算指標を示します。
 
 3. ドロップダウンメニューからコンポーネントを選択します。
 

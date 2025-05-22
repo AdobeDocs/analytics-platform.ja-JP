@@ -8,7 +8,7 @@ exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -154,5 +154,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 概要データの使用方法とレポート方法に関するユースケースの例について詳しくは、[概要データの使用](/help/use-cases/data-views/summary-data.md)の記事を参照してください。
->- ブログ：[ 概要データがAdobe Customer Journey Analytics データセットを強化する方法 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=ja)
+>- ブログ：[概要データで Adobe Customer Journey Analytics データセットを強化する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

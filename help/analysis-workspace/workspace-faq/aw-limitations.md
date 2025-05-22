@@ -7,7 +7,7 @@ role: User
 source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 73%
 
 ## ビジュアライゼーション
 
-* [!UICONTROL &#x200B; フォールアウト &#x200B;]、[!UICONTROL &#x200B; フロー &#x200B;]、[!UICONTROL &#x200B; コホート &#x200B;]、[!UICONTROL &#x200B; ヒストグラム &#x200B;] など、セグメントを活用するビジュアライゼーションでは、計算指標を入力として使用することはできません。
+* セグメント（[!UICONTROL フォールアウト]、[!UICONTROL フロー]、[!UICONTROL コホート]、[!UICONTROL ヒストグラム]など）を利用するビジュアライゼーションでは、計算指標を入力として使用することはできません。
 * [!UICONTROL フロー]：入口／出口ディメンション（例：[!UICONTROL 入口ページ]）は、フローでは使用できません。
 * [!UICONTROL コホート]：整数以外の値をコホート条件として使用することはできません。
 
 ## セグメント
 
-* 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL &#x200B; イベント &#x200B;]、[!UICONTROL &#x200B; 人物 &#x200B;] など）。
-* [ パネルドロップゾーン ](/help/analysis-workspace/c-panels/panels.md) で作成されたアドホックセグメントは、クイックセグメントの一種です。 公開されない限り、これらはWorkspaceの左パネルやセグメントマネージャーに表示されません。 詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
+* 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL イベント]、[!UICONTROL ユーザー]など）。
+* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックセグメントは、クイックセグメントのタイプです。公開されない限り、これらはWorkspaceの左パネルやセグメントマネージャーに表示されません。 詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
 
 ## 計算指標
 
 * 計算指標は、一部のビジュアライゼーションでは使用できません。詳しくは、[ビジュアライゼーション](#visualizations)を参照してください。
 * 計算指標自体に別々のアトリビューションモデルを含めることができるので、[!UICONTROL アトリビューションパネル]で計算指標を使用できません。
-* 計算指標がWorkspaceから作成される場合（[!UICONTROL &#x200B; コンポーネント/セグメント &#x200B;] から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。 例：[!UICONTROL IP アドレス]。
+* 計算指標が Workspace から作成される場合（[!UICONTROL コンポーネント／セグメント]から作成される場合とは異なり）、使用できないコンポーネントや演算子があります。例：[!UICONTROL IP アドレス]。
 
 ## 日付範囲
 

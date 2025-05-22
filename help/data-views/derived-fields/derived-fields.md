@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '8857'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 98%
 | A | **ルール名** |  デフォルトでは、ルール名は&#x200B;**ルール X** です（X はシーケンス番号を表します）。ルールの名前を編集するには、その名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
 | B | **関数名** | ルール用に選択された関数名（[!UICONTROL 例：URL PARSE]）。関数が関数シーケンスの最後であり、最終出力値を決定する際、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます（例：[!UICONTROL URL PARSE - FINAL OUTPUT]）。<br/>関数の詳細情報を含むポップアップを表示するには、![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
 | C | **ルールの説明** | オプションでルールに説明を追加できます。<br/>![その他アイコン](assets/More.svg) を選択し、「**[!UICONTROL **&#x200B;説明を追加&#x200B;**]**」を選択して説明を追加するか、「**[!UICONTROL **&#x200B;説明を編集&#x200B;**]**」を選択して既存の説明を編集します。<br/>エディターを使用して説明を入力します。ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右揃え、左揃え、中央揃え、カラー、番号リスト、ブレットリストの使用）や、外部情報へのリンクの追加を行うことができます。<br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL &#x200B; フィールド &#x200B;] または [!UICONTROL &#x200B; 値 &#x200B;] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
+| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL  フィールド ] または [!UICONTROL  値 ] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -1273,11 +1273,9 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 - 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的の値を括弧を使用してグループ化する必要があります。例：
 
    - この数式はエラーを返します。
-
      ![数学の詳細情報 4](assets/math-more-info-4.png)
 
    - この数式は有効です。
-
      ![数学の詳細情報 5](assets/math-more-info-5.png)
 
 ヒットレベルに基づく計算には、Math 関数を使用します。イベント、セッションまたはユーザーの範囲に基づく計算には、[Summarize](#summarize) 関数を使用します。
@@ -1363,13 +1361,13 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 <!-- NEXT OR PREVIOUS -->
 
-### Next or Previous {#next-previous}
+### Next または Previous {#next-previous}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
->title="Next or Previous"
+>title="Next または Previous"
 >abstract="この関数は、特定のフィールドに関して収集された次または前の値を確認する機能を提供します。"
 
 <!-- markdownlint-enable MD034 -->
@@ -1966,7 +1964,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 | <p>Lowercase</p> | <ul><li>派生フィールドごとに 2 つの Lowercase 関数</li></ul> |
 | <p>Math</p> | <ul><li>派生フィールドごとに 25 の操作</li><li>派生フィールドごとに 5 つの数学関数</li></ul> |
 | <p>Merge Fields</p> | <ul><li>派生フィールドごとに 2 つの Merge Fields 関数</li></ul> |
-| <p>Next or Previous</p> | <ul><li>派生フィールドごとに 3 つの Next or Previous 関数</li></ul> |
+| <p>Next または Previous</p> | <ul><li>派生フィールドごとに 3 つの Next or Previous 関数</li></ul> |
 | <p>Regex Replace</p> | <ul><li>派生フィールドごとに 1 つの Regex Replace 関数</li></ul> |
 | <p>Split</p> | <ul><li>派生フィールドごとに 2 つの Split 関数</li></ul> |
 | <p>Summarize</p> | <ul><li>派生フィールドごとに 3 つの Summarize 関数</li></ul> |
@@ -1998,7 +1996,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ ブログ：データを最大限に活用：Customer Journey Analyticsで派生フィールドを使用するためのフレームワーク ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
->- [ ブログ：Customer Journey Analyticsの派生フィールドのユースケース ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
->- [ ブログ：Adobe Customer Journey Analytics派生フィールドの機能強化 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

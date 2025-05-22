@@ -23,7 +23,7 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 
 >[!BEGINTABS]
 
->[!TAB Content Analytics]
+>[!TAB コンテンツ分析]
 
 Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。
 

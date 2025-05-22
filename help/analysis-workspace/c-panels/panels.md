@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 94%
 
 ## データビュー
 
-各パネルは、パネルの右上にあるドロップダウンメニューの ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**&#x200B;で識別される [ データビュー ](/help/data-views/data-views.md) に関連付けられています。
+各パネルは、パネルの右上にあるドロップダウンメニューの [ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**で識別される ![ データビュー ](/help/data-views/data-views.md) に関連付けられています。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -85,7 +85,7 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->選択したデータビューによって、パネル内のビジュアライゼーションを作成するために使用できるディメンション、指標、セグメントが決まります。
+>選択したデータビューによって、パネル内のビジュアライゼーションの作成に使用できるディメンション、指標、セグメントが決まります。
 >
 >
 >パネルのデータビューを切り替えると、その新しいデータビューで一部のコンポーネントを使用できなくなる場合があります。この変更により、ビジュアライゼーションが正しくレンダリングされない可能性があります。次のような警告が表示される場合があります。
@@ -107,7 +107,7 @@ ht-degree: 94%
 ![選択した日付範囲を示すカレンダーウィンドウ。](assets/panel-calendar.png)
 
 1. 最初に開始日を選択し、次に終了日を選択して、日付範囲を選択します。
-または、「**[!UICONTROL プリセットを選択]**」ドロップダウンメニューから [!UICONTROL *プリセット*] を選択できます。
+または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。
 
 1. オプションで、「**[!UICONTROL 詳細設定を表示]**」を選択して、次の操作を行います。
 
@@ -149,13 +149,13 @@ ht-degree: 94%
 
 詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
 
-![ 公開されてドロップゾーンにドロップされるアドホックセグメント ](assets/adhoc-segment-filter.png)
+![公開されてドロップゾーンにドロップされるアドホックセグメント](assets/adhoc-segment-filter.png)
 
 ### ドロップダウンセグメント
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ドロップダウンセグメント ](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ドロップダウンセグメント ](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
@@ -168,7 +168,7 @@ ht-degree: 94%
 
 静的ドロップダウンセグメントを使用して、多くのプロジェクトを 1 つに統合することもできます。例えば、同じプロジェクトに異なる国セグメントが適用された複数のバージョンがある場合、すべてのバージョンを 1 つのプロジェクトに統合して「国」ドロップダウンセグメントを追加できます。
 
-![ 市場チャネルの「ダイレクト」セグメントがハイライト表示されている静的ドロップダウンセグメント。](assets/dropdown-filter-intro.png)
+![マーケットチャネル「ダイレクト」セグメントがハイライト表示された静的ドロップダウンセグメント。](assets/dropdown-filter-intro.png)
 
 ##### 静的ドロップダウンセグメントの作成
 

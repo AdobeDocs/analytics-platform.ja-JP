@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 76%
 
 ![注釈の作成](assets/create-date-range.png)
 
-* **A** - メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。 [[!UICONTROL 日付範囲]マネージャー](/help/components/date-ranges/manage.md)から ![AddCircle](/help/assets/icons/AddCircle.svg)、**[!UICONTROL 追加]**&#x200B;を選択します。
+* **A** - メインインターフェイスで、「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲]**」を選択します。[[!UICONTROL 日付範囲]マネージャー](/help/components/date-ranges/manage.md)から ![AddCircle](/help/assets/icons/AddCircle.svg)、**[!UICONTROL 追加]**&#x200B;を選択します。
 * **B** - Workspace プロジェクトのビジュアライゼーションのコンテキストメニューで、「**[!UICONTROL この日付範囲に対するカスタムの日付範囲]**」を選択します。
-* **C** - Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL 日付範囲を作成]** を選択します
-* **D** - Workspace プロジェクトでは、ショートカットキー **[!UICONTROL ctrl+shift+d]** （Windows）または **[!UICONTROL shift+command+d]** （macOS）を使用します。
-* **E** - Workspace プロジェクトの左側のパネルのコンポーネントから、「![ カレンダー ](/help/assets/icons/Calendar.svg) **&#x200B;**&#x200B;日付範囲 ![ で「追加 ](/help/assets/icons/Add.svg)」を選択します。
-* **F** – 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションの場合は、データポイントのコンテキストメニューから「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
+* **C** - Workspace プロジェクトで、メニューから「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 日付範囲を作成]**」を選択します。
+* **D** - Workspace プロジェクトで、ショートカット **[!UICONTROL Ctrl + Shift + D キー]**（Windows）または **[!UICONTROL Shift + Command + D キー]**（macOS）を使用します。
+* **E** - Workspace プロジェクトのコンポーネント左パネルで、![カレンダー](/help/assets/icons/Calendar.svg) **日付範囲**&#x200B;に「![追加](/help/assets/icons/Add.svg)」を選択します。
+* **F** - 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションで、データポイントのコンテキストメニューから、「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
 注釈を定義するには、[[!UICONTROL 日付範囲ビルダー]](#annotation-builder)を使用します。
 
@@ -55,7 +55,7 @@ ht-degree: 76%
 1. オプションで、「**[!UICONTROL 説明]**」を指定します。
 1. 1 つ以上の **[!UICONTROL タグ]** を作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
 1. 最初に開始日を選択し、次に終了日を選択して、「**[!UICONTROL 日付範囲]**」を選択します。
-または、「**[!UICONTROL プリセットを選択]**」ドロップダウンメニューから [!UICONTROL *プリセット*] を選択できます。
+または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。
 
 1. オプションで、「**[!UICONTROL 詳細設定を表示]**」を選択して、次の操作を行います。
 

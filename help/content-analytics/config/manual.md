@@ -8,76 +8,76 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 5%
+ht-degree: 96%
 
 ---
 
 # コンテンツ分析手動設定
 
-この記事では、Content Analytics設定のデータ収集を開始または停止したり、Content Analytics実装を編集したりするために必要な手動のアクションについて詳しく説明します。
+この記事では、コンテンツ分析設定のデータ収集を開始または停止したり、コンテンツ分析の実装を編集したりするために必要な手動アクションについて詳しく説明します。
 
 次の手動設定アクションを使用できます。
 
-## データ収集の開始
+## データ収集を開始
 
-実装されたContent Analytics設定のデータ収集を開始するには、次の手順を実行します。
+実装されたコンテンツ分析設定のデータ収集を開始するには：
 
-1. [ 公開フロー ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"} に従います。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
+1. [公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}に従います。コンテンツ分析設定を含むタグプロパティのライブラリを正常に公開します。
 
-1. [ インストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation)Content Analyticsを使用して、開発環境、ステージング環境またはパブリッシ `<head>` 環境のページの UI 要素に埋め込まれたコード。
-
-
-## データ収集の停止
-
-実装されたContent Analytics設定のデータ収集を停止するには、次の手順を実行します。
-
-1. Content Analyticsに従って、開発環境、ステージング環境または実稼動環境でページの `<head>` 要素にある [ 埋め込みコード ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments) を削除します。
-1. [ 削除 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview):Content Analytics設定に関連するタグプロパティ。
+1. コンテンツ分析に従って、開発環境、ステージング環境または公開環境のページの `<head>` 要素にある埋め込みコードを[インストール](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation)します。
 
 
+## データ収集を停止
 
-## データ収集の変更
+実装されたコンテンツ分析設定のデータ収集を停止するには：
 
-[ ガイド付き設定ウィザード ](guided.md) を使用して、実装された設定にいくつかの小さな変更を加えることができます。 例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
+1. コンテンツ分析に従って、開発環境、ステージング環境または実稼動環境のページの `<head>` 要素にある[埋め込みコード](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments)を削除します。
+1. コンテンツ分析設定に関連付けられたタグプロパティを[削除](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)します。
 
-Content Analytics設定に関連付けられたタグプロパティで [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)0&rbrace;Adobe Content Analytics拡張機能 &rbrace; を使用して、次のアーティファクトを変更します。
 
-* [ サンドボックスとデータストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
+
+## データ収集を変更
+
+[ガイド付き設定ウィザード](guided.md)を使用して、実装済み設定に一部の小さな変更を行うことができます。例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
+
+コンテンツ分析設定に関連付けられたタグプロパティで [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)を使用して、次のアーティファクトを変更します。
+
+* [サンドボックスとデータストリーム](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
-  >Adobe Content Analytics拡張機能で設定したサンドボックスとデータストリームが、以前の段階で [ ガイド付き設定 ](guided.md) を使用してContent Analytics用に設定されていることを確認します。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/> また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定された別のContent Analytics設定の妨げとならないことも確認します。
+  >Adobe コンテンツ分析拡張機能で設定するサンドボックスとデータストリームが、以前のステージで[ガイド付き設定](guided.md)を使用して既にコンテンツ分析用に設定されていることを確認します。この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/>また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定されている別のコンテンツ分析設定の妨げとならないことも確認します。
   >
 
-* [ エクスペリエンスのキャプチャと定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [エクスペリエンスのキャプチャと定義](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=ja#configure-experience-capture-and-definition)
 
-  エクスペリエンスを有効または無効にしたり、正規表現とクエリパラメーターの組み合わせを編集したりして、web サイト上でのコンテンツのレンダリング方法を決定できます。
+  エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [ イベントのセグメント化 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [ イベントのセグメント化 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 
 
-Adobe Content Analytics拡張機能で変更を行った後、使用している [ 公開フロー ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"} を確認し、加えられた変更に基づいてデータの収集を開始します。
+Adobe コンテンツ分析拡張機能に変更を行った後、[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を使用して、行った変更に基づいてデータの収集を開始します。
 
 
 
 >[!MORELIKETHIS]
 >
 >[ガイド付き設定](guided.md)
->[データ収集タグの公開 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview) 概要
+>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
 
 
 ## バージョン管理
 
-Content Analytics エクスペリエンスを収集する場合は、新しいエクスペリエンス（web ページの変更内容）が適切に収集されるように、バージョン管理の実装を検討する必要があります。
+コンテンツ分析エクスペリエンスを収集する場合は、新しいエクスペリエンス（web ページへの変更）が適切に収集されるように、バージョン管理を実装することを検討する必要があります。
 
-バージョン管理を実装するには、分析するエクスペリエンスについて検討するページにグローバル `adobe.getContentExperienceVersion` 関数を追加します。
+バージョン管理を実装するには、分析するエクスペリエンスと見なされるページにグローバル `adobe.getContentExperienceVersion` 関数を追加します。
 
-`adobe.getContentExperienceVersion` 関数は、バージョンを識別する文字列を値として返す必要があります。この値は、任意で選択できます。 バージョンが [ エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
+`adobe.getContentExperienceVersion` 関数は、バージョンを識別するために文字列を値として返す必要があります。値は、任意の値にすることができます。バージョンが[エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
 
-関数が存在しない場合や関数から値が返されない場合は、値 `NoVersion` がデフォルトとして使用されます。
+関数が存在しないか、関数から値が返されない場合は、値 `NoVersion` がデフォルトとして使用されます。
 
 ### 例
 

@@ -8,7 +8,7 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe Experience Platform の場合：
 
    1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
@@ -366,7 +366,7 @@ HAVING m1 > 100</code></pre>
             </td>
         </tr>
         <tr>
-            <td>個別、上 
+            <td>個別、上位の
 ディメンション値 </td>
             <td>
                 <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
@@ -391,9 +391,9 @@ WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
             </td>
         </tr>
         <tr>
-            <td>複数ディメンション
+            <td>マルチディメンションの
 分類
-と top-distincts </td>
+と上位の個別 </td>
             <td>
                 <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
 FROM dv1
@@ -409,23 +409,23 @@ FROM dv1</code></pre>
             </td>
         </tr>
         <tr>
-            <td>副選択：
-フィルターの追加
-件の結果 </td>
+            <td>サブ選択：
+追加の結果
+フィルタリング </td>
             <td>
                 <pre><code>SELECT dim1, m1
 FROM (
   SELECT dim1, SUM(metric1) AS m1
   FROM dv1
-  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  DIM1 でグループ化
-）
-WHERE dim1 in （'A', 'B'）</code></pre>
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1
+)
+WHERE dim1 in ('A', 'B')</code></pre>
             </td>
         </tr>
         <tr>
-            <td>副選択：
-でのクエリ
-データビュー </td>
+            <td>サブ選択：
+データビュー
+全体のクエリ </td>
             <td>
                 <pre><code>SELECT key, SUM(m1) AS total
 FROM (
@@ -446,11 +446,11 @@ ORDER BY total</code></pre>
             </td>
         </tr>
         <tr>
-            <td>副選択： 
-階層型ソース、 
-フィルター、 
-および集計 </td>
-            <td>サブセレクトを使用してレイヤ化：
+            <td>サブ選択：
+レイヤー化されたソース、
+フィルタリング、
+集計 </td>
+            <td>サブ選択を使用したレイヤー化：
 <pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
 FROM (
   SELECT _.dim1,_.m1
@@ -462,7 +462,7 @@ FROM (
 ) rows
 GROUP BY 1
 ORDER BY total</code></pre>
-CTE と次を使用するレイヤー：
+CTE WITH を使用するレイヤー：
 <pre><code>WITH rows AS (
   WITH _ AS (
     SELECT * FROM data_ares
@@ -477,10 +477,10 @@ GROUP BY rows.item</code></pre>
         </td>
         </tr>
         <tr>
-            <td>は、
-指標が次の値より前
- またはと混合される
-ディメンション </td>
+            <td>指標をディメンション
+の前に配置するか、
+ディメンションと混合する
+場所を選択します </td>
             <td>
                 <pre><code>SELECT SUM(metric1) AS m1, dim1
 FROM dv1
