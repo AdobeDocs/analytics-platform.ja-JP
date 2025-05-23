@@ -3,10 +3,10 @@ description: 指標タイプとアトリビューションについて説明し�
 title: 指標タイプとアトリビューション
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,14 @@ ht-degree: 100%
 >abstract="クレジットは、統計的アルゴリズムに基づいて動的に決定されます。"
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="コンテナ"
+>abstract="コンテナを選択して、アトリビューションに必要な範囲を設定します。"
+
 
 {{attribution-models-details}}
 
-
-### ルックバックウィンドウ {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ ht-degree: 100%
 >title="ルックバックウィンドウ"
 >abstract="この設定により、各コンバージョンに適用されるデータアトリビューションの期間が決まります。"
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
