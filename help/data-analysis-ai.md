@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
+source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->Data Insights Agentは、2025 年 11 月 30 日（PT）まで、対象となるCustomer Journey Analyticsのお客様が利用できます。 この日以降もData Insights Agentを引き続き使用する場合は、ライセンスが必要です。 ライセンスプロセスについて詳しくは、Adobe アカウントチームにお問い合わせください。
+>Data Insights Agentは、対象となるお客様が期間限定で利用できます。 Data Insights Agentへのアクセスは 2025 年 11 月 30 日（PT）に終了します。 Data Insights Agentを引き続き使用する場合は、Adobe アカウント担当者に連絡して、Data Insights Agentのライセンスについて詳しく問い合わせてください。
 
 Data Insights Agentは、Customer Journey Analyticsの AI アシスタントからアクセスでき、データに関する質問に迅速かつ効率的に回答するジェネレーティブ AI コンバージョンエージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
 
@@ -41,16 +41,16 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 次のパラメーターは、Customer Journey AnalyticsのData Insights Agentへのアクセスを制御します。
 
-* **ソリューションアクセス**:Data Insights Agentは、Customer Journey Analytics PrimeおよびUltimateのお客様が利用できます。 Adobe Analyticsでは使用できません。
+* **ソリューションアクセス**:Data Insights Agentは、2025 年 11 月 30 日（PT）まで、限定アクセスプログラムの一環として、すべてのCustomer Journey Analyticsのお客様が利用できます。 Adobe Analyticsでは使用できません。
 
 * **契約によるアクセス**:AI アシスタントでData Insights Agentを使用できない場合は、組織の管理者またはAdobe アカウントチームにお問い合わせください。 組織がData Insights Agentを使用する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**: ユーザーがData Insights Agentにアクセスするには、必要な権限が 2&rbrace;Adobe Admin Console&rbrace; で付与されている必要があります。
+* **権限**: ユーザーがData Insights Agentにアクセスするには、必要な権限が ]2}Adobe Admin Console} で付与されている必要があります。[!UICONTROL 
 
   権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して **[!UICONTROL すべての製品とサービス]** ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
-   1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品ナレッジ &#x200B;] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
+   1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」タブを選択します。
 
       ![Admin Consoleの「権限」タブ ](assets/ai-assistant-permissions-tab.png)
@@ -62,7 +62,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
       ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
-   1. **[!UICONTROL データビューツール]** タブを選択し、**Data Insights Agent![ 権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle** を選択します。
+   1. **[!UICONTROL データビューツール]** タブを選択し、**[!UICONTROL Data Insights Agent![ 権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle]** を選択します。
 
       **[!UICONTROL Data Insights Agent]** 権限が **[!UICONTROL 含まれる権限項目]** 列に追加されます。
 
@@ -88,7 +88,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
-2. Experience Cloud ホームから **0&rbrace;Customer Journey Analytics&rbrace; を選択します。**
+2. Experience Cloud ホームから **0}Customer Journey Analytics} を選択します。**
 
 3. プロジェクトページ上部のバナーで **[!UICONTROL 空のプロジェクト]** を選択して、新しい空のプロジェクトを開きます。
 
