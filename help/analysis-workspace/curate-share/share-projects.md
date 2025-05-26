@@ -8,7 +8,7 @@ role: User
 source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
 workflow-type: tm+mt
 source-wordcount: '2091'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/40032/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**を選択します。
 未保存の変更がある場合は、まずプロジェクトを保存するように求められます。
 
    共有プロジェクトダイアログボックスが表示されます。ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
@@ -133,7 +133,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
 >title="Experience Cloud 認証を要求"
->abstract="このリンクを使用するには、Experience Cloudにログインする必要があります。"
+>abstract="組織は、ユーザーがこのリンクを使用するために Experience Cloud にログインするよう要求します。"
 
 
 Customer Journey Analytics にアクセスできないユーザーに Analysis Workspace プロジェクトへの[読み取り専用アクセス権](/help/analysis-workspace/curate-share/view-only-projects.md)を付与できます。このようなユーザーには以下が含まれます。
@@ -160,7 +160,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3452450/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -215,7 +215,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/327498/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
