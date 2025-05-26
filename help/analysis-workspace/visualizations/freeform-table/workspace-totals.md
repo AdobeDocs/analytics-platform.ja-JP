@@ -4,31 +4,27 @@ title: Workspace の合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 91%
 
 ---
 
 # Workspace の合計 {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="総計"
->abstract="静的な行を含むテーブルや分類では、総計はサポートされません。"
-
-<!-- markdownlint-enable MD034 -->
+>abstract="総計は、テーブルまたは静的行を含む分類ではサポートされていません。"
 
 
 フリーフォームテーブルでは、合計行が各分類レベルに表示され、2 つの合計を示すことができます。
 
 ![総計とテーブルの合計をハイライト表示するフリーフォームテーブル。](assets/total-row.png)
 
-* **[!UICONTROL テーブルの合計]** ➊ - この合計は通常、[!UICONTROL 総計]と等しいか、そのサブセットです。合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
-* **[!UICONTROL 総計]**（**[!UICONTROL 範囲外の]***数*）➋ - この合計は、収集されたすべてのイベントを表します。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのイベントを反映するように調整されます。
+* **[!UICONTROL テーブル合計]** ➊ – この合計は、通常、[!UICONTROL  総計 ] と等しいか、またはそのサブセットです。 合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
+* **[!UICONTROL 総計]** （**[!UICONTROL 範囲外]** *数値*） ➋ – この合計は、収集されたすべてのイベントを表します。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのイベントを反映するように調整されます。
 
 
 

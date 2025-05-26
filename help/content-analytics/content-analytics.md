@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -60,18 +60,14 @@ Content Analyticsは、Experience Platformのイベントデータセットの w
 
 >[!NOTE]
 >
->プライバシーとセキュリティシールドアドオンのライセンスを取得している場合、コンテンツ分析の対象となるエクスペリエンスとアセット（から生成されたすべてのデータ）は、DULE ラベル付けまたは顧客管理キーの対象とはなりません。
+>Privacy and Security Shield アドオンのライセンスを取得している場合、Content Analyticsの対象となる（から生成されたすべてのデータ）エクスペリエンスとアセットは、DULE ラベル付けまたは顧客管理キーの対象とならないことに注意してください。 また、Content Analyticsは HIPAA 対応のサービスではありません。
 >
 
->[!NOTE]
->
->Content Analytics[ 追加のイベントを送信 ](config/datacollection.md#content-analytics-event)。セッションまたはページ内のイベント数に基づくバウンス率定義に最も影響を与える可能性が高くなります。
->
 
 >[!MORELIKETHIS]
 >
 >[コンテンツ分析レポート](report/report.md)
 >[コンテンツ分析の設定](config/configuration.md)
->[Customer Journey Analyticsでのバウンス数とバウンス率の計算 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>[Customer Journey Analyticsでのバウンス数とバウンス率の計算 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 80%
+source-wordcount: '628'
+ht-degree: 77%
 
 ---
 
@@ -94,6 +94,11 @@ Content Analyticsは、ページからの呼び出し数を減らすために情
    * 画面をロック
 * URL が変更され、関連する URL が変更される。
 * 記録され、送信準備が整ったアセットビュー数が 32 を超えている。
+
+>[!NOTE]
+>
+>追加のContent Analytics イベントは、セッションまたはページ内のイベント数に基づくバウンス率定義に最も影響を与える可能性が高くなります。
+>
 
 
 ## スキーマ
