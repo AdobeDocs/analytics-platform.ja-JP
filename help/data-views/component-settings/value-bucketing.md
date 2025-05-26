@@ -7,8 +7,8 @@ feature: Data Views
 role: Admin
 source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
