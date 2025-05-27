@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
+workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-形式を使用すると、特定の指標をレポートで使用する際の表示方法を決定できます。
+形式を使用すると、特定のコンポーネントがレポートで使用される際の表示方法を決定できます。
 
-## 指標の形式設定の指定
+## コンポーネントの形式設定の指定
 
-形式設定を調整することで、特定の指標の表示方法を決定できます。
+形式設定を調整することで、特定のコンポーネントの表示方法を決定できます。
 
 1. Customer Journey Analytics で、「[!UICONTROL **データビュー**]」タブを選択します。
 
@@ -44,12 +44,12 @@ ht-degree: 100%
 
    | 設定 | 説明 |
    | --- | --- |
-   | **[!UICONTROL 形式]** | 指標の書式を、10 進数、時間、パーセント、通貨の形式で指定できます。 |
-   | **[!UICONTROL 小数点以下の桁数]** | 整数スキーマのデータタイプには表示されません。指標で表示する小数点以下の桁数を指定できます。 |
+   | **[!UICONTROL 形式]** | コンポーネントの書式を、10 進数、時間、パーセント、通貨の形式で指定できます。 |
+   | **[!UICONTROL 小数点以下の桁数]** | 整数スキーマのデータタイプには表示されません。コンポーネントに表示する小数点以下の桁数を指定できます。 |
    | **[!UICONTROL 日付]** | レポートでディメンションとして使用する際に、日時のフィールドをどのように表示するかを決定できます。[詳細情報](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL 日時]** | レポートでディメンションとして使用する際に、日時のフィールドをどのように表示するかを決定できます。[詳細情報](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL 通貨]** | 指標の表示に使用する通貨を決定できます。 <p>様々な通貨で取引が発生するグローバルデータを分析する場合は、[通貨換算の使用](#use-currency-conversion)を参照してください。</p> |
-   | **[!UICONTROL 上昇傾向を次の形式で表示]** | この指標の上昇傾向を良い（緑）と見なすか、悪い（赤）と見なすかを指定できます。 |
+   | **[!UICONTROL 通貨]** | コンポーネントを表示する通貨を決定できます。 <p>様々な通貨で取引が発生するグローバルデータを分析する場合は、[通貨換算の使用](#use-currency-conversion)を参照してください。</p> |
+   | **[!UICONTROL 上昇傾向を次の形式で表示]** | このコンポーネントの上昇傾向を良い（緑）と見なすか、悪い（赤）と見なすかを指定できます。 |
    | **[!UICONTROL True 値]** と **[!UICONTROL False 値]** | ブールスキーマのデータタイプでのみ表示されます。`true` 値と `false` 値のディメンション項目ラベルをカスタマイズできます。 |
 
    {style="table-layout:auto"}
