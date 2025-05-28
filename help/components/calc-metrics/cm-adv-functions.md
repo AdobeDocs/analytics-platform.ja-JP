@@ -4,7 +4,7 @@ description: これらの関数にアクセスするには、関数ドロップ�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ca1aae1291119214f3b051f9b6df8ddcd58faa6c
 workflow-type: tm+mt
 source-wordcount: '5247'
 ht-degree: 99%
@@ -258,7 +258,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="functions-waskr-confidence-interval-lower"
+>id="functions-waskr-lower-individual-confidence-sequence"
 >title="信頼（下限）"
 >abstract="[Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476) の説明に従って、WASKR メソッドを使用して任意の時間で有効な信頼&#x200B;**下限**&#x200B;を計算します。"
 
@@ -282,7 +282,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="functions-waskr-confidence-interval-upper"
+>id="functions-waskr-upper-individual-confidence-sequence"
 >title="信頼（上限）"
 >abstract="[Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476) の説明に従って、WASKR メソッドを使用して任意の時間で有効な信頼&#x200B;**上限**&#x200B;を計算します。"
 
