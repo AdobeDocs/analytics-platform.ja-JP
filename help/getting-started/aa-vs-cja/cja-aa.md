@@ -42,7 +42,7 @@ ht-degree: 94%
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。<br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
-| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL  ラベルを表示できますが、こ ] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
+| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL &#x200B; ラベルを表示できますが、こ &#x200B;] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
 
 ## 完全にサポートされる Adobe Analytics 機能／コンポーネント {#full-support}
 
