@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 0ad3cd8ae88cc5fc5297a63067900b2f741778b1
+source-git-commit: f45e56b59b80552edc3b2662697e01dcc1b62ea5
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2486'
 ht-degree: 94%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 94%
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。<br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
-| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL &#x200B; ラベルを表示できますが、こ &#x200B;] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
+| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL  ラベルを表示できますが、こ ] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
 
 ## 完全にサポートされる Adobe Analytics 機能／コンポーネント {#full-support}
 
@@ -118,13 +118,12 @@ ht-degree: 94%
 
 | 機能 | メモ |
 | --- | --- |
-| **パネル** | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
+| **Workspace パネル** | 空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトが完全にサポートされます。セグメント比較と Analytics for Target（A4T）パネルはサポートされていません。 |
 
 ## サポートなし、予定済み {#planned}
 
 | 機能 | メモ |
 | --- | --- |
-| **貢献度分析** | サポートが予定されています。 |
 | **リアルタイムレポート** | サポートが予定されています。 |
 | **Segment IQ** | サポートが予定されています。 |
 | **トランザクション ID データソース** | サポートが予定されています。 |
@@ -134,6 +133,7 @@ ht-degree: 94%
 | 機能 | メモ |
 | --- | --- |
 | **Activity Map** | まだサポートの予定はありません。 |
+| **貢献度分析** | まだサポートの予定はありません。 |
 
 ## サポートされません {#never}
 
