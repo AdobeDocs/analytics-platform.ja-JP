@@ -5,10 +5,10 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c526531206887acf7c750c8759d4eec5dd24935f
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 95%
+source-wordcount: '329'
+ht-degree: 91%
 
 ---
 
@@ -48,5 +48,6 @@ ht-degree: 95%
 
 >[!MORELIKETHIS]
 >
->関連ブログ投稿について詳しくは、[Customer Journey Analytics での「値なし」の処理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339?profile.language=ja)を参照してください。
+>[Adobe Customer Journey Analyticsで「値なし」を処理するための完全なプレイブック ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598)。
+
 
