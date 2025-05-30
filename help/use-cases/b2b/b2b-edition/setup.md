@@ -4,11 +4,9 @@ description: B2B の一般的なユースケースに対応するようにCustom
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 13%
@@ -288,9 +286,9 @@ Customer Journey Analyticsでアカウントベースの接続を定義して、
    ![B2B 接続 – データセットを追加 ](assets/b2b-connection-add-datasets.png)
 
 1. 「**[!UICONTROL 次へ]**」を選択して、選択した各データセットの設定を指定します。
-1. イベントデータセットの場合は、**[!UICONTROL アカウント ID]**、**[!UICONTROL グローバルアカウント ID]**、**[!UICONTROL オポチュニティ ID]**、**[!UICONTROL 購入グループ ID]** および **[!UICONTROL ユーザー ID]** の ID に対応する適切な eVar を選択していることを確認してください。
+1. イベントデータセットの場合、必ず **[!UICONTROL アカウント ID]**、**[!UICONTROL グローバルアカウント ID]**、**[!UICONTROL オポチュニティ ID]**、**[!UICONTROL 購入グループ ID]** および **[!UICONTROL 人物 ID]** の ID に対応する適切なフィールドを選択してください。
 
-   ![B2B 接続 – イベントデータセット ](assets/b2b-connection-add-datasets-event-data.png) 追加。
+   ![B2B 接続 – イベントデータセット ](assets/b2b-connection-add-datasets-event-data.png) 追加
 
 1. 下にスクロールして、アカウントレコードデータセットを設定します。 **[!UICONTROL グローバルアカウント]** コンテナのアカウントに一致するように、正しい識別子（**[!UICONTROL Account_ID]**）を選択していることを確認してください。 正しい識別子（**[!UICONTROL Account_ID]**）を **[!UICONTROL グローバルアカウントフィールド]** として選択します。
 
