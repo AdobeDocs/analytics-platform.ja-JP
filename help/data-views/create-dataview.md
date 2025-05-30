@@ -183,45 +183,45 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="カスタムラベル"
 >abstract="アドビが提供するラベルに加えて、組織用に独自のカスタムラベルを定義することもできます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="契約ラベル"
 >abstract="契約（C）ラベルは、契約上の義務があるデータや組織のデータガバナンスポリシーに関連するデータの分類に使用されます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="ID ラベル"
 >abstract="ID （I）ラベルは、特定の人物を識別したり、その人物への連絡に使用したりできるデータの分類に使用されます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="機密ラベル"
 >abstract="機密（S）ラベルは、お客様およびお客様の組織が機密であると見なすデータの分類に使用されます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="パートナーエコシステム"
 >abstract="パートナーエコシステム（P）ラベルは、サードパーティパートナーと共有されるデータの分類に使用されます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="ポリシー"
 >abstract="データ使用ラベルがデータのコンプライアンスを効果的にサポートするためには、データ使用ポリシーを実装する必要があります。データ使用ポリシーは、Experience Platform 内のデータに対する実行が許可される、または制限される、マーケティングアクションの種類を記述するルールです。ポリシーフィルターは、有効なポリシーをデータビューに適用します。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="責任ある契約事項ラベル"
 >abstract="責任ある契約事項ラベルは、責任ある契約事項をサポートするために使用されます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 
 **[!UICONTROL 含まれるコンポーネント]** には、データビュー用に設定した **[!UICONTROL 指標]** および **[!UICONTROL ディメンション]** のリストが含まれています。
