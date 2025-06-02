@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dfc9ba843fbddc135c0f8160fb672adb36e9146f
-workflow-type: ht
+source-git-commit: 105b235c1a4791fd59cf65ae7f543a5fc08fc55d
+workflow-type: tm+mt
 source-wordcount: '3281'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -69,27 +69,27 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 各手順では、より詳細なプロセスの概要について説明します。各手順のリンクに従って関連するタスクを完了してから、このページに戻り、プロセスの次の手順に進みます。
 
-1. [XDM スキーマアーキテクチャを計画します](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
+1. [XDM スキーマアーキテクチャを計画します](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md){target="_blank"}。
 
-1. [Adobe Experience Platform で目的のカスタムスキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。
+1. [Adobe Experience Platform で目的のカスタムスキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md){target="_blank"}。
 
    スキーマを作成する際は、次のオプションを考慮してください。
 
-   * Customer Journey Analytics を RTCDP と統合する場合は、[Customer Journey Analytics で使用する XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)の説明に従って、スキーマで「**[!UICONTROL プロファイル]**」オプションを有効にする必要があります。 このオプションを有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータがリアルタイム顧客プロファイルと結合されます。
+   * Customer Journey Analytics を RTCDP と統合する場合は、[Customer Journey Analytics で使用する XDM スキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md){target="_blank"}の説明に従って、スキーマで「**[!UICONTROL プロファイル]**」オプションを有効にする必要があります。 このオプションを有効にすると、このスキーマに基づくデータセットにデータが取り込まれたときに、そのデータがリアルタイム顧客プロファイルと結合されます。
 
-   * ストリーミングメディアデータを含める場合は、[ストリーミングデータを取り込んで使用するスキーマを設定](/help/data-ingestion/streaming.md)する必要があります。
+   * ストリーミングメディアデータを含める場合は、[ストリーミングデータを取り込んで使用するスキーマを設定](/help/data-ingestion/streaming.md){target="_blank"}する必要があります。
 
-1. [Adobe Experience Platform でデータセットを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)。
+1. [Adobe Experience Platform でデータセットを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md){target="_blank"}。
 
 1. （オプション）Adobe Analytics で分類データを使用する場合は、Customer Journey Analytics のデータセットに分類データを追加できます。
 
-   これを行うには、[分類データを含む各ディメンションのルックアップデータセットを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
+   これを行うには、[分類データを含む各ディメンションのルックアップデータセットを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md){target="_blank"}。
 
-1. AppMeasurement または Analytics 拡張機能（タグ）を使用した Adobe Analytics 実装の場合は、[Adobe Experience Platform でデータストリームを作成します](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+1. AppMeasurement または Analytics 拡張機能（タグ）を使用した Adobe Analytics 実装の場合は、[Adobe Experience Platform でデータストリームを作成します](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md){target="_blank"}。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   Web SDK を使用した Adobe Analytics 実装の場合、データストリームは既に存在しています。詳しくは、[Platform にデータを送信する既存の Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)を参照してください。
+   Web SDK を使用した Adobe Analytics 実装の場合、データストリームは既に存在しています。詳しくは、[Platform にデータを送信する既存の Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md){target="_blank"}を参照してください。
 
-1. [Adobe Experience Platform をサービスとしてデータストリームに追加します](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)。
+1. [Adobe Experience Platform をサービスとしてデータストリームに追加します](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md){target="_blank"}。
 
 1. （オプション）Customer Journey Analytics を Adobe Journey Optimizer と統合する場合は、Adobe Journey Optimizer で使用する実装でパーソナライゼーションオブジェクトを使用します。
 
@@ -97,7 +97,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    +++手動による実装（JS ファイル）
 
-   1. [サイトに alloy.js を追加します](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22)。
+   1. [サイトに alloy.js を追加します](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22){target="_blank"}。
 
    1. XDM オブジェクトを入力してデータストリームに送信します。
 
@@ -105,13 +105,13 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    +++タグ
 
-   1. [タグプロパティを作成して、Adobe Experience Platform Web SDK 拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
+   1. [タグプロパティを作成して、Adobe Experience Platform Web SDK 拡張機能を追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md){target="_blank"}。
 
-   1. [タグプロパティに Adobe Experience Platform Web SDK 拡張機能を追加](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+   1. [Adobe Experience Platform Web SDK拡張機能をタグプロパティに追加します ](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md){target="_blank"}。
 
    1. [サイトにローダータグを実装します](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
 
-   1. [タグに XDM データ収集ロジックを追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
+   1. [タグに XDM データ収集ロジックを追加します](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}。
 
 +++
 
@@ -121,31 +121,31 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
 +++
 
-1. [Web SDK 実装がデータセットにデータを送信していることを検証します](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)。
+1. [Web SDK 実装がデータセットにデータを送信していることを検証します](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}。
 
-1. [Customer Journey Analytics で接続を作成します](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)。
+1. [Customer Journey Analytics で接続を作成します](/help/getting-started/cja-upgrade/cja-upgrade-connection.md){target="_blank"}。
 
 1. （オプション）Web データをコールセンターデータなどの他のチャネルのデータと結び付けます。
 
-   これを行うには、[コールセンターデータと web データの読み込み](/help/use-cases/cross-channel/call-center.md)の説明に従って、Customer Journey Analytics 接続に追加のデータセットを追加します。
+   これを行うには、[コールセンターデータと web データの読み込み](/help/use-cases/cross-channel/call-center.md){target="_blank"}の説明に従って、Customer Journey Analytics 接続に追加のデータセットを追加します。
 
-1. [Customer Journey Analytics でデータビューを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)。
+1. [Customer Journey Analytics でデータビューを作成します](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md){target="_blank"}。
 
-1. [Customer Journey Analytics でデータビューへのデータのフローを検証します](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
+1. [Customer Journey Analytics でデータビューへのデータのフローを検証します](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}。
 
-1. Adobe Analytics 環境では、[Analytics インベントリを使用](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/analytics-inventory)して、プロジェクトとコンポーネント、レポートスイート、ユーザーの数など、Adobe Analytics 環境の包括的な概要を確認します。
+1. Adobe Analytics 環境では、[Analytics インベントリを使用](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"}して、プロジェクトとコンポーネント、レポートスイート、ユーザーの数など、Adobe Analytics 環境の包括的な概要を確認します。
 
-1. [プロジェクトとコンポーネントを移行します](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)。
+1. [プロジェクトとコンポーネントを移行します](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration){target="_blank"}。
 
    <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
 
-1. （オプション）Adobe Analytics でマーケティングチャネルを使用する場合は、[Customer Journey Analytics でマーケティングチャネル派生フィールドを作成](/help/data-views/derived-fields/derived-fields.md#marketing-channels)できます。
+1. （オプション）Adobe Analytics でマーケティングチャネルを使用する場合は、[Customer Journey Analytics でマーケティングチャネル派生フィールドを作成](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}できます。
 
    派生フィールドは、Customer Journey Analytics のリアルタイムレポートの重要な側面です。派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。
 
    派生フィールドの 1 つの用途は、1 つ以上の条件（URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する派生マーケティングチャネルフィールドを定義することです。
 
-   派生フィールドの[マーケティングチャネル機能テンプレート](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を使用して、マーケティングチャネルの派生フィールドをすばやく作成します。
+   派生フィールドの[マーケティングチャネル機能テンプレート](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}を使用して、マーケティングチャネルの派生フィールドをすばやく作成します。
 
 1. 古い実装の Adobe Analytics のデータと新しい実装の Customer Journey Analytics のデータを比較し、違いとその理由を理解します。<!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
@@ -155,17 +155,17 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
    >
    >以前に Analytics ソースコネクタを作成していない場合は、次の手順に従います。
    >
-   >Customer Journey Analytics で Analytics ソースコネクタを既に使用している場合は、[Analytics ソースコネクタから Customer Journey Analytics の Web SDK への移行](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)の手順に従ってください。
+   >Customer Journey Analytics で Analytics ソースコネクタを既に使用している場合は、[Analytics ソースコネクタから Customer Journey Analytics の Web SDK への移行](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md){target="_blank"}の手順に従ってください。
 
-   1. [Analytics ソースコネクタ用に XDM スキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+   1. [Analytics ソースコネクタの XDM スキーマを作成します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md){target="_blank"}。
 
-   1. Analytics ソースコネクタがまだない場合は、[Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+   1. Analytics ソースコネクタがまだない場合は、[Analytics ソースコネクタを作成し、フィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md){target="_blank"}。
 
       または
 
-      Analytics ソースコネクタが既にある場合は、[ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+      Analytics ソースコネクタが既にある場合は、[ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md){target="_blank"}。
 
-   1. [Analytics ソースコネクタデータセットを接続に追加します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
+   1. [Analytics ソースコネクタデータセットを接続に追加します](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md){target="_blank"}。
 
 1. ユーザーオンボーディングを計画します。
 
@@ -173,15 +173,15 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    Customer Journey Analytics の Analysis Workspace の主な違いを理解できるよう、十分な時間（3～6 か月）をユーザーに与える必要があります。
 
-   Adobe Analytics と Customer Journey Analytics の主な違いについて詳しくは、[Adobe Analytics ユーザー向けユーザーガイド](/help/getting-started/aa-to-cja-user.md)を参照してください。
+   Adobe Analytics と Customer Journey Analytics の主な違いについて詳しくは、[Adobe Analytics ユーザー向けユーザーガイド](/help/getting-started/aa-to-cja-user.md){target="_blank"}を参照してください。
 
-1. [Customer Journey Analytics の機能サポート](/help/getting-started/aa-vs-cja/cja-aa.md)について学びます。Adobe Analytics のほとんどの機能は Customer Journey Analytics でサポートされており、多くの追加機能が Customer Journey Analytics で使用できます。
+1. [Customer Journey Analytics の機能サポート](/help/getting-started/aa-vs-cja/cja-aa.md){target="_blank"}について学びます。Adobe Analytics のほとんどの機能は Customer Journey Analytics でサポートされており、多くの追加機能が Customer Journey Analytics で使用できます。
 
 1. Customer Journey Analytics Web SDK の実装が完了し、収集するデータに問題がなければ、Adobe Analytics を無効にします。
 
    アドビでは、Customer Journey Analytics を実装した後、一定期間 Adobe Analytics 環境を実行したままにしておくことをお勧めします。
 
-   アップグレード中およびアップグレード後の Adobe Analytics の使用方法と、Adobe Analytics を無効にする推奨されるタイミングについて詳しくは、[Customer Journey Analytics へのアップグレード後に Adobe Analytics が必要な期間の評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)を参照してください。
+   アップグレード中およびアップグレード後の Adobe Analytics の使用方法と、Adobe Analytics を無効にする推奨されるタイミングについて詳しくは、[Customer Journey Analytics へのアップグレード後に Adobe Analytics が必要な期間の評価](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md){target="_blank"}を参照してください。
 
 ## 組織に合わせたアップグレード手順の動的な生成
 
