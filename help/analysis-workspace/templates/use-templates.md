@@ -132,15 +132,15 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
    * **[[!UICONTROL Web]** > **[!UICONTROL Engagement]](#engagement)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL  コンバージョン]](#web-conversion)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL &#x200B; コンバージョン]](#web-conversion)**
 
    * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL  獲得]](#web-acquisition)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL &#x200B; 獲得]](#web-acquisition)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL  モバイルアプリ]](#mobile-mobile-app)**
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL &#x200B; モバイルアプリ]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL モバイル ]** > **[!UICONTROL  モバイルデバイス情報]](#mobile-mobile-device-information)**
+   * **[[!UICONTROL モバイル &#x200B;]** > **[!UICONTROL &#x200B; モバイルデバイス情報]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Time Parting]](#time-parting)**
 
