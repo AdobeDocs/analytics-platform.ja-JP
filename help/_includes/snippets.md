@@ -1,8 +1,8 @@
 ---
-source-git-commit: c936ebbc191353d9993cc3c56892df3f29a1a1df
+source-git-commit: fe705aade87a2c5ea8d47db3dcd727d239eafc76
 workflow-type: tm+mt
-source-wordcount: '5163'
-ht-degree: 35%
+source-wordcount: '5193'
+ht-degree: 38%
 
 ---
 # スニペット
@@ -194,7 +194,7 @@ ht-degree: 35%
 | **プライマリ指標** | 計算指標を含む、あらゆる指標。 | Only Session or Person | 発生件数のみ（パスビュー） |
 | **セカンダリ指標** | ○<p>計算指標を含む、あらゆる指標。</p> | × | × |
 | **ノードまたはタッチポイントでのコンポーネントのサポート** | 指標、ディメンション項目、セグメントおよび日付範囲。 | 指標、ディメンション項目、セグメントおよび日付範囲。 | ディメンション項目のみ（開始および終了タッチポイントを除く） |
-| **セグメントの比較** | × | ○<p>同じレポートの異なる 2 つのセグメントを並べて比較する</p> | × |
+| **セグメントの比較** | × | ○<p>同じレポートの異なる 2 つのセグメントを並べて比較する。</p> | × |
 | **ドラッグ&amp;ドロップによるコンポーネントインタラクション** | ○ | ○ | × |
 | **Adobe Journey Optimizer ジャーニー** | はい </br>Journey Optimizerからジャーニーを開くと、より深い分析とカスタマイズが可能になります。 | × | × |
 
@@ -210,11 +210,11 @@ ht-degree: 35%
 
 >[!NOTE]
 > 
->以前のアップグレード手順をすべて完了した後にのみ、このページの手順に従ってください。推奨されるアップグレード手順に従うことも（ほとんどの組織で推奨）、Customer Journey Analytics アップグレードガイドを使用して動的に生成される手順に従うこともできます。 <ul><li>**推奨されるアップグレード手順** （ほとんどの組織で推奨）<p>理想的なCustomer Journey Analyticsの実装に導く一連の手順です。</p><p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド** （お客様の具体的なニーズに合わせたカスタム手順）<p>新しいアップグレードガイドは、組織と独自の状況に合わせたアップグレード手順を動的に生成するものです。</p><p>Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
+>以前のアップグレード手順をすべて完了した後にのみ、このページの手順に従ってください。推奨されるアップグレード手順に従うことも（ほとんどの組織で推奨）、Customer Journey Analytics アップグレードガイドを使用して動的に生成される手順に従うこともできます。 <ul><li>**推奨されるアップグレード手順** （ほとんどの組織で推奨）<p>理想的なCustomer Journey Analyticsの実装に導く一連の手順です。</p><p>詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド** （お客様の具体的なニーズに合わせたカスタム手順）<p>組織と一意の状況に合わせて調整されたアップグレード手順を動的に生成する新しいアップグレードガイドが使用できます。</p><p>Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。画面の指示に従います。</p></li></ul>
 
 ## アップグレードチェックリストの最終ステップ {#upgrade-final-step}
 
-1. 引き続き『Customer Journey Analytics アップグレードガイド』の [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または動的に生成されるアップグレード手順に従います。 Customer Journey Analyticsからガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左パネルで「**[!UICONTROL Customer Journey Analyticsにアップグレード]**」を選択します。 画面の指示に従います。
+1. 引き続き『Customer Journey Analytics アップグレードガイド』の [ 推奨されるアップグレード手順 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) または動的に生成されるアップグレード手順に従います。 Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。画面の指示に従います。
 
 
 ## ドラフト Content Analytics ドキュメント {#draft-aca}
@@ -245,14 +245,14 @@ ht-degree: 35%
 | 設定 | 説明 |
 |---|---|
 | **[!UICONTROL 新しいデータをインポート]** | 継続的な接続を確立する場合は、このオプションを有効にします。 継続的な接続を行うと、データセットに追加された新しいデータバッチが Workspace で自動的に使用できます。 |
-| **[!UICONTROL データセットのバックフィル]** | 既存のすべてのデータを確実にバックフィルするには、「**[!UICONTROL 既存のすべてのデータをバックフィル]**」を有効にします。<br/><br/>特定の期間の履歴データをバックフィルするには、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。 データセットのバックフィル期間を最大 10 個定義できます。<ol><li>開始データと終了データを入力するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を使用して日付を選択して期間を定義します。</li><li>「**[!UICONTROL キューのバックフィル]**」を選択してバックフィルをリストに追加するか、「**[!UICONTROL キャンセル]**」を選択してキャンセルします。</li></ol>各エントリについて、期間を編集するには ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) を選択し、エントリを削除するには ![削除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) を選択します。<br/><br/>バックフィルについて：<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。 履歴データの量は待ち時間に影響を与えます。</li><li>Analytics ソースコネクタは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。</li></ul> |
+| **[!UICONTROL データセットのバックフィル]** | 既存のすべてのデータを確実にバックフィルするには、「**[!UICONTROL 既存のすべてのデータをバックフィル]**」を有効にします。<br/><br/>特定の期間の履歴データをバックフィルするには、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。 データセットのバックフィル期間を最大 10 個定義できます。<ol><li>開始データと終了データを入力するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を使用して日付を選択して期間を定義します。</li><li>「**[!UICONTROL キューのバックフィル]**」を選択してバックフィルをリストに追加するか、「**[!UICONTROL キャンセル]**」を選択してキャンセルします。</li></ol>各エントリについて、期間を編集するには ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) を選択し、エントリを削除するには ![削除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) を選択します。<br/><br/>バックフィルについて：<ul><li>各データセットを個別にバックフィルできます。</li><li>接続内のデータセットに追加された新しいデータが優先されるので、この新しいデータの待ち時間が最も短くなります。</li><li>バックフィル（履歴）データのインポートには時間がかかります。 履歴データの量は待ち時間に影響を与えます。</li><li>Analytics ソースコネクタは、実稼動用サンドボックスに（サイズに関係なく）最大 13 か月分のデータを読み込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。</li><li>実稼動用サンドボックスの場合、13 か月以上のバックフィルデータの履歴を読み込むことができる追加の SKU のライセンスを取得している場合は、Adobeに連絡して、拡張されたバックフィルをリクエストします。</li></ul> |
 | **[!UICONTROL バッチステータス]** | 次に、使用可能なステータスインジケーターを示します。<ul><li>成功</li><li>X 個のバックフィルが処理中</li><li>オフ</li></ul> |
 | **[!UICONTROL データセット ID]** | この ID は自動的に生成されます。 |
-| **[!UICONTROL 説明]** | データセットの作成時にこのデータセットに付与される説明。 |
+| **[!UICONTROL 説明]** | データセットを作成した際に、このデータセットに付与された説明。 |
 | **[!UICONTROL レコード数]** | データセットのサイズ。 |
 | **[!UICONTROL スキーマ]** | Adobe Experience Platform で作成されたデータセットに基づくスキーマ。 |
 | **[!UICONTROL データセット]** | データセットの名前。 |
-| **[!UICONTROL プレビュー：*データセット名&#x200B;*]** | 最初の 10 行および最初の 10 列のデータセットをプレビューします。 |
+| **[!UICONTROL プレビュー：*データセット名&#x200B;*]** | 最初の 10 行と最初の 10 列のデータセットをプレビューします。 |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Remove]** | 接続全体を削除せずに [ データセットを削除 ](/help/connections/create-connection.md#delete-a-dataset) できます。 データセットを接続から削除すると、データの取り込みに伴うコストと、接続全体および関連するデータビューを再作成する煩雑なプロセスが削減されます。 |
 
 ## 標準寸法 {#standard-dimensions}
@@ -265,16 +265,16 @@ ht-degree: 35%
 | [!UICONTROL 日] | 特定のイベントが発生した日。 最初のディメンション項目は日付範囲の最初の日で、最後のディメンション項目は日付範囲の最後の日です。 |
 | [!UICONTROL 曜日] | 特定のイベントが発生した曜日。 最初のディメンション項目は日付範囲の週の最初の日で、最後のディメンション項目は日付範囲の週の最終日です。 |
 | [!UICONTROL 日付] | 特定のイベントが発生した月の日。 最初のディメンション項目は日付範囲の月の最初の日で、最後のディメンション項目は日付範囲の月の最後の日です。 |
-| イベント深度 | セッション内の各イベントインタラクションに連続した数値（1、2、3 など）を割り当てます。 このディメンションを使用すると、[ データビューに対して定義した境界のあるエクスペリエンスセッション ](/help/data-views/session-settings.md#session-settings) 内で、ユーザーインタラクションの順次フローで特定のイベントが発生する場所を、詳細にトラッキングおよび分析できます。 境界のあるセッション内で、イベントの進行を開始から終了まで追跡できます。 例えば、訪問者がホームページにアクセスし（イベント 1、セッション開始）、検索機能を使用し（イベント 2）、製品の詳細ページを表示し（イベント 3）、買い物かごに追加し（イベント 4）、チェックアウトに進み（イベント 5）、購入を完了します（イベント 6、セッション終了）。 セグメント定義で [!UICONTROL &#x200B; イベントの深度 &#x200B;] を使用し、インタラクションの深度に基づいてデータをセグメント化できるようになりました。 |
+| イベント深度 | セッション内の各イベントインタラクションに連続した数値（1、2、3 など）を割り当てます。 このディメンションを使用すると、[ データビューに対して定義した境界のあるエクスペリエンスセッション ](/help/data-views/session-settings.md#session-settings) 内で、ユーザーインタラクションの順次フローで特定のイベントが発生する場所を、詳細にトラッキングおよび分析できます。 境界のあるセッション内で、イベントの進行を開始から終了まで追跡できます。 例えば、訪問者がホームページにアクセスし（イベント 1、セッション開始）、検索機能を使用し（イベント 2）、製品の詳細ページを表示し（イベント 3）、買い物かごに追加し（イベント 4）、チェックアウトに進み（イベント 5）、購入を完了します（イベント 6、セッション終了）。 セグメント定義で [!UICONTROL  イベントの深度 ] を使用し、インタラクションの深度に基づいてデータをセグメント化できるようになりました。 |
 | [!UICONTROL 時間] | 特定のイベントが発生した時刻の時間（切り捨て）。 最初のディメンション項目は日付範囲の最初の時間で、最後のディメンション項目は日付範囲の最後の時間です。 |
 | [!UICONTROL 時刻] | 特定のイベントが発生した日の時間（切り捨て）。 最初のディメンション項目は日付範囲の日の最初の時間で、最後のディメンション項目は日付範囲の日の最後の時間です。 |
 | [!UICONTROL 分] | 特定のイベントが発生した時刻の分（切り捨て）。最初のディメンション項目は日付範囲の最初の分で、最後のディメンション項目は日付範囲の最後の分です。 |
-| [!UICONTROL &#x200B; 分（時間 &#x200B;] | 特定のイベントが発生した時刻の分（切り捨て）。 最初のディメンション項目は日付範囲の時間の最初の分で、最後のディメンション項目は日付範囲の時間の最後の分です。 |
+| [!UICONTROL  分（時間 ] | 特定のイベントが発生した時刻の分（切り捨て）。 最初のディメンション項目は日付範囲の時間の最初の分で、最後のディメンション項目は日付範囲の時間の最後の分です。 |
 | [!UICONTROL 月] | 特定のイベントが発生した月。最初のディメンション項目は日付範囲の最初の月で、最後のディメンション項目は日付範囲の最後の月です。 |
-| [!UICONTROL &#x200B; 月 &#x200B;] | 特定のイベントが発生した年の月。 最初のディメンション項目は日付範囲の年の最初の月で、最後のディメンション項目は日付範囲の年の最後の月です。 |
+| [!UICONTROL  月 ] | 特定のイベントが発生した年の月。 最初のディメンション項目は日付範囲の年の最初の月で、最後のディメンション項目は日付範囲の年の最後の月です。 |
 | [!UICONTROL 四半期] | 特定のイベントが発生した四半期。最初のディメンション項目は日付範囲の最初の四半期で、最後のディメンション項目は日付範囲の最後の四半期です。 |
 | [!UICONTROL 四半期] | 特定のイベントが発生した年の四半期。 最初のディメンション項目は日付範囲の年の最初の四半期で、最後のディメンション項目は日付範囲の年の最後の四半期です。 |
-| [!UICONTROL &#x200B; 秒 &#x200B;] | 特定のイベントが発生した時刻の秒（切り捨て）。最初のディメンション項目は日付範囲の最初の秒、最後のディメンション項目は日付範囲の最後の秒です。 |
+| [!UICONTROL  秒 ] | 特定のイベントが発生した時刻の秒（切り捨て）。最初のディメンション項目は日付範囲の最初の秒、最後のディメンション項目は日付範囲の最後の秒です。 |
 | [!UICONTROL 週] | 特定のイベントが発生した週。最初のディメンション項目は日付範囲の最初の週で、最後のディメンション項目は日付範囲の最後の週です。 |
 | [!UICONTROL 年間通算週] | 特定のイベントが発生した年の週。 最初のディメンション項目は日付範囲の年の最初の週で、最後のディメンション項目は日付範囲の年の最後の週です。 |
 | [!UICONTROL 年] | 特定のイベントが発生した年。最初のディメンション項目は日付範囲の最初の年で、最後のディメンション項目は日付範囲の最も新しい年です。 |
@@ -284,13 +284,13 @@ ht-degree: 35%
 
 | コンポーネント名 | メモ |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; アカウント &#x200B;] | 「[!UICONTROL &#x200B; 接続 &#x200B;]」で指定されたアカウント ID に基づいています。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; 購買グループ &#x200B;] | [!UICONTROL &#x200B; 接続 &#x200B;] で指定された購入グループ ID に基づく購入グループ。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL  アカウント ] | [!UICONTROL 接続]で指定されたアカウント ID に基づいています。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL  購買グループ ] | [!UICONTROL 接続]で指定された購買グループ ID に基づいている購買グループ。 |
 | [!UICONTROL イベント] | 「[!UICONTROL 接続]」内のすべてのイベントデータセットの行数。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; グローバルアカウント &#x200B;] | [!UICONTROL &#x200B; 接続 &#x200B;] で指定されたグローバルアカウント ID に基づいています。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B edition"}<br/>[!UICONTROL &#x200B; 商談 &#x200B;] | 商談。「接続 [!UICONTROL &#x200B; で指定した商談 ID に基づ &#x200B;] ています。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL  グローバルアカウント ] | [!UICONTROL 接続]で指定されたグローバルアカウント ID に基づいています。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL  商談 ] | [!UICONTROL 接続]で指定された商談 ID に基づいている商談。 |
 | [!UICONTROL 人物] | 「[!UICONTROL 接続]」で指定された個人 ID に基づいています。 |
-| [!UICONTROL セッション終了] | セッションの最後のイベントとなったイベントの数。[!UICONTROL &#x200B; セッション開始 &#x200B;] と同様、これをセグメント定義で使用して各セッションの最後のイベントまでセグメント化することもできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
-| [!UICONTROL セッション開始] | セッションの最初のイベントとなったイベントの数。セグメント定義で使用する場合（「[!UICONTROL &#x200B; セッション開始 &#x200B;] が存在する」など）、セグメントは各セッションの最初のイベントのみに分類されます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
+| [!UICONTROL セッション終了] | セッションの最後のイベントとなったイベントの数。[!UICONTROL  セッション開始 ] と同様、これをセグメント定義で使用して各セッションの最後のイベントまでセグメント化することもできます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション終了率</li></p> |
+| [!UICONTROL セッション開始] | セッションの最初のイベントとなったイベントの数。セグメント定義で使用する場合（「[!UICONTROL  セッション開始 ] が存在する」など）、セグメントは各セッションの最初のイベントのみに分類されます。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>セッション開始率</li></p> |
 | [!UICONTROL セッション] | データビューのセッション設定に基づいています。 |
 | [!UICONTROL 滞在時間 (秒)] | あるディメンションについて、2 つの異なる値の間の時間を合計します。<p>次の[計算指標](/help/components/calc-metrics/default-calcmetrics.md)を Workspace で使用可能にするには、このコンポーネントをデータビューに含める必要があります。 <ul><li>ユーザー別滞在時間</li><li>セッションごとの滞在時間</li></p> |
