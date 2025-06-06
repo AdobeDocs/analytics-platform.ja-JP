@@ -149,9 +149,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントに関する通知を受信
 
-プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
+プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
 
-さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
 
 ## 既存のコメントにバッジを配置する
 
