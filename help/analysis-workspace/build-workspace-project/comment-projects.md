@@ -4,9 +4,9 @@ title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 5831f1eea0d46000c15d0e2269717816785ee881
+source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ Analysis Workspaceのコメントを使用すると、Analysis Workspace プロ�
 
 Analysis Workspace プロジェクトで作成されたすべてのコメントは、右側のパネルのコメント領域に表示されます。
 
-1. プロジェクトをAnalysis Workspaceで開き、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコンを選択します。
+1. デフォルトでは、プロジェクトを初めて開いたときに、Analysis Workspaceのプロジェクトごとにコメント領域が展開されます。
+
+   プロジェクトの右側のパネルにあるコメント領域アイコンを選択して、コメント領域を開いたり閉じたりします。
 
    ![ コメント領域が閉じられました ](assets/comments-area-closed.png)
 
@@ -113,11 +115,11 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 @記号を使用してコメントに人物を含める場合は、次の点に注意してください。
 
-* 含めるユーザーには、Adobe Experience Cloudの通知設定に基づく通知が届きます。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
+* 含めるユーザーには、Adobe Experience Cloudの通知設定に基づく通知が届きます。
 
-  さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+  詳しくは、「[ コメントに関する通知を受信 ](#receive-notifications-about-comments)」を参照してください。
 
-* コメントには組織内の任意のユーザーを含めることができますが、これにより、プロジェクトへのアクセス権が自動的に付与されるわけではありません。 既にプロジェクトへのアクセス権を持つユーザーのみがプロジェクトにアクセスできます。
+* 組織内の任意のユーザーをコメントに含めることができますが、Customer Journey Analyticsへのアクセス権は自動的には付与されません。
 
 コメントに他のユーザーを含めるには：
 
@@ -144,6 +146,12 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 1. （オプション） @記号の後に名前を入力して、コメントについて他のユーザーに通知します。 @記号を使用して他のユーザーに通知する方法については、[ コメントに他のユーザーを含める ](#include-others-in-a-comment) を参照してください。
 
 1. 「**[!UICONTROL 送信]**」を選択します。
+
+## コメントに関する通知を受信
+
+プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
+
+さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
 
 ## 既存のコメントにバッジを配置する
 
