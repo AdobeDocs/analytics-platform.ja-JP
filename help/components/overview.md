@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 95%
@@ -23,7 +23,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 
 次のコンポーネントを管理できます。
 
-* [セグメント](filters/filters-overview.md)：強力かつ焦点を絞ったオーディエンスセグメントを作成、管理、共有し、レポートに適用します。セグメントを使用すると、特性やインタラクションに基づいて人物のサブセットを識別できます。
+* [セグメント](segments/seg-overview.md)：強力かつ焦点を絞ったオーディエンスセグメントを作成、管理、共有し、レポートに適用します。セグメントを使用すると、特性やインタラクションに基づいて人物のサブセットを識別できます。
 * [計算指標](calc-metrics/calc-metr-overview.md)：レポートで使用する新しいコンポーネントとして指標と数式を使用します。
 * [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
 * [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
@@ -72,7 +72,7 @@ Analysis Workspace の&#x200B;**[!UICONTROL コンポーネント]**&#x200B;メ�
    | ![共有](/help/assets/icons/ShareAlt.svg)、[!UICONTROL **共有**] | 組織内のユーザーとコンポーネントを共有します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
    | ![削除](/help/assets/icons/Delete.svg)、[!UICONTROL **削除**] | 不要になったコンポーネントを削除します。 このオプションは、セグメントや計算指標などのカスタムコンポーネントでのみ使用できます。 |
 
-カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、[セグメントの管理](/help/components/filters/manage-filters.md)を参照してください。
+カスタムコンポーネントは、それぞれのコンポーネントマネージャーを通じて管理することもできます。 例えば、[セグメントの管理](/help/components/segments/seg-manage.md)を参照してください。
 
 ## コンポーネントリストの管理
 

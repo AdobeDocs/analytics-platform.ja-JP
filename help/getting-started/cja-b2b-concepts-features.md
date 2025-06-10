@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 1a7b877d989764e737d7f35c05f515efe3e7a307
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Customer Journey Analytics B2B editionでは、アカウントコンテナが、
 
 Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使用できます。
 
-* **セグメント化**: [B2B セグメントコンテナ ](/help/components/filters/filters-overview.md#b2b-containers) を使用すると、ユーザー、セッション、イベントを超えて、コンテナ範囲を持つセグメントを作成できます。 例：イベント登録セグメントを持つアカウント、または購入グループとステージ 5 の商談セグメントを持つ米国アカウント。
+* **セグメント化**: [B2B セグメントコンテナ ](/help/components/segments/seg-overview.md#b2b-containers) を使用すると、ユーザー、セッション、イベントを超えて、コンテナ範囲を持つセグメントを作成できます。 例：イベント登録セグメントを持つアカウント、または購入グループとステージ 5 の商談セグメントを持つ米国アカウント。
 
   >[!NOTE]
   >
@@ -76,7 +76,7 @@ Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使�
 
 * **アトリビューション**：新しい B2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定 ](/help/data-views/component-settings/attribution.md)、[ 計算指標 ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、フリーフォームテーブルの [ 列 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) で使用できます。 アカウントのルックバックは 13 か月に拡張されました。
 
-* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、&lbrace; フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、&lbrace; コホートテーブル [&#128279;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
+* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、{ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、{ コホートテーブル [](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
 また、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#visualizations-preferences) でこれらのビジュアライゼーションのデフォルトのコンテナを設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションを B2B コンテナと共に使用すると、B2B の深い分析とインサイトをサポートできます。

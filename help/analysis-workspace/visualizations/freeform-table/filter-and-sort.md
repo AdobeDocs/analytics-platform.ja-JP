@@ -4,7 +4,7 @@ title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 99%
@@ -17,7 +17,7 @@ Analysis Workspace のフリーフォームテーブルは、インタラクテ�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 
@@ -96,7 +96,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[ セグメント化の概要 ](/help/components/filters/filters-overview.md) を参照してください。
+詳しくは、[ セグメント化の概要 ](/help/components/segments/seg-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 

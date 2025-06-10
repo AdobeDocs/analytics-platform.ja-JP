@@ -2,7 +2,7 @@
 title: Customer Journey Analyticsの製品分析
 description: Customer Journey Analytics内で製品分析を効果的に実行するために使用できる機能について説明します。
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Adobe Experience PlatformとCustomer Journey Analyticsの次の機能を使用�
 * Adobe Experience Platform
    * [ データセット&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)
    * [ データ準備&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
-   * [ データDistiller&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
+   * [ データDistiller&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [接続&#x200B;](/help/connections/overview.md)
    * [ 派生フィールド ](/help/data-views/data-views.md) を含む [ データビュー&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [セグメント&#x200B;](/help/components/filters/filters-overview.md)
+   * [セグメント&#x200B;](/help/components/segments/seg-overview.md)
    * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
    * [ガイド付き分析&#x200B;：タイムライン&#x200B;](/help/guided-analysis/types/timeline.md)
 
@@ -99,8 +99,8 @@ Experience Cloud内の次の機能を使用すると、インサイトに基づ�
 * [ オーディエンスを作成して公開 ](/help/components/audiences/publish.md)&#x200B;Customer Journey Analyticsからアクティブ化
 * Experience Cloud製品を通じてオーディエンスをアクティブ化：
    * AJOおよびAdobe Targetで [ 実験を実行 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) し、[ 実験パネルを使用してCustomer Journey Analyticsのバリエーションの影響を測定 ](/help/analysis-workspace/c-panels/experimentation.md)
-   * AJOのユーザーに [ アプリ内エンゲージメントの配信 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
-* Adobe Real-time CDP を使用した、外部宛先への [ オーディエンスのアクティブ化 ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
+   * AJOのユーザーに [ アプリ内エンゲージメントの配信 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
+* Adobe Real-time CDP を使用した、外部宛先への [ オーディエンスのアクティブ化 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
 
 ## 組織にインサイトを共有&#x200B;
 

@@ -4,7 +4,7 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -77,7 +77,7 @@ ht-degree: 97%
 
 ## データビュー
 
-各パネルは、パネルの右上にあるドロップダウンメニューの ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**&#x200B;で識別される [ データビュー ](/help/data-views/data-views.md) に関連付けられています。
+各パネルは、パネルの右上にあるドロップダウンメニューの [ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**で識別される ![ データビュー ](/help/data-views/data-views.md) に関連付けられています。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -144,10 +144,10 @@ ht-degree: 97%
 
 #### クイックセグメント
 
-セグメント以外のコンポーネントをドロップゾーンに直接ドラッグしてクイックセグメントを作成することもできるので、[セグメントビルダー](/help/components/filters/filter-builder.md)への移行にかかる時間と手間を省くことができます。この方法で作成されたセグメントは、イベントレベルのセグメントとして自動的に定義されます。この定義は、セグメント名の横にある「![編集](/help/assets/icons/Edit.svg)」を選択すると、すばやく変更できます。
+セグメント以外のコンポーネントをドロップゾーンに直接ドラッグしてクイックセグメントを作成することもできるので、[セグメントビルダー](/help/components/segments/seg-builder.md)への移行にかかる時間と手間を省くことができます。この方法で作成されたセグメントは、イベントレベルのセグメントとして自動的に定義されます。この定義は、セグメント名の横にある「![編集](/help/assets/icons/Edit.svg)」を選択すると、すばやく変更できます。
 
 
-詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
+詳しくは、[クイックセグメント](/help/components/segments/seg-quick.md)を参照してください。
 
 ![公開されてドロップゾーンにドロップされるアドホックセグメント](assets/adhoc-segment-filter.png)
 
@@ -155,7 +155,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ドロップダウンセグメント ](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ドロップダウンセグメント ](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 

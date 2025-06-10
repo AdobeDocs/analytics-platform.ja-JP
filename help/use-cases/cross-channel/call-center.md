@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -69,7 +69,7 @@ Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-conne
 
 このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[ セグメントの作成 ](/help/components/filters/create-filters.md) を参照してください。
+1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[ セグメントの作成 ](/help/components/segments/seg-create.md) を参照してください。
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。

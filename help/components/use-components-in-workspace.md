@@ -4,7 +4,7 @@ title: Analysis Workspace でのコンポーネントの使用
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -91,7 +91,7 @@ Analysis Workspaceでプロジェクトに指標を追加するには：
 
 ### プロジェクトへのセグメントの追加
 
-[ セグメント ](/help/components/filters/filters-overview.md) を使用すると、特性や特定のインタラクションに基づいて、人物、セッションまたはイベントのサブセットを識別できます。
+[ セグメント ](/help/components/segments/seg-overview.md) を使用すると、特性や特定のインタラクションに基づいて、人物、セッションまたはイベントのサブセットを識別できます。
 
 Analysis Workspaceでは、次のいずれかの方法でセグメントを使用できます。
 
@@ -103,7 +103,7 @@ Analysis Workspaceでは、次のいずれかの方法でセグメントを使�
 フリーフォームテーブルの列にセグメントを追加すると、そのセグメントはテーブルの列内のすべてのコンテンツに適用されます。 また、フォールアウトビジュアライゼーションの一部としてセグメントを追加することもできます。
 
 * コンポーネントでのセグメントの使用
-[ 計算指標 ](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[ 注釈 ](/help/components/annotations/create-annotations.md#annotation-builder) または [ セグメント ](/help/components/filters/filter-builder.md) などのコンポーネントを定義する場合、セグメントを定義の一部として使用できます。
+[ 計算指標 ](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[ 注釈 ](/help/components/annotations/create-annotations.md#annotation-builder) または [ セグメント ](/help/components/segments/seg-builder.md) などのコンポーネントを定義する場合、セグメントを定義の一部として使用できます。
 
 
 ### プロジェクトへの日付範囲の追加
@@ -132,5 +132,5 @@ Analysis Workspaceでの日付範囲の使用方法と管理方法について�
 
 アクセス制御に基づいて、次の操作を実行できます。
 
-* コンポーネントの ![ ブックマーク ](/help/assets/icons/Bookmark.svg) [!UICONTROL &#x200B; データディクショナリ &#x200B;] 定義にアクセスします。
+* コンポーネントの ![ ブックマーク ](/help/assets/icons/Bookmark.svg)[!UICONTROL  データディクショナリ ] 定義にアクセスします。
 * コンポーネントが定義されている ![ 編集 ](/help/assets/icons/Edit.svg) コンポーネントビルダーまたはデータビューにアクセスします。

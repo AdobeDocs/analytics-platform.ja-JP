@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 99%
@@ -19,7 +19,7 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/35774/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Analysis Workspace の主な機能は、ボタンパネルから使用できま�
 | ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md)を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。 |
 | ![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL ガイド付き分析]** | [ガイド付き分析](../guided-analysis/overview.md)では、ガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。分析を作成して Workspace プロジェクトに含めたり、以前に保存した既存の分析を含めたりできます。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL ビジュアライゼーション]** | 棒グラフや折れ線グラフなどの[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して、データを視覚的に表示できます。左端のパネルで、中央の&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。 |
-| ![キュレート](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [コンポーネント](/help/components/overview.md)には、次の要素が含まれます。<ul><li>![ディメンション](/help/assets/icons/Dimensions.svg) [ディメンション](/help/components/dimensions/overview.md)</li><li>![イベント](/help/assets/icons/Event.svg) [指標](/help/components/apply-create-metrics.md)</li><li>![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメ [ ト ](/help/components/filters/filters-overview.md)</li><li>![カレンダー](/help/assets/icons/Calendar.svg) [日付範囲](/help/components/date-ranges/overview.md)</li></ul> |
+| ![キュレート](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [コンポーネント](/help/components/overview.md)には、次の要素が含まれます。<ul><li>![ディメンション](/help/assets/icons/Dimensions.svg)[ディメンション](/help/components/dimensions/overview.md)</li><li>![イベント](/help/assets/icons/Event.svg)[指標](/help/components/apply-create-metrics.md)</li><li>![ セグメント化 ](/help/assets/icons/Segmentation.svg) セグメ [ ト ](/help/components/segments/seg-overview.md)</li><li>![カレンダー](/help/assets/icons/Calendar.svg)[日付範囲](/help/components/date-ranges/overview.md)</li></ul> |
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL 目次]** | 目次は、プロジェクトに含まれているすべてのパネルとビジュアライゼーションを折りたたみ可能なリストに整理されているので、特定のパネルやビジュアライゼーションにすばやくアクセスできます。 |
 | ![ブックマーク](/help/assets/icons/Bookmark.svg) | **データ辞書** | [データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)は、ユーザーと管理者の両方にとって、Analytics 環境のコンポーネントを追跡したり、理解を深めたりするのに役立ちます。 |
 
@@ -58,7 +58,7 @@ Workspace メニューとショートカットまたはホットキーを使用�
 
 キーボードでは、次の記号が使用される場合があります。
 
-- **[!UICONTROL *Shift キー&#x200B;*]**&#x200B;の代わりに&#x200B;**⇧**。
+- **[!UICONTROL *Shift キー&#x200B;*]**の代わりに**⇧**。
 - **[!UICONTROL *cmd *]**（コマンド）の&#x200B;**⌘**。
 - **[!UICONTROL *ctrl *]**（コントロール）の&#x200B;**⌃**。
 - **[!UICONTROL *オプト&#x200B;*]**（オプション）の&#x200B;**⌥**。
@@ -106,7 +106,7 @@ Workspace メニューとショートカットまたはホットキーを使用�
 
 | **[!UICONTROL コンポーネント]** | ショートカット Mac | ショートカット Windows | 説明 |
 |---|---|---|---|
-| **[!UICONTROL セグメントを作成…]** | **[!UICONTROL *Shift + Cmd + E キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + E キー&#x200B;*]** | 新しい[セグメント](/help/components/filters/create-filters.md)を作成します。 |
+| **[!UICONTROL セグメントを作成…]** | **[!UICONTROL *Shift + Cmd + E キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + E キー&#x200B;*]** | 新しい[セグメント](/help/components/segments/seg-create.md)を作成します。 |
 | **[!UICONTROL 指標を作成…]** | **[!UICONTROL *Shift + Cmd + C キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + C キー&#x200B;*]** | 新しい[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成します。 |
 | **[!UICONTROL 日付範囲を作成...]** | **[!UICONTROL *Shift + Cmd + D キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + D キー&#x200B;*]** | 新しい[日付範囲](/help/components/date-ranges/overview.md)を作成します。 |
 | **[!UICONTROL 注釈を作成…]** | **[!UICONTROL *Shift + Cmd + O キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + O キー&#x200B;*]** | 新しい[注釈](/help/components/annotations/overview.md)を作成します。 |

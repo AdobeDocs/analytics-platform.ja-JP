@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
@@ -34,7 +34,7 @@ Customer Journey Analyticsは、レポートが実行されたときに処理を
 
 高いカーディナリティのディメンションに対応する最善の方法は、レポートが処理するディメンション項目の数を制限することです。 すべてのレポートは要求時に処理されるので、すぐに結果が得られるようにレポートパラメーターを調整できます。 Adobeでは、基数の高いディメンションに対して、次のいずれかの最適化をお勧めします。
 
-* [ セグメント ](/help/components/filters/create-filters.md) を使用します。 セグメントは、各サーバーがデータのサブセットを処理する際に適用されます。
+* [ セグメント ](/help/components/segments/seg-create.md) を使用します。 セグメントは、各サーバーがデータのサブセットを処理する際に適用されます。
 * 検索を使用します。 検索語句から除外されたDimension項目はレポート結果から削除され、目的のディメンション項目が表示される可能性が高くなります。
 * ルックアップデータセットディメンションを使用します。 ルックアップデータセットディメンションは、イベントデータセットのディメンション項目を組み合わせて、返される一意の値の数を制限します。
 * データビューマネージャーの [ 含める/除外する ](/help/data-views/component-settings/include-exclude-values.md) コンポーネント設定を使用します。

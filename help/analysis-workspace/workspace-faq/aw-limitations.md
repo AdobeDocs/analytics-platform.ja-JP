@@ -4,7 +4,7 @@ title: Analysis Workspace の既知の制限
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 93%
@@ -31,7 +31,7 @@ ht-degree: 93%
 ## セグメント
 
 * 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL イベント]、[!UICONTROL ユーザー]など）。
-* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックセグメントは、クイックセグメントのタイプです。公開されない限り、これらはWorkspaceの左パネルやセグメントマネージャーに表示されません。 詳しくは、[クイックセグメント](/help/components/filters/quick-filters.md)を参照してください。
+* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックセグメントは、クイックセグメントのタイプです。公開されない限り、これらはWorkspaceの左パネルやセグメントマネージャーに表示されません。 詳しくは、[クイックセグメント](/help/components/segments/seg-quick.md)を参照してください。
 
 ## 計算指標
 

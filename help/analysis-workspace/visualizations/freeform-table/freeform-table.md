@@ -4,8 +4,8 @@ description: フリーフォームテーブルは、Workspace のデータ分析
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 * プロジェクトの[表示密度](/help/analysis-workspace/build-workspace-project/view-density.md)を調整すると、1 つの画面に表示する行を増やすことができます。
 * 各ディメンション行は、ページネーションの前に最大 400 行を表示できます。最初の列ヘッダーの&#x200B;**[!UICONTROL 行]**&#x200B;の横にある数字を選択すると、ページにさらに多くの行が表示されます。最初の列ヘッダーの ![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用して別のページに移動します。
 * 追加のコンポーネントごとに行を分類できます。複数の行を一度に分類するには、複数の行を選択し、次のコンポーネントを選択した行の上にドラッグします。[分類](/help/components/dimensions/t-breakdown-fa.md)について説明します。
-* 行を[セグメント化](/help/components/filters/filters-overview.md)して、表示する項目数を減らすことができます。[行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
+* 行を[セグメント化](/help/components/segments/seg-overview.md)して、表示する項目数を減らすことができます。[行設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)で追加の設定を使用できます。
 
 ### 列
 
@@ -113,6 +113,6 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

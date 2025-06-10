@@ -3,16 +3,16 @@ description: 計算指標マネージャーを使用すると、共有、フィ�
 title: 計算指標マネージャー
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 30%
+source-wordcount: '897'
+ht-degree: 29%
 
 ---
 
 # 計算指標の管理
 
-一元化された [!UICONTROL &#x200B; 計算指標 &#x200B;] 管理インターフェイスから、計算指標の共有、フィルタリング、タグ付け、承認、名前変更、コピー、削除、書き出し、計算指標をお気に入りとしてマークできます。 計算指標を管理するには：
+一元化された [!UICONTROL  計算指標 ] 管理インターフェイスから、計算指標の共有、フィルタリング、タグ付け、承認、名前変更、コピー、削除、書き出し、計算指標をお気に入りとしてマークできます。 計算指標を管理するには：
 
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、次に **[!UICONTROL 計算指標]** を選択します。
@@ -27,13 +27,13 @@ ht-degree: 30%
 
 ### フィルターリスト
 
-フィルターリストには➊、所有している計算指標または共有されているすべての計算指標が表示されます。 リストには、次の列があります。
+フィルターリストには ➊ 所有または共有しているすべての計算指標が表示されます。 リストには、次の列があります。
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | 列 | 説明 |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標である ![Star](/help/assets/icons/Star.svg) を優先するか、または ![StarOutline](/help/assets/icons/StarOutline.svg) を優先しないかを選択します。 [ 計算指標をお気に入りとしてマーク ](/help/components/filters/filters-favorite.md) を参照してください。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標である ![Star](/help/assets/icons/Star.svg) を優先するか、または ![StarOutline](/help/assets/icons/StarOutline.svg) を優先しないかを選択します。 [ 計算指標をお気に入りとしてマーク ](/help/components/segments/seg-favorite.md) を参照してください。 |
 | **[!UICONTROL タイトルと説明]** | 計算指標を編集するには、タイトルリンクを選択して [ 計算指標ビルダー ](cm-build-metrics.md) を開きます。 共有計算指標は、「![ 共有 ](/help/assets/icons/ShareAlt.svg) と表示されます。 |
 | **[!UICONTROL データビュー]** | この計算指標が適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | 計算指標の所有者。 ユーザーには、自分が所有している注釈または自分と共有されている注釈のみが表示されます。 |
@@ -49,7 +49,7 @@ ht-degree: 30%
 
 ### アクションバー
 
-アクションバー ➋ を使用して、フィルターへのアクションを実行できます。アクションバーには、次のアクションが含まれます。
+アクションバーの ➋ を使用して、フィルターに対してアクションを実行できます。 アクションバーには、次のアクションが含まれます。
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
@@ -65,11 +65,11 @@ ht-degree: 30%
 
 ### アクティブなフィルターバー
 
-フィルターバー➌には、フィルターパネルから計算指標のリスト（ある場合）に適用されたアクティブなフィルターが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターを指定した場合は、「**[!UICONTROL すべて削除]**」を使用すると、すべてのフィルターを削除できます。
+フィルターバー ➌ は、フィルターパネルから計算指標のリスト（ある場合）に適用されたアクティブなフィルターが表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターを指定した場合は、「**[!UICONTROL すべて削除]**」を使用すると、すべてのフィルターを削除できます。
 
 ### フィルターパネル
 
-左のパネル➍インの ![ フィルター ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用して、計算指標のリストをフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターに従う計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
+左のパネル ➍ ックスの ![ フィルター ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用して、計算指標のリストをフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターに従う計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
 
 詳しくは、[ 計算指標のリストのフィルタリング ](cm-filter.md) を参照してください。
 

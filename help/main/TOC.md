@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 94%
@@ -325,20 +325,20 @@ ht-degree: 94%
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
       + [基数の高いディメンション](../components/dimensions/high-cardinality.md)
    + [指標](../components/apply-create-metrics.md)
-   + セグメント {#cja-filters}
-      + [概要](../components/filters/filters-overview.md)
-      + [セグメントの作成](../components/filters/create-filters.md)
-      + [セグメントの構築](../components/filters/filter-builder.md)
-      + [クイックセグメント](../components/filters/quick-filters.md)
-      + [順次セグメント](../components/filters/seg-sequential-build.md)
-      + [セグメントの共有](../components/filters/filters-share.md)
-      + [セグメントのタグ設定](../components/filters/filters-tag.md)
-      + [セグメントのリストのフィルタリング](../components/filters/filters-filter.md)
-      + [セグメントのお気に入りへの登録](../components/filters/filters-favorite.md)
-      + [セグメントの承認](../components/filters/filters-approve.md)
-      + [セグメントのコピー](../components/filters/filters-copy.md)
-      + [セグメントの管理](../components/filters/manage-filters.md)
-      + [演算子](../components/filters/operators.md)
+   + セグメント {#segments}
+      + [概要](/help/components/segments/seg-overview.md)
+      + [セグメントの作成](/help/components/segments/seg-create.md)
+      + [セグメントの構築](/help/components/segments/seg-builder.md)
+      + [クイックセグメント](/help/components/segments/seg-quick.md)
+      + [順次セグメント](/help/components/segments/seg-sequential-build.md)
+      + [セグメントの共有](/help/components/segments/seg-share.md)
+      + [セグメントのタグ設定](/help/components/segments/seg-tag.md)
+      + [セグメントのリストのフィルタリング](/help/components/segments/seg-filter.md)
+      + [セグメントのお気に入りへの登録](/help/components/segments/seg-favorite.md)
+      + [セグメントの承認](/help/components/segments/seg-approve.md)
+      + [セグメントのコピー](/help/components/segments/seg-copy.md)
+      + [セグメントの管理](/help/components/segments/seg-manage.md)
+      + [演算子](/help/components/segments/seg-operators.md)
    + 計算指標 {#cja-calcmetrics}
       + [概要](../components/calc-metrics/calc-metr-overview.md)
       + 計算指標のワークフロー {#cm-workflow}
