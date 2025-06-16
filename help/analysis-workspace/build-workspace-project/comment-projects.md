@@ -4,9 +4,9 @@ title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
+source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -51,15 +51,15 @@ Analysis Workspace プロジェクトで作成されたすべてのコメント�
 
 ### プロジェクト内のコメントバッジの表示
 
-[ プロジェクトの特定の領域で ](#comment-on-a-specific-area-of-the-project) 行われたコメントには、コメントが関連するプロジェクトの領域に **コメントバッジ** ![ コメントバッジ ](assets/comment-indicator.png) が表示されます。 バッジを選択してコメントを表示します。 バッジを選択したら、コメント自体を選択して、右側のパネルのコメント領域でコメントをハイライト表示できます。
+[ プロジェクトの特定の領域で ](#comment-on-a-specific-area-of-the-project) 行われたコメントには、コメントが関連するプロジェクトの領域に **コメントバッジ** ![ コメントバッジ ](assets/comment-indicator.svg) が表示されます。 バッジを選択してコメントを表示します。 バッジを選択したら、コメント自体を選択して、右側のパネルのコメント領域でコメントをハイライト表示できます。
 
-数値は、プロジェクトの各バッジに表示され、作成順に並べられます。 プロジェクトの同じエリアに複数のコメントが配置されている場合、バッジに 3 つのドットが表示されます ![ コメントバッジが複数 ](assets/comment-indicator-multiple.png)。 3 ドットバッジを選択すると、その領域のすべてのコメントが表示されます。
+数値は、プロジェクトの各バッジに表示され、作成順に並べられます。 プロジェクトの同じエリアに複数のコメントが配置されている場合、バッジに 3 つのドットが表示されます ![ コメントバッジが複数 ](assets/comment-indicator-multiple.svg)。 3 ドットバッジを選択すると、その領域のすべてのコメントが表示されます。
 
 <!-- Insert screeshot-->
 
 プロジェクトのすべてのコメントバッジを非表示にするには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
 1. コメントエリアの下部で、「**[!UICONTROL 配置されたバッジを非表示にする]** オプションを有効にします。
 
@@ -97,7 +97,7 @@ Analysis Workspace プロジェクトで作成されたすべてのコメント�
 
 Analysis Workspaceでプロジェクトにコメントを追加するには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。<!-- add screen shot -->
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。<!-- add screen shot -->
 
 1. 「**[!UICONTROL 新しいコメント]**」フィールドにコメントを指定します。
 
@@ -131,7 +131,7 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントに返信する
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
 1. 返信するコメントの横にある「**[!UICONTROL 返信]**」を選択します。
 
@@ -149,17 +149,17 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントに関する通知を受信
 
-プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.png) きます。
+プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.svg) きます。
 
-さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
 
 ## 既存のコメントにバッジを配置する
 
 右側のパネルのコメント領域にコメントがあるが、プロジェクトにまだバッジがない場合、そのバッジを追加できます。
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
-1. バッジを配置するコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL バッジを配置]** を選択します。
+1. バッジを配置するコメントの横にある詳細アイコン ![ 詳細アイコン ](/help/assets/icons/MoreSmallList.svg) を選択してから、「バッジを配置 **[!UICONTROL を選択します]**。
 
 1. 既存のコメントのバッジを配置するプロジェクトの領域を選択します。
 
@@ -191,9 +191,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 コメントへのリンクをコピーするには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
-1. リンクをコピーするコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL リンクをコピー]**」を選択します。
+1. リンクをコピーするコメントの横にある詳細アイコン ![ 詳細アイコン ](/help/assets/icons/MoreSmallList.svg) を選択してから、「**[!UICONTROL リンクをコピー]** を選択します。
 
    リンクがシステムクリップボードにコピーされます。 メールやその他のタイプのメッセージにリンクを貼り付けることができます。
 
@@ -203,15 +203,15 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 コメントの本文をコピーするには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
-1. コピーするテキストを含んだコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL 本文をコピー]**」を選択します。
+1. コピーするテキストを含んだコメントの横にある詳細アイコン ![ 詳細アイコン ](/help/assets/icons/MoreSmallList.svg) を選択してから、「**[!UICONTROL 本文をコピー]** を選択します。
 
    コメントの本文がシステムのクリップボードにコピーされます。
 
 ## コメントに高評価を付ける
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
 1. 推奨するコメントの下の **[!UICONTROL いいね]** を選択します。
 
@@ -223,9 +223,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 コメントを削除するには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
-1. 削除するコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択し、「**[!UICONTROL 削除]**」を選択します。
+1. 削除するコメントの横にある「その他 ![ アイコン ](/help/assets/icons/MoreSmallList.svg) を選択してから、「**[!UICONTROL 削除]** を選択します。
 
 1. もう一度 **[!UICONTROL 削除]** を選択して、削除を確認します。
 
@@ -235,9 +235,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 コメントを解決するには：
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメントエリアのアイコン ](assets/comments-area-icon.png) コメント領域のアイコン）を選択します。
+1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
 
-1. 解決するコメントの横にある詳細アイコン ![comment-more-icon](assets/comment-more-icon.png) を選択してから、「**[!UICONTROL 解決]**」を選択します。
+1. 解決するコメントの横にある「その他 ![ アイコン ](/help/assets/icons/MoreSmallList.svg) を選択したあと、「**[!UICONTROL 解決]**」を選択します。
 
 1. もう一度 **[!UICONTROL 解決]** を選択して確認します。
 
