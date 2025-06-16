@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
+source-git-commit: 029a7ebb10ac9daf4c4b121efa85042d6da22316
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1980'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 | 機能 | 範囲内 | 範囲外 |
 | --- | --- | --- |
-| **ビジュアライゼーションのタイプ** | <ul><li>行</li><li>複数行</li><li>フリーフォームテーブル</li><li>棒グラフ</li><li>ドーナツ</li><li>概要番号</li></ul> | <ul><li>フロー</li><li>フォールアウト</li><li>コホートテーブル</li><li>面グラフ、積み重ね面グラフ</li><li>積み重ね棒グラフ</li><li>ブレット</li><li>コンボ</li><li>ヒストグラム</li><li>横棒グラフ、積み重ね横棒グラフ</li><li>主要指標の概要</li><li>散布図</li><li>変更の概要</li><li>テキスト</li><li>ツリーマップ</li><li>ベン図</li></ul> |
+| **ビジュアライゼーションのタイプ** | <ul><li>行</li><li>複数行</li><li>フリーフォームテーブル</li><li>棒グラフ</li><li>ドーナツ</li><li>概要番号</li></ul> | <ul><li>フロー</li><li>フォールアウト</li><li>コホートテーブル</li><li>面グラフ、積み重ね面グラフ</li><li>積み重ね棒グラフ</li><li>ブレット</li><li>コンボ</li><li>ヒストグラム</li><li>横棒グラフ、積み重ね横棒グラフ</li><li>主要指標の概要</li><li>散布図</li><li>変更の概要</li><li>テキスト</li><li>ツリーマップ</li><li>ベン図</li><li>ガイド付き分析：アクティブな増加、コンバージョンのトレンド、エンゲージメント、初回使用の影響、頻度、ファネル、純増加、リリースの影響、リテンション、タイムライン、トレンド</li></ul> |
 | **Workspaceのアクションとエージェントの機能** | <ul><li>ビジュアライゼーションの作成と更新<p>フリーフォームテーブルおよび関連するビジュアライゼーション（線、棒グラフ、ドーナツなど）を生成します。<p>例：*2 月から 5 月の SKU での利益は何ですか？*</p></li><li>フォローアップの質問をする<p>以前のプロンプトからコンテキスト内のプロンプトに応答します。 例：</p> <ul><li>プロンプト 1:*3 月からのトレンドイベント*</li><li>プロンプト 2:*代わりに 3 月から 4 月のデータを表示する*</li></ul> </li><li>範囲外のプロンプト検出<p>*このプロジェクトを書き出す* などの範囲外のプロンプトを送信すると、Data Insights Agentは応答として、質問が範囲外であることを通知します。</p></li></ul> | <ul><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>データ表示の管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li><li>インラインの概要または応答<p>Data Insights Agentが、ユーザーからのプロンプトに対する概要の回答でチャットパネルのインラインで応答できません。 範囲外プロンプトの例としては、*前回のプロンプトのインサイトの概要を入力* や *折れ線グラフのビジュアライゼーションのハイライトをまとめる* などがあります。</p></li></ul> |
 | **質問の明確化** | Data Insights Agentが回答するのに十分なコンテキストがない、または一般的すぎる質問をした場合、Data Insights Agentは、明確な質問または推奨されるオプションを使用して回答します。 <p>以下の明確な質問は、コンポーネント関連の質問の例です。</p><ul><li>指標：*具体的に「売上高」指標はどれですか？*</li><li>Dimension:*注目したい「地域」は、以下のうちどれですか？*</li><li>セグメント：*適用した「アカウント」セグメント*</li><li>日付範囲：*「先月」とは、過去 1 か月を意味していますか？過去 30 日を意味していますか？*</li></ul><p>次の明確な質問は、ディメンション項目に関する質問の例です。</p> <ul><li>「店名」って、どういう意味？ （例えば、Store #5274、Store #2949 など）。</li></ul> | 質問を明確にするのは、コンポーネントとディメンション項目に限られます。 Data Insights Agentでは、データビュー、ビジュアライゼーション、データの精度、比較、範囲などを明確にすることはできません。 質問を明確にできない場合、エージェントは、要求する可能性が最も高い質問にデフォルトで対応します。 予期しないビジュアライゼーションまたはデータの精度が返された場合は、フォローアップの質問をしたり、ビジュアライゼーションとデータを調整したりできます。 |
 | **データの検証可能性と正確性** | データの検証可能性と正確性は、生成されたフリーフォームテーブルとデータビジュアライゼーションを表示することで確認できます。 <p>例えば、Data Insights Agentに *先月の注文のトレンド* を依頼すると、新しく生成されたパネル、データビジュアライゼーションおよびフリーフォームテーブルで正しい指標（「注文」）と日付範囲（「先月」）が選択されたことを確認できます。 | Data Insights Agentは、追加されたコンポーネントやビジュアライゼーションをユーザーに通知しても応答しません。</p> |
@@ -47,12 +47,12 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 * **契約によるアクセス**:AI アシスタントでData Insights Agentを使用できない場合は、組織の管理者またはAdobe アカウントチームにお問い合わせください。 組織がData Insights Agentを使用する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**: ユーザーがData Insights Agentにアクセスするには、必要な権限が 2&rbrace;Adobe Admin Console&rbrace; で付与されている必要があります。
+* **権限**: ユーザーがData Insights Agentにアクセスするには、必要な権限が ]2}Adobe Admin Console} で付与されている必要があります。[!UICONTROL 
 
   権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して **[!UICONTROL すべての製品とサービス]** ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
-   1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品ナレッジ &#x200B;] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
+   1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品ナレッジ ] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」タブを選択します。
 
       ![Admin Consoleの「権限」タブ ](assets/ai-assistant-permissions-tab.png)
@@ -64,7 +64,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
       ![ 権限を追加 ](assets/ai-assistant-permissions.png).
 
-   1. **[!UICONTROL データビューツール]** タブを選択し、**Data Insights Agent![ 権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle** を選択します。
+   1. **[!UICONTROL データビューツール]** タブを選択し、**[!UICONTROL Data Insights Agent![ 権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle]** を選択します。
 
       **[!UICONTROL Data Insights Agent]** 権限が **[!UICONTROL 含まれる権限項目]** 列に追加されます。
 
@@ -92,7 +92,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDでログインします。
 
-2. Experience Cloud ホームから **0&rbrace;Customer Journey Analytics&rbrace; を選択します。**
+2. Experience Cloud ホームから **0}Customer Journey Analytics} を選択します。**
 
 3. プロジェクトページ上部のバナーで **[!UICONTROL 空のプロジェクト]** を選択して、新しい空のプロジェクトを開きます。
 
