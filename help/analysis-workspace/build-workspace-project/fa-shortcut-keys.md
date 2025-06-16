@@ -5,10 +5,10 @@ feature: Workspace Basics
 title: Workspace ホットキーの使用方法
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: ht
-source-wordcount: '402'
-ht-degree: 100%
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 90%
 
 ---
 
@@ -19,10 +19,10 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 キーボードでは、次の記号が使用される場合があります。
 
 - **[!UICONTROL ** Shift キー&#x200B;**]**&#x200B;の代わりに **⇧**。
-- **[!UICONTROL ** Cmd キー&#x200B;**]**（コマンド）の代わりに **⌘**。
-- **[!UICONTROL ** Ctrl キー&#x200B;**]**（コントロール）の代わりに **⌃**。
-- **[!UICONTROL ** Opt キー&#x200B;**]**（オプション）の代わりに **⌥**。
-- **[!UICONTROL ** Alt キー&#x200B;**]**（代替）の代わりに **⎇**。
+- **[!UICONTROL ** cmd **]** （コマンド）の **⌘**。
+- **[!UICONTROL ** ctrl **]** （コントロール）の **⌃**。
+- **[!UICONTROL ** オプト **]** （オプション）の **⌥**。
+- **[!UICONTROL ** alt **]** （代替）の **⎇**。
 
 ## ナビゲーション操作
 
@@ -35,8 +35,8 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | コンポーネントウィンドウに移動 | **[!UICONTROL *Opt + Shift + 3 キー&#x200B;*]** | **[!UICONTROL *Alt + Shift + 3 キー&#x200B;*]** |
 | すべてのパネルを折りたたむ／展開 | **[!UICONTROL *Opt + M キー&#x200B;*]** | **[!UICONTROL *Alt + M キー&#x200B;*]** |
 | アクティブパネルを折りたたみ／展開 | **[!UICONTROL *Opt + Cmd + M キー&#x200B;*]** | **[!UICONTROL *Alt + Ctrl + M キー&#x200B;*]** |
-| 次のパネルに移動 | **[!UICONTROL *Opt *+ ▶︎ キー]** | **[!UICONTROL *Alt *+ ▶︎ キー]** |
-| 前のパネルに移動 | **[!UICONTROL *Opt *+ ◀︎ キー]** | **[!UICONTROL *Alt *+ ◀︎ キー]** |
+| 次のパネルに移動 | **[!UICONTROL *opt *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
+| 前のパネルに移動 | **[!UICONTROL *opt *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
 
 ## 分析の操作
 
@@ -67,6 +67,13 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | 新しい折れ線グラフ | **[!UICONTROL *Opt + 2 キー&#x200B;*]** | **[!UICONTROL *Alt + 2 キー&#x200B;*]** |
 | 新しい棒グラフ | **[!UICONTROL *Opt + 3 キー&#x200B;*]** | **[!UICONTROL *Alt + 3 キー&#x200B;*]** |
 | 新しいコンボグラフ | **[!UICONTROL *Opt + 4 キー&#x200B;*]** | **[!UICONTROL *Alt + 4 キー&#x200B;*]** |
+
+## パネルを移動アクション
+
+| アクション | ショートカット Mac | ショートカット Windows |
+| --- | --- | --- | 
+| パネルを上に移動 | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl +上&#x200B;*]** |
+| パネルを下に移動 | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt+ctrl+down *]** |
 
 ## 民主化行動
 
