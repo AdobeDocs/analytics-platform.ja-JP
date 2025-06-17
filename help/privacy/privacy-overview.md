@@ -4,10 +4,10 @@ description: Customer Journey Analytics でのデータガバナンスの仕組�
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,12 @@ Experience Platform で使用されるデータセットに関して作成され
 
 [詳細情報](/help/data-views/data-governance.md)
 
+## プライバシーリクエスト
+
+Adobeは、適用される各国および国際法に従ってプライバシーリクエストを処理します。
+
+Customer Journey AnalyticsはAdobe Experience Platformで使用可能なデータを使用するので、Adobeはデータアクセスおよび削除要求を送信するために ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja)0}Adobe Experience Platform Privacy Service} を提供します。 [リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+
 ## GDPR
 
 Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央サービスを直接登録せず、代わりに Experience Platform でおこなわれたデータセットの変更をすべて継承します。Adobe Customer Journey Analytics では、GDPR 削除要求の実施と要求完了時の Adobe Customer Journey Analytics への通知に、Experience Platform Data Lake を利用します。イベントデータセットについて Customer Journey Analytics で影響を受けるバッチへのあらゆる変更は、Experience Platform データと同期されます。GDPR の削除要求による影響を受けるプロファイルおよび参照データセットは、削除要求が完了するたびに、完全に再取り込みされます。削除要求は、通常、データレイクでの削除イベントから 7 日以内に完了します。
@@ -37,4 +43,4 @@ Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央�
 
 >[!MORELIKETHIS]
 >
->* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=ja)
+>* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
