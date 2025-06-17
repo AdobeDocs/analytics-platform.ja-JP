@@ -31,7 +31,7 @@ Experience Platform で使用されるデータセットに関して作成され
 
 Adobeは、適用される各国および国際法に従ってプライバシーリクエストを処理します。
 
-Customer Journey AnalyticsはAdobe Experience Platformで使用可能なデータを使用するので、Adobeはデータアクセスおよび削除要求を送信するために ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja)0}Adobe Experience Platform Privacy Service} を提供します。 [リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+Customer Journey AnalyticsはAdobe Experience Platformで使用可能なデータを使用するので、Adobeはデータアクセスおよび削除要求を送信するために [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja)0&rbrace;Adobe Experience Platform Privacy Service&rbrace; を提供します。 リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
 
 ## GDPR
 
