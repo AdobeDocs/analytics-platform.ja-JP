@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 2%
@@ -15,8 +15,6 @@ ht-degree: 2%
 
 
 # B2B editionの概念と機能
-
-{{draft-b2b}}
 
 この記事では、Customer Journey Analyticsで一般的に使用される、接続、識別子、コンテナ、データセットなどの概念について説明します。 また、Customer Journey Analytics B2B editionがこれらの概念に機能を追加する仕組みについても説明します。
 
@@ -76,7 +74,7 @@ Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使�
 
 * **アトリビューション**：新しい B2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定 ](/help/data-views/component-settings/attribution.md)、[ 計算指標 ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、フリーフォームテーブルの [ 列 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) で使用できます。 アカウントのルックバックは 13 か月に拡張されました。
 
-* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、&lbrace; フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、&lbrace; コホートテーブル [&#128279;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
+* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、{ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、{ コホートテーブル [](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
 また、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#visualizations-preferences) でこれらのビジュアライゼーションのデフォルトのコンテナを設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションを B2B コンテナと共に使用すると、B2B の深い分析とインサイトをサポートできます。

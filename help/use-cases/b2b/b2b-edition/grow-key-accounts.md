@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
@@ -14,8 +14,6 @@ ht-degree: 2%
 ---
 
 # 主要アカウントの拡大
-
-{{draft-b2b}}
 
 B2B 企業にとって、重要なアカウントの拡大と保持は最優先事項です。 取引の進捗を確保するための前提条件は、ターゲットアカウントの主要な関係者と適切なタイミングでコミュニケーションを取ることです。
 

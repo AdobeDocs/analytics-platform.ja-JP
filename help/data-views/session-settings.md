@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 96%
+ht-degree: 84%
 
 ---
 
@@ -47,11 +47,11 @@ Customer Journey Analytics では、ユーザーがどのようにデジタル�
 
    2. **[!UICONTROL 指標を使用して新しいセッションを開始]**&#x200B;の下にある&#x200B;**[!UICONTROL ここに指標をドロップ]**&#x200B;リストから指標を選択します。または、左側のパネルから「**[!UICONTROL 指標をドロップ]**」フィールドに指標をドラッグ＆ドロップすることもできます。選択した指標によって、新しいセッションの開始が定義されます。複数の指標を定義できます。
 
-      あらゆる種類の指標を使用して、新しいセッションを定義できます。例えば、プロファイルがモバイルアプリを起動するたびに新しいセッションを定義するとします。**[!UICONTROL データビュー]**／**[!UICONTROL コンポーネント]**&#x200B;で、**[!UICONTROL appInteraction]** **[!UICONTROL 名前]**&#x200B;スキーマフィールドに基づいて、**[!UICONTROL 起動回数]**&#x200B;という名前の指標タイプのコンポーネントを定義します。さらに、値が `launch` に一致する場合にのみ値をカウントするように&#x200B;**[!UICONTROL 起動回数]**&#x200B;指標コンポーネントを指定します。
+      あらゆる種類の指標を使用して、新しいセッションを定義できます。例えば、プロファイルがモバイルアプリを起動するたびに新しいセッションを定義するとします。**[!UICONTROL データビュー]**/**[!UICONTROL コンポーネント]** では、**[!UICONTROL appInteraction]****[!UICONTROL Name]** スキーマフィールドに基づいて、**[!UICONTROL Launch]** という名前の指標タイプのコンポーネントを定義します。 さらに、**[!UICONTROL Launch]** 指標コンポーネントを指定して、値が `launch` に一致する場合にのみ値をカウントします。
 
       ![アプリ操作指標コンポーネントの起動回数](assets/component-launches.png)
 
-      次に、ドラッグ＆ドロップするか、新しいセッションを定義する指標として「**[!UICONTROL 起動回数]**」指標を選択します。
+      次に、ドラッグ&amp;ドロップするか、指標として **[!UICONTROL ローンチ]** 指標を選択して新しいセッションを定義します。
 
       ![セッション設定の起動回数](assets/session-settings-launches-metric.png)
 

@@ -6,7 +6,7 @@ feature: Use Cases
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 1%
@@ -14,8 +14,6 @@ ht-degree: 1%
 ---
 
 # B2B edition ユースケースの概要
-
-{{draft-b2b}}
 
 この節では、多くの場合、より複雑な B2B 購入ジャーニーにインサイトを提供することを目的とした、特定の B2B ユースケースについて詳しく説明します。 一般的な B2B 購入には、購入グループ、様々な関係者によるクロスチャネルタッチポイント、セールスサイクルの様々な段階での機会などが含まれます。
 
