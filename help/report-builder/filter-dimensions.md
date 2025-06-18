@@ -1,20 +1,20 @@
 ---
-title: Report Builderでディメンションをフィルタリングする方法
+title: Report Builderでのディメンションのフィルタリング
 description: Customer Journey AnalyticsのReport Builderでディメンションのフィルターを使用する方法について説明します
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 97c3b05d4d9661aabcb1b06db7fdf44671a29394
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 33%
 
 ---
 
 
-# ディメンションのフィルター
+# ディメンションのフィルタリング
 
 デフォルトでは、テーブルの各ディメンション項目は、そのディメンションの上位 10 項目を返します。
 
@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. データブロックのセルを選択します。
 
-1. ![ コマンド ](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]**&#x200B;**[!UICONTROL データブロックの編集]** を選択します。
+1. ![ コマンド ](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]****[!UICONTROL データブロックの編集]** を選択します。
 
 1. 「**[!UICONTROL 次へ]**」を選択して、「**[!UICONTROL ディメンション]**」タブを表示します。
 
@@ -64,7 +64,7 @@ ht-degree: 33%
 
 ## フィルタータイプ
 
-ディメンション項目をフィルタリングする方法には、「一番人気 [&#128279;](#specific-filtering) と [ 特定 ](#most-popular) の 2 つがあり  す。
+ディメンション項目をフィルタリングする方法には、「一番人気 [ と [ 特定 ](#most-popular) の 2 つがあり ](#specific-filtering) す。
 
 ### **[!UICONTROL 一番人気]**
 
