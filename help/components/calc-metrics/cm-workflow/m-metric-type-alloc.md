@@ -163,6 +163,6 @@ ht-degree: 91%
 >[!MORELIKETHIS]
 >
 >[アトリビューションコンポーネントの設定](/help/data-views/component-settings/attribution.md)
->&#x200B;>[パーティシペーション指標](participation-metric.md)
+>>[パーティシペーション指標](participation-metric.md)
 >
 
