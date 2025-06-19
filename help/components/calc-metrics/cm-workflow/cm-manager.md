@@ -3,16 +3,16 @@ description: 計算指標マネージャーを使用すると、共有、フィ�
 title: 計算指標マネージャー
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '901'
 ht-degree: 29%
 
 ---
 
 # 計算指標の管理
 
-一元化された [!UICONTROL &#x200B; 計算指標 &#x200B;] 管理インターフェイスから、計算指標の共有、フィルタリング、タグ付け、承認、名前変更、コピー、削除、書き出し、計算指標をお気に入りとしてマークできます。 計算指標を管理するには：
+一元化された [!UICONTROL  計算指標 ] 管理インターフェイスから、計算指標の共有、フィルタリング、タグ付け、承認、名前変更、コピー、削除、書き出し、計算指標をお気に入りとしてマークできます。 計算指標を管理するには：
 
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、次に **[!UICONTROL 計算指標]** を選択します。
@@ -23,11 +23,11 @@ ht-degree: 29%
 計算指標マネージャーには、次のインターフェイス要素があります。
 
 
-![フィルターインターフェイス](assets/calculated-metrics-manager.png)
+![ 計算指標マネージャーインターフェイス ](assets/calculated-metrics-manager.png)
 
-### フィルターリスト
+### 計算指標のリスト
 
-フィルターリストには ➊ 所有または共有しているすべての計算指標が表示されます。 リストには、次の列があります。
+計算指標のリスト ➊ は、所有している計算指標または共有されているすべての計算指標が表示されます。 リストには、次の列があります。
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

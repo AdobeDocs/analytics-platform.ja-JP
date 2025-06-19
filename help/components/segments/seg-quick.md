@@ -4,7 +4,7 @@ title: クイックセグメント
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 23%
@@ -19,7 +19,7 @@ ht-degree: 23%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のクイックセグメント](https://video.tv.adobe.com/v/345339/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のクイックセグメント](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -57,11 +57,11 @@ ht-degree: 23%
 クイックセグメントを管理するには、特定の **[!UICONTROL クイックセグメント]** にポインタを合わせます。
 
 * ![ 編集 ](/help/assets/icons/Edit.svg) を選択して [ クイックセグメントビルダー ](#quick-segment-builder) を開き、クイックセグメントを編集します。
-* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにセグメントに関する情報が表示されます。 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL &#x200B; クイックセグメント &#x200B;] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-segment-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](seg-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
+* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにセグメントに関する情報が表示されます。 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL  クイックセグメント ] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-segment-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](seg-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
 
 ## クイックセグメントビルダー
 
-クイックセグメントビルダーの例については、以下を参照してください。 この例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` という名前のクイックセグメントに対してビルダーが開かれています。 上部の両方のクイックセグメントは、[!UICONTROL &#x200B; 平均注文値ダッシュボード &#x200B;] パネルと、[!UICONTROL &#x200B; 国あたりの平均注文値 &#x200B;] フリーフォームテーブルなどの内のすべてのビジュアライゼーションに適用されます。
+クイックセグメントビルダーの例については、以下を参照してください。 この例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` という名前のクイックセグメントに対してビルダーが開かれています。 上部の両方のクイックセグメントは、[!UICONTROL  平均注文値ダッシュボード ] パネルと、[!UICONTROL  国あたりの平均注文値 ] フリーフォームテーブルなどの内のすべてのビジュアライゼーションに適用されます。
 
 ![クイックセグメントビルダー](assets/quick-filter-builder.png)
 
@@ -107,6 +107,6 @@ ht-degree: 23%
 セグメントには、クイックセグメントと比較して次の利点があります。
 
 * セグメントは、すべてのWorkspace プロジェクトで使用できます
-* セグメントは、ネストされた階層コンテナおよびシーケンス（シーケンスセグメントを使用）を使用することで、より複雑になります。
+* セグメントは、ネストされた階層 [ コンテナ ](seg-builder.md#containers) およびシーケンス（[ 順次セグメント ](seg-sequential-build.md) を使用）を使用することで、より複雑になります。
 
 

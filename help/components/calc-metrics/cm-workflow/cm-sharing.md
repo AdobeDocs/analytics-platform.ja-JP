@@ -3,10 +3,10 @@ description: 権限に応じて、指標を組織全体、グループまたは�
 title: 計算指標の共有
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 [ 計算指標マネージャー ](cm-manager.md) で、計算指標を共有できます。 権限に応じて、計算指標を組織全体、グループまたは個々のユーザーと共有できます。
 
 * **管理者**：管理者は、計算指標を組織全体、組織内のグループおよび個々のユーザーと共有できます。 詳しくは、[Admin Console のドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-products.html)を参照してください。
-* **管理者以外**：管理者以外のユーザーは、自身が作成した計算指標を共有でき、個々のユーザーとのみ共有できます。 |
+* **管理者以外**：管理者以外のユーザーは、自身が作成した計算指標を共有でき、個々のユーザーとのみ共有できます。
 
 1 つ以上の計算指標を共有するには：
 
