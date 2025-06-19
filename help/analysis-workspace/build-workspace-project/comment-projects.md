@@ -4,9 +4,9 @@ title: プロジェクトへのコメントの追加と表示
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Analysis Workspaceのコメントを使用すると、Analysis Workspace プロ�
 
 ### コメント領域でコメントを表示する
 
-Analysis Workspace プロジェクトで作成されたすべてのコメントは、右側のパネルのコメント領域に表示されます。
+Analysis Workspace プロジェクトで作成されたすべてのコメントは、右側のパネルのコメント領域に表示されます。 既存のコメントの合計数は、コメントアイコンに表示されます。
 
 1. デフォルトでは、プロジェクトを初めて開いたときに、Analysis Workspaceのプロジェクトごとにコメント領域が展開されます。
 
@@ -131,13 +131,15 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントに返信する
 
-1. プロジェクトをAnalysis Workspaceで開いた状態で、Analysis Workspaceの右側のパネルにあるコメントエリアのアイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択します。
+1. Analysis Workspaceで、コメントを追加するプロジェクトを開きます。
 
-1. 返信するコメントの横にある「**[!UICONTROL 返信]**」を選択します。
+1. Analysis Workspaceの右側のパネルにあるコメント領域アイコン ![ コメント領域のアイコン ](/help/assets/icons/Comment.svg) コメント領域のアイコン）を選択し、返信するコメントの横にある **[!UICONTROL 返信]** を選択します。
+
+   返信するコメントのテキストを含め、元のテキストを引用タグで囲むには、返信する特定のコメントまたは返信の横にある 3 ドットアイコンを選択し、「**[!UICONTROL 引用返信]**」を選択します。 引用返信は、コメントまたは返信が参照しているコメントを示すのに適した方法です。
 
    または
 
-   返信するコメントのテキストを含め、元のテキストを引用タグで囲むには、返信する特定のコメントまたは返信の横にある 3 ドットアイコンを選択し、「**[!UICONTROL 引用返信]**」を選択します。 引用返信は、コメントまたは返信が参照しているコメントを示すのに適した方法です。
+   コメントが作成されたパネルまたはビジュアライゼーションのコメントアイコンを選択し、「**[!UICONTROL 返信]**」を選択します。
 
 1. 「**[!UICONTROL 新しいコメント]**」フィールドにコメントを指定します。
 
@@ -149,9 +151,9 @@ Analysis Workspaceのコメント機能を使用すると、他のユーザー�
 
 ## コメントに関する通知を受信
 
-プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.svg) きます。
+プロジェクト所有者および [ メンションした特定のユーザー ](#include-others-in-a-comment) は、Adobe Experience Cloud通知の設定に基づいて通知を受け取ります。 デフォルトでは、アプリ内通知が届き、Customer Journey Analyticsの [Experience Cloud通知 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) アイコン ![Experience Cloud通知アイコンから確認 ](assets/experience-cloud-notification.svg) きます。
 
-さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
+さらに、ユーザーは [ メール通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) および [Experience Cloud通知を購読 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack) して、メール通知およびSlack通知を受け取るようにSlack通知を設定できます。
 
 ## 既存のコメントにバッジを配置する
 
