@@ -43,7 +43,7 @@ Customer Journey Analytics B2B editionは、売上高の増加を促す実用的
 >[!MORELIKETHIS]
 >
 >[B2B の概念と機能 ](cja-b2b-concepts-features.md)
->>[B2B クイックスタートガイド ](cja-b2b-quick-start-guide.md)
->>[B2B トランジションガイド ](cja-b2b-transition.md)
->>[B2B のユースケース ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>&#x200B;>[B2B クイックスタートガイド ](cja-b2b-quick-start-guide.md)
+>&#x200B;>[B2B トランジションガイド ](cja-b2b-transition.md)
+>&#x200B;>[B2B のユースケース ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

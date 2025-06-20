@@ -65,7 +65,7 @@ Adobe コンテンツ分析拡張機能に変更を行った後、[公開フロ�
 >[!MORELIKETHIS]
 >
 >[ガイド付き設定](guided.md)
->>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
 
 
