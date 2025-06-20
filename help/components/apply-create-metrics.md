@@ -4,10 +4,10 @@ title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 9%
+source-wordcount: '866'
+ht-degree: 7%
 
 ---
 
@@ -49,13 +49,6 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 Customer Journey Analyticsの標準指標の完全なリスト：
 {{standard-metrics}}
 
-## 様々なアトリビューションモデルとの指標の比較
-
-指標のアトリビューションモデルを別のアトリビューションモデルとすばやく比較するには、指標のコンテキストメニューから **[!UICONTROL アトリビューションモデルを比較]** を選択します。
-
-![ アトリビューションモデルの比較を強調表示したWorkspace パネル ](assets/compare-attribution.png)
-
-このショートカットを使用すると、指標をドラッグして 2 回設定することなく、1 つのアトリビューションモデルを別のアトリビューションモデルと比較できます。
 
 ## 計算指標の作成
 
@@ -65,9 +58,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 ### すべてのプロジェクトの計算指標を作成
 
-計算指標ビルダーを使用して、計算指標を作成できます。この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。
-
-計算指標ビルダーへのアクセス方法について詳しくは、[ 計算指標の作成 ](/help/components/calc-metrics/cm-workflow/cm-workflow.md) を参照してください。
+[ 計算指標ビルダー ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) を使用して、[ 計算指標を作成 ](/help/components/calc-metrics/cm-workflow/cm-workflow.md) できます。 この方法で作成した場合、計算指標はコンポーネントリストで使用できるので、組織全体のプロジェクトで使用できます。
 
 ### 単一プロジェクトの計算指標の作成
 
@@ -113,6 +104,13 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
    * [!UICONTROL **変化率**]：選択した 2 つの列の間の変化率を示す新しい列を作成します。
 
-[計算指標： 実装なしの指標](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=ja)（3:42）
+
+## 様々なアトリビューションモデルとの指標の比較
+
+指標のアトリビューションモデルを別のアトリビューションモデルとすばやく比較するには、指標のコンテキストメニューから **[!UICONTROL アトリビューションモデルを比較]** を選択します。
+
+![ アトリビューションモデルの比較を強調表示したWorkspace パネル ](assets/compare-attribution.png)
+
+このショートカットを使用すると、指標をドラッグして 2 回設定することなく、1 つのアトリビューションモデルを別のアトリビューションモデルと比較できます。
 
 
