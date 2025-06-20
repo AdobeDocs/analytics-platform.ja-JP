@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1469'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使�
 
 * **アトリビューション**：新しい B2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定 ](/help/data-views/component-settings/attribution.md)、[ 計算指標 ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、フリーフォームテーブルの [ 列 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) で使用できます。 アカウントのルックバックは 13 か月に拡張されました。
 
-* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、&lbrace; フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、&lbrace; コホートテーブル [&#128279;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
+* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、{ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、{ コホートテーブル [](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
 また、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#visualizations-preferences) でこれらのビジュアライゼーションのデフォルトのコンテナを設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションを B2B コンテナと共に使用すると、B2B の深い分析とインサイトをサポートできます。
@@ -98,7 +98,7 @@ Customer Journey Analytics B2B editionにおけるアカウントベースの接
 Customer Journey Analytics B2B editionには、接続内のデータセット間の関係の概要を示す [ 接続マップ ](/help/connections/create-connection.md#connection-map) インターフェイスが用意されています。
 
 
-Customer Journey Analyticsと同様に、イベントベースの時系列データは、Customer Journey Analytics B2B editionの中核にあります。 アカウントベースの接続の主な違いは、人物 ID ではなく、イベントデータセット内のすべてのレコードにアカウント ID が必要なことです。
+Customer Journey Analyticsと同様に、イベントベースの時系列データは、Customer Journey Analytics B2B editionの中核にあります。 アカウントベースの接続の主な違いは、ユーザー ID ではなく、イベントデータセット内のすべてのレコードにアカウント ID が必要なことです。
 
 Customer Journey Analytics B2B editionでアカウントベースの接続に対して [ データセット設定 ](/help/connections/create-connection.md#dataset-settings) を設定する場合、一部の設定で使用できるオプションは [ データセットタイプ ](/help/connections/create-connection.md#dataset-types) によって異なります。 たとえば、次の条件を満たす必要があります。
 

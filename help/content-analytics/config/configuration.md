@@ -5,16 +5,21 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '599'
+ht-degree: 85%
 
 ---
 
 # コンテンツ分析の設定
 
-コンテンツ分析の設定は、次の手順で構成されます。
+この記事では、Content Analyticsの設定方法を大まかに説明します。
+
+Content Analyticsを設定する前に、[ 前提条件 ](#prerequisites) が満たされ、必要な [ アクセス制御 ](#access-control) が得られ、[ 制限事項 ](#limitations) を認識している必要があります。
+
+
+手順の概要
 
 ![コンテンツ分析の設定](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -31,7 +36,7 @@ ht-degree: 100%
 
 コンテンツ分析を設定する前に、次の前提条件が満たされていることを確認してください。
 
-* コンテンツ分析で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>
+* コンテンツ分析で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>.
 * 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code>  を使用していることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * コンテンツ分析エクスペリエンスの収集を検討する場合は、web ページの変更に基づいて[コンテンツ分析のバージョン管理](manual.md#versioning)を設定および更新する必要があります。
@@ -60,6 +65,13 @@ ht-degree: 100%
 
 1. コンテンツ分析が有効化されたデータビューは、特定の Customer Journey Analytics 製品プロファイルのデータビュー権限の一部として含まれています。
 1. この特定の Customer Journey Analytics 製品プロファイルは、ユーザーまたはユーザーグループに割り当てられた製品プロファイルの 1 つです。
+
+## 制限事項
+
+Content Analytics イベントデータに使用されるスキーマは、システムが所有します。 システム所有のスキーマは変更できません。これは、次のことを意味します。
+
+* ジオロケーション、ボット検出、デバイス検索などの機能をサポートするフィールドグループを含めることはできません。
+* [ フィールドベースのステッチ ](/help/stitching/fbs.md) をサポートする特定の識別子を追加することはできません。
 
 >[!MORELIKETHIS]
 >
