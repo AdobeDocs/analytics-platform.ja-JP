@@ -5,10 +5,10 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 39%
+source-wordcount: '1304'
+ht-degree: 38%
 
 ---
 
@@ -45,7 +45,7 @@ Report Builderからレポートを書き出すには：
 
 1. まだ行っていない場合は、[クラウドの書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従って、書き出しのアカウントと場所を設定します。
 
-1. 書き出すデータを含む Excel スプレッドシートで、右側の **0&rbrace;Adobe Report Builder&rbrace; パネルを開きます。**
+1. 書き出すデータを含む Excel スプレッドシートで、右側の ]**0}Adobe Report Builder} パネルを開きます。**[!UICONTROL 
 
 1. [!UICONTROL **スケジュール**] を選択します。
 
@@ -119,12 +119,6 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 * **データブロック：** すべてのデータブロックには、列、行、または値に対して少なくとも 1 つのコンポーネントを含める必要があります。
 
 * **環境：** Customer Journey Analytics で使用される [IP アドレス](/help/technotes/ip-addresses.md)と[ドメイン](/help/technotes/domains.md)が組織のファイアウォールを通過できることを確認します。
-
-* **権限：** Adobe Admin Console では、完全なテーブルを書き出すに、ユーザーに&#x200B;[!UICONTROL **完全なテーブルの書き出し**]&#x200B;権限が割り当てられた製品プロファイルを割り当てる必要があります。Admin Console での製品プロファイルへの権限の割り当てについて詳しくは、[Admin Console のCustomer Journey Analytics 権限](/help/technotes/access-control.md)を参照してください。
-
-  >[!NOTE]
-  >
-  >  [ 製品管理者の役割 ](/help/technotes/access-control.md#product-admin-role) が割り当てられているユーザーは、常にReport Builderからレポートを書き出すアクセス権を持っています。 **（Report Builderの場合？??）**
 
 
 
