@@ -1,20 +1,20 @@
 ---
-description: Customer Journey Analyticsデータを送信できるクラウドの書き出し場所の設定
+description: Customer Journey Analytics データを送信できるクラウドの書き出し場所の設定
 keywords: Analysis Workspace
 title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1915'
 ht-degree: 20%
 
 ---
 
 # クラウドの書き出し場所の設定
 
-[ クラウドへのCustomer Journey Analyticsレポートの書き出し ](/help/analysis-workspace/export/export-cloud.md) の説明に従ってクラウドの宛先にCustomer Journey Analyticsレポートを書き出す前に、データを送信する場所を追加および設定する必要があります。
+Customer Journey Analytics レポートをクラウドの宛先に書き出す前に（[Analysis Workspace Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) または [Report Builder レポートのReport Builderからの書き出し ](/help/report-builder/report-builder-export.md) で説明しているように） [、Customer Journey Analytics レポートを送信する場所を追加して設定する必要があります ](/help/analysis-workspace/export/export-cloud.md)
 
 このプロセスでは、[ クラウドの書き出しアカウントの設定 ](/help/components/exports/cloud-export-accounts.md) の説明に従ってアカウント（Amazon S3、Google Cloud Platform など）を追加および設定し、次に、この記事の説明に従って、そのアカウント内の場所（アカウント内のフォルダーなど）を追加および設定します。
 
@@ -62,7 +62,7 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
->Customer Journey AnalyticsレポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データは AEP データランディングゾーンから自動的に削除されます。
+>Customer Journey Analytics レポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データはAEP データランディングゾーンから自動的に削除されます。
 
 1. 次のいずれかの方法で、クラウドの書き出し場所の作成を開始します。
 
@@ -84,15 +84,15 @@ ht-degree: 20%
 
 1. Analysis Workspaceから設定したアカウントと場所にデータを書き出せるようになりました。 クラウドにデータを書き出す方法については、[ クラウドへのプロジェクトデータの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
-1. AEP Data Landing Zone のデータにアクセスする最も簡単な方法は、Microsoft Azure ストレージエクスプローラーを使用することです。 これは、[AEP データランディングゾーンアカウント ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone) を設定する手順で使用するツールと同じです。
+1. AEP Data Landing Zone のデータにアクセスする最も簡単な方法は、Microsoft Azure ストレージエクスプローラーを使用することです。 これは、[AEP Data Landing Zone アカウント ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone) の設定手順で使用するツールと同じです。
 
    1. [Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) を開きます。
 
-   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name &#x200B;***に移動します。
+   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name ***に移動します。
 
       >[!NOTE]
       >
-      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**&#x200B;です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**&#x200B;になります。
+      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**になります。
 
 
       ![Azure ストレージエクスプローラー内のファイルへのアクセス ](assets/azure-storage-explorer-access.png)
@@ -113,7 +113,7 @@ ht-degree: 20%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信するAmazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、このバケットにファイルをアップロードするための `S3:PutObject` 権限があることを確認します。 </p><p>バケット名は、特定の命名規則を満たす必要があります。例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。[命名規則の完全なリストについて詳しくは、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analytics データの送信先となるAmazon S3 アカウント内のバケット。 <p>Adobeから提供されたユーザー ARN に、このバケットにファイルをアップロードするための `S3:PutObject` 権限があることを確認します。 </p><p>バケット名は、特定の命名規則を満たす必要があります。例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。[命名規則の完全なリストについて詳しくは、AWS ドキュメントを参照してください](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
@@ -134,7 +134,7 @@ ht-degree: 20%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analyticsデータを送信する GCP アカウント内のバケット。 <p>Adobeから提供されたプリンシパルに `roles/storage.objectCreator` 権限を付与していることを確認してください。 （プリンシパルは、[Google Cloud Platform アカウントの設定 ](/help/components/exports/cloud-export-accounts.md) 時に提供されます。 <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信する GCP アカウント内のバケット。 <p>Adobeから提供されたプリンシパルに `roles/storage.objectCreator` 権限を付与していることを確認します。 （プリンシパルは、[Google Cloud Platform アカウントの設定 ](/help/components/exports/cloud-export-accounts.md) 時に提供されます。 <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **プレフィックス**] | データを配置するバケット内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
 
    {style="table-layout:auto"}
@@ -155,7 +155,7 @@ ht-degree: 20%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **コンテナ名**] | Customer Journey Analyticsデータの送信先として指定したアカウント内のコンテナ。 |
+   | [!UICONTROL **コンテナ名**] | Customer Journey Analytics データの送信先として指定したアカウント内のコンテナ。 |
    | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure SAS アカウントを設定する際に、Key Vault 秘密鍵名フィールドに指定した SAS トークンストアに `Write` 権限があることを確認します。これにより、SAS トークンで Azure コンテナにファイルを作成できます。 <p>SAS トークンでファイルも上書きする場合は、SAS トークンストアに `Delete` 権限があることを確認します。</p><p>詳しくは、Azure Blob Storage ドキュメントの [Blob Storage のリソース](https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources)を参照してください。</p> |
 
    {style="table-layout:auto"}
@@ -176,7 +176,7 @@ ht-degree: 20%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **コンテナ**] | Customer Journey Analyticsデータの送信先として指定したアカウント内のコンテナ。 以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
+   | [!UICONTROL **コンテナ**] | Customer Journey Analytics データの送信先として指定したアカウント内のコンテナ。 以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
    | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID に、コンテナ（フォルダー）にアクセスするための `Storage Blob Data Contributor` の役割が付与されていることを確認します。</p> <p>詳しくは、[Azure の組み込みの役割](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles)を参照してください。</p> |
    | [!UICONTROL **アカウント**] | Azure ストレージアカウント。 |
 
@@ -198,10 +198,10 @@ ht-degree: 20%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **DB**] | 既存のデータベースを指定してください。 作成した役割には、このデータベースにアクセスするための権限が必要です。<p>これは、ステージ名に関連付けられたデータベースです。</p><p>次のコマンドを使用して、このロール権限をSnowflake内のデータベースに付与できます。`GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>詳しくは、[Snowflakeドキュメントのデータベース、スキーマ、および共有コマンドのページ ](https://docs.snowflake.com/en/sql-reference/commands-database) を参照してください。</p> |
-   | [!UICONTROL **スキーマ**] | 既存のスキーマを指定する必要があります。 作成した役割には、このスキーマにアクセスするための権限が必要です。<p>これは、ステージ名に関連付けられたスキーマです。<p>次のコマンドを使用して、作成したロールにSnowflakeのスキーマに権限を付与できます。`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>詳しくは、[Snowflakeドキュメントのデータベース、スキーマ、および共有コマンドのページ ](https://docs.snowflake.com/en/sql-reference/commands-database) を参照してください。</p> |
-   | [!UICONTROL **ステージ名**] | データファイルがSnowflakeに保存される内部ステージの名前。<p>アカウントで指定した役割に、このステージ名への読み取りおよび書き込みアクセス権があることを確認してください。 （読み取りおよび書き込みアクセス権を付与するので、Adobeでのみ使用するステージを使用することをお勧めします。）<p>次のコマンドを使用して、Snowflakeのステージ名に読み取りおよび書き込みアクセス権を付与できます：`GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>ロールへの権限の付与について詳しくは、[Snowflakeドキュメントでの権限の付与 ](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege) を参照してください。 <p>ステージ名の詳細については、Snowflakeドキュメントの [ ローカルファイルの内部ステージの選択 ](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage) を参照してください。</p> |
-   | [!UICONTROL **ステージパス**] | データファイルがSnowflakeに格納されている場所のパス。 <p>詳しくは、Snowflakeドキュメントの [ ローカルファイルの内部ステージの選択 ](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage) を参照してください。</p> |
+   | [!UICONTROL **DB**] | 既存のデータベースを指定してください。 作成した役割には、このデータベースにアクセスするための権限が必要です。<p>これは、ステージ名に関連付けられたデータベースです。</p><p>このロール権限をSnowflakeのデータベースに付与するには、次のコマンドを使用します。`GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>詳しくは、[Snowflake ドキュメントのデータベース、スキーマ、共有コマンドのページ ](https://docs.snowflake.com/en/sql-reference/commands-database) を参照してください。</p> |
+   | [!UICONTROL **スキーマ**] | 既存のスキーマを指定する必要があります。 作成した役割には、このスキーマにアクセスするための権限が必要です。<p>これは、ステージ名に関連付けられたスキーマです。<p>作成したロールに、次のコマンドを使用してSnowflakeのスキーマに権限を付与できます。`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>詳しくは、[Snowflake ドキュメントのデータベース、スキーマ、共有コマンドのページ ](https://docs.snowflake.com/en/sql-reference/commands-database) を参照してください。</p> |
+   | [!UICONTROL **ステージ名**] | データファイルがSnowflakeに保存される内部ステージの名前。<p>アカウントで指定した役割に、このステージ名への読み取りおよび書き込みアクセス権があることを確認してください。 （読み取りおよび書き込みアクセス権を付与するので、Adobeでのみ使用するステージを使用することをお勧めします。）<p>次のコマンドを使用して、Snowflakeのステージ名に読み取りおよび書き込みアクセス権を付与できます。`GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>ロールへの権限の付与について詳しくは、[Snowflake ドキュメントの権限の付与 ](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege) を参照してください。 <p>ステージ名について詳しくは、[Snowflake ドキュメントのローカルファイルの内部ステージの選択 ](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage) を参照してください。</p> |
+   | [!UICONTROL **ステージパス**] | データファイルがSnowflakeに保存される場所のパス。 <p>詳しくは、[Snowflake ドキュメントのローカルファイルの内部ステージの選択 ](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage) を参照してください。</p> |
 
    {style="table-layout:auto"}
 

@@ -1,20 +1,20 @@
 ---
-description: Customer Journey Analyticsデータを送信できる Cloud Export アカウントの設定
+description: Customer Journey Analytics データを送信できる Cloud エクスポートアカウントの設定
 keywords: Analysis Workspace
 title: クラウドの書き出しアカウントの設定
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: cb4c2721867585fd11c0929f0947436872272da6
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 26%
+source-wordcount: '2246'
+ht-degree: 28%
 
 ---
 
 # クラウドの書き出しアカウントの設定
 
-[ クラウドへのCustomer Journey Analyticsレポートの書き出し ](/help/analysis-workspace/export/export-cloud.md) で説明しているように、Customer Journey Analyticsレポートをクラウドの宛先に書き出す前に、データの送信先を追加して設定する必要があります。
+Customer Journey Analytics レポートをクラウドの宛先に書き出す前に（「Analysis Workspace Customer Journey Analytics レポートのクラウドへの書き出し [](/help/analysis-workspace/export/export-cloud.md) またはReport Builder レポートのReport Builderからの書き出し [ を使用して ](/help/report-builder/report-builder-export.md)、データの送信先を設定する必要があります。
 
 このプロセスでは、この記事で説明しているアカウント（Amazon S3、Google Cloud Platform など）を追加して設定し、次に [ クラウド書き出しの場所の設定 ](/help/components/exports/cloud-export-locations.md) で説明しているアカウント内の場所（アカウント内のフォルダーなど）を追加して設定します。
 
@@ -24,7 +24,7 @@ ht-degree: 26%
 
 1. レポートをクラウドに書き出すための [ 最小要件 ](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) を満たしていることを確認します。
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
-1. [!UICONTROL &#x200B; 書き出し &#x200B;] ページで、「[!UICONTROL **場所アカウント**]」タブを選択します。
+1. [!UICONTROL  書き出し ] ページで、「[!UICONTROL **場所アカウント**]」タブを選択します。
 
    ![ 「別のアカウントを追加」を示す書き出しページオプション ](assets/account-add.png)
 
@@ -66,10 +66,10 @@ ht-degree: 26%
 
 >[!IMPORTANT]
 >
->書き出しアカウントに AEP データランディングゾーンを使用する際は、次の点を考慮してください。
+>書き出しアカウントにAEP データランディングゾーンを使用する際は、次の点を考慮してください。
 >
-> * Customer Journey AnalyticsレポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データは AEP データランディングゾーンから自動的に削除されます。
-> * AEP Data Landing Zone は、Azure またはAWS ストレージを使用します。 Azure を使用するように設定されたログイン会社を組織が使用している場合、AEP データランディングゾーンは Azure を使用します。 ログイン会社がAWSを使用するように設定されている場合、AEP Data Landing Zone はAWSを使用します。
+> * Customer Journey Analytics レポートをAdobe Experience Platform データランディングゾーンに書き出す場合は、7 日以内にデータをダウンロードし、AEP データランディングゾーンから削除してください。 7 日後、データはAEP データランディングゾーンから自動的に削除されます。
+> * AEP Data Landing Zone は、Azure またはAWS ストレージを使用します。 Azure を使用するように設定されたログイン会社を使用している組織の場合、AEP Data Landing Zone では Azure が使用されます。 ログイン会社がAWSを使用するように設定されている場合、AEP データランディングゾーンはAWSを使用します。
 >
 
 1. 次のいずれかの方法で、クラウド書き出しアカウントの作成を開始します。
@@ -80,23 +80,23 @@ ht-degree: 26%
 
 1. **[!UICONTROL AEP データランディングゾーン]** を選択した後、「**[!UICONTROL アカウントタイプ]**」フィールドで「[!UICONTROL **保存**]」を選択します。
 
-   AEP Data Landing Zone が Azure またはAWS ストレージを使用するように設定されているかどうかに応じて、次のダイアログのいずれかが表示されます。
+   AEP データランディングゾーンが Azure とAWS ストレージのどちらを使用するように設定されているかに応じて、次のいずれかのダイアログが表示されます。
 
    * **Azure ストレージ：**
 
      [!UICONTROL **作成されたアカウントを書き出し**] ダイアログが表示されます。
 
-     ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
+     ![ アカウントダイアログのAEP データランディングゾーンを書き出し ](assets/export-account-aep.png)
 
    * **AWS ストレージ：**
 
      >[!AVAILABILITY]
      >
-     >この節の内容は、Amazon Web Services（AWS）上で動作するExperience Platformの実装に適用されます。 AWSで実行されるExperience Platformは、現在、限られた数のお客様が利用できます。 サポートされるExperience Platformインフラストラクチャについて詳しくは、[Experience Platformマルチクラウドの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/multi-cloud) を参照してください。
+     >この節の内容は、Amazon Web Services（AWS）上で動作する Experience Platform の実装に適用されます。AWS 上で動作する Experience Platform は、現在、限られた数のお客様が利用できます。サポートされる Experience Platform インフラストラクチャについて詳しくは、[Experience Platform マルチクラウドの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/multi-cloud)を参照してください。
 
      [!UICONTROL **作成されたアカウント**] ダイアログが表示されます。
 
-     ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep-aws.png)
+     ![ アカウントダイアログのAEP データランディングゾーンを書き出し ](assets/export-account-aep-aws.png)
 
 1. （条件付き） Azure ストレージを使用している場合：
 
@@ -108,13 +108,13 @@ ht-degree: 26%
 
       >[!NOTE]
       >
-      >Azure に基づく AEP データランディングゾーンアカウントを使用する場合、AEP データランディングゾーンに書き出すレポートにアクセスする最も簡単な方法は、Azure ストレージエクスプローラーを使用することです。 次の手順では、この方法を使用します。
+      >Azure に基づくAEP Data Landing Zone アカウントを使用する場合、AEP Data Landing Zone に書き出すレポートにアクセスする最も簡単な方法は、Azure ストレージエクスプローラーを使用することです。 次の手順では、この方法を使用します。
 
       1. まだダウンロードしていない場合は、[Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) をダウンロードします。
 
-      1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
+      1. Adobe Experience Platform ドキュメントでは、[ データランディングゾーンコンテナの Azure ストレージエクスプローラーへの接続 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) で説明されている手順に従います。
 
-         [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=ja#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
+         [ データランディングゾーンの資格情報の取得 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) および [ データランディングゾーン資格情報の更新 ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) の節で説明したタスクはスキップできます。コピーした URI にはこれらの資格情報が含まれているからです。
 
       1. Adobe Experience Platformのドキュメントに従って「[!UICONTROL **Blob コンテナ SAS URL**]」フィールドに移動したら、手順 3 でコピーした SAS URI を貼り付けます。
 
@@ -128,7 +128,7 @@ ht-degree: 26%
 
    1. Customer Journey Analyticsの [!UICONTROL **作成されたアカウントを書き出し**] ダイアログで [!UICONTROL **OK**] を選択します。
 
-      ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep.png)
+      ![ アカウントダイアログのAEP データランディングゾーンを書き出し ](assets/export-account-aep.png)
 
 1. （条件付き）AWS ストレージを使用している場合：
 
@@ -144,7 +144,7 @@ ht-degree: 26%
 
       * **[!UICONTROL DLZ フォルダー]**
 
-      ![ アカウントダイアログ AEP データランディングゾーンの書き出し ](assets/export-account-aep-aws.png)
+      ![ アカウントダイアログのAEP データランディングゾーンを書き出し ](assets/export-account-aep-aws.png)
 
    1. [!UICONTROL **OK**] を選択します。
 
@@ -280,9 +280,9 @@ ht-degree: 26%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **アカウント識別子**] | 社内だけでなく、Snowflakeがサポートするクラウドプラットフォームとクラウドリージョンのグローバルネットワーク全体で、Snowflakeアカウントを一意に特定します。 <p>Snowflakeアカウントからアカウント ID を取得し、ここにペーストする必要があります。</p><p>この情報の取得方法については、Snowflakeドキュメントの [ アカウント識別子ページ ](https://docs.snowflake.com/en/user-guide/admin-account-identifier) を参照してください。</p> |
-   | [!UICONTROL **ユーザー**] | 接続に使用されるユーザーのログイン名。 特にAdobeに使用する新しいユーザーを作成することをお勧めします。 ここに名前を指定して、Snowflakeに同じ名前のユーザーを作成してください。 `CREATE USER` コマンドを使用して、Snowflakeでユーザーを作成できます。  <p>詳細については、[User, Role, &amp; Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role) を参照してください。</p> |
-   | [!UICONTROL **役割**] | ユーザーに割り当てられる役割。 特にAdobeに使用される新しいロールを作成することをお勧めします。 ここでロールを指定し、Snowflakeで同じ名前のロールを作成してロールを付与します。 `CREATE ROLE` コマンドを使用して、Snowflakeでロールを作成できます。 <p>詳細については、[User, Role, &amp; Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role) を参照してください。</p> |
+   | [!UICONTROL **アカウント識別子**] | 組織内、およびSnowflakeがサポートするクラウドプラットフォームとクラウド地域のグローバルネットワーク全体で、Snowflake アカウントを一意に識別します。 <p>Snowflake アカウントからアカウント ID を取得し、ここに貼り付ける必要があります。</p><p>この情報の取得方法については、[Snowflake ドキュメントのアカウント識別子ページ ](https://docs.snowflake.com/en/user-guide/admin-account-identifier) を参照してください。</p> |
+   | [!UICONTROL **ユーザー**] | 接続に使用されるユーザーのログイン名。 Adobe専用の新しいユーザーを作成することをお勧めします。 ここに名前を指定して、Snowflakeに同じ名前のユーザーを作成します。 `CREATE USER` コマンドを使用して、Snowflakeでユーザーを作成できます。  <p>詳細については、[User, Role, &amp; Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role) を参照してください。</p> |
+   | [!UICONTROL **役割**] | ユーザーに割り当てられる役割。 Adobe専用の新しいロールを作成することをお勧めします。 ここでロールを指定し、Snowflakeで同じ名前のロールを作成してロールを付与します。 `CREATE ROLE` コマンドを使用して、Snowflakeで役割を作成できます。 <p>詳細については、[User, Role, &amp; Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role) を参照してください。</p> |
 
    {style="table-layout:auto"}
 
@@ -292,17 +292,17 @@ ht-degree: 26%
 
    ![ アカウントを書き出しが作成されましたダイアログ ](assets/export-account-snowflake.png)
 
-1. 「[!UICONTROL **公開鍵**] フィールドの内容をクリップボードにコピーします。 公開鍵はAdobeが指定します。
+1. 「[!UICONTROL **公開鍵**] フィールドの内容をクリップボードにコピーします。 公開鍵はAdobeから提供されます。
 
-   Snowflakeの公開鍵を使用して、Snowflakeアカウントに接続します。 作成したユーザーをこの公開鍵に関連付ける必要があります。
+   Snowflakeの公開鍵を使用して、Snowflake アカウントに接続します。 作成したユーザーをこの公開鍵に関連付ける必要があります。
 
-   例えば、Snowflakeで、次のコマンドを指定します。
+   例えば、Snowflakeで次のコマンドを指定します。
 
    ```
    CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
    ```
 
-   詳しくは、Snowflakeドキュメントの [ キーペアの認証とキーペアのローテーション ](https://docs.snowflake.com/en/user-guide/key-pair-auth) ページを参照してください。
+   詳しくは、[Snowflake ドキュメントのキーペア認証とキーペアのローテーション ](https://docs.snowflake.com/en/user-guide/key-pair-auth) ページを参照してください。
 
 1. [!UICONTROL **OK**] を選択します。
 

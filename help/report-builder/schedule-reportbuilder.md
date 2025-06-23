@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 13%
+source-wordcount: '864'
+ht-degree: 15%
 
 ---
 
-# ワークブックのスケジュール設定
+# メールでの共有によるワークブックのスケジュール設定
 
 ワークブックを保存して分析を完了したら、スケジュール機能を使用してチームの他のユーザーとワークブックを共有できます。 スケジュール機能を使用すると、ワークブック内のデータを自動更新するスケジュールを作成できます。 さらに、指定した日時、指定したオーディエンスに添付ファイルとして Excel ワークブックファイルをメールで送信します。 スケジュールを設定すると、受信者には、自動的かつ定期的に最新情報が送られます。 また、スケジュール機能を使用して、自動更新のスケジュールを設定せずに、ワークブックを 1 回送信することもできます。
 
@@ -24,7 +24,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ワークブックのスケジュール ](https://video.tv.adobe.com/v/3417506/?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ワークブックのスケジュール ](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -129,54 +129,7 @@ ht-degree: 13%
 
 ワークブックの送信をキャンセルするには、「**[!UICONTROL キャンセル]**」を選択します。
 
+## スケジュールされたワークブックの管理
 
-## スケジュールされたワークブックの表示と管理
+既にスケジュールされたワークブックの管理について詳しくは、「[ スケジュールされたワークブックの管理 ](/help/report-builder/manage-schedules-reportbuilder.md)」を参照してください。
 
-「**[!UICONTROL ワークブック]**」タブでは、スケジュールされたすべてのワークブックを表示および管理できます。
-
-1. Report Builder ハブで **[!UICONTROL スケジュール]** を選択します
-
-1. 「**[!UICONTROL ワークブック]**」タブを選択します。 スケジュールされたすべてのワークブックのリストが表示されます。
-
-   ![ スケジュール済みワークブック ](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   アイコンの上にマウスポインターを置くと、スケジュールされたワークブックのステータスが表示されます。
-
-   ![ 検索 ](/help/assets/icons/Search.svg) を使用して、スケジュールされた特定のワークブックを検索します。
-表示する列を定義するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用します。
-
-1. 1 つ以上のワークブックを選択します。
-
-   ![ 選択したワークブックのスケジュール ](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   次のオプションがあります。
-
-   | オプション | 説明 |
-   |---|---|
-   | ![編集](/help/assets/icons/Edit.svg) | 選択したブックのスケジュールを編集します。 |
-   | ![ 履歴 ](/help/assets/icons/History.svg) | 選択したワークブックの履歴を表示します。 |
-   | ![Pause](/help/assets/icons/Pause.svg) | 選択したワークブックのスケジュールを一時停止します。 |
-   | ![ 再生 ](/help/assets/icons/Play.svg) | 選択したワークブックのスケジュールを再開します。 |
-   | ![ダウンロード](/help/assets/icons/Download.svg) | 選択したワークブックを新しいワークブックにダウンロードします。 |
-   | ![削除](/help/assets/icons/Delete.svg) | 選択したワークブックのスケジュールを削除します。 |
-
-
-## スケジュールされたワークブックの履歴とステータス
-
-スケジュールされたワークブックの履歴とステータスは、「**[!UICONTROL 履歴]**」タブで表示できます。
-
-1. Report Builder ハブで **[!UICONTROL スケジュール]** を選択します。
-
-1. 「**[!UICONTROL 履歴]**」タブを選択します。 スケジュールされたすべてのワークブックのリストが表示されます。
-
-   ![ スケジュール済み履歴 ](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   リスト内の特定のワークブックを検索するには、![ 検索 ](/help/assets/icons/Search.svg) を使用します。
-表示する列を定義するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用します。
-
-   **[!UICONTROL 履歴]** タブでは、スケジュールされた各タスクのステータスを確認できます。 個別の行に、スケジュールされた各タスクのステータス変更が記載されます。
-
-   * ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) は、ワークブックが正常に送信されたことを示します。
-   * ![AlertRed](/help/assets/icons/AlertRed.svg) は、エラーが発生したことを示します。
-
-または、選択した 1 つ以上のワークブックの ![ 履歴 ](/help/assets/icons/History.svg) を **[!UICONTROL ワークブック]** タブで選択できます。 このアクションは、選択によってフィルタリングされたリストを含む **[!UICONTROL 履歴]** タブを表示します。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択してフィルターを削除します。

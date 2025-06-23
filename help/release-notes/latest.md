@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
+source-git-commit: 5722b858e173e9704ec51afe1f0a694cf04a301f
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 39%
+source-wordcount: '640'
+ht-degree: 46%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 39%
 | ----------- | ---------- | ------- | ---- |
 | **Analysis Workspace の左パネルが開かなくなり、マウスポインターを置くと閉じる** | Analysis Workspace の左パネルを使用すると、コンポーネント、パネル、ビジュアライゼーションなどをプロジェクトに追加できます。左端のいずれかのアイコンにマウスポインターを置いて、一時的に左パネルを開くオプションは使用できなくなりました。代わりに、これらのアイコンのいずれかをクリックしてパネルを開いたままにし、同じアイコンをクリックして閉じます。 |  | 2025年6月2日（PT） <p>（当初は 2025 年 5 月 29 日にリリースする予定です）</p> |
 | **Customer Journey AnalyticsB2B edition** | Customer Journey Analytics B2B editionは、売上高の増加を促す実用的なアカウントインサイトを提供することで、B2B 企業がマーケティング、セールス、製品の各チームを連携させるのに役立ちます。 アカウントがデータモデルの中心に配置されるので、すべての分析はアカウントジャーニーに焦点を当てます。 人物および時間ベースのイベントの上に新しいエンティティのレイヤー（アカウント、機会、購入グループ）を追加すると、B2B マーケティングと収益のライフサイクルの全体像が作成されます。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition) |  | 2025年6月18日（PT） |
-| **Report Builderでの安全な宛先のサポート** | 新しい書き出し先がReport Builder アドインに追加されました。 次のクラウドストレージの宛先がサポートされています。 <ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul> （ドキュメントへのリンクを添付） |  | 2025 年 6 月 19 日（Pt）（当初は 2025 年 6 月 18 日（Pt）） |
-| **新しいプレビューエクスペリエンス** | セグメントや計算指標などをプレビューするためのプレビューパネルでは、ドーナツビジュアライゼーションではなく、横棒ビジュアライゼーションを使用するようになりました。 |  | 2025年6月18日（PT） |
-| **変更されたアトリビューションモデルダイアログ** | アトリビューションモデルダイアログで、コンテナと期間を別々に定義できるようになりました。 |  | 18,2025年6月 |
-| **接続マップ** | 新しい [ 接続マップインターフェイス ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection#connection-map) を使用して、接続設定を視覚的に表示できます。 |  | 2025年6月18日（PT） |
-| **Analysis Workspace プロジェクトでのコメントの追加と表示** | Analysis Workspaceの新しい [ コメント機能 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) を使用すると、Analysis Workspace プロジェクトのコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。 次のことが可能です。 <ul><li>アクセス権のあるAnalysis Workspace プロジェクトにコメントします</li><li>ビジュアライゼーション内の特定のポイントにコメントする、またはプロジェクトに関して一般的なコメントを作成する</li><li>他のユーザーにタグを付けて、コメントについて通知します</li><li>既存のコメントを管理（編集、ピン留め、解決など）</li></ul>Customer Journey Analytics管理者は [ 組織レベルでコメントを無効にする ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences) ことができます。 プロジェクト所有者は [ プロジェクトレベルでコメントを無効にする ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects) ことができます。 | 2025年6月25日（PT） | 2025年7月11日（PT） <p>（当初は 2025 年 5 月 29 日にリリースする予定です）</p> |
-| **Chrome プリレンダリングのサポート** | Chromeがページを事前レンダリングする際の、データ収集ライブラリの動作を制御します。 （ドキュメントへのリンクを添付） |  | 2025年6月30日（PT） |
+| **Report Builderでのセキュアなクラウド宛先のサポート** | Report Builderから次のクラウドストレージの宛先にレポートを書き出せるようになりました。<ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul><p>以前は、ワークブックをメールで他のユーザーと共有できましたが、Report Builderからクラウドの宛先にレポートを書き出すことはできませんでした。</p><p>詳しくは、[ クラウド宛先への書き出しによるワークブックのスケジュール設定 ](/help/report-builder/report-builder-export.md) を参照してください。</p> |  | 2025 年 6 月 19 日（Pt）（当初は 2025 年 6 月 18 日（Pt）） |
+| **新しいプレビューエクスペリエンス** | セグメントや計算指標などをプレビューするために使用されるプレビューパネルでは、ドーナツビジュアライゼーションではなく、横棒グラフビジュアライゼーションが使用されるようになりました。 |  | 2025年6月18日（PT） |
+| **変更されたアトリビューションモデルダイアログ** | アトリビューションモデルダイアログでコンテナと期間を個別に定義できるようになりました。 |  | 2025年6月18日（PT） |
+| **接続マップ** | 新しい [ 接続マップインターフェイス ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) を使用して、接続設定を視覚的に表示できます。 |  | 2025年6月18日（PT） |
+| **Analysis Workspace プロジェクトでのコメントの追加と表示** | Analysis Workspaceの新しい [ コメント機能 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) を使用すると、Analysis Workspace プロジェクトのコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。 次のことが可能です。 <ul><li>アクセス権のあるAnalysis Workspace プロジェクトにコメントします</li><li>ビジュアライゼーション内の特定のポイントにコメントする、またはプロジェクトに関して一般的なコメントを作成する</li><li>他のユーザーにタグを付けて、コメントについて通知します</li><li>既存のコメントを管理（編集、ピン留め、解決など）</li></ul>Customer Journey Analytics管理者は [ 組織レベルでコメントを無効にする ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences) ことができます。 プロジェクト所有者は [ プロジェクトレベルでコメントを無効にする ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects) ことができます。 | 2025年6月25日（PT） | 2025年7月11日（PT） <p>（当初は 2025 年 5 月 29 日にリリースする予定です）</p> |
+| **Chrome 事前レンダリングのサポート** | Chrome がページを事前レンダリングする際のデータ収集ライブラリの動作を制御します。（ドキュメントへのリンクを添付） |  | 2025年6月30日（PT） |
 
 ## Customer Journey Analytics の修正点
 
