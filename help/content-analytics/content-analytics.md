@@ -8,7 +8,7 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 89%
 
 ## 仕組み
 
-Content Analyticsは、Experience Platformのイベントデータセットの web 画像ビューデータを使用して [ コンテンツイベントデータを収集 ](config/datacollection.md) します。 そして、そのコンテンツデータ収集と、行動データの（既存の）データ収集の実装を組み合わせます。
+Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。そして、そのコンテンツデータ収集と、行動データの（既存の）データ収集の実装を組み合わせます。
 
 ![コンテンツ分析 - 仕組み](assets/aca-overview.gif)
 
@@ -67,7 +67,7 @@ Content Analyticsは、Experience Platformのイベントデータセットの w
 >[!MORELIKETHIS]
 >
 >[コンテンツ分析レポート](report/report.md)
->[コンテンツ分析の設定](config/configuration.md)
->[Customer Journey Analyticsでのバウンス数とバウンス率の計算 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>>[コンテンツ分析の設定](config/configuration.md)
+>>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

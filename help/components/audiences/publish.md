@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
    | --- | --- |
    | **[!UICONTROL オーディエンス]**&#x200B;インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL オーディエンスビルダー]が開きます。 |
    | Analysis Workspace のビジュアライゼーションから | Analysis Workspace の多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。例えば、[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の項目または[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)のノードのコンテキストメニューから「**[!UICONTROL オーディエンスを作成]**」を選択できます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**メモ：**&#x200B;オーディエンスに計算指標を含めることはできません。計算指標を含むオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。</p> |
-   | セグメントの作成／編集 UI から | 「**[!UICONTROL このセグメントからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、セグメントが事前に入力されます。詳しくは、[ セグメントの作成 ](/help/components/segments/seg-create.md) を参照してください。 |
+   | セグメントの作成／編集 UI から | 「**[!UICONTROL このセグメントからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、セグメントが事前に入力されます。詳しくは、[セグメントの作成](/help/components/segments/seg-create.md)を参照してください。 |
 
    {style="table-layout:auto"}
 
@@ -122,13 +122,13 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 
 ## オーディエンスを作成および公開した後に行われること {#after-audience-created}
 
-Customer Journey Analyticsでオーディエンスを作成して公開すると、そのオーディエンスがExperience Platformで使用できるようになり、[ オーディエンスポータル ](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/audience-portal) で表示できます。 オーディエンスはExperience Platformで使用でき、Adobe Journey Optimizerなど、他のExperience Platform アプリケーションで使用できます。
+Customer Journey Analytics でオーディエンスを作成して公開すると、そのオーディエンスは Experience Platform で使用可能になり、[オーディエンスポータル](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/audience-portal)で表示できます。Experience Platform で使用可能になったオーディンスは、Adobe Journey Optimizer など、他の Experience Platform アプリケーションで使用できます。
 
-Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメンテーション用に設定されている場合にのみ作成されます。
+Adobe Experience Platform ストリーミングセグメントは、組織がストリーミングセグメント化用に設定されている場合にのみ作成されます。
 
-Customer Journey AnalyticsからExperience Platformに公開されるオーディエンスを使用する場合は、次の点に注意してください。
+Customer Journey Analytics から Experience Platform に公開されるオーディエンスを使用する場合は、次の点に注意してください。
 
-* Experience Platformのオーディエンスは、Customer Journey Analytics オーディエンスと同じ名前および説明を共有します。 オーディエンスが一意であることを確保するために、名前に Customer Journey Analytics オーディエンス ID が追加されます。
+* Platform のオーディエンスは、Customer Journey Analytics オーディエンスと同じ名前および説明を共有します。オーディエンスが一意であることを確保するために、名前に Customer Journey Analytics オーディエンス ID が追加されます。
 * Customer Journey Analytics でオーディエンスの名前または説明に行った変更は、Experience Platform に反映されます。
 * Customer Journey Analytics でオーディエンスを削除した場合、オーディエンスのプロファイルメンバーシップの有効期限が切れるまで、そのオーディエンスは Experience Platform で引き続き使用できます。プロファイルメンバーシップは、1 回限りのオーディエンスの場合は 420 日後に、繰り返しオーディエンスの場合は 16 日後に有効期限が切れます。
 
@@ -171,7 +171,7 @@ Customer Journey Analytics は、公開済みのオーディエンスからす�
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
 
 ### オーディエンス数の不一致について
 

@@ -8,7 +8,7 @@ role: User
 source-git-commit: c526531206887acf7c750c8759d4eec5dd24935f
 workflow-type: tm+mt
 source-wordcount: '2487'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -37,12 +37,12 @@ ht-degree: 94%
 | **ジャーニーキャンバス** | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
 | **製品の使用状況** | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
 | **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータをさらに解釈できます。実装を変更せずにデータを変更または削除、部分文字列を使用してディメンションを操作、任意の値から指標を作成、またはサブイベントをフィルタリングできます。これらの変換はすべて非破壊的に行われます。Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
-| **データビュー全体で指標とディメンションを共有** | を使用すると [ 複数のデータビューにわたってディメンションと指標の設定を適用する ](/help/data-views/shared-metrics-dimensions/smd-overview.md) ことができます。 共有ディメンションまたは指標に加えた変更は、適用可能なすべてのデータビューにわたる、そのディメンションまたは指標のすべてのインスタンスに適用されます。 |
+| **データビューをまたいで指標とディメンションを共有** | [複数のデータビューをまたいでディメンションと指標の設定を適用](/help/data-views/shared-metrics-dimensions/smd-overview.md)できます。共有ディメンションまたは指標に対する変更は、適用可能なすべてのデータビュー全体で、そのディメンションまたは指標のすべてのインスタンスに適用されます。 |
 | **SQL アクセス** | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
 | **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースで、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。ディメンションはネストまたは階層化できます。<br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
-| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analyticsでは、「ユニーク数を超えました [!UICONTROL &#x200B; ラベルを表示できますが、こ &#x200B;] らのラベルは発生頻度がはるかに低く、データにセグメントを適用することで軽減できます。</p> |
+| **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL 超過したユニーク数]ラベルが表示されることがありますが、その発生頻度は非常に低く、データにセグメントを適用することで軽減できます。</p> |
 
 ## 完全にサポートされる Adobe Analytics 機能／コンポーネント {#full-support}
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 | **リスト変数／リスト prop** | フルサポート。Customer Journey Analytics では XDM を使用し、listVars と同様に使用できる無制限の文字列配列をサポートします。 |
 | **マーチャンダイジング eVar** | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=ja#binding-dimension)を介したフルサポート |
 | **指標** | フルサポート。Customer Journey Analytics ではエクスペリエンスデータモデル（XDM）を使用し、無制限の指標をサポートします。Adobe Analytics のカスタム成功イベントには関連付けられません。一部の標準指標は、Adobe Analytics から名前が変更されました：訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベント。 |
-| **Adobe AnalyticsからCustomer Journey Analyticsへのプロジェクト、セグメントおよび計算指標の移行** | フルサポート。 |
+| **Adobe Analytics から Customer Journey Analytics へのプロジェクト、フィルター、計算指標の移行** | フルサポート。 |
 | **モバイルスコアカード／ダッシュボード** | フルサポート |
 | **パネル** | 次のパネルをフルサポート：空のパネル、属性、フリーフォーム、クイックインサイト、次または前の項目。 |
 | **PDF への書き出し** | フルサポート |
@@ -110,7 +110,7 @@ ht-degree: 94%
 | **Products 変数** | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | **プロジェクトの共有** | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | **Report Builder** | Microsoft Excel 用の新しい Office 365 プラグインでサポートされます。 |
-| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、セグメントまたは計算指標を作成/更新/削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。 計算指標、セグメント、注釈などを作成するための追加のユーザー権限が利用可能です。 |
+| **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) 製品管理者、製品プロファイル管理者およびユーザーを区別します。他のユーザーが作成した接続、プロジェクト、セグメントまたは計算指標を作成／更新／削除できるのは製品管理者のみで、製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、セグメントまたは注釈などを作成するためのユーザー権限を追加できます。 |
 | **ビジュアライゼーション** | マップビジュアライゼーションを除く、すべてのワークスペースビジュアライゼーションがサポートされます。 |
 | **クロスデバイス／クロスチャネルのステッチ** | ID 情報を含むイベントデータセットに対してサポートされます。[ステッチ](../../stitching/overview.md)を参照してください。 |
 

@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,18 +31,18 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 
 ![サンプルプロジェクト](assets/example-project.png)
 
-* プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。例えば、**[!DNL Example Panel]** は ➊ です。
+* プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。例えば、 **[!DNL Example Panel]** は ➊ です。
 
 * パネルに[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を追加します。例：
-   * **[!DNL Line Graph]** [ 折れ線グラフ ](/help/analysis-workspace/visualizations/line.md) ビジュアライゼーション ➋
-   * **[!DNL Countries]** [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ビジュアライゼーション ➌
+   * **[!DNL Line Graph]**[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
+   * **[!DNL Countries]**[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
 * ビジュアライゼーションに[コンポーネント](/help/components/overview.md)を追加します。例：
-   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [ セグメント ](/help/components/segments/seg-overview.md) ➐
-   * **[!DNL Last Month]** [ 日付範囲 ](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [ 注釈 ](/help/components/annotations/overview.md) ➒
+   * **[!DNL Store Country]**[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
+   * **[!DNL People]**[&#x200B;指標](/help/components/apply-create-metrics.md)➎
+   * **[!DNL Avg Order Value]**[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
+   * **[!DNL Mobile App Sessions]**[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
+   * **[!DNL Last Month]**[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
+   * **[!DNL Example]**[&#x200B;注釈](/help/components/annotations/overview.md)➒
 
 
 ## プロジェクト情報および設定 {#project-info-settings}
@@ -81,7 +81,7 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
 | [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットを変更するには、色弱のユーザー向け用に最適化されている既定のパレットを選択するか、カスタムパレットを指定します。この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
 | [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 |
-| コメントを許可 | **メモ：** この機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般に利用できるようになったら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md) を参照してください。 <p>このオプションを有効にすると、Analysis Workspaceのプロジェクトの右側のパネルにコメント領域が表示されます。 詳しくは、[ プロジェクトへのコメントの追加と管理 ](/help/analysis-workspace/build-workspace-project/comment-projects.md) を参照してください。</p> |
+| コメントを許可 | **メモ：**&#x200B;この機能はリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般公開されたら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。 <p>このオプションが有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域が使用できます。詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。</p> |
 
 
 

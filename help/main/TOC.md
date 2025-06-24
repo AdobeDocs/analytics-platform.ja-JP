@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 995a2a9250f4ef929890b781b8d55263a04d38a3
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 93%
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
    + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
-   + 共有指標およびディメンション{#shared-metrics-dimensions}
+   + 共有指標とディメンション{#shared-metrics-dimensions}
       + [概要](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [編集者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
@@ -171,7 +171,7 @@ ht-degree: 93%
       + [概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [プロジェクトにコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [プロジェクトへのコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [プロジェクトを保存](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace のフォルダー {#workspace-folders}
          + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -334,7 +334,7 @@ ht-degree: 93%
       + [順次セグメント](/help/components/segments/seg-sequential-build.md)
       + [セグメントの共有](/help/components/segments/seg-share.md)
       + [セグメントのタグ設定](/help/components/segments/seg-tag.md)
-      + [セグメントのリストのフィルタリング](/help/components/segments/seg-filter.md)
+      + [セグメントリストのフィルタリング](/help/components/segments/seg-filter.md)
       + [セグメントのお気に入りへの登録](/help/components/segments/seg-favorite.md)
       + [セグメントの承認](/help/components/segments/seg-approve.md)
       + [セグメントのコピー](/help/components/segments/seg-copy.md)
@@ -390,11 +390,11 @@ ht-degree: 93%
 
 + Report Builder {#cja-reportbuilder}
    + [概要](../report-builder/rb-overview.md)
-   + [Report Builderの設定](../report-builder/report-builder-setup.md)
+   + [Report Builder の設定](../report-builder/report-builder-setup.md)
    + [データブロックの作成](../report-builder/create-a-data-block.md)
    + [Report Builder ハブ](../report-builder/report-builder-hub.md)
-   + [データビューを選択](../report-builder/select-data-view.md)
-   + [日付範囲を選択](../report-builder/select-date-range.md)
+   + [データビューの選択](../report-builder/select-data-view.md)
+   + [日付範囲の選択](../report-builder/select-date-range.md)
    + [セグメントの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
@@ -402,7 +402,7 @@ ht-degree: 93%
    + [クラウド書き出し用のワークブックのスケジュール](../report-builder/report-builder-export.md)
    + [ワークブックスケジュールの管理](/help/report-builder/manage-schedules-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
-   + [Report Builder設定](../report-builder/report-builder-settings.md)
+   + [Report Builder の設定](../report-builder/report-builder-settings.md)
 
 
 + レポートアクティビティマネージャー {#reporting-activity-manager}
@@ -416,7 +416,7 @@ ht-degree: 93%
    + [グラフベースのステッチ](/help/stitching/gbs.md)
    + [ステッチの使用](/help/stitching/use-stitching.md)
    + [ステッチされたデータセットの作成と管理](/help/stitching/stitching-ui.md)
-   + [ステッチを検証](/help/stitching/validate.md)
+   + [ステッチの検証](/help/stitching/validate.md)
    + [よくある質問](/help/stitching/faq.md)
 
 + アドビの統合 {#integrations}
@@ -439,12 +439,12 @@ ht-degree: 93%
       + [スキーマの異なるレポートスイートの結合](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
       + [ユーザーベースの B2B プロジェクトの例](../use-cases/b2b/example.md)
-      + B2B edition {#b2b-edition}
+      + B2B Edition {#b2b-edition}
          + [ユースケースの概要](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-         + [セットアップ](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [設定](/help/use-cases/b2b/b2b-edition/setup.md)
          + [アカウントマーケティングの最適化](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [主要アカウントの拡大](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
-         + [製品の価値を構築](/help/use-cases/b2b/b2b-edition/build-product-value.md)
+         + [製品価値の構築](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + 複雑なデータ {#complex-data}
       + [オブジェクトの配列を使用](../use-cases/object-arrays.md)
    + クロスチャネルデータ {#cross-channel}

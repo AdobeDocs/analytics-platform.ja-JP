@@ -6,8 +6,8 @@ exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 97%
 
 ## データビュー
 
-各パネルは、パネルの右上にあるドロップダウンメニューの ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビュー名&#x200B;*]**&#x200B;で識別される [ データビュー ](/help/data-views/data-views.md) に関連付けられています。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -155,7 +155,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ドロップダウンセグメント ](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -200,7 +200,7 @@ ht-degree: 97%
 
 #### 動的ドロップダウンセグメント
 
-動的ドロップダウンセグメントを使用すると、パネルのレポート範囲内のデータと他のドロップダウンセグメントの値に基づいて、使用可能な値を決定できます。例えば、国ディメンションと市区町村ディメンションを使用して、2 つの動的なドロップダウンを作成できます。**[!UICONTROL 国]** ドロップダウンメニューから国を選択すると、**[!UICONTROL 市区町村]** ドロップダウンメニューがその国内の都市のみを表示するように動的に調整されます。
+動的ドロップダウンセグメントを使用すると、パネルのレポート範囲内のデータと他のドロップダウンセグメントの値に基づいて、使用可能な値を決定できます。例えば、国ディメンションと市区町村ディメンションを使用して、2 つの動的なドロップダウンを作成できます。**[!UICONTROL 国]**&#x200B;ドロップダウンリストから国を選択すると、**[!UICONTROL 市区町村]**&#x200B;ドロップダウンリストが動的に調整され、その国内の市区町村のみが表示されます。
 
 これと同じ概念がすべてのディメンションに適用され、パネルの日付範囲内に表示されるディメンション項目と選択したセグメントのみが表示されます。静的ドロップダウンセグメントで選択したディメンション項目は、動的ドロップダウンセグメントで使用できる値に影響します。ただし、その逆は成り立ちません。動的ドロップダウンセグメントで選択したディメンション項目は、静的ドロップダウンセグメントで使用可能な値には影響しません。
 

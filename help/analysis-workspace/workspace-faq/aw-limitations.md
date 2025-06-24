@@ -6,8 +6,8 @@ exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 93%
 ## セグメント
 
 * 指標やディメンションには、セグメント化できないものがあります（[!UICONTROL イベント]、[!UICONTROL ユーザー]など）。
-* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックセグメントは、クイックセグメントのタイプです。公開されない限り、これらはWorkspaceの左パネルやセグメントマネージャーに表示されません。 詳しくは、[クイックセグメント](/help/components/segments/seg-quick.md)を参照してください。
+* [パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md)で作成されたアドホックセグメントは、クイックセグメントのタイプです。公開されない限り、Workspace の左パネルまたはセグメントマネージャーには表示されません。詳しくは、[クイックセグメント](/help/components/segments/seg-quick.md)を参照してください。
 
 ## 計算指標
 
@@ -46,5 +46,5 @@ ht-degree: 93%
 
 ## レポート設定
 
-* 「[!UICONTROL レポート設定]」ページの一部の設定は適用されません。Analysis Workspace では、一番下の「[!UICONTROL 言語 / 通貨 / エンコード]」設定（[!UICONTROL 千単位区切り文字]、[!UICONTROL 予定レポートのエンコード]、[!UICONTROL CSV 区切り文字]）のみが使用されます。
+* 「[!UICONTROL レポート設定]」ページの一部の設定は適用されません。Analysis Workspace では、一番下の「[!UICONTROL 言語 / 通貨 / エンコード]」設定（[!UICONTROL 桁区切り記号]、[!UICONTROL 予定レポートのエンコード]、[!UICONTROL CSV 区切り記号]）のみが使用されます。
 

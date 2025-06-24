@@ -7,8 +7,8 @@ feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 ### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
-Adobe Analyticsのセグメントと計算指標は、Customer Journey Analyticsと互換性がありません。 多くの場合は、使用可能な新しいスキーマとデータを使用して、Customer Journey Analytics でこれらのコンポーネントを再構築できます。
+Adobe Analytics セグメントおよび計算指標は、Customer Journey Analytics と互換性がありません。多くの場合は、使用可能な新しいスキーマとデータを使用して、Customer Journey Analytics でこれらのコンポーネントを再構築できます。
 
 ユーザーがシステム間を移行する際に作業ができるだけスムーズに進むように、次のことを行って前もって計画しておきます。
 
@@ -78,7 +78,7 @@ Adobe Analyticsのセグメントと計算指標は、Customer Journey Analytics
 
 2. 定義をドキュメント化する。
 
-3. データに必要なフィールドを特定し、それらを [ セグメント ](/help/components/segments/seg-overview.md) および [ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md) としてCustomer Journey Analyticsにレプリケートする。
+3. データに必要なフィールドを特定し、それらを[セグメント](/help/components/segments/seg-overview.md)および[計算指標](/help/components/calc-metrics/calc-metr-overview.md)として Customer Journey Analytics にレプリケートする。
 
 次に、ガイドとなるビデオをいくつか示します。
 

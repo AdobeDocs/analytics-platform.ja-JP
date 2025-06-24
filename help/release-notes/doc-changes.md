@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 53d88e105ca742d2ce5e04dbc66482655e9f5e4a
 workflow-type: tm+mt
 source-wordcount: '5261'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -23,28 +23,28 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 新しいショートカットアクション | Analysis Workspaceの新しいキーボードショートカットで、プロジェクト内で [Workspace パネルを上下に移動 ](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) できるようになりました。 |
 | **2025年5月** | |
 | Customer Journey Analytics[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 今後のCustomer Journey Analytics B2B editionに関するドキュメントのドラフト。これには以下が含まれます。 <ul><li>新しい [ 概要 ](/help/getting-started/cja-b2b-edition.md)、[ 概念と機能 ](/help/getting-started/cja-b2b-concepts-features.md)、[ クイックスタートガイド ](/help/getting-started/cja-b2b-quick-start-guide.md)、[ トランジションガイド ](/help/getting-started/cja-b2b-transition.md)、[ ユースケース ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) 記事、</li><li>既存のドキュメントに対する多数のアップデート。</li></ul>カスタマージャーニーB2B editionのドキュメント、記事および機能には、[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} バッジが付いています。 |
-| ステッチを検証 | 識別ステッチが認証の成功率と全体的な人物識別パフォーマンスに与える影響を [ 検証 ](/help/stitching/validate.md) するためのドキュメントを追加しました。 |
-| イベントの深度ディメンション | データビューの [ 標準ディメンション ](/help/components/dimensions/overview.md#standard-dimensions) の一部としての、新しいイベントの深さディメンションのドキュメント。 |
-| **2025 年 4 月** | |
-| フルテーブルの書き出し制限の増加 | 顧客が完全なテーブルの書き出しで使用できる [ 列数 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) を 5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に変更しました。 |
-| 接続 | 今後のカスタマージャーニーB2B editionに関するカスタマージャーニーコネクションのドキュメントを修正し更新しました。 |
-| 製品分析のユースケース | [Customer Journey Analyticsの製品分析 ](/help/use-cases/product-analysis.md) を追加しました。 |
-| 共有指標およびディメンション | [ 共有指標とディメンション ](/help/data-views/shared-metrics-dimensions/smd-overview.md) 機能に関するドキュメントを追加しました。 |
-| Report Builder | [Report Builder](/help/report-builder/rb-overview.md) のドキュメントを確認し、更新しました。 |
+| ステッチの検証 | 識別ステッチが認証の成功率と全体的な個人識別パフォーマンスに与える影響を[検証](/help/stitching/validate.md)するためのドキュメントを追加しました。 |
+| イベント深度ディメンション | データビューの[標準ディメンション](/help/components/dimensions/overview.md#standard-dimensions)の一部としての新しいイベント深度ディメンションのドキュメント。 |
+| **2025年4月** | |
+| 完全なテーブルの書き出し制限の引き上げ | 顧客が完全なテーブルの書き出しで使用できる[列数](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics)を 5 つのディメンションと 5 つの指標から 10 のディメンションと 10 の指標に変更しました。 |
+| 接続 | 今後のカスタマージャーニー B2B Edition に関するカスタマージャーニー接続のドキュメントを修正して更新しました。 |
+| 製品分析のユースケース | [Customer Journey Analytics の製品分析](/help/use-cases/product-analysis.md)を追加しました。 |
+| 共有指標とディメンション | [共有指標とディメンション](/help/data-views/shared-metrics-dimensions/smd-overview.md)機能に関するドキュメントを追加しました。 |
+| Report Builder | [Report Builder](/help/report-builder/rb-overview.md) のドキュメントを見直して更新しました。 |
 | 使用状況の表示と管理 | Customer Journey Analytics の使用状況を[表示](/help/connections/manage-connections.md#usage)および[管理](/help/technotes/estimate-usage.md)する方法に関するドキュメントを改訂しました |
-| Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) を使用すると、大量のコンテンツデータを迅速かつ簡単に調査して、トレンドを明らかにし、異常を見つけ出し、コンテンツの疲労を特定して、コンテンツの漏洩からインサイトを得ることができます。 |
-| ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
-| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| 用語の変更：「フィルター」から「セグメント」 | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（もちろん、検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントが更新されました。 |
+| Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。 |
+| Adobe Experience Platform にストリーミングメディアデータを収集するための XDM フィールドを更新しました | ストリーミングメディアデータを Adobe Experience Platform に収集する際、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用できなくなりました。これらのフィールドパスは、[オーディオおよびビデオパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[広告パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[チャプターパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[プレーヤーステートパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters)および[品質パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)のページに表示され、「廃止」としてマークされています。 |
+| メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| 用語の変更：「フィルター」から「セグメント」へ | 以前、Adobe Customer Journey Analytics では、セグメントを「フィルター」と呼んでいました。この用語は Adobe Analytics の用語と統一されました。「フィルター」は「セグメント」と呼ばれるようになりました。（検索フィルターは引き続き「フィルター」と呼ばれます。） UI とドキュメントは更新されました。 |
 | **2025年3月** | |
 | 量子指標のユースケース | [量子指標](/help/use-cases/third-party/quantum-metric/qm-overview.md)からデータを収集するためのユースケースを追加しました。 |
 | 製品使用状況テンプレート | 新しい Workspace テンプレートを使用すると、組織内での Customer Journey Analytics 製品の使用方法を確認できます。[学習を増やす](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
-| Customer Journey Analytics アップグレードガイド | Adobe Analytics から Customer Journey Analytics にアップグレードするためのステップバイステップガイドを生成できます。カスタムガイドの作成を開始するには、[!DNL Customer Journey Analytics] にログインし、「**[!UICONTROL Workspace**&#x200B;[!UICONTROL 」タブで &#x200B;]&#x200B;**Customer Journey Analyticsにアップグレード]** を選択します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
-| 数値ディメンションの「値なし」行項目を更新しました | 数値ディメンションの場合、この更新により、セグメントで「値なし」ディメンション項目を使用し、「値なし」行項目に関するレポートで分類を実行できます。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
-| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| Customer Journey Analytics アップグレードガイド | Adobe Analytics から Customer Journey Analytics にアップグレードするためのステップバイステップガイドを生成できます。カスタムガイドの生成を開始するには、[!DNL Customer Journey Analytics] にログインしてから、「**[!UICONTROL ワークスペース]**」タブで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| 数値ディメンションの「値なし」行項目の更新 | 数値ディメンションの場合、この更新により、セグメントで「値なし」ディメンション項目を使用して「値なし」行項目に関するレポートで分類を実行できます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025年2月** |  |
-| メディアコレクション：新しいメディアレポート XDM 用の Adobe ソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
-| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
+| メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
+| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
 | **2025年1月** |  |
 | 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。また、接続別、データセット別、サンドボックス別、タグ別に使用状況データを表示して分類することもできます。 |
 | 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |
@@ -52,7 +52,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ガイド付き分析 | ガイド付き分析内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
 | Journey Optimizer のレポートページでの Customer Journey Analytics のカスタムテンプレートの使用に関するドキュメント | [Customer Journey Analytics でテンプレートを作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできるようになりました。以前は、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできませんでした。 |
 | Analysis Workspace のテンプレート | [事前定義済みテンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)および[会社テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates)を Customer Journey Analytics で使用できるようになりました。 |
-| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
+| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
 
 ## 2024
 
@@ -63,18 +63,18 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ステッチとプライバシーリクエスト | プライバシーリクエストの結果である[未ステッチプロセスの今後の変更](/help/stitching/faq.md#frequently-asked-questions)に関する通知を追加しました。 |
 | **2024年10月** | |
 | ジャーニーキャンバスビジュアライゼーション | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
-| アセット転送 | プロジェクト、セグメント、計算指標などのコンポーネントの [ 所有権 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) を他のユーザーに転送し、継続性を確保して適切なアクセス権を持つことができます。 |
+| アセット転送 | 他のユーザーにプロジェクト、セグメント、計算指標などのコンポーネントの[所有権を転送](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/asset-transfer/transfer-assets)して、継続的に適切なアクセス権を持てるようにします。 |
 | 改善された使用状況インターフェイス | [すべての接続で取り込まれた行とレポート可能な行の使用状況](/help/connections/manage-connections.md#usage)を表示するように改善されたインターフェイスに関する記事を更新しました。 |
 | 共有デバイス | 共有デバイスに関するコンテキスト、ステッチを使用して共有デバイスからのデータを処理および軽減する方法、クエリサービスを使用してデータ内の共有デバイスの漏洩を理解する方法について説明する[ユースケース記事](/help/use-cases/stitching/shared-devices.md)を追加しました。 |
 | Analysis Workspace のパフォーマンスのリクエスト要因に関する新しい情報 | [Analysis Workspace のパフォーマンスの最適化](/help/technotes/optimizing-performance.md)の記事の新しい[リクエスト要因](/help/technotes/optimizing-performance.md#request-factors)の節では、リクエストの処理方法と、処理時間に影響を与える様々な要因について説明します。 |
-| Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）およびコンポーネント（注釈、ディメンション、（計算）指標、セグメント、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
+| Workspace とコンポーネント | Analysis Workspace プロジェクト（プロジェクト、ビジュアライゼーション、パネル）とコンポーネント（注釈、ディメンション、（計算）指標、セグメント、日付範囲、アラート、スケジュール済みプロジェクトおよびオーディエンス）に関するドキュメントを更新しました。 |
 | ガイド付き分析 | Analysis Workspace 内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
-| Audience ドキュメントの更新 | Analysis Workspace内のビジュアライゼーションから [ オーディエンスを作成 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish?lang=ja) する際に、パネルセグメントと列セグメントが追加の条件として含まれるようになりました。 |
+| Audience ドキュメントの更新 | Analysis Workspace 内のビジュアライゼーションから[オーディエンスを作成](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish?lang=ja)する際に、パネルセグメントと列セグメントが追加の条件として含まれるようになりました。 |
 | **2024年9月** | |
 | 概要データ更新 | 概要データに関するレポートを作成する際の[ルックアップデータ](/help/data-views/summary-data.md#lookup-data)の適切な使用方法に関する情報を含む概要データに関する記事を更新しました。 |
 | BI 拡張機能の更新 | BI 拡張機能ドキュメントに[デフォルトと制限](/help/data-views/bi-extension.md#defaults-and-limitations)のセクションを追加しました。 |
 | アラート | Customer Journey Analytics で利用できるようになった[アラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)機能のドキュメントを追加しました。 |
-| 計算指標マネージャーとセグメントマネージャーの「使用されている場所」列に表示される追加情報 | [ 計算指標マネージャー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja) および [ セグメントマネージャー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja) の「使用されている場所」列には、Report Builderおよびアドホックコンポーネントの新しいレポート領域が含まれています |
+| 計算指標マネージャーとセグメントマネージャーの「使用場所」列に含まれる追加情報 | [計算指標マネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=ja)と[セグメントマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=ja)の「使用場所」列には、Report Builder とアドホックコンポーネントの新しいレポート領域が含まれています。 |
 | **2024年8月** | |
 | B2B プロジェクトの例 | 新しい[B2B ルックアップ用にデータセットを変換](/help/connections/transform-datasets-b2b-lookups.md)機能を使用して、Customer Journey Analytics でプロファイル（ユーザー）レベルの B2B データを設定、構成、レポートする方法について説明した[ユースケース](/help/use-cases/b2b/example.md)を追加しました。 |
 | データ書き出しのユースケースを更新しました | ルックバックウィンドウを使用してセッション間でアトリビューションを適切に適用する方法を示す詳細なクエリの例を[クエリサービス（Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)に追加しました。 |
@@ -105,7 +105,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | Adobe Product Analytics 機能に関する新しいドキュメント | <ul><li>[機能マトリックス](/help/guided-analysis/types/funnel.md)</li><li>強化された[保持](/help/guided-analysis/types/retention.md)</li><li>[ファネルの強化されたインサイト](/help/guided-analysis/types/funnel.md)</li><li>1 つのファネルステップ内のイベントを比較</li></ul> |
 | **2024年3月** | |
 | 「使用場所」列に関する使用状況情報は、2023年9月以降のみ使用可能です。 | [プロジェクトのランディングページ](/help/getting-started/landing.md)の&#x200B;**使用場所**&#x200B;列に関する使用状況情報は、2023年9月までしか遡らないことを明確にしました。 |
-| プロジェクト専用の Workspace コンポーネントの権限強化に関するドキュメントを追加しました。 | プロジェクトを他のユーザーと共有すると、それらのユーザーは、共有プロジェクトに埋め込まれた [ クイックセグメント ](/help/components/segments/seg-quick.md) やその他のプロジェクト専用のコンポーネントを編集できます。 |
+| プロジェクト専用の Workspace コンポーネントの権限強化に関するドキュメントを追加しました。 | プロジェクトを他のユーザーと共有すると、それらのユーザーは、共有プロジェクトに埋め込まれた[クイックセグメント](/help/components/segments/seg-quick.md)およびその他のプロジェクト専用のコンポーネントを編集できます。 |
 | **2024年2月** | |
 | プロジェクト共有ドキュメントの更新 | [自分と共有されているプロジェクトを表示する](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you)方法に関する情報を追加しました。<p>また、[個々または複数のプロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)に関する情報も整理しました。</p> |
 | クラウド書き出しの場所を設定する際に、Azure SAS および Azure RBAC にファイルをアップロードする権限要件を追加しました。 | [クラウド書き出しのアカウントを設定](/help/components/exports/cloud-export-accounts.md)し、[クラウド書き出しの場所を設定](/help/components/exports/cloud-export-locations.md)する際に、Azure SAS および Azure RBAC にファイルをアップロードする正確な権限要件を追加しました。 |
@@ -117,7 +117,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 予測 | [予測](../analysis-workspace/c-forecast/forecasting.md)に関するドキュメントを追加しました。これは、標準指標または計算指標を、フリーフォームテーブルと折れ線グラフに対してサポートされている任意の時間精度（時間単位、日単位、週単位、月単位、年単位）で予測する新しい Analysis Workspace 機能です。 |
 | 完全なテーブルを書き出す際のアカウントと場所の追加に関するドキュメントを更新しました。 | ドキュメントを更新して、[Analysis Workspace からの完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)時に新しいアカウントまたは場所を設定する際のマイナーなインターフェイスの更新を反映しました。<p>新しい「[!UICONTROL **アカウントを追加**]」オプションが&#x200B;[!UICONTROL **アカウント**]&#x200B;ドロップダウンメニューで使用できるようになりました。以前は&#x200B;[!UICONTROL **場所名**]&#x200B;ドロップダウンメニューの横のボタンとして使用できた「[!UICONTROL **場所を追加**]」オプションが、メニュー内で使用できるようになりました。 |
 | Adobe Analytics から移行する際の新しいコンポーネント移行情報 | Adobe Analytics 管理ガイドに記載されている新しい[コンポーネント移行](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)機能を参照する [Adobe Analytics からの進化](/help/getting-started/aa-to-cja.md)に情報を追加しました。 |
-| 特定の情報は管理者のみが利用できることを明確化 | [ 計算指標マネージャー ](/help/components/calc-metrics/cm-workflow/cm-manager.md) および [ セグメントマネージャー ](/help/components/segments/seg-manage.md) で説明されている「最後に使用された」列と「使用された場所」列が、システム管理者のみが使用できることを示す情報を追加しました。 |
+| 特定の情報は管理者のみが利用できることを明確化 | [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md)および[セグメントマネージャー](/help/components/segments/seg-manage.md)で説明している「前回の使用」列と「使用場所」列は、システム管理者のみが使用できることを示す情報を追加しました。 |
 | データセットの書き出しに必要な権限 | データセットをクラウド宛先に書き出すのに[必要な権限](/help/technotes/access-control.md)を説明した情報を追加しました。 |
 | 接続の管理 | 顧客からのフィードバックに基づいて、[接続の管理](../connections/manage-connections.md)の記事を更新しました。 |
 | 派生フィールド | 関数[制限](/help/data-views/derived-fields/derived-fields.md#limitations)の概要と、関数で使用される[演算子](/help/data-views/derived-fields/derived-fields.md#operators)の数を決定する方法の説明を追加しました。 |
@@ -136,9 +136,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 異常値検出ドキュメントの更新 | 異常値検出に関するドキュメントは、以前は Virtual Analyst に関するセクションにありました。次の変更を行いました。 <ul><li>Virtual Analyst という用語はドキュメントから削除しました。</li><li>[異常値検出](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)に関する節は、Analysis Workspace の節のすぐ下に移動しました。</li></ul> |
 | **2023年10月** | |
 | 派生フィールドを使用した目標とターゲットの設定 | 派生フィールドを使用して目標とターゲットを設定し、これらに関するレポートを作成する方法を説明する[ユースケース](../use-cases/goals-using-derived-fields.md)記事を追加しました。 |
-| 完全なテーブルのクラウドへの書き出し | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace内で設計されたデータテーブルを 1 回限りまたはスケジュールされた形で配信できます。また、最大 5 つの分類、5 つの指標、セグメント、計算指標をすべて連結テーブルでサポートします。 これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
+| 完全なテーブルのクラウドへの書き出し | 数百万の Workspace 行を含んだ完全なテーブルのクラウド宛先への書き出しに関するドキュメントを追加しました。 <p>完全なテーブルを書き出すと、Workspace 内で設計されたデータテーブルを 1 回限りまたは予定どおりに配信でき、連結されたテーブルで、最大 5 つの分類、5 つの指標、セグメント、計算指標をすべてサポートします。これは、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。</p><p>詳しくは、[Customer Journey Analytics レポートをクラウドに書き出し](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=ja)を参照してください。 |
 | レポートアクティビティマネージャー | レポートアクティビティマネージャーに関するドキュメントを追加しました。 <p>レポートアクティビティマネージャーでは、組織内の各接続のレポート処理能力を確認できます。レポートの使用状況を詳細に把握し、レポート作成のピーク時の処理能力に関する問題を簡単に診断および修正できます。</p> <p>次の新しい記事が追加されました。<ul><li>[レポートアクティビティマネージャーの概要](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[レポートアクティビティマネージャーでのレポートアクティビティの表示](/help/reporting-activity-manager/reporting-activity.md)</li><li>[レポートアクティビティマネージャーでのリクエストのキャンセル](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
-| 管理ページの新しい列 | [ 計算指標マネージャー ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja) および [ セグメントマネージャー ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja) で利用できるドキュメントの新しい列が追加されました。 |
+| 管理ページの新しい列 | [計算指標マネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=ja)および[セグメントマネージャー](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=ja)で使用できるようになった新しい列について文書化しました。 |
 | Adobe Analytics との比較 | Customer Journey Analytics と Adobe Analytics の違いを比較して理解することを目的としたイントロダクションとして[概要ページ](../getting-started/aa-vs-cja/overview.md)を追加しました。 |
 | その他の派生フィールド機能 | 新しい [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 関数のドキュメントを更新しました。 |
 | **2023年9月** | |
@@ -178,10 +178,10 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | インテリジェントキャプションドキュメント | 折れ線グラフのビジュアライゼーションの[自然言語による要約](/help/analysis-workspace/visualizations/intelligent-captions.md)を使用して、ユーザー向けのストーリーテリングを強化します。 |
 | 派生フィールド | [派生フィールド](../data-views/derived-fields/derived-fields.md)機能のドキュメントを追加しました。 |
 | **2023年4月** |  |
-| ディメンションとしてのセグメントの使用に関するビデオ | セグメントをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[ セグメントの作成 ](/help/components/segments/seg-create.md) ページからリンクされています。</p> <p>次に、[Analysis Workspaceでセグメントをディメンションとして使用 ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja) というビデオへの直接リンクを示します。</p> |
-| セグメントのドキュメント | [ セグメントビルダー ](/help/components/segments/seg-builder.md) の使用に関する記事を追加しました。 <p>[ セグメントの作成 ](/help/components/segments/seg-create.md) および [ セグメント化の概要 ](/help/components/segments/seg-overview.md) のドキュメントを合理化しました。</p> |
-| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=ja#non-randomized)に関する節を追加しました。 |
-| プロジェクトセグメント（アドホックおよびクイックセグメント） | プロジェクトセグメントに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックセグメントの作成手順は、[クイックセグメントの作成](/help/components/segments/seg-quick.md)手順と統合しました。 |
+| セグメントをディメンションとして使用する方法に関するビデオ | セグメントをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[セグメントを作成](/help/components/segments/seg-create.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でセグメントをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
+| セグメントのドキュメント | [セグメントビルダー](/help/components/segments/seg-builder.md)を使用する方法に関する記事を追加しました。 <p>[セグメントを作成](/help/components/segments/seg-create.md)と[セグメント化の概要](/help/components/segments/seg-overview.md)のドキュメントを合理化しました。</p> |
+| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)に関する節を追加しました。 |
+| プロジェクトセグメント（アドホックおよびクイックセグメント） | プロジェクトセグメントに関するドキュメントを合理化し、重複した情報を削除しました。アドホックセグメントの作成手順は、[クイックセグメントの作成](/help/components/segments/seg-quick.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [Customer Journey Analytics での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
 | モバイルスコアカードでのデータストーリーの作成 | [データストーリー](/help/mobile-app/create-scorecard.md#create-data-stories)は、中心的なテーマや指標に基づいて作成された、サポート対象データポイント、ビジネスコンテキスト、関連指標のコレクションです。 |
@@ -218,8 +218,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [Customer Journey Analytics 監査ログ](/help/privacy/audit-log.md)に関する新しいトピック。 |
 | 2022年10月 | [主要な指標の概要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=ja)ビジュアライゼーションに関する新しいトピック。 |
-| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#date)に関する新しい節 |
-| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=ja#view-detail-slides)に関する新しいトピック。 |
+| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date)に関する新しい節 |
+| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)に関する新しいトピック。 |
 | 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** | |
 | 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/third-party/ga/overview.md)に関する新しいユースケース。 |
@@ -272,7 +272,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2021年11月** | |
 | 2021年11月 | 接続の詳細ページの「[[!UICONTROL スキップされたレコード]](/help/connections/manage-connections.md)」のドキュメントを更新しました。 |
 | **2021年10月** | |
-| 2021年10月 | Customer Journey Analytics の [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=ja#) のドキュメント。 |
+| 2021年10月 | Customer Journey Analytics の [Report Builder](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-reportbuilder/rb-overview) のドキュメント。 |
 | 2021年10月 | Customer Journey Analytics [監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API ドキュメント |
 | 2021年10月 | ドキュメント化した [Analytics ダッシュボードのビジュアライゼーション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#apply-visualizations) |
 | 2021年10月 | [!UICONTROL 接続][データ保持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)のためのローリングウィンドウ（相対期間）のドキュメント。 |
