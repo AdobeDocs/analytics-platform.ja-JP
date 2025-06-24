@@ -5,9 +5,9 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 ## オーディエンスリストでのオーディエンスの表示
 
-オーディエンス リスト ➊ には、既存のオーディエンスが表示されます。
+オーディエンスリスト ➊ には、既存のオーディエンスが表示されます。
 
 ![Audience Manager](assets/audiences-manager.png)
 
@@ -80,9 +80,9 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
-| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。**[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**&#x200B;ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。 「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。**[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 | ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択したオーディエンスを削除します。 |
-| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。**[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**&#x200B;ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。**[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 
 スケジュールされたプロジェクトを 1 つ以上選択すると、青色のアクションバーから次のアクションを実行できます。
 
@@ -94,7 +94,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 ## オーディエンスリストのフィルタリング
 
-フィルターパネル ➋ ールを使用して、[ オーディエンス ](#audiences-list) リストをフィルタリングできます。 フィルターパネルを表示または非表示にするには、![フィルター](/help/assets/icons/Filter.svg) を使用します。
+フィルターパネル ➋ を使用して[オーディエンスリスト](#audiences-list)をフィルタリングできます。フィルターパネルを表示または非表示にするには、![フィルター](/help/assets/icons/Filter.svg) を使用します。
 
 ![Audience Manager](assets/audiences-manager.png)
 

@@ -3,9 +3,9 @@ title: 製品使用状況の概要
 description: 組織が Customer Journey Analytics をどのように使用しているかに関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -129,8 +129,8 @@ Customer Journey Analytics のインターフェイスのこのセクション�
 
 ## 使用可能なテンプレート
 
-この機能で自動生成されたコンポーネントを使用する [&#128279;](/help/analysis-workspace/templates/use-templates.md)0&rbrace;Adobe テンプレート &rbrace; が利用可能になっています。
+この機能によって自動生成されたコンポーネントを使用する[アドビテンプレート](/help/analysis-workspace/templates/use-templates.md)を使用できます。
 
-**[!UICONTROL Adobe テンプレート]**/**[!UICONTROL その他]**/**[!UICONTROL 製品の使用状況の概要]**
+**[!UICONTROL アドビテンプレート]**／**[!UICONTROL その他]**／**[!UICONTROL 製品の使用状況の概要]**
 
-データビューセレクターで製品使用状況が自動的に作成されたデータ表示を選択し、**[!UICONTROL 製品使用状況の概要]** テンプレートを選択します。 **[!UICONTROL プレビュー]** を選択してテンプレートが使用するパネルを確認し、理想的なユースケースについて学ぶか、**[!UICONTROL テンプレートを使用]** を選択してAnalysis Workspaceで開きます。
+データビューセレクターで、製品の使用状況から自動的に作成されたデータビューを選択し、**[!UICONTROL 製品の使用状況の概要]**&#x200B;テンプレートを選択します。「**[!UICONTROL プレビュー]**」を選択してテンプレートで使用するパネルを確認し、理想的なユースケースの詳細を見るか、「**[!UICONTROL テンプレートを使用]**」を選択して Analysis Workspace で開きます。

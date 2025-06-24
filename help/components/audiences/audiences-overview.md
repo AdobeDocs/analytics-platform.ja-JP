@@ -5,24 +5,24 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # オーディエンス公開の概要
 
-Customer Journey Analytics で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ja)に公開し、顧客のターゲティングやパーソナライゼーションに使用できるようになりました。
+Customer Journey Analytics で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)に公開し、顧客のターゲティングやパーソナライゼーションに使用できるようになりました。
 
 公開オーディエンスを使用すると、Customer Journey Analytics 内で見つかったインサイトを活用してアクションを行う明確な方法がわかります。アクションの例として、次のようなものがあります。
 
-* Adobe Journey Optimizerでのジャーニーにオーディエンスを使用する。
-Journey Optimizerに公開されているオーディエンスの使用について詳しくは、Experience Platform ドキュメントの [ オーディエンスの基本を学ぶ ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) を参照してください。
+* Adobe Journey Optimizer でジャーニーにオーディエンスを使用する。
+Experience Platform に公開されているオーディエンスの使用について詳しくは、Journey Optimizer ドキュメントの[オーディエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences)を参照してください。
 * Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートする。
 * Customer Journey Analytics のイベントベースのデータから派生する有用な属性を使用して、リアルタイム顧客プロファイルを充実させる。
-* オーディエンスの公開後に、最小限の待ち時間でこれらすべてを行います。
-詳しくは、[ オーディエンスの作成と公開 ](/help/components/audiences/publish.md#latency-considerations) の [ 待ち時間に関する考慮事項 ](/help/components/audiences/publish.md) を参照してください。
+* オーディエンスの公開後に、最少の待ち時間でこれらをすべて行います。
+詳しくは、[オーディエンスを作成および公開](/help/components/audiences/publish.md)の[待ち時間に関する考慮事項](/help/components/audiences/publish.md#latency-considerations)を参照してください。
 * 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開。
 
 Customer Journey Analytics で作成するオーディエンスは、プロファイルで有効になっているデータセットに基づいている必要はありません。プロファイルに関連するデータセットやスキーマを有効にせずに、履歴データを Experience Platform に取り込むことができます。次に、これらのデータセットを使用して、Customer Journey Analytics で関連するオーディエンスを検出し、これらのオーディエンスを Experience Platform のリアルタイム顧客プロファイルに公開して、アクティベーションを行います。

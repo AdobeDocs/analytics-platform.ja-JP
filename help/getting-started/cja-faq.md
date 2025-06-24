@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Customer Journey Analytics は、次世代の分析製品です。この記事では、Customer Journey Analytics に関するよくある質問に対する回答を示します。詳しくは、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
-## 1. 前提条件 {#prerequisites}
+## &#x200B;1. 前提条件 {#prerequisites}
 
 +++**[!UICONTROL Customer Journey Analytics] には、[!UICONTROL プライベートデバイスグラフ]または [!UICONTROL Device Co-op] は必要ですか？**
 
@@ -39,7 +39,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 +++
 
 
-## 2. データのステッチ {#stitching}
+## &#x200B;2. データのステッチ {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] では、様々なデバイスやデータセットにわたって「ステッチ」することはできますか？**
 
@@ -76,7 +76,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++
 
-## 3. [!UICONTROL Customer Journey Analytics] へのデータの取り込み {#ingest}
+## &#x200B;3. [!UICONTROL Customer Journey Analytics] へのデータの取り込み {#ingest}
 
 +++**異なる [!UICONTROL Adobe Experience Platform] サンドボックスのデータを 1 つの [!UICONTROL Customer Journey Analytics] 接続に結合することはできますか？**
 
@@ -87,7 +87,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**[!UICONTROL Customer Journey Analytics] でオンラインデータをオフラインデータに接続するにはどうすればよいですか？**
 
-データセット間で個人 ID が一致する限り、[!UICONTROL Customer Journey Analytics] はデータセット間でセグメント、アトリビューション、フロー、フォールアウトなどを接続できます。
+データセット間でユーザー ID が一致する限り、[!UICONTROL Customer Journey Analytics] はデータセット間でセグメント、アトリビューション、フロー、フォールアウトなどを接続できます。
 
 +++
 
@@ -128,7 +128,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 +++
 
 
-## 4. 待ち時間に関する考慮事項 {#latency}
+## &#x200B;4. 待ち時間に関する考慮事項 {#latency}
 
 >[!NOTE]
 >
@@ -143,13 +143,13 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 * 「現在」の日付のイベントデータは、ライブデータとしてストリーミングされます。前日の午後 11:59:59（23:59:59）より前のイベント時間を持つデータは、バックフィルとして処理されます。
 * 経過時間が 24 時間以上のイベントデータは、（より新しいデータと同じバッチにある場合でも）バックフィルと見なされ、低い優先度で取り込まれます。
 
-## 5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
+## &#x200B;5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
-## 6. データコンポーネントの削除の影響 {#deletion}
+## &#x200B;6. データコンポーネントの削除の影響 {#deletion}
 
 データを削除する場合は、サンドボックス、スキーマ、データセット、接続、データビュー、Workspace プロジェクトの 6 種類のコンポーネントについて考慮する必要があります。次に、これらのコンポーネントを削除した場合に考えられるシナリオを示します。
 
@@ -164,7 +164,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存する Workspace プロジェクトは動作しなくなります。</li></ul> |
 | [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
 
-## 7. レポートスイートを Customer Journey Analytics で結合する際の考慮事項 {#merge-reportsuite}
+## &#x200B;7. レポートスイートを Customer Journey Analytics で結合する際の考慮事項 {#merge-reportsuite}
 
 [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=ja)を通じて Adobe Analytics データを取り込む予定がある場合は、2 つ以上の Adobe Analytics レポートスイートを結合する際に、次の影響を考慮してください。
 
@@ -174,10 +174,10 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 | [!UICONTROL セッション]と[!UICONTROL ユーザー]のカウント | 複数のレポートスイートをまたいで重複排除が行われます。その結果、カウントが一致しない場合があります。 |
 | 指標の重複排除 | 複数の行に同じトランザクション ID がある場合（例：[!UICONTROL 購入 ID]）、指標のインスタンスの重複を排除します（例：[!UICONTROL 注文]）。これにより、主要指標の数が増えすぎるのを防ぎます。その結果、[!UICONTROL 注文]などの指標が複数のレポートスイートにまたがって合計されない場合があります。 |
 | 通貨 | 通貨換算は、まだ Customer Journey Analytics でサポートされていません。異なる基本通貨を使用しているレポートスイートを結合すると、問題が発生する可能性があります。 |
-| [!UICONTROL 永続性] | [ 永続性 ](../data-views/component-settings/persistence.md) は複数のレポートスイートにまたがって適用され、[!UICONTROL &#x200B; セグメント &#x200B;]、[!UICONTROL &#x200B; アトリビューション &#x200B;] などに影響します。 数値が正しく加算されない場合があります。 |
+| [!UICONTROL 永続性] | [永続性](../data-views/component-settings/persistence.md)は複数のレポートスイートにまたがって適用され、[!UICONTROL セグメント]、[!UICONTROL アトリビューション]などに影響します。数値が正しく加算されない場合があります。 |
 | [!UICONTROL 分類] | [!UICONTROL 分類] は、レポートスイートを結合する際に、分類の重複が自動的に除外されないようにします。複数の分類ファイルを 1 つの[!UICONTROL ルックアップ]データセットに組み合わせると、問題が発生する場合があります。 |
 
-## 8. [!UICONTROL Adobe Analytics] コンポーネント
+## &#x200B;8. [!UICONTROL Adobe Analytics] コンポーネント
 
 +++**[!UICONTROL オーディエンス]を [!DNL Customer Journey Analytics] から Experience Platform Real-Time CDP または他の Experience Cloud アプリケーションに共有または公開できますか？**
 
@@ -215,17 +215,17 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 +++
 
-## 9. 接続サイズの推定 {#estimate-size}
+## &#x200B;9. 接続サイズの推定 {#estimate-size}
 
 詳しくは、[接続の使用状況](/help/connections/manage-connections.md#usage)を参照してください。
 
-## 10. 使用量超過について {#overage}
+## &#x200B;10. 使用量超過について {#overage}
 
 使用量制限は、アドビによって定期的にモニタリングされ、適用されます。「データ行」とは、Customer Journey Analytics 内で分析に使用できる 1 日あたりの平均データ行数を意味します。
 
 例えば、契約では 100 万行のデータを使用できるとします。Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
 
-## 11. データの不一致の診断 {#discrepancies}
+## &#x200B;11. データの不一致の診断 {#discrepancies}
 
 場合によっては、接続によって取り込まれるイベントの合計数が [!UICONTROL Adobe Experience Platform] のデータセットの行数と異なることがあります。この例の場合、データセット「B2B Impression」には 7650 の行がありますが、[!UICONTROL Adobe Experience Platform] のデータセットの行数は 3830 です。不一致が発生する理由はいくつかあり、次の手順を実行して診断できます。
 
@@ -238,7 +238,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 [!UICONTROL Customer Journey Analytics] と [!UICONTROL Adobe Experience Platform] におけるデータセットと接続の削除の影響については、[こちら](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ja#implications-of-deleting-data-components)を参照してください。
 
 
-## 12. 地域データ収集
+## &#x200B;12. 地域データ収集
 
 Adobe Experience Cloud では、地域データ収集（RDC）を使用して、訪問者とアドビおよびアドビ以外のソリューションとの間のインタラクションが訪問者のできるだけ近くで行われるようにします。 データがデータ収集センター （DCC、Edge サイトとも呼ばれ、Platform Edge Network の一部）に地域的に収集されると、データストリームやイベント転送の設定に基づいて、安全な接続を介して関連ソリューションに転送されます。
 

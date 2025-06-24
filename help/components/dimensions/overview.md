@@ -1,29 +1,29 @@
 ---
 title: ディメンションの概要
-description: ディメンションの概要とCustomer Journey Analyticsでの使用方法を説明します
+description: ディメンションの概要と Customer Journey Analytics での使用方法について学ぶ
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
 # ディメンションの概要
 
-ディメンションは、データの分析に使用されるCustomer Journey Analyticsのコンポーネントタイプです。 例えば、[&#128279;](/help/report-builder/rb-overview.md)Analysis Workspaceや [Report Builder](/help/analysis-workspace/home.md) でレポートを作成する場合にディメンションを使用し  す。
+ディメンションは、データの分析に使用される Customer Journey Analytics のコンポーネントタイプです。例えば、[Analysis Workspace](/help/analysis-workspace/home.md) や [Report Builder](/help/report-builder/rb-overview.md) でレポートを作成する場合にディメンションを使用します。
 
-Customer Journey Analyticsのディメンションの種類は無制限です。値には、数値、テキスト、オブジェクト、リストまたはすべてが混在する場合があります。
+Customer Journey Analytics のディメンションは無制限タイプです。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。
 
-Customer Journey Analyticsの基本レポートでは、指標の列（一般的には数値）に対する、ディメンションの行（一般的には文字列値）が表示されます。
+Customer Journey Analytics の基本レポートでは、指標の列（一般的には数値）に対する、ディメンションの行（一般的には文字列値）が表示されます。
 
-例えば、ページ ディメンションを人物指標と組み合わせると、訪問回数の多いページを人物で示したランクレポートが表示されます。
+例えば、「ページ」ディメンションと「人物」指標を組み合わせると、最も多くの人にアクセスされたページを示すランクレポートが表示されます。
 
-| ページ | ユーザー |
+| ページ | 人物 |
 | --- | ---: |
 | ホームページ | 800 |
-| 製品紹介ページ | 500 |
+| 製品ページ | 500 |
 | 購入ページ | 100 |
 
 {style="table-layout:fixed"}
@@ -33,9 +33,9 @@ Customer Journey Analyticsの基本レポートでは、指標の列（一般的
 
 ## ディメンションの作成
 
-Customer Journey Analytics管理者は [ データビュー内でディメンションを作成する ](/help/data-views/create-dataview.md#components) ことができます。
+Customer Journey Analytics 管理者は[データビュー内でディメンションを作成する](/help/data-views/create-dataview.md#components)ことができます。
 
-## 標準寸法
+## 標準ディメンション
 
 データビューを作成する場合、デフォルトでは、次のコンポーネントがディメンションとしてデータビューに追加されます。
 
@@ -44,10 +44,10 @@ Customer Journey Analytics管理者は [ データビュー内でディメンシ
 
 ## ディメンションの説明の追加
 
-Customer Journey Analytics管理者は、データビュー内または直接Analysis Workspace内で、ディメンションやその他のコンポーネントの説明を追加できます。 ディメンションに説明を追加する方法について詳しくは、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)を参照してください。
+Customer Journey Analytics 管理者は、データビュー内または直接 Analysis Workspace 内で、ディメンションやその他のコンポーネントの説明を追加できます。ディメンションに説明を追加する方法について詳しくは、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
->[ イベントの深さ機能を使用して、より深い顧客インサイトを得る ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
+>[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >
 

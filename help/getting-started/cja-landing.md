@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,30 +15,30 @@ ht-degree: 80%
 
 このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
 
-Customer Journey Analyticsを使用すると、共通の顧客 ID に基づいてAnalysis Workspaceのオンラインデータとオフラインデータを結び付ける方法を制御でき、アトリビューション、セグメント、フロー、フォールアウトなどを実行できるようになります。 実行できます。
+Customer Journey Analytics を使用すると、共通の顧客 ID に基づく Analysis Workspace のオンラインデータとオフラインデータの接続方法を制御し、顧客データ全体でアトリビューション、セグメント、フロー、フォールアウトなどを実行できます。
 
 ## 新着情報
 
-Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントのアップデートについて詳しくは、[ ドキュメントのアップデートページ ](../release-notes/doc-changes.md) を参照してください。
+Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
 
 >[!TAB コンテンツ分析]
 
-Content Analytics を使用すると、大量のコンテンツデータをすばやく簡単に調査して、トレンドを明らかにし、異常を発見し、コンテンツの疲労を特定し、コンテンツの閲覧状況からインサイトを取得できます。
+Content Analytics を使用すると、大量のコンテンツデータをすばやく容易に調べて、トレンドを明らかにし、異常を発見し、コンテンツ疲れを特定し、コンテンツの閲覧状況からインサイトを取得できます。
 
 [![画像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
->[!TAB  イベントの深度 ]
+>[!TAB イベント深度]
 
-イベントの深度は新しい標準ディメンションであり、顧客セッション内でのイベントの位置づけを測定し、より深く理解するための新しい方法を提供します。 イベントの深度ディメンションを使用すると、セッション内のユーザーインタラクションの順次フローで特定のイベントが発生する場所の詳細なトラッキングと分析が可能になります。
+イベント深度は新しい標準ディメンションであり、顧客セッションにおけるイベントの位置づけを測定および深く理解するための新しい手段となります。イベント深度ディメンションを使用すると、セッション内でのユーザーインタラクションの順次フローにおいて、特定のイベントが発生するタイミングを詳細にトラッキングおよび分析できます。
 
 [![画像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
 
 
->[!TAB  共有指標およびディメンション ]
+>[!TAB 共有指標と共有ディメンション]
 
-共有指標およびディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元的に管理する場所を提供します。 これらのコンポーネントは、複数のデータビューを使用する組織で特に役立ちます。特に、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
+共有指標と共有ディメンションでは、任意の数のデータビューっをまたいで使用できるディメンションと指標を、一元的に管理できます。これらのコンポーネントは、特に、組織が複数のデータビューを使用し、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 

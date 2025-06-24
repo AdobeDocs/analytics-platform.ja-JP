@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: Product Analytics
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 92%
 | ガイド付き分析の用語 | Analysis Workspace の用語 |
 | --- | --- |
 | イベント（バイナリ 1/0 指標） | 指標 |
-| ユーザー | ユーザー |
+| ユーザー | 人物 |
 | ディメンション | ディメンション |
 | ディメンション項目 | ディメンション項目 |
 | セグメント | セグメント |
@@ -60,9 +60,9 @@ ht-degree: 92%
 
 [Analysis Workspace](../analysis-workspace/home.md) とガイド付き分析では同じ基礎データを使用しますが、各ツールでそのデータのクエリを作成する方法が異なります。
 
-* **Analysis Workspace は、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。セグメントは、行と列の両方に適用して、目的のデータを取得できます。
+* **Analysis Workspace は、ディメンションを中心としたエクスペリエンスです。** テーブルは通常、ディメンションの行で構成され、列は通常、指標です。行と列の両方にセグメントを適用して、目的のデータを取得できます。
 
-* **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。** 各分析はイベントの選択から始まり、ディメンションとセグメントを追加してイベントデータを絞り込むことができます。
+* **ガイド付き分析は、イベントやユーザー中心のエクスペリエンスです。**&#x200B;各分析では、まずイベントを選択してから、ディメンションとセグメントを追加してそのイベントデータを絞り込むことができます。
 
 ![Analysis Workspace とガイド付き分析のビュー](assets/structure.png){style="border:1px solid gray"}
 
