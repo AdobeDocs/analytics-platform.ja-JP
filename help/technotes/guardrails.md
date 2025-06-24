@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # Customer Journey Analytics ガードレール
 
-このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに対して制限を提供します。 ガードレール、スコーピングパラメーター、使用権限については、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html)、[Adobe Analytics アドオンの製品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)、[Customer Journey Analytics B2B editionの製品説明 ](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html) を参照してください。
+このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに対して制限を提供します。 ガードレール、スコーピングパラメーター、使用権限については、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html)、[Adobe Analytics アドオンの製品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)、[Customer Journey Analytics B2B editionの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics-b2b.html) を参照してください。
 
 ## 上限のタイプ
 
@@ -139,7 +139,7 @@ Experience Platform[Real-time Customer Data Platform ガードレール ](https:
 
 {style="table-layout:auto"}
 
-Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) も参照してください。
+Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) も参照してください。
 
 
 ## 宛先データの書き出し
@@ -151,7 +151,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 
 {style="table-layout:auto"}
 
-Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
+Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
 
 
 ## データランディングゾーン
@@ -252,7 +252,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
