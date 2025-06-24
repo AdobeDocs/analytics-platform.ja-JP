@@ -105,6 +105,6 @@ Customer Journey Analytics のアーキテクチャと統合に関する概要�
 
 >[!MORELIKETHIS]
 >
->* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
->* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
->* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
+>* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=ja)
+>* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=ja)
+>* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=ja)
