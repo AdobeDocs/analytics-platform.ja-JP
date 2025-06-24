@@ -67,7 +67,7 @@ Content Analytics は、Experience Platform のイベントデータセットの
 >[!MORELIKETHIS]
 >
 >[コンテンツ分析レポート](report/report.md)
->>[コンテンツ分析の設定](config/configuration.md)
->>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>&#x200B;>[コンテンツ分析の設定](config/configuration.md)
+>&#x200B;>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
