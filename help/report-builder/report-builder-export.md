@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 38%
 
 ---
-
 
 # クラウドの宛先に書き出してワークブックをスケジュールする
 
@@ -35,7 +35,7 @@ Report Builderからクラウドにワークブックを書き出す場合は、
 
 ![ 手順 1 ～ 4 で説明した書き出しプロセス ](assets/report-builder-export-process.png)
 
-## Report Builderからのレポートのエクスポート {#export-from-report-builder}
+## Report Builderからのレポートのエクスポート
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Report Builderからレポートを書き出すには：
 
 1. まだ行っていない場合は、[クラウドの書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従って、書き出しのアカウントと場所を設定します。
 
-1. 書き出すデータを含む Excel スプレッドシートで、右側の **0&rbrace;Adobe Report Builder&rbrace; パネルを開きます。**
+1. 書き出すデータを含む Excel スプレッドシートで、右側の ]**0}Adobe Report Builder} パネルを開きます。**[!UICONTROL 
 
 1. [!UICONTROL **スケジュール**] を選択します。
 
@@ -90,7 +90,7 @@ Report Builderからレポートを書き出すには：
 
 Analysis Workspace からデータを書き出したら、[書き出しの管理](/help/components/exports/manage-exports.md)の説明に従って、既存の書き出しを編集、再書き出し、複製、タグ付けまたは削除できます。
 
-## クラウドへの書き出しのメリット {#advantages}
+## クラウドへの書き出しのメリット
 
 Customer Journey Analytics データをクラウドに書き出すと、次の操作を実行できます。
 
@@ -119,6 +119,3 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 * **データブロック：** すべてのデータブロックには、列、行、または値に対して少なくとも 1 つのコンポーネントを含める必要があります。
 
 * **環境：** Customer Journey Analytics で使用される [IP アドレス](/help/technotes/ip-addresses.md)と[ドメイン](/help/technotes/domains.md)が組織のファイアウォールを通過できることを確認します。
-
-
-
