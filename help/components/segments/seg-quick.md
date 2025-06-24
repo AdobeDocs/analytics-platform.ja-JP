@@ -4,10 +4,10 @@ title: クイックセグメント
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 23%
+source-wordcount: '1187'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 23%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のクイックセグメント](https://video.tv.adobe.com/v/345339/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のクイックセグメント](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -43,9 +43,9 @@ ht-degree: 23%
 ドラッグ&amp;ドロップを使用してクイックセグメントを作成する場合、次の点に注意してください。
 
 * すべてのコンポーネントタイプがサポートされているわけではありません。計算指標はサポートされておらず、セグメントを作成できるディメンションと指標のみがサポートされています。
-* ディメンションおよび指標コンポーネントの場合は、[ クイックセグメントビルダー ](#quick-segment-builder) が自動的に `exists` 条件を作成します。 例えば、`City` をドラッグ＆ドロップすると、条件 `City exists` が作成されます。
-* ディメンション値の場合、[ クイックセグメントビルダー ](#quick-segment-builder) によって `equals` 条件が自動的に作成されます。 例えば、`City` ディメンションから `amsterdam` をドラッグ＆ドロップすると、条件 `City equals amsterdam` が作成されます。
-* `unspecified` または `none` をドラッグ&amp;ドロップすると、[ クイックセグメントビルダー ](#quick-segment-builder) によって `does not exist` 条件が自動的に作成されます。
+* ディメンションおよび指標コンポーネントの場合は、[ クイックセグメントビルダー ](#quick-segment-builder) が自動的に `exists` 条件を作成します。 例えば、「市区町村 **[!UICONTROL をドラッグ&amp;ドロップすると、条件]****[!UICONTROL 市区町村]****[!UICONTROL exists]** が作成されます。
+* ディメンション値の場合、[ クイックセグメントビルダー ](#quick-segment-builder) は自動的に **[!UICONTROL 次と等しい]** 条件を作成します。 例えば、**[!UICONTROL 市区町村]** ディメンションリストから **[!UICONTROL アムステルダム]** をドラッグ&amp;ドロップすると、条件 **[!UICONTROL 市区町村]** **[!UICONTROL 等しい]** `Amsterdam` が作成されます。
+* **[!UICONTROL 未指定]** または **[!UICONTROL なし]** をドラッグ&amp;ドロップすると、[ クイックセグメントビルダー ](#quick-segment-builder) は自動的に **[!UICONTROL 存在しない]** 条件を作成します。
 
 作成したクイックセグメントは、パネルの上部に表示されます。 クイックセグメントには、薄い水色の左側のバーがあります。 [ クイックセグメントビルダー ](#quick-segment-builder) を使用してクイックセグメントが編集モードになると、クイックセグメントの背景が明るい青になります。
 
@@ -57,11 +57,11 @@ ht-degree: 23%
 クイックセグメントを管理するには、特定の **[!UICONTROL クイックセグメント]** にポインタを合わせます。
 
 * ![ 編集 ](/help/assets/icons/Edit.svg) を選択して [ クイックセグメントビルダー ](#quick-segment-builder) を開き、クイックセグメントを編集します。
-* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにセグメントに関する情報が表示されます。 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL &#x200B; クイックセグメント &#x200B;] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-segment-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](seg-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
+* ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択して、ポップアップを開きます。 ポップアップにセグメントに関する情報が表示されます。 「**[!UICONTROL すべてのプロジェクトで使用できるようにして、コンポーネントリストに追加する]**」を選択できます。セグメントをコンポーネントパネルの ![ セグメント ](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** コンポーネントリストに追加するには、次の手順を実行します。 **[!UICONTROL クイックセグメントを保存]** ダイアログが表示され、セグメントの名前を指定するように求められます。 「**[!UICONTROL 保存]**」を選択して続行します。[!UICONTROL  クイックセグメント ] が **[!UICONTROL セグメント]** に変わります。 [ クイックセグメントビルダー ](#quick-segment-builder) を使用してセグメントを編集することはできません。 代わりに、[ セグメントビルダー ](seg-builder.md) を使用して、セグメントを通常のセグメントとして編集する必要があります。
 
 ## クイックセグメントビルダー
 
-クイックセグメントビルダーの例については、以下を参照してください。 この例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` という名前のクイックセグメントに対してビルダーが開かれています。 上部の両方のクイックセグメントは、[!UICONTROL &#x200B; 平均注文値ダッシュボード &#x200B;] パネルと、[!UICONTROL &#x200B; 国あたりの平均注文値 &#x200B;] フリーフォームテーブルなどの内のすべてのビジュアライゼーションに適用されます。
+クイックセグメントビルダーの例については、以下を参照してください。 この例では、`Call Reason = Order Change AND Online Orders is greater than or equal 1` という名前のクイックセグメントに対してビルダーが開かれています。 上部の両方のクイックセグメントは、**[!UICONTROL 平均注文値ダッシュボード]** パネルと、[!UICONTROL  国あたりの平均注文値 ] フリーフォームテーブルなどの内のすべてのビジュアライゼーションに適用されます。
 
 ![クイックセグメントビルダー](assets/quick-filter-builder.png)
 
@@ -74,7 +74,7 @@ ht-degree: 23%
 | 要素 | 説明 |
 |---|---|
 | **[!UICONTROL 名前]** | 名前は、クイックセグメント定義から自動的に派生します。 |
-| **[!UICONTROL 人物]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![アラート](/help/assets/icons/Alert.svg) | クイックセグメントから生成されたデータの視覚的なプレビュー。 棒グラフとパーセンテージは、全体的なデータがクイックセグメントの結果の一部である程度のinsightを提供します。 赤い ![ アラート ](/help/assets/icons/Alert.svg) は、クイックセグメントがデータを返さないことを示します。 |
+| **[!UICONTROL 人物]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![アラート](/help/assets/icons/Alert.svg) | クイックセグメントから生成されたデータの視覚的なプレビュー。 棒グラフとパーセンテージは、全体的なデータがクイックセグメントの結果の一部である程度のinsightを提供します。 ![ アラート ](/help/assets/icons/AlertRed.svg) は、クイックセグメントがデータを返さないことを示します。 |
 | **[!UICONTROL 含む]**<br/>**[!UICONTROL 除外]** | ドロップダウン ![ 山形ドロップダウン ](/help/assets/icons/ChevronDown.svg) から、クイックセグメントの結果をパネルのデータに含めるか除外するかを選択します。 |
 | **[!UICONTROL イベント]**<br/>**[!UICONTROL セッション]**<br/>**[!UICONTROL ユーザー]** | クイックセグメントの範囲をドロップダウンメニュー ![ 山形 ](/help/assets/icons/ChevronDown.svg) から選択します。 |
 

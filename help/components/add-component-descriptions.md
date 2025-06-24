@@ -4,7 +4,7 @@ title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
@@ -32,5 +32,5 @@ Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCu
 >[!MORELIKETHIS]
 >
 >[ データビューコンポーネントの設定 ](/help/data-views/component-settings/overview.md)
->[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

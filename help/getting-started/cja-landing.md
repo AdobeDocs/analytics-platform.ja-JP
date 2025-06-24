@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: ht
-source-wordcount: '737'
-ht-degree: 100%
+source-git-commit: 94d1bcdb2419f8c2e27bd77bb2e35b04cd30d632
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,12 @@ Customer Journey Analytics を使用すると、共通の顧客 ID に基づく 
 Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
+
+>[!TAB B2B Edition]
+
+Customer Journey Analytics B2B Edition は、売上高の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業がマーケティング、セールス、製品の各チームを連携させるのに役立ちます。アカウントがデータモデルの中心に配置されるので、すべての分析はアカウントジャーニーに焦点を当てます。
+
+[![画像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
 >[!TAB コンテンツ分析]
 
@@ -144,7 +150,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Adobe Analytics との比較</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">概要</a> - <a href="/help/getting-started/aa-to-cja.md">進化</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analytics データの使用</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">機能のサポート</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">用語</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">データ処理</a>
+      <strong>Adobe Analyticsとの比較 </strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md"> 概要 </a> - <a href="/help/getting-started/aa-to-cja.md"> 進化 </a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analytics データの使用 </a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md"> 機能サポート </a> - <a href="/help/getting-started/aa-vs-cja/terminology.md"> 用語 </a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md"> データ処理 </a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B edition</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -176,7 +182,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">チュートリアル</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics 製品の説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analyticsアドオン）製品の説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI アシスタント</a>
+<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank"> チュートリアル </a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics製品説明 </a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analytics アドオン）製品説明 </a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition製品説明 </a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI アシスタント </a>
 </td>
 <td><strong>データ取り込み</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概要</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">バッチ</a> - <a href="/help/data-ingestion/streaming.md">ストリーミング</a> - <a href="/help/data-ingestion/sources.md">ソース</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>

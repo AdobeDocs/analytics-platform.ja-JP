@@ -4,10 +4,10 @@ description: ワークスペースでの注釈の作成方法
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: ht
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 * **D**。Workspace プロジェクトで、メニューから「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 注釈を作成]**」を選択します。
 * **E**。Workspace プロジェクトで、ショートカット **[!UICONTROL Ctrl + Shift + O キー]**（Windows）または **[!UICONTROL Shift + Command + O キー]**（macOS）を使用します。
 
-注釈を定義するには、[[!UICONTROL 注釈ビルダー]](#annotation-builder)を使用します。
+注釈を定義するには、[[!UICONTROL  注釈ビルダー ]](#annotation-builder) を使用します。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
