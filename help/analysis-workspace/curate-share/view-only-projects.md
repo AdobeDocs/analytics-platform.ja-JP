@@ -1,22 +1,28 @@
 ---
-description: Workspace の表示のみのプロジェクト
-keywords: 表示専用プロジェクト
-title: 表示専用プロジェクト
+description: Workspaceの読み取り専用プロジェクト
+keywords: 読み取り専用プロジェクト
+title: 読み取り専用プロジェクト
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 70%
+source-wordcount: '298'
+ht-degree: 37%
 
 ---
 
-# 表示専用プロジェクト
+# 読み取り専用プロジェクト
 
-[プロジェクト共有ワークフロー](/help/analysis-workspace/curate-share/share-projects.md)を使用して、受信者に「表示のみ」としてプロジェクトを共有できます。「Can View」役割に配置された受信者は、より限定的なプロジェクト体験を受け取るようになります。組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analytics全般に慣れていないユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用してもらいたい場合には、この方法が適しているかもしれません。
+[ 共有機能 ](/help/analysis-workspace/curate-share/share-projects.md) を使用して、受信者に読み取り専用としてプロジェクトを共有できます。 **[!UICONTROL 読み取り専用]** の役割に配置された受信者には、プロジェクトエクスペリエンスが制限されます。
 
-![ 表示専用の共有プロジェクト。](assets/view-only-project.png)
+組織のデータ構造、Analysis WorkspaceまたはCustomer Journey Analytics全般に慣れていないユーザーにプロジェクトを共有し、安全な環境でデータやインサイトを利用してもらいたい場合には、この方法が適しているかもしれません。
+
+![ 読み取り専用として共有 ](assets/read-only-project-sender.png)
+
+読み取り専用受信者に対するインタラクションは制限されています。
+
+![ 読み取り専用受信済みとして共有 ](assets/read-only-project-receiver.png)
 
 ## 無効な操作
 
@@ -37,7 +43,14 @@ ht-degree: 70%
 
 | 面グラフ | 有効な操作 |
 | --- | --- |
-| フリーフォームテーブル | <ul><li>ページネーションと並べ替え</li><li>ホバリング</li><li>リンクされたビジュアライゼーションを更新するセルの選択</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>右クリックしてクリップボードにコピー</li></ul> |
-| ビジュアライゼーション | <ul><li>クリックして凡例のオン／オフを切り替え</li><li>ホバリング</li><li>右クリックしてビジュアライゼーションリンクを取得</li><li>折りたたみ／展開</li><li>フロー — フローノードを展開</li><li>マップ — ズーム</li></ul> |
-| パネル | <ul><li>インタラクティブなドロップダウンセグメント</li><li>右クリックしてパネルリンクを取得</li><li>折りたたみ／展開</li></ul> |
+| フリーフォームテーブル | <ul><li>ページネーションと並べ替え</li><li>ホバリング</li><li>リンクされたビジュアライゼーションを更新するセル選択</li><li>コンテキストメニュー/ ビジュアライゼーションリンクを取得から</li><li>コンテキストメニュー/ クリップボードにコピーから</li></ul> |
+| ビジュアライゼーション | <ul><li>クリックして凡例のオン／オフを切り替え</li><li>ホバリング</li><li>コンテキストメニュー/ ビジュアライゼーションリンクを取得から</li><li>折りたたみ／展開</li><li>フロー — フローノードを展開</li><li>マップ — ズーム</li></ul> |
+| パネル | <ul><li>インタラクティブなドロップダウンセグメント</li><li>コンテキストメニュー/ パネルリンクを取得から</li><li>折りたたみ／展開</li></ul> |
 | プロジェクト | <ul><li>すべての情報アイコンの検査</li><li>プロジェクトメニュー — 新規、開く、ランディングページとして設定、更新、CSV／PDF をダウンロード、限られたプロジェクト情報および設定</li><li>共有メニュー — プロジェクトリンクを取得、今すぐファイルを送信</li><li>ヘルプメニュー — 「ヒント」および「デバッガー」オプション以外のすべてのアクション</li></ul> |
+
+
+## すべてのユーザーとエクスペリエンスを共有
+
+[ 任意のユーザーと共有 ](share-projects.md#share-a-project-with-anyone-no-login-required) を使用してプロジェクトを選択した場合、リンクの受信者は、プロジェクトを表示するだけで、プロジェクトを操作することはできません。
+
+![ 任意のユーザーと共有 ](assets/share-with-anyone-receiver.png)

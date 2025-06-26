@@ -5,10 +5,10 @@ title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
-workflow-type: ht
-source-wordcount: '2091'
-ht-degree: 100%
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/40032/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -110,13 +110,14 @@ ht-degree: 100%
 
    「**[!UICONTROL キュレーションと共有]**」を選択して、プロジェクトのキュレーションを自動的に適用します。（プロジェクトが既に共有されている場合は、「**[!UICONTROL キュレーションと更新]**」を選択します）。詳しくは、[プロジェクトのキュレーション](curate.md)を参照してください。
 
+
 ## プロジェクトへのリンクの共有
 
 この節で説明するようにリンクを共有する場合は、次の点に注意してください。
 
 * リンクを使用する受信者は、プロジェクトにアクセスする前に Customer Journey Analytics にログインする必要があります。
 
-* 受信者に役割が割り当てられていないがプロジェクトへの[リンク](/help/analysis-workspace/curate-share/shareable-links.md)を受け取った場合（**[!UICONTROL 共有]／[!UICONTROL プロジェクトリンクを取得]**）、そのユーザーはデフォルトで役割に配置されます。管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;の役割を受け取ります。
+* 受信者に役割が割り当てられていないがプロジェクトへの [ 共有可能なリンク ](/help/analysis-workspace/curate-share/shareable-links.md) を受け取った場合（**[!UICONTROL 共有 ]/[!UICONTROL  プロジェクトリンクを取得]**）、そのユーザーはデフォルトで役割に配置されます。 管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;の役割を受け取ります。
 
 プロジェクトリンクを組織内のユーザーと共有するには、次の手順を実行します。
 
@@ -160,7 +161,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3452450/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -215,7 +216,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/327498/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

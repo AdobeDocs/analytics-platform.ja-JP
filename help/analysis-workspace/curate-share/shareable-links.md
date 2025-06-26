@@ -5,10 +5,10 @@ title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '369'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ Analysis Workspace には、プロジェクトまたはプロジェクトの特�
 
 Customer Journey Analyticsへのアクセス権を持たないユーザーと、Analysis Workspace プロジェクトへの読み取り専用リンクを共有できます。
 
-詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の記事の「任意のユーザーとのプロジェクトの共有（ログイン不要）」を参照してください。
+詳しくは、[ 任意のユーザーと共有 ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) を参照してください。
 
 ## パネルまたはビジュアライゼーションリンクの取得 {#panel-link}
 
@@ -37,7 +37,7 @@ Customer Journey Analyticsへのアクセス権を持たないユーザーと、
 
 リンクを作成し、それらを使用して受信者をプロジェクトの特定の部分に導く方法に関する[ビデオを視聴](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja)します。
 
-![ ビジュアライゼーションリンクを取得がハイライト表示されたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-viz-link.png)
+![ ビジュアライゼーションリンクを取得がハイライト表示されたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-visualization-link.png)
 
 ## 目次でのリンクの使用 {#TOC}
 
