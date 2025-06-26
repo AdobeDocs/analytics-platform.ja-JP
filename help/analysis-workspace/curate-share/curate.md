@@ -17,7 +17,7 @@ ht-degree: 55%
 キュレーションを使用すると、プロジェクトを共有する前にコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限できます。受信者がプロジェクトを開くと、自身のためにキュレートしたコンポーネントの限られたセットが表示されます。 キュレーションはオプションですが、プロジェクトを共有する前に行うことをお勧めします。
 
 >[!NOTE]
-> 製品プロファイルは、ユーザーに表示されるコンポーネントを管理する主要メカニズムです。[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud) で管理されます。キュレーションはセカンダリセグメントです。
+> 製品プロファイルは、ユーザーに表示されるコンポーネントを管理する主要メカニズムです。[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-tool-experience-cloud) で管理されます。キュレーションはセカンダリセグメントです。
 
 ## プロジェクトキュレーションの適用
 
