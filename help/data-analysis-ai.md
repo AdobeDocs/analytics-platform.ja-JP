@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
+source-git-commit: e19151a7b0c3ab2f9e532034d329896768ee095f
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 75%
+source-wordcount: '1972'
+ht-degree: 90%
 
 ---
 
@@ -47,9 +47,9 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights エージェントを使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights エージェントの使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -64,7 +64,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
       ![権限を追加](assets/ai-assistant-permissions.png)。
 
-   1. 「**[!UICONTROL データビューツール]**」タブを選択し、**Data Insights エージェント![権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle** を選択します。
+   1. 「**[!UICONTROL データビューツール]**」タブを選択し、**[!UICONTROL Data Insights エージェント![権限の横にあるプラスアイコン ](/help/assets/icons/AddCircle.svg)AddCircle]** を選択します。
 
       **[!UICONTROL Data Insights エージェント]**&#x200B;権限が、**[!UICONTROL 含まれる権限項目]**&#x200B;列に追加されます。
 
@@ -144,7 +144,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -229,24 +229,26 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+<!--
+## Configuration best practices
 
-## 設定のベストプラクティス
+Below are best practices for your Customer Journey Analytics configuration (data view, calculated metrics, segments, and more) to ensure the Data Insights Agent can locate the correct components and return cleaner answers without having you to prompt for additional information.
 
-以下は、Customer Journey Analyticsの設定（データビュー、計算指標、セグメントなど）に関するベストプラクティスで、Data Insights Agentが正しいコンポーネントを見つけて、追加情報を求められることなく、より明確な回答を返せるようにします。
-
-* **必要なコンポーネントのバランスを取**。 データセットのすべてのフィールドを指標またはディメンションコンポーネントとしてデータビューに追加しないでください。 特に、あなたが最も確かに分析で使用しないもの。 一方、分析に必要なフィールドのみに厳密に制限しないでください。 データビューが制限されすぎると、分析の柔軟性や Data Insight エージェントの機能が制限されます。
-* **常にわかりやすい表示名を使用する**。 指標またはディメンションコンポーネントのいずれかとしてデータビューで定義するすべてのフィールドに、わかりやすいコンポーネント名があることを確認します。 わかりやすい名前を付けてフィールドの名前を変更するプロセスは、特にAdobe Analytics ソースコネクタデータセットのフィールドに関連します。 多くの場合、これらのフィールドには、`eVar41` や `prop25` など、わかりやすい名前は付けられていません。
-* **独特の名前を使用**。 特徴的な名前は、データビューでフィールドを指標およびディメンションコンポーネントの両方として使用する場合に特に関連します。 または、複数のコンポーネントでフィールドを使用する場合、コンポーネント設定がそれぞれ異なります。
-* **コンポーネントの命名規則を使用** します。 コンポーネント命名規則を使用して、コンポーネントをグループ化できます。 例：**[!UICONTROL Orders |製品]** および **[!UICONTROL 注文 |顧客]** データに存在する可能性のある様々な注文指標を区別します。
-* **データディクショナリの使用**。 データ要素でコンポーネントの説明やその他の関連データを追加します。 Data Insight エージェントでは現在、説明とタグを使用しません。 ただし、今後はデータ要素の説明とタグを使用する可能性があります。
-* **承認済みの計算指標を使用** します。 承認された計算指標のみをデータビューのコンポーネントとして使用するプロセスに同意し、実験的な計算指標を使用しないようにします。
-* **必要なセグメントを共有**. セグメントを共有し、データインサイトエージェントプロンプトに必要なセグメントを表示します。
-* **データビュー間でコンポーネント名を標準化する**。 複数のデータビューでコンポーネントと同じフィールドを使用する場合は、そのコンポーネントに単一のわかりやすい名前と単一の識別子を使用する必要があります。 単一の名前と識別子を使用すると、データインサイトエージェントはコンテキストを失うことなくデータビューを切り替えることができます。
+* **Balance what components you need**. Do not add all the fields of your datasets as metrics or dimension components to your data view. Especially, those you most certainly will not use in your analysis. On the other hand, do not strictly limit yourself only to the fields you anticipate you require for your analysis. A too limited data view restricts the flexibility in your analysis and the Data Insight's agent functionality.
+* **Always use friendly display names**. Ensure that all fields you define in your data view, either as a metrics or dimension component, do have a friendly component name. The process of renaming fields with a friendly name is especially relevant for fields from Adobe Analytics source connector datasets. These fields often have non-friendly unidentifiable names like `eVar41`, or `prop25`.
+* **Use distinctive names**. Distinctive names are especially relevant when you use a field both as a metric and a dimension component in your data view. Or when you use a field in multiple components, each with different component settings. 
+* **Use a component naming convention**. You can use a component naming convention to group components. For example, **[!UICONTROL Orders | Product]** and  **[!UICONTROL Orders | Customer]** to distinguish between different order metrics that might exist in your data.
+* **Use the Data Dictionary**. Add description and other relevant data for components in the Data Dictionary. The Data Insight agent currently does not use description and tags. but might use Data Dictionary description and tags in the future. 
+* **Use approved calculated metrics**. Agree on a process to use only approved calculated metrics as components in your data view, and avoid using experimental calculated metrics.
+* **Share required segments**. Ensure you share segments and make segments visible that are required for Data Insights agent prompts.
+* **Standardize on component names across data views**. If you use the same fields as a component in multiple data views, ensure you use a single friendly name and a single identifier for that component. A single name and identifier allows the Data Insights agent to switch data views without losing context.
 
 >[!MORELIKETHIS]
 >
->[コンポーネント設定](/help/data-views/component-settings/overview.md)
->&#x200B;>[データディクショナリ ](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[計算指標を承認 ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[セグメント ](/help/components/segments/seg-share.md) 共有
+>[Component settings](/help/data-views/component-settings/overview.md)
+>[Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Approve calculated metric](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Share segments](/help/components/segments/seg-share.md)
 >
+
+-->
