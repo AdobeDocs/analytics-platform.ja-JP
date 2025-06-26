@@ -4,14 +4,20 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 746e03bc94fe3ad83ea5487a6cd3da2089695017
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2142'
+ht-degree: 99%
 
 ---
 
-# パネルの概要
+# パネルの概要 {#panels-overview}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="リアルタイム更新"
+>abstract="を有効にすると、このパネルのデータとビジュアライゼーションがリアルタイムで更新されます。"
+
 
 [!UICONTROL パネル] は、テーブルとビジュアライゼーションのコレクションです。パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。パネルは、期間、データビュー、分析ユースケースに従ってプロジェクトを整理する場合に役立ちます。
 
@@ -77,7 +83,7 @@ ht-degree: 0%
 
 ## データビュー
 
-各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**&#x200B;の![データ名](/help/assets/icons/Data.svg)で識別されます。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -155,7 +161,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
