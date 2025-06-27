@@ -1,19 +1,19 @@
 ---
-title: 動的ディメンション項目と静的ディメンション項目
-description: テーブルの動的および静的ディメンション項目の操作方法。
+title: 動的および静的Dimension項目
+description: Analysis Workspaceのフリーフォームテーブルで動的ディメンション項目と静的ディメンション項目を使用する方法を説明します。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 93%
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 
 # 動的ディメンション項目と静的ディメンション項目
 
-フリーフォームテーブルでは、行と列に様々なコンポーネント値を含めることができます。これらの値は、作成する分析に応じて、動的（時間の経過と共に変更）または静的（時間と共に変更しない）にできます。
+フリーフォームテーブルでは、行と列に様々なコンポーネント値を含めることができます。 これらの値は、作成する分析に応じて、動的（時間の経過と共に変更）または静的（時間と共に変更しない）にできます。
 
 ## 動的ディメンション項目
 

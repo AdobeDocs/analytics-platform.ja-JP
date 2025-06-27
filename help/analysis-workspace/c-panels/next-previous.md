@@ -1,19 +1,17 @@
 ---
-description: 特定のディメンションの次または前のディメンション項目を表示するパネル。
+description: 特定のディメンションの次または前のディメンション項目を表示する、次または前の項目パネルの使用方法を説明します。
 title: 次または前の項目パネル
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
-workflow-type: ht
-source-wordcount: '457'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 94%
 
 ---
 
 # 次または前の項目パネル {#next-or-previous-item-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
@@ -25,9 +23,6 @@ ht-degree: 100%
 >title="次または前の項目"
 >abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
 
-
-
-<!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 

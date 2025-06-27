@@ -1,13 +1,13 @@
 ---
 title: フリーフォームテーブルの概要
-description: フリーフォームテーブルは、Workspace のデータ分析の基盤となっています。
+description: Analysis Workspaceのデータ分析の基盤となるフリーフォームテーブルの使用方法について説明します。
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '785'
+ht-degree: 97%
 
 ---
 

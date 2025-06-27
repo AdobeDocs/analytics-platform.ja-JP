@@ -1,12 +1,12 @@
 ---
-description: Analysis Workspaceのフォールアウトを使用すると、ファネルとワークフローのタッチポイントとしてディメンションと指標を組み合わせて一致させることができます。 フォールアウトを使用すると、調査するユーザーステップをより柔軟に定義できます。
+description: Analysis Workspaceのフォールアウトビジュアライゼーションを使用して、ファネルとワークフローのタッチポイントとしてディメンションと指標を組み合わせて一致させる方法を説明します。 調査するユーザーステップを柔軟に定義する方法を説明します。
 title: ディメンション間のフォールアウト
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '226'
 ht-degree: 7%
 
 ---

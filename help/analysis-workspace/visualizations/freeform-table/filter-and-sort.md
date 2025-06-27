@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspace でテーブルをフィルタリングし並べ替える方法について説明するドキュメントです。
+description: Analysis Workspaceでフリーフォームテーブルをフィルタリングおよび並べ替える方法について説明します。
 title: テーブルのフィルタリングと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace のフリーフォームテーブルは、インタラクテ�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 

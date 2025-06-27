@@ -1,50 +1,56 @@
 ---
-description: フォルダーからプロジェクトの名前を変更する方法を学ぶ
+description: Analysis Workspaceからプロジェクトを削除する方法を説明します。
 keywords: Analysis Workspace
-title: フォルダーからのプロジェクトの削除
+title: プロジェクトの削除
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 94%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
-# プロジェクトの削除
-
-<!-- Is this article still needed -->
+# プロジェクトを削除
 
 
-## プロジェクトの移動 {#move-project-in-folder}
+Analysis Workspaceからプロジェクトを削除する方法については、[ プロジェクトの管理のアクション ](../freeform-overview.md#actions) を参照してください。
 
-あるフォルダーからユーザーが作成した別のフォルダーにプロジェクトを移動できます。
 
-1. プロジェクトフォルダー内で、プロジェクト名の横にある省略記号（**...**）をクリックします。
+<!-- Is this article still needed; not in the TOC anymore
 
-   ![省略記号オプション。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. 「**移動先**」を選択し、プロジェクトの移動先のフォルダーを選択します。
+## Move a project {#move-project-in-folder}
 
-   ![場所を選択ウィンドウ。](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+You can move projects from one folder to another folder that you created.
 
-1. 「**移動**」をクリックします。
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![「移動」をクリックします。](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-   プロジェクトが移動したことを確認するトーストメッセージが表示されます。
+1. Select **Move to** and then select a folder to move the project to.
 
-   ![移動確認トースト。](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+    ![The Select Location window.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-## プロジェクトフォルダーからのプロジェクトの削除 {#delete-project-in-folder}
+1. Click **Move**.
 
-フォルダーからプロジェクトを削除すると、180 日後にシステムからパージされます。削除後 180 日間は、プロジェクトへの直接 URL を持っているユーザーは、web インターフェイス経由で削除したプロジェクトに引き続きアクセスできます。
+    ![Click Move.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-1. プロジェクトフォルダー内で、プロジェクト名の横にある省略記号（**...**）をクリックします。
+    A toast confirms that the project was moved.
 
-   ![省略記号オプション。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+    ![The move confirmation toast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-1. 「**削除**」を選択します。
+## Delete a project from a project folder {#delete-project-in-folder}
 
-1. 削除を確認する確認ウィンドウが表示されます。
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a direct URL to the project.
+
+1. From within a project folder, select the **...** ellipsis next to the project name.
+
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+
+1. Select **Delete**.
+
+1. A confirmation window asks you to confirm the deletion.
+
+-->

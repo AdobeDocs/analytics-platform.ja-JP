@@ -1,13 +1,13 @@
 ---
 title: コホートテーブルの概要
-description: Analysis Workspace でコホートテーブルをコホート分析に使用する方法について説明します
+description: コホート分析を使用して、オーディエンスに関するデータをより深く掘り下げ、そのデータを関連するグループに分割する方法を説明します。 Analysis Workspaceでのコホート分析の使用。
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のコホート分析](https://video.tv.adobe.com/v/3430080/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のコホート分析](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -74,31 +74,31 @@ Customer Journey Analytics のコホートテーブルでは、2 倍ベース（
 
 コホートの作成と[!UICONTROL コホート分析]レポートの実行について詳しくは、[コホートテーブルの設定](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)を参照してください。
 
-### [!UICONTROL リテンション]テーブル
+### 保持テーブル
 
 [!UICONTROL リテンション]コホートテーブルはユーザーを返します。各データセルには、その期間中にアクションを実行したコホートのユーザーの生の数と割合が表示されます。指標は最大 3 個、セグメントは最大 10 個含めることができます。
 
 ![コホート内のユーザーの単位と割合を示すリテンションコホートレポート。](assets/retention-report.png)
 
-### [!UICONTROL チャーン]テーブル
+### チャーンテーブル
 
 [!UICONTROL チャーン]コホートテーブルは、リテンションテーブルの逆で、時間の経過と共にコホートからフォールアウトしたユーザーや、コホートへのリターン条件を満たさなかったユーザーが表示されます。指標は最大 3 個、セグメントは最大 10 個含めることができます。
 
 ![コホートのリターン条件を満たさなかった人物の数と割合を示すチャーンテーブル。](assets/churn-report.png)
 
-### [!UICONTROL ローリング計算]
+### ローリング計算
 
 リテンションまたはチャーンは、「含む」列ではなく、前の列に基づいて計算できます。これをローリング計算と呼びます。
 
 ![前のデータ列に基づく計算を示すコホートリテンションレポート。](assets/retention-report-rolling.png)
 
-### [!UICONTROL 待ち時間]テーブル
+### 待ち時間表
 
 待ち時間テーブルは、インクルージョンイベント発生前後の経過時間を測定します。待ち時間の測定は、前後の分析に最適なツールです。「**[!UICONTROL 含む]**」列がテーブルの中央にあり、インクルージョンイベント発生の前と後の期間が両側に表示されます。
 
 ![イベント前後の経過時間を示すコホートレポート。](assets/retention-report-latency.png)
 
-### [!UICONTROL カスタムディメンション]コホート
+### カスタムディメンションコホート
 
 時間ベースのコホート（デフォルト）ではなく、選択したディメンションに基づいてコホートを作成できます。[!UICONTROL 市区町村地域]、[!UICONTROL マーケティングチャネル]、[!UICONTROL キャンペーン]、[!UICONTROL 製品]、[!UICONTROL ページ]、[!UICONTROL 地域]などのディメンションや、その他のディメンションを使用して、リテンションがどのように変化しているかを表示します。これらのディメンションの様々な値に基づいています。
 

@@ -1,13 +1,13 @@
 ---
 title: メディアの同時視聴者数パネル
-description: Analysis Workspace のメディア同時視聴者数パネルを使用および解釈する方法。
+description: Analysis Workspaceのメディア同時閲覧者パネルを使用および解釈する方法を説明します。
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1174'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/35210/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 >[!MORELIKETHIS]
 >
 >[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[メディア再生滞在時間パネル](media-playback-time-spent.md)
->[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
+>>[メディア再生滞在時間パネル](media-playback-time-spent.md)
+>>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
 >

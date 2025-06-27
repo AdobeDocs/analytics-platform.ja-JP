@@ -1,17 +1,17 @@
 ---
-description: Workspace の合計の計算方法を説明します。
-title: Workspace の合計
+description: Analysis Workspaceのフリーフォームテーブルの合計を計算する方法を説明します。
+title: 合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 94%
+source-wordcount: '488'
+ht-degree: 91%
 
 ---
 
-# Workspace の合計 {#workspace-totals}
+# 合計 {#workspace-totals}
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ![総計とテーブルの合計をハイライト表示するフリーフォームテーブル。](assets/total-row.png)
 
-* **[!UICONTROL テーブル合計]** ➊ – この合計は、通常、[!UICONTROL &#x200B; 総計 &#x200B;] と等しいか、またはそのサブセットです。 合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
+* **[!UICONTROL テーブル合計]** ➊ – この合計は、通常、[!UICONTROL  総計 ] と等しいか、またはそのサブセットです。 合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
 * **[!UICONTROL 総計]** （**[!UICONTROL 範囲外]** *数値*） ➋ – この合計は、収集されたすべてのイベントを表します。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのイベントを反映するように調整されます。
 
 

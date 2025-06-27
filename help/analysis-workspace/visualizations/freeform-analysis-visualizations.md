@@ -1,14 +1,14 @@
 ---
-description: Analysis Workspace でデータを視覚的に表します。
+description: Analysis Workspaceで使用可能なビジュアライゼーションを使用してデータを視覚的に表す方法について説明します。
 keywords: Analysis Workspace
-title: ビジュアライゼーションの概要
+title: 視覚化の概要
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 99%
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 

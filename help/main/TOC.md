@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1253'
 ht-degree: 97%
 
 ---
@@ -173,12 +173,13 @@ ht-degree: 97%
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトへのコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [プロジェクトを保存](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [目次](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Workspace のフォルダー {#workspace-folders}
-         + [フォルダーについて](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [フォルダーとサブフォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [概要](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [フォルダーの作成](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [フォルダーの管理](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [フォルダーへのプロジェクトの追加または移動](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [ホットキー（ショートカット）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+         + [プロジェクトの追加または移動](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+      + [ホットキー](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
    + テンプレート {#templates}
@@ -195,8 +196,8 @@ ht-degree: 97%
             + [列設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行設定](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [動的項目と静的項目](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [テーブルのフィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace の合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [フィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + コホートテーブル {#cohort-table}
          + [概要](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [設定](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -232,7 +233,7 @@ ht-degree: 97%
       + [ベン図](../analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
       + [概要](../analysis-workspace/c-panels/panels.md)
-      + [空のパネル](../analysis-workspace/c-panels/blank-panel.md)
+      + [空白](../analysis-workspace/c-panels/blank-panel.md)
       + [アトリビューション](../analysis-workspace/c-panels/attribution.md)
       + [実験](../analysis-workspace/c-panels/experimentation.md)
       + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
@@ -260,7 +261,6 @@ ht-degree: 97%
       + [概要](../analysis-workspace/c-forecast/forecasting.md)
       + [予測を表示](../analysis-workspace/c-forecast/view-forecasts.md)
       + [統計的手法](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [目次](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace に関する FAQ とその他 {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)

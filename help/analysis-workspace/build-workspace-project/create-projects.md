@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspace でプロジェクトを作成する方法を学ぶ
+description: Analysis Workspaceでプロジェクトを作成する方法を説明します。
 title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

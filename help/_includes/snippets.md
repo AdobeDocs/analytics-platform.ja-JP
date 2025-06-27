@@ -1,5 +1,5 @@
 ---
-source-git-commit: 256b1a3901a13ff2873a5cb5782baf26c93b8e8d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '4947'
 ht-degree: 95%
@@ -57,7 +57,7 @@ ht-degree: 95%
 
 ## ビデオデモ Adobe Analytics {#videoaa}
 
-*このビデオでは、Adobe Analytics を使用した機能について説明します。ただし、この機能は Customer Journey Analytics でも同様に使用できます。Adobe Analytics と Customer Journey Analytics の用語の違いに注意してください（「訪問回数」と「セッション数」など）。*
+このビデオでは、Adobe Analytics を使用した機能について説明します。ただし、この機能は Customer Journey Analytics でも同様に使用できます。Adobe AnalyticsとCustomer Journey Analyticsの用語の違い（例えば *訪問回数* と *セッション*）に注意してください。
 
 
 ## タグのフィルターセクション {#tagfiltersection}

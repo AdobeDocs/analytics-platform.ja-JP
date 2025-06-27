@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace の概要
-description: Analysis Workspace 機能の概要
+description: Adobe Analyticsの主要な分析ツールであるAnalysis Workspaceについて説明します。 プロジェクト、パネル、テーブル、ビジュアライゼーション、その他のコンポーネントを使用して、データに活気を与え、分析をキュレーションし共有します。
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1490'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,9 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/35774/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}を参照してください。
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +34,7 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 | 場所 | 名前と機能 |
 |:---------:|----------|
 | A | プロジェクトの名前、機能にアクセスするメニュー構造、プロジェクトリストに戻る「![戻るボタン](/help/assets/icons/ChevronLeft.svg)」、[Workspace プロジェクトを共有する](/help/analysis-workspace/curate-share/share-projects.md)「**[!UICONTROL 共有]**」ボタンが含まれています。<br/>いつでもプロジェクトの名前（新規プロジェクトなど）を選択して、名前を変更します。<br/>「![お気に入りから外す](/help/assets/icons/StarOutline.svg)」を選択して、プロジェクトをお気に入りのプロジェクト「![お気に入りに追加](/help/assets/icons/Star.svg)」として登録します。 |
-| B | **ボタンパネル：** Analysis Workspace の主要な[機能](#features)にアクセスするボタンが含まれています。<ul><li>![Web ページ](/help/assets/icons/WebPage.svg) [[!UICONTROL パネル]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL ガイド付き分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL ビジュアライゼーション]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>[[!UICONTROL コンポーネント]](/help/components/overview.md)を![キュレーション](/help/assets/icons/Curate.svg)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目次]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ブックマーク](/help/assets/icons/Bookmark.svg) [[!UICONTROL データ辞書]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **ボタンパネル：** Analysis Workspaceの主要な [ 機能 ](#features) にアクセスするためのボタンが含まれています。<ul><li>![Web ページ](/help/assets/icons/WebPage.svg) [[!UICONTROL パネル]](/help/analysis-workspace/c-panels/panels.md)</li><li>![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL ガイド付き分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL ビジュアライゼーション]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>[[!UICONTROL コンポーネント]](/help/components/overview.md)を![キュレーション](/help/assets/icons/Curate.svg)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目次]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![ブックマーク](/help/assets/icons/Bookmark.svg) [[!UICONTROL データ辞書]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **左パネル：**&#x200B;この領域には、個々のパネル、ビジュアライゼーション、コンポーネントまたはリストが含まれます。コンテンツは、ボタンパネルで選択したボタンによって異なります。 |
 | D | **キャンバス：**&#x200B;これは、左パネルからコンテンツをドラッグしてプロジェクトを作成する主な領域です。パネルの追加、パネルへのビジュアライゼーションの追加、ビジュアライゼーションへのコンポーネントの追加を行うと、プロジェクトは動的に更新されます。複数のパネルを作成でき、各パネル内で複数のビジュアライゼーションを作成できます。<br/>各パネルは、選択したデータビューに基づいています。選択したデータビューによって、指標やディメンションなど、使用可能なコンポーネントが決まります。詳しくは、[パネル - データビュー](/help/analysis-workspace/c-panels/panels.md#data-view)を参照してください。 |
 
@@ -45,7 +47,7 @@ Analysis Workspace の主な機能は、ボタンパネルから使用できま�
 | ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL パネル]** | [パネル](/help/analysis-workspace/c-panels/panels.md)を使用すると、プロジェクト内の分析を整理し、多数のテーブルやビジュアライゼーションを含めることができます。Analysis Workspace で提供される多くのパネルは、少数のユーザー入力に基づいてフルセットの分析を生成します。 |
 | ![ガイド付き分析](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL ガイド付き分析]** | [ガイド付き分析](../guided-analysis/overview.md)では、ガイド付きワークフローを通じて、カスタマージャーニーに関する高品質のデータとインサイトをセルフサービスで提供できます。分析を作成して Workspace プロジェクトに含めたり、以前に保存した既存の分析を含めたりできます。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL ビジュアライゼーション]** | 棒グラフや折れ線グラフなどの[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して、データを視覚的に表示できます。左端のパネルで、中央の&#x200B;**[!UICONTROL ビジュアライゼーション]**&#x200B;アイコンを選択し、使用可能なビジュアライゼーションの完全なリストを表示します。 |
-| ![キュレート](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [コンポーネント](/help/components/overview.md)には、次の要素が含まれます。<ul><li>![ディメンション](/help/assets/icons/Dimensions.svg) [ディメンション](/help/components/dimensions/overview.md)</li><li>![イベント](/help/assets/icons/Event.svg) [指標](/help/components/apply-create-metrics.md)</li><li>![セグメント化](/help/assets/icons/Segmentation.svg) [セグメント](/help/components/segments/seg-overview.md)</li><li>![カレンダー](/help/assets/icons/Calendar.svg) [日付範囲](/help/components/date-ranges/overview.md)</li></ul> |
+| ![キュレート](/help/assets/icons/Curate.svg) | **[!UICONTROL コンポーネント]** | [コンポーネント](/help/components/overview.md)には、次の要素が含まれます。<ul><li>![ディメンション](/help/assets/icons/Dimensions.svg)[ディメンション](/help/components/dimensions/overview.md)</li><li>![イベント](/help/assets/icons/Event.svg)[指標](/help/components/apply-create-metrics.md)</li><li>![セグメント化](/help/assets/icons/Segmentation.svg)[セグメント](/help/components/segments/seg-overview.md)</li><li>![カレンダー](/help/assets/icons/Calendar.svg)[日付範囲](/help/components/date-ranges/overview.md)</li></ul> |
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL 目次]** | 目次は、プロジェクトに含まれているすべてのパネルとビジュアライゼーションを折りたたみ可能なリストに整理されているので、特定のパネルやビジュアライゼーションにすばやくアクセスできます。 |
 | ![ブックマーク](/help/assets/icons/Bookmark.svg) | **データ辞書** | [データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)は、ユーザーと管理者の両方にとって、Analytics 環境のコンポーネントを追跡したり、理解を深めたりするのに役立ちます。 |
 
@@ -58,7 +60,7 @@ Workspace メニューとショートカットまたはホットキーを使用�
 
 キーボードでは、次の記号が使用される場合があります。
 
-- **[!UICONTROL *Shift キー&#x200B;*]**&#x200B;の代わりに&#x200B;**⇧**。
+- **[!UICONTROL *Shift キー&#x200B;*]**の代わりに**⇧**。
 - **[!UICONTROL *cmd *]**（コマンド）の代わりに&#x200B;**⌘**。
 - **[!UICONTROL *ctrl *]**（Control）の代わりに&#x200B;**⌃**。
 - **[!UICONTROL *opt *]**（Option）の代わりに&#x200B;**⌥**。
@@ -121,16 +123,16 @@ Workspace メニューとショートカットまたはホットキーを使用�
 | **[!UICONTROL ファイルの書き出しをスケジュール]** | **[!UICONTROL *Shift + Opt + S キー&#x200B;*]** | **[!UICONTROL *Shift + Alt + S キー&#x200B;*]** | [スケジュールに従って、プロジェクトを CSV または PDF ファイルとして他の受信者に送信します](/help/analysis-workspace/curate-share/send-schedule-files.md)。 |
 | **[!UICONTROL プロジェクトデータをキュレート]** | **[!UICONTROL *Shift + Cmd + G キー&#x200B;*]** | **[!UICONTROL *Shift + Ctrl + G キー&#x200B;*]** | [プロジェクトデータをキュレートします](/help/analysis-workspace/curate-share/curate.md)。 |
 
-| ヘルプ | ショートカット Mac | ショートカット Windows | 説明 |
-|---|---|---|---|
-| **[!UICONTROL ビデオ]** | | | 新しいブラウザータブで、Customer Journey Analytics の YouTube チャネルを開きます。 |
-| **[!UICONTROL ヘルプドキュメント]** | | | 新しいブラウザータブでドキュメントを開きます（実際には今読んでいるところです）。 |
-| **[!UICONTROL ヘルプフォーラム]** | | | 新しいブラウザータブで、Adobe Analytics Experience League コミュニティフォーラムを開きます。 |
-| **[!UICONTROL ホットキー]** | | | Workspace で使用できるホットキー（ショートカット）の概要を示します。 |
-| **[!UICONTROL デバッガーの有効化]** |  | | デバッガーを有効にします。プロジェクトが再読み込みされます。 |
-| **[!UICONTROL デバッガーの無効化]** | | | デバッガーを無効にします。プロジェクトが再読み込みされます。 |
-| **[!UICONTROL パフォーマンス]** | | | **[!UICONTROL Analysis Workspace のパフォーマンス]**&#x200B;に関する指標を表示するダイアログを表示します。**[!UICONTROL CSV としてダウンロード]**&#x200B;を使用して、パフォーマンス指標の CSV ファイルをダウンロードします。 |
-| **[!UICONTROL Workspace について]** | | | バージョン情報、機能アクセスレベル、アクティブな機能フラグを含む **[!UICONTROL Analysis Workspaceについて]**&#x200B;ダイアログを表示します。 |
+| ヘルプ | 説明 |
+|---|---|
+| **[!UICONTROL ビデオ]** | 新しいブラウザータブで、Customer Journey Analytics の YouTube チャネルを開きます。 |
+| **[!UICONTROL ヘルプドキュメント]** | 新しいブラウザータブでドキュメントを開きます（実際には今読んでいるところです）。 |
+| **[!UICONTROL ヘルプフォーラム]** | 新しいブラウザータブで、Adobe Analytics Experience League コミュニティフォーラムを開きます。 |
+| **[!UICONTROL ホットキー]** | Workspace で使用できるホットキー（ショートカット）の概要を示します。 |
+| **[!UICONTROL デバッガーの有効化]** | デバッガーを有効にします。プロジェクトが再読み込みされます。 |
+| **[!UICONTROL デバッガーの無効化]** | デバッガーを無効にします。プロジェクトが再読み込みされます。 |
+| **[!UICONTROL パフォーマンス]** | **[!UICONTROL Analysis Workspace のパフォーマンス]**&#x200B;に関する指標を表示するダイアログを表示します。**[!UICONTROL CSV としてダウンロード]**&#x200B;を使用して、パフォーマンス指標の CSV ファイルをダウンロードします。 |
+| **[!UICONTROL Workspace について]** | バージョン情報、機能アクセスレベル、アクティブな機能フラグを含む **[!UICONTROL Analysis Workspaceについて]**&#x200B;ダイアログを表示します。 |
 
 ## データソース
 

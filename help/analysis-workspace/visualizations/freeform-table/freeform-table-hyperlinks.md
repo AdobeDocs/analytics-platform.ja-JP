@@ -1,17 +1,17 @@
 ---
-title: フリーフォームテーブルでのハイパーリンクの作成
-description: Analysis Workspace のフリーフォームテーブルでディメンション項目のハイパーリンクを作成する方法について説明します
+title: フリーフォームテーブルでのディメンションのハイパーリンクの作成
+description: Analysis Workspaceのフリーフォームテーブルでディメンション項目のハイパーリンクを作成する方法を説明します。
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 98%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
-# フリーフォームテーブルでのハイパーリンクの作成
+# ハイパーリンクを作成
 
 ディメンション項目にハイパーリンクを作成して、Analysis Workspace のフリーフォームテーブル内でクリックできるようにします。
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルでのハイパーリンクの作成](https://video.tv.adobe.com/v/3445780/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルでのハイパーリンクの作成](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
