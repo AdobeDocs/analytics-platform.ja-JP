@@ -44,6 +44,6 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_現在、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** で使用できるマップビジュアライゼーションはありません。_<br/>__![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** のマップビジュアライゼーションドキュメントについて詳しくは、[マップ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)を参照してください。_
+_現在、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** で使用できるマップビジュアライゼーションはありません。_<br/>__![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** のマップビジュアライゼーションドキュメントについて詳しくは、[マップ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)を参照してください。_
 
 >[!ENDSHADEBOX]

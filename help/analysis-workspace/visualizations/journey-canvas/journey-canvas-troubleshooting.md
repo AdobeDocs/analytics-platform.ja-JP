@@ -51,7 +51,7 @@ ht-degree: 0%
 
 この例では、ジャーニーのコンテナ設定である「ユーザー」が、後続のセッションで 3 番目のノードのイベント（「チェックアウト」）がカウントされることを決定する際に重要な役割を果たします。
 
-また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [ の [ジャーニーキャンバスビジュアライゼーションの作成を開始 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) を参照してください ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) の [ジャーニーキャンバスビジュアライゼーションの作成を開始 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) を参照してください 
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
