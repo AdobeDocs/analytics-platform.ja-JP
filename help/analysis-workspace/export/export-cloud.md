@@ -5,9 +5,9 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2360'
 ht-degree: 95%
 
 ---
@@ -81,7 +81,7 @@ Analysis Workspace から完全なテーブルを書き出すには：
    | フィールド名 | 関数 |
    |---------|----------|
    | 名前 | 書き出しの名前を指定します。この名前は、書き出しのリストに表示されます。 |
-   | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成および適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。会社の任意のタグを適用できます<!-- double-check this -->。</p> <p>新しいタグを作成するには、新しいタグの名前を入力して、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮します。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>プロジェクトに適用したタグは、[書き出しの管理](/help/components/exports/manage-exports.md)の「書き出しページでの列の設定」で説明されているように、完全なテーブルを書き出す際には自動的に適用されません（または、[書き出し用に完全なプロジェクトをスケジュール](/help/analysis-workspace/export/t-schedule-report.md)する際、プロジェクトに適用されたタグが自動的に書き出しに適用されます）。<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成および適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。会社の任意のタグを適用できます<!-- double-check this -->。</p> <p>新しいタグを作成するには、新しいタグの名前を入力して、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮します。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>プロジェクトに適用したタグは、[書き出しの管理](/help/components/exports/manage-exports.md)の「書き出しページでの列の設定」で説明されているように、完全なテーブルを書き出す際には自動的に適用されません（または、[書き出し用に完全なプロジェクトをスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md)する際、プロジェクトに適用されたタグが自動的に書き出しに適用されます）。<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | 説明 | 書き出しに説明を追加します。書き出しを表示する際に、説明を[書き出しページ](/help/components/exports/manage-exports.md)の列として表示することを選択できます。 |
    | データビュー | 書き出しに含めるコンポーネントが含まれているデータビューを選択します。データビュードロップダウンメニューは、ダイアログの左上隅にあり、データビューアイコン ![データビューアイコン](assets/data-view-icon.png) で識別できます。  <p>**メモ：**&#x200B;データテーブルに既に含まれているコンポーネントが欠落しているデータビューを選択した場合は、データテーブルをクリアし、選択したデータビューに含まれているコンポーネントを使用して再作成するプロンプトが表示されます。 </p> |
    | ルックバックウィンドウ | 各書き出しファイルに含めるレポート時間枠を選択します。オプションには、「[!UICONTROL **今日**]」、「[!UICONTROL **昨日**]」、「[!UICONTROL **過去 7 日間**]」、「[!UICONTROL **過去 30 日間**]」、「[!UICONTROL **今週**]」、「[!UICONTROL **今月**]」が含まれます。 <p>[!UICONTROL **書き出し頻度**]&#x200B;を&#x200B;[!UICONTROL **今すぐ送信（1 回限り）**]&#x200B;に設定した際、このオプションは表示されません。 |
@@ -129,7 +129,9 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 
 * 複数のディメンションを含むテーブルを書き出す。
 
-## 書き出し要件 {#export-requirements}
+## 要件とサポートされていない機能 {#export-requirements}
+
+この節では、データを書き出す際に考慮する必要がある最小要件とサポートされていない機能について説明します。
 
 ### 最小要件
 
@@ -208,19 +210,19 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 
 | 機能 | Customer Journey Analytics での完全なテーブルの書き出し | Adobe Analytics の Data Warehouse |
 |---------|----------|---------|
-| カスタムレポートを作成 | ○ | ○ |
-| 計算指標 | ○ | × |
+| カスタムレポートを作成 | はい | はい |
+| 計算指標 | はい | いいえ |
 | セグメント | ○ | 制限あり |
 | ディメンション | 制限は 10 | 制限なし |
 | 指標 | 制限は 10 | 制限なし |
 | レポート行 | 階層に応じて、300 万行、3,000 万行、1 億 5,000 万行、3 億行の制限 | 制限なし |
 | レポート数 | 制限なし | 制限なし |
-| アドホック（1 回限り）配信 | ○ | ○ |
-| 繰り返し配信をスケジュール | ○ | ○ |
-| メール配信 | × | ○ |
+| アドホック（1 回限り）配信 | はい | はい |
+| 繰り返し配信をスケジュール | はい | はい |
+| メール配信 | いいえ | はい |
 | FTP／SFTP | × | レガシーサポート |
-| Azure | ○ | ○ |
-| Amazon S3 | ○ | ○ |
-| Google Cloud Platform | ○ | ○ |
-| Snowflake | ○ | × |
+| Azure | はい | はい |
+| Amazon S3 | はい | はい |
+| Google Cloud Platform | はい | はい |
+| Snowflake | はい | いいえ |
 | 配信頻度 | 毎日 | 1 時間ごと |

@@ -1,14 +1,14 @@
 ---
-description: Workspace でのプロジェクト共有とプロジェクトの役割
+description: Analysis Workspaceでプロジェクトを共有する方法を説明します。
 keywords: Analysis Workspace の共有
 title: プロジェクトの共有
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 98%
+source-wordcount: '2089'
+ht-degree: 97%
 
 ---
 
@@ -40,16 +40,16 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/40032/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-## 組織内の Adobe Customer Journey Analytics ユーザーおよびグループとの共有 {#Add}
+## 組織内のユーザーおよびグループと共有 {#Add}
 
-組織内の既存の Adobe Customer Journey Analytics ユーザーまたはグループとプロジェクトを共有できます。この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既に Adobe Customer Journey Analytics アカウントを持っている必要があります。
+組織内の既存の Adobe Workspace ユーザーまたはグループとプロジェクトを共有できます。この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既に Adobe Customer Journey Analytics アカウントを持っている必要があります。
 
 特定の役割をユーザーやグループと共有したり、リンクを共有したりできます。
 
@@ -83,8 +83,8 @@ ht-degree: 98%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。
-未保存の変更がある場合は、まずプロジェクトを保存するように求められます。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**を選択します。
+保存されていない変更がある場合は、まずプロジェクトを保存するように求められます。
 
    共有プロジェクトダイアログボックスが表示されます。ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
 
@@ -117,11 +117,11 @@ ht-degree: 98%
 
 * リンクを使用する受信者は、プロジェクトにアクセスする前に Customer Journey Analytics にログインする必要があります。
 
-* 受信者に役割が割り当てられていないがプロジェクトへの [ 共有可能なリンク ](/help/analysis-workspace/curate-share/shareable-links.md) を受け取った場合（**[!UICONTROL 共有 &#x200B;]/[!UICONTROL &#x200B; プロジェクトリンクを取得]**）、そのユーザーはデフォルトで役割に配置されます。 管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;の役割を受け取ります。
+* 受信者に役割が割り当てられていないがプロジェクトへの [ 共有可能なリンク ](/help/analysis-workspace/curate-share/shareable-links.md) を受け取った場合（**[!UICONTROL 共有 ]/[!UICONTROL  プロジェクトリンクを取得]**）、そのユーザーはデフォルトで役割に配置されます。 管理者は&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割を受け取り、管理者以外は&#x200B;**[!UICONTROL コピーを編集]**&#x200B;の役割を受け取ります。
 
 プロジェクトリンクを組織内のユーザーと共有するには、次の手順を実行します。
 
-1. プロジェクトを保存します。未保存の変更がある場合は、リンクを共有する前にプロジェクトを保存するように求められます。
+1. プロジェクトを保存します。保存されていない変更がある場合は、リンクを共有する前にプロジェクトを保存するように求められます。
 
 1. **[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択したあと、「**[!UICONTROL リンクで共有]**」フィールドの横の「**[!UICONTROL コピー]**」を選択します。
 
@@ -161,7 +161,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3452450/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -172,7 +172,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 1. **[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**&#x200B;を選択します。
 
-   未保存の変更がある場合は、プロジェクトを保存するように求められます。
+   保存されていない変更がある場合は、プロジェクトを保存するように求められます。
 
    <!-- Add screen shot of new modal -->
 
@@ -216,7 +216,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/327498/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

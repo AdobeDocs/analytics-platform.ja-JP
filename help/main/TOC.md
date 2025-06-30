@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 97%
+source-wordcount: '1255'
+ht-degree: 96%
 
 ---
 
@@ -169,6 +169,7 @@ ht-degree: 97%
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
    + プロジェクト {#build-workspace-project}
       + [概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [プロジェクトをすばやく開始](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトへのコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -242,16 +243,16 @@ ht-degree: 97%
       + [メディア再生滞在時間](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [次または前の項目](../analysis-workspace/c-panels/next-previous.md)
       + [クイックインサイト](../analysis-workspace/c-panels/quickinsight.md)
-   + プロジェクトのキュレーション、共有、スケジュール {#curate-share}
+   + キュレーションと共有 {#curate-share}
       + [概要](../analysis-workspace/curate-share/send-schedule-files.md)
       + [プロジェクトのキュレーション](../analysis-workspace/curate-share/curate.md)
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
       + [読み取り専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
+      + [プロジェクトの送信とスケジュール](../analysis-workspace/curate-share//t-schedule-report.md)
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [その他に送信](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + 異常値検出 {#anomaly-detection}
       + [概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
