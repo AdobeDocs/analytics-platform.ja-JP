@@ -9,13 +9,12 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 20a7ae368a9480697b6c07e88b557fbea425a932
+source-git-commit: 9f55946efb0471e1b92e9fabedc2b3d3a7b713a8
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1252'
 ht-degree: 96%
 
 ---
-
 
 # Adobe Customer Journey Analytics ガイド {#using}
 
@@ -48,7 +47,7 @@ ht-degree: 96%
       + [クイックスタートガイド](/help/getting-started/cja-b2b-quick-start-guide.md)
       + [移行ガイド](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics と Adobe Analytics {#compare-aa-cja}
++ アップグレードと比較 {#compare-aa-cja}
    + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
       + [基本を学ぶ](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -98,7 +97,7 @@ ht-degree: 96%
          + [Web SDK 実装オプション](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Platform 用の Adobe Analytics Web SDK の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Adobe Journey Optimizer を使用したパーソナライゼーションの使用](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + Adobe Analytics との比較 {#cja-aa-comparison}
+   + Adobe Analyticsとの比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
