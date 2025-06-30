@@ -6,14 +6,14 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 6cbf18496585fc973414b79b5957f918a16c0459
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 50%
 
 ---
 
-# 送信とスケジュール
+# プロジェクトの送信とスケジュール
 
 Customer Journey Analytics プロジェクトをファイルとして、選択したユーザーにメールで送信できます。 アドホックでファイルを送信することも、スケジュールに従って送信するようにプロジェクトを設定することもできます。 プロジェクトは CSV 形式またはPDF形式で送信できます。
 
@@ -27,7 +27,7 @@ Customer Journey Analytics プロジェクトをファイルとして、選択�
 
 メールで受信者にファイルを送信するには、次の手順に従います。
 
-1. **[!UICONTROL 共有 &#x200B;]/[!UICONTROL &#x200B; ファイルを送信]** を選択します。
+1. **[!UICONTROL 共有 ]/[!UICONTROL  ファイルを送信]** を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
@@ -42,7 +42,7 @@ Customer Journey Analytics プロジェクトをファイルとして、選択�
 
 受信者にメールでスケジュールに従ってファイルを送信するには
 
-1. **[!UICONTROL 共有 &#x200B;]/[!UICONTROL &#x200B; ファイル書き出しをスケジュール]** を選択します。
+1. **[!UICONTROL 共有 ]/[!UICONTROL  ファイル書き出しをスケジュール]** を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
