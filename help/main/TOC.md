@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 96%
 + [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
 
 + リリースノート {#releases}
-   + [最新のCustomer Journey Analytics リリース](../release-notes/latest.md)
-   + [Customer Journey Analyticsのプレリリースノート](../release-notes/pre-release-notes.md)
+   + [最新の Customer Journey Analytics リリース](../release-notes/latest.md)
+   + [Customer Journey Analytics プレリリースノート](../release-notes/pre-release-notes.md)
    + [2025年リリース](../release-notes/2025.md)
    + [2024年リリース](../release-notes/2024.md)
    + [2023年リリース](../release-notes/2023.md)
@@ -398,8 +398,8 @@ ht-degree: 96%
    + [セグメントの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
-   + [メールのワークブックのスケジュール](../report-builder/schedule-reportbuilder.md)
-   + [クラウド書き出し用のワークブックのスケジュール](../report-builder/report-builder-export.md)
+   + [メール用ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
+   + [クラウド書き出し用ワークブックのスケジュール設定](../report-builder/report-builder-export.md)
    + [ワークブックスケジュールの管理](/help/report-builder/manage-schedules-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)
