@@ -5,7 +5,7 @@ title: Customer Journey Analytics レポートのクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '2360'
 ht-degree: 95%
@@ -81,7 +81,7 @@ Analysis Workspace から完全なテーブルを書き出すには：
    | フィールド名 | 関数 |
    |---------|----------|
    | 名前 | 書き出しの名前を指定します。この名前は、書き出しのリストに表示されます。 |
-   | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成および適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。会社の任意のタグを適用できます<!-- double-check this -->。</p> <p>新しいタグを作成するには、新しいタグの名前を入力して、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮します。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>プロジェクトに適用したタグは、[書き出しの管理](/help/components/exports/manage-exports.md)の「書き出しページでの列の設定」で説明されているように、完全なテーブルを書き出す際には自動的に適用されません（または、[書き出し用に完全なプロジェクトをスケジュール](/help/analysis-workspace/curate-share/t-schedule-report.md)する際、プロジェクトに適用されたタグが自動的に書き出しに適用されます）。<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成および適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。会社の任意のタグを適用できます<!-- double-check this -->。</p> <p>新しいタグを作成するには、新しいタグの名前を入力して、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮します。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>プロジェクトに適用したタグは、[書き出しの管理](/help/components/exports/manage-exports.md)の「書き出しページでの列の設定」で説明されているように、完全なテーブルを書き出す際には自動的に適用されません（または、[書き出し用に完全なプロジェクトをスケジュール](/help/analysis-workspace/export/t-schedule-report.md)する際、プロジェクトに適用されたタグが自動的に書き出しに適用されます）。<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | 説明 | 書き出しに説明を追加します。書き出しを表示する際に、説明を[書き出しページ](/help/components/exports/manage-exports.md)の列として表示することを選択できます。 |
    | データビュー | 書き出しに含めるコンポーネントが含まれているデータビューを選択します。データビュードロップダウンメニューは、ダイアログの左上隅にあり、データビューアイコン ![データビューアイコン](assets/data-view-icon.png) で識別できます。  <p>**メモ：**&#x200B;データテーブルに既に含まれているコンポーネントが欠落しているデータビューを選択した場合は、データテーブルをクリアし、選択したデータビューに含まれているコンポーネントを使用して再作成するプロンプトが表示されます。 </p> |
    | ルックバックウィンドウ | 各書き出しファイルに含めるレポート時間枠を選択します。オプションには、「[!UICONTROL **今日**]」、「[!UICONTROL **昨日**]」、「[!UICONTROL **過去 7 日間**]」、「[!UICONTROL **過去 30 日間**]」、「[!UICONTROL **今週**]」、「[!UICONTROL **今月**]」が含まれます。 <p>[!UICONTROL **書き出し頻度**]&#x200B;を&#x200B;[!UICONTROL **今すぐ送信（1 回限り）**]&#x200B;に設定した際、このオプションは表示されません。 |

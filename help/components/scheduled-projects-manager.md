@@ -4,7 +4,7 @@ title: 指標
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 42%
@@ -44,7 +44,7 @@ ht-degree: 42%
 
 ![ 検索 ](/help/assets/icons/Search.svg) を使用して、スケジュールされたプロジェクトを検索します。 また、フィルターパネルからフィルターが適用されているかどうかを確認することもできます。 フィルターを削除するには、フィルターに ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択します。 すべてのフィルターを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
 
-スケジュールされたプロジェクトを編集するには、スケジュールされたプロジェクトのタイトルを選択します。 **[!UICONTROL スケジュールされたプロジェクトを編集]** ダイアログを使用して、スケジュールの詳細を更新します。 詳しくは [ その他へのファイルの送信 ](../analysis-workspace/curate-share/t-schedule-report.md) を参照してください。
+スケジュールされたプロジェクトを編集するには、スケジュールされたプロジェクトのタイトルを選択します。 **[!UICONTROL スケジュールされたプロジェクトを編集]** ダイアログを使用して、スケジュールの詳細を更新します。 詳しくは [ その他へのファイルの送信 ](../analysis-workspace/export/t-schedule-report.md) を参照してください。
 
 ![ スケジュールされたプロジェクトを編集 ](assets/edit-scheduled-project.png)
 

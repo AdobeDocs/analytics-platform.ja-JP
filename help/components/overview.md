@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Customer Journey Analytics のメインインターフェイスからコンポ�
 * [日付範囲](date-ranges/create.md)：Analysis Workspace が提供する日付範囲をカスタマイズおよび調整します。
 * [注釈](/help/components/annotations/overview.md)：コンテキストデータのニュアンスとインサイトを組織に伝えます。
 * [インテリジェントアラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)：変更された割合や特定のデータポイントに基づいて通知を受信できます。
-* [スケジュールされたプロジェクト](/help/analysis-workspace/curate-share/t-schedule-report.md#scheduled-projects-manager)：スケジュールされたプロジェクトを管理します。
+* [スケジュールされたプロジェクト](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager)：スケジュールされたプロジェクトを管理します。
 * [環境設定](/help/analysis-workspace/user-preferences.md)：Analysis Workspace の環境設定を管理します。
 * [オーディエンス](/help/components/audiences/audiences-overview.md)：Customer Journey Analytics から Experience Platform の[リアルタイム顧客データプラットフォーム](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)にオーディエンスを作成して公開し、ターゲティングやパーソナライゼーションを実現します。
 * [書き出し](/help/components/exports/manage-export-locations.md)：書き出しアカウントと書き出し場所を管理します。
