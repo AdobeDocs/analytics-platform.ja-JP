@@ -32,7 +32,7 @@ Adobe Analytics などのデータセットでは、データの必ずしもす�
 
 ### 変数の整合
 
-Adobe Analytics のデータを Customer Journey Analytics のデータに変換する最も簡単な方法は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/en/docs/analytics/implementation/prepare/global-rs)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
+Adobe Analytics のデータを Customer Journey Analytics のデータに変換する最も簡単な方法は、[Analytics ソースコネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)を使用して[グローバルレポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/implementation/prepare/global-rs)を Experience Platform に取り込むことです。このコネクタは、Adobe Analytics 変数を Experience Platform の XDM スキーマとデータセットに直接マッピングします。これらは Customer Journey Analytics に簡単に接続できます。
 
 グローバルレポートスイートすべてを完全に実装することが現実的ではない場合があります。複数のレポートスイートを Customer Journey Analytics に取り込むには、次の 2 つのオプションがあります。
 
@@ -52,7 +52,7 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 * Customer Journey Analytics のレポート時間の特性
 
-アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)を公開しています。これらの最新の推奨事項は、高度なアトリビューション機能を使用して既にAdobe Analyticsにある機能を最大限に活用するのに役立ちます。 また、Customer Journey Analyticsへの移行を成功させるための設定も行っています。
+アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/mchannel-best-practices)を公開しています。これらの最新の推奨事項は、高度なアトリビューション機能を使用して既にAdobe Analyticsにある機能を最大限に活用するのに役立ちます。 また、Customer Journey Analyticsへの移行を成功させるための設定も行っています。
 
 また、Customer Journey Analytics データビューの一部として[派生フィールド](../data-views/derived-fields/derived-fields.md)を導入したことにより、[マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates)を使用した非破壊的かつ遡及的な方法でマーケティングチャネルもサポートされます。
 
@@ -66,7 +66,7 @@ Adobe Analytics のレポートは、[!UICONTROL eVar] に見られる永続性�
 
 [!UICONTROL レポート時の処理]では、基になるデータの収集方法を変更しなくても、遡及的な設定を適用でき、変数の永続性のバージョンを複数作成できるようになります。
 
-この変更により、特に、有効期限が長くなる可能性のある変数について、データのレポート方法に多少の違いが生じます。 [仮想レポートスイート](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-report-time-processing)を使用して、レポート時の処理がレポートにどのように影響するかを評価することから始めることができます。
+この変更により、特に、有効期限が長くなる可能性のある変数について、データのレポート方法に多少の違いが生じます。 [仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/virtual-report-suites/vrs-report-time-processing)を使用して、レポート時の処理がレポートにどのように影響するかを評価することから始めることができます。
 
 ### 重要なセグメントと計算指標の特定 {#segments-calcmetrics}
 
@@ -82,9 +82,9 @@ Adobe Analytics セグメントおよび計算指標は、Customer Journey Analy
 
 次に、ガイドとなるビデオをいくつか示します。
 
-* [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
+* [Adobe Analytics セグメントの Customer Journey Analytics への移動](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=ja)
 
-* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
+* [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
 
 ### その他の考慮事項
 
