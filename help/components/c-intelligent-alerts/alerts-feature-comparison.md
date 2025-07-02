@@ -57,4 +57,4 @@ Adobe Analyticsでは、次のオプションを使用できます。
 
 * Analysis Workspace でプロジェクトを開き、**[!UICONTROL コンポーネント]**／**[!UICONTROL アラートを作成]**&#x200B;を選択します。
 
-* Analysis Workspaceでプロジェクトを開き、ショートカットキー **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**（Windows）または**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** （macOS）を使用します。
+* Analysis Workspaceでプロジェクトを開き、ショートカットキー **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**（Windows）または&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** （macOS）を使用します。

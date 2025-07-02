@@ -32,5 +32,5 @@ Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCu
 >[!MORELIKETHIS]
 >
 >[ データビューコンポーネントの設定 ](/help/data-views/component-settings/overview.md)
->>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >
