@@ -1,20 +1,20 @@
 ---
-description: アラートを作成、編集または削除します。
+description: アラートの管理方法について説明します。
 title: アラートの管理
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
 # アラートの管理
 
 
-一元的な [!UICONTROL &#x200B; アラート &#x200B;] 管理インターフェイスから、アラートのフィルタリング、タグ付け、削除、名前変更、コピー、有効化、更新の無効化および書き出しを行うことができます。 アラートを管理するには、以下の手順に従います。
+一元的な [!UICONTROL  アラート ] 管理インターフェイスから、アラートのフィルタリング、タグ付け、削除、名前変更、コピー、有効化、更新の無効化および書き出しを行うことができます。 アラートを管理するには、以下の手順に従います。
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、「**[!UICONTROL アラート]**」を選択します。
 
@@ -71,7 +71,7 @@ ht-degree: 21%
 
 ### フィルターパネル
 
-アラートのリストは、左のパネル ➍ ージの ![ フィルター ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用してフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターに従うアラートの数が表示されます。
+アラートのリストは、左のパネル ![ ージの ](/help/assets/icons/Filter.svg) フィルター **** フィルター ➍ を使用してフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターに従うアラートの数が表示されます。
 
 
 1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。アラート リスト用にスペースが必要な場合は、もう一度 ![ フィルター ](/help/assets/icons/Filter.svg) を選択してパネルを閉じることができます。
@@ -83,7 +83,7 @@ ht-degree: 21%
 {{tagfiltersection}}
 
 
-#### データ表示フィルターセクション
+#### データビューのフィルターセクション
 
 {{dataviewfiltersection}}
 
@@ -93,17 +93,17 @@ ht-degree: 21%
 {{ownerfiltersection}}
 
 
-#### 有効化ステータスフィルターセクション
+#### 有効ステータスのフィルターセクション
 
 {{enabledstatusfiltersection}}
 
 
-#### フィルターセクションを入力
+#### タイプのフィルターセクション
 
 {{typefiltersection}}
 
 
-#### その他のフィルターセクション
+#### その他のフィルターのフィルターセクション
 
 {{otherfiltersfiltersection}}
 
@@ -113,7 +113,7 @@ ht-degree: 21%
 
 アラートを編集できます
 
-* [[!UICONTROL &#x200B; アラート &#x200B;] リスト ](#alerts-list) で、アラートのタイトルを選択します。
+* [[!UICONTROL  アラート ] リスト ](#alerts-list) で、アラートのタイトルを選択します。
 
 アラートを編集するには、[ アラートビルダー ](alert-builder.md#alert-builder) を使用します。
 

@@ -1,17 +1,17 @@
 ---
-description: 時間以外のディメンションの上位 5 つ（時間ディメンションの場合は 15 つ）の値が表示されます。
-title: Customer Journey AnalyticsWorkspaceでディメンションをプレビューする方法
+description: Analysis Workspaceでディメンションの詳細と上位の値を表示する方法について説明します。
+title: 寸法をプレビュー
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 18%
+source-wordcount: '105'
+ht-degree: 4%
 
 ---
 
-# Analysis Workspace のディメンションのプレビュー
+# ディメンションのプレビュー
 
 コンポーネントに [ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) を使用して、ディメンションの上位項目を表示できます。
 

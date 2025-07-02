@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 98%
+source-wordcount: '1248'
+ht-degree: 97%
 
 ---
 
@@ -248,10 +248,10 @@ ht-degree: 98%
       + [プロジェクトの共有](../analysis-workspace/curate-share/share-projects.md)
       + [共有可能なリンクの作成](../analysis-workspace/curate-share/shareable-links.md)
       + [読み取り専用プロジェクト](../analysis-workspace/curate-share/view-only-projects.md)
-      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
+      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + 異常値検出 {#anomaly-detection}
       + [概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -264,7 +264,8 @@ ht-degree: 98%
    + [ユーザー環境設定](../analysis-workspace/user-preferences.md)
    + Workspace に関する FAQ とその他 {#workspace-faq}
       + [よくある質問](../analysis-workspace/workspace-faq/faq.md)
-      + [エラーメッセージ](../analysis-workspace/workspace-faq/error-messages.md)
+      + [パフォーマンスの最適化](../analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [エラーとトラブルシューティング](../analysis-workspace/workspace-faq/error-messages.md)
       + [制限事項](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -306,21 +307,20 @@ ht-degree: 98%
 
 + コンポーネント {#cja-components}
    + [概要](../components/overview.md)
-   + [Analysis Workspace でのコンポーネントの使用](../components/use-components-in-workspace.md)
+   + [コンポーネントの使用](../components/use-components-in-workspace.md)
    + [コンポーネントの説明の追加](../components/add-component-descriptions.md)
    + 注釈 {#annotations}
-      + [注釈の概要](../components/annotations/overview.md)
+      + [概要](../components/annotations/overview.md)
       + [注釈を作成](../components/annotations/create-annotations.md)
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
-      + [モバイル注釈](../components/annotations/mobile-annotations.md)
-   + [スケジュールされたプロジェクト](../components/scheduled-projects-manager.md)
+      + [モバイルスコアカード注釈](../components/annotations/mobile-annotations.md)
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
       + [オーディエンスの管理](../components/audiences/manage.md)
    + ディメンション {#dimensions}
-      + [ディメンションの概要](../components/dimensions/overview.md)
+      + [概要](../components/dimensions/overview.md)
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)
       + [ディメンションの分類](../components/dimensions/t-breakdown-fa.md)
       + [時間分割ディメンション](../components/dimensions/time-parting-dimensions.md)
@@ -343,7 +343,7 @@ ht-degree: 98%
       + [セグメントの使用](/help/components/segments/seg-use.md)
    + 計算指標 {#cja-calcmetrics}
       + [概要](../components/calc-metrics/calc-metr-overview.md)
-      + 計算指標のワークフロー {#cm-workflow}
+      + ワークフロー {#cm-workflow}
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -387,6 +387,7 @@ ht-degree: 98%
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ辞書でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [データ辞書の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + [スケジュールされたプロジェクト](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
    + [概要](../report-builder/rb-overview.md)

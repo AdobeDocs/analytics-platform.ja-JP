@@ -1,14 +1,14 @@
 ---
-title: 注釈の概要
-description: ワークスペースで注釈を使用する方法。
+title: 注釈：概要
+description: Analysis Workspaceでの注釈の使用方法。
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: ht
-source-wordcount: '318'
-ht-degree: 100%
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 97%
 
 ---
 

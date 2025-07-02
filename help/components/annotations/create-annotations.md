@@ -1,13 +1,13 @@
 ---
 title: 注釈を作成
-description: ワークスペースでの注釈の作成方法
+description: Analysis Workspaceでの注釈の作成方法
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 98%
+source-wordcount: '874'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 * **D**。Workspace プロジェクトで、メニューから「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL 注釈を作成]**」を選択します。
 * **E**。Workspace プロジェクトで、ショートカット **[!UICONTROL Ctrl + Shift + O キー]**（Windows）または **[!UICONTROL Shift + Command + O キー]**（macOS）を使用します。
 
-注釈を定義するには、[[!UICONTROL &#x200B; 注釈ビルダー &#x200B;]](#annotation-builder) を使用します。
+注釈を定義するには、[[!UICONTROL  注釈ビルダー ]](#annotation-builder) を使用します。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -41,7 +41,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="注釈の詳細"
->abstract="注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。カレンダーイベントを特定のディメンションや指標に関連付けることができます。"
+>abstract="注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。 注釈を使用すると、カレンダーイベントを特定のディメンションと指標に関連付けることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="範囲"
->abstract="範囲を使用すると、どのデータに注釈を付けるかをカスタマイズできます。計算指標とセグメントは、その定義で使用されるコンポーネントに適用される注釈を自動的に継承しません。既存の注釈の範囲セクションに新しい計算指標を追加できます。新しいセグメントには新しい注釈が必要です。"
+>abstract="範囲を使用すると、どのデータに注釈を適用するかをカスタマイズできます。 計算指標とセグメントは、その定義で使用されるコンポーネントに適用される注釈を自動的に継承しません。 既存の注釈の範囲セクションに新しい計算指標を追加できます。新しいセグメントには新しい注釈が必要です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,11 +62,11 @@ ht-degree: 98%
 
 >[!TAB 注釈ビルダー]
 
-![次の節で説明するフィールドとオプションを表示する注釈の詳細ウィンドウ。](assets/annotation-builder.png)
+![次の節で説明するフィールドとオプションを表示する注釈の詳細ウィンドウ。](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB 注釈の作成と編集]
+>注釈 [!TAB  編集 ]
 
-![次の節で説明するフィールドとオプションを表示する注釈の詳細ウィンドウ。](assets/create-edit-annotation.png)
+![次の節で説明するフィールドとオプションを表示する注釈の詳細ウィンドウ。](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -79,9 +79,9 @@ ht-degree: 98%
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 注釈に名前を付けます（例：`Needs further investigation`）。 |
    | **[!UICONTROL 説明]** | 注釈に説明を付けます（例：`We never expected such a fluctuation in numbers.`）。 |
    | **[!UICONTROL タグ]** | 1 つ以上のタグを作成または適用して、注釈を整理します。入力を開始して、選択可能な既存のタグを検索します。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
-   | **[!UICONTROL 適用日]** ![必須](/help/assets/icons/Required.svg) | 注釈を表示するのに必要な日付または日付範囲を選択します。ショートカットを使用して注釈を作成すると、注釈はデフォルトでその日の日付範囲に設定されます。ビジュアライゼーション内の選択を使用して注釈を作成すると、注釈はデフォルトでビジュアライゼーションが属するパネルの日付範囲に基づいた日付範囲に設定されます。 |
+   | **[!UICONTROL 適用日]** ![必須](/help/assets/icons/Required.svg) | 注釈を表示するのに必要な日付または日付範囲を選択します。ショートカットを使用して注釈を作成すると、注釈はデフォルトでその日の日付範囲に設定されます。ビジュアライゼーション内の選択を使用して注釈を作成する場合、注釈はデフォルトでビジュアライゼーションが属するパネルの日付範囲に基づいて日付範囲に設定されます。 |
    | **[!UICONTROL カラー]** | 注釈にカラーを適用します。注釈は、選択されたカラーでプロジェクトに表示されます。カラーを使用すると、祝日、外部イベント、トラッキングの問題などの注釈を分類できます。 |
-   | **[!UICONTROL 範囲]** | 注釈をトリガーするコンポーネントパネルから指標をドラッグ＆ドロップします。例えば、人物、セッション、イベントなどです。次に、セグメントとして機能するディメンションまたはセグメントをコンポーネントパネルからドラッグ＆ドロップして、注釈を表示するかどうかを決定します。範囲を指定しない場合、注釈はすべてのデータに適用されます。<br/>次の 2 つのオプションがあります。<ul><li>**[!UICONTROL これらの指標のいずれかが存在する場合]**：注釈を表示するトリガーとなる指標を最大 10 個までドラッグ＆ドロップします。<br/>例えば、売上高指標が特定の日付範囲のデータ収集を停止したとします。売上高指標をこのボックスにドラッグします。</li><li>**[!UICONTROL これらすべてのセグメントを使用]**：注釈が表示されるかどうかをセグメント化するディメンションまたはセグメントを最大 10 個までドラッグ＆ドロップします。</li></ul><p><p>**メモ：**&#x200B;コンポーネントに適用された注釈で、計算指標またはセグメント定義の一部として使用されるものは、注釈を自動的には継承しません。注釈を表示するには、目的の計算指標を範囲セクションに追加する必要もあります。ただし、同じ情報で注釈を付けるセグメントに対しては、新しい注釈を作成する必要があります。例えば、特定の日に[!UICONTROL 注文]に注釈を適用します。次に、同じ日付範囲の計算指標で[!UICONTROL 注文]を使用します。新しい計算指標では、注文の注釈は自動的には表示されません。また、表示する注釈の範囲セクションに計算指標を追加します。 |
+   | **[!UICONTROL 範囲]** | 注釈をトリガーするコンポーネントパネルから指標をドラッグ＆ドロップします。例えば、人物、セッション、イベントなどです。 次に、セグメントとして機能するディメンションまたはセグメントをコンポーネントパネルからドラッグ＆ドロップして、注釈を表示するかどうかを決定します。範囲を指定しない場合、注釈はすべてのデータに適用されます。<br/>次の 2 つのオプションがあります。<ul><li>**[!UICONTROL これらの指標のいずれかが存在する場合]**：注釈を表示するトリガーとなる指標を最大 10 個までドラッグ＆ドロップします。<br/> 例えば、売上高指標が特定の日付範囲のデータ収集を停止したとします。 売上高指標をこのボックスにドラッグします。</li><li>**[!UICONTROL これらすべてのセグメントを使用]**：注釈が表示されるかどうかをセグメント化するディメンションまたはセグメントを最大 10 個までドラッグ＆ドロップします。</li></ul><p><p>**メモ：**&#x200B;コンポーネントに適用された注釈で、計算指標またはセグメント定義の一部として使用されるものは、注釈を自動的には継承しません。注釈を表示するには、目的の計算指標を範囲セクションに追加する必要もあります。ただし、同じ情報で注釈を付けるセグメントに対しては、新しい注釈を作成する必要があります。例えば、特定の日に[!UICONTROL 注文]に注釈を適用します。次に、同じ日付範囲の計算指標で[!UICONTROL 注文]を使用します。新しい計算指標では、注文の注釈は自動的には表示されません。また、表示する注釈の範囲セクションに計算指標を追加します。 |
    | **[!UICONTROL すべてのデータビューに適用]** | デフォルトでは、注釈は元のデータビューに適用されます。このチェックボックスをオンにすると、会社内のすべてのデータビューに注釈を適用できます。 |
 
    {style="table-layout:auto"}

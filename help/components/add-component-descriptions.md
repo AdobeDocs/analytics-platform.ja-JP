@@ -1,13 +1,13 @@
 ---
-description: 管理者は、データビューを使用してコンポーネントの説明を追加できます。
+description: 管理者は、データビューまたはデータ要素を使用して、コンポーネントの説明を追加できます
 title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 14%
+source-wordcount: '174'
+ht-degree: 12%
 
 ---
 
@@ -32,5 +32,5 @@ Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCu
 >[!MORELIKETHIS]
 >
 >[ データビューコンポーネントの設定 ](/help/data-views/component-settings/overview.md)
->&#x200B;>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

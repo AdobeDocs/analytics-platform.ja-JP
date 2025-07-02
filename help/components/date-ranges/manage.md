@@ -1,20 +1,20 @@
 ---
-title: 日付範囲を管理
-description: Analysis Workspace で日付範囲を共有、名前変更または削除します。
+title: データ範囲の管理
+description: Analysis Workspaceでの日付範囲の管理方法について説明します。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 12%
+source-wordcount: '603'
+ht-degree: 30%
 
 ---
 
-# 日付範囲を管理
+# 日付範囲の管理
 
 
-一元的な [!UICONTROL &#x200B; 日付範囲 &#x200B;] 管理インターフェイスから、日付範囲の共有、フィルタリング、タグ付け、承認、コピー、共有、削除や、日付範囲をお気に入りとしてマークできます。 日付範囲を管理するには：
+一元的な [!UICONTROL  日付範囲 ] 管理インターフェイスから、日付範囲の共有、フィルタリング、タグ付け、承認、コピー、共有、削除や、日付範囲をお気に入りとしてマークできます。 日付範囲を管理するには：
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、「**[!UICONTROL 日付範囲]**」を選択します。
 
@@ -27,16 +27,16 @@ ht-degree: 12%
 
 ### 日付範囲リスト
 
-日付範囲リストには➊、すべての日付範囲が表示されます。 リストには次の列があります。
+日付範囲リスト ➊ には、すべての日付範囲が表示されます。 リストには、次の列があります。
 
 | 列 | 説明 |
 | --- | --- | 
-| ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) | 日付範囲を ![ 星 ](/help/assets/icons/Star.svg) にするか、![ 星アウトライン ](/help/assets/icons/StarOutline.svg) にするかを選択します。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 日付範囲を ![ 星 ](/help/assets/icons/Star.svg) にするか、![ 星アウトライン ](/help/assets/icons/StarOutline.svg) にするかを選択します。 |
 | **[!UICONTROL タイトルと説明]** | タイトルと説明を編集するには、タイトルリンクを選択して [ 日付範囲ビルダー ](/help/components/date-ranges/create.md#date-range-builder) を開きます。 |
 | **[!UICONTROL 所有者]** | 日付範囲の所有者。 |
 | **[!UICONTROL タグ]** | この日付範囲のタグ。 |
 | **[!UICONTROL 共有先]** | 日付範囲を共有した個人またはグループ。 選択して、「**[!UICONTROL 日付範囲を共有]** ダイアログを開きます。 |
-| **[!UICONTROL 変更日]** | 日付範囲が最後に変更された日時を表示します。 |
+| **[!UICONTROL 変更日時]** | 日付範囲が最後に変更された日時を表示します。 |
 
 {style="table-layout:auto"}
 
@@ -44,7 +44,7 @@ ht-degree: 12%
 
 ### アクションバー
 
-アクションバーの➋を使用して、日付範囲に対してアクションを実行できます。 アクションバーには、次のアクションが含まれます。
+アクションバーの ➋ を使用して、日付範囲に対してアクションを実行できます。 アクションバーには、次のアクションが含まれます。
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
@@ -60,15 +60,15 @@ ht-degree: 12%
 
 ### アクティブなフィルターバー
 
-フィルターバー➌には、アクティブなフィルター（存在する場合）が表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。 複数のフィルターが指定されている場合は、「すべて削除 **[!UICONTROL を使用して、すべてのフィルターを削除します]**。
+フィルターバーの ➌ には、アクティブなフィルター（存在する場合）が表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターが指定されている場合は、「すべて削除 **[!UICONTROL を使用して、すべてのフィルターを削除します]**。
 
 ### フィルターパネル
 
-左側のパネル➍イアログの **[!UICONTROL フィルター]** を使用して日付範囲をフィルタリングできます。 フィルターパネルには、フィルターのタイプと、そのフィルターを適用する日付範囲の数が表示されます。 ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルの表示を切り替えます。
+左側のパネルの **[!UICONTROL 「]** フィルター ➍」を使用して、日付範囲をフィルタリングできます。 フィルターパネルには、フィルターのタイプと、そのフィルターを適用する日付範囲の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
 
-フィルターのリストをフィルタリングするには：
+フィルターリストをフィルタリングするには、次の手順に従います。
 
-1. ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルを開きます。 「フィルター」リストにスペースが必要な場合は、もう一度 ![ フィルター ](/help/assets/icons/Filter.svg) を選択してパネルを閉じることができます。
+1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。フィルターリストにスペースが必要な場合は、もう一度「![フィルター](/help/assets/icons/Filter.svg)」を選択してパネルを閉じることができます。
 1. 使用可能ないずれかの [ フィルターセクション ](#filter-sections) を使用して、日付範囲をフィルタリングできます。
 
    >[!INFO]
@@ -83,16 +83,16 @@ ht-degree: 12%
 {{otherfiltersfiltersection}}
 
 
-[ 日付範囲リスト ](#date-ranges-list) は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、「アクティブなフィルターバー [ に表示さ ](#active-filter-bar) ます。
+[ 日付範囲リスト ](#date-ranges-list) は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、[アクティブなフィルターバー](#active-filter-bar)で確認できます。
 
 
 ## 日付範囲を編集
 
 日付範囲は、次の 2 つの方法で編集します。
 
-* Workspace プロジェクトでは、「[ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) アイコンを使用します。
+* Workspace プロジェクトでは、[コンポーネント情報](/help/components/use-components-in-workspace.md#component-info)アイコンを使用します。
 
-* [[!UICONTROL &#x200B; 日付範囲 &#x200B;] リスト ](#date-ranges-list) で、日付範囲のタイトルを選択します。
+* [[!UICONTROL  日付範囲 ] リスト ](#date-ranges-list) で、日付範囲のタイトルを選択します。
 
 [ 日付範囲ビルダー ](/help/components/date-ranges/create.md#date-range-builder) を使用して、日付範囲を編集します。
 

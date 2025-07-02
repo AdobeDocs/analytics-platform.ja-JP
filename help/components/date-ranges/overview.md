@@ -1,13 +1,13 @@
 ---
+description: Analysis Workspace で日付範囲を指定するには、カレンダーとデータ範囲を使用します。
 title: 日付範囲の概要
-description: 日付範囲の詳細と、レポートでの使用方法について説明します。
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Workspace プロジェクトでは、通常、パネル内の[カレンダー](/
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327348?format=jpeg&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++

@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspace のアクセシビリティサポート機能
-title: Analysis Workspace のアクセシビリティ
+description: Analysis Workspaceのアクセシビリティサポート機能について説明します。
+title: Analysis Workspaceのアクセシビリティ
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 [!UICONTROL Analysis Workspace] でのナビゲーションは、上から下、左から右です。次のナビゲーション要素はアクセシビリティを向上します。
 
 * **[!UICONTROL タブ]**&#x200B;キーを押すと、Workspace 内の大きなセクション間を移動するランドマークショートカットが有効になります。左パネルでは、**[!UICONTROL タブ]**&#x200B;を使用して、ドラッグ可能なオプション間を移動することもできます。
-* **[!UICONTROL タブ]**&#x200B;キーで要素がハイライト表示されると、◀︎ と ▶︎ で個々の要素間を移動します。
+* ◀Tab▶ キーで要素がハイライト表示された後で、**[!UICONTROL ︎と]**︎が個々の要素間を移動します。
 * **[!UICONTROL F6]** キーを押すとプロジェクト内の最初のパネルに移動し、そのパネル内のビジュアライゼーション間を移動します。その後、プロジェクト内の次のパネルに移動し、同じ動作を繰り返します。
 * フォーカスインジケーターを適用して、目が見えるキーボードユーザーに現在どの UI 要素にフォーカスがあるかを明確に示します。インジケーターは、フォーカスされたパネルの青色の境界線です。最近選択された機能と機能内の選択は、灰色の背景で表示されます。この例では、[!UICONTROL コンポーネント]とページディメンションが最近選択されています。
 

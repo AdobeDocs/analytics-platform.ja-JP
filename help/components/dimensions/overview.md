@@ -1,12 +1,12 @@
 ---
 title: ディメンションの概要
-description: ディメンションの概要と Customer Journey Analytics での使用方法について学ぶ
+description: ディメンションの概要とCustomer Journey Analyticsでの使用方法を説明します。
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,6 +48,6 @@ Customer Journey Analytics 管理者は、データビュー内または直接 A
 
 >[!MORELIKETHIS]
 >
->[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
+>[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >
 

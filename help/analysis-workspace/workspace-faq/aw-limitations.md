@@ -1,13 +1,13 @@
 ---
 description: Adobe Analysis Workspace とその関連コンポーネントに関する既知の制限事項について説明します。
-title: Analysis Workspace の既知の制限
+title: Analysis Workspaceの既知の制限事項
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '313'
+ht-degree: 98%
 
 ---
 

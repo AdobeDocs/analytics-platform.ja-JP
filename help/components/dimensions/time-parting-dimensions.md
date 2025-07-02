@@ -1,17 +1,17 @@
 ---
-description: 時間分割は、収集したイベントのタイムスタンプを取得し、「時間帯」や「曜日」など、よりわかりやすいディメンションに分類します。
+description: 時間分割ディメンションが収集したイベントのタイムスタンプを取得し、それをより意味のあるディメンション（時間帯や曜日など）に分類する方法について説明します。
 title: 時間分割ディメンション
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 58%
+ht-degree: 61%
 
 ---
 
-# Analysis Workspaceの時間分割ディメンション
+# 時間分割ディメンション
 
 時間分割は、収集したイベントのタイムスタンプを取得し、**時間帯** や **曜日** など、よりわかりやすいディメンションに分類します。
 
@@ -24,11 +24,11 @@ ht-degree: 58%
 
 | ディメンション | 値例 |
 |--- |--- |
-| **[!UICONTROL 時刻]** | 0 ～ 23 |
+| **[!UICONTROL 時間帯]** | 0 ～ 23 |
 | **[!UICONTROL 午前／午後]** | 午前、午後 |
 | **[!UICONTROL 曜日]** | 月曜日、火曜日、水曜日、木曜日、金曜日、土曜日、日曜日 |
 | **[!UICONTROL 平日／週末]** | 平日、週末 |
-| **[!UICONTROL 日付]** | 1 ～ 31 |
-| **[!UICONTROL 月]** | 1 月 ～ 12 月 |
+| **[!UICONTROL 月間通算日]** | 1 ～ 31 |
+| **[!UICONTROL 年間通算月]** | 1 月 ～ 12 月 |
 | **[!UICONTROL 年間通算日]** | 1 ～ 366 |
 | **[!UICONTROL 四半期]** | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
