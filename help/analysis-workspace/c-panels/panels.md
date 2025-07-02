@@ -83,7 +83,7 @@ ht-degree: 99%
 
 ## データビュー
 
-各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**&#x200B;の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
