@@ -45,8 +45,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 数値ディメンションの「値なし」行項目の更新 | 数値ディメンションの場合、この更新により、セグメントで「値なし」ディメンション項目を使用して「値なし」行項目に関するレポートで分類を実行できます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
 | メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025年2月** |  |
-| メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
-| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
+| メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
+| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
 | **2025年1月** |  |
 | 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。また、接続別、データセット別、サンドボックス別、タグ別に使用状況データを表示して分類することもできます。 |
 | 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |
@@ -54,7 +54,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | ガイド付き分析 | ガイド付き分析内から提供されている[ガイド付き分析](/help/guided-analysis/overview.md)のドキュメントを更新しました。 |
 | Journey Optimizer のレポートページでの Customer Journey Analytics のカスタムテンプレートの使用に関するドキュメント | [Customer Journey Analytics でテンプレートを作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできるようになりました。以前は、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズできませんでした。 |
 | Analysis Workspace のテンプレート | [事前定義済みテンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates)および[会社テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates)を Customer Journey Analytics で使用できるようになりました。 |
-| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
+| インテリジェントキャプション v2 | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=ja)は、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされるようになりました。すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。 |
 
 ## 2024
 
@@ -182,7 +182,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年4月** |  |
 | セグメントをディメンションとして使用する方法に関するビデオ | セグメントをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[セグメントを作成](/help/components/segments/seg-create.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でセグメントをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
 | セグメントのドキュメント | [セグメントビルダー](/help/components/segments/seg-builder.md)を使用する方法に関する記事を追加しました。 <p>[セグメントを作成](/help/components/segments/seg-create.md)と[セグメント化の概要](/help/components/segments/seg-overview.md)のドキュメントを合理化しました。</p> |
-| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)に関する節を追加しました。 |
+| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=ja#non-randomized)に関する節を追加しました。 |
 | プロジェクトセグメント（アドホックおよびクイックセグメント） | プロジェクトセグメントに関するドキュメントを合理化し、重複した情報を削除しました。アドホックセグメントの作成手順は、[クイックセグメントの作成](/help/components/segments/seg-quick.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [Customer Journey Analytics での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
@@ -216,12 +216,12 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2022年12月** |  |
 | 2022年12月16日（PT） | [Customer Journey Analytics のデータ使用状況の管理](/help/technotes/estimate-usage.md)に関する新しいトピック。 |
 | **2022年10月** | |
-| 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
+| 2022年10月 | [スケジュール済みプロジェクトのパスワード保護](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=ja#password)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [Customer Journey Analytics 監査ログ](/help/privacy/audit-log.md)に関する新しいトピック。 |
 | 2022年10月 | [主要な指標の概要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=ja)ビジュアライゼーションに関する新しいトピック。 |
-| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date)に関する新しい節 |
-| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)に関する新しいトピック。 |
+| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#date)に関する新しい節 |
+| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=ja#view-detail-slides)に関する新しいトピック。 |
 | 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** | |
 | 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/third-party/ga/overview.md)に関する新しいユースケース。 |
