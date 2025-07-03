@@ -1,10 +1,10 @@
 ---
 title: 注釈を管理
-description: Analysis Workspaceでの注釈の管理方法。
+description: Workspaceで注釈を管理する方法を説明します。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 91%

@@ -1,13 +1,13 @@
 ---
-description: 管理者は、データビューまたはデータ要素を使用して、コンポーネントの説明を追加できます
+description: 管理者がデータビューまたはデータ要素を使用して、コンポーネントに説明を追加する方法を説明します。
 title: コンポーネントの説明の追加
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 12%
 
 Customer Journey Analytics管理者は、データビュー内またはデータ要素を使用して、コンポーネント（ディメンション、指標、セグメントおよび日付範囲）の説明を追加できます。
 
-## データビューへの説明の追加
+## データビュー
 
 データビューに追加したコンポーネントに、説明を追加できます。 [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を参照してください。
 
-## データ要素を使用した説明の追加
+## データ辞書
 
 Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCustomer Journey Analytics環境のコンポーネントを追跡し、よりよく理解するのに役立ちます。 データ要素には、コンポーネントの説明をAnalysis Workspace内に直接追加する管理者向けの機能が含まれています。
 
@@ -32,5 +32,5 @@ Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCu
 >[!MORELIKETHIS]
 >
 >[ データビューコンポーネントの設定 ](/help/data-views/component-settings/overview.md)
->&#x200B;>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

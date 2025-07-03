@@ -1,13 +1,13 @@
 ---
-description: 指標の概要とAdobe Analyticsでの指標の使用方法について説明します。
+description: 指標の概要と Analysis Workspace での指標の使用方法について説明します。
 title: 指標
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 8%
+source-wordcount: '868'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## Analysis Workspace での指標の使用
 
-指標は、Analysis Workspace内で柔軟に使用できます。 指標を空のフリーフォームテーブルにドラッグすると、プロジェクトの日付期間にわたるその指標のトレンドを確認できます。 また、ディメンションが存在する場合に指標をドラッグすると、その指標と各ディメンション項目との比較を確認できます。 指標を既存の指標ヘッダーの上にドラッグすると、既存の指標が置き換えられ、指標をヘッダーの横にドラッグすると、両方の指標を並べて表示できます。
+指標は、Analysis Workspace内で柔軟に使用できます。 指標を空のフリーフォームテーブルにドラッグすると、プロジェクトの日付期間にわたるその指標のトレンドを確認できます。 また、ディメンションが存在する場合に指標をドラッグすると、その指標を各ディメンション項目と比較して確認できます。 指標を既存の指標ヘッダーの上にドラッグすると指標が置き換えられ、指標をヘッダーの横にドラッグすると両方の指標を並べて表示できます。
 
 Analysis Workspaceに指標やその他のタイプのコンポーネントを追加する方法について詳しくは、[Analysis Workspaceでのコンポーネントの使用 ](/help/components/use-components-in-workspace.md) を参照してください。
 
@@ -27,11 +27,17 @@ Analysis Workspaceに指標やその他のタイプのコンポーネントを�
 アドビでは、Analysis Workspace で使用するためのいくつかのタイプの指標を提供しています。
 
 
-* **標準指標**：標準指標の例は、人物、セッション、イベント、[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} アカウントです。
+* **標準指標**：標準指標の例は、人物、セッション、イベントです。
 
-  Adobe Analyticsとは異なり、Customer Journey Analyticsでは、接続とデータビューの範囲内で柔軟に標準指標を定義できます。  標準指標の完全なリストについては、[ 標準指標 ](#standard-metrics) を参照してください。
+  Adobe Analyticsとは異なり、Customer Journey Analyticsでは、接続とデータビューの範囲内で柔軟に標準指標を定義できます。
 
-* **計算指標**![ 計算ツール ](/help/assets/icons/Calculator.svg)：標準指標、静的数値、アルゴリズム関数に基づく [ ユーザー定義指標 ](/help/components/calc-metrics/calc-metr-overview.md)。
+   * **人物**:Customer Journey Analyticsの人物指標は、ユーザー ID の個別カウントです。 接続でデータセットを設定する際にユーザー ID として選択した内容に応じて、人物指標は異なる意味を持つ場合があります。
+   * **セッション**:Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義するものです。 [ セッション設定 ](/help/data-views/session-settings.md) を参照してください。
+   * **イベント**:Customer Journey Analyticsのイベント指標は、接続の一部として設定したイベントデータセットの一部であるイベントで構成されています。
+
+  標準指標の完全なリストについては、[ 標準指標 ](#standard-metrics) を参照してください。
+
+* **計算指標**![ 計算ツール ](/help/assets/icons/Calculator.svg)：標準指標、静的数値、アルゴリズム関数に基づくユーザー定義の指標です。
 
 * **計算指標テンプレート**![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)：計算指標と同様に動作するAdobe定義の指標です。 これらは、Workspace プロジェクトでそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。 [ デフォルトの計算指標 ](calc-metrics/cm-workflow/../default-calcmetrics.md) を参照してください。
 
@@ -46,7 +52,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 ## 計算指標の作成
 
-計算指標では、単純な演算子や統計関数を使用して、指標が相互にどのように関連するかを設定できます。 詳しくは、[ 計算指標の概要 ](/help/components/calc-metrics/calc-metr-overview.md) を参照してください。
+計算指標を使用すると、単純な演算子や統計関数を使用して、指標が相互にどのように関連するかを簡単に設定できます。 詳しくは、[ 計算指標の概要 ](/help/components/calc-metrics/calc-metr-overview.md) を参照してください。
 
 計算指標を作成する方法はいくつかあります。 選択した方法によって、計算指標をすべてのプロジェクトのコンポーネントリストから使用できるか、計算指標が作成されたプロジェクトでのみ使用できるかが決まります。
 
@@ -76,15 +82,15 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
    1 つの列を選択した場合、次のオプションを使用できます。
 
-   * [!UICONTROL **平均**]：列のディメンション要素のセットの平均値を表示する新しい列を作成します。 この列の値には [Mean](/help/components/calc-metrics/cm-functions.md#mean) 関数を使用します。
+   * [!UICONTROL **平均**]：列のディメンション要素のセットの平均値を表示する新しい列を作成します。 これは [Mean](/help/components/calc-metrics/cm-functions.md#mean) 関数を使用します。
 
-   * [!UICONTROL **中央値**]：列のディメンション要素セットの中央値を表示する新しい列を作成します。 この列の値には、[Median](/help/components/calc-metrics/cm-functions.md#median) 関数を使用します。
+   * [!UICONTROL **中央値**]：列のディメンション要素セットの中央値を表示する新しい列を作成します。 [Median](/help/components/calc-metrics/cm-functions.md#median) 関数を使用します。
 
-   * [!UICONTROL **列の最大値**]：列のディメンション要素のセットの中の最大値を表示する新しい列を作成します。 この列の値は、[Column Maximum](/help/components/calc-metrics/cm-functions.md#column-maximum) 関数を使用します。
+   * [!UICONTROL **列の最大値**]：列のディメンション要素のセットの中の最大値を表示する新しい列を作成します。 これは [Column Maximum](/help/components/calc-metrics/cm-functions.md#column-maximum) 関数を使用します。
 
-   * [!UICONTROL **列の最小値**]：列のディメンション要素のセットの最小値を表示する新しい列を作成します。 この列の値には、[Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) 関数を使用します。
+   * [!UICONTROL **列の最小値**]：列のディメンション要素のセットの最小値を表示する新しい列を作成します。 これは [Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) 関数を使用します。
 
-   * [!UICONTROL **列の合計**]：列内の（1 つのディメンションのすべての要素の）指標の数値をすべて加算する新しい列を作成します。 この列の値は、[Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum) 関数を使用します。
+   * [!UICONTROL **列の合計**]:1 つの列内（1 つのディメンションのすべての要素）の指標のすべての数値を加算する新しい列を作成します。 [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum) 関数を使用します。
 
    2 つの列を選択した場合は、次のオプションを使用できます。
 
@@ -101,7 +107,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 ## 様々なアトリビューションモデルとの指標の比較
 
-指標のコンテキストメニューから「**[!UICONTROL アトリビューションモデルを比較]**」を選択すると、あるアトリビューションモデルを指標の別のアトリビューションモデルにすばやく比較できます。
+指標のアトリビューションモデルを別のアトリビューションモデルとすばやく比較するには、指標のコンテキストメニューから **[!UICONTROL アトリビューションモデルを比較]** を選択します。
 
 ![ アトリビューションモデルの比較を強調表示したWorkspace パネル ](assets/compare-attribution.png)
 

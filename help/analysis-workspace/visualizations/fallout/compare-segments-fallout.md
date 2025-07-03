@@ -5,7 +5,7 @@ title: フォールアウト分析でのセグメントの適用
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 34%
@@ -23,19 +23,20 @@ ht-degree: 34%
 >* ユーザーベースのセグメントをユーザーコンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する。
 >* ユーザーベースのセグメントをセッションコンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する。
 >* セッションベースのセグメントをセッションコンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する。
+
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## タッチポイントからのセグメントの作成
 
 1. 特に関心があり、他のレポートに適用するのに便利そうな特定のタッチポイントからセグメントを作成します。タッチポイントを右クリックして、「**[!UICONTROL タッチポイントからセグメントを作成]**」を選択します。
 
-   ![ タッチポイントからセグメントを作成がハイライト表示されたタッチポイントドロップダウンメニュー。](assets/fallout-createfilter.png)
+   ![ タッチポイントからセグメントを作成がハイライト表示されたタッチポイントドロップダウンメニュー。](assets/fallout-createsegment.png)
 
-   [!UICONTROL &#x200B; セグメントビルダー &#x200B;] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
+   [!UICONTROL  セグメントビルダー ] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
 
-   ![ セグメントビルダーには、事前入力済みおよび事前定義済みの順次セグメントが表示されます。](assets/fallout-definefilter.png)
+   ![ セグメントビルダーには、事前入力済みおよび事前定義済みの順次セグメントが表示されます。](assets/fallout-definesegment.png)
 
 1. セグメントにタイトルと説明を入力して、保存します。
 
@@ -53,11 +54,11 @@ ht-degree: 34%
 
 フォールアウトビジュアライゼーションでは、無数のセグメントを比較できます。
 
-1. 比較するセグメントを左側の [!UICONTROL &#x200B; セグメント &#x200B;] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
+1. 比較するセグメントを左側の [!UICONTROL  セグメント ] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
 1. 3 つのセグメントをビジュアライゼーションの上部にあるセグメント ドロップゾーンにドラッグします。
 
 
-1. オプション：*すべての訪問* をデフォルトのコンテナとして維持することも、コンテナを削除することもできます。
+1. オプション：*すべてのユーザー* をデフォルトのコンテナとして保持するか、コンテナを削除できます。
 
    ![ すべての訪問と、前の手順でドラッグした 2 つのセグメントを表示するフォールアウト。](assets/fallout-multiplefilters.png)
 

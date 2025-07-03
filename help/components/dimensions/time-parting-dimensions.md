@@ -1,13 +1,13 @@
 ---
-description: 時間分割ディメンションが収集したイベントのタイムスタンプを取得し、それをより意味のあるディメンション（時間帯や曜日など）に分類する方法について説明します。
+description: 時間分割ディメンションが収集したイベントのタイムスタンプを取得し、これらのイベントをより意味のあるディメンション（時間帯や曜日など）に分類する方法について説明します。
 title: 時間分割ディメンション
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 61%
+source-wordcount: '198'
+ht-degree: 60%
 
 ---
 

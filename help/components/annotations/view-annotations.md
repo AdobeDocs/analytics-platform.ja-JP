@@ -1,12 +1,12 @@
 ---
 title: 注釈を表示
-description: Analysis Workspaceで注釈を表示する方法。
+description: Analysis Workspaceで注釈を表示する方法を説明します。
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 86%
 
 ---
