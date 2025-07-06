@@ -1,12 +1,12 @@
 ---
-description: 計算指標マネージャ内では、様々なレベルのアプリケーションや特定の部門またはグループに対応した指標の承認を含むワークフローを設定できます。
+description: 計算指標の承認方法を説明します。
 title: 計算指標の承認
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 21%
+source-wordcount: '127'
+ht-degree: 4%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 21%
 1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Unapprove]**」を選択します。
 
 
-承認済みの計算指標を使用して、計算指標のリストをフィルタリングできます。 **[!UICONTROL フィルター]** **フィルター ![ パネルから ](/help/assets/icons/Filter.svg) その他のフィルター** を選択し、「**[!UICONTROL 承認済み]**」を選択します。 詳しくは、[ 計算指標のリストのフィルタリング ](/help/components/calc-metrics/cm-workflow/cm-filter.md) を参照してください。
+承認済みの計算指標を使用して、計算指標のリストをフィルタリングできます。 **[!UICONTROL フィルター]** ![ フィルター ](/help/assets/icons/Filter.svg) パネルから **[!UICONTROL その他のフィルター]** を選択し、「**[!UICONTROL 承認済み]**」を選択します。 詳しくは、[ 計算指標のリストのフィルタリング ](/help/components/calc-metrics/cm-workflow/cm-filter.md) を参照してください。

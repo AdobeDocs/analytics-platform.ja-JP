@@ -1,12 +1,12 @@
 ---
-description: 指標タイプとアトリビューションについて説明します
+description: 指標タイプとアトリビューションについて説明します。
 title: 指標タイプとアトリビューション
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 91%
          * 30 日間のルックバックウィンドウを持つデフォルトの列アトリビューションモデル（ラストタッチ）を使用する場合は、「**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**」を無効にします。
          * 「**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**」を有効にします。**[!UICONTROL 列アトリビューションモデル]**&#x200B;ダイアログで以下を行います。
 
-            * 「**[!UICONTROL アトリビューションモデル]**」から [ モデル ](#attribution-models) を選択します。
-            * **[!UICONTROL コンテナ]** オプションから [ コンテナ ](#container) を選択します。
-            * **[!UICONTROL ルックバックウィンドウ]** オプションから [ ルックバックウィンドウ ](#lookback-window) を選択します。 **[!UICONTROL カスタム時間]** を選択した場合は、期間を **[!UICONTROL 分]** 最大 **[!UICONTROL 四半期]** で定義できます。
+            * [アトリビューションモデル](#attribution-models)から&#x200B;**[!UICONTROL モデル]**&#x200B;を選択します。
+            * 「**[!UICONTROL コンテナ]**」オプションから「[コンテナ](#container)」を選択します。
+            * 「**[!UICONTROL ルックバックウィンドウ]**」オプションから「[ルックバックウィンドウ](#lookback-window)」を選択します。「**[!UICONTROL カスタム時間]**」を選択した場合は、期間を「**[!UICONTROL 分]**」から「**[!UICONTROL 四半期]**」までの単位で定義できます。
 
       1. デフォルト以外のアトリビューションモデルを適用するには、「**[!UICONTROL 適用]**」を選択します。キャンセルするには、「キャンセル」を選択します。
 
      デフォルト以外のアトリビューションモデルを既に定義してある場合は、「**[!UICONTROL 編集]**」を選択して、選択項目を変更します。
 
-アトリビューションモデル、コンテナおよびルックバックウィンドウの使用例については、[ 例 ](#example) を参照してください。
+アトリビューションモデル、コンテナ、ルックバックウィンドウの使用例については、[例](#example)を参照してください。
 
 
 ## アトリビューションモデル {#attribution-models}
@@ -163,6 +163,6 @@ ht-degree: 91%
 >[!MORELIKETHIS]
 >
 >[アトリビューションコンポーネントの設定](/help/data-views/component-settings/attribution.md)
->&#x200B;>[パーティシペーション指標](participation-metric.md)
+>>[パーティシペーション指標](participation-metric.md)
 >
 

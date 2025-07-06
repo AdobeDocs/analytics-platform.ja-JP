@@ -1,12 +1,12 @@
 ---
-description: 特定のディメンションの次または前のディメンション項目を表示する、次または前の項目パネルの使用方法を説明します。
+description: 特定のディメンションの次の項目または前の項目を表示する、次または前の項目パネルの使用方法を説明します。
 title: 次または前の項目パネル
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 94%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ の次の項目または前の項目パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[次の項目または前の項目パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ の次の項目または前の項目パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[次の項目または前の項目パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous)を参照してください。_
 
 >[!ENDSHADEBOX]
 

@@ -1,13 +1,13 @@
 ---
-description: 権限に応じて、セグメントを組織全体、グループまたは個々のユーザーと共有できます。
-title: セグメントの共有
+description: 組織全体、グループまたは個々のユーザーとセグメントを共有する方法について説明します。
+title: セグメントを共有
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 11%
+source-wordcount: '295'
+ht-degree: 6%
 
 ---
 

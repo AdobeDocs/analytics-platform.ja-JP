@@ -1,12 +1,12 @@
 ---
-description: 計算指標ビルダー内でのセグメントの積み重ねと置き換えの方法を示します。
+description: 計算指標ビルダー内でセグメントの積み重ねと置き換えを行う方法を説明します。
 title: セグメントの積み重ねと置き換え
 feature: Calculated Metrics
 exl-id: a396599c-2033-40a7-90b5-f9c84106c328
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 19%
+ht-degree: 5%
 
 ---
 

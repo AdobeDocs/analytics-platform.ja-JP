@@ -1,12 +1,12 @@
 ---
-description: Analysis Workspace内でデータの異常値をコンテキストに基づいて表示および分析する方法を理解します。
-title: 異常値検出の概要
+description: Analysis Workspace内のデータの異常値を表示して分析する方法を理解します。
+title: 異常値を表示
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
-source-git-commit: 808b09d79d3c686747f7b19b6646001e3345b9aa
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 50%
 
 ---

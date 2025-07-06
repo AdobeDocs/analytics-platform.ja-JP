@@ -1,13 +1,13 @@
 ---
 description: Analysis Workspaceのアクセシビリティサポート機能について説明します。
 title: Analysis Workspaceのアクセシビリティ
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 94%
+source-wordcount: '546'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 
 ### キーボードショートカット（ホットキー）
 
-[!UICONTROL Analysis Workspace] は、シームレスなワークフローを実現する豊富な[キーボードショートカット](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)のセットを備えています。
+[!UICONTROL Analysis Workspace] には、よりシームレスなワークフローを実現するための豊富な [ キーボードショートカット（ホットキー） ](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) が用意されています。
 
 ## スクリーンリーダーとスクリーン拡大鏡のサポート
 

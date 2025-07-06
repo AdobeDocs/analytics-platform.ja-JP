@@ -1,27 +1,27 @@
 ---
+description: セグメントマネージャーを使用してセグメントを管理する方法（共有、フィルター、タグ付け、承認、コピー、削除、お気に入りとしてマークするなど）を説明します。
 title: セグメントの管理
-description: Customer Journey Analyticsでセグメントを管理する方法について説明します
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 34%
+source-wordcount: '930'
+ht-degree: 31%
 
 ---
 
 # セグメントの管理
 
 
-中央の [ セグメント ](seg-favorite.md) 管理インターフェイスから、(seg-share.md) 共有 [、](seg-tag.md) セグメント [&#128279;](seg-filter.md)、[ タグ ]、[ 承認 ](seg-approve.md)、名前変更、[ コピー ](seg-copy.md)、セグメントの削除、書き出し、およびセグメントを  お気に入りとしてマークできます 。 セグメントを管理するには：
+中央の [ セグメント ](seg-share.md) 管理インターフェイスから、[ 共有 ](seg-filter.md)、[ セグメント ](seg-tag.md)、[ タグ ](seg-approve.md)、[ 承認 ](seg-copy.md)、名前変更、[ コピー ](seg-favorite.md)、セグメントの削除、書き出し、およびセグメントを [!UICONTROL  お気に入りとしてマークできます ]。 セグメントを管理するには：
 
 * メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL セグメント]** を選択します。
 
 
 >[!NOTE]
 >
->特定のWorkspace プロジェクト内で作成したクイックセグメントは、すべてのプロジェクトでセグメントを使用できるように設定しない限り、[!UICONTROL &#x200B; セグメント &#x200B;] マネージャーに表示されません。
+>特定のWorkspace プロジェクト内で作成したクイックセグメントは、すべてのプロジェクトでセグメントを使用できるように設定しない限り、[!UICONTROL  セグメント ] マネージャーに表示されません。
 >
 
 ## セグメントマネージャー
@@ -55,10 +55,10 @@ ht-degree: 34%
 | アクション | 説明 |
 |---|---|
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | [ セグメントビルダー ](seg-builder.md) を使用して、別のセグメントを追加します。 |
-| ![検索](/help/assets/icons/Search.svg) [!UICONTROL *タイトルで検索*] | リストでセグメントが選択されていない場合、この検索フィールドを使用してセグメントを検索します。 |
+| ![検索](/help/assets/icons/Search.svg)[!UICONTROL *タイトルで検索*] | リストでセグメントが選択されていない場合、この検索フィールドを使用してセグメントを検索します。 |
 | ![ラベル](/help/assets/icons/Label.svg)、**[!UICONTROL タグ]** | 選択したセグメントにタグ付けします。 **[!UICONTROL セグメントをタグ付け]** ダイアログで、選択したセグメントのタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択したセグメントのタグを保存します。 詳しくは、[ セグメントのタグ付け ](/help/components/segments/seg-tag.md) を参照してください。 |
 | ![共有](/help/assets/icons/ShareAlt.svg)、**[!UICONTROL 共有]** | 選択したセグメントの共有 **[!UICONTROL セグメントを共有]** ダイアログでは、![ 検索 ](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択したセグメントの共有の詳細を保存します。 詳しくは、[ セグメントの共有 ](seg-share.md) を参照してください。 |
-| ![削除](/help/assets/icons/Delete.svg)、**[!UICONTROL 削除]** | 選択したセグメントを削除します。 確認メッセージが表示されます。 |
+| ![削除](/help/assets/icons/Delete.svg)、**[!UICONTROL 削除]** | 選択したセグメントを削除します。 確認メッセージが表示されます。 <br/> セグメントを削除する際は、次の点に注意してください。 <ul><li>このセグメントが適用された予定レポートおよびプロジェクトは、引き続き正常に機能します。</li><li> スケジュール済みレポートは、同じ名前でセグメントを編集しても更新されません。</li> </ul> |
 | ![編集](/help/assets/icons/Edit.svg)**[!UICONTROL 名前を変更]** | 選択した 1 つのセグメントの名前を変更します。 選択した場合、セグメントの名前をインラインで変更できます。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 承認]** | 選択したセグメントを承認します。 詳しくは、[ セグメントの承認 ](seg-approve.md) を参照してください。 |
 | ![コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]** | 選択したセグメントをコピーします。 同じ名前とサフィックス `(Copy)` を持つ新しいセグメントが作成されます。 |
@@ -70,6 +70,6 @@ ht-degree: 34%
 
 ### フィルターパネル
 
-セグメントのリストは、左のパネル ➍ ージの ![ フィルター ](/help/assets/icons/Filter.svg)**[!UICONTROL フィルター]** を使用してフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用するセグメントの数が表示されます。 ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルの表示を切り替えます。
+セグメントのリストは、左のパネル ![ ージの ](/help/assets/icons/Filter.svg) フィルター **** フィルター ➍ を使用してフィルタリングできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用するセグメントの数が表示されます。 ![ フィルター ](/help/assets/icons/Filter.svg) を選択して、フィルターパネルの表示を切り替えます。
 
 詳しくは、[ セグメントのリストのフィルタリング ](seg-filter.md) を参照してください。

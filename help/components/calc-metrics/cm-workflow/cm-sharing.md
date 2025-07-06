@@ -1,12 +1,12 @@
 ---
-description: 権限に応じて、指標を組織全体、グループまたは個々のユーザーと共有できます。
+description: 組織全体、グループまたは個々のユーザーと指標を共有する方法を説明します。
 title: 計算指標の共有
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 11%
+source-wordcount: '319'
+ht-degree: 6%
 
 ---
 

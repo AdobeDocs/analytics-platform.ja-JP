@@ -1,13 +1,13 @@
 ---
-description: クイックインサイトパネルを使用して、Analysis Workspaceでデータテーブルとビジュアライゼーションを作成する方法を説明します。
+description: クイックインサイトパネルを使用して、Analysis Workspaceでのフリーフォームテーブルおよびビジュアライゼーションの作成をガイドする方法を説明します。
 title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 93%
+source-wordcount: '1148'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 * セグメントを作成する場所はどこか。
 * その他の機能。
 
-これらの疑問に答えるために、[!UICONTROL クイックインサイト]は、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL &#x200B; 人気 &#x200B;] がタグ付けされたディメンション、指標およびセグメントが表示されます。
+これらの質問に役立つように、[!UICONTROL  クイックインサイト ] では、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。 このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 
 * 左パネルからコンポーネントをドラッグ＆ドロップします。
 * 構築ブロックフィールドの 1 つに入力を開始します。入力が見つかると、構築ブロックフィールドに使用可能な値が自動的に入力されます。
-* 構築ブロックのドロップダウンメニュー（**[!UICONTROL Analyze]** の `Country` など）を指定し、使用可能な値のリスト（![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用）を使用して、使用する値（**[!UICONTROL 国コード]** など）を検索します。
+* 構築ブロックのドロップダウンメニュー（**[!UICONTROL Analyze]** の国など）と **[!UICONTROL 検索]** 使用する値に設定可能な値のリスト（![ChevronRight](/help/assets/icons/ChevronRight.svg) を使用）（例：**[!UICONTROL 国コード]**）を指定します。
 
 すべての入力フィールドを消去するには、「**[!UICONTROL 消去]**」を選択します。
 

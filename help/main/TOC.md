@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 97%
+source-wordcount: '1269'
+ht-degree: 96%
 
 ---
 
@@ -234,7 +234,7 @@ ht-degree: 97%
       + [ベン図](../analysis-workspace/visualizations/venn.md)
    + パネル {#panels}
       + [概要](../analysis-workspace/c-panels/panels.md)
-      + [空白](../analysis-workspace/c-panels/blank-panel.md)
+      + [空のパネル](../analysis-workspace/c-panels/blank-panel.md)
       + [アトリビューション](../analysis-workspace/c-panels/attribution.md)
       + [実験](../analysis-workspace/c-panels/experimentation.md)
       + [フリーフォーム](../analysis-workspace/c-panels/freeform-panel.md)
@@ -254,6 +254,12 @@ ht-degree: 97%
       + [ダウンロード](../analysis-workspace/export/download-send.md)
       + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
+   + アトリビューション {#attribution}
+      + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
+      + [モデル、コンテナ、ルックバックウィンドウ](../analysis-workspace/attribution/models.md)
+      + [アルゴリズムアトリビューション](../analysis-workspace/attribution/algorithmic.md)
+      + [ベストプラクティス](../analysis-workspace/attribution/best-practices.md)
+      + [よくある質問](../analysis-workspace/attribution/faq.md)
    + 異常値検出 {#anomaly-detection}
       + [概要](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [異常値を表示](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -268,7 +274,7 @@ ht-degree: 97%
       + [パフォーマンスの最適化](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [エラーとトラブルシューティング](../analysis-workspace/workspace-faq/error-messages.md)
       + [制限事項](../analysis-workspace/workspace-faq/aw-limitations.md)
-      + [管理要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + コンテンツ分析 {#content-analytics}
@@ -336,7 +342,7 @@ ht-degree: 97%
       + [セグメントの共有](/help/components/segments/seg-share.md)
       + [セグメントのタグ設定](/help/components/segments/seg-tag.md)
       + [セグメントリストのフィルタリング](/help/components/segments/seg-filter.md)
-      + [セグメントのお気に入りへの登録](/help/components/segments/seg-favorite.md)
+      + [セグメントをお気に入りとしてマーク](/help/components/segments/seg-favorite.md)
       + [セグメントの承認](/help/components/segments/seg-approve.md)
       + [セグメントのコピー](/help/components/segments/seg-copy.md)
       + [セグメントの管理](/help/components/segments/seg-manage.md)
@@ -346,14 +352,16 @@ ht-degree: 97%
       + [概要](../components/calc-metrics/calc-metr-overview.md)
       + ワークフロー {#cm-workflow}
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [簡単な例](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [より複雑な例](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [パーティシペーション指標の作成](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [パーティシペーション指標](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [セグメント化指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [セグメントの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [計算指標をフィルタリング](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [計算指標をお気に入りに登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [計算指標をお気に入りとしてマーク](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [計算指標をコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [計算指標をタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)

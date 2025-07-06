@@ -1,17 +1,17 @@
 ---
-description: Analysis Workspaceでの予測では、一連の高度な統計的手法を使用して、予測値を決定します。
-title: 予測で使用される統計的手法
+description: Analysis Workspaceの予測で、一連の高度な統計的手法を使用して予測値を決定する方法について説明します。
+title: 統計的手法
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '545'
 ht-degree: 6%
 
 ---
 
-# 予測サービスで使用される統計的手法
+# 統計的手法
 
 この予測サービスは現在、Prophet をサポートしており、ほとんどのデータに対して効率的かつ確実に機能することが示されています。 Prophet は、Meta が開発したオープンソースの予測パッケージで、広く使用されています。 データは、トレンド、季節性、イベントの構成要素に分解されます。 Prophet モデルは効率的で、多くの予測アプリケーションに適したスケールです。 さらに、モデルは異常値や欠落しているデータに対して確実に機能します。
 

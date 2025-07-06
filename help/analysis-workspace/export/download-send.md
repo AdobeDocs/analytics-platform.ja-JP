@@ -1,12 +1,12 @@
 ---
 description: Analysis Workspace プロジェクトからデータをダウンロードするための様々な方法について説明します。
-title: Analysis Workspace プロジェクトおよびデータのダウンロード
+title: プロジェクトとデータのダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1184'
 ht-degree: 25%
 
 ---
@@ -38,13 +38,13 @@ Customer Journey Analytics データを書き出すその他の方法につい�
 1. **[!UICONTROL プロジェクト]**/**[!UICONTROL PDFをダウンロード]** を選択します。
 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Your download has been requested. お待ちください。]** が表示されます。
 
-1. ダウンロードの準備が整うとすぐに、メッセージ ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL *プロジェクト名 *を含む緑色のバーがPDFの準備が整います。]**&#x200B;が表示されます。
+1. ダウンロードの準備が整うとすぐに、メッセージ ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL *プロジェクト名 *を含む緑色のバーがPDFの準備が整います。]**が表示されます。
 「**[!UICONTROL ダウンロード]**」を選択して、PDFをダウンロードします。 PDFの表示方法やダウンロード方法は、PDF ドキュメントを処理するためのブラウザー設定によって異なります。
 
 
 プロジェクトを CSV ファイルとしてダウンロードするには：
 
-* **[!UICONTROL プロジェクト]**/**[!UICONTROL CSV をダウンロード]** を選択します。 プロジェクトは、ブラウザー設定の一部として設定されたダウンロードフォルダーに直接ダウンロードされます。 ファイル名は、例えば `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv` のように *プロジェクト名* - *レポートスイート名* - *日付* で構成されます。
+* **[!UICONTROL プロジェクト]**/**[!UICONTROL CSV をダウンロード]** を選択します。 プロジェクトは、ブラウザー設定の一部として設定されたダウンロードフォルダーに直接ダウンロードされます。 ファイル名は、例えば *のように* プロジェクト名 *-* レポートスイート名 *-* 日付 `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv` で構成されます。
 
 ## クリップボードにコピー {#copy-data}
 
@@ -107,8 +107,8 @@ Customer Journey Analytics データを書き出すその他の方法につい�
 
 ファイルがダウンロードされると、次の通知が表示されます。
 
-* 青い **[!UICONTROL _テーブル名 _-_Dimension _.csv がリクエストされています。_x _% 完了]**&#x200B;進行状況を示します。 ダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、「![CrossSize100](/help/assets/icons/CrossSize100.svg)」を選択します。この場合、ダウンロードはキャンセルされません。
-* 緑色の **[!UICONTROL _テーブル名 _-_Dimension _.csv がダウンロードされました]**&#x200B;ファイルのダウンロードが完了すると、完了通知が表示されます。 ファイルがブラウザーに設定されたダウンロードフォルダーにダウンロードされます。
+* 青い **[!UICONTROL _テーブル名 _-_Dimension _.csv がリクエストされています。_x _% 完了]**進行状況を示します。 ダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、「![CrossSize100](/help/assets/icons/CrossSize100.svg)」を選択します。この場合、ダウンロードはキャンセルされません。
+* 緑色の **[!UICONTROL _テーブル名 _-_Dimension _.csv がダウンロードされました]**ファイルのダウンロードが完了すると、完了通知が表示されます。 ファイルがブラウザーに設定されたダウンロードフォルダーにダウンロードされます。
 
 一度に複数のダウンロードをリクエストすると、前のダウンロードが完了するまで、追加の各ダウンロードはキューに入れられるという通知が届きます。
 

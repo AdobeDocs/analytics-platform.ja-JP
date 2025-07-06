@@ -1,11 +1,11 @@
 ---
-description: 個々の指標をセグメント化すると、同じレポート内の指標を比較できます。
+description: 同じビジュアライゼーション内で指標を比較できる個々の指標でセグメント化する方法を説明します。
 title: セグメント化指標
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 1%
 ## 人気のあるページ
 
 1. Workspace プロジェクトから [ 計算指標を作成 ](cm-workflow.md) し、`German people` という名前を付けます。
-1. [ 計算指標ビルダー ](cm-build-metrics.md) 内から、`Germany` というタイトルの [ セグメントを作成 ](/help/components/segments/seg-builder.md) します。これは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
+1. [ 計算指標ビルダー ](cm-build-metrics.md) 内から、[ というタイトルの ](/help/components/segments/seg-builder.md) セグメントを作成 `Germany` します。これは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ セグメント化された計算指標を実装なしの指標として使用 ](https://video.tv.adobe.com/v/37946?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ セグメント化された計算指標を実装なしの指標として使用 ](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 

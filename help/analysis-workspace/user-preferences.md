@@ -1,14 +1,14 @@
 ---
-title: Analysis Workspace でのユーザー環境設定の設定方法
-description: ユーザー向けに一般環境設定とプロジェクト環境設定を設定できます。
+title: ユーザー環境設定
+description: ユーザーの一般的な環境設定とプロジェクト環境設定を行う方法について説明します。
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
-workflow-type: ht
-source-wordcount: '4051'
-ht-degree: 100%
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+workflow-type: tm+mt
+source-wordcount: '4061'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 作成するすべての新規プロジェクトまたはパネルについて、Analysis Workspace および関連コンポーネントのユーザー設定や環境設定を管理できます。既存のプロジェクトやパネルは影響を受けません。
 
-## 環境設定を更新
+## 環境設定を編集
 
 環境設定は次の方法で更新できます。
 
@@ -63,9 +63,11 @@ ht-degree: 100%
 
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
+| **「テンプレート」タブ** | | |
+|  | 「テンプレート」タブを非表示 | 組織内のすべてのユーザーに対して「テンプレート」タブを非表示にします。 |
 | **プロジェクトの共有** | | |
 | | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
-| | Experience Cloud 認証を要求 | このオプションを有効にすると、Analysis Workspace の「任意のユーザーと共有」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」*オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| | Experience Cloud 認証を要求 | このオプションが有効な場合、Analysis Workspaceの「**[!UICONTROL 任意のユーザーと共有]**」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有したユーザーは、[!UICONTROL  プロジェクトを共有 ] の **任意のユーザーとプロジェクトを共有（ログインは不要）で説明されているように、プロジェクトを任意のユーザーと共有する際に使用できる ** リンクがアクティブ **[!UICONTROL オプションを有効にする必要があります]****[!UICONTROL 共有]**/[ 任意のユーザーと共有 ](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)/[ リンクがアクティブです ](/help/analysis-workspace/curate-share/share-projects.md)）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 | プロジェクトのコメント | プロジェクトへのコメントを許可 | **メモ：**&#x200B;この機能はリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般公開されたら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。 <p>このオプションが有効になっている場合、Analysis Workspace の各プロジェクトの右側のパネルでコメント領域を使用できます。</p> <p>[プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)で説明されているように、プロジェクト所有者は特定のプロジェクトのコメント領域を無効にすることができます。</p> <p>Analysis Workspace プロジェクトへのコメントについて詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。</p> |
 
 {style="table-layout:auto"}
@@ -102,7 +104,7 @@ ht-degree: 100%
 |  | [パネルタイプ](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | インスタンスのカウント | 「[!UICONTROL 繰り返しインスタンスをカウント]」を有効にして、インスタンスがレポート内でカウントされるかどうかを指定します。例えば、有効にすると、同じページに対して複数の連続するページビューが複数のページビューとして扱われます。無効にすると、同じページに対する複数の連続するページビューが、単一のページビューとしてカウントされます。 <p>**メモ：**&#x200B;この設定は、特定の指標（セッションなど）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
 |  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | CSV 区切り文字 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
+|  | CSV 区切り記号 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
 |  | 注釈を表示 | 注釈をプロジェクトに表示するかどうかを選択します。注釈について詳しくは、[注釈：概要](/help/components/annotations/overview.md)を参照してください。 |
 
 
@@ -135,7 +137,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | --- | --- | --- |
 | **テーブル** | | |
 | | テーブルタイプ | <ul><li>フリーフォーム</li><li>テーブルビルダー</li></ul> |
-| | デフォルトのテーブル指標 | <ul><li>発生件数</li><li>ユニーク訪問者</li><li>訪問回数</li></ul> |
+| | デフォルトのテーブル指標 | <ul><li>イベント</li><li>セッション数</li><li>人物</li></ul> |
 | | デフォルトのテーブルディメンション | 分、時間、日、週、月、四半期、年から選択します。 |
 | | 日付の整列 | このオプションを選択して各列の日付を整列させ、すべて同じ行から始まるようにすることもできます。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
