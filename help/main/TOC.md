@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 96%
          + [Web SDK 実装オプション](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Platform 用の Adobe Analytics Web SDK の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Adobe Journey Optimizer を使用したパーソナライゼーションの使用](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + Adobe Analyticsとの比較 {#cja-aa-comparison}
+   + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
@@ -252,7 +252,7 @@ ht-degree: 96%
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
+      + [送信およびスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + アトリビューション {#attribution}
       + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)

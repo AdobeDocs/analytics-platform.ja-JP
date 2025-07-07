@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceでフォルダー内のプロジェクトを整理する方法について説明します。
+description: Analysis Workspace でプロジェクトをフォルダーに整理する方法について説明します。
 keywords: Analysis Workspace
 title: フォルダーの概要
 feature: Workspace Basics
@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Workspace のフォルダーを使用すると、プロジェクトの整理および分類に役立ちます。フォルダー機能を使用すると、フォルダーやサブフォルダーを作成してプロジェクトを管理できます。
 
-Customer Journey Analytics のフォルダーは、「[フォルダーとプロジェクトを表示](../freeform-overview.md#show-selector)」を選択した場合に、Workspace ランディングページで使用きます。
+Customer Journey Analytics のフォルダーは、「[フォルダーとプロジェクトを表示](../freeform-overview.md#show-selector)」を選択すると、Workspace ランディングページで使用できます。
 
 Workspace には、会社フォルダーと個人用フォルダーの 2 種類のフォルダーがあります。共有された会社フォルダーを使用すると、管理者は、コンテンツを作成してすべての Workspace ユーザーと共有できます。
 

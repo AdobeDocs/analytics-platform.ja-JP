@@ -1,6 +1,6 @@
 ---
 description: Analysis Workspaceのデフォルトテンプレートと、それらのデフォルトテンプレートの使用方法について説明します。
-title: テンプレートの使用
+title: テンプレートを使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34

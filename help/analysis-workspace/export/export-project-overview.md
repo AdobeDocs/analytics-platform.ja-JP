@@ -8,13 +8,13 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 55%
+ht-degree: 98%
 
 ---
 
 # 書き出しの概要
 
-Analysis WorkspaceからCustomer Journey Analytics プロジェクトを（一部を）書き出すことができます。 サードパーティのツールで使用したり、外部データと組み合わせたりするなど、様々な理由でCustomer Journey Analytics レポートを書き出すことができます。
+Analysis Workspace から Customer Journey Analytics プロジェクトの一部を書き出すことができます。サードパーティのツールで使用したり、外部データと組み合わせたりするなど、様々な目的に合わせて Customer Journey Analytics レポートを書き出すことができます。
 
 次の節では、サポートされているファイルタイプ、書き出しに使用できる様々な方法、各方法のメリットについて説明します。
 
@@ -30,12 +30,12 @@ Customer Journey Analytics レポートは、PDF、CSV、または JSON ファ�
 
 ## 書き出し方法
 
-Analysis Workspaceから書き出す場合は、様々な方法があります。 書き出し方法を選択する際は、書き出す対象と、書き出しにアクセスする必要があるユーザーを検討します。
+Analysis Workspace から書き出すには、様々な方法があります。書き出し方法を選択する際は、書き出す対象と、書き出しにアクセスする必要があるユーザーを考慮します。
 
-| 書き出し方法 | 以下を行う場合は、このメソッドを使用します。 |
+| 書き出し方法 | この方法を使用するケース |
 |---------|----------|
-| [ワークステーションにダウンロード](/help/analysis-workspace/export/download-send.md) | <li>プロジェクトを個人用ワークステーションにダウンロードする。</li><li>アドホックデータのみをダウンロード （スケジュールなし）。</li> <li>最大 50,000 行をダウンロードします。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md) | <li>書き出された Customer Journey Analytics データを組織の他のユーザーにメールで送信する。</li><li>アドホックまたはスケジュールに従ってメールを送信します。</li> <li>メールには最大 50,000 行を含めます。</li> <!--true?--> |
-| [ クラウドの場所への書き出し ](/help/analysis-workspace/export/export-cloud.md) | <li>クラウドの場所（例：）への書き出し <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックまたはスケジュールに従ってデータを書き出します。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [ワークステーションにダウンロード](/help/analysis-workspace/export/download-send.md) | <li>プロジェクトを個人用ワークステーションにダウンロードする。</li><li>アドホックデータのみをダウンロードする（スケジュールされていないもの）。</li> <li>最大 50,000 行をダウンロードする。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
+| [他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md) | <li>書き出された Customer Journey Analytics データを組織の他のユーザーにメールで送信する。</li><li>アドホックで、またはスケジュールに従ってメールを送信する。</li> <li>メールに最大 50,000 行を含める。</li> <!--true?--> |
+| [ クラウドの場所への書き出し ](/help/analysis-workspace/export/export-cloud.md) | <li>以下のようなクラウドの場所に書き出す場合 <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックに指定するか、スケジュールに従ってデータを書き出す。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
