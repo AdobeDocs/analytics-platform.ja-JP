@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspaceのデータ要素を使用すると、Analysis Workspaceの様々なコンポーネント（使用目的、承認済み、重複など）をカタログ化して追跡できます。
+description: Analysis Workspace のデータ辞書を使用すると、Analysis Workspace の様々なコンポーネント（使用目的、承認済み、重複など）をカタログ化して追跡できます。
 title: データ辞書の概要
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="データディクショナリ"
->abstract="データ辞書はユーザーと管理者の両方にとって、Customer Journey Analytics 環境のコンポーネントを追跡したり理解を深めたりするのに役立ちます。<br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報を調整する責任があります。"
+>abstract="データ辞書は、ユーザーと管理者が、Customer Journey Analytics 環境でコンポーネントを追跡したり、理解を深めたりするのに役立ちます。<br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analytics 管理者は、データ辞書の各コンポーネントに関する�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace用データディクショナリ ](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについて詳しくは、 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のデータ辞書](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Analytics 管理者は、データ辞書の各コンポーネントに関する�
 
 データ辞書は、システム管理者が Analytics 環境内のコンポーネントを追跡し、キュレートするのに役立ちます。
 
-Analytics 管理者は、次の目的でデータ要素を使用できます。
+Analytics 管理者は、次の目的でデータ辞書を使用できます。
 
 * 統合が必要な重複コンポーネントを識別します。
 
