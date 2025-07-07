@@ -61,9 +61,9 @@ ht-degree: 76%
 
 特定のプロジェクトの役割を組織内のユーザーやグループと共有する場合は、以下の点を考慮してください。
 
-* プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。プロジェクトの役割は、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started) で管理されるユーザー権限とは独立しています。
+* プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。プロジェクトの役割は、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-getting-started) で管理されるユーザー権限とは独立しています。
 
-* Customer Journey Analyticsでは、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started) の製品プロファイルによってグループが定義されます。 管理者は、*すべて* を含む任意のグループと共有できます。 管理者以外のユーザーは、「すべて *を除き、自分がメンバーとなっている任意のグループと共有でき* す。
+* Customer Journey Analyticsでは、[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-getting-started) の製品プロファイルによってグループが定義されます。 管理者は、*すべて* を含む任意のグループと共有できます。 管理者以外のユーザーは、「すべて *を除き、自分がメンバーとなっている任意のグループと共有でき* す。
 
 * 複数の役割に配置されたユーザーは、常に最高のエクスペリエンスを得ることができます。このシナリオは、ユーザーが個人として、またはグループの一部として追加された場合に発生する可能性があります。 例えば、個人として **[!UICONTROL オリジナルを編集]** の役割、グループのメンバーとして **[!UICONTROL 読み取り専用]** の役割を付与されたユーザーは、**[!UICONTROL オリジナルを編集]** プロジェクトエクスペリエンスを受け取ります。
 
