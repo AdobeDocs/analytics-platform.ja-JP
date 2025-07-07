@@ -4,10 +4,10 @@ title: アラート機能のCustomer Journey AnalyticsとAdobe Analyticsの比�
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 23%
+source-wordcount: '487'
+ht-degree: 24%
 
 ---
 
@@ -45,16 +45,8 @@ Adobe Customer Journey Analytics でアラートを使用するプロセスは�
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Analysis Workspaceからのアラートの作成は使用できません
+## アラートの作成
 
-Adobe AnalyticsのAnalysis Workspaceでは、以下に示す任意の方法でAnalysis Workspaceからアラートを作成できます。 Customer Journey Analyticsでは、Analysis Workspaceからアラートを作成するオプションはまだ使用できません。 代わりに、「[ アラートの作成 ](/help/components/c-intelligent-alerts/alert-builder.md)」の説明に従って、アラートビルダーにアクセスします。
+Adobe AnalyticsのAnalysis Workspaceでは、[ 複数の方法でAnalysis Workspaceからアラートを作成する ](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder) ことができます。 Customer Journey Analyticsでは、Analysis Workspaceでフリーフォームテーブルの選択範囲からのみ [ アラートを作成 ](alert-builder.md) できます。
 
-Adobe Analyticsでは、次のオプションを使用できます。
-
-* フリーフォームテーブルで 1 つ以上の行項目を選択し、右クリックして **[!UICONTROL 選択からアラートを作成]** を選択します。
-
-  これにより、アラートビルダーに即座に事前入力して、正しい指標とセグメントでアラートを作成できます。
-
-* Analysis Workspace でプロジェクトを開き、**[!UICONTROL コンポーネント]**／**[!UICONTROL アラートを作成]**&#x200B;を選択します。
-
-* Analysis Workspaceでプロジェクトを開き、ショートカットキー **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**（Windows）または&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** （macOS）を使用します。
+Adobe AnalyticsとCustomer Journey Analyticsの両方で、[ アラートマネージャー ](alert-manager.md) を使用したアラートの作成がサポートされています

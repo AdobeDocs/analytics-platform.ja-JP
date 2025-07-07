@@ -4,10 +4,10 @@ title: アラートの作成
 feature: Workspace Basics
 role: User, Admin
 exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 68%
+source-wordcount: '990'
+ht-degree: 64%
 
 ---
 
@@ -37,9 +37,9 @@ Customer Journey Analytics のアラートを使用すると、変更された�
 
 1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL アラート]** を選択します。 [アラートマネージャー](alert-manager.md)で、![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]** を選択して新しいアラートを作成するか、リストされているアラートのいずれかを選択して既存のアラートを変更します。
 
-   [アラートビルダー](#alert-builder)インターフェイスが表示されます。
+1. Analysis Workspaceのフリーフォームテーブルで 1 つ以上の行項目を選択し、コンテキストメニューから **[!UICONTROL 選択からアラートを作成]** を選択します。 このアクションにより、アラートビルダーに即座に事前入力して、正しい指標とセグメントでアラートを作成できます。
 
-1. 「**[!UICONTROL 保存]**」を選択してアラートを保存します。「**[!UICONTROL 名前を付けて保存]**」を選択してアラートのコピーを保存します。
+[アラートビルダー](#alert-builder)インターフェイスが表示されます。
 
 
 ## アラートビルダー
