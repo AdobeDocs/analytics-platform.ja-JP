@@ -4,11 +4,11 @@ description: B2B edition of Customer Journey Analyticsの概念と機能。
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使�
 
 * **アトリビューション**：新しい B2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定 ](/help/data-views/component-settings/attribution.md)、[ 計算指標 ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、フリーフォームテーブルの [ 列 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) で使用できます。 アカウントのルックバックは 13 か月に拡張されました。
 
-* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、&lbrace; フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、&lbrace; コホートテーブル [&#128279;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
+* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、{ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、{ コホートテーブル [](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
 また、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#visualizations-preferences) でこれらのビジュアライゼーションのデフォルトのコンテナを設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションを B2B コンテナと共に使用すると、B2B の深い分析とインサイトをサポートできます。
@@ -87,7 +87,7 @@ Customer Journey Analytics B2B は、次のデータタイプとデータセッ�
 | データタイプ | 時系列 | コンテナレコード | フィールドレコード |
 |---|---|---|---|
 | **データセット** | **イベントデータセット**<br/> 例：<ul><li>デジタル分析</li><li>CRM イベント</li><li>担当者イベント</li><li>コールセンターデータ</li></ul> | **プロファイルデータセット**<br/> 例：<ul><li>CRM レコード</li><li>AJO B2B レコード</li><li>CDP レコード</li><ul> | **分類**<br/> 例：<ul><li>キャンペーンレコード</li><li>マーケティングリストレコード</li><li>コンテンツメタデータ</li><li>商品レコード</li></ul> |
-| 要件 | **タイムスタンプ**<br> すべてのレコードに次が必要です。<ul><li>アカウント ID</li><li>グローバルアカウント ID</li><li>ユーザー ID</li></ul> | **アカウント ID**<br> レコードには、次のようなコンテナ ID が必要です。<ul><li>アカウント</li><li>ユーザー</li><li>Opportunity</li><li>購買グループ</li></ul> | **一致するキー**<br> レコードには、次のようなコンテナまたはイベントデータセットに含まれる ID が必要です。<ul><li>キャンペーン ID</li><li>コンテンツ ID</li><li>製品 ID</li></ul> |
+| 要件 | **タイムスタンプ**<br> すべてのレコードに次が必要です。<ul><li>アカウント ID</li><li>グローバルアカウント ID （オプション）</li></ul> | **アカウント ID**<br> レコードには、次のようなコンテナ ID が必要です。<ul><li>アカウント</li><li>ユーザー</li><li>Opportunity</li><li>購買グループ</li></ul> | **一致するキー**<br> レコードには、次のようなコンテナまたはイベントデータセットに含まれる ID が必要です。<ul><li>キャンペーン ID</li><li>コンテンツ ID</li><li>製品 ID</li></ul> |
 
 {style="table-layout:fixed"}
 
