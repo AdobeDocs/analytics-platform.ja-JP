@@ -72,8 +72,8 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 >[!MORELIKETHIS]
 >
 >[フィールドベースのステッチ](fbs.md)
->>[グラフベースのステッチ](gbs.md)
->>[ステッチの使用](use-stitching.md)
->>[ステッチの検証](validate.md)
->>[ステッチに関する FAQ](faq.md)
+>&#x200B;>[グラフベースのステッチ](gbs.md)
+>&#x200B;>[ステッチの使用](use-stitching.md)
+>&#x200B;>[ステッチの検証](validate.md)
+>&#x200B;>[ステッチに関する FAQ](faq.md)
 
