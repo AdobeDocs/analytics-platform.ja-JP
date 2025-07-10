@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+workflow-type: tm+mt
+source-wordcount: '735'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 >[!IMPORTANT]
 >
 >
->- ソースイベントデータセットスキーマに加えた変更を、ステッチされた新しいデータセットスキーマにも適用します。適用しないと、ステッチされたデータセットが破損します。
+>- ソースイベントデータセットスキーマに加えた変更を、新しいステッチされたデータセットスキーマにも適用します。
 >
 >- ソースデータセットを削除すると、ステッチされたデータセットは処理を停止し、システムによって削除されます。
 >

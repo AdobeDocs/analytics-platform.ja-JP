@@ -5,10 +5,10 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
-workflow-type: ht
-source-wordcount: '334'
-ht-degree: 100%
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="動作"
->abstract="このディメンションの行項目の集計方法を決定します。フィールドの文字列値が小文字である必要があるかどうかを指定します。"
+>abstract="ディメンションおよび指標コンポーネントに適用できます。 この指標の行項目の集計方法を決定します。 このディメンションの文字列値を小文字にする必要があるかどうかを指定します。"
 
 <!-- markdownlint-enable MD034 -->
 
