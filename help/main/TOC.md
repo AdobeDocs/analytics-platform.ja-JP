@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1275'
 ht-degree: 97%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 97%
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
    + プロジェクト {#build-workspace-project}
       + [概要](../analysis-workspace/build-workspace-project/freeform-overview.md)
-      + [プロジェクトをすばやく開始](/help/analysis-workspace/build-workspace-project/starter-projects.md)
+      + [プロジェクトの迅速な開始](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [プロジェクトを開く](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [プロジェクトへのコメント](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -252,7 +252,7 @@ ht-degree: 97%
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [送信およびスケジュール](../analysis-workspace/export/t-schedule-report.md)
+      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + アトリビューション {#attribution}
       + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
@@ -396,8 +396,10 @@ ht-degree: 97%
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
       + [データ辞書でのコンポーネントエントリの編集](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [データ辞書の正常性の監視](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + リアルタイムレポート {#real-time-reporting}
+      + [概要](/help/components/real-time/real-time.md)
+      + [リアルタイムレポートの使用](/help/components/real-time/use-real-time.md)
    + [スケジュールされたプロジェクト](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
    + [概要](../report-builder/rb-overview.md)
    + [Report Builder の設定](../report-builder/report-builder-setup.md)
