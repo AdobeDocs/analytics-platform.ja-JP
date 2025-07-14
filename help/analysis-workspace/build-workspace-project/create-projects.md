@@ -4,9 +4,9 @@ title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
-workflow-type: ht
-source-wordcount: '500'
+source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+workflow-type: tm+mt
+source-wordcount: '454'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
 | [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットを変更するには、色弱のユーザー向け用に最適化されている既定のパレットを選択するか、カスタムパレットを指定します。この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
 | [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 |
-| コメントを許可 | **メモ：**&#x200B;この機能はリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般公開されたら、このメモは削除されます。Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。 <p>このオプションが有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域が使用できます。詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。</p> |
+| コメントを許可 | このオプションが有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域が使用できます。詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。 |
 
 
 
