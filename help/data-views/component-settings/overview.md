@@ -40,7 +40,7 @@ ht-degree: 90%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL コンポーネントの種類] | 必須。コンポーネントを指標からディメンションに、またはその逆に変更できます。このドロップダウンの選択を変更すると、コンポーネントがそれぞれに含まれているコンポーネント領域で変更します。 |
-| [!UICONTROL  コンポーネント名 ] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL &#x200B; コンポーネント名 &#x200B;] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。Analysis Workspace UI で検索／フィルタリングを行いやすくするために、カスタムタグまたは標準搭載のタグでコンポーネントにタグを付けることができます。 |
 | [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義のラベルのドロップダウンメニュー。 <p>これらのラベルは、次の状況で必要になる場合があります。</p> <ul><li>Analysis Workspace プロジェクトの[実験パネル](/help/analysis-workspace/c-panels/experimentation.md)を使用して、実験レポートで使用できる一連のコンポーネントを定義する場合。<p>詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。</p></li><li>Analysis Workspace プロジェクトのマップビジュアライゼーションで使用できるコンポーネントのセットを定義します。<p>詳しくは、[Map](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) の [ データビューへのコンテキストラベルの追加 ](/help/analysis-workspace/visualizations/map.md) を参照してください。</p><p>**メモ：** マップのビジュアライゼーションはリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。</p></li><li>アドビが提供するテンプレートを使用する場合。デフォルトでは、アドビが提供する一部のテンプレートは、データビューにないコンポーネントが含まれているので機能しません。<p>欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。データビューに既に存在するコンポーネントに一致するコンテキストラベルを追加するか、データビューに新しいコンポーネントを追加して、このコンポーネントにコンテキストラベルを追加する必要があります。</p><p>詳しくは、[テンプレートの作成と管理](/help/analysis-workspace/templates/create-templates.md)の記事の[特定のテンプレートのデータビューへの欠落しているコンポーネントの追加](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)を参照してください。</p> |
