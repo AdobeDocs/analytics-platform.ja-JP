@@ -1,13 +1,13 @@
 ---
 description: Customer Journey Analyticsのリアルタイムレポート機能について説明します。
 title: リアルタイムレポートの概要
-feature: Filters, Segments
+feature: Real-time Reporting
 hide: true
 hidefromtoc: true
 role: User
 badgePremium: label="ベータ版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: edc5e96b8c55f785fd8b2ed04ace1944ecf3947d
+source-git-commit: e7a7a297e303a410c73598f373219644e50ede74
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
