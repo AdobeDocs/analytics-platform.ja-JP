@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="動作"
->abstract="ディメンションおよび指標コンポーネントに適用できます。 この指標の行項目の集計方法を決定します。 このディメンションの文字列値を小文字にする必要があるかどうかを指定します。"
+>abstract="ディメンションおよび指標コンポーネントに適用できます。この指標の行項目がどのように集計されるかを決定します。このディメンションの文字列値が小文字である必要があるかどうかを指定します。"
 
 <!-- markdownlint-enable MD034 -->
 
