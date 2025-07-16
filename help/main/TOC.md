@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -252,11 +252,11 @@ ht-degree: 97%
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
+      + [送信およびスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + アトリビューション {#attribution}
       + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
-      + [モデル、コンテナ、ルックバックウィンドウ](../analysis-workspace/attribution/models.md)
+      + [モデル, コンテナ, ルックバックウィンドウ](../analysis-workspace/attribution/models.md)
       + [アルゴリズムアトリビューション](../analysis-workspace/attribution/algorithmic.md)
       + [ベストプラクティス](../analysis-workspace/attribution/best-practices.md)
       + [よくある質問](../analysis-workspace/attribution/faq.md)
@@ -321,7 +321,7 @@ ht-degree: 97%
       + [注釈を作成](../components/annotations/create-annotations.md)
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
-      + [モバイルスコアカード注釈](../components/annotations/mobile-annotations.md)
+      + [モバイルスコアカードの注釈](../components/annotations/mobile-annotations.md)
    + オーディエンス {#audiences}
       + [オーディエンスの概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
@@ -342,7 +342,7 @@ ht-degree: 97%
       + [セグメントの共有](/help/components/segments/seg-share.md)
       + [セグメントのタグ設定](/help/components/segments/seg-tag.md)
       + [セグメントリストのフィルタリング](/help/components/segments/seg-filter.md)
-      + [セグメントをお気に入りとしてマーク](/help/components/segments/seg-favorite.md)
+      + [セグメントのお気に入りへの登録](/help/components/segments/seg-favorite.md)
       + [セグメントの承認](/help/components/segments/seg-approve.md)
       + [セグメントのコピー](/help/components/segments/seg-copy.md)
       + [セグメントの管理](/help/components/segments/seg-manage.md)
@@ -354,14 +354,14 @@ ht-degree: 97%
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [指標の検索](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [計算指標の作成](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
-         + [簡単な例](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [シンプルな例](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [より複雑な例](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [指標タイプとアトリビューション](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [パーティシペーション指標](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [セグメント化指標](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [セグメントの積み重ねと置き換え](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [計算指標をフィルタリング](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [計算指標をお気に入りとしてマーク](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [計算指標のお気に入りへの登録](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [計算指標をコピー](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [関数の使用](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [計算指標をタグ付け](../components/calc-metrics/cm-workflow/cm-tagging.md)
