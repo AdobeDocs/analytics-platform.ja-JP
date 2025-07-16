@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
-workflow-type: ht
+source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
+workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Content Analytics についてのレポートをゼロから開始するには�
 
 デフォルトでは、関連する Content Analytics ディメンションのサムネイルが表示されます。Content Analytics ディメンションのサムネイルの表示を設定するには：
 
-* Content Analytics ディメンションのヘッダー行にポインタを合わせます。例えば、**[!UICONTROL アセット名]**&#x200B;や&#x200B;**[!UICONTROL エクスペリエンス ID]** などです。
+* Content Analytics ディメンションのヘッダー行にポインタを合わせます。例えば、**[!UICONTROL アセット ID]** や **[!UICONTROL エクスペリエンス ID]** などです。
 * 「![設定](/help/assets/icons/Setting.svg)」を選択します。
 * **[!UICONTROL 行設定]**&#x200B;ポップアップの&#x200B;**[!UICONTROL 設定]**&#x200B;の下の「**[!UICONTROL サムネイルを表示]**」をオンまたはオフにします。
 
