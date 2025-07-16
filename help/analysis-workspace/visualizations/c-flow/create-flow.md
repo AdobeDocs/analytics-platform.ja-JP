@@ -4,10 +4,10 @@ title: フロービジュアライゼーションの設定
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 016bf917e3737f00364c531760722d9b0d6ec785
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 85%
+source-wordcount: '1759'
+ht-degree: 83%
 
 ---
 
@@ -139,7 +139,9 @@ ht-degree: 85%
 
 * フロー図はインタラクティブです。図にマウスポインターを置いて、表示する詳細情報を変更します。
 
-* 図のノードを選択すると、そのノードの詳細が表示されます。折りたたむには、もう一度ノードを選択します。
+* 図でノードを選択すると、そのノードの詳細が表示されます。 折りたたむには、もう一度ノードを選択します。
+
+  フロービジュアライゼーションで複数のノードを展開したままにすると、レポート時間に影響を与える可能性があります。 一般的なガイドラインとして、一度に展開し続けるノードは 10 個以下にしてください。
 
   ![ノードの詳細を示すインタラクティブフロー図の例。](assets/node-details.png)
 
@@ -174,7 +176,7 @@ ht-degree: 85%
 | **[!UICONTROL 項目を除外]**&#x200B;または&#x200B;**[!UICONTROL 除外した項目を復元]** | 列から特定のノードを削除して、列の上部にフィルターとして自動的に作成します。除外した項目を復元するには、コンテキストメニューから、「**[!UICONTROL 除外した項目を復元]**」を選択します。また、列の上部にあるセグメントを開いて、先ほど除外した項目を含むピルボックスを削除することもできます。 |
 | **[!UICONTROL トレンド]** | ノードのトレンド図を作成します。 |
 | **[!UICONTROL 次の列を表示]**／**[!UICONTROL 前の列を表示]** | ビジュアライゼーションの次の（右）列または前の（左）列を表示します。 |
-| **[!UICONTROL 列を非表示]** | 選択されている列をビジュアライゼーションから非表示にします。 |
+| **[!UICONTROL  列を非表示 ]**n | 選択されている列をビジュアライゼーションから非表示にします。 |
 | **[!UICONTROL 列全体を展開]** | 列を展開して、すべてのノードを表示します。デフォルトでは、上位 5 つのノードのみ表示されます。 |
 | **[!UICONTROL 選択内容からオーディエンスを作成]** | 選択した列に基づいてオーディエンスを作成します。 |
 | **[!UICONTROL 列全体を折りたたむ]** | すべてのノードを列内に隠します。 |
@@ -184,17 +186,17 @@ ht-degree: 85%
 このオプションを使用する場合、次の点に注意してください。
 
 * **[!UICONTROL 最初 / 最後の発生に制限]**&#x200B;は、シリーズの最初または最後の発生のみをカウントします。**[!UICONTROL 次で始まる]**&#x200B;または&#x200B;**[!UICONTROL 次で終わる]**&#x200B;条件の他のすべての発生は、破棄されます。
-* **[!UICONTROL 次で始まる]**&#x200B;フローで使用していた場合、開始条件に一致する最初の発生のみが含まれます。
-次の例では、フロー内の各ステップにおける*買い物かごに追加*&#x200B;と&#x200B;*製品メインカテゴリ*&#x200B;の&#x200B;**すべて**&#x200B;の発生件数が含まれます。
+* **[!UICONTROL 次で始まる]**フローで使用していた場合、開始条件に一致する最初の発生のみが含まれます。
+次の例では、フロー内の各ステップにおける*買い物かごに追加*&#x200B;と&#x200B;*製品メインカテゴリ*&#x200B;の&#x200B;**すべて**の発生件数が含まれます。
   ![制限なし、最初](assets/limitofffirst.png)
 
-  次の例では、フローの各ステップにおける&#x200B;*買い物かごに追加*&#x200B;と&#x200B;*製品メインカテゴリ*&#x200B;の&#x200B;**最初**&#x200B;の発生件数のみが含まれます。
+  次の例では、フローの各ステップにおける&#x200B;*買い物かごに追加*&#x200B;と&#x200B;*製品メインカテゴリ*&#x200B;の&#x200B;**最初**の発生件数のみが含まれます。
   ![リント、開始](assets/limitonfirst.png)
-* **[!UICONTROL 次で終わる]**&#x200B;フローで使用していた場合、終了条件に一致する最後の発生のみが含まれます。
-次の例では、フロー内の各ステップにおける*製品メインカテゴリ*&#x200B;と&#x200B;*買い物かごに追加*&#x200B;の&#x200B;**すべて**&#x200B;の発生件数が含まれます。
+* **[!UICONTROL 次で終わる]**フローで使用していた場合、終了条件に一致する最後の発生のみが含まれます。
+次の例では、フロー内の各ステップにおける*製品メインカテゴリ*&#x200B;と&#x200B;*買い物かごに追加*&#x200B;の&#x200B;**すべて**の発生件数が含まれます。
   ![制限なし、最初](assets/limitofflast.png)
 
-  次の例では、フローの各ステップにおける&#x200B;*製品メインカテゴリ*&#x200B;と&#x200B;*買い物かごに追加*&#x200B;の&#x200B;**最後**&#x200B;の発生のみが含まれます。
+  次の例では、フローの各ステップにおける&#x200B;*製品メインカテゴリ*&#x200B;と&#x200B;*買い物かごに追加*&#x200B;の&#x200B;**最後**の発生のみが含まれます。
   ![リント、開始](assets/limitonlast.png)
 * 使用される系列は、コンテナに基づいて異なります。**[!UICONTROL セッション]** コンテナを使用する場合、一連のイベントは 1 つのセッションに制限されます。  他のコンテナ（例：**[!UICONTROL Person]**、または **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}）を使用すると、一連のイベントは指定されたコンテナに基づいて行われ、複数のセッションにまたがる場合があります。
 * 「**[!UICONTROL 最初／最後の発生に制限]**」オプションは、「**[!UICONTROL 次で始まる]**」または「**[!UICONTROL 次で終わる]**」フィールドで指標またはディメンション項目を使用している場合に、詳細設定で設定できます。
@@ -203,7 +205,7 @@ ht-degree: 85%
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
