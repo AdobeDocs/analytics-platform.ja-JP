@@ -4,10 +4,10 @@ description: Customer Journey Analytics の顧客管理キーを設定する方�
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
 role: Admin
-source-git-commit: dfdb6bc5c190e4de98eaef86e0c8d118327640a6
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: cdc8d889a05c55d2f4765d0837023d007a5a230d
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 91%
 
 ---
 
@@ -20,11 +20,14 @@ Adobe Customer Journey Analytics は、[Healthcare Shield](https://www.adobe.com
 Azure で実行されている Customer Journey Analytics の CMK を設定するには、次の手順に従います。
 
 1. Adobe Customer Journey Analytics CMK の使用権限があり、組織が Azure で動作する Adobe Experience Platform を使用していることを確認します。アドビのアカウントチームに問い合わせることで、これらの使用権限を確認できます。
-1. Azure で、自分がアプリケーション管理者、クラウドアプリケーション管理者、グローバル管理者などの権限がある役割を持つ管理者であることを確認します。詳しくは、[Microsoft Entra の組み込みの役割](https://learn.microsoft.com/ja-jp/entra/identity/role-based-access-control/permissions-reference)を参照してください。
+1. Azure で、自分がアプリケーション管理者、クラウドアプリケーション管理者、グローバル管理者などの権限がある役割を持つ管理者であることを確認します。詳しくは、[Microsoft Entra のビルトインの役割](https://learn.microsoft.com/ja-jp/entra/identity/role-based-access-control/permissions-reference)を参照してください。
 1. Customer Journey Analytics でのみ使用する新しい Azure Key Vault を作成します。詳しくは、[Microsoft Azure Key Vault ドキュメント](https://learn.microsoft.com/ja-jp/azure/key-vault/general/)を参照してください。
-1. Key Vault 内のキーへのアクセス権を Adobe Azure アプリに付与します。詳しくは[既存アカウントの顧客管理キーの設定](https://learn.microsoft.com/ja-jp/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)を参照してください。アドビアプリケーション ID は次のとおりです。
+1. Key Vault 内のキーへのアクセス権を Adobe Azure アプリに付与します。それには、次のいずれかの方法を使用します。
+   * 次の URL から、承認の同意に基づいて権限を付与します：[https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&amp;redirect_uri=https://experience.adobe.com&amp;scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
 
-   **`251e3919-1940-4296-bb8b-6b9a5e8a4805`**
+   * [ 既存のアカウント用の顧客管理キーの設定 ](https://learn.microsoft.com/ja-jp/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault) の手順に従います。 アドビアプリケーション ID は次のとおりです。
+
+     **`251e3919-1940-4296-bb8b-6b9a5e8a4805`**
 
 1. CMK 設定をリクエストするアドビカスタマーケアチケットを作成します。チケットに Azure URI を含めます。URI は、Azure キーの「**キー識別子**」フィールドにあります。
 
