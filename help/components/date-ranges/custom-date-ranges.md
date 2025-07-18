@@ -5,10 +5,10 @@ title: カスタム日付範囲の例
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
+source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 4%
+source-wordcount: '112'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 +++ 詳細
 
-1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する場合。 例えば、今日が 2024 年 9 月 11 日水曜日の場合。 2024 年 9 月 4 日水曜日（PT）から 2024 年 9 月 7 日土曜日までの日付範囲が必要です。 9月
+1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する場合。 例えば、今日が 2024 年 9 月 11 日水曜日の場合。 2024 年 9 月 4 日水曜日（PT）から 2024 年 9 月 7 日土曜日までの日付範囲が必要です。
 
 ![ 日付範囲の例 ](assets/date-range-example.png)
 
