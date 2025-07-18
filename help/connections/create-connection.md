@@ -147,7 +147,7 @@ ht-degree: 67%
 
 ### Customer Journey Analytics
 
-**[!UICONTROL 接続]**/**[!UICONTROL *接続名&#x200B;*]**画面で、次の操作を行います。
+**[!UICONTROL 接続]**/**[!UICONTROL *接続名&#x200B;*]**&#x200B;画面で、次の操作を行います。
 
 ![名称未設定の接続設定](assets/create-conn1.png)
 
@@ -187,7 +187,7 @@ ht-degree: 67%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-**[!UICONTROL 接続]**/**[!UICONTROL *接続名&#x200B;*]**画面で、次の操作を行います。
+**[!UICONTROL 接続]**/**[!UICONTROL *接続名&#x200B;*]**&#x200B;画面で、次の操作を行います。
 
 ![名称未設定の接続設定](assets/create-conn1-b2b.png)
 
@@ -199,10 +199,10 @@ ht-degree: 67%
    | **[!UICONTROL 接続の説明]** | この接続の目的を記述します。 |
    | **[!UICONTROL タグ]** | タグを指定して接続にタグを追加すると、後でこれらのタグを使用して接続を検索できるようになります。 |
    | **[!UICONTROL プライマリ ID]** | 接続に適切なプライマリ ID を選択します。 <ul><li>![ ユーザー ](/help/assets/icons/User.svg)**[!UICONTROL ユーザー]**：通常、B2C シナリオで使用する、ユーザーベースの接続。</li><li> ![Building](/help/assets/icons/Building.svg)**[!UICONTROL Account]**：通常、B2B シナリオで使用するアカウントベースの接続。</li></ul>接続に 1 つ以上のデータセットを追加すると、プライマリ ID を変更できなくなります。 <br/> プライマリ ID の選択によって、接続がユーザーベースかアカウントベースかが定義されます。 接続ベースによって、特定のタイプのデータセットで使用可能な [ 設定 ](#dataset-settings) が決まります。 |
-   | **[!UICONTROL オプションコンテナ]** | ![4}プライマリID](/help/assets/icons/Building.svg) として **[!UICONTROL Building}]** Account **[!UICONTROL を選択した場合は、追加のコンテナを選択します。]**<ul><li>**[!UICONTROL グローバルアカウント]**：接続内のグローバルアカウントの設定を有効にします。</li><li>**[!UICONTROL 商談]**：接続内の商談の設定を有効にします。</li><li>**[!UICONTROL 購買グループ]**：接続内の購買グループの設定を有効にします。</li><ul> |
+   | **[!UICONTROL オプションコンテナ]** | ![4&rbrace;プライマリID](/help/assets/icons/Building.svg) として **[!UICONTROL Building&rbrace;]** Account **[!UICONTROL を選択した場合は、追加のコンテナを選択します。]**<ul><li>**[!UICONTROL グローバルアカウント]**：接続内のグローバルアカウントの設定を有効にします。</li><li>**[!UICONTROL 商談]**：接続内の商談の設定を有効にします。</li><li>**[!UICONTROL 購買グループ]**：接続内の購買グループの設定を有効にします。</li><ul> |
    | **[!UICONTROL サンドボックス]** | 接続を作成するデータセットを含んだExperience Platformのサンドボックスを選択します。<p>Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供します。 サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。<p>サンドボックスを選択すると、左側のパネルに、取り出し元となるサンドボックス内のすべてのデータセットが表示されます。 |
    | **[!UICONTROL 周期的なデータ時間枠を有効にする]** | このチェックボックスをオンにすると、Customer Journey Analytics データ保持を接続レベルでの月単位（1 か月、3 か月、6 か月など）の周期的な時間枠として定義できます。<p>データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットには、周期的なデータ時間枠設定は存在しません。 ただし、接続に（1 つ以上のイベントデータセットに加えて）プロファイルまたはルックアップデータセットが含まれる場合、そのデータは、同じ期間だけ保持されます。<p> 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。<p><ul><li>デフォルト（オフ）のままにすると、Adobe Experience Platform のデータ保持設定によって保持期間が置き換えられます。 Experience Platform に 25 か月分のデータがある場合、Customer Journey Analytics はバックフィルを通じて 25 か月分のデータを取得します。 Platform でこのうち 10 か月を削除すると、Customer Journey Analytics は残りの 15 か月を保持します。</li><li>周期的なデータ時間枠を有効にする場合、周期的なデータ時間枠を有効にする月数を **[!UICONTROL 月数を選択]** で指定します。 |
-   | **[!UICONTROL データセットを追加]** | ![ データセットを追加 ](/help/assets/icons/DataAdd.svg) するには、「**[!UICONTROL データ追加]**[ データセットを追加 ](#add-datasets)」を選択します。 接続にまだデータセットがない場合は、データセットテーブルで **[!UICONTROL データセットを追加]** を選択することもできます。 |
+   | **[!UICONTROL データセットを追加]** | ![ データセットを追加 ](/help/assets/icons/DataAdd.svg) するには、「**[!UICONTROL データ追加]**&#x200B;[ データセットを追加 ](#add-datasets)」を選択します。 接続にまだデータセットがない場合は、データセットテーブルで **[!UICONTROL データセットを追加]** を選択することもできます。 |
 
 
    設定したデータセットの場合は、データセットテーブルに次の列が表示されます。
@@ -408,7 +408,7 @@ ht-degree: 67%
 
 1. **[!UICONTROL 接続]**/**[!UICONTROL _接続の名前_]** インターフェイスで、「![ データ追加 ](/help/assets/icons/DataAdd.svg)**[!UICONTROL データセットを追加]**」を選択します。
 
-1. ➊**[!UICONTROL データセットを選択]** 手順には、Experience Platform データセットのリストが表示されます。
+1. ➊&#x200B;**[!UICONTROL データセットを選択]** 手順には、Experience Platform データセットのリストが表示されます。
 
    ![データセットの選択](assets/select-datasets.png)
 
@@ -439,7 +439,7 @@ ht-degree: 67%
 
 1. 「**[!UICONTROL データセットを追加]**」を選択して、設定済みのデータセットを接続に追加します。 追加する各データセットに必要な設定の一部が指定されていない場合は、通知が表示されます。
 
-   または、「**[!UICONTROL キャンセル]**」を選択して、接続へのデータセットの追加をキャンセルします。 または、「**[!UICONTROL 戻る]**」を選択して、「➊**[!UICONTROL データセットを選択]**」ステップに戻ります。
+   または、「**[!UICONTROL キャンセル]**」を選択して、接続へのデータセットの追加をキャンセルします。 または、「**[!UICONTROL 戻る]**」を選択して、「➊&#x200B;**[!UICONTROL データセットを選択]**」ステップに戻ります。
 
 
 ### データセットの編集
@@ -449,7 +449,7 @@ ht-degree: 67%
 1. 編集するデータセットテーブルにリストされているデータセットの「![ 詳細 ](/help/assets/icons/More.svg)」を選択します
 1. ![ データセットを編集 ](/help/assets/icons/Edit.svg) 編集 **[!UICONTROL を選択]** ます。
 
-1. [ データセットを編集：](#dataset-settings) データセット名 **[!UICONTROL ダイアログで _データセット設定_]**を設定します。
+1. [ データセットを編集：](#dataset-settings) データセット名 **[!UICONTROL ダイアログで _データセット設定_]**&#x200B;を設定します。
 
    ![ データセットを編集 ](assets/edit-dataset.png)
 
@@ -610,7 +610,7 @@ ht-degree: 67%
 
 ### 過去のバックフィル
 
-インターフェイスで ![ 履歴 ](/help/assets/icons/History.svg) **[!UICONTROL 過去のバックフィル]** を選択すると、**[!UICONTROL 過去のバックフィル : _データセット名_]**ダイアログにデータセットからの最新のバックフィルが表示されます。
+インターフェイスで ![ 履歴 ](/help/assets/icons/History.svg) **[!UICONTROL 過去のバックフィル]** を選択すると、**[!UICONTROL 過去のバックフィル : _データセット名_]**&#x200B;ダイアログにデータセットからの最新のバックフィルが表示されます。
 
 ## データセットタイプ {#dataset-types}
 
