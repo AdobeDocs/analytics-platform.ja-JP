@@ -1,22 +1,20 @@
 ---
-description: Analysis Workspaceのカスタム日付範囲の例。
+description: Analysis Workspaceでカスタム日付範囲を定義する方法を説明します。
 keywords: Analysis Workspace
 title: カスタム日付範囲の例
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 4%
 
 ---
 
 # カスタム日付範囲の例
 
-この記事では、カスタム日付範囲のその他の例を示します
-
-
+この記事では、カスタム日付範囲のその他の例を示します。
 
 ## 最後の 2 か月前
 
