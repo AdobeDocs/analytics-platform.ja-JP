@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics![](/help/assets/icons/CustomerJourneyAnalytics.svg)Customer Journey Analytics _&#x200B;**のマップビジュアライゼーション** ついて説明します。この記事の _<br/>_[AdobeAnalytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ Adobe Analytics![ 版については、](/help/assets/icons/AdobeAnalytics.svg)_&#x200B;**Map** を参照してください。_
+_この記事では、_ CustomerJourneyAnalytics![](/help/assets/icons/CustomerJourneyAnalytics.svg)Customer Journey Analytics _**のマップビジュアライゼーション** ついて説明します。この記事の _<br/>_[AdobeAnalytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ Adobe Analytics![ 版については、](/help/assets/icons/AdobeAnalytics.svg)_**Map** を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -57,14 +57,14 @@ Analysis Workspaceの ![ グローブ ](/help/assets/icons/Globe.svg) **[!UICONT
 
 ### データビューでのコンテキストラベルの追加
 
-Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL &#x200B; マップ &#x200B;] ビジュアライゼーションなどのCustomer Journey Analytics サービスでこれらのラベルを使用できます。
+Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL  マップ ] ビジュアライゼーションなどのCustomer Journey Analytics サービスでこれらのラベルを使用できます。
 
 #### マップビジュアライゼーションに必須のコンテキストラベル
 
 マップのビジュアライゼーションが機能するには、コンテキストラベルが必要です。 次のコンテキストラベルが存在しない場合、操作する緯度と経度のデータがないため、マップビジュアライゼーションは機能しません。
 
-* [!UICONTROL &#x200B; 地域：緯度 &#x200B;]
-* [!UICONTROL &#x200B; 位置情報：経度 &#x200B;]
+* [!UICONTROL  地域：緯度 ]
+* [!UICONTROL  位置情報：経度 ]
 
 これらのコンテキストラベルを追加するには：
 
@@ -90,11 +90,11 @@ Adobeには、マップビジュアライゼーションを使用する [ 事前
 
 | テンプレート名 | 必須のコンテキストラベル |
 |---------|----------|
-| ジオエクスペリエンス | [!UICONTROL &#x200B; 地域：地域 – 国 &#x200B;] |
-| 地域 - 地域 | [!UICONTROL Geo: Geo リージョン &#x200B;] |
-| 地域 - 都市 | [!UICONTROL Geo：地域 – 市区町村 &#x200B;] |
-| 地域 - 米国の州 | [!UICONTROL Geo：地域 – の状態 &#x200B;] |
-| 地域 – 米国 DMA | [!UICONTROL &#x200B; 地域：地域 Dma] |
+| ジオエクスペリエンス | [!UICONTROL  地域：地域 – 国 ] |
+| 地域 - 地域 | [!UICONTROL Geo: Geo リージョン ] |
+| 地域 - 都市 | [!UICONTROL Geo：地域 – 市区町村 ] |
+| 地域 - 米国の州 | [!UICONTROL Geo：地域 – の状態 ] |
+| 地域 – 米国 DMA | [!UICONTROL  地域：地域 Dma] |
 
 これらのコンテキストラベルを追加するには：
 
@@ -123,7 +123,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
 | 機能 | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
 | データソース | データビューで使用可能な任意のセグメントをデータソースとして使用します。 | 次のオプションがあります。 <ul><li>モバイルの緯度/経度</li><li>地理的Dimension<br/> 訪問者の IP アドレスに基づいた訪問者の場所に関する地理セグメントデータを表します。 </li></ul> |
-| 精度 | 精度の高いデータセットの場合、データビューでディメンションを設定して、小数点以下 5 桁まで表示できます。 これにより、1 メートル以内でマップのビジュアライゼーションが正確になります。 <p>詳しくは、[ ディメンションの正確な場所の設定 ](#configure-precise-locations-for-dimensions) を参照してください。</p> | データは、[!UICONTROL &#x200B; 国 &#x200B;]、[!UICONTROL &#x200B; 地域 &#x200B;]、および [!UICONTROL &#x200B; 市区町村 &#x200B;] レベルに対して正確です。 （DMA または郵便番号レベルには変換されません。） |
+| 精度 | 精度の高いデータセットの場合、データビューでディメンションを設定して、小数点以下 5 桁まで表示できます。 これにより、1 メートル以内でマップのビジュアライゼーションが正確になります。 <p>詳しくは、[ ディメンションの正確な場所の設定 ](#configure-precise-locations-for-dimensions) を参照してください。</p> | データは、[!UICONTROL  国 ]、[!UICONTROL  地域 ]、および [!UICONTROL  市区町村 ] レベルに対して正確です。 （DMA または郵便番号レベルには変換されません。） |
 | 選択範囲からのセグメントの作成 | マップビジュアライゼーションで選択した特定の領域に基づいてセグメントを作成します。 <p>詳しくは、[ マップビジュアライゼーションからセグメントを作成する ](#create-a-segment-from-the-map-visualization) を参照してください。</p> | 一般にマップビジュアライゼーションでレポートされるデータに基づいてセグメントを作成します。 |
 | 選択範囲からオーディエンスを作成 | マップビジュアライゼーションで選択した特定の領域に基づいてオーディエンスを作成します。 <p>詳しくは、[ マップビジュアライゼーションからオーディエンスを作成する ](#create-an-audience-from-the-map-visualization) を参照してください。 | マップビジュアライゼーションからオーディエンスを作成できません。 |
 | 選択範囲からトレンドを作成する | マップビジュアライゼーションで選択した特定の領域に基づいて、トレンド折れ線グラフビジュアライゼーションを作成します。 <p>詳しくは、[ マップビジュアライゼーションからトレンド折れ線グラフを作成 ](#create-a-trended-line-chart-from-the-map-visualization) を参照してください。<!-- is this correct? --> | マップ ビジュアライゼーションからトレンドを作成できません。 |
@@ -212,7 +212,9 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
       * 負の数を表示します。
 
         例えば、前年比指標のグラフを表示するときに、ニューヨークの上に「-33％」と表示することができます。
+
       * *パーセント*&#x200B;タイプの指標では、クラスタリングでパーセンテージがまとめて平均化されます。
+
       * 緑と赤のカラースキームは、正と負を示します。
 
    * **追加のビジュアライゼーション設定**：ビジュアライゼーションヘッダーの設定アイコン ![ 設定 ](/help/assets/icons/Setting.svg) を選択して、マップビジュアライゼーションの追加設定を表示します。 詳しくは、[ ビジュアライゼーション設定の指定 ](#configure-visualization-settings) を参照してください。
@@ -238,7 +240,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
    | **[!UICONTROL スタイル]** | | |
    | | **[!UICONTROL カラーテーマ]** | ヒートマップおよびバブルのカラースキームを表します。コーラル、赤、緑または青から選択できます。デフォルトはコーラルです。 |
    | | **[!UICONTROL マップスタイル]** | 「ベーシック」、「ストリート」、「ブライト」、「ライト」、「ダーク」、「サテライト」から選択できます。 |
-   | | **[!UICONTROL クラスタ半径]** | 指定したピクセル数内にあるデータポイントをグループ化します。デフォルトは 50 です。 |
+   | | **[!UICONTROL クラスタ半径]** | 指定したピクセル数内にあるデータポイントをグループ化します。デフォルトは 50 です。<p>このオプションは、**[!UICONTROL マップ タイプ]** として **[!UICONTROL バブル]** が選択されている場合にのみ使用できます。</p> |
    | | **[!UICONTROL カスタムの最大値]** | マップの最大値のしきい値を変更できます。 この値を調整すると、設定したカスタムの最大値を基準として、バブルまたはヒートマップの値（色とサイズ）のスケールが調整されます。 |
    | | **[!UICONTROL 注釈を表示]** | このビジュアライゼーション用に作成された注釈を表示します。 |
    | | **[!UICONTROL タイトルを非表示]** | ビジュアライゼーションのタイトルを非表示にします。 |
@@ -265,7 +267,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
 
       * **0:** マップビジュアライゼーションの大きな地域または国レベルに対する正確さ。 Workspace レポートで小数点以下 0 桁を表示します。
 
-      * **1:** マップビジュアライゼーション内の地域または大都市レベルに対して正確。  Workspace レポートで小数点以下 1 桁を表示します。
+      * **1:** マップビジュアライゼーション内の地域または大都市レベルに対して正確。  Workspace レポートで小数点第 1 位を表示します。
 
       * **2:** 地図ビジュアライゼーションの市区町村または郵便番号レベルに対する正確な情報。 Workspace レポートで小数点以下 2 桁を表示します。
 
