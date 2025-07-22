@@ -538,7 +538,7 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="最もパフォーマンスの高いコンテンツとコンテンツ属性について説明します。"
->abstract="**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。コンテンツ分析では、AI を使用して属性を自動的に生成し、コンテンツにタグを付けます。 &lt;a href=\&quot;https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics\&quot; target=\&quot;_blank\&quot;> 詳細情報 </a>.<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。"
+>abstract="**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。コンテンツ分析では、AI を使用して属性を自動的に生成し、コンテンツにタグを付けます。 &lt;a href=\&quot;https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics\&quot; target=\&quot;_blank\&quot;> 詳細情報 </a>.<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
