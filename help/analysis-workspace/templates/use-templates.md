@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: bf5d809588c7a0b2e7a97470c99a0f2565d6f713
+source-git-commit: 0b2cc64bd6134ea7a843499af4461b33147f4e41
 workflow-type: tm+mt
-source-wordcount: '19837'
+source-wordcount: '19835'
 ht-degree: 99%
 
 ---
@@ -538,7 +538,7 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="最もパフォーマンスの高いコンテンツとコンテンツ属性について説明します。"
->abstract="**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。Content Analyticsでは、AI を使用して属性を自動生成し、コンテンツにタグを付けます。<a href="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">詳細情報</a> <br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。"
+>abstract="**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。[Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"} では、AI を使用して属性を自動生成し、コンテンツにタグを付けます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
