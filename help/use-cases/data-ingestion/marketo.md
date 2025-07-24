@@ -25,7 +25,7 @@ Experience Platformで利用可能なMarketo Engage データセットを活用�
 
 >[!NOTE]
 >
->Marketo Engage データからより多くの価値を得るには [0}Customer Journey Analytics B2B edition} を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
+>Marketo Engage データからより多くの価値を得るには [0&rbrace;Customer Journey Analytics B2B edition&rbrace; を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
 >
 
 
