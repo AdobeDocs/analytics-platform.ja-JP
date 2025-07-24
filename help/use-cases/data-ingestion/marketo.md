@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
+source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 14%
+source-wordcount: '1059'
+ht-degree: 13%
 
 ---
 
@@ -25,21 +25,21 @@ Experience Platformで利用可能なMarketo Engage データセットを活用�
 
 >[!NOTE]
 >
->Marketo Engage データからより多くの価値を得るには [0&rbrace;Customer Journey Analytics B2B edition&rbrace; を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
+>Marketo Engage データからより多くの価値を得るには [0}Customer Journey Analytics B2B edition} を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
 >
 
 
-Customer Journey AnalyticsでMarketo Engageの日付をレポートするには：
+Customer Journey AnalyticsでMarketo Engage データについてレポートするには：
 
 +++ &#x200B;1. Marketo ソースデータフィールドの XDM ターゲットへのマッピング
 
-[人物](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
+[人物](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
 
 +++
 
 +++ &#x200B;2. Marketo データのAdobe Experience Platformへの取り込み
 
-[Marketo Engage コネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
+[Marketo Engage コネクタ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
 +++
 
@@ -136,3 +136,6 @@ Marketo EngageとCustomer Journey Analyticsのレポート機能の簡単な比�
 | **カスタムレポートと柔軟性** | プログラムおよびアカウントの高度な BI （アドオン）について詳しく説明します。 | 使用可能なすべてのデータを使用して、カスタムワークスペース、ダッシュボードまたはレポートを作成する方法について、非常に柔軟です。 |
 | **オーディエンス分析** | プログラムリスト、エンゲージメントおよびスマートリストのフィルタリングとセグメント化。 | リッチペルソナとジャーニーのビジュアライゼーション、オーディエンスパス、セグメントの重複分析。 |
 | **対象ユーザー** | マーケター、マーケティングオペレーター、需要創出ワーカー、収益管理者。 | アナリスト、データサイエンティスト、マーケティングストラテジスト、カスタマーエクスペリエンスの専門家。 |
+| **指標の重複排除** | メールのパフォーマンスレポートの場合、指標は、リード ID、キャンペーン ID およびメールアセット ID によって自動的に重複排除されます。 同じメールアセットから複数のメールが作成され、同じプログラムから同じリードに送信された場合、これらのメールは 1 通としてカウントされます。 | 追加のフィルターと指標が適用されていない場合、メールレポートデータは、[ 指標の重複排除 ](/help/data-views/component-settings/metric-deduplication.md) を伴わないメールのパフォーマンスの合計数としてレポートされます。 |
+
+{style="table-layout:fixed"}

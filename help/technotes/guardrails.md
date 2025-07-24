@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 10%
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
+Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
 
 
 ## データセットの自動有効期限
@@ -139,7 +139,7 @@ Experience Platform[Real-time Customer Data Platform ガードレール ](https:
 
 {style="table-layout:auto"}
 
-Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) も参照してください。
+Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) も参照してください。
 
 
 ## 宛先データの書き出し
@@ -151,7 +151,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 
 {style="table-layout:auto"}
 
-Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
+Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
 
 
 ## データランディングゾーン
@@ -179,8 +179,8 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| ステッチされたデータセット | 10～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
-| バックフィルの長さ | 13 ～ 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| ステッチされたデータセット | 15～50 | システム強制ガードレール | 顧客あたりのステッチされたデータセットの最大数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
+| バックフィルの長さ | 6 - 25 | システム強制ガードレール | バックフィルデータの最大月数。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 | ルックバックウィンドウ/再生頻度 | 1/1 ～ 30/7 | システム強制ガードレール | 日間/再生頻度の最大ルックバックウィンドウ。 値は、Customer Journey Analytics パッケージによって異なります（製品説明を参照）。 |
 
 
@@ -252,7 +252,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
