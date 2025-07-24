@@ -21,7 +21,7 @@ ht-degree: 29%
 >[!IMPORTANT]
 >
 >このドキュメントは、まだ一般公開されていない新しい派生フィールド関数に関する暫定的なドキュメントです。 新しい派生フィールド関数については、この情報を参照してください。 このドキュメントは変更される可能性があり、この記事の現在のバージョンから引き出される法的義務はありません。
->&#x200B;><br/>派生フィールドの一般的な機能と、現在リリースされている関数および関数テンプレートについて詳しくは、[ 派生フィールド ](derived-fields.md) を参照してください。
+>><br/>派生フィールドの一般的な機能と、現在リリースされている関数および関数テンプレートについて詳しくは、[ 派生フィールド ](derived-fields.md) を参照してください。
 >
 
 ## 関数リファレンス
@@ -63,7 +63,7 @@ ht-degree: 29%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL &#x200B; 精度 &#x200B;]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL  精度 ]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -75,7 +75,7 @@ ht-degree: 29%
 
 ### 派生フィールド {#datemath-uc1-derivedfield}
 
-`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL &#x200B; の間にある &#x200B;] 範囲  の日数を計算するルールを定義します。 [!UICONTROL &#x200B; 日 &#x200B;] を [!UICONTROL &#x200B; 出力精度 &#x200B;] として選択します。 また、[!UICONTROL &#x200B; 予約日 &#x200B;] と  チェックイン日 [!UICONTROL &#x200B; の両方で「最終結果を返す &#x200B;] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
+`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL  の間にある ] 範囲  の日数を計算するルールを定義します。 [!UICONTROL  日 ] を [!UICONTROL  出力精度 ] として選択します。 また、[!UICONTROL  予約日 ] と  チェックイン日 [!UICONTROL  の両方で「最終結果を返す ] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
 
 ![ 日付計算ルールのスクリーンショット ](assets/datemath-1.png)
 
@@ -86,7 +86,7 @@ ht-degree: 29%
 
 ### 派生フィールド {#datemath-uc2-derivedfield}
 
-新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL &#x200B; ローカル時間 &#x200B;] の間の日数を、[!UICONTROL Person] の [!UICONTROL &#x200B; 重複排除範囲 &#x200B;] で計算するルールを定義できます。 [!UICONTROL &#x200B; 最後を返す &#x200B;] を選択して、[!UICONTROL &#x200B; 現地時間 &#x200B;] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL &#x200B; 出力の精度 &#x200B;] として選択します。
+新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL  ローカル時間 ] の間の日数を、[!UICONTROL Person] の [!UICONTROL  重複排除範囲 ] で計算するルールを定義できます。 [!UICONTROL  最後を返す ] を選択して、[!UICONTROL  現地時間 ] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL  出力の精度 ] として選択します。
 
 ![ 日付計算ルール 2 のスクリーンショット ](assets/datemath-2.png)
 
@@ -95,8 +95,8 @@ ht-degree: 29%
 
 セッション内の顧客が注文を行うまでの検索時間（分単位）を把握する場合。
 
-2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL &#x200B; 関数の結果である新しい &#x200B;] 派生フィールドを定義して ](#case-when) [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] の値を定義します。
-次に、これら 2 つの値を使用して、[!UICONTROL &#x200B; 範囲 &#x200B;] を [!UICONTROL &#x200B; セッション &#x200B;] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] に設定した値、および [!UICONTROL &#x200B; 出力精度 &#x200B;] を [!UICONTROL &#x200B; 分 &#x200B;] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL &#x200B; 最初のを返す &#x200B;]」を選択して、最初の [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] が返されるようにします。
+2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL  関数の結果である新しい ] 派生フィールドを定義して ](#case-when)[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] の値を定義します。
+次に、これら 2 つの値を使用して、[!UICONTROL  範囲 ] を [!UICONTROL  セッション ] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] に設定した値、および [!UICONTROL  出力精度 ] を [!UICONTROL  分 ] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL  最初のを返す ]」を選択して、最初の [!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] が返されるようにします。
 
 ![ 日付計算ルール 3 のスクリーンショット ](assets/datemath-3.png)
 
@@ -159,7 +159,7 @@ ht-degree: 29%
 
 ### 派生フィールド {#depth-uc1-derivedfield}
 
-新しい `Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL &#x200B; 検索 &#x200B;] の深度を取得し、新しい派生フィールドに保存するルールを定義します。
+新しい `Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL  検索 ] の深度を取得し、新しい派生フィールドに保存するルールを定義します。
 
 ![ 深度ルールのスクリーンショット ](assets/depth-1.png)
 
@@ -195,7 +195,7 @@ ht-degree: 29%
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。[!UICONTROL &#x200B; 画面の高さ &#x200B;] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
+`Screen Height` の派生フィールドを定義します。[!UICONTROL  画面の高さ ] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
 
 ![ タイプキャストルール 1 のスクリーンショット ](assets/typecast-1.png)
 
