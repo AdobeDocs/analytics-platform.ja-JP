@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f229b6c9241660d3e8a386638ae68d4cb3627ba1
+source-git-commit: 22b18c97baf7f55bf654cc298d2748298ea376d8
 workflow-type: tm+mt
-source-wordcount: '4163'
-ht-degree: 74%
+source-wordcount: '3934'
+ht-degree: 72%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 74%
 >abstract="Journey Optimizer で高度な Customer Journey Analytics レポート機能をキャンセルします。"
 
 
-[1 つ以上の接続を作成または編集](/help/connections/create-connection.md)したら、**[!UICONTROL 接続]**&#x200B;で管理できます。[!UICONTROL &#x200B; 接続 &#x200B;] インターフェイスでは、次のことが可能です。
+[1 つ以上の接続を作成または編集](/help/connections/create-connection.md)したら、**[!UICONTROL 接続]**&#x200B;で管理できます。[!UICONTROL  接続 ] インターフェイスでは、次のことが可能です。
 
 * 所有者、サンドボックス、接続の作成日時や変更日時など、すべての接続を一覧表示する。
 * 接続を編集する。
@@ -55,7 +55,7 @@ ht-degree: 74%
 | **[!UICONTROL _名前_]** | 接続のわかりやすい名前です。ハイパーリンク名を選択して [ 接続の詳細 ](#connection-details) を表示します。 |
 | ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | [!UICONTROL 含まれるデータセット]、[!UICONTROL サンドボックス]、[!UICONTROL 所有者]などの情報を表示するには、接続名の横にある ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) を選択します。<p>ポップアップウィンドウにデータセットの詳細が表示されます。 <p>![ 接続情報のポップアップ ](assets/connection-info-popup.png) |
 | ![詳細情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | ![ 詳細 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択して、コンテキストメニューを開きます。 以下を選択できます。 <p>接続を ![ 編集 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL 編集]** して [ 編集 ](#edit-a-connection) します。<p>接続を ![ 削除 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**[!UICONTROL 削除]** して [ 削除 ](#delete-a-connection) します。<p>![ データビュー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)**[!UICONTROL 新しいデータビューを作成]** して、接続の [ 新しいデータビューを作成 ](#create-a-data-view) します。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]**：接続の [ 接続マップ ](#map-a-connection) を表示 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; 接続の種類 &#x200B;]** | 接続のタイプ：**[!UICONTROL ユーザー]** ベースまたは **[!UICONTROL アカウント]** ベースの接続。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL  接続の種類 ]** | 接続のタイプ：**[!UICONTROL ユーザー]** ベースまたは **[!UICONTROL アカウント]** ベースの接続。 |
 | **[!UICONTROL データセット]** | 接続の一部であるデータセットへの 1 つ以上のリンク。データセットのハイパーリンクを選択すると、接続内のデータセットを表示できます。選択した接続にさらにデータセットを含める場合は、「**[!UICONTROL +*x* 以上]**」を選択して、**[!UICONTROL 含まれるデータセット]**&#x200B;パネルを表示します。このパネルには、すべてのデータセットへのリンクと、接続の一部である特定のデータセットを ![ 検索 ](/help/assets/icons/Search.svg) 検索」するオプションが表示されます。<p>![ 含まれるデータセット ](assets/datasets-included.png)<p>データセット名を選択して、Experience Platform インターフェイスの新しいタブでデータセットを開きます。 |
 | **[!UICONTROL サンドボックス]** | この接続がデータセットを取得する [Experience Platform サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)。このサンドボックスは、接続を作成した際に選択します。 接続が保存されると、サンドボックスを変更できなくなります。 |
 | **[!UICONTROL 所有者]** | 接続を作成したユーザー。 |
@@ -97,13 +97,13 @@ ht-degree: 74%
 
 接続を削除すると、削除されたデータビューと影響を受けるワークスペースプロジェクトが&#x200B;**[!UICONTROL 接続を削除]**&#x200B;パネルに表示されます。
 
-* **[!UICONTROL Info]**&#x200B;➊ は、接続が削除された場合の影響が示されています。
+* ➊Info **** は、接続が削除された場合の影響が示されています。
 
   ![接続を削除](assets/delete-connection.png)
 
   「**[!UICONTROL 続行]**」を選択して、削除を確定します。
 
-* ➋&#x200B;**[!UICONTROL 確認]**」で「**[!UICONTROL 接続名を入力]**」に接続の名前を入力し、「**[!UICONTROL 削除]**」を選択して接続を削除します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
+* ➋**[!UICONTROL 確認]**」で「**[!UICONTROL 接続名を入力]**」に接続の名前を入力し、「**[!UICONTROL 削除]**」を選択して接続を削除します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 接続の削除について詳しくは、[削除の影響](/help/technotes/deletion.md)を参照してください。
 
@@ -149,7 +149,7 @@ ht-degree: 74%
 | **[!UICONTROL *データセットセレクター&#x200B;*]** | 接続の詳細を表示する 1 つまたはすべてのデータセットを選択します。 複数のデータセットを選択することはできません。デフォルトは&#x200B;**[!UICONTROL すべてのデータセット]**&#x200B;です。 |
 | **[!UICONTROL *日付範囲セレクター&#x200B;*]** | 接続の詳細を表示するデータ範囲を選択します。 開始日、終了日を編集するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して日付範囲セレクターを開きます。日付範囲セレクターで、定義済みの期間の 1 つ（例：**[!UICONTROL 過去 6 か月間]**）を使用して日付範囲を選択するか、カレンダーを使用して開始日と終了日を選択します。「**[!UICONTROL 適用]**」を選択して、新しい日付範囲を接続の詳細に適用します。 |
 | **[!UICONTROL 使用可能なイベントデータのレコード]** | **接続全体について**、レポートに使用できるイベントデータセット行の合計数。この数は、日付範囲やデータセットの選択とは無関係です。 |
-| [!UICONTROL **[!UICONTROL 指標]**] | 追加、スキップおよび削除されたイベント、ルックアップ、プロファイル、概要データセットレコードと、追加されたバッチの数を要約します。これらの指標は、**選択したデータセットと日付範囲** に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択すると、**[!UICONTROL スキップされた詳細を確認]**&#x200B;ポップアップが表示されます。ポップアップには、すべてのイベントデータセットまたは選択したデータセットのスキップされたレコードの数と理由が一覧表示されます。<p>![ スキップされたレコード ](assets/skipped-records.png)<p>詳細情報が表示されている ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップを選択します。[!UICONTROL &#x200B; 空の訪問者 ID] などの理由でスキップされた場合、ポップアップに **[!UICONTROL EQS のサンプル PSQL]** （クエリサービスのExperience Platform）が表示され、[ クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) で使用して、データセット内のスキップされたレコードをクエリできます。 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL EQS 用サンプル PSQL をコピー]** を選択して SQL をコピーします。 |
+| [!UICONTROL **[!UICONTROL 指標]**] | 追加、スキップおよび削除されたイベント、ルックアップ、プロファイル、概要データセットレコードと、追加されたバッチの数を要約します。これらの指標は、**選択したデータセットと日付範囲** に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択すると、**[!UICONTROL スキップされた詳細を確認]**&#x200B;ポップアップが表示されます。ポップアップには、すべてのイベントデータセットまたは選択したデータセットのスキップされたレコードの数と理由が一覧表示されます。<p>![ スキップされたレコード ](assets/skipped-records.png)<p>詳細情報が表示されている ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップを選択します。[!UICONTROL  空の訪問者 ID] などの理由でスキップされた場合、ポップアップに **[!UICONTROL EQS のサンプル PSQL]** （クエリサービスのExperience Platform）が表示され、[ クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) で使用して、データセット内のスキップされたレコードをクエリできます。 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL EQS 用サンプル PSQL をコピー]** を選択して SQL をコピーします。 |
 | **[!UICONTROL 追加されたレコード]** | **選択したデータセットと日付範囲に** して、選択した期間に追加された行数を示すビジュアライゼーション。 10 分ごとに更新されます。 |
 | **[!UICONTROL スキップされたレコード]** | **選択したデータセットと日付範囲** で、選択した期間にスキップされた行数を示すビジュアライゼーション。 レコードをスキップした理由には、タイムスタンプの欠落、ユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の欠落または無効などがあります。 10 分ごとに更新されます。 <p>無効な ID （`undefined`、`00000000` または特定の月に 100 万回を超えるイベントに表示される[!UICONTROL ユーザー ID] 内の数字と文字の組み合わせなど）は、特定のユーザーに関連付けることができない ID です。これらの行はシステムに取り込むことができないので、取り込みやレポートでエラーが発生しやすくなります。無効な人物 ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} を修正するには、次の 3 つのオプションがあります。<ul><li>[ステッチ](/help/stitching/overview.md)を使用して、未定義またはすべてがゼロのユーザー ID に有効なユーザー ID を入力する。</li><li>ユーザー ID を空白にする。この ID は取り込み時にスキップされます（ユーザー ID が無効またはすべてゼロとなっているよりも望ましい）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
 | **[!UICONTROL 削除されたレコード]** | **選択したデータセットと日付範囲** で、選択した期間に削除された行数を示すビジュアライゼーション。 例えば、[!DNL Experience Platform] でデータセットが削除された可能性があるとします。10 分ごとに更新されます。<p>シナリオによっては、ステッチや一部のルックアップデータセットの更新などにより、この値に置き換えられたレコードが含まれる場合もあります。この例では、次を考慮します。</p><ul><li>1 つのレコードを XDM 個人プロファイルデータセットにアップロードします。これにより、Customer Journey Analytics がプロファイルルックアップデータとして取り込むように設定されます。接続の詳細では、このデータセットには 1 つのレコードが追加されたと表示されます。</li><li>元のレコードの複製を同じ AEP データセットにアップロードします。これにより、2 つのレコードが含まれるようになります。 Customer Journey Analytics では、プロファイルまたはアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ルックアップデータセットから追加のレコードを取り込みます。プロファイルまたはアカウントレコードが、そのユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の接続に既に取り込まれているのを確認すると、Customer Journey Analyticsは以前のバージョンを削除して、新しいプロファイルデータを追加します。 Customer Journey Analyticsでは、取り込まれたユーザー ID またはアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の最新のプロファイル参照データのみが保持されるので、接続詳細では、このアクションは、追加されたレコード 1 件と削除されたレコード 1 件を表します。</li><li>合計すると、AEP データセットには同一の 2 つのレコードが含まれます。 これとは別に、Customer Journey Analytics 接続の詳細には、このプロファイルデータセットに対して 2 つのレコードが追加され、1 つのレコードが削除されました、という取り込まれたデータのステータスが表示されます。 </li></ul> |
@@ -168,7 +168,7 @@ ht-degree: 74%
 | **[!UICONTROL 追加されたバッチ]** | 選択した日付範囲内に接続に追加されたバッチの数。 |
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL データソースタイプ]** | ソースタイプ。 ソースタイプは、データセットを接続に追加する際に定義します。 |
-| **[!UICONTROL データセットタイプ]** | [ データセットタイプ ](create-connection.md#dataset-types)。 タイプは、[!UICONTROL &#x200B; イベント &#x200B;]、[!UICONTROL &#x200B; プロファイル &#x200B;]、[!UICONTROL &#x200B; ルックアップ &#x200B;]、[!UICONTROL &#x200B; 概要 &#x200B;] のいずれかです。 |
+| **[!UICONTROL データセットタイプ]** | [ データセットタイプ ](create-connection.md#dataset-types)。 タイプは、[!UICONTROL  イベント ]、[!UICONTROL  プロファイル ]、[!UICONTROL  ルックアップ ]、[!UICONTROL  概要 ] のいずれかです。 |
 | **[!UICONTROL スキーマ]** | データセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効である適用可能なデータセットの場合。 <p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：変換に対して有効でない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]**：変換に対して適用可能でない他のすべてのデータセットの場合。 |
@@ -192,8 +192,8 @@ ht-degree: 74%
 | **[!UICONTROL 接続の説明]** | 接続の説明。 |
 | **[!UICONTROL サンドボックス]** | この接続がデータセットを取得する [Experience Platform サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)。このサンドボックスは、接続を作成した際に選択します。 接続が保存されると、サンドボックスを変更できなくなります。 |
 | **[!UICONTROL 接続 ID]** | 接続に対して生成された識別子。 ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用して、値をコピーできます。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL プライマリID の種類 &#x200B;]** | 接続のプライマリ ID タイプ：ユーザーベースの接続の場合は **[!UICONTROL Person]**、アカウントベースの接続の場合は **[!UICONTROL Account]**。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; コンテナ &#x200B;]** | 接続に対して設定されたコンテナ。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL プライマリID の種類 ]** | 接続のプライマリ ID タイプ：ユーザーベースの接続の場合は **[!UICONTROL Person]**、アカウントベースの接続の場合は **[!UICONTROL Account]**。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL  コンテナ ]** | 接続に対して設定されたコンテナ。 |
 | **[!UICONTROL 接続を使用するデータビュー]** | この接続を使用するデータビュー。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットの数が新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：新しいデータ読み込みがオフになっているデータセットの数の場合。 |
 | **[!UICONTROL データをバックフィル]** | データセットのバックフィルデータのステータス。<p>![ステータス（赤色）](assets/status-red.svg) **[!UICONTROL _x _バックフィル失敗]**：データセットをまたいで失敗したバックフィルの数の場合。<p>![ステータス（赤色）](assets/status-orange.svg) **[!UICONTROL _x _バックフィル処理中]**：データセットをまたいで処理中のバックフィルの数の場合。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _バックフィル完了]**：データセットをまたいで完了したバックフィルの数の場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _オフ_]**：接続内のデータセットに対してバックフィルが定義されていない場合。 |
@@ -208,13 +208,13 @@ ht-degree: 74%
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で、接続のデータ転送中にスキップされたデータセットレコード （行）の数。 |
 | **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチの数。 |
@@ -230,157 +230,63 @@ ht-degree: 74%
 
 ## 使用状況 {#connections-usage}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_keyusagemetrics"
->title="主要な使用状況指標"
->abstract="コアおよび履歴のレポート可能行数の月別および合計データを指定します。"
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_monthlyingestedrows"
->title="月別の取り込み行数"
->abstract="月別にシステムに追加されるレコードの合計数を測定し、データの増加と取り込み率に関するインサイトを指定します。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_monthlyreportablerows"
->title="月別のレポート可能行数"
->abstract="レポートに使用できる行数を追跡します。 レポート可能行数とは、取り込まれた行数から、取り込み中にスキップおよび削除された行数を除いたものです。レポート可能行数は、課金とデータ使用量の主要な指標として機能します。"
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_detailbreakdown"
->title="詳細な分類。"
->abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別、タグ別に詳細な指標を表示できます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_otherdatasets"
->title="その他のデータセット"
->abstract="2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために&#x200B;*その他のデータセット*&#x200B;として表示されます。2024年9月以降、データは詳細なデータセットレベルで収集され、*その他のデータセット*&#x200B;は表示されなくなります。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_unknowndatasetsorconnections"
->title="不明なデータセットまたは接続"
->abstract="不明なデータセットまたは接続は、ID を使用して表示されます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_datanotavailable"
->title="データは使用できません"
->abstract="システムの制限により、2024年9月より前の履歴データは使用できません。指標は、2024年9月以降に収集され、表示されます。グラフには過去 18 か月のタイムラインが表示され、データが利用可能になると今後のデータが表示されます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_corereportablerows"
->title="コアのレポート可能な行数"
->abstract="過去 13 か月間で使用できる行の合計数。例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_historicalreportablerows"
->title="履歴のレポート可能な行数"
->abstract="13 か月より前の期間で使用できる行の合計数。例えば、2024年2月1日（PT）の数は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_usage_keyusagemetrics"
 >title="主要な使用状況指標"
 >abstract="コアおよび履歴のレポート可能行数の月別および合計データを指定します。"
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyingestedrows"
 >title="月別の取り込み行数"
 >abstract="月別にシステムに追加されるレコードの合計数を測定し、データの増加と取り込み率に関するインサイトを指定します。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyreportablerows"
 >title="月別のレポート可能行数"
 >abstract="レポートに使用できる行数を追跡します。 レポート可能行数とは、取り込まれた行数から、取り込み中にスキップおよび削除された行数を除いたものです。レポート可能行数は、課金とデータ使用量の主要な指標として機能します。"
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_detailbreakdown"
 >title="詳細な分類。"
 >abstract="データの CSV ファイルをダウンロードするオプションを使用して、接続別、データセット別、サンドボックス別、タグ別に詳細な指標を表示できます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="その他のデータセット"
 >abstract="2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために&#x200B;*その他のデータセット*&#x200B;として表示されます。2024年9月以降、データは詳細なデータセットレベルで収集され、*その他のデータセット*&#x200B;は表示されなくなります。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_unknowndatasetsorconnections"
 >title="不明なデータセットまたは接続"
 >abstract="不明なデータセットまたは接続は、ID を使用して表示されます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_datanotavailable"
 >title="データは使用できません"
 >abstract="システムの制限により、2024年9月より前の履歴データは使用できません。指標は、2024年9月以降に収集され、表示されます。グラフには過去 18 か月のタイムラインが表示され、データが利用可能になると今後のデータが表示されます。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="コアのレポート可能な行数"
 >abstract="過去 13 か月間で使用できる行の合計数。例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="履歴のレポート可能な行数"
 >abstract="13 か月より前の期間で使用できる行の合計数。例えば、2024年2月1日（PT）の数は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。"
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="connections_averagerowsize"
+>title="平均行サイズ"
+>abstract="先月と比較して変化した割合を持つ、当月のデータ行の平均サイズ。"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_coredatavolume"
+>title="コアデータ量"
+>abstract="今月のコアデータの量です。 *正確な定義の確認が必要！*"
+
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
@@ -396,9 +302,6 @@ ht-degree: 74%
 >id="connections_breakdown_cumulativereportablerows"
 >title="累積レポート可能行数"
 >abstract="累積レポート可能行数はスナップショット値であり、集計合計ではありません。これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 [!UICONTROL 使用状況]インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
@@ -470,7 +373,7 @@ ht-degree: 74%
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、[!UICONTROL &#x200B; その他のデータセット &#x200B;] は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。2024 年 9 月以降、データはきめ細かいデータセットレベルで収集され、[!UICONTROL  その他のデータセット ] は表示されなくなります。
 
    * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -490,5 +393,5 @@ ht-degree: 74%
 >[!MORELIKETHIS]
 >
 >[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)チュートリアル。
->&#x200B;>[Customer Journey Analytics の使用状況の管理](/help/technotes/estimate-usage.md)
+>>[Customer Journey Analytics の使用状況の管理](/help/technotes/estimate-usage.md)
 >
