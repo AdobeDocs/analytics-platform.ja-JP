@@ -7,20 +7,23 @@ hidefromtoc: true
 role: User
 badgePremium: label="ベータ版"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
+source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 9%
+source-wordcount: '198'
+ht-degree: 13%
 
 ---
 
-# リアルタイムレポートの使用
+# リアルタイムレポートの使用 {#use-real-time-reporting}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="リアルタイム更新"
+>abstract="このパネルのデータとビジュアライゼーションのリアルタイム更新を有効にします。"
 
 {{release-limited-testing}}
 
 リアルタイムレポートを使用するには、Workspace プロジェクトの次のパネルのいずれかを有効にする **[!UICONTROL リアルタイム更新]** を有効にします。
-
-
 
 * [空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)
 * [フリーフォーム](/help/analysis-workspace/c-panels/freeform-panel.md)
@@ -28,17 +31,19 @@ ht-degree: 9%
 * [次または前の項目](/help/analysis-workspace/c-panels/next-previous.md)
 * [クイックインサイト](/help/analysis-workspace/c-panels/quickinsight.md)
 
-データの最新の更新のタイムスタンプを含むメッセージが表示されます。 例：[!UICONTROL *最終更新午後 7 時 55 分*]。
+データの最新の更新のタイムスタンプを含むメッセージが表示されます。 例：[!UICONTROL *最終更新は午後 7 時 :55 です*]。
 
 レポートするリアルタイム期間をドロップダウンメニューから選択します。 利用可能なオプションは次のとおりです。
 
-* [!UICONTROL &#x200B; 過去 15 分 &#x200B;]
-* [!UICONTROL &#x200B; 過去 30 分 &#x200B;]
-* [!UICONTROL &#x200B; 過去 1 時間 &#x200B;]
-* [!UICONTROL &#x200B; 過去 8 時間 &#x200B;]
-* [!UICONTROL &#x200B; 過去 24 時間 &#x200B;]
+* [!UICONTROL  過去 15 分 ]
+* [!UICONTROL  過去 30 分 ]
+* [!UICONTROL  過去 1 時間 ]
+* [!UICONTROL  過去 8 時間 ]
+* [!UICONTROL  過去 24 時間 ]
 
 リアルタイム更新が有効になっているパネルを含むブラウザータブがアクティブになっている間、パネル内のすべてのビジュアライゼーションが最大 30 分間、1 分ごとに更新されるようになりました。
+
+例として、時間が **[!UICONTROL 06]** から **[!UICONTROL 06]** pm **[!UICONTROL に移動するのに応じて]** 合計売上高/時間 **[!UICONTROL *バービジュアライゼーションおよび:26pm*]** 合計売上高/時間 **[!UICONTROL *フリーフォームテーブルを更新する :27 リアルタイムレポートパネル&#x200B;*]**のスナップショットを以下に示します。
 
 ![ リアルタイム更新 ](assets/real-time-refresh.gif)
 
