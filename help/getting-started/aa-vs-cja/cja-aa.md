@@ -8,7 +8,7 @@ role: User
 source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 95%
 | --- | --- |
 | **データセット（Adobe Analytics レポートスイートなど）を組み合わせる機能** | Customer Journey Analytics を使用すると、Adobe Analytics の単一のレポートスイートであるかのように、複数のレポートスイートの[データを組み合わせる](/help/connections/combined-dataset.md)ことができます。 |
 | **あらゆる種類のデータへの対応** | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。[エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)を使用すると、データを均等に表現および整理して、組み合わせや探索にすぐに使用できます。Adobe Analytics は、主に web およびモバイル分析データに焦点を当てており、[データを読み込む](https://experienceleague.adobe.com/ja/docs/analytics/import/home)機能もいくつかあります。 |
-| **B2B Edition** | [Customer Journey Analytics B2B edition](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=en) は、売上高の増加を促す実用的なアカウントインサイトを提供することで、B2B 企業がマーケティング、セールス、製品の各チームを連携させるのに役立ちます。 データモデルの中心となるのはアカウントなので、すべての分析はアカウントジャーニーに焦点を当てます。ユーザーおよび時間ベースのイベントの上にエンティティ（アカウント、商談、購買グループ）の新しいレイヤーを追加すると、B2B マーケティングおよび収益のライフサイクルの全体像が作成されます。 |
+| **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=en) は、収益の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。 データモデルの中心となるのはアカウントなので、すべての分析はアカウントジャーニーに焦点を当てます。ユーザーおよび時間ベースのイベントの上にエンティティ（アカウント、商談、購買グループ）の新しいレイヤーを追加すると、B2B マーケティングおよび収益のライフサイクルの全体像が作成されます。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、Customer Journey Analytics を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の Customer Journey Analytics レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。この拡張機能は、生データからレポート／指標を再作成する必要なく、Customer Journey Analytics の BI レポートを取得する簡単な方法です。 |
-| **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=en) のコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。 |
+| **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=en) のコンテキスト内でインサイトを共有し、質問することができます。 これにより、データに関する話し合いが合理化され、話し合うデータのコンテキスト内で会話を維持できます。 |
 | **コンテンツ分析** | [コンテンツ分析](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics)を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。コンテンツ分析では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
-| **Data Insights エージェント** | Customer Journey Analyticsの AI アシスタントの一部である [0&rbrace;Data Insights Agent&rbrace; は、ジェネレーティブ AI トーク エージェントです。 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en)データビューと実際のデータのコンポーネントを使用して、Analysis Workspaceで関連するビジュアライゼーションを構築することで、データ中心の質問にすばやく効率的に回答します。 |
+| **Data Insights エージェント** | Customer Journey Analytics の AI アシスタントの一部である [Data Insights エージェント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en)は、生成 AI 会話エージェントです。 データビューのコンポーネントと実際のデータを使用して、関連するビジュアライゼーションを Analysis Workspace で構築することにより、データ中心の質問にすばやく効率的に回答します。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数のビルトインの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
 | **派生フィールド** | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、これらの変換は、すべてのレポートに対して遡って適用できます。 |
 | **セキュリティとプライバシーに関するオプションの機能強化** - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する[追加のセキュリティオプション](/help/privacy/cmk.md)を提供します。Adobe Analytics は HIPAA に対応していません。 |

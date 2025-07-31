@@ -20,7 +20,7 @@ Content Analytics についてのレポートをゼロから開始するには�
 
 1. Workspace で[新しいプロジェクトを作成](/help/analysis-workspace/build-workspace-project/create-projects.md)するか、[既存のプロジェクトを開き](/help/analysis-workspace/build-workspace-project/open-projects.md)ます。
 1. Content Analytics レポート用に[データビューを選択](/help/analysis-workspace/c-panels/panels.md#data-view)します。Content Analytics レポートは、Content Analytics で[設定](/help/content-analytics/config/configuration.md)されたデータビューでのみ使用できます。
-1. ![テーブル](/help/assets/icons/Table.svg) [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーションをキャンバスにドラッグします。
+1. ![テーブル](/help/assets/icons/Table.svg)[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーションをキャンバスにドラッグします。
 1. [特定の Content Analytics コンポーネント](components.md)およびその他の汎用[コンポーネント](/help/components/overview.md)（セグメント、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
 
 ## サムネイル
@@ -155,5 +155,5 @@ Content Analytics では、AI と生成 AI を使用して、被写体、シー�
 >[!MORELIKETHIS]
 >
 >[Content Analytics コンポーネント](components.md)
->&#x200B;>[テンプレートを使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[テンプレートを使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
