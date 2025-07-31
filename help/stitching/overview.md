@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 >[!IMPORTANT]
 >
 >
->- ソースイベントデータセットスキーマに加えた変更を、新しいステッチされたデータセットスキーマにも適用します。
+>- ソースイベントデータセットスキーマに加えた変更を、ステッチされた新しいデータセットスキーマにも適用します。
 >
 >- ソースデータセットを削除すると、ステッチされたデータセットは処理を停止し、システムによって削除されます。
 >
@@ -72,8 +72,8 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 >[!MORELIKETHIS]
 >
 >[フィールドベースのステッチ](fbs.md)
->&#x200B;>[グラフベースのステッチ](gbs.md)
->&#x200B;>[ステッチの使用](use-stitching.md)
->&#x200B;>[ステッチの検証](validate.md)
->&#x200B;>[ステッチに関する FAQ](faq.md)
+>>[グラフベースのステッチ](gbs.md)
+>>[ステッチの使用](use-stitching.md)
+>>[ステッチの検証](validate.md)
+>>[ステッチに関する FAQ](faq.md)
 
