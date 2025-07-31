@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
+source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1900'
 ht-degree: 10%
 
 ---
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
+Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
 
 
 ## データセットの自動有効期限
@@ -139,7 +139,7 @@ Experience Platform[Real-time Customer Data Platform ガードレール ](https:
 
 {style="table-layout:auto"}
 
-Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) も参照してください。
+Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) も参照してください。
 
 
 ## 宛先データの書き出し
@@ -151,7 +151,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 
 {style="table-layout:auto"}
 
-Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
+Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
 
 
 ## データランディングゾーン
@@ -247,12 +247,18 @@ Experience Platform[ データセット書き出しガードレール ](https://
 {style="table-layout:auto"}
 
 
+## Data Insights エージェント
+
+| 名前 | 値 | 上限のタイプ | 説明 |
+|---|--:|---|---|
+| データビュー | 50 | システム強制ガードレール | Data Insights Agentに対して有効にできるデータビューの最大数。 その他のデータビューが有効になっている場合、Data Insights Agentで使用できるのは最も使用されているデータビューのみです。 このガードレールは、[ 接続または組織内に定義できるデータビューの最大数を定義するガードレール ](#connections-data-views-projects) には影響しません。 |
+
 
 ## 待ち時間
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
