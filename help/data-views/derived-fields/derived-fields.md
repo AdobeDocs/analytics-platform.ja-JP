@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: c9560f8b11ff055040611e208f09ee3e2d7bb5da
+source-git-commit: 68d26026ca783203127c491268e0a85e4cd0fb49
 workflow-type: tm+mt
-source-wordcount: '8857'
-ht-degree: 99%
+source-wordcount: '8900'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,19 @@ ht-degree: 99%
 
 派生フィールドは[データビュー](../data-views.md)内で定義され、ルールとして定義された一連の関数に基づいており、使用可能な標準フィールドやスキーマフィールドに適用されます。
 
+>[!NOTE]
+>
+>[ 標準コンポーネント ](../component-reference.md) は、イベントデータセットに関連付けられています。 その結果、派生フィールドの一部として使用される標準コンポーネントは、イベントデータセットのデータに対してのみ機能します。
+>
+
+
 ユースケースの例を次に示します。
 
 - 収集した不適切なページ名の値を正しいページ名の値に修正する派生ページ名フィールドを定義する。
 
 - 1 つ以上の条件（例：URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する派生マーケティングチャネルフィールドを定義する。
+
+標準コンポーネントは、派生フィールドのイベントデータセットでのみサポートされます。
 
 ## 派生フィールドインターフェイス {#interface}
 
@@ -69,7 +77,7 @@ ht-degree: 99%
 | A | **ルール名** |  デフォルトでは、ルール名は&#x200B;**ルール X** です（X はシーケンス番号を表します）。ルールの名前を編集するには、その名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
 | B | **関数名** | ルール用に選択された関数名（[!UICONTROL 例：URL PARSE]）。関数が関数シーケンスの最後であり、最終出力値を決定する際、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます（例：[!UICONTROL URL PARSE - FINAL OUTPUT]）。<br/>関数の詳細情報を含むポップアップを表示するには、![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
 | C | **ルールの説明** | オプションでルールに説明を追加できます。<br/>![その他アイコン](assets/More.svg) を選択し、「**[!UICONTROL **&#x200B;説明を追加&#x200B;**]**」を選択して説明を追加するか、「**[!UICONTROL **&#x200B;説明を編集&#x200B;**]**」を選択して既存の説明を編集します。<br/>エディターを使用して説明を入力します。ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右揃え、左揃え、中央揃え、カラー、番号リスト、ブレットリストの使用）や、外部情報へのリンクの追加を行うことができます。<br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL &#x200B; フィールド &#x200B;] または [!UICONTROL &#x200B; 値 &#x200B;] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
+| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL  フィールド ] または [!UICONTROL  値 ] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -1245,11 +1253,9 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 - 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的の値を括弧を使用してグループ化する必要があります。例：
 
    - この数式はエラーを返します。
-
      ![数学の詳細情報 4](assets/math-more-info-4.png)
 
    - この数式は有効です。
-
      ![数学の詳細情報 5](assets/math-more-info-5.png)
 
 ヒットレベルに基づく計算には、Math 関数を使用します。イベント、セッションまたはユーザーの範囲に基づく計算には、[Summarize](#summarize) 関数を使用します。
@@ -1941,7 +1947,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
->- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
->- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
