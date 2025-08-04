@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 94d1bcdb2419f8c2e27bd77bb2e35b04cd30d632
-workflow-type: ht
-source-wordcount: '795'
-ht-degree: 100%
+source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 98%
 
 ---
 
@@ -28,6 +28,12 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 Customer Journey Analytics B2B Edition は、売上高の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。アカウントをデータモデルの中心に配置し、すべての分析でアカウントジャーニーに焦点を当てます。
 
 [![画像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
+
+>[!TAB  派生フィールド関数 ]
+
+新しい派生フィールド関数 [Data Math](/help/data-views/derived-fields/derived-fields.md#date-math)、[Depth](/help/data-views/derived-fields/derived-fields.md#depth)、および [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) が追加されました。
+
+[![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB コンテンツ分析]
 
