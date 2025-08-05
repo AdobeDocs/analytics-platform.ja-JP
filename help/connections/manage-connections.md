@@ -155,7 +155,7 @@ Customer Journey AnalyticsのJourney Optimizer接続を使用して、接続に�
 
 * Customer Journey Analytics内でJourney Optimizer データの詳細な分析を実行します（Journey Optimizer内の「**[!UICONTROL CJAで分析]** ボタンを使用）。
 
-  詳しくは、Journey Optimizer ドキュメントの [Customer Journey Analyticsでの分析 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) を参照してください。
+  詳しくは、Journey Optimizer ドキュメントの [Customer Journey Analyticsでの分析 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) を参照してください。
 
 * Journey Optimizer接続および関連するデータビューを編集します。
 
@@ -305,7 +305,7 @@ Customer Journey Analyticsから接続を削除するには：
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で、接続のデータ転送中にスキップされたデータセットレコード （行）の数。 |
 | **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチの数。 |
