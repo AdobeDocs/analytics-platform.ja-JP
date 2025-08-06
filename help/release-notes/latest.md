@@ -3,9 +3,9 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 71974e607b0924796c4413a4d092f7afd643d32f
+source-git-commit: 379cf7af9bf6722fd483a9c0639fc6b294c398a4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 81%
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Analysis Workspace プロジェクトでのコメントの追加と表示** | Analysis Workspace の新しい[コメント機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)を使用すると、Analysis Workspace プロジェクトのコンテキスト内でインサイトを共有し質問をすることができます。これにより、データに関する議論を効率化して、議論の対象となっているデータのコンテキスト内に会話を維持できます。次のことが可能です。 <ul><li>自身がアクセス権を持っている Analysis Workspace プロジェクトにコメントする</li><li>ビジュアライゼーション内の特定のポイントにコメントする、またはプロジェクトに関する一般的なコメントをする</li><li>他のユーザーにタグを付けて、コメントについて通知する</li><li>既存のコメントを管理する（編集、ピン留め、解決など）</li></ul>Customer Journey Analytics 管理者は[組織レベルでコメントを無効にする](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)ことができます。プロジェクト所有者は[プロジェクトレベルでコメントを無効にする](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)ことができます。 | 2025年6月25日（PT） | 2025年7月22日（PT） <p>（以前は2025年5月29日（PT））</p> |
-| **PDF としてダウンロードしたプロジェクトは、ワークステーションにダウンロードされます** | プロジェクトを PDFとしてダウンロードすると、その PDF はワークステーションのダウンロードフォルダーにダウンロードされます。 以前は、プロジェクトを PDFとしてダウンロードすると、一意の URL を持つ PDF が新しいブラウザータブに表示されていました。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/export/download-send) | | 未定 |
+| **PDF としてダウンロードしたプロジェクトは、ワークステーションにダウンロードされます** | プロジェクトを PDFとしてダウンロードすると、その PDF はワークステーションのダウンロードフォルダーにダウンロードされます。 以前は、プロジェクトを PDFとしてダウンロードすると、一意の URL を持つ PDF が新しいブラウザータブに表示されていました。 （ドキュメントへのリンクを添付） | | 2025年8月25日（PT） |
 | **派生フィールド - 日付計算関数** | [ 日付計算 ](/help/data-views/derived-fields/derived-fields.md#date-math) 派生フィールド関数には、2 つの日付フィールドまたは日時フィールドの違いを返す機能があります。 | 2025年8月4日（PT） | 2025年8月8日（PT） |
 | **派生フィールド - Depth 関数** | [Depth](/help/data-views/derived-fields/derived-fields.md#depth) 派生フィールド関数は、標準提供のイベント深度ディメンションで可能なものと同様に、フィールドの深度を返す機能を提供します。 | 2025年8月4日（PT） | 2025年8月8日（PT） |
 | **派生フィールド - 型キャスト関数** | [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) 派生フィールド関数を使用すると、フィールド型をその場で変更し、Customer Journey Analytics内でそのフィールドを他の変換に使用できるようになります。 | 2025年8月4日（PT） | 2025年8月8日（PT） |
