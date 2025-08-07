@@ -4,7 +4,7 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20276'
 ht-degree: 97%
@@ -1071,7 +1071,7 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 >abstract="**これにより** アカウントレベルでのエンゲージメントのトレンドが上昇しているか下降しているかをより深く理解し、アカウント間でアクティビティを比較して、リテンションや獲得の取り組みをどこに集中させるかを決定できます。<br/>**学習した内容に基づいて、関心は低いもののアカウントの重要性が原因で** より多くの注意を必要とするアカウントに焦点を合わせるなど、様々な操作を実行できます。"
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="商談レベルでエンゲージメントを追跡し、契約の成立や失敗を追跡します。"
 >abstract="**これは、契約の進捗をより正確に予測し** エンゲージメントが急増したり停滞したりするイネーブルメントに焦点を当てるのに役立ちます。<br/>**学習内容に基づいて、クローズ間近の案件に追加的な取り組みを行ったり** 他の案件が勢いを失っている理由を調査するなど、様々な作業を行うことができます。"
 
