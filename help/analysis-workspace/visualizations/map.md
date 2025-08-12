@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: f0ef310f120e278685893308315902e32c54e35e
+source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 13%
+source-wordcount: '2770'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics![](/help/assets/icons/CustomerJourneyAnalytics.svg)Customer Journey Analytics _&#x200B;**のマップビジュアライゼーション** ついて説明します。この記事の _<br/>_[AdobeAnalytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ Adobe Analytics![ 版については、](/help/assets/icons/AdobeAnalytics.svg)_&#x200B;**Map** を参照してください。_
+_この記事では、_ CustomerJourneyAnalytics![](/help/assets/icons/CustomerJourneyAnalytics.svg)Customer Journey Analytics _**のマップビジュアライゼーション** ついて説明します。この記事の _<br/>_[AdobeAnalytics](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ Adobe Analytics![ 版については、](/help/assets/icons/AdobeAnalytics.svg)_**Map** を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -57,14 +57,14 @@ Analysis Workspaceの ![ グローブ ](/help/assets/icons/Globe.svg) **[!UICONT
 
 ### データビューでのコンテキストラベルの追加
 
-Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL &#x200B; マップ &#x200B;] ビジュアライゼーションなどのCustomer Journey Analytics サービスでこれらのラベルを使用できます。
+Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に [ コンテキストラベル ](/help/data-views/component-settings/overview.md) を追加し、目的に合わせて [!UICONTROL  マップ ] ビジュアライゼーションなどのCustomer Journey Analytics サービスでこれらのラベルを使用できます。
 
-#### マップビジュアライゼーションに必須のコンテキストラベル
+#### マップビジュアライゼーションの緯度と経度に必須のコンテキストラベル
 
 マップのビジュアライゼーションが機能するには、コンテキストラベルが必要です。 次のコンテキストラベルが存在しない場合、操作する緯度と経度のデータがないため、マップビジュアライゼーションは機能しません。
 
-* [!UICONTROL &#x200B; 地域：緯度 &#x200B;]
-* [!UICONTROL &#x200B; 位置情報：経度 &#x200B;]
+* [!UICONTROL  地域：緯度 ]
+* [!UICONTROL  位置情報：経度 ]
 
 これらのコンテキストラベルを追加するには：
 
@@ -72,13 +72,27 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
 
 1. データビューページで、マップビジュアライゼーションで分析するデータを含むデータビューを選択します。
 
-1. **[!UICONTROL コンポーネント]** タブを選択し、経度データを含むディメンションを選択します。
+1. 「**[!UICONTROL コンポーネント]**」タブを選択します。
 
-1. 右側のパネルの **[!UICONTROL コンポーネント設定]** セクションの **[!UICONTROL コンテキストラベル]** フィールドで、`Longitude` と入力し始め、ドロップダウンメニューから選択します。
+1. （条件付き） Web SDKを使用していて、緯度と経度をデータストリームに入力するように設定している場合、または Analytics Source コネクタを使用してイベントデータを入力している場合は、緯度と経度のフィールドが既にスキーマで使用でき、正しいコンテキストラベルが入力されている必要があります。
 
-   ![ 緯度と経度のコンテキストラベル ](assets/map-context-labels-lat-long.png)
+   これらの **[!UICONTROL 緯度]** および **[!UICONTROL 経度]** スキーマフィールド（**[!UICONTROL イベントデータセット]**/**[!UICONTROL placeContext]**/**[!UICONTROL geo]**/**[!UICONTROL _schema]**）を見つけて、まだ存在しない場合はディメンションとしてデータビューにドラッグします。
 
-1. この手順を繰り返して、緯度データを含む寸法に **[!UICONTROL Latitude]** コンテキスト ラベルを追加します。
+   これらのスキーマフィールドがデータビュー内にディメンションとして存在する場合、そのコンテキストラベルは自動的に適用され、追加の設定を行わなくてもマップビジュアライゼーションでこれらのフィールドが使用されます。
+
+   ![ データビューへの緯度と経度のスキーマフィールドの追加 ](assets/dataview-lat-long-default.png)
+
+1. （条件付き）緯度と経度のデータに使用するカスタムディメンションがある場合、カスタムフィールドのコンテキストラベルを設定できます。
+
+   1. 「**[!UICONTROL ディメンション]**」セクションで、経度データを含むディメンションを選択します。
+
+   1. 右側のパネルの **[!UICONTROL コンポーネント設定]** セクションの **[!UICONTROL コンテキストラベル]** フィールドで、`Longitude` と入力し始め、ドロップダウンメニューから選択します。
+
+      ![ 緯度と経度のコンテキストラベル ](assets/map-context-labels-lat-long.png)
+
+   1. この手順を繰り返して、緯度データを含む寸法に **[!UICONTROL Latitude]** コンテキスト ラベルを追加します。
+
+   1. （オプション）デフォルトでは、これらの寸法はマップビジュアライゼーションの町または郵便番号レベルに対して正確で、Workspace レポートでは小数点以下 2 桁で表示されます。 マップビジュアライゼーションでは 1 メートル内で正確になるように、またWorkspace レポートでは小数点以下 5 桁まで表示されるように調整できます。 精度レベルの調整方法の詳細は、「[ 寸法の正確な位置を設定する ](#configure-precise-locations-for-dimensions)」を参照してください。
 
 1. **[!UICONTROL 保存して続行]**/**[!UICONTROL 保存して終了]** を選択します。
 
@@ -90,11 +104,11 @@ Adobeには、マップビジュアライゼーションを使用する [ 事前
 
 | テンプレート名 | 必須のコンテキストラベル |
 |---------|----------|
-| ジオエクスペリエンス | [!UICONTROL &#x200B; 地域：地域 – 国 &#x200B;] |
-| 地域 - 地域 | [!UICONTROL Geo: Geo リージョン &#x200B;] |
-| 地域 - 都市 | [!UICONTROL Geo：地域 – 市区町村 &#x200B;] |
-| 地域 - 米国の州 | [!UICONTROL Geo：地域 – の状態 &#x200B;] |
-| 地域 – 米国 DMA | [!UICONTROL &#x200B; 地域：地域 Dma] |
+| 地域 - 国 | [!UICONTROL  地域：地域 – 国 ] |
+| 地域 - 地域 | [!UICONTROL Geo: Geo リージョン ] |
+| 地域 - 都市 | [!UICONTROL Geo：地域 – 市区町村 ] |
+| 地域 - 米国の州 | [!UICONTROL Geo：地域 – の状態 ] |
+| 地域 – 米国 DMA | [!UICONTROL  地域：地域 Dma] |
 
 これらのコンテキストラベルを追加するには：
 
@@ -102,13 +116,25 @@ Adobeには、マップビジュアライゼーションを使用する [ 事前
 
 1. データビューページで、マップビジュアライゼーションを使用する事前定義済みテンプレートを使用して分析するデータを含むデータビューを選択します。 このデータビューでは、5 つのディメンション（1 つは国データ、1 つは地域データ、1 つは市区町村データ、1 つは州データ、1 つは DMA データ）を選択します。 次に、これらの寸法に対応するコンテキストラベルを付けます。
 
-1. 「**[!UICONTROL コンポーネント]**」タブを選択し、国データを含むディメンションを選択します。
+1. 「**[!UICONTROL コンポーネント]**」タブを選択します。
 
-1. 右側のパネルの **[!UICONTROL コンポーネント設定]** セクションの **[!UICONTROL コンテキストラベル]** フィールドで、`Geo Country` と入力し始め、ドロップダウンメニューから選択します。
+1. （条件付き） Web SDKを使用していて、データストリームに入力するようにジオフィールドを設定している場合、または Analytics Source コネクタを使用してイベントデータを入力している場合は、ジオフィールドはスキーマで既に使用可能で、正しいコンテキストラベルが入力されている必要があります。
 
-   ![ テンプレートのコンテキストラベル ](assets/map-context-labels-templates.png)
+   **[!UICONTROL 市区町村]**、**[!UICONTROL 郵便番号]**、**[!UICONTROL 都道府県]** （**[!UICONTROL イベントデータセット]**/**[!UICONTROL placeContext]**/**[!UICONTROL 地域]**）など、適切なスキーマフィールドを見つけ、まだ存在しない場合はディメンションとしてデータビューにドラッグします。
 
-1. この手順を繰り返して、対応するデータを含む各ディメンションに **[!UICONTROL Geo：地域（Region）]**、**[!UICONTROL Geo：地域の市区町村]**、**[!UICONTROL Geo：地域の状態]**、および **[!UICONTROL Geo：地域（Dma）]** コンテキストラベルを追加します。
+   これらのスキーマフィールドがデータビュー内にディメンションとして存在する場合、そのコンテキストラベルは自動的に適用され、地域テンプレートでは追加の設定なしでこれらのフィールドが使用されます。
+
+   ![ データビューへのジオスキーマフィールドの追加 ](assets/dataview-geo-default.png)
+
+1. （条件付き）地域データに使用するカスタムディメンションがある場合は、カスタムフィールドにコンテキストラベルを設定できます。
+
+   1. 国データを含むディメンションを選択します。
+
+   1. 右側のパネルの **[!UICONTROL コンポーネント設定]** セクションの **[!UICONTROL コンテキストラベル]** フィールドで、`Geo Country` と入力し始め、ドロップダウンメニューから選択します。
+
+      ![ テンプレートのコンテキストラベル ](assets/map-context-labels-templates.png)
+
+   1. この手順を繰り返して、対応するデータを含む各ディメンションに **[!UICONTROL Geo：地域（Region）]**、**[!UICONTROL Geo：地域の市区町村]**、**[!UICONTROL Geo：地域の状態]**、および **[!UICONTROL Geo：地域（Dma）]** コンテキストラベルを追加します。
 
 1. **[!UICONTROL 保存して続行]**/**[!UICONTROL 保存して終了]** を選択します。
 
@@ -123,7 +149,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
 | 機能 | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
 | データソース | データビューで使用可能な任意のセグメントをデータソースとして使用します。 | 次のオプションがあります。 <ul><li>モバイルの緯度/経度</li><li>地理的Dimension<br/> 訪問者の IP アドレスに基づいた訪問者の場所に関する地理セグメントデータを表します。 </li></ul> |
-| 精度 | 精度の高いデータセットの場合、データビューでディメンションを設定して、小数点以下 5 桁まで表示できます。 これにより、1 メートル以内でマップのビジュアライゼーションが正確になります。 <p>詳しくは、[ ディメンションの正確な場所の設定 ](#configure-precise-locations-for-dimensions) を参照してください。</p> | データは、[!UICONTROL &#x200B; 国 &#x200B;]、[!UICONTROL &#x200B; 地域 &#x200B;]、および [!UICONTROL &#x200B; 市区町村 &#x200B;] レベルに対して正確です。 （DMA または郵便番号レベルには変換されません。） |
+| 精度 | 精度の高いデータセットの場合、データビューでディメンションを設定して、小数点以下 5 桁まで表示できます。 これにより、1 メートル以内でマップのビジュアライゼーションが正確になります。 <p>詳しくは、[ ディメンションの正確な場所の設定 ](#configure-precise-locations-for-dimensions) を参照してください。</p> | データは、[!UICONTROL  国 ]、[!UICONTROL  地域 ]、および [!UICONTROL  市区町村 ] レベルに対して正確です。 （DMA または郵便番号レベルには変換されません。） |
 | 選択範囲からのセグメントの作成 | マップビジュアライゼーションで選択した特定の領域に基づいてセグメントを作成します。 <p>詳しくは、[ マップビジュアライゼーションからセグメントを作成する ](#create-a-segment-from-the-map-visualization) を参照してください。</p> | 一般にマップビジュアライゼーションでレポートされるデータに基づいてセグメントを作成します。 |
 | 選択範囲からオーディエンスを作成 | マップビジュアライゼーションで選択した特定の領域に基づいてオーディエンスを作成します。 <p>詳しくは、[ マップビジュアライゼーションからオーディエンスを作成する ](#create-an-audience-from-the-map-visualization) を参照してください。 | マップビジュアライゼーションからオーディエンスを作成できません。 |
 | 選択範囲からトレンドを作成する | マップビジュアライゼーションで選択した特定の領域に基づいて、トレンド折れ線グラフビジュアライゼーションを作成します。 <p>詳しくは、[ マップビジュアライゼーションからトレンド折れ線グラフを作成 ](#create-a-trended-line-chart-from-the-map-visualization) を参照してください。<!-- is this correct? --> | マップ ビジュアライゼーションからトレンドを作成できません。 |
@@ -255,7 +281,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、Ado
 
 1. データビューで、「**[!UICONTROL コンポーネント]**」タブを選択します。
 
-1. 設定するディメンションを選択します。
+1. 設定する緯度と経度に使用するディメンションを選択します。 使用しているディメンションについて詳しくは、[ マップビジュアライゼーションの緯度と経度に必須のコンテキストラベル ](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization) を参照してください。
 
 1. 寸法の精度レベルを設定します。
 
