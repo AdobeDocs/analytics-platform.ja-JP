@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
-workflow-type: ht
-source-wordcount: '2694'
-ht-degree: 100%
+source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+workflow-type: tm+mt
+source-wordcount: '2709'
+ht-degree: 98%
 
 ---
 
@@ -112,9 +112,10 @@ ht-degree: 100%
 | **処理ルール、VISTA ルール、マーケティングチャネルの処理ルール** | WebSDK ベースのデータセットと Analytics ソースコネクタのデータの両方で、Adobe Experience Platform データ準備機能と[派生フィールド](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields)の使用がサポートされます。 |
 | **Products 変数** | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | **プロジェクトの共有** | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
+| **リアルタイムレポート** | Customer Journey Analyticsのリアルタイムレポートでは、Analysis Workspaceの 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。 |
 | **Report Builder** | Microsoft Excel 用の新しい Office 365 プラグインでサポートされます。 |
 | **ユーザー権限／データアクセス制御** | Customer Journey Analytics は [Adobe Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-tool-experience-cloud) 製品管理者、製品プロファイル管理者およびユーザーを区別します。製品管理者のみが、他のユーザーが作成した接続、プロジェクト、セグメントまたは計算指標を作成、更新、削除できます。製品管理者と製品プロファイル管理者は、データビューを編集できます。計算指標、セグメントまたは注釈などを作成するためのユーザー権限を追加できます。 |
-| **ビジュアライゼーション** | マップビジュアライゼーションを除く、すべてのワークスペースビジュアライゼーションがサポートされます。 |
+| **ビジュアライゼーション** | すべてのWorkspaceのビジュアライゼーションがサポートされています。 |
 | **クロスデバイス／クロスチャネルのステッチ** | ID 情報を含むイベントデータセットに対してサポートされます。[ステッチ](../../stitching/overview.md)を参照してください。 |
 
 ## 部分的なサポート {#partial}
@@ -127,7 +128,6 @@ ht-degree: 100%
 
 | 機能 | メモ |
 | --- | --- |
-| **リアルタイムレポート** | サポートが予定されています。 |
 | **トランザクション ID データソース** | サポートが予定されています。 |
 
 ## サポートなし、まだ未予定 {#not-planned}
