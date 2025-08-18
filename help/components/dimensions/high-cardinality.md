@@ -1,11 +1,11 @@
 ---
-title: 高基数ディメンション
+title: 基数の高いディメンション
 description: 一意の値を多く含むディメンションをCustomer Journey Analyticsがどのように処理するかについて説明します。
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: 1e9ec546ceee728116b4a679b78f53f20e06d37c
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
