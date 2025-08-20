@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 1c4342d91e0c939d596c9660ffc510c4698f8680
+source-git-commit: 8531c372607f39a3e39de8eda4f624057e56d9a4
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 98%
+source-wordcount: '2694'
+ht-degree: 97%
 
 ---
 
@@ -231,7 +231,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
    * コンテンツ分析イベントデータからエクスペリエンス属性を生成するプロセス
    * Customer Journey Analytics のレポートテンプレート。
 
-* コンテンツ分析でのエクスペリエンスのデータ収集の設定をさらに編集するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の設定に関連付けられたタグプロパティの [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
+* コンテンツ分析でのエクスペリエンスのデータ収集の設定をさらに編集するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の設定に関連付けられたタグプロパティの [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -313,7 +313,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 * コンテンツ分析用のデータを収集する際に、どのアセットを含めるか除外するかを指定します。
 
-  **[!UICONTROL 含める／除外するアセット]**&#x200B;の正規表現文字列を指定します。<br/>例：コンテンツ分析からすべてのロゴ JPEG と SVG 画像を除外する `^(?!.*(logo\.jpg|\.svg)).*$`。
+  **[!UICONTROL 含める／除外するアセット]**&#x200B;の正規表現文字列を指定します。<br/> 例：Content Analyticsからすべてのロゴ JPEG画像を除外する場合は、`^(?!.*(logo\.jpg)).*$` を指定します。
 
 >[!IMPORTANT]
 >
@@ -328,9 +328,9 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 ただし、含めるまたは除外するページとアセットを編集することはできます。
 
-* コンテンツ分析用のデータを収集する際に含めるページまたは除外するページを編集するには、**[!UICONTROL エクスペリエンス]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、ページを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
+* コンテンツ分析用のデータを収集する際に含めるページまたは除外するページを編集するには、**[!UICONTROL エクスペリエンス]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、ページを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
 
-* コンテンツ分析用のデータを収集する際に含めるアセットまたは除外するアセットを編集するには、**[!UICONTROL アセット]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、アセットを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
+* コンテンツ分析用のデータを収集する際に含めるアセットまたは除外するアセットを編集するには、**[!UICONTROL アセット]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、アセットを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
 
 ### 概要 {#summary}
 
