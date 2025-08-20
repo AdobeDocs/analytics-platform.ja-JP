@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="ベータ版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
+source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 2%
@@ -56,9 +56,9 @@ Customer Journey Analyticsのリアルタイムレポートでは、Analysis Wor
 
 | | データ収集 | リアルタイムレポートの遅延 | 標準レポート待ち時間 |
 |:---:|---|--:|--:|
-| 1 | Edge NetworkへのEdge Network SDK/API | &amp;amp；約；&lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
-| 2 | ストリーミングコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics ソースコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 1 | Edge NetworkへのEdge Network SDK/API | &amp;amp；約；&lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
+| 2 | ストリーミングコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics ソースコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
 | 4 | ソースコネクタへの他のソースコネクタ（バッチデータを含む） | &amp;amp；約；&lt; 24 時間 :01m:30 秒 | &amp;amp；約；&lt; 25 時間 :30m:00 秒 |
 
 ## 制限事項
