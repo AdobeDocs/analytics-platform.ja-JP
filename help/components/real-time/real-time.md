@@ -56,9 +56,9 @@ Customer Journey Analyticsのリアルタイムレポートでは、Analysis Wor
 
 | | データ収集 | リアルタイムレポートの遅延 | 標準レポート待ち時間 |
 |:---:|---|--:|--:|
-| 1 | Edge NetworkへのEdge Network SDK/API | &amp;amp；約；&lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
-| 2 | ストリーミングコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics ソースコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 1 | Edge NetworkへのEdge Network SDK/API | &amp;amp；約；&lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
+| 2 | ストリーミングコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics ソースコネクタ | &amp;amp；約；&lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
 | 4 | ソースコネクタへの他のソースコネクタ（バッチデータを含む） | &amp;amp；約；&lt; 24 時間 :01m:30 秒 | &amp;amp；約；&lt; 25 時間 :30m:00 秒 |
 
 
