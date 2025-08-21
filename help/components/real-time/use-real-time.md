@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="ベータ版"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '225'
+ht-degree: 12%
 
 ---
 
@@ -34,16 +34,18 @@ ht-degree: 14%
 
 レポートするリアルタイム期間をドロップダウンメニューから選択します。 利用可能なオプションは次のとおりです。
 
-* [!UICONTROL &#x200B; 過去 15 分 &#x200B;]
-* [!UICONTROL &#x200B; 過去 30 分 &#x200B;]
-* [!UICONTROL &#x200B; 過去 1 時間 &#x200B;]
-* [!UICONTROL &#x200B; 過去 8 時間 &#x200B;]
-* [!UICONTROL &#x200B; 過去 24 時間 &#x200B;]
+* [!UICONTROL  過去 15 分 ]
+* [!UICONTROL  過去 30 分 ]
+* [!UICONTROL  過去 1 時間 ]
+* [!UICONTROL  過去 8 時間 ]
+* [!UICONTROL  過去 24 時間 ]
 
 リアルタイム更新が有効になっているパネルを含むブラウザータブがアクティブになっている間、パネル内のすべてのビジュアライゼーションが最大 30 分間、1 分ごとに更新されるようになりました。
 
-例として、時間が **[!UICONTROL 06]** から **[!UICONTROL 06]** pm **[!UICONTROL に移動するのに応じて]** 合計売上高/時間 **[!UICONTROL *バービジュアライゼーションおよび:26pm*]** 合計売上高/時間 **[!UICONTROL *フリーフォームテーブルを更新する :27 リアルタイムレポートパネル&#x200B;*]**&#x200B;のスナップショットを以下に示します。
+例として、時間が **[!UICONTROL 06]** から **[!UICONTROL 06]** pm **[!UICONTROL に移動するのに応じて]** 合計売上高/時間 **[!UICONTROL *バービジュアライゼーションおよび:26pm*]** 合計売上高/時間 **[!UICONTROL *フリーフォームテーブルを更新する :27 リアルタイムレポートパネル&#x200B;*]**のスナップショットを以下に示します。
 
 ![ リアルタイム更新 ](assets/real-time-refresh.gif)
 
 30 分後、またはブラウザータブが非アクティブになるとすぐに、「**[!UICONTROL リアルタイム更新]**」トグルが自動的に無効になり、リアルタイムの更新が停止します。
+
+「リアルタイム更新」切替スイッチが無効になると、パネル（および内のすべてのビジュアライゼーション）は [Customer Journey Analyticsの標準レポートデータと機能を使用 ](real-time.md#how-it-works) に戻ります。
