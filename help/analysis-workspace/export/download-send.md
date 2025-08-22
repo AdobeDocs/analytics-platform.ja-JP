@@ -4,10 +4,10 @@ title: プロジェクトとデータのダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 22%
 
 ---
 
@@ -20,33 +20,42 @@ Analysis Workspace プロジェクトとデータをローカルデバイスに�
 
 Customer Journey Analytics データを書き出すその他の方法については、[ 書き出しの概要 ](/help/analysis-workspace/export/export-project-overview.md) を参照してください。
 
-## CSV または PDF としてのダウンロード {#download-project}
+## プロジェクトをPDFまたは CSV ファイルとしてダウンロードする {#download-project}
 
 ![「CSV をダウンロード」および「PDF をダウンロード」オプションをハイライト表示するプロジェクトドロップダウンメニュー](assets/download-project.png)
 
+### プロジェクトをPDF ファイルとしてダウンロードする
+
 プロジェクトを as a PDFとしてダウンロードする場合は、次の点に注意してください。
 
-* Adobe サーバーでプロジェクトが再実行され、PDF形式でレンダリングされるので、ダウンロードには数分かかる場合があります。 ブラウザーでプロジェクトがダウンロードされるまで、プロジェクトを残さないでください。  ダウンロードのレンダリング中も、引き続きプロジェクトに変更を加えることができます。 PDFのレンダリングに 5 分以上かかる場合は、代わりに [PDFにメールを送信 ](../curate-share/send-schedule-files.md) するよう求められます。
+* プロジェクトがワークステーションにダウンロードされるまで、プロジェクトから移動しないでください。 PDFがレンダリングされるように、Adobe サーバーでプロジェクトが再実行されるので、ダウンロードには数分かかることがあります。 ダウンロードのレンダリング中も、引き続きプロジェクトに変更を加えることができます。 PDFのレンダリングに 5 分以上かかる場合は、代わりに [PDFにメールを送信 ](../curate-share/send-schedule-files.md) するよう求められます。
 * ダウンロードは、ページ番号が適用されない単一ページとしてレンダリングされます。
-* PDFには、Analysis Workspaceのブラウザーページに表示される内容が含まれます。 コンテンツが切り詰められるのを防ぐために、カスタムサイズのビジュアライゼーションとパネルのサイズを自動で調整する必要があります。 ![ サイズ変更 ](/help/assets/icons/Resize.svg) を選択すると、カスタムサイズのビジュアライゼーションまたはパネルのサイズが自動的に変更されます。
-* [ ハイパーリンク ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) フリーフォームテーブル内に、ダウンロードされたPDFのハイパーリンクとして。
-
-
+* PDFには、Analysis Workspaceのブラウザーページに表示される内容が含まれています。 コンテンツが切り詰められるのを防ぐには、![ サイズ変更 ](/help/assets/icons/Resize.svg) を選択して、カスタムサイズのビジュアライゼーションまたはパネルのサイズを自動で調整します。
+* フリーフォームテーブル内の [ ハイパーリンク ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) は、ダウンロードしたPDFでクリックできます。
 
 プロジェクトをPDF ファイルとしてダウンロードするには：
 
 1. **[!UICONTROL プロジェクト]**/**[!UICONTROL PDFをダウンロード]** を選択します。
-![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Your download has been requested. お待ちください。]** が表示されます。
 
-1. ダウンロードの準備が整うとすぐに、メッセージ ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL *プロジェクト名 *を含む緑色のバーがPDFの準備が整います。]**&#x200B;が表示されます。
-「**[!UICONTROL ダウンロード]**」を選択して、PDFをダウンロードします。 PDFの表示方法やダウンロード方法は、PDF ドキュメントを処理するためのブラウザー設定によって異なります。
+   緑色のバーが表示され、次のメッセージが表示されます。![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL ダウンロードがリクエストされました。 お待ちください。]**
 
+1. ダウンロードの準備が整うとすぐに、緑色のバーが表示され、次のメッセージが表示されます。![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL *プロジェクト名 *PDFの準備が整いました。]**
 
-プロジェクトを CSV ファイルとしてダウンロードするには：
+1. 緑のバーで「**[!UICONTROL ダウンロード]**」を選択します。
 
-* **[!UICONTROL プロジェクト]**/**[!UICONTROL CSV をダウンロード]** を選択します。 プロジェクトは、ブラウザー設定の一部として設定されたダウンロードフォルダーに直接ダウンロードされます。 ファイル名は、例えば *のように* プロジェクト名 *-* レポートスイート名 *-* 日付 `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv` で構成されます。
+   ブラウザーの設定に応じて、PDFが以前に設定したフォルダーに自動的にダウンロードされるか、PDFのダウンロード先となるフォルダーを選択するよう求められます。
 
-## クリップボードにコピー {#copy-data}
+   ファイル名は、*プロジェクト名* - *レポートスイート名* - *日付* で構成されます。 例：`Example Project - Omni-Channel - Luma - Jun 30, 2025.pdf`。
+
+### プロジェクトを CSV ファイルとしてダウンロード
+
+1. **[!UICONTROL プロジェクト]**/**[!UICONTROL CSV をダウンロード]** を選択します。
+
+   ブラウザーの設定に応じて、CSV ファイルは自動的に、以前に設定したフォルダーにダウンロードされます。または、CSV ファイルがダウンロードされるフォルダーを選択するよう求められます。
+
+   ファイル名は、*プロジェクト名* - *レポートスイート名* - *日付* で構成されます。 例：`Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`。
+
+## ビジュアライゼーション内のデータをクリップボードにコピー {#copy-data}
 
 コンテキストメニューの **[!UICONTROL クリップボードにコピー]** オプションを使用すると、Analysis Workspaceからデータをすばやくコピーし、サードパーティのツールに貼り付けることができます。
 
@@ -60,7 +69,7 @@ Customer Journey Analytics データを書き出すその他の方法につい�
 
 ![「選択内容をクリップボードにコピー」オプション。](assets/copy-clipboard.png){zoomable="yes"}
 
-## CSV としてダウンロード {#download-data}
+## ビジュアライゼーション内のデータを CSV ファイルとしてダウンロード {#download-data}
 
 コンテキストメニューの「CSV としてダウンロード」オプションを使用すると、データのテーブルまたはビジュアライゼーションのデータソースを CSV としてダウンロードできます。
 
@@ -78,7 +87,7 @@ Customer Journey Analytics データを書き出すその他の方法につい�
 
 ![「データを CSV 形式でダウンロード」オプション](assets/download-data-as-csv.png)
 
-## 項目を CSV としてダウンロード {#download-items}
+## 項目を CSV ファイルとしてダウンロード {#download-items}
 
 テーブルに表示されている 400 行を超えるデータを分析する場合は、テーブルヘッダーまたは任意の行のコンテキストメニューから「**項目を CSV としてダウンロード（_Dimension名_）**」を選択します。 このオプションでは、選択したディメンションに対して、並べ替えオプションとフィルターを適用した最大 50,000 個のディメンション項目（テーブルの並べ替えに基づく）を書き出します。テーブルの上部からこのオプションを選択した場合、テーブルの最初のディメンションがエクスポートされます。
 
@@ -107,8 +116,8 @@ Customer Journey Analytics データを書き出すその他の方法につい�
 
 ファイルがダウンロードされると、次の通知が表示されます。
 
-* 青い **[!UICONTROL _テーブル名 _-_Dimension _.csv がリクエストされています。_x _% 完了]**&#x200B;進行状況を示します。 ダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、「![CrossSize100](/help/assets/icons/CrossSize100.svg)」を選択します。この場合、ダウンロードはキャンセルされません。
-* 緑色の **[!UICONTROL _テーブル名 _-_Dimension _.csv がダウンロードされました]**&#x200B;ファイルのダウンロードが完了すると、完了通知が表示されます。 ファイルがブラウザーに設定されたダウンロードフォルダーにダウンロードされます。
+* 青い **[!UICONTROL _テーブル名 _-_Dimension _.csv がリクエストされています。_x _% 完了]**進行状況を示します。 ダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、「![CrossSize100](/help/assets/icons/CrossSize100.svg)」を選択します。この場合、ダウンロードはキャンセルされません。
+* 緑色の **[!UICONTROL _テーブル名 _-_Dimension _.csv がダウンロードされました]**ファイルのダウンロードが完了すると、完了通知が表示されます。 ファイルがブラウザーに設定されたダウンロードフォルダーにダウンロードされます。
 
 一度に複数のダウンロードをリクエストすると、前のダウンロードが完了するまで、追加の各ダウンロードはキューに入れられるという通知が届きます。
 
