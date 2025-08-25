@@ -4,10 +4,10 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 97%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 100%
   | ![GraphTree](/help/assets/icons/GraphTree.svg) | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) |
 
 * ワークスペースの最後のパネル&#x200B;**外**&#x200B;の ![AddCircle](/help/assets/icons/AddCircle.svg) を選択し、別の[空白のパネル](blank-panel.md)を追加します。
+
+
+## パネルの管理
+
+パネルは、次の方法で管理できます。
+
+![ パネルを管理 ](assets/manage-panel.png)
+
+* パネルを折りたたむには、「![ 山形記号 ](/help/assets/icons/ChevronDown.svg)」を選択します。
+* 折りたたまれたパネルを表示するには、「![ 山形の左 ](/help/assets/icons/ChevronLeft.svg)」を選択します。
+* パネルを削除するには、「![CrossSize400](/help/assets/icons/CrossSize200.svg)」を選択します。 取り消すには、**[!UICONTROL 編集]** > **[!UICONTROL 取り消し]** （**[!UICONTROL *cmd+z *]**を選択します |**[!UICONTROL * ctrl+z *]**）。
+* パネルを移動するには、「移動 ![ が表示されている場合（通常、ヘッダーの上にカーソルを置いた場合 ](/help/assets/icons/Move.svg) は常に、パネルをドラッグ&amp;ドロップします。
 
 
 ## データビュー
@@ -155,7 +167,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
