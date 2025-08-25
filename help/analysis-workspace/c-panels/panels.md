@@ -83,13 +83,13 @@ ht-degree: 97%
 
 * パネルを折りたたむには、「![ 山形記号 ](/help/assets/icons/ChevronDown.svg)」を選択します。
 * 折りたたまれたパネルを表示するには、「![ 山形の左 ](/help/assets/icons/ChevronLeft.svg)」を選択します。
-* パネルを削除するには、「![CrossSize400](/help/assets/icons/CrossSize200.svg)」を選択します。 取り消すには、**[!UICONTROL 編集]** > **[!UICONTROL 取り消し]** （**[!UICONTROL *cmd+z *]**を選択します |**[!UICONTROL * ctrl+z *]**）。
+* パネルを削除するには、「![CrossSize400](/help/assets/icons/CrossSize200.svg)」を選択します。 取り消すには、**[!UICONTROL 編集]** > **[!UICONTROL 取り消し]** （**[!UICONTROL *cmd+z *]**&#x200B;を選択します |**[!UICONTROL * ctrl+z *]**）。
 * パネルを移動するには、「移動 ![ が表示されている場合（通常、ヘッダーの上にカーソルを置いた場合 ](/help/assets/icons/Move.svg) は常に、パネルをドラッグ&amp;ドロップします。
 
 
 ## データビュー
 
-各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**&#x200B;の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
