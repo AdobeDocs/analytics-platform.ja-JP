@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1542'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 ## identityMap
 
-グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -58,7 +58,7 @@ ht-degree: 7%
 - 名前空間 `identityMap` 使用して persistentID を定義します。
    - persistentID の複数の値が `identityMap` 名前空間で見つかった場合、最初の辞書的に利用可能な ID が使用されます。
 
-  以下の例では、名前空間と ID により、選択された名前空間（ECID）で並べ替えられた ID リストが作成され、最後に選択された ID が作成されます。
+  以下の例では、使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
 
   <table style="table-layout:auto">
      <tr>
@@ -113,7 +113,7 @@ ht-degree: 7%
 ![ID グラフ 246](assets/identity-graph-246.svg)
 ![ID グラフ 3579](assets/identity-graph-3579.svg)
 
-[ID グラフビューア ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
+[ID グラフビューア ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
 
 ### 手順 1：ライブステッチ
 
@@ -144,7 +144,7 @@ ht-degree: 7%
 
 +++ 詳細
 
-2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（「再生 ![ で示されます ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)）。
+2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) で示されます）。
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 24 時間後） |
 |---|---|---|---|---|---|
@@ -158,7 +158,7 @@ ht-degree: 7%
 {style="table-layout:auto"}
 
 
-2023-05-13 16:30 に再生のステッチが行われ、7 日間のルックバックウィンドウ設定がある場合、サンプルからのすべてのイベントが再ステッチされます。
+2023-05-13 16:30 に再生のステッチが行われ、7 日間のルックバックウィンドウ設定では、サンプルのすべてのイベントが再ステッチされます。
 
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 7 日後） |
@@ -203,7 +203,7 @@ ht-degree: 7%
 
 - ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行で訪問者を特定する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
 - 永続 ID も、スキーマで [ID として定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
-- Experience Platform ID サービスの ID グラフには、ステッチ中に **一時的な ID** を解決するために使用する名前空間（`Email` や `Phone` など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
+- Experience Platform ID サービスの ID グラフには、ステッチ中に `Email` 一時的な ID`Phone` を解決するために使用する名前空間（**や** など）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ ht-degree: 7%
 - 指定された名前空間を使用して一時的な ID をクエリする場合、タイムスタンプは考慮されません。 そのため、永続的 ID が、以前のタイムスタンプを持つレコードからの一時的な ID でステッチされる可能性があります。
 - グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[ 共有デバイス ](/help/use-cases/stitching/shared-devices.md) を参照してください。
 - ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data Platform などのExperience Platform アプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
-- [ID サービスガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [ 静的制限 ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
+- [ID サービスガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [ 静的制限 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
    - グラフ内の ID の最大数：50。
    - 単一のバッチ取得での ID へのリンクの最大数：50。
    - グラフ取り込み用の XDM レコードの ID の最大数：20。

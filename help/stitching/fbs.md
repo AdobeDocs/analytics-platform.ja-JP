@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1784'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity)`identityMap` フィールドグループの使用をサポートしています。
+フィールドベースのステッチでは、次のシナリオで [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) フィールドグループの使用をサポートしています。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -57,10 +57,10 @@ ht-degree: 15%
 
 
 - 名前空間 `identityMap` 使用して、persistentID、transientID、またはその両方を定義します。
-   - persistentID または transientID の複数の値が `identityMap` 名前空間で見つかった場合は、最初の辞書編集可能な値が使用されます。
+   - `identityMap` 名前空間に perstentID または transientID の複数の値が見つかった場合は、最初の辞書編集可能な値が使用されます。
    - persistentID と transientID の名前空間は、相互に排他的にする必要があります。
 
-  以下の例では、名前空間と ID により、選択された名前空間（ECID）で並べ替えられた ID リストが作成され、最後に選択された ID が作成されます。
+  以下の例では、フィールドベースのステッチに使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
 
   <table style="table-layout:auto">
      <tr>
@@ -142,7 +142,7 @@ ht-degree: 15%
 
 遅延データ（タイムスタンプが 24 時間以上経過したデータ）は、「ベストエフォート」ベースで処理され、最高の品質を得るために現在のデータのステッチが優先されます。
 
-+++
++++ 
 
 ### 手順 2：再生のステッチ
 
@@ -174,7 +174,7 @@ ht-degree: 15%
 
 アトリビューションが機能するのは、識別するカスタム変数がデバイスに関連付けられている場合です。 上記の例では、イベント 1 と 10 が再生の結果としてステッチされ、イベント 8 と 9 のみがステッチされていない状態になります。 人物指標（累積）を 2 に減らします。
 
-+++
++++ 
 
 ### 手順 3：プライバシーリクエスト
 
@@ -202,7 +202,7 @@ ht-degree: 15%
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | **3 デバイス** | | **4 人**:<br/>246、`Bob`、`3579`、`81911` | **2 人**:<br/>Bob, `3579` |  | **3 人**:<br/>`246`、`3579`、`81911` |
 
-+++
++++ 
 
 ## 前提条件
 
@@ -214,7 +214,7 @@ ht-degree: 15%
    - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
