@@ -4,9 +4,9 @@ title: スケジュール済みプロジェクト
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9d293854ab1da90ea22865392daf9204679f4fd3
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '796'
 ht-degree: 41%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 41%
 | アイコン | アクション | 説明 |
 |:---:|---|---|
 | ![閉じる](/help/assets/icons/Close.svg) | **[!UICONTROL *x *個を選択済み]** | 「」を選択すると、選択したスケジュールされたプロジェクトの選択を解除できます。 |
-| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | プロジェクト用に選択したスケジュール済みプロジェクトを削除します。プロジェクトは削除されません。 |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | プロジェクト用に選択したスケジュール済みプロジェクトを削除します。プロジェクトは削除されません。  <p>プロジェクトの削除について詳しくは、[ プロジェクトの概要 ](/help/analysis-workspace/build-workspace-project/freeform-overview.md) を参照してください。</p> |
 | ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したスケジュール済みプロジェクトにタグ付けします。 **[!UICONTROL スケジュールされたプロジェクトにタグ付け]** で、タグを選択し、「**[!UICONTROL 保存]**」を選択して保存します。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択したスケジュールされたプロジェクトを承認します。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 選択したスケジュールされたプロジェクトを `Export Scheduled Projects List.csv` という名前のファイルにエクスポートします。 |
