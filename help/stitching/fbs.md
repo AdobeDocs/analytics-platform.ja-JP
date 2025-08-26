@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: 00f6eeac173ad606885fce5567c82db8a9d107de
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1781'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) フィールドグループの使用をサポートしています。
+フィールドベースのステッチでは、次のシナリオで [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) フィールドグループの使用をサポートしています。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -60,7 +60,7 @@ ht-degree: 15%
    - `identityMap` 名前空間に perstentID または transientID の複数の値が見つかった場合は、最初の辞書編集可能な値が使用されます。
    - persistentID と transientID の名前空間は、相互に排他的にする必要があります。
 
-  以下の例では、フィールドベースのステッチに使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
+  以下の例では、使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
 
   <table style="table-layout:auto">
      <tr>
@@ -94,7 +94,7 @@ ht-degree: 15%
 
 - **ライブステッチ**：各ヒット（イベント）が発生するとそのヒットをステッチしようとします。 データセットに「新規」である（認証されたことのない）デバイスからのヒットは、通常、このレベルでは結び付けられません。 既に認識済みのデバイスからのヒットは、直ちに結合されます。
 
-- **ステッチを再生**：学習した一意の識別子（一時的な ID）に基づいてデータを「再生」します。 このステージでは、以前は不明だったデバイス（永続 ID）からのヒットが（一時的な ID に）結合されます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
+- **ステッチを再生**:*再生* 学習した一意の識別子（一時的な ID）に基づくデータ。 このステージでは、以前は不明だったデバイス（永続 ID）からのヒットが（一時的な ID に）結合されます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
    - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていない訪問者は、サイトを訪問した日に認証を行う必要があります。
    - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
    - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
@@ -214,7 +214,7 @@ ht-degree: 15%
    - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
