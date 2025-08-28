@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 向けの AI アシスタントは、すべての製�
 
 Customer Journey Analytics の AI アシスタントからアクセス可能な Data Insights エージェントは、データに関する質問に迅速かつ効率的に回答する生成 AI 会話エージェントです。データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。
 
-AI Assistant 内でのData Insights Agentの使用について詳しくは、[Data Insights Agentによるデータの視覚化 ](/help/data-analysis-ai.md) を参照してください。
+AI アシスタント内での Data Insights エージェントの使用について詳しくは、[Data Insights エージェントによるデータの視覚化](/help/data-analysis-ai.md)を参照してください。
 
 ## 機能アクセス
 
@@ -53,7 +53,7 @@ AI Assistant 内でのData Insights Agentの使用について詳しくは、[Da
 
 * **契約上のアクセス**：AI アシスタントを使用できない場合は、組織の管理者またはアドビアカウント担当者にお問い合わせください。組織が AI アシスタントを使用する前に、生成 AI 関連の特定の法的条項に同意する必要があります。
 
-* **権限**：[!UICONTROL Adobe Admin Console] では、[!UICONTROL レポートツール]の **[!UICONTROL AI アシスタント：製品知識]**&#x200B;権限によって、このツールへのアクセスが決まります。[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+* **権限**：[!UICONTROL Adobe Admin Console] では、[!UICONTROL レポートツール]の **[!UICONTROL AI アシスタント：製品知識]**&#x200B;権限によって、このツールへのアクセスが決まります。[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
    1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
    1. [!UICONTROL AI アシスタント：製品知識]へのアクセスを提供する製品プロファイルのタイトルを選択します。
    1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
