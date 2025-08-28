@@ -4,10 +4,10 @@ description: アドビのその他のソリューションやサービスとデ�
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
 feature: Experience Platform Integration
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 93%
 
 ---
 
@@ -21,3 +21,17 @@ ht-degree: 100%
 2. 目的のデータセットを使用して、Customer Journey Analytics で[接続を作成](/help/connections/create-connection.md)します。
 3. レポートで使用する目的のディメンションと指標を含む[データビューを作成](/help/data-views/create-dataview.md)します。
 4. データビュー内で設定されたディメンションと指標に基づいて、Analysis Workspace でレポートを実行します。
+
+使用可能な統合の一部を次に示します。
+
+* [Adobe Analytics](/help/integrations/aa.md)
+
+* [ターゲット](/help/integrations/at.md)
+
+* [Adobe Advertising](/help/integrations/advertising.md)
+
+* [Journey Optimizer](/help/integrations/ajo.md)
+
+* [意思決定管理](/help/integrations/ajo-od.md)
+
+* [顧客 AI](/help/integrations/customer-ai.md)
