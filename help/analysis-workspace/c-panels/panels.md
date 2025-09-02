@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2193'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,17 +79,17 @@ ht-degree: 97%
 
 パネルは、次の方法で管理できます。
 
-![ パネルを管理 ](assets/manage-panel.png)
+![パネルの管理](assets/manage-panel.png)
 
-* パネルを折りたたむには、「![ 山形記号 ](/help/assets/icons/ChevronDown.svg)」を選択します。
-* 折りたたまれたパネルを表示するには、「![ 山形の左 ](/help/assets/icons/ChevronLeft.svg)」を選択します。
-* パネルを削除するには、「![CrossSize400](/help/assets/icons/CrossSize200.svg)」を選択します。 取り消すには、**[!UICONTROL 編集]** > **[!UICONTROL 取り消し]** （**[!UICONTROL *cmd+z *]**&#x200B;を選択します |**[!UICONTROL * ctrl+z *]**）。
-* パネルを移動するには、「移動 ![ が表示されている場合（通常、ヘッダーの上にカーソルを置いた場合 ](/help/assets/icons/Move.svg) は常に、パネルをドラッグ&amp;ドロップします。
+* パネルを折りたたむには、![ChevronDown](/help/assets/icons/ChevronDown.svg) を選択します。
+* 折りたたまれたパネルを表示するには、![ChevronLeft](/help/assets/icons/ChevronLeft.svg) を選択します。
+* パネルを削除するには、![CrossSize400](/help/assets/icons/CrossSize200.svg) を選択します。取り消すには、**[!UICONTROL 編集]**／**[!UICONTROL 取り消し]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
+* パネルを移動するには、ヘッダーにポインタを合わせた時に、![移動](/help/assets/icons/Move.svg)が表示されたら、パネルをドラッグ＆ドロップします。
 
 
 ## データビュー
 
-各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**&#x200B;の![データ名](/help/assets/icons/Data.svg)で識別されます。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -167,7 +167,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
