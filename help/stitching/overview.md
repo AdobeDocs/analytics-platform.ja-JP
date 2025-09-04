@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 95%
 
 ---
 
@@ -68,6 +68,20 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 - 2 つ以上のデータセットの結合。ステッチは、1 つのデータセットにのみ適用されます。データセットの結合は、Customer Journey Analytics 接続を設定し、接続内の選択した複数のデータセットで同じユーザー ID を選択した場合に、結果として起こります。
 
 - 2 つのデータセットの結合。Customer Journey Analytics では、結合は、Analysis Workspace での検索や分類によく使用されます。ステッチには結合機能が使用されますが、プロセス自体には複数の結合が含まれます。
+
+
+## Journey Optimizer データセット
+
+ステッチでは、自動生成された次のJourney Optimizer データセットをサポートしています。
+
+- AJO ジャーニーステップイベント
+- AJO 受信アクティビティイベントデータセット
+- AJO サーフェスデータセット
+- AJO メッセージフィードバックイベントデータセット* AJO プッシュトラッキングエクスペリエンスイベントデータセット
+- AJO メールトラッキングエクスペリエンスイベントデータセット
+- AJO BCC フィードバックイベントデータセット
+- AJO Live アクティビティフィードバックイベントデータセット
+- AJO ExD 決定イベントデータセット
 
 >[!MORELIKETHIS]
 >

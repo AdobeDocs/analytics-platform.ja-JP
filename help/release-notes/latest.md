@@ -3,16 +3,16 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a54029648c9295e7a81243cb44e8fd1a85db294a
+source-git-commit: f09937e6babca5549b9b78e9c90462673750a4b3
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
 # 現在の Adobe Customer Journey Analytics リリースノート（2025年8月）
 
-**最終更新日**：2025年8月14日（PT）
+**最終更新日**：2025年9月4日（PT）
 
 
 このリリースノートは、2025年8月13日～9月16日（PT）のリリース期間を対象としています。Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
@@ -21,6 +21,7 @@ ht-degree: 98%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **使用インターフェイスの更新** | [ 使用状況インターフェイス ](/help/connections/manage-connections.md#usage) に、コアデータ量と平均行サイズに関する情報が追加されるようになりました。 | | 2025年9月4日（PT） |
 | **マップビジュアライゼーション** | マップビジュアライゼーションは新しいビジュアライゼーションのタイプで、（計算指標を含む）指標のビジュアルマップを作成できます。様々な地域にまたがる指標データを識別および比較する場合に役立ちます。<p>以前は、マップビジュアライゼーションは Adobe Analytics でのみ使用できました。</p><p>Customer Journey Analytics のマップビジュアライゼーションには、Adobe Analytics のマップビジュアライゼーションから、次の改善点が含まれています。</p><ul><li>データビューの任意のセグメントをデータソースとして使用します。</li><li>データビューでディメンションを設定することで、最大 1 メートルの精度を実現します。</li><li>新しい選択ツールを使用すると、ビジュアライゼーションで選択した任意の領域からセグメント、オーディエンス、トレンドまたは分類を作成できます。</li></ul><p>詳しくは、[マップ](/help/analysis-workspace/visualizations/map.md)を参照してください。</p> | 2025年8月13日（PT） | 2025年8月25日（PT） |
 | **B2B テンプレート** | Customer Journey Analytics B2B Edition のライセンスを取得する場合、Adobe テンプレート UI から次の追加 B2B テンプレートが使用できるようになりました。 <ul><li>B2B アカウントエンゲージメントの概要</li><li>B2B 商談エンゲージメントの概要</li><li>B2B 購買グループアクティビティ</li></ul><p>詳しくは、[テンプレートの使用](/help/analysis-workspace/templates/use-templates.md)の [B2B テンプレート](/help/analysis-workspace/templates/use-templates.md#b2b-templates)を参照してください。</p> |  | 2025年8月15日（PT） |
 | **PDF としてダウンロードしたプロジェクトは、ワークステーションにダウンロードされます** | プロジェクトを PDF 形式でダウンロードすると、その PDF はワークステーションのダウンロードフォルダーにダウンロードされます。 <p>以前は、プロジェクトを PDF 形式でダウンロードすると、PDF が一意の URL を使用して新しいブラウザータブに表示されていました。</p><p>詳しくは、[プロジェクトとデータのダウンロード](/help/analysis-workspace/export/download-send.md)を参照してください。</p> |  | 2025年8月25日（PT） |
