@@ -273,6 +273,6 @@ curl -X POST \
 
 リクエストで `unifiedProfile` タグを使用すると、リアルタイム顧客データプロファイルのライセンスを取得していなくても、エラーが返されます。
 
-詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) を参照してください。
+詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) を参照してください。
 
 +++ 
