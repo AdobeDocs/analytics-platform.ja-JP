@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 28%
+source-wordcount: '2041'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 28%
 フロービジュアライゼーションを、データセット ID ディメンションと合わせて使用できます。
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、空のWorkspace プロジェクトを作成します。
-2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL **&#x200B; フロー &#x200B;**]** ビジュアライゼーションを右側のキャンバスにドラッグします。
-3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL **&#x200B; Dimensionまたは Item &#x200B;**]** というラベルが付いた場所にドラッグします。
+2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL ** フロー **]** ビジュアライゼーションを右側のキャンバスにドラッグします。
+3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL ** Dimensionまたは Item **]** というラベルが付いた場所にドラッグします。
 4. このフローレポートはインタラクティブです。後続または前のページにフローを展開するには、いずれかの値を選択します。 右クリックメニューを使用して、列を展開または折りたたむことができます。同じフローレポート内で異なるディメンションを使用することもできます。
 
 データセット ID ディメンションの項目の名前を変更する場合は、検索データセットを使用できます。
@@ -242,4 +242,37 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 +++
 
+## ID サービスのデータセットを有効にする
 
++++ ID サービスのみのデータセットを有効にする方法を教えてください。 
+
+グラフベースのステッチでデータセットを使用するには、ID サービスでデータセットが有効になっていることを確認する必要があります。
+
+グラフベースのステッチを利用するために、Real-Time Customer Data Platformのライセンスを取得する必要はありません。 グラフベースのステッチは、リアルタイム顧客プロファイルではなく、使用可能な ID グラフに基づいています。
+
+ID サービスのみのデータセットを有効にするには、`POST` タグのみを使用する `/datasets` エンドポイントへの `unifiedIdentity` リクエストを使用します。 例：
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+リクエストで `unifiedProfile` タグを使用すると、リアルタイム顧客データプロファイルのライセンスを取得していなくても、エラーが返されます。
+
+詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) を参照してください。
+
++++ 

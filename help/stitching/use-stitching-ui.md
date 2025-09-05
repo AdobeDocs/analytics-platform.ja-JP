@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,19 @@ ht-degree: 3%
    * **[!UICONTROL プライマリ ID 名前空間を使用]** を有効にして、プライマリ ID 名前空間を使用します。
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
-   ユーザー ID に対して **[!UICONTROL ID グラフ]** を選択した場合は、名前空間を選択する必要があります。 その前に、ID グラフをステッチに使用する前に ID グラフの設定が完了したことを確認する **[!UICONTROL ID グラフに変更]** ダイアログが表示されます。 「**[!UICONTROL 続行]**」を選択して続行します。
+
+   ユーザー ID に対して **[!UICONTROL ID グラフ]** を選択した場合は、名前空間を選択する必要があります。
+
+   >[!NOTE]
+   >
+   >ID グラフを使用する権限が必要です。
+   >
+
+   その前に、**[!UICONTROL ID グラフに変更]** ダイアログが表示され、ステッチ用の ID グラフを使用する前に、データセットの ID グラフの設定が [ 完了 ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) したことを確認します。 「**[!UICONTROL 続行]**」を選択して続行します。
 
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
 
-1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューからルックバックウィンドウを選択します。 オプションは、**[!UICONTROL 1 日]**、**[!UICONTROL 7 日]**、**[!UICONTROL 14 日]** または **[!UICONTROL 30 日]** です。
+1. **[!UICONTROL ルックバックウィンドウ]** ドロップダウンメニューからルックバックウィンドウを選択します。 使用できるオプションは、使用資格のあるCustomer Journey Analytics パッケージによって異なります。
+
+ID ステッチが有効なデータセットを含む接続を保存すると、各データセットのステッチプロセスは、そのデータセットのデータの取り込みが開始した時点で開始されます。
