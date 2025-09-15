@@ -28,7 +28,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3443139/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -92,7 +92,7 @@ Here is an example of what intelligent captions could look like:
 
 1. インテリジェントキャプションダイアログで ![インテリジェントキャプションの表示を編集](/help/assets/icons/EditInLight.svg) を選択します。
 
-1. ![表示を切り替え](/help/assets/icons/Visibility.svg) を切り替えて特定のインサイト（**[!UICONTROL 最小値]**&#x200B;など）を表示するか、![表示を切り替え](/help/assets/icons/VisibilityOff.svg) を切り替えて特定のインサイト（**[!UICONTROL スパイク]**&#x200B;など）を非表示にします。
+1. ![表示を切り替え](/help/assets/icons/Visibility.svg)を切り替えて特定のインサイト（**[!UICONTROL 最小値]**&#x200B;など）を表示するか、![表示を切り替え](/help/assets/icons/VisibilityOff.svg)を切り替えて特定のインサイト（**[!UICONTROL スパイク]**&#x200B;など）を非表示にします。
 
    ![インテリジェントキャプションを編集](assets/edit-intelligent-captions.png)
 
