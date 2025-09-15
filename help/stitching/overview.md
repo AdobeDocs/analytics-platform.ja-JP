@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 
 ## Journey Optimizer データセット
 
-ステッチでは、自動生成された次のJourney Optimizer データセットをサポートしています。
+ステッチでは、次の自動生成された Journey Optimizer データセットをサポートしています。
 
 - AJO ジャーニーステップイベント
 - AJO 受信アクティビティイベントデータセット
@@ -80,14 +80,14 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 - AJO メッセージフィードバックイベントデータセット* AJO プッシュトラッキングエクスペリエンスイベントデータセット
 - AJO メールトラッキングエクスペリエンスイベントデータセット
 - AJO BCC フィードバックイベントデータセット
-- AJO Live アクティビティフィードバックイベントデータセット
+- AJO ライブアクティビティフィードバックイベントデータセット
 - AJO ExD 決定イベントデータセット
 
 >[!MORELIKETHIS]
 >
 >[フィールドベースのステッチ](fbs.md)
->&#x200B;>[グラフベースのステッチ](gbs.md)
->&#x200B;>[ステッチの使用](use-stitching.md)
->&#x200B;>[ステッチの検証](validate.md)
->&#x200B;>[ステッチに関する FAQ](faq.md)
+>>[グラフベースのステッチ](gbs.md)
+>>[ステッチの使用](use-stitching.md)
+>>[ステッチの検証](validate.md)
+>>[ステッチに関する FAQ](faq.md)
 
