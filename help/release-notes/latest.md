@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 79e120b4362fe226debaeaea94da7e6b52c7e24a
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 55%
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **使用インターフェイスの更新** | [ 使用状況インターフェイス ](/help/connections/manage-connections.md#usage) に、コアデータ量と平均行サイズに関する情報が追加されるようになりました。<p>詳しくは、「[ 接続の管理 ](/help/connections/manage-connections.md#usage)」を参照してください。</p> | | 2025年9月4日（PT） |
+| **使用状況インターフェイスの更新** | [使用状況インターフェイス](/help/connections/manage-connections.md#usage)に、コアデータ量と平均行サイズに関する情報が追加されました。<p>詳しくは、「[ 接続の管理 ](/help/connections/manage-connections.md#usage)」を参照してください。</p> | | 2025年9月4日（PT） |
 | **プロジェクトとコンポーネントをCustomer Journey Analyticsに移行する際の改善点** | プロジェクトとコンポーネントをAdobe AnalyticsからCustomer Journey Analyticsに移行する際に、次の改善が利用できるようになりました。<ul><li>複数のプロジェクトを一度に移行します。<br/> 一度に 20 件までプロジェクトを移行できます。<br/> 以前は、一度に 1 つのプロジェクトのみを移行できました。</li><li>以前のプロジェクト移行で既にマッピングされているディメンションと指標のマッピングを更新します。<br/> 以前に以前に移行で同じディメンションと指標がマッピングされていた場合でも、プロジェクトを移行するたびに、これらのマッピングを更新できるようになりました。<br/> 以前は、選択したマッピングは、今後のすべてのプロジェクト移行で永続的に使用されていました。</li><li>プロジェクト数が多い組織のパフォーマンスが向上しました。</li></ul><p>この機能は、Adobe Analytics インターフェイスから使用できます。 詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのコンポーネントおよびプロジェクトの移行 ](https://experienceleague.adobe.com/jp/docs/analytics/admin/admin-tools/component-migration/component-migration) を参照してください。</p> | 2025年9月15日（PT） | 2025年9月18日（PT） |
 | **ルックアップキーの制限が最大 10 億増加しました** | ルックアップデータセットの一意のキーの最大数は、Customer Journey Analyticsの使用権限に応じて最大 10 億になりました。 <p>以前は、すべての使用権限の最大数は 1,000 万人でした。<p>詳しくは、[ ガードレール ](/help/technotes/guardrails.md) を参照してください。</p> | | 2025年9月18日（PT） |
 | **アドホックスキーマのサポート** | [ アドホックスキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) は、CSV ファイルの取り込みや特定の種類のソース接続の作成など、Experience Platformの様々なデータ取り込みワークフローで使用されます。 <p>この機能により、Customer Journey Analyticsでのアドホックスキーマの使用がサポートされるようになります。 接続の定義の一環として、アドホックスキーマに基づくデータセットを選択し、そのデータをデータビューおよびワークスペースプロジェクトで使用できるようになりました。</p> <p>（ドキュメントへのリンクを添付。）</p> |  | 2025年9月18日（PT）（当初は 2025年8月28日（PT）にリリースする予定でした） |
