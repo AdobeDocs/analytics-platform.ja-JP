@@ -5,10 +5,10 @@ title: テーブル全体のクラウドへの書き出し
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c16fc1a239c9ce1b701b3d03539bc9696f1c6489
+source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 78%
+source-wordcount: '2449'
+ht-degree: 74%
 
 ---
 
@@ -62,6 +62,43 @@ Analysis Workspace から完全なテーブルを Google、Azure、Amazon、Adob
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="詳細"
+>abstract="書き出しの名前を指定します。説明と任意のタグを追加することもできます。 この情報は、書き出しテーブルおよびメール通知で書き出しを識別するのに役立ちます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-data-structure"
+>title="データ構造"
+>abstract="書き出すフリーフォームテーブルです。 データ構造を変更するには、左側のパネルからコンポーネントをテーブルにドラッグします。 フィルターを適用するには、コンポーネントをフィルター領域にドラッグします。 コンポーネントをキャンバスに追加すると、テーブルは動的に更新されます。"
+
+<!-- markdownlint-enable MD034 -->ß
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-schedule"
+>title="スケジュール"
+>abstract="書き出しの発生頻度を選択します。 すぐに書き出しを開始するには、「今すぐ送信」（1 回）を選択します。 スケジュールされた書き出しは、指定した日時に開始されます。 "
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-destination"
+>title="宛先"
+>abstract="データを送信するクラウドアカウントと場所を選択します。 既存のアカウントと場所を選択するか、「新規追加」を選択して作成できます。 エクスポートの失敗または期限切れを通知するユーザーとグループを指定してください。"
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 >
 >この節の説明に従ってデータを書き出す前に、完全なテーブルの書き出しについて詳しくは、上記の[完全なテーブルの書き出しについて](#understand-full-table-export)の節を参照してください。
@@ -91,7 +128,7 @@ Analysis Workspace から完全なテーブルを書き出すには：
    | ファイル形式 | 書き出すデータを .csv 形式にするか .json 形式にするかを選択します。 |
    | マニフェストファイルを含める | 有効にすると、成功した書き出し配信にマニフェストファイルが含まれます。マニフェストファイルを使用すると、すべてのファイルが正常に配信されたことを確認できます。これには、次の情報が含まれます。<ul><li>配信されたすべてのファイルのリスト</li><li>各ファイルの MD5 チェックサム</li></ul><p>書き出したデータは、[クラウドの書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)および[クラウドの書き出し場所の設定](/help/components/exports/cloud-export-locations.md)の説明に従って、設定したクラウドの宛先で圧縮ファイルとして使用できます。</p><p>圧縮ファイルのファイル名は、ファイル形式として CSV または JSON のどちらを選択したかに応じて、次のようになります。</p><ul><li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li></ul><p>上記の「**[!UICONTROL *ファイル形式**]」フィールドでファイル形式を選択します。</p> |
    | アカウント | データを送信するクラウド書き出しアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>「**[!UICONTROL アカウントを追加]**」を選択し、次の情報を指定します。<ul><li>**[!UICONTROL 場所アカウント名]**：場所アカウントの名前を指定します。この名前は、場所を作成する際に表示されます。 </li><li>**[!UICONTROL *場所アカウントの説明]**：アカウントの簡単な説明を入力して、同じアカウントタイプを持つ他のアカウントとの区別に役立てます。</li><li>**[!UICONTROL アカウントタイプ]**：書き出し先のクラウドアカウントのタイプを選択します。使用可能なアカウントタイプは、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake、AEP Data Landing Zone です。</li></ul><li>アカウントの設定を完了するには、選択した&#x200B;**[!UICONTROL アカウントタイプ]**&#x200B;に対応する以下のリンクに進みます。<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | 場所 | 書き出しデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>「**[!UICONTROL *dd の場所]**」を選択して、次の情報を指定します。 <ul><li>**[!UICONTROL 名前]**：場所の名前。</li><li>**[!UICONTROL 説明]**：アカウント上の他の場所と区別できるように、場所の簡単な説明を入力します。</li><li>**[!UICONTROL 場所アカウント]**：場所を作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、**[!UICONTROL Location account]**&#x200B;フィールドで選択したアカウントタイプに対応する、以下のリンクを続行します。<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | 場所 | 書き出しデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>「**[!UICONTROL *dd の場所]**」を選択して、次の情報を指定します。 <ul><li>**[!UICONTROL 名前]**：場所の名前。</li><li>**[!UICONTROL 説明]**：アカウント上の他の場所と区別できるように、場所の簡単な説明を入力します。</li><li>**[!UICONTROL 場所アカウント]**：場所を作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、**[!UICONTROL Location account]**フィールドで選択したアカウントタイプに対応する、以下のリンクを続行します。<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
