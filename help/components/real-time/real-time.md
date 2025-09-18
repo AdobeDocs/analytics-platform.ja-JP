@@ -2,21 +2,18 @@
 description: Customer Journey Analyticsのリアルタイムレポート機能について説明します。
 title: リアルタイムレポートの概要
 feature: Real-time Reporting
-hide: true
-hidefromtoc: true
 role: User
-badgePremium: label="ベータ版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 4%
+source-wordcount: '722'
+ht-degree: 7%
 
 ---
 
 # リアルタイムレポートの概要
 
-Customer Journey Analyticsのリアルタイムレポートでは、Analysis Workspaceの 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
+Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
 
 {{release-limited-testing}}
 

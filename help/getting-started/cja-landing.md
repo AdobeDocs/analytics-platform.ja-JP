@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
-workflow-type: ht
-source-wordcount: '808'
-ht-degree: 100%
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 96%
 
 ---
 
@@ -19,9 +19,17 @@ Customer Journey Analytics を使用すると、共通の顧客 ID に基づく 
 
 ## 新着情報
 
-Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
+Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点および修正点の包括的なリストについては、詳細な [ リリースノート ](../release-notes/latest.md) を参照してください。 最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
+
+>[!TAB  リアルタイムレポート*]
+
+Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
+
+[![画像](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
+
+*_リアルタイムレポート用のUltimate パッケージが必要です。_*
 
 >[!TAB B2B Edition]
 
