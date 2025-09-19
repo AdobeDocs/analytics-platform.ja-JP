@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
+source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
 workflow-type: tm+mt
-source-wordcount: '2316'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,16 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 | **フィードバックのメカニズム** | <ul><li>親指を上に向ける</li><li>親指を下に向ける</li><li>フラグ</li></ul> |  |
 
 
-## Data Insights エージェントへのアクセスの管理
+## Data Insights エージェントへのアクセスの管理 {#manage-access}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="Data Insights Agentを有効にする"
+>abstract="このオプションを選択すると、Data Insights Agentで使用するためにこのデータビューが有効になります。 Data Insights Agentは、Customer Journey Analyticsの AI アシスタントからアクセスできるジェネレーティブ AI コンバージョンエージェントです。 テキストプロンプトを使用してデータをすばやく分析するのに役立ちます。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
 
 次のパラメーターは、Customer Journey Analytics の Data Insights エージェントへのアクセスを制御します。
 
@@ -45,7 +54,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
