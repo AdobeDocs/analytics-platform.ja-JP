@@ -80,7 +80,7 @@ ht-degree: 28%
 
       1. 「**[!UICONTROL 完了]**」を選択します。
 
-データが準備され、アップロードされます。 データが正常にアップロードされると、Adobe Experience Platform UI の **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]****[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
+データが準備され、アップロードされます。 データが正常にアップロードされると、Adobe Experience Platform UI の **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]**&#x200B;**[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
 
 ![ アドホックデータのデータセットアクティビティ ](assets/datasets-dataset-activity.png)
 
@@ -208,7 +208,7 @@ Analysis Workspaceは、分析をすばやく構築し、データに基づい�
 
 1. リストから [ データビュー ](#set-up-a-data-view) を選択します。
 
-1. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づいてこれらの指標やディメンションを含めます。
+1. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づいてこれらの指標やディメンションを含めます。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 
