@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: cff4e305a6f8475534cc4e353e7058b6182f2f94
 workflow-type: tm+mt
 source-wordcount: '10170'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 89%
 | A | **ルール名** |  デフォルトでは、ルール名は&#x200B;**ルール X** です（X はシーケンス番号を表します）。ルールの名前を編集するには、その名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
 | B | **関数名** | ルール用に選択された関数名（[!UICONTROL 例：URL PARSE]）。関数が関数シーケンスの最後であり、最終出力値を決定する際、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます（例：[!UICONTROL URL PARSE - FINAL OUTPUT]）。<br/>関数の詳細情報を含むポップアップを表示するには、![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
 | C | **ルールの説明** | オプションでルールに説明を追加できます。<br/>![その他アイコン](assets/More.svg) を選択し、「**[!UICONTROL **&#x200B;説明を追加&#x200B;**]**」を選択して説明を追加するか、「**[!UICONTROL **&#x200B;説明を編集&#x200B;**]**」を選択して既存の説明を編集します。<br/>エディターを使用して説明を入力します。ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右揃え、左揃え、中央揃え、カラー、番号リスト、ブレットリストの使用）や、外部情報へのリンクの追加を行うことができます。<br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL &#x200B; フィールド &#x200B;] または [!UICONTROL &#x200B; 値 &#x200B;] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
+| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL  フィールド ] または [!UICONTROL  値 ] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -930,7 +930,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_datemath"
 >title="Date Math"
->abstract="この関数には、2 つの日付フィールドまたは日時フィールドの違いを返す機能があります。 （プロファイルデータセットからの）ユーザーベースのフィールドには **[!UICONTROL 最初のを返す]** および **[!UICONTROL 最後を返す]** オプションがありません。"
+>abstract="この関数は、2 つの日付フィールドまたは日時フィールド間の差を返す機能を提供します。（プロファイルデータセットからの）ユーザーベースのフィールドには「**[!UICONTROL 最初を返す]**」および「**[!UICONTROL 最後を返す]**」オプションがありません。"
 
 2 つの日付または 2 つの日時フィールドの差を返します。
 
@@ -940,7 +940,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL &#x200B; 精度 &#x200B;]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL  精度 ]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -952,7 +952,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#datemath-uc1-derivedfield}
 
-`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL &#x200B; の間にある &#x200B;] 範囲  の日数を計算するルールを定義します。 [!UICONTROL &#x200B; 日 &#x200B;] を [!UICONTROL &#x200B; 出力精度 &#x200B;] として選択します。 また、[!UICONTROL &#x200B; 予約日 &#x200B;] と  チェックイン日 [!UICONTROL &#x200B; の両方で「最終結果を返す &#x200B;] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
+`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL  の間にある ] 範囲  の日数を計算するルールを定義します。 [!UICONTROL  日 ] を [!UICONTROL  出力精度 ] として選択します。 また、[!UICONTROL  予約日 ] と  チェックイン日 [!UICONTROL  の両方で「最終結果を返す ] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
 
 ![ 日付計算ルールのスクリーンショット ](assets/datemath-1.png)
 
@@ -963,11 +963,11 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#datemath-uc2-derivedfield}
 
-新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL &#x200B; ローカル時間 &#x200B;] の間の日数を、[!UICONTROL Person] の [!UICONTROL &#x200B; 重複排除範囲 &#x200B;] で計算するルールを定義できます。 [!UICONTROL &#x200B; 最後を返す &#x200B;] を選択して、[!UICONTROL &#x200B; 現地時間 &#x200B;] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL &#x200B; 出力の精度 &#x200B;] として選択します。
+新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL  ローカル時間 ] の間の日数を、[!UICONTROL Person] の [!UICONTROL  重複排除範囲 ] で計算するルールを定義できます。 [!UICONTROL  最後を返す ] を選択して、[!UICONTROL  現地時間 ] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL  出力の精度 ] として選択します。
 
 ![ 日付計算ルール 2 のスクリーンショット ](assets/datemath-2.png)
 
-または、便利な「ダイナミック日付範囲の値を今すぐ」を使用して、今から [!UICONTROL &#x200B; ローカル時間 &#x200B;] までの時間（イベントデータセットの [!UICONTROL placeContext] フィールドグループから）を計算することもできます
+または、便利な「ダイナミック日付範囲の値を今すぐ」を使用して、今から [!UICONTROL  ローカル時間 ] までの時間（イベントデータセットの [!UICONTROL placeContext] フィールドグループから）を計算することもできます
 
 ![ 日付計算ルール 2a のスクリーンショット ](assets/datemath-2a.png)
 
@@ -976,15 +976,15 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 セッション内の顧客が注文を行うまでの検索時間（分単位）を把握する場合。
 
-2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL &#x200B; 関数の結果である新しい &#x200B;] 派生フィールドを定義して ](#case-when) [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] の値を定義します。
-次に、これら 2 つの値を使用して、[!UICONTROL &#x200B; 範囲 &#x200B;] を [!UICONTROL &#x200B; セッション &#x200B;] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] に設定した値、および [!UICONTROL &#x200B; 出力精度 &#x200B;] を [!UICONTROL &#x200B; 分 &#x200B;] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL &#x200B; 最初のを返す &#x200B;]」を選択して、最初の [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] が返されるようにします。
+2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL  関数の結果である新しい ] 派生フィールドを定義して ](#case-when)[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] の値を定義します。
+次に、これら 2 つの値を使用して、[!UICONTROL  範囲 ] を [!UICONTROL  セッション ] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] に設定した値、および [!UICONTROL  出力精度 ] を [!UICONTROL  分 ] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL  最初のを返す ]」を選択して、最初の [!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] が返されるようにします。
 
 ![ 日付計算ルール 3 のスクリーンショット ](assets/datemath-3.png)
 
 
 ## 詳細情報 {#datemath-more-info}
 
-[!UICONTROL &#x200B; 最初を返す &#x200B;] または [!UICONTROL &#x200B; 最後を返す &#x200B;] オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した場合は使用できません。 ユーザーベースのフィールドは、1 人のユーザーの日付または日時フィールドに対して 1 つの値のみを持つことができます。
+[!UICONTROL  最初を返す ] または [!UICONTROL  最後を返す ] オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した場合は使用できません。 ユーザーベースのフィールドは、1 人のユーザーの日付または日時フィールドに対して 1 つの値のみを持つことができます。
 +++
 
 <!-- DEDUPLICATE -->
@@ -1107,7 +1107,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#depth-uc1-derivedfield}
 
-新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL &#x200B; 内部検索語句 &#x200B;] の深さを取得し、新しい派生フィールドに保存するルールを定義します。
+新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL  内部検索語句 ] の深さを取得し、新しい派生フィールドに保存するルールを定義します。
 
 ![ 深度ルールのスクリーンショット ](assets/depth-1.png)
 
@@ -1961,7 +1961,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>数値</li><li>日付</li><li>Date-time</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>整数<ul><li>文字列へ</li></ul></li><li>Double<ul><li>文字列へ<ul><li>継承する小数点以下の桁数を含める（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列へ</li></ul></li><li>Long<ul><li>文字列へ</li></ul></li><li>日付<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li>日付（2025 年 1 月 7 日の例）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025/1/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD、YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>Date-time<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（2025 年 1 月 7 日 1:30pm52 秒の例）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025 年 1 月 7 日 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値でない値がある場合、null が返されます。</li><li>精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>数値</li><li>日付</li><li>Date-time</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>整数<ul><li>文字列へ</li></ul></li><li>Double<ul><li>文字列へ<ul><li>継承する小数点以下の桁数を含める（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列へ</li></ul></li><li>Long<ul><li>文字列へ</li></ul></li><li>日付<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li>日付（2025 年 1 月 7 日の例）<ul><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025/1/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY MM DD<ul><li data-stringify-indent="2" data-stringify-border="0">例えば、2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>Date-time<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（2025 年 1 月 7 日 1:30pm52 秒の例）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例えば、2025 年 1 月 7 日 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値でない値がある場合、null が返されます。</li><li>精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1973,7 +1973,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。[!UICONTROL &#x200B; 画面の高さ &#x200B;] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
+`Screen Height` の派生フィールドを定義します。[!UICONTROL  画面の高さ ] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
 
 ![ タイプキャストルール 1 のスクリーンショット ](assets/typecast-1.png)
 
@@ -2139,7 +2139,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
->- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
->- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

@@ -1,5 +1,5 @@
 ---
-description: インテリジェントキャプションを使用して自然言語のインサイトを生成し、ビジュアライゼーション内のトレンドを表示する方法を説明します。
+description: インテリジェントキャプションを使用して自然言語のインサイトを生成し、ビジュアライゼーション内にトレンドを表示する方法について説明します。
 title: インテリジェントキャプション
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3443139/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [インテリジェントキャプション](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
