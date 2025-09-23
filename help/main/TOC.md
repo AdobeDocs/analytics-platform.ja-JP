@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
-workflow-type: ht
-source-wordcount: '1280'
-ht-degree: 100%
+source-git-commit: 06c5a73e5c0c900782bb284ffef9f88c387ba9cc
+workflow-type: tm+mt
+source-wordcount: '1299'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 100%
    + [Adobe Analytics ユーザー向けユーザーガイド](../getting-started/aa-to-cja-user.md)
 
 + データ取り込み {#cja-data-ingestion}
-   + [データ取り込みの概要](../data-ingestion/data-ingestion.md)
+   + [概要](../data-ingestion/data-ingestion.md)
    + 取り込みと使用のクイックスタートガイド{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
@@ -120,6 +120,15 @@ ht-degree: 100%
       + [バッチデータ](../data-ingestion/batch.md)
       + [ストリーミングデータ](../data-ingestion/streaming.md)
       + [ソースコネクタ](../data-ingestion/sources.md)
+      + [アドホックデータ](/help/data-ingestion/adhoc.md)
+
++ データミラー {#cja-data-mirror}
+   + [概要](/help/data-mirror/data-mirror.md)
+   + 設定 {#configure}
+      + [データウェアハウスネイティブなソリューション](/help/data-mirror/datawarehouse.md)
+      + [Experience Platform](/help/data-mirror/aep.md)
+      + [Customer Journey Analytics](/help/data-mirror/cja.md)
+   + [Data Mirror クイックスタートガイド](/help/data-mirror/model-based.md)
 
 + 接続 {#cja-connections}
    + [接続の概要](../connections/overview.md)
