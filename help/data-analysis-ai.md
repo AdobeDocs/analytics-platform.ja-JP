@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
+source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 98%
+source-wordcount: '2463'
+ht-degree: 94%
 
 ---
 
@@ -52,9 +52,9 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights エージェントを使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights エージェントの使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -149,7 +149,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -162,6 +162,14 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 **応答：** Data Insights エージェントは、最も適切なビジュアライゼーション（この場合は&#x200B;**[!UICONTROL ドーナツ]**&#x200B;ビジュアライゼーション）を選択して、質問に回答します。
 
 ![ドーナツ](/help/assets/ai-asst-result3.png)
+
+## Experience Cloud アプリケーションをまたいだData Insights Agentへのアクセス
+
+Adobe Experience Platform Agent Orchestratorを使用すると、Adobe Journey OptimizerやReal-Time CDPなど、複数のAdobe Experience Cloud アプリケーションでData Insights Agentの機能にアクセスできます。
+
+Agent Orchestratorはリクエストを解釈し、必要な専門エージェントを判断し、適切な対応を提供するように調整します。 マルチターンインタラクションのコンテキストを追跡するので、以前のクエリに自然に基づいて構築できます。
+
+詳しくは、[Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home) を参照してください。
 
 ## データビジュアライゼーションのプロンプトの例
 
@@ -251,7 +259,7 @@ Data Insights エージェントが正しいコンポーネントを見つけて
 >[!MORELIKETHIS]
 >
 >[コンポーネント設定](/help/data-views/component-settings/overview.md)
->&#x200B;>[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[計算指標の承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[セグメントの共有](/help/components/segments/seg-share.md)
+>>[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[計算指標の承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[セグメントの共有](/help/components/segments/seg-share.md)
 >
