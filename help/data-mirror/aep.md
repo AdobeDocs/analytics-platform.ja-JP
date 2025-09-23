@@ -7,7 +7,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
-source-git-commit: ebd6695cd5242c5443ccfbc5a38f337454f6de33
+exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 3%
@@ -15,6 +16,8 @@ ht-degree: 3%
 ---
 
 # Experience Platformの設定
+
+{{release-limited-testing}}
 
 Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用するには、次のいくつかのExperience Platform コンポーネントを適切に設定する必要があります。
 
@@ -52,9 +55,9 @@ Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用す�
 
 サポートされている Data Warehouse ネイティブソリューションに対する認証については、関連するExperience Platform ドキュメントを参照してください。
 
-* [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### データを選択
@@ -89,5 +92,5 @@ Data Warehouse ネイティブソリューションのテーブルのデータ�
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](data-mirror.md)
+>[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
 >

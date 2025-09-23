@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 2%
 
 ---
 
-
 # Customer Journey Analyticsの設定
+
+{{release-limited-testing}}
 
 Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用するには、接続、データビュー、ワークスペースプロジェクトを作成または更新して、モデルベースのデータを使用できるようにする必要があります。
 
@@ -37,5 +39,5 @@ Data Warehouse ネイティブソリューションのミラーデータを含�
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](data-mirror.md)
+>[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
 >

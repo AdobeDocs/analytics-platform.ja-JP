@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
+source-git-commit: 1af81040d144ab1717b9453756d0d5b92d489d56
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1933'
 ht-degree: 10%
 
 ---
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
+Experience Platform[Real-time Customer Data Platform ガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) も参照してください。
 
 
 ## データセットの自動有効期限
@@ -139,7 +139,7 @@ Experience Platform[Real-time Customer Data Platform ガードレール ](https:
 
 {style="table-layout:auto"}
 
-Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) も参照してください。
+Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) も参照してください。
 
 
 ## 宛先データの書き出し
@@ -151,7 +151,7 @@ Experience Platform[ データ取り込みのガードレール ](https://experi
 
 {style="table-layout:auto"}
 
-Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
+Experience Platform[ データセット書き出しガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) も参照してください。
 
 
 ## データランディングゾーン
@@ -258,7 +258,7 @@ Experience Platform[ データセット書き出しガードレール ](https://
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja) を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、お客様の構成、データ量、および消費者アプリケーションによって異なります。 多くの場合、実際の処理時間は短縮されます。 具体的な契約条件と SLA については、Customer Journey Analytics契約を参照してください。 詳しくは、Experience Platform[ データ取り込みのガードレール ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|
@@ -272,5 +272,12 @@ Experience Platform[ データセット書き出しガードレール ](https://
 | Adobe Analytics Source コネクタのバックフィルが 100 億未満のイベント（最大 13 か月分の履歴データ） | &lt; 4 週間 |
 | ストリーミングセグメントの自動作成やセグメントでのデータの受信準備など、リアルタイム顧客プロファイルへのオーディエンスの公開。 | ≈ 60 分 |
 | オーディエンスの更新頻度 | 1 回限りの更新：5 分未満の待ち時間。<br/>4 時間ごと、日次、週次、月次の更新（待ち時間は更新率と密接に関連しています）。 |
+
+| リアルタイムレポートの待ち時間 | 予想遅延時間 |
+|---|---|
+| Edge NetworkへのEdge Network SDK/API | &lt; 7 分 |
+| ストリーミングコネクタ | &lt; 17 分 |
+| Adobe Analytics ソースコネクタ | &lt; 17 分 |
+| その他のソースコネクタ（バッチデータを含む） | &lt; 25 時間 |
 
 {style="table-layout:auto"}

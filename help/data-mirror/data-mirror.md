@@ -7,9 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Data Mirrorに関するExperience Platformのドキュメントも参照して�
 
 >[!NOTE]
 >
->Customer Journey AnalyticsのExperience Platform Data Mirror機能は、2026 年 3 月 25 日まで **パブリックベータ版** で利用できます。 ベータ版の期間中、チェンジ・データ・キャプチャ（CDC）のアップデートは、組織の月次データ行の 0.5% に制限されます。 毎月のデータ行は、データ行の年間の使用権限を 12 で割った値に基づいています。 Adobeは、お客様の組織がこの制限を超えた場合に、Experience Platform Data Mirror for Customer Journey Analytics機能へのベータ版のアクセスを終了する権利を留保します。
+>Customer Journey AnalyticsのExperience Platform Data Mirror機能は、2026 年 3 月 25 日まで **パブリックベータ版** で利用できます。 ベータ版の期間中、CDC （Change Data Capture）のアップデートは、Customer Journey Analyticsが使用できる 1 日あたり 1,000 万行の変更行の制限を受けます。 Adobeは、お客様の組織がこの制限を超えた場合に、Experience Platform Data Mirror機能へのベータ版のアクセスを終了する権利を留保します。 請求の影響を含む、機能の詳細については、Experience League ドキュメントのこの節を参照してください。
 >
 
 Experience Platform Data Mirror for Customer Journey Analytics機能は、選択した Data Warehouse ネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery]、[!DNL Snowflake]）で使用できます。 Customer Journey Analytics バージョンのData Mirror機能を使用するには、次のいくつかのコンポーネントを適切にセットアップし設定する必要があります。
@@ -56,5 +57,5 @@ Experience Platform Data Mirror for Customer Journey Analytics機能は、選択
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](data-mirror.md)
+>[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
 >

@@ -7,7 +7,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -15,6 +16,8 @@ ht-degree: 0%
 ---
 
 # Data Warehouse ネイティブソリューションの設定
+
+{{release-limited-testing}}
 
 Customer Journey AnalyticsのExperience Platform Data Mirrorをサポートするには、3 つのサポートされている Data Warehouse ネイティブソリューション（[[!DNL Azure Databricks]](#azure-databricks)、[[!DNL Google BigQuery]](#google-bigquery)、[[!DNL Snowflake]](#snowflake)）の使用するデータで change data capture を有効化する必要があります。
 
@@ -53,8 +56,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 [!DNL Azure Databricks] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続  [!DNL Azure Databricks]  作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Azure Databricks]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Google BigQuery]
 
@@ -64,8 +67,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 [!DNL Google BigQuery] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続  [!DNL Google BigQuery]  作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Google BigQuery]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Snowflake]
 
@@ -81,11 +84,11 @@ ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 
 [!DNL Snowflake] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続  [!DNL Snowflake]  作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Snowflake]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](data-mirror.md)
+>[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
 >
