@@ -153,7 +153,7 @@ Customer Journey AnalyticsでAdobe Experience Platform データセットを使�
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **CSV からのデータセットを作成** ワークフローを使用 **[!UICONTROL ない]** でください。 アドホックスキーマを生成するワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。 <br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討する必要があります。
+>時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **CSV からのデータセットを作成** ワークフローを使用 **[!UICONTROL ない]** でください。 アドホックスキーマを生成するワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。 <br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討する必要があります。
 
 
 [ 接続 ](/help/connections/overview.md) を作成したら、[ データセットの選択と組み合わせ ](/help/connections/combined-dataset.md)、[ 接続のデータセットのステータスとデータ取り込みのステータスの確認 ](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。
