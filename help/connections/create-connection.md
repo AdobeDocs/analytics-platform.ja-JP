@@ -439,7 +439,7 @@ ht-degree: 61%
 
 | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
 |---|---|---|---|---|
-| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [ アドホックスキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
+| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [ アドホックスキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
 | **[!UICONTROL モデル]** | モデルベースのスキーマに基づくモデルベースのデータ。 | モデルベースのデータセット用に選択するデータセットタイプによって異なります。 | 任意のモデルベースのスキーマ。 | モデルベースのデータセット用に選択するデータセットタイプによって異なります。 |
 
 
@@ -778,5 +778,5 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 >[!MORELIKETHIS]
 >
 >* [ データ取り込みの概要 ](/help/data-ingestion/data-ingestion.md)
->* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=ja)
 
