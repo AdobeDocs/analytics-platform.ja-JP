@@ -4,11 +4,9 @@ description: Customer Journey Analytics用Experience Platform Data MirrorのCust
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="ベータ版"
 exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 2%

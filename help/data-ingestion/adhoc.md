@@ -4,10 +4,8 @@ description: Customer Journey Analyticsでアドホックを取得して使用�
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 23%
@@ -78,7 +76,7 @@ ht-degree: 23%
 
       1. 「**[!UICONTROL 完了]**」を選択します。
 
-データが正常に準備されてアップロードされると、Experience Platform インターフェイスの **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]**&#x200B;**[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
+データが正常に準備されてアップロードされると、Experience Platform インターフェイスの **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]****[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
 
 ![ アドホックデータのデータセットアクティビティ ](assets/datasets-dataset-activity.png)
 
@@ -100,7 +98,7 @@ ht-degree: 23%
 
   >[!NOTE]
   >
-  >ワークフローでは、スキーマ内のすべてのフィールドを文字列タイプに定義します。 このタイプは後で変更できません。 アドホックスキーマの定義をより柔軟に行う必要がある場合は、[API を使用してアドホックスキーマを作成する ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) を検討してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用します。
+  >ワークフローでは、スキーマ内のすべてのフィールドを文字列タイプに定義します。 このタイプは後で変更できません。 アドホックスキーマの定義をより柔軟に行う必要がある場合は、[API を使用してアドホックスキーマを作成する ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) を検討してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用します。
   > 
 
 
@@ -130,7 +128,7 @@ Customer Journey AnalyticsでExperience Platform データセットを使用す�
 
 1. 「**[!UICONTROL データセットを追加]**」の「**[!UICONTROL データセットを選択]**」手順で、次の操作を行います。
 
-   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]**&#x200B;[!UICONTROL &#x200B; データセットタイプ &#x200B;] があります。
+   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]**[!UICONTROL  データセットタイプ ] があります。
 
       ![データセットを追加](./assets/cja-connections-adhoc-2.png)
 
@@ -157,7 +155,7 @@ Customer Journey AnalyticsでExperience Platform データセットを使用す�
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **[!UICONTROL CSV からデータセットを作成]** ワークフローを使用できません。 このワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。<br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
+>時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **[!UICONTROL CSV からデータセットを作成]** ワークフローを使用できません。 このワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。<br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
 
 
 [ 接続 ](/help/connections/overview.md) を作成したら、[ データセットの選択と組み合わせ ](/help/connections/combined-dataset.md)、[ 接続のデータセットのステータスとデータ取り込みのステータスの確認 ](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。
@@ -222,7 +220,7 @@ Analysis Workspaceは、分析をすばやく構築し、データに基づい�
 
 1. リストから [ データビュー ](#set-up-a-data-view) を選択します。
 
-1. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づく指標またはディメンションを含めます。
+1. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づく指標またはディメンションを含めます。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 

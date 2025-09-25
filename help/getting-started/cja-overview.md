@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
-workflow-type: ht
-source-wordcount: '985'
-ht-degree: 100%
+source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
@@ -18,12 +18,18 @@ Customer Journey Analytics は、Adobe Experience Platform からのデータと
 
 Customer Journey Analytics の高レベルのアーキテクチャを以下に示します。
 
-![この節で説明する Customer Journey Analytics アーキテクチャ](assets/cja-architecture.png)
+![Customer Journey Analyticsのアーキテクチャ ](assets/cja-overview.svg)
+
+このアーキテクチャでは、Custoner ジャーニー分析を使用して次の操作を行う方法を示します。
+
+* ![ 接続 ](/help/assets/icons/Data.svg) で複数のデータセット [ データ ](/help/connections/overview.md) を組み合わせます。
+* 接続で定義したデータセットから使用できるフィールドに基づいて、ディメンション ![ ディメンション ](/help/assets/icons/Dimensions.svg) および指標 ![ イベント ](/help/assets/icons/Event.svg) を [ データビュー ](/help/data-views/data-views.md) で定義および設定します。
+* データビューのディメンションと指標に基づいて、![ プロジェクト ](/help/assets/icons/ViewTable.svg) でレポート ![ViewTable](/help/assets/icons/GraphTrend.svg) とビジュアライゼーション ![ 折れ線グラフ ](/help/assets/icons/GraphAreaStacked.svg) 折れ線グラフ [ エリア ](/help/analysis-workspace/home.md) など）を作成します。
 
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics の概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis：エクスペリエンスビジネスの分析](https://video.tv.adobe.com/v/36231/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics の概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis：エクスペリエンスビジネスの分析](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -93,18 +99,18 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://video.tv.adobe.com/v/36106/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics のアーキテクチャと統合に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [アーキテクチャと統合](https://video.tv.adobe.com/v/330411/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics のアーキテクチャと統合に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [アーキテクチャと統合](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=ja)
->* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=ja)
->* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=ja)
+>* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
