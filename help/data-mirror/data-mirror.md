@@ -53,5 +53,5 @@ Customer Journey Analytics用Experience Platform Data Mirrorは、選択した d
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
->>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >
