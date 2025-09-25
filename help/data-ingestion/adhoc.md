@@ -78,7 +78,7 @@ ht-degree: 23%
 
       1. 「**[!UICONTROL 完了]**」を選択します。
 
-データが正常に準備されてアップロードされると、Experience Platform インターフェイスの **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]****[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
+データが正常に準備されてアップロードされると、Experience Platform インターフェイスの **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]**&#x200B;**[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
 
 ![ アドホックデータのデータセットアクティビティ ](assets/datasets-dataset-activity.png)
 
@@ -130,7 +130,7 @@ Customer Journey AnalyticsでExperience Platform データセットを使用す�
 
 1. 「**[!UICONTROL データセットを追加]**」の「**[!UICONTROL データセットを選択]**」手順で、次の操作を行います。
 
-   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]**[!UICONTROL  データセットタイプ ] があります。
+   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]**&#x200B;[!UICONTROL &#x200B; データセットタイプ &#x200B;] があります。
 
       ![データセットを追加](./assets/cja-connections-adhoc-2.png)
 
@@ -222,7 +222,7 @@ Analysis Workspaceは、分析をすばやく構築し、データに基づい�
 
 1. リストから [ データビュー ](#set-up-a-data-view) を選択します。
 
-1. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づく指標またはディメンションを含めます。
+1. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づく指標またはディメンションを含めます。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 
