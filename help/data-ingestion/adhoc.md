@@ -6,27 +6,25 @@ feature: Basics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 28%
+source-wordcount: '1623'
+ht-degree: 23%
 
 ---
 
-
 # アドホックデータの取り込みと使用
 
-このクイックスタートガイドでは、アドホックデータをAdobe Experience Platformに取り込んでCustomer Journey Analyticsで使用する方法について説明します。
+このクイックスタートガイドでは、アドホックデータをExperience Platformに取り込んでCustomer Journey Analyticsで使用する方法について説明します。
 
 これには、次の手順を実行する必要があります。
 
-- Experience Platformで **CSV ファイルを使用してデータセットを作成** し、収集するデータのモデル（スキーマ）と、データ（データセット）を収集する場所を定義します。
+- Experience Platformで **CSV ファイルを使用してデータセットを作成** します。 このワークフローは、収集するデータのモデル（スキーマ）と、データ（データセット）を収集する場所を定義します。
 
-- Experience Platformで **ソースコネクタを使用** して、設定したデータセットにデータを取り込みます。
+- Customer Journey Analytics で、**接続を設定**&#x200B;します。この接続には、（少なくとも）Experience Platform アドホックデータセットを含める必要があります。
 
-- Customer Journey Analytics で、**接続を設定**&#x200B;します。この接続には、（少なくとも）Adobe Experience Platform データセットを含める必要があります。
-
-- Customer Journey Analytics で&#x200B;**データ表示を設定**&#x200B;し、Analysis Workspace で使用する指標とディメンションを定義します。
+- Customer Journey Analyticsで **データビューを設定** し、Analysis Workspaceで使用するアドホックデータのフィールドから指標とディメンションを定義します。
 
 - Customer Journey Analytics で&#x200B;**プロジェクトを設定**&#x200B;して、レポートとビジュアライゼーションを作成します。
 
@@ -34,7 +32,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->このクイックスタートガイドは、を使用してでアドホックデータをAdobe Experience Platformに取り込み、Customer Journey Analyticsで使用する方法を説明する簡単なガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドは、を使用してアドホックデータをExperience Platformに取り込み、Customer Journey Analyticsで使用する方法を説明する簡単なガイドです。 参照する際には、追加情報を調べることを強くお勧めします。
 
 
 ## CSV ファイルを使用したデータセットの作成
@@ -53,14 +51,14 @@ ht-degree: 28%
 >
 >レコードベース（ルックアップ、プロファイル）のデータには、アドホックデータセットとスキーマを使用します。 アドホックデータセットとスキーマはあまり適していないので、時系列（イベント、概要）データには考慮しないでください。
 
-アドホックデータ用の XDM スキーマを作成する必要はありません。 Adobe Experience Platformは、CSV ファイルのデータに基づいて以下を行うワークフローをサポートしています。
+アドホックデータ用の XDM スキーマを作成する必要はありません。 Experience Platformは、CSV ファイルのデータに基づいて以下を行うワークフローをサポートしています。
 
-1. CSV ファイルの列に準拠するアドホックスキーマを作成します。
-1. CSV ファイルのデータを含むアドホックスキーマに基づいてデータセットを作成します。
+1. アドホックスキーマを自動的に作成します。 このスキーマは、CSV ファイルの列に準拠しています。
+1. CSV ファイルからのデータを含むデータセットを作成します。
 
 ワークフローを開始するには：
 
-1. Adobe Experience Platform UI の左パネルの「**[!UICONTROL ワークフロー]**」をクリックします。
+1. Experience Platform インターフェイスの左パネルで「**[!UICONTROL ワークフロー]**」を選択します。
 1. ![DataAdd](/help/assets/icons/DataAdd.svg)**[!UICONTROL CSV ファイルからデータセットを作成]** を選択します。
 1. 右側のパネルから **[!UICONTROL ローンチ]** を選択します。
 1. **[!UICONTROL ワークフロー]**/**[!UICONTROL CSV ファイルからデータセットを作成]** ウィザードで、次の操作を行います。
@@ -80,15 +78,15 @@ ht-degree: 28%
 
       1. 「**[!UICONTROL 完了]**」を選択します。
 
-データが準備され、アップロードされます。 データが正常にアップロードされると、Adobe Experience Platform UI の **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]**&#x200B;**[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
+データが正常に準備されてアップロードされると、Experience Platform インターフェイスの **[!UICONTROL データセット]** にリダイレクトされます。<br/> ステータスが **[!UICONTROL StatusOrange]****[!UICONTROL Processing]** の ![CSV からのサンプルデータ ](/help/assets/icons/StatusOrange.svg) データセットの **[!UICONTROL データセットアクティビティ]** が表示されます。
 
 ![ アドホックデータのデータセットアクティビティ ](assets/datasets-dataset-activity.png)
 
 アドホックデータを検査するには：
 
-1. Adobe Experience Platform UI の左パネルの「**[!UICONTROL データセット]**」をクリックします。
+1. Experience Platform インターフェイスの左パネルの「**[!UICONTROL データセット]**」を選択します。
 1. **[!UICONTROL データセット]** の「**[!UICONTROL 参照]**」タブを選択します。 データセットがリストに表示されます。
-1. **[!UICONTROL スキーマ]** 列からスキーマの名前を選択します。 例：**[!UICONTROL CSV からのサンプルデータ…]**。
+1. **[!UICONTROL スキーマ]** 列からスキーマの名前を選択します。 例：**[!UICONTROL CSV からのサンプルデータ…]**
 
    ![ アドホックデータセットのスキーマを選択 ](assets/adhoc-schema-selection.png)
 
@@ -100,13 +98,19 @@ ht-degree: 28%
 
   ![ アドホックスキーマ ](dataset/../assets/adhoc-schema.png)
 
+  >[!NOTE]
+  >
+  >ワークフローでは、スキーマ内のすべてのフィールドを文字列タイプに定義します。 このタイプは後で変更できません。 アドホックスキーマの定義をより柔軟に行う必要がある場合は、[API を使用してアドホックスキーマを作成する ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) を検討してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用します。
+  > 
+
+
 
 
 ## 接続の設定
 
-Customer Journey AnalyticsでAdobe Experience Platform データセットを使用するには、ワークフローから生成されたアドホックデータを含む接続を作成します。
+Customer Journey AnalyticsでExperience Platform データセットを使用するには、[workflow](#create-a-dataset-with-a-csv-file) で生成されたアドホックデータセットを含む接続を作成します。
 
-接続を使用すれば、Adobe Experience Platform のデータセットをワークスペースに統合できます。これらのデータセットに関するレポートを作成するには、まずAdobe Experience PlatformとWorkspaceのデータセット間で接続を確立する必要があります。
+接続を使用すれば、Experience PlatformのデータセットをWorkspaceに統合できます。 これらのデータセットに関するレポートを作成するには、まずExperience PlatformとWorkspaceのデータセット間で接続を確立する必要があります。
 
 接続を作成するには：
 
@@ -126,7 +130,7 @@ Customer Journey AnalyticsでAdobe Experience Platform データセットを使�
 
 1. 「**[!UICONTROL データセットを追加]**」の「**[!UICONTROL データセットを選択]**」手順で、次の操作を行います。
 
-   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。
+   1. 前に作成したデータセット（例：**[!UICONTROL CSV からのサンプルデータ]**、および接続に含める他のデータセット）を選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]**[!UICONTROL  データセットタイプ ] があります。
 
       ![データセットを追加](./assets/cja-connections-adhoc-2.png)
 
@@ -153,7 +157,7 @@ Customer Journey AnalyticsでAdobe Experience Platform データセットを使�
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **CSV からのデータセットを作成** ワークフローを使用 **[!UICONTROL ない]** でください。 アドホックスキーマを生成するワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。 <br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討する必要があります。
+>時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **[!UICONTROL CSV からデータセットを作成]** ワークフローを使用できません。 このワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。<br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[ スキーマからデータセットを作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
 
 
 [ 接続 ](/help/connections/overview.md) を作成したら、[ データセットの選択と組み合わせ ](/help/connections/combined-dataset.md)、[ 接続のデータセットのステータスとデータ取り込みのステータスの確認 ](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。
@@ -180,7 +184,17 @@ Customer Journey AnalyticsでAdobe Experience Platform データセットを使�
 
 1. **[!UICONTROL コンポーネント]**&#x200B;手順で、次の操作を行います。
 
-   1. **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** コンポーネントボックスに含めるアドホックスキーマフィールドや標準コンポーネントを追加します。
+   1. **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** コンポーネントボックスに含めるスキーマフィールドや標準コンポーネントを追加します。 アドホックデータを含むデータセットから関連するフィールドを必ず追加してください。 これらのフィールドにアクセスするには：
+
+      1. **[!UICONTROL イベントデータセット]** を選択します。
+      1. **[!UICONTROL アドホックおよびモデルベースのフィールド]** を選択します。
+
+         ![ データビュー – アドホックコンポーネント ](assets/cja-dataview-components-adhoc.png)
+
+      1. アドホックスキーマから **[!UICONTROL METRICS]** または **[!UICONTROL DIMENSIONS]** にフィールドをドラッグ&amp;ドロップします。
+
+
+
    1. 必要に応じて、[ 派生フィールド ](/help/data-views/derived-fields/derived-fields.md) を使用して、デフォルトの文字列タイプおよび形式から別のタイプまたは形式にアドホックフィールドを変更します。
 
    1. 「**[!UICONTROL 保存して続行]**」を選択します。
@@ -208,7 +222,7 @@ Analysis Workspaceは、分析をすばやく構築し、データに基づい�
 
 1. リストから [ データビュー ](#set-up-a-data-view) を選択します。
 
-1. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づいてこれらの指標やディメンションを含めます。
+1. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 アドホックデータに基づく指標またはディメンションを含めます。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 

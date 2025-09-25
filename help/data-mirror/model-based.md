@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2268'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 {{release-limited-testing}}
 
-このクイックスタートガイドでは、[Customer Journey Analytics用Experience Platform Data Mirror](data-mirror.md) 機能を使用して、Adobe Experience Platformの Data Warehouse ネイティブソリューションからモデルベースのデータをミラーリングする方法について説明します。 そして、そのデータをCustomer Journey Analyticsで使用します。
+このクイックスタートガイドでは、[Customer Journey Analytics用Experience Platform Data Mirror](data-mirror.md) を使用して、Adobe Experience Platformの Data Warehouse ネイティブソリューションからモデルベースのデータをミラーリングする方法について説明します。 そして、そのデータをCustomer Journey Analyticsで使用します。
 
 このユースケースを実現するには、次の操作が必要です。
 
@@ -117,12 +117,12 @@ Customer Journey AnalyticsのExperience Platform Data Mirrorの場合、デー�
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-Data Warehouse ネイティブソリューションのテーブルのデータが、Customer Journey Analytics用のExperience Platform Data Mirrorに対応できるようになりました。
+Data Warehouse ネイティブソリューションのテーブルのデータが、Customer Journey AnalyticsのExperience Platform Data Mirrorに対応しました。
 
 
 ## スキーマの設定
 
-Experience Platformでデータをミラーリングするには、まずデータのスキーマを定義する必要があります。 Experience Platformでミラーリングし、Experience Platform Data Mirror for Customer Journey Analytics機能を使用するすべてのデータは、モデルベースのスキーマに従う必要があります。
+Experience Platformでデータをミラーリングするには、まずデータのスキーマを定義する必要があります。 Experience Platformでミラーリングし、Customer Journey Analytics用にExperience Platform Data Mirrorを使用するすべてのデータは、モデルベースのスキーマに従う必要があります。
 
 このデータをモデル化するスキーマを定義します。 スキーマを設定するには：
 
@@ -141,7 +141,7 @@ Experience Platformでデータをミラーリングするには、まずデー�
    1. **[!UICONTROL 説明]** を入力します。 例：`Sample event feed schema for a model-based schema`。
    1. **[!UICONTROL スキーマの動作]** として **[!UICONTROL 時系列]** を選択します。 時系列ベースのデータには **[!UICONTROL 時系列]** を選択し、レコードベースのデータには **[!UICONTROL レコード]** を選択します。 動作は、スキーマの構造と含まれるプロパティを定義します。
 
-      Customer Journey Analytics用のExperience Platform Data Mirror機能は、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
+      Customer Journey Analytics用Experience Platform Data Mirrorは、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
 
       ![ スキーマ設定 ](assets/model-based-create-schema.png)
 
@@ -182,7 +182,7 @@ Experience Platformでデータをミラーリングするには、まずデー�
 
      ![ 人物記述子 ](assets/platform-schema-personid.png)
 
-   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]**&#x200B;**[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列モデルベースのデータの場合、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
+   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]****[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列モデルベースのデータの場合、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
 
      ![ タイムスタンプ記述子 ](assets/platform-schema-timestamp.png)
 
@@ -211,7 +211,7 @@ Experience Platform インターフェイスで以下を実行します。
 * **[!UICONTROL 既存のアカウント]** Google BigQuery のアカウント設定が既にある場合。 [ データを選択 ](#select-data) の手順に進みます。
 * Google BigQuery に接続する必要がある場合は **[!UICONTROL 新規アカウント]**。
    1. **[!UICONTROL アカウント名]** および（オプション） **[!UICONTROL 説明]** を指定します。
-   1. **[!UICONTROL 認証タイプ]**&#x200B;**[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
+   1. **[!UICONTROL 認証タイプ]****[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
    1. 「**[!UICONTROL ソースに接続]**」を選択します。
 
       ![Google BigQuery – 認証 ](assets/googlebg-authentication.png)
@@ -220,7 +220,7 @@ Experience Platform インターフェイスで以下を実行します。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
-  [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
+  [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
 
 
 ### データを選択
@@ -351,6 +351,8 @@ Customer Journey Analytics インターフェイスで以下を実行します�
       1. **[!UICONTROL イベントデータセット]** を選択します。
       1. **[!UICONTROL アドホックおよびモデルベースのフィールド]** を選択します。
       1. モデルベースのスキーマから **[!UICONTROL METRICS]** または **[!UICONTROL DIMENSIONS]** にフィールドをドラッグ&amp;ドロップします。
+
+         ![ モデルベースのフィールドをコンポーネントとして追加する ](assets/cja-add-dataset-folder-dv.png)
 
    1. 適切なタイプがない、適切な形式でない、または他の理由で変更するフィールドの派生フィールドを定義します。 例えば、**[!UICONTROL 売上高]** の場合は次のようになります。
 

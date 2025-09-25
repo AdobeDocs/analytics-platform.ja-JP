@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="ベータ版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 {{release-limited-testing}}
 
-Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用するには、次のいくつかのExperience Platform コンポーネントを適切に設定する必要があります。
+Customer Journey Analytics用のExperience Platform Data Mirrorには、次のいくつかのExperience Platform コンポーネントの適切な設定が必要です。
 
 * スキーマ
 * データセット
@@ -32,7 +32,7 @@ Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用す�
 ミラーリングするデータウェアハウスネイティブテーブルをモデル化する、モデルベースのスキーマを作成する必要があります。 モデルベースのスキーマを作成する場合、次の要件が満たされていることを確認します。
 
 * モデルベースのスキーマのタイプを要求するプロンプトが表示されたら、必ず手動オプションを選択します。
-* データのタイプに適したスキーマを選択します。 Data Mirror機能は、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
+* データのタイプに適したスキーマを選択します。 Experience Platform Data Mirrorは、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
 
 * スキーマ内のフィールドとその属性を定義します
 * モデルベースのスキーマのフィールドに必要な属性を設定します。
@@ -55,9 +55,9 @@ Customer Journey AnalyticsのExperience Platform Data Mirror機能を使用す�
 
 サポートされている Data Warehouse ネイティブソリューションに対する認証については、関連するExperience Platform ドキュメントを参照してください。
 
-* [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### データを選択
