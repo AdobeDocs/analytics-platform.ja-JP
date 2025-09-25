@@ -3,14 +3,14 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3131a16f6f80b039e026ef2a291bbfd15a42ac19
+source-git-commit: 017bf3cb720ed153476d17db92e0eeca156e6b61
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
-# 現在の Adobe Customer Journey Analytics リリースノート（2025年9月）
+# 最新のCustomer Journey Analytics リリースノート（2025 年 9 月）
 
 **最終更新日**：2025年9月23日（PT）
 
