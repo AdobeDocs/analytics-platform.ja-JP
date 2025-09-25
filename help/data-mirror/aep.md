@@ -29,7 +29,7 @@ Customer Journey Analytics用のExperience Platform Data Mirrorには、次の�
 
 ## スキーマ
 
-ミラー化するデータウェアハウスネイティブテーブルをモデル化する [ モデルベースのスキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} を作成する必要があります。 モデルベースのスキーマを作成する場合、次の要件が満たされていることを確認します。
+ミラー化するデータウェアハウスネイティブテーブルをモデル化する [ モデルベースのスキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/model-based){target="_blank"} を作成する必要があります。 モデルベースのスキーマを作成する場合、次の要件が満たされていることを確認します。
 
 * モデルベースのスキーマのタイプを要求するプロンプトが表示されたら、必ず手動オプションを選択します。
 * データのタイプに適したスキーマを選択します。 Experience Platform Data Mirrorは、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
@@ -55,9 +55,9 @@ Customer Journey Analytics用のExperience Platform Data Mirrorには、次の�
 
 サポートされている Data Warehouse ネイティブソリューションに対する認証については、関連するExperience Platform ドキュメントを参照してください。
 
-* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### データを選択
@@ -93,5 +93,5 @@ Data Warehouse ネイティブソリューションのテーブルのデータ�
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
->&#x200B;>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+>&#x200B;>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/model-based)
