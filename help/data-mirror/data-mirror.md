@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: 4b11c98d24b131eb32040943e869132c8182747f
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,13 @@ Data Mirrorには、データベース同期に必要な次の機能が用意さ
 
 Data Mirrorを使用して、ソースシステムから直接変更内容を取り込み、スキーマの整合性を適用し、分析、journey orchestration、コンプライアンスワークフローでデータを使用できるようにします。 Data Mirrorを使用すると、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスが不要になり、実装が迅速化されます。 この排除により、削除やデータハイジーン操作を正確に制御して、データガバナンスを強化できます。
 
-Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
+Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
 
 ## Customer Journey AnalyticsのData Mirror
 
 >[!NOTE]
 >
->Customer Journey AnalyticsのExperience Platform Data Mirror機能は、2026 年 3 月 25 日まで **パブリックベータ版** で利用できます。 ベータ版の期間中、CDC （Change Data Capture）のアップデートは、Customer Journey Analyticsが使用できる 1 日あたり 1,000 万行の変更行の制限を受けます。 Adobeは、お客様の組織がこの制限を超えた場合に、Experience Platform Data Mirror機能へのベータ版のアクセスを終了する権利を留保します。 この機能へのアクセスをリクエストするには、Adobe アカウントチームにお問い合わせください。
+>Customer Journey AnalyticsのExperience Platform Data Mirror機能は、2026 年 3 月 25 日まで **パブリックベータ版** で利用できます。<br/><br/> ベータ版の期間：<ul><li>CDC （Change Data Capture）のアップデートは、Customer Journey Analyticsが使用できる 1 日あたり 1,000 万行の変更行の制限されています。</li><li>お客様は、ソースコネクタを介して、1 日あたり最大 200 万行の変更行をAdobe Experience Platform Data Lake に取り込むことができます。</li></ul><br/>Adobeは、お客様の組織がこれらの制限を超えた場合、Experience Platform Data Mirror機能へのベータ版のアクセスを終了する権利を留保します。 <br/> この機能へのアクセスをリクエストするには、Adobe アカウントチームにお問い合わせください。
 >
 
 Customer Journey Analytics用Experience Platform Data Mirrorは、選択した data warehouse ネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery] および [!DNL Snowflake]）で使用できます。 Customer Journey Analytics版のExperience Platform Data Mirrorでは、次のアプリケーションまたはコンポーネントを適切に設定する必要があります。
@@ -51,5 +51,5 @@ Customer Journey Analytics用Experience Platform Data Mirrorは、選択した d
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
->&#x200B;>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
