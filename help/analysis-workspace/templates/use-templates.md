@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: f41162d1c4c44f79c59585d1311cd2e431725103
-workflow-type: ht
-source-wordcount: '20276'
+source-git-commit: cae339ebc5d2609a7a93e63e874c4e7d611f2cad
+workflow-type: tm+mt
+source-wordcount: '20424'
 ht-degree: 100%
 
 ---
@@ -591,6 +591,16 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="サイトの訪問者がどの国から訪問しているかを表示します。"
+>abstract="**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、国ディメンションを使用します。"
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="サイトの訪問者がどの国から訪問しているかを表示します。"
+>abstract="**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、国ディメンションを使用します。"
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
