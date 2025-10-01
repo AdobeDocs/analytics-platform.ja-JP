@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2046'
 ht-degree: 26%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 26%
 フロービジュアライゼーションを、データセット ID ディメンションと合わせて使用できます。
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、空のWorkspace プロジェクトを作成します。
-2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL **&#x200B; フロー &#x200B;**]** ビジュアライゼーションを右側のキャンバスにドラッグします。
-3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL **&#x200B; Dimensionまたは Item &#x200B;**]** というラベルが付いた場所にドラッグします。
+2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL ** フロー **]** ビジュアライゼーションを右側のキャンバスにドラッグします。
+3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL ** Dimensionまたは Item **]** というラベルが付いた場所にドラッグします。
 4. このフローレポートはインタラクティブです。後続または前のページにフローを展開するには、いずれかの値を選択します。 右クリックメニューを使用して、列を展開または折りたたむことができます。同じフローレポート内で異なるディメンションを使用することもできます。
 
 データセット ID ディメンションの項目の名前を変更する場合は、検索データセットを使用できます。
@@ -217,7 +217,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 +++ Customer Journey Analyticsで「ID マップ」フィールドを使用できますか？
 
-いいえ。Customer Journey Analyticsでは現在、ステッチに ID マップフィールドを使用できません。
+はい。Customer Journey Analyticsでは、[ フィールドベース ](/help/stitching/fbs.md#identitymap) と [ グラフベース ](/help/stitching/gbs.md#identitymap) の両方のステッチに ID マップフィールドを使用できます。
 
 +++
 
@@ -229,7 +229,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 1. 新しいグラフベースのステッチされたデータセットを設定します。
 1. Customer Journey Analyticsの新しい接続の一部として新しいデータセットを設定します。
-1. 新しい接続（および新しいグラフベースのステッチされたデータセット）を使用するように、既存のデータビューを切り替えます
+1. 既存のデータビューを切り替えて、新しい接続（および新しいグラフベースの静的なデータセット）を使用します。
 1. フィールドベースのステッチされたデータセットを使用していた古い接続を削除します。
 
 +++
@@ -273,6 +273,6 @@ curl -X POST \
 
 リクエストで `unifiedProfile` タグを使用すると、リアルタイム顧客データプロファイルのライセンスを取得していなくても、エラーが返されます。
 
-詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) を参照してください。
+詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) を参照してください。
 
 +++ 
