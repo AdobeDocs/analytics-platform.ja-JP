@@ -140,7 +140,7 @@ ht-degree: 95%
    次のアクションを実行できます。
 
    * 特定のデータビューを検索するには、![検索](/help/assets/icons/Search.svg) フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![&#x200B; フィルターを表示 &#x200B;](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![&#x200B; 非表示 &#x200B;](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
    * テーブルに表示する列を定義するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」を選択します。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
 1. ![SelectBox](/help/assets/icons/SelectBox.svg) で、使用するデータビューを選択します。

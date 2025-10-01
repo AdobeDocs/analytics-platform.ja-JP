@@ -16,7 +16,7 @@ ht-degree: 85%
 
 この記事では、Content Analyticsの設定方法を大まかに説明します。
 
-Content Analyticsを設定する前に、[ 前提条件 ](#prerequisites) が満たされ、必要な [ アクセス制御 ](#access-control) が得られ、[ 制限事項 ](#limitations) を認識している必要があります。
+Content Analyticsを設定する前に、[&#x200B; 前提条件 &#x200B;](#prerequisites) が満たされ、必要な [&#x200B; アクセス制御 &#x200B;](#access-control) が得られ、[&#x200B; 制限事項 &#x200B;](#limitations) を認識している必要があります。
 
 
 手順の概要
@@ -71,7 +71,7 @@ Content Analyticsを設定する前に、[ 前提条件 ](#prerequisites) が満
 Content Analytics イベントデータに使用されるスキーマは、システムが所有します。 システム所有のスキーマは変更できません。これは、次のことを意味します。
 
 * ジオロケーション、ボット検出、デバイス検索などの機能をサポートするフィールドグループを含めることはできません。
-* [ フィールドベースのステッチ ](/help/stitching/fbs.md) をサポートする特定の識別子を追加することはできません。
+* [&#x200B; フィールドベースのステッチ &#x200B;](/help/stitching/fbs.md) をサポートする特定の識別子を追加することはできません。
 
 >[!MORELIKETHIS]
 >

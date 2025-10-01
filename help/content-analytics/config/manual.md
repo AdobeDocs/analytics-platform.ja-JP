@@ -53,7 +53,7 @@ ht-degree: 67%
 
   エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [ イベントのセグメント化 ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [&#x200B; イベントのセグメント化 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 
@@ -65,7 +65,7 @@ Adobe コンテンツ分析拡張機能に変更を行った後、[公開フロ�
 >[!MORELIKETHIS]
 >
 >[ガイド付き設定](guided.md)
->>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -97,15 +97,15 @@ Content Analyticsは、次のように ID を処理します。
 * スキーマがシステム所有なので、フィールドベースのステッチはサポートされていません。 したがって、フィールドベースのステッチをサポートする別のフィールドをスキーマに追加することはできません
 
 
-Content Analyticsの ID データとAdobe Experience Platform Web SDKのデータ ID データがフィールドレベルで正しく結び付けられるようにするには、（イベント送信の前に [Web SDKに変更を加える必要があり ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} す。
+Content Analyticsの ID データとAdobe Experience Platform Web SDKのデータ ID データがフィールドレベルで正しく結び付けられるようにするには、（イベント送信の前に [Web SDKに変更を加える必要があり &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} す。
 
 1. Adobe Experience Platform Web SDK拡張機能とAdobe Content Analytics拡張機能を含む **[!UICONTROL タグ]** プロパティに移動します。
-1. ![ プラグ ](/help/assets/icons/Plug.svg)**[!UICONTROL 拡張機能]** を選択します。
+1. ![&#x200B; プラグ &#x200B;](/help/assets/icons/Plug.svg)**[!UICONTROL 拡張機能]** を選択します。
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します。
 1. **[!UICONTROL 設定]** を選択します。
 1. 「**[!UICONTROL SDK インスタンス]**」セクションで、「**[!UICONTROL データ収集]** - **[!UICONTROL イベント送信前に実行]** までスクロールします。
 
-   ![ イベント送信コールバックの前にオン ](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+   ![&#x200B; イベント送信コールバックの前にオン &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallback.png)
 
 1. 「**[!UICONTROL &lt;/> イベント送信前に提供コールバックコード]**」を選択します。
 1. 次のコードを追加します。
@@ -119,11 +119,11 @@ Content Analyticsの ID データとAdobe Experience Platform Web SDKのデー�
    }
    ```
 
-   ![ イベント送信コールバックの前にオン ](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+   ![&#x200B; イベント送信コールバックの前にオン &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
 
 1. 「**[!UICONTROL 保存]**」を選択して、コードを保存します。
 1. 「**[!UICONTROL 保存]**」を選択して、拡張機能を保存します。
-1. タグプロパティの更新内容を [ 公開 ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview) します。
+1. タグプロパティの更新内容を [&#x200B; 公開 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview) します。
 
 
 
