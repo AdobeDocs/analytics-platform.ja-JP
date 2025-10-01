@@ -140,7 +140,7 @@ ht-degree: 95%
    次のアクションを実行できます。
 
    * 特定のデータビューを検索するには、![検索](/help/assets/icons/Search.svg) フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![&#x200B; フィルターを表示 &#x200B;](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![&#x200B; 非表示 &#x200B;](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![ フィルターを表示 ](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![ 非表示 ](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
    * テーブルに表示する列を定義するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」を選択します。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
 1. ![SelectBox](/help/assets/icons/SelectBox.svg) で、使用するデータビューを選択します。
@@ -162,7 +162,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="コンテンツ分析でエクスペリエンスを収集"
+>abstract="Content Analytics でエクスペリエンスを収集"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
@@ -231,7 +231,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
    * コンテンツ分析イベントデータからエクスペリエンス属性を生成するプロセス
    * Customer Journey Analytics のレポートテンプレート。
 
-* コンテンツ分析でのエクスペリエンスのデータ収集の設定をさらに編集するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の設定に関連付けられたタグプロパティの [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
+* コンテンツ分析でのエクスペリエンスのデータ収集の設定をさらに編集するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の設定に関連付けられたタグプロパティの [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
 
 
 ### データ収集 {#onboarding-data-collection}
@@ -328,9 +328,9 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 ただし、含めるまたは除外するページとアセットを編集することはできます。
 
-* コンテンツ分析用のデータを収集する際に含めるページまたは除外するページを編集するには、**[!UICONTROL エクスペリエンス]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、ページを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
+* コンテンツ分析用のデータを収集する際に含めるページまたは除外するページを編集するには、**[!UICONTROL エクスペリエンス]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、ページを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
 
-* コンテンツ分析用のデータを収集する際に含めるアセットまたは除外するアセットを編集するには、**[!UICONTROL アセット]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、アセットを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
+* コンテンツ分析用のデータを収集する際に含めるアセットまたは除外するアセットを編集するには、**[!UICONTROL アセット]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在のコンテンツ分析設定のタグプロパティに関連付けられた [Adobe コンテンツ分析拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、アセットを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
 
 ### 概要 {#summary}
 
