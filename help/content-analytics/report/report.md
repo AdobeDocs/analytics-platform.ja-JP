@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
-workflow-type: ht
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Content Analytics についてのレポートをゼロから開始するには�
 1. Workspace で[新しいプロジェクトを作成](/help/analysis-workspace/build-workspace-project/create-projects.md)するか、[既存のプロジェクトを開き](/help/analysis-workspace/build-workspace-project/open-projects.md)ます。
 1. Content Analytics レポート用に[データビューを選択](/help/analysis-workspace/c-panels/panels.md#data-view)します。Content Analytics レポートは、Content Analytics で[設定](/help/content-analytics/config/configuration.md)されたデータビューでのみ使用できます。
 1. ![テーブル](/help/assets/icons/Table.svg)[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーションをキャンバスにドラッグします。
-1. [特定の Content Analytics コンポーネント](components.md)およびその他の汎用[コンポーネント](/help/components/overview.md)（セグメント、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
+1. [ 特定のContent Analytics コンポーネント ](components.md) およびその他の汎用 [ コンポーネント ](/help/components/overview.md) （セグメント、日付範囲、注釈など）を使用して、Content Analytics インサイトを構築します。
 
 ## サムネイル
 
@@ -57,7 +57,7 @@ Content Analytics ディメンションの行にサムネイルが表示され�
 
 ## テンプレート
 
-Content Analytics [テンプレート](/help/analysis-workspace/templates/use-templates.md)を使用すると、最もパフォーマンスの高いコンテンツやコンテンツ属性を把握できます。テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。個々のアセットや特定の属性のパフォーマンスを確認できます。
+Content Analytics[ テンプレート ](/help/analysis-workspace/templates/use-templates.md) を使用すると、最もパフォーマンスの高いコンテンツやコンテンツ属性を把握できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。個々のアセットや特定の属性のパフォーマンスを確認できます。
 
 学習内容に基づいて、様々な操作を行うことができます。ホームページで高パフォーマンスのアセットを昇格させるのと同様に、特定のセグメント用にコンテンツをパーソナライズして高パフォーマンスの属性を含めたり、古くなり始めたコンテンツを交代させたりします。
 
@@ -65,7 +65,7 @@ Content Analytics [テンプレート](/help/analysis-workspace/templates/use-te
 
 1. メインメニューから「**[!UICONTROL Workspace]**」を選択します。
 1. Content Analytics 用に設定されているデータビューが選択されていることを確認します。
-1. セグメント（**[!UICONTROL チャネル]**&#x200B;の場合は **[!UICONTROL Web]**、**[!UICONTROL ユースケース]** の場合は&#x200B;**[!UICONTROL エンゲージメント]**）を検索または使用して、**[!UICONTROL コンテンツ分析]**&#x200B;テンプレートを検索して選択します。
+1. ** **[!UICONTROL チャネル]** の場合はセグメント（**[!UICONTROL Web]**、****[!UICONTROL ユースケース]** の場合はエンゲージメント [!UICONTROL  を検索または使用して、{8]Content Analytics **[!UICONTROL テンプレートを検索および選択します。]**
 1. 「**[!UICONTROL テンプレートを使用]**」を選択します。
 1. **[!UICONTROL テンプレートを設定]**&#x200B;ダイアログで、**[!UICONTROL コンバージョン指標を選択]**&#x200B;ダイアログから指標を選択します。例えば、**[!UICONTROL アセット CTR]** を選択します。
 1. 「**[!UICONTROL 続行]**」を選択します。
