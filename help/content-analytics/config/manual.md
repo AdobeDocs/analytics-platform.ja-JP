@@ -53,7 +53,7 @@ ht-degree: 67%
 
   エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [&#x200B; イベントのセグメント化 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [&#x200B; イベントのセグメント化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
 
@@ -97,7 +97,7 @@ Content Analyticsは、次のように ID を処理します。
 * スキーマがシステム所有なので、フィールドベースのステッチはサポートされていません。 したがって、フィールドベースのステッチをサポートする別のフィールドをスキーマに追加することはできません
 
 
-Content Analyticsの ID データとAdobe Experience Platform Web SDKのデータ ID データがフィールドレベルで正しく結び付けられるようにするには、（イベント送信の前に [Web SDKに変更を加える必要があり &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} す。
+Content Analyticsの ID データとAdobe Experience Platform Web SDKのデータ ID データがフィールドレベルで正しく結び付けられるようにするには、（イベント送信の前に [Web SDKに変更を加える必要があり &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} す。
 
 1. Adobe Experience Platform Web SDK拡張機能とAdobe Content Analytics拡張機能を含む **[!UICONTROL タグ]** プロパティに移動します。
 1. ![&#x200B; プラグ &#x200B;](/help/assets/icons/Plug.svg)**[!UICONTROL 拡張機能]** を選択します。
