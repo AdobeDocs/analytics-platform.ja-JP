@@ -5,14 +5,32 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 20%
+source-wordcount: '2030'
+ht-degree: 19%
 
 ---
 
-# クラウドの書き出し場所の設定
+# クラウドの書き出し場所の設定 {#configure-cloud-export-locations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="接頭辞"
+>abstract="データを格納するコンテナ内のルートフォルダー。 静的フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="ファイル名とパス"
+>abstract="この場所に送信される自動書き出しに使用する動的カスタムファイル名を指定します。 ファイル名の前に動的なカスタムファイルパスを付けることもできます。 &lt;br\> 変数を動的にするには、ファイル名とパスで変数を使用します。 &lt;br\> 例えば、`${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}` を指定した場合、2026 年 1 月 15 日に自動的にこの宛先に送信される書き出しには、次のファイルパスと名前が含まれます。`[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\> 使用可能な変数のリストについては、以下のリンクをクリックしてください。"
+
+<!-- markdownlint-enable MD034 -->
 
 Customer Journey Analytics レポートをクラウドの宛先に書き出す前に（[Analysis Workspace Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) または [Report Builder レポートのReport Builderからの書き出し ](/help/report-builder/report-builder-export.md) で説明しているように） [、Customer Journey Analytics レポートを送信する場所を追加して設定する必要があります ](/help/analysis-workspace/export/export-cloud.md)
 
@@ -88,11 +106,11 @@ Customer Journey Analytics レポートをクラウドの宛先に書き出す�
 
    1. [Microsoft Azure ストレージエクスプローラー ](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) を開きます。
 
-   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name &#x200B;***に移動します。
+   1. [!UICONTROL **ストレージアカウント**]/[!UICONTROL **（添付コンテナ）**]/[!UICONTROL **BLOB コンテナ**]/**[!UICONTROL cjaexport-_number_]**/*** your_container_name ***に移動します。
 
       >[!NOTE]
       >
-      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**&#x200B;です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**&#x200B;になります。
+      >Azure ストレージエクスプローラーから提供されるデフォルトの名前はフォルダー名 **[!UICONTROL cjaexport-_number_]**です。 SAS URI に関連付けられている接続が 1 つのみ（通常）の場合、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**になります。
 
 
       ![Azure ストレージエクスプローラー内のファイルへのアクセス ](assets/azure-storage-explorer-access.png)
@@ -177,7 +195,7 @@ Customer Journey Analytics レポートをクラウドの宛先に書き出す�
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **コンテナ**] | Customer Journey Analytics データの送信先として指定したアカウント内のコンテナ。 以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
-   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID に、コンテナ（フォルダー）にアクセスするための `Storage Blob Data Contributor` の役割が付与されていることを確認します。</p> <p>詳しくは、[Azure の組み込みの役割](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles)を参照してください。</p> |
+   | [!UICONTROL **プレフィックス**] | データを配置するコンテナ内のフォルダー。フォルダー名を指定し、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID に、コンテナ（フォルダー）にアクセスするための `Storage Blob Data Contributor` の役割が付与されていることを確認します。</p> <p>詳しくは、[Azure のビルトインの役割](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles)を参照してください。</p> |
    | [!UICONTROL **アカウント**] | Azure ストレージアカウント。 |
 
    {style="table-layout:auto"}
