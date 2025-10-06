@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics ガイド
 source-git-commit: 663c7442bce8222f5163b0c8e38afb087b268ad9
 workflow-type: tm+mt
 source-wordcount: '1295'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -125,10 +125,10 @@ ht-degree: 98%
 + データミラー {#cja-data-mirror}
    + [概要](/help/data-mirror/data-mirror.md)
    + 設定 {#configure}
-      + [データウェアハウスネイティブなソリューション](/help/data-mirror/datawarehouse.md)
+      + [データウェアハウスネイティブソリューション](/help/data-mirror/datawarehouse.md)
       + [Experience Platform](/help/data-mirror/aep.md)
       + [Customer Journey Analytics](/help/data-mirror/cja.md)
-   + [Data Mirror クイックスタートガイド](/help/data-mirror/model-based.md)
+   + [データミラークイックスタートガイド](/help/data-mirror/model-based.md)
 
 + 接続 {#cja-connections}
    + [接続の概要](../connections/overview.md)

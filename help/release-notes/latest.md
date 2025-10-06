@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: 8359e9da7e4bdbd450e23dacb7eee03328412aeb
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# 最新のCustomer Journey Analytics リリースノート（2025 年 9 月）
+# 現在の Customer Journey Analytics リリースノート（2025年9月）
 
 **最終更新日**：2025年9月23日（PT）
 
@@ -24,9 +24,9 @@ ht-degree: 91%
 | **使用状況インターフェイスの更新** | [使用状況インターフェイス](/help/connections/manage-connections.md#usage)に、コアデータ量と平均行サイズに関する情報が追加されました。<p>詳しくは、[接続の管理](/help/connections/manage-connections.md#usage)を参照してください。</p> | | 2025年9月4日（PT） |
 | **プロジェクトとコンポーネントを Customer Journey Analytics に移行する際の改善点** | プロジェクトとコンポーネントを Adobe Analytics から Customer Journey Analytics に移行する際に、次の改善が利用できるようになりました。<ul><li>複数のプロジェクトを一度に移行します。<br/>一度に最大 20 個のプロジェクトを移行できます。<br/>以前は、一度に 1 個のプロジェクトのみを移行できました。</li><li>以前のプロジェクト移行で既にマッピングされているディメンションと指標のマッピングを更新します。<br/>以前の移行で同じディメンションと指標がマッピングされていた場合でも、プロジェクトを移行するたびにこれらのマッピングを更新できるようになりました。<br/>以前は、選択したマッピングは今後のすべてのプロジェクト移行に対して永続的でした。</li><li>プロジェクト数が多い組織のパフォーマンスが向上しました。</li></ul><p>この機能は、Adobe Analytics インターフェイスから使用できます。詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/component-migration/component-migration)を参照してください。</p> | 2025年9月15日（PT） | 2025年9月18日（PT） |
 | **ルックアップキーの制限が最大 10 億に増加** | ルックアップデータセットの一意のキーの最大数は、Customer Journey Analytics の使用権限に応じて、最大 10 億になりました。 <p>以前は、すべての使用権限で最大数は 1,000 万でした。<p>詳しくは、[ガードレール](/help/technotes/guardrails.md)を参照してください。</p> | | 2025年9月25日（PT） |
-| **アドホックおよびモデルベースのスキーマのサポート** | [&#x200B; アドホック &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) およびモデルベースのスキーマは、Experience Platformのデータ取得ワークフローとデータミラーワークフローで使用されます。 |  | 2025年9月23日（PT）（当初は 2025年8月28日（PT）にリリースする予定でした） |
+| **アドホックスキーマとモデルベースのスキーマのサポート** | [アドホック](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc)スキーマとモデルベースのスキーマは、Experience Platform ではデータ取り込みワークフローとデータミラーワークフローで使用されます。 |  | 2025年9月23日（PT）（当初は 2025年8月28日（PT）にリリースする予定でした） |
 | **リアルタイムレポート** | Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。<br/><br/>（ドキュメントへのリンクを添付。） | 2025年9月18日（PT）（当初は 2025年8月15日（PT）にリリースする予定でした） | 2025年10月8日（PT） |
-| **データミラーのサポート** | Experience Platformでは、特定のソースコネクタに対してモデルベースのスキーマと Change Data Capture （CDC）機能がサポートされるようになり、Customer Journey Analyticsは、[!DNL Snowflake]、[!DNL Azure Databrick]、[!DNL Google BigQuery] などの Data Warehouse ソリューションのデータミラー機能をサポートできるようになります。<p>ベータ版にアクセスするには、アドビのアカウントチームにお問い合わせください。</p><p>（ドキュメントへのリンクを添付。）</p> | Betaリリース（2025 年 9 月 24 日（PT）以降） | 未定 |
+| **データミラーのサポート** | Experience Platform の特定のソースコネクタに対するモデルベースのスキーマと変更データキャプチャ（CDC）機能のサポートにより、Customer Journey Analytics では、[!DNL Snowflake]、[!DNL Azure Databrick]s、[!DNL Google BigQuery] のデータウェアハウスソリューションのデータミラー機能をサポートできます。<p>ベータ版にアクセスするには、アドビのアカウントチームにお問い合わせください。</p><p>（ドキュメントへのリンクを添付。）</p> | 2025年9月24日（PT）以降のベータ版リリース | 未定 |
 | **ストリーミングメディア：Adobe Experience Platform へのストリーミングメディアデータ収集に XDM フィールドを更新しました** | ストリーミングメディアデータを Adobe Experience Platform に収集する際、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用できなくなりました。代わりに、2025年5月9日（PT）より前にストリーミングメディアデータを Platform に収集するように Analytics ソースコネクタを実装したお客様は、ストリーミングメディアパラメーターに関するドキュメントの「XDM フィールドパスのレポート」の見出しで示されているように、既存の設定を mediaReporting フィールドパスに移行する必要があります。<p> これらのフィールドパスは、[オーディオおよびビデオパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[広告パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[チャプターパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[プレーヤー状態パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters)および[品質パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)のページに表示されますが、「廃止」としてマークされています。（2025年5月9日（PT）以降に Analytics ソースコネクタを実装し、既に mediaReporting XDM パスのみを使用しているお客様は、アクションは必要ありません。）</p><p>廃止された XDM フィールドパスでのデータ取り込みは、2025年10月末まで継続されます。その後、廃止されたフィールドパスは完全に廃止され、Adobe Experience Platform スキーマ UI に表示されなくなります。データは mediaReporting フィールドパスを使用してのみ送信されるようになります。</p><p>詳しくは、[更新された XDM ストリーミングメディアフィールドへの Analytics ソースコネクタの実装の移行](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/xdm-updates/updated-xdm-fields)を参照してください。</p><p>移行のサポートについて詳しくは、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。 </p> |  | 2025年10月 |
 | **接続におけるステッチ** | Customer Journey Analytics のステッチが簡素化されます。データセットを複製し、その複製されたデータセットにステッチを適用する代わりに、Customer Journey Analytics にデータを取り込む際にステッチが行われるようになりました。これにより、複製されたデータセットとスキーマの必要性がなくなります。 <p>さらに、カスタマーサポートを通じてステッチをリクエストする代わりに、更新された接続 UI から自分でステッチを開始できるようになりました。</p><p> *追加の作業が必要となるので、以前お知らせしたリリース日は延期されます。新しいリリース日はホリデーシーズンと重なるので、リリース制限が追加されます。現在は、安定性を確保し、ホリデー期間中の中断を最小限に抑えるのに、段階的なロールアウトが予定されています。*</p> <p>（ドキュメントへのリンクを添付。）</p> | 2025年10月末 | 2026年1月末 |
 

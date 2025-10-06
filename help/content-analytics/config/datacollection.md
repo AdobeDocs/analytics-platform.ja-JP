@@ -8,7 +8,7 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 76%
 
 ## 機能
 
-Content Analyticsでコンテンツイベントデータを収集するには、Experience Platform Edge Network Web SDKが必要です。 このイベントデータ収集は、Experience Platform Edge Network（Web SDK、Server API）や Analytics ソースコネクタ（例えば、AppMeasurementを使用）などのメカニズムを通じて、行動イベントデータの（既存の）データ収集と組み合わされます。
+コンテンツ分析では、コンテンツイベントデータを収集するために Experience Platform Edge Network Web SDK が必要です。このイベントデータ収集は、Experience Platform Edge Network（Web SDK、Server API）や Analytics ソースコネクタ（例：AppMeasurement の使用）などのメカニズムを通じて、行動イベントデータの（既存の）データ収集と組み合わされます。
 
 コンテンツ分析ライブラリでは、次の場合にデータを収集します。
 
@@ -54,7 +54,7 @@ Content Analyticsでコンテンツイベントデータを収集するには、
 コンテンツ分析イベントは、次のシーケンスとして収集されます。
 
 1. [記録されたビューまたはクリック](#recorded-view-or-click)。
-1. [Content Analytics イベントを送信するトリガー](#trigger-to-send-a-content-analytics-event)。
+1. [コンテンツ分析イベントを送信するトリガー](#trigger-to-send-a-content-analytics-event)。
 
 コンテンツ分析では、ビューまたはクリックを個別に収集し、そのビューまたはクリックの直後のイベントを収集する代わりに、シーケンスを反映するのにこの方法でデータを収集します。この方法でContent Analyticsのデータを収集すると、収集されるデータの量も削減されます。
 
@@ -81,9 +81,9 @@ Content Analyticsでコンテンツイベントデータを収集するには、
 * エクスペリエンスが有効になっているページ上のリンクでクリックが発生する。
 
 
-### Content Analytics イベントを送信するためのトリガー
+### コンテンツ分析イベントを送信するトリガー
 
-Content Analyticsは、ページからの呼び出し数を減らすために情報を収集しますが、その情報をすぐには送信しません。 コンテンツインタラクション情報が収集され、その情報を含むイベントが、次のいずれかのトリガーが発生した場合にのみ送信されます。
+ページから離脱する呼び出しの数を減らすために、コンテンツ分析では情報を収集しますが、その情報をすぐに送信しません。コンテンツインタラクション情報が収集され、その情報を含むイベントは、次のいずれかのトリガーが発生した場合にのみ送信されます。
 
 * Web SDK または AppMeasurements がイベントを送信する。
 * 表示が非表示に変更される。例：
@@ -97,7 +97,7 @@ Content Analyticsは、ページからの呼び出し数を減らすために情
 
 >[!NOTE]
 >
->追加のContent Analytics イベントは、セッションまたはページ内のイベント数に基づくバウンス率定義に最も影響を与える可能性が高くなります。
+>追加のコンテンツ分析イベントは、セッションまたはページ内のイベント数に基づくバウンス率定義に影響を与える可能性が高くなります。
 >
 
 

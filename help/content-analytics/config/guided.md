@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 95%
    次のアクションを実行できます。
 
    * 特定のデータビューを検索するには、![検索](/help/assets/icons/Search.svg) フィールドを使用します。
-   * 使用可能なデータビューのリストをフィルタリングするには、「![&#x200B; フィルターを表示 &#x200B;](/help/assets/icons/Filter.svg)」を選択します。 [!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。セグメントペインを非表示にするには、<br/>![&#x200B; 非表示 &#x200B;](/help/assets/icons/Filter.svg)**[!UICONTROL セグメントを非表示]** を使用します。
+   * 使用可能なデータビューのリストをフィルタリングするには、「![フィルターを表示](/help/assets/icons/Filter.svg)」を選択します。[!UICONTROL 接続]、[!UICONTROL 所有者]、[!UICONTROL サンドボックス]のリストをフィルタリングできます。<br/>セグメントパネルを非表示にするには、![非表示](/help/assets/icons/Filter.svg) **[!UICONTROL セグメントを非表示]**&#x200B;を使用します。
    * テーブルに表示する列を定義するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」を選択します。**[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 
 1. ![SelectBox](/help/assets/icons/SelectBox.svg) で、使用するデータビューを選択します。
@@ -296,7 +296,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
   ![コンテンツ分析のデータ収集の既存タグ](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. 「**[!UICONTROL 既存のものを選択]**」を選択します。
-   2. **[!UICONTROL タグプロパティ]** ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して検索し、使用可能なオプションを制限できます。既に実装されている別のコンテンツ分析設定で使用されているタグプロパティは選択できません。
+   2. **[!UICONTROL タグプロパティ]**&#x200B;ドロップダウンメニューから既存のプロパティを選択します。入力を開始して検索し、使用可能なオプションを制限できます。既に実装されている別のコンテンツ分析設定で使用されているタグプロパティは選択できません。
 
 
 * 新しいタグプロパティを作成するには：
@@ -313,7 +313,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 * コンテンツ分析用のデータを収集する際に、どのアセットを含めるか除外するかを指定します。
 
-  **[!UICONTROL 含める／除外するアセット]**&#x200B;の正規表現文字列を指定します。<br/> 例：Content Analyticsからすべてのロゴ JPEG画像を除外する場合は、`^(?!.*(logo\.jpg)).*$` を指定します。
+  **[!UICONTROL 含める／除外するアセット]**&#x200B;の正規表現文字列を指定します。<br/>例：`^(?!.*(logo\.jpg)).*$`コンテンツ分析からすべてのロゴ JPEG 画像を除外する。
 
 >[!IMPORTANT]
 >
@@ -324,7 +324,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 #### 既存の設定 {#existing-configuration}
 
-既存の設定では、タグプロパティを編集できません。既存の設定に関連付けられたタグプロパティを更新するには、[Content Analytics Tag extension configuration](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview) を使用します。
+既存の設定では、タグプロパティを編集できません。既存の設定に関連付けられたタグプロパティへの更新については、[コンテンツ分析タグ拡張機能設定](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)を使用します。
 
 ただし、含めるまたは除外するページとアセットを編集することはできます。
 
