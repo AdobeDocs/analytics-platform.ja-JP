@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '640'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ ht-degree: 67%
 
   エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [&#x200B; イベントのセグメント化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [イベントのセグメント化](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  正規表現を編集して、ページやアセットのセグメント化方法を変更できます。
+  正規表現を編集して、ページとアセットをどのようにセグメント化するかを変更できます。
 
 
 Adobe コンテンツ分析拡張機能に変更を行った後、[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を使用して、行った変更に基づいてデータの収集を開始します。
@@ -65,7 +65,7 @@ Adobe コンテンツ分析拡張機能に変更を行った後、[公開フロ�
 >[!MORELIKETHIS]
 >
 >[ガイド付き設定](guided.md)
->&#x200B;>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
+>>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -90,24 +90,24 @@ window.adobe.getContentExperienceVersion = () => {
 
 ## ID
 
-Content Analyticsは、次のように ID を処理します。
+コンテンツ分析では、次のように ID を処理します。
 
-* ECID は、Content Analytics スキーマの `identityMap` 部に自動入力されます。
-* `identityMap` で他の ID 値が必要な場合は、Web SDK拡張機能内の `onBeforeEventSend` コールバックでこれらの値を設定する必要があります。
-* スキーマがシステム所有なので、フィールドベースのステッチはサポートされていません。 したがって、フィールドベースのステッチをサポートする別のフィールドをスキーマに追加することはできません
+* ECID は、コンテンツ分析スキーマの `identityMap` 部分に自動的に入力されます。
+* `identityMap` に他の ID 値が必要な場合は、Web SDK 拡張機能内の `onBeforeEventSend` コールバックでこれらの値を設定する必要があります。
+* スキーマはシステム所有なので、フィールドベースのステッチはサポートされていません。したがって、フィールドベースのステッチをサポートするために、スキーマに別のフィールドを追加することはできません。
 
 
-Content Analyticsの ID データとAdobe Experience Platform Web SDKのデータ ID データがフィールドレベルで正しく結び付けられるようにするには、（イベント送信の前に [Web SDKに変更を加える必要があり &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} す。
+コンテンツ分析 ID データと Adobe Experience Platform Web SDK データの ID データがフィールドレベルで正しくステッチされるようにするには、web SDK の[イベント送信の前にオン](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}コールバックに変更を加える必要があります。
 
-1. Adobe Experience Platform Web SDK拡張機能とAdobe Content Analytics拡張機能を含む **[!UICONTROL タグ]** プロパティに移動します。
-1. ![&#x200B; プラグ &#x200B;](/help/assets/icons/Plug.svg)**[!UICONTROL 拡張機能]** を選択します。
+1. Adobe Experience Platform Web SDK 拡張機能と Adobe コンテンツ分析拡張機能を含む&#x200B;**[!UICONTROL タグ]**&#x200B;プロパティに移動します。
+1. ![プラグ](/help/assets/icons/Plug.svg) **[!UICONTROL 拡張機能]**&#x200B;を選択します。
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します。
-1. **[!UICONTROL 設定]** を選択します。
-1. 「**[!UICONTROL SDK インスタンス]**」セクションで、「**[!UICONTROL データ収集]** - **[!UICONTROL イベント送信前に実行]** までスクロールします。
+1. 「**[!UICONTROL 設定]**」を選択します。
+1. 「**[!UICONTROL SDK インスタンス]**」セクションで、「**[!UICONTROL データ収集]** - **[!UICONTROL 「イベント送信の前にオン」コールバック]**」までスクロールします。
 
-   ![&#x200B; イベント送信コールバックの前にオン &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+   ![「イベント送信の前にオン」コールバック](/help/content-analytics/assets/onbeforeeventsendcallback.png)
 
-1. 「**[!UICONTROL &lt;/> イベント送信前に提供コールバックコード]**」を選択します。
+1. 「**[!UICONTROL &lt;/> 「イベント送信の前にオン」コールバックコードを指定]**」を選択します。
 1. 次のコードを追加します。
 
    ```javascript
@@ -119,11 +119,11 @@ Content Analyticsの ID データとAdobe Experience Platform Web SDKのデー�
    }
    ```
 
-   ![&#x200B; イベント送信コールバックの前にオン &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+   ![「イベント送信の前にオン」コールバック](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
 
-1. 「**[!UICONTROL 保存]**」を選択して、コードを保存します。
-1. 「**[!UICONTROL 保存]**」を選択して、拡張機能を保存します。
-1. タグプロパティの更新内容を [&#x200B; 公開 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview) します。
+1. 「**[!UICONTROL 保存]**」を選択してコードを保存します。
+1. 「**[!UICONTROL 保存]**」を選択して拡張機能を保存します。
+1. タグプロパティの更新を[公開](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)します。
 
 
 

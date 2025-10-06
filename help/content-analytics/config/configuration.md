@@ -6,20 +6,20 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # コンテンツ分析の設定
 
-この記事では、Content Analyticsの設定方法を大まかに説明します。
+この記事では、コンテンツ分析の設定方法の概要について説明します。
 
-Content Analyticsを設定する前に、[&#x200B; 前提条件 &#x200B;](#prerequisites) が満たされ、必要な [&#x200B; アクセス制御 &#x200B;](#access-control) が得られ、[&#x200B; 制限事項 &#x200B;](#limitations) を認識している必要があります。
+コンテンツ分析を設定する前に、[前提条件](#prerequisites)が満たされていること、必要な[アクセス制御](#access-control)があること、[制限事項](#limitations)を認識していることを確認する必要があります。
 
 
-手順の概要
+高レベルの手順
 
 ![コンテンツ分析の設定](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -36,7 +36,7 @@ Content Analyticsを設定する前に、[&#x200B; 前提条件 &#x200B;](#prere
 
 コンテンツ分析を設定する前に、次の前提条件が満たされていることを確認してください。
 
-* コンテンツ分析で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>.
+* コンテンツ分析で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>
 * 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code>  を使用していることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * コンテンツ分析エクスペリエンスの収集を検討する場合は、web ページの変更に基づいて[コンテンツ分析のバージョン管理](manual.md#versioning)を設定および更新する必要があります。
@@ -68,10 +68,10 @@ Content Analyticsを設定する前に、[&#x200B; 前提条件 &#x200B;](#prere
 
 ## 制限事項
 
-Content Analytics イベントデータに使用されるスキーマは、システムが所有します。 システム所有のスキーマは変更できません。これは、次のことを意味します。
+コンテンツ分析イベントデータに使用されるスキーマはシステム所有です。システム所有のスキーマは変更できません。つまり、次のようになります。
 
-* ジオロケーション、ボット検出、デバイス検索などの機能をサポートするフィールドグループを含めることはできません。
-* [&#x200B; フィールドベースのステッチ &#x200B;](/help/stitching/fbs.md) をサポートする特定の識別子を追加することはできません。
+* ジオロケーション、ボット検出、デバイス検索などの機能のサポートにフィールドグループを含めることはできません。
+* [フィールドベースのステッチ](/help/stitching/fbs.md)をサポートする特定の識別子を追加することはできません。
 
 >[!MORELIKETHIS]
 >

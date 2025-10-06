@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,20 +16,20 @@ ht-degree: 93%
 
 Customer Journey Analytics は、Adobe Experience Platform からのデータと共に Analysis Workspace の機能を使用できるアドビの次世代 Analytics ソリューションです。数年分のデータを分類、セグメント化、クエリ、視覚化できます。また、あらゆるデータスキーマやデータタイプを保持できる Platform の機能と組み合わせられます。**Experience Data Model（XDM）**&#x200B;を使用すると、データを均一に表示および整理し、組み合わせや探索に対応できます。**Adobe Experience Platform クエリサービス**&#x200B;では、SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
 
-Customer Journey Analytics の高レベルのアーキテクチャを以下に示します。
+Customer Journey Analytics アーキテクチャの概要を以下に示します。
 
-![Customer Journey Analyticsのアーキテクチャ ](assets/cja-overview.svg)
+![Customer Journey Analytics アーキテクチャ](assets/cja-overview.svg)
 
-このアーキテクチャでは、Custoner ジャーニー分析を使用して次の操作を行う方法を示します。
+このアーキテクチャは、Customer Journey Analytics でどのように次の操作を実行できるかを示しています。
 
-* ![ 接続 ](/help/assets/icons/Data.svg) で複数のデータセット [ データ ](/help/connections/overview.md) を組み合わせます。
-* 接続で定義したデータセットから使用できるフィールドに基づいて、ディメンション ![ ディメンション ](/help/assets/icons/Dimensions.svg) および指標 ![ イベント ](/help/assets/icons/Event.svg) を [ データビュー ](/help/data-views/data-views.md) で定義および設定します。
-* データビューのディメンションと指標に基づいて、![ プロジェクト ](/help/assets/icons/ViewTable.svg) でレポート ![ViewTable](/help/assets/icons/GraphTrend.svg) とビジュアライゼーション ![ 折れ線グラフ ](/help/assets/icons/GraphAreaStacked.svg) 折れ線グラフ [ エリア ](/help/analysis-workspace/home.md) など）を作成します。
+* 複数のデータセット ![データ](/help/assets/icons/Data.svg) を[接続](/help/connections/overview.md)で組み合わせます。
+* 接続で定義したデータセットから使用可能なフィールドに基づいて、[データビュー](/help/data-views/data-views.md)でディメンション ![ディメンション](/help/assets/icons/Dimensions.svg) と指標 ![イベント](/help/assets/icons/Event.svg) を定義および設定します。
+* データビューのディメンションと指標に基づいて、[プロジェクト](/help/analysis-workspace/home.md)でレポート ![ViewTable](/help/assets/icons/ViewTable.svg) やビジュアライゼーション（折れ線グラフ ![折れ線グラフ](/help/assets/icons/GraphTrend.svg) や面グラフ ![面グラフ](/help/assets/icons/GraphAreaStacked.svg) など）を作成します。
 
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics の概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis：エクスペリエンスビジネスの分析](https://video.tv.adobe.com/v/36231/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics の概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis：エクスペリエンスビジネスの分析](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -99,18 +99,18 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://video.tv.adobe.com/v/36106/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics のアーキテクチャと統合に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [アーキテクチャと統合](https://video.tv.adobe.com/v/330411/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+Customer Journey Analytics のアーキテクチャと統合に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [アーキテクチャと統合](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=ja)
->* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=ja)
->* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=ja)
+>* [アナリスト向け Adobe Customer Journey Analytics クラッシュコース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [マインドセットと Adobe Customer Journey Analytics ワークフローの最適化：あらゆる規模の組織向けチームモデル](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [組織の対応の作成：Adobe Customer Journey Analytics を拡大・縮小する人物ファーストガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
