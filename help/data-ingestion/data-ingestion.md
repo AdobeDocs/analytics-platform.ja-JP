@@ -114,5 +114,5 @@ Experience Platform で単一のデータセットのみを必要とし、エク
 
 >[!MORELIKETHIS]
 >
->ブログ：[Adobe Customer Journey Analytics でのデータ処理と取り込みについて](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>ブログ：[Adobe Customer Journey Analytics でのデータ処理と取り込みについて](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=ja)
 
