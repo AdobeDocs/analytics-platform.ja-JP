@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 50%
+source-wordcount: '799'
+ht-degree: 51%
 
 ---
 
 # プロジェクトの送信とスケジュール
 
-Customer Journey Analytics プロジェクトをファイルとして、選択したユーザーにメールで送信できます。 アドホックでファイルを送信することも、スケジュールに従って送信するようにプロジェクトを設定することもできます。 プロジェクトは CSV 形式またはPDF形式で送信できます。
+Customer Journey Analytics プロジェクトをファイルとして、選択したユーザーにメールで送信できます。 アドホックでファイルを送信することも、スケジュールに従って送信するようにプロジェクトを設定することもできます。
 
-プロジェクトに適用されたタグは、書き出しに自動的に適用されます。
+ファイルを送信する際は、次の点を考慮してください。
+
+* ファイルは CSV 形式または PDF 形式で送信できます。
+
+* プロジェクトに適用されたタグは、書き出しに自動的に適用されます。
 
 [書き出しの概要](/help/analysis-workspace/export/export-project-overview.md)の説明に従って、Customer Journey Analytics データを書き出す他の方法も使用できます。
 
@@ -27,7 +31,7 @@ Customer Journey Analytics プロジェクトをファイルとして、選択�
 
 メールで受信者にファイルを送信するには、次の手順に従います。
 
-1. **[!UICONTROL 共有 &#x200B;]/[!UICONTROL &#x200B; ファイルを送信]** を選択します。
+1. **[!UICONTROL 共有 ]/[!UICONTROL  ファイルを送信]** を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
@@ -40,9 +44,9 @@ Customer Journey Analytics プロジェクトをファイルとして、選択�
 
 ## ファイルの書き出しをスケジュール {#schedule}
 
-受信者にメールでスケジュールに従ってファイルを送信するには
+メールで受信者にスケジュールに従ってファイルを送信するには：
 
-1. **[!UICONTROL 共有 &#x200B;]/[!UICONTROL &#x200B; ファイル書き出しをスケジュール]** を選択します。
+1. **[!UICONTROL 共有 ]/[!UICONTROL  ファイル書き出しをスケジュール]** を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
@@ -99,7 +103,7 @@ Healthcare Shield SKU を購入して有効にすると、次の状況でスケ�
 ### 新しくスケジュールされたプロジェクトのパスワード保護
 
 1. プロジェクトを保存したら、**[!UICONTROL 共有]**／**[!UICONTROL 今すぐファイルを送信]**&#x200B;または&#x200B;**[!UICONTROL 共有]**／**[!UICONTROL スケジュールに従ってファイルを送信]**&#x200B;に移動します。
-1. [今すぐファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=ja#now)または[スケジュールに従ってファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=ja#schedule)で、上記の手順に従います。
+1. [今すぐファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now)または[スケジュールに従ってファイルを送信](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule)で、上記の手順に従います。
 
 ### 既存のスケジュール済みプロジェクトのパスワード保護
 
