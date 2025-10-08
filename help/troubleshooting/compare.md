@@ -1,96 +1,66 @@
 ---
-title: Adobe Analytics データとの比較
-description: Adobe Analytics データを Customer Journey Analytics のデータと比較する方法を学ぶ
+title: Analytics Source Connector データとAdobe Analyticsの比較
+description: Adobe AnalyticsとCustomer Journey Analyticsで同様のレポートを表示する際のデータの違いについて説明します。
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+source-git-commit: d96404479aabe6020566e693245879b5ad4fad9c
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 4%
 
 ---
 
-# Adobe Analytics データとの比較
+# Analytics Source Connector データとAdobe Analyticsの比較
 
-組織で Customer Journey Analytics を導入すると、Adobe Analytics と Customer Journey Analytics のデータにいくつか違いが出ることがあります。これは正常な動作で、いくつかの理由で発生する場合があります。Customer Journey Analytics は、AA のデータに関する制限の一部を改善できるように設計されています。ただし、予期しない不一致や意図しない不一致が発生する場合があります。この記事は、データの整合性に関する懸念に妨げられることなくユーザーとチームが Customer Journey Analytics を使用できるように、それらの違いを診断し、解決することを目的としています。
+Customer Journey Analyticsを採用する場合、Adobe AnalyticsとCustomer Journey Analyticsの間でデータの違いがいくつかあることに気付くことがあります。 これらの違いは正常であり、いくつかの理由で発生する可能性があります。 Customer Journey Analyticsは、Adobe Analyticsのデータに関する制限の一部を改善できるように設計されています。 この柔軟性により、Customer Journey Analyticsでのデータの解釈方法に多少の違いが生じる可能性があります。 この記事では、Customer Journey AnalyticsとAdobe Analyticsでのデータの処理方法に関する潜在的な違いを説明します。
 
-[Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)経由で Adobe Analytics データを Adobe Experience Platform に取り込んだあと、このデータセットを使用して Customer Journey Analytics 接続を作成したと仮定します。
+ここでは、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) を使用してAdobe Analytics データをAdobe Experience Platformに取り込んだあと、Customer Journey Analyticsで [ 接続 ](/help/connections/overview.md) および [ データビュー ](/help/data-views/data-views.md) を作成したことを前提としています。
 
 ![データは、Adobe Analytics からデータコネクタを経由して Adobe Experience Platform に、CJA 接続を使用して Custoer Journey Analytics に送られます。](assets/compare.png)
 
-次に、データビューを作成した後、Customer Journey Analytics でこのデータをレポートしながら、Adobe Analytics のレポート結果との相違に気がつきました。
+レポートプラットフォーム間でデータが異なる可能性がある次の理由を考慮してください。
 
-ここでは、元の Adobe Analytics データと現在 Customer Journey Analytics にある Adobe Analytics のデータを比較するための手順を示します。
+* **異なるデータセットまたはレポートスイート**:Adobe Analyticsのレポートスイートと、Source コネクタからデータが派生するレポートスイートが同じであることを確認します。
+* **カレンダー設定**:Adobe Analyticsのレポートスイートには、設定可能なタイムゾーンやその他のカレンダー設定が含まれています。 同様に、Customer Journey Analyticsのデータビューには、制御可能な別の設定があります。 パリティが必要な場合は、製品間でこれらの設定が一致していることを確認してください。
+* **追加のデータセット**:Customer Journey Analyticsでは、1 つの接続内に複数のデータセットを含めることができます。 これらの違いには、追加のイベントデータセット、プロファイルデータセット、ルックアップデータセットなどが含まれます。 この機能は、Adobe AnalyticsとCustomer Journey Analyticsの重要な差別化要因であり、insightをクロスチャネルデータに変えることができます。
+* **ステッチされたデータセット**:Adobeには、2 つのデータセット間で人物 ID を分析する機能が用意されており、その結果、ステッチされた ID を含む新しいデータセットが作成されます。 これらの [ ステッチされたデータセット ](/help/stitching/overview.md) には、Adobe Analytics レポートスイートで提供される以外の追加データが含まれます。
+* **データソース**:Customer Journey Analyticsには、概要データソースやトランザクション ID データソースなど、Adobe Analytics レポートスイートにアップロードされた [ データソース ](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview) は含まれていません。
+* **Dimensionと指標の設定**：データビュー内では、すべてのディメンションと指標には、組織で変更できる独自の設定が含まれています。 これらの変更はレポートの実行時に適用されるので、遡及的に適用されます。 Adobe AnalyticsのDimensionと指標の設定によってデータの収集方法が変わり、その後変更が加えられます。 いずれかの製品でコンポーネント設定を変更すると、レポートの違いが生じる可能性があります。 特定のディメンションに焦点を当てる場合は、アトリビューションと永続性の設定がAdobe AnalyticsとCustomer Journey Analyticsの間で一致していることを確認してください。
 
-## 前提条件 
+  >[!TIP]
+  >
+  >Adobeでは、Adobe Analyticsのディメンションで「最新（最後）  の配分を使用することを強くお勧めします。 この配分設定により、Customer Journey Analyticsでのアトリビューションの柔軟性が大幅に向上します。
 
-* Adobe Experience Platform の Analytics データセットに、調査中の日付範囲のデータが含まれていることを確認します。
+* **訪問定義**：個々のディメンションと指標の設定に加えて、データビュー自体には、訪問者データの解釈方法を根本的に変更する設定が含まれています。 例えば、データビュー全体（Adobe Analyticsの [ 仮想レポートスイート ](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-about) と同様）にセグメントを適用できます。 また、訪問期間の定義を変更したり、目的のイベントで自動的に新しい訪問を開始したりすることもできます。 これらの設定は、Customer Journey AnalyticsとAdobe Analyticsのレポートの違いに大きな影響を与える場合があります。
 
-* Analytics で選択したレポートスイートが、Adobe Experience Platform に取り込まれたレポートスイートと一致していることを確認します。
+## 製品間のレコード数の確認
 
-## 手順 1：Adobe Analytics で発生件数指標を実行する
+上記の設定がすべて似ている場合に、製品間のレコード数を少なくとも検証するには、次の手順を使用します。
 
-[発生件数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=ja)指標は、特定のディメンションが設定または持続されたヒット数を示します。
-
-1. Analytics／[!UICONTROL ワークスペース]で、ディメンションとしてレポートする日付範囲を[!UICONTROL フリーフォーム]テーブルにドラッグします。
-
-1. この [!UICONTROL 発生件数]指標が自動的にその日付範囲に適用されます。
-
-1. このプロジェクトを保存して、比較で使用できるようにします。
-
-## 手順 2：結果を Customer Journey Analytics の[!UICONTROL タイムスタンプ別の合計レコード数]と比較する
-
-ここで、Analytics の[!UICONTROL 発生件数]と Customer Journey Analytics のタイムスタンプ別合計レコード数を比較します。
-
-Analytics ソースコネクタがドロップしたレコードがない場合、タイムスタンプ別の合計レコード数は、発生件数と一致する必要があります（次の節を参照）。
-
->[!NOTE]
->
->これは通常の中間値データセットでのみ機能し、（[ステッチ](/help/stitching/overview.md)経由で）結合されたデータセットでは機能しません。比較を行うには、Customer Journey Analytics で使用されているユーザー ID のアカウント設定が重要であることに注意してください。特にステッチがオンになっている場合、Adobe Analytics でのレプリケーションは容易でないことがあります。
-
-1. Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=ja)で、次の[!UICONTROL タイムスタンプ別の合計レコード数]クエリを実行します。
+1. Adobe Experience Platform[ クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) で、次のタイムスタンプ別の合計レコード数クエリを実行します。
 
    ```sql
    SELECT
-       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
-       Count(_id) AS Records 
+     Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+     Count(_id) AS Records
    FROM  {dataset}
    WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
-       AND timestamp < from_utc_timestamp('{toDate}','UTC')
-       AND timestamp IS NOT NULL
-       AND enduserids._experience.aaid.id IS NOT NULL
+     AND timestamp < from_utc_timestamp('{toDate}','UTC')
+     AND timestamp IS NOT NULL
+     AND enduserids._experience.aaid.id IS NOT NULL
    GROUP BY Day
-   ORDER BY Day; 
+   ORDER BY Day;
    ```
 
-1. [Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)で、生データから、Analytics ソースコネクタからによって一部の行が除外された可能性があるかどうかを確認します。
+1. Adobe Analytics[ データフィード ](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-overview) で、目的の日付範囲のフィードファイルを生成します。 次の行を識別して除外し、各ファイル内の行数をカウントします。
 
-   [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)では、XDM スキーマへの変換中に行がフィルタリングされる可能性があります。行全体が変換に適さない理由は複数考えられます。次の Analytics フィールドのいずれかにこれらの値がある場合、行全体が削除されます。
+   * `exclude_hit` は `0` ではありません（両方の製品でAnalysis Workspaceからデータが除外されました）
+   * `hit_source` には、`0`、`3`、`5`、`7`、`8`、`9` または `10` （データソースおよびその他のヒットしないデータ）があります
+   * `page_event` is `53` or `63` （Streaming Media keep-alive hits）
 
-   | Analytics フィールド | 行が削除される原因となる値 |
-   | --- | --- |
-   | Opt_out | y, Y |
-   | In_data_only | 0 ではない |
-   | Exclude_hit | 0 ではない |
-   | Bot_id | 0 ではない |
-   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
-   | Page_event | 53, 63 |
+   上記の条件のいずれかに一致する行は、Analytics Source コネクタの取り込みワークフローから除外されるので、データフィード行をカウントする際にも除外する必要があります。
 
-   hit\_source について詳しくは、[データ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)を参照してください。page\_event について詳しくは、[ページイベント検索](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=ja)を参照してください。
-
-1. コネクタによって行がフィルタリングされた場合は、[!UICONTROL 発生件数]指標からそれらの行を減算します。結果の数は、Adobe Experience Platform データセットのイベント数と一致する必要があります。
-
-## Adobe Experience Platform からの取り込み中にレコードがフィルタリングまたはスキップされる可能性がある理由
-
-Customer Journey Analytics [接続](/help/connections/create-connection.md)を使用すると、データセットをまたいだ共通のユーザー ID に基づいて複数のデータセットをまとめて取り込み、結合できます。バックエンドでは、重複排除（タイムスタンプに基づくイベントデータセットの完全な外部結合または和集合、そしてユーザー ID に基づくプロファイルとルックアップデータセットの内部結合）を適用します。
-
-Adobe Experience Platform からデータを取り込む際に、レコードがスキップされる可能性がある理由を以下に示します。
-
-* **タイムスタンプがありません** - イベントデータセットにタイムスタンプがない場合、取り込み中、それらのレコードは完全に無視またはスキップされます。
-
-* **ユーザー ID がありません** -（イベントデータセットからおよび／またはプロファイル／ルックアップデータセットから）ユーザー ID が見つからない場合、これらのレコードは無視またはスキップされます。これは、レコードを結合するための共通の ID や一致するキーがないためです。
-
-* **無効または大きなユーザー ID** - 無効な ID を使用した場合、システムは結合するデータセット内で有効な共通 ID を見つけることができません。場合によっては、「未定義」や「00000000」など、ユーザー ID 列に無効なユーザー ID が含まれることがあります。月に 100 万回以上イベントに表示されるユーザー ID（数字と文字の組み合わせは任意）は、特定のユーザーに関連付けることはできません。無効と分類されます。これらのレコードはシステムに取り込むことができないので、取り込みやレポートの際にエラーが発生しやすくなります。
+1. クエリサービスの合計レコード数は、同期間のデータフィードの行数と一致する必要があります。
