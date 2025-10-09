@@ -293,6 +293,6 @@ LLM および AI 生成トラフィックに関連するイベント、セッシ
 
 >[!MORELIKETHIS]
 >
->このユースケースの記事は、Brian Au のブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI で生成されたトラフィックのトラッキングと分析 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967) に基づいています。
+>このユースケースの記事は、Brian Au のブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI で生成されたトラフィックのトラッキングと分析 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja) に基づいています。
 >
 >
