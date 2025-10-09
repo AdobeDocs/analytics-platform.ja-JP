@@ -287,7 +287,7 @@ ht-degree: 99%
       + [要件](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [アクセシビリティ](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ コンテンツ分析 {#content-analytics}
++ Content Analytics {#content-analytics}
    + [概要](/help/content-analytics/content-analytics.md)
    + レポート {#report}
       + [概要](/help/content-analytics/report/report.md)
