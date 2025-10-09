@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,8 +47,8 @@ Content Analytics は、Experience Platform のイベントデータセットの
 
 1. ユーザーが[コンテンツ分析用に設定](config/configuration.md)されたサイトにアクセスすると、Experience Platform Web SDK ではコンテンツのインプレッションとインタラクションを記録します。
 1. ID および機能サービスは、これらのインタラクションを処理します。このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。また、機能サービスでは、AI／ML サービスを適用して、エクスペリエンスとアセットのメタデータおよび属性を検出します。
-1. これらのサービスの結果（[&#x200B; コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platformの関連する具体的なContent Analytics データセットの更新に使用されます。
-1. Content Analytics データは、行動データやその他のルックアップデータと共に、Customer Journey Analytics設定（[Connection](/help/connections/overview.md)、[&#x200B; データビュー &#x200B;](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。 この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤を提供します。<br/>[コンテンツ分析テンプレート](/help/content-analytics/report/report.md#template)を使用すると、コンテンツ分析レポートと分析をすぐに開始できます。
+1. これらのサービスの結果（[コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platform 内の関連する特定のコンテンツ分析データセットを更新するのに使用されます。
+1. コンテンツ分析データは、行動データや他のルックアップデータと共に、Customer Journey Analytics 設定（[接続](/help/connections/overview.md)、[データビュー](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤を提供します。<br/>[コンテンツ分析テンプレート](/help/content-analytics/report/report.md#template)を使用すると、コンテンツ分析レポートと分析をすぐに開始できます。
 
 
 >[!NOTE]
@@ -67,7 +67,7 @@ Content Analytics は、Experience Platform のイベントデータセットの
 >[!MORELIKETHIS]
 >
 >[コンテンツ分析レポート](report/report.md)
->&#x200B;>[コンテンツ分析の設定](config/configuration.md)
->&#x200B;>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>>[コンテンツ分析の設定](config/configuration.md)
+>>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 1. [記録されたビューまたはクリック](#recorded-view-or-click)。
 1. [コンテンツ分析イベントを送信するトリガー](#trigger-to-send-a-content-analytics-event)。
 
-コンテンツ分析では、ビューまたはクリックを個別に収集し、そのビューまたはクリックの直後のイベントを収集する代わりに、シーケンスを反映するのにこの方法でデータを収集します。この方法でContent Analyticsのデータを収集すると、収集されるデータの量も削減されます。
+コンテンツ分析では、ビューまたはクリックを個別に収集し、そのビューまたはクリックの直後のイベントを収集する代わりに、シーケンスを反映するのにこの方法でデータを収集します。また、コンテンツ分析データを収集するこの方法では、収集されるデータの量も削減されます。
 
 ### 記録されたビューまたはクリック
 

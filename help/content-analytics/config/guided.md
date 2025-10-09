@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,17 +82,17 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="データビュー"
->abstract="コンテンツ分析を設定するには、既存のデータビューを選択する必要があります。そのため、Content Analytics データを他のデータと結合できます。"
+>abstract="コンテンツ分析を設定するには、既存のデータビューを選択する必要があります。そのため、コンテンツ分析データを他のデータと結合できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="Content Analytics データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。"
+>abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存のデータビューを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="データビュー"
->abstract="Content Analytics データの結合先となるCustomer Journey Analyticsの既存のデータビューを選択します。<br/>"
+>abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存のデータビューを選択します。<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -236,7 +236,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 ### データ収集 {#onboarding-data-collection}
 
-この節では、Content Analytics データの収集方法を設定します。
+このセクションでは、コンテンツ分析データの収集方法を設定します。
 
 <!-- markdownlint-disable MD034 -->
 
