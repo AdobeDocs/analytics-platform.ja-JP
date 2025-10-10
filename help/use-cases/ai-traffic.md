@@ -4,11 +4,9 @@ description: 派生フィールドを基盤として使用し、Workspaceで LLM
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -17,6 +15,11 @@ ht-degree: 1%
 # LLM および AI 生成トラフィックのレポート
 
 このユースケース記事では、Customer Journey Analytics派生フィールド機能を基盤として、LLM （Large Language Model）と AI によって生成されたトラフィックについてレポートする方法について説明します。
+
+>[!NOTE]
+>
+>[ 検出方法 ](#detection-methods)、[ 検出シグネチャ ](#detection-signatures) および [ 実装方法 ](#implementation) の有効性は、具体的なデータ収集方法、Experience Platform データセットの範囲、Customer Journey Analyticsの実装に応じて異なります。 結果は、技術環境、データガバナンスポリシー、実装アプローチによって異なる場合があります。 Experience Edgeを使用する場合、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>
 
 ## 検出方法
 
@@ -30,6 +33,7 @@ LLM および AI 生成トラフィックを識別および監視する 3 つの
 * **ユーザーエージェントの識別**: サーバーにリクエストが行われると、HTTP ユーザーエージェント ヘッダーが抽出され、既知の AI クローラーおよびエージェントパターンに対して分析されます。 このサーバーサイドメソッドは、HTTP ヘッダーへのアクセスを必要とし、データ収集レイヤーで実装する場合に最も効果的です。
 * **リファラーの分類**:HTTP リファラーヘッダーには、現在のリクエストにリンクされる前の web ページの URL が含まれます。 このヘッダーは、ユーザーが ChatGPT や Perplexity などの web インターフェイスからサイトにクリックスルーしたときに表示されます。
 * **クエリパラメーターの検出**:AI サービスは、URL パラメーター（特に UTM パラメーター）をリンクに追加できます。 これらのパラメーターは URL 内に保持され、標準の分析実装を通じて検出できるので、これらの URL パラメーターは、クライアントサイドのトラッキングシナリオでも有益な指標となります。
+
 
 次の表に、さまざまな LLM および AI インタラクション シナリオに対して検出方法をどのように使用できるかを示します。
 
@@ -248,12 +252,12 @@ LLM および AI エージェントは、デジタルプロパティを操作す
 
 ## 実装
 
-[&#x200B; 派生フィールド &#x200B;](#derived-fields)、[&#x200B; セグメント &#x200B;](#segments)、および [&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project) の具体的な設定と設定を通じて、一般的なCustomer Journey Analytics設定（接続、データビュー、ワークスペースプロジェクト）内で LLM および AI 生成トラフィックについてレポートできます。
+[ 派生フィールド ](/help/connections/overview.md)、[ セグメント ](/help/data-views/data-views.md) および [ ワークスペースプロジェクト ](/help/analysis-workspace/home.md) の固有の設定と設定を通じて、通常のCustomer Journey Analytics設定（[connection](#derived-fields)、[data views](#segments) および [ ワークスペースプロジェクト ](#workspace-project)）内で LLM および AI によって生成されたトラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法及び検出信号を構成するために、導出フィールドを基礎として使用する。 例えば、ユーザーエージェントの識別、クエリパラメーターの検出、リファラーの分類などの派生フィールドを定義します。
+検出方法及び検出信号を構成するために、導出フィールドを基礎として使用する。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出 ](#query-parameter-detection)、および [ リファラー分類 ](#referrer-classification) の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -264,35 +268,431 @@ LLM および AI エージェントは、デジタルプロパティを操作す
 
 #### LLM/AI クエリパラメーター検出
 
-[URL 解析 &#x200B;](/help/data-views/derived-fields/derived-fields.md#url-parse) および [&#x200B; 分類 &#x200B;](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、UTM パラメーター検出を検出する派生フィールドを定義します。
+[URL 解析 ](/help/data-views/derived-fields/derived-fields.md#url-parse) および [ 分類 ](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、クエリパラメーターを検出する派生フィールドを定義します。
 
-![LLM/AI UTM パラメータ検出 &#x200B;](assets/aitraffic-utmparams.png){zoomable="yes"}
+![LLM/AI UTM パラメータ検出 ](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### LLM/AI リファラー分類
 
-URL の解析および派生フィールドの分類関数を使用して、リファラーを分類する派生フィールドを定義してください。
+[URL 解析 ](/help/data-views/derived-fields/derived-fields.md#url-parse) および [ 分類 ](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、リファラーを分類する派生フィールドを定義します。
 
-![LLM/AI リファラー分類 &#x200B;](assets/aitraffic-utmparams.png){zoomable="yes"}
+ （assets/aitraffic-referrers.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+){zoomable="yes"}
 
 
 ### セグメント
 
 LLM および AI 生成トラフィックに関連するイベント、セッションまたは人物を識別するのに役立つ専用のセグメントを設定します。 例えば、以前に作成した派生フィールドを使用して、LLM および AI によって生成されたトラフィックを識別するセグメントを定義します。
 
-![LLM および AI で生成されたトラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
+![LLM および AI で生成されたトラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### Workspace プロジェクト
 
 派生フィールドとセグメントを使用して、LLM および AI で生成されたトラフィックをレポートおよび分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLM および AI で生成されたトラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLM および AI で生成されたトラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->このユースケースの記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja) に基づいています。
+>このユースケースの記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967) に基づいています。
 >
 >
