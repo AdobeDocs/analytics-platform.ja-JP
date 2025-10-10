@@ -119,7 +119,7 @@ ht-degree: 7%
 ![ID グラフ 246](assets/identity-graph-246.svg)
 ![ID グラフ 3579](assets/identity-graph-3579.svg)
 
-[ID グラフビューア &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
+[ID グラフビューア &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
 
 ### 手順 1：ライブステッチ
 
@@ -223,7 +223,7 @@ ht-degree: 7%
 - 指定された名前空間を使用して一時的な ID をクエリする場合、タイムスタンプは考慮されません。 そのため、永続的 ID が、以前のタイムスタンプを持つレコードからの一時的な ID でステッチされる可能性があります。
 - グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[&#x200B; 共有デバイス &#x200B;](/help/use-cases/stitching/shared-devices.md) を参照してください。
 - ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data Platform などのExperience Platform アプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
-- [ID サービスガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [&#x200B; 静的制限 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
+- [ID サービスガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [&#x200B; 静的制限 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
    - グラフ内の ID の最大数：50。
    - 単一のバッチ取得での ID へのリンクの最大数：50。
    - グラフ取り込み用の XDM レコードの ID の最大数：20。

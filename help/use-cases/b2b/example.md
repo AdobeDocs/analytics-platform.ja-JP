@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # ユーザーベースの B2B プロジェクトの例
 
-この記事では、一般的なユーザーベースの B2B 設定のコンテキスト内で、人物データに関してCustomer Journey Analyticsで適切にレポートする使用例を説明します。 このような設定は、[Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) で容易に行えます。  このユースケースでは、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法を説明します。
+この記事では、一般的なユーザーベースの B2B 設定のコンテキスト内で、人物データに関してCustomer Journey Analyticsで適切にレポートする使用例を説明します。 このような設定は、[Real-Time CDP B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) で容易に行えます。  このユースケースでは、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法を説明します。
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} アカウントベースのレポートのユースケースに関する別の節が、[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) のリリースで公開されました。
 
@@ -43,7 +43,7 @@ ht-degree: 13%
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)
+B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/relationship-b2b)
 
 
 B2B データのユーザーベースの検索をサポートする接続を適切に設定するには、概要について次の図を使用し、次の手順に従います。

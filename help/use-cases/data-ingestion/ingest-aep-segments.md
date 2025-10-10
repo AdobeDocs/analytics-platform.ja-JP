@@ -32,13 +32,13 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 
 ## 手順 2：エクスポート用のプロファイル結合データセットの作成
 
-最終的にCustomer Journey Analyticsの接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル [&#x200B; 結合スキーマ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) であるデータセットを作成する必要があります。
+最終的にCustomer Journey Analyticsの接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル [&#x200B; 結合スキーマ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=ja#understanding-union-schemas) であるデータセットを作成する必要があります。
 
 結合スキーマは、同じクラスを共有し、プロファイルが有効になっている複数のスキーマで構成されています。結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。
 
 ## 手順 3： API 呼び出しを使用したプロファイル結合データセットへのオーディエンスのエクスポート {#export}
 
-オーディエンスをCustomer Journey Analyticsに取り込む前に、Adobe Experience Platform データセットにエクスポートする必要があります。 これは、Segmentation API（特に[書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html)）を使用してのみ実行できます。
+オーディエンスをCustomer Journey Analyticsに取り込む前に、Adobe Experience Platform データセットにエクスポートする必要があります。 これは、Segmentation API（特に[書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=ja)）を使用してのみ実行できます。
 
 任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイル結合Adobe Experience Platform データセットに取り込むことができます。 オーディエンスの様々な属性/イベントをエクスポートできますが、活用するCustomer Journey Analytics接続で使用されるユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみをエクスポートする必要があります（後述の手順 5 を参照）。
 

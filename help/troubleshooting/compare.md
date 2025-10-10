@@ -27,14 +27,14 @@ Customer Journey Analyticsを採用する場合、Adobe AnalyticsとCustomer Jou
 * **カレンダー設定**:Adobe Analyticsのレポートスイートには、設定可能なタイムゾーンやその他のカレンダー設定が含まれています。 同様に、Customer Journey Analyticsのデータビューには、制御可能な別の設定があります。 パリティが必要な場合は、製品間でこれらの設定が一致していることを確認してください。
 * **追加のデータセット**:Customer Journey Analyticsでは、1 つの接続内に複数のデータセットを含めることができます。 これらの違いには、追加のイベントデータセット、プロファイルデータセット、ルックアップデータセットなどが含まれます。 この機能は、Adobe AnalyticsとCustomer Journey Analyticsの重要な差別化要因であり、insightをクロスチャネルデータに変えることができます。
 * **ステッチされたデータセット**:Adobeには、2 つのデータセット間で人物 ID を分析する機能が用意されており、その結果、ステッチされた ID を含む新しいデータセットが作成されます。 これらの [&#x200B; ステッチされたデータセット &#x200B;](/help/stitching/overview.md) には、Adobe Analytics レポートスイートで提供される以外の追加データが含まれます。
-* **データソース**:Customer Journey Analyticsには、概要データソースやトランザクション ID データソースなど、Adobe Analytics レポートスイートにアップロードされた [&#x200B; データソース &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview) は含まれていません。
+* **データソース**:Customer Journey Analyticsには、概要データソースやトランザクション ID データソースなど、Adobe Analytics レポートスイートにアップロードされた [&#x200B; データソース &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/import/data-sources/overview) は含まれていません。
 * **Dimensionと指標の設定**：データビュー内では、すべてのディメンションと指標には、組織で変更できる独自の設定が含まれています。 これらの変更はレポートの実行時に適用されるので、遡及的に適用されます。 Adobe AnalyticsのDimensionと指標の設定によってデータの収集方法が変わり、その後変更が加えられます。 いずれかの製品でコンポーネント設定を変更すると、レポートの違いが生じる可能性があります。 特定のディメンションに焦点を当てる場合は、アトリビューションと永続性の設定がAdobe AnalyticsとCustomer Journey Analyticsの間で一致していることを確認してください。
 
   >[!TIP]
   >
   >Adobeでは、Adobe Analyticsのディメンションで「最新（最後）  の配分を使用することを強くお勧めします。 この配分設定により、Customer Journey Analyticsでのアトリビューションの柔軟性が大幅に向上します。
 
-* **訪問定義**：個々のディメンションと指標の設定に加えて、データビュー自体には、訪問者データの解釈方法を根本的に変更する設定が含まれています。 例えば、データビュー全体（Adobe Analyticsの [&#x200B; 仮想レポートスイート &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-about) と同様）にセグメントを適用できます。 また、訪問期間の定義を変更したり、目的のイベントで自動的に新しい訪問を開始したりすることもできます。 これらの設定は、Customer Journey AnalyticsとAdobe Analyticsのレポートの違いに大きな影響を与える場合があります。
+* **訪問定義**：個々のディメンションと指標の設定に加えて、データビュー自体には、訪問者データの解釈方法を根本的に変更する設定が含まれています。 例えば、データビュー全体（Adobe Analyticsの [&#x200B; 仮想レポートスイート &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/virtual-report-suites/vrs-about) と同様）にセグメントを適用できます。 また、訪問期間の定義を変更したり、目的のイベントで自動的に新しい訪問を開始したりすることもできます。 これらの設定は、Customer Journey AnalyticsとAdobe Analyticsのレポートの違いに大きな影響を与える場合があります。
 
 ## 製品間のレコード数の確認
 

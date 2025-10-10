@@ -40,7 +40,7 @@ Quantum Metric データのソースコネクタを作成すると、Adobe Exper
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 >[!NOTE]
->Quantum Metric データは、残りのCustomer Journey Analytics データと同じ接続に追加できますが、そのデータは、2 つのデータセット間で共通の人物 ID がない限り、ステッチできません。 Adobeこの動作が必要な場合は、ソースコネクタの代わりに [&#x200B; タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を使用することをお勧めします。
+>Quantum Metric データは、残りのCustomer Journey Analytics データと同じ接続に追加できますが、そのデータは、2 つのデータセット間で共通の人物 ID がない限り、ステッチできません。 Adobeこの動作が必要な場合は、ソースコネクタの代わりに [&#x200B; タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を使用することをお勧めします。
 
 ## 手順 3:Customer Journey Analyticsでのデータビューの作成
 

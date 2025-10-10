@@ -16,7 +16,7 @@ ht-degree: 6%
 
 このユースケースでは、派生フィールドの機能を使用して特定のディメンションの目標を設定し、それらの目標をWorkspace プロジェクトで使用する方法を説明します。
 
-派生フィールドについて詳しくない場合は、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) および [&#x200B; ドキュメント &#x200B;](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
+派生フィールドについて詳しくない場合は、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja) および [&#x200B; ドキュメント &#x200B;](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
 
 
 ## 目標を定義

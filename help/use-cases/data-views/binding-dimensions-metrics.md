@@ -440,4 +440,4 @@ Analysis Workspaceは、他のプロファイルからの検索を考慮に入�
 
 >[!MORELIKETHIS]
 >
->[&#x200B; データビューでのバインディングディメンション &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) チュートリアル
+>[&#x200B; データビューでのバインディングディメンション &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=ja) チュートリアル
