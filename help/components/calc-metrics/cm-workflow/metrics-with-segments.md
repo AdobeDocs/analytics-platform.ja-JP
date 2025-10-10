@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; セグメント化された計算指標を実装なしの指標として使用 &#x200B;](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; セグメント化された計算指標を実装なしの指標として使用 &#x200B;](https://video.tv.adobe.com/v/37946?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
 
 {{videoaa}}
 

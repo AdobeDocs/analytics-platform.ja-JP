@@ -60,7 +60,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/338699){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/3446701?captions=jpn){target="_blank"}を参照してください。
 
 {{videoaa}}
 

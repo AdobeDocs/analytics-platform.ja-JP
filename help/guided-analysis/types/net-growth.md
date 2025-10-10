@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423463/?quality=12&learn=on&captions=jpn)
 
 
 ## ユースケース

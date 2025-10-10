@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![&#x200B; モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ &#x200B;](https://video.tv.adobe.com/v/343460/){target="_blank"} を参照してください。
+デモビデオについては、![&#x200B; モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ &#x200B;](https://video.tv.adobe.com/v/3444837?captions=jpn){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

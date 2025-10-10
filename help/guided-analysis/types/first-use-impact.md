@@ -26,7 +26,7 @@ ht-degree: 100%
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 初回使用の影響]**&#x200B;分析では、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。このレポートの横軸はイベント前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。グラフの中央にある縦棒グラフは、特定のユーザーが機能を初めて使用した 0 日目を表します。ユーザーが必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって行われる可能性があるので、0 日目は個々のユーザーごとに異なる意味を持つ場合があります。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423498/?quality=12&learn=on&captions=jpn)
 
 
 ## ユースケース

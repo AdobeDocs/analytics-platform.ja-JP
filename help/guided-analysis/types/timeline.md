@@ -34,7 +34,7 @@ ht-degree: 100%
 >* **管理者**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加してください。*
 >* **管理者以外**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加するには、Customer Journey Analytics 管理者にお問い合わせください。*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435768/?quality=12&learn=on&captions=jpn)
 
 
 
