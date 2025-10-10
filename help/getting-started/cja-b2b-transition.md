@@ -4,12 +4,12 @@ description: Customer Journey AnalyticsからCustomer Journey Analytics B2B edit
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Customer Journey Analytics B2B editionのライセンスを取得してプロビ
 
 1. [ 新しいアカウントベースの接続を作成 ](/help/connections/create-connection.md#account-based-connection)。 含めるオプションコンテナを選択し、[ データセットを追加 ](/help/connections/create-connection.md#add-datasets)、[ 各データセットの設定 ](/help/connections/create-connection.md#dataset-settings) を定義します。 可能な限り、ルックアップレコードデータセットに [ コンテナで一致 ](cja-b2b-concepts-features.md#match-by-container) を使用します。
 
-1. 新しい接続に基づいて [&#128279;](/help/data-views/create-dataview.md) データビューを作成  します。
+1. 新しい接続に基づいて [ データビューを作成 ](/help/data-views/create-dataview.md) します。
 
    * すべての関連するフィールドを、取り込んだデータから指標またはディメンションとして必ず追加してください。
    * 必要に応じて、コンポーネントの設定（永続性、アトリビューションなど）を適用します。

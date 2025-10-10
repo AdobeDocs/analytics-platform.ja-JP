@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[セグメントの作成](seg-create.md)
->&#x200B;>[セグメントビルダー](seg-builder.md)
->&#x200B;>[クイックセグメント](seg-quick.md)
->&#x200B;>[順次セグメント](seg-sequential-build.md)
->&#x200B;>[セグメントの管理](seg-manage.md)
+>>[セグメントビルダー](seg-builder.md)
+>>[クイックセグメント](seg-quick.md)
+>>[順次セグメント](seg-sequential-build.md)
+>>[セグメントの管理](seg-manage.md)

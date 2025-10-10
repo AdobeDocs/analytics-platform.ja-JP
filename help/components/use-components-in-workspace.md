@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceのプロジェクトでコンポーネントを使用する方法を説明します
+description: Analysis Workspace のプロジェクトでのコンポーネントの使用方法について説明します。
 title: プロジェクトでのコンポーネントの使用
 feature: Components
 role: User
@@ -7,7 +7,7 @@ exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -16,7 +16,7 @@ ht-degree: 6%
 
 このユースケースでは、派生フィールドの機能を使用して特定のディメンションの目標を設定し、それらの目標をWorkspace プロジェクトで使用する方法を説明します。
 
-派生フィールドについて詳しくない場合は、[ チュートリアル ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja) および [ ドキュメント ](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
+派生フィールドについて詳しくない場合は、[ チュートリアル ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) および [ ドキュメント ](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
 
 
 ## 目標を定義
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 1. [ マーケティングチャネル関数テンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) を使用して、`Monthly Marketing Channel Revenue Goal (Incremental)` という名前の新しい派生フィールドを作成します。
 
-1. URL の解析ルールと CASE WHEN ルールの組み合わせに基づいて各マーケティングチャネルを適切に識別するために、すべてのルールを定義します。 次に例を示します。
+1. URL の解析ルールと CASE WHEN ルールの組み合わせに基づいて各マーケティングチャネルを適切に識別するために、すべてのルールを定義します。 例：
 
    ![ マーケティングチャネル派生フィールドのルールの定義 ](assets/goals-derived-field-marketing-channel-1.png)
 
@@ -65,7 +65,7 @@ Workspace プロジェクトで目標を使用するには、計算指標機能�
 
    ![ 注文目標の割合 ](assets/calculated-metric-ordersgoalspercent.png)
 
-これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
+これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 例：
 
 ![ マーケティング収益の目標を示すフリーフォームテーブル ](assets/freeform-table-product-order-goals.png)
 
@@ -80,6 +80,6 @@ Workspace プロジェクトで目標を使用するには、計算指標機能�
 
    ![ 売上高目標の割合 ](assets/calculated-metric-revenuegoalspercent.png)
 
-これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
+これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 例：
 
 ![ マーケティング収益の目標を示すフリーフォームテーブル ](assets/freeform-table-marketing-channel-revenue-goals.png)

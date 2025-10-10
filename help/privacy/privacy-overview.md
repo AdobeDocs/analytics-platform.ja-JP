@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Experience Platform で使用されるデータセットに関して作成され
 
 ## プライバシーリクエスト
 
-Adobeは、適用される各国および国際法に従ってプライバシーリクエストを処理します。
+アドビでは、適用される現地の法律と国際法に従ってプライバシーリクエストを処理します。
 
-Customer Journey AnalyticsはAdobe Experience Platformで使用可能なデータを使用するので、Adobeはデータアクセスおよび削除要求を送信するために [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja)0&rbrace;Adobe Experience Platform Privacy Service&rbrace; を提供します。 リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+Customer Journey Analytics は Adobe Experience Platform で使用可能なデータを使用するので、アドビではデータアクセスおよび削除のリクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ja) を提供しています。リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
 
 ## GDPR
 
@@ -43,4 +43,4 @@ Customer Journey Analytics は、EU 一般データ保護規則（GDPR）中央�
 
 >[!MORELIKETHIS]
 >
->* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=ja)
+>* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア同時視聴者数パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[メディア同時視聴者数パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア同時視聴者数パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[メディア同時視聴者数パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/35210/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -81,7 +81,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 |---|---|
 | **[!UICONTROL パネルの日付範囲]** | パネルの日付範囲のデフォルトは「今日」です。 一度に 1 日または複数の月を表示するように編集できます。<br> <br>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
 | **[!UICONTROL 精度]** | 精度のデフォルトは「分」です。<br>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
-| **[!UICONTROL パネルの概要番号]** | 同時視聴者数の日時の詳細を表示するには、概要番号を使用できます。最大値は、ピーク同時実行性の詳細を示します。**[!UICONTROL 最小値]**&#x200B;は、トラフの詳細を示します。  パネルのデフォルトでは「最大値」のみが表示されますが、「最小値」に変更するか、「最大値」と「最小値」の両方を表示するように変更できます。<br><br>内訳を使用している場合は、それぞれの概要番号が表示されます。 |
+| **[!UICONTROL パネルの概要番号]** | 同時視聴者数の日時の詳細を表示するには、概要番号を使用できます。最大値は、ピーク同時実行性の詳細を示します。**[!UICONTROL 最小値]**&#x200B;は、トラフの詳細を示します。  パネルのデフォルトでは「最大値」のみが表示されますが、「最小値」に変更するか、「最大値」と「最小値」の両方を表示するように変更できます。<br><br>分類を使用している場合は、それぞれの概要番号が表示されます。 |
 | **[!UICONTROL シリーズの分類]** | オプションとして、セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。<br>一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。<br>ディメンションをドラッグすると、選択したパネルの日付範囲に基づいて、上位のディメンション項目が自動的に選択されます。<br>日付範囲を比較するには、2 つ以上の日付範囲をシリーズ分類セグメントにドラッグします。 |
 
 次に、**[!UICONTROL 最大のみ]**&#x200B;の概要番号を使用して、**[!UICONTROL 分]**&#x200B;の精度に設定されたパネルの例を示します。**[!UICONTROL その他]**、**[!UICONTROL テーブル]**、**[!UICONTROL 携帯電話]**、**[!UICONTROL ゲームコンソール]**、**[!UICONTROL メディアプレーヤー]**、**[!UICONTROL セットトップボックス]**、**[!UICONTROL テレビ]**&#x200B;に分類されます。
@@ -130,6 +130,6 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 >[!MORELIKETHIS]
 >
 >[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[メディア再生滞在時間パネル](media-playback-time-spent.md)
->&#x200B;>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
+>>[メディア再生滞在時間パネル](media-playback-time-spent.md)
+>>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
 >

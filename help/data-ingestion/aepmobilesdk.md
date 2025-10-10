@@ -85,7 +85,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. [!UICONTROL &#x200B; フィールドグループを追加 &#x200B;] ダイアログで、リストから「**[!UICONTROL AEP Mobile SDK ExperienceEvent]**」フィールドグループを選択します。
+   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、リストから「**[!UICONTROL AEP Mobile SDK ExperienceEvent]**」フィールドグループを選択します。
 
       ![AEP モバイルライフサイクル詳細フィールドグループ ](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -101,7 +101,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
-1. 「[!UICONTROL &#x200B; フィールドプロパティ &#x200B;]」パネルで、[!UICONTROL &#x200B; フィールド名 &#x200B;] に `identification` と入力し、**[!UICONTROL 表示名 &#x200B;] に [!UICONTROL ID]** と入力し、[!UICONTROL &#x200B; タイプ &#x200B;] で **[!UICONTROL オブジェクト]** を選択し、[!UICONTROL &#x200B; フィールドグループ &#x200B;] で **[!UICONTROL ExperienceEvent Core v2.1]** を選択します。
+1. 「[!UICONTROL  フィールドプロパティ ]」パネルで、`identification` フィールド名 [!UICONTROL  に ] と入力し、**[!UICONTROL 表示名]** に [!UICONTROL ID] と入力し、**[!UICONTROL タイプ]** で [!UICONTROL  オブジェクト ] を選択し、**[!UICONTROL フィールドグループ]** で [!UICONTROL ExperienceEvent Core v2.1] を選択します。
 
    >[!NOTE]
    >
@@ -255,7 +255,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトを追跡して Adobe Experience Platform にデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
-を設定するには、[!UICONTROL &#x200B; タグのプロパティ &#x200B;] のリストから、新しく作成したタグを選択します。
+を設定するには、[!UICONTROL  タグのプロパティ ] のリストから、新しく作成したタグを選択します。
 
 
 #### **拡張機能**
@@ -274,7 +274,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 
    ![AEP Mobile SDK拡張機能の設定 ](./assets/aepmobilesdk-extension-datastream.png)
 
-1. [!UICONTROL &#x200B; ドメイン設定 &#x200B;] の下に **0&rbrace;Edge Network ドメイン &rbrace; を入力します。**&#x200B;通常、`<organizationName>.data.adobedc.net` を使用します。
+1. **[!UICONTROL ドメイン設定]** の下に [!UICONTROL 0}Edge Network ドメイン } を入力します。 ]通常、`<organizationName>.data.adobedc.net` を使用します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -290,7 +290,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 
 #### **データ要素**
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグで、モバイルアプリのデータやイベントから読み取り、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
+データ要素は、データ辞書（またはデータマップ）の構築要素です。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグで、モバイルアプリのデータやイベントから読み取り、Adobe Experience Platformにデータを配信するために使用できるデータ要素を設定します。
 
 例えば、モバイルアプリから通信事業者名を収集するとします。
 
@@ -306,7 +306,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 
    - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-   - **[!UICONTROL データ要素タイプ]** リストから [!UICONTROL &#x200B; 通信事業者名 &#x200B;] を選択します。
+   - **[!UICONTROL データ要素タイプ]** リストから [!UICONTROL  通信事業者名 ] を選択します。
 
 
      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-mobile.png)
@@ -338,23 +338,23 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL &#x200B; フォアグラウンド &#x200B;] を選択します。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  フォアグラウンド ] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - ![[!UICONTROL &#x200B; モバイルコア – 前景 &#x200B;]](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「[ プラス ]」をクリックします。
+   - ![ モバイルコア – 前景 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「[!UICONTROL  プラス ]」をクリックします。
 
       - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL &#x200B; 背景 &#x200B;] を選択します。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  背景 ] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - [!UICONTROL ACTIONS] の下の「![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 追加」をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+   - ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「[!UICONTROL  プラス ] 追加」をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
 
-      - 「拡張機能 **」リストから [!UICONTROL 0&rbrace;Adobe Experience Platform Edge Network] を選択します。**
+      - 「拡張機能 **[!UICONTROL 」リストから]** 0}Adobe Experience Platform Edge Network[!UICONTROL  を選択します。]
 
-      - **[!UICONTROL アクションタイプ]** リストから [!UICONTROL Edge Networkにイベントを転送 &#x200B;] を選択します。
+      - **[!UICONTROL アクションタイプ]** リストから [!UICONTROL Edge Networkにイベントを転送 ] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -411,7 +411,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 2. 環境のリストから、正しいインストール ![ ボックス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
 
-   [!UICONTROL &#x200B; モバイルインストール手順 &#x200B;] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連コードスニペットの横にある「コピー ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
+   [!UICONTROL  モバイルインストール手順 ] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連コードスニペットの横にある「コピー ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
 
    ![環境](./assets/environment-mobile.png)
 
@@ -437,7 +437,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -483,7 +483,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -536,7 +536,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Events` を指標、`Push Title` をディメンションにドラッグし、`Event Type` ごとに分類して、モバイルアプリのプッシュ通知の概要と通知に何が起こったかを取得します。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Events` を指標、`Push Title` をディメンションにドラッグし、`Event Type` ごとに分類して、モバイルアプリのプッシュ通知の概要と通知に何が起こったかを取得します。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5-mobile.png)
 

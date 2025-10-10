@@ -7,8 +7,8 @@ feature: Guided Analysis
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1849'
+ht-degree: 100%
 
 ---
 

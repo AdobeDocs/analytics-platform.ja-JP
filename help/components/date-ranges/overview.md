@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspace で日付範囲を指定するには、カレンダーとデータ範囲を使用します。
+description: カレンダーとデータ範囲を使用して、Analysis Workspace で日付範囲を指定します。
 title: 日付範囲の概要
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Workspace プロジェクトでは、通常、パネル内の[カレンダー](/
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327348?format=jpeg&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -47,8 +47,8 @@ Workspace プロジェクトでは、通常、パネル内の[カレンダー](/
 日付範囲は、[任意のコンポーネントを使用する](/help/components/overview.md#analysis-workspace-components)場合と同様に使用します。![カレンダー](/help/assets/icons/Calendar.svg)、**[!UICONTROL 日付範囲]**&#x200B;コンポーネントパネルから日付範囲をドラッグして、コンポーネントを次の場所にドロップします。
 
 - **[!UICONTROL カレンダー]**：現在のカレンダー設定を日付範囲で![切り替えて](/help/assets/icons/Switch.svg)、**[!UICONTROL 置き換え]**&#x200B;ます。
-- **指標列ヘッダー**：指標を![切り替えて](/help/assets/icons/Switch.svg)、**[!UICONTROL 置き換え]**&#x200B;たり、日付範囲を指標として![追加](/help/assets/icons/Add.svg)**[!UICONTROL 追加&#x200B;]**&#x200B;したり、日付範囲コンポーネントを使用して指標を![フィルター](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B;フィルター&#x200B;]**&#x200B;したりできます。
-- **ディメンション列ヘッダー**：現在のディメンションを![切り替え](/help/assets/icons/Switch.svg)て、**[!UICONTROL 置き換え]**&#x200B;ます。新しいディメンションは&#x200B;**[!UICONTROL 日付範囲]**&#x200B;になりました。ディメンションが日付範囲になると、追加の日付範囲をディメンション項目として![追加](/help/assets/icons/Add.svg)**[!UICONTROL 追加&#x200B;]**&#x200B;できます。
+- **指標列ヘッダー**：指標を![切り替えて](/help/assets/icons/Switch.svg)、**[!UICONTROL 置き換え]**&#x200B;たり、日付範囲を指標として![追加](/help/assets/icons/Add.svg)**[!UICONTROL 追加&#x200B;]**したり、日付範囲コンポーネントを使用して指標を![フィルター](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B;フィルター&#x200B;]**したりできます。
+- **ディメンション列ヘッダー**：現在のディメンションを![切り替え](/help/assets/icons/Switch.svg)て、**[!UICONTROL 置き換え]**&#x200B;ます。新しいディメンションは&#x200B;**[!UICONTROL 日付範囲]**&#x200B;になりました。ディメンションが日付範囲になると、追加の日付範囲をディメンション項目として![追加](/help/assets/icons/Add.svg)**[!UICONTROL 追加&#x200B;]**できます。
 - **ディメンション項目**：特定のディメンション項目を日付範囲別に![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL 分類]**&#x200B;します。
 
 また、フリーフォームテーブルのビジュアライゼーションで、日付範囲列を直接追加することもできます。

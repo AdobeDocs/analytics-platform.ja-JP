@@ -4,12 +4,12 @@ description: Customer Journey Analytics B2B editionの一般的なユースケ�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -52,13 +52,13 @@ Customer Journey Analytics B2B editionが提供できる分析のメリットを
 
 [ 詳細なユースケースの記事 ](grow-key-accounts.md) では、Customer Journey Analytics B2B editionが主要アカウントの成長にどのように役立つかについて説明します。
 
-### 製品の価値を構築
+### 製品価値の構築
 
 製品リリースと製品使用状況が顧客満足度に与える影響を、アカウントレベルとユーザーレベルで測定します。 そのため、製品の機能を最適化し、将来の製品開発に役立てることができます。
 
 [ 詳細なユースケースの記事 ](build-product-value.md) では、Customer Journey Analytics B2B editionが製品価値の構築にどのように役立つかについて説明します。
 
 
-## セットアップ
+## 設定
 
 [ 設定に関する記事 ](setup.md) では、これらのユースケースをサポートするためのCustomer Journey Analytics B2B editionの設定方法について説明します。

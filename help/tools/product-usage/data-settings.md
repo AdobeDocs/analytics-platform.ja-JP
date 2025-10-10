@@ -3,7 +3,7 @@ title: 製品の使用状況データ設定
 description: 製品の使用状況設定を有効化、無効化または設定します。
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
 source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 

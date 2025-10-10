@@ -70,7 +70,7 @@ Adobe Experience Platform の場合：
 
 1. ![クエリを作成](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B;クエリを作成&#x200B;**]** を選択します。
 
-1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
 1. クエリを実行するには、SQL 文を入力し、![再生](assets/Smock_Play_18_N.svg)ボタンを選択します（または `[SHIFT]` + `[ENTER]` キーを押します）。
 
@@ -85,9 +85,9 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -110,7 +110,7 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
    1. Power BI で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -153,7 +153,7 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
    1. Tableau Desktop で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
@@ -199,7 +199,7 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
    1. Looker で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -226,7 +226,7 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
    1. Jupyter Notebook で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -250,7 +250,7 @@ Adobe Experience Platform の場合：
 
    1. 上部のバーから「**[!UICONTROL **&#x200B;資格情報&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの `cja` データベースを選択します。 例：`prod:cja`。
+   1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
    1. Jupyter Notebook で必要に応じて![コピー](assets/Smock_Copy_18_N.svg)を使用して、PostgreSQL 資格情報の各パラメーター（[!UICONTROL ホスト]、[!UICONTROL ポート]、[!UICONTROL データベース]、[!UICONTROL ユーザー名]など）をコピーします。
 
@@ -519,7 +519,7 @@ Customer Journey Analytics の仕組みの基本的な性質により、正確�
 
 #### 条件付き指標
 
-`SUM` 関数または `COUNT` 関数に `IF` 句または `CASE` 句を埋め込むと、選択した指標に固有のセグメント化を追加できます。 これらの句を追加する方法は、Workspaceのレポートテーブルで指標列にセグメントを適用する場合と似ています。
+`IF` 関数または `CASE` 関数に `SUM` 句または `COUNT` 句を埋め込むと、選択した指標に固有のセグメント化を追加できます。 これらの句を追加する方法は、Workspaceのレポートテーブルで指標列にセグメントを適用する場合と似ています。
 
 例：
 

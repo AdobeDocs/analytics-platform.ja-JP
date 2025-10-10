@@ -1,13 +1,13 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace の概要
-description: Adobe Analytics の主要な分析ツールである  Analysis Workspace について説明します。プロジェクト、パネル、テーブル、ビジュアライゼーション、その他のコンポーネントを使用して、データに活気を与え、分析をキュレートして共有します。
+description: Adobe Analytics の主要な分析ツールである  Analysis Workspace について説明します。プロジェクト、パネル、テーブル、ビジュアライゼーション、その他のコンポーネントを使用して、データを活用し、分析をキュレートして共有します。
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/35774/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Analysis Workspace のほとんどの機能は、ドラッグ＆ドロップの�
 
 Workspace メニューとショートカットまたはホットキーを使用して、機能を利用することもできます。ショートカットキーは、ブラウザーを実行しているオペレーティングシステムによって異なります。概要について詳しくは、以下の表を参照してください。
 
-キーボードでは、次の記号が使用される場合があります。
+キーボードでは、次のシンボルが使用される場合があります。
 
 - **[!UICONTROL *Shift キー&#x200B;*]**の代わりに**⇧**。
 - **[!UICONTROL *cmd *]**（コマンド）の代わりに&#x200B;**⌘**。

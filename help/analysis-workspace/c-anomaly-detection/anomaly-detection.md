@@ -7,7 +7,7 @@ role: User
 source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Analysis Workspace 内で、コンテキスト上のデータの異常値を表示および分析できます。
 
-[異常値検出のビデオチュートリアル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=ja)（4:53）
+[ 異常値検出のビデオチュートリアル ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=ja) （4:53）
 
 異常値検出は、以前のデータに関連して特定の指標がどのように変化したかを判定するための統計的手法です。
 

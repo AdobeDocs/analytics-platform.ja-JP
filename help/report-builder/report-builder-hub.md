@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -28,7 +28,7 @@ Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg)**[!
 
 * ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Create]** して [ 新しいデータブロックを作成 ](create-a-data-block.md) します。
 * ![TableManage](/help/assets/icons/TableManage.svg)**[!UICONTROL Manage]** 既存のデータブロックを [ 管理 ](manage-reportbuilder.md) します。
-* ![ カレンダー ](/help/assets/icons/Calendar.svg) **[!UICONTROL スケジュール]**&#x200B;[ ワークブックをメールで送信するスケジュールを管理 ](schedule-reportbuilder.md) します。
+* ![ カレンダー ](/help/assets/icons/Calendar.svg) **[!UICONTROL スケジュール]**[ ワークブックをメールで送信するスケジュールを管理 ](schedule-reportbuilder.md) します。
 
 ## コマンドパネル
 
@@ -70,6 +70,6 @@ Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg)**[!
 >[!MORELIKETHIS]
 >
 >[ データビューの選択 ](select-data-view.md)
->[日付範囲を選択 ](select-date-range.md)
->[フィルターの操作 ](work-with-filters.md)
+>>[日付範囲を選択 ](select-date-range.md)
+>>[フィルターの操作 ](work-with-filters.md)
 >

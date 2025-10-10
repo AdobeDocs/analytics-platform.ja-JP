@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## ジャーニーキャンバスの概要
 
-ジャーニーキャンバスについて詳しくは [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)ジャーニーキャンバスの概要を参照してください。
+ジャーニーキャンバスについて詳しくは [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)ジャーニーキャンバスの概要を参照してください。
 
 * 主な特長
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
    または
 
-   「[ ビジュアライゼーションの概要 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) の [ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) の節で説明されている任意の方法で、ジャーニーのキャンバスビジュアライゼーションを追加します。
+   「[ ビジュアライゼーションの概要 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) の [ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) の節で説明されている任意の方法で、ジャーニーのキャンバスビジュアライゼーションを追加します。
 
    ![ジャーニー キャンバスの構成 ](assets/journey-canvas-configure.png)
 
@@ -47,7 +47,7 @@ ht-degree: 1%
    |---------|----------|
    | [!UICONTROL **プライマリ指標**] | ジャーニーの各ノードの割合と数値を計算する際に使用する指標を決定します。<p>**メモ**：各パーセンテージと数値に含まれるデータの範囲は、「**[!UICONTROL ジャーニーキャンバスコンテナ]**」フィールドで選択した指標によって決定されます。 例えば、**[!UICONTROL ユーザー]** がコンテナとして設定されている場合、ジャーニーに表示される統計は特定のユーザーに対して複数のセッションにまたがります。 **[!UICONTROL セッション]** がコンテナとして設定されている場合、ジャーニーに表示される統計は、特定のユーザーに対して定義された単一のセッションに制限されます。</p><p>プライマリ指標が各ノードのパーセンテージと数値に与える影響について、次の例で考えてみます。</p><ul><li>_人物_ が主な指標で、_人物_ がコンテナの場合、ジャーニーの後続の各ノードの条件に一致するイベントを持つユーザーのみがジャーニーに移動します。 フォールアウトは、あるユーザーがジャーニーの直近の次のノードのいずれにも到達しなかった場合にノードで発生します。 サイト上で他のアクションを実行した可能性がありますが、その直後のノードで定義された条件を満たしていません。</li><li>_人物_ が主な指標で、_セッション_ がコンテナである場合、1 つのセッション内にジャーニーの各ノードの条件に一致するイベントを持つ人物のみがジャーニーを通じて移動します。 フォールアウトは、あるユーザーが 1 つのセッション内にジャーニーの直近の次のノードのいずれにも到達しなかった場合にノードで発生します。 セッション内でサイトに対して他のアクションを実行したが、その直後のノードで定義された条件を満たしていない可能性があります。</li></ul> <p>主要指標は、ジャーニーキャンバスビジュアライゼーションの次の側面に影響します。</p><ul><li>各ノードに表示される合計数。  <p>例えば、イベントが主な指標の場合、各ノードは、そのノード（およびジャーニーでそのノードに至る前のノード）の条件に一致するイベントを持ったユーザーの数を表示します。</p></li><li>各ノードに表示されるパーセンテージ。 （ビジュアライゼーションが作成されたら、**[!UICONTROL パーセンテージ値]** ドロップダウンメニューを使用して、合計のパーセンテージ、前のノードのパーセンテージ、開始ノードのパーセンテージのいずれかを選択して表示できます）。<p>例えば、イベントが主な指標の場合、各ノードは、そのノード（およびジャーニーでそのノードに至る前のノード）の条件に一致するイベントを持つユーザーの割合を示します。</p></li><li>ディメンションがビジュアライゼーションに追加されると、プライマリ指標に基づいて、ビジュアライゼーションの上位 3 ノードが追加されます。</li></ul> |
    | [!UICONTROL **セカンダリ指標**] | ジャーニーの各ノードの割合と数値を計算する際に使用するセカンダリ指標を決定します。 セカンダリ指標はオプションです。 <p>**メモ**：各パーセンテージと数値に含まれるデータの範囲は、「**[!UICONTROL ジャーニーキャンバスコンテナ]**」フィールドで選択した指標によって決定されます。 例えば、**[!UICONTROL ユーザー]** がコンテナとして設定されている場合、ジャーニーに表示される統計は特定のユーザーに対して複数のセッションにまたがります。 **[!UICONTROL セッション]** がコンテナとして設定されている場合、ジャーニーに表示される統計は、特定のユーザーに対して定義された単一のセッションに制限されます。</p><p>セカンダリ指標が設定されると、ジャーニーキャンバスビジュアライゼーションの次の側面に影響します。</p><ul><li>プライマリ指標の下の各ノードに表示される合計数。 <p>例えば、アカウントがセカンダリ指標の場合、アカウント数は、ジャーニーでそのノードに到達したすべての人について、ノードに表示されます。</p></li><li>プライマリ指標の下の各ノードに表示されるパーセンテージ。 （ビジュアライゼーションが構築されたら、合計に対する割合または開始ノードに対する割合を選択できます）。</li><p>例えば、セッションがセカンダリ指標の場合、各ノードは、ジャーニーでそのノードに到達したセッションの割合（合計の割合または開始ノードの割合）を示します。</p></li></ul> |
-   | [!UICONTROL **Journey Optimizer ジャーニー**]<!-- name? --> | ジャーニーキャンバスでの分析の基礎として使用するJourney Optimizer ジャーニーを選択します。 使用可能なジャーニーのステータスは、ライブ、停止、完了です <p>または、Analysis Workspace内で分析を構築する空白のキャンバスが必要な場合は、このオプションを空白のままにします。</p> <p>ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 詳しくは、[&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)ジャーニーキャンバスの概要 [ の ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys)Journey Optimizer ジャーニーの分析  を参照してください。</p><p>**メモ**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択したのと同じデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
+   | [!UICONTROL **Journey Optimizer ジャーニー**]<!-- name? --> | ジャーニーキャンバスでの分析の基礎として使用するJourney Optimizer ジャーニーを選択します。 使用可能なジャーニーのステータスは、ライブ、停止、完了です <p>または、Analysis Workspace内で分析を構築する空白のキャンバスが必要な場合は、このオプションを空白のままにします。</p> <p>ジャーニーキャンバスでJourney Optimizer ジャーニーを分析すると、ジャーニーは、Journey Optimizerの場合と同じ順序、順序、構造で表示されます。 詳しくは、[ジャーニーキャンバスの概要 ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) の [Journey Optimizer ジャーニーの分析 ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) を参照してください。</p><p>**メモ**：このオプションは、ビジュアライゼーションを追加しているJourney Optimizer パネルで選択したのと同じデータビューでAnalysis Workspace データが検出された場合にのみ表示されます。 Analysis Workspaceのパネル上のデータビューの変更について詳しくは、[Analysis Workspaceの概要 ](/help/analysis-workspace/home.md) を参照してください。</p> |
 
 1. （オプション）「[!UICONTROL **詳細設定を表示**]」を選択して、次の情報を指定します。
 

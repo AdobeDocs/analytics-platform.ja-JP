@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >あるユーザーから別のユーザーへの 1 対 1 の転送のみ実行できます。1 対多または多対 1 の転送はサポートされていません。
+   >1 人のユーザーから別のユーザーに 1:1 の転送のみを行うことができます。 1 対多または多対 1 の転送はサポートされていません。
 
 
 1. ユーザーを選択すると、画面の下部に「アセットを転送」オプションが表示されます。

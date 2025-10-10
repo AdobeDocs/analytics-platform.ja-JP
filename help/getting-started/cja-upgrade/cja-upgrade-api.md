@@ -1,6 +1,6 @@
 ---
-title: タグプロパティを作成して web SDK拡張機能を追加
-description: タグプロパティを作成し、web SDK拡張機能を追加する方法について説明します
+title: タグプロパティを作成し、Web SDK 拡張機能を追加
+description: タグプロパティを作成し、Web SDK 拡張機能を追加する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 60%
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 60%
 
 Adobe Experience Platform Web SDK JavaScript のビルドプロセスを制御することを目的に、NPM パッケージをインストールすると、Platform Web SDK をインストールできます。
 
-1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk) にある [ オプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) の節の情報に従います。
+1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) にある [ オプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk) の節の情報に従います。
 
 {{upgrade-final-step}}
 

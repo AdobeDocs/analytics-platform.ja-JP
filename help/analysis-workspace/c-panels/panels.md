@@ -5,7 +5,7 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 100%
 
@@ -81,9 +81,9 @@ ht-degree: 100%
 
 ![パネルの管理](assets/manage-panel.png)
 
-* パネルを折りたたむには、![ChevronDown](/help/assets/icons/ChevronDown.svg) を選択します。
-* 折りたたまれたパネルを表示するには、![ChevronLeft](/help/assets/icons/ChevronLeft.svg) を選択します。
-* パネルを削除するには、![CrossSize400](/help/assets/icons/CrossSize200.svg) を選択します。取り消すには、**[!UICONTROL 編集]**／**[!UICONTROL 取り消し]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
+* パネルを折りたたむには、![下向き山形記号](/help/assets/icons/ChevronDown.svg) を選択します。
+* 折りたたまれたパネルを表示するには、![左向き山形記号](/help/assets/icons/ChevronLeft.svg) を選択します。
+* パネルを削除するには、![クロスサイズ400](/help/assets/icons/CrossSize200.svg) を選択します。元に戻すには、**[!UICONTROL 編集]**／**[!UICONTROL 元に戻す]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
 * パネルを移動するには、ヘッダーにポインタを合わせた時に、![移動](/help/assets/icons/Move.svg)が表示されたら、パネルをドラッグ＆ドロップします。
 
 
@@ -167,7 +167,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/327487?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

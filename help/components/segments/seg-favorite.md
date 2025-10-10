@@ -7,11 +7,11 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# セグメントをお気に入りとしてマーク
+# セグメントのお気に入りへの登録
 
 セグメントをお気に入りとしてマークできます。 セグメントをお気に入りとしてマークすると、セグメントを整理するのに役立ちます。 すべてのユーザーがセグメントを好んで使用できます。
 

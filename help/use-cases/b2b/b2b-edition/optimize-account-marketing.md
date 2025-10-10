@@ -4,12 +4,12 @@ description: Customer Journey Analytics B2B editionを使用してアカウン�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -108,7 +108,7 @@ MQL の生成に対する影響を視覚化する（マーケティングの選�
 1. 「**[!UICONTROL 次で終わる]**」に **[!UICONTROL MQL 認定済み]** を選択します。
 1. **[!UICONTROL パスディメンション]** に **[!UICONTROL コンテンツタイプ]** を選択します。
 1. **[!UICONTROL 詳細設定を表示]** を選択します。
-1. **[!UICONTROL 列数]** に `5` を入力します。
+1. `5` 列数 **[!UICONTROL に]** を入力します。
 1. **[!UICONTROL フローコンテナ]** の **[!UICONTROL アカウント]** を選択します。
 
    ![B2B のユースケース – ユーザー内イベント – フロー設定 ](assets/b2b-uc-optimize-marketing-flow-config.png)

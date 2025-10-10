@@ -25,7 +25,7 @@ ht-degree: 34%
 >* セッションベースのセグメントをセッションコンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する。
 
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## タッチポイントからのセグメントの作成
@@ -34,7 +34,7 @@ ht-degree: 34%
 
    ![ タッチポイントからセグメントを作成がハイライト表示されたタッチポイントドロップダウンメニュー。](assets/fallout-createsegment.png)
 
-   [!UICONTROL &#x200B; セグメントビルダー &#x200B;] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
+   [!UICONTROL  セグメントビルダー ] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
 
    ![ セグメントビルダーには、事前入力済みおよび事前定義済みの順次セグメントが表示されます。](assets/fallout-definesegment.png)
 
@@ -54,7 +54,7 @@ ht-degree: 34%
 
 フォールアウトビジュアライゼーションでは、無数のセグメントを比較できます。
 
-1. 比較するセグメントを左側の [!UICONTROL &#x200B; セグメント &#x200B;] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
+1. 比較するセグメントを左側の [!UICONTROL  セグメント ] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
 1. 3 つのセグメントをビジュアライゼーションの上部にあるセグメント ドロップゾーンにドラッグします。
 
 

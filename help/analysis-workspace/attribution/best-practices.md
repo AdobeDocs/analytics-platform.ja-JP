@@ -53,14 +53,14 @@ ht-degree: 66%
 
 *「特定の業界（旅行業など）では、顧客が商品を購入する前に多くの調査を行うので、アトリビューションウィンドウは 30 日ではなく 60 日か 90 日です。*」という仮説を仮定します。
 
-この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
+この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
 
 ## アルゴリズムアトリビューションの使用
 
-すべての質問に対して満足のいく回答を提供するアトリビューションモデルがまだない場合は、[アルゴリズムアトリビューション](/help/analysis-workspace/attribution/algorithmic.md)を使用できます。考えられる多数の仮説と組み合わせを検証することは非常に難しいので、アルゴリズムアトリビューションでは、組み込みアルゴリズムを使用して、ディメンション項目全体にクレジットを割り当てます。
+すべての質問に対して満足のいく回答を提供するアトリビューションモデルがまだない場合は、[アルゴリズムアトリビューション](/help/analysis-workspace/attribution/algorithmic.md)を使用できます。考えられる多数の仮説と組み合わせを検証することは非常に難しいので、アルゴリズムアトリビューションでは、ビルトインのアルゴリズムを使用して、ディメンション項目全体にクレジットを割り当てます。
 
 ## その他の考慮事項
 
 * Analysis Workspace だけに依存するのではなく、データサイエンティストのサービスを使用する必要性が生じる場合があります。
 * Adobe データフィードのように、生データを使用できます。
-* [Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) の使用を検討してください。例えば、インプレッションデータを検討する場合などに有効です。
+* [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) の使用を検討してください。例えば、インプレッションデータを検討する場合などに有効です。

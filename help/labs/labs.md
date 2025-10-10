@@ -17,7 +17,7 @@ ht-degree: 81%
 
 >[!IMPORTANT]
 >
->Customer Journey Analyticsラボは、HIPAA に対応したサービスではなく、許可された医療データ（個人の医療Customer Journey Analyticsや PHI など）を含む、組織が情報の中で使用することが許可されている機密性の高い個人データの処理に使用することはできません。
+>Customer Journey Analytics Labs は、HIPAA 対応のサービスではなく、組織がCustomer Journey Analyticsで使用することが許可されている許可済み医療データ（個人情報や PHI など）を含む、機密性の高い個人データの処理に使用することはできません。
 
 ## 要件
 

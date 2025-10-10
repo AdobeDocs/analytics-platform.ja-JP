@@ -25,9 +25,9 @@ ht-degree: 8%
 | イベント | タイムスタンプ | ページ名 | デバイス ID | 電子メール |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 12:01 | ホームページ | `1234` | |
-| 2 | 2023-05-12 12:02 | 製品紹介ページ | `1234` | |
+| 2 | 2023-05-12 12:02 | 製品ページ | `1234` | |
 | 3 | 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` |
-| 4 | 2023-05-12 12:07 | 製品紹介ページ | `1234` | |
+| 4 | 2023-05-12 12:07 | 製品ページ | `1234` | |
 | 5 | 2023-05-12 12:08 | 注文の成功 | `1234` | `cassidy@a.com` |
 
 この表からわかるように、イベント 3 と 5 で認証が行われると、デバイス ID とユーザー ID の間にリンクが形成され始めます。 マーケティング活動がユーザーレベルに与える影響を理解するには、これらの未認証イベントを適切なユーザーに関連付ける必要があります。
@@ -49,16 +49,16 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最終認証アトリビューション
 
-Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience PlatformID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルール ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) を参照してください。
+Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience Platform ID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) を参照してください。
 
 ステッチで last-auth アトリビューションを使用すると、次の表に示すように、ステッチされた ID が解決されます。
 
 | タイムスタンプ | ページ名 | デバイス ID | 電子メール | ステッチ ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | ホームページ | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:02 | 製品紹介ページ | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | 製品ページ | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 2023-05-12 12:07 | 製品紹介ページ | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:07 | 製品ページ | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:08 | 注文の成功 | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | ホームページ | `1234` | | `cassidy@a.com` |
 
@@ -72,9 +72,9 @@ Last-auth は、共有デバイスから最後に認証を行ったユーザー�
 | タイムスタンプ | ページ名 | デバイス ID | 電子メール | ステッチ ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | ホームページ | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | 製品紹介ページ | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | 製品ページ | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:03 | 注文の成功 | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | 製品紹介ページ | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:07 | 製品ページ | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:08 | 注文の成功 | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | ホームページ | `1234` | | `cassidy@a.com` |
 
@@ -123,7 +123,7 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 2. **共有デバイスに対するイベントの帰属**
 
-   識別された共有デバイスについて、これらのデバイスに起因する可能性のあるイベントの数を合計から決定します。 このアトリビューションは、共有デバイスがデータに与える影響と分析に対する影響に関するインサイトを提供します。
+   識別された共有デバイスについて、これらのデバイスに起因する可能性のあるイベントの数を合計から決定します。 このアトリビューションは、共有デバイスがデータに与える影響と分析への影響をinsightに提供します。
 
    ```sql
    SELECT COUNT(*) AS total_events,

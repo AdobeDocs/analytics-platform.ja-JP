@@ -13,19 +13,19 @@ ht-degree: 41%
 
 # Target レポート
 
-Customer Journey Analyticsの Target レポートを使用すると、Adobe Target アクティビティをCustomer Journey Analyticsで直接測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行される機能と同等ですが、Adobe Experience Platform（AEP）への接続も備えています。
+Customer Journey Analyticsの Target レポートを使用すると、Customer Journey Analyticsで直接Adobe Target アクティビティを測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行されるものと同等ですが、Adobe Experience Platform（AEP）への接続性も備えています。
 
-Target 分類ルックアップデータセット（デフォルトではExperience PlatformCustomer Journey Analyticsで使用できます）を Target Connection に追加することで、Target レポートツール、Target オーダーアトリビューション、その他の機能を適切に利用できるようになります。 Customer Journey Analyticsデータビュー内で行われた軽微な準備と調整のみで、これらのアクティビティは、Target データを CJA に直接送信したいユーザーが直ちに利用できるようになります。
+Target 分類ルックアップデータセット（Experience Platformではデフォルトで使用できます）をCustomer Journey Analytics Connection に追加することで、Target レポートツール、Target 注文アトリビューション、その他の機能を適切に利用できるようになりました。 Customer Journey Analytics データビュー内で行われた軽微な準備と調整のみで、これらのアクティビティは、Target データをCJAに直接送信したいユーザーが直ちに利用できるようになります。
 
 ## プライマリの利点
 
 * マーケターは、Customer Journey Analytics の成功指標を Target アクティビティレポートにいつでも動的に適用できます。アクティビティを実行する前にすべての項目を指定する必要がありません。
 * マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライゼーションをさらに分析できます。
-* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。どちらのパーソナライゼーション製品も Customer Journey Analytics に接続して、web パーソナライズ機能の全体像を把握できます。
+* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。どちらのパーソナライゼーション製品も Customer Journey Analytics に接続して、web パーソナライゼーションの全体像を把握できます。
 
 ## メモと考慮事項
 
-ターゲット分類イベントデータセットが CJA 接続に追加されたら、これらのコンポーネントがディメンションとして追加された後、CJA データビュー内で次のような小規模な調整がいくつか行われます。
+Target 分類イベントデータセットがCJA Connection に追加されたら、これらのコンポーネントがディメンションとして追加された後、CJA データビュー内で次のような小規模な調整が行われます。
 
 * 永続性を Target での追跡方法と同様に設定します（適切な設定を確認するには、Target のコンサルタントまたは顧客にお問い合わせください）。
 

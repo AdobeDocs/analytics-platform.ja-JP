@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 手順 2：アップグレードパスの選択
 
-+++このセクションを展開すると、このページの情報がアップグレードプロセス全体のどこに当てはまるかがわかります。これまでのアップグレード手順がすべて完了していることを確認してください。
++++このセクションを展開すると、このページの情報が大きなアップグレードプロセスのどこに適合するかを確認できます。 これまでのアップグレード手順がすべて完了していることを確認してください。
 
 この節に進む前に、以前のアップグレードタスクがすべて完了していることを確認してください。
 
@@ -122,7 +122,7 @@ AppMeasurement または Adobe Analytics 拡張機能を使用して Adobe Analy
 
 +++
 
-+++Adobe Analytics を Experience Platform Web SDK に移行
++++Adobe AnalyticsのExperience Platform Web SDKへの移行
 
 | メリット | デメリット |
 |----------|---------|
@@ -132,11 +132,11 @@ AppMeasurement または Adobe Analytics 拡張機能を使用して Adobe Analy
 
 +++
 
-+++Analytics ソースコネクタを使用
++++Analytics ソースコネクタの使用
 
 | メリット | デメリット |
 |----------|---------|
-| <ul><li>最も時間がかかり、要求が厳しいアップグレードパス。 <p>最小限の投資で迅速に Customer Journey Analytics へとデータを移行する</p></li></ul> | <ul><li>**データが Edge Network に送信されない**： <p>その結果、次のようなデメリットが生じます。</p><ul><li>すべてのアップグレードパスにわたるレポートの[待ち時間](/help/technotes/guardrails.md#latencies)が最高レベル。 リアルタイムパーソナライゼーションのユースケースには最適化されていません。</li><li>データを他の Adobe Experience Platform アプリケーションと共有することはできません。Customer Journey Analytics にのみ制限されます</li><li>Adobe Analytics の用語（prop、eVar、イベントなど）に依存します</li></ul><li>**今後 Web SDKに移行するのは難しい**：最終的には、Experience Platform Web SDK が提供するメリットを利用したいと考えるようになります。Experience Platform Web SDK の使用を開始するには、新しい実装を行う必要があります。</li><li>**スキーマで Analytics Experience Event フィールド グループを使用**：このフィールドグループは、Customer Journey Analytics スキーマでは必要のない多くの Adobe Analytics イベントを追加します。これにより、Customer Journey Analytics に必要なスキーマよりも雑然とした複雑なスキーマが作成される可能性があります。</li></ul><p>これらのデメリットにより、アドビでは、Analytics ソースコネクタを Experience Platform Web SDK の新しい実装と組み合わせて使用することをお勧めします。<!-- For more information about this recommended upgrade path, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) --></p> |
+| <ul><li>最も時間がかかり、要求が厳しいアップグレードパス。 <p>最小限の投資で迅速に Customer Journey Analytics へとデータを移行する</p></li></ul> | <ul><li>**データが Edge Network に送信されない**： <p>その結果、次のようなデメリットが生じます。</p><ul><li>すべてのアップグレードパスにわたるレポートの[待ち時間](/help/technotes/guardrails.md#latencies)が最高レベル。 リアルタイムパーソナライゼーションのユースケースには最適化されていません。</li><li>データを他の Adobe Experience Platform アプリケーションと共有することはできません。Customer Journey Analytics にのみ制限されます</li><li>Adobe Analytics の用語（prop、eVar、イベントなど）に依存します</li></ul><li>**今後 Web SDKに移行するのは難しい**：最終的には、Experience Platform Web SDK が提供するメリットを利用したいと考えるようになります。Experience Platform Web SDK の使用を開始するには、新しい実装を行う必要があります。</li><li>**スキーマで Analytics エクスペリエンスイベントのフィールドグループを使用**：このフィールドグループは、Customer Journey Analytics スキーマでは必要のない多くの Adobe Analytics イベントを追加します。これにより、Customer Journey Analytics に必要なスキーマよりも雑然とした複雑なスキーマが作成される可能性があります。</li></ul><p>これらのデメリットにより、アドビでは、Analytics ソースコネクタを Experience Platform Web SDK の新しい実装と組み合わせて使用することをお勧めします。<!-- For more information about this recommended upgrade path, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) --></p> |
 
 {style="table-layout:auto"}
 
@@ -166,7 +166,7 @@ Platform にデータを送信するように Adobe Analytics Web SDK 実装を�
 
 既存の Adobe Analytics スキーマを使用するか、他の Platform サービスの使用を開始する際に組織のニーズに合わせて独自の XDM スキーマに更新するかを選択できます。
 
-+++Adobe Analytics Web SDK 実装で Adobe Analytics スキーマを使用
++++Adobe Analytics スキーマをAdobe Analytics Web SDK実装で使用します。
 
 | メリット | デメリット |
 |----------|---------|
@@ -174,7 +174,7 @@ Platform にデータを送信するように Adobe Analytics Web SDK 実装を�
 
 +++
 
-+++Adobe Analytics Web SDK 実装で独自の XDM スキーマを使用
++++Adobe Analytics Web SDKの実装で独自の XDM スキーマを使用
 
 | メリット | デメリット |
 |----------|---------|

@@ -175,15 +175,15 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 様々なソースからデータを取り込むことができます。 次に、利用できる多くのソースの一部を示します。
 
-- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
+- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
 
-- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
+- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
 
-- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
+- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
 
 ソースコネクタを設定するには：
 
-1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL &#x200B; ソース &#x200B;] を選択します。
+1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL  ソース ] を選択します。
 
 1. 使用可能なソースコネクタのリストからソースコネクタを選択します。
 
@@ -213,7 +213,7 @@ Adobe Analytics ソースコネクタの使用方法については、[ 従来�
 
 HTTP API ソースコネクタの使用方法について詳しくは、[ ストリーミングデータの取り込みと使用 ](./streaming.md) を参照してください。
 
-ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#terms-and-conditions)を参照してください。
+ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 
 
 ## 接続の設定
@@ -224,7 +224,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -270,7 +270,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -323,7 +323,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

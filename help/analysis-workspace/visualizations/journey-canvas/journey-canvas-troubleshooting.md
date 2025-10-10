@@ -7,7 +7,7 @@ exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ジャーニーキャンバスでは、ジャーニーの後半に到達するノードに対して、ジャーニーの前半に到達するノードよりも高い割合または数が表示される可能性があります。
 
-つまり、常にファネル型（ステップごとにパーティシペーションが減少する）のフォールアウトビジュアライゼーションとは異なり、ジャーニーキャンバスビジュアライゼーションは、ジャーニーの後のステップでのパーティシペーションが、前のステップよりも高くなる可能性があります。
+つまり、常にfunnel形（ステップごとにパーティシペーションが減少する）のフォールアウトビジュアライゼーションとは異なり、ジャーニーキャンバスのビジュアライゼーションは、ジャーニーの後のステップでのパーティシペーションが、前のステップよりも高くなる可能性があります。
 
 この問題は、次のシナリオで発生する可能性があります。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 この例では、ジャーニーのコンテナ設定である「ユーザー」が、後続のセッションで 3 番目のノードのイベント（「チェックアウト」）がカウントされることを決定する際に重要な役割を果たします。
 
-また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) の [ジャーニーキャンバスビジュアライゼーションの作成を開始 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) を参照してください 
+また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [ の ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)ジャーニーキャンバスビジュアライゼーションの作成を開始 [ を参照してください ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
@@ -115,7 +115,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 +++
 
-+++全体の割合
++++合計の割合
 
 このジャーニーのノードには、「**[!UICONTROL パーセンテージ値]**」フィールドが **[!UICONTROL 合計パーセント]** に設定されている場合、次の統計が含まれます。
 

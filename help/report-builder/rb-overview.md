@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
-# Report Builderの概要
+# Report Builder の概要
 
 Customer Journey AnalyticsのReport Builderを使用すると、Adobe Customer Journey Analytics データを使用して、Microsoft Excel 内でカスタムレポートを簡単に作成、編集、更新できます。
 
@@ -48,8 +48,8 @@ Customer Journey Analytics用のReport BuilderはMicrosoft Excel アドインで
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/3452581?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
-Customer Journey Analytics用Report Builderは、[Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101) からダウンロードできます。
+Customer Journey Analytics用Report Builderは、[Microsoft Store](https://appsource.microsoft.com/ja-jp/product/Office365/WA200003101) からダウンロードできます。

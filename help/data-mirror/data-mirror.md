@@ -9,7 +9,7 @@ exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Data Mirrorには、データベース同期に必要な次の機能が用意さ
 
 Data Mirrorを使用して、ソースシステムから直接変更内容を取り込み、スキーマの整合性を適用し、分析、journey orchestration、コンプライアンスワークフローでデータを使用できるようにします。 Data Mirrorを使用すると、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスが不要になり、実装が迅速化されます。 この排除により、削除やデータハイジーン操作を正確に制御して、データガバナンスを強化できます。
 
-Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
+Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
 
 ## Customer Journey AnalyticsのData Mirror
 
@@ -44,12 +44,12 @@ Data Mirrorに関する [Experience Platformのドキュメントも参照して
 
 Customer Journey Analytics用Experience Platform Data Mirrorは、選択した data warehouse ネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery] および [!DNL Snowflake]）で使用できます。 Customer Journey Analytics版のExperience Platform Data Mirrorでは、次のアプリケーションまたはコンポーネントを適切に設定する必要があります。
 
-* [データウェアハウスネイティブなソリューション](datawarehouse.md)
+* [データウェアハウスネイティブソリューション](datawarehouse.md)
 * [Experience Platform](aep.md)
 * [Customer Journey Analytics](cja.md)
 
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する ](model-based.md)
->&#x200B;>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[モデルベースのスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

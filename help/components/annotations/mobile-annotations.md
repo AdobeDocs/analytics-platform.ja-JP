@@ -8,12 +8,12 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
-# モバイルスコアカード注釈
+# モバイルスコアカードの注釈
 
 Analysis Workspaceで作成される注釈をモバイルスコアカードに表示できます。 モバイルスコアカードの注釈を使用すると、組織とキャンペーンに関するコンテキストデータのニュアンスやインサイトを共有できます。
 

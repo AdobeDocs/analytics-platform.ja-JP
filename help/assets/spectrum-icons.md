@@ -8,7 +8,7 @@ hide-from-toc: true
 source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 次の表は、Spectrum アイコン スニペットの設定で使用可能なすべての Spectrum アイコンを示しています。 という名前を使用して、スニペットをマークダウンに追加し、スペクトルアイコンを表示させます。
 
-更新については、[Wiki ページ ] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) をご覧ください。
+更新については、[Wiki ページ ](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) をご覧ください。
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -71,10 +71,10 @@ ht-degree: 14%
 | Apps | `![Apps](/help/assets/icons/Apps.svg)` | ![ アプリ ](/help/assets/icons/Apps.svg) |
 | アーカイブ | `![Archive](/help/assets/icons/Archive.svg)` | ![アーカイブ](/help/assets/icons/Archive.svg) |
 | ArchiveRemove | `![ArchiveRemove](/help/assets/icons/ArchiveRemove.svg)` | ![ArchiveRemove](/help/assets/icons/ArchiveRemove.svg) |
-| 下矢印 | `![ArrowDown](/help/assets/icons/ArrowDown.svg)` | ![ 下矢印 ](/help/assets/icons/ArrowDown.svg) |
+| 下矢印 | `![ArrowDown](/help/assets/icons/ArrowDown.svg)` | ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 左矢印 | `![ArrowLeft](/help/assets/icons/ArrowLeft.svg)` | ![ 左矢印 ](/help/assets/icons/ArrowLeft.svg) |
 | 右矢印 | `![ArrowRight](/help/assets/icons/ArrowRight.svg)` | ![ 右矢印 ](/help/assets/icons/ArrowRight.svg) |
-| 上矢印 | `![ArrowUp](/help/assets/icons/ArrowUp.svg)` | ![ 上矢印 ](/help/assets/icons/ArrowUp.svg) |
+| 上矢印 | `![ArrowUp](/help/assets/icons/ArrowUp.svg)` | ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
 | 上矢印 | `![ArrowUpRight](/help/assets/icons/ArrowUpRight.svg)` | ![ArrowUpRight](/help/assets/icons/ArrowUpRight.svg) |
 | アートボード | `![Artboard](/help/assets/icons/Artboard.svg)` | ![ アートボード ](/help/assets/icons/Artboard.svg) |
 | 記事 | `![Article](/help/assets/icons/Article.svg)` | ![ 記事 ](/help/assets/icons/Article.svg) |
@@ -116,7 +116,7 @@ ht-degree: 14%
 | ブロワ | `![Blower](/help/assets/icons/Blower.svg)` | ![ ブロワ ](/help/assets/icons/Blower.svg) |
 | Blur | `![Blur](/help/assets/icons/Blur.svg)` | ![ ブラー ](/help/assets/icons/Blur.svg) |
 | 本 | `![Book](/help/assets/icons/Book.svg)` | ![ 本 ](/help/assets/icons/Book.svg) |
-| ブックマーク | `![Bookmark](/help/assets/icons/Bookmark.svg)` | ![ ブックマーク ](/help/assets/icons/Bookmark.svg) |
+| ブックマーク | `![Bookmark](/help/assets/icons/Bookmark.svg)` | ![ブックマーク](/help/assets/icons/Bookmark.svg) |
 | BookmarkSingle | `![BookmarkSingle](/help/assets/icons/BookmarkSingle.svg)` | ![BookmarkSingle](/help/assets/icons/BookmarkSingle.svg) |
 | BookmarkSingleOutline | `![BookmarkSingleOutline](/help/assets/icons/BookmarkSingleOutline.svg)` | ![BookmarkSingleOutline](/help/assets/icons/BookmarkSingleOutline.svg) |
 | BookmarkSmall | `![BookmarkSmall](/help/assets/icons/BookmarkSmall.svg)` | ![BookmarkSmall](/help/assets/icons/BookmarkSmall.svg) |
@@ -131,7 +131,7 @@ ht-degree: 14%
 | BracketsSquare | `![BracketsSquare](/help/assets/icons/BracketsSquare.svg)` | ![BracketsSquare](/help/assets/icons/BracketsSquare.svg) |
 | ブランチ 1 | `![Branch1](/help/assets/icons/Branch1.svg)` | ![ ブランチ 1](/help/assets/icons/Branch1.svg) |
 | 分岐 2 | `![Branch2](/help/assets/icons/Branch2.svg)` | ![ 分岐 2](/help/assets/icons/Branch2.svg) |
-| 分岐 3 | `![Branch3](/help/assets/icons/Branch3.svg)` | ![ ブランチ 3](/help/assets/icons/Branch3.svg) |
+| 分岐 3 | `![Branch3](/help/assets/icons/Branch3.svg)` | ![Branch3](/help/assets/icons/Branch3.svg) |
 | BranchCircle | `![BranchCircle](/help/assets/icons/BranchCircle.svg)` | ![BranchCircle](/help/assets/icons/BranchCircle.svg) |
 | パンくずナビゲーション | `![BreadcrumbNavigation](/help/assets/icons/BreadcrumbNavigation.svg)` | ![ パンくずナビゲーション ](/help/assets/icons/BreadcrumbNavigation.svg) |
 | 分類 | `![Breakdown](/help/assets/icons/Breakdown.svg)` | ![分類](/help/assets/icons/Breakdown.svg) |
@@ -167,7 +167,7 @@ ht-degree: 14%
 | チャット | `![Chat](/help/assets/icons/Chat.svg)` | ![ チャット ](/help/assets/icons/Chat.svg) |
 | ChatAdd | `![ChatAdd](/help/assets/icons/ChatAdd.svg)` | ![ChatAdd](/help/assets/icons/ChatAdd.svg) |
 | CheckPause | `![CheckPause](/help/assets/icons/CheckPause.svg)` | ![CheckPause](/help/assets/icons/CheckPause.svg) |
-| チェックマーク | `![Checkmark](/help/assets/icons/Checkmark.svg)` | ![ チェックマーク ](/help/assets/icons/Checkmark.svg) |
+| チェックマーク | `![Checkmark](/help/assets/icons/Checkmark.svg)` | ![チェックマーク](/help/assets/icons/Checkmark.svg) |
 | CheckmarkCircle | `![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | CheckmarkCircleOutline | `![CheckmarkCircleOutline](/help/assets/icons/CheckmarkCircleOutline.svg)` | ![CheckmarkCircleOutline](/help/assets/icons/CheckmarkCircleOutline.svg) |
 | ChevronDoubleLeft | `![ChevronDoubleLeft](/help/assets/icons/ChevronDoubleLeft.svg)` | ![ChevronDoubleLeft](/help/assets/icons/ChevronDoubleLeft.svg) |
@@ -206,7 +206,7 @@ ht-degree: 14%
 | ColumnTwoC | `![ColumnTwoC](/help/assets/icons/ColumnTwoC.svg)` | ![ColumnTwoC](/help/assets/icons/ColumnTwoC.svg) |
 | ComboChart | `![ComboChart](/help/assets/icons/ComboChart.svg)` | ![ コンボグラフ ](/help/assets/icons/ComboChart.svg) |
 | コメント | `![Comment](/help/assets/icons/Comment.svg)` | ![ コメント ](/help/assets/icons/Comment.svg) |
-| Compare | `![Compare](/help/assets/icons/Compare.svg)` | ![比較](/help/assets/icons/Compare.svg) |
+| 比較 | `![Compare](/help/assets/icons/Compare.svg)` | ![比較](/help/assets/icons/Compare.svg) |
 | 互換 | `![Compas](/help/assets/icons/Compas.svg)` | ![Compas](/help/assets/icons/Compas.svg) |
 | 条件 | `![Condition](/help/assets/icons/Condition.svg)` | ![条件](/help/assets/icons/Condition.svg) |
 | ConfidenceFour | `![ConfidenceFour](/help/assets/icons/ConfidenceFour.svg)` | ![ConfidenceFour](/help/assets/icons/ConfidenceFour.svg) |
@@ -219,12 +219,12 @@ ht-degree: 14%
 | コピー | `![Copy](/help/assets/icons/Copy.svg)` | ![コピー](/help/assets/icons/Copy.svg) |
 | CoverImage | `![CoverImage](/help/assets/icons/CoverImage.svg)` | ![CoverImage](/help/assets/icons/CoverImage.svg) |
 | CreditCard | `![CreditCard](/help/assets/icons/CreditCard.svg)` | ![CreditCard](/help/assets/icons/CreditCard.svg) |
-| 切り抜き | `![Crop](/help/assets/icons/Crop.svg)` | ![ トリミング ](/help/assets/icons/Crop.svg) |
+| 切り抜き | `![Crop](/help/assets/icons/Crop.svg)` | ![切り抜き](/help/assets/icons/Crop.svg) |
 | CropLightning | `![CropLightning](/help/assets/icons/CropLightning.svg)` | ![CropLightning](/help/assets/icons/CropLightning.svg) |
 | CropRotate | `![CropRotate](/help/assets/icons/CropRotate.svg)` | ![CropRotate](/help/assets/icons/CropRotate.svg) |
 | CrossSize75 | `![CrossSize75](/help/assets/icons/CrossSize75.svg)` | ![CrossSize75](/help/assets/icons/CrossSize75.svg) |
 | 十字線 | `![Crosshair](/help/assets/icons/Crosshair.svg)` | ![ 十字線 ](/help/assets/icons/Crosshair.svg) |
-| キュレート | `![Curate](/help/assets/icons/Curate.svg)` | ![ キュレーション ](/help/assets/icons/Curate.svg) |
+| キュレート | `![Curate](/help/assets/icons/Curate.svg)` | ![キュレート](/help/assets/icons/Curate.svg) |
 | カット | `![Cut](/help/assets/icons/Cut.svg)` | ![ カット ](/help/assets/icons/Cut.svg) |
 | ダッシュボード | `![Dashboard](/help/assets/icons/Dashboard.svg)` | ![ダッシュボード](/help/assets/icons/Dashboard.svg) |
 | データ | `![Data](/help/assets/icons/Data.svg)` | ![データ](/help/assets/icons/Data.svg) |
@@ -274,7 +274,7 @@ ht-degree: 14%
 | DistributeTopEdge | `![DistributeTopEdge](/help/assets/icons/DistributeTopEdge.svg)` | ![DistributeTopEdge](/help/assets/icons/DistributeTopEdge.svg) |
 | DistributeVerticalCenter | `![DistributeVerticalCenter](/help/assets/icons/DistributeVerticalCenter.svg)` | ![DistributeVerticalCenter](/help/assets/icons/DistributeVerticalCenter.svg) |
 | 垂直方向に均等割り付け | `![DistributeVertically](/help/assets/icons/DistributeVertically.svg)` | ![DistributeVertically](/help/assets/icons/DistributeVertically.svg) |
-| 除算 | `![Divide](/help/assets/icons/Divide.svg)` | ![ 除算 ](/help/assets/icons/Divide.svg) |
+| 除算 | `![Divide](/help/assets/icons/Divide.svg)` | ![除算](/help/assets/icons/Divide.svg) |
 | DividePath | `![DividePath](/help/assets/icons/DividePath.svg)` | ![DividePath](/help/assets/icons/DividePath.svg) |
 | ドキュメント | `![Document](/help/assets/icons/Document.svg)` | ![ ドキュメント ](/help/assets/icons/Document.svg) |
 | DocumentFragment | `![DocumentFragment](/help/assets/icons/DocumentFragment.svg)` | ![DocumentFragment](/help/assets/icons/DocumentFragment.svg) |
@@ -285,7 +285,7 @@ ht-degree: 14%
 | ダウンロード | `![Download](/help/assets/icons/Download.svg)` | ![ダウンロード](/help/assets/icons/Download.svg) |
 | DownloadFromCloud | `![DownloadFromCloud](/help/assets/icons/DownloadFromCloud.svg)` | ![DownloadFromCloud](/help/assets/icons/DownloadFromCloud.svg) |
 | DownloadFromCloudOutline | `![DownloadFromCloudOutline](/help/assets/icons/DownloadFromCloudOutline.svg)` | ![DownloadFromCloudOutline](/help/assets/icons/DownloadFromCloudOutline.svg) |
-| ドラフト | `![Draft](/help/assets/icons/Draft.svg)` | ![Draft](/help/assets/icons/Draft.svg) |
+| ドラフト | `![Draft](/help/assets/icons/Draft.svg)` | ![ドラフト](/help/assets/icons/Draft.svg) |
 | DragHandle | `![DragHandle](/help/assets/icons/DragHandle.svg)` | ![DragHandle](/help/assets/icons/DragHandle.svg) |
 | 描画 | `![Draw](/help/assets/icons/Draw.svg)` | ![ 描画 ](/help/assets/icons/Draw.svg) |
 | ドロップダウン | `![Dropdown](/help/assets/icons/Dropdown.svg)` | ![ ドロップダウン ](/help/assets/icons/Dropdown.svg) |
@@ -316,7 +316,7 @@ ht-degree: 14%
 | エンゲージメント | `![Engagement](/help/assets/icons/Engagement.svg)` | ![エンゲージメント](/help/assets/icons/Engagement.svg) |
 | EngagementGraph | `![EngagementGraph](/help/assets/icons/EngagementGraph.svg)` | ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) |
 | エンタープライズ | `![Enterprise](/help/assets/icons/Enterprise.svg)` | ![Enterprise](/help/assets/icons/Enterprise.svg) |
-| 削除 | `![Erase](/help/assets/icons/Erase.svg)` | ![ 消去 ](/help/assets/icons/Erase.svg) |
+| 削除 | `![Erase](/help/assets/icons/Erase.svg)` | ![消しゴム](/help/assets/icons/Erase.svg) |
 | イベント | `![Event](/help/assets/icons/Event.svg)` | ![イベント](/help/assets/icons/Event.svg) |
 | EventExclude | `![EventExclude](/help/assets/icons/EventExclude.svg)` | ![EventExclude](/help/assets/icons/EventExclude.svg) |
 | EventShare | `![EventShare](/help/assets/icons/EventShare.svg)` | ![EventShare](/help/assets/icons/EventShare.svg) |
@@ -378,7 +378,7 @@ ht-degree: 14%
 | FilterStar | `![FilterStar](/help/assets/icons/FilterStar.svg)` | ![FilterStar](/help/assets/icons/FilterStar.svg) |
 | FindAndReplace | `![FindAndReplace](/help/assets/icons/FindAndReplace.svg)` | ![FindAndReplace](/help/assets/icons/FindAndReplace.svg) |
 | FirstUse | `![FirstUse](/help/assets/icons/FirstUse.svg)` | ![FirstUse](/help/assets/icons/FirstUse.svg) |
-| Flag | `![Flag](/help/assets/icons/Flag.svg)` | ![フラグ](/help/assets/icons/Flag.svg) |
+| フラグ | `![Flag](/help/assets/icons/Flag.svg)` | ![フラグ](/help/assets/icons/Flag.svg) |
 | FlagExclude | `![FlagExclude](/help/assets/icons/FlagExclude.svg)` | ![FlagExclude](/help/assets/icons/FlagExclude.svg) |
 | FlashAuto | `![FlashAuto](/help/assets/icons/FlashAuto.svg)` | ![FlashAuto](/help/assets/icons/FlashAuto.svg) |
 | FlashOff | `![FlashOff](/help/assets/icons/FlashOff.svg)` | ![FlashOff](/help/assets/icons/FlashOff.svg) |
@@ -448,11 +448,11 @@ ht-degree: 14%
 | GraphBubble | `![GraphBubble](/help/assets/icons/GraphBubble.svg)` | ![GraphBubble](/help/assets/icons/GraphBubble.svg) |
 | GraphBullet | `![GraphBullet](/help/assets/icons/GraphBullet.svg)` | ![GraphBullet](/help/assets/icons/GraphBullet.svg) |
 | GraphConfidenceBand | `![GraphConfidenceBand](/help/assets/icons/GraphConfidenceBand.svg)` | ![GraphConfidenceBand](/help/assets/icons/GraphConfidenceBand.svg) |
-| グラフドーナツ | `![GraphDonut](/help/assets/icons/GraphDonut.svg)` | ![ グラフドーナツ ](/help/assets/icons/GraphDonut.svg) |
+| グラフドーナツ | `![GraphDonut](/help/assets/icons/GraphDonut.svg)` | ![GraphDonut](/help/assets/icons/GraphDonut.svg) |
 | GraphDonutAdd | `![GraphDonutAdd](/help/assets/icons/GraphDonutAdd.svg)` | ![GraphDonutAdd](/help/assets/icons/GraphDonutAdd.svg) |
 | GraphGantt | `![GraphGantt](/help/assets/icons/GraphGantt.svg)` | ![GraphGantt](/help/assets/icons/GraphGantt.svg) |
 | Graph ヒストグラム | `![GraphHistogram](/help/assets/icons/GraphHistogram.svg)` | ![GraphHistogram](/help/assets/icons/GraphHistogram.svg) |
-| GraphPath | `![GraphPathing](/help/assets/icons/GraphPathing.svg)` | ![ グラフパス ](/help/assets/icons/GraphPathing.svg) |
+| GraphPath | `![GraphPathing](/help/assets/icons/GraphPathing.svg)` | ![GraphPathing](/help/assets/icons/GraphPathing.svg) |
 | GraphPie | `![GraphPie](/help/assets/icons/GraphPie.svg)` | ![GraphPie](/help/assets/icons/GraphPie.svg) |
 | GraphProfitCurve | `![GraphProfitCurve](/help/assets/icons/GraphProfitCurve.svg)` | ![GraphProfitCurve](/help/assets/icons/GraphProfitCurve.svg) |
 | GraphScatter | `![GraphScatter](/help/assets/icons/GraphScatter.svg)` | ![GraphScatter](/help/assets/icons/GraphScatter.svg) |
@@ -519,7 +519,7 @@ ht-degree: 14%
 | キー | `![Key](/help/assets/icons/Key.svg)` | ![キー](/help/assets/icons/Key.svg) |
 | KeyClock | `![KeyClock](/help/assets/icons/KeyClock.svg)` | ![KeyClock](/help/assets/icons/KeyClock.svg) |
 | KeyExclude | `![KeyExclude](/help/assets/icons/KeyExclude.svg)` | ![KeyExclude](/help/assets/icons/KeyExclude.svg) |
-| 主要指標 | `![KeyMetrics](/help/assets/icons/KeyMetrics.svg)` | ![ 主要指標 ](/help/assets/icons/KeyMetrics.svg) |
+| 主要指標 | `![KeyMetrics](/help/assets/icons/KeyMetrics.svg)` | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) |
 | キーボード | `![Keyboard](/help/assets/icons/Keyboard.svg)` | ![キーボード](/help/assets/icons/Keyboard.svg) |
 | ラベル | `![Label](/help/assets/icons/Label.svg)` | ![ラベル](/help/assets/icons/Label.svg) |
 | LabelExclude | `![LabelExclude](/help/assets/icons/LabelExclude.svg)` | ![LabelExclude](/help/assets/icons/LabelExclude.svg) |
@@ -534,7 +534,7 @@ ht-degree: 14%
 | 学習 | `![Learn](/help/assets/icons/Learn.svg)` | ![ 詳細 ](/help/assets/icons/Learn.svg) |
 | LeftRight | `![LeftRight](/help/assets/icons/LeftRight.svg)` | ![LeftRight](/help/assets/icons/LeftRight.svg) |
 | ライト | `![Light](/help/assets/icons/Light.svg)` | ![ ライト ](/help/assets/icons/Light.svg) |
-| 行 | `![Line](/help/assets/icons/Line.svg)` | ![行](/help/assets/icons/Line.svg) |
+| 行 | `![Line](/help/assets/icons/Line.svg)` | ![折れ線グラフ](/help/assets/icons/Line.svg) |
 | LineHeight | `![LineHeight](/help/assets/icons/LineHeight.svg)` | ![LineHeight](/help/assets/icons/LineHeight.svg) |
 | LinearGradient | `![LinearGradient](/help/assets/icons/LinearGradient.svg)` | ![LinearGradient](/help/assets/icons/LinearGradient.svg) |
 | リンク | `![Link](/help/assets/icons/Link.svg)` | ![ リンク ](/help/assets/icons/Link.svg) |
@@ -600,10 +600,10 @@ ht-degree: 14%
 | NewPlan | `![NewPlan](/help/assets/icons/NewPlan.svg)` | ![ 新規プラン ](/help/assets/icons/NewPlan.svg) |
 | NewsAdd | `![NewsAdd](/help/assets/icons/NewsAdd.svg)` | ![NewsAdd](/help/assets/icons/NewsAdd.svg) |
 | 編集なし | `![NoEdit](/help/assets/icons/NoEdit.svg)` | ![ 編集なし ](/help/assets/icons/NoEdit.svg) |
-| 注釈 | `![Note](/help/assets/icons/Note.svg)` | ![ 注 ](/help/assets/icons/Note.svg) |
+| メモ | `![Note](/help/assets/icons/Note.svg)` | ![ 注 ](/help/assets/icons/Note.svg) |
 | NoteAdd | `![NoteAdd](/help/assets/icons/NoteAdd.svg)` | ![ メモ追加 ](/help/assets/icons/NoteAdd.svg) |
 | O | `![O](/help/assets/icons/O.svg)` | ![O](/help/assets/icons/O.svg) |
-| オファー | `![Offer](/help/assets/icons/Offer.svg)` | ![ オファー ](/help/assets/icons/Offer.svg) |
+| オファー | `![Offer](/help/assets/icons/Offer.svg)` | ![オファー](/help/assets/icons/Offer.svg) |
 | OfferActivity | `![OfferActivities](/help/assets/icons/OfferActivities.svg)` | ![ オファーアクティビティ ](/help/assets/icons/OfferActivities.svg) |
 | OfferDelete | `![OfferDelete](/help/assets/icons/OfferDelete.svg)` | ![OfferDelete](/help/assets/icons/OfferDelete.svg) |
 | オファー | `![Offers](/help/assets/icons/Offers.svg)` | ![オファー](/help/assets/icons/Offers.svg) |
@@ -653,7 +653,7 @@ ht-degree: 14%
 | PolygonSelect | `![PolygonSelect](/help/assets/icons/PolygonSelect.svg)` | ![PolygonSelect](/help/assets/icons/PolygonSelect.svg) |
 | PopIn | `![PopIn](/help/assets/icons/PopIn.svg)` | ![PopIn](/help/assets/icons/PopIn.svg) |
 | 縦長 | `![Portrait](/help/assets/icons/Portrait.svg)` | ![縦](/help/assets/icons/Portrait.svg) |
-| プリセット | `![Preset](/help/assets/icons/Preset.svg)` | ![ プリセット ](/help/assets/icons/Preset.svg) |
+| プリセット | `![Preset](/help/assets/icons/Preset.svg)` | ![プリセット](/help/assets/icons/Preset.svg) |
 | プレビュー | `![Preview](/help/assets/icons/Preview.svg)` | ![プレビュー](/help/assets/icons/Preview.svg) |
 | 印刷 | `![Print](/help/assets/icons/Print.svg)` | ![ 印刷 ](/help/assets/icons/Print.svg) |
 | PrintPreview | `![PrintPreview](/help/assets/icons/PrintPreview.svg)` | ![PrintPreview](/help/assets/icons/PrintPreview.svg) |
@@ -687,10 +687,10 @@ ht-degree: 14%
 | RealTimeCustomerProfile | `![RealTimeCustomerProfile](/help/assets/icons/RealTimeCustomerProfile.svg)` | ![RealTimeCustomerProfile](/help/assets/icons/RealTimeCustomerProfile.svg) |
 | RectSelect | `![RectSelect](/help/assets/icons/RectSelect.svg)` | ![RectSelect](/help/assets/icons/RectSelect.svg) |
 | 長方形 | `![Rectangle](/help/assets/icons/Rectangle.svg)` | ![ 長方形 ](/help/assets/icons/Rectangle.svg) |
-| やり直し | `![Redo](/help/assets/icons/Redo.svg)` | ![ やり直し ](/help/assets/icons/Redo.svg) |
+| やり直し | `![Redo](/help/assets/icons/Redo.svg)` | ![やり直し](/help/assets/icons/Redo.svg) |
 | 更新 | `![Refresh](/help/assets/icons/Refresh.svg)` | ![更新](/help/assets/icons/Refresh.svg) |
 | RegionSelect | `![RegionSelect](/help/assets/icons/RegionSelect.svg)` | ![RegionSelect](/help/assets/icons/RegionSelect.svg) |
-| リリース | `![Release](/help/assets/icons/Release.svg)` | ![リリース](/help/assets/icons/Release.svg) |
+| リリース | `![Release](/help/assets/icons/Release.svg)` | ![Release](/help/assets/icons/Release.svg) |
 | 関連度 | `![Relevance](/help/assets/icons/Relevance.svg)` | ![ 関連度 ](/help/assets/icons/Relevance.svg) |
 | 削除 | `![Remove](/help/assets/icons/Remove.svg)` | ![削除](/help/assets/icons/Remove.svg) |
 | RemoveCircle | `![RemoveCircle](/help/assets/icons/RemoveCircle.svg)` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
@@ -705,7 +705,7 @@ ht-degree: 14%
 | 必須 | `![Required](/help/assets/icons/Required.svg)` | ![必須](/help/assets/icons/Required.svg) |
 | サイズ変更 | `![Resize](/help/assets/icons/Resize.svg)` | ![ サイズ変更 ](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ResolvedComments](/help/assets/icons/ResolvedComment.svg) |
-| 定着 | `![Retention](/help/assets/icons/Retention.svg)` | ![リテンション](/help/assets/icons/Retention.svg) |
+| リテンション | `![Retention](/help/assets/icons/Retention.svg)` | ![Retention](/help/assets/icons/Retention.svg) |
 | RetentionRate | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![ 保存率 ](/help/assets/icons/RetentionRates.svg) |
 | リツイート | `![Retweet](/help/assets/icons/Retweet.svg)` | ![ リツイート ](/help/assets/icons/Retweet.svg) |
 | 再利用 | `![Reuse](/help/assets/icons/Reuse.svg)` | ![ 再利用 ](/help/assets/icons/Reuse.svg) |
@@ -780,7 +780,7 @@ ht-degree: 14%
 | スライス | `![Slice](/help/assets/icons/Slice.svg)` | ![ スライス ](/help/assets/icons/Slice.svg) |
 | 遅い | `![Slow](/help/assets/icons/Slow.svg)` | ![ 遅い ](/help/assets/icons/Slow.svg) |
 | SmallCap | `![SmallCap](/help/assets/icons/SmallCap.svg)` | ![SmallCap](/help/assets/icons/SmallCap.svg) |
-| スナップショット | `![Snapshot](/help/assets/icons/Snapshot.svg)` | ![ スナップショット ](/help/assets/icons/Snapshot.svg) |
+| スナップショット | `![Snapshot](/help/assets/icons/Snapshot.svg)` | ![スナップショット](/help/assets/icons/Snapshot.svg) |
 | SocialNetwork | `![SocialNetwork](/help/assets/icons/SocialNetwork.svg)` | ![ ソーシャルネットワーク ](/help/assets/icons/SocialNetwork.svg) |
 | SortOrderDown | `![SortOrderDown](/help/assets/icons/SortOrderDown.svg)` | ![SortOrderDown](/help/assets/icons/SortOrderDown.svg) |
 | SortOrderUp | `![SortOrderUp](/help/assets/icons/SortOrderUp.svg)` | ![SortOrderUp](/help/assets/icons/SortOrderUp.svg) |
@@ -792,8 +792,8 @@ ht-degree: 14%
 | スタジアム | `![Stadium](/help/assets/icons/Stadium.svg)` | ![ スタジアム ](/help/assets/icons/Stadium.svg) |
 | 段階 | `![Stage](/help/assets/icons/Stage.svg)` | ![ ステージ ](/help/assets/icons/Stage.svg) |
 | スタンプ | `![Stamp](/help/assets/icons/Stamp.svg)` | ![ スタンプ ](/help/assets/icons/Stamp.svg) |
-| つ星 | `![Star](/help/assets/icons/Star.svg)` | ![ 星 ](/help/assets/icons/Star.svg) |
-| StarOutline | `![StarOutline](/help/assets/icons/StarOutline.svg)` | ![ 星の輪郭 ](/help/assets/icons/StarOutline.svg) |
+| つ星 | `![Star](/help/assets/icons/Star.svg)` | ![星](/help/assets/icons/Star.svg) |
+| StarOutline | `![StarOutline](/help/assets/icons/StarOutline.svg)` | ![StarOutline](/help/assets/icons/StarOutline.svg) |
 | スターバースト | `![Starburst](/help/assets/icons/Starburst.svg)` | ![ スターバースト ](/help/assets/icons/Starburst.svg) |
 | StatusBlue | `![StatusBlue](/help/assets/icons/StatusBlue.svg)` | ![StatusBlue](/help/assets/icons/StatusBlue.svg) |
 | StatusGray | `![StatusGray](/help/assets/icons/StatusGray.svg)` | ![StatusGray](/help/assets/icons/StatusGray.svg) |
@@ -815,7 +815,7 @@ ht-degree: 14%
 | SubtractFromSelection | `![SubtractFromSelection](/help/assets/icons/SubtractFromSelection.svg)` | ![SubtractFromSelection](/help/assets/icons/SubtractFromSelection.svg) |
 | SubtractFrontPath | `![SubtractFrontPath](/help/assets/icons/SubtractFrontPath.svg)` | ![SubtractFrontPath](/help/assets/icons/SubtractFrontPath.svg) |
 | 成功指標 | `![SuccessMetric](/help/assets/icons/SuccessMetric.svg)` | ![ 成功指標 ](/help/assets/icons/SuccessMetric.svg) |
-| 要約 | `![Summarize](/help/assets/icons/Summarize.svg)` | ![ 要約 ](/help/assets/icons/Summarize.svg) |
+| Summarize | `![Summarize](/help/assets/icons/Summarize.svg)` | ![ 要約 ](/help/assets/icons/Summarize.svg) |
 | 調査 | `![Survey](/help/assets/icons/Survey.svg)` | ![調査](/help/assets/icons/Survey.svg) |
 | 切り替え | `![Switch](/help/assets/icons/Switch.svg)` | ![ 切り替え ](/help/assets/icons/Switch.svg) |
 | 同期 | `![Sync](/help/assets/icons/Sync.svg)` | ![ 同期 ](/help/assets/icons/Sync.svg) |
@@ -894,7 +894,7 @@ ht-degree: 14%
 | ThumbDownOutline | `![ThumbDownOutline](/help/assets/icons/ThumbDownOutline.svg)` | ![ThumbDownOutline](/help/assets/icons/ThumbDownOutline.svg) |
 | Thumbup | `![ThumbUp](/help/assets/icons/ThumbUp.svg)` | ![ThumbUp](/help/assets/icons/ThumbUp.svg) |
 | ThumbUpOutline | `![ThumbUpOutline](/help/assets/icons/ThumbUpOutline.svg)` | ![ThumbUpOutline](/help/assets/icons/ThumbUpOutline.svg) |
-| タイムライン | `![Timeline](/help/assets/icons/Timeline.svg)` | ![タイムライン](/help/assets/icons/Timeline.svg) |
+| タイムライン | `![Timeline](/help/assets/icons/Timeline.svg)` | ![Timeline](/help/assets/icons/Timeline.svg) |
 | トレイン | `![Train](/help/assets/icons/Train.svg)` | ![ トレイン ](/help/assets/icons/Train.svg) |
 | TransferToPlatform | `![TransferToPlatform](/help/assets/icons/TransferToPlatform.svg)` | ![TransferToPlatform](/help/assets/icons/TransferToPlatform.svg) |
 | 透明度 | `![Transparency](/help/assets/icons/Transparency.svg)` | ![ 透明化 ](/help/assets/icons/Transparency.svg) |
@@ -911,7 +911,7 @@ ht-degree: 14%
 | タイプ | `![Type](/help/assets/icons/Type.svg)` | ![タイプ](/help/assets/icons/Type.svg) |
 | 米国 | `![USA](/help/assets/icons/USA.svg)` | ![ 米国 ](/help/assets/icons/USA.svg) |
 | 下線 | `![Underline](/help/assets/icons/Underline.svg)` | ![ アンダーライン ](/help/assets/icons/Underline.svg) |
-| 元に戻す | `![Undo](/help/assets/icons/Undo.svg)` | ![ 元に戻す ](/help/assets/icons/Undo.svg) |
+| 元に戻す | `![Undo](/help/assets/icons/Undo.svg)` | ![元に戻す](/help/assets/icons/Undo.svg) |
 | グループ解除 | `![Ungroup](/help/assets/icons/Ungroup.svg)` | ![ グループ解除 ](/help/assets/icons/Ungroup.svg) |
 | リンク解除 | `![Unlink](/help/assets/icons/Unlink.svg)` | ![ リンクを解除 ](/help/assets/icons/Unlink.svg) |
 | Unmerge | `![Unmerge](/help/assets/icons/Unmerge.svg)` | ![ 結合解除 ](/help/assets/icons/Unmerge.svg) |
@@ -966,7 +966,7 @@ ht-degree: 14%
 | VolumeThree | `![VolumeThree](/help/assets/icons/VolumeThree.svg)` | ![VolumeThree](/help/assets/icons/VolumeThree.svg) |
 | VolumeTwo | `![VolumeTwo](/help/assets/icons/VolumeTwo.svg)` | ![VolumeTwo](/help/assets/icons/VolumeTwo.svg) |
 | ウォッチリスト | `![Watch](/help/assets/icons/Watch.svg)` | ![ ウォッチ ](/help/assets/icons/Watch.svg) |
-| Web ページ | `![WebPage](/help/assets/icons/WebPage.svg)` | ![Web ページ ](/help/assets/icons/WebPage.svg) |
+| Web ページ | `![WebPage](/help/assets/icons/WebPage.svg)` | ![WebPage](/help/assets/icons/WebPage.svg) |
 | Web ページ | `![WebPages](/help/assets/icons/WebPages.svg)` | ![Web ページ ](/help/assets/icons/WebPages.svg) |
 | ワークフロー | `![Workflow](/help/assets/icons/Workflow.svg)` | ![ワークフロー](/help/assets/icons/Workflow.svg) |
 | WorkflowAdd | `![WorkflowAdd](/help/assets/icons/WorkflowAdd.svg)` | ![WorkflowAdd](/help/assets/icons/WorkflowAdd.svg) |

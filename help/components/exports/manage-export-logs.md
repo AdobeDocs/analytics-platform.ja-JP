@@ -8,13 +8,13 @@ role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
 # 書き出しログの管理
 
-エクスポートログは、各エクスポートの詳細を提供し、Analysis Workspace データがクラウドに書き出されるたびに生成されます。 （データをクラウドに書き出す方法については、[Customer Journey Analyticsレポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
+エクスポートログは、各エクスポートの詳細を提供し、Analysis Workspace データがクラウドに書き出されるたびに生成されます。 （データをクラウドに書き出す方法について詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
 スケジュールされた書き出しの場合、ログには、ログが送信されたときの書き出し設定が反映されます。 ログは削除できません。
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
    * ログ名の横にある **書き出しを編集アイコン**![ 情報アイコン ](assets/edit-export-icon.png) を選択して、ログに関連付けられている書き出しを編集します。
 
-     書き出しの編集について詳しくは、[Customer Journey Analyticsレポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
+     書き出しの編集について詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
 ## ログのフィルタリングと検索
 
@@ -57,8 +57,8 @@ ht-degree: 5%
    | フィルター | 説明 |
    |---------|----------|
    | [!UICONTROL **書き出し ID**] | 表示するエクスポートログのエクスポート ID を指定します。 |
-   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP データランディングゾーン**]</li><li>[!UICONTROL **Amazon S3 ロール ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google クラウドプラットフォーム**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを使用できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスが開始されましたが、まだ完了していません。<p>ステータスが保留中のエクスポートを再実行すると、エクスポートプロセスが遅延します。</p></li><li>[!UICONTROL **完了**]：書き出しの特定のインスタンスの処理が完了し、書き出しアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、書き出しが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗の詳細が表示されます。<p>失敗の考えられる理由について詳しくは、[ 失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md) を参照してください。</p> |
+   | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **ステータス**] | エクスポートのステータス。 次のステータスを表示できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスが開始されましたが、まだ完了していません。<p>ステータスが保留中のエクスポートを再実行すると、エクスポートプロセスが遅延します。</p></li><li>[!UICONTROL **完了**]：書き出しの特定のインスタンスの処理が完了し、書き出しアカウントで使用できるようになりました。</li><li>[!UICONTROL **失敗**]<p>様々な状況で、書き出しが失敗する場合があります。 失敗ステータスの上にマウスポインターを置くと、失敗の詳細が表示されます。<p>失敗の考えられる理由について詳しくは、[ 失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md) を参照してください。</p> |
 
    {style="table-layout:auto"}
 
@@ -100,40 +100,40 @@ This option is not available when selecting multiple logs. -->
 
    ログの横にあるチェックボックスをオンにし、「[!UICONTROL **書き出しを編集**]」を選択します。
 
-## 列を設定
+## 列の設定
 
-「[!UICONTROL &#x200B; ログ &#x200B;]」タブの列を追加または削除して、表示する情報を設定できます。
+「[!UICONTROL  ログ ]」タブの列を追加または削除して、表示する情報を設定できます。
 
 列ヘッダーを選択して、その列でログを並べ替えます。 デフォルトでは、ログは書き出しが開始された日時で並べ替えられます。
 
-「[!UICONTROL &#x200B; ログ &#x200B;] タブの列を設定するには：
+「[!UICONTROL  ログ ] タブの列を設定するには：
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
 1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. **ログ** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」アイコン [!UICONTROL &#x200B; テーブルをカスタマイズ &#x200B;] を選択します。
+1. **ログ** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」アイコン [!UICONTROL  テーブルをカスタマイズ ] を選択します。
 
-   以下の列を表示できます。
+   次の列を表示できます。
 
    | 使用可能な列 | 説明 |
    |---------|----------|
-   | 書き出し名 | エクスポートの名前。 [Customer Journey Analyticsレポートをクラウドに書き出す ](/help/analysis-workspace/export/export-cloud.md) で説明されているように、ユーザーは作成時に名前を付けます。 |
+   | 書き出し名 | エクスポートの名前。 [Customer Journey Analytics レポートをクラウドに書き出す ](/help/analysis-workspace/export/export-cloud.md) で説明されているように、ユーザーは作成時に名前を付けます。 |
    | 書き出し ID | エクスポートの作成時にエクスポートに自動的に割り当てられた ID。<!-- True? --> |
-   | インスタンス ID | Customer Journey Analyticsインスタンスの ID。<!-- True? --> |
-   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 [ クラウドへのCustomer Journey Analyticsレポートの書き出し ](/help/analysis-workspace/export/export-cloud.md) で説明しているように、書き出しを作成する際にデータビューを選択できます。 |
+   | インスタンス ID | Customer Journey Analytics インスタンスの ID。<!-- True? --> |
+   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 [Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) に示すように、書き出し時にデータビューを選択できます。 |
    | ファイル数 | エクスポートに含まれるファイルの数。 |
    | サイズ | 書き出しのサイズ。<p>ファイルサイズは 1024 を基準に計算されます。これは KIB および MIB として表されることがあります。 クラウドプロバイダーがベース 1000 を使用してサイズを計算すると、クラウドプロバイダーに表示されるサイズが、ここに表示されるサイズとは少し異なる場合があります。</p> |
    | 場所 | データが書き出されたアカウント上の場所。 |
    | アカウント | データが書き出されたアカウント。 |
-   | ステータス | エクスポートのステータス。 使用可能なステータスは、[!UICONTROL &#x200B; 保留中 &#x200B;]、[!UICONTROL &#x200B; 配信済み &#x200B;]、[!UICONTROL &#x200B; 失敗 &#x200B;] です。 |
+   | ステータス | エクスポートのステータス。 使用可能なステータスは、[!UICONTROL  保留中 ]、[!UICONTROL  配信済み ]、[!UICONTROL  失敗 ] です。 |
    | 配信日 | エクスポートが行われた日付。 |
    | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 使用可能なアカウントタイプは、[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]、[!UICONTROL Adobe Experience Platform] です。 |
    | 行数 | エクスポートされたテーブルに含まれる行数。 |
 
    {style="table-layout:auto"}
 
-1. 表示する列が選択されていることを確認します。 選択した列は [!UICONTROL &#x200B; ログ &#x200B;] ページに表示され、関連情報が表示されます。
+1. 表示する列が選択されていることを確認します。選択した列は [!UICONTROL  ログ ] ページに表示され、関連情報が表示されます。
 
 ## 監査ログの表示
 

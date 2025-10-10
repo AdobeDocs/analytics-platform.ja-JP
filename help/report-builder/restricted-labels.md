@@ -23,7 +23,7 @@ Experience Platformで使用されるデータセットに関して作成され�
 
 この統合により、コンプライアンスを管理できるようになります。 組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Adobe Customer Journey Analytics ユーザーは、データ管理人により定義されたポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
 
-詳しくは、[Customer Journey Analytics とデータガバナンス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-privacy/privacy-overview)を参照してください。
+詳しくは、[Customer Journey Analytics とデータガバナンス](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)を参照してください。
 
 ## 制限付きデータの表示
 
@@ -34,7 +34,7 @@ Customer Journey Analyticsでは、次の 2 つのAdobeで定義されるポリ�
 
 これらのポリシーの対象となるコンポーネントはグレー表示され、「![InfoOutline](/help/assets/icons/InfoOutline.svg)」アイコンが表示されます。 情報アイコンにポインタを合わせると、次の内容を示すメモが表示されます。**[!UICONTROL このデータの使用を禁止するポリシーがこのフィールドに適用されました]**。
 
-詳しくは、[ ラベルとポリシー ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
+詳しくは、[ ラベルとポリシー ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
 
 
 ![ データの使用禁止を示すポリシーノート ](assets/restricted-label.png){zoomable="yes"}

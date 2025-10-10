@@ -4,16 +4,16 @@ description: Customer Journey Analytics B2B editionを使用して製品価値�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 製品の価値を構築
+# 製品価値の構築
 
 B2B 製品の価値に関するインサイトを製品マネージャーや CMO、CEO に提供したい。 例えば、データ駆動型のチャーン分析や予測を使用します。 また、モバイルダッシュボードを通じてこれらのインサイトを消化できます。
 

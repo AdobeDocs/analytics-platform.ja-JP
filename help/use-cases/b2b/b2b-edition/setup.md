@@ -4,7 +4,7 @@ description: B2B の一般的なユースケースに対応するようにCustom
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 * [アカウントマーケティングの最適化](optimize-account-marketing.md)
 * [主要アカウントの拡大](grow-key-accounts.md)
-* [製品の価値を構築](build-product-value.md)
+* [製品価値の構築](build-product-value.md)
 
 
 >[!NOTE]
@@ -113,7 +113,7 @@ Customer Journey Analytics B2B editionを設定する前に、収集する各フ
 | ニーズの評価 | カウンター |
 | 交渉 | カウンター |
 | 異議申し立ての処理 | カウンター |
-| 商談 | カウンター |
+| 機会 | カウンター |
 | オポチュニティの作成 | カウンター |
 | 注文件数 | カウンター |
 | 発信呼び出し | カウンター |

@@ -1,11 +1,11 @@
 ---
-description: Analysis Workspace でテンプレートを作成および管理する方法について説明します
+description: Analysis Workspace でテンプレートを作成および管理する方法について説明します。
 title: テンプレートの作成と管理
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1851'
 ht-degree: 100%
 

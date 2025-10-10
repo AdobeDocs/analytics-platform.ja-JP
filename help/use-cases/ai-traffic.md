@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[&#x200B; 検出方法 &#x200B;](#detection-methods)、[&#x200B; 検出シグネチャ &#x200B;](#detection-signatures) および [&#x200B; 実装方法 &#x200B;](#implementation) の有効性は、具体的なデータ収集方法、Experience Platform データセットの範囲、Customer Journey Analyticsの実装に応じて異なります。 結果は、技術環境、データガバナンスポリシー、実装アプローチによって異なる場合があります。 Experience Edgeを使用する場合、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>[ 検出方法 ](#detection-methods)、[ 検出シグネチャ ](#detection-signatures) および [ 実装方法 ](#implementation) の有効性は、具体的なデータ収集方法、Experience Platform データセットの範囲、Customer Journey Analyticsの実装に応じて異なります。 結果は、技術環境、データガバナンスポリシー、実装アプローチによって異なる場合があります。 Experience Edgeを使用する場合、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
 >
 
 ## 検出方法
@@ -252,12 +252,12 @@ LLM および AI エージェントは、デジタルプロパティを操作す
 
 ## 実装
 
-[&#x200B; 派生フィールド &#x200B;](/help/connections/overview.md)、[&#x200B; セグメント &#x200B;](/help/data-views/data-views.md) および [&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md) の固有の設定と設定を通じて、通常のCustomer Journey Analytics設定（[connection](#derived-fields)、[data views](#segments) および [&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project)）内で LLM および AI によって生成されたトラフィックについてレポートできます。
+[ 派生フィールド ](/help/connections/overview.md)、[ セグメント ](/help/data-views/data-views.md) および [ ワークスペースプロジェクト ](/help/analysis-workspace/home.md) の固有の設定と設定を通じて、通常のCustomer Journey Analytics設定（[connection](#derived-fields)、[data views](#segments) および [ ワークスペースプロジェクト ](#workspace-project)）内で LLM および AI によって生成されたトラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法及び検出信号を構成するために、導出フィールドを基礎として使用する。 例えば、[&#x200B; ユーザーエージェント ID](#user-agent-identification)、[&#x200B; クエリパラメーター検出 &#x200B;](#query-parameter-detection)、および [&#x200B; リファラー分類 &#x200B;](#referrer-classification) の派生フィールドを定義します。
+検出方法及び検出信号を構成するために、導出フィールドを基礎として使用する。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出 ](#query-parameter-detection)、および [ リファラー分類 ](#referrer-classification) の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -268,14 +268,14 @@ LLM および AI エージェントは、デジタルプロパティを操作す
 
 #### LLM/AI クエリパラメーター検出
 
-[URL 解析 &#x200B;](/help/data-views/derived-fields/derived-fields.md#url-parse) および [&#x200B; 分類 &#x200B;](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、クエリパラメーターを検出する派生フィールドを定義します。
+[URL 解析 ](/help/data-views/derived-fields/derived-fields.md#url-parse) および [ 分類 ](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、クエリパラメーターを検出する派生フィールドを定義します。
 
-![LLM/AI UTM パラメータ検出 &#x200B;](assets/aitraffic-utmparams.png){zoomable="yes"}
+![LLM/AI UTM パラメータ検出 ](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### LLM/AI リファラー分類
 
-[URL 解析 &#x200B;](/help/data-views/derived-fields/derived-fields.md#url-parse) および [&#x200B; 分類 &#x200B;](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、リファラーを分類する派生フィールドを定義します。
+[URL 解析 ](/help/data-views/derived-fields/derived-fields.md#url-parse) および [ 分類 ](/help/data-views/derived-fields/derived-fields.md#classify) 派生フィールド関数を使用して、リファラーを分類する派生フィールドを定義します。
 
  （assets/aitraffic-referrers.png
 
@@ -680,19 +680,19 @@ LLM および AI エージェントは、デジタルプロパティを操作す
 
 LLM および AI 生成トラフィックに関連するイベント、セッションまたは人物を識別するのに役立つ専用のセグメントを設定します。 例えば、以前に作成した派生フィールドを使用して、LLM および AI によって生成されたトラフィックを識別するセグメントを定義します。
 
-![LLM および AI で生成されたトラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
+![LLM および AI で生成されたトラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### Workspace プロジェクト
 
 派生フィールドとセグメントを使用して、LLM および AI で生成されたトラフィックをレポートおよび分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLM および AI で生成されたトラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLM および AI で生成されたトラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->このユースケースの記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja) に基づいています。
+>このユースケースの記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967) に基づいています。
 >
 >

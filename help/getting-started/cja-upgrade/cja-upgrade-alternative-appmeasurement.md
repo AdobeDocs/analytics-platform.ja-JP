@@ -8,7 +8,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 50%
+ht-degree: 58%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 50%
 
 {{upgrade-note}}
 
-Customer Journey Analyticsにアップグレードする場合、Adobeは [Experience Platform web SDKの新規実装を推奨 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) します。 ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
+Adobe Customer Journey Analytics にアップグレードする場合は、[Experience Platform Web SDK の新しい実装をお勧め](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)します。ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
 
 XDM オブジェクトでデータを収集する代わりに、web SDKでAppMeasurementまたは Analytics Extension のデータ収集ロジックを使用して、Platform およびCustomer Journey Analyticsにデータを送信できます。 ただし、この代替オプションを使用すると、時間の経過と共に複雑さが増します。
 
@@ -46,7 +46,7 @@ XDM オブジェクトでデータを収集する代わりに、web SDKでAppMea
 
 | メリット | デメリット |
 |----------|---------|
-| Adobe Analytics実装で既に web SDKを使用している場合は、このアップグレードパスを選択することをお勧めします。<ul><li>**Experience Edge Network でデータをホストするすべてのメリットを提供**： <p>次のようなメリットがあります。</p><ul><li>Adobe Experience Platform は、[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)を強化するように作成されているので、高パフォーマンスのレポートとデータの可用性が実現する</li><li>他の Experience Cloud 製品（AJO、RTCDP など）の間で Adobe Experience Cloud データ収集の実装を統合する</li><li>Adobe Analytics の用語（prop、eVar、イベントなど）に依存しない</li></ul><li>**既存の実装を使用**：このアプローチには実装の変更が必要ですが、完全に新しい実装をゼロから行う必要はありません。実装ロジックに最小限の変更を行うだけで、既存の Adobe Analytics レポートに影響を与えることなく、既存のデータレイヤーとコードを使用できます。</li><li>**XDM スキーマを使用するオプションを提供**：既存の Adobe Analytics スキーマを使用するか、XDM スキーマを作成してデータオブジェクトのフィールドを XDM スキーマにマッピングするかを選択できます。[XDM スキーマ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home#xdm-schemas)は、必要なフィールドを定義し、関連するフィールドのみを定義できる柔軟なスキーマです。 <p>独自の XDM スキーマを使用するメリットについて詳しくは、以下の「独自の XDM スキーマを使用」を参照してください。</p></li><li>**ルールとデータ要素を保持**：新しいルールアクションが必要ですが、最小限の変更で既存のデータ要素とルール条件を再利用できます。</li><li>**将来性を確保**：独自の XDM スキーマを使用することを選択した場合、将来の実装の更新が簡単になります。</li></ul> | <ul><li>**Platform にデータを送信するにはマッピングが必要**：組織で Customer Journey Analytics を使用する準備が整ったら、Adobe Experience Platform のデータセットにデータを送信する必要があります。このアクションでは、データオブジェクトのすべてのフィールドを、XDM スキーマフィールドに割り当てるデータストリームマッピングツールのエントリにする必要があります。このワークフローではマッピングを 1 回行うだけで済み、実装を変更する必要ありません。ただし、これは、XDM オブジェクトでデータを送信する際には必要ない追加の手順です。</li><li>**時間の経過と共に、さらなる複雑さが発生します**：将来追加するフィールドは、データストリームの XDM にマッピングする必要があります。<p>実装に新しいフィールドが追加されるたびに、次のいずれかを実行できます。</p><ul><li>**オプション 1:** データオブジェクトに新しい任意の evar または新しい prop を入力し、目的の XDM フィールドにマッピングします。<p>このプロセスは、クライアントサイド実装の一貫性を高めますが、マッピングが必要です。</p></li><li>**オプション 2:** データオブジェクトをレガシー実装のままにして、すべての新しいフィールドに XDM オブジェクトのみを入力し始めます。<p>このプロセスではマッピングは必要ありませんが、つまり、一部の変数はデータオブジェクト内にのみ配置され、その他の変数は XDM オブジェクト内にのみ配置されます。 実装のトラブルシューティングが必要な場合は、いつでも 2 か所に移動する必要があります。 内部ワークフローでこのような状況に対応できることを確認します。</p></li></ul> |
+| Adobe Analytics の実装で既に Web SDK を使用している場合、これが推奨されるアップグレードパスです。<ul><li>**Experience Edge Network でデータをホストするすべてのメリットを提供**： <p>次のようなメリットがあります。</p><ul><li>Adobe Experience Platform は、[リアルタイムパーソナライゼーションのユースケース](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=ja)を強化するように作成されているので、高パフォーマンスのレポートとデータの可用性が実現する</li><li>他の Experience Cloud 製品（AJO、RTCDP など）の間で Adobe Experience Cloud データ収集の実装を統合する</li><li>Adobe Analytics の用語（prop、eVar、イベントなど）に依存しない</li></ul><li>**既存の実装を使用**：このアプローチには実装の変更が必要ですが、完全に新しい実装をゼロから行う必要はありません。実装ロジックに最小限の変更を行うだけで、既存の Adobe Analytics レポートに影響を与えることなく、既存のデータレイヤーとコードを使用できます。</li><li>**XDM スキーマを使用するオプションを提供**：既存の Adobe Analytics スキーマを使用するか、XDM スキーマを作成してデータオブジェクトのフィールドを XDM スキーマにマッピングするかを選択できます。[XDM スキーマ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home#xdm-schemas)は、必要なフィールドを定義し、関連するフィールドのみを定義できる柔軟なスキーマです。 <p>独自の XDM スキーマを使用するメリットについて詳しくは、以下の「独自の XDM スキーマを使用」を参照してください。</p></li><li>**ルールとデータ要素を保持**：新しいルールアクションが必要ですが、最小限の変更で既存のデータ要素とルール条件を再利用できます。</li><li>**将来性を確保**：独自の XDM スキーマを使用することを選択した場合、将来の実装の更新が簡単になります。</li></ul> | <ul><li>**Platform にデータを送信するにはマッピングが必要**：組織で Customer Journey Analytics を使用する準備が整ったら、Adobe Experience Platform のデータセットにデータを送信する必要があります。このアクションでは、データオブジェクトのすべてのフィールドを、XDM スキーマフィールドに割り当てるデータストリームマッピングツールのエントリにする必要があります。このワークフローではマッピングを 1 回行うだけで済み、実装を変更する必要ありません。ただし、これは、XDM オブジェクトでデータを送信する際には必要ない追加の手順です。</li><li>**時間の経過と共に、さらなる複雑さが発生します**：将来追加するフィールドは、データストリームの XDM にマッピングする必要があります。<p>実装に新しいフィールドが追加されるたびに、次のいずれかを実行できます。</p><ul><li>**オプション 1:** データオブジェクトに新しい任意の evar または新しい prop を入力し、目的の XDM フィールドにマッピングします。<p>このプロセスは、クライアントサイド実装の一貫性を高めますが、マッピングが必要です。</p></li><li>**オプション 2:** データオブジェクトをレガシー実装のままにして、すべての新しいフィールドに XDM オブジェクトのみを入力し始めます。<p>このプロセスではマッピングは必要ありませんが、つまり、一部の変数はデータオブジェクト内にのみ配置され、その他の変数は XDM オブジェクト内にのみ配置されます。 実装のトラブルシューティングが必要な場合は、いつでも 2 か所に移動する必要があります。 内部ワークフローでこのような状況に対応できることを確認します。</p></li></ul> |
 
 {style="table-layout:auto"}
 
@@ -58,7 +58,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    この手順では、既存のAdobe Analytics実装を移行して、web SDKを使用することができます。 オプションで、Customer Journey Analyticsにデータを送信し、Adobe Analyticsにデータを送信する前に、Adobe Analyticsですべてが機能していることを検証することもできます。 設定が完了し、Adobe Analyticsのデータに満足したら、Edge NetworkからCustomer Journey Analyticsにデータを送信できます。
 
-   この柔軟性により、Customer Journey Analyticsに対するより体系的で思慮深いアップグレードが可能になります。
+   この柔軟性により、Customer Journey Analytics に対する、より系統的かつ慎重なアップグレードが可能になります。
 
    この方法について詳しくは、Adobe Analytics ドキュメントの次の記事を参照してください。
 
@@ -70,7 +70,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. このデータオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
+      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
 
    1. スキーマを選択します。
 
@@ -82,7 +82,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
       | メリット | デメリット |
       |----------|---------|
-      | <p>Adobe Analytics スキーマを使用すると、次のようなメリットがあります。</p><ul><li>アップグレードが容易<p>既にAdobe Experience Platform Web SDK を使用して Adobe Analytics にデータを送信している場合は、データストリームに追加サービスを追加して、Adobe Experience Platform にデータを送信できます（これは Customer Journey Analytics 設定で使用できます）。</p></li></ul> | <p>Adobe Analytics スキーマを使用すると、次のようなデメリットがあります。</p><ul><li>Adobe Analytics スキーマを使用しても、他の Platform アプリケーションでの使用方法が制限されることはありませんが、スキーマは他の方法よりも複雑になります。これは、Adobe Analytics スキーマには、組織で使用される可能性が低い Adobe Analytics に固有のオブジェクトが多数含まれているからです。<p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要があります。</p></li></ul> |
+      | <p>Adobe Analytics スキーマを使用すると、次のようなメリットがあります。</p><ul><li>アップグレードのしやすさ<p>既にAdobe Experience Platform Web SDK を使用して Adobe Analytics にデータを送信している場合は、データストリームに追加サービスを追加して、Adobe Experience Platform にデータを送信できます（これは Customer Journey Analytics 設定で使用できます）。</p></li></ul> | <p>Adobe Analytics スキーマを使用すると、次のようなデメリットがあります。</p><ul><li>Adobe Analytics スキーマを使用しても、他の Platform アプリケーションでの使用方法が制限されることはありませんが、スキーマは他の方法よりも複雑になります。これは、Adobe Analytics スキーマには、組織で使用される可能性が低い Adobe Analytics に固有のオブジェクトが多数含まれているからです。<p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要があります。</p></li></ul> |
 
       +++
 
@@ -90,13 +90,13 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
       | メリット | デメリット |
       |----------|---------|
-      | <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Platform へのデータ送信を開始する前に必要な、時間がかかるプロセスです。</li></ul> |
+      | <ul><p>独自の XDM スキーマに更新すると、次のようなメリットがあります。</p><ul><li>組織のニーズと使用する特定の Platform アプリケーションに合わせて調整された効率化されたスキーマ。</li><p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要はありません。</p></ul> | <p>独自の XDM スキーマに更新すると、次のようなデメリットがあります。</p><ul><li>スキーマの更新は、Platform へのデータの送信を開始する前に必要な時間のかかるプロセスです。</li></ul> |
 
       +++
 
    1. データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。
 
-      詳しくは、Experience Platform ドキュメントの [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping) データ収集のためのデータ準備 [ の ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep) マッピング  を参照してください。
+      詳しくは、Experience Platform ドキュメントの [ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) の [ マッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 

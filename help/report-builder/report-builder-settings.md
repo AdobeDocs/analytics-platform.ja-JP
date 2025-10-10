@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 29%
+ht-degree: 31%
 
 ---
 
-# Report Builder設定
+# Report Builder の設定
 
 「**設定**」ペインを使用して、UI で表示される言語やオフラインモードで動作するかどうかなど、アプリケーションレベルの設定を行います。設定は直ちに適用され、変更されるまで、今後のすべてのセッションに対して設定されます。
 
@@ -33,7 +33,7 @@ Report Builder 設定を変更するには
 
 オフラインモードを有効にするには
 
-1. ![ 設定 ](/help/assets/icons/Setting.svg) を選択します。
+1. 「![設定](/help/assets/icons/Setting.svg)」を選択します。
 
 1. **[!UICONTROL オフラインモードを有効にする]** をオンにします。
 

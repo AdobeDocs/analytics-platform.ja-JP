@@ -8,7 +8,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [計算指標の概要](https://video.tv.adobe.com/v/33738/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [計算指標の概要](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 
 | タスク | 説明 |
 | --- | --- |
-| プラン | 特に、公式に承認される予定の指標 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) については、頻繁に使用されると予想される計算指標を慎重に計画し、構造化してください。 |
+| プラン | 特に、公式に承認される ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) が付いた指標の場合は、頻繁に使用されると予想される計算指標を慎重に計画し、構造化します。 |
 | [ビルド](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | 計算指標を作成、変更および保存します。 |
 | [適用](/help/components/use-components-in-workspace.md) | 計算指標を Workspace プロジェクト内に直接適用します。 |
 | [管理](/help/components/calc-metrics/cm-workflow/cm-manager.md) | 計算指標を管理します。1 つ以上の計算指標に対して、[タグ付け](/help/components/calc-metrics/cm-workflow/cm-tagging.md)、[承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[未承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[フィルター](/help/components/calc-metrics/cm-workflow/cm-filter.md)、[お気に入りに追加](/help/components/calc-metrics/cm-workflow/cm-favorite.md)または[お気に入りから外す](/help/components/calc-metrics/cm-workflow/cm-favorite.md)、[共有](/help/components/calc-metrics/cm-workflow/cm-sharing.md)、[コピー](/help/components/calc-metrics/cm-workflow/cm-copy.md)を実行できます。 |

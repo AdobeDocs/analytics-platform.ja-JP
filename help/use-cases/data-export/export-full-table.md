@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics完全テーブルをエクスポート
+title: Customer Journey Analyticsの完全なテーブルを書き出し
 description: 完全なテーブルの書き出し機能を使用してデータを検証する方法や、AI/ML 用のデータを使用する方法について説明します。
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -29,4 +29,4 @@ ht-degree: 6%
 
 完全テーブルの書き出し機能を使用すると、Analysis Workspaceで作成したフリーフォームテーブルの完全なコンテンツを、指定したクラウド宛先に直接書き出すことができます。
 
-詳しくは、[ クラウドへのCustomer Journey Analyticsレポートの書き出し ](/help/analysis-workspace/export/export-cloud.md) に関する詳細なドキュメントを参照してください。
+詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) に関する詳細なドキュメントを参照してください。

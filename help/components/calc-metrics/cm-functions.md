@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1868'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 92%
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE &#x200B; 行 &#x200B;]{type="Neutral"} 数値の絶対値を返します。 数値の絶対値は、正の値を持つ数値です。
+[!BADGE 行]{type="Neutral"} 数値の絶対値を返します。数値の絶対値は、正の値を持つ数値です。
 
 | 引数 | 説明 |
 |---|---|
@@ -137,7 +137,7 @@ ht-degree: 92%
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 列内の指標のゼロ以外の値の数（ディメンション内でレポートされる一意の要素の数）を返します。
+[!BADGE テーブル]{type="Neutral"} 1 つの列内の指標のゼロ以外の値の数（カウント）（ディメンション内でレポートされた一意の要素の数）を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -157,7 +157,7 @@ ht-degree: 92%
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Row]{type="Neutral"} e を指定された数値の累乗で返します。 定数 e は、自然対数のベースである 2.71828182845904 に等しくなります。EXPONENT（指数）は LN（数の自然対数）の逆関数です。
+[!BADGE 行]{type="Neutral"} 指定された数値の累乗した e を返します。定数 e は、自然対数のベースである 2.71828182845904 に等しくなります。EXPONENT（指数）は LN（数の自然対数）の逆関数です。
 
 | 引数 | 説明 |
 |---|---|
@@ -178,7 +178,7 @@ ht-degree: 92%
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 列の指標の算術平均（平均）を返します。
+[!BADGE テーブル]{type="Neutral"} 1 つの列の指標の算術平均（平均値）を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -200,7 +200,7 @@ ht-degree: 92%
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE &#x200B; テーブル &#x200B;]{type="Neutral"} 列内の指標の中央値を返します。 中央値は、一連の数の中央にある数値です。つまり、数の半分は中央値よりも大きいか等しい値であり、残りの半分は中央値よりも小さいか等しい値です。
+[!BADGE テーブル]{type="Neutral"} 1 つの列の指標の中央値を返します。中央値は、一連の数の中央にある数値です。つまり、数の半分は中央値よりも大きいか等しい値であり、残りの半分は中央値よりも小さいか等しい値です。
 
 | 引数 | 説明 |
 |---|---|
@@ -259,7 +259,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE &#x200B; テーブル &#x200B;]{type="Neutral"} n 番目のパーセンタイル（0 ～ 100 の値）を返します。 n &lt; 0 の場合、関数は 0 を使用します。n > 100 の場合、関数は 100 を返します。
+[!BADGE テーブル]{type="Neutral"} 0～100 の値である、n 番目のパーセンタイルを返します。n &lt; 0 の場合、関数は 0 を使用します。n > 100 の場合、関数は 100 を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -304,7 +304,7 @@ x の y 乗を返します。
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} 指標の値の四分位数を返します。 例えば、四分位数を使用して、最も売上高の多い上位 25 ％の製品を探すことができます。[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)、および [COLUMN MAXIMUM](#column-maximum) は、四分位数がそれぞれ `0`（ゼロ）、`2`、`4` に等しい場合、[QUARTILE](#quartile) と同じ値を返します。
+[!BADGE テーブル]{type="Neutral"} 指標の値の四分位数を返します。例えば、四分位数を使用して、最も売上高の多い上位 25 ％の製品を探すことができます。[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)、および [COLUMN MAXIMUM](#column-maximum) は、四分位数がそれぞれ `0`（ゼロ）、`2`、`4` に等しい場合、[QUARTILE](#quartile) と同じ値を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -435,7 +435,7 @@ ROUND( 314.15, -2) = 300
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"} 数値の正の平方根を返します。 数値の平方根は、その数値を 1/2 乗した値です。
+[!BADGE 行]{type="Neutral"} 数値の正の平方根を返します。数値の平方根は、その数値を 1/2 乗した値です。
 
 | 引数 | 説明 |
 |---|---|
@@ -455,7 +455,7 @@ ROUND( 314.15, -2) = 300
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} データのサンプル母集団に基づく標準偏差（平方根）を返します。
+[!BADGE テーブル]{type="Neutral"} データのサンプル母集団に基づいて標準偏差（平方偏差の平方根）を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -476,7 +476,7 @@ ROUND( 314.15, -2) = 300
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE &#x200B; 表 &#x200B;]{type="Neutral"} データのサンプル母集団に基づく分散を返します。
+[!BADGE テーブル]{type="Neutral"} データのサンプル母集団に基づいて平方偏差を返します。
 
 | 引数 | 説明 |
 |---|---|

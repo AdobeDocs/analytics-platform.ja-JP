@@ -180,7 +180,7 @@ Experience Platformでデータをミラーリングするには、まずデー�
 
      ![ 人物記述子 ](assets/platform-schema-personid.png)
 
-   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]**&#x200B;**[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列モデルベースのデータの場合、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
+   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]****[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列モデルベースのデータの場合、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
 
      ![ タイムスタンプ記述子 ](assets/platform-schema-timestamp.png)
 
@@ -209,7 +209,7 @@ Experience Platform インターフェイスで以下を実行します。
 * **[!UICONTROL 既存のアカウント]** Google BigQuery のアカウント設定が既にある場合。 [ データを選択 ](#select-data) の手順に進みます。
 * Google BigQuery に接続する必要がある場合は **[!UICONTROL 新規アカウント]**。
    1. **[!UICONTROL アカウント名]** および（オプション） **[!UICONTROL 説明]** を指定します。
-   1. **[!UICONTROL 認証タイプ]**&#x200B;**[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
+   1. **[!UICONTROL 認証タイプ]****[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
    1. 「**[!UICONTROL ソースに接続]**」を選択します。
 
       ![Google BigQuery – 認証 ](assets/googlebg-authentication.png)
@@ -218,7 +218,7 @@ Experience Platform インターフェイスで以下を実行します。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
-  [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
+  [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
 
 
 ### データを選択

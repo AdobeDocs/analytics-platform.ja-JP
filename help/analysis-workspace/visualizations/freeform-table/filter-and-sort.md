@@ -17,7 +17,7 @@ Analysis Workspace のフリーフォームテーブルは、インタラクテ�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 

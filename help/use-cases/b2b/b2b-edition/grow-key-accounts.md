@@ -4,12 +4,12 @@ description: Customer Journey Analytics B2B editionを使用して主要なア�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,13 +21,13 @@ B2B 企業にとって、重要なアカウントの拡大と保持は最優先�
 
 ## 販売ステージの進行
 
-アドホックリードのコンバージョンレポートを生成および配布し、セールスファネルを通じてアカウントがどのように進行するかを把握する必要があります。
+アドホックリードのコンバージョンレポートを作成および配布し、セールスfunnelを通じてアカウントがどのように進行するかを把握する必要があります。
 
 [ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションでは、順次ジャーニーの、事前に定義されたステップ間のコンバージョン率とドロップオフ率を視覚化できます。
 
 ### 例
 
-アカウントのセールスファネルの上位（リードからオポチュニティへ）のフォールアウトを確認する。
+アカウントの売上funnelの上位（リードからオポチュニティまで）のフォールアウトを確認する場合。
 
 1. [ フォールアウトの作成と設定 ](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーション。
 1. ![ 設定 ](/help/assets/icons/Setting.svg) を選択して、**[!UICONTROL アカウント]** を **[!UICONTROL フォールアウトコンテナ]** として選択します。

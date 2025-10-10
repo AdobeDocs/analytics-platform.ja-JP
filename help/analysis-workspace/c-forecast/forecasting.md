@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspace の予測について学びます。
+description: Analysis Workspace の予測について説明します。
 title: 予測の概要
 feature: Visualizations
 role: User
@@ -7,7 +7,7 @@ exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -54,7 +54,7 @@ Customer Journey Analytics B2B editionでは、アカウントコンテナが、
 |---|---|
 | アカウント | ビジネスの顧客または潜在的な顧客である会社。 会社は、より大きな組織の子会社または部門になる可能性があります。 アカウントは、販売先の組織を表し、その組織レベルで追跡する必要があります。 |
 | グローバルアカウント （オプション） | 関係会社集団の最上位の親会社。 グローバル アカウントには親会社がありませんが、グローバル アカウントに属する子会社や部門が存在する場合があります。 接続にグローバルアカウント コンテナを設定している場合、親や子会社を持たないアカウントは、アカウント フィールドとグローバル アカウント フィールドの両方に一覧表示する必要があります。 |
-| 商談（オプション） | 一緒に販売される製品とサービスのコレクション。 オポチュニティは、多くの場合、販売が終了するまで、販売サイクルの様々な段階に関係していました。<br> データを使用して、セールスファネル全体を通したオポチュニティの進行状況を測定します。 例えば、ステージ 3 からステージ 4 に移行した上位の商談の詳細を提供するレポートなどです。 |
+| 商談（オプション） | 一緒に販売される製品とサービスのコレクション。 オポチュニティは、多くの場合、販売が終了するまで、販売サイクルの様々な段階に関係していました。<br> データを使用して、セールス・funnelにおけるオポチュニティの進行状況を測定します。 例えば、ステージ 3 からステージ 4 に移行した上位の商談の詳細を提供するレポートなどです。 |
 | 購入グループ （オプション） | 製品またはサービスを購入するための意思決定プロセスに関与する、組織内の人物の集まり。 <br/> 購入グループデータを使用して、キャンペーン管理を通じて購入グループを追跡します。 例えば、主要な購入グループのオーディエンスセグメントを作成します。<br/> ほとんどの場合、購入グループの人物をレポートできるように、購入グループからプロファイルデータへのルックアップが必要です。 |
 | ユーザー | 会社とやり取りした一意のメールアドレスで識別される個人。 <br/> プロファイルデータを使用して、アカウントに勤務する人物を識別します。 例えば、電話会議に登録したすべての人をアカウントでターゲティングします。 |
 
@@ -74,7 +74,7 @@ Analysis Workspaceの特定の B2B 機能に対して、B2B コンテナを使�
 
 * **アトリビューション**：新しい B2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定 ](/help/data-views/component-settings/attribution.md)、[ 計算指標 ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、フリーフォームテーブルの [ 列 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) で使用できます。 アカウントのルックバックは 13 か月に拡張されました。
 
-* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、&lbrace; フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、&lbrace; コホートテーブル [&#128279;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
+* **ビジュアライゼーション**:[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) [、{ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、{ コホートテーブル [](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) のビジュアライゼーションは、新しい B2B コンテナをサポートします。 例えば、新しいコンテナを使用して、購入グループがコンテンツをどのように消費するか、または商談コホートがセールの終了にどのように向かうかを理解できます。
 また、[ ユーザー環境設定 ](/help/analysis-workspace/user-preferences.md#visualizations-preferences) でこれらのビジュアライゼーションのデフォルトのコンテナを設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションを B2B コンテナと共に使用すると、B2B の深い分析とインサイトをサポートできます。

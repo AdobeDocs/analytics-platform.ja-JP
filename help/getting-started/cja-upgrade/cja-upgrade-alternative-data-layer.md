@@ -8,7 +8,7 @@ exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 44%
+ht-degree: 50%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 44%
 
 {{upgrade-note}}
 
-Customer Journey Analyticsにアップグレードする場合、Adobeは [Experience Platform web SDKの新規実装を推奨 ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) します。 ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
+Adobe Customer Journey Analytics にアップグレードする場合は、[Experience Platform Web SDK の新しい実装をお勧め](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)します。ただし、タイムラインやリソースの制約などのいくつかの要因によっては、推奨されるアップグレード手順が組織にとって実用的でない場合があります。
 
 XDM オブジェクトを使用してデータを収集する代わりに、データレイヤー全体をCustomer Journey Analyticsに送信できます。 ただし、この代替オプションを使用すると、時間の経過と共に複雑さが増します。
 

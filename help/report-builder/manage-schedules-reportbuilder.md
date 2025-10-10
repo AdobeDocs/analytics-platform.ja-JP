@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
+source-git-commit: 755a5223deb0845079ea98a7371a2f8acb69ea4b
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # スケジュールされたワークブックの管理
 

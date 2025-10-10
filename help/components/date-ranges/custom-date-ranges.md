@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceでカスタム日付範囲を定義する方法を説明します。
+description: Analysis Workspace でカスタム日付範囲を定義する方法を学習します。
 keywords: Analysis Workspace
 title: カスタム日付範囲の例
 feature: Calendar
@@ -8,7 +8,7 @@ role: User
 source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 +++ 詳細
 
-2 か月前を定義するカスタムの日付範囲を定義する場合。 いずれかのプリセットを使用します。
+2 か月前を定義するカスタム日付範囲を定義する必要があります。いずれかのプリセットを使用します。
 
-![ 過去 2 か月前 ](assets/date-range-example-simple.png)
+![最後の 2 か月前](assets/date-range-example-simple.png)
 
 +++
 
@@ -31,11 +31,11 @@ ht-degree: 3%
 
 +++ 詳細
 
-1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する場合。 例えば、今日が 2024 年 9 月 11 日水曜日の場合。 2024 年 9 月 4 日水曜日（PT）から 2024 年 9 月 7 日土曜日までの日付範囲が必要です。
+1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する必要があります。例えば、今日が 2024年9月11日水曜日の場合。2024年9月4日水曜日から 2024年9月7日土曜日までの日付範囲が必要です。
 
-![ 日付範囲の例 ](assets/date-range-example.png)
+![日付範囲例](assets/date-range-example.png)
 
-+++
++++ 
 
 <!--
 ## Example: Use a 7-day rolling date range

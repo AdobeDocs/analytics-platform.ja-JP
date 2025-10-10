@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 | **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=en) は、収益の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。 データモデルの中心となるのはアカウントなので、すべての分析はアカウントジャーニーに焦点を当てます。ユーザーおよび時間ベースのイベントの上にエンティティ（アカウント、商談、購買グループ）の新しいレイヤーを追加すると、B2B マーケティングおよび収益のライフサイクルの全体像が作成されます。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、Customer Journey Analytics を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。この拡張機能を使用すると、Analysis Workspace や他の Customer Journey Analytics レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。この拡張機能は、生データからレポート／指標を再作成する必要なく、Customer Journey Analytics の BI レポートを取得する簡単な方法です。 |
 | **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=jp) のコンテキスト内でインサイトを共有し、質問できます。これにより、データに関する議論を効率化して、議論の対象となっているデータのコンテキスト内に会話を維持できます。 |
-| **コンテンツ分析** | [コンテンツ分析](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics)を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。コンテンツ分析では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | **Data Insights エージェント** | Customer Journey Analytics の AI アシスタントの一部である [Data Insights エージェント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en)は、生成 AI 会話エージェントです。 データビューのコンポーネントと実際のデータを使用して、関連するビジュアライゼーションを Analysis Workspace で構築することにより、データ中心の質問にすばやく効率的に回答します。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数のビルトインの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |

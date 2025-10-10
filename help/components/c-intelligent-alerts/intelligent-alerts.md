@@ -1,5 +1,5 @@
 ---
-description: アラートを使用して、通知の詳細な制御や異常値検出との統合を可能にする方法を説明します。
+description: アラートを使用して、通知をきめ細かく制御したり、異常値検出と統合したりする方法について説明します。
 title: アラートの概要
 feature: Workspace Basics
 role: User, Admin
@@ -7,7 +7,7 @@ exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
 * 1 つのアラートで複数の指標を示す「積み重ね」アラートの作成
 * 異常値（90％、95％、99％、99.75％、99.9％のしきい値、変化率、超過／未満）に基づいてアラートを作成します（Select、Prime、Ultimate のいずれかのパッケージを使用する Adobe Customer Journey Analytics のお客様のみが使用できます）。
 
-ビデオチュートリアル（[アラート](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=ja)（5:34））では、アラートの基本的な概要について説明します
+次のビデオチュートリアルでは、アラートの基本的な概要を説明します。[ アラート ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=ja) （5:34）
 
 ## アラートの違いについて
 

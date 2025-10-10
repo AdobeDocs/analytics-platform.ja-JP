@@ -1,5 +1,5 @@
 ---
-title: オブジェクトの配列の使用
+title: オブジェクトの配列を使用
 description: Customer Journey Analyticsによるデータ階層に関するレポート方法を説明します。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
@@ -144,7 +144,7 @@ Customer Journey Analyticsは、テーブルに基づいてオブジェクトの
 | `extended` | `50` |
 | `Total` | `250` |
 
-Customer Journey Analyticsでは、イベントの次の部分を調べてレポートを生成します。
+Customer Journey Analyticsは、イベントの次の部分を調べてレポートを生成します。
 
 ```diff
 {
@@ -246,7 +246,7 @@ Customer Journey Analyticsでは、イベントの次の部分を調べてレポ
 
 ### 指標の組み合わせ
 
-異なるオブジェクトレベルにある場合、Customer Journey Analyticsは同じような名前の指標をネイティブに組み合わせません。
+異なるオブジェクトレベルにある場合、Customer Journey Analyticsは同じような名前の指標をネイティブに結合しません。
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -270,5 +270,5 @@ Customer Journey Analyticsでは、イベントの次の部分を調べてレポ
 
 ## 制限事項
 
-制限は、スキーマで使用され、Experience PlatformのCustomer Journey Analyticsの一部としてモデル化されるデータ内の配列に適用されます。 [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits) の [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限  および  データサイズの制限）を参照してください。
+制限は、Experience Platformで使用され、Customer Journey Analyticsのスキーマの一部としてモデル化されるデータ内の配列に適用されます。 [ リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) の [](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限 [ および ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) データサイズの制限）を参照してください。
 

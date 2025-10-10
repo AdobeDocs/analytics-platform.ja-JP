@@ -6,11 +6,11 @@ exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 計算指標をお気に入りとしてマーク
+# 計算指標のお気に入りへの登録
 
 計算指標をお気に入りとしてマークできます。 計算指標をお気に入りとしてマークすると、計算指標を整理するのに役立ちます。 すべてのユーザーが計算指標を優先できます。
 

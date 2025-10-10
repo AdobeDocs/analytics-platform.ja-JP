@@ -6,7 +6,7 @@ keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 ![コンバージョントレンド](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL コンバージョントレンド]**&#x200B;分析では、コンバージョン率の推移のトレンドビジュアライゼーションを表示します。横軸は時間間隔、縦軸はコンバージョン率を表します。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423489/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
 
 
 ## ユースケース

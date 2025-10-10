@@ -1,37 +1,37 @@
 ---
-title: コンテンツ分析の概要
-description: コンテンツ分析の概要
+title: Content Analytics の概要
+description: Content Analytics の概要
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 100%
 
 ---
 
-# コンテンツ分析の概要
+# Content Analytics の概要
 
-コンテンツ分析は、ビジネスが定義した主要業績評価指標に影響を与えるコンテンツをマーケターが理解するのに役立ちます。コンテンツ分析では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。例えば、特定のトーン、特定のカラーパレット、特定のテーマに対するお客様の反応は良いですか？この情報と、特別に設計されたレポートワークフローおよびテンプレートを組み合わせることで、Customer Journey Analytics でさらに優れた分析を実行し、カスタマージャーニーデータに関するより深いインサイトを得ることができます。
+Content Analytics は、ビジネスが定義した主要業績評価指標に影響を与えるコンテンツをマーケターが理解するのに役立ちます。Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。例えば、特定のトーン、特定のカラーパレット、特定のテーマに対するお客様の反応は良いですか？この情報と、特別に設計されたレポートワークフローおよびテンプレートを組み合わせることで、Customer Journey Analytics でさらに優れた分析を実行し、カスタマージャーニーデータに関するより深いインサイトを得ることができます。
 
-コンテンツ分析では、AI と機械学習ベースの&#x200B;**機能サービス**&#x200B;を使用して、コンテンツをコンポーネントと属性に分類します。すべてのコンテンツに構造化されたメタデータプロファイルを作成することで、コンテンツと、ビジネス結果を推進するそのコンテンツの属性を分析できます。
+Content Analytics では、AI と機械学習ベースの&#x200B;**機能サービス**&#x200B;を使用して、コンテンツをコンポーネントと属性に分類します。すべてのコンテンツに構造化されたメタデータプロファイルを作成することで、コンテンツと、ビジネス結果を推進するそのコンテンツの属性を分析できます。
 
-この構造化メタデータプロファイルの作成に加えて、コンテンツ分析では、単一の識別子を使用してアセットとエクスペリエンスを識別する **ID サービス**&#x200B;を提供します。ID サービスは、まったく同じアセットが複数の場所に表示される場合に認識できます。 その場合、アセットの 2 つのインスタンスは同じアセットとして扱われ、コンテンツの使用状況と消費の全体像を把握できます。
+この構造化メタデータプロファイルの作成に加えて、Content Analytics では、単一の識別子を使用してアセットとエクスペリエンスを識別する **ID サービス**&#x200B;を提供します。ID サービスは、まったく同じアセットが複数の場所に表示される場合に認識できます。 その場合、アセットの 2 つのインスタンスは同じアセットとして扱われ、コンテンツの使用状況と消費の全体像を把握できます。
 
 ## 値
 
-コンテンツ分析では、次のような増加レベルで価値を提供します。
+Content Analytics では、次のような増加レベルで価値を提供します。
 
-1. コンテンツ&#x200B;**使用状況**：コンテンツ分析を使用すると、インプレッションを受信しているアセットと、インプレッションを受信しているアセットの場所に関するインサイトを得ることができます。 これらのインサイトは、web プロパティでアセットが十分に使用されていないアセットや、過剰に使用されているアセットを確認するのに役立ちます。
-1. コンテンツ&#x200B;**エンゲージメント**：コンテンツ分析では、特定の属性を持つアセットの平均クリックスルー率などのエンゲージメントインサイトを提供できます。これらのインサイトは、特定のタイプのエクスペリエンスが引き続き効果的かどうかを判断するのに役立ちます。
+1. コンテンツ&#x200B;**使用状況**：Content Analytics を使用すると、インプレッションを受信しているアセットと、インプレッションを受信しているアセットの場所に関するインサイトを得ることができます。 これらのインサイトは、web プロパティでアセットが十分に使用されていないアセットや、過剰に使用されているアセットを確認するのに役立ちます。
+1. コンテンツ&#x200B;**エンゲージメント**：Content Analytics では、特定の属性を持つアセットの平均クリックスルー率などのエンゲージメントインサイトを提供できます。これらのインサイトは、特定のタイプのエクスペリエンスが引き続き効果的かどうかを判断するのに役立ちます。
 1. コンテンツ&#x200B;**ジャーニー**：さらに、Experience Platform で使用可能な他のすべてのデータと組み合わせると、コンテンツジャーニーに関する追加のインサイトを得ることができます。 例えば、特定のコンテンツがエンゲージメントに加えてコンバージョンにつながるかどうかなどです。次に、その知識があれば、コンテンツのタイプに関する ROI を判断できます。
-1. コンテンツ&#x200B;**パーソナライゼーション**：最終的に、コンテンツ分析により、インサイトに基づいて行動し、これらのインサイトを使用してコンテンツに費やす費用を決定できます。例えば、特定のタイプのコンテンツを特定のオーディエンスに送信する必要があるでしょうか？高度なパーソナライゼーションの機会を提供してくれるコンテンツは何ですか？
+1. コンテンツ&#x200B;**パーソナライゼーション**：最終的に、Content Analytics により、インサイトに基づいて行動し、これらのインサイトを使用してコンテンツに費やす費用を決定できます。例えば、特定のタイプのコンテンツを特定のオーディエンスに送信する必要があるでしょうか？高度なパーソナライゼーションの機会を提供してくれるコンテンツは何ですか？
 
 ## 用語
 
-コンテンツ分析では、次の主要な用語を使用します。
+Content Analytics では、次の主要な用語を使用します。
 
 ![アセットとエクスペリエンス](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
@@ -43,31 +43,31 @@ ht-degree: 100%
 
 Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。そして、そのコンテンツデータ収集と、行動データの（既存の）データ収集の実装を組み合わせます。
 
-![コンテンツ分析 - 仕組み](assets/aca-overview.gif)
+![Content Analytics - 仕組み](assets/aca-overview.gif)
 
-1. ユーザーが[コンテンツ分析用に設定](config/configuration.md)されたサイトにアクセスすると、Experience Platform Web SDK ではコンテンツのインプレッションとインタラクションを記録します。
+1. ユーザーが [Content Analytics 用に設定](config/configuration.md)されたサイトにアクセスすると、Experience Platform Web SDK ではコンテンツのインプレッションとインタラクションを記録します。
 1. ID および機能サービスは、これらのインタラクションを処理します。このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。また、機能サービスでは、AI／ML サービスを適用して、エクスペリエンスとアセットのメタデータおよび属性を検出します。
 1. これらのサービスの結果（[コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platform 内の関連する特定のコンテンツ分析データセットを更新するのに使用されます。
-1. コンテンツ分析データは、行動データや他のルックアップデータと共に、Customer Journey Analytics 設定（[接続](/help/connections/overview.md)、[データビュー](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤を提供します。<br/>[コンテンツ分析テンプレート](/help/content-analytics/report/report.md#template)を使用すると、コンテンツ分析レポートと分析をすぐに開始できます。
+1. コンテンツ分析データは、行動データや他のルックアップデータと共に、Customer Journey Analytics 設定（[接続](/help/connections/overview.md)、[データビュー](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤を提供します。<br/>[Content Analytics テンプレート](/help/content-analytics/report/report.md#template)を使用すると、Content Analytics レポートと分析をすぐに開始できます。
 
 
 >[!NOTE]
 >
->コンテンツ分析では AI／ML サービスを活用するので、不正確な結果や誤解を招く結果が生成される場合があります。その結果、AI／ML で生成された出力を確認および検証するには、自身の判断で行ってください。
+>Content Analytics では AI／ML サービスを活用するので、不正確な結果や誤解を招く結果が生成される場合があります。その結果、AI／ML で生成された出力を確認および検証するには、自身の判断で行ってください。
 >
 >メインインターフェイスの ![InfoOutline](/help/assets/icons/InfoOutline.svg) から使用可能な「**[!UICONTROL フィードバック]**」タブを使用して、AI／ML で生成された出力に関するフィードバックを提供できます。
 >
 
 >[!NOTE]
 >
->プライバシーとセキュリティシールドアドオンのライセンスを取得している場合、コンテンツ分析の対象となるエクスペリエンスとアセット（から生成されたすべてのデータ）は、DULE ラベル付けまたは顧客管理キーの対象とはなりません。また、コンテンツ分析は HIPAA 対応のサービスではありません。
+>プライバシーとセキュリティシールドアドオンのライセンスを取得している場合、Content Analytics の対象となるエクスペリエンスとアセット（から生成されたすべてのデータ）は、DULE ラベル付けまたは顧客管理キーの対象とはなりません。また、Content Analytics は HIPAA 対応のサービスではありません。
 >
 
 
 >[!MORELIKETHIS]
 >
->[コンテンツ分析レポート](report/report.md)
->>[コンテンツ分析の設定](config/configuration.md)
->>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>[Content Analytics レポート](report/report.md)
+>>[Content Analytics の設定](config/configuration.md)
+>>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

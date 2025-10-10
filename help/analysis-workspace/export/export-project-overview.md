@@ -8,7 +8,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,6 +36,6 @@ Analysis Workspace から書き出すには、様々な方法があります。�
 |---------|----------|
 | [ワークステーションにダウンロード](/help/analysis-workspace/export/download-send.md) | <li>プロジェクトを個人用ワークステーションにダウンロードする。</li><li>アドホックデータのみをダウンロードする（スケジュールされていないもの）。</li> <li>最大 50,000 行をダウンロードする。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md) | <li>書き出された Customer Journey Analytics データを組織の他のユーザーにメールで送信する。</li><li>アドホックで、またはスケジュールに従ってメールを送信する。</li> <li>メールに最大 50,000 行を含める。</li> <!--true?--> |
-| [ クラウドの場所への書き出し ](/help/analysis-workspace/export/export-cloud.md) | <li>以下のようなクラウドの場所に書き出す場合 <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックに指定するか、スケジュールに従ってデータを書き出す。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [クラウドの場所に書き出し](/help/analysis-workspace/export/export-cloud.md) | <li>以下のようなクラウドの場所に書き出す場合 <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックに指定するか、スケジュールに従ってデータを書き出す。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}

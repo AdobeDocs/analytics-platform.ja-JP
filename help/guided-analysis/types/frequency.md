@@ -6,7 +6,7 @@ keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![頻度](/help/assets/icons/Histogram.svg) **[!UICONTROL 頻度]**&#x200B;分析では、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。この分析の垂直軸には、イベントの頻度を表すバケットが含まれています。横軸は、各バケットのユーザーまたはセッションの数を測定します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435803/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
 
 ## ユースケース
 

@@ -4,7 +4,7 @@ title: Customer Journey Analytics の機能リリース戦略
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ Customer Journey Analytics リリースは、機能のデプロイメントに�
 
 ## リリース方法
 
-[!UICONTROL Analysis Workspace] では、機能フラグ（「トグル」とも呼ばれます）を使用して新機能の表示/非表示を制御し、完全リリース前の制御スケールテストを行うことができます。このリリース戦略には、次のフェーズが含まれます。
+[!UICONTROL Analysis Workspace] では、機能フラグ（「切替スイッチ」とも呼ばれます）を使用して新機能の表示/非表示を制御し、完全リリース前の制御スケールテストを行うことができます。このリリース戦略には、次のフェーズが含まれます。
 
 * **制限付きテスト**：段階的なリリースは、アドビの内部ユーザーによるテストで始まります。その後、少数の顧客アカウントのグループに公開して、機能が顧客のニーズと期待に応えているかどうかを確認します。
 

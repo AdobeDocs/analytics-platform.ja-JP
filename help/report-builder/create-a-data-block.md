@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 23%
 
 1. **[!UICONTROL ディメンション]**、**[!UICONTROL 指標]** および **[!UICONTROL セグメント]** コンポーネントを追加します。
 
-   コンポーネントリストをスクロールするか、「![ 検索 ](/help/assets/icons/Search.svg) **[!UICONTROL _コンポーネントを検索_]**」フィールドを使用してコンポーネントを配置します。 コンポーネントを [!UICONTROL &#x200B; テーブル &#x200B;] ペインにドラッグ&amp;ドロップするか、リストでコンポーネント名をダブルクリックして、コンポーネントを [!UICONTROL &#x200B; テーブル &#x200B;] ペインに追加します。
+   コンポーネントリストをスクロールするか、「![ 検索 ](/help/assets/icons/Search.svg) **[!UICONTROL _コンポーネントを検索_]**」フィールドを使用してコンポーネントを配置します。 コンポーネントを [!UICONTROL  テーブル ] ペインにドラッグ&amp;ドロップするか、リストでコンポーネント名をダブルクリックして、コンポーネントを [!UICONTROL  テーブル ] ペインに追加します。
 
    コンポーネントをダブル選択して、テーブルのデフォルトセクションに追加します。
 
@@ -114,7 +114,7 @@ ht-degree: 23%
 >[!MORELIKETHIS]
 >
 >[ データビューを選択 ](select-data-view.md)
->[日付範囲を選択 ](select-date-range.md)
->[ディメンションのフィルター ](filter-dimensions.md)
->[セグメントの操作 ](work-with-filters.md)
+>>[日付範囲を選択 ](select-date-range.md)
+>>[ディメンションのフィルター ](filter-dimensions.md)
+>>[セグメントの操作 ](work-with-filters.md)
 >

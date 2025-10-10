@@ -6,8 +6,8 @@ exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 98%
+source-wordcount: '1076'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 >[!NOTE]
 >
 >メディア分平均オーディエンスパネルは、Customer Journey Analytics 用ストリーミングメディアコレクションアドオンを購入したお客様のみが使用できます。
->&#x200B;>詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
+>>詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
 >
 
 **[!UICONTROL メディア再生滞在時間]**&#x200B;パネルを使用すると、同時実行のピークの詳細と分類および比較機能を使用して、経時的に再生を分析できます。
@@ -60,7 +60,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/3446701?captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/338699){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -88,10 +88,10 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 |---|---|
 | パネルの日付範囲 | パネルの日付範囲のデフォルトは「今日」です。一度に 1 日または複数の月を表示するように編集できます。<br>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
 | 精度 | 精度のデフォルトは「分」です。<br>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
-| パネルの要約数値 | 再生滞在時間の日時の詳細を表示するには、概要番号を使用できます。最大値は、ピーク同時実行性の詳細を示します。最小値は、トラフの詳細を示します。 合計値は、選択範囲に費やした合計再生滞在時間を加算したものです。パネルのデフォルトでは、最大値のみが表示されますが、最小値、合計値、またはこれら 3 つの組み合わせを表示するように変更できます。<br>内訳を使用している場合は、それぞれの概要番号が表示されます。 |
+| パネルの要約数値 | 再生滞在時間の日時の詳細を表示するには、概要番号を使用できます。最大値は、ピーク同時実行性の詳細を示します。最小値は、トラフの詳細を示します。 合計値は、選択範囲に費やした合計再生滞在時間を加算したものです。パネルのデフォルトでは、最大値のみが表示されますが、最小値、合計値、またはこれら 3 つの組み合わせを表示するように変更できます。<br>分類を使用している場合は、それぞれの概要番号が表示されます。 |
 | シリーズの分類 | オプションとして、セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。<p> - 一度に 10 行まで表示できます。分類は 1 つのレベルに制限されます。</p><p>- ディメンションをドラッグすると、選択したパネルの日付範囲に基づいて、上位のディメンション項目が自動的に選択されます。</p> - 日付範囲を比較するには、2 つ以上の日付範囲をシリーズ分類セグメントにドラッグします。 |
 | 時刻の形式 | 再生滞在時間は、`Hours:Minutes:Seconds`（デフォルト）または `Minutes`（整数で表示され、四捨五入されます）で表示できます。 |
-| 日付順の表示 | 2 つ以上の日付範囲セグメントをシリーズ分類として配置した場合は、オーバーレイ（デフォルト）または順次を選択するオプションが表示されます。オーバーレイでは、共通の X 軸の開始を持つ線が並行して表示され、順次では、特定の X 軸の開始を持つ線が表示されます。データが上に並ぶ場合（例えば、セグメント 1 が午後 8:44 で終わり、セグメント 2 が午後 8:45 で始まる場合）、行が順に表示されます。 |
+| 日付順の表示 | 2 つ以上の日付範囲セグメントをシリーズ分類として配置した場合は、オーバーレイ（デフォルト）または順次を選択するオプションが表示されます。オーバーレイでは、共通の X 軸の開始を持つ線が並行して表示され、順次では、特定の X 軸の開始を持つ線が表示されます。データが上に並ぶ場合（例えば、セグメント 1 が午後 8:44 に終わり、セグメント 2 が午後 8:45 に始まる場合）、行が順に表示されます。 |
 
 
 ![メディア再生滞在時間のデフォルトビュー。](assets/mpts_default_view.png)
@@ -129,6 +129,6 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 >[!MORELIKETHIS]
 >
 >[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
->&#x200B;>[メディア同時視聴者数パネル](media-concurrent-viewers.md)
+>>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
+>>[メディア同時視聴者数パネル](media-concurrent-viewers.md)
 >

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ## データ要素の設定
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。（データ要素について詳しくは、タグドキュメント[データ要素](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/data-elements)を参照してください。）
+データ要素は、データ辞書（またはデータマップ）の構築要素です。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。（データ要素について詳しくは、タグドキュメント[データ要素](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/data-elements)を参照してください。）
 
 以下の節では、推奨されるデータ要素と、設定可能なその他の一般的なデータ要素について説明します。
 

@@ -237,7 +237,7 @@ HTTP API ソースコネクタを作成するには：
 
 ストリーミングエンドポイント URL をコピーし、それを使用して、Adobe Experience Platform ロイヤルティデータセットにデータをストリーミングするようロイヤルティアプリケーションを設定できます。
 
-以下を説明するさらに包括的なチュートリアルについては、[UI を使用した HTTP API ストリーミング接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=ja) を参照してください。
+以下を説明するさらに包括的なチュートリアルについては、[UI を使用した HTTP API ストリーミング接続の作成 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) を参照してください。
 
 - 認証の使用方法
 - 受信データと XDM スキーマに互換性がない場合にデータをマッピングする方法。
@@ -252,7 +252,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -298,7 +298,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -351,7 +351,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

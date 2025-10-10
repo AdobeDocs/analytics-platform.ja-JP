@@ -53,11 +53,11 @@ ht-degree: 97%
 
 ## 手順 2：顧客 AI データセットへの Customer Journey Analytics 接続を設定する
 
-Customer Journey Analytics で、顧客 AI 用に計測された Experience Platform データセットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」というプレフィックスが付きます。
+Customer Journey Analytics で、顧客 AI 用に計測された Experience Platform データセットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」という接頭辞が付きます。
 
 >[!IMPORTANT]
 >
->手順 1 での設定時に Customer Journey Analytics のスコアを有効にする切替スイッチをオンにしている場合、各顧客 AI インスタンスには 2 つの出力データセットがあります。1 つの出力データセットが Profile XDM 形式、もう 1 つが Experience Event XDM 形式で表示されます。
+>手順 1 での設定時に Customer Journey Analytics のスコアを有効にする切替スイッチをオンにしている場合、各顧客 AI インスタンスには 2 つの出力データセットがあります。1 つの出力データセットが Profile XDM 形式、もう 1 つがエクスペリエンスイベント XDM 形式で表示されます。
 
 ![CAI スコア](assets/cai-scores.png)
 

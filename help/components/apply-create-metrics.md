@@ -6,7 +6,7 @@ exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -90,7 +90,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
    * [!UICONTROL **列の最小値**]：列のディメンション要素のセットの最小値を表示する新しい列を作成します。 これは [Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) 関数を使用します。
 
-   * [!UICONTROL **列の合計**]:1 つの列内（1 つのディメンションのすべての要素）の指標のすべての数値を加算する新しい列を作成します。 [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum) 関数を使用します。
+   * [!UICONTROL **列の合計**]:Creates （ディメンションのすべての要素にわたって）列内の指標のすべての数値を加算する新しい列。 [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum) 関数を使用します。
 
    2 つの列を選択した場合は、次のオプションを使用できます。
 

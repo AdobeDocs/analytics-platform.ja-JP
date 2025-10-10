@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="永続性"
->abstract="ディメンションに適用されるデフォルト配分モデルを設定します。配分は、レポートの際にセグメントの前に適用されます。"
+>abstract="ディメンションに適用されるデフォルトの配分モデルを設定します。配分は、レポートのセグメントの前に適用されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 
-[!UICONTROL &#x200B; 永続性 &#x200B;] は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。 セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
+[!UICONTROL  永続性 ] は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。 セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
 
 | 設定 | 説明 |
 | --- | --- |
@@ -108,7 +108,7 @@ ht-degree: 79%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/3409294/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

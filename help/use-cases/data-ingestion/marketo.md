@@ -25,7 +25,7 @@ Experience Platformで利用可能なMarketo Engage データセットを活用�
 
 >[!NOTE]
 >
->Marketo Engage データからより多くの価値を得るには [0&rbrace;Customer Journey Analytics B2B edition&rbrace; を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
+>Marketo Engage データからより多くの価値を得るには [0}Customer Journey Analytics B2B edition} を検討する必要があります。 ](/help/getting-started/cja-b2b-edition.md)Marketo Engage データセットを、アカウントデータセットおよびルックアップデータセットと組み合わせることができます。 さらに、Customer Journey Analytics B2B editionにおけるアカウントと商談のレベルについてもレポートします。
 >
 
 
@@ -33,13 +33,13 @@ Customer Journey AnalyticsでMarketo Engage データについてレポートす
 
 +++ &#x200B;1. Marketo ソースデータフィールドの XDM ターゲットへのマッピング
 
-[人物](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
+[人物](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
 
 +++
 
 +++ &#x200B;2. Marketo データのAdobe Experience Platformへの取り込み
 
-[Marketo Engage コネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
+[Marketo Engage コネクタ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
 +++
 
@@ -54,7 +54,7 @@ Experience Platform データセットに関するレポートを作成するに
 
 [データビュー](/help/data-views/data-views.md)は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。Analysis Workspace で使用可能なすべてのディメンションおよび指標（この場合、Marketo に特有の指標およびディメンション）を指定します。また、それらのディメンションや指標がどの列からデータを取得するかも指定します。データビューは、Analysis Workspace でのレポート作成の準備の際に定義します。
 
-+++
++++ 
 
 +++ 5.Analysis Workspaceにおける報告
 
@@ -114,7 +114,7 @@ Marketo Engageは、マーケティングの自動処理 KPI、プログラム�
 * **高度な BI 分析（アドオン）**：プログラム、アカウント、リードデータを分析するためのカスタムレポートビルダーをドラッグ&amp;ドロップでポイント&amp;クリックします（最近の高度な BI 分析の概要を参照）。
 * **事前に作成されたダッシュボード**：キャンペーンのパフォーマンス、チャネルの有効性、パイプライン/売上高の貢献度のために。
 * **プログラムとチャネル分析**:Marketoが管理するジャーニーに固有のアトリビューションと ROI。
-* **マーケティング中心**：メール統計、フォーム、スマートキャンペーン、収益への影響など、マーケティングファネルに対する透明性を必要とするユーザーに焦点を当てています。
+* **マーケティング中心**：メール統計、フォーム、スマートキャンペーン、売上高への影響など、マーケティングfunnelに対する透明性を必要とするユーザーに焦点を当てます。
 
 
 #### Marketo Engageの典型的なユースケース

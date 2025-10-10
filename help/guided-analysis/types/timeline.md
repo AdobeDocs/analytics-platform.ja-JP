@@ -6,7 +6,7 @@ keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -29,12 +29,12 @@ ht-degree: 100%
 >[!NOTE]
 >
 >[!UICONTROL タイムライン]分析では、[データビュー](/help/data-views/component-reference.md#optional)で&#x200B;**[!UICONTROL ユーザー ID]** 標準コンポーネントが使用可能である必要があります。 データビューへのユーザー ID のインクルージョンは、Customer Journey Analytics 管理者によって管理され、組織はこのデータにアクセスできるユーザーに対する完全なプライバシー制御が可能になります。
-><br/>データビューに[!UICONTROL ユーザー ID] コンポーネントを含めていない場合は、次のメッセージが表示されます。
+>><br/>データビューに[!UICONTROL ユーザー ID] コンポーネントを含めていない場合は、次のメッセージが表示されます。
 >
 >* **管理者**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加してください。*
 >* **管理者以外**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加するには、Customer Journey Analytics 管理者にお問い合わせください。*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435768/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 

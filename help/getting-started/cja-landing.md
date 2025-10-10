@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Customer Journey Analytics B2B Edition は、売上高の増加を促進する�
 
 [![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
->[!TAB コンテンツ分析]
+>[!TAB Content Analytics]
 
 Content Analytics を使用すると、大量のコンテンツデータをすばやく容易に調べて、トレンドを明らかにし、異常を発見し、コンテンツ疲れを特定し、コンテンツの閲覧状況からインサイトを取得できます。
 

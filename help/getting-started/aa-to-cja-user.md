@@ -78,7 +78,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 セグメントは、技術的には Adobe Analytics から Customer Journey Analytics に移行されませんが、コンポーネント移行ツールを使用して、Customer Journey Analytics で Adobe Analytics セグメントを再作成できます。 セグメントは、マッピングされたディメンションと指標に基づいて Customer Journey Analytics で再作成されます。 詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行の準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)を参照してください。
 
-[!DNL Customer Journey Analytics] からExperience Platform統合プロファイルへの [!UICONTROL &#x200B; セグメント &#x200B;] （[!UICONTROL &#x200B; セグメント &#x200B;]）の共有や公開はまだできません（この機能は現在開発中です）。
+[!UICONTROL  からExperience Platform統合プロファイルへの ] セグメント [!UICONTROL  （] セグメント [!DNL Customer Journey Analytics]）の共有や公開はまだできません（この機能は現在開発中です）。
 
 セグメントの概念の変更に加えて、セグメントコンテナも次のように更新されます。
 
@@ -88,12 +88,12 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## 計算指標の概念の変更
 
-計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL &#x200B; Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
+計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
 
 
 >[!BEGINSHADEBOX]
 
-計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/33739?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+計算指標の移行方法に関するデモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics から Customer Journey Analytics への計算指標の移行](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics では、ECID 以外にも ID の概念を拡張し�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/34690/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

@@ -13,7 +13,7 @@ ht-degree: 26%
 
 ---
 
-# Report Builderの設定
+# Report Builder の設定
 
 この記事では、Microsoft Excel でReport Builder for Customer Journey Analyticsを使用するための要件の概要を説明します。 アドインのインストール方法とセットアップ方法について説明します。
 
@@ -74,7 +74,7 @@ Microsoft ストアへのアクセスがブロックされている場合：
 
   ![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png){zoomable="yes"}
 
-Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ]&#x200B;**タブの下に (/help/assets/icons/AdobeLogoRedOnWhite.svg)AdobeLogoRedonWhite** **[!UICONTROL Report Builder]** アイコンが表示されます。
+Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ](/help/assets/icons/AdobeLogoRedOnWhite.svg) タブの下に **[!UICONTROL AdobeLogoRedonWhite]** **[!UICONTROL Report Builder]** アイコンが表示されます。
 
 ![Excel の「Report Builder」アイコン ](./assets/rb_app_icon.png){zoomable="yes"}
 

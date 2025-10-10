@@ -278,13 +278,13 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
    「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
+詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
 Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
 #### **データ要素**
 
-データ要素は、データディクショナリ（またはデータマップ）の構築ブロックです。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。
+データ要素は、データ辞書（またはデータマップ）の構築要素です。データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信します。タグでデータレイヤーから読み取り、Adobe Experience Platform にデータを配信するために使用できるデータ要素を設定します。
 
 データ要素には様々なタイプがあります。最初にデータ要素を設定して、サイトでユーザーが表示しているページ名を取り込みます。
 
@@ -493,7 +493,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 接続を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
 
 2. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 
@@ -539,7 +539,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 データ表示を作成するには：
 
-1. Customer Journey Analytics UI で、必要に応じて **データ管理** から「**[!UICONTROL データビュー]**」を選択します。
+1. Customer Journey Analytics UI で、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL データビュー]**」を選択します。
 
 2. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 
@@ -592,7 +592,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

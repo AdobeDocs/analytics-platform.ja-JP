@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceの要件について説明します。
+description: Analysis Workspace の要件について説明します。
 keywords: Analysis Workspace
 title: 要件
 feature: Workspace Basics
@@ -8,13 +8,13 @@ role: Admin
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # 要件
 
-Analysis Workspaceを実行するための要件を以下に示します。
+Analysis Workspace の実行要件を以下に示します。
 
 | 要件 | 説明 |
 |--- |--- |

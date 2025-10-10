@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. データブロックのセルを選択します。
 
-1. ![ コマンド ](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]**&#x200B;**[!UICONTROL データブロックの編集]** を選択します。
+1. ![ コマンド ](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]****[!UICONTROL データブロックの編集]** を選択します。
 
 1. 「**[!UICONTROL 次へ]**」を選択して、「**[!UICONTROL ディメンション]**」タブを表示します。
 
@@ -64,7 +64,7 @@ ht-degree: 33%
 
 ## フィルタータイプ
 
-ディメンション項目をフィルタリングする方法には、「一番人気 [&#128279;](#specific-filtering) と [ 特定 ](#most-popular) の 2 つがあり  す。
+ディメンション項目をフィルタリングする方法には、「一番人気 [ と ](#most-popular) 特定 [ の 2 つがあり ](#specific-filtering) す。
 
 ### **[!UICONTROL 一番人気]**
 

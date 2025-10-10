@@ -40,7 +40,7 @@ ht-degree: 55%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL コンポーネントの種類] | 必須。コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントがそれぞれに含まれているコンポーネント領域で変更します。 |
-| [!UICONTROL &#x200B; コンポーネント名 &#x200B;] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL  コンポーネント名 ] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。カスタムタグまたは標準タグを使用してコンポーネントにタグ付けすると、Analysis Workspace UI での検索やフィルタリングが容易になります。 |
 | [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義の [ コンテキストラベル ](#context-labels) のドロップダウンメニュー。 |
@@ -59,7 +59,7 @@ ht-degree: 55%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://video.tv.adobe.com/v/3412937/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -321,7 +321,7 @@ Adobeが提供するプロジェクトテンプレートを効率化するため
 
 +++
 
-+++ コンテンツ分析
++++ Content Analytics
 
 | 名前 | 説明 |
 |------|-------------|

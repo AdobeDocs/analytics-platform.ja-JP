@@ -8,7 +8,7 @@ exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
 source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 47%
 
 ## はじめに
 
-[!DNL Customer Journey Analytics BI extension] を使用してデータを書き出すと、Customer Journey Analyticsデータビューからデータを書き出すことができます。
+[!DNL Customer Journey Analytics BI extension] を使用したデータの書き出しでは、Customer Journey Analytics データビューからデータを書き出すことができます。
 
 ![BI 拡張機能 ](../assets/bi-extension.svg)
 
