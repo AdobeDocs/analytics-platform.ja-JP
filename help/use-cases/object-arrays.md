@@ -270,5 +270,5 @@ Customer Journey Analyticsは、イベントの次の部分を調べてレポー
 
 ## 制限事項
 
-制限は、Experience Platformで使用され、Customer Journey Analyticsのスキーマの一部としてモデル化されるデータ内の配列に適用されます。 [ リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) の [](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限 [ および ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) データサイズの制限）を参照してください。
+制限は、Experience Platformで使用され、Customer Journey Analyticsのスキーマの一部としてモデル化されるデータ内の配列に適用されます。 [&#x200B; リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) の [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限 [&#x200B; および &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) データサイズの制限）を参照してください。
 

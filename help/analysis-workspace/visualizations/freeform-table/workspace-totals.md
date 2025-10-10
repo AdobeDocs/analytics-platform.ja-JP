@@ -23,7 +23,7 @@ ht-degree: 88%
 
 ![総計とテーブルの合計をハイライト表示するフリーフォームテーブル。](assets/total-row.png)
 
-* **[!UICONTROL テーブル合計]** ➊ – この合計は、通常、[!UICONTROL  総計 ] と等しいか、またはそのサブセットです。 合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
+* **[!UICONTROL テーブル合計]** ➊ – この合計は、通常、[!UICONTROL &#x200B; 総計 &#x200B;] と等しいか、またはそのサブセットです。 合計には、「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。
 * **[!UICONTROL 総計]** （**[!UICONTROL 範囲外]** *数値*） ➋ – この合計は、収集されたすべてのイベントを表します。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのイベントを反映するように調整されます。
 
 
@@ -34,7 +34,7 @@ ht-degree: 88%
 ![設定](/help/assets/icons/Setting.svg) **[!UICONTROL 列設定]** には、「**[!UICONTROL 合計を表示]**」と「**[!UICONTROL 総計を表示]**」のオプションがあります。これらの設定をオフにすると、合計がテーブルから削除されます。これは、合計が意味をなさない場合に行う必要があります。
 
 
-[ 静的行 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) を含むフリーフォームテーブルでは、合計の動作が異なります。 およびは、![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 行設定]** を使用して制御されます。
+[&#x200B; 静的行 &#x200B;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) を含むフリーフォームテーブルでは、合計の動作が異なります。 およびは、![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) **[!UICONTROL 行設定]** を使用して制御されます。
 
 | オプション | 説明 |
 |---|---|

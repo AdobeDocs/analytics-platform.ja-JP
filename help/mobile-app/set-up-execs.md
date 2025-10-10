@@ -51,7 +51,7 @@ ht-degree: 69%
 
 ダウンロードしてインストールすると、エグゼクティブユーザーは既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。アドビでは、Adobe ID と Enterprise/Federated ID の両方をサポートしています。
 
-![Adobe Analytics ダッシュボードのスタートアップスクリーン ](assets/welcome.png)
+![Adobe Analytics ダッシュボードのスタートアップスクリーン &#x200B;](assets/welcome.png)
 
 ## エグゼクティブによるスコアカードへのアクセスの支援
 
@@ -74,7 +74,7 @@ ht-degree: 69%
 
 共有するスコアカードにタイルが表示される仕方をエグゼクティブユーザーに説明します。
 
-![ 日付範囲、セグメント、選択した指標およびディメンションを含むタイルの説明 ](assets/newexplain.png)
+![&#x200B; 日付範囲、セグメント、選択した指標およびディメンションを含むタイルの説明 &#x200B;](assets/newexplain.png)
 
 ![スコアカードの例](assets/intro_scorecard.png)
 

@@ -37,7 +37,7 @@ Customer Journey Analytics管理者は、正常なデータディクショナリ
 
    データ辞書ウィンドウが表示されます。
 
-   ![ 要素の正常性を示すデータ要素管理者ビュー ](assets/data-dictionary-admin.png)
+   ![&#x200B; 要素の正常性を示すデータ要素管理者ビュー &#x200B;](assets/data-dictionary-admin.png)
 
 1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。
 

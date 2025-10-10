@@ -96,7 +96,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[ セグメント化の概要 ](/help/components/segments/seg-overview.md) を参照してください。
+詳しくは、[&#x200B; セグメント化の概要 &#x200B;](/help/components/segments/seg-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 

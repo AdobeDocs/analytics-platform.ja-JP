@@ -20,7 +20,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025 年 10 月** | |
-| LLM と AI で生成されたトラフィックに関するレポート | 派生フィールドを基礎として使用して、LLM と AI で生成されたトラフィックをレポートする方法に関する [ ユースケース記事 ](/help/use-cases/ai-traffic.md) を追加しました。 この記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967) に基づいています。 |
+| LLM と AI で生成されたトラフィックに関するレポート | 派生フィールドを基礎として使用して、LLM と AI で生成されたトラフィックをレポートする方法に関する [&#x200B; ユースケース記事 &#x200B;](/help/use-cases/ai-traffic.md) を追加しました。 この記事は、ブログ記事 [Adobe Customer Journey Analyticsでの LLM と AI 生成トラフィックのトラッキングと分析 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967) に基づいています。 |
 | **2025年9月** | |
 | 1900 年より前の日付 | Customer Journey Analytics での 1900 年より前の日付の処理方法に関する[メモ](/help/connections/create-connection.md#datasets)を追加しました。 |
 | リアルタイムレポート | Customer Journey Analytics に[リアルタイムレポート](/help/components/real-time/real-time.md)に関するドキュメントを追加しました。 |

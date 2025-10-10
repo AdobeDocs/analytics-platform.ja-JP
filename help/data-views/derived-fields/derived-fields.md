@@ -28,7 +28,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->[ 標準コンポーネント ](../component-reference.md) は、イベントデータセットに関連付けられています。 その結果、派生フィールドの一部として使用される標準コンポーネントは、イベントデータセットのデータに対してのみ機能します。
+>[&#x200B; 標準コンポーネント &#x200B;](../component-reference.md) は、イベントデータセットに関連付けられています。 その結果、派生フィールドの一部として使用される標準コンポーネントは、イベントデータセットのデータに対してのみ機能します。
 >
 
 
@@ -77,7 +77,7 @@ ht-degree: 90%
 | A | **ルール名** |  デフォルトでは、ルール名は&#x200B;**ルール X** です（X はシーケンス番号を表します）。ルールの名前を編集するには、その名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
 | B | **関数名** | ルール用に選択された関数名（[!UICONTROL 例：URL PARSE]）。関数が関数シーケンスの最後であり、最終出力値を決定する際、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます（例：[!UICONTROL URL PARSE - FINAL OUTPUT]）。<br/>関数の詳細情報を含むポップアップを表示するには、![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
 | C | **ルールの説明** | オプションでルールに説明を追加できます。<br/>![その他アイコン](assets/More.svg) を選択し、「**[!UICONTROL **&#x200B;説明を追加&#x200B;**]**」を選択して説明を追加するか、「**[!UICONTROL **&#x200B;説明を編集&#x200B;**]**」を選択して既存の説明を編集します。<br/>エディターを使用して説明を入力します。ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右揃え、左揃え、中央揃え、カラー、番号リスト、ブレットリストの使用）や、外部情報へのリンクの追加を行うことができます。<br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL  フィールド ] または [!UICONTROL  値 ] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
+| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL &#x200B; フィールド &#x200B;] または [!UICONTROL &#x200B; 値 &#x200B;] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -279,7 +279,7 @@ ht-degree: 90%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
 
 +++
 
@@ -307,7 +307,7 @@ ht-degree: 90%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -406,7 +406,7 @@ ht-degree: 90%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![ 状態 Latitude ルールビルダーのスクリーンショット ](assets/function-template-state-latitude.png)
+![&#x200B; 状態 Latitude ルールビルダーのスクリーンショット &#x200B;](assets/function-template-state-latitude.png)
 
 +++
 
@@ -421,7 +421,7 @@ ht-degree: 90%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![ 状態の経度ルールビルダーのスクリーンショット ](assets/function-template-state-longitude.png)
+![&#x200B; 状態の経度ルールビルダーのスクリーンショット &#x200B;](assets/function-template-state-longitude.png)
 
 +++
 
@@ -475,7 +475,7 @@ ht-degree: 90%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>次より大きい</li><li>次よりも大きいか等しい</li><li>次より小さい</li><li>次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [&#x200B; 演算子 &#x200B;](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -673,7 +673,7 @@ ht-degree: 90%
 
 ## 詳細情報 {#casewhen-more-info}
 
-Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景の情報について詳しくは、[ コンテナ ](../create-dataview.md#containers) および [ セグメントコンテナ ](/help/components/segments/seg-overview.md#containers) を参照してください。 このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
+Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景の情報について詳しくは、[&#x200B; コンテナ &#x200B;](../create-dataview.md#containers) および [&#x200B; セグメントコンテナ &#x200B;](/help/components/segments/seg-overview.md#containers) を参照してください。 このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
 
 Customer Journey Analytics では、次のデフォルトのコンテナモデルが使用されます。
 
@@ -941,7 +941,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL  精度 ]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL &#x200B; 精度 &#x200B;]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -953,9 +953,9 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#datemath-uc1-derivedfield}
 
-`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL  の間にある ] 範囲  の日数を計算するルールを定義します。 [!UICONTROL  日 ] を [!UICONTROL  出力精度 ] として選択します。 また、[!UICONTROL  予約日 ] と  チェックイン日 [!UICONTROL  の両方で「最終結果を返す ] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
+`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL &#x200B; の間にある &#x200B;] 範囲  の日数を計算するルールを定義します。 [!UICONTROL &#x200B; 日 &#x200B;] を [!UICONTROL &#x200B; 出力精度 &#x200B;] として選択します。 また、[!UICONTROL &#x200B; 予約日 &#x200B;] と  チェックイン日 [!UICONTROL &#x200B; の両方で「最終結果を返す &#x200B;] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
 
-![ 日付計算ルールのスクリーンショット ](assets/datemath-1.png)
+![&#x200B; 日付計算ルールのスクリーンショット &#x200B;](assets/datemath-1.png)
 
 
 ## ユースケース 2 {#datemath-uc2}
@@ -964,28 +964,28 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#datemath-uc2-derivedfield}
 
-新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL  ローカル時間 ] の間の日数を、[!UICONTROL Person] の [!UICONTROL  重複排除範囲 ] で計算するルールを定義できます。 [!UICONTROL  最後を返す ] を選択して、[!UICONTROL  現地時間 ] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL  出力の精度 ] として選択します。
+新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL &#x200B; ローカル時間 &#x200B;] の間の日数を、[!UICONTROL Person] の [!UICONTROL &#x200B; 重複排除範囲 &#x200B;] で計算するルールを定義できます。 [!UICONTROL &#x200B; 最後を返す &#x200B;] を選択して、[!UICONTROL &#x200B; 現地時間 &#x200B;] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL &#x200B; 出力の精度 &#x200B;] として選択します。
 
-![ 日付計算ルール 2 のスクリーンショット ](assets/datemath-2.png)
+![&#x200B; 日付計算ルール 2 のスクリーンショット &#x200B;](assets/datemath-2.png)
 
-または、便利な「ダイナミック日付範囲の値を今すぐ」を使用して、今から [!UICONTROL  ローカル時間 ] までの時間（イベントデータセットの [!UICONTROL placeContext] フィールドグループから）を計算することもできます
+または、便利な「ダイナミック日付範囲の値を今すぐ」を使用して、今から [!UICONTROL &#x200B; ローカル時間 &#x200B;] までの時間（イベントデータセットの [!UICONTROL placeContext] フィールドグループから）を計算することもできます
 
-![ 日付計算ルール 2a のスクリーンショット ](assets/datemath-2a.png)
+![&#x200B; 日付計算ルール 2a のスクリーンショット &#x200B;](assets/datemath-2a.png)
 
 
 ## ユースケース 3 {#datemath-uc3}
 
 セッション内の顧客が注文を行うまでの検索時間（分単位）を把握する場合。
 
-2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL  関数の結果である新しい ] 派生フィールドを定義して ](#case-when)[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] の値を定義します。
-次に、これら 2 つの値を使用して、[!UICONTROL  範囲 ] を [!UICONTROL  セッション ] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] に設定した値、および [!UICONTROL  出力精度 ] を [!UICONTROL  分 ] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL  最初のを返す ]」を選択して、最初の [!UICONTROL  検索時間 ] と [!UICONTROL  注文時間 ] が返されるようにします。
+2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL &#x200B; 関数の結果である新しい &#x200B;] 派生フィールドを定義して &#x200B;](#case-when) [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] の値を定義します。
+次に、これら 2 つの値を使用して、[!UICONTROL &#x200B; 範囲 &#x200B;] を [!UICONTROL &#x200B; セッション &#x200B;] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] に設定した値、および [!UICONTROL &#x200B; 出力精度 &#x200B;] を [!UICONTROL &#x200B; 分 &#x200B;] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL &#x200B; 最初のを返す &#x200B;]」を選択して、最初の [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] が返されるようにします。
 
-![ 日付計算ルール 3 のスクリーンショット ](assets/datemath-3.png)
+![&#x200B; 日付計算ルール 3 のスクリーンショット &#x200B;](assets/datemath-3.png)
 
 
 ## 詳細情報 {#datemath-more-info}
 
-[!UICONTROL  最初を返す ] または [!UICONTROL  最後を返す ] オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した場合は使用できません。 ユーザーベースのフィールドは、1 人のユーザーの日付または日時フィールドに対して 1 つの値のみを持つことができます。
+[!UICONTROL &#x200B; 最初を返す &#x200B;] または [!UICONTROL &#x200B; 最後を返す &#x200B;] オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した場合は使用できません。 ユーザーベースのフィールドは、1 人のユーザーの日付または日時フィールドに対して 1 つの値のみを持つことができます。
 +++
 
 <!-- DEDUPLICATE -->
@@ -1088,7 +1088,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >title="Depth"
 >abstract="この関数は、イベント深度の標準コンポーネントの機能と同様に、任意のフィールドの深度を返す機能を提供します。"
 
-フィールドの深さを返します。これは、標準の [ イベントの深さディメンション ](/help/components/dimensions/overview.md#standard-dimensions) で可能なことと同様です。
+フィールドの深さを返します。これは、標準の [&#x200B; イベントの深さディメンション &#x200B;](/help/components/dimensions/overview.md#standard-dimensions) で可能なことと同様です。
 
 +++ 詳細
 
@@ -1108,13 +1108,13 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ### 派生フィールド {#depth-uc1-derivedfield}
 
-新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL  内部検索語句 ] の深さを取得し、新しい派生フィールドに保存するルールを定義します。
+新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL &#x200B; 内部検索語句 &#x200B;] の深さを取得し、新しい派生フィールドに保存するルールを定義します。
 
-![ 深度ルールのスクリーンショット ](assets/depth-1.png)
+![&#x200B; 深度ルールのスクリーンショット &#x200B;](assets/depth-1.png)
 
 次に、ビジュアライゼーションでその新しい派生フィールドを使用して、最初の検索で検索に使用された用語を分類します。
 
-![ 深度ルールのスクリーンショット ](assets/depth-1a.png)
+![&#x200B; 深度ルールのスクリーンショット &#x200B;](assets/depth-1a.png)
 
 +++
 
@@ -1974,9 +1974,9 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。[!UICONTROL  画面の高さ ] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
+`Screen Height` の派生フィールドを定義します。[!UICONTROL &#x200B; 画面の高さ &#x200B;] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
 
-![ タイプキャストルール 1 のスクリーンショット ](assets/typecast-1.png)
+![&#x200B; タイプキャストルール 1 のスクリーンショット &#x200B;](assets/typecast-1.png)
 
 
 
@@ -1984,7 +1984,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 コホートテーブル（整数のみをサポート）で売上高を使用したいが、「売上高」フィールドには Double タイプがある。
 
-![ タイプキャストルール 2 のスクリーンショット ](assets/typecast-2.png)
+![&#x200B; タイプキャストルール 2 のスクリーンショット &#x200B;](assets/typecast-2.png)
 
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
@@ -2089,7 +2089,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 - 派生フィールドのルールを定義する際は、最大 10 個の異なるスキーマフィールド（標準フィールドは含まない）を使用できます。
    - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマフィールドまたはプロファイルスキーマフィールドのみが許可されます。
-- ライセンスを取得するパッケージに応じて、Customer Journey Analytics接続ごとに最大個の派生フィールドを設定できます。 詳しくは、[ 製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} を参照してください。
+- ライセンスを取得するパッケージに応じて、Customer Journey Analytics接続ごとに最大個の派生フィールドを設定できます。 詳しくは、[&#x200B; 製品説明 &#x200B;](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} を参照してください。
 
 
 ### 関数の制限事項の概要

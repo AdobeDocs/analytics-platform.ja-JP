@@ -32,7 +32,7 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 
 ## 手順 2：エクスポート用のプロファイル結合データセットの作成
 
-最終的にCustomer Journey Analyticsの接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル [ 結合スキーマ ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) であるデータセットを作成する必要があります。
+最終的にCustomer Journey Analyticsの接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル [&#x200B; 結合スキーマ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) であるデータセットを作成する必要があります。
 
 結合スキーマは、同じクラスを共有し、プロファイルが有効になっている複数のスキーマで構成されています。結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。
 
@@ -44,7 +44,7 @@ RTCP のオーディエンスは、既に様々なソースから獲得してい
 
 ## 手順 4：エクスポート出力の編集
 
-エクスポートジョブの結果は、Customer Journey Analyticsに取り込むために、別のプロファイルデータセットに変換する必要があります。  この変換は、[Adobe Experience Platform クエリサービス ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) やその他の任意の変換ツールで行うことができます。 Customer Journey Analyticsでレポートを作成するために必要なのは、（Customer Journey Analyticsのユーザー ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
+エクスポートジョブの結果は、Customer Journey Analyticsに取り込むために、別のプロファイルデータセットに変換する必要があります。  この変換は、[Adobe Experience Platform クエリサービス &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) やその他の任意の変換ツールで行うことができます。 Customer Journey Analyticsでレポートを作成するために必要なのは、（Customer Journey Analyticsのユーザー ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
 
 ただし、標準的な書き出しジョブには、より多くのデータが含まれているので、この出力を編集して余分なデータを削除したり、いくつかのデータを移動させたりする必要があります。また、先にスキーマ／データセットを作成してから、変換したデータを追加する必要があります。
 

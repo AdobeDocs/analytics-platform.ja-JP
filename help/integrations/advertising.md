@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Adobe AdvertisingはAdobe Customer Journey Analyticsと統合されており、双方向のデータ共有とレポート作成が可能です。
 
-詳しくは、[Adobe AdvertisingとCustomer Journey Analyticsの統合の概要 ](https://experienceleague.adobe.com/en/docs/advertising/integrations/customer-journey-analytics/overview) を参照してください。
+詳しくは、[Adobe AdvertisingとCustomer Journey Analyticsの統合の概要 &#x200B;](https://experienceleague.adobe.com/en/docs/advertising/integrations/customer-journey-analytics/overview) を参照してください。

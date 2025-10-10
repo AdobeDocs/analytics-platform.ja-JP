@@ -25,7 +25,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のクイックインサイトパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[クイックインサイトパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/Customer
 * セグメントを作成する場所はどこか。
 * その他の機能。
 
-これらの質問に役立つように、[!UICONTROL  クイックインサイト ] では、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。 このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL  人気 ] がタグ付けされたディメンション、指標およびセグメントが表示されます。
+これらの質問に役立つように、[!UICONTROL &#x200B; クイックインサイト &#x200B;] では、会社が最もよく使用するディメンション、指標、セグメントおよび日付範囲を表示するアルゴリズムを活用します。 このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。実際、次に示すように、ドロップダウンメニューには、[!UICONTROL &#x200B; 人気 &#x200B;] がタグ付けされたディメンション、指標およびセグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 

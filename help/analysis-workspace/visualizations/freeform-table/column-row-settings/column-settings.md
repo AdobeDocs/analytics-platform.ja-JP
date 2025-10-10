@@ -84,7 +84,7 @@ ht-degree: 94%
 
 
 
-[ データビュー ](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
+[&#x200B; データビュー &#x200B;](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Analysis Workspaceの指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
 
 
 ### アトリビューションモデル

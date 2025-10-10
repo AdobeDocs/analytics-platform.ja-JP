@@ -85,13 +85,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. [!UICONTROL  フィールドグループを追加 ] ダイアログで、リストから「**[!UICONTROL AEP Mobile SDK ExperienceEvent]**」フィールドグループを選択します。
+   1. [!UICONTROL &#x200B; フィールドグループを追加 &#x200B;] ダイアログで、リストから「**[!UICONTROL AEP Mobile SDK ExperienceEvent]**」フィールドグループを選択します。
 
-      ![AEP モバイルライフサイクル詳細フィールドグループ ](./assets/select-aepmobilesdk-experienceevent.png)
+      ![AEP モバイルライフサイクル詳細フィールドグループ &#x200B;](./assets/select-aepmobilesdk-experienceevent.png)
 
       「プレビュー」ボタンを選択すると、このフィールドグループに属するフィールド（`application > name` など）のプレビューを表示できます。
 
-      ![AEP モバイルライフサイクルの詳細フィールドグループのプレビュー ](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![AEP モバイルライフサイクルの詳細フィールドグループのプレビュー &#x200B;](./assets/aepmobilesdk-experienceevent-preview.png)
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
@@ -101,7 +101,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
-1. 「[!UICONTROL  フィールドプロパティ ]」パネルで、`identification` フィールド名 [!UICONTROL  に ] と入力し、**[!UICONTROL 表示名]** に [!UICONTROL ID] と入力し、**[!UICONTROL タイプ]** で [!UICONTROL  オブジェクト ] を選択し、**[!UICONTROL フィールドグループ]** で [!UICONTROL ExperienceEvent Core v2.1] を選択します。
+1. 「[!UICONTROL &#x200B; フィールドプロパティ &#x200B;]」パネルで、`identification` フィールド名 [!UICONTROL &#x200B; に &#x200B;] と入力し、**[!UICONTROL 表示名]** に [!UICONTROL ID] と入力し、**[!UICONTROL タイプ]** で [!UICONTROL &#x200B; オブジェクト &#x200B;] を選択し、**[!UICONTROL フィールドグループ]** で [!UICONTROL ExperienceEvent Core v2.1] を選択します。
 
    >[!NOTE]
    >
@@ -249,13 +249,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    タグに名前を付け、「**[!UICONTROL モバイル]**」を選択します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![ プロパティの作成](./assets/create-mobile-property.png)
+   ![&#x200B; プロパティの作成](./assets/create-mobile-property.png)
 
 ### タグの設定
 
 タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトを追跡して Adobe Experience Platform にデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
-を設定するには、[!UICONTROL  タグのプロパティ ] のリストから、新しく作成したタグを選択します。
+を設定するには、[!UICONTROL &#x200B; タグのプロパティ &#x200B;] のリストから、新しく作成したタグを選択します。
 
 
 #### **拡張機能**
@@ -272,13 +272,13 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 
 1. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
-   ![AEP Mobile SDK拡張機能の設定 ](./assets/aepmobilesdk-extension-datastream.png)
+   ![AEP Mobile SDK拡張機能の設定 &#x200B;](./assets/aepmobilesdk-extension-datastream.png)
 
-1. **[!UICONTROL ドメイン設定]** の下に [!UICONTROL 0}Edge Network ドメイン } を入力します。 ]通常、`<organizationName>.data.adobedc.net` を使用します。
+1. **[!UICONTROL ドメイン設定]** の下に [!UICONTROL 0&rbrace;Edge Network ドメイン &rbrace; を入力します。 &#x200B;]通常、`<organizationName>.data.adobedc.net` を使用します。
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは [Adobe Experience Platform Edge Network拡張機能の設定 ](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
+詳しくは [Adobe Experience Platform Edge Network拡張機能の設定 &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network) を参照してください。
 
 また、カタログから次の追加拡張機能も設定する必要があります。
 
@@ -286,7 +286,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 - AEPAssurance。
 - 同意。
 
-拡張機能とその設定について詳しくは、Experience Platform 用モバイルアプリチュートリアルの [ タグプロパティの設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) を参照してください。
+拡張機能とその設定について詳しくは、Experience Platform 用モバイルアプリチュートリアルの [&#x200B; タグプロパティの設定 &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja) を参照してください。
 
 #### **データ要素**
 
@@ -306,7 +306,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成および設定する�
 
    - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-   - **[!UICONTROL データ要素タイプ]** リストから [!UICONTROL  通信事業者名 ] を選択します。
+   - **[!UICONTROL データ要素タイプ]** リストから [!UICONTROL &#x200B; 通信事業者名 &#x200B;] を選択します。
 
 
      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-mobile.png)
@@ -338,23 +338,23 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
       - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  フォアグラウンド ] を選択します。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL &#x200B; フォアグラウンド &#x200B;] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - ![ モバイルコア – 前景 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「[!UICONTROL  プラス ]」をクリックします。
+   - ![&#x200B; モバイルコア – 前景 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の横にある「[!UICONTROL &#x200B; プラス &#x200B;]」をクリックします。
 
       - **[!UICONTROL 拡張機能]** リストから [!UICONTROL Mobile Core] を選択します。
 
-      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL  背景 ] を選択します。
+      - **[!UICONTROL イベントタイプ]** リストから [!UICONTROL &#x200B; 背景 &#x200B;] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「[!UICONTROL  プラス ] 追加」をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+   - ![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) の下の「[!UICONTROL &#x200B; プラス &#x200B;] 追加」をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
 
-      - 「拡張機能 **[!UICONTROL 」リストから]** 0}Adobe Experience Platform Edge Network[!UICONTROL  を選択します。]
+      - 「拡張機能 **[!UICONTROL 」リストから]** 0&rbrace;Adobe Experience Platform Edge Network[!UICONTROL &#x200B; を選択します。]
 
-      - **[!UICONTROL アクションタイプ]** リストから [!UICONTROL Edge Networkにイベントを転送 ] を選択します。
+      - **[!UICONTROL アクションタイプ]** リストから [!UICONTROL Edge Networkにイベントを転送 &#x200B;] を選択します。
 
       - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -409,9 +409,9 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
 
-2. 環境のリストから、正しいインストール ![ ボックス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
+2. 環境のリストから、正しいインストール ![&#x200B; ボックス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
 
-   [!UICONTROL  モバイルインストール手順 ] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連コードスニペットの横にある「コピー ![ コピー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
+   [!UICONTROL &#x200B; モバイルインストール手順 &#x200B;] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連コードスニペットの横にある「コピー ![&#x200B; コピー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
 
    ![環境](./assets/environment-mobile.png)
 
@@ -427,7 +427,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と実稼動環境にデプロイします。
 
-詳しくは、[ モバイルアプリでのAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
+詳しくは、[&#x200B; モバイルアプリでのAdobe Experience Cloudの実装チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja) を参照してください。
 
 ## 接続の設定
 
@@ -511,7 +511,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[ データ表示の概要 ](../data-views/data-views.md) を参照してください。
+データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[&#x200B; データ表示の概要 &#x200B;](../data-views/data-views.md) を参照してください。
 
 
 ## プロジェクトの設定
@@ -536,7 +536,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Events` を指標、`Push Title` をディメンションにドラッグし、`Event Type` ごとに分類して、モバイルアプリのプッシュ通知の概要と通知に何が起こったかを取得します。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Events` を指標、`Push Title` をディメンションにドラッグし、`Event Type` ごとに分類して、モバイルアプリのプッシュ通知の概要と通知に何が起こったかを取得します。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5-mobile.png)
 

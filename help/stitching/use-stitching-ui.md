@@ -18,11 +18,11 @@ ht-degree: 3%
 
 接続の一部として設定した 1 つ以上のイベントデータセットに対して、ステッチを有効にすることができます。 ステッチに対して有効にできるイベントデータセットの数は、ライセンスを取得したCustomer Journey Analytics パッケージによって決まります。
 
-[ 接続の作成 ](/help/connections/create-connection.md#dataset-settings) または [ 接続の編集 ](/help/connections/create-connection.md) を行う際に、イベントデータセットの [ データセット設定 ](/help/connections/manage-connections.md#edit-a-connection) の一部としてステッチを有効にすることができます。
+[&#x200B; 接続の作成 &#x200B;](/help/connections/create-connection.md#dataset-settings) または [&#x200B; 接続の編集 &#x200B;](/help/connections/create-connection.md) を行う際に、イベントデータセットの [&#x200B; データセット設定 &#x200B;](/help/connections/manage-connections.md#edit-a-connection) の一部としてステッチを有効にすることができます。
 
 ステッチを有効にするには、**[!UICONTROL データセットを追加]** または **[!UICONTROL データセットを編集]** ダイアログのイベントデータセット セクションで、次の手順を実行します。
 
-![ID ステッチを有効にする場合の ID ステッチオプション ](assets/identity-stitching-ui.png)
+![ID ステッチを有効にする場合の ID ステッチオプション &#x200B;](assets/identity-stitching-ui.png)
 
 1. 「**[!UICONTROL ID ステッチを有効にする]**」を選択します。
 
@@ -52,7 +52,7 @@ ht-degree: 3%
    >ID グラフを使用する権限が必要です。
    >
 
-   その前に、**[!UICONTROL ID グラフに変更]** ダイアログが表示され、ステッチ用の ID グラフを使用する前に、データセットの ID グラフの設定が [ 完了 ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) したことを確認します。 「**[!UICONTROL 続行]**」を選択して続行します。
+   その前に、**[!UICONTROL ID グラフに変更]** ダイアログが表示され、ステッチ用の ID グラフを使用する前に、データセットの ID グラフの設定が [&#x200B; 完了 &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) したことを確認します。 「**[!UICONTROL 続行]**」を選択して続行します。
 
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
