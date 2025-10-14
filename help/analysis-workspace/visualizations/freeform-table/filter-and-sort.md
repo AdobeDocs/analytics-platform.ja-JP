@@ -4,10 +4,10 @@ title: フィルターと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 97%
+source-wordcount: '1132'
+ht-degree: 72%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace のフリーフォームテーブルは、インタラクテ�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 
@@ -29,9 +29,9 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 フリーフォームテーブルから行をフィルタリングするには、いくつかの方法を使用できます。
 
-- テーブルから特定の行を除外
-- テーブルにフィルターを適用
-- オーディエンスセグメントの使用
+* テーブルから特定の行を除外
+* テーブルにフィルターを適用
+* オーディエンスセグメントの使用
 
 各方法が与える影響について詳しくは、[フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を参照してください。
 
@@ -94,9 +94,41 @@ Note: this option does not seem to work. AN-338422
 
 1. 「**[!UICONTROL 適用]**」を選択して、データをフィルタリングします。すべての入力を消去するには、「**[!UICONTROL 消去]**」を選択します。キャンセルしてダイアログを閉じるには、「**[!UICONTROL キャンセル]**」を選択します。<br/>色付きの ![フィルター](/help/assets/icons/FilterColored.svg) **フィルター**&#x200B;アイコンは、フィルターがテーブルに適用される際の詳細を示し、表示します。
 
+### スパークラインおよび線のビジュアライゼーションのトレンドデータにフィルター条件を含める {#include-filter-criteria}
+
+フリーフォームテーブルのテーブルディメンションに適用される検索フィルター条件は、常にスパークラインに含まれます。
+
+スパークラインに加えて、接続線のビジュアライゼーションに含めるフィルター条件を設定できます。 （デフォルトでは、フィルター条件は折れ線グラフのビジュアライゼーションに含まれていません。 折れ線グラフビジュアライゼーションには、接続されたテーブルで選択された行のデータが表示されます。 行が選択されていない場合、接続されたテーブルの最初のディメンションのデータのみが表示されます）。
+
+スパークラインと折れ線グラフのビジュアライゼーションについて詳しくは、[ フリーフォームテーブルのトレンドデータの表示 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md) を参照してください。
+
+#### フィルター条件を含む折れ線グラフのビジュアライゼーションの設定
+
+1. 指標列ヘッダーのスパークラインを選択します。
+
+   スパークライン セルを選択すると、濃い灰色で表示されます。 これは、接続線のビジュアライゼーションにフィルター条件が含まれていることを示します。 フィルター条件は、列のセグメントとして適用されます。<!--show how to see it? Show what the segment looks like when it's applied? -->
+
+   ![ スパークラインを選択 ](assets/table-sparkline-selected.png)
+
+#### 列の合計が不正確な可能性がある場合について
+
+次のシナリオでは、列の合計が正確でない可能性があります。
+
+* 左側の列と [ 列の合計は行の合計として計算される ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) で静的コンポーネントが使用される場合
+
+  このシナリオでは、行アイテムに重複するデータが含まれていると、列の合計が不正確になります。
+
+  例えば、静的セグメントを左の列に追加し、ユーザーを右の列の指標として追加した場合、それらのユーザーの一部が複数の静的セグメントの一部になる可能性があります。 この場合、Workspaceでは、静的セグメントごとにユーザーの重複が排除されることはありません。 これにより、一部のユーザーが複数回カウントされる可能性があるので、合計ユーザー数が多くなる可能性があります。
+
+* 複数値のディメンションを使用する場合
+
+>[!NOTE]
+>
+>スパークラインと折れ線グラフには、引き続き、これらのシナリオで正確な合計が反映されます。
+
 ### オーディエンスセグメントの使用
 
-詳しくは、[&#x200B; セグメント化の概要 &#x200B;](/help/components/segments/seg-overview.md) を参照してください。
+詳しくは、[ セグメント化の概要 ](/help/components/segments/seg-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 
