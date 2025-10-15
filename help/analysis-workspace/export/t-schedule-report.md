@@ -86,7 +86,7 @@ Customer Journey Analytics プロジェクトをファイルとして、選択�
 
 >[!NOTE]
 >
->スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) アドオン製品を購入された Customer Journey Analytics のお客様のみに表示されます。
+>スケジュールされたプロジェクトをパスワードで保護するオプションは、[Healthcare Shield](https://business.adobe.com/jp/solutions/industries/healthcare.html) アドオン製品を購入された Customer Journey Analytics のお客様のみに表示されます。
 
 アドビは、スケジュールされたプロジェクトを .pdf 形式と .csv 形式のどちらで送信した場合でも、パスワードを使用して暗号化します。
 

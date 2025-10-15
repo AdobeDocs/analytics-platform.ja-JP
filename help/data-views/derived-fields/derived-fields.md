@@ -1580,10 +1580,10 @@ URL の一部を取得し、一意のページ識別子として使用してト�
 
 | ページ URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/jp/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/jp/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/jp/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
