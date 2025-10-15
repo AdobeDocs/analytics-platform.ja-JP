@@ -31,12 +31,12 @@ Customer Journey Analyticsは、次の機能を備えた製品エクスペリエ
 Adobe Experience PlatformとCustomer Journey Analyticsの次の機能を使用すると、商品データを大規模に取り込み、管理できます。
 
 * Adobe Experience Platform
-   * [&#x200B; データセット&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)
-   * [&#x200B; データ準備&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
-   * [&#x200B; データDistiller&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
+   * [ データセット&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)
+   * [ データ準備&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
+   * [ データDistiller&#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [接続&#x200B;](/help/connections/overview.md)
-   * [&#x200B; 派生フィールド &#x200B;](/help/data-views/data-views.md) を含む [&#x200B; データビュー&#x200B;](/help/data-views/derived-fields/derived-fields.md)
+   * [ 派生フィールド ](/help/data-views/data-views.md) を含む [ データビュー&#x200B;](/help/data-views/derived-fields/derived-fields.md)
    * [セグメント&#x200B;](/help/components/segments/seg-overview.md)
    * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
    * [ガイド付き分析&#x200B;：タイムライン&#x200B;](/help/guided-analysis/types/timeline.md)
@@ -56,13 +56,13 @@ Customer Journey Analyticsの次の機能を使用すると、獲得とアクテ
 * [ガイド付き分析：純成長率](/help/guided-analysis/types/net-growth.md)
 * [ガイド付き分析：トレンド](/help/guided-analysis//types/trends.md)
 * [属性パネル&#x200B;](/help/analysis-workspace/c-panels/attribution.md)
-* マーケティングチャネルディメンションを含む [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/c-panels/freeform-panel.md) （[&#x200B; 派生フィールドを使用して作成 &#x200B;](/help/data-views/derived-fields/derived-fields.md)）
+* マーケティングチャネルディメンションを含む [ フリーフォームテーブル ](/help/analysis-workspace/c-panels/freeform-panel.md) （[ 派生フィールドを使用して作成 ](/help/data-views/derived-fields/derived-fields.md)）
 
 ## エンゲージメントと採用の測定
 
 新しいユーザーを獲得することで、funnel製品の頂点が広がります。 エンゲージメントは、funnelの一歩下までこうしたユーザーを導き、成功への障害を取り除くことに重点を置いています。 彼らの成功は、ビジネスの成功を直接推進します。
 
-![&#x200B; エンゲージメント分析 &#x200B;](/help/guided-analysis/assets/feature-matrix.png)
+![ エンゲージメント分析 ](/help/guided-analysis/assets/feature-matrix.png)
 
 Customer Journey Analyticsの次の機能を使用して、製品のエンゲージメントと採用を追跡できます。
 
@@ -81,11 +81,11 @@ Customer Journey Analyticsの次の機能を使用して、製品のエンゲー
 
 リテンションは、最初の獲得とアクティベーションの後に、製品に引き続きエンゲージするユーザーの数を測定します。 高性能な製品は、継続的な使用に最も強く関連する機能とのインタラクションを最大化することで、安定した忠実なユーザーベースを維持します。 保持ユーザーは時間の経過と共に製品に戻ってやり取りしますが、チャーンされたユーザーは戻りません。 製品チームは、リテンションを追跡して、継続的なエンゲージメントを促進する機能を特定し、チャーンしたユーザーをリテンションされたユーザー行動にシフトする設計介入を追跡します。
 
-![&#x200B; 保存状態分析 &#x200B;](/help/guided-analysis/assets/retention.png)
+![ 保存状態分析 ](/help/guided-analysis/assets/retention.png)
 
 Customer Journey Analyticsの次の機能は、リテンションとチャーンを効果的に追跡するのに役立ちます。
 
-* [&#x200B; ガイド付き分析：リテンション &#x200B;](/help/guided-analysis/types/retention.md)&#x200B;
+* [ ガイド付き分析：リテンション ](/help/guided-analysis/types/retention.md)&#x200B;
 * [ガイド付き分析：能動的な成長](/help/guided-analysis/types/active-growth.md)
 * [ガイド付き分析：純成長率](/help/guided-analysis/types/net-growth.md)
 * [コホートテーブル&#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -96,20 +96,20 @@ Customer Journey Analyticsの次の機能は、リテンションとチャーン
 
 Experience Cloud内の次の機能を使用すると、インサイトに基づいて効果的に行動できます。
 
-* [&#x200B; オーディエンスを作成して公開 &#x200B;](/help/components/audiences/publish.md)&#x200B;Customer Journey Analyticsからアクティブ化
+* [ オーディエンスを作成して公開 ](/help/components/audiences/publish.md)&#x200B;Customer Journey Analyticsからアクティブ化
 * Experience Cloud製品を通じてオーディエンスをアクティブ化：
-   * AJOおよびAdobe Targetで [&#x200B; 実験を実行 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) し、[&#x200B; 実験パネルを使用してCustomer Journey Analyticsのバリエーションの影響を測定 &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)
-   * AJOのユーザーに [&#x200B; アプリ内エンゲージメントの配信 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
-* Adobe Real-time CDP を使用した、外部宛先への [&#x200B; オーディエンスのアクティブ化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
+   * AJOおよびAdobe Targetで [ 実験を実行 ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) し、[ 実験パネルを使用してCustomer Journey Analyticsのバリエーションの影響を測定 ](/help/analysis-workspace/c-panels/experimentation.md)
+   * AJOのユーザーに [ アプリ内エンゲージメントの配信 ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
+* Adobe Real-time CDP を使用した、外部宛先への [ オーディエンスのアクティブ化 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
 
 ## 組織にインサイトを共有&#x200B;
 
 チーム間で主な結果を伝え、取り組みを一致させ、コラボレーションを促進し、全員が共有された製品とビジネスの目標に向かって確実に取り組めるようにします。
 
-![Workspaceのガイド付き分析 &#x200B;](assets/guided-analysis-workspace.png)
+![Workspaceのガイド付き分析 ](assets/guided-analysis-workspace.png)
 
 Customer Journey Analyticsの次の機能を使用すると、インサイトを効果的に共有できます。
 
-* 特定のビジネス上の質問に合わせたガイド付き分析ビューを [&#x200B; 共有 &#x200B;](/help/analysis-workspace/curate-share/share-projects.md) し、消費者が次の質問をセルフサービスで提供できるようにします
-* ガイド付き分析、パネル、ビジュアライゼーションを、[Analysis Workspaceの包括的なダッシュボードに組み合わせ &#x200B;](/help/analysis-workspace/home.md) す。
-* エグゼクティブや外出先で使用する他の消費者向けに、主要な製品インサイトを備えた [&#x200B; モバイルスコアカード &#x200B;](/help/mobile-app/home.md) を作成します
+* 特定のビジネス上の質問に合わせたガイド付き分析ビューを [ 共有 ](/help/analysis-workspace/curate-share/share-projects.md) し、消費者が次の質問をセルフサービスで提供できるようにします
+* ガイド付き分析、パネル、ビジュアライゼーションを、[Analysis Workspaceの包括的なダッシュボードに組み合わせ ](/help/analysis-workspace/home.md) す。
+* エグゼクティブや外出先で使用する他の消費者向けに、主要な製品インサイトを備えた [ モバイルスコアカード ](/help/mobile-app/home.md) を作成します

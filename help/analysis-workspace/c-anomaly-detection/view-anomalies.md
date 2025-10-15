@@ -7,7 +7,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 50%
+ht-degree: 46%
 
 ---
 
@@ -20,15 +20,15 @@ Analysis Workspaceの異常値はテーブルまたは折れ線グラフで表�
 
 時系列フリーフォームテーブルの異常値を表示できます。
 
-1. 列ヘッダーで ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) を選択し、オプションのリストで **[!UICONTROL 異常値を表示]** オプションが選択されていることを確認します。 詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
+1. 列ヘッダーで ![ 設定 ](/help/assets/icons/Setting.svg) を選択し、オプションのリストで **[!UICONTROL 異常値を表示]** オプションが選択されていることを確認します。 詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
 1. 異常値は、テーブルに次のように表示されます。
 
-   ![&#x200B; 異常値が検出されました &#x200B;](assets/anomaly-detected.png)
+   ![ 異常値が検出されました ](assets/anomaly-detected.png)
 
    データの異常値が検出された各行の右上隅に ◥ が表示されます。
 
-   各行の **色付きの縦線** は、期待値 ➋ 示します。 各行の **色付きの影付き領域** は、実際の値 ➊ 示します。 線（期待値）と影になっている部分（実際の値）の比較方法は、異常値があるかどうかを決定します。（観測された値は、[&#x200B; 異常値検出で使用される統計的手法 &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) に記載されている高度な統計的手法に基づいて異常と見なされます。）
+   各行の **色付きの縦線** は、期待値 ➋ 示します。 各行の **色付きの影付き領域** は、実際の値 ➊ 示します。 線（期待値）と影になっている部分（実際の値）の比較方法は、異常値があるかどうかを決定します。（観測された値は、[ 異常値検出で使用される統計的手法 ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) に記載されている高度な統計的手法に基づいて異常と見なされます。）
 
 1. 行の右上隅にある「◥」を選択すると、異常値に関する詳細が表示されます。 これは、実際の値が期待値の上下にどの程度乖離しているかを（パーセントで）示します。
 
@@ -38,17 +38,17 @@ Analysis Workspaceの異常値はテーブルまたは折れ線グラフで表�
 
 折れ線グラフで異常値を表示するには：
 
-1. ビジュアライゼーションヘッダーで ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) を選択し、オプションのリストで [!UICONTROL **異常値を表示**] オプションが選択されていることを確認します。 詳しくは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)を参照してください。
+1. ビジュアライゼーションヘッダーで ![ 設定 ](/help/assets/icons/Setting.svg) を選択し、オプションのリストで [!UICONTROL **異常値を表示**] オプションが選択されていることを確認します。 詳しくは、[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)を参照してください。
 
-1. （オプション）信頼区間でグラフを拡大/縮小するには、ビジュアライゼーションヘッダーで ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) を選択してから、「**[!UICONTROL 異常値で Y 軸のスケールの設定を可能にする]**」オプションを選択します。
+1. （オプション）信頼区間でグラフを拡大/縮小するには、ビジュアライゼーションヘッダーで ![ 設定 ](/help/assets/icons/Setting.svg) を選択してから、「**[!UICONTROL 異常値で Y 軸のスケールの設定を可能にする]**」オプションを選択します。
 
    グラフがわかりにくくなる可能性があるので、このオプションは、デフォルトでは選択されていません。
 
    異常値は、折れ線グラフに次のように表示されます。
 
-   ![&#x200B; 異常検出された折れ線グラフのビジュアライゼーション &#x200B;](assets/anomaly-detected-line.png)
+   ![ 異常検出された折れ線グラフのビジュアライゼーション ](assets/anomaly-detected-line.png)
 
-   データの異常値が検出されると、線上に&#x200B;**白い点**&#x200B;が表示されます。（観測された値は、[&#x200B; 異常値検出で使用される統計的手法 &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) に記載されている高度な統計的手法に基づいて異常と見なされます。）
+   データの異常値が検出されると、線上に&#x200B;**白い点**&#x200B;が表示されます。（観測された値は、[ 異常値検出で使用される統計的手法 ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) に記載されている高度な統計的手法に基づいて異常と見なされます。）
 
    **薄く影になっている部分**&#x200B;は、値が発生するはずの信頼帯または期待範囲です。この期待範囲外の値は、異常値です。
 
@@ -62,7 +62,7 @@ Analysis Workspaceの異常値はテーブルまたは折れ線グラフで表�
 
    * 異常値の生の値。
 
-   * 期待値を上回るまたは下回る割合の値。これは緑の実線で表されます。
+   * 期待値を上回る、または下回るパーセンテージ値。実緑の線で表されます。
 
 
 

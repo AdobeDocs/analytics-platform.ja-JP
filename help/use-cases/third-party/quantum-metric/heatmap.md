@@ -25,9 +25,9 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 ## 手順 1:Analysis Workspaceでのリンクの設定
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0&rbrace;Workspace&rbrace; を選択します。]**
+1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0}Workspace} を選択します。]**
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
+1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. ページ URL ディメンションをWorkspace キャンバスにドラッグします。
 1. ディメンション列ヘッダーを右クリックし、「**[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]**」を選択します。
 1. **[!UICONTROL カスタム URL の作成]** を選択します。
@@ -40,8 +40,8 @@ Quantum Metric のヒートマップ機能にアクセスするには、Quantum 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 1. リンクの 1 つをテストし、Quantum Metric 拡張機能が表示された状態で URL でリンクが開くかどうかを確認します。 これらのリンクは新しいタブで開くので、Workspace プロジェクトは開いたままです。
 
-![&#x200B; ヒートマップ &#x200B;](assets/heatmap.png)
+![ ヒートマップ ](assets/heatmap.png)
 
 ## 手順 2:Customer Journey Analytics内のリンクをクリックしてヒートマップを表示する
 
-ヒートマッピングを調査するページが見つかったら、目的のパネルに適用できます。 この表は、Quantum Metric を使用してヒートマップ、スクロール深度、インタラクションのキーゾーンを探索できる URL を返します。 詳しくは、[Quantum Metric ヒートマップ製品の概要 &#x200B;](https://www.quantummetric.com/platform/interaction-heatmaps) を参照してください。 また、Quantum Metric のカスタマーサポート担当者に連絡するか、[Quantum Metric 顧客リクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信することもできます。
+ヒートマッピングを調査するページが見つかったら、目的のパネルに適用できます。 この表は、Quantum Metric を使用してヒートマップ、スクロール深度、インタラクションのキーゾーンを探索できる URL を返します。 詳しくは、[Quantum Metric ヒートマップ製品の概要 ](https://www.quantummetric.com/platform/interaction-heatmaps) を参照してください。 また、Quantum Metric のカスタマーサポート担当者に連絡するか、[Quantum Metric 顧客リクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信することもできます。

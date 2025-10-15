@@ -7,7 +7,7 @@ role: User
 source-git-commit: 639c3d3c349615078c76f8806bcd5bb458b0f6f2
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 69%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の数値の概要と変更の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[数値の概要と変更の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の数値の概要と変更の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[数値の概要と変更の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [数値の概要と変更の概要ビジュアライゼーション](https://video.tv.adobe.com/v/3417462/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [数値の概要と変更の概要ビジュアライゼーション](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -38,10 +38,10 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ![要約](/help/assets/icons/123.svg) **[!UICONTROL 数値の概要]**&#x200B;ビジュアライゼーションを使用して、プロジェクト内の重要な多数の数値をハイライト表示します。このビジュアライゼーションは、関連付けられたデータソースを使用して、次のように動作します。
 
-* セルが選択されていない場合、列の合計が選択されます。
-* 1 つのセルが選択されている場合、そのセルの概要が表示されます。
-* 2 つ以上のセルが選択されている場合、選択された最初のセルについて表示されます。
-* 列が選択されている場合、列に含まれている先頭のセルの値が選択されます。
+* セルが選択されていない場合に列の合計を選択します。
+* 1 つのセルが選択されている場合は、そのセルの概要が表示されます。
+* 複数のセルが選択されている場合は、最初に選択されたセルが表示されます。
+* 列が選択されている場合は、列の最初のセル値が選択されます。
 
 ![数値の概要ビジュアライゼーション](asses/../assets/summary-number.png)
 
@@ -64,20 +64,20 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 <!-- markdownlint-enable MD034 -->
 
 
-![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 変更の概要]** ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=ja) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=ja) option.-->
+![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 変更の概要]** ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
-The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=ja) option.
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 -->
 
 このビジュアライゼーションは、次のように動作します。
 
-* セルが選択されていない場合、列に含まれている最初の 2 つのセル値が比較されます。
-* 1 つのセルが選択されている場合、0 が表示されます。これは、そのセル値自体との比較がおこなわれるからです。
-* 2 つのセルが選択されている場合、最初に選択したセルが分子、2 番目のセルが分母として処理されます。
-* 3 つ以上のセルが選択されている場合、最初の 2 つのセルのみが比較の対象になります。
-* 一定範囲のセルが選択されている場合、選択された範囲内の最初と最後のセルが比較されます。
-* 列が選択されている場合、先頭の値がそれ自体と比較されます。その結果、変更は 0 と表示されます。
+* セルが選択されていない場合は、列内の最初の 2 つのセル値が比較されます。
+* 1 つのセルが選択されている場合は、そのセルの値と比較されるため、0 と表示されます。
+* 2 つのセルが選択されている場合、最初に選択されたセルが分子、2 番目のセルが分母と見なされます。
+* 3 つ以上のセルを選択すると、最初の 2 つのセルのみが比較の対象になります。
+* セルの範囲が選択されている場合は、その範囲で最初のセルと最後に選択されているセルが比較されます。
+* 列が選択されている場合は、最初の値がそれ自体と比較され、0 の変化が示されます。
 
 
 ![2 つの数値間の差分を示す変更の概要ビジュアライゼーション](assets/summary-change.png)
@@ -94,6 +94,6 @@ The green and red color of the Summary Change can be controlled through [custom 
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -18,7 +18,7 @@ Analysis Workspace では、プロジェクトの目次を表示できます。�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [目次の作成](https://video.tv.adobe.com/v/35210/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [目次の作成](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ Analysis Workspace では、プロジェクトの目次を表示できます。�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Analytics の新しい目次機能を使用したダッシュボードナビゲーションの簡素化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=ja)
+>* [Adobe Analytics の新しい目次機能を使用したダッシュボードナビゲーションの簡素化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)

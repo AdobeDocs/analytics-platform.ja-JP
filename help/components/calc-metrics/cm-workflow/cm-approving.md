@@ -6,23 +6,23 @@ exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
 # 計算指標の承認
 
-[&#x200B; 計算指標マネージャー &#x200B;](cm-manager.md) で、計算指標を承認および未承認できます。 計算指標を承認できるのは管理者のみです。
+[ 計算指標マネージャー ](cm-manager.md) で、計算指標を承認および未承認できます。 計算指標を承認できるのは管理者のみです。
 
 計算指標を承認するには：
 
-1. [&#x200B; 計算指標マネージャー &#x200B;](cm-manager.md) で、承認する計算指標を 1 つ以上選択します。
+1. [ 計算指標マネージャー ](cm-manager.md) で、承認する計算指標を 1 つ以上選択します。
 1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Approve]**」を選択します。 承認された計算指標には ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) と表示されます。
 
 計算指標の承認を取り消すには：
 
-1. [&#x200B; 計算指標マネージャー &#x200B;](cm-approving.md) で、承認を取り消す 1 つ以上の計算指標を選択します。
+1. [ 計算指標マネージャー ](cm-approving.md) で、承認を取り消す 1 つ以上の計算指標を選択します。
 1. アクションバーの「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)**[!UICONTROL Unapprove]**」を選択します。
 
 
-承認済みの計算指標を使用して、計算指標のリストをフィルタリングできます。 **[!UICONTROL フィルター]** ![&#x200B; フィルター &#x200B;](/help/assets/icons/Filter.svg) パネルから **[!UICONTROL その他のフィルター]** を選択し、「**[!UICONTROL 承認済み]**」を選択します。 詳しくは、[&#x200B; 計算指標のリストのフィルタリング &#x200B;](/help/components/calc-metrics/cm-workflow/cm-filter.md) を参照してください。
+承認済みの計算指標を使用して、計算指標のリストをフィルタリングできます。 **[!UICONTROL フィルター]** ![ フィルター ](/help/assets/icons/Filter.svg) パネルから **[!UICONTROL その他のフィルター]** を選択し、「**[!UICONTROL 承認済み]**」を選択します。 詳しくは、[ 計算指標のリストのフィルタリング ](/help/components/calc-metrics/cm-workflow/cm-filter.md) を参照してください。

@@ -31,7 +31,7 @@ ht-degree: 100%
 
 実装された Content Analytics 設定のデータ収集を停止するには：
 
-1. Content Analytics に従って、開発環境、ステージング環境または実稼動環境のページの `<head>` 要素にある[埋め込みコード](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments)を削除します。
+1. コンテンツ分析に従って、開発環境、ステージング環境または本番環境のページの `<head>` 要素にある[埋め込みコード](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments)を削除します。
 1. Content Analytics 設定に関連付けられたタグプロパティを[削除](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)します。
 
 

@@ -51,7 +51,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
 
 >[!ENDSHADEBOX]
 
@@ -263,5 +263,5 @@ Analysis Workspace で使用可能な任意のディメンションまたは指�
 
 >[!MORELIKETHIS]
 >
-> * [Adobe Customer Journey Analytics でのジャーニーキャンバスビジュアライゼーションのガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=ja)
+> * [Adobe Customer Journey Analytics でのジャーニーキャンバスビジュアライゼーションのガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

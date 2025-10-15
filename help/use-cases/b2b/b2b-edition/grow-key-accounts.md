@@ -23,20 +23,20 @@ B2B 企業にとって、重要なアカウントの拡大と保持は最優先�
 
 アドホックリードのコンバージョンレポートを作成および配布し、セールスfunnelを通じてアカウントがどのように進行するかを把握する必要があります。
 
-[&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションでは、順次ジャーニーの、事前に定義されたステップ間のコンバージョン率とドロップオフ率を視覚化できます。
+[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションでは、順次ジャーニーの、事前に定義されたステップ間のコンバージョン率とドロップオフ率を視覚化できます。
 
 ### 例
 
 アカウントの売上funnelの上位（リードからオポチュニティまで）のフォールアウトを確認する場合。
 
-1. [&#x200B; フォールアウトの作成と設定 &#x200B;](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーション。
-1. ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) を選択して、**[!UICONTROL アカウント]** を **[!UICONTROL フォールアウトコンテナ]** として選択します。
+1. [ フォールアウトの作成と設定 ](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーション。
+1. ![ 設定 ](/help/assets/icons/Setting.svg) を選択して、**[!UICONTROL アカウント]** を **[!UICONTROL フォールアウトコンテナ]** として選択します。
 1. 最初のタッチポイントは **[!UICONTROL すべてのアカウント]** を読み取る必要があります。
 1. 新しいタッチポイントを追加します **[!UICONTROL リードフォーム：完了が存在します]**。
 1. 新しいタッチポイントを追加：**[!UICONTROL リードが生成されました]**。
 1. 新しいタッチポイントを追加：**[!UICONTROL MQL 認定済みが存在します]**。
 
-   ![B2B – 主要アカウントの成長 – 販売ステージの進行 – フォールアウト &#x200B;](assets/b2b-uc-grow-key-accounts-fallout.png)
+   ![B2B – 主要アカウントの成長 – 販売ステージの進行 – フォールアウト ](assets/b2b-uc-grow-key-accounts-fallout.png)
 
 
 ## コラボレーション

@@ -24,7 +24,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
 * 1 つのアラートで複数の指標を示す「積み重ね」アラートの作成
 * 異常値（90％、95％、99％、99.75％、99.9％のしきい値、変化率、超過／未満）に基づいてアラートを作成します（Select、Prime、Ultimate のいずれかのパッケージを使用する Adobe Customer Journey Analytics のお客様のみが使用できます）。
 
-次のビデオチュートリアルでは、アラートの基本的な概要を説明します。[&#x200B; アラート &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=ja) （5:34）
+次のビデオチュートリアルでは、アラートの基本的な概要を説明します。[ アラート ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=ja) （5:34）
 
 ## アラートの違いについて
 
@@ -59,4 +59,4 @@ Adobe Customer Journey Analytics でアラートを作成する方法につい�
 
 アラートマネージャーでは、既存のアラートを管理できます。タグ付け、名前変更、削除など、アラートに対して様々な管理タスクを実行できます。
 
-Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[&#x200B; アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。
+Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[ アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。

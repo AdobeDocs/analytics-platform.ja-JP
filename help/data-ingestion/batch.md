@@ -219,7 +219,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 6. 「**[!UICONTROL 完了]**」を選択して、バッチデータの Adobe Experience Platform への取り込みを開始します。
 
-[&#x200B; 既存の XDM スキーマに CSV ファイルをマッピングする &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja) を参照してください。
+[ 既存の XDM スキーマに CSV ファイルをマッピングする ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=ja) を参照してください。
 
 - 受信データと XDM スキーマに互換性がない場合のデータのマッピング方法。
 - マッピングテンプレートの使用
@@ -309,7 +309,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[&#x200B; データ表示の概要 &#x200B;](../data-views/data-views.md) を参照してください。
+データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[ データ表示の概要 ](../data-views/data-views.md) を参照してください。
 
 
 ## プロジェクトの設定
@@ -334,7 +334,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

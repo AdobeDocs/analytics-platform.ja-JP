@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 96%
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 フォールアウトは、各ステップまたはシーケンスのタッチポイント間のコンバージョン率とフォールアウト率を表示します。
 
-例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。開始タッチポイントと終了タッチポイントを選択し、中間タッチポイントを追加して、Web サイトのナビゲーションパスを作成します。ただし、複数ディメンションのフォールアウトも可能です。
+例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。開始タッチポイントと終了タッチポイントを選択し、中間タッチポイントを追加して Web サイトナビゲーションパスを作成するだけです。 ただし、多次元のフォールアウトを行うこともできます。
 
 ## フォールアウト、フロー、ジャーニーキャンバスのいずれかのビジュアライゼーションの選択
 
@@ -69,7 +69,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 * サイト上の特定のプロセス（購入や登録プロセスなど）を通してのコンバージョン率。
 * 一般的な、より広範囲のトラフィックフロー：このフローは、ホームページを訪問した人物のうち、検索を実行した数を示します。次に、最終的に特定の項目を閲覧した数を示します。
-* サイト上のイベント間の関連性。例えばプライバシーポリシーを閲覧した訪問者のうち製品の購入に到達した人の割合を示します。
+* サイト上のイベント間の相関関係。 相関関係は、プライバシーポリシーを閲覧したユーザーの何パーセントが製品を購入したかを示します。
 
 フォールアウトビジュアライゼーションは、次の場合に最適です。
 

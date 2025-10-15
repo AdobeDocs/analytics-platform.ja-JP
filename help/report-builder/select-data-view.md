@@ -28,19 +28,19 @@ ht-degree: 1%
 
 セルからデータビューを選択するには、まずデータブロックを作成し、データブロック外のセルに複数のデータビューを割り当てます。 次に、**[!UICONTROL セルからのデータビュー]** パネルを使用して、様々なデータビューのデータブロックを更新します。
 
-1. データブロックを作成します。 データブロックの作成について詳しくは、[&#x200B; データブロックの作成 &#x200B;](/help/report-builder/create-a-data-block.md) を参照してください。
+1. データブロックを作成します。 データブロックの作成について詳しくは、[ データブロックの作成 ](/help/report-builder/create-a-data-block.md) を参照してください。
 
-1. ![&#x200B; データビュー &#x200B;](/help/assets/icons/DataViewSelector.svg) の **[!UICONTROL データビューセレクター]** を選択します。
+1. ![ データビュー ](/help/assets/icons/DataViewSelector.svg) の **[!UICONTROL データビューセレクター]** を選択します。
 
 1. データブロック外で ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) を使用してセルを選択します。
 
 1. 「**[!UICONTROL セルからデータビューに追加するデータビューを選択]**」から、ドラッグ&amp;ドロップを使用して 1 つ以上のデータビューを追加します。 または、データビューをダブルクリックして、データビューを **[!UICONTROL 含まれるデータビュー]** リストに追加することもできます。
 
-   * ![&#x200B; 検索 &#x200B;](/help/assets/icons/Search.svg)**[!UICONTROL _データビューを選択_]** を使用して、データビューを検索できます。
+   * ![ 検索 ](/help/assets/icons/Search.svg)**[!UICONTROL _データビューを選択_]** を使用して、データビューを検索できます。
    * ![MoreSmall](/help/assets/icons/MoreSmall.svg) を使用してコンテキストメニューを開き、「含まれるデータビュー **[!UICONTROL リストでデータビューを上下に移動]** きます。
-   * ![&#x200B; 含まれるデータビュー &#x200B;](/help/assets/icons/CrossSize75.svg) リストからデータビューを削除するには、**[!UICONTROL CrossSize75]** を使用します。
+   * ![ 含まれるデータビュー ](/help/assets/icons/CrossSize75.svg) リストからデータビューを削除するには、**[!UICONTROL CrossSize75]** を使用します。
 
-   ![&#x200B; セルからデータビューを選択 &#x200B;](assets/dataviews-from-a-cell.png){zoomable="yes"}
+   ![ セルからデータビューを選択 ](assets/dataviews-from-a-cell.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 適用]**」を選択して、選択したデータビューを選択したセルに適用します。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 1. Report Builder ハブで、「**[!UICONTROL クイック編集]**」の「**[!UICONTROL セルからのデータビュー]**」リンクをクリックします。
 1. **[!UICONTROL データビュー]** ドロップダウンメニューからデータビューを選択します。
 
-   ![&#x200B; セルからのデータビューの変更 &#x200B;](assets/change-data-view-from-cell.png){zoomable="yes"}
+   ![ セルからのデータビューの変更 ](assets/change-data-view-from-cell.png){zoomable="yes"}
 1. オプションとして、「**[!UICONTROL 変更時にデータブロックを更新]**」を選択します。
 
 1. 「**[!UICONTROL 適用]**」を選択します。Report Builderは、選択したデータビューに基づいてデータブロックを更新します。

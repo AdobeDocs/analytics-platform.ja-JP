@@ -25,7 +25,7 @@ ht-degree: 5%
 
 ### セグメント
 
-![&#x200B; バウンスイベント &#x200B;](assets/example-bounce-bouncedevents.png)
+![ バウンスイベント ](assets/example-bounce-bouncedevents.png)
 
 ### 計算指標
 
@@ -34,11 +34,11 @@ ht-degree: 5%
 
 ### 派生フィールド
 
-または、[&#x200B; 派生フィールドを使用したバウンス率 &#x200B;](/help/data-views/derived-fields/derived-fields.md#bounces) を定義できます。
+または、[ 派生フィールドを使用したバウンス率 ](/help/data-views/derived-fields/derived-fields.md#bounces) を定義できます。
 
 派生フィールドは、すべてのユーザーがバウンス率指標の定義を上書きまたは変更できるわけではないという利点を持つデータビューの一部です。 この利点には、制限も伴いました。 データビューへのアクセス権を持たないユーザーは、派生フィールドを使用できず、バウンス率を定義するためにセグメントや計算指標に頼る必要があります。
 
-Customer Journey Analyticsでのバウンス数とバウンス率の計算方法について詳しくは、この [&#x200B; ブログ投稿 &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja) を参照してください。
+Customer Journey Analyticsでのバウンス数とバウンス率の計算方法について詳しくは、この [ ブログ投稿 ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446) を参照してください。
 
 +++
 
@@ -49,7 +49,7 @@ Customer Journey Analyticsでのバウンス数とバウンス率の計算方法
 
 +++ 詳細 
 
-![&#x200B; 条件付きページビュー &#x200B;](assets/conditional-page-views.png)
+![ 条件付きページビュー ](assets/conditional-page-views.png)
 
 +++
 
@@ -59,6 +59,6 @@ Customer Journey Analyticsでのバウンス数とバウンス率の計算方法
 
 +++ 詳細
 
-![&#x200B; 上位 30% のページビュー &#x200B;](assets/top30-page-views.png)
+![ 上位 30% のページビュー ](assets/top30-page-views.png)
 
 +++

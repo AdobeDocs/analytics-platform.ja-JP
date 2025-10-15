@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # 新しいプロジェクトをフォルダーに保存する
 
-詳しくは、[&#x200B; プロジェクトの保存 &#x200B;](../save-projects.md#save) を参照してください。
+詳しくは、[ プロジェクトの保存 ](../save-projects.md#save) を参照してください。
 
 <!-- Is this article still needed; removed from TOC
 

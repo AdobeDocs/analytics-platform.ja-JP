@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の実験パネルについて説明します。_<br/>__ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** で Adobe Target のアクティビティと実験を分析する方法については、[Analytics for Target パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の実験パネルについて説明します。_<br/>__ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** で Adobe Target のアクティビティと実験を分析する方法については、[Analytics for Target パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -180,8 +180,8 @@ Adobe Customer Journey Analytics の実験パネルを使用すると、デー�
 
 ## 実験パネルでの計算指標の使用
 
-[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=ja)について詳しくは、このブログ投稿を参照してください。
+[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)について詳しくは、このブログ投稿を参照してください。
 
 >[!MORELIKETHIS]
->[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=ja)
+>[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >

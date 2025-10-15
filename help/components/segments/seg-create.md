@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -17,19 +17,19 @@ Customer Journey Analyticsでは、様々なタイプのセグメントを作成
 
 デフォルトでは、セグメントを作成できるのは管理者のみです。 ユーザーには、ユーザーが他のコンポーネント（注釈、計算指標など）を表示する方法と同様に、セグメントを表示する権限があります。
 
-ただし、管理者は、**[!UICONTROL 6&rbrace;Admin Console]** を使用して、**[!UICONTROL CJA Workspace アクセスの権限の編集]** にある **[!UICONTROL レポートツール]** の [&#x200B; セグメントの作成権限をユーザーに付与できます。](/help/technotes/access-control.md#user-level-access)
+ただし、管理者は、**[!UICONTROL 6}Admin Console]** を使用して、**[!UICONTROL CJA Workspace アクセスの権限の編集]** にある **[!UICONTROL レポートツール]** の [ セグメントの作成権限をユーザーに付与できます。](/help/technotes/access-control.md#user-level-access)
 
 セグメントは次の方法で作成できます。
 
-![&#x200B; セグメントの作成方法 &#x200B;](assets/create-filter.png)
+![ セグメントの作成方法 ](assets/create-filter.png)
 
-* **A**。メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL セグメント]**」を選択します。 ![&#x200B; セグメント &#x200B;](/help/assets/icons/AddCircle.svg) マネージャー [!UICONTROL **[!UICONTROL &#x200B; から「]**]AddCircle[Add](/help/components/segments/seg-manage.md)」を選択します。
-* **B**。Workspace プロジェクトで、左側のパネルのコンポーネントから、「![&#x200B; セグメント &#x200B;](/help/assets/icons/Add.svg)![&#x200B; セグメント &#x200B;](/help/assets/icons/Segmentation.svg) に **追加** を選択します。
+* **A**。メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL セグメント]**」を選択します。 ![ セグメント ](/help/assets/icons/AddCircle.svg) マネージャー [!UICONTROL **[!UICONTROL  から「]**]AddCircle[Add](/help/components/segments/seg-manage.md)」を選択します。
+* **B**。Workspace プロジェクトで、左側のパネルのコンポーネントから、「![ セグメント ](/help/assets/icons/Add.svg)![ セグメント ](/help/assets/icons/Segmentation.svg) に **追加** を選択します。
 * **C**。Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL 選択からセグメントを作成]**」を選択します。
 * **D**。Workspace プロジェクトで、メニューから **[!UICONTROL コンポーネント]** を選択し、**[!UICONTROL セグメントを作成]** を選択します。
 * **E**. Workspace プロジェクトで、ショートカットキー **[!UICONTROL shift+cmd+e]** （macOS）または **[!UICONTROL shift+ctrl+e]** （Windows）を使用します。
-* **F**. ![&#x200B; ここにセグメントをドロップ &#x200B;](/help/assets/icons/Add.svg) （または他のコンポーネント） ***ドロップゾーンで「*** 追加」を選択します。 プロジェクトのみのセグメントを作成します。
+* **F**. ![ ここにセグメントをドロップ ](/help/assets/icons/Add.svg) （または他のコンポーネント） ***ドロップゾーンで「*** 追加」を選択します。 プロジェクトのみのセグメントを作成します。
 
-新しいセグメントを定義するには、[&#x200B; セグメントビルダー &#x200B;](/help/components/segments/seg-builder.md) を使用します。
+新しいセグメントを定義するには、[ セグメントビルダー ](/help/components/segments/seg-builder.md) を使用します。
 
-Workspace プロジェクトでは、[&#x200B; クイックセグメント &#x200B;](/help/components/segments/seg-quick.md) を使用してセグメントをすばやく作成することもできます。
+Workspace プロジェクトでは、[ クイックセグメント ](/help/components/segments/seg-quick.md) を使用してセグメントをすばやく作成することもできます。

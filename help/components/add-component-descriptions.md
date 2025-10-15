@@ -19,7 +19,7 @@ Customer Journey Analytics管理者は、データビュー内またはデータ
 
 ## データビュー
 
-データビューに追加したコンポーネントに、説明を追加できます。 [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を参照してください。
+データビューに追加したコンポーネントに、説明を追加できます。 [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を参照してください。
 
 ## データ辞書
 
@@ -27,10 +27,10 @@ Analysis Workspaceのデータ要素は、ユーザーと管理者の両方がCu
 
 データ辞書にコンポーネントの説明を追加する方法については、[データ辞書でのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。
 
-データ要素の一般情報については、[&#x200B; データ要素の概要 &#x200B;](/help/components/data-dictionary/data-dictionary-overview.md) を参照してください。
+データ要素の一般情報については、[ データ要素の概要 ](/help/components/data-dictionary/data-dictionary-overview.md) を参照してください。
 
 >[!MORELIKETHIS]
 >
->[&#x200B; データビューコンポーネントの設定 &#x200B;](/help/data-views/component-settings/overview.md)
->&#x200B;>[データ要素コンポーネントエントリ &#x200B;](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>[ データビューコンポーネントの設定 ](/help/data-views/component-settings/overview.md)
+>>[データ要素コンポーネントエントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア再生滞在時間パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア再生滞在時間パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 >[!NOTE]
 >
 >メディア分平均オーディエンスパネルは、Customer Journey Analytics 用ストリーミングメディアコレクションアドオンを購入したお客様のみが使用できます。
->&#x200B;>詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
+>>詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
 >
 
 **[!UICONTROL メディア再生滞在時間]**&#x200B;パネルを使用すると、同時実行のピークの詳細と分類および比較機能を使用して、経時的に再生を分析できます。
@@ -60,7 +60,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/3446701?captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア再生滞在時間](https://video.tv.adobe.com/v/338699){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -129,6 +129,6 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 >[!MORELIKETHIS]
 >
 >[パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
->&#x200B;>[メディア同時視聴者数パネル](media-concurrent-viewers.md)
+>>[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
+>>[メディア同時視聴者数パネル](media-concurrent-viewers.md)
 >

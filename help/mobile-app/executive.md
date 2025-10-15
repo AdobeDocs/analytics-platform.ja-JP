@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![&#x200B; モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ &#x200B;](https://video.tv.adobe.com/v/3444837?captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![ モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Assist エグゼクティブ ](https://video.tv.adobe.com/v/343460/){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -58,7 +58,7 @@ ht-degree: 73%
 
 ダウンロードしてインストールすると、エグゼクティブユーザーは、既存のCustomer Journey Analytics資格情報を使用してアプリにログインできます。
 
-![Customer Journey Analytics アプリのスタートアップスクリーン &#x200B;](assets/welcome.png)
+![Customer Journey Analytics アプリのスタートアップスクリーン ](assets/welcome.png)
 
 ## ダッシュボードの使用 {#use-dashboards}
 
@@ -120,11 +120,11 @@ ht-degree: 73%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。画面右上の「**[!UICONTROL 完了]**」をタップします。「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. セグメントをスコアカードに適用するには、セグメント ドロップダウンメニューをタップし、キュレーターによって設定されたセグメントを選択します。 アプリ内の [&#x200B; セグメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) は、Workspace内と同じように機能します。
+1. セグメントをスコアカードに適用するには、セグメント ドロップダウンメニューをタップし、キュレーターによって設定されたセグメントを選択します。 アプリ内の [ セグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja) は、Workspace内と同じように機能します。
 
    ![セグメント](assets/segment_filter.png)
 
-1. [!UICONTROL &#x200B; スコアカード &#x200B;] の更新情報を取得します。 [!UICONTROL &#x200B; スコアカード &#x200B;] に、関心のある指標や分類のすべてが含まれていない場合は、Customer Journey Analytics チームに連絡してスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL  スコアカード ] の更新情報を取得します。 [!UICONTROL  スコアカード ] に、関心のある指標や分類のすべてが含まれていない場合は、Customer Journey Analytics チームに連絡してスコアカードを更新してもらってください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. アプリケーションでフィードバックを残す手順は、次のとおりです。
 

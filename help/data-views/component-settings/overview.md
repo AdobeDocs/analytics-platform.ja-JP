@@ -40,10 +40,10 @@ ht-degree: 55%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL コンポーネントの種類] | 必須。コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントがそれぞれに含まれているコンポーネント領域で変更します。 |
-| [!UICONTROL &#x200B; コンポーネント名 &#x200B;] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL  コンポーネント名 ] | 必須。Analysis Workspace に表示されるわかりやすい名前を指定できます。コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。カスタムタグまたは標準タグを使用してコンポーネントにタグ付けすると、Analysis Workspace UI での検索やフィルタリングが容易になります。 |
-| [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義の [&#x200B; コンテキストラベル &#x200B;](#context-labels) のドロップダウンメニュー。 |
+| [!UICONTROL コンテキストラベル] | （任意）。コンポーネントに適用できる、使用可能なシステム定義の [ コンテキストラベル ](#context-labels) のドロップダウンメニュー。 |
 | [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
@@ -59,7 +59,7 @@ ht-degree: 55%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://video.tv.adobe.com/v/3412937/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -90,22 +90,22 @@ Adobeが提供するプロジェクトテンプレートを効率化するため
 * **一貫性**：コンテキストラベルを使用するデータビューに基づく 1 つ以上のプロジェクトに従事する組織内の全員が同じ動作を取得します。
 * **機能とテンプレートの表示**：特定のビジュアライゼーションと機能は、適切なコンテキストラベルが割り当てられている場合にのみ表示されます。 例：
 
-   * [&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーションは、緯度と経度を表すコンポーネントをCustomer Journey Analyticsが把握している場合にのみ、正しく表示されます。
-   * 特定の [&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md) は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
+   * [ マップ ](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーションは、緯度と経度を表すコンポーネントをCustomer Journey Analyticsが把握している場合にのみ、正しく表示されます。
+   * 特定の [ テンプレート ](/help/analysis-workspace/templates/use-templates.md) は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
 
 コンテキストラベルは、次の状況で必要になる場合があります。
 
-* 一連のコンポーネントを定義するには、Analysis Workspace プロジェクトの [&#x200B; 実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md) を使用して、実験レポートでを使用できます。
+* 一連のコンポーネントを定義するには、Analysis Workspace プロジェクトの [ 実験パネル ](/help/analysis-workspace/c-panels/experimentation.md) を使用して、実験レポートでを使用できます。
 
   詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。
 
-* 一連のコンポーネントを定義するには、Analysis Workspace プロジェクトの [&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用します。
+* 一連のコンポーネントを定義するには、Analysis Workspace プロジェクトの [ マップ ](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用します。
 
-  詳しくは、「[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) の [&#x200B; データビューへのコンテキストラベルの追加 &#x200B;](/help/analysis-workspace/visualizations/map.md) を参照してください。
+  詳しくは、「[ マップ ](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) の [ データビューへのコンテキストラベルの追加 ](/help/analysis-workspace/visualizations/map.md) を参照してください。
 
   **注意**：マップのビジュアライゼーションはリリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。
 
-* [Adobeが提供するテンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md) を表示する。 特定のコンポーネントがデータビューに含まれていないので、Adobeが提供する一部のテンプレートが機能しない可能性があります。
+* [Adobeが提供するテンプレート ](/help/analysis-workspace/templates/use-templates.md) を表示する。 特定のコンポーネントがデータビューに含まれていないので、Adobeが提供する一部のテンプレートが機能しない可能性があります。
 
   欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。一致するコンテキストラベルを、既にデータビューにあるコンポーネントに追加する必要があります。 または、データビューに新しいコンポーネントを追加し、コンテキストラベルをコンポーネントに追加する必要があります（まだ自動的に提供されていない場合）。
 
@@ -199,7 +199,7 @@ Adobeが提供するプロジェクトテンプレートを効率化するため
 |------|-------------|
 | ブラウザー | ブラウザー。 |
 | ブラウザータイプ | ブラウザータイプ。 |
-| 言語 | 言語 |
+| 言語 | 言語。 |
 | オペレーティングシステム | オペレーティングシステム。 |
 | オペレーティングシステムグループ | オペレーティングシステムグループ。 |
 | オペレーティングシステム名 | オペレーティングシステム名。 |

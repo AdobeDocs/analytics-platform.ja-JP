@@ -12,9 +12,9 @@ ht-degree: 4%
 
 # ディメンションのプレビュー
 
-コンポーネントに [&#x200B; コンポーネント情報 &#x200B;](/help/components/use-components-in-workspace.md#component-info) を使用して、ディメンションの上位項目を表示できます。
+コンポーネントに [ コンポーネント情報 ](/help/components/use-components-in-workspace.md#component-info) を使用して、ディメンションの上位項目を表示できます。
 
-![&#x200B; コンポーネント情報 &#x200B;](../assets/component-info.png)
+![ コンポーネント情報 ](../assets/component-info.png)
 
 <!--
 Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
@@ -32,5 +32,5 @@ Now, by default, we show dynamic values instead of static ones, with the option 
 
 コンポーネントパネルのディメンションに対して ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択すると、そのディメンション項目のリストが表示されます。 ディメンション項目のリストには、通常、過去 30 日間の上位の項目が表示されます。 使用可能な項目が他にもある場合は、パネルで選択した日付範囲外にあるリンクを選択すると、さらに多くの項目が表示されます。 例：**[!UICONTROL 先月の項目を表示]**
 
-![&#x200B; ディメンション項目を表示 &#x200B;](assets/dimension-items.png)
+![ ディメンション項目を表示 ](assets/dimension-items.png)
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフロービジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フロー](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフロービジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[フロー](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -55,9 +55,9 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 ## ディメンション間のフロー
 
-[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローは、ホームページからメンズページを経て、靴部門に移動することが考えられます。
+[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローはホームページ、男性ページ、靴部門に移動する可能性があります。
 
-各列は、異なるディメンションを表示することがあります。ディメンションをドラッグしてドロップゾーンにドロップし、そのディメンションを図に追加します。
+各列に異なるディメンションが表示される場合があります。 ディメンションをドラッグし、ドロップゾーンにドロップして、そのディメンションを図に追加します。
 
 >[!MORELIKETHIS]
 >

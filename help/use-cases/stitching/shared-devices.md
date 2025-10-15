@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 共有デバイス
 
-この記事では、共有デバイスに関するコンテキスト、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md) を使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータにおける共有デバイスの漏洩を理解する方法について説明します。
+この記事では、共有デバイスに関するコンテキスト、[ ステッチ ](/help/stitching/overview.md) を使用して共有デバイスのデータを処理および軽減する方法、クエリサービスを使用してデータにおける共有デバイスの漏洩を理解する方法について説明します。
 
 ## 共有デバイスとは
 
@@ -42,14 +42,14 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## ユーザー中心の分析の向上
 
-ステッチプロセスは、選択した人物識別子（サンプルデータ内のメール）を、その識別子が存在しないイベントに追加することで、このアトリビューション問題に対処します。 ステッチでは、デバイス ID とユーザー ID のマッピングを活用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、ユーザー中心を維持します。 詳しくは、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md) を参照してください。
+ステッチプロセスは、選択した人物識別子（サンプルデータ内のメール）を、その識別子が存在しないイベントに追加することで、このアトリビューション問題に対処します。 ステッチでは、デバイス ID とユーザー ID のマッピングを活用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、ユーザー中心を維持します。 詳しくは、[ ステッチ ](/help/stitching/overview.md) を参照してください。
 
 ステッチでは、最終認証アトリビューションまたはデバイス分割アトリビューションのいずれかを使用して、共有デバイスデータの属性を設定できます。 未認証のイベントを既知のユーザーに関連付けようとする試みはすべて、非決定的です。
 
 
 ### 最終認証アトリビューション
 
-Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience Platform ID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) を参照してください。
+Last-auth は、共有デバイスから最後に認証を行ったユーザーに対して、すべての不明なアクティビティを属性にします。 Experience Platform ID サービスは、last-auth アトリビューションに基づいてグラフを作成するため、グラフベースのステッチで使用されます。 詳しくは、[ID グラフリンクルール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) を参照してください。
 
 ステッチで last-auth アトリビューションを使用すると、次の表に示すように、ステッチされた ID が解決されます。
 

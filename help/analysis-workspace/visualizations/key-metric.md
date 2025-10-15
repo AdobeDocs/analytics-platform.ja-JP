@@ -21,7 +21,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の主要指標の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の主要指標の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -143,14 +143,14 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ビジュアライゼーションを作成したら、元の設定を編集できます。
 
-1. ビジュアライゼーションの右上隅にある「![&#x200B; 編集 &#x200B;](/help/assets/icons/Edit.svg)」を選択します。
+1. ビジュアライゼーションの右上隅にある「![ 編集 ](/help/assets/icons/Edit.svg)」を選択します。
 
-   元の [&#x200B; 設定ビュー &#x200B;](#configure) に戻ります。
+   元の [ 設定ビュー ](#configure) に戻ります。
 
 1. 必要に応じて、指標、プライマリ日付範囲、比較日付範囲またはセグメントを変更します。
 
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

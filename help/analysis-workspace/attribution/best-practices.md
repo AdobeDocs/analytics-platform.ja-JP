@@ -33,7 +33,7 @@ ht-degree: 66%
 
 ### 上位ファネル分析
 
-上位ファネル分析は、ブランドや製品の認知度の作成に使用されるチャネルを分析します。例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。ユーザーは時間の経過と共にテレビ広告を忘れてしまうので、[&#x200B; タイムディケイ アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md) を使用することができます。
+上位ファネル分析は、ブランドや製品の認知度の作成に使用されるチャネルを分析します。例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。ユーザーは時間の経過と共にテレビ広告を忘れてしまうので、[ タイムディケイ アトリビューションモデル ](/help/analysis-workspace/attribution/models.md) を使用することができます。
 
 ### 下部ファネル分析
 
@@ -47,13 +47,13 @@ ht-degree: 66%
 
 「*ファーストタッチチャネルは、ラストタッチチャネルよりもコンバージョンに大きな影響を与える*」という仮説を仮定します。
 
-この場合、[&#x200B; 逆 J字型アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md) を使用して、この仮説をテストします。 このモデルでは、ファーストタッチポイントに対するクレジットの 60% が与えられます。
+この場合、[ 逆 J字型アトリビューションモデル ](/help/analysis-workspace/attribution/models.md) を使用して、この仮説をテストします。 このモデルでは、ファーストタッチポイントに対するクレジットの 60% が与えられます。
 
 **例 2**
 
 *「特定の業界（旅行業など）では、顧客が商品を購入する前に多くの調査を行うので、アトリビューションウィンドウは 30 日ではなく 60 日か 90 日です。*」という仮説を仮定します。
 
-この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
+この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
 
 ## アルゴリズムアトリビューションの使用
 
@@ -63,4 +63,4 @@ ht-degree: 66%
 
 * Analysis Workspace だけに依存するのではなく、データサイエンティストのサービスを使用する必要性が生じる場合があります。
 * Adobe データフィードのように、生データを使用できます。
-* [Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) の使用を検討してください。例えば、インプレッションデータを検討する場合などに有効です。
+* [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) の使用を検討してください。例えば、インプレッションデータを検討する場合などに有効です。

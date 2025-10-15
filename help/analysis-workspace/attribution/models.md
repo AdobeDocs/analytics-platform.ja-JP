@@ -15,9 +15,9 @@ ht-degree: 15%
 
 Adobe Analyticsのアトリビューションの概念には、次の 3 つのコンポーネントが含まれます。
 
-* **アトリビューションモデル：** [&#x200B; モデル &#x200B;](#attribution-model) は、グループ内のヒットへのコンバージョンの分布を記述します。 例：ファーストタッチやラストタッチ。
-* **コンテナ**:[&#x200B; コンテナ &#x200B;](#container) は、属性の範囲や、各モデルのヒットをグループ化する方法を定義します。
-* **アトリビューション ルックバックウィンドウ：** [&#x200B; ルックバックウィンドウ &#x200B;](#lookback-window) は、選択したモデルのルックバックする日数を表します…
+* **アトリビューションモデル：** [ モデル ](#attribution-model) は、グループ内のヒットへのコンバージョンの分布を記述します。 例：ファーストタッチやラストタッチ。
+* **コンテナ**:[ コンテナ ](#container) は、属性の範囲や、各モデルのヒットをグループ化する方法を定義します。
+* **アトリビューション ルックバックウィンドウ：** [ ルックバックウィンドウ ](#lookback-window) は、選択したモデルのルックバックする日数を表します…
 
 
 ## アトリビューションモデル
@@ -69,7 +69,7 @@ A lookback window is the amount of time a conversion should look back to include
 
 >[!BEGINSHADEBOX]
   
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/40040?quality=12&learn=on&captions=jpn){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/36204?quality=12&learn=on){target="_blank"} for a demo video.
   
 >[!ENDSHADEBOX]
 

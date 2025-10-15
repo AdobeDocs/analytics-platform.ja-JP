@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # フルテーブルの書き出し
 
-この記事では、[!DNL Customer Journey Analytics BI extension] を使用して次の [&#x200B; データ書き出しのユースケース &#x200B;](overview.md) を実装する方法について説明します。
+この記事では、[!DNL Customer Journey Analytics BI extension] を使用して次の [ データ書き出しのユースケース ](overview.md) を実装する方法について説明します。
 
 - データの検証
 - AI/ML に対する対応
@@ -23,10 +23,10 @@ ht-degree: 6%
 
 [!DNL Customer Journey Analytics Full Table Export] を使用したデータの書き出しを使用すると、Customer Journey Analytics Analysis Workspaceのフリーフォームテーブルからデータを書き出すことができます。
 
-![BI 拡張機能 &#x200B;](../assets/export-full-table.svg)
+![BI 拡張機能 ](../assets/export-full-table.svg)
 
 ## 詳細情報
 
 完全テーブルの書き出し機能を使用すると、Analysis Workspaceで作成したフリーフォームテーブルの完全なコンテンツを、指定したクラウド宛先に直接書き出すことができます。
 
-詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md) に関する詳細なドキュメントを参照してください。
+詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) に関する詳細なドキュメントを参照してください。

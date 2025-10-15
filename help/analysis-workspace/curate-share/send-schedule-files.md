@@ -15,7 +15,7 @@ ht-degree: 52%
 
 Analysis Workspaceの **[!UICONTROL 共有]** メニューを使用するか、インターフェイスの右上にある「**[!UICONTROL 共有]**」を選択すると、プロジェクトをキュレーションして共有したり、プロジェクトをPDFまたは CSV ファイルとして組織内または他のユーザーに送信したりできます。
 
-![&#x200B; 新株予約権 &#x200B;](assets/share-options.png)
+![ 新株予約権 ](assets/share-options.png)
 
 | オプション | 説明 |
 |---|---|

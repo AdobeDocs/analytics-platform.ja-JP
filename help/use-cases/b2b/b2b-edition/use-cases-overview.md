@@ -44,21 +44,21 @@ Customer Journey Analytics B2B editionが提供できる分析のメリットを
 - キャンペーン、チャネルおよびコンテンツをまたいで、
 - アカウント内の購入グループ、セールスパイプラインの進行、アップセルとクロスセルの機会、顧客アカウントの正常性について説明します。
 
-[&#x200B; 詳細なユースケースの記事 &#x200B;](optimize-account-marketing.md) では、Customer Journey Analytics B2B editionがアカウントマーケティングの最適化にどう役立つかを説明します。
+[ 詳細なユースケースの記事 ](optimize-account-marketing.md) では、Customer Journey Analytics B2B editionがアカウントマーケティングの最適化にどう役立つかを説明します。
 
 ### 主要アカウントの拡大
 
 主要アカウント内の購入グループ全体で価値の高いタッチポイントを特定し、次善のマーケティングおよび販売行動を知らせ、収益の増加を促します。 アカウントレベルで顧客のライフタイム値を計算および監視します。
 
-[&#x200B; 詳細なユースケースの記事 &#x200B;](grow-key-accounts.md) では、Customer Journey Analytics B2B editionが主要アカウントの成長にどのように役立つかについて説明します。
+[ 詳細なユースケースの記事 ](grow-key-accounts.md) では、Customer Journey Analytics B2B editionが主要アカウントの成長にどのように役立つかについて説明します。
 
 ### 製品価値の構築
 
 製品リリースと製品使用状況が顧客満足度に与える影響を、アカウントレベルとユーザーレベルで測定します。 そのため、製品の機能を最適化し、将来の製品開発に役立てることができます。
 
-[&#x200B; 詳細なユースケースの記事 &#x200B;](build-product-value.md) では、Customer Journey Analytics B2B editionが製品価値の構築にどのように役立つかについて説明します。
+[ 詳細なユースケースの記事 ](build-product-value.md) では、Customer Journey Analytics B2B editionが製品価値の構築にどのように役立つかについて説明します。
 
 
 ## 設定
 
-[&#x200B; 設定に関する記事 &#x200B;](setup.md) では、これらのユースケースをサポートするためのCustomer Journey Analytics B2B editionの設定方法について説明します。
+[ 設定に関する記事 ](setup.md) では、これらのユースケースをサポートするためのCustomer Journey Analytics B2B editionの設定方法について説明します。

@@ -42,7 +42,7 @@ ht-degree: 85%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://video.tv.adobe.com/v/3413789?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカードプロジェクトのデータストーリー &#x200B;](https://video.tv.adobe.com/v/3420562/?quality=12&learn=on&captions=jpn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ モバイルスコアカードプロジェクトのデータストーリー ](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -225,11 +225,11 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. スコアカードで、タイルをクリックします。 例えば、このスコアカードでは、下部の折れ線グラフをクリックします。
 
-   ![&#x200B; 折れ線グラフのビジュアライゼーションを使用したスコアカード &#x200B;](assets/caption1.png)
+   ![ 折れ線グラフのビジュアライゼーションを使用したスコアカード ](assets/caption1.png)
 
 1. 右上の青いアイコンをタップして、キャプションを生成します。 キャプションが折れ線グラフの下に表示されます。
 
-   ![&#x200B; 折れ線グラフのビジュアライゼーションのインテリジェントキャプション &#x200B;](assets/caption2.png)
+   ![ 折れ線グラフのビジュアライゼーションのインテリジェントキャプション ](assets/caption2.png)
 
 1. 右にスワイプすると、インテリジェントキャプションがすべて表示されます。
 
@@ -237,6 +237,6 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. キャプションの中の黒いフラグをタップすると、有害なコンテンツや違法なコンテンツなどの問題が報告されます。
 
-   ![&#x200B; キャプションに関するレポートの問題 &#x200B;](assets/caption-report.png)
+   ![ キャプションに関するレポートの問題 ](assets/caption-report.png)
 
 1. 「X」をクリックして「結果をレポート **[!UICONTROL ダイアログを終了し]** す。

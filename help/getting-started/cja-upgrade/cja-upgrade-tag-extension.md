@@ -47,7 +47,7 @@ Adobe Experience Platform 内のタグ機能を使用して、サイトにデー
 
    <img src="assets/aepwebsdk-extension.png" width="35%"/>
 
-1. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
+1. サンドボックスと、以前に作成した[!UICONTROL 本番環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
    ![AEP Web SDK 拡張機能の設定](assets/aepwebsk-extension-datastreams.png)
 

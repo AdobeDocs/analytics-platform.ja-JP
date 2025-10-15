@@ -27,7 +27,7 @@ ht-degree: 80%
 
 Adobe Experience Platform Web SDK JavaScript のビルドプロセスを制御することを目的に、NPM パッケージをインストールすると、Platform Web SDK をインストールできます。
 
-1. Web SDKガイドの [Web SDKのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) にある [&#x200B; オプション 3:NPM パッケージの使用 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk) の節の情報に従います。
+1. Web SDKガイドの [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) にある [ オプション 3:NPM パッケージの使用 ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk) の節の情報に従います。
 
 {{upgrade-final-step}}
 

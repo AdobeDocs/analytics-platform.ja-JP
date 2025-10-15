@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 34%
+ht-degree: 23%
 
 ---
 
@@ -25,28 +25,28 @@ ht-degree: 34%
 >* セッションベースのセグメントをセッションコンテキストのフォールアウトビジュアライゼーション内のタッチポイントとして使用する。
 
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## タッチポイントからのセグメントの作成
 
 1. 特に関心があり、他のレポートに適用するのに便利そうな特定のタッチポイントからセグメントを作成します。タッチポイントを右クリックして、「**[!UICONTROL タッチポイントからセグメントを作成]**」を選択します。
 
-   ![&#x200B; タッチポイントからセグメントを作成がハイライト表示されたタッチポイントドロップダウンメニュー。](assets/fallout-createsegment.png)
+   ![ タッチポイントからセグメントを作成がハイライト表示されたタッチポイントドロップダウンメニュー。](assets/fallout-createsegment.png)
 
-   [!UICONTROL &#x200B; セグメントビルダー &#x200B;] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
+   [!UICONTROL  セグメントビルダー ] が開き、選択したタッチポイントに一致する事前定義済みの順次セグメントが事前入力されます。
 
-   ![&#x200B; セグメントビルダーには、事前入力済みおよび事前定義済みの順次セグメントが表示されます。](assets/fallout-definesegment.png)
+   ![ セグメントビルダーには、事前入力済みおよび事前定義済みの順次セグメントが表示されます。](assets/fallout-definesegment.png)
 
-1. セグメントにタイトルと説明を入力して、保存します。
+1. セグメントにタイトルと説明を入力して保存します。
 
    これで、希望する任意のプロジェクトでこのセグメントを使用できます。
 
 ## セグメントのタッチポイントとしての追加
 
-例えば、米国のユーザーのトレンドとフォールアウトへの影響を確認したい場合、US Users セグメントをフォールアウトにドラッグするだけです。
+例えば、米国のユーザーのトレンドとフォールアウトへの影響を確認したい場合は、US Users セグメントをフォールアウトにドラッグするだけです。
 
-![&#x200B; フォールアウトにドラッグするために選択されハイライト表示された US ユーザーセグメント。](assets/fallout-addfilter.png)
+![ フォールアウトにドラッグするために選択されハイライト表示された US ユーザーセグメント。](assets/fallout-addfilter.png)
 
 または、US Users セグメントを別のチェックポイントにドラッグすることで、AND タッチポイントを作成できます。
 
@@ -54,12 +54,12 @@ ht-degree: 34%
 
 フォールアウトビジュアライゼーションでは、無数のセグメントを比較できます。
 
-1. 比較するセグメントを左側の [!UICONTROL &#x200B; セグメント &#x200B;] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
+1. 比較するセグメントを左側の [!UICONTROL  セグメント ] パネルから選択します。 この例では、*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C* の 3 つのセグメントが選択されています。
 1. 3 つのセグメントをビジュアライゼーションの上部にあるセグメント ドロップゾーンにドラッグします。
 
 
 1. オプション：*すべてのユーザー* をデフォルトのコンテナとして保持するか、コンテナを削除できます。
 
-   ![&#x200B; すべての訪問と、前の手順でドラッグした 2 つのセグメントを表示するフォールアウト。](assets/fallout-multiplefilters.png)
+   ![ すべての訪問と、前の手順でドラッグした 2 つのセグメントを表示するフォールアウト。](assets/fallout-multiplefilters.png)
 
 1. これで、あるセグメントが別のセグメントよりパフォーマンスが優れているような 3 つのセグメントや他のインサイトについてフォールアウトを比較できます。

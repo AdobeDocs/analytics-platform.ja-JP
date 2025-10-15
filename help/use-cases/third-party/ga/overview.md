@@ -21,7 +21,7 @@ Customer Journey Analytics を初めて使用する場合、組織が Google Ana
 
 履歴（バックフィル）データの取り込みには、Google からのデータのエクスポートと、そのデータの Adobe Experience Platform へのインポートが含まれます。[Adobe Experience Platform での Google Analytics データの取り込み](backfill.md)を参照してください。
 
-履歴データを Platform に正常に取り込むと、[&#x200B; 現在のデータのストリーミングを設定する &#x200B;](streaming.md) か、[&#x200B; 接続を作成する &#x200B;](/help/connections/create-connection.md) を使用してCustomer Journey Analyticsでバックフィルされたデータのレポートをすぐに開始できます。
+履歴データを Platform に正常に取り込むと、[ 現在のデータのストリーミングを設定する ](streaming.md) か、[ 接続を作成する ](/help/connections/create-connection.md) を使用してCustomer Journey Analyticsでバックフィルされたデータのレポートをすぐに開始できます。
 
 ## Adobe Experience Platform に対する既存の Google Analytics 実装の設定 {#configure}
 

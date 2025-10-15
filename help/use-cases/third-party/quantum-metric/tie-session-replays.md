@@ -20,7 +20,7 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 
 以下の手順では、Adobe Experience Platform Data Collection でタグを使用していることを前提としています。 組織でタグを使用しない場合は、これらのデータ収集方法を手動の web SDK実装に適応させることができます。
 
-詳しくは、[Quantum Metric タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
+詳しくは、[Quantum Metric タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
 
 ## 手順 1:Quantum Metric セッション ID に対応するスキーマフィールドの作成
 
@@ -29,10 +29,10 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
 1. **[!UICONTROL データ収集]**/**[!UICONTROL スキーマ]** に移動します。
 1. リストから目的のスキーマを選択します。
-1. 目的のオブジェクトの横にある ![&#x200B; フィールドを追加 &#x200B;](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
-1. 右側で、目的の [!UICONTROL &#x200B; 名前 &#x200B;] を入力します。 例：`qmSessionId`。
-1. 目的の [!UICONTROL &#x200B; 表示名 &#x200B;] を入力します。 例：`Quantum Metric session ID`。
-1. [!UICONTROL &#x200B; タイプ &#x200B;] を **[!UICONTROL 文字列]** として選択します。
+1. 目的のオブジェクトの横にある ![ フィールドを追加 ](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
+1. 右側で、目的の [!UICONTROL  名前 ] を入力します。 例：`qmSessionId`。
+1. 目的の [!UICONTROL  表示名 ] を入力します。 例：`Quantum Metric session ID`。
+1. [!UICONTROL  タイプ ] を **[!UICONTROL 文字列]** として選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
 ## 手順 2:Quantum Metric タグ拡張機能を使用して Quantum Metric セッション ID を取得する
@@ -46,7 +46,7 @@ Adobe Experience Platformに送信するデータに Quantum Metric セッショ
 1. 次の設定を行います。
    * **[!UICONTROL 名前]**: `Quantum Metric session ID`
    * **[!UICONTROL 拡張機能]**: [!UICONTROL Core]
-   * **[!UICONTROL データ要素タイプ]**:[!UICONTROL &#x200B; カスタムコード &#x200B;]
+   * **[!UICONTROL データ要素タイプ]**:[!UICONTROL  カスタムコード ]
 1. 「**[!UICONTROL エディターを開く]**」ボタンを選択して、次のコードを貼り付けます。
 
    ```js
@@ -84,7 +84,7 @@ XDM オブジェクトが送信イベントアクション設定に既に含ま�
 1. Customer Journey Analyticsに移動し、トップメニューで **[!UICONTROL データビュー]** を選択します。
 1. 目的の既存のデータビューを選択します。
 1. 左側の「Quantum Metric session ID」フィールドを見つけて、中央の「ディメンション」領域にドラッグします。
-1. 右側のウィンドウで、「[&#x200B; 永続性 &#x200B;](/help/data-views/component-settings/persistence.md) 設定を `Session` に設定します。
+1. 右側のウィンドウで、「[ 永続性 ](/help/data-views/component-settings/persistence.md) 設定を `Session` に設定します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
 ## 手順 4：セッション ID ディメンションに対応するようにAnalysis Workspaceを設定する
@@ -92,9 +92,9 @@ XDM オブジェクトが送信イベントアクション設定に既に含ま�
 Workspaceでフリーフォームテーブルを作成し、セッション ID 値が Quantum Metric に直接リンクするように設定します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0&rbrace;Workspace&rbrace; を選択します。]**
+1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0}Workspace} を選択します。]**
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
+1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. セッション ID ディメンションをWorkspace キャンバスにドラッグします。
 1. ディメンション列ヘッダーを右クリックし、「**[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]**」を選択します。
 1. **[!UICONTROL カスタム URL の作成]** を選択します。
@@ -106,12 +106,12 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID �
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
-各セッション ID は、クリック可能なリンクになりました。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[&#x200B; フリーフォームテーブルでのハイパーリンクの作成 &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
+各セッション ID は、クリック可能なリンクになりました。 Analysis Workspace ディメンション項目にハイパーリンクを追加する方法について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) を参照してください。
 
-![&#x200B; セッションの再生 &#x200B;](assets/session-replay.png)
+![ セッションの再生 ](assets/session-replay.png)
 
 ## 手順 5:Customer Journey Analyticsからのセッションの表示
 
 セッションの再生を調べる興味深いセグメントが見つかったら、そのセグメントを、セッション ID のリンクを含むパネルに適用できます。 この表は、そのセグメント内のすべてのセッションを返します。いずれかのセッションをクリックすると、Quantum Metric で詳細を確認できます。
 
-詳しくは、Quantum Metric の [&#x200B; セッション再生のエンタープライズガイド &#x200B;](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) を参照してください。 また、Quantum Metric のカスタマーサポート担当者に連絡するか、[Quantum Metric 顧客リクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信することもできます。
+詳しくは、Quantum Metric の [ セッション再生のエンタープライズガイド ](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) を参照してください。 また、Quantum Metric のカスタマーサポート担当者に連絡するか、[Quantum Metric 顧客リクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信することもできます。

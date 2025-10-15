@@ -30,15 +30,15 @@ Quantum Metric は、ページ読み込み速度の低下、ページ読み込�
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
 1. **[!UICONTROL データ収集]**/**[!UICONTROL スキーマ]** に移動します。
 1. リストから目的のスキーマを選択します。
-1. 目的のオブジェクトの横にある ![&#x200B; フィールドを追加 &#x200B;](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
-1. 右側で、目的の [!UICONTROL &#x200B; 名前 &#x200B;] を入力します。 例：`qmErrorName`。
-1. 目的の [!UICONTROL &#x200B; 表示名 &#x200B;] を入力します。 例：`Quantum Metric error name`。
-1. [!UICONTROL &#x200B; タイプ &#x200B;] を **[!UICONTROL 文字列]** として選択します。
+1. 目的のオブジェクトの横にある ![ フィールドを追加 ](/help/assets/icons/AddCircle.svg) アイコンを選択します。 例えば、`Implementation Details` の隣です。
+1. 右側で、目的の [!UICONTROL  名前 ] を入力します。 例：`qmErrorName`。
+1. 目的の [!UICONTROL  表示名 ] を入力します。 例：`Quantum Metric error name`。
+1. [!UICONTROL  タイプ ] を **[!UICONTROL 文字列]** として選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
 ## 手順 2:Quantum Metric タグ拡張機能を使用して摩擦イベントをキャプチャする
 
-Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
+Quantum Metric データを含めるようにタグを設定する方法については、Adobe Experience Platform宛先ガイドの [Quantum Metric 拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を参照してください。 この拡張機能を使用すると、既存のデータセットに行が渡されます。
 
 Adobe Experience Platform Data Collection のタグを使用して、摩擦イベントの名前を手動で設定し、XDM オブジェクトに含めて分析できるようにします。 これを行う 1 つの方法は、ルールのカスタムコードです。
 
@@ -49,7 +49,7 @@ return true;
 
 次に、動的に設定されるデータ要素を XDM オブジェクトに追加します。
 
-![Quantum Metric エラー名のスクリーンショット &#x200B;](assets/error-name.png)
+![Quantum Metric エラー名のスクリーンショット ](assets/error-name.png)
 
 ## 手順 3:Customer Journey Analyticsのデータビューへの 1 つ以上のディメンションと指標の追加
 
@@ -59,21 +59,21 @@ return true;
 1. Customer Journey Analyticsに移動し、必要に応じて **[!UICONTROL データ管理]** から **[!UICONTROL データビュー]** を選択します。
 1. 目的の既存のデータビューを選択します。
 1. 左側の量子指標の摩擦イベントフィールドリストを見つけて、中央の指標領域にドラッグします。
-1. 右側のペインで、「[&#x200B; 値を含める/除外 &#x200B;](/help/data-views/component-settings/include-exclude-values.md)」設定を、追跡する摩擦イベントに設定します。 複数の摩擦イベントを同じ指標に追加して、それらを組み合わせることができます。 また、摩擦イベントフィールドの別のコピーを指標領域にドラッグして、他の摩擦イベントを別の指標として追跡することもできます。
+1. 右側のペインで、「[ 値を含める/除外 ](/help/data-views/component-settings/include-exclude-values.md)」設定を、追跡する摩擦イベントに設定します。 複数の摩擦イベントを同じ指標に追加して、それらを組み合わせることができます。 また、摩擦イベントフィールドの別のコピーを指標領域にドラッグして、他の摩擦イベントを別の指標として追跡することもできます。
 1. 必要なディメンションと指標をすべて作成したら、「**[!UICONTROL 保存]**」をクリックします。
-1. エラーイベントの完全なリストについては、Quantum Metric のドキュメントを参照してください。 その他の質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
+1. エラーイベントの完全なリストについては、Quantum Metric のドキュメントを参照してください。 その他の質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page) を通じてリクエストを送信してください。
 
 ## 手順 4:Analysis Workspaceで、残りのデータと共にディメンションおよび指標を使用する
 
 残りの訪問者データと共に収集された Quantum Metric friction event データを使用すると、Customer Journey Analyticsの他のディメンションや指標とまったく同じように使用できます。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0&rbrace;Workspace&rbrace; を選択します。]**
+1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0}Workspace} を選択します。]**
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
+1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を作成します。
 1. 分析に必要なディメンションと指標をWorkspace キャンバスにドラッグします。
 
-![&#x200B; 摩擦グラフ &#x200B;](assets/friction-graph.png)
+![ 摩擦グラフ ](assets/friction-graph.png)
 
 考えられる分析のアイデアは次のとおりです。
 

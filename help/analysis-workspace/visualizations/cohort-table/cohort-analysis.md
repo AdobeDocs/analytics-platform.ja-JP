@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のコホートテーブルについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[コホートテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のコホートテーブルについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[コホートテーブル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -45,8 +45,8 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 [!UICONTROL コホートテーブル]で実行できる操作の例：
 
-* 目的のアクションを促進するために設計したキャンペーンを開始する。
-* 顧客のライフサイクルのまさに適切なタイミングでマーケティング予算を振り替える。
+* 目的のアクションを促進するように設計されたキャンペーンを開始します。
+* 顧客ライフサイクルにおいて、マーケティング予算を正確に適切なタイミングでシフトさせる。
 * 価値を最大化するために、体験版やオファーを終了するタイミングを認識する。
 * 価格やアップグレードパスなどの領域で、A/B テストの着想を得る。
 
@@ -55,7 +55,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のコホート分析](https://video.tv.adobe.com/v/3430080/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のコホート分析](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

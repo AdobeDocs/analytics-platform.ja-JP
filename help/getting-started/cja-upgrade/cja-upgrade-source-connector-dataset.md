@@ -39,7 +39,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    または
 
-   既に Analytics ソースコネクタがある場合は、[&#x200B; ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
 1. 以下の説明に従って、接続に Analytics ソースコネクタデータセットを追加します。
 
@@ -90,7 +90,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 

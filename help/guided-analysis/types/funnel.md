@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**分析では、製品における重要なユーザージャーニーを視覚的に表現します。横軸は、ユーザーが通過する必要がある各手順を表します。縦軸は、各手順でのユーザーまたはセッションの割合を表します。すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3431281/?quality=12&learn=on&captions=jpn){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## ユースケース
 

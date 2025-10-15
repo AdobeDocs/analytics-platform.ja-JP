@@ -57,7 +57,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. **[!UICONTROL 個人プロファイル]** を選択します。
 
-      ![&#x200B; 個々のプロファイルが選択されたスキーマウィンドウを作成 &#x200B;](./assets/create-pr-schema-wizard-step-1.png)
+      ![ 個々のプロファイルが選択されたスキーマウィンドウを作成 ](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -70,7 +70,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![&#x200B; スキーマ &#x200B;](./assets/create-pr-schema-wizard-step-2.png) ースに名前を付けるためのフィールドを表示するスキーマを作成ウィンドウ
+      ![ スキーマ ](./assets/create-pr-schema-wizard-step-2.png) ースに名前を付けるためのフィールドを表示するスキーマを作成ウィンドウ
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -78,7 +78,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. 「[!UICONTROL フィールドグループ]」で「**[!UICONTROL + 追加]**」を選択します。
 
-      ![&#x200B; フィールドグループを追加を表示するスキーマを作成ウィンドウ &#x200B;](./assets/add-field-group-button.png)
+      ![ フィールドグループを追加を表示するスキーマを作成ウィンドウ ](./assets/add-field-group-button.png)
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
@@ -175,15 +175,15 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 様々なソースからデータを取り込むことができます。 次に、利用できる多くのソースの一部を示します。
 
-- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
+- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) などがあります）
 
-- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
+- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) などが含まれます）
 
-- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
+- データベース （ソースコネクタには [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) などがあります）
 
 ソースコネクタを設定するには：
 
-1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL &#x200B; ソース &#x200B;] を選択します。
+1. Adobe Experience Platformで、左パネルの **[!UICONTROL CONNECTIONS]** から [!UICONTROL  ソース ] を選択します。
 
 1. 使用可能なソースコネクタのリストからソースコネクタを選択します。
 
@@ -209,11 +209,11 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
    1. 「**[!UICONTROL ドキュメントを表示]**」を選択します。
 
-Adobe Analytics ソースコネクタの使用方法については、[&#x200B; 従来のAdobe Analyticsからのデータの取り込みと使用 &#x200B;](./analytics.md) を参照してください。
+Adobe Analytics ソースコネクタの使用方法については、[ 従来のAdobe Analyticsからのデータの取り込みと使用 ](./analytics.md) を参照してください。
 
-HTTP API ソースコネクタの使用方法について詳しくは、[&#x200B; ストリーミングデータの取り込みと使用 &#x200B;](./streaming.md) を参照してください。
+HTTP API ソースコネクタの使用方法について詳しくは、[ ストリーミングデータの取り込みと使用 ](./streaming.md) を参照してください。
 
-ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#terms-and-conditions)を参照してください。
+ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 
 
 ## 接続の設定
@@ -262,7 +262,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    1. 「**[!UICONTROL 保存]**」を選択します。
 
-[&#x200B; 接続 &#x200B;](/help/connections/overview.md) を作成したら、[&#x200B; データセットの選択と組み合わせ &#x200B;](/help/connections/combined-dataset.md)、[&#x200B; 接続のデータセットのステータスとデータ取り込みのステータスの確認 &#x200B;](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。
+[ 接続 ](/help/connections/overview.md) を作成したら、[ データセットの選択と組み合わせ ](/help/connections/combined-dataset.md)、[ 接続のデータセットのステータスとデータ取り込みのステータスの確認 ](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。
 
 ## データ表示の設定
 
@@ -298,7 +298,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[&#x200B; データ表示の概要 &#x200B;](../data-views/data-views.md) を参照してください。
+データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[ データ表示の概要 ](../data-views/data-views.md) を参照してください。
 
 
 ## プロジェクトの設定
@@ -323,7 +323,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

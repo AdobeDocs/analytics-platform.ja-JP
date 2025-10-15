@@ -25,7 +25,7 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -58,7 +58,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ## 画像を追加 {#images}
 
-プロジェクトに画像を追加するには、メニューで ![&#x200B; 画像 &#x200B;](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
+プロジェクトに画像を追加するには、メニューで ![ 画像 ](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
 
 画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
 

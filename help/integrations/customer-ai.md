@@ -73,7 +73,7 @@ Customer Journey Analytics が既存または新規データセットの一部�
 
 Customer Journey Analytics で、確立した接続の一部として得られたディメンション（スコア、スコアの日付、確率など）や指標を使用して、[データビューの作成](/help/data-views/create-dataview.md)に進むことができます。
 
-![&#x200B; データビューを作成ウィンドウ &#x200B;](assets/create-dataview.png)
+![ データビューを作成ウィンドウ ](assets/create-dataview.png)
 
 ## 手順 4：Workspace での CAI スコアのレポート
 

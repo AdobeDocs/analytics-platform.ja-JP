@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # 書き出しの管理
 
-[Customer Journey Analytics レポートをクラウドに書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md) の説明に従って完全なテーブルを書き出すと、書き出しは [!UICONTROL &#x200B; 書き出し &#x200B;] ページの [!UICONTROL &#x200B; 書き出し &#x200B;] タブで使用できます。
+[Customer Journey Analytics レポートをクラウドに書き出し ](/help/analysis-workspace/export/export-cloud.md) の説明に従って完全なテーブルを書き出すと、書き出しは [!UICONTROL  書き出し ] ページの [!UICONTROL  書き出し ] タブで使用できます。
 
 自分が作成した書き出しのみを表示できます。
 
@@ -64,7 +64,7 @@ ht-degree: 7%
 
    [!UICONTROL **完全なテーブルを書き出し**] ダイアログが表示されます。
 
-1. 使用可能なオプションを更新します。 各オプションについて詳しくは、[Analysis Workspace レポートのクラウドへの書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) の [Customer Journey Analyticsからの完全なテーブルの書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md) を参照してください。
+1. 使用可能なオプションを更新します。 各オプションについて詳しくは、[Analysis Workspace レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) の [Customer Journey Analyticsからの完全なテーブルの書き出し ](/help/analysis-workspace/export/export-cloud.md) を参照してください。
 
 ## 書き出しを複製
 
@@ -80,7 +80,7 @@ ht-degree: 7%
 
    書き出しの複製が作成されます。 新しい書き出しの名前は、元の書き出しの名前と一致し、ファイル名に _[!UICONTROL - コピー]_ が追加されます。
 
-1. （任意） [&#x200B; 新しい書き出しを編集 &#x200B;](#edit-an-export) します。ファイル名やその他の変更するプロパティも指定します。
+1. （任意） [ 新しい書き出しを編集 ](#edit-an-export) します。ファイル名やその他の変更するプロパティも指定します。
 
 ## 手動によるエクスポートの開始
 
@@ -96,7 +96,7 @@ ht-degree: 7%
 
 ## エクスポートのタグ付け
 
-タグを書き出しに適用すると、それらのタグを [!UICONTROL &#x200B; 書き出し &#x200B;] ページの [!UICONTROL &#x200B; タグ &#x200B;] 列で表示できます。 詳しくは、[&#x200B; 列の設定 &#x200B;](#configure-columns) を参照してください。
+タグを書き出しに適用すると、それらのタグを [!UICONTROL  書き出し ] ページの [!UICONTROL  タグ ] 列で表示できます。 詳しくは、[ 列の設定 ](#configure-columns) を参照してください。
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
@@ -120,33 +120,33 @@ ht-degree: 7%
 
 1. 確認メッセージが表示されたら、「[!UICONTROL **削除**]」を選択してから「[!UICONTROL **削除**]」を選択します。
 
-## [!UICONTROL &#x200B; 書き出し &#x200B;] ページでの列の設定
+## [!UICONTROL  書き出し ] ページでの列の設定
 
-「[!UICONTROL &#x200B; 書き出し &#x200B;]」タブの列を追加または削除して、表示する情報を設定できます。
+「[!UICONTROL  書き出し ]」タブの列を追加または削除して、表示する情報を設定できます。
 
 列ヘッダーを選択して、その列で書き出しを並べ替えます。 デフォルトでは、書き出しは、書き出しが最後に変更された日時で並べ替えられます。
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**] を選択します。
 
-1. 「[!UICONTROL **書き出し**]」タブで、**書き出し** ページの右上にある「![&#x200B; テーブルをカスタマイズ &#x200B;](assets/customize-table-icon.png) アイコン [!UICONTROL &#x200B; テーブルをカスタマイズ &#x200B;] を選択します。
+1. 「[!UICONTROL **書き出し**]」タブで、**書き出し** ページの右上にある「![ テーブルをカスタマイズ ](assets/customize-table-icon.png) アイコン [!UICONTROL  テーブルをカスタマイズ ] を選択します。
 
    次の列を表示できます。
 
    | 使用可能な列 | 説明 |
    |---------|----------|
-   | 名前 | エクスポートの名前。 [Customer Journey Analytics レポートをクラウドに書き出す &#x200B;](/help/analysis-workspace/export/export-cloud.md) で説明されているように、ユーザーは作成時に名前を付けます。 |
+   | 名前 | エクスポートの名前。 [Customer Journey Analytics レポートをクラウドに書き出す ](/help/analysis-workspace/export/export-cloud.md) で説明されているように、ユーザーは作成時に名前を付けます。 |
    | ID | エクスポートの作成時にエクスポートに自動的に割り当てられた ID。<!-- True? --> |
-   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 [Customer Journey Analytics レポートのクラウドへの書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md) に示すように、書き出し時にデータビューを選択できます。 |
-   | ステータス | エクスポートのステータス。 使用可能なステータスは [!UICONTROL &#x200B; アクティブ &#x200B;]、[!UICONTROL &#x200B; 完了 &#x200B;]、[!UICONTROL &#x200B; 失敗 &#x200B;] です。<p> **注意：** 失敗した書き出しのトラブルシューティングについて詳しくは、[&#x200B; 失敗した書き出しのトラブルシューティング &#x200B;](/help/components/exports/troubleshoot-exports.md) を参照してください。</p> |
-   | タグ | 書き出しに適用されているタグを表示します。 書き出しにタグを適用する方法について詳しくは、「[&#x200B; 書き出しにタグ付け &#x200B;](#tag-an-export) を参照してください。 |
+   | データビュー名 | エクスポートに関連付けられたデータビューの名前。 [Customer Journey Analytics レポートのクラウドへの書き出し ](/help/analysis-workspace/export/export-cloud.md) に示すように、書き出し時にデータビューを選択できます。 |
+   | ステータス | エクスポートのステータス。 使用可能なステータスは [!UICONTROL  アクティブ ]、[!UICONTROL  完了 ]、[!UICONTROL  失敗 ] です。<p> **注意：** 失敗した書き出しのトラブルシューティングについて詳しくは、[ 失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md) を参照してください。</p> |
+   | タグ | 書き出しに適用されているタグを表示します。 書き出しにタグを適用する方法について詳しくは、「[ 書き出しにタグ付け ](#tag-an-export) を参照してください。 |
    | テーブルサイズ (前回の送信) | 最後に送信された際のエクスポートのサイズ。 |
    | 作成者 | 書き出しを作成したユーザー。 |
    | 作成日 | エクスポートが作成された日時。<!-- true? --> |
    | 場所 | データが書き出されたアカウント上の場所。 |
    | アカウント | データが書き出されたアカウント。 |
-   | 頻度 | 書き出しが送信される頻度。 使用できるオプションは、[!UICONTROL 1 回 &#x200B;]、[!UICONTROL &#x200B; 毎日 &#x200B;]、[!UICONTROL &#x200B; 毎週 &#x200B;]、[!UICONTROL &#x200B; 毎月 &#x200B;] 曜日、[!UICONTROL &#x200B; 毎月 &#x200B;]、[!UICONTROL &#x200B; 毎年 &#x200B;]、および [!UICONTROL &#x200B; 毎年の特定の日付 &#x200B;] です。 |
+   | 頻度 | 書き出しが送信される頻度。 使用できるオプションは、[!UICONTROL 1 回 ]、[!UICONTROL  毎日 ]、[!UICONTROL  毎週 ]、[!UICONTROL  毎月 ] 曜日、[!UICONTROL  毎月 ]、[!UICONTROL  毎年 ]、および [!UICONTROL  毎年の特定の日付 ] です。 |
    | 送信時間 | エクスポートが送信された時刻。 |
-   | 最後の送信 | エクスポートが最後に送信された時刻。 |
+   | 前回の送信 | エクスポートが最後に送信された時刻。 |
    | 最終変更日 | 最後にエクスポートが変更された時刻。 書き出しページの項目は、デフォルトではこの列で並べ替えられます。 |
    | アカウントタイプ | データが書き出されたクラウドアカウントのタイプ。 使用可能なアカウントタイプは、[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]、[!UICONTROL Adobe Experience Platform] です。 |
 

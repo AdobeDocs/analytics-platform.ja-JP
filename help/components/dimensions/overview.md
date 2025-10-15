@@ -48,6 +48,6 @@ Customer Journey Analytics 管理者は、データビュー内または直接 A
 
 >[!MORELIKETHIS]
 >
->[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
+>[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >
 

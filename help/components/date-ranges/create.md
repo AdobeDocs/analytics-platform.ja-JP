@@ -25,7 +25,7 @@ ht-degree: 92%
 * **E** - Workspace プロジェクトのコンポーネント左パネルで、![カレンダー](/help/assets/icons/Calendar.svg) **日付範囲**&#x200B;に「![追加](/help/assets/icons/Add.svg)」を選択します。
 * **F** - 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションで、データポイントのコンテキストメニューから、「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
-注釈を定義するには、[[!UICONTROL &#x200B; 日付範囲ビルダー &#x200B;]](#annotation-builder) を使用します。
+注釈を定義するには、[[!UICONTROL  日付範囲ビルダー ]](#annotation-builder) を使用します。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |

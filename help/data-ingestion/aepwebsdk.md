@@ -24,7 +24,7 @@ ht-degree: 87%
 
 - **タグを使用**：web サイト上のデータレイヤーのデータに対して、ルールやデータ要素を容易に設定できます。次に、データが Adobe Experience Platform Edge Network 上に設定されたデータストリームに送信されることを確認します。
 
-- **デプロイと検証**&#x200B;を行います。タグの開発を繰り返し実行し、すべての検証が完了したら、実稼動環境で公開できる環境を構築します。
+- **デプロイと検証**&#x200B;を行います。タグの開発を繰り返し実行し、すべての検証が完了したら、本番環境で公開できる環境を構築します。
 
 - Customer Journey Analytics で、**接続を設定**&#x200B;します。この接続には、（少なくとも）Adobe Experience Platform データセットを含める必要があります。
 
@@ -73,7 +73,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![&#x200B; スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -249,7 +249,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![&#x200B; プロパティの作成](./assets/create-property.png)
+   ![ プロパティの作成](./assets/create-property.png)
 
 ### タグの設定
 
@@ -272,13 +272,13 @@ Adobe Experience Platform Web SDK 拡張機能を作成して設定するには�
 
    <img src="./assets/aepwebsdk-extension.png" width="35%"/>
 
-4. サンドボックスと、以前に作成した[!UICONTROL 実稼動環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
+4. サンドボックスと、以前に作成した[!UICONTROL 本番環境]、（オプション）[!UICONTROL ステージング環境]および[!UICONTROL 開発環境]用のデータストリームを選択します。
 
    ![AEP Web SDK 拡張機能の設定](./assets/aepwebsk-extension-datastreams.png)
 
    「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
+詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)を参照してください。
 
 Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
@@ -446,7 +446,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    タグが保存され、開発環境用に作成されます。緑のドットは、開発環境でタグが正常に作成されたことを示します。
 
-4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または実稼動環境に移動することができます。
+4. **[!UICONTROL ...]** を選択してライブラリを再構築するか、ライブラリをステージング環境または本番環境に移動することができます。
 
    ![公開 - ライブラリを作成](./assets/build-library.png)
 
@@ -483,7 +483,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Web SDK のデ�
 
 次に、web サイトの開発バージョンで、`<head>` タグをデプロイできます。デプロイすると、web サイトは Adobe Experience Platform へのデータの収集を開始します。
 
-実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と実稼動環境にデプロイします。
+実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と本番環境にデプロイします。
 
 ## 接続の設定
 
@@ -567,7 +567,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[&#x200B; データ表示の概要 &#x200B;](../data-views/data-views.md) を参照してください。
+データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[ データ表示の概要 ](../data-views/data-views.md) を参照してください。
 
 
 ## プロジェクトの設定
@@ -592,7 +592,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

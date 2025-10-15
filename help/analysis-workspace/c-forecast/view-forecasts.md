@@ -17,15 +17,15 @@ ht-degree: 2%
 
 ## テーブルでの予測の表示
 
-時系列フリーフォームテーブルで予測を表示できます。 [!UICONTROL &#x200B; ユーザー環境設定 &#x200B;] のフリーフォームテーブルで [&#x200B; 予測を表示 &#x200B;](../user-preferences.md) が有効になっている場合、テーブルに追加された最初の指標列に対して予測が自動的に表示されます。 その他の列に対して：
+時系列フリーフォームテーブルで予測を表示できます。 [!UICONTROL  ユーザー環境設定 ] のフリーフォームテーブルで [ 予測を表示 ](../user-preferences.md) が有効になっている場合、テーブルに追加された最初の指標列に対して予測が自動的に表示されます。 その他の列に対して：
 
-1. 列ヘッダーの列設定アイコン ![&#x200B; 列設定 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択し、オプションのリストで **[!UICONTROL 予測を表示]** が選択されていることを確認します。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
+1. 列ヘッダーの列設定アイコン ![ 列設定 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択し、オプションのリストで **[!UICONTROL 予測を表示]** が選択されていることを確認します。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
 1. **[!UICONTROL 列設定]** メニューの外側をクリックして、設定を保存し、更新したテーブルを表示します。
 
 表は、下記の通り業績予想を示しております。
 
-![&#x200B; テーブルに予測を表示 &#x200B;](assets/show-forecast-table.png)
+![ テーブルに予測を表示 ](assets/show-forecast-table.png)
 
 * 各セルの予測値とパーセンテージが **ダークグレー** で表示されます。
 * 予測値を示すために、予測記号 ![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg) がセルの右上隅に表示されます。
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 折れ線グラフは、予測を表示できる唯一のビジュアライゼーションです。
 
-1. ビジュアライゼーションヘッダーで設定アイコン ![&#x200B; 列設定 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択し、オプションのリストで **[!UICONTROL 予測を表示]** が選択されていることを確認します。
+1. ビジュアライゼーションヘッダーで設定アイコン ![ 列設定 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択し、オプションのリストで **[!UICONTROL 予測を表示]** が選択されていることを確認します。
 
 1. （オプション）予測でグラフのスケールを適切に設定するには、「**[!UICONTROL 予測で Y 軸のスケールを設定する]**」を選択します。 読みにくいグラフがレンダリングされる場合があるので、このオプションは、デフォルトでは選択されていません。
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 なお、予測は折れ線グラフで以下のように表示しています。
 
-![&#x200B; 折れ線グラフに予測を表示 &#x200B;](assets/show-forecast-linechart.png)
+![ 折れ線グラフに予測を表示 ](assets/show-forecast-linechart.png)
 
 * 折れ線グラフ内の指標の現在の値は、縦棒で示されます。 この縦線の上にマウスポインターを置くと、最新の日付を含むポップアップが表示されます。
 * 1 つ以上の指標の予測値が、点線を使用して垂直バーから直接表示されます。 指標の任意のデータポイントにポインタを合わせることができます。 次のポップアップが表示されます。

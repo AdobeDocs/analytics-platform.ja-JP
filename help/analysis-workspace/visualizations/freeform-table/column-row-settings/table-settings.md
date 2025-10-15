@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/328502/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
-行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
+行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
 
 ![指標の設定アイコンをハイライト表示するフリーフォームテーブル](assets/row-settings.png)
 
@@ -36,7 +36,7 @@ ht-degree: 87%
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   ![&#x200B; 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
+   ![ 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
 1. ドロップダウンメニューから、テーブルに表示する行数を選択します。
 
@@ -90,4 +90,4 @@ ht-degree: 87%
 
 ## 行の高さの変更
 
-プロジェクトの [&#x200B; 表示密度 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。.
+プロジェクトの [ 表示密度 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。.

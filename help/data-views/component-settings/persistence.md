@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 79%
+ht-degree: 75%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * **有効期限** を使用すると、設定されたイベントを超えてディメンション項目が保持される期間を決定できます。
 
-[!UICONTROL &#x200B; 永続性 &#x200B;] は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。 セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
+[!UICONTROL  永続性 ] は、ディメンションでのみ使用でき、適用対象となるデータに遡って適用されます。 セグメント化や他の分析操作が適用される前に発生する即時のデータ変換です。
 
 | 設定 | 説明 |
 | --- | --- |
@@ -103,12 +103,12 @@ ht-degree: 79%
 
 ディメンション値の永続性を別のディメンション内のディメンション値にバインドできるドロップダウンメニュー。 有効なオプションには、データビュー内にある他のディメンションが含まれます。
 
-バインディングディメンションの効果的な使用方法の例については、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 &#x200B;](../../use-cases/data-views/binding-dimensions-metrics.md) を参照してください。
+バインディングディメンションの効果的な使用方法の例については、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 ](../../use-cases/data-views/binding-dimensions-metrics.md) を参照してください。
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/3409294/?quality=12&learn=on&captions=jpn){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -119,4 +119,4 @@ ht-degree: 79%
 
 この設定は、オブジェクト配列のバインディングディメンションがコンポーネントよりも低い場合にのみ表示されます。 イベントにバインディング指標が存在する場合、ディメンション値はイベントレベルのディメンションからバインディングディメンションの下位のスキーマレベルにコピーされます。
 
-バインディング指標の効果的な使用方法について詳しくは、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 &#x200B;](../../use-cases/data-views/binding-dimensions-metrics.md) の 2 番目の例を参照してください。
+バインディング指標の効果的な使用方法について詳しくは、[Customer Journey Analyticsでのバインディングディメンションと指標の使用 ](../../use-cases/data-views/binding-dimensions-metrics.md) の 2 番目の例を参照してください。
