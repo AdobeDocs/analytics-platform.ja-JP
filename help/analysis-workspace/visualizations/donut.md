@@ -37,7 +37,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドーナツビジュアライゼーションの追加](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドーナツビジュアライゼーションの追加](https://video.tv.adobe.com/v/3416776/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 

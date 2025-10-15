@@ -18,7 +18,7 @@ Customer Journey Analytics 用のランディングページには、[!DNL Analy
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://video.tv.adobe.com/v/346465/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
