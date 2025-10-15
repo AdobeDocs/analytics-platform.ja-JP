@@ -28,11 +28,11 @@ CJAを使用すると、QM データ、シーケンシャルデータ分析、�
 1. [!UICONTROL Experience Platform]/[!UICONTROL Connections]/[!UICONTROL Sources] に移動します。
 1. Quantum Metric ソースコネクタを追加し、プロンプトに従って完了します。
 
-詳しくは、[Adobe Experience Platform ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home) を参照してください。
+詳しくは、[Adobe Experience Platform ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home) を参照してください。
 
 ## 手順 2:Customer Journey Analyticsでの接続の作成
 
-Quantum Metric データのソースコネクタを作成すると、Adobe Experience Platformにデータセットが自動的に作成されます。 このデータセットをCustomer Journey Analyticsの新規または既存の [ 接続 ](/help/connections/overview.md) に追加します。
+Quantum Metric データのソースコネクタを作成すると、Adobe Experience Platformにデータセットが自動的に作成されます。 このデータセットをCustomer Journey Analyticsの新規または既存の [&#x200B; 接続 &#x200B;](/help/connections/overview.md) に追加します。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
 1. Customer Journey Analyticsに移動し、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
@@ -40,11 +40,11 @@ Quantum Metric データのソースコネクタを作成すると、Adobe Exper
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 >[!NOTE]
->Quantum Metric データは、残りのCustomer Journey Analytics データと同じ接続に追加できますが、そのデータは、2 つのデータセット間で共通の人物 ID がない限り、ステッチできません。 Adobeこの動作が必要な場合は、ソースコネクタの代わりに [ タグ拡張機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を使用することをお勧めします。
+>Quantum Metric データは、残りのCustomer Journey Analytics データと同じ接続に追加できますが、そのデータは、2 つのデータセット間で共通の人物 ID がない限り、ステッチできません。 Adobeこの動作が必要な場合は、ソースコネクタの代わりに [&#x200B; タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) を使用することをお勧めします。
 
 ## 手順 3:Customer Journey Analyticsでのデータビューの作成
 
-[ データビュー ](/help/data-views/data-views.md) を作成して、ディメンションと指標の設定を行います。
+[&#x200B; データビュー &#x200B;](/help/data-views/data-views.md) を作成して、ディメンションと指標の設定を行います。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
 1. Customer Journey Analyticsに移動し、必要に応じて **[!UICONTROL データ管理]** から **[!UICONTROL データビュー]** を選択します。
@@ -57,6 +57,6 @@ Quantum Metric データのソースコネクタを作成すると、Adobe Exper
 データがCustomer Journey Analyticsで使用できるようになったので、データのレポートを開始できます。
 
 1. [experience.adobe.com](https://experience.adobe.com) にログインします。
-1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0}Workspace} を選択します。]**
+1. Customer Journey Analyticsに移動し、上部のメニューで **[!UICONTROL 0&rbrace;Workspace&rbrace; を選択します。]**
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
 1. 目的の Quantum Metric ディメンションまたは指標をWorkspace キャンバスにドラッグして、データを分析します。

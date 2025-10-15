@@ -59,7 +59,7 @@ ht-degree: 93%
 
    ![「アトリビューションを設定」オプションをハイライト表示するデータビューウィンドウ](../assets/attribution-settings.png)
 
-1. [!UICONTROL **アトリビューションを設定**] を選択してから、[ アトリビューションモデル ](#attribution-models)、[ コンテナ ](#container)、[ ルックバック ](#lookback-window) ウィンドウを選択します。
+1. [!UICONTROL **アトリビューションを設定**] を選択してから、[&#x200B; アトリビューションモデル &#x200B;](#attribution-models)、[&#x200B; コンテナ &#x200B;](#container)、[&#x200B; ルックバック &#x200B;](#lookback-window) ウィンドウを選択します。
 
 
 

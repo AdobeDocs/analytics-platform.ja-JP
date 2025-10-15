@@ -14,4 +14,4 @@ ht-degree: 4%
 
 他のタイプのコンポーネントを探すのと同じ方法で、Analysis Workspace内の指標を探すことができます。
 
-コンポーネントをすばやく見つける方法について詳しくは、[ コンポーネントの概要 ](/help/components/overview.md#manage-the-component-list) の [ コンポーネントリストの管理 ](/help/components/overview.md) を参照してください。
+コンポーネントをすばやく見つける方法について詳しくは、[&#x200B; コンポーネントの概要 &#x200B;](/help/components/overview.md#manage-the-component-list) の [&#x200B; コンポーネントリストの管理 &#x200B;](/help/components/overview.md) を参照してください。

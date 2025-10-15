@@ -21,7 +21,7 @@ Analysis Workspace の異常値検出は、一連の高度な統計的手法を�
 
 毎日の精度のレポートの場合、アルゴリズムは、いくつかの重要な要素を考慮して、可能性のある最も正確な結果を産出します。まず、アルゴリズムは、2 つのクラス（時系列ベースのモデルまたは外れ値検出モデル（関数セグメント化と呼ばれる）のどちらかを選択する使用可能なデータに基づいて、適用するモデルのタイプを決定します。
 
-時系列モデルの選択は、エラーのタイプ、トレンド、シーズナリティ（ETS）の組み合わせに基づいています（[Hyndman 他著（2008） ](https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-3-540-71918-2)。 具体的には、アルゴリズムは次の組み合わせを試みます。
+時系列モデルの選択は、エラーのタイプ、トレンド、シーズナリティ（ETS）の組み合わせに基づいています（[Hyndman 他著（2008） &#x200B;](https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-3-540-71918-2)。 具体的には、アルゴリズムは次の組み合わせを試みます。
 
 1. ANA （相加誤差、トレンドなし、相加季節性）
 1. AAA （加算エラー、加算トレンド、加算シーソナリティ）
@@ -56,7 +56,7 @@ Analysis Workspace の異常値検出は、一連の高度な統計的手法を�
 
 次の例では、クリスマスおよび元日のパフォーマンスが大幅に向上していることがわかります。
 
-![ パフォーマンスの変化（休日パフォーマンスの有無を示す 2 つの折れ線グラフ ](assets/anomaly_statistics.png)
+![&#x200B; パフォーマンスの変化（休日パフォーマンスの有無を示す 2 つの折れ線グラフ &#x200B;](assets/anomaly_statistics.png)
 
 ## 時間単位の精度の異常値検出
 

@@ -42,14 +42,14 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## ユーザー ID のステッチ
 
-Customer Journey Analyticsでは、（結合されたデータセット [ を生成するために共通の識別子が必要 ](/help/connections/combined-dataset.md) す。
+Customer Journey Analyticsでは、（結合されたデータセット [&#x200B; を生成するために共通の識別子が必要 &#x200B;](/help/connections/combined-dataset.md) す。
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* いずれかのデータセットが一部のイベントにのみ共通の識別子を持っている場合は、[ ステッチ ](/help/stitching/overview.md) を使用してデータをステッチし、手順でこれらの 2 つのデータセットのクロスチャネル分析を有効にすることができます。
+* いずれかのデータセットが一部のイベントにのみ共通の識別子を持っている場合は、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md) を使用してデータをステッチし、手順でこれらの 2 つのデータセットのクロスチャネル分析を有効にすることができます。
 
 ## Customer Journey Analytics で接続を作成する
 
-Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-connection.md) します。
+Customer Journey Analyticsで [&#x200B; 接続を作成 &#x200B;](/help/connections/create-connection.md) します。
 
 * クロスチャネル分析を使用している場合、新しいステッチ済みデータセットを利用できます。新しく作成したステッチ済み ID フィールドをユーザー ID として使用します。
 * それ以外の場合は、元の web データセットとコールセンターデータセットの両方を選択して、接続に使用できます。
@@ -69,7 +69,7 @@ Customer Journey Analyticsで [ 接続を作成 ](/help/connections/create-conne
 
 このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[ セグメントの作成 ](/help/components/segments/seg-create.md) を参照してください。
+1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[&#x200B; セグメントの作成 &#x200B;](/help/components/segments/seg-create.md) を参照してください。
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。

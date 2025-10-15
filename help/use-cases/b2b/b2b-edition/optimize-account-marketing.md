@@ -36,7 +36,7 @@ Customer Journey Analytics B2B editionは、アカウントマーケティング
 
 オンラインとオフラインの両方で、商談の成立に最も影響を与えるエクスペリエンスを特定したい場合。
 
-[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) ビジュアライゼーションを使用して、アカウント、オポチュニティ、購入グループ、キャンペーンおよびチャネルをまたいだすべてのインタラクションをマッピングし、アカウントマーケティングの機能と改善点に関するインサイトを得ます。
+[ジャーニーキャンバス &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) ビジュアライゼーションを使用して、アカウント、オポチュニティ、購入グループ、キャンペーンおよびチャネルをまたいだすべてのインタラクションをマッピングし、アカウントマーケティングの機能と改善点に関するインサイトを得ます。
 
 ジャーニーキャンバスのビジュアライゼーションは、次のことに役立ちます。
 
@@ -48,23 +48,23 @@ Customer Journey Analytics B2B editionは、アカウントマーケティング
 
 リードフォームからクローズ済み受注へのジャーニーを視覚化する場合。
 
-1. [ジャーニーキャンバスを作成および設定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ビジュアライゼーション。
+1. [ジャーニーキャンバスを作成および設定 &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) ビジュアライゼーション。
 1. **[!UICONTROL アカウント]** を **[!UICONTROL プライマリ指標]** として設定します。
 1. **[!UICONTROL アカウント]** を **[!UICONTROL ジャーニーキャンバスコンテナ]** として選択していることを確認してください。
 
-   ![B2B のユースケース – アカウントマーケティングの最適化 – ジャーニーキャンバス – 設定 ](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
+   ![B2B のユースケース – アカウントマーケティングの最適化 – ジャーニーキャンバス – 設定 &#x200B;](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ノードをキャンバスにドラッグ&amp;ドロップし、ノードを接続して、アカウントジャーニーを示します。 例：**[!UICONTROL リードフォーム：ステップ 1]** フォームから **[!UICONTROL 商談 作成日時]**.
 
-   ![B2B のユースケース – アカウントマーケティングの最適化 – ジャーニーキャンバス ](assets/b2b-uc-optimize-marketing-journey-canvas.png)
+   ![B2B のユースケース – アカウントマーケティングの最適化 – ジャーニーキャンバス &#x200B;](assets/b2b-uc-optimize-marketing-journey-canvas.png)
 
 
 ## コホートセグメント化
 
 主要な購入者グループを特定して、これらの購入者グループを他のチャネル（有料メディア、メール、ソーシャルなど）でアクティブ化します。
 
-[ コホートテーブル ](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) ビジュアライゼーションを使用して、共有されている出発点（市場選定（MQL）リード日など）に基づいて B2B エンティティ（アカウント、オポチュニティ、購入グループ）をグループ化します。 そして、後続のステージやマイルストーンで、これらの各エンティティの進行状況を経時的に追跡します。
+[&#x200B; コホートテーブル &#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) ビジュアライゼーションを使用して、共有されている出発点（市場選定（MQL）リード日など）に基づいて B2B エンティティ（アカウント、オポチュニティ、購入グループ）をグループ化します。 そして、後続のステージやマイルストーンで、これらの各エンティティの進行状況を経時的に追跡します。
 
 コホートテーブルのビジュアライゼーションは、次の操作に役立ちます。
 
@@ -76,23 +76,23 @@ Customer Journey Analytics B2B editionは、アカウントマーケティング
 
 クローズした商談の月次コホートを確認します。
 
-1. [ コホートテーブルの作成と設定 ](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) ビジュアライゼーション。
+1. [&#x200B; コホートテーブルの作成と設定 &#x200B;](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) ビジュアライゼーション。
 1. **[!UICONTROL 作成済みの商談]** を **[!UICONTROL インクルージョン条件]** 指標として使用します。 演算子として **[!UICONTROL >=]** を選択し、値 `1` を入力します。
 1. **[!UICONTROL Closed-Won]** を **[!UICONTROL Return criteria]** 指標として使用します。 演算子として **[!UICONTROL >=]** を選択し、値 `1` を入力します。
 1. コンテナとして **[!UICONTROL オポチュニティ]** を選択します。
 
-   ![B2B のユースケース – コホートセグメント化 – コホートテーブル – 設定 ](assets/b2b-uc-optimize-marketing-cohort-table-config.png)
+   ![B2B のユースケース – コホートセグメント化 – コホートテーブル – 設定 &#x200B;](assets/b2b-uc-optimize-marketing-cohort-table-config.png)
 
 1. **[!UICONTROL ビルド]** を選択します。 コホートテーブルの例については、以下を参照してください。
 
-   ![B2B のユースケース – コホートセグメント化 – コホートテーブル ](assets/b2b-uc-optimize-marketing-cohort-table.png)
+   ![B2B のユースケース – コホートセグメント化 – コホートテーブル &#x200B;](assets/b2b-uc-optimize-marketing-cohort-table.png)
 
 
 ## 担当者イベント
 
 複数の対人イベントにわたるエンゲージメントアカウントと表示アクティビティについてレポートします。 したがって、対面でのイベント出席の影響を分析し、最適化できます。
 
-[ フロー ](/help/analysis-workspace/visualizations/c-flow/flow.md) ビジュアライゼーションでは、ユーザーのパスを視覚化できますが、アカウントや購入グループも、時間の経過と共にインタラクションやステージ間を行うようになりました。
+[&#x200B; フロー &#x200B;](/help/analysis-workspace/visualizations/c-flow/flow.md) ビジュアライゼーションでは、ユーザーのパスを視覚化できますが、アカウントや購入グループも、時間の経過と共にインタラクションやステージ間を行うようになりました。
 
 フロービジュアライゼーションは、次のことに役立ちます。
 
@@ -104,15 +104,15 @@ Customer Journey Analytics B2B editionは、アカウントマーケティング
 
 MQL の生成に対する影響を視覚化する（マーケティングの選定リード）。
 
-1. [ フローの作成と設定 ](/help/analysis-workspace/visualizations/c-flow/create-flow.md) ビジュアライゼーション。
+1. [&#x200B; フローの作成と設定 &#x200B;](/help/analysis-workspace/visualizations/c-flow/create-flow.md) ビジュアライゼーション。
 1. 「**[!UICONTROL 次で終わる]**」に **[!UICONTROL MQL 認定済み]** を選択します。
 1. **[!UICONTROL パスディメンション]** に **[!UICONTROL コンテンツタイプ]** を選択します。
 1. **[!UICONTROL 詳細設定を表示]** を選択します。
 1. `5` 列数 **[!UICONTROL に]** を入力します。
 1. **[!UICONTROL フローコンテナ]** の **[!UICONTROL アカウント]** を選択します。
 
-   ![B2B のユースケース – ユーザー内イベント – フロー設定 ](assets/b2b-uc-optimize-marketing-flow-config.png)
+   ![B2B のユースケース – ユーザー内イベント – フロー設定 &#x200B;](assets/b2b-uc-optimize-marketing-flow-config.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-   ![B2B のユースケース – ユーザー内イベント – フロー設定 ](assets/b2b-uc-optimize-marketing-flow.png)
+   ![B2B のユースケース – ユーザー内イベント – フロー設定 &#x200B;](assets/b2b-uc-optimize-marketing-flow.png)

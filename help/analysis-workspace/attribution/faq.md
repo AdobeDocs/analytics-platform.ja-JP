@@ -64,7 +64,7 @@ Attribution is recalculated at report runtime, so there is no difference between
 
 +++## アトリビューションモデルは他の Analytics 機能でも使用できますか？
 
-はい。アトリビューションモデルは、データビューの指標コンポーネントのコンポーネント設定の一部としても使用できます。 詳しくは、[ アトリビューションコンポーネントの設定 ](/help/data-views/component-settings/attribution.md) を参照してください。 ディメンションコンポーネントの場合は、永続性を使用できます。 永続性とは、特定のディメンション値が、設定されたイベント以外の指標にも属性を設定できる機能です。 配分と有効期限の組み合わせを使用します。 詳しくは、[ 永続性コンポーネント設定 ](/help/data-views/component-settings/persistence.md) を参照してください
+はい。アトリビューションモデルは、データビューの指標コンポーネントのコンポーネント設定の一部としても使用できます。 詳しくは、[&#x200B; アトリビューションコンポーネントの設定 &#x200B;](/help/data-views/component-settings/attribution.md) を参照してください。 ディメンションコンポーネントの場合は、永続性を使用できます。 永続性とは、特定のディメンション値が、設定されたイベント以外の指標にも属性を設定できる機能です。 配分と有効期限の組み合わせを使用します。 詳しくは、[&#x200B; 永続性コンポーネント設定 &#x200B;](/help/data-views/component-settings/persistence.md) を参照してください
 
 +++
 

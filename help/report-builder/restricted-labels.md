@@ -34,14 +34,14 @@ Customer Journey Analyticsでは、次の 2 つのAdobeで定義されるポリ�
 
 これらのポリシーの対象となるコンポーネントはグレー表示され、「![InfoOutline](/help/assets/icons/InfoOutline.svg)」アイコンが表示されます。 情報アイコンにポインタを合わせると、次の内容を示すメモが表示されます。**[!UICONTROL このデータの使用を禁止するポリシーがこのフィールドに適用されました]**。
 
-詳しくは、[ ラベルとポリシー ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
+詳しくは、[&#x200B; ラベルとポリシー &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
 
 
-![ データの使用禁止を示すポリシーノート ](assets/restricted-label.png){zoomable="yes"}
+![&#x200B; データの使用禁止を示すポリシーノート &#x200B;](assets/restricted-label.png){zoomable="yes"}
 
 
 ## 制限付きデータを含むレポートの更新
 
 ユーザーが後で制限されるデータ要素を含む Report Builder レポートを作成した場合、レポートを更新すると、エラーメッセージが表示されます。
 
-![ データ要素が後で制限された後に表示されるエラーメッセージ。](assets/error-restricted-data.png){width="100%" zoomable="yes"}
+![&#x200B; データ要素が後で制限された後に表示されるエラーメッセージ。](assets/error-restricted-data.png){width="100%" zoomable="yes"}

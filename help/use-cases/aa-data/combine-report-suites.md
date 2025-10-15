@@ -13,9 +13,9 @@ ht-degree: 55%
 
 # レポートスイートを様々なスキーマと組み合わせる
 
-[Analytics ソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe Experience Platform アプリケーション（Real-time Customer Data Platform やCustomer Journey Analytics（Customer Journey Analytics）など）で使用するために、Adobe AnalyticsからAdobe Experience Platformにレポートスイートデータを取り込みます。 Adobe Experience Platformに取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローはAdobe Experience Platform データレイク内のデータセットとして取得されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
+[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja) は、Adobe Experience Platform アプリケーション（Real-time Customer Data Platform やCustomer Journey Analytics（Customer Journey Analytics）など）で使用するために、Adobe AnalyticsからAdobe Experience Platformにレポートスイートデータを取り込みます。 Adobe Experience Platformに取り込まれる各レポートスイートは、個々のソース接続データフローとして設定され、各データフローはAdobe Experience Platform データレイク内のデータセットとして取得されます。 Analytics ソースコネクタは、レポートスイートごとに 1 つのデータセットを作成します。
 
-Customer Journey Analyticsのお客様は [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、Adobe Experience Platform データレイクからCustomer Journey Analytics Analysis Workspaceにデータセットを統合します。 ただし、接続内でレポートスイートを組み合わせる場合、レポートスイート間のスキーマの違いは、Adobe Experience Platform[ データ準備 ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能を使用して解決される必要があります。 その目的は、Adobe Analytics変数（prop や eVar など）がCustomer Journey Analytics内で一貫した意味を持つようにすることです。
+Customer Journey Analyticsのお客様は [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) を使用して、Adobe Experience Platform データレイクからCustomer Journey Analytics Analysis Workspaceにデータセットを統合します。 ただし、接続内でレポートスイートを組み合わせる場合、レポートスイート間のスキーマの違いは、Adobe Experience Platform[&#x200B; データ準備 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja) 機能を使用して解決される必要があります。 その目的は、Adobe Analytics変数（prop や eVar など）がCustomer Journey Analytics内で一貫した意味を持つようにすることです。
 
 ## レポートスイート間のスキーマの違いが問題
 
@@ -32,8 +32,8 @@ Customer Journey Analyticsのお客様は [connections](https://experienceleague
 
 - **レポートスイート A** を（データセット A **としてAdobe Experience Platform データレイクに取り込む Analytics ソース接続を作成** データ準備を使用しない）。
 - **レポートスイート B** を（データセット B **としてAdobe Experience Platform データレイクに取り込む Analytics ソース接続を作成（データ準備を使用しない**。
-- データセット A とデータセット B を組み合わせた [ すべてのレポートスイート ](/help/connections/create-connection.md) と呼ばれる **0}Customer Journey Analytics接続を作成。**
-- すべてのレポートスイート接続に基づいた [ グローバル表示 ](/help/data-views/create-dataview.md) と呼ばれる **0}Customer Journey Analytics データビューを作成します。**
+- データセット A とデータセット B を組み合わせた [&#x200B; すべてのレポートスイート &#x200B;](/help/connections/create-connection.md) と呼ばれる **0&rbrace;Customer Journey Analytics接続を作成。**
+- すべてのレポートスイート接続に基づいた [&#x200B; グローバル表示 &#x200B;](/help/data-views/create-dataview.md) と呼ばれる **0&rbrace;Customer Journey Analytics データビューを作成します。**
 
 データセット A とデータセット B の間のスキーマの違いを解決するためにデータ準備を使用しない場合、グローバル表示データビューの eVar には、次の値が混在することになります。
 
@@ -52,7 +52,7 @@ Customer Journey Analyticsのお客様は [connections](https://experienceleague
 
 Experience Platformのデータ準備機能は、Analytics ソースコネクタと統合されており、前述のシナリオで説明したスキーマの違いを解決するのに使用できます。 これにより、Customer Journey Analytics データビューで一貫した意味を持つ eVar になります。 （次に使用する命名規則は、必要に応じてカスタマイズできます。）
 
-1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、Adobe Experience Platformで [ 新しいスキーマを作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja) します（この例では、**Unified Schema** と呼ぶことにします）。 スキーマに次を追加します。
+1. レポートスイート A とレポートスイート B のソース接続データフローを作成する前に、Adobe Experience Platformで [&#x200B; 新しいスキーマを作成 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja) します（この例では、**Unified Schema** と呼ぶことにします）。 スキーマに次を追加します。
 
    | 「統合スキーマ」 |
    | --- |

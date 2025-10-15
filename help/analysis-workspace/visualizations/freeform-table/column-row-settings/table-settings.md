@@ -20,7 +20,7 @@ ht-degree: 86%
 
 >[!ENDSHADEBOX]
 
-行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
+行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
 
 ![指標の設定アイコンをハイライト表示するフリーフォームテーブル](assets/row-settings.png)
 
@@ -36,7 +36,7 @@ ht-degree: 86%
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   ![ 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
+   ![&#x200B; 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
 1. ドロップダウンメニューから、テーブルに表示する行数を選択します。
 
@@ -90,4 +90,4 @@ ht-degree: 86%
 
 ## 行の高さの変更
 
-プロジェクトの [ 表示密度 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。.
+プロジェクトの [&#x200B; 表示密度 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。.
