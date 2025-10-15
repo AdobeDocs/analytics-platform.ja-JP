@@ -98,7 +98,7 @@ ht-degree: 24%
 
   >[!NOTE]
   >
-  >ワークフローでは、スキーマ内のすべてのフィールドを文字列タイプに定義します。 このタイプは後で変更できません。 アドホックスキーマの定義をより柔軟に行う必要がある場合は、[API を使用してアドホックスキーマを作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) を検討してから、[&#x200B; スキーマからデータセットを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用します。
+  >ワークフローでは、スキーマ内のすべてのフィールドを文字列タイプに定義します。 このタイプは後で変更できません。 アドホックスキーマの定義をより柔軟に行う必要がある場合は、[API を使用してアドホックスキーマを作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc) を検討してから、[&#x200B; スキーマからデータセットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用します。
   > 
 
 
@@ -155,7 +155,7 @@ Customer Journey AnalyticsでExperience Platform データセットを使用す�
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **[!UICONTROL CSV からデータセットを作成]** ワークフローを使用できません。 このワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。<br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[&#x200B; スキーマからデータセットを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
+>時系列データにアドホックデータセットとスキーマを使用しないことを一般的に推奨する上で、時系列データには **[!UICONTROL CSV からデータセットを作成]** ワークフローを使用できません。 このワークフローでは、すべてのフィールドを文字列型に定義しますが、後で変更することはできません。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプのフィールドが少なくとも 1 つ定義されている必要があります。<br/> アドホック時系列データを使用する必要がある場合は、[API を使用してアドホックスキーマを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) してから、[&#x200B; スキーマからデータセットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
 
 
 [&#x200B; 接続 &#x200B;](/help/connections/overview.md) を作成したら、[&#x200B; データセットの選択と組み合わせ &#x200B;](/help/connections/combined-dataset.md)、[&#x200B; 接続のデータセットのステータスとデータ取り込みのステータスの確認 &#x200B;](/help/connections/manage-connections.md) など、様々な管理タスクを実行できます。

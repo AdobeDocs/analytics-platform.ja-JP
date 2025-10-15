@@ -30,12 +30,12 @@ Experience Platformのデータレイクからクラウドストレージの宛�
 
 次のクラウドストレージの宛先がサポートされています。
 
-- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
-- [Data Landing Zone](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google Cloud Storage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
-- [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
-- [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
-- [SFTP](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/sftp#changelog)
+- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
+- [Data Landing Zone](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
+- [Google Cloud Storage](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
+- [Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
+- [SFTP](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/sftp#changelog)
 
 
 ### EXPERIENCE PLATFORM UI
@@ -44,7 +44,7 @@ Experience Platform UI を使用して、データセットの書き出しをス
 
 #### 宛先を選択
 
-データセットの書き出し先となるクラウドストレージの宛先を決定したら、[&#x200B; 宛先を選択 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) します。 優先クラウドストレージの宛先をまだ設定していない場合は、[&#x200B; 新しい宛先接続を作成する &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination) 必要があります。
+データセットの書き出し先となるクラウドストレージの宛先を決定したら、[&#x200B; 宛先を選択 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) します。 優先クラウドストレージの宛先をまだ設定していない場合は、[&#x200B; 新しい宛先接続を作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/connect-destination) 必要があります。
 
 宛先の設定の一環として、次の項目を定義できます。
 
@@ -55,51 +55,51 @@ Experience Platform UI を使用して、データセットの書き出しをス
 
 #### データセットを選択
 
-宛先を選択したら、次の **[!UICONTROL データセットを選択]** 手順で、データセットのリストからデータセットを選択する必要があります。 複数のスケジュール済みクエリを作成し、データセットを同じクラウドストレージ宛先に送信する場合、対応するデータセットを選択できます。 詳しくは [&#x200B; データセットの選択 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) を参照してください。
+宛先を選択したら、次の **[!UICONTROL データセットを選択]** 手順で、データセットのリストからデータセットを選択する必要があります。 複数のスケジュール済みクエリを作成し、データセットを同じクラウドストレージ宛先に送信する場合、対応するデータセットを選択できます。 詳しくは [&#x200B; データセットの選択 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) を参照してください。
 
 #### データセット書き出しのスケジュール設定
 
-最後に、**[!UICONTROL スケジュール設定]** 手順の一部としてデータセットの書き出しをスケジュールします。 その手順では、スケジュールと、データセットの書き出しを増分で行うかどうかを定義できます。 詳しくは [&#x200B; データセットの書き出しをスケジュール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) を参照してください。
+最後に、**[!UICONTROL スケジュール設定]** 手順の一部としてデータセットの書き出しをスケジュールします。 その手順では、スケジュールと、データセットの書き出しを増分で行うかどうかを定義できます。 詳しくは [&#x200B; データセットの書き出しをスケジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) を参照してください。
 
 
 #### 最終手順
 
-[&#x200B; 確認 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) 選択し、正しければ、クラウドストレージの宛先へのデータセットの書き出しを開始します。
+[&#x200B; 確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#review) 選択し、正しければ、クラウドストレージの宛先へのデータセットの書き出しを開始します。
 
-まず、データの書き出しが正常に行われたことを [&#x200B; 検証 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) する必要があります。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
+まず、データの書き出しが正常に行われたことを [&#x200B; 検証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#verify) する必要があります。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
 
 ### フローサービス API
 
-または、API を使用してデータセットの書き出しを書き出し、スケジュールすることもできます。 含まれる手順は、[Flow Service API を使用したデータセットの書き出し &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets) に記載されています。
+または、API を使用してデータセットの書き出しを書き出し、スケジュールすることもできます。 含まれる手順は、[Flow Service API を使用したデータセットの書き出し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets) に記載されています。
 
 #### 基本を学ぶ
 
-データセットを書き出すには、[&#x200B; 必要な権限 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions) があることを確認します。 また、データセットの送信先がデータセットの書き出しをサポートしていることを確認します。 次に、API 呼び出しで使用する [&#x200B; 必須ヘッダーとオプションヘッダーの値を収集する &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) 必要があります。 また、データセットを書き出す [&#x200B; 宛先の接続仕様 ID とフロー仕様 ID](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) を識別する必要もあります。
+データセットを書き出すには、[&#x200B; 必要な権限 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#permissions) があることを確認します。 また、データセットの送信先がデータセットの書き出しをサポートしていることを確認します。 次に、API 呼び出しで使用する [&#x200B; 必須ヘッダーとオプションヘッダーの値を収集する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) 必要があります。 また、データセットを書き出す [&#x200B; 宛先の接続仕様 ID とフロー仕様 ID](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) を識別する必要もあります。
 
 #### 適格なデータセットの取得
 
-書き出し用に [&#x200B; 適格なデータセットのリストを取得 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) し、データセットが [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API を使用してそのリストに含まれているかどうかを確認できます。
+書き出し用に [&#x200B; 適格なデータセットのリストを取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) し、データセットが [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API を使用してそのリストに含まれているかどうかを確認できます。
 
 
 #### ソース接続を作成
 
-次に、クラウドストレージの宛先に書き出す、一意の ID を使用したデータセットの [&#x200B; ソース接続を作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection) する必要があります。 [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API を使用します。
+次に、クラウドストレージの宛先に書き出す、一意の ID を使用したデータセットの [&#x200B; ソース接続を作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-source-connection) する必要があります。 [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API を使用します。
 
 #### 宛先に対する認証（ベース接続の作成）
 
-[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection) API を使用して認証を行い、クラウドストレージの宛先に資格情報を安全に保存するには、[`POST /targetConection` ベース接続を作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。
+[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-base-connection) API を使用して認証を行い、クラウドストレージの宛先に資格情報を安全に保存するには、[`POST /targetConection` ベース接続を作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。
 
 
 #### エクスポートパラメーターの指定
 
-次に、[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) API を使用してデータセットの [`POST /targetConection` 書き出しパラメーターを保存する追加のターゲット接続の作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) を行う必要があります。 これらの書き出しパラメーターには、場所、ファイル形式、圧縮などが含まれます。
+次に、[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-target-connection) API を使用してデータセットの [`POST /targetConection` 書き出しパラメーターを保存する追加のターゲット接続の作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) を行う必要があります。 これらの書き出しパラメーターには、場所、ファイル形式、圧縮などが含まれます。
 
 #### データフローの設定
 
-最後に、[&#x200B; データフローの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) を行い、[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API を使用してデータセットがクラウドストレージの宛先に書き出されるようにします。 この手順では、`scheduleParams` パラメーターを使用して、書き出しのスケジュールを定義できます。
+最後に、[&#x200B; データフローの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-dataflow) を行い、[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API を使用してデータセットがクラウドストレージの宛先に書き出されるようにします。 この手順では、`scheduleParams` パラメーターを使用して、書き出しのスケジュールを定義できます。
 
 #### データフローの検証
 
-[&#x200B; データフローの正常な実行を確認 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) するには、[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API を使用して、データフロー ID をクエリパラメーターとして指定します。 このデータフロー ID は、データフローを設定したときに返される識別子です。
+[&#x200B; データフローの正常な実行を確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) するには、[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API を使用して、データフロー ID をクエリパラメーターとして指定します。 このデータフロー ID は、データフローを設定したときに返される識別子です。
 
-[&#x200B; 検証 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) 成功したデータ書き出し。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
+[&#x200B; 検証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#verify) 成功したデータ書き出し。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。

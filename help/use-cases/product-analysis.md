@@ -99,8 +99,8 @@ Experience Cloud内の次の機能を使用すると、インサイトに基づ�
 * [&#x200B; オーディエンスを作成して公開 &#x200B;](/help/components/audiences/publish.md)&#x200B;Customer Journey Analyticsからアクティブ化
 * Experience Cloud製品を通じてオーディエンスをアクティブ化：
    * AJOおよびAdobe Targetで [&#x200B; 実験を実行 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) し、[&#x200B; 実験パネルを使用してCustomer Journey Analyticsのバリエーションの影響を測定 &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)
-   * AJOのユーザーに [&#x200B; アプリ内エンゲージメントの配信 &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
-* Adobe Real-time CDP を使用した、外部宛先への [&#x200B; オーディエンスのアクティブ化 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
+   * AJOのユーザーに [&#x200B; アプリ内エンゲージメントの配信 &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app) を提供する
+* Adobe Real-time CDP を使用した、外部宛先への [&#x200B; オーディエンスのアクティブ化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)&#x200B;
 
 ## 組織にインサイトを共有&#x200B;
 

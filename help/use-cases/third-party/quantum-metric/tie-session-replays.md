@@ -20,7 +20,7 @@ Quantum Metric セッションの再生をCJAのデータとリンクさせる�
 
 以下の手順では、Adobe Experience Platform Data Collection でタグを使用していることを前提としています。 組織でタグを使用しない場合は、これらのデータ収集方法を手動の web SDK実装に適応させることができます。
 
-詳しくは、[Quantum Metric タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
+詳しくは、[Quantum Metric タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric) のドキュメントを参照してください。
 
 ## 手順 1:Quantum Metric セッション ID に対応するスキーマフィールドの作成
 

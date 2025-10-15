@@ -50,7 +50,7 @@ Adobe Experience Platform では、複数のソースからのデータを統合
 
 ## Google Analytics データを取り込んで Customer Journey Analytics で分析する
 
-[Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html)について、このチュートリアルをご確認ください。
+[Customer Journey Analyticsを使用して Google Analytics データを解析する方法](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=ja)について、このチュートリアルをご確認ください。
 
 ## Bulk Data Insertion API を使用してデータを Analytics に取り込んでから、Experience Platformで Analytics ソースコネクタを介して取り込む
 
