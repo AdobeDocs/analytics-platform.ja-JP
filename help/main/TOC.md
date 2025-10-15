@@ -514,7 +514,7 @@ ht-degree: 99%
    + [ラボユーザーガイド](../labs/labs.md)
 
 + トラブルシューティング {#troubleshooting}
-   + [Source コネクタデータの比較](../troubleshooting/compare.md)
+   + [ソースコネクタデータの比較](../troubleshooting/compare.md)
    + [指標とオーディエンスの一貫性](../troubleshooting/consistency-rcdp-cja.md)
    + [権限の不足](../troubleshooting/lack-of-permissions.md)
 
