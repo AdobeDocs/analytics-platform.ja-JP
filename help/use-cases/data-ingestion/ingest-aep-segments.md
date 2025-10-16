@@ -1,94 +1,484 @@
 ---
-title: Adobe Experience Platform オーディエンスの Customer Journey Analytics への取り込み
-description: Adobe Experience Platform オーディエンスをCustomer Journey Analyticsに取り込んで詳細に分析する方法を説明します。
+title: Experience Platform オーディエンスの取り込みと使用
+description: Experience Platform オーディエンスをCustomer Journey Analyticsに取り込んで使用し、詳細に分析する方法を説明します。
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 5f17863e1f71917442b4813cc2599eb7ed286e5f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 51%
+source-wordcount: '1423'
+ht-degree: 7%
 
 ---
 
-# Adobe Experience Platform オーディエンスのAdobe Customer Journey Analyticsへの取り込み
+# Experience Platform オーディエンスの取り込みと使用
 
-このユースケースでは、Adobe Experience Platform（Adobe Experience Platform）オーディエンスをCustomer Journey Analyticsに暫定的に手動で取り込む方法を調査します。 これらのオーディエンスは、Adobe Experience Platform セグメントビルダー、Adobe Audience Managerまたはその他のツールで作成され、リアルタイム顧客プロファイル（RTCP）に保存されている可能性があります。 オーディエンスは、プロファイル ID のセットと、該当する属性やイベントなどで構成されており、Customer Journey Analytics Workspaceに取り込んで分析したいと考えています。
+このユースケースでは、Experience Platform オーディエンスをCustomer Journey Analyticsに取り込む暫定的なソリューションを調査します。 これらのオーディエンスは、Experience Platform セグメントビルダー、Adobe Audience Managerまたはその他のツールで作成され、リアルタイム顧客プロファイルに保存されている可能性があります。 オーディエンスは、プロファイル ID のセットと、該当する属性やイベントなどで構成されています。 そのオーディエンスデータをCustomer Journey Analyticsに取り込んで、さらに分析する必要があります。
 
 ## 前提条件
 
-* Adobe Experience Platform（Adobe Experience Platform）（特にリアルタイム顧客プロファイル）にアクセスします。
-* Adobe Experience Platform スキーマおよびデータセットを作成/管理するためのアクセス。
-* Adobe Experience Platform クエリサービス（および SQL 記述機能）または軽い変換を行うための別のツールにアクセスします。
-* Customer Journey Analytics にアクセスします。Customer Journey Analytics接続およびデータビューを作成/変更するには、Customer Journey Analytics製品管理者である必要があります。
-* Adobe API（Segmentation、オプションでその他）を使用する機能
+* [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home) （特にリアルタイム顧客プロファイル）にアクセスします。
+* Experience Platform[ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) および [ データセット ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview) を作成および管理するためのアクセス権。
+* [Experience Platform クエリサービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home) へのアクセス （および SQL の記述機能）。
+* データの一部の変換を実行できるツールへのアクセス。
+* Customer Journey Analytics にアクセスします。Customer Journey Analytics接続およびデータビューを作成および変更するには [0}Customer Journey Analytics製品管理者である必要があります。](/help/technotes/access-control.md)
+* [Experience Platform API （Catalog Service API および Segmentation Service API）の認証とアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication) 組織とサンドボックスの Developer Console でプロジェクトを作成し、API 呼び出しを正常に送信するために必要な情報があることを確認する必要があります。
 
-## 手順 1：リアルタイム顧客プロファイルでのオーディエンスの選択 {#audience}
+## 手順
 
-Adobe Experience Platform [リアルタイム顧客プロファイル](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)（RTCP）を使用すると、オンライン、オフライン、CRM、サードパーティなど、複数のチャネルのデータを組み合わせて、各顧客の全体像を確認できます。
+暫定的な解決策には、次の手順が含まれます。
 
-RTCP のオーディエンスは、既に様々なソースから獲得している可能性があります。1 つ以上のオーディエンスを選択して、Customer Journey Analyticsに取り込みます。
+1. [ オーディエンスを選択（Experience Platform UI） ](#select-audiences)。
+1. [ プロファイル対応データセットの作成（Experience Platform API） ](#create-a-profile-enabled-dataset)。
+1. [ オーディエンスの書き出し（Experience Platform API） ](#export-audiences)。
+1. [ 出力の変換（Experience Platform UI など） ](#transform-the-output)。
+1. [ スキーマとデータセットを作成します（Experience Platform UI） ](#create-a-schema-and-dataset)。
+1. [ 接続を追加または編集（Customer Journey Analytics UI） ](#add-or-edit-a-connection)。
+1. [ データビューを設定（Customer Journey Analytics UI） ](#configure-a-data-view)。
+1. [ レポートと分析（Customer Journey Analytics UI） ](#report-and-analyze)。
 
-## 手順 2：エクスポート用のプロファイル結合データセットの作成
 
-最終的にCustomer Journey Analyticsの接続に追加できるデータセットにオーディエンスをエクスポートするために、スキーマがプロファイル [&#x200B; 結合スキーマ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=ja#understanding-union-schemas) であるデータセットを作成する必要があります。
+### オーディエンスを選択
 
-結合スキーマは、同じクラスを共有し、プロファイルが有効になっている複数のスキーマで構成されています。結合スキーマを使用すると、同じクラスを共有するスキーマ内に含まれるすべてのフィールドの融合を確認できます。リアルタイム顧客プロファイルは、結合スキーマを使用して、各顧客の全体像を作成します。
+ソリューションは、まず、Customer Journey Analyticsで取り込むオーディエンスを特定します。
 
-## 手順 3： API 呼び出しを使用したプロファイル結合データセットへのオーディエンスのエクスポート {#export}
++++ オーディエンスの特定
 
-オーディエンスをCustomer Journey Analyticsに取り込む前に、Adobe Experience Platform データセットにエクスポートする必要があります。 これは、Segmentation API（特に[書き出しジョブ API エンドポイント](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=ja)）を使用してのみ実行できます。
+Experience Platform UI の場合：
 
-任意のオーディエンス ID を使用して書き出しジョブを作成し、その結果を手順 2 で作成したプロファイル結合Adobe Experience Platform データセットに取り込むことができます。 オーディエンスの様々な属性/イベントをエクスポートできますが、活用するCustomer Journey Analytics接続で使用されるユーザー ID フィールドに一致する特定のプロファイル ID フィールドのみをエクスポートする必要があります（後述の手順 5 を参照）。
+1. **[!UICONTROL Customer]**/![SegmentAudience](/help/assets/icons2/SegmentAudience.svg)**[!UICONTROL Audiences]** を選択します。
+1. **[!UICONTROL 参照]** を選択して、Customer Journey Analyticsで取り込んで使用するオーディエンスを検索します。 後で使用するために、各オーディエンスの **[!UICONTROL オーディエンス ID]** に注意してください。
 
-## 手順 4：エクスポート出力の編集
+   ![オーディエンス](assets/audiences.png)
 
-エクスポートジョブの結果は、Customer Journey Analyticsに取り込むために、別のプロファイルデータセットに変換する必要があります。  この変換は、[Adobe Experience Platform クエリサービス &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja) やその他の任意の変換ツールで行うことができます。 Customer Journey Analyticsでレポートを作成するために必要なのは、（Customer Journey Analyticsのユーザー ID に一致する）プロファイル ID と 1 つ以上のオーディエンス ID だけです。
++++
 
-ただし、標準的な書き出しジョブには、より多くのデータが含まれているので、この出力を編集して余分なデータを削除したり、いくつかのデータを移動させたりする必要があります。また、先にスキーマ／データセットを作成してから、変換したデータを追加する必要があります。
+### プロファイル対応データセットの作成
 
-次に、編集&#x200B;**前**&#x200B;の、プロファイル結合データセットのエクスポート出力の例を示します。
+コアベースの **[!UICONTROL XDM 個人プロファイル]** スキーマに基づいてデータセットを作成する必要があります。 Experience Platform UI でデータセットを作成する場合、そのコアベースの XDM 個人プロファイルをスキーマとして選択することはできません。 代わりに、[Catalog Service API を使用して、](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset) スキーマに基づいて `_xdm.context.profile__union` データセットを作成します。
 
-![未編集の出力](../assets/export-unedited.png)
++++ データセットリクエストを作成
 
-次のことに注意してください。
+#### リクエスト
 
-* オーディエンス ID は、`segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status` の下に含まれています。
-* ステータスは、「exited」ではなく、「realized」または「entered」である必要があります。
+```shell
+curl -X POST \
+  'https://platform.adobe.io/data/foundation/catalog/dataSets?requestDataSource=true' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'Content-Type: application/json' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+   "name": "{DATASET_NAME}",
+   "schemaRef": {
+      "id": "_xdm.context.profile__union",
+      "contentType": "application/vnd.adobe.xed+json;version=1"
+   },
+   "fileDescription": {
+      "persistet": true,
+      "containerFormat": "parquet",
+      "format": "parquet"
+   }
+}'
+```
 
-これは、Customer Journey Analyticsに送信できるプロファイルデータセットの形式です。
+次のとおりです。
 
-![編集された出力](../assets/export-edited.png)
+* `DATASET_NAME` は、データセットのわかりやすい名前です。 例：`Segment Export Job Dataset for CJA`。
 
-次に、存在する必要があるデータ要素を示します。
+#### 応答
 
-* `_aresprodvalidation` 文字列フィールド：組織 ID を示します。実際のものとは異なります。
-* `personID` 文字列フィールド：これは、人物を識別するための、プロファイルデータセットの標準 XDM スキーマフィールドです。エクスポートからのプロファイル ID を使用します。
-* `audienceMembershipId` 文字列フィールド：エクスポートからのオーディエンス ID。メモ：このフィールドには、（独自のスキーマから）好きな名前を付けることができます。
-* 次のように、オーディエンス（`audienceMembershipIdName`）にわかりやすい名前を追加します。
+```json
+["@/dataSets/{DATASET_ID}"]
+```
 
-  ![わかりやすいオーディエンス名](../assets/audience-name.png)
+次のとおりです。
 
-* 必要に応じて、他のオーディエンスメタデータを追加します。
+* `DATASET_ID` は、作成されたデータセットのデータセット識別子です。
 
-## 手順 5:Customer Journey Analyticsの既存の接続に対するこのプロファイルデータセットの追加
++++
 
-[新しい接続を作成](/help/connections/create-connection.md)できましたが、ほとんどのお客様は、既存の接続にプロファイルデータセットを追加したいはずです。オーディエンス ID は、Customer Journey Analyticsの既存のデータを「強化」します。
+### オーディエンスを書き出し
 
-## 手順 6：既存の（または新しく作成した）Customer Journey Analytics データビューの変更
+選択したオーディエンスを先ほど作成したデータセットに書き出します。 [Segmentation Service API を使用して、オーディエンスをデータセットに送信する書き出しジョブ ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create) を作成します。
 
-データビューに `audienceMembershipId`、`audienceMembershipIdName` および `personID` を追加します。
++++ ジョブリクエストを書き出し
 
-## 手順 7：ワークスペースでのレポート
+```shell
+curl -X POST https://platform.adobe.io/data/core/ups/export/jobs \
+ -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+ -H 'Content-Type: application/json' \
+ -H 'x-gw-ims-org-id: {ORG_ID}' \
+ -H 'x-api-key: {API_KEY}' \
+ -H 'x-sandbox-name: {SANDBOX_NAME}' \
+ -d '{
+    "fields": "{COMMA_SEPARATED_LIST_OF_FULLY_QUALIFIED_FIELD_NAMES}",
+    "filter": {
+        "segments": [
+            {
+                "segmentId": "{AUDIENCE_ID_1}",
+                "segmentNs": "ups",
+                "status": [
+                    "realized"
+                ],
+                "segmentId": "{AUDIENCE_ID_2}",
+                "segmentNs": "ups",
+                "status": [
+                    "realized"
+                ],
+                "segmentId": "{AUDIENCE_ID_3}",
+                "segmentNs": "ups",
+                "status": [
+                    "realized"
+                ]             
+             }
+        ]
+    },
+    "destination":{
+        "datasetId": "{DATASET_ID}",
+        "segmentPerBatch": false
+    },
+    "schema":{
+        "name": "_xdm.context.profile"
+    }
+}'
+```
 
-ワークスペースで、`audienceMembershipId`、`audienceMembershipIdName` および `personID` についてレポートできるようになりました。
+ここで、
 
-## 追加情報
+* `COMMA_SEPARATED_LIST_OF_FULLY_QUALIFIED_FIELD_NAMES` のようなもので `_demoemea.identification.core.ecid, _demoemea.identification.core.email, _demoemea.identification.core.phoneNumber, person.gender, person.name.firstName, person.name.lastName` ょう。 カスタマージャーニー分析で使用する少なくとも関連するフィールド（ユーザー ID （メール）など）を含めてください。
+* 書き出すオーディエンスのオーディエンス識別子は `AUDIENCE_ID_x` のとおりです。
+* `DATASET_ID` が作成したデータセットです。
 
-* このプロセスは、定期的に実行して、Customer Journey Analytics内でオーディエンスデータが常に更新されるようにする必要があります。
-* 1 つのCustomer Journey Analytics接続内で複数のオーディエンスを読み込むことができます。 これは、プロセスがさらに複雑になりますが、可能です。これを機能させるには、前述のプロセスに少し修正を加える必要があります。
-   1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
-   1. Customer Journey Analyticsは、プロファイルデータセットの配列/オブジェクト配列をサポートします。 [オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=ja) audienceMembershipId または audienceMembershipIdName の使用が最適なオプションです。
-   1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。メモ：現在、配列の値は 10 個までという制限があります。
-   1. Customer Journey Analytics Workspace内で、この新しいディメンション `audienceMembershipIds` についてレポートできるようになりました。
+
+### 応答
+
+```json
+{
+  "..."
+  "id": "{EXPORT_JOB_ID}",
+  "..."
+}
+```
+
+ここで、
+
+* `EXPORT_JOB_ID` は、エクスポートジョブの識別子です。
+
+
++++
+
+[Segmentation Service API を使用して、書き出しジョブのステータスを確認 ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get) します。
+
++++ 特定のエクスポートジョブリクエストの取得
+
+#### リクエスト
+
+```shell
+curl -X GET https://platform.adobe.io/data/core/ups/export/jobs/{EXPORT_JOB_ID} \
+ -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+ -H 'x-gw-ims-org-id: {ORG_ID}' \
+ -H 'x-api-key: {API_KEY}' \
+ -H 'x-sandbox-name: {SANDBOX_NAME}'
+```
+
+#### 応答
+
+```json
+{
+  "..."
+  "id": "{EXPORT_JOB_ID}",
+  "..."
+  "status": "SUCCEEDED",
+  "..."
+}
+```
+
++++
+
+書き出しジョブが成功したら、データセットに正常に取り込まれたバッチが含まれているかどうかを確認します。
+
++++ 取り込みステータスの確認
+
+Experience Platform UI の場合：
+
+1. **[!UICONTROL データ管理]**/![ データ ](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]** を選択します。
+1. 作成したデータセットを選択します（例：**[!UICONTROL CJAのセグメント書き出しジョブデータセット]**。
+
+   ![データセットアクティビティ](assets/dataset-activity.png)
+
+1. 取り込んだバッチを検証します。 データセットに失敗したバッチが含まれている場合は、**[!UICONTROL データ管理]**/![ 監視 ](/help/assets/icons2/Monitoring.svg)**[!UICONTROL 監視]** を使用して、理由を確認します。 例えば、スキーマに存在しないフィールド名を使用したとします。
+1. データセットの **[!UICONTROL テーブル名]** をコピーします。 例：**[!UICONTROL segment_export_job_dataset_for_cja]**。  その名前は、次の手順で使用します。
+
++++
+
+
+### 出力の変換
+
+データセットのデータがCustomer Journey Analyticsに対して正しい形式ではありません。 データを変換するには、Experience Platform クエリサービスを使用してデータを取得します。
+
++++ 書き出されたオーディエンスデータを取得する SQL
+
+Experience Platform クエリサービスに接続する PSQL クライアントを使用します。
+
+Experience Platform UI の場合：
+
+1. **[!UICONTROL データ管理]**/![ データ検索 ](/help/assets/icons2/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Credentials]** を選択します。
+
+資格情報を使用して、Customer Journey Analytics クエリサービスに接続するように PSQL クライアントを設定します。
+
+#### クエリ
+
+```sql
+SELECT ROW_NUMBER() OVER (ORDER BY key)::text as _id, personID, key as audienceMembershipId
+FROM (
+   SELECT {IDENTITY_TO_USE_AS_PERSON_ID} AS personID, explode(segmentMembership.ups)
+   FROM {DATASET_TABLE_NAME}
+)
+WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_ID_2' OR key = 'AUDIENCE_ID_3')
+```
+
+次のとおりです。
+
+* `IDENTITY_TO_USE_AS_PERSON_ID` は、書き出しジョブの一部として定義したフィールドの 1 つです。 例：`_demoemea.identification.core.email`。
+* エクスポートジョブの一部として定義したオーディエンスは `AUDIENCE_ID_x` のとおりです。 エクスポートジョブの仕様は行レベルのフィルターなので、これらのオーディエンスをもう一度指定する必要があります。 この行レベルのフィルターは、指定したセグメントのプロファイルと、各プロファイルのすべてのセグメントメンバーシップを返します。
+
+
+#### 結果
+
+JSON 形式でのクエリ結果は次のようになります。
+
+```json
+[
+   {
+      "_id": "1",
+      "personID": "{PERSON_ID_x}",
+      "audienceMembershipId": "{AUDIENCE_ID_x}"
+   },
+   {
+      "_id": "2",
+      "personID": "PERSON_ID_y",
+      "audienceMembershipId": "{AUDIENCE_ID_x}"
+   }
+
+]
+```
+
+次のとおりです。
+
+* 人物 ID として使用したい識別子の識別子の値を `PERSON_ID_x` します。 例えば、メールを使用する場合は `john.doe@gmail.com` です。
+* オーディエンス識別子は `AUDIENCE_ID_x` のとおりです。
+
++++
+
+この JSON データを変換して環境のテナント名を追加し、オーディエンスにわかりやすい名前を付ける必要があります。
+
++++ JSON の変換
+
+最終的な JSON は次のようになります。
+
+```json
+[
+   {
+      "_id": "1",
+      "personID": "{PERSON_ID_x}",
+      "{TENANT_NAME}": {
+         "audienceMembershipId": "{AUDIENCE_ID_x}",
+         "audienceMembershipName": "{AUDIENCE_FRIENDLY_NAME_x}"
+      }
+  },
+  {
+      "_id": "2",
+      "personID": "{PERSON_ID_y}",
+      "{TENANT_NAME}": {
+         "audienceMembershipId": "{AUDIENCE_ID_y}",
+         "audienceMembershipName": "{AUDIENCE_FRIENDLY_NAME_y}"
+      }
+    }
+  }
+
+]
+```
+
+次のとおりです。
+
+* `TENANT_NAME` はテナントの名前です。 例：`_demoemea`。
+* 人物 ID`PERSON_ID_x` して使用する識別子の識別子の値です。 例えば、メールを使用する場合は `john.doe@gmail.com` です。
+* オーディエンス識別子は `AUDIENCE_ID_x` のとおりです。
+* オーディエンス id には、わかりやすいオーディエンス名を `AUDIENCE_FRIENDLY_NAME_x` します。 例：`Luma - Blue+ Members`。
+
+お気に入りのツールを使用して、元の JSON をこの形式に変換します。
+
++++
+
+
+### スキーマとデータセットの作成
+
+変換された JSON を書き出されたオーディエンスデータとしてCustomer Journey Analyticsで使用するには、専用のスキーマを作成する必要があります。
+
++++ スキーマを作成
+
+スキーマを作成するには：
+
+Experience Platform UI の場合：
+
+1. **[!UICONTROL データ管理]**/![ スキーマ ](/help/assets/icons2/Schema.svg) **[!UICONTROL スキーマ]** を選択します。
+1. ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL Create schema]** を選択します。 ドロップダウンメニューから **[!UICONTROL 標準]** を選択します。
+1. **[!UICONTROL スキーマを作成]** ダイアログで **[!UICONTROL 手動]** を選択し、**[!UICONTROL 選択]** を使用して続行します。
+1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL クラスを選択]** 手順で、次の操作を行います。
+   1. **[!UICONTROL 個人プロファイル]** を選択します。
+   1. 「**[!UICONTROL 次へ]**」を選択します。
+1. **[!UICONTROL スキーマを作成]** ウィザードの **[!UICONTROL 名前とレビュー]** 手順で、次の操作を行います。
+   1. **[!UICONTROL スキーマ表示名]** を入力します。 例：`Audience Export for CJA Schema`。
+   1. （オプション）「**[!UICONTROL 説明]**」を入力します。
+   1. 「**[!UICONTROL 完了]**」を選択します。
+1. **[!UICONTROL audienceMembershipId]** および **[!UICONTROL audienceMembershipName]** という 2 つのフィールドを含むカスタムフィールドグループ（例えば、**[!UICONTROL Audience Membership]**）を含むようにスキーマを設定します。
+1. **[!UICONTROL personID]** フィールドが **[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]** であり、I****[!UICONTROL dentity 名前空間]****として [!UICONTROL  メール ] を持っていることを確認します。
+
+   ![ 書き出すセグメント ](assets/segment-for-export.png)
+
+1. **[!UICONTROL 適用]** すべての変更。 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
+
++++
+
+データセットを作成し、そのデータセットを使用して、変換後の JSON データを取り込みます。
+
++++ データセットの作成とデータの取り込み
+
+Experience Platform UI の場合：
+
+1. **[!UICONTROL データ管理]**/![ スキーマ ](/help/assets/icons2/Schema.svg) **[!UICONTROL データセット]** を選択します。
+1. ![AddCircle](/help/assets/icons/AddCircle.svg)**[!UICONTROL データセットを作成]** を選択します。
+1. 「**[!UICONTROL スキーマからデータセットを作成]**」をクリックします。
+1. **[!UICONTROL スキーマからデータセットを作成]** ウィザードの **[!UICONTROL スキーマを選択]** 手順で、次の操作を行います。
+   1. 作成したスキーマを選択します。 例：**[!UICONTROL CJA スキーマのオーディエンスの書き出し]**。
+   1. 「**[!UICONTROL 次へ]**」を選択します。
+1. **[!UICONTROL スキーマからデータセットを作成]** ウィザードの **[!UICONTROL データセットを設定]** 手順で、次の操作を行います。
+   1. データセットの **[!UICONTROL 名前]** を入力します。
+   1. （任意）データセットの **[!UICONTROL 説明]** を入力します。
+   1. 「**[!UICONTROL 完了]**」を選択します。
+1. **[!UICONTROL データセット]**/**[!UICONTROL _データセットの名前_]** で、変換後の JSON データファイルをドラッグし、**[!UICONTROL ファイルをドラッグ&amp;ドロップ]** にドロップします。 このアクションは、書き出された JSON データのデータセットへの取り込みを開始します。
+1. 取り込んだバッチを検証します。 データセットに失敗したバッチが含まれている場合は、**[!UICONTROL データ管理]**/![ 監視 ](/help/assets/icons2/Monitoring.svg)**[!UICONTROL 監視]** を使用して、理由を確認します。 例えば、スキーマに存在しないフィールド名を JSON 内で定義したとします。
+
+
++++
+
+### 接続の追加または編集
+
+Experience Platformからのオーディエンスデータを含む変換された JSON データが正常に取り込まれたら、Customer Journey Analyticsの新しい接続または既存の接続にデータセットを追加できます。
+
++++ 接続へのデータセットの追加
+
+Customer Journey Analytics UI で、次の操作を行います。
+
+1. **[!UICONTROL データ管理]**/**[!UICONTROL 接続]** を選択します。
+1. 新しい接続を作成/定義 **[!UICONTROL 接続設定]** および **[!UICONTROL データ設定]**。 または、既存の接続を選択し、![ 編集 ](/help/assets/icons/Edit.svg)**[!UICONTROL 接続を編集]** を使用して接続を編集します。
+1. ![DataAdd](/help/assets/icons/DataAdd.svg)**[!UICONTROL Add datasets]** を選択します。
+1. 作成し、変換後の JSON データを取り込んだデータセットを選択します。
+1. データセットを設定します。 例：
+
+   ![ 接続 – 書き出されたオーディエンスデータを含むデータセット ](assets/connection-add-dataset.png)
+
+1. **[!UICONTROL 保存]** 接続。
+
++++
+
+### データビューの設定
+
+作成または編集したばかりの接続のデータビューを設定します。
+
++++ オーディエンスコンポーネントの定義
+
+1. **[!UICONTROL データ管理]**/**[!UICONTROL データビュー]** を選択します。
+1. 既存のデータビューを編集するか、新しいデータビューを作成します。
+1. データビューの **[!UICONTROL コンポーネント]** タブで、**[!UICONTROL オーディエンスメンバーシップ ID]** と **[!UICONTROL オーディエンスメンバーシップ名]** がディメンションコンポーネントとして追加されていることを確認します。
+
+   ![データ表示コンポーネント](assets/dataview-components.png)
+
+1. 「**[!UICONTROL 保存して続行]**」を選択して、データビューを保存します。
+
++++
+
+### レポートと分析。
+
+最後に、Analysis Workspaceを使用して、オーディエンスメンバーシップコンポーネントでデータビューを使用する 1 つ以上のパネルでExperience Platform オーディエンスデータについてレポートします。
+
+
+<!--
+
+## Step 1: Select audiences in Real-time Customer Profile {#audience}
+
+Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
+
+You likely already have audiences in RTCP that may have come from various sources. Select one or more audiences to ingest into Customer Journey Analytics. For example, WKND Fly Platinum and Gold Fly Club Members.
+
+
+
+
+## Step 2: Create a Profile Union dataset for the export
+
+In order to export the audience to a dataset that you can ingest in Customer Journey Analytics as profiles, create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+
+Union schemas are composed of multiple schemas that share the same class and have been enabled for Profile. The union schema enables you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-time Customer Profile uses the union schema to create a holistic view of each individual customer.
+
+## Step 3: Export an audience to the Profile Union dataset via API call {#export}
+
+Before you can bring an audience into Customer Journey Analytics, you need to export it to an Adobe Experience Platform dataset. This can only be done using the Segmentation API, and specifically the [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html). 
+
+You can create an export job using the audience ID of your choice, and put the results in the Profile Union Adobe Experience Platform dataset you created in Step 2. Although you can export various attributes/events for the audience, you only need to export the specific profile ID field that matches the person ID field used in the Customer Journey Analytics connection you will be leveraging (see below in Step 5).
+
+## Step 4: Edit the export output 
+
+The results of the export job need to be transformed into a separate Profile dataset in order to be ingested into Customer Journey Analytics.  This transformation can be done with [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html), or another transformation tool of your choice. We only need the Profile ID (that will match the Person ID in Customer Journey Analytics) and one or more audience ID(s) to do the reporting in Customer Journey Analytics.
+
+The standard export job, however, contains more data and so we need to edit this output to remove extraneous data, as well as move some things around.  Also, you need to create a schema/dataset first before you add the transformed data to it.
+
+Here is an example of the export output in the Profile union dataset, **before** any editing:
+
+![Unedited output](../assets/export-unedited.png)
+
+Note the following:
+
+* The audience ID is contained under `segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status`.
+* The status has to be "realized", or "entered", but not "exited".
+
+This is the format of the Profile dataset that you can send into Customer Journey Analytics.
+
+![Edited output](../assets/export-edited.png)
+
+Here are the data elements that need to be present:
+
+* `_aresprodvalidation` string field: Refers to your Organization ID. Yours will be different.
+* `personID` string field: This is the standard XDM schema field on Profile datasets to identity the person. Use the Profile ID from the export.
+* `audienceMembershipId` string field: The audience ID from the export.  NOTE: This field can be named whatever you want (from your own schema).
+* Add a friendly name for the audience (`audienceMembershipIdName`), such as
+
+   ![Friendly audience name](../assets/audience-name.png)
+   
+* Add other audience metadata if you desire.
+
+## Step 5: Add this Profile dataset to an existing connection in Customer Journey Analytics
+
+You could [create a new connection](/help/connections/create-connection.md), but most customers will want to add the Profile dataset to an existing connection. The audience IDs "enrich" the existing data in Customer Journey Analytics.
+
+## Step 6: Modify existing (or create new) Customer Journey Analytics data view
+
+Add `audienceMembershipId`, `audienceMembershipIdName` and `personID` to the data view.
+
+## Step 7: Report in Workspace
+
+You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `personID` in Workspace.
+
+## Additional notes
+
+* You should  perform this process on a regular cadence, so that audience data is constantly refreshed within Customer Journey Analytics.
+* You can import multiple audiences within a single Customer Journey Analytics connection. This adds additional complexity to the process, but it is possible. For this to work, you need to make a few modifications to the above process:
+   1. Perform this process for each desired audience in your audience collection within RTCP.
+   1. Customer Journey Analytics supports arrays/object arrays in profile datasets. Using an [array of objects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) for the audienceMembershipId or audienceMembershipIdName is the best option. 
+   1. In your data view, create a new dimension using the Substring transformation on the `audienceMembershipId` field to convert the comma-separated values string to an array. NOTE: there is currently a limit of 10 values in the array.
+   1. You can now report on this new dimension `audienceMembershipIds` within Customer Journey Analytics Workspace.
+
+-->
