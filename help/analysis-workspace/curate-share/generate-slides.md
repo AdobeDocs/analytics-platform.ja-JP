@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Data storytelling: Workspace レポートからスライドプレゼンテーションを生成します {#generate-powerpoint}
 
-[ 必要な権限 ](#permission-requirements-to-generate-slides) を持つユーザーは、Analysis Workspace プロジェクトから.pptx プレゼンテーションを自動生成できます。 これらのスライドプレゼンテーションを作成する場合、Customer Journey Analyticsでは、主要なインサイトを特定して関係者に対応するスライドに変換することで、データからストーリーを自動的に作成します。
+[&#x200B; 必要な権限 &#x200B;](#permission-requirements-to-generate-slides) を持つユーザーは、Analysis Workspace プロジェクトから.pptx プレゼンテーションを自動生成できます。 これらのスライドプレゼンテーションを作成する場合、Customer Journey Analyticsでは、主要なインサイトを特定して関係者に対応するスライドに変換することで、データからストーリーを自動的に作成します。
 
 この自動生成されたデータストーリーにより、Workspace プロジェクトから結果を導き出すのに必要な時間、労力、専門知識が軽減されます。 アナリストは、データの調査により多くの注目を集めることができると同時に、Customer Journey Analyticsが経営陣の物語を構築および形式設定し、ビジネスへの影響を関係者に伝えることができます。
 
@@ -95,7 +95,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
    スライドを生成ダイアログが表示されます。
 
-   ![ スライドを生成ダイアログ ](assets/generate-slides.png)
+   ![&#x200B; スライドを生成ダイアログ &#x200B;](assets/generate-slides.png)
 
 1. 次の情報を指定します。
 
@@ -103,7 +103,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
    |---------|----------|
    | **[!UICONTROL 表題]** | プレゼンテーションのタイトルを指定します。 このタイトルは、プレゼンテーションのタイトル スライドに表示されます。 |
    | **[!UICONTROL 発表者名を含める]** | 発表者の名前を指定してください。 この名前は、プレゼンテーションのタイトル スライドの表紙の下に表示されます。 |
-   | **[!UICONTROL 含めるパネルとビジュアライゼーション]** | プレゼンテーションに含めるパネルとビジュアライゼーションを選択します。 最大 50 個のビジュアライゼーションを含めることができます。<p>ほとんどのパネルとビジュアライゼーションがサポートされています。 サポートされていないパネルとビジュアライゼーションについては、[ サポートされていないプロジェクト要素と機能 ](#unsupported-project-elements-and-features) を参照してください。</p> |
+   | **[!UICONTROL 含めるパネルとビジュアライゼーション]** | プレゼンテーションに含めるパネルとビジュアライゼーションを選択します。 最大 50 個のビジュアライゼーションを含めることができます。<p>ほとんどのパネルとビジュアライゼーションがサポートされています。 サポートされていないパネルとビジュアライゼーションについては、[&#x200B; サポートされていないプロジェクト要素と機能 &#x200B;](#unsupported-project-elements-and-features) を参照してください。</p> |
    | **[!UICONTROL パネルとビジュアライゼーションの説明]** | |
    | **[!UICONTROL 注釈]** | |
    | **[!UICONTROL コンポーネントを強調]** | プレゼンテーションで強調するビジュアライゼーションから最大 5 つの指標と 5 つのディメンションを選択します。<p>強調を適用しない場合、コンポーネントは次のようにプレゼンテーションに表示されます。<ul><li>**指標およびディメンション：** 斜体</li><li>**Dimension項目：** 引用符</li></ul></p><p>強調を適用すると、コンポーネントはプレゼンテーション内で次のように表示されます。</p><ul><li>**指標とディメンション：** 斜体と太字</li><li>**Dimension項目：** 対応するディメンションが強調されている場合の太字<p>また、ディメンション項目がグラフでハイライト表示されている場合は、ディメンション項目に色が適用されます。</p></li></ul> |
@@ -112,11 +112,11 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
    希望の色を選択するだけで、プレゼンテーションのカラーテーマを選択できます。
 
-   ![ デフォルトのテーマを使用してスライドを生成 ](assets/generate-slides-default-theme.png)
+   ![&#x200B; デフォルトのテーマを使用してスライドを生成 &#x200B;](assets/generate-slides-default-theme.png)
 
 1. （条件付き）スライドプレゼンテーションが企業のテーマと一致する必要がある場合は、**[!UICONTROL テンプレートをアップロード]** を選択します。 このオプションを使用するには、カスタムテンプレートをアップロードし、カスタムスタイルを適用する必要があります。
 
-   ![ カスタムテンプレートを使用したスライドの生成 ](assets/generate-slides-upload-template.png)
+   ![&#x200B; カスタムテンプレートを使用したスライドの生成 &#x200B;](assets/generate-slides-upload-template.png)
 
    カスタムテンプレートをアップロードするには、次のいずれかを行います。
 
@@ -142,7 +142,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
 1. 「**[!UICONTROL PPT をエクスポート]**」を選択します。
 
-1. （推奨）.ppt プレゼンテーションを確認および編集し、次のセクション [ 以前に生成したプレゼンテーションからスライドを編集する ](#edit-slides-from-a-previously-generated-presentation) で説明するように、必要な変更を行います。
+1. （推奨）.ppt プレゼンテーションを確認および編集し、次のセクション [&#x200B; 以前に生成したプレゼンテーションからスライドを編集する &#x200B;](#edit-slides-from-a-previously-generated-presentation) で説明するように、必要な変更を行います。
 
 ## 以前に生成したプレゼンテーションからスライドを編集する
 
@@ -161,7 +161,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
 組織がスライドを生成するライセンスを持つ製品プロファイル管理者は、必要に応じてアクセスを無効にすることができます。
 
-[!UICONTROL Adobe Admin Console] では、[!UICONTROL  レポートツール ] **[!UICONTROL データstorytelling]** 権限によってこの機能へのアクセスが決まります。 [ 製品プロファイル管理者 ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) がアクセスを無効にする場合は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL データstorytelling]** 権限によってこの機能へのアクセスが決まります。 [&#x200B; 製品プロファイル管理者 &#x200B;](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) がアクセスを無効にする場合は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
 1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
 1. [!UICONTROL Data storytelling] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
 1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
@@ -172,7 +172,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
 1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
-詳しくは、[ アクセス制御 ](/help/technotes/access-control.md#user-level-access) の [ ユーザーレベルアクセス ](/help/technotes/access-control.md#access-control) を参照してください。
+詳しくは、[&#x200B; アクセス制御 &#x200B;](/help/technotes/access-control.md#user-level-access) の [&#x200B; ユーザーレベルアクセス &#x200B;](/help/technotes/access-control.md#access-control) を参照してください。
 
 ## サポートされていないプロジェクト要素と機能 {#unsupported}
 
