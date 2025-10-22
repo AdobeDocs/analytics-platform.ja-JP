@@ -20,8 +20,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025年10月** | |
-| Experience Platform オーディエンスの取り込みと使用 | [Experience Platform オーディエンスの取り込みと使用 ](/help/use-cases/data-ingestion/ingest-aep-segments.md) 方法に関するユースケースの記事を更新しました。 |
-| Customer Journey Analyticsにアップグレードするための準備 | [ 組織を準備してCustomer Journey Analyticsにアップグレードする ](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 方法に関する情報を追加しました。 |
+| Experience Platform オーディエンスの取り込みと使用 | [Experience Platform オーディエンスの取り込みと使用 &#x200B;](/help/use-cases/data-ingestion/ingest-aep-segments.md) 方法に関するユースケースの記事を更新しました。 |
+| Customer Journey Analyticsにアップグレードするための準備 | [&#x200B; 組織を準備してCustomer Journey Analyticsにアップグレードする &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 方法に関する情報を追加しました。 |
 | LLM および AI 生成トラフィックのレポート | 派生フィールドを基礎として使用して、LLM と AI で生成されたトラフィックをレポートする方法に関する[ユースケース記事](/help/use-cases/ai-traffic.md)を追加しました。 この記事は、ブログ記事 [Adobe Customer Journey Analytics での LLM と AI で生成されたトラフィックの追跡と分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)に基づいています。 |
 | **2025年9月** | |
 | 1900 年より前の日付 | Customer Journey Analytics での 1900 年より前の日付の処理方法に関する[メモ](/help/connections/create-connection.md#datasets)を追加しました。 |
