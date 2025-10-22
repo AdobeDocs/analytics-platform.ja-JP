@@ -140,9 +140,9 @@ Customer Journey Analyticsがお客様にもたらす価値と、それがビジ
 
    * [Customer Journey Analytics チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [Customer Journey Analytics とは](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [Customer Journey Analytics とは](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Customer Journey Analyticsの概要 &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+   * [Customer Journey Analyticsの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
    * [Customer Journey Analytics の機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)
 
