@@ -185,7 +185,7 @@ Analysis Workspaceは、次のプロジェクト要素を考慮してデータ�
 
 組織がスライドを生成するライセンスを持つ製品プロファイル管理者は、必要に応じてアクセスを無効にすることができます。
 
-[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL データstorytelling]** 権限によってこの機能へのアクセスが決まります。 [&#x200B; 製品プロファイル管理者 &#x200B;](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) がアクセスを無効にする場合は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
+[!UICONTROL Adobe Admin Console] では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL データstorytelling]** 権限によってこの機能へのアクセスが決まります。 [&#x200B; 製品プロファイル管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) がアクセスを無効にする場合は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
 1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
 1. [!UICONTROL Data storytelling] へのアクセス権を付与する製品プロファイルのタイトルを選択します。
 1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
