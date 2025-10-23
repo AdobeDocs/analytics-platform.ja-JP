@@ -2,10 +2,10 @@
 title: 製品使用状況の概要
 description: 組織が Customer Journey Analytics をどのように使用しているかに関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
+source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 89%
 
 ---
 
@@ -57,6 +57,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL スケジュールに従ってファイルを送信]
    * [!UICONTROL 任意のユーザーとプロジェクトを共有]
    * [!UICONTROL Workspace ユーザーとプロジェクトを共有]
+   * [!UICONTROL  データビューを切り替え ]
 * **[!UICONTROL アトリビューションモデルの使用]**：コンポーネントが使用するアトリビューションモデルのタイプ。 ディメンション項目には以下が含まれます。
    * [!UICONTROL ラストタッチ]
    * [!UICONTROL ファーストタッチ]
@@ -69,7 +70,8 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL タイムディケイ]
    * [!UICONTROL カスタム]
    * [!UICONTROL アルゴリズム]
-* **[!UICONTROL コンポーネント名]**：追加、削除または変更されたコンポーネントの名前。
+* **[!UICONTROL コンポーネント ID]**：追加、削除または変更されたコンポーネントの ID。
+* **[!UICONTROL コンポーネント名]**：追加、削除または変更されたコンポーネントのわかりやすい名前。
 * **[!UICONTROL コンポーネントタイプ]**：追加、削除または変更されたコンポーネントのタイプ。 ディメンション項目には以下が含まれます。
    * [!UICONTROL ディメンション]
    * [!UICONTROL 指標]
@@ -78,8 +80,10 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL 日付範囲]
    * [!UICONTROL 注釈]
    * [!UICONTROL アラート]
+* **[!UICONTROL データビュー ID]**：データビューの ID。
+* **[!UICONTROL データビュー名]**：データビューのわかりやすい名前。
 * **[!UICONTROL ログインユーザー]**：アクションを実行したユーザー。
-* **[!UICONTROL 使用したパネル]**：コンポーネントが追加、削除または変更されたパネル。ディメンション項目には以下が含まれます。
+* **[!UICONTROL 使用されるパネル]**：追加、削除または変更されたパネル。 ディメンション項目には以下が含まれます。
    * [!UICONTROL アトリビューション]
    * [!UICONTROL 空のパネル]
    * [!UICONTROL 実験]
@@ -93,6 +97,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL ユーザーストリーム]
    * [!UICONTROL Retention]
    * [!UICONTROL 機能マトリックス]
+* **[!UICONTROL プロジェクト ID]**: プロジェクトの ID。
 * **[!UICONTROL プロジェクト名]**：プロジェクトのわかりやすい名前。
 * **[!UICONTROL プロジェクトタイプ]**：プロジェクトのタイプ。ディメンション項目には以下が含まれます。
    * `workspace-projects`
