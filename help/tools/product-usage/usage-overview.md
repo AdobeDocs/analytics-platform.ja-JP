@@ -57,7 +57,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL スケジュールに従ってファイルを送信]
    * [!UICONTROL 任意のユーザーとプロジェクトを共有]
    * [!UICONTROL Workspace ユーザーとプロジェクトを共有]
-   * [!UICONTROL  データビューを切り替え ]
+   * [!UICONTROL &#x200B; データビューを切り替え &#x200B;]
 * **[!UICONTROL アトリビューションモデルの使用]**：コンポーネントが使用するアトリビューションモデルのタイプ。 ディメンション項目には以下が含まれます。
    * [!UICONTROL ラストタッチ]
    * [!UICONTROL ファーストタッチ]
