@@ -5,9 +5,9 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '413'
 ht-degree: 93%
 
 ---
@@ -25,8 +25,6 @@ ht-degree: 93%
 
 
 アトリビューションを使用すると、ディメンション項目で成功イベントのクレジットを取得する方法をカスタマイズできます。
-
-![「アトリビューションを設定」オプションをハイライト表示するデータビューウィンドウ](../assets/attribution-settings.png)
 
 例：
 
@@ -59,7 +57,7 @@ ht-degree: 93%
 
    ![「アトリビューションを設定」オプションをハイライト表示するデータビューウィンドウ](../assets/attribution-settings.png)
 
-1. [!UICONTROL **アトリビューションを設定**] を選択してから、[&#x200B; アトリビューションモデル &#x200B;](#attribution-models)、[&#x200B; コンテナ &#x200B;](#container)、[&#x200B; ルックバック &#x200B;](#lookback-window) ウィンドウを選択します。
+1. [!UICONTROL **アトリビューションを設定**] を選択してから、[ アトリビューションモデル ](#attribution-models)、[ コンテナ ](#container)、[ ルックバック ](#lookback-window) ウィンドウを選択します。
 
 
 
