@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 13%
+source-wordcount: '1373'
+ht-degree: 11%
 
 ---
 
 # ユーザーベースの B2B プロジェクトの例
 
-この記事では、一般的なユーザーベースの B2B 設定のコンテキスト内で、人物データに関してCustomer Journey Analyticsで適切にレポートする使用例を説明します。 このような設定は、[Real-Time CDP B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) で容易に行えます。  このユースケースでは、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法を説明します。
+この記事では、一般的なユーザーベースの B2B 設定のコンテキスト内で、人物データに関してCustomer Journey Analyticsで適切にレポートする使用例を説明します。 このような設定は、[Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) で容易に行えます。  このユースケースでは、Customer Journey Analyticsでプロファイル（ユーザー）レベルの B2B データに基づいて設定、設定、レポートを行う方法を説明します。
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} アカウントベースのレポートのユースケースに関する別の節が、[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) のリリースで公開されました。
 
@@ -22,7 +22,7 @@ ht-degree: 13%
 
 接続を定義して、Experience Platformのすべての関連する B2B データセットを含めます。 接続に追加することを検討できるデータセット：
 
-| データセット | スキーマ | スキーマタイプ | 基本クラス | 説明 |
+| データセット （オプション） | スキーマ | スキーマタイプ | 基本クラス | 説明 |
 |---|---|---|---|---|
 | B2B アクティビティデータセット | B2B アクティビティスキーマ | イベント | XDM ExperienceEvent | ExperienceEvent は、発生した事実（特定の時点や個人の ID など）の記録したものです。 ExperienceEvents は、明示的（直接観察可能な人間のアクション）または暗黙的（直接人間のアクションなしで発生）に設定でき、集計や解釈なしで記録されます。エクスペリエンスイベントは、特定の期間内に発生する変更の観察や分析、およびトレンドを追跡するための複数の時間枠間の比較を可能にするので、タイムドメイン分析にとって重要です。 |
 | B2B 人物データセット | B2B 人物スキーマ | プロファイル | XDM 個人プロファイル | XDM 個人プロファイルは、識別された個人と部分的に識別された個人の両方の属性と興味の単一の表現を形成します。 識別されていないプロファイルには、ブラウザー cookie などの匿名の行動シグナルのみが含まれる場合がありますが、識別されたプロファイルには、名前、生年月日、場所、メールアドレスなどの詳細な個人情報が含まれる場合があります。 プロファイルが増えるにつれ、個人情報、識別情報、連絡先の詳細、個人のコミュニケーション設定の堅牢なリポジトリーになります。 |
@@ -43,37 +43,43 @@ ht-degree: 13%
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/relationship-b2b)
+B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび ](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [ を参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)
 
 
 B2B データのユーザーベースの検索をサポートする接続を適切に設定するには、概要について次の図を使用し、次の手順に従います。
 
-注釈付きの ![B2B スキーマ &#x200B;](assets/b2b-schemas-annotated.svg)
+注釈付きの ![B2B スキーマ ](assets/b2b-schemas-annotated.svg)
 
 1. 上記のテーブルから接続にデータセットを追加します。
 1. 接続に追加する各ルックアップデータセットについて、**[!UICONTROL データセットを編集]** ダイアログで **[!UICONTROL キー]** と **[!UICONTROL 一致するキー]** を使用して、イベントデータセットへの関係を明示的に定義する必要があります。
-1. ユーザーベースの B2B 検索で変換する各検索データセットについて、**[!UICONTROL データセットを変換]** を有効にして、ユーザーベースの検索でデータが確実に変換されるようにします。 詳しくは、[B2B ルックアップ用のデータセットの変換 &#x200B;](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
+1. ユーザーベースの B2B 検索で変換する各検索データセットについて、**[!UICONTROL データセットを変換]** を有効にして、ユーザーベースの検索でデータが確実に変換されるようにします。 詳しくは、[B2B ルックアップ用のデータセットの変換 ](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
 
-   ![&#x200B; キー – 一致するキー &#x200B;](assets/key-matchingkey.png)
+   ![ キー – 一致するキー ](assets/key-matchingkey.png)
 
-   次の表に、各データセットの [!UICONTROL &#x200B; ユーザー ID]、[!UICONTROL &#x200B; キー &#x200B;] および [!UICONTROL &#x200B; 一致するキー &#x200B;] 値の概要例を示します。
+   次の表に、各データセットの [!UICONTROL  ユーザー ID]、[!UICONTROL  キー ] および [!UICONTROL  一致するキー ] の例の値の概要の例を示します。
 
-   | データセット | ユーザー ID | キー | 一致するキー <br/> （イベントデータセット内） |
+   >[!IMPORTANT]
+   >
+   >次の表の **ユーザー ID**、**キー** および **一致するキー** の値は **値の例** であり、特定の環境で異なる場合があります。
+   >
+
+
+   | データセット （オプション） | ユーザー ID | キー <br/> | 一致するキー <br/> （イベントデータセット内） <br/> |
    |---|---|---|---| 
    | B2B アクティビティデータセット | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B 人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**&#x200B;❷ |
-   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❺ |
-   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❻ |
-   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❼ |
-   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❽ |
+   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**❸<br/> |
+   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
+   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
+   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
+   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❼ |
+   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
-データセットの設定を構成する方法について詳しくは、[&#x200B; データセットの追加と構成 &#x200B;](../../connections/create-connection.md) を参照してください。
+データセットの設定を構成する方法について詳しくは、[ データセットの追加と構成 ](../../connections/create-connection.md) を参照してください。
 
 
 ## データビュー
@@ -83,6 +89,11 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 例えば、次のコンポーネントをデータビューに追加して、B2B データに基づいてユーザーベースのレベルでレポートできるようにします。 コンポーネント名は、元のスキーマ名がわかりやすいように変更される場合があります。
 
 +++指標 
+
+>[!IMPORTANT]
+>
+>以下の表の指標とその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス ]）** は **例** です。 特定の状況に関連する B2B 指標（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
 |---|---|---|---|
@@ -97,6 +108,11 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 +++
 
 +++ディメンション
+
+>[!IMPORTANT]
+>
+>以下の表のディメンションとその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス ]）** は **例** です。 特定の状況に関連する B2B ディメンション（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
 |---|---|---|---|
@@ -121,5 +137,5 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 
 以下は、上記の接続とデータビューに依存するサンプルプロジェクトのスクリーンショットです。 ビジュアライゼーションの説明では、変換された B2B ルックアップデータに依存するフリーフォームテーブルビジュアライゼーションについて説明します。
 
-![&#x200B; サンプルプロジェクト &#x200B;](assets/sample-workspace-project.png)
+![ サンプルプロジェクト ](assets/sample-workspace-project.png)
 
