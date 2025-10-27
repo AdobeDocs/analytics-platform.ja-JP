@@ -52,7 +52,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights エージェントを使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights エージェントの使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
+* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
 
   権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
@@ -88,7 +88,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
    1. Data Insights Agentに対して有効にする 1 つ以上のデータビューを選択し、次に **[!UICONTROL Data Insights Agentに対して有効にする]** を選択します。
 
-      ![Data Insights Agentのデータビューの有効化 ](assets/data-view-enable-dia.png)
+      ![Data Insights Agentのデータビューの有効化 &#x200B;](assets/data-view-enable-dia.png)
 
   IMS 組織でData Insights Agentが有効になっているデータビューの数を表示するには：
 
@@ -96,7 +96,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
    1. **[!UICONTROL Data Insights Agent]** 列の上部にある情報アイコンを選択します。
 
-      ![Data Insights Agent情報アイコン ](assets/data-insights-agent-tooltip.png)
+      ![Data Insights Agent情報アイコン &#x200B;](assets/data-insights-agent-tooltip.png)
 
 ## AI アシスタントの Data Insights エージェントへのアクセス
 
@@ -154,7 +154,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -264,7 +264,7 @@ Data Insights エージェントが正しいコンポーネントを見つけて
 >[!MORELIKETHIS]
 >
 >[コンポーネント設定](/help/data-views/component-settings/overview.md)
->>[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)
->>[計算指標の承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[セグメントの共有](/help/components/segments/seg-share.md)
+>&#x200B;>[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[計算指標の承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[セグメントの共有](/help/components/segments/seg-share.md)
 >
