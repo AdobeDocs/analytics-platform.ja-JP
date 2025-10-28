@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ Content Analytics では、次の主要な用語を使用します。
 
 ## 仕組み
 
-Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。そして、そのコンテンツデータ収集と、行動データの（既存の）データ収集の実装を組み合わせます。
+Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、Server API）で収集するデータが必要です。 行動データは、Web SDKまたは Analytics Source Connector で収集できます。
 
 ![Content Analytics - 仕組み](assets/aca-overview.gif)
 
@@ -68,6 +68,6 @@ Content Analytics は、Experience Platform のイベントデータセットの
 >
 >[Content Analytics レポート](report/report.md)
 >>[Content Analytics の設定](config/configuration.md)
->>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
