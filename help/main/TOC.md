@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 9c584bb7c66e9e6b2ef2fc49802fb6839db1d70a
+source-git-commit: 3e87e9edd69229d5228de0f96d2525614172e725
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 99%
 
 ---
@@ -438,7 +438,7 @@ ht-degree: 99%
    + [概要](/help/stitching/overview.md)
    + [フィールドベースのステッチ](/help/stitching/fbs.md)
    + [グラフベースのステッチ](/help/stitching/gbs.md)
-   + [ステッチの使用](/help/stitching/use-stitching.md)
+   + [リクエストのステッチ](/help/stitching/use-stitching.md)
    + [ステッチの使用](/help/stitching/use-stitching-ui.md)
    + [ステッチされたデータセットの作成と管理](/help/stitching/stitching-ui.md)
    + [ステッチの検証](/help/stitching/validate.md)

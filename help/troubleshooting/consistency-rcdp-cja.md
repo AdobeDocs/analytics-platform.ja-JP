@@ -4,10 +4,10 @@ title: 指標とオーディエンスメンバーシップの一貫性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 100%
+source-wordcount: '623'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ Real-time CDP と Customer Journey Analytics の間でオーディエンスの�
 
 Real-time CDP と Customer Journey Analytics は、現在、同じユーザーの定義を共有していません。Real-time CDP は、[ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)内の情報に完全に依存して、結合されたプロファイルを作成します。
 
-Customer Journey Analytics は、[ステッチ](../stitching/overview.md)を使用するように設定できます。ステッチメカニズムとして[フィールドベースのステッチ](/help/stitching/fbs.md)を使用する場合は、データレイクのデータセットから識別子を指定して、そのデータセットのデータをステッチし、改善された結合プロファイルでデータセットを向上させます。ステッチメカニズムとして[グラフベースのステッチ](/help/stitching/gbs.md)を使用する場合は、同様のプロセスで、指定した ID 名前空間に基づいて ID グラフを使用します。
+Customer Journey Analytics は、[ステッチ](../stitching/overview.md)を使用するように設定できます。ステッチメカニズムとして [ フィールドベースのステッチ ](/help/stitching/fbs.md) を使用する場合は、改善された結合プロファイルでデータセットを昇格する目的で、データレイク内のデータセットの識別子を指定して、そのデータセット内のデータをステッチします。 ステッチメカニズムとして [ グラフベースのステッチ ](/help/stitching/gbs.md) を使用する場合、同様のプロセスで、指定した ID 名前空間に基づいて ID グラフを使用します。
 
 
 ## データセット設定の違い

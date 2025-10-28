@@ -1,27 +1,27 @@
 ---
 title: フィールドベースのステッチ
-description: フィールドベースのステッチの説明
+description: フィールドベースのステッチの概念と作業について説明します。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 00f6eeac173ad606885fce5567c82db8a9d107de
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 15%
+source-wordcount: '1776'
+ht-degree: 9%
 
 ---
 
 # フィールドベースのステッチ
 
-フィールドベースのステッチでは、イベントデータセットと、そのデータセットの永続 ID （cookie）および一時的な ID （ユーザー ID）を指定します。 フィールドベースのステッチでは、新しいステッチされたデータセットに新しいステッチ ID 列が作成され、その特定の永続 ID の一時的な ID を持つ行に基づいて、このステッチ ID 列が更新されます。 <br/>Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連する ID グラフへのアクセス権を持たない場合）、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合にも使用できます。
+フィールドベースのステッチでは、イベントデータセットと、そのデータセットの永続 ID （cookie）および人物 ID を指定します。 フィールドベースのステッチでは、イベントデータセットに新しいステッチ ID 列が追加され、その特定の永続 ID の人物 ID を持つ行に基づいて、このステッチ ID が更新されます。 <br/>Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連する ID グラフへのアクセス権を持たない場合）、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合にも使用できます。
 
 ![フィールドベースのステッチ](/help/stitching/assets/fbs.png)
 
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) フィールドグループの使用をサポートしています。
+フィールドベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -56,9 +56,9 @@ ht-degree: 15%
   </table>
 
 
-- 名前空間 `identityMap` 使用して、persistentID、transientID、またはその両方を定義します。
-   - `identityMap` 名前空間に perstentID または transientID の複数の値が見つかった場合は、最初の辞書編集可能な値が使用されます。
-   - persistentID と transientID の名前空間は、相互に排他的にする必要があります。
+- 名前空間 `identityMap` 使用して、永続 ID、人物 ID、またはその両方を定義します。
+   - 永続 ID またはユーザー ID の複数の値が `identityMap` 名前空間で見つかった場合、最初の辞書編集可能な値が使用されます。
+   - 永続 ID とユーザー ID の名前空間は、相互に排他的にする必要があります。
 
   以下の例では、使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
 
@@ -92,13 +92,13 @@ ht-degree: 15%
 
 ステッチでは、特定のデータセット内のデータに対して少なくとも 2 つのパスが作成されます。
 
-- **ライブステッチ**：各ヒット（イベント）が発生するとそのヒットをステッチしようとします。 データセットに「新規」である（認証されたことのない）デバイスからのヒットは、通常、このレベルでは結び付けられません。 既に認識済みのデバイスからのヒットは、直ちに結合されます。
+- **ライブステッチ**：各ヒット（イベント）が発生するとそのヒットをステッチしようとします。 デバイスからデータセット *新規* 認証されたことのない）ヒットは、通常、このレベルでは結び付けられません。 既に認識済みのデバイスからのヒットは、直ちに結合されます。
 
-- **ステッチを再生**:*再生* 学習した一意の識別子（一時的な ID）に基づくデータ。 このステージでは、以前は不明だったデバイス（永続 ID）からのヒットが（一時的な ID に）結合されます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
-   - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていない訪問者は、サイトを訪問した日に認証を行う必要があります。
-   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
-   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
-   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+- **ステッチを再生**:*再生* 一意の識別子（ユーザー ID）に基づいてデータを再生します。 このステージでは、以前は不明だったデバイス（永続的な ID）からのヒットが（人物 ID に）結び付けられます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
+   - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていないプロファイルは、サイトを訪問した日に認証を行う必要があります。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
 
 - **プライバシー**：プライバシー関連のリクエストを受信した場合、リクエストされた ID を削除する以外に、認証されていないイベントに対するその ID の関連付けを取り消す必要があります。
 
@@ -108,7 +108,7 @@ ht-degree: 15%
   > 
 
 
-ルックバックウィンドウを超えたデータは再生されません。未認証の訪問と認証された訪問を一緒に識別するには、訪問者は、所定のルックバックウィンドウ内で認証する必要があります。 デバイスが認識されると、その時点からライブステッチされます。
+ルックバックウィンドウを超えたデータは再生されません。未認証の訪問と認証済みの訪問を一緒に識別するには、プロファイルが、所定のルックバックウィンドウ内で認証される必要があります。 デバイスが認識されると、そのデバイスはその時点からライブステッチされます。
 
 ### 手順 1：ライブステッチ
 
@@ -120,19 +120,19 @@ ht-degree: 15%
 
 *データが収集された日の状態：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | 一時 ID （ログイン ID） | ステッチ ID （ライブステッチ後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） |
 |---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | `246`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`246`** |
-| 2 | 2023-05-12 12:02 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 3 | 2023-05-12 12:03 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 1 | 2023-05-12 12:01 | `246`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`246`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
+| 3 | 2023-05-12 12:03 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
-| 7 | 2023-05-12 12:07 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 8 | 2023-05-12 12:03 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
-| 9 | 2023-05-12 12:09 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
-| 10 | 2023-05-12 12:02 | `81911`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`81911`** |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 7 | 2023-05-12 12:07 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`81911`** |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** |
 | | | **3 デバイス** | | **4 人**:<br/>`246`、`Bob`、`3579`、`81911` |
 
@@ -154,19 +154,19 @@ ht-degree: 15%
 
 *再生後の同じデータ：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | 一時 ID （ログイン ID） | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
-| 2 | 2023-05-12 12:02 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 3 | 2023-05-12 12:03 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 2 | 2023-05-12 12:02 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 3 | 2023-05-12 12:03 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` |
-| 5 | 2023-05-12 12:05 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 5 | 2023-05-12 12:05 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` |
-| 7 | 2023-05-12 12:07 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
-| 8 | 2023-05-12 12:03 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
-| 9 | 2023-05-12 12:09 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
+| 7 | 2023-05-12 12:07 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
 | 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` |
 | | | **3 デバイス** | | **4 人**:<br/>`246`、`Bob`、`3579`、`81911` | **2 人**:<br/>`Bob`、`3579` |
 
@@ -182,23 +182,23 @@ ht-degree: 15%
 
 +++ 詳細
 
-次の表は上記と同じデータですが、Bob に対するプライバシーリクエストが処理後のデータに与える影響を示しています。 Bob が認証されたローは、他のローの一時的な ID として Bob を削除すると同時に、削除されます（2、3、5、7、11）。
+次の表は上記と同じデータですが、Bob に対するプライバシーリクエストが処理後のデータに与える影響を示しています。 Bob が認証された行は、他の行のユーザー ID として Bob が削除されると共に、削除されます（2、3、5、7、11）。
 
 *Bob に対するプライバシーリクエスト後の同じデータ：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | 一時 ID （ログイン ID） | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） | 一時 ID （ログイン ID） | ステッチ ID （プライバシーリクエスト後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） | ユーザー ID | ステッチ ID （プライバシーリクエスト後） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | ボブ ![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 3 | 2023-05-12 12:03 | `246` | ボブ ![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 2 | 2023-05-12 12:02 | `246` | ボブ ![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 3 | 2023-05-12 12:03 | `246` | ボブ ![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 2023-05-12 12:05 | `246` | ボブ ![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 5 | 2023-05-12 12:05 | `246` | ボブ ![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 7 | 2023-05-12 12:07 | `246` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 8 | 2023-05-12 12:03 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
-| 9 | 2023-05-12 12:09 | `3579`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 7 | 2023-05-12 12:07 | `246` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 8 | 2023-05-12 12:03 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 9 | 2023-05-12 12:09 | `3579`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
 | 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** | - | `81911` |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob`![&#x200B; 右矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob`![ 右矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | **3 デバイス** | | **4 人**:<br/>246、`Bob`、`3579`、`81911` | **2 人**:<br/>Bob, `3579` |  | **3 人**:<br/>`246`、`3579`、`81911` |
 
@@ -208,13 +208,13 @@ ht-degree: 15%
 
 次の前提条件は、特にフィールドベースのステッチに適用されます。
 
-- ステッチを適用するAdobe Experience Platformのイベントデータセットには、訪問者の識別に役立つ次の 2 つの列が必要です。
+- ステッチを適用するAdobe Experience Platformのイベントデータセットには、プロファイルの識別に役立つ次の 2 つの列が必要です。
 
    - **永続 ID**：各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
-   - **一時的な ID**：一部の行でのみ使用できる識別子。 例えば、訪問者の認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチ結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、一時的な ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
+   - **ユーザー ID**：一部の行でのみ使用できる識別子。 例えば、プロファイルが認証されると、ハッシュ化されたユーザー名またはメールアドレスなどです。 実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
@@ -222,12 +222,12 @@ ht-degree: 15%
 
 次の制限は、特にフィールドベースのステッチに適用されます。
 
-- 現在のキー変更機能は、1 つの手順（永続 ID から一時的な ID への変更）に制限されます。複数手順でのキーの変更（例えば、永続 ID を一時的な ID に、その後別の一時的な IDに変更）はサポートされません。
+- 現在のキー再設定機能は、1 つの手順（永続 ID からユーザー ID へ）に制限されています。 複数の手順による再入力（例えば、永続 ID を人物 ID に割り当ててから別の人物 ID に割り当てる）はサポートされていません。
 - デバイスが複数のユーザーによって共有されており、ユーザー間のトランジションの合計が 50,000 を超えている場合、Customer Journey Analyticsはそのデバイスに対するデータのステッチを停止します。
 - 組織で使用されているカスタム ID マップはサポートされていません。
-- ステッチでは大文字と小文字が区別されます。 Analytics ソースコネクタを通じて生成されたデータセットの場合、Adobeでは、一時的な ID フィールドに適用される VISTA ルールまたは処理ルールのレビューを行うことをお勧めします。 これにより、これらのルールによって同じ ID の新しいフォームが導入されることがなくなります。 例えば、VISTA ルールまたは処理ルールにより、イベントの一部のみで一時的な ID フィールドが小文字になっていないか確認する必要があります。
+- ステッチでは大文字と小文字が区別されます。 Analytics ソースコネクタを通じて生成されたデータセットの場合、Adobeでは、ユーザー ID フィールドに適用される VISTA ルールまたは処理ルールをレビューすることをお勧めします。 これにより、これらのルールによって同じ ID の新しいフォームが導入されることがなくなります。 例えば、VISTA ルールまたは処理ルールにより、イベントの一部のみでユーザー ID フィールドが小文字になっていないか確認する必要があります。
 - ステッチでフィールドの結合や連結は行われません。
-- 一時的な ID フィールドには、1 種類の ID （1 つの名前空間からの ID）を含める必要があります。 例えば、一時的な ID フィールドにログイン ID と電子メール ID の組み合わせを含めることはできません。
-- 同じ永続 ID の同じタイムスタンプで複数のイベントが発生しても、一時 ID フィールドに異なる値がある場合、ステッチはアルファベット順に基づいて ID を選択します。 したがって、永続 ID A に同じタイムスタンプの 2 つのイベントがあり、1 つのイベントが Bob を指定し、もう 1 つが Ann を指定している場合、ステッチは Ann を選択します。
-- 一時的な ID にプレースホルダー値（例：`Undefined`）が含まれるシナリオでは注意が必要です。 詳しくは、[FAQ](faq.md) を参照してください。
-- persistentID と transientID の両方に同じ名前空間を使用することはできません。名前空間は相互に排他的である必要があります。
+- 人物 ID フィールドには、1 つのタイプの ID （1 つの名前空間からの ID）を含める必要があります。 例えば、人物 ID フィールドにログイン ID と電子メール ID の組み合わせを含めることはできません。
+- 同じ永続 ID の同じタイムスタンプで複数のイベントが発生しても、人物 ID フィールドに異なる値がある場合、ステッチはアルファベット順に基づいて ID を選択します。 したがって、永続 ID A に同じタイムスタンプの 2 つのイベントがあり、1 つのイベントが Bob を指定し、もう 1 つが Ann を指定している場合、ステッチは Ann を選択します。
+- 人物 ID にプレースホルダー値（例：`Undefined`）が含まれるシナリオには注意が必要です。 詳しくは、[FAQ](faq.md) を参照してください。
+- 永続 ID とユーザー ID の両方で同じ名前空間を使用することはできません。名前空間は相互に排他的である必要があります。

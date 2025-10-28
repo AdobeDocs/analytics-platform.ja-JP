@@ -4,10 +4,10 @@ description: 処理ルールおよび VISTA を使用した場合とデータ準
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Analytics で収集され、保存されたデータは、処理ルール�
 
 * **Customer Journey Analytics や RTCDP で使用するための、レポートスイート間のスキーマの違いの解決**。例えば、レポートスイート A は `eVar1` を「検索語」として定義し、レポートスイート B では `eVar2` を「検索語」として定義します。データ準備を使用して、2 つの異なる eVar を、両方の eVar のデータを含む共通のフィールドにマッピングできます。これにより、[Customer Journey Analytics 接続](/help/connections/overview.md)や [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=ja) で使用するために、[レポートスイートを様々なスキーマと組み合わせる](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=ja)ことが可能になります。
 * **`eVars` フィールドを意味論的に意味のある名前にマッピングする**。Analytics ソースコネクタを使用して取得した `eVars` と `props` は、_\_ experience.analytics.customDimensions.eVars.eVar1_ などのフィールドにマッピングされます。データ準備は、`eVar` および `prop` フィールドを、ユーザーにとってより意味のある名前、または他のデータソースから取得する名前と一致する新しいフィールドにマッピングするために使用できます。（これは、[Customer Journey Analytics データビュー](/help/data-views/create-dataview.md)でフィールド名を変更するなど、他の手段でも実現できます）。
-* **データの一般的な変換**。データ準備には、何百ものマッピング関数があり、Analytics ソースコネクタを使用して取得するデータに基づいて新しいフィールドを計算するのに使用できます。区切られたフィールドを別のフィールドに分割できます。フィールドを組み合わせることができます。文字列を操作できます。正規表現に基づいてフィールドから情報を抽出できます。他にも、様々なことができます。
+* **データの一般的な変換**。データ準備には、何百ものマッピング関数があり、Analytics ソースコネクタを使用して取得するデータに基づいて新しいフィールドを計算するのに使用できます。区切られたフィールドを別のフィールドに分割できます。フィールドを組み合わせることができます。文字列を操作できます。正規表現に基づいてフィールドから情報を抽出できます。
 
 ## データ準備と分類 {#classifications}
 
