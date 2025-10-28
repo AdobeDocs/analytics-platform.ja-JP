@@ -50,7 +50,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 ステッチは、次の 2 つの方法で有効にできます。
 
 - [ステッチを有効にするリクエスト](/help/stitching/use-stitching.md)
-- [ 接続インターフェイスでのステッチの有効化 ](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
+- [&#x200B; 接続インターフェイスでのステッチの有効化 &#x200B;](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
 
 ## 制限事項
 
@@ -92,8 +92,8 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 >[!MORELIKETHIS]
 >
 >[フィールドベースのステッチ](fbs.md)
->>[グラフベースのステッチ ](gbs.md)
->>[ステッチの使用](use-stitching.md)
->>[ステッチの検証](validate.md)
->>[ステッチに関する FAQ](faq.md)
+>&#x200B;>[グラフベースのステッチ &#x200B;](gbs.md)
+>&#x200B;>[ステッチの使用](use-stitching.md)
+>&#x200B;>[ステッチの検証](validate.md)
+>&#x200B;>[ステッチに関する FAQ](faq.md)
 

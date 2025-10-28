@@ -22,7 +22,7 @@ Real-time CDP と Customer Journey Analytics の間でオーディエンスの�
 
 Real-time CDP と Customer Journey Analytics は、現在、同じユーザーの定義を共有していません。Real-time CDP は、[ID グラフ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ja)内の情報に完全に依存して、結合されたプロファイルを作成します。
 
-Customer Journey Analytics は、[ステッチ](../stitching/overview.md)を使用するように設定できます。ステッチメカニズムとして [ フィールドベースのステッチ ](/help/stitching/fbs.md) を使用する場合は、改善された結合プロファイルでデータセットを昇格する目的で、データレイク内のデータセットの識別子を指定して、そのデータセット内のデータをステッチします。 ステッチメカニズムとして [ グラフベースのステッチ ](/help/stitching/gbs.md) を使用する場合、同様のプロセスで、指定した ID 名前空間に基づいて ID グラフを使用します。
+Customer Journey Analytics は、[ステッチ](../stitching/overview.md)を使用するように設定できます。ステッチメカニズムとして [&#x200B; フィールドベースのステッチ &#x200B;](/help/stitching/fbs.md) を使用する場合は、改善された結合プロファイルでデータセットを昇格する目的で、データレイク内のデータセットの識別子を指定して、そのデータセット内のデータをステッチします。 ステッチメカニズムとして [&#x200B; グラフベースのステッチ &#x200B;](/help/stitching/gbs.md) を使用する場合、同様のプロセスで、指定した ID 名前空間に基づいて ID グラフを使用します。
 
 
 ## データセット設定の違い

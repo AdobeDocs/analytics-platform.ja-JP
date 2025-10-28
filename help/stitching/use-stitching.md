@@ -14,11 +14,11 @@ ht-degree: 8%
 
 # リクエストのステッチ
 
-組織がすべての [ 前提条件 ](overview.md#prerequisites) を満たし、一般的な [ 制限 ](overview.md#limitations) およびステッチ方法固有の（[ フィールドベース ](fbs.md#limitations) および [ グラフベース ](gbs.md#limitations)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストし使用を開始できます。
+組織がすべての [&#x200B; 前提条件 &#x200B;](overview.md#prerequisites) を満たし、一般的な [&#x200B; 制限 &#x200B;](overview.md#limitations) およびステッチ方法固有の（[&#x200B; フィールドベース &#x200B;](fbs.md#limitations) および [&#x200B; グラフベース &#x200B;](gbs.md#limitations)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストし使用を開始できます。
 
 ## オプションを選択
 
-使用できるCustomer Journey Analytics パッケージによって、ステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
+使用できるCustomer Journey Analytics パッケージによって、ステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 &#x200B;](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
 
 | | Customer Journey Analytics<br/> 選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
