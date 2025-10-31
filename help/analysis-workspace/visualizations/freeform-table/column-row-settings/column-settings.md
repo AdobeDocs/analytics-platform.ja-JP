@@ -4,10 +4,10 @@ title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: e8bb2df72cd223713bf63f0e85ea9c9e444cb3e5
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 89%
+source-wordcount: '910'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/328502/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -84,17 +84,15 @@ ht-degree: 89%
 
 
 
-[&#x200B; データビュー &#x200B;](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
+[ データビュー ](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
->コンポーネントのアトリビューションをデフォルト以外のアトリビューションモデルに更新する場合は、次の点を考慮してください。
+>指標でデフォルト以外のアトリビューションモデルを有効にする場合は、次の点を考慮してください。
 >
->* ***単一のディメンション*を持つレポートでコンポーネントを使用する場合：**&#x200B;デフォルト以外のアトリビューションモデルを使用する場合、コンポーネントのアトリビューションでは配分モデルが無視されます。
+>* ***単一のディメンション* でレポートで指標を使用する場合：** 指標のアトリビューションが、ディメンションに設定された配分モデルを上書きします。 例えば、「ファーストタッチ」アトリビューションを持つ指標は、「最新」のディメンション配分を上書きします。
 >
->* ***複数のディメンション*を持つレポートでコンポーネントを使用する場合：**&#x200B;デフォルト以外のアトリビューションモデルを使用する場合、コンポーネントのアトリビューションでは配分モデルが保持されます。
->
->   複数のディメンションは、[クラウドへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)時にのみ使用できます。
+>* ***複数のディメンション* を含むレポートで指標を使用する場合：** 指標のアトリビューションが、各ディメンションの配分モデルの上に適用されます。 例えば、「ファーストタッチ」アトリビューションを持つ指標は、「最新」のディメンション配分の上に適用されます。
 >
 > 配分について詳しくは、[コンポーネントの永続性設定](/help/data-views/component-settings/persistence.md)を参照してください。
 
@@ -106,7 +104,7 @@ Analysis Workspaceの指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
 
 
 ### アトリビューションモデル

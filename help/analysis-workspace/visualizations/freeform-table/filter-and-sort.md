@@ -4,20 +4,20 @@ title: フィルターと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 72%
+source-wordcount: '1133'
+ht-degree: 65%
 
 ---
 
-# フィルタリングと並べ替え
+# テーブルのフィルタリングと並べ替え
 
 Analysis Workspace のフリーフォームテーブルは、インタラクティブなデータ分析の基盤となります。そのため、何千行もの情報を含めることができます。データのフィルタリングと並べ替えは、最も重要な情報を効率的に表示するための重要な要素になる可能性があります。
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 
@@ -33,7 +33,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 * テーブルにフィルターを適用
 * オーディエンスセグメントの使用
 
-各方法が与える影響について詳しくは、[フリーフォームテーブルの合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を参照してください。
+各方法が与える影響 [ フリーフォームテーブルの合計 ](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) を必ずお読みください。
 
 ### テーブルから特定の行を除外
 
@@ -47,7 +47,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 
 1. 除外する行にポインタを合わせて、![閉じる](/help/assets/icons/Close.svg) を選択します。
 
-   ***Shift*** キーを押しながら行の範囲を選択するか、***Cmd*** キー（Mac の場合）または ***Ctrl*** キー（Windows の場合）を押したまま複数の行を選択します。
+   行の範囲を選択するには、***Shift*** キーを押したままにします。複数の行を選択するには、***Command*** キー（Macの場合）または ***Ctrl*** キー（Windows の場合）を押します。
 
 <!--### Right-click > Delete selected rows
 
@@ -59,7 +59,7 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### テーブルへのシンプルなフィルターまたは高度なフィルターの適用
+### テーブルに対するシンプルまたは高度なフィルタリングの適用
 
 フリーフォームテーブルでデータをフィルタリングするには：
 
@@ -75,7 +75,7 @@ Note: this option does not seem to work. AN-338422
 
    | オプション | 関数 |
    |---------|----------|
-   | [!UICONTROL **「値なし」を含める**] | このオプションを選択すると、選択したディメンションに値がないデータに対して、テーブルに&#x200B;**[!UICONTROL 値なし]**&#x200B;の行が表示されます。このオプションを選択解除すると、**[!UICONTROL 値なし]**&#x200B;の行が非表示になります。 |
+   | [!UICONTROL **「値なし」を含める**] | このオプションを選択すると、選択したディメンションに値がないデータに対して、テーブルに&#x200B;**[!UICONTROL 値なし]**&#x200B;の行が表示されます。このオプションの選択を解除すると、**[!UICONTROL 値なし]** 行が非表示になります。<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
    | [!UICONTROL **検索語句**] | フィルタリングに使用する単語または語句を指定します。 指定した単語または指定したとおりの語句を含んだ行のみが表示されます。 |
 
 
@@ -87,7 +87,7 @@ Note: this option does not seem to work. AN-338422
 
    | オプション | 関数 |
    |---------|----------|
-   | [!UICONTROL **「値なし」を含める**] | このオプションを選択すると、選択したディメンションに値がないデータに対して、テーブルに&#x200B;**[!UICONTROL 値なし]**&#x200B;の行が表示されます。このオプションを選択解除すると、**[!UICONTROL 値なし]**&#x200B;の行が非表示になります。 |
+   | [!UICONTROL **「値なし」を含める**] | このオプションを選択すると、選択したディメンションに値がないデータに対して、テーブルに&#x200B;**[!UICONTROL 値なし]**&#x200B;の行が表示されます。このオプションの選択を解除すると、**[!UICONTROL 値なし]** 行が非表示になります。 |
    | [!UICONTROL **次に一致**] | 指定したすべての条件を満たすデータのみを表示するには、「[!UICONTROL **すべての条件を満たしている場合**]」を選択します。通常、このオプションを使用すると、データの精度が上がります。<br/><br/>指定したいずれかのフィルター条件を満たすデータを表示するには、「[!UICONTROL **いずれかの条件を満たしている場合**]」を選択します。通常、このオプションを選択すると、データの精度が下がります。 |
    | [!UICONTROL **条件**] | 次のフィルターオプションから選択します。<br/><ul><li>[!UICONTROL **語句を含む**]（デフォルト）：指定したとおりの語句を含んだデータのみが、フィルタリング結果に含まれます。単語は、「[!UICONTROL **検索語句**]」フィールドで指定した順序になっている必要があります。</li><li>[!UICONTROL **いずれかの用語を含む**]：指定した語句の 1 つ以上の単語を含んだデータのみが、フィルタリング結果に含まれます。 </li><li>[!UICONTROL **すべての用語を含む**]：指定した語句のすべての単語を含んだデータのみが、フィルタリング結果に含まれます。単語は、「[!UICONTROL **検索語句**]」フィールドで指定した順序である必要はありません。</li><li>[!UICONTROL **いずれの用語も含まない**]：指定した語句の単語をまったく含まないデータのみが、フィルタリング結果に含まれます。 </li><li>[!UICONTROL **語句を含まない**]：指定したとおりの語句を含まないデータのみが、フィルタリング結果に含まれます。単語は、「[!UICONTROL **検索語句**]」フィールドで指定した順序になっている必要があります。</li><li>[!UICONTROL **次に等しい**]：指定した語句と完全に一致するデータのみが、フィルタリング結果に含まれます。 </li><li>[!UICONTROL **次に等しくない**]：指定した語句と完全には一致しないデータのみが、フィルタリング結果に含まれます。 </li><li>[!UICONTROL **次で始まる**]：指定した単語または指定したとおりの語句で始まるデータのみが、フィルタリング結果に含まれます。 </li><li>[!UICONTROL **次で終わる**]：指定した単語または指定したとおりの語句で終わるデータのみが、フィルタリング結果に含まれます。 </li></ul>複数のフィルター条件を追加するには、![追加](/help/assets/icons/Add.svg)「[!UICONTROL **行を追加**]」を選択します。「[!UICONTROL **次に一致**]」で選択するオプションによって、**[!UICONTROL すべての条件を満たしている場合]**&#x200B;または&#x200B;**[!UICONTROL いずれかの条件を満たしている場合]**&#x200B;が決まります。 |
    | [!UICONTROL **常に項目を除外**] | フィルタリングされたデータから除外する項目の名前を指定します。 |
@@ -100,7 +100,7 @@ Note: this option does not seem to work. AN-338422
 
 スパークラインに加えて、接続線のビジュアライゼーションに含めるフィルター条件を設定できます。 （デフォルトでは、フィルター条件は折れ線グラフのビジュアライゼーションに含まれていません。 折れ線グラフビジュアライゼーションには、接続されたテーブルで選択された行のデータが表示されます。 行が選択されていない場合、接続されたテーブルの最初のディメンションのデータのみが表示されます）。
 
-スパークラインと折れ線グラフのビジュアライゼーションについて詳しくは、[&#x200B; フリーフォームテーブルのトレンドデータの表示 &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md) を参照してください。
+スパークラインと折れ線グラフのビジュアライゼーションについて詳しくは、[ フリーフォームテーブルのトレンドデータの表示 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md) を参照してください。
 
 #### フィルター条件を含む折れ線グラフのビジュアライゼーションの設定
 
@@ -108,13 +108,13 @@ Note: this option does not seem to work. AN-338422
 
    スパークライン セルを選択すると、濃い灰色で表示されます。 これは、接続線のビジュアライゼーションにフィルター条件が含まれていることを示します。 フィルター条件は、列のセグメントとして適用されます。<!--show how to see it? Show what the segment looks like when it's applied? -->
 
-   ![&#x200B; スパークラインを選択 &#x200B;](assets/table-sparkline-selected.png)
+   ![ スパークラインを選択 ](assets/table-sparkline-selected.png)
 
 #### 列の合計が不正確な可能性がある場合について
 
 次のシナリオでは、列の合計が正確でない可能性があります。
 
-* 左側の列と [&#x200B; 列の合計は行の合計として計算される &#x200B;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) で静的コンポーネントが使用される場合
+* 左側の列と [ 列の合計は行の合計として計算される ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) で静的コンポーネントが使用される場合
 
   このシナリオでは、行アイテムに重複するデータが含まれていると、列の合計が不正確になります。
 
@@ -128,7 +128,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[&#x200B; セグメント化の概要 &#x200B;](/help/components/segments/seg-overview.md) を参照してください。
+詳しくは、[ セグメント化の概要 ](/help/components/segments/seg-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 

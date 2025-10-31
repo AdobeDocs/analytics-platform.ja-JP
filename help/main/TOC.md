@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 3e87e9edd69229d5228de0f96d2525614172e725
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1311'
 ht-degree: 99%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 99%
          + [概要](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [ハイパーリンクを作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + [トレンドデータの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [複数のディメンションを含める](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
          + [フィルタリングと並べ替え](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [合計](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + 列および行の設定 {#column-row-settings}

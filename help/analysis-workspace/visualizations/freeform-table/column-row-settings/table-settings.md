@@ -4,10 +4,10 @@ title: 行設定
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/328502/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
-行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
+行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
 
 ![指標の設定アイコンをハイライト表示するフリーフォームテーブル](assets/row-settings.png)
 
@@ -36,7 +36,7 @@ ht-degree: 86%
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   ![&#x200B; 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
+   ![ 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
 1. ドロップダウンメニューから、テーブルに表示する行数を選択します。
 
@@ -59,7 +59,7 @@ ht-degree: 86%
 | **[!UICONTROL 選択内容から注釈を作成]** | 「**[!UICONTROL 注釈の詳細]**」を開いて、注釈を追加します。 |
 
 
-フリーフォームテーブル内の 1 つ以上のディメンション項目（最初の列）または 1 つ以上の個別のセルを選択する場合は、次の追加のコンテキストメニューオプションを使用できます。
+1 つ以上のディメンション項目（最初の列）またはフリーフォームテーブルの 1 つ以上の個々のセルを選択する場合は、次の追加のコンテキストメニューオプションを使用できます。
 
 | オプション | 説明 |
 | --- | --- |
@@ -90,4 +90,4 @@ ht-degree: 86%
 
 ## 行の高さの変更
 
-プロジェクトの [&#x200B; 表示密度 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。.
+プロジェクトの [ 表示密度 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。
