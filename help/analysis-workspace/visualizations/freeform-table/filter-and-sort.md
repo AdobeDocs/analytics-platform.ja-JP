@@ -4,20 +4,20 @@ title: フィルターと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1134'
 ht-degree: 65%
 
 ---
 
-# テーブルのフィルタリングと並べ替え
+# フリーフォームテーブルのフィルタリングと並べ替え
 
 Analysis Workspace のフリーフォームテーブルは、インタラクティブなデータ分析の基盤となります。そのため、何千行もの情報を含めることができます。データのフィルタリングと並べ替えは、最も重要な情報を効率的に表示するための重要な要素になる可能性があります。
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327343?captions=jpn)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## テーブルのフィルタリング
 
@@ -33,7 +33,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 * テーブルにフィルターを適用
 * オーディエンスセグメントの使用
 
-各方法が与える影響 [&#x200B; フリーフォームテーブルの合計 &#x200B;](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) を必ずお読みください。
+各方法が与える影響 [ フリーフォームテーブルの合計 ](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) を必ずお読みください。
 
 ### テーブルから特定の行を除外
 
@@ -100,7 +100,7 @@ Note: this option does not seem to work. AN-338422
 
 スパークラインに加えて、接続線のビジュアライゼーションに含めるフィルター条件を設定できます。 （デフォルトでは、フィルター条件は折れ線グラフのビジュアライゼーションに含まれていません。 折れ線グラフビジュアライゼーションには、接続されたテーブルで選択された行のデータが表示されます。 行が選択されていない場合、接続されたテーブルの最初のディメンションのデータのみが表示されます）。
 
-スパークラインと折れ線グラフのビジュアライゼーションについて詳しくは、[&#x200B; フリーフォームテーブルのトレンドデータの表示 &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md) を参照してください。
+スパークラインと折れ線グラフのビジュアライゼーションについて詳しくは、[ フリーフォームテーブルのトレンドデータの表示 ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md) を参照してください。
 
 #### フィルター条件を含む折れ線グラフのビジュアライゼーションの設定
 
@@ -108,13 +108,13 @@ Note: this option does not seem to work. AN-338422
 
    スパークライン セルを選択すると、濃い灰色で表示されます。 これは、接続線のビジュアライゼーションにフィルター条件が含まれていることを示します。 フィルター条件は、列のセグメントとして適用されます。<!--show how to see it? Show what the segment looks like when it's applied? -->
 
-   ![&#x200B; スパークラインを選択 &#x200B;](assets/table-sparkline-selected.png)
+   ![ スパークラインを選択 ](assets/table-sparkline-selected.png)
 
 #### 列の合計が不正確な可能性がある場合について
 
 次のシナリオでは、列の合計が正確でない可能性があります。
 
-* 左側の列と [&#x200B; 列の合計は行の合計として計算される &#x200B;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) で静的コンポーネントが使用される場合
+* 左側の列と [ 列の合計は行の合計として計算される ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) で静的コンポーネントが使用される場合
 
   このシナリオでは、行アイテムに重複するデータが含まれていると、列の合計が不正確になります。
 
@@ -128,7 +128,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[&#x200B; セグメント化の概要 &#x200B;](/help/components/segments/seg-overview.md) を参照してください。
+詳しくは、[ セグメント化の概要 ](/help/components/segments/seg-overview.md) を参照してください。
 
 ## テーブルの並べ替え
 
