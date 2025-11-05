@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -52,9 +52,9 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights エージェントを使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights エージェントの使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -64,9 +64,9 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
    1. 提供されたテーブルの&#x200B;**[!UICONTROL レポートツール]**&#x200B;行で、編集アイコン ![編集](/help/assets/icons/Edit.svg) を選択します。
    1. 「**[!UICONTROL AI アシスタント：製品知識]**」までスクロールするか、それを検索し、この権限の横にあるプラスアイコン ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します。
-   1. スクロールして **[!UICONTROL Data Insights Agent]** を検索し、この権限の横にあるプラスアイコン ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します。
+   1. 「**[!UICONTROL Data Insights Agent]**」までスクロールするか、これを検索し、この権限の横にあるプラスアイコン ![AddCircle](/help/assets/icons/AddCircle.svg) を選択します。
 
-      **[!UICONTROL AI アシスタント：製品ナレッジ]** 権限と **[!UICONTROL Data Insights Agent]** 権限が **[!UICONTROL 含まれる権限項目]** 列に追加されます。
+      **[!UICONTROL AI アシスタント：製品知識]**&#x200B;権限と **[!UICONTROL Data Insights Agent]** 権限が、**[!UICONTROL 含まれる権限項目]**&#x200B;列に追加されます。
 
       ![権限を追加](assets/ai-assistant-permissions.png)。
 
@@ -74,29 +74,29 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
   アクセス制御について詳しくは、[アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
 
-* **データビューアクセス**:Data Insights Agentでデータビューを有効にする必要があります。
+* **データビューアクセス**：Data Insights Agent に対してデータビューを有効にする必要があります。
 
   >[!IMPORTANT]
   >
   >データビューを有効にする際は、次の点を考慮してください。
   >* IMS 組織ごとに最大 50 個のデータビューを有効にできます。特定の組織のすべての製品プロファイルで 50 個を超えるデータビューを有効にした場合、Data Insights エージェントは最もよく使用されている 50 個のデータビューを使用します。
-  >* Data Insights Agentは、含まれているデータビューを、ユーザーが有効にしている日と同じ日にいつでも参照できます。
+  >* Data Insights Agent は、有効にしたその日のうちに、含まれるデータビューを参照できます。
 
-  Data Insights Agentのデータビューを有効にするには：
+  Data Insights Agent に対してデータビューを有効にするには：
 
-   1. Customer Journey Analyticsで、**[!UICONTROL データ管理]**/**[!UICONTROL データビュー]** を選択します。
+   1. Customer Journey Analytics で、**[!UICONTROL データ管理]**／**[!UICONTROL データビュー]**&#x200B;を選択します。
 
-   1. Data Insights Agentに対して有効にする 1 つ以上のデータビューを選択し、次に **[!UICONTROL Data Insights Agentに対して有効にする]** を選択します。
+   1. Data Insights Agent に対して有効にする 1 つ以上のデータビューを選択して、「**[!UICONTROL Data Insights Agent に対して有効にする]**」を選択します。
 
-      ![Data Insights Agentのデータビューの有効化 &#x200B;](assets/data-view-enable-dia.png)
+      ![Data Insights Agent に対してデータビューを有効にする](assets/data-view-enable-dia.png)
 
-  IMS 組織でData Insights Agentが有効になっているデータビューの数を表示するには：
+  IMS 組織の Data Insights Agent トに対して有効なデータビューの数を表示するには：
 
-   1. Customer Journey Analyticsで、**[!UICONTROL データ管理]**/**[!UICONTROL データビュー]** を選択します。
+   1. Customer Journey Analytics で、**[!UICONTROL データ管理]**／**[!UICONTROL データビュー]**&#x200B;を選択します。
 
    1. **[!UICONTROL Data Insights Agent]** 列の上部にある情報アイコンを選択します。
 
-      ![Data Insights Agent情報アイコン &#x200B;](assets/data-insights-agent-tooltip.png)
+      ![Data Insights Agent 情報アイコン](assets/data-insights-agent-tooltip.png)
 
 ## AI アシスタントの Data Insights エージェントへのアクセス
 
@@ -154,7 +154,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
