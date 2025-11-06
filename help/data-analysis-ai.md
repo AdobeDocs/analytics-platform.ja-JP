@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2494'
 ht-degree: 98%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 >[!AVAILABILITY]
 >
->Data Insights エージェントは、利用資格を満たすお客様が期間限定で使用できます。Data Insights Agentへのアクセスは、2026 年 2 月 28 日（PT）まで可能です。 Data Insights Agentを引き続き使用するには、Adobe アカウント担当者に連絡して、Adobe Experience Platform Agent Orchestratorのライセンスの詳細を問い合わせてください。
+>Data Insights エージェントは、利用資格を満たすお客様が期間限定で使用できます。Data Insights Agentへのアクセスは、2026 年 2 月 28 日（PT）まで可能です。 この日付以降も引き続きData Insights Agentを使用するには、Adobe アカウント担当者に連絡して、Adobe Experience Platform Agent Orchestratorのライセンスの詳細を問い合わせてください。
 
 Customer Journey Analytics の [AI アシスタント](/help/ai-assistant.md)からアクセス可能な Data Insights エージェントは、データに関する質問に迅速かつ効率的に回答する生成 AI 会話エージェントです。データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。
 
@@ -52,9 +52,9 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights エージェントを使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights エージェントの使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights エージェントにアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -154,7 +154,7 @@ Data Insights エージェントを使用して Analysis Workspace のデータ�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
