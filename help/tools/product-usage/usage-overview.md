@@ -2,10 +2,10 @@
 title: 製品使用状況の概要
 description: 組織が Customer Journey Analytics をどのように使用しているかに関するインサイトとレポートを表示します。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
+source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 89%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,9 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->この機能は、Adobe Experience Platform の契約上の行制限にカウントされます。組織は、この機能を有効にする前に、この機能で生成されたデータに対応できます。
+>製品の使用状況を有効にすると、使用状況データがAdobe Experience Platform データレイクに保存されます。 この機能を有効にすることで生成される追加のデータセットに対応できるように、組織のデータレイクストレージの割り当てを確認します。
+>
+>この機能は、ライセンスを取得したCustomer Journey Analytics レポートの行の制限やイベントデータの使用権限にはカウントされません。
 
 ## 製品の使用状況を有効にする
 
@@ -57,7 +59,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL スケジュールに従ってファイルを送信]
    * [!UICONTROL 任意のユーザーとプロジェクトを共有]
    * [!UICONTROL Workspace ユーザーとプロジェクトを共有]
-   * [!UICONTROL &#x200B; データビューを切り替え &#x200B;]
+   * [!UICONTROL データビューを切り替え]
 * **[!UICONTROL アトリビューションモデルの使用]**：コンポーネントが使用するアトリビューションモデルのタイプ。 ディメンション項目には以下が含まれます。
    * [!UICONTROL ラストタッチ]
    * [!UICONTROL ファーストタッチ]
@@ -83,7 +85,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
 * **[!UICONTROL データビュー ID]**：データビューの ID。
 * **[!UICONTROL データビュー名]**：データビューのわかりやすい名前。
 * **[!UICONTROL ログインユーザー]**：アクションを実行したユーザー。
-* **[!UICONTROL 使用されるパネル]**：追加、削除または変更されたパネル。 ディメンション項目には以下が含まれます。
+* **[!UICONTROL 使用したパネル]**：追加、削除または変更されたパネル。ディメンション項目には以下が含まれます。
    * [!UICONTROL アトリビューション]
    * [!UICONTROL 空のパネル]
    * [!UICONTROL 実験]
@@ -97,7 +99,7 @@ Customer Journey Analytics のインターフェイスのこのセクション�
    * [!UICONTROL ユーザーストリーム]
    * [!UICONTROL Retention]
    * [!UICONTROL 機能マトリックス]
-* **[!UICONTROL プロジェクト ID]**: プロジェクトの ID。
+* **[!UICONTROL プロジェクト ID]**：プロジェクトの ID。
 * **[!UICONTROL プロジェクト名]**：プロジェクトのわかりやすい名前。
 * **[!UICONTROL プロジェクトタイプ]**：プロジェクトのタイプ。ディメンション項目には以下が含まれます。
    * `workspace-projects`
