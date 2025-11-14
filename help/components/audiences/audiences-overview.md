@@ -4,16 +4,18 @@ description: Customer Journey Analytics でのオーディエンス公開の概�
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
+source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
 # オーディエンス公開の概要
 
-Customer Journey Analytics で検出されたオーディエンスを作成して Adobe Experience Platform の[リアルタイム顧客プロファイル](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)に公開し、顧客のターゲティングやパーソナライゼーションに使用できるようになりました。
+Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用できます。
+
+<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 
 公開オーディエンスを使用すると、Customer Journey Analytics 内で見つかったインサイトを活用してアクションを行う明確な方法がわかります。アクションの例として、次のようなものがあります。
 

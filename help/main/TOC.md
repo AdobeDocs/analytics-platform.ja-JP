@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,6 @@ ht-degree: 100%
    + [組み合わせイベントデータセット](../connections/combined-dataset.md)
    + [標準検索](../connections/standard-lookups.md)
    + [B2B ルックアップ](../connections/transform-datasets-b2b-lookups.md)
-
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 100%
    + 共有指標とディメンション{#shared-metrics-dimensions}
       + [概要](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [編集者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + オーディエンス分析 {#audience-analysis}
+      + [概要](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [RTCDPからのオーディエンスの分析](/help/connections/audience-analysis/analyze-audiences.md)
 + ツール {#tools}
    + アセットを転送 {#asset-transfer}
       + [アセットを転送](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 100%
       + [注釈を管理](../components/annotations/manage-annotations.md)
       + [注釈を表示](../components/annotations/view-annotations.md)
       + [モバイルスコアカードの注釈](../components/annotations/mobile-annotations.md)
-   + オーディエンス {#audiences}
-      + [オーディエンスの概要](../components/audiences/audiences-overview.md)
+   + オーディエンスパブリッシング {#audiences}
+      + [オーディエンス公開の概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
-      + [オーディエンスの管理](../components/audiences/manage.md)
+      + [公開済みオーディエンスの管理](../components/audiences/manage.md)
    + ディメンション {#dimensions}
       + [概要](../components/dimensions/overview.md)
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)

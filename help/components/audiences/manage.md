@@ -4,14 +4,14 @@ description: Customer Journey Analytics でのオーディエンスの管理方�
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 97%
 
 ---
 
-# オーディエンスの管理
+# 公開済みオーディエンスの管理
 
 Adobe Customer Journey Analytics でオーディエンスを管理するには、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を使用します。
 
@@ -35,7 +35,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 オーディエンスリストを表示するには：
 
-1. Customer Journey Analytics で、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL 公開済みオーディエンス]** を選択します。
 
 1. （オプション）![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用すると、表示する列を設定できます。
 
@@ -62,7 +62,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 オーディエンスを編集するには：
 
-1. Customer Journey Analytics で、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL コンポーネント]**/**[!UICONTROL 公開済みオーディエンス]** を選択します。
 
    オーディエンスページが表示されます。
 

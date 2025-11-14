@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8b9f45bc68fd90c2b15a91d547256c18d0d7142b
+source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
 workflow-type: tm+mt
-source-wordcount: '20687'
+source-wordcount: '20775'
 ht-degree: 97%
 
 ---
@@ -591,6 +591,11 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="サイトを訪問している人の中で、どのオーディエンスが表されているかを確認します。"
+>abstract="**これにより** オーディエンスに関する一般的な情報、オーディエンスの作成元（RTCDP、Customer Journey Analyticsなど）、オーディエンスの重複などをより深く理解できます。<br/>**学習した内容に応じて、様々な操作を行うことができます。例えば** データを使用して、特定のオーディエンスのマーケティング活動に専念したり、複数のオーディエンスにまたがる顧客に合わせてカスタマイズされたエクスペリエンスを作成したりできます。<br/> このテンプレートでは、オーディエンス名、オーディエンスオリジン、離脱オーディエンス名、離脱オーディエンスオリジンディメンションを使用します。"
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"

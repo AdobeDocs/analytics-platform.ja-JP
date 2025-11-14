@@ -4,10 +4,10 @@ description: Customer Journey Analytics からのオーディエンスの公開�
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 100%
+source-wordcount: '2391'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 
    | 作成方法 | 詳細 |
    | --- | --- |
-   | **[!UICONTROL オーディエンス]**&#x200B;インターフェイス内から | Customer Journey Analytics メインメニューから、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を選択します。オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL オーディエンスビルダー]が開きます。 |
+   | **[!UICONTROL 公開済みオーディエンス]** インターフェイス内から | メイン Customer Journey Analytics メニューから **[!UICONTROL コンポーネント]**/**[!UICONTROL 公開済みオーディエンス]** を選択します。 オーディエンスインターフェイスが表示されます。 「**[!UICONTROL オーディエンスを作成]**」を選択すると、[!UICONTROL オーディエンスビルダー]が開きます。 |
    | Analysis Workspace のビジュアライゼーションから | Analysis Workspace の多くのビジュアライゼーションでは、コンテキストメニューを使用してオーディエンスを作成できます。例えば、[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の項目または[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)のノードのコンテキストメニューから「**[!UICONTROL オーディエンスを作成]**」を選択できます。<p>この方法を使用すると、オーディエンスビルダーのセグメントに、選択したディメンションまたはディメンション項目が事前に入力されます。</p><p>次のビジュアライゼーションでは、右クリックメニューを使用してオーディエンスを作成できます。</p><ul><li>[コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[マップ&#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**メモ：**&#x200B;この機能はリリースの限定的なテスト段階にあり、お使いの環境ではまだ使用できない可能性があります。</li><li>[ベン図](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**メモ：**&#x200B;オーディエンスに計算指標を含めることはできません。計算指標を含むオーディエンスを作成しようとすると、計算指標はオーディエンスの定義に含まれません。</p> |
    | セグメントの作成／編集 UI から | 「**[!UICONTROL このセグメントからオーディエンスを作成]**」ボックスをオンにします。この方法を使用すると、セグメントが事前に入力されます。詳しくは、[セグメントの作成](/help/components/segments/seg-create.md)を参照してください。 |
 
