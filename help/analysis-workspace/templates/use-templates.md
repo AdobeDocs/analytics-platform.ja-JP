@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
+source-git-commit: 8b9f45bc68fd90c2b15a91d547256c18d0d7142b
 workflow-type: tm+mt
-source-wordcount: '20761'
+source-wordcount: '20687'
 ht-degree: 97%
 
 ---
@@ -591,11 +591,6 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 
 <!--Both AA and CJA-->
-
->[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="サイトの訪問者がどの国から訪問しているかを表示します。"
->abstract="**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、国ディメンションを使用します。"
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
