@@ -17,7 +17,7 @@ ht-degree: 0%
 
 <!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
 
-オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。 （Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformに公開し、顧客のターゲティングやパーソナライゼーションに使用する方法については、[ オーディエンス公開の概要 ](/help/components/audiences/audiences-overview.md)）を参照してください。
+オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。 （Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformに公開し、顧客のターゲティングやパーソナライゼーションに使用する方法については、[&#x200B; オーディエンス公開の概要 &#x200B;](/help/components/audiences/audiences-overview.md)）を参照してください。
 
 Customer Journey Analyticsで利用可能なオーディエンスデータを使用すると、様々なチャネルでのオーディエンスメンバーの行動に関する実用的なインサイトを得ることができます。
 
