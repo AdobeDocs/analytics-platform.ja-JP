@@ -4,7 +4,7 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -482,6 +482,13 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 ### Web：オーディエンス {#web-audience}
 
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="サイトを訪問している人の中で、どのオーディエンスが表されているかを確認します。"
+>abstract="**これにより** オーディエンスに関する一般的な情報、オーディエンスの作成元（RTCDP、Customer Journey Analyticsなど）、オーディエンスの重複などをより深く理解できます。<br/>**学習した内容に応じて、様々な操作を行うことができます。例えば** データを使用して、特定のオーディエンスのマーケティング活動に専念したり、複数のオーディエンスにまたがる顧客に合わせてカスタマイズされたエクスペリエンスを作成したりできます。<br/> このテンプレートでは、オーディエンス名、オーディエンスオリジン、離脱オーディエンス名、離脱オーディエンスオリジンディメンションを使用します。"
+
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
@@ -593,11 +600,6 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="サイトを訪問している人の中で、どのオーディエンスが表されているかを確認します。"
->abstract="**これにより** オーディエンスに関する一般的な情報、オーディエンスの作成元（RTCDP、Customer Journey Analyticsなど）、オーディエンスの重複などをより深く理解できます。<br/>**学習した内容に応じて、様々な操作を行うことができます。例えば** データを使用して、特定のオーディエンスのマーケティング活動に専念したり、複数のオーディエンスにまたがる顧客に合わせてカスタマイズされたエクスペリエンスを作成したりできます。<br/> このテンプレートでは、オーディエンス名、オーディエンスオリジン、離脱オーディエンス名、離脱オーディエンスオリジンディメンションを使用します。"
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="サイトの訪問者がどの国から訪問しているかを表示します。"
 >abstract="**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。<br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。<br/>このテンプレートでは、国ディメンションを使用します。"
@@ -649,6 +651,8 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 
 次のテンプレートを表示できます。
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | テンプレート名 | このテンプレートを使用する理由 <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
