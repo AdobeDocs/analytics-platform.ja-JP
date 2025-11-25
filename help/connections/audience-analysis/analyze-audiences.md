@@ -6,20 +6,24 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
 # Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 {#analyze-audiences-RTCDP}
 
-オーディエンスデータがCustomer Journey Analyticsの新しいディメンションとして使用可能な場合は、[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、Analysis WorkspaceでExperience Platform オーディエンスの分析を開始できます。
+オーディエンスデータがCustomer Journey Analyticsの新しいディメンションとして使用可能な場合は、[ オーディエンス分析設定を作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、Analysis WorkspaceでExperience Platform オーディエンスの分析を開始できます。
 
 オーディエンスの概要テンプレートは、Customer Journey Analyticsで使用できます。
 
-オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートの使用 &#x200B;](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [&#x200B; テンプレートへのアクセスと実行 &#x200B;](/help/analysis-workspace/templates/use-templates.md) を参照してください。
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+
+オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [ テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md) を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 
@@ -41,7 +45,7 @@ RTCDPやCustomer Journey Analyticsなど、オーディエンスが作成され�
 
 このパネルのテーブルで最大 3 つのオーディエンスを選択して、対応するベン図でそれらが重なるのを確認します。
 
-## 離脱したオーディエンスの使用状況
+## オーディエンスの使用パネルを終了しました
 
 選択したデータビューに関連付けられている使用イベントを持つ、退出したすべてのオーディエンスのデータを表示します。 昨日のデータは常に表示されるので、パネルの日付範囲を変更すると、データが不正確になります。 「退出したオーディエンス」は、使用イベントを持つユーザーが昨日退出したオーディエンスです。
 
