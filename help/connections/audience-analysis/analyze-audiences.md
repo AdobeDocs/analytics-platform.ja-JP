@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 {#analyze-audiences-RTCDP}
 
-オーディエンスデータがCustomer Journey Analyticsの新しいディメンションとして使用可能な場合は、[ オーディエンス分析設定を作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、Analysis WorkspaceでExperience Platform オーディエンスの分析を開始できます。
+オーディエンスデータがCustomer Journey Analyticsの新しいディメンションとして使用可能な場合は、[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、Analysis WorkspaceでExperience Platform オーディエンスの分析を開始できます。
 
 オーディエンスの概要テンプレートは、Customer Journey Analyticsで使用できます。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 <!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
 
-オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [ テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md) を参照してください。
+オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートの使用 &#x200B;](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [&#x200B; テンプレートへのアクセスと実行 &#x200B;](/help/analysis-workspace/templates/use-templates.md) を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 
