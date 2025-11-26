@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Data Mirrorは、モデルベースのスキーマを使用して、外部データベースからデータレイクに行レベルの変更を取り込めるExperience Platform機能です。 アップストリームの抽出、変換、読み込み（ETL）プロセスを必要とせずに、データの関係を保持し、一意性を確保し、バージョン管理をサポートします。
+Data Mirrorは、リレーショナルスキーマを使用して外部データベースからデータレイクに行レベルの変更を取り込めるExperience Platform機能です。 アップストリームの抽出、変換、読み込み（ETL）プロセスを必要とせずに、データの関係を保持し、一意性を確保し、バージョン管理をサポートします。
 
 Experience Platform Data Mirrorを使用して、外部 Data Warehouse ネイティブソリューション（[!DNL Snowflake]、[!DNL Azure Databricks]、[!DNL Google BigQuery]）からの挿入、更新、削除（可変データ）をExperience Platformのデータと直接同期します。 Data Mirrorを使用すると、データをExperience Platformに取り込む際に、既存のデータベースモデル構造とデータ整合性を維持できます。
 
@@ -33,7 +33,7 @@ Data Mirrorには、データベース同期に必要な次の機能が用意さ
 
 Data Mirrorを使用して、ソースシステムから直接変更内容を取り込み、スキーマの整合性を適用し、分析、journey orchestration、コンプライアンスワークフローでデータを使用できるようにします。 Data Mirrorを使用すると、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスが不要になり、実装が迅速化されます。 この排除により、削除やデータハイジーン操作を正確に制御して、データガバナンスを強化できます。
 
-Data Mirrorに関する [Experience Platformのドキュメントも参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
+Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
 
 ## Customer Journey AnalyticsのData Mirror
 
@@ -50,6 +50,6 @@ Customer Journey Analytics用Experience Platform Data Mirrorは、選択した d
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する &#x200B;](model-based.md)
->&#x200B;>[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[モデルベースのスキーマ（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/model-based)
+>[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する ](relational.md)
+>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[リレーショナルスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)

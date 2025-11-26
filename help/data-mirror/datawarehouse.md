@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -50,23 +50,23 @@ ALTER TABLE myDeltaTable SET TBLPROPERTIES (delta.enableChangeDataFeed = true)
 set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ```
 
-詳しくは、[[!DNL Azure Databricks]  変更データフィードの有効化に関するガイド &#x200B;](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed) を参照してください。
+詳しくは、[[!DNL Azure Databricks]  変更データフィードの有効化に関するガイド ](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed) を参照してください。
 
 [!DNL Azure Databricks] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Azure Databricks]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Azure Databricks]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Google BigQuery]
 
 [!DNL Google BigQuery] ソース接続で Change Data Capture を使用するには、[!DNL Google BigQuery] コンソールの [!DNL Google Cloud] ページに移動し、`enable_change_history` を `TRUE` に設定します。 このプロパティは、データ テーブルの変更履歴を有効にします。
 
-詳しくは、[&#x200B; のデータ定義言語ステートメント  [!DNL GoogleSQL]](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list) に関するガイドを参照してください。
+詳しくは、[ のデータ定義言語ステートメント  [!DNL GoogleSQL]](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list) に関するガイドを参照してください。
 
 [!DNL Google BigQuery] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Google BigQuery]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Google BigQuery]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Snowflake]
 
@@ -78,15 +78,15 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 ```
 
-詳しくは、[[!DNL Snowflake] changes 句の使用に関するガイド &#x200B;](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes) を参照してください。
+詳しくは、[[!DNL Snowflake] changes 句の使用に関するガイド ](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes) を参照してください。
 
 [!DNL Snowflake] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Snowflake]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [ ベース接続  [!DNL Snowflake]  作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [ データベースのソース接続の作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：モデルベースのデータをミラーリングして使用する &#x200B;](model-based.md)
+>[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する ](relational.md)
 >
