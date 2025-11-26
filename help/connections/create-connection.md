@@ -442,7 +442,7 @@ ht-degree: 61%
 
 | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
 |---|---|---|---|---|
-| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [&#x200B; アドホックスキーマ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
+| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [&#x200B; アドホックスキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
 | **[!UICONTROL モデル]** | リレーショナルスキーマに基づくリレーショナルデータ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 | あらゆるリレーショナルスキーマ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 |
 
 
@@ -781,5 +781,5 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 >[!MORELIKETHIS]
 >
 >* [&#x200B; データ取り込みの概要 &#x200B;](/help/data-ingestion/data-ingestion.md)
->* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=ja)
 

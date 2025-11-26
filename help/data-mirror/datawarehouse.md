@@ -54,8 +54,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 [!DNL Azure Databricks] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Azure Databricks]  作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [&#x200B; ベース接続  [!DNL Azure Databricks]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Google BigQuery]
 
@@ -65,8 +65,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 [!DNL Google BigQuery] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Google BigQuery]  作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [&#x200B; ベース接続  [!DNL Google BigQuery]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 ## [!DNL Snowflake]
 
@@ -82,8 +82,8 @@ ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 
 [!DNL Snowflake] ソース接続の change data capture を有効にする手順については、次のドキュメントを参照してください。
 
-* [&#x200B; ベース接続  [!DNL Snowflake]  作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
+* [&#x200B; ベース接続  [!DNL Snowflake]  作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [&#x200B; データベースのソース接続の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)。
 
 
 >[!MORELIKETHIS]
