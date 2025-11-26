@@ -33,7 +33,7 @@ Data Mirrorには、データベース同期に必要な次の機能が用意さ
 
 Data Mirrorを使用して、ソースシステムから直接変更内容を取り込み、スキーマの整合性を適用し、分析、journey orchestration、コンプライアンスワークフローでデータを使用できるようにします。 Data Mirrorを使用すると、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスが不要になり、実装が迅速化されます。 この排除により、削除やデータハイジーン操作を正確に制御して、データガバナンスを強化できます。
 
-Data Mirrorに関する [Experience Platformのドキュメントも参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
+Data Mirrorに関する [Experience Platformのドキュメントも参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
 
 ## Customer Journey AnalyticsのData Mirror
 
@@ -50,6 +50,6 @@ Customer Journey Analytics用Experience Platform Data Mirrorは、選択した d
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する ](relational.md)
->[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[リレーショナルスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する &#x200B;](relational.md)
+>[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[リレーショナルスキーマ（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
