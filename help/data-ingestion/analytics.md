@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 9c4ae8174086559ee552c5ffc95a8a7b0009f126
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1193'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 79%
 >
 >Adobe Analytics がライセンスを取得しており、以下に記載された実装方法のいずれかを使用して、1 つ以上の web サイトにデプロイしている。
 >
->- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=ja)
+>- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Adobe Analytics 拡張機能を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)
 >
@@ -56,7 +56,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
    ![ソースが選択され、アドビアプリケーションと「データを追加」がハイライト表示されている Adobe Experience Platform ウィンドウ。](./assets/sources-overview.png)
 
-4. **[!UICONTROL レポートスイート]**&#x200B;を選択します。レポートスイートのリストから、使用するレポートスイートを選択します。
+4. **[!UICONTROL レポートスイート]**&#x200B;を選択します。レポートスイートのリストから、使用するレポートスイートを選択します。<br/> または、![ 検索 ](/help/assets/icons/Search.svg) **[!UICONTROL _検索_]** を使用して、レポートスイートを検索できます。
 
    ![レポートスイートリストを表示する Adobe Experience Platform ウィンドウ](./assets/report-suites.png)
 
@@ -64,7 +64,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
 5. 「**[!UICONTROL デフォルトのスキーマ]**」を[!UICONTROL ターゲットスキーマ]として選択します。Adobe Experience Platform は、選択した Adobe Analytics レポートスイートのすべての標準フィールドをマッピングするために、スキーマと対応するデータセットを自動的に作成します。
 
-   ![&#x200B; デフォルトのスキーマが選択されたAdobe Experience Platform ウィンドウ &#x200B;](./assets/default-schema.png)
+   ![ デフォルトのスキーマが選択されたAdobe Experience Platform ウィンドウ ](./assets/default-schema.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
@@ -112,7 +112,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-     ![&#x200B; データセットを追加ウィンドウ &#x200B;](./assets/cja-connections-2a.png)
+     ![ データセットを追加ウィンドウ ](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
 
@@ -168,7 +168,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[&#x200B; データ表示の概要 &#x200B;](../data-views/data-views.md) を参照してください。
+データ表示の作成および編集方法、データ表示で使用できるコンポーネント、セグメントおよびセッションの設定の使用方法について詳しくは、[ データ表示の概要 ](../data-views/data-views.md) を参照してください。
 
 
 ## プロジェクトの設定
@@ -193,7 +193,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;] の [!UICONTROL &#x200B; フリーフォームテーブル &#x200B;] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ] の [!UICONTROL  フリーフォームテーブル ] でディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
