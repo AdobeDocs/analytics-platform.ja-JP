@@ -70,7 +70,7 @@ ht-degree: 2%
 * 指標：**[!UICONTROL 購入売上高]**🅓 および **[!UICONTROL 購入]** 🅔。
 * フィルター：**[!UICONTROL 釣り製品]** 🅕。
 
-![Customer Journey Analytics ベースのセットアップ ](assets/cja-base.png)
+![Customer Journey Analytics ベースのセットアップ &#x200B;](assets/cja-base.png)
 
 ユースケースを確認したら、これらのサンプルオブジェクトを特定の環境に適したオブジェクトに置き換えます。
 
@@ -85,44 +85,44 @@ ht-degree: 2%
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](assets/queryservice-credentials.png)
 
 1. Power BI Desktop を起動します。
    1. メインインターフェイスから、「**[!UICONTROL 他のソースからデータを取得]**」を選択します。
    1. **[!UICONTROL データを取得]** ダイアログで、次の手順を実行します。
-      ![PowerBI PostgreSQL データベース ](assets/powerbi-postgresql.png)
+      ![PowerBI PostgreSQL データベース &#x200B;](assets/powerbi-postgresql.png)
       1. **[!UICONTROL PostgreSQL データベース]** を検索して選択します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** ダイアログで、次の手順を実行します。
-      ![PowerBI デスクトップサーバーとデータベースの設定 ](assets/powerbi-serverdatabase.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付け、`:`Server **[!UICONTROL の値として]** で区切ります。 例：`examplecompany.platform-query.adobe.io:80`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
+      ![PowerBI デスクトップサーバーとデータベースの設定 &#x200B;](assets/powerbi-serverdatabase.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付け、`:`Server **[!UICONTROL の値として]** で区切ります。 例：`examplecompany.platform-query.adobe.io:80`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
       1. **[!UICONTROL Data connectivity mode]** として **[!UICONTROL DirectQuery]** を選択します。
       1. **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** - **[!UICONTROL データベース]** ダイアログで、
-      ![PowerBI デスクトップユーザーとパスワード ](assets/powerbi-userpassword.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
+      ![PowerBI デスクトップユーザーとパスワード &#x200B;](assets/powerbi-userpassword.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [&#x200B; 有効期限のない認証情報 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. **[!UICONTROL これらの設定を適用するレベルを選択]** のドロップダウンメニューが、前に定義した **[!UICONTROL サーバー]** に設定されていることを確認します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BI Desktop に以下が表示されます。
-      ![Power BI Destkop 読み込みデータ ](assets/powerbi-navigator-load.png)
+      ![Power BI Destkop 読み込みデータ &#x200B;](assets/powerbi-navigator-load.png)
       1. 左パネルのリストから **[!UICONTROL public.cc_data_view]** を選択します。
       1. 次の 2 つのオプションがあります。
          1. **[!UICONTROL 読み込み]** を選択して続行し、設定を完了します。
          1. **[!UICONTROL データを変換]** を選択します。 オプションで設定の一部として変換を適用できるダイアログが表示されます。
-            ![Power BI デスクトップ変換データ ](assets/powerbi-transform-data.png)
+            ![Power BI デスクトップ変換データ &#x200B;](assets/powerbi-transform-data.png)
             * **[!UICONTROL 閉じて適用]** を選択します。
    1. しばらくすると、**[!UICONTROL public.cc_data_view]** が **[!UICONTROL Data]** ペインに表示されます。 ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択して、ディメンションと指標を表示します。
-      ![Power BI Destkop サーバーのデータが読み込まれました ](assets/powerbi-navigator-loaded.png)
+      ![Power BI Destkop サーバーのデータが読み込まれました &#x200B;](assets/powerbi-navigator-loaded.png)
 
 
 ### FLATTEN か NOT か
 
-Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -133,8 +133,8 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
-* [Power BIをクエリサービスに接続 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/power-bi)。
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [Power BIをクエリサービスに接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/power-bi)。
 
 
 
@@ -144,23 +144,23 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](assets/queryservice-credentials.png)
 
 1. Tableau の起動
    1. **[!UICONTROL To a Server]** の下の左パネルから「**[!UICONTROL PostgreSQL]**」を選択します。 使用できない場合は、「**[!UICONTROL その他…]**」を選択し、「**[!UICONTROL インストールされているコネクタ]**」から「**[!UICONTROL PostgreSQL]**」を選択します。
-      ![Tableau コネクタ ](assets/tableau-connectors.png)
+      ![Tableau コネクタ &#x200B;](assets/tableau-connectors.png)
    1. **[!UICONTROL PostgreSQL]** ダイアログの **[!UICONTROL 一般]** タブで、次の操作を行います。
-      ![Tableau へのログインダイアログ ](assets/tableau-signin.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ホスト]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL サーバー]** にコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Port]** に **[!UICONTROL Port]** をコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL データベース]** に **[!UICONTROL データベース]** をコピー&amp;ペーストします。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
+      ![Tableau へのログインダイアログ &#x200B;](assets/tableau-signin.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ホスト]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL サーバー]** にコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Port]** に **[!UICONTROL Port]** をコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL データベース]** に **[!UICONTROL データベース]** をコピー&amp;ペーストします。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
       1. **[!UICONTROL 認証]** ドロップダウンメニューから **[!UICONTROL ユーザー名とパスワード]** を選択します。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** にコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL パスワード]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL パスワード]** にコピー&amp;ペーストします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** にコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL パスワード]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL パスワード]** にコピー&amp;ペーストします。 [&#x200B; 有効期限のない認証情報 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. 「**[!UICONTROL SSL が必要]**」が選択されていることを確認します。
       1. 「**[!UICONTROL ログイン]**」を選択します。
 
@@ -176,7 +176,7 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 
 ### FLATTEN か NOT か
 
-Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -187,8 +187,8 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
-* [Tableau Desktop をクエリサービスに接続します ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/tableau)。
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [Tableau Desktop をクエリサービスに接続します &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/tableau)。
 
 
 >[!TAB Looker]
@@ -196,11 +196,11 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](assets/queryservice-credentials.png)
 
 1. Looker へのログイン
 
@@ -209,16 +209,16 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. 「**[!UICONTROL 接続を追加]**」を選択します。
    1. **[!UICONTROL データベースを Looker に接続画面]** で確認します。
 
-      ![Looker データベースへの接続 ](assets/looker-connect.png)
+      ![Looker データベースへの接続 &#x200B;](assets/looker-connect.png)
 
       1. 接続の **[!UICONTROL 名前]** を入力（例：`Example Looker Connection`）
       1. **[!UICONTROL 接続範囲]** として「すべてのプロジェクト **[!UICONTROL が選択されていることを確認]** ます。
       1. ダイアレクトとして **[!UICONTROL PostgreSQL 9.5 以上]** を選択します。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ホスト]** 値をコピーし、**[!UICONTROL ホスト]** の値として貼り付けます。 例：`examplecompany.platform-query.adobe.io`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Port]** 値をコピーして **[!UICONTROL Port]** に貼り付けます。 例：`80`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL データベース]** 値をコピーして **[!UICONTROL データベース]** に貼り付けます。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** 値をコピーして **[!UICONTROL ユーザー名]** に貼り付けます。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL パスワード]** 値をコピーして **[!UICONTROL パスワード]** に貼り付けます。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ホスト]** 値をコピーし、**[!UICONTROL ホスト]** の値として貼り付けます。 例：`examplecompany.platform-query.adobe.io`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Port]** 値をコピーして **[!UICONTROL Port]** に貼り付けます。 例：`80`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL データベース]** 値をコピーして **[!UICONTROL データベース]** に貼り付けます。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** 値をコピーして **[!UICONTROL ユーザー名]** に貼り付けます。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL パスワード]** 値をコピーして **[!UICONTROL パスワード]** に貼り付けます。
       1. **[!UICONTROL オプション設定]** で **[!UICONTROL すべて展開]** を選択します。
       1. ノードごとの **[!UICONTROL 最大接続数]** を `5` に設定します。
       1. **[!UICONTROL SSL]** が有効になっていることを確認します。
@@ -253,7 +253,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ### FLATTEN か NOT か
 
-Looker では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Looker では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -264,7 +264,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter Notebook]
@@ -272,11 +272,11 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](assets/queryservice-credentials.png)
 
 1. Jupyter Notebook 環境を実行するための専用の Python 仮想環境をセットアップしていることを確認します。
 1. 仮想環境に必要なライブラリがインストールされていることを確認します。
@@ -285,14 +285,14 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
    * sqlalchemy: pip `install sqlalchemy`。
 
 1. 仮想環境 `jupyter notebook` から Jupyter Notebook を起動します。
-1. 新しいノートブックを作成するか、[ このサンプルノートブック ](assets/BI-Extension.ipynb.zip) をダウンロードします。
+1. 新しいノートブックを作成するか、[&#x200B; このサンプルノートブック &#x200B;](assets/BI-Extension.ipynb.zip) をダウンロードします。
 1. 最初のセルに、次のように入力して実行します。
 
    ```
    %config SqlMagic.style = '_DEPRECATED_DEFAULT'
    ```
 
-1. 新しいセルに、接続の設定パラメーターを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルの値をコピーして、設定パラメーターに必要な値に貼り付けます。 例：
+1. 新しいセルに、接続の設定パラメーターを入力します。 ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルの値をコピーして、設定パラメーターに必要な値に貼り付けます。 例：
 
    ```
    import ipywidgets as widgets
@@ -316,7 +316,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
    ```
 
 1. セルを実行します。
-1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
+1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
 
    ![Jupter Notebook 設定の手順 1](assets/jupyter-config-step1.png)
 
@@ -360,7 +360,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
 ### FLATTEN か NOT か
 
-Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -371,22 +371,22 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](assets/queryservice-credentials.png)
 
 1. RStudio を起動します。
-1. 新しい R Markdown ファイルを作成するか、[ このサンプル R Markdown ファイル ](assets/BI-Extension.Rmd.zip) をダウンロードします。
-1. 最初のチャンクでは、` ```{r} ` ～ ` ``` ` の間に次のステートメントを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから `host`、`dbname`、`user` などの様々なパラメーターに必要な値にコピー&amp;ペーストします。 例：
+1. 新しい R Markdown ファイルを作成するか、[&#x200B; このサンプル R Markdown ファイル &#x200B;](assets/BI-Extension.Rmd.zip) をダウンロードします。
+1. 最初のチャンクでは、` ` ``{r} ` ～ ` `` ` ` の間に次のステートメントを入力します。 ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから `host`、`dbname`、`user` などの様々なパラメーターに必要な値にコピー&amp;ペーストします。 例：
 
    ```R
    library(rstudioapi)
@@ -403,11 +403,11 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
    ```
 
 1. チャンクを実行します。 「**[!UICONTROL Host]**」、「**[!UICONTROL Database]**」、「**[!UICONTROL User]**」の入力を求められます。 前の手順の一部として指定した値をそのまま使用します。
-1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
+1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
 
    ![RStudio 設定手順 1](assets/rstudio-config-step1.png)
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    con <- dbConnect(
@@ -424,7 +424,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 1. チャンクを実行します。 接続に成功した場合は、出力は表示されません。
 
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    views <- dbListTables(con)
@@ -434,7 +434,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 1. チャンクを実行します。 `character(0)` が唯一の出力として表示されます。
 
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    glimpse(dv)
@@ -446,7 +446,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 
 ### FLATTEN か NOT か
 
-RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -457,7 +457,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
@@ -472,7 +472,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 ユースケースの例 **[!UICONTROL 毎日のトレンド]** パネルを次に示します。
 
-![Customer Journey Analytics毎日のトレンドパネル ](assets/cja_daily_trend.png)
+![Customer Journey Analytics毎日のトレンドパネル &#x200B;](assets/cja_daily_trend.png)
 
 +++
 
@@ -480,7 +480,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールの [ 接続に成功した ](#connect-and-validate) 検証され、データビューのリスト作成と使用ができることを確認します。
+>このユースケースを試す BI ツールの [&#x200B; 接続に成功した &#x200B;](#connect-and-validate) 検証され、データビューのリスト作成と使用ができることを確認します。
 >
 
 >[!BEGINTABS]
@@ -497,7 +497,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterangeday is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **** `1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `2/1/2023.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
+   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **&#x200B;**&#x200B;`1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `2/1/2023.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用した **[!UICONTROL daterangeday]** フィルターで更新されたテーブルが表示されます。
@@ -506,16 +506,16 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop ユースケース 2 日付範囲フィルター ](assets/uc2-pbi-daterange.png)
+   ![Power BI Desktop ユースケース 2 日付範囲フィルター &#x200B;](assets/uc2-pbi-daterange.png)
 
 1. 折れ線グラフのビジュアライゼーションで：
 
-   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択します。
    1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc2-pbi-final.png)
+   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション &#x200B;](assets/uc2-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -524,7 +524,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/02/2023` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc2-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](assets/uc2-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL Day]** を選択し、値が **[!UICONTROL DAY （Daterangeday）]** に更新されます。
@@ -533,7 +533,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc2-tableau-graph.png)
+      ![Tableau Desktop グラフ &#x200B;](assets/uc2-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -545,7 +545,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc2-tableau-data.png)
+      ![Tableau Desktop データ &#x200B;](assets/uc2-tableau-data.png)
 
 1. 「**[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -559,13 +559,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL Cc データビュー]**」セクションから、
    1. 「**[!UICONTROL ‣Daterange Date]**」を選択し、「**[!UICONTROL DIMENSIONS]**」のリストから「**[!UICONTROL Date]**」を選択します。
    1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
@@ -574,7 +574,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](assets/uc2-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](assets/uc2-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -599,12 +599,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc2-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc2-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Daily Events
@@ -622,7 +622,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc2-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc2-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -637,7 +637,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 ユースケースの例 **[!UICONTROL 時間別トレンド]** パネル：
 
-![Customer Journey Analyticsの時間別トレンドビジュアライゼーション ](assets/cja_hourly_trend.png)
+![Customer Journey Analyticsの時間別トレンドビジュアライゼーション &#x200B;](assets/cja_hourly_trend.png)
 
 +++
 
@@ -645,7 +645,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -661,7 +661,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `02/01/2023` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc3-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](assets/uc3-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの「**[!UICONTROL テーブル]**」リストから **[!UICONTROL Daterangehour]** をドラッグ&amp;ドロップし、「**[!UICONTROL 列]**」の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
@@ -670,7 +670,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc3-tableau-graph.png)
+      ![Tableau Desktop グラフ &#x200B;](assets/uc3-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -682,7 +682,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc3-tableau-data.png)
+      ![Tableau Desktop データ &#x200B;](assets/uc3-tableau-data.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -697,13 +697,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 >[!TAB Looker]
 
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/01/02]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/01/02]** として指定します。
 1. 左側のパネルの「**[!UICONTROL Cc データビュー]**」セクションから、
    1. 「**[!UICONTROL ‣ Daterangehour Date]**」を選択し、「**[!UICONTROL DIMENSIONS]**」のリストから「**[!UICONTROL Time]**」を選択します。
    1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
@@ -712,7 +712,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](assets/uc3-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -737,12 +737,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc3-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc3-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Hourly Events
@@ -760,7 +760,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc3-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -775,7 +775,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 ユースケースの例 **[!UICONTROL 月間トレンド]** パネルを次に示します。
 
-![Customer Journey Analyticsの月間トレンドビジュアライゼーション ](assets/cja_monthly_trend.png)
+![Customer Journey Analyticsの月間トレンドビジュアライゼーション &#x200B;](assets/cja_monthly_trend.png)
 
 +++
 
@@ -783,7 +783,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -800,7 +800,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterangemonth is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **** `1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `1/1/2024.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
+   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **&#x200B;**&#x200B;`1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `1/1/2024.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用した **[!UICONTROL daterangemonth]** フィルターで更新されたテーブルが表示されます。
@@ -811,16 +811,16 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop ユースケース 2 日付範囲フィルター ](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Desktop ユースケース 2 日付範囲フィルター &#x200B;](assets/uc4-pbi-filter-daterange.png)
 
 1. 折れ線グラフのビジュアライゼーションで：
 
-   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択します。
    1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc4-pbi-filter-final.png)
+   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション &#x200B;](assets/uc4-pbi-filter-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -829,7 +829,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/01/2024` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](assets/uc4-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](assets/uc4-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されます。
@@ -838,7 +838,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](assets/uc4-tableau-graph.png)
+      ![Tableau Desktop グラフ &#x200B;](assets/uc4-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -850,7 +850,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](assets/uc4-tableau-data.png)
+      ![Tableau Desktop データ &#x200B;](assets/uc4-tableau-data.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -864,13 +864,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側の **[!UICONTROL Cc データビュー]** パネルから、
    1. **[!UICONTROL DIMENSIONS]** のリストから「**[!UICONTROL ‣Daterangemonth 日付]**」を選択してから「**[!UICONTROL 月]**」を選択します。
    1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
@@ -879,7 +879,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](assets/uc4-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](assets/uc4-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -904,12 +904,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc4-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc4-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Hourly Events
@@ -927,7 +927,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc4-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -942,7 +942,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 ユースケースの例 **[!UICONTROL 単一のDimensionのランク付け]** パネルは次のとおりです。
 
-![Customer Journey Analyticsの単一ディメンションランクのビジュアライゼーション ](assets/cja-single-dimension-ranked.png)
+![Customer Journey Analyticsの単一ディメンションランクのビジュアライゼーション &#x200B;](assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -950,7 +950,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -983,13 +983,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    1. **[!UICONTROL purchase_revenue の合計]** を選択すると、商品名を降順で並べ替えることができます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップユースケース 5 テーブルステータス ](assets/uc5-pbi-table.png)
+   ![Power BI デスクトップユースケース 5 テーブルステータス &#x200B;](assets/uc5-pbi-table.png)
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
    1. **[!UICONTROL product_name is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** を **[!UICONTROL 上位 N]** に設定します。
-   1. フィルターを定義して **[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`10`**[!UICONTROL 値]** にします。
+   1. フィルターを定義して **[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**`10`**[!UICONTROL 値]** にします。
    1. **[!UICONTROL purchase_revenue]** を **[!UICONTROL By value]** **[!UICONTROL ここにデータフィールドを追加]** にドラッグ&amp;ドロップします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -1005,16 +1005,16 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    折れ線グラフと積み重ね柱状グラフが更新されます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップのユースケース 5 グラフ ](assets/uc5-pbi-chart.png)
+   ![Power BI デスクトップのユースケース 5 グラフ &#x200B;](assets/uc5-pbi-chart.png)
 
 1. 折れ線グラフおよび積み重ね柱状グラフのビジュアライゼーションで：
 
-   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択します。
    1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。
 
-   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](assets/uc5-pbi-final.png)
+   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション &#x200B;](assets/uc5-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -1023,7 +1023,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `31/12/2023` の期間を指定します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
 
-      ![Tableau Desktop フィルター ](assets/uc5-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](assets/uc5-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 購入]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。 値は自動的に **[!UICONTROL SUM （Purchases）]** に変換されます。
@@ -1038,7 +1038,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop グラフ ](assets/uc5-tableau-graph.png)
+   ![Tableau Desktop グラフ &#x200B;](assets/uc5-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
@@ -1050,7 +1050,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop データ ](assets/uc5-tableau-data.png)
+   ![Tableau Desktop データ &#x200B;](assets/uc5-tableau-data.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -1065,13 +1065,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションで、「**[!UICONTROL 製品名]**」を選択します。
 1. 左パネルの「**[!UICONTROL ‣カスタムフィールド]**」セクションから：
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから「**[!UICONTROL カスタム測定]**」を選択します。
@@ -1081,7 +1081,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから **[!UICONTROL カスタム測定]** をもう一度選択します。 **[!UICONTROL カスタムを作成]** メジャーダイアログで、
       1. **[!UICONTROL 測定するフィールド]** ドロップダウンメニューから **[!UICONTROL 購入]** を選択します。
@@ -1093,20 +1093,20 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. 両方のフィールドがデータビューに自動的に追加されます。
 1. 別の **[!UICONTROL フィルター]** を追加する場合は「**[!UICONTROL + フィルター]** を選択し、データを制限する場合は「制限」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、「**[!UICONTROL ‣カスタムフィールド]**」を選択し、「**[!UICONTROL 購入収益]**」を選択します。
-1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの **[!UICONTROL が]** 次を含む `1000000` **** AND`2000000` になります。
+1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの **[!UICONTROL が]** 次を含む `1000000` **&#x200B;**&#x200B;AND`2000000` になります。
 1. 「**[!UICONTROL 実行]**」を選択します。
 1. 「**[!UICONTROL ‣ビジュアライゼーション]**」を選択して、折れ線グラフのビジュアライゼーションを表示します。
 1. **[!UICONTROL ビジュアライゼーション]** の「**[!UICONTROL 編集]**」を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
    1. 「**[!UICONTROL シリーズ]** タブを選択します。
    1. 下にスクロールして **[!UICONTROL 購入]** を表示し、**[!UICONTROL タイプ]** を **[!UICONTROL 行]** に変更します。
    1. 「**[!UICONTROL Y]**」タブを選択します。
-   1. **[!UICONTROL 左側の 1]** コンテナから **[!UICONTROL 購入]** を **[!UICONTROL *ここにシリーズをドラッグして新しい左軸を作成&#x200B;*]**にドラッグします。 このアクションにより、**[!UICONTROL  左 2 ]**コンテナが作成されます。
-      ![Looker ビジュアライゼーション設定 ](assets/uc5-looker-visualization.png)
-   1. ![ 編集 ](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
+   1. **[!UICONTROL 左側の 1]** コンテナから **[!UICONTROL 購入]** を **[!UICONTROL *ここにシリーズをドラッグして新しい左軸を作成&#x200B;*]**&#x200B;にドラッグします。 このアクションにより、**[!UICONTROL &#x200B; 左 2 &#x200B;]**&#x200B;コンテナが作成されます。
+      ![Looker ビジュアライゼーション設定 &#x200B;](assets/uc5-looker-visualization.png)
+   1. ![&#x200B; 編集 &#x200B;](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](assets/uc5-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](assets/uc5-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -1131,12 +1131,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc5-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc5-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    library(tidyr)
@@ -1157,7 +1157,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc5-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1172,7 +1172,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 ユースケースの例 **[!UICONTROL 複数のDimensionのランク付け]** パネルを次に示します。
 
-![Customer Journey Analyticsの複数のDimensionのランクパネル ](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analyticsの複数のDimensionのランクパネル &#x200B;](assets/cja-multiple-dimension-ranked.png)
 
 +++
 
@@ -1180,7 +1180,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1201,12 +1201,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
    1. 「**[!UICONTROL 購入の合計]**」を選択します。
 
 1. 縦棒グラフをテーブルに変更するには、テーブルが選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから **[!UICONTROL マトリックス]** を選択します。
-   * **[!UICONTROL product_name]** を **[!UICONTROL 列]** からドラッグし、[!UICONTROL  行 ] の****[!UICONTROL product_categor]****y の下にあるフィールドを **[!UICONTROL ビジュアライゼーション]** ペインにドロップします。
+   * **[!UICONTROL product_name]** を **[!UICONTROL 列]** からドラッグし、[!UICONTROL &#x200B; 行 &#x200B;] の&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_categor]&#x200B;**&#x200B;**&#x200B;y の下にあるフィールドを **[!UICONTROL ビジュアライゼーション]** ペインにドロップします。
 
 1. テーブル内に表示される製品の数を制限するには、**[!UICONTROL フィルター]** ペインで **[!UICONTROL product_name is （All）]** を選択します。
 
    1. **[!UICONTROL 詳細フィルター]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]****[!UICONTROL 上位 N]****[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`15`**[!UICONTROL 値別]** を選択します。
+   1. **[!UICONTROL フィルタータイプ]**&#x200B;**[!UICONTROL 上位 N]**&#x200B;**[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**`15`**[!UICONTROL 値別]** を選択します。
    1. **[!UICONTROL データ]** ペインから **[!UICONTROL 購入]** を **[!UICONTROL ここにデータフィールドを追加]** にドラッグします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -1214,7 +1214,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. テーブルの各カテゴリを分類するには、製品カテゴリレベルで **[!UICONTROL +]** を選択します。 Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションのランク付けマトリックス テーブル ](assets/uc6-powerbi-data.png)
+   ![Power BI Desktop の複数ディメンションのランク付けマトリックス テーブル &#x200B;](assets/uc6-powerbi-data.png)
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -1228,7 +1228,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションのランクツリーマップ ](assets/uc6-powerbi-treemap.png)
+   ![Power BI Desktop の複数ディメンションのランクツリーマップ &#x200B;](assets/uc6-powerbi-treemap.png)
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -1245,7 +1245,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションが最終ランクに ](assets/uc6-powerbi-final.png) りました
+   ![Power BI Desktop の複数ディメンションが最終ランクに &#x200B;](assets/uc6-powerbi-final.png) りました
 
 
 >[!TAB Tableau Desktop]
@@ -1270,7 +1270,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数ディメンションのランク付けカテゴリ ](assets/uc6-tableau-category.png)
+      ![Tableau Desktop 複数ディメンションのランク付けカテゴリ &#x200B;](assets/uc6-tableau-category.png)
 
 1. 現在の **[!UICONTROL シート 1]** シートの名前を `Category` に変更します。
 1. **[!UICONTROL 新規ワークシート]** を選択して新規シートを作成し、名前を `Data` に変更します。
@@ -1289,7 +1289,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop の複数Dimensionのランクデータ ](assets/uc6-tableau-data.png)
+      ![Tableau Desktop の複数Dimensionのランクデータ &#x200B;](assets/uc6-tableau-data.png)
 
 1. **[!UICONTROL 新規ワークシート]** を選択して新しいシートを作成し、名前を **[!UICONTROL ツリーマップ]** に変更します。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
@@ -1306,7 +1306,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop の複数Dimensionのランクデータ ](assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop の複数Dimensionのランクデータ &#x200B;](assets/uc6-tableau-treemap.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL カテゴリ]** シートを **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビュー（「シートをここにドロップ *」と表示される* にドラッグ&amp;ドロップします。
@@ -1321,13 +1321,13 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
    1. **[!UICONTROL 製品カテゴリ]** を選択します。
    1. **[!UICONTROL 製品名]** を選択します。
@@ -1339,7 +1339,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Sum of Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから **[!UICONTROL カスタム測定]** をもう一度選択します。 **[!UICONTROL カスタムを作成]** メジャーダイアログで、
       1. **[!UICONTROL 測定するフィールド]** ドロップダウンメニューから **[!UICONTROL 購入]** を選択します。
@@ -1356,16 +1356,16 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 1. **[!UICONTROL ビジュアライゼーション]** の「**[!UICONTROL 編集]**」を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
    1. 「**[!UICONTROL プロット]**」タブを選択します。
    1. 下にスクロールして、「**[!UICONTROL グラフ設定を編集]**」を選択します。
-   1. 以下のスクリーンショットに示すように **** グラフ設定（上書き）で JSON を変更し、「**[!UICONTROL プレビュー]**」を選択します。
+   1. 以下のスクリーンショットに示すように **&#x200B;**&#x200B;グラフ設定（上書き）で JSON を変更し、「**[!UICONTROL プレビュー]**」を選択します。
 
-      ![Looker 検証設定 ](assets/uc6-looker-visualization.png)
+      ![Looker 検証設定 &#x200B;](assets/uc6-looker-visualization.png)
 
    1. 「**[!UICONTROL 適用]**」を選択します。
-   1. ![ 編集 ](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
+   1. ![&#x200B; 編集 &#x200B;](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](assets/uc6-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](assets/uc6-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -1391,12 +1391,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc6-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc6-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Multiple dimensions ranked
@@ -1410,7 +1410,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc6-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc6-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1426,11 +1426,11 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 商品名の個別カウントについてレポートするには、Customer Journey Analyticsで、**[!UICONTROL タイトル]**`Product Name (Count Distinct)` と **[!UICONTROL 外部 ID]**`product_name_count_distinct` を使用する計算指標を設定します。
 
-![Customer Journey Analytics製品名（Distincr カウント）の計算指標 ](assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics製品名（Distincr カウント）の計算指標 &#x200B;](assets/cja-calc-metric-distinct-count-product-names.png)
 
 次に、その指標をユースケースの例の **[!UICONTROL 個別のDimension値をカウント]** パネルで使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -1438,7 +1438,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1448,7 +1448,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** パネルからこのページの **[!UICONTROL フィルター]** に **[!UICONTROL daterangeday]** をドラッグ&amp;ドロップします。
    1. **[!UICONTROL このページのフィルター]** から **[!UICONTROL daterangeday is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
@@ -1459,7 +1459,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル ](assets/uc7-powerbi-table.png)
+   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](assets/uc7-powerbi-table.png)
 
 1. テーブルビジュアライゼーションを選択します。 コンテキストメニューから **[!UICONTROL コピー]**/**[!UICONTROL ビジュアルをコピー]** を選択します。
 1. **[!UICONTROL ctrl+v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
@@ -1467,14 +1467,14 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル ](assets/uc7-powerbi-final.png)
+   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](assets/uc7-powerbi-final.png)
 
 または、Power BIの個別カウント機能を使用できます。
 
 1. **[!UICONTROL product_name]** ディメンションを選択します。
 1. **[!UICONTROL Count （Distinct）]** 関数を **[!UICONTROL Columns]** の **[!UICONTROL product_name]** ディメンションに適用します。
 
-   ![ 個別Power BI数 ](assets/uc7-powerbi-alternative.png)
+   ![&#x200B; 個別Power BI数 &#x200B;](assets/uc7-powerbi-alternative.png)
 
 
 
@@ -1523,22 +1523,22 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 1. **[!UICONTROL Cm の製品名の個別カウント]** ではなく **[!UICONTROL 製品名]** を使用します。
 1. **[!UICONTROL Marks]** の **[!UICONTROL 製品名]** に **[!UICONTROL Measure]** > **[!UICONTROL Count （Distinct）]** を適用します。
 
-   ![Tableau の個別カウント ](assets/uc7-tableau-alternative.png)
+   ![Tableau の個別カウント &#x200B;](assets/uc7-tableau-alternative.png)
 
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
    1. **[!UICONTROL Daterange Date]** を選択してから、**[!UICONTROL Date]** を選択します。
    1. **[!UICONTROL 製品名]** の「**⋮詳細**」コンテキストメニューから「**[!UICONTROL 個別‣カウントを集計]**」を選択します。
-      ![Looker 製品名コンテキストメニュー ](assets/uc7-looker-count-distinct.png)
+      ![Looker 製品名コンテキストメニュー &#x200B;](assets/uc7-looker-count-distinct.png)
 1. 「**[!UICONTROL 実行]**」を選択します。
 1. 「**[!UICONTROL ‣ ビジュアライゼーション]**」を選択し、ツールバーの「6︎⃣」を選択して 1 つの値のビジュアライゼーションを表示します。
 
@@ -1560,12 +1560,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc7-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc7-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Count Distinct
@@ -1577,7 +1577,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc7-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc7-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1593,11 +1593,11 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 日付範囲を使用してレポートを作成するには、Customer Journey Analyticsで **[!UICONTROL タイトル]** `Last Year 2023` を使用して日付範囲を設定します。
 
-![Customer Journey Analytics フィルターに日付範囲名を使用 ](assets/cja-daterange.png)
+![Customer Journey Analytics フィルターに日付範囲名を使用 &#x200B;](assets/cja-daterange.png)
 
 次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでその日付範囲を使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](assets/cja-using-date-range-filter-names-to-filter.png)
 
 フリーフォームテーブルのビジュアライゼーションで定義された日付範囲が、パネルに適用される日付範囲をどのように上書きするかに注意してください。
 
@@ -1607,7 +1607,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1630,7 +1630,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
    適用した **[!UICONTROL daterangeName]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc8-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -1649,7 +1649,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
@@ -1683,7 +1683,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-input.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc8-jupyter-input.png)
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -1707,12 +1707,12 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc8-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc8-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year
@@ -1730,7 +1730,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc8-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1746,11 +1746,11 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 
 Customer Journey Analyticsで使用するセグメントを調べます。
 
-![Customer Journey Analytics フィルター名を使用してフィルター ](assets/cja-fishing-products.png)
+![Customer Journey Analytics フィルター名を使用してフィルター &#x200B;](assets/cja-fishing-products.png)
 
 次に、使用例の **[!UICONTROL セグメント名をセグメントに使用]** パネルでそのセグメントを使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](assets/cja-using-filter-names-to-filter.png)
 
 +++
 
@@ -1758,7 +1758,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1780,13 +1780,13 @@ Customer Journey Analyticsで使用するセグメントを調べます。
    1. **[!UICONTROL 検索]** フィールドの下で、**[!UICONTROL 釣り商品]** を選択します。これは、Customer Journey Analyticsで定義されている既存のフィルターの名前です。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、**[!UICONTROL filterName]** を **[!UICONTROL Columns]** から削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して **[!UICONTROL Daterange]** を **[!UICONTROL Columns]** から削除します。
 
    適用した **[!UICONTROL filterName]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc9-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](assets/uc9-powerbi-final.png)
 
 
 >[!TAB Tableau Desktop]
@@ -1808,13 +1808,13 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択して、別のフィルターを追加します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
@@ -1850,7 +1850,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-input.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc9-jupyter-input.png)
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -1875,12 +1875,12 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc9-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc9-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切なフィルター名を使用していることを確認してください。 例：`Fishing Products`。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。 適切なフィルター名を使用していることを確認してください。 例：`Fishing Products`。
 
    ```R
    ## Dimension filtered by name
@@ -1894,7 +1894,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc9-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc9-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1911,11 +1911,11 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新しいセグメント `Hunting Products` 作成します。
 
-![Customer Journey Analytics Dimension値を使用してセグメント化 ](assets/cja-hunting-products.png)
+![Customer Journey Analytics Dimension値を使用してセグメント化 &#x200B;](assets/cja-hunting-products.png)
 
 次に、使用例の **[!UICONTROL Dimension値を使用してフィルターを適用]** パネルでそのセグメントを使用できます。
 
-![Customer Journey Analytics個別カウント値 ](assets/cja-using-dimension-values-to-filter.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](assets/cja-using-dimension-values-to-filter.png)
 
 +++
 
@@ -1923,7 +1923,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -1945,14 +1945,14 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 基本フィルタリング]** を選択します。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. **[!UICONTROL product_category]** の **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 基本フィルター]** を選択し、使用可能な値のリストから **[!UICONTROL ハンティング]** を選択します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、**[!UICONTROL filterName]** を **[!UICONTROL Columns]** から削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して **[!UICONTROL Daterange]** を **[!UICONTROL Columns]** から削除します。
 
    適用した **[!UICONTROL product_category]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc10-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](assets/uc10-powerbi-final.png)
 
 
 
@@ -1978,14 +1978,14 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 >[!TAB Looker]
 
-1. 1 で。 Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. 1 で。 Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択して、別のフィルターを追加します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
@@ -2014,7 +2014,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-input.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc10-jupyter-input.png)
 
 1. ドロップダウンメニューから **[!UICONTROL ハンティング]** を選択します。
 
@@ -2040,12 +2040,12 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc10-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc10-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切なカテゴリを使用していることを確認します。 例：`Hunting`。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。 適切なカテゴリを使用していることを確認します。 例：`Hunting`。
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2059,7 +2059,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc10-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -2075,7 +2075,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 このユースケースでは、例えば **[!UICONTROL 並べ替え]** パネルを使用します。
 
-![Customer Journey Analytics並べ替えパネル ](assets/cja-sort.png)
+![Customer Journey Analytics並べ替えパネル &#x200B;](assets/cja-sort.png)
 
 +++
 
@@ -2083,7 +2083,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -2099,7 +2099,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
 
 1. ビジュアライゼーション パネルで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、Columns から daterange を削除します。
@@ -2109,7 +2109,7 @@ Customer Journey Analyticsで **[!UICONTROL タイトル]** を使用して新�
 
    Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc11-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](assets/uc11-powerbi-final.png)
 
 BI 拡張機能を使用してPower BI Desktop が実行するクエリには、`sort` ステートメントが含まれていません。 `sort` ステートメントがないということは、並べ替えがクライアントサイドで実行されることを意味します。
 
@@ -2215,7 +2215,7 @@ limit 1000001
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 並べ替え ](assets/uc11-tableau-final.png)
+      ![Tableau Desktop 並べ替え &#x200B;](assets/uc11-tableau-final.png)
 
 BI 拡張機能を使用して Tableau Desktop で実行されるクエリには、`sort` ステートメントが含まれていません。 この `sort` ステートメントがないということは、並べ替えがクライアント側で実行されることを意味します。
 
@@ -2231,14 +2231,14 @@ GROUP BY 1
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションで、「**[!UICONTROL 製品名]**」を選択します。
 1. 左パネルの「**[!UICONTROL ‣カスタムフィールド]**」セクションから：
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから「**[!UICONTROL カスタム測定]**」を選択します。
@@ -2248,7 +2248,7 @@ GROUP BY 1
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Sum of Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
 1. **[!UICONTROL 購入収益]** 列で **[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順：1]**）を選択していることを確認します。
 1. 「**[!UICONTROL 実行]**」を選択します。
@@ -2293,14 +2293,14 @@ FETCH NEXT 500 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc11-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc11-jupyter-results.png)
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Dimension 1 Sorted
@@ -2314,7 +2314,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc11-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc11-rstudio-results.png)
 
 RStudio が BI 拡張機能を使用して生成するクエリには `ORDER BY` が含まれています。これは、RStudio と BI 拡張機能を通じて順序が適用されることを意味します。
 
@@ -2345,7 +2345,7 @@ LIMIT 1000
 
 このユースケースの例では **[!UICONTROL 制限]** パネルは次のようになります。
 
-![Customer Journey Analytics制限パネル ](assets/cja-limit.png)
+![Customer Journey Analytics制限パネル &#x200B;](assets/cja-limit.png)
 
 +++
 
@@ -2353,7 +2353,7 @@ LIMIT 1000
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -2372,7 +2372,7 @@ LIMIT 1000
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL product_name は（すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 上位 N]** を選択します。
-   1. 「**[!UICONTROL 項目を表示]****[!UICONTROL 上位]**」 `5` 「**[!UICONTROL 値別]**」を選択します。
+   1. 「**[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**」 `5` 「**[!UICONTROL 値別]**」を選択します。
    1. **[!UICONTROL データ]** ペインから **[!UICONTROL 合計回数]** をドラッグ&amp;ドロップし、「**[!UICONTROL データフィールドをここに追加]**」にドロップします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -2381,7 +2381,7 @@ LIMIT 1000
 
    Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](assets/uc12-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](assets/uc12-powerbi-final.png)
 
 BI 拡張機能を使用してPower BI Desktop が実行するクエリには、`limit` ステートメントが含まれていますが、想定されたステートメントは含まれていません。 Power BI デスクトップでは、明示的な製品名の結果を使用して、上位 5 件の発生件数の制限が適用されます。
 
@@ -2484,7 +2484,7 @@ limit 1000001
       1. **[!UICONTROL フィールド別：]** **[!UICONTROL 上位]** `5` **[!UICONTROL 発生件数別]** **[!UICONTROL 合計]** を選択します。
       1. **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
 
-         ![AlertRed](/help/assets/icons/AlertRed.svg) テーブルが消えていることがわかります。 発生件数別に上位 5 つの製品名を選択しても、このフィルターを使用して正しく機能しない **** 場合。
+         ![AlertRed](/help/assets/icons/AlertRed.svg) テーブルが消えていることがわかります。 発生件数別に上位 5 つの製品名を選択しても、このフィルターを使用して正しく機能しない **&#x200B;**&#x200B;場合。
       1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL 製品名]** を選択し、ドロップダウンメニューから **[!UICONTROL 削除]** を選択します。 テーブルが再び表示されます。
    1. **[!UICONTROL マーク]** シェルフで **[!UICONTROL SUM （発生件数）]** を選択します。 ドロップダウンメニューから **[!UICONTROL フィルター]** を選択します。
       1. **[!UICONTROL フィルタ \[ オカレンス\]]** ダイアログで **[!UICONTROL 最低]** を選択します。
@@ -2492,7 +2492,7 @@ limit 1000001
 
          Tableau Desktop は次のようになります。
 
-         ![Tableau Desktop の制限 ](assets/uc12-tableau-final.png)
+         ![Tableau Desktop の制限 &#x200B;](assets/uc12-tableau-final.png)
 
 上に示すように、Tableau Desktop が実行するこのクエリは、製品名に対して上位 5 件の発生フィルターを定義すると失敗します。
 
@@ -2525,14 +2525,14 @@ GROUP BY 1
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
    1. **[!UICONTROL 製品名]** を選択します。
    1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
@@ -2579,13 +2579,13 @@ FETCH NEXT 5 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc12-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc12-jupyter-results.png)
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Dimension 1 Limited
@@ -2600,7 +2600,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc12-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc12-rstudio-results.png)
 
 RStudio が BI 拡張機能を使用して生成するクエリには `LIMIT 5` が含まれています。これは、RStudio と BI 拡張機能によって制限が適用されることを意味します。
 
@@ -2626,8 +2626,8 @@ LIMIT 5
 
 +++ Customer Journey Analytics
 
-Customer Journey Analyticsでは、データセットのコンポーネントを [ ディメンション ](/help/data-views/data-views.md) および [ 指標 ](/help/components/dimensions/overview.md) として公開する方法を [ データビュー ](/help/components/apply-create-metrics.md) で定義します。 このディメンションと指標の定義は、BI 拡張機能を使用して BI ツールに公開されます。
-[ フィルター ](/help/components/segments/seg-overview.md)、[ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md)、[ 日付範囲 ](/help/components/date-ranges/overview.md) などのコンポーネントをWorkspace プロジェクトの一部として使用します。 これらのコンポーネントは、BI 拡張機能を使用して BI ツールにも公開されます。
+Customer Journey Analyticsでは、データセットのコンポーネントを [&#x200B; ディメンション &#x200B;](/help/data-views/data-views.md) および [&#x200B; 指標 &#x200B;](/help/components/dimensions/overview.md) として公開する方法を [&#x200B; データビュー &#x200B;](/help/components/apply-create-metrics.md) で定義します。 このディメンションと指標の定義は、BI 拡張機能を使用して BI ツールに公開されます。
+[&#x200B; フィルター &#x200B;](/help/components/segments/seg-overview.md)、[&#x200B; 計算指標 &#x200B;](/help/components/calc-metrics/calc-metr-overview.md)、[&#x200B; 日付範囲 &#x200B;](/help/components/date-ranges/overview.md) などのコンポーネントをWorkspace プロジェクトの一部として使用します。 これらのコンポーネントは、BI 拡張機能を使用して BI ツールにも公開されます。
 
 +++
 
@@ -2635,7 +2635,7 @@ Customer Journey Analyticsでは、データセットのコンポーネントを
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](#connect-and-validate) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](#connect-and-validate) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -2645,34 +2645,34 @@ Customer Journey Analyticsでは、データセットのコンポーネントを
 Customer Journey Analytics オブジェクトは「**[!UICONTROL データ]**」ペインで使用でき、Power BI Desktop で選択したテーブルから取得されます。 例えば、**[!UICONTROL public.cc_data_view]** と指定します。 テーブルの名前は、Customer Journey Analyticsのデータビューに対して定義した外部 ID と同じです。 例えば、**[!UICONTROL タイトル]**`C&C - Data View` と **[!UICONTROL 外部 ID]**`cc_data_view` のデータビューなどです。
 
 **寸法**
-Customer Journey Analytics内のディメンションは、[!UICONTROL  コンポーネント ID] で識別されます。 [!UICONTROL  コンポーネント ID] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]** には、Power BI Desktop のディメンションの名前である [!UICONTROL  コンポーネント ID]**[!UICONTROL product_name]** が含まれています。
+Customer Journey Analytics内のディメンションは、[!UICONTROL &#x200B; コンポーネント ID] で識別されます。 [!UICONTROL &#x200B; コンポーネント ID] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]** には、Power BI Desktop のディメンションの名前である [!UICONTROL &#x200B; コンポーネント ID]&#x200B;**[!UICONTROL product_name]** が含まれています。
 **[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]** など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]** などの形式で使用できます。
 
 **指標**
-Customer Journey Analyticsの指標は、[!UICONTROL  コンポーネント ID] で識別されます。 [!UICONTROL  コンポーネント ID] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には、Power BI Desktop の指標の名前である [!UICONTROL  コンポーネント ID]**[!UICONTROL purchase_revenue]** があります。 **[!UICONTROL ∑]** は指標を示します。 任意のビジュアライゼーションで指標を使用すると、指標の名前が **[!UICONTROL 合計 *指標&#x200B;*]**に変更されます。
+Customer Journey Analyticsの指標は、[!UICONTROL &#x200B; コンポーネント ID] で識別されます。 [!UICONTROL &#x200B; コンポーネント ID] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には、Power BI Desktop の指標の名前である [!UICONTROL &#x200B; コンポーネント ID]&#x200B;**[!UICONTROL purchase_revenue]** があります。 **[!UICONTROL ∑]** は指標を示します。 任意のビジュアライゼーションで指標を使用すると、指標の名前が **[!UICONTROL 合計 *指標&#x200B;*]**&#x200B;に変更されます。
 
 **フィルター**
 Customer Journey Analyticsで定義したフィルターは、「**[!UICONTROL filterName]**」フィールドの一部として使用できます。 Power BI Desktop で **[!UICONTROL filterName]** フィールドを使用すると、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL  外部 ID] によって識別されます。 例えば、計算指標 **[!UICONTROL Product Name （Count Distinct）]** は [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** を持ち、Power BI Desktop では**[!UICONTROL cm_product_name_count_distinct]**t と表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL &#x200B; 外部 ID] によって識別されます。 例えば、計算指標 **[!UICONTROL Product Name （Count Distinct）]** は [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** を持ち、Power BI Desktop では&#x200B;**[!UICONTROL cm_product_name_count_distinct]**&#x200B;t と表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義する日付範囲は、「**[!UICONTROL daterangeName]**」フィールドの一部として使用できます。 **[!UICONTROL daterangeName]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Power BI Desktop は、[Data Analysis Expressions （DAX） ](https://learn.microsoft.com/en-us/dax/dax-overview) を使用したカスタム変換機能を提供します。 例えば、商品名が小文字の [ 単一のディメンションのランク付け ](#single-dimension-ranked) ユースケースを実行するとします。
+Power BI Desktop は、[Data Analysis Expressions （DAX） &#x200B;](https://learn.microsoft.com/en-us/dax/dax-overview) を使用したカスタム変換機能を提供します。 例えば、商品名が小文字の [&#x200B; 単一のディメンションのランク付け &#x200B;](#single-dimension-ranked) ユースケースを実行するとします。
 
 1. レポート表示で、棒グラフ ビジュアライゼーションを選択します。
 1. データ・ペインで **[!UICONTROL product_name]** を選択します。
 1. ツールバーの **[!UICONTROL 新しい列]** を選択します。
 1. 式エディターで、`product_name_lower` のように `product_name_lower = LOWER('public.cc_data_view[product_name])` という名前の新しい列を定義します。
-   ![Power BI デスクトップの下位への変換 ](assets/uc14-powerbi-transformation.png)
+   ![Power BI デスクトップの下位への変換 &#x200B;](assets/uc14-powerbi-transformation.png)
 1. **[!UICONTROL product_name]** 列ではなく、必ず **[!UICONTROL Data]** ペインの新しい **[!UICONTROL product_name_lower]** 列を選択してください。
-1. テーブルビジュアライゼーションの **[!UICONTROL 詳細]** から ![ テーブルとしてレポート ](/help/assets/icons/More.svg) を選択します。
+1. テーブルビジュアライゼーションの **[!UICONTROL 詳細]** から ![&#x200B; テーブルとしてレポート &#x200B;](/help/assets/icons/More.svg) を選択します。
 
    Power BI デスクトップは次のようになります。
-   ![Power BI デスクトップ変換の最終版 ](assets/uc14-powerbi-final.png)
+   ![Power BI デスクトップ変換の最終版 &#x200B;](assets/uc14-powerbi-final.png)
 
 カスタム変換の結果、SQL クエリが更新されます。 以下の SQL の例で、`lower` 関数の使用を参照してください。
 
@@ -2720,27 +2720,27 @@ limit 1000001
 Customer Journey Analytics オブジェクトは、シートで作業する際に **[!UICONTROL データ]** 側のバーで使用できます。 およびは、Tableau の **[!UICONTROL データソース]** ページの一部として選択したテーブルから取得されます。 例えば、**[!UICONTROL cc_data_view]** と指定します。 テーブルの名前は、Customer Journey Analyticsのデータビューに対して定義した外部 ID と同じです。 例えば、**[!UICONTROL タイトル]**`C&C - Data View` と **[!UICONTROL 外部 ID]**`cc_data_view` のデータビューなどです。
 
 **寸法**
-Customer Journey Analytics内のディメンションは、[!UICONTROL  コンポーネント名 ] で識別されます。 [!UICONTROL  コンポーネント名 ] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]** には、Tableau のディメンションの名前である [!UICONTROL  コンポーネント名 ]**[!UICONTROL 製品名]** が含まれています。 すべてのディメンションは、**[!UICONTROL Abc]** で識別されます。
+Customer Journey Analytics内のディメンションは、[!UICONTROL &#x200B; コンポーネント名 &#x200B;] で識別されます。 [!UICONTROL &#x200B; コンポーネント名 &#x200B;] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]** には、Tableau のディメンションの名前である [!UICONTROL &#x200B; コンポーネント名 &#x200B;]&#x200B;**[!UICONTROL 製品名]** が含まれています。 すべてのディメンションは、**[!UICONTROL Abc]** で識別されます。
 **[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]** など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]** などの形式で使用できます。 日付範囲次元を使用する場合は、ドロップダウンメニューから日付範囲次元に適用する日付または時間の適切な定義を選択する必要があります。 例えば、**[!UICONTROL Year]**、**[!UICONTROL Quarter]**、**[!UICONTROL Month]**、**[!UICONTROL Day]** などです。
 
 **指標**
-Customer Journey Analyticsの指標は、[!UICONTROL  コンポーネント名 ] で識別されます。 [!UICONTROL  コンポーネント名 ] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には、Tableau の指標の名前である [!UICONTROL  コンポーネント名 ] **[!UICONTROL 購入売上高]** があります。 すべての指標は、**[!UICONTROL #]** によって識別されます。 任意のビジュアライゼーションで指標を使用すると、指標の名前が **[!UICONTROL Sum （*metric*）]** に変更されます。
+Customer Journey Analyticsの指標は、[!UICONTROL &#x200B; コンポーネント名 &#x200B;] で識別されます。 [!UICONTROL &#x200B; コンポーネント名 &#x200B;] は、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には、Tableau の指標の名前である [!UICONTROL &#x200B; コンポーネント名 &#x200B;] **[!UICONTROL 購入売上高]** があります。 すべての指標は、**[!UICONTROL #]** によって識別されます。 任意のビジュアライゼーションで指標を使用すると、指標の名前が **[!UICONTROL Sum （*metric*）]** に変更されます。
 
 **フィルター**
 Customer Journey Analyticsで定義したフィルターは、「**[!UICONTROL フィルター名]** フィールドの一部として使用できます。 Tableau で「**[!UICONTROL フィルター名]**」フィールドを使用する場合、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL  タイトル ] によって識別されます。 例えば、計算指標 **[!UICONTROL 製品名（Count Distinct）]** は [!UICONTROL  タイトル ]**[!UICONTROL 製品名（Count Distinct）]** を持ち、Tableau では **[!UICONTROL Cm 製品名の Count Distinct]** と表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL &#x200B; タイトル &#x200B;] によって識別されます。 例えば、計算指標 **[!UICONTROL 製品名（Count Distinct）]** は [!UICONTROL &#x200B; タイトル &#x200B;]&#x200B;**[!UICONTROL 製品名（Count Distinct）]** を持ち、Tableau では **[!UICONTROL Cm 製品名の Count Distinct]** と表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義した日付範囲は、「**[!UICONTROL Daterange Name]**」フィールドの一部として使用できます。 **[!UICONTROL Daterange Name]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm) を使用したカスタム変換機能を提供します。 例えば、商品名が小文字の [ 単一のディメンションのランク付け ](#single-dimension-ranked) ユースケースを実行するとします。
+Tableau Desktop は、[&#x200B; 計算フィールド &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm) を使用したカスタム変換機能を提供します。 例えば、商品名が小文字の [&#x200B; 単一のディメンションのランク付け &#x200B;](#single-dimension-ranked) ユースケースを実行するとします。
 
 1. メインメニューから **[!UICONTROL 分析]**/**[!UICONTROL 計算フィールドを作成]** を選択します。
    1. 関数 **[!UICONTROL を使用して]** 小文字の製品名 `LOWER([Product Name])` を定義します。
-      ![Tableau 計算フィールド ](assets/uc14-tableau-calculated-field.png)
+      ![Tableau 計算フィールド &#x200B;](assets/uc14-tableau-calculated-field.png)
    1. **[!UICONTROL OK]** を選択します。
 1. **[!UICONTROL データ]** シートを選択します。
    1. **[!UICONTROL テーブル]** から **[!UICONTROL 小文字の製品名]** をドラッグし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
@@ -2749,7 +2749,7 @@ Tableau Desktop は、[ 計算フィールド ](https://help.tableau.com/current
 
 Tableau Desktop は次のようになります。
 
-![ 変換後の Tableau Desktop](assets/uc14-tableau-final.png)
+![&#x200B; 変換後の Tableau Desktop](assets/uc14-tableau-final.png)
 
 カスタム変換の結果、SQL クエリが更新されます。 以下の SQL の例で、`LOWER` 関数の使用を参照してください。
 
@@ -2768,34 +2768,34 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 Customer Journey Analytics オブジェクトは、**[!UICONTROL 参照]** インターフェイスで使用できます。 およびは、Looker での接続、プロジェクト、モデルの設定の一環として取得されます。 例えば、**[!UICONTROL cc_data_view]** と指定します。 ビューの名前は、Customer Journey Analyticsのデータビューに対して定義した外部 ID と同じです。 例えば、**[!UICONTROL タイトル]**`C&C - Data View` と **[!UICONTROL 外部 ID]**`cc_data_view` のデータビューなどです。
 
 **寸法**
-Customer Journey Analyticsのディメンションは、{Cc データビュー **[!UICONTROL の左パネルに]** 2}DIMENSION **[!UICONTROL として表示されます。]**&#x200B;ディメンションは、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]** には、Looker のディメンションの名前である **[!UICONTROL DIMENSION]****[!UICONTROL Product Name]** が含まれています。
+Customer Journey Analyticsのディメンションは、{Cc データビュー **[!UICONTROL の左パネルに]** 2}DIMENSION **[!UICONTROL として表示されます。]**&#x200B;ディメンションは、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]** には、Looker のディメンションの名前である **[!UICONTROL DIMENSION]**&#x200B;**[!UICONTROL Product Name]** が含まれています。
 **[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]** など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday 日]**、**[!UICONTROL Daterangeweek 日]**、**[!UICONTROL Daterangemonth 日]** などの形式で使用できます。  日付範囲ディメンションを使用する場合は、日付または時間の適切な定義を選択する必要があります。 例えば、**[!UICONTROL Year]**、**[!UICONTROL Quarter]**、**[!UICONTROL Month]**、**[!UICONTROL Date]** などです。
 
 **指標**
-Customer Journey Analyticsの指標は、{Cc データビュー **[!UICONTROL の左レールに]** 2}DIMENSION **[!UICONTROL として表示されます。]**&#x200B;例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には **[!UICONTROL DIMENSION]****[!UICONTROL 購入売上高]** があります。 実際にを指標として使用するには、上記の例に示すようにカスタム測定フィールドを作成するか、ディメンションにショートカットを使用します。 例えば、「**[!UICONTROL ⋮]**」を選択し、「**[!UICONTROL 集計]**」を選択したあと、「**[!UICONTROL 合計]**」を選択します。
+Customer Journey Analyticsの指標は、{Cc データビュー **[!UICONTROL の左レールに]** 2}DIMENSION **[!UICONTROL として表示されます。]**&#x200B;例えば、Customer Journey Analyticsの **[!UICONTROL 購入売上高]** 指標には **[!UICONTROL DIMENSION]**&#x200B;**[!UICONTROL 購入売上高]** があります。 実際にを指標として使用するには、上記の例に示すようにカスタム測定フィールドを作成するか、ディメンションにショートカットを使用します。 例えば、「**[!UICONTROL ⋮]**」を選択し、「**[!UICONTROL 集計]**」を選択したあと、「**[!UICONTROL 合計]**」を選択します。
 
 **フィルター**
 Customer Journey Analyticsで定義したフィルターは、「**[!UICONTROL フィルター名]** フィールドの一部として使用できます。 Looker で **[!UICONTROL フィルター名]** フィールドを使用する場合、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL  タイトル ] によって識別されます。 例えば、計算指標 **[!UICONTROL 製品名（個別カウント）]** は [!UICONTROL  タイトル ]**[!UICONTROL 製品名（個別カウント）を持ち]** Looker では **[!UICONTROL Cm 製品名カウント個別カウント]** として表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した [!UICONTROL &#x200B; タイトル &#x200B;] によって識別されます。 例えば、計算指標 **[!UICONTROL 製品名（個別カウント）]** は [!UICONTROL &#x200B; タイトル &#x200B;]&#x200B;**[!UICONTROL 製品名（個別カウント）を持ち]** Looker では **[!UICONTROL Cm 製品名カウント個別カウント]** として表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義した日付範囲は、「**[!UICONTROL Daterange Name]**」フィールドの一部として使用できます。 **[!UICONTROL Daterange Name]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-前述のように、Looker では、カスタムフィールドビルダーを使用してカスタム変換機能を提供しています。 例えば、商品名が小文字の [ 単一のディメンションのランク付け ](#single-dimension-ranked) ユースケースを実行するとします。
+前述のように、Looker では、カスタムフィールドビルダーを使用してカスタム変換機能を提供しています。 例えば、商品名が小文字の [&#x200B; 単一のディメンションのランク付け &#x200B;](#single-dimension-ranked) ユースケースを実行するとします。
 
 1. 左パネルの「**[!UICONTROL ‣カスタムフィールド]**」セクションから：
    1. **[!UICONTROL +追加]** ドロップダウンメニューから **[!UICONTROL カスタムDimension]** を選択します。
    1. `lower(${cc_data_view.product_name})` 式 **[!UICONTROL テキスト領域に]** を入力します。 `Product Name` を入力し始めると、正しい構文で支援されます。
-      ![Looker 変換の例 ](assets/uc14-looker-transformation.png)
+      ![Looker 変換の例 &#x200B;](assets/uc14-looker-transformation.png)
    1. `product name` 名前 **[!UICONTROL として]** と入力します。
    1. 「**[!UICONTROL 保存]**」を選択します。
 
 次のようなテーブルが表示されます。
 
-![Looker 変換結果 ](assets/uc14-looker-result.png)
+![Looker 変換結果 &#x200B;](assets/uc14-looker-result.png)
 
 
 カスタム変換の結果、SQL クエリが更新されます。 以下の SQL の例で、`LOWER` 関数の使用を参照してください。
@@ -2834,7 +2834,7 @@ Customer Journey Analytics オブジェクト （ディメンション、指標�
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](assets/uc13-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](assets/uc13-jupyter-results.png)
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
@@ -2844,7 +2844,7 @@ Customer Journey Analytics コンポーネント（ディメンション、指�
 
 **カスタム変換**
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    df <- dv %>%
@@ -2858,7 +2858,7 @@ Customer Journey Analytics コンポーネント（ディメンション、指�
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](assets/uc13-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](assets/uc13-rstudio-results.png)
 
 RStudio が BI 拡張機能を使用して生成するクエリには `lower` が含まれています。これは、カスタム変換が RStudio と BI 拡張機能によって実行されることを意味します。
 
@@ -2886,7 +2886,7 @@ Customer Journey Analyticsで使用可能なビジュアライゼーションが
 
 +++ Customer Journey Analytics
 
-Customer Journey Analyticsには多数のビジュアライゼーションがあります。 使用可能なすべてのビジュアライゼーションの概要と概要については、[ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を参照してください。
+Customer Journey Analyticsには多数のビジュアライゼーションがあります。 使用可能なすべてのビジュアライゼーションの概要と概要については、[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を参照してください。
 
 +++
 
@@ -2902,40 +2902,40 @@ Customer Journey Analyticsには多数のビジュアライゼーションがあ
 
 | アイコン | Customer Journey Analyticsのビジュアライゼーション | Power BI デスクトップビジュアライゼーション |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [ 面グラフ、積み重ね面グラフ、100% 面グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [ 集合縦棒グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [ 積み重ね柱状グラフおよび 100% 積み重ね柱状グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [&#x200B; 面グラフ、積み重ね面グラフ、100% 面グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [&#x200B; 集合縦棒グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [&#x200B; 積み重ね柱状グラフおよび 100% 積み重ね柱状グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) |  |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [ 折れ線グラフおよび積み重ね柱状グラフおよび折れ線グラフおよび集合柱状グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | [ ドーナツグラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
+| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [&#x200B; 折れ線グラフおよび積み重ね柱状グラフおよび折れ線グラフおよび集合柱状グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | [&#x200B; ドーナツグラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts)。 |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | 分解ツリー？ |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Table](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) および [Matrix](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) |  |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 集合棒グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 積み重ね棒グラフおよび 100% 積み重ね棒グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [ 分解ツリー ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 集合棒グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 積み重ね棒グラフおよび 100% 積み重ね棒グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [&#x200B; 分解ツリー &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [主要指標の概要](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [ 折れ線グラフ ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
-| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | [ 散布図 ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md) | [ テキストボックス ](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [ カード ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
-| ![123](/help/assets/icons/123.svg)</p> | [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [ カード ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
-| ![テキスト](/help/assets/icons/Text.svg) | [テキスト](/help/analysis-workspace/visualizations/text.md) | [ テキストボックス ](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [&#x200B; 折れ線グラフ &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | [&#x200B; 散布図 &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md) | [&#x200B; テキストボックス &#x200B;](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [&#x200B; カード &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
+| ![123](/help/assets/icons/123.svg)</p> | [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [&#x200B; カード &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
+| ![テキスト](/help/assets/icons/Text.svg) | [テキスト](/help/analysis-workspace/visualizations/text.md) | [&#x200B; テキストボックス &#x200B;](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md)<p> | [ツリーマップ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![タイプ](/help/assets/icons/TwoDots.svg) | [ベン図](/help/analysis-workspace/visualizations/venn.md) | |
 
 
 ### ドリルダウン
 
-Power BIでは、特定のビジュアライゼーションの詳細を調べる [ ドリルモード ](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) をサポートしています。 次の例では、製品カテゴリの購入売上高を分析します。 製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL ドリルダウン]**」を選択できます。
+Power BIでは、特定のビジュアライゼーションの詳細を調べる [&#x200B; ドリルモード &#x200B;](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) をサポートしています。 次の例では、製品カテゴリの購入売上高を分析します。 製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL ドリルダウン]**」を選択できます。
 
-![Power BIのドリルダウン ](assets/uc15-powerbi-drilldown.png)
+![Power BIのドリルダウン &#x200B;](assets/uc15-powerbi-drilldown.png)
 
 ドリルダウンすると、選択した製品カテゴリ内の製品の購入売上高でビジュアライゼーションが更新されます。
 
-![Power BIのドリルアップ ](assets/uc15-powerbi-drillup.png)
+![Power BIのドリルアップ &#x200B;](assets/uc15-powerbi-drillup.png)
 
 ドリルダウンすると、`WHERE` 句を使用する次の SQL クエリが生成されます。
 
@@ -2985,22 +2985,22 @@ limit 1001
 
 | アイコン | Customer Journey Analyticsのビジュアライゼーション | Power BI デスクトップビジュアライゼーション |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [ 面グラフ ](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [ 棒グラフ ](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [&#x200B; 面グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [&#x200B; 棒グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md) |  |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) | [ ブレットグラフ ](https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) | [&#x200B; ブレットグラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm) |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [ 複合グラフ ](https://help.tableau.com/current/pro/desktop/en-us/qs_combo_charts.htm) |
+| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [&#x200B; 複合グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/qs_combo_charts.htm) |
 | ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) |  |
-| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [ テキスト テーブル ](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm) |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [&#x200B; テキスト テーブル &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | [ヒストグラム](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 棒グラフ ](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 棒グラフ ](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 棒グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 棒グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
 | ![Branch3](/help/assets/icons/Branch3.svg) | [ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [主要指標の概要](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [ 折れ線グラフ ](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [&#x200B; 折れ線グラフ &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | [散布図](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md) |  |
 | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | |
@@ -3012,13 +3012,13 @@ limit 1001
 
 ### ドリルダウン
 
-Tableau は [ ドリルモード ](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) から [ 階層 ](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm) までサポートしています。 次の例では、**[!UICONTROL テーブル]** 内の **[!UICONTROL 製品名]** フィールドを選択して階層を作成し、**[!UICONTROL 製品カテゴリ]** の上にドラッグします。 次に、製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL + ドリルダウン]**」を選択します。
+Tableau は [&#x200B; ドリルモード &#x200B;](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) から [&#x200B; 階層 &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm) までサポートしています。 次の例では、**[!UICONTROL テーブル]** 内の **[!UICONTROL 製品名]** フィールドを選択して階層を作成し、**[!UICONTROL 製品カテゴリ]** の上にドラッグします。 次に、製品カテゴリを表すバーのコンテキストメニューから、「**[!UICONTROL + ドリルダウン]**」を選択します。
 
-![Tableau のドリルダウン ](assets/uc15-tableau-drilldown.png)
+![Tableau のドリルダウン &#x200B;](assets/uc15-tableau-drilldown.png)
 
 ドリルダウンすると、選択した製品カテゴリ内の製品の購入売上高でビジュアライゼーションが更新されます。
 
-![Tableau のドリルアップ ](assets/uc15-tableau-drillup.png)
+![Tableau のドリルアップ &#x200B;](assets/uc15-tableau-drillup.png)
 
 ドリルダウンの結果、GROUP BY 句を使用する次の SQL 問合せが生成されます。
 
@@ -3034,11 +3034,11 @@ GROUP BY 1,
 
 クエリでは、選択した製品カテゴリに結果が制限 **されません**。選択した製品カテゴリが表示されるのはビジュアライゼーションのみです。
 
-![Tableau のドリルアップ ](assets/uc15-tableau-drillup2.png)
+![Tableau のドリルアップ &#x200B;](assets/uc15-tableau-drillup2.png)
 
 または、あるビジュアルが別のビジュアルでの選択の結果であるドリルダウン・ダッシュボードを作成することもできます。 次の例では、**[!UICONTROL 製品カテゴリ]** ビジュアライゼーションをフィルターとして使用して、**[!UICONTROL 製品名]** テーブルを更新しています。 このビジュアライゼーションフィルターはクライアント専用であり、追加の SQL クエリは生成されません。
 
-![Tableau ビジュアライゼーションフィルター ](assets/uc15-tableau-visualizationfilter.png)
+![Tableau ビジュアライゼーションフィルター &#x200B;](assets/uc15-tableau-visualizationfilter.png)
 
 
 >[!TAB Looker]
@@ -3049,29 +3049,29 @@ GROUP BY 1,
 
 | アイコン | Customer Journey Analyticsのビジュアライゼーション | Power BI デスクトップビジュアライゼーション |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [ 面グラフ ](https://cloud.google.com/looker/docs/area-options) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [ 棒グラフ ](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [ 棒グラフ ](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) | [ ブレットグラフ ](https://cloud.google.com/looker/docs/bullet-chart) |
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面グラフ](/help/analysis-workspace/visualizations/area.md) | [&#x200B; 面グラフ &#x200B;](https://cloud.google.com/looker/docs/area-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [&#x200B; 棒グラフ &#x200B;](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md) | [&#x200B; 棒グラフ &#x200B;](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [ブレット](/help/analysis-workspace/visualizations/bullet-graph.md) | [&#x200B; ブレットグラフ &#x200B;](https://cloud.google.com/looker/docs/bullet-chart) |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [コホートテーブル](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [ ビジュアライゼーションのカスタマイズ ](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
+| ![コンボ](/help/assets/icons/ComboChart.svg) | [コンボ](/help/analysis-workspace/visualizations/combo-charts.md) | [&#x200B; ビジュアライゼーションのカスタマイズ &#x200B;](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
 | ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [ドーナツ](/help/analysis-workspace/visualizations/donut.md) | [ドーナツ](https://cloud.google.com/looker/docs/donut-multiples-options) |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [ファネル](https://cloud.google.com/looker/docs/funnel-options) |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | [ サンキー ](https://cloud.google.com/looker/docs/sankey) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md) | [&#x200B; サンキー &#x200B;](https://cloud.google.com/looker/docs/sankey) |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [テーブル](https://cloud.google.com/looker/docs/table-options) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [ヒストグラム](/help/analysis-workspace/visualizations/histogram.md) | |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 棒グラフ ](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [ 棒グラフ ](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 棒グラフ &#x200B;](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [積み重ね横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md) | [&#x200B; 棒グラフ &#x200B;](https://cloud.google.com/looker/docs/bar-options) |
 | ![Branch3](/help/assets/icons/Branch3.svg) | [ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [主要指標の概要](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [ 折れ線グラフ ](https://cloud.google.com/looker/docs/line-options) |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折れ線グラフ](/help/analysis-workspace/visualizations/line.md) | [&#x200B; 折れ線グラフ &#x200B;](https://cloud.google.com/looker/docs/line-options) |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散布図](/help/analysis-workspace/visualizations/scatterplot.md) | [散布図](https://cloud.google.com/looker/docs/scatter-options) |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [セクションヘッダー](/help/analysis-workspace/visualizations/section-header.md) |  |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [ 単一値 ](https://cloud.google.com/looker/docs/single-value-options) |
-| ![123](/help/assets/icons/123.svg)</p> | [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [ 単一値 ](https://cloud.google.com/looker/docs/single-value-options) |
-| ![テキスト](/help/assets/icons/Text.svg) | [テキスト](/help/analysis-workspace/visualizations/text.md) | [ 単一値 ](https://cloud.google.com/looker/docs/single-value-options) |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [&#x200B; 単一値 &#x200B;](https://cloud.google.com/looker/docs/single-value-options) |
+| ![123](/help/assets/icons/123.svg)</p> | [数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md) | [&#x200B; 単一値 &#x200B;](https://cloud.google.com/looker/docs/single-value-options) |
+| ![テキスト](/help/assets/icons/Text.svg) | [テキスト](/help/analysis-workspace/visualizations/text.md) | [&#x200B; 単一値 &#x200B;](https://cloud.google.com/looker/docs/single-value-options) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [ツリーマップ](/help/analysis-workspace/visualizations/treemap.md) | [ツリーマップ](https://cloud.google.com/looker/docs/treemap) |
-| ![タイプ](/help/assets/icons/TwoDots.svg) | [ ベン図 ](/help/analysis-workspace/visualizations/venn.md) | [ ベン図 ](https://cloud.google.com/looker/docs/venn) |
+| ![タイプ](/help/assets/icons/TwoDots.svg) | [&#x200B; ベン図 &#x200B;](/help/analysis-workspace/visualizations/venn.md) | [&#x200B; ベン図 &#x200B;](https://cloud.google.com/looker/docs/venn) |
 
 >[!TAB Jupyter Notebook]
 
@@ -3103,7 +3103,7 @@ R のデータビジュアライゼーションパッケージである **ggplot
 * Power BI Desktop の高度な日付範囲フィルタリングは排他的です。  終了日には、レポートする日付の後の日付を選択する必要があります。 例えば、「**[!UICONTROL が次の日付以降である]**`1/1/2023`**[!UICONTROL および次の日付以前である]**`1/2/2023` などです。
 * Power BI Desktop では、接続作成時にデフォルトで **[!UICONTROL 読み込み]** が設定されます。 必ず **[!UICONTROL 直接クエリ]** を使用してください。
 * Power BI Desktop は、Power Query を使用してデータ変換を公開します。  Power Query は主にインポート型接続で動作するので、日付や文字列関数などの多くの変換を適用すると、インポート型接続に切り替える必要があるというエラーがスローされます。  クエリ時にデータを変換する必要がある場合は、Power BIが変換自体を行う必要がないように、派生ディメンションと指標を使用する必要があります。
-* Power BI Desktop は、日時型の列の処理方法を理解していません。そのため、**[!UICONTROL daterange *hour *]**や**[!UICONTROL daterangeminute ]**などの**[!UICONTROL daterange ]**X ディメンションはサポートされていません。
+* Power BI Desktop は、日時型の列の処理方法を理解していません。そのため、**[!UICONTROL daterange *hour *]**&#x200B;や&#x200B;**[!UICONTROL daterangeminute &#x200B;]**&#x200B;などの&#x200B;**[!UICONTROL daterange &#x200B;]**&#x200B;X ディメンションはサポートされていません。
 * Power BI デスクトップは、デフォルトで、より多くのクエリサービスセッションを使用して複数の接続を確立しようとします。  プロジェクトのPower BI設定に移動し、並列クエリを無効にします。
 * Power BI デスクトップは、クライアントサイドのすべての並べ替えと制限を行います。 Power BI Desktop には、結び付けられた値を含む上位 *X* フィルタリング用の異なるセマンティクスもあります。 そのため、Analysis Workspaceで行うのと同じ並べ替えと制限を作成することはできません。
 * 2024 年 10 月リリースの以前のバージョンのPower BI デスクトップでは、PostgreSQL データソースが破損しています。 この記事で説明されているバージョンを使用してください。

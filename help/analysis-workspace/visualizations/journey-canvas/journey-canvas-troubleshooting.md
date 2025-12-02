@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーや顧客に提供するジャーニーを分析し、深いインサイトを得ることができます。
 
-ジャーニー キャンバスについて詳しくは、[ジャーニー キャンバスの概要 ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) および [ジャーニー キャンバス ビジュアライゼーションの設定 ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
+ジャーニー キャンバスについて詳しくは、[ジャーニー キャンバスの概要 &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) および [ジャーニー キャンバス ビジュアライゼーションの設定 &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) を参照してください。
 
 次の情報は、ジャーニーの後半に発生するノードで、ジャーニーの前半に発生するノードよりも高い割合や数が表示されるなど、予期しない結果が発生する場合のトラブルシューティングに役立ちます。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスでは任意の指標を主要指標として使用できるので、ジャーニーの後半のノードで、ジャーニーの前半のノードより高い割合や数が表示される場合があります。
 
-![ 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-higher-percentage.png)
+![&#x200B; 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-higher-percentage.png)
 
 次のシナリオで使用するジャーニーは、次の設定で設定されます。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 この例では、ジャーニーのコンテナ設定である「ユーザー」が、後続のセッションで 3 番目のノードのイベント（「チェックアウト」）がカウントされることを決定する際に重要な役割を果たします。
 
-また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [ の ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)ジャーニーキャンバスビジュアライゼーションの作成を開始 [ を参照してください ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+また、コンテナ設定が「セッション」に設定されている場合、後続の訪問の 3 番目のノードでのみ発生したイベントはジャーニーでカウントされません。ジャーニーに表示される統計は、特定のユーザーの単一の定義済みセッションに制限されるからです。 コンテナ設定について詳しくは、「ジャーニーキャンバスビジュアライゼーションの設定 [&#x200B; の &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)ジャーニーキャンバスビジュアライゼーションの作成を開始 [&#x200B; を参照してください &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 ジャーニーキャンバスを使用すると、1 つのジャーニーに複数の開始ノードを含めて、複数のパスを作成できます。 これらのパスは共通のノードに収束する可能性があり、ジャーニーの後半に来るノードは、ジャーニーの前半に来るノードよりも高い割合または数を示します。
 
-![ 複数のパスが 1 つのノードに収束するジャーニー ](assets/journey-canvas-percentage-converge.png)
+![&#x200B; 複数のパスが 1 つのノードに収束するジャーニー &#x200B;](assets/journey-canvas-percentage-converge.png)
 
 <!--
 
@@ -91,7 +91,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 このジャーニーのノードには、「**[!UICONTROL パーセンテージ値]**」フィールドが「**[!UICONTROL 開始ノードのパーセント]** に設定されている場合、次の統計が含まれます。
 
-![ 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-higher-percentage.png)
+![&#x200B; 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-higher-percentage.png)
 
 | ノード | 統計 |
 |---------|----------|
@@ -105,7 +105,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 このジャーニーのノードには、「**[!UICONTROL パーセンテージ値]**」フィールドが「**[!UICONTROL 前のノードのパーセント]** に設定されている場合、次の統計が含まれます。
 
-![ 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-percentage-previous.png)
+![&#x200B; 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-percentage-previous.png)
 
 | ノード | 統計 |
 |---------|----------|
@@ -119,7 +119,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 このジャーニーのノードには、「**[!UICONTROL パーセンテージ値]**」フィールドが **[!UICONTROL 合計パーセント]** に設定されている場合、次の統計が含まれます。
 
-![ 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-percentage-total.png)
+![&#x200B; 前のノードよりも割合が高いノードを持つジャーニー](assets/journey-canvas-percentage-total.png)
 
 | ノード | 統計 |
 |---------|----------|

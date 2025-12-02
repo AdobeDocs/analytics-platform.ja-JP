@@ -43,20 +43,20 @@ ht-degree: 11%
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび ](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [ を参照してください ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)
+B2B ルックアップスキーマ、プロファイルスキーマおよびイベントスキーマ間の関係は、Experience Platform内の B2B 設定で定義されます。 [Real-Time Customer Data Platform B2B editionのスキーマおよび &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)Real-Time Customer Data Platform B2B editionの 2 つのスキーマ間の多対 1 の関係の定義 [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)
 
 
 B2B データのユーザーベースの検索をサポートする接続を適切に設定するには、概要について次の図を使用し、次の手順に従います。
 
-注釈付きの ![B2B スキーマ ](assets/b2b-schemas-annotated.svg)
+注釈付きの ![B2B スキーマ &#x200B;](assets/b2b-schemas-annotated.svg)
 
 1. 上記のテーブルから接続にデータセットを追加します。
 1. 接続に追加する各ルックアップデータセットについて、**[!UICONTROL データセットを編集]** ダイアログで **[!UICONTROL キー]** と **[!UICONTROL 一致するキー]** を使用して、イベントデータセットへの関係を明示的に定義する必要があります。
-1. ユーザーベースの B2B 検索で変換する各検索データセットについて、**[!UICONTROL データセットを変換]** を有効にして、ユーザーベースの検索でデータが確実に変換されるようにします。 詳しくは、[B2B ルックアップ用のデータセットの変換 ](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
+1. ユーザーベースの B2B 検索で変換する各検索データセットについて、**[!UICONTROL データセットを変換]** を有効にして、ユーザーベースの検索でデータが確実に変換されるようにします。 詳しくは、[B2B ルックアップ用のデータセットの変換 &#x200B;](/help/connections/transform-datasets-b2b-lookups.md) を参照してください。
 
-   ![ キー – 一致するキー ](assets/key-matchingkey.png)
+   ![&#x200B; キー – 一致するキー &#x200B;](assets/key-matchingkey.png)
 
-   次の表に、各データセットの [!UICONTROL  ユーザー ID]、[!UICONTROL  キー ] および [!UICONTROL  一致するキー ] の例の値の概要の例を示します。
+   次の表に、各データセットの [!UICONTROL &#x200B; ユーザー ID]、[!UICONTROL &#x200B; キー &#x200B;] および [!UICONTROL &#x200B; 一致するキー &#x200B;] の例の値の概要の例を示します。
 
    >[!IMPORTANT]
    >
@@ -68,18 +68,18 @@ B2B データのユーザーベースの検索をサポートする接続を適�
    |---|---|---|---|
    | B2B アクティビティデータセット | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B 人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
-   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
-   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**❸<br/> |
-   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
-   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
-   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
-   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❼ |
-   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**❽ |
+   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | B2B 商談データセット | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/> （B2B 商談関係データセット） <br/>**opportunityKey.sourceKey**&#x200B;❷ |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/> （B2B マーケティングリストメンバーデータセット） <br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❺ |
+   | B2B オポチュニティ人物関係データセット | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❻ |
+   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❼ |
+   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 
-データセットの設定を構成する方法について詳しくは、[ データセットの追加と構成 ](../../connections/create-connection.md) を参照してください。
+データセットの設定を構成する方法について詳しくは、[&#x200B; データセットの追加と構成 &#x200B;](../../connections/create-connection.md) を参照してください。
 
 
 ## データビュー
@@ -92,7 +92,7 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 
 >[!IMPORTANT]
 >
->以下の表の指標とその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス ]）** は **例** です。 特定の状況に関連する B2B 指標（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>以下の表の指標とその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス &#x200B;]）** は **例** です。 特定の状況に関連する B2B 指標（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
 >
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
@@ -111,7 +111,7 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 
 >[!IMPORTANT]
 >
->以下の表のディメンションとその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス ]）** は **例** です。 特定の状況に関連する B2B ディメンション（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>以下の表のディメンションとその値（**コンポーネント名**、**データセット**、**データセットタイプ**、**[!UICONTROL スキーマパス &#x200B;]）** は **例** です。 特定の状況に関連する B2B ディメンション（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
 >
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
@@ -137,5 +137,5 @@ Workspace プロジェクトを作成する際に、関連する B2B ディメ�
 
 以下は、上記の接続とデータビューに依存するサンプルプロジェクトのスクリーンショットです。 ビジュアライゼーションの説明では、変換された B2B ルックアップデータに依存するフリーフォームテーブルビジュアライゼーションについて説明します。
 
-![ サンプルプロジェクト ](assets/sample-workspace-project.png)
+![&#x200B; サンプルプロジェクト &#x200B;](assets/sample-workspace-project.png)
 
