@@ -3,7 +3,7 @@ description: ディメンション、指標、セグメントおよび関数を�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 100%
@@ -200,5 +200,5 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 >[!MORELIKETHIS]
 >
 >[関数の使用](cm-using-functions.md)
->>[セグメント](/help/components/segments/seg-overview.md)
+>[セグメント](/help/components/segments/seg-overview.md)
 >

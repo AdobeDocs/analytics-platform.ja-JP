@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 50%
@@ -49,7 +49,7 @@ XDM オブジェクトを使用してデータを収集する代わりに、デ�
 
 ## メリットとデメリット
 
-どちらの方法も同じタスクを実行するので、この方法は [Customer Journey AnalyticsでAppMeasurement データ収集ロジックを使用する &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md) と相互排他的です。
+どちらの方法も同じタスクを実行するので、この方法は [Customer Journey AnalyticsでAppMeasurement データ収集ロジックを使用する ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md) と相互排他的です。
 
 このアップグレードの代替手段を使用する場合のメリットとデメリットを次に示します。
 

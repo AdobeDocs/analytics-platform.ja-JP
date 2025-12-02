@@ -1,12 +1,12 @@
 ---
 title: Analytics ソースコネクタデータと Adobe Analytics の比較
 description: Adobe Analytics と Customer Journey Analytics で同様のレポートを表示する際のデータの違いについて理解します。
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
-source-git-commit: d96404479aabe6020566e693245879b5ad4fad9c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 100%

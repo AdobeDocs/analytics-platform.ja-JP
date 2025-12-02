@@ -4,7 +4,7 @@ title: 日付範囲の概要
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Workspace プロジェクトでは、通常、パネル内の[カレンダー](/
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327348?captions=jpn&format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++

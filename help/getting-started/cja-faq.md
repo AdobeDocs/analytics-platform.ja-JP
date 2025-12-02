@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 99%
@@ -145,7 +145,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## &#x200B;5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
@@ -155,7 +155,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 | 目的 | 結果 |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。また、この削除されたサンドボックスに関連する接続、データビュー、指標およびディメンションも削除されます。 | |
+| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。また、この削除されたサンドボックスに関連する接続、データビュー、指標およびディメンションも削除されます。 |
 | [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上の[!UICONTROL データセット]が関連付けられている[!UICONTROL スキーマ]を削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
 | [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platform データレイクでデータセットを削除すると、そのデータセットからそのデータセットを含む Customer Journey Analytics 接続へのデータフローが停止します。そのデータセットのデータは、関連付けられた Customer Journey Analytics 接続から自動的に削除されます。 |
 | [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 保存した接続内のデータセットの削除プロセスを実行するには、アドビのアカウントチームにお問い合わせください。 |

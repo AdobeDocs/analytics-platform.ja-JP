@@ -4,7 +4,7 @@ title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 69%
@@ -43,11 +43,11 @@ ht-degree: 69%
    >
    >複数のセグメントは AND で結合されますが、ディメンション項目や指標などの複数の項目は OR で結合されます。
 
-   ![&#x200B; ハイライト表示されたページ :CamerRoll またはページ：カメラタッチポイント。](assets/fallout-or.png)
+   ![ ハイライト表示されたページ :CamerRoll またはページ：カメラタッチポイント。](assets/fallout-or.png)
 
 1. パス内の&#x200B;**次のイベントまで（*最後まで*ではなく）個別のタッチポイントを抑制**&#x200B;することもできます。次に示すように、各タッチポイントの下には「**[!UICONTROL 最終パス]**」と「**[!UICONTROL 次のイベント]**」オプションを切り替えることができるセレクターがあります。
 
-   ![&#x200B; 「最終パス」オプションをハイライト表示したすべての訪問ビュー。](assets/fallout-nexthit.png)
+   ![ 「最終パス」オプションをハイライト表示したすべての訪問ビュー。](assets/fallout-nexthit.png)
 
    | オプション | 説明 |
    |---|---|
@@ -80,14 +80,14 @@ ht-degree: 69%
 | **[!UICONTROL トレンドタッチポイント]** | 折れ線グラフのタッチポイントのトレンドデータを、一部の事前に作成された異常値検出データと共に表示します。 |
 | **[!UICONTROL トレンドタッチポイント（%）]** | 合計フォールアウト数の割合のトレンドを追跡します。 |
 | **[!UICONTROL すべてのタッチポイント（%）のトレンドを追跡]** | フォールアウトのすべてのタッチポイントの割合（**[!UICONTROL すべての人物]**&#x200B;が含まれている場合はこれを除く）のトレンドを同じグラフに表示します。 |
-| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。これにより、ディメンションを示すフリーフォームテーブルが作成されます。 テーブルの寸法やその他の要素を置き換えることができます。 例えば、**[!UICONTROL フォールスルー：すべての人物/ページがホームのいずれかと等しく]**、ディメンションとして **[!UICONTROL ページ]** を含み、**[!UICONTROL プロジェクトのみのクイックセグメント]**&#x200B;[&#x200B; フォールスルー：すべての人物/ページがホームのいずれかと等しい &#x200B;](/help/components/segments/seg-quick.md) でセグメント化された **[!UICONTROL 人物]** を含むテーブルがあります。 セグメントを調べて、フォールスルーセグメントの決定方法を理解します。 |
-| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | funnelを通過しなかった人物が選択したステップの直後に取った行動を確認します。 これにより、ディメンションを示すフリーフォームテーブルが作成されます。 テーブルの寸法やその他の要素を置き換えることができます。 例えば、「**[!UICONTROL フォールアウト：人物/ページがホームのいずれかと等しい]** というラベルが付いたテーブルに、ディメンションとして **[!UICONTROL ページ]** が含まれ、**[!UICONTROL プロジェクトのみのクイックセグメント]**&#x200B;[&#x200B; フォールスルー：すべての訪問者/ページがホームのいずれかと等しい &#x200B;](/help/components/segments/seg-quick.md)**[!UICONTROL 人物]** セグメントが含まれているとします。 セグメントを調べて、フォールアウトセグメントの決定方法を理解します。 |
+| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。これにより、ディメンションを示すフリーフォームテーブルが作成されます。 テーブルの寸法やその他の要素を置き換えることができます。 例えば、**[!UICONTROL フォールスルー：すべての人物/ページがホームのいずれかと等しく]**、ディメンションとして **[!UICONTROL ページ]** を含み、**[!UICONTROL プロジェクトのみのクイックセグメント]**[ フォールスルー：すべての人物/ページがホームのいずれかと等しい ](/help/components/segments/seg-quick.md) でセグメント化された **[!UICONTROL 人物]** を含むテーブルがあります。 セグメントを調べて、フォールスルーセグメントの決定方法を理解します。 |
+| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | funnelを通過しなかった人物が選択したステップの直後に取った行動を確認します。 これにより、ディメンションを示すフリーフォームテーブルが作成されます。 テーブルの寸法やその他の要素を置き換えることができます。 例えば、「**[!UICONTROL フォールアウト：人物/ページがホームのいずれかと等しい]** というラベルが付いたテーブルに、ディメンションとして **[!UICONTROL ページ]** が含まれ、**[!UICONTROL プロジェクトのみのクイックセグメント]**[ フォールスルー：すべての訪問者/ページがホームのいずれかと等しい ](/help/components/segments/seg-quick.md)**[!UICONTROL 人物]** セグメントが含まれているとします。 セグメントを調べて、フォールアウトセグメントの決定方法を理解します。 |
 | **[!UICONTROL タッチポイントからセグメントを作成]** | 選択したタッチポイントから新しいセグメントを作成します。 |
 
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

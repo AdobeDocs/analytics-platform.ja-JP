@@ -4,7 +4,7 @@ title: 計算指標テンプレート
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 83%
@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # 計算指標テンプレート
 
-Customer Journey Analyticsは、最も一般的なユースケースに対応するために、次の計算指標テンプレートを提供します。 これらのAdobeで定義された計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、&lbrace; コンポーネントフィルター ![&#x200B; の &#x200B;](/help/assets/icons/Label.svg) ラベル **&#x200B;**&#x200B;[Adobe テンプレート &#x200B;](/help/components/overview.md#filter) を選択します。
+Customer Journey Analyticsは、最も一般的なユースケースに対応するために、次の計算指標テンプレートを提供します。 これらのAdobeで定義された計算指標は、小さな ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴで識別されます。 これらの指標をすばやくフィルタリングするには、{ コンポーネントフィルター ![ の ](/help/assets/icons/Label.svg) ラベル **** [Adobe テンプレート ](/help/components/overview.md#filter) を選択します。
 
 | 計算指標名 | 説明<br/>数式 |
 |---------|----------|

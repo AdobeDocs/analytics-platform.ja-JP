@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 10%
@@ -249,14 +249,14 @@ Customer Journey Analytics B2B editionを設定する前に、収集する各フ
 
 人物レコードは、レコード（プロファイル）ベースのスキーマと、人物データを含む 1 つ以上のデータセットを通じてサポートされています。 そのようなデータセットで通常使用可能な人物データの例については、以下を参照（ソリューションデザインリファレンスの例に基づく）してください。
 
-![B2B 人物スキーマおよびデータセット &#x200B;](assets/b2b-person-schema-datasets.png)
+![B2B 人物スキーマおよびデータセット ](assets/b2b-person-schema-datasets.png)
 
 
 ### アカウントデータ
 
 アカウントレコードは、レコード（ルックアップ）レコードベースのスキーマと、アカウントデータを含む 1 つ以上のデータセットを通じてサポートされています。 そのようなデータセットで通常使用可能なアカウントデータの例については、以下を参照（ソリューションデザインリファレンスの例に基づく）してください。
 
-![B2B アカウントスキーマとデータセット &#x200B;](assets/b2b-account-schema-datasets.png)
+![B2B アカウントスキーマとデータセット ](assets/b2b-account-schema-datasets.png)
 
 
 ### SKU データ
@@ -264,41 +264,41 @@ Customer Journey Analytics B2B editionを設定する前に、収集する各フ
 SKU レコードは、レコード（ルックアップ）ベースのスキーマと、SKU データを含む 1 つ以上のデータセットを通じてサポートされています。 そのようなデータセットで通常使用可能な SKU データの例については、以下を参照してください（ソリューションデザインリファレンスの例に基づく）。
 
 
-![B2B SKU スキーマとデータセット &#x200B;](assets/b2b-sku-schema-datasets.png)
+![B2B SKU スキーマとデータセット ](assets/b2b-sku-schema-datasets.png)
 
 
 ## 接続
 
 Customer Journey Analyticsでアカウントベースの接続を定義して、イベント、アカウント、人物、SKU の各データセットからレコードを取り込み、結合します。
 
-1. Customer Journey Analyticsで [&#x200B; 新しい接続を作成 &#x200B;](/help/connections/create-connection.md) します。
+1. Customer Journey Analyticsで [ 新しい接続を作成 ](/help/connections/create-connection.md) します。
 1. 接続のわかりやすい名前と説明を入力します。
-1. ![&#x200B; ビル &#x200B;](/help/assets/icons/Building.svg) **[!UICONTROL アカウント]** を **[!UICONTROL プライマリID]** として選択します。
+1. ![ ビル ](/help/assets/icons/Building.svg) **[!UICONTROL アカウント]** を **[!UICONTROL プライマリID]** として選択します。
 1. すべての **[!UICONTROL オプションコンテナ]** を選択します。
 1. 好みのサンドボックスを選択し、毎日のイベントの平均数を推定します。
 
-   ![B2B アカウントベースの接続 &#x200B;](assets/b2b-connection-account-based.png)
+   ![B2B アカウントベースの接続 ](assets/b2b-connection-account-based.png)
 
 1. **[!UICONTROL データセットを追加]** を選択し、イベント、アカウント、人物および SKU のデータを含む B2B データセットを追加します。
 
-   ![B2B 接続 – データセットを追加 &#x200B;](assets/b2b-connection-add-datasets.png)
+   ![B2B 接続 – データセットを追加 ](assets/b2b-connection-add-datasets.png)
 
 1. 「**[!UICONTROL 次へ]**」を選択して、選択した各データセットの設定を指定します。
 1. イベントデータセットの場合、必ず **[!UICONTROL アカウント ID]**、**[!UICONTROL グローバルアカウント ID]**、**[!UICONTROL オポチュニティ ID]**、**[!UICONTROL 購入グループ ID]** および **[!UICONTROL 人物 ID]** の ID に対応する適切なフィールドを選択してください。
 
-   ![B2B 接続 – イベントデータセット &#x200B;](assets/b2b-connection-add-datasets-event-data.png) 追加
+   ![B2B 接続 – イベントデータセット ](assets/b2b-connection-add-datasets-event-data.png) 追加
 
 1. 下にスクロールして、アカウントレコードデータセットを設定します。 **[!UICONTROL グローバルアカウント]** コンテナのアカウントに一致するように、正しい識別子（**[!UICONTROL Account_ID]**）を選択していることを確認してください。 正しい識別子（**[!UICONTROL Account_ID]**）を **[!UICONTROL グローバルアカウントフィールド]** として選択します。
 
-   ![B2B 接続 – アカウントデータセットを追加 &#x200B;](assets/b2b-connection-add-datasets-account-data.png)
+   ![B2B 接続 – アカウントデータセットを追加 ](assets/b2b-connection-add-datasets-account-data.png)
 
 1. 下にスクロールして、人物レコードデータセットを設定します。 **[!UICONTROL ユーザー]** コンテナでユーザーに一致する正しいキー（**[!UICONTROL ユーザー ID]**）を選択していることを確認します。 **[!UICONTROL グローバルアカウント]** フィールドに一致する適切な ID （**[!UICONTROL Profile_Account_ID_Individual]**）を選択します。
 
-   ![B2B 接続 – ユーザーデータセットを追加 &#x200B;](assets/b2b-connection-add-datasets-person-data.png)
+   ![B2B 接続 – ユーザーデータセットを追加 ](assets/b2b-connection-add-datasets-person-data.png)
 
 1. 下にスクロールして、SKU レコードデータセットを設定します。 正しいキー（**[!UICONTROL Sku]**）を選択していることを確認します。 このデータに対して設定または使用できるコンテナがないため、「**[!UICONTROL フィールドで一致]**」を選択します。 イベントデータセット（**[!UICONTROL SKU （イベントデータセット）]**）の「SKU」フィールドを一致するキーとして選択します。
 
-   ![B2B 接続 – SKU データセットを追加 &#x200B;](assets/b2b-connection-add-datasets-sku-data.png)
+   ![B2B 接続 – SKU データセットを追加 ](assets/b2b-connection-add-datasets-sku-data.png)
 
 1. 「**[!UICONTROL データセットを追加]**」を選択して、データセットとその設定済みの設定を保存します。
 
@@ -312,54 +312,54 @@ Customer Journey Analyticsでアカウントベースの接続を定義して、
 
 ### 設定
 
-1. Customer Journey Analyticsで [&#x200B; 新しいデータビューを作成 &#x200B;](/help/data-views/data-views.md) します。
+1. Customer Journey Analyticsで [ 新しいデータビューを作成 ](/help/data-views/data-views.md) します。
 1. 前に作成した接続を選択します（例：**[!UICONTROL B2B デモ接続（ExL）]**）。
 1. データビューの名前を指定します。 例：`B2B Demo Data view (ExL)`、オプションで説明。
 1. 必要に応じて、コンテナの名前を変更します。 または、デフォルトのコンテナ名に固定します。
 
-   ![B2B データ表示 – 設定 &#x200B;](assets/b2b-dataview-configure.png)
+   ![B2B データ表示 – 設定 ](assets/b2b-dataview-configure.png)
 1. 「**[!UICONTROL 保存して続行]**」を選択します。
 
 
 
 ### コンポーネント
 
-デフォルトでは、すべての [&#x200B; 標準コンポーネント &#x200B;](/help/data-views/component-reference.md) が既にデータビューに含まれています。 これらの標準コンポーネントには、アカウント、購入グループ、グローバルアカウント、オポチュニティに関する B2B 固有の指標が含まれます。
+デフォルトでは、すべての [ 標準コンポーネント ](/help/data-views/component-reference.md) が既にデータビューに含まれています。 これらの標準コンポーネントには、アカウント、購入グループ、グローバルアカウント、オポチュニティに関する B2B 固有の指標が含まれます。
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべてのイベントディメンションを、データビューのディメンション コンポーネントに追加します。 例えば、**[!UICONTROL イベント名]** ディメンションを表すフィールド **[!UICONTROL イベント名]** です。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべてのイベントディメンションを、データビューのディメンション コンポーネントに追加します。 例えば、**[!UICONTROL イベント名]** ディメンションを表すフィールド **[!UICONTROL イベント名]** です。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – イベントディメンション &#x200B;](assets/b2b-dataview-components-event-dimensions.png)
+   ![B2B データビュー – コンポーネント – イベントディメンション ](assets/b2b-dataview-components-event-dimensions.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべてのイベント指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL SQL 修飾]** 指標を表す **[!UICONTROL SQL 修飾]** フィールドです。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべてのイベント指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL SQL 修飾]** 指標を表す **[!UICONTROL SQL 修飾]** フィールドです。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – イベント指標 &#x200B;](assets/b2b-dataview-components-event-metrics.png)
+   ![B2B データビュー – コンポーネント – イベント指標 ](assets/b2b-dataview-components-event-metrics.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべての勘定科目次元を、データビューの次元コンポーネントに追加します。 例えば、**[!UICONTROL 業界]** ディメンションを表す **[!UICONTROL 業界]** フィールドです。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべての勘定科目次元を、データビューの次元コンポーネントに追加します。 例えば、**[!UICONTROL 業界]** ディメンションを表す **[!UICONTROL 業界]** フィールドです。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – 勘定科目次元 &#x200B;](assets/b2b-dataview-components-account-dimensions.png)
+   ![B2B データビュー – コンポーネント – 勘定科目次元 ](assets/b2b-dataview-components-account-dimensions.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべてのアカウント指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL Number_of_Employees]** 指標を表す **[!UICONTROL Number_of_Employees]** フィールドなどです。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべてのアカウント指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL Number_of_Employees]** 指標を表す **[!UICONTROL Number_of_Employees]** フィールドなどです。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – アカウント指標 &#x200B;](assets/b2b-dataview-components-account-metrics.png)
+   ![B2B データビュー – コンポーネント – アカウント指標 ](assets/b2b-dataview-components-account-metrics.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべての人物ディメンションを、データビューのディメンションコンポーネントに追加します。 例えば、**[!UICONTROL Category_1_Affinity_Level]** ディメンションを表す **[!UICONTROL Category_1_Affinity_Level]** フィールドがあります。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべての人物ディメンションを、データビューのディメンションコンポーネントに追加します。 例えば、**[!UICONTROL Category_1_Affinity_Level]** ディメンションを表す **[!UICONTROL Category_1_Affinity_Level]** フィールドがあります。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – 勘定科目次元 &#x200B;](assets/b2b-dataview-components-person-dimensions.png)
+   ![B2B データビュー – コンポーネント – 勘定科目次元 ](assets/b2b-dataview-components-person-dimensions.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべての人物指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL Category_1_Affinity_Score]** 指標を表す **[!UICONTROL Category_1_Affinity_Score]** フィールドなどです。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべての人物指標を、データビューの指標コンポーネントに追加します。 例えば、**[!UICONTROL Category_1_Affinity_Score]** 指標を表す **[!UICONTROL Category_1_Affinity_Score]** フィールドなどです。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – アカウント指標 &#x200B;](assets/b2b-dataview-components-person-metrics.png)
+   ![B2B データビュー – コンポーネント – アカウント指標 ](assets/b2b-dataview-components-person-metrics.png)
 
-1. [&#x200B; ソリューションデザインリファレンス &#x200B;](#solution-design-reference) で定義したすべての SKU ディメンションを、データビューのディメンションコンポーネントに追加します。 例えば、**[!UICONTROL サービスカテゴリ]** ディメンションを表す **[!UICONTROL サービスカテゴリ]** フィールドです。 使用可能な [&#x200B; コンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
+1. [ ソリューションデザインリファレンス ](#solution-design-reference) で定義したすべての SKU ディメンションを、データビューのディメンションコンポーネントに追加します。 例えば、**[!UICONTROL サービスカテゴリ]** ディメンションを表す **[!UICONTROL サービスカテゴリ]** フィールドです。 使用可能な [ コンポーネント設定 ](/help/data-views/component-settings/overview.md) を通じてディメンションコンポーネントを設定していることを確認します。
 
-   ![B2B データビュー – コンポーネント – 勘定科目次元 &#x200B;](assets/b2b-dataview-components-sku-dimensions.png)
+   ![B2B データビュー – コンポーネント – 勘定科目次元 ](assets/b2b-dataview-components-sku-dimensions.png)
 
 1. **[!UICONTROL 保存して続行]** を選択します。
 
 
 ### 設定
 
-1. オプションで、データビューに特定の [&#x200B; 設定 &#x200B;](/help/data-views/create-dataview.md#settings-1) を定義できます。
+1. オプションで、データビューに特定の [ 設定 ](/help/data-views/create-dataview.md#settings-1) を定義できます。
 
    * データビューへのセグメントの追加
    * （計算）指標を使用して、セッション設定を定義します。
@@ -375,7 +375,7 @@ Workspace プロジェクトで使用できる 1 つ以上の B2B 固有のコ�
 
 * イベント登録セグメントがあるアカウント。
 
-  ![B2B のユースケース – セグメント – アカウント登録 &#x200B;](assets/b2b-segments-accounts-registered.png)
+  ![B2B のユースケース – セグメント – アカウント登録 ](assets/b2b-segments-accounts-registered.png)
 
 * 米国のアカウントには、購入グループとステージ 5 の商談セグメントがあります。
 
@@ -384,4 +384,4 @@ Workspace プロジェクトで使用できる 1 つ以上の B2B 固有のコ�
 
 ## その他
 
-オプションで、[&#x200B; 計算指標 &#x200B;](/help/components/calc-metrics/calc-metr-overview.md)、[&#x200B; 日付範囲 &#x200B;](/help/components/date-ranges/overview.md)、[&#x200B; アラート &#x200B;](/help/components/c-intelligent-alerts/intelligent-alerts.md) など、ユースケースに他のコンポーネントを定義できます。
+オプションで、[ 計算指標 ](/help/components/calc-metrics/calc-metr-overview.md)、[ 日付範囲 ](/help/components/date-ranges/overview.md)、[ アラート ](/help/components/c-intelligent-alerts/intelligent-alerts.md) など、ユースケースに他のコンポーネントを定義できます。

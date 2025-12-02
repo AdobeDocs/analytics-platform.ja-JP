@@ -4,7 +4,7 @@ description: Workspaceで注釈を管理する方法を説明します。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 91%
@@ -34,7 +34,7 @@ ht-degree: 91%
 注釈リスト ➊ には、所有するすべての注釈、すべてのプロジェクトを対象とした注釈、自分と共有されている注釈が表示されます。 リストには、次の列があります。
 
 | 列 | 説明 |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 注釈「![星](/help/assets/icons/Star.svg)」を優先するか、「![StarOutline](/help/assets/icons/StarOutline.svg)」を優先しないかを選択します。 |
 | **[!UICONTROL タイトルと説明]** | 注釈ビルダーで提供されます。タイトルと説明を編集するには、タイトルリンクを選択して[注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開きます。共有注釈には、「![共有](/help/assets/icons/ShareAlt.svg)」と表示されます。 |
 | **[!UICONTROL データビュー]** | この注釈が適用されるデータビュー。 |

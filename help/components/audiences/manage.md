@@ -4,7 +4,7 @@ description: Customer Journey Analytics でのオーディエンスの管理方�
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 97%
@@ -80,9 +80,9 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
-| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。**[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**&#x200B;ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。**[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 | ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択したオーディエンスを削除します。 |
-| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。**[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**&#x200B;ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。**[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 
 スケジュールされたプロジェクトを 1 つ以上選択すると、青色のアクションバーから次のアクションを実行できます。
 

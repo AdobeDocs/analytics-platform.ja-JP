@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '3514'
 ht-degree: 100%
@@ -28,14 +28,14 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 接続の名前は **[!UICONTROL AJO が有効な接続（*サンドボックス名*）]**&#x200B;で、設定とデータセットには次の標準の値があります。
 
 | **接続設定** | 値 |
-|---|---| 
+|---|---|
 | [!UICONTROL 接続名] | `AJO Enabled Connection (`_`sandbox name`_`)` |
 | [!UICONTROL 接続の説明] | [!UICONTROL *接続の説明をここに入力*] |
 | [!UICONTROL タグ] | [!UICONTROL *タグを選択*] |
 
 
 | **データ設定** | 値 |
-|---|---| 
+|---|---|
 | [!UICONTROL 周期的なデータ時間枠を有効にする] | 有効。[!UICONTROL 選択した月数] `13`。 |
 | [!UICONTROL サンドボックス] | [!UICONTROL *サンドボックスの名前*]（無効。この設定は変更できません）。 |
 | [!UICONTROL 毎日のイベントの平均数] | 100 万未満（無効。この設定は変更できません）。 |
