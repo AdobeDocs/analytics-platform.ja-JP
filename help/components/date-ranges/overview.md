@@ -21,7 +21,7 @@ Workspace プロジェクトでは、通常、パネル内の[カレンダー](/
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/327348?captions=jpn&format=jpeg)
 
 {{videoaa}}
 +++
