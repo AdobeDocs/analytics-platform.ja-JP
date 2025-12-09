@@ -6,24 +6,26 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 {#analyze-audiences-RTCDP}
 
-オーディエンスデータがCustomer Journey Analyticsの新しいディメンションとして使用可能な場合は、[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、Analysis WorkspaceでExperience Platform オーディエンスの分析を開始できます。
+[ オーディエンス分析設定を作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) すると、オーディエンスデータは、作成するように設定したデータビューで新しいディメンションとして使用できるようになります。 オーディエンス分析ディメンションが追加されたデータビューにアクセスできる場合は、Analysis Workspaceの任意の場所で新しいオーディエンスディメンションを使用できます。
+
+## オーディエンスの概要テンプレートの使用
 
 オーディエンスの概要テンプレートは、Customer Journey Analyticsで使用できます。
 
 <!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
 
-<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
-オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートの使用 &#x200B;](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [&#x200B; テンプレートへのアクセスと実行 &#x200B;](/help/analysis-workspace/templates/use-templates.md) を参照してください。
+オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [ テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md) を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 
@@ -49,7 +51,7 @@ RTCDPやCustomer Journey Analyticsなど、オーディエンスが作成され�
 
 選択したデータビューに関連付けられている使用イベントを持つ、退出したすべてのオーディエンスのデータを表示します。 昨日のデータは常に表示されるので、パネルの日付範囲を変更すると、データが不正確になります。 「退出したオーディエンス」は、使用イベントを持つユーザーが昨日退出したオーディエンスです。
 
-このパネルの表を使用すると、オーディエンスの行動をより深く理解できます。 選択したデータビューから既存のオーディエンスの説明ディメンションをドラッグし、分類として追加します。 または、他のインタラクションディメンションまたは指標（ページ、アクションなど）を分類として使用します。
+このパネルの表を使用すると、オーディエンスの行動をより深く理解できます。 選択したデータビューから離脱オーディエンスの説明ディメンションをドラッグし、分類として追加します。 または、他のインタラクションディメンションまたは指標（ページ、アクションなど）を分類として使用します。
 
 ## 上位の除外されたオーディエンスの接触チャネル パネル
 

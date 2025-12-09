@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 13%
+source-wordcount: '1289'
+ht-degree: 12%
 
 ---
 
@@ -51,37 +51,43 @@ ht-degree: 13%
 
 <!-- markdownlint-enable MD034 -->
 
-Audience analysis では、オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして使用できるようになります。 オーディエンス分析の概要について詳しくは、[&#x200B; オーディエンス分析の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
+Audience analysis では、オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして使用できるようになります。 オーディエンス分析の概要について詳しくは、[ オーディエンス分析の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
+
+## オーディエンス分析設定の作成
 
 Audience analysis configuration を作成する際は、分析するExperience Platform オーディエンスに関連付けられたサンドボックスと結合ポリシーを選択します。 Customer Journey Analyticsは、新しいルックアップデータセットを作成してから、ルックアップデータセットとプロファイルデータセットを選択した接続に自動的に追加します。
+
+システム管理者のみが、オーディエンス分析設定を作成できます。
 
 オーディエンス分析設定を作成するには：
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-empty.png)
+   ![ オーディエンス分析のメインページ ](assets/audience-analysis-empty.png)
 
 1. **[!UICONTROL 設定を作成]** を選択します。
 
-   ![&#x200B; オーディエンス分析設定の作成 &#x200B;](assets/audience-analysis-create.png)
+   ![ オーディエンス分析設定の作成 ](assets/audience-analysis-create.png)
 
 1. 「**[!UICONTROL 詳細]**」セクションで、次の情報を指定します。
 
    | フィールド | 説明 |
    |---------|----------|
    | **[!UICONTROL 名前]** | 設定の名前を指定します。 |
-   | **[!UICONTROL サンドボックス]** | 接続に追加するプロファイルデータセットを含むサンドボックスを選択します。 <p>Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供します。 サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。</p> |
+   | **[!UICONTROL サンドボックス]** | 接続に追加するプロファイルデータセットを含んだExperience Platform サンドボックスを選択します。 <p>Adobe Experience Platform は、単一の Platform インスタンスを別々の仮想環境に分割して、デジタルエクスペリエンスアプリケーションの開発と発展を支援する仮想[サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供します。 サンドボックスは、データセットを含む「データサイロ」と考えることができます。 サンドボックスは、データセットへのアクセスを制御するために使用します。</p> |
 
 1. 「**[!UICONTROL プロファイルデータセット]**」セクションで、次の情報を指定します。
 
    | フィールド | 説明 |
    |---------|----------|
-   | **[!UICONTROL 結合ポリシー]** | オーディエンス分析に使用するプロファイルデータセットに対応する結合ポリシーを選択します。 <p>結合ポリシーは、Adobe Experience Platformが複数のデータセットのプロファイルデータを、オーディエンスの作成に使用される統合された顧客プロファイルに組み合わせる方法を決定します。 選択する結合ポリシーは、オーディエンスに含まれるプロファイルの属性に影響します。 毎日、このデータのスナップショットがExperience Platformで生成されます。 このスナップショットは、特定の時点でのデータの静的ビューを提供し、イベントデータを含みません。</p><p>複数の結合ポリシーが表示されていて、どちらを選択するか不明な場合は、結合ポリシー **[!UICONTROL デフォルトの時間ベース]** を選択します。 また、データチームに問い合わせて、各結合ポリシーに関連付けられているオーディエンスをより深く理解することもできます。</p> |
-   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイルスナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、『Experience Platform ダッシュボードガイド』の [&#x200B; プロファイル属性データセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/dashboards/query#profile-attribute-datasets) を参照してください。</p> |
+   | **[!UICONTROL 結合ポリシー]** | オーディエンス分析に使用するプロファイルデータセットに対応する、結合ポリシーを選択します。 <p>結合ポリシーは、Adobe Experience Platformが複数のデータセットのプロファイルデータを、オーディエンスの作成に使用される統合された顧客プロファイルに組み合わせる方法を決定します。 選択する結合ポリシーは、オーディエンスに含まれるプロファイルの属性に影響します。 毎日、このデータのスナップショットがExperience Platformで生成されます。 このスナップショットは、特定の時点でのデータの静的ビューを提供し、イベントデータを含みません。</p><p>複数の結合ポリシーが表示されていて、どちらを選択するか不明な場合は、結合ポリシー **[!UICONTROL デフォルトの時間ベース]** を選択します。 また、データチームに問い合わせて、各結合ポリシーに関連付けられているオーディエンスをより深く理解することもできます。</p> |
+   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイルスナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、『Experience Platform ダッシュボードガイド』の [ プロファイル属性データセット ](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) を参照してください。</p> |
 
 1. 「**[!UICONTROL 接続]**」セクションで、「**[!UICONTROL 接続を選択]**」をクリックします。
 
 1. 接続ダイアログで、プロファイルデータセットを追加する接続の横にあるチェックボックスをオンにし、「**[!UICONTROL 接続を使用]**」を選択します。
+
+   1 つの接続は、1 つのオーディエンス分析設定にのみ関連付けることができます。
 
 1. 接続を設定するには、次の情報を指定します。
 
@@ -100,5 +106,35 @@ Audience analysis configuration を作成する際は、分析するExperience P
 1. 「**[!UICONTROL 作成]**」を選択して、設定を作成します。
 
    プロファイルデータセットは 1 日に 1 回更新されるので、オーディエンス分析を設定した翌日に、Customer Journey Analytics データビューでオーディエンスを使用できます。
+
+1. 24 時間後、[ データビューでオーディエンスディメンションを表示 ](#view-audience-dimensions-in-the-data-view) して、選択したデータビューでオーディエンスディメンションが使用できることを確認します。
+
+## データビューでのオーディエンスディメンションの表示
+
+[ オーディエンス分析設定の作成 ](#create-an-audience-analysis-configuration) を完了すると、設定時に選択したデータビューにオーディエンスディメンションが追加されたことを確認できます。
+
+データビューでオーディエンスディメンションを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御 ](/help/technotes/access-control.md) を参照してください。
+
+データビューでオーディエンス分析ディメンションを表示するには：
+
+1. Customer Journey Analyticsで、**[!UICONTROL データ管理]**/**[!UICONTROL データビュー]** を選択します。
+
+1. **[!UICONTROL ディメンション]** セクションで、次のディメンションが使用可能になります。
+
+   * **[!UICONTROL オーディエンス名]**
+
+   * **[!UICONTROL オーディエンスオリジン]**
+
+   * **[!UICONTROL 終了したオーディエンスオリジン]**
+
+   * **[!UICONTROL 退出したオーディエンス名]**
+
+   これらの各ディメンションは、オーディエンス分析設定時に選択した結合ポリシーに関連付けられたプロファイルデータセットに追加され、作成した新しいルックアップデータセットに追加されました。
+
+   ![ データビューで使用できるオーディエンスディメンション ](assets/audience-analysis-dataview-dataset.png)
+
+1. Analysis Workspaceでオーディエンス分析ディメンションを使用します。
+
+   Analysis Workspaceのデータビューを使用するアクセス権を持つユーザーは、新しいディメンションを表示し、分析に使用できます。 Customer Journey Analyticsでのオーディエンス分析ディメンションの使用方法について詳しくは、[Analysis WorkspaceでのExperience Platform オーディエンスの分析 ](/help/connections/audience-analysis/analyze-audiences.md) を参照してください。
 
 

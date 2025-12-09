@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '678'
 ht-degree: 4%
 
 ---
@@ -19,13 +19,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->オーディエンス分析は、オーディエンスの公開とは異なります。オーディエンスの公開では、Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformに公開し、顧客のターゲティングやパーソナライゼーションに使用できます。 オーディエンスの公開について詳しくは、[&#x200B; オーディエンスの公開の概要 &#x200B;](/help/components/audiences/audiences-overview.md) を参照してください。
+>オーディエンス分析とオーディエンス公開の違いを理解する：
+>
+>* **オーディエンス分析**:Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。
+>* **オーディエンスの公開**:Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformに公開し、顧客のターゲティングやパーソナライゼーションに使用できます。 オーディエンスの公開について詳しくは、[ オーディエンスの公開の概要 ](/help/components/audiences/audiences-overview.md) を参照してください。
 
 Audience analysis では、オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして使用できるようになります。
 
 次の図と関連する表は、Analysis Workspaceの Audience Analysis 設定により、Customer Journey AnalyticsでExperience Platformのオーディエンスデータが使用できるようにする仕組みを簡単に示しています。
 
-![&#x200B; オーディエンス分析の概要 &#x200B;](assets/audience-analysis-overview.png)
+![ オーディエンス分析の概要 ](assets/audience-analysis-overview.png)
 
 | 数値 | 機能 | 関数 |
 |---------|----------|---------|
@@ -44,7 +47,13 @@ Audience analysis では、オーディエンスメンバーシップデータ�
 
 オーディエンス分析を設定する場合は、分析するExperience Platform オーディエンスに関連付けられたサンドボックスと結合ポリシーを選択します。 Customer Journey Analyticsは、新しいルックアップデータセットを作成してから、ルックアップデータセットとプロファイルデータセットを選択した接続に自動的に追加します。
 
-詳しくは、[&#x200B; オーディエンス分析の設定 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) を参照してください。
+詳しくは、[ オーディエンス分析の設定 ](/help/connections/audience-analysis/audience-analysis-configure.md) を参照してください。
+
+## オーディエンス分析設定の管理
+
+オーディエンス分析設定の作成後に、それらを管理できます。 設定の表示、編集、削除を行うことができます。
+
+既存のオーディエンス分析設定の管理について詳しくは、[ オーディエンス分析設定の管理 ](/help/connections/audience-analysis/audience-analysis-manage.md) を参照してください。
 
 ## Customer Journey Analyticsでのオーディエンスデータの分析
 
@@ -56,7 +65,17 @@ Customer Journey Analyticsで利用可能なオーディエンスデータを使
 
 * 最終的に店舗で購入したオーディエンスメンバー
 
-詳しくは、[Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 &#x200B;](/help/connections/audience-analysis/analyze-audiences.md) を参照してください。
+詳しくは、[Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 ](/help/connections/audience-analysis/analyze-audiences.md) を参照してください。
+
+## オーディエンス分析の役割と権限の要件
+
+オーディエンス分析には、次のCustomer Journey Analyticsの役割とExperience Platformの権限が必要です。
+
+| 機能 | Customer Journey Analyticsの役割または権限の要件 | Experience Platformの権限要件 |
+|---------|----------|----------|
+| [ オーディエンス分析設定の作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) | システム管理者 | <ul><li>データセット：読み取り権限</li><li>スキーマ：読み取り、書き込み</li><li>および ID 名前空間：読み取り</li></ul> |
+| [ データビューでのオーディエンス分析ディメンションの表示 ](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | データビューが割り当てられた製品プロファイルの製品プロファイル管理者 <p>詳しくは、[ アクセス制御 ](/help/technotes/access-control.md) を参照してください。</p> | 該当なし |
+| Analysis Workspaceでのオーディエンス分析ディメンションの使用 | オーディエンス分析ディメンションが追加されたデータビューにアクセスします | 該当なし |
 
 
 
