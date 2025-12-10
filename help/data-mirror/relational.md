@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 14%
@@ -45,7 +45,7 @@ Customer Journey Analytics用Experience Platform Data Mirrorには、リレー�
 
 ## Data Warehouse ネイティブソリューションの使用
 
-このクイックスタートガイドでは、[[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) を Data Warehouse のネイティブソリューションとして使用します。 その他の [&#x200B; サポートされているソリューション &#x200B;](datawarehouse.md) は、[[!DNL Snowflake]](datawarehouse.md#snowflake) と [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks) です。
+このクイックスタートガイドでは、[[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) を Data Warehouse ネイティブソリューションとして使用します。 その他の [ サポートされているソリューション ](datawarehouse.md) は、[[!DNL Snowflake]](datawarehouse.md#snowflake) と [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks) です。
 
 [!DNL Google BigQuery] 内では、次のサンプルデータが、**[!UICONTROL eventdata]** という名前のテーブルに定期的に保存および更新されます。
 
@@ -82,7 +82,7 @@ Customer Journey Analytics用Experience Platform Data Mirrorには、リレー�
 1. **[!UICONTROL BigQuery]**/**[!UICONTROL Studio]** を選択します。
 1. プロジェクト、データセット、テーブルを選択します。 「**[!UICONTROL スキーマ]**」タブには、イベントデータのスキーマの概要が表示されます。
 
-   ![Google BigQuery - スキーマ &#x200B;](assets/googlebg-schema.png)
+   ![Google BigQuery - スキーマ ](assets/googlebg-schema.png)
 
 データを検査するには：
 
@@ -93,7 +93,7 @@ Customer Journey Analytics用Experience Platform Data Mirrorには、リレー�
    SELECT * FROM `project.datasets.eventdata` LIMIT 100
    ```
 
-   ![Google BigQuery - サンプルクエリ &#x200B;](assets/googlebg-samplequery.png)
+   ![Google BigQuery - サンプルクエリ ](assets/googlebg-samplequery.png)
 
 Customer Journey AnalyticsのExperience Platform Data Mirrorの場合、データウェアハウスネイティブソリューションのテーブルを変更履歴に対して有効にする必要があります。 テーブルで変更履歴が有効になっていることを確認するには、次の手順に従います。
 
@@ -132,7 +132,7 @@ Experience Platformでデータをミラーリングするには、まずデー�
 1. **[!UICONTROL 手動で作成]** または **[!UICONTROL DDL ファイルをアップロード]** のいずれかを選択するオプションを含むポップアップが表示される場合：
    1. 「**[!UICONTROL 手動で作成を選択]**」を選択します。
 
-      ![&#x200B; スキーマ設定 – 手動で作成 &#x200B;](assets/model-based-manual.png)
+      ![ スキーマ設定 – 手動で作成 ](assets/model-based-manual.png)
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL スキーマ]**/**[!UICONTROL リレーショナルスキーマを作成]** インターフェイスで、次の操作を行います。
@@ -142,13 +142,13 @@ Experience Platformでデータをミラーリングするには、まずデー�
 
       Customer Journey Analytics用Experience Platform Data Mirrorは、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
 
-      ![&#x200B; スキーマ設定 &#x200B;](assets/relational-create-schema.png)
+      ![ スキーマ設定 ](assets/relational-create-schema.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
 1. **[!UICONTROL スキーマ]**/**[!UICONTROL サンプルイベントフィードスキーマ]** インターフェイスには、リレーショナルスキーマが変更行としての取り込みをサポートしているという警告が表示されます。
 
-   ![&#x200B; スキーマ設定 &#x200B;](assets/model-based-create-schema-empty.png)
+   ![ スキーマ設定 ](assets/model-based-create-schema-empty.png)
 
    変更行としての取り込みは、change data capture （CDC）とも呼ばれます。 CHANGE DATA CAPTURE をサポートするには、スキーマに次の項目が必要です。
 
@@ -156,7 +156,7 @@ Experience Platformでデータをミラーリングするには、まずデー�
    * バージョン記述子。
    * 時系列データのタイムスタンプ記述子。
 
-1. ![&#x200B; サンプルイベントフィードスキーマ &#x200B;](/help/assets/icons/AddCircle.svg) の横にある「**[!UICONTROL AddCircle]**」を選択して、スキーマへのフィールドの追加を開始します。 データタイプを含む次のフィールドと追加の属性をスキーマに追加します。
+1. ![ サンプルイベントフィードスキーマ ](/help/assets/icons/AddCircle.svg) の横にある「**[!UICONTROL AddCircle]**」を選択して、スキーマへのフィールドの追加を開始します。 データタイプを含む次のフィールドと追加の属性をスキーマに追加します。
 
    | フィールド名 | 表示名 | タイプ | 追加の属性 |
    |---|---|---|---|
@@ -171,19 +171,19 @@ Experience Platformでデータをミラーリングするには、まずデー�
 
    * **[!UICONTROL id]** フィールドは **[!UICONTROL バージョン記述子]** として設定されます。
 
-     ![&#x200B; バージョン記述子 &#x200B;](assets/platform-schema-id.png)
+     ![ バージョン記述子 ](assets/platform-schema-id.png)
 
-   * **[!UICONTROL personid]** フィールドは、{timestamp **[!UICONTROL と共に]** 4}プライマリキー **[!UICONTROL として設定されます。]**「![&#x200B; 追加 &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL 複合プライマリキーを作成]**」を選択して、複合キーを作成します。
+   * **[!UICONTROL personid]** フィールドは、{timestamp **[!UICONTROL と共に]** 4}プライマリキー **[!UICONTROL として設定されます。]**「![ 追加 ](/help/assets/icons/Add.svg)**[!UICONTROL 複合プライマリキーを作成]**」を選択して、複合キーを作成します。
 
-     ![&#x200B; 複合キー &#x200B;](assets/platform-schema-compositekey.png)
+     ![ 複合キー ](assets/platform-schema-compositekey.png)
 
      また、「**[!UICONTROL personid]**」フィールドは「**[!UICONTROL ID]** としても設定され、「**[!UICONTROL ID 名前空間]** として **[!UICONTROL CRMID]** が使用されます。
 
-     ![&#x200B; 人物記述子 &#x200B;](assets/platform-schema-personid.png)
+     ![ 人物記述子 ](assets/platform-schema-personid.png)
 
-   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]**&#x200B;**[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列のリレーショナルデータの場合は、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
+   * **[!UICONTROL timestamp]** フィールドは、{personid **[!UICONTROL フィールドと共に]** 4}プライマリキー **[!UICONTROL として設定されます。]****[!UICONTROL timestamp]** フィールドは **[!UICONTROL Timestamp 記述子]** としても設定されます。 時系列のリレーショナルデータの場合は、フィールドを **[!UICONTROL タイムスタンプ記述子]** として定義するだけで済みます。
 
-     ![&#x200B; タイムスタンプ記述子 &#x200B;](assets/platform-schema-timestamp.png)
+     ![ タイムスタンプ記述子 ](assets/platform-schema-timestamp.png)
 
 
    **[!UICONTROL プライマリキー]**、**[!UICONTROL バージョン記述子]** および **[!UICONTROL タイムスタンプ記述子]** を正しく定義している場合、スキーマ定義の上部にある警告が表示されなくなります。
@@ -207,19 +207,19 @@ Experience Platform インターフェイスで以下を実行します。
 
 **[!UICONTROL 認証]** 手順で、次を選択します。
 
-* **[!UICONTROL 既存のアカウント]** Google BigQuery のアカウント設定が既にある場合。 [&#x200B; データを選択 &#x200B;](#select-data) の手順に進みます。
+* **[!UICONTROL 既存のアカウント]** Google BigQuery のアカウント設定が既にある場合。 [ データを選択 ](#select-data) の手順に進みます。
 * Google BigQuery に接続する必要がある場合は **[!UICONTROL 新規アカウント]**。
    1. **[!UICONTROL アカウント名]** および（オプション） **[!UICONTROL 説明]** を指定します。
-   1. **[!UICONTROL 認証タイプ]**&#x200B;**[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
+   1. **[!UICONTROL 認証タイプ]****[!UICONTROL 基本認証]** または **[!UICONTROL サービス認証]** を選択します。 選択内容に応じて、必要な情報を入力します。
    1. 「**[!UICONTROL ソースに接続]**」を選択します。
 
-      ![Google BigQuery – 認証 &#x200B;](assets/googlebg-authentication.png)
+      ![Google BigQuery – 認証 ](assets/googlebg-authentication.png)
 
       接続が確認されました。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg)**[!UICONTROL Connected]** は、接続が成功したことを示しています。
 
    1. 「**[!UICONTROL 次へ]**」を選択します。
 
-  [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
+  [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) または [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続および認証方法の詳細については、Experience Platformのドキュメントを参照してください。
 
 
 ### データを選択
@@ -228,7 +228,7 @@ Experience Platform インターフェイスで以下を実行します。
 
 1. テーブルのリストからテーブルを選択します。 例：**[!UICONTROL eventdata]**。
 
-   ![Experience Platform - Source コネクタ – データの選択 &#x200B;](assets/platform-sources-selectdata-event.png)
+   ![Experience Platform - Source コネクタ – データの選択 ](assets/platform-sources-selectdata-event.png)
 
    検証用に表示されたデータのサンプルが確認できます。
 
@@ -244,7 +244,7 @@ Experience Platform インターフェイスで以下を実行します。
 1. **[!UICONTROL 出力データセット名]** を入力します。 例：`event-data-mirror`。
 1. 前に作成したリレーショナルスキーマを「**[!UICONTROL スキーマ]**」ドロップダウンメニューから選択します。 例：**[!UICONTROL サンプルイベントフィードスキーマ]**。
 
-   ![Experience Platform - Source Connector - データフローの詳細 &#x200B;](assets/platform-sources-dataflowdetail-event.png)
+   ![Experience Platform - Source Connector - データフローの詳細 ](assets/platform-sources-dataflowdetail-event.png)
 
 1. その他の詳細を指定します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
@@ -256,7 +256,7 @@ Experience Platform インターフェイスで以下を実行します。
 
 1. フィールドをマッピングします Google BigQuery のスキーマ（**[!UICONTROL Source data]**）から、Experience Platformで定義したスキーマ内のフィールド（**[!UICONTROL Target フィールド]**）へ。
 
-   ![Experience Platform - Source コネクタ – マッピング &#x200B;](assets/platform-sources-mapping.png)
+   ![Experience Platform - Source コネクタ – マッピング ](assets/platform-sources-mapping.png)
 
 1. すべてのフィールドが正しくマッピングされている場合は、「**[!UICONTROL 次へ]**」を選択して続行します。
 
@@ -268,7 +268,7 @@ Experience Platform インターフェイスで以下を実行します。
 1. **[!UICONTROL 頻度]** と **[!UICONTROL 間隔]** を指定して、ミラーデータの同期をスケジュールします。
 1. スケジュールの **[!UICONTROL 開始時刻]** を指定します。
 
-   ![Experience Platform - Source Connector - スケジュール &#x200B;](assets/platform-sources-scheduling.png)
+   ![Experience Platform - Source Connector - スケジュール ](assets/platform-sources-scheduling.png)
 
 1. 「**[!UICONTROL 次へ]**」をクリックして続行します。
 
@@ -279,11 +279,11 @@ Experience Platform インターフェイスで以下を実行します。
 
 1. ソースコネクタの設定を確認します。
 
-   ![Experience Platform - Source コネクタ – レビュー &#x200B;](assets/platform-sources-review.png)
+   ![Experience Platform - Source コネクタ – レビュー ](assets/platform-sources-review.png)
 
 1. 「**[!UICONTROL 終了]**」を選択します。 設定済みのデータフローに移動します。
 
-   ![Experience Platform - Source コネクタ – データフロー &#x200B;](assets/platform-sources-finish.png)
+   ![Experience Platform - Source コネクタ – データフロー ](assets/platform-sources-finish.png)
 
 
 ## 接続の設定
@@ -301,7 +301,7 @@ Customer Journey Analytics インターフェイスで以下を実行します�
 
       1. ミラーデータを含むデータセットを選択します。 例：**[!UICONTROL event-data-mirror]**。 データセットには **[!UICONTROL データセットタイプ]** として **[!UICONTROL リレーショナル]** があります。
 
-         ![CJA – 接続 – データセットを追加 &#x200B;](assets/cja-add-dataset.png)
+         ![CJA – 接続 – データセットを追加 ](assets/cja-add-dataset.png)
 
       1. 接続に関連する追加のデータセットがあれば追加します。
       1. 「**[!UICONTROL 次へ]**」を選択します。
@@ -317,14 +317,14 @@ Customer Journey Analytics インターフェイスで以下を実行します�
       1. `Google BigQuery Event Data` データソースの説明 **[!UICONTROL として]** を入力します。
       1. **[!UICONTROL すべての新しいデータをインポート]**、**[!UICONTROL すべての既存データをバックフィル]** など、その他の詳細を指定します。
 
-         ![CJA – 接続 – データセット設定 &#x200B;](assets/cja-add-dataset-2.png)
+         ![CJA – 接続 – データセット設定 ](assets/cja-add-dataset-2.png)
 
       オプションで、他のデータセットの詳細を指定します。
 
    1. 「**[!UICONTROL データセットを追加]**」を選択します。
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-[&#x200B; 接続 &#x200B;](/help/connections/overview.md) を作成したら、様々な管理タスクを実行できます。 [&#x200B; データセットの選択と組み合わせ &#x200B;](/help/connections/combined-dataset.md)、[&#x200B; 接続データセットのステータスおよびデータ取り込みのステータスの確認 &#x200B;](/help/connections/manage-connections.md) など。
+[ 接続 ](/help/connections/overview.md) を作成したら、様々な管理タスクを実行できます。 [ データセットの選択と組み合わせ ](/help/connections/combined-dataset.md)、[ 接続データセットのステータスおよびデータ取り込みのステータスの確認 ](/help/connections/manage-connections.md) など。
 
 
 ## データ表示の設定
@@ -351,7 +351,7 @@ Customer Journey Analytics インターフェイスで以下を実行します�
       1. **[!UICONTROL アドホックおよびリレーショナルフィールド]** を選択します。
       1. フィールドをリレーショナルスキーマから **[!UICONTROL METRICS]** または **[!UICONTROL DIMENSIONS]** にドラッグ&amp;ドロップします。
 
-         ![&#x200B; リレーショナルフィールドをコンポーネントとして追加する &#x200B;](assets/cja-add-dataset-folder-dv.png)
+         ![ リレーショナルフィールドをコンポーネントとして追加する ](assets/cja-add-dataset-folder-dv.png)
 
    1. 適切なタイプがない、適切な形式でない、または他の理由で変更するフィールドの派生フィールドを定義します。 例えば、**[!UICONTROL 売上高]** の場合は次のようになります。
 
@@ -359,12 +359,12 @@ Customer Journey Analytics インターフェイスで以下を実行します�
       1. 派生フィールドエディターで、次の操作を行います。
          1. 以下のように、新しい `Revenue Amount (Numeric)` フィールドを定義します。
 
-            ![CJA - データビュー – 派生フィールド &#x200B;](assets/cja-dataview-derived-fields.png)
+            ![CJA - データビュー – 派生フィールド ](assets/cja-dataview-derived-fields.png)
 
          1. 「**[!UICONTROL 保存]**」を選択します。
       1. 新しい **[!UICONTROL 収益額（数値）]** 派生フィールドをドラッグして、**[!UICONTROL 指標]** のフィールドをドロップします。
 
-         ![CJA - データビュー – リレーショナルフィールド &#x200B;](assets/cja-add-dataset-folder-dv.png)
+         ![CJA - データビュー – リレーショナルフィールド ](assets/cja-add-dataset-folder-dv.png)
 
    1. 「**[!UICONTROL 保存して続行]**」を選択します。
 
@@ -372,7 +372,7 @@ Customer Journey Analytics インターフェイスで以下を実行します�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成および編集方法について詳しくは、[&#x200B; データビューの概要 &#x200B;](../data-views/data-views.md) を参照してください。 および、データビューで使用できるコンポーネントと、セグメントとセッションの設定の使用方法について説明します。
+データビューの作成および編集方法について詳しくは、[ データビューの概要 ](../data-views/data-views.md) を参照してください。 および、データビューで使用できるコンポーネントと、セグメントとセッションの設定の使用方法について説明します。
 
 
 ## プロジェクトの設定
@@ -393,13 +393,13 @@ Analysis Workspaceは、分析をすばやく構築し、データに基づい�
    1. 「**[!UICONTROL 作成]**」を選択します。
 
 
-4. **[!UICONTROL 新規プロジェクト]** ワークスペースで、[&#x200B; データビュー &#x200B;](#set-up-a-data-view) が選択されていることを確認します。 そのデータビューは、ミラーデータを含む [&#x200B; 接続 &#x200B;](#set-up-a-connection) にリンクしています。
+4. **[!UICONTROL 新規プロジェクト]** ワークスペースで、[ データビュー ](#set-up-a-data-view) が選択されていることを確認します。 そのデータビューは、ミラーデータを含む [ 接続 ](#set-up-a-connection) にリンクしています。
 
 5. 最初のレポートを作成するには、**[!UICONTROL フリーフォーム]** パネルの **[!UICONTROL フリーフォームテーブル]** にディメンションと指標をドラッグ&amp;ドロップします。 例えば、**[!UICONTROL 売上高（数値）]** を **[!UICONTROL _指標をここにドラッグ_]** にドラッグします。 **[!UICONTROL PersonId]** をドラッグして、フィールドを最初の列ヘッダーにドロップします。 必要に応じて、他の調整も行います。
 
    最終的には、Googleの BigQuery テーブルから取得したミラーデータに基づいて、プロファイルとその売上高の概要を示します。
 
-   ![Workspace - サンプルプロジェクト &#x200B;](assets/cja-sample-project.png)
+   ![Workspace - サンプルプロジェクト ](assets/cja-sample-project.png)
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 
