@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 {#analyze-audiences-RTCDP}
 
-[ オーディエンス分析設定を作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) すると、オーディエンスデータは、作成するように設定したデータビューで新しいディメンションとして使用できるようになります。 オーディエンス分析ディメンションが追加されたデータビューにアクセスできる場合は、Analysis Workspaceの任意の場所で新しいオーディエンスディメンションを使用できます。
+[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) すると、オーディエンスデータは、作成するように設定したデータビューで新しいディメンションとして使用できるようになります。 オーディエンス分析ディメンションが追加されたデータビューにアクセスできる場合は、Analysis Workspaceの任意の場所で新しいオーディエンスディメンションを使用できます。
 
 ## オーディエンスの概要テンプレートの使用
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 <!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
-オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[ テンプレートの使用 ](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [ テンプレートへのアクセスと実行 ](/help/analysis-workspace/templates/use-templates.md) を参照してください。
+オーディエンスの概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートの使用 &#x200B;](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) の [&#x200B; テンプレートへのアクセスと実行 &#x200B;](/help/analysis-workspace/templates/use-templates.md) を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 
