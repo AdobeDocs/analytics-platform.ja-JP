@@ -4,7 +4,7 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -1070,12 +1070,12 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="会話のパターン、ユーザーのフィードバック、お勧めの効果などを通じて、ユーザーのエンゲージメントを分析します。"
 >abstract="**これは、エンゲージメントパターンの特定** 会話の品質の評価、顧客満足度のトレンドの追跡、リンクのレコメンデーションの有効性の測定に役立ちます。<br/>**学習内容に基づいて、AI エージェントの応答を調整する** 頻繁な問題に対するターゲットコンテンツを開発する、レコメンデーションアルゴリズムを改善する、様々なユーザーセグメントに特化した経路を作成する、など、様々な操作を実行できます。"
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="B2B 会議リクエストのライフサイクル全体をトラッキングします。 コンバージョン率とコンサルタントのパフォーマンスを監視し、最も効果的なリードジェネレーションチャネルを特定します。"
 >abstract="**これにより、ミーティングのコンバージョン率の追跡** パフォーマンスの高いチームメンバーの特定、予約行動の季節的なトレンドの理解、最も価値のあるミーティングのリクエストを生成するページの特定が可能になります。<br/>**学習した内容に応じて、会議出席依頼の処理を最適化したり** コンバージョン率の高いページにリソースを再配布したり、予約率の低いコンサルタント向けのターゲットトレーニングを開発したり、ミーティングの欠席を減らすための新しい戦略を導入したりするなど、様々な操作を実行できます。"
 
