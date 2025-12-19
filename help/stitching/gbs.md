@@ -19,15 +19,15 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->データセットが [ID サービスに対して有効 ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) になっていることを確認する必要があります。
+>データセットが [ID サービスに対して有効 &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) になっていることを確認する必要があります。
 >
 
 
-![ グラフベースのステッチ ](/help/stitching/assets/gbs.png)
+![&#x200B; グラフベースのステッチ &#x200B;](/help/stitching/assets/gbs.png)
 
 ## identityMap
 
-グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -101,9 +101,9 @@ ht-degree: 5%
 
 - **ステッチを再生**:*再生* ID グラフから更新された ID に基づいてデータを再生します。 このステージでは、ID グラフが名前空間の ID を解決したので、以前は不明だったデバイス（永続的な ID）からのヒットがステッチされます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
    - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていないプロファイルは、サイトを訪問した日に認証を行う必要があります。
-   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
-   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
-   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
 
 - **プライバシー**：プライバシー関連のリクエストを受信した場合、ソースデータセットからリクエストされた ID を削除する以外に、認証されていないイベントに対するその ID のステッチも取り消す必要があります。 また、その特定の ID に対してグラフベースのステッチが今後行われないようにするために、ID を ID グラフから削除する必要があります。
 
@@ -118,7 +118,7 @@ ht-degree: 5%
 
 ![ID グラフ 3579](assets/identity-graphs.svg)
 
-[ID グラフビューア ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
+[ID グラフビューア &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
 
 ### 手順 1：ライブステッチ
 
@@ -128,13 +128,13 @@ ht-degree: 5%
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID （ライブステッチ後） |
 |--:|---|---|---|---|
-| 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
-| 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
-| 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -149,16 +149,16 @@ ht-degree: 5%
 
 +++ 詳細
 
-2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) で示されます）。
+2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) で示されます）。
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 24 時間後） |
 |---|---|---|---|---|---|
-| 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -168,13 +168,13 @@ ht-degree: 5%
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID<br/> （ライブステッチ後） | ステッチ ID<br/> （再生 7 日後） |
 |---|---|---|---|---|---|
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![ 再生 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![&#x200B; 再生 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -190,13 +190,13 @@ ht-degree: 5%
 
 | | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ステッチ ID （プライバシーリクエスト後） |
 |--:|---|---|---|---|
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00 | `3579` | `3579` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 | 2023-05-13 16:30 | `246` | `246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![ リンク ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
 
 {style="table-layout:auto"}
 
@@ -207,8 +207,8 @@ ht-degree: 5%
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
 - ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行でプロファイルを識別する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
-- 永続 ID も、スキーマで [ID として定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
-- Experience Platform ID サービスの ID グラフには、`Email` ユーザー ID`Phone` を解決するためにステッチ中に使用する名前空間（例：**または**）が必要です。 詳しくは、[Experience Platform ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
+- 永続 ID も、スキーマで [ID として定義 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) する必要があります。
+- Experience Platform ID サービスの ID グラフには、`Email` ユーザー ID`Phone` を解決するためにステッチ中に使用する名前空間（例：**または**）が必要です。 詳しくは、[Experience Platform ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home) を参照してください。
 
 >[!NOTE]
 >
@@ -220,9 +220,9 @@ ht-degree: 5%
 次の制限は、特にグラフベースのステッチに適用されます。
 
 - 指定された名前空間を使用してユーザー ID のクエリを実行する際に、タイムスタンプは考慮されません。 そのため、永続的な ID が、以前のタイムスタンプを持つレコードの人物 ID に結び付けられる可能性があります。
-- グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[ 共有デバイス ](/help/use-cases/stitching/shared-devices.md) を参照してください。
+- グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[&#x200B; 共有デバイス &#x200B;](/help/use-cases/stitching/shared-devices.md) を参照してください。
 - ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data Platform などのExperience Platform アプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
-- [ID サービスガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [ 静的制限 ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
+- [ID サービスガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [&#x200B; 静的制限 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
    - グラフ内の ID の最大数：50。
    - 単一のバッチ取得での ID へのリンクの最大数：50。
    - グラフ取り込み用の XDM レコードの ID の最大数：20。
