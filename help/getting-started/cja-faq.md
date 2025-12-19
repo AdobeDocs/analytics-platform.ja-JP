@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 99%
+source-wordcount: '2210'
+ht-degree: 98%
 
 ---
 
@@ -145,24 +145,30 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## &#x200B;5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
-## &#x200B;6. データコンポーネントの削除の影響 {#deletion}
+## &#x200B;6. オブジェクトまたはコンポーネントの削除の影響 {#deletion}
 
-データを削除する場合は、サンドボックス、スキーマ、データセット、接続、データビュー、Workspace プロジェクトの 6 種類のコンポーネントについて考慮する必要があります。次に、これらのコンポーネントを削除した場合に考えられるシナリオを示します。
+Customer Journey AnalyticsまたはExperience Platformのオブジェクトやコンポーネントを削除またはリセットした場合の影響の概要については、[ 削除とリセットの影響 ](/help/technotes/deletion.md) を参照してください。
 
-| 目的 | 結果 |
+<!-- Refer to deletion guide 
+
+For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
+
+| If you... | This happens... |
 | --- | --- |
-| [!UICONTROL Adobe Experience Platform] のサンドボックスを削除する場合 | サンドボックスを削除すると、そのサンドボックス内のデータセットへの [!UICONTROL Customer Journey Analytics] 接続に対するデータフローが停止します。また、この削除されたサンドボックスに関連する接続、データビュー、指標およびディメンションも削除されます。 |
-| [!UICONTROL Adobe Experience Platform] のスキーマを削除し、このスキーマに関連付けられているデータセットを削除しない場合 | [!UICONTROL Adobe Experience Platform] では、1 つ以上の[!UICONTROL データセット]が関連付けられている[!UICONTROL スキーマ]を削除することはできません。ただし、適切な権限を持つ管理者は、データセットを削除してからスキーマを削除できます。 |
-| [!UICONTROL Adobe Experience Platform] データレイクのデータセットを削除する場合 | Adobe Experience Platform データレイクでデータセットを削除すると、そのデータセットからそのデータセットを含む Customer Journey Analytics 接続へのデータフローが停止します。そのデータセットのデータは、関連付けられた Customer Journey Analytics 接続から自動的に削除されます。 |
-| [!UICONTROL Customer Journey Analytics] のデータセットを削除する場合 | 保存した接続内のデータセットの削除プロセスを実行するには、アドビのアカウントチームにお問い合わせください。 |
-| （[!UICONTROL Adobe Experience Platform] の）データセットからバッチを削除する場合 | [!UICONTROL Adobe Experience Platform] データセットからバッチを削除すると、その特定のバッチを含む Customer Journey Analytics 接続から同じバッチが削除されます。Customer Journey Analytics には、[!UICONTROL Adobe Experience Platform] のバッチが削除されたことが通知されます。 |
-| [!UICONTROL Customer Journey Analytics] への&#x200B;**取り込み中**&#x200B;にバッチを削除する場合 | データセットにバッチが 1 つしかない場合、[!UICONTROL Customer Journey Analytics] にはそのバッチからのデータも、部分的なデータも表示されません。取り込みは、ロールバックされます。例えば、データセットに 5 つのバッチがあり、そのうち 3 つがデータセットの削除時に既に取り込まれている場合、これら 3 つのバッチのデータが [!UICONTROL Customer Journey Analytics] に表示されます。 |
-| [!UICONTROL Customer Journey Analytics] の接続を削除する場合 | 次の内容を示すエラーメッセージが表示されます。<ul><li>削除した接続用に作成されたデータビューは、機能しなくなります。</li><li> 同様に、削除した接続のデータビューに依存する Workspace プロジェクトは動作しなくなります。</li></ul> |
-| [!UICONTROL Customer Journey Analytics] のデータビューを削除する場合 | この削除されたデータビューに依存する Workspace プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。 |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Connections, data views, metrics and dimensions related to this deleted sandbox will also be deleted. |
+| Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
+| Delete a dataset in the [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
+| Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
+| Delete a batch from a dataset (in [!UICONTROL Adobe Experience Platform]) | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch is removed from any Customer Journey Analytics connections that contain that specific batch. Customer Journey Analytics is notified of batch deletions in [!UICONTROL Adobe Experience Platform]. |
+| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch appears in [!UICONTROL Customer Journey Analytics]. The ingestion is rolled back. For example, if there are five batches in the dataset and three of them have already been ingested when the dataset was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
+| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message indicates that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection stops working.</li></ul> |
+| Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message indicates that any Workspace projects that depend on this deleted data view will stop working. |
+
+-->
 
 ## &#x200B;7. レポートスイートを Customer Journey Analytics で結合する際の考慮事項 {#merge-reportsuite}
 
