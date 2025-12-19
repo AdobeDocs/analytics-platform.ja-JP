@@ -21,7 +21,7 @@ ht-degree: 10%
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+フィールドベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書的に並べ替えられ、最初の ID が選択されます。
@@ -96,9 +96,9 @@ ht-degree: 10%
 
 - **ステッチを再生**:*再生* 一意の識別子（ユーザー ID）に基づいてデータを再生します。 このステージでは、以前は不明だったデバイス（永続的な ID）からのヒットが（人物 ID に）結び付けられます。 再生は、**頻度** および **ルックバックウィンドウ** の 2 つのパラメーターによって決定されます。 Adobeでは、次のパラメーターの組み合わせを使用できます。
    - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていないプロファイルは、サイトを訪問した日に認証を行う必要があります。
-   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
-   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
-   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
 
 - **プライバシー**：プライバシー関連のリクエストを受信した場合、リクエストされた ID を削除する以外に、認証されていないイベントに対するその ID の関連付けを取り消す必要があります。
 
@@ -126,7 +126,7 @@ ht-degree: 10%
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
@@ -189,10 +189,10 @@ ht-degree: 10%
 | イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） | ユーザー ID | ステッチ ID （プライバシーリクエスト後） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 3 | 2023-05-12 12:03 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 3 | 2023-05-12 12:03 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 2023-05-12 12:05 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 5 | 2023-05-12 12:05 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |

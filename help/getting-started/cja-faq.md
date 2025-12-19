@@ -145,13 +145,13 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## &#x200B;5. [!UICONTROL 接続]データ保持ためのローリングウィンドウ（相対期間）の設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
 ## &#x200B;6. オブジェクトまたはコンポーネントの削除の影響 {#deletion}
 
-Customer Journey AnalyticsまたはExperience Platformのオブジェクトやコンポーネントを削除またはリセットした場合の影響の概要については、[ 削除とリセットの影響 ](/help/technotes/deletion.md) を参照してください。
+Customer Journey AnalyticsまたはExperience Platformのオブジェクトやコンポーネントを削除またはリセットした場合の影響の概要については、[&#x200B; 削除とリセットの影響 &#x200B;](/help/technotes/deletion.md) を参照してください。
 
 <!-- Refer to deletion guide 
 
