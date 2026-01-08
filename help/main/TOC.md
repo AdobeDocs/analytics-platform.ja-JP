@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 6fcc35bf240821359c705d71efdeb91a5810136f
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1326'
 ht-degree: 99%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 99%
       + [よくある質問](../getting-started/cja-faq.md)
       + [BI ソリューションとの比較](../getting-started/cja-vs-bi.md)
       + [AI アシスタント](../ai-assistant.md)
-      + [Data Insights エージェント](../data-analysis-ai.md)
+      + [Data Insights Agent](../data-analysis-ai.md)
    + Customer Journey Analytics B2B Edition {#cja-b2b}
       + [概要](/help/getting-started/cja-b2b-edition.md)
       + [B2B の概念と機能](/help/getting-started/cja-b2b-concepts-features.md)
@@ -101,6 +101,7 @@ ht-degree: 99%
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Adobe Analytics データのマッピング](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [用語の比較](../getting-started/aa-vs-cja/terminology.md)
       + [データ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
