@@ -50,7 +50,7 @@ Analytics ソースコネクタでのデータの取り込みは、Adobe Analyti
 
 アカウントマネージャーが、複数の組織から Analytics データをマッピングするリクエストが記載されたメールを受信すると、Adobe内でそのリクエストがレビューされます。 その他の質問、オプショントレーニング、その他の情報については、アカウントマネージャーから連絡があります。
 
-承認されると、リクエストされたマッピングが作成され、通知が届きます。 ソース IMS 組織名は、Experience Platformの [Analytics レポートスイートのリスト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) のレポートスイート名に追加されます。
+承認されると、リクエストされたマッピングが作成され、通知が届きます。 ソース IMS 組織名は、Experience Platformの [Analytics レポートスイートのリスト &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) のレポートスイート名に追加されます。
 
 ## 制限とリスク
 
