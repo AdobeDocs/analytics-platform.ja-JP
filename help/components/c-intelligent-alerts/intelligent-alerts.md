@@ -15,7 +15,7 @@ ht-degree: 58%
 
 Customer Journey Analytics のアラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。
 
-また、Customer Journey Analytics パッケージに応じて、異常しきい値に基づいてトリガーされるアラートを使用することもできます。 これらのアラート（*インテリジェントアラート* とも呼ばれます）は、[ 異常値検出 ](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) と統合され、最も必要なときにトリガーされる詳細なコントロールを提供します。
+また、Customer Journey Analytics パッケージに応じて、異常しきい値に基づいてトリガーされるアラートを使用することもできます。 これらのアラート（*インテリジェントアラート* とも呼ばれます）は、[&#x200B; 異常値検出 &#x200B;](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) と統合され、最も必要なときにトリガーされる詳細なコントロールを提供します。
 
 * アラートのトリガー頻度をプレビューする。
 * 自動生成される Analysis Workspace プロジェクトへのリンクが記載された電子メールまたは SMS によるアラートの送信。
@@ -23,11 +23,11 @@ Customer Journey Analytics のアラートを使用すると、変更された�
 * 以下に基づいてアラートを作成：
    * 存在する指標の異常値が、想定されるしきい値を超える、または下回っている。
 
-     [ 異常値検出 ](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) では、履歴データを使用して、期待値に上限と下限を加えて構築します。 実際の指標の値が、上限またはしきい値として定義された下限を超えた場合、そのイベントはしきい値信頼性レベルでの異常値と見なされ、アラートのトリガーを設定します。 しきい値が高い場合（例：99% または 99.9%）は、帯域幅が広いことを意味し、より極端な異常値によって引き起こされるアラートが少なくなります。 しきい値が低い（例：90%）場合は帯域が狭いことを意味し、極端な異常値が少ないことが原因で発生するアラートが多くなります。
+     [&#x200B; 異常値検出 &#x200B;](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) では、履歴データを使用して、期待値に上限と下限を加えて構築します。 実際の指標の値が、上限またはしきい値として定義された下限を超えた場合、そのイベントはしきい値信頼性レベルでの異常値と見なされ、アラートのトリガーを設定します。 しきい値が高い場合（例：99% または 99.9%）は、帯域幅が広いことを意味し、より極端な異常値によって引き起こされるアラートが少なくなります。 しきい値が低い（例：90%）場合は帯域が狭いことを意味し、極端な異常値が少ないことが原因で発生するアラートが多くなります。
    * 特定の割合による指標の変化。
    * 特定の値より上、下、または等しい指標。 （Select、Prime、Ultimateのいずれかのパッケージを利用するAdobe Analyticsのお客様のみが利用できます）
 
-この [ ビデオチュートリアル ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) では、アラートの基本的な概要を説明します。
+この [&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) では、アラートの基本的な概要を説明します。
 
 
 
@@ -64,4 +64,4 @@ Adobe Customer Journey Analytics でアラートを作成する方法につい�
 
 アラートマネージャーでは、既存のアラートを管理できます。タグ付け、名前変更、削除など、アラートに対して様々な管理タスクを実行できます。
 
-Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[ アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。
+Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[&#x200B; アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。
