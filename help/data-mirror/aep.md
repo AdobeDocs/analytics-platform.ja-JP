@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -27,22 +27,24 @@ Customer Journey Analytics用のExperience Platform Data Mirrorには、次の�
 
 ## スキーマ
 
-ミラー化するデータウェアハウスネイティブテーブルである [&#x200B; リレーショナルスキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational){target="_blank"} を作成する必要があります。 リレーショナルスキーマを構築する場合は、次の要件が満たされていることを確認します。
+ミラー化するデータウェアハウスネイティブテーブルである [ リレーショナルスキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational){target="_blank"} を作成する必要があります。 リレーショナルスキーマを構築する場合は、次の要件が満たされていることを確認します。
 
 * リレーショナルスキーマのタイプを要求するプロンプトが表示されたら、必ず手動オプションを選択します。
-* データのタイプに適したスキーマを選択します。 Experience Platform Data Mirrorは、ほとんどの場合、時系列データ（イベントデータなど）に使用されます。
+* データのタイプに適したスキーマを選択します。 Experience Platform Data Mirrorは、ほとんどが時系列データ（イベントデータなど）に使用されますが、レコードベース（参照およびプロファイル）のデータにも使用できます。
 
 * スキーマ内のフィールドとその属性を定義します
 * リレーショナルスキーマ内のフィールドに必要な属性を設定します。
 
-   * プライマリキー
-   * バージョン識別子
-   * タイムスタンプ識別子（時系列データ用）。
+   * **プライマリキー**。
+   * **バージョン記述子**：連番（整数フィールドタイプ）または日時フィールドタイプとして設定する必要があります。 DateTime フィールドタイプを使用する場合、バージョン記述子はデータの変更のタイムスタンプを定義します（例：最終変更日のタイムスタンプを含める場合）。
+   * **タイムスタンプ記述子** （時系列データの場合）。イベントが取得された時点での不変タイムスタンプを定義します。 タイムスタンプ記述子は、レコードベースのリレーショナルスキーマには必要ありません。
+
+
 
 ## データセット
 
 事前にスキーマのデータセットを設定することも、ソースコネクタを設定する際にデータセットを作成することもできます。
-事前にデータセットを作成したりデータセットを選択したりする場合は、以前に作成したリレーショナル [&#x200B; スキーマ &#x200B;](#schema) をデータで使用していることを確認します。
+事前にデータセットを作成したりデータセットを選択したりする場合は、以前に作成したリレーショナル [ スキーマ ](#schema) をデータで使用していることを確認します。
 
 
 ## ソースコネクタ
@@ -53,9 +55,9 @@ Customer Journey Analytics用のExperience Platform Data Mirrorには、次の�
 
 サポートされている Data Warehouse ネイティブソリューションに対する認証については、関連するExperience Platform ドキュメントを参照してください。
 
-* [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### データを選択
@@ -90,6 +92,6 @@ Data Warehouse ネイティブソリューションのテーブルのデータ�
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する &#x200B;](relational.md)
->[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->[リレーショナルスキーマ（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する ](relational.md)
+>[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[リレーショナルスキーマ（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
