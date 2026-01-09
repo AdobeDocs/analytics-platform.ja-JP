@@ -48,7 +48,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-* [Experience Platformで有効期限のない資格情報 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
+* [Experience Platformで有効期限のない資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
 * [&#x200B; 資格情報の有効期限 &#x200B;](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
 
 詳しくは、[カスタマージャーニーのアクセス制御](../technotes/access-control.md)を参照してください。特に、[製品管理者の追加の権限](../technotes/access-control.md#product-admin-additional-permissions)と [Adobe Admin Console の Customer Journey Analytics 権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)を参照してください。
