@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 0d8da0f61e6494801ed3a09823b2f3b7c1bed7a9
 workflow-type: tm+mt
-source-wordcount: '3247'
-ht-degree: 90%
+source-wordcount: '3249'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 ## 前提条件
 
 この機能を使用するには、有効期限のある資格情報または無期限の資格情報を使用して、BI ツールを [!DNL Customer Journey Analytics BI extension] に接続できます。[資格情報ガイド](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)では、有効期限のある資格情報または無期限の資格情報の設定について詳しく説明します。
-CJA 権限を設定するための追加手順を以下に示します
+必要な権限を設定するための追加手順を以下に示します。
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
 ### 資格情報の期限切れ
@@ -48,8 +48,8 @@ CJA 権限を設定するための追加手順を以下に示します
 
 無期限の資格情報を使用するには：
 
-* 無期限の資格情報を Experience Platform に作成します。
-* [有効期限のある資格情報](#Expiring-credentials)に記載されている手順に従って、無期限の資格情報へのアクセス権を付与します。
+* [Experience Platformで有効期限のない資格情報 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
+* [ 資格情報の有効期限 ](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
 
 詳しくは、[カスタマージャーニーのアクセス制御](../technotes/access-control.md)を参照してください。特に、[製品管理者の追加の権限](../technotes/access-control.md#product-admin-additional-permissions)と [Adobe Admin Console の Customer Journey Analytics 権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)を参照してください。
 
@@ -87,7 +87,7 @@ Adobe Experience Platform の場合：
 
    1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
