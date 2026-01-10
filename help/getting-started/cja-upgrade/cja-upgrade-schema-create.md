@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
@@ -21,18 +21,10 @@ ht-degree: 100%
 >title="Adobe Experience Platform で目的のカスタムスキーマを作成"
 >abstract="Adobe Experience Platform UI を使用してスキーマを作成し、アドビがデータを格納するための正しい形式を認識できるようにします。<br><br>この手順には、組織で合意されたスキーマの実際の作成が含まれます。Adobe Experience Platform インターフェイスでスキーマを作成するのにかかる推定時間は、作成する必要があるディメンションと指標の数に応じて約 1 週間です。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Adobe Analytics ExperienceEvent フィールドグループを使用したスキーマの作成"
 >abstract="「Adobe Analytics ExperienceEvent」フィールドグループを使用して、Adobe Analytics で使用されるすべてのフィールドを含むスキーマを Adobe Experience Platform に作成します。<br><br>Adobe Analytics ExperienceEvent フィールドグループに基づくスキーマの作成は簡単で、完了するまでに数分しかかかりません。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
