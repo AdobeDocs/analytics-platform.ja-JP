@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
+source-git-commit: b94c60c9832bc699212dda97ad634e8d3260c45c
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1467'
 ht-degree: 9%
 
 ---
@@ -25,30 +25,30 @@ ht-degree: 9%
 
 {{upgrade-note-step}}
 
-Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) を実装する際に、Customer Journey Analytics用のカスタム [&#x200B; エクスペリエンスデータモデル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home) （XDM）スキーマを作成することをお勧めします。 通常、このスキーマの作成は、実装の変更やコードに触れる前に行われます。 カスタムスキーマを使用すると、Adobe Analyticsの制約を継承したり、何千もの未使用フィールドを管理したりすることなく、簡潔で組織固有のデータコントラクトを設計できます。 組織で使用できるスキーマのタイプについて詳しくは、[Customer Journey Analytics用のスキーマの選択 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
+Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) を実装する際に、Customer Journey Analytics用のカスタム [ エクスペリエンスデータモデル ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home) （XDM）スキーマを作成することをお勧めします。 通常、このスキーマの作成は、実装の変更やコードに触れる前に行われます。 カスタムスキーマを使用すると、Adobe Analyticsの制約を継承することなく、簡潔で組織固有のデータ契約を設計できます。 組織で使用できるスキーマのタイプについて詳しくは、[Customer Journey Analytics用のスキーマの選択 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) を参照してください。
 
 スキーマは、データを長期的に構造化する方法を洗練されたバージョンにすることを目的としています。 スキーマを変更すると、データ収集、検証、ダウンストリームサービスに影響が及ぶので、コストがかかります。 ビジネス要件に応じて、時間の経過と共にスキーマに追加できます。ただし、データがスキーマフィールドに流れ込み始めると、スキーマフィールドを削除することはできません。
 
 ## スキーマとデータビューの比較
 
-Customer Journey Analyticsのデータパイプラインには、データ収集とデータ解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする際の一般的な失策は、XDM で prop と eVar を動作に合わせて再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[&#x200B; データビュー &#x200B;](/help/data-views/data-views.md) を使用して、そのデータがレポートでどのように解釈されるかを判断します。
+Customer Journey Analyticsのデータパイプラインには、データ収集とデータ解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする際の一般的な失策は、XDM で prop と eVar を動作に合わせて再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[ データビュー ](/help/data-views/data-views.md) を使用して、そのデータがレポートでどのように解釈されるかを判断します。
 
-| レイヤー | プライマリ目的 | の所有物 | に属さないもの |
+| レイヤー | プライマリ目的 | 柔軟性 | の所有物 | に属さないもの |
 |---|---|---|---|
-| **XDM スキーマ** | 収集されたデータの永続的な構造と意味の定義 | イベントとエンティティの形状、フィールドの意味、関係、許可された値、チャネル間での再利用 | 番号付き「スロット」（eVar1/prop1）、アトリビューション/永続性ロジック、レポート固有の回避策 |
-| **データビュー** | 分析での収集データの動作を定義 | コンポーネント設定、アトリビューションおよび永続性動作、派生フィールド、フィルタリングされた指標、計算指標 | フィールドの基本的な意味。その意味は、スキーマ内で安定している必要があります |
+| **XDM スキーマ** | 収集されたデータの永続的な構造と意味の定義 | 固定（不変データポイントと見なされる） | イベントとエンティティの形状、フィールドの意味、関係、許可された値、チャネル間での再利用 | 番号付き「スロット」（eVar1/prop1）、アトリビューション/永続性ロジック、レポート固有の回避策 |
+| **データビュー** | 分析での収集データの動作を定義 | 柔軟。自由に変更でき、データをさかのぼって再解釈できます。 | コンポーネント設定、アトリビューションおよび永続性動作、派生フィールド、フィルタリングされた指標、計算指標 | フィールドの基本的な意味。その意味は、スキーマ内で安定している必要があります |
 
 ## スキーマとAdobe Analytics データ収集の比較
 
 Customer Journey Analyticsが使用するエクスペリエンスデータモデルでは、他のほとんどの Analytics ソリューション（Adobe Analyticsを含む）よりも大幅に高い柔軟性が可能です。 堅牢なスキーマを確立することは、他の Analytics 製品に存在する制約の繰り越しを回避するための組織の機会です。
 
-| 一般的なAdobe Analyticsの習慣 | XDM とCJAのアプローチの改善 |
+| 一般的なAdobe Analyticsの習慣 | XDM とCustomer Journey Analyticsのアプローチの改善 |
 |---|---|
 | 番号付きスロット周辺の設計（`eVar1`-`eVar250`、`prop1`-`prop75`） | 安定した意味（`search.term`、`content.category`、`user.membershipTier` など）を持つフィールドを作成し、一貫して再利用する |
 | データモデルへの永続性/割り当て/有効期限のエンコード | スキーマ内の永続的なファクトを取得します。データビューレベルでアトリビューションおよび永続性動作を適用します |
 | 複数の変数で同じ値を複製してレポート動作を実現 | 値を 1 回格納し、その値から複数のコンポーネント（ディメンション/指標）をデータビューで作成します |
 | 必要なカウントごとに一意の「指標フィールド」を作成する | 適切なデータを 1 回（多くの場合、列挙、ブール値、文字列）取得し、データビューでフィルターされたカウントとして指標を定義します |
-| レポートを「事前解決」する変数の設計 | 信頼性の高い方法で事実を把握するためのスキーマを設計し、データビューを使用してレポートセマンティクスを解決します |
+| レポートを「事前解決」する変数の設計 | ファクトを取得するためのスキーマを設計し、データビューを使用してレポートセマンティクスを解決します |
 
 ## 共通の属性を使用したスキーマの確立
 
@@ -66,7 +66,7 @@ Customer Journey Analyticsが使用するエクスペリエンスデータモデ
 * **Core：チャネルやチーム全体に広く適用される** フィールド
 * **拡張機能：必要な場合にのみ適用される** チャネル固有またはドメイン固有のフィールドグループ（web インタラクション、コマース、モバイルライフサイクル、サーバーサイドの詳細）
 
-このパターンでは、すべてのチームがチャネルに適用されないフィールドに入力しなくても、単一の組織スキーマ戦略がサポートされます。
+このパターンは、チームに不要なフィールドへの入力を強制することなく、単一組織スキーマ戦略をサポートします。
 
 ## 適切な標準フィールドグループを優先
 
@@ -84,9 +84,9 @@ Adobeでは、標準化されたフィールドグループをニーズに合わ
 * レポート、ガバナンスまたはアクティベーションの要件を満たすために、追加の属性が必要です
 * ビジネス固有の分類（内部コンテンツカテゴリなど）を表す場合
 
-## 「指標の意味」が存在する場所の決定
+## 指標のカウント方法の決定
 
-Adobe Analyticsでは、多くのチームが `events` 変数を指標の移動先として扱います。 Customer Journey Analyticsでは、カウントする対象と解釈方法に応じて、複数の方法で指標をモデル化できます。
+Adobe Analyticsでは、多くのチームが `events` 変数を指標を追跡する唯一の手段として扱っています。 Customer Journey Analyticsでは、カウントする必要があるものと解釈方法に応じて、複数の方法で指標をトラッキングできます。
 
 スキーマを構築する際は、事実に固執します。 例えば、`error.type = "validation"`、`user.isLoggedIn = true`、`checkout.step = "shipping"` です。 データビューの指標をカウントと定義し、それらのファクトに対するフィルター適用済みカウントを定義します。 例：
 
@@ -102,15 +102,15 @@ Adobe Analyticsでは、多くのチームが `events` 変数を指標の移動�
 
 >[!TIP]
 >
->何かを専用フィールドにするのか、後で派生フィールドにするのかを決定する場合は、広く有用で安定している場合は、スキーマで永続的な事実を取得することをお勧めします。 派生フィールドを使用して、コレクション後にデータを修正または形状を変更できます。
+>スキーマ内の専用フィールドと後で派生フィールドのどちらを使用するかを決定する場合は、広く有用性があり安定している場合は、スキーマで永続的な事実を取得することをお勧めします。 派生フィールドを使用して、コレクション後にデータを修正または形状を変更できます。
 
-## スキーマの手荷物がない移行中もAdobe Analyticsと同等の機能を維持
+## スキーマの手荷物がない移行中もAdobe Analyticsとの同等性を維持
 
 一部の組織は、Customer Journey Analyticsへのアップグレード中もAdobe Analytics レポートを続行する必要があります。 次のアプローチを使用すると、Analytics 固有のアーティファクトを長期的なスキーマデザインに導入しなくてもパリティを維持できます。
 
-1. **Adobe Analyticsが認識し、自動的にマッピングする XDM フィールドパスを使用：** 認識された XDM フィールドをEdge Networkを通じてAdobe Analyticsに送信すると、追加の設定なしで [&#x200B; 自動的にマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) されます。
-1. **組織固有の概念に対してカスタム XDM フィールドを使用：** Analytics 変数に自動的にマッピングされない XDM フィールドは、Adobe Analyticsで [&#x200B; コンテキストデータ変数 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata) として転送されます。
-1. **Adobe Analyticsの処理ルールを使用して、これらのコンテキストデータ変数を prop/eVars にマッピングする：** [&#x200B; 処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) を使用すると、最終的に、カスタム XDM フィールドを任意のeVarまたは prop にマッピングできます。 この概念は、スキーマをクリーンに保ち、Customer Journey Analyticsを中心に据えながら、Adobe Analyticsでのパリティレポートをサポートします。
+1. **Adobe Analyticsが認識し、自動的にマッピングする XDM フィールドパスを使用：** 認識された XDM フィールドをEdge Networkを通じてAdobe Analyticsに送信すると、追加の設定なしで [ 自動的にマッピング ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) されます。
+1. **組織固有の概念に対してカスタム XDM フィールドを使用：** Analytics 変数に自動的にマッピングされない XDM フィールドは、Adobe Analyticsで [ コンテキストデータ変数 ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata) として転送されます。
+1. **Adobe Analyticsの処理ルールを使用して、これらのコンテキストデータ変数を prop/eVars にマッピングする：** [ 処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) を使用すると、最終的に、カスタム XDM フィールドを任意のeVarまたは prop にマッピングできます。 この概念は、スキーマをクリーンに保ち、Customer Journey Analyticsを中心に据えながら、Adobe Analyticsでのパリティレポートをサポートします。
 
 ## 関係者の特定と所有権の定義
 
@@ -128,9 +128,9 @@ Adobe Analyticsでは、多くのチームが `events` 変数を指標の移動�
 スキーマデザインは、組織のプライバシーポリシーに従って、プライバシーとガバナンスの期待を反映する必要があります。 スキーマを構築する際は、次の点を考慮してください。
 
 * 定義済みのユースケースをサポートするために必要なもののみを収集します。
-* 同意およびデータ使用の要件が収集戦略に反映されていることを確認します。 詳しくは [Web SDKを使用した顧客同意データの処理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/consent/sdk) を参照してください。
-* Adobe Experience Platform ガバナンスツール内で機密フィールドにラベルが付けられ、制御されている方法を検討します。 詳しくは、[Adobe Customer Journey Analyticsとデータガバナンス &#x200B;](/help/privacy/privacy-overview.md) を参照してください。
+* 同意およびデータ使用の要件が収集戦略に反映されていることを確認します。 詳しくは [Web SDKを使用した顧客同意データの処理 ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) を参照してください。
+* Adobe Experience Platform ガバナンスツール内で機密フィールドにラベルが付けられ、制御されている方法を検討します。 詳しくは、[Adobe Customer Journey Analyticsとデータガバナンス ](/help/privacy/privacy-overview.md) を参照してください。
 
 ## 次の手順
 
-スキーマアーキテクチャを確立し、合意したら、Adobe Experience Platformでスキーマの作成を開始できます。 詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成 &#x200B;](cja-upgrade-schema-create.md) を参照してください。
+スキーマアーキテクチャを確立し、合意したら、Adobe Experience Platformでスキーマの作成を開始できます。 詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成 ](cja-upgrade-schema-create.md) を参照してください。
