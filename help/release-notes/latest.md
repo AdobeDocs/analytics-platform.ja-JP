@@ -3,53 +3,54 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 299337b6b0ea12224a7da6c15dcc582e8562c088
+source-git-commit: bdf3b87768e123e64ec36154dae0fd1ab5ce1238
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 48%
 
 ---
 
-# 現在の Customer Journey Analytics リリースノート（2025年10月）
+# 最新のCustomer Journey Analytics リリースノート（2026 年 1 月）
 
-**最終更新日**：2025年10月14日（PT）
+**最終更新日**：2026年1月14日（PT）
 
-これらのリリースノートは、2025年10月～11月上旬（PT）のリリース期間を対象としています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+これらのリリースノートは、2026 年 1 月のリリース期間を対象としています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能 | 説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **折れ線グラフビジュアライゼーションとスパークラインに含まれるフィルター条件** | フリーフォームテーブルフィルターに適用するすべての検索フィルター条件がスパークラインに常に含まれるようになりました。 さらに、接続された折れ線グラフビジュアライゼーションに検索フィルター条件を含めることもできます。<p>接続されたテーブルの指標列ヘッダーのスパークラインを選択すると、折れ線グラフビジュアライゼーションに検索フィルター条件を含めることができます。</p><p>以前は、検索フィルター条件は、スパークラインまたは接続された折れ線グラフビジュアライゼーションに含まれていませんでした。</p><p>詳しくは、[フリーフォームテーブルのトレンドデータの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)を参照してください。</p> | | 2025年10月15日（PT） |
-| **データストーリーテリング：Workspace レポートからスライドプレゼンテーションを生成する** | Analysis Workspace レポートに基づくスライドプレゼンテーション（.pptx 形式）を自動生成できるようになりました。 Workspace は、レポート内で主要なインサイトを検出し、関係者が利用できるスライドに変換します。<p>この機能により、結果を明らかにし、エグゼクティブ向けの説明文を作成し、ビジネスへの影響を伝えるために必要な時間と労力が削減されます。</p><p>詳しくは、[データストーリーテリング：Workspace レポートからスライドプレゼンテーションを生成する](/help/analysis-workspace/curate-share/generate-slides.md)を参照してください。</p> | 2025年10月22日（PT） | 2026年1月 |
-| **リアルタイムのレポート** | [Customer Journey Analytics のリアルタイムレポート](/help/components/real-time/real-time.md)では、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。 | 2025年9月18日（PT）（当初は 2025年8月15日（PT）にリリースする予定でした） | 2025年10月22日（PT） |
+| **Customer Journey AnalyticsのExperience Platform プロファイルデータセットからのオーディエンスの分析** | Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込めるようになりました。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして使用できるようになります。<p>これは、Customer Journey Analyticsの新しい機能で XDM オブジェクトマップを取り込むことで可能になりました。これにより、プロファイルオーディエンス ID を取り込むことができます。</p><p>以前は、単純な XDM マップのみをCustomer Journey Analyticsに取り込むことができました。</p><p>オーディエンスデータをディメンションとしてAnalysis Workspaceの任意のプロジェクトに追加できるだけでなく、次の新しいWorkspace テンプレートも使用できます。</p><ul><li>Audience Analyticsの概要</li><li>同意ポリシーの概要</li><p><!--For more information, see "Audience analysis overview" (https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html).-->（ドキュメントのリンクは以下を参照。）</p> | 2025年10月22日（PT） | 2026年1月22日（PT） |
+| **データストーリーテリング：Workspace レポートからスライドプレゼンテーションを生成する** | Analysis Workspace レポートに基づくスライドプレゼンテーション（.pptx 形式）を自動生成できるようになりました。 Workspace は、レポート内で主要なインサイトを検出し、関係者が利用できるスライドに変換します。<p>この機能により、結果を明らかにし、エグゼクティブ向けの説明文を作成し、ビジネスへの影響を伝えるために必要な時間と労力が削減されます。</p><p>（ドキュメントへのリンクを添付）<!--For more information, see [Data storytelling: Generate slide presentations from Workspace reports](/help/analysis-workspace/curate-share/generate-slides.md).--></p> | 2025年10月22日（PT） | 2026年1月28日（PT） |
+| **フリーフォームテーブルに複数のディメンション列を含める** | フリーフォームテーブルに最大 5 つのディメンション列を含めることができ、複数のディメンション項目を並べて表示できます。 ディメンション項目の各行は、単一の連結されたディメンション項目のように動作します。<p>複数のディメンション列を持つフリーフォームテーブルにフィルター、並べ替え、分類などを適用して、より深く、よりカスタムな分析を作成できます。</p><p>以前は、フリーフォームテーブルには 1 つのディメンション列のみを含めることができました。</p><p><!-- For more information, see [Include multiple dimension columns in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).--> （ドキュメントのリンクは以下を参照。）</p> | 2026年1月28日（PT） | 2026年2月18日（PT） |
+| **複数の列でテーブルを並べ替える** | ディメンションか指標かに関わらず、Analysis Workspaceで複数の列でフリーフォームテーブルのデータを並べ替えることができるようになりました。<p>複数の列のデータを並べ替える場合、各列に割り当てた優先度に従ってデータが並べ替えられます。 優先度番号は、並べ替えアイコンの横に表示されます。</p><p>（ドキュメントへのリンクを添付）<!-- For more information, see "Filter and sort freeform tables". (need to move info to this article from "Include multiple dimension columns in a freeform table") --></p> | 2026年1月28日（PT） | 2026年2月18日（PT） |
+| **複数の IMS 組織のデータソースの結合** | Analytics Source コネクタを使用して、複数の IMS 組織から複数のデータソースを組み合わせることができるようになりました。 これにより、顧客データが複数の IMS 組織に分散している場合でも、組織は顧客データを組み合わせて表示できます。 <p>**注意：** この設定を使用できるのは、Adobe カスタマーケアにリクエストを送信した場合のみです。</p>  <p>（ドキュメントのリンクは以下を参照。）</p> |  | 2026年1月30日（PT） |
+| **接続におけるステッチ** | Customer Journey Analyticsのステッチプロセスが、より簡単になりました。 データセットを複製し、その複製されたデータセットにステッチを適用する代わりに、Customer Journey Analytics へのデータ取り込み時にステッチが行われるようになりました。これにより、複製されたデータセットとスキーマの必要性がなくなります。 <p>さらに、Adobe カスタマーケアを通じてステッチをリクエストする代わりに、更新された Connections インターフェイスを通じて自分でステッチを開始 [ できるようになりました ](/help/stitching/use-stitching-ui.md)。</p><p> *以前お知らせしたリリース日は、追加の作業が必要であったこととホリデーシーズンが原因で延期されました。 現在は、安定性を確保し、ホリデー期間中の中断を最小限に抑えるのに、段階的なロールアウトが予定されています。*</p> | 2025年10月28日（PT） | 2026年1月30日（PT） |
 | **データミラーのサポート** | Experience Platform の特定のソースコネクタに対するモデルベースのスキーマと変更データキャプチャ（CDC）機能のサポートにより、Customer Journey Analytics では、[!DNL Snowflake]、[!DNL Azure Databricks]、[!DNL Google BigQuery] のデータウェアハウスソリューションの[データミラー](/help/data-mirror/data-mirror.md)機能をサポートできます。<p>ベータ版にアクセスするには、アドビのアカウントチームにお問い合わせください。</p> | ベータ版リリース：2025年9月24日（PT） | 未定 |
-| **接続におけるステッチ** | Customer Journey Analytics のステッチが簡素化されます。 データセットを複製し、その複製されたデータセットにステッチを適用する代わりに、Customer Journey Analytics へのデータ取り込み時にステッチが行われるようになりました。これにより、複製されたデータセットとスキーマの必要性がなくなります。 <p>さらに、カスタマーサポートを通じてステッチをリクエストする代わりに、[&#x200B; 更新された接続 UI から自分でステッチを開始 &#x200B;](/help/stitching/use-stitching-ui.md) できるようになりました。</p><p> *追加の作業が必要となるので、以前お知らせしたリリース日は延期されます。 新しいリリース日はホリデーシーズンと重なるので、リリース制限が追加されます。 現在は、安定性を確保し、ホリデー期間中の中断を最小限に抑えるのに、段階的なロールアウトが予定されています。*</p> | 2025年10月28日（PT） | 2026年1月30日（PT） |
 | **ストリーミングメディア：スケジュールデータのサポート** | 過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、閲覧者数をより簡単かつ正確に追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。 特定のトピックやプログラムセグメントの閲覧者数データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に紐付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに紐付けることはできませんでした。</p><p>詳しくは、[スケジュールデータをアップロードしてライブコンテンツを追跡する](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/track-schedule-data)を参照してください。</p> | 2025年10月29日（PT） | 2026年上半期<p>（当初は 2025年10月29日（PT）にリリースされる予定でした）</p> |
-| **Analytics ソースコネクタ：Experience Platform でのレポートスイートの検索** | 現在、多数のレポートスイートがある場合 [&#x200B; レポートスイートを検索する &#x200B;](/help/data-ingestion/analytics.md#set-up-an-adobe-analytics-source-connector)、Analytics Source コネクタのデータフローワークフロー内で接続します。 | | 2025年10月30日（PT） |
-| **ストリーミングメディア：Adobe Experience Platform へのストリーミングメディアデータ収集に XDM フィールドを更新しました** | ストリーミングメディアデータを Adobe Experience Platform に収集する際、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用できなくなりました。 代わりに、2025年5月9日（PT）より前にストリーミングメディアデータを Platform に収集するように Analytics ソースコネクタを実装したお客様は、ストリーミングメディアパラメーターに関するドキュメントの「XDM フィールドパスのレポート」の見出しで示されているように、既存の設定を mediaReporting フィールドパスに移行する必要があります。<p> これらのフィールドパスは、[オーディオおよびビデオパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[広告パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[チャプターパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[プレーヤー状態パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters)および[品質パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)のページに表示されますが、「廃止」としてマークされています。 （2025年5月9日（PT）以降に Analytics ソースコネクタを実装し、既に mediaReporting XDM パスのみを使用しているお客様は、アクションは必要ありません。）</p><p>廃止された XDM フィールドパスでのデータ取り込みは、2025年10月末まで継続されます。 その後、廃止されたフィールドパスは完全に廃止され、Adobe Experience Platform スキーマ UI に表示されなくなります。データは mediaReporting フィールドパスを使用してのみ送信されるようになります。</p><p>詳しくは、[更新された XDM ストリーミングメディアフィールドへの Analytics ソースコネクタの実装の移行](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/xdm-updates/updated-xdm-fields)を参照してください。</p><p>移行のサポートについて詳しくは、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。 </p> |  | 2025年10月 |
 
 ## Customer Journey Analytics の修正点
 
-**Analysis Workspace**：AN-400507、AN-400265、AN-399209、AN-397146、AN-394992、AN-390795
-**コンポーネント**：
-**コンテンツ分析**：
-**書き出し**：AN-399012、AN-388578
-**ガイド付き分析**：
-**実装**：AN-397551、AN-397550、AN-397190、AN-396127
-**Report Builder**：AN-401127、AN-400618、AN-392971、AN-391692
-**レポート**：
-**セグメント化**：
-**予定レポート**：
-**共有指標およびディメンション**：
-**その他**：
+**Analysis Workspace**: AN-423389、AN-423316、AN-422636、AN-422482、AN-422121、AN-422116、AN-422027、AN-421134、AN-420187、AN-406271 406188、AN-405997、AN-405983、AN-405796、AN-405033、AN-404893、AN-404871、AN-404842、AN-404713 404502 404353 404352 404048 403241 402523 400795 396149 390990 390646 383484 376980 371729 347570、AN-COUNTERN、AN-COUNTERN、AN-COUNTERN、AN-AN-AN AN – から AN – へ、AN – から AN – へ、AN – から AN – へ、AN – から AN – へ、AN – から AN – へ、AN – から AN – へ、AN – から AN – へ
+**コンポーネント**:
+**Content Analytics**:
+**ガイド付き分析**: AN-421274
+**エクスポート**:
+**データビュー**: AN-421891, AN-404627
+**実装**:
+**Report Builder**: AN-422120、AN-421937、AN-406296、AN-402951、AN-399748
+**レポート**:
+**セグメント化**:
+**予定レポート**:AN-423087、AN-422686
+**共有指標およびディメンション**:
+**その他**: AN-422946、AN-422775、AN-422273、AN-422100、AN-420045、AN-404891、AN-390912
 
 
 ## Customer Journey Analytics 管理者向けの重要な注意事項
 
 | 通知 | 追加または更新された通知 | 説明 |
 | --- | --- | --- |
-| 該当なし | | |
+| 該当なし |  |  |
 
 ## 関連リソース
 
