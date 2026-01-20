@@ -92,7 +92,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL ユーザー環境設定]** の **[!UICONTROL プロジェクトと分析]**/**[!UICONTROL データ]** セクションで、数値の形式を定義できなくなりました。 数値の形式は、ログインしたユーザーに対して [&#x200B; 設定されているデフォルト言語 &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) によって自動的に決定されます。
+>**[!UICONTROL ユーザー環境設定]** の **[!UICONTROL プロジェクトと分析]**/**[!UICONTROL データ]** セクションで、数値の形式を定義できなくなりました。 数値の形式は、ログインしたユーザーに対して [&#x200B; 設定されているデフォルト言語 &#x200B;](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/browser-language) によって自動的に決定されます。
 >
 
 
