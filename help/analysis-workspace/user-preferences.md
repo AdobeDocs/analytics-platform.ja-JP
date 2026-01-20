@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 99%
+source-wordcount: '4044'
+ht-degree: 98%
 
 ---
 
@@ -50,14 +50,11 @@ ht-degree: 99%
 >title="Experience Cloud 認証を要求"
 >abstract="有効にすると、Analysis Workspace の「**[!UICONTROL 任意のユーザーと共有]**」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。"
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
 >title="プロジェクトへのコメントを許可"
 >abstract="有効にすると、Analysis Workspace の各プロジェクトの右側のパネルにコメント領域が表示されます。"
 
-<!-- markdownlint-enable MD034 -->
 
 組織内のすべてのユーザーとプロジェクトに適用される会社環境設定を更新できます。これらの環境設定へのアクセス方法について詳しくは、[環境設定の更新](#update-preferences)を参照してください。
 
@@ -66,7 +63,7 @@ ht-degree: 99%
 | **「テンプレート」タブ** | | |
 |  | 「テンプレート」タブを非表示 | 組織内のすべてのユーザーの「テンプレート」タブを非表示にします。 |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]&#x200B;**／**&#x200B;[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
 | | Experience Cloud 認証を要求 | このオプションを有効にすると、Analysis Workspace の「**[!UICONTROL 任意のユーザーと共有]**」オプションからプロジェクトへのアクセス権を付与されたユーザーは、Experience Cloud 資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーはこのオプションを無効にすることはできません。ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションで共有され、「[!UICONTROL Experience Cloud 認証を要求]」オプションが有効になっていないすべてのプロジェクトが非アクティブ化されます。<p>このオプションを有効（Experience Cloud 認証を要求）にし、後で無効（プロジェクトにアクセスするリンクを持つすべてのユーザーを許可）にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーに対して、そのプロジェクトへのアクセス権は自動的に回復しません。この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 | プロジェクトのコメント | プロジェクトへのコメントを許可 | このオプションが有効になっている場合、Analysis Workspace の各プロジェクトの右側のパネルでコメント領域を使用できます。 <p>[プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)で説明されているように、プロジェクト所有者は特定のプロジェクトのコメント領域を無効にすることができます。</p> <p>Analysis Workspace プロジェクトへのコメントについて詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。</p> |
 
@@ -93,6 +90,12 @@ ht-degree: 99%
 
 また、これらの同じ環境設定の一部は、Analysis Workspace の個々のプロジェクトに対してカスタマイズできます。詳しくは、[プロジェクトの概要](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 
+>[!IMPORTANT]
+>
+>**[!UICONTROL ユーザー環境設定]** の **[!UICONTROL プロジェクトと分析]**/**[!UICONTROL データ]** セクションで、数値の形式を定義できなくなりました。 数値の形式は、ログインしたユーザーに対して [ 設定されているデフォルト言語 ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) によって自動的に決定されます。
+>
+
+
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **表示** | | |
@@ -103,7 +106,6 @@ ht-degree: 99%
 |  | [カレンダー](/help/analysis-workspace/c-panels/panels.md#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>「[!UICONTROL デフォルトでパネルカレンダーを基準とした日付範囲コンポーネントを作成]」を有効にすることができます。</li></ul> |
 |  | [パネルタイプ](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | インスタンスのカウント | 「[!UICONTROL 繰り返しインスタンスをカウント]」を有効にして、インスタンスがレポート内でカウントされるかどうかを指定します。例えば、有効にすると、同じページに対して複数の連続するページビューが複数のページビューとして扱われます。無効にすると、同じページに対する複数の連続するページビューが、単一のページビューとしてカウントされます。 <p>**メモ：**&#x200B;この設定は、特定の指標（セッションなど）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
-|  | 数値の形式 | <ul><li>1,000.00（デフォルト）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 区切り記号 | <ul><li>コンマ（デフォルト）</li><li>セミコロン</li><li>コロン</li><li>パイプ</li><li>ピリオド</li><li>空白文字</li><li>タブ</li></ul> |
 |  | 注釈を表示 | 注釈をプロジェクトに表示するかどうかを選択します。注釈について詳しくは、[注釈：概要](/help/components/annotations/overview.md)を参照してください。 |
 
@@ -196,7 +198,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | 正規化（該当する場合） | 指標を均等な比率にします。この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
 | | Y 軸をゼロに固定 | グラフにプロットされたすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外に更新されます。このチェックボックスをオンにすると、Y 軸はゼロになり、グラフが再描画されます。 |
 | | 異常値を使用して Y 軸をスケール | Y 軸は、異常値を使用してスケーリングされます。 |
-| **[行](/help/analysis-workspace/visualizations/line.md)** | | |
+| **[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 割合 | 折れ線グラフビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 折れ線グラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | | 項目数の上限を設定 | 折れ線グラフのビジュアライゼーションの X 軸の項目数を減らします。この環境設定は、大きなデータセットがある場合に役立ちます。 |
