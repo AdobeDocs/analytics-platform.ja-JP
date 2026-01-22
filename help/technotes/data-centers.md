@@ -4,10 +4,10 @@ description: 世界中のCJA データセンターの場所をご覧ください
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
-source-git-commit: b325319167ae183b54e60feee0c591c245a20e49
+source-git-commit: 3fd31ea85dc80a2d3070c8136a8a1984fe14c074
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '221'
+ht-degree: 7%
 
 ---
 
@@ -15,16 +15,39 @@ ht-degree: 4%
 
 Adobe Customer Journey Analyticsは、北米、欧州、APAC のパブリッククラウドサービスプロバイダーのエンタープライズクラスのデータセンターでホストされています。
 
-プロビジョニング時に、お客様はAdobe Experience Platform データが存在する地域を指定します。 Adobe Experience Platform Data Lake からCJAに取り込まれたデータは、同じリージョンに保存されます。
+プロビジョニング時に、お客様はAdobe Experience Platform データが存在する地域を指定します。 Adobe Experience Platform Data Lake からCustomer Journey Analyticsに取り込まれたデータは、同じリージョンに保存されます。
 
-詳しくは、Adobe Experience Cloud ドキュメントの [&#x200B; 地域データ収集 &#x200B;](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/rdc) を参照してください。
+詳しくは、Adobe Experience Cloud ドキュメントの [ 地域データ収集 ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) を参照してください。
 
-## Azure
 
-- バージニア（米国）
-- カナダ中部
-- オランダ
-- オーストラリア東部
-- インド中部
-- 英国
+## データが格納されているデータセンターの表示
+
+>[!NOTE]
+>
+>あるデータセンターから別のデータセンターにデータを移動することはできません。
+
+データが格納されているデータセンターを表示するには：
+
+1. [Adobe Experience Cloud](https://experience.adobe.com) にログインします。
+
+1. インターフェイスの右上にあるアプリ切り替えボタン **[!UICONTROL アプリ]** から ![Experience Platform](/help/assets/icons/Apps.svg) を選択します。
+
+1. 割り当てられたデータセンターのリージョンコードは、Experience Platformの右上に表示されます。
+
+   ![Experience Platform ホームページのデータセンター ](assets/experience-platform-data-center.png)
+
+1. 次の表を使用して、地域コードが関連付けられている地域を把握します。
+
+   | Adobe地域コード | クラウドプロバイダー | 地理的地域 |
+   |-------------------|-------|-------------------------------------------|
+   | VA7 | Azure | 米国（デフォルト） |
+   | VA6 | AWS | 米国（要請済み） |
+   | NLD2 | Azure | オランダ、アムステルダム |
+   | CAN2 | Azure | カナダ中部、トロント |
+   | AUS5 | Azure | オーストラリア、シドニー |
+   | GBR9 | Azure | 英国、ロンドン |
+   | IND2 | Azure | インド |
+   | CHE2 | Azure | スイス |
+
+
 
