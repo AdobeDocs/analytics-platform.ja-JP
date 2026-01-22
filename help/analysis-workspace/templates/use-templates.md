@@ -4,9 +4,9 @@ title: テンプレートの使用
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
+source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
 workflow-type: tm+mt
-source-wordcount: '20775'
+source-wordcount: '20877'
 ht-degree: 97%
 
 ---
@@ -404,7 +404,7 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 | **入口ページ** | 訪問者が最初にサイトを訪問したときにアクセスする上位のページを表示します。 <p>**これにより**、サイトへのトラフィックを最も多く推進しているページを理解したり、サイトの訪問者が最初に持った印象を把握したりできます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、訪問者がサイトへの最初のアクセスで得るエクスペリエンスを最適化したり、訪問者がサイトに入ったときに最初に表示されるページが居心地が良く、サイトの他の領域へ移動する必要なリンクを提供していることを確認したりすることができます。</p><p>このテンプレートでは、セッション指標を使用します。また、棒グラフビジュアライゼーションとフリーフォームテーブルビジュアライゼーションも使用します。</p> |
 | **出口ページ** | 訪問者がサイトを離れる直前にアクセスした上位のページを表示します。<p>**これにより**、どのページが訪問者をサイトから離れさせているかをより深く理解できます。 </p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、一般的な出口ページを更新して、退出前のエクスペリエンスを最適化したり、コンテンツやリンクを追加して、訪問者がサイトに留まるようにしたりすることができます。</p><p>このテンプレートでは、セッション指標を使用します。また、棒グラフビジュアライゼーションとフリーフォームテーブルビジュアライゼーションも使用します。</p> |
 | **製品使用状況の概要** | Customer Journey Analytics 製品が組織内でどのように使用されているかを表示します。 <p>**これにより**、Customer Journey Analytics を使用している人の数、使用頻度、長期にわたる使用傾向をより良く理解できます。また、作成中のプロジェクトの数、これらのプロジェクトの詳細（最も一般的に使用されるコンポーネント、ビジュアライゼーション、パネルなど）、他の多くの使用状況の統計も確認できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。 例えば、未使用のプロジェクトまたはコンポーネントを削除することや、人気のある機能に関するユーザートレーニングを提供することができます。</p> |
-| **コンテンツ分析** | 最もパフォーマンスの高いコンテンツとコンテンツ属性について説明します。<p>**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。コンテンツ分析では、AI を使用して属性を自動的に生成し、コンテンツにタグを付けます。 詳しくは、[Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} を参照してください。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。</p> |
+| **Content Analytics** | 最もパフォーマンスの高いコンテンツとコンテンツ属性について説明します。<p>**これにより**、コンテンツのパフォーマンスを詳細なレベルで把握できます。個々のアセットや特定の属性のパフォーマンスを確認できます。コンテンツ分析では、AI を使用して属性を自動的に生成し、コンテンツにタグを付けます。 詳しくは、[Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} を参照してください。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ホームページでパフォーマンスの高いアセットを宣伝したり、パフォーマンスの高い属性を含むように特定のセグメントのコンテンツをパーソナライズしたり、古くなり始めたコンテンツのローテーションを行ったりすることができます。</p> |
 
 ### Web：コンバージョン {#web-conversion}
 
@@ -652,10 +652,9 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 次のテンプレートを表示できます。
 
-<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> - -->
-
 | テンプレート名 | このテンプレートを使用する理由 <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| **[!UICONTROL オーディエンスの概要]** | サイトを訪問している人の中で、どのオーディエンスが表されているかを確認します。<p>**これにより** オーディエンスに関する一般的な情報、オーディエンスの作成元（RTCDP、Customer Journey Analyticsなど）、オーディエンスの重複などをより深く理解できます。</p><p>**学習した内容に応じて、様々な操作を行うことができます。例えば** データを使用して、特定のオーディエンスのマーケティング活動に専念したり、複数のオーディエンスにまたがる顧客に合わせてカスタマイズされたエクスペリエンスを作成したりできます。</p><p>このテンプレートは、オーディエンス名、オーディエンスオリジン、退出オーディエンス名、退出オーディエンスオリジンディメンションを使用します。</p><p>詳しくは、[Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 ](/help/connections/audience-analysis/analyze-audiences.md) を参照してください。</p> |
 | [!UICONTROL **初回訪問者とリピート訪問者**] | 初回訪問者とリピート訪問者の比較を表示します。 <p>**これにより**、顧客の忠誠度の維持におけるサイトの有効性や、新規顧客の獲得率をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、初回訪問者に今後の購入に対するインセンティブを提供して再訪問を促すことができます。</p><!-- This template uses the --> |
 | **ユーザー ID** | 様々なチャネルをまたいだ個々のユーザーの行動を表示します。<p>**これにより**、複数のタッチポイントをまたいだ顧客体験とインタラクション全体をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーの環境設定をより適切にターゲットとするマーケティング活動をパーソナライズできます。</p><!-- This template uses the --> |
 | **地域 - 国** | サイトの訪問者がどの国から訪問しているかを表示します。<p>**これにより**、訪問者がどの国からサイトに訪問しているか、最も人気のある国をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、これらの国でのマーケティング活動に注力するデータを使用したり、第一言語が異なる国でもサイトエクスペリエンスが最適になるようにしたりできます。</p><p>このテンプレートでは、国ディメンションを使用します。 </p> |
