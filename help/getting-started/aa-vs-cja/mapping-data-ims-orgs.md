@@ -32,7 +32,7 @@ Analytics ソースコネクタでのデータの取り込みは、Adobe Analyti
 
 | イラスト | 説明 |
 |---|---|
-| ![ 複数の IMS 組織間でのデータのマッピング ](/help/getting-started/assets/map-data-across-ims-orgs.svg) | このマッピングを使用すると、IMS Organization 1、IMS Organization 2、および IMS Organization 3 に存在するレポートスイートについて、IMS Organization 3 内でプロビジョニングされたCustomer Journey Analytics内の 1 つの接続からレポートできます。 |
+| ![&#x200B; 複数の IMS 組織間でのデータのマッピング &#x200B;](/help/getting-started/assets/map-data-across-ims-orgs.svg) | このマッピングを使用すると、IMS Organization 1、IMS Organization 2、および IMS Organization 3 に存在するレポートスイートについて、IMS Organization 3 内でプロビジョニングされたCustomer Journey Analytics内の 1 つの接続からレポートできます。 |
 
 {style="table-layout:fixed"}
 
@@ -50,7 +50,7 @@ Analytics ソースコネクタでのデータの取り込みは、Adobe Analyti
 
 Adobe アカウントマネージャーが、複数の組織から Analytics データをマッピングするリクエストを含むメールを受信すると、Adobe内でそのリクエストがレビューされます。 その他の質問、オプションのトレーニング、その他の情報については、Adobe アカウントマネージャーから連絡があります。
 
-承認されると、リクエストされたマッピングが作成され、通知が届きます。 ソース IMS 組織名は、Experience Platformの [Analytics レポートスイートのリスト ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) のレポートスイート名に追加されます。
+承認されると、リクエストされたマッピングが作成され、通知が届きます。 ソース IMS 組織名は、Experience Platformの [Analytics レポートスイートのリスト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) のレポートスイート名に追加されます。
 
 
 ## 制限事項
@@ -68,18 +68,18 @@ Adobe アカウントマネージャーが、複数の組織から Analytics デ
 
 ### プロファイル
 
-*複数の IMS 組織からの Analytics データをマッピング* 機能が承認されたら、宛先 IMS 組織の 1 つ以上のレポートスイートのデータをExperience Platformに追加できます。 これを行うには、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) を設定します。 次に、ターゲットデータセットがExperience Platformで作成されます。 この設定とプロセスの一環として、1 つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
+*複数の IMS 組織からの Analytics データをマッピング* 機能が承認されたら、宛先 IMS 組織の 1 つ以上のレポートスイートのデータをExperience Platformに追加できます。 これを行うには、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) を設定します。 次に、ターゲットデータセットがExperience Platformで作成されます。 この設定とプロセスの一環として、1 つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
 
-前述のように、設定とプロセスの結果として生じるプロファイルの合計数を推定します。 合計数が、宛先組織に対して契約で権利を付与されるプロファイルの数に含まれていることを確認します。 プロファイルサービスへの取り込みに対してデータを選択的に含めるか除外する [ フィルタリングルールと条件 ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} を適用します。 または、プロファイルデータを関連するレポートスイートのプロファイルサービスに送信するオプションを無効にします。
+前述のように、設定とプロセスの結果として生じるプロファイルの合計数を推定します。 合計数が、宛先組織に対して契約で権利を付与されるプロファイルの数に含まれていることを確認します。 プロファイルサービスへの取り込みに対してデータを選択的に含めるか除外する [&#x200B; フィルタリングルールと条件 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} を適用します。 または、プロファイルデータを関連するレポートスイートのプロファイルサービスに送信するオプションを無効にします。
 
 
 ### ステッチ
 
-*複数の IMS 組織からの Analytics データをマッピング* 機能が承認されたら、宛先 IMS 組織の 1 つ以上のレポートスイートのデータをExperience Platformに追加できます。 これを行うには、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) を設定します。 Analytics ソースコネクタで設定したレポートスイートのターゲットデータセットは、Experience Platformで作成します。 この設定とプロセスの一環として、1 つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
+*複数の IMS 組織からの Analytics データをマッピング* 機能が承認されたら、宛先 IMS 組織の 1 つ以上のレポートスイートのデータをExperience Platformに追加できます。 これを行うには、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) を設定します。 Analytics ソースコネクタで設定したレポートスイートのターゲットデータセットは、Experience Platformで作成します。 この設定とプロセスの一環として、1 つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
 
-ターゲットデータセットに対して、[ フィールドベース ](/help/stitching/fbs.md) と [ グラフベース ](/help/stitching/gbs.md) の両方のステッチを使用できます。 これらのターゲットデータセットの 1 つ以上でグラフベースのステッチを使用する場合は、[ プロファイル ](#profiles) の節で説明しているように、プロファイル数の契約上の使用権限の範囲内に収まるようにします。
+ターゲットデータセットに対して、[&#x200B; フィールドベース &#x200B;](/help/stitching/fbs.md) と [&#x200B; グラフベース &#x200B;](/help/stitching/gbs.md) の両方のステッチを使用できます。 これらのターゲットデータセットの 1 つ以上でグラフベースのステッチを使用する場合は、[&#x200B; プロファイル &#x200B;](#profiles) の節で説明しているように、プロファイル数の契約上の使用権限の範囲内に収まるようにします。
 
-リアルタイム顧客プロファイルのライセンスを持っていないが、1 つ以上のターゲットデータセットでグラフベースのステッチを使用する必要がある場合は、これらのターゲットデータセットで [ID サービス ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) のみを有効にしてください。
+リアルタイム顧客プロファイルのライセンスを持っていないが、1 つ以上のターゲットデータセットでグラフベースのステッチを使用する必要がある場合は、これらのターゲットデータセットで [ID サービス &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) のみを有効にしてください。
 
 
 ### 権限
@@ -88,4 +88,4 @@ Adobe アカウントマネージャーが、複数の組織から Analytics デ
 
 ### データのレポート
 
-*複数の IMS 組織からの Analytics データをマッピング* 機能は、データをCustomer Journey Analytics [connection](/help/connections/overview.md)、1 つ以上の [ データビュー ](/help/data-views/data-views.md) および [workspace プロジェクト ](/help/analysis-workspace/home.md) の一部として使用できるようにするための最初の手順にすぎません。 1 つの IMS 組織で使用可能になったデータを慎重に検査する必要があります。 また、このデータを正しくレポートするには、データ準備、派生フィールド、追加のルックアップテーブルなどの機能を考慮する必要があります。
+*複数の IMS 組織からの Analytics データをマッピング* 機能は、データをCustomer Journey Analytics [connection](/help/connections/overview.md)、1 つ以上の [&#x200B; データビュー &#x200B;](/help/data-views/data-views.md) および [workspace プロジェクト &#x200B;](/help/analysis-workspace/home.md) の一部として使用できるようにするための最初の手順にすぎません。 1 つの IMS 組織で使用可能になったデータを慎重に検査する必要があります。 また、このデータを正しくレポートするには、データ準備、派生フィールド、追加のルックアップテーブルなどの機能を考慮する必要があります。
