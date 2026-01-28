@@ -63,7 +63,7 @@ Customer Journey Analyticsには、製品管理者ロール、製品プロファ
   | [!UICONTROL データ管理] | [!UICONTROL データセットの表示] | データセットおよびスキーマへの読み取り専用アクセス |
   | [!UICONTROL ID 管理] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
 
-  Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) を参照してください。
+  Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions) を参照してください。
 
 
 * Journey OptimizerがJourney Optimizer Connections が存在するCustomer Journey Analyticsと統合されている場合は、接続にアクセスするためのジャーニー権限も追加する必要があります。
@@ -84,13 +84,13 @@ Customer Journey Analyticsには、製品管理者ロール、製品プロファ
   | [!UICONTROL 宛先] | [!UICONTROL 宛先の管理] | 宛先接続および宛先アカウントの読み取り、作成および削除へのアクセス。 |
   | [!UICONTROL 宛先] | [!UICONTROL 宛先のアクティブ化] | ユーザーが既存の宛先に対してセグメントをアクティブ化できるようにします。 アクティブ化ワークフローのマッピングステップを有効にします。また、この権限の場合は、宛先に対してデータをアクティブ化するユーザーに宛先の表示権限を付与する必要があります。 |
 
-  Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) を参照してください。
+  Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions) を参照してください。
 
 * [BI 拡張機能の使用 &#x200B;](../data-views/bi-extension.md)
 
   ユーザーが BI 拡張機能を使用する場合、製品管理者
 
-   * ユーザーのExperience Platform権限に、クエリの管理およびクエリサービス統合の管理オプションを備えたクエリサービスリソースを持つロールが含まれていることを確認する必要があります。 Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) を参照してください。
+   * ユーザーのExperience Platform権限に、クエリの管理およびクエリサービス統合の管理オプションを備えたクエリサービスリソースを持つロールが含まれていることを確認する必要があります。 Experience Platformの権限について詳しくは、[&#x200B; 製品プロファイルの権限の管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions) を参照してください。
 
      | カテゴリ | 権限 | 説明 |
      |---|---|---|
@@ -130,7 +130,7 @@ Customer Journey Analyticsには、製品管理者ロール、製品プロファ
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL オーディエンスの作成] | ユーザーが [&#x200B; オーディエンス &#x200B;](/help/components/audiences/audiences-overview.md) を作成できるようにする Adobe Experience Platformに [&#x200B; セグメントの管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home) が必要です。 |
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL &#x200B; データstorytelling] | ユーザーが [Workspace プロジェクトに基づいてスライドプレゼンテーションを作成 &#x200B;](/help/analysis-workspace/curate-share/generate-slides.md) できるようにします。 |
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL 監査ログへのアクセス] | [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) と監査ログ UI に対して権限チェックを実施します。 |
-| [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL &#x200B; 任意のユーザーとプロジェクトリンクを共有 &#x200B;] | ユーザーが [&#x200B; 任意のユーザーとプロジェクトを共有 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) できるようにする |
+| [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL &#x200B; 任意のユーザーとプロジェクトリンクを共有 &#x200B;] | ユーザーが [&#x200B; 任意のユーザーとプロジェクトを共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) できるようにする |
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL 予測] | ユーザーがAnalysis Workspaceの [&#x200B; 予測機能 &#x200B;](../analysis-workspace/c-forecast/forecasting.md) アクセスできるようにする |
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL AI アシスタント：製品に関する知識 &#x200B;] | ユーザーが [AI アシスタント &#x200B;](../ai-assistant.md) にアクセスして、製品に関する知識を得ることができるようにします。 |
 | [!UICONTROL &#x200B; レポートツール &#x200B;] | [!UICONTROL インテリジェントキャプション] | ユーザーが [&#x200B; インテリジェントキャプション &#x200B;](/help/analysis-workspace/visualizations/intelligent-captions.md) にアクセスできるようにする |
