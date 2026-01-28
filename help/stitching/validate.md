@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ステッチの有効化と検証 &#x200B;](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ステッチの有効化と検証 &#x200B;](https://video.tv.adobe.com/v/3478121?captions=jpn&quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
