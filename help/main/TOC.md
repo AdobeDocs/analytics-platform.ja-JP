@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1363'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
    + [2021年リリース](../release-notes/2021.md)
    + [2020年リリース](../release-notes/2020.md)
    + [機能リリース戦略](../release-notes/releases.md)
-   + [ドキュメントのアップデート](../release-notes/doc-changes.md)
+   + [ドキュメントの更新](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
    + Customer Journey Analytics {#cja-b2c-overview}
@@ -117,7 +117,7 @@ ht-degree: 99%
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
-         + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
+         + [モバイル SDK](../data-ingestion/aepmobilesdk.md)
          + [Server API](../data-ingestion/serverapi.md)
       + [バッチデータ](../data-ingestion/batch.md)
       + [ストリーミングデータ](../data-ingestion/streaming.md)
@@ -176,7 +176,7 @@ ht-degree: 99%
       + [データ設定](../tools/product-usage/data-settings.md)
       + [オプトアウト設定](../tools/product-usage/opt-out-settings.md)
 
-+ ワークスペースプロジェクト {#cja-workspace}
++ Workspace プロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
    + [基本分析の実行](../analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
@@ -269,7 +269,7 @@ ht-degree: 99%
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [送信およびスケジュール](../analysis-workspace/export/t-schedule-report.md)
+      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + アトリビューション {#attribution}
       + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
@@ -354,7 +354,7 @@ ht-degree: 99%
    + セグメント {#segments}
       + [概要](/help/components/segments/seg-overview.md)
       + [セグメントの作成](/help/components/segments/seg-create.md)
-      + [セグメントの構築](/help/components/segments/seg-builder.md)
+      + [セグメントの作成](/help/components/segments/seg-builder.md)
       + [クイックセグメント](/help/components/segments/seg-quick.md)
       + [順次セグメント](/help/components/segments/seg-sequential-build.md)
       + [セグメントの共有](/help/components/segments/seg-share.md)
@@ -428,8 +428,8 @@ ht-degree: 99%
    + [セグメントの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
-   + [メール用ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
-   + [クラウド書き出し用ワークブックのスケジュール設定](../report-builder/report-builder-export.md)
+   + [メールのワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
+   + [クラウド書き出しのワークブックのスケジュール設定](../report-builder/report-builder-export.md)
    + [ワークブックスケジュールの管理](/help/report-builder/manage-schedules-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)
@@ -494,7 +494,24 @@ ht-degree: 99%
       + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
       + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [概要データの使用](/help/use-cases/data-views/summary-data.md)
-      + [BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
+      + BI 拡張機能 {#bi-extension}
+         + [ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [データビューの接続とリスト表示](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [毎日のトレンド](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [毎時トレンド](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [月間トレンド](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [ランク付けされた単一ディメンション](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [複数のディメンションのランク](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [個別ディメンション値のカウント](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [日付範囲名を使用してフィルター](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [セグメント名を使用したセグメント化](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [ディメンション値を使用したセグメント化](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [並べ替え](/help/use-cases/data-views/bi-extension/sort.md)
+         + [制限](/help/use-cases/data-views/bi-extension/limits.md)
+         + [変換](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [ビジュアライゼーション](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [注意事項](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + 派生フィールド {#derived-fields}
       + [LLM および AI 生成トラフィックのレポート](/help/use-cases/ai-traffic.md)
       + [目標に関するレポート](../use-cases/goals-using-derived-fields.md)
