@@ -25,7 +25,7 @@ ht-degree: 5%
 * 指標：**[!UICONTROL 購入売上高]**🅓 および **[!UICONTROL 購入]** 🅔。
 * フィルター：**[!UICONTROL 釣り製品]** 🅕。
 
-![Customer Journey Analytics ベースのセットアップ ](../assets/cja-base.png)
+![Customer Journey Analytics ベースのセットアップ &#x200B;](../assets/cja-base.png)
 
 ユースケースを確認したら、これらのサンプルオブジェクトを特定の環境に適したオブジェクトに置き換えます。
 
@@ -40,44 +40,44 @@ ht-degree: 5%
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](../assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](../assets/queryservice-credentials.png)
 
 1. Power BI Desktop を起動します。
    1. メインインターフェイスから、「**[!UICONTROL 他のソースからデータを取得]**」を選択します。
    1. **[!UICONTROL データを取得]** ダイアログで、次の手順を実行します。
-      ![PowerBI PostgreSQL データベース ](../assets/powerbi-postgresql.png)
+      ![PowerBI PostgreSQL データベース &#x200B;](../assets/powerbi-postgresql.png)
       1. **[!UICONTROL PostgreSQL データベース]** を検索して選択します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** ダイアログで、次の手順を実行します。
-      ![PowerBI デスクトップサーバーとデータベースの設定 ](../assets/powerbi-serverdatabase.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付け、`:`Server **[!UICONTROL の値として]** で区切ります。 例：`examplecompany.platform-query.adobe.io:80`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
+      ![PowerBI デスクトップサーバーとデータベースの設定 &#x200B;](../assets/powerbi-serverdatabase.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Host]** と **[!UICONTROL Port]** の値をコピーして貼り付け、`:`Server **[!UICONTROL の値として]** で区切ります。 例：`examplecompany.platform-query.adobe.io:80`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Database]** 値をコピー&amp;ペーストします。 貼り付ける値に `?FLATTEN` を追加します。 例：`prod:cja?FLATTEN`。
       1. **[!UICONTROL Data connectivity mode]** として **[!UICONTROL DirectQuery]** を選択します。
       1. **[!UICONTROL OK]** を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** - **[!UICONTROL データベース]** ダイアログで、
-      ![PowerBI デスクトップユーザーとパスワード ](../assets/powerbi-userpassword.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
+      ![PowerBI デスクトップユーザーとパスワード &#x200B;](../assets/powerbi-userpassword.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** および **[!UICONTROL パスワード]** の値をコピーします。 [&#x200B; 有効期限のない認証情報 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. **[!UICONTROL これらの設定を適用するレベルを選択]** のドロップダウンメニューが、前に定義した **[!UICONTROL サーバー]** に設定されていることを確認します。
       1. **[!UICONTROL 接続]** を選択します。
    1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BI Desktop に以下が表示されます。
-      ![Power BI Destkop 読み込みデータ ](../assets/powerbi-navigator-load.png)
+      ![Power BI Destkop 読み込みデータ &#x200B;](../assets/powerbi-navigator-load.png)
       1. 左パネルのリストから **[!UICONTROL public.cc_data_view]** を選択します。
       1. 次の 2 つのオプションがあります。
          1. **[!UICONTROL 読み込み]** を選択して続行し、設定を完了します。
          1. **[!UICONTROL データを変換]** を選択します。 オプションで設定の一部として変換を適用できるダイアログが表示されます。
-            ![Power BI デスクトップ変換データ ](../assets/powerbi-transform-data.png)
+            ![Power BI デスクトップ変換データ &#x200B;](../assets/powerbi-transform-data.png)
             * **[!UICONTROL 閉じて適用]** を選択します。
    1. しばらくすると、**[!UICONTROL public.cc_data_view]** が **[!UICONTROL Data]** ペインに表示されます。 ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択して、ディメンションと指標を表示します。
-      ![Power BI Destkop サーバーのデータが読み込まれました ](../assets/powerbi-navigator-loaded.png)
+      ![Power BI Destkop サーバーのデータが読み込まれました &#x200B;](../assets/powerbi-navigator-loaded.png)
 
 
 ## FLATTEN か NOT か
 
-Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -88,8 +88,8 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 ### 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
-* [Power BIをクエリサービスに接続 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/power-bi)。
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [Power BIをクエリサービスに接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/power-bi)。
 
 
 
@@ -99,23 +99,23 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](../assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](../assets/queryservice-credentials.png)
 
 1. Tableau の起動
    1. **[!UICONTROL To a Server]** の下の左パネルから「**[!UICONTROL PostgreSQL]**」を選択します。 使用できない場合は、「**[!UICONTROL その他…]**」を選択し、「**[!UICONTROL インストールされているコネクタ]**」から「**[!UICONTROL PostgreSQL]**」を選択します。
-      ![Tableau コネクタ ](../assets/tableau-connectors.png)
+      ![Tableau コネクタ &#x200B;](../assets/tableau-connectors.png)
    1. **[!UICONTROL PostgreSQL]** ダイアログの **[!UICONTROL 一般]** タブで、次の操作を行います。
-      ![Tableau へのログインダイアログ ](../assets/tableau-signin.png)
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ホスト]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL サーバー]** にコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Port]** に **[!UICONTROL Port]** をコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL データベース]** に **[!UICONTROL データベース]** をコピー&amp;ペーストします。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
+      ![Tableau へのログインダイアログ &#x200B;](../assets/tableau-signin.png)
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ホスト]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL サーバー]** にコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL Port]** に **[!UICONTROL Port]** をコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL データベース]** に **[!UICONTROL データベース]** をコピー&amp;ペーストします。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
       1. **[!UICONTROL 認証]** ドロップダウンメニューから **[!UICONTROL ユーザー名とパスワード]** を選択します。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** にコピー&amp;ペーストします。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL パスワード]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL パスワード]** にコピー&amp;ペーストします。 [ 有効期限のない認証情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL ユーザー名]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL ユーザー名]** にコピー&amp;ペーストします。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、**[!UICONTROL パスワード]** をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから **[!UICONTROL パスワード]** にコピー&amp;ペーストします。 [&#x200B; 有効期限のない認証情報 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) を使用している場合は、有効期限のない認証情報のパスワードを使用します。
       1. 「**[!UICONTROL SSL が必要]**」が選択されていることを確認します。
       1. 「**[!UICONTROL ログイン]**」を選択します。
 
@@ -131,7 +131,7 @@ Power BI Desktop では、`FLATTEN` パラメーターに対して次のシナ�
 
 ## FLATTEN か NOT か
 
-Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -142,8 +142,8 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 ## 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
-* [Tableau Desktop をクエリサービスに接続します ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/tableau)。
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [Tableau Desktop をクエリサービスに接続します &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/tableau)。
 
 
 >[!TAB Looker]
@@ -151,11 +151,11 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](../assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](../assets/queryservice-credentials.png)
 
 1. Looker へのログイン
 
@@ -164,16 +164,16 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
    1. 「**[!UICONTROL 接続を追加]**」を選択します。
    1. **[!UICONTROL データベースを Looker に接続画面]** で確認します。
 
-      ![Looker データベースへの接続 ](../assets/looker-connect.png)
+      ![Looker データベースへの接続 &#x200B;](../assets/looker-connect.png)
 
       1. 接続の **[!UICONTROL 名前]** を入力（例：`Example Looker Connection`）
       1. **[!UICONTROL 接続範囲]** として「すべてのプロジェクト **[!UICONTROL が選択されていることを確認]** ます。
       1. ダイアレクトとして **[!UICONTROL PostgreSQL 9.5 以上]** を選択します。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ホスト]** 値をコピーし、**[!UICONTROL ホスト]** の値として貼り付けます。 例：`examplecompany.platform-query.adobe.io`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Port]** 値をコピーして **[!UICONTROL Port]** に貼り付けます。 例：`80`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL データベース]** 値をコピーして **[!UICONTROL データベース]** に貼り付けます。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** 値をコピーして **[!UICONTROL ユーザー名]** に貼り付けます。
-      1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]****[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL パスワード]** 値をコピーして **[!UICONTROL パスワード]** に貼り付けます。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ホスト]** 値をコピーし、**[!UICONTROL ホスト]** の値として貼り付けます。 例：`examplecompany.platform-query.adobe.io`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL Port]** 値をコピーして **[!UICONTROL Port]** に貼り付けます。 例：`80`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL データベース]** 値をコピーして **[!UICONTROL データベース]** に貼り付けます。 貼り付ける値に `%3FFLATTEN` を追加します。 例：`prod:cja%3FFLATTEN`。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL ユーザー名]** 値をコピーして **[!UICONTROL ユーザー名]** に貼り付けます。
+      1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]**&#x200B;**[!UICONTROL 有効期限が切れる資格情報]** パネルの **[!UICONTROL パスワード]** 値をコピーして **[!UICONTROL パスワード]** に貼り付けます。
       1. **[!UICONTROL オプション設定]** で **[!UICONTROL すべて展開]** を選択します。
       1. ノードごとの **[!UICONTROL 最大接続数]** を `5` に設定します。
       1. **[!UICONTROL SSL]** が有効になっていることを確認します。
@@ -208,7 +208,7 @@ Tableau Desktop は、`FLATTEN` パラメーターに対して次のシナリオ
 
 ## FLATTEN か NOT か
 
-Looker では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Looker では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -219,7 +219,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 ## 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter Notebook]
@@ -227,11 +227,11 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](../assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](../assets/queryservice-credentials.png)
 
 1. Jupyter Notebook 環境を実行するための専用の Python 仮想環境をセットアップしていることを確認します。
 1. 仮想環境に必要なライブラリがインストールされていることを確認します。
@@ -240,14 +240,14 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
    * sqlalchemy: pip `install sqlalchemy`。
 
 1. 仮想環境 `jupyter notebook` から Jupyter Notebook を起動します。
-1. 新しいノートブックを作成するか、[ このサンプルノートブック ](../assets/BI-Extension.ipynb.zip) をダウンロードします。
+1. 新しいノートブックを作成するか、[&#x200B; このサンプルノートブック &#x200B;](../assets/BI-Extension.ipynb.zip) をダウンロードします。
 1. 最初のセルに、次のように入力して実行します。
 
    ```
    %config SqlMagic.style = '_DEPRECATED_DEFAULT'
    ```
 
-1. 新しいセルに、接続の設定パラメーターを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルの値をコピーして、設定パラメーターに必要な値に貼り付けます。 次に例を示します。
+1. 新しいセルに、接続の設定パラメーターを入力します。 ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルの値をコピーして、設定パラメーターに必要な値に貼り付けます。 次に例を示します。
 
    ```
    import ipywidgets as widgets
@@ -271,7 +271,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
    ```
 
 1. セルを実行します。
-1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
+1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platformの **[!UICONTROL クエリ]** **[!UICONTROL 有効期限が切れる資格情報]** パネルから Jupyter Notebook の **[!UICONTROL パスワード]** フィールドにパスワードをコピー&amp;ペーストします。
 
    ![Jupter Notebook 設定の手順 1](../assets/jupyter-config-step1.png)
 
@@ -315,7 +315,7 @@ Looker では、`FLATTEN` パラメーターに対して次のシナリオをサ
 
 ## FLATTEN か NOT か
 
-Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -326,22 +326,22 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 ## 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
 1. Experience Platform クエリサービス UI から必要な資格情報とパラメーターにアクセスします。
 
    1. Experience Platform サンドボックスに移動します。
-   1. 左パネルから ![ クエリ ](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
+   1. 左パネルから ![&#x200B; クエリ &#x200B;](/help/assets/icons/DataSearch.svg)**[!UICONTROL クエリ]** を選択します。
    1. **[!UICONTROL クエリ]** インターフェイスの「**[!UICONTROL 資格情報]**」タブを選択します。
    1. `prod:cja` データベース **[!UICONTROL ドロップダウンメニューから「]**」を選択します。
 
-      ![ クエリサービス資格情報 ](../assets/queryservice-credentials.png)
+      ![&#x200B; クエリサービス資格情報 &#x200B;](../assets/queryservice-credentials.png)
 
 1. RStudio を起動します。
-1. 新しい R Markdown ファイルを作成するか、[ このサンプル R Markdown ファイル ](../assets/BI-Extension.Rmd.zip) をダウンロードします。
-1. 最初のチャンクでは、` ```{r} ` ～ ` ``` ` の間に次のステートメントを入力します。 ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから `host`、`dbname`、`user` などの様々なパラメーターに必要な値にコピー&amp;ペーストします。 次に例を示します。
+1. 新しい R Markdown ファイルを作成するか、[&#x200B; このサンプル R Markdown ファイル &#x200B;](../assets/BI-Extension.Rmd.zip) をダウンロードします。
+1. 最初のチャンクでは、` ` ``{r} ` ～ ` `` ` ` の間に次のステートメントを入力します。 ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから `host`、`dbname`、`user` などの様々なパラメーターに必要な値にコピー&amp;ペーストします。 次に例を示します。
 
    ```R
    library(rstudioapi)
@@ -358,11 +358,11 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
    ```
 
 1. チャンクを実行します。 「**[!UICONTROL Host]**」、「**[!UICONTROL Database]**」、「**[!UICONTROL User]**」の入力を求められます。 前の手順の一部として指定した値をそのまま使用します。
-1. ![ コピー ](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
+1. ![&#x200B; コピー &#x200B;](/help/assets/icons/Copy.svg) を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 資格情報の有効期限]** パネルから RStudio の **[!UICONTROL パスワード]** ダイアログプロンプトにパスワードをコピー&amp;ペーストします。
 
    ![RStudio 設定手順 1](../assets/rstudio-config-step1.png)
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    con <- dbConnect(
@@ -379,7 +379,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 1. チャンクを実行します。 接続に成功した場合は、出力は表示されません。
 
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +389,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 1. チャンクを実行します。 `character(0)` が唯一の出力として表示されます。
 
 
-1. 新しいチャンクを作成し、` ``` {r} ` ～ ` ``` ` の間に次のステートメントを入力してください。
+1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` ` の間に次のステートメントを入力してください。
 
    ```R
    glimpse(dv)
@@ -401,7 +401,7 @@ Jupyter Notebook では、`FLATTEN` パラメーターに対して次のシナ�
 
 ## FLATTEN か NOT か
 
-RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[ ネストされたデータの統合 ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
+RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサポートしています。 詳しくは、[&#x200B; ネストされたデータの統合 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/flatten-nested-data) を参照してください。
 
 | FLATTEN パラメータ | 例 | サポート | 備考 |
 |---|---|:---:|---|
@@ -412,7 +412,7 @@ RStudio は、`FLATTEN` パラメーターに対して次のシナリオをサ�
 ## 詳細情報
 
 * [前提条件](/help/data-views/bi-extension.md#prerequisites)
-* [ 資格情報ガイド ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
+* [&#x200B; 資格情報ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 

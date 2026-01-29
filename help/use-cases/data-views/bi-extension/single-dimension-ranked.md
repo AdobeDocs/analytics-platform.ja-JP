@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ユースケースの例 **[!UICONTROL 単一のDimensionのランク付け]** パネルは次のとおりです。
 
-![Customer Journey Analyticsの単一ディメンションランクのビジュアライゼーション ](../assets/cja-single-dimension-ranked.png)
+![Customer Journey Analyticsの単一ディメンションランクのビジュアライゼーション &#x200B;](../assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -61,13 +61,13 @@ ht-degree: 1%
 
    1. **[!UICONTROL purchase_revenue の合計]** を選択すると、商品名を降順で並べ替えることができます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップユースケース 5 テーブルステータス ](../assets/uc5-pbi-table.png)
+   ![Power BI デスクトップユースケース 5 テーブルステータス &#x200B;](../assets/uc5-pbi-table.png)
 
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
 
    1. **[!UICONTROL product_name is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** を **[!UICONTROL 上位 N]** に設定します。
-   1. フィルターを定義して **[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`10`**[!UICONTROL 値]** にします。
+   1. フィルターを定義して **[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**`10`**[!UICONTROL 値]** にします。
    1. **[!UICONTROL purchase_revenue]** を **[!UICONTROL By value]** **[!UICONTROL ここにデータフィールドを追加]** にドラッグ&amp;ドロップします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -83,16 +83,16 @@ ht-degree: 1%
 
    折れ線グラフと積み重ね柱状グラフが更新されます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップのユースケース 5 グラフ ](../assets/uc5-pbi-chart.png)
+   ![Power BI デスクトップのユースケース 5 グラフ &#x200B;](../assets/uc5-pbi-chart.png)
 
 1. 折れ線グラフおよび積み重ね柱状グラフのビジュアライゼーションで：
 
-   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択します。
    1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。
 
-   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](../assets/uc5-pbi-final.png)
+   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション &#x200B;](../assets/uc5-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -101,7 +101,7 @@ ht-degree: 1%
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `31/12/2023` の期間を指定します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
 
-      ![Tableau Desktop フィルター ](../assets/uc5-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](../assets/uc5-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 購入]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。 値は自動的に **[!UICONTROL SUM （Purchases）]** に変換されます。
@@ -116,7 +116,7 @@ ht-degree: 1%
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop グラフ ](../assets/uc5-tableau-graph.png)
+   ![Tableau Desktop グラフ &#x200B;](../assets/uc5-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
@@ -128,7 +128,7 @@ ht-degree: 1%
 
    Tableau Desktop は次のようになります。
 
-   ![Tableau Desktop データ ](../assets/uc5-tableau-data.png)
+   ![Tableau Desktop データ &#x200B;](../assets/uc5-tableau-data.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -143,13 +143,13 @@ ht-degree: 1%
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションで、「**[!UICONTROL 製品名]**」を選択します。
 1. 左パネルの「**[!UICONTROL ‣カスタムフィールド]**」セクションから：
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから「**[!UICONTROL カスタム測定]**」を選択します。
@@ -159,7 +159,7 @@ ht-degree: 1%
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから **[!UICONTROL カスタム測定]** をもう一度選択します。 **[!UICONTROL カスタムを作成]** メジャーダイアログで、
       1. **[!UICONTROL 測定するフィールド]** ドロップダウンメニューから **[!UICONTROL 購入]** を選択します。
@@ -171,20 +171,20 @@ ht-degree: 1%
    1. 両方のフィールドがデータビューに自動的に追加されます。
 1. 別の **[!UICONTROL フィルター]** を追加する場合は「**[!UICONTROL + フィルター]** を選択し、データを制限する場合は「制限」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、「**[!UICONTROL ‣カスタムフィールド]**」を選択し、「**[!UICONTROL 購入収益]**」を選択します。
-1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの **[!UICONTROL が]** 次を含む `1000000` **** AND`2000000` になります。
+1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの **[!UICONTROL が]** 次を含む `1000000` **&#x200B;**&#x200B;AND`2000000` になります。
 1. 「**[!UICONTROL 実行]**」を選択します。
 1. 「**[!UICONTROL ‣ビジュアライゼーション]**」を選択して、折れ線グラフのビジュアライゼーションを表示します。
 1. **[!UICONTROL ビジュアライゼーション]** の「**[!UICONTROL 編集]**」を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
    1. 「**[!UICONTROL シリーズ]** タブを選択します。
    1. 下にスクロールして **[!UICONTROL 購入]** を表示し、**[!UICONTROL タイプ]** を **[!UICONTROL 行]** に変更します。
    1. 「**[!UICONTROL Y]**」タブを選択します。
-   1. **[!UICONTROL 左側の 1]** コンテナから **[!UICONTROL 購入]** を **[!UICONTROL *ここにシリーズをドラッグして新しい左軸を作成&#x200B;*]**にドラッグします。 このアクションにより、**[!UICONTROL  左 2 ]**コンテナが作成されます。
-      ![Looker ビジュアライゼーション設定 ](../assets/uc5-looker-visualization.png)
-   1. ![ 編集 ](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
+   1. **[!UICONTROL 左側の 1]** コンテナから **[!UICONTROL 購入]** を **[!UICONTROL *ここにシリーズをドラッグして新しい左軸を作成&#x200B;*]**&#x200B;にドラッグします。 このアクションにより、**[!UICONTROL &#x200B; 左 2 &#x200B;]**&#x200B;コンテナが作成されます。
+      ![Looker ビジュアライゼーション設定 &#x200B;](../assets/uc5-looker-visualization.png)
+   1. ![&#x200B; 編集 &#x200B;](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](../assets/uc5-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](../assets/uc5-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -209,12 +209,12 @@ ht-degree: 1%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc5-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc5-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    library(tidyr)
@@ -235,7 +235,7 @@ ht-degree: 1%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc5-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 

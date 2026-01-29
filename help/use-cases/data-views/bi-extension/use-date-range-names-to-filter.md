@@ -19,11 +19,11 @@ ht-degree: 1%
 
 日付範囲を使用してレポートを作成するには、Customer Journey Analyticsで **[!UICONTROL タイトル]** `Last Year 2023` を使用して日付範囲を設定します。
 
-![Customer Journey Analytics フィルターに日付範囲名を使用 ](../assets/cja-daterange.png)
+![Customer Journey Analytics フィルターに日付範囲名を使用 &#x200B;](../assets/cja-daterange.png)
 
 次に、使用例の **[!UICONTROL 日付範囲名をフィルターに使用]** パネルでその日付範囲を使用できます。
 
-![Customer Journey Analytics個別カウント値 ](../assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](../assets/cja-using-date-range-filter-names-to-filter.png)
 
 フリーフォームテーブルのビジュアライゼーションで定義された日付範囲が、パネルに適用される日付範囲をどのように上書きするかに注意してください。
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -56,7 +56,7 @@ ht-degree: 1%
 
    適用した **[!UICONTROL daterangeName]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](../assets/uc8-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](../assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc8-jupyter-input.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc8-jupyter-input.png)
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -133,12 +133,12 @@ ht-degree: 1%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc8-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc8-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year
@@ -156,7 +156,7 @@ ht-degree: 1%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc8-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 

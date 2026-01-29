@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Customer Journey Analyticsで使用するセグメントを調べます。
 
-![Customer Journey Analytics フィルター名を使用してフィルター ](../assets/cja-fishing-products.png)
+![Customer Journey Analytics フィルター名を使用してフィルター &#x200B;](../assets/cja-fishing-products.png)
 
 次に、使用例の **[!UICONTROL セグメント名をセグメントに使用]** パネルでそのセグメントを使用できます。
 
-![Customer Journey Analytics個別カウント値 ](../assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](../assets/cja-using-filter-names-to-filter.png)
 
 +++
 
@@ -31,7 +31,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -53,13 +53,13 @@ Customer Journey Analyticsで使用するセグメントを調べます。
    1. **[!UICONTROL 検索]** フィールドの下で、**[!UICONTROL 釣り商品]** を選択します。これは、Customer Journey Analyticsで定義されている既存のフィルターの名前です。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、**[!UICONTROL filterName]** を **[!UICONTROL Columns]** から削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して **[!UICONTROL Daterange]** を **[!UICONTROL Columns]** から削除します。
 
    適用した **[!UICONTROL filterName]** フィルターで更新されたテーブルが表示されます。 Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](../assets/uc9-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](../assets/uc9-powerbi-final.png)
 
 
 >[!TAB Tableau Desktop]
@@ -81,13 +81,13 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択して、別のフィルターを追加します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
@@ -123,7 +123,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc9-jupyter-input.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc9-jupyter-input.png)
 
 1. ドロップダウンメニューから **[!UICONTROL 釣り製品]** を選択します。
 
@@ -148,12 +148,12 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc9-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc9-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。 適切なフィルター名を使用していることを確認してください。 例：`Fishing Products`。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。 適切なフィルター名を使用していることを確認してください。 例：`Fishing Products`。
 
    ```R
    ## Dimension filtered by name
@@ -167,7 +167,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc9-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc9-rstudio-results.png)
 
 
 >[!ENDTABS]

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ユースケースの例 **[!UICONTROL 月間トレンド]** パネルを次に示します。
 
-![Customer Journey Analyticsの月間トレンドビジュアライゼーション ](../assets/cja_monthly_trend.png)
+![Customer Journey Analyticsの月間トレンドビジュアライゼーション &#x200B;](../assets/cja_monthly_trend.png)
 
 +++
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterangemonth is （All）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **** `1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `1/1/2024.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
+   1. フィルターを定義して **[!UICONTROL 値が]** 次の値の場合に項目を表示 **&#x200B;**&#x200B;`1/1/2023` **[!UICONTROL および]** **[!UICONTROL 次の値の前]** `1/1/2024.` を設定します。カレンダーアイコンを使用して、日付を選択して選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用した **[!UICONTROL daterangemonth]** フィルターで更新されたテーブルが表示されます。
@@ -56,16 +56,16 @@ ht-degree: 0%
 
    折れ線グラフビジュアライゼーションは、テーブルと同じデータを使用しながら、テーブルを置き換えます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop ユースケース 2 日付範囲フィルター ](../assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Desktop ユースケース 2 日付範囲フィルター &#x200B;](../assets/uc4-pbi-filter-daterange.png)
 
 1. 折れ線グラフのビジュアライゼーションで：
 
-   1. ![ 詳細 ](/help/assets/icons/More.svg) を選択します。
+   1. ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択します。
    1. コンテキストメニューから「**[!UICONTROL テーブルとして表示]**」を選択します。
 
    メインビューが更新され、折れ線グラフのビジュアライゼーションとテーブルの両方が表示されます。 Power BI デスクトップは次のようになります。
 
-   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション ](../assets/uc4-pbi-filter-final.png)
+   ![Power BI デスクトップのユースケース 2 最終的な毎日のトレンドビジュアライゼーション &#x200B;](../assets/uc4-pbi-filter-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -74,7 +74,7 @@ ht-degree: 0%
    1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
    1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `01/01/2024` の期間を指定します。
 
-      ![Tableau Desktop フィルター ](../assets/uc4-tableau-filter.png)
+      ![Tableau Desktop フィルター &#x200B;](../assets/uc4-tableau-filter.png)
 
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterangeday]** をドラッグ&amp;ドロップし、**[!UICONTROL 列]** の横のフィールドにエントリをドロップします。
       * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL MONTH]** を選択し、値が **[!UICONTROL MONTH （Daterangeday）]** に更新されます。
@@ -83,7 +83,7 @@ ht-degree: 0%
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop グラフ ](../assets/uc4-tableau-graph.png)
+      ![Tableau Desktop グラフ &#x200B;](../assets/uc4-tableau-graph.png)
 
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
 1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
@@ -95,7 +95,7 @@ ht-degree: 0%
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop データ ](../assets/uc4-tableau-data.png)
+      ![Tableau Desktop データ &#x200B;](../assets/uc4-tableau-data.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
@@ -109,13 +109,13 @@ ht-degree: 0%
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側の **[!UICONTROL Cc データビュー]** パネルから、
    1. **[!UICONTROL DIMENSIONS]** のリストから「**[!UICONTROL ‣Daterangemonth 日付]**」を選択してから「**[!UICONTROL 月]**」を選択します。
    1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](../assets/uc4-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](../assets/uc4-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -149,12 +149,12 @@ ht-degree: 0%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc4-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc4-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Hourly Events
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc4-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 

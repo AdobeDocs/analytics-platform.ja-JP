@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ユースケースの例 **[!UICONTROL 複数のDimensionのランク付け]** パネルを次に示します。
 
-![Customer Journey Analyticsの複数のDimensionのランクパネル ](../assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analyticsの複数のDimensionのランクパネル &#x200B;](../assets/cja-multiple-dimension-ranked.png)
 
 +++
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -49,12 +49,12 @@ ht-degree: 1%
    1. 「**[!UICONTROL 購入の合計]**」を選択します。
 
 1. 縦棒グラフをテーブルに変更するには、テーブルが選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから **[!UICONTROL マトリックス]** を選択します。
-   * **[!UICONTROL product_name]** を **[!UICONTROL 列]** からドラッグし、[!UICONTROL  行 ] の****[!UICONTROL product_categor]****y の下にあるフィールドを **[!UICONTROL ビジュアライゼーション]** ペインにドロップします。
+   * **[!UICONTROL product_name]** を **[!UICONTROL 列]** からドラッグし、[!UICONTROL &#x200B; 行 &#x200B;] の&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_categor]&#x200B;**&#x200B;**&#x200B;y の下にあるフィールドを **[!UICONTROL ビジュアライゼーション]** ペインにドロップします。
 
 1. テーブル内に表示される製品の数を制限するには、**[!UICONTROL フィルター]** ペインで **[!UICONTROL product_name is （All）]** を選択します。
 
    1. **[!UICONTROL 詳細フィルター]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]****[!UICONTROL 上位 N]****[!UICONTROL 項目を表示]****[!UICONTROL 上位]**`15`**[!UICONTROL 値別]** を選択します。
+   1. **[!UICONTROL フィルタータイプ]**&#x200B;**[!UICONTROL 上位 N]**&#x200B;**[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**`15`**[!UICONTROL 値別]** を選択します。
    1. **[!UICONTROL データ]** ペインから **[!UICONTROL 購入]** を **[!UICONTROL ここにデータフィールドを追加]** にドラッグします。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 1. テーブルの各カテゴリを分類するには、製品カテゴリレベルで **[!UICONTROL +]** を選択します。 Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションのランク付けマトリックス テーブル ](../assets/uc6-powerbi-data.png)
+   ![Power BI Desktop の複数ディメンションのランク付けマトリックス テーブル &#x200B;](../assets/uc6-powerbi-data.png)
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションのランクツリーマップ ](../assets/uc6-powerbi-treemap.png)
+   ![Power BI Desktop の複数ディメンションのランクツリーマップ &#x200B;](../assets/uc6-powerbi-treemap.png)
 
 1. 上部のメニューから **[!UICONTROL ホーム]** を選択し、「**[!UICONTROL 新しいビジュアル]** を選択します。 新しいビジュアルがレポートに追加されます。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数ディメンションが最終ランクに ](../assets/uc6-powerbi-final.png) りました
+   ![Power BI Desktop の複数ディメンションが最終ランクに &#x200B;](../assets/uc6-powerbi-final.png) りました
 
 
 >[!TAB Tableau Desktop]
@@ -118,7 +118,7 @@ ht-degree: 1%
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 複数ディメンションのランク付けカテゴリ ](../assets/uc6-tableau-category.png)
+      ![Tableau Desktop 複数ディメンションのランク付けカテゴリ &#x200B;](../assets/uc6-tableau-category.png)
 
 1. 現在の **[!UICONTROL シート 1]** シートの名前を `Category` に変更します。
 1. **[!UICONTROL 新規ワークシート]** を選択して新規シートを作成し、名前を `Data` に変更します。
@@ -137,7 +137,7 @@ ht-degree: 1%
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop の複数Dimensionのランクデータ ](../assets/uc6-tableau-data.png)
+      ![Tableau Desktop の複数Dimensionのランクデータ &#x200B;](../assets/uc6-tableau-data.png)
 
 1. **[!UICONTROL 新規ワークシート]** を選択して新しいシートを作成し、名前を **[!UICONTROL ツリーマップ]** に変更します。
    1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
@@ -154,7 +154,7 @@ ht-degree: 1%
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop の複数Dimensionのランクデータ ](../assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop の複数Dimensionのランクデータ &#x200B;](../assets/uc6-tableau-treemap.png)
 
 1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
    1. **[!UICONTROL カテゴリ]** シートを **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビュー（「シートをここにドロップ *」と表示される* にドラッグ&amp;ドロップします。
@@ -169,13 +169,13 @@ ht-degree: 1%
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
    1. **[!UICONTROL 製品カテゴリ]** を選択します。
    1. **[!UICONTROL 製品名]** を選択します。
@@ -187,7 +187,7 @@ ht-degree: 1%
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Sum of Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから **[!UICONTROL カスタム測定]** をもう一度選択します。 **[!UICONTROL カスタムを作成]** メジャーダイアログで、
       1. **[!UICONTROL 測定するフィールド]** ドロップダウンメニューから **[!UICONTROL 購入]** を選択します。
@@ -204,16 +204,16 @@ ht-degree: 1%
 1. **[!UICONTROL ビジュアライゼーション]** の「**[!UICONTROL 編集]**」を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
    1. 「**[!UICONTROL プロット]**」タブを選択します。
    1. 下にスクロールして、「**[!UICONTROL グラフ設定を編集]**」を選択します。
-   1. 以下のスクリーンショットに示すように **** グラフ設定（上書き）で JSON を変更し、「**[!UICONTROL プレビュー]**」を選択します。
+   1. 以下のスクリーンショットに示すように **&#x200B;**&#x200B;グラフ設定（上書き）で JSON を変更し、「**[!UICONTROL プレビュー]**」を選択します。
 
-      ![Looker 検証設定 ](../assets/uc6-looker-visualization.png)
+      ![Looker 検証設定 &#x200B;](../assets/uc6-looker-visualization.png)
 
    1. 「**[!UICONTROL 適用]**」を選択します。
-   1. ![ 編集 ](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
+   1. ![&#x200B; 編集 &#x200B;](/help/assets/icons/CrossSize75.svg) の横にある **[!UICONTROL CrossSize75]** を選択して、ポップアップダイアログを非表示にします
 
 以下に示すようなビジュアライゼーションとテーブルが表示されます。
 
-![Looker 結果日別トレンド ](../assets/uc6-looker-result.png)
+![Looker 結果日別トレンド &#x200B;](../assets/uc6-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -239,12 +239,12 @@ ht-degree: 1%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc6-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc6-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Multiple dimensions ranked
@@ -258,7 +258,7 @@ ht-degree: 1%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc6-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc6-rstudio-results.png)
 
 
 >[!ENDTABS]

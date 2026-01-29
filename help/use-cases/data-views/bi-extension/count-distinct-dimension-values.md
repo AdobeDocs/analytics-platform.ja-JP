@@ -20,11 +20,11 @@ ht-degree: 0%
 
 商品名の個別カウントについてレポートするには、Customer Journey Analyticsで、**[!UICONTROL タイトル]**`Product Name (Count Distinct)` と **[!UICONTROL 外部 ID]**`product_name_count_distinct` を使用する計算指標を設定します。
 
-![Customer Journey Analytics製品名（Distincr カウント）の計算指標 ](../assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics製品名（Distincr カウント）の計算指標 &#x200B;](../assets/cja-calc-metric-distinct-count-product-names.png)
 
 次に、その指標をユースケースの例の **[!UICONTROL 個別のDimension値をカウント]** パネルで使用できます。
 
-![Customer Journey Analytics個別カウント値 ](../assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics個別カウント値 &#x200B;](../assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -42,7 +42,7 @@ ht-degree: 0%
 1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** パネルからこのページの **[!UICONTROL フィルター]** に **[!UICONTROL daterangeday]** をドラッグ&amp;ドロップします。
    1. **[!UICONTROL このページのフィルター]** から **[!UICONTROL daterangeday is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル ](../assets/uc7-powerbi-table.png)
+   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](../assets/uc7-powerbi-table.png)
 
 1. テーブルビジュアライゼーションを選択します。 コンテキストメニューから **[!UICONTROL コピー]**/**[!UICONTROL ビジュアルをコピー]** を選択します。
 1. **[!UICONTROL ctrl+v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
@@ -61,14 +61,14 @@ ht-degree: 0%
 
    Power BI デスクトップは次のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル ](../assets/uc7-powerbi-final.png)
+   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](../assets/uc7-powerbi-final.png)
 
 または、Power BIの個別カウント機能を使用できます。
 
 1. **[!UICONTROL product_name]** ディメンションを選択します。
 1. **[!UICONTROL Count （Distinct）]** 関数を **[!UICONTROL Columns]** の **[!UICONTROL product_name]** ディメンションに適用します。
 
-   ![ 個別Power BI数 ](../assets/uc7-powerbi-alternative.png)
+   ![&#x200B; 個別Power BI数 &#x200B;](../assets/uc7-powerbi-alternative.png)
 
 
 
@@ -117,22 +117,22 @@ ht-degree: 0%
 1. **[!UICONTROL Cm の製品名の個別カウント]** ではなく **[!UICONTROL 製品名]** を使用します。
 1. **[!UICONTROL Marks]** の **[!UICONTROL 製品名]** に **[!UICONTROL Measure]** > **[!UICONTROL Count （Distinct）]** を適用します。
 
-   ![Tableau の個別カウント ](../assets/uc7-tableau-alternative.png)
+   ![Tableau の個別カウント &#x200B;](../assets/uc7-tableau-alternative.png)
 
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
    1. **[!UICONTROL Daterange Date]** を選択してから、**[!UICONTROL Date]** を選択します。
    1. **[!UICONTROL 製品名]** の「**⋮詳細**」コンテキストメニューから「**[!UICONTROL 個別‣カウントを集計]**」を選択します。
-      ![Looker 製品名コンテキストメニュー ](../assets/uc7-looker-count-distinct.png)
+      ![Looker 製品名コンテキストメニュー &#x200B;](../assets/uc7-looker-count-distinct.png)
 1. 「**[!UICONTROL 実行]**」を選択します。
 1. 「**[!UICONTROL ‣ ビジュアライゼーション]**」を選択し、ツールバーの「6︎⃣」を選択して 1 つの値のビジュアライゼーションを表示します。
 
@@ -154,12 +154,12 @@ ht-degree: 0%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc7-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc7-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Count Distinct
@@ -171,7 +171,7 @@ ht-degree: 0%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc7-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc7-rstudio-results.png)
 
 
 >[!ENDTABS]

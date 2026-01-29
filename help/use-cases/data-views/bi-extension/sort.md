@@ -20,7 +20,7 @@ ht-degree: 1%
 
 このユースケースでは、例えば **[!UICONTROL 並べ替え]** パネルを使用します。
 
-![Customer Journey Analytics並べ替えパネル ](../assets/cja-sort.png)
+![Customer Journey Analytics並べ替えパネル &#x200B;](../assets/cja-sort.png)
 
 +++
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[ 接続に成功し、データビューをリストし、データビューを使用できる ](connect-and-validate.md) ことを検証したことを確認します。
+>このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
 >
 
 >[!BEGINTABS]
@@ -44,7 +44,7 @@ ht-degree: 1%
 1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
    1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
    1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]****[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]****[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
 
 1. ビジュアライゼーション パネルで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、Columns から daterange を削除します。
@@ -54,7 +54,7 @@ ht-degree: 1%
 
    Power BI デスクトップは次のようになります。
 
-   ![ 日付範囲名を使用してフィルターを適用するPower BI デスクトップ ](../assets/uc11-powerbi-final.png)
+   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](../assets/uc11-powerbi-final.png)
 
 BI 拡張機能を使用してPower BI Desktop が実行するクエリには、`sort` ステートメントが含まれていません。 `sort` ステートメントがないということは、並べ替えがクライアントサイドで実行されることを意味します。
 
@@ -160,7 +160,7 @@ limit 1000001
 
       Tableau Desktop は次のようになります。
 
-      ![Tableau Desktop 並べ替え ](../assets/uc11-tableau-final.png)
+      ![Tableau Desktop 並べ替え &#x200B;](../assets/uc11-tableau-final.png)
 
 BI 拡張機能を使用して Tableau Desktop で実行されるクエリには、`sort` ステートメントが含まれていません。 この `sort` ステートメントがないということは、並べ替えがクライアント側で実行されることを意味します。
 
@@ -176,14 +176,14 @@ GROUP BY 1
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![ 設定 ](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
+1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
 1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
    1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
    1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター ](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]****[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
+      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
 1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションで、「**[!UICONTROL 製品名]**」を選択します。
 1. 左パネルの「**[!UICONTROL ‣カスタムフィールド]**」セクションから：
    1. 「**[!UICONTROL +追加]**」ドロップダウンメニューから「**[!UICONTROL カスタム測定]**」を選択します。
@@ -193,7 +193,7 @@ GROUP BY 1
       1. **[!UICONTROL 名前]** のカスタムフィールド名を入力します。 例：`Sum of Purchase Revenue`。
       1. **[!UICONTROL フィールドの詳細]** タブを選択します。
       1. **[!UICONTROL 形式]** ドロップダウンメニューから「**[!UICONTROL 小数]**」を選択し、「`0` 小数 **[!UICONTROL 」]** 入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
+         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
 1. **[!UICONTROL 購入収益]** 列で **[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順：1]**）を選択していることを確認します。
 1. 「**[!UICONTROL 実行]**」を選択します。
@@ -238,14 +238,14 @@ FETCH NEXT 500 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 ](../assets/uc11-jupyter-results.png)
+   ![Jupyter Notebook の結果 &#x200B;](../assets/uc11-jupyter-results.png)
 
 クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ```{r} ` と ` ``` ` の間に次のステートメントを入力します。
+1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
 
    ```R
    ## Dimension 1 Sorted
@@ -259,7 +259,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 ](../assets/uc11-rstudio-results.png)
+   ![RStudio の結果 &#x200B;](../assets/uc11-rstudio-results.png)
 
 RStudio が BI 拡張機能を使用して生成するクエリには `ORDER BY` が含まれています。これは、RStudio と BI 拡張機能を通じて順序が適用されることを意味します。
 
