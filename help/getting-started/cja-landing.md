@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: b8c9acfe8fef4543557f87c81079babdc8097b64
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,23 @@ Customer Journey Analytics 製品およびドキュメントにおける、最�
 
 >[!BEGINTABS]
 
->[!TAB リアルタイムレポート*]
+>[!TAB  接続のステッチ ]
+
+Customer Journey Analytics Connections UI 内でイベントデータセットに対して直接ステッチを設定し、有効にできるようになりました。
+
+[![画像](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
+
+*_ステッチを有効にするには、少なくともパッケージを選択が必要です。_*
+
+
+>[!TAB  オーディエンス分析 ]
+
+Audience analysis では、オーディエンスメンバーシップデータをExperience Platform プロファイルデータセットからCustomer Journey Analytics接続に取り込むことができます。
+
+[![画像](assets/learn-more-button.svg)](/help/connections/audience-analysis/analyze-audiences.md)
+
+
+>[!TAB リアルタイムレポート]
 
 Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
 
@@ -31,95 +47,19 @@ Customer Journey Analytics のリアルタイムレポートでは、Analysis Wo
 
 *_リアルタイムレポートには、Ultimate パッケージが必要です。_*
 
+
 >[!TAB B2B Edition]
 
 Customer Journey Analytics B2B Edition は、売上高の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。アカウントをデータモデルの中心に配置し、すべての分析でアカウントジャーニーに焦点を当てます。
 
 [![画像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
->[!TAB 派生フィールド関数]
-
-新しい派生フィールド関数：[日付計算](/help/data-views/derived-fields/derived-fields.md#date-math)、[深度](/help/data-views/derived-fields/derived-fields.md#depth)および[型キャスト](/help/data-views/derived-fields/derived-fields.md#typecast)。
-
-[![画像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Content Analytics]
 
 Content Analytics を使用すると、大量のコンテンツデータをすばやく容易に調べて、トレンドを明らかにし、異常を発見し、コンテンツ疲れを特定し、コンテンツの閲覧状況からインサイトを取得できます。
 
 [![画像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
-
->[!TAB イベント深度]
-
-イベント深度は新しい標準ディメンションであり、顧客セッションにおけるイベントの位置づけを測定および深く理解するための新しい手段となります。イベント深度ディメンションを使用すると、セッション内でのユーザーインタラクションの順次フローにおいて、特定のイベントが発生するタイミングを詳細にトラッキングおよび分析できます。
-
-[![画像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
-
-
->[!TAB 共有指標と共有ディメンション]
-
-共有指標と共有ディメンションでは、任意の数のデータビューっをまたいで使用できるディメンションと指標を、一元的に管理できます。これらのコンポーネントは、特に、組織が複数のデータビューを使用し、これらのデータビューでコンポーネント設定が共通している場合に役立ちます。
-
-[![画像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
-
-
-<!--
->[!TAB AI Assistant] 
-
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
-
-[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
-
-
->[!TAB Guided Analysis] 
-
-Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
-
-
-
->[!TAB Intelligent captions v2] 
-
-Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Alerts] 
-
-Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Summary data] 
-
-Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
-
-- Presenting high-level performance indicators as part of or next to event-level data. 
-- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
-
--->
-
->[!TAB グラフベースのステッチ*]
-
-グラフベースのステッチを実行すると、Experience Platform ID サービスの ID グラフを使用して、次の方法でカスタマージャーニーをより詳細に把握できます。 <ul><li>単一の識別子を反映させるために追加のデータの抽出、変換、読み込みを行わずに、異なる識別子を持つデータセットを結合する。</li> <li>データセット間で ID を共有して、単一のデータセットの優先 ID またはゴールデン ID の適用範囲を向上させる。</li><li>Real-Time Customer Data Platform と Journey Optimizer で作成したプロファイルを Customer Journey Analytics のユーザーと整合する。</li></ul>
-
-[![画像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
-
-*_グラフベースのステッチには、Prime パッケージが必要です。_*
-
->[!TAB BI 拡張機能*]
-
-BI 拡張機能を使用すると、Customer Journey Analytics で定義したデータビューへの SQL アクセスが可能になります。 お気に入りの BI ツール（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook、RStudio）を使用し、Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトで使用するのと同じデータビューに基づいて、レポートとダッシュボードを作成できるようになりました。[ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)が提供されます。
-
-[![画像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
-
-*_BI 拡張機能を使用するには、Select パッケージ以上が必要です。_*
-
 
 >[!ENDTABS]
 
