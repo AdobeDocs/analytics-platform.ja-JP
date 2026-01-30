@@ -4,10 +4,10 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: b8c9acfe8fef4543557f87c81079babdc8097b64
+source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 91%
+source-wordcount: '628'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics Connections UI 内でイベントデータセット�
 
 [![画像](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
 
-*_ステッチを有効にするには、少なくともパッケージを選択が必要です。_*
+*ステッチを有効にするには、少なくともパッケージを選択が必要です。*
 
 
 >[!TAB  オーディエンス分析 ]
@@ -45,7 +45,7 @@ Customer Journey Analytics のリアルタイムレポートでは、Analysis Wo
 
 [![画像](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
-*_リアルタイムレポートには、Ultimate パッケージが必要です。_*
+*リアルタイムレポートには、Ultimate パッケージが必要です。*
 
 
 >[!TAB B2B Edition]
@@ -67,6 +67,7 @@ Content Analytics を使用すると、大量のコンテンツデータをす�
 
 まず、以下のリンクの資料を読んで、Customer Journey Analytics の機能を理解してください。
 
+
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
@@ -75,16 +76,20 @@ Content Analytics を使用すると、大量のコンテンツデータをす�
     </td>
     <td>
     <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
-    <div><strong>データの取り込みと使用</strong><br/>データを Experience Platform に取り込み、Customer Journey Analytics での分析とレポートに使用するために必要なオプションについて説明します。</div>
+    <div><strong> データの取り込みと使用 </strong><br/>Experience Platformにデータを取り込んで、分析やレポートに使用する必要があるオプションについて説明します。</div>
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>ガイド付き分析</strong><br/>ワークフローを使用して、お客様の製品エクスペリエンスに関するデータとインサイトを取得する方法について説明します。 ガイド付き分析による製品分析…
+    <div><strong>ガイド付き分析</strong><br/>ワークフローを使用して、お客様の製品エクスペリエンスに関するデータとインサイトを取得する方法について説明します。 ガイド付き分析によるProduct Analytics
     </div>
     </td>
     <td>
     <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
     <div><strong>Analysis Workspace</strong><br/>Analysis Workspace を使用して、アトリビューション、フロー図とフォールアウト図、ディメンションの分類などの基本分析とアドバンス分析を実行します。</div>
+    </td>
+    <td>
+    <a href="/help/content-analytics/content-analytics.md"><img src="./assets/content-analytics.png"></a>
+    <div><strong>Content Analytics</strong><br/> 行動の横にあるコンテンツが主要業績評価指標にどのように影響するかを説明します。 カスタマージャーニーデータに関するより深いインサイトを得ます。</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -92,6 +97,7 @@ Content Analytics を使用すると、大量のコンテンツデータをす�
     <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/content-analytics/content-analytics.md"><img src="./assets/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -104,7 +110,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Adobe Analytics との比較</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">概要</a> - <a href="/help/getting-started/aa-to-cja.md">進化</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analytics データの使用</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">機能のサポート</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">用語</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">データ処理</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B Edition</a>
+      <strong>Adobe Analyticsとの比較 </strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md"> 概要 </a> - <a href="/help/getting-started/aa-to-cja.md"> 進化 </a> - <a href="/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md"> アップグレード </a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analytics データを使用 </a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md"> 機能サポート </a> - <a href="/help/getting-started/aa-vs-cja/terminology.md"> 用語 </a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md"> データ処理 </a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -121,13 +127,13 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
       <img src="./assets/workspace.svg" width="35px"><br/>
       <strong>Workspace プロジェクト</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">基本分析</a>と<a href="/help/analysis-workspace/perform-adv-analysis.md">アドバンス分析</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">プロジェクト</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">ビジュアライゼーション</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">パネル</a>
     </td>
-    <td>
-      <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>ガイド付き分析</strong><br/><a href="/help/guided-analysis/overview.md">概要</a> - <a href="/help/guided-analysis/types/active-growth.md">ユーザーの増加</a> - <a href="/help/guided-analysis/types/trends.md">トレンド</a> - <a href="/help/guided-analysis/types/funnel.md">ファネル</a> - <a href="/help/guided-analysis/types/release-impact.md">影響</a> - <a href="/help/guided-analysis/industry-use-cases.md">業界のユースケース</a>
-    </td>
-    <td>
+        <td>
       <img src="./assets/share.svg" width="35px"><br/>
       <strong>共有、書き出し、統合</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">プロジェクト</a> - <a href="/help/mobile-app/home.md">Analytics ダッシュボード</a> - <a href="/help/report-builder/rb-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">クラウドの書き出し</a> - <a href="/help/integrations/overview.md">統合</a>
+    </td>
+    <td>
+      <img src="./assets/guided-analysis.svg" width="35px"><br/>
+      <strong> その他…</strong><br/><a href="/help/guided-analysis/overview.md"> ガイド付き分析 </a> - <a href="/help/content-analytics/content-analytics.md">Content Analytics</a> - <a href="/help/getting-started/cja-b2b-edition.md">B2B edition</a> 
     </td>
   </tr>
 </table>

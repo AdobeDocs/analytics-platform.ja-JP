@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 88%
@@ -49,8 +49,8 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 
 ステッチは次の 2 つの方法で有効にできます。
 
-- [&#x200B; ステッチを有効にするリクエスト &#x200B;](/help/stitching/use-stitching.md). 承認されると、ステッチをリクエストしたデータセットに対して重複したデータセットが作成されます。 この重複データセットには、ステッチされた識別子を持つ追加の列が含まれています。 Customer Journey Analyticsでステッチされたデータを使用するには、ステッチされたデータセットを含む新しい接続を作成するか、既存の接続を編集する必要があります。
-- [Connections インターフェイスでステッチを有効にする &#x200B;](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}。 接続インターフェイスでデータセットのステッチを設定する場合、Customer Journey Analyticsでそのデータセットからデータを取り込む際に、ステッチはその「その場」で行われます。
+- [ ステッチを有効にするリクエスト ](/help/stitching/use-stitching.md) （非推奨）。 承認されると、ステッチをリクエストしたデータセットに対して重複したデータセットが作成されます。 この重複データセットには、ステッチされた識別子を持つ追加の列が含まれています。 Customer Journey Analyticsでステッチされたデータを使用するには、ステッチされたデータセットを含む新しい接続を作成するか、既存の接続を編集する必要があります。
+- [ 接続インターフェイスでステッチを有効にします ](/help/stitching/use-stitching-ui.md)。 接続インターフェイスでデータセットのステッチを設定する場合、Customer Journey Analyticsでそのデータセットからデータを取り込む際に、ステッチはその「その場」で行われます。
 
 ## 制限事項
 

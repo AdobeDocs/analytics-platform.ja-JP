@@ -5,20 +5,28 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '479'
 ht-degree: 7%
 
 ---
 
 # リクエストのステッチ
 
-組織がすべての [&#x200B; 前提条件 &#x200B;](overview.md#prerequisites) を満たし、一般的な [&#x200B; 制限 &#x200B;](overview.md#limitations) およびステッチ方法固有の（[&#x200B; フィールドベース &#x200B;](fbs.md#limitations) および [&#x200B; グラフベース &#x200B;](gbs.md#limitations)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストし使用を開始できます。
+
+>[!IMPORTANT]
+>
+>Adobeを使用したリクエストのステッチは不要になり、この方法は非推奨（廃止予定）になりました。 [ 接続 UI でステッチを有効にします ](use-stitching-ui.md)。
+>
+
+
+
+組織がすべての [ 前提条件 ](overview.md#prerequisites) を満たし、一般的な [ 制限 ](overview.md#limitations) およびステッチ方法固有の（[ フィールドベース ](fbs.md#limitations) および [ グラフベース ](gbs.md#limitations)）の制限を理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストし使用を開始できます。
 
 ## オプションを選択
 
-使用できるCustomer Journey Analytics パッケージによって、ステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 &#x200B;](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
+使用できるCustomer Journey Analytics パッケージによって、ステッチ方法、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
 
 | | Customer Journey Analytics<br/> 選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -54,25 +62,3 @@ ht-degree: 7%
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 データビューを設定したら、チャネルとデバイスをまたいでCustomer Journey Analytics レポート分析を実行できます。
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->
