@@ -1,14 +1,14 @@
 ---
 title: Report Builderでのディメンションのフィルタリング
-description: Customer Journey AnalyticsのReport Builderでディメンションのフィルターを使用する方法について説明します
+description: Report Builderでディメンションをフィルタリングする方法を説明します。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '990'
 ht-degree: 33%
 
 ---
@@ -22,35 +22,35 @@ ht-degree: 33%
 
 1. データブロックのセルを選択します。
 
-1. ![&#x200B; コマンド &#x200B;](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]**&#x200B;**[!UICONTROL データブロックの編集]** を選択します。
+1. ![ コマンド ](/help/assets/icons/Edit.svg) パネルの「**[!UICONTROL 編集]****[!UICONTROL データブロックの編集]** を選択します。
 
 1. 「**[!UICONTROL 次へ]**」を選択して、「**[!UICONTROL ディメンション]**」タブを表示します。
 
 1. テーブルのコンポーネント名の横にある ![MoreSmall](/help/assets/icons/MoreSmall.svg) を選択します。
 
-   ![&#x200B; 省略記号アイコンオプション。](./assets/image27.png){zoomable="yes"}
+   ![ 省略記号アイコンオプション。](./assets/image27.png){zoomable="yes"}
 
 1. ポップアップメニューで「**[!UICONTROL フィルターディメンション]**」を選択し、「**[!UICONTROL フィルターディメンション]**」ペインを表示します。
 
 1. **タイプ** として **一番人気** または **[!UICONTROL 特定]** を選択します。
 
-   ![&#x200B; フィルターディメンションペインで選択された特定のオプション。](./assets/image28.png){zoomable="yes"}
+   ![ フィルターディメンションペインで選択された特定のオプション。](./assets/image28.png){zoomable="yes"}
 
-1. 選択した [&#x200B; フィルタータイプ &#x200B;](#filter-type) に基づいて適切なオプションを選択します。
+1. 選択した [ フィルタータイプ ](#filter-type) に基づいて適切なオプションを選択します。
 
 1. 「**[!UICONTROL 適用]**」を選択して、フィルターを追加します。
 
 1. Report Builder は、追加したフィルターを確認する通知を表示します。
 
-適用したフィルターを表示するには、ディメンションの上にカーソルを合わせます。フィルターが適用されたディメンションには、ディメンション名の横に ![&#x200B; フィルター &#x200B;](/help/assets/icons/Filter.svg) フィルターアイコンが表示されます。
+適用したフィルターを表示するには、ディメンションの上にカーソルを合わせます。フィルターが適用されたディメンションには、ディメンション名の横に ![ フィルター ](/help/assets/icons/Filter.svg) フィルターアイコンが表示されます。
 
-## フィルターと並べ替え順の変更
+## フィルターと並べ替え順序の変更
 
 データブロックのフィルタリングと並べ替えに使用する指標の横に ![ArrowUp](/help/assets/icons/ArrowUp.svg) または ![ArrowDown](/help/assets/icons/ArrowDown.svg) が表示されます。 矢印の方向は、指標を昇順または降順で並べ替えるかどうかを示します。
 
 並べ替え順を変更するには：
 
-- 指標の横にある ![&#x200B; 上向き矢印 &#x200B;](/help/assets/icons/ArrowUp.svg) または ![&#x200B; 下向き矢印 &#x200B;](/help/assets/icons/ArrowDown.svg) を選択して、並べ替え順を切り替えます。
+- 指標の横にある ![ 上向き矢印 ](/help/assets/icons/ArrowUp.svg) または ![ 下向き矢印 ](/help/assets/icons/ArrowDown.svg) を選択して、並べ替え順を切り替えます。
 
 データブロックのフィルタリングと並べ替えに使用する指標を変更するには：
 
@@ -58,19 +58,19 @@ ht-degree: 33%
 
 2. 目的の指標に対して ![ArrowDown](/help/assets/icons/ArrowDown.svg) を選択します。
 
-   ![&#x200B; テーブルビルダーと指標 &#x200B;](./assets/image30.png){zoomable="yes"}
+   ![ テーブルビルダーと指標 ](./assets/image30.png){zoomable="yes"}
 
 
 
 ## フィルタータイプ
 
-ディメンション項目をフィルタリングする方法には、「一番人気 [&#x200B; と &#x200B;](#most-popular) 特定 [&#x200B; の 2 つがあり &#x200B;](#specific-filtering) す。
+ディメンション項目をフィルタリングする方法には、「一番人気 [ と ](#most-popular) 特定 [ の 2 つがあり ](#specific-filtering) す。
 
 ### **[!UICONTROL 一番人気]**
 
 「**[!UICONTROL 一番人気]**」オプションを使用すると、指標値に基づいてディメンション項目を動的にフィルタリングできます。 「一番人気」では、指標値に基づいて、最もランクの高いディメンション項目を返します。 デフォルトでは、最初の 10 個のディメンション項目が、データブロックに追加された最初の指標によって並べ替えられ、一覧表示されます。
 
-![&#x200B; 一番人気のオプション &#x200B;](./assets/image29.png){zoomable="yes"}
+![ 一番人気のオプション ](./assets/image29.png){zoomable="yes"}
 
 
 #### ページと行のオプション
@@ -111,11 +111,11 @@ Customer Journey Analyticsでは、一部のディメンションは *値なし*
 
 1. オペレータードロップダウンメニューからオペレーターを選択します。 デフォルトでは **[!UICONTROL フレーズを含む]** が選択されています
 
-   ![&#x200B; 演算子のリスト &#x200B;](./assets/image31.png){zoomable="yes"}
+   ![ 演算子のリスト ](./assets/image31.png){zoomable="yes"}
 
 1. 検索語句を入力します。
 
-1. ![&#x200B; 追加 &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL 行を追加]** を選択して選択を確定し、別の条件項目を追加します。
+1. ![ 追加 ](/help/assets/icons/Add.svg)**[!UICONTROL 行を追加]** を選択して選択を確定し、別の条件項目を追加します。
 
 1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、条件項目を削除します。
 
@@ -125,7 +125,7 @@ Customer Journey Analyticsでは、一部のディメンションは *値なし*
 
 「**[!UICONTROL 特定]**」オプションを使用すると、各ディメンションに固定のディメンション項目のリストを作成できます。 「**[!UICONTROL 特定]**」のフィルタリングタイプを使用して、フィルターに含める正確なディメンション項目を指定します。リストまたはセル範囲から項目を選択できます。
 
-![&#x200B; 特定のオプションと選択した項目 &#x200B;](./assets/image32.png){zoomable="yes"}
+![ 特定のオプションと選択した項目 ](./assets/image32.png){zoomable="yes"}
 
 #### リストから
 
@@ -133,15 +133,15 @@ Customer Journey Analyticsでは、一部のディメンションは *値なし*
 
    「**リストから**」オプションを選択すると、**[!UICONTROL Dimension items]** リストには、イベント数で並べ替えられたディメンション項目が入力されます。
 
-   ![&#x200B; 「リストから」オプションと使用可能な項目 &#x200B;](./assets/image33.png){zoomable="yes"}
+   ![ 「リストから」オプションと使用可能な項目 ](./assets/image33.png){zoomable="yes"}
 
-1. ![&#x200B; 検索 &#x200B;](/help/assets/icons/Search.svg) **[!UICONTROL _項目を追加_]** に検索語句を入力してリストを検索します。
+1. ![ 検索 ](/help/assets/icons/Search.svg) **[!UICONTROL _項目を追加_]** に検索語句を入力してリストを検索します。
 
 1. 過去 90 日間のデータに含まれていない項目を検索するには、「**[!UICONTROL 過去 6 か月間の項目を表示]**」を選択して、検索範囲を広げます。 過去 6 か月のデータの読み込み後、Report Builderは「**[!UICONTROL 過去 18 か月間の項目を表示]** へのリンクを更新します。
 
 1. **[!UICONTROL 選択した項目]** リストから項目を削除するには、「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択します。
 
-1. **[!UICONTROL 選択した項目]** リスト内の項目を移動するには、項目をドラッグ&amp;ドロップするか、![&#x200B; その他の小 &#x200B;](/help/assets/icons/MoreSmall.svg) を選択してコンテキストメニューを表示し、移動オプションから選択します。
+1. **[!UICONTROL 選択した項目]** リスト内の項目を移動するには、項目をドラッグ&amp;ドロップするか、![ その他の小 ](/help/assets/icons/MoreSmall.svg) を選択してコンテキストメニューを表示し、移動オプションから選択します。
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 
@@ -151,7 +151,7 @@ Report Builder はリストを更新し、適用した特定のフィルタリ�
 
 「**セルの範囲から**」オプションを選択して、一致するディメンション項目のリストを含むセルの範囲を選択します。
 
-![&#x200B; 「セルの範囲から」オプションと「1 つのセル範囲を選択する」フィールド &#x200B;](./assets/image37.png){zoomable="yes"}
+![ 「セルの範囲から」オプションと「1 つのセル範囲を選択する」フィールド ](./assets/image37.png){zoomable="yes"}
 
 セルの範囲を選択する場合は、次の制限事項を考慮してください。
 
@@ -170,5 +170,5 @@ Report Builder はリストを更新し、適用した特定のフィルタリ�
 
 1. フィルターに追加するディメンション項目をダブルクリックします。 または、1 つ以上のディメンション項目を選択し、選択範囲を ![TableSelectRow](/help/assets/icons/TableSelectRow.svg)**[!UICONTROL Row]** セクションにドラッグ&amp;ドロップします。
 
-   ![&#x200B; 「ディメンション」タブとディメンションのリスト &#x200B;](./assets/quickly-filter.png){zoomable="yes"}
+   ![ 「ディメンション」タブとディメンションのリスト ](./assets/quickly-filter.png){zoomable="yes"}
 

@@ -1,15 +1,15 @@
 ---
-title: Report Builder の制限ラベルとは
-description: Report Builder の制限ラベルについて説明します
+title: Report Builderの制限ラベル
+description: Report Builderの制限ラベルについて説明します。
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 44%
+source-wordcount: '315'
+ht-degree: 40%
 
 ---
 
@@ -23,7 +23,7 @@ Experience Platformで使用されるデータセットに関して作成され�
 
 この統合により、コンプライアンスを管理できるようになります。 組織のデータ管理人は、使用を制限するポリシーを設定できます。その結果、Adobe Customer Journey Analytics ユーザーは、データ管理人により定義されたポリシーにデータが準拠していることを認識したうえで、より自信を持ってデータを使用できます。
 
-詳しくは、[Customer Journey Analytics とデータガバナンス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-privacy/privacy-overview)を参照してください。
+詳しくは、[Customer Journey Analytics とデータガバナンス](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)を参照してください。
 
 ## 制限付きデータの表示
 
@@ -34,14 +34,14 @@ Customer Journey Analyticsでは、次の 2 つのAdobeで定義されるポリ�
 
 これらのポリシーの対象となるコンポーネントはグレー表示され、「![InfoOutline](/help/assets/icons/InfoOutline.svg)」アイコンが表示されます。 情報アイコンにポインタを合わせると、次の内容を示すメモが表示されます。**[!UICONTROL このデータの使用を禁止するポリシーがこのフィールドに適用されました]**。
 
-詳しくは、[&#x200B; ラベルとポリシー &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
+詳しくは、[ ラベルとポリシー ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance) を参照してください。
 
 
-![&#x200B; データの使用禁止を示すポリシーノート &#x200B;](assets/restricted-label.png){zoomable="yes"}
+![ データの使用禁止を示すポリシーノート ](assets/restricted-label.png){zoomable="yes"}
 
 
 ## 制限付きデータを含むレポートの更新
 
 ユーザーが後で制限されるデータ要素を含む Report Builder レポートを作成した場合、レポートを更新すると、エラーメッセージが表示されます。
 
-![&#x200B; データ要素が後で制限された後に表示されるエラーメッセージ。](assets/error-restricted-data.png){width="100%" zoomable="yes"}
+![ データ要素が後で制限された後に表示されるエラーメッセージ。](assets/error-restricted-data.png){width="100%" zoomable="yes"}

@@ -1,15 +1,15 @@
 ---
-title: Customer Journey Analytics での Report Builder の設定方法
-description: Customer Journey AnalyticsでReport Builderを設定する方法について説明します
+title: Report Builderの設定
+description: Customer Journey AnalyticsでReport Builderを設定する方法について説明します。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 26%
+source-wordcount: '523'
+ht-degree: 25%
 
 ---
 
@@ -72,11 +72,11 @@ Microsoft ストアへのアクセスがブロックされている場合：
 
 - IT またはセキュリティチームに連絡して、Report Builder アドインの承認をリクエストします。 承認されたら、Office **[!UICONTROL アドイン]** ダイアログで、「**[!UICONTROL 管理者による管理]**」タブを選択します。
 
-  ![Office アドインダイアログの「管理者による管理」タブ &#x200B;](./assets/image1.png){zoomable="yes"}
+  ![Office アドインダイアログの「管理者による管理」タブ ](./assets/image1.png){zoomable="yes"}
 
-Report Builder アドインをインストールすると、Excel のリボンの ![&#x200B; ホーム &#x200B;](/help/assets/icons/AdobeLogoRedOnWhite.svg) タブの下に **[!UICONTROL AdobeLogoRedonWhite]** **[!UICONTROL Report Builder]** アイコンが表示されます。
+Report Builder アドインをインストールすると、Excel のリボンの ![ ホーム ](/help/assets/icons/AdobeLogoRedOnWhite.svg) タブの下に **[!UICONTROL AdobeLogoRedonWhite]** **[!UICONTROL Report Builder]** アイコンが表示されます。
 
-![Excel の「Report Builder」アイコン &#x200B;](./assets/rb_app_icon.png){zoomable="yes"}
+![Excel の「Report Builder」アイコン ](./assets/rb_app_icon.png){zoomable="yes"}
 
 
 ## Report Builder へのログイン
@@ -89,11 +89,11 @@ Report Builder アドインをインストールすると、Excel のリボン�
 
 1. Adobe Report Builderのツールバーで「**[!UICONTROL ログイン]**」を選択します。
 
-   ![&#x200B; 「Report Builderへのログイン」ボタンをクリックします。](./assets/rb_login.png){zoomable="yes"}
+   ![ 「Report Builderへのログイン」ボタンをクリックします。](./assets/rb_login.png){zoomable="yes"}
 
 1. Adobe アカウント情報を入力します。 アカウント情報は、Customer Journey Analytics の資格情報と一致する必要があります。
 
-   ![&#x200B; ログインアイコンと組織。](./assets/image4.png){zoomable="yes"}
+   ![ ログインアイコンと組織。](./assets/image4.png){zoomable="yes"}
 
 ログインすると、パネルの上部にログインアイコンと組織が表示されます
 
@@ -106,7 +106,7 @@ Report Builder アドインをインストールすると、Excel のリボン�
 
 1. 使用可能な組織のリストから組織を選択します。自身がアクセス権を持っている組織のみが表示されます。
 
-   ![&#x200B; アクセスできる組織のリスト &#x200B;](./assets/image5.png){zoomable="yes"}
+   ![ アクセスできる組織のリスト ](./assets/image5.png){zoomable="yes"}
 
 ## ログアウト
 
@@ -116,6 +116,6 @@ Report Builderからログアウトするには：
 
 1. 「アバター」アイコンを選択して、ユーザープロファイルを表示します。
 
-   ![&#x200B; ユーザープロファイルのアバターと「ログアウト」ボタン &#x200B;](./assets/image6.png){zoomable="yes"}
+   ![ ユーザープロファイルのアバターと「ログアウト」ボタン ](./assets/image6.png){zoomable="yes"}
 
 1. **[!UICONTROL ログアウト]** を選択します。

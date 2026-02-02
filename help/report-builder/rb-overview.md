@@ -1,15 +1,15 @@
 ---
-title: Customer Journey Analytics の Report Builder とは
-description: Customer Journey Analytics の Report Builder について説明します
+title: Report Builder の概要
+description: Report Builder機能について説明します。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 16%
+source-wordcount: '330'
+ht-degree: 13%
 
 ---
 
@@ -48,7 +48,7 @@ Customer Journey Analytics用のReport BuilderはMicrosoft Excel アドインで
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/3452581?captions=jpn&quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
