@@ -23,8 +23,8 @@ ht-degree: 22%
 フロービジュアライゼーションを、データセット ID ディメンションと合わせて使用できます。
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、空のWorkspace プロジェクトを作成します。
-2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL ** フロー **]** ビジュアライゼーションを右側のキャンバスにドラッグします。
-3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL ** Dimensionまたは Item **]** というラベルが付いた場所にドラッグします。
+2. 左側の **[!UICONTROL ** ビジュアライゼーション **]** タブを選択し、**[!UICONTROL **&#x200B; フロー &#x200B;**]** ビジュアライゼーションを右側のキャンバスにドラッグします。
+3. 左側の **[!UICONTROL ** コンポーネント **]** タブを選択し、ディメンション **[!UICONTROL ** データセット ID **]** を、中央にある、**[!UICONTROL **&#x200B; Dimensionまたは Item &#x200B;**]** というラベルが付いた場所にドラッグします。
 4. このフローレポートはインタラクティブです。後続または前のページにフローを展開するには、いずれかの値を選択します。 右クリックメニューを使用して、列を展開または折りたたむことができます。同じフローレポート内で異なるディメンションを使用することもできます。
 
 データセット ID ディメンションの項目の名前を変更する場合は、検索データセットを使用できます。
@@ -47,7 +47,7 @@ ht-degree: 22%
 
 ユーザー ID が永続 ID を上書きするので、共有デバイスは、（同じデバイスから作成された場合でも）別の人物と見なされます。
 
-詳しくは、[ 共有デバイス ](/help/use-cases/stitching/shared-devices.md) のユースケースを参照してください。
+詳しくは、[&#x200B; 共有デバイス &#x200B;](/help/use-cases/stitching/shared-devices.md) のユースケースを参照してください。
 
 +++
 
@@ -75,9 +75,9 @@ ht-degree: 22%
 
 +++ クロスデバイス分析（従来の Analytics の機能）とクロスチャネル分析の違いは何ですか。
 
-[ クロスデバイス分析 ](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) は、人がどのようにデバイスをまたいで操作するかを把握できる、従来のAdobe Analytics専用の機能です。 デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
+[&#x200B; クロスデバイス分析 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) は、人がどのようにデバイスをまたいで操作するかを把握できる、従来のAdobe Analytics専用の機能です。 デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
 
-Cross-channel analysis は、人がどのようにデバイスとチャネルの両方をまたいで操作するかを把握できる、Customer Journey Analytics専用のユースケースです。 データセットの人物 ID をステッチし、そのデータセットを他のデータセットとシームレスに組み合わせることができます。 この機能は、クロスデバイス分析のフィールドベースのステッチと同様の設計で動作しますが、従来の Analytics とCustomer Journey Analyticsではデータアーキテクチャが異なるので、実装は異なります。 詳しくは、[ ステッチ ](overview.md) および [ クロスチャネル分析 ](../use-cases/cross-channel/cross-channel.md) ユースケースを参照してください。
+Cross-channel analysis は、人がどのようにデバイスとチャネルの両方をまたいで操作するかを把握できる、Customer Journey Analytics専用のユースケースです。 データセットの人物 ID をステッチし、そのデータセットを他のデータセットとシームレスに組み合わせることができます。 この機能は、クロスデバイス分析のフィールドベースのステッチと同様の設計で動作しますが、従来の Analytics とCustomer Journey Analyticsではデータアーキテクチャが異なるので、実装は異なります。 詳しくは、[&#x200B; ステッチ &#x200B;](overview.md) および [&#x200B; クロスチャネル分析 &#x200B;](../use-cases/cross-channel/cross-channel.md) ユースケースを参照してください。
 
 +++
 
@@ -209,7 +209,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 | **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
 | **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の永続 ID を持つ行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白の人物 ID が含まれているイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 |
 
-その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[ カスタムイベント ](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除などの [ 機能の違い ](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
+その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[&#x200B; カスタムイベント &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除などの [&#x200B; 機能の違い &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
 
 +++
 
@@ -217,7 +217,7 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 +++ Customer Journey Analyticsで「ID マップ」フィールドを使用できますか？
 
-はい。Customer Journey Analyticsでは、[ フィールドベース」と ](/help/stitching/fbs.md#identitymap) グラフベース [ の両方のステッチに ID マップフィールドを使用 ](/help/stitching/gbs.md#identitymap) きます。
+はい。Customer Journey Analyticsでは、[&#x200B; フィールドベース」と &#x200B;](/help/stitching/fbs.md#identitymap) グラフベース [&#x200B; の両方のステッチに ID マップフィールドを使用 &#x200B;](/help/stitching/gbs.md#identitymap) きます。
 
 +++
 
@@ -269,7 +269,7 @@ curl -X PATCH \
 
 リクエストで `unifiedProfile` タグを使用すると、リアルタイム顧客データプロファイルのライセンスを取得していなくても、エラーが返されます。
 
-詳しくは、[ プロファイルおよび ID 対応データセットの作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) を参照してください。
+詳しくは、[&#x200B; プロファイルおよび ID 対応データセットの作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) を参照してください。
 
 +++ 
 
@@ -278,5 +278,5 @@ curl -X PATCH \
 
 +++ ステッチされた名前空間値が、CJA接続内の別のデータセット内で使用する可能性のある ID 名前空間値と常に一致するとは限らないのはなぜですか？
 
-デフォルトでは、ステッチされた名前空間の値は小文字です。 だから、`custEmail` は `custemail` になります。 ID 名前空間値が `custEmail` の別のデータセットがある場合、2 つの値は一致しません。 レポートでこの動作を回避するには、派生フィールド関数 [lowercase （） ](/help/data-views/derived-fields/derived-fields.md#lowercase) を使用して、ID 名前空間の値に一致させることができます。
+デフォルトでは、ステッチされた名前空間の値は小文字です。 だから、`custEmail` は `custemail` になります。 ID 名前空間値が `custEmail` の別のデータセットがある場合、2 つの値は一致しません。 レポートでこの動作を回避するには、派生フィールド関数 [lowercase （） &#x200B;](/help/data-views/derived-fields/derived-fields.md#lowercase) を使用して、ID 名前空間の値に一致させることができます。
 

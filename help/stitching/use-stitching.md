@@ -17,14 +17,14 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
->Adobeを使用したリクエストのステッチは不要になり、この方法は非推奨（廃止予定）になりました。 [ 接続 UI でステッチを有効にします ](use-stitching-ui.md)。
+>Adobeを使用したリクエストのステッチは不要になり、この方法は非推奨（廃止予定）になりました。 [&#x200B; 接続 UI でステッチを有効にします &#x200B;](use-stitching-ui.md)。
 >
 
-組織が一般的な [ 前提条件 ](overview.md#prerequisites) を満たし、一般的な [ 制限事項 ](overview.md#limitations) を理解し、ステッチ方法固有の（[ フィールドベース ](fbs.md) および [ グラフベース ](gbs.md)）の前提条件と制限事項も理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストおよび使用できます。
+組織が一般的な [&#x200B; 前提条件 &#x200B;](overview.md#prerequisites) を満たし、一般的な [&#x200B; 制限事項 &#x200B;](overview.md#limitations) を理解し、ステッチ方法固有の（[&#x200B; フィールドベース &#x200B;](fbs.md) および [&#x200B; グラフベース &#x200B;](gbs.md)）の前提条件と制限事項も理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストおよび使用できます。
 
 ## オプションを選択
 
-使用資格のあるCustomer Journey Analytics パッケージによって、使用可能なステッチメソッド、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
+使用資格のあるCustomer Journey Analytics パッケージによって、使用可能なステッチメソッド、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 &#x200B;](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 サポートを依頼する前に、利用可能なオプションを決定してください。
 
 | | Customer Journey Analytics<br/> 選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
