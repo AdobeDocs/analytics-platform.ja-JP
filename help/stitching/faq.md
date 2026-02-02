@@ -75,7 +75,7 @@ ht-degree: 22%
 
 +++ クロスデバイス分析（従来の Analytics の機能）とクロスチャネル分析の違いは何ですか。
 
-[&#x200B; クロスデバイス分析 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) は、人がどのようにデバイスをまたいで操作するかを把握できる、従来のAdobe Analytics専用の機能です。 デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
+[&#x200B; クロスデバイス分析 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/cda/overview) は、人がどのようにデバイスをまたいで操作するかを把握できる、従来のAdobe Analytics専用の機能です。 デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
 
 Cross-channel analysis は、人がどのようにデバイスとチャネルの両方をまたいで操作するかを把握できる、Customer Journey Analytics専用のユースケースです。 データセットの人物 ID をステッチし、そのデータセットを他のデータセットとシームレスに組み合わせることができます。 この機能は、クロスデバイス分析のフィールドベースのステッチと同様の設計で動作しますが、従来の Analytics とCustomer Journey Analyticsではデータアーキテクチャが異なるので、実装は異なります。 詳しくは、[&#x200B; ステッチ &#x200B;](overview.md) および [&#x200B; クロスチャネル分析 &#x200B;](../use-cases/cross-channel/cross-channel.md) ユースケースを参照してください。
 
@@ -205,11 +205,11 @@ Customer Journey Analyticsの特定の指標は、従来の Analytics の指標�
 
 | **Customer Journey Analytics ステッチデータ** | **Customer Journey Analytics 未ステッチデータ** | **Adobe Analytics** | **CDA を使用した Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **People** = ステッチされた ID が人物 ID として選択された場合の個別の人物 ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **People** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。 Analytics ソースコネクタデータセットの **人物** は、Customer Journey Analyticsでユーザー ID として使用される場合、従来のAdobe Analyticsの **ユニーク訪問者** に似 `endUserIDs._experience.aaid.id` います。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people)を参照してください。 |
-| **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
-| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の永続 ID を持つ行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白の人物 ID が含まれているイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 |
+| **People** = ステッチされた ID が人物 ID として選択された場合の個別の人物 ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **People** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。 Analytics ソースコネクタデータセットの **人物** は、Customer Journey Analyticsでユーザー ID として使用される場合、従来のAdobe Analyticsの **ユニーク訪問者** に似 `endUserIDs._experience.aaid.id` います。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/people)を参照してください。 |
+| **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
+| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の永続 ID を持つ行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白の人物 ID が含まれているイベントがある場合、これらのイベントはCustomer Journey Analyticsに含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 |
 
-その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[&#x200B; カスタムイベント &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除などの [&#x200B; 機能の違い &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
+その他の指標は、Customer Journey AnalyticsとAdobe Analyticsで似ている場合があります。 例えば、Adobe Analytics[&#x200B; カスタムイベント &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/custom-events) の合計数は、従来のAdobe AnalyticsとCustomer Journey Analytics（ステッチか未ステッチかに関わらず）で 1～100 が比較可能です。 Customer Journey AnalyticsとAdobe Analyticsのイベントの重複排除などの [&#x200B; 機能の違い &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md)）により、2 つの製品間で不一致が生じることがあります。
 
 +++
 
@@ -269,7 +269,7 @@ curl -X PATCH \
 
 リクエストで `unifiedProfile` タグを使用すると、リアルタイム顧客データプロファイルのライセンスを取得していなくても、エラーが返されます。
 
-詳しくは、[&#x200B; プロファイルおよび ID 対応データセットの作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) を参照してください。
+詳しくは、[&#x200B; プロファイルおよび ID 対応データセットの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) を参照してください。
 
 +++ 
 
