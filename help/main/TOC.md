@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
+source-git-commit: 905d32421b4c1d3135a51dfd9898a02e750555d0
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 96%
@@ -139,6 +139,11 @@ ht-degree: 96%
    + [組み合わせイベントデータセット](../connections/combined-dataset.md)
    + [標準検索](../connections/standard-lookups.md)
    + [B2B ルックアップ](../connections/transform-datasets-b2b-lookups.md)
+   + オーディエンス分析 {#audience-analysis}
+      + [概要](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [設定](/help/connections/audience-analysis/audience-analysis-configure.md)
+      + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
+      + [分析](/help/connections/audience-analysis/analyze-audiences.md)
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
@@ -163,11 +168,6 @@ ht-degree: 96%
    + 共有指標とディメンション{#shared-metrics-dimensions}
       + [概要](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [編集者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-   + オーディエンス分析 {#audience-analysis}
-      + [概要](/help/connections/audience-analysis/audience-analysis-overview.md)
-      + [設定](/help/connections/audience-analysis/audience-analysis-configure.md)
-      + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [分析](/help/connections/audience-analysis/analyze-audiences.md)
 + ツール {#tools}
    + アセットを転送 {#asset-transfer}
       + [アセットを転送](../tools/asset-transfer/transfer-assets.md)
