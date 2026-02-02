@@ -16,7 +16,7 @@ ht-degree: 6%
 
 このユースケースでは、派生フィールドの機能を使用して特定のディメンションの目標を設定し、それらの目標をWorkspace プロジェクトで使用する方法を説明します。
 
-派生フィールドについて詳しくない場合は、[ チュートリアル ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja) および [ ドキュメント ](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
+派生フィールドについて詳しくない場合は、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja) および [&#x200B; ドキュメント &#x200B;](../data-views/derived-fields/derived-fields.md) を参照して概要を確認してください。
 
 
 ## 目標を定義
@@ -32,22 +32,22 @@ ht-degree: 6%
 
 1. 各月に静的な値を設定するには、CASE WHEN RULE を使用し、**[!UICONTROL カスタム数値]** を設定します。 以下の月間製品目標ルールを参照してください。
 
-   ![ 月間の製品目標 ](assets/goals-derived-field-product-goals-1.png)
+   ![&#x200B; 月間の製品目標 &#x200B;](assets/goals-derived-field-product-goals-1.png)
 
 
 ### マーケティングチャネルの収益目標
 
 マーケティングチャネルごとに、毎月の売上高目標を設定する必要があります。 次に手順を示します。
 
-1. [ マーケティングチャネル関数テンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) を使用して、`Monthly Marketing Channel Revenue Goal (Incremental)` という名前の新しい派生フィールドを作成します。
+1. [&#x200B; マーケティングチャネル関数テンプレート &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels) を使用して、`Monthly Marketing Channel Revenue Goal (Incremental)` という名前の新しい派生フィールドを作成します。
 
 1. URL の解析ルールと CASE WHEN ルールの組み合わせに基づいて各マーケティングチャネルを適切に識別するために、すべてのルールを定義します。 次に例を示します。
 
-   ![ マーケティングチャネル派生フィールドのルールの定義 ](assets/goals-derived-field-marketing-channel-1.png)
+   ![&#x200B; マーケティングチャネル派生フィールドのルールの定義 &#x200B;](assets/goals-derived-field-marketing-channel-1.png)
 
 1. **[!UICONTROL カスタム数値]** を設定して、最終的な CASE WHEN ルールの特定のマーケティングチャネルに対して、毎月の収益目標を表す静的値を明示的に設定します。 以下の [!DNL Monthly Goal] ルールを参照してください。
 
-   ![ 月間の目標 ](assets/goals-derived-field-marketing-channel-2.png)
+   ![&#x200B; 月間の目標 &#x200B;](assets/goals-derived-field-marketing-channel-2.png)
 
 
 
@@ -59,15 +59,15 @@ Workspace プロジェクトで目標を使用するには、計算指標機能�
 
 1. 次のように定義された、`Monthly Gift Certificate Orders Goal` という名前の計算指標フィールドを作成します。
 
-   ![ 注文目標 ](assets/calculated-metric-ordersgoals.png)
+   ![&#x200B; 注文目標 &#x200B;](assets/calculated-metric-ordersgoals.png)
 
 1. 追加の計算フィールド（例：`% of Monthly Gift Certificate Orders Goal`）を作成して、目標に対する実際の進捗を示すことができます。例：
 
-   ![ 注文目標の割合 ](assets/calculated-metric-ordersgoalspercent.png)
+   ![&#x200B; 注文目標の割合 &#x200B;](assets/calculated-metric-ordersgoalspercent.png)
 
 これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-![ マーケティング収益の目標を示すフリーフォームテーブル ](assets/freeform-table-marketing-channel-revenue-goals.png)
+![&#x200B; マーケティング収益の目標を示すフリーフォームテーブル &#x200B;](assets/freeform-table-marketing-channel-revenue-goals.png)
 
 
 
@@ -76,12 +76,12 @@ Workspace プロジェクトで目標を使用するには、計算指標機能�
 
 1. 次のように定義された、`Marketing Channel Revenue Goal` という名前の計算指標フィールドを作成します。
 
-   ![ 売上高目標 ](assets/calculated-metric-revenuegoals.png)
+   ![&#x200B; 売上高目標 &#x200B;](assets/calculated-metric-revenuegoals.png)
 
 1. 追加の計算フィールド（例：`% of Marketing Channel Revenue Goal`）を作成して、目標に対する実際の進捗を示すことができます。例：
 
-   ![ 売上高目標の割合 ](assets/calculated-metric-revenuegoalspercent.png)
+   ![&#x200B; 売上高目標の割合 &#x200B;](assets/calculated-metric-revenuegoalspercent.png)
 
 これらの計算指標を使用して、フリーフォームテーブルおよびビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-![ マーケティング収益の目標を示すフリーフォームテーブル ](assets/freeform-table-product-order-goals.png)
+![&#x200B; マーケティング収益の目標を示すフリーフォームテーブル &#x200B;](assets/freeform-table-product-order-goals.png)
