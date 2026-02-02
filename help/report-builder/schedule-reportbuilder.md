@@ -24,7 +24,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ワークブックのスケジュール ](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ワークブックのスケジュール &#x200B;](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -35,11 +35,11 @@ ht-degree: 14%
 
 1. Report Builderハブで「**[!UICONTROL スケジュール]**」を選択してスケジュールを作成し、Excel ファイル（.xlsx）を個人またはグループに自動的に配布できるようにします。
 
-   ![ 「スケジュール」ボタンを選択して、スケジュールを作成します。](./assets/schedule.png){zoomable="yes"}
+   ![&#x200B; 「スケジュール」ボタンを選択して、スケジュールを作成します。](./assets/schedule.png){zoomable="yes"}
 
-1. **[!UICONTROL ワークブックのスケジュール]** または ![ 追加 ](/help/assets/icons/Add.svg) を選択して、新しいスケジュールワークブックを作成します。
+1. **[!UICONTROL ワークブックのスケジュール]** または ![&#x200B; 追加 &#x200B;](/help/assets/icons/Add.svg) を選択して、新しいスケジュールワークブックを作成します。
 
-   ![ ワークブックスケジュールウィンドウ。](./assets/schedule-workbook.png){zoomable="yes"}
+   ![&#x200B; ワークブックスケジュールウィンドウ。](./assets/schedule-workbook.png){zoomable="yes"}
 
    スケジュールウィンドウには、ブック名やブックの最終変更日など、ブックに関する事前定義済みの情報が表示されます。
 
@@ -47,7 +47,7 @@ ht-degree: 14%
 
 「**[!UICONTROL ファイル]**」セクションでは、ファイルの種類、名前、およびファイルを保護するためのパスワードの詳細を指定します。
 
-![ スケジュールペイン。](./assets/schedule-pane.png){zoomable="yes"}
+![&#x200B; スケジュールペイン。](./assets/schedule-pane.png){zoomable="yes"}
 
 1. 現在のブックがまだ選択されていない場合は、![TableSelect](/help/assets/icons/TableSelect.svg) を使用して選択します。
 
@@ -85,7 +85,7 @@ ht-degree: 14%
 
 「**[!UICONTROL メール]**」セクションで、メールの受信者、件名、説明を指定します。
 
-![ スケジュールのメール設定 ](assets/schedule-email.png){zoomable="yes"}
+![&#x200B; スケジュールのメール設定 &#x200B;](assets/schedule-email.png){zoomable="yes"}
 
 1. **受信者**&#x200B;を入力します。組織で認識されるユーザーの名前を入力できます。 または、組織外の人物のメールアドレスを入力できます。
 
@@ -98,13 +98,13 @@ ht-degree: 14%
 
 「**[!UICONTROL スケジュール]**」セクションでは、ワークブックと共にメールを受信者に送信するスケジュールを定義できます。
 
-![ スケジュールの定義 ](assets/schedule-enable.png){zoomable="yes"}
+![&#x200B; スケジュールの定義 &#x200B;](assets/schedule-enable.png){zoomable="yes"}
 
 1. **[!UICONTROL スケジュールオプションを表示]** を選択して、スケジュールを定義します。
 
-1. 開始日を **[!UICONTROL 開始日]** に入力します。 または、「![ カレンダー ](/help/assets/icons/Calendar.svg)」を選択して、カレンダーから開始日を選択します。
+1. 開始日を **[!UICONTROL 開始日]** に入力します。 または、「![&#x200B; カレンダー &#x200B;](/help/assets/icons/Calendar.svg)」を選択して、カレンダーから開始日を選択します。
 
-1. 終了日を **[!UICONTROL 終了日]** に入力します。 または、「![ カレンダー ](/help/assets/icons/Calendar.svg)」を選択して、カレンダーから終了日を選択します。
+1. 終了日を **[!UICONTROL 終了日]** に入力します。 または、「![&#x200B; カレンダー &#x200B;](/help/assets/icons/Calendar.svg)」を選択して、カレンダーから終了日を選択します。
 
 1. **[!UICONTROL 頻度]** を選択します。 選択した頻度に応じて、追加のオプションがあります。 次の表を参照してください。
 
@@ -131,5 +131,5 @@ ht-degree: 14%
 
 ## スケジュールされたワークブックの管理
 
-既にスケジュールされたワークブックの管理について詳しくは、「[ スケジュールされたワークブックの管理 ](/help/report-builder/manage-schedules-reportbuilder.md)」を参照してください。
+既にスケジュールされたワークブックの管理について詳しくは、「[&#x200B; スケジュールされたワークブックの管理 &#x200B;](/help/report-builder/manage-schedules-reportbuilder.md)」を参照してください。
 
