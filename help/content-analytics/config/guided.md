@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 100%
+source-wordcount: '2776'
+ht-degree: 97%
 
 ---
 
@@ -331,6 +331,18 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 * コンテンツ分析用のデータを収集する際に含めるページまたは除外するページを編集するには、**[!UICONTROL エクスペリエンス]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の Content Analytics 設定のタグプロパティに関連付けられた [Adobe Content Analytics 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、ページを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
 
 * コンテンツ分析用のデータを収集する際に含めるアセットまたは除外するアセットを編集するには、**[!UICONTROL アセット]**&#x200B;の下にある ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。現在の Content Analytics 設定のタグプロパティに関連付けられた [Adobe Content Analytics 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。正規表現を編集して、アセットを含めたり除外したりできます。変更を[公開](#publish)する必要があります。
+
+
+### ヘッダーの上書き
+
+オプションで、「**[!UICONTROL ヘッダーオーバーライド]**」セクションにヘッダー名とシークレットヘッダー値を指定できます。  このヘッダーは、設定をオーバーライドし、実装したボット検出やゲートトラフィックテクノロジーをバイパスするために、Content Analyticsがカスタム HTTP ヘッダーを送信するようにします。
+
+![ ヘッダーオーバーライドセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. **[!UICONTROL ヘッダーオーバーライドの設定]** を有効にします。
+1. **[!UICONTROL ヘッダー名]** を入力します。 例：`x-asset-service`。
+1. **[!UICONTROL ヘッダー値]** を入力します。 指定した内容はすべてシークレットであり、ユーザーインターフェイスには表示されません（入力時に値 ![Visibility](/help/assets/icons/Visibility.svg) を明示的に開示することを選択した場合を除く）。
+
 
 ### 概要 {#summary}
 
