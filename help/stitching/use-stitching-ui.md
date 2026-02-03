@@ -58,7 +58,7 @@ ht-degree: 3%
 
 
    * **ユーザー ID**
-      * グラフベースのステッチの場合は、選択した永続 ID 名前空間とユーザー ID 名前空間の ID 値をリンクするフラグメントが ID グラフに含まれていることを確認します。 [Experience Platform ID グラフビューアに移動してテストを実行し &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} 一部のテスト永続 ID 値でグラフをクエリできます。 これらの永続 ID 値がグラフのユーザー ID 値にリンクされているかどうかを確認してください。
+      * グラフベースのステッチの場合は、選択した永続 ID 名前空間とユーザー ID 名前空間の ID 値をリンクするフラグメントが ID グラフに含まれていることを確認します。 [Experience Platform ID グラフビューアに移動してテストを実行し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} 一部のテスト永続 ID 値でグラフをクエリできます。 これらの永続 ID 値がグラフのユーザー ID 値にリンクされているかどうかを確認してください。
       * フィールドベースのステッチの場合、ユーザー ID フィールドが null でない 7 日間のデータをクエリし、データセット内のすべてのイベントについて 7 日間のデータのクエリで割ります。 この割合は、理想的には 5% を超える必要があります。
 
         検証に使用できるクエリの例：
