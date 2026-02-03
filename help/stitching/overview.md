@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 71%
+source-wordcount: '965'
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->この節で説明する機能を使用するには、Customer Journey Analytics **Select** パッケージ以降（[&#x200B; フィールドベースのステッチ &#x200B;](fbs.md) の場合）またはCustomer Journey Analytics **Prime** パッケージ以降（[&#x200B; グラフベースのステッチ &#x200B;](gbs.md) の場合）が必要です。 どの Customer Journey Analytics パッケージを使用しているかが不明な場合は、管理者にお問い合わせください。
+>この節で説明する機能を使用するには、Customer Journey Analytics **Select** パッケージ以降（[ フィールドベースのステッチ ](fbs.md) の場合）またはCustomer Journey Analytics **Prime** パッケージ以降（[ グラフベースのステッチ ](gbs.md) の場合）が必要です。 どの Customer Journey Analytics パッケージを使用しているかが不明な場合は、管理者にお問い合わせください。
 
 ID ステッチ（または単に「ステッチ」）は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。クロスチャネル分析は、Customer Journey Analytics の主なユースケースです。この機能では、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。
 
@@ -45,12 +45,8 @@ Customer Journey Analyticsでは 2 種類のステッチ（[フィールドベ�
 
 Customer Journey Analytics 接続の定義の一環として、1 つ以上のステッチされたデータセットを、コールセンターデータなどの他のデータセットと組み合わせると、クロスチャネル分析のメリットが得られます。この接続設定では、ステッチ ID と同様に、他のデータセットのすべての行にユーザー ID が既に含まれていることを前提としています。
 
-## ステッチを有効にする
+組織が一般的な [ 前提条件 ](overview.md#prerequisites) を満たし、一般的な [ 制限事項 ](overview.md#limitations) を理解し、ステッチ方法固有の（[ フィールドベース ](fbs.md) および [ グラフベース ](gbs.md)）の前提条件と制限事項も理解したら、次の手順に従ってCustomer Journey Analyticsでステッチをリクエストおよび使用できます。
 
-ステッチは次の 2 つの方法で有効にできます。
-
-- [&#x200B; ステッチを有効にするリクエスト &#x200B;](/help/stitching/use-stitching.md) （非推奨）。 承認されると、ステッチをリクエストしたデータセットに対して重複したデータセットが作成されます。 この重複データセットには、ステッチされた識別子を持つ追加の列が含まれています。 Customer Journey Analyticsでステッチされたデータを使用するには、ステッチされたデータセットを含む新しい接続を作成するか、既存の接続を編集する必要があります。
-- [&#x200B; 接続インターフェイスでステッチを有効にします &#x200B;](/help/stitching/use-stitching-ui.md)。 接続インターフェイスでデータセットのステッチを設定すると、Customer Journey Analyticsでそのデータセットからデータを取り込む間、その場でステッチが行われます。
 
 ## 制限事項
 
@@ -65,6 +61,25 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 - 2 つ以上のデータセットの結合。ステッチは、1 つのデータセットにのみ適用されます。データセットの結合は、Customer Journey Analytics 接続を設定し、接続内の選択した複数のデータセットで同じユーザー ID を選択した場合に、結果として起こります。
 
 - 2 つのデータセットの結合。Customer Journey Analytics では、結合は、Analysis Workspace での検索や分類によく使用されます。ステッチには結合機能が使用されますが、プロセス自体には複数の結合が含まれます。
+
+
+## オプション
+
+使用資格のあるCustomer Journey Analytics パッケージによって、使用可能なステッチメソッド、初期バックフィル期間のオプション、ルックバックウィンドウ、再生頻度、ステッチで許可されるデータセットの最大数が決まります。 詳しくは、[Customer Journey Analyticsの製品説明 ](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html) を参照してください。 ステッチを有効にする前に、使用可能なオプションを決定します。
+
+| | Customer Journey Analytics<br/> 選択 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| 使用可能なステッチ方法 | フィールドベースのステッチ | フィールドベースのステッチ <br/> グラフベースのステッチ | フィールドベースのステッチ <br> グラフベースのステッチ</li> |
+| 1 回限りのステッチバックフィル期間 | 13 か月 | 13 か月 | 25 か月 |
+| ルックバックウィンドウと再生頻度 | 1 日、毎日 <br/> 最大 7 日、毎週 | 1 日、毎日 <br/> 最大 14 日、毎週 | 1 日、毎日 <br/> 最大 30 日、毎週 |
+| ステッチできるデータセットの最大数 | 5 | 15 | 50 |
+
+## ステッチを有効にする
+
+ステッチは次の 2 つの方法で有効にできます。
+
+- [ ステッチを有効にするリクエスト ](/help/stitching/use-stitching.md) （非推奨）。 承認されると、ステッチをリクエストしたデータセットに対して重複したデータセットが作成されます。 この重複データセットには、ステッチされた識別子を持つ追加の列が含まれています。 Customer Journey Analyticsでステッチされたデータを使用するには、ステッチされたデータセットを含む新しい接続を作成するか、既存の接続を編集する必要があります。
+- [ 接続インターフェイスでステッチを有効にします ](/help/stitching/use-stitching-ui.md)。 接続インターフェイスでデータセットのステッチを設定すると、Customer Journey Analyticsでそのデータセットからデータを取り込む間、その場でステッチが行われます。
 
 
 ## Journey Optimizer データセット
