@@ -110,22 +110,22 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics内でJourney Optimizer データの詳細な分析を実行します。</li><li>Journey Optimizer接続および関連するデータビューを編集します。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析します。</li></ul>**このオプションが有効になっている場合、接続内の各行のデータは、Customer Journey Analyticsの毎月のライセンス行にカウントされ、接続使用状況 UI に表示されます。**<br><br/> このオプションは、Customer Journey Analyticsでのデータ行の追加的な使用に慣れている場合にのみ参照してください。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics内でJourney Optimizer データの詳細な分析を実行します。</li><li>Journey Optimizer接続および関連するデータビューを編集します。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析します。</li></ul>**このオプションが有効になっている場合、接続内の各行のデータは、Customer Journey Analyticsの毎月のライセンス行にカウントされ、接続使用状況 UI に表示されます。**<br><br/> このオプションは、Customer Journey Analyticsでのデータ行の追加的な使用に慣れている場合にのみ参照してください。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Customer Journey Analytics からこの接続を削除"
->abstract="このJourney Optimizer接続は、現在、カスタマージャーニー分析で使用されています。 接続を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でJourney Optimizer データの詳細な分析を実行します。</li><li>Journey Optimizer接続および関連するデータビューを編集します。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析します。</li></ul>**接続を解除すると、Customer Journey Analyticsでの詳細な分析ができなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analyticsのこの連携に対する請求には、連携が削除された 1 か月が含まれます。**<br/><br/> Journey Optimizerでは、接続は引き続き有効です。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="このJourney Optimizer接続は、現在、カスタマージャーニー分析で使用されています。 接続を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でJourney Optimizer データの詳細な分析を実行します。</li><li>Journey Optimizer接続および関連するデータビューを編集します。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析します。</li></ul>**接続を解除すると、Customer Journey Analyticsでの詳細な分析ができなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analyticsのこの連携に対する請求には、連携が削除された 1 か月が含まれます。**<br/><br/> Journey Optimizerでは、接続は引き続き有効です。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Customer Journey Analyticsの高度なレポート機能をBrand Concierge接続で利用できます。 これらの機能を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でBrand Concierge データの詳細な分析を実行します。</li><li>Brand Concierge接続および関連するデータビューを編集します。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析します。</li></ul>**このオプションが有効になっている場合、接続内の各行のデータは、Customer Journey Analyticsの毎月のライセンス行にカウントされ、接続使用状況 UI に表示されます。**<br><br/> このオプションは、Customer Journey Analyticsでのデータ行の追加的な使用に慣れている場合にのみ参照してください。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="このオプションを使用すると、Customer Journey Analyticsの高度なレポート機能をBrand Concierge接続で利用できます。 これらの機能を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でBrand Concierge データの詳細な分析を実行します。</li><li>Brand Concierge接続および関連するデータビューを編集します。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析します。</li></ul>**このオプションが有効になっている場合、接続内の各行のデータは、Customer Journey Analyticsの毎月のライセンス行にカウントされ、接続使用状況 UI に表示されます。**<br><br/> このオプションは、Customer Journey Analyticsでのデータ行の追加的な使用に慣れている場合にのみ参照してください。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Customer Journey Analytics からこの接続を削除"
->abstract="このBrand Concierge接続は、現在、カスタマージャーニー分析で使用されています。 接続を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でBrand Concierge データの詳細な分析を実行します。</li><li>Brand Concierge接続および関連するデータビューを編集します。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析します。</li></ul>**接続を解除すると、Customer Journey Analyticsでの詳細な分析ができなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analyticsのこの連携に対する請求には、連携が削除された 1 か月が含まれます。**<br/><br/> Brand Conciergeでは、接続は引き続き有効です。 [詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="このBrand Concierge接続は、現在、カスタマージャーニー分析で使用されています。 接続を使用すると、次のことができます。<ul><li>Customer Journey Analytics内でBrand Concierge データの詳細な分析を実行します。</li><li>Brand Concierge接続および関連するデータビューを編集します。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析します。</li></ul>**接続を解除すると、Customer Journey Analyticsでの詳細な分析ができなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analyticsのこの連携に対する請求には、連携が削除された 1 か月が含まれます。**<br/><br/> Brand Conciergeでは、接続は引き続き有効です。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
@@ -151,7 +151,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge_learn_more"
 >title="詳細情報"
->abstract="[詳細情報](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="[詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage_learn_more"
@@ -496,7 +496,7 @@ ht-degree: 56%
 
 | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
 |---|---|---|---|---|
-| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [&#x200B; アドホックスキーマ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
+| **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ [&#x200B; アドホックスキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/api/ad-hoc) に基づくアドホックスキーマ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック* 動作に基づくクラスに基づくアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
 | **[!UICONTROL モデル]** | リレーショナルスキーマに基づくリレーショナルデータ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 | あらゆるリレーショナルスキーマ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 |
 
 
@@ -836,5 +836,5 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 >[!MORELIKETHIS]
 >
 >* [&#x200B; データ取り込みの概要 &#x200B;](/help/data-ingestion/data-ingestion.md)
->* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=ja)
 
