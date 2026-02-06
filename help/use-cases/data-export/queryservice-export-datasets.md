@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '2642'
 ht-degree: 10%
@@ -14,23 +14,23 @@ ht-degree: 10%
 
 # クエリサービス（Data Distiller）とデータセットの書き出し
 
-この記事では、Experience Platform Query Service （データDistiller）とデータセット書き出しの組み合わせを使用して、次の [&#x200B; データ書き出しの使用例 &#x200B;](overview.md) を実装する方法の概要を説明します。
+この記事では、Experience Platform Query Service （データDistiller）とデータセット書き出しの組み合わせを使用して、次の [ データ書き出しの使用例 ](overview.md) を実装する方法の概要を説明します。
 
 - データの検証
 - Data Lake、BI ツールのData Warehouse
 - 人工知能と機械学習の準備。
 
 
-Adobe Analyticsでは、[&#x200B; データフィード &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-overview) 機能を使用して、これらのユースケースを実装できます。 データフィードは、Adobe Analytics から生データを取得するための強力な方法です。この記事では、Experience Platformから同様のタイプの生データを取得する方法について説明します。これにより、上記のユースケースを実装できます。 該当する場合、この記事で説明されている機能をAdobe Analytics データフィードと比較して、データとプロセスの違いを明確にします。
+Adobe Analyticsでは、[ データフィード ](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-overview) 機能を使用して、これらのユースケースを実装できます。 データフィードは、Adobe Analytics から生データを取得するための強力な方法です。この記事では、Experience Platformから同様のタイプの生データを取得する方法について説明します。これにより、上記のユースケースを実装できます。 該当する場合、この記事で説明されている機能をAdobe Analytics データフィードと比較して、データとプロセスの違いを明確にします。
 
 ## はじめに
 
 クエリサービス（Data Distiller）とデータセット書き出しを使用したデータの書き出しは、次の要素で構成されています。
 
-- **クエリサービス** を使用して、データフィードのデータを出力データセット ![&#x200B; 出力データセット &#x200B;](../assets/output-dataset.svg) として生成する **スケジュールされたクエリ** を定義する。
+- **クエリサービス** を使用して、データフィードのデータを出力データセット ![ 出力データセット ](../assets/output-dataset.svg) として生成する **スケジュールされたクエリ** を定義する。
 - **データセット書き出し** を使用して、出力データセットをクラウドストレージの宛先に書き出す **スケジュールされたデータセット書き出し** を定義する。
 
-![&#x200B; データフィード &#x200B;](../assets/queryservice-export-datasets.svg)
+![ データフィード ](../assets/queryservice-export-datasets.svg)
 
 
 ## 前提条件
@@ -38,8 +38,8 @@ Adobe Analyticsでは、[&#x200B; データフィード &#x200B;](https://experi
 このユースケースで説明している機能を使用する前に、次の要件をすべて満たしていることを確認してください。
 
 - Experience Platformのデータレイクにデータを収集する実用的な実装。
-- バッチクエリを実行する権限を持っていることを確認するには、Data Distiller アドオンにアクセスします。 詳しくは、[&#x200B; クエリサービスのパッケージ化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/packaging) を参照してください。
-- データセットの書き出し機能へのアクセス権。この機能は、Real-Time CDP PrimeまたはUltimate パッケージ、Adobe Journey OptimizerまたはCustomer Journey Analyticsを購入した場合に使用できます。 詳しくは、[&#x200B; クラウドストレージの宛先へのデータセットの書き出し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
+- バッチクエリを実行する権限を持っていることを確認するには、Data Distiller アドオンにアクセスします。 詳しくは、[ クエリサービスのパッケージ化 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/packaging) を参照してください。
+- データセットの書き出し機能へのアクセス権。この機能は、Real-Time CDP PrimeまたはUltimate パッケージ、Adobe Journey OptimizerまたはCustomer Journey Analyticsを購入した場合に使用できます。 詳しくは、[ クラウドストレージの宛先へのデータセットの書き出し ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
 - データフィードの生データの書き出し先となる、1 つ以上の設定済みの宛先（例：Amazon S3、Google Cloud Storage）。
 
 
@@ -47,27 +47,27 @@ Adobe Analyticsでは、[&#x200B; データフィード &#x200B;](https://experi
 
 Experience Platform クエリサービスを使用すると、Experience Platform Data Lake 内のデータセットをデータベーステーブルのようにクエリして結合できます。 その後、結果を新しいデータセットとして取得し、レポートや書き出しでさらに使用できます。
 
-クエリサービス [&#x200B; ユーザーインターフェイス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/overview)、PostgresQL プロトコルを介して接続された [&#x200B; クライアント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/overview)、または [RESTful API](https://experienceleague.adobe.com/ja/docs/experience-platform/query/api/getting-started) を使用して、データフィードのデータを収集するクエリを作成およびスケジュールできます。
+クエリサービス [ ユーザーインターフェイス ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)、PostgresQL プロトコルを介して接続された [ クライアント ](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/overview)、または [RESTful API](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) を使用して、データフィードのデータを収集するクエリを作成およびスケジュールできます。
 
 ### クエリを作成
 
-SELECT 文やその他の制限付きコマンドに標準 ANSI SQL のすべての機能を使用して、データフィードのデータを生成するクエリを作成および実行できます。 詳しくは、[SQL 構文 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/syntax) を参照してください。 この SQL 構文を超えて、Adobeでは次の機能をサポートしています。
+SELECT 文やその他の制限付きコマンドに標準 ANSI SQL のすべての機能を使用して、データフィードのデータを生成するクエリを作成および実行できます。 詳しくは、[SQL 構文 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/syntax) を参照してください。 この SQL 構文を超えて、Adobeでは次の機能をサポートしています。
 
-- 事前に作成された [Adobe定義関数（ADF）は &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/adobe-defined-functions)Experience Platform データレイクに保存されたイベントデータに対して一般的なビジネス関連タスクを実行するのに役立ちます。これには、[&#x200B; セッション化 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing) および [&#x200B; アトリビューション &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/overview) の関数が含まれます。
-- いくつかのビルトイン [Spark SQL 関数 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/spark-sql-functions)、
-- [&#x200B; メタデータ PostgreSQL コマンド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/metadata)、
-- [&#x200B; 準備済みステートメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/prepared-statements)。
+- 事前に作成された [Adobe定義関数（ADF）は ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions)Experience Platform データレイクに保存されたイベントデータに対して一般的なビジネス関連タスクを実行するのに役立ちます。これには、[ セッション化 ](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing) および [ アトリビューション ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/overview) の関数が含まれます。
+- いくつかのビルトイン [Spark SQL 関数 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions)、
+- [ メタデータ PostgreSQL コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/metadata)、
+- [ 準備済みステートメント ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/prepared-statements)。
 
 #### データフィード列
 
-クエリで使用できる XDM フィールドは、データセットが基づいているスキーマ定義によって異なります。 データセットの基礎となるスキーマを理解していることを確認します。 詳しくは、[&#x200B; データセット UI ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide) を参照してください。
+クエリで使用できる XDM フィールドは、データセットが基づいているスキーマ定義によって異なります。 データセットの基礎となるスキーマを理解していることを確認します。 詳しくは、[ データセット UI ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide) を参照してください。
 
-データフィード列と XDM フィールド間のマッピングを定義するには、[Analytics フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) を参照してください。 スキーマ、クラス、フィールドグループ、データタイプなど、XDM リソースの管理方法について詳しくは、[&#x200B; スキーマ UI の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) も参照してください。
+データフィード列と XDM フィールド間のマッピングを定義するには、[Analytics フィールドマッピング ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) を参照してください。 スキーマ、クラス、フィールドグループ、データタイプなど、XDM リソースの管理方法について詳しくは、[ スキーマ UI の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) も参照してください。
 
 例えば、*ページ名* をデータフィードの一部として使用する場合は、次のようになります。
 
 - Adobe Analytics データフィードの UI では、列として **[!UICONTROL pagename]** を選択すると、データフィードの定義に追加されます。
-- クエリサービスでは、`web.webPageDetails.name`Web サイトのサンプルイベントスキーマ（グローバル v1.1） `sample_event_dataset_for_website_global_v1_1` エクスペリエンスイベントスキーマに基づいて） **データセットの** をクエリに含めます。 詳しくは、[Web 詳細スキーマフィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/web-details) を参照してください。
+- クエリサービスでは、`web.webPageDetails.name`Web サイトのサンプルイベントスキーマ（グローバル v1.1） `sample_event_dataset_for_website_global_v1_1` エクスペリエンスイベントスキーマに基づいて） **データセットの** をクエリに含めます。 詳しくは、[Web 詳細スキーマフィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/web-details) を参照してください。
 
 
 #### ID
@@ -77,16 +77,16 @@ Experience Platformでは、様々な ID を使用できます。 クエリを�
 
 ID は、多くの場合、別のフィールドグループで見つかります。 実装では、ECID （`ecid`）は、`core` オブジェクトを持つフィールドグループの一部として定義できます。このフィールドグループは、それ自体が `identification` オブジェクトの一部です（例：`_sampleorg.identification.core.ecid`）。 ECID の整理はスキーマによって異なる場合があります。
 
-または、`identityMap` を使用して ID をクエリできます。 `identityMap` は `Map` 型で、[&#x200B; ネストされたデータ構造 &#x200B;](#nested-data-structure) を使用します。
+または、`identityMap` を使用して ID をクエリできます。 `identityMap` は `Map` 型で、[ ネストされたデータ構造 ](#nested-data-structure) を使用します。
 
-Experience Platformで ID フィールドを定義する方法について詳しくは、[UI での ID フィールドの定義 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) を参照してください。
+Experience Platformで ID フィールドを定義する方法について詳しくは、[UI での ID フィールドの定義 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity) を参照してください。
 
-Analytics ソースコネクタを使用する際にAdobe Analytics ID をExperience Platform ID にマッピングする方法について詳しくは [Analytics データの &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)プライマリID を参照してください。 このマッピングは、Analytics ソースコネクタを使用していない場合でも、ID を設定するためのガイダンスとして機能する場合があります。
+Analytics ソースコネクタを使用する際にAdobe Analytics ID をExperience Platform ID にマッピングする方法について詳しくは [Analytics データの ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)プライマリID を参照してください。 このマッピングは、Analytics ソースコネクタを使用していない場合でも、ID を設定するためのガイダンスとして機能する場合があります。
 
 
 #### ヒットレベルのデータと識別
 
-実装に基づいて、従来Adobe Analyticsで収集されていたヒットレベルのデータが、タイムスタンプ付きのイベントデータとしてExperience Platformに保存されるようになりました。 次の表は、[Analytics フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics#generated-mapping-fields) から抽出したもので、ヒットレベル固有のAdobe Analytics データフィード列をクエリ内の対応する XDM フィールドにマッピングする方法の例を示しています。 また、この表は、XDM フィールドを使用してヒット、訪問、訪問者を識別する方法の例も示しています。
+実装に基づいて、従来Adobe Analyticsで収集されていたヒットレベルのデータが、タイムスタンプ付きのイベントデータとしてExperience Platformに保存されるようになりました。 次の表は、[Analytics フィールドマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics#generated-mapping-fields) から抽出したもので、ヒットレベル固有のAdobe Analytics データフィード列をクエリ内の対応する XDM フィールドにマッピングする方法の例を示しています。 また、この表は、XDM フィールドを使用してヒット、訪問、訪問者を識別する方法の例も示しています。
 
 | データフィード列 | XDM フィールド | タイプ | 説明 |
 |---|---|---|---|
@@ -115,13 +115,13 @@ Analytics ソースコネクタを使用する際にAdobe Analytics ID をExperi
 
 #### 列を投稿
 
-Adobe Analytics データフィードでは、`post_` プレフィックスが付いた列という概念を使用します。プレフィックスは、処理後のデータを含む列です。 詳しくは、[データフィードに関する FAQ](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/df-faq#post) を参照してください。
+Adobe Analytics データフィードでは、`post_` プレフィックスが付いた列という概念を使用します。プレフィックスは、処理後のデータを含む列です。 詳しくは、[データフィードに関する FAQ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/df-faq#post) を参照してください。
 
 Experience Platform Edge Network（Web SDK、Mobile SDK、Server API）を使用してデータセットに収集されたデータには、`post_` フィールドという概念はありません。 その結果、プレフィックス `post_` 付けられたデータフィード列と *非* プレフィックスのデータフィード列は、同じ XDM フィールドにマッピ `post_` グされます。 例えば、`page_url` と `post_page_url` の両方のデータフィード列が同じ `web.webPageDetails.URL` XDM フィールドにマッピングされるとします。
 
-データ処理の違いの概要については、[Adobe AnalyticsとCustomer Journey Analytics間のデータ処理の比較 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) を参照してください。
+データ処理の違いの概要については、[Adobe AnalyticsとCustomer Journey Analytics間のデータ処理の比較 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) を参照してください。
 
-ただし、Experience Platform Data Lake で収集されるデータの `post_` プレフィックス列タイプでは、データフィードのユースケースで使用する前に高度な変換が必要です。 クエリでこれらの高度な変換を実行するには、セッション化、アトリビューション、重複排除に [0&rbrace;Adobe定義の関数を使用する必要があります。 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/adobe-defined-functions)これらの関数の使用方法については、[&#x200B; 例 &#x200B;](#examples) を参照してください。
+ただし、Experience Platform Data Lake で収集されるデータの `post_` プレフィックス列タイプでは、データフィードのユースケースで使用する前に高度な変換が必要です。 クエリでこれらの高度な変換を実行するには、セッション化、アトリビューション、重複排除に [0}Adobe定義の関数を使用する必要があります。 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions)これらの関数の使用方法については、[ 例 ](#examples) を参照してください。
 
 #### 参照
 
@@ -129,7 +129,7 @@ Experience Platform Edge Network（Web SDK、Mobile SDK、Server API）を使用
 
 #### 計算
 
-フィールド（列）に対して計算を実行するには、標準の SQL 関数（例：`COUNT(*)`）または Spark SQL の一部である [&#x200B; 数学演算子と統計演算子および関数 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/spark-sql-functions#math) を使用します。 また、[window 関数 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) は、集計を更新し、順序付きサブセット内の各行の単一の項目を返すサポートを提供します。 これらの関数の使用方法については、[&#x200B; 例 &#x200B;](#examples) を参照してください。
+フィールド（列）に対して計算を実行するには、標準の SQL 関数（例：`COUNT(*)`）または Spark SQL の一部である [ 数学演算子と統計演算子および関数 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) を使用します。 また、[window 関数 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) は、集計を更新し、順序付きサブセット内の各行の単一の項目を返すサポートを提供します。 これらの関数の使用方法については、[ 例 ](#examples) を参照してください。
 
 #### ネストされたデータ構造
 
@@ -154,19 +154,19 @@ Experience Platform Edge Network（Web SDK、Mobile SDK、Server API）を使用
 }
 ```
 
-Spark SQL の [`explode()` 関数またはその他の配列関数を使用して &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/sql/spark-sql-functions#arrays) ネストされたデータ構造内のデータにアクセスできます。次に例を示します。
+Spark SQL の [`explode()` 関数またはその他の配列関数を使用して ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#arrays) ネストされたデータ構造内のデータにアクセスできます。次に例を示します。
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
-または、ドット表記を使用して個々の要素を参照することもできます。 例：
+または、ドット表記を使用して個々の要素を参照することもできます。 次に例を示します。
 
 ```sql
 select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
-詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/nested-data-structures)を参照してください。
+詳しくは、[クエリサービスでのネストされたデータ構造の操作](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/nested-data-structures)を参照してください。
 
 
 #### 例
@@ -179,10 +179,10 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 詳しくは、
 
-- [&#x200B; 参照を中止 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/use-cases/abandoned-browse)
-- [&#x200B; アトリビューション分析 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/use-cases/attribution-analysis)
-- [&#x200B; ボットフィルタリング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/use-cases/bot-filtering)
-- およびその他 [&#x200B; クエリサービスガイドでサポートされているその他のユースケース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/use-cases/overview)。
+- [ 参照を中止 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/abandoned-browse)
+- [ アトリビューション分析 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/attribution-analysis)
+- [ ボットフィルタリング ](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
+- およびその他 [ クエリサービスガイドでサポートされているその他のユースケース ](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview)。
 
 以下に、セッション間でアトリビューションを適切に適用する例と、その方法を示します
 
@@ -190,12 +190,11 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 - セッション化やアトリビューションなどのウィンドウ関数を適用する。
 - `ingest_time` に基づいて出力を制限します。
 
-  +++
-  詳細
+  +++ 詳細
 
   そのためには…
 
-   - 処理ステータステーブル `checkpoint_log` を使用して、現在の取り込み時間と最後の取り込み時間を追跡します。 詳しくは、[&#x200B; このガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/incremental-load) を参照してください。
+   - 処理ステータステーブル `checkpoint_log` を使用して、現在の取り込み時間と最後の取り込み時間を追跡します。 詳しくは、[ このガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) を参照してください。
    - システム列の削除を無効にして、`_acp_system_metadata.ingestTime` を使用できるようにします。
    - 最も内側の `SELECT` を使用して、使用するフィールドを取得し、セッション化やアトリビューションの計算のためにイベントをルックバック期間に制限します。 例：90 日。
    - 次のレベルの `SELECT` を使用して、セッション化やアトリビューションウィンドウ関数、その他の計算を適用します。
@@ -345,28 +344,28 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### クエリエディターの使用
 
-クエリエディターを使用してクエリをスケジュールできます。 クエリをスケジュールする場合は、出力データセットを定義します。 詳しくは、[&#x200B; クエリスケジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/query-schedules) を参照してください。
+クエリエディターを使用してクエリをスケジュールできます。 クエリをスケジュールする場合は、出力データセットを定義します。 詳しくは、[ クエリスケジュール ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/query-schedules) を参照してください。
 
 
 #### Query Service API の使用
 
-または、RESTful API を使用してクエリを定義し、クエリのスケジュールを設定することもできます。 詳しくは、[Query Service API ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/api/getting-started) を参照してください。
-クエリを作成する場合（`ctasParameters` クエリを作成する [）やクエリのスケジュールを作成する場合（](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery) スケジュールされたクエリを作成する [）は、出力データセットをオプションの &#x200B;](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule) プロパティの一部として定義していることを確認します。
+または、RESTful API を使用してクエリを定義し、クエリのスケジュールを設定することもできます。 詳しくは、[Query Service API ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) を参照してください。
+クエリを作成する場合（`ctasParameters` クエリを作成する [）やクエリのスケジュールを作成する場合（](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery) スケジュールされたクエリを作成する [）は、出力データセットをオプションの ](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule) プロパティの一部として定義していることを確認します。
 
 
 
 ## データセットの書き出し
 
-クエリを作成し、スケジュールを設定し、結果を確認したら、生のデータセットをクラウドストレージの宛先に書き出すことができます。 この書き出しは、データセット書き出し宛先と呼ばれるExperience Platformの宛先の用語で使用されます。 詳しくは、[&#x200B; クラウドストレージの宛先へのデータセットの書き出し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
+クエリを作成し、スケジュールを設定し、結果を確認したら、生のデータセットをクラウドストレージの宛先に書き出すことができます。 この書き出しは、データセット書き出し宛先と呼ばれるExperience Platformの宛先の用語で使用されます。 詳しくは、[ クラウドストレージの宛先へのデータセットの書き出し ](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets) を参照してください。
 
 次のクラウドストレージの宛先がサポートされています。
 
-- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
-- [Data Landing Zone](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google Cloud Storage](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
-- [Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
-- [SFTP](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/cloud-storage/sftp)
+- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
+- [Data Landing Zone](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
+- [Google Cloud Storage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
+- [SFTP](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/sftp)
 
 
 ### EXPERIENCE PLATFORM UI
@@ -375,7 +374,7 @@ Experience Platform UI を使用して、出力データセットの書き出し
 
 #### 宛先を選択
 
-出力データセットを書き出すクラウドストレージの宛先を決定したら、[&#x200B; 宛先を選択 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) します。 優先クラウドストレージの宛先をまだ設定していない場合は、[&#x200B; 新しい宛先接続を作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/connect-destination) 必要があります。
+出力データセットを書き出すクラウドストレージの宛先を決定したら、[ 宛先を選択 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) します。 優先クラウドストレージの宛先をまだ設定していない場合は、[ 新しい宛先接続を作成する ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination) 必要があります。
 
 宛先の設定の一環として、次のことができます
 
@@ -386,54 +385,54 @@ Experience Platform UI を使用して、出力データセットの書き出し
 
 #### データセットを選択
 
-宛先を選択したら、次の **[!UICONTROL データセットを選択]** 手順で、データセットのリストから出力データセットを選択する必要があります。 複数のスケジュールされたクエリを作成し、出力データセットを同じクラウドストレージ宛先に送信する場合、対応する出力データセットを選択できます。 詳しくは [&#x200B; データセットの選択 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) を参照してください。
+宛先を選択したら、次の **[!UICONTROL データセットを選択]** 手順で、データセットのリストから出力データセットを選択する必要があります。 複数のスケジュールされたクエリを作成し、出力データセットを同じクラウドストレージ宛先に送信する場合、対応する出力データセットを選択できます。 詳しくは [ データセットの選択 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) を参照してください。
 
 #### データセット書き出しのスケジュール設定
 
-最後に、**[!UICONTROL スケジュール設定]** 手順の一部としてデータセットの書き出しをスケジュールします。 その手順では、スケジュールと、出力データセットの書き出しを増分にするかどうかを定義できます。 詳しくは [&#x200B; データセットの書き出しをスケジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) を参照してください。
+最後に、**[!UICONTROL スケジュール設定]** 手順の一部としてデータセットの書き出しをスケジュールします。 その手順では、スケジュールと、出力データセットの書き出しを増分にするかどうかを定義できます。 詳しくは [ データセットの書き出しをスケジュール ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) を参照してください。
 
 
 #### 最終手順
 
-[&#x200B; 確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#review) 選択し、正しければ、出力データセットのクラウドストレージ宛先への書き出しを開始します。
+[ 確認 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) 選択し、正しければ、出力データセットのクラウドストレージ宛先への書き出しを開始します。
 
-データの書き出しが正常に行われたことを [&#x200B; 確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#verify) する必要があります。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
+データの書き出しが正常に行われたことを [ 確認 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) する必要があります。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
 
 ### フローサービス API
 
-または、API を使用して出力データセットの書き出しを書き出し、スケジュールすることもできます。 含まれる手順は、[Flow Service API を使用したデータセットの書き出し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets) に記載されています。
+または、API を使用して出力データセットの書き出しを書き出し、スケジュールすることもできます。 含まれる手順は、[Flow Service API を使用したデータセットの書き出し ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets) に記載されています。
 
 #### 基本を学ぶ
 
-データセットを書き出すには、[&#x200B; 必要な権限 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#permissions) があることを確認します。 また、出力データセットの送信先がデータセットの書き出しをサポートしていることを確認します。 次に、API 呼び出しで使用する [&#x200B; 必須ヘッダーとオプションヘッダーの値を収集する &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) 必要があります。 また、データセットを書き出す [&#x200B; 宛先の接続仕様 ID とフロー仕様 ID](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) を識別する必要もあります。
+データセットを書き出すには、[ 必要な権限 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions) があることを確認します。 また、出力データセットの送信先がデータセットの書き出しをサポートしていることを確認します。 次に、API 呼び出しで使用する [ 必須ヘッダーとオプションヘッダーの値を収集する ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) 必要があります。 また、データセットを書き出す [ 宛先の接続仕様 ID とフロー仕様 ID](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) を識別する必要もあります。
 
 #### 適格なデータセットの取得
 
-書き出し用に [&#x200B; 適格なデータセットのリストを取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) し、[`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API を使用して、出力データセットがそのリストに含まれているかどうかを確認できます。
+書き出し用に [ 適格なデータセットのリストを取得 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) し、[`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API を使用して、出力データセットがそのリストに含まれているかどうかを確認できます。
 
 
 #### ソース接続を作成
 
-次に、クラウドストレージ宛先に書き出す、出力データセット用に一意の ID を使用して、[&#x200B; ソース接続を作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-source-connection) する必要があります。 [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API を使用します。
+次に、クラウドストレージ宛先に書き出す、出力データセット用に一意の ID を使用して、[ ソース接続を作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection) する必要があります。 [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API を使用します。
 
 #### 宛先に対する認証（ベース接続の作成）
 
-[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-base-connection) API を使用して認証を行い、クラウドストレージの宛先に資格情報を安全に保存するには、[`POST /targetConection` ベース接続を作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。
+[](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection) API を使用して認証を行い、クラウドストレージの宛先に資格情報を安全に保存するには、[`POST /targetConection` ベース接続を作成 ](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。
 
 
 #### エクスポートパラメーターの指定
 
-次に、もう一度 [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-target-connection) API を使用して、出力データセット用に [`POST /targetConection` 書き出しパラメーターを保存する追加のターゲット接続を作成 &#x200B;](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。 これらの書き出しパラメーターには、場所、ファイル形式、圧縮などが含まれます。
+次に、もう一度 [](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) API を使用して、出力データセット用に [`POST /targetConection` 書き出しパラメーターを保存する追加のターゲット接続を作成 ](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) する必要があります。 これらの書き出しパラメーターには、場所、ファイル形式、圧縮などが含まれます。
 
 #### データフローの設定
 
-最後に、[&#x200B; データフローの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#create-dataflow) を行い、[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API を使用して出力データセットがクラウドストレージの宛先に書き出されるようにします。 この手順では、`scheduleParams` パラメーターを使用して、書き出しのスケジュールを定義できます。
+最後に、[ データフローの設定 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) を行い、[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API を使用して出力データセットがクラウドストレージの宛先に書き出されるようにします。 この手順では、`scheduleParams` パラメーターを使用して、書き出しのスケジュールを定義できます。
 
 #### データフローの検証
 
-[&#x200B; データフローの正常な実行を確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) するには、[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API を使用して、データフロー ID をクエリパラメーターとして指定します。 このデータフロー ID は、データフローを設定したときに返される識別子です。
+[ データフローの正常な実行を確認 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) するには、[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API を使用して、データフロー ID をクエリパラメーターとして指定します。 このデータフロー ID は、データフローを設定したときに返される識別子です。
 
-[&#x200B; 検証 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets#verify) 成功したデータ書き出し。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
+[ 検証 ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) 成功したデータ書き出し。 データセットを書き出す際、Experience Platformは、宛先で定義されたストレージの場所に 1 つまたは複数の `.json` ファイルまたは `.parquet` ファイルを作成します。 設定した書き出しスケジュールに従って、新しいファイルがストレージの場所に格納されます。 Experience Platformは、選択された宛先の一部として指定されたストレージの場所にフォルダー構造を作成し、書き出されたファイルを格納します。 `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM` のパターンに従って、書き出しのたびに新しいフォルダーが作成されます。 デフォルトのファイル名はランダムに生成され、書き出されたファイルの名前は必ず一意になります。
 
 ## まとめ
 

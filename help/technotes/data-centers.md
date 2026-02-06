@@ -4,7 +4,7 @@ description: 世界中のCJA データセンターの場所をご覧ください
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
-source-git-commit: 3fd31ea85dc80a2d3070c8136a8a1984fe14c074
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 7%
@@ -17,7 +17,7 @@ Adobe Customer Journey Analyticsは、北米、欧州、APAC のパブリック�
 
 プロビジョニング時に、お客様はAdobe Experience Platform データが存在する地域を指定します。 Adobe Experience Platform Data Lake からCustomer Journey Analyticsに取り込まれたデータは、同じリージョンに保存されます。
 
-詳しくは、Adobe Experience Cloud ドキュメントの [&#x200B; 地域データ収集 &#x200B;](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/rdc) を参照してください。
+詳しくは、Adobe Experience Cloud ドキュメントの [ 地域データ収集 ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) を参照してください。
 
 
 ## データが格納されているデータセンターの表示
@@ -34,7 +34,7 @@ Adobe Customer Journey Analyticsは、北米、欧州、APAC のパブリック�
 
 1. 割り当てられたデータセンターのリージョンコードは、Experience Platformの右上に表示されます。
 
-   ![Experience Platform ホームページのデータセンター &#x200B;](assets/experience-platform-data-center.png)
+   ![Experience Platform ホームページのデータセンター ](assets/experience-platform-data-center.png)
 
 1. 次の表を使用して、地域コードが関連付けられている地域を把握します。
 
