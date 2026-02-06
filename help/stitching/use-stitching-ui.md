@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '962'
 ht-degree: 5%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 5%
 
 接続の一部として設定した 1 つ以上のイベントデータセットに対して、ステッチを有効にすることができます。 ライセンスを取得しているCustomer Journey Analytics パッケージによって、ステッチで有効にできるイベントデータセットの数が決まります。
 
-[&#x200B; 接続の作成 &#x200B;](/help/connections/create-connection.md#dataset-settings) または [&#x200B; 接続の編集 &#x200B;](/help/connections/create-connection.md) を行う際に、イベントデータセットの [&#x200B; データセット設定 &#x200B;](/help/connections/manage-connections.md#edit-a-connection) の一部としてステッチを有効にできます。
+[ 接続の作成 ](/help/connections/create-connection.md#dataset-settings) または [ 接続の編集 ](/help/connections/create-connection.md) を行う際に、イベントデータセットの [ データセット設定 ](/help/connections/manage-connections.md#edit-a-connection) の一部としてステッチを有効にできます。
 
 ## 前提条件
 
-指定するステッチ方法の前提条件（[&#x200B; フィールドベースのステッチ &#x200B;](fbs.md#prerequisites) または [&#x200B; グラフベースのステッチ &#x200B;](gbs.md#prerequisites)）を確認し、満たす必要があります。
+指定するステッチ方法の前提条件（[ フィールドベースのステッチ ](fbs.md#prerequisites) または [ グラフベースのステッチ ](gbs.md#prerequisites)）を確認し、満たす必要があります。
 
 
 ## プリフライトチェック
 
 前提条件を満たしている場合は、ID ステッチを有効にする前に、イベントデータセット内のデータに対してプリフライトチェックを実行してください。
 
-* 永続 ID または人物 ID に XDM スキーマフィールドを使用する場合は、イベントデータセットのスキーマで ID が適切にマークされていることを確認してください。 [ID 名前空間の概要を参照 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)。
+* 永続 ID または人物 ID に XDM スキーマフィールドを使用する場合は、イベントデータセットのスキーマで ID が適切にマークされていることを確認してください。 [ID 名前空間の概要を参照 ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)。
 * 永続 ID とユーザー ID の両方で ID カバレッジを確認します。
 
    * **永続 ID**
@@ -58,7 +58,7 @@ ht-degree: 5%
 
 
    * **ユーザー ID**
-      * グラフベースのステッチの場合は、選択した永続 ID 名前空間とユーザー ID 名前空間の ID 値をリンクするフラグメントが ID グラフに含まれていることを確認します。 [Experience Platform ID グラフビューアに移動してテストを実行し &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} 一部のテスト永続 ID 値でグラフをクエリできます。 これらの永続 ID 値がグラフのユーザー ID 値にリンクされているかどうかを確認してください。
+      * グラフベースのステッチの場合は、選択した永続 ID 名前空間とユーザー ID 名前空間の ID 値をリンクするフラグメントが ID グラフに含まれていることを確認します。 [Experience Platform ID グラフビューアに移動してテストを実行し ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} 一部のテスト永続 ID 値でグラフをクエリできます。 これらの永続 ID 値がグラフのユーザー ID 値にリンクされているかどうかを確認してください。
       * フィールドベースのステッチの場合、ユーザー ID フィールドが null でない 7 日間のデータをクエリし、データセット内のすべてのイベントについて 7 日間のデータのクエリで割ります。 この割合は、理想的には 5% を超える必要があります。
 
         検証に使用できるクエリの例：
@@ -91,11 +91,16 @@ ht-degree: 5%
 >id="connection_changeto_identitygraph"
 >title="ID グラフへの変更"
 >abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_personid"
+>title="ユーザー ID"
+>abstract="使用可能な ID からユーザー ID （ユーザーの一意の ID）を選択します。 グラフベースのステッチを使用する場合は、「**[!UICONTROL ID グラフ]**」を選択します。"
 
 ステッチを有効にするには、**[!UICONTROL データセットを追加]** または **[!UICONTROL データセットを編集]** ダイアログのイベントデータセット セクションで、次の手順を実行します。
 
-![ID ステッチを有効にする場合の ID ステッチオプション &#x200B;](assets/identity-stitching-ui.png)
+![ID ステッチを有効にする場合の ID ステッチオプション ](assets/identity-stitching-ui.png)
 
 1. 「**[!UICONTROL ID ステッチを有効にする]**」を選択します。
 
@@ -118,14 +123,14 @@ ht-degree: 5%
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
 
-   ユーザー ID に **[!UICONTROL ID グラフ]** を選択した場合（[&#x200B; グラフベースのステッチ &#x200B;](/help/stitching/gbs.md) を使用する場合）、名前空間を選択する必要があります。
+   ユーザー ID に **[!UICONTROL ID グラフ]** を選択した場合（[ グラフベースのステッチ ](/help/stitching/gbs.md) を使用する場合）、名前空間を選択する必要があります。
 
    >[!NOTE]
    >
    >ID グラフを使用する権限があることを確認します。
    >
 
-   その前に、**[!UICONTROL ID グラフに変更]** ダイアログが表示され、ステッチ用に ID グラフを使用する前に、[&#x200B; グラフベースの前提条件 &#x200B;](/help/stitching/gbs.md#prerequisites) の一部としてデータセットの ID グラフの設定が完了したことを確認します。 「**[!UICONTROL 続行]**」を選択して続行します。
+   その前に、**[!UICONTROL ID グラフに変更]** ダイアログが表示され、ステッチ用に ID グラフを使用する前に、[ グラフベースの前提条件 ](/help/stitching/gbs.md#prerequisites) の一部としてデータセットの ID グラフの設定が完了したことを確認します。 「**[!UICONTROL 続行]**」を選択して続行します。
 
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
@@ -136,13 +141,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->接続インターフェイスでステッチを有効にしているデータセットの場合、バックフィルステータスは、完了したバックフィルの数に対し、直ちに誤って ![&#x200B; ステータス グリーン &#x200B;](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _バックフィル完了]**&#x200B;として報告されます。 ステッチされたデータセットからのデータがバックフィルされているかどうかを確認するには、他の方法を使用します。
+>接続インターフェイスでステッチを有効にしているデータセットの場合、バックフィルステータスは、完了したバックフィルの数に対し、直ちに誤って ![ ステータス グリーン ](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _バックフィル完了]**として報告されます。 ステッチされたデータセットからのデータがバックフィルされているかどうかを確認するには、他の方法を使用します。
 >
 
 
 ## 制限事項
 
-[&#x200B; フィールドベースのステッチの制限 &#x200B;](/help/stitching/fbs.md#limitations) および [&#x200B; グラフベースのステッチの制限 &#x200B;](/help/stitching/gbs.md#limitations) に加えて、接続インターフェイスでステッチを有効にすると次の制限が適用されます。
+[ フィールドベースのステッチの制限 ](/help/stitching/fbs.md#limitations) および [ グラフベースのステッチの制限 ](/help/stitching/gbs.md#limitations) に加えて、接続インターフェイスでステッチを有効にすると次の制限が適用されます。
 
 * イベントデータセットは、1 つの接続の一部として 1 回だけステッチできます。 同じイベントデータセットを複数回定義し、インスタンスごとに別のステッチ設定を使用することはできません。 同じデータセットに異なるステッチ設定を適用する場合は、設定ごとに個別の接続を使用します。
 

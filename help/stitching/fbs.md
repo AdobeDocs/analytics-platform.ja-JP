@@ -5,23 +5,27 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 10%
+source-wordcount: '1797'
+ht-degree: 9%
 
 ---
 
 # フィールドベースのステッチ
 
-フィールドベースのステッチでは、イベントデータセットと、そのデータセットの永続 ID （cookie）および人物 ID を指定します。 フィールドベースのステッチでは、イベントデータセットに新しいステッチ ID 列が追加され、その特定の永続 ID の人物 ID を持つ行に基づいて、このステッチ ID が更新されます。 <br/>Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連する ID グラフへのアクセス権を持たない場合）、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合にも使用できます。
+フィールドベースのステッチでは、イベントデータセットと、そのデータセットの永続 ID （cookie）および人物 ID を指定します。 フィールドベースのステッチは、特定の永続 ID を持つ匿名イベントに対して、人物 ID 情報をCustomer Journey Analytics データ分析で使用できるようにします。  その情報は、その特定の永続 ID の人物 ID を持つ行から取得されます。
+
+イベントのユーザー ID 情報を取得できない場合は、その *未関連付け* イベントの代わりに永続 ID が使用されます。 その結果、ステッチが有効なデータセットを含む [ 接続 ](/help/data-views/data-views.md) に関連付けられた [ データビュー ](/help/connections/overview.md) では、人物 ID コンポーネントには、イベントレベルで人物 ID 値または永続 ID 値のいずれかが含まれます。
+
+Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連する ID グラフへのアクセス権がない場合）、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合にも使用できます。
 
 ![フィールドベースのステッチ](/help/stitching/assets/fbs.png)
 
 
 ## identityMap
 
-フィールドベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+フィールドベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
 
 - 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
    - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書順に並べ替えられ、最初の ID が選択されます。
@@ -96,9 +100,9 @@ ht-degree: 10%
 
 - **ステッチを再生**:*再生* 一意の識別子（ユーザー ID）に基づいてデータを再生します。 このステージでは、以前は不明だったデバイス（永続的な ID）からのヒットが（人物 ID に）結び付けられます。 再生は、**frequency** と **lookback window** の 2 つのパラメーターで決まります。 Adobeでは、次のパラメーターの組み合わせを使用できます。
    - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていないプロファイルは、サイトを訪問した日に認証を行う必要があります。
-   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
-   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
-   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
+   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[ オプション ](#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
 
 - **プライバシー**：プライバシー関連のリクエストを受信した場合、リクエストされた ID を削除する以外に、認証されていないイベントに対するその ID の関連付けを取り消す必要があります。
 
@@ -120,13 +124,13 @@ ht-degree: 10%
 
 *データが収集された日の状態：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | 結果の ID （ライブステッチの後） |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![&#x200B; 下矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ 下矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
@@ -138,7 +142,7 @@ ht-degree: 10%
 
 新しいデバイスでの未認証イベントと認証イベントは、両方とも別のユーザーとして（一時的に）カウントされます。認識されたデバイス上の未認証のイベントは、ライブステッチされます。
 
-アトリビューションが機能するのは、識別するカスタム変数がデバイスに関連付けられている場合です。 上記の例では、イベント 1、8、9、10 を除くすべてのイベントがライブステッチされます（すべてのイベントが `Bob` 識別子を使用します）。 ライブステッチは、イベント 4、6、12 のステッチ ID を「解決」します。
+アトリビューションが機能するのは、識別するカスタム変数がデバイスに関連付けられている場合です。 上記の例では、イベント 1、8、9、10 を除くすべてのイベントがライブステッチされます（すべてのイベントが `Bob` 識別子を使用します）。 ライブステッチは、イベント 4、6、12 の結果 ID を「解決」します。
 
 遅延データ（タイムスタンプが 24 時間以上経過したデータ）は、「ベストエフォート」ベースで処理され、最高の品質を得るために現在のデータのステッチが優先されます。
 
@@ -154,7 +158,7 @@ ht-degree: 10%
 
 *再生後の同じデータ：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | 結果の ID （ライブステッチの後） | 結果の ID （再生後） |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
@@ -178,7 +182,7 @@ ht-degree: 10%
 
 ### 手順 3：プライバシーリクエスト
 
-プライバシーリクエストを受け取ると、ステッチされた ID は、プライバシーリクエストのユーザー主体に対するすべてのレコードで削除されます。
+プライバシーリクエストを受け取ると、ステッチプロセスでユーザー ID の値に設定された識別情報が、すべてのレコードでプライバシーリクエストのユーザー主体の永続 ID の値に更新されます。
 
 +++ 詳細
 
@@ -186,13 +190,13 @@ ht-degree: 10%
 
 *Bob に対するプライバシーリクエスト後の同じデータ：*
 
-| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | ステッチ ID （ライブステッチ後） | ステッチ ID （再生後） | ユーザー ID | ステッチ ID （プライバシーリクエスト後） |
+| イベント | タイムスタンプ | 永続 ID （Cookie ID） | ユーザー ID | 結果の ID （ライブステッチの後） | 結果の ID （再生後） | ユーザー ID | 結果の ID （プライバシーリクエスト後） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![&#x200B; 上矢印 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 3 | 2023-05-12 12:03 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ 上矢印 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 3 | 2023-05-12 12:03 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 2023-05-12 12:05 | `246` | ボブ ![&#x200B; 矢の右 &#x200B;](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 5 | 2023-05-12 12:05 | `246` | ボブ ![ 矢の右 ](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
@@ -214,7 +218,7 @@ ht-degree: 10%
    - **ユーザー ID**：一部の行でのみ使用できる識別子。 例えば、プロファイルが認証されると、ハッシュ化されたユーザー名またはメールアドレスなどです。 実質的に任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の ID を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
