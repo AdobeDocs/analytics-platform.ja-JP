@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1094'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,8 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 * データビュー内のコンテナの名前を変更し、名前を変更したコンテナをそのデータビューに基づくすべての Workspace プロジェクトに表示できます。
 
+* データビュー用のData Insights Agentは、有効または無効にすることができます。
+
 ## データビューの前提条件 {#prerequisites}
 
 * データビューを作成する前に、[Experience Platform データセットへの接続を 1 つ以上設定する必要があります](/help/connections/create-connection.md)。
@@ -84,9 +86,10 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 ## データビューの削除 {#delete}
 
-[!UICONTROL Customer Journey Analytics] でデータビューを削除すると、この削除されたデータビューに依存する [!UICONTROL Workspace] プロジェクトが動作しなくなることを示すエラーメッセージが表示されます。
+[2}Customer Journey Analytics} で ](/help/data-views/manage-dataviews.md#delete-data-views) データビューを削除 [!UICONTROL  すると、この削除されたデータビューに依存する ]Workspace[!UICONTROL  プロジェクトが機能しなくなったことを示すエラーメッセージが表示されます。]
 
 ## 次の手順
 
 * [データビューの作成](/help/data-views/create-dataview.md)
-* [データビューの使用例](/help/use-cases/data-views/data-views-usecases.md)
+* [データビューの管理](/help/data-views/manage-dataviews.md)
+* [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)

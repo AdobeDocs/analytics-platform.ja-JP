@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1365'
 ht-degree: 96%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 96%
    + [2021年リリース](../release-notes/2021.md)
    + [2020年リリース](../release-notes/2020.md)
    + [機能リリース戦略](../release-notes/releases.md)
-   + [ドキュメントの更新](../release-notes/doc-changes.md)
+   + [ドキュメントのアップデート](../release-notes/doc-changes.md)
 
 + はじめに {#cja-overview}
    + Customer Journey Analytics {#cja-b2c-overview}
@@ -117,7 +117,7 @@ ht-degree: 96%
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
-         + [モバイル SDK](../data-ingestion/aepmobilesdk.md)
+         + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server API](../data-ingestion/serverapi.md)
       + [バッチデータ](../data-ingestion/batch.md)
       + [ストリーミングデータ](../data-ingestion/streaming.md)
@@ -147,6 +147,7 @@ ht-degree: 96%
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
+   + [データビューの管理](/help/data-views/manage-dataviews.md)
    + [セッション設定](../data-views/session-settings.md)
    + コンポーネント設定 {#component-settings}
       + [コンポーネント設定の概要](../data-views/component-settings/overview.md)
@@ -176,7 +177,7 @@ ht-degree: 96%
       + [データ設定](../tools/product-usage/data-settings.md)
       + [オプトアウト設定](../tools/product-usage/opt-out-settings.md)
 
-+ Workspace プロジェクト {#cja-workspace}
++ ワークスペースプロジェクト {#cja-workspace}
    + [Analysis Workspace の概要](../analysis-workspace/home.md)
    + [基本分析の実行](../analysis-workspace/perform-basic-analysis.md)
    + [アドバンス分析の実行](../analysis-workspace/perform-adv-analysis.md)
@@ -269,7 +270,7 @@ ht-degree: 96%
    + 書き出し {#export}
       + [概要](../analysis-workspace/export/export-project-overview.md)
       + [ダウンロード](../analysis-workspace/export/download-send.md)
-      + [送信とスケジュール](../analysis-workspace/export/t-schedule-report.md)
+      + [送信およびスケジュール](../analysis-workspace/export/t-schedule-report.md)
       + [クラウドへの書き出し](../analysis-workspace/export/export-cloud.md)
    + アトリビューション {#attribution}
       + [アトリビューションの概要](../analysis-workspace/attribution/overview.md)
@@ -343,7 +344,7 @@ ht-degree: 96%
    + オーディエンスパブリッシング {#audiences}
       + [オーディエンス公開の概要](../components/audiences/audiences-overview.md)
       + [オーディエンスの作成と公開](../components/audiences/publish.md)
-      + [公開済みオーディエンスの管理](../components/audiences/manage.md)
+      + [公開されたオーディエンスの管理](../components/audiences/manage.md)
    + ディメンション {#dimensions}
       + [概要](../components/dimensions/overview.md)
       + [ディメンションのプレビュー](../components/dimensions/view-dimensions.md)
@@ -354,7 +355,7 @@ ht-degree: 96%
    + セグメント {#segments}
       + [概要](/help/components/segments/seg-overview.md)
       + [セグメントの作成](/help/components/segments/seg-create.md)
-      + [セグメントの作成](/help/components/segments/seg-builder.md)
+      + [セグメントの構築](/help/components/segments/seg-builder.md)
       + [クイックセグメント](/help/components/segments/seg-quick.md)
       + [順次セグメント](/help/components/segments/seg-sequential-build.md)
       + [セグメントの共有](/help/components/segments/seg-share.md)
@@ -428,8 +429,8 @@ ht-degree: 96%
    + [セグメントの操作](../report-builder/work-with-filters.md)
    + [ディメンションのフィルタリング](../report-builder/filter-dimensions.md)
    + [データブロックの管理](../report-builder/manage-reportbuilder.md)
-   + [メールのワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
-   + [クラウド書き出しのワークブックのスケジュール設定](../report-builder/report-builder-export.md)
+   + [メール用ワークブックのスケジュール設定](../report-builder/schedule-reportbuilder.md)
+   + [クラウド書き出し用ワークブックのスケジュール設定](../report-builder/report-builder-export.md)
    + [ワークブックスケジュールの管理](/help/report-builder/manage-schedules-reportbuilder.md)
    + [制限付きラベル](../report-builder/restricted-labels.md)
    + [Report Builder の設定](../report-builder/report-builder-settings.md)

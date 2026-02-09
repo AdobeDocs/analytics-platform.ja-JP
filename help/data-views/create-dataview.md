@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
+source-git-commit: ade6fcd95626d9380153b5089d8f438332dedf8d
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 76%
+source-wordcount: '2790'
+ht-degree: 97%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 76%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データビューの作成または編集](https://video.tv.adobe.com/v/345558/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データビューの作成または編集](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 
 データビューを作成または編集するには：
 
-1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、必要に応じて **[!UICONTROL データ管理]** から **[!UICONTROL データビュー]** を選択します。
+1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、上部のメニューにある&#x200B;**[!UICONTROL データ管理]**&#x200B;から、オプションで「**[!UICONTROL データビュー]**」を選択します。
 1. データビューを作成するには、「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
 
 
@@ -68,7 +68,7 @@ ht-degree: 76%
 | 設定 | 説明 |
 | --- | --- |
 | **[!UICONTROL 接続]** | このフィールドは、データビューを、1 つ以上の Adobe Experience Platform データセットを含む、以前確立した接続にリンクします。 |
-| **[!UICONTROL 名前]** | 必須。データビューの名前。この値は、Analysis Workspaceの右上のドロップダウンメニューに表示されます。 |
+| **[!UICONTROL 名前]** | 必須。データビューの名前。この値は、Analysis Workspace の右上のドロップダウンメニューに表示されます。 |
 | **[!UICONTROL 外部 ID]** | 必須。ビジネスインテリジェンスツールなどの外部ソースで使用できる、データビューの名前。デフォルトは `unspecified` です。外部 ID を指定しない場合、名前はデータビューの名前から生成され、スペースはアンダースコアに置き換えられます。 |
 | **[!UICONTROL 説明]** | （オプション。アドビは、データビューの存在理由や対象者をユーザーが理解できるよう、詳細な説明を使用することを推奨します。 |
 
@@ -90,13 +90,13 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 | 設定 | 説明 |
 | --- | --- |
-| [!UICONTROL **Adobe Journey Optimizer のデフォルトのデータビューとして設定**] | この設定オプションは、Journey Optimizer と Customer Journey Analytics 全体のレポートを標準化します。また、Customer Journey Analytics で Adobe Journey Optimizer データのアドバンス分析を実行することもできます（Journey Optimizer で![開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **CJA で分析**]&#x200B;を選択）。<p>このタイプの分析を実行するには、Journey Optimizer で Customer Journey Analytics データビューにアクセスする必要があります。<p>このオプションを有効にすると、サンドボックスの Journey Optimizer レポートで使用されるデフォルトのデータビューになります。</p><p>この設定オプションでは、自動的に次の操作を行います。</p><ul><li>Journey Optimizer で使用するために、Customer Journey Analytics の関連接続で必要なすべての Journey Optimizer データセットを設定する。</li><li>データビューに Journey Optimizer の指標とディメンションのセットを作成する（派生フィールドと計算指標を含む）。これらすべての指標とディメンションにコンテキストラベルが自動的に設定されます。</li><li>このデータビューに関連付けられている接続で、「**[!UICONTROL CJAで使用]** オプションが自動的に有効になります。 （このオプションについて詳しくは、[Customer Journey AnalyticsでJourney Optimizer接続を使用する &#x200B;](/help/connections/manage-connections.md) を参照してください。<p>この設定を有効にした後に手動で無効にすると、接続と関連するすべてのデータビューがデフォルトの状態にリセットされます。 その結果、レポートのデータが変更される可能性があります。</p></li></ul><p><p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>デフォルトのデータビューは後で変更できますが、変更すると Journey Optimizer レポートデータが変更される可能性があります。このオプションを有効にした後に無効にすることを選択した場合は、新しいデフォルトのデータビューを選択するように求められます。</li><li>Customer Journey Analytics データビューでデータセット、ディメンションまたは指標を既に手動でカスタマイズしている場合は、この設定オプションを有効にしても、手動カスタマイズはそのまま保持されます。このオプションでは、Journey Optimizer と Customer Journey Analytics 全体のレポートをさらに標準化する追加のカスタマイズを行います。また、このオプションを有効にした後に、手動でカスタマイズすることもできます。</li><li>このオプションを選択した際、データビューに関連付けられた接続は削除できません。</li></ul>詳しくは、[Adobe Journey Optimizer と Adobe Customer Journey Analytics の統合](/help/integrations/ajo.md)を参照してください。 |
+| [!UICONTROL **Adobe Journey Optimizer のデフォルトのデータビューとして設定**] | この設定オプションは、Journey Optimizer と Customer Journey Analytics 全体のレポートを標準化します。また、Customer Journey Analytics で Adobe Journey Optimizer データのアドバンス分析を実行することもできます（Journey Optimizer で![開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg)[!UICONTROL **CJA で分析**]&#x200B;を選択）。<p>このタイプの分析を実行するには、Journey Optimizer で Customer Journey Analytics データビューにアクセスする必要があります。<p>このオプションを有効にすると、サンドボックスの Journey Optimizer レポートで使用されるデフォルトのデータビューになります。</p><p>この設定オプションでは、自動的に次の操作を行います。</p><ul><li>Journey Optimizer で使用するために、Customer Journey Analytics の関連接続で必要なすべての Journey Optimizer データセットを設定する。</li><li>データビューに Journey Optimizer の指標とディメンションのセットを作成する（派生フィールドと計算指標を含む）。これらすべての指標とディメンションにコンテキストラベルが自動的に設定されます。</li><li>このデータビューに関連付けられている接続で、「**[!UICONTROL CJA で使用]**」オプションが自動的に有効になります（このオプションについて詳しくは、[Customer Journey Analytics での Journey Optimizer 接続の使用](/help/connections/manage-connections.md)を参照してください）。<p>この設定を有効にした後に手動で無効にすると、接続および関連するデータビューはデフォルトの状態にリセットされます。これにより、レポートのデータが変更される場合があります。</p></li></ul><p><p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>デフォルトのデータビューは後で変更できますが、変更すると Journey Optimizer レポートデータが変更される可能性があります。このオプションを有効にした後に無効にすることを選択した場合は、新しいデフォルトのデータビューを選択するように求められます。</li><li>Customer Journey Analytics データビューでデータセット、ディメンションまたは指標を既に手動でカスタマイズしている場合は、この設定オプションを有効にしても、手動カスタマイズはそのまま保持されます。このオプションでは、Journey Optimizer と Customer Journey Analytics 全体のレポートをさらに標準化する追加のカスタマイズを行います。また、このオプションを有効にした後に、手動でカスタマイズすることもできます。</li><li>このオプションを選択した際、データビューに関連付けられた接続は削除できません。</li></ul>詳しくは、[Adobe Journey Optimizer と Adobe Customer Journey Analytics の統合](/help/integrations/ajo.md)を参照してください。 |
 
 {style="table-layout:auto"}
 
 ### コンテナ
 
-データビューのコンテナの名前を指定します。コンテナ名は、[&#x200B; セグメント &#x200B;](/help/components/segments/seg-overview.md#containers) でよく使用されます。
+データビューのコンテナの名前を指定します。コンテナ名は、[セグメント](/help/components/segments/seg-overview.md#containers)でよく使用されます。
 
 | 設定 | 説明 |
 | --- | --- |
@@ -110,6 +110,11 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 {style="table-layout:auto"}
 
+### AI 設定
+
+**[!UICONTROL Data Insights Agentで有効にする]** を選択して、[Data Insights Agent](/help/data-analysis-ai.md) のデータビューを有効にします。 Data Insights Agentは、Customer Journey Analyticsの AI アシスタントからアクセスできるジェネレーティブ AI コンバージョンエージェントです。 テキストプロンプトを使用してデータをすばやく分析するのに役立ちます。エージェントは、データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
+
+
 ### カレンダー
 
 データビューで使用するカレンダーの形式を示します。同じ [接続](/help/connections/create-connection.md) に基づいて複数のデータビューを作成し、異なるカレンダータイプやタイムゾーンを設定できます。これらのデータビューを使用すると、異なるカレンダータイプを使用するチームが、同じ基データを使用して、それぞれのニーズに対応できます。
@@ -120,7 +125,7 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 | [!UICONTROL **カレンダータイプ**] | 月の週をグループ化する方法を指定します。<br>**西暦：** 標準のカレンダー形式です。四半期は月ごとにグループ化されます。<br>**4-5-4 小売：** 標準化された 4-5-4 小売カレンダー。四半期の最初の月と最後の月は 4 週間、四半期の 2 番目の月は 5 週間になります。<br>**カスタム (4-5-4)：** 4-5-4 カレンダーと同様に、年の最初の日と、「追加」週を含む年を選択できる点が異なります。<br>**カスタム (4-4-5)：**&#x200B;各四半期の最初の月と 2 番目の月は 4 週間、各四半期の最後の週は 5 週間になります。<br>**カスタム (5-4-4)：** 各四半期の最初の月は 5 週で、2 番目と 3 番目の月は 4 週で構成されます。 |
 | [!UICONTROL **年の最初の月**] と [!UICONTROL **週の最初の曜日**] | 西暦カレンダータイプに対して表示されます。暦年の開始月と、各週の開始日を指定します。 |
 | [!UICONTROL **現在の年の最初の日**] | カスタムのカレンダータイプに対して表示されます。現在の年の開始日を指定します。カレンダーでは、この値に基づいて各週の最初の曜日が自動的に書式設定されます。 |
-| [!UICONTROL **「余分な」週が発生する年**] | ほとんどの 364 日間カレンダー（各 7 日からなる 52 週）では、毎年、余分な 1 週間が加算されるまで残りの日数が蓄積されます。この追加の週は、その年の最後の月に追加されます。余分な週を追加する年を指定します。<br><br/>**余分な週とうるう年**<br/> カスタム **[!UICONTROL カレンダータイプ]** （**[!UICONTROL カスタム（4-5-4）]**、**[!UICONTROL カスタム（4-4-5）]** または **[!UICONTROL カスタム（5-4-4）]**）を選択すると、残りの日は、1 週間を追加するまでの各年に累積されます（7 日）。 その余分な週は、「余分な」週が発生する年 **[!UICONTROL で選択した年に追加され]** す。<br/><br/> うるう年は、「余分な **[!UICONTROL 週が発生する年]** に意図的に表示されていません。 ただし、うるう年には 53 週間を含めることができます。 うるう年に 53 週を強制的に含めるには、「余分な」週が発生する年 **[!UICONTROL からうるう年以外の年を選択し]** 目標うるう年に対して累積日付ドリフトの合計が最大 7 日になるようにします。 例：2024 年に 53 週にするには、「**[!UICONTROL 2019]**」を選択します。 2019 年から 2024 年の間に、日付ドリフトの合計は 7 日（2020 年（+2）、2021 年（+1）、2022 年（+1）、2023 年（+1）および 2024 年（+2））となり、2024 年で 53 週目を迎えます。<br/><br/> 現在の年の最初の日 **[!UICONTROL の選択は、余分な週が到着する場所に影響します。]** カレンダーのプレビューを使用して設定を確認します。 |
+| [!UICONTROL **「余分な」週が発生する年**] | ほとんどの 364 日間カレンダー（各 7 日からなる 52 週）では、毎年、余分な 1 週間が加算されるまで残りの日数が蓄積されます。この追加の週は、その年の最後の月に追加されます。余分な週を追加する年を指定します。<br><br/>**余分な週とうるう年**<br/>&#x200B;カスタム&#x200B;**[!UICONTROL カレンダータイプ]**（**[!UICONTROL カスタム（4-5-4）]**、**[!UICONTROL カスタム（4-4-5）]**&#x200B;または&#x200B;**[!UICONTROL カスタム（5-4-4）]**）を選択した場合、毎年、余分な 1 週間（7 日間）が加算されるまで残りの日数が蓄積されます。この余分な週は、**[!UICONTROL 「余分な」週が発生する年]**&#x200B;で選択した年に追加されます。<br/><br/>うるう年は、**[!UICONTROL 「余分な」週が発生する年]**&#x200B;には意図的に表示されません。ただし、うるう年でも 53 週間が含まれる場合があります。うるう年に 53 週間が含まれるように適用するには、**[!UICONTROL 「余分な」週が発生する年]**&#x200B;からうるう年以外の年を選択し、目標のうるう年に対して累積日付ドリフトが最大 7 日加算されるようにします。 例：2024年に 53 週間ある場合は、「**[!UICONTROL 2019]**」を選択します。2019年から2024年まで、日付ドリフトは合計 7 日間（2020年（+2）、2021年（+1）、2022年（+1）、2023年（+1）、2024年（+2））となり、2024年には 53 週目となります。<br/><br/>**[!UICONTROL 現在の年の最初の日]**&#x200B;の選択は、余分な週が配置される場所に影響を与えます。カレンダーのプレビューを使用して設定を確認します。 |
 
 {style="table-layout:auto"}
 
@@ -136,13 +141,13 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
    ![「コンポーネント」タブ](assets/dataview-components.png)
 
-   データセットを含む「[!UICONTROL 接続]」が左上に、その「[!UICONTROL スキーマフィールド]」が下に表示されます。既に含まれているコンポーネントは、すべてのデータビュー（イベント、人物、セッション指標、分、四半期、週のディメンションなど）に必要な（システム生成）標準コンポーネントです。Adobeは、「**[!UICONTROL データを含む]**」というフィルターもデフォルトで適用します **[!UICONTROL 非推奨ではありません]**。これにより、非推奨でない、データを含むスキーマフィールドのみが表示されます。
+   データセットを含む「[!UICONTROL 接続]」が左上に、その「[!UICONTROL スキーマフィールド]」が下に表示されます。既に含まれているコンポーネントは、すべてのデータビュー（イベント、人物、セッション指標、分、四半期、週のディメンションなど）に必要な（システム生成）標準コンポーネントです。アドビでは、デフォルトで&#x200B;**[!UICONTROL データを含む]**&#x200B;フィルターと&#x200B;**[!UICONTROL 非推奨ではない]**&#x200B;フィルターを適用するので、データを含み、非推奨ではないスキーマフィールドのみが表示されます。
 
-1. ![&#x200B; 検索アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)**[!UICONTROL スキーマフィールドを検索]** または ![&#x200B; フォルダー &#x200B;](/help/assets/icons/Folder.svg) **[!UICONTROL イベントデータセット]**、![&#x200B; フォルダー &#x200B;](/help/assets/icons/Folder.svg) **[!UICONTROL ルックアップデータセット]** などのデータセットコレクションに移動してフィールドを検索します。 イベントデータセットの場合、![&#x200B; フォルダー &#x200B;](/help/assets/icons/Folder.svg) **[!UICONTROL XDM フィールド]** と ![&#x200B; フォルダー &#x200B;](/help/assets/icons/Folder.svg) **[!UICONTROL アドホックフィールドとリレーショナルフィールド]** の個別のコレクションを使用できます。<br/>または、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **派生フィールドを作成**&#x200B;を使用して派生フィールドを作成することもできます。詳しくは、[派生フィールド](./derived-fields/derived-fields.md)を参照してください。
+1. ![検索アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 「検索スキーマ」フィールド]**&#x200B;を使用してスキーマフィールドを検索するか、![フォルダー](/help/assets/icons/Folder.svg) **[!UICONTROL イベントデータセット]** または ![フォルダー](/help/assets/icons/Folder.svg) **[!UICONTROL ルックアップデータセット]** などのデータセットコレクションに移動してフィールドを検索します。イベントデータセットの場合、![フォルダー](/help/assets/icons/Folder.svg) **[!UICONTROL XDM フィールド]** と ![フォルダー](/help/assets/icons/Folder.svg) **[!UICONTROL アドホックおよびリレーショナルフィールド]**&#x200B;の個別のコレクションを使用できます。<br/>または、![データアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **派生フィールドを作成**&#x200B;を使用して派生フィールドを作成することもできます。詳しくは、[派生フィールド](./derived-fields/derived-fields.md)を参照してください。
 
-1. 特定のスキーマフィールドが見つかったら、または派生フィールドを定義したら、![&#x200B; ハンドルアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg)**[!UICONTROL ページ名]** などのフィールドを左側のパネルから **[!UICONTROL 含まれるコンポーネント]** の下の **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** セクションにドラッグします。
-同じスキーマフィールドをディメンションまたは指標セクションに複数回ドラッグし、同じディメンションまたは指標を異なる方法で設定できます。例えば、「pageName」フィールドから、「`Product Pages`」というディメンションを作成し、右側の別の「コンポーネント設定 `Error pages` を使用して、「[」というディメンションを作成 &#x200B;](component-settings/overview.md) きます。
-スキーマフィールドフォルダーを左パネルからドラッグすると、フォルダー内のフィールドが適切なセクションに自動的に並べ替えられます。 文字列フィールドは [!UICONTROL ディメンション] セクションで終わり、数値スキーマタイプは [!UICONTROL 指標] セクションで終わります。「**[!UICONTROL すべてを追加]**」をクリックして、すべてのスキーマフィールドをそれぞれのセクションに追加することもできます。
+1. 特定のスキーマフィールドを見つけた場合や、派生フィールドを定義した場合は、![ハンドルアイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL ページ名]**&#x200B;などのフィールドを左側のパネルから&#x200B;**[!UICONTROL 含まれるコンポーネント]**&#x200B;の下にある「**[!UICONTROL 指標]**」セクションまたは「**[!UICONTROL ディメンション]**」セクションにドラッグします。
+同じスキーマフィールドをディメンションまたは指標セクションに複数回ドラッグし、同じディメンションまたは指標を異なる方法で設定できます。例えば、右側の別の[コンポーネント設定](component-settings/overview.md)を使用して、pageName フィールドから `Product Pages` というタイトルのディメンションと、`Error pages` というタイトルの別のディメンションを作成できます。
+スキーマフィールドフォルダーを左側のパネルからドラッグすると、フォルダー内のフィールドは適切なセクションに自動的に並べ替えられます。文字列フィールドは [!UICONTROL ディメンション] セクションで終わり、数値スキーマタイプは [!UICONTROL 指標] セクションで終わります。「**[!UICONTROL すべてを追加]**」をクリックして、すべてのスキーマフィールドをそれぞれのセクションに追加することもできます。
 
 1. コンポーネントを選択します。右側に設定が表示されます。
 
@@ -223,19 +228,19 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview" text="データ使用状況ラベルの概要"
 
 
-**[!UICONTROL 含まれるコンポーネント]** には、データビュー用に設定した **[!UICONTROL 指標]** および **[!UICONTROL ディメンション]** のリストが含まれています。
+**[!UICONTROL 含まれるコンポーネント]**&#x200B;には、データビュー用に設定する&#x200B;**[!UICONTROL 指標]**&#x200B;と&#x200B;**[!UICONTROL ディメンション]**&#x200B;のリストが含まれています。
 
-* コンポーネントを検索するには、![&#x200B; 検索 &#x200B;](/help/assets/icons/Search.svg)**[!UICONTROL _コンポーネントを検索_]** を使用します。
-* リストに含まれるコンポーネントをフィルタリングするには、「![&#x200B; フィルター &#x200B;](/help/assets/icons/Filter.svg)」を選択します。
+* コンポーネントを検索するには、![検索](/help/assets/icons/Search.svg) **[!UICONTROL _コンポーネントを検索_]** を使用します。
+* リストに含まれるコンポーネントをフィルタリングするには、![フィルター](/help/assets/icons/Filter.svg) を選択します。
 
-  ![Includec コンポーネントフィルターダイアログ &#x200B;](assets/dataview_includedcomponents_filter.png)
+  ![含まれるコンポーネントフィルターダイアログ](assets/dataview_includedcomponents_filter.png)
 
-  **[!UICONTROL フィールドのフィルター条件]** ダイアログでは、次のカテゴリでフィルターできます。
+  **[!UICONTROL 次の条件でフィールドをフィルター]**&#x200B;ダイアログでは、次のカテゴリでフィルタリングできます。
 
-   * **[!UICONTROL データタイプ]** - [!UICONTROL String]、[!UICONTROL Integer]、[!UICONTROL Short]、[!UICONTROL Boolean]、[!UICONTROL Double]、[!UICONTROL Byte]、[!UICONTROL Long]、[!UICONTROL Date]、[!UICONTROL Date-time] の 1 つ以上のデータタイプを選択できます。
+   * **[!UICONTROL データタイプ]** - [!UICONTROL 文字列]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL ブール値]、[!UICONTROL 倍精度]、[!UICONTROL バイト]、[!UICONTROL 長整数]、[!UICONTROL 日付]、[!UICONTROL 日時]から 1 つ以上のデータタイプを選択できます。
    * **[!UICONTROL データセット]** - 1 つ以上のデータセットを選択します。
-   * **[!UICONTROL データガバナンス]**:[!UICONTROL &#x200B; カスタムラベル &#x200B;]、[!UICONTROL &#x200B; 契約ラベル &#x200B;]、[!UICONTROL ID ラベル &#x200B;]、[!UICONTROL &#x200B; 機密ラベル &#x200B;]、P[!UICONTROL artner エコシステム &#x200B;] または [!UICONTROL &#x200B; ポリシー &#x200B;] サブカテゴリから 1 つ以上のラベルを選択します。
-   * **[!UICONTROL その他]** - 1 つ以上のオプション [!UICONTROL &#x200B; データを含む &#x200B;]、[!UICONTROL ID である &#x200B;]、[!UICONTROL &#x200B; 非推奨でない &#x200B;] を選択します。
+   * **[!UICONTROL データガバナンス]**：[!UICONTROL カスタムラベル]、[!UICONTROL 契約ラベル]、[!UICONTROL ID ラベル]、[!UICONTROL 機密ラベル]、[!UICONTROL パートナーエコシステム]、[!UICONTROL ポリシー]のサブカテゴリから 1 つ以上のラベルを選択します。
+   * **[!UICONTROL その他]** - 「[!UICONTROL データを含む]」、「[!UICONTROL ID である]」、「[!UICONTROL 非推奨ではない]」のオプションを 1 つ以上選択します。
 
   「**[!UICONTROL 適用]**」を選択して、フィルターを適用します。
 
@@ -245,16 +250,16 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 1. 「**[!UICONTROL 設定]**」タブを選択します。
 
-   ![データ表示設定](assets/dataview-settings.png)
+   ![データビュー設定](assets/dataview-settings.png)
 
-1. データビュー全体に適用するセグメントを設定します。 以下の [&#x200B; 設定（セグメント） &#x200B;](#settings-filters) を参照してください。
+1. データビュー全体に適用するセグメントを設定します。以下の[設定（セグメント）](#settings-filters)を参照してください。
 1. セッションのタイムアウトと指標を設定します。 以下の[セッション設定](#session-settings)を参照してください。
 
 1. 「**[!UICONTROL 保存して続行]**」を選択して、新規または既存のデータビューの設定を続行します。「**[!UICONTROL 保存]**」を選択して、既存のデータビューの設定を保存します。
 
 ### 設定（セグメント） {#segment-settings}
 
-データビュー全体に適用するセグメントを追加できます。 このセグメントは、Workspaceで実行するすべてのレポートに適用されます。 左側のパネルのコンポーネントから「**[!UICONTROL セグメントを追加]**」フィールドにセグメントをドラッグします。
+データビュー全体に適用するセグメントを追加できます。このセグメントは、Workspace で実行するすべてのレポートに適用されます。左側のパネルのコンポーネントから「**[!UICONTROL セグメントを追加]**」フィールドにセグメントをドラッグします。
 
 ### セッション設定
 
