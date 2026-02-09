@@ -52,7 +52,7 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights Agent の使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
+* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
 
   権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
@@ -82,7 +82,7 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
   >* IMS 組織ごとに最大 50 個のデータビューを有効にできます。特定の組織のすべての製品プロファイルで 50 個を超えるデータビューを有効にした場合、Data Insights Agent は最もよく使用されている 50 個のデータビューを使用します。
   >* Data Insights Agent は、有効にしたその日のうちに、含まれるデータビューを参照できます。
 
-  Data Insights Agentのデータビューを有効にするには、[ データビューの AI 設定 ](/help/data-views/create-dataview.md#ai-settings) を参照してください。
+  Data Insights Agentのデータビューを有効にするには、[&#x200B; データビューの AI 設定 &#x200B;](/help/data-views/create-dataview.md#ai-settings) を参照してください。
 
   データビューのData Insights Agent列の [info](/help/data-views/manage-dataviews.md#manage-data-views) を使用すると、IMS 組織のData Insights Agentで有効になっているデータビューの数を確認できます。
 
@@ -143,7 +143,7 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 

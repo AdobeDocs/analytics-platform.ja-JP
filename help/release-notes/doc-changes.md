@@ -20,10 +20,10 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年2月** | |
-| データビューの管理 | [ データビューの管理 ](/help/data-views/manage-dataviews.md) 方法に関する詳細情報を追加しました。 |
-| ステッチ | [ 接続 UI でのステッチ ](/help/stitching/use-stitching-ui.md) 機能の結果である変更を反映するように、ステッチドキュメントを更新しました。 |
+| データビューの管理 | [&#x200B; データビューの管理 &#x200B;](/help/data-views/manage-dataviews.md) 方法に関する詳細情報を追加しました。 |
+| ステッチ | [&#x200B; 接続 UI でのステッチ &#x200B;](/help/stitching/use-stitching-ui.md) 機能の結果である変更を反映するように、ステッチドキュメントを更新しました。 |
 | **2026年1月** | |
-| スキーマを設計 | [Customer Journey Analyticsで使用するスキーマを構築する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) ための実質的な情報とコンテキストが追加されました。 |
+| スキーマを設計 | [Customer Journey Analyticsで使用するスキーマを構築する &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) ための実質的な情報とコンテキストが追加されました。 |
 
 
 ## 2025年
@@ -31,7 +31,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025年12月** | |
-| サンドボックスの変更の影響 | サンドボックスの削除またはリセットの影響を「削除とリセットの影響 [ に追加し ](/help/technotes/deletion.md) した。 |
+| サンドボックスの変更の影響 | サンドボックスの削除またはリセットの影響を「削除とリセットの影響 [&#x200B; に追加し &#x200B;](/help/technotes/deletion.md) した。 |
 | **2025年11月** | |
 | 1 件の接続の 1 日あたりの行のガードレール | 1 件の接続の 1 日あたりの最大平均行数についての[データ転送制限のガードレール情報](/help/technotes/guardrails.md)を追加しました。 |
 | **2025年10月** | |
