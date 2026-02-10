@@ -1,14 +1,14 @@
 ---
 title: データビューの概要
-description: データビューは、指標、ディメンション、セッションなど、Customer Journey Analytics 接続内のデータの要素を解釈する方法を指定します。
+description: 指標、ディメンション、セッションなど、Customer Journey Analytics接続のデータの要素をデータビューで解釈する方法を指定する方法について説明します。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 95%
+source-wordcount: '1096'
+ht-degree: 93%
 
 ---
 
@@ -86,7 +86,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 ## データビューの削除 {#delete}
 
-[2&rbrace;Customer Journey Analytics&rbrace; で &#x200B;](/help/data-views/manage-dataviews.md#delete-data-views) データビューを削除 [!UICONTROL &#x200B; すると、この削除されたデータビューに依存する &#x200B;]Workspace[!UICONTROL &#x200B; プロジェクトが機能しなくなったことを示すエラーメッセージが表示されます。]
+[2}Customer Journey Analytics} で ](/help/data-views/manage-dataviews.md#delete-data-views) データビューを削除 [!UICONTROL  すると、この削除されたデータビューに依存する ]Workspace[!UICONTROL  プロジェクトが機能しなくなったことを示すエラーメッセージが表示されます。]
 
 ## 次の手順
 

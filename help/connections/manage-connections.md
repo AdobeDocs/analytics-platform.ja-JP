@@ -1,15 +1,15 @@
 ---
-title: Customer Journey Analytics での接続の管理方法
-description: Customer Journey Analytics（Customer Journey Analytics）で Experience Platform データセットへの接続を管理する方法について説明します。
+title: Customer Journey Analyticsでの接続の管理
+description: Customer Journey Analytics（Customer Journey Analytics）でExperience Platform データセットへの接続を管理する方法を説明します。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 98%
+source-wordcount: '4956'
+ht-degree: 97%
 
 ---
 
@@ -44,26 +44,9 @@ ht-degree: 98%
 
 **[!UICONTROL リスト]**&#x200B;インターフェイスは、接続のデフォルトのインターフェイスです。選択されていない場合は、「**[!UICONTROL リスト]**」タブを選択してインターフェイスにアクセスします。
 
+**[!UICONTROL リスト]**&#x200B;インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
+
 ![リストビュー](assets/list-view.png)
-
-[!UICONTROL リスト]インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
-
-### 接続の検索
-
-検索 ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックスを使用して、接続をすばやく検索できます。
-
-### 接続のリストへのフィルターの適用
-
-接続のリストにフィルターを適用するには、フィルターアイコンを選択し、次のフィルターオプションから選択します。
-
-| フィルターオプション | 説明 |
-|---------|----------|
-| **[!UICONTROL データセット]** | 選択したデータセットに関連付けられている接続のみが表示されます。 |
-| **[!UICONTROL 所有者]** | 選択した人物が所有する接続のみが表示されます。 |
-| **[!UICONTROL サンドボックス]** | 選択したサンドボックスで使用可能な接続のみが表示されます。 |
-| **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
-
-### 使用可能な列
 
 テーブルでは、次の列またはアイコンを使用できます。
 
@@ -85,6 +68,25 @@ ht-degree: 98%
 | **[!UICONTROL CJA で使用]** | Customer Journey Analytics での使用に対して接続が有効になっているかどうかを示します。 |
 
 テーブルに表示する列を設定するには、![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択します。**[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、「**[!UICONTROL 適用]**」を選択します。
+
+### 接続を検索
+
+「![ 検索 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックスを使用して、接続をすばやく検索できます。
+
+### 接続をフィルター
+
+接続のリストにフィルターを適用するには、「![ フィルター ](/help/assets/icons/Filter.svg)」を選択します。 次に、次のフィルターオプションから選択します。
+
+| フィルターオプション | 説明 |
+|---------|----------|
+| **[!UICONTROL データセット]** | 選択したデータセットに関連付けられている接続のみが表示されます。 |
+| **[!UICONTROL 所有者]** | 選択した人物が所有する接続のみが表示されます。 |
+| **[!UICONTROL サンドボックス]** | 選択したサンドボックスで使用可能な接続のみが表示されます。 |
+| **[!UICONTROL 接続のタイプ]** | **[!UICONTROL person]** ベースまたは **[!UICONTROL account]** ベースの [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 接続に対してフィルターします。 |
+| **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
+| **[!UICONTROL 統合]** | 選択した統合を持つ接続のみが表示されます。 |
+
+「![ フィルター ](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターウィンドウを非表示にします。
 
 ### 接続の編集
 
@@ -276,7 +278,7 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL データソースタイプ]** | ソースタイプ。データセットを接続に追加する際に、ソースタイプを定義します。 |
 | **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。アドホックデータセットまたはリレーショナルデータセットは、**[!UICONTROL （アドホック）]**&#x200B;または&#x200B;**[!UICONTROL （リレーショナル）]**&#x200B;で識別されます。例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
-| **[!UICONTROL ステッチ]** | データセットが [&#x200B; 接続 UI でのステッチが有効 &#x200B;](/help/stitching/use-stitching-ui.md) になっている場合、値は **[!UICONTROL true]** です。 それ以外の場合、値は **[!UICONTROL false]** です。 [&#x200B; ステッチをリクエストする手順 &#x200B;](/help/stitching//use-stitching.md) の結果であるステッチされたデータセットは、このテーブルではステッチされたと識別されず、デフォルトの値は **[!UICONTROL false]** になっています。 |
+| **[!UICONTROL ステッチ]** | データセットが [ 接続 UI でのステッチが有効 ](/help/stitching/use-stitching-ui.md) になっている場合、値は **[!UICONTROL true]** です。 それ以外の場合、値は **[!UICONTROL false]** です。 [ ステッチをリクエストする手順 ](/help/stitching//use-stitching.md) の結果であるステッチされたデータセットは、このテーブルではステッチされたと識別されず、デフォルトの値は **[!UICONTROL false]** になっています。 |
 | **[!UICONTROL スキーマ]** | データセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効である適用可能なデータセットの場合。 <p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：変換に対して有効でない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]**：変換に対して適用可能でない他のすべてのデータセットの場合。 |
@@ -317,13 +319,13 @@ Customer Journey Analytics から接続を削除するには：
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接接続のグローバルアカウント ID として指定した ID。グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接接続のグローバルアカウント ID として指定した ID。グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で接続のデータ転送中にスキップされたデータセットのレコード（行）の数。 |
 | **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチの数。 |

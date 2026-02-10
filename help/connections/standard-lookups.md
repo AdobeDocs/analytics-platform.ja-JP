@@ -1,14 +1,14 @@
 ---
 title: データセットへの標準検索の追加
-description: 標準検索を使用して、Customer Journey Analytics の便利なディメンションでのレポートを拡張します。
+description: 標準検索を使用して、Customer Journey Analyticsの便利なディメンションでのレポートを拡張する方法を説明します。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 47%
+source-wordcount: '433'
+ht-degree: 42%
 
 ---
 
@@ -75,15 +75,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## 標準検索ディメンションに関するレポート
 
-Adobeの標準検索ディメンションについてレポートするには、Customer Journey Analyticsで [&#x200B; データビュー &#x200B;](/help/data-views/data-views.md) を作成する際に、これらのディメンションを 1 つ以上追加する必要があります。 **[!UICONTROL データビュー]**/**[!UICONTROL コンポーネント]** で以下を実行します。
+Adobeの標準検索ディメンションについてレポートするには、Customer Journey Analyticsで [ データビュー ](/help/data-views/data-views.md) を作成する際に、これらのディメンションを 1 つ以上追加する必要があります。 **[!UICONTROL データビュー]**/**[!UICONTROL コンポーネント]** で以下を実行します。
 
 1. 左パネルのドロップダウンメニューから **[!UICONTROL スキーマフィールド]** を選択します。
-1. スキーマフィールドコンテナのリストから **[!UICONTROL 0&rbrace;Adobe ルックアップ &rbrace; を選択します。]**
+1. スキーマフィールドコンテナのリストから **[!UICONTROL 0}Adobe ルックアップ } を選択します。]**
 1. 追加するディメンションが見つかるまで、**[!UICONTROL ブラウザー]**、**[!UICONTROL モバイル]** または **[!UICONTROL オペレーティングシステム]** にドリルダウンします。
 1. ディメンションを **[!UICONTROL 含まれるコンポーネント]** 内の **[!UICONTROL 指標]** または **[!UICONTROL ディメンション]** テーブルにドラッグします。
 
-   ![&#x200B; コンポーネントを追加リストを表示するデータビューを作成する &#x200B;](assets/add-standard-lookup-dimension.gif)
+   ![ コンポーネントを追加リストを表示するデータビューを作成する ](assets/add-standard-lookup-dimension.gif)
 
 その後、Workspaceでルックアップデータを使用できます。
 
-![&#x200B; データを表示するフリーフォームテーブル &#x200B;](assets/gl-reporting.png)
+![ データを表示するフリーフォームテーブル ](assets/gl-reporting.png)

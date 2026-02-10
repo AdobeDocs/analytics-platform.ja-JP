@@ -1,14 +1,14 @@
 ---
 title: 標準コンポーネントリファレンス
-description: 任意のデータビューに追加できるすべての標準コンポーネントの詳細と情報。
+description: 任意のデータビューに追加できるすべての標準コンポーネントの詳細と情報について説明します。
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 91%
+source-wordcount: '653'
+ht-degree: 88%
 
 ---
 
@@ -41,19 +41,19 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 | コンポーネント名 | ディメンションまたは指標 | メモおよび値 |
 | --- | --- | --- |
 | [!UICONTROL 午前／午後] | 時間分割ディメンション | 午前または午後 |
-| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL &#x200B; イベント &#x200B;] が含まれていたExperience Platform バッチの識別子。 |
-| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL &#x200B; イベント &#x200B;] が含まれていたExperience Platform データセットの識別子。 |
-| [!UICONTROL 日付] | 時間分割ディメンション | 1 ～ 31 |
+| [!UICONTROL バッチ ID] | ディメンション | [!UICONTROL  イベント ] が含まれていたExperience Platform バッチの識別子。 |
+| [!UICONTROL データセット ID] | ディメンション | [!UICONTROL  イベント ] が含まれていたExperience Platform データセットの識別子。 |
+| [!UICONTROL 月間通算日] | 時間分割ディメンション | 1 ～ 31 |
 | [!UICONTROL 曜日] | 時間分割ディメンション | 月曜日、火曜日、水曜日、木曜日、金曜日、土曜日、日曜日 |
 | [!UICONTROL 年間通算日] | 時間分割ディメンション | 1 ～ 366 |
-| [!UICONTROL 時刻] | 時間分割ディメンション | 0 ～ 23 |
+| [!UICONTROL 時間帯] | 時間分割ディメンション | 0 ～ 23 |
 | [!UICONTROL 月] | 時間分割ディメンション | 1 月 ～ 12 月 |
 | [!UICONTROL 初回セッション] | 指標 | レポートウィンドウ内での個人の定義された最初のセッション。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL セッションを返す] | 指標 | 個人の初めてのセッションではなかったセッションの数。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#new-repeat) |
 | [!UICONTROL ユーザー ID] | ディメンション | Experience Platform で定義された各データセットのスキーマは、1 つ以上の定義済み ID のセットを持つことができ、ID 名前空間に関連付けられます。これら ID のいずれかをユーザー ID として使用できます。 例えば、cookie ID、関連付け ID、ユーザー ID、トラッキングコードなどがあります。[!UICONTROL ユーザー ID] ディメンションは、データセットを組み合わせ、Customer Journey Analytics での一意のユーザーを識別する際の基礎となります。<p>考えられるユースケースは次のとおりです。<ul><li>特定のユーザー ID 値にセグメントを作成して、そのユーザーの行動に至るまですべてをセグメント化します。</li><li>デバッグ：特定の cookie ID（または特定の顧客 ID）のデータが存在することを確認します。</li><li>コールセンターに電話をかけたユーザーを特定します。</li></ul> |
 | [!UICONTROL ユーザー ID 名前空間] | ディメンション | [!UICONTROL ユーザー ID] を構成している ID のタイプ。例：`email address`、`cookie ID`、`Analytics ID` |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL グローバルアカウント ID] | ディメンション | 接続でグローバルアカウントコンテナを使用する際の[!UICONTROL グローバルアカウント ID]。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL アカウント ID] | ディメンション | 接続でアカウントコンテナを使用する場合の [!UICONTROL &#x200B; アカウント ID]。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL アカウント ID] | ディメンション | 接続でアカウントコンテナを使用する場合の [!UICONTROL  アカウント ID]。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 商談 ID] | ディメンション | 接続で商談コンテナを使用する際の[!UICONTROL 商談 ID]。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 購買グループ ID] | ディメンション | 接続で購買グループコンテナを使用する際の[!UICONTROL 購買グループ ID]。 |
 | [!UICONTROL 四半期] | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 |
@@ -69,5 +69,5 @@ Customer Journey Analytics のほとんどのディメンションと指標は�
 
 >[!MORELIKETHIS]
 >
->[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=ja#M576)
+>[イベント深度機能を使用して、より深い顧客インサイトを得る](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >

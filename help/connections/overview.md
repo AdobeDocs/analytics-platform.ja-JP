@@ -1,20 +1,20 @@
 ---
-title: Customer Journey Analytics 接続の概要
+title: Customer Journey Analytics接続の概要
 description: Customer Journey Analytics での接続について説明します。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 09a6ae258d27f8fe9c9a1fc7ed63273620c67c1b
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
 # 接続の概要
 
-接続を使用すると、Customer Journey Analytics製品管理者は、取り込むデータ [!DNL &#x200B; Experience Platform] ース（イベント、ルックアップ、プロファイル、概要データセットなど）を定義できます。 接続はCustomer Journey Analyticsの基盤であり、ディメンションまたは指標として [&#x200B; データビュー）に定義できるデータ（フィールド &#x200B;](/help/data-views/data-views.md) の可用性を判断します。
+接続を使用すると、Customer Journey Analytics の製品管理者は、イベント、ルックアップ、プロファイルおよび概要データセットなど、取り込む [!DNL  Experience Platform] データソースを定義できます。接続は Customer Journey Analytics の基盤であり、ディメンションまたは指標として[データビュー](/help/data-views/data-views.md)で定義できるデータ（フィールド）の可用性を決定します。
 
 >[!IMPORTANT]
 >

@@ -4,7 +4,8 @@ description: オーディエンス分析設定の管理方法を学ぶ
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 0d38a779-a29f-41c9-81b4-f5523eeae93f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 2%
@@ -13,11 +14,11 @@ ht-degree: 2%
 
 # オーディエンス分析設定の管理{#manage-audience-analysis}
 
-[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、それらを表示、編集または削除できます。
+[ オーディエンス分析設定を作成 ](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、それらを表示、編集または削除できます。
 
 システム管理者のみがオーディエンス分析設定を管理できます。
 
-オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
+オーディエンス分析について詳しくは、[ オーディエンス分析の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
 
 ## 既存の設定の表示とフィルタリング
 
@@ -25,7 +26,7 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメインページ ](assets/audience-analysis-manage-configurations.png)
 
    各設定に関する次の情報の列を利用できます。
 
@@ -41,9 +42,9 @@ ht-degree: 2%
 
    * **[!UICONTROL ステータス]**：設定のステータス。 考えられるステータスは、完了、処理中、失敗です。<!--true?-->
 
-   任意の列を非表示にするには、列アイコン ![&#x200B; 列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択し、非表示にする列の選択を解除して、「**[!UICONTROL 適用]** を選択します。
+   任意の列を非表示にするには、列アイコン ![ 列アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択し、非表示にする列の選択を解除して、「**[!UICONTROL 適用]** を選択します。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター**![&#x200B; オーディエンス分析フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター**![ オーディエンス分析フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
@@ -59,7 +60,7 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメインページ ](assets/audience-analysis-manage-configurations.png)
 
 1. 編集する設定の名前を選択します。
 
@@ -75,10 +76,6 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメインページ ](assets/audience-analysis-manage-configurations.png)
 
 1. 削除する設定の横にあるチェックボックスをオンにして、「**[!UICONTROL 削除]**」を選択します。
-
-
-
-

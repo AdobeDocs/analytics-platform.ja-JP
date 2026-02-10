@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 0d8da0f61e6494801ed3a09823b2f3b7c1bed7a9
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '3249'
 ht-degree: 89%
@@ -48,13 +48,13 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-* [Experience Platformで有効期限のない資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
-* [&#x200B; 資格情報の有効期限 &#x200B;](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
+* [Experience Platformで有効期限のない資格情報 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
+* [ 資格情報の有効期限 ](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
 
 詳しくは、[カスタマージャーニーのアクセス制御](../technotes/access-control.md)を参照してください。特に、[製品管理者の追加の権限](../technotes/access-control.md#product-admin-additional-permissions)と [Adobe Admin Console の Customer Journey Analytics 権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)を参照してください。
 
 
-## 使用状況
+## 用途
 
 [!DNL Customer Journey Analytics BI extension] 機能を使用するには、SQL を直接使用することも、特定の BI ツールで使用可能なドラッグ＆ドロップエクスペリエンスを使用することもできます。
 
@@ -87,7 +87,7 @@ Adobe Experience Platform の場合：
 
    1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
@@ -607,7 +607,7 @@ ORDER BY -metric1 DESC
 
 | 関数 | 例 | 詳細 |
 |---|---|---|
-| [キャスト](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または <br/> `` `timestamp`::string `` | 型キャストは現在サポートされていませんが、エラーはスローされません。`CAST` 関数は無視されます。 |
+| [キャスト](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` または<br/> `` `timestamp`::string `` | 型キャストは現在サポートされていませんが、エラーはスローされません。`CAST` 関数は無視されます。 |
 | [タイムスタンプ](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | `WHERE` 句内で使用するタイムスタンプとして時刻文字列を解析します。 |
 | [終了タイムスタンプ](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 時刻文字列を `WHERE` 句内で使用するタイムスタンプとして解析し、オプションでその時刻文字列の形式を指定します。 |
 | [日付](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | `WHERE` 句内で使用するために、日付文字列をタイムスタンプとして解析します。 |
