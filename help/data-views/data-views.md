@@ -86,7 +86,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 ## データビューの削除 {#delete}
 
-[2}Customer Journey Analytics} で ](/help/data-views/manage-dataviews.md#delete-data-views) データビューを削除 [!UICONTROL  すると、この削除されたデータビューに依存する ]Workspace[!UICONTROL  プロジェクトが機能しなくなったことを示すエラーメッセージが表示されます。]
+[2&rbrace;Customer Journey Analytics&rbrace; で &#x200B;](/help/data-views/manage-dataviews.md#delete-data-views) データビューを削除 [!UICONTROL &#x200B; すると、この削除されたデータビューに依存する &#x200B;]Workspace[!UICONTROL &#x200B; プロジェクトが機能しなくなったことを示すエラーメッセージが表示されます。]
 
 ## 次の手順
 

@@ -18,10 +18,10 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 この変換は、次のクラスに基づく、B2B ルックアップスキーマ用のデータを含んだデータセットでのみ使用できます。
 
-* [XDM ビジネスアカウント人物関係 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM ビジネスオポチュニティ人物関係 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM ビジネスマーケティングリストメンバー ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM ビジネスキャンペーンメンバー ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM ビジネスアカウント人物関係 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM ビジネスオポチュニティ人物関係 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM ビジネスマーケティングリストメンバー &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM ビジネスキャンペーンメンバー &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 B2B ルックアップデータセットの変換を有効にするには：
 
-![ 変換データセットを有効にする ](/help/connections/assets/transform.gif)
+![&#x200B; 変換データセットを有効にする &#x200B;](/help/connections/assets/transform.gif)
 
 * 各データセットについて、**[!UICONTROL キー]** と **[!UICONTROL 一致するキー]** の推奨値を確認します。 推奨値を変更すると、続行を求める警告が表示されます。 次の点を確認する必要があります。
 
@@ -71,4 +71,4 @@ B2B ルックアップデータセットの変換を有効にするには：
 
 変換により、4 つのスキーマクラス（下図のオレンジ色）のデータセットが変更され、各個人識別子に対して、ルックアップデータセットに関連するデータ（アカウント、商談、マーケティングリストまたはキャンペーン）の（オブジェクト）配列（下図のピンク色）が作成されます。 この変換により、人物 ID ベースの検索を正しく機能させることができます。
 
-![B2B スキーマ ](./assets/b2b-schemas.svg)
+![B2B スキーマ &#x200B;](./assets/b2b-schemas.svg)
