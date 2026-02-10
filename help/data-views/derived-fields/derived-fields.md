@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9645c24ed1a08c224445ebae99dde27db208b9b5
 workflow-type: tm+mt
 source-wordcount: '10186'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->[&#x200B; 標準コンポーネント &#x200B;](../component-reference.md) は、イベントデータセットに関連付けられています。 その結果、派生フィールドの一部として使用される標準コンポーネントは、イベントデータセットのデータに対してのみ機能します。
+>[標準コンポーネント](../component-reference.md)は、イベントデータセットに結び付けられ、関連付けられます。その結果、派生フィールドの一部として使用される標準コンポーネントは、イベントデータセットのデータに対してのみ機能します。
 >
 
 
@@ -77,7 +77,7 @@ ht-degree: 89%
 | A | **ルール名** |  デフォルトでは、ルール名は&#x200B;**ルール X** です（X はシーケンス番号を表します）。ルールの名前を編集するには、その名前を選択し、新しい名前（例：`Query Parameter`）を入力します。 |
 | B | **関数名** | ルール用に選択された関数名（[!UICONTROL 例：URL PARSE]）。関数が関数シーケンスの最後であり、最終出力値を決定する際、関数名の後に [!UICONTROL - FINAL OUTPUT] が続きます（例：[!UICONTROL URL PARSE - FINAL OUTPUT]）。<br/>関数の詳細情報を含むポップアップを表示するには、![ヘルプアイコン](assets/Smock_HelpOutline_18_N.svg) を選択します。 |
 | C | **ルールの説明** | オプションでルールに説明を追加できます。<br/>![その他アイコン](assets/More.svg) を選択し、「**[!UICONTROL **&#x200B;説明を追加&#x200B;**]**」を選択して説明を追加するか、「**[!UICONTROL **&#x200B;説明を編集&#x200B;**]**」を選択して既存の説明を編集します。<br/>エディターを使用して説明を入力します。ツールバーを使用して、テキストの書式設定（スタイルセレクター、太字、斜体、下線、右揃え、左揃え、中央揃え、カラー、番号リスト、ブレットリストの使用）や、外部情報へのリンクの追加を行うことができます。<br/>説明の編集を終了するには、エディターの外側をクリックします。 |
-| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL &#x200B; フィールド &#x200B;] または [!UICONTROL &#x200B; 値 &#x200B;] のドロップダウンメニューには、関数が想定する入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。 または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
+| D | **関数領域** | 関数のロジックを定義します。インターフェイスは、関数のタイプによって異なります。[!UICONTROL フィールド]または[!UICONTROL 値]のドロップダウンメニューには、関数で想定される入力のタイプに基づいて、使用可能なすべてのフィールドカテゴリ（ルール、標準フィールド、フィールド）が表示されます。または、スキーマおよび標準のフィールドセレクターからフィールドをフィールドまたは値にドラッグ＆ドロップすることもできます。ドラッグしたフィールドがルックアップデータセットからのものである場合、定義した関数の前にルックアップ関数が自動的に挿入されます。<br/>サポートされる各関数について詳しくは、[関数リファレンス](#function-reference)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -185,7 +185,7 @@ ht-degree: 89%
 
 +++
 
-### バウンス {#bounces}
+### バウンス数 {#bounces}
 
 この関数テンプレートは、ルールのコレクションを使用して、サイトバウンスを識別します。
 
@@ -279,7 +279,7 @@ ht-degree: 89%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
 
 +++
 
@@ -307,7 +307,7 @@ ht-degree: 89%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -398,7 +398,7 @@ ht-degree: 89%
 
 ### 州の緯度 {#state-latitude}
 
-この関数テンプレートは、5 桁の精度で米国の状態の緯度を取得します。
+この関数テンプレートは、米国の州の緯度を、5 桁の精度で取得します。
 
 +++ 詳細
 
@@ -406,14 +406,14 @@ ht-degree: 89%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![&#x200B; 状態 Latitude ルールビルダーのスクリーンショット &#x200B;](assets/function-template-state-latitude.png)
+![州の緯度のルールビルダーのスクリーンショット](assets/function-template-state-latitude.png)
 
 +++
 
 
 ### 州の経度 {#state-longitude}
 
-この関数テンプレートは、5 桁の精度で米国の州の経度を取得します。
+この関数テンプレートは、米国の州の経度を、精度 5 桁で取得します。
 
 +++ 詳細
 
@@ -421,7 +421,7 @@ ht-degree: 89%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![&#x200B; 状態の経度ルールビルダーのスクリーンショット &#x200B;](assets/function-template-state-longitude.png)
+![州の経度のルールビルダーのスクリーンショット](assets/function-template-state-longitude.png)
 
 +++
 
@@ -464,7 +464,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。これらの条件は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するために使用されます。"
+>abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。"
 
 
 1 つ以上のフィールドから定義された条件に基づいて、条件を適用します。これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。
@@ -475,7 +475,7 @@ ht-degree: 89%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [&#x200B; 演算子 &#x200B;](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -673,7 +673,7 @@ ht-degree: 89%
 
 ## 詳細情報 {#casewhen-more-info}
 
-Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景の情報について詳しくは、[&#x200B; コンテナ &#x200B;](../create-dataview.md#containers) および [&#x200B; セグメントコンテナ &#x200B;](/help/components/segments/seg-overview.md#containers) を参照してください。 このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
+Customer Journey Analytics は、Adobe Experience Platform の [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)（エクスペリエンスデータモデル）をモデルにした、ネストされたコンテナ構造を使用します。背景情報について詳しくは、[コンテナ](../create-dataview.md#containers)および[セグメントコンテナ](/help/components/segments/seg-overview.md#containers)を参照してください。このコンテナモデルは、本質的には柔軟性がありますが、ルールビルダーを使用する際にいくつかの制約が課せられます。
 
 Customer Journey Analytics では、次のデフォルトのコンテナモデルが使用されます。
 
@@ -933,7 +933,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >title="Date Math"
 >abstract="この関数は、2 つの日付フィールドまたは日時フィールド間の差を返す機能を提供します。（プロファイルデータセットからの）ユーザーベースのフィールドには「**[!UICONTROL 最初を返す]**」および「**[!UICONTROL 最後を返す]**」オプションがありません。"
 
-2 つの日付または 2 つの日時フィールドの差を返します。
+2 つの日付フィールドまたは 2 つの日時フィールドの差を返します。
 
 +++ 詳細
 
@@ -941,51 +941,51 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>日付</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的な日付（ユーザーが入力）</li><li>静的な日時（ユーザーが入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>ダイナミック日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL &#x200B; 精度 &#x200B;]:<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時の戻り値ごとに、次の操作を行います。<ul><li>最初（セッションまたはユーザー内）</li><li>最終（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>日付</li><li>日時</li></ul> | <ul><li>[!UICONTROL 範囲]<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li><li>[!UICONTROL 値]：<ul><li>日付</li><li>Date-Time</li><li>静的日付（ユーザー入力）</li><li>静的日時（ユーザー入力）</li><li>動的日付<ul><li>Today</li></ul></li><li>動的日時<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL 精度]：<ul><li>Seconds</li><li>Minutes</li><li>時間</li><li>Days</li><li>Weeks</li><li>Months</li><li>四半期</li><li>年</li></ul></li><li>日付または日時ごとに以下を返します。<ul><li>最初（セッションまたはユーザー内）</li><li>最後（セッションまたはユーザー内）</li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 
 ## ユースケース 1 {#datemath-uc1}
 
-ホテル会社のマーケティングアナリストとして、顧客のチェックイン日と先週の予約日の日数の違いを理解したいと考えています。
+ホテル会社のマーケティングアナリストとして、過去 1 週間での顧客のチェックイン日と予約日の間の日数の違いを理解したいと考えています。
 
 
 ### 派生フィールド {#datemath-uc1-derivedfield}
 
-`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL Booking Date] と [!DNL Person]Check-in Date[!UICONTROL &#x200B; の間にある &#x200B;] 範囲  の日数を計算するルールを定義します。 [!UICONTROL &#x200B; 日 &#x200B;] を [!UICONTROL &#x200B; 出力精度 &#x200B;] として選択します。 また、[!UICONTROL &#x200B; 予約日 &#x200B;] と  チェックイン日 [!UICONTROL &#x200B; の両方で「最終結果を返す &#x200B;] を選択して、最後のユーザースコープ値が計算で使用されるようにします。
+`Days between booking and check-in` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL 範囲]対象の [!DNL Person] の[!UICONTROL 予約日]と[!UICONTROL チェックイン日]の間の日数を計算するルールを定義します。 [!UICONTROL 出力精度]として「[!UICONTROL 日]」を選択します。 また、計算に範囲対象のユーザーの最後の値が使用されるように、[!UICONTROL 予約日]と[!UICONTROL チェックイン日]の両方で「[!UICONTROL 最後を返す]」を選択します。
 
-![&#x200B; 日付計算ルールのスクリーンショット &#x200B;](assets/datemath-1.png)
+![日付計算ルールのスクリーンショット](assets/datemath-1.png)
 
 
 ## ユースケース 2 {#datemath-uc2}
 
-実店舗のマーケティングアナリストとして、顧客が店舗に最後に訪問したのは何日前かを把握する必要があります。 モバイルアプリとショップのビーコンでジオロケーション機能を使用して、顧客の物理的な訪問をキャプチャします。
+実店舗のマーケティングアナリストとして、顧客が店舗に最後に訪問したのは何日前かを理解したいと考えています。モバイルアプリのジオロケーション機能と店舗内のビーコンを使用して、顧客の物理的な訪問を取得します。
 
 ### 派生フィールド {#datemath-uc2-derivedfield}
 
-新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用すると、[!UICONTROL Date] で指定したカスタム日時と（イベントデータセットの [!UICONTROL placeContext] フィールドグループから [!UICONTROL &#x200B; ローカル時間 &#x200B;] の間の日数を、[!UICONTROL Person] の [!UICONTROL &#x200B; 重複排除範囲 &#x200B;] で計算するルールを定義できます。 [!UICONTROL &#x200B; 最後を返す &#x200B;] を選択して、[!UICONTROL &#x200B; 現地時間 &#x200B;] の最後のユーザースコープ値が計算で使用されるようにします。 「日」を [!UICONTROL &#x200B; 出力の精度 &#x200B;] として選択します。
+新しい `Days Since Visit To Shop` の派生フィールドを定義します。[!UICONTROL DATE MATH] 関数を使用して、[!UICONTROL 重複排除範囲]が[!UICONTROL ユーザー]であるカスタム日時（[!UICONTROL 日付]で指定）と[!UICONTROL ローカル時間]（イベントデータセットの [!UICONTROL placeContext] フィールドグループから取得）の間の日数を計算するルールを定義します。計算には最後のユーザー範囲の[!UICONTROL ローカル時間]値が使用されるように、「[!UICONTROL 最後を返す]」を選択します。 [!UICONTROL 出力精度]として「日」を選択します。 
 
-![&#x200B; 日付計算ルール 2 のスクリーンショット &#x200B;](assets/datemath-2.png)
+![日付計算ルールのスクリーンショット 2](assets/datemath-2.png)
 
-または、便利な「ダイナミック日付範囲の値を今すぐ」を使用して、今から [!UICONTROL &#x200B; ローカル時間 &#x200B;] までの時間（イベントデータセットの [!UICONTROL placeContext] フィールドグループから）を計算することもできます
+または、便利な動的日付範囲値「現在」を使用して、現在から[!UICONTROL ローカル時間]（イベントデータセットの [!UICONTROL placeContext] フィールドグループから取得）までを計算することもできます。
 
-![&#x200B; 日付計算ルール 2a のスクリーンショット &#x200B;](assets/datemath-2a.png)
+![日付計算ルールのスクリーンショット 2a](assets/datemath-2a.png)
 
 
 ## ユースケース 3 {#datemath-uc3}
 
-セッション内の顧客が注文を行うまでの検索時間（分単位）を把握する場合。
+セッション内の顧客が注文を行うまでの検索時間を分単位で理解したいと考えています。
 
-2 つの `Time Between Search And Order In Minutes`CASE WHEN[[!UICONTROL &#x200B; 関数の結果である新しい &#x200B;] 派生フィールドを定義して &#x200B;](#case-when) [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] の値を定義します。
-次に、これら 2 つの値を使用して、[!UICONTROL &#x200B; 範囲 &#x200B;] を [!UICONTROL &#x200B; セッション &#x200B;] に設定した [!UICONTROL DATE MATH] 関数、[!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] に設定した値、および [!UICONTROL &#x200B; 出力精度 &#x200B;] を [!UICONTROL &#x200B; 分 &#x200B;] に設定した関数で差分を計算します。 両方の値について、「[!UICONTROL &#x200B; 最初のを返す &#x200B;]」を選択して、最初の [!UICONTROL &#x200B; 検索時間 &#x200B;] と [!UICONTROL &#x200B; 注文時間 &#x200B;] が返されるようにします。
+2 つの [[!UICONTROL CASE WHEN] 関数](#case-when)の結果を新しい `Time Between Search And Order In Minutes` の派生フィールドとして定義し、[!UICONTROL 検索時間]と[!UICONTROL 注文時間]の値を定義します。
+次に、これらの 2 つの値を使用して、[!UICONTROL 範囲]を[!UICONTROL セッション]、値を[!UICONTROL 検索時間]と[!UICONTROL 注文時間]、[!UICONTROL 出力精度]を[!UICONTROL 分]に設定した [!UICONTROL DATE MATH] 関数で差分を計算します。最初の[!UICONTROL 検索時間]と[!UICONTROL 注文時間]が返されるように、両方の値に対して「[!UICONTROL 最初を返す]」を選択します。
 
-![&#x200B; 日付計算ルール 3 のスクリーンショット &#x200B;](assets/datemath-3.png)
+![日付計算ルールのスクリーンショット 3](assets/datemath-3.png)
 
 
 ## 詳細情報 {#datemath-more-info}
 
-[!UICONTROL &#x200B; 最初を返す &#x200B;] または [!UICONTROL &#x200B; 最後を返す &#x200B;] オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した場合は使用できません。 ユーザーベースのフィールドは、1 人のユーザーの日付または日時フィールドに対して 1 つの値のみを持つことができます。
+「[!UICONTROL 最初を返す]」オプションや「[!UICONTROL 最後を返す]」オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した際は使用できません。ユーザーベースのフィールドには、ユーザーの日付フィールドや日時フィールドに対して 1 つの値のみを指定できます。
 +++
 
 <!-- DEDUPLICATE -->
@@ -1088,7 +1088,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >title="Depth"
 >abstract="この関数は、イベント深度の標準コンポーネントの機能と同様に、任意のフィールドの深度を返す機能を提供します。"
 
-フィールドの深さを返します。これは、標準の [&#x200B; イベントの深さディメンション &#x200B;](/help/components/dimensions/overview.md#standard-dimensions) で可能なことと同様です。
+[標準提供のイベント深度ディメンション](/help/components/dimensions/overview.md#standard-dimensions)で使用可能な関数と同様に、フィールドの深度を返します。
 
 +++ 詳細
 
@@ -1103,18 +1103,18 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース {#depth-uc1}
 
-内部検索の深度（を検索回数と解釈することもできます）を把握したい場合。 したがって、後でその内部検索の深度を使用して、特定の検索深度に関連付けられた検索語句を分類できます。
+内部検索の深度（検索回数とも解釈できます）を理解したいと考えています。したがって、この内部検索の深度は、後で特定の検索深度に関連付けられた検索語を分類する際に役立ちます。
 
 
 ### 派生フィールド {#depth-uc1-derivedfield}
 
-新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL &#x200B; 内部検索語句 &#x200B;] の深さを取得し、新しい派生フィールドに保存するルールを定義します。
+新しい `Internal Search Depth` の派生フィールドを定義します。[!UICONTROL DEPTH] 関数を使用して、[!UICONTROL 内部検索キーワード]の深度を取得し、新しい派生フィールドに格納するルールを定義します。
 
-![&#x200B; 深度ルールのスクリーンショット &#x200B;](assets/depth-1.png)
+![深度ルールのスクリーンショット](assets/depth-1.png)
 
-次に、ビジュアライゼーションでその新しい派生フィールドを使用して、最初の検索で検索に使用された用語を分類します。
+次に、この新しい派生フィールドをビジュアライゼーションで使用して、最初の検索で使用された検索語の分類を確認します。
 
-![&#x200B; 深度ルールのスクリーンショット &#x200B;](assets/depth-1a.png)
+![深度ルールのスクリーンショット](assets/depth-1a.png)
 
 +++
 
@@ -1387,7 +1387,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 - 静的な値は、フィールドに関連付ける必要があります。例えば、静的フィールドのみで [!UICONTROL MATH] 関数を使用することはサポートされていません。
 - 静的な値に累乗演算子（`ˆ`）は使用できません。
-- 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的の値を括弧を使用してグループ化する必要があります。次に例を示します。
+- 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的の値を括弧を使用してグループ化する必要があります。例：
 
    - この数式はエラーを返します。
      ![数学の詳細情報 4](assets/math-more-info-4.png)
@@ -1428,7 +1428,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 ### 前のデータ {#merge-fields-uc-databefore}
 
-| ページ名 | セッション | 訪問者 |
+| ページ名 | セッション | 訪問者数 |
 |---|--:|--:|
 | ヘルプページ | 250 | 200 |
 | ホームページ | 500 | 250 |
@@ -1436,7 +1436,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 {style="table-layout:auto"}
 
-| 通話理由 | セッション | 訪問者 |
+| 通話理由 | セッション | 訪問者数 |
 |---|--:|--:|
 | 注文に関する質問 | 275 | 250 |
 | 注文に対する変更 | 150 | 145 |
@@ -1452,7 +1452,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 ### 後のデータ {#merge-fields-uc-dataafter}
 
-| クロスチャネルインタラクション | Sessions | 訪問者 |
+| クロスチャネルインタラクション | セッション数 | 訪問者数 |
 |---|--:|--:|
 | ホームページ | 500 | 250 |
 | 製品詳細ページ | 300 | 200 |
@@ -1580,10 +1580,10 @@ URL の一部を取得し、一意のページ識別子として使用してト�
 
 | ページ URL |
 |---|
-| `https://business.adobe.com/jp/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/jp/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/jp/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1811,7 +1811,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 ### 後のデータ {#summarize-uc-dataafter}
 
-| 買い物かごへの追加の売上高のサイズ | 訪問者 |
+| 買い物かごへの追加の売上高のサイズ | 訪問者数 |
 |---|--:|
 | 小 | 1 |
 | メディア | 1 |
@@ -1843,7 +1843,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>開始<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>開始<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>設定値<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 1 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>空白をトリミング</li><li>特殊文字をトリミング<ul><li>特殊文字の入力</li></ul></li><li>左からトリミング<ul><li>開始<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>終了<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li><li>右からトリミング<ul><li>開始<ul><li>文字列の終了</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li></ul></li><li>終了<ul><li>文字列の開始</li><li>位置<ul><li>位置 #</li></ul></li><li>文字列<ul><li>文字列値</li><li>インデックス</li><li>文字列を含めるフラグ</li></ul></li><li>長さ</li></ul></li></ul></li></ul> | <p>該当なし</p> | <p>派生フィールドごとに 1 つの関数</p> | <p>新しい派生フィールド</p> |
 
 
 ## ユースケース 1 {#trim-uc1}
@@ -1954,7 +1954,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 >title="Typecast"
 >abstract="この関数は、フィールドタイプをその場で変更して、Customer Journey Analytics 内で追加の変換にフィールドを使用できるようにする機能を提供します。"
 
-フィールドのフィールドタイプを変更して、Customer Journey Analytics内の追加の変換で使用できるようにします。
+フィールドのフィールドタイプを変更して、Customer Journey Analytics 内の追加変換で使用できるようにします。
 
 +++ 詳細
 
@@ -1962,34 +1962,34 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>数値</li><li>日付</li><li>Date-time</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>整数<ul><li>文字列へ</li></ul></li><li>Double<ul><li>文字列へ<ul><li>継承する小数点以下の桁数を含める（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列へ</li></ul></li><li>Long<ul><li>文字列へ</li></ul></li><li>日付<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li>日付（2025 年 1 月 7 日の例）<ul><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/1/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例： 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY MM DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>Date-time<ul><li>文字列へ<ul><li>出力形式を定義する機能の提供</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（2025 年 1 月 7 日 1:30pm52 秒の例）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025 年 1 月 7 日 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値でない値がある場合、null が返されます。</li><li>精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>数値</li><li>日付</li><li>日時</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>Integer<ul><li>文字列に</li></ul></li><li>Double<ul><li>文字列に<ul><li>継承する小数点以下の桁数を含めます（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列に</li></ul></li><li>Long<ul><li>文字列に</li></ul></li><li>日付<ul><li>文字列に<ul><li>出力形式を定義する機能を指定します</li></ul></li><li>例<ul><li>日付（例：2025年1月7日（PT））<ul><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY MM DD<ul><li data-stringify-indent="2" data-stringify-border="0">例：2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>日時<ul><li>文字列に<ul><li>出力形式を定義する機能を指定します</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（例：2025年1月7日、1:30pm、52秒（PT））<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例：25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例：1月7日、2025年 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値ではない値がある場合、null が返されます。</li><li>ユーザーは精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
 
 ## ユースケース 1 {#typecast-uc1}
 
-文字列ベースのディメンションとして使用する整数フィールド、画面の高さ（例：イベントデータセットの device.screenHeight）があります。
+整数フィールド、画面の高さ（例：イベントデータセットの device.screenHeight）があり、これを文字列ベースのディメンションとして使用したいと考えています。
 
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。[!UICONTROL &#x200B; 画面の高さ &#x200B;] フィールドに [!UICONTROL Typecast to] [!UICONTROL String] というルールを定義し、それを新しい派生フィールドに格納するには、[!UICONTROL TYPECAST] 関数を使用します。
+`Screen Height` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
-![&#x200B; タイプキャストルール 1 のスクリーンショット &#x200B;](assets/typecast-1.png)
+![型キャストルールのスクリーンショット 1](assets/typecast-1.png)
 
 
 
 ## ユースケース 2 {#typecast-uc2}
 
-コホートテーブル（整数のみをサポート）で売上高を使用したいが、「売上高」フィールドには Double タイプがある。
+コホートテーブル（整数のみをサポート）で売上高を使用したいと考えていますすが、「売上高」フィールドに倍精度浮動小数点数タイプがあります。
 
-![&#x200B; タイプキャストルール 2 のスクリーンショット &#x200B;](assets/typecast-2.png)
+![型キャストルールのスクリーンショット 2](assets/typecast-2.png)
 
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
 
-`Revenue (integer)` の派生フィールドを定義します。[!UICONTROL Revenue] フィールドに [!UICONTROL Typecast to] [!UICONTROL Integer] というルールを定義し、それを新しい派生フィールドに保存するには、[!UICONTROL TYPECAST] 関数を使用します。
+`Revenue (integer)` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 
 +++
@@ -2089,7 +2089,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 - 派生フィールドのルールを定義する際は、最大 10 個の異なるスキーマフィールド（標準フィールドは含まない）を使用できます。
    - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマフィールドまたはプロファイルスキーマフィールドのみが許可されます。
-- ライセンスを取得するパッケージに応じて、Customer Journey Analytics接続ごとに最大個の派生フィールドを設定できます。 詳しくは、[&#x200B; 製品説明 &#x200B;](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} を参照してください。
+- ライセンスを取得したパッケージに応じて、Customer Journey Analytics 接続ごとに最大数の派生フィールドを設定できます。詳しくは、[製品ドキュメント](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}を参照してください。
 
 
 ### 関数の制限事項の概要
@@ -2099,9 +2099,9 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 | <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの Case When 関数</li><li>派生フィールドごとに 200 個の[演算子](#operators)。</li></ul> |
 | <p>Classify</p> | <ul><li>派生フィールドごとに 5 つの Classify 関数</li><li>派生フィールドごとに 200 個の[演算子](#operators)。</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの Concatenate 関数</li><li>Concatenate 関数ごとに 3 つの値</ul> |
-| <p>Date Math</p> | <ul><li>派生フィールドごとに 2 つの日付数学関数</li></ul> |
+| <p>Date Math</p> | <ul><li>派生フィールドごとに 2 つの Date Math 関数</li></ul> |
 | <p>Deduplicate</p> | <ul><li>派生フィールドごとに 5 つの Deduplicate 関数</li></ul> |
-| <p>Depth</p> | <ul><li>派生フィールドごとに 3 つの深さ関数</li></ul> |
+| <p>Depth</p> | <ul><li>派生フィールドごとに 3 つの Depth 関数</li></ul> |
 | <p>検索と置換</p> | <ul><li>派生フィールドごとに 2 つの Find &amp; Replace 関数</li></ul> |
 | <p>ルックアップ</p> | <ul><li>派生フィールドごとに 5 つの Lookup 関数</li></ul> |
 | <p>Lowercase</p> | <ul><li>派生フィールドごとに 2 つの Lowercase 関数</li></ul> |
@@ -2112,7 +2112,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 | <p>Split</p> | <ul><li>派生フィールドごとに 2 つの Split 関数</li><li>最大 10 個の値が返されます</ul> |
 | <p>Summarize</p> | <ul><li>派生フィールドごとに 3 つの Summarize 関数</li></ul> |
 | <p>Trim</p> | <ul><li>派生フィールドごとに 1 つの Trim 関数</li></ul> |
-| <p>Typecast</p> | <ul><li>派生フィールドごとに 3 つのタイプキャスト関数</li></ul> |
+| <p>Typecast</p> | <ul><li>派生フィールドごとに 3 つの Typecast 関数</li></ul> |
 | <p>URL の解析</p> | <ul><li>派生フィールドごとに 5 つの URL Parse 関数</li></ul> |
 
 {style="table-layout:auto"}
@@ -2140,7 +2140,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
->- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
->- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
