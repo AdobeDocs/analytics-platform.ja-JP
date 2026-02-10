@@ -4,7 +4,7 @@ description: Customer Journey Analytics でのオーディエンス公開の概�
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+source-git-commit: 9a7ba4913a4724116455566ff783fb270f5e289c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 79%
@@ -17,10 +17,10 @@ ht-degree: 79%
 >
 >オーディエンス分析とオーディエンス公開の違いを理解する：
 >
->* **オーディエンス分析**:Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
+>* **オーディエンス分析**:Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンス分析について詳しくは、[ オーディエンス分析の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
 >* **オーディエンスの公開**:Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformに公開し、顧客のターゲティングやパーソナライゼーションに使用できます。
 
-Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformの [&#x200B; リアルタイム顧客プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用できます。 （Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込む方法については、[Audience Analysis の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
+Customer Journey Analyticsで検出されたオーディエンスを作成してAdobe Experience Platformの [ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home) に公開し、顧客のターゲティングやパーソナライゼーションに使用できます。 （Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込む方法については、[Audience Analysis の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
 
 公開オーディエンスを使用すると、Customer Journey Analytics 内で見つかったインサイトを活用してアクションを行う明確な方法がわかります。アクションの例として、次のようなものがあります。
 
