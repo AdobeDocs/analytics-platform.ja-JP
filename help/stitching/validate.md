@@ -1,20 +1,20 @@
 ---
-title: ステッチを検証
-description: ステッチの検証方法を説明します。
+title: Customer Journey Analyticsでの Id ステッチの検証
+description: Customer Journey Analyticsで ID ステッチを検証する方法を説明します。 ステッチの前後の認証率と ID を測定します。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 8e8e4f4d201d1136e118bf3789cfc33ac8f402dc
+source-git-commit: 0eb3fec2e52fe0850c5f42777edbdb5d981988fb
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
 
 # ステッチの検証
 
-[ID ステッチ &#x200B;](/help/stitching/overview.md) （または単にステッチ）の目標は、クロスチャネル分析のためのイベントデータセットの適合性を高めることです。 この昇格は、データセット内のすべてのデータ行に、使用可能な目的の最上位 ID が含まれている場合に実現されます。 この立面図では、次の操作が可能です。
+[ID ステッチ ](/help/stitching/overview.md) （または単にステッチ）の目標は、クロスチャネル分析のためのイベントデータセットの適合性を高めることです。 この昇格は、データセット内のすべてのデータ行に、使用可能な目的の最上位 ID が含まれている場合に実現されます。 この立面図では、次の操作が可能です。
 
 * 匿名のユーザーを除外せずに、ユーザー中心のレポートを作成します。
 * 複数のデバイスを 1 人のユーザーに接続します。
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 この記事では、新しく作成されたステッチされたデータセットの 1 つ以上の標高を測定し、ステッチがこれらのメリットをもたらしているという信頼性を提供するための分析方法について説明します。
 
-分析方法には、通常、管理者がアクセスできる [&#x200B; データビューコンポーネント設定 &#x200B;](/help/data-views/component-settings/overview.md) が含まれます。 また、これらのメソッドでは、Analysis Workspace プロジェクトで作業するアナリストが計算指標とビジュアライゼーションを作成する必要があります。
+分析方法には、通常、管理者がアクセスできる [ データビューコンポーネント設定 ](/help/data-views/component-settings/overview.md) が含まれます。 また、これらのメソッドでは、Analysis Workspace プロジェクトで作業するアナリストが計算指標とビジュアライゼーションを作成する必要があります。
 
 これらの分析方法は、フィールドベースのステッチとグラフベースのステッチの両方に使用できますが、特にグラフベースのステッチシナリオでは、一部の要素がデータセットに存在しない場合があります。 これらの要素が欠落すると、Analysis Workspaceで上昇率を直接計算するのが難しくなる可能性があります。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ステッチの有効化と検証 &#x200B;](https://video.tv.adobe.com/v/3478121?captions=jpn&quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ ステッチの有効化と検証 ](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 接続インターフェイスで有効にしたステッチを検証するには、「**[!UICONTROL データセットのバックフィル]**」で短い代表期間を選択します。 例えば、1 週間です。
 
-以下の例では、イベントデータセットをステッチします。 イベントデータセットを追加するテスト接続を設定しました。 そのデータセットの場合、**[!UICONTROL ECID]**&#x200B;**[!UICONTROL 名前空間]** を **[!UICONTROL 永続 ID]** として定義し、**[!UICONTROL 訪問者のハッシュ化されたメールアドレス（directMarketing.hashedEmail）を]**&#x200B;**[!UICONTROL ユーザー ID]** として定義します。 このステッチを検証するには、期間の短い **[!UICONTROL データセットのバックフィル]** を定義します（2026 年 1 月 24 日～2026 年 2 月 10 日）。 この小さなウィンドウを使用して、ステッチが意図したとおりに機能するかどうかを検証します。
+以下の例では、イベントデータセットをステッチします。 イベントデータセットを追加するテスト接続を設定しました。 そのデータセットの場合、**[!UICONTROL ECID]****[!UICONTROL 名前空間]** を **[!UICONTROL 永続 ID]** として定義し、**[!UICONTROL 訪問者のハッシュ化されたメールアドレス（directMarketing.hashedEmail）を]****[!UICONTROL ユーザー ID]** として定義します。 このステッチを検証するには、期間の短い **[!UICONTROL データセットのバックフィル]** を定義します（2026 年 1 月 24 日～2026 年 2 月 10 日）。 この小さなウィンドウを使用して、ステッチが意図したとおりに機能するかどうかを検証します。
 
-![&#x200B; ステッチ設定 &#x200B;](/help/stitching/assets/stitching-config.png)
+![ ステッチ設定 ](/help/stitching/assets/stitching-config.png)
 
 ### データ表示の前提条件
 
@@ -57,56 +57,47 @@ ht-degree: 0%
 
 * **[!UICONTROL 指標とディメンション]** の **[!UICONTROL ID 名前空間]** をディメンションとして **[!UICONTROL ディメンション]** リストに追加します。
 
-  ![ID 名前空間](assets/identity-namespace.png)
+  ![ID 名前空間](/help/stitching/assets/identity-namespace.png)
 
 
 * **[!UICONTROL スキーマフィールド]** から、イベントのユーザー ID として定義した **[!UICONTROL 訪問者のハッシュ化されたメールアドレス識別子]** を選択します。 フィールドをディメンションとして **[!UICONTROL ディメンション]** リストに、また指標として **[!UICONTROL 指標]** リストに追加します。 指標の **[!UICONTROL コンポーネント名]** を `Email set` に変更します。
 
-  ![&#x200B; メール識別子 &#x200B;](assets/email-identifier.png)
+  ![ メール識別子 ](/help/stitching/assets/email-identifier.png)
 
 データビューを必ず保存してください。
 
-### Workspace
+### Workspace プロジェクトの作成
 
 Workspaceで、新しいプロジェクトを作成し、フリーフォームテーブルを使用して、ステッチ設定をテストするために定義した日付範囲の **[!UICONTROL メールセット]** 指標を表示します。 このフリーフォームテーブルには、ステッチする前にメールアドレスを持っているイベントが表示されます。
 
-![&#x200B; ステッチの概要フリーフォームテーブル – メールセット &#x200B;](/help/stitching/assets/workspace-emailset.png)
+![ ステッチの概要フリーフォームテーブル – メールセット ](/help/stitching/assets/workspace-emailset.png)
 
-ステッチプロセスの後でメールアドレスが設定されたイベントを確認するには、計算指標 `Email stitched namespace` を定義します。 この計算指標は、ハッシュ化されたメール名前空間 **[!UICONTROL email_lc_sha256]** と等しい **[!UICONTROL ID 名前空間]** を持つ **[!UICONTROL イベント]** を調べます。
+ステッチプロセスの後でメールアドレスが設定されたイベントを確認するには、計算指標 `Email stitched namespace` を定義します。 この計算指標は、ハッシュ化されたメール名前空間の **[!UICONTROL と等しい]** ID 名前空間 **[!UICONTROL を持つ]** イベント `email_lc_sha256` を調べます。
 
-![&#x200B; ステッチの概要 – メールステッチされた名前空間計算指標 &#x200B;](/help/stitching/assets/cm-email-stitched-namespace.png)
+![ ステッチの概要 – メールステッチされた名前空間計算指標 ](/help/stitching/assets/cm-email-stitched-namespace.png)
 
 新しい計算指標 **[!UICONTROL メールステッチされた名前空間]** をフリーフォームテーブルに追加すると、ステッチプロセス後にメールアドレスを持つイベントの数が増加します。
 
-![&#x200B; ステッチの概要フリーフォームテーブル – メールのセットとステッチ &#x200B;](/help/stitching/assets/workspace-emailset-stitched.png)
+![ ステッチの概要フリーフォームテーブル – メールのセットとステッチ ](/help/stitching/assets/workspace-emailset-stitched.png)
 
 2 つの追加の計算指標を定義すると、さらにインサイトを得ることができます。
 
 * **[!UICONTROL メール認証率]**。 この計算指標は、ステッチプロセス前の認証率を決定します。
 
-  ![&#x200B; メール認証率の計算指標の定義 &#x200B;](/help/stitching/assets/cm-email-authentication-rate.png)
+  ![ メール認証率の計算指標の定義 ](/help/stitching/assets/cm-email-authentication-rate.png)
 
 * **[!UICONTROL ステッチされた認証率]**。 この計算指標は、ステッチプロセス後の認証率を決定します。
 
-  ![&#x200B; ステッチ認証率計算指標の定義 &#x200B;](/help/stitching/assets/cm-stitched-authentication-rate.png)
+  ![ ステッチ認証率計算指標の定義 ](/help/stitching/assets/cm-stitched-authentication-rate.png)
 
 これら 2 つの計算指標をフリーフォームテーブルに追加すると、ステッチイベントの増加を確認できます。
 
-![&#x200B; ステッチの概要フリーフォームテーブル – 認証済み &#x200B;](/help/stitching/assets/workspace-authenticated.png)
+![ ステッチの概要フリーフォームテーブル – 認証済み ](/help/stitching/assets/workspace-authenticated.png)
 
 より多くのインサイトを得るには、フリーフォームテーブルにさらに 2 つの計算指標（**[!UICONTROL 増加率]** および **[!UICONTROL 上昇率]**）を追加して、ステッチ設定の影響を確認できます。
 
-![&#x200B; ステッチの概要フリーフォームテーブル – 認証済み上昇率 &#x200B;](/help/stitching/assets/workspace-authenticated-lift.png)
+![ ステッチの概要フリーフォームテーブル – 認証済み上昇率 ](/help/stitching/assets/workspace-authenticated-lift.png)
 
-この記事の重要なポイントは、このタイプのステッチの検証と分析が次の目的に役立つことです。
-
-* 現在の認証率とステッチされた認証率を比較することで、認証の有効性に関する包括的なカスタムビューを提供します。
-* 上昇率と上昇率指標を通じて改善点を明確に測定できます。
-* ステッチを実装することがユーザー認証に与える真の影響を特定するのに役立ちます。
-* 標準化された方法を作成して、チーム間で認証パフォーマンスを伝えます。
-* 認証戦略と最適化に関するデータ駆動型の決定を可能にします。
-
-これらの指標を組み合わせることで、Customer Journey Analytics ステッチが認証成功率や全体的な人物特定パフォーマンスにどのように影響するかを関係者が把握できるようになります。
 
 
 ## リクエストステッチの検証
@@ -118,10 +109,10 @@ Workspaceで、新しいプロジェクトを作成し、フリーフォーム�
 ステッチ検証測定計画では、ステッチされたデータセットの必要なすべてのディメンションと指標が、データビューで定義されていることを確認する必要があります。 `stitchedID.id` フィールドと `stitchedID.namespace.code` フィールドの両方がディメンションとして追加されていることを確認します。 ステッチされたデータセットは元のデータセットの正確なコピーですが、ステッチプロセスによって、これら 2 つの新しい列がデータセットに追加されます。
 
 * `stitchedID.namespace.code` を使用して **[!UICONTROL ステッチされた名前空間]** ディメンションを定義します。 このディメンションには、行が昇格された ID の名前空間（例：`Email` または `Phone`）が含まれています。 ステッチプロセスがフォールバックする名前空間（`ECID` など）。
-  ![&#x200B; ステッチされた名前空間ディメンション &#x200B;](assets/stitchednamespace-dimension.png)
+  ![ ステッチされた名前空間ディメンション ](/help/stitching/assets/stitchednamespace-dimension.png)
 
 * `stitchedID.id` を使用して **[!UICONTROL ステッチ ID 値]** ディメンションを定義します。 このディメンションには、ID の生の値が含まれます。 例：ハッシュ化されたメール、ハッシュ化された電話、ECID。 この値は **[!UICONTROL ステッチされた名前空間]** で使用されます。
-  ![&#x200B; ステッチ ID ディメンション &#x200B;](assets/stitchedid-dimension.png)
+  ![ ステッチ ID ディメンション ](/help/stitching/assets/stitchedid-dimension.png)
 
 
 さらに、ディメンション内の値の存在に基づく 2 つのステッチ指標を追加する必要があります。
@@ -129,24 +120,24 @@ Workspaceで、新しいプロジェクトを作成し、フリーフォーム�
 1. ステッチされたデータセットの人物 ID を含むフィールドを使用して、人物 ID が設定されているかどうかを定義する指標を設定します。 人物 ID はベースラインの確立に役立つので、グラフベースのステッチを使用している場合でも、この人物 ID を追加します。 ユーザー ID がデータセットに含まれていない場合、ベースラインは 0% です。
 
    次の例では、`personalEmail.address` は ID として機能し、**[!UICONTROL _Email set]** 指標の作成に使用されます。
-   ![&#x200B; メールセットの指標 &#x200B;](assets/emailset-metric.png)
+   ![ メールセットの指標 ](/help/stitching/assets/emailset-metric.png)
 
-1. 「`stitchedID.namespace.code`」フィールドを使用して、「**[!UICONTROL メールステッチされた名前空間]** 指標を作成します。 必ず [&#x200B; コンポーネント設定に値を含める除外 &#x200B;](/help/data-views/component-settings/include-exclude-values.md) を指定して、データ行を昇格しようとしている名前空間の値のみを考慮するようにします。
+1. 「`stitchedID.namespace.code`」フィールドを使用して、「**[!UICONTROL メールステッチされた名前空間]** 指標を作成します。 必ず [ コンポーネント設定に値を含める除外 ](/help/data-views/component-settings/include-exclude-values.md) を指定して、データ行を昇格しようとしている名前空間の値のみを考慮するようにします。
    1. 「**[!UICONTROL 値を含める/除外する]**」を選択します。
    1. **[!UICONTROL すべての条件を満たす場合]** を **[!UICONTROL 一致]** として選択します。
-   1. **[!UICONTROL 条件]** として `email` 次に等しい **&#x200B;**&#x200B;を指定し、メール名前空間に昇格されたイベントを選択します。
+   1. **[!UICONTROL 条件]** として `email` 次に等しい **** を指定し、メール名前空間に昇格されたイベントを選択します。
 
-   ![&#x200B; メールステッチされた名前空間指標 &#x200B;](assets/emailstitchednamespace-metric.png)
+   ![ メールステッチされた名前空間指標 ](/help/stitching/assets/emailstitchednamespace-metric.png)
 
 ### ステッチされたディメンション
 
-これらのディメンションの両方がデータビューに追加された状態で、Analysis Workspaceの [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を使用して、各ディメンションに含まれるデータを確認します。
+これらのディメンションの両方がデータビューに追加された状態で、Analysis Workspaceの [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) を使用して、各ディメンションに含まれるデータを確認します。
 
 **[!UICONTROL ステッチされた名前空間]** ディメンションテーブルには、通常、データセットごとに 2 行が表示されます。 1 行は、ステッチプロセスでフォールバックメソッド（ECID）を使用する必要があった場合を表します。 もう 1 つの行には、目的の ID 名前空間に関連付けられたイベント（メール）が表示されます。
 
 **[!UICONTROL ステッチ ID 値]** ディメンションテーブルの場合、イベントから取得された生の値が表示されます。 この表では、永続 ID と目的の人物 ID の間で値が切り替わっていることがわかります。
 
-![&#x200B; ステッチされたディメンションを確認 &#x200B;](assets/check-data-on-stitching.png)
+![ ステッチされたディメンションを確認 ](/help/stitching/assets/check-data-on-stitching.png)
 
 
 ### デバイス中心またはユーザー中心のレポート
@@ -154,14 +145,14 @@ Workspaceで、新しいプロジェクトを作成し、フリーフォーム�
 接続を作成する場合は、ユーザー ID に使用するフィールドまたは ID を定義する必要があります。 例えば、Web データセットでは、ユーザー ID としてデバイス ID を選択すると、デバイス中心のレポートが作成されるので、このデータを他のオフラインチャネルと結合できなくなります。 クロスチャネルフィールドや ID （メールなど）を選択すると、未認証のイベントで失われます。 この影響を理解するには、認証されていないトラフィックの量と、認証されているトラフィックの量を把握する必要があります。
 
 1. 計算指標 **[!UICONTROL 合計未認証イベント数]** を作成します。 次に示すように、ルールビルダーでルールを定義します。
-   ![&#x200B; 認証されていないイベントの合計 &#x200B;](assets/calcmetric-unauthenticatedeventsovertotal.png)
+   ![ 認証されていないイベントの合計 ](/help/stitching/assets/calcmetric-unauthenticatedeventsovertotal.png)
 
 1. 前に定義した **[!UICONTROL _Email のセット]** 指標に基づいて、計算指標 **[!UICONTROL メール認証率]** を作成します。 次に示すように、ルールビルダーでルールを定義します。
-   ![&#x200B; メール認証率 &#x200B;](assets/calcmetric-emailauthenticationrate.png)
+   ![ メール認証率 ](/help/stitching/assets/calcmetric-emailauthenticationrate.png)
 
-1. **[!UICONTROL 合計に対する未認証イベント]** の計算指標を **[!UICONTROL メール認証率]** の計算指標と共に使用して、[&#x200B; ドーナツ &#x200B;](/help/analysis-workspace/visualizations/donut.md) ビジュアライゼーションを作成します。 このビジュアライゼーションには、データセット内の未認証と認証済みのイベントの数が表示されます。
+1. **[!UICONTROL 合計に対する未認証イベント]** の計算指標を **[!UICONTROL メール認証率]** の計算指標と共に使用して、[ ドーナツ ](/help/analysis-workspace/visualizations/donut.md) ビジュアライゼーションを作成します。 このビジュアライゼーションには、データセット内の未認証と認証済みのイベントの数が表示されます。
 
-   ![ID の詳細 &#x200B;](assets/identification-details.png)
+   ![ID の詳細 ](/help/stitching/assets/identification-details.png)
 
 
 
@@ -170,13 +161,13 @@ Workspaceで、新しいプロジェクトを作成し、フリーフォーム�
 ステッチの前後で ID パフォーマンスを測定する必要があります。 それには、次の 3 つの計算指標を追加で作成します。
 
 1. **[!UICONTROL ステッチ認証率]** の計算指標。イベントの合計数に対して、ステッチされた名前空間が目的の ID に設定されるイベント数を計算します。 データビューを設定する際に、イベントの名前空間がメールに設定されている場合にのみカウントするフィルターを含んだ **[!UICONTROL メールステッチされた名前空間]** 指標を作成しました。 計算指標は、この **[!UICONTROL メールステッチされた名前空間]** 指標を使用して、目的の ID を持つデータの割合を示します。
-   ![&#x200B; ステッチ認証率計算指標 &#x200B;](assets/calcmetric-stitchedauthenticationrate.png)
+   ![ ステッチ認証率計算指標 ](/help/stitching/assets/calcmetric-stitchedauthenticationrate.png)
 
 1. 現在の識別率とステッチされた率の間の生の変化率を計算する **[!UICONTROL 増加率]** 計算指標です。
-   ![&#x200B; 増加率の計算指標 &#x200B;](assets/calcmetric-percentincrease.png)
+   ![ 増加率の計算指標 ](/help/stitching/assets/calcmetric-percentincrease.png)
 
 1. 現在の識別率とステッチされた識別率の間の上昇率を計算する **[!UICONTROL 上昇率]** 計算指標。
-   ![&#x200B; 計算指標の上昇率 &#x200B;](assets/calcmetric-lift.png)
+   ![ 計算指標の上昇率 ](/help/stitching/assets/calcmetric-lift.png)
 
 
 ### まとめ
@@ -188,9 +179,12 @@ Analysis Workspaceのフリーフォームテーブルのすべてのデータ�
 * 増加率（%）：ステッチされた認証率からベースラインの現在の認証率を引いた値の生の増加率。
 * 上昇率：ベースラインの現在の認証率に対する変化率。
 
-![&#x200B; 本人確認 &#x200B;](assets/identification-performance.png)
+![ 本人確認 ](/help/stitching/assets/identification-performance.png)
 
-この記事の重要なポイントは、このタイプのステッチの検証と分析が次の目的に役立つことです。
+
+## 重要な留意点
+
+この記事の重要なポイントは、ステッチの検証と分析が役立つことです。
 
 * 現在の認証率とステッチされた認証率を比較することで、認証の有効性に関する包括的なカスタムビューを提供します。
 * 上昇率と上昇率指標を通じて改善点を明確に測定できます。
