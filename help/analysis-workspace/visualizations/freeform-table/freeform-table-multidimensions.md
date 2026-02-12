@@ -3,9 +3,10 @@ title: フリーフォームテーブルへの複数のディメンションの�
 description: フリーフォームテーブルに複数のディメンションを含める方法を説明します
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 ## 連結されたディメンション項目
 
-[&#x200B; フリーフォームテーブルに複数のディメンション列を追加 &#x200B;](#add-multiple-dimension-columns) する場合、ディメンション項目の各行は、単一の連結ディメンション項目のように動作します。 この機能を使用すると、特定のディメンションの組み合わせに対する指標データを表示できます。
+[ フリーフォームテーブルに複数のディメンション列を追加 ](#add-multiple-dimension-columns) する場合、ディメンション項目の各行は、単一の連結ディメンション項目のように動作します。 この機能を使用すると、特定のディメンションの組み合わせに対する指標データを表示できます。
 
 例えば、ディメンション列が _市区町村_、_デバイスタイプ_、および _日_ で、指標が _イベント_ であるフリーフォームテーブルについて考えてみます。 このテーブルの最初の行にある 3 つのディメンション項目は、月の 30 日に携帯電話からムンバイで発生したイベントが 2,056 件あったことを示す単一の連結ディメンション項目になります。
 
@@ -33,7 +34,7 @@ ht-degree: 2%
 
 Analysis Workspaceでのテーブルの表示方法を次に示します。
 
-![&#x200B; 複数ディメンションの例 &#x200B;](assets/multi-dim-example.png)
+![ 複数ディメンションの例 ](assets/multi-dim-example.png)
 
 ## 複数のディメンション列の追加
 
@@ -41,27 +42,27 @@ Analysis Workspaceでのテーブルの表示方法を次に示します。
 
 1. Analysis Workspaceで、フリーフォームテーブルを作成します。
 
-   詳しくは、[&#x200B; ビジュアライゼーションの概要 &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) の [&#x200B; パネルへのビジュアライゼーションの追加 &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を参照してください。
+   詳しくは、[ ビジュアライゼーションの概要 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) の [ パネルへのビジュアライゼーションの追加 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を参照してください。
 
 1. フリーフォームテーブルにディメンションを追加します。 ディメンションは、1 つずつ追加することも、一度に複数のディメンションを追加することもできます。
 
    * ディメンションを 1 つずつフリーフォームテーブルにドラッグします。 テーブル内の既存のディメンション列の左側または右側に、追加のディメンション列を配置します。 新しい列が作成される場所に、青い縦線 **[!UICONTROL 追加]** が表示されます。
 
-     ![&#x200B; 個々の寸法をドラッグ &#x200B;](assets/dimensions-add-individually.png)
+     ![ 個々の寸法をドラッグ ](assets/dimensions-add-individually.png)
 
    * コンポーネントメニューで最大 5 つのディメンションを選択し、フリーフォームテーブルにドラッグします。 ディメンションは、選択した順序で左から右にテーブルに追加されます。
 
      複数の寸法を選択するには、***Command*** キー（Macの場合）または ***Ctrl*** キー（Windows の場合）を押します。
 
-     ![&#x200B; 複数の寸法をドラッグする &#x200B;](assets/dimensions-add-multiple.png)
+     ![ 複数の寸法をドラッグする ](assets/dimensions-add-multiple.png)
 
-1. テーブルの各行を単一のディメンション項目として表示します。 詳しくは、[&#x200B; 連結されたディメンション項目 &#x200B;](#concatenated-dimension-items) を参照してください。
+1. テーブルの各行を単一のディメンション項目として表示します。 詳しくは、[ 連結されたディメンション項目 ](#concatenated-dimension-items) を参照してください。
 
 ## テーブルのフィルタリングと並べ替え
 
 フリーフォームテーブルの列にフィルタリングと並べ替えを適用できます。 フリーフォームテーブルのデータは、ディメンションか指標かに関わらず、任意の列で並べ替えることができます。 複数の列で同時に並べ替えることもできます。
 
-詳しくは、[&#x200B; フリーフォームテーブルのフィルタリングと並べ替え &#x200B;](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) を参照してください。
+詳しくは、[ フリーフォームテーブルのフィルタリングと並べ替え ](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) を参照してください。
 
 ## 複数のディメンション列と分類
 
@@ -81,11 +82,11 @@ Analysis Workspaceでは、フリーフォームテーブル内に複数のデ�
 
 * ディメンション項目がテーブルの各ディメンション列に適用される場合にのみ、連結された行にディメンション項目を含めます。 これを行うには、列フィルターを使用して、各ディメンション列の **[!UICONTROL 「値なし」を含める]** 設定の選択を解除します。
 
-  詳しくは、[&#x200B; 複数の列でテーブルを並べ替える（詳細な並べ替え） &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting) を参照してください。
+  詳しくは、[ 複数の列でテーブルを並べ替える（詳細な並べ替え） ](#sort-tables-by-multiple-columns-advanced-sorting) を参照してください。
 
 * 複数のディメンション列および指標列でデータを並べ替えて、よりカスタマイズされたデータを表示します。
 
-  詳しくは、[&#x200B; 複数の列でテーブルを並べ替える（詳細な並べ替え） &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting) を参照してください。
+  詳しくは、[ 複数の列でテーブルを並べ替える（詳細な並べ替え） ](#sort-tables-by-multiple-columns-advanced-sorting) を参照してください。
 
 分類を使用すると、次のことができます。
 
@@ -95,25 +96,26 @@ Analysis Workspaceでは、フリーフォームテーブル内に複数のデ�
 
 複数のディメンション列を持つテーブルに分類を追加する場合、分類は、その分類を追加した行の（すべてのディメンション列に対して）連結されたディメンション項目に適用されます。
 
-![&#x200B; 複数ソートの分類の例 &#x200B;](assets/dimensions-multiple-sort-breakdown.png)
+![ 複数ソートの分類の例 ](assets/dimensions-multiple-sort-breakdown.png)
 
 さらに、分類内に複数のディメンション列を追加できます。 分類内のディメンション項目の各行は、単一の連結されたディメンション項目のように動作します。
 
 <!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
-分類の追加方法について詳しくは、[&#x200B; ディメンションの分類 &#x200B;](/help/components/dimensions/t-breakdown-fa.md) を参照してください。
+分類の追加方法について詳しくは、[ ディメンションの分類 ](/help/components/dimensions/t-breakdown-fa.md) を参照してください。
 
 ## 複数のディメンション列にまたがるディメンション項目に基づいてセグメントを作成します
 
 複数のディメンション列にまたがるディメンション項目に基づいてセグメントを作成する場合、各ディメンション項目はセグメント定義に含まれ、AND 演算子によって結合されます。
 
-セグメントの作成について詳しくは、[&#x200B; セグメントの作成 &#x200B;](/help/components/segments/seg-create.md) を参照してください。
+セグメントの作成について詳しくは、[ セグメントの作成 ](/help/components/segments/seg-create.md) を参照してください。
 
-## サポートされていないディメンション {#unsupported}
+## サポートされていない寸法と機能 {#unsupported}
 
-次のディメンションの組み合わせはサポートされておらず、Analysis Workspaceでは追加が禁止されているか、追加後にエラーメッセージが表示されます。
+次のディメンションの組み合わせと機能は、複数のディメンション列を使用する場合はサポートされていません。Analysis Workspaceでは、それらの使用が禁止されているか、エラーメッセージが表示されます。
 
-* 同じフリーフォームテーブルで一緒に使用される異なる [&#x200B; オブジェクトの配列 &#x200B;](/help/use-cases/object-arrays.md) を参照するフィールドの複数のディメンション。
+* 同じフリーフォームテーブルで一緒に使用される異なる [ オブジェクトの配列 ](/help/use-cases/object-arrays.md) を参照するフィールドの複数のディメンション。
 
   オブジェクトの同じ配列を参照する場合、複数のディメンションを同じフリーフォームテーブルにまとめることができます。
 
+* [ 静的ディメンション項目 ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items)。
