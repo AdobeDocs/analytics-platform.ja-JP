@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+source-git-commit: e1f7245a6c9bf6e36a49edafbcbb0e1005bc6e5b
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2548'
+ht-degree: 89%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 98%
 >
 >Data Insights Agent は、対象となる顧客が期間限定で使用できます。Data Insights Agent へのアクセスは、2026年2月28日（PT）まで利用できます。Data Insights Agent をこの日付以降も中断することなく引き続き使用するには、アドビアカウント担当者に連絡して、Adobe Experience Platform Agent Orchestrator のライセンスの詳細を確認してください。
 
-Customer Journey Analytics の [AI アシスタント](/help/ai-assistant.md)からアクセス可能な Data Insights Agent は、データに関する質問に迅速かつ効率的に回答する生成 AI 会話エージェントです。データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。
+Customer Journey Analytics の [AI アシスタント](/help/ai-assistant.md)からアクセス可能な Data Insights Agent は、データに関する質問に迅速かつ効率的に回答する生成 AI 会話エージェントです。データビューと実際のデータのコンポーネントを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
 
-Data Insights Agent を使用して Analysis Workspace のデータ中心の質問に回答することで、Analysis Workspace でビジュアライゼーションを手動で作成し、データビューコンポーネントに慣れるのに費やすことになる時間を大幅に削減できます。
+Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問に答えると、Analysis Workspaceでビジュアライゼーションを手動で構築し、データビューコンポーネントに慣れる時間が大幅に短縮されます。
 
 ![AI アシスタント内の Data Insights Agent](assets/cja-ai-asst-da.gif)
 
@@ -29,9 +29,9 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 | 機能 | 範囲内 | 範囲外 |
 | --- | --- | --- |
 | **ビジュアライゼーションのタイプ** | <ul><li>行</li><li>複数行</li><li>フリーフォームテーブル</li><li>棒グラフ</li><li>ドーナツ</li><li>数値の概要</li></ul> | <ul><li>フロー</li><li>フォールアウト</li><li>コホートテーブル</li><li>面グラフ、積み重ね面グラフ</li><li>積み重ね棒グラフ</li><li>ブレット</li><li>コンボ</li><li>ヒストグラム</li><li>横棒グラフ、積み重ね横棒グラフ</li><li>主要指標の概要</li><li>散布図</li><li>変更の概要</li><li>テキスト</li><li>ツリーマップ</li><li>ベン図</li><li>ガイド付き分析：アクティブな増加率、コンバージョンのトレンド、エンゲージメント、初回使用の影響、頻度、ファネル、純増加率、リリースの影響、リテンション、タイムライン、トレンド</li></ul> |
-| **Workspace のアクションとエージェントの機能** | <ul><li>ビジュアライゼーションの作成と更新<p>フリーフォームテーブルおよび関連するビジュアライゼーション（線、棒グラフ、ドーナツなど）を作成します。<p>例：*2 月から 5 月の SKU 全体の利益は？*</p></li><li>フォローアップの質問をする<p>前回のプロンプトからコンテキスト内のプロンプトに応答します。次に例を示します。</p> <ul><li>プロンプト 1：*3 月からのイベントのトレンド*。</li><li>プロンプト 2：*代わりに 3 月から 4 月のデータを表示する*</li></ul> </li><li>範囲外のプロンプト検出<p>*このプロジェクトを書き出す*&#x200B;などの範囲外のプロンプトを送信すると、Data Insights Agent は、質問が範囲外であることを伝える応答を返します。</p></li></ul> | <ul><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>データビューの管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li><li>インラインの概要または応答<p>Data Insights Agent は、ユーザーからのプロンプトに対する回答の概要をチャットパネルのインラインで返すことはできません。範囲外プロンプトの例として、*前回のプロンプトのインサイトの概要を入力する*、*折れ線グラフのビジュアライゼーションのハイライトをまとめる*&#x200B;などがあります。</p></li></ul> |
+| **Workspace のアクションとエージェントの機能** | <ul><li>ビジュアライゼーションの作成と更新<p>フリーフォームテーブルおよび関連するビジュアライゼーション（線、棒グラフ、ドーナツなど）を作成します。</p><p>例：*2 月から 5 月の SKU 全体の利益は？*</p></li><li>フォローアップの質問をする<p>前回のプロンプトからコンテキスト内のプロンプトに応答します。次に例を示します。</p> <ul><li>プロンプト 1：*3 月からのイベントのトレンド*。</li><li>プロンプト 2：*代わりに 3 月から 4 月のデータを表示する*</li></ul> </li><li>範囲外のプロンプト検出<p>*このプロジェクトを書き出す*&#x200B;などの範囲外のプロンプトを送信すると、Data Insights Agent は、質問が範囲外であることを伝える応答を返します。</p></li></ul> | <ul><li>共有</li><li>書き出し</li><li>ダウンロード</li><li>ユーザー環境設定の管理</li><li>データビューの管理</li><li>Analytics ダッシュボードアプリ</li><li>アトリビューション</li><li>インラインの概要または応答<p>Data Insights Agent は、ユーザーからのプロンプトに対する回答の概要をチャットパネルのインラインで返すことはできません。範囲外プロンプトの例として、*前回のプロンプトのインサイトの概要を入力する*、*折れ線グラフのビジュアライゼーションのハイライトをまとめる*&#x200B;などがあります。</p></li></ul> |
 | **質問の明確化** | Data Insights Agent が回答するのに十分なコンテキストがない、または一般的すぎる質問をした場合、Data Insights Agent は明確な質問を返すか、候補となるオプションを提示します。 <p>以下は、コンポーネント関連の明確な質問の例です。</p><ul><li>指標：*どの「売上高」指標のことですか？*</li><li>ディメンション：*以下のどの「地域」に集中しますか？*</li><li>セグメント：*どの「アカウント」セグメントを適用しますか？*</li><li>日付範囲：*「先月」とは、過去 1 か月間のことですか、それとも過去 30 日間のことですか？*</li></ul><p>以下は、ディメンション項目に関する明確な質問の例です。</p> <ul><li>どの「ストア名」のことですか？（例えば、ストア #5274、ストア #2949 などがあります。）</li></ul> | 質問を明確にするのは、コンポーネントとディメンション項目に限られます。Data Insights Agent は、データビュー、ビジュアライゼーション、データの精度、比較、範囲などを明確にすることはできません。質問を明確にできない場合、エージェントは、ユーザーから受ける可能性が最も高い質問にデフォルトで対応します。予期しないビジュアライゼーションまたはデータの精度が返された場合は、フォローアップの質問をしたり、ビジュアライゼーションやデータを調整したりできます。 |
-| **データの検証可能性と正確性** | データの検証可能性と正確性は、生成されたフリーフォームテーブルとデータビジュアライゼーションを表示することで確認できます。 <p>例えば、Data Insights Agent に&#x200B;*先月の注文のトレンド*&#x200B;を依頼すると、新しく生成されたパネル、データビジュアライゼーションおよびフリーフォームテーブルで正しい指標（「注文」）と日付範囲（「先月」）が選択されていることを確認できます。 | Data Insights Agent は、どのコンポーネントやビジュアライゼーションが追加されたかについての応答はしません。</p> |
+| **データの検証可能性と正確性** | データの検証可能性と正確性は、生成されたフリーフォームテーブルとデータビジュアライゼーションを表示することで確認できます。 <p>例えば、Data Insights Agent に&#x200B;*先月の注文のトレンド*&#x200B;を依頼すると、新しく生成されたパネル、データビジュアライゼーションおよびフリーフォームテーブルで正しい指標（「注文」）と日付範囲（「先月」）が選択されていることを確認できます。</p> | Data Insights Agent は、どのコンポーネントやビジュアライゼーションが追加されたかについての応答はしません。 |
 | **フィードバックのメカニズム** | <ul><li>親指を上に向ける</li><li>親指を下に向ける</li><li>フラグ</li></ul> |  |
 
 
@@ -48,13 +48,13 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 
 次のパラメーターは、Customer Journey Analytics の Data Insights Agent へのアクセスを制御します。
 
-* **ソリューションへのアクセス**：Data Insights Agent は、2025年11月30日（PT）まで、限定アクセスプログラムの一部として、すべての Customer Journey Analytics のお客様が使用できます。Adobe Analytics では利用できません。
+* **ソリューションアクセス**:Data Insights Agentは、対象となるお客様が期間限定で利用できます。 Data Insights Agent へのアクセスは、2026年2月28日（PT）まで利用できます。Adobe Analytics では利用できません。
 
 * **契約によるアクセス**：AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights Agent の使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -80,16 +80,31 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
   >
   >データビューを有効にする際は、次の点を考慮してください。
   >* IMS 組織ごとに最大 50 個のデータビューを有効にできます。特定の組織のすべての製品プロファイルで 50 個を超えるデータビューを有効にした場合、Data Insights Agent は最もよく使用されている 50 個のデータビューを使用します。
+  >  データビューのData Insights Agent列の [info](/help/data-views/manage-dataviews.md#manage-data-views) を使用すると、IMS 組織のData Insights Agentで有効になっているデータビューの数を確認できます。
   >* Data Insights Agent は、有効にしたその日のうちに、含まれるデータビューを参照できます。
 
-  Data Insights Agentのデータビューを有効にするには、[&#x200B; データビューの AI 設定 &#x200B;](/help/data-views/create-dataview.md#ai-settings) を参照してください。
+  Data Insights Agent に対してデータビューを有効にするには：
 
-  データビューのData Insights Agent列の [info](/help/data-views/manage-dataviews.md#manage-data-views) を使用すると、IMS 組織のData Insights Agentで有効になっているデータビューの数を確認できます。
+   1. Customer Journey Analytics で、**[!UICONTROL データ管理]**／**[!UICONTROL データビュー]**&#x200B;を選択します。
+
+   1. Data Insights Agent に対して有効にする 1 つ以上のデータビューを選択して、「**[!UICONTROL Data Insights Agent に対して有効にする]**」を選択します。
+
+      ![Data Insights Agent に対してデータビューを有効にする](assets/data-view-enable-dia.png)
+
+      Data Insights Agentのデータビューを有効にする方法については、[ データビューの AI 設定 ](/help/data-views/create-dataview.md#ai-settings) を参照してください。
+
+  IMS 組織の Data Insights Agent トに対して有効なデータビューの数を表示するには：
+
+   1. Customer Journey Analytics で、**[!UICONTROL データ管理]**／**[!UICONTROL データビュー]**&#x200B;を選択します。
+
+   1. **[!UICONTROL Data Insights Agent]** 列の上部にある情報アイコンを選択します。
+
+      ![Data Insights Agent 情報アイコン](assets/data-insights-agent-tooltip.png)
 
 
 ## AI アシスタントの Data Insights Agent へのアクセス
 
-1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe ID でログインします。
+1. [experience.adobe.com](https://experience.adobe.com/) に移動し、Adobe IDを使用してログインします。
 
 2. Experience Cloud ホームから **Customer Journey Analytics** を選択します。
 
@@ -99,7 +114,7 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 
 5. ページの右上にある AI アシスタントチャットアイコンを選択します。
 
-   チャットアイコンが表示されない場合は、管理者に問い合わせて、Admin Console で次の機能を有効にするよう依頼してください。
+   チャットアイコンが表示されない場合は、管理者に問い合わせて、Admin Consoleで次の機能を有効にしてもらってください。
 
    * レポートツール：**[!UICONTROL AI アシスタント：製品知識]**
 
@@ -143,7 +158,7 @@ Data Insights Agent を使用して Analysis Workspace のデータ中心の質�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -163,7 +178,7 @@ Adobe Experience Platform エージェントオーケストレーターを使用
 
 エージェントオーケストレーターは、リクエストを解釈してどの専門エージェントが必要かを判断し、適切な応答を提供するようにエージェントを調整します。マルチターンのインタラクションをまたいでコンテキストを追跡するので、以前のクエリに基づいて自然に構築できます。
 
-詳しくは、[Adobe Experience Platform エージェントオーケストレーター](http://www.adobe.com/go/agent-orchestrator-home_jp)を参照してください。
+詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)を参照してください。
 
 ## データビジュアライゼーションのプロンプトの例
 
@@ -200,7 +215,7 @@ Data Insights Agent は、各ユーザープロンプトによって提供され
 
 Data Insights Agent のプロンプトで使用できる用語とフレーズの例を、想定される回答のタイプと共に、次の表で確認します。
 
-これらの例は、特定の単語や構造が Data Insight エージェントの出力にどのような影響を与えるかを把握し、より正確で役に立つインサイトを得られるようになることを目的としています。Data Insights Agent は生成 AI を使用するので、類似したプロンプトであっっても、ビジュアライゼーションや選択したデータが若干異なる可能性があります。
+これらの例は、特定の単語や構造がData Insights Agentの出力に与える影響を理解し、より正確で価値のあるインサイトを得ることができるように設計されています。 Data Insights Agent は生成 AI を使用するので、類似したプロンプトであっっても、ビジュアライゼーションや選択したデータが若干異なる可能性があります。
 
 | 望ましい結果 | 用語とフレーズの例 |
 | --- | --- |
@@ -241,11 +256,11 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 Data Insights Agent が正しいコンポーネントを見つけて、追加情報を求めることなく、より明確な回答を返すことができるようにする、Customer Journey Analytics 設定（データビュー、計算指標、セグメントなど）に関するベストプラクティスを以下に示します。
 
-* **必要なコンポーネントのバランスを取ります**。データセットのすべてのフィールドを指標またはディメンションコンポーネントとしてデータビューに追加しないでください。特に、分析で使用しないフィールドは追加しないでください。一方、分析に必要になると予想されるフィールドにのみ厳密に制限しないでください。データビューを制限しすぎると、分析の柔軟性と Data Insights Agent の機能が制限されます。
+* **必要なコンポーネントのバランスを取ります**。特に、分析で使用する予定のないフィールドなど、データセットのすべてのフィールドを指標やディメンションコンポーネントとしてデータビューに追加しないでください。 一方、分析に必要になると予想されるフィールドにのみ厳密に制限しないでください。データビューを制限しすぎると、分析の柔軟性と Data Insights Agent の機能が制限されます。
 * **常にわかりやすい表示名を使用します**。データビューで定義するすべてのフィールド（指標またはディメンションコンポーネントのいずれか）に、わかりやすいコンポーネント名が付けられていることを確認します。フィールド名をわかりやすい名前に変更するプロセスは、Adobe Analytics ソースコネクタデータセットのフィールドに特に関連します。多くの場合、これらのフィールドには、`eVar41` や `prop25` など、特定しにくい名前が付けられています。
 * **独特の名前を使用します**。独特の名前は、データビューで同じフィールドを指標とディメンションコンポーネントの両方として使用する場合に特に関連します。また、同じタイプの複数のコンポーネント（2 つの異なる指標など）でフィールドを使用し、それぞれコンポーネント設定が異なる場合にも関連します。
 * **コンポーネントの命名規則を使用します**。コンポーネントの命名規則を使用してコンポーネントをグループ化できます。例えば、**[!UICONTROL 注文 | 製品]**&#x200B;と&#x200B;**[!UICONTROL 注文 | 顧客]**&#x200B;を使用すると、データに存在する可能性のある様々な注文指標を区別できます。
-* **データ辞書を使用します**。データ辞書でコンポーネントの説明やその他の関連データを追加します。Data Insights エージェントは現在、データ辞書の説明とタグを使用していませんが、今後使用する可能性があります。
+* **データ辞書を使用します**。データ要素でコンポーネントの説明やその他の関連データを追加します。 Data Insights Agentは現在、データ要素の説明とタグを使用していませんが、将来、使用される可能性があります。
 * **承認済みの計算指標を使用します**。データビューのコンポーネントとして承認済みの計算指標のみを使用するプロセスに同意し、実験的な計算指標の使用は回避します。
 * **必要なセグメントを共有します**。セグメントを共有し、Data Insights Agent のプロンプトに必要なセグメントが表示されるようにします。
 * **データビュー間でコンポーネント名を標準化します**。複数のデータビューでコンポーネントとして同じフィールドを使用する場合は、そのコンポーネントに対して単一のわかりやすい名前と単一の識別子を使用する必要があります。単一の名前と識別子を使用すると、Data Insights Agent はコンテキストを失うことなくデータビューを切り替えることができます。
