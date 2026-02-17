@@ -4,9 +4,9 @@ description: 高度な計算指標関数について説明します。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
+source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5294'
 ht-degree: 98%
 
 ---
@@ -1351,11 +1351,11 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="サンプル分散"
->abstract="数式 `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))` を使用して、標本分散の推定値を計算します。 ここで、`N` は正規化コンテナのカウントです。 <br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。"
+>abstract="数式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) を使用してサンプル分散の推定値を計算します。ここで、N は正規化コンテナのカウントです。<br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。"
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
-数式 `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))` を使用して、標本分散の推定値を計算します。 ここで、`N` は正規化コンテナのカウントです。<br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。
+数式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) を使用してサンプル分散の推定値を計算します。ここで、N は正規化コンテナのカウントです。<br/>これは、*常に有効な*&#x200B;信頼性計算の一部として使用されます。一般に、この関数は単独では役に立ちませんが、計算を確認したり、信頼性計算を&#x200B;*手動*&#x200B;で実行したりするために使用できます。
 
 | 引数 | 説明 |
 | --- | --- |
