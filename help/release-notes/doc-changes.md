@@ -20,9 +20,9 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年2月** | |
-| スタンドアロン Content Analytics | [Content Analyticsのスタンドアロン設定 ](/help/content-analytics/config/standalone.md) に関するドキュメントを追加しました。 |
+| スタンドアロン Content Analytics | [Content Analyticsのスタンドアロン設定 &#x200B;](/help/content-analytics/config/standalone.md) に関するドキュメントを追加しました。 |
 | **2026年1月** | |
-| スキーマを設計 | [Customer Journey Analyticsで使用するスキーマを構築する ](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) ための実質的な情報とコンテキストが追加されました。 |
+| スキーマを設計 | [Customer Journey Analyticsで使用するスキーマを構築する &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) ための実質的な情報とコンテキストが追加されました。 |
 
 
 ## 2025年
@@ -30,7 +30,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 | --- | --- |
 | **2025年12月** | |
-| サンドボックスの変更の影響 | サンドボックスの削除またはリセットの影響を「削除とリセットの影響 [ に追加し ](/help/technotes/deletion.md) した。 |
+| サンドボックスの変更の影響 | サンドボックスの削除またはリセットの影響を「削除とリセットの影響 [&#x200B; に追加し &#x200B;](/help/technotes/deletion.md) した。 |
 | **2025年11月** | |
 | 1 件の接続の 1 日あたりの行のガードレール | 1 件の接続の 1 日あたりの最大平均行数についての[データ転送制限のガードレール情報](/help/technotes/guardrails.md)を追加しました。 |
 | **2025年10月** | |
