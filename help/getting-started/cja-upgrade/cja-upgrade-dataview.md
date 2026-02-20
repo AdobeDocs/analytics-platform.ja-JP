@@ -8,7 +8,7 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 90%
 
 データビューを作成するには：
 
-1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、必要に応じて **[!UICONTROL データ管理]** から **[!UICONTROL データビュー]** を選択します。
+1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、上部のメニューにある&#x200B;**[!UICONTROL データ管理]**&#x200B;から、オプションで「**[!UICONTROL データビュー]**」を選択します。
 
 1. 「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
 

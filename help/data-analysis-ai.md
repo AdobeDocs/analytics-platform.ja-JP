@@ -52,9 +52,9 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights Agent の使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[&#x200B; 製品プロファイル管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -91,7 +91,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
       ![Data Insights Agent に対してデータビューを有効にする](assets/data-view-enable-dia.png)
 
-      Data Insights Agentのデータビューを有効にする方法については、[&#x200B; データビューの AI 設定 &#x200B;](/help/data-views/create-dataview.md#ai-settings) を参照してください。
+      Data Insights Agentのデータビューを有効にする方法については、[ データビューの AI 設定 ](/help/data-views/create-dataview.md#ai-settings) を参照してください。
 
   IMS 組織の Data Insights Agent トに対して有効なデータビューの数を表示するには：
 
@@ -158,7 +158,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -178,7 +178,7 @@ Adobe Experience Platform エージェントオーケストレーターを使用
 
 エージェントオーケストレーターは、リクエストを解釈してどの専門エージェントが必要かを判断し、適切な応答を提供するようにエージェントを調整します。マルチターンのインタラクションをまたいでコンテキストを追跡するので、以前のクエリに基づいて自然に構築できます。
 
-詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/jp/products/experience-platform/agent-orchestrator.html)を参照してください。
+詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)を参照してください。
 
 ## データビジュアライゼーションのプロンプトの例
 

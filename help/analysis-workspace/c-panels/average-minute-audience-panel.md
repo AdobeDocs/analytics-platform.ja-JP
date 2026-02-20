@@ -33,7 +33,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ のメディア分平均オーディエンスパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[メディア分平均オーディエンスパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ のメディア分平均オーディエンスパネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[メディア分平均オーディエンスパネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -85,7 +85,7 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
    | [!UICONTROL **ここにセグメント（または他のコンポーネント）をドロップ**] | 他のパネルと同様に、この設定では、作成したセグメントに基づいて選択内容がセグメント化されます。この設定は、特定のプラットフォーム、ライブストリームまたはその他の一般的なメディアセグメントを調べる優れた方法です。 |
    | [!UICONTROL **指標の計算対象**] | [**[!UICONTROL 特定のコンテンツ]**](#specific-content)の分平均オーディエンスを表示するかどうかを選択します。 または、[**[!UICONTROL カスタム期間]**](#custom-time-period)の分平均オーディエンスを表示する場合も同様です。<br/><br/>次の場合に&#x200B;[!UICONTROL **カスタム期間**]&#x200B;を選択します。 <ul><li>期間を使用できない場合、または </li><li>複数のコンテンツを含む時系列の分平均オーディエンスを表示する場合、または</li><li>（ライブストリームやイベント中など）特定の期間が割り当てられていないコンテンツの場合</li></ul></li></li></ul> <p>この設定により、ワークフローとレポートの出力が変更されます。</p> |
 
-1. [&#x200B; 指標の計算対象 &#x200B;](#specific-content) ドロップダウンメニューで選択したオプションに応じて、[&#x200B; 特定のコンテンツ &#x200B;](#custom-time-period) または [!UICONTROL **カスタム期間**] を続けます。
+1. [ 指標の計算対象 ](#specific-content) ドロップダウンメニューで選択したオプションに応じて、[ 特定のコンテンツ ](#custom-time-period) または [!UICONTROL **カスタム期間**] を続けます。
 
 #### 特定のコンテンツ
 
@@ -187,6 +187,6 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
 >[!MORELIKETHIS]
 >
 > [パネルの作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [メディア同時視聴者数パネル](media-concurrent-viewers.md)
-> &#x200B;> [メディア再生滞在時間パネル](media-playback-time-spent.md)
+> [メディア同時視聴者数パネル](media-concurrent-viewers.md)
+> [メディア再生滞在時間パネル](media-playback-time-spent.md)
 >

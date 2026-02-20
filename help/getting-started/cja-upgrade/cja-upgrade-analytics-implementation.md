@@ -63,7 +63,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
->title="Mobile SDK"
+>title="モバイル SDK"
 >abstract="Adobe Experience Platform Mobile SDK を使用する実装。"
 
 <!-- markdownlint-enable MD034 -->

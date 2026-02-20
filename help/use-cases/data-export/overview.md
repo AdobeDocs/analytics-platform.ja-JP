@@ -29,7 +29,7 @@ ht-degree: 7%
 
 ## はじめに
 
-Adobe AnalyticsとCustomer Journey Analyticsのユニークな違いの 1 つは、アトリビューションとセッション化のためのデータの処理に関連しています。 詳しくは、[Adobe AnalyticsとCustomer Journey Analytics間でのデータ処理の比較 &#x200B;](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) を参照してください。
+Adobe AnalyticsとCustomer Journey Analyticsのユニークな違いの 1 つは、アトリビューションとセッション化のためのデータの処理に関連しています。 詳しくは、[Adobe AnalyticsとCustomer Journey Analytics間でのデータ処理の比較 ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) を参照してください。
 
 ### Adobe Analytics：コレクション時間のアトリビューションとセッション。
 
@@ -49,7 +49,7 @@ Adobe Analyticsでは、すべてのイベントがデバイス ID 別にライ�
 
 Customer Journey Analyticsでは、イベントが順番に収集されず、デバイス ID の代わりにユーザー ID が使用されるので、Customer Journey Analyticsは、レポート時にアトリビューションとセッション化を更新できます。 このタイプのデータ収集では、次のような柔軟性が導入されます。
 
-* ステッチでは、毎日または毎週データを _再生_ し、匿名イベントを既知のイベントに関連付けることができます。 詳しくは、[&#x200B; ステッチ &#x200B;](../../stitching/overview.md) を参照してください。
+* ステッチでは、毎日または毎週データを _再生_ し、匿名イベントを既知のイベントに関連付けることができます。 詳しくは、[ ステッチ ](../../stitching/overview.md) を参照してください。
 * セッション化と永続化の値は毎回変更されます
    * 新しいデータが収集されるか、
    * ステッチにより、個人の履歴にイベントが追加されます。

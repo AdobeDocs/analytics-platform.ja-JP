@@ -33,11 +33,11 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)、_&#x200B;**Customer Journey Analytics** のブレットのビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)、_&#x200B;**Adobe Analytics** バージョンについて詳しくは、[ブレット](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)、_**Customer Journey Analytics** のブレットのビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)、_**Adobe Analytics** バージョンについて詳しくは、[ブレット](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)を参照してください。_
 
 >[!ENDSHADEBOX]
 
-![GraphBullet](/help/assets/icons/GraphBullet.svg)、**[!UICONTROL ブレット]**&#x200B;では、指標がパフォーマンス範囲（目標）とどのように比較されるか、またはパフォーマンス範囲（目標）に対してどのように測定されるかを示します。
+![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL ブレット]**&#x200B;ビジュアライゼーションは、指標がパフォーマンス範囲（目標）とどのように比較または測定されるかを示します。
 
 ![ブレットグラフのビジュアライゼーション](assets/bullet.png)
 
@@ -45,7 +45,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://video.tv.adobe.com/v/41510/?captions=jpn&quality=12/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -58,12 +58,12 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 | 設定 | 説明 |
 |---|---|
-| **[!UICONTROL ブレットオプション]** | [!UICONTROL ブレット]ビジュアライゼーションで、**[!UICONTROL 高い目標]**、**[!UICONTROL 中程度の目標]**、**[!UICONTROL 低い目標]**&#x200B;の値を指定します。<br/>**[!UICONTROL 高い目標&#x200B;]**&#x200B;は、目指している主な目標です。**[!UICONTROL &#x200B;低い目標&#x200B;]**&#x200B;と&#x200B;**[!UICONTROL &#x200B;中程度の目標&#x200B;]**&#x200B;では、高い目標を下回る範囲を作成します。メモ：「**[!UICONTROL &#x200B;割合&#x200B;]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。 |
+| **[!UICONTROL ブレットオプション]** | [!UICONTROL ブレット]ビジュアライゼーションで、**[!UICONTROL 高い目標]**、**[!UICONTROL 中程度の目標]**、**[!UICONTROL 低い目標]**&#x200B;の値を指定します。<br/>**[!UICONTROL 高い目標&#x200B;]**は、目指している主な目標です。**[!UICONTROL &#x200B;低い目標&#x200B;]**と**[!UICONTROL &#x200B;中程度の目標&#x200B;]**では、高い目標を下回る範囲を作成します。メモ：「**[!UICONTROL &#x200B;割合&#x200B;]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。 |
 
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
