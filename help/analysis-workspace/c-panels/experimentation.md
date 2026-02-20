@@ -180,8 +180,8 @@ Adobe Customer Journey Analytics の実験パネルを使用すると、デー�
 
 ## 実験パネルでの計算指標の使用
 
-[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)について詳しくは、このブログ投稿を参照してください。
+[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=ja)について詳しくは、このブログ投稿を参照してください。
 
 >[!MORELIKETHIS]
->[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=ja)
 >
