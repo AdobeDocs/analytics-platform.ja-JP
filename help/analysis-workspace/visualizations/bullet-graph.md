@@ -45,7 +45,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://video.tv.adobe.com/v/41510/?captions=jpn&quality=12/?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
