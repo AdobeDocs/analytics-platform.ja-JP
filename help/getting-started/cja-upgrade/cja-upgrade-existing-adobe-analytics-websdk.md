@@ -42,13 +42,13 @@ Adobe Analytics実装で既にAdobe Experience Platform Web SDKを使用して�
 
 1. Edge Networkから Platform へのデータ送信を開始します。 このデータオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-   詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
+   詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
 
 1. スキーマを選択します。
 
    既存の Platform スキーマを使用するかどうかを選択するか、他のAdobe Analytics サービスを使用し始める際に組織のニーズに合わせて XDM スキーマを作成できます。
 
-   Adobeでは、XDM スキーマを作成することをお勧めします。 詳しくは、[Customer Journey Analytics web SDKの実装で使用するカスタムスキーマの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
+   Adobeでは、XDM スキーマを作成することをお勧めします。 詳しくは、[Customer Journey Analytics web SDKの実装で使用するカスタムスキーマの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
 
    +++Adobe Analytics スキーマの使用
 
@@ -68,6 +68,6 @@ Adobe Analytics実装で既にAdobe Experience Platform Web SDKを使用して�
 
 1. データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。
 
-   詳しくは、Experience Platform ドキュメントの [ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) の [ マッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) を参照してください。
+   詳しくは、Experience Platform ドキュメントの [&#x200B; データ収集のためのデータ準備 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) の [&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) を参照してください。
 
 {{upgrade-final-step}}

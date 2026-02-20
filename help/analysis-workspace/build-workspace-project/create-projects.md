@@ -34,15 +34,15 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 * プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。例えば、 **[!DNL Example Panel]** は ➊ です。
 
 * パネルに[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を追加します。例：
-   * **[!DNL Line Graph]**[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
-   * **[!DNL Countries]**[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
+   * **[!DNL Line Graph]**&#x200B;[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
+   * **[!DNL Countries]**&#x200B;[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
 * ビジュアライゼーションに[コンポーネント](/help/components/overview.md)を追加します。例：
-   * **[!DNL Store Country]**[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
-   * **[!DNL People]**[&#x200B;指標](/help/components/apply-create-metrics.md)➎
-   * **[!DNL Avg Order Value]**[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
-   * **[!DNL Mobile App Sessions]**[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
-   * **[!DNL Last Month]**[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
-   * **[!DNL Example]**[&#x200B;注釈](/help/components/annotations/overview.md)➒
+   * **[!DNL Store Country]**&#x200B;[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
+   * **[!DNL People]**&#x200B;[&#x200B;指標](/help/components/apply-create-metrics.md)➎
+   * **[!DNL Avg Order Value]**&#x200B;[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
+   * **[!DNL Mobile App Sessions]**&#x200B;[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
+   * **[!DNL Last Month]**&#x200B;[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
+   * **[!DNL Example]**&#x200B;[&#x200B;注釈](/help/components/annotations/overview.md)➒
 
 
 ## プロジェクト情報および設定 {#project-info-settings}

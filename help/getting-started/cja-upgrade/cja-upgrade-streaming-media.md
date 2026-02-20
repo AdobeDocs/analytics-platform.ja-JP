@@ -31,15 +31,15 @@ Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする手
 
 * Customer Journey Analyticsのスキーマを作成する場合は、`MediaAnalytics Interaction Details` フィールドグループを含めます。
 
-  このフィールドグループの追加について詳しくは、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのスキーマの設定 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#set-up-the-schema-in-adobe-experience-platform) を参照してください。
+  このフィールドグループの追加について詳しくは、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのスキーマの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#set-up-the-schema-in-adobe-experience-platform) を参照してください。
 
-  スキーマの作成について詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
+  スキーマの作成について詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
 
 * Media Analytics 用にデータストリームを設定する際に、Customer Journey Analyticsを有効にします。
 
-  このオプションを有効にする方法については、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのデータストリームの設定 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#configure-a-datastream-in-adobe-experience-platform) を参照してください。
+  このオプションを有効にする方法については、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのデータストリームの設定 &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#configure-a-datastream-in-adobe-experience-platform) を参照してください。
 
-  データストリームの作成について詳しくは、[Customer Journey Analyticsで使用するデータストリームの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) を参照してください。
+  データストリームの作成について詳しくは、[Customer Journey Analyticsで使用するデータストリームの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) を参照してください。
 
   >[!NOTE]
   >
@@ -49,9 +49,9 @@ Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする手
 
   これらのスキーマフィールドを XDM オブジェクトの正しい値に必ずマッピングしてください。
 
-  必須フィールドについて詳しくは、ストリーミングメディアコレクションガイドの [Customer Journey Analyticsでのデータビューの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
+  必須フィールドについて詳しくは、ストリーミングメディアコレクションガイドの [Customer Journey Analyticsでのデータビューの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
 
-  データビューの作成について詳しくは、[Customer Journey Analyticsでのデータビューの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
+  データビューの作成について詳しくは、[Customer Journey Analyticsでのデータビューの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
 
 <!--
 
