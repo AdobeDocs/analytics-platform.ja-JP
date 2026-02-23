@@ -31,7 +31,7 @@ ht-degree: 92%
 すべてのアクティブユーザー（新規 + 繰り返し + 復帰）は、横軸の上にティールの網掛けとして表示され、すべての休眠状態のユーザーは、横軸の下にオレンジで表示されます。
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## ユースケース
 

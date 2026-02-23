@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## ユースケース

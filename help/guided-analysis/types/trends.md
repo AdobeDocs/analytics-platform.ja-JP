@@ -26,7 +26,7 @@ ht-degree: 92%
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL トレンド]**&#x200B;分析は、製品のパフォーマンスやユーザーの行動の推移に関する貴重なインサイトを提供します。このレポートの横軸は時間間隔で、縦軸は目的のイベントの測定値です。
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
 
 ## ユースケース
 

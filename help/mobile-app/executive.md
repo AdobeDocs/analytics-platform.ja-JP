@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![&#x200B; モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} を参照してください。
+デモビデオについては、![&#x200B; モバイルスコアカードにアクセスするための VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist エグゼクティブ &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

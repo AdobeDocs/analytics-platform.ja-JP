@@ -27,7 +27,7 @@ ht-degree: 99%
 ![コンバージョントレンド](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL コンバージョントレンド]**&#x200B;分析では、コンバージョン率の推移のトレンドビジュアライゼーションを表示します。横軸は時間間隔、縦軸はコンバージョン率を表します。
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
 
 
 ## ユースケース

@@ -25,7 +25,7 @@ ht-degree: 99%
 
 ![頻度](/help/assets/icons/Histogram.svg) **[!UICONTROL 頻度]**&#x200B;分析では、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。この分析の垂直軸には、イベントの頻度を表すバケットが含まれています。横軸は、各バケットのユーザーまたはセッションの数を測定します。
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## ユースケース
 
