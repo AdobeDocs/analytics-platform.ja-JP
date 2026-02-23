@@ -14,7 +14,7 @@ ht-degree: 93%
 
 # 接続の概要
 
-接続を使用すると、Customer Journey Analytics の製品管理者は、イベント、ルックアップ、プロファイルおよび概要データセットなど、取り込む [!DNL  Experience Platform] データソースを定義できます。接続は Customer Journey Analytics の基盤であり、ディメンションまたは指標として[データビュー](/help/data-views/data-views.md)で定義できるデータ（フィールド）の可用性を決定します。
+接続を使用すると、Customer Journey Analytics の製品管理者は、イベント、ルックアップ、プロファイルおよび概要データセットなど、取り込む [!DNL &#x200B; Experience Platform] データソースを定義できます。接続は Customer Journey Analytics の基盤であり、ディメンションまたは指標として[データビュー](/help/data-views/data-views.md)で定義できるデータ（フィールド）の可用性を決定します。
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ データソースへの接続 ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; データソースへの接続 &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

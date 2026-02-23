@@ -25,7 +25,7 @@ ht-degree: 70%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のベン図のビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[ベン図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/venn)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のベン図のビジュアライゼーションについて説明します。_<br/>_この記事の_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[ベン図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/venn)を参照してください。_
 
 >[!ENDSHADEBOX]
 

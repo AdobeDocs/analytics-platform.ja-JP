@@ -23,11 +23,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**分析では、製品における重要なユーザージャーニーを視覚的に表現します。横軸は、ユーザーが通過する必要がある各手順を表します。縦軸は、各手順でのユーザーまたはセッションの割合を表します。すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**&#x200B;分析では、製品における重要なユーザージャーニーを視覚的に表現します。横軸は、ユーザーが通過する必要がある各手順を表します。縦軸は、各手順でのユーザーまたはセッションの割合を表します。すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦係数の分析 ](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦係数の分析 &#x200B;](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
