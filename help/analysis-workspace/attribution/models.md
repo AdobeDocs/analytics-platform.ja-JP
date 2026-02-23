@@ -1,23 +1,23 @@
 ---
-title: 属性コンポーネント
+title: アトリビューションコンポーネント
 description: アトリビューションを定義するコンポーネントについて説明します。
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
-# 属性コンポーネント
+# アトリビューションコンポーネント
 
-Adobe Analyticsのアトリビューションの概念には、次の 3 つのコンポーネントが含まれます。
+Adobe Analytics でのアトリビューションの概念には、次の 3 つのコンポーネントが含まれます。
 
-* **アトリビューションモデル：** [&#x200B; モデル &#x200B;](#attribution-model) は、グループ内のヒットへのコンバージョンの分布を記述します。 例：ファーストタッチやラストタッチ。
-* **コンテナ**:[&#x200B; コンテナ &#x200B;](#container) は、属性の範囲や、各モデルのヒットをグループ化する方法を定義します。
-* **アトリビューション ルックバックウィンドウ：** [&#x200B; ルックバックウィンドウ &#x200B;](#lookback-window) は、選択したモデルのルックバックする日数を表します…
+* **アトリビューションモデル：**[モデル](#attribution-model)は、グループ内のヒット数に対するコンバージョンの分布を示します。例：ファーストタッチやラストタッチ。
+* **コンテナ**：[コンテナ](#container)は、アトリビューションの範囲、つまり各モデルのヒットをグループ化する方法を定義します。
+* **アトリビューションルックバックウィンドウ：**[ルックバックウィンドウ](#lookback-window)は、選択したモデルをルックバックする日数を示します。
 
 
 ## アトリビューションモデル
@@ -66,13 +66,6 @@ A lookback window is the amount of time a conversion should look back to include
 * **Visitor lookback window:** Looks at all visits back up to the 1st of the month of the current date range. Visitor lookback windows are wide, as they can span many visits. Visitor lookback considers all values from the beginning of the month of the report's date range. For example, if the report date range is September 15 - September 30, the visitor lookback date range includes September 1 - September 30.
 
 * **Custom lookback window:** Allows you to expand the attribution window beyond the reporting date range, up to a maximum of 90 days. Custom lookback windows are evaluated on each conversion in the reporting period. For example, for a conversion occurring on February 20, a lookback window of 10 days would evaluate all dimension touchpoints from February 10 - February 20 in the attribution model.
-
->[!BEGINSHADEBOX]
-  
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/40040?captions=jpn&quality=12&learn=on){target="_blank"} for a demo video.
-  
->[!ENDSHADEBOX]
-
 
 ## Example
 

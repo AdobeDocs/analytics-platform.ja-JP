@@ -4,9 +4,9 @@ description: Analysis Workspaceで散布図ビジュアライゼーションを�
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: a625c0b505802eb91d04e21223f1b429bdf9117b
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '232'
 ht-degree: 65%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の散布図ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[散布図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の散布図ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[散布図](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -40,13 +40,13 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [散布図ビジュアライゼーション](https://video.tv.adobe.com/v/3417455/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [散布図ビジュアライゼーション](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
->散布図で [&#x200B; 凡例を表示するように設定 &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) する場合、凡例は、データソースに含まれる（選択された）ディメンション項目の数が制限されている場合にのみ表示されます。
+>散布図で [ 凡例を表示するように設定 ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) する場合、凡例は、データソースに含まれる（選択された）ディメンション項目の数が制限されている場合にのみ表示されます。
 
 
 >[!MORELIKETHIS]

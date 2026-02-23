@@ -4,7 +4,7 @@ title: 日付範囲の概要
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
@@ -16,17 +16,6 @@ ht-degree: 100%
 Workspace プロジェクトでは、通常、パネル内の[カレンダー](/help/analysis-workspace/c-panels/panels.md#calendar)を使用して、そのパネルのビジュアライゼーションの日付範囲を指定します。
 
 日付範囲コンポーネントを使用すると、パネルのカレンダー設定を定義したり上書きしたりできます。
-
-<!-- Very old video, should we show it?
-
-+++ View a video illustrating use of calendar and date ranges
-
->[!VIDEO](https://video.tv.adobe.com/v/327348?captions=jpn&format=jpeg)
-
-{{videoaa}}
-+++
-
--->
 
 ## 日付範囲の使用
 

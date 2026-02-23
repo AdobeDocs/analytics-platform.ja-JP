@@ -4,10 +4,10 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '2194'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 * パネルを折りたたむには、![下向き山形記号](/help/assets/icons/ChevronDown.svg) を選択します。
 * 折りたたまれたパネルを表示するには、![左向き山形記号](/help/assets/icons/ChevronLeft.svg) を選択します。
 * パネルを削除するには、![クロスサイズ400](/help/assets/icons/CrossSize200.svg) を選択します。元に戻すには、**[!UICONTROL 編集]**／**[!UICONTROL 元に戻す]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
-* パネルを移動するには、ヘッダーにポインタを合わせた時に、![移動](/help/assets/icons/Move.svg)が表示されたら、パネルをドラッグ＆ドロップします。
+* パネルを移動するには、![移動](/help/assets/icons/Move.svg) が表示されているとき（通常はヘッダーにポインタを合わせているとき）に、パネルをドラッグ＆ドロップします。
 
 
 ## データビュー
@@ -167,7 +167,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://video.tv.adobe.com/v/327487?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -197,7 +197,7 @@ ht-degree: 100%
 ドロップダウンセグメントには、次のコンテキストメニューオプションがあります。
 
 * **[!UICONTROL ドロップダウンを削除]**：パネルからドロップダウンセグメントを削除します。
-* **[!UICONTROL ラベルを削除]**：ドロップダウンセグメントの上にあるテキストを削除します。ラベルを変更するには、ラベルの上にポインタを合わせて、「![ドロップダウンセグメントのラベルを編集](/help/assets/icons/Edit.svg)」を選択します。
+* **[!UICONTROL ラベルを削除]**：ドロップダウンセグメントの上に表示されるテキストを削除します。ラベルを変更するには、ラベルの上にポインタを合わせて、「![ドロップダウンセグメントのラベルを編集](/help/assets/icons/Edit.svg)」を選択します。
 * **[!UICONTROL ラベルを追加]**：プロジェクトにドロップダウンセグメントを追加すると、ラベルが自動的にコンポーネント名に設定されます。ラベルを削除した場合は、このオプションを使用して再度追加できます。
 * **[!UICONTROL 選択を要求]**：パネルにセグメントが設定されている必要があります。
 

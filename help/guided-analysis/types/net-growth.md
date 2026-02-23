@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '717'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423463/?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## ユースケース
@@ -62,7 +62,7 @@ ht-degree: 93%
 
 * **[!UICONTROL 表示]**：この分析と[アクティブな増加率](active-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベント。この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。クエリには 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]** には、[!UICONTROL &#x200B; ユーザー数 &#x200B;] および [!UICONTROL &#x200B; ユーザーの割合 &#x200B;] が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}Customer Journey Analytics B2B editionでは、**[!UICONTROL グローバルアカウント]**、[!UICONTROL &#x200B; アカウント &#x200B;]、[!UICONTROL &#x200B; 購入グループ &#x200B;]、[!UICONTROL &#x200B; 商談 &#x200B;]、[!UICONTROL &#x200B; グローバルアカウントの割合 &#x200B;]、[!UICONTROL &#x200B; アカウントの割合 &#x200B;]、[!UICONTROL &#x200B; 購入グループの割合 &#x200B;]、および [!UICONTROL &#x200B; 商談の割合 &#x200B;] という追加の  B2B オプションを使用できます。</li></ul>
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]** には、[!UICONTROL  ユーザー数 ] および [!UICONTROL  ユーザーの割合 ] が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}Customer Journey Analytics B2B editionでは、**[!UICONTROL グローバルアカウント]**、[!UICONTROL  アカウント ]、[!UICONTROL  購入グループ ]、[!UICONTROL  商談 ]、[!UICONTROL  グローバルアカウントの割合 ]、[!UICONTROL  アカウントの割合 ]、[!UICONTROL  購入グループの割合 ]、および [!UICONTROL  商談の割合 ] という追加の  B2B オプションを使用できます。</li></ul>
 * **[!UICONTROL セグメント]**：測定するセグメント。クエリには 1 つのセグメントを含めることができます。
 
 ### 時間比較

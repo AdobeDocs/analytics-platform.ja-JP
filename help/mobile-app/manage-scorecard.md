@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1808'
 ht-degree: 85%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 85%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://video.tv.adobe.com/v/3413789?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカードプロジェクトのデータストーリー &#x200B;](https://video.tv.adobe.com/v/3420562/?captions=jpn&quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ モバイルスコアカードプロジェクトのデータストーリー ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -100,7 +100,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
    ![データストーリーの作成](assets/data-story1.png)
    ![データストーリーアイコンの作成](assets/create-data-story.png){width=".50%"}
 1. スライドを追加して、データストーリーを作成します。デフォルトでは、最初のスライドが生成されます。
-新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、次の使用可能なオプションから選択します。
+新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、使用可能な次のオプションから選択します。
    * 「+」記号をタップして、新しいスライドを作成します。
    * 複製アイコンをタップすると、既存のスライドを複製できます。
 1. 空のスライドを作成する場合は、左側のパネルからコンポーネントをドラッグ＆ドロップするか、レイアウトを選択してタイルのデータをスライドに自動入力します。
@@ -204,7 +204,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 ## [!UICONTROL 未指定]ディメンション項目を削除 {#remove-dims}
 
-[!UICONTROL 未指定]ディメンション項目をデータから削除する場合、次の操作を行います。
+データから[!UICONTROL 未指定]のディメンション項目を削除する場合は、次の操作を行います。
 
 1. 正しいタイルを選択します。
 1. 右側のパネルの「**[!UICONTROL ドリルイン]**」の下で、削除する&#x200B;**[!UICONTROL 未指定]**&#x200B;の項目があるディメンション項目の横にある右矢印を選択します。
@@ -225,11 +225,11 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. スコアカードで、タイルをクリックします。 例えば、このスコアカードでは、下部の折れ線グラフをクリックします。
 
-   ![&#x200B; 折れ線グラフのビジュアライゼーションを使用したスコアカード &#x200B;](assets/caption1.png)
+   ![ 折れ線グラフのビジュアライゼーションを使用したスコアカード ](assets/caption1.png)
 
 1. 右上の青いアイコンをタップして、キャプションを生成します。 キャプションが折れ線グラフの下に表示されます。
 
-   ![&#x200B; 折れ線グラフのビジュアライゼーションのインテリジェントキャプション &#x200B;](assets/caption2.png)
+   ![ 折れ線グラフのビジュアライゼーションのインテリジェントキャプション ](assets/caption2.png)
 
 1. 右にスワイプすると、インテリジェントキャプションがすべて表示されます。
 
@@ -237,6 +237,6 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. キャプションの中の黒いフラグをタップすると、有害なコンテンツや違法なコンテンツなどの問題が報告されます。
 
-   ![&#x200B; キャプションに関するレポートの問題 &#x200B;](assets/caption-report.png)
+   ![ キャプションに関するレポートの問題 ](assets/caption-report.png)
 
 1. 「X」をクリックして「結果をレポート **[!UICONTROL ダイアログを終了し]** す。

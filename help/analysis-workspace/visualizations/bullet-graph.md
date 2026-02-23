@@ -4,9 +4,9 @@ title: ブレット
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '271'
 ht-degree: 90%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)、_&#x200B;**Customer Journey Analytics** のブレットのビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)、_&#x200B;**Adobe Analytics** バージョンについて詳しくは、[ブレット](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)を参照してください。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)、_**Customer Journey Analytics** のブレットのビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)、_**Adobe Analytics** バージョンについて詳しくは、[ブレット](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://video.tv.adobe.com/v/41510/?captions=jpn&quality=12/?quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/bullet-graph-visualization){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 | 設定 | 説明 |
 |---|---|
-| **[!UICONTROL ブレットオプション]** | [!UICONTROL ブレット]ビジュアライゼーションで、**[!UICONTROL 高い目標]**、**[!UICONTROL 中程度の目標]**、**[!UICONTROL 低い目標]**&#x200B;の値を指定します。<br/>**[!UICONTROL 高い目標&#x200B;]**&#x200B;は、目指している主な目標です。**[!UICONTROL &#x200B;低い目標&#x200B;]**&#x200B;と&#x200B;**[!UICONTROL &#x200B;中程度の目標&#x200B;]**&#x200B;では、高い目標を下回る範囲を作成します。メモ：「**[!UICONTROL &#x200B;割合&#x200B;]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。 |
+| **[!UICONTROL ブレットオプション]** | [!UICONTROL ブレット]ビジュアライゼーションで、**[!UICONTROL 高い目標]**、**[!UICONTROL 中程度の目標]**、**[!UICONTROL 低い目標]**&#x200B;の値を指定します。<br/>**[!UICONTROL 高い目標&#x200B;]**は、目指している主な目標です。**[!UICONTROL &#x200B;低い目標&#x200B;]**と**[!UICONTROL &#x200B;中程度の目標&#x200B;]**では、高い目標を下回る範囲を作成します。メモ：「**[!UICONTROL &#x200B;割合&#x200B;]**」オプションが選択されている場合は、目標を整数で入力します。目標が 20％の場合は `20` となります。 |
 
 >[!MORELIKETHIS]
 >

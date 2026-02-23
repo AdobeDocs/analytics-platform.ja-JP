@@ -4,9 +4,9 @@ title: 列設定
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 79%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://video.tv.adobe.com/v/328502/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -38,7 +38,7 @@ ht-degree: 79%
 | **[!UICONTROL 総計を表示]** | 列のサーバーサイドの合計を表示します。総計では、セッションやユーザーなどの指標を重複排除します。 |
 | **[!UICONTROL スパークラインを表示]** | 列見出しに折れ線グラフを表示します。 |
 | **[!UICONTROL 数値]** | セルに指標の数値を表示／非表示にするかどうかを決定します。例えば、指標がページビュー数の場合、数値はその行項目のページビュー数になります。 |
-| **[!UICONTROL 割合]** | セルに指標の割合の値を表示／非表示にするかどうかを決定します。例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。メモ：100％を超える割合は、正確であることが保証されます。キャップを 1,000％に移動すると、列の幅が大きくなりすぎるのを防ぐことができます。 |
+| **[!UICONTROL Percent]** | セルに指標の割合の値を表示／非表示にするかどうかを決定します。例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。メモ：100％を超える割合は、正確であることが保証されます。キャップを 1,000％に移動すると、列の幅が大きくなりすぎるのを防ぐことができます。 |
 | **[!UICONTROL 異常値を表示]** | この列の値に対して異常値検出を実行するかどうかを決定します。 |
 | **[!UICONTROL 予測を表示]** | この列に予測値を表示するかどうかを決定します。 |
 | **[!UICONTROL ヘッダーテキストを折り返し]** | ヘッダーを読みやすく、またテーブルを共有しやすくするため、フリーフォームテーブルでヘッダーテキストを折り返します。折り返しは、PDF レンダリングや名前の長い指標に役立ちます。デフォルトで有効です。 |
@@ -84,7 +84,7 @@ ht-degree: 79%
 
 
 
-[&#x200B; データビュー &#x200B;](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
+[ データビュー ](/help/data-views/component-settings/attribution.md) で設定されたデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Analysis Workspaceの指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
 
 
 ### アトリビューションモデル

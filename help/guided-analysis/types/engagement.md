@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -33,8 +33,11 @@ ht-degree: 100%
 * マトリックスの左下に表示される機能は、お客様の&#x200B;**影響が小さい**&#x200B;機能であり、広く採用されたり、頻繁に使用されたりしているわけではありません。
 * マトリックスの右下に表示される機能は、**1 回限り**&#x200B;の機能です。これらの機能は広く採用されていますが、頻繁には使用されません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447468?captions=jpn)
+>[!BEGINSHADEBOX]
 
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ エンゲージメント分析 ](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 ## ユースケース
 

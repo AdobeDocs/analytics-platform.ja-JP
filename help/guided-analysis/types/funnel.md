@@ -5,10 +5,10 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 100%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**分析では、製品における重要なユーザージャーニーを視覚的に表現します。横軸は、ユーザーが通過する必要がある各手順を表します。縦軸は、各手順でのユーザーまたはセッションの割合を表します。すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3431281/?captions=jpn&quality=12&learn=on){width="90%"}
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦係数の分析 ](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
+
 
 ## ユースケース
 

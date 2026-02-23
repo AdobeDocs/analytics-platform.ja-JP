@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace では、分析をすばやく作成してインサイトを�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://video.tv.adobe.com/v/35774/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace の概要](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -165,5 +165,5 @@ Analysis Workspace で分析を作成すると、作業内容は[自動保存](/
 
 - Customer Journey Analytics の[ラーニングランディング](/help/getting-started/landing.md#learning)ページ。このページは、Analysis Workspace を知るのに最適です。特に Workspace の基本の学習。このテンプレートでは、Workspace で初めての分析を作成する一般的な用語と手順について説明します。
 - アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/overview)を提供しています。
-- 新機能の最新情報については、 [Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current) を参照してください。
+- 新機能のアップデートについては、 [Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current) を参照してください。
 

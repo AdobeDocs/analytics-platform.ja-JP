@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2701'
 ht-degree: 98%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードの作成](https://video.tv.adobe.com/v/3409732?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードの作成](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -118,7 +118,7 @@ Analytics スコアカードには、以下に示すように、エグゼクテ�
 
 ![比較日付を先週の同じ日に設定した日付範囲を強調表示した新しいモバイルスコアカード](assets/new_score_card4.png)
 
-まだ日付範囲が作成されていない場合は、カレンダーアイコンをクリックして新しい日付範囲を作成できます。
+まだ対象の日付範囲が作成されていない場合は、カレンダーアイコンをクリックして新しい日付範囲を作成できます。
 
 ![カレンダーアイコン](assets/new_score_card5.png)
 
@@ -156,7 +156,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ![ドーナツビジュアライゼーションを表示する新しいモバイルスコアカード](assets/donut-viz.png)
 
-### [!UICONTROL 行]
+### [!UICONTROL 折れ線グラフ]
 
 行のビジュアライゼーションでは、時間の経過に伴う値の変化を確認できるように、折れ線で指標が表されます。線グラフは、時間の経過に伴うディメンションを表示しますが、あらゆるビジュアライゼーションで機能します。この例では、製品カテゴリディメンションを視覚化しています。
 
@@ -176,7 +176,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 ### [!UICONTROL 未指定]ディメンション項目を削除 {#remove-dims}
 
-[!UICONTROL 未指定]ディメンション項目をデータから削除する場合、次の操作を行います。
+データから[!UICONTROL 未指定]のディメンション項目を削除する場合は、次の操作を行います。
 
 1. 正しいタイルを選択します。
 1. 右側のパネルの「**[!UICONTROL ドリルイン]**」の下で、削除する&#x200B;**[!UICONTROL 未指定]**&#x200B;の項目があるディメンション項目の横にある右矢印を選択します。
@@ -212,7 +212,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://video.tv.adobe.com/v/3413789?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [カスタム詳細ビュー](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードプロジェクトのデータストーリー](https://video.tv.adobe.com/v/3420562/?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -273,7 +273,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
    ![データストーリーの作成](assets/data-story1.png)
    ![データストーリーアイコンの作成](assets/create-data-story.png){width=".50%"}
 1. スライドを追加して、データストーリーを作成します。デフォルトでは、最初のスライドが生成されます。
-新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、次の使用可能なオプションから選択します。
+新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、使用可能な次のオプションから選択します。
    * 「+」記号をタップして、新しいスライドを作成します。
    * 複製アイコンをタップすると、既存のスライドを複製できます。
 1. 空のスライドを作成する場合は、左側のパネルからコンポーネントをドラッグ＆ドロップするか、レイアウトを選択してタイルのデータをスライドに自動入力します。
