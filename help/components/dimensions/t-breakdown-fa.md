@@ -60,7 +60,7 @@ Analysis Workspaceでは、具体的なニーズに合わせて様々な方法�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの分類 &#x200B;](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの分類 &#x200B;](https://video.tv.adobe.com/v/327337?captions=jpn&quality=12&learn=on){target="_blank"} を参照してください。
 
 {{videoaa}}
 
@@ -87,7 +87,7 @@ Analysis Workspaceでは、具体的なニーズに合わせて様々な方法�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別分類 &#x200B;](https://video.tv.adobe.com/v/24033){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別分類 &#x200B;](https://video.tv.adobe.com/v/327412?captions=jpn){target="_blank"} を参照してください。
 
 {{videoaa}}
 
