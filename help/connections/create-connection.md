@@ -172,7 +172,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; データソースへの接続 &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; データソースへの接続 &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -836,5 +836,5 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 >[!MORELIKETHIS]
 >
 >* [データ取り込みの概要](/help/data-ingestion/data-ingestion.md)
->* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=ja)
 
