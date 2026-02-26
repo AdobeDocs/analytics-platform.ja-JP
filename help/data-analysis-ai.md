@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e1f7245a6c9bf6e36a49edafbcbb0e1005bc6e5b
+source-git-commit: 684f7e95e872ed3cc56a12725dd63459ed488ecc
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 89%
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent は、対象となる顧客が期間限定で使用できます。Data Insights Agent へのアクセスは、2026年2月28日（PT）まで利用できます。Data Insights Agent をこの日付以降も中断することなく引き続き使用するには、アドビアカウント担当者に連絡して、Adobe Experience Platform Agent Orchestrator のライセンスの詳細を確認してください。
+>Data Insights Agent は、対象となる顧客が期間限定で使用できます。Data Insights Agent へのアクセスは、2026年3月31日（PT）まで利用できます。Data Insights Agent をこの日付以降も中断することなく引き続き使用するには、アドビアカウント担当者に連絡して、Adobe Experience Platform Agent Orchestrator のライセンスの詳細を確認してください。
 
 Customer Journey Analytics の [AI アシスタント](/help/ai-assistant.md)からアクセス可能な Data Insights Agent は、データに関する質問に迅速かつ効率的に回答する生成 AI 会話エージェントです。データビューと実際のデータのコンポーネントを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
 
@@ -52,9 +52,9 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。組織が Data Insights Agent の使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
+* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
 
-  権限を付与するには、[&#x200B; 製品プロファイル管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
+  権限を付与するには、[ 製品プロファイル管理者 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) が [!UICONTROL Admin Console] で次の手順を実行する必要があります。
    1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
    1. 「**[!UICONTROL Customer Journey Analytics]**」を選択します。
    1. 「**[!UICONTROL 製品プロファイル]**」タブで、[!UICONTROL AI アシスタント：製品知識]へのアクセス権を付与する製品プロファイルのタイトルを選択します。
@@ -91,7 +91,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
       ![Data Insights Agent に対してデータビューを有効にする](assets/data-view-enable-dia.png)
 
-      Data Insights Agentのデータビューを有効にする方法については、[&#x200B; データビューの AI 設定 &#x200B;](/help/data-views/create-dataview.md#ai-settings) を参照してください。
+      Data Insights Agentのデータビューを有効にする方法については、[ データビューの AI 設定 ](/help/data-views/create-dataview.md#ai-settings) を参照してください。
 
   IMS 組織の Data Insights Agent トに対して有効なデータビューの数を表示するには：
 
@@ -158,7 +158,7 @@ Data Insights Agentを使用してAnalysis Workspaceのデータ中心の質問�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -178,7 +178,7 @@ Adobe Experience Platform エージェントオーケストレーターを使用
 
 エージェントオーケストレーターは、リクエストを解釈してどの専門エージェントが必要かを判断し、適切な応答を提供するようにエージェントを調整します。マルチターンのインタラクションをまたいでコンテキストを追跡するので、以前のクエリに基づいて自然に構築できます。
 
-詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/jp/products/experience-platform/agent-orchestrator.html)を参照してください。
+詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)を参照してください。
 
 ## データビジュアライゼーションのプロンプトの例
 
