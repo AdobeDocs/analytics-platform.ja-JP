@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 153828839bbed493ae12c4969c69195b4beeaab1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="ステッチされたデータセットを生成するには、アドビカスタマーケアにお問い合わせください"
->abstract="複数のデータセットに存在するがプライマリ識別子ではない識別子を含むフィールドがある場合は、これを使用して一貫性のある識別子で新しいデータセットを生成できます。"
+>title="1 つ以上のデータセットのステッチを有効にする"
+>abstract="複数のデータセットに存在するがプライマリ識別子ではない識別子を含むフィールドがある場合、ステッチを使用して、データをこれらの 1 つ以上のデータセットに昇格させることができます。"
 
 <!-- markdownlint-enable MD034 -->
 
