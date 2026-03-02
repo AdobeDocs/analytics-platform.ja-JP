@@ -4,9 +4,9 @@ title: パネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2205'
 ht-degree: 99%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 99%
 
 ## データビュー
 
-各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**&#x200B;の![データ名](/help/assets/icons/Data.svg)で識別されます。
+各パネルは、[データビュー](/help/data-views/data-views.md)に関連付けられており、パネルの右上にあるドロップダウンメニューの&#x200B;**[!UICONTROL *データビュー&#x200B;*]**の![データ名](/help/assets/icons/Data.svg)で識別されます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -167,7 +167,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ドロップダウンセグメント](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -225,6 +225,12 @@ ht-degree: 99%
 動的ドロップダウンセグメントは、指標、セグメントまたは日付範囲では使用できないことに注意してください。
 
 動的ドロップダウンセグメントには、静的ドロップダウンセグメントと同じコンテキストメニューオプションがあります。
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Dynamic ドロップダウンセグメント ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 
 ## コンテキストメニュー

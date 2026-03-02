@@ -4,10 +4,10 @@ title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 83%
+source-wordcount: '299'
+ht-degree: 80%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
 
 >[!ENDSHADEBOX]
 
 
 ユーザー定義のリッチテキストを Workspace プロジェクトに追加するには、![テキスト](/help/assets/icons/Text.svg) **[!UICONTROL テキスト]**&#x200B;ビジュアライゼーションを使用するか、ビジュアライゼーションとパネルの説明を使用します。
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ テキストビジュアライゼーション ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 ## 使用
 
@@ -58,7 +64,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ## 画像を追加 {#images}
 
-プロジェクトに画像を追加するには、メニューで ![&#x200B; 画像 &#x200B;](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
+プロジェクトに画像を追加するには、メニューで ![ 画像 ](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
 
 画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
 

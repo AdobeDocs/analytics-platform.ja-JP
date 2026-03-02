@@ -4,10 +4,10 @@ title: 行
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 94%
+source-wordcount: '540'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の折れ線グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[折れ線グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の折れ線グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[折れ線グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -57,6 +57,13 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 | **[!UICONTROL 累乗]** | 曲線を作成します。これは、特定の速度で増加する測定値を比較するデータセットに便利です。データに 0 または負の値が含まれる場合は、このオプションを使用しないでください。数式：`y = a * x^b` |
 | **[!UICONTROL 二次方程式]** | 放物線（上または下に凹面）のような形状のデータセットに最適なデータを検索します。数式：`y = a + b * x + c * x^2` |
 | **[!UICONTROL 移動平均]** | 平均値のセットに基づいて、滑らかなトレンドラインを作成します。移動平均は、ローリング平均とも呼ばれ、特定数のデータポイント（「[!UICONTROL 精度]」セクションで決定される）を使用して、それらを平均し、その平均値を折れ線グラフのポイントとして使用します。例えば、7 日の移動平均や 4 週間の移動平均があります。 |
+
+
+>[!BEGINSHADEBOX]
+
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} を参照してください。
+
+>[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >

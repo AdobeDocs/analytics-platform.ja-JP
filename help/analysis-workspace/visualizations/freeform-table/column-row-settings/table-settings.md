@@ -4,7 +4,7 @@ title: 行設定
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 84%
@@ -13,14 +13,7 @@ ht-degree: 84%
 
 # 行設定
 
-
->[!BEGINSHADEBOX]
-
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
-
->[!ENDSHADEBOX]
-
-行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
+行設定は、テーブルにドラッグしたコンポーネントによって異なります。テーブルの行の設定にアクセスするには、これらの各オブジェクト内のディメンション、セグメント、指標、期間または分類の横にある ![ 設定 ](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]** を選択します。
 
 ![指標の設定アイコンをハイライト表示するフリーフォームテーブル](assets/row-settings.png)
 
@@ -30,13 +23,21 @@ ht-degree: 84%
 | **[!UICONTROL 割合 (%)]** | **割合を列ごとに計算**（デフォルト）：セルに表示される割合は、列の合計に基づいて計算されます。<br>**割合を行ごとに計算**：セル内の割合は、総計を分母として、列方向ではなく行方向に計算されます。この計算は、割合のトレンド分析に役立ちます。 |
 | **[!UICONTROL 列の合計]** | これらの設定は、[静的な行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)に対してのみ使用できます。<br> 「**現在の行の合計として表示**」では、テーブル内の行のクライアントサイドの合計が表示されます。これは、合計で訪問回数やユーザー数などの指標の重複が排除&#x200B;*されない*&#x200B;ことを意味します。<br> 「**総計を表示**」では、サーバーサイドの合計が表示されます。これは、合計で指標の重複が排除されることを意味します。 |
 
+>[!BEGINSHADEBOX]
+
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 ## 行数の変更
 
 表示される行数を変更するには、次の手順に従います。
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   ![&#x200B; 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
+   ![ 表示された行数ののドロップダウンメニューを表示するフリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
 1. ドロップダウンメニューから、テーブルに表示する行数を選択します。
 
@@ -90,4 +91,4 @@ ht-degree: 84%
 
 ## 行の高さの変更
 
-プロジェクトの [&#x200B; 表示密度 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。
+プロジェクトの [ 表示密度 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) を **[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]** に設定できます。
