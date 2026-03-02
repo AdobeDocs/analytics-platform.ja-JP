@@ -63,7 +63,7 @@ _この記事では、_ CustomerJourneyAnalytics![&#x200B; &#x200B;](/help/asset
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area ビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area ビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
