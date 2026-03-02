@@ -15,7 +15,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ CustomerJourneyAnalytics![ ](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Adobe Customer Journey Analytics** の棒グラフおよび積み重ね棒グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[棒グラフおよび積み重ね棒グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bar)を参照してください。_
+_この記事では、_ CustomerJourneyAnalytics![&#x200B; &#x200B;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Adobe Customer Journey Analytics** の棒グラフおよび積み重ね棒グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[棒グラフおよび積み重ね棒グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/bar)を参照してください。_
 
 
 >[!ENDSHADEBOX]
@@ -63,7 +63,7 @@ _この記事では、_ CustomerJourneyAnalytics![ ](/help/assets/icons/Customer
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Area ビジュアライゼーション ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area ビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 

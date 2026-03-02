@@ -25,7 +25,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の折れ線グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[折れ線グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の折れ線グラフビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[折れ線グラフ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} を参照してください。
 
 >[!ENDSHADEBOX]
 
