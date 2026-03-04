@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Audience Analysis の使用例 {#analyze-audiences-use-cases}
 
-Audience Analysis は、Customer Journey AnalyticsにおけるExperience Platform オーディエンスメンバーシップデータのレポートを有効にします。 これを実現するには、Audience Analysis 設定ウィザードで管理される設定を使用します。このウィザードは、他のパラメーターや設定の詳細と共に、取り込むプロファイルデータセットを決定するのに役立ちます。 （詳しい概要情報については、[Audience Analysis の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
+Audience Analysis は、Customer Journey AnalyticsにおけるExperience Platform オーディエンスメンバーシップデータのレポートを有効にします。 これを実現するには、Audience Analysis 設定ウィザードで管理される設定を使用します。このウィザードは、他のパラメーターや設定の詳細と共に、取り込むプロファイルデータセットを決定するのに役立ちます。 （詳しい概要情報については、[Audience Analysis の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
 
 このドキュメントには、Audience Analysis が提供する値をハイライトするユースケースの例が含まれています。 ユースケースを確認する前に、まず、以下のレポートに関する考慮事項に慣れてください。 ユースケースを検討する際は、これらの考慮事項に留意することが重要です。これらの考慮事項は、レポートの最終的な出力に影響を与える可能性があるからです。
 
