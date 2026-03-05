@@ -91,7 +91,7 @@ ht-degree: 4%
 >id="connection_changeto_identitygraph"
 >title="ID グラフへの変更"
 >abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認します。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -123,7 +123,7 @@ ht-degree: 4%
 >id="connection_stitchingmetrics_badids"
 >title="無効な ID"
 >abstract="不正な ID は、レポートデータに大きく影響する ID 値です。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="無効な ID"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-16444" text="無効な ID"
 
 
 ステッチを有効にするには、**[!UICONTROL データセットを追加]** または **[!UICONTROL データセットを編集]** ダイアログのイベントデータセット セクションで、次の手順を実行します。
