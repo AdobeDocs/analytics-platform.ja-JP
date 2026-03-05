@@ -48,7 +48,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-1. [Experience Platformで有効期限のない資格情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials) を作成します。 有効期限のない既存の認証情報を使用する場合は、これらの認証情報が [OAuth に移行 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials) されていることを確認します。
+1. [Experience Platformで有効期限のない資格情報 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials) を作成します。 有効期限のない既存の認証情報を使用する場合は、これらの認証情報が [OAuth に移行 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials) されていることを確認します。
 
 1. Customer Journey Analytics製品および製品プロファイルで有効期限のない資格情報が使用できることを確認します。 次の手順を実行するには、組織のシステム管理者である必要があります。
    1. **[!UICONTROL アプリ]** から ![Admin Console](/help/assets/icons/Apps.svg) を選択します。
@@ -60,9 +60,9 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
       1. 有効期限のない API 資格情報が、Customer Journey Analytics製品およびプロファイルへのアクセス権を持っていることを確認します。
 
          1. ![EQS-...](/help/assets/icons/ProductDetails.svg) の有効期限が切れていない API 資格情報の **[!UICONTROL ProductDetails]** を選択します。
-         1. 製品の詳細パネルの **[!UICONTROL EQS-...]** から ![ 詳細 ](/help/assets/icons/More.svg) を選択し、**[!UICONTROL API 資格情報を編集]** を選択します。
+         1. 製品の詳細パネルの **[!UICONTROL EQS-...]** から ![&#x200B; 詳細 &#x200B;](/help/assets/icons/More.svg) を選択し、**[!UICONTROL API 資格情報を編集]** を選択します。
          1. **[!UICONTROL API 資格情報を編集]** ダイアログで、「割り当てられたプロファイル **[!UICONTROL を検証]** します。 Customer Journey Analytics製品が表示されない場合：
-            1. 「![ 追加 ](/help/assets/icons/Add.svg)」を選択してから、「**[!UICONTROL Customer Journey Analytics]**」を選択してください。
+            1. 「![&#x200B; 追加 &#x200B;](/help/assets/icons/Add.svg)」を選択してから、「**[!UICONTROL Customer Journey Analytics]**」を選択してください。
             1. クエリサービスおよび BI 拡張機能へのアクセス権を付与するユーザーを含む 1 つ以上の製品プロファイルを選択します。
             1. 「**[!UICONTROL 適用]**」を選択します。
 
@@ -110,7 +110,7 @@ Adobe Experience Platform の場合：
 
    1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -143,9 +143,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -184,7 +184,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
+   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
