@@ -14,15 +14,15 @@ ht-degree: 77%
 
 # Content Analytics レポートの概要
 
-[!DNL Content Analytics]Analysis Workspace[ 内でレポートを作成し、分析を実行して、](/help/analysis-workspace/home.md) に関するインサイトを得ます。 特定の Workspace [テンプレート](#template)を使用できるので、関連するコンテンツインサイトを含む事前入力された Workspace プロジェクトに直ちにアクセスできます。
+[!DNL Content Analytics]Analysis Workspace[&#x200B; 内でレポートを作成し、分析を実行して、](/help/analysis-workspace/home.md) に関するインサイトを得ます。 特定の Workspace [テンプレート](#template)を使用できるので、関連するコンテンツインサイトを含む事前入力された Workspace プロジェクトに直ちにアクセスできます。
 
 独自のContent Analytics レポートをゼロから作成するには、次の手順に従います。
 
 1. Workspace で[新しいプロジェクトを作成](/help/analysis-workspace/build-workspace-project/create-projects.md)するか、[既存のプロジェクトを開き](/help/analysis-workspace/build-workspace-project/open-projects.md)ます。
 1. Content Analytics レポート用に[データビューを選択](/help/analysis-workspace/c-panels/panels.md#data-view)します。Content Analytics レポートは、Content Analytics で[設定](/help/content-analytics/config/configuration.md)されたデータビューでのみ使用できます。
-1. ![テーブル](/help/assets/icons/Table.svg)[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーションをキャンバスにドラッグします。
+1. ![テーブル](/help/assets/icons/Table.svg) [フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーションをキャンバスにドラッグします。
 1. [特定のコンテンツ分析コンポーネント](components.md)およびその他の汎用[コンポーネント](/help/components/overview.md)（セグメント、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
-1. 他の [ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を使用して、プロジェクトを強化します。
+1. 他の [&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) を使用して、プロジェクトを強化します。
 
 
 ## サムネイル
@@ -33,7 +33,7 @@ ht-degree: 77%
 
 ![Content Analytics サムネイル](../assets/aca-thumbnails.png)
 
-デフォルトでは、サムネールは [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) に表示されます。 Content Analytics ディメンションのサムネイルの表示を設定するには：
+デフォルトでは、サムネールは [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) に表示されます。 Content Analytics ディメンションのサムネイルの表示を設定するには：
 
 * Content Analytics ディメンションのヘッダー行にポインタを合わせます。例えば、**[!UICONTROL アセット ID]** や **[!UICONTROL エクスペリエンス ID]** などです。
 * 「![設定](/help/assets/icons/Setting.svg)」を選択します。
@@ -44,19 +44,19 @@ ht-degree: 77%
 
 {{release-limited-testing-section}}
 
-![ 棒グラフのContent Analytics サムネール ](/help/content-analytics/assets/aca-bar-thumbnail.png)
+![&#x200B; 棒グラフのContent Analytics サムネール &#x200B;](/help/content-analytics/assets/aca-bar-thumbnail.png)
 
 
-サムネールは、縦軸または横軸に凡例の一部として表示されます。 サムネールは、棒グラフ（積み重ね [ および ](/help/analysis-workspace/visualizations/bar.md) 横棒グラフ（積み重ね） [ の棒にポインタを合わせ ](/help/analysis-workspace/visualizations/horizontal-bar.md) も表示されます。
+サムネールは、縦軸または横軸に凡例の一部として表示されます。 サムネールは、棒グラフ（積み重ね [&#x200B; および &#x200B;](/help/analysis-workspace/visualizations/bar.md) 横棒グラフ（積み重ね） [&#x200B; の棒にポインタを合わせ &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) も表示されます。
 
 
 ### 散布図
 
 {{release-limited-testing-section}}
 
-![ 散布用のContent Analytics サムネール ](/help/content-analytics/assets/aca-scatter-thumbnail.png)
+![&#x200B; 散布用のContent Analytics サムネール &#x200B;](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
-[ 散布図 ](/help/analysis-workspace/visualizations/scatterplot.md) のデータポイントにカーソルを合わせると、サムネールが表示されます。
+[&#x200B; 散布図 &#x200B;](/help/analysis-workspace/visualizations/scatterplot.md) のデータポイントにカーソルを合わせると、サムネールが表示されます。
 
 ## プレビュー
 
@@ -67,8 +67,8 @@ ht-degree: 77%
 
 プレビューポップアップウィンドウを開くことができます。 それには、次の手順を実行します。
 
-* ![ フリーフォームテーブル ](/help/assets/icons/InfoOutline.svg) の [InfoOutline](#freeform-table) を選択します。
-* [ 棒グラフまたは ](#bar-and-horizontal-bar) 横棒グラフ [ ビジュアライゼーション内の特定の棒グラフまたは ](#bar-and-horizontal-bar) 散布図 [ ビジュアライゼーション内のデータポイントを選択 ](#scatter) ます。
+* ![&#x200B; フリーフォームテーブル &#x200B;](/help/assets/icons/InfoOutline.svg) の [InfoOutline](#freeform-table) を選択します。
+* [&#x200B; 棒グラフまたは &#x200B;](#bar-and-horizontal-bar) 横棒グラフ [&#x200B; ビジュアライゼーション内の特定の棒グラフまたは &#x200B;](#bar-and-horizontal-bar) 散布図 [&#x200B; ビジュアライゼーション内のデータポイントを選択 &#x200B;](#scatter) ます。
 
 
 次の詳細が表示されます。
@@ -86,7 +86,7 @@ ht-degree: 77%
 
 ## テンプレート
 
-Content Analytics[ テンプレート ](/help/analysis-workspace/templates/use-templates.md) を使用すると、最もパフォーマンスの高いコンテンツやコンテンツ属性を把握できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。個々のアセットや特定の属性のパフォーマンスを確認できます。
+Content Analytics[&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md) を使用すると、最もパフォーマンスの高いコンテンツやコンテンツ属性を把握できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。個々のアセットや特定の属性のパフォーマンスを確認できます。
 
 学習内容に基づいて、様々な操作を行うことができます。ホームページで高パフォーマンスのアセットを昇格させるのと同様に、特定のセグメント用にコンテンツをパーソナライズして高パフォーマンスの属性を含めたり、古くなり始めたコンテンツを交代させたりします。
 
@@ -110,12 +110,12 @@ Content Analytics[ テンプレート ](/help/analysis-workspace/templates/use-t
 
      >[!NOTE]
      >
-     >これらのビジュアライゼーションは、Content Analytics設定で [ エクスペリエンスを含める ](/help/content-analytics/config/guided.md#experience-capture-and-definition) ように設定している場合にのみ、テンプレートに表示されます。
+     >これらのビジュアライゼーションは、Content Analytics設定で [&#x200B; エクスペリエンスを含める &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) ように設定している場合にのみ、テンプレートに表示されます。
      > 
 
-      * **エクスペリエンス CTR**：エクスペリエンス CTR を表示する [ 変更概要 ](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
+      * **エクスペリエンス CTR**：エクスペリエンス CTR を表示する [&#x200B; 変更概要 &#x200B;](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
       * **上位のコンバージョンエクスペリエンス**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)ビジュアライゼーション。
-      * **パフォーマンスの高いエクスペリエンス**：パフォーマンスの高いエクスペリエンスを表示する [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails) および [ プレビュー ](#previews) を含む）。
+      * **パフォーマンスの高いエクスペリエンス**：パフォーマンスの高いエクスペリエンスを表示する [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails) および [&#x200B; プレビュー &#x200B;](#previews) を含む）。
 
    * **Assets**
 
@@ -129,7 +129,7 @@ Content Analytics[ テンプレート ](/help/analysis-workspace/templates/use-t
 アセットビューとアセットコンバージョンの散布図を表示する[散布図](/help/analysis-workspace/visualizations/scatterplot.md)ビジュアライゼーション。
 
 * **コンバージョンに貢献するアセット属性はどれですか？**
-Content Analyticsは AI と GenAI を使用して、サブジェクト、シーン、前景色などのすべてのアセット [ メタデータ ](/help/content-analytics/report/components.md#asset-metadata) および [ 属性 ](/help/content-analytics/report/components.md#asset-attributes) を自動的に割り当てます。 属性は、アセットまたはエクスペリエンスの内容を説明する、AI によって割り当てられたメタデータタグです。例：<code>前景色：赤</code> は、自動的に割り当てられる属性です。ビジュアライゼーションは、アセットのどの属性がコンバージョンに最も貢献しているかを特定するのに役立ちます。
+Content Analyticsは AI と GenAI を使用して、サブジェクト、シーン、前景色などのすべてのアセット [&#x200B; メタデータ &#x200B;](/help/content-analytics/report/components.md#asset-metadata) および [&#x200B; 属性 &#x200B;](/help/content-analytics/report/components.md#asset-attributes) を自動的に割り当てます。 属性は、アセットまたはエクスペリエンスの内容を説明する、AI によって割り当てられたメタデータタグです。例：<code>前景色：赤</code> は、自動的に割り当てられる属性です。ビジュアライゼーションは、アセットのどの属性がコンバージョンに最も貢献しているかを特定するのに役立ちます。
 
   パネルは、次のビジュアライゼーションで構成されています。
 
