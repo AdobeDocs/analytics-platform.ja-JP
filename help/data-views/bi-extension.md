@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 89%
+source-wordcount: '3462'
+ht-degree: 84%
 
 ---
 
@@ -48,8 +48,31 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-* [Experience Platformで有効期限のない資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials) を作成します。
-* [&#x200B; 資格情報の有効期限 &#x200B;](#Expiring-credentials) に記載されている手順に従って、有効期限のない資格情報へのアクセス権を付与します。
+1. [Experience Platformで有効期限のない資格情報 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials) を作成します。 有効期限のない既存の認証情報を使用する場合は、これらの認証情報が [OAuth に移行 ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials) されていることを確認します。
+
+1. Customer Journey Analytics製品および製品プロファイルで有効期限のない資格情報が使用できることを確認します。 次の手順を実行するには、組織のシステム管理者である必要があります。
+   1. **[!UICONTROL アプリ]** から ![Admin Console](/help/assets/icons/Apps.svg) を選択します。
+   1. 有効期限のない資格情報が API 資格情報のリストに追加されていることを確認します。
+      1. トップメニューから **[!UICONTROL ユーザー]** を選択します。
+      1. 左パネルから **[!UICONTROL API 資格情報]** を選択します。
+      1. 新しい資格情報、または移行された有効期限のない資格情報を一覧表示し、「**[!UICONTROL EQS-...]**」で始める必要があります。
+
+      1. 有効期限のない API 資格情報が、Customer Journey Analytics製品およびプロファイルへのアクセス権を持っていることを確認します。
+
+         1. ![EQS-...](/help/assets/icons/ProductDetails.svg) の有効期限が切れていない API 資格情報の **[!UICONTROL ProductDetails]** を選択します。
+         1. 製品の詳細パネルの **[!UICONTROL EQS-...]** から ![ 詳細 ](/help/assets/icons/More.svg) を選択し、**[!UICONTROL API 資格情報を編集]** を選択します。
+         1. **[!UICONTROL API 資格情報を編集]** ダイアログで、「割り当てられたプロファイル **[!UICONTROL を検証]** します。 Customer Journey Analytics製品が表示されない場合：
+            1. 「![ 追加 ](/help/assets/icons/Add.svg)」を選択してから、「**[!UICONTROL Customer Journey Analytics]**」を選択してください。
+            1. クエリサービスおよび BI 拡張機能へのアクセス権を付与するユーザーを含む 1 つ以上の製品プロファイルを選択します。
+            1. 「**[!UICONTROL 適用]**」を選択します。
+
+1. Experience Platform クエリサービスに有効期限のない API 資格情報が表示されていることを検証します。
+
+   1. **[!UICONTROL アプリ]** から ![Experience Platform](/help/assets/icons/Apps.svg) を選択します。
+   1. 左パネルから「**[!UICONTROL クエリ]**」を選択します。
+   1. トップメニューから **[!UICONTROL 資格情報]** を選択します。
+   1. **[!UICONTROL 有効期限のない資格情報]** リストに、手順 1 で指定した名前を使用した、有効期限のない API 資格情報が表示されます。
+
 
 詳しくは、[カスタマージャーニーのアクセス制御](../technotes/access-control.md)を参照してください。特に、[製品管理者の追加の権限](../technotes/access-control.md#product-admin-additional-permissions)と [Adobe Admin Console の Customer Journey Analytics 権限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)を参照してください。
 
@@ -87,7 +110,7 @@ Adobe Experience Platform の場合：
 
    1. `cja` データベース **[!UICONTROL ドロップダウンメニューのデータベースのリストから、サンドボックスの]** データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -120,9 +143,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -161,7 +184,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
