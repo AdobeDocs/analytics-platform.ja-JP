@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->不正な ID は、Customer Journey Analytics インターフェイスでは BAVID とも呼ばれます（[Analytics BAVID](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444) に由来）。
+>不正な ID は、Customer Journey Analytics インターフェイスでは BAVID とも呼ばれます（[Analytics BAVID](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-16444) に由来）。
 >
 
 ## 定義
