@@ -45,7 +45,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)、[ブレットグラフのビジュアライゼーション](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
