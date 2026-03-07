@@ -40,7 +40,7 @@ XDM オブジェクトでデータを収集する代わりに、web SDKでAppMea
 
 ## メリットとデメリット
 
-どちらの方法も同じタスクを実行するので、この方法は [&#x200B; データレイヤー全体をCustomer Journey Analyticsに送信する &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md) 方法と相互排他的です。 （この方法は、データレイヤー全体をAdobeに送るよりも望ましいです。 prop と evar はすべてデータを通過するので、より洗練されています。__adobe.analytics._変数名_.）
+どちらの方法も同じタスクを実行するので、この方法は [ データレイヤー全体をCustomer Journey Analyticsに送信する ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md) 方法と相互排他的です。 （この方法は、データレイヤー全体をAdobeに送るよりも望ましいです。 prop と evar はすべてデータを通過するので、より洗練されています。__adobe.analytics._変数名_.）
 
 このアップグレードの代替手段を使用する際には、次のメリットとデメリットを考慮してください。
 
@@ -62,21 +62,21 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    この方法について詳しくは、Adobe Analytics ドキュメントの次の記事を参照してください。
 
-   * [&#x200B; タグを使用した web SDKへの移行 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
+   * [ タグを使用した web SDKへの移行 ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
 
-   * [JavaScriptを使用した Web SDKへの移行 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
+   * [JavaScriptを使用した Web SDKへの移行 ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
 
 1. Edge Networkから Platform へのデータ送信を開始します。
 
    1. このデータオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
+      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) を参照してください。
 
    1. スキーマを選択します。
 
       既存の Platform スキーマを使用するかどうかを選択するか、他のAdobe Analytics サービスを使用し始める際に組織のニーズに合わせて XDM スキーマを作成できます。
 
-      Adobeでは、XDM スキーマを作成することをお勧めします。 詳しくは、[Customer Journey Analytics web SDKの実装で使用するカスタムスキーマの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
+      Adobeでは、XDM スキーマを作成することをお勧めします。 詳しくは、[Customer Journey Analytics web SDKの実装で使用するカスタムスキーマの作成 ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
 
       +++Adobe Analytics スキーマの使用
 
@@ -96,7 +96,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データストリームマッピングを使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします。
 
-      詳しくは、Experience Platform ドキュメントの [&#x200B; データ収集のためのデータ準備 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping) の [&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep) を参照してください。
+      詳しくは、Experience Platform ドキュメントの [ データ収集のためのデータ準備 ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) の [ マッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 
