@@ -41,7 +41,7 @@ ht-degree: 88%
 
    | 要素 | 説明 |
    | --- | --- |
-   | **[!UICONTROL データビュー]** | セグメントのデータ表示を選択できます。  定義したセグメントは、データビューの [ 設定 ](/help/data-views/create-dataview.md#settings-filters) タブでセグメントとして使用できます。 |
+   | **[!UICONTROL データビュー]** | セグメントのデータ表示を選択できます。  定義したセグメントは、データビューの [&#x200B; 設定 &#x200B;](/help/data-views/create-dataview.md#settings-filters) タブでセグメントとして使用できます。 |
    | **[!UICONTROL プロジェクトのみのセグメント]** | セグメントが作成されたプロジェクトにのみ表示され、セグメントがコンポーネントリストに追加されないことを説明する情報ボックス。この設定を変更するには、**[!UICONTROL このセグメントをすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加]**&#x200B;を有効にします。この情報ボックスは、[クイックセグメント](seg-quick.md)を作成し、[!UICONTROL クイックセグメント]インターフェイスから&#x200B;**[!UICONTROL ビルダーを開く]**&#x200B;を使用してクイックセグメント情報を通常のセグメントに変換した場合にのみ表示されます。 |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | セグメントに名前を付けます（例：`Last month mobile customers`）。 |
    | **[!UICONTROL 説明]** | セグメントに説明を付けます（例：`Segment to define the mobile customers for the last month`）。 |
@@ -66,7 +66,7 @@ ht-degree: 88%
 定義のタイプと範囲を設定できます。
 
 1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
-1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を **[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL オポチュニティ]** [!BADGE B2B editionB2B edition ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購入グループ]**[!BADGE  のいずれにするかを選択します]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を **[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL オポチュニティ]** [!BADGE B2B editionB2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購入グループ]**&#x200B;[!BADGE &#x200B; のいずれにするかを選択します]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 これらの設定は、後で常に変更できます。
 
