@@ -6,16 +6,17 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
 
 # Audience Analysis の使用例 {#analyze-audiences-use-cases}
 
-Audience Analysis は、Customer Journey AnalyticsにおけるExperience Platform オーディエンスメンバーシップデータのレポートを有効にします。 これを実現するには、Audience Analysis 設定ウィザードで管理される設定を使用します。このウィザードは、他のパラメーターや設定の詳細と共に、取り込むプロファイルデータセットを決定するのに役立ちます。 （詳しい概要情報については、[Audience Analysis の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
+Audience Analysis は、Customer Journey AnalyticsにおけるExperience Platform オーディエンスメンバーシップデータのレポートを有効にします。 これを実現するには、Audience Analysis 設定ウィザードで管理される設定を使用します。このウィザードは、他のパラメーターや設定の詳細と共に、取り込むプロファイルデータセットを決定するのに役立ちます。 （詳しい概要情報については、[Audience Analysis の概要 ](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。）
 
 このドキュメントには、Audience Analysis が提供する値をハイライトするユースケースの例が含まれています。 ユースケースを確認する前に、まず、以下のレポートに関する考慮事項に慣れてください。 ユースケースを検討する際は、これらの考慮事項に留意することが重要です。これらの考慮事項は、レポートの最終的な出力に影響を与える可能性があるからです。
 
@@ -61,7 +62,7 @@ Audience Analysis の初回リリースでは、Experience Platform オーディ
 
    * セッション、コンバージョン率、1 人あたりの売上高などの指標について、オーディエンスと非オーディエンス（または別のオーディエンス）を比較します。
 
-1. チャネル最適化戦略（ターゲティングルール、コンテンツ、オファーのチューニングなど）に関するインサイトをフィードします。
+1. 生成されたインサイトを使用して、チャネル最適化戦略（ターゲティングルール、コンテンツ、オファーのチューニングなど）を微調整します。
 
 #### ID 解決に関する考慮事項
 
@@ -142,4 +143,3 @@ Audience Analysis の初回リリースでは、Experience Platform オーディ
 | ユースケース | コアビジネスの質問 | ID 解決の考慮事項 | 高認証/単一名前空間組織（1 人のユーザー ID の下に既に存在するイベント（例：ログイン /CRM） | フラグメント/マルチ名前空間組織（ECID の下のイベント + CRM およびその他） |
 |---------|----------|---------|---------|---------|
 | 退出したオーディエンス – チャーン分析 | _「誰が主要なオーディエンスを残しましたか？」_ <p>_「彼らは出口を出る際に何をしましたか？」_</p> | オーディエンスの離脱は、接続およびオーディエンス設定に使用されたのと同じユーザー ID でトラッキングされます。 | 安定したログイン/CRM ID で測定された EXIT は、真の行動変化を反映する傾向があります。 <p>この ID を使用してオーディエンスを離れる場合、通常は実際の変化（チャーン、ダウングレード、非アクティブ）を意味します。</p><p>ジャーニーの最近の動作を分析して、ジャーニーを微調整し、自信を持ってオファーを獲得できます。</p> | 出口は、プロファイルとイベントが設定済み ID を共有する場合にのみ表示されるので、慎重に解釈する必要があります。<p>離脱済みコホートを強力なヒントまたはシグナルとして使用しますが、重要な決定を行う前に他のデータポイントとクロスチェックすることをお勧めします。</p> |
-
