@@ -25,7 +25,7 @@ Target 分類ルックアップデータセット（Experience Platformではデ
 
 ## メモと考慮事項
 
-Target アクティビティは [Customer Journey Analyticsをレポートソースとして使用 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) する必要があります。
+Target アクティビティは [Customer Journey Analyticsをレポートソースとして使用 &#x200B;](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) する必要があります。
 
 ターゲット分類イベントデータセットが接続に追加されると、これらのコンポーネントがディメンションとして追加された後、データビュー内で次のような小規模な調整がおこなわれます。
 
