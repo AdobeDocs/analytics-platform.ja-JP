@@ -4,10 +4,10 @@ description: Adobe TargetとCustomer Journey Analyticsの統合
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 41%
+source-wordcount: '386'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,9 @@ Target 分類ルックアップデータセット（Experience Platformではデ
 
 ## メモと考慮事項
 
-Target 分類イベントデータセットがCJA Connection に追加されたら、これらのコンポーネントがディメンションとして追加された後、CJA データビュー内で次のような小規模な調整が行われます。
+Target アクティビティは [Customer Journey Analyticsをレポートソースとして使用 ](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja) する必要があります。
+
+ターゲット分類イベントデータセットが接続に追加されると、これらのコンポーネントがディメンションとして追加された後、データビュー内で次のような小規模な調整がおこなわれます。
 
 * 永続性を Target での追跡方法と同様に設定します（適切な設定を確認するには、Target のコンサルタントまたは顧客にお問い合わせください）。
 
