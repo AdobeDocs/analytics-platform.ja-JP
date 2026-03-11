@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
+source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3419'
 ht-degree: 81%
 
 ---
@@ -432,9 +432,19 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 ### ヘッダーの上書き
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="ヘッダーの上書き"
+>abstract="**ヘッダーの上書き**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="ヘッダーの上書き"
+>abstract="ボット検出またはゲートトラフィックをバイパスする高度な機能。 Content Analyticsは、エンドポイントを呼び出す際にカスタム HTTP ヘッダーを含めます。"
+
 オプションで、「**[!UICONTROL ヘッダーオーバーライド]**」セクションにヘッダー名とシークレットヘッダー値を指定できます。  このヘッダーは、設定をオーバーライドし、実装したボット検出やゲートトラフィックテクノロジーをバイパスするために、Content Analyticsがカスタム HTTP ヘッダーを送信するようにします。
 
-![&#x200B; ヘッダーオーバーライドセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+![ ヘッダーオーバーライドセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]** を有効にします。
 1. **[!UICONTROL ヘッダー名]** を入力します。 例：`x-asset-service`。
