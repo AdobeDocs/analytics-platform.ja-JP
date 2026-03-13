@@ -12,4 +12,4 @@ ht-degree: 8%
 
 # ブラウザーと言語のサポート
 
-[Experience Platform UI のブラウザーと言語のサポート ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support) に記載されているように、Customer Journey AnalyticsはExperience Platform UI でサポートされているすべてのブラウザーと言語をサポートしています。
+[Experience Platform UI のブラウザーと言語のサポート &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support) に記載されているように、Customer Journey AnalyticsはExperience Platform UI でサポートされているすべてのブラウザーと言語をサポートしています。
