@@ -125,7 +125,7 @@ ht-degree: 6%
 >id="connection_stitchingmetrics_badids"
 >title="不正 ID"
 >abstract="不正な ID は、レポートデータに大きく影響する ID 値です。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="不正 ID"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/badids" text="不正 ID"
 
 
 ### データセット設定
