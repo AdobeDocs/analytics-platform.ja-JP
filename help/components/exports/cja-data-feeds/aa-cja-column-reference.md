@@ -19,7 +19,7 @@ Adobe AnalyticsとCustomer Journey Analyticsは基本的に異なるため、1:1
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
