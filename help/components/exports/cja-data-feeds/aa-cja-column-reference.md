@@ -20,7 +20,7 @@ Adobe AnalyticsとCustomer Journey Analytics データフィード列の真の1:
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
@@ -360,7 +360,7 @@ Adobe Advertising統合で使用されるEF ID。
 
 {{cja-df-post}}
 
-スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
+スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
 
 * **チェックアウト**: `xdm.commerce.checkouts.value`
 * **買い物かごに追加**: `xdm.commerce.productListAdds.value`
@@ -373,7 +373,7 @@ Adobe Advertising統合で使用されるEF ID。
 一部の指標では、Adobe Analyticsで重複排除を完全に制御できるイベントのシリアル化を使用する場合があります。 [指標の重複排除](/help/data-views/component-settings/metric-deduplication.md) コンポーネント設定を使用して、重複排除パリティを実現できます。
 
 * Adobe Analyticsで訪問別に指標の重複排除を行う場合は、その指標のコンポーネント設定で重複排除スコープをセッションに設定できます。
-* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
+* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
 
    * **チェックアウト**: `xdm.commerce.checkouts.id`
    * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
