@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 82fe9ca3b702f9213e2eb1e4ab0260500be0f731
+source-git-commit: ee7989a36c9d25468dee5b1b2902ed2757e3a4b7
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 96%
+source-wordcount: '1390'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 96%
    + Adobe Analytics との比較 {#cja-aa-comparison}
       + [概要](../getting-started/aa-vs-cja/overview.md)
       + [Adobe Analytics データの使用](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [クロス IMS データマッピング](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+      + [Cross-IMS データマッピング](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [機能のサポート](../getting-started/aa-vs-cja/cja-aa.md)
       + [用語の比較](../getting-started/aa-vs-cja/terminology.md)
       + [データ処理の比較](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -412,6 +412,11 @@ ht-degree: 96%
       + [書き出しの管理](/help/components/exports/manage-exports.md)
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
+      + データフィード {#cja-data-feeds}
+         + [データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + [Adobe Analyticsのデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + [列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + [マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -499,19 +504,19 @@ ht-degree: 96%
       + [概要データの使用](/help/use-cases/data-views/summary-data.md)
       + BI 拡張機能 {#bi-extension}
          + [ユースケース](/help/use-cases/data-views/bi-extension-usecases.md)
-         + [データビューの接続とリスト表示](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
-         + [毎日のトレンド](/help/use-cases/data-views/bi-extension/daily-trend.md)
-         + [毎時トレンド](/help/use-cases/data-views/bi-extension/hourly-trend.md)
-         + [月間トレンド](/help/use-cases/data-views/bi-extension/monthly-trend.md)
-         + [ランク付けされた単一ディメンション](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
-         + [複数のディメンションのランク](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
-         + [個別ディメンション値のカウント](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
-         + [日付範囲名を使用してフィルター](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
-         + [セグメント名を使用したセグメント化](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [データビューの接続とリスト](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [日々のトレンド](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [時間別トレンド](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [月次トレンド](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [単一ディメンションのランク](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [複数ディメンションのランキング](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [個別のディメンション値をカウント](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [フィルターに日付範囲名を使用する](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [セグメント名を使用してセグメント化する](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
          + [ディメンション値を使用したセグメント化](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
          + [並べ替え](/help/use-cases/data-views/bi-extension/sort.md)
          + [制限](/help/use-cases/data-views/bi-extension/limits.md)
-         + [変換](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [変形](/help/use-cases/data-views/bi-extension/transformations.md)
          + [ビジュアライゼーション](/help/use-cases/data-views/bi-extension/visualizations.md)
          + [注意事項](/help/use-cases/data-views/bi-extension/caveats.md)
 
