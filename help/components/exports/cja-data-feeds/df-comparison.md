@@ -41,7 +41,7 @@ Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードで
 | 出力ファイル形式 | データフィードデータが送信される形式。 | Parquet （構造化フィールドをサポートし、最新のデータウェアハウスで受け入れられます） | C3 |
 | 配信先 | データフィードデータを送信できる宛先。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platformなどのクラウドの宛先。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platformなどのクラウドの宛先。<p>SFTPもサポートしています。</p> |
 
-![ データフィードデータ処理](assets/data-feeds-data-processing.png)
+![&#x200B; データフィードデータ処理](assets/data-feeds-data-processing.png)
 
 AA側の図では、訪問者ごとに順番に受信する必要があることを示す必要があります。
 
