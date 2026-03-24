@@ -325,4 +325,4 @@ Customer Journey Analyticsには前処理と後処理の概念がないため、
 
 ## CJA data feed user agent {#cja-df-ua}
 
-ユーザーエージェント情報とデバイス検索情報の両方を同時に収集することはできません。これらのディメンションの母集団は相互に排他的です。 [ データストリームの設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup)の際に、ユーザーエージェントを直接収集するか、（ユーザーエージェントに基づいて）デバイスのルックアップ情報を収集するかを選択する必要があります。
+ユーザーエージェント情報とデバイス検索情報の両方を同時に収集することはできません。これらのディメンションの母集団は相互に排他的です。 [&#x200B; データストリームの設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup)の際に、ユーザーエージェントを直接収集するか、（ユーザーエージェントに基づいて）デバイスのルックアップ情報を収集するかを選択する必要があります。

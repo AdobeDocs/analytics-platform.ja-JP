@@ -20,7 +20,7 @@ Adobe AnalyticsとCustomer Journey Analytics データフィード列の真の1:
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
@@ -151,7 +151,7 @@ Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.ado
 * **ブラウザー名**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **ブラウザーバージョン**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-詳しくは、[ ユーザーエージェントクライアントヒント ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
+詳しくは、[&#x200B; ユーザーエージェントクライアントヒント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
 
 {{cja-df-ua}}
 
@@ -343,7 +343,7 @@ Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.c
 
 ドメイン ディメンション。 訪問者のインターネットアクセスポイントに基づいています。
 
-**[!UICONTROL データストリームの設定]**&#x200B;時に[ ネットワークルックアップ ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
+**[!UICONTROL データストリームの設定]**&#x200B;時に[&#x200B; ネットワークルックアップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
 
 +++
 
@@ -439,7 +439,7 @@ Adobe Advertising統合で使用されるEF ID。
 Customer Journey Analyticsは、標準搭載の「除外されたヒット」を尊重しません。 ただし、特定のヒットを除外するようにフラグを付けるXDM フィールドがある場合は、この機能を再作成できます。
 
 1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート [で「](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
-1. [ データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
+1. [&#x200B; データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
 1. 除外ヒットコンポーネントが存在するすべてのイベント、または除外する値を含むすべてのイベントを除外するセグメントを作成します。
 1. セグメントとデータビューの両方で&#x200B;**[!UICONTROL 保存]**&#x200B;を選択します。
 
@@ -964,7 +964,7 @@ Mobile Services の起動条件
 
 {{cja-df-lookup}}
 
-[ データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
+[&#x200B; データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
 
 * **OS ベンダー**: `xdm.environment.operatingSystemVendor`
 * **OS名**: `xdm.environment.operatingSystem`
