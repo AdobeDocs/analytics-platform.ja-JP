@@ -34,15 +34,15 @@ ht-degree: 20%
 
 Customer Journey Analytics レポートをクラウドの宛先（[Analysis Workspace](/help/analysis-workspace/export/export-cloud.md)または[Report Builder](/help/report-builder/report-builder-export.md)から）に書き出す前に、データを送信する場所を追加して設定する必要があります。 このプロセスは次の要素で構成されます。
 
-1. [ クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従って、アカウント（Amazon S3、Google Cloud Platformなど）を追加および設定する
+1. [&#x200B; クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従って、アカウント（Amazon S3、Google Cloud Platformなど）を追加および設定する
 
 1. この記事で説明されているように、そのアカウント内の場所（アカウント内のフォルダーなど）を追加および設定します。
 
-場所の表示、編集、削除など、既存の場所を管理する方法について詳しくは、[ クラウド書き出し場所とアカウントの管理](/help/components/exports/manage-export-locations.md)を参照してください。
+場所の表示、編集、削除など、既存の場所を管理する方法について詳しくは、[&#x200B; クラウド書き出し場所とアカウントの管理](/help/components/exports/manage-export-locations.md)を参照してください。
 
 ## クラウド書き出し場所の作成を開始
 
-1. 場所を追加する前に、アカウントを追加する必要があります。 まだアカウントを追加していない場合は、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従ってアカウントを追加します。
+1. 場所を追加する前に、アカウントを追加する必要があります。 まだアカウントを追加していない場合は、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)の説明に従ってアカウントを追加します。
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**]&#x200B;を選択します。
 
@@ -65,7 +65,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    | [!UICONTROL **名前**] | 場所の名前。 |
    | [!UICONTROL **説明**] | アカウント上の他の場所と区別するために、場所の簡単な説明を提供します。 |
    | [!UICONTROL **組織内のすべてのユーザーが場所を利用できるようにします**] | このオプションを有効にすると、組織内の他のユーザーがこの場所を使用できるようになります。 <p>場所を共有する場合は、次の点を考慮してください。</p><ul><li>共有している場所は共有を解除できません。</li><li>共有場所は、場所の所有者のみが編集できます。</li><li>場所を共有できるのは、場所が関連付けられているアカウントも共有されている場合のみです。</li></ul> |
-   | [!UICONTROL **場所アカウント**] | 場所を作成するアカウントを選択します。 アカウントの作成方法について詳しくは、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。 |
+   | [!UICONTROL **場所アカウント**] | 場所を作成するアカウントを選択します。 アカウントの作成方法について詳しくは、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。 |
 
 1. Adobe Analytics の「[!UICONTROL **場所のプロパティ**]」セクションで、場所アカウントのアカウントタイプに固有の情報を指定します。
 
@@ -86,7 +86,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -101,20 +101,20 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
-1. AEP Data Landing Zoneのデータにアクセスする最も簡単な方法は、Microsoft Azure Storage Explorerを使用することです。 Storage Explorerは、[AEP Data Landing Zone アカウント ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)の設定手順で使用されるものと同じツールです。
+1. AEP Data Landing Zoneのデータにアクセスする最も簡単な方法は、Microsoft Azure Storage Explorerを使用することです。 Storage Explorerは、[AEP Data Landing Zone アカウント &#x200B;](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)の設定手順で使用されるものと同じツールです。
 
    1. [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)を開きます。
 
-   1. [!UICONTROL **ストレージアカウント**] > [!UICONTROL **（添付コンテナ）**] > [!UICONTROL **Blob Containers**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***に移動します。
+   1. [!UICONTROL **ストレージアカウント**] > [!UICONTROL **（添付コンテナ）**] > [!UICONTROL **Blob Containers**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***に移動します。
 
       >[!NOTE]
       >
-      >フォルダー名&#x200B;**[!UICONTROL cjaexport-_number_]**は、Azure Storage Explorerが提供するデフォルトの名前です。 SAS URIに関連付けられた接続が1つしかない場合（通常の場合）、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**になります。
+      >フォルダー名&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;は、Azure Storage Explorerが提供するデフォルトの名前です。 SAS URIに関連付けられた接続が1つしかない場合（通常の場合）、このフォルダーの名前は&#x200B;**[!UICONTROL cjaexport-1]**&#x200B;になります。
 
 
-      ![Azure ストレージエクスプローラーのファイルにアクセス ](assets/azure-storage-explorer-access.png)
+      ![Azure ストレージエクスプローラーのファイルにアクセス &#x200B;](assets/azure-storage-explorer-access.png)
 
    1. ダウンロードする書き出しを選択し、[!UICONTROL **ダウンロード**]&#x200B;を選択してダウンロードします。
 
@@ -122,7 +122,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -130,7 +130,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するAmazon S3 アカウント内のバケット。 <p>このバケットにファイルをアップロードするには、Adobeから提供されたユーザーARNに`S3:PutObject`権限があることを確認してください。 </p><p>バケット名は、特定の命名規則を満たす必要があります。例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。[命名規則の完全なリストについては、AWSのドキュメント ](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)を参照してください。 </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するAmazon S3 アカウント内のバケット。 <p>このバケットにファイルをアップロードするには、Adobeから提供されたユーザーARNに`S3:PutObject`権限があることを確認してください。 </p><p>バケット名は、特定の命名規則を満たす必要があります。例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。[命名規則の完全なリストについては、AWSのドキュメント &#x200B;](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)を参照してください。 </p> |
    | [!UICONTROL **接頭辞**] | データを配置するバケット内のフォルダー。静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。例：folder_name/ |
    | [!UICONTROL **ファイル名とパス**] | この場所に送信される自動書き出しに使用する動的なカスタムファイル名を指定します。 ファイル名の前に動的カスタムファイルパスを付けることもできます。 <p>このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>ファイル名とパスで次のいずれかの変数を使用して、動的にします。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul></p><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`を指定した場合、2026年1月15日にこの宛先に自動的に送信される書き出しには、次のファイルパスと名前が含まれます。[prefix_folder_name]/2026/01/15/my-report-[UID]-1.csv</p> |
 
@@ -138,13 +138,13 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
 ### Google Cloud Platform
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -160,13 +160,13 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
 ### Azure SAS
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -182,13 +182,13 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
 ### Azure RBAC
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -205,13 +205,13 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
 ### Snowflake
 
 1. 次のいずれかの方法で、クラウド書き出し場所の作成を開始します。
 
-   * 上記の書き出しページから、[ クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
+   * 上記の書き出しページから、[&#x200B; クラウド書き出し場所の作成を開始](#begin-creating-a-cloud-export-location)します
 
    * Analysis Workspace[から完全なテーブルを](/help/analysis-workspace/export/export-cloud.md#export-full-tables)書き出す場合
 
@@ -229,4 +229,4 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[ プロジェクトデータをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください。
+1. Analysis Workspaceから、設定したアカウントと場所にデータを書き出せるようになりました。 データをクラウドにエクスポートする方法について詳しくは、[&#x200B; プロジェクトデータをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください。

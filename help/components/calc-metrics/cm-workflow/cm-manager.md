@@ -23,7 +23,7 @@ ht-degree: 28%
 計算指標マネージャーには、次のインターフェイス要素があります。
 
 
-![計算指標マネージャーインターフェイス ](assets/calculated-metrics-manager.png)
+![計算指標マネージャーインターフェイス &#x200B;](assets/calculated-metrics-manager.png)
 
 ### 計算指標リスト
 
@@ -33,7 +33,7 @@ ht-degree: 28%
 
 | 列 | 説明 |
 | --- | --- |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標として![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)を優先しない場合に選択します。 [計算指標をお気に入りにマーク ](/help/components/segments/seg-favorite.md)を参照してください |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標として![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)を優先しない場合に選択します。 [計算指標をお気に入りにマーク &#x200B;](/help/components/segments/seg-favorite.md)を参照してください |
 | **[!UICONTROL タイトルと説明]** | 計算指標を編集するには、タイトルリンクを選択します。これにより、[計算指標ビルダー](cm-build-metrics.md)が開きます。 共有された計算指標は、![共有](/help/assets/icons/ShareAlt.svg)と共に示されます。 |
 | **[!UICONTROL データビュー]** | この計算指標が適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | 計算指標の所有者。 ユーザーには、自分が所有している注釈または自分と共有されている注釈のみが表示されます。 |
@@ -69,7 +69,7 @@ ht-degree: 28%
 
 ### フィルターパネル
 
-![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、計算指標のリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用する計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
+![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、計算指標のリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用する計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
 
 詳しくは、[計算指標のリストのフィルター](cm-filter.md)を参照してください。
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 # プロジェクトの削除
 
 
-Analysis Workspaceからプロジェクトを削除する方法については、「[ プロジェクトの管理](../freeform-overview.md#actions) アクション」を参照してください。
+Analysis Workspaceからプロジェクトを削除する方法については、「[&#x200B; プロジェクトの管理](../freeform-overview.md#actions) アクション」を参照してください。
 
 
 <!--

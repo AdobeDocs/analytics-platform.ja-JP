@@ -14,7 +14,7 @@ ht-degree: 9%
 
 # 書き出しログの管理
 
-書き出しログでは、それぞれの書き出しに関する詳細が提供されます。Analysis Workspace データがクラウドに書き出されるたびに生成されます。 （データをクラウドにエクスポートする方法については、[Customer Journey Analytics レポートをクラウドにエクスポート ](/help/analysis-workspace/export/export-cloud.md)を参照してください）。
+書き出しログでは、それぞれの書き出しに関する詳細が提供されます。Analysis Workspace データがクラウドに書き出されるたびに生成されます。 （データをクラウドにエクスポートする方法については、[Customer Journey Analytics レポートをクラウドにエクスポート &#x200B;](/help/analysis-workspace/export/export-cloud.md)を参照してください）。
 
 スケジュールされた書き出しの場合、ログには、ログの送信時と同じ書き出し設定が反映されます。 ログを削除できません。
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-   ![ ログ タブを表示する書き出しウィンドウ ](assets/export-logs-tab.png)
+   ![&#x200B; ログ タブを表示する書き出しウィンドウ &#x200B;](assets/export-logs-tab.png)
 
    各ログの詳細は、使用可能な列に表示されます。
 
@@ -34,9 +34,9 @@ ht-degree: 9%
 
    * [表示される列](#configure-columns)をカスタマイズします。
 
-   * ログ名の横にある&#x200B;**情報アイコン** ![情報アイコン ](assets/information-icon.png)を選択すると、ログに関連付けられている書き出しが表示されます。
+   * ログ名の横にある&#x200B;**情報アイコン** ![情報アイコン &#x200B;](assets/information-icon.png)を選択すると、ログに関連付けられている書き出しが表示されます。
 
-   * ログ名の横にある&#x200B;**書き出し編集アイコン** ![書き出し編集アイコン ](/help/assets/icons/Edit.svg)を選択して、ログに関連付けられている書き出しを編集します。
+   * ログ名の横にある&#x200B;**書き出し編集アイコン** ![書き出し編集アイコン &#x200B;](/help/assets/icons/Edit.svg)を選択して、ログに関連付けられている書き出しを編集します。
 
      書き出しの編集について詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](/help/analysis-workspace/export/export-cloud.md)を参照してください。
 
@@ -52,7 +52,7 @@ ht-degree: 9%
 
 1. 「**フィルター**」アイコンを選択します。
 
-   ![ アカウントタイプ別のフィルターリストを表示するウィンドウをエクスポート ](assets/export-log-filters.png)
+   ![&#x200B; アカウントタイプ別のフィルターリストを表示するウィンドウをエクスポート &#x200B;](assets/export-log-filters.png)
 
    次の条件でフィルタリングできます。
 
@@ -60,7 +60,7 @@ ht-degree: 9%
    |---------|----------|
    | [!UICONTROL **書き出しID**] | 表示する書き出しログの書き出しIDを指定します。 |
    | [!UICONTROL **アカウントタイプ**] | ログが関連付けられているアカウントタイプ。 次のアカウントタイプを使用できます。 <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **ステータス**] | 書き出しのステータス。 次のステータスを表示できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスが開始されましたが、まだ完了していません。<p>ステータスが「保留中」の書き出しを再実行すると、書き出しプロセスが遅れます。</p></li><li>[!UICONTROL **完了**]：書き出しの特定のインスタンスの処理が完了し、書き出しアカウントで利用できるようになります。</li><li>[!UICONTROL **失敗**]<p>様々な状況で書き出しに失敗する可能性があります。 失敗ステータスにカーソルを合わせると、失敗の詳細が表示されます。</p><p>エラーの考えられる原因について詳しくは、[失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md)を参照してください。</p></li></ul> |
+   | [!UICONTROL **ステータス**] | 書き出しのステータス。 次のステータスを表示できます。 <ul><li>[!UICONTROL **保留中**]：書き出しの特定のインスタンスが開始されましたが、まだ完了していません。<p>ステータスが「保留中」の書き出しを再実行すると、書き出しプロセスが遅れます。</p></li><li>[!UICONTROL **完了**]：書き出しの特定のインスタンスの処理が完了し、書き出しアカウントで利用できるようになります。</li><li>[!UICONTROL **失敗**]<p>様々な状況で書き出しに失敗する可能性があります。 失敗ステータスにカーソルを合わせると、失敗の詳細が表示されます。</p><p>エラーの考えられる原因について詳しくは、[失敗した書き出しのトラブルシューティング &#x200B;](/help/components/exports/troubleshoot-exports.md)を参照してください。</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -116,17 +116,17 @@ This option is not available when selecting multiple logs.
 
 ## 列の設定
 
-[!UICONTROL  ログ ] タブの列を追加または削除して、表示する情報を設定できます。
+[!UICONTROL &#x200B; ログ &#x200B;] タブの列を追加または削除して、表示する情報を設定できます。
 
 列ヘッダーを選択して、その列でログを並べ替えます。 デフォルトでは、ログは書き出しを開始した日時で並べ替えられます。
 
-[!UICONTROL  ログ ] タブの列を設定するには：
+[!UICONTROL &#x200B; ログ &#x200B;] タブの列を設定するには：
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**]&#x200B;を選択します。
 
 1. 「[!UICONTROL **ログ**]」タブを選択します。
 
-1. **ログ** ページの右上にある![ テーブルのカスタマイズ ](assets/customize-table-icon.png) アイコン [!UICONTROL  テーブルのカスタマイズ ]を選択します。
+1. **ログ** ページの右上にある![&#x200B; テーブルのカスタマイズ &#x200B;](assets/customize-table-icon.png) アイコン [!UICONTROL &#x200B; テーブルのカスタマイズ &#x200B;]を選択します。
 
    次の列を表示できます。
 
@@ -148,8 +148,8 @@ This option is not available when selecting multiple logs.
 
    {style="table-layout:auto"}
 
-1. 表示する列が選択されていることを確認します。選択した列が[!UICONTROL  ログ ] ページに表示され、関連情報が表示されます。
+1. 表示する列が選択されていることを確認します。選択した列が[!UICONTROL &#x200B; ログ &#x200B;] ページに表示され、関連情報が表示されます。
 
 ## 監査ログの表示
 
-テーブルの書き出しは、[Customer Journey Analytics監査ログ ](/help/privacy/audit-log.md)でも追跡されます。<!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+テーブルの書き出しは、[Customer Journey Analytics監査ログ &#x200B;](/help/privacy/audit-log.md)でも追跡されます。<!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

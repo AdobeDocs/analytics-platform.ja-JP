@@ -24,7 +24,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ワークブックのスケジュール ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ワークブックのスケジュール &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -35,11 +35,11 @@ ht-degree: 14%
 
 1. Report Builder ハブで「**[!UICONTROL スケジュール]**」を選択してスケジュールを作成し、ブック Excel ファイル （.xlsx）を個人またはグループに自動的に配布できるようにします。
 
-   ![ スケジュール ボタンを選択してスケジュールを作成します。](./assets/schedule.png){zoomable="yes"}
+   ![&#x200B; スケジュール ボタンを選択してスケジュールを作成します。](./assets/schedule.png){zoomable="yes"}
 
 1. 「**[!UICONTROL ワークブックをスケジュール]**」または「![追加](/help/assets/icons/Add.svg)」を選択して、新しいスケジュール済みワークブックを作成します。
 
-   ![ ワークブックのスケジュール ウィンドウ。](./assets/schedule-workbook.png){zoomable="yes"}
+   ![&#x200B; ワークブックのスケジュール ウィンドウ。](./assets/schedule-workbook.png){zoomable="yes"}
 
    スケジュールウィンドウには、ブック名やブックの最終変更日など、ブックに関する事前定義済みの情報が表示されます。
 
@@ -47,7 +47,7 @@ ht-degree: 14%
 
 「**[!UICONTROL ファイル]**」セクションでは、ファイルを保護するためのファイルの種類、名前、パスワードの詳細を指定します。
 
-![ スケジュール ウィンドウ。](./assets/schedule-pane.png){zoomable="yes"}
+![&#x200B; スケジュール ウィンドウ。](./assets/schedule-pane.png){zoomable="yes"}
 
 1. まだ選択されていない場合は、![TableSelect](/help/assets/icons/TableSelect.svg)を使用して現在のワークブックを選択します。
 
@@ -86,7 +86,7 @@ Does no longer seem to be an option?
 
 「**[!UICONTROL 電子メール]**」セクションでは、電子メールの受信者、件名、説明を指定します。
 
-![ メール設定のスケジュール ](assets/schedule-email.png){zoomable="yes"}
+![&#x200B; メール設定のスケジュール &#x200B;](assets/schedule-email.png){zoomable="yes"}
 
 1. **受信者**&#x200B;を入力します。組織で認識されている人物の名前を入力できます。 または、組織外のユーザーのメールアドレスを入力することもできます。
 
@@ -99,13 +99,13 @@ Does no longer seem to be an option?
 
 「**[!UICONTROL スケジュール]**」セクションで、ワークブックを含むメールを受信者に送信するスケジュールを定義できます。
 
-![ スケジュール定義](assets/schedule-enable.png){zoomable="yes"}
+![&#x200B; スケジュール定義](assets/schedule-enable.png){zoomable="yes"}
 
 1. 「**[!UICONTROL スケジュール設定オプションを表示]**」を選択して、スケジュールを定義します。
 
-1. **[!UICONTROL 開始日を]**&#x200B;から入力してください。 または、![ カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから開始日を選択します。
+1. **[!UICONTROL 開始日を]**&#x200B;から入力してください。 または、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから開始日を選択します。
 
-1. 終了日を&#x200B;****&#x200B;に入力してください。 または、![ カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから終了日を選択します。
+1. 終了日を&#x200B;**&#x200B;**&#x200B;に入力してください。 または、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから終了日を選択します。
 
 1. **[!UICONTROL 頻度]**&#x200B;を選択します。 選択した頻度に応じて、追加のオプションがあります。 以下の表を参照してください。
 
@@ -132,5 +132,5 @@ Does no longer seem to be an option?
 
 ## スケジュールされたワークブックの管理
 
-既にスケジュールされているワークブックの管理について詳しくは、[ スケジュールされたワークブックの管理](/help/report-builder/manage-schedules-reportbuilder.md)を参照してください。
+既にスケジュールされているワークブックの管理について詳しくは、[&#x200B; スケジュールされたワークブックの管理](/help/report-builder/manage-schedules-reportbuilder.md)を参照してください。
 
