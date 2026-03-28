@@ -1,10 +1,10 @@
 ---
-title: 日付範囲の作成
-description: Analysis Workspaceで使用できる日付範囲の作成方法を説明します。
+title: 日付範囲を作成
+description: Analysis Workspaceで使用できる日付範囲の作成方法について説明します。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 92%
@@ -25,9 +25,10 @@ ht-degree: 92%
 * **E** - Workspace プロジェクトのコンポーネント左パネルで、![カレンダー](/help/assets/icons/Calendar.svg) **日付範囲**&#x200B;に「![追加](/help/assets/icons/Add.svg)」を選択します。
 * **F** - 折れ線グラフのビジュアライゼーションなど、サポートされているビジュアライゼーションで、データポイントのコンテキストメニューから、「**[!UICONTROL 選択に注釈を付ける]**」を選択します。
 
-注釈を定義するには、[[!UICONTROL &#x200B; 日付範囲ビルダー &#x200B;]](#annotation-builder) を使用します。
+注釈を定義するには、[[!UICONTROL 日付範囲ビルダー]](#annotation-builder)を使用します。
 
-<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+<!--
+Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 -->
 
@@ -53,7 +54,7 @@ ht-degree: 92%
 
 1. この日付範囲の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。例：**[!UICONTROL Quarterly]**。
 1. オプションで、「**[!UICONTROL 説明]**」を指定します。
-1. 1 つ以上の **[!UICONTROL タグ]** を作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
+1. 1つ以上の&#x200B;**[!UICONTROL タグ]**&#x200B;を作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。|
 1. 最初に開始日を選択し、次に終了日を選択して、「**[!UICONTROL 日付範囲]**」を選択します。
 または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。
 

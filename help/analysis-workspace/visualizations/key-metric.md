@@ -4,7 +4,7 @@ title: 主要指標の概要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a85cc758f414c8c9f702ed83d1dd2675bf29a30f
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 94%
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の主要指標の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の主要指標の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 1. ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 主要指標の概要]**&#x200B;ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
-1. **[!UICONTROL 指標]**、**[!UICONTROL 比較日付範囲]** **[!UICONTROL 、（プライマリ日付範囲]** （オプション）および **[!UICONTROL セグメント]** （オプション）を選択して、ビジュアライゼーションを設定します。
+1. **[!UICONTROL 指標]**、**[!UICONTROL プライマリ日付範囲]**、**[!UICONTROL 比較日付範囲]** （オプション）および&#x200B;**[!UICONTROL セグメント]** （オプション）を選択して、ビジュアライゼーションを設定します。
 
    ![指標、プライマリ日付範囲、比較日付範囲およびセグメントのオプションを表示する主要指標の設定。](assets/key-metrics-config.png)
 
@@ -70,7 +70,8 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-<!--## How the Key Metric Summary visualization handles the comparison date range
+<!--
+## How the Key Metric Summary visualization handles the comparison date range
 
 (This will probably release in January. Per Jaden Howell)
 
@@ -95,7 +96,8 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 >
 >Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
 
-When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. 
+-->
 
 主要指標の概要の出力は次のようになります。
 
@@ -143,9 +145,9 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ビジュアライゼーションを作成したら、元の設定を編集できます。
 
-1. ビジュアライゼーションの右上隅にある「![&#x200B; 編集 &#x200B;](/help/assets/icons/Edit.svg)」を選択します。
+1. ビジュアライゼーションの右上隅にある「![編集](/help/assets/icons/Edit.svg)」を選択します。
 
-   元の [&#x200B; 設定ビュー &#x200B;](#configure) に戻ります。
+   これで、元の[設定ビュー](#configure)に戻りました。
 
 1. 必要に応じて、指標、プライマリ日付範囲、比較日付範囲またはセグメントを変更します。
 

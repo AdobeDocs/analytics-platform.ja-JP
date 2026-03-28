@@ -5,7 +5,8 @@ title: Analytics データフィードの概要
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -37,12 +38,14 @@ Customer Journey Analyticsのデータフィード機能は、Adobe Analyticsと
 * データフィードのベストプラクティス <!--add link-->: データフィードを作成および管理するためのベストプラクティスです。
 * データフィードを作成<!--add link-->: データフィードを作成するための技術的な詳細。個々のフィールドをより詳細に説明します
 * データフィードの管理<!--add link-->: データフィードのインターフェイスの操作について詳しく見る
-* データフィードの内容<!--add link-->：圧縮ファイル <!-- Is this still the output users can download from the destination? I aske Jun. -->の内容を理解する
+* データフィードの内容<!--add link-->：圧縮ファイル内の内容を理解する
 * データ列の定義<!--add link-->：使用可能なすべての列の包括的なリスト。
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィードインターフェイスの操作](https://video.tv.adobe.com/v/3428564?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィードインターフェイスの操作](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Customer Journey Analyticsのデータフィード機能は、Adobe Analyticsと
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィード ID の検索](https://video.tv.adobe.com/v/3480885?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィード ID の検索](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]

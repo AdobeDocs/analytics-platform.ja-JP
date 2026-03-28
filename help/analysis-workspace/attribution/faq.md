@@ -1,10 +1,10 @@
 ---
-title: アトリビューションに関するよくある質問（Faq）
-description: アトリビューションに関するよくある質問への回答を示します。
+title: アトリビューションに関するよくある質問
+description: アトリビューションに関するよくある質問とその回答。
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 2%
@@ -13,11 +13,11 @@ ht-degree: 2%
 
 # よくある質問
 
-ここでは、アトリビューションに関するよくある質問に対する回答を示します。
+アトリビューションに関するよくある質問とその回答を紹介します。
 
-+++## アトリビューションを使用する際の *なし* 行項目は何ですか？
++++## アトリビューションを使用する場合、*None*&#x200B;の行項目は何ですか？
 
-*なし* 行項目は、ルックバックウィンドウ内でタッチポイントなしで発生したすべてのコンバージョンを表すキャッチオール項目です。 「*なし*」行項目となるコンバージョンの数を減らすには、ルックバックウィンドウを長くしてみてください。
+*None*&#x200B;行項目は、ルックバックウィンドウ内でタッチポイントなしで発生したすべてのコンバージョンを表すキャッチオール項目です。 *なし*&#x200B;の行項目に起因するコンバージョンの数を減らすには、長いルックバックウィンドウを使用してみてください。
 
 +++
 
@@ -45,7 +45,8 @@ In this example, Entries and Bounce rate would not show data from August 31. The
 +++
 -->
 
-<!-- not relevant anymore due to introduction of separation of container and lookback window 
+<!--
+not relevant anymore due to introduction of separation of container and lookback window 
 +++## When should I use a visit, visitor, or custom attribution lookback?
 
 The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor or custom lookback is recommended. For longer conversion cycles, custom lookback windows are best as they are the only type that can pull in data from prior to the reporting window.
@@ -62,9 +63,9 @@ Attribution is recalculated at report runtime, so there is no difference between
 -->
 
 
-+++## アトリビューションモデルは他の Analytics 機能でも使用できますか？
++++## アトリビューションモデルは他のAnalytics機能でも使用できますか？
 
-はい。アトリビューションモデルは、データビューの指標コンポーネントのコンポーネント設定の一部としても使用できます。 詳しくは、[&#x200B; アトリビューションコンポーネントの設定 &#x200B;](/help/data-views/component-settings/attribution.md) を参照してください。 ディメンションコンポーネントの場合は、永続性を使用できます。 永続性とは、特定のディメンション値が、設定されたイベント以外の指標にも属性を設定できる機能です。 配分と有効期限の組み合わせを使用します。 詳しくは、[&#x200B; 永続性コンポーネント設定 &#x200B;](/help/data-views/component-settings/persistence.md) を参照してください
+はい。アトリビューションモデルは、データビューの指標コンポーネントのコンポーネント設定の一部として使用することもできます。 [属性コンポーネント設定](/help/data-views/component-settings/attribution.md)を参照してください。 ディメンションコンポーネントには、永続性を使用できます。 永続性とは、特定のディメンション値が、設定されたイベントを超える指標に属する能力のことです。 割り当てと有効期限を組み合わせて使用します。 詳しくは、[永続性コンポーネント設定](/help/data-views/component-settings/persistence.md)を参照してください
 
 +++
 
@@ -78,9 +79,9 @@ Attribution models are available outside of virtual report suites. While they us
 -->
 
 
-+++##どのディメンションと指標がサポートされていますか？
++++## サポートされているディメンションと指標は何ですか？
 
-アトリビューションは、データビューで定義した非標準指標すべてでサポートされています。
+アトリビューションは、データビューで定義したすべての非標準の指標でサポートされています。
 
 +++
 

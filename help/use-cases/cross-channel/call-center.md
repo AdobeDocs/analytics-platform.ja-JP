@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -42,14 +42,14 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## ユーザー ID のステッチ
 
-Customer Journey Analyticsでは、（結合されたデータセット [&#x200B; を生成するために共通の識別子が必要 &#x200B;](/help/connections/combined-dataset.md) す。
+Customer Journey Analyticsでは、[結合データセット ](/help/connections/combined-dataset.md)を生成するための共通IDが必要です。
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* いずれかのデータセットが一部のイベントにのみ共通の識別子を持っている場合は、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md) を使用してデータをステッチし、手順でこれらの 2 つのデータセットのクロスチャネル分析を有効にすることができます。
+* いずれかのデータセットが一部のイベントに対してのみ共通の識別子を持つ場合は、これらの2つのデータセットのクロスチャネル分析を有効にする手順に[ ステッチ ](/help/stitching/overview.md)を使用してデータを結合できます。
 
 ## Customer Journey Analytics で接続を作成する
 
-Customer Journey Analyticsで [&#x200B; 接続を作成 &#x200B;](/help/connections/create-connection.md) します。
+[Customer Journey Analyticsで接続](/help/connections/create-connection.md)を作成します。
 
 * クロスチャネル分析を使用している場合、新しいステッチ済みデータセットを利用できます。新しく作成したステッチ済み ID フィールドをユーザー ID として使用します。
 * それ以外の場合は、元の web データセットとコールセンターデータセットの両方を選択して、接続に使用できます。
@@ -69,11 +69,11 @@ Customer Journey Analyticsで [&#x200B; 接続を作成 &#x200B;](/help/connecti
 
 このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2 つのセグメントを作成します。 これらの 2 つのセグメントで使用される変数は、前述の変数と同じで、各イベントのデータのソースを反映しています。 詳しくは、[&#x200B; セグメントの作成 &#x200B;](/help/components/segments/seg-create.md) を参照してください。
+1. 2つのセグメントを作成します。 これらの2つのセグメントで使用される変数は、上記と同じ変数で、各イベントのデータソースを反映しています。 詳しくは、[ セグメントの作成](/help/components/segments/seg-create.md)を参照してください。
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。
-3. 新しく作成した 2 つのセグメントを「**[!UICONTROL セグメントを追加]**」領域にドラッグし、人物指標を「**[!UICONTROL 指標を追加]**」領域にドラッグします。
+3. 新しく作成した2つのセグメントを&#x200B;**[!UICONTROL セグメントを追加]**&#x200B;領域にドラッグし、人物メトリックを&#x200B;**[!UICONTROL 指標を追加]**&#x200B;領域にドラッグします。
 
 結果のベン図ビジュアライゼーションは、web データとコールセンターデータの両方を含むデータセット内の人数を示します。重複が大きいほど、より多くの人が適切にステッチされたことになります。重複しない領域は、いずれかのデータセットにのみ存在する人を表します。
 
@@ -93,8 +93,8 @@ Customer Journey Analyticsで [&#x200B; 接続を作成 &#x200B;](/help/connecti
 「問い合わせ」を理由またはカテゴリ別に分割することで、このテーブルからさらに多くのインサイトを得ることができます。
 
 1. コンポーネントのリストで、「問い合わせ理由」ディメンションの下にある右の山括弧をクリックします。この操作により、個々のディメンション値が表示されます。
-2. 「問い合わせ」指標の下に目的のディメンション値をドラッグします。この指標は、問い合わせの理由ごとにその指標をセグメント化します。
-3. ドリルダウンする各問い合わせ理由に対して同じ手順を繰り返します。「すべてのセッション」セグメントを使用して、総計を表示します。
+2. 目的のディメンション値を「呼び出し」指標の下にドラッグします。この指標は、各呼び出し理由ごとに指標をセグメント化します。
+3. ドリルダウンする各問い合わせ理由に対して同じ手順を繰り返します。「すべてのセッション」セグメントを使用して、集計の合計を表示します。
 
 <!-- screenshot -->
 
@@ -145,4 +145,5 @@ wanted to understand when someone interacts with a facet, whats the highest perc
 
 use sequential segments, but you lose the ability to use attribution IQ
 
-## What to do when you've found insight -->
+## What to do when you've found insight 
+-->
