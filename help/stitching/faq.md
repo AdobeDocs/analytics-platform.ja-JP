@@ -290,6 +290,6 @@ curl -X PATCH \
 
 +++ ステッチされた名前空間値が、CJA接続内の別のデータセット内で使用する可能性のあるID名前空間値と必ずしも一致しないのはなぜですか？
 
-デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） ](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
+デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） &#x200B;](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
 
 +++
