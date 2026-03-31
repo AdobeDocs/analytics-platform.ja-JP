@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 332c9240399e429d971855ab1aa685bd4d07b86e
+source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 84%
+source-wordcount: '2219'
+ht-degree: 81%
 
 ---
 
@@ -39,6 +39,18 @@ ht-degree: 84%
 
 +++
 
++++ 再生プロセスはいつ実行されますか？
+
+* **週次**&#x200B;のリプレイは、毎週土曜日&#x200B;**の夜（お客様のタイムゾーン）に開始され、Customer Journey Analytics レポートで月曜日の朝までにデータが更新されます。**
+* 1日のリプレイは午前3時頃（カスタマータイムゾーン）に実行されるため、朝までにCustomer Journey Analytics レポートでデータが更新されます。
+
+>[!IMPORTANT]
+>
+>毎週のリプレイの日と毎日のリプレイの時間は、カスタムリクエストを通じて変更することはできません。
+>
+
++++
+
 ## 共有デバイス
 
 +++ 共有デバイスはどのように処理されますか？
@@ -55,11 +67,11 @@ ht-degree: 84%
 
 +++ 1 人のユーザーが多数の永続 ID を持っている場合、ステッチではどのように処理されますか？
 
-状況によっては、1 人のユーザーを多数の永続 ID に関連付けることができます。例えば、頻繁にブラウザーの Cookie をクリアしたり、ブラウザーのプライベート/匿名モードを使用したりする個人です。
+状況によっては、1 人のユーザーを多数の永続 ID に関連付けることができます。例えば、個人がブラウザーのCookieを頻繁に消去したり、ブラウザーのプライベートモードやシークレットモードを使用したりすることです。
 
 フィールドベースのステッチの場合、永続 ID の数は、ユーザー ID に優先されるので関係ありません。1 人のユーザーが任意の数のデバイスに属する場合でも、デバイス間での Customer Journey Analytics のステッチ機能に影響を与えることはありません。
 
-グラフベースのステッチの場合、1 人のユーザーが ID グラフに多数の永続 ID を持っている可能性があります。 グラフベースのステッチでは、指定した名前空間に基づいて永続 ID が使用されます。同じ名前空間に対してより多くの永続 ID がある場合、辞書編集用の最初の永続 ID が使用されます。
+グラフベースの合成の場合、1人のユーザーがID グラフに多数の永続的IDを持つことができます。 グラフベースのステッチでは、指定した名前空間に基づいて永続 ID が使用されます。同じ名前空間に対してより多くの永続的IDがある場合は、レキシグラフィックの最初の永続的IDが使用されます。
 
 +++
 
@@ -75,7 +87,7 @@ ht-degree: 84%
 
 +++ クロスデバイス分析（従来の Analytics の機能）とクロスチャネル分析の違いは何ですか？
 
-[クロスデバイス分析](https://experienceleague.adobe.com/ja/docs/analytics/components/cda/overview)は、人物がどのようにデバイスをまたいで操作するかを把握できる、従来の Adobe Analytics 専用の機能です。デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
+[クロスデバイス分析](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview)は、人物がどのようにデバイスをまたいで操作するかを把握できる、従来の Adobe Analytics 専用の機能です。デバイスデータを互いにリンクするために、フィールドベースのステッチとデバイスグラフの 2 つのワークフローを提供します。
 
 クロスチャネル分析は、人物がどのようにデバイスとチャネルの両方をまたいで操作するかを把握できる、Customer Journey Analytics 専用のユースケースです。データセットのユーザー ID をステッチすることで、そのデータセットを他のデータセットとシームレスに組み合わせることができます。この機能は、クロスデバイス分析のフィールドベースのステッチと同様の設計で動作しますが、従来の Analytics と Customer Journey Analytics ではデータアーキテクチャが異なるので、実装は異なります。詳しくは、[ステッチ](overview.md)および[クロスチャネル分析](../use-cases/cross-channel/cross-channel.md)ユースケースを参照してください。
 
@@ -107,14 +119,14 @@ ht-degree: 84%
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果の ID | ステッチ名前空間 |
+| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果のID | ステッチ名前空間 |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | Bob | CustId |
 | | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
 | | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 
-**プライバシーリクエストの現在のプロセス**
+**プライバシー要求の現在のプロセス**
 
 CustID Bob を持つ顧客に対するプライバシーリクエストを受信すると、取り消し線エントリを含む行が削除されます。その他のイベントは、ID マップを使用して再ステッチされます。 例えば、ステッチされたデータセット内の最初のステッチ ID は、**Alex** に更新されます。
 
@@ -131,7 +143,7 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果の ID | ステッチ名前空間 |
+| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果のID | ステッチ名前空間 |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -155,7 +167,7 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果の ID | ステッチ名前空間 |
+| ステッチされたデータセット | ID | タイムスタンプ | 永続 ID | 永続名前空間 | ユーザー ID | ユーザー名前空間 | 結果のID | ステッチ名前空間 |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **123** | ecid |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -167,10 +179,10 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 
 +++ 1 つ以上のイベントの「永続 ID」フィールドが空白の場合はどうなりますか？
 
-ステッチされているデータセット内のイベントで永続 ID フィールドが空白の場合、そのイベントの結果の ID は次の 2 つの方法のいずれかで決定されます。
+永続的ID フィールドがステッチされるデータセット内のイベントで空白の場合、そのイベントの結果IDは、次の2つの方法のいずれかで決定されます。
 
-* ユーザー ID フィールドが空白でない場合、Customer Journey Analyticsはユーザー ID の値を結果の ID として使用します。
-* ユーザー ID フィールドが空白の場合、Customer Journey Analyticsでは結果の ID も空白のままになります。 この場合、永続 ID、人物 ID、結果 ID は、イベントですべて空白になります。 これらのタイプのイベントは、結果の ID が人物 ID として選択されたステッチ対象のデータセットを使用しているどのCustomer Journey Analytics接続でもドロップされます。
+* 人物ID フィールドが空白でない場合、Customer Journey Analyticsは人物IDの値を結果のIDとして使用します。
+* 人物ID フィールドが空白の場合、Customer Journey Analyticsでは結果のIDも空白のままになります。 この場合、永続的ID、人物ID、および結果のIDはすべてイベントで空白になります。 これらの種類のイベントは、結果のIDが人物IDとして選択されたデータセットをステッチして、任意のCustomer Journey Analytics接続からドロップされます。
 
 +++
 
@@ -181,7 +193,7 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 
 一時 ID のプレースホルダー値を使用するデータにステッチを適用する際に発生する「ユーザーの折りたたみ」に注意してください。次の表の例では、CRM システムをソースとするデータセットから取得した未定義のユーザー ID に「Undefined」という値が設定されるので、ユーザーが誤って表示されています。
 
-| イベント | タイムスタンプ | 永続 ID（cookie ID） | 一時 ID | 結果の ID （再生後） |
+| イベント | タイムスタンプ | 永続 ID（cookie ID） | 一時 ID | 結果のID （リプレイ後） |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
@@ -205,11 +217,11 @@ Customer Journey Analytics の特定の指標は、従来の Analytics の指標
 
 | **Customer Journey Analytics ステッチデータ** | **Customer Journey Analytics 未ステッチデータ** | **Adobe Analytics** | **CDA を使用した Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **People** =結果の ID がユーザー ID として選択された場合の、個別のユーザー ID の数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **人物** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。Analytics ソースコネクタデータセットの&#x200B;**人物**&#x200B;は、（Customer Journey Analytics で `endUserIDs._experience.aaid.id` をユーザー ID として使用した場合）従来の Adobe Analytics の&#x200B;**ユニーク訪問者**&#x200B;に似ています。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/people)を参照してください。 |
-| **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
-| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の一時 ID がある行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白のユーザー ID が含まれているイベントがある場合、これらのイベントは Customer Journey Analytics に含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 |
+| **人物** =結果IDが人物IDとして選択されている個別の人物IDの数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **人物** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。Analytics ソースコネクタデータセットの&#x200B;**人物**&#x200B;は、（Customer Journey Analytics で `endUserIDs._experience.aaid.id` をユーザー ID として使用した場合）従来の Adobe Analytics の&#x200B;**ユニーク訪問者**&#x200B;に似ています。 | **ユニーク訪問者** = 個別の訪問者 ID の数。**ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people)を参照してください。 |
+| **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
+| **イベント数** = Customer Journey Analytics でのステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、空白の一時 ID がある行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。ただし、Experience Platform データレイクの未ステッチデータに空白のユーザー ID が含まれているイベントがある場合、これらのイベントは Customer Journey Analytics に含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)を参照してください。 |
 
-その他の指標は、Customer Journey Analytics と Adobe Analytics で似ている場合があります。例えば、Adobe Analytics の[カスタムイベント](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/custom-events) 1～100 の合計数は、従来の Adobe Analytics と Customer Journey Analytics（ステッチか未ステッチかに関わらず）で非常に近い値になります。Customer Journey Analytics と Adobe Analytics のイベントの重複排除などの[機能の違い](/help/getting-started/aa-vs-cja/cja-aa.md)により、2 つの製品間で不一致が生じることがあります。
+その他の指標は、Customer Journey Analytics と Adobe Analytics で似ている場合があります。例えば、Adobe Analytics の[カスタムイベント](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1～100 の合計数は、従来の Adobe Analytics と Customer Journey Analytics（ステッチか未ステッチかに関わらず）で非常に近い値になります。Customer Journey Analytics と Adobe Analytics のイベントの重複排除などの[機能の違い](/help/getting-started/aa-vs-cja/cja-aa.md)により、2 つの製品間で不一致が生じることがあります。
 
 +++
 
@@ -225,7 +237,7 @@ Customer Journey Analytics の特定の指標は、従来の Analytics の指標
 
 +++ フィールドベースのステッチからグラフベースのステッチに切り替えるには、データを再取り込みする必要がありますか？
 
-データをExperience Platformに取り込む必要はありません。 ただし、Customer Journey Analyticsでデータを再設定する必要があります。 次の手順に従ってください。
+データは、Experience Platformに再インポートする必要はありません。 ただし、データはCustomer Journey Analyticsで再設定する必要があります。 次の手順に従ってください。
 
 1. グラフベースのステッチを使用して、新しいグラフベースのステッチされたデータセットを設定します。
 1. 非常に短い時間枠のデータで新しい一時接続を作成します。
@@ -248,11 +260,11 @@ Customer Journey Analytics の特定の指標は、従来の Analytics の指標
 
 +++ データセットを ID サービスのみに対して有効にするにはどうすればよいですか？ 
 
-グラフベースのステッチでデータセットを使用するために、ID サービスでデータセットが有効になっていることを確認します。
+ID サービスがグラフベースのステッチでデータセットを使用できるように、データセットが有効になっていることを確認します。
 
 グラフベースのステッチを利用するために、Real-Time Customer Data Platform のライセンスを取得する必要はありません。 グラフベースのステッチは、リアルタイム顧客プロファイルではなく、使用可能な ID グラフに基づいています。
 
-既存のデータセットを確認し、ID サービスのみのデータセットを有効にするには、`PATCH` タグのみを使用する `/datasets` エンドポイントへの `unifiedIdentity` リクエストを使用します。 例：
+既存のデータセットを確認し、ID サービスのデータセットのみを有効にするには、`PATCH` タグのみを使用する`/datasets` エンドポイントに`unifiedIdentity` リクエストを使用します。 例：
 
 ```shell
 curl -X PATCH \
@@ -269,15 +281,15 @@ curl -X PATCH \
 
 リアルタイム顧客データプロファイルのライセンスを取得していない場合、リクエストで `unifiedProfile` タグを使用すると、エラーが返されます。
 
-詳しくは、[プロファイルおよび ID 対応データセットの作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)を参照してください。
+詳しくは、[プロファイルおよび ID 対応データセットの作成](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)を参照してください。
 
 +++ 
 
 
 ## ステッチされた名前空間値
 
-+++ ステッチされた名前空間値が、CJA接続内の別のデータセット内で使用する可能性のある ID 名前空間値と常に一致するとは限らないのはなぜですか？
++++ ステッチされた名前空間値が、CJA接続内の別のデータセット内で使用する可能性のあるID名前空間値と必ずしも一致しないのはなぜですか？
 
-デフォルトでは、ステッチされた名前空間の値は小文字です。 だから、`custEmail` は `custemail` になります。 ID 名前空間値が `custEmail` の別のデータセットがある場合、2 つの値は一致しません。 レポートでこの動作を回避するには、派生フィールド関数 [lowercase （） &#x200B;](/help/data-views/derived-fields/derived-fields.md#lowercase) を使用して、ID 名前空間の値に一致させることができます。
+デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） ](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
 
 +++
