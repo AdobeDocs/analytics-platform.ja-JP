@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
+source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 96%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Content Analytics では、次の主要な用語を使用します。
 
 ## 仕組み
 
-Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、Server API）で収集するデータが必要です。 行動データは、Web SDKまたは Analytics Source Connector で収集できます。
+Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、Server API）を使用してデータを収集する必要があります。行動データは、Web SDK または Analytics ソースコネクタを使用して収集できます。
 
 ![Content Analytics - 仕組み](assets/aca-overview.gif)
 
@@ -63,11 +63,16 @@ Content Analytics は、Experience Platform のイベントデータセットの
 >プライバシーとセキュリティシールドアドオンのライセンスを取得している場合、Content Analytics の対象となるエクスペリエンスとアセット（から生成されたすべてのデータ）は、DULE ラベル付けまたは顧客管理キーの対象とはなりません。また、Content Analytics は HIPAA 対応のサービスではありません。
 >
 
+>[!IMPORTANT]
+>
+>Content Analyticsでは、英語での特徴化のみがサポートされています。
+>
+
 
 >[!MORELIKETHIS]
 >
 >[Content Analytics レポート](report/report.md)
->&#x200B;>[Content Analytics の設定](config/configuration.md)
->&#x200B;>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>[Content Analytics の設定](config/configuration.md)
+>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
