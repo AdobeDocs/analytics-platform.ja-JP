@@ -3,10 +3,10 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 701279f92877ee186160f901f0d4df74fd42f547
+source-git-commit: 7fc7475001505749cf59aa82a62e5abb7e81ea97
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 36%
+source-wordcount: '594'
+ht-degree: 41%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 36%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **イタリア語サポート**<br/> イタリア語ロケール（it-IT）がCustomer Journey AnalyticsのAnalysis Workspaceでサポートされるようになりました。 <p>Customer Journey Analyticsは、Experience Platform UIでサポートされているすべての言語をサポートしています。詳しくは、[Experience Platform UIのブラウザーと言語のサポート &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)を参照してください。</p><p>Experience Platformで[既定の言語](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)を変更できます。</p> | | 2026年4月8日（PT） |
-| **Adobe Engineering Agentでのデータ検証** <br/>新しいデータ検証スキルは、Data Engineering Agent内で利用できます。 Customer Journey Analyticsでデータを分析する前に、Adobe Experience Platformで直接データ品質を迅速に評価できます。 <p>データ検証スキルにより、オンデマンド、フィールドレベル、データセットレベルの検証が可能になり、統計的な要約と、無効な値や異常値のインテリジェントな検出を組み合わせることができます。 </p><p>データ検証スキルを活用することで、手作業のQA作業を削減し、データエンジニアリングワークフロー全体で信頼できるデータオンボーディングと変換を加速できます。</p><p>（ドキュメントへのリンクを添付）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月末 <p>（当初は 2026年3月31日（PT）にリリースされる予定でした）</p> |
+| **イタリア語サポート**<br/> イタリア語ロケール（it-IT）がCustomer Journey AnalyticsのAnalysis Workspaceでサポートされるようになりました。 <p>Customer Journey Analyticsは、Experience Platform UIでサポートされているすべての言語をサポートしています。詳しくは、[Experience Platform UIのブラウザーと言語のサポート ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)を参照してください。</p><p>Experience Platformで[既定の言語](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)を変更できます。</p> | | 2026年4月8日（PT） |
+| **Adobe Engineering Agentでのデータ検証** <br/>新しいデータ検証スキルは、Data Engineering Agent内で利用できます。 Customer Journey Analyticsでデータを分析する前に、Adobe Experience Platformで直接データ品質を迅速に評価できます。 <p>データ検証スキルにより、オンデマンド、フィールドレベル、データセットレベルの検証が可能になり、統計的な要約と、無効な値や異常値のインテリジェントな検出を組み合わせることができます。 </p><p>データ検証スキルを活用することで、手作業のQA作業を削減し、データエンジニアリングワークフロー全体で信頼できるデータオンボーディングと変換を加速できます。</p><p>（ドキュメントへのリンクを添付）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月末 <p>（当初は 2026年3月31日（PT）にリリースされる予定でした）</p> |
 | **Customer Journey Analytics用MCP サーバー** <br/>MCP （Model Context Protocol）を使用して、Customer Journey Analyticsを既存のエージェント型ワークフローに関連付けることができるようになりました。 自然言語を使ってレポートやインサイトをリクエストできます。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年4月末 |
 | **ストリーミングメディアサービス：サポートスケジュールのデータ** <br/>過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、視聴者をより簡単かつ正確に追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。 特定のトピックやプログラムセグメントの閲覧者数データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に紐付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに紐付けることはできませんでした。</p><p>詳しくは、[スケジュールデータをアップロードしてライブコンテンツを追跡する](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/track-schedule-data)を参照してください。</p> | 2025年10月29日（PT） | 2026年上半期<p>（当初は 2025年10月29日（PT）にリリースされる予定でした）</p> |
 | **複数ディメンション API レポート**<br/>&#x200B;単一のAPI リクエストで複数ディメンションをレポートし、ディメンション レベルの検索を実行します。 [詳細情報](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim) | | 2026年3月 |
@@ -43,13 +43,6 @@ ht-degree: 36%
 **スケジュール済みレポート**:
 **共有の指標とディメンション**:
 **その他**: AN-423359、AN-406242、AN-397985
-
-
-## Customer Journey Analytics 管理者向けの重要な注意事項
-
-| 通知 | 追加または更新された通知 | 説明 |
-| --- | --- | --- |
-| **TLS 1.2暗号スイートの削除** | 2026年2月11日（PT） | 管理者へのお知らせ：Adobeは、2026年5月27日に、Adobe データ収集サーバーから次のTLS 1.2暗号スイートのサポートを削除する予定です。<ul><li>`TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_256_CBC_SHA`</li></ul><p>ほとんどの実装では、顧客の操作は必要ありません。 この変更は、主に、古いTLS ライブラリを使用するレガシーネイティブアプリケーションから送信されるAnalytics データと、古いブラウザーまたはオペレーティングシステム上の少数のweb訪問者に影響します。 これらの暗号スイートのサポートを削除すると、セキュリティが強化され、Adobeが最新の暗号化標準に準拠します。 現在、これらの暗号スイートに依存するデータ収集トラフィックは、0.1%未満にとどまっています。</p> |
 
 ## 関連リソース
 
