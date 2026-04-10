@@ -39,7 +39,7 @@ Quantum Metric Dataのソースコネクタを作成すると、Adobe Experience
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 >[!NOTE]
->量子指標データを、他のCustomer Journey Analytics データと同じ接続に追加することはできますが、2つのデータセット間で共通の個人IDがなければ、そのデータを結合することはできません。 このビヘイビアーが望ましい場合は、ソースコネクタの代わりに[&#x200B; タグ拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)を使用することをお勧めします。
+>量子指標データを、他のCustomer Journey Analytics データと同じ接続に追加することはできますが、2つのデータセット間で共通の個人IDがなければ、そのデータを結合することはできません。 このビヘイビアーが望ましい場合は、ソースコネクタの代わりに[&#x200B; タグ拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric)を使用することをお勧めします。
 
 ## 手順3:Customer Journey Analyticsでのデータビューの作成
 
