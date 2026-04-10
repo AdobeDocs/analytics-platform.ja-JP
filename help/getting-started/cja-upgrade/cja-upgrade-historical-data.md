@@ -5,9 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 97%
@@ -16,7 +15,7 @@ ht-degree: 97%
 
 # 手順 4：アップグレード時に履歴データを保持する
 
-+++このセクションを展開すると、このページの情報が大きなアップグレードプロセスのどこに適合するかを確認できます。 これまでのアップグレード手順がすべて完了していることを確認してください。
++++このセクションを展開して、このページの情報が大規模なアップグレードプロセスに適合する場所を確認します。 これまでのアップグレード手順がすべて完了していることを確認してください。
 
 この節に進む前に、以前のアップグレードタスクがすべて完了していることを確認してください。
 
