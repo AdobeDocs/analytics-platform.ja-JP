@@ -39,7 +39,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    または
 
-   既に Analytics ソースコネクタがある場合は、[&#x200B; ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
 1. 以下の説明に従って、接続に Analytics ソースコネクタデータセットを追加します。
 
@@ -51,7 +51,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 自動作成されたデータセットを Web SDK 実装用に作成したのと同じ接続に追加するには：
 
-1. Customer Journey Analyticsで、必要に応じて **[!UICONTROL データ管理]** から「**[!UICONTROL 接続]**」を選択します。
+1. Customer Journey Analyticsで、上部メニューの&#x200B;**[!UICONTROL Data management]**&#x200B;から&#x200B;**[!UICONTROL Connections]**&#x200B;を選択します（オプション）。
 
 1. [Web SDK 実装用に作成した](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)接続を選択します。
 
@@ -90,15 +90,15 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
    * Web SDK の実装でデータの収集を最初に開始した日付と同じ終了日を選択します。
 
-   * Web SDKの実装でデータの収集を初めて開始した日付の直後の終了日を選択し、データビューセグメントを使用して重複するデータをセグメント化します。
+   * Web SDKの実装でデータを収集し始めた日から少し後の終了日を選択し、データビューセグメントを使用して重なり合うデータをセグメント化します。
 
-   * データの重複が大きくなる終了日を選択してから、データビューセグメントを使用して重複するデータをセグメント化します。
+   * データの重なりを大きくする終了日を選択し、データビューセグメントを使用して重なり合うデータをセグメント化します。
 
      **メモ：**&#x200B;このオプションを使用すると、接続の行が増えるため、コストが増加します。
 

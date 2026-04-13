@@ -1,6 +1,6 @@
 ---
-description: Analysis Workspaceでのフォールアウトビジュアライゼーションの使用方法を説明します。
-title: フォールアウトの概要
+description: Analysis Workspaceでフォールアウトビジュアライゼーションを使用する方法を説明します。
+title: フォールアウト概要
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
@@ -25,7 +25,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フォールアウトビジュアライゼーションレポートの作成](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フォールアウトビジュアライゼーションレポートの作成](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -51,7 +51,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 フォールアウトは、各ステップまたはシーケンスのタッチポイント間のコンバージョン率とフォールアウト率を表示します。
 
-例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。開始タッチポイントと終了タッチポイントを選択し、中間タッチポイントを追加して Web サイトナビゲーションパスを作成するだけです。 ただし、多次元のフォールアウトを行うこともできます。
+例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。最初の顧客接点と最後の顧客接点を選択し、中間接点を追加してweb サイトのナビゲーションパスを構築します。 多次元のフォールアウトも実行できます。
 
 ## フォールアウト、フロー、ジャーニーキャンバスのいずれかのビジュアライゼーションの選択
 
@@ -69,7 +69,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 * サイト上の特定のプロセス（購入や登録プロセスなど）を通してのコンバージョン率。
 * 一般的な、より広範囲のトラフィックフロー：このフローは、ホームページを訪問した人物のうち、検索を実行した数を示します。次に、最終的に特定の項目を閲覧した数を示します。
-* サイト上のイベント間の相関関係。 相関関係は、プライバシーポリシーを閲覧したユーザーの何パーセントが製品を購入したかを示します。
+* サイトのイベント間の相関関係。 相関関係とは、プライバシーポリシーを閲覧したオーディエンスのうち、製品を購入した割合を指します。
 
 フォールアウトビジュアライゼーションは、次の場合に最適です。
 

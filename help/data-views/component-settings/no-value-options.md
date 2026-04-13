@@ -43,11 +43,11 @@ ht-degree: 91%
 
 * データビューで「値なし」オプションを設定する。上記のすべての設定は、**[!UICONTROL 「値なし」を値として扱うこと]**&#x200B;を除いてサポートされています。
 * Workspace のフリーフォームテーブルの数値ディメンションに&#x200B;**[!UICONTROL 「値なし」を含める]**&#x200B;を使用する。
-* セグメントビルダーで、数値ディメンションを持つ **[!UICONTROL exists]** または **[!UICONTROL does not exists]** 演算子を使用します。
+* セグメントビルダーで、**[!UICONTROL exists]**&#x200B;または&#x200B;**[!UICONTROL not exist]**&#x200B;の演算子を使用して、数値ディメンションを指定します。
 
 
 >[!MORELIKETHIS]
 >
->[Adobe Customer Journey Analyticsで「値なし」を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=ja#M598)。
+>[Adobe Customer Journey Analyticsで「値なし」を処理するための完全なプレイブック ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598)。
 
 

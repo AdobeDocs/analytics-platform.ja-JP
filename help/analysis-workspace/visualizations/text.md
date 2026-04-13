@@ -1,5 +1,5 @@
 ---
-description: ユーザー定義のテキストをAnalysis Workspace プロジェクトに追加する方法を説明します。
+description: Analysis Workspace プロジェクトにユーザー定義テキストを追加する方法を説明します。
 title: テキスト
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
@@ -25,7 +25,7 @@ ht-degree: 80%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のテキストビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[テキスト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/text)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; テキストビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ テキストビジュアライゼーション ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -64,10 +64,10 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ## 画像を追加 {#images}
 
-プロジェクトに画像を追加するには、メニューで ![&#x200B; 画像 &#x200B;](/help/assets/icons/Image.svg) を選択し、**[!UICONTROL 画像 URL]** に画像 URL （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）を指定して、**[!UICONTROL 保存]** を選択します。
+プロジェクトに画像を追加するには、メニューで![画像](/help/assets/icons/Image.svg)を選択し、**[!UICONTROL 画像URL]** （例：`https://www.adobe.com/uploads/2018/06/Adobe.png`）に画像URLを指定して、**[!UICONTROL 保存]**&#x200B;を選択します。
 
 画像 URL は、`https`で始まる、`.png`、`.jpeg`、`.jpg`、または`.gif`の形式で、公開アクセス可能である必要があります。 静的な画像とアニメーション画像がサポートされます。
 
-画像のドラッグ&amp;ドロップ挿入はサポートされていません。
+画像のドラッグ&amp;ドロップ挿入はサポートされていないことに注意してください。
 
 ![画像アイコンが選択されたテキストオプション。](assets/image.png)

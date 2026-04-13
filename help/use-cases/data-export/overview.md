@@ -1,6 +1,6 @@
 ---
 title: データ書き出しのユースケース
-description: Customer Journey Analyticsの様々なデータ書き出しの使用例について
+description: Customer Journey Analyticsの様々なデータ書き出しのユースケースについて
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -25,66 +25,66 @@ ht-degree: 7%
 
 <!-- markdownlint-enable MD034 -->
 
-この節では、データ書き出しの使用例と、Customer Journey AnalyticsまたはExperience Platformの 1 つ以上の機能を使用してこれらの使用例を実装する方法について説明します。 各機能について詳しくは、別の記事を参照してください。
+この節では、データ書き出しのユースケースと、Customer Journey AnalyticsまたはExperience Platformの1つ以上の機能でこれらのユースケースを実装する方法について説明します。 各機能については、別の記事でさらに詳しく説明しています。
 
 ## はじめに
 
-Adobe AnalyticsとCustomer Journey Analyticsのユニークな違いの 1 つは、アトリビューションとセッション化のためのデータの処理に関連しています。 詳しくは、[Adobe AnalyticsとCustomer Journey Analytics間でのデータ処理の比較 &#x200B;](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) を参照してください。
+Adobe AnalyticsとCustomer Journey Analyticsのユニークな違いのひとつは、アトリビューションとセッション化のためのデータ処理です。 詳しくは、[Adobe AnalyticsとCustomer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)のデータ処理の比較を参照してください。
 
-### Adobe Analytics：コレクション時間のアトリビューションとセッション。
+### Adobe Analytics：コレクション時間のアトリビューションとセッション化
 
-Adobe Analyticsでは、すべてのイベントがデバイス ID 別にライブで順に処理されるので、Adobeは、コレクション時に、以下の永続化された値または属性を含むクリックストリームデータを生成、保存および書き出すことができます。
+Adobe Analyticsでは、すべてのイベントがライブでデバイス IDごとに処理されるため、Adobeでは、収集時に永続的または属性値を含むクリックストリームデータを生成、保存、エクスポートできます。
 
-* Dimensionの永続性（例えば、90 日後に期限切れになるキャンペーントラッキングコード）。
-* 訪問回数とセッション。
-* 処理ルールと VISTA ルールで計算されたDimension値。
+* Dimensionの永続性（例えば、90日後に失効するキャンペーントラッキングコード）。
+* 訪問回数とセッション化：
+* 処理ルールとVISTA ルールによって計算されるDimension値。
 
 これは、Adobe Analyticsからのデータの書き出しに影響します。
 
-* データ処理は、最初の収集後は静的です。
-* データフィードには、コレクション時の処理を反映する「post」列が含まれます。
+* データ処理は初期収集後は静的です。
+* データフィードには、「post」列があり、これは収集時の処理を反映しています。
 
 
-### Customer Journey Analytics：クエリ時間アトリビューションとセッション
+### Customer Journey Analytics：クエリ時間のアトリビューションとセッション化
 
-Customer Journey Analyticsでは、イベントが順番に収集されず、デバイス ID の代わりにユーザー ID が使用されるので、Customer Journey Analyticsは、レポート時にアトリビューションとセッション化を更新できます。 このタイプのデータ収集では、次のような柔軟性が導入されます。
+Customer Journey Analyticsでは、イベントは順番に収集されず、デバイス IDの代わりに個人IDが使用されるため、レポート時にCustomer Journey Analyticsでアトリビューションとセッションを更新できます。 こうしたデータ収集は、次のような柔軟性をもたらします。
 
-* ステッチでは、毎日または毎週データを _再生_ し、匿名イベントを既知のイベントに関連付けることができます。 詳しくは、[&#x200B; ステッチ &#x200B;](../../stitching/overview.md) を参照してください。
-* セッション化と永続化の値は毎回変更されます
+* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[ ステッチ ](../../stitching/overview.md)を参照してください。
+* セッション化と永続的な値は、常に変更されます
    * 新しいデータが収集されるか、
-   * ステッチにより、個人の履歴にイベントが追加されます。
+   * 結合すると、ユーザーの履歴にイベントが追加されます。
 
-レポート時間処理は、Customer Journey Analyticsからのデータの書き出しに影響します。 永続的な値を含む書き出しは、Customer Journey Analytics レポートと一致せず、値は時間の経過と共にずれます。
+レポート時処理は、Customer Journey Analyticsからのデータの書き出しに影響します。 永続的な値を含む書き出しは、Customer Journey Analytics レポートと一致せず、値は時間の経過とともにドリフトします。
 
-指標の一貫性を保つには、Customer Journey Analyticsの新機能を使用することをお勧めします。 一般に、Experience PlatformとCustomer Journey Analyticsのデータ書き出し機能は、Adobe Analyticsのデータフィード機能を超えています。 Experience PlatformとCustomer Journey Analyticsには、次の機能があります。
+指標の一貫性を保つためには、Customer Journey Analyticsの新機能を使用することをお勧めします。 一般的に、Experience PlatformとCustomer Journey Analyticsのデータ書き出し機能は、Adobe Analyticsのデータフィード機能を超えています。 Experience PlatformとCustomer Journey Analyticsには、次のような機能があります。
 
-* 新しいデータソースと、データの書き出し対象となる処理
+* データ書き出しの対象となる新しいデータソースと処理
 
-   * 非デジタルデータソースを含める、
-   * ビジネスルールに基づいたカスタム属性およびセッションの適用
-   * ステッチを使用してカスタマージャーニーを更新します。
+   * 非デジタルデータソース，
+   * ビジネスルールにもとづいてカスタムのアトリビューションとセッション化を適用し、
+   * つなぎ合わせてカスタマージャーニーを最新の状態に保つ。
 
 * カスタマイズされたデータ書き出しのユースケースの実現
 
-   * Business Intelligence（BI）ツールやクラウドの宛先など、必要な場所にデータを書き出すことができます。
-   * bi ツールの統合を通じてAnalysis Workspaceとのデータの同期を維持し、
-   * 独自のシステムに処理ロジックをレプリケートする必要はありません。
-   * 計算指標、派生フィールドおよびセグメント化の新しいサポート。
+   * Business Intelligence（BI）ツールやクラウドの宛先など、必要な場所にデータを書き出し，
+   * ビジネスインテリジェンス（BI）ツールとの統合により、データをAnalysis Workspaceと同期し，
+   * 独自のシステムで処理ロジックをレプリケートする必要はなく，
+   * 計算指標、派生フィールド、セグメント化の新しいサポート
 
-* 設計によるセキュリティとデータガバナンスの考慮
+* 設計によるセキュリティとデータガバナンスの検討
 
-   * ユーザーおよび宛先別のすべてのデータ書き出しを監視する。
-   * エクスポートできるデータの制限を設定する。
-   * スケジュールされた配信期間における配信の問題と制限に関するアラートを設定します。
+   * ユーザーと宛先ごとのあらゆるデータ書き出しを監視し，
+   * 書き出しに使用できるデータの制限を設定し、
+   * 配信の問題に対するアラートを設定し、スケジュールされた配信ウィンドウを制限します。
 
 
 ## ユースケースと機能
 
-一般に、データの書き出しでは、多くのユースケースをサポートしています。 必要なデータとそのデータにアクセスして書き出す方法に関しては、ユースケースごとに異なります。 Experience PlatformとCustomer Journey Analyticsには、様々なユースケースを解決できる多数の機能が、単独で、または組み合わせて提供されています。 次の表に、特定されたデータ書き出しのユースケースと、これらのユースケースを実装するためのExperience PlatformおよびCustomer Journey Analytics機能の概要を示します。
+一般的に、データ書き出しは多くのユースケースをサポートしています。 必要なデータとそのデータへのアクセス方法や書き出し方法はユースケースごとに異なります。 Experience PlatformとCustomer Journey Analyticsは、それぞれ個別に使用するか、組み合わせて使用することで、さまざまなユースケースを解決できる機能を数多く提供しています。 次の表に、特定されたデータ書き出しのユースケースと、これらのユースケースを実装するExperience PlatformとCustomer Journey Analyticsの機能の概要を示します。
 
 | データ書き出しのユースケース | Experience PlatformとCustomer Journey Analyticsの機能 |
 |---|---|
-| **データのバックアップ**<br/> コンプライアンスや規制の目的で、デジタル・データの完全なコピーを保持します。 | **Experience Platform**: [**データセットを書き出し**](export-datasets.md)<br/> Experience Platformで直接収集したデータを、スケジュールまたはアドホックでクラウドの宛先に書き出します。 |
-| **データの検証**<br/> データ収集の正確性を確保するためにクリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス （データDistiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> お気に入りの SQL ツールを使用してアドホックな SQL クエリを実行し、データセット内のデータを検証する Interactive PostgreSQL インターフェイス。<br/><br/>**Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> アトリビューションおよびセッション化が適用されたCJAから処理済みデータを検証。 |
-| **データレイク、Data Warehouse、BI ツール**<br/> 独自の BI ツールまたはデータレイクにデジタルデータを取り込み、追加のデータセットで使用します。 | **Customer Journey Analytics**: [**BI 拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsの処理済み指標をPower BIなどのデータビジュアライゼーションツールに追加し、カスタムレポートの追加データと組み合わせます <br/><br/>**Experience Platform**: [**クエリサービス（データDistiller）およびデータセットの書き出し**](queryservice-export-datasets.md)<br> SQL を使用してカスタマイズされたクリックストリームデータを生成し、クラウドの宛先に配信します。 |
-| **AI/ML への対応**<br/> Customer Journey Analytics データを使用して、人工知能/機械学習モデルとタスクを強化します。 | **Customer Journey Analytics**: [**完全なテーブルをエクスポート**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標を、計算指標やセグメント化を含めて、クラウドの宛先に 1 回限りまたは定期的にエクスポートします。<br/><br/>**Experience Platform**: [**クエリサービス （データDistiller）およびデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQL を使用してカスタマイズされたクリックストリームデータを生成し、AI / ML モデルを強化します。 |
+| **データバックアップ**<br/> コンプライアンスまたは規制上の目的で、デジタルデータの完全なコピーを保持します。 | **Experience Platform**: [**データセットの書き出し**](export-datasets.md)<br/> Experience Platformで収集したデータを、スケジュールまたはアドホックでクラウドの宛先に直接書き出します。 |
+| **データ検証**<br/> データ収集の正確性に関するクリックストリームデータを評価します。 | **Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> インタラクティブ PostgreSQL インターフェイス。お気に入りのSQL ツールを使用してアドホック SQL クエリを実行し、データセット内のデータを検証できます。<br/><br/>**Customer Journey Analytics**: [**テーブル全体を書き出し**](export-full-table.md)<br/>&#x200B;属性とセッションが適用されたCJAから処理済みデータを検証します。 |
+| **データレイク、Data Warehouse、BI ツール**<br/>&#x200B;独自のBI ツールまたはデータレイクにデジタルデータを取り込んで、他のデータセットで使用します。 | **Customer Journey Analytics**: [**BI拡張機能**](bi-extension.md)<br/> Customer Journey Analyticsで処理された指標をPower BIなどのデータビジュアライゼーションツールに追加し、カスタムレポート用の追加データと組み合わせる&#x200B;<br/><br/>**Experience Platform**: [**Query Service （Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br> SQLを使用してカスタマイズされたクリックストリームデータを生成し、クラウドの宛先に配信します。 |
+| **AI/マシンラーニングへの対応**<br/> Customer Journey Analytics データを使用して、AI/マシンラーニングモデルとタスクを強化する。 | **Customer Journey Analytics**: [**テーブル全体を書き出し**](export-full-table.md)<br/> Customer Journey Analyticsで処理されたディメンションと指標をクラウドの宛先に1回限りまたは定期的に書き出します（計算指標とセグメント化を含む）。<br/><br/>**Experience Platform**: [**クエリサービス（Data Distiller）とデータセットの書き出し**](queryservice-export-datasets.md)<br/> SQLを使用してカスタマイズされたクリックストリームデータを生成し、AI/ML モデルを強化します。 |

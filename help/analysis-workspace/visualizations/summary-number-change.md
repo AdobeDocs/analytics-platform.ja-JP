@@ -1,6 +1,6 @@
 ---
 description: 数値の概要と変更の概要ビジュアライゼーションを使用して、プロジェクト内の重要なデータポイントを表示します。
-title: 数値の概要と変更の概要
+title: 概要番号と概要変更
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
@@ -15,13 +15,13 @@ ht-degree: 69%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** の数値の概要と変更の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[数値の概要と変更の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** の数値の概要と変更の概要ビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[数値の概要と変更の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [数値の概要と変更の概要ビジュアライゼーション](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-summary-visualizations){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [数値の概要と変更の概要ビジュアライゼーション](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-summary-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -38,10 +38,10 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 ![要約](/help/assets/icons/123.svg) **[!UICONTROL 数値の概要]**&#x200B;ビジュアライゼーションを使用して、プロジェクト内の重要な多数の数値をハイライト表示します。このビジュアライゼーションは、関連付けられたデータソースを使用して、次のように動作します。
 
-* セルが選択されていない場合に列の合計を選択します。
-* 1 つのセルが選択されている場合は、そのセルの概要が表示されます。
-* 複数のセルが選択されている場合は、最初に選択されたセルが表示されます。
-* 列が選択されている場合は、列の最初のセル値が選択されます。
+* セルが選択されていない場合は、列の合計を選択します。
+* 1つのセルを選択すると、そのセルの概要が表示されます。
+* 複数のセルが選択されている場合は、最初に選択したセルが表示されます。
+* 列が選択されている場合は、列の最初のセル値を選択します。
 
 ![数値の概要ビジュアライゼーション](asses/../assets/summary-number.png)
 
@@ -64,20 +64,20 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 <!-- markdownlint-enable MD034 -->
 
 
-![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 変更の概要]** ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=ja) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=ja) option.-->
+![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 変更の概要]** ビジュアライゼーションを使用すると、2 つの数値間の差分（変化）を表示できます。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
-The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=ja) option.
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 -->
 
 このビジュアライゼーションは、次のように動作します。
 
-* セルが選択されていない場合は、列内の最初の 2 つのセル値が比較されます。
-* 1 つのセルが選択されている場合は、そのセルの値と比較されるため、0 と表示されます。
-* 2 つのセルが選択されている場合、最初に選択されたセルが分子、2 番目のセルが分母と見なされます。
-* 3 つ以上のセルを選択すると、最初の 2 つのセルのみが比較の対象になります。
-* セルの範囲が選択されている場合は、その範囲で最初のセルと最後に選択されているセルが比較されます。
-* 列が選択されている場合は、最初の値がそれ自体と比較され、0 の変化が示されます。
+* セルが選択されていない場合は、列の最初の2つのセル値を比較します。
+* 1つのセルが選択されている場合、セルの値を自分自身と比較するため、0と表示されます。
+* 2つのセルを選択した場合、最初に選択したセルは分子、2番目のセルは分母と見なされます。
+* 2つ以上のセルが選択されている場合は、最初の2つのセルのみが比較に使用されます。
+* セルの範囲が選択されている場合は、最初のセルと最後に選択したセルを比較します。
+* 列が選択されている場合、最初の値と自分自身を比較し、0の変化を示します。
 
 
 ![2 つの数値間の差分を示す変更の概要ビジュアライゼーション](assets/summary-change.png)

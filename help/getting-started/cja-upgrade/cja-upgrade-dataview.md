@@ -51,7 +51,7 @@ ht-degree: 95%
 
    データビューにコンポーネントを追加する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[コンポーネント](/help/data-views/create-dataview.md#components)を参照してください。
 
-1. 「[!UICONTROL **設定**]」タブを選択します。ここから、データビュー全体に適用するセグメントを設定し、セッションのタイムアウトと指標を設定できます。
+1. 「[!UICONTROL **設定**]」タブを選択します。ここから、データビュー全体に適用するセグメントを設定したり、セッションのタイムアウトと指標を設定したりできます。
 
    データビューの設定を指定する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[設定](/help/data-views/create-dataview.md#settings)を参照してください。
 
