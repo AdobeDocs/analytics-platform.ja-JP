@@ -178,7 +178,7 @@ Adobe Experience Platform エージェントオーケストレーターを使用
 
 エージェントオーケストレーターは、リクエストを解釈してどの専門エージェントが必要かを判断し、適切な応答を提供するようにエージェントを調整します。マルチターンのインタラクションをまたいでコンテキストを追跡するので、以前のクエリに基づいて自然に構築できます。
 
-詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)を参照してください。
+詳しくは、[Adobe Experience Platform エージェントオーケストレーター](https://business.adobe.com/jp/products/experience-platform/agent-orchestrator.html)を参照してください。
 
 ## データビジュアライゼーションのプロンプトの例
 

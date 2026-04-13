@@ -34,7 +34,7 @@ ht-degree: 99%
 >* **管理者**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加してください。*
 >* **管理者以外**：*この分析には、PersonID プロパティが必要です。データビューにユーザー ID を追加するには、Customer Journey Analytics 管理者にお問い合わせください。*
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 

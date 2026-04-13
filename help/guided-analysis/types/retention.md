@@ -30,7 +30,7 @@ ht-degree: 97%
 
 この分析では、グラフの x 軸はユーザーの最初の開始イベントからの時間を表し、y 軸は 1 つ以上の再来訪イベントに関与したユーザーの割合を表します。期間をまたいでリテンションとチャーンの両方を表示でき、表示される期間はクエリ設定を通じてカスタマイズできます。グラフの下にあるテーブルには、集計データと、同じ日に開始イベントを行った人物のグループである個々のコホートを表示するオプションが表示されます。
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
+>[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## ユースケース
