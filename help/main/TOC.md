@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1391'
 ht-degree: 94%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
-   + {hide-from-toc}[&#x200B; プレリリースノート &#x200B;](../release-notes/pre-release-notes.md)
+   + {hide-from-toc}[ プレリリースノート ](../release-notes/pre-release-notes.md)
    + [2026年リリース](../release-notes/2026.md)
    + [2025年リリース](../release-notes/2025.md)
    + [2024年リリース](../release-notes/2024.md)
@@ -44,7 +44,7 @@ ht-degree: 94%
 + アップグレードと比較 {#compare-aa-cja}
    + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
       + {hide-from-toc}[今すぐはじめる](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + {hide-from-toc}[&#x200B; アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + {hide-from-toc}[ アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + {hide-from-toc}[Platformにデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + {hide-from-toc}[履歴データを保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
@@ -159,6 +159,7 @@ ht-degree: 94%
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
    + [BI 拡張機能](../data-views/bi-extension.md)
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
+   + {hide-from-toc}[ベストプラクティス](/help/data-views/derived-fields/best-practices.md)
    + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
    + 共有指標とディメンション{#shared-metrics-dimensions}
@@ -409,7 +410,7 @@ ht-degree: 94%
          + {hide-from-toc}[データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-         + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[ マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -532,7 +533,7 @@ ht-degree: 94%
          + [セッション再生を結合](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [ヒートマップを使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Source コネクタ &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Source コネクタ ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
