@@ -57,7 +57,7 @@ ht-degree: 1%
 
    適用された&#x200B;**[!UICONTROL daterangeName]** フィルターでテーブルが更新されます。 Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc8-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Name]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Name]**&#x200B;を選択します。
 1. **[!UICONTROL Cc データビューのデータレンジ名]** フィルターを&#x200B;**[!UICONTROL is]**&#x200B;として指定し、値のリストから&#x200B;**[!UICONTROL 昨年2023]**&#x200B;を選択します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
    1. **[!UICONTROL Daterange Month]**&#x200B;を選択してから、**[!UICONTROL Month]**&#x200B;を選択します。
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. ` ```{r} `から` ``` `までの次のステートメントを新しいチャンクに入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
+1. ` ` ``{r} `から` `` ` `までの次のステートメントを新しいチャンクに入力します。 適切な日付範囲名を使用していることを確認してください。 例：`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year
