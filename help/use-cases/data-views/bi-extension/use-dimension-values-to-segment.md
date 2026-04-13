@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # ディメンション値を使用したセグメント化
 
-**[!UICONTROL 製品カテゴリ]**&#x200B;の動的な&#x200B;**[!UICONTROL ハンティング]**値を使用して、ハンティング カテゴリから製品をセグメント化します。 または、商品カテゴリ値の動的な取得をサポートしないBI ツールの場合は、Customer Journey Analyticsで、ハンティング商品カテゴリの商品をセグメント化する新しいセグメントを作成します。
+**[!UICONTROL 製品カテゴリ]**&#x200B;の動的な&#x200B;**[!UICONTROL ハンティング]**&#x200B;値を使用して、ハンティング カテゴリから製品をセグメント化します。 または、商品カテゴリ値の動的な取得をサポートしないBI ツールの場合は、Customer Journey Analyticsで、ハンティング商品カテゴリの商品をセグメント化する新しいセグメントを作成します。
 次に、新しいセグメントを使用して、2023年1月のハンティングカテゴリの製品の製品名と出現件数（イベント）をレポートします。
 
 +++ Customer Journey Analytics
 
 Customer Journey Analyticsで&#x200B;**[!UICONTROL タイトル]** `Hunting Products`を使用して新しいセグメントを作成します。
 
-![Customer Journey AnalyticsはDimension値を使用してセグメント ](../assets/cja-hunting-products.png)を作成します
+![Customer Journey AnalyticsはDimension値を使用してセグメント &#x200B;](../assets/cja-hunting-products.png)を作成します
 
 次に、このセグメントを使用例の&#x200B;**[!UICONTROL Dimension値を使用したフィルター]** パネルで使用できます。
 
@@ -55,14 +55,14 @@ Customer Journey Analyticsで&#x200B;**[!UICONTROL タイトル]** `Hunting Prod
    1. **[!UICONTROL 基本フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
    1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;****&#x200B;が&#x200B;**** `1/1/2023`および&#x200B;****&#x200B;が&#x200B;****&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;** `1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
    1. **[!UICONTROL product_category]**&#x200B;の&#x200B;**[!UICONTROL Filter type]**&#x200B;として&#x200B;**[!UICONTROL 基本フィルター]**&#x200B;を選択し、使用可能な値のリストから&#x200B;**[!UICONTROL Hunting]**&#x200B;を選択します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL filterName]**&#x200B;を削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL daterange]**&#x200B;を削除します。
 
    適用された&#x200B;**[!UICONTROL product_category]** フィルターでテーブルが更新されます。 Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc10-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc10-powerbi-final.png)
 
 
 
@@ -93,13 +93,13 @@ Customer Journey Analyticsで&#x200B;**[!UICONTROL タイトル]** `Hunting Prod
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択して、別のフィルターを追加します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣製品カテゴリ]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣製品カテゴリ]**&#x200B;を選択します。
 1. フィルターの選択範囲として&#x200B;**[!UICONTROL is]**&#x200B;を指定します。
 
 ![AlertRed](/help/assets/icons/AlertRed.svg)のルックは、**[!UICONTROL 製品カテゴリ]**&#x200B;の可能な値のリストを表示しません。

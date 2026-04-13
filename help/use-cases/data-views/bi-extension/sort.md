@@ -21,7 +21,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL 並べ替え]** パネルの例：
 
-![Customer Journey Analytics並べ替えパネル ](../assets/cja-sort.png)
+![Customer Journey Analytics並べ替えパネル &#x200B;](../assets/cja-sort.png)
 
 +++
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
    1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;****&#x200B;が&#x200B;**** `1/1/2023`および&#x200B;****&#x200B;が&#x200B;****&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;** `1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
 
 1. ビジュアライゼーションペインで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、列からデータレンジを削除します。
@@ -55,7 +55,7 @@ ht-degree: 1%
 
    Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc11-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc11-powerbi-final.png)
 
 BI拡張機能を使用してPower BI Desktopで実行されるクエリに`sort` ステートメントが含まれていません。 `sort` ステートメントがないことは、並べ替えがクライアントサイドで実行されることを意味します。
 
@@ -182,7 +182,7 @@ GROUP BY 1
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから、**[!UICONTROL 製品名]**&#x200B;を選択します。
@@ -193,8 +193,8 @@ GROUP BY 1
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchase Revenue`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
-      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**に入力されていることを確認します。
-         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
+      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**&#x200B;に入力されていることを確認します。
+         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
 1. **[!UICONTROL 購入収益]**&#x200B;列で&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順序：1]**）を選択していることを確認してください。
 1. **[!UICONTROL 実行]**&#x200B;を選択します。

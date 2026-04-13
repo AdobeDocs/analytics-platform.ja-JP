@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ユースケースの例&#x200B;**[!UICONTROL Daily Trend]** パネル：
 
-![Customer Journey Analytics日次トレンドパネル ](../assets/cja_daily_trend.png)
+![Customer Journey Analytics日次トレンドパネル &#x200B;](../assets/cja_daily_trend.png)
 
 +++
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;****&#x200B;が&#x200B;****&#x200B;以降`1/1/2023`および&#x200B;****&#x200B;が&#x200B;****&#x200B;より前の場合に`2/1/2023.`項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
+   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;以降`1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に`2/1/2023.`項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用された&#x200B;**[!UICONTROL daterangeday]** フィルターでテーブルが更新されます。
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    メインビューが更新され、行のビジュアライゼーションと表の両方が表示されます。 Power BI デスクトップは以下のようになります。
 
-   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション ](../assets/uc2-pbi-final.png)
+   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション &#x200B;](../assets/uc2-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 左側のパネルの「**[!UICONTROL Cc Data View]**」セクションから，
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 次のようなビジュアライゼーションと表が表示されます。
 
-![Looker結果の日次トレンド ](../assets/uc2-looker-result.png)
+![Looker結果の日次トレンド &#x200B;](../assets/uc2-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]

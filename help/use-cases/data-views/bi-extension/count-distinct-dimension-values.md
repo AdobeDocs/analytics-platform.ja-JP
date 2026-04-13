@@ -43,7 +43,7 @@ ht-degree: 0%
 1. 日付範囲がすべてのビジュアライゼーションに適用されるようにするには、**[!UICONTROL daterangeday]**&#x200B;を&#x200B;**[!UICONTROL データ]** ペインからドラッグ&amp;ドロップして、このページの&#x200B;**[!UICONTROL フィルター]**&#x200B;に移動します。
    1. このページの&#x200B;**[!UICONTROL フィルター]**&#x200B;から&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;****&#x200B;が&#x200B;**** `1/1/2023`および&#x200B;****&#x200B;が&#x200B;****&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;** `1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
@@ -127,15 +127,15 @@ ht-degree: 0%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
    1. **[!UICONTROL Daterange Date]**、次に&#x200B;**[!UICONTROL Date]**&#x200B;を選択します。
-   1. **[!UICONTROL 製品名]**&#x200B;の&#x200B;**詳細** コンテキストメニューから&#x200B;**[!UICONTROL 集約‣個数{1⋮を選択します。]**
+   1. **[!UICONTROL 製品名]**&#x200B;の&#x200B;**詳細** コンテキストメニューから&#x200B;**[!UICONTROL 集約‣個数&lbrace;1⋮を選択します。]**
       ![Looker製品名のコンテキスト メニュー](../assets/uc7-looker-count-distinct.png)
 1. **[!UICONTROL 実行]**&#x200B;を選択します。
-1. **[!UICONTROL }‣ビジュアライゼーション]**&#x200B;を選択し、ツールバーから6︎⃣を選択して、単一の値ビジュアライゼーションを表示します。
+1. **[!UICONTROL &rbrace;‣ビジュアライゼーション]**&#x200B;を選択し、ツールバーから6︎⃣を選択して、単一の値ビジュアライゼーションを表示します。
 
 次のようなビジュアライゼーションと表が表示されます。
 

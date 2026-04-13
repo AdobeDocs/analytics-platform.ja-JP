@@ -23,7 +23,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL 時間別トレンド]** パネルの例：
 
-![Customer Journey Analyticsの時間別トレンド ビジュアライゼーション ](../assets/cja_hourly_trend.png)
+![Customer Journey Analyticsの時間別トレンド ビジュアライゼーション &#x200B;](../assets/cja_hourly_trend.png)
 
 +++
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/01/02]**&#x200B;まで指定します。
 1. 左側のパネルの「**[!UICONTROL Cc Data View]**」セクションから，
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 次のようなビジュアライゼーションと表が表示されます。
 
-![Looker結果の日次トレンド ](../assets/uc3-looker-result.png)
+![Looker結果の日次トレンド &#x200B;](../assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
