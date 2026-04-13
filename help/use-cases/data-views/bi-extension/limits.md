@@ -1,12 +1,13 @@
 ---
 title: 制限
-description: Customer Journey Analyticsの様々な BI ツールの BI 拡張機能のユースケースを制限します
+description: Customer Journey Analyticsの様々なBI ツールでのBI拡張機能のユースケースを制限
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 # 制限
 
 
-このユースケースでは、2023 年中に発生した上位 5 回の製品名についてレポートします。
+このユースケースでは、2023年に発生した製品名の上位5件についてレポートする必要があります。
 
 +++ Customer Journey Analytics
 
-このユースケースの例では **[!UICONTROL 制限]** パネルは次のようになります。
+使用例の&#x200B;**[!UICONTROL Limit]** パネルの例：
 
-![Customer Journey Analytics制限パネル &#x200B;](../assets/cja-limit.png)
+![Customer Journey Analytics制限パネル ](../assets/cja-limit.png)
 
 +++
 
@@ -28,7 +29,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
+>接続が成功したことを[検証し、データビューを一覧表示でき、このユースケースを試すBI ツールにデータビュー](connect-and-validate.md)を使用していることを確認します。
 >
 
 >[!BEGINTABS]
@@ -36,29 +37,29 @@ ht-degree: 1%
 >[!TAB Power BI デスクトップ ]
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
-   1. **[!UICONTROL daterange]** を選択します。
-   1. **[!UICONTROL product_name]** を選択します。
-   1. **[!UICONTROL 発生件数の合計]** を選択します。
+   1. **[!UICONTROL daterange]**&#x200B;を選択します。
+   1. **[!UICONTROL product_name]**&#x200B;を選択します。
+   1. **[!UICONTROL 合計回数]**&#x200B;を選択します。
 
-1. **[!UICONTROL フィルター]** パネルで、次の操作を行います。
-   1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL daterange is （すべて）]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 相対日付]** を選択します。
-   1. フィルターを定義して **[!UICONTROL 値が過去]** **[!UICONTROL 暦年]** に含まれる場合に項目を表示 `1`**[!UICONTROL します]**。
+1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
+   1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. **[!UICONTROL 相対日付]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
+   1. 値&#x200B;****&#x200B;が過去&#x200B;**** `1`暦年&#x200B;**[!UICONTROL の場合、フィルターを]**&#x200B;項目を表示するように定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
-   1. **[!UICONTROL このビジュアルのフィルター]** から **[!UICONTROL product_name は（すべて）]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]** として **[!UICONTROL 上位 N]** を選択します。
-   1. 「**[!UICONTROL 項目を表示]**&#x200B;**[!UICONTROL 上位]**」 `5` 「**[!UICONTROL 値別]**」を選択します。
-   1. **[!UICONTROL データ]** ペインから **[!UICONTROL 合計回数]** をドラッグ&amp;ドロップし、「**[!UICONTROL データフィールドをここに追加]**」にドロップします。
+   1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL product_name is （All）]**&#x200B;を選択します。
+   1. **[!UICONTROL 上位N]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
+   1. **[!UICONTROL 項目を表示]** **[!UICONTROL 上位]** `5` **[!UICONTROL を値]**&#x200B;で選択します。
+   1. **[!UICONTROL データ]** ペインから&#x200B;**[!UICONTROL 合計回数]**&#x200B;をドラッグ&amp;ドロップし、**[!UICONTROL ここにデータフィールドを追加]**&#x200B;します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
-1. ビジュアライゼーションパネルで、
-   * ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択して、Columns から daterange を削除します。
+1. ビジュアライゼーションペインで、次の操作を行います。
+   * ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、列からデータレンジを削除します。
 
-   Power BI デスクトップは次のようになります。
+   Power BI デスクトップは以下のようになります。
 
-   ![&#x200B; 日付範囲名を使用してフィルターを適用するPower BI デスクトップ &#x200B;](../assets/uc12-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc12-powerbi-final.png)
 
-BI 拡張機能を使用してPower BI Desktop が実行するクエリには、`limit` ステートメントが含まれていますが、想定されたステートメントは含まれていません。 Power BI デスクトップでは、明示的な製品名の結果を使用して、上位 5 件の発生件数の制限が適用されます。
+BI拡張機能を使用してPower BI Desktopで実行されるクエリに`limit`文が含まれていますが、想定されているものではありません。 上位5件に対する制限は、明示的な製品名の結果を使用してPower BI Desktopによって適用されます。
 
 ```sql
 select "_"."product_name",
@@ -146,30 +147,30 @@ limit 1000001
 
 >[!TAB Tableau Desktop]
 
-1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグします。
-   1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
-   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 相対的な日付]** を選択し、**[!UICONTROL 年]** を選択してから **[!UICONTROL 以前の年]** を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
-   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 製品名]** を **[!UICONTROL 行]** にドラッグします。
-   1. **[!UICONTROL テーブル]** リストから **[!UICONTROL 発生件数]** エントリをドラッグし、**[!UICONTROL 列]** の横のフィールドにドロップします。 値が「**[!UICONTROL SUM （発生件数）]**」に変わります。
-   1. **[!UICONTROL 表示]** から **[!UICONTROL テキストテーブル]** を選択します。
-   1. **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL フィット幅]** を選択します。
-   1. **[!UICONTROL 行]** の **[!UICONTROL 製品名]** を選択します。 ドロップダウンメニューから **[!UICONTROL フィルター]** を選択します。
-      1. **[!UICONTROL フィルター\[ 製品名\]]** ダイアログで **[!UICONTROL トップ]** タブを選択します。
-      1. **[!UICONTROL フィールド別：]** **[!UICONTROL 上位]** `5` **[!UICONTROL 発生件数別]** **[!UICONTROL 合計]** を選択します。
-      1. **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
+1. 下部の「**[!UICONTROL シート 1]**」タブを選択して、**[!UICONTROL データソース]**&#x200B;から切り替えます。 **[!UICONTROL シート 1]** ビューで：
+   1. **[!UICONTROL フィルター]** シェルフの&#x200B;**[!UICONTROL テーブル]** リストから&#x200B;**[!UICONTROL Daterange]** エントリをドラッグします。
+   1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで、**[!UICONTROL 日付の範囲]**&#x200B;を選択し、**[!UICONTROL 次>]**&#x200B;を選択します。
+   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで、**[!UICONTROL 相対日付]**&#x200B;を選択し、**[!UICONTROL 年]**&#x200B;を選択し、**[!UICONTROL 前年]**&#x200B;を選択します。 **[!UICONTROL 適用]**&#x200B;と&#x200B;**[!UICONTROL OK]**&#x200B;を選択します。
+   1. **[!UICONTROL 製品名]**&#x200B;を&#x200B;**[!UICONTROL 表]** リストから&#x200B;**[!UICONTROL 行]**&#x200B;にドラッグします。
+   1. **[!UICONTROL テーブル]** リストから&#x200B;**[!UICONTROL 発生回数]** エントリをドラッグし、**[!UICONTROL 列]**&#x200B;の横にあるフィールドにエントリをドロップします。 値が&#x200B;**[!UICONTROL SUM （Occurrences）]**&#x200B;に変更されます。
+   1. **[!UICONTROL 自分を表示]**&#x200B;から&#x200B;**[!UICONTROL テキストテーブル]**&#x200B;を選択します。
+   1. 「**[!UICONTROL フィット]**」ドロップダウンメニューから「**[!UICONTROL フィット幅]**」を選択します。
+   1. **[!UICONTROL 行]**&#x200B;の&#x200B;**[!UICONTROL 製品名]**&#x200B;を選択します。 ドロップダウンメニューから「**[!UICONTROL フィルター]**」を選択します。
+      1. **[!UICONTROL フィルター\[製品名\]]** ダイアログで、「**[!UICONTROL トップ]**」タブを選択します。
+      1. **[!UICONTROL 件のフィールドを選択：]** **[!UICONTROL 上位]** `5` **[!UICONTROL 件の項目]** **[!UICONTROL 合計]**。
+      1. **[!UICONTROL 適用]**&#x200B;と&#x200B;**[!UICONTROL OK]**&#x200B;を選択します。
 
-         ![AlertRed](/help/assets/icons/AlertRed.svg) テーブルが消えていることがわかります。 発生件数別に上位 5 つの製品名を選択しても、このフィルターを使用して正しく機能しない **&#x200B;**&#x200B;場合。
-      1. **[!UICONTROL フィルター]** シェルフの **[!UICONTROL 製品名]** を選択し、ドロップダウンメニューから **[!UICONTROL 削除]** を選択します。 テーブルが再び表示されます。
-   1. **[!UICONTROL マーク]** シェルフで **[!UICONTROL SUM （発生件数）]** を選択します。 ドロップダウンメニューから **[!UICONTROL フィルター]** を選択します。
-      1. **[!UICONTROL フィルタ \[ オカレンス\]]** ダイアログで **[!UICONTROL 最低]** を選択します。
-      1. 値として `47.799` と入力します。 この値を使用すると、テーブルに上位 5 項目のみが表示されます。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
+         ![AlertRed](/help/assets/icons/AlertRed.svg) テーブルが消えることに気付きました。 上位5つの製品名を出現順に選択すると、このフィルターを使用して&#x200B;**not**&#x200B;が正しく機能します。
+      1. **[!UICONTROL フィルター]** シェルフで&#x200B;**[!UICONTROL 製品名]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 削除]**&#x200B;を選択します。 テーブルが再び表示されます。
+   1. **[!UICONTROL Marks]** シェルフの&#x200B;**[!UICONTROL SUM （Occurrences）]**&#x200B;を選択します。 ドロップダウンメニューから「**[!UICONTROL フィルター]**」を選択します。
+      1. **[!UICONTROL フィルター\[発生件数\]]** ダイアログで、**[!UICONTROL 少なくとも]**&#x200B;を選択します。
+      1. 値として`47.799`を入力します。 この値を指定すると、上位5つの項目のみが表に表示されます。 **[!UICONTROL 適用]**&#x200B;と&#x200B;**[!UICONTROL OK]**&#x200B;を選択します。
 
-         Tableau Desktop は次のようになります。
+         Tableau デスクトップは以下のようになります。
 
-         ![Tableau Desktop の制限 &#x200B;](../assets/uc12-tableau-final.png)
+         ![Tableau デスクトップの制限](../assets/uc12-tableau-final.png)
 
-上に示すように、Tableau Desktop が実行するこのクエリは、製品名に対して上位 5 件の発生フィルターを定義すると失敗します。
+上に示すように、Tableau Desktopで実行されるこのクエリは、製品名に上位5件の発生回数フィルターを定義する際に失敗します。
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -188,7 +189,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-Tableau Desktop で実行されるクエリは、発生件数に対して上位 5 件のフィルターを定義する際に、以下のように表示されます。 制限は、クエリおよび適用されたクライアントサイドには表示されません。
+Tableau Desktopで実行されるクエリは、発生時に上位5個のフィルターを定義する際に次のように表示されます。 この制限は、クエリおよび適用されたクライアントサイドには表示されません。
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -200,27 +201,27 @@ GROUP BY 1
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、接続を更新します。 「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL キャッシュのクリアと更新]**」を選択します。
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
-1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
-1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
-   1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
-   1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2024/01/01]** として指定します。
-1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
-   1. **[!UICONTROL 製品名]** を選択します。
-   1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
-1. **[!UICONTROL 購入収益]** 列で **[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順：1]**）を選択していることを確認します。
-1. **[!UICONTROL 購入収益]** 列で **[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順：1]**）を選択していることを確認します。
-1. 「**[!UICONTROL 実行]**」を選択します。
-1. 「**[!UICONTROL ‣ビジュアライゼーション]**」を選択します。
+1. Lookerの&#x200B;**[!UICONTROL Explore]** インターフェイスで、接続を更新します。 「![設定](/help/assets/icons/Setting.svg) **[!UICONTROL キャッシュをクリアして更新]**」を選択します。
+1. Lookerの&#x200B;**[!UICONTROL Explore]** インターフェイスで、クリーンな設定が行われていることを確認します。 そうでない場合は、![設定](/help/assets/icons/Setting.svg) **[!UICONTROL フィールドとフィルターの削除]**&#x200B;を選択します。
+1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
+1. **[!UICONTROL フィルターを追加]** ダイアログ：
+   1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
+   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+      ![Looker フィルター](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2024/01/01]**&#x200B;に指定します。
+1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
+   1. **[!UICONTROL 製品名]**&#x200B;を選択します。
+   1. 左パネル（下部）の&#x200B;**[!UICONTROL 測定]**&#x200B;の下にある&#x200B;**[!UICONTROL カウント]**&#x200B;を選択します。
+1. **[!UICONTROL 購入収益]**&#x200B;列で&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順序：1]**）を選択していることを確認してください。
+1. **[!UICONTROL 購入収益]**&#x200B;列で&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順序：1]**）を選択していることを確認してください。
+1. **[!UICONTROL 実行]**&#x200B;を選択します。
+1. 「**[!UICONTROL 」‣ビジュアライゼーション]**&#x200B;を選択します。
 
-以下に示すようなビジュアライゼーションとテーブルが表示されます。
+次のようなビジュアライゼーションと表が表示されます。
 
 ![Looker count distinct](../assets/uc12-looker-result.png)
 
-BI 拡張機能を使用して Looker によって生成されるクエリには `FETCH NEXT 5 ROWS ONLY` が含まれています。これは、制限が Looker と BI 拡張機能を通じて実行されることを意味します。
+BI拡張機能を使用してLookerで生成されたクエリには`FETCH NEXT 5 ROWS ONLY`が含まれます。これは、LookerとBI拡張機能を使用して制限が実行されることを意味します。
 
 ```sql
 -- Looker Query Context '{"user_id":6,"history_slug":"a8f3b1ebd5712413ca1ae695090f70db","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
@@ -254,13 +255,13 @@ FETCH NEXT 5 ROWS ONLY
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 &#x200B;](../assets/uc12-jupyter-results.png)
+   ![Jupyter Notebookの結果](../assets/uc12-jupyter-results.png)
 
-クエリは、Jupyter Notebook で定義されているように、BI 拡張機能によって実行されます。
+クエリは、Jupyter Notebookで定義されているBI拡張機能によって実行されます。
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
+1. 新しいチャンクに次のコードブロックを入力します。
 
    ```R
    ## Dimension 1 Limited
@@ -275,9 +276,9 @@ FETCH NEXT 5 ROWS ONLY
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 &#x200B;](../assets/uc12-rstudio-results.png)
+   ![RStudio結果](../assets/uc12-rstudio-results.png)
 
-RStudio が BI 拡張機能を使用して生成するクエリには `LIMIT 5` が含まれています。これは、RStudio と BI 拡張機能によって制限が適用されることを意味します。
+BI拡張機能を使用してRStudioが生成したクエリには`LIMIT 5`が含まれます。これは、RStudioとBI拡張機能を使用して制限が適用されることを意味します。
 
 ```sql
 SELECT "product_name", COUNT(*) AS "n"

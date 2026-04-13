@@ -1,30 +1,31 @@
 ---
-title: 個別の値のカウント ディメンション
-description: Customer Journey Analyticsの様々な BI ツールでの BI 拡張機能の個別値ディメンションのユースケースのカウント
+title: 個別の値ディメンションのカウント
+description: Customer Journey Analyticsの様々なBI ツールのBI拡張機能の個別の値ディメンションのユースケースをカウントします
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
 
-# 個別の値のディメンションのカウント
+# 個別の値ディメンションのカウント
 
 
-このユースケースでは、2023 年 1 月中にレポートされた製品名のユニーク数を取得します。
+このユースケースでは、2023年1月に報告された製品名の数を明確に取得する必要があります。
 
 +++ Customer Journey Analytics
 
-商品名の個別カウントについてレポートするには、Customer Journey Analyticsで、**[!UICONTROL タイトル]**`Product Name (Count Distinct)` と **[!UICONTROL 外部 ID]**`product_name_count_distinct` を使用する計算指標を設定します。
+製品名の異なる数を報告するには、**[!UICONTROL タイトル]** `Product Name (Count Distinct)`と&#x200B;**[!UICONTROL 外部Id]** `product_name_count_distinct`を含む計算指標をCustomer Journey Analyticsで設定します。
 
-![Customer Journey Analytics製品名（Distincr カウント）の計算指標 &#x200B;](../assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analyticsの商品名（個数）計算指標](../assets/cja-calc-metric-distinct-count-product-names.png)
 
-次に、その指標をユースケースの例の **[!UICONTROL 個別のDimension値をカウント]** パネルで使用できます。
+次に、この指標を使用例の例&#x200B;**[!UICONTROL 個別のDimension値をカウント]** パネルで使用できます。
 
-![Customer Journey Analytics個別カウント値 &#x200B;](../assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analyticsの個別カウント値](../assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -32,111 +33,111 @@ ht-degree: 0%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
+>接続が成功したことを[検証し、データビューを一覧表示でき、このユースケースを試すBI ツールにデータビュー](connect-and-validate.md)を使用していることを確認します。
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-1. 日付範囲をすべてのビジュアライゼーションに確実に適用するには、**[!UICONTROL データ]** パネルからこのページの **[!UICONTROL フィルター]** に **[!UICONTROL daterangeday]** をドラッグ&amp;ドロップします。
-   1. **[!UICONTROL このページのフィルター]** から **[!UICONTROL daterangeday is （すべて）]** を選択します。
-   1. **[!UICONTROL フィルタータイプ]** として「**[!UICONTROL 詳細フィルタリング]**」を選択します。
-   1. **[!UICONTROL 値が次の値の場合に項目を表示]**&#x200B;**[!UICONTROL が次の値以上の場合に項目を表示]**`1/1/2023`**[!UICONTROL および]**&#x200B;**[!UICONTROL が次の値の前]**`2/1/2023` のフィルターを定義してください。
+1. 日付範囲がすべてのビジュアライゼーションに適用されるようにするには、**[!UICONTROL daterangeday]**&#x200B;を&#x200B;**[!UICONTROL データ]** ペインからドラッグ&amp;ドロップして、このページの&#x200B;**[!UICONTROL フィルター]**&#x200B;に移動します。
+   1. このページの&#x200B;**[!UICONTROL フィルター]**&#x200B;から&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
+   1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
+   1. 値&#x200B;****&#x200B;が&#x200B;**** `1/1/2023`および&#x200B;****&#x200B;が&#x200B;****&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
-   1. **[!UICONTROL datarangeday]** を選択します。
-   1. Customer Journey Analyticsで定義された計算指標である **[!UICONTROL sum cm_product_name_count_distinct]** を選択します。
+   1. **[!UICONTROL datarangeday]**&#x200B;を選択します。
+   1. Customer Journey Analyticsで定義された計算指標である&#x200B;**[!UICONTROL sum cm_product_name_count_distinct]**&#x200B;を選択します。
 
-1. 縦棒グラフをテーブルに変更するには、グラフが選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから **[!UICONTROL テーブル]** を選択します。
+1. 縦棒グラフを表に変更するには、グラフが選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから&#x200B;**[!UICONTROL 表]**&#x200B;を選択します。
 
-   Power BI デスクトップは次のようになります。
+   Power BI デスクトップは以下のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](../assets/uc7-powerbi-table.png)
+   ![Power BI Desktop Multiple Count Distinct table](../assets/uc7-powerbi-table.png)
 
-1. テーブルビジュアライゼーションを選択します。 コンテキストメニューから **[!UICONTROL コピー]**/**[!UICONTROL ビジュアルをコピー]** を選択します。
-1. **[!UICONTROL ctrl+v]** を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域で右に移動します。
-1. コピーしたビジュアライゼーションをテーブルからカードに変更するには、**[!UICONTROL ビジュアライゼーション]** から **[!UICONTROL カード]** を選択します。
+1. テーブルのビジュアライゼーションを選択します。 コンテキストメニューから、**[!UICONTROL Copy]** > **[!UICONTROL Copy visual]**&#x200B;を選択します。
+1. **[!UICONTROL ctrl-v]**&#x200B;を使用してビジュアライゼーションを貼り付けます。 ビジュアライゼーションの正確なコピーが元のコピーと重なります。 レポート領域の右に移動します。
+1. コピーしたビジュアライゼーションをテーブルからカードに変更するには、**[!UICONTROL ビジュアライゼーション]**&#x200B;から&#x200B;**[!UICONTROL カード]**&#x200B;を選択します。
 
-   Power BI デスクトップは次のようになります。
+   Power BI デスクトップは以下のようになります。
 
-   ![Power BI Desktop の複数カウントの個別テーブル &#x200B;](../assets/uc7-powerbi-final.png)
+   ![Power BI Desktop Multiple Count Distinct table](../assets/uc7-powerbi-final.png)
 
-または、Power BIの個別カウント機能を使用できます。
+または、Power BIのcount distinct機能を使用することもできます。
 
 1. **[!UICONTROL product_name]** ディメンションを選択します。
-1. **[!UICONTROL Count （Distinct）]** 関数を **[!UICONTROL Columns]** の **[!UICONTROL product_name]** ディメンションに適用します。
+1. **[!UICONTROL 列]**&#x200B;の&#x200B;**[!UICONTROL product_name]** ディメンションに&#x200B;**[!UICONTROL Count （Distinct）]**&#x200B;関数を適用します。
 
-   ![&#x200B; 個別Power BI数 &#x200B;](../assets/uc7-powerbi-alternative.png)
+   ![Power BI個数](../assets/uc7-powerbi-alternative.png)
 
 
 
 >[!TAB Tableau Desktop]
 
-1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
-   1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
-   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` - `31/1/2023` を選択します。 **[!UICONTROL 適用]** および **[!UICONTROL OK]** を選択します。
-   1. **[!UICONTROL Cm 製品名の個別カウント]** を **[!UICONTROL 行]** にドラッグします。 値が「**[!UICONTROL SUM （Cm Product Name Count Distinct）]**」に変わります。 このフィールドは、Customer Journey Analyticsで定義した計算指標です。
-   1. **[!UICONTROL Daterangeday]** をドラッグして、「**[!UICONTROL 列]** の横にドロップします。 **[!UICONTROL Daterangeday]** を選択し、ドロップダウンメニューから **[!UICONTROL Day]** を選択します。
-   1. 折れ線グラフのビジュアライゼーションをテーブルに変更するには、「**[!UICONTROL 表示]**」から「**[!UICONTROL テキストテーブル]**」を選択します。
-   1. ツールバーの **[!UICONTROL 行と列を入れ替える]** を選択します。
-   1. **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL フィット幅]** を選択します。
+1. 下部の「**[!UICONTROL シート 1]**」タブを選択して、**[!UICONTROL データソース]**&#x200B;から切り替えます。 **[!UICONTROL シート 1]** ビューで：
+   1. **[!UICONTROL Data]** ペインの&#x200B;**[!UICONTROL Tables]** リストから&#x200B;**[!UICONTROL Daterange]** エントリをドラッグし、エントリを&#x200B;**[!UICONTROL Filters]** シェルフにドロップします。
+   1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで、**[!UICONTROL 日付の範囲]**&#x200B;を選択し、**[!UICONTROL 次>]**&#x200B;を選択します。
+   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで、**[!UICONTROL 日付の範囲]**&#x200B;を選択し、`01/01/2023` ～ `31/1/2023`を選択します。 **[!UICONTROL 適用]**&#x200B;と&#x200B;**[!UICONTROL OK]**&#x200B;を選択します。
+   1. **[!UICONTROL Cm製品名の個数]**&#x200B;を&#x200B;**[!UICONTROL 行]**&#x200B;にドラッグします。 値が&#x200B;**[!UICONTROL SUM （Cm Product Name Count Distinct）]**&#x200B;に変更されます。 このフィールドは、Customer Journey Analyticsで定義した計算指標です。
+   1. **[!UICONTROL Daterangeday]**&#x200B;をドラッグし、**[!UICONTROL 列]**&#x200B;の横にドロップします。 **[!UICONTROL Daterangeday]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL Day]**&#x200B;を選択します。
+   1. 行のビジュアライゼーションをテーブルに変更するには、**[!UICONTROL 自分を表示]**&#x200B;から&#x200B;**[!UICONTROL テキストテーブル]**&#x200B;を選択します。
+   1. ツールバーから「**[!UICONTROL 行と列を入れ替え]**」を選択します。
+   1. 「**[!UICONTROL フィット]**」ドロップダウンメニューから「**[!UICONTROL フィット幅]**」を選択します。
 
-      Tableau Desktop は次のようになります。
+      Tableau デスクトップは以下のようになります。
 
-      ![Tableau Desktop Multiple Dimension Rank Filter](../assets/uc7-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](../assets/uc7-tableau-data.png)
 
-1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
-1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
-1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Card` に変更します。
+1. 「**[!UICONTROL シート 1]**」タブのコンテキストメニューから「**[!UICONTROL 複製]**」を選択して、2番目のシートを作成します。
+1. 「**[!UICONTROL シート 1]**」タブのコンテキストメニューから「**[!UICONTROL 名前を変更]**」を選択して、シートの名前を`Data`に変更します。
+1. 「**[!UICONTROL シート 1 （2）]**」タブのコンテキストメニューから「**[!UICONTROL 名前を変更]**」を選択して、シートの名前を`Card`に変更します。
 
-1. **[!UICONTROL カード]** ビューが選択されていることを確認します。
-1. 「**[!UICONTROL DAY （Daterangeday）]**」を選択し、ドロップダウンメニューから「**[!UICONTROL 月]**」を選択します。 値が「**[!UICONTROL MONTH （Daterangeday）]**」に変わります。
-1. **[!UICONTROL マーク]** で **[!UICONTROL SUM （Cm Product Name Count Distinct）]** を選択し、ドロップダウンメニューから **[!UICONTROL 形式]** を選択します。
-1. フォントサイズを変更するには、**[!UICONTROL Format SUM （CM Product Name Count Distinct）]** ペインで、「**[!UICONTROL デフォルト]**」内の「**[!UICONTROL フォント]**」を選択し、フォントサイズとして「**[!UICONTROL 72]**」を選択します。
-1. 数値を整列するには、「**[!UICONTROL 整列]**」の横にある「**[!UICONTROL 自動]** を選択し、「**[!UICONTROL 水平]** を中央揃えに設定します。
-1. 整数を使用するには、「**[!UICONTROL 数値]**」の横の「**[!UICONTROL 123.456]**」を選択し、「**[!UICONTROL 数値（カスタム）]**」を選択します。 **[!UICONTROL 小数点以下の桁数]** を `0` に設定します。
+1. **[!UICONTROL Card]** ビューが選択されていることを確認します。
+1. **[!UICONTROL DAY （Daterangeday）]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 月]**&#x200B;を選択します。 値が&#x200B;**[!UICONTROL MONTH （Daterangeday）]**&#x200B;に変更されます。
+1. **[!UICONTROL Marks]**&#x200B;で&#x200B;**[!UICONTROL SUM （Cm Product Name Count Distinct）]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL Format]**&#x200B;を選択します。
+1. フォントサイズを変更するには、**[!UICONTROL Format SUM （CM Product Name Count Distinct）]** ペインで、**[!UICONTROL Default]**&#x200B;内の&#x200B;**[!UICONTROL Font]**&#x200B;を選択し、フォントサイズとして&#x200B;**[!UICONTROL 72]**&#x200B;を選択します。
+1. 番号を整列させるには、**[!UICONTROL 整列]**&#x200B;の横にある&#x200B;**[!UICONTROL 自動]**&#x200B;を選択し、**[!UICONTROL 水平]**&#x200B;を中央揃えに設定します。
+1. 整数を使用するには、**[!UICONTROL Numbers]**&#x200B;の横にある&#x200B;**[!UICONTROL 123.456]**&#x200B;を選択し、**[!UICONTROL Number （Custom）]**&#x200B;を選択します。 **[!UICONTROL 小数点以下桁]**&#x200B;を`0`に設定します。
 
-   Tableau Desktop は次のようになります。
+   Tableau デスクトップは以下のようになります。
 
-   ![Tableau Desktop Multiple Dimension Rank Filter](../assets/uc7-tableau-card.png)
+   ![Tableau Desktop Multiple Dimension Ranked Filter](../assets/uc7-tableau-card.png)
 
-1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Card]** シートを **[!UICONTROL ここにシートをドロップ]** と表示される *Dashboard 1* ビューにドラッグ&amp;ドロップします。
-   1. **[!UICONTROL データ]** シートを、**[!UICONTROL カード]** シートの下にある **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
+1. 「**[!UICONTROL 新しいダッシュボード]**」タブボタン（下部）を選択して、新しい&#x200B;**[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL カード]** シートを&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;**[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。このビューには、*シートをここにドロップ*&#x200B;します。
+   1. **[!UICONTROL ダッシュボード 1]** ビューの&#x200B;**[!UICONTROL Card]** シートの下にある&#x200B;**[!UICONTROL Sheets]** シェルフから&#x200B;**[!UICONTROL Data]** シートをドラッグ&amp;ドロップします。
 
    **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-   ![Tableau Desktop ダッシュボード 1](../assets/uc7-tableau-final.png)
+   ![Tableau Desktop Dashboard 1](../assets/uc7-tableau-final.png)
 
 
-または、Tableau Desktop の個別カウント機能を使用することもできます。
+または、Tableau Desktopのcount distinct機能を使用することもできます。
 
-1. **[!UICONTROL Cm の製品名の個別カウント]** ではなく **[!UICONTROL 製品名]** を使用します。
-1. **[!UICONTROL Marks]** の **[!UICONTROL 製品名]** に **[!UICONTROL Measure]** > **[!UICONTROL Count （Distinct）]** を適用します。
+1. **[!UICONTROL Cm製品名数]**&#x200B;ではなく、**[!UICONTROL 製品名]**&#x200B;を使用してください。
+1. **[!UICONTROL Measure]** > **[!UICONTROL Count （Distinct）]**&#x200B;を&#x200B;**[!UICONTROL Marks]**&#x200B;の&#x200B;**[!UICONTROL 製品名]**&#x200B;に適用します。
 
-   ![Tableau の個別カウント &#x200B;](../assets/uc7-tableau-alternative.png)
+   ![Tableau Count Distinct](../assets/uc7-tableau-alternative.png)
 
 
 >[!TAB Looker]
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
-1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
-1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
-   1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
-   1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/02/01]** として指定します。
-1. 左側のパネルの「**[!UICONTROL ‣ Cc データビュー]**」セクションから、
-   1. **[!UICONTROL Daterange Date]** を選択してから、**[!UICONTROL Date]** を選択します。
-   1. **[!UICONTROL 製品名]** の「**⋮詳細**」コンテキストメニューから「**[!UICONTROL 個別‣カウントを集計]**」を選択します。
-      ![Looker 製品名コンテキストメニュー &#x200B;](../assets/uc7-looker-count-distinct.png)
-1. 「**[!UICONTROL 実行]**」を選択します。
-1. 「**[!UICONTROL ‣ ビジュアライゼーション]**」を選択し、ツールバーの「6︎⃣」を選択して 1 つの値のビジュアライゼーションを表示します。
+1. Lookerの&#x200B;**[!UICONTROL Explore]** インターフェイスで、クリーンな設定が行われていることを確認します。 そうでない場合は、![設定](/help/assets/icons/Setting.svg) **[!UICONTROL フィールドとフィルターの削除]**&#x200B;を選択します。
+1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
+1. **[!UICONTROL フィルターを追加]** ダイアログ：
+   1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
+   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+      ![Looker フィルター](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
+1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
+   1. **[!UICONTROL Daterange Date]**、次に&#x200B;**[!UICONTROL Date]**&#x200B;を選択します。
+   1. **[!UICONTROL 製品名]**&#x200B;の&#x200B;**詳細** コンテキストメニューから&#x200B;**[!UICONTROL 集約‣個数{1⋮を選択します。]**
+      ![Looker製品名のコンテキスト メニュー](../assets/uc7-looker-count-distinct.png)
+1. **[!UICONTROL 実行]**&#x200B;を選択します。
+1. **[!UICONTROL }‣ビジュアライゼーション]**&#x200B;を選択し、ツールバーから6︎⃣を選択して、単一の値ビジュアライゼーションを表示します。
 
-以下に示すようなビジュアライゼーションとテーブルが表示されます。
+次のようなビジュアライゼーションと表が表示されます。
 
 ![Looker count distinct](../assets/uc7-looker-result.png)
 
@@ -154,12 +155,12 @@ ht-degree: 0%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 &#x200B;](../assets/uc7-jupyter-results.png)
+   ![Jupyter Notebookの結果](../assets/uc7-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
+1. 新しいチャンクに次のコードブロックを入力します。
 
    ```R
    ## Count Distinct
@@ -171,10 +172,9 @@ ht-degree: 0%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 &#x200B;](../assets/uc7-rstudio-results.png)
+   ![RStudio結果](../assets/uc7-rstudio-results.png)
 
 
 >[!ENDTABS]
 
 +++
-
