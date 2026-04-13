@@ -279,7 +279,7 @@ ht-degree: 99%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
 
 +++
 
@@ -307,7 +307,7 @@ ht-degree: 99%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -434,9 +434,9 @@ ht-degree: 99%
 
 {{select-package}}
 
-テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[ ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
+テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[&#x200B; ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![UTM パラメーター解析ルールビルダーのスクリーンショット ](assets/function-template-utm-parameters-parse.png)
+![UTM パラメーター解析ルールビルダーのスクリーンショット &#x200B;](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -490,7 +490,7 @@ ht-degree: 99%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [ 演算子 ](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>次と等しい</li><li>が次のいずれかの語句に等しい</li><li>フレーズを含む</li><li>いずれかの語句を含む</li><li>すべての語句を含む</li><li>次の語句で始まる</li><li>任意の語句で始まる</li><li>次の語句で終わる</li><li>任意の語句で終わる</li><li>次と等しくない</li><li>が次のいずれの語句にも等しくない</li><li>このフレーズを含まない</li><li>いずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>設定済み</li><li>未設定</li></ul><p>数値</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>設定済み</li><li>未設定</li></ul><p>日付</p><ul><li>次と等しい</li><li>次と等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>設定済み</li><li>未設定</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [&#x200B; 演算子 &#x200B;](#operators)。単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1989,7 +1989,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Screen Height` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 ![型キャストルールのスクリーンショット 1](assets/typecast-1.png)
 
@@ -2004,7 +2004,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
 
-`Revenue (integer)` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Revenue (integer)` の派生フィールドを定義します。[!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 
 +++

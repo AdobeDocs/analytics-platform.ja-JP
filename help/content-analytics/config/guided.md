@@ -452,7 +452,7 @@ Customer Journey Analytics では、[データビュー](/help/data-views/data-v
 
 オプションとして、**[!UICONTROL ヘッダーの上書き]** セクションで、ヘッダー名とシークレットヘッダーの値を指定できます。  このヘッダーが設定を上書きすると、Content Analyticsがカスタム HTTP ヘッダーを送信して、実装したボット検出またはゲートトラフィックテクノロジーをバイパスできるようになります。
 
-![ ヘッダーがセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
+![&#x200B; ヘッダーがセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]**&#x200B;を有効にします。
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。

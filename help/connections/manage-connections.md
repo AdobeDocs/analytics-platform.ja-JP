@@ -75,7 +75,7 @@ ht-degree: 97%
 
 ### 接続を絞り込む
 
-接続のリストにフィルターを適用するには、![ フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
+接続のリストにフィルターを適用するには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
 
 | フィルターオプション | 説明 |
 |---------|----------|
@@ -86,7 +86,7 @@ ht-degree: 97%
 | **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
 | **[!UICONTROL 統合]** | 選択した統合を持つ接続のみが表示されます。 |
 
-「![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
+「![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
 
 ### 接続の編集
 
@@ -319,8 +319,8 @@ Customer Journey Analytics から接続を削除するには：
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接接続のグローバルアカウント ID として指定した ID。グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接接続のグローバルアカウント ID として指定した ID。グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
