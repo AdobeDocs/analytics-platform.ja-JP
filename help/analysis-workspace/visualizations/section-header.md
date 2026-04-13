@@ -1,6 +1,6 @@
 ---
 title: セクションヘッダー
-description: セクションヘッダーを使用すると、Analysis Workspace プロジェクトにセクションヘッダーを挿入できます。
+description: セクションヘッダーを使用して、Analysis Workspace プロジェクトにセクションヘッダーを挿入します。
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
@@ -40,6 +40,6 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 >[!MORELIKETHIS]
 >
 >[パネルにビジュアライゼーションを追加する](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

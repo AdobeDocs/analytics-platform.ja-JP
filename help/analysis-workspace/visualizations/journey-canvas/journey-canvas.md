@@ -6,8 +6,8 @@ role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
+_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のジャーニーキャンバスビジュアライゼーションについて説明します。<br/>**Adobe Analytics** には同等のビジュアライゼーションはありません。_
 
 >[!ENDSHADEBOX]
 

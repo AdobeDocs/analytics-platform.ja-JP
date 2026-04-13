@@ -1,6 +1,6 @@
 ---
-description: 横棒を使用して、1 つ以上の指標の様々な値を表す方法を説明します。
-title: 横棒グラフおよび積み重ね横棒グラフ
+description: 水平バーを使用して、1つ以上の指標で様々な値を表す方法を説明します。
+title: 横棒グラフと横棒グラフ
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
@@ -59,7 +59,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area ビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; エリアのビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

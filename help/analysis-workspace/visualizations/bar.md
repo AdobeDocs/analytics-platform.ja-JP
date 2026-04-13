@@ -1,6 +1,6 @@
 ---
-description: Analysis Workspaceでの棒グラフおよび積み重ね棒グラフのビジュアライゼーションの使用方法を説明します。
-title: 棒グラフおよび積み重ね棒グラフ
+description: Analysis Workspaceで棒グラフと棒グラフの積み重ねビジュアライゼーションを使用する方法を説明します。
+title: 棒グラフと棒グラフ（積み重ね）
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
@@ -63,7 +63,7 @@ _この記事では、_ CustomerJourneyAnalytics![&#x200B; &#x200B;](/help/asset
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area ビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; エリアのビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

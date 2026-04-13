@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceでのフロービジュアライゼーションの使用方法を説明します。
+description: Analysis Workspaceのフロービジュアライゼーションの使用方法を説明します。
 title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
@@ -55,9 +55,9 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 ## ディメンション間のフロー
 
-[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローはホームページ、男性ページ、靴部門に移動する可能性があります。
+[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローはホームページから男性ページ、次に靴部門に移動します。
 
-各列に異なるディメンションが表示される場合があります。 ディメンションをドラッグし、ドロップゾーンにドロップして、そのディメンションを図に追加します。
+各列に異なるディメンションを表示することができます。 ディメンションをドラッグしてドロップゾーンにドロップし、そのディメンションをダイアグラムに追加します。
 
 >[!MORELIKETHIS]
 >

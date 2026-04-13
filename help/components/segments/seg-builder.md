@@ -1,5 +1,5 @@
 ---
-description: セグメントビルダーが、コンテナ階層ロジック、ルールおよび演算子に基づいて、指標、ディメンション、セグメントおよびイベントをセグメント訪問者にドラッグ&ドロップするキャンバスをどのように提供するかを理解します。 訪問やページヒットにまたがる訪問者の属性とアクションを識別するシンプルなセグメントまたは複雑なセグメントを作成および保存する方法について説明します。
+description: セグメントビルダーが、コンテナ階層のロジック、ルール、演算子に基づいて、指標、ディメンション、セグメント、イベントをドラッグ&ドロップして訪問者をセグメント化するためのキャンバスを提供する方法を説明します。 訪問やページヒットにまたがる訪問者の属性とアクションを識別するシンプルなセグメントまたは複雑なセグメントを作成および保存する方法について説明します。
 title: セグメントの作成
 feature: Filters, Segments
 role: User
@@ -41,7 +41,7 @@ ht-degree: 88%
 
    | 要素 | 説明 |
    | --- | --- |
-   | **[!UICONTROL データビュー]** | セグメントのデータ表示を選択できます。  定義したセグメントは、データビューの [&#x200B; 設定 &#x200B;](/help/data-views/create-dataview.md#settings-filters) タブでセグメントとして使用できます。 |
+   | **[!UICONTROL データビュー]** | セグメントのデータビューを選択できます。  定義したセグメントは、データビューの「[設定](/help/data-views/create-dataview.md#settings-filters)」タブでセグメントとして使用できます。 |
    | **[!UICONTROL プロジェクトのみのセグメント]** | セグメントが作成されたプロジェクトにのみ表示され、セグメントがコンポーネントリストに追加されないことを説明する情報ボックス。この設定を変更するには、**[!UICONTROL このセグメントをすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加]**&#x200B;を有効にします。この情報ボックスは、[クイックセグメント](seg-quick.md)を作成し、[!UICONTROL クイックセグメント]インターフェイスから&#x200B;**[!UICONTROL ビルダーを開く]**&#x200B;を使用してクイックセグメント情報を通常のセグメントに変換した場合にのみ表示されます。 |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | セグメントに名前を付けます（例：`Last month mobile customers`）。 |
    | **[!UICONTROL 説明]** | セグメントに説明を付けます（例：`Segment to define the mobile customers for the last month`）。 |
@@ -66,7 +66,7 @@ ht-degree: 88%
 定義のタイプと範囲を設定できます。
 
 1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
-1. 定義の範囲を指定するには、**[!UICONTROL 含める]** または **[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を **[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL オポチュニティ]** [!BADGE B2B editionB2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購入グループ]**&#x200B;[!BADGE &#x200B; のいずれにするかを選択します]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. 定義の範囲を指定するには、**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を&#x200B;**[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE 、]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}購買グループ &rbrace;のいずれかを選択します&#x200B;**[!UICONTROL B2B edition]**{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 これらの設定は、後で常に変更できます。
 
@@ -102,7 +102,7 @@ ht-degree: 88%
 * 既存のコンポーネントをコンテナに追加するには、コンテナにコンポーネントをドラッグ＆ドロップします。
 * 別のコンポーネントをコンテナに追加するには、コンポーネントパネルからコンテナにコンポーネントをドラッグ＆ドロップします。青色の挿入線をガイドとして使用します。
 * 別のコンポーネントをコンテナの外側に追加するには、コンテナの外側、メイン定義コンテナの内側にあるコンポーネントパネルからコンポーネントをドラッグ＆ドロップします。青色の挿入線をガイドとして使用します。
-* コンテナ内のコンポーネント間、コンテナ間またはコンテナとコンポーネント間のロジックを変更するには、適切な「**[!UICONTROL および]**」、「**[!UICONTROL または]**」、「**[!UICONTROL 次に]**」を選択します。「次に」を選択すると、セグメントが順次セグメントに変換されます。 詳しくは、[順次セグメントの作成](seg-sequential-build.md)を参照してください。
+* コンテナ内のコンポーネント間、コンテナ間またはコンテナとコンポーネント間のロジックを変更するには、適切な「**[!UICONTROL および]**」、「**[!UICONTROL または]**」、「**[!UICONTROL 次に]**」を選択します。「次へ」を選択すると、セグメントを連続したセグメントに変換できます。 詳しくは、[順次セグメントの作成](seg-sequential-build.md)を参照してください。
 * コンテナレベルを切り替えるには、![グローバル](/help/assets/icons/Globe.svg)「**[!UICONTROL グローバルアカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}」、![アカウント](/help/assets/icons/Account.svg)「**[!UICONTROL アカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}」、![商談](/help/assets/icons/Opportunity.svg)「**[!UICONTROL 商談]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}」、![購買グループ](/help/assets/icons/BuyingGroup.svg)「**[!UICONTROL 購買グループ]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}」、![Web ページ](/help/assets/icons/WebPage.svg)「**[!UICONTROL イベント]**」、![訪問](/help/assets/icons/Visit.svg)「**[!UICONTROL セッション]**」または![ユーザー](/help/assets/icons/User.svg)「**[!UICONTROL ユーザー]**」を選択します。
 
 コンテナ内の ![設定](/help/assets/icons/Setting.svg) は、次のアクションに使用できます。
@@ -134,11 +134,11 @@ ht-degree: 88%
 
 セグメントを使用して、セグメントを作成できます。セグメント内でセグメントを使用すると、セグメントを最適化して複雑さを軽減できます。
 
-デバイスタイプ（2）と米国の状態（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。カリフォルニア州のタブレットユーザーを取得するには、100 個のセグメントのいずれかを使用します。
+デバイスタイプ（2）と米国のステート（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。カリフォルニア州のタブレットユーザーを取得するには、100 個のセグメントのいずれかを使用します。
 
 ![カルフォルニア州とタブレットのシンプルなセグメント](assets/filter-ca-tablet-single.png)
 
-または、52 のセグメントを定義できます。米国の州に 50 のセグメント、携帯電話用に 1 つ、タブレット用に 1 つずつです。 次に、セグメントを積み重ねて、同じ結果を取得します。カリフォルニア州のタブレットユーザーを取得するには、次の 2 つのセグメントを積み重ねます。
+あるいは、52のセグメントを定義できます。米国では50のセグメント、携帯電話では1つ、タブレットでは1つのセグメントです。 次に、セグメントを積み重ねて、同じ結果を取得します。カリフォルニア州のタブレットユーザーを取得するには、次の2つのセグメントを積み重ねます。
 
 ![CA とタブレットの積み重ねセグメント](assets/filter-ca-tablet-stacked.png)
 

@@ -1,5 +1,5 @@
 ---
-description: ネストされた長方形のセットとして、（ツリー構造の）階層データを表示する方法を理解します。
+description: 階層型（ツリー構造化）データをネストされた長方形のセットとして表示する方法について説明します。
 title: ツリーマップ
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b

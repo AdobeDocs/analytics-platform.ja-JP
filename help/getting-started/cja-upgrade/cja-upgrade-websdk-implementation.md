@@ -7,8 +7,8 @@ feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe Analytics から Customer Journey Analytics へのアップグレードで
 
 Adobe Experience Platform web SDK の使用方法として、次の 3 つがサポートされています。
 
-* [Web SDK タグ拡張機能 ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/extension)：アドビでは、この方法を使用することをお勧めします。サイトにタグローダーをインストールし、Adobe Experience Platform Data Collection UI を使用して実装を設定します。
+* [Web SDK タグ拡張機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/extension)：アドビでは、この方法を使用することをお勧めします。サイトにタグローダーをインストールし、Adobe Experience Platform Data Collection UI を使用して実装を設定します。
 
 * [Web SDK JavaScript ライブラリ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/library)：CDN でホストされるライブラリファイルを参照するか、独自のインフラストラクチャを使用してライブラリファイルをホストします。サイトのコード内でライブラリに対して呼び出しを行います。
 

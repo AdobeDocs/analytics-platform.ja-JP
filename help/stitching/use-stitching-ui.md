@@ -92,7 +92,7 @@ ht-degree: 4%
 >id="connection_changeto_identitygraph"
 >title="ID グラフへの変更"
 >abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
+>additional-url="https://experienceleague.adobe.com/jp/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"

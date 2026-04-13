@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspaceでフロービジュアライゼーションを設定する方法を説明します
+description: Analysis Workspaceでフロービジュアライゼーションを設定する方法について説明します
 title: フロービジュアライゼーションの設定
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
@@ -69,11 +69,11 @@ ht-degree: 79%
 >abstract="このフィールドは、最初のビルドでのみ設定できます。このフィールドを更新するには、「**[!UICONTROL リセット]**」を選択して、新しいフロービジュアライゼーションを作成します。"
 
 
-フロービジュアライゼーションは、web サイトやアプリ上の特定のコンバージョンイベントに起因するジャーニーを理解するのに役立ちます。 または、特定のコンバージョンイベントに至る。 ビジュアライゼーションは、ディメンション（およびディメンション項目）または指標を通過するパスをトレースします。
+フローの可視化は、web サイトやアプリ上の特定のコンバージョンイベントを起点とするジャーニーを把握するのに役立ちます。 特定のコンバージョンイベントに至るまでエンゲージできます。 ビジュアライゼーションは、ディメンション（およびディメンション項目）または指標を通してパスをトレースします。
 
-目的のパスの開始または終了を設定できます。 または、ディメンションまたはディメンション項目を流れるすべてのパスを分析します。
+目的のパスの開始または終了を設定できます。 または、ディメンション項目またはディメンション項目を通過するすべてのパスを分析します。
 
-![&#x200B; 「次で始まる」、「次を含む」、および「次で終わる」フィールドを示すフロー設定画面 &#x200B;](assets/new-flow.png)
+![&#x200B; フロー設定画面に、フィールドで開始、含む、およびフィールドで終了が表示されます。](assets/new-flow.png)
 
 ## 使用
 
@@ -89,7 +89,7 @@ ht-degree: 79%
 
    * ドロップダウンメニューを使用して、指標またはディメンションを選択する。
    * ディメンションまたは指標を左側のパネルからドラッグします。
-   * ディメンションまたは指標の名前の入力を開始し、ドロップダウンメニューに表示されたら選択します。
+   * ディメンションまたは指標の名前を入力し、ドロップダウンメニューに表示されたら選択します。
 
    >[!IMPORTANT]
    >
@@ -109,7 +109,7 @@ ht-degree: 79%
    | **[!UICONTROL 最初／最後の発生件数に制限]** | パスを、ディメンション、項目、指標の、最初または最後の発生件数で始まるパスまたは終わるパスに制限します。詳しくは、[最初／最後の発生件数に制限](#example-scenario-for-limit-to-firstlast-occurrence)を参照してください。 |
    | **[!UICONTROL 列の数]** | フロー図で必要な列数最大 5 列まで指定できます。 |
    | **[!UICONTROL 列ごとに展開される項目数]** | 各列に必要な項目数1 列につき最大 10 個の展開項目を指定できます。 |
-   | **[!UICONTROL フローコンテナ]** | **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL オポチュニティ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購入グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL セッション]**、**[!UICONTROL 人物]** を切り替えて、パスを分析できます。 これらの設定により、（セッションをまたいで）特定のコンテナレベルでのエンゲージメントを理解したり、分析を単一のセッションに制限したりできます。 |
+   | **[!UICONTROL フローコンテナ]** | **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL セッション]**&#x200B;および&#x200B;**[!UICONTROL 人物]**&#x200B;を切り替えて、パスを分析できます。 これらの設定は、特定のコンテナレベル（セッション間）でのエンゲージメントを理解したり、分析を単一のセッションに制限したりするのに役立ちます。 |
 
    >[!IMPORTANT]
    >
@@ -131,17 +131,17 @@ ht-degree: 79%
 
 ## 設定
 
-ビジュアライゼーションの上部に、フロー設定の概要が表示されます。ダイアグラム内のパスは比例しています。 アクティビティが多いパスは太く表示されます。
+ビジュアライゼーションの上部に、フロー設定の概要が表示されます。図のパスは比例しています。 アクティビティが多いパスは、太く見えます。
 
 ![訪問回数、パスディメンション：ページ、フローコンテナ：訪問者数で終わるを示すフロー出力の例。](assets/flow-output.png)
 
 データをさらに詳しく調べるには、次の複数のオプションがあります。
 
-* フロー図はインタラクティブです。 図にマウスポインターを合わせると、表示される詳細が変更されます。
+* フロー図はインタラクティブです。 ダイアグラムにマウスポインターを置いて、表示される詳細を変更します。
 
 * 図でノードを選択すると、そのノードの詳細が表示されます。 折りたたむには、もう一度ノードを選択します。
 
-  フロービジュアライゼーションで複数のノードを展開したままにすると、レポート時間に影響を与える可能性があります。 一般的なガイドラインとして、一度に展開し続けるノードは 10 個以下にしてください。
+  複数のノードをフロービジュアライゼーションで拡張したままにすると、レポート時間に影響を与える可能性があります。 一般的なガイドラインとして、一度に10個を超えるノードを拡張しないでください。
 
   ![ノードの詳細を示すインタラクティブフロー図の例。](assets/node-details.png)
 
@@ -168,16 +168,16 @@ ht-degree: 79%
 
 | オプション | 説明 |
 |--- |--- |
-| **[!UICONTROL このノードにフォーカス]** | 選択したノードにフォーカスを変更します。 フォーカスノードがフロー図の中央に表示されます。 |
+| **[!UICONTROL このノードにフォーカス]** | 選択したノードにフォーカスを変更します。 フォーカスノードは、フロー図の中央に表示されます。 |
 | **[!UICONTROL やり直し]** | 新しいフロー図を作成できる、フリーフォーム図ビルダーに戻ります。 |
-| **[!UICONTROL このパスのセグメントを作成]** | セグメントを作成します。これを選択すると、セグメントビルダーに移動し、新しいセグメントを設定できます。 |
+| **[!UICONTROL このパスのセグメントを作成]** | セグメントを作成します。この選択により、新しいセグメントを設定できるセグメントビルダーに移動します。 |
 | **[!UICONTROL 分類]** | 利用可能なディメンション、指標、時間でノードを分類します。 |
 | **[!UICONTROL フィルター列]** | フリーフォームテーブルで使用できるのと同じフィルターオプションが表示されます。使用可能なオプションについて詳しくは、[テーブルのフィルタリングと並べ替え](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)の「テーブルへのシンプルなフィルターまたは高度なフィルターの適用」の節を参照してください。 |
-| **[!UICONTROL 項目を除外]**&#x200B;または&#x200B;**[!UICONTROL 除外した項目を復元]** | 列から特定のノードを削除して、列の上部にフィルターとして自動的に作成します。除外した項目を復元するには、コンテキストメニューから、「**[!UICONTROL 除外した項目を復元]**」を選択します。また、列の上部にあるセグメントを開いて、先ほど除外した項目を含むピルボックスを削除することもできます。 |
+| **[!UICONTROL 項目を除外]**&#x200B;または&#x200B;**[!UICONTROL 除外した項目を復元]** | 列から特定のノードを削除して、列の上部にフィルターとして自動的に作成します。除外した項目を復元するには、コンテキストメニューから、「**[!UICONTROL 除外した項目を復元]**」を選択します。列の上部にあるセグメントを開き、除外した項目でピルボックスを削除することもできます。 |
 | **[!UICONTROL トレンド]** | ノードのトレンド図を作成します。 |
 | **[!UICONTROL 次の列を表示]**／**[!UICONTROL 前の列を表示]** | ビジュアライゼーションの次の（右）列または前の（左）列を表示します。 |
-| **[!UICONTROL &#x200B; 列を非表示 &#x200B;]**&#x200B;n | 選択されている列をビジュアライゼーションから非表示にします。 |
-| **[!UICONTROL 列全体を展開]** | 列を展開してすべてのノードを表示します。 デフォルトでは、上位 5 つのノードのみが表示されます。 |
+| **[!UICONTROL 列を非表示]**&#x200B;n | 選択されている列をビジュアライゼーションから非表示にします。 |
+| **[!UICONTROL 列全体を展開]** | 列を展開して、すべてのノードを表示します。 デフォルトでは、上位5つのノードのみが表示されます。 |
 | **[!UICONTROL 選択内容からオーディエンスを作成]** | 選択した列に基づいてオーディエンスを作成します。 |
 | **[!UICONTROL 列全体を折りたたむ]** | すべてのノードを列内に隠します。 |
 
@@ -198,7 +198,7 @@ ht-degree: 79%
 
   次の例では、フローの各ステップにおける&#x200B;*製品メインカテゴリ*&#x200B;と&#x200B;*買い物かごに追加*&#x200B;の&#x200B;**最後**&#x200B;の発生のみが含まれます。
   ![リント、開始](assets/limitonlast.png)
-* 使用される系列は、コンテナに基づいて異なります。**[!UICONTROL セッション]** コンテナを使用する場合、一連のイベントは 1 つのセッションに制限されます。  他のコンテナ（例：**[!UICONTROL Person]**、または **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}）を使用すると、一連のイベントは指定されたコンテナに基づいて行われ、複数のセッションにまたがる場合があります。
+* 使用される系列は、コンテナに基づいて異なります。**[!UICONTROL Session]** コンテナを使用する場合、一連のイベントはセッションに限定されます。  他のコンテナのいずれかを使用する場合（例：**[!UICONTROL ユーザー]**&#x200B;または&#x200B;**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または&#x200B;**[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}）、一連のイベントは指定されたコンテナに基づいており、複数のセッションにまたがる可能性があります。
 * 「**[!UICONTROL 最初／最後の発生に制限]**」オプションは、「**[!UICONTROL 次で始まる]**」または「**[!UICONTROL 次で終わる]**」フィールドで指標またはディメンション項目を使用している場合に、詳細設定で設定できます。
 
 

@@ -1,6 +1,6 @@
 ---
-description: ビジュアライゼーションの出発点として空のパネルを作成する方法を説明します。
-title: 空のパネル
+description: 任意のビジュアライゼーションの出発点として空白パネルを作成する方法を説明します。
+title: 空白パネル
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User

@@ -1,6 +1,6 @@
 ---
-title: メディアの同時視聴者数パネル
-description: Analysis Workspaceのメディア同時閲覧者パネルを使用および解釈する方法を説明します。
+title: メディア同時視聴者数パネル
+description: Analysis WorkspaceのMedia Concurrent Viewers パネルの使用方法と操作方法について説明します。
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User

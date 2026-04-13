@@ -1,5 +1,5 @@
 ---
-description: 先月や昨年などとの比較を行うなど、Analysis Workspaceで比較データを視覚化する方法を説明します。
+description: 先月、昨年などの比較を構築するなど、Analysis Workspaceで比較データを視覚化する方法について説明します。
 title: コンボ
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
@@ -52,7 +52,7 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x2
 
 1. ![コメント](/help/assets/icons/ComboChart.svg) [!UICONTROL コンボ]ビジュアライゼーションを追加します。[パネルへのビジュアライゼーションの追加](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
-1. ドロップダウンメニューから、X 軸のディメンションと Y 軸の指標を選択します。
+1. ドロップダウンメニューから、X軸の寸法とY軸の指標を選択します。
 
 1. 使用する[!UICONTROL 折れ線比較]のタイプを選択します。
 
@@ -99,6 +99,6 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x2
 >[!MORELIKETHIS]
 >
 >[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics 用ストリーミングメディアコレクションの設定
-description: Customer Journey Analytics用の Streaming Media Collection の設定方法について説明します
+description: Customer Journey AnalyticsにStreaming Media Collectionを設定する方法を説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -25,33 +25,33 @@ ht-degree: 20%
 
 {{upgrade-note-step}}
 
-Adobe Analyticsと同様に、ストリーミングメディアコレクションを使用して、Customer Journey Analyticsで使用するストリーミングメディアデータを収集できます。 Streaming Media Collection をAdobe Analyticsで使用する場合は、Customer Journey Analyticsへのアップグレード計画に含める必要があります。
+Adobe Analyticsと同様に、Streaming Media Collectionを使用して、Customer Journey Analyticsで使用するストリーミングメディアデータを収集できます。 Adobe AnalyticsでStreaming Media Collectionを使用する場合は、Customer Journey Analyticsへのアップグレードプランに含める必要があります。
 
-Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする手順を実行する際に、ストリーミングメディアコレクションのデータを考慮して、次の選択をおこないます。
+Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする手順を実行する際に、ストリーミングメディア収集データを考慮して次の選択を行います。
 
 * Customer Journey Analyticsのスキーマを作成する場合は、`MediaAnalytics Interaction Details` フィールドグループを含めます。
 
-  このフィールドグループの追加について詳しくは、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのスキーマの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#set-up-the-schema-in-adobe-experience-platform) を参照してください。
+  このフィールドグループの追加について詳しくは、『 Streaming Media Collection Guide 』の「[Adobe Experience Platformでのスキーマの設定](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#set-up-the-schema-in-adobe-experience-platform)」を参照してください。
 
-  スキーマの作成について詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) を参照してください。
+  スキーマの作成について詳しくは、[Customer Journey Analyticsで使用するカスタムスキーマの作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)を参照してください。
 
-* Media Analytics 用にデータストリームを設定する際に、Customer Journey Analyticsを有効にします。
+* Customer Journey Analyticsのデータストリームを設定する場合は、Media Analyticsを有効にします。
 
-  このオプションを有効にする方法については、ストリーミングメディアコレクションガイドの [Adobe Experience Platformでのデータストリームの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#configure-a-datastream-in-adobe-experience-platform) を参照してください。
+  このオプションの有効化について詳しくは、『 Streaming Media Collection Guide 』の「[Adobe Experience Platformでのデータストリームの設定](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#configure-a-datastream-in-adobe-experience-platform)」を参照してください。
 
-  データストリームの作成について詳しくは、[Customer Journey Analyticsで使用するデータストリームの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md) を参照してください。
+  データストリームの作成について詳しくは、[Customer Journey Analyticsで使用するデータストリームの作成](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)を参照してください。
 
   >[!NOTE]
   >
-  >Adobe Analytics実装で既にExperience Platform Web SDKを使用している場合、この手順は必要ありません。
+  >Adobe Analyticsの実装で既にExperience Platform Web SDKを使用している場合は、この手順は必要ありません。
 
-* Customer Journey Analyticsのデータビューを作成する際に、ストリーミングメディアコレクションの必須スキーマフィールドを含めます。
+* Customer Journey Analyticsのデータビューを作成する場合は、Streaming Media Collectionの必須スキーマフィールドを含めます。
 
-  これらのスキーマフィールドを XDM オブジェクトの正しい値に必ずマッピングしてください。
+  これらのスキーマフィールドをXDM オブジェクト内の正しい値にマッピングしてください。
 
-  必須フィールドについて詳しくは、ストリーミングメディアコレクションガイドの [Customer Journey Analyticsでのデータビューの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
+  必須フィールドについて詳しくは、『 Streaming Media Collection Guide 』の「[Customer Journey Analyticsでのデータビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)」を参照してください。
 
-  データビューの作成について詳しくは、[Customer Journey Analyticsでのデータビューの作成 &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) を参照してください。
+  データビューの作成について詳しくは、[Customer Journey Analyticsでのデータビューの作成](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)を参照してください。
 
 <!--
 
