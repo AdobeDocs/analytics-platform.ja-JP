@@ -1,28 +1,29 @@
 ---
-title: 毎時トレンド
-description: Customer Journey Analyticsの様々な BI ツールにおける BI 拡張機能の時間別トレンドユースケース
+title: 時間別トレンド
+description: Customer Journey Analyticsの様々なBI ツールでのBI拡張機能の時間ごとのトレンドユースケース
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: facce2d4-b729-46c0-a049-8f730220d8d2
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
 
-# 毎時トレンド
+# 時間別トレンド
 
 
-## 毎時トレンド
+## 時間別トレンド
 
-このユースケースでは、2023 年 1 月 1 日の発生件数（イベント）の 1 時間ごとのトレンドを表示するテーブルと単純な線のビジュアライゼーションを表示します。
+この使用例では、2023年1月1日の発生回数（イベント）の時間別トレンドを示すテーブルと簡単な行のビジュアライゼーションを表示します。
 
 +++ Customer Journey Analytics
 
-ユースケースの例 **[!UICONTROL 時間別トレンド]** パネル：
+使用例の&#x200B;**[!UICONTROL 時間別トレンド]** パネルの例：
 
-![Customer Journey Analyticsの時間別トレンドビジュアライゼーション &#x200B;](../assets/cja_hourly_trend.png)
+![Customer Journey Analyticsの時間別トレンド ビジュアライゼーション &#x200B;](../assets/cja_hourly_trend.png)
 
 +++
 
@@ -30,74 +31,74 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->このユースケースを試す BI ツールについて、[&#x200B; 接続に成功し、データビューをリストし、データビューを使用できる &#x200B;](connect-and-validate.md) ことを検証したことを確認します。
+>接続が成功したことを[検証し、データビューを一覧表示でき、このユースケースを試すBI ツールにデータビュー](connect-and-validate.md)を使用していることを確認します。
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI デスクトップ ]
 
-![AlertRed](/help/assets/icons/AlertRed.svg) Power BIは日時フィールドの処理方法を **認識** ていないので、**[!UICONTROL daterangehour]** や **[!UICONTROL daterangeminute]** などのディメンションはサポートされていません。
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BIは&#x200B;**not**&#x200B;が日時フィールドの処理方法を理解していないため、**[!UICONTROL daterangehour]**&#x200B;や&#x200B;**[!UICONTROL daterangeminute]**&#x200B;などのディメンションはサポートされていません。
 
 >[!TAB Tableau Desktop]
 
-1. 下部にある「**[!UICONTROL シート 1]**」タブを選択して、「**[!UICONTROL データソース]**」から切り替えます。 **[!UICONTROL シート 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル]** リストから **[!UICONTROL Daterange]** エントリをドラッグし、**[!UICONTROL フィルター]** シェルフにドロップします。
-   1. **[!UICONTROL フィルターフィールド\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択して **[!UICONTROL 次へ >]** を選択します。
-   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで **[!UICONTROL 日付範囲]** を選択し、`01/01/2023` ～ `02/01/2023` の期間を指定します。
+1. 下部の「**[!UICONTROL シート 1]**」タブを選択して、**[!UICONTROL データソース]**&#x200B;から切り替えます。 **[!UICONTROL シート 1]** ビューで：
+   1. **[!UICONTROL Data]** ペインの&#x200B;**[!UICONTROL Tables]** リストから&#x200B;**[!UICONTROL Daterange]** エントリをドラッグし、エントリを&#x200B;**[!UICONTROL Filters]** シェルフにドロップします。
+   1. **[!UICONTROL フィルターフィールド \[Daterange\]]** ダイアログで、**[!UICONTROL 日付の範囲]**&#x200B;を選択し、**[!UICONTROL 次>]**&#x200B;を選択します。
+   1. **[!UICONTROL フィルター\[Daterange\]]** ダイアログで、**[!UICONTROL 日付の範囲]**&#x200B;を選択し、`01/01/2023` ～ `02/01/2023`の期間を指定します。
 
-      ![Tableau Desktop フィルター &#x200B;](../assets/uc3-tableau-filter.png)
+      ![Tableau Desktop Filter](../assets/uc3-tableau-filter.png)
 
-   1. **[!UICONTROL データ]** ペインの「**[!UICONTROL テーブル]**」リストから **[!UICONTROL Daterangehour]** をドラッグ&amp;ドロップし、「**[!UICONTROL 列]**」の横のフィールドにエントリをドロップします。
-      * **[!UICONTROL Daterangeday]** ドロップダウンメニューから **[!UICONTROL More]** > **[!UICONTROL Hours]** を選択し、値が **[!UICONTROL HOUR （Daterangeday）]** に更新されるようにします。
-   1. **[!UICONTROL データ]** ペインの **[!UICONTROL テーブル（*メジャー名*）]** リストから **[!UICONTROL 発生件数]** をドラッグ&amp;ドロップし、**[!UICONTROL 行]** の横のフィールドにエントリをドロップします。 値は自動的に **[!UICONTROL SUM （発生件数）]** に変換されます。
-   1. ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL ビュー全体]** に変更します。
+   1. **[!UICONTROL Data]** ペインの&#x200B;**[!UICONTROL Tables]** リストから&#x200B;**[!UICONTROL Daterangehour]**&#x200B;をドラッグ&amp;ドロップし、**[!UICONTROL 列]**&#x200B;の横にあるフィールドにエントリをドロップします。
+      * **[!UICONTROL Daterangeday]** ドロップダウンメニューから&#x200B;**[!UICONTROL More]** > **[!UICONTROL Hours]**&#x200B;を選択して、値を&#x200B;**[!UICONTROL HOUR （Daterangeday）]**&#x200B;に更新します。
+   1. **[!UICONTROL データ]** ペインの&#x200B;**[!UICONTROL テーブル （*メジャー名*）]** リストから&#x200B;**[!UICONTROL 発生回数]**&#x200B;をドラッグ&amp;ドロップし、**[!UICONTROL 行]**&#x200B;の横にあるフィールドにエントリをドロップします。 値は自動的に&#x200B;**[!UICONTROL SUM （Occurrences）]**&#x200B;に変換されます。
+   1. ツールバーの「**[!UICONTROL フィット]**」ドロップダウンメニューから「**[!UICONTROL 標準]**」を「**[!UICONTROL ビュー全体]**」に変更します。
 
-      Tableau Desktop は次のようになります。
+      Tableau デスクトップは以下のようになります。
 
-      ![Tableau Desktop グラフ &#x200B;](../assets/uc3-tableau-graph.png)
+      ![Tableau Desktop Graph](../assets/uc3-tableau-graph.png)
 
-1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 複製]** を選択し、2 番目のシートを作成します。
-1. [**[!UICONTROL シート 1]**] タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Graph` に変更します。
-1. **[!UICONTROL シート 1 （2）]** タブの右クリック メニューから **[!UICONTROL 名前変更]** を選択して、シートの名前を `Data` に変更します。
-1. **[!UICONTROL データ]** シートが選択されていることを確認します。 **[!UICONTROL データ]** 表示で、次の操作を行います。
-   1. 右上の **[!UICONTROL 表示]** を選択し、**[!UICONTROL テキストテーブル]** （左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
-   1. **[!UICONTROL HOUR （Daterangeday）]** を **[!UICONTROL Columns]** から **[!UICONTROL Rows]** にドラッグします。
-   1. ツールバーの **[!UICONTROL フィット]** ドロップダウンメニューから **[!UICONTROL 標準]** を **[!UICONTROL ビュー全体]** に変更します。
+1. 「**[!UICONTROL シート 1]**」タブのコンテキストメニューから「**[!UICONTROL 複製]**」を選択して、2番目のシートを作成します。
+1. 「**[!UICONTROL シート 1]**」タブのコンテキストメニューから「**[!UICONTROL 名前を変更]**」を選択して、シートの名前を`Graph`に変更します。
+1. 「**[!UICONTROL シート 1 （2）]**」タブのコンテキストメニューから「**[!UICONTROL 名前を変更]**」を選択して、シートの名前を`Data`に変更します。
+1. **[!UICONTROL Data]** シートが選択されていることを確認します。 **[!UICONTROL データ]** ビューで：
+   1. 右上の「**[!UICONTROL 自分を表示]**」を選択し、「**[!UICONTROL テキストテーブル]**」（左上のビジュアライゼーション）を選択して、データビューのコンテンツをテーブルに変更します。
+   1. **[!UICONTROL HOUR （Daterangeday）]**&#x200B;を&#x200B;**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL 行]**&#x200B;にドラッグします。
+   1. ツールバーの「**[!UICONTROL フィット]**」ドロップダウンメニューから「**[!UICONTROL 標準]**」を「**[!UICONTROL ビュー全体]**」に変更します。
 
-      Tableau Desktop は次のようになります。
+      Tableau デスクトップは以下のようになります。
 
-      ![Tableau Desktop データ &#x200B;](../assets/uc3-tableau-data.png)
+      ![Tableau Desktop Data](../assets/uc3-tableau-data.png)
 
-1. **[!UICONTROL 新規ダッシュボード]**」タブボタン（下部）を選択して、新しい **[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL Sheets]** シェルフから **[!UICONTROL Graph]** シートを **[!UICONTROL Dashboard 1]** ビュー（「シートをここにドロップ *」と表示されているビュー* にドラッグ&amp;ドロップします。
-   1. **[!UICONTROL データ]** シートを、**[!UICONTROL グラフ]** シートの下にある **[!UICONTROL シート]** シェルフから **[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
-   1. ビューで **[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]** を **[!UICONTROL 固定幅]** に変更します。
+1. 「**[!UICONTROL 新しいダッシュボード]**」タブボタン（下部）を選択して、新しい&#x200B;**[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
+   1. **[!UICONTROL グラフ]** シートを&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;**[!UICONTROL シートをここにドロップ]**&#x200B;する&#x200B;*ダッシュボード 1* ビューにドラッグ&amp;ドロップします。
+   1. **[!UICONTROL グラフ]** シートの下の&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;**[!UICONTROL データ]** シートを&#x200B;**[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
+   1. ビューで&#x200B;**[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]**&#x200B;を&#x200B;**[!UICONTROL 幅を修正]**&#x200B;に変更します。
 
       **[!UICONTROL ダッシュボード 1]** ビューは次のようになります。
 
-      ![Tableau Desktop ダッシュボード 1](../assets/uc3-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](../assets/uc3-tableau-dashboard.png)
 
 
 >[!TAB Looker]
 
 
-1. Looker の **[!UICONTROL 探索]** インターフェイスで、クリーンな設定ができていることを確認します。 そうでない場合は、「![&#x200B; 設定 &#x200B;](/help/assets/icons/Setting.svg)**[!UICONTROL フィールドとフィルターを削除]**」を選択します。
-1. **[!UICONTROL フィルター]** の下の「**[!UICONTROL + フィルター]** を選択します。
-1. **[!UICONTROL フィルターを追加]** ダイアログで、次の手順を実行します。
-   1. 「**[!UICONTROL ‣ Cc データビュー」を選択します]**
-   1. フィールドのリストから、「**[!UICONTROL ‣Daterange Date」を選択し]** 「**[!UICONTROL Daterange Date]**」を選択します。
-      ![Looker フィルター &#x200B;](../assets/uc2-looker-filter.png)
-1. **[!UICONTROL CC データビュー日付範囲]** フィルターを **[!UICONTROL 範囲内]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL 前）まで]** **[!UICONTROL 2023/01/02]** として指定します。
-1. 左側のパネルの「**[!UICONTROL Cc データビュー]**」セクションから、
-   1. 「**[!UICONTROL ‣ Daterangehour Date]**」を選択し、「**[!UICONTROL DIMENSIONS]**」のリストから「**[!UICONTROL Time]**」を選択します。
-   1. 左パネル（下部）の **[!UICONTROL MEASURES]** の下にある **[!UICONTROL Count]** を選択します。
-1. 「**[!UICONTROL 実行]**」を選択します。
-1. 「**[!UICONTROL ‣ビジュアライゼーション]**」を選択して、折れ線グラフのビジュアライゼーションを表示します。
+1. Lookerの&#x200B;**[!UICONTROL Explore]** インターフェイスで、クリーンな設定が行われていることを確認します。 そうでない場合は、![設定](/help/assets/icons/Setting.svg) **[!UICONTROL フィールドとフィルターの削除]**&#x200B;を選択します。
+1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
+1. **[!UICONTROL フィルターを追加]** ダイアログ：
+   1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
+      ![Looker フィルター](../assets/uc2-looker-filter.png)
+1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/01/02]**&#x200B;まで指定します。
+1. 左側のパネルの「**[!UICONTROL Cc Data View]**」セクションから，
+   1. **[!UICONTROL ディメンション]**&#x200B;のリストから&#x200B;**[!UICONTROL ‣Daterangehour Date]**、次に&#x200B;**[!UICONTROL Time]**&#x200B;を選択します。
+   1. 左パネル（下部）の&#x200B;**[!UICONTROL 測定]**&#x200B;の下にある&#x200B;**[!UICONTROL カウント]**&#x200B;を選択します。
+1. **[!UICONTROL 実行]**&#x200B;を選択します。
+1. 行のビジュアライゼーションを表示するには、**[!UICONTROL ‣ ビジュアライゼーション]**&#x200B;を選択します。
 
-以下に示すようなビジュアライゼーションとテーブルが表示されます。
+次のようなビジュアライゼーションと表が表示されます。
 
-![Looker 結果日別トレンド &#x200B;](../assets/uc3-looker-result.png)
+![Looker結果の日次トレンド &#x200B;](../assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -122,12 +123,12 @@ ht-degree: 1%
 
 1. セルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![Jupyter Notebook の結果 &#x200B;](../assets/uc3-jupyter-results.png)
+   ![Jupyter Notebookの結果](../assets/uc3-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 新しいチャンクで、` ` ``{r} ` と ` `` ` ` の間に次のステートメントを入力します。
+1. 新しいチャンクに次のコードブロックを入力します。
 
    ```R
    ## Hourly Events
@@ -145,7 +146,7 @@ ht-degree: 1%
 
 1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
-   ![RStudio の結果 &#x200B;](../assets/uc3-rstudio-results.png)
+   ![RStudio結果](../assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
