@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 32f15ddf44352ec557616835bc6a0f40587d2c09
+source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1392'
 ht-degree: 94%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 94%
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
    + [BI 拡張機能](../data-views/bi-extension.md)
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
-   + {hide-from-toc}[ベストプラクティス](/help/data-views/derived-fields/best-practices.md)
+   + {hide-from-toc}[&#x200B; ベストプラクティス – 非表示](/help/data-views/derived-fields/best-practices.md)
    + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
    + 共有指標とディメンション{#shared-metrics-dimensions}
@@ -557,4 +557,3 @@ ht-degree: 94%
    + [使用状況の管理](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
-

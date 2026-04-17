@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 97339504546df94b6962170eb4bbae184193885c
+source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -362,3 +362,4 @@ Customer Journey Analytics [documents](./derived-fields.md#limitations)派生フ
 
 * そのディメンションの[配分モデルと有効期限](/help/data-views/component-settings/persistence.md)を調整して、名前と動作を調整します。 例えば、`Original Source`という名前の派生フィールドディメンションでは、有効期限がPersonに設定されたファーストタッチアトリビューションを使用する必要があります。
 * ディメンションの&#x200B;**[!UICONTROL 永続性]**&#x200B;設定の&#x200B;**[!UICONTROL 配分モデル]**&#x200B;と[有効期限](/help/data-views/component-settings/persistence.md)を調整して、名前と動作を調整します。 例えば、`Original Source`では、**[!UICONTROL 配分モデル]**&#x200B;を&#x200B;**[!UICONTROL 元]**&#x200B;に設定し、**[!UICONTROL 有効期限]**&#x200B;を&#x200B;**[!UICONTROL 人物]**&#x200B;に設定する必要があります。
+
