@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 12347a865bdeb16f9b45ec5e5eddc3390894e0dc
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10297'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,11 @@ ht-degree: 99%
 - 1 つ以上の条件（例：URL パラメーター、ページ URL、ページ名など）に基づいて適切なマーケティングチャネルを決定する派生マーケティングチャネルフィールドを定義する。
 
 標準コンポーネントは、派生フィールドのイベントデータセットでのみサポートされます。
+
+>[!TIP]
+>
+>派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[&#x200B; ガイドライン &#x200B;](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
+>
 
 ## 派生フィールドインターフェイス {#interface}
 

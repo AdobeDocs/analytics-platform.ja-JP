@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 94%
@@ -159,7 +159,6 @@ ht-degree: 94%
    + [標準コンポーネントリファレンス](../data-views/component-reference.md)
    + [BI 拡張機能](../data-views/bi-extension.md)
    + [派生フィールド](../data-views/derived-fields/derived-fields.md)
-   + {hide-from-toc}[&#x200B; ベストプラクティス – 非表示](/help/data-views/derived-fields/best-practices.md)
    + [概要データ](../data-views/summary-data.md)
    + [ラベルとポリシー](../data-views/data-governance.md)
    + 共有指標とディメンション{#shared-metrics-dimensions}
@@ -514,9 +513,10 @@ ht-degree: 94%
          + [ビジュアライゼーション](/help/use-cases/data-views/bi-extension/visualizations.md)
          + [注意事項](/help/use-cases/data-views/bi-extension/caveats.md)
 
-   + 派生フィールド {#derived-fields}
-      + [LLM および AI 生成トラフィックのレポート](/help/use-cases/ai-traffic.md)
-      + [目標に関するレポート](../use-cases/goals-using-derived-fields.md)
+      + 派生フィールド {#derived-fields}
+         + [派生フィールドガイドライン](/help/use-cases/data-views/derived-fields/guidelines.md)
+         + [LLM および AI 生成トラフィックのレポート](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+         + [目標に関するレポート](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
    + 製品分析 {#product-analysis}
       + [製品分析](/help/use-cases/product-analysis.md)
    + ステッチ {#stitching}
