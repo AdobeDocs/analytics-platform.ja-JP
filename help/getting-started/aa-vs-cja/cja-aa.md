@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3294e1516f9478348743d0f1e9761b8b3497b1d2
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2708'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 100%
 | **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=jp) のコンテキスト内でインサイトを共有し、質問できます。これにより、データに関する議論を効率化して、議論の対象となっているデータのコンテキスト内に会話を維持できます。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
-| **Data Insights エージェント** | Customer Journey Analytics の AI アシスタントの一部である [Data Insights エージェント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en)は、生成 AI 会話エージェントです。 データビューのコンポーネントと実際のデータを使用して、関連するビジュアライゼーションを Analysis Workspace で構築することにより、データ中心の質問にすばやく効率的に回答します。 |
+| **Data Insights Agent** | Customer Journey Analytics の AI アシスタントの一部である [Data Insights Agent](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en) は、生成 AI 会話エージェントです。 データビューのコンポーネントと実際のデータを使用して、関連するビジュアライゼーションを Analysis Workspace で構築することにより、データ中心の質問にすばやく効率的に回答します。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数のビルトインの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
 | **派生フィールド** | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、レポート時にデータを変換できます。データは、その場で結合、修正、作成し、これらの変換は、すべてのレポートに対して遡って適用できます。 |
 | **セキュリティとプライバシーに関するオプションの機能強化** - HIPAA 対応 | Customer Journey Analytics は HIPAA に対応しており、規制準拠に関する[追加のセキュリティオプション](/help/privacy/cmk.md)を提供します。Adobe Analytics は HIPAA に対応していません。 |
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 | 機能 | メモ |
 | --- | --- |
-| **Advertising Cloud** | [Customer Journey Analytics で使用する AMO ID と EF ID の履歴データを収集](https://experienceleague.adobe.com/ja/docs/advertising/integrations/analytics/planning/rvars-to-evars)できます。 |
+| **広告** | [Customer Journey Analytics で使用する AMO ID と EF ID の履歴データを収集](https://experienceleague.adobe.com/ja/docs/advertising/integrations/analytics/planning/rvars-to-evars)できます。 |
 | **アラート** | [Customer Journey Analytics でアラートを使用](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 <p>ただし、Customer Journey Analytics におけるデータ収集のタイミングにより、1 時間ごとのアラートは使用できません。Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。</p> |
 | **Analytics for Target（A4T）** | [Customer Journey Analytics と Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)では、組織の最適化プログラムに適した強力な分析および時間節約ツールを利用できます。 |
 | **オーディエンスの公開** | アドビの Customer Data Platform または Journey Optimizer 製品のライセンスを持つ場合にサポートされます。[オーディエンス公開](/help/components/audiences/audiences-overview.md)は、Experience Platform のリアルタイム顧客プロファイルにオーディエンスを送信します。 |
