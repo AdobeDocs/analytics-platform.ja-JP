@@ -7,8 +7,8 @@ role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 4%
+source-wordcount: '1788'
+ht-degree: 14%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 接続の一部として設定した1つ以上のイベントデータセットでステッチを有効にできます。 ライセンスを取得したCustomer Journey Analytics パッケージによって、ステッチに使用できるイベントデータセットの数が決まります。
 
-接続[を](/help/connections/create-connection.md#dataset-settings)作成する場合、または[接続を編集する場合](/help/connections/create-connection.md)は、イベントデータセットの[&#x200B; データセット設定](/help/connections/manage-connections.md#edit-a-connection)の一部としてステッチを有効にします。
+接続[&#128279;](/help/connections/create-connection.md)を作成する場合、または[接続を編集する場合](/help/connections/manage-connections.md#edit-a-connection)は、イベントデータセットの[&#x200B; データセット設定](/help/connections/create-connection.md#dataset-settings)の一部としてステッチを有効にします。
 
 ## 前提条件
 
@@ -92,7 +92,7 @@ ht-degree: 4%
 >id="connection_changeto_identitygraph"
 >title="ID グラフへの変更"
 >abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認します。"
->additional-url="https://experienceleague.adobe.com/jp/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -101,30 +101,30 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
->title="指標をつなぎ合わせる"
+>title="ステッチ指標"
 >abstract="ステッチ指標は、過去7日間のイベントタイムスタンプを含むデータのサンプルセットを使用して計算されます。<br>このデータのサンプルセットは、通常、**[!UICONTROL Preview]** テーブルで使用されるサンプルデータとは異なります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
->title="人物ID カバレッジ"
->abstract="ステッチプロセス（ライブおよびリプレイ）中に識別に使用される、選択した人物IDのカバー範囲。<br/>最適なステッチ結果を得るには、各永続的IDのID グラフに（永続的ID、人物ID）関係を含める必要があります。"
+>title="ユーザー ID の適用範囲"
+>abstract="ステッチプロセス（ライブおよび再生）中に識別に使用される、選択されたユーザー ID の適用範囲。<br/>最適なステッチ結果を得るには、各永続 ID の ID グラフに（永続 ID、ユーザー ID）関係が存在する必要があります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
->title="人物ID カバレッジ"
->abstract="ステッチプロセス（ライブおよびリプレイ）中に識別に使用される、選択した人物IDのカバー範囲。<br/>最適なステッチ結果を得るには、永続ID （デバイス情報）ごとに少なくとも1つのイベントで人物ID （ユーザー情報）を送信する必要があります。"
+>title="ユーザー ID の適用範囲"
+>abstract="ステッチプロセス（ライブおよび再生）中に識別に使用される、選択されたユーザー ID の適用範囲。<br/>最適なステッチ結果を得るには、各永続 ID（デバイス情報）の 1 つ以上のイベントでユーザー ID（ユーザー情報）を送信する必要があります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
->title="永続的なID カバレッジ"
->abstract="この値は、個人ID値を検出できない場合に備えて、ステッチプロセス（ライブおよびリプレイ）中の識別に使用されます。 <br/>永続的なIDがなく、ユーザーIDのないイベントがデータから削除されます。 最適なステッチ結果を得るには、すべてのイベントに永続的なIDが存在する必要があります。"
+>title="永続 ID の適用範囲"
+>abstract="この値は、個人ID値を検出できない場合に備えて、ステッチプロセス（ライブおよびリプレイ）中の識別に使用されます。 <br/>永続的なIDがなく、ユーザーIDのないイベントがデータから削除されます。 最適なステッチ結果を得るには、すべてのイベントに永続 ID が存在する必要があります。"
 
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
->title="不正 ID"
->abstract="不正なIDは、レポートデータに深刻な影響を与えるID値です。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/badids" text="不正 ID"
+>title="不正な ID"
+>abstract="不正な ID は、レポートデータに深刻な影響を与える ID 値です。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/badids" text="不正な ID"
 
 
 ### データセット設定
@@ -175,7 +175,7 @@ ht-degree: 4%
 
 ![機能を有効にする際のID ステッチ オプション &#x200B;](assets/identity-stitching-ui-preview.png)
 
-#### 指標をつなぎ合わせる
+#### ステッチ指標
 
 >[!AVAILABILITY]
 >
@@ -190,11 +190,11 @@ ht-degree: 4%
 
   個人IDのカバレッジはパーセントで表示され、安定した開発または実稼動設定で推奨されるものと比較されます。 このカバレッジ値が高いほど、選択した人物IDでより良いステッチ結果が得られます。
 
-* **[!UICONTROL 永続的ID カバレッジ]**：この値は、人物ID値を検出できない場合に、ステッチ プロセス（ライブおよびリプレイ）中に識別するために使用されます。 永続的なIDとユーザーIDがないイベントは、データから削除されます。 最適なステッチ結果を得るには、すべてのイベントに永続的なIDが存在する必要があります。
+* **[!UICONTROL 永続的ID カバレッジ]**：この値は、人物ID値を検出できない場合に、ステッチ プロセス（ライブおよびリプレイ）中に識別するために使用されます。 永続 ID もユーザー ID も持たないイベントは、データからドロップされます。 最適なステッチ結果を得るには、すべてのイベントに永続 ID が存在する必要があります。
 
   永続的なID カバレッジは、パーセントで表示され、安定した開発または実稼動設定で推奨される最小値と比較されます。
 
-#### 不正 ID
+#### 不正な ID
 
 >[!AVAILABILITY]
 >
