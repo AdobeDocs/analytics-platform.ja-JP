@@ -3,10 +3,10 @@ title: データフィードの作成
 description: データフィードの作成方法と、アドビに提供するファイル情報について説明します。
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -51,6 +51,15 @@ ht-degree: 21%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="ルックバック日付範囲"
+>abstract="データフィード配信を処理する際にCustomer Journey Analyticsがどの程度戻って表示されるかを制御します。<br/>この設定では、頻度ウィンドウ （時間または日）は変更されません。 ただし、ルックバック日付範囲は、配信されるデータに影響を与える可能性があります。 セグメントの選定、セッションの計算、ディメンションの永続性はすべて、ルックバック日付範囲の影響を受けます。"
+
+<!-- markdownlint-enable MD034 -->
+
 <!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
 
 1. Adobe ID の資格情報を使用して [experiencecloud.adobe.com](https://experiencecloud.adobe.com) にログインします。
@@ -63,7 +72,7 @@ ht-degree: 21%
 
    ページに次のタブが表示されます：[!UICONTROL **詳細**]、[!UICONTROL **データ構造**]、[!UICONTROL **配信**]。
 
-   ![新しいデータフィードのページ &#x200B;](assets/data-feed-new.png)
+   ![新しいデータフィードのページ ](assets/data-feed-new.png)
 
 1. 「[!UICONTROL **詳細**]」セクションで、次のフィールドに入力します。
 
@@ -101,7 +110,7 @@ ht-degree: 21%
 
 1. （オプション）現在作成しているデータフィードに基づく列テンプレートを作成するには、**[!UICONTROL テンプレートとして保存]**&#x200B;を選択し、テンプレートの名前を指定してから、**[!UICONTROL 保存]**&#x200B;を選択します。 このオプションは、同じ列を含む追加のデータフィードを作成する場合に便利です。
 
-   ![&#x200B; データフィードの作成中に列テンプレートを作成](assets/data-feed-template-create2.png)
+   ![ データフィードの作成中に列テンプレートを作成](assets/data-feed-template-create2.png)
 
 1. （オプション）含まれる列のリストを.csv形式でダウンロードするには、**[!UICONTROL 列をダウンロード]**&#x200B;を選択します。 このオプションは、列数が多いデータフィードに便利です。
 
@@ -123,18 +132,18 @@ ht-degree: 21%
    >レポートの宛先を設定する際には、次の点を考慮してください。
    >
    ><!--* Adobe recommends using a cloud account for your report destination. [Legacy FTP and SFTP accounts](/help/components/locations/configure-import-accounts.md) are available, but are not recommended.-->
-   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[&#x200B; コンポーネント/書き出し/場所アカウント &#x200B;](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
+   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[ コンポーネント/書き出し/場所アカウント ](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
    >
    >* Cloud アカウントは、Customer Journey Analytics ユーザーアカウントに関連付けられています。 他のユーザーは、組織内のすべてのユーザーが利用できるようにしない限り、設定したクラウドアカウントを使用または表示できません。
    >
-   >* 場所マネージャーから作成した場所は、[&#x200B; コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
+   >* 場所マネージャーから作成した場所は、[ コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
 
    以下のフィールドに入力します。
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成します：** 「**[!UICONTROL アカウント]**」フィールドの下にある「**[!UICONTROL 新しい]**&#x200B;を追加」を選択します。 アカウントの設定方法について詳しくは、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
-   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：**&#x200B;選択&#x200B;**[!UICONTROL 場所]** フィールドの下に&#x200B;**[!UICONTROL 新しい]**&#x200B;を追加します。 場所の設定方法について詳しくは、[&#x200B; クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
+   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成します：** 「**[!UICONTROL アカウント]**」フィールドの下にある「**[!UICONTROL 新しい]**&#x200B;を追加」を選択します。 アカウントの設定方法について詳しくは、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
+   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：**&#x200B;選択&#x200B;**[!UICONTROL 場所]** フィールドの下に&#x200B;**[!UICONTROL 新しい]**&#x200B;を追加します。 場所の設定方法について詳しくは、[ クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
    | [!UICONTROL **完了時に通知**] | データフィードが正常に送信されるか、送信に失敗した後に通知を配信する1つ以上のメールアドレスを指定します。 複数のメールアドレスはコンマで区切る必要があります。 |
    | [!UICONTROL **マニフェストを有効にする**] | 各データフィード配信にマニフェストファイルを含めるかどうかを選択します。 <p>次のオプションから選択できます。</p><ul><li>**[!UICONTROL マニフェストファイル]**: データフィードに含まれる各ファイルの情報が含まれます。</li><li>**[!UICONTROL ファイルを完了（レガシー）]**: データフィードが正常に完了したことを示します。 その他の情報は含まれていません。 このオプションは、このオプションを再処理する必要がある既存のフィードに適しています。 単一のパッケージでデータフィードデータを送信する場合にのみ使用できます。 </li><li>**[!UICONTROL なし]**: ファイルが含まれていません</li></ul> |
 
