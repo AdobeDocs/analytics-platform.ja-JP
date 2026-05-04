@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8fe31fe0603c2b17fee930011cce915df3c76200
+source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 94%
+source-wordcount: '1427'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
    + {hide-from-toc}[&#x200B; プレリリースノート &#x200B;](../release-notes/pre-release-notes.md)
-   + [2026年リリース](../release-notes/2026.md)
+   + [2026 リリース](../release-notes/2026.md)
    + [2025年リリース](../release-notes/2025.md)
    + [2024年リリース](../release-notes/2024.md)
    + [2023年リリース](../release-notes/2023.md)
@@ -406,10 +406,11 @@ ht-degree: 94%
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
       + データフィード {#cja-data-feeds}
-         + {hide-from-toc}[データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[&#x200B; データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
          + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -545,7 +546,7 @@ ht-degree: 94%
 
 + テクニカルノート {#technotes}
    + [アクセス制御](../technotes/access-control.md)
-   + [不正 ID](/help/technotes/badids.md)
+   + [不正な ID](/help/technotes/badids.md)
    + [ブラウザーと言語](/help/technotes/browser-language.md)
    + [データセンター](../technotes/data-centers.md)
    + [削除の影響](../technotes/deletion.md)
