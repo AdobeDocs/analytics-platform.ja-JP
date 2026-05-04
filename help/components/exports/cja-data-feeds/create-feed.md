@@ -3,10 +3,10 @@ title: データフィードの作成
 description: データフィードの作成方法と、アドビに提供するファイル情報について説明します。
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -48,6 +48,15 @@ ht-degree: 21%
 >id="aa_datafeed_notify"
 >title="完了時に通知"
 >abstract="データフィードの送信後に通知を配信するメールアドレスを 1 つ以上指定します。 複数のメールアドレスはコンマで区切る必要があります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="ルックバック日付範囲"
+>abstract="データフィード配信を処理する際にCustomer Journey Analyticsがどの程度戻って表示されるかを制御します。<br/>この設定では、頻度ウィンドウ （時間または日）は変更されません。 ただし、ルックバック日付範囲は、配信されるデータに影響を与える可能性があります。 セグメントの選定、セッションの計算、ディメンションの永続性はすべて、ルックバック日付範囲の影響を受けます。"
 
 <!-- markdownlint-enable MD034 -->
 
