@@ -15,7 +15,7 @@ ht-degree: 92%
 
 + リリースノート {#releases}
    + [最新リリース](../release-notes/latest.md)
-   + {hide-from-toc}[ プレリリースノート ](../release-notes/pre-release-notes.md)
+   + {hide-from-toc}[&#x200B; プレリリースノート &#x200B;](../release-notes/pre-release-notes.md)
    + [2026 リリース](../release-notes/2026.md)
    + [2025年リリース](../release-notes/2025.md)
    + [2024年リリース](../release-notes/2024.md)
@@ -44,7 +44,7 @@ ht-degree: 92%
 + アップグレードと比較 {#compare-aa-cja}
    + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
       + {hide-from-toc}[今すぐはじめる](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + {hide-from-toc}[ アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + {hide-from-toc}[&#x200B; アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + {hide-from-toc}[Platformにデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + {hide-from-toc}[履歴データを保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
@@ -407,11 +407,11 @@ ht-degree: 92%
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
       + データフィード {#cja-data-feeds}
-         + {hide-from-toc}[ データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[&#x200B; データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-         + {hide-from-toc}[ マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-         + {hide-from-toc}[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
+         + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -535,7 +535,7 @@ ht-degree: 92%
          + [セッション再生を結合](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [ヒートマップを使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Source コネクタ ](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Source コネクタ &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
