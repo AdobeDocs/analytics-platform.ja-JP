@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
+source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 93%
+source-wordcount: '1426'
+ht-degree: 92%
 
 ---
 
@@ -124,7 +124,8 @@ ht-degree: 93%
       + [データウェアハウスネイティブソリューション](/help/data-mirror/datawarehouse.md)
       + [Experience Platform](/help/data-mirror/aep.md)
       + [Customer Journey Analytics](/help/data-mirror/cja.md)
-   + [データミラークイックスタートガイド](/help/data-mirror/relational.md)
+   + [クイックスタートガイド](/help/data-mirror/relational.md)
+   + {hide-from-toc}[考慮事項](/help/data-mirror/considerations.md)
 
 + 接続 {#cja-connections}
    + [接続の概要](../connections/overview.md)
