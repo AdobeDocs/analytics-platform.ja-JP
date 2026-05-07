@@ -119,7 +119,7 @@ Content Analyticsは、次の方法でweb チャネルのIDを処理します。
 * スキーマはシステム所有なので、フィールドベースのステッチはサポートされていません。 したがって、フィールドベースのステッチをサポートするために、スキーマに別のフィールドを追加することはできません。
 
 
-Content Analytics ID データとWeb SDK データ ID データがフィールドレベルで正しく結合されていることを確認するには、イベント send[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} コールバックの前にWeb SDK を変更します。
+Content Analytics ID データとWeb SDK データ ID データがフィールドレベルで正しく結合されていることを確認するには、イベント send[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} コールバックの前にWeb SDK を変更します。
 
 1. Adobe Experience Platform Web SDK 拡張機能と Adobe コンテンツ分析拡張機能を含む&#x200B;**[!UICONTROL タグ]**&#x200B;プロパティに移動します。
 1. ![プラグ](/help/assets/icons/Plug.svg) **[!UICONTROL 拡張機能]**&#x200B;を選択します。
