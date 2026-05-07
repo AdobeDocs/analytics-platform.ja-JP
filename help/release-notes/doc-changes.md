@@ -4,12 +4,13 @@ description: 2019年12月以降の Customer Journey Analytics ドキュメント
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5c38633e3416f92c04039a3a1da6f1e1ee561608
+source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
 workflow-type: tm+mt
 source-wordcount: '6869'
 ht-degree: 95%
 
 ---
+
 
 # Customer Journey Analytics - ドキュメントのアップデート
 
