@@ -1,16 +1,17 @@
 ---
-title: Content Analytics 手動設定
-description: Content Analytics の手動設定方法
+title: Content Analyticsの手動設定
+description: Content Analyticsを手動で設定する方法について説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 64%
+source-wordcount: '720'
+ht-degree: 62%
 
 ---
+
 
 # Content Analytics 手動設定
 
@@ -27,7 +28,7 @@ ht-degree: 64%
 1. 設定したチャネルに基づいて、次の操作を行います。
 
    * **web**&#x200B;の場合：[Content Analyticsに従って、開発環境、ステージング環境または公開環境のページの`<head>`要素に埋め込まれたコードを](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation) インストールします。
-   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
+   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
 
 ## データ収集を停止
 
@@ -107,6 +108,6 @@ window.adobe.getContentExperienceVersion = () => {
 
 >[!MORELIKETHIS]
 >
->[&#x200B; ガイド付き設定](guided.md)
+>[ ガイド付き設定](guided.md)
 >[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
