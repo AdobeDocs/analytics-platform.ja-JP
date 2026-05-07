@@ -27,7 +27,7 @@ ht-degree: 64%
 1. 設定したチャネルに基づいて、次の操作を行います。
 
    * **web**&#x200B;の場合：[Content Analyticsに従って、開発環境、ステージング環境または公開環境のページの`<head>`要素に埋め込まれたコードを](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation) インストールします。
-   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
+   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
 
 ## データ収集を停止
 
@@ -107,6 +107,6 @@ window.adobe.getContentExperienceVersion = () => {
 
 >[!MORELIKETHIS]
 >
->[ ガイド付き設定](guided.md)
+>[&#x200B; ガイド付き設定](guided.md)
 >[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >
