@@ -5,29 +5,29 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '896'
+ht-degree: 56%
 
 ---
 
 # Content Analytics の概要
 
-Content Analytics は、ビジネスが定義した主要業績評価指標に影響を与えるコンテンツをマーケターが理解するのに役立ちます。Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。例えば、特定のトーン、特定のカラーパレット、特定のテーマに対するお客様の反応は良いですか？この情報と、特別に設計されたレポートワークフローおよびテンプレートを組み合わせることで、Customer Journey Analytics でさらに優れた分析を実行し、カスタマージャーニーデータに関するより深いインサイトを得ることができます。
+Content Analytics は、ビジネスが定義した主要業績評価指標に影響を与えるコンテンツをマーケターが理解するのに役立ちます。 Content Analyticsは、行動データに加えて、コンテンツがどのように消費され、コンテンツがどのように影響を与えるかについてのデータを収集します。 例えば、特定のトーン、特定のカラーパレット、特定のテーマに対するお客様の反応は良いですか？ この情報と、特別に設計されたレポートワークフローおよびテンプレートを組み合わせることで、Customer Journey Analytics でさらに優れた分析を実行し、カスタマージャーニーデータに関するより深いインサイトを得ることができます。
 
-Content Analytics では、AI と機械学習ベースの&#x200B;**機能サービス**&#x200B;を使用して、コンテンツをコンポーネントと属性に分類します。すべてのコンテンツに構造化されたメタデータプロファイルを作成することで、コンテンツと、ビジネス結果を推進するそのコンテンツの属性を分析できます。
+Content Analytics では、AI と機械学習ベースの&#x200B;**機能サービス**&#x200B;を使用して、コンテンツをコンポーネントと属性に分類します。 あらゆるコンテンツに対して構造化されたメタデータプロファイルを作成することで、そのコンテンツのどのコンテンツや属性がビジネス成果を促進しているのかを分析できます。
 
-この構造化メタデータプロファイルの作成に加えて、Content Analytics では、単一の識別子を使用してアセットとエクスペリエンスを識別する **ID サービス**&#x200B;を提供します。ID サービスは、まったく同じアセットが複数の場所に表示される場合に認識できます。 その場合、アセットの 2 つのインスタンスは同じアセットとして扱われ、コンテンツの使用状況と消費の全体像を把握できます。
+この構造化メタデータプロファイルの作成に加えて、Content Analytics では、単一の識別子を使用してアセットとエクスペリエンスを識別する **ID サービス**&#x200B;を提供します。 ID サービスは、まったく同じアセットが複数の場所に表示される場合に認識できます。 その場合、アセットの 2 つのインスタンスは同じアセットとして扱われ、コンテンツの使用状況と消費の全体像を把握できます。
 
 ## 値
 
 Content Analytics では、次のような増加レベルで価値を提供します。
 
-1. コンテンツ&#x200B;**使用状況**：Content Analytics を使用すると、インプレッションを受信しているアセットと、インプレッションを受信しているアセットの場所に関するインサイトを得ることができます。 これらのインサイトは、web プロパティでアセットが十分に使用されていないアセットや、過剰に使用されているアセットを確認するのに役立ちます。
-1. コンテンツ&#x200B;**エンゲージメント**：Content Analytics では、特定の属性を持つアセットの平均クリックスルー率などのエンゲージメントインサイトを提供できます。これらのインサイトは、特定のタイプのエクスペリエンスが引き続き効果的かどうかを判断するのに役立ちます。
-1. コンテンツ&#x200B;**ジャーニー**：さらに、Experience Platform で使用可能な他のすべてのデータと組み合わせると、コンテンツジャーニーに関する追加のインサイトを得ることができます。 例えば、特定のコンテンツがエンゲージメントに加えてコンバージョンにつながるかどうかなどです。次に、その知識があれば、コンテンツのタイプに関する ROI を判断できます。
-1. コンテンツ&#x200B;**パーソナライゼーション**：最終的に、Content Analytics により、インサイトに基づいて行動し、これらのインサイトを使用してコンテンツに費やす費用を決定できます。例えば、特定のタイプのコンテンツを特定のオーディエンスに送信する必要があるでしょうか？高度なパーソナライゼーションの機会を提供してくれるコンテンツは何ですか？
+1. コンテンツ&#x200B;**使用状況**：Content Analytics を使用すると、インプレッションを受信しているアセットと、インプレッションを受信しているアセットの場所に関するインサイトを得ることができます。 こうしたインサイトは、webやモバイルのプロパティでアセットが過小使用されているか、過剰に使用されているかを確認するのに役立ちます。
+1. コンテンツ&#x200B;**エンゲージメント**：Content Analytics では、特定の属性を持つアセットの平均クリックスルー率などのエンゲージメントインサイトを提供できます。 これらのインサイトは、特定のタイプのエクスペリエンスが引き続き効果的かどうかを判断するのに役立ちます。
+1. コンテンツジャーニー：さらに、Adobe Experience Platformに保管されているあらゆるデータと組み合わせることで、エンゲージメントだけでなく、特定のコンテンツがコンバージョンにつながるかどうかなど、コンテンツジャーニーに関するさらなるインサイトを獲得できます。 たとえば、特定のコンテンツがエンゲージメントだけでなくコンバージョンにつながるかどうかを確認します。 次に、その知識があれば、コンテンツのタイプに関する ROI を判断できます。
+1. コンテンツ&#x200B;**パーソナライゼーション**：最終的に、Content Analytics により、インサイトに基づいて行動し、これらのインサイトを使用してコンテンツに費やす費用を決定できます。 例えば、特定のタイプのコンテンツを特定のオーディエンスに送信する必要があるでしょうか？ 高度なパーソナライゼーションの機会を提供してくれるコンテンツは何ですか？
 
 ## 用語
 
@@ -35,32 +35,32 @@ Content Analytics では、次の主要な用語を使用します。
 
 ![アセットとエクスペリエンス](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **エクスペリエンス**：エクスペリエンスとは、web ページを最初に訪問したユーザーが使用した URL を使用して再現可能な、web ページ上のすべてのテキストです。各エクスペリエンスには、一意の ID が付与されます。ページを変更すると、ページの HTML が変更され、新しいエクスペリエンスが得られます。
-* **アセット**：アセットとは、画像などの個別の一意のコンテンツです。各アセットには、一意の ID と知覚的 ID も割り当てられます。知覚的 ID は、視覚的に同一のアセットと共有される識別子です。知覚的 ID は、アセット URL が異なり、そのためアセット ID も異なるが知覚的には同一である可能性のあるアセットの重複を排除するのに役立ちます。
-* **属性**：属性とは、エクスペリエンスまたはアセットに関連付けられた説明的なメタデータ要素です。属性の例としては、フォトのスタイル、読みやすさ、説得戦略、オブジェクトカラー、背景色などがあります。
+* **エクスペリエンス**：エクスペリエンスは、最初のユーザーがweb ページにアクセスするために使用したURLを使用して再現可能なweb ページ上のすべてのテキストです。 モバイルアプリ内のアクションに対するテキスト、アセット、クリックの組み合わせから実行できます。 各エクスペリエンスには、一意の ID が付与されます。
+* **アセット**：アセットとは、画像などの個別の一意のコンテンツです。 各アセットには、一意の ID と知覚的 ID も割り当てられます。 知覚的 ID は、視覚的に同一のアセットと共有される識別子です。 知覚的IDは、異なるアセット URLを持つ可能性があり、したがって異なるアセット IDを持つアセットの重複を排除するのに役立ちますが、知覚的には同じです。
+* **属性**：属性とは、エクスペリエンスまたはアセットに関連付けられた説明的なメタデータ要素です。 属性の例としては、フォトのスタイル、読みやすさ、説得戦略、オブジェクトカラー、背景色などがあります。
 
 ## 仕組み
 
-Content Analytics は、Experience Platform のイベントデータセットの web 画像ビューデータを使用して[コンテンツイベントデータを収集](config/datacollection.md)します。これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、Server API）を使用してデータを収集する必要があります。行動データは、Web SDK または Analytics ソースコネクタを使用して収集できます。
+Content Analyticsは、Experience Platform イベントデータセットのwebおよびモバイル画像ビューデータを使用して、[&#x200B; コンテンツイベントデータを収集](config/datacollection.md)します。 これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、モバイルSDK、サーバーAPI）を使用してデータを収集する必要があります。 行動データは、Web SDK、モバイルSDK、Analytics Sourceコネクタを使用して収集できます。
 
-![Content Analytics - 仕組み](assets/aca-overview.gif)
+![Content Analytics - 仕組み](assets/aca-overview-new.gif)
 
-1. ユーザーが [Content Analytics 用に設定](config/configuration.md)されたサイトにアクセスすると、Experience Platform Web SDK ではコンテンツのインプレッションとインタラクションを記録します。
-1. ID および機能サービスは、これらのインタラクションを処理します。このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。また、機能サービスでは、AI／ML サービスを適用して、エクスペリエンスとアセットのメタデータおよび属性を検出します。
+1. Content Analytics[&#128279;](config/configuration.md)用に設定された サイトまたはアプリにユーザーがアクセスすると、Experience Platform Webまたはモバイル SDKは、インプレッションとコンテンツとのインタラクションを記録します。
+1. IDおよび特徴化サービスは、これらのやり取りを処理します。 このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。 取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、特徴量化サービスは、AI/マシンラーニングサービスを適用して、エクスペリエンスとアセットのメタデータと属性を発見します。
 1. これらのサービスの結果（[コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platform 内の関連する特定のコンテンツ分析データセットを更新するのに使用されます。
-1. コンテンツ分析データは、行動データや他のルックアップデータと共に、Customer Journey Analytics 設定（[接続](/help/connections/overview.md)、[データビュー](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）で使用できます。この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤を提供します。<br/>[Content Analytics テンプレート](/help/content-analytics/report/report.md#template)を使用すると、Content Analytics レポートと分析をすぐに開始できます。
+1. Customer Journey Analyticsの設定（[Connection](/help/connections/overview.md)、[Data view](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）では、Content Analytics データを行動データやその他のルックアップデータと組み合わせて使用できます。 この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤となります。 <br/>Content Analytics テンプレート [を使用して、Content Analytics レポートと分析をすばやく開始できます](/help/content-analytics/report/report.md#template)。
 
 
 >[!NOTE]
 >
->Content Analytics では AI／ML サービスを活用するので、不正確な結果や誤解を招く結果が生成される場合があります。その結果、AI／ML で生成された出力を確認および検証するには、自身の判断で行ってください。
+>Content Analytics では AI／ML サービスを活用するので、不正確な結果や誤解を招く結果が生成される場合があります。 その結果、AI／ML で生成された出力を確認および検証するには、自身の判断で行ってください。
 >
 >メインインターフェイスの ![InfoOutline](/help/assets/icons/InfoOutline.svg) から使用可能な「**[!UICONTROL フィードバック]**」タブを使用して、AI／ML で生成された出力に関するフィードバックを提供できます。
 >
 
 >[!NOTE]
 >
->プライバシーとセキュリティシールドアドオンのライセンスを取得している場合、Content Analytics の対象となるエクスペリエンスとアセット（から生成されたすべてのデータ）は、DULE ラベル付けまたは顧客管理キーの対象とはなりません。また、Content Analytics は HIPAA 対応のサービスではありません。
+>Privacy and Security Shield アドオンのライセンスを取得している場合、DULE ラベルまたはCustomer Managed Keysは、Content Analyticsの対象となるエクスペリエンスやアセットをカバーしていないことに注意してください。 また、Content Analytics は HIPAA 対応のサービスではありません。
 >
 
 >[!IMPORTANT]
@@ -73,6 +73,6 @@ Content Analytics は、Experience Platform のイベントデータセットの
 >
 >[Content Analytics レポート](report/report.md)
 >[Content Analytics の設定](config/configuration.md)
->[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja#M454)
+>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=ja)
 >
 
