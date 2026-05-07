@@ -1,16 +1,17 @@
 ---
 title: Content Analytics の設定
-description: Content Analytics の設定方法の概要
+description: Webとモバイルチャネル用にContent Analyticsを設定する方法について説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 76%
 
 ---
+
 
 # Content Analytics の設定
 

@@ -1,16 +1,17 @@
 ---
-title: Content Analytics タグに依存しない設定
-description: Experience Platform Data Collection Tagsを使用せずにContent Analyticsを設定する方法を説明します
+title: Content Analytics Tags Agnositc Configuration
+description: Experience Platform Data Collection Tagsを使用せずにContent Analyticsを設定する方法を説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: d324e2b03d47ba1cf8e5abbadc817b98b27ea68e
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 5%
 
 ---
+
 
 # Content Analytics タグに依存しない設定
 

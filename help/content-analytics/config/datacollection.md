@@ -1,16 +1,17 @@
 ---
-title: Content Analytics データ収集
-description: Content Analytics でデータを収集する方法の概要
+title: Content Analytics Data Collection
+description: Content Analyticsがどのようにデータを収集するかをご確認ください。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 53%
+source-wordcount: '1093'
+ht-degree: 52%
 
 ---
+
 
 # Content Analytics データ収集
 
