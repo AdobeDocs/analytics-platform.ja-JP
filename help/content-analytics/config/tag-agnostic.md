@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
+source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '467'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 5%
 # Content Analytics タグに依存しない設定
 
 Adobe Content Analytics JavaScript ライブラリを使用すると、Experience Platform Edge Networkを介してAdobe Experience Platformにコンテンツデータを送信することで、web サイト上のコンテンツ関連イベントを追跡できます。 このライブラリは、Adobe Experience Platform タグ（Launch）を使用せずにContent Analyticsを実装する場合に使用します。
+
+>[!NOTE]
+>
+>この記事は、web チャネル用のContent Analyticsに適用されます。
+
 
 >[!PREREQUISITES]
 >
@@ -45,7 +50,7 @@ Adobe Content Analytics JavaScript ライブラリを使用すると、Experienc
 
 CDNから直接ライブラリを読み込みます。
 
-1. [Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
+1. [Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -67,7 +72,7 @@ CDNから直接ライブラリを読み込みます。
    ```
 
    場所
-   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
+   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
    * `content-analytics/1.x.x`は、Content Analytics SDK ライブラリを使用するバージョンを指します。
 
 2. スタンドアロン ビルドでは、`window.contentAnalytics`が初期化関数として公開されます。
@@ -152,5 +157,5 @@ initializeContentLibrary({
 
 >[!NOTE]
 >
->Content Analytics設定が[&#x200B; ガイド付き設定](/help/content-analytics/config/guided.md) インターフェイスで設定された後、設定に固有のJavaScript設定は、その設定ビューで使用できます。
+>Content Analytics設定が[ ガイド付き設定](/help/content-analytics/config/guided.md) インターフェイスで設定された後、設定に固有のJavaScript設定は、その設定ビューで使用できます。
 
