@@ -24,7 +24,7 @@ ht-degree: 76%
 
 ![Content Analytics の設定](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. Content Analytics[ ガイド付き設定](guided.md)ウィザードを使用すると、Content Analytics の設定の前提条件を設定するために必要なすべての手順を説明します。 いつでも設定を保存し、後で戻ることができます。
+1. Content Analytics[&#x200B; ガイド付き設定](guided.md)ウィザードを使用すると、Content Analytics の設定の前提条件を設定するために必要なすべての手順を説明します。 いつでも設定を保存し、後で戻ることができます。
 1. 設定値に慣れたら、設定を実装できます。 この実装では、ウィザードで設定した内容に基づいて、必要なすべてのアーティファクトが作成されます。
 1. [手動で公開](manual.md)した場合にのみ、「Tags」プロパティがContent Analytics設定に効果的にデプロイされ、データ収集が開始されます。
 

@@ -42,11 +42,11 @@ Content Analytics では、次の主要な用語を使用します。
 
 ## 仕組み
 
-Content Analyticsは、Experience Platform イベントデータセットのwebおよびモバイル画像ビューデータを使用して、[ コンテンツイベントデータを収集](config/datacollection.md)します。 これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、モバイルSDK、サーバーAPI）を使用してデータを収集する必要があります。 行動データは、Web SDK、モバイルSDK、Analytics Sourceコネクタを使用して収集できます。
+Content Analyticsは、Experience Platform イベントデータセットのwebおよびモバイル画像ビューデータを使用して、[&#x200B; コンテンツイベントデータを収集](config/datacollection.md)します。 これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、モバイルSDK、サーバーAPI）を使用してデータを収集する必要があります。 行動データは、Web SDK、モバイルSDK、Analytics Sourceコネクタを使用して収集できます。
 
 ![Content Analytics - 仕組み](assets/aca-overview-new.gif)
 
-1. Content Analytics](config/configuration.md)用に設定された[ サイトまたはアプリにユーザーがアクセスすると、Experience Platform Webまたはモバイル SDKは、インプレッションとコンテンツとのインタラクションを記録します。
+1. Content Analytics[&#128279;](config/configuration.md)用に設定された サイトまたはアプリにユーザーがアクセスすると、Experience Platform Webまたはモバイル SDKは、インプレッションとコンテンツとのインタラクションを記録します。
 1. IDおよび特徴化サービスは、これらのやり取りを処理します。 このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。 取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、特徴量化サービスは、AI/マシンラーニングサービスを適用して、エクスペリエンスとアセットのメタデータと属性を発見します。
 1. これらのサービスの結果（[コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platform 内の関連する特定のコンテンツ分析データセットを更新するのに使用されます。
 1. Customer Journey Analyticsの設定（[Connection](/help/connections/overview.md)、[Data view](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）では、Content Analytics データを行動データやその他のルックアップデータと組み合わせて使用できます。 この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤となります。 <br/>Content Analytics テンプレート [を使用して、Content Analytics レポートと分析をすばやく開始できます](/help/content-analytics/report/report.md#template)。

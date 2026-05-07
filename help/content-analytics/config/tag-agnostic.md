@@ -45,7 +45,7 @@ Adobe Content Analytics JavaScript ライブラリを使用すると、Experienc
 
 CDNから直接ライブラリを読み込みます。
 
-1. [Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
+1. [Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -67,7 +67,7 @@ CDNから直接ライブラリを読み込みます。
    ```
 
    場所
-   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
+   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
    * `content-analytics/1.x.x`は、Content Analytics SDK ライブラリを使用するバージョンを指します。
 
 2. スタンドアロン ビルドでは、`window.contentAnalytics`が初期化関数として公開されます。
@@ -152,5 +152,5 @@ initializeContentLibrary({
 
 >[!NOTE]
 >
->Content Analytics設定が[ ガイド付き設定](/help/content-analytics/config/guided.md) インターフェイスで設定された後、設定に固有のJavaScript設定は、その設定ビューで使用できます。
+>Content Analytics設定が[&#x200B; ガイド付き設定](/help/content-analytics/config/guided.md) インターフェイスで設定された後、設定に固有のJavaScript設定は、その設定ビューで使用できます。
 
