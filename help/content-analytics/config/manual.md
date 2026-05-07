@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
+source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 64%
 
 ---
 
@@ -22,60 +22,77 @@ ht-degree: 100%
 
 実装された Content Analytics 設定のデータ収集を開始するには：
 
-1. [公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}に従います。Content Analytics 設定を含むタグプロパティのライブラリを正常に公開します。
+1. [公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}に従います。 Content Analytics設定を含むタグプロパティのライブラリを正常に公開します。
 
-1. Content Analytics に従って、開発環境、ステージング環境または公開環境のページの `<head>` 要素にある埋め込みコードを[インストール](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation)します。
+1. 設定したチャネルに基づいて、次の操作を行います。
 
+   * **web**&#x200B;の場合：[Content Analyticsに従って、開発環境、ステージング環境または公開環境のページの`<head>`要素に埋め込まれたコードを](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation) インストールします。
+   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
 
 ## データ収集を停止
 
-実装された Content Analytics 設定のデータ収集を停止するには：
+設定したチャネルに基づいて、実装されたContent Analytics設定のデータ収集を停止するには、次の手順を実行します。
 
-1. コンテンツ分析に従って、開発環境、ステージング環境または本番環境のページの `<head>` 要素にある[埋め込みコード](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments)を削除します。
-1. Content Analytics 設定に関連付けられたタグプロパティを[削除](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)します。
+* **web**&#x200B;の場合：
 
+   1. コンテンツ分析に従って、開発環境、ステージング環境または本番環境のページの `<head>` 要素にある[埋め込みコード](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments)を削除します。
+   1. Content Analytics設定に関連付けられているweb Tags プロパティを削除します。
+
+* **mobile**&#x200B;の場合：
+
+   1. アプリから[Content Analytics拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)を削除します。
+   1. Content Analytics設定に関連付けられているモバイルタグのプロパティを削除します。
+
+[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}に従って、変更を適用します。
 
 
 ## データ収集を変更
 
-[ガイド付き設定ウィザード](guided.md)を使用して、実装済み設定に一部の小さな変更を行うことができます。例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
+[ガイド付き設定ウィザード](guided.md)を使用して、実装済み設定に一部の小さな変更を行うことができます。 例えば、データビューを変更したり、エクスペリエンスを有効または無効にしたりします。
 
-Content Analytics 設定に関連付けられたタグプロパティで [Adobe Content Analytics 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)を使用して、次のアーティファクトを変更します。
+
+### Web
+
+Content Analytics設定に関連付けられているTags プロパティで[Adobe Content Analytics web拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview)を使用して、次のアーティファクトを変更します。
 
 * [サンドボックスとデータストリーム](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
-  >Adobe Content Analytics 拡張機能で設定するサンドボックスとデータストリームが、以前のステージで[ガイド付き設定](guided.md)を使用して既に Content Analytics 用に設定されていることを確認します。この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/>また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定されている別の Content Analytics 設定の妨げとならないことも確認します。
+  >Adobe Content Analytics 拡張機能で設定するサンドボックスとデータストリームが、以前のステージで[ガイド付き設定](guided.md)を使用して既に Content Analytics 用に設定されていることを確認します。 この設定により、必要なすべてのアーティファクトが使用可能になります。<br/><br/>また、サンドボックスまたはデータストリームの更新が、同じサンドボックスまたはデータストリームを使用するように設定されている別の Content Analytics 設定の妨げとならないことも確認します。
   >
 
 * [エクスペリエンスのキャプチャと定義](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=ja#configure-experience-capture-and-definition)
 
   エクスペリエンスを有効または無効にし、正規表現とクエリパラメーターの組み合わせを編集して、web サイトでコンテンツをレンダリングする方法を決定できます。
 
-* [イベントのセグメント化](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [イベントセグメンテーション](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   正規表現を編集して、ページとアセットをどのようにセグメント化するかを変更できます。
 
 
-Adobe Content Analytics 拡張機能に変更を行った後、[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を使用して、行った変更に基づいてデータの収集を開始します。
+Adobe Content Analytics web拡張機能を変更した後、[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を使用してデータの収集を開始します。
 
 
+### モバイル
 
->[!MORELIKETHIS]
->
->[ガイド付き設定](guided.md)
->>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
->
+Content Analytics設定に関連付けられているTags プロパティで[Adobe Content Analytics モバイル拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)を使用して、さらに変更を加えます。
+
+Adobe Content Analytics web拡張機能を変更した後、[公開フロー](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を使用してデータの収集を開始します。
 
 
 ## バージョン管理
+
+>[!NOTE]
+>
+>このセクションは、web チャネルのContent Analyticsにのみ適用されます。
+
 
 Content Analytics エクスペリエンスを収集する場合は、新しいエクスペリエンス（web ページへの変更）が適切に収集されるように、バージョン管理を実装することを検討する必要があります。
 
 バージョン管理を実装するには、分析するエクスペリエンスと見なされるページにグローバル `adobe.getContentExperienceVersion` 関数を追加します。
 
-`adobe.getContentExperienceVersion` 関数は、バージョンを識別するために文字列を値として返す必要があります。値は、任意の値にすることができます。バージョンが[エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
+`adobe.getContentExperienceVersion` 関数は、バージョンを識別するために文字列を値として返す必要があります。値は、任意の値にすることができます。 バージョンが[エクスペリエンス ID URL](/help/content-analytics/report/components.md#experience-metadata) に追加されます。
 
 関数が存在しないか、関数から値が返されない場合は、値 `NoVersion` がデフォルトとして使用されます。
 
@@ -88,44 +105,8 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## ID
-
-コンテンツ分析では、次のように ID を処理します。
-
-* ECID は、コンテンツ分析スキーマの `identityMap` 部分に自動的に入力されます。
-* `identityMap` に他の ID 値が必要な場合は、Web SDK 拡張機能内の `onBeforeEventSend` コールバックでこれらの値を設定する必要があります。
-* スキーマはシステム所有なので、フィールドベースのステッチはサポートされていません。したがって、フィールドベースのステッチをサポートするために、スキーマに別のフィールドを追加することはできません。
-
-
-コンテンツ分析 ID データと Adobe Experience Platform Web SDK データの ID データがフィールドレベルで正しくステッチされるようにするには、web SDK の[イベント送信の前にオン](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}コールバックに変更を加える必要があります。
-
-1. Adobe Experience Platform Web SDK 拡張機能と Adobe コンテンツ分析拡張機能を含む&#x200B;**[!UICONTROL タグ]**&#x200B;プロパティに移動します。
-1. ![プラグ](/help/assets/icons/Plug.svg) **[!UICONTROL 拡張機能]**&#x200B;を選択します。
-1. **[!UICONTROL Adobe Experience Platform Web SDK]** 拡張機能を選択します。
-1. 「**[!UICONTROL 設定]**」を選択します。
-1. 「**[!UICONTROL SDK インスタンス]**」セクションで、「**[!UICONTROL データ収集]** - **[!UICONTROL 「イベント送信の前にオン」コールバック]**」までスクロールします。
-
-   ![「イベント送信の前にオン」コールバック](/help/content-analytics/assets/onbeforeeventsendcallback.png)
-
-1. 「**[!UICONTROL &lt;/> 「イベント送信の前にオン」コールバックコードを指定]**」を選択します。
-1. 次のコードを追加します。
-
-   ```javascript
-   window.adobeContentAnalytics?.forwardEvent(content);
-   
-   content.xdm.identityMap = _satellite.getVar('identityMap');
-   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
-      return true;
-   }
-   ```
-
-   ![「イベント送信の前にオン」コールバック](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
-
-1. 「**[!UICONTROL 保存]**」を選択してコードを保存します。
-1. 「**[!UICONTROL 保存]**」を選択して拡張機能を保存します。
-1. タグプロパティの更新を[公開](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)します。
-
-
-
-
-
+>[!MORELIKETHIS]
+>
+>[ ガイド付き設定](guided.md)
+>[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
+>
