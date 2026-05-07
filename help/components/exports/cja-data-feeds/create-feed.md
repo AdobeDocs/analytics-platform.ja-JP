@@ -3,10 +3,10 @@ title: データフィードの作成
 description: データフィードの作成方法と、アドビに提供するファイル情報について説明します。
 hide: true
 feature: Components
-source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
+source-git-commit: 54a7f59847b752a4e898b488a90520e8b31d3622
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 20%
+source-wordcount: '2439'
+ht-degree: 19%
 
 ---
 
@@ -27,16 +27,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_os_strings"
->title="オペレーティングシステムの文字列の置換"
->abstract="このオプションは、お客様データに埋め込まれた次の文字列シーケンスを検出し、スペースに置き換えることで、データ出力をクリーンアップします。<br/>Windows：CRLF、CR または TAB<br/>Mac および Linux：\n、\r または \t"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="aa_datafeed_export_file"
+>id="cja_datafeed_export_file"
 >title="マニフェスト"
 >abstract="各データフィード配信にマニフェストファイルを含めるかどうかを選択します。 マニフェストファイルには、データフィードに含まれる各ファイルの情報が含まれています。 データフィードデータを 1 つのパッケージで送信する際は、終了ファイルを含めることも選択できますが、マニフェストファイルをお勧めします。 "
 
@@ -45,7 +36,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_notify"
+>id="cja_datafeed_notify"
 >title="完了時に通知"
 >abstract="データフィードの送信後に通知を配信するメールアドレスを 1 つ以上指定します。 複数のメールアドレスはコンマで区切る必要があります。"
 
@@ -54,7 +45,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_lookback_date_range"
+>id="cja_datafeed_lookback_date_range"
 >title="ルックバック日付範囲"
 >abstract="データフィード配信を処理する際にCustomer Journey Analyticsがどの程度戻って表示されるかを制御します。<br/>この設定では、頻度ウィンドウ （時間または日）は変更されません。 ただし、ルックバック日付範囲は、配信されるデータに影響を与える可能性があります。 セグメントの選定、セッションの計算、ディメンションの永続性はすべて、ルックバック日付範囲の影響を受けます。"
 
