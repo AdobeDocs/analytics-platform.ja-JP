@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
+source-git-commit: 8c4bd397aa2863c7365778cb545ec42d9b0f4528
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1419'
 ht-degree: 47%
 
 ---
@@ -100,7 +100,11 @@ Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspac
 1. **[!UICONTROL テンプレートを設定]**&#x200B;ダイアログで、**[!UICONTROL コンバージョン指標を選択]**&#x200B;ダイアログから指標を選択します。 例えば、**[!UICONTROL アセット CTR]** を選択します。
 1. 「**[!UICONTROL 続行]**」を選択します。
 
-**[!UICONTROL Content Analytics の概要]**&#x200B;プロジェクトが [Analysis Workspace](/help/analysis-workspace/home.md) で開きます。 プロジェクトは4つの[&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md)で構成され、各パネルには[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)と[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意され、特定の質問に答えることができます。 **[!UICONTROL コンテンツチャネル]**&#x200B;の分類を使用して、興味のあるコンテンツチャネルのパネルを[分類](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)することができます：**[!UICONTROL web]**&#x200B;または&#x200B;**[!UICONTROL モバイル]**。
+**[!UICONTROL Content Analytics の概要]**&#x200B;プロジェクトが [Analysis Workspace](/help/analysis-workspace/home.md) で開きます。 プロジェクトは4つの[&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md)で構成され、各パネルには[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)と[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意され、特定の質問に答えることができます。
+
+**[!UICONTROL コンテンツチャネル]**&#x200B;の分類を使用して、興味のあるコンテンツチャネルのパネルを[分類](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)することができます：**[!UICONTROL web]**&#x200B;または&#x200B;**[!UICONTROL モバイル]**。
+
+![Analysis Workspaceのパネルでのコンテンツチャネルの分類](/help/content-analytics/assets/aca-content-channel-selector.png)
 
 4つのパネルは次のとおりです。
 
