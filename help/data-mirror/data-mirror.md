@@ -1,15 +1,15 @@
 ---
 title: Data Mirrorの概要
-description: Data Warehouse ネイティブソリューションとCustomer Journey Analyticsの間でデータを同期する方法を理解します。
+description: データウェアハウスネイティブソリューションとCustomer Journey Analytics間でデータを同期する方法について説明します
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 badgePremium: label="ベータ版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+source-git-commit: dc3aa31c280c1a8ee8a0187edeca9bd34a2c9e2e
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 2%
+source-wordcount: '447'
+ht-degree: 4%
 
 ---
 
@@ -17,32 +17,32 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Data Mirrorは、リレーショナルスキーマを使用して外部データベースからデータレイクに行レベルの変更を取り込めるExperience Platform機能です。 アップストリームの抽出、変換、読み込み（ETL）プロセスを必要とせずに、データの関係を保持し、一意性を確保し、バージョン管理をサポートします。
+Data Mirrorは、リレーショナルスキーマを使用して、外部データベースからデータレイクに行レベルの変更取り込みを可能にするExperience Platform機能です。 データ関係を維持し、一意性を確保し、ETL （上流抽出、変換、格納）プロセスを必要とせずにバージョン管理をサポートします。
 
-Experience Platform Data Mirrorを使用して、外部 Data Warehouse ネイティブソリューション（[!DNL Snowflake]、[!DNL Azure Databricks]、[!DNL Google BigQuery]）からの挿入、更新、削除（可変データ）をExperience Platformのデータと直接同期します。 Data Mirrorを使用すると、データをExperience Platformに取り込む際に、既存のデータベースモデル構造とデータ整合性を維持できます。
+Experience Platform Data Mirrorを使用すると、外部データウェアハウスネイティブソリューション（[!DNL Snowflake]、[!DNL Azure Databricks]、または[!DNL Google BigQuery]）からの挿入、更新、削除（可変データ）を、Experience Platformのデータと直接同期できます。 Data Mirrorは、データをExperience Platformに取り込む際に、既存のデータベースモデル構造とデータの整合性を維持するのに役立ちます。
 
-## 機能とメリット
+## 機能と利点
 
-Data Mirrorには、データベース同期に必要な次の機能が用意されています。
+Data Mirrorには、データベースの同期に必要な次の機能が用意されています。
 
-* **プライマリキーが適用されています。** データセット内の一意性を確保し、取り込み中にレコードが重複するのを防ぎます。
-* **行レベルの変更取り込み。** 正確な制御によるアップサートや削除を含む、きめ細かいデータ変更をサポートします。
-* **スキーマの関係。** 記述子を使用してデータセット間の外部キーとプライマリキーの関係を有効にします。
-* **順不同のイベント処理。** プロセスは、順不同で到着した場合でも、バージョンとタイムスタンプの記述子を使用してイベントを変更します。
-* **ウェアハウスの直接統合。** は、サポートされているクラウドデータウェアハウスと接続して、リアルタイムの変更同期を実現します。
+* **プライマリキーの適用。** データセット内で一意性を確保し、取得中のレコードの重複を防ぎます。
+* **行レベルの変更の取り込み。** 高精度な制御によるアップサートや削除など、詳細なデータ変更をサポートします。
+* **スキーマ関係。** 記述子を使用して、データセット間の外部キーとプライマリキーの関係を有効にします。
+* **順序なしのイベント処理。** イベントがシーケンス外に到着した場合でも、バージョン記述子とタイムスタンプ記述子を使用してイベントを変更します。
+* **直接ウェアハウス統合。** サポートされているクラウドデータウェアハウスと接続し、リアルタイムの変更同期を実現。
 
-Data Mirrorを使用して、ソースシステムから直接変更内容を取り込み、スキーマの整合性を適用し、分析、journey orchestration、コンプライアンスワークフローでデータを使用できるようにします。 Data Mirrorを使用すると、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスが不要になり、実装が迅速化されます。 この排除により、削除やデータハイジーン操作を正確に制御して、データガバナンスを強化できます。
+Data Mirrorを使用すると、ソースシステムから変更を直接取り込み、スキーマの整合性を適用し、データを分析、ジャーニーオーケストレーション、コンプライアンスワークフローに使用できます。 Data Mirrorでは、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスを排除して、実装を迅速化できます。 この排除は、削除とデータハイジーン操作の正確な制御を通じて、データガバナンスを強化できます。
 
-Data Mirrorに関する [Experience Platformのドキュメントも参照してください &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}。
+Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}に関する[Experience Platform ドキュメントも参照してください。
 
-## Customer Journey AnalyticsのData Mirror
+## Data Mirror for Customer Journey Analytics
 
 >[!NOTE]
 >
->Customer Journey AnalyticsのExperience Platform Data Mirror機能は、2026 年 3 月 25 日まで **パブリックベータ版** で利用できます。 お客様は、ソースコネクタを介して、1 日あたり最大 200 万行の変更行をAdobe Experience Platform Data Lake に取り込むことができます。 Adobeは、お客様の組織がこれらの制限を超えた場合、Experience Platform Data Mirror機能へのベータ版のアクセスを終了する権利を留保します。 <br/> この機能へのアクセスをリクエストするには、Adobe アカウントチームにお問い合わせください。
+>Data Mirrorは現在ベータ版で、Customer Journey Analyticsでの分析にchange data capture （CDC）を使用して一部のデータウェアハウスから取得したデータの同期をサポートしています。<br/>この機能は、2026年6月18日（PT）にCustomer Journey Analyticsで一般公開されます。 適用される製品説明を参照して、今後の年間取り込み制限消費にどのような影響を与えるかを確認してください。 Data Mirrorがベータ版から一般提供に移行しても、引き続きこの機能にアクセスできます。
 >
 
-Customer Journey Analytics用Experience Platform Data Mirrorは、選択した data warehouse ネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery] および [!DNL Snowflake]）で使用できます。 Customer Journey Analytics版のExperience Platform Data Mirrorでは、次のアプリケーションまたはコンポーネントを適切に設定する必要があります。
+選択したデータウェアハウスネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery]、および[!DNL Snowflake]）に対して、Customer Journey Analytics用Experience Platform Data Mirrorを使用できます。 Customer Journey Analytics バージョンのExperience Platform Data Mirrorでは、次のアプリケーションまたはコンポーネントを適切に設定する必要があります。
 
 * [データウェアハウスネイティブソリューション](datawarehouse.md)
 * [Experience Platform](aep.md)
@@ -50,6 +50,6 @@ Customer Journey Analytics用Experience Platform Data Mirrorは、選択した d
 
 >[!MORELIKETHIS]
 >
->[Data Mirror クイックスタートガイド：リレーショナルデータをミラーリングして使用する &#x200B;](relational.md)
->[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->[リレーショナルスキーマ（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
+>[Data Mirror （Experience Platform ドキュメント）](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[リレーショナルスキーマ （Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
