@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 5808de9b39d3c8fa5632755958ddb887c081b203
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 9%
+source-wordcount: '1545'
+ht-degree: 10%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="スキーマを設計"
->abstract="組織内でデータ収集の要件について話し合い、Adobe Experience Platform で使用するスキーマの作成方法を決定します。この手順は、組織に合わせて調整されたスキーマを使用する推奨プロセスを使用するために表示されます。組織内のすべてのチームが調整するスキーマにより、データの取り込みが大幅に簡単になるので、この手順を正しく実行することが極めて重要です。<br><br>組織内のすべての関係者を集めて統合スキーマを調整するのにかかる推定時間は 1～2 か月です。この時間枠は、調整が必要なチームの数と、調整するディメンションと指標の数に大きく依存します。"
+>abstract="組織内でデータ収集の要件について話し合い、Adobe Experience Platform で使用するスキーマの作成方法を決定します。 この手順は、組織に合わせて調整されたスキーマを使用する推奨プロセスを使用するために表示されます。 組織内のすべてのチームが調整するスキーマにより、データの取り込みが大幅に簡単になるので、この手順を正しく実行することが極めて重要です。<br><br>組織内のすべての関係者を集めて統合スキーマを調整するのにかかる推定時間は 1～2 か月です。 この時間枠は、調整が必要なチームの数と、調整するディメンションと指標の数に大きく依存します。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)を実装する際に、Customer Journey Analytics用のカスタム [Experience Data Model](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home) （XDM） スキーマを作成することをお勧めします。 このスキーマの作成は、通常、実装の変更やコードに触れる前に行われます。 カスタムスキーマを使用すると、Adobe Analyticsから制約を継承することなく、企業固有の簡潔なデータコントラクトを設計できます。 組織で使用可能なスキーマの種類について詳しくは、[Customer Journey Analyticsのスキーマを選択](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)を参照してください。
+Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home)を実装する際に、Customer Journey Analytics用のカスタム [Experience Data Model](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) （XDM） スキーマを作成することをお勧めします。 このスキーマの作成は、通常、実装の変更やコードに触れる前に行われます。 カスタムスキーマを使用すると、Adobe Analyticsから制約を継承することなく、企業固有の簡潔なデータコントラクトを設計できます。 組織で使用可能なスキーマの種類について詳しくは、[Customer Journey Analyticsのスキーマを選択](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)を参照してください。
 
 スキーマは、データを長期的にどのように構造化するかを洗練したバージョンにすることを目的としています。 スキーマへの変更は、データ収集、検証、下流サービスに影響を与えるため、コストがかかります。 ビジネス要件に応じて、スキーマに時間をかけて追加できます。ただし、スキーマフィールドは、データの流れ込みが開始されると削除できません。
 

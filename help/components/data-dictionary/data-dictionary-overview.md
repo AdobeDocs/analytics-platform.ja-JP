@@ -4,10 +4,10 @@ title: データ辞書の概要
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 99%
+source-wordcount: '586'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="データディクショナリ"
->abstract="データ辞書は、ユーザーと管理者が、Customer Journey Analytics 環境でコンポーネントを追跡したり、理解を深めたりするのに役立ちます。<br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
+>abstract="データ辞書は、ユーザーと管理者が、Customer Journey Analytics 環境でコンポーネントを追跡したり、理解を深めたりするのに役立ちます。 <br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ Analytics 管理者は、次の目的でデータ辞書を使用できます。
 
 * まだ承認されていないコンポーネントを識別します。
 
-* コンポーネントの説明を Analysis Workspace で直接更新します。データ辞書のコンポーネントの説明に対して行われた更新は、データビューに反映されます。
+* コンポーネントの説明を Analysis Workspace で直接更新します。 データ辞書のコンポーネントの説明に対して行われた更新は、データビューに反映されます。
 
   同様に、データビューのコンポーネントの説明に対して行われた更新は、Analysis Workspace に反映されます。
 

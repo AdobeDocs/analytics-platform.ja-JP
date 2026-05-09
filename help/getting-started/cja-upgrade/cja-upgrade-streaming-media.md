@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
-source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 20%
+source-wordcount: '391'
+ht-degree: 18%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
 >title="Media Edge の設定と実装"
->abstract="ストリーミングメディアコレクションを Customer Journey Analytics と共に使用する予定の場合は、アップグレードプロセスの特定の手順で特定の選択を行う必要があります。例えば、スキーマに MediaAnalytics インタラクションの詳細フィールドグループを追加したり、データストリームで Media Analytics を有効にしたりする必要があります。"
+>abstract="ストリーミングメディアコレクションを Customer Journey Analytics と共に使用する予定の場合は、アップグレードプロセスの特定の手順で特定の選択を行う必要があります。 例えば、スキーマに MediaAnalytics インタラクションの詳細フィールドグループを追加したり、データストリームで Media Analytics を有効にしたりする必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 

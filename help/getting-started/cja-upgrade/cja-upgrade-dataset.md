@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
 >title="Adobe Experience Platform でデータセットを作成"
->abstract="データセットは、収集されたデータが存在する場所です。Adobe Experience Platform でこの場所を作成します。<br><br>スキーマを考慮したデータセットの作成には、わずか数分しかかかりません。"
+>abstract="データセットは、収集されたデータが存在する場所です。 Adobe Experience Platform でこの場所を作成します。<br><br>スキーマを念頭に置いたデータセットの作成には、わずか数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL プロファイル]**」スイッチを選択します。
 
-   プロファイルのデータセットを有効にするよう求められます。有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
+   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
 
    >[!IMPORTANT]
    >
@@ -59,6 +59,6 @@ ht-degree: 100%
 
    ![プロファイルでスキーマを有効にする](assets/aepwebsdk-dataset-profile.png)
 
-   データセットの表示、プレビュー、作成、削除の方法について詳しくは、[データセット UI ガイド](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja)を参照してください。また、リアルタイム顧客プロファイルのデータセットを有効にする方法についても説明します。
+   データセットの表示、プレビュー、作成、削除の方法について詳しくは、[データセット UI ガイド](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja)を参照してください。 また、リアルタイム顧客プロファイルのデータセットを有効にする方法についても説明します。
 
 {{upgrade-final-step}}

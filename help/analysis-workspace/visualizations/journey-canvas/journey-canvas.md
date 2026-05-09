@@ -4,7 +4,7 @@ title: ジャーニーキャンバスの概要
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 96%
@@ -55,7 +55,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!ENDSHADEBOX]
 
-ジャーニーキャンバスのビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。 これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、次に進んだ（フォールスルー）かを確認できます。
+ジャーニーキャンバスビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。 これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、次に進んだ（フォールスルー）かを確認できます。
 
 イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせてジャーニーノードを作成して、[ユーザージャーニーの分析を作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。 変更を行うと、データがリアルタイムで更新されます。
 

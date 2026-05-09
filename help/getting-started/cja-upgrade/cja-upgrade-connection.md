@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1721'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Customer Journey Analytics で接続を作成する"
->abstract="接続を使用すると、Adobe Experience Platform からのデータを Customer Journey Analytics レポート用に最適化された形式に変換できます。Customer Journey Analytics での接続の作成は簡単で、完了するまでに数分しかかかりません。"
+>abstract="接続を使用すると、Adobe Experience Platform からのデータを Customer Journey Analytics レポート用に最適化された形式に変換できます。 Customer Journey Analytics での接続の作成は簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-次の情報では、接続を作成および設定する方法と、作成した接続に Experience Platform データセットを追加する方法について説明します。接続の作成と設定について詳しくは、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。
+次の情報では、接続を作成および設定する方法と、作成した接続に Experience Platform データセットを追加する方法について説明します。 接続の作成と設定について詳しくは、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。
 
 ## 接続の作成と設定 {#create-connection}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
    | **[!UICONTROL データセットタイプ]** | Customer Journey Analytics は、この接続に追加した各データセットに対して、受信するデータに基づいてデータセットタイプを自動的に設定します。 データセットには、イベントデータ、プロファイルデータおよびルックアップデータの 3 種類があります。 データセットのタイプについて詳しくは、次の表を参照してください。 |
    | **[!UICONTROL 精度]** | データセット内のデータの精度。概要データセットにのみ適用できます。 |
    | **[!UICONTROL データソースタイプ]** | データセットのデータソースタイプ。 概要データセットには適用できません。 |
-   | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>重要：選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 Experience Platform で ID を定義する方法については、[このビデオ](https://www.youtube.com/watch?v=G_ttmGl_LRU)をご覧ください。 |
+   | **[!UICONTROL ユーザー ID]** | 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>重要：選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 Experience Platform で ID を定義する方法については、[このビデオ](https://www.youtube.com/watch?v=G_ttmGl_LRU)をご覧ください。 |
    | **[!UICONTROL キー]** | データセットのルックアップのみ（as _id など）。 |
    | **[!UICONTROL 一致するキー]** | データセットのルックアップのみ（as _id など）。 |
    | **[!UICONTROL 新しいデータをインポート]** | オンまたはオフに設定します。 |
@@ -99,7 +99,7 @@ ht-degree: 0%
 
    | 設定 | 説明 |
    | --- | --- |
-   | **[!UICONTROL ユーザー ID]** | イベントデータセットとプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+   | **[!UICONTROL ユーザー ID]** | イベントデータセットとプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
    | **[!UICONTROL タイムスタンプ]** | イベントおよび概要データセットの場合のみ、この設定は、Experience Platform のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 |
    | **[!UICONTROL キー]** | ルックアップデータセットでのみ使用できます。 ルックアップデータセットに使用するキーです。 |
    | **[!UICONTROL 一致するキー]** | ルックアップデータセットでのみ使用できます。 いずれかのイベントデータセットで結合するための一致するキーです。 このリストが空の場合は、イベントデータセットを追加または設定していない可能性があります。 |

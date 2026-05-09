@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '316'
 ht-degree: 100%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
 >title="タグプロパティに Platform Web SDK 拡張機能を追加"
->abstract="タグプロパティに Adobe Experience Platform Web SDK 拡張機能を追加します。タグプロパティへの Web SDK拡張機能の追加は効率化されており、完了するまでに数分しかかかりません。"
+>abstract="タグプロパティに Adobe Experience Platform Web SDK 拡張機能を追加します。 タグプロパティへの Web SDK拡張機能の追加は効率化されており、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Adobe Experience Platform 内のタグ機能を使用して、サイトにデータを収集するためのコードを実装できます。このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
+Adobe Experience Platform 内のタグ機能を使用して、サイトにデータを収集するためのコードを実装できます。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。 タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
 
-次の情報では、タグに Web SDK 拡張機能を追加する方法について説明します。補足情報について詳しくは、Experience Platform ドキュメントの [Web SDK タグ拡張機能の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)を参照してください。Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
+次の情報では、タグに Web SDK 拡張機能を追加する方法について説明します。 補足情報について詳しくは、Experience Platform ドキュメントの [Web SDK タグ拡張機能の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)を参照してください。 Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
 
-[タグを作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)した後、Adobe Experience Platform Web SDK 拡張機能を使用して設定する必要があります。これにより、Adobe Experience Platform に（データストリームを通じて）データを送信できます。
+[タグを作成](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)した後、Adobe Experience Platform Web SDK 拡張機能を使用して設定する必要があります。 これにより、Adobe Experience Platform に（データストリームを通じて）データを送信できます。
 
 タグに Web SDK 拡張機能を追加するには：
 

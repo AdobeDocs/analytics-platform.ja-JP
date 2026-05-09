@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '221'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
 >title="Adobe Experience Platform でデータストリームを作成"
->abstract="データストリームは、設定済みのすべてのサービスにデータを渡す中間の場所です。Adobe Experience Platform でこの場所を作成します。<br><br>Platform インターフェイスでのデータストリームの初期作成には、わずか数分しかかかりません。"
+>abstract="データストリームは、設定済みのすべてのサービスにデータを渡す中間の場所です。 Adobe Experience Platform でこの場所を作成します。<br><br>Platform インターフェイスでのデータストリームの初期作成は、わずか数分で完了します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。これは、データの転送先となるサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web および Mobile SDK を実装する際のサーバーサイド設定を表します。 Adobe Experience Platform SDK を使用してデータを収集する際、データはAdobe Experience Platform Edge Network に送信されます。 これは、データの転送先となるサービスを決定するデータストリームです。
 
 設定では、収集したデータを Adobe Experience Platform のデータセットに送信するようにデータストリームを設定する必要があります。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL 新しいデータストリーム]**&#x200B;を選択します。
 
-1. データストリームに名前を付けて説明します。[!UICONTROL イベントスキーマ]リストからスキーマを選択します。
+1. データストリームに名前を付けて説明します。 [!UICONTROL イベントスキーマ]リストからスキーマを選択します。
 
    ![新規データストリーム](assets/new-datastream.png)
 

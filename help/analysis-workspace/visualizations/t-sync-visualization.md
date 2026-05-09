@@ -5,7 +5,7 @@ title: データソースの管理
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 28ad4be7b5ff3c58f51fdb882d9b273f53bcea2a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 89%

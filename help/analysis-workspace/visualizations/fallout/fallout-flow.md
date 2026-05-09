@@ -4,10 +4,10 @@ title: フォールアウト概要
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 82%
+source-wordcount: '389'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフォールアウトビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フォールアウト](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照してください。_
+_この記事では、この記事の_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンの&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ フォールアウト [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)を参照参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 フォールアウトは、各ステップまたはシーケンスのタッチポイント間のコンバージョン率とフォールアウト率を表示します。
 
-例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。最初の顧客接点と最後の顧客接点を選択し、中間接点を追加してweb サイトのナビゲーションパスを構築します。 多次元のフォールアウトも実行できます。
+例えば、購入プロセス中のユーザーのフォールアウトポイントを追跡できます。 最初の顧客接点と最後の顧客接点を選択し、中間接点を追加してweb サイトのナビゲーションパスを構築します。 多次元のフォールアウトも実行できます。
 
 ## フォールアウト、フロー、ジャーニーキャンバスのいずれかのビジュアライゼーションの選択
 
@@ -68,12 +68,12 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 フォールアウトと[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)の両方のビジュアライゼーションは、次の項目を分析するのに役立ちます。
 
 * サイト上の特定のプロセス（購入や登録プロセスなど）を通してのコンバージョン率。
-* 一般的な、より広範囲のトラフィックフロー：このフローは、ホームページを訪問した人物のうち、検索を実行した数を示します。次に、最終的に特定の項目を閲覧した数を示します。
+* 一般的な、より広範囲のトラフィックフロー：このフローは、ホームページを訪問した人物のうち、検索を実行した数を示します。 次に、最終的に特定の項目を閲覧した数を示します。
 * サイトのイベント間の相関関係。 相関関係とは、プライバシーポリシーを閲覧したオーディエンスのうち、製品を購入した割合を指します。
 
 フォールアウトビジュアライゼーションは、次の場合に最適です。
 
-* 事前定義済みの一連のページおよび単一のエントリポイントとパスを持つジャーニーが関与するフォールアウト分析（複数のエントリポイントとパスを持つジャーニーでは、ジャーニーキャンバスを使用します）。
+* 事前定義済みの一連のページおよび単一のエントリポイントとパスを持つジャーニーが関与するフォールアウト分析 （複数のエントリポイントとパスを持つジャーニーでは、ジャーニーキャンバスを使用します）。
 
 * 同じレポート内で 2 つの異なるセグメントを並べて比較する必要があるジャーニー。
 

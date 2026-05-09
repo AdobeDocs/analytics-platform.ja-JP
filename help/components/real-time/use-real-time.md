@@ -4,9 +4,9 @@ title: リアルタイムのレポートを利用して
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '239'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 12%
 
 パネル内のすべてのビジュアライゼーションは、リアルタイム更新が有効になっているパネルを含むブラウザータブがアクティブになっている間、最大30分間毎分更新されるようになりました。
 
-例として、時間が&#x200B;**[!UICONTROL 06]**&#x200B;から&#x200B;**[!UICONTROL 06]**&#x200B;午後&#x200B;**[!UICONTROL に移動すると、]**&#x200B;総収益/時間&#x200B;**[!UICONTROL *の可視化と:26pm*]**&#x200B;総収益/時間&#x200B;**[!UICONTROL *のフリーフォームテーブルを更新する:27 リアルタイムレポートパネル&#x200B;*]**&#x200B;のスナップショットを以下に示します。
+例として、時間が&#x200B;**[!UICONTROL *06:26pm*]**&#x200B;から&#x200B;**[!UICONTROL *06:27午後&#x200B;*]**&#x200B;に移動すると、**[!UICONTROL &#x200B;総収益/時間&#x200B;]**&#x200B;の可視化と&#x200B;**[!UICONTROL &#x200B;総収益/時間&#x200B;]**&#x200B;のフリーフォームテーブルを更新する&#x200B;**[!UICONTROL &#x200B; リアルタイムレポートパネル &#x200B;]**&#x200B;のスナップショットを以下に示します。
 
 ![&#x200B; リアルタイム更新](assets/real-time-refresh.gif)
 

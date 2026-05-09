@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '301'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
 >title="サイトにローダータグを実装"
->abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクの膨大なバックログを持つエンジニアリングチームでは、1 か月以上かかる場合があります。"
+>abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクの膨大なバックログを持つエンジニアリングチームでは、1 か月以上かかる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 追跡する web サイトにタグをインストールする必要があります。つまり、web サイトのテンプレートのヘッダータグにコードを配置する必要があります。
 
-次のプロセスでは、タグを参照するコードを取得する方法について説明します。補足情報について詳しくは、Experience Platform ドキュメントの[タグとイベント転送の実装ガイド](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/get-started/implementation-guides)を参照してください。
+次のプロセスでは、タグを参照するコードを取得する方法について説明します。 補足情報について詳しくは、Experience Platform ドキュメントの[タグとイベント転送の実装ガイド](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/get-started/implementation-guides)を参照してください。
 
 タグを参照するコードを取得するには：
 

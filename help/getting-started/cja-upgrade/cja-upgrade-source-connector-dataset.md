@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 92%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="接続への Analytics ソースコネクタデータセットの追加"
->abstract="Analytics レポートスイートの履歴データが Adobe Experience Platform にあるので、そのデータセットを Customer Journey Analytics を最初に設定した際に作成した既存の接続に追加します。この手順が完了すると、Customer Journey Analytics の履歴データを使用できるようになります。<br><br>Customer Journey Analytics の接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
+>abstract="Analytics レポートスイートの履歴データが Adobe Experience Platform にあるので、そのデータセットを Customer Journey Analytics を最初に設定した際に作成した既存の接続に追加します。 この手順が完了すると、Customer Journey Analytics の履歴データを使用できるようになります。<br><br>Customer Journey Analytics の接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,7 +47,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 [履歴データ用の Analytics ソースコネクタを作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)すると、Analytics データ用のデータセットが自動的に作成されます。
 
-この自動作成されたデータセットを、Web SDK 実装用に作成したのと同じ接続に追加する必要があります。これにより、Analytics データが、Web SDK データと同じ Customer Journey Analytics のデータビューに表示されるようになります。
+この自動作成されたデータセットを、Web SDK 実装用に作成したのと同じ接続に追加する必要があります。 これにより、Analytics データが、Web SDK データと同じ Customer Journey Analytics のデータビューに表示されるようになります。
 
 自動作成されたデータセットを Web SDK 実装用に作成したのと同じ接続に追加するには：
 
@@ -65,7 +65,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. スクロールして、Analytics ソースコネクタの作成時に自動的に作成されたデータセットを探します。
 
-   このデータセットの名前は、レポートスイートの名前の後に `midValues` を付けたものです。例：`My report suite midValues`
+   このデータセットの名前は、レポートスイートの名前の後に `midValues` を付けたものです。 例：`My report suite midValues`
 
 1. データセット名の横にあるチェックボックスをオンにし、「**[!UICONTROL 次へ]**」を選択します。
 
@@ -77,7 +77,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    | 設定 | 説明 |
    | --- | --- |
-   | **[!UICONTROL ユーザー ID]** | イベントデータセットとプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+   | **[!UICONTROL ユーザー ID]** | イベントデータセットとプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
    | **[!UICONTROL タイムスタンプ]** | イベントおよび概要データセットの場合のみ、この設定は、Experience Platform のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 |
    | **[!UICONTROL タイムゾーン]** | 概要データでのみ使用できます。 時系列の概要データに適したタイムゾーンを選択します。 |
    | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
@@ -92,7 +92,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
 
-   バックフィルをリクエストする日付を指定する場合は、明示的に指定します。いくつかの要因に応じて、次のいずれかの操作を行うことができます。
+   バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
    * Web SDK の実装でデータの収集を最初に開始した日付と同じ終了日を選択します。
 
@@ -108,7 +108,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 「**[!UICONTROL データセットを追加]**」を選択してから、「**[!UICONTROL 保存]**」を選択して接続を保存します。
 
-1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。詳しくは、[Customer Journey Analytics でルックアップデータセットを作成してデータを分類](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)を参照してください。
+1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics でルックアップデータセットを作成してデータを分類](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)を参照してください。
 
    これは、web SDK 実装を構成するときにまだ実行していない場合にのみ必要です。
 

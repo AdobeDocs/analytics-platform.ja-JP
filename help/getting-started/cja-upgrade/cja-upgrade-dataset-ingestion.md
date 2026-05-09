@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="データセット内のデータの検証"
->abstract="実装の設定が完了したら、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。主に取り込まれたバッチが表示されている場合、この手順は完了です。主に失敗したバッチが表示されるか、バッチがまったく表示されない場合は、実装を確認して、アドビにデータが正しく送信されていることを確認してください。"
+>abstract="実装の設定が完了したら、データセットアクティビティマネージャーを使用して、取り込まれたバッチと失敗したバッチを確認できます。 主に取り込まれたバッチが表示されている場合、この手順は完了です。 主に失敗したバッチが表示されるか、バッチがまったく表示されない場合は、実装を確認して、アドビにデータが正しく送信されていることを確認してください。"
 
 <!-- markdownlint-enable MD034 -->
 

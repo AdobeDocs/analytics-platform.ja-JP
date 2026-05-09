@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Analytics ソースコネクタの作成とスキーマフィールドのマッピング"
->abstract="ソースコネクタを使用する場合は、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を知っている必要があります。このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。この手順は、Customer Journey Analytics に履歴データを追加する手順の一部です。<br><br>この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。この手順は、退屈で反復的な作業ですが、それほど難しいものではありません。データストリームマッピングが完了するまでに約 1 週間の作業がかかると予想されます。"
+>abstract="ソースコネクタを使用する場合は、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を知っている必要があります。 このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、Customer Journey Analytics に履歴データを追加する手順の一部です。<br><br>この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。 この手順は、退屈で反復的な作業ですが、それほど難しいものではありません。 データストリームマッピングが完了するまでに約 1 週間の作業がかかると予想されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 ## Analytics ソースコネクタの作成とフィールドのマッピング
 
-カスタムスキーマを作成したら、履歴データに使用する Adobe Analytics ソースコネクタを作成する必要があります（ソースコネクタの作成に関するより包括的で一般的なガイドラインについて詳しくは、[UI でのAdobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください）。
+カスタムスキーマを作成したら、履歴データに使用する Adobe Analytics ソースコネクタを作成する必要があります （ソースコネクタの作成に関するより包括的で一般的なガイドラインについて詳しくは、[UI でのAdobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください）。
 
 履歴データに使用する Adobe Analytics ソースコネクタを作成するには：
 
@@ -84,7 +84,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    ![スキーマフィールドをマッピング](assets/schema-mapping.png)
 
-   1. **[!UICONTROL 「ソース」フィールド]**&#x200B;で、Adobe Analytics ExperienceEvent テンプレートフィールドグループから Adobe Analytics フィールドを選択します。次に、**[!UICONTROL 「ターゲット」フィールド]**&#x200B;で、マッピング先の XDM スキーマ内のカスタムフィールドを選択します。
+   1. **[!UICONTROL 「ソース」フィールド]**&#x200B;で、Adobe Analytics ExperienceEvent テンプレートフィールドグループから Adobe Analytics フィールドを選択します。 次に、**[!UICONTROL 「ターゲット」フィールド]**&#x200B;で、マッピング先の XDM スキーマ内のカスタムフィールドを選択します。
 
       AppMeasurement と XDM の間には固有のアーキテクチャの違いがあるので、Adobe Analytics フィールドのすべてが XDM 内に対応するフィールドがあるわけではありません。
 
@@ -102,7 +102,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    ![確認のために 「接続」および「データタイプ」セクションをハイライト表示する Adobe Experience Platform ウィンドウ](./assets/review.png)
 
-   接続を作成すると、データフローが自動的に作成され、レポートスイートからの Adobe Analytics データがデータセットに入力されます。データフローでは、実稼動用サンドボックスの最大 13 か月分の履歴データを取り込みます。非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。
+   接続を作成すると、データフローが自動的に作成され、レポートスイートからの Adobe Analytics データがデータセットに入力されます。 データフローでは、実稼動用サンドボックスの最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。
 
    Analytics ソースコネクタを使用して履歴データを Customer Journey Analytics Web SDK 実装に取り込む場合は、この自動的に作成されたデータセットを、Web SDK 実装用に作成した接続に追加する必要があります。
 

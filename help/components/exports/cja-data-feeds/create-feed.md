@@ -3,7 +3,7 @@ title: データフィードの作成
 description: データフィードの作成方法と、アドビに提供するファイル情報について説明します。
 hide: true
 feature: Components
-source-git-commit: 54a7f59847b752a4e898b488a90520e8b31d3622
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 19%

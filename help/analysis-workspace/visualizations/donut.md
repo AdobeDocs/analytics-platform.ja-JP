@@ -4,10 +4,10 @@ title: ドーナツ
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 86%
+source-wordcount: '151'
+ht-degree: 70%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のドーナツビジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[ドーナツ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/donut)を参照してください。_
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンの&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ ドナツ [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/donut)を参照してください。 ドナツ _
 
 >[!ENDSHADEBOX]
 
 
-![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL ドーナツ]**&#x200B;ビジュアライゼーションは、円グラフと同様に、データを全体の一部またはセグメントとして表示します。合計の割合を比較するとき、一般的に、項目数が少ない場合はドーナツビジュアライゼーションを使用します。
+![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL ドーナツ]**&#x200B;ビジュアライゼーションは、円グラフと同様に、データを全体の一部またはセグメントとして表示します。 合計の割合を比較するとき、一般的に、項目数が少ない場合はドーナツビジュアライゼーションを使用します。
 
 ![データを全体の一部またはセグメントとして表示するドーナツグラフ。](assets/donut.png)
 
@@ -46,7 +46,7 @@ _この記事では、_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJo
 
 >[!MORELIKETHIS]
 >
->[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

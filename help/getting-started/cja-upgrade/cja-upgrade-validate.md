@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '138'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="データのフローの検証"
->abstract="接続の詳細を使用して、Customer Journey Analytics へのデータのフローが行われているかどうかを検証します。<br><br>すべてが正しく完璧に行われた場合、この手順は 1 日未満で完了できます。データ収集に関する問題が複数ある場合、トラブルシューティングにかなり長い時間がかかる場合があります。"
+>abstract="接続の詳細を使用して、データが Customer Journey Analytics に送信されているかどうかを検証します。<br><br>すべてが正しく問題なく行われた場合、この手順は 1 日未満で完了します。 データ収集の問題が複数ある場合、トラブルシューティングにかなり長い時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

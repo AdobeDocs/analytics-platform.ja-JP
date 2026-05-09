@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 {{upgrade-note-step}}
 
-Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。詳しくは、[マーケティングチャネルディメンションの使用](/help/use-cases/aa-data/marketing-channels.md)を参照してください。
+Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。 従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。 詳しくは、[マーケティングチャネルディメンションの使用](/help/use-cases/aa-data/marketing-channels.md)を参照してください。
 
 Experience Platform Web SDK を使用する際に Customer Journey Analytics でマーケティングチャネルを使用するには、データビューで派生フィールドを使用して、Customer Journey Analytics に同じマーケティングチャネルと処理ルールを再作成できます。
 
