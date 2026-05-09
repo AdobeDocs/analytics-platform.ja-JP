@@ -27,7 +27,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnelのフリクション分析](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnelのフリクション分析](https://video.tv.adobe.com/v/3431281/?captions=jpn&quality=12&learn=onn){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
