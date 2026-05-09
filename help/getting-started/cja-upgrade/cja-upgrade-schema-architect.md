@@ -31,7 +31,7 @@ Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleag
 
 ## スキーマとデータビューの比較
 
-Customer Journey Analyticsのデータパイプラインには、データの収集と解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする場合、よくある間違いは、XDMでpropとeVarをビヘイビアーで再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[ データビュー](/help/data-views/data-views.md)を使用して、そのデータがレポートでどのように解釈されるかを判断します。
+Customer Journey Analyticsのデータパイプラインには、データの収集と解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする場合、よくある間違いは、XDMでpropとeVarをビヘイビアーで再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[&#x200B; データビュー](/help/data-views/data-views.md)を使用して、そのデータがレポートでどのように解釈されるかを判断します。
 
 | レイヤー | プライマリ目的 | 柔軟性 | 次の要素 | 次に属しないもの |
 |---|---|---|---|---|
@@ -109,8 +109,8 @@ Adobe Analyticsでは、多くのチームが`events`変数を指標を追跡す
 一部の企業では、Customer Journey Analyticsにアップグレードする際にAdobe Analytics レポートを続行する必要があります。 次のアプローチを使用すると、Analytics固有のアーティファクトを長期的なスキーマ設計に導入せずにパリティを維持できます。
 
 1. **Adobe Analyticsが認識し、自動的にマッピングするXDM フィールドパスを使用する：** Edge Networkを通じて認識されたXDM フィールドをAdobe Analyticsに送信すると、追加の設定なしで[自動的にマッピングされます](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
-1. **組織固有の概念にカスタム XDM フィールドを使用：** Analytics変数に自動的にマッピングされていないXDM フィールドは、Adobe Analyticsで[ コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)として転送されます。
-1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
+1. **組織固有の概念にカスタム XDM フィールドを使用：** Analytics変数に自動的にマッピングされていないXDM フィールドは、Adobe Analyticsで[&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)として転送されます。
+1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
 
 ## 関係者の特定と所有権の定義
 

@@ -40,10 +40,10 @@ ht-degree: 53%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL コンポーネントの種類] | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントがそれぞれに含まれているコンポーネント領域で変更します。 |
-| [!UICONTROL  コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL &#x200B; コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。 Analysis Workspace UIでの検索やフィルタリングを容易にするために、カスタムタグまたは標準のタグを使用してコンポーネントにタグを付けることができます。 |
-| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[ コンテキストラベル ](#context-labels)のドロップダウンメニュー。 |
+| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[&#x200B; コンテキストラベル &#x200B;](#context-labels)のドロップダウンメニュー。 |
 | [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。 コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
@@ -86,26 +86,26 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 コンテキストラベルの利点は次のとおりです。
 
 * **利便性**：すべてのパネルまたはビジュアライゼーションで同じコンポーネントを再選択する必要はありません。
-* **機能のロックを解除**：一部のビジュアライゼーション（[ マップ ](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
+* **機能のロックを解除**：一部のビジュアライゼーション（[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
 * **一貫性**：組織内で、コンテキストラベルを使用するデータビューに基づく1つ以上のプロジェクトで作業する全員が、同じ動作を得ます。
 * **機能とテンプレートの表示**：特定のビジュアライゼーションと機能は、適切なコンテキストラベルが割り当てられている場合にのみ表示されます。 次に例を示します。
 
-   * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[ マップ ](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
-   * 特定の[ テンプレート ](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
+   * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
+   * 特定の[&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
 
 コンテキストラベルは、次の状況で必要になる場合があります。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
+* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
 
   詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。
 
 * コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できます。
 
-  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[ データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
+  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[&#x200B; データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
 
   **注意**: マップ ビジュアライゼーションはリリースの限定テスト フェーズにあり、お使いの環境ではまだ利用できない可能性があります。
 
-* Adobe](/help/analysis-workspace/templates/use-templates.md)が提供する[ テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
+* Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)が提供する テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
 
   欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。 一致するコンテキストラベルを、既にデータビューにあるコンポーネントに追加する必要があります。 または、新しいコンポーネントをデータビューに追加し、コンテキストラベルをコンポーネントに追加する必要があります（まだ自動的に指定されていない場合）。
 

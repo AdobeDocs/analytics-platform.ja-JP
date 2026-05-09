@@ -18,7 +18,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。 例えば、[COLUMN MAXIMUM （metrics） ](#column-maximum)では、[COLUMN MAXIMUM （PageViews + Sessions） ](#column-maximum)も使用できます。
+>[!DNL metric] が関数の引数として特定されている場合は、指標の他の式も許可されます。 例えば、[COLUMN MAXIMUM （metrics） &#x200B;](#column-maximum)では、[COLUMN MAXIMUM （PageViews + Sessions） &#x200B;](#column-maximum)も使用できます。
 
 
 

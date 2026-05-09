@@ -26,7 +26,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_&#x200B;の実験パネルについて説明します![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**。_<br/>_Adobe Targetのアクティビティとエクスペリエンスを分析する方法について詳しくは、[Analytics for Target パネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**。_
+_この記事では、_&#x200B;の実験パネルについて説明します![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Customer Journey Analytics**。_<br/>_Adobe Targetのアクティビティとエクスペリエンスを分析する方法について詳しくは、[Analytics for Target パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_&#x200B;**Adobe Analytics**。_
 
 >[!ENDSHADEBOX]
 

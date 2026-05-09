@@ -85,7 +85,7 @@ ht-degree: 38%
 
 * ビジュアライゼーションのタッチポイントにカーソルを合わせ、**[!UICONTROL クリックして分析]**&#x200B;を選択します。
 
-  ![ カーソルを合わせるとコンテキストメニューにアクセス ](assets/fallout-tooltip-analyze.png)
+  ![&#x200B; カーソルを合わせるとコンテキストメニューにアクセス &#x200B;](assets/fallout-tooltip-analyze.png)
 
 * ビジュアライゼーションのタッチポイントを右クリックします。
 
@@ -100,13 +100,13 @@ ht-degree: 38%
 | **[!UICONTROL トレンドタッチポイント]** | 折れ線グラフのタッチポイントのトレンドデータを、一部の事前に作成された異常値検出データと共に表示します。 |
 | **[!UICONTROL トレンドタッチポイント（%）]** | 合計フォールアウト数の割合のトレンドを追跡します。 |
 | **[!UICONTROL すべてのタッチポイント（%）のトレンドを追跡]** | フォールアウトのすべてのタッチポイントの割合（**[!UICONTROL すべての人物]**&#x200B;が含まれている場合はこれを除く）のトレンドを同じグラフに表示します。 |
-| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallthrough: All People > Pageというラベルが付いたテーブルは、ディメンションとして**[!UICONTROL  Page ]**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**[!UICONTROL  People ]**を含み**[!UICONTROL  Fallthrough: All People > Page equals any of home ]**を指標として示します。]**](/help/components/segments/seg-quick.md)セグメントを調べて、フォールスルーセグメントがどのように決定されるかを理解します。 |
-| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | 選択した手順の直後にfunnelを通過しなかったユーザーが行った処理を表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallout: Page > Pageというラベルが付いたテーブルは、ディメンションとして**[!UICONTROL  Page ]**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**[!UICONTROL  People ]**を含み**[!UICONTROL  Fallthrough: All Visitors > Page equals any of home ]**segment as the metric.]**](/help/components/segments/seg-quick.md)セグメントを調べて、フォールアウトセグメントがどのように決定されるかを理解します。 |
+| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[[!UICONTROL Fallthrough: All People > Pageというラベルが付いたテーブルは、ディメンションとして**&#x200B;[!UICONTROL &#x200B; Page &#x200B;]&#x200B;**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**&#x200B;[!UICONTROL &#x200B; People &#x200B;]&#x200B;**を含み**&#x200B;[!UICONTROL &#x200B; Fallthrough: All People > Page equals any of home &#x200B;]&#x200B;**を指標として示します。]**]](/help/components/segments/seg-quick.md)セグメントを調べて、フォールスルーセグメントがどのように決定されるかを理解します。 |
+| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | 選択した手順の直後にfunnelを通過しなかったユーザーが行った処理を表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[[!UICONTROL Fallout: Page > Pageというラベルが付いたテーブルは、ディメンションとして**&#x200B;[!UICONTROL &#x200B; Page &#x200B;]&#x200B;**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**&#x200B;[!UICONTROL &#x200B; People &#x200B;]&#x200B;**を含み**&#x200B;[!UICONTROL &#x200B; Fallthrough: All Visitors > Page equals any of home &#x200B;]&#x200B;**segment as the metric.]**]](/help/components/segments/seg-quick.md)セグメントを調べて、フォールアウトセグメントがどのように決定されるかを理解します。 |
 | **[!UICONTROL タッチポイントからセグメントを作成]** | 選択したタッチポイントから新しいセグメントを作成します。 |
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
