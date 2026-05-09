@@ -4,10 +4,10 @@ title: 次または前の項目パネル
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 94%
+source-wordcount: '526'
+ht-degree: 89%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="次または前の項目"
->abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
+>abstract="訪問者が来訪前にいた場所または次に移動する場所として最も一般的なものを分析します。 ビジュアライゼーションに使用するディメンション、ディメンション項目、方向およびコンテナを指定します。"
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ の次の項目または前の項目パネルについて説明します。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[次の項目または前の項目パネル](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous)を参照してください。_
+_この記事では、_&#x200B;の次または前の項目パネルについて説明します。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版については、[次または前の項目パネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/next-previous)を参照してください。_
 
 >[!ENDSHADEBOX]
 
-**[!UICONTROL 次または前の項目]**&#x200B;パネルには、特定のディメンションの次または前のディメンション項目を識別する多数のテーブルおよびビジュアライゼーションが含まれています。例えば、顧客がホームページを訪問した後に、どのページを最も頻繁に訪問したかを探索する必要があるとします。
+**[!UICONTROL 次または前の項目]**&#x200B;パネルには、特定のディメンションの次または前のディメンション項目を識別する多数のテーブルおよびビジュアライゼーションが含まれています。 例えば、顧客がホームページを訪問した後に、どのページを最も頻繁に訪問したかを探索する必要があるとします。
 
 ## 使用 {#use}
 
@@ -41,7 +41,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 **[!UICONTROL 次または前の項目]**&#x200B;パネルを使用するには：
 
-1. **[!UICONTROL 次または前の項目]**&#x200B;パネルを作成します。パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
+1. **[!UICONTROL 次または前の項目]**&#x200B;パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
 1. パネルの[入力](#panel-input)を指定します。
 
@@ -74,9 +74,9 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 | ビジュアライゼーション | 説明 |
 | --- | --- |
-| **[!UICONTROL 横棒グラフ]** | 選択したディメンション項目に基づいて、次の（または前の）項目を一覧表示します。個々のバーの上にポインタを合わせると、フリーフォームテーブル内の対応する項目がハイライト表示されます。 |
+| **[!UICONTROL 横棒グラフ]** | 選択したディメンション項目に基づいて、次の（または前の）項目を一覧表示します。 個々のバーの上にポインタを合わせると、フリーフォームテーブル内の対応する項目がハイライト表示されます。 |
 | **[!UICONTROL 数値の概要]** | 今月（これまで）のすべての次または前のディメンション項目の発生件数の概要。 |
-| **[!UICONTROL フリーフォームテーブル]** | 選択したディメンション項目に基づいて、次の（または前の）項目を表形式で一覧表示します。例えば、ホームページまたはワークスペースページの後（または前）にその人物が訪問した一番人気のページ（発生ごと）。 |
+| **[!UICONTROL フリーフォームテーブル]** | 選択したディメンション項目に基づいて、次の（または前の）項目を表形式で一覧表示します。 例えば、ホームページまたはワークスペースページの後（または前）にその人物が訪問した一番人気のページ（発生ごと）。 |
 
 {style="table-layout:auto"}
 

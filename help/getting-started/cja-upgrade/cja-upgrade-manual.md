@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '211'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-implementation"
 >title="サイトへの alloy.js の追加"
->abstract="実装の各ページにベースコードを直接追加すると、Platform Web SDK を手動でインストールできます。Web サイト開発チームと協力して、これを実現します。"
+>abstract="実装の各ページにベースコードを直接追加すると、Platform Web SDK を手動でインストールできます。 Web サイト開発チームと協力して、これを実現します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-populate-xdm"
 >title="XDM オブジェクトを入力し、データストリームに送信します"
->abstract="この手順には、データストリームにデータを送信するための JavaScript ロジック全体が含まれます。 アドビでは、入力した XDM オブジェクトを追跡するためにソリューションデザインドキュメントを保守することをお勧めします。正しい JSON ペイロード値を確立し、テストして、サイトにデプロイするには、1 か月以上かかることを想定してください。この手順を完了するには、エンジニアリングチームとの継続的な連絡が必要になるので、チームの応答性によっては時間がかかる可能性があります。"
+>abstract="この手順には、データストリームにデータを送信するための JavaScript ロジック全体が含まれます。 アドビでは、入力した XDM オブジェクトを追跡するためにソリューションデザインドキュメントを保守することをお勧めします。 正しい JSON ペイロード値を確立し、テストして、サイトにデプロイするには、1 か月以上かかることを想定してください。 この手順を完了するには、エンジニアリングチームとの継続的な連絡が必要になるので、チームの応答性によっては時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
 >title="Adobe Experience Platform をサービスとしてデータストリームに追加"
->abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。Adobe Experience Platform をデータストリームのサービスとして設定します。<br><br>データストリームへのサービスの追加は簡単なプロセスで、完了するまでに数分しかかかりません。"
+>abstract="データストリームには、データの送信先となる 1 つ以上のサービスが必要です。 Adobe Experience Platform をデータストリームのサービスとして設定します。<br><br>データストリームへのサービスの追加は簡単なプロセスで、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-この節の手順を完了する前に、データストリームが既に存在している必要があります。データストリームを作成するタイミングと方法は、次のように Adobe Analytics の実装によって異なります。
+この節の手順を完了する前に、データストリームが既に存在している必要があります。 データストリームを作成するタイミングと方法は、次のように Adobe Analytics の実装によって異なります。
 
 * Adobe Analytics 実装で Web SDK または Web SDK 拡張機能を使用する場合、アップグレードプロセスの前に、Adobe Analytics 環境でデータストリームを使用できました。
 

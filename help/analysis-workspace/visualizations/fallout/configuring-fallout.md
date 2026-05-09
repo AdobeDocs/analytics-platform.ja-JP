@@ -4,27 +4,27 @@ title: フォールアウトビジュアライゼーションの設定
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 295e4c9b3b9dff5ba650456c3f62817b30fe1e3d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 39%
+source-wordcount: '921'
+ht-degree: 38%
 
 ---
 
 # フォールアウトビジュアライゼーションの設定 {#configure-fallout-visualization}
 
 
-**タッチポイント**&#x200B;を指定して、複数ディメンションのフォールアウトシーケンスを作成できます。 多くの場合、タッチポイントはサイト上のページです。 ただし、顧客接点はページに限定されません。 例えば、単位、ユニークユーザー、再来訪などのイベントを追加できます。また、カテゴリ、ブラウザーの種類、内部検索キーワードなどのディメンションを追加することもできます。
+**タッチポイント**&#x200B;を指定して、複数ディメンションのフォールアウトシーケンスを作成できます。 多くの場合、タッチポイントはサイト上のページです。 ただし、顧客接点はページに限定されません。 例えば、単位、ユニークユーザー、再来訪などのイベントを追加できます。 また、カテゴリ、ブラウザーの種類、内部検索キーワードなどのディメンションを追加することもできます。
 
-タッチポイント内にセグメントを追加することもできます。 例えば、iOSやAndroidなどのセグメントを比較することができます。 目的のセグメントをフォールアウトの上部にドラッグすると、これらのセグメントに関する情報がフォールアウトレポートに追加されます。これらのセグメントのみを表示する場合は、すべての人物のベースラインを削除できます。
+タッチポイント内にセグメントを追加することもできます。 例えば、iOSやAndroidなどのセグメントを比較することができます。 目的のセグメントをフォールアウトの上部にドラッグすると、これらのセグメントに関する情報がフォールアウトレポートに追加されます。 これらのセグメントのみを表示する場合は、すべての人物のベースラインを削除できます。
 
 フォールアウトビジュアライゼーションでは、追加できるタッチポイントの数や使用できるコンポーネントの数に制限はありません。
 
-ディメンション、指標およびセグメントに対してパスを設定できます。例えば、あるページで`shoes, shirt`を閲覧し、次のページで`shirt, socks`を閲覧しているとします。 靴の次の製品フローレポートは、シャツではなく、シャツと靴下になります。
+ディメンション、指標およびセグメントに対してパスを設定できます。 例えば、あるページで`shoes, shirt`を閲覧し、次のページで`shirt, socks`を閲覧しているとします。 靴の次の製品フローレポートは、シャツではなく、シャツと靴下になります。
 
 ## 使用
 
-1. ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL フォールアウト]**&#x200B;ビジュアライゼーションを追加します。[パネルへのビジュアライゼーションの追加](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL フォールアウト]**&#x200B;ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. コンポーネントを&#x200B;**[!UICONTROL タッチポイントを追加]** ドロップダウンメニューにドラッグします。
 
@@ -36,7 +36,7 @@ ht-degree: 39%
 
 1. シーケンスが完成するまでタッチポイントの追加を続けます。
 
-   バーのグレー部分にある、円で囲まれた数字は、（そのポイントへの合計フォールアウトではなく）タッチポイント間のフォールアウトを表しています。バーの緑色の部分にある丸で囲まれた数値は、前のタッチポイントから現在のタッチポイントへの成功したフォールスルーを示しています。
+   バーのグレー部分にある、円で囲まれた数字は、（そのポイントへの合計フォールアウトではなく）タッチポイント間のフォールアウトを表しています。 バーの緑色の部分にある丸で囲まれた数値は、前のタッチポイントから現在のタッチポイントへの成功したフォールスルーを示しています。
 
    ![フォールアウトビジュアライゼーション](assets/fallout-visualization.png)
 
@@ -72,7 +72,7 @@ ht-degree: 39%
 
 | フォールアウトコンテナ | 説明 |
 |--- |--- |
-| **[!UICONTROL セッション]**&#x200B;または&#x200B;**[!UICONTROL ユーザー]** | 「[!UICONTROL セッション]」と「[!UICONTROL ユーザー]」を切り替えて、ユーザーのパスを分析できます。デフォルトは「[!UICONTROL ユーザー]」です。これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 |
+| **[!UICONTROL セッション]**&#x200B;または&#x200B;**[!UICONTROL ユーザー]** | 「[!UICONTROL セッション]」と「[!UICONTROL ユーザー]」を切り替えて、ユーザーのパスを分析できます。 デフォルトは「[!UICONTROL ユーザー]」です。 これらの設定により、個人のエンゲージメントを（セッション全体にわたって）個人レベルで理解したり、分析を 1 回のセッションに制限したりできます。 |
 
 
 ## コンテキストメニュー
@@ -85,7 +85,7 @@ ht-degree: 39%
 
 * ビジュアライゼーションのタッチポイントにカーソルを合わせ、**[!UICONTROL クリックして分析]**&#x200B;を選択します。
 
-  ![&#x200B; カーソルを合わせるとコンテキストメニューにアクセス &#x200B;](assets/fallout-tooltip-analyze.png)
+  ![ カーソルを合わせるとコンテキストメニューにアクセス ](assets/fallout-tooltip-analyze.png)
 
 * ビジュアライゼーションのタッチポイントを右クリックします。
 
@@ -100,13 +100,13 @@ ht-degree: 39%
 | **[!UICONTROL トレンドタッチポイント]** | 折れ線グラフのタッチポイントのトレンドデータを、一部の事前に作成された異常値検出データと共に表示します。 |
 | **[!UICONTROL トレンドタッチポイント（%）]** | 合計フォールアウト数の割合のトレンドを追跡します。 |
 | **[!UICONTROL すべてのタッチポイント（%）のトレンドを追跡]** | フォールアウトのすべてのタッチポイントの割合（**[!UICONTROL すべての人物]**&#x200B;が含まれている場合はこれを除く）のトレンドを同じグラフに表示します。 |
-| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallthrough: All People > Pageというラベルが付いたテーブルは、ディメンションとして]** Page **[!UICONTROL を含み、ディメンションとして]** プロジェクトのみのクイックセグメントによってセグメント化された&#x200B;**[!UICONTROL People]**&#x200B;を含み[Fallthrough: All People > Page equals any of home](/help/components/segments/seg-quick.md)を指標として示します。 **&#x200B;**&#x200B;セグメントを調べて、フォールスルーセグメントがどのように決定されるかを理解します。 |
-| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | 選択した手順の直後にfunnelを通過しなかったユーザーが行った処理を表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallout: Page > Pageというラベルが付いたテーブルは、ディメンションとして]** Page **[!UICONTROL を含み、ディメンションとして]** プロジェクトのみのクイックセグメントによってセグメント化された&#x200B;**[!UICONTROL People]**&#x200B;を含み[Fallthrough: All Visitors > Page equals any of home](/help/components/segments/seg-quick.md) segment as the metric. **&#x200B;**&#x200B;セグメントを調べて、フォールアウトセグメントがどのように決定されるかを理解します。 |
+| **[!UICONTROL このタッチポイントでフォールスルーを分類]** | ユーザーが次のタッチポイントに進んだ場合に、2 つのタッチポイント（このタッチポイントと次のタッチポイント）間で何をしたかを表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallthrough: All People > Pageというラベルが付いたテーブルは、ディメンションとして**[!UICONTROL  Page ]**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**[!UICONTROL  People ]**を含み**[!UICONTROL  Fallthrough: All People > Page equals any of home ]**を指標として示します。]**](/help/components/segments/seg-quick.md)セグメントを調べて、フォールスルーセグメントがどのように決定されるかを理解します。 |
+| **[!UICONTROL このタッチポイントでフォールアウトを分類]** | 選択した手順の直後にfunnelを通過しなかったユーザーが行った処理を表示します。 これにより、寸法を表示するフリーフォームテーブルが作成されます。 ディメンションとテーブルの他の要素を置き換えることができます。 例えば、**[!UICONTROL Fallout: Page > Pageというラベルが付いたテーブルは、ディメンションとして**[!UICONTROL  Page ]**を含み、ディメンションとして[ プロジェクトのみのクイックセグメントによってセグメント化された**[!UICONTROL  People ]**を含み**[!UICONTROL  Fallthrough: All Visitors > Page equals any of home ]**segment as the metric.]**](/help/components/segments/seg-quick.md)セグメントを調べて、フォールアウトセグメントがどのように決定されるかを理解します。 |
 | **[!UICONTROL タッチポイントからセグメントを作成]** | 選択したタッチポイントから新しいセグメントを作成します。 |
 
 >[!MORELIKETHIS]
 >
->[パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

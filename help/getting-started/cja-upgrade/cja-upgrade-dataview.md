@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 95%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 95%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
-データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、Customer Journey Analytics でのディメンションや指標の動作を調整できます。
+データビューを作成するには、スキーマ要素から指標やディメンションを作成するか、標準コンポーネントを使用する必要があります。 ほとんどのスキーマ要素は、ビジネスの要件に応じて、ディメンションまたは指標のいずれかになります。 スキーマ要素をデータビューにドラッグすると、右側にオプションが表示され、Customer Journey Analytics でのディメンションや指標の動作を調整できます。
 
 データビューを作成するには：
 
 1. [Customer Journey Analytics](https://analytics.adobe.com) にログインし、上部のメニューにある&#x200B;**[!UICONTROL データ管理]**&#x200B;から、オプションで「**[!UICONTROL データビュー]**」を選択します。
 
-1. 「**[!UICONTROL 新しいデータビューを作成]**」を選択します。または、データビューのリストから既存のデータビューを選択して編集することもできます。
+1. 「**[!UICONTROL 新しいデータビューを作成]**」を選択します。 または、データビューのリストから既存のデータビューを選択して編集することもできます。
 
 1. 「[!UICONTROL **設定**]」タブで、データビューの名前を指定し、基本設定、コンポーネントおよびカレンダーオプションを設定します。
 
@@ -43,15 +43,15 @@ ht-degree: 95%
 
 1. 「[!UICONTROL **コンポーネント**]」タブを選択します。
 
-   「[!UICONTROL **コンポーネント**]」タブでは、データビューのコンポーネントを設定します。つまり、スキーマ要素から指標とディメンションを作成できます。また、標準コンポーネントも使用できます。
+   「[!UICONTROL **コンポーネント**]」タブでは、データビューのコンポーネントを設定します。つまり、スキーマ要素から指標とディメンションを作成できます。 また、標準コンポーネントも使用できます。
 
    ![「コンポーネント」タブ](assets/dataview-components.png)
 
-1. 「[!UICONTROL **コンポーネント**]」タブで、左側のパネルからスキーマ要素を「[!UICONTROL **指標**]」セクションまたは「[!UICONTROL **ディメンション**]」セクションにドラッグします。追加したスキーマ要素は、データビューの指標またはディメンションになります。
+1. 「[!UICONTROL **コンポーネント**]」タブで、左側のパネルからスキーマ要素を「[!UICONTROL **指標**]」セクションまたは「[!UICONTROL **ディメンション**]」セクションにドラッグします。 追加したスキーマ要素は、データビューの指標またはディメンションになります。
 
    データビューにコンポーネントを追加する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[コンポーネント](/help/data-views/create-dataview.md#components)を参照してください。
 
-1. 「[!UICONTROL **設定**]」タブを選択します。ここから、データビュー全体に適用するセグメントを設定したり、セッションのタイムアウトと指標を設定したりできます。
+1. 「[!UICONTROL **設定**]」タブを選択します。 ここから、データビュー全体に適用するセグメントを設定したり、セッションのタイムアウトと指標を設定したりできます。
 
    データビューの設定を指定する際に使用できるオプションについて詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)の[設定](/help/data-views/create-dataview.md#settings)を参照してください。
 

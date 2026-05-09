@@ -4,10 +4,10 @@ title: フローの概要
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 82%
+source-wordcount: '349'
+ht-degree: 74%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="フロー"
->abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。開始元および終了元のコンポーネント（指標、ディメンションまたは項目）を指定します。オプションで、詳細設定を定義して、ビジュアライゼーションをさらに設定できます。"
+>abstract="1 つのタッチポイントから次のタッチポイントへの訪問または訪問者のフローを分析します。 開始元および終了元のコンポーネント（指標、ディメンションまたは項目）を指定します。 オプションで、詳細設定を定義して、ビジュアライゼーションをさらに設定できます。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のフロービジュアライゼーションについて説明します。_<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[フロー](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)を参照してください。_
+_この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンの[Flow](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フロービジュアライゼーションの作成](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フロービジュアライゼーションの作成](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -55,7 +55,7 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 ## ディメンション間のフロー
 
-[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。例えば、ページと部門を 1 つの図に組み合わせることができます。この場合、フローはホームページから男性ページ、次に靴部門に移動します。
+[ディメンション間のフロー](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)を表示できます。 例えば、ページと部門を 1 つの図に組み合わせることができます。 この場合、フローはホームページから男性ページ、次に靴部門に移動します。
 
 各列に異なるディメンションを表示することができます。 ディメンションをドラッグしてドロップゾーンにドロップし、そのディメンションをダイアグラムに追加します。
 
@@ -78,8 +78,8 @@ _この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJ
 
 フロービジュアライゼーションは、次の場合に最適です。
 
-* パス上の次のタッチポイントに対する探索的、Ad Hoc Analysis。（事前に定義された一連のページを含むジャーニーや、最終的なパスを使用するジャーニーでは、ジャーニーキャンバスを使用します。）
+* パス上の次のタッチポイントに対する探索的、Ad Hoc Analysis。 （事前に定義された一連のページを含むジャーニーや、最終的なパスを使用するジャーニーでは、ジャーニーキャンバスを使用します。）
 
-* 複数のエントリポイントとパスを持つ非線形ジャーニー。（事前に定義された一連のページを含むジャーニーにはジャーニーキャンバスを使用します。）
+* 複数のエントリポイントとパスを持つ非線形ジャーニー。 （事前に定義された一連のページを含むジャーニーにはジャーニーキャンバスを使用します。）
 
 フロー、フォールアウトおよびジャーニーキャンバスの違いを理解するには、[上記の表](#understand-the-differences)を参照してください。
