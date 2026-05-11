@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+source-git-commit: 3e08fa116d3690cad450f92825bfd34023dbee24
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '4018'
 ht-degree: 48%
 
 ---
@@ -502,6 +502,16 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 
 ##### ヘッダーの上書き {#web-header-overrides}
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="ヘッダーの上書き"
+>abstract="**ヘッダーの上書き**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="ヘッダーの上書き"
+>abstract="ボット検出またはゲートトラフィックをバイパスする高度な機能。 Content Analyticsには、エンドポイントの呼び出し時にカスタム HTTP ヘッダーが含まれています。"
 
 <!-- needs modification for mobile channel -->
 
