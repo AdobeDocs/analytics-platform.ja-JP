@@ -18,10 +18,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1d292cb0c123e41553a85cd0579ef30b7ab3a64c
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
-source-wordcount: 4018
-ht-degree: 48%
+source-wordcount: 4071
+ht-degree: 47%
 
 ---
 
@@ -504,6 +504,8 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
       1. 「**[!UICONTROL 新規作成]**」を選択します。
       1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
       1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
+
+     Web チャネル用にContent Analyticsのタグ [非依存の実装](/help/content-analytics/config/tags-agnostic.md)を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
 
 * Content Analytics 用のデータを収集する際に、どのページを含めるか除外するかを指定します。 個人を特定できるページは除外します。
 
