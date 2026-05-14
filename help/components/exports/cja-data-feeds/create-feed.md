@@ -3,10 +3,10 @@ title: データフィードの作成
 description: データフィードの作成方法と、アドビに提供するファイル情報について説明します。
 hide: true
 feature: Components
-source-git-commit: 46d54e388fecac0b62eccfe54fe91620a46474a7
+source-git-commit: da47de2de52a3cc0d9aa768141bd7368042e1c66
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 22%
+source-wordcount: '2466'
+ht-degree: 29%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 * 各ファイルに含めるデータ
 
-* データフィードを送信する頻度（遅延ヒットを含める場合はルックバックウィンドウを含む）
+* データフィードを送信する頻度（遅延ヒットを取得するための処理遅延を含む）
 
 データフィードを作成する前に、データフィードの基本を理解し、すべての前提条件を満たしていることを確認することが重要です。 詳しくは、[データフィードの概要](data-feed-overview.md)を参照してください。
 
@@ -51,11 +51,9 @@ ht-degree: 22%
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
-
 1. Adobe ID の資格情報を使用して [experiencecloud.adobe.com](https://experiencecloud.adobe.com) にログインします。
 
-1. 右上の9角形のアイコンを選択し、[!UICONTROL **Customer Journey Analytics**]&#x200B;を選択します。
+1. インターフェイスの右上にあるアプリ切り替えボタン![アプリ](/help/assets/icons/Apps.svg)から「[!UICONTROL **Customer Journey Analytics**]」を選択します。
 
 1. 上部ナビゲーションバーで、[!UICONTROL **管理者**]／[!UICONTROL **データフィード**]&#x200B;に移動します。
 
@@ -69,30 +67,28 @@ ht-degree: 22%
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **名前**] | データフィードの名前。 名前は、選択したレポートスイート内で一意である必要があり、最大255文字まで指定できます。<!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
+   | [!UICONTROL **名前**] | データフィードの名前。 名前は、選択したデータビュー内で一意である必要があり、最大255文字まで指定できます。<!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **タグ**] | 任意のタグをデータフィードに適用して分類を容易にします。<!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
    | [!UICONTROL **説明**] | データフィードの説明を指定します。 追加した説明は、データフィードの編集時に表示されます。 |
    | [!UICONTROL **データビュー**] | 書き出すデータを含むデータビューを選択します。 |
 
 1. 「[!UICONTROL **データ構造**]」セクションで、**[!UICONTROL データビュー]** フィールドで正しいデータビューが選択されていることを確認します。 <p>データビューを選択する際には、次の点を考慮してください。</p> <ul><li>同じデータビューに対して複数のデータフィードを作成する場合、各データフィードには異なる列定義が必要です。</li><li>使用可能な列のリストは、選択したデータビューが属するログイン会社によって異なります。 データビューを変更すると、使用可能な列のリストが変更される可能性があります。 </li></ul>
 
-1. データフィード設定に列を追加します。 左側の&#x200B;**[!UICONTROL Available]** セクションで、含める列を選択し、**[!UICONTROL Include]**&#x200B;を選択します。 Adobe Analyticsのすべてのデータ列を使用できます。 複数の列を選択するには、**[!UICONTROL Shift]**&#x200B;を押すか、**[!UICONTROL Command]** （macOS）または&#x200B;**[!UICONTROL Ctrl]** （Windows）を押します。 「**[!UICONTROL すべて追加]**」をクリックして、データフィードにすべての列を含めます。
-
-   追加した列は、右側の&#x200B;**[!UICONTROL Included]** セクションに表示されます。
+1. データフィード設定に列を追加します。 左側のコンポーネントパネルのセクションで、含める列を見つけ、キャンバスにドラッグしてデータ構造を構築します。 複数の列を選択するには、**[!UICONTROL Shift]**&#x200B;を押すか、**[!UICONTROL Command]** （macOS）または&#x200B;**[!UICONTROL Ctrl]** （Windows）を押します。
 
    次の情報を使用して、常に含まれるディメンション、含めないディメンション、および置換する必要のある指標を把握します。
 
    +++ データフィードに必ず含まれるディメンション
 
-   すべてのデータフィードには、次のコンポーネントを含める必要があります。
+   次のディメンションは、すべてのデータフィードにデフォルトで含まれており、削除できません。
 
-   | コンポーネント名 | メモ | データフィード | その他のレポート |
+   | ディメンション名 | メモ | データフィード | その他のレポート |
    |---|---|---|---|
-   | タイムスタンプ | イベント期間のタイムスタンプ。 ミリ秒の精度。 UTCで表されます。 | 必須 | 使用不可 |
+   | タイムスタンプ | イベント期間のタイムスタンプ。 マイクロ秒粒度。 UTCで表されます。 | 必須 | 使用不可 |
    | 行ID | 一意の行識別子 | 必須 | 使用不可 |
    | セッション ID | 各セッションの一意のID | 必須 | 使用不可 |
    | ユーザー ID | データビューと接続の人物ID | 必須 | オプションの標準 |
-   | アカウント ID （B2B） | アカウントコンテナを使用する際のアカウント ID | 必須（B2Bのみ） | オプションの標準（B2Bのみ） |
+   | アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | アカウントコンテナを使用する際のアカウント ID | 必須 | オプションの標準 |
 
    +++
 
@@ -100,7 +96,7 @@ ht-degree: 22%
 
    Customer Journey Analytics標準ディメンションは、データフィードに含めることはできません。 次の表に、これらのディメンションを示します。
 
-   | コンポーネント名 | メモ | データフィード |
+   | ディメンション名 | メモ | データフィード |
    |---|---|---|
    | 5 分 | イベント発生時の5分間隔（切り捨て） | 使用不可 |
    | 15 分 | イベント発生時の15分間隔（切り捨て） | 使用不可 |
@@ -128,13 +124,13 @@ ht-degree: 22%
 
    次のCustomer Journey Analytics メトリクスを置き換える必要があります。
 
-   | コンポーネント名 | メモ | データフィード |
+   | Metric name | メモ | データフィード |
    |---|---|---|
-   | アカウント | [B2B edition] （接続で指定されたアカウント IDに基づく） | 使用不可。 アカウント IDで異なるカウントを使用します。 |
-   | 購買グループ | 接続の購買グループ IDに基づく[B2B edition]購買グループ | 使用不可。 購買グループ IDとは異なるカウントを使用します。 |
+   | アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続で指定されたアカウント IDに基づく | 使用不可。 アカウント IDで異なるカウントを使用します。 |
+   | 購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続の購買グループ IDに基づく購買グループ | 使用不可。 購買グループ IDとは異なるカウントを使用します。 |
    | イベント | 接続内のすべてのイベントデータセットからの行数 | 使用不可。 行IDとは異なるカウントを使用します。 |
-   | グローバルアカウント | [B2B edition] （接続のグローバルアカウント IDに基づく） | 使用不可。 グローバルアカウント IDで異なるカウントを使用します。 |
-   | 機会 | 接続の商談IDに基づいて[B2B edition]件の商談 | 使用不可。 商談IDとは異なるカウントを使用します。 |
+   | グローバルアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続のグローバルアカウント IDに基づく | 使用不可。 グローバルアカウント IDで異なるカウントを使用します。 |
+   | 商談 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続の商談IDに基づく商談 | 使用不可。 商談IDとは異なるカウントを使用します。 |
    | People | 接続で指定された人物IDに基づく | 使用不可。 人物IDとは異なるカウントを使用します。 |
    | 会話数 | 会話数 | 使用不可。 会話IDで異なるカウントを使用します。 |
    | セッション終了 | セッションの最後のイベントであったイベントの数 | 使用不可 |
@@ -158,12 +154,10 @@ ht-degree: 22%
    | 月 | 時間分割ディメンション | 1～12月 | 使用不可 |
    | 初回セッション | 指標 | レポートウィンドウ内での個人の最初に定義されたセッション | 使用不可 |
    | セッションを返す | 指標 | ユーザーの初めてのセッションではないセッション | 使用不可 |
-   | ユーザー ID | ディメンション | データビューと接続の人物ID | **必須** |
    | 人物ID名前空間 | ディメンション | 人物IDで構成されるIDのタイプ（電子メール IDやCookie IDなど） | 使用可能 |
-   | グローバルアカウント ID | [B2B edition] Dimension | グローバルアカウントコンテナを使用する場合のグローバルアカウント ID | 使用可能 |
-   | アカウント ID | [B2B edition] Dimension | アカウントコンテナを使用する際のアカウント ID | **必須** （B2Bのみ） |
-   | 商談 ID | [B2B edition] Dimension | 商談コンテナの使用時の商談ID | 使用可能 |
-   | 購買グループ ID | [B2B edition] Dimension | 購買グループコンテナを使用する場合の購買グループ ID | 使用可能 |
+   | グローバルアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | グローバルアカウントコンテナを使用する場合のグローバルアカウント ID | 使用可能 |
+   | 商談ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | 商談コンテナの使用時の商談ID | 使用可能 |
+   | 購買グループ ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | 購買グループコンテナを使用する場合の購買グループ ID | 使用可能 |
    | 四半期 | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 | 使用不可 |
    | リピートセッション | 指標 | まだセッションが始まっていない場合 | 使用不可 |
    | セッションタイプ | ディメンション | 2つの値：初回または再試行 | 使用不可 |
@@ -182,9 +176,9 @@ ht-degree: 22%
    | [!UICONTROL **フィードの種類**] | 作成するフィードのタイプを選択します。<ul><li>[!UICONTROL **ライブフィード**]：現在および将来のデータを書き出します。</li><li>[!UICONTROL **バックフィルフィード**]：過去2日間の履歴データを書き出します。</li></ul> |
    | [!UICONTROL **開始日**] | データフィードを開始する日付を指定します。 履歴データのデータフィードの処理をすぐに開始するには、[!UICONTROL **バックフィルフィード**]&#x200B;が選択されていることを確認し、データが収集されている過去の任意の日付にこの日付を設定します。 開始日は、データビューのタイムゾーンに基づいています。 |
    | [!UICONTROL **終了日**] | データフィードを終了する日付を指定します。 終了日は、データビューのタイムゾーンに基づいています。 |
-   | [!UICONTROL **頻度**] | データフィードを送信する頻度を選択します。 タイムスタンプが周波数ウィンドウ内にあるイベントは、データフィード配信に含まれます。 [!UICONTROL **ルックバック日付範囲**]&#x200B;および&#x200B;[!UICONTROL **処理遅延**] フィールドは、選択した配信頻度のデータに含まれるイベントにも影響する可能性があります。<p>1時間分のデータまたは1日分のデータを含めるように選択します。</p><ul><li>**毎日**: フィードには、データビューのタイムゾーンの午前0時から午前0時までの1日分のデータが含まれます。 このオプションは、バックフィルフィードまたはライブフィードに使用します。</li><li>**時間単位**: フィードには、1時間のデータが含まれます。 ライブフィードにこのオプションを使用します。</li></ul> |
+   | [!UICONTROL **頻度**] | データフィードを送信する頻度を選択します。 タイムスタンプが周波数ウィンドウ内にあるイベントは、データフィード配信に含まれます。 [!UICONTROL **ルックバック日付範囲**]&#x200B;および&#x200B;[!UICONTROL **処理遅延**] フィールドは、選択した配信頻度のデータに含まれるイベントにも影響する可能性があります。<p>ライブフィードの場合は、1時間分のデータまたは1日分のデータを含めるように選択します。 バックフィルのフィードは日次で行う必要があります。</p><ul><li>**毎日**: フィードには、データビューのタイムゾーンの午前0時から午前0時までの1日分のデータが含まれます。 このオプションは、バックフィルフィードまたはライブフィードに使用します。</li><li>**時間単位**: フィードには、1時間のデータが含まれます。 ライブフィードにこのオプションを使用します。</li></ul> |
    | [!UICONTROL **ルックバック日付範囲**] | データフィード配信を処理する際にCustomer Journey Analyticsがどの程度戻って表示されるかを制御します。 <p>この設定では、データフィード出力に含めるイベントの時間枠を定義する頻度ウィンドウ（時間または日）は変更されません。 ただし、ルックバック日付範囲は、次の方法で配信されるデータに影響を与える可能性があります。 </p><ul><li>**セグメントの選定**: セグメントがデータフィード定義に適用されると、ルックバック日付範囲内のイベントによって、その人物が選定されるかどうかが決まります。 セグメントのコンテナ設定によってスコープが決まります。 （可能なコンテナは、Person、Session、またはEventです。 B2Bには、グローバルアカウント、アカウント、商談、購買グループなどの追加コンテナがあります）。  <p>例えば、人物コンテナが使用され、その人物がルックバック日付範囲で選定された場合、その人物の頻度ウィンドウ内のすべてのイベントも選定されます。</p></li><li>**セッション計算**: セッションの境界は、ルックバック日付範囲内のデータを使用して計算されます。</li><li>**派生フィールド変換**: コンテナを参照する派生フィールド関数（「要約」、「重複排除」、「深度」など）は、データフィードの書き出しでルックバック日付範囲を使用します。</li><li>**Dimensionの永続性**：個々のディメンションに永続性を設定する場合は、有効期限も選択して、ディメンション項目が設定されているイベントを超えて保持される期間を決定します。 <p>ルックバック日付範囲は、有効期限がデータビューで次のいずれかのオプションに設定されている場合のディメンションの永続性に影響します。</p><ul><li>[!UICONTROL **レポート ウィンドウ**]&#x200B;を有効期限として使用するデータ フィード定義の各ディメンションについて、ルックバック日付範囲が新しいレポート ウィンドウになります。</li><li>有効期限として&#x200B;[!UICONTROL **カスタム時間**]&#x200B;を使用するデータフィード定義の各ディメンションについて、選択されたカスタム時間がルックバック日付範囲を超えている場合、カスタム時間は無視され、ルックバック日付範囲がディメンションの有効期限に使用されます。<p>データビュー内のディメンションに対する永続性の設定について詳しくは、[永続性コンポーネント設定](/help/data-views/component-settings/persistence.md)を参照してください。</p></li></ul> |
-   | [!UICONTROL **処理遅延**] | データフィードファイルを処理する前に、一定時間待つかどうかを選択します。 処理遅延中に発生した遅延ヒットは、データフィードに含まれます。<p>遅延は、モバイル実装に、オフラインデバイスがオンラインになり、データを送信する機会を与えるのに役立ちます。 また、以前に処理されたファイルを管理する際に、組織のサーバー側のプロセスに対応するためにも使用できます。 ほとんどの場合、遅延は必要ありません。 フィードを最大8時間（480分）遅らせることも、カスタム時間（9,999分、約1週間）を選択した場合はさらに長くすることもできます。<p>遅延が設定されていない場合は、頻度ウィンドウ（最終日または1時間）内のイベントのみがフィードに含まれます。</p> <p>訪問を含めるには、このカットオフの後に開始する必要があります。カットオフの前に開始し、処理遅延内に終了する訪問は含まれません。</p> <p>セッション、永続性、セグメントに必要です。</p><p>ディメンションには使用されません。 ディメンションは、ディメンションの割り当てと有効期限に基づいて、ディメンションごとに制御されます。 Dimension ルックバックは、処理遅延を超えることはできません。</p> |
+   | [!UICONTROL **処理遅延**] | データフィードファイルを処理するまでの待機時間を選択します。 処理遅延中に発生した遅延ヒットは、データフィードに含まれます。 <p>遅延は、モバイル実装に、オフラインデバイスがオンラインになり、データを送信する機会を与えるのに役立ちます。 また、以前に処理されたファイルを管理する際に、組織のサーバー側のプロセスに対応するためにも使用できます。 </p><p>フィードを2、3、4、または8時間遅らせることができます。<p>セッションを含めるには、処理遅延のカットオフの後にセッションを開始する必要があります。カットオフの前に開始し、処理遅延の中で終了するセッションは含まれません。</p> |
 
 1. 「[!UICONTROL **宛先**]」セクションで、データを送信する宛先を設定します。
 
@@ -210,59 +204,7 @@ ht-degree: 22%
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-## 列テンプレートの管理
 
-テンプレートを使用すると、作成した将来のデータフィードに同じ列を再利用できます。
-
-テンプレートを管理する場合は、新しいテンプレートの作成、作成済みのテンプレートの使用、テンプレートのコピー、テンプレートの編集、テンプレートの削除を行うことができます。
-
-**[!UICONTROL 管理者]** > **[!UICONTROL データフィード]** > **[!UICONTROL テンプレートの管理]**
-
-![列テンプレートの管理](assets/data-feed-template-manage.png)
-
-### 列テンプレートの作成
-
-同じ列を使用する複数のデータフィードを作成する場合、Adobeでは列テンプレートを作成することをお勧めします。 作成した列テンプレートは、組織内の誰でも使用できます。
-
-列テンプレートを作成するには：
-
-1. Adobe Analyticsで、[!UICONTROL **管理者**] > [!UICONTROL **データフィード**] > **[!UICONTROL テンプレートの管理]**&#x200B;に移動します。
-
-1. **[!UICONTROL 新しいテンプレートを作成]**&#x200B;を選択して、新しい列テンプレートを作成します。
-
-   ![列テンプレートの作成](assets/data-feed-template-create.png)
-
-1. 「**[!UICONTROL テンプレート名]**」フィールドで、テンプレートの名前を指定します。
-
-1. 左側の&#x200B;**[!UICONTROL Available]** セクションで、含める列を選択し、**[!UICONTROL Include]**&#x200B;を選択します。 Adobe Analyticsで使用可能なすべてのデータ列を使用できます。 複数の列を選択するには、**[!UICONTROL Shift]**&#x200B;を押すか、**[!UICONTROL Command]** （macOS）または&#x200B;**[!UICONTROL Ctrl]** （Windows）を押します。 「**[!UICONTROL すべて追加]**」をクリックして、データフィードにすべての列を含めます。
-
-   追加した列は、右側の&#x200B;**[!UICONTROL Included]** セクションに表示されます。
-
-1. 「**[!UICONTROL 保存]**」を選択します。
-
-### 列テンプレートの編集
-
-1. Adobe Analyticsで、[!UICONTROL **管理者**] > [!UICONTROL **データフィード**] > **[!UICONTROL テンプレートの管理]**&#x200B;に移動します。
-
-1. 編集するテンプレートを選択し、**[!UICONTROL 編集]**&#x200B;を選択します。
-
-1. 編集を行い、**[!UICONTROL 保存]**&#x200B;を選択します。
-
-### 列テンプレートのコピー
-
-1. Adobe Analyticsで、[!UICONTROL **管理者**] > [!UICONTROL **データフィード**] > **[!UICONTROL テンプレートの管理]**&#x200B;に移動します。
-
-1. コピーするテンプレートを選択してから、**[!UICONTROL コピー]**&#x200B;を選択します。
-
-1. 「**[!UICONTROL テンプレート名]**」フィールドで、テンプレートの名前を指定します。
-
-1. 追加の変更を加え、**[!UICONTROL 保存]**&#x200B;を選択します。
-
-### 列テンプレートの削除
-
-1. Adobe Analyticsで、[!UICONTROL **管理者**] > [!UICONTROL **データフィード**] > **[!UICONTROL テンプレートの管理]**&#x200B;に移動します。
-
-1. 削除する1つ以上のテンプレートを選択し、**[!UICONTROL 削除]**&#x200B;を選択します。
 
 
 <!-- why would you want to do this? -->
