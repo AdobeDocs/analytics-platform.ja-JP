@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c72fdec6717e94c42264836ebd7ed2f039d55087
+source-git-commit: fed0d4a0a3c956b2db30a2c2108e1e4cde3f3abe
 workflow-type: tm+mt
-source-wordcount: 891
-ht-degree: 41%
+source-wordcount: 787
+ht-degree: 47%
 
 ---
 
@@ -49,7 +49,6 @@ ht-degree: 41%
 | **ネイティブモバイルアプリエクスペリエンスに対するContent Analyticsのサポート**<br/>&#x200B;企業は、iOSおよびAndroid アプリに対してコンテンツパフォーマンス分析を拡張し、画像アセットと詳細なエクスペリエンス要素をキャプチャして、どのアプリ内コンテンツがユーザーエンゲージメントとビジネス成果を促進するのかを把握できます。<p> [&#x200B; ドキュメント &#x200B;](/help/content-analytics/content-analytics.md)が更新され、モバイルチャネルの機能と設定が説明されます。 [Content Analytics Mobile SDK拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に関する情報は、[Adobe Developer](https://developer.adobe.com/)で入手できます。</p><p>Adobe Content Analyticsのすべてのユーザーがインサイトを利用できます。</p> | | 2026年5月6日（PT） |
 | **Adobe Engineering Agent でのデータ検証** <br/>新しいデータ検証スキルは、Data Engineering Agent 内で使用できます。 これらのスキルは、Customer Journey Analytics でデータが分析される前に、Adobe Experience Platform でデータ品質を直接すばやく評価するのに役立ちます。 <p>データ検証スキルにより、オンデマンド、フィールドレベル、データセットレベルでの検証が可能になり、統計的要約と無効値や異常値のインテリジェントな検出を組み合わせることができます。 </p><p>データ検証スキルを使用することで、手動の QA 作業を削減し、データエンジニアリングワークフローをまたいで信頼できるデータのオンボーディングと変換を高速化できます。</p><p>（ドキュメントのリンクは以下を参照。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年5月19日（PT） <p>（当初は 2026年3月31日（PT）にリリースされる予定でした）</p> |
 | **Content Analytics:Content Analyticsのラインビジュアライゼーションのサムネールとプレビュー** <br/>[&#x200B; サムネールとプレビュー](/help/content-analytics/report/report.md)が、のラインビジュアライゼーションでアセットとエクスペリエンスに使用できるようになりました。 |  | 2026年5月20日（PT） |
-| **Agent OrchestratorのData Insights Agent** <br/> Data Insights Agentは、Customer Journey Analyticsの右側のパネルで利用できるだけでなく、Agent Orchestratorの一部として利用できるようになりました。 つまり、Journey Optimizer内などの他のExperience Platformアプリで作業している間に、Customer Journey Analyticsのデータと機能に基づいたインサイトを得ることができるようになりました。<p>Customer Journey Analyticsでは、Data Insights Agentに次の機能強化が含まれています。</p><ul><li>Agent Orchestratorによる、より一貫性のある顧客体験</li><li>説明的な要約の段落</li><li>根本原因の分析による「なぜ」の質問への回答</li><li>インラインテーブル</li><li>他にもたくさんあります！&lt;/l></ul><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年5月末 |
 | **ストリーミングメディアサービス：スケジュールデータのサポート** <br/>過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、閲覧者数をより簡単かつ正確に追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。 特定のトピックやプログラムセグメントの閲覧者数データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に紐付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに紐付けることはできませんでした。</p><p>詳しくは、[スケジュールデータをアップロードしてライブコンテンツを追跡する](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/track-schedule-data)を参照してください。</p> | 2025年10月29日（PT） | 2026年上半期<p>（当初は 2025年10月29日（PT）にリリースされる予定でした）</p> |
 
 {style="table-layout:auto"}
