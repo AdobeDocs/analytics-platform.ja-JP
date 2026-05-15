@@ -5,53 +5,31 @@ title: Analytics データフィードの概要
 feature: Components
 hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5e77857ca846767e3b9e7479baa4a4b18c6e3c8f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 40%
+source-wordcount: '221'
+ht-degree: 21%
 
 ---
 
 # データフィードの概要
 
-データフィードは、Customer Journey Analyticsから生データを取得する強力な方法です。 この生データは、アドビ以外の他のプラットフォームで使用し、組織の裁量で使用できます。 データは、各時間の終了時に時間単位のバッチで、または毎日の終わりに日単位のバッチで配信されます。
+データフィードは、Customer Journey Analyticsから生データを取得する強力な方法です。 自社の裁量により、Adobe以外のプラットフォームでもこの生データを使用できます。 データは、各時間の終了時に時間単位のバッチで、または毎日の終わりに日単位のバッチで配信されます。
 
 ## 前提条件
 
-データフィードを使用する前に、次の要件をすべて満たしていることを確認してください。
+データフィードを使用する前に、次のすべての要件を満たしていることを確認してください。
 
-* データをAdobe Customer Journey Analyticsに取り込み、作業中の実装。<!-- For more information, see Data ingestion overview - add link -->
-* アカウントがAnalytics製品の管理者であるか、アカウントがデータフィードへのアクセス権を持つ製品プロファイルに属している。<!--???-->
-* Amazon S3、Google Cloud Platform、Azure RBAC、またはAzure SASで構成されたバケット。<!--Which cloud providers do we support??-->
-* （レガシー：従来のFTPおよびSFTP宛先タイプにのみ必要） FTP サイトと資格情報が手元にある（組織から提供されたFTP資格情報） <!--Delete???-->
+* Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->にデータを取り込む作業中の実装
+* アカウントがAnalytics製品管理者であるか、アカウントがデータフィード <!--???-->へのアクセス権を持つ製品プロファイルに属しています
+* {DNL Amazon S3}、{DNL Google Cloud Platform}、{DNL Azure RBAC}または {DNL Azure SAS}
 
-## Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較
+## 基本を学ぶ
 
-Customer Journey Analyticsのデータフィード機能は、Adobe Analyticsとは異なります。 詳しくは、[Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)を参照してください。
+Customer Journey Analyticsのデータフィードの使用を開始するには、まず、Customer Journey AnalyticsのデータフィードとAdobe Analyticsのデータフィードの違いを理解します。 違いを理解したら、Adobe Analytics データフィードをCustomer Journey Analyticsにマッピングしてから、データフィードの作成を開始できます。
 
+1. [Customer Journey AnalyticsとAdobe Analyticsのデータ フィードの違いを理解する](/help/components/exports/cja-data-feeds/df-comparison.md)。
 
-## 次の手順
+1. [Adobe Analytics データフィード列をCustomer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)にマッピングします。
 
-以下のリソースは、データフィードを取得する基本的なワークフローを理解するのに役立ちます。 基本的なワークフローを理解したら、組織内のチームと協力して、生データをデータベースに保存または取り込むことができます。
-
-* データフィードのベストプラクティス <!--add link-->: データフィードを作成および管理するためのベストプラクティスです。
-* データフィードを作成<!--add link-->: データフィードを作成するための技術的な詳細。個々のフィールドをより詳細に説明します
-* データフィードの管理<!--add link-->: データフィードのインターフェイスの操作について詳しく見る
-* データフィードの内容<!--add link-->：圧縮ファイル内の内容を理解する
-* データ列の定義<!--add link-->：使用可能なすべての列の包括的なリスト。
-
-<!-- Is this still the output users can download from the destination? I aske Jun. -->
-
->[!BEGINSHADEBOX]
-
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィードインターフェイスの操作](https://video.tv.adobe.com/v/3428564?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
-
->[!ENDSHADEBOX]
-
-
-
->[!BEGINSHADEBOX]
-
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [データフィード ID の検索](https://video.tv.adobe.com/v/3480885?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
-
->[!ENDSHADEBOX]
+1. [ データフィードを作成](/help/components/exports/cja-data-feeds/create-feed.md)。
