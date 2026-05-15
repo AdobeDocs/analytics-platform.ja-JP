@@ -32,4 +32,4 @@ Customer Journey Analyticsのデータフィードの使用を開始するには
 
 1. [Adobe Analytics データフィード列をCustomer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)にマッピングします。
 
-1. [ データフィードを作成](/help/components/exports/cja-data-feeds/create-feed.md)。
+1. [&#x200B; データフィードを作成](/help/components/exports/cja-data-feeds/create-feed.md)。
