@@ -1,20 +1,20 @@
 ---
-title: Content Analytics Tags Agnositc Configuration
-description: Experience Platform Data Collection Tagsを使用せずにContent Analyticsを設定する方法を説明します。
+title: JavaScriptキブラリ
+description: Experience Platform Data Collection Tagsを使用せずにContent Analyticsを設定し、代わりにContent Analytics JavaScript ライブラリを使用する方法を説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 
-# Content Analytics タグに依存しない設定
+# Content Analytics JavaScript library
 
-Adobe Content Analytics JavaScript ライブラリを使用すると、Experience Platform Edge Networkを介してAdobe Experience Platformにコンテンツデータを送信することで、web サイト上のコンテンツ関連イベントを追跡できます。 このライブラリは、Adobe Experience Platform タグ（Launch）を使用せずにContent Analyticsを実装する場合に使用します。
+Adobe Content Analytics JavaScript ライブラリを使用すると、Experience Platform Edge Networkを介してAdobe Experience Platformにコンテンツデータを送信することで、web サイト上のコンテンツ関連イベントを追跡できます。 このライブラリは、Adobe Experience Platform タグを使用せずにContent Analyticsを実装する場合に使用します。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Adobe Content Analytics JavaScript ライブラリを使用すると、Experienc
 >
 >* `initializeContentLibrary`を呼び出す前に、Adobe Experience Platform Web SDK （Alloy）をページ上で初期化する必要があります。
 >* Content Analytics ガイド付きコンフィギュレーションウィザードを実行して、Content Analyticsのコンフィギュレーションの前提条件を設定するために必要なすべての手順をガイドします。
->* ガイド付き設定が完了すると、設定に固有のJavaScript設定が、その設定ビューで使用できるようになります。
+>* ガイド付き設定が完了すると、JavaScriptの設定を使用できるようになります。
 
 
 ## インストール
@@ -94,7 +94,7 @@ initializeContentLibrary({
 });
 ```
 
-## エクスペリエンスの取り込みと定義
+## エクスペリエンスのキャプチャと定義
 
 エクスペリエンスの追跡を有効にし、web サイトでのエクスペリエンスの識別方法を制御します。 エクスペリエンスは、**ドメインの正規表現**&#x200B;と、一致するページ内で1つのエクスペリエンスを別のエクスペリエンスと区別するオプションの&#x200B;**クエリパラメーター**&#x200B;を組み合わせることで定義されます。
 
