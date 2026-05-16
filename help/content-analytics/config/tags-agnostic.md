@@ -1,10 +1,10 @@
 ---
-title: JavaScriptキブラリ
+title: Content Analytics JavaScript Library
 description: Experience Platform Data Collection Tagsを使用せずにContent Analyticsを設定し、代わりにContent Analytics JavaScript ライブラリを使用する方法を説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+source-git-commit: 35abfb5b77384b16beaddab2554a7d48d10be012
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
