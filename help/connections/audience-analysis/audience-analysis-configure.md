@@ -8,7 +8,7 @@ exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="プライマリ ID 名前空間を使用"
->abstract="Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Experience Platform でパーティション分割に使用するプライマリキーです。 <br/>このオプションを無効のままにした場合は、下の「ID名前空間」フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
+>abstract="Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Experience Platform でパーティション分割に使用するプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
 
 <!-- markdownlint-enable MD034 -->
 

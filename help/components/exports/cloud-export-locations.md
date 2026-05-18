@@ -5,10 +5,21 @@ title: クラウドの書き出し場所の設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/7Ajjn92O63TWPEgA5ddJZ7aOgm22T8C00lLZ-UcRFt4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3307'
-ht-degree: 23%
+source-wordcount: 3307
+ht-degree: 25%
 
 ---
 
@@ -28,7 +39,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="ファイル名とパス"
->abstract="この場所に送信される自動書き出しに使用する動的なカスタムファイル名を指定します。 ファイル名の前に動的なカスタムファイルパスを付けることもできます。 <br/> ファイル名とパスで変数を使用して、動的にします。 <br/>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2026年1月15日にこの宛先に自動的に送信される書き出しには、次のファイルパスと名前が含まれます。`[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>使用可能な変数のリストについては、以下のリンクをクリックしてください。"
+>abstract="この場所に送信される自動書き出しに使用する動的なカスタムファイル名を指定します。 ファイル名の前に動的なカスタムファイルパスを付けることもできます。 <br/>変数を動的にするには、ファイル名とパスで変数を使用します。 <br/>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}` を指定した場合、2026年1月15日（PT）に自動的にこの宛先に送信される書き出しには、次のファイルパスと名前が含まれます。`[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv`<br/>使用可能な変数のリストについて詳しくは、以下のリンクをクリックしてください。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -152,7 +163,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するGCP アカウント内のバケット。 <p>Adobeが提供するプリンシパルに`roles/storage.objectCreator`権限を付与していることを確認してください。 （プリンシパルは、[Google Cloud Platform アカウントの設定時](/help/components/exports/cloud-export-accounts.md)に提供されます）。 <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するGCP アカウント内のバケット。 <p>Adobeが提供するプリンシパルに`roles/storage.objectCreator`権限を付与していることを確認してください。 （プリンシパルは、[Google Cloud Platform アカウントの設定時](/help/components/exports/cloud-export-accounts.md)に提供されます）。 <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **接頭辞**] | データを配置するバケット内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
    | [!UICONTROL **ファイル名とパス**] | この場所に送信される自動書き出しに使用する動的なカスタムファイル名を指定します。 ファイル名の前に動的なカスタムファイルパスを付けることもできます。 <p>このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>ファイル名とパスで次のいずれかの変数を使用して、動的にします。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul></p><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`を指定した場合、2026年1月15日にこの宛先に自動的に送信される書き出しには、次のファイルパスと名前が含まれます。[prefix_folder_name]/2026/01/15/my-report-[UID]-1.csv</p> |
 

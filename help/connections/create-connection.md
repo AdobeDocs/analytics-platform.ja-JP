@@ -5,10 +5,26 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '10330'
-ht-degree: 89%
+source-wordcount: 10330
+ht-degree: 92%
 
 ---
 
@@ -77,7 +93,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="ID 設定の変更 "
->abstract="ID 設定を変更すると、接続インターフェイスで変更を保存した後、このデータセットの接続データが削除されます。 新しい設定に基づいて、データセットのデータバックフィルを手動で開始する必要があります。<br/><br/>削除プロセスが完了するまで、レポートの遅延が発生する可能性があります。"
+>abstract="ID 設定を変更すると、接続インターフェイスで変更を保存した後、このデータセットの接続データが削除されます。 新しい設定に基づいてデータセットのデータバックフィルを手動で開始する必要があります。<br/><br/>削除プロセスが完了するまでレポートの遅延が生じる可能性があります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -117,32 +133,32 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**このオプションを有効にすると、Customer Journey Analyticsのライセンス行に対して、接続内のデータの各行が毎月割り当てられます。 このオプションは、Connections Usage UI内に表示されます。**<br><br/> Customer Journey Analyticsでのデータ行の追加使用に慣れている場合にのみ、このオプションを検討してください。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
+>abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Customer Journey Analytics からこの接続を削除"
->abstract="このJourney Optimizer接続は、現在Customer Journey Analyticsで使用されています。 接続を使用すると、次のことが可能になります。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/> Journey Optimizer では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
+>abstract="この Journey Optimizer 接続は現在、Customer Journey Analytics で使用されています。 接続では、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/> Journey Optimizer では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Brand Concierge 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey AnalyticsでBrand Conciergeデータを詳細に分析できます。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**このオプションを有効にすると、Customer Journey Analyticsのライセンス行に対して、接続内のデータの各行が毎月割り当てられます。 このオプションは、Connections Usage UI内に表示されます。**<br><br/> Customer Journey Analyticsでのデータ行の追加使用に慣れている場合にのみ、このオプションを検討してください。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
+>abstract="このオプションを使用すると、Brand Concierge 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Brand Concierge データの詳細な分析を実行する。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Customer Journey Analytics からこの接続を削除"
->abstract="このBrand Concierge接続は、現在Customer Journey Analyticsで使用されています。 接続を使用すると、次のことが可能になります。<ul><li>Customer Journey AnalyticsでBrand Conciergeデータを詳細に分析できます。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/> Brand Concierge では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
+>abstract="この Brand Concierge 接続は現在、Customer Journey Analytics で使用されています。 接続では、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Brand Concierge データの詳細な分析を実行する。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/> Brand Concierge では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、製品の使用状況接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況接続と関連データビューを編集する。</li></ul>**このオプションを有効にすると、Customer Journey Analyticsのライセンス行に対して、接続内のデータの各行が毎月割り当てられます。 このオプションは、Connections Usage UI内に表示されます。**<br><br/> Customer Journey Analyticsでのデータ行の追加使用に慣れている場合にのみ、このオプションを検討してください。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
+>abstract="このオプションを使用すると、製品の使用状況接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況接続と関連データビューを編集する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="Customer Journey Analytics からこの接続を削除"
->abstract="この製品使用状況コネクションは、現在Customer Journey Analyticsで使用されています。 接続を使用すると、次のことが可能になります。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況接続と関連データビューを編集する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/>&#x200B;製品の使用状況では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
+>abstract="この製品の使用状況接続は現在、Customer Journey Analytics で使用されています。 接続では、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況接続と関連データビューを編集する。</li></ul>**接続を削除すると、Customer Journey Analytics での詳細な分析はできなくなります。 接続および関連するデータビューはデフォルトの状態にリセットされ、編集できなくなります。**<br/><br/>**Customer Journey Analytics でのこの接続の課金には、接続が削除された月の 1 か月分の料金が含まれます。**<br/><br/>&#x200B;製品の使用状況では、接続は有効なままになります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -318,7 +334,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="オプションコンテナ"
->abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL &#x200B; グローバルアカウント &#x200B;]**：接続でグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL 商談]**：接続で商談の設定を有効にします。<br/>**[!UICONTROL 購買グループ&#x200B;]**：接続内の購買グループの設定を有効にします。"
+>abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL グローバルアカウント&#x200B;]**：接続内のグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL オポチュニティ]**：接続内のオポチュニティに設定を有効にします。<br/>**[!UICONTROL 購買グループ&#x200B;]**：接続内の購買グループの設定を有効にします。"
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -383,7 +399,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="オプションコンテナ"
->abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL &#x200B; グローバルアカウント &#x200B;]**：接続でグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL 商談]**：接続で商談の設定を有効にします。<br/>**[!UICONTROL 購買グループ&#x200B;]**：接続内の購買グループの設定を有効にします。"
+>abstract="追加のコンテナを選択します。<br/><br/>**[!UICONTROL グローバルアカウント&#x200B;]**：接続内のグローバルアカウントの設定を有効にします。<br/>**[!UICONTROL オポチュニティ]**：接続内のオポチュニティに設定を有効にします。<br/>**[!UICONTROL 購買グループ&#x200B;]**：接続内の購買グループの設定を有効にします。"
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
