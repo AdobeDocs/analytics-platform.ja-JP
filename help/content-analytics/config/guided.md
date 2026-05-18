@@ -18,10 +18,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+source-git-commit: add42fb00c3ce65d9c40bb023bd6bf8bdd397ee1
 workflow-type: tm+mt
-source-wordcount: 4074
-ht-degree: 47%
+source-wordcount: 4111
+ht-degree: 46%
 
 ---
 
@@ -369,7 +369,9 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
->abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。"
+>abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/> タグに依存しない実装の場合は、**[!UICONTROL 新規作成]**&#x200B;を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
+
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
