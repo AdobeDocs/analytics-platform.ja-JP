@@ -4,11 +4,29 @@ description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 373deaea2b7d73484a3983bde490a86e950c2c0e
 workflow-type: tm+mt
 source-wordcount: 818
@@ -26,12 +44,12 @@ ht-degree: 45%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **CJA API Postman コレクション** <br/>CJA API エンドポイントの呼び出しにダウンロード可能なPostman コレクションを使用できます。<p>詳しくは、[analytics-cja-postman-collections Github リポジトリ ](https://github.com/AdobeDocs/analytics-cja-postman-collections)を参照してください。  </p> | | 2026年5月1日（PT） |
+| **CJA API Postman コレクション** <br/>CJA API エンドポイントの呼び出しにダウンロード可能なPostman コレクションを使用できます。<p>詳しくは、[analytics-cja-postman-collections Github リポジトリ &#x200B;](https://github.com/AdobeDocs/analytics-cja-postman-collections)を参照してください。  </p> | | 2026年5月1日（PT） |
 | **Customer Journey Analytics用MCP サーバー** <br/>Analytics MCP （Model Context Protocol）サーバーを使用すると、サポートされているMCP クライアントをAdobe Customer Journey Analyticsに接続できます。 接続が完了すると、MCP クライアントは、製品固有のツールを呼び出して、データの取得、クエリの実行、またはLLMまたはエージェント型ワークフローの一部としてサポートされている操作を実行できます。 詳しくは、[Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/)を参照してください。<p>ベータ期間中にこれらのMCP サーバーを使用した場合は、ベータ版と実稼動エンドポイントの間に異なるURLがあることに注意してください。 ベータ期間中に作成されたエージェント型ワークフローが、5月31日より前に実稼動エンドポイントを使用するように更新されていることを確認します。</p> | | 2026年5月5日（PT） |
-| **ネイティブモバイルアプリエクスペリエンスに対するContent Analyticsのサポート**<br/>&#x200B;企業は、iOSおよびAndroid アプリに対してコンテンツパフォーマンス分析を拡張し、画像アセットと詳細なエクスペリエンス要素をキャプチャして、どのアプリ内コンテンツがユーザーエンゲージメントとビジネス成果を促進するのかを把握できます。<p> [ ドキュメント ](/help/content-analytics/content-analytics.md)が更新され、モバイルチャネルの機能と設定が説明されます。 [Content Analytics Mobile SDK拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に関する情報は、[Adobe Developer](https://developer.adobe.com/)で入手できます。</p><p>Adobe Content Analyticsのすべてのユーザーがインサイトを利用できます。</p> | | 2026年5月6日（PT） |
-| **ジャーニーキャンバスの機能強化** <br/>ジャーニーキャンバスのビジュアライゼーションでは、次の機能強化を利用できます。 <ul><li>[ ジャーニーからノード ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)を除外します。</li><li>ノードのフォールアウトデータを使用して、[ セグメントを作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[ トレンド ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[ オーディエンス ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)、[分類](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)します。</li></ul> | | 2026年5月18日（PT） |
+| **ネイティブモバイルアプリエクスペリエンスに対するContent Analyticsのサポート**<br/>&#x200B;企業は、iOSおよびAndroid アプリに対してコンテンツパフォーマンス分析を拡張し、画像アセットと詳細なエクスペリエンス要素をキャプチャして、どのアプリ内コンテンツがユーザーエンゲージメントとビジネス成果を促進するのかを把握できます。<p> [&#x200B; ドキュメント &#x200B;](/help/content-analytics/content-analytics.md)が更新され、モバイルチャネルの機能と設定が説明されます。 [Content Analytics Mobile SDK拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に関する情報は、[Adobe Developer](https://developer.adobe.com/)で入手できます。</p><p>Adobe Content Analyticsのすべてのユーザーがインサイトを利用できます。</p> | | 2026年5月6日（PT） |
+| **ジャーニーキャンバスの機能強化** <br/>ジャーニーキャンバスのビジュアライゼーションでは、次の機能強化を利用できます。 <ul><li>[&#x200B; ジャーニーからノード &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)を除外します。</li><li>ノードのフォールアウトデータを使用して、[&#x200B; セグメントを作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[&#x200B; トレンド &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[&#x200B; オーディエンス &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)、[分類](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)します。</li></ul> | | 2026年5月18日（PT） |
 | **Adobe Engineering Agent でのデータ検証** <br/>新しいデータ検証スキルは、Data Engineering Agent 内で使用できます。 これらのスキルは、Customer Journey Analytics でデータが分析される前に、Adobe Experience Platform でデータ品質を直接すばやく評価するのに役立ちます。 <p>データ検証スキルにより、オンデマンド、フィールドレベル、データセットレベルでの検証が可能になり、統計的要約と無効値や異常値のインテリジェントな検出を組み合わせることができます。 </p><p>データ検証スキルを使用することで、手動の QA 作業を削減し、データエンジニアリングワークフローをまたいで信頼できるデータのオンボーディングと変換を高速化できます。</p><p>（ドキュメントのリンクは以下を参照。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年5月19日（PT） <p>（当初は 2026年3月31日（PT）にリリースされる予定でした）</p> |
-| **Content Analytics:Content Analyticsのラインビジュアライゼーションのサムネールとプレビュー** <br/>[ サムネールとプレビュー](/help/content-analytics/report/report.md)が、のラインビジュアライゼーションでアセットとエクスペリエンスに使用できるようになりました。 |  | 2026年5月20日（PT） |
+| **Content Analytics:Content Analyticsのラインビジュアライゼーションのサムネールとプレビュー** <br/>[&#x200B; サムネールとプレビュー](/help/content-analytics/report/report.md)が、のラインビジュアライゼーションでアセットとエクスペリエンスに使用できるようになりました。 |  | 2026年5月20日（PT） |
 | **ストリーミングメディアサービス：スケジュールデータのサポート** <br/>過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、閲覧者数をより簡単かつ正確に追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。 特定のトピックやプログラムセグメントの閲覧者数データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に紐付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに紐付けることはできませんでした。</p><p>詳しくは、[スケジュールデータをアップロードしてライブコンテンツを追跡する](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/track-schedule-data)を参照してください。</p> | 2025年10月29日（PT） | 2026年上半期<p>（当初は 2025年10月29日（PT）にリリースされる予定でした）</p> |
 
 {style="table-layout:auto"}

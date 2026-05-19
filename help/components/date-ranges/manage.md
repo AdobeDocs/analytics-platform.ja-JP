@@ -5,10 +5,16 @@ feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
 TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 606
@@ -28,7 +34,7 @@ ht-degree: 29%
 
 日付範囲マネージャーには、次のインターフェイス要素があります。
 
-![日付範囲インターフェイス ](assets/date-ranges-manager.png)
+![日付範囲インターフェイス &#x200B;](assets/date-ranges-manager.png)
 
 ### 日付範囲リスト
 
@@ -36,7 +42,7 @@ ht-degree: 29%
 
 | 列 | 説明 |
 | --- | --- |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 日付範囲を![ スター](/help/assets/icons/Star.svg)に優先するか、![ スターアウトライン ](/help/assets/icons/StarOutline.svg)に優先しない場合に選択します。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 日付範囲を![&#x200B; スター](/help/assets/icons/Star.svg)に優先するか、![&#x200B; スターアウトライン &#x200B;](/help/assets/icons/StarOutline.svg)に優先しない場合に選択します。 |
 | **[!UICONTROL タイトルと説明]** | タイトルと説明を編集するには、タイトルリンクを選択します。これにより、[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)が開きます。 |
 | **[!UICONTROL 所有者]** | 日付範囲の所有者。 |
 | **[!UICONTROL タグ]** | この日付範囲のタグ。 |
@@ -74,11 +80,11 @@ ht-degree: 29%
 フィルターリストをフィルタリングするには、次の手順に従います。
 
 1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。 フィルターリストにスペースが必要な場合は、もう一度「![フィルター](/help/assets/icons/Filter.svg)」を選択してパネルを閉じることができます。
-1. 使用可能な[ フィルターセクション ](#filter-sections)のいずれかを使用して、日付範囲をフィルタリングできます。
+1. 使用可能な[&#x200B; フィルターセクション &#x200B;](#filter-sections)のいずれかを使用して、日付範囲をフィルタリングできます。
 
    >[!INFO]
    >
-   >*項目*&#x200B;は、[日付範囲リスト ](#date-ranges-list)に表示される日付範囲アイテムを参照します。
+   >*項目*&#x200B;は、[日付範囲リスト &#x200B;](#date-ranges-list)に表示される日付範囲アイテムを参照します。
    > 
 
 #### フィルターセクション
@@ -88,7 +94,7 @@ ht-degree: 29%
 {{otherfiltersfiltersection}}
 
 
-[日付範囲リスト ](#date-ranges-list)は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、[アクティブなフィルターバー](#active-filter-bar)で確認できます。
+[日付範囲リスト &#x200B;](#date-ranges-list)は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、[アクティブなフィルターバー](#active-filter-bar)で確認できます。
 
 
 ## 日付範囲を編集
@@ -97,7 +103,7 @@ ht-degree: 29%
 
 * Workspace プロジェクトでは、[コンポーネント情報](/help/components/use-components-in-workspace.md#component-info)アイコンを使用します。
 
-* [[!UICONTROL 日付範囲] リスト ](#date-ranges-list)で、日付範囲のタイトルを選択します。
+* [[!UICONTROL 日付範囲] リスト &#x200B;](#date-ranges-list)で、日付範囲のタイトルを選択します。
 
 [日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。
 
