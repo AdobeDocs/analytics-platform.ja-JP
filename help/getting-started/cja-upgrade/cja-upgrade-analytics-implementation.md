@@ -5,10 +5,22 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/3xAhyPwd7MPlhnmbyni-GPNj6pF6fjx92nLkQrNtgPo
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 100%
+source-wordcount: 994
+ht-degree: 98%
 
 ---
 
@@ -109,7 +121,7 @@ Adobe Analytics は様々な方法で実装できます。 Customer Journey Anal
 | Adobe Analytics 拡張機能（タグ） | <p>Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。 アドビは他のソリューションや製品との統合を提供し、カスタムコードの導入に対応します。 これらのタスクはすべて、組織の開発チームに依存せずに実行できるので、自らサイト上のコードを更新できます。</p><p>この実装タイプについて詳しくは、[Analytics 拡張機能を使用した Adobe Analytics の実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/launch/overview)を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md) </li><li>[Web SDK への Adobe Analytics の移行](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
 | Experience Platform Web SDK（alloy.js） | Adobe Analytics の実装方法としてアドビが現在推奨しているのは、Experience Platform Web SDK です。 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。 <p>この実装タイプについて詳しくは、[Adobe Experience Platform Edge Network を使用した Adobe Analyticsの実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/overview)を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md) </li><li>[Platform にデータを送信する Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
 | Experience Platform Web SDK 拡張機能（タグ） | web データ用の Adobe Analytics の実装方法としてアドビが現在推奨しているのは、Experience Platform Web SDK です。 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。 <p>この実装タイプについて詳しくは、[Adobe Experience Platform Web SDK を使用した Adobe Analytics の実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/overview)を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md)</li><li>[Platform にデータを送信する Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Experience Platform Mobile SDK | Experience Platform Mobile SDK は、モバイルデータに Adobe Analytics を実装するためのアドビの現在のお勧めの方法です。 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。<p>Adobe Experience Platform Mobile SDK は、モバイルアプリでの Adobe Experience Cloud のソリューションとサービスを強化するのに役立ちます。 </p><p>この実装タイプについて詳しくは、[Adobe Experience Platform Mobile SDK を使用した Adobe Analytics の実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/mobile-sdk/overview)を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md) </li><li>[Platform にデータを送信する Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Experience Platform Mobile SDK | Experience Platform Mobile SDK は、モバイルデータに Adobe Analytics を実装するためのアドビの現在のお勧めの方法です。 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。<p>Adobe Experience Platform Mobile SDKは、モバイルアプリ内のAdobeのCX Enterprise ソリューションとサービスを強化するのに役立ちます。 </p><p>この実装タイプについて詳しくは、[Adobe Experience Platform Mobile SDK を使用した Adobe Analytics の実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/mobile-sdk/overview)を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md) </li><li>[Platform にデータを送信する Adobe Analytics Web SDK 実装の設定](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
 | 一括データ挿入 API | 一括データ挿入 API（BDIA）は Adobe Analytics の機能で、AppMeasurement などのクライアントサイドライブラリを使用する代わりに、多数のファイルからなるサーバーコールデータをアップロードできるものです。 </p><p>この実装タイプについて詳しくは、[一括データ挿入 API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/) を参照してください。</p> | <ul><li>[（推奨）継続的なデータ収集用の Experience Platform Web SDK の新しい実装。履歴データ用の Analytics ソースコネクタ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK の新しい実装](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network Server API と Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
 
 {style="table-layout:auto"}

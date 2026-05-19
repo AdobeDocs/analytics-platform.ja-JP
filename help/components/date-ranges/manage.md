@@ -1,12 +1,23 @@
 ---
 title: 日付範囲の管理
-description: Analysis Workspaceでの日付範囲の管理方法について説明します。
+description: Analysis Workspaceで日付範囲を管理する方法について説明します。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: 606
 ht-degree: 29%
 
 ---
@@ -14,28 +25,28 @@ ht-degree: 29%
 # 日付範囲の管理
 
 
-一元的な [!UICONTROL &#x200B; 日付範囲 &#x200B;] 管理インターフェイスから、日付範囲の共有、フィルタリング、タグ付け、承認、コピー、共有、削除や、日付範囲をお気に入りとしてマークできます。 日付範囲を管理するには：
+中央の[!UICONTROL 日付範囲]管理インターフェイスから、日付範囲を共有、フィルタリング、タグ付け、承認、コピー、共有、削除したり、日付範囲をお気に入りにマークしたりできます。 日付範囲を管理するには：
 
-* メインインターフェイスで **[!UICONTROL コンポーネント]** を選択し、「**[!UICONTROL 日付範囲]**」を選択します。
+* メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、**[!UICONTROL 日付範囲]**」を選択します。
 
 
 ## 日付範囲マネージャー
 
 日付範囲マネージャーには、次のインターフェイス要素があります。
 
-![&#x200B; 日付範囲インターフェイス &#x200B;](assets/date-ranges-manager.png)
+![日付範囲インターフェイス &#x200B;](assets/date-ranges-manager.png)
 
 ### 日付範囲リスト
 
-日付範囲リスト ➊ には、すべての日付範囲が表示されます。 リストには、次の列があります。
+日付範囲リスト ➊には、すべての日付範囲が表示されます。 リストには、次の列があります。
 
 | 列 | 説明 |
 | --- | --- |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 日付範囲を ![&#x200B; 星 &#x200B;](/help/assets/icons/Star.svg) にするか、![&#x200B; 星アウトライン &#x200B;](/help/assets/icons/StarOutline.svg) にするかを選択します。 |
-| **[!UICONTROL タイトルと説明]** | タイトルと説明を編集するには、タイトルリンクを選択して [&#x200B; 日付範囲ビルダー &#x200B;](/help/components/date-ranges/create.md#date-range-builder) を開きます。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 日付範囲を![&#x200B; スター](/help/assets/icons/Star.svg)に優先するか、![&#x200B; スターアウトライン &#x200B;](/help/assets/icons/StarOutline.svg)に優先しない場合に選択します。 |
+| **[!UICONTROL タイトルと説明]** | タイトルと説明を編集するには、タイトルリンクを選択します。これにより、[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)が開きます。 |
 | **[!UICONTROL 所有者]** | 日付範囲の所有者。 |
 | **[!UICONTROL タグ]** | この日付範囲のタグ。 |
-| **[!UICONTROL 共有先]** | 日付範囲を共有した個人またはグループ。 選択して、「**[!UICONTROL 日付範囲を共有]** ダイアログを開きます。 |
+| **[!UICONTROL 共有先]** | 日付範囲を共有した個人またはグループ。 選択して、**[!UICONTROL 共有日付範囲]** ダイアログを開きます。 |
 | **[!UICONTROL 変更日時]** | 日付範囲が最後に変更された日時を表示します。 |
 
 {style="table-layout:auto"}
@@ -44,36 +55,36 @@ ht-degree: 29%
 
 ### アクションバー
 
-アクションバーの ➋ を使用して、日付範囲に対してアクションを実行できます。 アクションバーには、次のアクションが含まれます。
+アクション バー➋を使用して、日付範囲でアクションを実行できます。 アクションバーには、次のアクションが含まれます。
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [&#x200B; 日付範囲ビルダー &#x200B;](create.md#date-range-builder) を使用して、別の日付範囲を追加します。 |
-| ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストで日付範囲が選択されていない場合、この検索フィールドを使用して日付範囲を検索します。 |
-| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択した日付範囲にタグ付け。 **[!UICONTROL 日付範囲のタグ付け]** ダイアログで、選択した日付範囲のタグを選択または選択解除します。 「**[!UICONTROL 保存]**」を選択して、選択した日付範囲のタグを保存します。 |
-| ![共有](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共有]** | 選択した日付範囲を共有します。 **[!UICONTROL 日付範囲を共有]** ダイアログでは、![&#x200B; 検索 &#x200B;](/help/assets/icons/Search.svg)*個人またはグループを検索* または **[!UICONTROL 組織]** または **[!UICONTROL グループ]** を選択できます。 「**[!UICONTROL 保存]**」を選択して、選択した日付範囲の共有の詳細を保存します。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [日付範囲ビルダー](create.md#date-range-builder)を使用して、別の日付範囲を追加します。 |
+| ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストで日付範囲が選択されていない場合は、この検索フィールドを使用して日付範囲を検索します。 |
+| ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択した日付範囲にタグを付けます。 **[!UICONTROL タグ日付範囲]** ダイアログで、選択した日付範囲のタグを選択または選択解除します。 選択した日付範囲のタグを保存するには、**[!UICONTROL 保存]**&#x200B;を選択します。 |
+| ![共有](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共有]** | 選択した日付範囲を共有します。 **[!UICONTROL 共有日付範囲]** ダイアログで、![検索](/help/assets/icons/Search.svg) *個人またはグループを検索*&#x200B;するか、**[!UICONTROL 組織]**&#x200B;または&#x200B;**[!UICONTROL グループ]**&#x200B;を選択できます。 選択した日付範囲の共有の詳細を保存するには、**[!UICONTROL 保存]**&#x200B;を選択します。 |
 | ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択した日付範囲を削除します。 確認メッセージが表示されます。 |
-| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した 1 つの日付範囲の名前を変更します。 選択した場合、日付範囲の名前をインラインで変更できます。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択した日付範囲を承認します |
-| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択した日付範囲をコピーします。 同じ名前とサフィックスを持つ新しい日付範囲が作成されます（コピー） |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 選択した日付範囲を `Date ranges List.csv` ファイルにエクスポートします。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択した1つの日付範囲の名前を変更します。 選択すると、日付範囲の名前をインラインで変更できます。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択した日付範囲を承認します。 |
+| ![コピー](/help/assets/icons/Copy.svg) | **[!UICONTROL コピー]** | 選択した日付範囲をコピーします。 新しい日付範囲は、同じ名前と接尾辞（コピー）で作成されます |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 選択した日付範囲を`Date ranges List.csv` ファイルにエクスポートします。 |
 
 ### アクティブなフィルターバー
 
-フィルターバーの ➌ には、アクティブなフィルター（存在する場合）が表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。複数のフィルターが指定されている場合は、「すべて削除 **[!UICONTROL を使用して、すべてのフィルターを削除します]**。
+フィルターバー➌には、アクティブなフィルター（ある場合）が表示されます。 ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用すると、フィルターをすばやく削除できます。 複数のフィルターが指定されている場合は、**[!UICONTROL すべてを削除]**&#x200B;を使用してすべてのフィルターを削除します。
 
 ### フィルターパネル
 
-左側のパネルの **[!UICONTROL 「]** フィルター ➍」を使用して、日付範囲をフィルタリングできます。 フィルターパネルには、フィルターのタイプと、そのフィルターを適用する日付範囲の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
+日付範囲は、**[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用してフィルターできます。 フィルターパネルには、フィルターのタイプと、フィルターを適用する日付範囲の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
 
 フィルターリストをフィルタリングするには、次の手順に従います。
 
-1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。フィルターリストにスペースが必要な場合は、もう一度「![フィルター](/help/assets/icons/Filter.svg)」を選択してパネルを閉じることができます。
-1. 使用可能ないずれかの [&#x200B; フィルターセクション &#x200B;](#filter-sections) を使用して、日付範囲をフィルタリングできます。
+1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。 フィルターリストにスペースが必要な場合は、もう一度「![フィルター](/help/assets/icons/Filter.svg)」を選択してパネルを閉じることができます。
+1. 使用可能な[&#x200B; フィルターセクション &#x200B;](#filter-sections)のいずれかを使用して、日付範囲をフィルタリングできます。
 
    >[!INFO]
    >
-   >*項目* [&#x200B; 日付範囲リスト &#x200B;](#date-ranges-list) に表示される日付範囲項目を参照します。
+   >*項目*&#x200B;は、[日付範囲リスト &#x200B;](#date-ranges-list)に表示される日付範囲アイテムを参照します。
    > 
 
 #### フィルターセクション
@@ -83,23 +94,23 @@ ht-degree: 29%
 {{otherfiltersfiltersection}}
 
 
-[&#x200B; 日付範囲リスト &#x200B;](#date-ranges-list) は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、[アクティブなフィルターバー](#active-filter-bar)で確認できます。
+[日付範囲リスト &#x200B;](#date-ranges-list)は、フィルター設定に基づいて自動的に更新されます。 設定済みのフィルターは、[アクティブなフィルターバー](#active-filter-bar)で確認できます。
 
 
 ## 日付範囲を編集
 
-日付範囲は、次の 2 つの方法で編集します。
+日付範囲を編集するには、次の2つの方法があります。
 
 * Workspace プロジェクトでは、[コンポーネント情報](/help/components/use-components-in-workspace.md#component-info)アイコンを使用します。
 
-* [[!UICONTROL &#x200B; 日付範囲 &#x200B;] リスト &#x200B;](#date-ranges-list) で、日付範囲のタイトルを選択します。
+* [[!UICONTROL 日付範囲] リスト &#x200B;](#date-ranges-list)で、日付範囲のタイトルを選択します。
 
-[&#x200B; 日付範囲ビルダー &#x200B;](/help/components/date-ranges/create.md#date-range-builder) を使用して、日付範囲を編集します。
-
-
+[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。
 
 
-日付範囲マネージャーを使用して、日付範囲の共有、名前の変更または削除を行います。日付マネージャヘのアクセス方法：
+
+
+日付範囲マネージャーを使用して、日付範囲の共有、名前の変更または削除を行います。 日付マネージャヘのアクセス方法：
 
 1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
 1. [!UICONTROL コンポーネント]／[!UICONTROL 日付範囲]に移動します。
@@ -122,7 +133,7 @@ The date range manager includes the following options:
 Click the checkbox next to one or more date ranges for more options.
 
 * **Tag**: Apply a tag to all selected date ranges. Tags help you organize date ranges, and let you filter them using the left column.
-* **Share**: Share a date range to other Experience Cloud users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
+* **Share**: Share a date range to other CX Enterprise users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
 * **Delete**: Permanently delete the selected date range(s).
 * **Rename**: If a single date range is selected, you can change its title.
 * **Approve**: If you are a product admin, you can add a stamp of approval to a date range. Approved date ranges inform users in your organization that they are 'official', differentiating them from date ranges created by other users in your organization. Approved date ranges include a ![approved](../assets/approved.png) icon next to the title.
