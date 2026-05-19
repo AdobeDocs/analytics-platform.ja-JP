@@ -1,35 +1,40 @@
 ---
-title: グラフベースのステッチ
-description: グラフベースのステッチの概念と動作について説明します。
+title: グラフベースの合成
+description: グラフベースのステッチングの概念と仕組みを説明します。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 4cb54c684c76c2581b1f3f9aa00fcb743d7c6387
+TQID: https://experienceleague.adobe.com/eeNrn3hVytufmz195UHNakznBoVRQ0A-qfOYucFF-X0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 4%
+source-wordcount: 1899
+ht-degree: 70%
 
 ---
 
 # グラフベースのステッチ
 
-グラフベースのステッチでは、イベントデータセット、そのデータセットの永続 ID （cookie）、ID グラフから目的のユーザー ID 名前空間を指定します。 グラフベースのステッチは、あらゆるイベントに関して、Customer Journey Analytics データ分析で人物 ID 情報を使用できるようにします。 永続 ID は、Experience Platform ID サービスから ID グラフをクエリして、指定された名前空間から人物 ID を取得するために使用されます。
+グラフベースの合成では、イベントデータセット、そのデータセットの永続的ID （cookie）、およびID グラフから目的の人物ID名前空間を指定します。 グラフベースの合成では、任意のイベントでCustomer Journey Analytics data analysisで個人ID情報を使用できるようにします。 永続的IDは、Experience Platform ID サービスからID グラフをクエリして、指定された名前空間からユーザーIDを取得するために使用されます。
 
-イベントのユーザー ID 情報を取得できない場合は、その *未関連付け* イベントの代わりに永続 ID が使用されます。 その結果、ステッチが有効なデータセットを含む [&#x200B; 接続 &#x200B;](/help/data-views/data-views.md) に関連付けられた [&#x200B; データビュー &#x200B;](/help/connections/overview.md) では、人物 ID データビューコンポーネントに、イベントレベルで人物 ID 値または永続 ID 値のいずれかが含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 
-![&#x200B; グラフベースのステッチ &#x200B;](/help/stitching/assets/gbs.svg)
+![グラフベースのステッチ](/help/stitching/assets/gbs.png)
 
 ## identityMap
 
-グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity) 使用できます。
+グラフベースのステッチでは、次のシナリオで [`identityMap` フィールドグループ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity)の使用がサポートされます。
 
-- 名前空間でのプライマリ ID`identityMap` 使用して persistentID を定義します。
-   - 異なる名前空間に複数のプライマリ ID が見つかった場合、名前空間の ID は辞書順に並べ替えられ、最初の ID が選択されます。
-   - 単一の名前空間に複数のプライマリ ID が見つかった場合は、辞書学的に利用できる最初のプライマリ ID が選択されます。
+- `identityMap` 名前空間のプライマリ ID を使用して persistentID を定義します。
+   - 異なる名前空間に複数のプライマリ IDが見つかった場合、名前空間内のIDは辞書的に並べ替えられ、最初のIDが選択されます。
+   - 単一の名前空間に複数のプライマリ ID が見つかった場合、辞書順で最初に使用可能なプライマリ ID が選択されます。
 
-  次の例では、名前空間と ID によりプライマリ ID リストが並べ替えられ、最終的に選択された ID が表示されます。
+  次の例では、名前空間と ID により、並べ替えられたプライマリ ID リストが生成され、最後に選択された ID が表示されます。
 
   <table style="table-layout:auto">
      <tr>
@@ -49,7 +54,7 @@ ht-degree: 4%
   <table style="table-layout:auto">
     <tr>
       <th>並べ替えられた ID リスト</th>
-      <th>選択した ID</th>
+      <th>選択された ID</th>
     </tr>
     <tr>
       <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
@@ -57,10 +62,10 @@ ht-degree: 4%
     </tr>
   </table>
 
-- 名前空間 `identityMap` 使用して persistentID を定義します。
-   - persistentID の複数の値が `identityMap` 名前空間で見つかった場合、最初の辞書的に利用可能な ID が使用されます。
+- `identityMap` 名前空間を使用して persistentID を定義します。
+   - `identityMap` 名前空間に永続 ID の複数の値が見つかった場合、辞書順で最初に使用可能な ID が使用されます。
 
-  以下の例では、使用する名前空間として ECID を選択しています。 その結果、ID リストが並べ替えられ、最後に選択された ID が表示されます。
+  次の例では、使用する名前空間として ECID を選択しています。 その選択により、並べ替えられた ID リストが生成され、最後に選択された ID が表示されます。
 
   <table style="table-layout:auto">
      <tr>
@@ -80,7 +85,7 @@ ht-degree: 4%
   <table style="table-layout:auto">
     <tr>
       <th>並べ替えられた ID リスト</th>
-      <th>選択した ID</th>
+      <th>選択された ID</th>
     </tr>
     <tr>
       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
@@ -93,84 +98,84 @@ ht-degree: 4%
 
 ステッチでは、特定のデータセット内のデータに対して少なくとも 2 つのパスが作成されます。
 
-- **ライブステッチ**：は、永続 ID を使用して、ID グラフにクエリを実行し、選択した名前空間のユーザー ID を検索し、発生した各ヒット（イベント）をステッチしようとします。 人物 ID をルックアップから使用できる場合、この人物 ID は直ちに関連付けられます。
+- **ライブステッチ**：永続 ID を使用し、ID グラフのクエリを実行して、選択した名前空間のユーザー ID を検索し、各ヒット（イベント）を受信すると、ステッチを試みます。 ルックアップからユーザー ID が使用できる場合、このユーザー ID はすぐにステッチされます。
 
-- **ステッチを再生**:*再生* ID グラフから更新された ID に基づいてデータを再生します。 このステージでは、ID グラフが名前空間の ID を解決したので、以前は不明だったデバイス（永続的な ID）からのヒットがステッチされます。 再生は、**frequency** と **lookback window** の 2 つのパラメーターで決まります。 Adobeでは、次のパラメーターの組み合わせを使用できます。
-   - **毎日の頻度での毎日のルックバック**：データは毎日、24 時間のルックバックウィンドウで再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、認証されていないプロファイルは、サイトを訪問した日に認証を行う必要があります。
-   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[&#x200B; オプション &#x200B;](overview.md#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 週間未満の未ステッチデータは、次の週次再生まで再処理されません。
-   - **毎週の頻度での隔週ルックバック**：データは、毎週 1 回、隔週ルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](overview.md#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、2 週間未満の未ステッチデータは、次の週別の再生まで再処理されません。
-   - **毎週の頻度での毎月のルックバック**：データは、毎週、毎月のルックバックウィンドウで再生されます（[&#x200B; オプション &#x200B;](overview.md#options) を参照）。 このオプションには、認証されていないセッションを後から認証できるという利点があります。ただし、1 か月未満の未ステッチデータは、次の週次再生まで再処理されません。
+- **再生のステッチ**：ID グラフから更新された ID に基づいてデータを&#x200B;*再生*&#x200B;します。 このステージでは、ID グラフが名前空間の ID を解決するので、以前は不明だったデバイス（永続 ID）からのヒットがステッチされます。 再生を決定する2つのパラメーター：**頻度**&#x200B;と&#x200B;**ルックバックウィンドウ**。 アドビでは、これらのパラメーターの次の組み合わせを提供しています。
+   - **毎日の頻度での毎日のルックバック**：データは、24 時間のルックバックウィンドウで毎日再生されます。 このオプションには、再生がより頻繁に行われるという利点があります。ただし、未認証プロファイルは、サイトを訪問した日に認証を行う必要があります。
+   - **毎週の頻度での毎週のルックバック**：データは、毎週のルックバックウィンドウで週に 1 回再生されます（[オプション](overview.md#options)を参照）。 このオプションには、未認証セッションの認証にかなり長い時間をかけられるという利点があります。 ただし、1 週間未満の未ステッチデータは、次の毎週の再生まで再処理されません。
+   - **毎週の頻度での 2 週間ごとのルックバック**：データは、2 週間ごとのルックバックウィンドウで毎週 1 回再生されます（[オプション](overview.md#options)を参照）。 このオプションには、未認証セッションの認証にかなり長い時間をかけられるという利点があります。 ただし、2 週間未満の未ステッチデータは、次の毎週の再生まで再処理されません。
+   - **毎週の頻度での毎月のルックバック**：データは、毎月のルックバックウィンドウで毎週再生されます（[オプション](overview.md#options)を参照）。 このオプションには、未認証セッションの認証にかなり長い時間をかけられるという利点があります。 ただし、1 か月未満の未ステッチデータは、次の毎週の再生まで再処理されません。
 
-- **プライバシー**：プライバシー関連のリクエストを受信した場合、ソースデータセットからリクエストされた ID を削除する以外に、認証されていないイベントに対するその ID のステッチも取り消す必要があります。 また、その特定の ID に対してグラフベースのステッチが今後行われないようにするために、ID を ID グラフから削除する必要があります。
+- **プライバシー**：プライバシー関連のリクエストを受信した場合は、ソースデータセットからリクエストされた ID を削除する以外に、未認証のイベントに対するその ID のステッチも取り消す必要があります。 また、特定の ID に対する今後のグラフベースのステッチを防ぐために、その ID を ID グラフから削除する必要があります。
 
   >[!IMPORTANT]
   >
-  >ステッチ解除プロセスは、プライバシーリクエストの一環として、2025 年の初めに変更されます。 現在のステッチ解除プロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 イベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を修正するために、2025 年以降、新しいステッチプロセスにより、プライバシーリクエストの対象となるイベントが永続 ID で更新されます。
+  >未ステッチプロセスは、プライバシーリクエストの一環として、2025年の初めに変更されます。 現在の未ステッチプロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 このイベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を解消するために、2025年以降、新しい未ステッチプロセスでは、プライバシーリクエストの対象となるイベントが永続 ID を使用して更新されます。
   > 
 
-ルックバックウィンドウを超えたデータは再生されません。未認証の訪問と認証済みの訪問を一緒に識別するには、所定のルックバックウィンドウ内でプロファイルを認証する必要があります。 デバイスが認識されると、その時点からライブステッチされます。
+ルックバックウィンドウを超えたデータは再生されません。 プロファイルは、未認証の訪問と認証済みの訪問を同時に識別するために、特定のルックバックウィンドウ内で認証する必要があります。 デバイスが認識されると、その時点からライブステッチされます。
 
-次の 2 つの ID グラフの経時的な更新、訪問者 A （永続 ID `246`）および訪問者 B （永続 ID `3579`）の場合の更新状況、およびこれらの更新がグラフベースのステッチの手順に与える影響を検討します。
+訪問者 A（永続 ID `246`）と訪問者 B（永続 ID `3579`）の次の 2 つの ID グラフの更新の推移と、これらの更新がグラフベースのステッチの手順に与える影響を考慮します。
 
-![ID グラフ 3579](assets/identity-graphs.svg)
+![ID グラフ 3579](assets/identity-graphs.png)
 
-[ID グラフビューア &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer) を使用して、特定のプロファイルの ID グラフを経時的に表示できます。 ID のリンク時に使用されるロジックの理解を深めるには、[ID サービスリンクロジック &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-linking-logic) も参照してください。
+[ID グラフビューア](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer)を使用すると、特定のプロファイルの ID グラフの推移を表示できます。 また、ID をリンクする際に使用されるロジックをより深く理解するには、[ID サービスリンクロジック](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-linking-logic)も参照してください。
 
 ### 手順 1：ライブステッチ
 
-ライブステッチは、コレクション時に、各イベントを ID グラフからその時点での既知の情報にステッチしようと試みます。
+ライブステッチは、その時点の ID グラフからの既知の情報に対して、収集時に各イベントのステッチを試みます。
 
 +++ 詳細
 
-| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email`![DataMapping](/help/assets/icons/DataMapping.svg) | 結果の ID （ライブステッチの後） |
+| | 時間 | 永続 ID<br/>`ECID` | 名前空間<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | 結果のID （ライブステッチ後） |
 |--:|---|---|---|---|
-| 1 | 2023-05-12 11:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) *undefined* | `246` |
-| 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) *undefined* | `3579` |
-| 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) *未定義* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) *未定義* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
-結果の ID がイベントごとにどのように解決されるかを確認できます。 時間、永続 ID、指定されたユーザー ID 名前空間の ID グラフの参照に基づいています。
-検索が複数の結果 ID に解決される場合（イベント 7 の場合と同様）、ID グラフによって返される辞書順の最初の ID が選択されます（この例では `a.b@yahoo.co.uk`）。
+各イベントについて、結果のIDがどのように解決されるかを確認できます。 指定したユーザーID名前空間の時間、永続的ID、およびID グラフの検索に基づきます。
+ルックアップが複数の結果IDに解決する場合（イベント 7など）、ID グラフから返される字形の最初のIDが選択されます（例では`a.b@yahoo.co.uk`）。
 
 +++
 
 ### 手順 2：再生のステッチ
 
-一定の間隔（選択したルックバックウィンドウに応じて）で、再生のステッチを行うと、その間隔の時点での ID グラフの最新バージョンに基づいて、履歴データが再計算されます。
+再生のステッチは、一定の間隔（選択したルックバックウィンドウに応じて）で、間隔の時点での最新バージョンの ID グラフに基づいて履歴データを再計算します。
 
 +++ 詳細
 
-2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウ設定では、サンプルの一部のイベントが再ステッチされます（![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) で示されます）。
+2023-05-13 16:30 に再生のステッチが行われ、24 時間のルックバックウィンドウが設定されているので、サンプルの一部のイベントが再ステッチされます（![再生](/help/assets/icons/Replay.svg) で示されます）。
 
-| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email`![DataMapping](/help/assets/icons/DataMapping.svg) | 結果の ID<br/> （ライブステッチ後） | 結果の ID<br/> （再生 24 時間後） |
+| | 時間 | 永続 ID<br/>`ECID` | 名前空間<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | 結果のID <br/> （ライブステッチ後） | 結果のID <br/> （再生24時間後） |
 |---|---|---|---|---|---|
-| 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; リンク &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![再生](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![リンク](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![再生](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![リンク](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![再生](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![リンク](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
 
-2023-05-13 16:30 に再生のステッチが行われ、7 日間のルックバックウィンドウ設定では、サンプルのすべてのイベントが再ステッチされます。
+2023-05-13 16:30 に再生のステッチが行われ、7 日間のルックバックウィンドウが設定されているので、サンプルのすべてのイベントが再ステッチされます。
 
 
-| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email`![DataMapping](/help/assets/icons/DataMapping.svg) | 結果の ID<br/> （ライブステッチ後） | 結果の ID<br/> （再生 7 日後） |
+| | 時間 | 永続 ID<br/>`ECID` | 名前空間<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | 結果のID <br/> （ライブステッチ後） | 結果のID <br/> （再生7日後） |
 |---|---|---|---|---|---|
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![&#x200B; 再生 &#x200B;](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) *未定義* | `246` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![再生](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![再生](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![再生](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -178,21 +183,21 @@ ht-degree: 4%
 
 ### 手順 3：プライバシーリクエスト
 
-プライバシーリクエストを受け取ると、結果の ID は、プライバシーリクエストのユーザー主体に対するすべてのレコードで削除されます。
+プライバシーリクエストを受け取ると、結果のIDは、プライバシーリクエストのユーザー主体のすべてのレコードで削除されます。
 
 +++ 詳細
 
-次の表は上記と同じデータですが、サンプルイベントに対するプライバシーリクエスト（例：2023-05-13 18:00）の効果を示しています。
+次の表は上記と同じデータを表していますが、プライバシーリクエスト（例：2023-05-13 18:00）がサンプルイベントに与える影響を示しています。
 
-| | 時間 | 永続 ID<br/>`ECID` | Namespace<br/>`Email`![DataMapping](/help/assets/icons/DataMapping.svg) | 結果の ID （プライバシーリクエスト後） |
+| | 時間 | 永続 ID<br/>`ECID` | 名前空間<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | 結果のID （プライバシーリクエスト後） |
 |--:|---|---|---|---|
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![&#x200B; ブランチ 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![&#x200B; 分岐 1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 3 | 2023-05-12 15:00 | `246` | `246`  ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Branch1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
 
 {style="table-layout:auto"}
 
@@ -202,29 +207,29 @@ ht-degree: 4%
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用するAdobe Experience Platformのイベントデータセットには、各行でプロファイルを識別する 1 つの列（**永続 ID** が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
-- Experience Platform ID サービスの ID グラフは、グラフベースのステッチを有効にする前に、サンドボックスレベルで設定する必要があります。
-   - ID グラフには、人物 ID を解決するためにステッチ中に使用する名前空間（例：`Email` または `Phone`）が必要です。
-   - ID グラフには、任意の関連するデータセット（タイプ *イベント* または *プロファイル* からの ID 情報を入力する必要があります。このデータセットには、ID 値を持つ便利な名前空間が少なくとも 2 つ含まれています。
-   - そのような関連する ID を保持するすべてのデータセットは、[ID グラフデータ取り込みに対して有効にする &#x200B;](faq.md#enable-a-dataset-for-the-identity-service) 必要があります。 このイネーブルメントにより、必要なすべてのソースから、受信 ID が時間の経過と共にグラフに追加されるようになります。
-   - リアルタイム顧客データプロファイルまたはAdobe Journey Optimizerをしばらく使用している場合は、ある程度グラフを設定しておく必要があります。<br/> グラフベースのステッチが有効なデータセットで履歴のステッチバックフィルも必要な場合、必要なステッチ結果を取得するには、期間全体の履歴 ID がグラフに既に含まれている必要があります。
-- グラフベースのステッチを使用する場合で、ID グラフに貢献するイベントデータセットが予想される場合は、[ID サービスのデータセットを有効にする &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) 必要があります。
-- 永続 ID と人物 ID は、[identityMap](#identitymap) で使用できます。 または、永続 ID と人物 ID は、XDM スキーマのフィールドにすることもできます。この場合、フィールドは、スキーマで [ID として定義 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity?lang=en) されている必要があります。
+- ステッチを適用する Adobe Experience Platform のイベントデータセットには、行ごとにプロファイルを識別する 1 つの列（**永続 ID**）が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- Experience Platform Identity ServiceのID グラフは、グラフベースのステッチを有効にする前に、サンドボックスレベルで設定する必要があります。
+   - ID グラフには、人物IDを解決するためにステッチ中に使用する名前空間（例：`Email`または`Phone`）が必要です。
+   - ID グラフには、関連するデータセット（*event*&#x200B;または&#x200B;*profile*&#x200B;のタイプで、ID値を持つ少なくとも2つの有用な名前空間を含む）のID情報を入力する必要があります。
+   - 関連IDを保持するすべてのデータセットは、ID グラフデータの取り込みに[有効にする必要があります](faq.md#enable-a-dataset-for-the-identity-service)。 この有効化により、受信IDがすべての必要なソースから時間の経過とともにグラフに追加されます。
+   - 既にReal-Time Customer Data ProfileやAdobe Journey Optimizerを使用している場合は、グラフを既にある程度設定しておく必要があります。<br/> グラフベースのステッチで有効になっているデータセットに過去のステッチ バックフィルも必要な場合、グラフには目的のステッチ結果を取得するために、ピリオド全体の過去のIDが既に含まれている必要があります。
+- グラフベースのステッチを使用する場合、イベントデータセットがID グラフに貢献することを想定している場合は、[ID サービスのデータセットを有効にする](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)必要があります。
+- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)として[定義する必要があります。
 
 >[!NOTE]
 >
->グラフベースのステッチに Real-time Customer Data Platform ライセンスは必要ありません **要ありません**。 Customer Journey Analyticsの **Prime** パッケージ以降には、必要なExperience Platform ID サービス使用権限が含まれています。
+>グラフベースのステッチには、Real-time Customer Data Platform ライセンスは必要あり&#x200B;**ません**。 Customer Journey Analytics の **Prime** パッケージ以上には、必要な Experience Platform ID サービスの使用権限が含まれています。
 
 
 ## 制限事項
 
-次の制限は、特にグラフベースのステッチに適用されます。
+次の制限事項は、特にグラフベースのステッチに適用されます。
 
-- 指定された名前空間を使用してユーザー ID のクエリを実行する際に、タイムスタンプは考慮されません。 そのため、永続的な ID が、以前のタイムスタンプを持つレコードの人物 ID に結び付けられる可能性があります。
-- グラフ内の名前空間に複数の ID が含まれる共有デバイスシナリオでは、最初の辞書作成 ID が使用されます。 名前空間の制限と優先度がグラフリンクルールのリリースの一部として設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[&#x200B; 共有デバイス &#x200B;](/help/use-cases/stitching/shared-devices.md) を参照してください。
-- ID グラフへの ID のバックフィルには、3 か月というハードリミットがあります。 Real-time Customer Data Platform などのExperience Platform アプリケーションを使用していない場合は、ID グラフへの入力にバックフィル ID を使用します。
-- [ID サービスガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails) が適用されます。 例えば、次の [&#x200B; 静的制限 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails#static-limits) を参照してください。
+- 指定された名前空間を使用してユーザー ID のクエリを実行する場合、タイムスタンプは考慮されません。 そのため、永続 ID が、以前のタイムスタンプを持つレコードのユーザー ID とステッチされる可能性があります。
+- グラフ内の名前空間に複数の ID が含まれる共有デバイスのシナリオでは、辞書順で最初の ID が使用されます。 グラフリンクルールのリリースの一部として名前空間の制限と優先度が設定されている場合は、最後に認証されたユーザーの ID が使用されます。 詳しくは、[共有デバイス](/help/use-cases/stitching/shared-devices.md)を参照してください。
+- ID グラフに ID をバックフィルできる期間は 3 か月までという厳密な制限があります。 Real-time Customer Data Platform などの Experience Platform アプリケーションを使用して ID グラフに入力していない場合は、バックフィル ID を使用します。
+- [ID サービスのガードレール](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails)が適用されます。 例えば、次の[静的制限](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/guardrails#static-limits)を参照してください。
    - グラフ内の ID の最大数：50。
-   - 単一のバッチ取得での ID へのリンクの最大数：50。
-   - グラフ取り込み用の XDM レコードの ID の最大数：20。
-   - グラフ取り込み用の XDM レコードの最小 ID 数：2.
+   - 1 回のバッチ取得での ID へのリンクの最大数：50。
+   - グラフ取得での XDM レコード内の ID の最大数：20。
+   - グラフ取得での XDM レコード内の ID の最小数：2。
