@@ -5,10 +5,14 @@ solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
 TQID: https://experienceleague.adobe.com/vpd1rWg883z793Tgmcm0XxplsaG5q5PGa9eT0pPllp8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
 source-wordcount: 239
@@ -35,7 +39,7 @@ Adobe Customer Journey Analyticsは、北米、欧州、アジア太平洋のパ
 
 1. Adobe IDの資格情報を使用して[Adobe CX Enterprise](https://experience.adobe.com)にログインします。
 
-1. インターフェイスの右上にあるアプリスイッチャー![ アプリ ](/help/assets/icons/Apps.svg)から「**[!UICONTROL Experience Platform]**」を選択します。
+1. インターフェイスの右上にあるアプリスイッチャー![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)から「**[!UICONTROL Experience Platform]**」を選択します。
 
 1. 割り当てられたデータセンターのリージョンコードは、Experience Platformの右上に表示されます。
 

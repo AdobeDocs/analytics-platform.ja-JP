@@ -6,10 +6,14 @@ feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
 TQID: https://experienceleague.adobe.com/y9JHTZnh51-jd-WNj8p6OBmkB5iOIT6vZ2ouHUKtHAI
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
 source-wordcount: 196
@@ -21,7 +25,7 @@ ht-degree: 32%
 
 一部のファイアウォール構成では、アドビのデータ収集サーバーまたはデータにアクセスするためのサーバーの IP アドレスをブロックするものがあります。 このリストの範囲を使用して、組織のファイアウォール設定を変更し、アクセスを許可したり、組織内からデータを送信したりできます。
 
-このページには、アウトバウンドシステムを機能させるために許可リストに追加する必要があるip アドレスが含まれています（例：[ クラウドプロバイダーへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)）。
+このページには、アウトバウンドシステムを機能させるために許可リストに追加する必要があるip アドレスが含まれています（例：[&#x200B; クラウドプロバイダーへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)）。
 
 >[!IMPORTANT]
 >
@@ -147,6 +151,6 @@ ht-degree: 32%
 
 >[!MORELIKETHIS]
 >
->Customer Journey Analyticsで使用されている[ ドメイン ](domains.md)
+>Customer Journey Analyticsで使用されている[&#x200B; ドメイン &#x200B;](domains.md)
 >
->CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)によって使用される[IP アドレス
+>CX Enterprise[&#128279;](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)によって使用されるIP アドレス
