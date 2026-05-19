@@ -6,11 +6,17 @@ exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
 autotag-review: '2026-05-19T08:30:25.509Z'
 TQID: 'https://experienceleague.adobe.com/S9PlaFSE-szemwSU8Cehhfxc9r0bem1qyxfI9S8ohXg'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 534
@@ -22,7 +28,7 @@ ht-degree: 61%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_<br/>_&#x200B;の[概要番号と概要変更](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_![
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_CustomerJourneyAnalytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Customer Journey Analytics**&#x200B;_<br/>_&#x200B;の[概要番号と概要変更](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -100,7 +106,7 @@ The green and red color of the Summary Change can be controlled through [custom 
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

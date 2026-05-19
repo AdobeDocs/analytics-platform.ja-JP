@@ -7,11 +7,17 @@ role: User
 exl-id: facce2d4-b729-46c0-a049-8f730220d8d2
 autotag-review: '2026-05-19T09:44:47.922Z'
 TQID: 'https://experienceleague.adobe.com/hTM-x-QidEW5q-tZwsVM7TF6l1JJJWKCf9cToYaCxj8'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 656
@@ -30,7 +36,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL 時間別トレンド]** パネルの例：
 
-![Customer Journey Analyticsの時間別トレンド ビジュアライゼーション ](../assets/cja_hourly_trend.png)
+![Customer Journey Analyticsの時間別トレンド ビジュアライゼーション &#x200B;](../assets/cja_hourly_trend.png)
 
 +++
 
@@ -94,7 +100,7 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/01/02]**&#x200B;まで指定します。
 1. 左側のパネルの「**[!UICONTROL Cc Data View]**」セクションから，
@@ -105,7 +111,7 @@ ht-degree: 1%
 
 次のようなビジュアライゼーションと表が表示されます。
 
-![Looker結果の日次トレンド ](../assets/uc3-looker-result.png)
+![Looker結果の日次トレンド &#x200B;](../assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]

@@ -7,11 +7,17 @@ role: User
 exl-id: b6e8ebd9-4fda-41d1-ac37-ca869f5ee57c
 autotag-review: '2026-05-19T08:03:31.717Z'
 TQID: 'https://experienceleague.adobe.com/Af1iqNrfI24QsDCofUyHmiGCluNz7lW0mhkH5ObNUZI'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 743
@@ -33,7 +39,7 @@ ht-degree: 0%
 * Power BI デスクトップの高度な日付範囲フィルタリングは排他的です。  終了日には、レポートを作成する日付の過ぎた日を1つ選択する必要があります。 例えば、**[!UICONTROL は]** `1/1/2023` **[!UICONTROL 以降]** `1/2/2023`までです。
 * Power BI デスクトップは、接続を作成する際に、デフォルトで&#x200B;**[!UICONTROL インポート]**&#x200B;になります。 **[!UICONTROL 直接問い合わせ]**&#x200B;を使用してください。
 * Power BI Desktopは、Power Queryを通じてデータ変換を公開します。  Power Queryは主にタイプの読み込み接続で動作するので、日付や文字列関数のように適用する多くの変換では、タイプの読み込み接続に切り替える必要があるというエラーが発生します。  クエリ時にデータを変換する必要がある場合は、派生ディメンションと指標を使用する必要があります。これにより、Power BIで変換を実行する必要がなくなります。
-* Power BI Desktopは日時タイプ列の処理方法を理解していないため、**[!UICONTROL daterangehour]**&#x200B;や&#x200B;**[!UICONTROL daterangeminute]**&#x200B;などの&#x200B;**[!UICONTROL daterange *X *]**のディメンションはサポートされていません。
+* Power BI Desktopは日時タイプ列の処理方法を理解していないため、**[!UICONTROL daterangehour]**&#x200B;や&#x200B;**[!UICONTROL daterangeminute]**&#x200B;などの&#x200B;**[!UICONTROL daterange *X *]**&#x200B;のディメンションはサポートされていません。
 * Power BI デスクトップは、デフォルトで、より多くのクエリサービスセッションを使用して複数の接続を作成しようとします。  プロジェクトのPower BI設定に移動し、並行クエリを無効にします。
 * Power BI Desktopは、クライアントサイドの並べ替えと制限をすべて行います。 Power BI Desktopには、関連付けられた値を含む上位&#x200B;*X* フィルタリングに対する異なるセマンティクスもあります。 そのため、Analysis Workspaceと同じ並べ替えや制限を行うことはできません。
 * 以前のバージョンのPower BI Desktop 2024年10月リリースのPostgreSQL データソースは無効です。 この記事に記載されているバージョンを使用していることを確認してください。

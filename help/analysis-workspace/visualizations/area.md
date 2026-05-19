@@ -6,11 +6,16 @@ exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
 autotag-review: '2026-05-19T07:52:07.652Z'
 TQID: 'https://experienceleague.adobe.com/fVKj0niYGK5BCK0AMFJ3eRa5SQU-lzX61uDm6t8DnWw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 226
@@ -22,7 +27,7 @@ ht-degree: 70%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の[積み重ね](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/area)を参照してください。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**。_<br/>_この記事の_&#x200B;積み重ね&#x200B;_
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の[積み重ね](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/area)を参照してください。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**。_<br/>_この記事の_&#x200B;積み重ね&#x200B;_
 
 >[!ENDSHADEBOX]
 
@@ -70,13 +75,13 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ エリアのビジュアライゼーション ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-area-visualizations){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; エリアのビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-area-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

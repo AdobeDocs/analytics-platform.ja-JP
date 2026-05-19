@@ -7,11 +7,17 @@ role: User
 exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
 autotag-review: '2026-05-19T09:44:24.950Z'
 TQID: 'https://experienceleague.adobe.com/JYqfjSl4goFJ6hu1Od2b-CqwX-himVs6fbLH7V8AMas'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 814
@@ -28,7 +34,7 @@ ht-degree: 0%
 
 ユースケースの例&#x200B;**[!UICONTROL Daily Trend]** パネル：
 
-![Customer Journey Analytics日次トレンドパネル ](../assets/cja_daily_trend.png)
+![Customer Journey Analytics日次トレンドパネル &#x200B;](../assets/cja_daily_trend.png)
 
 +++
 
@@ -51,9 +57,9 @@ ht-degree: 0%
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`1/1/2023`以降**[!UICONTROL &#x200B;および&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`2/1/2023.`より前の場合に**[!UICONTROL &#x200B;項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`1/1/2023`以降**&#x200B;[!UICONTROL &#x200B;および&#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`2/1/2023.`より前の場合に**&#x200B;項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用された&#x200B;**[!UICONTROL daterangeday]** フィルターでテーブルが更新されます。
@@ -71,7 +77,7 @@ ht-degree: 0%
 
    メインビューが更新され、行のビジュアライゼーションと表の両方が表示されます。 Power BI デスクトップは以下のようになります。
 
-   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション ](../assets/uc2-pbi-final.png)
+   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション &#x200B;](../assets/uc2-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -119,7 +125,7 @@ ht-degree: 0%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 左側のパネルの「**[!UICONTROL Cc Data View]**」セクションから，
@@ -130,7 +136,7 @@ ht-degree: 0%
 
 次のようなビジュアライゼーションと表が表示されます。
 
-![Looker結果の日次トレンド ](../assets/uc2-looker-result.png)
+![Looker結果の日次トレンド &#x200B;](../assets/uc2-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]

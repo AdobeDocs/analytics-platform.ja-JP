@@ -6,11 +6,17 @@ exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
 autotag-review: '2026-05-19T08:29:43.526Z'
 TQID: 'https://experienceleague.adobe.com/ekT5diDY2vDPhjZ5I2oe-lgqjQ--Ri-bO-UljZUUmJw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 566
@@ -32,7 +38,7 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンの[Line](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
+_この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンの[Line](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/line)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -74,7 +80,7 @@ _この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

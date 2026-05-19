@@ -6,11 +6,16 @@ exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
 autotag-review: '2026-05-19T08:27:33.715Z'
 TQID: 'https://experienceleague.adobe.com/ImY8koSZ7h0HC1uM5oj5IMSn5jXNAMw8vRzfpO7o0Nk'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 195
@@ -32,7 +37,7 @@ ht-degree: 71%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の[ ツリーマップ ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/treemap)を参照してください![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**。_<br/>_この記事の__
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の[&#x200B; ツリーマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/treemap)を参照してください![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**。_<br/>_この記事の__
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +60,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -7,11 +7,20 @@ feature: Use Cases
 role: Admin
 autotag-review: '2026-05-19T07:58:46.205Z'
 TQID: 'https://experienceleague.adobe.com/X5R0sqTkZKxvzH7mwv69-Ez3MIbuTg6XDGuxrw-iugw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 662
@@ -96,11 +105,11 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!TIP]
 >
->Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 [結合データセット ](/help/connections/combined-dataset.md)を使用して、Customer Journey Analyticsのデータセットを結合できます。
+>Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 [結合データセット &#x200B;](/help/connections/combined-dataset.md)を使用して、Customer Journey Analyticsのデータセットを結合できます。
 
 選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、データセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
-GA データフィールドとTarget スキーママッピングを強調表示する![ スキーママップ ](../../assets/schema-map.png)
+GA データフィールドとTarget スキーママッピングを強調表示する![&#x200B; スキーママップ &#x200B;](../../assets/schema-map.png)
 
 フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、インポートしたデータに関する問題が生じなくなります。
 
