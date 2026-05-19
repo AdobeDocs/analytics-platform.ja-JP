@@ -37,10 +37,10 @@ ht-degree: 16%
 
 ## CX Enterprise ドメイン
 
-CX Enterpriseでは、上記のドメインに加えて、データの収集とレポートのエクスポートに複数のドメインを利用しています。 このドメインのリストについては、[CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)で使用されるドメインを参照してください。
+CX Enterpriseでは、上記のドメインに加えて、データの収集とレポートのエクスポートに複数のドメインを利用しています。 このドメインのリストについては、[CX Enterprise](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/domains)で使用されるドメインを参照してください。
 
 >[!MORELIKETHIS]
 >
 >Customer Journey Analyticsで使用される[IP アドレス &#x200B;](ip-addresses.md)
 >
->CX Enterpriseで使用されている[&#x200B; ドメイン &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>CX Enterpriseで使用されている[&#x200B; ドメイン &#x200B;](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/domains)
