@@ -5,9 +5,22 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:44:24.950Z'
+TQID: 'https://experienceleague.adobe.com/JYqfjSl4goFJ6hu1Od2b-CqwX-himVs6fbLH7V8AMas'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: 814
 ht-degree: 0%
 
 ---
@@ -44,9 +57,9 @@ ht-degree: 0%
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;以降`1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に`2/1/2023.`項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`1/1/2023`以降**&#x200B;[!UICONTROL &#x200B;および&#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`2/1/2023.`より前の場合に**&#x200B;項目を表示するようにフィルターを定義します。カレンダーアイコンを使用して、日付を選択できます。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用された&#x200B;**[!UICONTROL daterangeday]** フィルターでテーブルが更新されます。
@@ -97,7 +110,7 @@ ht-degree: 0%
       ![Tableau Desktop Data](../assets/uc2-tableau-data.png)
 
 1. 「**[!UICONTROL 新しいダッシュボード]**」タブ ボタン（下部）を選択して、新しい&#x200B;**[!UICONTROL ダッシュボード 1]** ビューを作成します。 **[!UICONTROL ダッシュボード 1]** ビューで、次の操作を行います。
-   1. **[!UICONTROL グラフ]** シートを&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;**[!UICONTROL シートをここにドロップ]**&#x200B;する&#x200B;*ダッシュボード 1* ビューにドラッグ&amp;ドロップします。
+   1. **[!UICONTROL グラフ]** シートを&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;*シートをここにドロップ*&#x200B;する&#x200B;**[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
    1. **[!UICONTROL グラフ]** シートの下の&#x200B;**[!UICONTROL シート]** シェルフから&#x200B;**[!UICONTROL データ]** シートを&#x200B;**[!UICONTROL ダッシュボード 1]** ビューにドラッグ&amp;ドロップします。
    1. ビューで&#x200B;**[!UICONTROL データ]** シートを選択し、**[!UICONTROL ビュー全体]**&#x200B;を&#x200B;**[!UICONTROL 幅を修正]**&#x200B;に変更します。
 

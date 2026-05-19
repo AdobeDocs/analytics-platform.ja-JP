@@ -5,9 +5,22 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 7c8d01ac-47a3-4348-83ef-fea66695fbb2
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:42:58.473Z'
+TQID: 'https://experienceleague.adobe.com/MiPO6srBKMG9f9ijpOP7hFEHzewxjcEGVBpFZaWIilw'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: 1549
 ht-degree: 1%
 
 ---
@@ -36,10 +49,10 @@ ht-degree: 1%
 
 >[!TAB Power BI デスクトップ ]
 
-1. 日付範囲がすべてのビジュアライゼーションに適用されるようにするには、**[!UICONTROL daterangeday]**&#x200B;を&#x200B;**[!UICONTROL Data]** ペインからドラッグ&amp;ドロップして、このページ **[!UICONTROL の]** フィルターに追加します。
+1. 日付範囲がすべてのビジュアライゼーションに適用されるようにするには、**[!UICONTROL daterangeday]**&#x200B;を&#x200B;**[!UICONTROL Data]** ペインからドラッグ&amp;ドロップして、このページ **の** フィルターに追加します。
    1. このページの&#x200B;**[!UICONTROL フィルター]**&#x200B;から&#x200B;**[!UICONTROL daterangeday is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 相対日付]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;**&#x200B;**&#x200B;が過去&#x200B;**&#x200B;** `1`暦年&#x200B;**[!UICONTROL の場合、フィルターを]**&#x200B;項目を表示するように定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が過去&#x200B;]&#x200B;**`1`**&#x200B;[!UICONTROL &#x200B;暦年&#x200B;]&#x200B;**の場合、フィルターを**&#x200B;項目を表示するように定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
 1. **[!UICONTROL データ]** ペインで、次の操作を行います。
@@ -50,7 +63,7 @@ ht-degree: 1%
    1. **[!UICONTROL 購入額の合計]**&#x200B;を選択
 
 1. 縦棒グラフを表に変更するには、表が選択されていることを確認し、**[!UICONTROL ビジュアライゼーション]** ペインから&#x200B;**[!UICONTROL マトリックス]**&#x200B;を選択します。
-   * **[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL product_name]**&#x200B;をドラッグし、[!UICONTROL &#x200B; ビジュアライゼーション &#x200B;] ペインの&#x200B;**[!UICONTROL 行]**&#x200B;に&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_categor]&#x200B;**&#x200B;**&#x200B;yの下にフィールドをドロップします。
+   * **[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL product_name]**&#x200B;をドラッグし、**[!UICONTROL ビジュアライゼーション]** ペインの&#x200B;**[!UICONTROL 行]**&#x200B;に&#x200B;**[!UICONTROL product_categor]**&#x200B;yの下にフィールドをドロップします。
 
 1. テーブル内に表示される製品の数を制限するには、**[!UICONTROL フィルター]** ペインで&#x200B;**[!UICONTROL product_name is （All）]**&#x200B;を選択します。
 
@@ -134,7 +147,7 @@ ht-degree: 1%
    1. 2つの横棒を表に変更するには、**[!UICONTROL 自分を表示]**&#x200B;から&#x200B;**[!UICONTROL テキストテーブル]**&#x200B;を選択します。
    1. 製品数を制限するには、**[!UICONTROL 測定値]**&#x200B;で「**[!UICONTROL 購入]**」を選択します。 ドロップダウンメニューから、**[!UICONTROL フィルター]**&#x200B;を選択します。
    1. **[!UICONTROL フィルター\[購入\]]** ダイアログで、**[!UICONTROL 少なくとも]**&#x200B;を選択し、`7000`と入力します。 **[!UICONTROL 適用]**&#x200B;と&#x200B;**[!UICONTROL OK]**&#x200B;を選択します。
-   1. 「**[!UICONTROL Fit Width]**」ドロップダウンメニューから「**[!UICONTROL Fit Width]**」を選択します。
+   1. 「**Fit Width**」ドロップダウンメニューから「**Fit Width**」を選択します。
 
       Tableau デスクトップは以下のようになります。
 
@@ -183,7 +196,7 @@ ht-degree: 1%
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣カスタムフィールド]** セクションから：
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」を選択します。
    1. **[!UICONTROL カスタムメジャーを作成]** ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから]**&#x200B;購入収益&#x200B;**[!UICONTROL を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**&#x200B;[!UICONTROL &#x200B;購入収益&#x200B;]&#x200B;**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchase Revenue`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
@@ -191,7 +204,7 @@ ht-degree: 1%
          ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」をもう一度選択します。 **[!UICONTROL カスタム]**&#x200B;測定を作成ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから]**&#x200B;購入&#x200B;**[!UICONTROL を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**&#x200B;[!UICONTROL &#x200B;購入&#x200B;]&#x200B;**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchases`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
@@ -210,7 +223,7 @@ ht-degree: 1%
       ![Looker視覚化設定](../assets/uc6-looker-visualization.png)
 
    1. 「**[!UICONTROL 適用]**」を選択します。
-   1. ![編集](/help/assets/icons/CrossSize75.svg)の横にある&#x200B;**[!UICONTROL CrossSize75]**&#x200B;を選択して、ポップアップダイアログを非表示にします
+   1. **[!UICONTROL 編集]**&#x200B;の横にある![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、ポップアップダイアログを非表示にします
 
 次のようなビジュアライゼーションと表が表示されます。
 

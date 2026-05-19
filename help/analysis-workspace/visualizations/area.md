@@ -4,9 +4,21 @@ title: エリア （積み重ね）
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T07:52:07.652Z'
+TQID: 'https://experienceleague.adobe.com/fVKj0niYGK5BCK0AMFJ3eRa5SQU-lzX61uDm6t8DnWw'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: 226
 ht-degree: 70%
 
 ---

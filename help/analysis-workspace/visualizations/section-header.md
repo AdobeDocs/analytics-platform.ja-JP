@@ -4,9 +4,21 @@ description: セクションヘッダーを使用して、Analysis Workspace プ
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T08:30:06.055Z'
+TQID: 'https://experienceleague.adobe.com/4eQciSn7GJlIEQBgel9-fVDs3gtbIziPjL-LkazHtR8'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: 107
 ht-degree: 57%
 
 ---

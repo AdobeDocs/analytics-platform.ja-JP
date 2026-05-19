@@ -1,13 +1,26 @@
 ---
-title: 並べ替え
+title: 並べ換え
 description: Customer Journey Analyticsの様々なBI ツールでのBI拡張機能のユースケースの並べ替え
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:43:53.421Z'
+TQID: 'https://experienceleague.adobe.com/aC2w3GsxVbt4SF-AmnaEfpHqgZn0WUmivwhiaTZLLYM'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: 738
 ht-degree: 1%
 
 ---
@@ -43,9 +56,9 @@ ht-degree: 1%
    1. **[!UICONTROL 購入額の合計]**&#x200B;を選択します。
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
-   1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;** `1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`1/1/2023`**&#x200B;[!UICONTROL &#x200B;および&#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`2/1/2023`より前の場合に、**&#x200B;項目を表示するようにフィルターを定義します。
 
 1. ビジュアライゼーションペインで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、列からデータレンジを削除します。
@@ -189,7 +202,7 @@ GROUP BY 1
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣カスタムフィールド]** セクションから：
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」を選択します。
    1. **[!UICONTROL カスタムメジャーを作成]** ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから]**&#x200B;購入収益&#x200B;**[!UICONTROL を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**&#x200B;[!UICONTROL &#x200B;購入収益&#x200B;]&#x200B;**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchase Revenue`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
