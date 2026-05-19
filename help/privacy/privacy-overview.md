@@ -60,4 +60,4 @@ CCPA に従い、プライバシーサービスは個人データの販売のオ
 
 >[!MORELIKETHIS]
 >
->* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
+>* [ブログ：Adobe Customer Journey Analytics で効果的なガバナンスを維持する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=ja)

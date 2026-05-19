@@ -224,7 +224,7 @@ ht-degree: 70%
    - 関連IDを保持するすべてのデータセットは、ID グラフデータの取り込みに[有効にする必要があります](faq.md#enable-a-dataset-for-the-identity-service)。 この有効化により、受信IDがすべての必要なソースから時間の経過とともにグラフに追加されます。
    - 既にReal-Time Customer Data ProfileやAdobe Journey Optimizerを使用している場合は、グラフを既にある程度設定しておく必要があります。<br/> グラフベースのステッチで有効になっているデータセットに過去のステッチ バックフィルも必要な場合、グラフには目的のステッチ結果を取得するために、ピリオド全体の過去のIDが既に含まれている必要があります。
 - グラフベースのステッチを使用する場合、イベントデータセットがID グラフに貢献することを想定している場合は、[ID サービスのデータセットを有効にする](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)必要があります。
-- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
+- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
 
 >[!NOTE]
 >
