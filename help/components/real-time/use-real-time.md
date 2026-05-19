@@ -4,9 +4,16 @@ title: リアルタイムのレポートを利用して
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T08:47:15.932Z'
+TQID: 'https://experienceleague.adobe.com/t20pdV4qS-FIBGrxOXAD5xAD58f4gtN74uheJ94sK4s'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: d1779026-aeed-458e-a1c7-839d4acac922
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: 239
 ht-degree: 12%
 
 ---
@@ -25,7 +32,7 @@ ht-degree: 12%
 * [アトリビューション](/help/analysis-workspace/c-panels/attribution.md)
 * [次または前の項目](/help/analysis-workspace/c-panels/next-previous.md)
 
-データの最新の更新のタイムスタンプを含むメッセージが表示されます。 例：[!UICONTROL &#x200B; *最終更新日：07:55 pm*]。
+データの最新の更新のタイムスタンプを含むメッセージが表示されます。 例：[!UICONTROL  *最終更新日：07:55 pm*]。
 
 ドロップダウンメニューからレポートするリアルタイム期間を選択します。 利用可能なオプションは次のとおりです。
 
@@ -37,9 +44,9 @@ ht-degree: 12%
 
 パネル内のすべてのビジュアライゼーションは、リアルタイム更新が有効になっているパネルを含むブラウザータブがアクティブになっている間、最大30分間毎分更新されるようになりました。
 
-例として、時間が&#x200B;**[!UICONTROL *06:26pm*]**&#x200B;から&#x200B;**[!UICONTROL *06:27午後&#x200B;*]**&#x200B;に移動すると、**[!UICONTROL &#x200B;総収益/時間&#x200B;]**&#x200B;の可視化と&#x200B;**[!UICONTROL &#x200B;総収益/時間&#x200B;]**&#x200B;のフリーフォームテーブルを更新する&#x200B;**[!UICONTROL &#x200B; リアルタイムレポートパネル &#x200B;]**&#x200B;のスナップショットを以下に示します。
+例として、時間が&#x200B;**[!UICONTROL *06:26pm*]**&#x200B;から&#x200B;**[!UICONTROL *06:27午後&#x200B;*]**に移動すると、**[!UICONTROL &#x200B;総収益/時間&#x200B;]**の可視化と**[!UICONTROL &#x200B;総収益/時間&#x200B;]**のフリーフォームテーブルを更新する**[!UICONTROL  リアルタイムレポートパネル ]**のスナップショットを以下に示します。
 
-![&#x200B; リアルタイム更新](assets/real-time-refresh.gif)
+![ リアルタイム更新](assets/real-time-refresh.gif)
 
 30分後、またはブラウザータブが非アクティブになるとすぐに、**[!UICONTROL リアルタイム更新]**&#x200B;切り替えが自動的に無効になり、リアルタイム更新が停止されます。
 

@@ -1,26 +1,33 @@
 ---
 title: オブジェクトの配列を使用
-description: Customer Journey Analyticsによるデータ階層に関するレポート方法を説明します。
+description: データ階層に関するCustomer Journey Analyticsのレポート方法について説明します。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+autotag-review: '2026-05-19T09:33:58.249Z'
+TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: bfef374d-acfd-4c57-bf74-a2b36053c545id: cf731116-8803-4027-85aa-9c0a126e8321
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: 518
+ht-degree: 59%
 
 ---
 
-# オブジェクトの配列の使用
+# オブジェクトの配列を使用
 
-一部のプラットフォームスキーマでは、オブジェクト配列を使用できます。Adobe Customer Journey Analyticsは、イベント、ルックアップ、プロファイルデータ内のオブジェクト配列の取り込みとレポートをサポートしています。 最も一般的な例の 1 つに、複数の製品が入った買い物かごがあります。各製品には、名前、SKU、カテゴリ、価格、数量、および追跡したいその他のディメンションがあります。これらのファセットにはそれぞれ個別の要件がありますが、すべて同じヒットに適合する必要があります。
+一部のプラットフォームスキーマでは、オブジェクト配列を使用できます。 Adobe Customer Journey Analyticsは、イベントデータ、ルックアップデータ、プロファイルデータ内のオブジェクト配列の取り込みとレポート作成をサポートしています。 最も一般的な例の 1 つに、複数の製品が入った買い物かごがあります。 各製品には、名前、SKU、カテゴリ、価格、数量、および追跡したいその他のディメンションがあります。 これらのファセットにはそれぞれ個別の要件がありますが、すべて同じヒットに適合する必要があります。
 
-以前のバージョンの Adobe Analytics では、この機能は `products` 変数を使用して実行されていました。この連結文字列では、セミコロン（`;`）で製品のファセットを区切り、製品の区切りにはコンマ（`,`）を使用します。これは、「オブジェクト配列」のサポートが制限される唯一の変数です。複数値の変数（リスト変数など）は、同等の配列をサポートできますが、「オブジェクト配列」をサポートすることはできません。Customer Journey Analyticsでは、この概念をさらに拡張し、以前のバージョンのAdobe Analyticsでは使用できない、1 行のデータ内の任意の深層階層をサポートします。
+以前のバージョンの Adobe Analytics では、この機能は `products` 変数を使用して実行されていました。 この連結文字列では、セミコロン（`;`）で製品のファセットを区切り、製品の区切りにはコンマ（`,`）を使用します。 これは、「オブジェクト配列」のサポートが制限される唯一の変数です。 複数値の変数（リスト変数など）は、同等の配列をサポートできますが、「オブジェクト配列」をサポートすることはできません。 Customer Journey Analyticsでは、以前のバージョンのAdobe Analyticsでは利用できなかった機能である、1行のデータ内の任意の深い階層をサポートすることで、このコンセプトをさらに拡大しています。
 
 ## 同じイベントの例
 
-次のイベントは、洗濯機と乾燥機で作られた顧客の購入を表す JSON オブジェクトです。
+次のイベントは、洗濯機と乾燥機で作られた顧客の購入を表すJSON オブジェクトです。
 
 ```json
 {
@@ -84,7 +91,7 @@ ht-degree: 61%
 
 ### 同じイベントの例（レポート動作）
 
-上記のイベントのみを使用し、次の表は、いくつかのディメンションと指標の組み合わせを使用したWorkspace レポートを示しています。
+上記のイベントのみを使用して、次の表に、ディメンションと指標の組み合わせを含むWorkspace レポートを示します。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -92,7 +99,7 @@ ht-degree: 61%
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-Customer Journey Analyticsは、テーブルに基づいてオブジェクトのディメンションと指標を選択的に調べます。
+Customer Journey Analyticsは、テーブルに基づいて、オブジェクトのディメンションと指標を選択的に調べます。
 
 ```diff
 {
@@ -144,7 +151,7 @@ Customer Journey Analyticsは、テーブルに基づいてオブジェクトの
 | `extended` | `50` |
 | `Total` | `250` |
 
-Customer Journey Analyticsは、イベントの次の部分を調べてレポートを生成します。
+Customer Journey Analyticsは、イベントのこれらの部分に注目してレポートを生成します。
 
 ```diff
 {
@@ -198,7 +205,7 @@ Customer Journey Analyticsは、イベントの次の部分を調べてレポー
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-製品注文には保証名が関連付けられていないのでディメンション項目は「未指定」に属しています。同じ状況が、製品の保証注文にも当てはまります。
+製品注文には保証名が関連付けられていないのでディメンション項目は「未指定」に属しています。 同じ状況が、製品の保証注文にも当てはまります。
 
 ```diff
 {
@@ -242,11 +249,11 @@ Customer Journey Analyticsは、イベントの次の部分を調べてレポー
 +}
 ```
 
-名前が関連付けされていない注文をメモしておきます。これらは、「未指定」ディメンション項目に属する注文です。
+名前が関連付けされていない注文をメモしておきます。 これらは、「未指定」ディメンション項目に属する注文です。
 
 ### 指標の組み合わせ
 
-異なるオブジェクトレベルにある場合、Customer Journey Analyticsは同じような名前の指標をネイティブに結合しません。
+Customer Journey Analyticsでは、同じ名前の指標が異なるオブジェクトレベルにある場合、それらの指標をネイティブに組み合わせることはできません。
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -270,5 +277,5 @@ Customer Journey Analyticsは、イベントの次の部分を調べてレポー
 
 ## 制限事項
 
-制限は、Experience Platformで使用され、Customer Journey Analyticsのスキーマの一部としてモデル化されるデータ内の配列に適用されます。 [&#x200B; リアルタイム顧客プロファイルデータおよびセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits) の [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits) データモデルの制限 [&#x200B; および &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails) データサイズの制限）を参照してください。
+Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [ リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[ データモデルの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)」と「[ データサイズの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
 

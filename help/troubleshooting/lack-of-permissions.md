@@ -5,10 +5,17 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+autotag-review: '2026-05-19T09:32:28.410Z'
+TQID: 'https://experienceleague.adobe.com/qGrpX20MMcrjeEO75K2Ndoki4eiDmEvmaUCzED8jR1w'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: 218
+ht-degree: 94%
 
 ---
 
@@ -21,16 +28,16 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL DULE ポリシーの取得中にエラーが発生しました。アカウントの権限、ポリシーまたはラベルを確認してください。メッセージ : 禁止されています。]*
+*[!UICONTROL DULE ポリシーの取得中に問題が発生しました。 アカウントの権限、ポリシー、ラベルを確認してください。 メッセージ : 禁止されています。]*
 
 >[!ENDSHADEBOX]
 
 
 1. 適切なアクセス制御が行われていることを確認します。
 
-   * Experience Platform 製品を持つ組織に対して、システム管理者権限または製品管理者権限を持っている必要があります。詳しくは、[アクセス制御の概要](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions?lang=ja)を参照してください。
+   * Experience Platform 製品を持つ組織に対して、システム管理者権限または製品管理者権限を持っている必要があります。 詳しくは、[アクセス制御の概要](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions?lang=ja)を参照してください。
 
-   * AEP-Default-All-Users 製品プロファイルのユーザーである必要があります。このプロファイルに自分自身を追加する権限がない場合は、管理者にお問い合わせください。詳しくは、[アクセス制御の階層とワークフロー](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja#access-control-hierarchy-and-workflow)を参照してください。
+   * AEP-Default-All-Users 製品プロファイルのユーザーである必要があります。 このプロファイルに自分自身を追加する権限がない場合は、管理者にお問い合わせください。 詳しくは、[アクセス制御の階層とワークフロー](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja#access-control-hierarchy-and-workflow)を参照してください。
 
 
 1. Adobe Experience Platform UI に移動します。

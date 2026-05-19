@@ -1,13 +1,20 @@
 ---
-title: 並べ替え
+title: 並べ換え
 description: Customer Journey Analyticsの様々なBI ツールでのBI拡張機能のユースケースの並べ替え
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:43:53.421Z'
+TQID: 'https://experienceleague.adobe.com/aC2w3GsxVbt4SF-AmnaEfpHqgZn0WUmivwhiaTZLLYM'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: 738
 ht-degree: 1%
 
 ---
@@ -21,7 +28,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL 並べ替え]** パネルの例：
 
-![Customer Journey Analytics並べ替えパネル &#x200B;](../assets/cja-sort.png)
+![Customer Journey Analytics並べ替えパネル ](../assets/cja-sort.png)
 
 +++
 
@@ -43,9 +50,9 @@ ht-degree: 1%
    1. **[!UICONTROL 購入額の合計]**&#x200B;を選択します。
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
-   1. このビジュアル **[!UICONTROL の]** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;** `1/1/2023`および&#x200B;**&#x200B;**&#x200B;が&#x200B;**&#x200B;**&#x200B;より前の場合に、`2/1/2023`項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`1/1/2023`**[!UICONTROL &#x200B;および&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`2/1/2023`より前の場合に、**[!UICONTROL &#x200B;項目を表示するようにフィルターを定義します。
 
 1. ビジュアライゼーションペインで、次の操作を行います。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、列からデータレンジを削除します。
@@ -55,7 +62,7 @@ ht-degree: 1%
 
    Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc11-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc11-powerbi-final.png)
 
 BI拡張機能を使用してPower BI Desktopで実行されるクエリに`sort` ステートメントが含まれていません。 `sort` ステートメントがないことは、並べ替えがクライアントサイドで実行されることを意味します。
 
@@ -182,19 +189,19 @@ GROUP BY 1
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから、**[!UICONTROL 製品名]**&#x200B;を選択します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣カスタムフィールド]** セクションから：
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」を選択します。
    1. **[!UICONTROL カスタムメジャーを作成]** ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから]**&#x200B;購入収益&#x200B;**[!UICONTROL を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**[!UICONTROL &#x200B;購入収益&#x200B;]**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchase Revenue`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
-      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**&#x200B;に入力されていることを確認します。
-         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
+      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**に入力されていることを確認します。
+         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
 1. **[!UICONTROL 購入収益]**&#x200B;列で&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降順、並べ替え順序：1]**）を選択していることを確認してください。
 1. **[!UICONTROL 実行]**&#x200B;を選択します。

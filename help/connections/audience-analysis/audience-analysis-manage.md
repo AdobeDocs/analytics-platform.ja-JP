@@ -1,34 +1,41 @@
 ---
 title: オーディエンス分析設定の管理
-description: オーディエンス分析設定の管理方法を学ぶ
+description: オーディエンス分析設定の管理方法について説明します
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0d38a779-a29f-41c9-81b4-f5523eeae93f
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+autotag-review: '2026-05-19T10:44:33.394Z'
+TQID: 'https://experienceleague.adobe.com/zTyuIl4BMTZxZW9qlt5ApYHMdErQC6H6UYvBliwGVaQ'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: 308
+ht-degree: 5%
 
 ---
 
-# オーディエンス分析設定の管理{#manage-audience-analysis}
+# オーディエンス分析の設定の管理{#manage-audience-analysis}
 
-[&#x200B; オーディエンス分析設定を作成 &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md) した後に、それらを表示、編集または削除できます。
+オーディエンス分析設定を[作成した後](/help/connections/audience-analysis/audience-analysis-configure.md)、表示、編集、または削除できます。
 
-システム管理者のみがオーディエンス分析設定を管理できます。
+オーディエンス分析設定を管理できるのはシステム管理者のみです。
 
-オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要 &#x200B;](/help/connections/audience-analysis/audience-analysis-overview.md) を参照してください。
+オーディエンス分析について詳しくは、[ オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
 
-## 既存の設定の表示とフィルタリング
+## 既存の設定の表示とフィルター
 
 既存のオーディエンス分析設定を表示するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
 
-   各設定に関する次の情報の列を利用できます。
+   各設定について、次の情報の列を使用できます。
 
    * **[!UICONTROL 作成者]**：設定を作成したユーザー。
 
@@ -38,13 +45,13 @@ ht-degree: 2%
 
    * **[!UICONTROL 作成日]**：設定が作成された日付。
 
-   * **[!UICONTROL 最終変更]**：設定が最後に変更された日付。
+   * **[!UICONTROL 最終変更日]**：設定が最後に変更された日付。
 
-   * **[!UICONTROL ステータス]**：設定のステータス。 考えられるステータスは、完了、処理中、失敗です。<!--true?-->
+   * **[!UICONTROL ステータス]**：設定のステータス。 可能なステータスは、「完了」、「進行中」、「失敗」です。<!--true?-->
 
-   任意の列を非表示にするには、列アイコン ![&#x200B; 列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択し、非表示にする列の選択を解除して、「**[!UICONTROL 適用]** を選択します。
+   列アイコン ![列アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター**![&#x200B; オーディエンス分析フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![ オーディエンス分析フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
@@ -58,24 +65,24 @@ ht-degree: 2%
 
 既存のオーディエンス分析設定を編集するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
 
 1. 編集する設定の名前を選択します。
 
    または
 
-   編集する設定の横にあるチェックボックスをオンにし、「**[!UICONTROL 編集]**」を選択します。
+   編集する設定の横にあるチェックボックスを選択し、**[!UICONTROL 編集]**&#x200B;を選択します。
 
-1. 設定に必要な変更を加え、「**[!UICONTROL 保存]**」を選択します。
+1. 設定に必要な変更を加え、**[!UICONTROL 保存]**&#x200B;を選択します。
 
 ## 設定の削除
 
 既存のオーディエンス分析設定を削除するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]**/**[!UICONTROL Audience Analysis configuration]** を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![&#x200B; オーディエンス分析のメインページ &#x200B;](assets/audience-analysis-manage-configurations.png)
+   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
 
-1. 削除する設定の横にあるチェックボックスをオンにして、「**[!UICONTROL 削除]**」を選択します。
+1. 削除する設定の横にあるチェックボックスを選択し、**[!UICONTROL 削除]**&#x200B;を選択します。
