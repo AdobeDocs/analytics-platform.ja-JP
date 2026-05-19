@@ -26,7 +26,7 @@ Adobe Customer Journey Analyticsは、北米、欧州、アジア太平洋のパ
 
 プロビジョニング時に、お客様はAdobe Experience Platform データが格納されるリージョンを指定します。 Adobe Experience Platform データレイクからCustomer Journey Analyticsに取り込まれたデータは、同じリージョンに保存されます。
 
-詳しくは、Adobe CX Enterprise ドキュメントの[地域データ収集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)を参照してください。
+詳しくは、Adobe CX Enterprise ドキュメントの[地域データ収集](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/rdc)を参照してください。
 
 
 ## データが保存されているデータセンターを表示する
