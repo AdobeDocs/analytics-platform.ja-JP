@@ -1,30 +1,35 @@
 ---
-title: Customer Journey Analyticsで使用される IP アドレス
+title: CUSTOMER JOURNEY ANALYTICSで使用されるIP アドレス
 description: 組織のファイアウォールで、アドビから派生する IP アドレスがブロックされている場合は、このリストを使用してファイアウォール設定を更新してください。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
+TQID: https://experienceleague.adobe.com/y9JHTZnh51-jd-WNj8p6OBmkB5iOIT6vZ2ouHUKtHAI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: 196
+ht-degree: 32%
 
 ---
 
-# Customer Journey Analyticsで使用される IP アドレス
+# CUSTOMER JOURNEY ANALYTICSで使用されるIP アドレス
 
-一部のファイアウォール構成では、アドビのデータ収集サーバーまたはデータにアクセスするためのサーバーの IP アドレスをブロックするものがあります。このリストの範囲を使用して、組織のファイアウォール設定を変更し、アクセスを許可したり、組織内からデータを送信したりできます。
+一部のファイアウォール構成では、アドビのデータ収集サーバーまたはデータにアクセスするためのサーバーの IP アドレスをブロックするものがあります。 このリストの範囲を使用して、組織のファイアウォール設定を変更し、アクセスを許可したり、組織内からデータを送信したりできます。
 
-このページには、[&#x200B; クラウドプロバイダーへのデータの書き出し &#x200B;](/help/analysis-workspace/export/export-cloud.md) などの送信システムを機能させるために許可リストに追加する必要がある IP アドレスが含まれています。
+このページには、アウトバウンドシステムを機能させるために許可リストに追加する必要があるip アドレスが含まれています（例：[ クラウドプロバイダーへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)）。
 
 >[!IMPORTANT]
 >
->Adobeは、このドキュメントを最新の状態に保つために最善を尽くしますが、IP 範囲のリストが同じままであることを保証することはできません。 ビジネスの拡大や拡大、インターネットレジストリにAdobeの IP アドレス空間の変更が必要、インターネットサービスプロバイダーが機能しなくなる、などの変化が生じる可能性があります。
+>Adobeは、このドキュメントを最新の状態に保つために最善を尽くしますが、IP範囲のリストが同じであることを保証することはできません。 考えられる変更には、ビジネスの成長と拡大が含まれます。インターネットレジストリには、AdobeのIP アドレス空間の変更が必要です。または、インターネットサービスプロバイダーが機能しなくなります。
 
-## 米国およびアメリカのお客様
+## 米国および南北アメリカのお客様
 
-| IP ブロック（CIDR 表記） |
+| IP ブロック （CIDR表記法） |
 | --- |
 | `52.254.106.192/28` |
 | `52.254.107.80/28` |
@@ -51,7 +56,7 @@ ht-degree: 34%
 
 ## ヨーロッパ
 
-| IP ブロック（CIDR 表記） |
+| IP ブロック （CIDR表記法） |
 | --- |
 | `40.74.6.128/28` |
 | `51.144.184.248/29` |
@@ -79,7 +84,7 @@ ht-degree: 34%
 
 ## オーストラリア
 
-| IP ブロック（CIDR 表記） |
+| IP ブロック （CIDR表記法） |
 | --- |
 | `20.43.110.192/28` |
 | `20.40.185.111` |
@@ -111,7 +116,7 @@ ht-degree: 34%
 
 ## カナダ
 
-| IP ブロック（CIDR 表記） |
+| IP ブロック （CIDR表記法） |
 | --- |
 | `20.116.159.80/28` |
 | `20.116.159.224/28` |
@@ -142,6 +147,6 @@ ht-degree: 34%
 
 >[!MORELIKETHIS]
 >
->[Customer Journey Analyticsが使用するドメイン &#x200B;](domains.md)
+>Customer Journey Analyticsで使用されている[ ドメイン ](domains.md)
 >
->[Adobe Experience Cloudで使用される IP アドレス &#x200B;](https://experienceleague.adobe.com/ja/docs/core-services/interface/data-collection/ip-addresses)
+>CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)によって使用される[IP アドレス
