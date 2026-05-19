@@ -1,74 +1,81 @@
 ---
-title: B2B ルックアップ用のデータセットの変換
-description: 特定の B2B ルックアップスキーマのデータセットのデータを変換する方法について説明します
+title: B2B検索のためのデータセット変換
+description: 特定のB2B ルックアップスキーマのデータセット内のデータを変換する方法について説明します
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 3%
+source-wordcount: 521
+ht-degree: 10%
 
 ---
 
 # B2B ルックアップ用にデータセットを変換
 
-B2B データ（アカウント、商談、マーケティングリスト、キャンペーンなど）に対するユーザーベースの検索をサポートするために、B2B 検索データセットの変換により、データの精度を向上させることができます。
+B2B データ（アカウント、商談、マーケティングリスト、キャンペーンなど）での個人ベースの検索をサポートするために、B2B ルックアップデータセットの変換を行うことで、データ精度を向上させることができます。
 
-この変換は、次のクラスに基づく、B2B ルックアップスキーマ用のデータを含んだデータセットでのみ使用できます。
+この変換は、次のクラスに基づくB2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。
 
-* [XDM ビジネスアカウント人物関係 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM ビジネスオポチュニティ人物関係 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM ビジネスマーケティングリストメンバー &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM ビジネスキャンペーンメンバー &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
->各 ID には、10,000 項目以下の制限があります。 つまり、特定のユーザー id に対して、10,000 個のアカウント、10,000 個のオポチュニティ、10,000 個のマーケティングリスト、10,000 個のキャンペーンのみを持つことができます。
+>各IDには、最大10,000個の項目の制限があります。 この制限は、任意の個人IDに対して、10,000個のアカウント、10,000個の商談、10,000個のマーケティングリスト、または10,000個のキャンペーンのみを持つことができることを意味します。
 
 >[!PREREQUISITES]
 >
->取り込みが正しく機能するには、B2B ルックアップデータセットに次のフィールドのデータが入力されていることを検証する必要があります（B2B ルックアップスキーマで定義されている）。
+>取り込みを正しく機能させるには、B2B ルックアップデータセットに次のフィールド（B2B ルックアップスキーマで定義されているもの）のデータが入力されていることを検証する必要があります。
 >
 >| スキーマに準拠するデータを含むデータセット | データが入力されたフィールド |
 >|---|---|
 >| XDM Business Account Person Relation | `accountPersonID` |
->| XDM ビジネスオポチュニティ担当者 | `opportunityPersonID` |
+>| XDM ビジネスオポチュニティ人物 | `opportunityPersonID` |
 >| XDM Business Marketing List | `marketingListMemberID` |
 >| XDM Business Campaign Members | `campaign.sourceKey` |
 >
 
 B2B ルックアップデータセットの変換を有効にするには：
 
-![&#x200B; 変換データセットを有効にする &#x200B;](/help/connections/assets/transform.gif)
+![変換データセットを有効にする](/help/connections/assets/transform.gif)
 
-* 各データセットについて、**[!UICONTROL キー]** と **[!UICONTROL 一致するキー]** の推奨値を確認します。 推奨値を変更すると、続行を求める警告が表示されます。 次の点を確認する必要があります。
+* 各データセットについて、**[!UICONTROL キー]**&#x200B;と&#x200B;**[!UICONTROL 一致するキー]**&#x200B;の推奨値を確認します。 推奨値から値を変更すると、続行を求める警告が表示されます。 次のことを確認する必要があります。
 
-   * **キー** に対して選択する値は、ユーザー ID データタイプに基づいています。
-   * **一致するキー** に選択した値は、イベントデータセットのプライマリ ID フィールドとして定義されています。
+   * **Key**&#x200B;に選択する値は、Person ID データタイプに基づいています。
+   * **一致するキー**&#x200B;に対して選択した値は、イベントデータセットのプライマリ ID フィールドとして定義されます。
 
-* 新しいデータの読み込みとデータセットのバックフィルに関するオプションを選択します。
+* 新しいデータとデータセットのバックフィルを読み込むオプションを選択します。
 
-* **[!UICONTROL B2B ルックアップ用のデータセットを変換]** を選択します。
+* 「**[!UICONTROL B2B参照のデータセットを変換]**」を選択します。
 
-  このオプションは、B2B シナリオでのユーザーベースの検索に使用できるように、データセットを変換します。
+  このオプションは、B2B シナリオでのユーザーベースの検索に使用できるようにデータセットを変換します。
 
 
   >[!IMPORTANT]
   >
-  >オンにした後、接続を保存すると、変換は元に戻せなくなります。 キー、一致するキーおよび変換データセットの設定は変更できません。 データセットの削除、追加、再設定のみ可能です。
+  >一度オンにすると、接続が保存されると、変換は元に戻せません。 キー、一致するキーおよび変換データセット設定を変更することはできません。 データセットを削除、追加、再設定することしかできません。
 
-既に既存の接続に含まれている 1 つ以上のデータセットの変換を有効にするには：
+既存の接続の一部となっている1つ以上のデータセットの変換を有効にするには：
 
 1. 接続からデータセットを削除します。
 1. 接続を保存します。
-1. データセットの変換を有効にしながら、データセットを接続に追加します。
+1. データセットの変換をオンにして、データセットを接続に追加します。
 
 ## 背景情報
 
-前述の 4 つのスキーマクラスに基づくスキーマの場合、変換されないデータセットには、1 つのユーザー識別子に対して複数の行を含めることができます。 ユーザーベースの検索は、そのユーザー ID の最新の出現箇所にのみ一致し、アカウント、機会、マーケティングリストまたはキャンペーンのユーザー ID ベースの適切な検索を防ぎます。
+上記の4つのスキーマクラスに基づくスキーマの変換されていないデータセットには、1つの人識別子に対して複数の行を含めることができます。 個人ベースの検索は、その人物IDの最新の発生にのみ一致するため、アカウント、商談、マーケティングリスト、またはキャンペーンの適切な人物IDの検索が妨げられます。
 
-変換により、4 つのスキーマクラス（下図のオレンジ色）のデータセットが変更され、各個人識別子に対して、ルックアップデータセットに関連するデータ（アカウント、商談、マーケティングリストまたはキャンペーン）の（オブジェクト）配列（下図のピンク色）が作成されます。 この変換により、人物 ID ベースの検索を正しく機能させることができます。
+この変換により、4つのスキーマクラスのそれぞれのデータセットが変更され（下の図ではオレンジ色）、各人識別子に対して、ルックアップデータセット内の関連データ（アカウント、商談、マーケティングリスト、またはキャンペーン）用の（オブジェクト）配列が作成されます（下の図ではピンク色）。 この変換により、個人ID ベースの検索を正しく処理できるようになります。
 
-![B2B スキーマ &#x200B;](./assets/b2b-schemas.svg)
+![B2B スキーマ &#x200B;](./assets/b2b-schemas.png)
