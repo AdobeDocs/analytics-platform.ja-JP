@@ -6,9 +6,12 @@ feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
 TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 521
@@ -75,4 +78,4 @@ B2B ルックアップデータセットの変換を有効にするには：
 
 この変換により、4つのスキーマクラスのそれぞれのデータセットが変更され（下の図ではオレンジ色）、各人識別子に対して、ルックアップデータセット内の関連データ（アカウント、商談、マーケティングリスト、またはキャンペーン）用の（オブジェクト）配列が作成されます（下の図ではピンク色）。 この変換により、個人ID ベースの検索を正しく処理できるようになります。
 
-![B2B スキーマ ](./assets/b2b-schemas.png)
+![B2B スキーマ &#x200B;](./assets/b2b-schemas.png)

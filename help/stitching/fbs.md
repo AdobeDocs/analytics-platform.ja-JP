@@ -6,10 +6,15 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
 TQID: https://experienceleague.adobe.com/xqNEj5V-fQTo-8j5S9Ad-5ZezRjjr8kdt2Xmx0U8xDI
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1902
@@ -21,7 +26,7 @@ ht-degree: 82%
 
 フィールドベースの合成では、イベントデータセットと、そのデータセットの永続的ID （cookie）および人物IDを指定します。 フィールドベースの合成では、特定の永続IDを持つ匿名イベントに対して、Customer Journey Analytics data analysisで個人ID情報を使用できるようにします。  その情報は、その特定の永続的IDの個人IDを持つ行から取得されます。
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連するID グラフにアクセスできない場合）は、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合は、フィールドベースのステッチを使用できます。
 
