@@ -4,29 +4,34 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 1741b2f3fc0588aaf0f403c6f3863ce837e376e9
+TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 49%
+source-wordcount: 680
+ht-degree: 45%
 
 ---
 
 # Customer Journey Analytics のランディングページ
 
-Customer Journey Analyticsのランディングページには次のサブタブがあります。
+Customer Journey Analytics ランディングページには、次のサブタブが含まれます。
 
-**[!UICONTROL プロジェクト]**：自分で作成したり、他のユーザーが作成して共有したりしたデータコンポーネント、テーブルおよびビジュアライゼーションを組み合わせてカスタマイズされたデザイン。 [!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
+**[!UICONTROL プロジェクト]**：自分が作成したデータコンポーネント、テーブル、ビジュアライゼーション、または他のユーザーが自分と作成して共有したデータコンポーネント、テーブル、ビジュアライゼーションを組み合わせたカスタマイズされたデザイン。 [!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
 
-**[!UICONTROL テンプレート]**:Adobeから提供されたテンプレートと、組織に固有の任意のテンプレートを含みます。
+**[!UICONTROL テンプレート]**: Adobeが提供するテンプレートと、お客様の組織に固有のテンプレートが含まれます。
 
-**[!UICONTROL ラーニング]**：実践ビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。 また、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する情報と、組織に固有のアップグレード手順を動的に生成するツールについても説明します。
+**[!UICONTROL 学習]**：実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する情報と、組織に固有のアップグレードステップを動的に生成するツールも含まれています。
 
-![CJA ランディングページの左レール &#x200B;](assets/cja-landing-page-left-rail.png)
+![CJA ランディングページ左パネル ](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -35,31 +40,31 @@ Customer Journey Analyticsのランディングページには次のサブタブ
 
 ## プロジェクト
 
-左側のレールの **[!UICONTROL プロジェクト]** セクションは、「[!UICONTROL **Workspace**]」タブのホームページとして機能します。
+左側のパネルの「**[!UICONTROL プロジェクト]**」セクションは、「[!UICONTROL **Workspace**]」タブのホームページとして機能します。
 
-Customer Journey Analyticsでプロジェクトにアクセスするには：
+Customer Journey Analyticsのプロジェクトにアクセスするには：
 
-1. 「[!UICONTROL **ワークスペース**]」タブを選択します。
+1. 「[!UICONTROL **Workspace**]」タブを選択します。
 
-1. 左パネルで「[!UICONTROL **プロジェクト**]」を選択します。
+1. 左側のパネルで「[!UICONTROL **プロジェクト**]」を選択します。
 
-「プロジェクト」セクションには、会社フォルダー、作成した個人用フォルダー、Workspace プロジェクト、モバイルスコアカードが表示されます。 このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
+「プロジェクト」セクションには、会社フォルダー、作成した個人フォルダー、Workspace プロジェクト、モバイルスコアカードが表示されます。 このページを使用して、フォルダー、プロジェクトおよびモバイルスコアカードを表示、作成および変更します。 詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 
-**[!UICONTROL プロジェクト]**&#x200B;は、自分で作成したり、他のユーザーが作成して共有したりしたデータコンポーネント、テーブルおよびビジュアライゼーションを組み合わせてカスタマイズされたデザインです。[!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
+**[!UICONTROL プロジェクト]**&#x200B;は、自分で作成したり、他のユーザーが作成して共有したりしたデータコンポーネント、テーブルおよびビジュアライゼーションを組み合わせてカスタマイズされたデザインです。 [!UICONTROL プロジェクト]は、空のプロジェクトと空のモバイルスコアカードも指します。
 
 >[!NOTE]
 >
->次の設定の一部は、セッション間で保持されます。 例えば、選択したタブ、選択したセグメント、選択した列、列の並べ替え方向などがあります。検索結果が保持されません。
+>次の設定のいくつかは、セッション間で保持されます。 例えば、選択したタブ、選択したセグメント、選択した列、列の並べ替え方向などがあります。 検索結果は保持されません。
 
 詳しくは、[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。
 
 ## テンプレート
 
-Customer Journey Analyticsのテンプレートにアクセスする手順は次のとおりです。
+Customer Journey Analyticsでテンプレートにアクセスするには：
 
-1. 「[!UICONTROL **ワークスペース**]」タブを選択します。
+1. 「[!UICONTROL **Workspace**]」タブを選択します。
 
-1. 左側のパネルの [!UICONTROL **テンプレート**] セクションでは、Adobe テンプレートまたは会社テンプレートを選択できます。
+1. 左側のパネルの「[!UICONTROL **テンプレート**]」セクションでは、Adobe テンプレートまたは会社テンプレートのいずれかを選択できます。
 
 テンプレートの使用について詳しくは、次のリソースを参照してください。
 
@@ -103,9 +108,9 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=ja) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
-| [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
+| [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest CX Enterprise release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
 | Search bar | Searches all columns in the table. |
 | Selection box | Selects one or more projects to display the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
@@ -121,43 +126,43 @@ The available columns are:
 
 ## 学習
 
-**[!UICONTROL 2&rbrace;Workspace]** タブの「ラーニング [!UICONTROL **」セクションには、Customer Journey Analyticsの初級、中級、高度な機能とユースケースに関する情報が表示されます。**]&#x200B;また、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード方法についても説明します。
+「[!UICONTROL **Workspace**]」タブの&#x200B;**[!UICONTROL 学習]** セクションには、Customer Journey Analyticsの初心者向け、中級、高度な機能とユースケースに関する情報が表示されます。 また、Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする方法についても説明します。
 
 ### 学習パス
 
-Customer Journey Analyticsでラーニングパスに関する情報にアクセスするには：
+Customer Journey Analyticsの学習パスに関する情報にアクセスするには：
 
-1. 「[!UICONTROL **ワークスペース**]」タブを選択します。
+1. 「[!UICONTROL **Workspace**]」タブを選択します。
 
-1. 左パネルの「[!UICONTROL **学習**]」セクションで、「[!UICONTROL **学習パス**]」を選択します。
+1. 左側のパネルの&#x200B;[!UICONTROL **学習**] セクションで、[!UICONTROL **学習パス**]&#x200B;を選択します。
 
-   このページには、実践ビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。
+   このページには、実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。
 
 
-[!UICONTROL **学習パス**] ページには次の機能があります。
+[!UICONTROL **学習パス**] ページには、次の機能が用意されています。
 
 * **コンテンツをフィルタリング：**![フィルター](/help/assets/icons/Filter.svg)を使用して、**[!UICONTROL タイプ]**（**[!UICONTROL ドキュメント]**、**[!UICONTROL ビデオ]**、**[!UICONTROL ツアーとチュートリアル]**）および&#x200B;**[!UICONTROL エクスペリエンスレベル]**（**[!UICONTROL 初級]**、**[!UICONTROL 中級]**、または&#x200B;**[!UICONTROL 上級]**）で学習コンテンツをフィルタリングします。
-* **進行状況を追跡：**&#x200B;コンテンツを選択すると、「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグが表示されます。このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグを選択して、コンテンツの一部から削除できます。
-* **追加コンテンツを表示：**&#x200B;ビデオの表示中に「**[!UICONTROL 詳細情報]**」を選択すると、Experience League の関連ドキュメントコンテンツが表示されます。または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
+* **進行状況を追跡：**&#x200B;コンテンツを選択すると、「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグが表示されます。 このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。 「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグを選択して、コンテンツの一部から削除できます。
+* **追加コンテンツを表示：**&#x200B;ビデオの表示中に「**[!UICONTROL 詳細情報]**」を選択すると、Experience League の関連ドキュメントコンテンツが表示されます。 または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
    * **[!UICONTROL YouTube を訪問]：** Analysis Workspace の完全な YouTube プレイリストを表示します。
    * [!UICONTROL **Experience League を訪問**]：Experience League で Customer Journey Analytics ドキュメントの完全なスイートを表示します。
-* **新規ユーザー向けの基礎：**&#x200B;新規ユーザーには、[!UICONTROL Workspace の基礎を学ぶ]ツアーをお勧めします。このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。このツアーは、[フリーフォームパネル](/help/analysis-workspace/c-panels/freeform-panel.md)または[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)ヘッダーのツールチップを使用して、Workspace でいつでも再度開始することもできます。
+* **新規ユーザー向けの基礎：**&#x200B;新規ユーザーには、[!UICONTROL Workspace の基礎を学ぶ]ツアーをお勧めします。 このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。 このツアーは、[フリーフォームパネル](/help/analysis-workspace/c-panels/freeform-panel.md)または[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)ヘッダーのツールチップを使用して、Workspace でいつでも再度開始することもできます。
 
 ### Customer Journey Analytics にアップグレード
 
 Customer Journey Analyticsへのアップグレードに関する情報にアクセスするには：
 
-1. 「[!UICONTROL **ワークスペース**]」タブを選択します。
+1. 「[!UICONTROL **Workspace**]」タブを選択します。
 
-1. 左パネルの「[!UICONTROL **ラーニング**]」セクションで、「[!UICONTROL **Customer Journey Analyticsにアップグレード**]」を選択します。
+1. 左側のパネルの&#x200B;[!UICONTROL **学習**] セクションで、「[!UICONTROL **Customer Journey Analyticsにアップグレード**]」を選択します。
 
-このページは、Adobe AnalyticsからCustomer Journey Analyticsに完全にアップグレードされていないお客様を対象としています。 アンケートを提供し、組織固有の状況に合わせてアップグレード手順を動的に生成します。
+このページは、Adobe AnalyticsからCustomer Journey Analyticsへの完全なアップグレードがまだ完了していないお客様向けです。 組織固有の状況に応じて動的に生成されるアップグレードステップの結果を示すアンケートを提供します。
 
-詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization) の「組織のアップグレード手順を動的に生成する [&#x200B; を参照してください &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。
+詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。[
 
 ## 好みのランディングページ
 
-好みのランディングページを設定できます。詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md#general-preferences)を参照してください。
+好みのランディングページを設定できます。 詳しくは、[ユーザー環境設定](/help/analysis-workspace/user-preferences.md#general-preferences)を参照してください。
 
 <!--
 ## Landing page FAQ {#landing-faq}
