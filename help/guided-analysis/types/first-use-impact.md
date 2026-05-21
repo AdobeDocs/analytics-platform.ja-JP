@@ -6,16 +6,10 @@ keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
 TQID: https://experienceleague.adobe.com/TRLnyHuOUno5zy2QT2Uc8vFnWeVy2snRu-ispS0ClKk
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 692
@@ -37,7 +31,7 @@ ht-degree: 97%
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 初回使用の影響]**&#x200B;分析では、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベント前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒グラフは、特定のユーザーが機能を初めて使用した 0 日目を表します。 ユーザーが必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって行われる可能性があるので、0 日目は個々のユーザーごとに異なる意味を持つ場合があります。
 
 
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
 
 
 ## ユースケース

@@ -6,19 +6,11 @@ feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 TQID: https://experienceleague.adobe.com/McecE-5AGq-IVw-rdkZpV5WgTvax-gubrpQk0ow4JJc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 720
@@ -42,7 +34,7 @@ ht-degree: 62%
 1. 設定したチャネルに基づいて、次の操作を行います。
 
    * **web**&#x200B;の場合：[Content Analyticsに従って、開発環境、ステージング環境または公開環境のページの`<head>`要素に埋め込まれたコードを](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/environments/environments#installation) インストールします。
-   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント &#x200B;](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
+   * **mobile**&#x200B;の場合：モバイルアプリケーションをContent Analytics用に設定およびインストルメントする方法については、[Experience Platform Mobile SDK ドキュメント ](https://developer.adobe.com/client-sdks/home/)の[Adobe Content Analytics拡張機能ガイド ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に記載されているソリューション固有のソリューションを参照してください。
 
 ## データ収集を停止
 
@@ -122,6 +114,6 @@ window.adobe.getContentExperienceVersion = () => {
 
 >[!MORELIKETHIS]
 >
->[&#x200B; ガイド付き設定](guided.md)
+>[ ガイド付き設定](guided.md)
 >[データ収集タグ公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)
 >

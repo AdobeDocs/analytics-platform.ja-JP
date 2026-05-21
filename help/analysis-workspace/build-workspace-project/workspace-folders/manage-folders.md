@@ -6,14 +6,10 @@ feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
 TQID: https://experienceleague.adobe.com/YNvjUk6kW4s7DwgpQSnU5R5ifPnpsavl0EJ84qqvAXI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 431
@@ -34,13 +30,13 @@ Workspace でフォルダーの名前を変更するには：
 * [プロジェクトリスト](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)で、名前を変更するフォルダーを選択します。
 
    1. 選択したフォルダーのコンテキストメニュー![詳細](/help/assets/icons/More.svg)の使用可能な[アクション](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)から「**[!UICONTROL 名前を変更]**」を選択するか、青色のアクションバーを選択します。
-   1. **[!UICONTROL 名前を変更：*フォルダー名&#x200B;*]**&#x200B;ダイアログで、新しい名前を入力して、「**[!UICONTROL 保存&#x200B;]**」を選択します。
+   1. **[!UICONTROL 名前を変更：*フォルダー名&#x200B;*]**ダイアログで、新しい名前を入力して、「**[!UICONTROL 保存&#x200B;]**」を選択します。
 
 * 名前を変更するフォルダー内。
 
    1. [タイトル領域](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area)の![詳細](/help/assets/icons/More.svg)から「**[!UICONTROL フォルダーの名前を変更]**」を選択します。
 
-   1. **[!UICONTROL 名前を変更：*フォルダー名&#x200B;*]**&#x200B;ダイアログで、新しい名前を入力して、「**[!UICONTROL 保存&#x200B;]**」を選択します。
+   1. **[!UICONTROL 名前を変更：*フォルダー名&#x200B;*]**ダイアログで、新しい名前を入力して、「**[!UICONTROL 保存&#x200B;]**」を選択します。
 
 
 ## フォルダーの移動

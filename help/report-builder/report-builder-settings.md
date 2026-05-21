@@ -7,14 +7,10 @@ type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/voTu-CKMtY-0dWvxQd2RzGF8bU9xcuc7J1206kB-3Ao
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 257
@@ -30,7 +26,7 @@ Report Builder 設定を変更するには
 
 1. **設定** アイコンを選択します。
 
-1. オフライン モードを無効にする[有効にする](#off-line-mode)、[言語を選択](#language)または[&#x200B; トラブルシューティングを有効にする](#troubleshooting)に変更を加えます。
+1. オフライン モードを無効にする[有効にする](#off-line-mode)、[言語を選択](#language)または[ トラブルシューティングを有効にする](#troubleshooting)に変更を加えます。
 
 1. 「**[!UICONTROL 適用]**」を選択します。
 

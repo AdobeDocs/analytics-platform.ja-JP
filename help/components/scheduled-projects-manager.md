@@ -5,18 +5,11 @@ feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
 TQID: https://experienceleague.adobe.com/MOIr6V7GnwTw8-luvhS14IrE7PKspoVOCRXYGBnAUxA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 794
@@ -28,9 +21,9 @@ ht-degree: 41%
 
 スケジュールされたAnalysis Workspace プロジェクトは、**[!UICONTROL コンポーネント]**/**[!UICONTROL スケジュールされたプロジェクト]**&#x200B;を使用してCustomer Journey Analyticsで管理できます。
 
-**[!UICONTROL スケジュール済みプロジェクト]**&#x200B;では、定期的なプロジェクト スケジュールを編集および削除できます。  [&#x200B; スケジュール済みプロジェクトリスト &#x200B;](#scheduled-project-list)には、特定のユーザーが作成したアイテムが表示されます。 アプリケーションでユーザーアカウントが無効になっている場合、スケジュールされたすべての配信が停止します。
+**[!UICONTROL スケジュール済みプロジェクト]**&#x200B;では、定期的なプロジェクト スケジュールを編集および削除できます。  [ スケジュール済みプロジェクトリスト ](#scheduled-project-list)には、特定のユーザーが作成したアイテムが表示されます。 アプリケーションでユーザーアカウントが無効になっている場合、スケジュールされたすべての配信が停止します。
 
-![&#x200B; スケジュール済みプロジェクトインターフェイス &#x200B;](assets/scheduled-projects.png)
+![ スケジュール済みプロジェクトインターフェイス ](assets/scheduled-projects.png)
 
 ## スケジュール済みプロジェクトリスト
 
@@ -41,7 +34,7 @@ ht-degree: 41%
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | 1つ以上のスケジュール済みプロジェクトを選択すると、スケジュール済みプロジェクトインターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[アクション](#actions)を参照してください。 |
 | ![星](/help/assets/icons/Star.svg) | スケジュールされたプロジェクトで![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)を優先しない場合に選択します。 |
 | **[!UICONTROL スケジュール ID]** | 主にデバッグ目的で使用されるID。 |
-| **[!UICONTROL 名前]** | このプロジェクトの名前。<br/> スケジュールされたプロジェクトの詳細を表示するには、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。<br/> コンテキストメニューを開くには、![詳細](/help/assets/icons/More.svg)を選択します。 このメニューから、次の操作を実行できます。<ul><li>![&#x200B; スケジュールされたプロジェクトを](/help/assets/icons/Delete.svg)削除&#x200B;**[!UICONTROL 削除]**&#x200B;します。</li><li>スケジュールされたプロジェクトの![&#x200B; ラベル &#x200B;](/help/assets/icons/Labels.svg) **[!UICONTROL タグ]**。</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL スケジュールされたプロジェクトを]**&#x200B;承認します。</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;の書き出し：スケジュールされたプロジェクトをCSV ファイルに書き出します。</li></ul> |
+| **[!UICONTROL 名前]** | このプロジェクトの名前。<br/> スケジュールされたプロジェクトの詳細を表示するには、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。<br/> コンテキストメニューを開くには、![詳細](/help/assets/icons/More.svg)を選択します。 このメニューから、次の操作を実行できます。<ul><li>![ スケジュールされたプロジェクトを](/help/assets/icons/Delete.svg)削除&#x200B;**[!UICONTROL 削除]**&#x200B;します。</li><li>スケジュールされたプロジェクトの![ ラベル ](/help/assets/icons/Labels.svg) **[!UICONTROL タグ]**。</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL スケジュールされたプロジェクトを]**&#x200B;承認します。</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;の書き出し：スケジュールされたプロジェクトをCSV ファイルに書き出します。</li></ul> |
 | **[!UICONTROL 所有者]** | プロジェクトを作成し所有しているユーザー。 |
 | **[!UICONTROL タグ]** | （任意）タグ付けは、プロジェクトを整理するのに適した方法です。 すべてのユーザーがタグを作成し、1 つ以上のタグをプロジェクトに適用できます。 ただし、タグを表示できるのは、自分が所有しているプロジェクトか、自分と共有されているプロジェクトに限られます。 |
 | **[!UICONTROL 配信先]** | このスケジュールされたプロジェクトの受信者。 |
@@ -59,7 +52,7 @@ ht-degree: 41%
 
 スケジュール済みプロジェクトを編集するには、スケジュール済みプロジェクトのタイトルを選択します。 スケジュールの詳細を更新するには、**[!UICONTROL スケジュール済みプロジェクトを編集]** ダイアログを使用します。 詳しくは、[他の](../analysis-workspace/export/t-schedule-report.md)へのファイルの送信を参照してください。
 
-![&#x200B; スケジュールされたプロジェクトを編集](assets/edit-scheduled-project.png)
+![ スケジュールされたプロジェクトを編集](assets/edit-scheduled-project.png)
 
 スケジュールを更新するには、**[!UICONTROL 更新]**&#x200B;を選択します。
 
@@ -73,7 +66,7 @@ ht-degree: 41%
 | アイコン | アクション | 説明 |
 |:---:|---|---|
 | ![閉じる](/help/assets/icons/Close.svg) | **[!UICONTROL *x *個を選択済み]** | 選択したスケジュール済みプロジェクトの選択を解除するには、を選択します。 |
-| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | プロジェクトに対して選択したスケジュール済みプロジェクトを削除します。プロジェクトは削除されません。  <p>プロジェクトの削除について詳しくは、[&#x200B; プロジェクトの概要](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。</p> |
+| ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | プロジェクトに対して選択したスケジュール済みプロジェクトを削除します。プロジェクトは削除されません。  <p>プロジェクトの削除について詳しくは、[ プロジェクトの概要](/help/analysis-workspace/build-workspace-project/freeform-overview.md)を参照してください。</p> |
 | ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したスケジュール済みプロジェクトにタグ付けします。 **[!UICONTROL スケジュール済みプロジェクト]**&#x200B;でタグを選択し、**[!UICONTROL 保存]**&#x200B;を選択して保存します。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]** | 選択したスケジュール済みプロジェクトを承認します。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV に書き出し]** | 選択したスケジュール済みプロジェクトを`Export Scheduled Projects List.csv`という名前のファイルに書き出します。 |
@@ -81,7 +74,7 @@ ht-degree: 41%
 
 ## フィルター
 
-スケジュール済みプロジェクト [&#x200B; スケジュール済みプロジェクトリスト &#x200B;](#scheduled-project-list)は、フィルターパネル ➌を使用してフィルタリングできます。 フィルターパネルを表示または非表示にするには、![フィルター](/help/assets/icons/Filter.svg) を使用します。
+スケジュール済みプロジェクト [ スケジュール済みプロジェクトリスト ](#scheduled-project-list)は、フィルターパネル ➌を使用してフィルタリングできます。 フィルターパネルを表示または非表示にするには、![フィルター](/help/assets/icons/Filter.svg) を使用します。
 
 フィルターパネルは、次のセクションで構成されています。
 

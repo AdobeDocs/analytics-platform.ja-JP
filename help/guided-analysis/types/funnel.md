@@ -6,20 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 694
@@ -38,11 +29,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**&#x200B;分析では、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各手順を表します。 縦軸は、各手順でのユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**分析では、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各手順を表します。 縦軸は、各手順でのユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnelのフリクション分析](https://video.tv.adobe.com/v/3431281/?captions=jpn&quality=12&learn=onn){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnelのフリクション分析](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
