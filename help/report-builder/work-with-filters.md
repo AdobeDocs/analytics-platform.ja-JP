@@ -7,10 +7,17 @@ type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/BOvbE0QbzDPntg55mRGkS-HIh7dUh1inIFgAhAlfLGw
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 641
@@ -36,7 +43,7 @@ ht-degree: 6%
 
    1. **[!UICONTROL テーブル]** ペインの特定の指標に対して![MoreSmall](/help/assets/icons/MoreSmall.svg)を選択し、**[!UICONTROL フィルター指標]**&#x200B;を選択します。
 
-      指標を表示する「![ セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
+      指標を表示する「![&#x200B; セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
 
    1. 「**[!UICONTROL セグメント]**」ドロップダウンメニューから1つ以上のセグメントを選択します。 セグメントは、**[!UICONTROL 適用されたセグメント]** リストに追加されます。
 
@@ -99,7 +106,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 1. セグメントを定義するには、「**[!UICONTROL セグメント]**」タブを選択します。
 1. ![DataViewSelector](/help/assets/icons/DataViewSelector.svg)を選択します。
 
-   ![ セルからセグメントを選択](assets/select-segment-from-cell.png){zoomable="yes"}
+   ![&#x200B; セルからセグメントを選択](assets/select-segment-from-cell.png){zoomable="yes"}
 
 1. データブロックがセグメントを参照するセルを選択します。
 
@@ -109,7 +116,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 
 1. 「**セグメント**」タブから、新しく作成した参照セルセグメントをデータブロックに追加します。
 
-   Sheet1!J1 （All Data） セグメントがテーブルに追加されたことを示す![ セグメント タブ。](assets/segment-from-cell-applied.png){zoomable="yes"}
+   Sheet1!J1 （All Data） セグメントがテーブルに追加されたことを示す![&#x200B; セグメント タブ。](assets/segment-from-cell-applied.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -121,7 +128,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 
 1. 「**[!UICONTROL クイック編集]**」メニューの「**[!UICONTROL セルからのセグメント]**」の下にあるリンクを選択します。
 
-   Sheet1!J1 （All Data） ](assets/select-segment-from-cell-in-sheet.png){zoomable="yes"}を示すセル リンクからの![ セグメント
+   Sheet1!J1 （All Data） ![&#128279;](assets/select-segment-from-cell-in-sheet.png){zoomable="yes"}を示すセル リンクからの セグメント
 
 1. ドロップダウンメニューからセグメントを選択します。
 

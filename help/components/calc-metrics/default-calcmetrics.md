@@ -5,10 +5,17 @@ feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
 TQID: https://experienceleague.adobe.com/-jngIXgXeFZZkfL5jSHLuX8ZmcWU5rIfLqb26ovn6QY
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 549
@@ -18,7 +25,7 @@ ht-degree: 83%
 
 # 計算指標テンプレート
 
-Customer Journey Analyticsには、最も一般的なユースケースをカバーする以下の計算指標テンプレートが用意されています。 これらのAdobe定義の計算指標は、小さな![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴによって識別されます。 これらの指標をすばやくフィルターするには、[ コンポーネントフィルター](/help/components/overview.md#filter)で![ ラベル ](/help/assets/icons/Label.svg) **[!UICONTROL Adobe テンプレート]**&#x200B;を選択します。
+Customer Journey Analyticsには、最も一般的なユースケースをカバーする以下の計算指標テンプレートが用意されています。 これらのAdobe定義の計算指標は、小さな![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴによって識別されます。 これらの指標をすばやくフィルターするには、[&#x200B; コンポーネントフィルター](/help/components/overview.md#filter)で![&#x200B; ラベル &#x200B;](/help/assets/icons/Label.svg) **[!UICONTROL Adobe テンプレート]**&#x200B;を選択します。
 
 | 計算指標名 | 説明<br/>数式 |
 |---------|----------|

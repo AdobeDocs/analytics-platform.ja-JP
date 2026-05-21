@@ -4,10 +4,22 @@ title: 計算指標の管理
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 TQID: https://experienceleague.adobe.com/lyXPyn6sObLNBvD8O-bULf1dDoQO80IIOokU8Dy1Vno
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0id: f2ef16dc-055a-4bb7-baa5-7039653f3966id: fa6ac035-8403-478b-9ce1-3fe29d211fca
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 903
@@ -28,7 +40,7 @@ ht-degree: 32%
 計算指標マネージャーには、次のインターフェイス要素があります。
 
 
-![計算指標マネージャーインターフェイス ](assets/calculated-metrics-manager.png)
+![計算指標マネージャーインターフェイス &#x200B;](assets/calculated-metrics-manager.png)
 
 ### 計算指標リスト
 
@@ -38,14 +50,14 @@ ht-degree: 32%
 
 | 列 | 説明 |
 | --- | --- |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標として![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)を優先しない場合に選択します。 [計算指標をお気に入りにマーク ](/help/components/segments/seg-favorite.md)を参照してください |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 計算指標として![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)を優先しない場合に選択します。 [計算指標をお気に入りにマーク &#x200B;](/help/components/segments/seg-favorite.md)を参照してください |
 | **[!UICONTROL タイトルと説明]** | 計算指標を編集するには、タイトルリンクを選択します。これにより、[計算指標ビルダー](cm-build-metrics.md)が開きます。 共有された計算指標は、![共有](/help/assets/icons/ShareAlt.svg)と共に示されます。 |
 | **[!UICONTROL データビュー]** | この計算指標が適用されるデータビュー。 |
 | **[!UICONTROL 所有者]** | 計算指標の所有者。 ユーザーには、自分が所有している注釈または自分と共有されている注釈のみが表示されます。 |
 | **[!UICONTROL タグ]** | この計算指標のタグを一覧表示します。 |
 | **[!UICONTROL 共有先]** | 計算指標を共有した個人またはグループの数を一覧表示します。 選択して、**[!UICONTROL 計算指標を共有]** ダイアログを開きます。 詳しくは、[計算指標の共有](cm-sharing.md)を参照してください。 |
 | **[!UICONTROL 変更日時]** | 計算指標が最後に変更された日時。 |
-| **[!UICONTROL 使用場所]** | 計算指標が現在使用されている場所と、各領域で指標が何回使用されているかを示します。 <p>例えば、計算指標が40件のプロジェクトと2件のアラートで使用されている場合、この列の値は&#x200B;[!UICONTROL **42個のコンポーネント**]&#x200B;として表示されます。 <p>この列の値を選択すると、計算指標が使用されている場所の内訳が表示されます（例：[!UICONTROL **プロジェクト（40）**]、[!UICONTROL **モバイルスコアカード（2）**]）。 さらに、計算指標が使用されている項目のリストを表示できます。 例えば、使用されているプロジェクトのリストを表示するには、[!UICONTROL **プロジェクト（40）**]&#x200B;リンクを選択します。</p><p>次の各領域は、その領域で使用されている計算指標のインスタンス数を示しています。</p> <ul><li>[!UICONTROL **プロジェクト**]<p>計算指標ビルダー](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)で作成された[計算指標が含まれており、すべてのプロジェクトで使用できます。</p></li><li>[!UICONTROL **アドホックコンポーネント**]<p>クイック計算指標](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)として作成された[計算指標が含まれており、単一のプロジェクト内でのみ使用できます。</p></li><li>[!UICONTROL **スケジュールされたプロジェクト**]</li><li>[!UICONTROL **モバイルスコアカード**]</li><li>[!UICONTROL **注釈**]</li><li>[!UICONTROL **Report Builder**]<p>このオプションを選択すると、次のデータ列を含むCSV ファイルがダウンロードされます。</p><ul><li>Report Builder 名</li><li>前回のアクセス</li><li>最後にアクセスした IMS ユーザー ID</li><li>前回アクセスしたユーザー名</li></ul></li></ul><p>この情報は、コンポーネントが組織内のユーザーにとって有用かどうか、どこで使用されているか、削除または変更する必要があるかどうかを判断するのに役立ちます。</p><p>この列を表示する際は、次の点を考慮してください。</p><ul><li>この情報は、システム管理者のみが使用できます。</li><li>[!UICONTROL **使用**]&#x200B;列はデフォルトでは表示されません。 この列の表示を構成するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用します。</li><li>この情報には、API またはデータウェアハウスからの使用は含まれません。</li><li>特定のコンポーネントに対してこの列にデータがない場合でも、[!UICONTROL **最終使用日**]&#x200B;が設定されている場合、そのコンポーネントは保存されずに分析で使用されている可能性があります。</li><li>使用状況に関する情報は、2023年9月より提供されます。</li></ul><p>この情報と共に[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)を使用すると、組織内でのコンポーネントの使用方法を追跡し、より深く理解することができます。</p> |
+| **[!UICONTROL 使用場所]** | 計算指標が現在使用されている場所と、各領域で指標が何回使用されているかを示します。 <p>例えば、計算指標が40件のプロジェクトと2件のアラートで使用されている場合、この列の値は&#x200B;[!UICONTROL **42個のコンポーネント**]&#x200B;として表示されます。 <p>この列の値を選択すると、計算指標が使用されている場所の内訳が表示されます（例：[!UICONTROL **プロジェクト（40）**]、[!UICONTROL **モバイルスコアカード（2）**]）。 さらに、計算指標が使用されている項目のリストを表示できます。 例えば、使用されているプロジェクトのリストを表示するには、[!UICONTROL **プロジェクト（40）**]&#x200B;リンクを選択します。</p><p>次の各領域は、その領域で使用されている計算指標のインスタンス数を示しています。</p> <ul><li>[!UICONTROL **プロジェクト**]<p>計算指標ビルダー[&#128279;](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)で作成された[計算指標が含まれており、すべてのプロジェクトで使用できます。</p></li><li>[!UICONTROL **アドホックコンポーネント**]<p>クイック計算指標](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)として作成された計算指標が含まれており、単一のプロジェクト内でのみ使用できます。</p></li><li>[!UICONTROL **スケジュールされたプロジェクト**]</li><li>[!UICONTROL **モバイルスコアカード**]</li><li>[!UICONTROL **注釈**]</li><li>[!UICONTROL **Report Builder**]<p>このオプションを選択すると、次のデータ列を含むCSV ファイルがダウンロードされます。</p><ul><li>Report Builder 名</li><li>前回のアクセス</li><li>最後にアクセスした IMS ユーザー ID</li><li>前回アクセスしたユーザー名</li></ul></li></ul><p>この情報は、コンポーネントが組織内のユーザーにとって有用かどうか、どこで使用されているか、削除または変更する必要があるかどうかを判断するのに役立ちます。</p><p>この列を表示する際は、次の点を考慮してください。</p><ul><li>この情報は、システム管理者のみが使用できます。</li><li>[!UICONTROL **使用**]&#x200B;列はデフォルトでは表示されません。 この列の表示を構成するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用します。</li><li>この情報には、API またはデータウェアハウスからの使用は含まれません。</li><li>特定のコンポーネントに対してこの列にデータがない場合でも、[!UICONTROL **最終使用日**]&#x200B;が設定されている場合、そのコンポーネントは保存されずに分析で使用されている可能性があります。</li><li>使用状況に関する情報は、2023年9月より提供されます。</li></ul><p>この情報と共に[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)を使用すると、組織内でのコンポーネントの使用方法を追跡し、より深く理解することができます。</p> |
 | **[!UICONTROL 前回の使用]** | 計算された指標が最後に使用された日時。 |
 
 {style="table-layout:auto"}
@@ -74,7 +86,7 @@ ht-degree: 32%
 
 ### フィルターパネル
 
-![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、計算指標のリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用する計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
+![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、計算指標のリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用する計算指標の数が表示されます。 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルの表示を切り替えます。
 
 詳しくは、[計算指標のリストのフィルター](cm-filter.md)を参照してください。
 

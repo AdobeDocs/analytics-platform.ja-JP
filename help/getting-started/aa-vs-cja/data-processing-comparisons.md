@@ -5,11 +5,20 @@ exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/Gr0XohCP1P57crLYW34oL-tr9kFuC6E-VxjWYtqEEdA
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1332
@@ -21,14 +30,14 @@ ht-degree: 64%
 
 データをレポートで活用する前に、データを処理する機能が必要になる場合がよくあります。 データの収集からレポートやビジュアライゼーションの生成に至るまで、ジャーニーの複数の段階でそのデータを処理できます。
 
-Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。 この&#x200B;**収集時の処理**をサポートするには、VISTA ルール、処理ルール、マーケティングチャネル処理ルールなどの機能を使用できます。
-その後、データは保存され、レポート時に追加の処理を適用できます。 例えば、ディメンションの分類、セグメント化の適用、別のアトリビューションモデルの選択などを行うことができます。 この**レポート時の処理**&#x200B;はその場で行われます。
+Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。 この&#x200B;**収集時の処理**&#x200B;をサポートするには、VISTA ルール、処理ルール、マーケティングチャネル処理ルールなどの機能を使用できます。
+その後、データは保存され、レポート時に追加の処理を適用できます。 例えば、ディメンションの分類、セグメント化の適用、別のアトリビューションモデルの選択などを行うことができます。 この&#x200B;**レポート時の処理**&#x200B;はその場で行われます。
 
 Adobe Analytics では、通常、レポート時の処理は、収集時に発生する処理量よりも少ない処理量を表します。
 
 ![Adobe Analytics の収集時の処理](../assets/aa-processing.png)
 
-対照的にCustomer Journey Analyticsは、データを整理して保存する前に、収集時間の前処理を最小限に抑えるように設計されています。 Customer Journey Analyticsの基盤となるアーキテクチャは、レポート時に保存されたデータを操作するように設計されています。 Customer Journey Analyticsは、Analysis Workspaceだけでなく、レポート時処理機能も備えています。 追加のレポート時処理機能は、データビューの[ コンポーネント ](/help/data-views/component-settings/overview.md)および[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)の定義を通じて使用できます。
+対照的にCustomer Journey Analyticsは、データを整理して保存する前に、収集時間の前処理を最小限に抑えるように設計されています。 Customer Journey Analyticsの基盤となるアーキテクチャは、レポート時に保存されたデータを操作するように設計されています。 Customer Journey Analyticsは、Analysis Workspaceだけでなく、レポート時処理機能も備えています。 追加のレポート時処理機能は、データビューの[&#x200B; コンポーネント &#x200B;](/help/data-views/component-settings/overview.md)および[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)の定義を通じて使用できます。
 
 ![Customer Journey Analytics のレポート時の処理](../assets/cja-processing.png)
 

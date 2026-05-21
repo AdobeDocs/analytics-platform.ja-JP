@@ -6,11 +6,17 @@ feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
 TQID: https://experienceleague.adobe.com/a63XlsGElfxDW1-EqB2l1iMdTtMlk7OaVBuLvS8QH7E
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1281
@@ -36,7 +42,7 @@ ht-degree: 6%
 
    ![書き出しページの管理](assets/exports-manage.png)
 
-1. **フィルター** アイコン ![ フィルターアイコン ](/help/assets/icons/Filter.svg)を選択します。
+1. **フィルター** アイコン ![&#x200B; フィルターアイコン &#x200B;](/help/assets/icons/Filter.svg)を選択します。
 
    次の条件でフィルタリングできます。
 
@@ -73,7 +79,7 @@ ht-degree: 6%
 
    [!UICONTROL **テーブル全体を書き出し**] ダイアログが表示されます。
 
-1. 使用可能なオプションのいずれかを更新します。 各オプションについて詳しくは、[Customer Journey Analytics レポートをAnalysis Workspace](/help/analysis-workspace/export/export-cloud.md)に書き出しの[](/help/analysis-workspace/export/export-cloud.md#export-full-tables)から完全なテーブルを書き出すを参照してください。
+1. 使用可能なオプションのいずれかを更新します。 各オプションについて詳しくは、[Customer Journey Analytics レポートをAnalysis Workspace](/help/analysis-workspace/export/export-cloud.md)に書き出しの[&#128279;](/help/analysis-workspace/export/export-cloud.md#export-full-tables)から完全なテーブルを書き出すを参照してください。
 
 ## 書き出しの更新
 
@@ -87,7 +93,7 @@ ht-degree: 6%
 
    [!UICONTROL **テーブル全体を書き出し**] ダイアログが表示されます。<!--check process from here. -->
 
-1. 使用可能なオプションのいずれかを更新します。 各オプションについて詳しくは、[Customer Journey Analytics レポートをAnalysis Workspace](/help/analysis-workspace/export/export-cloud.md)に書き出しの[](/help/analysis-workspace/export/export-cloud.md#export-full-tables)から完全なテーブルを書き出すを参照してください。
+1. 使用可能なオプションのいずれかを更新します。 各オプションについて詳しくは、[Customer Journey Analytics レポートをAnalysis Workspace](/help/analysis-workspace/export/export-cloud.md)に書き出しの[&#128279;](/help/analysis-workspace/export/export-cloud.md#export-full-tables)から完全なテーブルを書き出すを参照してください。
 
 ## 書き出しの複製
 
@@ -119,7 +125,7 @@ ht-degree: 6%
 
 ## タグ付けと書き出し
 
-タグを書き出しに適用すると、[!UICONTROL 書き出し] ページの[!UICONTROL  タグ ]列でこれらのタグを表示できます。 詳しくは、[列の設定](#configure-columns-on-the-exports-page)を参照してください。
+タグを書き出しに適用すると、[!UICONTROL 書き出し] ページの[!UICONTROL &#x200B; タグ &#x200B;]列でこれらのタグを表示できます。 詳しくは、[列の設定](#configure-columns-on-the-exports-page)を参照してください。
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**]&#x200B;を選択します。
 
@@ -152,7 +158,7 @@ ht-degree: 6%
 
 1. Customer Journey Analyticsで、[!UICONTROL **コンポーネント**]/[!UICONTROL **書き出し**]&#x200B;を選択します。
 
-1. 「[!UICONTROL **書き出し**]」タブで、[!UICONTROL 書き出し] ページの右上にある「**テーブルをカスタマイズ**」アイコン「![ テーブルをカスタマイズ ](assets/customize-table-icon.png)」を選択します。
+1. 「[!UICONTROL **書き出し**]」タブで、[!UICONTROL 書き出し] ページの右上にある「**テーブルをカスタマイズ**」アイコン「![&#x200B; テーブルをカスタマイズ &#x200B;](assets/customize-table-icon.png)」を選択します。
 
    次の列を表示できます。
 
@@ -161,7 +167,7 @@ ht-degree: 6%
    | 名前 | 書き出しの名前。 [Customer Journey Analytics レポートをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md)の説明に従って、書き出し時に名前を付けます。 |
    | ID | IDは、作成時に書き出しに自動的に割り当てられます。<!-- True? --> |
    | データビュー名 | 書き出しに関連付けられているデータビューの名前。 「[Customer Journey Analytics レポートをクラウドに書き出し](/help/analysis-workspace/export/export-cloud.md)」の説明に従って、書き出しを作成するときにデータビューを選択できます。 |
-   | ステータス | 書き出しのステータス。 利用できるステータスは、[!UICONTROL  アクティブ ]、[!UICONTROL 完了]、[!UICONTROL 失敗]です。<p> **メモ：**&#x200B;失敗した書き出しのトラブルシューティングについて詳しくは、[失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md)を参照してください。</p> |
+   | ステータス | 書き出しのステータス。 利用できるステータスは、[!UICONTROL &#x200B; アクティブ &#x200B;]、[!UICONTROL 完了]、[!UICONTROL 失敗]です。<p> **メモ：**&#x200B;失敗した書き出しのトラブルシューティングについて詳しくは、[失敗した書き出しのトラブルシューティング &#x200B;](/help/components/exports/troubleshoot-exports.md)を参照してください。</p> |
    | タグ | 書き出しに適用されているタグが表示されます。 書き出しにタグを適用する方法について詳しくは、[書き出しのタグ付け](#tag-an-export)を参照してください。 |
    | テーブルサイズ (前回の送信) | 前回の送信時の書き出しのサイズ。 |
    | 作成者 | エクスポートを作成したユーザー。 |

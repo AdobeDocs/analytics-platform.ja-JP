@@ -6,11 +6,19 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 861
@@ -53,7 +61,7 @@ ht-degree: 91%
 
 * **[!UICONTROL 表示]**：この分析と[頻度](frequency.md)を切り替えます。
 * **[!UICONTROL イベントと指標]**：測定するイベントまたは指標です。 各選択範囲が、グラフの系列やテーブルの行として表されます。 イベントと指標をクエリで組み合わせることはできません。最初の選択を行ったら、残りのクエリの選択項目は同じタイプにする必要があります。 最大 5 つの選択項目を含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL  ユーザー]、[!UICONTROL  イベント ]、[!UICONTROL  セッション ]、[!UICONTROL  ユーザーの割合]、[!UICONTROL  セッションごとのイベント ]、および[!UICONTROL  ユーザーごとのイベント ]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL 購買グループ ]、[!UICONTROL  グローバルアカウントの割合]、[!UICONTROL  グローバルアカウントの割合]、[!UICONTROL  アカウントの割合]、[!UICONTROL 購買グループの割合]、[!UICONTROL 商談の割合] イベント アカウント ]、購買グループごとの[!UICONTROL  イベント ]、商談ごとの[!UICONTROL  イベント ]。][!UICONTROL [!UICONTROL </li></ul>「次としてカウント」オプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL &#x200B; ユーザー]、[!UICONTROL &#x200B; イベント &#x200B;]、[!UICONTROL &#x200B; セッション &#x200B;]、[!UICONTROL &#x200B; ユーザーの割合]、[!UICONTROL &#x200B; セッションごとのイベント &#x200B;]、および[!UICONTROL &#x200B; ユーザーごとのイベント &#x200B;]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL &#x200B; グローバルアカウント &#x200B;]、[!UICONTROL &#x200B; アカウント &#x200B;]、[!UICONTROL 購買グループ &#x200B;]、[!UICONTROL &#x200B; グローバルアカウントの割合]、[!UICONTROL &#x200B; グローバルアカウントの割合]、[!UICONTROL &#x200B; アカウントの割合]、[!UICONTROL 購買グループの割合]、[!UICONTROL 商談の割合] イベント アカウント 、購買グループごとの[!UICONTROL &#x200B; イベント &#x200B;]、商談ごとの[!UICONTROL &#x200B; イベント &#x200B;]。</li></ul>「次としてカウント」オプションは、イベントクエリにのみ適用され、指標クエリでは削除されます。
 * **[!UICONTROL セグメント]**：測定するセグメント。 選択した各セグメントによって、グラフの系列とテーブルの行の数が 2 倍になります。 最大 5 つのセグメントを含めることができます。
 * **[!UICONTROL 分類プロパティ]**：グラフの系列とテーブルの行を、選択したプロパティの値で分類します。 単一の分類プロパティがサポートされています。 テーブルには上位 20 個の値が表示され、最大 10 個の値をグラフに表示できます。 ![表示／非表示切り替え](../assets/hide-in-chart.png)アイコンを切り替えることで、グラフの行を非表示にしたり表示したりできます。
 

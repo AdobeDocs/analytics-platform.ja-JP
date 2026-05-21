@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1443
@@ -24,7 +31,7 @@ ht-degree: 26%
 
 ## ディメンションのバインド指標の使用
 
-詳しくは、[ バインディングディメンション指標を使用](binding-dimensions-metrics.md)の使用例を参照してください。
+詳しくは、[&#x200B; バインディングディメンション指標を使用](binding-dimensions-metrics.md)の使用例を参照してください。
 
 ## 概要データの使用
 
@@ -32,24 +39,24 @@ ht-degree: 26%
 
 ## BI 拡張機能のユースケース
 
-Customer Journey Analytics BI拡張機能を使用して多くのユースケースを実現する方法については、[BI拡張機能のユースケース ](bi-extension-usecases.md)を参照してください。
+Customer Journey Analytics BI拡張機能を使用して多くのユースケースを実現する方法については、[BI拡張機能のユースケース &#x200B;](bi-extension-usecases.md)を参照してください。
 
 ## 文字列スキーマフィールドからの指標の作成 {#string}
 
-例えば、データビューを作成する際に、文字列である[!UICONTROL  ページタイトル ] スキーマフィールドから[!UICONTROL 注文]指標を作成できます。
+例えば、データビューを作成する際に、文字列である[!UICONTROL &#x200B; ページタイトル &#x200B;] スキーマフィールドから[!UICONTROL 注文]指標を作成できます。
 
 
 
-1. **[!UICONTROL コンポーネント]** タブで、**[!UICONTROL ページタイトル]**&#x200B;を[!UICONTROL 含まれるコンポーネント ]の下の&#x200B;**[!UICONTROL 指標]** セクションにドラッグします。
+1. **[!UICONTROL コンポーネント]** タブで、**[!UICONTROL ページタイトル]**&#x200B;を[!UICONTROL 含まれるコンポーネント &#x200B;]の下の&#x200B;**[!UICONTROL 指標]** セクションにドラッグします。
 1. ドラッグした指標をハイライト表示し、上の&#x200B;**[!UICONTROL コンポーネント設定]**&#x200B;で`Orders`という名前に変更します
 1. 「**[!UICONTROL 値を含める/除外]**」セクションを開き、以下を指定します。
    1. **[!UICONTROL 値を含めたり除外したりする設定]**&#x200B;を有効にします。
-   1. **[!UICONTROL Match]**&#x200B;からすべての条件を満たす&#x200B;]**場合は、**[!UICONTROL &#x200B;を選択します。
+   1. **[!UICONTROL Match]**&#x200B;からすべての条件を満たす&#x200B;**場合は、**&#x200B;を選択します。
    1. `confirmation`を指定してください。 **[!UICONTROL page_title]**&#x200B;のテキストは、このページが注文に関連していることを示します。 これらの条件が満たされているすべてのページタイトルを確認した後、各インスタンスに`1`がカウントされます。 結果は新しい指標です（計算指標ではありません）。 値を含める/除外した指標は、他の指標を使用できるあらゆる場所で使用できます。 これらの指標は、アトリビューションやセグメントなど、標準的な指標を使用できるあらゆるチャネルで活用できます。
 
    ![Dimensionから指標](../assets/string-to-metric.gif){width=100%}
 1. [!UICONTROL セッション]を[!UICONTROL ルックバックウィンドウ]として、[!UICONTROL ラストタッチ]など、この指標のアトリビューションモデルをさらに指定できます。
-同じフィールドから別の[!UICONTROL 受注]指標を作成し、別のアトリビューションモデルを指定することもできます。 [!UICONTROL  ファーストタッチ ]、別の[!UICONTROL  ルックバックウィンドウ ] （例：[!UICONTROL 30日間]）など。
+同じフィールドから別の[!UICONTROL 受注]指標を作成し、別のアトリビューションモデルを指定することもできます。 [!UICONTROL &#x200B; ファーストタッチ &#x200B;]、別の[!UICONTROL &#x200B; ルックバックウィンドウ &#x200B;] （例：[!UICONTROL 30日間]）など。
 
 また、ディメンションである人物IDを指標として使用して、自社の人物IDの数を決定する例もあります。
 
@@ -59,14 +66,14 @@ Customer Journey Analytics BI拡張機能を使用して多くのユースケー
 
 
 
-1. **[!UICONTROL 期間]**&#x200B;整数を[!UICONTROL 含まれるコンポーネント ]の下の&#x200B;**[!UICONTROL ディメンション]** セクションにドラッグします。
+1. **[!UICONTROL 期間]**&#x200B;整数を[!UICONTROL 含まれるコンポーネント &#x200B;]の下の&#x200B;**[!UICONTROL ディメンション]** セクションにドラッグします。
 1. これで、「**[!UICONTROL 値のグループ化]**」を追加して、このディメンションをグループ化してレポートに表示できます。 バケットを使用しない場合、このディメンションの各インスタンスはWorkspace レポートに行項目として表示されます。
-   ![ ディメンションへの整数](../assets/integer-to-dimension.gif){width=100%}
+   ![&#x200B; ディメンションへの整数](../assets/integer-to-dimension.gif){width=100%}
 
 
 ## 数値次元をフロー図の指標として使用する {#numeric}
 
-数値ディメンションを使用して、[!UICONTROL  フロー] ビジュアライゼーションに指標を取り込むことができます。
+数値ディメンションを使用して、[!UICONTROL &#x200B; フロー] ビジュアライゼーションに指標を取り込むことができます。
 
 1. データビューの「[コンポーネント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview) 」タブで、[!UICONTROL マーケティングチャネル]スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「[!UICONTROL 指標]」領域にドラッグします。
 2. ワークスペースレポートでは、このフローは、[!UICONTROL マーケティングチャネル]が[!UICONTROL 注文]に進むことを示します。
@@ -81,16 +88,16 @@ Customer Journey Analytics BI拡張機能を使用して多くのユースケー
 
 1. データビュー「[コンポーネント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview) 」タブで、「**[!UICONTROL 売上高]**」スキーマフィールドを「[!UICONTROL 含まれるコンポーネント]」の下の「**[!UICONTROL 指標]**」領域にドラッグします。
 1. 指標を選択し、右側で次の設定を行います。
-a. **[!UICONTROL 形式]**&#x200B;で、**[!UICONTROL 通貨]**を選択します。
-b. **[!UICONTROL 通貨]**&#x200B;で、**[!UICONTROL 米ドル]**を選択します。
-c. **[!UICONTROL 値を含める/除外]**&#x200B;で、**[!UICONTROL 値を含める/除外する]**の横にあるチェックボックスを選択します。
+a. **[!UICONTROL 形式]**&#x200B;で、**[!UICONTROL 通貨]**&#x200B;を選択します。
+b. **[!UICONTROL 通貨]**&#x200B;で、**[!UICONTROL 米ドル]**&#x200B;を選択します。
+c. **[!UICONTROL 値を含める/除外]**&#x200B;で、**[!UICONTROL 値を含める/除外する]**&#x200B;の横にあるチェックボックスを選択します。
 d. **[!UICONTROL Match]**&#x200B;で、すべての条件が満たされている場合は&#x200B;**[!UICONTROL を選択します]**。
-e. **[!UICONTROL 条件]**&#x200B;で、**[!UICONTROL が]**以上であることを選択します。
+e. **[!UICONTROL 条件]**&#x200B;で、**[!UICONTROL が]**&#x200B;以上であることを選択します。
 f. 値として`50`を指定します。
 
 これらの新しい設定では、値の大きい売上高のみを表示し、50 ドルを下回るものはすべて除外できます。
 
-## [!UICONTROL 値なしオプション ]設定を使用する {#no-value}
+## [!UICONTROL 値なしオプション &#x200B;]設定を使用する {#no-value}
 
 レポートのディメンションに「未指定」を期待するようにユーザーをトレーニングするのに時間を費やしている可能性があります。 データビューのディメンションのデフォルトは&#x200B;*値なし*&#x200B;です。 ただし、値をレポートしない方法をディメンションごとに指定できます。 ディメンション コンポーネントの&#x200B;**[!UICONTROL 値なし]** オプションを参照してください。
 
@@ -118,11 +125,11 @@ f. 値として`50`を指定します。
 
 1 つのディメンションと 2 つの指標を利用することで、レポートの評価が容易になります。
 
-* [ セッションタイプ ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) – このディメンションには、次の2つの値があります：[!UICONTROL 新規]と[!UICONTROL 戻り]。 [!UICONTROL 新規]行項目には、ユーザーが定義した最初のセッションであると判断されたセッションのすべての動作（つまり、このディメンションに対する指標）が含まれます。 その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。 指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
+* [&#x200B; セッションタイプ &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) – このディメンションには、次の2つの値があります：[!UICONTROL 新規]と[!UICONTROL 戻り]。 [!UICONTROL 新規]行項目には、ユーザーが定義した最初のセッションであると判断されたセッションのすべての動作（つまり、このディメンションに対する指標）が含まれます。 その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。 指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [初回セッション ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)。 初回セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションとして定義されます。
+* [初回セッション &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)。 初回セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションとして定義されます。
 
-* [ リターンセッション ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) リターンセッション指標は、ユーザーの初回セッション以外のセッションの数です。—>
+* [&#x200B; リターンセッション &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) リターンセッション指標は、ユーザーの初回セッション以外のセッションの数です。—>
 
 コンポーネントにアクセスするには：
 
