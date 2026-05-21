@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
+source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
 workflow-type: tm+mt
-source-wordcount: 6457
-ht-degree: 91%
+source-wordcount: 6499
+ht-degree: 90%
 
 ---
 
@@ -87,6 +87,15 @@ ht-degree: 91%
 
 
 ## ビジュアライゼーション設定の指定
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_percentage_value"
+>title="パーセンテージの計算方法を選択"
+>abstract="各ノードに表示されるパーセンテージは、設定したプライマリ指標とセカンダリ指標に基づいています。 パーセンテージを開始ノード、前のノード、またはレポートスイート内のすべてのデータに関連させるかどうかを選択できます。"
+
+<!-- markdownlint-enable MD034 -->
 
 ジャーニーキャンバスヘッダーでは、様々な設定オプションが使用できます。
 
