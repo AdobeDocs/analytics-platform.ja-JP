@@ -4,10 +4,29 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
+TQID: https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 71%
+source-wordcount: 743
+ht-degree: 62%
 
 ---
 
@@ -15,11 +34,11 @@ ht-degree: 71%
 
 このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
 
-Customer Journey Analytics を使用すると、共通の顧客 ID に基づく Analysis Workspace のオンラインデータとオフラインデータの接続方法を制御し、顧客データ全体でアトリビューション、セグメント、フロー、フォールアウトなどを実行できます。
+Customer Journey Analyticsなら、Analysis Workspace内のオンラインとオフラインのデータを共通の顧客IDでつなぎ合わせる方法を制御でき、顧客データ全体でアトリビューション、セグメント、フロー、フォールアウトなどを実行できます。
 
 ## 新着情報
 
-Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
+Customer Journey Analytics 製品およびドキュメントにおける、最新の機能強化の概要を説明します。 機能、改善点、修正の包括的なリストについては、詳細な[リリースノート](../release-notes/latest.md)を参照してください。 最新のドキュメントアップデート内容を常に把握するには、[ドキュメントのアップデートページ](../release-notes/doc-changes.md)にアクセスしてください。
 
 >[!BEGINTABS]
 
@@ -62,7 +81,7 @@ Customer Journey Analytics のリアルタイムレポートでは、Analysis Wo
 
 >[!TAB B2B Edition]
 
-Customer Journey Analytics B2B Edition は、売上高の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。アカウントをデータモデルの中心に配置し、すべての分析でアカウントジャーニーに焦点を当てます。
+Customer Journey Analytics B2B Edition は、売上高の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。 データモデルの中心となるのはアカウントなので、すべての分析はアカウントジャーニーに焦点を当てます。
 
 [![画像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
@@ -154,7 +173,7 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">チュートリアル</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics製品説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analytics アドオン）製品説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition 製品説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI アシスタント</a>
+<a href="https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank"> チュートリアル </a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics製品説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics （Customer Journey Analytics アドオン）製品説明</a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition製品説明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI アシスタント </a>
 </td>
 <td><strong>データ取り込み</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概要</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">バッチ</a> - <a href="/help/data-ingestion/streaming.md">ストリーミング</a> - <a href="/help/data-ingestion/sources.md">ソース</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>
@@ -163,4 +182,4 @@ Customer Journey Analytics と Adobe Analytics の比較方法について説明
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>常に最新情報を入手、コミュニティに貢献し、Customer Journey Analytics エクスペリエンスを向上させましょう。</b><br>Adobe Analytics コミュニティにアクセスして、実務担当者と機能について語り合いましょう。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja">今すぐコミュニティに参加</a></td></tr></tbody></table>
+<b>情報を入手し、コミュニティに貢献し、Customer Journey Analyticsの体験を向上させましょう！</b><br>Adobe Analytics コミュニティにアクセスして、他の実務担当者と機能について話し合ってください。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=ja">今すぐコミュニティに参加</a></td></tr></tbody></table>

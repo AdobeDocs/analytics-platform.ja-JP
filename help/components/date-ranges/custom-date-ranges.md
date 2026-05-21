@@ -5,9 +5,19 @@ title: カスタム日付範囲の例
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
+TQID: https://experienceleague.adobe.com/UqM7kI1AJmseZkWgH4cl5gTRgBhhORkAaPZWrf8WpOc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: 118
 ht-degree: 100%
 
 ---
@@ -20,7 +30,7 @@ ht-degree: 100%
 
 +++ 詳細
 
-2 か月前を定義するカスタム日付範囲を定義する必要があります。いずれかのプリセットを使用します。
+2 か月前を定義するカスタム日付範囲を定義する必要があります。 いずれかのプリセットを使用します。
 
 ![最後の 2 か月前](assets/date-range-example-simple.png)
 
@@ -31,7 +41,7 @@ ht-degree: 100%
 
 +++ 詳細
 
-1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する必要があります。例えば、今日が 2024年9月11日水曜日の場合。2024年9月4日水曜日から 2024年9月7日土曜日までの日付範囲が必要です。
+1 週間前の現在の日付から先週の同じ曜日の終わりまでの期間を定義する日付範囲を定義する必要があります。 例えば、今日が 2024年9月11日水曜日の場合。 2024年9月4日水曜日から 2024年9月7日土曜日までの日付範囲が必要です。
 
 ![日付範囲例](assets/date-range-example.png)
 

@@ -1,52 +1,66 @@
 ---
-description: Customer Journey AnalyticsとAdobe Analyticsのアラートの違いを説明します
-title: アラート機能のCustomer Journey AnalyticsとAdobe Analyticsの比較
+description: Customer Journey AnalyticsとAdobe Analyticsでのアラートの違いについて説明します
+title: アラート機能の比較Customer Journey AnalyticsとAdobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
+TQID: https://experienceleague.adobe.com/NEm3Mu7q6RDKbCyG-PJzOFPrjJF4Y-unHgyBXyKd1HM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 24%
+source-wordcount: 495
+ht-degree: 25%
 
 ---
 
 # アラート機能の比較
 
-Adobe Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。ただし、重要な違いがあります。 以下の節では、主な違いについて説明します。
+Adobe Customer Journey Analytics でアラートを使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 ただし、重要な違いがあります。 次のセクションでは、主な違いについて説明します。
 
-## 時間別アラートは使用できません
+## 時間別アラートは利用できません
 
-1 時間ごとのアラートはCustomer Journey Analyticsで使用でき **せんが** Adobe Analyticsでは使用できます。 Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。
+時間別アラートは&#x200B;**not** Customer Journey Analyticsで利用できますが、時間別アラートはAdobe Analyticsで利用できます。 Customer Journey Analytics では、アラートを日単位、週単位、月単位で設定できます。
 
-様々な方法でAdobe Experience Platformにデータを取り込むことができます。 その結果、1 時間の制約内でデータの完全性と可用性を確実に達成することはできません。  データ取り込みの柔軟性は、不完全なデータの可能性が高いため、1 時間ごとのアラートは実用的でないことを意味します。 詳しくは、[&#x200B; データ取り込み時間は様々 &#x200B;](#data-ingestion-times-vary-in-customer-journey-analytics) を参照してください。
+Adobe Experience Platformには、さまざまな方法でデータを取り込むことができます。 その結果、1時間の制約の中でデータの完全性と可用性を確実に達成することはできません。  データ取り込みの柔軟性は、不完全なデータの可能性が高いため、毎時間のアラートは実用的ではないことを意味します。 詳しくは、「[&#x200B; データ取り込み時間が異なる](#data-ingestion-times-vary-in-customer-journey-analytics)」を参照してください。
 
-## データ取り込み時間は様々です
+## データ収集にかかる時間は様々です
 
-データが完了し、Customer Journey Analyticsでレポートできるようになるまでの時間は、組織によって異なります。
+データが完成し、Customer Journey Analyticsでレポートを利用できるようになるまでに必要な時間は、組織によって異なります。
 
-これは、次の理由によるものです。
+その理由は次のとおりです。
 
-* あらゆる種類のデータスキーマおよびデータタイプを保持する Platform の機能
+* あらゆる種類のデータスキーマとタイプを保持するPlatformの機能
 
-  Web データのみをレポートするAdobe Analyticsとは異なり、[Adobe Experience Platformに様々な種類のデータを取り込んでCustomer Journey Analyticsでレポートする &#x200B;](/help/data-ingestion/data-ingestion.md) ことができ、すべての種類のデータを順番にリアルタイムで送信できるわけではありません。
+  Adobe Analytics（web データのみに関するレポート）とは異なり、[さまざまな種類のデータをAdobe Experience Platform](/help/data-ingestion/data-ingestion.md)に取り込んでCustomer Journey Analyticsでレポートできます。また、あらゆる種類のデータを順次送信したり、リアルタイムで送信したりすることはできません。
 
-* Platform データセットへのバッチデータの配信遅延
+* Platform データセットへのバッチデータの配信の遅延
 
-  一部のデータはより早くレポートできる場合がありますが、すべての [&#x200B; バッチデータは Platform データセットに取り込まれます &#x200B;](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.) 通常、データイベント時刻から 3～9 時間後の範囲です。 アラートを正確にするには、データ取り込みが完了し、データセットで使用可能なすべてのバッチデータが揃っている必要があります。<!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
+  一部のデータは、より早くレポートするために利用できる場合がありますが、すべての[&#x200B; バッチデータはPlatform データセット &#x200B;](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.)に取り込まれます。通常、データイベント時間から3～9時間経過したデータが取り込まれます。 アラートを正確に実行するには、データの取り込みを完了し、すべてのバッチデータをデータセットに格納する必要があります。<!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
 
-これらの理由から、取り込み可能な様々な種類のイベントデータのデータ取り込みは、通常、データイベント時間から 3～9 時間後に少し遅れて完了します。 アラートを正確にするには、特定のイベント範囲のイベントデータを完全にする必要があります。つまり、アドビでは指定されたイベント範囲のイベントデータを受信しなくなります。
+このため、取り込み可能な様々な種類のイベントデータのデータ取り込みは、データのイベント時間から3～9時間経過した後にのみ完了します。 アラートを正確にするには、特定のイベント範囲のイベントデータを完全にする必要があります。つまり、アドビでは指定されたイベント範囲のイベントデータを受信しなくなります。
 
 この取り込み時間の遅延を考慮して、アラートを送信する前にデフォルトで 9 時間の遅延が設定されます。
 
-デフォルトの 9 時間の遅延を 0～24 時間の間で調整できます。ただし、遅延を 9 時間未満に短縮すると、不完全なデータをレポートすることになり、アラート情報が不正確になる場合があります。
+デフォルトの 9 時間の遅延を 0～24 時間の間で調整できます。 ただし、遅延を 9 時間未満に短縮すると、不完全なデータをレポートすることになり、アラート情報が不正確になる場合があります。
 
-遅延の調整方法と、調整する際に考慮すべき要因について詳しくは、[&#x200B; アラートの作成 &#x200B;](/help/components/c-intelligent-alerts/alert-builder.md) を参照してください。
+遅延の調整方法と、その際に考慮すべき要因について詳しくは、[&#x200B; アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md)を参照してください。
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
 ## アラートの作成
 
-Adobe AnalyticsのAnalysis Workspaceでは、[&#x200B; 複数の方法でAnalysis Workspaceからアラートを作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/alerts/alert-builder) ことができます。 Customer Journey Analyticsでは、Analysis Workspaceでフリーフォームテーブルの選択範囲からのみ [&#x200B; アラートを作成 &#x200B;](alert-builder.md) できます。
+Adobe AnalyticsのAnalysis Workspaceでは、様々な方法で[Analysis Workspaceからアラートを作成できます](https://experienceleague.adobe.com/ja/docs/analytics/components/alerts/alert-builder)。 Customer Journey Analyticsでは、フリーフォームテーブルの選択範囲からAnalysis Workspaceで作成できるのは[&#x200B; アラート &#x200B;](alert-builder.md)のみです。
 
-Adobe AnalyticsとCustomer Journey Analyticsの両方で、[&#x200B; アラートマネージャー &#x200B;](alert-manager.md) を使用したアラートの作成がサポートされています
+Adobe AnalyticsとCustomer Journey Analyticsの両方で、[&#x200B; アラートマネージャー](alert-manager.md)によるアラートの作成がサポートされています

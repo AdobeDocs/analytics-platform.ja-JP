@@ -1,19 +1,28 @@
 ---
-description: Analysis Workspaceでプロジェクトの表示密度を調整する方法について説明します。
+description: Analysis Workspaceでプロジェクトの表示密度を調整する方法を説明します。
 title: 表示密度
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+TQID: https://experienceleague.adobe.com/29HAocthqq228nfI-jR01-EO5SmEPfSXbp9CGuH1Lic
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: 112
 ht-degree: 80%
 
 ---
 
 # 表示密度
 
-表示密度を調整すると、左側のパネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。選択肢は次の 3 つあります。
+表示密度を調整すると、左側のパネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 選択肢は次の 3 つあります。
 
 >[!BEGINTABS]
 
@@ -31,7 +40,7 @@ ht-degree: 80%
 
 >[!TAB 展開された]
 
-これは、最も展開されたビューを持つバージョンです。
+これは、最も拡張されたビューを持つバージョンです。
 
 ![展開されたビューの密度](assets/view-density-expanded.png)
 

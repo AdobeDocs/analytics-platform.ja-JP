@@ -1,20 +1,30 @@
 ---
-description: Analysis Workspaceでディメンションの詳細と上位の値を表示する方法について説明します。
-title: 寸法をプレビュー
+description: Analysis Workspaceでディメンションの詳細と最上位の値を表示する方法について説明します。
+title: プレビューディメンション
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
-source-git-commit: 22f6370152b2ff4a48514de4ff2bb02db9f4a64b
+TQID: https://experienceleague.adobe.com/OXI-zbxy-OEt0W5z6fhAoItsQxyh2TMtEvEapUhlGw8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: 105
 ht-degree: 4%
 
 ---
 
 # ディメンションのプレビュー
 
-コンポーネントに [&#x200B; コンポーネント情報 &#x200B;](/help/components/use-components-in-workspace.md#component-info) を使用して、ディメンションの上位項目を表示できます。
+コンポーネントの[&#x200B; コンポーネント情報](/help/components/use-components-in-workspace.md#component-info)を使用して、ディメンションの上位アイテムを表示できます。
 
-![&#x200B; コンポーネント情報 &#x200B;](../assets/component-info.png)
+![&#x200B; コンポーネント情報](../assets/component-info.png)
 
 <!--
 Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
@@ -30,7 +40,7 @@ Now, by default, we show dynamic values instead of static ones, with the option 
 
 ## ディメンション項目の表示
 
-コンポーネントパネルのディメンションに対して ![ChevronRight](/help/assets/icons/ChevronRight.svg) を選択すると、そのディメンション項目のリストが表示されます。 ディメンション項目のリストには、通常、過去 30 日間の上位の項目が表示されます。 使用可能な項目が他にもある場合は、パネルで選択した日付範囲外にあるリンクを選択すると、さらに多くの項目が表示されます。 例：**[!UICONTROL 先月の項目を表示]**
+コンポーネントパネルでディメンションの![ChevronRight](/help/assets/icons/ChevronRight.svg)を選択すると、ディメンション項目のリストが表示されます。 通常、ディメンション項目のリストには、過去30日間の上位の項目が表示されます。 より多くの項目が使用可能な場合、パネルで選択した日付範囲の外で、リンクを選択して他の項目を表示します。 例えば、**[!UICONTROL 先月]**&#x200B;の項目を表示します。
 
-![&#x200B; ディメンション項目を表示 &#x200B;](assets/dimension-items.png)
+![&#x200B; ディメンション項目を表示](assets/dimension-items.png)
 

@@ -5,9 +5,26 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '10489'
+source-wordcount: 10489
 ht-degree: 99%
 
 ---
@@ -495,7 +512,7 @@ ht-degree: 99%
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>が次に等しい</li><li>が次のいずれかの語句に等しい</li><li>が次のフレーズを含む</li><li>が次のいずれかの語句を含む</li><li>すべての語句を含む</li><li>が次で始まる</li><li>任意の語句で始まる</li><li>が次で終わる</li><li>任意の語句で終わる</li><li>が次に等しくない</li><li>が次のいずれの語句にも等しくない</li><li>が次のフレーズを含まない</li><li>が次のいずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次の語句で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul><p>数値</p><ul><li>が次に等しい</li><li>が次に等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul><p>日付</p><ul><li>が次に等しい</li><li>が次に等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドあたり 200 [&#x200B; 演算子 &#x200B;](#operators)。 単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] コンテナ：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul><li>[!UICONTROL 条件]（選択した値のタイプに基づく含まれる演算子を参照してください）</li></ul></li><li>[!UICONTROL 値を以下に設定]、[!UICONTROL それ以外の場合は値を以下に設定]：</p><ul><li>[!UICONTROL 値]</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul></li></ul> | <p>文字列</p><ul><li>が次に等しい</li><li>が次のいずれかの語句に等しい</li><li>が次のフレーズを含む</li><li>が次のいずれかの語句を含む</li><li>すべての語句を含む</li><li>が次で始まる</li><li>任意の語句で始まる</li><li>が次で終わる</li><li>任意の語句で終わる</li><li>が次に等しくない</li><li>が次のいずれの語句にも等しくない</li><li>が次のフレーズを含まない</li><li>が次のいずれの語句も含まない</li><li>が次のすべての語句を含まない</li><li>次の語句で始まらない</li><li>いずれの語句でも開始しない</li><li>次で終わらない</li><li>いずれの語句でも終わらない</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul><p>数値</p><ul><li>が次に等しい</li><li>が次に等しくない</li><li>が次よりも大きい</li><li>が次よりも大きいか等しい</li><li>が次よりも小さい</li><li>が次よりも小さいか等しい</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul><p>日付</p><ul><li>が次に等しい</li><li>が次に等しくない</li><li>が次よりも後</li><li>が次以降</li><li>次より前</li><li>が次以前</li><li>が次に設定されている</li><li>が次に設定されていない</li></ul> | <ul><li>派生フィールドごとに 5 つの関数</li><li>派生フィールドごとに 200 個の[演算子](#operators)。 単一のオペレーターの例としては、「参照ドメインに google が含まれる」があります。 </li></ul> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 

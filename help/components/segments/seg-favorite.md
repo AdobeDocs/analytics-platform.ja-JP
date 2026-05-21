@@ -1,22 +1,33 @@
 ---
-description: セグメントを使いやすいように整理するもう 1 つの方法として、セグメントをお気に入りに登録する方法を説明します。
-title: セグメントをお気に入りとしてマーク
+description: セグメントを使いやすいように整理する別の方法として、セグメントをお気に入りとしてマークする方法について説明します。
+title: セグメントをお気に入りにマーク
 feature: Filters, Segments
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/63xwcgSEa-THa08-BNR3PFL7VzpP8e0Re34jLUCQlGY
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: 99
 ht-degree: 4%
 
 ---
 
 # セグメントのお気に入りへの登録
 
-セグメントをお気に入りとしてマークできます。 セグメントをお気に入りとしてマークすると、セグメントを整理するのに役立ちます。 すべてのユーザーがセグメントを好んで使用できます。
+セグメントをお気に入りとしてマークすることができます。 セグメントをお気に入りとしてマークするには、セグメントを整理するのに役立ちます。 すべてのユーザーがセグメントを好むことができます。
 
-セグメントを支持または支持しない場合は、[&#x200B; セグメントマネージャー &#x200B;](/help/components/segments/seg-manage.md) で次の操作を行います。
+[&#x200B; セグメントマネージャー](/help/components/segments/seg-manage.md)で、セグメントを好む/好まない場合は、次の手順を実行します。
 
-* 「![&#x200B; 星形 &#x200B;](/help/assets/icons/StarOutline.svg)」を選択してセグメントの選択を解除するか、「![&#x200B; 星形 &#x200B;](/help/assets/icons/Star.svg)」を選択してセグメントの選択を解除します。
+* ![StarOutline](/help/assets/icons/StarOutline.svg)を選択して優先するか、![Star](/help/assets/icons/Star.svg)を選択してセグメントの優先を解除します。
 
-セグメントのリストをお気に入りで並べ替えることができます。 **[!UICONTROL セグメント]**![&#x200B; セグメント &#x200B;](/help/assets/icons/Filter.svg) パネルから **[!UICONTROL その他のセグメント]** を選択し、**[!UICONTROL お気に入り]** を選択します。 詳しくは、[&#x200B; セグメントリストのセグメント化 &#x200B;](/help/components/segments/seg-filter.md) を参照してください。
+セグメントのリストをお気に入りで並べ替えることができます。 ![&#x200B; セグメント &#x200B;](/help/assets/icons/Filter.svg) **[!UICONTROL セグメント]** パネルから&#x200B;**[!UICONTROL その他のセグメント]**&#x200B;を選択し、**[!UICONTROL お気に入り]**&#x200B;を選択します。 詳しくは、[&#x200B; セグメントのリストをセグメント化](/help/components/segments/seg-filter.md)を参照してください。
