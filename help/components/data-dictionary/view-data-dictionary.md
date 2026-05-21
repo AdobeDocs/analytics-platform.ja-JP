@@ -5,24 +5,12 @@ feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 TQID: https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: null
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1364
 ht-degree: 61%
@@ -37,11 +25,11 @@ ht-degree: 61%
 
 1. 表示するコンポーネントを含む Analysis Workspace プロジェクトに移動します。
 
-1. Analysis Workspaceの左側のパネルで「[!UICONTROL **Data Dictionary**]」アイコンを選択します。 （データディクショナリへのアクセス方法については、[&#x200B; データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md)の「[&#128279;](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) データにアクセスする」で説明しています）。
+1. Analysis Workspaceの左側のパネルで「[!UICONTROL **Data Dictionary**]」アイコンを選択します。 （データディクショナリへのアクセス方法については、[ データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md)の「](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) データにアクセスする」で説明しています）。[
 
    データ辞書ウィンドウが表示されます。
 
-   ディメンション、指標、セグメント、日付範囲のクイックセグメントを表示する![&#x200B; データ要素ウィンドウ &#x200B;](assets/data-dictionary.png)
+   ディメンション、指標、セグメント、日付範囲のクイックセグメントを表示する![ データ要素ウィンドウ ](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
@@ -51,17 +39,17 @@ ht-degree: 61%
 
    コンポーネントのタイプは、カラーとアイコンの両方で識別できます。
 
-   * **ディメンション** ![Dimension アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)はオレンジ色です
+   * **ディメンション** ![Dimension アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)はオレンジ色です
 
-   * **セグメント** ![&#x200B; セグメントアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)は青です
+   * **セグメント** ![ セグメントアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)は青です
 
-   * **日付範囲** ![日付範囲アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)は紫色です
+   * **日付範囲** ![日付範囲アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)は紫色です
 
-   * **指標** ![指標アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)は緑色です
+   * **指標** ![指標アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)は緑色です
 
-   * **Adobe アイコン** ![Adobe アイコン &#x200B;](assets/default-calc-metric-icon.png)は、計算指標テンプレートまたはセグメント テンプレートを示します
+   * **Adobe アイコン** ![Adobe アイコン ](assets/default-calc-metric-icon.png)は、計算指標テンプレートまたはセグメント テンプレートを示します
 
-   * **電卓アイコン** ![電卓アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
+   * **電卓アイコン** ![電卓アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
 
 1. （オプション）**フィルター**&#x200B;アイコン ![データ辞書のフィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
 
@@ -105,7 +93,7 @@ ht-degree: 61%
    | [!UICONTROL **説明**] | コンポーネントの意図された機能について説明します （この情報は、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)で説明しているように、Analytics 管理者が追加します）。 |
    | [!UICONTROL **次でよく使用される**] | <p>表示しているコンポーネントと最も一緒に使用されるコンポーネントを表示します。</p><p>指標、計算指標、ディメンション、セグメントおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>このリストは、過去 90 日間のデータに基づいています。 表示するアクセス権を持つコンポーネントのみを表示します。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。 ユーザーに表示されるコンポーネントをキュレートする前に、まず&#x200B;**すべてを表示** セグメントを適用して、他の管理者によって追加された可能性のある、共有されていないコンポーネントが表示されるようにします。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | [!UICONTROL **類似**] | <p>表示しているコンポーネントと同様の名前を持つコンポーネントを表示します。</p><p>指標、計算指標、ディメンション、セグメントおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>表示するアクセス権を持つコンポーネントのみを表示します。</p><p>データビュー内の重複したコンポーネントがここに表示されます。 [データ辞書の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、Analytics 管理者はすべての重複するコンポーネントを特定して削除する必要があります。</p><p>管理者は、「[!UICONTROL **常に含める**]」および「[!UICONTROL **常に除外**]」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。 ユーザーに表示されるコンポーネントをキュレートする前に、まず&#x200B;**すべてを表示** セグメントを適用して、他の管理者によって追加された可能性のある、共有されていないコンポーネントが表示されるようにします。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**メモ：**&#x200B;現在、「**類似**」セクションには、ユーザー作成のコンポーネントのみが含まれており、アドビ提供のコンポーネントは含まれていません。 アドビ提供のコンポーネントは、今後のリリースで追加される予定です。</p> |
-   | [!UICONTROL **製品の互換性**] | この計算指標をCustomer Journey Analyticsのどこで使用できるかを示します。 <p>使用可能な値は次のとおりです。</p><ul><li>[!UICONTROL **Customer Journey Analyticsのすべての場所**]：計算された指標は、Analysis WorkspaceやReport Builderなど、Customer Journey Analytics全体で使用できます。</li><li>[!UICONTROL **Customer Journey Analytics のすべての場所 (実験を除く)**]：計算指標は、実験パネルを除く Adobe Customer Journey Analytics 全体で使用できます。</li> <p>計算指標を実験で使用できるかどうかを決定する条件について詳しくは、[&#128279;](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)実験パネル [実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)の実験パネル &#x200B;で計算指標を使用するを参照してください。</p></ul> |
+   | [!UICONTROL **製品の互換性**] | この計算指標をCustomer Journey Analyticsのどこで使用できるかを示します。 <p>使用可能な値は次のとおりです。</p><ul><li>[!UICONTROL **Customer Journey Analyticsのすべての場所**]：計算された指標は、Analysis WorkspaceやReport Builderなど、Customer Journey Analytics全体で使用できます。</li><li>[!UICONTROL **Customer Journey Analytics のすべての場所 (実験を除く)**]：計算指標は、実験パネルを除く Adobe Customer Journey Analytics 全体で使用できます。</li> <p>計算指標を実験で使用できるかどうかを決定する条件について詳しくは、[実験パネル [実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)の実験パネル ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)で計算指標を使用するを参照してください。</p></ul> |
    | [!UICONTROL **タグ**] | コンポーネントに適用されているすべてのタグを表示します。 管理者アクセス権を持つユーザーは、コンポーネントの編集時にタグを追加できます。 |
    | [!UICONTROL **コンポーネントの種類**] | ディメンション、指標、セグメント、または日付範囲のいずれかであるコンポーネントのタイプをリストします。 |
    | [!UICONTROL **作成者**] | コンポーネントを作成したユーザーの名前を表示します。 |

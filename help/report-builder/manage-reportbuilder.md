@@ -7,13 +7,10 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 TQID: https://experienceleague.adobe.com/75yD-0nmVz22sHzBOga0oH9AaSiKsaG282k5kf3R4og
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: null
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 520
 ht-degree: 18%
@@ -22,7 +19,7 @@ ht-degree: 18%
 
 # データブロックの管理
 
-[!UICONTROL &#x200B; データブロックマネージャー]を使用して、ブック内のすべてのデータブロックを表示および管理できます。 [!UICONTROL &#x200B; データブロックマネージャー]には、特定のデータブロックを検索できる検索、フィルター、並べ替え機能が用意されています。 1 つまたは複数のデータブロックを選択した後、選択したデータブロックを編集、削除、または更新できます。
+[!UICONTROL  データブロックマネージャー]を使用して、ブック内のすべてのデータブロックを表示および管理できます。 [!UICONTROL  データブロックマネージャー]には、特定のデータブロックを検索できる検索、フィルター、並べ替え機能が用意されています。 1 つまたは複数のデータブロックを選択した後、選択したデータブロックを編集、削除、または更新できます。
 
 ## データブロックを表示
 
@@ -32,7 +29,7 @@ ht-degree: 18%
 
 **[!UICONTROL データブロックマネージャー]**&#x200B;には、ワークブック内に存在するすべてのデータブロックを含むテーブルが表示されます。
 
-![&#x200B; ブック内に存在するすべてのデータブロックのリスト。](./assets/image52.png){zoomable="yes"}
+![ ブック内に存在するすべてのデータブロックのリスト。](./assets/image52.png){zoomable="yes"}
 
 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を使用して、表示する列を選択できます。
 
@@ -56,15 +53,15 @@ ht-degree: 18%
 
 1. 更新するデータブロックを選択します。 最上位のチェックボックスを選択してすべてのデータブロックを選択するか、個々のデータブロックを選択できます。
 
-   ![鉛筆の編集アイコン &#x200B;](./assets/image56.png){zoomable="yes"}
+   ![鉛筆の編集アイコン ](./assets/image56.png){zoomable="yes"}
 
 1. ![編集](/help/assets/icons/Edit.svg)を選択して、**[!UICONTROL クイック編集]** ウィンドウを表示します。
 
-   ![&#x200B; クイック編集ウィンドウ &#x200B;](./assets/image58.png){zoomable="yes"}
+   ![ クイック編集ウィンドウ ](./assets/image58.png){zoomable="yes"}
 
 1. データビュー、日付範囲、またはセグメントを更新するリンクを選択します。 **[!UICONTROL クイック編集]** - **[!UICONTROL セグメント]**&#x200B;では、選択したデータブロックのセグメントを追加、削除、または更新できます。
 
-   ![&#x200B; クイック編集ウィンドウの「セグメントを追加」フィールド &#x200B;](./assets/image59.png){zoomable="yes"}
+   ![ クイック編集ウィンドウの「セグメントを追加」フィールド ](./assets/image59.png){zoomable="yes"}
 
 ## データブロックを更新
 
@@ -93,5 +90,5 @@ ht-degree: 18%
 
 グループ化を使用すると、セグメントなどの共通エレメントを変更するデータブロックをすばやく選択できます。
 
-![&#x200B; シート別グループ リストを表示するデータ ブロック マネージャー。](./assets/group-data-blocks.png){zoomable="yes"}
+![ シート別グループ リストを表示するデータ ブロック マネージャー。](./assets/group-data-blocks.png){zoomable="yes"}
 

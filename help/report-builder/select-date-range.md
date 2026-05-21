@@ -7,17 +7,11 @@ type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/g7-pu7H2LQVNRShRj5Jr6gGWYfB-eMxoLRexdfBUGiE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: null
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 859
 ht-degree: 52%
@@ -39,7 +33,7 @@ ht-degree: 52%
 
 ### 日付範囲
 
-日付範囲フィールドには、データブロックリクエストの現在の日付範囲が表示されます。 日付を直接入力するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を指定できます。
+日付範囲フィールドには、データブロックリクエストの現在の日付範囲が表示されます。 日付を直接入力するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を指定できます。
 
 ![日付範囲カレンダー](assets/date-range-calendar.png){zoomable="yes"}
 
@@ -47,7 +41,7 @@ ht-degree: 52%
 
 プリセット ドロップダウンメニューを使用して、プリセットを選択します。 テキストを入力してプリセットを検索することもできます。
 
-![日付範囲プリセット &#x200B;](assets/date-range-presets.png){zoomable="yes"}
+![日付範囲プリセット ](assets/date-range-presets.png){zoomable="yes"}
 
 プリセットドロップダウンメニューには、標準のプリセット日付範囲と、保存したデータビューまたは共有したデータビューの日付範囲コンポーネントが含まれています。
 
@@ -85,7 +79,7 @@ ht-degree: 52%
 
    **[!UICONTROL カスタム式を使用]**&#x200B;を選択すると、標準のローリング日付範囲コントロールが無効になります。
 
-1. [&#x200B; カスタム式](#create-a-custom-expression)を入力します。
+1. [ カスタム式](#create-a-custom-expression)を入力します。
 
 1. 結果の日付範囲を確認するには、**[!UICONTROL 日付プレビュー]**&#x200B;を使用します。
 
@@ -141,7 +135,7 @@ ht-degree: 52%
 
 日付範囲は、ワークシートのセルで指定できます。 「**[!UICONTROL セルからの日付範囲]**」オプションを使用して、選択したセルからデータブロックの開始日と終了日を選択します。 「**[!UICONTROL セルから]**」オプションを選択すると、パネルに&#x200B;**[!UICONTROL セルから]**&#x200B;と&#x200B;**[!UICONTROL から]**&#x200B;のフィールドが表示され、セルの場所を入力するか、![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg)を使用して現在の選択したセルを選択できます。
 
-![&#x200B; セル シート 1!H4からシート 1!I4](./assets/date-range-from-cell.png){zoomable="yes"}に選択
+![ セル シート 1!H4からシート 1!I4](./assets/date-range-from-cell.png){zoomable="yes"}に選択
 
 
 ## 今日を除外

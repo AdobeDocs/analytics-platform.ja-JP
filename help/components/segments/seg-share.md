@@ -5,17 +5,11 @@ feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
 TQID: https://experienceleague.adobe.com/09XWXerXKRJ1QMPXdULk2kzHaqbAykkqEUMUvUbomh4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: null
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 327
 ht-degree: 7%
@@ -24,18 +18,18 @@ ht-degree: 7%
 
 # セグメントの共有
 
-[&#x200B; セグメントマネージャー](seg-manage.md)では、セグメントを共有できます。 権限に応じて、組織全体、グループ、または個々のユーザーとセグメントを共有できます。
+[ セグメントマネージャー](seg-manage.md)では、セグメントを共有できます。 権限に応じて、組織全体、グループ、または個々のユーザーとセグメントを共有できます。
 
 * **管理者**：管理者は、組織全体、組織内のグループ、個々のユーザーとセグメントを共有できます。 詳しくは、[Admin Console のドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-products.html)を参照してください。
 * **管理者以外**：管理者以外のユーザーは、作成したセグメントのみを共有し、個々のユーザーとのみ共有できます。 |
 
 1つ以上のセグメントを共有するには：
 
-1. [&#x200B; セグメントマネージャー](seg-manage.md)で、共有する1つ以上のセグメントを選択します。
+1. [ セグメントマネージャー](seg-manage.md)で、共有する1つ以上のセグメントを選択します。
 1. アクションバーから、![共有](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共有]**&#x200B;を選択します。
 1. **[!UICONTROL セグメントを共有]** ダイアログで、次の操作を行います。
 
-   ![&#x200B; セグメントを共有ダイアログ &#x200B;](assets/share-filter-dialog.png)
+   ![ セグメントを共有ダイアログ ](assets/share-filter-dialog.png)
 
    1. （オプション）セグメントを共有するグループまたは個人のリストを制限するには、![検索](/help/assets/icons/Search.svg)から&#x200B;*個人またはグループ*&#x200B;を使用します。
 
@@ -43,13 +37,13 @@ ht-degree: 7%
 
    1. セグメントを共有するには、**[!UICONTROL 保存]**&#x200B;を選択します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
-共有セグメントにアクセスできる場合は、プロジェクトで、またはデータビュー[&#128279;](/help/data-views/session-settings.md)の設定の一部として、これらのセグメントを使用できます。
+共有セグメントにアクセスできる場合は、プロジェクトで、またはデータビュー](/help/data-views/session-settings.md)の[設定の一部として、これらのセグメントを使用できます。
 
 ## ベストプラクティス
 
 ここでは、セグメントを共有する必要がある場合と、セグメントを共有する必要があるユーザーについて、いくつかのベストプラクティスを紹介します。
 
-* 管理者は、組織内の誰もがセグメントを使いやすいと確信している場合にのみ、すべてのユーザーとセグメントを共有します。 また、これらのセグメントに対する好みを考慮することもできます。 詳しくは、[&#x200B; セグメントをお気に入りにマーク &#x200B;](seg-favorite.md)するを参照してください。
+* 管理者は、組織内の誰もがセグメントを使いやすいと確信している場合にのみ、すべてのユーザーとセグメントを共有します。 また、これらのセグメントに対する好みを考慮することもできます。 詳しくは、[ セグメントをお気に入りにマーク ](seg-favorite.md)するを参照してください。
 
 * 管理者は、特定のセグメントがそのセグメントのユーザー部分にビジネス価値を提供する場合、そのセグメントを特定のグループと共有します。
 
