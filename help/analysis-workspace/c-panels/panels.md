@@ -4,16 +4,22 @@ title: Analysis Workspaceのパネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 11df56f5d757602403098d1c6b4330e935a438a2
+TQID: https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 42%
+source-wordcount: 2809
+ht-degree: 41%
 
 ---
 
 # パネルの概要 {#panels-overview}
 
-[!UICONTROL パネル]は、テーブルとビジュアライゼーションのコレクションです。パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。パネルは、期間、データビュー、分析ユースケースに従ってプロジェクトを整理する場合に役立ちます。
+[!UICONTROL パネル]は、テーブルとビジュアライゼーションのコレクションです。 パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。 パネルは、期間、データビュー、分析ユースケースに従ってプロジェクトを整理する場合に役立ちます。
 
 ## パネルタイプ
 
@@ -32,9 +38,9 @@ ht-degree: 42%
 | [クイックインサイト](quickinsight.md) | フリーフォームテーブルとそれに伴うビジュアライゼーションを素早く作成し、インサイトを迅速に分析して取得します。 |
 
 
-分析を開始するには、[!UICONTROL クイックインサイト]パネル、[!UICONTROL 空白]パネル、[!UICONTROL フリーフォーム]パネルが最適です。一方、[!UICONTROL アトリビューション]は、より高度な分析に適しています。キャンバスの下部に ![AddCircle](/help/assets/icons/AddCircle.svg) が表示されるので、いつでも空白のパネルを追加できます。
+分析を開始するには、[!UICONTROL クイックインサイト]パネル、[!UICONTROL 空白]パネル、[!UICONTROL フリーフォーム]パネルが最適です。一方、[!UICONTROL アトリビューション]は、より高度な分析に適しています。 キャンバスの下部に ![AddCircle](/help/assets/icons/AddCircle.svg) が表示されるので、いつでも空白のパネルを追加できます。
 
-デフォルトの開始パネルは[!UICONTROL フリーフォーム]パネルですが、[空白パネル](/help/analysis-workspace/c-panels/blank-panel.md)または[クイックインサイト](/help/analysis-workspace/c-panels/quickinsight.md)をデフォルトにすることができます。詳しくは、[プロジェクトと分析の環境設定](/help/analysis-workspace/user-preferences.md#projects--analyses-preferences)を参照してください。
+デフォルトの開始パネルは[!UICONTROL フリーフォーム]パネルですが、[空白パネル](/help/analysis-workspace/c-panels/blank-panel.md)または[クイックインサイト](/help/analysis-workspace/c-panels/quickinsight.md)をデフォルトにすることができます。 詳しくは、[プロジェクトと分析の環境設定](/help/analysis-workspace/user-preferences.md#projects--analyses-preferences)を参照してください。
 
 
 ## パネルの作成
@@ -43,13 +49,13 @@ ht-degree: 42%
 
 * 左パネルから&#x200B;**[!UICONTROL パネル]**&#x200B;をキャンバスにドラッグ＆ドロップします。
 * [空白のパネル](blank-panel.md)からパネルを選択します。
-* Workspace の&#x200B;**[!UICONTROL 挿入]**&#x200B;メニューを使用してパネルを選択します。または、任意の[ショートカット](../build-workspace-project/fa-shortcut-keys.md)を使用してパネルを挿入することもできます。
+* Workspace の&#x200B;**[!UICONTROL 挿入]**&#x200B;メニューを使用してパネルを選択します。 または、任意の[ショートカット](../build-workspace-project/fa-shortcut-keys.md)を使用してパネルを挿入することもできます。
 
   ![パネルの作成](assets/create-panel.png)
 
 次のことができます。
 
-* 任意のパネル&#x200B;**内**&#x200B;の ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して、別のビジュアライゼーションを追加します。ビジュアライゼーションを選択できるポップアップが表示されます。
+* 任意のパネル&#x200B;**内**&#x200B;の ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して、別のビジュアライゼーションを追加します。 ビジュアライゼーションを選択できるポップアップが表示されます。
 
   ![使用可能なビジュアライゼーションを示すポップアップ](assets/blank-panel.png)
 
@@ -83,13 +89,13 @@ ht-degree: 42%
 
 * パネルを折りたたむには、![下向き山形記号](/help/assets/icons/ChevronDown.svg) を選択します。
 * 折りたたまれたパネルを表示するには、![左向き山形記号](/help/assets/icons/ChevronLeft.svg) を選択します。
-* パネルを削除するには、![クロスサイズ400](/help/assets/icons/CrossSize200.svg) を選択します。元に戻すには、**[!UICONTROL 編集]**／**[!UICONTROL 元に戻す]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
+* パネルを削除するには、![クロスサイズ400](/help/assets/icons/CrossSize200.svg) を選択します。 元に戻すには、**[!UICONTROL 編集]**／**[!UICONTROL 元に戻す]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
 * パネルを移動するには、![Move](/help/assets/icons/Move.svg)が表示されるたびにパネルをドラッグ&amp;ドロップします（通常はヘッダーにカーソルを合わせると）。
 
 
 ## データビュー
 
-各パネルは[&#x200B; データビュー](/help/data-views/data-views.md)に関連付けられています。 パネルの右上にあるドロップダウンメニューで、![&#x200B; データ &#x200B;](/help/assets/icons/Data.svg) **[!UICONTROL *データビューの名前&#x200B;*]**&#x200B;を特定できます。
+各パネルは[ データビュー](/help/data-views/data-views.md)に関連付けられています。 パネルの右上にあるドロップダウンメニューで、![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL *データビューの名前&#x200B;*]**を特定できます。
 
 空の Workspace プロジェクトを作成する場合、最初のパネルのデフォルトのデータビューは、前回 Customer Journey Analytics で作業したデータビューです。
 
@@ -100,9 +106,9 @@ ht-degree: 42%
 >選択したデータビューによって、パネル内のビジュアライゼーションの作成に使用できるディメンション、指標、セグメントが決まります。
 >
 >
->パネルのデータビューを切り替えると、その新しいデータビューで一部のコンポーネントを使用できなくなる場合があります。この変更により、ビジュアライゼーションが正しくレンダリングされない可能性があります。次のような警告が表示される場合があります。
+>パネルのデータビューを切り替えると、その新しいデータビューで一部のコンポーネントを使用できなくなる場合があります。 この変更により、ビジュアライゼーションが正しくレンダリングされない可能性があります。 次のような警告が表示される場合があります。
 >
->* このパネルには、選択したデータビューで有効になっていないコンポーネントが含まれています。データビューを変更するか、データビューで必要なコンポーネントを有効にしてください。
+>* このパネルには、選択したデータビューで有効になっていないコンポーネントが含まれています。 データビューを変更するか、データビューで必要なコンポーネントを有効にしてください。
 >* ビジュアライゼーションをレンダリングできません。列と行で有効なコンポーネントが含まれていることを確認してください。
 >
 
@@ -123,20 +129,20 @@ ht-degree: 42%
 
 1. オプションで、「**[!UICONTROL 詳細設定を表示]**」を選択して、次の操作を行います。
 
-   * デフォルトの `12:00 AM`（`0:00`）と `11:59 PM`（`23:59`）以外の&#x200B;**[!UICONTROL 開始時間]**&#x200B;と&#x200B;**[!UICONTROL 終了時間]**&#x200B;を指定します。終了時間には常に 59 秒が含まれます。日付範囲が何日にもわたる場合、開始時間は日付範囲の最初の日、終了時間は日付範囲の最終日に適用されます。**[!UICONTROL 日時の値をリセット]**&#x200B;を使用して、開始時間と終了時間をデフォルトにリセットします。
-   * **[!UICONTROL パネルカレンダーを基準とした日付範囲コンポーネントの作成]**&#x200B;無効にした場合、パネルで使用される日付範囲コンポーネントは現在の時間に関連します。 有効にした場合、パネルで使用される日付範囲コンポーネントは、パネルカレンダーに関連します。
-   * **[!UICONTROL 相対日付の使用]**&#x200B;有効にした場合、現在の日付と時間の進行状況に応じて、プリセットされた日付範囲（**[!UICONTROL 過去 7 日間]**&#x200B;など）が動的に更新されます。無効にすると、そのようなプリセットは適用されると更新されません。
+   * デフォルトの `12:00 AM`（`0:00`）と `11:59 PM`（`23:59`）以外の&#x200B;**[!UICONTROL 開始時間]**&#x200B;と&#x200B;**[!UICONTROL 終了時間]**&#x200B;を指定します。 終了時間には常に 59 秒が含まれます。 日付範囲が何日にもわたる場合、開始時間は日付範囲の最初の日、終了時間は日付範囲の最終日に適用されます。 **[!UICONTROL 日時の値をリセット]**&#x200B;を使用して、開始時間と終了時間をデフォルトにリセットします。
+   * **[!UICONTROL パネルカレンダーを基準とした日付範囲コンポーネントの作成]** 無効にした場合、パネルで使用される日付範囲コンポーネントは現在の時間に関連します。 有効にした場合、パネルで使用される日付範囲コンポーネントは、パネルカレンダーに関連します。
+   * **[!UICONTROL 相対日付の使用]** 有効にした場合、現在の日付と時間の進行状況に応じて、プリセットされた日付範囲（**[!UICONTROL 過去 7 日間]**&#x200B;など）が動的に更新されます。 無効にすると、そのようなプリセットは適用されると更新されません。
 
      ![周期的な日付](assets/calendar-rolling.png)
 
      括弧内のテキストを選択して（例：**[!UICONTROL 固定開始 – ローリング日]**）、パネルを拡張し、**[!UICONTROL 開始]**&#x200B;および&#x200B;**[!UICONTROL 終了]**&#x200B;の詳細を指定できます。
 
       1. 「**[!UICONTROL 開始日]**」、「**[!UICONTROL 終了日]**」または「**[!UICONTROL 固定日]**」を選択します。
-      1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。例：**[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**。式の個々の部分に適した値を選択します。
-         * 現在の値を選択します。例：**[!UICONTROL 現在の年]**。
-         * 追加の計算の値を選択します。例：**[!UICONTROL plus]**。
-         * 追加の計算を指定した場合は、値を指定します。例：`1`。
-         * 追加の計算を指定した場合は、計算に使用する期間を選択します。例：**[!UICONTROL day]**。
+      1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。 例：**[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**。 式の個々の部分に適した値を選択します。
+         * 現在の値を選択します。 例：**[!UICONTROL 現在の年]**。
+         * 追加の計算の値を選択します。 例：**[!UICONTROL plus]**。
+         * 追加の計算を指定した場合は、値を指定します。 例：`1`。
+         * 追加の計算を指定した場合は、計算に使用する期間を選択します。 例：**[!UICONTROL day]**。
 
      周期的な日付の計算の詳細を非表示にするには、「**[!UICONTROL 詳細を非表示]**」を選択します。
 
@@ -154,7 +160,7 @@ ht-degree: 42%
 
 下の図は、ドロップゾーンにコンポーネントを追加する際に生じる（クイック）セグメントまたは分類の様々なバリエーションを示しています。
 
-![&#x200B; パネルのゾーンをドロップ &#x200B;](assets/panel-drop-zone.png)
+![ パネルのゾーンをドロップ ](assets/panel-drop-zone.png)
 
 ### 追加または置換
 
@@ -164,17 +170,17 @@ ht-degree: 42%
 1. 選択範囲をドロップゾーンにドラッグし、**[!UICONTROL _コンポーネントをドロップしてデータをフィルタリングまたは分類_]** ❶するか、ドロップゾーンの近くに既に配置されている既存のコンポーネントの上に配置します。
 1. ![追加](/help/assets/icons/Add.svg) **[!UICONTROL 追加（「shift」を押してドロップダウンを作成）]**&#x200B;または![切り替え](/help/assets/icons/Switch.svg) **[!UICONTROL 置換（「shift」を押してドロップダウンに追加）]**&#x200B;が表示される場合、2つのオプションがあります。
 
-   ![&#x200B; ドロップゾーンを追加または置換](assets/add-or-replace-to-drop-zone.png)
+   ![ ドロップゾーンを追加または置換](assets/add-or-replace-to-drop-zone.png)
 
    * 選択範囲をドロップして、次のコンポーネントを作成します。
-      * [をドロップした任意のセグメントコンポーネントの](#segment) セグメント ❷。
-      * [をドロップしたセグメント以外のコンポーネント（日付範囲、指標、ディメンション、ディメンション項目）の](#quick-segment) クイックセグメント ❸。
+      * ❷をドロップした任意のセグメントコンポーネントの[ セグメント ](#segment)。
+      * ❸をドロップしたセグメント以外のコンポーネント（日付範囲、指標、ディメンション、ディメンション項目）の[ クイックセグメント ](#quick-segment)。
    * **を押しながら選択範囲**&#x200B;をドロップし（シフト）、次のコンポ⇧ネントを作成します。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択したセグメント ❹に対するフィルタリング対象のアイテム。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した日付範囲❺でフィルタリングする項目。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した指標に対してフィルターを適用する項目❻が含まれています。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンション *個のアイテム*&#x200B;に対してフィルタリングまたは分類するアイテムが❼に含まれています。
-      * 動的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンションに対してフィルタリングまたは分類する項目が含まれています（❽）。
+      * 静的セグメント [ ドロップダウンメニュー](#drop-down-menu)と、選択したセグメント ❹に対するフィルタリング対象のアイテム。
+      * 静的セグメント [ ドロップダウンメニュー](#drop-down-menu)と、選択した日付範囲❺でフィルタリングする項目。
+      * 静的セグメント [ ドロップダウンメニュー](#drop-down-menu)と、選択した指標に対してフィルターを適用する項目❻が含まれています。
+      * 静的セグメント [ ドロップダウンメニュー](#drop-down-menu)または分類[ ドロップダウンメニュー](#drop-down-menu)で、選択したディメンション *個のアイテム*&#x200B;に対してフィルタリングまたは分類するアイテムが❼に含まれています。
+      * 動的セグメント [ ドロップダウンメニュー](#drop-down-menu)または分類[ ドロップダウンメニュー](#drop-down-menu)で、選択したディメンションに対してフィルタリングまたは分類する項目が含まれています（❽）。
 
 
 ### セグメント
@@ -183,11 +189,11 @@ ht-degree: 42%
 
 ### クイックセグメント
 
-ドロップされた非セグメントコンポーネント（ディメンション、ディメンション項目、指標、日付範囲）は、パネルをセグメント化するための[&#x200B; クイックセグメント &#x200B;](#quick-segment)を定義します。 [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を使用せずにクイックセグメントを作成するには、セグメント以外のコンポーネントを使用します。 この方法で作成されたセグメントは、イベントレベルのセグメントとして自動的に定義され、デフォルトで&#x200B;**[!UICONTROL クイックセグメント]**&#x200B;というラベルが付けられます。
+ドロップされた非セグメントコンポーネント（ディメンション、ディメンション項目、指標、日付範囲）は、パネルをセグメント化するための[ クイックセグメント ](#quick-segment)を定義します。 [ セグメントビルダー](/help/components/segments/seg-builder.md)を使用せずにクイックセグメントを作成するには、セグメント以外のコンポーネントを使用します。 この方法で作成されたセグメントは、イベントレベルのセグメントとして自動的に定義され、デフォルトで&#x200B;**[!UICONTROL クイックセグメント]**&#x200B;というラベルが付けられます。
 
 または、![FilterAdd](/help/assets/icons/FilterAdd.svg)を使用して、クイックセグメントを作成することもできます。
 
-クイックセグメントを作成および管理する方法については、[&#x200B; クイックセグメント &#x200B;](/help/components/segments/seg-quick.md)を参照してください。
+クイックセグメントを作成および管理する方法については、[ クイックセグメント ](/help/components/segments/seg-quick.md)を参照してください。
 
 
 ### ドロップダウンメニュー
@@ -195,7 +201,7 @@ ht-degree: 42%
 保持している間に作成されるドロップダウンメニューで⇧次の操作を実行できます。
 
 * アイテムの[static](#static)または[dynamic](#dynamic) リストが含まれます。
-* [&#x200B; パネルのフィルター](#filter)または[&#x200B; パネルの分割](#breakdown)を行います。
+* [ パネルのフィルター](#filter)または[ パネルの分割](#breakdown)を行います。
 
 
 #### 静的
@@ -219,16 +225,16 @@ ht-degree: 42%
 
 **⇧を保持している間に**&#x200B;をドロップした指標、セグメントまたは日付範囲のコンポーネントの場合、セグメントドロップダウンメニューが作成されます。 このドロップダウンメニューでは、ドロップされたコンポーネントで使用可能な項目に基づいてパネルをフィルタリングできます。
 
-*⇧を保持している間に*&#x200B;をドロップした&#x200B;**ディメンション** コンポーネントの場合、セグメント ドロップダウンメニューが作成されます。 このドロップダウンメニューを使用すると、ドロップされたディメンション項目（[静的](#static) セグメントドロップダウンメニュー）またはディメンションコンポーネント（[動的](#dynamic) セグメントドロップダウンメニュー）に使用できる項目に基づいてパネルをフィルタリングできます。 セグメントを使用してパネルをフィルタリングするようにドロップダウンメニューを明示的に設定するには：
+**⇧を保持している間に**&#x200B;をドロップした&#x200B;*ディメンション* コンポーネントの場合、セグメント ドロップダウンメニューが作成されます。 このドロップダウンメニューを使用すると、ドロップされたディメンション項目（[静的](#static) セグメントドロップダウンメニュー）またはディメンションコンポーネント（[動的](#dynamic) セグメントドロップダウンメニュー）に使用できる項目に基づいてパネルをフィルタリングできます。 セグメントを使用してパネルをフィルタリングするようにドロップダウンメニューを明示的に設定するには：
 
-* ![分類](/help/assets/icons/Breakdown.svg)を選択し、![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL セグメント]** | **[!UICONTROL コンポーネント]**&#x200B;のコンテキストメニューからパネル ❾内のデータをフィルタリングします。
+* ![分類](/help/assets/icons/Breakdown.svg)を選択し、![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL セグメント]** | **[!UICONTROL コンポーネント ❾のコンテキストメニューからパネル]**&#x200B;内のデータをフィルタリングします。
 
 
 #### パネルの分割
 
-*⇧を保持している間に*&#x200B;をドロップした&#x200B;**ディメンション** コンポーネントの場合、セグメントドロップダウンメニューが作成されます。 ドロップダウンメニューを設定して、ドロップされたディメンション項目（[静的](#static)分類ドロップダウンメニュー）またはディメンションコンポーネント（[動的](#dynamic)分類ドロップダウンメニュー）に使用できる項目に基づいてパネルを分類できます。 ドロップダウンメニューを明示的に設定して、分類を使用してパネルを分割するには、次の手順を実行します。
+**⇧を保持している間に**&#x200B;をドロップした&#x200B;*ディメンション* コンポーネントの場合、セグメントドロップダウンメニューが作成されます。 ドロップダウンメニューを設定して、ドロップされたディメンション項目（[静的](#static)分類ドロップダウンメニュー）またはディメンションコンポーネント（[動的](#dynamic)分類ドロップダウンメニュー）に使用できる項目に基づいてパネルを分類できます。 ドロップダウンメニューを明示的に設定して、分類を使用してパネルを分割するには、次の手順を実行します。
 
-* ![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択し、![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL 分類]** | **[!UICONTROL コンポーネント]**&#x200B;のコンテキストメニューからパネル ❾のデータを分類します。
+* ![ フィルター](/help/assets/icons/Filter.svg)を選択し、![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL 分類]** | **[!UICONTROL コンポーネント ❾のコンテキストメニューからパネル]**&#x200B;のデータを分類します。
 
 >[!IMPORTANT]
 >
@@ -243,15 +249,15 @@ ht-degree: 42%
 
 * パネル内でアトリビューション対応の指標を使用している場合、セグメントはアトリビューション対応の指標をクリアすることがよくあります。 分類は、パネルのデータを取得するために実行されるクエリ内の別のポイントに適用されます。 その結果、分類はこれらの属性対応指標を明確にしません。
 
-  例として、**[!UICONTROL Luma：製品カテゴリ]** **[!UICONTROL フィルター]** ![女性](/help/assets/icons/Filter.svg) セグメントを使用する場合の&#x200B;**[!UICONTROL オンライン収益]**&#x200B;指標に基づく属性と、**[!UICONTROL Luma：製品カテゴリ]** ![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL 女性]**&#x200B;分類の違いを参照してください。
+  例として、**[!UICONTROL Luma：製品カテゴリ]** ![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL 女性]** セグメントを使用する場合の&#x200B;**[!UICONTROL オンライン収益]**&#x200B;指標に基づく属性と、**[!UICONTROL Luma：製品カテゴリ]** ![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL 女性]**&#x200B;分類の違いを参照してください。
 
   ![属性ベースの指標：フィルターと分類](assets/attribute-filter-breakdown.png)
 
 * 分類ドロップダウンメニュー内でサブイベントレベルのディメンションを使用している場合、分類はそのサブイベントレベルで実行されます。 セグメントドロップダウンメニュー内のセグメントは、イベントレベルで実行されます。
 
-  例として、**[!UICONTROL Luma：製品サブカテゴリ]** **[!UICONTROL フィルター]** ![Tops](/help/assets/icons/Filter.svg) セグメントを使用する場合の&#x200B;**[!UICONTROL オンライン収益]**&#x200B;指標と、**[!UICONTROL Luma：製品サブカテゴリ]** ![内訳](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]**&#x200B;内訳の違いを参照してください。 分類は、サブイベントレベルでクエリを明示的に実行し、セグメントはイベントレベルでクエリを実行します。
+  例として、**[!UICONTROL Luma：製品サブカテゴリ]** ![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** セグメントを使用する場合の&#x200B;**[!UICONTROL オンライン収益]**&#x200B;指標と、**[!UICONTROL Luma：製品サブカテゴリ]** ![内訳](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]**&#x200B;内訳の違いを参照してください。 分類は、サブイベントレベルでクエリを明示的に実行し、セグメントはイベントレベルでクエリを実行します。
 
-  ![&#x200B; サブイベントベースの指標：フィルターと分類](assets/sub-event-filter-breakdown.png)
+  ![ サブイベントベースの指標：フィルターと分類](assets/sub-event-filter-breakdown.png)
 
 ### 管理
 
@@ -267,7 +273,7 @@ ht-degree: 42%
 | ドロップゾーンからコンポーネントを削除するには、次の手順を実行します。 | コンポーネントのコンテキストメニューから&#x200B;**[!UICONTROL ドロップダウンを削除]**&#x200B;を選択します。 |
 | 必要な情報を確認することができます。 | コンポーネント内にマウスポインターを置き、![情報](/help/assets/icons/Info.svg)を選択して、コンポーネントに関する情報を含むデータ要素を開きます。 |
 | ドロップダウンメニューを定義するコンポーネントに関する情報を取得します。 | ドロップダウンメニュー内にマウスポインターを置き、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択して、コンポーネントに関する情報を含むデータディクショナリを開きます。 |
-| クイックセグメントを編集するには、次の手順に従います。 | クイックセグメント内にマウスポインターを置き、![編集](/help/assets/icons/Edit.svg)を選択します。 詳しくは、[&#x200B; クイックセグメント &#x200B;](/help/components/segments/seg-quick.md)を参照してください。 |
+| クイックセグメントを編集するには、次の手順に従います。 | クイックセグメント内にマウスポインターを置き、![編集](/help/assets/icons/Edit.svg)を選択します。 詳しくは、[ クイックセグメント ](/help/components/segments/seg-quick.md)を参照してください。 |
 | ドロップダウンメニューの選択を要求するには | コンポーネントのコンテキストメニューから「**[!UICONTROL 選択を要求]**」を選択します。 |
 | ドロップダウンメニューにフィルターを許可しない。 | コンポーネントのコンテキストメニューから「**[!UICONTROL フィルターを許可しない]**」を選択します。 |
 | すべてのコンポーネントをリセットし、ドロップダウンメニューのすべての選択項目をクリアします。 | 「**[!UICONTROL すべてをリセット]**」を選択します。 |
@@ -276,7 +282,7 @@ ht-degree: 42%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspaceでのフィルターの使用](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspaceでのフィルターの使用](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -284,7 +290,7 @@ ht-degree: 42%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [動的ドロップダウンフィルター](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [動的ドロップダウンフィルター](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -309,10 +315,10 @@ ht-degree: 42%
 | **[!UICONTROL パネル内のすべてのビジュアライゼーションを折りたたむ]** | 現在のパネルのすべてのビジュアライゼーションを折りたたみます。 |
 | **[!UICONTROL パネル内のすべてのビジュアライゼーションを展開]** | 現在のパネル内のすべてのビジュアライゼーションを展開します。 |
 | **[!UICONTROL 説明を編集]** | パネルの説明テキストを追加（または編集）します。 |
-| **[!UICONTROL パネルリンクを取得]** | プロジェクト内の特定のパネルに他のユーザーを誘導します。受信者は、リンクを選択した後、リンク先の正確なパネルにリダイレクトされる前にログインする必要があります。 |
+| **[!UICONTROL パネルリンクを取得]** | プロジェクト内の特定のパネルに他のユーザーを誘導します。 受信者は、リンクを選択した後、リンク先の正確なパネルにリダイレクトされる前にログインする必要があります。 |
 
 ## 設定
 
-一部のパネル（[!UICONTROL アトリビューション]、[!UICONTROL 実験]、[!UICONTROL メディア分平均オーディエンス]など）には、ビジュアライゼーションの構築を支援する設定ダイアログがあります。パネルの上部にある「![編集](/help/assets/icons/Edit.svg)」を使用して、設定にアクセスして変更します。
+一部のパネル（[!UICONTROL アトリビューション]、[!UICONTROL 実験]、[!UICONTROL メディア分平均オーディエンス]など）には、ビジュアライゼーションの構築を支援する設定ダイアログがあります。 パネルの上部にある「![編集](/help/assets/icons/Edit.svg)」を使用して、設定にアクセスして変更します。
 
 ![パネルの設定](/help/analysis-workspace/c-panels/assets/configure-panel.png)

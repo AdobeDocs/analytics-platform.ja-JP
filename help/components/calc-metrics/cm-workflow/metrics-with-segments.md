@@ -1,96 +1,102 @@
 ---
-description: 同じビジュアライゼーション内で指標を比較できる個々の指標でセグメント化する方法を説明します。
+description: 同じビジュアライゼーション内で指標を比較できる個々の指標をセグメント化する方法について説明します。
 title: セグメント化指標
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/dOOOOGytHT-5IMC9LNcNlBKLufs9PUkvjBoAgw38bEI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 504
 ht-degree: 1%
 
 ---
 
 # セグメント化指標
 
-[&#x200B; 計算指標ビルダー &#x200B;](cm-build-metrics.md#definition-builder) では、指標の定義内にセグメントを適用できます。 セグメントの適用は、分析で指標をデータのサブセットに使用する場合に役立ちます。
+[計算指標ビルダー](cm-build-metrics.md#definition-builder)では、指標の定義内にセグメントを適用できます。 セグメントの適用は、分析でデータのサブセットに指標を使用する場合に役立ちます。
 
 >[!NOTE]
 >
->セグメント定義は、[&#x200B; セグメントビルダー &#x200B;](/help/components/segments/seg-builder.md) を使用して更新されます。 セグメントに変更を加えると、セグメントが計算指標定義の一部であるかどうかを含め、セグメントが使用されているすべての場所でセグメントが自動的に更新されます。
+>セグメント定義は、[ セグメントビルダー](/help/components/segments/seg-builder.md)を通じて更新されます。 セグメントに変更を加えると、セグメントが計算指標の定義の一部であるかどうかも含め、そのセグメントが使用されるあらゆる場所で自動的に更新されます。
 >
 
-ブランドとやり取りするドイツ人の指標とドイツ国外のユーザーの指標を比較します。 次のような質問に答えることができます。
+自社と接触したドイツ人と、それ以外の国や地域の人との指標を比較します。 例えば、次のような質問に答えることができます。
 
-1. 最も人気のある [&#x200B; 人気の高いページ &#x200B;](#popular-pages) を訪問しているドイツ人と外国人の数。
-1. 今月、ブランドとオンラインでやり取りしたドイツ人と外国人の数 [&#x200B; 合計 &#x200B;](#totals)。
-1. 人気のあるページを訪問したドイツ人や国際的な人々の [&#x200B; 割合 &#x200B;](#percentages) は何ですか？
+1. 最も人気のある[ ページを訪問しているドイツ人と外国人の数](#popular-pages)。
+1. 今月、オンラインで自社と接触したドイツ人と外国人の数（[合計](#totals)）を比較します。
+1. あなたの人気ページにアクセスしたドイツ人と外国人の[ パーセンテージ ](#percentages)は何ですか？
 
-以下の節を参照して、セグメント化指標がこれらの質問に答える際にどのように役立つかをご確認ください。 該当する場合は、より詳細なドキュメントへの参照が行われます。
+以下のセクションでは、セグメント化された指標がこれらの質問に対する回答にどのように役立つかを示しています。 必要に応じて、より詳細なドキュメントを参照します。
 
-## 人気のあるページ
+## 人気ページ
 
-1. Workspace プロジェクトから [&#x200B; 計算指標を作成 &#x200B;](cm-workflow.md) し、`German people` という名前を付けます。
-1. [&#x200B; 計算指標ビルダー &#x200B;](cm-build-metrics.md) 内から、[&#x200B; というタイトルの &#x200B;](/help/components/segments/seg-builder.md) セグメントを作成 `Germany` します。これは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
+1. [Workspace プロジェクトから`German people`という名前の計算指標](cm-workflow.md)を作成します。
+1. [計算指標ビルダー](cm-build-metrics.md)内から、[CRM データのCRM国フィールドを使用して、人物の出身地を決定する`Germany`というタイトルのセグメント ](/help/components/segments/seg-builder.md)を作成します。
 
    >[!TIP]
    >
-   >計算指標ビルダーでは、コンポーネント パネルを使用して直接セグメントを作成できます。
+   >計算指標ビルダーでは、コンポーネントパネルを使用して直接セグメントを作成できます。
    >   
 
    セグメントは次のようになります。
 
-   ![&#x200B; セグメント ドイツ &#x200B;](assets/filter-germany.png)
+   ![ セグメントドイツ ](assets/filter-germany.png)
 
 1. 計算指標ビルダーに戻り、セグメントを使用して計算指標を更新します。
 
-   ![&#x200B; 計算指標ドイツ &#x200B;](assets/calculated-metric-germany.png)
+   ![計算指標ドイツ ](assets/calculated-metric-germany.png)
 
-計算指標の国際バージョンに対して、上記の手順を繰り返します。
+計算指標の国際バージョンについて、上記の手順を繰り返します。
 
-1. Workspace プロジェクトから `International people` というタイトルの計算指標を作成します。
-1. 計算指標ビルダー内から、`Not Germany` というタイトルのセグメントを作成します。このセグメントは、CRM データの CRM 国フィールドを使用して、ユーザーが来ている場所を判断します。
+1. Workspace プロジェクトから、`International people`というタイトルの計算指標を作成します。
+1. 計算指標ビルダー内から、`Not Germany`というタイトルのセグメントを作成します。このセグメントは、CRM データからCRMの国フィールドを使用して、ユーザーがどこから来たのかを判断します。
 
    セグメントは次のようになります。
 
-   ![&#x200B; セグメント ドイツ &#x200B;](assets/filter-not-germany.png)
+   ![ セグメントドイツ ](assets/filter-not-germany.png)
 
 1. 計算指標ビルダーに戻り、セグメントを使用して計算指標を更新します。
 
-   ![&#x200B; 計算指標ドイツ &#x200B;](assets/calculated-metric-notgermany.png)
+   ![計算指標ドイツ ](assets/calculated-metric-notgermany.png)
 
 
-1. Analysis Workspaceでプロジェクトを作成します。このプロジェクトでは、ドイツ人や外国人が訪問したページを確認できます。
+1. Analysis Workspaceでプロジェクトを作成します。ここでは、ドイツ人と外国人が訪問したページを見ることができます。
 
-   ![&#x200B; ドイツ人と海外のユーザーを表示するWorkspaceのフリーフォームテーブルビジュアライゼーション &#x200B;](assets/workspace-german-vs-international.png)
+   ![Workspace自由形式テーブルのビジュアライゼーションで、ドイツ人と外国人が表示されている](assets/workspace-german-vs-international.png)
 
 
 ## 合計
 
-1. 総計に基づいて 2 つの新しい計算指標を作成します。 前に作成した各セグメントを開き、セグメントの名前を変更し、**[!UICONTROL 人物]** の **[!UICONTROL 指標タイプ]** を **[!UICONTROL 総計]** に設定して、**[!UICONTROL 名前を付けて保存]** を使用してセグメントを新しい名前で保存します。 例：
+1. 総計に基づいて、2つの新しい計算指標を作成します。 以前に作成した各セグメントを開き、セグメント名を変更し、**[!UICONTROL 人物]**&#x200B;の&#x200B;**[!UICONTROL 指標タイプ]**&#x200B;を&#x200B;**[!UICONTROL グランド合計]**&#x200B;に設定し、**[!UICONTROL 別名で保存]**&#x200B;を使用して、新しい名前を使用してセグメントを保存します。 例：
 
-   ![&#x200B; ドイツの合計指標 &#x200B;](assets/calculated-metric-germany-total.png)
+   ![ ドイツの合計指標](assets/calculated-metric-germany-total.png)
 
-1. 新しいフリーフォームテーブルビジュアライゼーションをWorkspace プロジェクトに追加し、今月の合計ページを表示します。
+1. Workspace プロジェクトに新しいフリーフォームテーブルのビジュアライゼーションを追加し、今月の合計ページを表示します。
 
-   ![&#x200B; ドイツ語と国際の合計人数を示すWorkspaceのフリーフォームテーブルビジュアライゼーション &#x200B;](assets/workspace-german-vs-international-totals.png)
+   ![Workspace自由形式テーブルのビジュアライゼーションで、ドイツ人対国際総人数を表示](assets/workspace-german-vs-international-totals.png)
 
 
 ## 割合
 
-1. 前に作成した計算指標からパーセンテージを計算する 2 つの新しい計算指標を作成します。
+1. 先ほど作成した計算指標から割合を計算する、2つの新しい計算指標を作成します。
 
-   ![&#x200B; ドイツ人と国際の合計人数の割合を示すWorkspaceのフリーフォームテーブルビジュアライゼーション &#x200B;](assets/calculated-metric-germany-total-percentage.png)
+   ![Workspace自由形式テーブルのビジュアライゼーションでドイツ語と国際合計の人数割合を表示](assets/calculated-metric-germany-total-percentage.png)
 
 
 1. Workspace プロジェクトを更新します。
 
-   ![&#x200B; ドイツ語と国際の合計人数を示すWorkspaceのフリーフォームテーブルビジュアライゼーション &#x200B;](assets/workspace-german-vs-international-totals-percentage.png)
+   ![Workspace自由形式テーブルのビジュアライゼーションで、ドイツ人対国際総人数を表示](assets/workspace-german-vs-international-totals-percentage.png)
 
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; セグメント化された計算指標を実装なしの指標として使用 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ セグメント化された計算指標を実装のない指標として使用](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"}を参照してください。
 
 {{videoaa}}
 

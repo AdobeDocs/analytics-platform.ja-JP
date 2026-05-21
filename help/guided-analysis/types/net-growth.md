@@ -5,9 +5,15 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/2E5Q2eE6dhvViTJ64eQ41I4S9ZsQO-WohKBY07CGJpg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: 743
 ht-degree: 92%
 
 ---
@@ -41,7 +47,7 @@ ht-degree: 92%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## ユースケース
@@ -62,7 +68,7 @@ ht-degree: 92%
 
 * **[!UICONTROL 表示]**：この分析と[アクティブな増加率](active-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベント。 この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。 クエリには 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL &#x200B; ユーザー数]と[!UICONTROL &#x200B; ユーザーの割合]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL &#x200B; グローバルアカウント &#x200B;]、[!UICONTROL &#x200B; アカウント &#x200B;]、[!UICONTROL 購買グループ &#x200B;]、[!UICONTROL 商談]、[!UICONTROL &#x200B; グローバルアカウントの割合]、[!UICONTROL &#x200B; アカウントの割合]、[!UICONTROL 購買グループの割合]、および[!UICONTROL 商談の割合]。</li></ul>
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL  ユーザー数]と[!UICONTROL  ユーザーの割合]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL 購買グループ ]、[!UICONTROL 商談]、[!UICONTROL  グローバルアカウントの割合]、[!UICONTROL  アカウントの割合]、[!UICONTROL 購買グループの割合]、および[!UICONTROL 商談の割合]。</li></ul>
 * **[!UICONTROL セグメント]**：測定するセグメント。 クエリには 1 つのセグメントを含めることができます。
 
 ### 時間比較
