@@ -7,10 +7,16 @@ mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 TQID: https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: c38ed341-fab2-46df-9d72-88d8166edebbid: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 838
@@ -36,14 +42,14 @@ ht-degree: 50%
 
 受信者に電子メールでファイルを送信するには：
 
-1. **[!UICONTROL 共有] / [!UICONTROL  ファイルを送信]**&#x200B;を選択します。
+1. **[!UICONTROL 共有] / [!UICONTROL &#x200B; ファイルを送信]**&#x200B;を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
 1. （オプション） **[!UICONTROL 説明]**&#x200B;を使用して、メールに含める説明を追加します。
 1. 受信者またはグループを追加します。 メールアドレスも入力できます。
 1. （Healthcare Shieldのお客様のみ）スケジュール済みレポートをパスワードで保護する[にパスワードを提供します](#password-protect-a-new-scheduled-project)。
-1. （オプション）「**[!UICONTROL スケジュール設定オプションを表示]**」から「[ ファイルの書き出しをスケジュール ](#schedule-file-export)」を選択します。
+1. （オプション）「**[!UICONTROL スケジュール設定オプションを表示]**」から「[&#x200B; ファイルの書き出しをスケジュール &#x200B;](#schedule-file-export)」を選択します。
 1. 「**[!UICONTROL 今すぐ送信]**」をクリックします。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 
@@ -51,7 +57,7 @@ ht-degree: 50%
 
 スケジュール上のファイルを受信者に電子メールで送信するには：
 
-1. **[!UICONTROL 共有]/[!UICONTROL  ファイルの書き出しをスケジュール]**&#x200B;を選択します。
+1. **[!UICONTROL 共有]/[!UICONTROL &#x200B; ファイルの書き出しをスケジュール]**&#x200B;を選択します。
 1. 次のいずれかのファイルタイプを指定します。
    * [!UICONTROL **CSV**]：プレーンテキストデータが必要な場合は、このオプションを選択します。
    * [!UICONTROL **PDF**]：ダウンロードしたファイルに、プロジェクト内に表示されているすべてのテーブルとビジュアライゼーションを含める場合は、このオプションを選択します。
@@ -71,9 +77,9 @@ ht-degree: 50%
    | **[!UICONTROL 月の日付ごとに毎年送信]** | **[!UICONTROL 週の日]**&#x200B;を選択し、**[!UICONTROL 月]**&#x200B;を選択し、**[!UICONTROL 年の月]**&#x200B;を選択します。 |
    | **[!UICONTROL 特定の日付ごとに毎年送信]** | **[!UICONTROL 年の月]**&#x200B;を選択し、**[!UICONTROL 月のこの日に送信]**&#x200B;から値を選択します。 |
 
-1. **[!UICONTROL 開始日を]**&#x200B;から入力してください。 または、![ カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから開始日を選択します。
+1. **[!UICONTROL 開始日を]**&#x200B;から入力してください。 または、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから開始日を選択します。
 
-1. 終了日を&#x200B;****&#x200B;に入力してください。 または、![ カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから終了日を選択します。
+1. 終了日を&#x200B;**&#x200B;**&#x200B;に入力してください。 または、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を選択して、カレンダーから終了日を選択します。
 1. 「**[!UICONTROL スケジュールに送信]**」を選択します。 「**[!UICONTROL キャンセル]**」を選択すると、キャンセルします。
 
 

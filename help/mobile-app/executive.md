@@ -6,11 +6,22 @@ role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/VZRakAqCMywVAtKs60w-WQqHJhfKdMj2z3uSSrPyztc
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b21c7889-c659-4a99-a779-de1bae57e47e
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1335
@@ -25,7 +36,7 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカード ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカード &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -126,11 +137,11 @@ ht-degree: 72%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。 次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。 「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。 画面右上の「**[!UICONTROL 完了]**」をタップします。 「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[ セグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
+1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[&#x200B; セグメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
 
    ![セグメント](assets/segment_filter.png)
 
-1. [!UICONTROL  スコアカード ]の更新プログラムを取得します。 [!UICONTROL  スコアカード ]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL &#x200B; スコアカード &#x200B;]の更新プログラムを取得します。 [!UICONTROL &#x200B; スコアカード &#x200B;]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. アプリケーションでフィードバックを残す手順は、次のとおりです。
 
