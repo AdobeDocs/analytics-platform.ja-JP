@@ -63,7 +63,7 @@ ht-degree: 63%
 
 仮説が次のようであるとします。*「特定の業界（旅行業界など）では、顧客は製品を購入する前に多くの調査を行うため、アトリビューション期間は30日ではなく60日または90日です。*」
 
-この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
+この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
 
 ## アルゴリズムによるアトリビューション
 
@@ -73,5 +73,5 @@ ht-degree: 63%
 
 * Analysis Workspace だけに依存するのではなく、データサイエンティストのサービスを使用する必要性が生じる場合があります。
 * Adobe データフィードのように、生データを使用できます。
-* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
+* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
 
