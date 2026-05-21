@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1160
@@ -48,10 +55,10 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## ユーザー ID のステッチ
 
-Customer Journey Analyticsでは、[結合データセット ](/help/connections/combined-dataset.md)を生成するための共通IDが必要です。
+Customer Journey Analyticsでは、[結合データセット &#x200B;](/help/connections/combined-dataset.md)を生成するための共通IDが必要です。
 
 * データセットに、両方のデータセットの全イベントに共通の識別情報が既に存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* いずれかのデータセットが一部のイベントに対してのみ共通の識別子を持つ場合は、これらの2つのデータセットのクロスチャネル分析を有効にする手順に[ ステッチ ](/help/stitching/overview.md)を使用してデータを結合できます。
+* いずれかのデータセットが一部のイベントに対してのみ共通の識別子を持つ場合は、これらの2つのデータセットのクロスチャネル分析を有効にする手順に[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md)を使用してデータを結合できます。
 
 ## Customer Journey Analytics で接続を作成する
 
@@ -75,7 +82,7 @@ Customer Journey Analyticsでは、[結合データセット ](/help/connections
 
 このビジュアライゼーションは、クロスチャネル分析がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2つのセグメントを作成します。 これらの2つのセグメントで使用される変数は、上記と同じ変数で、各イベントのデータソースを反映しています。 詳しくは、[ セグメントの作成](/help/components/segments/seg-create.md)を参照してください。
+1. 2つのセグメントを作成します。 これらの2つのセグメントで使用される変数は、上記と同じ変数で、各イベントのデータソースを反映しています。 詳しくは、[&#x200B; セグメントの作成](/help/components/segments/seg-create.md)を参照してください。
    * データセット ID と web データが同じユーザーコンテナ
    * データセット ID とコールセンターデータが同じユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。

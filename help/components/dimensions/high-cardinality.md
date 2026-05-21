@@ -6,11 +6,20 @@ solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
 TQID: https://experienceleague.adobe.com/cDOJq7Dc6x301enIo7h-cm8pGphmnvQAihnLoYGIr-A
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 622
@@ -24,7 +33,7 @@ ht-degree: 11%
 
 一意の値が多すぎるディメンションを含むレポートをリクエストすると、Analysis Workspace のディメンションヘッダーには、すべてのディメンション項目が含まれていないことを示すインジケーターが表示されます。 例えば、**[!UICONTROL 行：22,343,156]**&#x200B;を超える1 ～ 50。 **[!UICONTROL more than]** キーワードは、最も重要なディメンション項目を返すために、一部の最適化がレポートに適用されたことを示します。
 
-22,343,156](assets/high-cardinality.png)を超える数の1 ～ 50を表示する「more than」キーワードを示すWorkspaceの![ フリーフォームテーブル
+22,343,156![&#128279;](assets/high-cardinality.png)を超える数の1 ～ 50を表示する「more than」キーワードを示すWorkspaceの フリーフォームテーブル
 
 ## 表示するディメンション項目の決定
 
@@ -42,10 +51,10 @@ Customer Journey Analyticsは、実行時にレポートを処理し、結合さ
 
 高い基数ディメンションに対応する最善の方法は、レポートで処理するディメンション項目の数を制限することです。 すべてのレポートは要求された時点で処理されるので、レポートのパラメーターを調整して即座に結果を得ることができます。 Adobeでは、高い基数ディメンションに対して次のいずれかの最適化をお勧めします。
 
-* [ セグメント ](/help/components/segments/seg-create.md)を使用します。 セグメントは、各サーバーがデータのサブセットを処理する際に適用されます。
+* [&#x200B; セグメント &#x200B;](/help/components/segments/seg-create.md)を使用します。 セグメントは、各サーバーがデータのサブセットを処理する際に適用されます。
 * 検索の使用： 検索語句から除外されたDimension項目はレポート結果から削除され、目的のディメンション項目が表示される可能性が高くなります。
 * ルックアップデータセットディメンションを使用します。 ルックアップデータセットディメンションは、イベントデータセットのディメンション項目を組み合わせて、返される一意の値の数を制限します。
 * データビューマネージャーで[含める/除外](/help/data-views/component-settings/include-exclude-values.md) コンポーネント設定を使用します。
 * リクエストの日付範囲を短縮します。 多くの一意の値が時間の経過とともに蓄積される場合、Workspace レポートの日付範囲を短くすると、処理するサーバーの一意の値の数が制限される場合があります。
-* テーブルのすべての行を返すには、[ テーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)を使用することを検討してください。
+* テーブルのすべての行を返すには、[&#x200B; テーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)を使用することを検討してください。
 * 一意の値の数が主な焦点である場合は、[[!UICONTROL 概算カウント一意]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct)計算指標関数を使用します。

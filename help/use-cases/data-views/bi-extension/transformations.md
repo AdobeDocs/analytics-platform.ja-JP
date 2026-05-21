@@ -6,10 +6,18 @@ feature: Data Views
 role: User
 exl-id: 2022a841-fc2a-4a76-8d91-8227e7a2130a
 TQID: https://experienceleague.adobe.com/Z-D08miremjia0hNYhh6SSFe7YpiCqkl0gH-BLNPG6k
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1691
@@ -24,8 +32,8 @@ ht-degree: 0%
 
 +++ Customer Journey Analytics
 
-Customer Journey Analyticsでは、[ データビュー](/help/data-views/data-views.md)で、データセットのコンポーネントを[ ディメンション ](/help/components/dimensions/overview.md)および[指標](/help/components/apply-create-metrics.md)として表示する方法を定義します。 ディメンションと指標のその定義は、BI拡張機能を使用してBI ツールに公開されます。
-Workspace プロジェクトの一部として、[ フィルター](/help/components/segments/seg-overview.md)、[計算指標](/help/components/calc-metrics/calc-metr-overview.md)、[日付範囲](/help/components/date-ranges/overview.md)などのコンポーネントを使用します。 これらのコンポーネントは、BI拡張機能を使用してBI ツールにも公開されます。
+Customer Journey Analyticsでは、[&#x200B; データビュー](/help/data-views/data-views.md)で、データセットのコンポーネントを[&#x200B; ディメンション &#x200B;](/help/components/dimensions/overview.md)および[指標](/help/components/apply-create-metrics.md)として表示する方法を定義します。 ディメンションと指標のその定義は、BI拡張機能を使用してBI ツールに公開されます。
+Workspace プロジェクトの一部として、[&#x200B; フィルター](/help/components/segments/seg-overview.md)、[計算指標](/help/components/calc-metrics/calc-metr-overview.md)、[日付範囲](/help/components/date-ranges/overview.md)などのコンポーネントを使用します。 これらのコンポーネントは、BI拡張機能を使用してBI ツールにも公開されます。
 
 +++
 
@@ -43,23 +51,23 @@ Workspace プロジェクトの一部として、[ フィルター](/help/compon
 Customer Journey Analytics オブジェクトは&#x200B;**[!UICONTROL Data]** ペインで使用でき、Power BI デスクトップで選択したテーブルから取得されます。 例：**[!UICONTROL public.cc_data_view]**。 テーブルの名前は、Customer Journey Analyticsでデータビューに定義した外部IDと同じです。 例えば、**[!UICONTROL タイトル]** `C&C - Data View`および&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`のデータビューです。
 
 **ディメンション**
-Customer Journey Analyticsのディメンションは、[!UICONTROL  コンポーネント ID]によって識別されます。 [!UICONTROL  コンポーネント ID]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]**&#x200B;には、[!UICONTROL  コンポーネント ID] **[!UICONTROL product_name]**があり、これはPower BI Desktopのディメンションの名前です。
+Customer Journey Analyticsのディメンションは、[!UICONTROL &#x200B; コンポーネント ID]によって識別されます。 [!UICONTROL &#x200B; コンポーネント ID]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]**&#x200B;には、[!UICONTROL &#x200B; コンポーネント ID] **[!UICONTROL product_name]**&#x200B;があり、これはPower BI Desktopのディメンションの名前です。
 **[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]**&#x200B;などとして利用できます。
 
 **指標**
-Customer Journey Analyticsの指標は、[!UICONTROL  コンポーネント ID]によって識別されます。 [!UICONTROL  コンポーネント ID]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsの指標&#x200B;**[!UICONTROL 購入収益]**&#x200B;には、[!UICONTROL  コンポーネント ID] **[!UICONTROL 購入収益]**&#x200B;があり、これはPower BI デスクトップの指標の名前です。 **[!UICONTROL ∑]**&#x200B;は指標を示します。 任意のビジュアライゼーションで指標を使用すると、指標の名前は&#x200B;*指標&#x200B;*]**の&#x200B;**[!UICONTROL 合計に変更されます。
+Customer Journey Analyticsの指標は、[!UICONTROL &#x200B; コンポーネント ID]によって識別されます。 [!UICONTROL &#x200B; コンポーネント ID]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsの指標&#x200B;**[!UICONTROL 購入収益]**&#x200B;には、[!UICONTROL &#x200B; コンポーネント ID] **[!UICONTROL 購入収益]**&#x200B;があり、これはPower BI デスクトップの指標の名前です。 **[!UICONTROL ∑]**&#x200B;は指標を示します。 任意のビジュアライゼーションで指標を使用すると、指標の名前は&#x200B;*指標&#x200B;***の&#x200B;**&#x200B;合計に変更されます。
 
 **フィルター**
 Customer Journey Analyticsで定義したフィルターは、**[!UICONTROL filterName]** フィールドの一部として使用できます。 Power BI デスクトップで&#x200B;**[!UICONTROL filterName]** フィールドを使用する場合は、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL 外部ID]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**&#x200B;があり、Power BI デスクトップでは**[!UICONTROL cm_product_name_count_distinc]**tと表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL 外部ID]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**&#x200B;があり、Power BI デスクトップでは&#x200B;**[!UICONTROL cm_product_name_count_distinc]**&#x200B;tと表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義した日付範囲は、**[!UICONTROL daterangeName]** フィールドの一部として使用できます。 **[!UICONTROL daterangeName]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Power BI Desktopは、[Data Analysis Expressions （DAX） ](https://learn.microsoft.com/en-us/dax/dax-overview)を使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション ](#single-dimension-ranked)のユースケースを実行します。
+Power BI Desktopは、[Data Analysis Expressions （DAX） &#x200B;](https://learn.microsoft.com/en-us/dax/dax-overview)を使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション &#x200B;](#single-dimension-ranked)のユースケースを実行します。
 
 1. レポートビューで、棒グラフのビジュアライゼーションを選択します。
 1. データパネルで「**[!UICONTROL product_name]**」を選択します。
@@ -118,27 +126,27 @@ limit 1000001
 Customer Journey Analytics オブジェクトは、シートで作業するときはいつでも&#x200B;**[!UICONTROL Data]** サイドバーで使用できます。 は、Tableauの&#x200B;**[!UICONTROL データソース]** ページの一部として選択したテーブルから取得されます。 例：**[!UICONTROL cc_data_view]**。 テーブルの名前は、Customer Journey Analyticsでデータビューに定義した外部IDと同じです。 例えば、**[!UICONTROL タイトル]** `C&C - Data View`および&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`のデータビューです。
 
 **ディメンション**
-Customer Journey Analyticsのディメンションは、[!UICONTROL  コンポーネント名]によって識別されます。 [!UICONTROL  コンポーネント名]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]**&#x200B;には、[!UICONTROL  コンポーネント名] **[!UICONTROL 製品名]**&#x200B;があり、これはTableauのディメンションの名前です。 すべてのディメンションは&#x200B;**[!UICONTROL Abc]**によって識別されます。
+Customer Journey Analyticsのディメンションは、[!UICONTROL &#x200B; コンポーネント名]によって識別されます。 [!UICONTROL &#x200B; コンポーネント名]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL 製品名]**&#x200B;には、[!UICONTROL &#x200B; コンポーネント名] **[!UICONTROL 製品名]**&#x200B;があり、これはTableauのディメンションの名前です。 すべてのディメンションは&#x200B;**[!UICONTROL Abc]**&#x200B;によって識別されます。
 **[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]**&#x200B;など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]**&#x200B;などとして利用できます。 日付範囲ディメンションを使用する場合、ドロップダウンメニューから、その日付範囲ディメンションに適用する適切な日付または時刻の定義を選択する必要があります。 例：**[!UICONTROL 年]**、**[!UICONTROL 四半期]**、**[!UICONTROL 月]**、**[!UICONTROL 日]**。
 
 **指標**
-Customer Journey Analyticsの指標は、[!UICONTROL  コンポーネント名]によって識別されます。 [!UICONTROL  コンポーネント名]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsの指標&#x200B;**[!UICONTROL 購入収益]**&#x200B;には、[!UICONTROL  コンポーネント名] **[!UICONTROL 購入収益]**&#x200B;があり、これはTableauの指標の名前です。 すべての指標は&#x200B;**[!UICONTROL #]**&#x200B;によって識別されます。 任意のビジュアライゼーションで指標を使用すると、指標の名前は&#x200B;**[!UICONTROL 合計（*指標*）]**&#x200B;に変更されます。
+Customer Journey Analyticsの指標は、[!UICONTROL &#x200B; コンポーネント名]によって識別されます。 [!UICONTROL &#x200B; コンポーネント名]は、Customer Journey Analytics データビューで定義されています。 例えば、Customer Journey Analyticsの指標&#x200B;**[!UICONTROL 購入収益]**&#x200B;には、[!UICONTROL &#x200B; コンポーネント名] **[!UICONTROL 購入収益]**&#x200B;があり、これはTableauの指標の名前です。 すべての指標は&#x200B;**[!UICONTROL #]**&#x200B;によって識別されます。 任意のビジュアライゼーションで指標を使用すると、指標の名前は&#x200B;**[!UICONTROL 合計（*指標*）]**&#x200B;に変更されます。
 
 **フィルター**
 Customer Journey Analyticsで定義したフィルターは、**[!UICONTROL フィルター名]** フィールドの一部として使用できます。 Tableauで&#x200B;**[!UICONTROL フィルター名]** フィールドを使用する場合は、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL  タイトル ]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL Title] **[!UICONTROL Product Name （Count Distinct）]**&#x200B;があり、Tableauでは&#x200B;**[!UICONTROL Cm Product Name Count Distinct]**&#x200B;と表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL &#x200B; タイトル &#x200B;]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL Title] **[!UICONTROL Product Name （Count Distinct）]**&#x200B;があり、Tableauでは&#x200B;**[!UICONTROL Cm Product Name Count Distinct]**&#x200B;と表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義した日付範囲は、**[!UICONTROL Daterange Name]** フィールドの一部として使用できます。 **[!UICONTROL Daterange Name]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Tableau Desktopは、[計算フィールド ](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)を使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション ](#single-dimension-ranked)のユースケースを実行します。
+Tableau Desktopは、[計算フィールド &#x200B;](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)を使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション &#x200B;](#single-dimension-ranked)のユースケースを実行します。
 
 1. メインメニューから&#x200B;**[!UICONTROL 分析]** > **[!UICONTROL 計算フィールドの作成]**&#x200B;を選択します。
-   1. 関数`LOWER([Product Name])`を使用して、**[!UICONTROL 製品名]**を小文字で定義します。
-      ![Tableau計算フィールド ](../assets/uc14-tableau-calculated-field.png)
+   1. 関数`LOWER([Product Name])`を使用して、**[!UICONTROL 製品名]**&#x200B;を小文字で定義します。
+      ![Tableau計算フィールド &#x200B;](../assets/uc14-tableau-calculated-field.png)
    1. **[!UICONTROL OK]**&#x200B;を選択します。
 1. **[!UICONTROL データ]** シートを選択します。
    1. **[!UICONTROL 小文字の製品名]**&#x200B;を&#x200B;**[!UICONTROL 表]**&#x200B;からドラッグし、**[!UICONTROL 行]**&#x200B;の横のフィールドにエントリをドロップします。
@@ -147,7 +155,7 @@ Tableau Desktopは、[計算フィールド ](https://help.tableau.com/current/p
 
 Tableau デスクトップは以下のようになります。
 
-変換後の![Tableau デスクトップ ](../assets/uc14-tableau-final.png)
+変換後の![Tableau デスクトップ &#x200B;](../assets/uc14-tableau-final.png)
 
 カスタム変換によって、SQL クエリが更新されます。 次のSQLの例の`LOWER`関数の使用を参照してください。
 
@@ -166,7 +174,7 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 Customer Journey Analytics オブジェクトは、**[!UICONTROL Explore]** インターフェイスで使用できます。 そして、Lookerで接続、プロジェクト、モデルを設定する一環として取得されます。 例：**[!UICONTROL cc_data_view]**。 ビューの名前は、Customer Journey Analyticsでデータビューに定義した外部IDと同じです。 例えば、**[!UICONTROL タイトル]** `C&C - Data View`および&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`のデータビューです。
 
 **ディメンション**
-Customer Journey Analyticsのディメンションは、**[!UICONTROL Cc データビュー]**&#x200B;の左側のパネルに&#x200B;**[!UICONTROL DIMENSION]**&#x200B;として表示されます。 ディメンションは、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]**&#x200B;には、**[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]**があり、これはLookerのディメンションの名前です。
+Customer Journey Analyticsのディメンションは、**[!UICONTROL Cc データビュー]**&#x200B;の左側のパネルに&#x200B;**[!UICONTROL DIMENSION]**&#x200B;として表示されます。 ディメンションは、Customer Journey Analytics データビューで定義されます。 例えば、Customer Journey Analyticsのディメンション **[!UICONTROL Product Name]**&#x200B;には、**[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]**&#x200B;があり、これはLookerのディメンションの名前です。
 **[!UICONTROL 日]**、**[!UICONTROL 週]**、**[!UICONTROL 月]**&#x200B;など、Customer Journey Analyticsの日付範囲ディメンションは、**[!UICONTROL Daterangeday Date]**、**[!UICONTROL Daterangeweek Date]**、**[!UICONTROL Daterangemonth Date]**&#x200B;などとして利用できます。  日付範囲ディメンションを使用する場合は、適切な日付または時刻の定義を選択する必要があります。 例：**[!UICONTROL 年]**、**[!UICONTROL 四半期]**、**[!UICONTROL 月]**、**[!UICONTROL 日付]**。
 
 **指標**
@@ -176,13 +184,13 @@ Customer Journey Analyticsの指標は、**[!UICONTROL Cc データビュー]**&
 Customer Journey Analyticsで定義したフィルターは、**[!UICONTROL フィルター名]** フィールドの一部として使用できます。 Lookerで&#x200B;**[!UICONTROL フィルター名]** フィールドを使用する場合は、使用するフィルターを指定できます。
 
 **計算指標**
-Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL  タイトル ]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL Title] **[!UICONTROL Product Name （Count Distinct）]**&#x200B;があり、Lookerでは&#x200B;**[!UICONTROL Cm Product Name Count Distinct]**&#x200B;と表示されます。
+Customer Journey Analyticsで定義した計算指標は、計算指標に対して定義した[!UICONTROL &#x200B; タイトル &#x200B;]によって識別されます。 例えば、計算指標&#x200B;**[!UICONTROL Product Name （Count Distinct）]**&#x200B;には[!UICONTROL Title] **[!UICONTROL Product Name （Count Distinct）]**&#x200B;があり、Lookerでは&#x200B;**[!UICONTROL Cm Product Name Count Distinct]**&#x200B;と表示されます。
 
 **日付範囲**
 Customer Journey Analyticsで定義した日付範囲は、**[!UICONTROL Daterange Name]** フィールドの一部として使用できます。 **[!UICONTROL Daterange Name]** フィールドを使用する場合は、使用する日付範囲を指定できます。
 
 **カスタム変換**
-Lookerは、上に示すように、カスタムフィールドビルダーを使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション ](#single-dimension-ranked)のユースケースを実行します。
+Lookerは、上に示すように、カスタムフィールドビルダーを使用してカスタム変換機能を提供します。 例として、製品名が小文字でランク付けされた[単一ディメンション &#x200B;](#single-dimension-ranked)のユースケースを実行します。
 
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣カスタムフィールド]** セクションから：
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL カスタムDimension]**」を選択します。
