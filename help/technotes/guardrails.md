@@ -113,7 +113,7 @@ ht-degree: 12%
 
 {style="table-layout:auto"}
 
-Experience Platform [Real-time Customer Data Platform ガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)も参照してください。
+Experience Platform [Real-time Customer Data Platform ガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/guardrails/overview)も参照してください。
 
 
 ## データセットに自動有効期限を設定
@@ -160,7 +160,7 @@ Experience Platform [Real-time Customer Data Platform ガードレール &#x200B
 
 {style="table-layout:auto"}
 
-データ取り込み用のExperience Platform [&#x200B; ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)も参照してください。
+データ取り込み用のExperience Platform [&#x200B; ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja)も参照してください。
 
 
 ## 宛先データの書き出し
@@ -172,7 +172,7 @@ Experience Platform [Real-time Customer Data Platform ガードレール &#x200B
 
 {style="table-layout:auto"}
 
-Experience Platform [&#x200B; データセット書き出しガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)も参照してください
+Experience Platform [&#x200B; データセット書き出しガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/guardrails#dataset-exports)も参照してください
 
 
 ## データランディングゾーン
@@ -288,7 +288,7 @@ Experience Platform [&#x200B; データセット書き出しガードレール &
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、顧客設定、データボリューム、コンシューマアプリケーションによって異なります。 実際の処理時間は、多くの場合、より高速です。 具体的な契約条件およびSLAについては、Customer Journey Analyticsとの契約を参照してください。 詳しくは、Experience Platform [&#x200B; データ取り込み用ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)を参照してください。
+>以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、顧客設定、データボリューム、コンシューマアプリケーションによって異なります。 実際の処理時間は、多くの場合、より高速です。 具体的な契約条件およびSLAについては、Customer Journey Analyticsとの契約を参照してください。 詳しくは、Experience Platform [&#x200B; データ取り込み用ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja)を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|

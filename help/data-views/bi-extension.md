@@ -65,7 +65,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-1. Experience Platform[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
+1. Experience Platform[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
 
 1. 期限切れでない資格情報がCustomer Journey Analyticsの製品および製品プロファイルで使用できることを確認します。 組織で次の手順を実行するには、システム管理者である必要があります。
    1. ![App](/help/assets/icons/Apps.svg)から&#x200B;**[!UICONTROL Admin Console]**&#x200B;を選択します。

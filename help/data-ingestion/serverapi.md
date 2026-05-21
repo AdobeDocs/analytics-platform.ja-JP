@@ -291,7 +291,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 POST リクエストの例では、`{DATASTREAM_ID}`は先ほど設定したデータストリームの例の識別子を指します。 `{sandbox}`は、カスタムブラインドライトフィールドグループへのパスを識別するサンドボックスの一意の名前です。
 
-Edge Network Server APIの使用方法について詳しくは、[&#x200B; インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja)および[非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html)を参照してください。
+Edge Network Server APIの使用方法について詳しくは、[&#x200B; インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja)および[非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=ja)を参照してください。
 
 ## 接続の設定
 

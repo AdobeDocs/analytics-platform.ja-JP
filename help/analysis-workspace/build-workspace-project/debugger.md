@@ -29,7 +29,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->デバッガーを使用するには、**編集**&#x200B;または&#x200B;**コピー**&#x200B;[&#x200B; プロジェクト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)へのアクセス権が必要です。
+>デバッガーを使用するには、**編集**&#x200B;または&#x200B;**コピー**&#x200B;[&#x200B; プロジェクト &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-25744)へのアクセス権が必要です。
 >
 
 
