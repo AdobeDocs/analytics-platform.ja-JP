@@ -33,7 +33,7 @@ ht-degree: 2%
 
 これらの手順では、Adobe Experience Platform Data Collectionでタグを使用することを前提としています。 タグを使用しない場合は、これらのデータ収集方法をWeb SDKの手動実装に合わせて調整できます。
 
-詳しくは、[量子指標タグ拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)のドキュメントを参照してください。
+詳しくは、[量子指標タグ拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric)のドキュメントを参照してください。
 
 ## 手順1：量子指標セッション IDに対応するスキーマフィールドを作成する
 

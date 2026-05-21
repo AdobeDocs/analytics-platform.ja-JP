@@ -50,7 +50,7 @@ ht-degree: 4%
 
 派生フィールドは、データビューの一部であり、すべてのユーザーがバウンス率指標の定義を上書きまたは変更できるわけではないという利点があります。 その利点は限界も生み出しました。 データビューにアクセスできないユーザーは、派生フィールドを使用できず、バウンス率を定義するためにセグメントと計算指標に頼る必要があります。
 
-Customer Journey Analyticsでのバウンス率とバウンス率の計算方法について詳しくは、この[&#x200B; ブログ記事](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446)を参照してください。
+Customer Journey Analyticsでのバウンス率とバウンス率の計算方法について詳しくは、この[&#x200B; ブログ記事](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=ja)を参照してください。
 
 +++
 

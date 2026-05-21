@@ -125,11 +125,11 @@ f. 値として`50`を指定します。
 
 1 つのディメンションと 2 つの指標を利用することで、レポートの評価が容易になります。
 
-* [&#x200B; セッションタイプ &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) – このディメンションには、次の2つの値があります：[!UICONTROL 新規]と[!UICONTROL 戻り]。 [!UICONTROL 新規]行項目には、ユーザーが定義した最初のセッションであると判断されたセッションのすべての動作（つまり、このディメンションに対する指標）が含まれます。 その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。 指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
+* [&#x200B; セッションタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-reference) – このディメンションには、次の2つの値があります：[!UICONTROL 新規]と[!UICONTROL 戻り]。 [!UICONTROL 新規]行項目には、ユーザーが定義した最初のセッションであると判断されたセッションのすべての動作（つまり、このディメンションに対する指標）が含まれます。 その他すべては、[!UICONTROL 再来訪]行項目に含まれます（すべてがセッションに属すると仮定）。 指標がセッションに含まれていない場合は、このディメンションの「該当なし」バケットに入ります。
 
-* [初回セッション &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)。 初回セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションとして定義されます。
+* [初回セッション &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-reference)。 初回セッション指標は、レポートウィンドウ内で定義されたユーザーの最初のセッションとして定義されます。
 
-* [&#x200B; リターンセッション &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) リターンセッション指標は、ユーザーの初回セッション以外のセッションの数です。—>
+* [&#x200B; リターンセッション &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-reference) リターンセッション指標は、ユーザーの初回セッション以外のセッションの数です。—>
 
 コンポーネントにアクセスするには：
 
