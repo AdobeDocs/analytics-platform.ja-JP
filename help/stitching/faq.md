@@ -6,11 +6,20 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
 TQID: https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
 source-wordcount: 2373
@@ -328,6 +337,6 @@ curl -X PATCH \
 
 +++回答
 
-デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） ](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
+デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） &#x200B;](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
 
 +++
