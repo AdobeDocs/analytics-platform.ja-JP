@@ -21,10 +21,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 594
-ht-degree: 97%
+source-wordcount: 582
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,7 @@ ht-degree: 97%
 >* **管理者**：*この分析には、PersonID プロパティが必要です。 データビューにユーザー ID を追加してください。*
 >* **管理者以外**：*この分析には、PersonID プロパティが必要です。 データビューにユーザー ID を追加するには、Customer Journey Analytics 管理者にお問い合わせください。*
 
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/3435768/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

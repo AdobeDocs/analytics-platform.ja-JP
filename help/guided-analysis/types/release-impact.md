@@ -16,10 +16,10 @@ subfeature_v2:
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 545
-ht-degree: 97%
+source-wordcount: 532
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 ![リリース](/help/assets/icons/Release.svg) **[!UICONTROL リリースの影響]**&#x200B;分析では、特定の日付の前後の主要指標のパフォーマンスの比較が表示されます。 このレポートの横軸は時間間隔で、縦軸は目的の主要指標です。 グラフの中央にある縦棒グラフは、前後を比較する日付を表します。 この日付は通常、製品の更新やキャンペーンのローンチなど、測定対象となる製品の顕著な変更を表します。
 
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
+>[!VIDEO](https://video.tv.adobe.com/v/3423451/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

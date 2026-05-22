@@ -16,10 +16,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 766
-ht-degree: 98%
+source-wordcount: 758
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,7 @@ ht-degree: 98%
 * マトリックスの左下に表示される機能は、お客様の&#x200B;**影響が小さい**&#x200B;機能であり、広く採用されたり、頻繁に使用されたりしているわけではありません。
 * マトリックスの右下に表示される機能は、**1 回限り**&#x200B;の機能です。これらの機能は広く採用されていますが、頻繁には使用されません。
 
->[!BEGINSHADEBOX]
-
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; エンゲージメント分析](https://video.tv.adobe.com/v/3447468?captions=jpn){target="_blank"}を参照してください。
-
->[!ENDSHADEBOX]
+>[!VIDEO](https://video.tv.adobe.com/v/3447468/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

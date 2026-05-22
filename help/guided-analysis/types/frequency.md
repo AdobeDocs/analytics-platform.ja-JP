@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 671
-ht-degree: 98%
+source-wordcount: 659
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ![頻度](/help/assets/icons/Histogram.svg) **[!UICONTROL 頻度]**&#x200B;分析では、製品でイベントが発生する頻度に応じてイベントデータをグループ化します。 この分析の垂直軸には、イベントの頻度を表すバケットが含まれています。 横軸は、各バケットのユーザーまたはセッションの数を測定します。
 
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://video.tv.adobe.com/v/3435803/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

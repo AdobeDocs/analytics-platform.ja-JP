@@ -20,10 +20,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 98%
+source-wordcount: 685
+ht-degree: 100%
 
 ---
 
@@ -38,14 +38,9 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**&#x200B;分析では、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各手順を表します。 縦軸は、各手順でのユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL ファネル&#x200B;]**分析では、製品における重要なユーザージャーニーを視覚的に表現します。 横軸は、ユーザーが通過する必要がある各手順を表します。 縦軸は、各手順でのユーザーまたはセッションの割合を表します。 すべての手順は、最終的な順序で実行する必要がありますが、レポートウィンドウ内でいつでも実行できます。
 
->[!BEGINSHADEBOX]
-
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnelのフリクション分析](https://video.tv.adobe.com/v/3431281/?captions=jpn&quality=12&learn=onn){target="_blank"}を参照してください。
-
->[!ENDSHADEBOX]
-
+>[!VIDEO](https://video.tv.adobe.com/v/3431281/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 861
-ht-degree: 91%
+source-wordcount: 849
+ht-degree: 92%
 
 ---
 
@@ -39,8 +39,7 @@ ht-degree: 91%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL トレンド]**&#x200B;分析は、製品のパフォーマンスやユーザーの行動の推移に関する貴重なインサイトを提供します。 このレポートの横軸は時間間隔で、縦軸は目的のイベントの測定値です。
 
-
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://video.tv.adobe.com/v/3423442/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 

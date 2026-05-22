@@ -16,10 +16,10 @@ subfeature_v2:
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 692
-ht-degree: 97%
+source-wordcount: 678
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,7 @@ ht-degree: 97%
 
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 初回使用の影響]**&#x200B;分析では、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベント前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒グラフは、特定のユーザーが機能を初めて使用した 0 日目を表します。 ユーザーが必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって行われる可能性があるので、0 日目は個々のユーザーごとに異なる意味を持つ場合があります。
 
-
->[!VIDEO](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3423498/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 
