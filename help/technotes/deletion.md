@@ -22,9 +22,9 @@ subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 997
 ht-degree: 9%
 
 ---
@@ -51,6 +51,7 @@ Customer Journey Analyticsで接続、データビューまたはデータセッ
 
 | アクション | 影響 |
 | --- | --- |
+| [!UICONTROL Experience Platform]のデータセットから1つ以上のレコードを削除します | レコードは、接続設定の一部としてデータセットが定義されているCustomer Journey Analytics接続から削除されます。 |
 | [!UICONTROL Experience Platform]のデータセットを削除 | Experience Platformのデータセットからのデータフローは、そのデータセットを含むあらゆる接続に停止します。 そのデータセットのデータは、関連付けられた Customer Journey Analytics 接続から自動的に削除されます。 |
 | [!UICONTROL Experience Platform]のデータセットからバッチを削除します | バッチが[!UICONTROL Adobe Experience Platform] データセットから削除された場合、そのバッチを含む[!UICONTROL Customer Journey Analytics]接続から同じバッチが削除されます。 [!UICONTROL Customer Journey Analytics] には、[!UICONTROL Adobe Experience Platform] で削除されたバッチについて通知されます。 |
 | [!UICONTROL Experience Platform] **から[!UICONTROL Customer Journey Analytics]に取り込まれているバッチを削除します** | データセットにバッチが 1 つしかない場合、[!UICONTROL Customer Journey Analytics] にはそのバッチからのデータも、部分的なデータも表示されません。 取り込みは、ロールバックされます。 例えば、データセットに5つのバッチがあり、そのうちの3つが4番目のバッチが削除されたときに既に取り込まれている場合、それらの3つのバッチのデータは[!UICONTROL Customer Journey Analytics]に表示されます。 |
