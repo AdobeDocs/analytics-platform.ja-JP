@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
+source-git-commit: d95b7e2710fac7ce851c1c5ecba229a4221f08ac
 workflow-type: tm+mt
-source-wordcount: 1169
+source-wordcount: 1178
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="個人からアカウントへのステッチを有効にする"
->abstract="有効にすると、このデータセットはB2B アカウントのステッチングを使用します。 選択した人物IDは、個人とアカウントのデータセットに基づいてアカウント IDを検索するために使用されます。<br/>無効にした場合、このデータセットでは&#x200B;*not*&#x200B;がB2B アカウントのステッチを使用します。"
+>abstract="有効にすると、このデータセットはB2B アカウントのステッチングを使用します。 アカウント間データセットに基づいてアカウント IDを検索するために必要な&#x200B;**[!UICONTROL 人物ID]**&#x200B;を選択します。<br/>無効にした場合、このデータセットでは&#x200B;*not*&#x200B;がB2B アカウントのステッチを使用しており、代わりに必須の&#x200B;**[!UICONTROL アカウント ID]**&#x200B;を選択する必要があります。"
 >additional-url=""
 >additional-url=""
 
