@@ -377,7 +377,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
 >abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/> タグに依存しない実装の場合は、**[!UICONTROL 新規作成]**&#x200B;を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
 
 
 >[!CONTEXTUALHELP]
