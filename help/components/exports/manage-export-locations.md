@@ -6,20 +6,14 @@ feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
 TQID: https://experienceleague.adobe.com/fFXssOZV4eb8Yo1cADhBgXXte-umE4i5CtYVleEVD1w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1395
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +21,7 @@ ht-degree: 3%
 
 クラウド書き出しの場所とアカウントを表示、編集、削除できます。
 
-新しい場所の作成方法について詳しくは、[&#x200B; クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。
+新しい場所の作成方法について詳しくは、[ クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。
 
 ## 場所のフィルタリングと検索
 
@@ -41,7 +35,7 @@ ht-degree: 3%
 
 1. 「**フィルター**」アイコンを選択します。
 
-   ![場所ページのフィルターアイコン &#x200B;](assets/locations-filter-icon.png)
+   ![場所ページのフィルターアイコン ](assets/locations-filter-icon.png)
 
    次の条件でフィルタリングできます。
 
@@ -59,7 +53,7 @@ ht-degree: 3%
 
 1. 「[!UICONTROL **場所**]」タブを選択します。
 
-   ![場所ページ &#x200B;](assets/locations-manager.png)
+   ![場所ページ ](assets/locations-manager.png)
 
 1. （条件付き）システム管理者の場合は、[!UICONTROL **すべてのユーザーの場所を表示**] オプションを有効にして、組織内のすべてのユーザーが作成した場所を表示できます。
 
@@ -107,7 +101,7 @@ ht-degree: 3%
 
 1. 場所を削除ダイアログボックスで、削除を確認する前に、場所が書き出しに関連付けられていないことを確認します。
 
-   ![場所の削除確認ダイアログ &#x200B;](assets/delete-location-confirmation-dialog.png)
+   ![場所の削除確認ダイアログ ](assets/delete-location-confirmation-dialog.png)
 
 1. 確認するには、[!UICONTROL **削除**]&#x200B;をもう一度選択します。
 
@@ -121,7 +115,7 @@ ht-degree: 3%
 
 1. 「[!UICONTROL **場所アカウント**]」タブを選択します。
 
-   ![場所アカウント タブを表示するウィンドウをエクスポート &#x200B;](assets/account-add.png)
+   ![場所アカウント タブを表示するウィンドウをエクスポート ](assets/account-add.png)
 
 1. （条件付き）システム管理者の場合は、[!UICONTROL **すべてのユーザーのアカウントを表示**] オプションを有効にして、組織内のすべてのユーザーが作成したアカウントを表示できます。
 
@@ -139,7 +133,7 @@ ht-degree: 3%
 
 1. 「[!UICONTROL **場所アカウント**]」タブを選択します。
 
-   ![場所アカウント タブを表示するウィンドウをエクスポート &#x200B;](assets/account-add.png)
+   ![場所アカウント タブを表示するウィンドウをエクスポート ](assets/account-add.png)
 
 1. （条件付き）システム管理者の場合は、[!UICONTROL **すべてのユーザーのアカウントを表示**] オプションを有効にして、組織内のすべてのユーザーが作成したアカウントを表示できます。
 
@@ -151,7 +145,7 @@ ht-degree: 3%
 
 1. 「[!UICONTROL **場所アカウント**]」タブを選択します。
 
-   ![場所アカウント タブを表示するウィンドウをエクスポート &#x200B;](assets/account-add.png)
+   ![場所アカウント タブを表示するウィンドウをエクスポート ](assets/account-add.png)
 
 1. （条件付き）システム管理者の場合は、[!UICONTROL **すべてのユーザーのアカウントを表示**] オプションを有効にして、組織内のすべてのユーザーが作成したアカウントを表示できます。
 
@@ -163,13 +157,13 @@ ht-degree: 3%
 
 システム管理者は、ユーザーによるアカウントと場所の作成を制限したり、ユーザーが作成および使用できるアカウントの種類を制限したりできます。
 
-![管理者設定タブ &#x200B;](assets/locations-admin-settings.png)
+![管理者設定タブ ](assets/locations-admin-settings.png)
 
 ### ユーザーがアカウントを作成および編集できるかどうかを設定します
 
-デフォルトでは、組織内のすべてのユーザーは、[&#x200B; クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)で説明されているように、Customer Journey Analytics環境で作成したアカウントを作成および編集できます。
+デフォルトでは、組織内のすべてのユーザーは、[ クラウドエクスポートアカウントの設定](/help/components/exports/cloud-export-accounts.md)で説明されているように、Customer Journey Analytics環境で作成したアカウントを作成および編集できます。
 
-アカウントの作成をユーザーに制限できます。 この操作を行うと、ユーザーは既に作成したアカウントを引き続き使用できますが、編集することはできません。 [&#x200B; アカウントの削除](#delete-accounts)の説明に従って、ユーザーが作成したアカウントを削除できます。
+アカウントの作成をユーザーに制限できます。 この操作を行うと、ユーザーは既に作成したアカウントを引き続き使用できますが、編集することはできません。 [ アカウントの削除](#delete-accounts)の説明に従って、ユーザーが作成したアカウントを削除できます。
 
 アカウントの作成と編集を全ユーザーに制限するには、次の手順を実行します。
 
@@ -179,11 +173,11 @@ ht-degree: 3%
 
 1. 「[!UICONTROL **保存**]」を選択します。
 
-1. （オプション） [&#x200B; アカウントの削除](#delete-accounts)で説明しているように、ユーザーが作成したアカウントのうち、ユーザーが使用しないアカウントを削除します。
+1. （オプション） [ アカウントの削除](#delete-accounts)で説明しているように、ユーザーが作成したアカウントのうち、ユーザーが使用しないアカウントを削除します。
 
 ### ユーザーが場所を作成および編集できるかどうかを設定します
 
-デフォルトでは、組織内のすべてのユーザーは、[&#x200B; クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)の説明に従って、Customer Journey Analytics環境で作成した場所を作成および編集できます。
+デフォルトでは、組織内のすべてのユーザーは、[ クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)の説明に従って、Customer Journey Analytics環境で作成した場所を作成および編集できます。
 
 場所の作成をユーザーに制限できます。 この操作を行うと、ユーザーは作成済みの場所を引き続き使用できますが、編集することはできません。 [場所の削除](#delete-locations)の説明に従って、ユーザーが作成した場所を削除できます。
 
@@ -202,7 +196,7 @@ ht-degree: 3%
 ユーザーが表示するアカウントタイプは、次の状況で制限できます。
 
 * [新規アカウントの作成時](/help/components/exports/cloud-export-accounts.md)。
-* [&#x200B; テーブルの書き出しを使用してファイルを書き出す際に使用するアカウントを選択する場合](/help/analysis-workspace/export/export-cloud.md)。
+* [ テーブルの書き出しを使用してファイルを書き出す際に使用するアカウントを選択する場合](/help/analysis-workspace/export/export-cloud.md)。
 
 この節で説明するようにアカウントタイプを制限すると、制限するアカウントタイプのアカウントはユーザーには表示されなくなります。 つまり、そのタイプの新しいアカウントは作成できず、そのタイプの既存のアカウントは、テーブルの書き出しを使用してファイルを書き出す際に使用できません。
 
@@ -214,15 +208,15 @@ ht-degree: 3%
 
 スケジュールが、制限するタイプのアカウントにデータを送信するように既に設定されている場合、アカウントタイプを制限した後もスケジュールは実行され続け、データは引き続きアカウントに送信されます。 例えば、テーブルの完全な書き出しが、制限したアカウントタイプにデータを送信するようにスケジュールされている場合、スケジュールは引き続き実行されます。
 
-特定のタイプのアカウントがスケジュールされた書き出しで使用されないように確認する必要がある場合は、[&#x200B; アカウントタイプを制限](#limit-the-account-types-that-are-available-to-users)する前にアカウントを削除できます。
+特定のタイプのアカウントがスケジュールされた書き出しで使用されないように確認する必要がある場合は、[ アカウントタイプを制限](#limit-the-account-types-that-are-available-to-users)する前にアカウントを削除できます。
 
 アカウントを削除するには：
 
 1. スケジュールされた書き出しに使用されている、制限するアカウントタイプのアカウントを探します。
 
-1. 「[&#x200B; アカウントを削除](#delete-accounts)」の説明に従って、アカウントを削除します。
+1. 「[ アカウントを削除](#delete-accounts)」の説明に従って、アカウントを削除します。
 
-1. 次のセクションに進みます。[&#x200B; ユーザーが利用できるアカウントタイプを制限します](#limit-the-account-types-that-are-available-to-users)。
+1. 次のセクションに進みます。[ ユーザーが利用できるアカウントタイプを制限します](#limit-the-account-types-that-are-available-to-users)。
 
 #### ユーザーが利用できるアカウントタイプを制限する
 
