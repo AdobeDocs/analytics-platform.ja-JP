@@ -55,13 +55,13 @@ Customer Journey AnalyticsのMarketo Engage データについてレポートす
 
 +++ &#x200B;1. Marketo ソースデータフィールドをXDM ターゲットにマッピングする
 
-[人物](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
+[人物](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)および[アクティビティ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo)オブジェクトを、対応する XDM スキーマのターゲットフィールドにマッピングします。
 
 +++
 
 +++ &#x200B;2. Adobe Experience PlatformへのMarketo データの取り込み
 
-[Marketo Engage コネクタ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
+[Marketo Engage コネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、Marketo から Experience Platform にデータを取り込み、プラットフォームに接続したアプリケーションを使用してこのデータを最新に維持します。
 
 +++
 
