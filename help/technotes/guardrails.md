@@ -26,14 +26,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 12%
 
 ---
 
-# Customer Journey Analytics ガードレール
+# Customer Journey Analyticsのガードレール
 
 このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに関する制限について説明します。 ガードレール、スコープパラメーター、および使用権限については、[Customer Journey Analyticsの商品説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html)、Adobe Analytics アドオンの[商品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)、または[Customer Journey Analytics B2B editionの商品説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics-b2b.html)を参照してください。
 
@@ -86,7 +86,7 @@ ht-degree: 12%
 {style="table-layout:auto"}
 
 
-<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 
@@ -154,9 +154,9 @@ Experience Platform [Real-time Customer Data Platform ガードレール &#x200B
 | フィールド | 10,000 | システム強制ガードレール | データセットの行あたりのプロパティまたはフィールドの最大数。 |
 | 一意の文字列 | 1000万～ 10億 | システム強制ガードレール | ルックアップデータセットごとの一意のキーの最大数。 Customer Journey Analytics パッケージによって異なります（詳しくは、製品説明を参照）。<ul><li>財団：1000万。</li><li>選択：1億人。</li><li>Prime:2億5000万</li><li>Ultimate:10億</li><ul> |
 | 1人あたりの行 | 100 万 | システム強制ガードレール | 接続内の特定の月の一意のユーザーIDあたりの最大行数。 |
-| 1日あたりの行数 | 25億 | パフォーマンスガード | 接続の1日あたりの最大平均行数。 |
-| 1年あたりの接続あたりの行数 | 割り当てられたデータセンターによって異なります（詳しくは説明を参照） | パフォーマンスガード | 接続の年間行数の制限。 以下に示す制限は、2026年1月20日（PT）に有効になり、時間の経過に伴い増加して1接続あたりの行が増える可能性があります。 <p>行制限は、割り当てられたデータセンターによって次のように異なります。</p><ul><li>**米国。Azure（米国のお客様のデフォルト）**：約5,000億（月あたり約420億）</li><li>**米国。AWS（米国のお客様向け利用申請）**：約300億（月間約25億）</li><li>**アムステルダム**：約2,000億（月に約165億）</li><li>**その他のすべてのデータセンター**: 250億（月に約20億）</li></ul><p>これらの制限を超える可能性があり、パフォーマンスの低下の問題を回避したい場合は、Adobeのアカウントチームに連絡して、別の設定について話し合ってください。</p><p>企業は、AEP+Appsを導入する際に、データセンターを選択することができます。 通常、この決定は、各顧客のデータレジデンシー要件にもとづいて行われます。 データセンターを選択する際には、すべてのAEP+アプリのユースケース（Customer Journey Analyticsの行ボリュームだけでなく）を考慮する必要があります。</p><p>割り当てられたデータセンターの表示方法について詳しくは、[Customer Journey Analytics ホスティング場所](/help/technotes/data-centers.md)を参照してください。</p> |
-| 行サイズ | 2 | パフォーマンスガードレール / システムに応じたガードレール | Customer Journey Analyticsに取り込まれたデータの行あたりの平均サイズ（キロバイト単位）（ソフト制限）。 行サイズの静的制限は、Experience Platformでのデータ取り込みのガードレールによって決まります。 |
+| 1日あたりの行数 | 25億 | パフォーマンスガードレール | 接続の1日あたりの最大平均行数。 |
+| 1年あたりの接続あたりの行数 | 割り当てられたデータセンターによって異なります（詳しくは説明を参照） | パフォーマンスガードレール | 接続の年間行数の制限。 以下に示す制限は、2026年1月20日（PT）に有効になり、時間の経過に伴い増加して1接続あたりの行が増える可能性があります。 <p>行制限は、割り当てられたデータセンターによって次のように異なります。</p><ul><li>**米国。Azure（米国のお客様のデフォルト）**：約5,000億（月あたり約420億）</li><li>**米国。AWS（米国のお客様向け利用申請）**：約300億（月間約25億）</li><li>**アムステルダム**：約2,000億（月に約165億）</li><li>**その他のすべてのデータセンター**: 250億（月に約20億）</li></ul><p>これらの制限を超える可能性があり、パフォーマンスの低下の問題を回避したい場合は、Adobeのアカウントチームに連絡して、別の設定について話し合ってください。</p><p>企業は、AEP+Appsを導入する際に、データセンターを選択することができます。 通常、この決定は、各顧客のデータレジデンシー要件にもとづいて行われます。 データセンターを選択する際には、すべてのAEP+アプリのユースケース（Customer Journey Analyticsの行ボリュームだけでなく）を考慮する必要があります。</p><p>割り当てられたデータセンターの表示方法について詳しくは、[Customer Journey Analytics ホスティング場所](/help/technotes/data-centers.md)を参照してください。</p> |
+| 行サイズ | 2 | パフォーマンスガードレール / システムに従ったガードレール | Customer Journey Analyticsに取り込まれたデータの行あたりの平均サイズ（キロバイト単位）（ソフト制限）。 行サイズの静的制限は、Experience Platformでのデータ取り込みのガードレールによって決まります。 |
 
 {style="table-layout:auto"}
 
@@ -167,7 +167,7 @@ Experience Platform [Real-time Customer Data Platform ガードレール &#x200B
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| データの書き出し | 許可されたデータレイクストレージの合計数 | パフォーマンスガード | お客様は、宛先データセットの書き出しを使用して、データレイク内の顧客データを合計承認済みデータレイクストレージまで書き出すことができます。 |
+| データの書き出し | 許可されたデータレイクストレージの合計数 | パフォーマンスガードレール | お客様は、宛先データセットの書き出しを使用して、データレイク内の顧客データを合計承認済みデータレイクストレージまで書き出すことができます。 |
 | 利用可能なデータセット | プロファイルとイベント | システム強制ガードレール | Experience Platform UIで、ソース、Web SDK、Mobile SDK、Analytics Data Connector、およびAudience Managerを通じてデータを取り込むか収集した後に作成されたイベント、プロファイルまたはルックアップデータセット。 |
 
 {style="table-layout:auto"}
@@ -279,7 +279,7 @@ Experience Platform [&#x200B; データセット書き出しガードレール &
 
 | 名前 | 値 | 上限のタイプ | 説明 |
 |---|--:|---|---|
-| 報告可能なビジネスパーソン プロファイル（BPP）報告可能な行 | 100 万 | パフォーマンスガード | レポート可能なビジネスパーソンのプロファイル 1000件あたりの平均行。 |
+| 報告可能なビジネスパーソン プロファイル（BPP）報告可能な行 | 100 万 | パフォーマンスガードレール | レポート可能なビジネスパーソンのプロファイル 1000件あたりの平均行。 |
 
 
 
@@ -288,7 +288,7 @@ Experience Platform [&#x200B; データセット書き出しガードレール &
 
 >[!NOTE]
 >
->以下の処理時間は、契約上のサービスレベル契約（SLA）ではなく、ガードレールです。 待ち時間は、顧客設定、データボリューム、コンシューマアプリケーションによって異なります。 実際の処理時間は、多くの場合、より高速です。 具体的な契約条件およびSLAについては、Customer Journey Analyticsとの契約を参照してください。 詳しくは、Experience Platform [&#x200B; データ取り込み用ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja)を参照してください。
+>以下の処理時間は、SLA （サービスレベル契約）ではなく、ガードレールです。 待ち時間は、顧客設定、データボリューム、コンシューマアプリケーションによって異なります。 実際の処理時間は、多くの場合、より高速です。 具体的な契約条件およびSLAについては、Customer Journey Analyticsとの契約を参照してください。 詳しくは、Experience Platform [&#x200B; データ取り込み用ガードレール &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=ja)を参照してください。
 
 | データフロー | 予想遅延時間 |
 |---|---|

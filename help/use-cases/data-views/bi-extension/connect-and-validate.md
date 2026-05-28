@@ -18,9 +18,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
-source-wordcount: 2021
+source-wordcount: 1963
 ht-degree: 11%
 
 ---
@@ -77,15 +77,15 @@ ht-degree: 11%
       1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]**&#x200B;の値をコピーします。 有効期限のない資格情報[を使用している場合は、有効期限のない資格情報のパスワードを使用します。](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)
       1. **[!UICONTROL これらの設定を]**&#x200B;に適用するレベルを選択するドロップダウンメニューが、前に定義した&#x200B;**[!UICONTROL サーバー]**&#x200B;に設定されていることを確認します。
       1. **[!UICONTROL Connect]**&#x200B;を選択します。
-   1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BI デスクトップに次が表示されます。
+   1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。この取得には時間がかかる場合があります。取得すると、Power BI デスクトップに次が表示されます。
       ![Power BI Destkop Load Data](../assets/powerbi-navigator-load.png)
       1. 左側のパネルのリストから&#x200B;**[!UICONTROL public.cc_data_view]**&#x200B;を選択します。
       1. 選択肢は次の2つです。
          1. 「**[!UICONTROL 読み込み]**」を選択して続行し、設定を完了します。
-         1. 「**[!UICONTROL データを変換]**」を選択します。 オプションで設定の一部として変換を適用できるダイアログが表示されます。
+         1. 「**[!UICONTROL データを変換]**」を選択します。オプションで設定の一部として変換を適用できるダイアログが表示されます。
             ![Power BI Desktop Transform Data](../assets/powerbi-transform-data.png)
             * **[!UICONTROL 閉じて適用]**&#x200B;を選択します。
-   1. しばらくすると、**[!UICONTROL public.cc_data_view]**&#x200B;が&#x200B;**[!UICONTROL Data]** ペインに表示されます。 ディメンションと指標を表示するには、![ChevronRight](/help/assets/icons/ChevronRight.svg)を選択します。
+   1. しばらくすると、**[!UICONTROL public.cc_data_view]**&#x200B;が&#x200B;**[!UICONTROL Data]** ペインに表示されます。![ChevronRight](/help/assets/icons/ChevronRight.svg)を選択して、ディメンションと指標を表示します。
       ![Power BI Destkop Server データが読み込まれました](../assets/powerbi-navigator-loaded.png)
 
 
@@ -120,7 +120,7 @@ Power BI Desktopは、`FLATTEN` パラメーターに対して次のシナリオ
       ![&#x200B; クエリサービス資格情報](../assets/queryservice-credentials.png)
 
 1. Tableauを起動します。
-   1. **[!UICONTROL の下の左側のパネルから**&#x200B;[!UICONTROL &#x200B; PostgreSQL &#x200B;]&#x200B;**を選択して、サーバー]**&#x200B;に移動します。 利用できない場合は、**[!UICONTROL その他…]**&#x200B;を選択し、**[!UICONTROL インストール済みコネクタ]**&#x200B;から&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;を選択します。
+   1. **[!UICONTROL の下の左側のパネルから**&#x200B;[!UICONTROL &#x200B; PostgreSQL &#x200B;]&#x200B;**を選択して、サーバー]**&#x200B;に移動します。利用できない場合は、**[!UICONTROL その他…]**&#x200B;を選択し、**[!UICONTROL インストール済みコネクタ]**&#x200B;から&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;を選択します。
       ![Tableau コネクタ &#x200B;](../assets/tableau-connectors.png)
    1. **[!UICONTROL PostgreSQL]** ダイアログの「**[!UICONTROL 一般]**」タブ：
       ![Tableau サインインダイアログ &#x200B;](../assets/tableau-signin.png)
@@ -355,7 +355,7 @@ Jupyter Notebookは、`FLATTEN` パラメーターに対して次のシナリオ
 
 1. RStudioを起動します。
 1. 新しいR Markdown ファイルを作成するか、[このR Markdown ファイルの例](../assets/BI-Extension.Rmd.zip)をダウンロードします。
-1. 最初のチャンクに、` ` ``{r} ` ～ ` `` ` `の間に次のステートメントを入力します。 ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから値をコピーして、`host`、`dbname`、`user`など、様々なパラメーターに必要な値に貼り付けます。 次に例を示します。
+1. 最初のチャンクに、次のステートメントを入力します。 ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、Experience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから値をコピーして、`host`、`dbname`、`user`など、様々なパラメーターに必要な値に貼り付けます。 次に例を示します。
 
    ```R
    library(rstudioapi)
@@ -376,7 +376,7 @@ Jupyter Notebookは、`FLATTEN` パラメーターに対して次のシナリオ
 
    ![RStudio設定ステップ 1](../assets/rstudio-config-step1.png)
 
-1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` `の間に次のステートメントを入力します。
+1. 新しいチャンクを作成し、次のステートメントを入力します。
 
    ```R
    con <- dbConnect(
@@ -393,7 +393,7 @@ Jupyter Notebookは、`FLATTEN` パラメーターに対して次のシナリオ
 1. チャンクを実行します。 接続が成功した場合は、出力が表示されません。
 
 
-1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` `の間に次のステートメントを入力します。
+1. 新しいチャンクを作成し、次のステートメントを入力します。
 
    ```R
    views <- dbListTables(con)
@@ -403,7 +403,7 @@ Jupyter Notebookは、`FLATTEN` パラメーターに対して次のシナリオ
 1. チャンクを実行します。 `character(0)`が唯一の出力として表示されます。
 
 
-1. 新しいチャンクを作成し、` ` `` {r} ` ～ ` `` ` `の間に次のステートメントを入力します。
+1. 新しいチャンクを作成し、次のステートメントを入力します。
 
    ```R
    glimpse(dv)
