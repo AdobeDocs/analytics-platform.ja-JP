@@ -7,23 +7,11 @@ role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
 autotag-review: '2026-05-19T09:47:24.777Z'
 TQID: 'https://experienceleague.adobe.com/8Xq8mUchtogMLiEuPVv-DWpkWtD5ubJGSQm2SRaZmps'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24bid: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 726
@@ -33,7 +21,7 @@ ht-degree: 16%
 
 # 共有デバイス
 
-この記事では、共有デバイスに関するコンテキストと、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md)を使用して共有デバイスからのデータを処理および軽減する方法、およびクエリサービスを使用してデータ内の共有デバイスの露出を把握する方法について説明します。
+この記事では、共有デバイスに関するコンテキストと、[ ステッチ ](/help/stitching/overview.md)を使用して共有デバイスからのデータを処理および軽減する方法、およびクエリサービスを使用してデータ内の共有デバイスの露出を把握する方法について説明します。
 
 ## 共有デバイスとは？
 
@@ -61,14 +49,14 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## 人物中心の分析を改善
 
-このステッチプロセスでは、選択した人物識別子（データの例では電子メール）を、その識別子が存在しないイベントに追加することで、このアトリビューションの問題に対処します。 接続では、デバイス IDと人物IDのマッピングを利用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、人物を中心に据えます。 詳しくは、[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md)を参照してください。
+このステッチプロセスでは、選択した人物識別子（データの例では電子メール）を、その識別子が存在しないイベントに追加することで、このアトリビューションの問題に対処します。 接続では、デバイス IDと人物IDのマッピングを利用して、認証済みトラフィックと未認証トラフィックの両方を分析で使用できるようにし、人物を中心に据えます。 詳しくは、[ ステッチ ](/help/stitching/overview.md)を参照してください。
 
 ステッチでは、last-auth アトリビューションまたはdevice-split アトリビューションを使用して、共有デバイスデータにアトリビューションを付けることができます。 未認証のイベントを既知のユーザーに結びつけるあらゆる試みは、決定論的ではありません。
 
 
 ### Last-auth attribution
 
-Last-authは、共有デバイスのすべての不明なアクティビティを、最後に認証されたユーザーに属性します。 Experience Platform Identity Serviceは、last-auth アトリビューションに基づいてグラフベースを構築するため、グラフベースの合成に使用されます。 詳細については、[ID グラフ リンク ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)を参照してください。
+Last-authは、共有デバイスのすべての不明なアクティビティを、最後に認証されたユーザーに属性します。 Experience Platform Identity Serviceは、last-auth アトリビューションに基づいてグラフベースを構築するため、グラフベースの合成に使用されます。 詳細については、[ID グラフ リンク ルール ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)を参照してください。
 
 ステッチでlast-auth アトリビューションを使用する場合、ステッチ IDは次の表のように解決されます。
 

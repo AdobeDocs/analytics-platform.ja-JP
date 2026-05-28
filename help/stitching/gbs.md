@@ -7,19 +7,11 @@ role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1899
@@ -31,7 +23,7 @@ ht-degree: 70%
 
 グラフベースの合成では、イベントデータセット、そのデータセットの永続的ID （cookie）、およびID グラフから目的の人物ID名前空間を指定します。 グラフベースの合成では、任意のイベントでCustomer Journey Analytics data analysisで個人ID情報を使用できるようにします。 永続的IDは、Experience Platform ID サービスからID グラフをクエリして、指定された名前空間からユーザーIDを取得するために使用されます。
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 
 ![グラフベースのステッチ](/help/stitching/assets/gbs.png)
@@ -224,7 +216,7 @@ ht-degree: 70%
    - 関連IDを保持するすべてのデータセットは、ID グラフデータの取り込みに[有効にする必要があります](faq.md#enable-a-dataset-for-the-identity-service)。 この有効化により、受信IDがすべての必要なソースから時間の経過とともにグラフに追加されます。
    - 既にReal-Time Customer Data ProfileやAdobe Journey Optimizerを使用している場合は、グラフを既にある程度設定しておく必要があります。<br/> グラフベースのステッチで有効になっているデータセットに過去のステッチ バックフィルも必要な場合、グラフには目的のステッチ結果を取得するために、ピリオド全体の過去のIDが既に含まれている必要があります。
 - グラフベースのステッチを使用する場合、イベントデータセットがID グラフに貢献することを想定している場合は、[ID サービスのデータセットを有効にする](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)必要があります。
-- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
+- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)として[定義する必要があります。
 
 >[!NOTE]
 >
