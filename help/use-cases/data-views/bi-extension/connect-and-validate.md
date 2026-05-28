@@ -74,7 +74,7 @@ ht-degree: 11%
       1. **[!UICONTROL OK]**&#x200B;を選択します。
    1. **[!UICONTROL PostgreSQL データベース]** - **[!UICONTROL データベース]** ダイアログで、次の操作を行います。
       ![PowerBI デスクトップ ユーザーとパスワード &#x200B;](../assets/powerbi-userpassword.png)
-      1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]**&#x200B;の値をコピーします。 有効期限のない資格情報[を使用している場合は、有効期限のない資格情報のパスワードを使用します。](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)
+      1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]** フィールドのExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL ユーザー名]**&#x200B;および&#x200B;**[!UICONTROL パスワード]**&#x200B;の値をコピーします。 有効期限のない資格情報[を使用している場合は、有効期限のない資格情報のパスワードを使用します。](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)
       1. **[!UICONTROL これらの設定を]**&#x200B;に適用するレベルを選択するドロップダウンメニューが、前に定義した&#x200B;**[!UICONTROL サーバー]**&#x200B;に設定されていることを確認します。
       1. **[!UICONTROL Connect]**&#x200B;を選択します。
    1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。この取得には時間がかかる場合があります。取得すると、Power BI デスクトップに次が表示されます。
@@ -129,7 +129,7 @@ Power BI Desktopは、`FLATTEN` パラメーターに対して次のシナリオ
       1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL データベース]**&#x200B;をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL データベース]**&#x200B;にコピーして貼り付けます。 貼り付ける値に`%3FFLATTEN`を追加します。 例：`prod:cja%3FFLATTEN`。
       1. 「**[!UICONTROL 認証]**」ドロップダウンメニューから「**[!UICONTROL ユーザー名とパスワード]**」を選択します。
       1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL ユーザー名]**&#x200B;をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL ユーザー名]**&#x200B;にコピーして貼り付けます。
-      1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL パスワード]**&#x200B;をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL パスワード]**&#x200B;にコピーして貼り付けます。 有効期限のない資格情報[を使用している場合は、有効期限のない資格情報のパスワードを使用します。](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)
+      1. ![&#x200B; コピー](/help/assets/icons/Copy.svg)を使用して、**[!UICONTROL パスワード]**&#x200B;をExperience Platform **[!UICONTROL クエリ]** **[!UICONTROL 期限切れ資格情報]** パネルから&#x200B;**[!UICONTROL パスワード]**&#x200B;にコピーして貼り付けます。 有効期限のない資格情報[を使用している場合は、有効期限のない資格情報のパスワードを使用します。](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)
       1. 「**[!UICONTROL SSLを必要とする]**」がオンになっていることを確認します。
       1. 「**[!UICONTROL ログイン]**」を選択します。
 
