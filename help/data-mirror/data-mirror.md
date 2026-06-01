@@ -26,10 +26,10 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
 workflow-type: tm+mt
-source-wordcount: 447
-ht-degree: 4%
+source-wordcount: 496
+ht-degree: 3%
 
 ---
 
@@ -62,6 +62,13 @@ Data Mirror[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-pla
 >Data Mirrorは現在ベータ版で、Customer Journey Analyticsでの分析にchange data capture （CDC）を使用して一部のデータウェアハウスから取得したデータの同期をサポートしています。<br/>この機能は、2026年6月18日（PT）にCustomer Journey Analyticsで一般公開されます。 適用される製品説明を参照して、今後の年間取り込み制限消費にどのような影響を与えるかを確認してください。 Data Mirrorがベータ版から一般提供に移行しても、引き続きこの機能にアクセスできます。
 >
 
+>[!IMPORTANT]
+>
+>Customer Journey Analytics用のData Mirrorを目的としてExperience Platformで作成したchange data capture データセットは、Real-Time Customer Data PlatformやJourney Optimizerなどの他のExperience Platform ソリューションで再利用しないでください。 これらのソリューションに同じデータを使用する場合は、同じデータを使用して代替データセットを作成することを検討してください。
+>
+
+
+
 選択したデータウェアハウスネイティブソリューション（[!DNL Azure Databricks]、[!DNL Google BigQuery]、および[!DNL Snowflake]）に対して、Customer Journey Analytics用Experience Platform Data Mirrorを使用できます。 Customer Journey Analytics バージョンのExperience Platform Data Mirrorでは、次のアプリケーションまたはコンポーネントを適切に設定する必要があります。
 
 * [データウェアハウスネイティブソリューション](datawarehouse.md)
@@ -71,5 +78,5 @@ Data Mirror[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-pla
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
->[Data Mirror （Experience Platform ドキュメント）](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->[リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
+>[&#x200B; リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
