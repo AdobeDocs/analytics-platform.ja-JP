@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
 workflow-type: tm+mt
 source-wordcount: 1178
-ht-degree: 2%
+ht-degree: 25%
 
 ---
 
@@ -58,37 +58,37 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 
 接続レベルでB2B アカウントステッチを有効にして設定し、その接続内の個々のイベントデータセットに対するアカウントステッチを有効にします。
 
-### B2B ステッチ設定の設定 {#configure-b2b-stitching-settings}
+### B2B ステッチの設定 {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
->title="B2B アカウントのステッチングの設定"
->abstract="「**[!UICONTROL B2B ステッチ設定を開く]**」を選択して、B2B アカウントのステッチを設定します。 接続がまだ保存されていない場合、設定には&#x200B;**[!UICONTROL _未保存の変更_]**&#x200B;というラベルが付けられます。"
+>title="B2B アカウントのステッチの設定"
+>abstract="「**[!UICONTROL B2B ステッチ設定を開く]**」を選択して、B2B アカウントのステッチを設定します。 接続がまだ保存されていない場合、設定には「**[!UICONTROL _保存されていない変更_]**」というラベルが付けられます。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
->title="人物識別子の名前空間"
->abstract="任意の人物IDを昇格させたい人物ID名前空間（電子メールなど）を選択します。"
+>title="ユーザー識別子の名前空間"
+>abstract="任意のユーザー ID の昇格先にしたいユーザー識別子の名前空間（電子メールなど）を選択します。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
->title="個人から企業へのデータセット"
->abstract="個人IDをアカウント IDにマッピングするルックアップデータセットを選択します。"
+>title="ユーザーとアカウントをマッピングするデータセット"
+>abstract="ユーザー ID をアカウント ID にマッピングする参照データセットを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
 >title="ユーザー"
->abstract="ユーザーIDを含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。"
+>abstract="ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドは ID としてマークする必要があります。また、「**[!UICONTROL アカウント]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="アカウント"
->abstract="アカウント IDを含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。"
+>abstract="アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、「**[!UICONTROL ユーザー]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="開始時間"
->abstract="個人とアカウントの関係がいつアクティブになったかを示すタイムスタンプフィールドを選択します。"
+>abstract="ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。"
 >additional-url=""
 >additional-url=""
 
@@ -118,9 +118,9 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
       | フィールド | 必須 | 説明 |
       |---|:---:|---|
       | **[!UICONTROL アカウント データセットへの人物]** | ![必須](/help/assets/icons/Required.svg) | 個人をアカウントにマッピングするルックアップ（レコードまたは非時系列データセット）を選択します。 |
-      | **[!UICONTROL ユーザー]** | ![必須](/help/assets/icons/Required.svg) | ユーザーIDを含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
-      | **[!UICONTROL アカウント]** | ![必須](/help/assets/icons/Required.svg) | アカウント IDを含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
-      | **開始時間** | | 個人とアカウントの関係がいつアクティブになったかを示すタイムスタンプフィールドを選択します。 |
+      | **[!UICONTROL ユーザー]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドは ID としてマークする必要があります。また、「**[!UICONTROL アカウント]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。 |
+      | **[!UICONTROL アカウント]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、「**[!UICONTROL ユーザー]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。 |
+      | **開始時間** | | ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。 |
 
       >[!NOTE]
       >
@@ -131,13 +131,13 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
    1. **[!UICONTROL _未保存の変更_]** インジケーターは、[接続を保存](#save)するまで、**B2B ステッチ設定を開く** ボタンの横に表示されます。
 
 
-### イベントデータセットのB2B合成を有効にする
+### イベントデータセットで B2B ステッチを有効にする
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
->title="個人からアカウントへのステッチを有効にする"
->abstract="有効にすると、このデータセットはB2B アカウントのステッチングを使用します。 アカウント間データセットに基づいてアカウント IDを検索するために必要な&#x200B;**[!UICONTROL 人物ID]**&#x200B;を選択します。<br/>無効にした場合、このデータセットでは&#x200B;*not*&#x200B;がB2B アカウントのステッチを使用しており、代わりに必須の&#x200B;**[!UICONTROL アカウント ID]**&#x200B;を選択する必要があります。"
+>title="ユーザーとアカウントのステッチを有効にする"
+>abstract="有効にすると、このデータセットは B2B アカウントのステッチを使用します。 ユーザーとアカウントのデータセットに基づいてアカウント ID を検索するために必要な&#x200B;**[!UICONTROL ユーザー ID]**&#x200B;を選択します。<br/>無効になっている場合、このデータセットでは B2B アカウントのステッチを使用&#x200B;*しない*&#x200B;ため、代わりに必要な&#x200B;**[!UICONTROL アカウント ID]** を選択する必要があります。"
 >additional-url=""
 >additional-url=""
 

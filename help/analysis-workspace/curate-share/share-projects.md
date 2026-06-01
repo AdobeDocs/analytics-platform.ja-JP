@@ -28,7 +28,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 2181
+source-wordcount: 2168
 ht-degree: 89%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 89%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**&#x200B;を選択します。
 保存されていない変更がある場合は、まずプロジェクトを保存するように求められます。
 
    共有プロジェクトダイアログボックスが表示されます。 ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
@@ -152,8 +152,8 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="CX Enterprise認証が必要"
->abstract="組織では、このリンクを使用するには、ユーザーがCX Enterpriseにログインする必要があります。"
+>title="CX Enterprise 認証が必要"
+>abstract="ユーザーがこのリンクを使用するには、組織から CX Enterprise にログインするよう求められます。"
 
 
 Customer Journey Analytics にアクセスできないユーザーに Analysis Workspace プロジェクトへの[読み取り専用アクセス権](/help/analysis-workspace/curate-share/view-only-projects.md)を付与できます。 この付与するアクセス権は、次のユーザーを含めることができます。

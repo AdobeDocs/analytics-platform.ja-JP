@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -376,8 +376,8 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
->abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/> タグに依存しない実装の場合は、**[!UICONTROL 新規作成]**&#x200B;を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
+>abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/>タグに依存しない実装の場合は、「**[!UICONTROL 新規作成]**」を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="コンテンツ分析のための JavaScript ライブラリ"
 
 
 >[!CONTEXTUALHELP]
