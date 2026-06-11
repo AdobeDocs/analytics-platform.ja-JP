@@ -24,7 +24,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
+source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
 workflow-type: tm+mt
 source-wordcount: 5863
 ht-degree: 93%
@@ -485,7 +485,7 @@ Customer Journey Analytics から接続を削除するには：
 >abstract="今月の過去13か月間に利用可能な月別メディアの合計数は、前月と比較してパーセンテージが変化します。  例えば、2024年2月1日には、2023年1月から2024年1月までのイベントタイムスタンプで利用可能なメディアの合計数が表示されます。"
 
 >[!CONTEXTUALHELP]
->id="△△ "
+>id="connections_breakdown_monthlymediastarts"
 >title="月次メディア開始"
 >abstract="月次メディアの開始は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
 
