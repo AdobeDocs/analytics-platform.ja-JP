@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
 workflow-type: tm+mt
-source-wordcount: 5351
-ht-degree: 97%
+source-wordcount: 5865
+ht-degree: 93%
 
 ---
 
@@ -433,6 +433,63 @@ Customer Journey Analytics から接続を削除するには：
 >abstract="累積レポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
 
 
+>[!CONTEXTUALHELP]
+>id="connections_extendeddatacapacitiyrows"
+>title="拡張データ容量行"
+>abstract="今月の 13 か月を超える期間で使用可能な行の合計数と、先月と比較した変化率。 例えば、2024年2月1日（PT）の数値は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_extendeddatacapacityrows"
+>title="拡張データ容量行"
+>abstract="拡張データ容量の行は、集計合計ではなくスナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_aca_corereportablerows"
+>title="Content Analytics core reportable rows"
+>abstract="現在の月の過去13か月間に利用可能なContent Analytics固有の行の合計数。前月と比較して割合が変化しています。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_aca_monthlyreportablerows"
+>title="月別Content Analytics行"
+>abstract="レポートに使用できるContent Analytics行数を追跡します。 レポート可能行数とは、取り込まれた行数から、取り込み中にスキップおよび削除された行数を除いたものです。 レポート可能行数は、課金とデータ使用量の主要な指標として機能します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_corereportablerows"
+>title="Content Analytics core reportable rows"
+>abstract="Content Analytics コアのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_correportablebpp"
+>title="コアビジネスパーソンのプロファイルのレポート可能な行"
+>abstract="当月の過去13か月間に利用可能なビジネスプロファイルのレポート可能な行の合計数で、前月と比較してパーセンテージが変化します。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_historicalreportablebpp"
+>title="過去のビジネスプロファイルのレポート可能な行"
+>abstract="当月の13か月を超える期間に利用可能なビジネスプロファイルのレポート可能な行の合計数で、前月と比較して割合が変化しています。 例えば、2024年2月1日（PT）の数値は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_corereportablebpp"
+>title="コアビジネスプロファイルのレポート可能な行"
+>abstract="コアビジネスプロファイルのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_historicalreportablebpp"
+>title="過去のビジネスプロファイルのレポート可能な行"
+>abstract="過去のビジネスプロファイル レポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+>[!CONTEXTUALHELP]
+>id="connections_monthlymediastarts"
+>title="月次メディア開始"
+>abstract="今月の過去13か月間に利用可能な月別メディアの合計数は、前月と比較してパーセンテージが変化します。  例えば、2024年2月1日には、2023年1月から2024年1月までのイベントタイムスタンプで利用可能なメディアの合計数が表示されます。"
+
+>[!CONTEXTUALHELP]
+>id="△△ "
+>title="月次メディア開始"
+>abstract="月次メディアの開始は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+
+
 [!UICONTROL 使用状況]インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
 
 このインターフェイスは、Customer Journey Analytics の使用状況が契約上の合意事項に準拠しているかどうかを判断するのに役立ちます。 監視目的に加えて、使用状況インターフェイスを使用して、Customer Journey Analytics ライセンスの更新を計画することもできます。
@@ -520,6 +577,6 @@ Customer Journey Analytics から接続を削除するには：
 
 >[!MORELIKETHIS]
 >
->[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)チュートリアル。
->[Customer Journey Analytics の使用状況の管理](/help/technotes/estimate-usage.md)
+>[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) チュートリアル。
+>[Customer Journey Analyticsの使用状況を管理](/help/technotes/estimate-usage.md)
 >
