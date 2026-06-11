@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
+source-wordcount: 5863
 ht-degree: 93%
 
 ---
@@ -62,9 +62,9 @@ ht-degree: 93%
 
 **[!UICONTROL リスト]**&#x200B;インターフェイスは、接続のデフォルトのインターフェイスです。 選択されていない場合は、「**[!UICONTROL リスト]**」タブを選択してインターフェイスにアクセスします。
 
-**[!UICONTROL リスト]**&#x200B;インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
-
-![リストビュー](assets/list-view.png)
+**[!UICONTROL List]** インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
+△
+![&#x200B; リストビュー](assets/list-view.png)
 
 テーブルでは、次の列またはアイコンを使用できます。
 
@@ -434,7 +434,7 @@ Customer Journey Analytics から接続を削除するには：
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="拡張データ容量行"
 >abstract="今月の 13 か月を超える期間で使用可能な行の合計数と、先月と比較した変化率。 例えば、2024年2月1日（PT）の数値は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。"
 
@@ -460,7 +460,7 @@ Customer Journey Analytics から接続を削除するには：
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="コアビジネスパーソンのプロファイルのレポート可能な行"
 >abstract="当月の過去13か月間に利用可能なビジネスプロファイルのレポート可能な行の合計数で、前月と比較してパーセンテージが変化します。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
 
