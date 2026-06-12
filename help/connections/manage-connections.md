@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
+source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
 workflow-type: tm+mt
-source-wordcount: 5863
-ht-degree: 93%
+source-wordcount: 5831
+ht-degree: 91%
 
 ---
 
@@ -420,17 +420,17 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="コアのレポート可能な行数"
->abstract="コアレポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="コアレポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="履歴のレポート可能な行数"
->abstract="履歴レポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="履歴レポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="累積レポート可能行数"
->abstract="累積レポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="累積レポート可能行数はスナップショット値であり、集計合計ではありません。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 
 >[!CONTEXTUALHELP]
@@ -441,7 +441,7 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="拡張データ容量行"
->abstract="拡張データ容量の行は、集計合計ではなくスナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="拡張データ容量の行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -456,7 +456,7 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Content Analytics core reportable rows"
->abstract="Content Analytics コアのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="Content Analytics コアのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 
 >[!CONTEXTUALHELP]
@@ -472,12 +472,12 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="コアビジネスプロファイルのレポート可能な行"
->abstract="コアビジネスプロファイルのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="コアビジネスプロファイルのレポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="過去のビジネスプロファイルのレポート可能な行"
->abstract="過去のビジネスプロファイル レポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="過去のビジネスプロファイル レポート可能な行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -487,7 +487,7 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="月次メディア開始"
->abstract="月次メディアの開始は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 お客様が 1 月から 3 月を選択した場合、値は 3 月のスナップショットを反映します。"
+>abstract="月次メディアの開始は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
 
 
 [!UICONTROL 使用状況]インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
