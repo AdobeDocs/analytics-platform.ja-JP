@@ -21,16 +21,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 685
-ht-degree: 85%
+source-wordcount: 704
+ht-degree: 83%
 
 ---
 
 # Google Analytics データに関するレポート
 
-Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。
+Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。 Customer Journey AnalyticsのGA4 レポートに相当する項目の包括的なルックアップについては、「[Customer Journey AnalyticsのGA4 レポート &#x200B;](/help/getting-started/ga-to-cja/reports.md)」を参照してください。
 
 ## web データとアプリデータをデータセットとして組み合わせた視覚化
 
