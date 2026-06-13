@@ -5,26 +5,25 @@ exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
 TQID: https://experienceleague.adobe.com/C9rt1pyuM6ykLUlXCHc0ITwGeGcuLw6qisXnJxwX4uU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 303
-ht-degree: 79%
+source-wordcount: 342
+ht-degree: 70%
 
 ---
 
 # Google Analytics からデータを移行
+
+>[!BEGINSHADEBOX]
+
+このガイドでは、管理者向けのデータ移行について説明します。 Customer Journey AnalyticsでGA4 レポートを見つけたいアナリストの場合は、[Google Analytics 4からCustomer Journey Analytics](/help/getting-started/ga-to-cja/home.md)への移行および[Customer Journey AnalyticsでのGA4 レポート ](/help/getting-started/ga-to-cja/reports.md)を参照してください。
+
+>[!ENDSHADEBOX]
 
 Customer Journey Analytics を初めて使用する場合、組織が Google Analytics などの別の Analytics プラットフォームに既存のデータを持っている可能性があります。 これらの包括的な手順に従って、そのデータを Adobe Experience Platform に移動し、Customer Journey Analytics でレポートを表示できるようにします。
 
