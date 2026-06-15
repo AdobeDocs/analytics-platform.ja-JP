@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
+source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5831
+source-wordcount: 5868
 ht-degree: 91%
 
 ---
@@ -488,6 +488,13 @@ Customer Journey Analytics から接続を削除するには：
 >id="connections_breakdown_monthlymediastarts"
 >title="月次メディア開始"
 >abstract="月次メディアの開始は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="月別Content Analytics行"
+>abstract="月次Content Analytics行は、集計された合計ではなく、スナップショット値です。 これらの値は、選択した日付範囲の最後の月に基づいて動的に更新されます。 値は、選択した月のスナップショットを反映します。"
+
 
 
 [!UICONTROL 使用状況]インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
