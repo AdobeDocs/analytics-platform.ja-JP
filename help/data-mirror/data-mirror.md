@@ -7,11 +7,24 @@ role: Admin
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
 source-wordcount: 455
@@ -37,7 +50,7 @@ Data Mirrorには、データベースの同期に必要な次の機能が用意
 
 Data Mirrorを使用すると、ソースシステムから変更を直接取り込み、スキーマの整合性を適用し、データを分析、ジャーニーオーケストレーション、コンプライアンスワークフローに使用できます。 Data Mirrorでは、既存のデータベースモデルを直接ミラーリングできるので、複雑なアップストリーム ETL プロセスを排除して、実装を迅速化できます。 この排除は、削除とデータハイジーン操作の正確な制御を通じて、データガバナンスを強化できます。
 
-Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}に関する[Experience Platform ドキュメントも参照してください。
+Data Mirror[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}に関するExperience Platform ドキュメントも参照してください。
 
 ## Data Mirror for Customer Journey Analytics
 
@@ -62,5 +75,5 @@ Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
->[Data Mirror（Experience Platform ドキュメント） ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[ リレーショナルスキーマ （Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[&#x200B; リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
