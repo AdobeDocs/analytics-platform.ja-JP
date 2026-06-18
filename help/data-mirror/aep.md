@@ -67,9 +67,9 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 
 サポートされているデータウェアハウスネイティブソリューションに対する認証については、関連するExperience Platformのドキュメントを参照してください。
 
-* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### データを選択
@@ -105,5 +105,5 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
->[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
 >[&#x200B; リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
