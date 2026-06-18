@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 0%
+source-wordcount: 623
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Customer Journey Analytics B2B editionのライセンスとプロビジョニン
 
 既存の実装にB2B機能を導入するには、次の手順に従う必要があります。
 
-1. B2B データをモデル化する： Customer Journey Analytics B2B editionは、少なくともアカウントベースの時系列イベントデータを想定しており、追加のプロファイルデータやルックアップレコードデータを活用できます。 アカウントデータ、購買グループデータ、商談データ、マーケティングリストメンバーデータなど、さまざまなデータソースを選択できます。
+1. B2B データをモデル化する： [Adobe Experience Data Model （XDM） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して、B2B データを標準化し、B2B データのスキーマを定義できます。<br/> スキーマは、Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供されている標準クラスに基づいて作成するか、独自のカスタムクラスとスキーマを使用できます。 [&#x200B; ユースケース &#x200B;](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。 <br/>Customer Journey Analytics B2B editionは、少なくともアカウントベースの時系列イベントデータを想定しており、追加のプロファイルまたはルックアップレコードデータのメリットを享受できます。 アカウントデータ、購買グループデータ、商談データ、マーケティングリストメンバーデータなど、さまざまなデータソースを選択できます。
 
    * プライマリアカウント識別子（アカウント ID）として使用する識別子を定義します。 多くの場合、既存のCRMまたはその他のツール（例：Demandbase）を使用すると、その識別子を判断できます。
    * 使用する予定のその他のB2B データの追加IDを特定します。グローバルアカウント識別子、商談識別子、購買グループ識別子、人物識別子です。

@@ -4,7 +4,6 @@ description: Experience Platform Data Mirror Customer Journey Analytics向けの
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="ベータ版"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
 autotag-review: '2026-05-19T08:56:46.637Z'
 TQID: 'https://experienceleague.adobe.com/A3GkkNVAO9qpbOqCrZnf6PNJfRuwMaodJVOOuSRg0w8'
@@ -22,16 +21,14 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 442
+source-wordcount: 441
 ht-degree: 0%
 
 ---
 
 # データウェアハウスネイティブソリューションの設定
-
-{{release-limited-testing}}
 
 Customer Journey Analytics用Experience Platform Data Mirrorをサポートするには、サポートされている3つのデータウェアハウスネイティブソリューション（[[!DNL Azure Databricks]](#azure-databricks)、[[!DNL Google BigQuery]](#google-bigquery)、[[!DNL Snowflake]](#snowflake)）から使用するデータを変更データキャプチャ用に有効にする必要があります。
 

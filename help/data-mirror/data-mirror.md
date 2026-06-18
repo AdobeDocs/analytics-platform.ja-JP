@@ -4,7 +4,6 @@ description: データウェアハウスネイティブソリューションとC
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="ベータ版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
@@ -26,16 +25,14 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 496
+source-wordcount: 455
 ht-degree: 3%
 
 ---
 
 # Experience Platform Data Mirrorの概要
-
-{{release-limited-testing}}
 
 Data Mirrorは、リレーショナルスキーマを使用して、外部データベースからデータレイクに行レベルの変更取り込みを可能にするExperience Platform機能です。 データ関係を維持し、一意性を確保し、ETL （上流抽出、変換、格納）プロセスを必要とせずにバージョン管理をサポートします。
 
@@ -59,7 +56,7 @@ Data Mirror[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-pla
 
 >[!NOTE]
 >
->Data Mirrorは現在ベータ版で、Customer Journey Analyticsでの分析にchange data capture （CDC）を使用して一部のデータウェアハウスから取得したデータの同期をサポートしています。<br/>この機能は、2026年6月18日（PT）にCustomer Journey Analyticsで一般公開されます。 適用される製品説明を参照して、今後の年間取り込み制限消費にどのような影響を与えるかを確認してください。 Data Mirrorがベータ版から一般提供に移行しても、引き続きこの機能にアクセスできます。
+>Data Mirrorは、Customer Journey Analyticsでの分析にChange Data Capture （CDC）を使用して、一部のデータウェアハウスから取得したデータの同期をサポートする機能です。<br/>該当する製品説明を参照して、この機能が年間取り込み制限の消費にどのような影響を与えるかを理解してください。
 >
 
 >[!IMPORTANT]
