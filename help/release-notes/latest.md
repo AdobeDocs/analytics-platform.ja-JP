@@ -30,25 +30,25 @@ topic_v2:
 source-git-commit: c818dd36bc900b3945b87503afad8e944a3716a7
 workflow-type: tm+mt
 source-wordcount: 721
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
-# 最新のCustomer Journey Analytics リリースノート（2026年5月）
+# 現在の Customer Journey Analytics リリースノート（2026年5月）
 
-**最終更新**: 2026年5月13日（PT）
+**最終更新日**：2026年5月13日（PT）
 
-このリリースノートでは、2026年5月のリリース期間について説明します。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
+このリリースノートは、2026年5月のリリース期間を対象としています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
 ## 新機能または更新された機能
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **CJA API Postman コレクション** <br/>CJA API エンドポイントの呼び出しにダウンロード可能なPostman コレクションを使用できます。<p>詳しくは、[analytics-cja-postman-collections Github リポジトリ &#x200B;](https://github.com/AdobeDocs/analytics-cja-postman-collections)を参照してください。  </p> | | 2026年5月1日（PT） |
-| **Customer Journey Analytics用MCP サーバー** <br/>Analytics MCP （Model Context Protocol）サーバーを使用すると、サポートされているMCP クライアントをAdobe Customer Journey Analyticsに接続できます。 接続が完了すると、MCP クライアントは、製品固有のツールを呼び出して、データの取得、クエリの実行、またはLLMまたはエージェント型ワークフローの一部としてサポートされている操作を実行できます。 詳しくは、[Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/)を参照してください。<p>ベータ期間中にこれらのMCP サーバーを使用した場合は、ベータ版と実稼動エンドポイントの間に異なるURLがあることに注意してください。 ベータ期間中に作成されたエージェント型ワークフローが、5月31日より前に実稼動エンドポイントを使用するように更新されていることを確認します。</p> | | 2026年5月5日（PT） |
-| **ネイティブモバイルアプリエクスペリエンスに対するContent Analyticsのサポート**<br/>&#x200B;企業は、iOSおよびAndroid アプリに対してコンテンツパフォーマンス分析を拡張し、画像アセットと詳細なエクスペリエンス要素をキャプチャして、どのアプリ内コンテンツがユーザーエンゲージメントとビジネス成果を促進するのかを把握できます。<p> [&#x200B; ドキュメント &#x200B;](/help/content-analytics/content-analytics.md)が更新され、モバイルチャネルの機能と設定が説明されます。 [Content Analytics Mobile SDK拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)に関する情報は、[Adobe Developer](https://developer.adobe.com/)で入手できます。</p><p>Adobe Content Analyticsのすべてのユーザーがインサイトを利用できます。</p> | | 2026年5月6日（PT） |
-| **ジャーニーキャンバスの機能強化** <br/>ジャーニーキャンバスのビジュアライゼーションでは、次の機能強化を利用できます。 <ul><li>[&#x200B; ジャーニーからノード &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)を除外します。</li><li>ノードのフォールアウトデータを使用して、[&#x200B; セグメントを作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[&#x200B; トレンド &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[&#x200B; オーディエンス &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)、[分類](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)します。</li></ul> | | 2026年5月18日（PT） |
-| **Content Analytics:Content Analyticsのラインビジュアライゼーションのサムネールとプレビュー** <br/>[&#x200B; サムネールとプレビュー](/help/content-analytics/report/report.md)が、のラインビジュアライゼーションでアセットとエクスペリエンスに使用できるようになりました。 |  | 2026年5月20日（PT） |
+| **CJA API Postman コレクション** <br/>CJA API エンドポイントの呼び出しにダウンロード可能な Postman コレクションが使用可能です。<p>詳しくは、[analytics-cja-postman-collections Github リポジトリ](https://github.com/AdobeDocs/analytics-cja-postman-collections)を参照してください。  </p> | | 2026年5月1日（PT） |
+| **Customer Journey Analytics 用 MCP サーバー** <br/>Analytics MCP（モデルコンテキストプロトコル）サーバーを使用すると、サポートされている MCP クライアントを Adobe Customer Journey Analytics に接続できます。 接続すると、MCP クライアントは製品固有のツールを呼び出し、LLM またはエージェント型ワークフローの一部として、データの取得、クエリの実行、サポートされている操作を実行できます。 詳しくは、[Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/)を参照してください。<p>ベータ版期間中にこれらの MCP サーバーを使用した場合は、ベータ版エンドポイントと本番エンドポイントでは URL が異なることに注意してください。 ベータ版期間中に作成したエージェント型ワークフローは、5月31日（PT）より前に本番エンドポイントを使用するように更新されていることを確認してください。</p> | | 2026年5月5日（PT） |
+| **ネイティブモバイルアプリエクスペリエンスのコンテンツ分析サポート**<br/>&#x200B;組織は、コンテンツのパフォーマンス分析を iOS および Android アプリに対して拡張し、画像アセットや詳細なエクスペリエンス要素を取得して、ユーザーエンゲージメントとビジネス成果を推進するアプリ内コンテンツを把握できます。<p> モバイルチャネルの機能と設定について説明する[ドキュメント](/help/content-analytics/content-analytics.md)が更新されています。 [コンテンツ分析の Mobile SDK 拡張機能](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)について詳しくは、[Adobe Developer](https://developer.adobe.com/) を参照してください。</p><p>すべての Adobe Content Analytics のお客様のインサイトが使用可能です。</p> | | 2026年5月6日（PT） |
+| **ジャーニーキャンバスの機能強化** <br/>ジャーニーキャンバスのビジュアライゼーションでは、次の機能強化が使用可能です。 <ul><li>ジャーニーから[ノードを除外](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)する。</li><li>ノードのフォールアウトデータを使用して、[セグメント](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[トレンド](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[オーディエンス](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)、[分類](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)を作成する。</li></ul> | | 2026年5月18日（PT） |
+| **コンテンツ分析：折れ線グラフビジュアライゼーションのサムネイルとプレビュー** コンテンツ分析の折れ線グラフビジュアライゼーションでは、アセットとエクスペリエンスの<br/>[サムネイルとプレビュー](/help/content-analytics/report/report.md)が使用可能になりました。 |  | 2026年5月20日（PT） |
 | **ストリーミングメディアサービス：スケジュールデータのサポート** <br/>過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、閲覧者数をより簡単かつ正確に追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。 特定のトピックやプログラムセグメントの閲覧者数データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に紐付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに紐付けることはできませんでした。</p><p>詳しくは、[スケジュールデータをアップロードしてライブコンテンツを追跡する](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-use-cases/track-schedule-data)を参照してください。</p> | 2025年10月29日（PT） | 2026年上半期<p>（当初は 2025年10月29日（PT）にリリースされる予定でした）</p> |
 
 {style="table-layout:auto"}
@@ -56,25 +56,25 @@ ht-degree: 38%
 
 ## Customer Journey Analytics の修正点
 
-**Analysis Workspace**: AN-446522, AN-445779, AN-445759, AN-444676, AN-442813, AN-441943, AN-441717, AN-441538, AN-441123, AN-440976, AN-440952, AN-440919, AN-439797, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
-**コンポーネント**:
-**接続**: AN-449652、AN-444560、AN-442824、AN-440937、AN-440092、AN-439823、AN-429781
-**Content Analytics**:
-**ガイド付き分析**:
-**書き出し**: AN-438953、AN-437115
-**データビュー**: AN-442809
+**Analysis Workspace**：AN-446522、AN-445779、AN-445759、AN-444676、AN-442813、AN-441943、AN-441717、AN-441538、AN-441123、AN-440976、AN-440952、AN-440919、AN-439797、AN-434855、AN-429777、AN-429048、AN-428892、AN-428189、AN-425215
+**コンポーネント**：
+**接続**：AN-449652、AN-444560、AN-442824、AN-440937、AN-440092、AN-439823、AN-429781
+**コンテンツ分析**：
+**ガイド付き分析**：
+**書き出し**：AN-438953、AN-437115
+**データビュー**：AN-442809
 **実装**:
-**Report Builder**: AN-448697、AN-447128、AN-441148、AN-441136、AN-438147、AN-425150
-**レポート**: AN-445123, AN-442231, AN-442169, AN-441811, AN-441733, AN-440505, AN-440300, AN-434824, AN-434210, AN-424000, AN-423359, AN-406242
-**セグメント化**:
-**スケジュール済みレポート**:
-**共有の指標とディメンション**:
-**その他**: AN-449159、AN-444661、AN-443900、AN-397985
+**Report Builder**：AN-448697、AN-447128、AN-441148、AN-441136、AN-438147、AN-425150
+**レポート**：AN-445123、AN-442231、AN-442169、AN-441811、AN-441733、AN-440505、AN-440300、AN-434824、AN-434210、AN-424000、AN-423359、AN-406242
+**セグメント化**：
+**予定レポート**：
+**共有指標と共有ディメンション**：
+**その他**：AN-449159、AN-444661、AN-443900、AN-397985
 
 ## 関連リソース
 
 * [2025年の以前の Customer Journey Analytics リリースノート](/help/release-notes/2025.md)
 * [Adobe Analytics リリースノート](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ja)
-* [Streaming Media Collection リリースノート](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=ja)
+* [ストリーミングメディアコレクションのリリースノート](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=ja)
 * [CX Enterprise リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
 * [Customer Journey Analytics ドキュメントのアップデート](/help/release-notes/doc-changes.md)
