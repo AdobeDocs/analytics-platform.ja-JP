@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 51%
+source-wordcount: 298
+ht-degree: 39%
 
 ---
 
 # 最新のCustomer Journey Analytics リリースノート（2026年6月）
 
-**最終更新**: 2026年6月22日（PT）
+**最終更新**: 2026年6月23日（PT）
 
 これらのリリースノートは、2026年6月のリリース期間をカバーしています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -45,6 +45,7 @@ ht-degree: 51%
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
 | **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md)は、外部データウェアハウスソリューション（[!DNL Snowflake]、[!DNL Azure Databricks]、および[!DNL Google BigQuery]）からリレーショナルスキーマを使用してCustomer Journey Analyticsに行レベルの変更の取り込み（change data capture）を可能にするExperience Platform機能です。 データ関係を維持し、一意性を確保し、ETL （上流抽出、変換、格納）プロセスを必要とせずにバージョン管理をサポートします。 | 2026年3月25日（PT） | 2026年6月17日（PT） |
+| **AI アシスタントでのデータの検証** <br/>AI アシスタントを使用して、[Adobe Experience Platform データセットのデータ品質を検証できます](https://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation)。 Agent Orchestratorなら、データセットを統計的かつ意味的に検証し、データセットフィールドを分析して、データ品質の問題を特定できます。また、実用的なインサイトを得て自然言語による要約を返すことができます。 | | 2026年6月22日（PT） |
 
 ### Customer Journey Analytics の修正点
 
