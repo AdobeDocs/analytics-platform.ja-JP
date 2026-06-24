@@ -25,7 +25,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
+source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
 ht-degree: 63%
@@ -554,7 +554,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 >abstract="ペイドメディアを利用するためには、Experience Platform ソースコネクタが必要です。 このサンドボックスでは、Google AdsまたはMeta Ads コネクタは使用できません。 **[!UICONTROL Experience Platform]** > **[!UICONTROL ソース]** インターフェイスでこれらのコネクタを1つ以上設定し、この手順に戻ってContent Analytics有料メディアの設定を続行します。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads ソース"
 
-#### 保存 {#web-save}
+##### 保存 {#web-save}
 
 Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を選択して設定を保存します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
