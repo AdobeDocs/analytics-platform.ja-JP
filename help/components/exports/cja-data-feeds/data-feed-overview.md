@@ -7,19 +7,12 @@ hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
 autotag-review: '2026-05-19T08:45:11.428Z'
 TQID: 'https://experienceleague.adobe.com/TO8lEW8-GE-sIGj3vmm0X1zCgpg-0VpS1wjs0-HQjg8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
 source-wordcount: 221
 ht-degree: 21%
@@ -36,7 +29,7 @@ ht-degree: 21%
 
 * Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->にデータを取り込む作業中の実装
 * アカウントがAnalytics製品管理者であるか、アカウントがデータフィード <!--???-->へのアクセス権を持つ製品プロファイルに属しています
-* {DNL Amazon S3}、{DNL Google Cloud Platform}、{DNL Azure RBAC}または {DNL Azure SAS}
+* [!DNL Amazon S3]、[!DNL Google Cloud Platform]、[!DNL Azure RBAC]または[!DNL Azure SAS]に構成されたバケット
 
 ## 基本を学ぶ
 
@@ -46,4 +39,4 @@ Customer Journey Analyticsのデータフィードの使用を開始するには
 
 1. [Adobe Analytics データフィード列をCustomer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)にマッピングします。
 
-1. [&#x200B; データフィードを作成](/help/components/exports/cja-data-feeds/create-feed.md)。
+1. [ データフィードを作成](/help/components/exports/cja-data-feeds/create-feed.md)。
