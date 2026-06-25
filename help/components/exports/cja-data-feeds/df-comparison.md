@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
-source-wordcount: 934
+source-wordcount: 933
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードで
 | **計算指標**<br/> | 使用不可 | 使用不可 |
 | **永続性モデル** | 柔軟性： データビューの永続性設定（割り当てと有効期限）は、フィードが生成されるレポート時に適用されます。 データビューで使用できるすべての割り当て設定をサポートします：**元**、**最新**、**すべて**、**最初の既知**、および&#x200B;**最後の既知**。 | **最新（ラストタッチ）**&#x200B;と&#x200B;**元の値（ファーストタッチ）**&#x200B;のアトリビューションモデルのみが表されます。 線形配分は、ラストタッチと同じように処理されます。 |
 | **出力ファイル形式** | PARQUET<p>複雑なネスト化および構造化データをネイティブにサポート。 商品リストは、構造化配列やネストされたオブジェクトとして表されます。 </p><p>BigQuery、Snowflake、Apache Sparkなど、Parquetに対応したツールが必要です。</p> | TSV<p>人間が読むことができるフラットな行。 構造化データはネイティブにサポートされません。製品リストなどの複雑なフィールドは、カスタム解析ロジックを必要とする独自の区切り文字列としてエンコードする必要があります。</p> |
-| **配信先** | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform、Snowflake。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform。 **SFTP**&#x200B;もサポートしています。 |
+| **配信先** | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform。 **SFTP**&#x200B;もサポートしています。 |
 
 {style="table-layout:auto"}
 
