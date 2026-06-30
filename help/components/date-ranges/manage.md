@@ -15,10 +15,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 606
-ht-degree: 29%
+source-wordcount: 590
+ht-degree: 25%
 
 ---
 
@@ -105,15 +105,7 @@ ht-degree: 29%
 
 * [[!UICONTROL 日付範囲] リスト &#x200B;](#date-ranges-list)で、日付範囲のタイトルを選択します。
 
-[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。
-
-
-
-
-日付範囲マネージャーを使用して、日付範囲の共有、名前の変更または削除を行います。 日付マネージャヘのアクセス方法：
-
-1. Adobe ID の資格情報を使用して [analytics.adobe.com](https://analytics.adobe.com) にログインします。
-1. [!UICONTROL コンポーネント]／[!UICONTROL 日付範囲]に移動します。
+[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。日付範囲マネージャー[を使用して、日付範囲を共有、名前変更、または削除します。](/help/components/date-ranges/manage.md)
 
 
 <!--

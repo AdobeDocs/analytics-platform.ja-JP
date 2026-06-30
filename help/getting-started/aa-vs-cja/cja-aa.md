@@ -45,10 +45,10 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 3109
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ ht-degree: 99%
 | **分類ルールビルダー** | Customer Journey Analytics で[部分文字列](/help/data-views/component-settings/substring.md)を使用してサポートされます。 ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
 | **カスタムセッションの長さ** | セッションの長さは、データビューの[セッション設定](../../data-views/create-dataview.md#session-settings)を介して設定できます。 詳しくは、[セッション設定](../../data-views/session-settings.md)を参照してください。 <br/>モバイルバックグラウンドイベントの処理は、Adobe Experience Platform Mobile SDK を介してサポートされます。 詳しくは、[Edge Network のライフサイクル](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)を参照してください。 |
 | **通貨換算** | データビューの[指標コンポーネントの書式設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/format)の一部としてサポートされます。 |
-| **顧客属性** | プロファイルデータセットは、顧客属性に相当します。 プロファイルデータセットは、CX Enterpriseから自動的に読み込まれるものではありませんが、Customer Journey Analyticsで使用する前にExperience Platformにアップロードする必要があります。 |
+| **顧客属性** | プロファイルデータセットは、顧客属性に相当します。 プロファイルデータセットは Experience Cloud から自動的に読み込まれませんが、Customer Journey Analytics で使用できるようにするには、Experience Platform にアップロードする必要があります。 |
 | **データフィード** | データセットの第 1 世代のデータ書き出しは、[Experience Platform Data Access API](https://experienceleague.adobe.com/ja/docs/experience-platform/data-access/api) および [Experience Platform の宛先](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets)を通じて利用できます。 これらのオプションを使用すると、Experience Platform データレイクに収集または取り込まれるすべてのデータをイベント／行レベルで書き出すことができます。 Post 列はクエリ時に計算されるので、後処理データ列は使用できません。 Post 列の書き出しは、レポートを通じて使用できます。 |
 | **Data Warehouse レポート** | [Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)は、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。 |
 | **入口、出口、滞在時間の各ディメンションと指標** | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
