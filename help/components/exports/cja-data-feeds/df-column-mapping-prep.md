@@ -7,21 +7,12 @@ hide: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
 autotag-review: '2026-05-19T08:44:51.994Z'
 TQID: 'https://experienceleague.adobe.com/0KbYVZ87QL4qh-5FfSRxpuEF4-xsqBTLwLCvKa-u9Mw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 1092
 ht-degree: 3%
@@ -29,6 +20,8 @@ ht-degree: 3%
 ---
 
 # Adobe AnalyticsからCustomer Journey Analyticsへのデータフィード列のマッピングの準備
+
+{{release-limited-testing}}
 
 Customer Journey Analyticsは、データフィードに含めることができる列を決定するために、Adobe Analyticsよりも柔軟なアーキテクチャを提供します。 多くの企業では、Adobe Analyticsから書き出すよりも、Customer Journey Analyticsから異なるデータフィード列を書き出す必要があります。 この違いの原因は次のとおりです。
 
@@ -42,7 +35,7 @@ Customer Journey Analyticsは、データフィードに含めることができ
 
 Adobe Analytics データフィード列とCustomer Journey Analytics データフィード列のマッピングを開始する前に、以下の節を確認して、マッピングに影響を与える主な要因をより深く理解してください。
 
-この情報を確認したら、[&#x200B; データ列リファレンス &#x200B;](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)の説明に従って、Customer Journey Analyticsに保持する各Adobe Analytics データフィード列のマッピング手順に従います。
+この情報を確認したら、[ データ列リファレンス ](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)の説明に従って、Customer Journey Analyticsに保持する各Adobe Analytics データフィード列のマッピング手順に従います。
 
 ## データフィードスキーマのアーキテクチャ
 
@@ -56,13 +49,13 @@ Customer Journey Analyticsは、データフィードに含めることができ
 
 ### Customer Journey Analytics アーキテクチャ
 
-データビュー設定に含まれるコンポーネントは、データフィード列として含めることができます。 潜在的なAdobe Analytics データフィード列についてのこのプロセスの詳細については、[&#x200B; データ列リファレンス &#x200B;](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)を参照してください。
+データビュー設定に含まれるコンポーネントは、データフィード列として含めることができます。 潜在的なAdobe Analytics データフィード列についてのこのプロセスの詳細については、[ データ列リファレンス ](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)を参照してください。
 
 コンポーネントは、次の表に示すいずれかの方法でデータビュー設定に含まれます。
 
 | データビュー設定に含める方法 | 追加情報 |
 |---------|----------|
-| XDM スキーマフィールドは、データビューのコンポーネントとしてキュレーションされます | XDM スキーマに存在するフィールドは、データビューのコンポーネントとしてキュレートされた後、Customer Journey Analyticsのデータビュー設定の一部になります。 <p>Customer Journey Analytics XDM スキーマでデフォルトで使用できるフィールドの数は、Customer Journey Analyticsの実装でデータを収集する方法によって異なります。次に示します。</p><ul><li>**新しいWeb SDKの実装**: Customer Journey Analytics実装でカスタムスキーマを使用している場合、Adobe Analytics データフィードに存在する多くの列がCustomer Journey Analyticsに存在しない可能性があります。 同様に、Customer Journey Analyticsには、Adobe Analytics データフィードに存在しないフィールドが含まれている場合があります。<p>可能であれば、組織のCustomer Journey Analytics実装用にXDM スキーマを設計したチームまたは個人を参照してください。 XDM スキーマが作成されたときに、Customer Journey Analyticsで必要なAdobe Analytics フィールドに関する多くの意思決定が行われました。 詳しくは、[Customer Journey Analytics で使用するスキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。</p></li><li>**Analytics Source コネクタの実装**:Analytics Source コネクタでは、XDM スキーマでAnalytics Experience Event フィールドグループが使用されるため、多数のデータフィード列に対してOne to One フィールドマッピングがデフォルトで存在します。 このフィールドグループのフィールドにマッピングするAdobe Analytics フィールドについて詳しくは、Experience Platform ドキュメントの[Analytics フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)を参照してください。</li></ul> |
+| XDM スキーマフィールドは、データビューのコンポーネントとしてキュレーションされます | XDM スキーマに存在するフィールドは、データビューのコンポーネントとしてキュレートされた後、Customer Journey Analyticsのデータビュー設定の一部になります。 <p>Customer Journey Analytics XDM スキーマでデフォルトで使用できるフィールドの数は、Customer Journey Analyticsの実装でデータを収集する方法によって異なります。次に示します。</p><ul><li>**新しいWeb SDKの実装**: Customer Journey Analytics実装でカスタムスキーマを使用している場合、Adobe Analytics データフィードに存在する多くの列がCustomer Journey Analyticsに存在しない可能性があります。 同様に、Customer Journey Analyticsには、Adobe Analytics データフィードに存在しないフィールドが含まれている場合があります。<p>可能であれば、組織のCustomer Journey Analytics実装用にXDM スキーマを設計したチームまたは個人を参照してください。 XDM スキーマが作成されたときに、Customer Journey Analyticsで必要なAdobe Analytics フィールドに関する多くの意思決定が行われました。 詳しくは、[Customer Journey Analytics で使用するスキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。</p></li><li>**Analytics Source コネクタの実装**:Analytics Source コネクタでは、XDM スキーマでAnalytics Experience Event フィールドグループが使用されるため、多数のデータフィード列に対してOne to One フィールドマッピングがデフォルトで存在します。 このフィールドグループのフィールドにマッピングするAdobe Analytics フィールドについて詳しくは、Experience Platform ドキュメントの[Analytics フィールドマッピング ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)を参照してください。</li></ul> |
 | コンポーネントは、派生フィールドを使用してデータビュー内で作成されます | データビュー内で直接コンポーネントを作成できるため、XDM スキーマでは使用できないデータフィード列を作成できます。 |
 
 ## データ処理
