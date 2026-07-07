@@ -14,10 +14,10 @@ subfeature_v2:
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: b7493ad9283b5830c36b8e3ac942bf9295b693f8
+source-git-commit: 7c679fcbf52d2a5832d16bf138bd197f11f4ceb7
 workflow-type: tm+mt
-source-wordcount: 461
-ht-degree: 88%
+source-wordcount: 434
+ht-degree: 87%
 
 ---
 
@@ -39,9 +39,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="datadictionary_share_primary"
 >title="プライマリコンポーネントを共有"
->abstract="このオプションを選択すると、プライマリコンポーネントは、複製コンポーネントにアクセスできるすべてのユーザー（所有者と、コンポーネントが共有されているすべてのユーザー）と共有されます。 その後、これらのユーザーは、今後のプロジェクトのコンポーネントリストからプライマリコンポーネントを選択できます。 ただし、統合された重複コンポーネントの所有者であっても、コンポーネントを編集できません。 <br/>このオプションは、プライマリコンポーネントがセグメント、計算指標または日付範囲である場合にのみ使用できます。 指標とディメンションは、すべてのユーザーが常に使用できます。"
->
->When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+>abstract="このオプションを選択すると、プライマリコンポーネントは、複製コンポーネントにアクセスできるすべてのユーザー（所有者と、コンポーネントが共有されているすべてのユーザー）と共有されます。 その後、これらのユーザーは、今後のプロジェクトのコンポーネントリストからプライマリコンポーネントを選択できます。 ただし、統合された重複コンポーネントの所有者であっても、コンポーネントを編集できません。"
 
 <!-- markdownlint-disable MD034 -->
 
