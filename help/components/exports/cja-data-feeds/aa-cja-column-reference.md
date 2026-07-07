@@ -28,14 +28,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
-source-wordcount: 3912
+source-wordcount: 3920
 ht-degree: 48%
 
 ---
 
 # Adobe Analytics データフィード列のCustomer Journey Analyticsへのマッピング
+
+{{release-limited-testing}}
 
 Adobe AnalyticsとCustomer Journey Analytics データフィード列の真の1:1 マッピングは不可能です。 2つの製品は根本的に異なり、各組織の実装は大きく異なる可能性があります。
 
