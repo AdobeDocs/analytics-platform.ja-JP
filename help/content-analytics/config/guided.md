@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -551,8 +551,8 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="ソースコネクタなし"
->abstract="ペイドメディアを利用するためには、Experience Platform ソースコネクタが必要です。 このサンドボックスでは、Google AdsまたはMeta Ads コネクタは使用できません。 **[!UICONTROL Experience Platform]** > **[!UICONTROL ソース]** インターフェイスでこれらのコネクタを1つ以上設定し、この手順に戻ってContent Analytics有料メディアの設定を続行します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads ソース"
+>abstract="有料メディアには、広告パブリッシャー向けの Experience Platform ソースコネクタが必要です。 このサンドボックスでは、Google 広告または Meta 広告のコネクタは使用できません。 **[!UICONTROL Experience Platform]**／**[!UICONTROL ソース]**&#x200B;インターフェイスでこれらのコネクタを 1 つ以上設定し、この手順に戻ってコンテンツ分析の有料メディアの設定を続行します。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/ads" text="Google 広告ソース"
 
 ##### 保存 {#web-save}
 

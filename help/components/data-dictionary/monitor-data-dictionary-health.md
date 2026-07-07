@@ -27,7 +27,7 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
->title="データディクショナリ"
+>title="データ辞書"
 >abstract="このオプションを選択すると、プライマリコンポーネントは、複製コンポーネントにアクセスできるすべてのユーザー（所有者と、コンポーネントが共有されているすべてのユーザー）と共有されます。 その後、これらのユーザーは、今後のプロジェクトのコンポーネントリストからプライマリコンポーネントを選択できます。 ただし、統合された重複コンポーネントの所有者であっても、コンポーネントを編集できません。 <br/>このオプションは、プライマリコンポーネントがセグメント、計算指標または日付範囲である場合にのみ使用できます。 指標とディメンションは、すべてのユーザーが常に使用できます。"
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
