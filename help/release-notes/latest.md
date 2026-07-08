@@ -3,7 +3,6 @@ title: 現在の Customer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -28,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b27408ce620b9dc62c06e4dc6dda00b2aef1c46d
+source-git-commit: ce00cd801894776f2128a86504f5c78afe438986
 workflow-type: tm+mt
-source-wordcount: 746
-ht-degree: 38%
+source-wordcount: 655
+ht-degree: 44%
 
 ---
 
@@ -45,29 +44,30 @@ ht-degree: 38%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **サブイベント分析** <br/> サブイベント分析では、イベントレベルよりも詳細なレベルでデータを分析できます。 イベント全体をフィルタリングするのではなく、イベント内の個々のコンテナでセグメント化できます。 <p>例えば、同じ注文で購入された他の商品をすべて含めずに、特定の商品カテゴリーでセグメンテーションできます。 イベントデータの一部であるオブジェクトや配列を、データビュー内の個別のコンテナとして定義することもできます。</p> | 7月8日（PT） | 2026年7月末 |
-| **CJA B2B：アドホックおよびリレーショナルデータセットのサポート** <br/> アドホックおよびリレーショナルデータセットも、CJA B2B アカウントベースの接続でサポートされるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月20日（PT） |
-| **有料メディアデータ** <br/>有料メディアがContent Analyticsの3番目のチャネルとして追加されました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
-| **Connectionsの使用状況UIの更新** <br/>Customer Journey AnalyticsやCustomer Journey Analytics B2B editionなど、各モジュールの使用状況の詳細を確認できます。 さらに、各モジュールの利用状況レポートを月別に分類することもできます。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
-| **CX Enterprise Coworker: Adobe AnalyticsからAdobe Analyticsに移行する際のデータの検証** <br/>CX Enterprise Coworkerの新しいスキルを使用すると、既存のCustomer Journey Analytics実装のデータとCustomer Journey Analytics実装のデータを検証できます。 <p>このスキルは、各ディメンション、指標、トレンドを自動的に比較し、AIを活用したインサイトとレコメンデーションを生成します。このインサイトを活用すれば、Customer Journey Analyticsへの移行を促進できます。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月末 |
+| **サブイベント分析** <br/> サブイベント分析では、イベントレベルよりも詳細なレベルでデータを分析できます。 イベント全体をフィルタリングするのではなく、イベント内の個々のコンテナでセグメント化できます。 <p>例えば、同じ注文で購入された他の商品をすべて含めずに、特定の商品カテゴリーでセグメンテーションできます。 イベントデータの一部であるオブジェクトや配列を、データビュー内の個別のコンテナとして定義することもできます。</p> | 2026年7月15日（PT） | 2026年7月末 |
+| **B2B edition：アドホックおよびリレーショナルデータセットのサポート** <br/> アドホックおよびリレーショナルデータセットも、Customer Journey Analytics B2B editionのアカウントベースの接続でサポートされるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月20日（PT） |
+| **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
+| **Connectionsの使用状況UIの更新** <br/>Customer Journey AnalyticsやCustomer Journey Analytics B2B editionなど、各モジュールの使用状況の詳細を表示できるようになりました。 さらに、各モジュールの利用状況レポートを月別に分類できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
+| **CX Enterprise Coworker: Adobe AnalyticsからAdobe Analyticsに移行する際のデータの検証** <br/>CX Enterprise Coworkerの新しいスキルを使用すると、既存のCustomer Journey Analytics実装のデータとCustomer Journey Analytics実装のデータを検証できます。 <p>このスキルは、必要に応じて各ディメンション、指標、トレンドを個別に自動的に比較します。 また、すべてのAdobe Analytics レポートスイートをすべてのCustomer Journey Analytics データビューと比較することもできます。 そして、AIを活用してインサイトとレコメンデーションを生成し、Customer Journey Analyticsへの移行を促進します。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月末 |
 
 ### Customer Journey Analytics の修正点
 
-**Analysis Workspace**: AN-456858, AN-455865, AN-455706, AN-455592, AN-455484, AN-455180, AN-454999, AN-454170, AN-454145, AN-453793, AN-452921, AN-452009, AN-451958, AN-451643, AN-451600, AN-451525, AN-451477, AN-451262, AN-451161, AN-450772, AN-443594 434416, AN-
+**Analysis Workspace**: AN-457527、AN-451161、AN-459034、AN-458071、AN-458398
 **コンポーネント**：
-**接続**: AN-457065、AN-453705
-**Content Analytics**:AN-451203、AN-447596
+**接続**: AN-457065
+**コンテンツ分析**：
 **ガイド付き分析**：
-**書き出し**: AN-452006、AN-451989、AN-440567
-**データビュー**: AN-451198
+**書き出し**：
+**データビュー**: AN-453201
+**データ収集**:
 **実装**:
-**Report Builder**: AN-440912, AN-457586, AN-457533, AN-455713, AN-455623, AN-455063, AN-454512, AN-454053, AN-453977, AN-453781, AN-453683, AN-451974, AN-451735, AN-451731, AN-451190, AN-449813, AN-447173, AN-447139, AN-446184, AN-445794, AN-445354 442819, AN-
-**レポート**: AN-454589, AN-454517, AN-453982, AN-451822, AN-451497, AN-451463, AN-451259, AN-451215, AN-450661, AN-447699, AN-448375, AN-447692
+**Report Builder**:AN-457533、AN-453683
+**レポート**: AN-457607、AN-447692、AN-451259、AN-455713
 **セグメント化**：
-**スケジュール済みレポート**: AN-451980、AN-451882、AN-450715
+**スケジュール済みレポート**: AN-450715
 **共有指標と共有ディメンション**：
-**オーディエンス分析**:AN-449656、AN-450400
-**その他**: AN-457063、AN-454140、AN-453937、AN-453825、AN-452959、AN-452934、AN-452296、AN-451781、AN-450974
+**オーディエンス分析**:
+**その他**: AN-457063,
 
 ## 延期された機能
 
