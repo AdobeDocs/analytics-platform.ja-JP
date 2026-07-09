@@ -19,10 +19,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1664
-ht-degree: 100%
+source-wordcount: 1377
+ht-degree: 95%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 100%
 
 以下の節では、推奨されるデータ要素と、設定可能なその他の一般的なデータ要素について説明します。
 
-データ要素には様々なタイプがあります。 設定する可能性のある 2 つの一般的なデータ要素は、サイトでユーザーが表示しているページ名を取得する要素と、サイトを訪問する各ユーザーの Experience Cloud ID を取得する要素です。
+データ要素には様々なタイプがあります。 設定する一般的なデータ要素は、サイトでユーザーが表示しているページ名をキャプチャするものです。
 
-これら 2 つのデータ要素を設定した後、取得する特定のデータに対して追加のデータ要素を設定できます。
+ページ名データ要素を設定したら、キャプチャする特定のデータに対して追加のデータ要素を設定できます。
 
 最後に、目的のデータ要素をすべて定義した後、前に[作成したスキーマ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)にデータ要素を割り当てる必要があります。 これを行うには、XDM スキーマを表す XDM データ要素を定義します。
 
@@ -93,55 +93,11 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   次に、Experience Cloud ID（Adobe Experience Platform Web SDK によって自動的に提供され、Experience Cloud ID サービス拡張機能を通じて使用できる）を参照するデータ要素を設定します。
-
-1. [ECID データ要素](#ecid-data-element)に進みます。
-
-#### ECID データ要素
-
-ほとんどの組織に適用される共通のデータ要素は、サイトを訪問する各ユーザーの Experience Cloud ID を取得するデータ要素です。
-
-ECID データ要素を作成するには：
-
-1. Adobe ID 資格情報を使用して experiencecloud.adobe.com にログインします。
-
-1. Adobe Experience Platform で、**[!UICONTROL データ収集]**／**[!UICONTROL タグ]**&#x200B;に移動します。
-
-1. [!UICONTROL タグのプロパティ]をクリックして新しく作成したタグを開きます。
-
-1. （条件付き）Experience Cloud ID サービス拡張機能がまだインストールされていない場合はインストールします。
-
-   1. 左パネルで「**[!UICONTROL 拡張機能]**」を選択します。
-
-   1. 「**[!UICONTROL インストール済み]**」タブがデフォルトで選択されています。 **[!UICONTROL Experience Cloud ID サービス]**&#x200B;タイルが表示されている場合は、手順 5 に進みます。
-
-   1. **[!UICONTROL Experience Cloud ID サービス]**&#x200B;タイルが表示されていない場合は、「**[!UICONTROL カタログ]**」タブを選択します。
-
-   1. 検索フィールドで **[!UICONTROL Experience Cloud ID サービス]**&#x200B;を検索し、表示されたらタイルを選択します。
-
-   1. **[!UICONTROL インストール]**／**[!UICONTROL 保存]**&#x200B;を選択します。
-
-1. 左パネルで「**[!UICONTROL データ要素]**」を選択します。
-
-1. 「**[!UICONTROL データ要素を追加]**」を選択します。
-
-1. **[!UICONTROL データ要素を作成]**&#x200B;ダイアログで、次の情報を指定します。
-
-   * **[!UICONTROL 名前]**：データ要素の名前。 例：`ECID`。
-
-   * **[!UICONTROL 拡張機能]**：リストから「**[!UICONTROL Experience Cloud ID サービス]**」を選択します。
-
-   * **[!UICONTROL データ要素タイプ]**：リストから「**[!UICONTROL ECID]**」を選択します。
-
-     ![ECID データ要素](assets/ecid-dataelement.png)
-
-1. 「**[!UICONTROL 保存]**」を選択します。
-
 1. [追加のデータ要素の作成](#create-additional-data-elements)に進みます。
 
 ### 追加のデータ要素の作成
 
-収集するデータのタイプごとにデータ要素を作成します。 [ページ名データ要素](#page-name-data-element)および [ECID データ要素](#ecid-data-element)で説明したのと同じプロセスを使用して、追加の各データ要素を作成します。
+収集するデータのタイプごとにデータ要素を作成します。 [&#x200B; ページ名データ要素](#page-name-data-element)で説明されているのと同じプロセスを使用して、各追加データ要素を作成します。
 
 作成するデータ要素には、スキーマ内に関連するフィールドが必要です。
 
@@ -200,12 +156,6 @@ XDM オブジェクトデータ要素を定義するには：
    * **[!UICONTROL サンドボックス]**：リストからサンドボックスを選択します。
 
    * **[!UICONTROL スキーマ]**：リストからスキーマを選択します。
-
-1. スキーマ内で定義した `identification > core > ecid` 属性を、ECID データ要素にマッピングします。 円柱アイコンを選択すると、データ要素のリストから ECID データ要素を簡単に選択できます。
-
-   ![ECID データ要素を選択](assets/pick-ecid-dataelement.png)
-
-   ![ECID データ要素をマッピング](assets/map-ecid.png)
 
 1. スキーマ内で定義した `web > webPageDetails > name` 属性を、ページ名データ要素にマッピングします。
 

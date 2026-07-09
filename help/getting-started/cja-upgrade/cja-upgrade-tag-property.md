@@ -19,10 +19,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
 source-wordcount: 316
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 Adobe Experience Platform 内のタグ機能を使用して、サイトにデータを収集するためのコードを実装できます。 このタグ管理ソリューションを使用すると、他のタグ要件と共にコードをデプロイできます。 タグは、Adobe Experience Platform Web SDK 拡張機能を使用して、Adobe Experience Platform とのシームレスな統合を提供します。
 
-次の情報では、プロパティのタグを作成する方法について説明します。 補足情報について詳しくは、Experience Platform ドキュメントの [Web SDK タグ拡張機能の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)を参照してください。 Web SDK には [!UICONTROL Adobe Experience Cloud ID サービス]がネイティブに含まれているので、タグに ID サービス拡張機能を追加する必要はありません。
+次の情報では、プロパティのタグを作成する方法について説明します。 補足情報について詳しくは、Experience Platform ドキュメントの [Web SDK タグ拡張機能の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)を参照してください。 Web SDKにはExperience Platform ID サービスが含まれているため、タグに[!UICONTROL Experience Cloud ID サービス &#x200B;]拡張機能を追加する必要はありません。
 
 プロパティは基本的に、サイトにタグをデプロイする際に拡張機能、ルール、データ要素およびライブラリを入力するコンテナです。 多くの人物は、同じタグのセットをデプロイする各 web サイト（または密接に関連するサイトのグループ）に対してプロパティを作成します。 プロパティについて詳しくは、Experience Platform データ収集ドキュメントの[プロパティ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/admin/companies-and-properties)を参照してください。
 
@@ -55,6 +55,6 @@ Adobe Experience Platform 内のタグ機能を使用して、サイトにデー
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![ プロパティの作成](assets/create-property.png)
+   ![&#x200B; プロパティの作成](assets/create-property.png)
 
 {{upgrade-final-step}}

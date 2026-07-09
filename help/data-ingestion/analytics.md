@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1224
-ht-degree: 77%
+source-wordcount: 1223
+ht-degree: 76%
 
 ---
 
@@ -36,12 +36,10 @@ ht-degree: 77%
 
 >[!PREREQUISITES]
 >
->Adobe Analytics がライセンスを取得しており、以下に記載された実装方法のいずれかを使用して、1 つ以上の web サイトにデプロイしている。
+>Adobe Analyticsのライセンスを取得し、文書化された実装方法のいずれかを使用して、1つ以上のweb サイトにデプロイします。
 >
 >- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=ja)
->
 >- [Adobe Analytics 拡張機能を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)
->
 >- [JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)
 
 これには、次の手順を実行する必要があります。
@@ -102,7 +100,6 @@ Adobe Analytics ソースコネクタを作成するには：
 初回の取り込みが完了すると、Adobe Analytics レポートスイートのデータが Customer Journey Analytics で使用できる状態になります。
 
 詳しくは、[UI での Adobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください。
-
 
 ## 接続の設定
 
