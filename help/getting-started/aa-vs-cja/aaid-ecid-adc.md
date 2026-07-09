@@ -6,11 +6,20 @@ feature: Basics
 role: User
 autotag-review: '2026-05-19T07:16:36.730Z'
 TQID: 'https://experienceleague.adobe.com/8ijMa5NbkCx0H48qSZkYrgTDRaVCSBmO9twZvWFJ83o'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
 source-wordcount: 632
@@ -26,11 +35,11 @@ Adobe Analytics データには、複数の ID フィールドが含まれてい
 
 Adobe Analytics ID（AAID）は、Adobe Analytics のプライマリデバイス識別子で、Analytics ソースコネクタを通じて渡されるすべてのイベントに存在することが保証されます。 AAID は、「従来の Analytics ID」や `s_vi` cookie ID と呼ばれることもあります。 ただし、AAID は、`s_vi` cookie が存在しなくても作成されます。 AAID は、[Adobe Analytics データフィード](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja#columns%2C-descriptions%2C-and-data-types)の `post_visid_high/post_visid_low` 列で表されます。
 
-Analytics ソースコネクタで、AAID は、`HEX(post_visid_high) + "-" + HEX(post_visid_low)` に変換されます。 指定されたイベントの AAID フィールドには、[Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=ja)に記載されているように、いくつかの異なるタイプのうちの 1 つである可能性がある単一の ID が含まれています （レポートスイート全体では、AAID にはイベント間でタイプが混在している可能性があります。 各イベントのタイプは、Analytics データフィードの`post_visid_type`列に示されます。） [ データ列リファレンス ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)も参照してください。
+Analytics ソースコネクタで、AAID は、`HEX(post_visid_high) + "-" + HEX(post_visid_low)` に変換されます。 指定されたイベントの AAID フィールドには、[Analytics ID の操作の順序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=ja)に記載されているように、いくつかの異なるタイプのうちの 1 つである可能性がある単一の ID が含まれています （レポートスイート全体では、AAID にはイベント間でタイプが混在している可能性があります。 各イベントのタイプは、Analytics データフィードの`post_visid_type`列に示されます。） [&#x200B; データ列リファレンス &#x200B;](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)も参照してください。
 
 ## ECID
 
-ECID （Experience Cloud ID）は、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja) （AppMeasurement）またはExperience Platform ID サービス（Web SDK）を使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
+ECID （Experience Cloud ID）は、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja) （AppMeasurement）またはExperience Platform ID サービス（Web SDK）を使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
 
 ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されているかどうかに応じて、ECID に基づいている可能性があります。 [Analytics と Experience Cloud ID のリクエスト](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=ja)も参照してください。
 
