@@ -7,11 +7,22 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
 source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
 source-wordcount: 10573
@@ -49,7 +60,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[ ガイドライン ](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
+>派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[&#x200B; ガイドライン &#x200B;](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
 >
 
 ## 派生フィールドインターフェイス {#interface}
@@ -291,9 +302,9 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
 
-派生フィールドは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
+派生フィールドは、[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 
 +++
 
@@ -321,7 +332,7 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -448,9 +459,9 @@ ht-degree: 98%
 
 {{select-package}}
 
-テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[ ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
+テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[&#x200B; ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![UTM パラメーター解析ルールビルダーのスクリーンショット ](assets/function-template-utm-parameters-parse.png)
+![UTM パラメーター解析ルールビルダーのスクリーンショット &#x200B;](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -1999,7 +2010,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 ![型キャストルールのスクリーンショット 1](assets/typecast-1.png)
 
@@ -2014,7 +2025,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
 
-`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 
 +++

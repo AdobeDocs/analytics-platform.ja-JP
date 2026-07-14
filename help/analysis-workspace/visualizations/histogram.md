@@ -7,11 +7,16 @@ role: User
 hold: true
 autotag-review: '2026-05-19T08:31:33.712Z'
 TQID: 'https://experienceleague.adobe.com/X9T4RpAiJ8uL0clPhyjffdl02kwd-k2Jv3O5t6iHfss'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
 source-wordcount: 494
@@ -29,7 +34,7 @@ ht-degree: 68%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の[ ヒストグラム ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/histogram)を参照してください。_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**。_<br/>_&#x200B;この記事のヒストグラム _の概要を説明します。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の[&#x200B; ヒストグラム &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/histogram)を参照してください。_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Customer Journey Analytics**。_<br/>_&#x200B;この記事のヒストグラム _の概要を説明します。
 
 >[!ENDSHADEBOX]
 
@@ -62,7 +67,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 | **[!UICONTROL 開始バケット]** | ヒストグラムの開始位置となるバケットを指定します。 「1」がデフォルトです。 0から無限大（負の数は含まない）までの開始数を設定できます。 |
 | **[!UICONTROL 指標バケット]** | データ範囲（バケット）の数を増減できます。 グループの最大数は 50 です。 |
 | **[!UICONTROL 指標バケットのサイズ]** | 各バケットのサイズを設定できます。 例えば、バケットのサイズを1つのページビューから2つのページビューに変更できます。 |
-| **[!UICONTROL カウント方法]** | **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人物]**、**[!UICONTROL セッション]**、**[!UICONTROL イベント]**、または&#x200B;**[!UICONTROL オブジェクト]**&#x200B;から選択します。 例えば、アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ごとのページビュー数、セッションごとのページビュー数、ユーザーごとのページビュー数、イベントごとのページビュー数などです。 **[!UICONTROL オブジェクト]**&#x200B;を選択すると、サブイベント分析用に[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)が選択されます。 |
+| **[!UICONTROL カウント方法]** | **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人物]**、**[!UICONTROL セッション]**、**[!UICONTROL イベント]**、または&#x200B;**[!UICONTROL オブジェクト]**&#x200B;から選択します。 例えば、アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ごとのページビュー数、セッションごとのページビュー数、ユーザーごとのページビュー数、イベントごとのページビュー数などです。 **[!UICONTROL オブジェクト]**&#x200B;を選択すると、サブイベント分析用に[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)が選択されます。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -75,5 +80,5 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!MORELIKETHIS]
 >
->[ パネルへのビジュアライゼーションの追加ビジュアライゼーション設定ビジュアライゼーションコンテキストメニューヒストグラムを使用して予期しないデータ値を識別する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
+>[&#x200B; パネルへのビジュアライゼーションの追加ビジュアライゼーション設定ビジュアライゼーションコンテキストメニューヒストグラムを使用して予期しないデータ値を識別する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
 
