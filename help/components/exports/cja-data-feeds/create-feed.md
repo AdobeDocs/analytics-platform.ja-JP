@@ -5,23 +5,15 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 0cc15e1c3dcbd8609a47954af8602ad617c67a51
 workflow-type: tm+mt
-source-wordcount: 2675
-ht-degree: 29%
+source-wordcount: 2774
+ht-degree: 28%
 
 ---
 
@@ -68,6 +60,15 @@ ht-degree: 29%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_user-agent"
+>title=""
+>abstract="ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。"
+
+<!-- markdownlint-enable MD034 -->
+
 1. Adobe ID の資格情報を使用して [experiencecloud.adobe.com](https://experiencecloud.adobe.com) にログインします。
 
 1. インターフェイスの右上にあるアプリ切り替えボタン![アプリ](/help/assets/icons/Apps.svg)から「[!UICONTROL **Customer Journey Analytics**]」を選択します。
@@ -80,7 +81,7 @@ ht-degree: 29%
 
    ページに次のタブが表示されます：[!UICONTROL **詳細**]、[!UICONTROL **データ構造**]、[!UICONTROL **配信**]。
 
-   ![新しいデータフィードのページ &#x200B;](assets/data-feed-new.png)
+   ![新しいデータフィードのページ ](assets/data-feed-new.png)
 
 1. 「[!UICONTROL **詳細**]」タブで、次のフィールドに入力します。
 
@@ -101,6 +102,11 @@ ht-degree: 29%
 
 1. データフィード設定にコンポーネントを追加します。 左側のパネルで、含めるコンポーネントを見つけ、キャンバスにドラッグしてデータ構造を構築します。 複数のコンポーネントを選択するには、**[!UICONTROL Shift]** キーを押すか、**[!UICONTROL Command]** キー（macOS の場合）または **[!UICONTROL Ctrl]** キー（Windows の場合）を押します。
 
+   >[!NOTE]
+   >
+   >ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。 競合するコンポーネントを追加しようとすると、エラーが表示されます。 詳しくは、データ収集ガイドの「[ データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[ デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+
+
    次の情報を使用して、常に含まれるディメンション、含めないディメンション、および置換する必要のある指標を把握します。
 
    +++ データフィードに必ず含まれるディメンション
@@ -109,9 +115,9 @@ ht-degree: 29%
 
    | ディメンション名 | メモ | データフィード | その他のレポート |
    |---|---|---|---|
-   | タイムスタンプ | イベント期間のタイムスタンプ。 マイクロ秒粒度。 UTCで表されます。 | 必須 | 使用不可 |
-   | 行ID | 一意の行識別子 | 必須 | 使用不可 |
-   | セッション ID | 各セッションの一意のID | 必須 | 使用不可 |
+   | タイムスタンプ UTC | イベントが発生した日時。UTC タイムゾーンで表されます。 サブ秒（マイクロ秒）の精度をサポートします。 | 必須 | 使用不可 |
+   | 行ID | データフィードに含まれる各行の一意のID。 | 必須 | 使用不可 |
+   | セッション ID | データフィードに含まれる各セッションの一意のID。 | 必須 | 使用不可 |
    | ユーザー ID | データビューと接続の人物ID | 必須 | オプションの標準 |
    | アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | アカウントコンテナを使用する際のアカウント ID | 必須 | オプションの標準 |
 
@@ -213,19 +219,19 @@ ht-degree: 29%
    >レポートの宛先を設定する際には、次の点を考慮してください。
    >
    ><!--* Adobe recommends using a cloud account for your report destination. [Legacy FTP and SFTP accounts](/help/components/locations/configure-import-accounts.md) are available, but are not recommended.-->
-   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[&#x200B; コンポーネント/書き出し/場所アカウント &#x200B;](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
+   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[ コンポーネント/書き出し/場所アカウント ](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
    >
    >* Cloud アカウントは、Customer Journey Analytics ユーザーアカウントに関連付けられています。 他のユーザーは、組織内のすべてのユーザーが利用できるようにしない限り、設定したクラウドアカウントを使用または表示できません。
    >
-   >* 場所マネージャーから作成した場所は、[&#x200B; コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
+   >* 場所マネージャーから作成した場所は、[ コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
 
    以下のフィールドに入力します。
 
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **すべてのユーザーの宛先を表示**] | システム管理者の場合は、このオプションを有効にして、組織内のすべてのユーザーが作成した宛先を表示できます。 このオプションを無効にすると、作成した宛先のみが表示されます。 |
-   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成：** **[!UICONTROL アカウント]** ドロップダウンメニューから&#x200B;**[!UICONTROL アカウント]**&#x200B;を追加を選択します。 アカウントの設定方法について詳しくは、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
-   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：** **[!UICONTROL 場所]** ドロップダウンメニューから&#x200B;**[!UICONTROL 場所]**&#x200B;を追加を選択します。 場所の設定方法について詳しくは、[&#x200B; クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
+   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成：** **[!UICONTROL アカウント]** ドロップダウンメニューから&#x200B;**[!UICONTROL アカウント]**&#x200B;を追加を選択します。 アカウントの設定方法について詳しくは、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
+   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：** **[!UICONTROL 場所]** ドロップダウンメニューから&#x200B;**[!UICONTROL 場所]**&#x200B;を追加を選択します。 場所の設定方法について詳しくは、[ クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
    | [!UICONTROL **完了時に通知**] | データフィードが正常に送信されるか、送信に失敗した後に通知を配信する1つ以上のメールアドレスを指定します。 複数のメールアドレスはコンマで区切る必要があります。 |
    | [!UICONTROL **マニフェストを有効にする**] | 各データフィード配信にマニフェストファイルを含めるかどうかを選択します。 マニフェストファイルには、データフィードに含まれる各ファイルの情報が含まれます。 |
 
