@@ -5,11 +5,19 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
 workflow-type: tm+mt
 source-wordcount: 759
@@ -62,7 +70,7 @@ ht-degree: 2%
    >
    >フィルタリングなしで同意レポートを有効にするには、両方の切り替えスイッチをオフのままにします。
    >
-   >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+   >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
 
    | マーケティングアクション | 説明 |
    |---------|----------|
@@ -76,7 +84,7 @@ ht-degree: 2%
    * 選択したプロファイルデータセットを接続に追加します。
    * サンドボックスの同意ポリシー参照データセットを作成し（サンドボックスが存在しない場合）、Experience Platformからポリシー名と説明を同期します。
    * 設定された接続内のデータビューに、同意ポリシーコンポーネント（ディメンション、指標、派生フィールド）を追加します。
-   * 新しいコンポーネントに&#x200B;**consent**&#x200B;内部ラベルを適用して、データビューでフィルター処理できるようにします。 内部ラベルについて詳しくは、[ ラベルとポリシー](/help/data-views/data-governance.md)を参照してください。
+   * 新しいコンポーネントに&#x200B;**consent**&#x200B;内部ラベルを適用して、データビューでフィルター処理できるようにします。 内部ラベルについて詳しくは、[&#x200B; ラベルとポリシー](/help/data-views/data-governance.md)を参照してください。
 
 1. 設定が完了したら、[同意ポリシーコンポーネントをデータビュー](#view-consent-policy-components-in-the-data-view)で表示して、使用可能であることを確認します。
 
@@ -84,7 +92,7 @@ ht-degree: 2%
 
 [設定を作成した後](#create-a-configuration)、設定された接続の下のデータビューに同意ポリシーコンポーネントが追加されたことを確認できます。
 
-データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。
+データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 データビューで同意ポリシーコンポーネントを表示するには：
 

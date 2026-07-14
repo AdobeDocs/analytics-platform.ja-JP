@@ -5,11 +5,20 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
 workflow-type: tm+mt
 source-wordcount: 990
@@ -93,12 +102,12 @@ Customer Journey Analyticsで利用可能な同意ポリシーデータを使用
 | 機能 | Customer Journey Analyticsの役割または権限の要件 | Experience Platformの権限の要件 |
 |---------|----------|----------|
 | [同意レポートとフィルター設定の作成](/help/connections/consent-reporting-filtering/consent-configure.md) | システム管理者 | <ul><li>データセット：読み取り、書き込み</li><li>スキーマ：読み取り、書き込み</li></ul> <p>同意ポリシーメンバーシップデータを含むプロファイルデータセットには、読み取りアクセスが必要です。 同意ポリシーのルックアップデータセットが作成され、同期されているため、書き込みアクセスが必要です。</p> |
-| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
+| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
 | Analysis Workspaceの同意ポリシーコンポーネントの使用 | 同意ポリシーコンポーネントが追加されたデータビューへのアクセス | 該当なし |
 
 ## 同意レポートとフィルタリングのユースケース
 
-同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース ](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
+同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
 
 ## 同意に関するレポートとフィルタリングの制限
 
