@@ -5,22 +5,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:11:52.108Z'
 TQID: 'https://experienceleague.adobe.com/zvIcmaZiq3dtL-6b8fal6l2pWVLUbfVcOGWgyuqMqjE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 65ed91c47b271257451243db6f7e50e127ff4b68
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 93%
+source-wordcount: 955
+ht-degree: 91%
 
 ---
 
@@ -62,7 +58,7 @@ ht-degree: 93%
 * **[!UICONTROL 条件]**：区切られた値のリストの処理方法。
    * **[!UICONTROL 左から]**：区切られたリストの先頭から開始して、前にカウントします。
    * **[!UICONTROL 右から]**：区切られたリストの末尾から開始して、後ろにカウントします。
-   * **[!UICONTROL 配列に変換]**：このディメンションをオブジェクト配列スキーマ要素であるかのように扱います。
+   * **[!UICONTROL 配列に変換]**：このディメンションをオブジェクト配列スキーマ要素であるかのように扱います。 ディメンションは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになります。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 * **[!UICONTROL 区切り文字]**：フィールドが使用する区切り文字。
 * **[!UICONTROL インデックス]**：条件が「左から」／「右から」の場合にのみ表示されます。 配列内にある場合のような要素番号です。 例えば、文字列入力が「`"Fox,Turtle,Rabbit,Wolf"`」でインデックスが 3 の場合、出力は「`"Rabbit"`」です。 インデックスが区切られた要素の数よりも大きい場合、[値オプションなし](no-value-options.md)が適用されます。
 
