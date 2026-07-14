@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 91%
+source-wordcount: '1452'
+ht-degree: 92%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 91%
 + アップグレードと比較 {#compare-aa-cja}
    + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
       + {hide-from-toc}[今すぐはじめる](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + {hide-from-toc}[&#x200B; アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + {hide-from-toc}[ アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + {hide-from-toc}[Platformにデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + {hide-from-toc}[履歴データを保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
@@ -369,6 +369,7 @@ ht-degree: 91%
       + [セグメントの管理](/help/components/segments/seg-manage.md)
       + [演算子](/help/components/segments/seg-operators.md)
       + [セグメントの使用](/help/components/segments/seg-use.md)
+      + {hide-from-toc}[ サブイベント分析](/help/components/segments/sub-event.md)
    + 計算指標 {#cja-calcmetrics}
       + [概要](../components/calc-metrics/calc-metr-overview.md)
       + ワークフロー {#cm-workflow}
@@ -413,11 +414,11 @@ ht-degree: 91%
       + [書き出しログの管理](/help/components/exports/manage-export-logs.md)
       + [書き出しのトラブルシューティング](/help/components/exports/troubleshoot-exports.md)
       + データフィード {#cja-data-feeds}
-         + {hide-from-toc}[&#x200B; データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[ データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-         + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-         + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
+         + {hide-from-toc}[ マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
    + データ辞書 {#data-dictionary}
       + [概要](../components/data-dictionary/data-dictionary-overview.md)
       + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
@@ -461,7 +462,7 @@ ht-degree: 91%
 
 + 合計母集団レポート {#tpr}
    + {hide-from-toc}[概要](/help/tpr/tpr.md)
-   + {hide-from-toc}[共有ルックアップ &#x200B;](/help/tpr/shared-lookups.md)
+   + {hide-from-toc}[共有ルックアップ ](/help/tpr/shared-lookups.md)
 
 + アドビの統合 {#integrations}
    + [概要](/help/integrations/overview.md)
@@ -546,7 +547,7 @@ ht-degree: 91%
          + [セッション再生を結合](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [ヒートマップを使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Source コネクタ &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Source コネクタ ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + ラボ {#labs}
    + [ラボユーザーガイド](../labs/labs.md)
