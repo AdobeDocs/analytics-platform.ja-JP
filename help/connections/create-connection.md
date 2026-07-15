@@ -21,10 +21,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 10342
-ht-degree: 92%
+source-wordcount: 10413
+ht-degree: 90%
 
 ---
 
@@ -133,7 +133,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
+>abstract="このオプションを使用すると、Journey Optimizer 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の処理を実行できます。<ul><li>Customer Journey Analytics 内で Journey Optimizer データの詳細な分析を実行する。</li><li>Journey Optimizer の接続と関連データビューを編集する。</li><li>ジャーニーイベント、会話パスおよびキャンペーンのパフォーマンスを分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
@@ -143,7 +143,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、Brand Concierge 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で Brand Concierge データの詳細な分析を実行する。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
+>abstract="このオプションを使用すると、Brand Concierge 接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の処理を実行できます。<ul><li>Customer Journey Analytics 内で Brand Concierge データの詳細な分析を実行する。</li><li>Brand Concierge 接続と関連データビューを編集する。</li><li>会話のエンゲージメント、センチメントおよびコンバージョン指標を分析する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
@@ -153,7 +153,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Customer Journey Analytics でこの接続を使用"
->abstract="このオプションを使用すると、製品の使用状況接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況接続と関連データビューを編集する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
+>abstract="このオプションを使用すると、製品の使用状況接続で Customer Journey Analytics の高度なレポート機能を活用できます。 これらの機能により、次の操作を実行できます。<ul><li>Customer Journey Analytics 内で製品の使用状況データの詳細な分析を実行する。</li><li>製品の使用状況の接続と関連データビューを編集する。</li></ul>**このオプションを有効にする際、接続内の各データ行が Customer Journey Analytics の毎月のライセンスデータ行数にカウントされ、 接続の使用状況 UI 内に表示されます。**<br><br/> Customer Journey Analytics で、行データを追加で使用することに問題がない場合にのみ、このオプションを探索します。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
@@ -339,7 +339,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="アカウント ID"
->abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からアカウント ID（アカウントの一意の ID）を選択します。"
+>abstract="Experience Platformのデータセットスキーマで定義された利用可能な非IDまたは非ユーザーID フィールドから、アカウント IDを選択します。 含まれる値は、関連するアカウント ID情報が個人からアカウントへのデータセットで使用できないたびに、行レベルで一意のアカウント IDとして使用されます。"
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -404,7 +404,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="ユーザー ID"
->abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からユーザー ID を選択します。"
+>abstract="イベントに関する豊富な情報を含むIDまたはIDMap タイプフィールドを選択します。 含まれる値は、以前に設定した人物ID名前空間（B2B ステッチ設定）の値に昇格されます。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
@@ -732,7 +732,7 @@ ht-degree: 92%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL グローバルアカウント ID]** | Experience Platform のデータセットスキーマで定義されている使用可能な ID からグローバルアカウント ID（アカウントの一意の ID）を選択します。 接続にコンテナとしてグローバルアカウントを追加した際に適用されます。 <p>イベントデータセットのアカウント ID として選択した ID の値がレコードに含まれていない場合、そのレコードはスキップされます。 |
+| **[!UICONTROL グローバルアカウント ID]** | 接続にコンテナとしてグローバルアカウントを追加した際に適用されます。<br/>Experience Platformのデータセットスキーマで定義されている使用可能な非IDまたは非ユーザーID フィールドから、グローバルアカウント ID （アカウントの一意のID）を選択します。 含まれる値は、関連するアカウント ID情報が個人からアカウントへのデータセットで使用できないたびに、行レベルで一意のアカウント IDとして使用されます。  <p>イベントデータセットのアカウント ID として選択した ID の値がレコードに含まれていない場合、そのレコードはスキップされます。 |
 | **[!UICONTROL アカウント ID]** | Experience Platform のデータセットスキーマで定義されている使用可能な ID からアカウント ID（アカウントの一意の ID）を選択します。 接続にコンテナとしてグローバルアカウントを追加していない際に適用されます。 |
 | **[!UICONTROL 商談 ID]** | Experience Platform のデータセットスキーマで定義されている使用可能な ID から商談 ID（商談の一意の ID）を選択します。 |
 | **[!UICONTROL 購買グループ ID]** | Experience Platform のデータセットスキーマで定義されている使用可能な ID から購買グループ ID（購買グループの一意の ID）を選択します。 |

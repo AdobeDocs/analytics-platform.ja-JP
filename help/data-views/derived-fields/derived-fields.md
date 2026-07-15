@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -23,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 10573
 ht-degree: 98%
@@ -36,7 +35,6 @@ ht-degree: 98%
 >id="dataview_derivedfields"
 >title="派生フィールド"
 >abstract="派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、データ操作をその場で定義できます。 その派生フィールドを Workspace のコンポーネント（指標またはディメンション）として使用したり、さらにデータビューでコンポーネントとして定義したりできます。"
-
 
 派生フィールドは、Adobe Customer Journey Analytics のリアルタイムレポート機能の重要な側面です。 派生フィールドを使用すると、カスタマイズ可能なルールビルダーを使用して、（多くの場合、複雑な）データ操作をその場で定義できます。 その派生フィールドを [Workspace](../../analysis-workspace/home.md) のコンポーネント（指標またはディメンション）として使用したり、[データビュー](../data-views.md)でコンポーネントとしてさらに定義したりできます。
 
