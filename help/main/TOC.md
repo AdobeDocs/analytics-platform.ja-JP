@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+source-git-commit: 2b0562aa931f2909192929d9ccf2312f08c0d712
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 91%
+source-wordcount: '1462'
+ht-degree: 92%
 
 ---
 
@@ -145,6 +145,12 @@ ht-degree: 91%
       + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [分析](/help/connections/audience-analysis/analyze-audiences.md)
       + [ユースケース](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+   + 同意に関するレポートとフィルタリング {#consent-reporting-filtering}
+      + [概要](/help/connections/consent-reporting-filtering/consent-overview.md)
+      + [設定](/help/connections/consent-reporting-filtering/consent-configure.md)
+      + [管理](/help/connections/consent-reporting-filtering/consent-manage.md)
+      + [分析](/help/connections/consent-reporting-filtering/consent-analyze.md)
+      + [ユースケース](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + データビュー {#cja-dataviews}
    + [データビューの概要](../data-views/data-views.md)
    + [データビューの作成または編集](../data-views/create-dataview.md)
@@ -369,6 +375,7 @@ ht-degree: 91%
       + [セグメントの管理](/help/components/segments/seg-manage.md)
       + [演算子](/help/components/segments/seg-operators.md)
       + [セグメントの使用](/help/components/segments/seg-use.md)
+      + {hide-from-toc}[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)
    + 計算指標 {#cja-calcmetrics}
       + [概要](../components/calc-metrics/calc-metr-overview.md)
       + ワークフロー {#cm-workflow}

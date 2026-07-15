@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+source-git-commit: 0cc15e1c3dcbd8609a47954af8602ad617c67a51
 workflow-type: tm+mt
-source-wordcount: 2675
-ht-degree: 29%
+source-wordcount: 2774
+ht-degree: 28%
 
 ---
 
@@ -68,6 +68,15 @@ ht-degree: 29%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_user-agent"
+>title=""
+>abstract="ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。"
+
+<!-- markdownlint-enable MD034 -->
+
 1. Adobe ID の資格情報を使用して [experiencecloud.adobe.com](https://experiencecloud.adobe.com) にログインします。
 
 1. インターフェイスの右上にあるアプリ切り替えボタン![アプリ](/help/assets/icons/Apps.svg)から「[!UICONTROL **Customer Journey Analytics**]」を選択します。
@@ -101,6 +110,11 @@ ht-degree: 29%
 
 1. データフィード設定にコンポーネントを追加します。 左側のパネルで、含めるコンポーネントを見つけ、キャンバスにドラッグしてデータ構造を構築します。 複数のコンポーネントを選択するには、**[!UICONTROL Shift]** キーを押すか、**[!UICONTROL Command]** キー（macOS の場合）または **[!UICONTROL Ctrl]** キー（Windows の場合）を押します。
 
+   >[!NOTE]
+   >
+   >ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。 競合するコンポーネントを追加しようとすると、エラーが表示されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+
+
    次の情報を使用して、常に含まれるディメンション、含めないディメンション、および置換する必要のある指標を把握します。
 
    +++ データフィードに必ず含まれるディメンション
@@ -109,9 +123,9 @@ ht-degree: 29%
 
    | ディメンション名 | メモ | データフィード | その他のレポート |
    |---|---|---|---|
-   | タイムスタンプ | イベント期間のタイムスタンプ。 マイクロ秒粒度。 UTCで表されます。 | 必須 | 使用不可 |
-   | 行ID | 一意の行識別子 | 必須 | 使用不可 |
-   | セッション ID | 各セッションの一意のID | 必須 | 使用不可 |
+   | タイムスタンプ UTC | イベントが発生した日時。UTC タイムゾーンで表されます。 サブ秒（マイクロ秒）の精度をサポートします。 | 必須 | 使用不可 |
+   | 行ID | データフィードに含まれる各行の一意のID。 | 必須 | 使用不可 |
+   | セッション ID | データフィードに含まれる各セッションの一意のID。 | 必須 | 使用不可 |
    | ユーザー ID | データビューと接続の人物ID | 必須 | オプションの標準 |
    | アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | アカウントコンテナを使用する際のアカウント ID | 必須 | オプションの標準 |
 
