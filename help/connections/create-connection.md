@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
+source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
 workflow-type: tm+mt
-source-wordcount: 10413
+source-wordcount: 10479
 ht-degree: 90%
 
 ---
@@ -404,12 +404,22 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="ユーザー ID"
->abstract="イベントに関する豊富な情報を含むIDまたはIDMap タイプフィールドを選択します。 含まれる値は、以前に設定した人物ID名前空間（B2B ステッチ設定）の値に昇格されます。"
+>abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からユーザー ID を選択します。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="アカウント ID"
 >abstract="Experience Platform のデータセットスキーマで定義されている使用可能な ID からアカウント ID（アカウントの一意の ID）を選択します。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="ユーザー ID"
+>abstract="イベントに関する豊富な情報を含むIDまたはIDMap タイプフィールドを選択します。 含まれる値は、以前に設定したユーザーID名前空間の値に昇格されます。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="アカウント ID"
+>abstract="必要に応じて、データセットスキーマで定義された使用可能な非IDまたは非ユーザーID フィールドからアカウント IDを選択します。 含まれる値は、関連するアカウント ID情報が個人からアカウントへのデータセットで使用できないたびに、行レベルで一意のアカウント IDとして使用されます。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
