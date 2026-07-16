@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
+source-git-commit: 8f55bd26df5d06a459b275beb9c92669e15b2fd0
 workflow-type: tm+mt
 source-wordcount: 1203
 ht-degree: 20%
@@ -89,8 +89,6 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >id="connection_b2b_stitching_start_time"
 >title="開始時間"
 >abstract="ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。"
->additional-url=""
->additional-url=""
 
 
 1. Customer Journey Analyticsで、**[!UICONTROL Connections]**&#x200B;に移動し、[新しい接続を作成](/help/connections/create-connection.md#create-a-connection)するか、[既存の接続を編集](/help/connections/create-connection.md#edit-a-connection)します。
@@ -138,8 +136,6 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="ユーザーとアカウントのステッチを有効にする"
 >abstract="有効にすると、このデータセットは B2B アカウントのステッチを使用します。 ユーザーとアカウントのデータセットに基づいてアカウント ID を検索するために必要な&#x200B;**[!UICONTROL ユーザー ID]**&#x200B;を選択します。<br/>無効になっている場合、このデータセットでは B2B アカウントのステッチを使用&#x200B;*しない*&#x200B;ため、代わりに必要な&#x200B;**[!UICONTROL アカウント ID]** を選択する必要があります。"
->additional-url=""
->additional-url=""
 
 
 接続レベルでB2B ステッチを設定した後、ステッチするイベントデータセットごとに個別にB2B アカウントステッチを有効にする必要があります。
