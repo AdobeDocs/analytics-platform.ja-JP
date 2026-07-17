@@ -5,11 +5,18 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
 hold: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
 source-wordcount: 388
@@ -45,7 +52,7 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 ### 派生フィールド
 
-派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を参照してください。
+派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を参照してください。
 
 ## Analysis Workspaceの同意ポリシーコンポーネントの使用
 
@@ -63,4 +70,4 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 同意レポート用にデータビューが設定されている場合、Customer Journey Analyticsでは、Analysis Workspaceで同意ポリシー分析テンプレートが自動的に使用できるようになります。 このテンプレートは、訪問者の同意ポリシーメンバーシップに関するレポートの出発点を提供します。
 
-テンプレートへのアクセス方法について詳しくは、[ テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。
+テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。
