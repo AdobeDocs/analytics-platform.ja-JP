@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 385
+source-wordcount: 388
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Experience Platform プロファイルデータセットからCustomer Journey Analytics接続に同意ポリシーデータを取り込むことができます。
 
-[同意レポートとフィルタリング設定](/help/connections/consent-reporting-filtering/consent-configure.md)を作成すると、同意ポリシーデータは、設定済みの接続のデータビューで新しいコンポーネントとして使用できるようになります。 これらのコンポーネントは、データビューにアクセスできる場合は、Analysis Workspace内の任意の場所で使用できます。
+[同意レポートとフィルタリング設定](/help/connections/consent-reporting-filtering/consent-configure.md)を作成し、レポートを有効にすると、同意ポリシーデータは、設定済みの接続のデータビューで新しいコンポーネントとして使用できるようになります。 これらのコンポーネントは、データビューにアクセスできる場合は、Analysis Workspace内の任意の場所で使用できます。
 
 ## 同意ポリシーコンポーネント
 

@@ -19,9 +19,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +29,15 @@ ht-degree: 2%
 # 同意レポートとフィルタリングの概要
 
 同意のレポートとフィルタリングは、Adobe Experience Platform プロファイルデータセットに保存されている同意ポリシーメンバーシップデータを使用して、訪問者の同意に関するレポートを作成し、同意しない訪問者をCustomer Journey Analyticsに取り込む前に除外することができます。
+
+## 前提条件
+
+同意レポートとフィルタリングを設定する前に、次のことを確認します。
+
+* Adobe Healthcare ShieldまたはPrivacy &amp; Security Shieldのライセンスを取得しています。
+* Customer Journey Analyticsにはシステム管理者の権限があります。
+* 使用するサンドボックスには、`consentPoliciesIDMap` フィールドに同意ポリシーメンバーシップデータを含むプロファイルデータセットが含まれています。
+* 設定する接続は既に存在します。 詳細については、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。
 
 次の図と関連する表は、同意レポートとフィルタリングによってAnalysis Workspaceで同意ポリシーデータを使用できるようにし、取り込み時に訪問者データをフィルタリングする方法の概要を示しています。
 
