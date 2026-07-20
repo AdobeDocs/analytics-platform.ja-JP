@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8348295450f9901c74de7a8188d370e0fc612723
+source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: 1239
 ht-degree: 13%
 
 ---
@@ -68,7 +68,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="ユーザー識別子の名前空間"
->abstract="レポートに最も関連性の高い人物ID名前空間を選択します。 例えば、電子メールです。"
+>abstract="レポートに最も関連性の高い人物ID名前空間を選択します。 例えば、電子メールです。 **[!UICONTROL 人物からアカウントへのステッチ]**&#x200B;が有効になっているイベントデータセットでは、人物IDがこの人物識別子の名前空間に昇格されます。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -83,7 +83,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="アカウント"
->abstract="一意のアカウント IDの値を含むデータセット内のフィールドを選択します。 アカウント ID情報は、個人からアカウントへのステッチが有効になっているイベントデータセットの行で利用できるようになります。"
+>abstract="一意のアカウント IDの値を含むデータセット内のフィールドを選択します。 アカウント ID情報は、**[!UICONTROL 人物とアカウントの結合]**&#x200B;が有効になっているイベントデータセットの行で利用できるようになります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -135,7 +135,8 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="ユーザーとアカウントのステッチを有効にする"
->abstract="このデータセットを有効にすると、B2B人物をアカウントのステッチングに使用します。 **[!UICONTROL 人物ID]**&#x200B;の値は、設定された人物識別子の名前空間から値に昇格され、次に&#x200B;**[!UICONTROL 人物からアカウントへのデータセット]** （B2B ステッチ設定インターフェイス）に基づいてアカウント IDを検索するために使用されます。<br/>無効にした場合、このデータセットはB2B人物からアカウントへのステッチを使用せず、代わりに必要な&#x200B;**[!UICONTROL アカウント ID]**&#x200B;を選択する必要があります。"
+>abstract="このデータセットを有効にすると、B2B人物をアカウントのステッチングに使用します。 **[!UICONTROL 人物ID]**&#x200B;の値は、設定された&#x200B;**[!UICONTROL 人物ID名前空間]**&#x200B;から値に昇格され、その後、個人とアカウントのデータセットに基づいてアカウント IDを検索するために使用されます。<br/>無効にした場合、このデータセットではB2B ユーザーからアカウントへのステッチは使用されないので、代わりに必須の&#x200B;**[!UICONTROL アカウント ID]**&#x200B;を選択する必要があります。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="B2B ステッチの設定"
 
 接続レベルでB2B ステッチを設定した後、ステッチするイベントデータセットごとに個別にB2B アカウントステッチを有効にする必要があります。
 
