@@ -16,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1602
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
@@ -89,9 +89,9 @@ ht-degree: 55%
 | **[!UICONTROL トレンド選択]** | 選択内容のトレンド折れ線グラフビジュアライゼーションを作成します。 |
 | **[!UICONTROL 選択した行のみを表示]** | ビジュアライゼーションで選択した行のみを表示します。 |
 | **[!UICONTROL すべての行を表示]** | ビジュアライゼーションのすべての行を表示します。 |
-| **[!UICONTROL 選択した行の名前を変更]** | *テストの使用制限*<br/>&#x200B;選択した行の名前を変更します。 選択した行&#x200B;**の名前を変更ダイアログに**&#x200B;[!UICONTROL &#x200B;名前&#x200B;]&#x200B;**を入力します。**&#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用して、ディメンション ヘッダー列の名前を変更した行をリセットできます。 [&#x200B; インライン分類の例](#inline-classifications-example)を参照してください。 |
-| **[!UICONTROL 選択した行を結合]** | *テストの使用制限*<br/>&#x200B;選択した行を組み合わせる。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用して、ディメンションヘッダー列の名前が変更された行をリセットできます。 [&#x200B; インライン分類の例](#inline-classifications-example)を参照してください。 |
-| **[!UICONTROL 派生フィールドとして作成]** | *制限付きテストの可用性&#x200B;*<br/>*このコンテキストメニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [&#x200B; インライン分類の例](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 選択した行の名前を変更]** | 選択した行の名前を変更します。 選択した行&#x200B;**の名前を変更ダイアログに**&#x200B;[!UICONTROL &#x200B;名前&#x200B;]&#x200B;**を入力します。**&#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
+| **[!UICONTROL 選択した行を結合]** | 選択した行を結合します。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![歯車](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
+| **[!UICONTROL 変更された行を派生フィールドとして作成]** | *このコンテキスト メニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
 | **[!UICONTROL 選択内容から注釈を作成]** | [注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開いて、選択範囲の注釈を作成します。 |
 | **[!UICONTROL 選択範囲からセグメントを作成]** | [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
 | **[!UICONTROL 選択内容からオーディエンスを作成]** | [&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
@@ -106,9 +106,9 @@ ht-degree: 55%
 | **[!UICONTROL アトリビューションモデルを変更]** | 列のアトリビューションモデルを変更します。 |
 | **[!UICONTROL アトリビューションモデルを比較]** | 新しいアトリビューションモデルを指定し、選択した列のアトリビューションモデルと比較します。 新しいアトリビューションモデル指標を含む新しい列が追加されます。 また、比較用に変化率の列が追加されます。 |
 | **[!UICONTROL 列の幅をリセット]** | 列の幅をデフォルトの幅にリセットします。 |
-| **[!UICONTROL 選択内容から注釈を作成]** | 「**[!UICONTROL 注釈の詳細]**」を開いて、注釈を追加します。 |
-| **[!UICONTROL 選択範囲からセグメントを作成]** | **[!UICONTROL セグメントビルダー]**&#x200B;を開いて、選択範囲からセグメントを作成します。 |
-| **[!UICONTROL 選択内容からオーディエンスを作成]** | **[!UICONTROL オーディエンスを作成]**&#x200B;ダイアログを開いて、選択内容からオーディエンスを作成します。 |
+| **[!UICONTROL 選択内容から注釈を作成]** | [注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開いて、選択範囲の注釈を作成します。 |
+| **[!UICONTROL 選択範囲からセグメントを作成]** | [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
+| **[!UICONTROL 選択内容からオーディエンスを作成]** | [&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
 
 
 ## 行の高さの変更
@@ -116,52 +116,54 @@ ht-degree: 55%
 プロジェクトの[表示密度](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)を&#x200B;**[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]**&#x200B;に設定できます。
 
 
-## インライン分類の例
+## インライン分類 {#inline-classifications-example}
 
 {{release-limited-testing-section}}
 
-この例では、**[!UICONTROL 選択行の名前を変更]**、**[!UICONTROL 選択行を組み合わせる]**、**[!UICONTROL 派生フィールドとして作成]** コンテキストメニューオプションを使用する方法を示します。 変更したフリーフォームテーブルをリセットする方法を説明します。
+インライン分類を使用すると、フリーフォームテーブル内の行の名前を変更したり、行を結合したりできます。 テーブル内の変更された行から派生フィールドを作成します。
+
+次の例は、**[!UICONTROL 選択行の名前変更]**、**[!UICONTROL 選択行の結合]**、**[!UICONTROL 変更された行を派生フィールドとして作成]** コンテキストメニューオプションを使用する方法を示しています。 変更したフリーフォームテーブルをリセットする方法を説明します。
 
 * **[!UICONTROL No value]**&#x200B;行の名前を&#x200B;**[!UICONTROL Other]**&#x200B;に変更します。
 
-   1. 選択した&#x200B;**[!UICONTROL 値なし]**&#x200B;行のコンテキストメニューから「**[!UICONTROL 選択した行の名前を変更]**」を選択します。
+  1. 選択した&#x200B;**[!UICONTROL 値なし]**&#x200B;行のコンテキストメニューから「**[!UICONTROL 選択した行の名前を変更]**」を選択します。
 
-      ![選択した行の名前を変更のコンテキストメニューオプションを選択](assets/context-rename.png)
+     ![選択した行の名前を変更のコンテキストメニューオプションを選択](assets/context-rename.png)
 
-   1. **[!UICONTROL 選択行の名前を変更]** ダイアログで、次の操作を行います。
+  1. **[!UICONTROL 選択行の名前を変更]** ダイアログで、次の操作を行います。
 
-      ![選択した行の名前を変更ダイアログ &#x200B;](assets/dialog-rename.png)
+     ![選択した行の名前を変更ダイアログ &#x200B;](assets/dialog-rename.png)
 
-      1. <code>その他を入力</code> **[!UICONTROL Name]**&#x200B;の。
-      1. **[!UICONTROL OK]**&#x200B;を選択します。
+     1. <code>その他を入力</code> **[!UICONTROL Name]**&#x200B;の。
+     1. **[!UICONTROL OK]**&#x200B;を選択します。
 
 * **[!UICONTROL 男性]**&#x200B;行と&#x200B;**[!UICONTROL 女性]**&#x200B;行を1つの&#x200B;**[!UICONTROL 大人]**&#x200B;行に結合します。
 
-   1. **[!UICONTROL 男性]**&#x200B;および&#x200B;**[!UICONTROL 女性]**&#x200B;行を選択します。
-   1. 選択した行のコンテキストメニューから「**[!UICONTROL 選択した行を結合]**」を選択します。
+  1. **[!UICONTROL 男性]**&#x200B;および&#x200B;**[!UICONTROL 女性]**&#x200B;行を選択します。
+  1. 選択した行のコンテキストメニューから「**[!UICONTROL 選択した行を結合]**」を選択します。
 
-      ![選択した行を結合メニューオプションを選択](assets/context-combine.png)
+     ![選択した行を結合メニューオプションを選択](assets/context-combine.png)
 
-   1. **[!UICONTROL 選択した行を結合]** ダイアログで、次の操作を行います。
+  1. **[!UICONTROL 選択した行を結合]** ダイアログで、次の操作を行います。
 
-      ![選択した行を結合ダイアログ &#x200B;](assets/dialog-combine.png)
+     ![選択した行を結合ダイアログ &#x200B;](assets/dialog-combine.png)
 
-      1. <code>Adultsを入力</code> **[!UICONTROL Name]**&#x200B;の。
-      1. **[!UICONTROL OK]**&#x200B;を選択します。
+     1. <code>Adultsを入力</code> **[!UICONTROL Name]**&#x200B;の。
+     1. **[!UICONTROL OK]**&#x200B;を選択します。
 
 * フリーフォームテーブルの変更から派生フィールドを作成します。
 
-   1. 変更されたテーブルで選択した行のコンテキストメニューから「**[!UICONTROL 派生フィールドとして作成]**」を選択します。
+  1. 変更されたテーブル内の選択した行のコンテキストメニューから「**[!UICONTROL 変更された行を派生フィールドとして作成]**」を選択します。
 
-      ![派生フィールドとして作成メニューオプションを選択](assets/context-derived.png)
+     ![変更された行を派生フィールドとして作成メニューオプション &#x200B;](assets/context-derived.png)を選択
 
-   1. テーブルで行われたすべての変更に基づいて、派生フィールドの定義を検査、オプションで変更、保存します。
+  1. テーブルで行われたすべての変更に基づいて、派生フィールドの定義を検査、オプションで変更、保存します。
 
-      ![派生フィールドの作成ダイアログ &#x200B;](assets/dialog-derived.png)
+     ![派生フィールドの作成ダイアログ &#x200B;](assets/dialog-derived.png)
 
 * 変更する前に、フリーフォームテーブルを状態にリセットします。
 
-   1. **[!UICONTROL _ディメンション名&#x200B;_（変更）]**&#x200B;の横にある![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg)を選択します。
-   1. **[!UICONTROL 行の名前が変更された]** ポップアップから&#x200B;**[!UICONTROL 名前変更された行をリセット]**&#x200B;を選択します。
+  1. **[!UICONTROL _ディメンション名&#x200B;_（変更）]**&#x200B;の横にある![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg)を選択します。
+  1. **[!UICONTROL 行が変更された]** ポップアップから&#x200B;**[!UICONTROL 変更された行をリセット]**&#x200B;を選択します。
 
-      ![&#x200B; フリーフォームテーブルのリセット &#x200B;](assets/popup-reset.png)
+     ![&#x200B; フリーフォームテーブルのリセット &#x200B;](assets/popup-reset.png)

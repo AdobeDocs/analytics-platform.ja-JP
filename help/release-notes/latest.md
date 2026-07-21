@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 666
-ht-degree: 41%
+source-wordcount: 699
+ht-degree: 39%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 41%
 | **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
 | **Connections使用インターフェイスの更新** <br/>接続を管理する際の使用インターフェイスで、Customer Journey AnalyticsやCustomer Journey Analytics B2B editionなどの各モジュールの使用状況の詳細を確認できるようになりました。 <p>さらに、各モジュールの利用状況レポートを月別に分類できるようになりました。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
 | **CX Enterprise Coworker: Adobe AnalyticsからAdobe Analyticsに移行する際のデータの検証** <br/>CX Enterprise Coworkerの新しいスキルを使用すると、既存のCustomer Journey Analytics実装のデータとCustomer Journey Analytics実装のデータを検証できます。 <p>このスキルは、必要に応じて各ディメンション、指標、トレンドを個別に自動的に比較します。 また、すべてのAdobe Analytics レポートスイートをすべてのCustomer Journey Analytics データビューと比較することもできます。 そして、AIを活用してインサイトとレコメンデーションを生成し、Customer Journey Analyticsへの移行を促進します。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月末 |
+| **インライン分類**<br/>[&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)を使用すると、フリーフォームテーブル内の行の名前を変更したり、行を結合したりできます。 テーブル内の変更された行から派生フィールドを作成します。 | 2026年7月20日（PT） | 2026年7月25日（PT） |
 
 ### Customer Journey Analytics の修正点
 
