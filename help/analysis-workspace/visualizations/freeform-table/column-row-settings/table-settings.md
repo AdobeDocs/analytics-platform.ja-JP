@@ -16,7 +16,7 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
 workflow-type: tm+mt
 source-wordcount: 1630
 ht-degree: 53%
@@ -89,9 +89,9 @@ ht-degree: 53%
 | **[!UICONTROL トレンド選択]** | 選択内容のトレンド折れ線グラフビジュアライゼーションを作成します。 |
 | **[!UICONTROL 選択した行のみを表示]** | ビジュアライゼーションで選択した行のみを表示します。 |
 | **[!UICONTROL すべての行を表示]** | ビジュアライゼーションのすべての行を表示します。 |
-| **[!UICONTROL 選択した行の名前を変更]** | 選択した行の名前を変更します。 選択した行&#x200B;**の名前を変更ダイアログに**&#x200B;[!UICONTROL &#x200B;名前&#x200B;]&#x200B;**を入力します。**&#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
-| **[!UICONTROL 選択した行を結合]** | 選択した行を結合します。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![歯車](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
-| **[!UICONTROL 変更された行を派生フィールドとして作成]** | *このコンテキスト メニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [&#x200B; インライン分類](#inline-classifications)を参照してください。 |
+| **[!UICONTROL 選択した行の名前を変更]** | 選択した行の名前を変更します。 選択した行&#x200B;**の名前を変更ダイアログに**&#x200B;[!UICONTROL &#x200B;名前&#x200B;]&#x200B;**を入力します。**&#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 選択した行を結合]** | 選択した行を結合します。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![歯車](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 変更された行を派生フィールドとして作成]** | *このコンテキスト メニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
 | **[!UICONTROL 選択内容から注釈を作成]** | [注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開いて、選択範囲の注釈を作成します。 |
 | **[!UICONTROL 選択範囲からセグメントを作成]** | [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
 | **[!UICONTROL 選択内容からオーディエンスを作成]** | [&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |

@@ -2,15 +2,14 @@
 title: サブイベント分析
 description: サブイベント分析を使用して、Customer Data Analyticsでイベント内の個々のジャーニーやその他のコンテナをフィルタリングし、商品レポートでアトリビューションの裁ち落としを排除する方法について説明します。
 feature: Segmentation
-hide: true
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: babf5a87458103ca962113114d18b9dd8e1ab303
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 680
-ht-degree: 8%
+source-wordcount: 636
+ht-degree: 9%
 
 ---
 

@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 163376377713bde099524bd2a5d3060a5193a709
+source-git-commit: ea98309e823b1d4249ac09ca11f0d9f22406c8f3
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 92%
@@ -375,7 +375,7 @@ ht-degree: 92%
     + [セグメントの管理](/help/components/segments/seg-manage.md)
     + [演算子](/help/components/segments/seg-operators.md)
     + [セグメントの使用](/help/components/segments/seg-use.md)
-    + {hide-from-toc}[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)
+    + [サブイベント分析](/help/components/segments/sub-event.md)
   + 計算指標 {#cja-calcmetrics}
     + [概要](../components/calc-metrics/calc-metr-overview.md)
     + ワークフロー {#cm-workflow}
@@ -449,7 +449,6 @@ ht-degree: 92%
   + [ワークブックスケジュールの管理](/help/report-builder/manage-schedules-reportbuilder.md)
   + [制限付きラベル](../report-builder/restricted-labels.md)
   + [Report Builder の設定](../report-builder/report-builder-settings.md)
-
 
 + レポートアクティビティマネージャー {#reporting-activity-manager}
   + [概要](../reporting-activity-manager/reporting-activity-overview.md)
