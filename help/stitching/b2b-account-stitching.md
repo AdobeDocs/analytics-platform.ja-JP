@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
-source-wordcount: 1239
-ht-degree: 13%
+source-wordcount: 1245
+ht-degree: 11%
 
 ---
 
@@ -77,12 +77,12 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="人物"
+>title="ユーザー ID"
 >abstract="ユーザーIDを含むデータセットのフィールドを選択します。 このフィールドの名前空間は、選択したユーザーID名前空間と異なるか、同じである可能性があります。 異なる場合は、2つの名前空間をID グラフでリンクする必要があります。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="アカウント"
+>title="アカウント ID"
 >abstract="一意のアカウント IDの値を含むデータセット内のフィールドを選択します。 アカウント ID情報は、**[!UICONTROL 人物とアカウントの結合]**&#x200B;が有効になっているイベントデータセットの行で利用できるようになります。"
 
 >[!CONTEXTUALHELP]
@@ -116,8 +116,8 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
       | フィールド | 必須 | 説明 |
       |---|:---:|---|
       | **[!UICONTROL アカウント データセットへの人物]** | ![必須](/help/assets/icons/Required.svg) | 個人をアカウントにマッピングするルックアップ（レコードまたは非時系列データセット）を選択します。 |
-      | **[!UICONTROL ユーザー]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドは ID としてマークする必要があります。また、「**[!UICONTROL アカウント]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。 |
-      | **[!UICONTROL アカウント]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、「**[!UICONTROL ユーザー]**」フィールドまたは「**[!UICONTROL 開始時間]**」フィールドと同じにすることはできません。 |
+      | **[!UICONTROL ユーザー ID]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
+      | **[!UICONTROL アカウント ID]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
       | **開始時間** | | ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。 |
 
       >[!NOTE]
