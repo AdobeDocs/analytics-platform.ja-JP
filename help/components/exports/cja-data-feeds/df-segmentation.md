@@ -4,11 +4,18 @@ description: Customer Journey Analytics データフィードにセグメント�
 keywords: クリックストリーム；データフィード；データフィード；セグメンテーション；セグメント；日付範囲
 feature: Components
 hide: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 357
@@ -46,5 +53,5 @@ Customer Journey Analyticsのデータフィードでセグメンテーション
 - **セッションコンテナ**：配信ウィンドウ内の適格セッション内のすべてのイベントが含まれ、セッションの選定がルックバック日付範囲にわたって評価されます。
 - **人物コンテナ**：配信ウィンドウ内のすべてのイベントは、ルックバック日付範囲内に適格な人物に含まれます。
 
-ルックバック日付範囲と、それがセグメントの選定にどのように影響するかについては、[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
+ルックバック日付範囲と、それがセグメントの選定にどのように影響するかについては、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
 

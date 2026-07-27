@@ -6,11 +6,24 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 3268
@@ -37,7 +50,7 @@ Customer Journey Analyticsでは、Analysis Workspaceから指定されたクラ
 
 Analysis Workspace から完全なテーブルを Google、Azure、Amazon、Adobe などのクラウドプロバイダーに書き出すことができます。
 
-[ テーブルの書き出し](#advantages-of-full-table-export)の利点には、数百万行を書き出す機能、計算指標を含める機能、連結された値で構造化データを出力する機能などが含まれます。
+[&#x200B; テーブルの書き出し](#advantages-of-full-table-export)の利点には、数百万行を書き出す機能、計算指標を含める機能、連結された値で構造化データを出力する機能などが含まれます。
 
 完全なテーブルを書き出す場合は、次の点を考慮します。
 
@@ -129,11 +142,11 @@ Analysis Workspace から完全なテーブルを Google、Azure、Amazon、Adob
 
 Analysis Workspace から完全なテーブルを書き出すには：
 
-1. まだ設定していない場合は、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)および[書き出し場所の設定](/help/components/exports/cloud-export-locations.md)の説明に従って、書き出しアカウントと場所を設定します。
+1. まだ設定していない場合は、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)および[書き出し場所の設定](/help/components/exports/cloud-export-locations.md)の説明に従って、書き出しアカウントと場所を設定します。
 
 1. Analysis Workspaceで、フリーフォームテーブルの見出しを右クリックしてコンテキストメニューを表示し、「[!UICONTROL **テーブル全体を書き出し**]」を選択します。
 
-   ![ テーブル全体を書き出しがハイライト表示されたフリーフォームテーブルのコンテキストメニュー。](assets/export-full-table.png)
+   ![&#x200B; テーブル全体を書き出しがハイライト表示されたフリーフォームテーブルのコンテキストメニュー。](assets/export-full-table.png)
 
 1. [!UICONTROL **新しい完全なテーブルの書き出し**]&#x200B;ダイアログボックスで、次の情報を指定します。
 
@@ -142,7 +155,7 @@ Analysis Workspace から完全なテーブルを書き出すには：
    | 名前 | 書き出しの名前を指定します。 この名前は、書き出しのリストに表示されます。 |
    | タグ | 既存のタグを書き出しに適用することも、新しいタグを作成および適用することもできます。 <p>既存のタグを書き出しに適用するには、ドロップダウンメニューから任意のタグを選択します。 あなたの会社のすべてのタグは適用できます。</p> <p>新しいタグを作成するには、新しいタグの名前を入力して、Enter キーを押します。</p><p>書き出しにタグを適用する際は、次の点を考慮します。 <ul><li>適用したタグは、書き出しテーブルでフィルタリングまたは検索できます。</li> <li>プロジェクトに適用したタグは、[書き出しの管理](/help/components/exports/manage-exports.md)の「書き出しページでの列の設定」で説明されているように、完全なテーブルを書き出す際には自動的に適用されません （または、[書き出し用の完全なプロジェクトのスケジュールを設定](/help/analysis-workspace/export/t-schedule-report.md)すると、プロジェクトに適用されたすべてのタグが書き出しに自動的に適用されます）。 </li></ul> |
    | 説明 | 書き出しに説明を追加します。 書き出しを表示する際に、説明を[書き出しページ](/help/components/exports/manage-exports.md)の列として表示することを選択できます。 |
-   | データビュー | 書き出しに含めるコンポーネントが含まれているデータビューを選択します。 「![ データ ](/help/assets/icons/Data.svg) データ表示」ドロップダウンメニューは、ダイアログの左上隅にあります。  <p>**注意：** データテーブルに既に含まれているコンポーネントが欠落しているデータビューを選択した場合、選択したデータビューに含まれているコンポーネントを使用して、パネルをクリアして再作成するように求められます。 </p> |
+   | データビュー | 書き出しに含めるコンポーネントが含まれているデータビューを選択します。 「![&#x200B; データ &#x200B;](/help/assets/icons/Data.svg) データ表示」ドロップダウンメニューは、ダイアログの左上隅にあります。  <p>**注意：** データテーブルに既に含まれているコンポーネントが欠落しているデータビューを選択した場合、選択したデータビューに含まれているコンポーネントを使用して、パネルをクリアして再作成するように求められます。 </p> |
    | データ構造 | 書き出すフリーフォームテーブルを表示します。 左側のパネルからテーブルにコンポーネントをドラッグして、データ構造を変更できます。 フィルターを適用するには、コンポーネントをフィルター領域にドラッグします。 コンポーネントをキャンバスに追加すると、テーブルは動的に更新されます。 最大10列まで含めることができます。<p>プロジェクトのテーブル全体に適用されたセグメントは、テーブルの上に表示されます。 セグメントまたはセグメントのグループを書き出しに適用できます。</p> |
    | レポートウィンドウ | 各書き出しファイルに含めるレポート時間枠を選択します。 オプションには、「[!UICONTROL **今日**]」、「**[!UICONTROL 昨日]**」、「**[!UICONTROL 過去 7 日間]**」、「**[!UICONTROL 過去 30 日間]**」、「**[!UICONTROL 今週]**」、「**[!UICONTROL 今月]**」が含まれます。 <p>**[!UICONTROL 書き出し頻度]**&#x200B;を&#x200B;**[!UICONTROL 今すぐ送信（1 回限り）]**&#x200B;に設定した際、このオプションは表示されません。</p> |
    | すべてクリア | データテーブルの内容をクリアします。 これにより、新しい完全なテーブルの書き出しダイアログ内で新しいテーブルの作成を直接開始できます。 |
@@ -225,12 +238,12 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 
 次のコンポーネントはサポートされていないので、Analysis Workspace では、完全なテーブルの書き出しを実行する際に、テーブルから削除するプロンプトが表示されます。
 
-* 指標の定義でサポートされていない関数を使用する計算指標（詳細については、[ サポートされていない計算指標の関数](#calculated-metric-functions-support)を参照）
-* 管理者によってエクスポートが制限されているコンポーネント（詳細については、[ ラベルとポリシー](/help/data-views/data-governance.md)の「*データガバナンスポリシーに関するセグメント データビュー*」セクションを参照）
+* 指標の定義でサポートされていない関数を使用する計算指標（詳細については、[&#x200B; サポートされていない計算指標の関数](#calculated-metric-functions-support)を参照）
+* 管理者によってエクスポートが制限されているコンポーネント（詳細については、[&#x200B; ラベルとポリシー](/help/data-views/data-governance.md)の「*データガバナンスポリシーに関するセグメント データビュー*」セクションを参照）
 * 次のすべての条件を満たす任意のディメンション。
-  * は、[ オブジェクトの配列](/help/use-cases/object-arrays.md)の一部であるフィールドから作成されます（Adobe Analyticsの複数値の変数と同様）。
+  * は、[&#x200B; オブジェクトの配列](/help/use-cases/object-arrays.md)の一部であるフィールドから作成されます（Adobe Analyticsの複数値の変数と同様）。
   * [永続性が有効になっています](/help/data-views/component-settings/persistence.md)。
-  * [ バインディングディメンション ](/help/use-cases/data-views/binding-dimensions-metrics.md)を使用していません。
+  * [&#x200B; バインディングディメンション &#x200B;](/help/use-cases/data-views/binding-dimensions-metrics.md)を使用していません。
 * 異なる[オブジェクトの配列](/help/use-cases/object-arrays.md)を参照するフィールドからの複数のディメンション （同じオブジェクトの配列を参照する複数のディメンションが許可されます）。
 * レポートあたり 10 つ以上のディメンションと 10 つの指標（最大 10 つのディメンションと 10 つの指標がサポートされます）
 * テーブル列の場合：
