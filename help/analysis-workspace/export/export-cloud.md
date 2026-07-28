@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 3268
 ht-degree: 59%
@@ -238,22 +238,22 @@ Customer Journey Analytics データをクラウドに書き出すと、次の�
 
 次のコンポーネントはサポートされていないので、Analysis Workspace では、完全なテーブルの書き出しを実行する際に、テーブルから削除するプロンプトが表示されます。
 
-* 指標の定義でサポートされていない関数を使用する計算指標（詳細については、[&#x200B; サポートされていない計算指標の関数](#unsupported-calculated-metric-functions)を参照）
+* 指標の定義でサポートされていない関数を使用する計算指標（詳細については、[&#x200B; サポートされていない計算指標の関数](#calculated-metric-functions-support)を参照）
 * 管理者によってエクスポートが制限されているコンポーネント（詳細については、[&#x200B; ラベルとポリシー](/help/data-views/data-governance.md)の「*データガバナンスポリシーに関するセグメント データビュー*」セクションを参照）
 * 次のすべての条件を満たす任意のディメンション。
-   * は、[&#x200B; オブジェクトの配列](/help/use-cases/object-arrays.md)の一部であるフィールドから作成されます（Adobe Analyticsの複数値の変数と同様）。
-   * [永続性が有効になっています](/help/data-views/component-settings/persistence.md)。
-   * [&#x200B; バインディングディメンション &#x200B;](/help/use-cases/data-views/binding-dimensions-metrics.md)を使用していません。
+  * は、[&#x200B; オブジェクトの配列](/help/use-cases/object-arrays.md)の一部であるフィールドから作成されます（Adobe Analyticsの複数値の変数と同様）。
+  * [永続性が有効になっています](/help/data-views/component-settings/persistence.md)。
+  * [&#x200B; バインディングディメンション &#x200B;](/help/use-cases/data-views/binding-dimensions-metrics.md)を使用していません。
 * 異なる[オブジェクトの配列](/help/use-cases/object-arrays.md)を参照するフィールドからの複数のディメンション （同じオブジェクトの配列を参照する複数のディメンションが許可されます）。
 * レポートあたり 10 つ以上のディメンションと 10 つの指標（最大 10 つのディメンションと 10 つの指標がサポートされます）
 * テーブル列の場合：
-   * 日付範囲
-   * ディメンション
+  * 日付範囲
+  * ディメンション
 * テーブル行の場合：
-   * 計算指標
-   * 指標
-   * 日付範囲
-   * セグメント
+  * 計算指標
+  * 指標
+  * 日付範囲
+  * セグメント
 
 ## 計算指標関数のサポート
 

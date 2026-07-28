@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics と、Experience Platform のデータを使った Analysis Workspace の使用方法について説明します。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: ea98309e823b1d4249ac09ca11f0d9f22406c8f3
+source-git-commit: cd71195e30ae7fcc877b395a2756a924fa61b11c
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 92%
+source-wordcount: '1469'
+ht-degree: 91%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 92%
     + [ランディングページ](../getting-started/landing.md)
     + [よくある質問](../getting-started/cja-faq.md)
     + [BI ソリューションとの比較](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc}[Analytics製品の比較](/help/getting-started/analytics-product-comparison.md)
     + [AI アシスタント](../ai-assistant.md)
     + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -425,6 +426,7 @@ ht-degree: 92%
       + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[&#x200B; データフィードのセグメント化](/help/components/exports/cja-data-feeds/df-segmentation.md)
   + データ辞書 {#data-dictionary}
     + [概要](../components/data-dictionary/data-dictionary-overview.md)
     + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
