@@ -17,10 +17,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
 workflow-type: tm+mt
-source-wordcount: 1851
-ht-degree: 79%
+source-wordcount: 1812
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="データのプレビュー"
->abstract="このセグメントのデータとデータビューのデータを比較します。 プレビューの割合は、**過去 90 日間**&#x200B;のデータビューの合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
+>abstract="セグメントデータとデータビューデータを比較します。 プレビューの割合は、**過去90日間**&#x200B;のデータビューの合計数を反映しています。<br><br/> プレビューの読み込みに失敗した場合、接続がバックフィルされます。"
 
 **[!UICONTROL セグメントビルダー]**&#x200B;ダイアログは、新しいセグメントの作成または既存のセグメントの編集に使用します。 ダイアログのタイトルは、[[!UICONTROL セグメント]マネージャー](/help/components/segments/seg-manage.md)から作成または管理するセグメントの場合、**[!UICONTROL 新しいセグメント]**&#x200B;または&#x200B;**[!UICONTROL セグメントを編集]**&#x200B;になります。
 
@@ -78,8 +78,8 @@ ht-degree: 79%
 
 定義のタイプと範囲を設定できます。
 
-1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。 ![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
-1. 定義の範囲を指定するには、**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を&#x200B;**[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** {type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**購買グループ &rbrace;のいずれかを選択します[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}**
+1. 定義のタイプを指定するには、包含または除外の定義を作成するかどうかを指定します。 ![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
+1. **[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから定義の範囲を選択します：**[!UICONTROL Event]**、**[!UICONTROL セッション]**、**[!UICONTROL 人]**、**[!UICONTROL グローバルアカウント]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Account]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Opportunity]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または&#x200B;**[!UICONTROL Buying Group]**&#x200B;[!BADGE 。]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 これらの設定は、後で常に変更できます。
 
@@ -130,13 +130,13 @@ ht-degree: 79%
 | **[!UICONTROL コンテナに名前を付ける]** | コンテナの名前をデフォルトの説明から変更します。 テキストフィールドに名前を入力します。 入力しない場合、デフォルトの説明が使用されます。 |
 | **[!UICONTROL コンテナを削除]** | 定義からコンテナを削除します。 |
 
-[&#x200B; コンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として定義したディメンションまたは指標をセグメントビルダーまたはクイックセグメントパネルにドラッグすると、適切なコンテナが自動的に選択され、デフォルトの&#x200B;**[!UICONTROL イベント]** コンテナは使用されません。 この動作により、セグメントのスコープは、イベント全体ではなく、個々のコンテナに維持されます。
+[&#x200B; コンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として定義されたディメンションまたは指標をセグメントビルダーにドラッグすると、デフォルトの&#x200B;**[!UICONTROL イベント]** コンテナではなく、適切なコンテナが自動的に選択されます。 この動作により、セグメントのスコープは、イベント全体ではなく、個々のコンテナに維持されます。
 
 [container](/help/data-views/create-dataview.md#containers-1) レベルとイベントレベルの両方のコンポーネントを単一のセグメントルールにドラッグすると、システムは、最も高い（最小の）共有コンテナである&#x200B;**[!UICONTROL Event]** コンテナを使用します。 セグメントルールの一部であるすべてのコンポーネントが同じコンテナレベルにある場合、そのコンテナが使用されます。
 
 ## 日付範囲
 
-周期的な日付範囲を含むセグメントを作成できます。 このようにして、進行中のキャンペーンやイベントに関する質問に回答できます。 例えば、*過去 60 日間にオンラインで購入したすべてのユーザー*&#x200B;を含むセグメントを作成できます。
+周期的な日付範囲を含むセグメントを作成できます。 このようにして、進行中のキャンペーンやイベントに関する質問に回答できます。 例えば、*過去60日間にオンラインで購入したすべてのユーザー*&#x200B;を含むセグメントを作成できます。
 
 ![周期的な日付範囲を使用したセグメント](assets/filter-rolling-date-range.gif)
 
@@ -152,11 +152,11 @@ ht-degree: 79%
 
 セグメントを使用して、セグメントを作成できます。 セグメント内でセグメントを使用すると、セグメントを最適化して複雑さを軽減できます。
 
-デバイスタイプ（2）と米国のステート（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。 カリフォルニア州のタブレットユーザーを取得するには、100 個のセグメントのいずれかを使用します。
+デバイスタイプ（2）と米国のステート（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。 カリフォルニア州でタブレットユーザーを取得するには、次の100のセグメントのいずれかを使用します。
 
 ![カルフォルニア州とタブレットのシンプルなセグメント](assets/filter-ca-tablet-single.png)
 
-あるいは、52のセグメントを定義できます。米国では50のセグメント、携帯電話では1つ、タブレットでは1つのセグメントです。 次に、セグメントを積み重ねて、同じ結果を取得します。 カリフォルニア州のタブレットユーザーを取得するには、次の2つのセグメントを積み重ねます。
+あるいは、52のセグメントを定義します。米国では50のセグメント、携帯電話用とタブレット用です。 同じ結果を得るには、セグメントをスタックします。 カリフォルニア州のタブレットユーザーを取得するには、次の2つのセグメントをスタックします。
 
 ![CA とタブレットの積み重ねセグメント](assets/filter-ca-tablet-stacked.png)
 
@@ -208,10 +208,10 @@ ht-degree: 79%
 次の表に、各アトリビューションモデルについて、この条件で選定 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) される受信イベントを示します。
 
 
-| 女性ページ - アトリビューション - <br/>*アトリビューションモデル* | イベント 1：<br/>ページ名が<br/>女性と等しい | イベント 2：<br/>ページ名が<br/>男性と等しい | イベント 3：<br/>ページ名が<br/>女性と等しい | イベント 4：<br/>ページ名が<br/>女性と等しい<br/>（永続化） | イベント 5：<br/>ページ名が<br/>チェックアウトと等しい | イベント 6：<br/>ページ名が<br/>女性と等しい | イベント 7：<br/>ページ名が<br/>ホームと等しい |
+| 女性ページ - アトリビューション - <br/>*アトリビューションモデル* | イベント 1：<br/>ページ名が<br/>女性と等しい | イベント 2：<br/>ページ名が<br/>男性と等しい | イベント 3：<br/>ページ名が<br/>女性と等しい | イベント 4：<br/>ページ名が<br/>女性と等しい<br/>（永続化） | イベント 5：<br/>ページ名が<br/>チェックアウトと等しい | イベント 6：<br/>ページ名が<br/>女性と等しい | イベント 7:<br/> ページ名が<br/>女性（明示的に設定） |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
-| 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
-| インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
+| 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 繰り返さないインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
 
 3 つのセグメントを使用したイベントに関するレポートの例を次に示します。
