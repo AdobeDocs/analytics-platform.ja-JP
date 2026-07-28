@@ -5,22 +5,14 @@ feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
 workflow-type: tm+mt
-source-wordcount: 1851
-ht-degree: 79%
+source-wordcount: 1812
+ht-degree: 75%
 
 ---
 
@@ -34,7 +26,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="データのプレビュー"
->abstract="このセグメントのデータとデータビューのデータを比較します。 プレビューの割合は、**過去 90 日間**&#x200B;のデータビューの合計数に基づきます。<br><br/>プレビューが読み込まれない場合、接続でバックフィル中の可能性があります。"
+>abstract="セグメントデータとデータビューデータを比較します。 プレビューの割合は、**過去90日間**&#x200B;のデータビューの合計数を反映しています。<br><br/> プレビューの読み込みに失敗した場合、接続がバックフィルされます。"
 
 **[!UICONTROL セグメントビルダー]**&#x200B;ダイアログは、新しいセグメントの作成または既存のセグメントの編集に使用します。 ダイアログのタイトルは、[[!UICONTROL セグメント]マネージャー](/help/components/segments/seg-manage.md)から作成または管理するセグメントの場合、**[!UICONTROL 新しいセグメント]**&#x200B;または&#x200B;**[!UICONTROL セグメントを編集]**&#x200B;になります。
 
@@ -78,8 +70,8 @@ ht-degree: 79%
 
 定義のタイプと範囲を設定できます。
 
-1. 定義のタイプを指定するには、この作成にインクルード定義または除外定義を含めるかどうかを指定します。 ![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
-1. 定義の範囲を指定するには、**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから、定義の範囲を&#x200B;**[!UICONTROL イベント]**、**[!UICONTROL セッション]**、**[!UICONTROL 人物]**、**[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** {type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**購買グループ &rbrace;のいずれかを選択します[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}**
+1. 定義のタイプを指定するには、包含または除外の定義を作成するかどうかを指定します。 ![設定](/help/assets/icons/Setting.svg) **[!UICONTROL オプション]**&#x200B;を選択し、ドロップダウンメニューから&#x200B;**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]**&#x200B;を選択します。
+1. **[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから定義の範囲を選択します：**[!UICONTROL Event]**、**[!UICONTROL セッション]**、**[!UICONTROL 人]**、**[!UICONTROL グローバルアカウント]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Account]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Opportunity]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または&#x200B;**[!UICONTROL Buying Group]**[!BADGE 。]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 これらの設定は、後で常に変更できます。
 
@@ -93,7 +85,7 @@ ht-degree: 79%
 
 1. コンポーネントパネルからコンポーネントを&#x200B;**[!UICONTROL ここに指標、セグメント、ディメンションをドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。
    * コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
-   * コンポーネントバーの![&#x200B; フィルター](/help/assets/icons/Filter.svg)を使用して、![&#x200B; チェックマーク &#x200B;](/help/assets/icons/Checkmark.svg) **[!UICONTROL 承認済み]**、![星](/help/assets/icons/Star.svg) **[!UICONTROL お気に入り]**、![&#x200B; データディメンション &#x200B;](/help/assets/icons2/DataDimension.svg)**[!UICONTROL ディメンション]**、![&#x200B; イベント &#x200B;](/help/assets/icons/Event.svg)**[!UICONTROL 指標]**、![&#128279;](/help/assets/icons/Layer.svg)&#x200B; セグメント **![[!UICONTROL カレンダー]](/help/assets/icons/Calendar.svg)日付**&#x200B;[!UICONTROL &#x200B;でフィルタリングできます範囲&#x200B;]&#x200B;**、および&#x200B; レイヤー**&#x200B;[!UICONTROL * コンテナ *] **&#x200B; コンポーネント（製品、Content Assetsなど）。 &#x200B;![](/help/assets/icons/Segmentation.svg)&rbrack;**&lbrack;![&#x200B; ラベル &#x200B;](/help/assets/icons/Label.svg) タグでフィルタリングすることもできます。
+   * コンポーネントバーの![ フィルター](/help/assets/icons/Filter.svg)を使用して、![ チェックマーク ](/help/assets/icons/Checkmark.svg) **[!UICONTROL 承認済み]**、![星](/help/assets/icons/Star.svg) **[!UICONTROL お気に入り]**、![ データディメンション ](/help/assets/icons2/DataDimension.svg)**[!UICONTROL ディメンション]**、![ イベント ](/help/assets/icons/Event.svg)**[!UICONTROL 指標]**、![ セグメント **[!UICONTROL カレンダー](/help/assets/icons/Calendar.svg)日付**[!UICONTROL &#x200B;でフィルタリングできます範囲&#x200B;]**、および![ レイヤー](/help/assets/icons/Layer.svg)**[!UICONTROL * コンテナ *]** コンポーネント（製品、Content Assetsなど）。 ](/help/assets/icons/Segmentation.svg)]**![![ ラベル ](/help/assets/icons/Label.svg) タグでフィルタリングすることもできます。
 1. コンポーネントの詳細を指定します。 例えば、「**[!UICONTROL 値を選択]**」から値を選択します。 または値を入力します。 1 つ以上の値を指定できる内容と方法は、コンポーネントと演算子によって異なります。
 1. オプションで、デフォルトの演算子を変更します。 例えば、**[!UICONTROL 等しい]**&#x200B;から&#x200B;**[!UICONTROL 次のいずれかと等しい]**&#x200B;に変更します。 使用可能な演算子の概要について詳しくは、[演算子](seg-operators.md)を参照してください。
 
@@ -118,7 +110,7 @@ ht-degree: 79%
 * 別のコンポーネントをコンテナに追加するには、コンポーネントパネルからコンテナにコンポーネントをドラッグ＆ドロップします。 青色の挿入線をガイドとして使用します。
 * 別のコンポーネントをコンテナの外側に追加するには、コンテナの外側、メイン定義コンテナの内側にあるコンポーネントパネルからコンポーネントをドラッグ＆ドロップします。 青色の挿入線をガイドとして使用します。
 * コンテナ内のコンポーネント間、コンテナ間またはコンテナとコンポーネント間のロジックを変更するには、適切な「**[!UICONTROL および]**」、「**[!UICONTROL または]**」、「**[!UICONTROL 次に]**」を選択します。 「次へ」を選択すると、セグメントを連続したセグメントに変換できます。 詳しくは、[順次セグメントの作成](seg-sequential-build.md)を参照してください。
-* コンテナレベルを切り替えるには、![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![&#x200B; アカウント &#x200B;](/help/assets/icons/Account.svg) **[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![商談](/help/assets/icons/Opportunity.svg) **[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![Web ページ &#x200B;](/help/assets/icons/WebPage.svg) **[!UICONTROL イベント]**、![訪問](/help/assets/icons/Visit.svg) **[!UICONTROL セッション]**、![&#x200B; ユーザー](/help/assets/icons/User.svg) **[!UICONTROL 人物]**&#x200B;または![&#x200B; レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**。 ![&#x200B; レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**&#x200B;を選択する場合は、使用する[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)を選択します。 例えば、ProductsやContent Assetsです。
+* コンテナレベルを切り替えるには、![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![ アカウント ](/help/assets/icons/Account.svg) **[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![商談](/help/assets/icons/Opportunity.svg) **[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![Web ページ ](/help/assets/icons/WebPage.svg) **[!UICONTROL イベント]**、![訪問](/help/assets/icons/Visit.svg) **[!UICONTROL セッション]**、![ ユーザー](/help/assets/icons/User.svg) **[!UICONTROL 人物]**&#x200B;または![ レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**。 ![ レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**&#x200B;を選択する場合は、使用する[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)を選択します。 例えば、ProductsやContent Assetsです。
 
 コンテナ内の ![設定](/help/assets/icons/Setting.svg) は、次のアクションに使用できます。
 
@@ -130,20 +122,20 @@ ht-degree: 79%
 | **[!UICONTROL コンテナに名前を付ける]** | コンテナの名前をデフォルトの説明から変更します。 テキストフィールドに名前を入力します。 入力しない場合、デフォルトの説明が使用されます。 |
 | **[!UICONTROL コンテナを削除]** | 定義からコンテナを削除します。 |
 
-[&#x200B; コンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として定義したディメンションまたは指標をセグメントビルダーまたはクイックセグメントパネルにドラッグすると、適切なコンテナが自動的に選択され、デフォルトの&#x200B;**[!UICONTROL イベント]** コンテナは使用されません。 この動作により、セグメントのスコープは、イベント全体ではなく、個々のコンテナに維持されます。
+[ コンテナ ](/help/data-views/create-dataview.md#containers-1)として定義されたディメンションまたは指標をセグメントビルダーにドラッグすると、デフォルトの&#x200B;**[!UICONTROL イベント]** コンテナではなく、適切なコンテナが自動的に選択されます。 この動作により、セグメントのスコープは、イベント全体ではなく、個々のコンテナに維持されます。
 
 [container](/help/data-views/create-dataview.md#containers-1) レベルとイベントレベルの両方のコンポーネントを単一のセグメントルールにドラッグすると、システムは、最も高い（最小の）共有コンテナである&#x200B;**[!UICONTROL Event]** コンテナを使用します。 セグメントルールの一部であるすべてのコンポーネントが同じコンテナレベルにある場合、そのコンテナが使用されます。
 
 ## 日付範囲
 
-周期的な日付範囲を含むセグメントを作成できます。 このようにして、進行中のキャンペーンやイベントに関する質問に回答できます。 例えば、*過去 60 日間にオンラインで購入したすべてのユーザー*&#x200B;を含むセグメントを作成できます。
+周期的な日付範囲を含むセグメントを作成できます。 このようにして、進行中のキャンペーンやイベントに関する質問に回答できます。 例えば、*過去60日間にオンラインで購入したすべてのユーザー*&#x200B;を含むセグメントを作成できます。
 
 ![周期的な日付範囲を使用したセグメント](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [セグメントでの周期的な日付範囲](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [セグメントでの周期的な日付範囲](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -152,11 +144,11 @@ ht-degree: 79%
 
 セグメントを使用して、セグメントを作成できます。 セグメント内でセグメントを使用すると、セグメントを最適化して複雑さを軽減できます。
 
-デバイスタイプ（2）と米国のステート（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。 カリフォルニア州のタブレットユーザーを取得するには、100 個のセグメントのいずれかを使用します。
+デバイスタイプ（2）と米国のステート（50）の組み合わせでセグメント化するとします。 デバイスタイプ（携帯電話とタブレット）と米国の州の一意の組み合わせごとに 100 個のセグメントを作成できます。 カリフォルニア州でタブレットユーザーを取得するには、次の100のセグメントのいずれかを使用します。
 
 ![カルフォルニア州とタブレットのシンプルなセグメント](assets/filter-ca-tablet-single.png)
 
-あるいは、52のセグメントを定義できます。米国では50のセグメント、携帯電話では1つ、タブレットでは1つのセグメントです。 次に、セグメントを積み重ねて、同じ結果を取得します。 カリフォルニア州のタブレットユーザーを取得するには、次の2つのセグメントを積み重ねます。
+あるいは、52のセグメントを定義します。米国では50のセグメント、携帯電話用とタブレット用です。 同じ結果を得るには、セグメントをスタックします。 カリフォルニア州のタブレットユーザーを取得するには、次の2つのセグメントをスタックします。
 
 ![CA とタブレットの積み重ねセグメント](assets/filter-ca-tablet-stacked.png)
 
@@ -208,10 +200,10 @@ ht-degree: 79%
 次の表に、各アトリビューションモデルについて、この条件で選定 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) される受信イベントを示します。
 
 
-| 女性ページ - アトリビューション - <br/>*アトリビューションモデル* | イベント 1：<br/>ページ名が<br/>女性と等しい | イベント 2：<br/>ページ名が<br/>男性と等しい | イベント 3：<br/>ページ名が<br/>女性と等しい | イベント 4：<br/>ページ名が<br/>女性と等しい<br/>（永続化） | イベント 5：<br/>ページ名が<br/>チェックアウトと等しい | イベント 6：<br/>ページ名が<br/>女性と等しい | イベント 7：<br/>ページ名が<br/>ホームと等しい |
+| 女性ページ - アトリビューション - <br/>*アトリビューションモデル* | イベント 1：<br/>ページ名が<br/>女性と等しい | イベント 2：<br/>ページ名が<br/>男性と等しい | イベント 3：<br/>ページ名が<br/>女性と等しい | イベント 4：<br/>ページ名が<br/>女性と等しい<br/>（永続化） | イベント 5：<br/>ページ名が<br/>チェックアウトと等しい | イベント 6：<br/>ページ名が<br/>女性と等しい | イベント 7:<br/> ページ名が<br/>女性（明示的に設定） |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
-| 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
-| インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
+| 繰り返し（デフォルト） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| インスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 繰り返さないインスタンス | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) | ![削除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![削除](/help/assets/icons/Remove.svg) |
 
 3 つのセグメントを使用したイベントに関するレポートの例を次に示します。
