@@ -4,11 +4,18 @@ description: Analysis Workspace、Report Builder、テーブルの書き出し�
 keywords: clickstream；データフィード；データフィード；製品比較；Analysis Workspace;Report Builder；テーブルの書き出し
 feature: Components
 hold: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 464
@@ -28,7 +35,7 @@ ht-degree: 44%
 | **Experience Cloud ID（ECID）が使用可能** | いいえ | いいえ | いいえ | はい | いいえ | いいえ | いいえ | いいえ |
 | **タイムスタンプが使用可能** | いいえ | いいえ | いいえ | はい | いいえ | いいえ | いいえ | いいえ |
 | **処理レベル** | 完全処理 | 完全に処理され、個別のリアルタイムレポートが表示されます | 完全処理 | 完全処理 | 完全処理 | 完全処理 | 完全処理 | 完全処理 |
-| **ボットフィルタリングが適用される場所** | [ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 |  |  | [ データストリーム ](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | |
+| **ボットフィルタリングが適用される場所** | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 |  |  | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | |
 | **表示される行数制限（ページ分割前）** | 400 | 50,000 | 階層に応じて、300 万行、3,000 万行、1 億 5,000 万行、3 億行の制限 | 層に依存 | 50,000 | 50,000 | 50,000 | 50,000 |
 | **複数のデータビュー** | はい。プロジェクトには複数のデータビューのデータを含めることができます | はい。プロジェクトには複数のデータビューのデータを含めることができます | いいえ。書き出しには、1つのデータビューのデータのみを含めることができます | いいえ。書き出しには、1つのデータビューのデータのみを含めることができます | いいえ。各クエリは1つのデータビューのみを参照できます | いいえ。各クエリは1つのデータビューのみを参照できます | いいえ。各クエリは1つのデータビューのみを参照できます | はい、ユーザーからプロンプトが表示された場合 |
 | **ディメンション列の数** | 最大5 | ? | 最大10 | 制限なし | 最大5 | ? | ? | ? |
