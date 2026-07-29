@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
+source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
 workflow-type: tm+mt
-source-wordcount: 1245
-ht-degree: 11%
+source-wordcount: 1349
+ht-degree: 9%
 
 ---
 
@@ -91,6 +91,12 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 >abstract="ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。"
 
 
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_mapping_creation_time"
+>title="マッピング作成時間"
+>abstract="オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。"
+
+
 1. Customer Journey Analyticsで、**[!UICONTROL Connections]**&#x200B;に移動し、[新しい接続を作成](/help/connections/create-connection.md#create-a-connection)するか、[既存の接続を編集](/help/connections/create-connection.md#edit-a-connection)します。
 
 1. **[!UICONTROL Connection settings]**&#x200B;で、**[!UICONTROL プライマリID]**&#x200B;を![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**&#x200B;に設定します。
@@ -118,7 +124,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
       | **[!UICONTROL アカウント データセットへの人物]** | ![必須](/help/assets/icons/Required.svg) | 個人をアカウントにマッピングするルックアップ（レコードまたは非時系列データセット）を選択します。 |
       | **[!UICONTROL ユーザー ID]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
       | **[!UICONTROL アカウント ID]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
-      | **開始時間** | | ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。 |
+      | **作成時間のマッピング** | | オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。<br/><br/>**例** （**update_date** フィールドが選択されている場合）:<table><thead><tr><th>update_date</th><th>ユーザー</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>2026年5月1日より前の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAppleにマッピングされます。</li><li>2026年5月1日以降の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAdobeにマッピングされます。</li><ul> |
 
       >[!NOTE]
       >
@@ -127,7 +133,6 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
    1. **[!UICONTROL 保存]**&#x200B;を選択して&#x200B;**[!UICONTROL B2B ステッチ設定]** ダイアログを閉じ、接続設定に戻ります。
 
    1. **[!UICONTROL _未保存の変更_]** インジケーターは、[接続を保存](#save)するまで、**B2B ステッチ設定を開く** ボタンの横に表示されます。
-
 
 ### イベントデータセットで B2B ステッチを有効にする
 
