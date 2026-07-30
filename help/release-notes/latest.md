@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5f347e3dc3080e47f0dd81d34aa6f4341a892061
+source-git-commit: d16eaa5e7939585f7ade164ef0c680095b8ed2c3
 workflow-type: tm+mt
-source-wordcount: 800
+source-wordcount: 799
 ht-degree: 33%
 
 ---
@@ -46,11 +46,11 @@ ht-degree: 33%
 | -----------|-----------|-----------|
 | **サブイベント分析** <br/>[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)を使用すると、イベントレベルよりも詳細なレベルでデータを分析できます。 イベント全体をフィルタリングするのではなく、イベント内の個々のコンテナでセグメント化できます。 <p>例えば、同じ注文で購入された他の商品をすべて含めずに、特定の商品カテゴリーでセグメンテーションできます。 イベントデータの一部であるオブジェクトまたは配列を、データビュー内で個別の[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)として定義することもできます。 | 2026年7月21日（PT） | 2026年7月末 |
 | **B2B edition：アドホックおよびリレーショナルデータセットのサポート** <br/> アドホックおよびリレーショナルデータセットも、Customer Journey Analytics B2B editionのアカウントベースの接続でサポートされるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月20日（PT） |
-| **CX Enterprise Coworker: Analyze Customer Journey Analytics data** <br/>Adobe CX Enterprise Coworker Chatでは、以前はAnalysis Workspaceでのみ可能だった高度なデータ分析を実行できるようになりました。 Coworker Chatは、Customer Journey Analyticsのデータビューからデータにアクセスし、そのデータを検索して、自然言語プロンプトに対する回答を得ることができます。<p>詳しくは、[同僚チャットを使用したCustomer Journey Analytics データの分析](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat)を参照してください。</p> | | 2026年7月23日（PT） |
+| **CX Enterprise Coworker: Analyze Customer Journey Analytics data** <br/>Adobe CX Enterprise Coworker Chatでは、以前はAnalysis Workspaceでのみ可能だった高度なデータ分析を実行できるようになりました。 Coworker Chatは、Customer Journey Analyticsのデータビューからデータにアクセスし、そのデータを検索して、自然言語プロンプトに対する回答を得ることができます。<p>詳しくは、[同僚チャットを使用したCustomer Journey Analytics データの分析](https://experienceleague.adobe.com/ja/docs/cx-enterprise-coworker/content/chat/analytics-chat)を参照してください。</p> | | 2026年7月23日（PT） |
 | **CX Enterprise Coworker: Adobe AnalyticsからAdobe Analyticsに移行する際のデータの検証** <br/>CX Enterprise Coworkerの新しいスキルを使用すると、既存のCustomer Journey Analytics実装のデータとCustomer Journey Analytics実装のデータを検証できます。 <p>このスキルは、必要に応じて各ディメンション、指標、トレンドを個別に自動的に比較します。 また、すべてのAdobe Analytics レポートスイートをすべてのCustomer Journey Analytics データビューと比較することもできます。 そして、AIを活用してインサイトとレコメンデーションを生成し、Customer Journey Analyticsへの移行を促進します。</p><p>詳しくは、「[Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする際にCoworkerでデータを検証する](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)」を参照してください。</p> | | 2026年7月24日（PT） |
 | **インライン分類**<br/>[&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)を使用すると、フリーフォームテーブル内の行の名前を変更したり、行を結合したりできます。 テーブル内の変更された行から派生フィールドを作成します。 | 2026年7月20日（PT） | 2026年7月25日（PT） |
 | **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
-| **Connections使用インターフェイスの更新** <br/>接続を管理する際の使用インターフェイスで、Customer Journey AnalyticsやCustomer Journey Analytics B2B editionなどの各モジュールの使用状況の詳細を確認できるようになりました。 <p>さらに、各モジュールの利用状況レポートを月別に分類できるようになりました。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月31日（PT） |
+| **Connections Usage interface update** <br/>接続を管理する際の[Usage interface](/help/connections/manage-connections.md#usage)で、Customer Journey AnalyticsやCustomer Journey Analytics B2B editionなどの各モジュールの使用状況の詳細を確認できるようになりました。 <br/>さらに、各モジュールの利用状況レポートを月別に分類できるようになりました。 | 2026年7月23日（PT） | 2026年7月30日（PT） |
 
 ### Customer Journey Analytics の修正点
 

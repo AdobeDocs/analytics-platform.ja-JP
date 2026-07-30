@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 53%
 
    表示される行数のドロップダウンメニューを表示する![&#x200B; フリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
-1. ドロップダウンメニューから、表に表示する行数を選択します。
+1. ドロップダウンメニューから、表示するテーブルの行数を選択します。
 
 
 ## コンテキストメニュー
@@ -118,8 +118,6 @@ ht-degree: 53%
 
 ## インライン分類 {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 インライン分類を使用すると、フリーフォームテーブル内の行の名前を変更したり、行を結合したりできます。 テーブル内の変更された行から派生フィールドを作成します。
 
 次の例は、**[!UICONTROL 選択行の名前変更]**、**[!UICONTROL 選択行の結合]**、**[!UICONTROL 変更された行を派生フィールドとして作成]** コンテキストメニューオプションを使用する方法を示しています。 変更したフリーフォームテーブルをリセットする方法を説明します。
@@ -139,7 +137,7 @@ ht-degree: 53%
 
 * **[!UICONTROL 男性]**&#x200B;行と&#x200B;**[!UICONTROL 女性]**&#x200B;行を1つの&#x200B;**[!UICONTROL 大人]**&#x200B;行に結合します。
 
-  1. **[!UICONTROL 男性]**&#x200B;および&#x200B;**[!UICONTROL 女性]**&#x200B;行を選択します。
+  1. **[!UICONTROL 男性]**&#x200B;行と&#x200B;**[!UICONTROL 女性]**&#x200B;行を選択します。
   1. 選択した行のコンテキストメニューから「**[!UICONTROL 選択した行を結合]**」を選択します。
 
      ![選択した行を結合メニューオプションを選択](assets/context-combine.png)
@@ -152,6 +150,11 @@ ht-degree: 53%
      1. **[!UICONTROL OK]**&#x200B;を選択します。
 
 * フリーフォームテーブルの変更から派生フィールドを作成します。
+
+  >[!NOTE]
+  >
+  >  Customer Journey Analytics製品の管理者である場合にのみ、フリーフォームテーブルの変更から派生フィールドを作成できます。
+
 
   1. 変更されたテーブル内の選択した行のコンテキストメニューから「**[!UICONTROL 変更された行を派生フィールドとして作成]**」を選択します。
 

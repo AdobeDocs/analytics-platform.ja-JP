@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4526480673706e8eb1ec9a3903484edcc1b72a4b
+source-git-commit: 19610ab5059b070bda0066d593f3dd966702a35d
 workflow-type: tm+mt
-source-wordcount: 6963
+source-wordcount: 6973
 ht-degree: 99%
 
 ---
@@ -50,6 +50,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年7月** | |
+| 使用状況インターフェイス | Connectionsの[使用インターフェイス &#x200B;](/help/connections/manage-connections.md#usage) ドキュメントを更新しました。 |
 | サブイベント分析 | [&#x200B; サブイベント分析](/help/components/segments/sub-event.md)および[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)のドキュメント。 |
 | インライン分類 | [&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)のドキュメント。 |
 | **2026年6月** | |
