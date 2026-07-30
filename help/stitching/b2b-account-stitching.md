@@ -7,11 +7,19 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
 workflow-type: tm+mt
 source-wordcount: 1349
@@ -21,7 +29,7 @@ ht-degree: 9%
 
 # B2B アカウントの連携
 
-B2B アカウントをつなぎ合わせることで、イベントデータセットをアカウント情報で強化し、Customer Journey Analyticsのカスタマージャーニー全体を包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに欠落している場合、アカウントの結合は、指定した[人物とアカウントのマッピングデータセット ](#prerequisites)を使用して、その情報を自動的に導き出し、追加します。
+B2B アカウントをつなぎ合わせることで、イベントデータセットをアカウント情報で強化し、Customer Journey Analyticsのカスタマージャーニー全体を包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに欠落している場合、アカウントの結合は、指定した[人物とアカウントのマッピングデータセット &#x200B;](#prerequisites)を使用して、その情報を自動的に導き出し、追加します。
 
 アカウントをつなぎ合わせないと、アカウント IDを含まないイベントは取り込み中にドロップされます。 アカウント結合は、各イベントのユーザーに関連付けられたアカウントを検索し、イベントが取り込まれる際と過去にさかのぼってアカウント IDを追加することで、この制限を解決します。
 
@@ -32,7 +40,7 @@ B2B アカウントをつなぎ合わせることで、イベントデータセ�
 アカウントの結合では、データセットに対して次の操作が実行されます。
 
 * **人物IDを昇格**：各イベントの人物IDは、ID グラフを使用して、設定されたID名前空間に昇格されます。
-* **欠落しているアカウント情報を追加**：人物IDを含むイベントの場合、[人物とアカウントのマッピング ](#prerequisites)を使用して、アカウント情報を取得および追加します。 イベント自体のアカウント情報は、フォールバックメソッドとして使用されます。
+* **欠落しているアカウント情報を追加**：人物IDを含むイベントの場合、[人物とアカウントのマッピング &#x200B;](#prerequisites)を使用して、アカウント情報を取得および追加します。 イベント自体のアカウント情報は、フォールバックメソッドとして使用されます。
 
 ## 前提条件
 
@@ -137,20 +145,20 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 
 接続レベルでB2B ステッチを設定した後、ステッチするイベントデータセットごとに個別にB2B アカウントステッチを有効にする必要があります。
 
-1. 接続設定で、**[!UICONTROL データセットを追加]**&#x200B;を選択するか、既存のイベントデータセットの設定を開きます。<br/>詳細については、[ データセットの追加](/help/connections/create-connection.md#add-datasets)または[ データセットの編集](/help/connections/create-connection.md#edit-a-dataset)を参照してください。
+1. 接続設定で、**[!UICONTROL データセットを追加]**&#x200B;を選択するか、既存のイベントデータセットの設定を開きます。<br/>詳細については、[&#x200B; データセットの追加](/help/connections/create-connection.md#add-datasets)または[&#x200B; データセットの編集](/help/connections/create-connection.md#edit-a-dataset)を参照してください。
 
 1. B2B アカウントのステッチを設定する特定のイベントデータセットの場合は、**[!UICONTROL 人物のアカウントへのステッチを有効にする]**&#x200B;に切り替えます。
 
 >[!BEGINTABS]
 
->[!TAB ]
+>[!TAB Tab]
 
 **[!UICONTROL 人物のアカウント結合を有効にする]**&#x200B;が&#x200B;**on**&#x200B;の場合、データセットのB2B アカウント結合を設定しました。
 
-* 人物IDの設定が必要です。 その人物IDは、[人物とアカウントのデータセット ](#prerequisites)に基づいてアカウント IDを検索するために使用されます。
+* 人物IDの設定が必要です。 その人物IDは、[人物とアカウントのデータセット &#x200B;](#prerequisites)に基づいてアカウント IDを検索するために使用されます。
 * アカウント IDの設定はオプションです。
 
-](assets/b2b-event-dataset-stitching-on.png)のイベントデータセットで![B2B アカウントを結合しています
+![&#128279;](assets/b2b-event-dataset-stitching-on.png)のイベントデータセットでB2B アカウントを結合しています
 
 >[!TAB  オフ ]
 
@@ -159,7 +167,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 * アカウント IDの設定が必要です。
 * 人物IDの設定はオプションです。
 
-![ イベントデータセットでB2B アカウントを結合](assets/b2b-event-dataset-stitching-off.png)
+![&#x200B; イベントデータセットでB2B アカウントを結合](assets/b2b-event-dataset-stitching-off.png)
 
 
 >[!ENDTABS]
@@ -173,11 +181,11 @@ B2B ステッチ設定を設定し、データセットの追加または編集�
 
 >[!IMPORTANT]
 >
->接続が保存されると、B2B ステッチ設定は不変になります。 保存後に設定を表示するには、**B2B ステッチ設定を開く**&#x200B;を選択します。 すべてのフィールドは読み取り専用の状態で表示されます。 さらに、[個人とアカウントのマッピング ](#prerequisites)に使用されているデータセットがExperience Platformで削除された場合、この接続は削除されます。
+>接続が保存されると、B2B ステッチ設定は不変になります。 保存後に設定を表示するには、**B2B ステッチ設定を開く**&#x200B;を選択します。 すべてのフィールドは読み取り専用の状態で表示されます。 さらに、[個人とアカウントのマッピング &#x200B;](#prerequisites)に使用されているデータセットがExperience Platformで削除された場合、この接続は削除されます。
 
 ## データ更新スケジュール
 
-アカウントの結合は、毎日[個の個人とアカウントのデータセット ](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで結合が有効なデータセットを更新します。
+アカウントの結合は、毎日[個の個人とアカウントのデータセット &#x200B;](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで結合が有効なデータセットを更新します。
 
 | 再生 | 頻度 | データウィンドウ |
 |---|---|---|
@@ -192,7 +200,7 @@ B2B ステッチ設定を設定し、データセットの追加または編集�
 
 >[!MORELIKETHIS]
 >
->* [ ステッチの概要](overview.md)
+>* [&#x200B; ステッチの概要](overview.md)
 >* [B2Bへの接続を設定](../connections/create-connection.md)
->* [ ステッチに関するよくある質問](faq.md)
+>* [&#x200B; ステッチに関するよくある質問](faq.md)
 
