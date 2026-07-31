@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d16eaa5e7939585f7ade164ef0c680095b8ed2c3
+source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 33%
+source-wordcount: 826
+ht-degree: 32%
 
 ---
 
@@ -44,6 +44,7 @@ ht-degree: 33%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
+| **LLM Optimizer統合**<br> LLM Optimizer インバウンド統合[&#128279;](/help/integrations/llmo.md#inbound-integration)を使用すると、LLM Optimizer データをCustomer Journey Analyticsに取り込んで詳細な分析を行うことができます。 | 2026年7月28日（PT） | 2026年7月28日（PT） |
 | **サブイベント分析** <br/>[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)を使用すると、イベントレベルよりも詳細なレベルでデータを分析できます。 イベント全体をフィルタリングするのではなく、イベント内の個々のコンテナでセグメント化できます。 <p>例えば、同じ注文で購入された他の商品をすべて含めずに、特定の商品カテゴリーでセグメンテーションできます。 イベントデータの一部であるオブジェクトまたは配列を、データビュー内で個別の[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)として定義することもできます。 | 2026年7月21日（PT） | 2026年7月末 |
 | **B2B edition：アドホックおよびリレーショナルデータセットのサポート** <br/> アドホックおよびリレーショナルデータセットも、Customer Journey Analytics B2B editionのアカウントベースの接続でサポートされるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年7月20日（PT） |
 | **CX Enterprise Coworker: Analyze Customer Journey Analytics data** <br/>Adobe CX Enterprise Coworker Chatでは、以前はAnalysis Workspaceでのみ可能だった高度なデータ分析を実行できるようになりました。 Coworker Chatは、Customer Journey Analyticsのデータビューからデータにアクセスし、そのデータを検索して、自然言語プロンプトに対する回答を得ることができます。<p>詳しくは、[同僚チャットを使用したCustomer Journey Analytics データの分析](https://experienceleague.adobe.com/ja/docs/cx-enterprise-coworker/content/chat/analytics-chat)を参照してください。</p> | | 2026年7月23日（PT） |
