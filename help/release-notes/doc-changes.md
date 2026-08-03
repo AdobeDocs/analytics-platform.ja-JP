@@ -55,7 +55,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | サブイベント分析 | [&#x200B; サブイベント分析](/help/components/segments/sub-event.md)および[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)のドキュメント。 |
 | インライン分類 | [&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)のドキュメント。 |
 | **2026年6月** | |
-| 新しいGA4 ガイド | [Google Analytics 4からCustomer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)への移行を追加しました。 |
+| 新しいGA4 ガイド | [Google Analytics 4からCustomer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)への移行を追加しました。 |
 | **2026年5月** | |
 | コンテンツ分析の Javascript ライブラリ | Experience Platform データ収集タグを必要とせずに、[コンテンツ分析 JavaScript ライブラリ](/help/content-analytics/config/tags-agnostic.md)を使用して web チャネルにコンテンツ分析を実装する方法に関するドキュメント。 |
 | データミラーの考慮事項 | [データミラーデータセット](/help/data-mirror/data-mirror.md)を設定する際に考慮する必要がある要因を説明する[ドキュメント](/help/data-mirror/considerations.md)。 |
@@ -90,7 +90,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | アトリビューション設定 | モデル、コンテナ、ルックバックウィンドウの新しいアトリビューション設定オプションを反映する追加の更新。 |
 | Experience Platform オーディエンスの取り込みと使用 | [Experience Platform オーディエンスの取り込みと使用](/help/use-cases/data-ingestion/ingest-aep-segments.md)方法に関するユースケースの記事を更新しました。 |
 | Customer Journey Analytics にアップグレードする組織の準備 | [Customer Journey Analytics にアップグレードする組織の準備](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)方法に関する情報を追加しました。 |
-| LLM および AI 生成トラフィックのレポート | 派生フィールドを基礎として使用して、LLM と AI で生成されたトラフィックをレポートする方法に関する[ユースケース記事](/help/use-cases/data-views/derived-fields/ai-traffic.md)を追加しました。 この記事は、ブログ記事 [Adobe Customer Journey Analytics での LLM と AI で生成されたトラフィックの追跡と分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)に基づいています。 |
+| LLM および AI 生成トラフィックのレポート | 派生フィールドを基礎として使用して、LLM と AI で生成されたトラフィックをレポートする方法に関する[ユースケース記事](/help/use-cases/data-views/derived-fields/ai-traffic.md)を追加しました。 この記事は、ブログ記事 [Adobe Customer Journey Analytics での LLM と AI で生成されたトラフィックの追跡と分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja)に基づいています。 |
 | **2025年9月** | |
 | 1900 年より前の日付 | Customer Journey Analytics での 1900 年より前の日付の処理方法に関する[メモ](/help/connections/create-connection.md#datasets)を追加しました。 |
 | リアルタイムレポート | Customer Journey Analytics に[リアルタイムレポート](/help/components/real-time/real-time.md)に関するドキュメントを追加しました。 |
@@ -265,7 +265,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2023年4月** |  |
 | セグメントをディメンションとして使用する方法に関するビデオ | セグメントをディメンションとして使用する方法に関するビデオを更新しました。 <p>このビデオは、[セグメントを作成](/help/components/segments/seg-create.md)ページからリンクされています。</p> <p>次に、[Analysis Workspace でセグメントをディメンションとして使用](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=ja)のビデオへの直接リンクを示します。</p> |
 | セグメントのドキュメント | [セグメントビルダー](/help/components/segments/seg-builder.md)を使用する方法に関する記事を追加しました。 <p>[セグメントを作成](/help/components/segments/seg-create.md)と[セグメント化の概要](/help/components/segments/seg-overview.md)のドキュメントを合理化しました。</p> |
-| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)に関する節を追加しました。 |
+| 実験パネルのドキュメントの更新 | [非ランダム化ディメンションの解釈](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=ja#non-randomized)に関する節を追加しました。 |
 | プロジェクトセグメント（アドホックおよびクイックセグメント） | プロジェクトセグメントに関するドキュメントを合理化し、重複した情報を削除しました。 アドホックセグメントの作成手順は、[クイックセグメントの作成](/help/components/segments/seg-quick.md)手順と統合しました。 |
 | **2023年3月** | |
 | 意思決定管理データの統合 | [Customer Journey Analytics での Adobe Journey Optimizer 意思決定管理データの統合](/help/integrations/ajo-od.md)方法を説明するコンテンツを追加しました。 |
@@ -303,8 +303,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2022年10月 | [顧客管理キー](/help/privacy/cmk.md)に関する新しいトピック。 この機能は、[HIPAA 対応](https://www.adobe.com/trust/compliance/hipaa-ready.html)をサポートしています。 |
 | 2022年10月 | [Customer Journey Analytics 監査ログ](/help/privacy/audit-log.md)に関する新しいトピック。 |
 | 2022年10月 | [主要な指標の概要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=ja)ビジュアライゼーションに関する新しいトピック。 |
-| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date)に関する新しい節 |
-| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)に関する新しいトピック。 |
+| 2022年10月 | [データビューの日付と日時の機能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=ja#date)に関する新しい節 |
+| 2022年10月 | モバイルアプリ：[カスタム詳細ビュー](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=ja#view-detail-slides)に関する新しいトピック。 |
 | 2022年10月 | [Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)トピックを更新しました。 |
 | **2022年9月** | |
 | 2022年9月 | [Google Analytics データの Customer Journey Analytics への移行](/help/use-cases/third-party/ga/overview.md)に関する新しいユースケース。 |
