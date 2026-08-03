@@ -54,15 +54,15 @@ Customer Journey Analyticsでは、これらの機能を活用することで、
 Adobe Experience PlatformおよびCustomer Journey Analyticsには、次のような機能があります。
 
 * Adobe Experience Platform
-   * [データセット](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)
-   * [データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
-   * [Data Distiller](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
+  * [データセット](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)
+  * [データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
+  * [Data Distiller](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-   * [接続](/help/connections/overview.md)
-   * [&#x200B; データビュー](/help/data-views/data-views.md) （[派生フィールド&#x200B;](/help/data-views/derived-fields/derived-fields.md)を含む）
-   * [セグメント](/help/components/segments/seg-overview.md)
-   * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
-   * [ガイド付き分析：タイムライン](/help/guided-analysis/types/timeline.md)
+  * [接続](/help/connections/overview.md)
+  * [&#x200B; データビュー](/help/data-views/data-views.md) （[派生フィールド&#x200B;](/help/data-views/derived-fields/derived-fields.md)を含む）
+  * [セグメント](/help/components/segments/seg-overview.md)
+  * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
+  * [ガイド付き分析：タイムライン](/help/guided-analysis/types/timeline.md)
 
 ## 獲得とアクティベーションを測定
 
@@ -121,8 +121,8 @@ Adobe CX Enterpriseでは、次の機能を利用して、インサイトを効�
 
 * Customer Journey Analyticsからアクティブ化する[&#x200B; オーディエンスを作成して公開](/help/components/audiences/publish.md)
 * CX Enterprise製品を通じてオーディエンスをアクティベーション：
-   * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
-   * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
+  * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
+  * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
 * [Adobe Real-time CDPを使用して外部の宛先にオーディエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。
 
 ## 組織全体でインサイトを共有

@@ -137,7 +137,7 @@ ht-degree: 97%
 
    - 派生フィールドを新しい派生フィールドとして保存するには、「**[!UICONTROL **&#x200B;名前を付けて保存&#x200B;**]**」を選択します。 新しい派生フィールドの名前は、編集した元の派生フィールドと同じで、`(copy)` が追加されます。
 
-または、データビューで派生フィールドをディメンションまたは指標のコンポーネントとして使用している場合は、次のようになります。
+または、データビューで派生フィールドをディメンションまたは指標のコンポーネントとして使用している場合：
 
 1. コンポーネントを選択します。 コンポーネントの名前は、派生フィールドの名前と異なる可能性があります。
 
@@ -153,7 +153,7 @@ ht-degree: 97%
 
 
 
-## 派生フィールドの削除 {#delete}
+## 派生フィールドを削除 {#delete}
 
 1. 既存のデータビューを選択します。 詳しくは、[データビュー](../data-views.md)を参照してください。
 
@@ -290,7 +290,7 @@ ht-degree: 97%
 
 +++
 
-### 区切りリストのすべての値を取得 {#allvalues}
+### 区切りリスト内のすべての値を取得 {#allvalues}
 
 この関数テンプレートは、制限リストを配列に変換します。
 
@@ -308,7 +308,7 @@ ht-degree: 97%
 
 ### 区切りリストの最初の値を取得 {#firstvalue}
 
-この関数テンプレートは、区切られたリストの最初の値を取得します。
+この関数テンプレートは、区切りリストの最初の値を取得します。
 
 +++ 詳細
 
@@ -320,9 +320,9 @@ ht-degree: 97%
 
 +++
 
-### 区切りリストの最後の値を取得 {#lastvalue}
+### 区切り文字付きリストの最後の値を取得 {#lastvalue}
 
-この関数テンプレートは、区切られたリストの最後の値を取得します。
+この関数テンプレートは、区切り文字付きリストの最後の値を取得します。
 
 +++ 詳細
 
@@ -378,7 +378,7 @@ ht-degree: 97%
 
 ### シンプルなボット検出 {#botdetection}
 
-この関数テンプレートは、ライトボットの識別を実装します。
+この関数テンプレートは、簡易的なボットの識別を実装します。
 
 +++ 詳細
 
@@ -502,7 +502,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。 これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。"
+>abstract="この関数は、1 つ以上のフィールドから定義された基準に基づいて条件を適用する機能を提供します。 これらの条件は、条件の順序に基づいて、新しい派生フィールドの値を定義するために使用されます。"
 
 
 1 つ以上のフィールドから定義された条件に基づいて、条件を適用します。 これらの基準は、条件のシーケンスに基づいて、新しい派生フィールドの値を定義するのに使用されます。
@@ -519,7 +519,7 @@ ht-degree: 97%
 
 ## ユースケース 1 {#casewhen-uc1}
 
-カスケードロジックを適用してマーケティングチャネルフィールドを適切な値に設定することで、様々なマーケティングチャネルを識別するルールを定義する必要があります。
+カスケードロジックを適用してマーケティングチャネルフィールドを適切な値に設定することで、様々なマーケティングチャネルを識別するルールを定義したいと考えています。
 
 - リファラーが検索エンジンからのものであり、ページのクエリ文字列値が `cid` に `ps_` を含む場合、マーケティングチャネルは&#x200B;[!DNL *有料検索*]&#x200B;として識別される必要があります。
 - リファラーが検索エンジンからのもので、ページにクエリ文字列 `cid` がない場合、マーケティングチャネルは&#x200B;[!DNL *自然検索*]&#x200B;として識別される必要があります。
@@ -886,7 +886,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 <!-- markdownlint-enable MD034 -->
 
 
-定義済みの区切り記号を使用して、フィールド値を 1 つの新しい派生フィールドに結合します。
+定義済みの区切りを使用して、フィールド値を 1 つの新しい派生フィールドに結合します。
 
 +++ 詳細
 
@@ -910,11 +910,11 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 次の予約が発生したとします。
 
-- お客様の ABC123 がソルトレイクシティ（SLC）とオーランド（MCO）間のフライトを予約
-- お客様の ABC456 がソルトレイクシティ（SLC）とロサンゼルス（LAX）間のフライトを予約
-- お客様の ABC789 がソルトレイクシティ（SLC）とシアトル（SEA）間のフライトを予約
-- お客様の ABC987 がソルトレイクシティ（SLC）とサンノゼ（SJO）間のフライトを予約
-- お客様の ABC654 がソルトレイクシティ（SLC）とオーランド（MCO）間のフライトを予約
+- お客様 ABC123 がソルトレイクシティ（SLC）とオーランド（MCO）間のフライトを予約
+- 顧客 ABC456 がソルトレイクシティ（SLC）とロサンゼルス（LAX）間のフライトを予約します。
+- 顧客 ABC789 がソルトレイクシティ（SLC）とシアトル（SEA）間のフライトを予約します。
+- お客様 ABC987 がソルトレイクシティ（SLC）とサンノゼ（SJO）間のフライトを予約
+- 顧客 ABC654 がソルトレイクシティ（SLC）とオーランド（MCO）間のフライトを予約します。
 
 目的のレポートは次のようになります。
 
@@ -998,7 +998,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース 2 {#datemath-uc2}
 
-実店舗のマーケティングアナリストとして、顧客が店舗に最後に訪問したのは何日前かを理解したいと考えています。 モバイルアプリのジオロケーション機能と店舗内のビーコンを使用して、顧客の物理的な訪問を取得します。
+実店舗のマーケティングアナリストとして、顧客が店舗に最後に訪問したのは何日前かを理解したいと考えています。 モバイルアプリのジオロケーション機能と店舗内のビーコンを使用して、顧客の実店舗への来店を計測します。
 
 ### 派生フィールド {#datemath-uc2-derivedfield}
 
@@ -1023,7 +1023,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## 詳細情報 {#datemath-more-info}
 
-「[!UICONTROL 最初を返す]」オプションや「[!UICONTROL 最後を返す]」オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した際は使用できません。 ユーザーベースのフィールドには、ユーザーの日付フィールドや日時フィールドに対して 1 つの値のみを指定できます。
+「[!UICONTROL 最初を返す]」オプションや「[!UICONTROL 最後を返す]」オプションは、（プロファイルデータセットから）ユーザーベースのフィールドを選択した際は使用できません。 人物ベースのフィールドには、その人物の日付フィールドまたは日時フィールドに対して 1 つの値しか持たせることができません。
 +++
 
 <!-- DEDUPLICATE -->
@@ -1033,7 +1033,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="Deduplicate"
->abstract="この関数は、セッションレベルまたはユーザーレベルで繰り返し値をカウントしないようにフィールドを設定する機能を提供します。 さらに、重複排除 ID を使用すると、特定の ID（購入 ID など）に基づいて、1 つの値（最初のインスタンスまたは最後のインスタンス）のみが使用されるようにすることができます。"
+>abstract="この関数は、セッションレベルまたはユーザーレベルで同じ値を繰り返しカウントしないようにフィールドを設定する機能を提供します。 さらに、重複排除 ID を使用すると、特定の ID（購入 ID など）に基づいて、1 つの値（最初のインスタンスまたは最後のインスタンス）のみが使用されるようにすることができます。"
 
 
 値が複数回カウントされるのを防ぎます。
@@ -1052,7 +1052,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース 1 {#deduplicate-uc1}
 
-ユーザーが予約確認ページを再読み込みした際に、売上高が重複してカウントされるのを防ぐ必要があります。 識別子に予約確認 ID を使用すると、同じイベントで受信した際に売上高が再度カウントされません。
+ユーザーが予約確認ページを再読み込みした際に、売上高が重複してカウントされるのを防ぐ必要があります。 同じイベントで受信した際に売上高を再度カウントしないように、識別子として予約確認 ID を使用します。
 
 ### 前のデータ {#deduplicate-uc1-databefore}
 
@@ -1082,7 +1082,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース 2 {#deduplicate-uc2}
 
-イベントを、外部マーケティングキャンペーンでのキャンペーンのクリックスルーのプロキシとして使用します。 リロードとリダイレクトが原因で、イベント指標が水増しされます。 トラッキングコードディメンションの重複を排除して、最初のディメンションのみが収集されるようにし、イベントのオーバーカウントを最小限に抑えたいと考えています。
+イベントを、外部マーケティングキャンペーンにおけるクリック数のプロキシとして使用します。 リロードとリダイレクトが原因で、イベント指標が水増しされます。 トラッキングコードディメンションの重複を排除して、最初のディメンションのみが収集されるようにし、イベントのオーバーカウントを最小限に抑えます。
 
 ### 前のデータ {#deduplicate-uc2-databefore}
 
@@ -1179,7 +1179,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 制限事項 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL すべてを検索]、[!UICONTROL およびすべてを次と置換]：<ul><li>文字列</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべてを検索]、[!UICONTROL およびすべてを次と置換]</li></ul> | <p>派生フィールドごとに 5 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li></ul> | <ul><li>[!UICONTROL 値]<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>[!UICONTROL すべてを検索]、[!UICONTROL およびすべてを次と置換]：<ul><li>文字列</li></ul></li></ul></ul> | <p>文字列</p><ul><li>[!UICONTROL すべてを検索]、[!UICONTROL およびすべてを次と置換]</li></ul> | <p>派生フィールドごとに 5 つの関数を使用可能</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1247,7 +1247,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 >abstract="この関数には、データセット間で一致するキーを使用して、ルックアップデータセットのフィールドを使用する機能があります。"
 
 
-ルックアップデータセットのフィールドを使用して値をルックアップし、新しい派生フィールドまたは追加のルール処理に値を返します。
+ルックアップデータセットのフィールドを使用して値をルックアップし、新しい派生フィールドに値を返すか、ルールによる後続の処理に使用します。
 
 +++ 詳細
 
@@ -1261,7 +1261,7 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース {#lookup-uc}
 
-Adobe Target を通じて表示されるパーソナライズされたバナーをお客様がクリックした際に収集されたアクティビティ ID を使用して、アクティビティ名をルックアップしたいと考えています。 アクティビティ ID とアクティビティ名を含む Analytics for Target（A4T）アクティビティでルックアップデータセットを使用する必要があります。
+Adobe Target を通じて表示されるパーソナライズされたバナーをお客様がクリックした際に収集されたアクティビティ ID を使用して、アクティビティ名をルックアップしたいと考えています。 アクティビティ ID とアクティビティ名を含む Analytics for Target（A4T）アクティビティと共に使用するルックアップデータセットを利用したいと考えています。
 
 ### A4T ルックアップデータセット {#lookup-uc-lookup}
 
@@ -1425,7 +1425,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 - 静的な値は、フィールドに関連付ける必要があります。 例えば、静的フィールドのみで [!UICONTROL MATH] 関数を使用することはサポートされていません。
 - 静的な値に累乗演算子（`ˆ`）は使用できません。
-- 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的の値を括弧を使用してグループ化する必要があります。 例：
+- 数式で複数の静的な値を使用している場合、数式を有効にするには、これらの静的な値を括弧でグループ化する必要があります。 例：
 
   - この数式はエラーを返します。
     ![数学の詳細情報 4](assets/math-more-info-4.png)
@@ -1445,7 +1445,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
->abstract="この関数は、2 つの異なるフィールドから値を取得し、それぞれの値を 1 つのディメンションに含める機能を提供します。 まず、最初の値が設定されているかどうかを確認します。 設定されていない場合は、2 番目の値などが使用されます。"
+>abstract="この関数は、2 つの異なるフィールドから値を取得し、それぞれの値を 1 つのディメンションに含める機能を提供します。 ルールではまず、最初の値が設定されているかどうかを確認します。 そうでない場合は 2 番目の値が使用され、その次も同様に評価されます。"
 
 
 2 つの異なるフィールドの値を新しい派生フィールドに結合します。
@@ -1496,7 +1496,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 | 製品詳細ページ | 300 | 200 |
 | 注文に関する質問 | 275 | 250 |
 | ヘルプページ | 250 | 200 |
-| 注文に対する変更 | 150 | 145 |
+| 注文内容を変更する | 150 | 145 |
 | 注文に関する問題 | 100 | 95 |
 
 {style="table-layout:auto"}
@@ -1582,7 +1582,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 [!UICONTROL 繰り返しを含める]は、[!UICONTROL NEXT OR PREVIOUS] 関数の繰り返し値の処理方法を決定します。
 
-- 繰り返しの外観と次または前の値を含めます。 「[!UICONTROL 繰り返しを含める]」を選択した場合、現在のヒットからの次または前の値の連続した繰り返しは無視されます。
+- 繰り返しを含め、次または前の値も含めます。 「[!UICONTROL 繰り返しを含める]」を選択した場合、現在のヒットからの次または前の値の連続した繰り返しは無視されます。
 
 - 選択したフィールドに値がない（空白の）行には、[!UICONTROL NEXT OR PREVIOUS] 関数の出力の一部として次または前の値が返されません。
 
@@ -1698,7 +1698,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Split"
->abstract="この関数には、区切り文字に基づいてフィールドを複数のフィールドに分割する機能があります。"
+>abstract="この関数には、区切りに基づいてフィールドを複数のフィールドに分割する機能があります。"
 
 
 フィールドの値を新しい派生フィールドに分割します。
@@ -1709,7 +1709,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]：</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL メソッド]：</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り記号の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数</p> <p>最大 10 個の値を返します</p> | <p>新しい派生フィールド</p> |
+| <ul><li>文字列</li><li>数値</li></ul> | <ul><li>[!UICONTROL フィールド]：</li><ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></ul><ul><li>[!UICONTROL メソッド]：</li><ul><li>左から</li><li>右から</li><li>配列に変換</li></ul></li><li>区切り記号の場合：<ul><li>文字列</li></ul><li>インデックスの場合：<ul><li>数値</li></ul></li> | <p>該当なし</p> | <p>派生フィールドごとに 2 つの関数を使用可能</p> <p>最大 10 個の値を返します</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -1721,9 +1721,9 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 | 音声アプリの応答 | イベント |
 |---|--:|
-| 素晴らしかったです。とても分かりやすく、他のユーザーにもお勧めします | 1 |
-| 素晴らしかったです。少しわかりにくいですが、他のユーザーにもお勧めします | 1 |
-| 素晴らしくなかったです。非常にわかりにくく、他のユーザーにもお勧めしません | 1 |
+| 素晴らしかった,とても分かりやすい,他のユーザーにもお勧めする | 1 |
+| 素晴らしかった,少しわかりにくい,他のユーザーにもお勧めする | 1 |
+| あまりよくなかった,非常にわかりにい,他のユーザーにはお勧めしない | 1 |
 
 {style="table-layout:auto"}
 
@@ -1755,9 +1755,9 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 | 応答 | イベント |
 |---|--:|
-| 素晴らしかったです。とても分かりやすく、他のユーザーにもお勧めします | 1 |
-| 素晴らしかったです。少しわかりにくいですが、他のユーザーにもお勧めします | 1 |
-| 素晴らしくなかったです。非常にわかりにくく、他のユーザーにもお勧めしません | 1 |
+| 素晴らしかった,とても分かりやすい,他のユーザーにもお勧めする | 1 |
+| 素晴らしかった,少しわかりにくい,他のユーザーにもお勧めする | 1 |
+| あまりよくなかった,非常にわかりにい,他のユーザーにはお勧めしない | 1 |
 
 {style="table-layout:auto"}
 
@@ -1811,7 +1811,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>値<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>要約方法</li><li>範囲<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li></ul> | <ul><li>数値<ul><li>MAX - 値のセットから最大値を返します</li><li>MIN - 値のセットから最小値を返します</li><li>MEDIAN - 値のセットの中央値を返します</li><li>MEAN - 値のセットの平均を返します</li><li>SUM - 値のセットの合計を返します</li><li>COUNT - 受信した値の数を返します</li><li>DISTINCT - 個別値のセットを返します</li></ul></li><li>文字列<ul><li>DISTINCT - 個別値のセットを返します</li><li>COUNT DISTINCT - 個別値の数を返します</li><li>MOST COMMON - 最も頻繁に受信される文字列値を返します</li><li>LEAST COMMON - 最も頻繁に受信されない文字列値を返します</li><li>FIRST - 最初に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>LAST - 最後に受信した値。セッションとイベントテーブルにのみ適用されます</li></ul></li><li>日付<ul><li>DISTINCT - 個別値のセットを返します</li><li>COUNT DISTINCT - 個別値の数を返します</li><li>MOST COMMON - 最も頻繁に受信される文字列値を返します</li><li>LEAST COMMON - 最も頻繁に受信されない文字列値を返します</li><li>FIRST - 最初に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>LAST - 最後に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>EARLIEST - 受信した最も古い値（時間によって決定）。セッションとイベントテーブルにのみ適用されます</li><li>LATEST - 受信した最新の値（時間によって決定）。セッションとイベントテーブルにのみ適用されます</li></ul></li></ul> | 派生フィールドごとに 3 つの関数 | 新しい派生フィールド |
+| <ul><li>文字列</li><li>数値</li><li>日付</li></ul> | <ul><li>値<ul><li>ルール</li><li>標準フィールド</li><li>フィールド</li></ul></li><li>要約方法</li><li>範囲<ul><li>イベント</li><li>セッション</li><li>ユーザー</li></ul></li></ul> | <ul><li>数値<ul><li>MAX - 値のセットから最大値を返します</li><li>MIN - 値のセットから最小値を返します</li><li>MEDIAN - 値のセットの中央値を返します</li><li>MEAN - 値のセットの平均を返します</li><li>SUM - 値のセットの合計を返します</li><li>COUNT - 受信した値の数を返します</li><li>DISTINCT - 個別値のセットを返します</li></ul></li><li>文字列<ul><li>DISTINCT - 個別値のセットを返します</li><li>COUNT DISTINCT - 個別値の数を返します</li><li>MOST COMMON - 最も頻繁に受信される文字列値を返します</li><li>LEAST COMMON - 最も受信頻度が低い文字列値を返します</li><li>FIRST - 最初に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>LAST - 最後に受信した値。セッションとイベントテーブルにのみ適用されます</li></ul></li><li>日付<ul><li>DISTINCT - 個別値のセットを返します</li><li>COUNT DISTINCT - 個別値の数を返します</li><li>MOST COMMON - 最も頻繁に受信される文字列値を返します</li><li>LEAST COMMON - 最も受信頻度が低い文字列値を返します</li><li>FIRST - 最初に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>LAST - 最後に受信した値。セッションとイベントテーブルにのみ適用されます</li><li>EARLIEST - 受信した最も古い値（時間によって決定）。セッションとイベントテーブルにのみ適用されます</li><li>LATEST - 受信した最新の値（時間によって決定）。セッションとイベントテーブルにのみ適用されます</li></ul></li></ul> | 派生フィールドごとに 3 つの関数 | 新しい派生フィールド |
 
 {style="table-layout:auto"}
 
@@ -1841,7 +1841,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 - CustomerABC123 に対する買い物かごへの追加の売上高の合計は 110 ドルです。
 - CustomerDEF456 に対する買い物かごへの追加の売上高の合計は 325 ドルです。
-- CustomerDEF456 に対する買い物かごへの追加の売上高の合計は 500 ドルです。
+- CustomerGHI789 に対する買い物かごへの追加の売上高の合計は 500 ドルです。
 
 ### 派生フィールド {#summarize-uc-derivedfield}
 
@@ -1890,7 +1890,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 ## ユースケース 1 {#trim-uc1}
 
-製品データを収集しますが、そのデータにはレポートをフラグメントする非表示の空白文字が含まれています。 余分な空白を簡単にトリミングしたいと考えています
+製品データを収集していますが、そのデータには、レポートが断片化する原因となる非表示の空白文字が含まれています。 余分な空白を簡単にトリミングしたいと考えています
 
 ### 前のデータ {#trim-uc1-databefore}
 
@@ -1949,7 +1949,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 ## ユースケース 3 {#trim-uc3}
 
-storeID を含むデータを収集します。 storeID の最初の 2 文字には、略語の米国の州コードが含まれます。 レポートでは、その州コードのみを使用する必要があります。
+storeID を含むデータを収集します。 storeID の最初の 2 文字には、略語の米国の州コードが含まれます。 レポートでは、その州コードのみを使用したいと考えています。
 
 ### 前のデータ {#trim-uc3-databefore}
 
@@ -2004,7 +2004,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 | 入力データタイプ | 入力 | 含まれる演算子 | 上限 | 出力 |
 |---|---|---|---|---|
-| <ul><li>数値</li><li>日付</li><li>日時</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>Integer<ul><li>文字列に</li></ul></li><li>Double<ul><li>文字列に<ul><li>継承する小数点以下の桁数を含めます（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列に</li></ul></li><li>Long<ul><li>文字列に</li></ul></li><li>日付<ul><li>文字列に<ul><li>出力形式を定義する機能を指定します</li></ul></li><li>例<ul><li>日付（例：2025年1月7日（PT））<ul><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY MM DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>日時<ul><li>文字列に<ul><li>出力形式を定義する機能を指定します</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（2025年1月7日の午後1時30分、52秒の例）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 1月7日、2025年 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値ではない値がある場合、null が返されます。</li><li>ユーザーは精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
+| <ul><li>数値</li><li>日付</li><li>日時</li><li>文字列</li></ul> | <ul><li>[!UICONTROL フィールド] | <p><ul><li>Integer<ul><li>文字列に</li></ul></li><li>Double<ul><li>文字列に<ul><li>継承する小数点以下の桁数を含めます（最大 5 桁）</li></ul></li><li>整数に</li></ul></li><li>Byte<ul><li>文字列に</li></ul></li><li>Long<ul><li>文字列に</li></ul></li><li>日付<ul><li>文字列に<ul><li>出力形式を定義できるようにします</li></ul></li><li>例<ul><li>日付（例：2025年1月7日）<ul><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY MM DD<ul><li data-stringify-indent="2" data-stringify-border="0">例： 2025年1月7日（PT）</li></ul></li></ul></li></ul></li></ul></li><li>日時<ul><li>文字列に<ul><li>出力形式を定義できるようにします</li></ul></li><li>例<ul><li data-stringify-indent="0" data-stringify-border="0">日時（2025年1月7日の午後1時30分、52秒の例）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD、YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例： 1月7日、2025年 13:30:52</li></ul></li></ul></li></ul></li><li>文字列<ul><li>数値に<ul><li>本質的に数値ではない値がある場合、null が返されます。</li><li>ユーザーは精度と使用するロケールを入力する必要があります。 </li></ul></li></ul></li></ul></li></ul></p> | <p>派生フィールドごとに 3 つの関数</p> | <p>新しい派生フィールド</p> |
 
 {style="table-layout:auto"}
 
@@ -2024,7 +2024,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ## ユースケース 2 {#typecast-uc2}
 
-コホートテーブル（整数のみをサポート）で売上高を使用したいと考えていますすが、「売上高」フィールドに倍精度浮動小数点数タイプがあります。
+コホートテーブル（整数のみをサポート）で売上高を使用したいと考えていますが、「売上高」フィールドは Double 型です。
 
 ![型キャストルールのスクリーンショット 2](assets/typecast-2.png)
 
@@ -2127,7 +2127,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ## 制限事項
 
-派生フィールドの機能には,、一般に次の制限が適用されます。
+派生フィールド機能には、一般に次の制限が適用されます。
 
 - 派生フィールドのルールを定義する際は、最大 10 個の異なるスキーマフィールド（標準フィールドは含まない）を使用できます。
   - この最大 10 個の異なるスキーマフィールドから、最大 3 個のルックアップスキーマフィールドまたはプロファイルスキーマフィールドのみが許可されます。
@@ -2138,7 +2138,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 | 関数 | 制限事項 |
 |---|---|
-| <p>Case When</p> | <ul><li>派生フィールドごとに関数が 5 つの Case When 関数</li><li>派生フィールドごとに 200 個の[演算子](#operators)。</li></ul> |
+| <p>Case When</p> | <ul><li>派生フィールドごとに 5 つの CASE WHEN 関数を使用可能</li><li>派生フィールドごとに 200 個の[演算子](#operators)。</li></ul> |
 | <p>Classify</p> | <ul><li>派生フィールドごとに 5 つの Classify 関数</li><li>派生フィールドごとに 200 個の[演算子](#operators)。</li></ul> |
 | <p>連結</p> | <ul><li>派生フィールドごとに 2 つの Concatenate 関数</li><li>Concatenate 関数ごとに 3 つの値</ul> |
 | <p>Date Math</p> | <ul><li>派生フィールドごとに 2 つの Date Math 関数</li></ul> |

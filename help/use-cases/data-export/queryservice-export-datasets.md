@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3315
 ht-degree: 10%
 
 ---
@@ -115,16 +115,16 @@ Analytics ソースコネクタを使用する場合に、Adobe Analytics IDがE
 | `visid_high` | `endUserIDs._experience.aaid.primary` | ブール型 | `visid_low`と共に使用して、一意の訪問を識別します。 |
 | `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | `visid_low`と共に使用して、一意の訪問を識別します。 |
 | `visid_low` | `identityMap` | オブジェクト | `visid_high`と共に使用して、一意の訪問を識別します。 |
-| `cust_visid` | `identityMap` | オブジェクト | 顧客訪問者 ID。 |
+| `cust_visid` | `identityMap` | オブジェクト | 顧客の訪問者 ID。 |
 | `cust_visid` | `endUserIDs._experience.aacustomid.id` | オブジェクト | 顧客訪問者 ID。 |
 | `cust_visid` | `endUserIDs._experience.aacustomid.primary` | ブール型 | 顧客訪問者ID名前空間コード。 |
 | `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | `visid_low`と共に使用して、顧客訪問者IDを一意に識別します。 |
 | `geo\_*` | `placeContext.geo.* ` | 文字列、数値 | 国、地域、都市などの位置情報データ |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | ヒット時にトリガーされる標準コマースイベントとカスタムイベント。 |
-| `page_event` | `web.webInteraction.type` | string | イメージリクエストで送信されるヒットのタイプ（標準的なヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
-| `page_event` | `web.webInteraction.linkClicks.value` | number | イメージリクエストで送信されるヒットのタイプ（標準的なヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
+| `page_event` | `web.webInteraction.type` | string | イメージリクエストで送信されるヒットのタイプ（標準ヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | イメージリクエストで送信されるヒットのタイプ（標準ヒット、ダウンロードリンク、離脱リンク、クリックされたカスタムリンク）。 |
 | `page_event_var_1` | `web.webInteraction.URL` | string | リンクトラッキングイメージリクエストでのみ使用される変数。 この変数には、クリックされたダウンロードリンク、離脱リンク、またはカスタムリンクの URL が含まれます。 |
-| `page_event_var_2` | `web.webInteraction.name` | string | リンクトラッキングイメージリクエストでのみ使用される変数。 このリストは、リンクのカスタム名をリスト表示します（指定されている場合）。 |
+| `page_event_var_2` | `web.webInteraction.name` | string | リンクトラッキングイメージリクエストでのみ使用される変数。 指定されている場合は、リンクのカスタム名が一覧表示されます。 |
 | `paid_search` | `search.isPaid` | ブール型 | ヒットが有料検索の検出に一致した場合に設定されるフラグ。 |
 | `ref_type` | `web.webReferrertype` | string | ヒットのリファラルのタイプを表す数値 ID。 |
 
@@ -209,11 +209,11 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
   これを行うには、次のことが必要です。
 
-   - 処理状態テーブル `checkpoint_log`を使用して、現在の取り込み時間と最後の取り込み時間を追跡します。 詳しくは、[このガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/incremental-load)を参照してください。
-   - システム列の削除を無効にします。`_acp_system_metadata.ingestTime`を使用できます。
-   - 最も内側の`SELECT`を使用して、使用するフィールドを取得し、セッション化やアトリビューション計算のためにイベントをルックバック期間に制限します。 例えば、90日です。
-   - 次のレベル `SELECT`を使用して、セッション化および/またはアトリビューションウィンドウ関数およびその他の計算を適用します。
-   - 出力テーブルで`INSERT INTO`を使用して、ルックバックを最後の処理時間から到着したイベントのみに制限します。 これは、`_acp_system_metadata.ingestTime `に対して、処理ステータス テーブルに最後に保存された時間をフィルタリングすることで行います。
+  - 処理状態テーブル `checkpoint_log`を使用して、現在の取り込み時間と最後の取り込み時間を追跡します。 詳しくは、[このガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/key-concepts/incremental-load)を参照してください。
+  - システム列の削除を無効にします。`_acp_system_metadata.ingestTime`を使用できます。
+  - 最も内側の`SELECT`を使用して、使用するフィールドを取得し、セッション化やアトリビューション計算のためにイベントをルックバック期間に制限します。 例えば、90日です。
+  - 次のレベル `SELECT`を使用して、セッション化および/またはアトリビューションウィンドウ関数およびその他の計算を適用します。
+  - 出力テーブルで`INSERT INTO`を使用して、ルックバックを最後の処理時間から到着したイベントのみに制限します。 これは、`_acp_system_metadata.ingestTime `に対して、処理ステータス テーブルに最後に保存された時間をフィルタリングすることで行います。
 
   **セッション化ウィンドウ関数の例**
 
@@ -364,7 +364,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### Query Service APIの使用
 
-または、RESTful APIを使用して、クエリを定義し、クエリのスケジュールを設定することもできます。 詳しくは、[Query Service API ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/api/getting-started)を参照してください。
+または、RESTful APIを使用して、クエリを定義し、クエリのスケジュールを設定することもできます。詳しくは、[Query Service API ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/api/getting-started)を参照してください。
 クエリの作成時（[&#x200B; クエリの作成](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)）またはクエリのスケジュール作成時（[&#x200B; スケジュールされたクエリの作成](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)）に、オプションの`ctasParameters` プロパティの一部として出力データセットを定義してください。
 
 
